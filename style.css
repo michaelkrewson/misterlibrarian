@@ -174,3 +174,17 @@ body.hide-heb .heb{display:none}
 .site-foot p{font-size:11.5px;color:var(--dim);line-height:1.7;margin:0 0 8px;max-width:70ch}
 .site-foot a{color:var(--muted)}
 .site-foot a:hover{color:var(--gold)}
+
+/* ── ask-a-question form ── */
+.askform{display:flex;flex-direction:column;gap:16px}
+.askform label{display:flex;flex-direction:column;gap:7px;font-size:12.5px;font-weight:700;color:var(--text)}
+.askform .opt{color:var(--dim);font-weight:500}
+.askform .req{color:var(--gold);font-weight:500}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  background:var(--bg2);border:1px solid var(--border);border-radius:9px;color:var(--text);
+  font-family:inherit;font-size:13.5px;padding:11px 13px;line-height:1.6}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:rgba(232,201,104,0.55)}
+.askform textarea{resize:vertical;min-height:130px}
+.askform ::placeholder{color:var(--dim)}
+.askform .btn{border:none;cursor:pointer;font-family:inherit;align-self:flex-start}
+.formnote{font-size:11.5px;color:var(--dim);line-height:1.65;margin:0}

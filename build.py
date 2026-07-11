@@ -23,6 +23,12 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
+SITE_URL = "https://michaelkrewson.github.io/misterlibrarian"
+
+# FormSubmit endpoint for the Ask-a-Question form (delivers to noswerk@gmail.com).
+# Once the form is activated, FormSubmit issues a random alias string — swap it in
+# here (formsubmit.co/<alias>) to keep the address out of the page source, then rebuild.
+FORM_ENDPOINT = "https://formsubmit.co/noswerk@gmail.com"
 
 # Chapter registry: slug -> (book, chapter number, one-line teaser).
 # Add a line here when a new chapter lands in the source file.
@@ -93,6 +99,7 @@ def header(active=""):
     <a href="index.html"{cls('home')}>Home</a>
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
     <a href="ask-enoch.html"{cls('ask')}>Ask Mr. Librarian</a>
+    <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
     <a href="about.html"{cls('about')}>About</a>
   </nav>
 </header>"""
@@ -102,7 +109,7 @@ FOOTER = """<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
   choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="about.html">About the project</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
 </footer>"""
 
 
@@ -379,13 +386,63 @@ def build_ask_enoch():
 </div>
 
 <div class="panel" style="margin-top:14px">
-  <p class="muted" style="margin:0">Have a question about the project, a translation choice, or what's
-  coming next? Reader questions are exactly how this series grows — the next one could be yours.</p>
+  <p class="muted" style="margin:0 0 12px">Have a question about the project, a translation choice, or
+  what's coming next? Reader questions are exactly how this series grows — the next one could be yours.</p>
+  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
 </div>"""
     out = page(f"Ask Mr. Librarian: the Book of Enoch — {SITE_NAME}", body, active="ask",
                desc="Why the Book of Enoch isn't part of this Bible translation: the Masoretic source "
                     "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.")
     open(os.path.join(OUT, "ask-enoch.html"), "w", encoding="utf-8").write(out)
+
+
+def build_contact():
+    body = f"""<h1 class="pagetitle">✉️ Ask Mr. Librarian a question</h1>
+<p class="lede">A question about the project, a translation choice you'd argue with, a chapter request,
+or something you've always wondered about the text — send it in. Good questions become
+<a href="ask-enoch.html">Ask Mr. Librarian</a> posts (anonymously unless you say otherwise), and reader
+questions are exactly how that series grows.</p>
+
+<div class="panel">
+  <form action="{FORM_ENDPOINT}" method="POST" class="askform">
+    <input type="hidden" name="_subject" value="Ask Mr. Librarian — a question from the site"/>
+    <input type="hidden" name="_template" value="table"/>
+    <input type="hidden" name="_next" value="{SITE_URL}/thanks.html"/>
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+    <label>Your name <span class="opt">(optional)</span>
+      <input type="text" name="name" placeholder="However you'd like to be credited — or leave blank"/>
+    </label>
+    <label>Your email <span class="opt">(optional — only needed if you'd like a reply)</span>
+      <input type="email" name="email" placeholder="you@example.com"/>
+    </label>
+    <label>Your question <span class="req">(required)</span>
+      <textarea name="question" required rows="7"
+        placeholder="Ask anything — a verse, a word choice, a comparison between versions, what's coming next…"></textarea>
+    </label>
+    <button class="btn" type="submit">Send to the librarian's desk</button>
+    <p class="formnote">Sending shows a quick captcha (keeps the robots out of the library), then brings
+    you back here. Nothing is posted publicly — questions go straight to Mr. Librarian's desk.</p>
+  </form>
+</div>"""
+    out = page(f"Ask a question — {SITE_NAME}", body, active="contact",
+               desc="Send Mr. Librarian a question about the translation, a verse, or the project — "
+                    "good questions become Ask Mr. Librarian posts.")
+    open(os.path.join(OUT, "contact.html"), "w", encoding="utf-8").write(out)
+
+
+def build_thanks():
+    body = """<h1 class="pagetitle">📬 It's on the librarian's desk</h1>
+<div class="panel prose">
+  <p><strong>Your question is in.</strong> Thank you — reader questions are the lifeblood of the
+  <a href="ask-enoch.html">Ask Mr. Librarian</a> series, and every one gets read. If yours becomes a post,
+  it will appear anonymously unless you asked otherwise; if you left an email, you may get a reply
+  directly.</p>
+  <p>Meanwhile, the shelves are open: the <a href="toc.html">Table of Contents</a> has every chapter
+  published so far.</p>
+</div>"""
+    out = page(f"Question received — {SITE_NAME}", body,
+               desc="Your question is on Mr. Librarian's desk.")
+    open(os.path.join(OUT, "thanks.html"), "w", encoding="utf-8").write(out)
 
 
 def main():
@@ -398,7 +455,9 @@ def main():
     build_index()
     build_about()
     build_ask_enoch()
-    print(f"built {len(CHAPTERS)} chapter pages + index/toc/about/ask-enoch from {args.source}")
+    build_contact()
+    build_thanks()
+    print(f"built {len(CHAPTERS)} chapter pages + index/toc/about/ask-enoch/contact/thanks from {args.source}")
 
 
 if __name__ == "__main__":
