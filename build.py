@@ -18,7 +18,7 @@ import os
 import re
 from collections import defaultdict
 
-from library_data import DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE
+from library_data import DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE, LINK_OVERRIDES
 
 DEFAULT_SOURCE = os.path.expanduser(
     "~/projects/mstr-trader/dashboard/mister_translation.html")
@@ -194,6 +194,73 @@ def youtube_embed(url, title):
   </div>
   <div class="vembed-title">{html.escape(title)}</div>
 </div>"""
+
+
+def _build_alias_index():
+    """alias word/phrase -> [entry, ...] candidate encyclopedia entries."""
+    index = defaultdict(list)
+    for e in ENCYCLOPEDIA:
+        for alias in e.get("aliases", [e["name"]]):
+            index[alias].append(e)
+    return index
+
+
+_ALIAS_INDEX = _build_alias_index()
+_ALIAS_PATTERN = re.compile(
+    r'\b(' + '|'.join(re.escape(w) for w in
+                       sorted(_ALIAS_INDEX, key=len, reverse=True)) + r')\b')
+_OVERRIDE_MAP = {(ch, v, word, idx): slug for ch, v, word, idx, slug in LINK_OVERRIDES}
+_SLUG_TO_ENTRY = {e["slug"]: e for e in ENCYCLOPEDIA}
+_VERSE_ENG_BLOCK = re.compile(
+    r'(id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">)(.*?)(</div>)', re.S)
+
+
+def inject_encyclopedia_links(content, ch):
+    """Turn the first mention per chapter of each ENCYCLOPEDIA entry (by its
+    `name` or any `aliases`) into a link to its encyclopedia.html entry.
+
+    Only ENCYCLOPEDIA entries are linked, never DICTIONARY terms (those are
+    Hebrew concept-words whose English rendering varies verse to verse, so a
+    literal-string match on them would be unreliable). Resolution order for
+    a matched word: (1) an explicit LINK_OVERRIDES pin for this exact
+    (chapter, verse, word, occurrence-within-verse); (2) if only one entry
+    claims that word at all, use it; (3) if several entries share the word
+    (e.g. "Haran" the man and "Haran" the city), prefer whichever one's own
+    `refs` list already includes this verse. Anything still unresolved is
+    left as plain text rather than guessed at. Each entry links only once
+    per chapter — later mentions in the same chapter stay plain, so the
+    first sighting of "Eden" carries the link and the page isn't peppered
+    with repeats of the same one.
+    """
+    linked_slugs = set()
+
+    def verse_block(m):
+        prefix, vid, eng_html, suffix = m.group(1), m.group(2), m.group(3), m.group(4)
+        vnum = int(vid.rsplit("-", 1)[-1] if "-" in vid else vid[1:])
+        seen_in_verse = defaultdict(int)
+
+        def word_match(wm):
+            word = wm.group(1)
+            seen_in_verse[word] += 1
+            occurrence = seen_in_verse[word]
+            candidates = _ALIAS_INDEX[word]
+            slug = _OVERRIDE_MAP.get((ch, vnum, word, occurrence))
+            if slug is None:
+                if len(candidates) == 1:
+                    slug = candidates[0]["slug"]
+                else:
+                    ref_hits = [c["slug"] for c in candidates if (ch, vnum) in c["refs"]]
+                    slug = ref_hits[0] if len(ref_hits) == 1 else None
+            if slug is None or slug in linked_slugs:
+                return word
+            linked_slugs.add(slug)
+            name = html.escape(_SLUG_TO_ENTRY[slug]["name"], quote=True)
+            return (f'<a class="eterm" href="encyclopedia.html#{slug}" '
+                    f'title="{name} — see the Encyclopedia">{word}</a>')
+
+        return prefix + _ALIAS_PATTERN.sub(word_match, eng_html) + suffix
+
+    return _VERSE_ENG_BLOCK.sub(verse_block, content)
 
 
 def inject_xrefs(content, ch):
@@ -447,7 +514,9 @@ def nav_strip(idx, position):
 
 def build_chapter_pages(chapters):
     for idx, (slug, book, num, teaser) in enumerate(CHAPTERS):
-        content = inject_xrefs(clean_chapter(chapters[slug]), num)
+        content = clean_chapter(chapters[slug])
+        content = inject_encyclopedia_links(content, num)
+        content = inject_xrefs(content, num)
         toggle = ('<div class="togglebar"><button class="tgl" id="hebtgl" '
                   'onclick="toggleHeb()">Hide Hebrew</button></div>')
         body = f"""{nav_strip(idx, 'top')}

@@ -122,11 +122,11 @@ ENCYCLOPEDIA = [
               "expulsion (3:24).",
          refs=[(2, 8), (2, 10), (3, 23), (3, 24), (4, 16)],
          videos=[("Searching for The Garden of Eden's Pishon River", "https://www.youtube.com/watch?v=jwCdZ4CbA-E")]),
-    dict(slug="tigris", name="Tigris (Chidekel)", kind="place",
+    dict(slug="tigris", name="Tigris (Chidekel)", kind="place", aliases=["Tigris"],
          desc="The third river of Eden (2:14), 'running east of Asshur' — one of Mesopotamia's two great rivers, "
               "still flowing through Iraq. The Hebrew name Chidekel matches Akkadian Idiqlat.",
          refs=[(2, 14)], videos=[]),
-    dict(slug="euphrates", name="Euphrates (Perat)", kind="place",
+    dict(slug="euphrates", name="Euphrates (Perat)", kind="place", aliases=["Euphrates"],
          desc="The fourth river of Eden (2:14), named without description — the audience knew it. The defining river "
               "of Babylonia; later the ideal border of the promised land.",
          refs=[(2, 14)], videos=[]),
@@ -147,7 +147,7 @@ ENCYCLOPEDIA = [
               "of Urartu in the highlands of eastern Turkey/Armenia. The text names no individual peak; the modern "
               "mountain called Ararat took its name from this verse.",
          refs=[(8, 4)], videos=[]),
-    dict(slug="babel", name="Babel / Babylon", kind="place",
+    dict(slug="babel", name="Babel / Babylon", kind="place", aliases=["Babel", "Babylon"],
          desc="First of Nimrod's cities in Shinar (10:10) and the site of the tower (11:1-9). Its own name, Bab-ili, "
               "means 'Gate of God'; Genesis re-derives it from Hebrew balal, 'confuse' — a deliberate, polemical pun. "
               "One of the most excavated cities of the ancient world (the great ziggurat E-temen-anki likely informed "
@@ -163,11 +163,17 @@ ENCYCLOPEDIA = [
               "opposite modern Mosul) have been excavated for nearly two centuries. Later the setting of Jonah.",
          refs=[(10, 11), (10, 12)],
          videos=[("Bible Evidence Unearthed at Nineveh!", "https://www.youtube.com/watch?v=34XBkm4QiLo")]),
-    dict(slug="calah", name="Calah (Nimrud)", kind="place",
+    dict(slug="calah", name="Calah (Nimrud)", kind="place", aliases=["Calah"],
          desc="Assyrian royal city (10:11-12); the modern mound is called Nimrud — the founder-figure's name still "
               "attached to the site.",
          refs=[(10, 11), (10, 12)], videos=[]),
+    dict(slug="canaan", name="Canaan (the land and its ancestor)", kind="place", aliases=["Canaan"],
+         desc="Both a person — Ham's cursed son (9:25-27), father of Sidon and Heth (10:15) — and, in Genesis's "
+              "'genealogy is geography' idiom (see the Genesis 10 notes), the land his descendants settle: the "
+              "promised land itself, entered by Abram at 12:5 and central to the rest of the Bible.",
+         refs=[(9, 18), (9, 22), (9, 25), (9, 26), (9, 27), (10, 6), (10, 15), (11, 31), (12, 5)], videos=[]),
     dict(slug="sodom-gomorrah", name="Sodom and Gomorrah", kind="place",
+         aliases=["Sodom", "Gomorrah", "Sodom and Gomorrah"],
          desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing, their story untold "
               "until chapters 13-19.",
          refs=[(10, 19)],
@@ -181,11 +187,11 @@ ENCYCLOPEDIA = [
          refs=[(11, 28), (11, 31)],
          videos=[("EXPEDITION ABRAHAM: from his birthplace at Ur to the Promised Land",
                   "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
-    dict(slug="haran-city", name="Haran (the city)", kind="place",
+    dict(slug="haran-city", name="Haran (the city)", kind="place", aliases=["Haran"],
          desc="Caravan city on the northern arc of the route from Ur to Canaan, where Terah's migration stalls and "
               "Terah dies (11:31-32); Abram's call comes here (12:1-4). Spelled differently in Hebrew from Terah's "
-              "son Haran.",
-         refs=[(11, 31), (11, 32), (12, 4)], videos=[]),
+              "son Haran, whose death at 11:28 happens before the family even leaves Ur for this place.",
+         refs=[(11, 31), (11, 32), (12, 4), (12, 5)], videos=[]),
     dict(slug="shechem", name="Shechem", kind="place",
          desc="Abram's first named stop in Canaan (12:6), at the great tree of Moreh — modern Tell Balata, between "
               "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7); it will echo "
@@ -208,11 +214,11 @@ ENCYCLOPEDIA = [
          videos=[("“The Problem” of Joshua's Ai...SOLVED! "
                   "(preview — Ai's own story is in Joshua 7-8, far ahead of Genesis)",
                   "https://www.youtube.com/watch?v=lK7GQxkEkKk")]),
-    dict(slug="negev", name="The Negev", kind="place",
+    dict(slug="negev", name="The Negev", kind="place", aliases=["Negev"],
          desc="The arid south of Canaan, toward which Abram travels by stages (12:9) — the land's dry margin, "
               "naturally on the way down to Egypt.",
          refs=[(12, 9)], videos=[]),
-    dict(slug="egypt", name="Egypt (Mizraim)", kind="place",
+    dict(slug="egypt", name="Egypt (Mizraim)", kind="place", aliases=["Egypt", "Mizraim"],
          desc="In Hebrew, Mizraim — also the 'son' of Ham whose name IS the country (10:6,13). Abram goes down in "
               "famine (12:10) and his stay runs the Exodus pattern in miniature: danger, plagues, 'send away,' "
               "wealth out.",
@@ -224,7 +230,7 @@ ENCYCLOPEDIA = [
               "personal name around 4:25-5:5. Formed from dust, placed in the garden, exiled from it; died at 930 "
               "(5:5).",
          refs=[(2, 7), (3, 17), (4, 25), (5, 5)], videos=[]),
-    dict(slug="eve", name="Eve (Chavah)", kind="person",
+    dict(slug="eve", name="Eve (Chavah)", kind="person", aliases=["Eve"],
          desc="'Mother of all the living' — the first personal name given to any human (3:20), punning on chai, "
               "'life.' Named the fallen and the appointed sons alike (4:1, 4:25).",
          refs=[(2, 22), (3, 20), (4, 1)], videos=[]),
@@ -232,7 +238,7 @@ ENCYCLOPEDIA = [
          desc="Firstborn of Eve ('I have gotten,' qaniti — the name is a pun), worker of the ground, first murderer; "
               "marked and exiled to Nod, where he builds the first city (4:17).",
          refs=[(4, 1), (4, 8), (4, 15), (4, 17)], videos=[]),
-    dict(slug="abel", name="Abel (Hevel)", kind="person",
+    dict(slug="abel", name="Abel (Hevel)", kind="person", aliases=["Abel"],
          desc="Keeper of sheep; his name is the Hebrew word for 'breath, vapor' — never explained by the text, "
               "fitting how briefly he lives. His blood 'cries out from the ground' (4:10).",
          refs=[(4, 2), (4, 8), (4, 10)], videos=[]),
@@ -240,12 +246,16 @@ ENCYCLOPEDIA = [
          desc="'Appointed' (shat) in place of Abel (4:25); the line of promise runs through him — and in his days "
               "'people began to call on the name of the LORD' (4:26).",
          refs=[(4, 25), (5, 3)], videos=[]),
-    dict(slug="enoch", name="Enoch (who walked with God)", kind="person",
+    dict(slug="enoch-cain-son", name="Enoch (Cain's son)", kind="person", aliases=["Enoch"],
+         desc="Cain's son (4:17) — not the man who walked with God two chapters later (5:21-24), a different Enoch "
+              "entirely. Cain names the first city in the Bible after him.",
+         refs=[(4, 17), (4, 18)], videos=[]),
+    dict(slug="enoch", name="Enoch (who walked with God)", kind="person", aliases=["Enoch"],
          desc="Seventh from Adam: the one man in Genesis 5 who does not die — 'Enoch walked with God, and then he "
               "was not there, for God took him' (5:24), at 365 years. The later Book of Enoch grew from these two "
               "verses (see the Ask Mr. Librarian post). Distinct from Cain's son Enoch (4:17), for whom the first "
               "city was named.",
-         refs=[(5, 21), (5, 22), (5, 24)], videos=[]),
+         refs=[(5, 18), (5, 19), (5, 21), (5, 22), (5, 23), (5, 24)], videos=[]),
     dict(slug="methuselah", name="Methuselah", kind="person",
          desc="The longest-lived man in the Bible — 969 years (5:27); on the Masoretic numbers his death lands "
               "exactly in the flood year.",
@@ -257,6 +267,7 @@ ENCYCLOPEDIA = [
               "through the whole flood story.",
          refs=[(5, 29), (6, 9), (8, 20), (9, 20), (9, 29)], videos=[]),
     dict(slug="shem-ham-japheth", name="Shem, Ham, and Japheth", kind="person",
+         aliases=["Shem", "Ham", "Japheth"],
          desc="Noah's three sons, fathers of the Table of Nations' seventy peoples (10). Shem — whose name means "
               "'Name' — heads the line the story follows to Abram; Ham's look at his father draws the oracle against "
               "Canaan (9:22-27); Japheth's coastland peoples spread west.",
@@ -272,6 +283,12 @@ ENCYCLOPEDIA = [
          desc="Father of Abram, Nahor, and Haran (11:26-27). He, not Abram, first sets out from Ur for Canaan — and "
               "stops halfway, settling and dying in Haran (11:31-32).",
          refs=[(11, 26), (11, 31), (11, 32)], videos=[]),
+    dict(slug="haran-person", name="Haran", kind="person", aliases=["Haran"],
+         desc="Terah's third son, Lot's father — dies 'during the lifetime of his father Terah, in the land of his "
+              "birth,' in Ur (11:28), before the family's migration even begins. His premature death leaves Lot an "
+              "orphan in Abram's care, and hands the caravan city the family later stops at (Haran) a name that, "
+              "confusingly, doubles his own — the two are not shown to be connected.",
+         refs=[(11, 26), (11, 27), (11, 28), (11, 29), (11, 31)], videos=[]),
     dict(slug="abram", name="Abram", kind="person",
          desc="Called at 75 from Haran (12:1-4): land, nation, great name, and blessing for 'all the families of the "
               "ground' — Babel's grasped-at name, given instead. Answers with altars at Shechem and Bethel; flinches "
@@ -287,7 +304,7 @@ ENCYCLOPEDIA = [
          desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5) "
               "— planted in the story for consequences still ahead.",
          refs=[(11, 27), (12, 4), (12, 5)], videos=[]),
-    dict(slug="pharaoh", name="Pharaoh (of Genesis 12)", kind="person",
+    dict(slug="pharaoh", name="Pharaoh (of Genesis 12)", kind="person", aliases=["Pharaoh"],
          desc="The unnamed king whose house takes Sarai in and is struck with plagues (12:15-20). His indignant "
               "'take her and go' makes him, uncomfortably, the moral voice of the scene — and his role rehearses the "
               "Exodus Pharaoh's, four hundred years early.",
@@ -300,6 +317,31 @@ ENCYCLOPEDIA = [
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
+# ---------------------------------------------------------------------------
+# In-text encyclopedia linking. The build turns each ENCYCLOPEDIA entry's
+# `name` (or `aliases`, when the literal in-text string differs from the
+# display name) into a link on its FIRST occurrence per chapter, wherever
+# that exact word appears inside a verse's English text. Most names only
+# ever mean one thing, so the resolver just needs to know, for a given
+# chapter+verse, which candidate entries could apply there — which is
+# exactly what each entry's own `refs` list already records. When more than
+# one candidate's refs list contains the verse (Cain's-son-Enoch vs the
+# Enoch-who-walked-with-God both have entries touching different verses —
+# fine, no clash there), the resolver picks the one whose refs contain that
+# verse. The ONE case that genuinely can't be resolved this way is a single
+# verse naming two different referents of the same word — so far only
+# Genesis 11:31, which names both Haran the man ("his grandson Lot son of
+# Haran") and Haran the city ("they came to Haran") in one sentence. For
+# that, and any future case like it, LINK_OVERRIDES pins exactly which
+# occurrence (1st, 2nd, ...) of a word within one verse goes to which slug.
+# ---------------------------------------------------------------------------
+
+LINK_OVERRIDES = [
+    # (chapter, verse, word, occurrence_index (1-based), slug)
+    (11, 31, "Haran", 1, "haran-person"),   # "his grandson Lot son of Haran"
+    (11, 31, "Haran", 2, "haran-city"),     # "they came to Haran, and settled there"
+]
+
 XREFS = [
     ((1, 2),  (7, 11),  "the deep (tehom) — sealed at creation, burst open at the flood"),
     ((1, 2),  (8, 1),   "ruach over the waters — creation's opening echoed at re-creation"),
