@@ -18,7 +18,7 @@ import os
 import re
 from collections import defaultdict
 
-from library_data import DICTIONARY, ENCYCLOPEDIA, XREFS
+from library_data import DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE
 
 DEFAULT_SOURCE = os.path.expanduser(
     "~/projects/mstr-trader/dashboard/mister_translation.html")
@@ -176,6 +176,26 @@ def verse_url(ch, v):
     return f"genesis-{ch}.html#{verse_anchor(ch, v)}"
 
 
+_YT_ID_RE = re.compile(r"(?:v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})")
+
+
+def youtube_embed(url, title):
+    """A responsive, privacy-enhanced YouTube embed (falls back to a plain link if the id can't be parsed)."""
+    m = _YT_ID_RE.search(url)
+    if not m:
+        return f'<p><a href="{html.escape(url, quote=True)}" rel="noopener">▶ {html.escape(title)}</a></p>'
+    vid = m.group(1)
+    return f"""<div class="vembed">
+  <div class="vembed-frame">
+    <iframe src="https://www.youtube-nocookie.com/embed/{vid}"
+      title="{html.escape(title, quote=True)}" loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="vembed-title">{html.escape(title)}</div>
+</div>"""
+
+
 def inject_xrefs(content, ch):
     """Append ⤷ cross-reference chips inside each verse block this chapter owns."""
     by_verse = defaultdict(list)
@@ -308,12 +328,8 @@ def build_encyclopedia():
         out = []
         for e in sorted(entries, key=lambda x: x["name"].lower()):
             refs = " ".join(f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in e["refs"])
-            vids = ""
             if e.get("videos"):
-                links = "".join(
-                    f'<li><a href="{html.escape(u, quote=True)}" rel="noopener">▶ {html.escape(t)}</a></li>'
-                    for t, u in e["videos"])
-                vids = f'<ul class="evids">{links}</ul>'
+                vids = "".join(youtube_embed(u, t) for t, u in e["videos"])
             else:
                 vids = ('<div class="evids-empty">▶ No films on the shelf yet — archaeology and '
                         'geography videos get added here as Mr. Librarian finds good ones.</div>')
@@ -325,21 +341,42 @@ def build_encyclopedia():
 </div>""")
         return "".join(out)
 
+    credit_html = ""
+    for c in VIDEO_CREDITS:
+        credit_html += f"""<div class="vcredit">
+  <div class="vcredit-h">🎥 Video source: <a href="{html.escape(c['url'], quote=True)}" rel="noopener">{html.escape(c['channel'])}</a>, {html.escape(c['person'])}</div>
+  <p>{c['blurb']}</p>
+</div>"""
+
+    queue_rows = "".join(
+        f"""<div class="qrow"><div class="qrow-t"><a href="{html.escape(u, quote=True)}" rel="noopener">▶ {html.escape(t)}</a></div>
+  <div class="qrow-target">→ {html.escape(target)}</div>
+  <div class="qrow-note">{html.escape(note)}</div></div>"""
+        for t, u, target, note in VIDEO_QUEUE)
+    queue_section = ""
+    if VIDEO_QUEUE:
+        queue_section = f"""<h2>🎬 Coming to the encyclopedia</h2>
+<p class="lede">Videos already found and credited to Expedition Bible, waiting for the translation to
+reach the book or chapter they belong to — logged here so nothing gets lost between now and then.</p>
+<div class="panel qlist">{queue_rows}</div>"""
+
     body = f"""<h1 class="pagetitle">🏺 Encyclopedia</h1>
 <p class="lede">The people and places the translation has reached — <strong>{len(places)} places,
-{len(people)} people</strong> — each entry linked to every verse where it appears. Place entries carry a
-film shelf: as the project finds good archaeology and geography videos (excavations at Ur, the ziggurats
-of Shinar, the mounds of Nineveh…), they're linked here under the entry they illuminate, so the
-encyclopedia doubles as the project's viewing room.</p>
+{len(people)} people</strong> — each entry linked to every verse where it appears, with a growing film
+shelf of archaeology and geography footage embedded directly on the entries they illuminate.</p>
+
+{credit_html}
 
 <h2>Places</h2>
 <div class="panel ency">{render(places)}</div>
 
 <h2>People</h2>
-<div class="panel ency">{render(people)}</div>"""
+<div class="panel ency">{render(people)}</div>
+
+{queue_section}"""
     out = page(f"Encyclopedia — {SITE_NAME}", body, active="library",
                desc="People and places of the MisterLibrarian translation — every entry verse-linked, "
-                    "with a growing shelf of archaeology videos.")
+                    "with embedded archaeology videos credited to Expedition Bible.")
     open(os.path.join(OUT, "encyclopedia.html"), "w", encoding="utf-8").write(out)
     return len(places), len(people)
 

@@ -120,7 +120,8 @@ ENCYCLOPEDIA = [
               "rivers are certainly the Tigris and Euphrates, anchoring the geography broadly in Mesopotamia; the "
               "other two (Pishon, Gihon) have never been confidently identified. Guarded by cherubim after the "
               "expulsion (3:24).",
-         refs=[(2, 8), (2, 10), (3, 23), (3, 24), (4, 16)], videos=[]),
+         refs=[(2, 8), (2, 10), (3, 23), (3, 24), (4, 16)],
+         videos=[("Searching for The Garden of Eden's Pishon River", "https://www.youtube.com/watch?v=jwCdZ4CbA-E")]),
     dict(slug="tigris", name="Tigris (Chidekel)", kind="place",
          desc="The third river of Eden (2:14), 'running east of Asshur' — one of Mesopotamia's two great rivers, "
               "still flowing through Iraq. The Hebrew name Chidekel matches Akkadian Idiqlat.",
@@ -151,7 +152,8 @@ ENCYCLOPEDIA = [
               "means 'Gate of God'; Genesis re-derives it from Hebrew balal, 'confuse' — a deliberate, polemical pun. "
               "One of the most excavated cities of the ancient world (the great ziggurat E-temen-anki likely informed "
               "the tower story).",
-         refs=[(10, 10), (11, 9)], videos=[]),
+         refs=[(10, 10), (11, 9)],
+         videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")]),
     dict(slug="shinar", name="Shinar", kind="place",
          desc="The flat southern-Mesopotamian plain (Sumer/Babylonia) — no stone, hence brick and bitumen (11:3); "
               "home of Babel, Erech (Uruk), and Accad (Akkad).",
@@ -159,7 +161,8 @@ ENCYCLOPEDIA = [
     dict(slug="nineveh", name="Nineveh", kind="place",
          desc="Great Assyrian capital on the Tigris, founded in the Nimrod tradition (10:11); its mounds (Kuyunjik, "
               "opposite modern Mosul) have been excavated for nearly two centuries. Later the setting of Jonah.",
-         refs=[(10, 11), (10, 12)], videos=[]),
+         refs=[(10, 11), (10, 12)],
+         videos=[("Bible Evidence Unearthed at Nineveh!", "https://www.youtube.com/watch?v=34XBkm4QiLo")]),
     dict(slug="calah", name="Calah (Nimrud)", kind="place",
          desc="Assyrian royal city (10:11-12); the modern mound is called Nimrud — the founder-figure's name still "
               "attached to the site.",
@@ -167,12 +170,17 @@ ENCYCLOPEDIA = [
     dict(slug="sodom-gomorrah", name="Sodom and Gomorrah", kind="place",
          desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing, their story untold "
               "until chapters 13-19.",
-         refs=[(10, 19)], videos=[]),
+         refs=[(10, 19)],
+         videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
+                  "(preview — their destruction is still ahead, in Genesis 19)",
+                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")]),
     dict(slug="ur", name="Ur of the Chaldeans", kind="place",
          desc="Abram's birthplace (11:28,31) — the great Sumerian city of southern Iraq, whose ziggurat still stands; "
               "Leonard Woolley's 1920s-30s excavations (royal tombs, gold lyres) made it world-famous. 'Of the "
               "Chaldeans' is a later-era label, identifying the city for the text's own readers.",
-         refs=[(11, 28), (11, 31)], videos=[]),
+         refs=[(11, 28), (11, 31)],
+         videos=[("EXPEDITION ABRAHAM: from his birthplace at Ur to the Promised Land",
+                  "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
     dict(slug="haran-city", name="Haran (the city)", kind="place",
          desc="Caravan city on the northern arc of the route from Ur to Canaan, where Terah's migration stalls and "
               "Terah dies (11:31-32); Abram's call comes here (12:1-4). Spelled differently in Hebrew from Terah's "
@@ -182,11 +190,24 @@ ENCYCLOPEDIA = [
          desc="Abram's first named stop in Canaan (12:6), at the great tree of Moreh — modern Tell Balata, between "
               "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7); it will echo "
               "through the whole Bible.",
-         refs=[(12, 6), (12, 7)], videos=[]),
+         refs=[(12, 6), (12, 7)],
+         videos=[("The Discovery of Joshua's Great Witness Stone at Shechem "
+                  "(preview — this discovery belongs to Joshua 24, centuries after Abram's visit here)",
+                  "https://www.youtube.com/watch?v=mnis257Rd3E")]),
     dict(slug="bethel", name="Bethel", kind="place",
          desc="'House of God' — Abram camps east of it and builds his second altar (12:8); the name's own story "
               "(Jacob's ladder) is still ahead. Paired here with Ai to fix the camp's position.",
-         refs=[(12, 8)], videos=[]),
+         refs=[(12, 8)],
+         videos=[("BETHEL: Where Jacob Met God "
+                  "(preview — Jacob's ladder, the episode that names this site, is still ahead in Genesis 28)",
+                  "https://www.youtube.com/watch?v=8cqBePFD9S4")]),
+    dict(slug="ai", name="Ai", kind="place",
+         desc="Landmark east of Bethel, fixing Abram's campsite (12:8) — 'the city' whose own famous story (Joshua's "
+              "defeat, then conquest) is many books away.",
+         refs=[(12, 8)],
+         videos=[("“The Problem” of Joshua's Ai...SOLVED! "
+                  "(preview — Ai's own story is in Joshua 7-8, far ahead of Genesis)",
+                  "https://www.youtube.com/watch?v=lK7GQxkEkKk")]),
     dict(slug="negev", name="The Negev", kind="place",
          desc="The arid south of Canaan, toward which Abram travels by stages (12:9) — the land's dry margin, "
               "naturally on the way down to Egypt.",
@@ -244,7 +265,9 @@ ENCYCLOPEDIA = [
          desc="'The first mighty man on the earth… a mighty hunter before the LORD' (10:8-9) — the Table of Nations' "
               "only biography. His kingdom starts at Babel and extends to Nineveh: empire, personified, and the "
               "setup for the tower story.",
-         refs=[(10, 8), (10, 9), (10, 10)], videos=[]),
+         refs=[(10, 8), (10, 9), (10, 10)],
+         videos=[("Search for the Tower of Babel — the city Nimrod founded (10:10)",
+                  "https://www.youtube.com/watch?v=cYc_VgjJfw8")]),
     dict(slug="terah", name="Terah", kind="person",
          desc="Father of Abram, Nahor, and Haran (11:26-27). He, not Abram, first sets out from Ur for Canaan — and "
               "stops halfway, settling and dying in Haran (11:31-32).",
@@ -253,7 +276,9 @@ ENCYCLOPEDIA = [
          desc="Called at 75 from Haran (12:1-4): land, nation, great name, and blessing for 'all the families of the "
               "ground' — Babel's grasped-at name, given instead. Answers with altars at Shechem and Bethel; flinches "
               "into the wife-sister ruse in Egypt (12:10-20). His story has just begun.",
-         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10)], videos=[]),
+         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10)],
+         videos=[("EXPEDITION ABRAHAM: his whole journey, from Ur to the Promised Land",
+                  "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
     dict(slug="sarai", name="Sarai", kind="person",
          desc="Abram's wife — introduced with the sentence everything turns on: 'Now Sarai was barren; she had no "
               "child' (11:30). Endangered by the sister-story in Pharaoh's house (12:11-20).",
@@ -313,4 +338,90 @@ XREFS = [
     ((11, 30), (12, 2), "'Sarai was barren' — the sentence the great-nation promise is heard against"),
     ((11, 31), (12, 5), "the journey to Canaan — stalled under Terah, finished under Abram"),
     ((12, 10), (12, 20), "down to Egypt and sent away — the Exodus pattern in miniature"),
+]
+
+# ---------------------------------------------------------------------------
+# Video sources. Michael trusts Expedition Bible's fieldwork and asked that
+# it be worked into the encyclopedia as videos are found — embedded directly
+# where the site/place is already in the translation, logged here for later
+# placement where it belongs to a chapter not yet reached. Add a channel here
+# once trusted; add entries to VIDEO_QUEUE as videos are found, then move
+# each into an ENCYCLOPEDIA entry's `videos=[...]` (with a plain (title, url)
+# tuple) once the translation actually reaches that book/chapter — deleting
+# it from the queue at the same time so nothing is ever listed twice.
+# ---------------------------------------------------------------------------
+
+VIDEO_CREDITS = [
+    dict(
+        channel="Expedition Bible",
+        person="Joel Kramer",
+        url="https://www.youtube.com/@ExpeditionBible",
+        blurb=(
+            "Joel Kramer is a biblical archaeologist who grew up in the Middle East and has lived for years "
+            "in Jerusalem. Expedition Bible takes viewers to the actual sites behind the text — with drone "
+            "footage, 3D reconstructions, and firsthand walk-throughs of the archaeology and the excavators' "
+            "own published records. Michael follows this channel's work closely and trusts its fieldwork; "
+            "videos are embedded here with gratitude and full credit to Joel Kramer and Expedition Bible."
+        ),
+        added="2026-07-11",
+    ),
+]
+
+# (title, url, target, note) — videos found but not yet placed, because the
+# translation hasn't reached the book/chapter they belong to. Check this list
+# before starting a new chapter or book; move anything relevant into an
+# ENCYCLOPEDIA entry (new or existing) as soon as its target is reached.
+VIDEO_QUEUE = [
+    ("Where God Divided the Sea...Exploring the Exodus!",
+     "https://www.youtube.com/watch?v=conaKQoe4hk",
+     "Exodus (the sea crossing)",
+     "Field evidence for the Red Sea/Sea of Reeds crossing route and location."),
+    ("Tomb of the Exodus Pharaoh: What Was Found & Why You Don't Know About It!",
+     "https://www.youtube.com/watch?v=mJP4pVjnWpk",
+     "Exodus (the plagues / the Pharaoh of the Exodus)",
+     "Argues for a specific identification and tomb of the Exodus-era Pharaoh."),
+    ("#1 Evidence for Israel's Conquest of the Promised Land...other than the Bible!",
+     "https://www.youtube.com/watch?v=mLxE3JmHV2U",
+     "Joshua (the conquest)",
+     "Extra-biblical evidence for the conquest of Canaan."),
+    ("“The Problem” of Joshua's Ai...SOLVED!",
+     "https://www.youtube.com/watch?v=lK7GQxkEkKk",
+     "Joshua 7-8 (the battle of Ai)",
+     "Already lightly placed as a PREVIEW on the 'ai' encyclopedia entry (Genesis 12:8) — "
+     "give it its full placement when Joshua 7-8 is translated."),
+    ("The Discovery of Joshua's Great Witness Stone at Shechem",
+     "https://www.youtube.com/watch?v=mnis257Rd3E",
+     "Joshua 24 (the covenant renewal at Shechem)",
+     "Already lightly placed as a PREVIEW on the 'shechem' encyclopedia entry (Genesis 12:6) — "
+     "give it its full placement when Joshua 24 is translated."),
+    ("BETHEL: Where Jacob Met God",
+     "https://www.youtube.com/watch?v=8cqBePFD9S4",
+     "Genesis 28 (Jacob's ladder)",
+     "Already lightly placed as a PREVIEW on the 'bethel' encyclopedia entry (Genesis 12:8) — "
+     "give it its full placement when Genesis 28 is translated."),
+    ("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain!",
+     "https://www.youtube.com/watch?v=QjPcSQUY2W0",
+     "Genesis 19 (the destruction of Sodom and Gomorrah)",
+     "Already lightly placed as a PREVIEW on the 'sodom-gomorrah' entry (Genesis 10:19) — "
+     "give it its full placement when Genesis 19 is translated."),
+    ("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
+     "https://www.youtube.com/watch?v=N0opJ2qGQs4",
+     "The Gospels (Jesus' Galilee ministry)",
+     "Capernaum as the base of Jesus' ministry; new encyclopedia entry when the Gospels begin."),
+    ("Where Jesus Was Crucified: The archaeological evidence!",
+     "https://www.youtube.com/watch?v=ufVXZBrbSsU",
+     "The Gospels (the crucifixion narratives)",
+     "The case for the crucifixion site; place at the Passion narrative in whichever Gospel is translated first."),
+    ("The Temple Mount--Where it IS. Where it ISN'T. What is it FOR?",
+     "https://www.youtube.com/watch?v=IrqRoLxa178",
+     "1 Kings (Solomon's Temple) and the Gospels (the Second Temple)",
+     "Broad relevance — likely worth entries at both Solomon's Temple and the Gospels/Acts Temple scenes."),
+    ("Caesarea: The City that Changed the World!",
+     "https://www.youtube.com/watch?v=SNnCtAR_8Q8",
+     "Acts (Cornelius, Paul's imprisonment)",
+     "Herod's port city; the setting for several Acts episodes."),
+    ("How we KNOW the dates for the Old Testament!",
+     "https://www.youtube.com/watch?v=3DJtVlLRMGw",
+     "General reference — Old Testament chronology",
+     "Methodology video, not tied to one place. Consider linking from about.html rather than the encyclopedia."),
 ]
