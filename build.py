@@ -25,10 +25,10 @@ SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
 SITE_URL = "https://michaelkrewson.github.io/misterlibrarian"
 
-# FormSubmit endpoint for the Ask-a-Question form (delivers to noswerk@gmail.com).
-# Once the form is activated, FormSubmit issues a random alias string — swap it in
-# here (formsubmit.co/<alias>) to keep the address out of the page source, then rebuild.
-FORM_ENDPOINT = "https://formsubmit.co/noswerk@gmail.com"
+# FormSubmit endpoint for the Ask-a-Question form. This is the activated form's
+# random alias (delivers to the librarian's gmail without exposing the address in
+# the page source). Verified working 2026-07-10 via a test submission.
+FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 
 # Chapter registry: slug -> (book, chapter number, one-line teaser).
 # Add a line here when a new chapter lands in the source file.
