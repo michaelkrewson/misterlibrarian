@@ -48,8 +48,9 @@ CHAPTERS = [
     ("gen10", "Genesis", 10, "The Table of Nations: the whole known world, drawn as one family tree."),
     ("gen11", "Genesis", 11, "Babel and babble — and the quiet road to Ur."),
     ("gen12", "Genesis", 12, "Lekh lekha: the call of Abram, and Egypt as the Exodus in miniature."),
+    ("gen13", "Genesis", 13, "Abram and Lot part ways — the land too small for both, and the Hebrew word for “separate” that decides everything."),
 ]
-NEXT_UP = "Genesis 13"         # shown greyed-out at the end of the nav chain
+NEXT_UP = "Genesis 14"         # shown greyed-out at the end of the nav chain
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),

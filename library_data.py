@@ -29,6 +29,8 @@ DICTIONARY = [
      "Humankind / the human; a personal name only later. Puns on adamah, 'ground' — the groundling from the ground.", (2, 7)),
     ("adamah", "adamah", "אֲדָמָה", "adamah",
      "The ground, soil, arable earth — the stuff the human is formed from, cursed in Eden, and blessed through Abram.", (2, 7)),
+    ("afar", "afar", "עָפָר", "afar",
+     "Dust — the stuff humanity is formed from and returns to (2:7, 3:19); the same humble material later measures Abram's uncountable offspring (13:16).", (2, 7)),
     ("arum", "arum / arummim", "עָרוּם / עֲרוּמִּים", "arum / arummim",
      "'Crafty' and 'naked' — nearly identical Hebrew words; the pun straddles the Genesis 2/3 chapter break.", (3, 1)),
     ("bara", "bara", "בָּרָא", "bara",
@@ -51,6 +53,8 @@ DICTIONARY = [
      "To walk about, back and forth — the walking-WITH-God verb: God in the garden (3:8), Enoch (5:22,24), Noah (6:9).", (3, 8)),
     ("itsavon", "itsavon", "עִצָּבוֹן", "itsavon",
      "Painful toil — the woman's pain and the man's toil in Eden's sentences; the same root reaches God's own grieved heart at 6:6.", (3, 16)),
+    ("kikkar", "kikkar", "כִּכָּר", "kikkar",
+     "A disc, circle — hence 'plain': the round, well-watered Jordan valley Lot chooses (13:10-12); elsewhere the same word names a 'talent,' a round ingot of silver or gold.", (13, 10)),
     ("lekh-lekha", "lekh-lekha", "לֶךְ-לְךָ", "lekh-lekha",
      "'Go — you yourself': the emphatic doubled call of Abram; the third parashah takes its name from it.", (12, 1)),
     ("mabul", "mabul", "מַבּוּל", "mabul",
@@ -63,12 +67,16 @@ DICTIONARY = [
      "Appointed times — the festival-calendar word; what the sun and moon are installed to mark.", (1, 14)),
     ("nacham", "nacham", "נָחַם", "nacham",
      "Comfort — and regret. Noah's name-hope (5:29) returns as God's regret (6:6): one root, opposite moods.", (5, 29)),
+    ("nasa", "nasa", "נָשָׂא", "nasa",
+     "To carry, bear, lift — one root doing three jobs in Genesis 13: the land 'could not bear' Abram and Lot together (13:6), then each of them 'lifts up' his eyes (13:10, 13:14) to opposite ends.", (13, 6)),
     ("nefesh", "nefesh chayah", "נֶפֶשׁ חַיָּה", "nefesh chayah",
      "A living creature/being — fish, birds, animals, and humans alike; not an immaterial 'soul' inside a body.", (1, 20)),
     ("nephilim", "Nephilim", "נְפִלִים", "Nefilim",
      "Beings 'on the earth in those days' (6:4); meaning unknown (possibly 'fallen ones'); LXX rendered 'giants.' Recur only at Numbers 13:33.", (6, 4)),
     ("olah", "olah", "עֹלָה", "olah",
      "Burnt offering — literally an 'ascending' offering: the whole animal goes up in smoke. First at Noah's altar.", (8, 20)),
+    ("parad", "parad", "פָּרַד", "parad",
+     "To separate — Genesis 13's hinge verb: Abram proposes it (13:9), Lot enacts it (13:11), and the renewed land promise arrives precisely 'after' it happens (13:14).", (13, 9)),
     ("qadash", "qadash", "קָדַשׁ", "qadash",
      "To make holy, set apart — its first biblical object is a day, the sabbath.", (2, 3)),
     ("qeshet", "qeshet", "קֶשֶׁת", "qeshet",
@@ -171,12 +179,13 @@ ENCYCLOPEDIA = [
          desc="Both a person — Ham's cursed son (9:25-27), father of Sidon and Heth (10:15) — and, in Genesis's "
               "'genealogy is geography' idiom (see the Genesis 10 notes), the land his descendants settle: the "
               "promised land itself, entered by Abram at 12:5 and central to the rest of the Bible.",
-         refs=[(9, 18), (9, 22), (9, 25), (9, 26), (9, 27), (10, 6), (10, 15), (11, 31), (12, 5)], videos=[]),
+         refs=[(9, 18), (9, 22), (9, 25), (9, 26), (9, 27), (10, 6), (10, 15), (11, 31), (12, 5), (13, 12)], videos=[]),
     dict(slug="sodom-gomorrah", name="Sodom and Gomorrah", kind="place",
          aliases=["Sodom", "Gomorrah", "Sodom and Gomorrah"],
-         desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing, their story untold "
-              "until chapters 13-19.",
-         refs=[(10, 19)],
+         desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing. Lot drifts toward "
+              "them by stages in ch. 13 (their coming ruin already named there, 13:10), and the city's own "
+              "wickedness is stated outright at 13:13; the destruction itself is still ahead, in Genesis 19.",
+         refs=[(10, 19), (13, 10), (13, 12), (13, 13)],
          videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
                   "(preview — their destruction is still ahead, in Genesis 19)",
                   "https://www.youtube.com/watch?v=QjPcSQUY2W0")]),
@@ -223,6 +232,29 @@ ENCYCLOPEDIA = [
               "famine (12:10) and his stay runs the Exodus pattern in miniature: danger, plagues, 'send away,' "
               "wealth out.",
          refs=[(10, 6), (10, 13), (12, 10), (12, 14)], videos=[]),
+    dict(slug="jordan-plain", name="The Plain of the Jordan (Kikkar)", kind="place", aliases=["the plain of the Jordan"],
+         desc="The round, well-watered lower Jordan valley (13:10) — 'like the garden of the LORD, like the land "
+              "of Egypt' — that Lot chooses (13:11) over staying with Abram. Its beauty and its coming ruin are "
+              "named in the very same verse.",
+         refs=[(13, 10), (13, 11), (13, 12)], videos=[]),
+    dict(slug="zoar", name="Zoar", kind="place",
+         desc="A landmark fixing the plain's southern extent at its first mention (13:10) — its own story, where "
+              "Lot flees and it alone of the plain's cities is spared, is still six chapters away.",
+         refs=[(13, 10)],
+         videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
+                  "(preview — Zoar's own story is still ahead, in Genesis 19)",
+                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")]),
+    dict(slug="hebron", name="Hebron", kind="place",
+         desc="Where Abram settles after Lot's departure, among the oaks of Mamre, and builds his third altar "
+              "(13:18) — barely introduced here, but central later: Sarah's burial, the cave of Machpelah, "
+              "David's first capital.",
+         refs=[(13, 18)], videos=[]),
+    dict(slug="mamre", name="Mamre (the oaks of)", kind="place", aliases=["Mamre"],
+         desc="The tree-grove near Hebron where Abram pitches his tent and builds an altar (13:18) — the third "
+              "named tree at one of his altars, after Shechem's tree of Moreh (12:6). Mamre is also a person, an "
+              "Amorite ally of Abram's named in the very next chapter (14:13, 24) — the place and the man are not "
+              "shown to be connected beyond sharing the name, the same double-use already flagged at Haran.",
+         refs=[(13, 18)], videos=[]),
 
     # ---- people ----
     dict(slug="adam-person", name="Adam", kind="person",
