@@ -16,6 +16,9 @@ import argparse
 import html
 import os
 import re
+from collections import defaultdict
+
+from library_data import DICTIONARY, ENCYCLOPEDIA, XREFS
 
 DEFAULT_SOURCE = os.path.expanduser(
     "~/projects/mstr-trader/dashboard/mister_translation.html")
@@ -40,8 +43,13 @@ CHAPTERS = [
     ("gen5", "Genesis", 5, "Ten generations, one drumbeat — and the one man who never dies."),
     ("gen6", "Genesis", 6, "The sons of God, the Nephilim, the LORD’s regret, and the ark."),
     ("gen7", "Genesis", 7, "The flood: creation run in reverse, and “the LORD shut him in.”"),
+    ("gen8", "Genesis", 8, "God remembers Noah — the raven, the dove, and the first altar."),
+    ("gen9", "Genesis", 9, "Meat and blood, the first law, and the bow hung in the clouds."),
+    ("gen10", "Genesis", 10, "The Table of Nations: the whole known world, drawn as one family tree."),
+    ("gen11", "Genesis", 11, "Babel and babble — and the quiet road to Ur."),
+    ("gen12", "Genesis", 12, "Lekh lekha: the call of Abram, and Egypt as the Exodus in miniature."),
 ]
-NEXT_UP = "Genesis 8"          # shown greyed-out at the end of the nav chain
+NEXT_UP = "Genesis 13"         # shown greyed-out at the end of the nav chain
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),
@@ -98,6 +106,7 @@ def header(active=""):
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Home</a>
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
+    <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="ask-enoch.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
     <a href="about.html"{cls('about')}>About</a>
@@ -109,7 +118,7 @@ FOOTER = """<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
   choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
 </footer>"""
 
 
@@ -156,6 +165,234 @@ def clean_chapter(content):
     return content
 
 
+# ---------------------------------------------------------------- library ---
+
+def verse_anchor(ch, v):
+    """Anchor id used in the source markup: chapter 1 is bare vN, others vCH-N."""
+    return f"v{v}" if ch == 1 else f"v{ch}-{v}"
+
+
+def verse_url(ch, v):
+    return f"genesis-{ch}.html#{verse_anchor(ch, v)}"
+
+
+def inject_xrefs(content, ch):
+    """Append ⤷ cross-reference chips inside each verse block this chapter owns."""
+    by_verse = defaultdict(list)
+    for (a, av), (b, bv), why in XREFS:
+        if a == ch:
+            by_verse[av].append(((b, bv), why))
+        if b == ch:
+            by_verse[bv].append(((a, av), why))
+    for v, links in sorted(by_verse.items()):
+        anchor = verse_anchor(ch, v)
+        marker = f'id="{anchor}"'
+        i = content.find(marker)
+        if i < 0:
+            continue
+        # the verse block closes with the first '</div></div>' after its id
+        j = content.find("</div></div>", i)
+        if j < 0:
+            continue
+        chips = "".join(
+            f'<a class="xref" href="{verse_url(bc, bv)}" title="{html.escape(why, quote=True)}">'
+            f'⤷ {bc}:{bv}</a>'
+            for (bc, bv), why in links)
+        block = f'<div class="xrefs"><span class="xr-label">cross-refs</span>{chips}</div>'
+        content = content[:j] + block + content[j:]
+    return content
+
+
+_STOPWORDS = set("""
+a an and are as at be but by for from he her him his i in into is it its let me my not of on or our
+so that the their them then there they this to was we were will with you your all any because if
+when who whom whose what which shall may your yours out up down over under after before again very
+came come go went said says do did done had has have how than too these those upon them one two
+""".split())
+
+
+def extract_verses_english(chapters):
+    """Return [(ch, v, plain_english_text), ...] for every verse in every chapter."""
+    rows = []
+    for slug, _, num, _ in CHAPTERS:
+        content = chapters[slug]
+        for m in re.finditer(
+                r'id="(v(?:\d+-)?\d+)".*?<div class="eng">(.*?)</div>', content, re.S):
+            anchor, eng = m.group(1), m.group(2)
+            vnum = int(anchor.rsplit("-", 1)[-1] if "-" in anchor else anchor[1:])
+            text = re.sub(r"<[^>]+>", " ", eng)
+            text = html.unescape(text)
+            text = re.sub(r"\s*note\s*$", "", text.strip())
+            text = re.sub(r"\s+", " ", text)
+            rows.append((num, vnum, text))
+    return rows
+
+
+def build_concordance(chapters):
+    rows = extract_verses_english(chapters)
+    index = defaultdict(list)          # word -> [(ch, v), ...]
+    for ch, v, text in rows:
+        seen = set()
+        for raw in re.findall(r"[A-Za-z][A-Za-z'’\-]*", text):
+            w = raw.lower().strip("'’-")
+            if len(w) < 3 or w in _STOPWORDS or w in seen:
+                continue
+            seen.add(w)
+            index[w].append((ch, v))
+    words = sorted(index.keys())
+    total_refs = sum(len(vs) for vs in index.values())
+
+    letters = sorted({w[0].upper() for w in words})
+    jump = " ".join(f'<a href="#L{L}">{L}</a>' for L in letters)
+    sections = []
+    cur = None
+    for w in words:
+        L = w[0].upper()
+        if L != cur:
+            if cur is not None:
+                sections.append("</div>")
+            sections.append(f'<h2 id="L{L}">{L}</h2><div class="panel conc">')
+            cur = L
+        refs = index[w]
+        links = " ".join(
+            f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in refs)
+        sections.append(
+            f'<div class="cw"><span class="cw-w">{html.escape(w)}</span>'
+            f'<span class="cw-n">×{len(refs)}</span>'
+            f'<span class="cw-refs">{links}</span></div>')
+    if cur is not None:
+        sections.append("</div>")
+
+    body = f"""<h1 class="pagetitle">🔠 Concordance</h1>
+<p class="lede">Every significant English word in the translation so far, with every verse it appears in —
+<strong>{len(words)} words, {total_refs} occurrences, generated automatically from the translation text
+itself</strong> each time a chapter is added (common function words are skipped). Because it indexes THIS
+translation, it reflects this project's actual renderings: look up <em>vault</em>, not <em>firmament</em>.</p>
+<p class="lede jump">Jump to: {jump}</p>
+{''.join(sections)}"""
+    out = page(f"Concordance — {SITE_NAME}", body, active="library",
+               desc="Auto-generated concordance of the MisterLibrarian translation — every significant "
+                    "word, every verse, rebuilt as each chapter is added.")
+    open(os.path.join(OUT, "concordance.html"), "w", encoding="utf-8").write(out)
+    return len(words), total_refs
+
+
+def build_dictionary():
+    entries = sorted(DICTIONARY, key=lambda e: e[1].lower())
+    items = []
+    for slug, term, hebrew, translit, gloss, (ch, v) in entries:
+        items.append(f"""<div class="dentry" id="{slug}">
+  <div class="dhead"><span class="dterm">{html.escape(term)}</span>
+    <span class="dheb">{hebrew}</span> <span class="dtr">{html.escape(translit)}</span></div>
+  <p>{gloss} <a class="dref" href="{verse_url(ch, v)}">→ first discussed at {ch}:{v}</a></p>
+</div>""")
+    body = f"""<h1 class="pagetitle">📖 Dictionary</h1>
+<p class="lede">The Hebrew words this translation has met so far — <strong>{len(entries)} terms</strong>,
+each added the chapter its translator's note first discussed it, with a link back to that discussion.
+This is a reader's glossary of the actual working vocabulary, not an abridged lexicon.</p>
+<div class="panel dict">
+{''.join(items)}
+</div>"""
+    out = page(f"Dictionary — {SITE_NAME}", body, active="library",
+               desc="A growing dictionary of the Hebrew terms behind the MisterLibrarian translation, "
+                    "added chapter by chapter.")
+    open(os.path.join(OUT, "dictionary.html"), "w", encoding="utf-8").write(out)
+    return len(entries)
+
+
+def build_encyclopedia():
+    places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
+    people = [e for e in ENCYCLOPEDIA if e["kind"] in ("person", "people")]
+
+    def render(entries):
+        out = []
+        for e in sorted(entries, key=lambda x: x["name"].lower()):
+            refs = " ".join(f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in e["refs"])
+            vids = ""
+            if e.get("videos"):
+                links = "".join(
+                    f'<li><a href="{html.escape(u, quote=True)}" rel="noopener">▶ {html.escape(t)}</a></li>'
+                    for t, u in e["videos"])
+                vids = f'<ul class="evids">{links}</ul>'
+            else:
+                vids = ('<div class="evids-empty">▶ No films on the shelf yet — archaeology and '
+                        'geography videos get added here as Mr. Librarian finds good ones.</div>')
+            out.append(f"""<div class="eentry" id="{e['slug']}">
+  <div class="ehead">{html.escape(e['name'])}</div>
+  <p>{e['desc']}</p>
+  <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
+  {vids}
+</div>""")
+        return "".join(out)
+
+    body = f"""<h1 class="pagetitle">🏺 Encyclopedia</h1>
+<p class="lede">The people and places the translation has reached — <strong>{len(places)} places,
+{len(people)} people</strong> — each entry linked to every verse where it appears. Place entries carry a
+film shelf: as the project finds good archaeology and geography videos (excavations at Ur, the ziggurats
+of Shinar, the mounds of Nineveh…), they're linked here under the entry they illuminate, so the
+encyclopedia doubles as the project's viewing room.</p>
+
+<h2>Places</h2>
+<div class="panel ency">{render(places)}</div>
+
+<h2>People</h2>
+<div class="panel ency">{render(people)}</div>"""
+    out = page(f"Encyclopedia — {SITE_NAME}", body, active="library",
+               desc="People and places of the MisterLibrarian translation — every entry verse-linked, "
+                    "with a growing shelf of archaeology videos.")
+    open(os.path.join(OUT, "encyclopedia.html"), "w", encoding="utf-8").write(out)
+    return len(places), len(people)
+
+
+def build_library(stats):
+    n_words, n_refs, n_dict, n_places, n_people, n_xrefs = stats
+    body = f"""<h1 class="pagetitle">📚 The Library</h1>
+<p class="lede">The reference room of the project — every shelf grows automatically or by hand as each
+chapter is translated, so the library is always exactly as deep as the translation itself.</p>
+
+<div class="cardgrid">
+  <a class="card" href="concordance.html"><div class="card-t">🔠 Concordance</div>
+  <div class="card-d">{n_words} words · {n_refs} occurrences — every significant English word in the
+  translation, indexed to every verse. Generated automatically from the text at every build.</div></a>
+  <a class="card" href="dictionary.html"><div class="card-t">📖 Dictionary</div>
+  <div class="card-d">{n_dict} Hebrew terms — the working vocabulary behind the translation, each linked
+  to the note that first discussed it.</div></a>
+  <a class="card" href="encyclopedia.html"><div class="card-t">🏺 Encyclopedia</div>
+  <div class="card-d">{n_places} places · {n_people} people — verse-linked entries, with a film shelf on
+  every place for archaeology &amp; geography videos.</div></a>
+</div>
+
+<h2>Cross-references</h2>
+<div class="panel prose">
+  <p><strong>{n_xrefs} connections and counting.</strong> The translator's notes keep catching the text
+  quoting itself — the naked/crafty pun across the Genesis 2/3 break, "desire and mastery" recurring from
+  Eve to Cain, Babel's grasped-at name answered by Abram's given one. Each of those connections is now a
+  live link: look for the <span class="xref" style="cursor:default">⤷ 11:4</span> chips under verses on
+  the chapter pages — every link runs both directions, and hovering shows why the two verses are
+  connected. New chains are added as each chapter lands.</p>
+</div>
+
+<h2>Where this library is heading</h2>
+<div class="panel prose">
+  <p><strong>🔴 Red letters.</strong> When this project reaches the Gospels, the words of Jesus will be
+  set in red — the plan is declared now so the convention is ready the day Matthew begins. (The Hebrew
+  Bible's direct divine speech stays in ordinary type, as in nearly all red-letter editions.)</p>
+  <p><strong>▶ The film shelf.</strong> Every place entry in the encyclopedia has a slot for curated
+  archaeology and geography videos — excavations, site walk-throughs, museum pieces. Mr. Librarian
+  curates; the encyclopedia is where they live.</p>
+  <p><strong>⤷ Deeper cross-references.</strong> As the translation grows, the chains multiply — and
+  once multiple books exist, they'll connect across books the way study Bibles do, but built only from
+  connections this project's own notes have actually argued for.</p>
+  <p><strong>🔠 A Hebrew concordance.</strong> The current concordance indexes the English; a
+  Hebrew-side index (every occurrence of <em>nefesh</em>, every <em>toldot</em>) is the natural next
+  shelf.</p>
+</div>"""
+    out = page(f"Library — {SITE_NAME}", body, active="library",
+               desc="The reference room of the MisterLibrarian Bible Project: concordance, dictionary, "
+                    "encyclopedia, and cross-references — all growing with the translation.")
+    open(os.path.join(OUT, "library.html"), "w", encoding="utf-8").write(out)
+
+
 def nav_strip(idx, position):
     prev_html = ""
     if idx > 0:
@@ -173,7 +410,7 @@ def nav_strip(idx, position):
 
 def build_chapter_pages(chapters):
     for idx, (slug, book, num, teaser) in enumerate(CHAPTERS):
-        content = clean_chapter(chapters[slug])
+        content = inject_xrefs(clean_chapter(chapters[slug]), num)
         toggle = ('<div class="togglebar"><button class="tgl" id="hebtgl" '
                   'onclick="toggleHeb()">Hide Hebrew</button></div>')
         body = f"""{nav_strip(idx, 'top')}
@@ -457,7 +694,13 @@ def main():
     build_ask_enoch()
     build_contact()
     build_thanks()
-    print(f"built {len(CHAPTERS)} chapter pages + index/toc/about/ask-enoch/contact/thanks from {args.source}")
+    n_words, n_refs = build_concordance(chapters)
+    n_dict = build_dictionary()
+    n_places, n_people = build_encyclopedia()
+    build_library((n_words, n_refs, n_dict, n_places, n_people, len(XREFS)))
+    print(f"built {len(CHAPTERS)} chapters + core pages + library "
+          f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp, "
+          f"xrefs {len(XREFS)}) from {args.source}")
 
 
 if __name__ == "__main__":

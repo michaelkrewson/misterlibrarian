@@ -1,0 +1,316 @@
+# -*- coding: utf-8 -*-
+"""Curated data for the MisterLibrarian Bible Project's library pages.
+
+Three collections, all grown chapter by chapter as the translation advances:
+
+  DICTIONARY   — Hebrew terms the translator's notes have discussed.
+                 Each: (slug, term, hebrew, transliteration, gloss, first_ref)
+                 where first_ref = (chapter, verse) of the note that introduces it.
+
+  ENCYCLOPEDIA — people and places the text has named so far.
+                 Each entry dict:
+                   slug, name, kind ("place" | "person" | "people"),
+                   desc (2-4 sentences),
+                   refs [(ch, v), ...] — where it appears in the translation,
+                   videos [(title, url), ...] — curated archaeology/geography
+                     links (Michael supplies; empty until then).
+
+  XREFS        — this project's own cross-reference chains: connections the
+                 translator's notes establish between OUR verses.
+                 Each: ((ch, v), (ch, v), "short reason") — rendered on BOTH
+                 verses' pages as ⤷ chips.
+
+The concordance is NOT here — it is generated automatically from the
+translation text itself at build time (see build.py).
+"""
+
+DICTIONARY = [
+    ("adam", "adam", "אָדָם", "adam",
+     "Humankind / the human; a personal name only later. Puns on adamah, 'ground' — the groundling from the ground.", (2, 7)),
+    ("adamah", "adamah", "אֲדָמָה", "adamah",
+     "The ground, soil, arable earth — the stuff the human is formed from, cursed in Eden, and blessed through Abram.", (2, 7)),
+    ("arum", "arum / arummim", "עָרוּם / עֲרוּמִּים", "arum / arummim",
+     "'Crafty' and 'naked' — nearly identical Hebrew words; the pun straddles the Genesis 2/3 chapter break.", (3, 1)),
+    ("bara", "bara", "בָּרָא", "bara",
+     "'Create' — a verb reserved for God alone in the Bible; marks the thresholds: cosmos (1:1), animal life (1:21), humanity (1:27).", (1, 21)),
+    ("brit", "brit", "בְּרִית", "brit",
+     "Covenant. First promised at 6:18, first enacted (with all flesh, unconditionally) in Genesis 9 — the word that structures the rest of the Bible.", (6, 18)),
+    ("chen", "chen", "חֵן", "chen",
+     "Favor, grace. First appearance: 'Noah found favor in the eyes of the LORD' — and chen reverses the letters of Noach.", (6, 8)),
+    ("chamas", "chamas", "חָמָס", "chamas",
+     "Violence, lawless wrong — the earth's indictment before the flood, named twice.", (6, 11)),
+    ("elohim", "Elohim", "אֱלֹהִים", "Elohim",
+     "'God' — plural in form, singular in verb: standard Biblical Hebrew for the one God.", (1, 1)),
+    ("ezer-kenegdo", "ezer kenegdo", "עֵזֶר כְּנֶגְדּוֹ", "ezer kenegdo",
+     "'A helper corresponding to him' — ezer usually describes GOD helping Israel (strength, not servitude); kenegdo = a matching counterpart. Source of the misleading 'helpmeet.'", (2, 18)),
+    ("gibbor", "gibbor", "גִּבֹּר", "gibbor",
+     "Mighty man, warrior. Used of the Nephilim's era (6:4) and of Nimrod, the first post-flood empire-builder.", (6, 4)),
+    ("hineh", "hineh", "הִנֵּה", "hineh",
+     "'Look! / Behold' — the attention word; this translation renders it 'look' throughout.", (1, 29)),
+    ("hithalekh", "hithalekh", "הִתְהַלֵּךְ", "hithalekh",
+     "To walk about, back and forth — the walking-WITH-God verb: God in the garden (3:8), Enoch (5:22,24), Noah (6:9).", (3, 8)),
+    ("itsavon", "itsavon", "עִצָּבוֹן", "itsavon",
+     "Painful toil — the woman's pain and the man's toil in Eden's sentences; the same root reaches God's own grieved heart at 6:6.", (3, 16)),
+    ("lekh-lekha", "lekh-lekha", "לֶךְ-לְךָ", "lekh-lekha",
+     "'Go — you yourself': the emphatic doubled call of Abram; the third parashah takes its name from it.", (12, 1)),
+    ("mabul", "mabul", "מַבּוּל", "mabul",
+     "THE flood — a technical term used only of this event (plus Psalm 29:10), never of ordinary flooding.", (6, 17)),
+    ("min", "min", "מִין", "min",
+     "Kind, sort — a farmer's word, not a taxonomy; behind every 'of its own kind.'", (1, 11)),
+    ("miqveh", "miqveh", "מִקְוֵה", "miqveh",
+     "A gathering (of water) — the word behind the seas' naming, and later Judaism's ritual bath.", (1, 10)),
+    ("moadim", "mo'adim", "מוֹעֲדִים", "mo'adim",
+     "Appointed times — the festival-calendar word; what the sun and moon are installed to mark.", (1, 14)),
+    ("nacham", "nacham", "נָחַם", "nacham",
+     "Comfort — and regret. Noah's name-hope (5:29) returns as God's regret (6:6): one root, opposite moods.", (5, 29)),
+    ("nefesh", "nefesh chayah", "נֶפֶשׁ חַיָּה", "nefesh chayah",
+     "A living creature/being — fish, birds, animals, and humans alike; not an immaterial 'soul' inside a body.", (1, 20)),
+    ("nephilim", "Nephilim", "נְפִלִים", "Nefilim",
+     "Beings 'on the earth in those days' (6:4); meaning unknown (possibly 'fallen ones'); LXX rendered 'giants.' Recur only at Numbers 13:33.", (6, 4)),
+    ("olah", "olah", "עֹלָה", "olah",
+     "Burnt offering — literally an 'ascending' offering: the whole animal goes up in smoke. First at Noah's altar.", (8, 20)),
+    ("qadash", "qadash", "קָדַשׁ", "qadash",
+     "To make holy, set apart — its first biblical object is a day, the sabbath.", (2, 3)),
+    ("qeshet", "qeshet", "קֶשֶׁת", "qeshet",
+     "A bow — the weapon; Hebrew has no separate word for 'rainbow.' God hangs his war-bow in the clouds.", (9, 13)),
+    ("raqia", "raqia", "רָקִיעַ", "raqia",
+     "The vault of the sky — from a root meaning 'hammered out'; LXX stereōma → Vulgate firmamentum → 'firmament.'", (1, 6)),
+    ("ruach", "ruach", "רוּחַ", "ruach",
+     "Wind, breath, spirit — hovering at creation (1:2), sent to end the flood (8:1); one word, three English registers.", (1, 2)),
+    ("shachat", "shachat", "שָׁחַת", "shachat",
+     "To ruin — the flood's boomerang verb: the earth ruined itself; God completes the ruin (6:11-13).", (6, 11)),
+    ("shamayim", "shamayim", "שָׁמַיִם", "shamayim",
+     "The heavens / the sky — one Hebrew word for both English registers.", (1, 8)),
+    ("shamar", "shamar", "שָׁמַר", "shamar",
+     "To keep, guard, watch over — the human's garden vocation (2:15), disowned by Cain ('my brother's keeper?', 4:9).", (2, 15)),
+    ("shem", "shem", "שֵׁם", "shem",
+     "Name — what Babel grasps at ('let us make a name,' 11:4) and God gives ('I will make your name great,' 12:2). Also Noah's son Shem.", (11, 4)),
+    ("sherets", "sherets", "שֶׁרֶץ", "sherets",
+     "Swarming things — the cognate behind 'swarm with swarms' (1:20).", (1, 20)),
+    ("shuf", "shuf", "שׁוּף", "shuf",
+     "To crush / strike at — the rare verb (3× in the Bible) of the serpent's head and the offspring's heel.", (3, 15)),
+    ("tannin", "tannin", "תַּנִּין", "tannin",
+     "Sea-beast; elsewhere serpent or dragon — the 'chaos monsters' listed as ordinary day-five creations.", (1, 21)),
+    ("tehom", "tehom", "תְּהוֹם", "tehom",
+     "The deep — the primeval ocean of 1:2, whose springs burst open again at 7:11.", (1, 2)),
+    ("teshuqah", "teshuqah", "תְּשׁוּקָה", "teshuqah",
+     "Desire — paired with mashal ('rule/master') at both 3:16 and 4:7, three verses apart in the text's own logic.", (3, 16)),
+    ("tevah", "tevah", "תֵּבָה", "tevah",
+     "The ark — a box or chest, not a ship (no sail, rudder, or helm); its only other use is Moses' basket (Exodus 2:3).", (6, 14)),
+    ("toldot", "toldot", "תּוֹלְדֹת", "toldot",
+     "'Generations' — Genesis's own structural marker; ten toldot headings organize the book (2:4; 5:1; 6:9; 10:1; 11:10; 11:27; …).", (2, 4)),
+    ("tohu-vavohu", "tohu vavohu", "תֹהוּ וָבֹהוּ", "tohu vavohu",
+     "'Formless and empty' — the rhyming pair describing the pre-creation earth.", (1, 2)),
+    ("tselem", "tselem / demut", "צֶלֶם / דְּמוּת", "tselem / demut",
+     "Image / likeness — a king's image stood for his authority in his provinces; humanity bears God's. Restated post-flood as the ground of the first law (9:6).", (1, 26)),
+    ("tsela", "tsela", "צֵלָע", "tsela",
+     "Side — everywhere else a structural side (tabernacle, ark, temple), never a rib bone; this translation's 'side, not rib' at 2:21 rests on that usage.", (2, 21)),
+    ("yhvh", "YHVH", "יְהוָה", "YHVH (the Tetragrammaton)",
+     "The personal name of God, first at 2:4 — printed 'the LORD' (small caps) by longstanding convention; 'Jehovah' in the NWT.", (2, 4)),
+    ("yada", "yada", "יָדַע", "yada",
+     "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1).", (4, 1)),
+    ("zakhar-remember", "zakhar", "זָכַר", "zakhar",
+     "To remember — divine remembering that acts: 'God remembered Noah' turns the flood (8:1); God looks at the bow 'to remember' (9:16).", (8, 1)),
+]
+
+ENCYCLOPEDIA = [
+    # ---- places ----
+    dict(slug="eden", name="Eden", kind="place",
+         desc="The garden's region, 'in the east' (2:8), watered by a river that splits into four. Two of the four "
+              "rivers are certainly the Tigris and Euphrates, anchoring the geography broadly in Mesopotamia; the "
+              "other two (Pishon, Gihon) have never been confidently identified. Guarded by cherubim after the "
+              "expulsion (3:24).",
+         refs=[(2, 8), (2, 10), (3, 23), (3, 24), (4, 16)], videos=[]),
+    dict(slug="tigris", name="Tigris (Chidekel)", kind="place",
+         desc="The third river of Eden (2:14), 'running east of Asshur' — one of Mesopotamia's two great rivers, "
+              "still flowing through Iraq. The Hebrew name Chidekel matches Akkadian Idiqlat.",
+         refs=[(2, 14)], videos=[]),
+    dict(slug="euphrates", name="Euphrates (Perat)", kind="place",
+         desc="The fourth river of Eden (2:14), named without description — the audience knew it. The defining river "
+              "of Babylonia; later the ideal border of the promised land.",
+         refs=[(2, 14)], videos=[]),
+    dict(slug="havilah", name="Havilah", kind="place",
+         desc="Land of gold, bdellium, and onyx circled by the Pishon (2:11-12); location unknown — proposals range "
+              "from Arabia to the Gulf. Also a name in both Cush's and Joktan's lines (10:7, 10:29).",
+         refs=[(2, 11), (10, 7), (10, 29)], videos=[]),
+    dict(slug="cush", name="Cush", kind="place",
+         desc="The Nile-valley kingdom south of Egypt (roughly Nubia/Sudan), circled by Eden's Gihon (2:13); in the "
+              "Table of Nations, a son of Ham and the father of Nimrod (10:6-8).",
+         refs=[(2, 13), (10, 6), (10, 7), (10, 8)], videos=[]),
+    dict(slug="nod", name="Nod", kind="place",
+         desc="'The land of Wandering,' east of Eden, where Cain settles (4:16) — the name puns on his sentence to be "
+              "a restless wanderer (na vanad).",
+         refs=[(4, 16)], videos=[]),
+    dict(slug="ararat", name="Ararat", kind="place",
+         desc="The mountain REGION where the ark rests (8:4 — 'the mountains of Ararat,' plural): the ancient kingdom "
+              "of Urartu in the highlands of eastern Turkey/Armenia. The text names no individual peak; the modern "
+              "mountain called Ararat took its name from this verse.",
+         refs=[(8, 4)], videos=[]),
+    dict(slug="babel", name="Babel / Babylon", kind="place",
+         desc="First of Nimrod's cities in Shinar (10:10) and the site of the tower (11:1-9). Its own name, Bab-ili, "
+              "means 'Gate of God'; Genesis re-derives it from Hebrew balal, 'confuse' — a deliberate, polemical pun. "
+              "One of the most excavated cities of the ancient world (the great ziggurat E-temen-anki likely informed "
+              "the tower story).",
+         refs=[(10, 10), (11, 9)], videos=[]),
+    dict(slug="shinar", name="Shinar", kind="place",
+         desc="The flat southern-Mesopotamian plain (Sumer/Babylonia) — no stone, hence brick and bitumen (11:3); "
+              "home of Babel, Erech (Uruk), and Accad (Akkad).",
+         refs=[(10, 10), (11, 2)], videos=[]),
+    dict(slug="nineveh", name="Nineveh", kind="place",
+         desc="Great Assyrian capital on the Tigris, founded in the Nimrod tradition (10:11); its mounds (Kuyunjik, "
+              "opposite modern Mosul) have been excavated for nearly two centuries. Later the setting of Jonah.",
+         refs=[(10, 11), (10, 12)], videos=[]),
+    dict(slug="calah", name="Calah (Nimrud)", kind="place",
+         desc="Assyrian royal city (10:11-12); the modern mound is called Nimrud — the founder-figure's name still "
+              "attached to the site.",
+         refs=[(10, 11), (10, 12)], videos=[]),
+    dict(slug="sodom-gomorrah", name="Sodom and Gomorrah", kind="place",
+         desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing, their story untold "
+              "until chapters 13-19.",
+         refs=[(10, 19)], videos=[]),
+    dict(slug="ur", name="Ur of the Chaldeans", kind="place",
+         desc="Abram's birthplace (11:28,31) — the great Sumerian city of southern Iraq, whose ziggurat still stands; "
+              "Leonard Woolley's 1920s-30s excavations (royal tombs, gold lyres) made it world-famous. 'Of the "
+              "Chaldeans' is a later-era label, identifying the city for the text's own readers.",
+         refs=[(11, 28), (11, 31)], videos=[]),
+    dict(slug="haran-city", name="Haran (the city)", kind="place",
+         desc="Caravan city on the northern arc of the route from Ur to Canaan, where Terah's migration stalls and "
+              "Terah dies (11:31-32); Abram's call comes here (12:1-4). Spelled differently in Hebrew from Terah's "
+              "son Haran.",
+         refs=[(11, 31), (11, 32), (12, 4)], videos=[]),
+    dict(slug="shechem", name="Shechem", kind="place",
+         desc="Abram's first named stop in Canaan (12:6), at the great tree of Moreh — modern Tell Balata, between "
+              "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7); it will echo "
+              "through the whole Bible.",
+         refs=[(12, 6), (12, 7)], videos=[]),
+    dict(slug="bethel", name="Bethel", kind="place",
+         desc="'House of God' — Abram camps east of it and builds his second altar (12:8); the name's own story "
+              "(Jacob's ladder) is still ahead. Paired here with Ai to fix the camp's position.",
+         refs=[(12, 8)], videos=[]),
+    dict(slug="negev", name="The Negev", kind="place",
+         desc="The arid south of Canaan, toward which Abram travels by stages (12:9) — the land's dry margin, "
+              "naturally on the way down to Egypt.",
+         refs=[(12, 9)], videos=[]),
+    dict(slug="egypt", name="Egypt (Mizraim)", kind="place",
+         desc="In Hebrew, Mizraim — also the 'son' of Ham whose name IS the country (10:6,13). Abram goes down in "
+              "famine (12:10) and his stay runs the Exodus pattern in miniature: danger, plagues, 'send away,' "
+              "wealth out.",
+         refs=[(10, 6), (10, 13), (12, 10), (12, 14)], videos=[]),
+
+    # ---- people ----
+    dict(slug="adam-person", name="Adam", kind="person",
+         desc="The first human — ha'adam, 'the human,' for most of the early chapters; the word shades into a "
+              "personal name around 4:25-5:5. Formed from dust, placed in the garden, exiled from it; died at 930 "
+              "(5:5).",
+         refs=[(2, 7), (3, 17), (4, 25), (5, 5)], videos=[]),
+    dict(slug="eve", name="Eve (Chavah)", kind="person",
+         desc="'Mother of all the living' — the first personal name given to any human (3:20), punning on chai, "
+              "'life.' Named the fallen and the appointed sons alike (4:1, 4:25).",
+         refs=[(2, 22), (3, 20), (4, 1)], videos=[]),
+    dict(slug="cain", name="Cain", kind="person",
+         desc="Firstborn of Eve ('I have gotten,' qaniti — the name is a pun), worker of the ground, first murderer; "
+              "marked and exiled to Nod, where he builds the first city (4:17).",
+         refs=[(4, 1), (4, 8), (4, 15), (4, 17)], videos=[]),
+    dict(slug="abel", name="Abel (Hevel)", kind="person",
+         desc="Keeper of sheep; his name is the Hebrew word for 'breath, vapor' — never explained by the text, "
+              "fitting how briefly he lives. His blood 'cries out from the ground' (4:10).",
+         refs=[(4, 2), (4, 8), (4, 10)], videos=[]),
+    dict(slug="seth", name="Seth", kind="person",
+         desc="'Appointed' (shat) in place of Abel (4:25); the line of promise runs through him — and in his days "
+              "'people began to call on the name of the LORD' (4:26).",
+         refs=[(4, 25), (5, 3)], videos=[]),
+    dict(slug="enoch", name="Enoch (who walked with God)", kind="person",
+         desc="Seventh from Adam: the one man in Genesis 5 who does not die — 'Enoch walked with God, and then he "
+              "was not there, for God took him' (5:24), at 365 years. The later Book of Enoch grew from these two "
+              "verses (see the Ask Mr. Librarian post). Distinct from Cain's son Enoch (4:17), for whom the first "
+              "city was named.",
+         refs=[(5, 21), (5, 22), (5, 24)], videos=[]),
+    dict(slug="methuselah", name="Methuselah", kind="person",
+         desc="The longest-lived man in the Bible — 969 years (5:27); on the Masoretic numbers his death lands "
+              "exactly in the flood year.",
+         refs=[(5, 25), (5, 27)], videos=[]),
+    dict(slug="noah", name="Noah", kind="person",
+         desc="'This one will comfort us' (5:29) — righteous, blameless in his generation, walked with God (6:9). "
+              "Built the ark, offered the first altar's sacrifice (8:20), received the first covenant (9:9-17), "
+              "planted the first vineyard and fell (9:20-21). Died at 950 (9:29). His name's rest-root (n-ch) puns "
+              "through the whole flood story.",
+         refs=[(5, 29), (6, 9), (8, 20), (9, 20), (9, 29)], videos=[]),
+    dict(slug="shem-ham-japheth", name="Shem, Ham, and Japheth", kind="person",
+         desc="Noah's three sons, fathers of the Table of Nations' seventy peoples (10). Shem — whose name means "
+              "'Name' — heads the line the story follows to Abram; Ham's look at his father draws the oracle against "
+              "Canaan (9:22-27); Japheth's coastland peoples spread west.",
+         refs=[(5, 32), (9, 18), (9, 23), (10, 1)], videos=[]),
+    dict(slug="nimrod", name="Nimrod", kind="person",
+         desc="'The first mighty man on the earth… a mighty hunter before the LORD' (10:8-9) — the Table of Nations' "
+              "only biography. His kingdom starts at Babel and extends to Nineveh: empire, personified, and the "
+              "setup for the tower story.",
+         refs=[(10, 8), (10, 9), (10, 10)], videos=[]),
+    dict(slug="terah", name="Terah", kind="person",
+         desc="Father of Abram, Nahor, and Haran (11:26-27). He, not Abram, first sets out from Ur for Canaan — and "
+              "stops halfway, settling and dying in Haran (11:31-32).",
+         refs=[(11, 26), (11, 31), (11, 32)], videos=[]),
+    dict(slug="abram", name="Abram", kind="person",
+         desc="Called at 75 from Haran (12:1-4): land, nation, great name, and blessing for 'all the families of the "
+              "ground' — Babel's grasped-at name, given instead. Answers with altars at Shechem and Bethel; flinches "
+              "into the wife-sister ruse in Egypt (12:10-20). His story has just begun.",
+         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10)], videos=[]),
+    dict(slug="sarai", name="Sarai", kind="person",
+         desc="Abram's wife — introduced with the sentence everything turns on: 'Now Sarai was barren; she had no "
+              "child' (11:30). Endangered by the sister-story in Pharaoh's house (12:11-20).",
+         refs=[(11, 29), (11, 30), (12, 11), (12, 15)], videos=[]),
+    dict(slug="lot", name="Lot", kind="person",
+         desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5) "
+              "— planted in the story for consequences still ahead.",
+         refs=[(11, 27), (12, 4), (12, 5)], videos=[]),
+    dict(slug="pharaoh", name="Pharaoh (of Genesis 12)", kind="person",
+         desc="The unnamed king whose house takes Sarai in and is struck with plagues (12:15-20). His indignant "
+              "'take her and go' makes him, uncomfortably, the moral voice of the scene — and his role rehearses the "
+              "Exodus Pharaoh's, four hundred years early.",
+         refs=[(12, 15), (12, 17), (12, 18)], videos=[]),
+    dict(slug="nephilim-entry", name="The Nephilim", kind="people",
+         desc="'On the earth in those days — and afterward too' (6:4), around the sons-of-God episode; 'the mighty "
+              "men of old, the men of renown.' Meaning unknown; the Greek translators wrote 'giants.' They reappear "
+              "only in the spies' report (Numbers 13:33).",
+         refs=[(6, 4)], videos=[]),
+]
+
+# ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
+XREFS = [
+    ((1, 2),  (7, 11),  "the deep (tehom) — sealed at creation, burst open at the flood"),
+    ((1, 2),  (8, 1),   "ruach over the waters — creation's opening echoed at re-creation"),
+    ((1, 6),  (7, 11),  "the waters above the vault — released as the floodgates of the sky"),
+    ((1, 22), (8, 17),  "the day-five blessing — 'swarm, be fruitful, multiply' — reissued after the flood"),
+    ((1, 26), (3, 22),  "the divine plural — 'let us make' / 'like one of us'"),
+    ((1, 26), (5, 1),   "image and likeness — restated as the genealogy opens"),
+    ((1, 26), (9, 6),   "the image of God — the ground of the first law against bloodshed"),
+    ((1, 28), (9, 1),   "'be fruitful and multiply, fill the earth' — the blessing reissued to Noah"),
+    ((1, 29), (9, 3),   "the food grant — plants only, then widened to meat after the flood"),
+    ((1, 31), (7, 19),  "me'od — 'very good' echoed in the waters' 'very, very' triumph"),
+    ((2, 7),  (3, 19),  "dust — formed from it, returning to it: Eden's frame"),
+    ((2, 7),  (7, 22),  "the breath of life in the nostrils — given at creation, taken at the flood"),
+    ((2, 9),  (3, 6),   "nechmad, 'desirable' — the tree's appeal, seeded two chapters early"),
+    ((2, 15), (4, 9),   "shamar, 'keep/watch over' — the garden vocation Cain disowns"),
+    ((2, 17), (3, 4),   "mot tamut — 'you will surely die,' quoted and negated by the serpent"),
+    ((2, 25), (3, 1),   "arummim/arum — naked/crafty: the pun across the chapter break"),
+    ((3, 16), (4, 7),   "teshuqah + mashal — desire and mastery, the identical pairing"),
+    ((3, 17), (5, 29),  "the cursed ground — Noah named as its hoped-for comfort"),
+    ((3, 17), (12, 3),  "the adamah — cursed in Eden, blessed through Abram's family"),
+    ((3, 8),  (5, 22),  "hithalekh — God walking in the garden; Enoch walking with God"),
+    ((3, 8),  (6, 9),   "hithalekh — the garden verb again: Noah walked with God"),
+    ((4, 15), (4, 24),  "sevenfold — God's protective vengeance, inflated to Lamech's seventy-seven"),
+    ((4, 17), (5, 21),  "two Enochs — Cain's city-son and the Enoch who walked with God"),
+    ((4, 26), (12, 8),  "'called on the name of the LORD' — the formula, from Enosh to Abram's altar"),
+    ((5, 29), (6, 6),   "nacham — Noah's 'comfort' returns as the LORD's 'regret'"),
+    ((5, 32), (9, 29),  "Noah's ledger entry — opened without a total, closed after the flood"),
+    ((6, 4),  (10, 8),  "gibbor — the mighty men of old, and Nimrod the first mighty man after"),
+    ((6, 5),  (8, 21),  "the heart's evil inclination — grounds for the flood, then grounds for mercy"),
+    ((6, 18), (9, 9),   "the covenant — promised before the flood, established after it"),
+    ((7, 2),  (8, 20),  "the seven pairs of clean animals — provisioned for the first altar's sacrifice"),
+    ((10, 10), (11, 9), "Babel — planted under Nimrod's flag, judged at the tower"),
+    ((9, 25), (10, 15), "Canaan — cursed in the oracle, mapped in the Table"),
+    ((10, 21), (11, 16), "Eber — flagged in the Table; likely the name behind 'Hebrew'"),
+    ((11, 4), (12, 2),  "shem, 'name' — grasped at Babel, given to Abram"),
+    ((11, 30), (12, 2), "'Sarai was barren' — the sentence the great-nation promise is heard against"),
+    ((11, 31), (12, 5), "the journey to Canaan — stalled under Terah, finished under Abram"),
+    ((12, 10), (12, 20), "down to Egypt and sent away — the Exodus pattern in miniature"),
+]

@@ -188,3 +188,50 @@ body.hide-heb .heb{display:none}
 .askform ::placeholder{color:var(--dim)}
 .askform .btn{border:none;cursor:pointer;font-family:inherit;align-self:flex-start}
 .formnote{font-size:11.5px;color:var(--dim);line-height:1.65;margin:0}
+
+/* ── cross-reference chips (chapter pages) ── */
+.xrefs{margin-top:7px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.xr-label{font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:var(--dim);font-weight:700}
+.xref{display:inline-block;font-size:10.5px;font-weight:700;color:var(--purple);
+  background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.25);
+  border-radius:9px;padding:1px 8px}
+.xref:hover{color:#fff;border-color:var(--purple)}
+body.hide-heb .xrefs{margin-top:5px}
+
+/* ── concordance ── */
+.jump{font-size:12px}
+.jump a{margin-right:2px;font-weight:700;color:var(--gold)}
+.conc{padding:10px 16px}
+.cw{display:flex;gap:10px;align-items:baseline;padding:7px 4px;border-bottom:1px solid rgba(255,255,255,0.04);flex-wrap:wrap}
+.cw:last-child{border-bottom:none}
+.cw-w{font-weight:800;color:var(--gold);font-size:13px;min-width:120px}
+.cw-n{font-size:10px;color:var(--dim);min-width:30px}
+.cw-refs{font-size:11.5px;line-height:1.9;color:var(--muted)}
+.cw-refs a{margin-right:7px;white-space:nowrap}
+
+/* ── dictionary ── */
+.dict{display:flex;flex-direction:column;gap:4px;padding:12px 18px}
+.dentry{padding:11px 4px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.dentry:last-child{border-bottom:none}
+.dentry:target{background:rgba(232,201,104,0.06);border-radius:8px}
+.dhead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:5px}
+.dterm{font-weight:800;color:var(--gold);font-size:14px}
+.dheb{font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif;font-size:16px;color:#f3ecd8;
+  direction:rtl;unicode-bidi:isolate}
+.dtr{font-size:11.5px;color:var(--dim);font-style:italic}
+.dentry p{margin:0;font-size:12.8px;line-height:1.7;color:var(--muted)}
+.dref{font-size:11px;white-space:nowrap}
+
+/* ── encyclopedia ── */
+.ency{display:flex;flex-direction:column;gap:4px;padding:12px 18px}
+.eentry{padding:13px 4px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.eentry:last-child{border-bottom:none}
+.eentry:target{background:rgba(232,201,104,0.06);border-radius:8px}
+.ehead{font-weight:800;color:#fff;font-size:14.5px;margin-bottom:6px}
+.eentry p{margin:0 0 8px;font-size:12.8px;line-height:1.72;color:var(--muted)}
+.erefs{font-size:11.5px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.erefs a{white-space:nowrap}
+.evids{margin:9px 0 0;padding-left:2px;list-style:none;display:flex;flex-direction:column;gap:4px}
+.evids a{font-size:12px;color:var(--gold);font-weight:650}
+.evids a:hover{color:#fff}
+.evids-empty{margin-top:9px;font-size:11px;color:var(--dim);font-style:italic}
