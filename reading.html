@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Reading — The MisterLibrarian Bible Project</title>
+<meta name="description" content="Track your own progress through The MisterLibrarian Bible Project, chapter by chapter — kept privately in your browser, no account needed."/>
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 46 46&#x27;&gt;&lt;circle cx=&#x27;23&#x27; cy=&#x27;23&#x27; r=&#x27;22.5&#x27; fill=&#x27;#0b1929&#x27;/&gt;&lt;rect x=&#x27;9&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;33.4&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;12.6&#x27; y=&#x27;14.5&#x27; width=&#x27;20.8&#x27; height=&#x27;17&#x27; fill=&#x27;#efe6cf&#x27;/&gt;&lt;path d=&#x27;M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z&#x27; fill=&#x27;#e8c968&#x27;/&gt;&lt;/svg&gt;"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="wrap">
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
+  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
+  <rect x="9" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+  <rect x="33.4" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+  <rect x="12.6" y="14.5" width="20.8" height="17" fill="#efe6cf"/>
+  <g stroke="#8a7ab0" stroke-width="1.1" stroke-linecap="round">
+    <line x1="15.5" y1="19" x2="30.5" y2="19"/>
+    <line x1="15.5" y1="23" x2="30.5" y2="23"/>
+    <line x1="15.5" y1="27" x2="26.5" y2="27"/>
+  </g>
+  <path d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
+</svg>
+    <span class="brand-name">The Mister<span class="lib">Librarian</span> Bible Project</span>
+  </a>
+  <div class="rule"></div>
+  <div class="tag">Catalogued &amp; compared, one chapter at a time</div>
+  <nav class="topnav">
+    <a href="index.html">Home</a>
+    <a href="toc.html">Table of Contents</a>
+    <a href="reading.html" class="on">📗 My Reading</a>
+    <a href="library.html">📚 Library</a>
+    <a href="ask-enoch.html">Ask Mr. Librarian</a>
+    <a href="contact.html">✉️ Ask a Question</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<script src="reading.js"></script>
+<h1 class="pagetitle">📗 My Reading</h1>
+<p class="lede">Track your own progress through the translation as it's published. Checked chapters are
+remembered <strong>only in this browser</strong> — a bit of localStorage, nothing ever sent anywhere, no
+account needed. Come back after a new chapter lands and pick up right where you left off. (You can also
+check a chapter off directly from its own page, next to the Hide Hebrew toggle.)</p>
+
+<div class="panel" id="continueBox" style="display:none"></div>
+
+<h2>Your progress</h2>
+<div class="panel">
+  <div class="progress-row">
+    <div class="progress-num"><span id="rDone">0</span> of 13 read</div>
+    <div class="progress-label" id="rPct">0%</div>
+  </div>
+  <div class="bar"><div class="bar-fill" id="rBar" style="width:0%"></div></div>
+</div>
+
+<h2>Chapters</h2>
+<div class="panel chlist rlist">
+<label class="rrow" data-slug="gen1" data-href="genesis-1.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 1</span><span class="rrow-t">The seven days — day one, the vault, and the image of God.</span></label><label class="rrow" data-slug="gen2" data-href="genesis-2.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 2</span><span class="rrow-t">The sabbath, the divine name arrives, and “side,” not “rib.”</span></label><label class="rrow" data-slug="gen3" data-href="genesis-3.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 3</span><span class="rrow-t">The serpent, the fall, and the naked/crafty pun that spans the chapter break.</span></label><label class="rrow" data-slug="gen4" data-href="genesis-4.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 4</span><span class="rrow-t">Cain and Abel, the first murder, and “am I my brother’s keeper?”</span></label><label class="rrow" data-slug="gen5" data-href="genesis-5.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 5</span><span class="rrow-t">Ten generations, one drumbeat — and the one man who never dies.</span></label><label class="rrow" data-slug="gen6" data-href="genesis-6.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 6</span><span class="rrow-t">The sons of God, the Nephilim, the LORD’s regret, and the ark.</span></label><label class="rrow" data-slug="gen7" data-href="genesis-7.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 7</span><span class="rrow-t">The flood: creation run in reverse, and “the LORD shut him in.”</span></label><label class="rrow" data-slug="gen8" data-href="genesis-8.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 8</span><span class="rrow-t">God remembers Noah — the raven, the dove, and the first altar.</span></label><label class="rrow" data-slug="gen9" data-href="genesis-9.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 9</span><span class="rrow-t">Meat and blood, the first law, and the bow hung in the clouds.</span></label><label class="rrow" data-slug="gen10" data-href="genesis-10.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 10</span><span class="rrow-t">The Table of Nations: the whole known world, drawn as one family tree.</span></label><label class="rrow" data-slug="gen11" data-href="genesis-11.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 11</span><span class="rrow-t">Babel and babble — and the quiet road to Ur.</span></label><label class="rrow" data-slug="gen12" data-href="genesis-12.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 12</span><span class="rrow-t">Lekh lekha: the call of Abram, and Egypt as the Exodus in miniature.</span></label><label class="rrow" data-slug="gen13" data-href="genesis-13.html"><input type="checkbox" class="rchk"/><span class="rrow-n">Genesis 13</span><span class="rrow-t">Abram and Lot part ways — the land too small for both, and the Hebrew word for “separate” that decides everything.</span></label>
+</div>
+
+<p class="muted" style="margin-top:14px;font-size:12px"><a href="#" id="resetLink">Reset my progress</a></p>
+
+<script>
+(function(){
+  var rows = document.querySelectorAll(".rrow");
+  function render(){
+    var read = mtlibGetRead();
+    var done = 0, firstUnread = null;
+    rows.forEach(function(r){
+      var slug = r.dataset.slug;
+      var chk = r.querySelector(".rchk");
+      var isRead = !!read[slug];
+      chk.checked = isRead;
+      r.classList.toggle("rrow-done", isRead);
+      if (isRead) done++;
+      else if (!firstUnread) firstUnread = r;
+    });
+    var total = rows.length;
+    var pct = total ? Math.round(done / total * 100) : 0;
+    document.getElementById("rDone").textContent = done;
+    document.getElementById("rPct").textContent = pct + "%";
+    document.getElementById("rBar").style.width = pct + "%";
+    var cbox = document.getElementById("continueBox");
+    if (firstUnread){
+      var label = firstUnread.querySelector(".rrow-n").textContent;
+      cbox.style.display = "block";
+      cbox.innerHTML = '<div class="muted" style="margin-bottom:8px">Continue where you left off</div>' +
+        '<a class="btn" href="' + firstUnread.dataset.href + '">Read ' + label + ' \u2192</a>';
+    } else if (total) {
+      cbox.style.display = "block";
+      cbox.innerHTML = '<div class="muted">You\u2019re caught up \u2014 every published chapter is ' +
+        'read. Come back when the next one lands.</div>';
+    }
+  }
+  rows.forEach(function(r){
+    r.querySelector(".rchk").addEventListener("change", function(e){
+      mtlibSetRead(r.dataset.slug, e.target.checked);
+      render();
+    });
+  });
+  document.getElementById("resetLink").addEventListener("click", function(e){
+    e.preventDefault();
+    if (confirm("Reset your reading progress on this device?")){
+      try{ localStorage.removeItem("mtlib_read"); }catch(err){}
+      render();
+    }
+  });
+  render();
+})();
+</script>
+<footer class="site-foot">
+  <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
+  the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
+  choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+</footer>
+</div>
+</body>
+</html>

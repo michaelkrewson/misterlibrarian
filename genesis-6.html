@@ -32,14 +32,16 @@
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="toc.html">Table of Contents</a>
+    <a href="reading.html">📗 My Reading</a>
     <a href="library.html">📚 Library</a>
     <a href="ask-enoch.html">Ask Mr. Librarian</a>
     <a href="contact.html">✉️ Ask a Question</a>
     <a href="about.html">About</a>
   </nav>
 </header>
+<script src="reading.js"></script>
 <div class="chnav top"><div class="side left"><a href="genesis-5.html">◄ Genesis 5</a></div><div class="mid"><a href="toc.html">📜 Table of Contents</a></div><div class="side right"><a href="genesis-7.html">Genesis 7 ►</a></div></div>
-<div class="togglebar"><button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button></div>
+<div class="togglebar"><button class="tgl tgl-read" id="readtgl">Mark as read</button><button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button></div>
 <article class="chapter">
 <h2>Genesis 6 — The MiSTeR Translation</h2>
   <div class="panel" style="padding:6px 10px">
@@ -351,12 +353,26 @@ function toggleHeb(){
     document.getElementById("hebtgl").textContent = "Show Hebrew";
   }
 }catch(e){} })();
+(function(){
+  var slug = "gen6";
+  var btn = document.getElementById("readtgl");
+  function render(){
+    var isRead = !!mtlibGetRead()[slug];
+    btn.textContent = isRead ? "\u2713 Read" : "Mark as read";
+    btn.classList.toggle("done", isRead);
+  }
+  btn.addEventListener("click", function(){
+    mtlibSetRead(slug, !mtlibGetRead()[slug]);
+    render();
+  });
+  render();
+})();
 </script>
 <footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
   choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
 </footer>
 </div>
 </body>

@@ -14,11 +14,13 @@ After adding a new chapter to the source file, re-run this and push.
 """
 import argparse
 import html
+import json
 import os
 import re
 from collections import defaultdict
 
-from library_data import DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE, LINK_OVERRIDES
+from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
+                           LINK_OVERRIDES, VERSE_OF_DAY)
 
 DEFAULT_SOURCE = os.path.expanduser(
     "~/projects/mstr-trader/dashboard/mister_translation.html")
@@ -107,6 +109,7 @@ def header(active=""):
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Home</a>
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
+    <a href="reading.html"{cls('reading')}>📗 My Reading</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="ask-enoch.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
@@ -119,7 +122,7 @@ FOOTER = """<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
   choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
 </footer>"""
 
 
@@ -137,6 +140,7 @@ def page(title, body, active="", desc=""):
 <body>
 <div class="wrap">
 {header(active)}
+<script src="reading.js"></script>
 {body}
 {FOOTER}
 </div>
@@ -518,8 +522,10 @@ def build_chapter_pages(chapters):
         content = clean_chapter(chapters[slug])
         content = inject_encyclopedia_links(content, num)
         content = inject_xrefs(content, num)
-        toggle = ('<div class="togglebar"><button class="tgl" id="hebtgl" '
-                  'onclick="toggleHeb()">Hide Hebrew</button></div>')
+        toggle = ('<div class="togglebar">'
+                  '<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
+                  '<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button>'
+                  '</div>')
         body = f"""{nav_strip(idx, 'top')}
 {toggle}
 <article class="chapter">
@@ -538,6 +544,20 @@ function toggleHeb(){{
     document.getElementById("hebtgl").textContent = "Show Hebrew";
   }}
 }}catch(e){{}} }})();
+(function(){{
+  var slug = "{slug}";
+  var btn = document.getElementById("readtgl");
+  function render(){{
+    var isRead = !!mtlibGetRead()[slug];
+    btn.textContent = isRead ? "\\u2713 Read" : "Mark as read";
+    btn.classList.toggle("done", isRead);
+  }}
+  btn.addEventListener("click", function(){{
+    mtlibSetRead(slug, !mtlibGetRead()[slug]);
+    render();
+  }});
+  render();
+}})();
 </script>"""
         desc = (f"{book} {num} translated fresh from the Hebrew (Masoretic Text), with verse-by-verse "
                 f"notes comparing NIV, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and "
@@ -605,12 +625,117 @@ and link to their chapter; everything else is still ahead.</p>
     open(os.path.join(OUT, "toc.html"), "w", encoding="utf-8").write(out)
 
 
-def build_index():
+def votd_entries(chapters):
+    """Verse-of-the-day candidates, with the actual quote pulled live from the
+    translation text (never hand-typed) so it can never drift from the chapter
+    page. A candidate referencing a not-yet-published verse is silently
+    skipped, so this list is safe to grow ahead of the translation."""
+    text_by_ref = {(c, v): t for c, v, t in extract_verses_english(chapters)}
+    entries = []
+    for ch, v, blurb in VERSE_OF_DAY:
+        text = text_by_ref.get((ch, v))
+        if not text:
+            continue
+        entries.append({"ref": f"Genesis {ch}:{v}", "text": text, "blurb": blurb,
+                         "href": verse_url(ch, v)})
+    return entries
+
+
+def build_reading():
+    rows = "".join(
+        f'<label class="rrow" data-slug="{slug}" data-href="genesis-{num}.html">'
+        f'<input type="checkbox" class="rchk"/>'
+        f'<span class="rrow-n">{book} {num}</span>'
+        f'<span class="rrow-t">{teaser}</span></label>'
+        for slug, book, num, teaser in CHAPTERS)
+    body = f"""<h1 class="pagetitle">\U0001F4D7 My Reading</h1>
+<p class="lede">Track your own progress through the translation as it's published. Checked chapters are
+remembered <strong>only in this browser</strong> — a bit of localStorage, nothing ever sent anywhere, no
+account needed. Come back after a new chapter lands and pick up right where you left off. (You can also
+check a chapter off directly from its own page, next to the Hide Hebrew toggle.)</p>
+
+<div class="panel" id="continueBox" style="display:none"></div>
+
+<h2>Your progress</h2>
+<div class="panel">
+  <div class="progress-row">
+    <div class="progress-num"><span id="rDone">0</span> of {len(CHAPTERS)} read</div>
+    <div class="progress-label" id="rPct">0%</div>
+  </div>
+  <div class="bar"><div class="bar-fill" id="rBar" style="width:0%"></div></div>
+</div>
+
+<h2>Chapters</h2>
+<div class="panel chlist rlist">
+{rows}
+</div>
+
+<p class="muted" style="margin-top:14px;font-size:12px"><a href="#" id="resetLink">Reset my progress</a></p>
+
+<script>
+(function(){{
+  var rows = document.querySelectorAll(".rrow");
+  function render(){{
+    var read = mtlibGetRead();
+    var done = 0, firstUnread = null;
+    rows.forEach(function(r){{
+      var slug = r.dataset.slug;
+      var chk = r.querySelector(".rchk");
+      var isRead = !!read[slug];
+      chk.checked = isRead;
+      r.classList.toggle("rrow-done", isRead);
+      if (isRead) done++;
+      else if (!firstUnread) firstUnread = r;
+    }});
+    var total = rows.length;
+    var pct = total ? Math.round(done / total * 100) : 0;
+    document.getElementById("rDone").textContent = done;
+    document.getElementById("rPct").textContent = pct + "%";
+    document.getElementById("rBar").style.width = pct + "%";
+    var cbox = document.getElementById("continueBox");
+    if (firstUnread){{
+      var label = firstUnread.querySelector(".rrow-n").textContent;
+      cbox.style.display = "block";
+      cbox.innerHTML = '<div class="muted" style="margin-bottom:8px">Continue where you left off</div>' +
+        '<a class="btn" href="' + firstUnread.dataset.href + '">Read ' + label + ' \\u2192</a>';
+    }} else if (total) {{
+      cbox.style.display = "block";
+      cbox.innerHTML = '<div class="muted">You\\u2019re caught up \\u2014 every published chapter is ' +
+        'read. Come back when the next one lands.</div>';
+    }}
+  }}
+  rows.forEach(function(r){{
+    r.querySelector(".rchk").addEventListener("change", function(e){{
+      mtlibSetRead(r.dataset.slug, e.target.checked);
+      render();
+    }});
+  }});
+  document.getElementById("resetLink").addEventListener("click", function(e){{
+    e.preventDefault();
+    if (confirm("Reset your reading progress on this device?")){{
+      try{{ localStorage.removeItem("mtlib_read"); }}catch(err){{}}
+      render();
+    }}
+  }});
+  render();
+}})();
+</script>"""
+    out = page(f"My Reading — {SITE_NAME}", body, active="reading",
+               desc="Track your own progress through The MisterLibrarian Bible Project, chapter by "
+                    "chapter — kept privately in your browser, no account needed.")
+    open(os.path.join(OUT, "reading.html"), "w", encoding="utf-8").write(out)
+
+
+def build_index(chapters):
     latest = CHAPTERS[-1]
     cards = "".join(
         f'<a class="card" href="genesis-{num}.html"><div class="card-t">{book} {num}</div>'
         f'<div class="card-d">{teaser}</div></a>'
         for _, book, num, teaser in reversed(CHAPTERS))
+    votd_json = json.dumps(votd_entries(chapters), ensure_ascii=False).replace("</", "<\\/")
+    ch_json = json.dumps(
+        [{"slug": slug, "label": f"{book} {num}", "href": f"genesis-{num}.html"}
+         for slug, book, num, _ in CHAPTERS])
     body = f"""<section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
   <p>Welcome. This project translates the Bible into modern English directly from the original Hebrew —
@@ -629,6 +754,16 @@ def build_index():
   </div>
 </section>
 
+<div class="panel votd" id="votd">
+  <div class="votd-label">Verse of the Day · from this translation</div>
+  <div class="votd-q" id="votdText">—</div>
+  <div class="votd-ref" id="votdRef"></div>
+  <div class="votd-blurb" id="votdBlurb"></div>
+  <a class="votd-link" id="votdLink" href="#">Read it in context →</a>
+</div>
+
+<div class="panel" id="continueBox" style="display:none;margin-top:14px"></div>
+
 <h2>Chapters — newest first</h2>
 <div class="cardgrid">
 {cards}
@@ -636,11 +771,46 @@ def build_index():
 
 <h2>From the desk</h2>
 <div class="cardgrid">
+  <a class="card" href="reading.html"><div class="card-t">\U0001F4D7 My Reading</div>
+  <div class="card-d">Track your own progress through the translation, chapter by chapter — kept privately in your browser.</div></a>
   <a class="card" href="ask-enoch.html"><div class="card-t">\U0001F4D6 Ask Mr. Librarian</div>
   <div class="card-d">Why isn't the Book of Enoch in this translation? A reader asked; here's the answer.</div></a>
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
-</div>"""
+</div>
+
+<script>
+var MTLIB_VOTD = {votd_json};
+var MTLIB_CHAPTERS = {ch_json};
+(function(){{
+  if (!MTLIB_VOTD.length) return;
+  var now = new Date();
+  var doy = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+  var v = MTLIB_VOTD[doy % MTLIB_VOTD.length];
+  document.getElementById("votdText").textContent = "\\u201c" + v.text + "\\u201d";
+  document.getElementById("votdRef").textContent = "\\u2014 " + v.ref;
+  document.getElementById("votdBlurb").textContent = v.blurb;
+  document.getElementById("votdLink").href = v.href;
+}})();
+(function(){{
+  var read = mtlibGetRead();
+  var done = 0, firstUnread = null;
+  MTLIB_CHAPTERS.forEach(function(c){{
+    if (read[c.slug]) done++;
+    else if (!firstUnread) firstUnread = c;
+  }});
+  var cbox = document.getElementById("continueBox");
+  if (done === 0) return;
+  cbox.style.display = "block";
+  if (firstUnread){{
+    cbox.innerHTML = '<div class="muted" style="margin-bottom:8px">Continue where you left off</div>' +
+      '<a class="btn btn-2" href="' + firstUnread.href + '">Read ' + firstUnread.label + ' \\u2192</a>';
+  }} else {{
+    cbox.innerHTML = '<div class="muted">You\\u2019re caught up on every published chapter \\u2014 nice ' +
+      'work. Come back when the next one lands, or revisit your <a href="reading.html">reading progress</a>.</div>';
+  }}
+}})();
+</script>"""
     out = page(SITE_NAME, body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
                     "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.")
@@ -680,6 +850,10 @@ def build_about():
   <p><strong>The name.</strong> A librarian's job is to catalogue, source, and compare — not to preach.
   That's the ethos here: every claim sourced, every alternative shown, disagreements between traditions
   presented rather than settled.</p>
+  <p><strong>No accounts, no tracking.</strong> The <a href="index.html">home page</a>'s Verse of the Day
+  and the <a href="reading.html">My Reading</a> progress tracker both run entirely in your own browser
+  (a bit of localStorage) — there's no login, no server-side record of what you've read, and nothing is
+  ever sent anywhere. Clear your browser data and it's gone, same as any other private note to yourself.</p>
 </div>"""
     out = page(f"About — {SITE_NAME}", body, active="about",
                desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
@@ -796,7 +970,8 @@ def main():
     chapters = extract_source(args.source)
     build_chapter_pages(chapters)
     build_toc()
-    build_index()
+    build_reading()
+    build_index(chapters)
     build_about()
     build_ask_enoch()
     build_contact()

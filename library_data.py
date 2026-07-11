@@ -499,3 +499,34 @@ VIDEO_QUEUE = [
      "General reference — Old Testament chronology",
      "Methodology video, not tied to one place. Consider linking from about.html rather than the encyclopedia."),
 ]
+
+# ---------------------------------------------------------------------------
+# Verse of the Day — homepage widget (2026-07-11). Curated by (chapter, verse,
+# blurb); the actual English QUOTE is pulled live from the translation text at
+# build time (see build.votd_entries), never hand-typed here, so it can never
+# drift from what the chapter page actually says. Grow this list as new
+# chapters land — it's fine for it to lag behind the newest chapter.
+VERSE_OF_DAY = [
+    (1, 1, "The opening line — the whole project starts here."),
+    (1, 3, "The first command in the Bible, and the first thing it does is make light."),
+    (1, 27, "Male and female both, equally, in the image of God."),
+    (1, 31, "The refrain that closes creation: very good."),
+    (2, 2, "God rests — the first sabbath, before there's a law commanding one."),
+    (2, 7, "Formed from dust, animated by breath — humanity's whole biography in one verse."),
+    (2, 18, "“Not good for the human to be alone” — the first thing God calls not-good."),
+    (2, 24, "One flesh — the Bible's first statement on marriage."),
+    (3, 19, "“For dust you are, and to dust you will return” — Eden's closing sentence."),
+    (4, 7, "Sin “crouching at the door” — one of the Bible's most vivid images, four chapters in."),
+    (4, 9, "“Am I my brother's keeper?” — still asked, five thousand years later."),
+    (5, 24, "Enoch: two verses, and then he's simply not there anymore."),
+    (6, 8, "One line turns the whole flood story: Noah found favor."),
+    (6, 22, "“Exactly so he did” — Noah's entire character, in four words."),
+    (7, 16, "“Then the LORD shut him in” — the door closes itself, once the choosing is over."),
+    (8, 22, "A promise that the seasons will keep turning, for as long as the earth lasts."),
+    (9, 13, "The bow in the clouds — not a rainbow decoration, a hung weapon, put away."),
+    (11, 4, "“Let us make a name for ourselves” — the ambition that becomes Babel."),
+    (12, 1, "“Go — you yourself” — the call that starts everything that follows."),
+    (12, 2, "The promise: a great nation, a great name, and a blessing to be."),
+    (13, 9, "Abram's offer to Lot — take either half, so the family doesn't have to break."),
+    (13, 16, "Offspring like the dust of the earth — the promise made physical."),
+]

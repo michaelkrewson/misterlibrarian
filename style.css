@@ -77,12 +77,39 @@ h2{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:upperc
 .chnav .mid a{color:var(--gold)}
 .chnav .dis{color:var(--dim);font-weight:600}
 
+/* ── verse of the day (home) ── */
+.votd{background:linear-gradient(135deg,rgba(232,201,104,0.08) 0%,var(--bg1) 60%);
+  border-color:rgba(232,201,104,0.25);text-align:center;padding:26px 24px;margin:22px 0 6px}
+.votd-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--purple);
+  font-weight:700;margin-bottom:12px}
+.votd-q{font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.7;color:#f7f2e2;
+  font-style:italic;max-width:640px;margin:0 auto}
+.votd-ref{margin-top:12px;font-size:12px;letter-spacing:0.1em;color:var(--gold);font-weight:700;
+  text-transform:uppercase}
+.votd-blurb{margin-top:8px;font-size:12px;color:var(--muted);max-width:60ch;margin-left:auto;margin-right:auto}
+.votd-link{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:700;color:var(--gold);
+  border:1px solid rgba(232,201,104,0.4);border-radius:12px;padding:6px 16px}
+.votd-link:hover{background:rgba(232,201,104,0.1);color:#fff}
+
+/* ── reading progress tracker ── */
+.rlist{padding:6px 8px}
+.rrow{display:flex;gap:12px;align-items:baseline;padding:11px 14px;border-radius:8px;cursor:pointer;
+  border-bottom:1px solid rgba(255,255,255,0.04)}
+.rrow:last-child{border-bottom:none}
+.rrow:hover{background:rgba(232,201,104,0.06)}
+.rrow input.rchk{margin-top:2px;accent-color:var(--gold);width:15px;height:15px;flex-shrink:0;cursor:pointer}
+.rrow .rrow-n{font-weight:800;color:var(--gold);font-size:13.5px;white-space:nowrap}
+.rrow .rrow-t{font-size:12.5px;color:var(--muted);line-height:1.5}
+.rrow-done .rrow-n,.rrow-done .rrow-t{opacity:0.5}
+.rrow-done .rrow-n{text-decoration:line-through}
+
 /* ── chapter body (markup carried over from the source page) ── */
 .chapter h2{margin-top:30px}
-.togglebar{display:flex;justify-content:flex-end;margin-bottom:8px}
+.togglebar{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px}
 .tgl{background:var(--bg2);border:1px solid var(--border);color:var(--muted);font-size:11px;
   padding:5px 12px;border-radius:12px;cursor:pointer;font-family:inherit}
 .tgl:hover{color:var(--text);border-color:var(--purple)}
+.tgl.done{color:var(--gold);border-color:rgba(232,201,104,0.5)}
 .vrs{display:block;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .vrs:last-child{border-bottom:none}
 .vrs:target{background:rgba(167,139,250,0.08);border-radius:10px}
