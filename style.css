@@ -1,0 +1,176 @@
+/* The MisterLibrarian Bible Project — site stylesheet.
+   Dark parchment-and-gold system carried over from the project's original design. */
+:root{
+  --b:#22d3ee; --blue:#4a9fd4; --purple:#a78bfa; --gold:#e8c968;
+  --bg:#060b14; --bg1:#0a0f1a; --bg2:#0d1520;
+  --text:#e2e8f0; --muted:#94a3b8; --dim:#475569; --border:rgba(255,255,255,0.08);
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);
+  background:radial-gradient(120% 80% at 50% -8%,rgba(232,201,104,0.08),transparent 60%) fixed,var(--bg);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--b);text-decoration:none}
+a:hover{color:#7ee5f5}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px 60px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:#cbd5e1;
+  background:rgba(255,255,255,0.05);padding:1px 5px;border-radius:4px}
+
+/* ── header ── */
+.site-head{text-align:center;padding:34px 0 20px;border-bottom:1px solid var(--border);margin-bottom:24px}
+.site-head .brand{display:inline-block;color:inherit}
+.mtlib-icon{display:block;margin:0 auto 14px;width:56px;height:56px;
+  filter:drop-shadow(0 3px 12px rgba(232,201,104,0.28))}
+.brand-name{font-family:Georgia,"Times New Roman",serif;font-weight:700;
+  font-size:clamp(21px,5vw,31px);letter-spacing:-0.2px;color:#f7f2e2;line-height:1.2}
+.brand-name .lib{color:var(--gold)}
+.site-head .rule{width:50px;height:2px;margin:16px auto 13px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.site-head .tag{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;
+  color:var(--purple);font-weight:700}
+.topnav{margin-top:18px;display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.topnav a{font-size:12px;font-weight:700;color:var(--muted);padding:6px 14px;border-radius:14px;
+  border:1px solid transparent}
+.topnav a:hover{color:var(--text);border-color:var(--border)}
+.topnav a.on{color:var(--gold);border-color:rgba(232,201,104,0.35);background:rgba(232,201,104,0.08)}
+
+/* ── shared blocks ── */
+h1.pagetitle{font-size:24px;font-weight:800;letter-spacing:-0.3px;margin:6px 0 10px;color:#fff}
+h2{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;
+  margin:30px 0 12px;font-weight:700}
+.lede{color:var(--muted);font-size:13.5px;line-height:1.7;margin:0 0 8px;max-width:64ch}
+.panel{background:var(--bg1);border:1px solid var(--border);border-radius:12px;padding:18px 22px}
+.muted{color:var(--muted);font-size:13px;line-height:1.7}
+.prose p{font-size:13.5px;line-height:1.78;color:var(--text);margin:0 0 14px}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:#fff}
+
+/* ── home ── */
+.hero{padding:8px 0 4px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:clamp(24px,4.6vw,34px);
+  line-height:1.25;color:#f7f2e2;margin:0 0 16px;letter-spacing:-0.2px}
+.hero p{font-size:14px;line-height:1.8;color:var(--text);max-width:70ch;margin:0 0 14px}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;background:var(--gold);color:#0b1929;font-weight:800;font-size:13px;
+  padding:10px 20px;border-radius:10px}
+.btn:hover{background:#f3d98a;color:#0b1929}
+.btn-2{background:var(--bg2);color:var(--gold);border:1px solid rgba(232,201,104,0.4)}
+.btn-2:hover{background:rgba(232,201,104,0.12);color:#fff}
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{display:block;background:var(--bg1);border:1px solid var(--border);border-radius:12px;
+  padding:15px 18px;color:inherit;transition:border-color .15s}
+.card:hover{border-color:rgba(232,201,104,0.45);color:inherit}
+.card-t{font-size:14.5px;font-weight:800;color:var(--gold);margin-bottom:6px}
+.card-d{font-size:12.5px;line-height:1.65;color:var(--muted)}
+
+/* ── chapter nav strip ── */
+.chnav{display:flex;justify-content:space-between;align-items:center;gap:10px;
+  padding:11px 16px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;
+  font-size:12.5px;margin-bottom:16px}
+.chnav.bottom{margin-bottom:0;margin-top:22px}
+.chnav .side{flex:1;display:flex}
+.chnav .side.left{justify-content:flex-start}
+.chnav .side.right{justify-content:flex-end}
+.chnav a{color:var(--gold);font-weight:700}
+.chnav a:hover{color:#fff}
+.chnav .mid{color:var(--muted);font-weight:600;white-space:nowrap}
+.chnav .mid a{color:var(--gold)}
+.chnav .dis{color:var(--dim);font-weight:600}
+
+/* ── chapter body (markup carried over from the source page) ── */
+.chapter h2{margin-top:30px}
+.togglebar{display:flex;justify-content:flex-end;margin-bottom:8px}
+.tgl{background:var(--bg2);border:1px solid var(--border);color:var(--muted);font-size:11px;
+  padding:5px 12px;border-radius:12px;cursor:pointer;font-family:inherit}
+.tgl:hover{color:var(--text);border-color:var(--purple)}
+.vrs{display:block;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.vrs:last-child{border-bottom:none}
+.vrs:target{background:rgba(167,139,250,0.08);border-radius:10px}
+.vnum{display:inline-block;min-width:26px;font-size:11px;font-weight:800;color:var(--gold);
+  vertical-align:top;margin-top:8px}
+.vnum a{color:var(--gold)}
+.vbody{display:inline-block;width:calc(100% - 34px)}
+.heb{direction:rtl;text-align:right;font-family:"SBL Hebrew","Ezra SIL","Frank Ruehl","Times New Roman",serif;
+  font-size:21px;line-height:2.05;color:#f3ecd8;margin-bottom:8px}
+.heb .pe{font-size:12px;color:var(--dim);vertical-align:middle}
+.eng{font-size:15.5px;line-height:1.8;color:var(--text)}
+.eng .notelink{font-size:10px;color:var(--purple);vertical-align:super;margin-left:4px}
+body.hide-heb .heb{display:none}
+.note{background:var(--bg1);border:1px solid var(--border);border-left:3px solid rgba(167,139,250,0.5);
+  border-radius:10px;padding:15px 18px;margin-bottom:14px}
+.note:target{border-left-color:var(--gold);background:rgba(232,201,104,0.05)}
+.nhead{font-size:13px;font-weight:800;color:#fff;margin-bottom:8px}
+.nhead a{color:var(--gold)}
+.nhead .hebph{font-family:"SBL Hebrew","Ezra SIL","Times New Roman",serif;font-size:16px;color:#f3ecd8;
+  margin:0 6px;direction:rtl;unicode-bidi:isolate}
+.nhead em{color:var(--muted);font-weight:500;font-size:12px}
+.note p{font-size:12.8px;line-height:1.75;color:var(--muted);margin:0 0 10px}
+.note p:last-child{margin-bottom:0}
+.note p strong{color:var(--text)}
+.tag{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:0.06em;padding:1px 7px;
+  border-radius:8px;margin-right:2px;vertical-align:1px;border:1px solid transparent}
+.t-mine{background:rgba(232,201,104,0.14);color:var(--gold);border-color:rgba(232,201,104,0.3)}
+.t-niv{background:rgba(34,211,238,0.10);color:var(--b)}
+.t-kjv{background:rgba(167,139,250,0.12);color:var(--purple)}
+.t-drb{background:rgba(248,113,113,0.10);color:#f87171}
+.t-tlb{background:rgba(0,255,157,0.08);color:#00ff9d}
+.t-gnv{background:rgba(251,191,36,0.10);color:#fbbf24}
+.t-asv{background:rgba(74,159,212,0.12);color:var(--blue)}
+.t-nwt{background:rgba(249,115,22,0.10);color:#f97316}
+.info-block{margin-top:14px;padding:14px 16px;background:rgba(167,139,250,0.04);
+  border:1px solid rgba(167,139,250,0.15);border-radius:10px}
+.info-block h3{margin:0 0 8px;font-size:13px;color:var(--purple)}
+.info-block p{margin:0 0 8px;font-size:12px;color:var(--muted);line-height:1.7}
+.info-block p:last-child{margin-bottom:0}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:10px}
+.shelf .sv{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:10px 13px;
+  font-size:11.5px;color:var(--muted);line-height:1.6}
+.shelf .sv b{color:var(--text);display:block;font-size:12px;margin-bottom:2px}
+
+/* ── toc ── */
+.progress-row{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px;
+  flex-wrap:wrap;gap:6px}
+.progress-num{font-size:20px;font-weight:800;color:#fff}
+.progress-num span{color:var(--gold)}
+.progress-label{font-size:11px;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase}
+.bar{height:8px;border-radius:5px;background:var(--bg2);overflow:hidden;border:1px solid var(--border)}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),#f3d98a);border-radius:5px;min-width:6px}
+.chlist{display:flex;flex-direction:column;padding:6px 8px}
+.chrow{display:flex;gap:14px;align-items:baseline;padding:11px 14px;border-radius:8px;color:inherit;
+  border-bottom:1px solid rgba(255,255,255,0.04)}
+.chrow:last-child{border-bottom:none}
+.chrow:hover{background:rgba(232,201,104,0.06);color:inherit}
+.chrow-n{font-weight:800;color:var(--gold);font-size:13.5px;white-space:nowrap}
+.chrow-t{font-size:12.5px;color:var(--muted);line-height:1.5}
+.now-reading{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.nr-badge{font-size:10px;font-weight:800;letter-spacing:0.08em;color:#0b1929;
+  background:var(--gold);padding:3px 9px;border-radius:8px;text-transform:uppercase}
+.nr-book{font-size:15px;font-weight:800;color:#fff}
+.chgrid{display:flex;flex-wrap:wrap;gap:6px}
+.chch{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:8px;font-size:12px;font-weight:700;background:var(--bg2);color:var(--dim);
+  border:1px solid var(--border)}
+.chch-done{background:rgba(232,201,104,0.14);color:var(--gold);border-color:rgba(232,201,104,0.4)}
+.chch-done:hover{background:rgba(232,201,104,0.24);color:#fff}
+.testament{font-size:10px;letter-spacing:0.16em;color:var(--gold);font-weight:700;
+  text-transform:uppercase;margin:18px 0 10px}
+.testament:first-child{margin-top:0}
+.bookgrid{display:flex;flex-wrap:wrap;gap:7px}
+.book{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:14px;
+  font-size:12px;font-weight:600;border:1px solid var(--border);color:var(--muted);background:var(--bg2)}
+.book i{font-style:normal;font-size:10px;color:var(--dim)}
+.book-active{color:#fff;border-color:var(--gold);background:rgba(232,201,104,0.12)}
+.book-active b{color:var(--gold)}
+
+/* ── ask ── */
+.qbox{background:var(--bg1);border:1px solid var(--border);border-left:3px solid var(--purple);
+  border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.qbox .qlabel{font-size:10px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--purple);margin-bottom:6px}
+.qbox p{margin:0;font-size:14.5px;line-height:1.7;font-style:italic;color:var(--text)}
+
+/* ── footer ── */
+.site-foot{margin-top:44px;padding-top:18px;border-top:1px solid var(--border)}
+.site-foot p{font-size:11.5px;color:var(--dim);line-height:1.7;margin:0 0 8px;max-width:70ch}
+.site-foot a{color:var(--muted)}
+.site-foot a:hover{color:var(--gold)}
