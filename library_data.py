@@ -14,6 +14,27 @@ Three collections, all grown chapter by chapter as the translation advances:
                    refs [(ch, v), ...] — where it appears in the translation,
                    videos [(title, url), ...] — curated archaeology/geography
                      links (Michael supplies; empty until then).
+                   coords (lat, lon, span_degrees) — OPTIONAL, place entries only.
+                     Powers the Atlas page's live OpenStreetMap embed (build_atlas()
+                     in build.py). span_degrees sets the map's zoom (a tight
+                     excavated site might use ~0.15, a whole region ~4-7). Omit
+                     entirely for a place the text (or the trusted sources below)
+                     leave genuinely unfixed (Nod, and a few others) — the atlas
+                     then shows an honest "no fixed point" note instead of a guess.
+                   approx (bool) — OPTIONAL. True marks a plotted point as a
+                     debated/traditional/proposed identification rather than an
+                     settled one; the atlas renders an "approximate" badge next to
+                     the map. Precise, uncontroversial excavated sites (Ur, Ninevah,
+                     Babylon, Nimrud, Harran, Shechem, Hebron) omit it.
+                   Location source of record: Expedition Bible (Joel Kramer) is
+                   Michael's trusted field-archaeology channel (see VIDEO_CREDITS
+                   below) — where Kramer stakes out a specific identification
+                   (Eden/Havilah via the Pishon = Wadi Ar-Rummah; Sodom & Gomorrah
+                   = Tall el-Hammam; Ai = et-Tell after reconsidering Khirbet
+                   el-Maqatir), his claim is the one plotted here, credited in the
+                   desc text, even where it differs from an older/traditional
+                   default. Otherwise coords follow mainstream archaeological
+                   consensus.
 
   XREFS        — this project's own cross-reference chains: connections the
                  translator's notes establish between OUR verses.
@@ -126,26 +147,37 @@ ENCYCLOPEDIA = [
     dict(slug="eden", name="Eden", kind="place",
          desc="The garden's region, 'in the east' (2:8), watered by a river that splits into four. Two of the four "
               "rivers are certainly the Tigris and Euphrates, anchoring the geography broadly in Mesopotamia; the "
-              "other two (Pishon, Gihon) have never been confidently identified. Guarded by cherubim after the "
-              "expulsion (3:24).",
+              "other two (Pishon, Gihon) have long been unidentified. Expedition Bible's Joel Kramer proposes the "
+              "dry Wadi Ar-Rummah — traced across Arabia by satellite and field survey, matching rock deposits from "
+              "its source to its end — as the Pishon, joining the Tigris and Euphrates near the head of the Persian "
+              "Gulf; that would place Eden itself in the area of modern Kuwait, or just offshore under the Gulf. "
+              "Guarded by cherubim after the expulsion (3:24).",
          refs=[(2, 8), (2, 10), (3, 23), (3, 24), (4, 16)],
-         videos=[("Searching for The Garden of Eden's Pishon River", "https://www.youtube.com/watch?v=jwCdZ4CbA-E")]),
+         videos=[("Searching for The Garden of Eden's Pishon River", "https://www.youtube.com/watch?v=jwCdZ4CbA-E")],
+         coords=(29.6, 48.0, 3.0), approx=True),
     dict(slug="tigris", name="Tigris (Chidekel)", kind="place", aliases=["Tigris"],
          desc="The third river of Eden (2:14), 'running east of Asshur' — one of Mesopotamia's two great rivers, "
               "still flowing through Iraq. The Hebrew name Chidekel matches Akkadian Idiqlat.",
-         refs=[(2, 14)], videos=[]),
+         refs=[(2, 14)], videos=[],
+         coords=(33.35, 44.40, 4.0), approx=True),
     dict(slug="euphrates", name="Euphrates (Perat)", kind="place", aliases=["Euphrates"],
          desc="The fourth river of Eden (2:14), named without description — the audience knew it. The defining river "
               "of Babylonia; later the ideal border of the promised land.",
-         refs=[(2, 14)], videos=[]),
+         refs=[(2, 14)], videos=[],
+         coords=(32.90, 44.10, 4.0), approx=True),
     dict(slug="havilah", name="Havilah", kind="place",
-         desc="Land of gold, bdellium, and onyx circled by the Pishon (2:11-12); location unknown — proposals range "
-              "from Arabia to the Gulf. Also a name in both Cush's and Joktan's lines (10:7, 10:29).",
-         refs=[(2, 11), (10, 7), (10, 29)], videos=[]),
+         desc="Land of gold, bdellium, and onyx circled by the Pishon (2:11-12). Expedition Bible's Joel Kramer, "
+              "tracing the Pishon to the dry Wadi Ar-Rummah, places Havilah along its course through Saudi Arabia — "
+              "a region that still hosts dozens of gold mines and the onyx- and resin-bearing Hejaz ravines the "
+              "text describes. Also a name in both Cush's and Joktan's lines (10:7, 10:29).",
+         refs=[(2, 11), (10, 7), (10, 29)],
+         videos=[("Searching for The Garden of Eden's Pishon River", "https://www.youtube.com/watch?v=jwCdZ4CbA-E")],
+         coords=(25.0, 41.0, 7.0), approx=True),
     dict(slug="cush", name="Cush", kind="place",
          desc="The Nile-valley kingdom south of Egypt (roughly Nubia/Sudan), circled by Eden's Gihon (2:13); in the "
               "Table of Nations, a son of Ham and the father of Nimrod (10:6-8).",
-         refs=[(2, 13), (10, 6), (10, 7), (10, 8)], videos=[]),
+         refs=[(2, 13), (10, 6), (10, 7), (10, 8)], videos=[],
+         coords=(17.9, 33.9, 6.0), approx=True),
     dict(slug="nod", name="Nod", kind="place",
          desc="'The land of Wandering,' east of Eden, where Cain settles (4:16) — the name puns on his sentence to be "
               "a restless wanderer (na vanad).",
@@ -154,53 +186,65 @@ ENCYCLOPEDIA = [
          desc="The mountain REGION where the ark rests (8:4 — 'the mountains of Ararat,' plural): the ancient kingdom "
               "of Urartu in the highlands of eastern Turkey/Armenia. The text names no individual peak; the modern "
               "mountain called Ararat took its name from this verse.",
-         refs=[(8, 4)], videos=[]),
+         refs=[(8, 4)], videos=[],
+         coords=(39.4, 43.8, 3.0), approx=True),
     dict(slug="babel", name="Babel / Babylon", kind="place", aliases=["Babel", "Babylon"],
          desc="First of Nimrod's cities in Shinar (10:10) and the site of the tower (11:1-9). Its own name, Bab-ili, "
               "means 'Gate of God'; Genesis re-derives it from Hebrew balal, 'confuse' — a deliberate, polemical pun. "
               "One of the most excavated cities of the ancient world (the great ziggurat E-temen-anki likely informed "
               "the tower story).",
          refs=[(10, 10), (11, 9)],
-         videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")]),
+         videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")],
+         coords=(32.5355, 44.4275, 0.15)),
     dict(slug="shinar", name="Shinar", kind="place",
          desc="The flat southern-Mesopotamian plain (Sumer/Babylonia) — no stone, hence brick and bitumen (11:3); "
               "home of Babel, Erech (Uruk), and Accad (Akkad).",
-         refs=[(10, 10), (11, 2)], videos=[]),
+         refs=[(10, 10), (11, 2)], videos=[],
+         coords=(32.2, 45.0, 3.0), approx=True),
     dict(slug="nineveh", name="Nineveh", kind="place",
          desc="Great Assyrian capital on the Tigris, founded in the Nimrod tradition (10:11); its mounds (Kuyunjik, "
               "opposite modern Mosul) have been excavated for nearly two centuries. Later the setting of Jonah.",
          refs=[(10, 11), (10, 12)],
-         videos=[("Bible Evidence Unearthed at Nineveh!", "https://www.youtube.com/watch?v=34XBkm4QiLo")]),
+         videos=[("Bible Evidence Unearthed at Nineveh!", "https://www.youtube.com/watch?v=34XBkm4QiLo")],
+         coords=(36.3605, 43.1575, 0.15)),
     dict(slug="calah", name="Calah (Nimrud)", kind="place", aliases=["Calah"],
          desc="Assyrian royal city (10:11-12); the modern mound is called Nimrud — the founder-figure's name still "
               "attached to the site.",
-         refs=[(10, 11), (10, 12)], videos=[]),
+         refs=[(10, 11), (10, 12)], videos=[],
+         coords=(36.0972, 43.3256, 0.15)),
     dict(slug="canaan", name="Canaan (the land and its ancestor)", kind="place", aliases=["Canaan"],
          desc="Both a person — Ham's cursed son (9:25-27), father of Sidon and Heth (10:15) — and, in Genesis's "
               "'genealogy is geography' idiom (see the Genesis 10 notes), the land his descendants settle: the "
               "promised land itself, entered by Abram at 12:5 and central to the rest of the Bible.",
-         refs=[(9, 18), (9, 22), (9, 25), (9, 26), (9, 27), (10, 6), (10, 15), (11, 31), (12, 5), (13, 12)], videos=[]),
+         refs=[(9, 18), (9, 22), (9, 25), (9, 26), (9, 27), (10, 6), (10, 15), (11, 31), (12, 5), (13, 12)], videos=[],
+         coords=(31.7, 35.2, 3.5), approx=True),
     dict(slug="sodom-gomorrah", name="Sodom and Gomorrah", kind="place",
          aliases=["Sodom", "Gomorrah", "Sodom and Gomorrah"],
          desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing. Lot drifts toward "
               "them by stages in ch. 13 (their coming ruin already named there, 13:10), and the city's own "
-              "wickedness is stated outright at 13:13; the destruction itself is still ahead, in Genesis 19.",
+              "wickedness is stated outright at 13:13; the destruction itself is still ahead, in Genesis 19. "
+              "Expedition Bible's Joel Kramer identifies the site as Tall el-Hammam, in the northern Jordan Valley — "
+              "burned, sulfur-rich debris there matches all four destroyed cities of the plain, while a fifth sample "
+              "from Zoar's presumed site, spared in the account, did not burn.",
          refs=[(10, 19), (13, 10), (13, 12), (13, 13)],
          videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
                   "(preview — their destruction is still ahead, in Genesis 19)",
-                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")]),
+                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")],
+         coords=(31.8402, 35.6737, 0.4), approx=True),
     dict(slug="ur", name="Ur of the Chaldeans", kind="place",
          desc="Abram's birthplace (11:28,31) — the great Sumerian city of southern Iraq, whose ziggurat still stands; "
               "Leonard Woolley's 1920s-30s excavations (royal tombs, gold lyres) made it world-famous. 'Of the "
               "Chaldeans' is a later-era label, identifying the city for the text's own readers.",
          refs=[(11, 28), (11, 31)],
          videos=[("EXPEDITION ABRAHAM: from his birthplace at Ur to the Promised Land",
-                  "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
+                  "https://www.youtube.com/watch?v=f7-RQZavU3U")],
+         coords=(30.9626, 46.1035, 0.15)),
     dict(slug="haran-city", name="Haran (the city)", kind="place", aliases=["Haran"],
          desc="Caravan city on the northern arc of the route from Ur to Canaan, where Terah's migration stalls and "
               "Terah dies (11:31-32); Abram's call comes here (12:1-4). Spelled differently in Hebrew from Terah's "
               "son Haran, whose death at 11:28 happens before the family even leaves Ur for this place.",
-         refs=[(11, 31), (11, 32), (12, 4), (12, 5)], videos=[]),
+         refs=[(11, 31), (11, 32), (12, 4), (12, 5)], videos=[],
+         coords=(36.8636, 39.0328, 0.15)),
     dict(slug="shechem", name="Shechem", kind="place",
          desc="Abram's first named stop in Canaan (12:6), at the great tree of Moreh — modern Tell Balata, between "
               "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7); it will echo "
@@ -208,53 +252,63 @@ ENCYCLOPEDIA = [
          refs=[(12, 6), (12, 7)],
          videos=[("The Discovery of Joshua's Great Witness Stone at Shechem "
                   "(preview — this discovery belongs to Joshua 24, centuries after Abram's visit here)",
-                  "https://www.youtube.com/watch?v=mnis257Rd3E")]),
+                  "https://www.youtube.com/watch?v=mnis257Rd3E")],
+         coords=(32.2137, 35.2853, 0.15)),
     dict(slug="bethel", name="Bethel", kind="place",
          desc="'House of God' — Abram camps east of it and builds his second altar (12:8); the name's own story "
               "(Jacob's ladder) is still ahead. Paired here with Ai to fix the camp's position.",
          refs=[(12, 8)],
          videos=[("BETHEL: Where Jacob Met God "
                   "(preview — Jacob's ladder, the episode that names this site, is still ahead in Genesis 28)",
-                  "https://www.youtube.com/watch?v=8cqBePFD9S4")]),
+                  "https://www.youtube.com/watch?v=8cqBePFD9S4")],
+         coords=(31.9306, 35.2317, 0.2), approx=True),
     dict(slug="ai", name="Ai", kind="place",
          desc="Landmark east of Bethel, fixing Abram's campsite (12:8) — 'the city' whose own famous story (Joshua's "
-              "defeat, then conquest) is many books away.",
+              "defeat, then conquest) is many books away. Joel Kramer, after once favoring the nearby Khirbet "
+              "el-Maqatir, now finds et-Tell the better fit for Joshua's Ai — the mainstream identification used here.",
          refs=[(12, 8)],
          videos=[("“The Problem” of Joshua's Ai...SOLVED! "
                   "(preview — Ai's own story is in Joshua 7-8, far ahead of Genesis)",
-                  "https://www.youtube.com/watch?v=lK7GQxkEkKk")]),
+                  "https://www.youtube.com/watch?v=lK7GQxkEkKk")],
+         coords=(31.9276, 35.2664, 0.2), approx=True),
     dict(slug="negev", name="The Negev", kind="place", aliases=["Negev"],
          desc="The arid south of Canaan, toward which Abram travels by stages (12:9) — the land's dry margin, "
               "naturally on the way down to Egypt.",
-         refs=[(12, 9)], videos=[]),
+         refs=[(12, 9)], videos=[],
+         coords=(30.8, 34.8, 1.5), approx=True),
     dict(slug="egypt", name="Egypt (Mizraim)", kind="place", aliases=["Egypt", "Mizraim"],
          desc="In Hebrew, Mizraim — also the 'son' of Ham whose name IS the country (10:6,13). Abram goes down in "
               "famine (12:10) and his stay runs the Exodus pattern in miniature: danger, plagues, 'send away,' "
               "wealth out.",
-         refs=[(10, 6), (10, 13), (12, 10), (12, 14)], videos=[]),
+         refs=[(10, 6), (10, 13), (12, 10), (12, 14)], videos=[],
+         coords=(30.05, 31.23, 4.0), approx=True),
     dict(slug="jordan-plain", name="The Plain of the Jordan (Kikkar)", kind="place", aliases=["the plain of the Jordan"],
          desc="The round, well-watered lower Jordan valley (13:10) — 'like the garden of the LORD, like the land "
               "of Egypt' — that Lot chooses (13:11) over staying with Abram. Its beauty and its coming ruin are "
               "named in the very same verse.",
-         refs=[(13, 10), (13, 11), (13, 12)], videos=[]),
+         refs=[(13, 10), (13, 11), (13, 12)], videos=[],
+         coords=(31.75, 35.55, 0.8), approx=True),
     dict(slug="zoar", name="Zoar", kind="place",
          desc="A landmark fixing the plain's southern extent at its first mention (13:10) — its own story, where "
               "Lot flees and it alone of the plain's cities is spared, is still six chapters away.",
          refs=[(13, 10)],
          videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
                   "(preview — Zoar's own story is still ahead, in Genesis 19)",
-                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")]),
+                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")],
+         coords=(31.033, 35.484, 0.3), approx=True),
     dict(slug="hebron", name="Hebron", kind="place",
          desc="Where Abram settles after Lot's departure, among the oaks of Mamre, and builds his third altar "
               "(13:18) — barely introduced here, but central later: Sarah's burial, the cave of Machpelah, "
               "David's first capital.",
-         refs=[(13, 18)], videos=[]),
+         refs=[(13, 18)], videos=[],
+         coords=(31.5326, 35.0998, 0.15)),
     dict(slug="mamre", name="Mamre (the oaks of)", kind="place", aliases=["Mamre"],
          desc="The tree-grove near Hebron where Abram pitches his tent and builds an altar (13:18) — the third "
               "named tree at one of his altars, after Shechem's tree of Moreh (12:6). Mamre is also a person, an "
               "Amorite ally of Abram's named in the very next chapter (14:13, 24) — the place and the man are not "
               "shown to be connected beyond sharing the name, the same double-use already flagged at Haran.",
-         refs=[(13, 18)], videos=[]),
+         refs=[(13, 18)], videos=[],
+         coords=(31.5566, 35.1027, 0.15), approx=True),
 
     # ---- people ----
     dict(slug="adam-person", name="Adam", kind="person",

@@ -16,6 +16,7 @@ import argparse
 import hashlib
 import html
 import json
+import math
 import os
 import re
 from collections import defaultdict
@@ -214,6 +215,30 @@ def youtube_embed(url, title):
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   <div class="vembed-title">{html.escape(title)}</div>
+</div>"""
+
+
+def _atlas_zoom(span):
+    """Rough OSM zoom level for a "view larger map" link, derived from the bbox span
+    in degrees (a tight excavated-site span -> high zoom; a broad region -> low)."""
+    z = round(9 - math.log2(max(span, 0.02)))
+    return max(3, min(17, z))
+
+
+def osm_embed(lat, lon, span, label):
+    """A key-less, officially-supported OpenStreetMap embed (no Google API/billing
+    needed for a static site) centered on (lat, lon), with a bbox span_degrees wide."""
+    half = span / 2.0
+    bbox = f"{lon - half:.4f},{lat - half:.4f},{lon + half:.4f},{lat + half:.4f}"
+    marker = f"{lat:.4f},{lon:.4f}"
+    zoom = _atlas_zoom(span)
+    view_url = f"https://www.openstreetmap.org/?mlat={lat:.4f}&mlon={lon:.4f}#map={zoom}/{lat:.4f}/{lon:.4f}"
+    return f"""<div class="mapembed">
+  <div class="mapembed-frame">
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&layer=mapnik&marker={marker}"
+      title="{html.escape(label, quote=True)}" loading="lazy"></iframe>
+  </div>
+  <div class="mapembed-link"><a href="{view_url}" rel="noopener">View larger map on OpenStreetMap →</a></div>
 </div>"""
 
 
@@ -469,8 +494,74 @@ shelf of archaeology and geography footage embedded directly on the entries they
     return len(places), len(people)
 
 
+def build_atlas():
+    """One page, organized chapter-by-chapter (not place-by-place like the
+    encyclopedia) so a chapter's Atlas toggle can jump straight to `atlas.html#genesis-N`.
+    Reuses ENCYCLOPEDIA's existing (chapter, verse) refs — no new authoring needed to
+    know which places belong to which chapter."""
+    places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
+    n_mapped = sum(1 for e in places if e.get("coords"))
+
+    by_chapter = defaultdict(dict)  # chapter num -> {slug: first_verse}
+    for e in places:
+        for c, v in e["refs"]:
+            if e["slug"] not in by_chapter[c] or v < by_chapter[c][e["slug"]]:
+                by_chapter[c][e["slug"]] = v
+
+    sections = []
+    for slug, book, num, teaser in CHAPTERS:
+        entries = sorted(by_chapter.get(num, {}).items(), key=lambda kv: kv[1])
+        if entries:
+            place_html = []
+            for pslug, _first_v in entries:
+                e = _SLUG_TO_ENTRY[pslug]
+                refs = " ".join(f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in e["refs"])
+                if e.get("coords"):
+                    lat, lon, span = e["coords"]
+                    badge = ' <span class="atlas-approx">approximate</span>' if e.get("approx") else ""
+                    map_html = osm_embed(lat, lon, span, e["name"])
+                else:
+                    badge = ""
+                    map_html = ('<div class="atlas-nomap">📍 No fixed point plotted — the location is genuinely '
+                                "undetermined (see the note above), so this shows no guessed pin.</div>")
+                place_html.append(f"""<div class="atlas-place" id="atlas-{e['slug']}">
+  <div class="atlas-place-h"><a href="encyclopedia.html#{e['slug']}">{html.escape(e['name'])}</a>{badge}</div>
+  <p>{e['desc']}</p>
+  <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
+  {map_html}
+  <div class="atlas-overlay-empty">🗺️ No ancient-world overlay on the shelf yet for this site — a period map
+  showing how the region actually looked in the biblical world gets added here as Mr. Librarian curates one,
+  the same way the encyclopedia's film shelf grows.</div>
+</div>""")
+            body_html = "".join(place_html)
+        else:
+            body_html = '<div class="atlas-empty">No places are named in this chapter yet — nothing to map.</div>'
+        sections.append(f"""<div class="atlas-chapter" id="genesis-{num}">
+  <div class="atlas-chhead"><a href="genesis-{num}.html">{book} {num}</a>
+    <span class="atlas-chteaser">{html.escape(teaser)}</span></div>
+  {body_html}
+</div>""")
+
+    body = f"""<h1 class="pagetitle">🗺️ Atlas</h1>
+<p class="lede">Every place the translation has named so far, mapped chapter by chapter —
+<strong>{n_mapped} of {len(places)} places</strong> located on a live map (a handful are genuinely debated or
+unidentified, and say so rather than guess a pin). Jump here straight from any chapter's toggle bar, or browse
+chapter by chapter below. Where Expedition Bible's Joel Kramer stakes out a specific site — Eden and Havilah via
+the Pishon, Sodom and Gomorrah at Tall el-Hammam — that identification is the one plotted, credited in the
+place's own note. An <strong>ancient-world overlay</strong> — how each region actually looked in the biblical
+world, not just today — is a shelf still being built; it starts empty and fills in as real sources are curated,
+the same honest way the encyclopedia's film shelf grows.</p>
+
+{''.join(sections)}"""
+    out = page(f"Atlas — {SITE_NAME}", body, active="library",
+               desc="A chapter-by-chapter atlas of the MisterLibrarian Bible Project — every named place mapped, "
+                    "with an ancient-world overlay shelf still growing.")
+    open(os.path.join(OUT, "atlas.html"), "w", encoding="utf-8").write(out)
+    return n_mapped, len(places)
+
+
 def build_library(stats):
-    n_words, n_refs, n_dict, n_places, n_people, n_xrefs = stats
+    n_words, n_refs, n_dict, n_places, n_people, n_xrefs, n_mapped, n_atlas_places = stats
     body = f"""<h1 class="pagetitle">📚 The Library</h1>
 <p class="lede">The reference room of the project — every shelf grows automatically or by hand as each
 chapter is translated, so the library is always exactly as deep as the translation itself.</p>
@@ -485,6 +576,9 @@ chapter is translated, so the library is always exactly as deep as the translati
   <a class="card" href="encyclopedia.html"><div class="card-t">🏺 Encyclopedia</div>
   <div class="card-d">{n_places} places · {n_people} people — verse-linked entries, with a film shelf on
   every place for archaeology &amp; geography videos.</div></a>
+  <a class="card" href="atlas.html"><div class="card-t">🗺️ Atlas</div>
+  <div class="card-d">{n_mapped} of {n_atlas_places} places mapped so far, chapter by chapter — a live map
+  for every located site, with an ancient-world overlay shelf still growing.</div></a>
 </div>
 
 <h2>Cross-references</h2>
@@ -505,6 +599,9 @@ chapter is translated, so the library is always exactly as deep as the translati
   <p><strong>▶ The film shelf.</strong> Every place entry in the encyclopedia has a slot for curated
   archaeology and geography videos — excavations, site walk-throughs, museum pieces. Mr. Librarian
   curates; the encyclopedia is where they live.</p>
+  <p><strong>🗺️ Ancient-world overlays.</strong> The atlas's live maps show where these places sit today;
+  a period-accurate overlay — cities, kingdoms, and borders as they stood in the biblical world — is the
+  next layer, added site by site as real sources are found rather than guessed at.</p>
   <p><strong>⤷ Deeper cross-references.</strong> As the translation grows, the chains multiply — and
   once multiple books exist, they'll connect across books the way study Bibles do, but built only from
   connections this project's own notes have actually argued for.</p>
@@ -538,10 +635,13 @@ def build_chapter_pages(chapters):
         content = clean_chapter(chapters[slug])
         content = inject_encyclopedia_links(content, num)
         content = inject_xrefs(content, num)
-        toggle = ('<div class="togglebar">'
-                  '<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
-                  '<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button>'
-                  '</div>')
+        toggle = (f'<div class="togglebar">'
+                  f'<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
+                  f'<div class="tgl-group">'
+                  f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button>'
+                  f'<a class="tgl" href="atlas.html#genesis-{num}">🗺️ Atlas</a>'
+                  f'</div>'
+                  f'</div>')
         body = f"""{nav_strip(idx, 'top')}
 {toggle}
 <article class="chapter">
@@ -995,10 +1095,11 @@ def main():
     n_words, n_refs = build_concordance(chapters)
     n_dict = build_dictionary()
     n_places, n_people = build_encyclopedia()
-    build_library((n_words, n_refs, n_dict, n_places, n_people, len(XREFS)))
+    n_mapped, n_atlas_places = build_atlas()
+    build_library((n_words, n_refs, n_dict, n_places, n_people, len(XREFS), n_mapped, n_atlas_places))
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp, "
-          f"xrefs {len(XREFS)}) from {args.source}")
+          f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}) from {args.source}")
 
 
 if __name__ == "__main__":
