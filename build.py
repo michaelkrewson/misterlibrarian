@@ -158,23 +158,27 @@ def _goatcounter_script():
 
 
 def _stats_box():
-    """Live 'Site Traffic' box for the About page — fetches the public, unauthenticated
-    GoatCounter counter JSON for the home page ('/') as a proxy for overall site traffic
-    and renders it client-side (no iframe, no GoatCounter branding). Silently hides itself
-    if the fetch fails (ad-blocker, GoatCounter down, or not yet configured)."""
+    """Live 'Site Traffic' box for the About page — fetches GoatCounter's public,
+    unauthenticated site-wide TOTAL counter JSON and renders it client-side (no iframe,
+    no GoatCounter branding). NB: GoatCounter's counter endpoints return HTTP 404 for a
+    thin/zero-data path even though the JSON body is still valid — so this deliberately
+    parses the body regardless of status code, and only hides the box if the fetch itself
+    fails outright (network error, ad-blocker, or not yet configured) or the body is
+    unparseable. Learned the hard way: an earlier version checked response.ok first, which
+    made the box silently vanish on every load."""
     if not GOATCOUNTER_CODE:
         return ""
     return f"""<div class="panel statsbox" id="statsbox">
   <div class="stats-label">\U0001F4CA Site Traffic</div>
   <div class="stats-num" id="statsNum">\u2014</div>
-  <div class="stats-sub">homepage visits, all-time \u00b7 tracked anonymously via
+  <div class="stats-sub">site visits, all-time \u00b7 tracked anonymously via
   <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a> \u2014 no cookies, no personal
   data, nothing sold</div>
 </div>
 <script>
 (function(){{
-  fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter//.json")
-    .then(function(r){{ return r.ok ? r.json() : null; }})
+  fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter/TOTAL.json")
+    .then(function(r){{ return r.json(); }})
     .then(function(d){{
       var el = document.getElementById("statsNum");
       if (el && d && d.count) el.textContent = d.count;

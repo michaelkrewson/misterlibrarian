@@ -84,14 +84,14 @@
   <div class="panel statsbox" id="statsbox">
   <div class="stats-label">📊 Site Traffic</div>
   <div class="stats-num" id="statsNum">—</div>
-  <div class="stats-sub">homepage visits, all-time · tracked anonymously via
+  <div class="stats-sub">site visits, all-time · tracked anonymously via
   <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a> — no cookies, no personal
   data, nothing sold</div>
 </div>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter//.json")
-    .then(function(r){ return r.ok ? r.json() : null; })
+  fetch("https://mistertranslation.goatcounter.com/counter/TOTAL.json")
+    .then(function(r){ return r.json(); })
     .then(function(d){
       var el = document.getElementById("statsNum");
       if (el && d && d.count) el.textContent = d.count;
