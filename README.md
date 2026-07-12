@@ -11,8 +11,11 @@ and the NWT (1984).
 ## How this repo works
 
 The site is plain static HTML — no framework, no build service. `build.py`
-regenerates every page from the project's single content source (the
-`mister_translation.html` working file, maintained elsewhere):
+regenerates every page from the project's single content source, kept right
+here in this repo at `source/mister_translation.html`. (It used to live in a
+separate trading-dashboard repo as a second "working copy" — that caused real
+staleness/caching confusion when the two fell out of sync, so as of
+2026-07-11 everything lives in one place.)
 
 ```
 python3 build.py            # regenerate all pages

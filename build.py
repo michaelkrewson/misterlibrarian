@@ -13,6 +13,7 @@ Usage:
 After adding a new chapter to the source file, re-run this and push.
 """
 import argparse
+import hashlib
 import html
 import json
 import os
@@ -22,9 +23,21 @@ from collections import defaultdict
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
                            LINK_OVERRIDES, VERSE_OF_DAY)
 
-DEFAULT_SOURCE = os.path.expanduser(
-    "~/projects/mstr-trader/dashboard/mister_translation.html")
 OUT = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
+
+
+def _asset_ver(name):
+    """Short content hash of a static asset, for cache-busting its URL on every build
+    (so a style.css edit can never be masked by a stale browser/CDN cache again)."""
+    try:
+        with open(os.path.join(OUT, name), "rb") as f:
+            return hashlib.sha1(f.read()).hexdigest()[:10]
+    except OSError:
+        return "0"
+
+
+CSS_VER = _asset_ver("style.css")
 
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
@@ -135,7 +148,7 @@ def page(title, body, active="", desc=""):
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{html.escape(title)}</title>{d}
 <link rel="icon" href="{FAVICON}"/>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="style.css?v={CSS_VER}"/>
 </head>
 <body>
 <div class="wrap">
