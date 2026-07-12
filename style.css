@@ -336,3 +336,10 @@ body.hide-heb .xrefs{margin-top:5px}
 .qrow-t a{color:var(--gold)}
 .qrow-target{font-size:11px;font-weight:700;color:var(--purple);margin-bottom:4px}
 .qrow-note{font-size:11.5px;color:var(--muted);line-height:1.6}
+
+/* Site-traffic box (About page) — GoatCounter live visitor count */
+.statsbox{margin-top:14px;text-align:center}
+.stats-label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple);font-weight:700}
+.stats-num{font-size:34px;font-weight:800;color:var(--gold);margin:6px 0;font-variant-numeric:tabular-nums}
+.stats-sub{font-size:11.5px;color:var(--muted);line-height:1.6;max-width:46ch;margin:0 auto}
+.stats-sub a{color:var(--gold)}

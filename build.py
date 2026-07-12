@@ -50,6 +50,13 @@ SITE_URL = "https://michaelkrewson.github.io/misterlibrarian"
 # the page source). Verified working 2026-07-10 via a test submission.
 FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 
+# GoatCounter — free, open-source, cookie-less analytics (no consent banner needed;
+# see https://www.goatcounter.com). Sign up, enable "Allow adding visitor counts on
+# your website" in Settings > Integrations, and set this to your site code (the
+# CODE in CODE.goatcounter.com). Leave as None and every tracking hook below is a
+# silent no-op — the site behaves exactly as it does today.
+GOATCOUNTER_CODE = None   # e.g. "mistertranslation"
+
 # Chapter registry: slug -> (book, chapter number, one-line teaser).
 # Add a line here when a new chapter lands in the source file.
 CHAPTERS = [
@@ -141,6 +148,46 @@ FOOTER = """<footer class="site-foot">
 </footer>"""
 
 
+def _goatcounter_script():
+    """Sitewide, cookie-less visit tracking (GoatCounter) injected into every page's <head>.
+    No-op until GOATCOUNTER_CODE is set above."""
+    if not GOATCOUNTER_CODE:
+        return ""
+    return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+            f'async src="//gc.zgo.at/count.js"></script>')
+
+
+def _stats_box():
+    """Live 'Site Traffic' box for the About page — fetches the public, unauthenticated
+    GoatCounter counter JSON for the home page ('/') as a proxy for overall site traffic
+    and renders it client-side (no iframe, no GoatCounter branding). Silently hides itself
+    if the fetch fails (ad-blocker, GoatCounter down, or not yet configured)."""
+    if not GOATCOUNTER_CODE:
+        return ""
+    return f"""<div class="panel statsbox" id="statsbox">
+  <div class="stats-label">\U0001F4CA Site Traffic</div>
+  <div class="stats-num" id="statsNum">\u2014</div>
+  <div class="stats-sub">homepage visits, all-time \u00b7 tracked anonymously via
+  <a href="https://www.goatcounter.com" rel="noopener">GoatCounter</a> \u2014 no cookies, no personal
+  data, nothing sold</div>
+</div>
+<script>
+(function(){{
+  fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter//.json")
+    .then(function(r){{ return r.ok ? r.json() : null; }})
+    .then(function(d){{
+      var el = document.getElementById("statsNum");
+      if (el && d && d.count) el.textContent = d.count;
+      else {{ var b = document.getElementById("statsbox"); if (b) b.style.display = "none"; }}
+    }})
+    .catch(function(){{
+      var b = document.getElementById("statsbox");
+      if (b) b.style.display = "none";
+    }});
+}})();
+</script>"""
+
+
 def page(title, body, active="", desc=""):
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
     return f"""<!doctype html>
@@ -150,7 +197,7 @@ def page(title, body, active="", desc=""):
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{html.escape(title)}</title>{d}
 <link rel="icon" href="{FAVICON}"/>
-<link rel="stylesheet" href="style.css?v={CSS_VER}"/>
+<link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script()}
 </head>
 <body>
 <div class="wrap">
@@ -976,10 +1023,13 @@ def build_about():
   <p><strong>The name.</strong> A librarian's job is to catalogue, source, and compare — not to preach.
   That's the ethos here: every claim sourced, every alternative shown, disagreements between traditions
   presented rather than settled.</p>
-  <p><strong>No accounts, no tracking.</strong> The <a href="index.html">home page</a>'s Verse of the Day
-  and the <a href="reading.html">My Reading</a> progress tracker both run entirely in your own browser
-  (a bit of localStorage) — there's no login, no server-side record of what you've read, and nothing is
-  ever sent anywhere. Clear your browser data and it's gone, same as any other private note to yourself.</p>
+  <p><strong>Privacy.</strong> The <a href="index.html">home page</a>'s Verse of the Day and the
+  <a href="reading.html">My Reading</a> progress tracker both run entirely in your own browser (a bit of
+  localStorage) — there's no login and no server-side record of what you've read; clear your browser
+  data and it's gone, same as any other private note to yourself. The one thing that <em>is</em> measured
+  is an anonymous, cookie-less visit count — no personal data, no cross-site tracking, nothing sold,
+  no consent banner needed because none of that happens.{" That's it, live, right below." if GOATCOUNTER_CODE else ""}</p>
+  {_stats_box()}
 </div>"""
     out = page(f"About — {SITE_NAME}", body, active="about",
                desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
