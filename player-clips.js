@@ -1,18 +1,17 @@
 // Click-to-play video clips for The MisterLibrarian Bible Project.
 //
 // Every clip marked up as
-//   <div class="vclip" data-video="ID" data-start="S" data-end="E">
-//     <div class="ytp"></div>
-//   </div>
+//   <div class="vclip" data-video="ID" data-start="S" data-end="E"></div>
 // (data-start/data-end optional — omit data-end to play to the video's own end)
-// starts collapsed to a placeholder (a play symbol + "Video"). Nothing loads
-// or plays until the reader clicks it — only then is the real YouTube IFrame
-// Player API embed built, seeked to the right start point, and (if data-end
-// is set) hard-paused the instant playback crosses the end second, since a
-// plain iframe's ?start=&end= URL params are unreliable for both of those.
+// renders as a small inline "Video" tag, about the size of a line of text —
+// nothing loads or reserves any real estate until the reader clicks it. Only
+// then does this script build the full 16:9 frame and the real YouTube
+// IFrame Player API embed in its place (autoplaying, seeked to the right
+// start point, hard-paused the instant playback crosses data-end, since a
+// plain iframe's ?start=&end= URL params are unreliable for both of those).
 //
-// Add a new clip by giving its wrapper those data attributes plus the nested
-// .ytp mount div — no JS changes needed here.
+// Add a new clip by giving its div those data attributes — no JS changes
+// needed here, and no nested markup required.
 
 var _ytApiReady = false;
 var _ytApiQueue = [];
@@ -23,7 +22,7 @@ function onYouTubeIframeAPIReady(){
   _ytApiQueue = [];
 }
 
-function _vclipBuildPlayer(wrap, mount, vid, start, end){
+function _vclipBuildPlayer(mount, vid, start, end){
   var poll = null;
   new YT.Player(mount, {
     videoId: vid,
@@ -46,9 +45,8 @@ function _vclipBuildPlayer(wrap, mount, vid, start, end){
 }
 
 function _vclipInit(wrap){
-  var mount = wrap.querySelector(".ytp");
-  if (!mount) return;
   var vid = wrap.getAttribute("data-video");
+  if (!vid) return;
   var start = parseInt(wrap.getAttribute("data-start"), 10) || 0;
   var endAttr = wrap.getAttribute("data-end");
   var end = endAttr ? parseInt(endAttr, 10) : null;
@@ -58,13 +56,19 @@ function _vclipInit(wrap){
   ph.setAttribute("role", "button");
   ph.setAttribute("tabindex", "0");
   ph.setAttribute("aria-label", "Play video");
-  ph.innerHTML = '<span class="vclip-play">▶</span><span class="vclip-label">Video</span>';
-  wrap.insertBefore(ph, mount);
+  ph.innerHTML = '<span class="vclip-play">▶</span><span>Video</span>';
+  wrap.appendChild(ph);
 
   function activate(){
     ph.remove();
-    if (_ytApiReady) _vclipBuildPlayer(wrap, mount, vid, start, end);
-    else _ytApiQueue.push(function(){ _vclipBuildPlayer(wrap, mount, vid, start, end); });
+    var frame = document.createElement("div");
+    frame.className = "vclip-frame";
+    var mount = document.createElement("div");
+    mount.className = "ytp";
+    frame.appendChild(mount);
+    wrap.appendChild(frame);
+    if (_ytApiReady) _vclipBuildPlayer(mount, vid, start, end);
+    else _ytApiQueue.push(function(){ _vclipBuildPlayer(mount, vid, start, end); });
   }
   ph.addEventListener("click", activate);
   ph.addEventListener("keydown", function(e){
