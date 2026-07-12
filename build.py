@@ -154,6 +154,8 @@ def page(title, body, active="", desc=""):
 <div class="wrap">
 {header(active)}
 <script src="reading.js"></script>
+<script src="player-clips.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
 {body}
 {FOOTER}
 </div>
