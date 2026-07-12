@@ -55,7 +55,7 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 # your website" in Settings > Integrations, and set this to your site code (the
 # CODE in CODE.goatcounter.com). Leave as None and every tracking hook below is a
 # silent no-op — the site behaves exactly as it does today.
-GOATCOUNTER_CODE = None   # e.g. "mistertranslation"
+GOATCOUNTER_CODE = "mistertranslation"
 
 # Chapter registry: slug -> (book, chapter number, one-line teaser).
 # Add a line here when a new chapter lands in the source file.
