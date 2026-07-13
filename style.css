@@ -372,3 +372,22 @@ body.hide-heb .xrefs{margin-top:5px}
 .prose ul{margin:2px 0 14px;padding-left:20px}
 .prose li{font-size:13.5px;line-height:1.72;color:var(--text);margin:0 0 9px}
 .prose li strong{color:#fff}
+
+/* NT intro: two-column with a framed manuscript figure upper-right */
+.nt-intro{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:26px;
+  align-items:start;margin-bottom:14px}
+.nt-intro .nt-lede{grid-column:1;grid-row:1;margin-bottom:14px}
+.nt-intro .nt-panel1{grid-column:1;grid-row:2}
+.ms-figure{grid-column:2;grid-row:1 / span 2;align-self:start;margin:6px 0 0;
+  background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:10px}
+.ms-figure img{display:block;width:100%;height:auto;border-radius:7px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.45)}
+.ms-figure figcaption{font-size:11.5px;line-height:1.55;color:var(--muted);margin-top:10px}
+.ms-figure .ms-name{display:block;color:var(--gold);font-weight:800;font-size:12px;
+  letter-spacing:0.02em;margin-bottom:4px}
+.ms-figure .ms-credit{display:block;margin-top:8px;font-size:10.5px;line-height:1.5;color:var(--dim)}
+.ms-figure .ms-credit a{color:var(--muted)}
+@media (max-width:760px){
+  .nt-intro{display:block}
+  .ms-figure{max-width:300px;margin:2px auto 16px}
+}

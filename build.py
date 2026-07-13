@@ -1074,14 +1074,27 @@ def build_new_testament():
     actually weighed, and what carries over from the Hebrew chapters. A living page:
     edit this function as the method for the Greek Scriptures develops."""
     body = """<h1 class="pagetitle">The New Testament</h1>
-<p class="lede">Here the project crosses a threshold — out of the Hebrew of the Tanakh and into the
+<div class="nt-intro">
+<p class="lede nt-lede">Here the project crosses a threshold — out of the Hebrew of the Tanakh and into the
 <strong>Koine Greek of the New Testament</strong>, what a number of traditions call the
 <em>Greek Scriptures</em>. The ethos doesn't change; the language, the manuscripts, and one or two famous
 arguments do. This page is the reference desk for that crossing: the texts we translate from, how a body of
 roughly 5,800 Greek manuscripts is actually weighed, and what carries over from the Hebrew chapters. It's a
 <strong>living page</strong> — updated as the method for the Greek Scriptures takes shape.</p>
 
-<div class="panel prose">
+<figure class="ms-figure">
+  <img src="img/p52-john-rylands.jpg" width="960" height="1280" loading="lazy"
+    alt="Papyrus 52 (P52), the Rylands fragment — a scrap of the Gospel of John 18:31–33 in Greek, c. 125–150 CE"/>
+  <figcaption>
+    <span class="ms-name">P52 — the Rylands fragment</span>
+    A scrap of <em>John 18:31–33</em> in Greek, c. 125–150 CE — the oldest surviving piece of any New
+    Testament book, and part of the very Gospel this phase begins with.
+    <span class="ms-credit">John Rylands Library, Manchester — via
+    <a href="https://commons.wikimedia.org/wiki/File:Manchester,_John_Rylands_Library_Ms_Greek_P_457_(Papyrus_52)_recto_John_18,_31-33.jpg" rel="noopener">Wikimedia Commons</a> · public domain</span>
+  </figcaption>
+</figure>
+
+<div class="panel prose nt-panel1">
   <h2 style="margin-top:2px">What changes, and what stays</h2>
   <p><strong>What changes.</strong> The source language is now Greek, not Hebrew. And the source <em>text</em>
   works differently: the Hebrew chapters translate one remarkably standardized traditional text (the Masoretic
@@ -1098,6 +1111,7 @@ roughly 5,800 Greek manuscripts is actually weighed, and what carries over from 
   cross-references will finally run between books. And the honesty habits: where a word is uncertain or the
   manuscripts disagree, the notes say so plainly instead of pretending to a confidence the evidence can't
   support.</p>
+</div>
 </div>
 
 <div class="panel prose">
