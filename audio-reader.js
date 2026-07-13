@@ -20,8 +20,11 @@
   "use strict";
 
   var PREFERRED_VOICES = [
-    // Warm / natural narrator voices across the common platforms, best first.
-    "Samantha", "Ava", "Serena", "Allison", "Nathan", "Daniel", "Karen",
+    // Default to Daniel (British male, en-GB) where available; then warm /
+    // natural narrator voices across the other platforms as fallbacks.
+    "Daniel", "Daniel (Enhanced)",
+    "Google UK English Male", "Microsoft Ryan Online (Natural)",
+    "Samantha", "Ava", "Serena", "Allison", "Nathan", "Karen",
     "Google US English", "Microsoft Aria Online (Natural)", "Microsoft Jenny",
     "Microsoft Guy Online (Natural)"
   ];
