@@ -363,3 +363,12 @@ body.hide-heb .xrefs{margin-top:5px}
 /* the verse currently being spoken */
 .vrs.speaking{background:rgba(167,139,250,0.12);border-radius:10px;
   box-shadow:inset 3px 0 0 var(--purple)}
+
+/* New Testament heading page: Greek text, prose sub-headings + lists */
+.greek{font-family:"SBL Greek","GFS Neohellenic",Gentium,Georgia,"Times New Roman",serif;
+  color:#f3ecd8;font-size:1.06em;letter-spacing:0.01em;white-space:nowrap}
+.prose h3{font-size:12px;font-weight:800;color:var(--gold);letter-spacing:0.04em;
+  text-transform:uppercase;margin:18px 0 6px}
+.prose ul{margin:2px 0 14px;padding-left:20px}
+.prose li{font-size:13.5px;line-height:1.72;color:var(--text);margin:0 0 9px}
+.prose li strong{color:#fff}

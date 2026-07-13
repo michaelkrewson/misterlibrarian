@@ -817,6 +817,7 @@ and link to their chapter; everything else is still ahead.</p>
   <div class="testament">Old Testament · 39 books</div>
   <div class="bookgrid">{ot}</div>
   <div class="testament">New Testament · 27 books</div>
+  <p class="muted" style="margin:2px 0 12px"><a href="new-testament.html">📜 Introduction to the New Testament — the Greek Scriptures →</a></p>
   <div class="bookgrid">{nt}</div>
 </div>"""
     out = page(f"Table of Contents — {SITE_NAME}", body, active="toc",
@@ -971,6 +972,8 @@ def build_index(chapters):
 
 <h2>From the desk</h2>
 <div class="cardgrid">
+  <a class="card" href="new-testament.html"><div class="card-t">\U0001F4DC The New Testament</div>
+  <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
   <a class="card" href="reading.html"><div class="card-t">\U0001F4D7 My Reading</div>
   <div class="card-d">Track your own progress through the translation, chapter by chapter — kept privately in your browser.</div></a>
   <a class="card" href="ask-enoch.html"><div class="card-t">\U0001F4D6 Ask Mr. Librarian</div>
@@ -1062,6 +1065,145 @@ def build_about():
                desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
                     "essentially literal in a modern register, compared against seven landmark versions.")
     open(os.path.join(OUT, "about.html"), "w", encoding="utf-8").write(out)
+
+
+def build_new_testament():
+    """The heading page for the New Testament / Greek Scriptures — an intro to the
+    crossing from Hebrew into Greek, the full source-text apparatus the translation
+    will consult, an honest account of how a body of thousands of manuscripts is
+    actually weighed, and what carries over from the Hebrew chapters. A living page:
+    edit this function as the method for the Greek Scriptures develops."""
+    body = """<h1 class="pagetitle">The New Testament</h1>
+<p class="lede">Here the project crosses a threshold — out of the Hebrew of the Tanakh and into the
+<strong>Koine Greek of the New Testament</strong>, what a number of traditions call the
+<em>Greek Scriptures</em>. The ethos doesn't change; the language, the manuscripts, and one or two famous
+arguments do. This page is the reference desk for that crossing: the texts we translate from, how a body of
+roughly 5,800 Greek manuscripts is actually weighed, and what carries over from the Hebrew chapters. It's a
+<strong>living page</strong> — updated as the method for the Greek Scriptures takes shape.</p>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">What changes, and what stays</h2>
+  <p><strong>What changes.</strong> The source language is now Greek, not Hebrew. And the source <em>text</em>
+  works differently: the Hebrew chapters translate one remarkably standardized traditional text (the Masoretic
+  Text). The Greek New Testament has no single such text — instead there are thousands of manuscripts, the
+  oldest on papyrus from within a century or so of the writing, and the base for translation is a
+  <strong>critical text</strong> that weighs them against one another. One more thing changes: the
+  <strong>words of Jesus will be set in red</strong>, the convention this library has promised since Genesis.</p>
+  <p><strong>What stays.</strong> Everything that makes this a librarian's Bible and not a preacher's.
+  Essentially literal, in a natural modern register. The same <strong>seven-version shelf</strong> under every
+  chapter — the NIV, KJV, Douay-Rheims, Living Bible, 1599 Geneva, ASV, and NWT all carry the New Testament,
+  so the comparison continues unbroken. The <strong>neutrality rule</strong>: where traditions divide, the
+  notes give the readings with their pedigrees and <em>don't vote</em>. The <strong>echo system</strong> —
+  and here it grows a new dimension, because the New Testament quotes the Old on nearly every page, so the
+  cross-references will finally run between books. And the honesty habits: where a word is uncertain or the
+  manuscripts disagree, the notes say so plainly instead of pretending to a confidence the evidence can't
+  support.</p>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">The source texts</h2>
+  <p>The base for translation is the <strong>critical Greek New Testament</strong> in the Nestle tradition —
+  an <em>eclectic</em> text that doesn't reprint any one manuscript but reconstructs, variant by variant, the
+  earliest recoverable reading, resting mainly on the oldest Alexandrian witnesses. Alongside it the notes
+  consult the printed critical editions and the primary manuscripts behind them:</p>
+
+  <h3>Printed critical editions</h3>
+  <div class="shelf">
+    <div class="sv"><b>Nestle</b> Novum Testamentum Graece, 18th ed. (1948) — the eclectic Greek text in the
+    line that became the modern standard.</div>
+    <div class="sv"><b>Bover</b> José María Bover's critical Greek New Testament — a Catholic scholar's
+    independent edition.</div>
+    <div class="sv"><b>Merk</b> Augustinus Merk's Novum Testamentum Graece et Latine — Greek with the Latin
+    alongside.</div>
+  </div>
+
+  <h3>The great uncials — the 4th-century codices</h3>
+  <div class="shelf">
+    <div class="sv"><b>Vaticanus (B / 03)</b> mid-4th century (c. 325–350) — one of the two great uncial
+    codices, and a chief pillar of the Alexandrian text.</div>
+    <div class="sv"><b>Sinaiticus (א / 01)</b> mid-4th century (c. 330–360), found at St Catherine's
+    Monastery on Sinai — a nearly complete New Testament.</div>
+  </div>
+
+  <h3>The early papyri — 2nd and 3rd centuries</h3>
+  <p>Older still than the codices, and the reason we can say the Alexandrian text is early and not a late
+  editorial invention:</p>
+  <div class="shelf">
+    <div class="sv"><b>P52</b> (the Rylands fragment) — a scrap of <em>John 18</em>, c. 125–150, the oldest
+    known fragment of any New Testament book.</div>
+    <div class="sv"><b>P66</b> (Bodmer II) — a substantial portion of <em>John</em>, c. 200.</div>
+    <div class="sv"><b>P75</b> (Bodmer XIV–XV) — <em>Luke and John</em>, c. 175–225, textually almost
+    identical to Vaticanus though ~150 years older, which is how we know that text isn't a late recension.</div>
+    <div class="sv"><b>P46</b> (Chester Beatty II) — the <em>letters of Paul</em>, c. 200.</div>
+  </div>
+
+  <h3>The early versions</h3>
+  <p>Independent early translations corroborate the Greek from the outside: the <strong>Latin</strong> — the
+  Vulgate, which is exactly what the Douay-Rheims on our shelf renders into English — along with the
+  <strong>Coptic</strong> (Egyptian) and <strong>Syriac</strong> traditions. When a Greek reading turns up
+  already carried in a 3rd- or 4th-century version in another language, that is a second, independent vote for
+  its antiquity.</p>
+  <p class="muted" style="margin-top:10px">A practical note: you weigh the witnesses that actually preserve
+  the book in front of you. The John papyri (P52, P66, P75) are gold for the Gospel of John and silent about
+  Paul; P46 is the reverse. And though the two great codices carry the Greek Old Testament too, both are
+  missing early Genesis — Vaticanus begins at Genesis 46:28 — which is why the Hebrew chapters lean on the
+  printed critical Septuagint rather than on B and א directly.</p>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">Isn't weighing thousands of manuscripts impossible?</h2>
+  <p>It sounds impossible — around 5,800 Greek manuscripts, plus thousands more in Latin, lectionaries, and
+  quotations in the early writers, and somewhere near 400,000 points of variation among them. But you never
+  weigh them flat, one vote each, and four things collapse the problem down to something a person can hold:</p>
+  <ul class="prose-list">
+    <li><strong>Manuscripts cluster into families, so you weigh <em>streams</em>, not copies.</strong> The
+    overwhelming majority are late, medieval copies of copies, and they group into a few text-types —
+    Alexandrian (the earliest, P75 and the great codices), Byzantine (the vast late majority), and Western. A
+    thousand near-identical late copies count as roughly one witness with a thousand fingerprints.</li>
+    <li><strong>Almost every variant is trivial.</strong> Spelling, a slip of the pen, a swapped word order
+    (Greek is inflected, so order rarely changes the meaning). Of all those variants, the ones that are both
+    <em>meaningful and viable</em> — a real reading, with real support, that changes the sense — are well
+    under one percent; the ones that would actually alter an English translation are fewer still.</li>
+    <li><strong>The weighing is principled, not brute force.</strong> Two questions decide each real variant:
+    which reading best <em>explains how the others arose</em> (a scribe is likelier to smooth a hard reading
+    than to roughen an easy one), and which has the <em>oldest and most widely spread</em> support. This is
+    what the critical editions above have already carried out.</li>
+    <li><strong>The genuinely combinatorial part is now done by computer.</strong> The modern critical editions
+    use a method called the CBGM to model the family tree of variants across the whole tradition — precisely
+    the part that would be impossible by hand.</li>
+  </ul>
+  <p>So the honest bottom line: you don't adjudicate 5,800 manuscripts — you read a critical apparatus that
+  has already done the weighing, and it shows you the handful of variants that matter for each verse, with
+  their pedigrees. The amount of text in real doubt is small, and the few large disputed passages are famous
+  and openly flagged in every serious edition — the longer ending of Mark (16:9–20), the woman caught in
+  adultery (John 7:53–8:11), the "Johannine Comma" (1 John 5:7–8). Nothing hidden; the notes will mark them
+  when we reach them.</p>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">The first test: John 1:1</h2>
+  <p>The New Testament opens, fittingly, on the project's hardest neutrality problem. The Gospel of John begins
+  <span class="greek">Ἐν ἀρχῇ ἦν ὁ λόγος</span> — "In the beginning was the Word" — deliberately echoing the
+  first words of Genesis, and then reaches its famous crux: <span class="greek">καὶ θεὸς ἦν ὁ λόγος</span>.
+  Most versions render it "and the Word was God"; the New World Translation reads "and the Word was <em>a
+  god</em>." That difference turns on a fine point of Greek grammar — a predicate noun with no article, standing
+  before its verb — and it is exactly the kind of place this project exists to handle honestly. When John 1
+  is posted, the note will lay out the grammar and the readings <strong>with their pedigrees, and won't cast a
+  vote</strong>. That is the method the whole Old Testament has followed, carried across the threshold intact.</p>
+</div>
+
+<div class="panel">
+  <p style="margin:0 0 6px"><strong>The Greek Scriptures begin with the Gospel of John.</strong></p>
+  <p class="muted" style="margin:0">Its first chapter — the Prologue, John the Baptist's testimony, and the
+  calling of the first disciples — is in preparation now, and will be the first chapter to arrive with the
+  full apparatus above behind it. Watch the <a href="toc.html">Table of Contents</a>.</p>
+</div>"""
+    out = page(f"The New Testament — {SITE_NAME}", body, active="nt",
+               desc="Introducing the New Testament (the Greek Scriptures) in The MisterLibrarian Bible "
+                    "Project: the critical Greek text and manuscript apparatus behind the translation "
+                    "(Vaticanus, Sinaiticus, the early papyri P52/P66/P75/P46), how thousands of manuscripts "
+                    "are weighed, and what carries over from the Hebrew.")
+    open(os.path.join(OUT, "new-testament.html"), "w", encoding="utf-8").write(out)
 
 
 def build_ask_enoch():
@@ -1176,6 +1318,7 @@ def main():
     build_reading()
     build_index(chapters)
     build_about()
+    build_new_testament()
     build_ask_enoch()
     build_contact()
     build_thanks()
