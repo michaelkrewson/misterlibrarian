@@ -40,6 +40,7 @@ def _asset_ver(name):
 
 CSS_VER = _asset_ver("style.css")
 JS_VER = _asset_ver("player-clips.js")
+AUDIO_JS_VER = _asset_ver("audio-reader.js")
 
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
@@ -208,6 +209,7 @@ def page(title, body, active="", desc=""):
 {header(active)}
 <script src="reading.js"></script>
 <script src="player-clips.js?v={JS_VER}"></script>
+<script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
 {FOOTER}
@@ -696,9 +698,15 @@ def build_chapter_pages(chapters):
         content = clean_chapter(chapters[slug])
         content = inject_encyclopedia_links(content, num)
         content = inject_xrefs(content, num)
+        # A pre-generated narration MP3 (audio/genesis-N.mp3) is preferred when
+        # present; otherwise the Listen button reads the page aloud in the
+        # browser. gen_audio.py produces those files.
+        mp3_rel = f"audio/genesis-{num}.mp3"
+        audio_attr = f' data-audio="{mp3_rel}"' if os.path.exists(os.path.join(OUT, mp3_rel)) else ""
         toggle = (f'<div class="togglebar">'
                   f'<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
                   f'<div class="tgl-group">'
+                  f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
                   f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button>'
                   f'<a class="tgl" href="atlas.html#genesis-{num}">🗺️ Atlas</a>'
                   f'</div>'
