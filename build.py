@@ -396,6 +396,20 @@ def inject_xrefs(content, ch):
     return content
 
 
+# A video clip is authored right AFTER the verse it belongs to
+# (<div class="vclip"> immediately following the verse's closing </div>). Left
+# there it renders BELOW that verse's divider line, so a reader mistakes it for
+# the next verse's clip. This pulls each clip INSIDE the verse it follows — just
+# before the verse-closing </div>, after any cross-ref chips — so it sits above
+# the divider and clearly belongs to the verse above it. Runs for every chapter,
+# so clips can keep being authored the simple way.
+_CLIP_INTO_VERSE = re.compile(r'</div>\s*(<div class="vclip"[^>]*></div>)')
+
+
+def move_clips_into_verses(content):
+    return _CLIP_INTO_VERSE.sub(lambda m: m.group(1) + "</div>", content)
+
+
 _STOPWORDS = set("""
 a an and are as at be but by for from he her him his i in into is it its let me my not of on or our
 so that the their them then there they this to was we were will with you your all any because if
@@ -698,6 +712,7 @@ def build_chapter_pages(chapters):
         content = clean_chapter(chapters[slug])
         content = inject_encyclopedia_links(content, num)
         content = inject_xrefs(content, num)
+        content = move_clips_into_verses(content)
         # A pre-generated narration MP3 (audio/genesis-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
         # browser. gen_audio.py produces those files.
