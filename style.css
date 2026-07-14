@@ -274,6 +274,19 @@ body.hide-heb .xrefs{margin-top:5px}
   background:#000;border:1px solid var(--border)}
 .vembed-frame iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
 .vembed-title{margin-top:6px;font-size:11.5px;color:var(--muted);line-height:1.5}
+.vlink-note{color:var(--dim);font-style:italic}
+/* clickable thumbnail card for videos whose owner disabled embedding */
+.vlink-frame{position:relative;display:block;width:100%;padding-top:56.25%;border-radius:10px;
+  overflow:hidden;background:#000 center/cover no-repeat;border:1px solid var(--border);text-decoration:none}
+.vlink-frame::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.30);transition:background .15s}
+.vlink-frame:hover::after{background:rgba(0,0,0,.12)}
+.vlink-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+  width:54px;height:54px;border-radius:50%;background:rgba(200,30,30,.92);color:#fff;
+  font-size:20px;line-height:56px;text-align:center;padding-left:4px;box-shadow:0 2px 12px rgba(0,0,0,.5);
+  transition:background .15s}
+.vlink-frame:hover .vlink-play{background:#e60c0c}
+.vlink-badge{position:absolute;left:8px;bottom:8px;z-index:2;font-size:11px;font-weight:600;color:#fff;
+  background:rgba(0,0,0,.62);padding:3px 8px;border-radius:6px;letter-spacing:.02em}
 .evids-empty{margin-top:9px;font-size:11px;color:var(--dim);font-style:italic}
 
 /* ── atlas ── */
@@ -402,3 +415,11 @@ body.hide-heb .grk{display:none}
   .nt-intro{display:block}
   .ms-figure{max-width:300px;margin:2px auto 16px}
 }
+
+/* Companion film block — a labeled dramatization, kept distinct from the archaeology clips */
+.filmshelf{margin:26px 0 4px;background:var(--bg2);border:1px solid var(--border);
+  border-left:3px solid var(--gold);border-radius:12px;padding:14px 16px}
+.filmshelf-head{font-size:10.5px;font-weight:800;color:var(--gold);letter-spacing:0.12em;
+  text-transform:uppercase;margin-bottom:6px}
+.filmshelf-note{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 12px}
+.filmshelf-note strong{color:var(--text)}

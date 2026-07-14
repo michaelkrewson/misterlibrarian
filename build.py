@@ -297,13 +297,38 @@ def verse_url(book, ch, v):
 
 _YT_ID_RE = re.compile(r"(?:v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})")
 
+# YouTube video IDs whose owner has DISABLED embedding on third-party sites
+# (an iframe just renders a dead "Video unavailable — Watch on YouTube" box).
+# Verified via the oEmbed endpoint: an embeddable video returns HTTP 200, a
+# non-embeddable one returns HTTP 401. For these we render a nice clickable
+# thumbnail card that links out to YouTube instead of a broken embed. To add
+# one: check `https://www.youtube.com/oembed?url=<watch-url>&format=json` — if
+# it 401s, drop the 11-char id in here.
+NOEMBED_IDS = {
+    "8cqBePFD9S4",   # Expedition Bible — "BETHEL: Where Jacob Met God" (embedding disabled)
+}
+
 
 def youtube_embed(url, title):
-    """A responsive, privacy-enhanced YouTube embed (falls back to a plain link if the id can't be parsed)."""
+    """A responsive, privacy-enhanced YouTube embed (falls back to a plain link
+    if the id can't be parsed, or a clickable thumbnail card if the video has
+    embedding disabled — see NOEMBED_IDS)."""
     m = _YT_ID_RE.search(url)
     if not m:
         return f'<p><a href="{html.escape(url, quote=True)}" rel="noopener">▶ {html.escape(title)}</a></p>'
     vid = m.group(1)
+    if vid in NOEMBED_IDS:
+        watch = f"https://www.youtube.com/watch?v={vid}"
+        thumb = f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
+        return f"""<div class="vembed">
+  <a class="vlink-frame" href="{watch}" target="_blank" rel="noopener"
+     title="{html.escape(title, quote=True)} — watch on YouTube"
+     style="background-image:url('{thumb}')">
+    <span class="vlink-play" aria-hidden="true">▶</span>
+    <span class="vlink-badge">Watch on YouTube ↗</span>
+  </a>
+  <div class="vembed-title">{html.escape(title)} <span class="vlink-note">(plays on YouTube — this film has embedding turned off)</span></div>
+</div>"""
     return f"""<div class="vembed">
   <div class="vembed-frame">
     <iframe src="https://www.youtube-nocookie.com/embed/{vid}"
@@ -467,6 +492,38 @@ _CLIP_INTO_VERSE = re.compile(r'</div>\s*(<div class="vclip"[^>]*></div>)')
 
 def move_clips_into_verses(content):
     return _CLIP_INTO_VERSE.sub(lambda m: m.group(1) + "</div>", content)
+
+
+_FILMCLIP_RE = re.compile(r'<div class="filmclip"([^>]*)></div>')
+
+
+def _clip_attr(attrs, name):
+    m = re.search(r'%s="([^"]*)"' % re.escape(name), attrs)
+    return m.group(1) if m else ""
+
+
+def render_film_clips(content):
+    """Turn a <div class="filmclip" data-video=ID data-title=.. data-source=..> marker
+    (authored at the very bottom of a chapter panel, after the notes/info-block) into a
+    labeled 'Companion film' block. These are DRAMATIZATIONS — feature films, not the
+    on-site archaeology footage embedded on the encyclopedia's place entries — so they
+    are kept visually and editorially distinct, and honestly labeled as such. Not touched
+    by move_clips_into_verses (that only matches class="vclip")."""
+    def repl(m):
+        attrs = m.group(1)
+        vid = _clip_attr(attrs, "data-video")
+        title = _clip_attr(attrs, "data-title") or "Companion film"
+        source = _clip_attr(attrs, "data-source")
+        embed = youtube_embed(f"https://youtu.be/{vid}", title)
+        src_html = f" — <em>{html.escape(source)}</em>" if source else ""
+        return f"""<div class="filmshelf">
+  <div class="filmshelf-head">\U0001F3AC Companion film · a dramatization</div>
+  <p class="filmshelf-note">A dramatized retelling{src_html}, offered alongside the chapter as a companion.
+  It is a <strong>film, not archaeology</strong> — an interpretation of the story, kept separate from the
+  on-site footage on the site's place entries. (Embedded from a third-party upload; it may move or disappear.)</p>
+  {embed}
+</div>"""
+    return _FILMCLIP_RE.sub(repl, content)
 
 
 _STOPWORDS = set("""
@@ -783,6 +840,7 @@ def build_chapter_pages(chapters):
         content = inject_encyclopedia_links(content, book, num)
         content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
+        content = render_film_clips(content)
         orig_lang = "Greek" if _is_nt(book) else "Hebrew"   # the Hide-original toggle label
         # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
