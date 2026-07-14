@@ -22,7 +22,7 @@ import re
 from collections import defaultdict
 
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
-                           LINK_OVERRIDES, VERSE_OF_DAY)
+                           LINK_OVERRIDES, VERSE_OF_DAY, ROUTES)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
@@ -687,6 +687,96 @@ shelf of archaeology and geography footage embedded directly on the entries they
     return len(places), len(people)
 
 
+def _route_geo(stops, inner_w=780.0, pad=42.0):
+    """Equirectangular projection of a journey's stops into SVG px, with a
+    cos(lat) longitude correction so the shape isn't stretched. Returns the
+    projector plus the canvas size and the lat/lon bounds."""
+    lats = [s["coord"][0] for s in stops]
+    lons = [s["coord"][1] for s in stops]
+    lat_min, lat_max = min(lats), max(lats)
+    lon_min, lon_max = min(lons), max(lons)
+    kx = math.cos(math.radians((lat_min + lat_max) / 2.0))
+    gw = ((lon_max - lon_min) * kx) or 1.0
+    scale = inner_w / gw
+    w = inner_w + 2 * pad
+    h = (lat_max - lat_min) * scale + 2 * pad
+
+    def proj(lat, lon):
+        return (pad + (lon - lon_min) * kx * scale, pad + (lat_max - lat) * scale)
+
+    return proj, w, h, (lat_min, lat_max, lon_min, lon_max)
+
+
+def render_route_panel(route):
+    """A self-contained inline-SVG map of a journey — no map library, no
+    external tiles: real lat/lon projected, a dashed route line, numbered
+    PRIMARY stops, small `via` bend-points that curve the line to the rivers,
+    a faint degree graticule, river hints, a compass, and a numbered legend."""
+    stops = route["stops"]
+    proj, W, H, (lat_min, lat_max, lon_min, lon_max) = _route_geo(stops)
+
+    grid = []
+    for lon in range(int(math.ceil(lon_min)), int(math.floor(lon_max)) + 1):
+        x, _ = proj(lat_max, lon)
+        grid.append(f'<line x1="{x:.1f}" y1="0" x2="{x:.1f}" y2="{H:.1f}" class="rg-grid"/>')
+        if lon % 2 == 0:
+            grid.append(f'<text x="{x:.1f}" y="{H-5:.1f}" class="rg-tick" text-anchor="middle">{lon}°E</text>')
+    for lat in range(int(math.ceil(lat_min)), int(math.floor(lat_max)) + 1):
+        _, y = proj(lat, lon_min)
+        grid.append(f'<line x1="0" y1="{y:.1f}" x2="{W:.1f}" y2="{y:.1f}" class="rg-grid"/>')
+        grid.append(f'<text x="5" y="{y-3:.1f}" class="rg-tick">{lat}°N</text>')
+
+    pts = [proj(s["coord"][0], s["coord"][1]) for s in stops]
+    d = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+
+    via, marks, legend = [], [], []
+    n = 0
+    for s, (x, y) in zip(stops, pts):
+        if s.get("via"):
+            via.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="2.6" class="rg-via"/>')
+            continue
+        n += 1
+        marks.append(
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="12" class="rg-halo"/>'
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="9.5" class="rg-dot"/>'
+            f'<text x="{x:.1f}" y="{y+3.6:.1f}" class="rg-num" text-anchor="middle">{n}</text>')
+        name = html.escape(s["name"])
+        if s.get("slug"):
+            name = f'<a href="encyclopedia.html#{s["slug"]}">{name}</a>'
+        ref = ""
+        if s.get("ref"):
+            c, v = s["ref"]
+            ref = f' <a class="route-ref" href="{verse_url("Genesis", c, v)}">Gen {c}:{v}</a>'
+        note = f' — {html.escape(s["note"])}' if s.get("note") else ""
+        legend.append(f'<li><span class="route-num">{n}</span>'
+                      f'<span><strong>{name}</strong>{note}{ref}</span></li>')
+
+    ex, ey = proj(34.6, 42.2)
+    jx, jy = proj(31.55, 35.55)
+    rivers = (f'<text x="{ex:.1f}" y="{ey:.1f}" class="rg-river" text-anchor="middle">Euphrates</text>'
+              f'<text x="{jx:.1f}" y="{jy:.1f}" class="rg-river" text-anchor="middle">Jordan</text>')
+
+    compass = (f'<g transform="translate({W-24:.0f},26)">'
+               f'<line x1="0" y1="9" x2="0" y2="-7" class="rg-comp"/>'
+               f'<path d="M0,-11 L3.5,-4 L-3.5,-4 Z" class="rg-compf"/>'
+               f'<text x="0" y="-13" class="rg-cn" text-anchor="middle">N</text></g>')
+
+    svg = (f'<svg viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
+           f'aria-label="Route map: {html.escape(route["title"])}" xmlns="http://www.w3.org/2000/svg">'
+           f'<title>{html.escape(route["title"])}</title>'
+           f'{"".join(grid)}{rivers}'
+           f'<path d="{d}" class="rg-under"/><path d="{d}" class="rg-line"/>'
+           f'{"".join(via)}{"".join(marks)}{compass}</svg>')
+
+    return (f'<section class="route-panel" id="route-{route["slug"]}">'
+            f'<h2>🧭 {html.escape(route["title"])}</h2>'
+            f'<div class="route-sub">{html.escape(route["chapters"])} · the journey at a glance</div>'
+            f'<p class="route-blurb">{route["blurb"]}</p>'
+            f'<div class="route-map">{svg}</div>'
+            f'<ol class="route-legend">{"".join(legend)}</ol>'
+            f'</section>')
+
+
 def build_atlas():
     """One page, organized chapter-by-chapter (not place-by-place like the
     encyclopedia) so a chapter's Atlas toggle can jump straight to `atlas.html#genesis-N`.
@@ -739,6 +829,8 @@ def build_atlas():
   {body_html}
 </div>""")
 
+    route_html = "".join(render_route_panel(r) for r in ROUTES)
+
     body = f"""<h1 class="pagetitle">🗺️ Atlas</h1>
 <p class="lede">Every place the translation has named so far, mapped chapter by chapter —
 <strong>{n_mapped} of {len(places)} places</strong> located on a live map (a handful are genuinely debated or
@@ -749,6 +841,7 @@ place's own note. An <strong>ancient-world overlay</strong> — how each region 
 world, not just today — is a shelf still being built; it starts empty and fills in as real sources are curated,
 the same honest way the encyclopedia's film shelf grows.</p>
 
+{route_html}
 {''.join(sections)}"""
     out = page(f"Atlas — {SITE_NAME}", body, active="library",
                desc="A chapter-by-chapter atlas of the MisterLibrarian Bible Project — every named place mapped, "

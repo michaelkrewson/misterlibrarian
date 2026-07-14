@@ -744,3 +744,51 @@ VERSE_OF_DAY = [
     (13, 9, "Abram's offer to Lot — take either half, so the family doesn't have to break."),
     (13, 16, "Offspring like the dust of the earth — the promise made physical."),
 ]
+
+# ---------------------------------------------------------------------------
+# Journeys — drawn as a route line at the top of the Atlas (an inline-SVG map,
+# self-contained, projected from real lat/lon; no map library, no external
+# tiles). Each stop is either a numbered PRIMARY stop (dot + legend row) or a
+# `via` bend-point (a small unlabeled vertex that shapes the line so it follows
+# the rivers instead of cutting across the desert). `slug` links a stop to its
+# encyclopedia entry; `ref` = (chapter, verse) deep-links into the translation.
+# Honest by design: the northern arc follows the Euphrates (a herding household
+# "moves at the speed of water"), and the southern leg is the route reconstructed
+# from Jacob's reverse journey (Gen 31-33) — said so in the panel's own caption.
+# Genesis gives NO itinerary between Haran and Shechem; this is indicative.
+# ---------------------------------------------------------------------------
+ROUTES = [
+    dict(
+        slug="abraham-migration",
+        title="Abram's Migration — Ur to Canaan",
+        chapters="Genesis 11–12",
+        blurb=(
+            "The book gives no itinerary at all between Haran and Shechem — \"they set out for the land of "
+            "Canaan, and they arrived.\" This is the route reconstructed from the geography and from Jacob's "
+            "later journey run in reverse (Genesis 31–33), the line the biblical archaeologist Joel Kramer "
+            "retraces on the ground in the Expedition Abraham film (catalogued at the Ur and Abram entries). "
+            "The northern arc follows the Euphrates — with herds you travel at the speed of water, not straight "
+            "across the desert — and the southern leg comes down through Gilead, crosses the Jordan at the ford "
+            "by Adam, and climbs to Shechem. A schematic drawn from real coordinates: the numbered stops are "
+            "located; the connecting line is indicative."
+        ),
+        stops=[
+            dict(name="Ur of the Chaldeans", coord=(30.9626, 46.1035), slug="ur",
+                 note="Setting out for Canaan", ref=(11, 31)),
+            dict(name="Babylon", coord=(32.5422, 44.4208),
+                 note="Passed on the way up the Euphrates (route geography, not a Genesis stop)"),
+            dict(coord=(35.95, 39.02), via=True),   # Euphrates–Balikh confluence (near Raqqa): the river's NW bend
+            dict(name="Haran", coord=(36.8636, 39.0328), slug="haran-city",
+                 note="Terah settles and dies; Abram's call", ref=(11, 32)),
+            dict(name="Damascus", coord=(33.5131, 36.2919), slug="damascus",
+                 note="Down the Aramean corridor toward Canaan"),
+            dict(coord=(32.40, 35.78), via=True),   # the hills of Gilead
+            dict(coord=(32.19, 35.68), via=True),   # the Jabbok at Peniel
+            dict(coord=(32.10, 35.55), via=True),   # the Jordan ford by Adam
+            dict(name="Shechem", coord=(32.2137, 35.2853), slug="shechem",
+                 note="Journey's end (first altar) — down through the hills of Gilead, across the Jabbok at "
+                      "Peniel, over the Jordan at the ford by Adam, and up the Wadi Farah",
+                 ref=(12, 6)),
+        ],
+    ),
+]

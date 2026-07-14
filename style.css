@@ -423,3 +423,32 @@ body.hide-heb .grk{display:none}
   text-transform:uppercase;margin-bottom:6px}
 .filmshelf-note{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 12px}
 .filmshelf-note strong{color:var(--text)}
+
+/* Atlas — journey route map (self-contained inline SVG, no map library) */
+.route-panel{background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  border:1px solid rgba(232,201,104,0.22);border-radius:14px;padding:16px 18px 18px;margin:6px 0 26px}
+.route-panel h2{font-size:16.5px;color:var(--gold);margin:0 0 3px;font-weight:800}
+.route-sub{font-size:11px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;margin:0 0 9px}
+.route-blurb{font-size:12.5px;color:var(--muted);line-height:1.65;max-width:76ch;margin:0 0 12px}
+.route-map{width:100%;max-width:880px;margin:0 auto 12px}
+.route-map svg{width:100%;height:auto;display:block;border:1px solid var(--border);
+  border-radius:10px;background:#070d18}
+.rg-grid{stroke:rgba(255,255,255,0.05);stroke-width:1}
+.rg-tick{fill:var(--dim);font-size:9px;font-family:ui-monospace,SFMono-Regular,monospace}
+.rg-under{fill:none;stroke:var(--gold);stroke-width:6;stroke-opacity:0.16;stroke-linecap:round;stroke-linejoin:round}
+.rg-line{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:7 5;stroke-linecap:round;stroke-linejoin:round}
+.rg-via{fill:var(--gold);fill-opacity:0.55}
+.rg-halo{fill:var(--gold);fill-opacity:0.13}
+.rg-dot{fill:var(--gold);stroke:#0b1929;stroke-width:1}
+.rg-num{fill:#0b1929;font-size:11px;font-weight:800;font-family:system-ui,sans-serif}
+.rg-river{fill:var(--blue);font-size:10.5px;font-style:italic;opacity:0.7;letter-spacing:0.06em}
+.rg-comp{stroke:var(--muted);stroke-width:1.2}
+.rg-compf{fill:var(--gold)}
+.rg-cn{fill:var(--muted);font-size:9px;font-weight:700}
+.route-legend{list-style:none;margin:8px 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px 22px}
+.route-legend li{display:flex;gap:9px;align-items:baseline;font-size:12.5px;color:var(--text);line-height:1.45}
+.route-num{flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;
+  border-radius:50%;background:var(--gold);color:#0b1929;font-weight:800;font-size:11px}
+.route-legend a{color:var(--gold);font-weight:700}
+.route-legend a.route-ref{color:var(--dim);font-weight:600;font-size:11px;white-space:nowrap}
