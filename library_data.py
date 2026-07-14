@@ -280,9 +280,12 @@ ENCYCLOPEDIA = [
          coords=(31.8402, 35.6737, 0.4), approx=True,
          modern="Tall el-Hammam, Jordan, in the eastern Jordan Valley"),
     dict(slug="ur", name="Ur of the Chaldeans", kind="place",
-         desc="Abram's birthplace (11:28,31) — the great Sumerian city of southern Iraq, whose ziggurat still stands; "
-              "Leonard Woolley's 1920s-30s excavations (royal tombs, gold lyres) made it world-famous. 'Of the "
-              "Chaldeans' is a later-era label, identifying the city for the text's own readers.",
+         desc="Abram's birthplace (11:28,31) — the great Sumerian city of southern Iraq, sacred to the moon god "
+              "Nanna (Akkadian Sin), whose ziggurat — his temple — still stands; John Taylor's 1850s dig first fixed "
+              "the identification from inscribed cylinders found in the ziggurat, and Leonard Woolley's 1920s-30s "
+              "excavations (royal tombs, gold lyres) made it world-famous. 'Of the Chaldeans' is a later-era label, "
+              "identifying the city for the text's own readers. Ur's moon-cult, shared with Haran, is the usual "
+              "thread offered for why Terah's family migrated between the two (see Haran).",
          refs=[(11, 28), (11, 31)],
          videos=[("EXPEDITION ABRAHAM: from his birthplace at Ur to the Promised Land",
                   "https://www.youtube.com/watch?v=f7-RQZavU3U")],
@@ -290,9 +293,15 @@ ENCYCLOPEDIA = [
          modern="Tell el-Muqayyar, near Nasiriyah, Iraq"),
     dict(slug="haran-city", name="Haran (the city)", kind="place", aliases=["Haran"],
          desc="Caravan city on the northern arc of the route from Ur to Canaan, where Terah's migration stalls and "
-              "Terah dies (11:31-32); Abram's call comes here (12:1-4). Spelled differently in Hebrew from Terah's "
-              "son Haran, whose death at 11:28 happens before the family even leaves Ur for this place.",
-         refs=[(11, 31), (11, 32), (12, 4), (12, 5)], videos=[],
+              "Terah dies (11:31-32); Abram's call comes here (12:1-4). Like Ur, it was a great cult center of the "
+              "moon god (Sin) — the shared devotion is the usual explanation for why the family settled here (the "
+              "Bible recalls that Terah 'served other gods,' Joshua 24:2). Babylon's last king Nabonidus later "
+              "restored its moon-temple, and David Storm Rice's 1950s excavation of Harran's Great Mosque recovered "
+              "the inscriptions that name the site. Spelled differently in Hebrew from Terah's son Haran, whose death "
+              "at 11:28 happens before the family even leaves Ur for this place.",
+         refs=[(11, 31), (11, 32), (12, 4), (12, 5)],
+         videos=[("EXPEDITION ABRAHAM: retracing the route through Haran, from Ur to the Promised Land",
+                  "https://www.youtube.com/watch?v=f7-RQZavU3U")],
          coords=(36.8636, 39.0328, 0.15),
          modern="Harran, in Turkey's Şanlıurfa Province"),
     dict(slug="shechem", name="Shechem", kind="place",
@@ -536,7 +545,10 @@ ENCYCLOPEDIA = [
          refs=[(14, 14)], coords=(33.248, 35.652, 0.05), modern="Tel Dan, northern Israel", videos=[]),
     dict(slug="damascus", name="Damascus", kind="place", aliases=["Damascus"],
          desc="Abram pursued the eastern kings as far as Hobah, 'north of Damascus' (14:15) — the ancient Aramean "
-              "city, already a fixed landmark in the patriarch's day.",
+              "city, already a fixed landmark in the patriarch's day. The north-south corridor past Damascus is the "
+              "very road Abram had come down from Haran on his migration into Canaan (retraced in the Expedition "
+              "Abraham film catalogued on the Ur and Abram entries) — here it simply runs the other way: the route "
+              "up which the eastern kings retreated, and he chased them.",
          refs=[(14, 15)], coords=(33.513, 36.292, 0.06), modern="Damascus, Syria", videos=[]),
 ]
 
