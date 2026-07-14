@@ -150,6 +150,23 @@ DICTIONARY = [
      "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1).", (4, 1)),
     ("zakhar-remember", "zakhar", "זָכַר", "zakhar",
      "To remember — divine remembering that acts: 'God remembered Noah' turns the flood (8:1); God looks at the bow 'to remember' (9:16).", (8, 1)),
+    # ---- John 1 (Greek) ----
+    ("logos", "logos", "λόγος", "logos",
+     "Word, reason, account — John's term for the pre-existent Christ, fusing the Hebrew 'word of the LORD' by which the world was made (Genesis 1's ten-fold 'and God said') with the Greek philosophers' logos, the reason that orders the cosmos.", ("John", 1, 1)),
+    ("monogenes", "monogenes", "μονογενής", "monogenēs",
+     "'One of a kind, an only child' (mono-, 'only,' + genos, 'kind/kin') — NOT 'only-begotten,' which came through the Latin unigenitus and reads a later doctrine into the word. Rendered here 'the only Son.'", ("John", 1, 14)),
+    ("eskenosen", "eskenosen", "ἐσκήνωσεν", "eskēnōsen",
+     "'Tented, tabernacled' (from skēnē, 'tent') — the Word 'pitched his tent among us,' echoing the tabernacle where the LORD's glory came to dwell with Israel (Exodus 40).", ("John", 1, 14)),
+    ("charis", "charis", "χάρις", "charis",
+     "Grace, favor, gift — paired with 'truth' (alētheia) it renders the Hebrew chesed ve-emet, 'steadfast love and faithfulness,' the LORD's self-description to Moses in Exodus 34:6.", ("John", 1, 14)),
+    ("christos", "Christos", "Χριστός", "Christos",
+     "'Anointed' — the Greek for the Hebrew/Aramaic Messiah (mashiach); a title, not a surname. John glosses the Aramaic 'Messiah' with the Greek 'Christ' at 1:41.", ("John", 1, 17)),
+    ("amnos", "amnos", "ἀμνός", "amnos",
+     "Lamb — 'the Lamb of God who takes away the sin of the world,' gathering the Passover lamb of Exodus 12 and the lamb led to the slaughter of Isaiah 53.", ("John", 1, 29)),
+    ("ide", "ide", "Ἴδε", "ide",
+     "'Behold, look' — the natural Greek heir of the Hebrew hineh this translation renders 'Look —.' The Baptist uses it of the Lamb (1:29, 1:36), Jesus of Nathanael (1:47).", ("John", 1, 29)),
+    ("kephas", "Kephas", "Κηφᾶς", "Kēphas",
+     "Aramaic kepha, 'rock,' rendered into Greek as Petros — the new name Jesus gives Simon on sight, a name-change in the line of Abram→Abraham and Jacob→Israel.", ("John", 1, 42)),
 ]
 
 ENCYCLOPEDIA = [
@@ -433,6 +450,57 @@ ENCYCLOPEDIA = [
               "men of old, the men of renown.' Meaning unknown; the Greek translators wrote 'giants.' They reappear "
               "only in the spies' report (Numbers 13:33).",
          refs=[(6, 4)], videos=[]),
+
+    # ---- John 1 (people) ----
+    dict(slug="john-the-baptist", name="John the Baptist", kind="person", aliases=["John the Baptist", "John"],
+         desc="The witness sent ahead of Jesus, baptizing at the Jordan. He denies being the Messiah, Elijah, or the "
+              "Prophet, calls himself only 'a voice crying in the wilderness' (Isaiah 40:3), and points his own "
+              "disciples to 'the Lamb of God.' (The Gospel of John never names its own author, so every 'John' in "
+              "this book is the Baptist.)",
+         refs=[("John", 1, 6), ("John", 1, 15), ("John", 1, 19), ("John", 1, 26), ("John", 1, 29), ("John", 1, 35)],
+         videos=[]),
+    dict(slug="jesus", name="Jesus", kind="person", aliases=["Jesus"],
+         desc="Jesus of Nazareth, son of Joseph — the Word made flesh (1:14). Hailed by the Baptist as 'the Lamb of "
+              "God' and 'the Chosen One of God,' and confessed by Nathanael as 'Son of God' and 'King of Israel'; he "
+              "names himself 'the Son of Man' (1:51).",
+         refs=[("John", 1, 17), ("John", 1, 29), ("John", 1, 36), ("John", 1, 42), ("John", 1, 45), ("John", 1, 50)],
+         videos=[]),
+    dict(slug="andrew", name="Andrew", kind="person", aliases=["Andrew"],
+         desc="Simon Peter's brother and one of the Baptist's disciples — the first to follow Jesus. He finds his "
+              "brother with the words 'We have found the Messiah.'",
+         refs=[("John", 1, 40), ("John", 1, 44)], videos=[]),
+    dict(slug="simon-peter", name="Simon Peter", kind="person", aliases=["Simon Peter", "Simon", "Cephas", "Peter"],
+         desc="Simon son of John, Andrew's brother, whom Jesus renames on sight: Cephas — Aramaic kepha, 'rock,' "
+              "rendered into Greek as Petros.",
+         refs=[("John", 1, 40), ("John", 1, 41), ("John", 1, 42)], videos=[]),
+    dict(slug="philip", name="Philip", kind="person", aliases=["Philip"],
+         desc="From Bethsaida, the town of Andrew and Peter. Called by Jesus with 'Follow me,' he in turn finds "
+              "Nathanael and answers his doubt with 'Come and see.'",
+         refs=[("John", 1, 43), ("John", 1, 44), ("John", 1, 45)], videos=[]),
+    dict(slug="nathanael", name="Nathanael", kind="person", aliases=["Nathanael"],
+         desc="The disciple Jesus greets as 'truly an Israelite, in whom there is no deceit' — a Jacob without "
+              "Jacob's guile. Convinced by Jesus' sight of him 'under the fig tree,' he confesses him 'Son of God' "
+              "and 'King of Israel.'",
+         refs=[("John", 1, 45), ("John", 1, 47), ("John", 1, 49)], videos=[]),
+
+    # ---- John 1 (places) ----
+    dict(slug="bethany-jordan", name="Bethany beyond the Jordan", kind="place",
+         aliases=["Bethany beyond the Jordan", "Bethany"],
+         desc="Where John was baptizing, east of the Jordan — not the Bethany near Jerusalem. The exact site was "
+              "lost early: Origen, in the third century, could not find a 'Bethany' there and proposed reading "
+              "'Bethabara' instead, a variant that entered some manuscripts. Marked undetermined on the map rather "
+              "than guessed.",
+         refs=[("John", 1, 28)], videos=[]),
+    dict(slug="bethsaida", name="Bethsaida", kind="place", aliases=["Bethsaida"],
+         desc="The town of Andrew, Peter, and Philip, on the north shore of the Sea of Galilee near where the Jordan "
+              "flows in. The site is debated between the mounds of et-Tell and el-Araj.",
+         refs=[("John", 1, 44)], coords=(32.910, 35.631, 0.09),
+         modern="et-Tell / el-Araj, northern Sea of Galilee", approx=True, videos=[]),
+    dict(slug="nazareth", name="Nazareth", kind="place", aliases=["Nazareth"],
+         desc="Jesus' obscure Galilean hometown, never named in the Old Testament — hence Nathanael's 'Can anything "
+              "good come out of Nazareth?'",
+         refs=[("John", 1, 45), ("John", 1, 46)], coords=(32.702, 35.297, 0.06),
+         modern="Nazareth, Israel", videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -499,6 +567,11 @@ XREFS = [
     ((11, 30), (12, 2), "'Sarai was barren' — the sentence the great-nation promise is heard against"),
     ((11, 31), (12, 5), "the journey to Canaan — stalled under Terah, finished under Abram"),
     ((12, 10), (12, 20), "down to Egypt and sent away — the Exodus pattern in miniature"),
+    # ---- John ↔ Genesis (cross-book) ----
+    (("John", 1, 1), (1, 1), "'In the beginning' — John opens on the first words of Genesis, reaching back before creation"),
+    (("John", 1, 3), (1, 3), "all things came to be through the Word — as God creates by speaking, 'And God said…'"),
+    (("John", 1, 5), (1, 4), "light shining in the darkness — the first thing God separates at creation"),
+    (("John", 1, 32), (1, 2), "the Spirit descending and resting — the Spirit of God hovering over the waters"),
 ]
 
 # ---------------------------------------------------------------------------

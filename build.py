@@ -74,8 +74,9 @@ CHAPTERS = [
     ("gen11", "Genesis", 11, "Babel and babble — and the quiet road to Ur."),
     ("gen12", "Genesis", 12, "Lekh lekha: the call of Abram, and Egypt as the Exodus in miniature."),
     ("gen13", "Genesis", 13, "Abram and Lot part ways — the land too small for both, and the Hebrew word for “separate” that decides everything."),
+    ("john1", "John", 1, "The Word made flesh — the Prologue and its “was God / a god,” the Lamb of God, and the first disciples."),
 ]
-NEXT_UP = "Genesis 14"         # shown greyed-out at the end of the nav chain
+NEXT_UP = "Genesis 14"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),
@@ -95,6 +96,47 @@ BOOKS_NT = [("Matthew", 28), ("Mark", 16), ("Luke", 24), ("John", 21),
     ("2 Timothy", 4), ("Titus", 3), ("Philemon", 1), ("Hebrews", 13),
     ("James", 5), ("1 Peter", 5), ("2 Peter", 3), ("1 John", 5), ("2 John", 1),
     ("3 John", 1), ("Jude", 1), ("Revelation", 22)]
+
+# --- book-aware helpers (multi-book support) -------------------------------
+# The site began Genesis-only; these let a second book (John, …) coexist without
+# breaking the live genesis-N.html URLs. A library ref is (ch, v) for Genesis
+# (back-compat) or (book, ch, v) for any book; `_ref` normalizes to (book, ch, v).
+BOOK_TOTAL = {name: n for name, n in BOOKS_OT + BOOKS_NT}
+_NT_BOOKS = {name for name, _ in BOOKS_NT}
+_BOOK_ABBR = {"Genesis": "Gen", "Exodus": "Exod", "Leviticus": "Lev", "Numbers": "Num",
+              "Deuteronomy": "Deut", "Matthew": "Matt", "Mark": "Mark", "Luke": "Luke",
+              "John": "John", "Acts": "Acts", "Romans": "Rom", "Revelation": "Rev"}
+
+
+def book_slug(book):
+    """URL slug for a book: 'Genesis' -> 'genesis', '1 John' -> '1-john'."""
+    return book.lower().replace(" ", "-")
+
+
+def chapter_filename(book, ch):
+    return f"{book_slug(book)}-{ch}.html"
+
+
+def book_abbr(book):
+    return _BOOK_ABBR.get(book, book)
+
+
+def _is_nt(book):
+    return book in _NT_BOOKS
+
+
+def _ref(r):
+    """Normalize a library ref: (ch, v) -> Genesis; (book, ch, v) -> that book."""
+    return (r[0], r[1], r[2]) if len(r) == 3 else ("Genesis", r[0], r[1])
+
+
+# Normalize library-data refs to (book, ch, v) once, at load, so every consumer
+# below unpacks a uniform triple. Genesis entries keep their bare (ch, v) tuples
+# in library_data.py and normalize here to book="Genesis".
+for _e in ENCYCLOPEDIA:
+    _e["refs"] = [_ref(r) for r in _e["refs"]]
+XREFS_N = [(_ref(a), _ref(b), why) for (a, b, why) in XREFS]
+
 
 FAVICON = ("data:image/svg+xml," + html.escape(
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 46 46'>"
@@ -233,10 +275,11 @@ def extract_source(source_path):
 
 
 def clean_chapter(content):
-    # In-page chapter-switch links (showChapter) -> plain text; the nav strip covers movement.
+    # In-page chapter-switch links (showChapter) -> real chapter-page links; the nav strip covers movement.
+    slug_to_file = {slug: chapter_filename(book, num) for slug, book, num, _ in CHAPTERS}
     content = re.sub(
-        r'<a href="#" onclick="showChapter\(\'(gen\d+)\'[^"]*"[^>]*>([^<]+)</a>',
-        lambda m: f'<a href="genesis-{m.group(1)[3:]}.html">{m.group(2)}</a>', content)
+        r'<a href="#" onclick="showChapter\(\'([a-z0-9]+)\'[^"]*"[^>]*>([^<]+)</a>',
+        lambda m: f'<a href="{slug_to_file.get(m.group(1), "toc.html")}">{m.group(2)}</a>', content)
     return content
 
 
@@ -247,8 +290,8 @@ def verse_anchor(ch, v):
     return f"v{v}" if ch == 1 else f"v{ch}-{v}"
 
 
-def verse_url(ch, v):
-    return f"genesis-{ch}.html#{verse_anchor(ch, v)}"
+def verse_url(book, ch, v):
+    return f"{chapter_filename(book, ch)}#{verse_anchor(ch, v)}"
 
 
 _YT_ID_RE = re.compile(r"(?:v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})")
@@ -315,13 +358,22 @@ _ALIAS_INDEX = _build_alias_index()
 _ALIAS_PATTERN = re.compile(
     r'\b(' + '|'.join(re.escape(w) for w in
                        sorted(_ALIAS_INDEX, key=len, reverse=True)) + r')\b')
-_OVERRIDE_MAP = {(ch, v, word, idx): slug for ch, v, word, idx, slug in LINK_OVERRIDES}
+def _norm_override(o):
+    # (ch, v, word, idx, slug) -> Genesis; (book, ch, v, word, idx, slug) -> that book.
+    if len(o) == 6:
+        b, ch, v, w, i, s = o
+        return (b, ch, v, w, i), s
+    ch, v, w, i, s = o
+    return ("Genesis", ch, v, w, i), s
+
+
+_OVERRIDE_MAP = dict(_norm_override(o) for o in LINK_OVERRIDES)
 _SLUG_TO_ENTRY = {e["slug"]: e for e in ENCYCLOPEDIA}
 _VERSE_ENG_BLOCK = re.compile(
     r'(id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">)(.*?)(</div>)', re.S)
 
 
-def inject_encyclopedia_links(content, ch):
+def inject_encyclopedia_links(content, book, ch):
     """Turn the first mention per chapter of each ENCYCLOPEDIA entry (by its
     `name` or any `aliases`) into a link to its encyclopedia.html entry.
 
@@ -349,13 +401,16 @@ def inject_encyclopedia_links(content, ch):
             word = wm.group(1)
             seen_in_verse[word] += 1
             occurrence = seen_in_verse[word]
-            candidates = _ALIAS_INDEX[word]
-            slug = _OVERRIDE_MAP.get((ch, vnum, word, occurrence))
+            # Only entities that actually appear in THIS book are eligible, so a
+            # Genesis entry can never link inside John (or vice versa).
+            candidates = [c for c in _ALIAS_INDEX[word]
+                          if any(rb == book for (rb, rc, rv) in c["refs"])]
+            slug = _OVERRIDE_MAP.get((book, ch, vnum, word, occurrence))
             if slug is None:
                 if len(candidates) == 1:
                     slug = candidates[0]["slug"]
                 else:
-                    ref_hits = [c["slug"] for c in candidates if (ch, vnum) in c["refs"]]
+                    ref_hits = [c["slug"] for c in candidates if (book, ch, vnum) in c["refs"]]
                     slug = ref_hits[0] if len(ref_hits) == 1 else None
             if slug is None or slug in linked_slugs:
                 return word
@@ -369,14 +424,16 @@ def inject_encyclopedia_links(content, ch):
     return _VERSE_ENG_BLOCK.sub(verse_block, content)
 
 
-def inject_xrefs(content, ch):
-    """Append ⤷ cross-reference chips inside each verse block this chapter owns."""
-    by_verse = defaultdict(list)
-    for (a, av), (b, bv), why in XREFS:
-        if a == ch:
-            by_verse[av].append(((b, bv), why))
-        if b == ch:
-            by_verse[bv].append(((a, av), why))
+def inject_xrefs(content, book, ch):
+    """Append ⤷ cross-reference chips inside each verse block this (book, ch) owns.
+    Same-book targets show a bare `12:2` chip (unchanged from the Genesis-only era);
+    cross-book targets show a `Gen 1:1` / `John 1:1` chip so the link is unambiguous."""
+    by_verse = defaultdict(list)   # verse in THIS chapter -> [((tbook, tch, tv), why), ...]
+    for (ab, ac, av), (bb, bc, bv), why in XREFS_N:
+        if ab == book and ac == ch:
+            by_verse[av].append(((bb, bc, bv), why))
+        if bb == book and bc == ch:
+            by_verse[bv].append(((ab, ac, av), why))
     for v, links in sorted(by_verse.items()):
         anchor = verse_anchor(ch, v)
         marker = f'id="{anchor}"'
@@ -387,10 +444,11 @@ def inject_xrefs(content, ch):
         j = content.find("</div></div>", i)
         if j < 0:
             continue
-        chips = "".join(
-            f'<a class="xref" href="{verse_url(bc, bv)}" title="{html.escape(why, quote=True)}">'
-            f'⤷ {bc}:{bv}</a>'
-            for (bc, bv), why in links)
+        chips = ""
+        for (tb, tc, tv), why in links:
+            lbl = f"{tc}:{tv}" if tb == book else f"{book_abbr(tb)} {tc}:{tv}"
+            chips += (f'<a class="xref" href="{verse_url(tb, tc, tv)}" '
+                      f'title="{html.escape(why, quote=True)}">⤷ {lbl}</a>')
         block = f'<div class="xrefs"><span class="xr-label">cross-refs</span>{chips}</div>'
         content = content[:j] + block + content[j:]
     return content
@@ -419,9 +477,9 @@ came come go went said says do did done had has have how than too these those up
 
 
 def extract_verses_english(chapters):
-    """Return [(ch, v, plain_english_text), ...] for every verse in every chapter."""
+    """Return [(book, ch, v, plain_english_text), ...] for every verse in every chapter."""
     rows = []
-    for slug, _, num, _ in CHAPTERS:
+    for slug, book, num, _ in CHAPTERS:
         content = chapters[slug]
         for m in re.finditer(
                 r'id="(v(?:\d+-)?\d+)".*?<div class="eng">(.*?)</div>', content, re.S):
@@ -431,21 +489,21 @@ def extract_verses_english(chapters):
             text = html.unescape(text)
             text = re.sub(r"\s*note\s*$", "", text.strip())
             text = re.sub(r"\s+", " ", text)
-            rows.append((num, vnum, text))
+            rows.append((book, num, vnum, text))
     return rows
 
 
 def build_concordance(chapters):
     rows = extract_verses_english(chapters)
-    index = defaultdict(list)          # word -> [(ch, v), ...]
-    for ch, v, text in rows:
+    index = defaultdict(list)          # word -> [(book, ch, v), ...]
+    for book, ch, v, text in rows:
         seen = set()
         for raw in re.findall(r"[A-Za-z][A-Za-z'’\-]*", text):
             w = raw.lower().strip("'’-")
             if len(w) < 3 or w in _STOPWORDS or w in seen:
                 continue
             seen.add(w)
-            index[w].append((ch, v))
+            index[w].append((book, ch, v))
     words = sorted(index.keys())
     total_refs = sum(len(vs) for vs in index.values())
 
@@ -462,7 +520,7 @@ def build_concordance(chapters):
             cur = L
         refs = index[w]
         links = " ".join(
-            f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in refs)
+            f'<a href="{verse_url(b, c, v)}">{book_abbr(b)} {c}:{v}</a>' for b, c, v in refs)
         sections.append(
             f'<div class="cw"><span class="cw-w">{html.escape(w)}</span>'
             f'<span class="cw-n">×{len(refs)}</span>'
@@ -487,16 +545,19 @@ translation, it reflects this project's actual renderings: look up <em>vault</em
 def build_dictionary():
     entries = sorted(DICTIONARY, key=lambda e: e[1].lower())
     items = []
-    for slug, term, hebrew, translit, gloss, (ch, v) in entries:
+    for slug, term, orig, translit, gloss, ref in entries:
+        book, ch, v = _ref(ref)
+        script_cls = "dgreek" if _is_nt(book) else "dheb"   # Greek renders LTR, Hebrew RTL
         items.append(f"""<div class="dentry" id="{slug}">
   <div class="dhead"><span class="dterm">{html.escape(term)}</span>
-    <span class="dheb">{hebrew}</span> <span class="dtr">{html.escape(translit)}</span></div>
-  <p>{gloss} <a class="dref" href="{verse_url(ch, v)}">→ first discussed at {ch}:{v}</a></p>
+    <span class="{script_cls}">{orig}</span> <span class="dtr">{html.escape(translit)}</span></div>
+  <p>{gloss} <a class="dref" href="{verse_url(book, ch, v)}">→ first discussed at {book_abbr(book)} {ch}:{v}</a></p>
 </div>""")
     body = f"""<h1 class="pagetitle">📖 Dictionary</h1>
-<p class="lede">The Hebrew words this translation has met so far — <strong>{len(entries)} terms</strong>,
-each added the chapter its translator's note first discussed it, with a link back to that discussion.
-This is a reader's glossary of the actual working vocabulary, not an abridged lexicon.</p>
+<p class="lede">The original-language words this translation has met so far — Hebrew for the Tanakh, Greek for
+the New Testament — <strong>{len(entries)} terms</strong>, each added the chapter its translator's note first
+discussed it, with a link back to that discussion. This is a reader's glossary of the actual working
+vocabulary, not an abridged lexicon.</p>
 <div class="panel dict">
 {''.join(items)}
 </div>"""
@@ -514,7 +575,7 @@ def build_encyclopedia():
     def render(entries):
         out = []
         for e in sorted(entries, key=lambda x: x["name"].lower()):
-            refs = " ".join(f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in e["refs"])
+            refs = " ".join(f'<a href="{verse_url(b, c, v)}">{book_abbr(b)} {c}:{v}</a>' for b, c, v in e["refs"])
             if e.get("videos"):
                 vids = "".join(youtube_embed(u, t) for t, u in e["videos"])
             else:
@@ -576,20 +637,21 @@ def build_atlas():
     places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
     n_mapped = sum(1 for e in places if e.get("coords"))
 
-    by_chapter = defaultdict(dict)  # chapter num -> {slug: first_verse}
+    by_chapter = defaultdict(dict)  # (book, chapter num) -> {slug: first_verse}
     for e in places:
-        for c, v in e["refs"]:
-            if e["slug"] not in by_chapter[c] or v < by_chapter[c][e["slug"]]:
-                by_chapter[c][e["slug"]] = v
+        for b, c, v in e["refs"]:
+            key = (b, c)
+            if e["slug"] not in by_chapter[key] or v < by_chapter[key][e["slug"]]:
+                by_chapter[key][e["slug"]] = v
 
     sections = []
     for slug, book, num, teaser in CHAPTERS:
-        entries = sorted(by_chapter.get(num, {}).items(), key=lambda kv: kv[1])
+        entries = sorted(by_chapter.get((book, num), {}).items(), key=lambda kv: kv[1])
         if entries:
             place_html = []
             for pslug, _first_v in entries:
                 e = _SLUG_TO_ENTRY[pslug]
-                refs = " ".join(f'<a href="{verse_url(c, v)}">{c}:{v}</a>' for c, v in e["refs"])
+                refs = " ".join(f'<a href="{verse_url(b, c, v)}">{book_abbr(b)} {c}:{v}</a>' for b, c, v in e["refs"])
                 if e.get("coords"):
                     lat, lon, span = e["coords"]
                     badge = ' <span class="atlas-approx">approximate</span>' if e.get("approx") else ""
@@ -613,8 +675,8 @@ def build_atlas():
             body_html = "".join(place_html)
         else:
             body_html = '<div class="atlas-empty">No places are named in this chapter yet — nothing to map.</div>'
-        sections.append(f"""<div class="atlas-chapter" id="genesis-{num}">
-  <div class="atlas-chhead"><a href="genesis-{num}.html">{book} {num}</a>
+        sections.append(f"""<div class="atlas-chapter" id="{book_slug(book)}-{num}">
+  <div class="atlas-chhead"><a href="{chapter_filename(book, num)}">{book} {num}</a>
     <span class="atlas-chteaser">{html.escape(teaser)}</span></div>
   {body_html}
 </div>""")
@@ -692,56 +754,64 @@ chapter is translated, so the library is always exactly as deep as the translati
     open(os.path.join(OUT, "library.html"), "w", encoding="utf-8").write(out)
 
 
-def nav_strip(idx, position):
+def nav_strip(book, num, position):
+    """Book-scoped prev/next: chain within the SAME book. At a book's first
+    published chapter, an NT book links back to the New Testament intro; at its
+    last published chapter, show the next chapter of that book as coming-soon."""
+    same = sorted(n for (_s, b, n, _t) in CHAPTERS if b == book)
+    i = same.index(num)
     prev_html = ""
-    if idx > 0:
-        pslug, pbook, pnum, _ = CHAPTERS[idx - 1]
-        prev_html = f'<a href="genesis-{pnum}.html">◄ {pbook} {pnum}</a>'
-    if idx < len(CHAPTERS) - 1:
-        nslug, nbook, nnum, _ = CHAPTERS[idx + 1]
-        next_html = f'<a href="genesis-{nnum}.html">{nbook} {nnum} ►</a>'
+    if i > 0:
+        prev_html = f'<a href="{chapter_filename(book, same[i - 1])}">◄ {book} {same[i - 1]}</a>'
+    elif _is_nt(book):
+        prev_html = '<a href="new-testament.html">◄ New Testament</a>'
+    if i < len(same) - 1:
+        next_html = f'<a href="{chapter_filename(book, same[i + 1])}">{book} {same[i + 1]} ►</a>'
+    elif num < BOOK_TOTAL.get(book, num):
+        next_html = f'<span class="dis">{book} {num + 1} (coming soon)</span>'
     else:
-        next_html = f'<span class="dis">{NEXT_UP} (coming soon)</span>'
+        next_html = ""
     return (f'<div class="chnav {position}"><div class="side left">{prev_html}</div>'
             f'<div class="mid"><a href="toc.html">\U0001F4DC Table of Contents</a></div>'
             f'<div class="side right">{next_html}</div></div>')
 
 
 def build_chapter_pages(chapters):
-    for idx, (slug, book, num, teaser) in enumerate(CHAPTERS):
+    for slug, book, num, teaser in CHAPTERS:
         content = clean_chapter(chapters[slug])
-        content = inject_encyclopedia_links(content, num)
-        content = inject_xrefs(content, num)
+        content = inject_encyclopedia_links(content, book, num)
+        content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
-        # A pre-generated narration MP3 (audio/genesis-N.mp3) is preferred when
+        orig_lang = "Greek" if _is_nt(book) else "Hebrew"   # the Hide-original toggle label
+        # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
         # browser. gen_audio.py produces those files.
-        mp3_rel = f"audio/genesis-{num}.mp3"
+        mp3_rel = f"audio/{book_slug(book)}-{num}.mp3"
         audio_attr = f' data-audio="{mp3_rel}"' if os.path.exists(os.path.join(OUT, mp3_rel)) else ""
         toggle = (f'<div class="togglebar">'
                   f'<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
                   f'<div class="tgl-group">'
                   f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
-                  f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide Hebrew</button>'
-                  f'<a class="tgl" href="atlas.html#genesis-{num}">🗺️ Atlas</a>'
+                  f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide {orig_lang}</button>'
+                  f'<a class="tgl" href="atlas.html#{book_slug(book)}-{num}">🗺️ Atlas</a>'
                   f'</div>'
                   f'</div>')
-        body = f"""{nav_strip(idx, 'top')}
+        body = f"""{nav_strip(book, num, 'top')}
 {toggle}
 <article class="chapter">
 {content}
 </article>
-{nav_strip(idx, 'bottom')}
+{nav_strip(book, num, 'bottom')}
 <script>
 function toggleHeb(){{
   var hidden = document.body.classList.toggle("hide-heb");
-  document.getElementById("hebtgl").textContent = hidden ? "Show Hebrew" : "Hide Hebrew";
+  document.getElementById("hebtgl").textContent = hidden ? "Show {orig_lang}" : "Hide {orig_lang}";
   try{{ localStorage.setItem("mtlib_hideheb", hidden ? "1" : "0"); }}catch(e){{}}
 }}
 (function(){{ try{{
   if (localStorage.getItem("mtlib_hideheb") === "1"){{
     document.body.classList.add("hide-heb");
-    document.getElementById("hebtgl").textContent = "Show Hebrew";
+    document.getElementById("hebtgl").textContent = "Show {orig_lang}";
   }}
 }}catch(e){{}} }})();
 (function(){{
@@ -759,34 +829,51 @@ function toggleHeb(){{
   render();
 }})();
 </script>"""
-        desc = (f"{book} {num} translated fresh from the Hebrew (Masoretic Text), with verse-by-verse "
+        src = "the Greek (the critical Greek New Testament)" if _is_nt(book) else "the Hebrew (Masoretic Text)"
+        desc = (f"{book} {num} translated fresh from {src}, with verse-by-verse "
                 f"notes comparing NIV, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and "
                 f"NWT. {teaser}")
         out = page(f"{book} {num} — {SITE_NAME}", body, desc=desc)
-        open(os.path.join(OUT, f"genesis-{num}.html"), "w", encoding="utf-8").write(out)
+        open(os.path.join(OUT, chapter_filename(book, num)), "w", encoding="utf-8").write(out)
 
 
 def build_toc():
     done = len(CHAPTERS)
     pct = round(done / TOTAL_BIBLE_CHAPTERS * 1000) / 10
-    gen_total = 50
-    chips = []
-    done_nums = {num for _, _, num, _ in CHAPTERS}
-    for i in range(1, gen_total + 1):
-        if i in done_nums:
-            chips.append(f'<a class="chch chch-done" href="genesis-{i}.html">{i}</a>')
-        else:
-            chips.append(f'<span class="chch">{i}</span>')
-    def book_chip(name, n, active=False):
-        if active:
-            return f'<span class="book book-active">{name} <b>{done}/{n}</b></span>'
+
+    pub = defaultdict(set)          # book -> {published chapter numbers}
+    book_seen = []                  # books with published chapters, first-seen order
+    for _s, book, num, _t in CHAPTERS:
+        if book not in pub:
+            book_seen.append(book)
+        pub[book].add(num)
+
+    def book_chip(name, n):
+        if name in pub:
+            return f'<span class="book book-active">{name} <b>{len(pub[name])}/{n}</b></span>'
         return f'<span class="book">{name} <i>{n}</i></span>'
-    ot = "".join(book_chip(n, c, n == "Genesis") for n, c in BOOKS_OT)
+    ot = "".join(book_chip(n, c) for n, c in BOOKS_OT)
     nt = "".join(book_chip(n, c) for n, c in BOOKS_NT)
     rows = "".join(
-        f'<a class="chrow" href="genesis-{num}.html"><span class="chrow-n">{book} {num}</span>'
+        f'<a class="chrow" href="{chapter_filename(book, num)}"><span class="chrow-n">{book} {num}</span>'
         f'<span class="chrow-t">{teaser}</span></a>'
         for _, book, num, teaser in CHAPTERS)
+
+    # a "Now Reading" chip grid for each in-progress book
+    now_reading = []
+    for book in book_seen:
+        total = BOOK_TOTAL.get(book, max(pub[book]))
+        chips = "".join(
+            (f'<a class="chch chch-done" href="{chapter_filename(book, i)}">{i}</a>'
+             if i in pub[book] else f'<span class="chch">{i}</span>')
+            for i in range(1, total + 1))
+        now_reading.append(f'''<h2>Now Reading — {book}</h2>
+<div class="panel">
+  <div class="now-reading"><span class="nr-badge">In Progress</span>
+  <span class="nr-book">{book} · {len(pub[book])} of {total} chapters</span></div>
+  <div class="chgrid">{chips}</div>
+</div>''')
+    now_reading_html = "\n".join(now_reading)
     body = f"""<h1 class="pagetitle">\U0001F4DC Table of Contents</h1>
 <p class="lede">Every chapter of the translation, tracked as it's finished. Gold numbers are published
 and link to their chapter; everything else is still ahead.</p>
@@ -805,12 +892,7 @@ and link to their chapter; everything else is still ahead.</p>
 {rows}
 </div>
 
-<h2>Now Reading — Genesis</h2>
-<div class="panel">
-  <div class="now-reading"><span class="nr-badge">In Progress</span>
-  <span class="nr-book">Genesis · {done} of {gen_total} chapters</span></div>
-  <div class="chgrid">{''.join(chips)}</div>
-</div>
+{now_reading_html}
 
 <h2>All 66 Books</h2>
 <div class="panel">
@@ -831,20 +913,21 @@ def votd_entries(chapters):
     translation text (never hand-typed) so it can never drift from the chapter
     page. A candidate referencing a not-yet-published verse is silently
     skipped, so this list is safe to grow ahead of the translation."""
-    text_by_ref = {(c, v): t for c, v, t in extract_verses_english(chapters)}
+    text_by_ref = {(b, c, v): t for b, c, v, t in extract_verses_english(chapters)}
     entries = []
-    for ch, v, blurb in VERSE_OF_DAY:
-        text = text_by_ref.get((ch, v))
+    for e in VERSE_OF_DAY:
+        book, ch, v, blurb = e if len(e) == 4 else ("Genesis", e[0], e[1], e[2])
+        text = text_by_ref.get((book, ch, v))
         if not text:
             continue
-        entries.append({"ref": f"Genesis {ch}:{v}", "text": text, "blurb": blurb,
-                         "href": verse_url(ch, v)})
+        entries.append({"ref": f"{book} {ch}:{v}", "text": text, "blurb": blurb,
+                         "href": verse_url(book, ch, v)})
     return entries
 
 
 def build_reading():
     rows = "".join(
-        f'<label class="rrow" data-slug="{slug}" data-href="genesis-{num}.html">'
+        f'<label class="rrow" data-slug="{slug}" data-href="{chapter_filename(book, num)}">'
         f'<input type="checkbox" class="rchk"/>'
         f'<span class="rrow-n">{book} {num}</span>'
         f'<span class="rrow-t">{teaser}</span></label>'
@@ -930,12 +1013,12 @@ check a chapter off directly from its own page, next to the Hide Hebrew toggle.)
 def build_index(chapters):
     latest = CHAPTERS[-1]
     cards = "".join(
-        f'<a class="card" href="genesis-{num}.html"><div class="card-t">{book} {num}</div>'
+        f'<a class="card" href="{chapter_filename(book, num)}"><div class="card-t">{book} {num}</div>'
         f'<div class="card-d">{teaser}</div></a>'
         for _, book, num, teaser in reversed(CHAPTERS))
     votd_json = json.dumps(votd_entries(chapters), ensure_ascii=False).replace("</", "<\\/")
     ch_json = json.dumps(
-        [{"slug": slug, "label": f"{book} {num}", "href": f"genesis-{num}.html"}
+        [{"slug": slug, "label": f"{book} {num}", "href": chapter_filename(book, num)}
          for slug, book, num, _ in CHAPTERS])
     body = f"""<section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
@@ -951,7 +1034,7 @@ def build_index(chapters):
   chapter.</p>
   <div class="hero-cta">
     <a class="btn" href="genesis-1.html">Start at Genesis 1</a>
-    <a class="btn btn-2" href="genesis-{latest[2]}.html">Newest: {latest[1]} {latest[2]}</a>
+    <a class="btn btn-2" href="{chapter_filename(latest[1], latest[2])}">Newest: {latest[1]} {latest[2]}</a>
   </div>
 </section>
 
@@ -1208,9 +1291,11 @@ roughly 5,800 Greek manuscripts is actually weighed, and what carries over from 
 
 <div class="panel">
   <p style="margin:0 0 6px"><strong>The Greek Scriptures begin with the Gospel of John.</strong></p>
-  <p class="muted" style="margin:0">Its first chapter — the Prologue, John the Baptist's testimony, and the
-  calling of the first disciples — is in preparation now, and will be the first chapter to arrive with the
-  full apparatus above behind it. Watch the <a href="toc.html">Table of Contents</a>.</p>
+  <p class="muted" style="margin:0 0 12px">Its first chapter — the Prologue, John the Baptist's testimony, and
+  the calling of the first disciples — is now live, the first to arrive with the full apparatus above behind it:
+  from the Prologue's "was God / a god" to the manuscript decision at John 1:18, where the earliest papyri decide
+  the reading.</p>
+  <a class="btn" href="john-1.html">Read John 1 →</a>
 </div>"""
     out = page(f"The New Testament — {SITE_NAME}", body, active="nt",
                desc="Introducing the New Testament (the Greek Scriptures) in The MisterLibrarian Bible "

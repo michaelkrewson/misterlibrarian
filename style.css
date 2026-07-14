@@ -367,6 +367,14 @@ body.hide-heb .xrefs{margin-top:5px}
 /* New Testament heading page: Greek text, prose sub-headings + lists */
 .greek{font-family:"SBL Greek","GFS Neohellenic",Gentium,Georgia,"Times New Roman",serif;
   color:#f3ecd8;font-size:1.06em;letter-spacing:0.01em;white-space:nowrap}
+.dgreek{font-family:"SBL Greek","GFS Neohellenic",Gentium,Georgia,"Times New Roman",serif;
+  font-size:16px;color:#f3ecd8;direction:ltr;unicode-bidi:isolate}
+/* Greek source text on NT chapter pages (LTR twin of .heb) + the same Hide toggle */
+.grk{direction:ltr;text-align:left;font-family:"SBL Greek","GFS Neohellenic",Gentium,Georgia,"Times New Roman",serif;
+  font-size:20px;line-height:1.95;color:#f3ecd8;margin-bottom:8px}
+body.hide-heb .grk{display:none}
+.nhead .grkph{font-family:"SBL Greek","GFS Neohellenic",Gentium,Georgia,"Times New Roman",serif;
+  font-size:16px;color:#f3ecd8;margin:0 6px;direction:ltr;unicode-bidi:isolate}
 .prose h3{font-size:12px;font-weight:800;color:var(--gold);letter-spacing:0.04em;
   text-transform:uppercase;margin:18px 0 6px}
 .prose ul{margin:2px 0 14px;padding-left:20px}
