@@ -380,6 +380,9 @@ body.hide-heb .grk{display:none}
 .prose ul{margin:2px 0 14px;padding-left:20px}
 .prose li{font-size:13.5px;line-height:1.72;color:var(--text);margin:0 0 9px}
 .prose li strong{color:#fff}
+.askbar{margin:0 0 6px;font-size:12px}
+.askbar a{color:var(--muted);font-weight:700}
+.askbar a:hover{color:var(--gold)}
 
 /* NT intro: two-column with a framed manuscript figure upper-right */
 .nt-intro{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:26px;

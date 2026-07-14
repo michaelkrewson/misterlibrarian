@@ -176,7 +176,7 @@ def header(active=""):
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
     <a href="reading.html"{cls('reading')}>📗 My Reading</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
-    <a href="ask-enoch.html"{cls('ask')}>Ask Mr. Librarian</a>
+    <a href="ask.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
     <a href="about.html"{cls('about')}>About</a>
   </nav>
@@ -1059,8 +1059,8 @@ def build_index(chapters):
   <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
   <a class="card" href="reading.html"><div class="card-t">\U0001F4D7 My Reading</div>
   <div class="card-d">Track your own progress through the translation, chapter by chapter — kept privately in your browser.</div></a>
-  <a class="card" href="ask-enoch.html"><div class="card-t">\U0001F4D6 Ask Mr. Librarian</div>
-  <div class="card-d">Why isn't the Book of Enoch in this translation? A reader asked; here's the answer.</div></a>
+  <a class="card" href="ask.html"><div class="card-t">\U0001F4D6 Ask Mr. Librarian</div>
+  <div class="card-d">Reader questions answered — was the Word "God" or "a god" (John 1:1 and the deity of Christ), and why the Book of Enoch isn't included.</div></a>
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
 </div>
@@ -1306,8 +1306,8 @@ roughly 5,800 Greek manuscripts is actually weighed, and what carries over from 
 
 
 def build_ask_enoch():
-    body = """<h1 class="pagetitle">\U0001F4D6 Ask Mr. Librarian</h1>
-<h2 style="margin-top:4px">Why isn't the Book of Enoch in this translation?</h2>
+    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+<h1 class="pagetitle">Why isn't the Book of Enoch in this translation?</h1>
 
 <div class="qbox">
   <div class="qlabel">A reader asked</div>
@@ -1356,6 +1356,292 @@ def build_ask_enoch():
                desc="Why the Book of Enoch isn't part of this Bible translation: the Masoretic source "
                     "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.")
     open(os.path.join(OUT, "ask-enoch.html"), "w", encoding="utf-8").write(out)
+
+
+def build_ask_index():
+    body = """<h1 class="pagetitle">\U0001F4D6 Ask Mr. Librarian</h1>
+<p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
+between versions — answered one at a time, in the librarian's way: sourced, compared, and left for you to
+weigh rather than settled from the desk. Have one of your own? The <a href="contact.html">question box</a> is
+exactly how this series grows.</p>
+<div class="cardgrid">
+  <a class="card" href="ask-jesus-god.html"><div class="card-t">Was the Word "God," or "a god"?</div>
+  <div class="card-d">John 1:1 and the deity of Christ — the Greek of the missing article, "firstborn of all
+  creation," the Angel of the LORD, and the whole argument laid out on both sides.</div></a>
+  <a class="card" href="ask-enoch.html"><div class="card-t">Why isn't the Book of Enoch in this translation?</div>
+  <div class="card-d">The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea
+  Scrolls.</div></a>
+</div>"""
+    out = page(f"Ask Mr. Librarian — {SITE_NAME}", body, active="ask",
+               desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
+                    "compared, and left for you to weigh.")
+    open(os.path.join(OUT, "ask.html"), "w", encoding="utf-8").write(out)
+
+
+def build_ask_jesus_god():
+    """The exhaustive, balanced Ask Mr. Librarian post on John 1:1 and the deity of
+    Christ. Presents BOTH the subordinationist/unitarian case and the full-deity case
+    at full strength and declines to hand down a verdict — the project's 'catalogue,
+    source, compare, don't preach' ethos. Edit this function to revise the post."""
+    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+<h1 class="pagetitle">Was the Word "God," or "a god"?</h1>
+<h2 style="margin-top:2px">John 1:1 and the deity of Christ</h2>
+
+<div class="qbox">
+  <div class="qlabel">A reader asked</div>
+  <p>"John 1:1 is usually translated 'the Word was God,' but the New World Translation reads 'the Word was a
+  god.' Which is right — and behind it, the bigger question: is Jesus God, a lesser divine being, or the
+  highest of created beings? Can you lay out the whole argument, from the Greek and from the rest of the Bible,
+  on both sides?"</p>
+</div>
+
+<div class="panel prose">
+  <p><strong>A word before we begin.</strong> This is the single most-argued sentence in the Bible, and people
+  who love the text, read the Greek, and mean every syllable of it have divided over it for seventeen centuries.
+  A librarian's task here is not to hand down a verdict but to lay the evidence out fully and fairly — the
+  grammar, the immediate context, and the witness of the rest of Scripture — and let you weigh it. So this post
+  builds <em>both</em> cases at full strength and marks honestly where each one pays a price. (Our own
+  translation had to choose a rendering for the verse itself; it takes the <em>qualitative</em> road — "and the
+  Word was <a href="john-1.html#v1">divine</a>" — for reasons the John 1 note explains, but that is a rendering,
+  not a ruling. The argument below is yours to finish.)</p>
+</div>
+
+<h2>The sentence that won't sit still</h2>
+<div class="panel prose">
+  <p>The Greek is <span class="greek">Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος</span>
+  — three clauses. <strong>(1)</strong> "In the beginning was the Word": already existing when time began.
+  <strong>(2)</strong> "and the Word was <em>with</em> God" (<em>pros ton theon</em>): face-to-face, in
+  relationship — so the Word is not simply the same as the one he is "with." <strong>(3)</strong> "and the Word
+  was <em>theos</em>." The whole fight is that third clause — and, standing behind it, whether the one it names
+  is the eternal God, a distinct-but-lesser deity, or the first and highest thing God ever made.</p>
+</div>
+
+<h2>The grammar: the missing article</h2>
+<div class="panel prose">
+  <p><strong>Koine Greek has no word for "a."</strong> It has only the definite article ("the"). So every "a" or
+  "an" in an English New Testament is <em>supplied</em> by the translator — it is never literally in the Greek.
+  "There came <em>a</em> man" (John 1:6) has no "a" in Greek. That happens thousands of times, and it is the root
+  of the whole dispute: in the clause "the Word was <em>theos</em>," <em>theos</em> ("God/god") has no article,
+  and the translator must decide whether to leave it bare, add "the," or add "a."</p>
+  <p><strong>The exact construction here</strong> — an article-less predicate noun standing <em>before</em> the
+  verb — turns up all over the New Testament, and translators render it three different ways depending on the
+  word and the context:</p>
+  <ul class="prose-list">
+    <li><strong>Indefinite ("a ___"):</strong> "this man is <em>a murderer</em>" (Acts 28:4 — the closest
+    structural twin to John 1:1); "he was <em>a murderer</em> from the beginning" (John 8:44); "you are <em>a
+    prophet</em>" (John 4:19). And, tellingly, the very same word: the Maltese "said he was <em>a god</em>" of
+    Paul (Acts 28:6). So <em>theos</em> without the article <em>can</em> be "a god" — that part of the New World
+    Translation's case is not baseless.</li>
+    <li><strong>Qualitative (the <em>nature</em>, no "a," where "a" would be wrong):</strong> "God is
+    <em>spirit</em>" (John 4:24 — same construction, and no one writes "God is a spirit"); "God is <em>love</em>"
+    (1 John 4:8 — never "a love"); the Word became "<em>flesh</em>" (John 1:14).</li>
+    <li><strong>Definite ("the ___"):</strong> a smaller set, where context makes the bare noun definite.</li>
+  </ul>
+  <p>So the construction <em>by itself</em> settles nothing — the same grammar yields "a murderer," "a god,"
+  "God is spirit," and "God is love." What decides is the meaning of the noun and the context. The two studies
+  everyone cites: <strong>Colwell (1933)</strong> observed that a <em>definite</em> predicate noun before the
+  verb usually drops its article — but that only describes nouns already known to be definite; it cannot tell you
+  whether a bare noun is definite, indefinite, or qualitative (reading it the other way round is a logical
+  error). <strong>Harner (1973)</strong> studied this precise construction and concluded it is usually
+  <em>qualitative</em> — and that John 1:1c is <em>neither</em> "the Word was God" <em>nor</em> "a god," but "the
+  Word had the same nature as God." That qualitative reading is the mainstream of Greek scholarship.</p>
+  <p><strong>The honest summary of the grammar:</strong> "a god" is grammatically <em>possible</em> (Acts 28:6
+  proves it) but grammatically <em>disfavored</em> — the construction leans qualitative, toward <em>nature</em>,
+  not toward "one of a class." And there is a semantic snag on top: "prophet," "murderer," "king" are classes you
+  can be one <em>of</em>; but in the Bible's strict monotheism there is no class of "gods" to be one of ("besides
+  me there is no god," Isaiah 44:6), which is what makes "a god" sit awkwardly where "a prophet" does not.</p>
+</div>
+
+<h2>The three readings, and one piece of plain logic</h2>
+<div class="panel prose">
+  <p>Three renderings, three theologies:</p>
+  <ul class="prose-list">
+    <li><strong>"the Word was God"</strong> (definite) — if read as "the Word <em>is</em> the person God," it
+    collapses the Word into the Father. But the clause just said the Word was <em>with</em> God, and later Jesus
+    <em>prays</em> to the Father — you cannot be <em>with</em> someone and <em>be</em> that same someone. So this
+    reading, taken flatly, is ruled out by the verse itself. (It is the ancient error called <em>modalism</em>.)</li>
+    <li><strong>"the Word was a god"</strong> (indefinite) — a distinct, <em>lesser</em> deity. Solves the
+    with/be problem, but at the price the grammar disfavors and monotheism resists.</li>
+    <li><strong>"the Word was divine / fully God"</strong> (qualitative) — the Word shares the one God's nature
+    while remaining a distinct person from the Father. Answers the with/be logic (distinct persons, one nature)
+    and matches the grammar's qualitative lean.</li>
+  </ul>
+  <p>Notice what the reader's own instinct — "you can't be with someone and be someone at the same time" —
+  actually proves: it kills the flat, identifying reading, and leaves <em>either</em> the indefinite <em>or</em>
+  the qualitative standing. Which of those two wins is decided not by the one verse but by what the rest of
+  Scripture says the Word <em>is</em>. So — the two cases.</p>
+</div>
+
+<h2>The case that the Word is distinct, and subordinate</h2>
+<div class="panel prose">
+  <p>This is the reading Arius argued in the fourth century and the Jehovah's Witnesses hold today: the Son is
+  genuinely <em>other</em> than the Father, ranked <em>under</em> him, and — in its stronger form — the first and
+  highest of God's creatures rather than the uncreated God. Its evidence is real and considerable:</p>
+  <p><strong>The distinction is written in.</strong> "The Word was <em>with</em> God." The Son is never the
+  Father, and the Gospel never blurs them.</p>
+  <p><strong>The Son defers to the Father, everywhere.</strong> "The Father is <em>greater</em> than I" (John
+  14:28); "the Son can do nothing of his own accord" (5:19); "I came not to do my own will but the will of him
+  who sent me" (6:38); "that they may know <em>you, the only true God</em>, and Jesus Christ whom you sent"
+  (17:3); "I am ascending to <em>my God</em> and your God" (20:17); of the last day, "nor the Son, but only the
+  Father" (Mark 13:32).</p>
+  <p><strong>He prays.</strong> "Our Father who art in heaven" — spoken by a man on earth, to the Father in
+  heaven. He cannot be praying to himself. Whoever the Word is, he is not the one he addresses.</p>
+  <p><strong>"The firstborn of all creation" (Colossians 1:15),</strong> "the beginning of the creation of God"
+  (Revelation 3:14), and Wisdom, whom "the LORD created at the beginning of his work" (Proverbs 8:22, in the
+  Greek Old Testament). On this reading the Son <em>had a beginning</em> — and the model is elegant: the Father,
+  the unmade Architect, brings forth one first and supreme being, the Word, and then makes everything else
+  <em>through</em> him, the master builder. "All things came to be through him" is satisfied without making the
+  builder himself unmade.</p>
+  <p><strong>The Angel of the LORD.</strong> "I send an angel before you... obey his voice... <em>for my name is
+  in him</em>" (Exodus 23:20–21). Throughout the Old Testament a figure called the Angel of the LORD appears,
+  speaks as God, bears the divine Name, and leads Israel out of Egypt (Exodus 14:19). Read this way, the "God" who
+  <em>appears and speaks</em> in the Old Testament is the Word — Yahweh's spokesman and agent — while the supreme,
+  invisible God is the Father ("no one has ever seen God," John 1:18; "his voice you have never heard, his form
+  you have never seen," 5:37). And the pre-human Word, on this reading, is <em>Michael the archangel</em> — the
+  Lord descends "with the voice of an archangel" (1 Thessalonians 4:16); Michael leads the armies of heaven
+  (Revelation 12:7; Daniel 12:1).</p>
+  <p><strong>And monotheism itself.</strong> There is one God, the Father; to call the Word "God" flatly seems to
+  make two. Better, then, "a god," "a mighty one," "divine" — a real but subordinate glory, under the one God.</p>
+  <p>It is a coherent, textually-anchored system, sincerely held. It is not a straw man, and it was very nearly
+  the church's settled view.</p>
+</div>
+
+<h2>The case that the Word is fully God — one nature, distinct person</h2>
+<div class="panel prose">
+  <p>This reading agrees with every "distinct" and "submits" verse above — and says they describe the Son's
+  <em>person</em> and his <em>mission</em>, not a lesser <em>nature</em>. Its evidence is a second stack the
+  created-Son reading has to account for:</p>
+  <p><strong>He made everything that was made (John 1:3; Colossians 1:16).</strong> "Not one thing came to be that
+  has come to be" apart from him. If he made <em>all</em> created things, he is not among them — he is on the
+  Creator's side of the line. (Tellingly, the New World Translation has to insert "<strong>[other]</strong>" four
+  times in Colossians 1 — "all <em>[other]</em> things" — to keep the Son a creature; that bracketed word is not
+  in the Greek, and it is doing all the work.)</p>
+  <p><strong>"Firstborn" means rank, not birth-order.</strong> God calls David — Jesse's <em>youngest</em> son —
+  "my <em>firstborn</em>, the highest of the kings of the earth" (Psalm 89:27), and glosses it for us: highest.
+  Israel and Ephraim are each God's "firstborn" though neither was first. And Paul explains <em>why</em> he calls
+  the Son firstborn — "<strong>for</strong> in him all things were created... and he is <em>before</em> all
+  things" (Colossians 1:16–17): the title is grounded in his being Creator and sustainer, not the first creature.
+  Greek even had a word for "first-created" (<em>prōtoktistos</em>); Paul pointedly did not use it.</p>
+  <p><strong>God says he created alone.</strong> "I am the LORD, who made all things, who stretched out the heavens
+  <em>alone</em>, who spread out the earth <em>by myself</em>" (Isaiah 44:24). A general-contractor creature doing
+  the building makes that false — unless the "through whom" belongs to the one Creator's own act.</p>
+  <p><strong>Hebrews 1 all but forbids reading the Son as an angel.</strong> "To which of the <em>angels</em> did
+  God ever say, 'You are my Son'?" (1:5) — none. "Let all God's angels <em>worship him</em>" (1:6). "Of the Son he
+  says, 'Your throne, <em>O God</em>, is forever'" (1:8). And to the Son: "<em>You, Lord, laid the foundation of
+  the earth</em>" (1:10 — a psalm to the eternal, unchanging YHWH, put in the Father's mouth <em>to</em> the Son).</p>
+  <p><strong>The worship line.</strong> Created angels <em>refuse</em> worship: "You must not do that! I am a
+  fellow servant... <em>worship God!</em>" (Revelation 22:8–9). The Son <em>receives</em> it, and angels are
+  commanded to give it (Hebrews 1:6; and Thomas: "<em>my Lord and my God!</em>," John 20:28). Worship is the one
+  thing that cannot be delegated — which is why it divides the Son from every creature.</p>
+  <p><strong>YHWH's own signature, on Jesus.</strong> "I am <em>the first and the last</em>," says the one "who
+  died, and is alive forevermore" (Revelation 1:17–18); "I am the Alpha and the Omega, the first and the last"
+  (22:13, where verse 16 says "I, Jesus"). And "the first and the last" is the title YHWH claims <em>exclusively</em>
+  — "besides me there is no god" (Isaiah 44:6). You cannot be "the first" and have had a beginning. So the same
+  book that some read as "the beginning of creation" (Rev 3:14) also calls Jesus the one before whom nothing was.</p>
+  <p><strong>He simply "was."</strong> John 1:1 says the Word "<em>was</em>" (continuous), never "came to be" —
+  the very verb used for created things through the rest of the Prologue. "Before Abraham was, <em>I am</em>"
+  (8:58). "The glory I had with you <em>before the world existed</em>" (17:5). "In him the whole <em>fullness of
+  deity</em> dwells bodily" (Colossians 2:9); "in the <em>form of God</em>" (Philippians 2:6); "<em>Mighty
+  God</em>" (Isaiah 9:6).</p>
+  <p><strong>And the submission is real — but it is the submission of the <em>incarnate</em> Son.</strong> He
+  "<em>emptied himself</em>, taking the form of a servant" (Philippians 2:6–7). "Greater" in "the Father is greater
+  than I" is <em>meizōn</em> — greater in <em>position</em> — not <em>kreittōn</em>, better in <em>nature</em>. A
+  son who obeys his father is no less human; and "Son" and "begotten" are same-nature words (a father begets a son
+  of his own kind), which is why the old line was "<strong>begotten, not made</strong>": the Son is not fashioned
+  like a tool but is of the Father's own being.</p>
+</div>
+
+<h2>The Angel of the LORD, and Michael the archangel</h2>
+<div class="panel prose">
+  <p>This deserves its own weighing, because half of it is strong on any reading. That the Old Testament's
+  <em>visible, speaking</em> God is the pre-incarnate Word — Yahweh's face and voice for the invisible Father —
+  is an <em>ancient</em> Christian reading (Justin, Irenaeus, Tertullian), and it has real support: "no one has
+  ever seen God" (John 1:18); the rock in the wilderness "<em>was Christ</em>" (1 Corinthians 10:4); and the
+  earliest manuscripts of Jude 5 read that "<em>Jesus</em>, who saved a people out of the land of Egypt," later
+  judged them. So the reader's instinct that the Word acted, appeared, and led in the Old Testament is not only
+  plausible — it is old and well-grounded.</p>
+  <p>What that instinct <em>produces</em>, though, cuts toward deity: if the "God" at the burning bush is the
+  Word, then the one who said "<strong>I AM WHO I AM</strong>" (Exodus 3:14) is the Word — and when Jesus says
+  "before Abraham was, <em>I am</em>" (John 8:58), he is claiming to be that very "I AM." Identifying the
+  Old Testament God-figure with the Word makes him <em>greater</em>, not smaller.</p>
+  <p>Is that Word a <em>created</em> archangel? "Angel" (<em>malʾakh</em>, <em>angelos</em>) means
+  <strong>messenger — one sent</strong>; it names a job, not a nature. So the Word can be "the Messenger of the
+  LORD" while being divine. And three things resist the identification of the Son with the creature Michael:
+  the Angel of the LORD <em>receives worship</em>, speaks as God ("I am the God of Bethel," Genesis 31:13), and
+  bears the Name — where created angels refuse worship; <strong>Hebrews 1</strong> spends a chapter proving the
+  Son is <em>above</em> the angels, worshiped <em>by</em> them, and the Creator; <strong>Colossians 1:16</strong>
+  says the Son created the angelic ranks ("thrones, dominions, rulers, authorities") — so he made Michael; and
+  <strong>Jude 9</strong> has "the archangel Michael" not daring to rebuke Satan on his own authority — "<em>the
+  Lord rebuke you</em>" — while Jesus commands Satan and demons directly ("Be gone, Satan!"). Michael appeals to a
+  higher authority; Jesus <em>is</em> the one appealed to. (And "with the voice of an archangel," 1 Thessalonians
+  4:16, no more makes Jesus the archangel than "with a trumpet blast" makes a general the trumpeter.)</p>
+</div>
+
+<h2>Where the oldest manuscripts weigh in</h2>
+<div class="panel prose">
+  <p>Two nearby verses are decided by the same manuscript evidence set out in the
+  <a href="new-testament.html">New Testament introduction</a>. At <strong>John 1:18</strong> the earliest
+  witnesses — the papyri <strong>P66</strong> and <strong>P75</strong>, with Sinaiticus and Vaticanus — read
+  "the only <em>God</em>," while the later majority (and the King James tradition) read "the only <em>Son</em>."
+  At <strong>John 1:34</strong> the earliest text reads "the <em>Chosen One</em> of God," the majority "the
+  <em>Son</em> of God." The oldest copies, in other words, lean toward the higher Christology at 1:18 — but the
+  manuscripts alone do not end the argument, and honest editions print both.</p>
+</div>
+
+<h2>The three ways the church has read it</h2>
+<div class="panel prose">
+  <p>It helps to name the landscape, without endorsing a corner:</p>
+  <p><strong>Trinitarian</strong> (the Nicene mainstream): one God in three distinct persons — Father, Son,
+  Spirit — the Son "begotten, not made," of one nature with the Father. Reads 1:1 qualitatively or definitely.</p>
+  <p><strong>Unitarian / Arian / Jehovah's Witnesses:</strong> the Father alone is Almighty God; the Son is a
+  distinct, subordinate being — in the Witnesses' form, the first creation and the pre-human Michael, "a god" in
+  a real but lesser sense. Reads 1:1 "a god."</p>
+  <p><strong>Modalist</strong> (Sabellian): Father, Son, and Spirit are one person in three modes. Reads 1:1 as
+  a flat identity — and is the one option the verse's own "with God," plus the Lord's Prayer, most clearly rule
+  out.</p>
+</div>
+
+<h2>Why sincere readers land differently</h2>
+<div class="panel prose">
+  <p>Because each reading pays a real price somewhere, and honest people weigh the prices differently.</p>
+  <p><strong>The full-deity reading</strong> must take "firstborn" as rank rather than birth, lean hard on "the
+  first and the last" being said of Jesus, and confess that three persons in one being is beyond tidy
+  comprehension.</p>
+  <p><strong>The created-Son reading</strong> must insert "[other]" into Colossians, read "firstborn" against
+  Psalm 89's own definition, set aside Isaiah 44:24's "alone," and explain how a creature can be worshiped and
+  wear YHWH's exclusive title.</p>
+  <p><strong>The modalist reading</strong> must explain away the plain "with God" and a Son who prays to a Father
+  not himself.</p>
+  <p>Where you land depends on which verses you treat as the fixed points and which you treat as the ones needing
+  explaining — and that is a genuinely weighty judgment, not a mark of bad faith on any side.</p>
+</div>
+
+<h2>Where this translation stands — and doesn't</h2>
+<div class="panel prose">
+  <p>A translation cannot print three renderings in one line; it has to choose, and then let the note carry the
+  rest. This project renders 1:1 <strong>"and the Word was <a href="john-1.html#v1">divine</a>"</strong> — the
+  qualitative road — because it is the reading the grammar most supports, it keeps the distinction the verse
+  itself insists on ("<em>with</em> God"), and it avoids both the flat "was God" (which an English reader can hear
+  as "the Word is the Father") and "a god" (which the grammar least supports and monotheism resists). That is a
+  <em>translation choice</em>, argued in the open — not a verdict on the deep question of whether the Son is God
+  of very God, a lesser divine being, or the first of creatures. On <em>that</em>, the librarian sets the two
+  cases side by side, as above, and hands the scales to you.</p>
+  <p class="muted" style="margin-top:6px">Read the verse in place, with its note: <a href="john-1.html#v1">John
+  1:1</a>. The manuscripts behind 1:18 and 1:34: the <a href="new-testament.html">New Testament introduction</a>.
+  More questions become posts here — <a href="contact.html">send yours to the librarian's desk</a>.</p>
+</div>
+
+<div class="panel" style="margin-top:14px">
+  <p class="muted" style="margin:0 0 12px">More from <a href="ask.html">Ask Mr. Librarian</a>:
+  <a href="ask-enoch.html">Why isn't the Book of Enoch in this translation?</a></p>
+  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
+</div>"""
+    out = page(f"Ask Mr. Librarian: was the Word God, or a god? — {SITE_NAME}", body, active="ask",
+               desc="John 1:1 and the deity of Christ: the Greek grammar of the missing article (Colwell, "
+                    "Harner), the three readings, 'firstborn of all creation,' the Angel of the LORD and Michael "
+                    "the archangel, the earliest manuscripts, and the whole case on both sides — laid out, not "
+                    "settled.")
+    open(os.path.join(OUT, "ask-jesus-god.html"), "w", encoding="utf-8").write(out)
 
 
 def build_contact():
@@ -1419,6 +1705,8 @@ def main():
     build_about()
     build_new_testament()
     build_ask_enoch()
+    build_ask_index()
+    build_ask_jesus_god()
     build_contact()
     build_thanks()
     n_words, n_refs = build_concordance(chapters)
