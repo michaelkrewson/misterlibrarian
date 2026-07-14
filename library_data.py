@@ -167,6 +167,15 @@ DICTIONARY = [
      "'Behold, look' — the natural Greek heir of the Hebrew hineh this translation renders 'Look —.' The Baptist uses it of the Lamb (1:29, 1:36), Jesus of Nathanael (1:47).", ("John", 1, 29)),
     ("kephas", "Kephas", "Κηφᾶς", "Kēphas",
      "Aramaic kepha, 'rock,' rendered into Greek as Petros — the new name Jesus gives Simon on sight, a name-change in the line of Abram→Abraham and Jacob→Israel.", ("John", 1, 42)),
+    # ---- Genesis 14 (Hebrew) ----
+    ("ivri", "ivri", "עִבְרִי", "ivri",
+     "'Hebrew' — its first appearance in the Bible, on Abram (14:13). Most naturally 'a descendant of Eber' (10:21), the name flagged back in the Table of Nations; an older theory instead links it to the apiru, the landless outsiders of the ancient Near East.", (14, 13)),
+    ("elyon", "El Elyon", "אֵל עֶלְיוֹן", "El Elyon",
+     "'God Most High' — the title under which Melchizedek, a Canaanite priest-king, blesses Abram (14:18); Abram then identifies his own YHWH with this Most High God (14:22).", (14, 18)),
+    ("qoneh", "qoneh", "קֹנֵה", "qoneh",
+     "'Maker, creator, possessor' (from qanah) — 'Maker of heaven and earth' (14:19); the same root Eve punned on at Cain's birth, 'I have gotten/made a man' (4:1).", (14, 19)),
+    ("maaser", "ma'aser", "מַעֲשֵׂר", "ma'aser",
+     "A tenth, a tithe — the Bible's first, given by Abram to Melchizedek (14:20).", (14, 20)),
 ]
 
 ENCYCLOPEDIA = [
@@ -501,6 +510,34 @@ ENCYCLOPEDIA = [
               "good come out of Nazareth?'",
          refs=[("John", 1, 45), ("John", 1, 46)], coords=(32.702, 35.297, 0.06),
          modern="Nazareth, Israel", videos=[]),
+
+    # ---- Genesis 14 ----
+    dict(slug="melchizedek", name="Melchizedek", kind="person", aliases=["Melchizedek"],
+         desc="King of Salem and 'priest of God Most High' (El Elyon) — the Bible's first priest, who meets Abram "
+              "returning from battle with bread and wine, blesses him, and receives a tenth of everything. His name "
+              "means 'my king is righteousness.' He appears only here and in Psalm 110:4, and the letter to the "
+              "Hebrews (chapters 5–7) makes his order the type of Christ's own priesthood.",
+         refs=[(14, 18)], videos=[]),
+    dict(slug="salem", name="Salem", kind="place", aliases=["Salem"],
+         desc="Melchizedek's city (14:18) — almost certainly the old name of Jerusalem ('in Salem is his tent,' "
+              "Psalm 76:2); shalem carries the sense of 'peace, whole.'",
+         refs=[(14, 18)], coords=(31.777, 35.234, 0.05), approx=True, modern="Jerusalem", videos=[]),
+    dict(slug="siddim", name="Valley of Siddim (the Salt Sea)", kind="place",
+         aliases=["Valley of Siddim", "Siddim"],
+         desc="Where the kings gave battle, glossed by the text itself as 'the Salt Sea' — the Dead Sea basin, "
+              "'pit after pit of tar' (14:3, 8, 10). The bitumen the basin still seeps trapped the fleeing kings. "
+              "The exact cities of the plain are debated (see Sodom and Gomorrah).",
+         refs=[(14, 3), (14, 8), (14, 10)], coords=(31.4, 35.45, 0.7), approx=True,
+         modern="the Dead Sea basin", videos=[]),
+    dict(slug="dan-city", name="Dan", kind="place", aliases=["Dan"],
+         desc="The northern point Abram pursued the raiders to (14:14) — and an anachronism: the town was not "
+              "called Dan until the tribe of Dan captured and renamed it centuries later (Judges 18:29), so a later "
+              "editor has updated an older place-name.",
+         refs=[(14, 14)], coords=(33.248, 35.652, 0.05), modern="Tel Dan, northern Israel", videos=[]),
+    dict(slug="damascus", name="Damascus", kind="place", aliases=["Damascus"],
+         desc="Abram pursued the eastern kings as far as Hobah, 'north of Damascus' (14:15) — the ancient Aramean "
+              "city, already a fixed landmark in the patriarch's day.",
+         refs=[(14, 15)], coords=(33.513, 36.292, 0.06), modern="Damascus, Syria", videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -572,6 +609,11 @@ XREFS = [
     (("John", 1, 3), (1, 3), "all things came to be through the Word — as God creates by speaking, 'And God said…'"),
     (("John", 1, 5), (1, 4), "light shining in the darkness — the first thing God separates at creation"),
     (("John", 1, 32), (1, 2), "the Spirit descending and resting — the Spirit of God hovering over the waters"),
+    # ---- Genesis 14 ----
+    ((14, 13), (10, 21), "'Hebrew' (ivri) — the name Eber, flagged in the Table of Nations, paid off on Abram"),
+    ((14, 12), (13, 12), "Lot in Sodom — the cost of the tent he pitched toward the city"),
+    ((14, 10), (11, 3),  "the tar (chemar) of the Siddim pits — the same word as the bitumen of Babel"),
+    ((14, 19), (4, 1),   "qoneh, 'Maker' — the root qanah that Eve punned on at Cain's birth"),
 ]
 
 # ---------------------------------------------------------------------------
