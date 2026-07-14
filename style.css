@@ -452,3 +452,13 @@ body.hide-heb .grk{display:none}
   border-radius:50%;background:var(--gold);color:#0b1929;font-weight:800;font-size:11px}
 .route-legend a{color:var(--gold);font-weight:700}
 .route-legend a.route-ref{color:var(--dim);font-weight:600;font-size:11px;white-space:nowrap}
+.route-inset{max-width:520px;margin:2px auto 14px}
+.route-inset-h{font-size:10.5px;font-weight:800;color:var(--gold);letter-spacing:0.12em;
+  text-transform:uppercase;margin-bottom:5px;text-align:center}
+.route-inset-h span{color:var(--dim);font-weight:600}
+.route-inset svg{width:100%;height:auto;display:block;border:1px solid var(--border);
+  border-radius:10px;background:#070d18}
+.rg-jordan{fill:none;stroke:var(--blue);stroke-width:2;stroke-opacity:0.5;stroke-linejoin:round}
+.rg-idot{fill:var(--gold);stroke:#0b1929;stroke-width:1}
+.rg-ilbl{fill:var(--text);font-size:11px;font-weight:600}
+.rg-from{fill:var(--muted);font-size:10px;font-style:italic}

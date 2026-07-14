@@ -782,13 +782,21 @@ ROUTES = [
                  note="Terah settles and dies; Abram's call", ref=(11, 32)),
             dict(name="Damascus", coord=(33.5131, 36.2919), slug="damascus",
                  note="Down the Aramean corridor toward Canaan"),
-            dict(coord=(32.40, 35.78), via=True),   # the hills of Gilead
-            dict(coord=(32.19, 35.68), via=True),   # the Jabbok at Peniel
-            dict(coord=(32.10, 35.55), via=True),   # the Jordan ford by Adam
+            dict(name="Gilead", coord=(32.40, 35.78), via=True),   # the hills of Gilead
+            dict(name="Peniel", coord=(32.19, 35.68), via=True),   # the Jabbok at Peniel
+            dict(name="Adam", coord=(32.10, 35.55), via=True),     # the Jordan ford by Adam
             dict(name="Shechem", coord=(32.2137, 35.2853), slug="shechem",
                  note="Journey's end (first altar) — down through the hills of Gilead, across the Jabbok at "
                       "Peniel, over the Jordan at the ford by Adam, and up the Wadi Farah",
                  ref=(12, 6)),
         ],
+        # A zoomed inset of the tight Canaan-entry cluster (Gilead / Peniel / Adam /
+        # Shechem) — too close together to label on the full-sweep map, so they show
+        # here with the Jordan drawn in. box = (lat_min, lat_max, lon_min, lon_max).
+        inset=dict(
+            title="Entering Canaan — the final leg",
+            box=(31.92, 32.52, 35.16, 35.95),
+            jordan_lon=35.53,
+        ),
     ),
 ]

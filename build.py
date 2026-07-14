@@ -773,8 +773,59 @@ def render_route_panel(route):
             f'<div class="route-sub">{html.escape(route["chapters"])} · the journey at a glance</div>'
             f'<p class="route-blurb">{route["blurb"]}</p>'
             f'<div class="route-map">{svg}</div>'
+            f'{render_route_inset(route)}'
             f'<ol class="route-legend">{"".join(legend)}</ol>'
             f'</section>')
+
+
+def render_route_inset(route):
+    """A zoomed inset for a journey's tightly-clustered leg (configured on the
+    route as `inset`): the named stops inside the box, labeled, with the Jordan
+    drawn in — the detail the full-sweep map can't show without the numbers
+    colliding. box = (lat_min, lat_max, lon_min, lon_max)."""
+    cfg = route.get("inset")
+    if not cfg:
+        return ""
+    lat_min, lat_max, lon_min, lon_max = cfg["box"]
+    inside = [s for s in route["stops"] if s.get("name")
+              and lat_min <= s["coord"][0] <= lat_max and lon_min <= s["coord"][1] <= lon_max]
+    if len(inside) < 2:
+        return ""
+    kx = math.cos(math.radians((lat_min + lat_max) / 2.0))
+    pad, inner_w = 30.0, 430.0
+    scale = inner_w / (((lon_max - lon_min) * kx) or 1.0)
+    W = inner_w + 2 * pad
+    H = (lat_max - lat_min) * scale + 2 * pad
+
+    def proj(lat, lon):
+        return (pad + (lon - lon_min) * kx * scale, pad + (lat_max - lat) * scale)
+
+    jx, _ = proj(lat_max, cfg["jordan_lon"])
+    steps = 10
+    rv = " ".join(f"{jx + 6*math.sin(k/steps*math.pi*2.4):.1f},{H*k/steps:.1f}" for k in range(steps + 1))
+    river = (f'<polyline points="{rv}" class="rg-jordan"/>'
+             f'<text x="{jx+9:.1f}" y="{H-9:.1f}" class="rg-river">Jordan</text>')
+
+    pts = [proj(s["coord"][0], s["coord"][1]) for s in inside]
+    d = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    line = f'<path d="{d}" class="rg-under"/><path d="{d}" class="rg-line"/>'
+
+    marks = []
+    for s, (x, y) in zip(inside, pts):
+        marks.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.6" class="rg-idot"/>')
+        nm = html.escape(s["name"])
+        if s["coord"][1] < cfg["jordan_lon"]:   # west of the Jordan -> label to the left
+            marks.append(f'<text x="{x-9:.1f}" y="{y+3.6:.1f}" class="rg-ilbl" text-anchor="end">{nm}</text>')
+        else:
+            marks.append(f'<text x="{x+9:.1f}" y="{y+3.6:.1f}" class="rg-ilbl">{nm}</text>')
+
+    entry = f'<text x="{pad:.0f}" y="17" class="rg-from">↑ the route enters from Damascus</text>'
+    svg = (f'<svg viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
+           f'aria-label="Inset: {html.escape(cfg["title"])}" xmlns="http://www.w3.org/2000/svg">'
+           f'<title>{html.escape(cfg["title"])}</title>'
+           f'{river}{line}{"".join(marks)}{entry}</svg>')
+    return (f'<div class="route-inset"><div class="route-inset-h">🔎 {html.escape(cfg["title"])} '
+            f'<span>zoom</span></div>{svg}</div>')
 
 
 def build_atlas():
