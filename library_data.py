@@ -176,6 +176,15 @@ DICTIONARY = [
      "'Maker, creator, possessor' (from qanah) — 'Maker of heaven and earth' (14:19); the same root Eve punned on at Cain's birth, 'I have gotten/made a man' (4:1).", (14, 19)),
     ("maaser", "ma'aser", "מַעֲשֵׂר", "ma'aser",
      "A tenth, a tithe — the Bible's first, given by Abram to Melchizedek (14:20).", (14, 20)),
+    # ---- Genesis 15 (Hebrew) ----
+    ("aman", "he'emin / aman", "הֶאֱמִן / אָמַן", "he'emin / aman",
+     "To trust, to lean one's weight on — the root behind 'amen.' 'Abram believed the LORD, and he counted it to him as righteousness' (15:6), the verse Paul and James both build on.", (15, 6)),
+    ("tzedaqah", "tzedaqah", "צְדָקָה", "tzedaqah",
+     "Righteousness, right standing — reckoned to Abram on account of his trust (15:6), granted rather than earned.", (15, 6)),
+    ("magen", "magen", "מָגֵן", "magen",
+     "A shield — 'I am a shield to you' (15:1), echoing the root of 'delivered' (miggen) in Melchizedek's blessing (14:20).", (15, 1)),
+    ("tardemah", "tardemah", "תַּרְדֵּמָה", "tardemah",
+     "A deep, God-sent sleep — laid on Abram at the covenant of the pieces (15:12), the same word as the sleep God laid on the human in the garden (2:21); the sleep in which God does the work.", (15, 12)),
 ]
 
 ENCYCLOPEDIA = [
@@ -550,6 +559,19 @@ ENCYCLOPEDIA = [
               "Abraham film catalogued on the Ur and Abram entries) — here it simply runs the other way: the route "
               "up which the eastern kings retreated, and he chased them.",
          refs=[(14, 15)], coords=(33.513, 36.292, 0.06), modern="Damascus, Syria", videos=[]),
+
+    # ---- Genesis 15 ----
+    dict(slug="eliezer", name="Eliezer of Damascus", kind="person", aliases=["Eliezer of Damascus", "Eliezer"],
+         desc="Abram's servant and, before a son was born, his heir-presumptive (15:2) — 'the steward of my house.' "
+              "The Hebrew that names him (ben-mesheq beiti) is famously obscure.",
+         refs=[(15, 2)], videos=[]),
+    dict(slug="river-of-egypt", name="the river of Egypt", kind="place",
+         aliases=["the river of Egypt", "river of Egypt"],
+         desc="The south-western boundary of the land granted in the covenant (15:18), paired with the Euphrates. "
+              "Usually identified not with the Nile but with the Wadi el-Arish, the seasonal 'Brook of Egypt' on "
+              "Egypt's frontier.",
+         refs=[(15, 18)], coords=(31.13, 33.80, 0.2), approx=True,
+         modern="Wadi el-Arish (the Brook of Egypt), Sinai", videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -626,6 +648,11 @@ XREFS = [
     ((14, 12), (13, 12), "Lot in Sodom — the cost of the tent he pitched toward the city"),
     ((14, 10), (11, 3),  "the tar (chemar) of the Siddim pits — the same word as the bitumen of Babel"),
     ((14, 19), (4, 1),   "qoneh, 'Maker' — the root qanah that Eve punned on at Cain's birth"),
+    # ---- Genesis 15 ----
+    ((15, 1),  (14, 20), "shield (magen) — the root of 'delivered' (miggen) in Melchizedek's blessing"),
+    ((15, 1),  (14, 23), "'your reward shall be very great' — answering Abram's refusal of Sodom's reward"),
+    ((15, 7),  (11, 31), "'Ur of the Chaldeans' — the Chaldean anachronism from the road out of Ur"),
+    ((15, 12), (2, 21),  "the deep sleep (tardemah) — the word for the sleep God laid on the human in the garden"),
 ]
 
 # ---------------------------------------------------------------------------
