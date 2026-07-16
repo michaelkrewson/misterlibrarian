@@ -840,10 +840,8 @@ VIDEO_QUEUE = [
      "https://www.youtube.com/watch?v=SNnCtAR_8Q8",
      "Acts (Cornelius, Paul's imprisonment)",
      "Herod's port city; the setting for several Acts episodes."),
-    ("How we KNOW the dates for the Old Testament!",
-     "https://www.youtube.com/watch?v=3DJtVlLRMGw",
-     "General reference — Old Testament chronology",
-     "Methodology video, not tied to one place. Consider linking from about.html rather than the encyclopedia."),
+    # ("How we KNOW the dates for the Old Testament!" — PLACED 2026-07-16 on
+    #  chronology.html, its natural home, when the Chronology shipped.)
 ]
 
 # ---------------------------------------------------------------------------
@@ -934,4 +932,123 @@ ROUTES = [
             jordan_lon=35.53,
         ),
     ),
+]
+
+# ---------------------------------------------------------------------------
+# Chronology — the "when" layer (2026-07-16, Michael's ask). Two honest clocks,
+# kept deliberately separate, plus prose on the chronology page for what the
+# archaeologists can and cannot date:
+#   am   — the text's OWN internal clock: years from Adam (Anno Mundi), exactly
+#          as the Masoretic numbers add up. Derivable from the translation itself
+#          (the begetting-ages of Genesis 5 and 11 + the stated ages of Abram).
+#          Uses the plain Terah-70 reading of 11:26 (the crux is explained on the
+#          page: Acts 7:4's ordering implies Terah-130, which shifts Abram +60).
+#   trad — the traditional BC dates as Ussher's Annals (1650) printed them, the
+#          numbers the old English Bibles carried in their margins. A
+#          reconstruction, labeled as such — NOT presented as fact. (For
+#          everything before Terah, trad = 4004 minus AM; from Abram on the two
+#          columns run 60 years apart because Ussher took the Terah-130 reading.)
+# CHRON_CHAPTERS drives the little timeline strip at the top of each chapter
+# page; CHRON_EVENTS drives the big chronology.html timeline. Grow BOTH by one
+# entry per new chapter. A "coming" event renders greyed, unlinked.
+# ---------------------------------------------------------------------------
+CHRON_ERAS = [
+    ("creation",   "Creation"),
+    ("preflood",   "Before the Flood"),
+    ("flood",      "The Flood"),
+    ("postflood",  "After the Flood"),
+    ("patriarchs", "The Patriarchs"),
+    ("gospels",    "The Gospels"),
+]
+
+CHRON_CHAPTERS = {
+    "gen1":  dict(era="creation",
+                  when="The creation week — 'day one' through the seventh day.",
+                  clock="The chapter keeps its own clock: seven days. Every date below hangs from them."),
+    "gen2":  dict(era="creation",
+                  when="The same week from inside the garden — the sixth and seventh days, close up.",
+                  clock="AM 1 — year one of the text's own count."),
+    "gen3":  dict(era="preflood",
+                  when="Eden and the fall — undated, inside Adam's early years.",
+                  clock="The text gives no number; Seth arrives 'when Adam had lived 130 years' (5:3), so this story sits somewhere inside those decades."),
+    "gen4":  dict(era="preflood",
+                  when="Cain and Abel, then Cain's line running generations deep.",
+                  clock="Seth is born AM 130, after Abel's death (4:25) — the chapter's one fixed peg."),
+    "gen5":  dict(era="preflood",
+                  when="Ten generations on one page — Adam to Noah.",
+                  clock="The chapter IS the clock: its ages add straight up. Seth AM 130 · Enoch taken AM 987 · Noah born AM 1056."),
+    "gen6":  dict(era="preflood",
+                  when="Noah at 500; the hundred-and-twenty-year countdown announced.",
+                  clock="≈ AM 1536–1656 — the last century before the flood."),
+    "gen7":  dict(era="flood",
+                  when="The flood begins — Noah's 600th year, the 17th day of the 2nd month.",
+                  clock="AM 1656 by the Masoretic count (the Greek Bible's longer ages put it at AM 2242 — see the chronology page)."),
+    "gen8":  dict(era="flood",
+                  when="The flood's own logbook — a year and ten days, dated to the day.",
+                  clock="AM 1656–1657; Noah steps out in his 601st year."),
+    "gen9":  dict(era="postflood",
+                  when="The covenant of the bow; Noah's remaining 350 years.",
+                  clock="AM 1657 onward; Noah dies AM 2006."),
+    "gen10": dict(era="postflood",
+                  when="The Table of Nations — the generations between the flood and Abram.",
+                  clock="≈ AM 1657 into the 1900s; 'in the days of Peleg' (born AM 1757) 'the earth was divided.'"),
+    "gen11": dict(era="postflood",
+                  when="Babel — then the ten-generation bridge from Shem to Abram.",
+                  clock="Shem's line runs AM 1658 (Arpachshad) to AM 1878 (Terah); Abram born AM 1948 — or 2008: the text allows both (see the chronology page)."),
+    "gen12": dict(era="patriarchs",
+                  when="The call — Abram leaves Haran at 75.",
+                  clock="AM 2023 · c. 1921 BC in the traditional (Ussher) reckoning."),
+    "gen13": dict(era="patriarchs",
+                  when="Abram and Lot separate — early in the Canaan years.",
+                  clock="Between AM 2023 and 2033 (the 'ten years' of 16:3) · c. 1918 BC traditional."),
+    "gen14": dict(era="patriarchs",
+                  when="The war of the kings — while Abram camps at Mamre.",
+                  clock="Undated, within AM 2023–2033 · c. 1913 BC in the traditional reckoning."),
+    "gen15": dict(era="patriarchs",
+                  when="The covenant of the pieces — before Ishmael, while the heir is still Eliezer.",
+                  clock="Within AM 2023–2033 · c. 1912 BC traditional — and the chapter itself looks 400 years ahead, to the Exodus."),
+    "gen16": dict(era="patriarchs",
+                  when="Hagar — Abram's tenth year in Canaan; Ishmael born when Abram is 86.",
+                  clock="AM 2033–2034 · c. 1911–1910 BC traditional."),
+    "gen17": dict(era="patriarchs",
+                  when="Abram 99, Ishmael 13; Isaac promised 'at this appointed time next year.'",
+                  clock="AM 2047 · c. 1897 BC traditional."),
+    "john1": dict(era="gospels",
+                  when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
+                  clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
+}
+
+CHRON_EVENTS = [
+    # -- Creation --
+    dict(era="creation", am="1", trad="4004 BC", event="The creation week", ref=(1, 1)),
+    # -- Before the Flood --
+    dict(era="preflood", am="1–130", trad="—", event="Eden, the fall, Cain and Abel — undated, inside Adam's early years", ref=(3, 1)),
+    dict(era="preflood", am="130", trad="3874 BC", event="Seth born, 'in place of Abel'", ref=(4, 25)),
+    dict(era="preflood", am="987", trad="3017 BC", event="Enoch taken — 'and he was not there, for God took him'", ref=(5, 24)),
+    dict(era="preflood", am="1056", trad="2948 BC", event="Noah born", ref=(5, 29)),
+    dict(era="preflood", am="≈1536", trad="—", event="The 120-year countdown announced", ref=(6, 3)),
+    # -- The Flood --
+    dict(era="flood", am="1656", trad="2348 BC", event="The flood — Noah's 600th year",
+         note="Methuselah's 969 years end in AM 1656 — the very year of the flood.", ref=(7, 11)),
+    dict(era="flood", am="1657", trad="2347 BC", event="The ark emptied; the covenant of the bow", ref=(9, 13)),
+    # -- After the Flood --
+    dict(era="postflood", am="1658", trad="2346 BC", event="Arpachshad born, 'two years after the flood'", ref=(11, 10)),
+    dict(era="postflood", am="1757", trad="2247 BC", event="Peleg born — 'in his days the earth was divided': Babel's window", ref=(10, 25)),
+    dict(era="postflood", am="1948 <span class='ch-alt'>(or 2008)</span>", trad="1996 BC",
+         event="Abram born — the Terah crux in one row",
+         note="Terah fathered his first son at 70 (11:26); whether Abram was that son decides the number — Acts 7:4's ordering implies he wasn't (Terah-130). Ussher sided with 130.",
+         ref=(11, 26)),
+    dict(era="postflood", am="2006", trad="1998 BC", event="Noah dies — Abram is already alive on the plain count", ref=(9, 29)),
+    dict(era="postflood", am="2083", trad="1921 BC", event="Terah dies in Haran at 205",
+         note="On the plain count Terah lives on sixty years after Abram's departure; Acts 7:4 and the Samaritan text read it the other way.", ref=(11, 32)),
+    # -- The Patriarchs --
+    dict(era="patriarchs", am="2023", trad="1921 BC", event="The call: Abram leaves Haran at 75", ref=(12, 4)),
+    dict(era="patriarchs", am="2023+", trad="c. 1920–1912 BC", event="Egypt; the parting from Lot; the war of the kings; the covenant of the pieces — undated, within the decade", ref=(12, 10)),
+    dict(era="patriarchs", am="2033", trad="1911 BC", event="Hagar taken, 'after Abram had lived ten years in the land'", ref=(16, 3)),
+    dict(era="patriarchs", am="2034", trad="1910 BC", event="Ishmael born; Abram 86", ref=(16, 16)),
+    dict(era="patriarchs", am="2047", trad="1897 BC", event="The covenant of circumcision; Abraham and Sarah named; Isaac promised for next year", ref=(17, 24)),
+    dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah destroyed", coming="Genesis 19 — coming"),
+    dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
+    # -- The Gospels --
+    dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),
 ]

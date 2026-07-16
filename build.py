@@ -22,7 +22,8 @@ import re
 from collections import defaultdict
 
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
-                           LINK_OVERRIDES, VERSE_OF_DAY, ROUTES)
+                           LINK_OVERRIDES, VERSE_OF_DAY, ROUTES,
+                           CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
@@ -180,6 +181,7 @@ def header(active=""):
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
     <a href="reading.html"{cls('reading')}>📗 My Reading</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
+    <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="ask.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
     <a href="about.html"{cls('about')}>About</a>
@@ -191,7 +193,7 @@ FOOTER = """<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
   choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
 </footer>"""
 
 
@@ -981,6 +983,26 @@ def nav_strip(book, num, position):
             f'<div class="side right">{next_html}</div></div>')
 
 
+def chrono_strip(slug):
+    """The little where-you-are-in-time bar at the top of a chapter page: the six
+    eras as chips (current one lit), the chapter's own when-line, and the honest
+    clock note — linking to the full chronology page. Driven by CHRON_CHAPTERS;
+    a chapter with no entry simply gets no strip."""
+    info = CHRON_CHAPTERS.get(slug)
+    if not info:
+        return ""
+    chips = "".join(
+        f'<span class="cs-era{" cs-on" if key == info["era"] else ""}">{label}</span>'
+        for key, label in CHRON_ERAS)
+    clock = f'<div class="cs-clock">{info["clock"]}</div>' if info.get("clock") else ""
+    return (f'<div class="chrono-strip">'
+            f'<div class="cs-eras">{chips}</div>'
+            f'<div class="cs-body"><span class="cs-icon">🕰</span>'
+            f'<div class="cs-text"><div class="cs-when">{info["when"]}</div>{clock}</div>'
+            f'<a class="cs-link" href="chronology.html#era-{info["era"]}">Full chronology →</a></div>'
+            f'</div>')
+
+
 def build_chapter_pages(chapters):
     for slug, book, num, teaser in CHAPTERS:
         content = clean_chapter(chapters[slug])
@@ -1004,6 +1026,7 @@ def build_chapter_pages(chapters):
                   f'</div>')
         body = f"""{nav_strip(book, num, 'top')}
 {toggle}
+{chrono_strip(slug)}
 <article class="chapter">
 {content}
 </article>
@@ -2020,6 +2043,139 @@ def build_thanks():
     open(os.path.join(OUT, "thanks.html"), "w", encoding="utf-8").write(out)
 
 
+def _chron_video_credit():
+    """The Expedition Bible credit line for the chronology page's field-guide film."""
+    for c in VIDEO_CREDITS:
+        if c.get("channel") == "Expedition Bible":
+            return (f'From <a href="{c["url"]}" rel="noopener"><strong>{c["channel"]}</strong></a> '
+                    f'({c["person"]}), the project\'s trusted archaeology shelf: how Old Testament dates '
+                    f'are actually established — the outside anchors, and how far back they reach.')
+    return "How Old Testament dates are actually established — the outside anchors, and how far back they reach."
+
+
+def build_chronology():
+    """The Chronology — 'where you are in time.' A living page: the two clocks
+    (the text's own Anno Mundi count + the traditional Ussher BC dates), an
+    era-by-era timeline built from CHRON_EVENTS (grows one entry per chapter),
+    and the honest apparatus — the Terah crux, the MT/LXX/Samaritan divergence,
+    and what archaeology can and cannot date. Edit CHRON_* in library_data.py
+    to grow it; edit this function to reshape the prose."""
+    from collections import OrderedDict
+    by_era = OrderedDict((k, []) for k, _ in CHRON_ERAS)
+    for ev in CHRON_EVENTS:
+        by_era.setdefault(ev["era"], []).append(ev)
+
+    sections = []
+    for key, label in CHRON_ERAS:
+        evs = by_era.get(key) or []
+        if not evs:
+            continue
+        rows = []
+        for ev in evs:
+            am = ev.get("am") or "—"
+            trad = ev.get("trad") or "—"
+            if ev.get("coming"):
+                where = f'<span class="ch-coming">{html.escape(ev["coming"])}</span>'
+                cls = ' class="ch-dim"'
+            else:
+                book, ch, v = _ref(ev["ref"])
+                where = f'<a href="{verse_url(book, ch, v)}">{book_abbr(book)} {ch}:{v}</a>'
+                cls = ""
+            note = f'<div class="ch-note">{ev["note"]}</div>' if ev.get("note") else ""
+            rows.append(f'<tr{cls}><td class="ch-am">{am}</td><td class="ch-trad">{trad}</td>'
+                        f'<td class="ch-ev">{ev["event"]}{note}</td><td class="ch-ref">{where}</td></tr>')
+        sections.append(f"""<section class="chron-era" id="era-{key}">
+<h2>{label}</h2>
+<div class="chron-scroll"><table class="chron-table">
+<thead><tr><th>Years from Adam<span class="ch-sub">the text's own count</span></th>
+<th>Traditional BC<span class="ch-sub">Ussher, 1650</span></th>
+<th>Event</th><th>Chapter</th></tr></thead>
+<tbody>{''.join(rows)}</tbody></table></div>
+</section>""")
+
+    video = youtube_embed("https://www.youtube.com/watch?v=3DJtVlLRMGw",
+                          "How we KNOW the dates for the Old Testament! — Expedition Bible (Joel Kramer)")
+
+    body = f"""<h1 class="pagetitle">The Chronology</h1>
+<div class="prose chron-intro">
+<p class="lede">Where are you in time? Every chapter page now carries a small timeline strip that answers for
+that chapter; this page is the whole ledger. It runs on <strong>two clocks, kept honestly apart</strong> —
+and a third voice, the archaeologists', explained below.</p>
+
+<div class="chron-clocks">
+  <div class="chron-clock">
+    <h3>① The text's own count</h3>
+    <p>Genesis keeps its own calendar: the begetting-ages of chapters 5 and 11 and the stated ages of the
+    patriarchs add up, year by year, from Adam. The first column — <strong>"years from Adam"</strong> (the
+    traditional <em>Anno Mundi</em>) — is nothing more than that arithmetic, done on the Masoretic numbers this
+    translation is made from. The flood lands in year 1656; Abram leaves Haran in 2023; the covenant of
+    circumcision falls in 2047. No outside assumption is added — it is the Bible timing itself.</p>
+  </div>
+  <div class="chron-clock">
+    <h3>② The traditional BC dates</h3>
+    <p>The second column gives the dates <strong>Archbishop James Ussher</strong> published in his
+    <em>Annals</em> (1650) — creation in 4004 BC, the flood in 2348, Abram's call in 1921 — the numbers the
+    margins of old English Bibles carried for centuries. They are a <em>reconstruction built on clock ①</em>
+    plus a chain of assumptions about the later periods, and they are offered here as the classic tradition,
+    not as fact. (For everything before Terah, Ussher's date is simply 4004 minus the first column; from Abram
+    on the two columns run sixty years apart — the Terah crux, below, explains why.)</p>
+  </div>
+  <div class="chron-clock">
+    <h3>③ What the archaeologists can date</h3>
+    <p>Absolute, checkable dates enter the Bible's world from <strong>outside sources</strong> — Assyrian
+    eponym lists pinned to a solar eclipse (763 BC), Babylonian chronicles, synchronisms with named kings.
+    Those anchors reach the era of Israel's monarchy (the battle of Qarqar, 853 BC; the fall of Jerusalem,
+    586 BC) and will enter this page when the story does. <strong>The patriarchal age has no such anchor</strong>:
+    if Abraham's journeys are history, they sit in the Middle Bronze Age (roughly 2000–1550 BC) — broadly where
+    both clocks above put them — but no inscription names him, and this page won't pretend one does.</p>
+  </div>
+</div>
+</div>
+
+{''.join(sections)}
+
+<div class="prose chron-honest">
+<h2>The honest apparatus</h2>
+<p><strong>The Terah crux (a sixty-year fork).</strong> "Terah lived 70 years, and fathered Abram, Nahor and
+Haran" (11:26) — but was Abram the <em>firstborn</em>, or just first-listed? On the plain reading Abram is born
+when Terah is 70 (AM 1948) — which has Terah living on in Haran sixty years <em>after</em> Abram's departure.
+Stephen's speech in Acts 7:4 says Abram left <em>after his father died</em>, which works only if Abram was born
+when Terah was 130 (AM 2008) — and the Samaritan Pentateuch shortens Terah's life to 145 so the plain reading
+works instead. Ussher sided with Acts; the first column here keeps the plain arithmetic and flags the fork.</p>
+<p><strong>Three Bibles, three totals.</strong> The begetting-ages themselves differ between the ancient
+witnesses: the <strong>Masoretic</strong> numbers (used here) put the flood at AM 1656; the
+<strong>Septuagint</strong>, whose pre-flood fathers mostly beget a century later, puts it at AM 2242; the
+<strong>Samaritan Pentateuch</strong> at AM 1307. Someone in antiquity adjusted the arithmetic — which way, and
+why, is argued to this day. The differences are noted, not resolved, exactly as this translation treats every
+variant.</p>
+<p><strong>Round numbers.</strong> The spans themselves love pattern — 400 years foretold (15:13), 120 years
+counted down (6:3), Abram called at 75, a covenant at 99. Ancient chronology often works in schematic, symbolic
+figures, and adding them like an accountant may be more precision than the text ever intended. The ledger above
+is offered in that spirit: the text's own arithmetic, not an affidavit.</p>
+</div>
+
+<div class="prose chron-video">
+<h2>How dating actually works — a field guide</h2>
+<p>{_chron_video_credit()}</p>
+{video}
+</div>
+
+<div class="prose chron-roadmap">
+<h2>Where this page is going</h2>
+<p>The timeline grows one chapter at a time, like everything on this site. Ahead: Isaac, Jacob and Joseph
+complete the patriarchal ledger; the Exodus opens the era where the 400 years of Genesis 15:13 come due; and
+with the kings of Israel and Judah the <em>third</em> clock finally engages — synchronisms with Assyria and
+Babylon that let whole reigns be pinned to checkable dates. When the Gospels arrive in force, the same treatment
+applies to Herod, Pilate, and "the fifteenth year of Tiberius."</p>
+</div>"""
+
+    out = page(f"The Chronology — {SITE_NAME}", body, active="chronology",
+               desc="Where you are in time: the Bible's own year-count from Adam, the traditional "
+                    "Ussher BC dates, and what archaeology can and cannot date — one honest timeline, "
+                    "growing chapter by chapter.")
+    open(os.path.join(OUT, "chronology.html"), "w", encoding="utf-8").write(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
@@ -2031,6 +2187,7 @@ def main():
     build_index(chapters)
     build_about()
     build_new_testament()
+    build_chronology()
     build_ask_enoch()
     build_ask_index()
     build_ask_jesus_god()
