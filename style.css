@@ -509,8 +509,8 @@ tr.ch-dim td{opacity:0.55}
 .chron-honest h2,.chron-video h2,.chron-roadmap h2{font-size:16px;color:var(--gold)}
 
 /* ---- Home hero: the Shrine of the Book figure (2026-07-16) ---- */
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(250px,330px);
-  column-gap:28px;align-items:start}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,360px);
+  column-gap:28px;align-items:center}
 .hero-fig{margin:4px 0 0;background:var(--bg2);border:1px solid var(--border);
   border-radius:12px;padding:10px;align-self:start}
 .hero-fig img{display:block;width:100%;height:auto;border-radius:7px;

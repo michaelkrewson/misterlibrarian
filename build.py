@@ -1269,14 +1269,13 @@ def build_index(chapters):
   </div>
   </div>
   <figure class="hero-fig">
-    <img src="img/great-isaiah-scroll.jpg" width="760" height="943" loading="lazy"
-      alt="A column of the Great Isaiah Scroll from Qumran — dense hand-written Hebrew on warm parchment, with an ancient crack running down the sheet"/>
+    <img src="img/great-isaiah-scroll.jpg" width="1040" height="639" loading="lazy"
+      alt="Two columns of the Great Isaiah Scroll from Qumran — dense hand-written Hebrew on warm parchment, with an ancient crack running between the sheets"/>
     <figcaption>
       <span class="ms-name">The Great Isaiah Scroll — Qumran, 2nd century BC</span>
-      A column of the <em>Great Isaiah Scroll</em> (1QIsa<sup>a</sup>), found in Cave 1 at Qumran among the
-      <em>Dead Sea Scrolls</em> — the oldest complete copy of any book of the Bible, a thousand years older
-      than the codices behind most modern Bibles, and the treasure the Shrine of the Book in Jerusalem was
-      built to house. Witnesses like it stand behind this project's notes.
+      Two columns of the <em>Great Isaiah Scroll</em> (1QIsa<sup>a</sup>), from Cave 1 at Qumran — the oldest
+      complete copy of any book of the Bible, and the treasure the Shrine of the Book in Jerusalem was built
+      to house.
       <span class="ms-credit">Photograph: Ardon Bar Hama — via
       <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · public domain (detail)</span>
     </figcaption>
