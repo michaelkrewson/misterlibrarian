@@ -1962,7 +1962,7 @@ def build_ask_jehovah():
   <a href="ask-enoch.html">Why isn&rsquo;t the Book of Enoch here?</a></p>
   <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
 </div>"""
-    out = page(f"Ask Mr. Librarian: why &ldquo;Jehovah&rdquo;? — {SITE_NAME}", body, active="ask",
+    out = page(f"Ask Mr. Librarian: why “Jehovah”? — {SITE_NAME}", body, active="ask",
                desc="The divine name in this translation: the Tetragrammaton (YHWH), why nearly every Bible hides "
                     "it behind 'the LORD,' the difference between 'Yahweh' and 'Jehovah,' and why this project "
                     "restores the traditional English form 'Jehovah.'")
