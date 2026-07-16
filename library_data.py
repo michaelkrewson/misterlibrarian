@@ -240,6 +240,8 @@ DICTIONARY = [
      "To restrain, hold back, shut up. Sarai's own word for her childlessness — 'Jehovah has kept me from bearing' (16:2) — returns doubled at 20:18: the house that took Sarah is given, for a season, Sarah's condition.", (16, 2)),
 
     # ---- Revelation 1 (Greek) ----
+    ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
+     "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
     ("apokalypsis", "apokalypsis", "ἀποκάλυψις", "apokalypsis",
      "Unveiling, uncovering — the book's first word and its name ('Apocalypse' is this word left untranslated). Not 'catastrophe' but disclosure: the pulling-back of a curtain (Revelation 1:1).", ("Revelation", 1, 1)),
     ("pantokrator", "pantokratōr", "παντοκράτωρ", "pantokratōr",
@@ -261,6 +263,17 @@ DICTIONARY = [
      "A liquid measure, roughly 39 liters. Six stone jars 'of two or three measures each' (2:6) — KJV's 'firkins' — put the good wine in the several-hundred-bottle range: the abundance is the point.", ("John", 2, 6)),
     ("naos", "naos / hieron", "ναός / ἱερόν", "naos / hieron",
      "Two temple-words: hieron, the whole precinct with its courts (where the traders sat, 2:14), and naos, the sanctuary-house itself — the word Jesus chooses for 'destroy this temple' (2:19), and John glosses: the naos of his body (2:21).", ("John", 2, 14)),
+    # ---- Revelation 2 (Greek) ----
+    ("nikao", "ho nikōn", "ὁ νικῶν", "ho nikōn",
+     "'The one who overcomes' — the victor. Each of the seven letters ends with a promise to ho nikōn (Rev 2:7, 11, 17, 26…), and every promise is paid at the book's end: the tree of life (22:2), immunity to the second death (20:6), the new name, the morning star (22:16).", ("Revelation", 2, 7)),
+    ("paradeisos", "paradeisos", "παράδεισος", "paradeisos",
+     "Paradise — a Persian loan-word for a walled garden, and the very word the Greek Bible chose for EDEN (Genesis 2:8 LXX). 'The tree of life in the paradise of God' (Rev 2:7) is Eden's tree, promised back.", ("Revelation", 2, 7)),
+    ("stephanos", "stephanos", "στέφανος", "stephanos",
+     "The victor's wreath — the laurel of the games, not a monarch's diadem: 'the crown of life' (Rev 2:10), promised to a city whose ringed acropolis ancient writers praised as 'the crown of Smyrna.'", ("Revelation", 2, 10)),
+    ("psephos", "psēphos leukē", "ψῆφος λευκή", "psēphos leukē",
+     "The white stone — literally a pebble (NWT's 'white pebble' is exact), with uses all over ancient life: a juror's acquittal vote, an admission token to a feast, an amulet bearing a secret name. Which the promise of Rev 2:17 means is honestly unknown; all three fit a letter about verdicts, banquets, and a new name.", ("Revelation", 2, 17)),
+    ("morning-star", "ho astēr ho prōinos", "ὁ ἀστὴρ ὁ πρωϊνός", "ho astēr ho prōinos",
+     "The morning star (Rev 2:28) — Venus at dawn, the promise the book decodes only on its last page: 'I am the root and the offspring of David, the bright morning star' (22:16). The gift is the giver.", ("Revelation", 2, 28)),
 ]
 
 ENCYCLOPEDIA = [
@@ -809,13 +822,49 @@ ENCYCLOPEDIA = [
          coords=(37.309, 26.547, 0.08),
          modern="Patmos, Dodecanese, Greece", videos=[]),
     dict(slug="seven-churches", name="The Seven Churches of Asia", kind="place",
-         aliases=["seven churches"],
+         aliases=["seven churches", "seven congregations"],
          desc="Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, Laodicea (1:11) — seven congregations "
               "of the Roman province of Asia (western Asia Minor), listed in exact courier's order: up the coast, "
-              "then inland and south. Revelation is a circular letter, and the list is its postal route. Each "
-              "receives its own letter in chapters 2–3 (coming); the cities will get their own entries as their "
-              "letters arrive.",
+              "then inland and south. Revelation is a circular letter, and the list is its postal route. (This "
+              "entry keeps the traditional catalogue label 'Seven Churches'; the translation itself reads "
+              "'congregation' for ekklēsia — see the dictionary entry for the word, and for King James's rule "
+              "that forbade Tyndale's rendering.) The first four letters arrive in chapter 2 (each city now has "
+              "its own entry); Sardis, Philadelphia and Laodicea receive theirs in chapter 3.",
          refs=[("Revelation", 1, 4), ("Revelation", 1, 11), ("Revelation", 1, 20)], videos=[]),
+    dict(slug="ephesus", name="Ephesus", kind="place", aliases=["Ephesus"],
+         desc="The great harbor metropolis of Roman Asia — temple of Artemis (one of the seven wonders), theater "
+              "for 25,000, and by tradition the adopted home of John himself. Paul spent three years here (Acts "
+              "19-20). First on the courier's route and first of the seven letters (Rev 2:1-7): fullest in praise "
+              "— toil, endurance, vigilance against false apostles — and stung by the most famous complaint in "
+              "the set: 'you have left your first love.' The ruins at Selçuk are among the grandest of the "
+              "ancient Mediterranean.",
+         refs=[("Revelation", 1, 11), ("Revelation", 2, 1)],
+         coords=(37.9411, 27.3419, 0.08), modern="Efes, near Selçuk, Türkiye", videos=[]),
+    dict(slug="smyrna", name="Smyrna", kind="place", aliases=["Smyrna"],
+         desc="The beautiful harbor city whose ringed acropolis ancient writers praised as 'the crown of Smyrna' "
+              "— apt, for the letter that promises 'the crown of life' (Rev 2:8-11): one of only two of the seven "
+              "with no rebuke at all. Rich city, poor congregation, bounded suffering ('ten days'), and the charge kept "
+              "to the letter two generations on, when its own bishop Polycarp was martyred in the stadium "
+              "(c. AD 155), refusing to recant. Continuously inhabited ever since — modern İzmir.",
+         refs=[("Revelation", 1, 11), ("Revelation", 2, 8)],
+         coords=(38.4189, 27.1287, 0.1), modern="İzmir, Türkiye", videos=[]),
+    dict(slug="pergamum", name="Pergamum", kind="place", aliases=["Pergamum"],
+         desc="Old royal capital of Asia, terraced up its mountain — 'where Satan's throne is' (Rev 2:12-17). The "
+              "candidates: the Great Altar of Zeus (excavated and carried to Berlin — it stands today in the "
+              "Pergamon Museum), the province's first imperial-cult temple, or the serpent-shrine of Asclepius; "
+              "perhaps the whole skyline at once. Here Antipas, the book's only named martyr, was killed; here "
+              "'Balaam's teaching' — go along with the guild feasts — got its answer: hidden manna, and a white "
+              "stone with a new name.",
+         refs=[("Revelation", 1, 11), ("Revelation", 2, 12), ("Revelation", 2, 13)],
+         coords=(39.1319, 27.1844, 0.1), modern="Bergama, Türkiye", videos=[]),
+    dict(slug="thyatira", name="Thyatira", kind="place", aliases=["Thyatira"],
+         desc="The smallest and least famous of the seven — an inland workshop town of trade guilds (its one "
+              "other New Testament appearance is Lydia, 'a seller of purple from Thyatira,' Acts 16:14) — and it "
+              "receives the LONGEST of the seven letters (Rev 2:18-29), from 'the Son of God,' the title's only "
+              "occurrence in Revelation. Its crisis was economic: the guild feasts in the gods' honor were where "
+              "business happened, and the prophetess the letter code-names Jezebel taught the congregation to go along.",
+         refs=[("Revelation", 1, 11), ("Revelation", 2, 18), ("Revelation", 2, 24)],
+         coords=(38.9190, 27.8417, 0.1), modern="Akhisar, Türkiye", videos=[]),
 
     # ---- the divine name ----
     dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
@@ -957,6 +1006,11 @@ XREFS = [
     (("John", 2, 21), ("John", 1, 14), "the naos of his body — the Word who 'tabernacled among us,' now the temple itself"),
     (("John", 2, 1), ("John", 1, 29), "'on the third day' — the running week of days from chapter 1 ends in a wedding"),
     (("John", 2, 25), (6, 5), "what is in the human — the heart Jehovah read before the flood, read now by the Word"),
+    # ---- Revelation 2 ----
+    (("Revelation", 2, 7), (3, 24), "the tree of life — under guard at Eden's east gate, promised open in the paradise of God"),
+    (("Revelation", 2, 17), (17, 5), "the new name — the God who renamed Abram writes a new name on a white stone"),
+    (("Revelation", 2, 23), ("John", 2, 25), "the searcher of hearts — 'he knew what was in the human'; 'I am the one who searches kidneys and hearts'"),
+    (("Revelation", 2, 8), ("Revelation", 1, 17), "'the first and the last, who was dead' — Smyrna addressed by the Patmos vision's own title"),
     # ---- Revelation 1 ----
     (("Revelation", 1, 2), ("John", 1, 1), "the word of God — John's logos, now borne witness to from Patmos"),
     (("Revelation", 1, 8), (17, 1), "pantokratōr, 'the Almighty' — the Greek Bible's guess for El Shaddai, native at last"),
@@ -1086,6 +1140,7 @@ VERSE_OF_DAY = [
     ("John", 2, 10, "The steward's astonished compliment — the sign's whole theology in one line."),
     ("Revelation", 1, 8, "The Alpha and the Omega — the Name unfolded into every tense at once."),
     ("Revelation", 1, 17, "The vision-word to Abram, spoken again at the canon's last vision: do not be afraid."),
+    ("Revelation", 2, 10, "Smyrna's charge — kept to the letter, two generations on, by its own bishop Polycarp."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1242,6 +1297,9 @@ CHRON_CHAPTERS = {
     "rev1": dict(era="apostolic",
                  when="John exiled on Patmos; the vision 'on the Lord's day' — the canon's last book opens.",
                  clock="c. AD 95 by the traditional dating (Irenaeus places the vision late in Domitian's reign); a minority argues for the late 60s, under Nero."),
+    "rev2": dict(era="apostolic",
+                 when="The seven letters begin — Ephesus, Smyrna, Pergamum, Thyatira.",
+                 clock="c. AD 95 — the congregations of the Asian postal road, a generation after Paul walked it."),
 }
 
 CHRON_EVENTS = [

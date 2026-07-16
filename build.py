@@ -85,6 +85,7 @@ CHAPTERS = [
     ("john1", "John", 1, "The Word made flesh — the Prologue and its “was God / a god,” the Lamb of God, and the first disciples."),
     ("john2", "John", 2, "Water into wine at Cana — the beginning of the signs — and the temple cleared at the first Passover: “destroy this temple.”"),
     ("rev1", "Revelation", 1, "The unveiling begins — Patmos, the Lord's day, one like a son of man among the lampstands, and the Alpha and the Omega."),
+    ("rev2", "Revelation", 2, "The letters begin — Ephesus's lost first love, Smyrna's crown, Satan's throne at Pergamum, and Jezebel of Thyatira."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
