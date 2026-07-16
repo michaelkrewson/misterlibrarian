@@ -207,6 +207,17 @@ DICTIONARY = [
      "A multitude, a roaring crowd — the word folded into Abraham's new name: av hamon goyim, 'father of a multitude of nations' (17:4-5).", (17, 4)),
     ("tsachaq", "tsachaq", "צָחַק", "tsachaq",
      "To laugh — Abraham's face-down laugh at 17:17 mints the name Isaac (Yitschaq, 'he laughs'); Sarah's laugh (18:12) and her 'God has made laughter for me' (21:6) keep the pun running.", (17, 17)),
+    # ---- Genesis 18 (Hebrew) ----
+    ("tseaqah", "za'aqah / tse'aqah", "זְעָקָה / צְעָקָה", "za'aqah / tse'aqah",
+     "The outcry — the legal scream of the wronged. Abel's blood 'cries out' from the ground (4:10), the outcry of Sodom's victims reaches heaven (18:20-21), and Israel's own cry in Egypt will rise the same way (Exodus 3:7, 9).", (18, 20)),
+    ("mishpat", "mishpat / shaphat", "מִשְׁפָּט / שָׁפַט", "mishpat / shaphat",
+     "Justice — and the verb to judge. Sarai invokes it in anger (16:5), a desert spring is named for it (En-mishpat, 14:7), and Abraham aims it at heaven itself: 'Shall not the Judge of all the earth do justice?' (18:25).", (16, 5)),
+    ("pala", "pala", "פָּלָא", "pala",
+     "Wonder — what only God does. 'Is anything too wondrous for Jehovah?' (18:14) — the shelf's 'too hard' flattens it; Jeremiah asks the question back almost word for word (Jeremiah 32:17, 27).", (18, 14)),
+    ("ednah", "ednah", "עֶדְנָה", "ednah",
+     "Delight — Sarah's word for what age has ended (18:12), almost certainly from the same root as Eden, the garden of delight: shall the garden's word come back, at ninety?", (18, 12)),
+    ("chalilah", "chalilah", "חָלִלָה", "chalilah",
+     "'Far be it from you!' — literally something close to 'profane be it to you': Abraham's gasp, twice in one verse (18:25), at the thought of the Judge acting unjustly.", (18, 25)),
 ]
 
 ENCYCLOPEDIA = [
@@ -300,7 +311,9 @@ ENCYCLOPEDIA = [
          aliases=["Sodom", "Gomorrah", "Sodom and Gomorrah"],
          desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing. Lot drifts toward "
               "them by stages in ch. 13 (their coming ruin already named there, 13:10), and the city's own "
-              "wickedness is stated outright at 13:13; the destruction itself is still ahead, in Genesis 19. "
+              "wickedness is stated outright at 13:13. In ch. 18 their 'outcry' reaches heaven and Abraham argues "
+              "the Judge of all the earth down to ten righteous (18:20-33); the destruction itself is next, in "
+              "Genesis 19. "
               "Expedition Bible's Joel Kramer identifies the site as Tall el-Hammam, in the northern Jordan Valley — "
               "burned, sulfur-rich debris there matches all four destroyed cities of the plain, while a fifth sample "
               "from Zoar's presumed site, spared in the account, did not burn.",
@@ -404,8 +417,9 @@ ENCYCLOPEDIA = [
          desc="The tree-grove near Hebron where Abram pitches his tent and builds an altar (13:18) — the third "
               "named tree at one of his altars, after Shechem's tree of Moreh (12:6). Mamre is also a person, an "
               "Amorite ally of Abram's named in the very next chapter (14:13, 24) — the place and the man are not "
-              "shown to be connected beyond sharing the name, the same double-use already flagged at Haran.",
-         refs=[(13, 18)], videos=[],
+              "shown to be connected beyond sharing the name, the same double-use already flagged at Haran. Here, "
+              "in the heat of the day, the three visitors arrive and Isaac is promised within the year (18:1-15).",
+         refs=[(13, 18), (18, 1)], videos=[],
          coords=(31.5566, 35.1027, 0.15), approx=True,
          modern="Ramat el-Khalil, just north of Hebron, West Bank"),
 
@@ -479,8 +493,9 @@ ENCYCLOPEDIA = [
               "ground' — Babel's grasped-at name, given instead. Answers with altars at Shechem and Bethel; flinches "
               "into the wife-sister ruse in Egypt (12:10-20). At 99, in the covenant of circumcision, God renames him "
               "ABRAHAM — 'father of a multitude of nations' (17:5), the first person in the Bible God renames — and "
-              "he laughs face-down at the promise of a son (17:17).",
-         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10), (17, 1), (17, 5), (17, 17), (17, 23)],
+              "he laughs face-down at the promise of a son (17:17). At Mamre he feasts three visitors, then stands "
+              "in the road and argues the Judge of all the earth down to ten righteous for Sodom's sake (18:22-33).",
+         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10), (17, 1), (17, 5), (17, 17), (17, 23), (18, 2), (18, 23)],
          videos=[("EXPEDITION ABRAHAM: his whole journey, from Ur to the Promised Land",
                   "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
     dict(slug="sarai", name="Sarai / Sarah", kind="person", aliases=["Sarai", "Sarah"],
@@ -489,8 +504,11 @@ ENCYCLOPEDIA = [
               "years in Canaan she gives her slave-girl Hagar to Abram as a surrogate (16:1-3) — then, despised "
               "in the pregnant girl's eyes, afflicts her until she flees (16:4-6). At the covenant of circumcision "
               "God renames her SARAH — both forms mean 'princess' — and fastens the promise to her own body: 'kings "
-              "of peoples shall come from her' (17:15-16); the first woman in the Bible God renames.",
-         refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6), (17, 15), (17, 19), (17, 21)], videos=[]),
+              "of peoples shall come from her' (17:15-16); the first woman in the Bible God renames. Behind the "
+              "tent flap at Mamre she laughs at the one-year promise, then denies it, afraid — 'No, you did laugh' "
+              "(18:12-15); the laugh is kept, and named, in her son.",
+         refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6), (17, 15), (17, 19), (17, 21),
+               (18, 9), (18, 12), (18, 15)], videos=[]),
     dict(slug="lot", name="Lot", kind="person",
          desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5) "
               "— planted in the story for consequences still ahead.",
@@ -758,6 +776,14 @@ XREFS = [
     ((17, 19), (16, 11), "'you shall call his name…' — the annunciation formula, spoken over Ishmael, now over Isaac"),
     ((17, 20), (16, 11), "'I have heard you' (shema'tikha) — God answers with the very verb of Ishmael's name"),
     ((17, 23), (7, 13),  "'on that very same day' — Noah's boarding formula, stamped on Abraham's same-day obedience"),
+    # ---- Genesis 18 ----
+    ((18, 12), (17, 17), "the laugh — Abraham's face-down, then Sarah's behind the tent flap: Isaac, 'he laughs,' is named from both"),
+    ((18, 14), (17, 21), "'at the appointed time' (mo'ed) — the one-year clock on Isaac, set and repeated"),
+    ((18, 20), (4, 10),  "the outcry — Abel's blood 'crying out from the ground'; Sodom's victims cry the same way"),
+    ((18, 21), (11, 5),  "'let me go down and see' — Babel's procedure: judgment only after inspection"),
+    ((18, 25), (16, 5),  "shaphat — 'may Jehovah judge between me and you' becomes 'shall not the Judge of all the earth do justice?'"),
+    ((18, 27), (3, 19),  "dust — 'for dust you are,' owned in the first person: 'I am dust and ashes'"),
+    ((18, 28), (6, 11),  "shachat, 'ruin' — the flood's verb: Abraham asks whether God is about to do THAT again"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -876,6 +902,8 @@ VERSE_OF_DAY = [
     (15, 6, "Trust, counted as righteousness — the sentence Paul and James both built on."),
     (16, 13, "Hagar — the only person in the Bible to give God a name: the God who sees me."),
     (17, 1, "El Shaddai's one command to a 99-year-old: walk before me, and be whole."),
+    (18, 14, "The question that hangs over the whole story: is anything too wondrous for Jehovah?"),
+    (18, 25, "Abraham's audacity, filed as a question: shall not the Judge of all the earth do justice?"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1013,6 +1041,9 @@ CHRON_CHAPTERS = {
     "gen17": dict(era="patriarchs",
                   when="Abram 99, Ishmael 13; Isaac promised 'at this appointed time next year.'",
                   clock="AM 2047 · c. 1897 BC traditional."),
+    "gen18": dict(era="patriarchs",
+                  when="Three visitors at Mamre; the argument over Sodom — the year before Isaac.",
+                  clock="AM 2047 · c. 1897 BC traditional; Sodom's last day is tomorrow."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1047,6 +1078,7 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2033", trad="1911 BC", event="Hagar taken, 'after Abram had lived ten years in the land'", ref=(16, 3)),
     dict(era="patriarchs", am="2034", trad="1910 BC", event="Ishmael born; Abram 86", ref=(16, 16)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="The covenant of circumcision; Abraham and Sarah named; Isaac promised for next year", ref=(17, 24)),
+    dict(era="patriarchs", am="2047", trad="1897 BC", event="Three visitors at Mamre; Abraham argues the Judge of all the earth down to ten", ref=(18, 1)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah destroyed", coming="Genesis 19 — coming"),
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
     # -- The Gospels --
