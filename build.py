@@ -76,9 +76,10 @@ CHAPTERS = [
     ("gen13", "Genesis", 13, "Abram and Lot part ways — the land too small for both, and the Hebrew word for “separate” that decides everything."),
     ("gen14", "Genesis", 14, "The war of the kings, Abram rescues Lot, and Melchizedek — bread, wine, the first tithe, and the first “Hebrew.”"),
     ("gen15", "Genesis", 15, "The covenant of the pieces — the stars, “counted to him as righteousness,” and the God who walks between the halves alone."),
+    ("gen16", "Genesis", 16, "Hagar and Ishmael — the Bible's first angel, the runaway slave-girl, and the God who sees."),
     ("john1", "John", 1, "The Word made flesh — the Prologue and its “was God / a god,” the Lamb of God, and the first disciples."),
 ]
-NEXT_UP = "Genesis 14"         # (legacy; nav is now book-scoped in nav_strip)
+NEXT_UP = "Genesis 17"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),

@@ -185,6 +185,17 @@ DICTIONARY = [
      "A shield — 'I am a shield to you' (15:1), echoing the root of 'delivered' (miggen) in Melchizedek's blessing (14:20).", (15, 1)),
     ("tardemah", "tardemah", "תַּרְדֵּמָה", "tardemah",
      "A deep, God-sent sleep — laid on Abram at the covenant of the pieces (15:12), the same word as the sleep God laid on the human in the garden (2:21); the sleep in which God does the work.", (15, 12)),
+    # ---- Genesis 16 (Hebrew) ----
+    ("shiphchah", "shiphchah", "שִׁפְחָה", "shiphchah",
+     "A female slave — the word the shelf renders 'handmaid.' Hagar's title, used insistently through Genesis 16 (her status IS the plot); Pharaoh's gifts back at 12:16 included such women.", (16, 1)),
+    ("anah", "anah / innah", "עָנָה", "anah",
+     "To afflict, oppress, humble. Prophesied of Israel in Egypt (15:13), dealt by Sarai to an Egyptian (16:6), accepted in the angel's hard 'submit yourself' (16:9), heard by God in Hagar's 'affliction' (16:11) — the Exodus verb, running backward.", (15, 13)),
+    ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
+     "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
+    ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
+     "'God of seeing' — the name Hagar confers at 16:13: 'the God who sees me,' or 'the God whom I have seen'; the grammar holds both. The only name a person gives TO God in the Bible; the well Beer-lahai-roi preserves it.", (16, 13)),
+    ("pere", "pere", "פֶּרֶא", "pere",
+     "The wild donkey of the steppe — untamable, masterless, at home in the wilderness (Job 39:5-8 sings its freedom). 'A wild donkey of a man' (16:12) is Ishmael's freedom-oracle, not a slur.", (16, 12)),
 ]
 
 ENCYCLOPEDIA = [
@@ -461,8 +472,10 @@ ENCYCLOPEDIA = [
                   "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
     dict(slug="sarai", name="Sarai", kind="person",
          desc="Abram's wife — introduced with the sentence everything turns on: 'Now Sarai was barren; she had no "
-              "child' (11:30). Endangered by the sister-story in Pharaoh's house (12:11-20).",
-         refs=[(11, 29), (11, 30), (12, 11), (12, 15)], videos=[]),
+              "child' (11:30). Endangered by the sister-story in Pharaoh's house (12:11-20). After ten childless "
+              "years in Canaan she gives her slave-girl Hagar to Abram as a surrogate (16:1-3) — then, despised "
+              "in the pregnant girl's eyes, afflicts her until she flees (16:4-6).",
+         refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6)], videos=[]),
     dict(slug="lot", name="Lot", kind="person",
          desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5) "
               "— planted in the story for consequences still ahead.",
@@ -573,6 +586,41 @@ ENCYCLOPEDIA = [
          refs=[(15, 18)], coords=(31.13, 33.80, 0.2), approx=True,
          modern="Wadi el-Arish (the Brook of Egypt), Sinai", videos=[]),
 
+    # ---- Genesis 16 ----
+    dict(slug="hagar", name="Hagar", kind="person",
+         desc="Sarai's Egyptian slave-girl, given to Abram as a surrogate (16:1-3). When she flees, the angel of "
+              "Jehovah — the Bible's first — finds her on the desert road home to Egypt: she is the first person "
+              "in the Bible he visits, the only woman in Genesis to receive the offspring-beyond-counting promise "
+              "from God directly (16:10), and the only person in the Bible who confers a name on God — El Ro'i, "
+              "'the God who sees me' (16:13). Her story resumes in Genesis 21.",
+         refs=[(16, 1), (16, 4), (16, 8), (16, 13), (16, 15)], videos=[]),
+    dict(slug="ishmael", name="Ishmael", kind="person",
+         desc="'God hears' (yishma-El) — named by the angel for the affliction Jehovah heard (16:11), born when "
+              "Abram was 86 (16:15-16), and his only son for the next thirteen years. The oracle makes him 'a "
+              "wild donkey of a man' (16:12): steppe-free, masterless. Genesis gives him twelve princes "
+              "(25:12-16) and a place beside Isaac at their father's grave (25:9); later tradition — Jewish, "
+              "Christian, and Islamic — remembers him as ancestor of the Arab peoples.",
+         refs=[(16, 11), (16, 15), (16, 16)], videos=[]),
+    dict(slug="shur", name="Shur", kind="place",
+         desc="'Wall' — the desert fronting Egypt's north-east frontier, possibly named for the Egyptian line of "
+              "border forts, and crossed by the caravan road from Canaan. Hagar is found 'on the way to Shur' "
+              "(16:7): an Egyptian, running home. Israel will cross the same wilderness from the other side "
+              "after the sea-crossing (Exodus 15:22).",
+         refs=[(16, 7)], videos=[]),
+    dict(slug="beer-lahai-roi", name="Beer-lahai-roi", kind="place",
+         desc="'The well of the Living One who sees me' — the desert spring where the angel found Hagar, its "
+              "name minted from her own sentence (16:13-14). Fixed 'between Kadesh and Bered,' but Bered appears "
+              "nowhere else, so the spot is lost to the map. Isaac — the son who will displace Ishmael — later "
+              "arrives from, and settles beside, this same well (24:62; 25:11).",
+         refs=[(16, 14)], videos=[]),
+    dict(slug="kadesh", name="Kadesh", kind="place",
+         desc="The great oasis of the north-east Sinai / Negev frontier — Kadesh-barnea, usually identified with "
+              "the springs at Ein el-Qudeirat / Ein Qadis. Named in the war of the kings as En-mishpat, 'spring "
+              "of judgment' (14:7); a fixed point for Beer-lahai-roi (16:14); and, centuries on, the wilderness "
+              "base-camp of the Exodus generation (Numbers 13-20).",
+         refs=[(14, 7), (16, 14)], coords=(30.6486, 34.4214, 0.2),
+         modern="Ein el-Qudeirat (Tell el-Qudeirat), north-east Sinai", videos=[]),
+
     # ---- the divine name ----
     dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
          desc="The personal name of God — the four Hebrew letters יהוה (YHWH, the Tetragrammaton), which this "
@@ -667,6 +715,14 @@ XREFS = [
     ((15, 1),  (14, 23), "'your reward shall be very great' — answering Abram's refusal of Sodom's reward"),
     ((15, 7),  (11, 31), "'Ur of the Chaldeans' — the Chaldean anachronism from the road out of Ur"),
     ((15, 12), (2, 21),  "the deep sleep (tardemah) — the word for the sleep God laid on the human in the garden"),
+    # ---- Genesis 16 ----
+    ((16, 1),  (12, 16), "an Egyptian slave-girl — Pharaoh's gifts in the Egypt sojourn included 'female servants'"),
+    ((16, 2),  (3, 17),  "'listened to the voice of' his wife — the garden verdict's exact idiom, over the surrogate plan"),
+    ((16, 4),  (12, 3),  "qalal — 'the one who belittles you': the promise's warning-word, tripped by Hagar's contempt"),
+    ((16, 5),  (6, 11),  "chamas — Sarai's 'the wrong done to me' is the flood's word for violence"),
+    ((16, 6),  (15, 13), "anah, 'afflict' — prophesied of Israel in Egypt, dealt first by Israel's house to an Egyptian"),
+    ((16, 10), (15, 5),  "beyond counting — the star-promise's counting verb, spoken to a slave-girl"),
+    ((16, 14), (14, 7),  "Kadesh — the En-mishpat of the war of the kings fixes Beer-lahai-roi on the map"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -784,6 +840,8 @@ VERSE_OF_DAY = [
     (12, 2, "The promise: a great nation, a great name, and a blessing to be."),
     (13, 9, "Abram's offer to Lot — take either half, so the family doesn't have to break."),
     (13, 16, "Offspring like the dust of the earth — the promise made physical."),
+    (15, 6, "Trust, counted as righteousness — the sentence Paul and James both built on."),
+    (16, 13, "Hagar — the only person in the Bible to give God a name: the God who sees me."),
 ]
 
 # ---------------------------------------------------------------------------
