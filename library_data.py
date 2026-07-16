@@ -250,6 +250,17 @@ DICTIONARY = [
      "Witness — Jesus 'the faithful witness' (Revelation 1:5). In Revelation the word begins its migration toward English 'martyr': the witness whose testimony costs blood.", ("Revelation", 1, 5)),
     ("hades", "hadēs", "ᾅδης", "hadēs",
      "Hades — the Greek Bible's rendering of the Hebrew Sheol, the grave-realm of the dead; NOT the fiery hell of later imagery (KJV prints 'hell' at Revelation 1:18). Christ holds its keys.", ("Revelation", 1, 18)),
+    # ---- John 2 (Greek) ----
+    ("semeion", "sēmeion", "σημεῖον", "sēmeion",
+     "Sign — John's own word for the miracles: a deed that points past itself. Cana is 'the beginning of the signs' (2:11), first of the seven that structure the Gospel's first half — and the same root opens Revelation: 'he made it known in signs' (Rev 1:1).", ("John", 2, 11)),
+    ("hora", "hōra", "ὥρα", "hōra",
+     "The hour — 'my hour has not yet come' (2:4): John's clock-word for the cross-and-glory, ticking through the Gospel (7:30; 8:20) until at last 'the hour has come' (12:23; 13:1; 17:1).", ("John", 2, 4)),
+    ("ti-emoi-kai-soi", "ti emoi kai soi", "τί ἐμοὶ καὶ σοί", "ti emoi kai soi",
+     "'What to me and to you?' — a Hebrew idiom in Greek dress (mah-li valakh, Judges 11:12; 2 Samuel 16:10): 'is that our business?' Distance, not disrespect — Jesus to his mother at Cana (2:4).", ("John", 2, 4)),
+    ("metretes", "metrētēs", "μετρητής", "metrētēs",
+     "A liquid measure, roughly 39 liters. Six stone jars 'of two or three measures each' (2:6) — KJV's 'firkins' — put the good wine in the several-hundred-bottle range: the abundance is the point.", ("John", 2, 6)),
+    ("naos", "naos / hieron", "ναός / ἱερόν", "naos / hieron",
+     "Two temple-words: hieron, the whole precinct with its courts (where the traders sat, 2:14), and naos, the sanctuary-house itself — the word Jesus chooses for 'destroy this temple' (2:19), and John glosses: the naos of his body (2:21).", ("John", 2, 14)),
 ]
 
 ENCYCLOPEDIA = [
@@ -616,6 +627,46 @@ ENCYCLOPEDIA = [
               "flows in. The site is debated between the mounds of et-Tell and el-Araj.",
          refs=[("John", 1, 44)], coords=(32.910, 35.631, 0.09),
          modern="et-Tell / el-Araj, northern Sea of Galilee", approx=True, videos=[]),
+    dict(slug="cana", name="Cana of Galilee", kind="place", aliases=["Cana"],
+         desc="The Galilean village of the first sign — water into wine at a wedding (John 2:1-11); Nathanael's "
+              "hometown too (John 21:2), which salts his 'can anything good come out of Nazareth?' with local "
+              "rivalry. The site is disputed: Kafr Kanna, on the pilgrim route near Nazareth, has the churches; "
+              "Khirbet Qana, across the Bet Netofa valley, has the better archaeology (first-century village, "
+              "stone vessels, early pilgrim cave). Coordinates below take Khirbet Qana, marked approximate.",
+         refs=[("John", 2, 1), ("John", 2, 11)],
+         coords=(32.8214, 35.3010, 0.1), approx=True,
+         modern="Khirbet Qana (or Kafr Kanna), Galilee, Israel", videos=[]),
+    dict(slug="capernaum", name="Capernaum", kind="place", aliases=["Capernaum"],
+         desc="Kefar Nachum, 'village of Nahum' — a fishing town on the north shore of the Sea of Galilee that "
+              "becomes the base camp of Jesus' whole Galilean ministry ('his own city,' Matthew 9:1). It enters "
+              "this Gospel by a travel-verse (John 2:12) and hosts the bread-of-life discourse in its synagogue "
+              "(John 6:59); the synoptics add Peter's house and a string of healings — and Jesus' verdict on the "
+              "town that saw the most and believed the least: 'more bearable for Sodom' (Matthew 11:23-24). The "
+              "excavated site — the basalt-and-limestone synagogue and the house-church over Peter's house — is "
+              "among the best-preserved Gospel settings anywhere.",
+         refs=[("John", 2, 12)],
+         coords=(32.8809, 35.5753, 0.06),
+         modern="Tell Hum (Capernaum), north shore of the Sea of Galilee, Israel",
+         videos=[("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
+                  "https://www.youtube.com/watch?v=N0opJ2qGQs4")]),
+    dict(slug="jerusalem", name="Jerusalem", kind="place", aliases=["Jerusalem"],
+         desc="The holy city — entered by name in this translation's published chapters at John 2:13, though its "
+              "story here is far older: Genesis 14's SALEM, Melchizedek's city, is traditionally identified with "
+              "it (Psalm 76:2 makes the equation), and the war of the kings marched past its gates. In John, "
+              "Jesus goes up for the festivals — three Passovers structure the Gospel — and clears the temple's "
+              "courts at the first of them (2:13-22). The city of the temple, the passion, and, in Revelation's "
+              "last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
+         refs=[("John", 2, 13), ("John", 2, 23)],
+         coords=(31.7784, 35.2354, 0.12),
+         modern="Jerusalem", videos=[]),
+    dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
+         aliases=["the mother of Jesus"],
+         desc="Never once named in John's Gospel — she is simply 'the mother of Jesus,' present at exactly two "
+              "scenes that frame the whole story: the wedding at Cana, where her 'whatever he tells you, do it' "
+              "(2:5) is her last recorded sentence in scripture, and the foot of the cross, where Jesus gives "
+              "her to the beloved disciple ('Woman, look — your son,' 19:26-27). The synoptics and Acts supply "
+              "the name; John keeps her a role: the mother, first and last.",
+         refs=[("John", 2, 1), ("John", 2, 3), ("John", 2, 5), ("John", 2, 12)], videos=[]),
     dict(slug="nazareth", name="Nazareth", kind="place", aliases=["Nazareth"],
          desc="Jesus' obscure Galilean hometown, never named in the Old Testament — hence Nathanael's 'Can anything "
               "good come out of Nazareth?'",
@@ -901,6 +952,11 @@ XREFS = [
     ((20, 9),  (12, 18), "'What have you done to us?' — Pharaoh's question, asked again at Gerar"),
     ((20, 13), (19, 19), "chesed — Lot's word for rescue, spent by Abraham on the ruse arrangement"),
     ((20, 18), (16, 2),  "atsar — Sarai's 'kept me from bearing' shuts every womb in Abimelech's house"),
+    # ---- John 2 ----
+    (("John", 2, 11), ("Revelation", 1, 1), "sēmeion — 'the beginning of the signs' and 'he made it known in signs': one method, both ends of the shelf"),
+    (("John", 2, 21), ("John", 1, 14), "the naos of his body — the Word who 'tabernacled among us,' now the temple itself"),
+    (("John", 2, 1), ("John", 1, 29), "'on the third day' — the running week of days from chapter 1 ends in a wedding"),
+    (("John", 2, 25), (6, 5), "what is in the human — the heart Jehovah read before the flood, read now by the Word"),
     # ---- Revelation 1 ----
     (("Revelation", 1, 2), ("John", 1, 1), "the word of God — John's logos, now borne witness to from Patmos"),
     (("Revelation", 1, 8), (17, 1), "pantokratōr, 'the Almighty' — the Greek Bible's guess for El Shaddai, native at last"),
@@ -970,10 +1026,8 @@ VIDEO_QUEUE = [
     # ("Sodom burned—Zoar did NOT" — FULL PLACEMENT 2026-07-16 when Genesis 19 shipped:
     #  in-chapter vclip at 19:24, plus the sodom-gomorrah and zoar encyclopedia entries'
     #  embeds, their "preview" caveats removed.)
-    ("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
-     "https://www.youtube.com/watch?v=N0opJ2qGQs4",
-     "The Gospels (Jesus' Galilee ministry)",
-     "Capernaum as the base of Jesus' ministry; new encyclopedia entry when the Gospels begin."),
+    # ("Capernaum Unearthed" — PLACED 2026-07-16 when John 2 shipped: Capernaum
+    #  entered the text at John 2:12 and got its encyclopedia entry, video embedded.)
     ("Where Jesus Was Crucified: The archaeological evidence!",
      "https://www.youtube.com/watch?v=ufVXZBrbSsU",
      "The Gospels (the crucifixion narratives)",
@@ -1029,6 +1083,7 @@ VERSE_OF_DAY = [
     ("John", 1, 1, "John's first sentence opens before Genesis 1:1 does."),
     ("John", 1, 14, "The Word pitched his tent among us — the tabernacle, come back."),
     ("John", 1, 29, "Passover lamb and Isaiah's servant, gathered into one title by the Baptist."),
+    ("John", 2, 10, "The steward's astonished compliment — the sign's whole theology in one line."),
     ("Revelation", 1, 8, "The Alpha and the Omega — the Name unfolded into every tense at once."),
     ("Revelation", 1, 17, "The vision-word to Abram, spoken again at the canon's last vision: do not be afraid."),
 ]
@@ -1181,6 +1236,9 @@ CHRON_CHAPTERS = {
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
+    "john2": dict(era="gospels",
+                  when="The first sign at Cana; then the first Passover — the temple cleared.",
+                  clock="c. AD 27–28: 'forty-six years this temple has been under building' (2:20) counts from Herod's start in 20/19 BC — one of the Gospels' few countable dates."),
     "rev1": dict(era="apostolic",
                  when="John exiled on Patmos; the vision 'on the Lord's day' — the canon's last book opens.",
                  clock="c. AD 95 by the traditional dating (Irenaeus places the vision late in Domitian's reign); a minority argues for the late 60s, under Nero."),
@@ -1221,6 +1279,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
     # -- The Gospels --
     dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),
+    dict(era="gospels", am="—", trad="c. AD 27–28", event="The first sign at Cana; the temple cleared at the first Passover",
+         note="'Forty-six years this temple has been under building' (John 2:20): Josephus dates Herod's rebuild from 20/19 BC — one of the Gospels' few countable dates, and a peg for the whole ministry.",
+         ref=("John", 2, 20)),
     # -- The Apostolic Age --
     dict(era="apostolic", am="—", trad="c. AD 95", event="John, exiled on Patmos, sees the vision — 'I am the Alpha and the Omega'",
          note="Irenaeus (c. AD 180) places the vision 'toward the end of Domitian's reign' (d. 96); a minority tradition dates it under Nero, before 70. Reported, not settled.",

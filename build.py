@@ -83,6 +83,7 @@ CHAPTERS = [
     ("gen19", "Genesis", 19, "Sodom's last night — the two angels at the gate, sulfur and fire at sunrise, a pillar of salt, and the cave above Zoar."),
     ("gen20", "Genesis", 20, "The sister-ruse replayed at Gerar — Abimelech's dream, the Bible's first 'prophet,' and the pagan king with the integrity."),
     ("john1", "John", 1, "The Word made flesh — the Prologue and its “was God / a god,” the Lamb of God, and the first disciples."),
+    ("john2", "John", 2, "Water into wine at Cana — the beginning of the signs — and the temple cleared at the first Passover: “destroy this temple.”"),
     ("rev1", "Revelation", 1, "The unveiling begins — Patmos, the Lord's day, one like a son of man among the lampstands, and the Alpha and the Omega."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
