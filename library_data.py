@@ -229,6 +229,17 @@ DICTIONARY = [
      "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
     ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
      "Not a word but a MUSICAL MARK — the rarest cantillation sign in the Torah (four occurrences), a zigzag sung as a long wavering trill. It hangs over 'but he lingered' (19:16): the melody itself dawdles with Lot.", (19, 16)),
+    # ---- Revelation 1 (Greek) ----
+    ("apokalypsis", "apokalypsis", "ἀποκάλυψις", "apokalypsis",
+     "Unveiling, uncovering — the book's first word and its name ('Apocalypse' is this word left untranslated). Not 'catastrophe' but disclosure: the pulling-back of a curtain (Revelation 1:1).", ("Revelation", 1, 1)),
+    ("pantokrator", "pantokratōr", "παντοκράτωρ", "pantokratōr",
+     "'The Almighty' — literally 'the all-holding.' The Greek Bible's rendering of El Shaddai and 'Jehovah of armies'; the word the old English Bibles retro-fitted onto Shaddai (Genesis 17:1) is NATIVE at Revelation 1:8 — Revelation uses it nine times, the rest of the New Testament once.", ("Revelation", 1, 8)),
+    ("ho-on", "ho ōn", "ὁ ὢν", "ho ōn",
+     "'The One Who Is' — the Greek Bible's rendering of the divine name's explanation at the burning bush (Exodus 3:14). Revelation unfolds it into three tenses ('who is, and who was, and who is coming') and refuses to decline it — the deliberate grammar-break of 1:4.", ("Revelation", 1, 4)),
+    ("martys", "martys", "μάρτυς", "martys",
+     "Witness — Jesus 'the faithful witness' (Revelation 1:5). In Revelation the word begins its migration toward English 'martyr': the witness whose testimony costs blood.", ("Revelation", 1, 5)),
+    ("hades", "hadēs", "ᾅδης", "hadēs",
+     "Hades — the Greek Bible's rendering of the Hebrew Sheol, the grave-realm of the dead; NOT the fiery hell of later imagery (KJV prints 'hell' at Revelation 1:18). Christ holds its keys.", ("Revelation", 1, 18)),
 ]
 
 ENCYCLOPEDIA = [
@@ -552,8 +563,12 @@ ENCYCLOPEDIA = [
     dict(slug="jesus", name="Jesus", kind="person", aliases=["Jesus"],
          desc="Jesus of Nazareth, son of Joseph — the Word made flesh (1:14). Hailed by the Baptist as 'the Lamb of "
               "God' and 'the Chosen One of God,' and confessed by Nathanael as 'Son of God' and 'King of Israel'; he "
-              "names himself 'the Son of Man' (1:51).",
-         refs=[("John", 1, 17), ("John", 1, 29), ("John", 1, 36), ("John", 1, 42), ("John", 1, 45), ("John", 1, 50)],
+              "names himself 'the Son of Man' (1:51). In Revelation's opening vision he is 'the faithful witness, "
+              "the firstborn of the dead, and the ruler of the kings of the earth' (Rev 1:5) — one like a son of man "
+              "among the lampstands, wearing the Ancient of Days' own description, who says 'I am the first and the "
+              "last... and I was dead, and look: I am alive forever' (Rev 1:13-18).",
+         refs=[("John", 1, 17), ("John", 1, 29), ("John", 1, 36), ("John", 1, 42), ("John", 1, 45), ("John", 1, 50),
+               ("Revelation", 1, 1), ("Revelation", 1, 5), ("Revelation", 1, 9)],
          videos=[]),
     dict(slug="andrew", name="Andrew", kind="person", aliases=["Andrew"],
          desc="Simon Peter's brother and one of the Baptist's disciples — the first to follow Jesus. He finds his "
@@ -692,6 +707,33 @@ ENCYCLOPEDIA = [
               "great-grandmother of David (Ruth 4:17), named in the genealogy of Jesus (Matthew 1:5).",
          refs=[(19, 37), (19, 38)], videos=[]),
 
+    # ---- Revelation 1 ----
+    dict(slug="john-of-patmos", name="John (of Revelation)", kind="person", aliases=["John"],
+         desc="The seer of Revelation names himself only 'John — your brother, and companion in the affliction' "
+              "(1:9). Tradition from the second century (Justin Martyr, Irenaeus) identifies him with the apostle, "
+              "son of Zebedee, author of the Gospel; but the question is ancient — Dionysius of Alexandria "
+              "(3rd century) already argued from style that the Gospel's smooth Greek and Revelation's wild, "
+              "Hebrew-boned Greek cannot come from one hand, and proposed a second John, 'John of Patmos.' The "
+              "book claims only the name; the church kept it either way. Reported, not settled.",
+         refs=[("Revelation", 1, 1), ("Revelation", 1, 4), ("Revelation", 1, 9)], videos=[]),
+    dict(slug="patmos", name="Patmos", kind="place",
+         desc="A small rocky island of the Dodecanese, off the coast of Asia Minor — some 60 km from Miletus. "
+              "Rome used such islands for banishment, and John 'came to be' here 'because of the word of God and "
+              "the testimony of Jesus' (1:9) — exile for preaching, on the natural reading. Here, 'in the Spirit "
+              "on the Lord's day,' he saw the vision; the island's Cave of the Apocalypse has been shown to "
+              "pilgrims as the spot since Byzantine times.",
+         refs=[("Revelation", 1, 9)],
+         coords=(37.309, 26.547, 0.08),
+         modern="Patmos, Dodecanese, Greece", videos=[]),
+    dict(slug="seven-churches", name="The Seven Churches of Asia", kind="place",
+         aliases=["seven churches"],
+         desc="Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, Laodicea (1:11) — seven congregations "
+              "of the Roman province of Asia (western Asia Minor), listed in exact courier's order: up the coast, "
+              "then inland and south. Revelation is a circular letter, and the list is its postal route. Each "
+              "receives its own letter in chapters 2–3 (coming); the cities will get their own entries as their "
+              "letters arrive.",
+         refs=[("Revelation", 1, 4), ("Revelation", 1, 11), ("Revelation", 1, 20)], videos=[]),
+
     # ---- the divine name ----
     dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
          desc="The personal name of God — the four Hebrew letters יהוה (YHWH, the Tetragrammaton), which this "
@@ -819,6 +861,11 @@ XREFS = [
     ((19, 27), (18, 22), "'the place where he had stood before Jehovah' — Abraham returns to yesterday's courtroom"),
     ((19, 29), (8, 1),   "zakhar — 'God remembered Noah' / 'God remembered Abraham': the remembering that acts, at both rescues"),
     ((19, 3),  (18, 6),  "the hospitality mirror — Lot's midnight urgency repeats Abraham's noon: rise, bow, press, bake"),
+    # ---- Revelation 1 ----
+    (("Revelation", 1, 2), ("John", 1, 1), "the word of God — John's logos, now borne witness to from Patmos"),
+    (("Revelation", 1, 8), (17, 1), "pantokratōr, 'the Almighty' — the Greek Bible's guess for El Shaddai, native at last"),
+    (("Revelation", 1, 8), (2, 4), "'the one who is, and who was, and who is coming' — the divine name unfolded into tenses"),
+    (("Revelation", 1, 17), (15, 1), "'do not be afraid' — the word to Abram at the Bible's first vision, spoken again at its last"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -942,6 +989,8 @@ VERSE_OF_DAY = [
     ("John", 1, 1, "John's first sentence opens before Genesis 1:1 does."),
     ("John", 1, 14, "The Word pitched his tent among us — the tabernacle, come back."),
     ("John", 1, 29, "Passover lamb and Isaiah's servant, gathered into one title by the Baptist."),
+    ("Revelation", 1, 8, "The Alpha and the Omega — the Name unfolded into every tense at once."),
+    ("Revelation", 1, 17, "The vision-word to Abram, spoken again at the canon's last vision: do not be afraid."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1025,6 +1074,7 @@ CHRON_ERAS = [
     ("postflood",  "After the Flood"),
     ("patriarchs", "The Patriarchs"),
     ("gospels",    "The Gospels"),
+    ("apostolic",  "The Apostolic Age"),
 ]
 
 CHRON_CHAPTERS = {
@@ -1088,6 +1138,9 @@ CHRON_CHAPTERS = {
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
+    "rev1": dict(era="apostolic",
+                 when="John exiled on Patmos; the vision 'on the Lord's day' — the canon's last book opens.",
+                 clock="c. AD 95 by the traditional dating (Irenaeus places the vision late in Domitian's reign); a minority argues for the late 60s, under Nero."),
 }
 
 CHRON_EVENTS = [
@@ -1124,4 +1177,8 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
     # -- The Gospels --
     dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),
+    # -- The Apostolic Age --
+    dict(era="apostolic", am="—", trad="c. AD 95", event="John, exiled on Patmos, sees the vision — 'I am the Alpha and the Omega'",
+         note="Irenaeus (c. AD 180) places the vision 'toward the end of Domitian's reign' (d. 96); a minority tradition dates it under Nero, before 70. Reported, not settled.",
+         ref=("Revelation", 1, 9)),
 ]
