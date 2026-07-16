@@ -196,6 +196,17 @@ DICTIONARY = [
      "'God of seeing' — the name Hagar confers at 16:13: 'the God who sees me,' or 'the God whom I have seen'; the grammar holds both. The only name a person gives TO God in the Bible; the well Beer-lahai-roi preserves it.", (16, 13)),
     ("pere", "pere", "פֶּרֶא", "pere",
      "The wild donkey of the steppe — untamable, masterless, at home in the wilderness (Job 39:5-8 sings its freedom). 'A wild donkey of a man' (16:12) is Ishmael's freedom-oracle, not a slur.", (16, 12)),
+    # ---- Genesis 17 (Hebrew) ----
+    ("shaddai", "El Shaddai", "אֵל שַׁדַּי", "El Shaddai",
+     "The name God announces at 17:1. 'Almighty' is the Greek-and-Latin guess (LXX pantokrator, Vulgate omnipotens); the Hebrew meaning is uncertain — 'God of the mountain' (Akkadian shadu), the steppe, or a fertility word (Genesis 49:25 sets 'Shaddai' beside 'blessings of the breasts, shaddayim, and of the womb'). Kept untranslated here, as a name.", (17, 1)),
+    ("tamim", "tamim", "תָּמִים", "tamim",
+     "Whole, sound, blameless — integrity of a piece, not sinless perfection. Noah's word (6:9); asked of Abraham at 17:1: 'walk before me and be blameless.'", (6, 9)),
+    ("mul", "mul / himmol", "מוּל", "mul",
+     "To circumcise — the covenant's sign cut into the flesh (17:10-14), at eight days old, house-born and money-bought alike; the male who refuses the cutting is himself 'cut off' (karet) — the penalty rhymes with the refusal.", (17, 10)),
+    ("hamon", "hamon", "הֲמוֹן", "hamon",
+     "A multitude, a roaring crowd — the word folded into Abraham's new name: av hamon goyim, 'father of a multitude of nations' (17:4-5).", (17, 4)),
+    ("tsachaq", "tsachaq", "צָחַק", "tsachaq",
+     "To laugh — Abraham's face-down laugh at 17:17 mints the name Isaac (Yitschaq, 'he laughs'); Sarah's laugh (18:12) and her 'God has made laughter for me' (21:6) keep the pun running.", (17, 17)),
 ]
 
 ENCYCLOPEDIA = [
@@ -463,19 +474,23 @@ ENCYCLOPEDIA = [
               "orphan in Abram's care, and hands the caravan city the family later stops at (Haran) a name that, "
               "confusingly, doubles his own — the two are not shown to be connected.",
          refs=[(11, 26), (11, 27), (11, 28), (11, 29), (11, 31)], videos=[]),
-    dict(slug="abram", name="Abram", kind="person",
+    dict(slug="abram", name="Abram / Abraham", kind="person", aliases=["Abram", "Abraham"],
          desc="Called at 75 from Haran (12:1-4): land, nation, great name, and blessing for 'all the families of the "
               "ground' — Babel's grasped-at name, given instead. Answers with altars at Shechem and Bethel; flinches "
-              "into the wife-sister ruse in Egypt (12:10-20). His story has just begun.",
-         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10)],
+              "into the wife-sister ruse in Egypt (12:10-20). At 99, in the covenant of circumcision, God renames him "
+              "ABRAHAM — 'father of a multitude of nations' (17:5), the first person in the Bible God renames — and "
+              "he laughs face-down at the promise of a son (17:17).",
+         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10), (17, 1), (17, 5), (17, 17), (17, 23)],
          videos=[("EXPEDITION ABRAHAM: his whole journey, from Ur to the Promised Land",
                   "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
-    dict(slug="sarai", name="Sarai", kind="person",
+    dict(slug="sarai", name="Sarai / Sarah", kind="person", aliases=["Sarai", "Sarah"],
          desc="Abram's wife — introduced with the sentence everything turns on: 'Now Sarai was barren; she had no "
               "child' (11:30). Endangered by the sister-story in Pharaoh's house (12:11-20). After ten childless "
               "years in Canaan she gives her slave-girl Hagar to Abram as a surrogate (16:1-3) — then, despised "
-              "in the pregnant girl's eyes, afflicts her until she flees (16:4-6).",
-         refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6)], videos=[]),
+              "in the pregnant girl's eyes, afflicts her until she flees (16:4-6). At the covenant of circumcision "
+              "God renames her SARAH — both forms mean 'princess' — and fastens the promise to her own body: 'kings "
+              "of peoples shall come from her' (17:15-16); the first woman in the Bible God renames.",
+         refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6), (17, 15), (17, 19), (17, 21)], videos=[]),
     dict(slug="lot", name="Lot", kind="person",
          desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5) "
               "— planted in the story for consequences still ahead.",
@@ -597,10 +612,12 @@ ENCYCLOPEDIA = [
     dict(slug="ishmael", name="Ishmael", kind="person",
          desc="'God hears' (yishma-El) — named by the angel for the affliction Jehovah heard (16:11), born when "
               "Abram was 86 (16:15-16), and his only son for the next thirteen years. The oracle makes him 'a "
-              "wild donkey of a man' (16:12): steppe-free, masterless. Genesis gives him twelve princes "
-              "(25:12-16) and a place beside Isaac at their father's grave (25:9); later tradition — Jewish, "
-              "Christian, and Islamic — remembers him as ancestor of the Arab peoples.",
-         refs=[(16, 11), (16, 15), (16, 16)], videos=[]),
+              "wild donkey of a man' (16:12): steppe-free, masterless. At thirteen he is circumcised beside his "
+              "father on the covenant's first day (17:23-26), and 'as for Ishmael, I have heard you' (17:20) "
+              "honors his name even as the covenant passes to Isaac. Genesis gives him twelve princes (25:12-16) "
+              "and a place beside Isaac at their father's grave (25:9); later tradition — Jewish, Christian, and "
+              "Islamic — remembers him as ancestor of the Arab peoples.",
+         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25)], videos=[]),
     dict(slug="shur", name="Shur", kind="place",
          desc="'Wall' — the desert fronting Egypt's north-east frontier, possibly named for the Egyptian line of "
               "border forts, and crossed by the caravan road from Canaan. Hagar is found 'on the way to Shur' "
@@ -620,6 +637,15 @@ ENCYCLOPEDIA = [
               "base-camp of the Exodus generation (Numbers 13-20).",
          refs=[(14, 7), (16, 14)], coords=(30.6486, 34.4214, 0.2),
          modern="Ein el-Qudeirat (Tell el-Qudeirat), north-east Sinai", videos=[]),
+
+    # ---- Genesis 17 ----
+    dict(slug="isaac", name="Isaac", kind="person",
+         desc="Yitschaq, 'he laughs' — named by God before he is conceived, from Abraham's own face-down laugh "
+              "(17:17-19), and given the first hard date on the promise: 'at this appointed time next year' "
+              "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
+              "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
+              "later be his home (24:62; 25:11).",
+         refs=[(17, 19), (17, 21)], videos=[]),
 
     # ---- the divine name ----
     dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
@@ -723,6 +749,15 @@ XREFS = [
     ((16, 6),  (15, 13), "anah, 'afflict' — prophesied of Israel in Egypt, dealt first by Israel's house to an Egyptian"),
     ((16, 10), (15, 5),  "beyond counting — the star-promise's counting verb, spoken to a slave-girl"),
     ((16, 14), (14, 7),  "Kadesh — the En-mishpat of the war of the kings fixes Beer-lahai-roi on the map"),
+    # ---- Genesis 17 ----
+    ((17, 1),  (6, 9),   "tamim + the walking verb — Noah 'blameless, walked WITH God'; Abram told to walk BEFORE him"),
+    ((17, 5),  (12, 2),  "'I will make your name great' — now God remakes the name itself: Abram becomes Abraham"),
+    ((17, 7),  (9, 16),  "brit olam, 'everlasting covenant' — the bow's phrase, now written in the flesh"),
+    ((17, 11), (9, 12),  "'the sign of the covenant' — hung in the sky for Noah, carried in the body here"),
+    ((17, 14), (15, 18), "karat — a covenant is 'cut'; the male who refuses the cutting is 'cut off'"),
+    ((17, 19), (16, 11), "'you shall call his name…' — the annunciation formula, spoken over Ishmael, now over Isaac"),
+    ((17, 20), (16, 11), "'I have heard you' (shema'tikha) — God answers with the very verb of Ishmael's name"),
+    ((17, 23), (7, 13),  "'on that very same day' — Noah's boarding formula, stamped on Abraham's same-day obedience"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -842,6 +877,7 @@ VERSE_OF_DAY = [
     (13, 16, "Offspring like the dust of the earth — the promise made physical."),
     (15, 6, "Trust, counted as righteousness — the sentence Paul and James both built on."),
     (16, 13, "Hagar — the only person in the Bible to give God a name: the God who sees me."),
+    (17, 1, "El Shaddai's one command to a 99-year-old: walk before me, and be whole."),
 ]
 
 # ---------------------------------------------------------------------------
