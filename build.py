@@ -1269,16 +1269,17 @@ def build_index(chapters):
   </div>
   </div>
   <figure class="hero-fig">
-    <img src="img/shrine-of-the-book.jpg" width="1280" height="791" loading="lazy"
-      alt="The Shrine of the Book at the Israel Museum, Jerusalem — the white dome, shaped like the lid of the jars the Dead Sea Scrolls were found in, ringed by fountain jets"/>
+    <img src="img/aleppo-codex-shrine.jpg" width="1280" height="819" loading="lazy"
+      alt="The Aleppo Codex, open in its glowing display case inside the Shrine of the Book, Jerusalem — the masterpiece codex of the Masoretic Hebrew text"/>
     <figcaption>
-      <span class="ms-name">The Shrine of the Book — Jerusalem</span>
-      The Israel Museum wing built to house the <em>Dead Sea Scrolls</em> — at two thousand years old, the
-      oldest surviving manuscripts of the Hebrew Bible, and witnesses this project's notes consult. Its white
-      dome takes the shape of the lids of the jars the scrolls were found sealed inside at Qumran.
-      <span class="ms-credit">Photo: Dan Lundberg — via
-      <a href="https://commons.wikimedia.org/wiki/File:20110225_Israel_0412_Jerusalem_(5539903749).jpg" rel="noopener">Wikimedia Commons</a> ·
-      <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="noopener">CC BY-SA 2.0</a></span>
+      <span class="ms-name">Inside the Shrine of the Book — Jerusalem</span>
+      The <em>Aleppo Codex</em> — "the Crown" — glowing in its case in the Shrine of the Book, the Israel
+      Museum's home for the <em>Dead Sea Scrolls</em>. It is the masterpiece manuscript of the
+      <strong>Masoretic Text</strong> — the very Hebrew this translation is made from — written a thousand
+      years after the two-thousand-year-old scrolls in the vaults around it.
+      <span class="ms-credit">Photo: Government Press Office (Israel) — via
+      <a href="https://commons.wikimedia.org/wiki/File:Flickr_-_Government_Press_Office_(GPO)_-_The_Dead_Sea_Scrolls.jpg" rel="noopener">Wikimedia Commons</a> ·
+      <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener">CC BY-SA 3.0</a></span>
     </figcaption>
   </figure>
   </div>
