@@ -69,7 +69,7 @@ DICTIONARY = [
     ("brit", "brit", "בְּרִית", "brit",
      "Covenant. First promised at 6:18, first enacted (with all flesh, unconditionally) in Genesis 9 — the word that structures the rest of the Bible.", (6, 18)),
     ("chen", "chen", "חֵן", "chen",
-     "Favor, grace. First appearance: 'Noah found favor in the eyes of the LORD' — and chen reverses the letters of Noach.", (6, 8)),
+     "Favor, grace. First appearance: 'Noah found favor in the eyes of Jehovah' — and chen reverses the letters of Noach.", (6, 8)),
     ("chamas", "chamas", "חָמָס", "chamas",
      "Violence, lawless wrong — the earth's indictment before the flood, named twice.", (6, 11)),
     ("elohim", "Elohim", "אֱלֹהִים", "Elohim",
@@ -145,20 +145,20 @@ DICTIONARY = [
     ("tsela", "tsela", "צֵלָע", "tsela",
      "Side — everywhere else a structural side (tabernacle, ark, temple), never a rib bone; this translation's 'side, not rib' at 2:21 rests on that usage.", (2, 21)),
     ("yhvh", "YHVH", "יְהוָה", "YHVH (the Tetragrammaton)",
-     "The personal name of God, first at 2:4 — printed 'the LORD' (small caps) by longstanding convention; 'Jehovah' in the NWT.", (2, 4)),
+     "The personal name of God (יהוה), first here at 2:4. Most English Bibles hide it behind the title 'the LORD' (small caps); this translation restores it as <strong>Jehovah</strong> — the traditional English form since about the 1200s, used throughout the ASV and by the NWT. ('Jehovah' is a hybrid, the consonants with Adonai's vowels; scholars reconstruct the original as 'Yahweh.') The full discussion is on the <a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>.", (2, 4)),
     ("yada", "yada", "יָדַע", "yada",
      "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1).", (4, 1)),
     ("zakhar-remember", "zakhar", "זָכַר", "zakhar",
      "To remember — divine remembering that acts: 'God remembered Noah' turns the flood (8:1); God looks at the bow 'to remember' (9:16).", (8, 1)),
     # ---- John 1 (Greek) ----
     ("logos", "logos", "λόγος", "logos",
-     "Word, reason, account — John's term for the pre-existent Christ, fusing the Hebrew 'word of the LORD' by which the world was made (Genesis 1's ten-fold 'and God said') with the Greek philosophers' logos, the reason that orders the cosmos.", ("John", 1, 1)),
+     "Word, reason, account — John's term for the pre-existent Christ, fusing the Hebrew 'word of Jehovah' by which the world was made (Genesis 1's ten-fold 'and God said') with the Greek philosophers' logos, the reason that orders the cosmos.", ("John", 1, 1)),
     ("monogenes", "monogenes", "μονογενής", "monogenēs",
      "'One of a kind, an only child' (mono-, 'only,' + genos, 'kind/kin') — NOT 'only-begotten,' which came through the Latin unigenitus and reads a later doctrine into the word. Rendered here 'the only Son.'", ("John", 1, 14)),
     ("eskenosen", "eskenosen", "ἐσκήνωσεν", "eskēnōsen",
-     "'Tented, tabernacled' (from skēnē, 'tent') — the Word 'pitched his tent among us,' echoing the tabernacle where the LORD's glory came to dwell with Israel (Exodus 40).", ("John", 1, 14)),
+     "'Tented, tabernacled' (from skēnē, 'tent') — the Word 'pitched his tent among us,' echoing the tabernacle where Jehovah's glory came to dwell with Israel (Exodus 40).", ("John", 1, 14)),
     ("charis", "charis", "χάρις", "charis",
-     "Grace, favor, gift — paired with 'truth' (alētheia) it renders the Hebrew chesed ve-emet, 'steadfast love and faithfulness,' the LORD's self-description to Moses in Exodus 34:6.", ("John", 1, 14)),
+     "Grace, favor, gift — paired with 'truth' (alētheia) it renders the Hebrew chesed ve-emet, 'steadfast love and faithfulness,' Jehovah's self-description to Moses in Exodus 34:6.", ("John", 1, 14)),
     ("christos", "Christos", "Χριστός", "Christos",
      "'Anointed' — the Greek for the Hebrew/Aramaic Messiah (mashiach); a title, not a surname. John glosses the Aramaic 'Messiah' with the Greek 'Christ' at 1:41.", ("John", 1, 17)),
     ("amnos", "amnos", "ἀμνός", "amnos",
@@ -178,7 +178,7 @@ DICTIONARY = [
      "A tenth, a tithe — the Bible's first, given by Abram to Melchizedek (14:20).", (14, 20)),
     # ---- Genesis 15 (Hebrew) ----
     ("aman", "he'emin / aman", "הֶאֱמִן / אָמַן", "he'emin / aman",
-     "To trust, to lean one's weight on — the root behind 'amen.' 'Abram believed the LORD, and he counted it to him as righteousness' (15:6), the verse Paul and James both build on.", (15, 6)),
+     "To trust, to lean one's weight on — the root behind 'amen.' 'Abram believed Jehovah, and he counted it to him as righteousness' (15:6), the verse Paul and James both build on.", (15, 6)),
     ("tzedaqah", "tzedaqah", "צְדָקָה", "tzedaqah",
      "Righteousness, right standing — reckoned to Abram on account of his trust (15:6), granted rather than earned.", (15, 6)),
     ("magen", "magen", "מָגֵן", "magen",
@@ -356,7 +356,7 @@ ENCYCLOPEDIA = [
          coords=(30.05, 31.23, 4.0), approx=True,
          modern="Egypt — the Cairo/Nile Delta area"),
     dict(slug="jordan-plain", name="The Plain of the Jordan (Kikkar)", kind="place", aliases=["the plain of the Jordan"],
-         desc="The round, well-watered lower Jordan valley (13:10) — 'like the garden of the LORD, like the land "
+         desc="The round, well-watered lower Jordan valley (13:10) — 'like the garden of Jehovah, like the land "
               "of Egypt' — that Lot chooses (13:11) over staying with Abram. Its beauty and its coming ruin are "
               "named in the very same verse.",
          refs=[(13, 10), (13, 11), (13, 12)], videos=[],
@@ -407,7 +407,7 @@ ENCYCLOPEDIA = [
          refs=[(4, 2), (4, 8), (4, 10)], videos=[]),
     dict(slug="seth", name="Seth", kind="person",
          desc="'Appointed' (shat) in place of Abel (4:25); the line of promise runs through him — and in his days "
-              "'people began to call on the name of the LORD' (4:26).",
+              "'people began to call on the name of Jehovah' (4:26).",
          refs=[(4, 25), (5, 3)], videos=[]),
     dict(slug="enoch-cain-son", name="Enoch (Cain's son)", kind="person", aliases=["Enoch"],
          desc="Cain's son (4:17) — not the man who walked with God two chapters later (5:21-24), a different Enoch "
@@ -436,7 +436,7 @@ ENCYCLOPEDIA = [
               "Canaan (9:22-27); Japheth's coastland peoples spread west.",
          refs=[(5, 32), (9, 18), (9, 23), (10, 1)], videos=[]),
     dict(slug="nimrod", name="Nimrod", kind="person",
-         desc="'The first mighty man on the earth… a mighty hunter before the LORD' (10:8-9) — the Table of Nations' "
+         desc="'The first mighty man on the earth… a mighty hunter before Jehovah' (10:8-9) — the Table of Nations' "
               "only biography. His kingdom starts at Babel and extends to Nineveh: empire, personified, and the "
               "setup for the tower story.",
          refs=[(10, 8), (10, 9), (10, 10)],
@@ -572,6 +572,20 @@ ENCYCLOPEDIA = [
               "Egypt's frontier.",
          refs=[(15, 18)], coords=(31.13, 33.80, 0.2), approx=True,
          modern="Wadi el-Arish (the Brook of Egypt), Sinai", videos=[]),
+
+    # ---- the divine name ----
+    dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
+         desc="The personal name of God — the four Hebrew letters יהוה (YHWH, the Tetragrammaton), which this "
+              "translation prints as <strong>Jehovah</strong> wherever the Hebrew has the name. It first appears at "
+              "Genesis 2:4 (paired with Elohim, 'God') and occurs some 6,800 times in the Hebrew Bible. Ancient "
+              "Jewish practice avoided pronouncing it, saying <em>Adonai</em> ('Lord') in its place, so the Greek "
+              "and Latin Bibles and most English versions substitute the title — 'the LORD' in small capitals. "
+              "'Jehovah' is the traditional English form (from about the thirteenth century; used throughout the "
+              "American Standard Version and by the New World Translation) — a hybrid of the consonants YHWH with "
+              "the vowels of <em>Adonai</em>; scholars reconstruct the original pronunciation as 'Yahweh.' The full "
+              "discussion, and why this project chose 'Jehovah,' is on the "
+              "<a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>.",
+         refs=[(2, 4)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -624,8 +638,8 @@ XREFS = [
     ((3, 8),  (6, 9),   "hithalekh — the garden verb again: Noah walked with God"),
     ((4, 15), (4, 24),  "sevenfold — God's protective vengeance, inflated to Lamech's seventy-seven"),
     ((4, 17), (5, 21),  "two Enochs — Cain's city-son and the Enoch who walked with God"),
-    ((4, 26), (12, 8),  "'called on the name of the LORD' — the formula, from Enosh to Abram's altar"),
-    ((5, 29), (6, 6),   "nacham — Noah's 'comfort' returns as the LORD's 'regret'"),
+    ((4, 26), (12, 8),  "'called on the name of Jehovah' — the formula, from Enosh to Abram's altar"),
+    ((5, 29), (6, 6),   "nacham — Noah's 'comfort' returns as Jehovah's 'regret'"),
     ((5, 32), (9, 29),  "Noah's ledger entry — opened without a total, closed after the flood"),
     ((6, 4),  (10, 8),  "gibbor — the mighty men of old, and Nimrod the first mighty man after"),
     ((6, 5),  (8, 21),  "the heart's evil inclination — grounds for the flood, then grounds for mercy"),
@@ -762,7 +776,7 @@ VERSE_OF_DAY = [
     (5, 24, "Enoch: two verses, and then he's simply not there anymore."),
     (6, 8, "One line turns the whole flood story: Noah found favor."),
     (6, 22, "“Exactly so he did” — Noah's entire character, in four words."),
-    (7, 16, "“Then the LORD shut him in” — the door closes itself, once the choosing is over."),
+    (7, 16, "“Then Jehovah shut him in” — the door closes itself, once the choosing is over."),
     (8, 22, "A promise that the seasons will keep turning, for as long as the earth lasts."),
     (9, 13, "The bow in the clouds — not a rainbow decoration, a hung weapon, put away."),
     (11, 4, "“Let us make a name for ourselves” — the ambition that becomes Babel."),

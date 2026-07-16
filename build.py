@@ -66,8 +66,8 @@ CHAPTERS = [
     ("gen3", "Genesis", 3, "The serpent, the fall, and the naked/crafty pun that spans the chapter break."),
     ("gen4", "Genesis", 4, "Cain and Abel, the first murder, and “am I my brother’s keeper?”"),
     ("gen5", "Genesis", 5, "Ten generations, one drumbeat — and the one man who never dies."),
-    ("gen6", "Genesis", 6, "The sons of God, the Nephilim, the LORD’s regret, and the ark."),
-    ("gen7", "Genesis", 7, "The flood: creation run in reverse, and “the LORD shut him in.”"),
+    ("gen6", "Genesis", 6, "The sons of God, the Nephilim, Jehovah’s regret, and the ark."),
+    ("gen7", "Genesis", 7, "The flood: creation run in reverse, and “Jehovah shut him in.”"),
     ("gen8", "Genesis", 8, "God remembers Noah — the raven, the dove, and the first altar."),
     ("gen9", "Genesis", 9, "Meat and blood, the first law, and the bow hung in the clouds."),
     ("gen10", "Genesis", 10, "The Table of Nations: the whole known world, drawn as one family tree."),
@@ -1571,7 +1571,10 @@ exactly how this series grows.</p>
 <div class="cardgrid">
   <a class="card" href="ask-jesus-god.html"><div class="card-t">Was the Word "God," or "a god"?</div>
   <div class="card-d">John 1:1 and the deity of Christ — the Greek of the missing article, "firstborn of all
-  creation," the Angel of the LORD, and the whole argument laid out on both sides.</div></a>
+  creation," the Angel of Jehovah, and the whole argument laid out on both sides.</div></a>
+  <a class="card" href="ask-jehovah.html"><div class="card-t">Why does this translation say "Jehovah"?</div>
+  <div class="card-d">The name of God — the four letters behind "the LORD," why almost every Bible hides it, and
+  the choice between "the LORD," "Yahweh," and "Jehovah."</div></a>
   <a class="card" href="ask-enoch.html"><div class="card-t">Why isn't the Book of Enoch in this translation?</div>
   <div class="card-d">The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea
   Scrolls.</div></a>
@@ -1691,13 +1694,13 @@ def build_ask_jesus_god():
   <p><strong>He prays.</strong> "Our Father who art in heaven" — spoken by a man on earth, to the Father in
   heaven. He cannot be praying to himself. Whoever the Word is, he is not the one he addresses.</p>
   <p><strong>"The firstborn of all creation" (Colossians 1:15),</strong> "the beginning of the creation of God"
-  (Revelation 3:14), and Wisdom, whom "the LORD created at the beginning of his work" (Proverbs 8:22, in the
+  (Revelation 3:14), and Wisdom, whom "Jehovah created at the beginning of his work" (Proverbs 8:22, in the
   Greek Old Testament). On this reading the Son <em>had a beginning</em> — and the model is elegant: the Father,
   the unmade Architect, brings forth one first and supreme being, the Word, and then makes everything else
   <em>through</em> him, the master builder. "All things came to be through him" is satisfied without making the
   builder himself unmade.</p>
-  <p><strong>The Angel of the LORD.</strong> "I send an angel before you... obey his voice... <em>for my name is
-  in him</em>" (Exodus 23:20–21). Throughout the Old Testament a figure called the Angel of the LORD appears,
+  <p><strong>The Angel of Jehovah.</strong> "I send an angel before you... obey his voice... <em>for my name is
+  in him</em>" (Exodus 23:20–21). Throughout the Old Testament a figure called the Angel of Jehovah appears,
   speaks as God, bears the divine Name, and leads Israel out of Egypt (Exodus 14:19). Read this way, the "God" who
   <em>appears and speaks</em> in the Old Testament is the Word — Yahweh's spokesman and agent — while the supreme,
   invisible God is the Father ("no one has ever seen God," John 1:18; "his voice you have never heard, his form
@@ -1726,7 +1729,7 @@ def build_ask_jesus_god():
   the Son firstborn — "<strong>for</strong> in him all things were created... and he is <em>before</em> all
   things" (Colossians 1:16–17): the title is grounded in his being Creator and sustainer, not the first creature.
   Greek even had a word for "first-created" (<em>prōtoktistos</em>); Paul pointedly did not use it.</p>
-  <p><strong>God says he created alone.</strong> "I am the LORD, who made all things, who stretched out the heavens
+  <p><strong>God says he created alone.</strong> "I am Jehovah, who made all things, who stretched out the heavens
   <em>alone</em>, who spread out the earth <em>by myself</em>" (Isaiah 44:24). A general-contractor creature doing
   the building makes that false — unless the "through whom" belongs to the one Creator's own act.</p>
   <p><strong>Hebrews 1 all but forbids reading the Son as an angel.</strong> "To which of the <em>angels</em> did
@@ -1755,7 +1758,7 @@ def build_ask_jesus_god():
   like a tool but is of the Father's own being.</p>
 </div>
 
-<h2>The Angel of the LORD, and Michael the archangel</h2>
+<h2>The Angel of Jehovah, and Michael the archangel</h2>
 <div class="panel prose">
   <p>This deserves its own weighing, because half of it is strong on any reading. That the Old Testament's
   <em>visible, speaking</em> God is the pre-incarnate Word — Yahweh's face and voice for the invisible Father —
@@ -1769,9 +1772,9 @@ def build_ask_jesus_god():
   "before Abraham was, <em>I am</em>" (John 8:58), he is claiming to be that very "I AM." Identifying the
   Old Testament God-figure with the Word makes him <em>greater</em>, not smaller.</p>
   <p>Is that Word a <em>created</em> archangel? "Angel" (<em>malʾakh</em>, <em>angelos</em>) means
-  <strong>messenger — one sent</strong>; it names a job, not a nature. So the Word can be "the Messenger of the
-  LORD" while being divine. And three things resist the identification of the Son with the creature Michael:
-  the Angel of the LORD <em>receives worship</em>, speaks as God ("I am the God of Bethel," Genesis 31:13), and
+  <strong>messenger — one sent</strong>; it names a job, not a nature. So the Word can be "the Messenger of Jehovah"
+  while being divine. And three things resist the identification of the Son with the creature Michael:
+  the Angel of Jehovah <em>receives worship</em>, speaks as God ("I am the God of Bethel," Genesis 31:13), and
   bears the Name — where created angels refuse worship; <strong>Hebrews 1</strong> spends a chapter proving the
   Son is <em>above</em> the angels, worshiped <em>by</em> them, and the Creator; <strong>Colossians 1:16</strong>
   says the Son created the angelic ranks ("thrones, dominions, rulers, authorities") — so he made Michael; and
@@ -1842,10 +1845,128 @@ def build_ask_jesus_god():
 </div>"""
     out = page(f"Ask Mr. Librarian: was the Word God, or a god? — {SITE_NAME}", body, active="ask",
                desc="John 1:1 and the deity of Christ: the Greek grammar of the missing article (Colwell, "
-                    "Harner), the three readings, 'firstborn of all creation,' the Angel of the LORD and Michael "
+                    "Harner), the three readings, 'firstborn of all creation,' the Angel of Jehovah and Michael "
                     "the archangel, the earliest manuscripts, and the whole case on both sides — laid out, not "
                     "settled.")
     open(os.path.join(OUT, "ask-jesus-god.html"), "w", encoding="utf-8").write(out)
+
+
+def build_ask_jehovah():
+    """Ask Mr. Librarian post explaining the divine-name choice: the Tetragrammaton,
+    why nearly every Bible hides it behind 'the LORD,' Yahweh vs. Jehovah, and why this
+    project restores the traditional English form 'Jehovah.'"""
+    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+<h1 class="pagetitle">Why does this translation say &ldquo;Jehovah&rdquo;?</h1>
+<h2 style="margin-top:2px">The name of God &mdash; the LORD, Yahweh, or Jehovah</h2>
+
+<div class="qbox">
+  <div class="qlabel">A reader asked</div>
+  <p>&ldquo;Most Bibles say &lsquo;the L<span style="font-variant:small-caps">ord</span>.&rsquo; Why does this one
+  print &lsquo;Jehovah&rsquo;? And isn&rsquo;t the Hebrew name really &lsquo;Yahweh&rsquo;?&rdquo;</p>
+</div>
+
+<div class="panel prose">
+  <p><strong>The short answer.</strong> Behind the English word &ldquo;L<span
+  style="font-variant:small-caps">ord</span>&rdquo; in most Bibles stands an actual name &mdash; the personal name
+  of God, four Hebrew letters, <span class="dheb">יהוה</span> (YHWH), that the text uses some
+  6,800 times. This translation prints it as <strong>Jehovah</strong> rather than hiding it behind the title
+  &ldquo;the L<span style="font-variant:small-caps">ord</span>.&rdquo; Here is the whole story &mdash; the name, why
+  it got covered over, and why &ldquo;Jehovah&rdquo; and not &ldquo;Yahweh.&rdquo;</p>
+</div>
+
+<h2>The name, and the four letters</h2>
+<div class="panel prose">
+  <p>God&rsquo;s personal name in the Hebrew Bible is written with four consonants &mdash; <span
+  class="dheb">יהוה</span>, Y&#8209;H&#8209;W&#8209;H &mdash; which is why it is called the
+  <strong>Tetragrammaton</strong> (&ldquo;four letters&rdquo;). It first appears in this translation at
+  <a href="genesis-2.html">Genesis 2:4</a>, paired with <em>Elohim</em> (&ldquo;God&rdquo;) as <em>YHWH
+  Elohim</em>, and from there it runs through the whole Hebrew Bible about <strong>6,800 times</strong> &mdash; far
+  more often than any title. It is not a generic word for &ldquo;god&rdquo; (that is <em>Elohim</em>); it is a name,
+  the way &ldquo;Abram&rdquo; is a name.</p>
+</div>
+
+<h2>Why almost every Bible hides it</h2>
+<div class="panel prose">
+  <p>Sometime in the centuries before Christ, Jewish reverence for the name hardened into a practice of
+  <strong>not pronouncing it aloud</strong>. When a reader reached YHWH in the text, he said <em>Adonai</em>
+  (&ldquo;my Lord&rdquo;) instead. That spoken substitution became the written one nearly everywhere:</p>
+  <ul>
+    <li>the Greek Old Testament (the <strong>Septuagint</strong>) put <em>Kyrios</em>, &ldquo;Lord&rdquo;;</li>
+    <li>the Latin <strong>Vulgate</strong> put <em>Dominus</em>, &ldquo;Lord&rdquo;;</li>
+    <li>and the <strong>King James Version</strong> set the English pattern still followed almost everywhere: print
+    the name as &ldquo;the L<span style="font-variant:small-caps">ord</span>&rdquo; in small capitals &mdash; so a
+    reader can tell the divine name from the ordinary word &ldquo;Lord&rdquo; (<em>Adonai</em>).</li>
+  </ul>
+  <p>So &ldquo;the L<span style="font-variant:small-caps">ord</span>&rdquo; in your Bible is not a translation of
+  the name &mdash; it is a <em>substitute</em> for it, a title standing where the text actually put a name.
+  Reverent, and nearly universal &mdash; but it does hide the name.</p>
+</div>
+
+<h2>Yahweh, or Jehovah?</h2>
+<div class="panel prose">
+  <p>Here is the twist: because the name went unspoken for so long, <strong>its original pronunciation was
+  lost</strong>. Hebrew was written with consonants only; the vowel marks were added centuries later by scribes
+  called the Masoretes &mdash; and when they came to YHWH, they did not write the name&rsquo;s own vowels (which
+  they were not saying), they wrote the vowels of <em>Adonai</em>, as a reminder to say &ldquo;Adonai.&rdquo; So the
+  written form carries one word&rsquo;s consonants and another word&rsquo;s vowels.</p>
+  <p><strong>&ldquo;Yahweh&rdquo;</strong> is the modern scholarly <em>reconstruction</em> of the original &mdash;
+  pieced together from early Greek writers who did spell it out (Clement of Alexandria wrote <em>Iabe</em>) and from
+  the way the name appears inside other names (<em>Yeho</em>&#8209;shua, Isai&#8209;<em>ah</em>). It is very likely
+  close to right.</p>
+  <p><strong>&ldquo;Jehovah&rdquo;</strong> is what you get if you read those hybrid letters literally &mdash;
+  YHWH&rsquo;s consonants <em>with</em> Adonai&rsquo;s vowels &mdash; a reading that took shape in the Middle Ages
+  and became standard in English from around the sixteenth century. Strictly, it is a form that was never spoken in
+  ancient Israel. But it has been the English name of God for some <strong>four to five hundred years</strong>: it
+  stands in the KJV itself (Exodus 6:3; Psalm 83:18; Isaiah 12:2; 26:4), runs through the whole
+  <span class="tag t-asv">ASV</span> of 1901, fills the hymnbook (&ldquo;Guide Me, O Thou Great Jehovah&rdquo;), and
+  is the <span class="tag t-nwt">NWT</span>&rsquo;s single most defining choice.</p>
+</div>
+
+<h2>Why this translation chose &ldquo;Jehovah&rdquo;</h2>
+<div class="panel prose">
+  <p>Three honest options, then: keep <strong>&ldquo;the L<span
+  style="font-variant:small-caps">ord</span>&rdquo;</strong> (traditional, but it hides the name); restore
+  <strong>&ldquo;Yahweh&rdquo;</strong> (the scholar&rsquo;s best reconstruction); or restore
+  <strong>&ldquo;Jehovah&rdquo;</strong> (the long&#8209;accepted English form of the name). This translation takes
+  the third road &mdash; <strong>Jehovah</strong> &mdash; because it does the main thing worth doing, <em>puts the
+  name back where the text has a name</em>, and does it in the form that has been at home in English for four
+  centuries and that readers already recognize. It is not the scholar&rsquo;s reconstruction, and the notes do not
+  pretend otherwise; it is the traditional English name, chosen on purpose &mdash; the same instinct that keeps
+  &ldquo;Jesus&rdquo; and &ldquo;Isaiah&rdquo; rather than re&#8209;spelling every familiar name from scratch.</p>
+  <p>A small, consistent code follows from it, and you will see all of it in the text:</p>
+  <ul>
+    <li><strong>Jehovah</strong> = the name YHWH (where other Bibles print &ldquo;the L<span
+    style="font-variant:small-caps">ord</span>&rdquo;).</li>
+    <li><strong>Lord Jehovah</strong> = <em>Adonai YHWH</em>, the title &ldquo;Lord&rdquo; joined to the name (as at
+    <a href="genesis-15.html">Genesis 15:2</a>; older Bibles print &ldquo;Lord G<span
+    style="font-variant:small-caps">od</span>&rdquo;).</li>
+    <li><strong>Lord</strong> (ordinary type) = <em>Adonai</em>, the title on its own; <strong>God</strong> =
+    <em>Elohim</em>.</li>
+  </ul>
+</div>
+
+<h2>And the New Testament?</h2>
+<div class="panel prose">
+  <p>The same instinct raises a fair question about Jesus &mdash; whose name in his own tongue was
+  <strong>Yeshua</strong> (&ldquo;Yahweh saves&rdquo;). This project keeps <strong>&ldquo;Jesus,&rdquo;</strong> the
+  form the New Testament&rsquo;s own Greek authors wrote (<em>Iēsous</em>) and the form English has used for
+  centuries &mdash; restoring the divine <em>name</em> in the Old Testament, while leaving the familiar personal
+  names where readers already know them. So: the <em>name of God</em> is restored; the names of people are left as
+  they stand.</p>
+</div>
+
+<div class="panel" style="margin-top:14px">
+  <p class="muted" style="margin:0 0 12px">See it first at <a href="genesis-2.html">Genesis 2:4</a>, or in the
+  <a href="dictionary.html">Dictionary</a> and <a href="encyclopedia.html">Encyclopedia</a>. More from
+  <a href="ask.html">Ask Mr. Librarian</a>: <a href="ask-jesus-god.html">Was the Word God, or a god?</a> &middot;
+  <a href="ask-enoch.html">Why isn&rsquo;t the Book of Enoch here?</a></p>
+  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
+</div>"""
+    out = page(f"Ask Mr. Librarian: why &ldquo;Jehovah&rdquo;? — {SITE_NAME}", body, active="ask",
+               desc="The divine name in this translation: the Tetragrammaton (YHWH), why nearly every Bible hides "
+                    "it behind 'the LORD,' the difference between 'Yahweh' and 'Jehovah,' and why this project "
+                    "restores the traditional English form 'Jehovah.'")
+    open(os.path.join(OUT, "ask-jehovah.html"), "w", encoding="utf-8").write(out)
 
 
 def build_contact():
@@ -1911,6 +2032,7 @@ def main():
     build_ask_enoch()
     build_ask_index()
     build_ask_jesus_god()
+    build_ask_jehovah()
     build_contact()
     build_thanks()
     n_words, n_refs = build_concordance(chapters)
