@@ -229,6 +229,16 @@ DICTIONARY = [
      "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
     ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
      "Not a word but a MUSICAL MARK — the rarest cantillation sign in the Torah (four occurrences), a zigzag sung as a long wavering trill. It hangs over 'but he lingered' (19:16): the melody itself dawdles with Lot.", (19, 16)),
+    # ---- Genesis 20 (Hebrew) ----
+    ("navi", "navi", "נָבִיא", "navi",
+     "Prophet — its FIRST occurrence in the Bible is Abraham (20:7), and note what defines the office there: not prediction but INTERCESSION — 'he will pray for you, and you shall live.' A prophet is one who stands between.", (20, 7)),
+    ("tom", "tom", "תֹּם", "tom",
+     "Integrity, wholeness — the noun of tamim (17:1's 'blameless'). Abimelech pleads it ('in the integrity of my heart,' 20:5) and God confirms it (20:6): in Gerar the tom belongs to the pagan king, and the scheming to the prophet.", (20, 5)),
+    ("gur", "gur / ger", "גּוּר / גֵּר", "gur / ger",
+     "To sojourn — the resident-stranger's verb, and his noun. Israel will be gerim in Egypt (15:13), Abraham holds the land only as 'sojournings' (17:8), the Sodom mob sneers 'this one came to sojourn' (19:9) — and Abraham sojourns (gur) in GERAR (20:1), a town that nearly rhymes with the word.", (15, 13)),
+    ("atsar", "atsar", "עָצַר", "atsar",
+     "To restrain, hold back, shut up. Sarai's own word for her childlessness — 'Jehovah has kept me from bearing' (16:2) — returns doubled at 20:18: the house that took Sarah is given, for a season, Sarah's condition.", (16, 2)),
+
     # ---- Revelation 1 (Greek) ----
     ("apokalypsis", "apokalypsis", "ἀποκάλυψις", "apokalypsis",
      "Unveiling, uncovering — the book's first word and its name ('Apocalypse' is this word left untranslated). Not 'catastrophe' but disclosure: the pulling-back of a curtain (Revelation 1:1).", ("Revelation", 1, 1)),
@@ -517,8 +527,11 @@ ENCYCLOPEDIA = [
               "into the wife-sister ruse in Egypt (12:10-20). At 99, in the covenant of circumcision, God renames him "
               "ABRAHAM — 'father of a multitude of nations' (17:5), the first person in the Bible God renames — and "
               "he laughs face-down at the promise of a son (17:17). At Mamre he feasts three visitors, then stands "
-              "in the road and argues the Judge of all the earth down to ten righteous for Sodom's sake (18:22-33).",
-         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10), (17, 1), (17, 5), (17, 17), (17, 23), (18, 2), (18, 23)],
+              "in the road and argues the Judge of all the earth down to ten righteous for Sodom's sake (18:22-33). "
+              "At Gerar he replays Egypt's sister-ruse — and is called the Bible's first 'prophet' anyway, defined "
+              "by intercession: he prays, and Abimelech's house is healed (20:7, 17).",
+         refs=[(11, 26), (12, 1), (12, 4), (12, 7), (12, 10), (17, 1), (17, 5), (17, 17), (17, 23), (18, 2), (18, 23),
+               (20, 2), (20, 7), (20, 17)],
          videos=[("EXPEDITION ABRAHAM: his whole journey, from Ur to the Promised Land",
                   "https://www.youtube.com/watch?v=f7-RQZavU3U")]),
     dict(slug="sarai", name="Sarai / Sarah", kind="person", aliases=["Sarai", "Sarah"],
@@ -529,9 +542,11 @@ ENCYCLOPEDIA = [
               "God renames her SARAH — both forms mean 'princess' — and fastens the promise to her own body: 'kings "
               "of peoples shall come from her' (17:15-16); the first woman in the Bible God renames. Behind the "
               "tent flap at Mamre she laughs at the one-year promise, then denies it, afraid — 'No, you did laugh' "
-              "(18:12-15); the laugh is kept, and named, in her son.",
+              "(18:12-15); the laugh is kept, and named, in her son. At Gerar the old ruse takes her into a second "
+              "royal house — and the disclosure finally comes: she is Abraham's half-sister, his father's daughter "
+              "(20:12).",
          refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6), (17, 15), (17, 19), (17, 21),
-               (18, 9), (18, 12), (18, 15)], videos=[]),
+               (18, 9), (18, 12), (18, 15), (20, 2), (20, 14), (20, 16), (20, 18)], videos=[]),
     dict(slug="lot", name="Lot", kind="person",
          desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5). "
               "He chooses the well-watered plain and pitches his tent toward Sodom (13:10-12), is carried off in the "
@@ -707,6 +722,23 @@ ENCYCLOPEDIA = [
               "great-grandmother of David (Ruth 4:17), named in the genealogy of Jesus (Matthew 1:5).",
          refs=[(19, 37), (19, 38)], videos=[]),
 
+    # ---- Genesis 20 ----
+    dict(slug="gerar", name="Gerar", kind="place",
+         desc="A town of the western Negev borderland, on the road between Canaan and Egypt — where Abraham "
+              "'sojourns' (gur, 20:1; the name nearly rhymes with the verb) and replays the sister-ruse on king "
+              "Abimelech. Isaac will repeat both the sojourn and the ruse here (ch. 26). Usually identified with "
+              "Tel Haror (Tell Abu Hureira) in the Nahal Gerar valley.",
+         refs=[(10, 19), (20, 1), (20, 2)], coords=(31.3819, 34.6069, 0.15), approx=True,
+         modern="Tel Haror, Nahal Gerar valley, western Negev, Israel", videos=[]),
+    dict(slug="abimelech", name="Abimelech (of Gerar)", kind="person", aliases=["Abimelech"],
+         desc="King of Gerar — 'my-father-is-king,' possibly a dynastic title rather than a personal name (like "
+              "'Pharaoh'; an Abimelech meets Isaac in ch. 26 too). The pagan king who argues righteousness with "
+              "God at midnight ('will you kill a nation even though righteous?', 20:4 — Abraham's own courtroom "
+              "word from 18:23), whose 'integrity of heart' God himself confirms, and who answers being wronged "
+              "with gifts and an open invitation (20:14-15). He returns to cut a treaty with Abraham at Beersheba "
+              "(21:22-34).",
+         refs=[(20, 2), (20, 4), (20, 9), (20, 14), (20, 17)], videos=[]),
+
     # ---- Revelation 1 ----
     dict(slug="john-of-patmos", name="John (of Revelation)", kind="person", aliases=["John"],
          desc="The seer of Revelation names himself only 'John — your brother, and companion in the affliction' "
@@ -861,6 +893,14 @@ XREFS = [
     ((19, 27), (18, 22), "'the place where he had stood before Jehovah' — Abraham returns to yesterday's courtroom"),
     ((19, 29), (8, 1),   "zakhar — 'God remembered Noah' / 'God remembered Abraham': the remembering that acts, at both rescues"),
     ((19, 3),  (18, 6),  "the hospitality mirror — Lot's midnight urgency repeats Abraham's noon: rise, bow, press, bake"),
+    # ---- Genesis 20 ----
+    ((20, 2),  (12, 13), "the wife-sister ruse — Egypt's script replayed at Gerar, the Bible's most famous doublet"),
+    ((20, 4),  (18, 25), "'will you kill a nation even though righteous?' — the pagan king files Abraham's own brief"),
+    ((20, 5),  (17, 1),  "tom — the integrity asked of Abraham ('be blameless'), claimed and confirmed for Abimelech"),
+    ((20, 7),  (2, 17),  "mot tamut — Eden's doubled death-sentence, served on a king"),
+    ((20, 9),  (12, 18), "'What have you done to us?' — Pharaoh's question, asked again at Gerar"),
+    ((20, 13), (19, 19), "chesed — Lot's word for rescue, spent by Abraham on the ruse arrangement"),
+    ((20, 18), (16, 2),  "atsar — Sarai's 'kept me from bearing' shuts every womb in Abimelech's house"),
     # ---- Revelation 1 ----
     (("Revelation", 1, 2), ("John", 1, 1), "the word of God — John's logos, now borne witness to from Patmos"),
     (("Revelation", 1, 8), (17, 1), "pantokratōr, 'the Almighty' — the Greek Bible's guess for El Shaddai, native at last"),
@@ -1135,6 +1175,9 @@ CHRON_CHAPTERS = {
     "gen19": dict(era="patriarchs",
                   when="Sodom's last night — the fire at sunrise, the flight to Zoar, and the cave.",
                   clock="AM 2047 · 1897 BC in Ussher's reckoning — the year before Isaac."),
+    "gen20": dict(era="patriarchs",
+                  when="Gerar — the sister-ruse replayed; Abimelech's dream; the Bible's first 'prophet.'",
+                  clock="AM 2047–2048 · c. 1897 BC traditional — between Sodom's fall and Isaac's birth, which is one verse away."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1174,6 +1217,7 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2047", trad="1897 BC", event="The covenant of circumcision; Abraham and Sarah named; Isaac promised for next year", ref=(17, 24)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Three visitors at Mamre; Abraham argues the Judge of all the earth down to ten", ref=(18, 1)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah overthrown; Lot escapes to Zoar; Moab and Ammon born", ref=(19, 24)),
+    dict(era="patriarchs", am="2047–2048", trad="c. 1897 BC", event="Abraham at Gerar — the sister-ruse replayed; Abimelech's dream; the first 'prophet'", ref=(20, 3)),
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
     # -- The Gospels --
     dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),

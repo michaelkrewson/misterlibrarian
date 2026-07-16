@@ -81,10 +81,11 @@ CHAPTERS = [
     ("gen17", "Genesis", 17, "The covenant in the flesh — El Shaddai, Abram becomes Abraham, Sarai becomes Sarah, and a face-down laugh names Isaac."),
     ("gen18", "Genesis", 18, "Three visitors at Mamre, Sarah's laugh — and Abraham arguing the Judge of all the earth down to ten."),
     ("gen19", "Genesis", 19, "Sodom's last night — the two angels at the gate, sulfur and fire at sunrise, a pillar of salt, and the cave above Zoar."),
+    ("gen20", "Genesis", 20, "The sister-ruse replayed at Gerar — Abimelech's dream, the Bible's first 'prophet,' and the pagan king with the integrity."),
     ("john1", "John", 1, "The Word made flesh — the Prologue and its “was God / a god,” the Lamb of God, and the first disciples."),
     ("rev1", "Revelation", 1, "The unveiling begins — Patmos, the Lord's day, one like a son of man among the lampstands, and the Alpha and the Omega."),
 ]
-NEXT_UP = "Genesis 20"         # (legacy; nav is now book-scoped in nav_strip)
+NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),
