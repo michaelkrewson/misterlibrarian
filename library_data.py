@@ -932,12 +932,16 @@ VERSE_OF_DAY = [
     (12, 2, "The promise: a great nation, a great name, and a blessing to be."),
     (13, 9, "Abram's offer to Lot — take either half, so the family doesn't have to break."),
     (13, 16, "Offspring like the dust of the earth — the promise made physical."),
+    (14, 19, "Melchizedek — the Bible's first priest — blesses Abram over bread and wine."),
     (15, 6, "Trust, counted as righteousness — the sentence Paul and James both built on."),
     (16, 13, "Hagar — the only person in the Bible to give God a name: the God who sees me."),
     (17, 1, "El Shaddai's one command to a 99-year-old: walk before me, and be whole."),
     (18, 14, "The question that hangs over the whole story: is anything too wondrous for Jehovah?"),
     (18, 25, "Abraham's audacity, filed as a question: shall not the Judge of all the earth do justice?"),
     (19, 29, "The hinge of the whole rescue, stated in four words: God remembered Abraham."),
+    ("John", 1, 1, "John's first sentence opens before Genesis 1:1 does."),
+    ("John", 1, 14, "The Word pitched his tent among us — the tabernacle, come back."),
+    ("John", 1, 29, "Passover lamb and Isaiah's servant, gathered into one title by the Baptist."),
 ]
 
 # ---------------------------------------------------------------------------

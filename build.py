@@ -2194,11 +2194,34 @@ applies to Herod, Pilate, and "the fifteenth year of Tiberius."</p>
     open(os.path.join(OUT, "chronology.html"), "w", encoding="utf-8").write(out)
 
 
+def check_shelf_density(chapters):
+    """The site's promise is 'catalogued & COMPARED' — every chapter's notes weigh
+    this translation against the seven-version shelf. This guard makes the promise
+    enforceable: a chapter whose notes carry fewer than MIN shelf comparisons
+    (<span class="tag t-…"> markers) FAILS the build, the same way a broken anchor
+    would. Added 2026-07-16 after an audit found comparison density had decayed
+    from 160 tags (Gen 1) to zero (Gen 19 as first shipped). Ledger/genealogy
+    chapters that legitimately carry few notes are exempted BY NAME — adding a
+    slug there is a conscious editorial decision, not a default."""
+    MIN = 3
+    EXEMPT = {"gen8", "gen10", "gen11"}   # flood logbook + the two genealogy tables (grandfathered)
+    bad = []
+    for slug, body in chapters.items():
+        n = len(re.findall(r'class="tag t-', body))
+        if n < MIN and slug not in EXEMPT:
+            bad.append(f"  {slug}: {n} shelf comparison(s) — need ≥{MIN}")
+    if bad:
+        raise SystemExit("SHELF-DENSITY CHECK FAILED — 'catalogued & compared' means compared:\n"
+                         + "\n".join(bad)
+                         + "\n(compare against the shelf with tag t-kjv/t-niv/… spans, or consciously exempt the slug)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
     args = ap.parse_args()
     chapters = extract_source(args.source)
+    check_shelf_density(chapters)
     build_chapter_pages(chapters)
     build_toc()
     build_reading()
