@@ -218,6 +218,17 @@ DICTIONARY = [
      "Delight — Sarah's word for what age has ended (18:12), almost certainly from the same root as Eden, the garden of delight: shall the garden's word come back, at ninety?", (18, 12)),
     ("chalilah", "chalilah", "חָלִלָה", "chalilah",
      "'Far be it from you!' — literally something close to 'profane be it to you': Abraham's gasp, twice in one verse (18:25), at the thought of the Judge acting unjustly.", (18, 25)),
+    # ---- Genesis 19 (Hebrew) ----
+    ("haphakh", "haphakh", "הָפַךְ", "haphakh",
+     "To overturn, overthrow — THE Sodom verb (19:21, 25, 29). In verse 29 the event becomes a noun, 'the overthrow' (hahafekhah), and from then on 'like the overthrow of Sodom' is the Bible's standing measure of total ruin (Deuteronomy 29:23; Isaiah 13:19).", (19, 25)),
+    ("gophrit", "gophrit", "גָּפְרִית", "gophrit",
+     "Sulfur — the old Bibles' 'brimstone' — rained with fire on the cities (19:24); afterwards the fixed image of scorched judgment (Deuteronomy 29:23; Job 18:15; Revelation keeps it to the end).", (19, 24)),
+    ("chesed", "chesed", "חֶסֶד", "chesed",
+     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet) — behind John's 'grace and truth' (see charis).", (19, 19)),
+    ("chemlah", "chemlah", "חֶמְלָה", "chemlah",
+     "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
+    ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
+     "Not a word but a MUSICAL MARK — the rarest cantillation sign in the Torah (four occurrences), a zigzag sung as a long wavering trill. It hangs over 'but he lingered' (19:16): the melody itself dawdles with Lot.", (19, 16)),
 ]
 
 ENCYCLOPEDIA = [
@@ -309,17 +320,17 @@ ENCYCLOPEDIA = [
          modern="Roughly modern Israel, Palestine, Lebanon, and Jordan"),
     dict(slug="sodom-gomorrah", name="Sodom and Gomorrah", kind="place",
          aliases=["Sodom", "Gomorrah", "Sodom and Gomorrah"],
-         desc="First mentioned as landmarks on the Canaanite border (10:19) — still standing. Lot drifts toward "
-              "them by stages in ch. 13 (their coming ruin already named there, 13:10), and the city's own "
-              "wickedness is stated outright at 13:13. In ch. 18 their 'outcry' reaches heaven and Abraham argues "
-              "the Judge of all the earth down to ten righteous (18:20-33); the destruction itself is next, in "
-              "Genesis 19. "
+         desc="First mentioned as landmarks on the Canaanite border (10:19). Lot drifts toward them by stages in "
+              "ch. 13 (their coming ruin already named there, 13:10), the city's wickedness is stated outright at "
+              "13:13, in ch. 18 their 'outcry' reaches heaven and Abraham argues the Judge of all the earth down "
+              "to ten righteous — and in ch. 19 the sentence falls: sulfur and fire out of the heavens, the cities "
+              "and the whole plain overthrown (19:24-29); 'like the overthrow of Sodom' is the prophets' byword "
+              "for total ruin ever after. "
               "Expedition Bible's Joel Kramer identifies the site as Tall el-Hammam, in the northern Jordan Valley — "
               "burned, sulfur-rich debris there matches all four destroyed cities of the plain, while a fifth sample "
               "from Zoar's presumed site, spared in the account, did not burn.",
-         refs=[(10, 19), (13, 10), (13, 12), (13, 13)],
-         videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
-                  "(preview — their destruction is still ahead, in Genesis 19)",
+         refs=[(10, 19), (13, 10), (13, 12), (13, 13), (18, 20), (19, 24), (19, 28)],
+         videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain",
                   "https://www.youtube.com/watch?v=QjPcSQUY2W0")],
          coords=(31.8402, 35.6737, 0.4), approx=True,
          modern="Tall el-Hammam, Jordan, in the eastern Jordan Valley"),
@@ -398,11 +409,12 @@ ENCYCLOPEDIA = [
          coords=(31.75, 35.55, 0.8), approx=True,
          modern="The lower Jordan Valley, north of the Dead Sea"),
     dict(slug="zoar", name="Zoar", kind="place",
-         desc="A landmark fixing the plain's southern extent at its first mention (13:10) — its own story, where "
-              "Lot flees and it alone of the plain's cities is spared, is still six chapters away.",
-         refs=[(13, 10)],
-         videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain "
-                  "(preview — Zoar's own story is still ahead, in Genesis 19)",
+         desc="'Little' — named from Lot's own plea, mid-apocalypse: 'is it not a little one (mits'ar)?' (19:20-22). "
+              "A landmark fixing the plain's southern extent at its first mention (13:10), it alone of the plain's "
+              "cities is spared, at Lot's asking — the destruction literally waits until he arrives (19:22). Then "
+              "Lot, afraid of the town he begged for, leaves it for a cave in the hills (19:30).",
+         refs=[(13, 10), (19, 20), (19, 22), (19, 23), (19, 30)],
+         videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain",
                   "https://www.youtube.com/watch?v=QjPcSQUY2W0")],
          coords=(31.033, 35.484, 0.3), approx=True,
          modern="Near Ghor es-Safi, Jordan, southeast of the Dead Sea"),
@@ -510,9 +522,14 @@ ENCYCLOPEDIA = [
          refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6), (17, 15), (17, 19), (17, 21),
                (18, 9), (18, 12), (18, 15)], videos=[]),
     dict(slug="lot", name="Lot", kind="person",
-         desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5) "
-              "— planted in the story for consequences still ahead.",
-         refs=[(11, 27), (12, 4), (12, 5)], videos=[]),
+         desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5). "
+              "He chooses the well-watered plain and pitches his tent toward Sodom (13:10-12), is carried off in the "
+              "war of the kings and rescued by his uncle (14:12-16), and by ch. 19 sits in Sodom's own gate. On the "
+              "last night he hosts the two angels, offers his daughters to the mob (the text reports, it does not "
+              "approve), lingers until he is dragged out by the hand, bargains his refuge down to little Zoar — and "
+              "ends in a cave, wine-blind, made ancestor of Moab and Ammon by his own daughters. He speaks his last "
+              "recorded word at Zoar; Genesis lets him leave in silence.",
+         refs=[(11, 27), (12, 4), (12, 5), (13, 10), (13, 12), (14, 12), (19, 1), (19, 16), (19, 26), (19, 30), (19, 36)], videos=[]),
     dict(slug="pharaoh", name="Pharaoh (of Genesis 12)", kind="person", aliases=["Pharaoh"],
          desc="The unnamed king whose house takes Sarai in and is struck with plagues (12:15-20). His indignant "
               "'take her and go' makes him, uncomfortably, the moral voice of the scene — and his role rehearses the "
@@ -665,6 +682,16 @@ ENCYCLOPEDIA = [
               "later be his home (24:62; 25:11).",
          refs=[(17, 19), (17, 21)], videos=[]),
 
+    # ---- Genesis 19 ----
+    dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
+         aliases=["Moab", "Ben-Ammi", "Ammon"],
+         desc="Israel's two kin-nations across the Jordan, born in the cave above Zoar on the worst night in "
+              "Genesis: Moab ('from father,' the text's own sound-gloss) to Lot's firstborn daughter, Ben-Ammi "
+              "('son of my kin,' father of the Ammonites) to the younger (19:30-38). The Bible remembers the "
+              "cousinhood without flattery — and then hands the line its grace note: from Moab comes Ruth, "
+              "great-grandmother of David (Ruth 4:17), named in the genealogy of Jesus (Matthew 1:5).",
+         refs=[(19, 37), (19, 38)], videos=[]),
+
     # ---- the divine name ----
     dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
          desc="The personal name of God — the four Hebrew letters יהוה (YHWH, the Tetragrammaton), which this "
@@ -784,6 +811,14 @@ XREFS = [
     ((18, 25), (16, 5),  "shaphat — 'may Jehovah judge between me and you' becomes 'shall not the Judge of all the earth do justice?'"),
     ((18, 27), (3, 19),  "dust — 'for dust you are,' owned in the first person: 'I am dust and ashes'"),
     ((18, 28), (6, 11),  "shachat, 'ruin' — the flood's verb: Abraham asks whether God is about to do THAT again"),
+    # ---- Genesis 19 ----
+    ((19, 5),  (18, 19), "yada — 'I have known him' against 'that we may know them': one verb, covenant and violation"),
+    ((19, 9),  (18, 25), "shaphat — the mob's sneer, 'he keeps playing the judge,' against the Judge of all the earth"),
+    ((19, 14), (17, 17), "metsacheq — the laugh-root gone dark: to Lot's sons-in-law, doom sounds like a joke"),
+    ((19, 25), (13, 10), "the kikkar — 'like the garden of Jehovah, before Jehovah destroyed Sodom': chapter 13's flash-forward lands"),
+    ((19, 27), (18, 22), "'the place where he had stood before Jehovah' — Abraham returns to yesterday's courtroom"),
+    ((19, 29), (8, 1),   "zakhar — 'God remembered Noah' / 'God remembered Abraham': the remembering that acts, at both rescues"),
+    ((19, 3),  (18, 6),  "the hospitality mirror — Lot's midnight urgency repeats Abraham's noon: rise, bow, press, bake"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -845,11 +880,9 @@ VIDEO_QUEUE = [
      "Genesis 28 (Jacob's ladder)",
      "Already lightly placed as a PREVIEW on the 'bethel' encyclopedia entry (Genesis 12:8) — "
      "give it its full placement when Genesis 28 is translated."),
-    ("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain!",
-     "https://www.youtube.com/watch?v=QjPcSQUY2W0",
-     "Genesis 19 (the destruction of Sodom and Gomorrah)",
-     "Already lightly placed as a PREVIEW on the 'sodom-gomorrah' entry (Genesis 10:19) — "
-     "give it its full placement when Genesis 19 is translated."),
+    # ("Sodom burned—Zoar did NOT" — FULL PLACEMENT 2026-07-16 when Genesis 19 shipped:
+    #  in-chapter vclip at 19:24, plus the sodom-gomorrah and zoar encyclopedia entries'
+    #  embeds, their "preview" caveats removed.)
     ("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
      "https://www.youtube.com/watch?v=N0opJ2qGQs4",
      "The Gospels (Jesus' Galilee ministry)",
@@ -904,6 +937,7 @@ VERSE_OF_DAY = [
     (17, 1, "El Shaddai's one command to a 99-year-old: walk before me, and be whole."),
     (18, 14, "The question that hangs over the whole story: is anything too wondrous for Jehovah?"),
     (18, 25, "Abraham's audacity, filed as a question: shall not the Judge of all the earth do justice?"),
+    (19, 29, "The hinge of the whole rescue, stated in four words: God remembered Abraham."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1044,6 +1078,9 @@ CHRON_CHAPTERS = {
     "gen18": dict(era="patriarchs",
                   when="Three visitors at Mamre; the argument over Sodom — the year before Isaac.",
                   clock="AM 2047 · c. 1897 BC traditional; Sodom's last day is tomorrow."),
+    "gen19": dict(era="patriarchs",
+                  when="Sodom's last night — the fire at sunrise, the flight to Zoar, and the cave.",
+                  clock="AM 2047 · 1897 BC in Ussher's reckoning — the year before Isaac."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1079,7 +1116,7 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2034", trad="1910 BC", event="Ishmael born; Abram 86", ref=(16, 16)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="The covenant of circumcision; Abraham and Sarah named; Isaac promised for next year", ref=(17, 24)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Three visitors at Mamre; Abraham argues the Judge of all the earth down to ten", ref=(18, 1)),
-    dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah destroyed", coming="Genesis 19 — coming"),
+    dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah overthrown; Lot escapes to Zoar; Moab and Ammon born", ref=(19, 24)),
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
     # -- The Gospels --
     dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),
