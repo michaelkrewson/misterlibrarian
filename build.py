@@ -1251,6 +1251,8 @@ def build_index(chapters):
          for slug, book, num, _ in CHAPTERS])
     body = f"""<section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
+  <div class="hero-grid">
+  <div class="hero-copy">
   <p>Welcome. This project translates the Bible into modern English directly from the original Hebrew —
   the Masoretic Text, reproduced verse-by-verse alongside the new rendering so every choice can be checked
   against the source. Beneath each chapter sit <strong>translator's notes, verse by verse</strong>,
@@ -1264,6 +1266,21 @@ def build_index(chapters):
   <div class="hero-cta">
     <a class="btn" href="genesis-1.html">Start at Genesis 1</a>
     <a class="btn btn-2" href="{chapter_filename(latest[1], latest[2])}">Newest: {latest[1]} {latest[2]}</a>
+  </div>
+  </div>
+  <figure class="hero-fig">
+    <img src="img/shrine-of-the-book.jpg" width="1280" height="791" loading="lazy"
+      alt="The Shrine of the Book at the Israel Museum, Jerusalem — the white dome, shaped like the lid of the jars the Dead Sea Scrolls were found in, ringed by fountain jets"/>
+    <figcaption>
+      <span class="ms-name">The Shrine of the Book — Jerusalem</span>
+      The Israel Museum wing built to house the <em>Dead Sea Scrolls</em> — at two thousand years old, the
+      oldest surviving manuscripts of the Hebrew Bible, and witnesses this project's notes consult. Its white
+      dome takes the shape of the lids of the jars the scrolls were found sealed inside at Qumran.
+      <span class="ms-credit">Photo: Dan Lundberg — via
+      <a href="https://commons.wikimedia.org/wiki/File:20110225_Israel_0412_Jerusalem_(5539903749).jpg" rel="noopener">Wikimedia Commons</a> ·
+      <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="noopener">CC BY-SA 2.0</a></span>
+    </figcaption>
+  </figure>
   </div>
 </section>
 
