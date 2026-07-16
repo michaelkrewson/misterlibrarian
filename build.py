@@ -1269,17 +1269,16 @@ def build_index(chapters):
   </div>
   </div>
   <figure class="hero-fig">
-    <img src="img/aleppo-codex-shrine.jpg" width="1280" height="819" loading="lazy"
-      alt="The Aleppo Codex, open in its glowing display case inside the Shrine of the Book, Jerusalem — the masterpiece codex of the Masoretic Hebrew text"/>
+    <img src="img/great-isaiah-scroll.jpg" width="760" height="943" loading="lazy"
+      alt="A column of the Great Isaiah Scroll from Qumran — dense hand-written Hebrew on warm parchment, with an ancient crack running down the sheet"/>
     <figcaption>
-      <span class="ms-name">Inside the Shrine of the Book — Jerusalem</span>
-      The <em>Aleppo Codex</em> — "the Crown" — glowing in its case in the Shrine of the Book, the Israel
-      Museum's home for the <em>Dead Sea Scrolls</em>. It is the masterpiece manuscript of the
-      <strong>Masoretic Text</strong> — the very Hebrew this translation is made from — written a thousand
-      years after the two-thousand-year-old scrolls in the vaults around it.
-      <span class="ms-credit">Photo: Government Press Office (Israel) — via
-      <a href="https://commons.wikimedia.org/wiki/File:Flickr_-_Government_Press_Office_(GPO)_-_The_Dead_Sea_Scrolls.jpg" rel="noopener">Wikimedia Commons</a> ·
-      <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener">CC BY-SA 3.0</a></span>
+      <span class="ms-name">The Great Isaiah Scroll — Qumran, 2nd century BC</span>
+      A column of the <em>Great Isaiah Scroll</em> (1QIsa<sup>a</sup>), found in Cave 1 at Qumran among the
+      <em>Dead Sea Scrolls</em> — the oldest complete copy of any book of the Bible, a thousand years older
+      than the codices behind most modern Bibles, and the treasure the Shrine of the Book in Jerusalem was
+      built to house. Witnesses like it stand behind this project's notes.
+      <span class="ms-credit">Photograph: Ardon Bar Hama — via
+      <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · public domain (detail)</span>
     </figcaption>
   </figure>
   </div>
