@@ -217,6 +217,7 @@
       '<div class="v-menu-acts">' +
         '<button class="v-mi" data-act="note">📝 ' + (rec.note ? "Edit note" : "Add note") + "</button>" +
         '<button class="v-mi" data-act="share">🔗 Share</button>' +
+        '<button class="v-mi" data-act="image">🖼 Share as image</button>' +
         '<button class="v-mi" data-act="copytext">📋 Copy verse</button>' +
       "</div>";
 
@@ -238,6 +239,7 @@
         closeMenu();
         if (act === "note") openEditor(vrs, verseId);
         else if (act === "share") shareVerse(vrs, verseId);
+        else if (act === "image") shareImage(vrs, verseId);
         else if (act === "copytext") {
           copyText(verseText(vrs) + "\n— " + refOf(verseId) + ", MiSTeR Translation\n" + urlFor(verseId),
             "Verse copied");
@@ -280,6 +282,164 @@
     } else {
       copyText(url, "Link copied");
     }
+  }
+
+  // ------------------------------------------------- share as an image card --
+  function wrapLines(ctx, text, maxW) {
+    var words = text.split(/\s+/), lines = [], cur = "";
+    for (var i = 0; i < words.length; i++) {
+      var t = cur ? cur + " " + words[i] : words[i];
+      if (cur && ctx.measureText(t).width > maxW) { lines.push(cur); cur = words[i]; }
+      else cur = t;
+    }
+    if (cur) lines.push(cur);
+    return lines;
+  }
+  function roundRect(ctx, x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+
+  // Draw the verse + reference onto a themed canvas card (dark bg, gold accent,
+  // the MiSTeR Translation wordmark + domain) sized to the verse's length.
+  function renderCard(text, ref) {
+    var S = 2, W = 1080, pad = 96, cw = W - pad * 2;
+    var len = text.length;
+    var vf = len <= 90 ? 54 : len <= 170 ? 48 : len <= 300 ? 42 : len <= 460 ? 36 : 32;
+    var lh = Math.round(vf * 1.46);
+    var canvas = document.createElement("canvas");
+    var ctx = canvas.getContext("2d");
+    var verseFont = vf + 'px Georgia, "Times New Roman", serif';
+    ctx.font = verseFont;
+    var lines = wrapLines(ctx, text, cw);
+
+    var topPad = 104, verseH = lines.length * lh, afterVerse = 34, dividerH = 3,
+        afterDivider = 30, refH = 42, footerGap = 74, brandH = 46, afterBrand = 10,
+        domainH = 30, bottomPad = 84;
+    var H = topPad + verseH + afterVerse + dividerH + afterDivider + refH +
+            footerGap + brandH + afterBrand + domainH + bottomPad;
+    if (H < 760) { topPad += (760 - H) / 2; H = 760; }
+    H = Math.round(H);
+    canvas.width = W * S; canvas.height = H * S;
+    ctx.scale(S, S);
+
+    // background + gold glow + frame
+    var bg = ctx.createLinearGradient(0, 0, 0, H);
+    bg.addColorStop(0, "#0d1520"); bg.addColorStop(1, "#060b14");
+    ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
+    var glow = ctx.createRadialGradient(W / 2, -40, 30, W / 2, -40, W * 0.85);
+    glow.addColorStop(0, "rgba(232,201,104,0.14)"); glow.addColorStop(1, "rgba(232,201,104,0)");
+    ctx.fillStyle = glow; ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = "rgba(232,201,104,0.28)"; ctx.lineWidth = 2;
+    roundRect(ctx, 26, 26, W - 52, H - 52, 22); ctx.stroke();
+
+    // verse
+    ctx.fillStyle = "#f2ecda";
+    ctx.font = verseFont;
+    ctx.textAlign = "center"; ctx.textBaseline = "top";
+    var y = topPad;
+    lines.forEach(function (ln) { ctx.fillText(ln, W / 2, y); y += lh; });
+
+    // gold divider
+    y += afterVerse;
+    ctx.fillStyle = "rgba(232,201,104,0.75)";
+    ctx.fillRect(W / 2 - 34, y, 68, dividerH);
+    y += dividerH + afterDivider;
+
+    // reference
+    ctx.fillStyle = "#e8c968";
+    ctx.font = '700 30px -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+    try { ctx.letterSpacing = "3px"; } catch (e) {}
+    ctx.fillText(ref.toUpperCase(), W / 2, y);
+    try { ctx.letterSpacing = "0px"; } catch (e) {}
+
+    // brand wordmark (two-tone) + domain, pinned to the bottom
+    var domainTop = H - bottomPad - domainH;
+    var brandTop = domainTop - afterBrand - brandH;
+    ctx.font = '700 34px Georgia, "Times New Roman", serif';
+    var p1 = "MiSTeR ", p2 = "Translation";
+    var w1 = ctx.measureText(p1).width, w2 = ctx.measureText(p2).width;
+    var startX = W / 2 - (w1 + w2) / 2;
+    ctx.textAlign = "left"; ctx.textBaseline = "top";
+    ctx.fillStyle = "#f7f2e2"; ctx.fillText(p1, startX, brandTop);
+    ctx.fillStyle = "#e8c968"; ctx.fillText(p2, startX + w1, brandTop);
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#7c8aa0";
+    ctx.font = '400 22px -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+    ctx.fillText("mistertranslation.com", W / 2, domainTop + 4);
+
+    return canvas;
+  }
+
+  function shareImage(vrs, verseId) {
+    var ref = refOf(verseId);
+    var canvas = renderCard(verseText(vrs), ref);
+    showImageModal(canvas, ref);
+  }
+
+  // A small preview overlay: shows the rendered card with Share / Download / Close.
+  function showImageModal(canvas, ref) {
+    var overlay = document.createElement("div");
+    overlay.className = "ml-modal";
+    var box = document.createElement("div");
+    box.className = "ml-modal-box";
+    var img = document.createElement("img");
+    img.className = "ml-modal-img";
+    img.alt = ref + " — shareable card";
+    img.src = canvas.toDataURL("image/png");
+    var cap = document.createElement("div");
+    cap.className = "ml-modal-cap";
+    cap.textContent = ref + " · save or share this card";
+    var row = document.createElement("div");
+    row.className = "ml-modal-row";
+    var fname = ref.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") + ".png";
+    function withBlob(cb) { canvas.toBlob(function (b) { if (b) cb(b); }, "image/png"); }
+
+    var canShareFiles = false;
+    try {
+      canShareFiles = !!(navigator.canShare && navigator.share &&
+        navigator.canShare({ files: [new File([new Blob()], fname, { type: "image/png" })] }));
+    } catch (e) {}
+    if (canShareFiles) {
+      var shareBtn = document.createElement("button");
+      shareBtn.className = "v-btn"; shareBtn.textContent = "Share";
+      shareBtn.addEventListener("click", function () {
+        withBlob(function (b) {
+          navigator.share({ files: [new File([b], fname, { type: "image/png" })],
+            title: ref + " — MiSTeR Translation" }).catch(function () {});
+        });
+      });
+      row.appendChild(shareBtn);
+    }
+    var dl = document.createElement("button");
+    dl.className = "v-btn"; dl.textContent = "Download";
+    dl.addEventListener("click", function () {
+      withBlob(function (b) {
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(b); a.download = fname;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+        toast("Image downloaded");
+      });
+    });
+    row.appendChild(dl);
+    var close = document.createElement("button");
+    close.className = "v-btn v-cancel"; close.textContent = "Close";
+    close.addEventListener("click", function () { teardown(); });
+    row.appendChild(close);
+
+    box.appendChild(img); box.appendChild(cap); box.appendChild(row);
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+    function teardown() { overlay.remove(); document.removeEventListener("keydown", onKey, true); }
+    function onKey(e) { if (e.key === "Escape") teardown(); }
+    overlay.addEventListener("click", function (e) { if (e.target === overlay) teardown(); });
+    document.addEventListener("keydown", onKey, true);
   }
 
   // -------------------------------------------------- build per-verse tools --
