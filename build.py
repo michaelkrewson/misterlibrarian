@@ -23,7 +23,7 @@ from collections import defaultdict
 
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
                            LINK_OVERRIDES, VERSE_OF_DAY, ROUTES,
-                           CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS)
+                           CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
@@ -1039,8 +1039,11 @@ def nav_strip(book, num, position):
         next_html = f'<span class="dis">{book} {num + 1} (coming soon)</span>'
     else:
         next_html = ""
+    mid = '<a href="toc.html">\U0001F4DC Table of Contents</a>'
+    if book in BOOK_INTROS:
+        mid = f'<a href="book-{book_slug(book)}.html">\U0001F4D6 {book}</a> · ' + mid
     return (f'<div class="chnav {position}"><div class="side left">{prev_html}</div>'
-            f'<div class="mid"><a href="toc.html">\U0001F4DC Table of Contents</a></div>'
+            f'<div class="mid">{mid}</div>'
             f'<div class="side right">{next_html}</div></div>')
 
 
@@ -1358,6 +1361,142 @@ function toggleHeb(){{
         build_verse_stubs(book, num, content)
 
 
+_BOOK_INTRO_CSS = """<style>
+.bi-head{margin:0 0 4px}
+.bi-names{color:var(--muted);font-size:14px;margin:0 0 18px}
+.bi-heb{font-size:20px;font-family:'SBL Hebrew','Times New Roman',serif}
+.bi-tr{font-style:italic}
+.bi-facts{display:grid;gap:0}
+.bi-row{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:9px 0;border-top:1px solid var(--line,#2a2f3a)}
+.bi-row:first-child{border-top:0}
+.bi-k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em;padding-top:2px}
+.bi-v{line-height:1.55}
+.bi-struct{display:grid;grid-template-columns:66px 1fr;gap:12px;padding:6px 0}
+.bi-struct-r{font-weight:700;color:var(--accent,#c9a227)}
+.bi-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.bi-chip{display:inline-block;padding:4px 11px;border-radius:20px;background:rgba(255,255,255,.05);
+  border:1px solid var(--line,#2a2f3a);text-decoration:none;font-size:13px}
+.bi-chip:hover{background:rgba(255,255,255,.10)}
+.bi-debates{border-left:3px solid var(--accent,#c9a227)}
+.bi-prog{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+.bi-prog b{font-size:22px}
+@media(max-width:560px){.bi-row{grid-template-columns:1fr}.bi-k{padding-top:0}}
+</style>"""
+
+
+def build_book_intros():
+    """A reference 'front page' for each book the translation has begun — Hebrew/
+    Greek name, author, date, place, genre, structure, themes, key words and
+    people (linked into the dictionary and encyclopedia), the source text, and —
+    in the project's neutrality habit — an honest 'Where the debates are' box for
+    authorship and date. Reached from the Table of Contents; the data lives in
+    library_data.BOOK_INTROS. A LIVING page: grow the data as more is found."""
+    dict_term = {e[0]: e[1] for e in DICTIONARY}
+    ency_name = {e["slug"]: e["name"] for e in ENCYCLOPEDIA}
+
+    def row(label, val):
+        return (f'<div class="bi-row"><div class="bi-k">{label}</div>'
+                f'<div class="bi-v">{val}</div></div>') if val else ""
+
+    for book, info in BOOK_INTROS.items():
+        total = BOOK_TOTAL.get(book, 0)
+        pub = sorted(n for (_s, b, n, _t) in CHAPTERS if b == book)
+        pct = round(len(pub) / total * 1000) / 10 if total else 0
+
+        heb, heb_tr, heb_m = info.get("hebrew_name", ""), info.get("hebrew_translit", ""), info.get("hebrew_meaning", "")
+        names = []
+        if heb:
+            names.append(f'<span class="bi-heb">{heb}</span> <span class="bi-tr">{heb_tr}</span>'
+                         + (f' — {heb_m}' if heb_m else ''))
+        gk, gk_m = info.get("greek_name", ""), info.get("greek_meaning", "")
+        if gk:
+            names.append(f'{gk}' + (f' — {gk_m}' if gk_m else ''))
+        names_html = "<br>".join(names)
+
+        facts = "".join([
+            row("Where it sits", info.get("canon", "")),
+            row("Genre", info.get("genre", "")),
+            row("Author", info.get("author", "")),
+            row("Date written", info.get("date", "")),
+            row("Place", info.get("place", "")),
+            row("Audience", info.get("audience", "")),
+        ])
+        struct = "".join(
+            f'<div class="bi-struct"><span class="bi-struct-r">{r}</span><span>{l}</span></div>'
+            for r, l in info.get("structure", []))
+        themes = "".join(f"<li>{t}</li>" for t in info.get("themes", []))
+        kw = "".join(
+            f'<a class="bi-chip" href="dictionary.html#{s}"><em>{html.escape(dict_term[s])}</em></a>'
+            for s in info.get("key_words", []) if s in dict_term)
+        kp = "".join(
+            f'<a class="bi-chip" href="encyclopedia.html#{s}">{html.escape(ency_name[s])}</a>'
+            for s in info.get("key_people", []) if s in ency_name)
+
+        chapter_links = " · ".join(
+            f'<a href="{chapter_filename(book, i)}">{i}</a>' for i in pub) or "—"
+
+        christ = info.get("christ", "")
+        christ_panel = (f'<div class="panel prose"><h2 style="margin-top:2px">Looking forward</h2>'
+                        f'<p>{christ}</p></div>') if christ else ""
+        words_panel = ""
+        if kw or kp:
+            words_panel = '<div class="panel prose"><h2 style="margin-top:2px">Key words &amp; people</h2>'
+            if kw:
+                words_panel += ('<p class="muted" style="margin:0 0 4px">Words this book turns on — '
+                                'each links to its dictionary entry:</p>'
+                                f'<div class="bi-chips">{kw}</div>')
+            if kp:
+                words_panel += ('<p class="muted" style="margin:14px 0 4px">People &amp; places — '
+                                'each links to the encyclopedia:</p>'
+                                f'<div class="bi-chips">{kp}</div>')
+            words_panel += '</div>'
+
+        body = f"""{_BOOK_INTRO_CSS}
+<p class="muted" style="margin:0 0 6px"><a href="toc.html">\U0001F4DC Table of Contents</a> ›
+{book}</p>
+<h1 class="pagetitle bi-head">\U0001F4D6 {book}</h1>
+<p class="bi-names">{names_html}</p>
+<p class="lede">{info.get('tagline','')}</p>
+
+<div class="panel">
+  <div class="bi-facts">{facts}</div>
+</div>
+
+<h2>How it's laid out</h2>
+<div class="panel">{struct}</div>
+
+<h2>What it's about</h2>
+<div class="panel prose"><ul style="margin:2px 0 0;padding-left:20px;line-height:1.6">{themes}</ul></div>
+
+{words_panel}
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">The source text</h2>
+  <p>{info.get('source_text','')}</p>
+</div>
+
+{christ_panel}
+
+<div class="panel prose bi-debates">
+  <h2 style="margin-top:2px">Where the debates are</h2>
+  <p>{info.get('debates','')}</p>
+</div>
+
+<h2>In this translation so far</h2>
+<div class="panel">
+  <div class="bi-prog"><b>{len(pub)}</b> of {total} chapters translated <span class="progress-label">· {pct}%</span></div>
+  <div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div>
+  <p style="margin:12px 0 0">Chapters: {chapter_links}</p>
+</div>
+"""
+        out = page(f"{book} — Introduction — {SITE_NAME}", body, active="toc",
+                   desc=f"An introduction to the book of {book}: author, date, place, structure, themes, "
+                        f"and the honest questions of authorship — the reference front page for "
+                        f"{book} in the MisterLibrarian translation.",
+                   url=f"book-{book_slug(book)}.html")
+        open(os.path.join(OUT, f"book-{book_slug(book)}.html"), "w", encoding="utf-8").write(out)
+
+
 def build_toc():
     done = len(CHAPTERS)
     pct = round(done / TOTAL_BIBLE_CHAPTERS * 1000) / 10
@@ -1371,7 +1510,10 @@ def build_toc():
 
     def book_chip(name, n):
         if name in pub:
-            return f'<span class="book book-active">{name} <b>{len(pub[name])}/{n}</b></span>'
+            inner = f'{name} <b>{len(pub[name])}/{n}</b>'
+            if name in BOOK_INTROS:
+                return f'<a class="book book-active" href="book-{book_slug(name)}.html">{inner}</a>'
+            return f'<span class="book book-active">{inner}</span>'
         return f'<span class="book">{name} <i>{n}</i></span>'
     ot = "".join(book_chip(n, c) for n, c in BOOKS_OT)
     nt = "".join(book_chip(n, c) for n, c in BOOKS_NT)
@@ -1388,11 +1530,14 @@ def build_toc():
             (f'<a class="chch chch-done" href="{chapter_filename(book, i)}">{i}</a>'
              if i in pub[book] else f'<span class="chch">{i}</span>')
             for i in range(1, total + 1))
+        intro_link = (f'  <p class="muted" style="margin:2px 0 10px"><a href="book-{book_slug(book)}.html">'
+                      f'\U0001F4D6 Introduction to {book} — author, date, structure, and the questions '
+                      f'behind it →</a></p>\n') if book in BOOK_INTROS else ""
         now_reading.append(f'''<h2>Now Reading — {book}</h2>
 <div class="panel">
   <div class="now-reading"><span class="nr-badge">In Progress</span>
   <span class="nr-book">{book} · {len(pub[book])} of {total} chapters</span></div>
-  <div class="chgrid">{chips}</div>
+{intro_link}  <div class="chgrid">{chips}</div>
 </div>''')
     now_reading_html = "\n".join(now_reading)
     body = f"""<h1 class="pagetitle">\U0001F4DC Table of Contents</h1>
@@ -2519,6 +2664,7 @@ def main():
     build_index(chapters)
     build_about()
     build_new_testament()
+    build_book_intros()
     build_chronology()
     build_ask_enoch()
     build_ask_index()

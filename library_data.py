@@ -2319,3 +2319,104 @@ CHRON_EVENTS = [
          note="Irenaeus (c. AD 180) places the vision 'toward the end of Domitian's reign' (d. 96); a minority tradition dates it under Nero, before 70. Reported, not settled.",
          ref=("Revelation", 1, 9)),
 ]
+
+
+# ---------------------------------------------------------------------------
+# BOOK_INTROS — a reference "front page" for each book of the Bible, reached
+# from the Table of Contents (build.py -> book-<slug>.html). Author, date,
+# place, genre, structure, themes, key words/people, source text, and — in the
+# project's neutrality habit — an honest "Where the debates are" box for the
+# contested questions (authorship, date, unity). LEAD with the traditional /
+# conservative view, note the critical alternative honestly and briefly; never
+# cast a vote. A LIVING record: refine and add as more is found. Only books the
+# translation has begun need an entry; the ToC shows the rest as still ahead.
+# Fields are plain strings / lists of strings; key_words are dictionary slugs
+# and key_people/key_places are encyclopedia slugs (build.py filters any that
+# don't exist yet, so it's safe to list ahead).
+# ---------------------------------------------------------------------------
+BOOK_INTROS = {
+    "Genesis": dict(
+        hebrew_name="בְּרֵאשִׁית",
+        hebrew_translit="Bereshit",
+        hebrew_meaning="'In the beginning' — the Hebrew Bible names each book by its first word.",
+        greek_name="Γένεσις (Genesis)",
+        greek_meaning="'Origin, generation' — the Greek title, from the book's own recurring "
+                      "'these are the generations (toldot) of…' formula.",
+        tagline="The book of beginnings — of the world, of humanity, and of the covenant family "
+                "through whom God begins to put it right.",
+        genre="Narrative — primeval history (chs. 1–11) and patriarchal saga (chs. 12–50), framed "
+              "by genealogies (the toldot headings), with a few poems and covenant scenes.",
+        canon="The first book of the TORAH (the Law / Pentateuch, the five books of Moses), and the "
+              "first book of the Christian Old Testament.",
+        author="By ancient and traditional reckoning, Jewish and Christian alike, Genesis is the first "
+               "of the five books of MOSES — the lawgiver of the Exodus (15th century BC on the early "
+               "date this translation follows). The book itself is anonymous; it never names its author, "
+               "and its recurring 'these are the generations (toldot) of…' headings read like older "
+               "records stitched into one account, which a Mosaic author would have gathered and set "
+               "down. Since the 18th–19th centuries a critical view has instead read the Pentateuch as a "
+               "composite of several strands woven together over centuries. This translation leads with "
+               "the traditional Mosaic authorship — see 'Where the debates are' below.",
+        date="On the traditional view, essentially Mosaic: the mid-15th century BC (c. 1446–1406, the "
+             "wilderness years), recording events that reach from creation back through the patriarchs. "
+             "The stories of chapters 12–50 are set in the early second millennium BC (Abraham c. 2000 "
+             "BC on the traditional chronology); the primeval history of chapters 1–11 stands before all "
+             "datable history. (The critical view dates the book's final composition far later, "
+             "c. 6th–5th century BC.)",
+        place="Remembered as gathered and written by Moses in the wilderness — Sinai and the plains of "
+              "Moab, between Egypt and the promised land. The events themselves range from Mesopotamia "
+              "(Ur, Haran) through Canaan and down into Egypt.",
+        audience="Israel newly redeemed from Egypt — a people on the edge of Canaan who need to know "
+                 "whose world this is, where they came from, and what God swore to their fathers. Genesis "
+                 "answers exactly those questions.",
+        structure=[
+            ("1–11", "Primeval history — creation, Eden and the fall, Cain and Abel, the flood, the "
+                     "Table of Nations, and Babel: the whole human race in broad strokes."),
+            ("12–25", "Abraham — the call and the threefold promise, Sodom, the birth and binding of "
+                      "Isaac, and the deaths of Sarah and Abraham."),
+            ("25–28", "Isaac and the twins — Esau and Jacob, the birthright and the stolen blessing."),
+            ("28–36", "Jacob — Bethel, the years with Laban, and the wrestling at the Jabbok that makes "
+                      "him Israel."),
+            ("37–50", "Joseph — sold into Egypt, risen to power, the family reunited, and the promise "
+                      "carried down into Egypt: 'you meant it for evil, God meant it for good.'"),
+        ],
+        themes=[
+            "The blessing and the promise — 'be fruitful and multiply,' and the threefold oath to "
+            "Abraham: land, seed, and blessing to all the nations.",
+            "The reversal of the firstborn — again and again God chooses the younger: Isaac over "
+            "Ishmael, Jacob over Esau, Ephraim over Manasseh.",
+            "Covenant — God binding himself by oath, and the signs he gives (the bow in the cloud, "
+            "circumcision).",
+            "Sin and its spread (chs. 3–11) answered by grace and election (chs. 12–50).",
+            "Providence — a God who works through famine, barrenness, and betrayal to keep his word.",
+        ],
+        key_words=["toldot", "bara", "tehom", "ruach", "tselem", "brit", "chesed", "tsachaq",
+                   "hineni", "aqad", "ger", "bekhorah", "aqev", "yhvh"],
+        key_people=["abram", "sarai", "hagar", "ishmael", "isaac", "rebekah", "esau", "jacob",
+                    "noah", "melchizedek", "lot", "keturah", "eliezer"],
+        source_text="Translated from the Hebrew MASORETIC TEXT — the digital Hebrew of Mechon-Mamre "
+                    "(the Leningrad/Aleppo tradition), consonants with the Masoretes' vowel-points and "
+                    "cantillation. The scroll's own paragraph breaks are kept and shown as it marks "
+                    "them: petuchah {פ} (open) and setumah {ס} (closed). The seven-version shelf under "
+                    "every chapter compares the NIV, KJV, Douay-Rheims, The Living Bible, the 1599 "
+                    "Geneva, ASV, and NWT.",
+        christ="For Christian readers Genesis plants the seeds the rest of the Bible grows: the 'seed of "
+               "the woman' who will crush the serpent (3:15), the blessing to all nations through "
+               "Abraham's seed (12:3), the near-sacrifice of the beloved son on Moriah (ch. 22), and "
+               "the scepter that will not depart from Judah (49:10). This translation marks those echoes "
+               "as they come; it does not force them.",
+        debates="The two live questions are AUTHORSHIP and DATE, and they travel together. The "
+                "traditional view — Jewish and Christian for over two millennia — is Mosaic authorship "
+                "in the 15th–13th centuries BC. The dominant academic view since Wellhausen — the "
+                "'Documentary Hypothesis' and its successors — reads the "
+                "Pentateuch as a composite of sources (conventionally J, E, D, and P) edited into final "
+                "shape around the Babylonian exile (6th–5th c. BC), pointing to the book's doublets, its "
+                "two divine names (Jehovah / YHWH and Elohim), and apparent anachronisms — 'Dan' "
+                "(14:14), 'Ur of the Chaldeans,' the Philistines, domesticated camels — as seams. "
+                "Conservatives answer that a 15th-century Moses could gather and update older records, "
+                "that the 'anachronisms' are editorial modernizations of place-names (this translation "
+                "flags several — see the Genesis 14 and Exodus 1 notes), and that the ancient Near "
+                "Eastern parallels cut both ways. This library's rule holds: the readings are laid out "
+                "with their pedigrees, and it does not cast a vote — the same posture it takes on "
+                "Daniel's date and the date of the Exodus.",
+    ),
+}
