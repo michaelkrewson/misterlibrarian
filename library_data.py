@@ -1027,7 +1027,7 @@ ENCYCLOPEDIA = [
          refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1)],
          coords=(32.5364, 44.4209, 0.5),
          modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
-         videos=[]),
+         videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")]),
 
     # ---- Jeremiah 21 ----
     dict(slug="zedekiah", name="Zedekiah", kind="person", aliases=["Zedekiah"],
