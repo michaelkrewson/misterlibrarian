@@ -220,7 +220,7 @@ DICTIONARY = [
      "'Far be it from you!' — literally something close to 'profane be it to you': Abraham's gasp, twice in one verse (18:25), at the thought of the Judge acting unjustly.", (18, 25)),
     # ---- Genesis 19 (Hebrew) ----
     ("haphakh", "haphakh", "הָפַךְ", "haphakh",
-     "To overturn, overthrow — THE Sodom verb (19:21, 25, 29). In verse 29 the event becomes a noun, 'the overthrow' (hahafekhah), and from then on 'like the overthrow of Sodom' is the Bible's standing measure of total ruin (Deuteronomy 29:23; Isaiah 13:19).", (19, 25)),
+     "To overturn, overthrow — THE Sodom verb (19:21, 25, 29). In verse 29 the event becomes a noun, 'the overthrow' (hahafekhah), and from then on 'like the overthrow of Sodom' is the Bible's standing measure of total ruin (Deuteronomy 29:23; Isaiah 13:19). Jeremiah's chapter of the stocks is bracketed by this root: the mahpekhet ('twister,' 20:2) that bent the prophet, and the birth-curse's 'cities that Jehovah overthrew' (20:16).", (19, 25)),
     ("gophrit", "gophrit", "גָּפְרִית", "gophrit",
      "Sulfur — the old Bibles' 'brimstone' — rained with fire on the cities (19:24); afterwards the fixed image of scorched judgment (Deuteronomy 29:23; Job 18:15; Revelation keeps it to the end).", (19, 24)),
     ("chesed", "chesed", "חֶסֶד", "chesed",
@@ -259,6 +259,15 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Jeremiah 20 (Hebrew) ----
+    ("magor-missaviv", "Magor-Missaviv", "מָגוֹר מִסָּבִיב", "magor missaviv",
+     "'Terror all around' — magor (dread) + missaviv (from every side): the name Jeremiah gives his jailer Pashhur after a night in the stocks (20:3), and the prophet's own signature phrase of dread (6:25; 46:5; 49:29; Psalm 31:13 borrows it). By 20:10 the street is chanting it back at him as a taunt. KJV runs it together as one grim word: 'Magormissabib.'", ("Jeremiah", 20, 3)),
+    ("patah", "patah", "פָּתָה", "patah",
+     "To persuade — entice — seduce — deceive: the whole scandalous range of Jeremiah 20:7, 'You enticed me, Jehovah, and I was enticed.' The same verb sends the lying spirit to 'entice' Ahab (1 Kings 22) and names the seducer of Exodus 22:16. KJV/NIV read 'deceived'; NWT 'fooled'; this translation 'enticed,' with the darker readings carried in the note. His enemies use it too (20:10): 'perhaps he will be enticed.'", ("Jeremiah", 20, 7)),
+    ("mahpekhet", "mahpekhet", "מַהְפֶּכֶת", "mahpekhet",
+     "The stocks — literally 'the TWISTER,' a frame that bent the prisoner's body (Jeremiah 20:2; paired with the collar at 29:26). Built on haphakh, the overturning-verb of Sodom — so Jeremiah's chapter is bracketed by one root: twisted in the mahpekhet at its start, wishing 'the cities Jehovah overthrew' on the world at its end (20:16).", ("Jeremiah", 20, 2)),
+    ("kelayot", "kelayot", "כְּלָיוֹת", "kelayot",
+     "Kidneys — Hebrew's seat of the hidden self, the innermost person: 'who sees kidneys and heart' (Jeremiah 20:12). KJV renders 'the REINS' (Latin renes, kidneys) — four centuries of English readers picturing bridles by accident. Revelation quotes the pair back in Greek: 'I am the one who searches kidneys and hearts' (2:23).", ("Jeremiah", 20, 12)),
     # ---- Daniel 12 (Hebrew) ----
     ("zohar", "zohar", "זֹהַר", "zohar",
      "'Radiance, shining' — Daniel 12:3's wise 'shine like the SHINING of the vault' (yazhiru ke-zohar, the cognate kept). Rare: only here and Ezekiel 8:2. Eight centuries later the masterwork of Jewish mysticism took its title from this verse's word — the Zohar, 'Radiance.'", ("Daniel", 12, 3)),
@@ -396,14 +405,14 @@ ENCYCLOPEDIA = [
          refs=[(8, 4)], videos=[],
          coords=(39.4, 43.8, 3.0), approx=True,
          modern="Eastern Turkey, near Lake Van"),
-    dict(slug="babel", name="Babel / Babylon", kind="place", aliases=["Babel", "Babylon"],
+    dict(slug="babel", name="Babel", kind="place", aliases=["Babel"],
          desc="First of Nimrod's cities in Shinar (10:10) and the site of the tower (11:1-9). Its own name, Bab-ili, "
               "means 'Gate of God'; Genesis re-derives it from Hebrew balal, 'confuse' — a deliberate, polemical pun. "
               "One of the most excavated cities of the ancient world (the great ziggurat E-temen-anki likely informed "
-              "the tower story). And the story is long: under Nebuchadnezzar II this is the empire that besieged "
-              "Jerusalem and carried Judah captive — Daniel 1 opens with its king at the walls, and files the whole "
-              "empire under the tower's old name, Shinar (Daniel 1:1-2).",
-         refs=[(10, 10), (11, 9), ("Daniel", 1, 1)],
+              "the tower story). And the story is long: this is the same city that, under Nebuchadnezzar II, became "
+              "the empire that besieged Jerusalem and carried Judah captive — for that later chapter of its life, "
+              "see Babylon, which has its own entry.",
+         refs=[(10, 10), (11, 9)],
          videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")],
          coords=(32.5355, 44.4275, 0.15),
          modern="Babylon ruins, near Hillah, Iraq"),
@@ -949,6 +958,44 @@ ENCYCLOPEDIA = [
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
          refs=[("Matthew", 6, 29)], videos=[]),
 
+    # ---- Jeremiah 20 ----
+    dict(slug="jeremiah-person", name="Jeremiah", kind="person", aliases=["Jeremiah"],
+         desc="A priest's son from Anathoth, drafted as a boy over his own objection ('before I formed you in "
+              "the womb, I knew you… I am only a youth,' ch. 1) — and made to say, for some forty years under "
+              "Judah's last kings, exactly what Jerusalem least wanted said: the city would fall, and Babylon "
+              "was the instrument. The cost is on the record like no other prophet's: beaten and locked in the "
+              "stocks (20:2), his scroll burned column by column in the king's brazier (ch. 36, redictated to "
+              "Baruch, longer), dropped into a mud cistern (ch. 38), and at last dragged to Egypt by the "
+              "refugees he warned. The book preserves his 'confessions' — private arguments with God (chs. "
+              "11–20), of which chapter 20 ('You enticed me… fire shut up in my bones… cursed be the day I was "
+              "born') is the last and rawest. Tradition, weeping over Jerusalem, gave him Lamentations too.",
+         refs=[("Jeremiah", 20, 1), ("Jeremiah", 20, 3), ("Jeremiah", 20, 9)], videos=[]),
+    dict(slug="pashhur", name="Pashhur son of Immer", kind="person", aliases=["Pashhur"],
+         desc="Priest and paqid nagid — 'chief overseer in the house of Jehovah,' head of temple order — who "
+              "answered the sermon over the Hinnom valley by striking Jeremiah and locking him overnight in "
+              "the stocks (20:1-2): the first recorded violence against the prophet, administered by the "
+              "temple's own police. He came back the next morning to a new name — Magor-Missaviv, "
+              "Terror-All-Around — and a measured sentence: exile, death, and burial in Babylon, 'you, and all "
+              "who love you, to whom you have prophesied falsehood' (20:6) — the chief of order was also a "
+              "comfortable false prophet. (A different Pashhur — and a 'Gedaliah son of Pashhur' — appear among "
+              "Jeremiah's enemies in 38:1; clay seal-impressions bearing that Gedaliah's name and his colleague "
+              "'Jehucal son of Shelemiah' were excavated a few meters apart in the City of David, sealed in the "
+              "ash of the destruction Jeremiah foretold.)",
+         refs=[("Jeremiah", 20, 1), ("Jeremiah", 20, 3), ("Jeremiah", 20, 6)], videos=[]),
+    dict(slug="babylon", name="Babylon", kind="place", aliases=["Babylon"],
+         desc="Bab-ili, 'gate of the god' — the city on the Euphrates that gave the world Hammurabi's laws, "
+              "and under Nebuchadnezzar II the Ishtar Gate, the ziggurat Etemenanki (standing behind the "
+              "Bible's memory of Babel's tower — see Shinar), and the empire that ended Judah. In Jeremiah's "
+              "preaching the doom long comes from an unnamed 'north'; at 20:4-6 the name is finally said out "
+              "loud — Babylon, five times in three verses — and Daniel's first page records the fulfillment "
+              "begun (605 BC). The city fell to Cyrus in 539 BC (the Nabonidus Chronicle and Cyrus Cylinder "
+              "carry the receipt), and Revelation will pick the name up again as the world-city's cipher "
+              "(chs. 17–18).",
+         refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1)],
+         coords=(32.5364, 44.4209, 0.5),
+         modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
+         videos=[]),
+
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
          desc="'Who is like God?' — an angel named after a rhetorical question, mi-kha-El, whose answer is NO "
@@ -1214,6 +1261,12 @@ XREFS = [
     (("Matthew", 7, 15), ("Revelation", 2, 2), "wolves in sheep's clothing — Ephesus, two generations on, praised for testing self-styled apostles and finding them false"),
     (("Matthew", 7, 9), ("Matthew", 6, 11), "the prayer's bread-petition, argued from fatherhood — what father hands his child a stone?"),
     (("Matthew", 7, 26), ("Matthew", 5, 22), "mōros — forbidden as an insult at 5:22, earned as a description at 7:26: the man who hears and does not do"),
+    # ---- Jeremiah 20 ----
+    (("Jeremiah", 20, 16), (19, 25), "haphakh — Sodom's overthrow-verb, wished on the bearer of birth-news; the chapter's bracket, opened by the 'twister' stocks that share the root"),
+    (("Jeremiah", 20, 12), ("Revelation", 2, 23), "'who sees kidneys and heart' — Jeremiah's oath, quoted back across the canon by Thyatira's Christ: 'I am the one who searches kidneys and hearts'"),
+    (("Jeremiah", 20, 1), ("Matthew", 5, 22), "'these things' = the sermon of ch. 19, preached over the valley of Ben-Hinnom — the valley Greek wears as Gehenna"),
+    (("Jeremiah", 20, 4), ("Daniel", 1, 2), "'all Judah into the hand of the king of Babylon' — prophesied from the stocks; recorded as done on Daniel's first page"),
+    (("Jeremiah", 20, 11), (15, 1), "'Jehovah is with me like a dread warrior' — the vision-word to Abram, 'I am a shield to you,' in a fighter's key"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1348,6 +1401,8 @@ VERSE_OF_DAY = [
     ("Matthew", 6, 26, "The argument against anxiety is a bird — fed daily by the same Father, and worth less than you."),
     ("Matthew", 7, 12, "The Golden Rule — stated positive where the ancients stated it negative, and signed: this IS the Law and the Prophets."),
     ("Matthew", 7, 7, "Three present imperatives — Greek's continuous aspect: keep asking, keep seeking, keep knocking."),
+    ("Jeremiah", 20, 9, "The fire shut up in the bones — the confession of a man who tried to resign and could not."),
+    ("Jeremiah", 20, 11, "The chapter's power-verb closes its ledger: God prevailed, the prophet could not, the pursuers shall not."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1497,6 +1552,9 @@ CHRON_CHAPTERS = {
     "gen20": dict(era="patriarchs",
                   when="Gerar — the sister-ruse replayed; Abimelech's dream; the Bible's first 'prophet.'",
                   clock="AM 2047–2048 · c. 1897 BC traditional — between Sodom's fall and Isaac's birth, which is one verse away."),
+    "jer20": dict(era="exile",
+                  when="Pashhur puts Jeremiah in the stocks; the prophet renames him Terror-All-Around, names Babylon at last — and curses the day he was born.",
+                  clock="c. 605–598 BC, Jehoiakim's Jerusalem — after Carchemish (Babylon is finally named as the exile's destination, five times in three verses), before the first deportation arrives to prove it."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -1566,6 +1624,9 @@ CHRON_EVENTS = [
     dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
          note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",
          ref=("Daniel", 1, 1)),
+    dict(era="exile", am="—", trad="c. 605–598 BC", event="Jeremiah in the stocks — Pashhur renamed Terror-All-Around; Babylon named as the exile's destination",
+         note="The first recorded violence against Jeremiah: a night in the 'twister' at the upper Benjamin Gate, for the sermon preached over the valley of Ben-Hinnom. The oracle that followed is the first in the book to say 'Babylon' out loud — five times in three verses — and the confession after it ('You enticed me… a burning fire shut up in my bones… cursed be the day I was born') is the rawest prayer in the prophets.",
+         ref=("Jeremiah", 20, 7)),
     dict(era="exile", am="—", trad="539 BC", event="Babylon falls to Cyrus — 'and Daniel continued until the first year of King Cyrus'",
          note="The exile's terminus, posted at its start (Daniel 1:21); pinned outside the Bible by the Nabonidus Chronicle and the Cyrus Cylinder.",
          ref=("Daniel", 1, 21)),

@@ -92,6 +92,7 @@ CHAPTERS = [
     ("mat5", "Matthew", 5, "The Sermon on the Mount opens in red letters — eight Happy-sayings, salt and light, not one iota, and six rounds of 'You have heard… but I say': anger, lust, oaths, the other cheek, love for enemies."),
     ("mat6", "Matthew", 6, "The Sermon's middle chapter — alms, prayer, and fasting in secret; the Lord's Prayer and its famous missing doxology; treasure, the undivided eye, Mammon — and the birds and the lilies."),
     ("mat7", "Matthew", 7, "The Sermon's finale — the splinter and the beam, ask-seek-knock, the Golden Rule signed, the narrow gate, wolves and fruit, 'I never knew you' — and the house on the rock."),
+    ("jer20", "Jeremiah", 20, "Pashhur and the stocks — the prophet renames his jailer Terror-All-Around, names Babylon at last, confesses the fire shut up in his bones — and curses the day he was born."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
@@ -121,7 +122,7 @@ BOOKS_NT = [("Matthew", 28), ("Mark", 16), ("Luke", 24), ("John", 21),
 BOOK_TOTAL = {name: n for name, n in BOOKS_OT + BOOKS_NT}
 _NT_BOOKS = {name for name, _ in BOOKS_NT}
 _BOOK_ABBR = {"Genesis": "Gen", "Exodus": "Exod", "Leviticus": "Lev", "Numbers": "Num",
-              "Deuteronomy": "Deut", "Daniel": "Dan", "Matthew": "Matt", "Mark": "Mark",
+              "Deuteronomy": "Deut", "Jeremiah": "Jer", "Daniel": "Dan", "Matthew": "Matt", "Mark": "Mark",
               "Luke": "Luke", "John": "John", "Acts": "Acts", "Romans": "Rom",
               "Revelation": "Rev"}
 
