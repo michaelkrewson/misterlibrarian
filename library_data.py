@@ -283,6 +283,19 @@ DICTIONARY = [
      "'To press into service' — a Persian word from the royal courier-post (Herodotus' angaroi), by Roman times the soldier's legal right to commandeer a civilian for one mile (milion — a Latin loanword; Rome audible in the Greek). Matthew 5:41: go the second one. The verb returns on Simon of Cyrene, pressed into carrying a cross (27:32).", ("Matthew", 5, 41)),
     ("teleios", "teleios", "τέλειος", "teleios",
      "'Whole, complete, full-grown' — traditionally 'perfect' (KJV, Matthew 5:48), but the word means completeness, not flawlessness: the Greek Bible's counterpart to the Hebrew tamim, El Shaddai's charge to Abram ('walk before me, and be blameless,' Genesis 17:1). Luke's parallel reads 'merciful' (6:36) — the wholeness in question is love without a fence.", ("Matthew", 5, 48)),
+    # ---- Matthew 6 (Greek) ----
+    ("epiousios", "epiousios", "ἐπιούσιος", "epiousios",
+     "The hardest word in the Lord's Prayer — and found NOWHERE else in Greek literature (Origen said the evangelists appear to have coined it). Likely from epienai, 'the coming day': bread FOR THE DAY AHEAD, asked for today (Matthew 6:11) — the manna rhythm. KJV 'daily'; Douay, translating the Vulgate literally, prints the shelf's strangest word: 'supersubstantial bread.'", ("Matthew", 6, 11)),
+    ("mamonas", "Mammon", "μαμωνᾶς", "mamōnas",
+     "Aramaic mamona, 'wealth, property' — from the same root as amen: that in which one trusts. Left untranslated by Matthew ('You cannot be slaves to God and to Mammon,' 6:24) and by nearly every version since (NIV breaks ranks: 'money'). Not a Canaanite deity — capital personified by the sentence's own grammar: only masters have slaves.", ("Matthew", 6, 24)),
+    ("hypokrites", "hypokritēs", "ὑποκριτής", "hypokritēs",
+     "In ordinary Greek: a STAGE ACTOR — the masked professional (the theater at Sepphoris stood an hour's walk from Nazareth). The Sermon's word for piety performed to an audience (Matthew 6:2, 5, 16), beside a matching verb in 6:1: righteousness done 'to be GAZED AT' (theathēnai — the root of 'theater'). English 'hypocrite' is this word, worn smooth.", ("Matthew", 6, 2)),
+    ("oligopistoi", "oligopistoi", "ὀλιγόπιστοι", "oligopistoi",
+     "'Little-faiths' — one Greek word, Matthew's pet name for disciples (6:30; the storm, 8:26; the water, 14:31; the forgotten bread, 16:8). Not FAITHLESS — chronically under-supplied: a diagnosis with affection in it. This translation keeps it as the single word it is: 'you little-faiths.'", ("Matthew", 6, 30)),
+    ("battalogeo", "battalogeō", "βατταλογέω", "battalogeō",
+     "'To babble on' (Matthew 6:7) — a word found almost nowhere before this verse, quite possibly built to sound like what it means (batta-batta…), and glossed by the next phrase: 'their many words.' KJV 'use not vain repetitions.' The target is pagan-style prayer as word-count — 'your Father knows what you need before you ask him.'", ("Matthew", 6, 7)),
+    ("haplous", "haplous", "ἁπλοῦς", "haplous",
+     "'Single, simple, undivided' — the healthy eye of Matthew 6:22 (KJV 'single'; NWT 'simple'; NIV 'healthy'), opposed to the 'evil eye,' which in Hebrew idiom is the STINGY eye (Deuteronomy 15:9). Generosity as optics: the undivided eye lights the whole body — and the very next sentence is about divided service: no one can be a slave to two masters.", ("Matthew", 6, 22)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
      "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
@@ -915,6 +928,16 @@ ENCYCLOPEDIA = [
          modern="Mount of Beatitudes, above Tabgha, northwest shore of the Sea of Galilee, Israel",
          videos=[]),
 
+    # ---- Matthew 6 ----
+    dict(slug="solomon", name="Solomon", kind="person", aliases=["Solomon"],
+         desc="David's son, Israel's third king — builder of the first temple, proverbially the wisest and "
+              "richest man of his age: the gold shields, the ivory throne, the fleet bringing 'gold, and "
+              "silver, ivory, and apes, and peacocks' (1 Kings 10). He enters this site not at his zenith but "
+              "losing a beauty contest to a wildflower: 'not even Solomon, in all his glory, was clothed like "
+              "one of these' (Matthew 6:29). Matthew's opening genealogy runs the royal line through him "
+              "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
+         refs=[("Matthew", 6, 29)], videos=[]),
+
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
          desc="'Who is like God?' — an angel named after a rhetorical question, mi-kha-El, whose answer is NO "
@@ -1167,6 +1190,12 @@ XREFS = [
     (("Matthew", 5, 22), (4, 6), "the first murder began as anger in a face — 'Why are you angry, and why has your face fallen?'"),
     (("Matthew", 5, 45), (1, 17), "the sun hung 'to shine on the earth' — and it rises on evil and good alike; the Father's indiscriminate weather"),
     (("Matthew", 5, 48), (17, 1), "'walk before me, and be blameless' — tamim, El Shaddai's charge to Abram; the Sermon closes on the Greek counterpart: whole, as the heavenly Father is whole"),
+    # ---- Matthew 6 ----
+    (("Matthew", 6, 13), ("Matthew", 5, 37), "apo tou ponērou — 'from the evil one,' or 'from evil': the ambiguous genitive flagged at 5:37, home in the prayer's last petition"),
+    (("Matthew", 6, 4), (16, 13), "El Roi, 'the God who sees' — Hagar's name for God in the desert; the Sermon's Father 'who sees in secret'"),
+    (("Matthew", 6, 26), (1, 30), "the birds of the heaven, fed — 'every green plant for food': the Creator was feeding the creatures on the record's first page"),
+    (("Matthew", 6, 11), (3, 19), "bread by the sweat of your face — Eden's sentence; the prayer asks bread back as a gift, one day at a time"),
+    (("Matthew", 6, 33), ("Matthew", 5, 6), "seek first the kingdom and his righteousness — the fourth Beatitude's hunger, given its compass heading"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1297,6 +1326,8 @@ VERSE_OF_DAY = [
     ("Daniel", 12, 3, "The Hebrew Bible's clearest resurrection scene gives the teachers the sky: shining like the vault, like the stars, forever."),
     ("Matthew", 5, 44, "The Sermon's summit — love your enemies; the sun and the rain make the argument."),
     ("Matthew", 5, 9, "The seventh Happy-saying: the peacemakers, called sons of God."),
+    ("Matthew", 6, 21, "The Sermon's compass needle: the heart follows the treasure."),
+    ("Matthew", 6, 26, "The argument against anxiety is a bird — fed daily by the same Father, and worth less than you."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1458,6 +1489,9 @@ CHRON_CHAPTERS = {
     "mat5": dict(era="gospels",
                  when="The Sermon on the Mount opens — eight Happy-sayings, salt and light, and six rounds of 'You have heard… but I say.'",
                  clock="c. AD 28–30, early in the Galilean ministry, on a hillside above the lake's northwest shore (tradition: the Mount of Beatitudes, above Tabgha). The first of Matthew's five great discourses — and the first page of this site printed in red letters."),
+    "mat6": dict(era="gospels",
+                 when="The Sermon continues — alms, prayer, and fasting in secret; the Lord's Prayer; treasure, the undivided eye, Mammon; the birds and the lilies.",
+                 clock="Same hillside, same discourse (c. AD 28–30) — the middle chapter of the Sermon's three. Its prayer became the most-recited text in human history; the Didache, within living memory of the apostles, already prescribes it three times a day."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
