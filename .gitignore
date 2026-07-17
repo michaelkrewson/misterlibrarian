@@ -1,0 +1,7 @@
+# Private archive of upstream original-language sources (Mechon-Mamre Hebrew,
+# SBLGNT Greek). NEVER committed — this repo is public (GitHub Pages); the
+# archive is private-by-design. Durable copy lives in S3 blobs/bible_sources/.
+# See tools/archive_sources.py.
+source/originals/
+__pycache__/
+.DS_Store
