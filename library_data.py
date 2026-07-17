@@ -239,6 +239,15 @@ DICTIONARY = [
     ("atsar", "atsar", "עָצַר", "atsar",
      "To restrain, hold back, shut up. Sarai's own word for her childlessness — 'Jehovah has kept me from bearing' (16:2) — returns doubled at 20:18: the house that took Sarah is given, for a season, Sarah's condition.", (16, 2)),
 
+    # ---- Daniel 1 (Hebrew) ----
+    ("patbag", "pat-bag", "פַּתְבַּג", "pat-bag",
+     "The king's food-portion (Daniel 1:5) — a PERSIAN loanword sitting in a Hebrew sentence (patibaga, 'allotment'), one of Daniel's tell-tale foreign words. KJV 'the king's meat' (meat = food), ASV 'the king's dainties.'", ("Daniel", 1, 5)),
+    ("gaal-defile", "ga'al", "גָּאַל", "ga'al",
+     "To defile — 'Daniel set on his heart that he would not DEFILE himself with the king's food' (Daniel 1:8). Why it defiled — idol-offered meat? unclean species? the dependence of eating at the king's table? — is debated; the wine, never unclean in the law, sharpens the question.", ("Daniel", 1, 8)),
+    ("zeroim", "zero'im", "זֵרֹעִים", "zero'im",
+     "Seed-food, vegetables — a word found only in Daniel 1 (vv 12, 16), the diet of history's first recorded controlled trial. KJV gave English a treasure for it: 'give us PULSE to eat.'", ("Daniel", 1, 12)),
+    ("saris", "saris", "סָרִיס", "saris",
+     "Eunuch — or simply 'court official': the word covers both (Potiphar, a married saris, shows the broader sense). Ashpenaz is 'chief of the sarisim' (Daniel 1:3); Isaiah had told Hezekiah his descendants would be sarisim in Babylon's palace (Isaiah 39:7), and tradition heard Daniel in the prophecy.", ("Daniel", 1, 3)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
      "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
@@ -332,15 +341,19 @@ ENCYCLOPEDIA = [
          desc="First of Nimrod's cities in Shinar (10:10) and the site of the tower (11:1-9). Its own name, Bab-ili, "
               "means 'Gate of God'; Genesis re-derives it from Hebrew balal, 'confuse' — a deliberate, polemical pun. "
               "One of the most excavated cities of the ancient world (the great ziggurat E-temen-anki likely informed "
-              "the tower story).",
-         refs=[(10, 10), (11, 9)],
+              "the tower story). And the story is long: under Nebuchadnezzar II this is the empire that besieged "
+              "Jerusalem and carried Judah captive — Daniel 1 opens with its king at the walls, and files the whole "
+              "empire under the tower's old name, Shinar (Daniel 1:1-2).",
+         refs=[(10, 10), (11, 9), ("Daniel", 1, 1)],
          videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")],
          coords=(32.5355, 44.4275, 0.15),
          modern="Babylon ruins, near Hillah, Iraq"),
     dict(slug="shinar", name="Shinar", kind="place",
          desc="The flat southern-Mesopotamian plain (Sumer/Babylonia) — no stone, hence brick and bitumen (11:3); "
-              "home of Babel, Erech (Uruk), and Accad (Akkad).",
-         refs=[(10, 10), (11, 2)], videos=[],
+              "home of Babel, Erech (Uruk), and Accad (Akkad). The name resurfaces, deliberately archaic, when "
+              "Nebuchadnezzar carries the temple vessels 'to the land of Shinar' (Daniel 1:2): the narrator filing "
+              "the new empire under the tower's old country.",
+         refs=[(10, 10), (11, 2), ("Daniel", 1, 2)], videos=[],
          coords=(32.2, 45.0, 3.0), approx=True,
          modern="Southern Iraq (ancient Sumer/Babylonia)"),
     dict(slug="nineveh", name="Nineveh", kind="place",
@@ -667,9 +680,11 @@ ENCYCLOPEDIA = [
               "story here is far older: Genesis 14's SALEM, Melchizedek's city, is traditionally identified with "
               "it (Psalm 76:2 makes the equation), and the war of the kings marched past its gates. In John, "
               "Jesus goes up for the festivals — three Passovers structure the Gospel — and clears the temple's "
-              "courts at the first of them (2:13-22). The city of the temple, the passion, and, in Revelation's "
-              "last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("John", 2, 13), ("John", 2, 23)],
+              "courts at the first of them (2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its "
+              "temple vessels and its brightest youths (Daniel 1:1-6). The city of the temple, the exile, the "
+              "passion — and, in Revelation's last vision, the descending New Jerusalem with no temple in it at "
+              "all (Rev 21:22).",
+         refs=[("Daniel", 1, 1), ("John", 2, 13), ("John", 2, 23)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -802,6 +817,32 @@ ENCYCLOPEDIA = [
               "with gifts and an open invitation (20:14-15). He returns to cut a treaty with Abraham at Beersheba "
               "(21:22-34).",
          refs=[(20, 2), (20, 4), (20, 9), (20, 14), (20, 17)], videos=[]),
+
+    # ---- Daniel 1 ----
+    dict(slug="daniel-person", name="Daniel", kind="person", aliases=["Daniel"],
+         desc="'El is my judge' — deported from Jerusalem as a youth in 605 BC, renamed Belteshazzar by the empire "
+              "(a name the narrator quietly declines to use), trained three years in Babylon's cuneiform "
+              "curriculum, and found 'ten hands better' than the court's own diviners (1:20). He serves through "
+              "the entire exile — 'until the first year of King Cyrus' (1:21), 605 to 539 BC — under Babylonian "
+              "and then Persian kings, interpreter of dreams in the book's first half, seer of visions in its "
+              "second. Ezekiel, his contemporary, already uses the name proverbially for righteousness and wisdom "
+              "(Ezekiel 14:14; 28:3).",
+         refs=[("Daniel", 1, 6), ("Daniel", 1, 8), ("Daniel", 1, 17), ("Daniel", 1, 21)], videos=[]),
+    dict(slug="nebuchadnezzar", name="Nebuchadnezzar II", kind="person", aliases=["Nebuchadnezzar"],
+         desc="King of Babylon 605–562 BC — the empire's great builder (the Ishtar Gate, the ziggurat Etemenanki) "
+              "and Jerusalem's destroyer: the 605 campaign (the year of Carchemish, fixed by the Babylonian "
+              "Chronicle) took Daniel; 597 took king Jehoiachin; 586 burned the city and the temple. Daniel's "
+              "court tales give him a dream he refuses to tell (ch. 2), a furnace (ch. 3), a humbling madness — "
+              "and, uniquely among scripture's tyrants, a doxology (4:34-37). Douay, via the Greek, spells him "
+              "Nabuchodonosor.",
+         refs=[("Daniel", 1, 1), ("Daniel", 1, 18)], videos=[]),
+    dict(slug="hananiah-mishael-azariah", name="Hananiah, Mishael, and Azariah", kind="person",
+         aliases=["Hananiah", "Mishael", "Azariah", "Shadrach", "Meshach", "Abednego"],
+         desc="Daniel's three companions from Judah — 'Yah has been gracious,' 'who is what El is?', 'Yah has "
+              "helped' — renamed Shadrach, Meshach, and Abednego by the empire (1:7; each new name smuggles in a "
+              "Babylonian god, Nebo's apparently garbled to 'Nego'). They share the vegetable test and the "
+              "ten-hands verdict (1:19-20); their own hour, the furnace, comes in chapter 3.",
+         refs=[("Daniel", 1, 6), ("Daniel", 1, 7), ("Daniel", 1, 11), ("Daniel", 1, 19)], videos=[]),
 
     # ---- Revelation 1 ----
     dict(slug="john-of-patmos", name="John (of Revelation)", kind="person", aliases=["John"],
@@ -993,6 +1034,11 @@ XREFS = [
     ((19, 27), (18, 22), "'the place where he had stood before Jehovah' — Abraham returns to yesterday's courtroom"),
     ((19, 29), (8, 1),   "zakhar — 'God remembered Noah' / 'God remembered Abraham': the remembering that acts, at both rescues"),
     ((19, 3),  (18, 6),  "the hospitality mirror — Lot's midnight urgency repeats Abraham's noon: rise, bow, press, bake"),
+    # ---- Daniel 1 ----
+    (("Daniel", 1, 2), (11, 2), "Shinar — the tower's own land: the temple vessels carried to Babel's country"),
+    (("Daniel", 1, 7), (17, 5), "renaming — the empire renames to erase; the God of Abraham renamed to bless"),
+    (("Daniel", 1, 12), ("Revelation", 2, 10), "ten days of testing — Smyrna's bounded trial speaks Daniel's dialect"),
+    (("Daniel", 1, 9), (19, 19), "chesed — covenant kindness, granted this time in a foreign court"),
     # ---- Genesis 20 ----
     ((20, 2),  (12, 13), "the wife-sister ruse — Egypt's script replayed at Gerar, the Bible's most famous doublet"),
     ((20, 4),  (18, 25), "'will you kill a nation even though righteous?' — the pagan king files Abraham's own brief"),
@@ -1141,6 +1187,7 @@ VERSE_OF_DAY = [
     ("Revelation", 1, 8, "The Alpha and the Omega — the Name unfolded into every tense at once."),
     ("Revelation", 1, 17, "The vision-word to Abram, spoken again at the canon's last vision: do not be afraid."),
     ("Revelation", 2, 10, "Smyrna's charge — kept to the letter, two generations on, by its own bishop Polycarp."),
+    ("Daniel", 1, 8, "The quiet verb the whole book stands on: Daniel set on his heart."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1223,6 +1270,7 @@ CHRON_ERAS = [
     ("flood",      "The Flood"),
     ("postflood",  "After the Flood"),
     ("patriarchs", "The Patriarchs"),
+    ("exile",      "The Exile"),
     ("gospels",    "The Gospels"),
     ("apostolic",  "The Apostolic Age"),
 ]
@@ -1288,6 +1336,9 @@ CHRON_CHAPTERS = {
     "gen20": dict(era="patriarchs",
                   when="Gerar — the sister-ruse replayed; Abimelech's dream; the Bible's first 'prophet.'",
                   clock="AM 2047–2048 · c. 1897 BC traditional — between Sodom's fall and Isaac's birth, which is one verse away."),
+    "dan1": dict(era="exile",
+                 when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
+                 clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1335,6 +1386,13 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah overthrown; Lot escapes to Zoar; Moab and Ammon born", ref=(19, 24)),
     dict(era="patriarchs", am="2047–2048", trad="c. 1897 BC", event="Abraham at Gerar — the sister-ruse replayed; Abimelech's dream; the first 'prophet'", ref=(20, 3)),
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
+    # -- The Exile --
+    dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
+         note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",
+         ref=("Daniel", 1, 1)),
+    dict(era="exile", am="—", trad="539 BC", event="Babylon falls to Cyrus — 'and Daniel continued until the first year of King Cyrus'",
+         note="The exile's terminus, posted at its start (Daniel 1:21); pinned outside the Bible by the Nabonidus Chronicle and the Cyrus Cylinder.",
+         ref=("Daniel", 1, 21)),
     # -- The Gospels --
     dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),
     dict(era="gospels", am="—", trad="c. AD 27–28", event="The first sign at Cana; the temple cleared at the first Passover",

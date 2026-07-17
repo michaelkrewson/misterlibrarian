@@ -86,6 +86,7 @@ CHAPTERS = [
     ("john2", "John", 2, "Water into wine at Cana — the beginning of the signs — and the temple cleared at the first Passover: “destroy this temple.”"),
     ("rev1", "Revelation", 1, "The unveiling begins — Patmos, the Lord's day, one like a son of man among the lampstands, and the Alpha and the Omega."),
     ("rev2", "Revelation", 2, "The letters begin — Ephesus's lost first love, Smyrna's crown, Satan's throne at Pergamum, and Jezebel of Thyatira."),
+    ("dan1", "Daniel", 1, "Babylon takes its first captives — four renamed youths, a ten-day test of vegetables and water, and 'ten hands better' than the magicians."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
@@ -115,8 +116,9 @@ BOOKS_NT = [("Matthew", 28), ("Mark", 16), ("Luke", 24), ("John", 21),
 BOOK_TOTAL = {name: n for name, n in BOOKS_OT + BOOKS_NT}
 _NT_BOOKS = {name for name, _ in BOOKS_NT}
 _BOOK_ABBR = {"Genesis": "Gen", "Exodus": "Exod", "Leviticus": "Lev", "Numbers": "Num",
-              "Deuteronomy": "Deut", "Matthew": "Matt", "Mark": "Mark", "Luke": "Luke",
-              "John": "John", "Acts": "Acts", "Romans": "Rom", "Revelation": "Rev"}
+              "Deuteronomy": "Deut", "Daniel": "Dan", "Matthew": "Matt", "Mark": "Mark",
+              "Luke": "Luke", "John": "John", "Acts": "Acts", "Romans": "Rom",
+              "Revelation": "Rev"}
 
 
 def book_slug(book):
