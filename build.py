@@ -42,6 +42,7 @@ def _asset_ver(name):
 CSS_VER = _asset_ver("style.css")
 JS_VER = _asset_ver("player-clips.js")
 AUDIO_JS_VER = _asset_ver("audio-reader.js")
+NOTES_JS_VER = _asset_ver("reader-notes.js")
 
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
@@ -279,6 +280,7 @@ def page(title, body, active="", desc=""):
 <script src="reading.js"></script>
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
+<script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
 {FOOTER}

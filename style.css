@@ -530,3 +530,96 @@ tr.ch-dim td{opacity:0.55}
    stays ordinary type, as in nearly all red-letter editions.
    Debuted with Matthew 5 (the Sermon on the Mount), 2026-07-16. ---- */
 .eng .rl{color:#e0655f}
+
+/* ---- Reader annotations: highlights, notes, sharing (reader-notes.js) ----
+   Everything a visitor marks lives in their own browser (localStorage); nothing
+   is uploaded. Themed to the site's gold/cyan palette. ---- */
+.vrs{position:relative}
+
+/* highlight tints — a left accent bar + a faint wash, readable on the dark page */
+.vrs[data-hl]{border-radius:10px;transition:background .15s}
+.vrs[data-hl=amber]{background:rgba(232,201,104,0.12);box-shadow:inset 3px 0 0 rgba(232,201,104,0.85)}
+.vrs[data-hl=green]{background:rgba(52,211,153,0.11);box-shadow:inset 3px 0 0 rgba(52,211,153,0.85)}
+.vrs[data-hl=blue]{background:rgba(74,159,212,0.13);box-shadow:inset 3px 0 0 rgba(74,159,212,0.9)}
+.vrs[data-hl=rose]{background:rgba(244,114,114,0.11);box-shadow:inset 3px 0 0 rgba(244,114,114,0.85)}
+.vrs[data-hl=purple]{background:rgba(167,139,250,0.13);box-shadow:inset 3px 0 0 rgba(167,139,250,0.9)}
+
+/* the "⋯" opener at the end of each verse */
+.v-tools{display:inline-block;margin-left:8px;padding:0 6px;border:none;background:none;cursor:pointer;
+  color:var(--dim);font-size:15px;line-height:1;vertical-align:baseline;opacity:.4;transition:opacity .12s,color .12s;
+  font-family:inherit;border-radius:6px}
+.vrs:hover .v-tools{opacity:.9}
+.v-tools:hover{color:var(--gold);opacity:1}
+.v-tools.has-note{opacity:1;color:var(--purple)}
+.v-tools.has-hl{opacity:1;color:var(--gold)}
+@media (hover:none){.v-tools{opacity:.6}}
+
+/* the popover menu */
+.v-menu{position:absolute;z-index:60;min-width:210px;background:var(--bg1);border:1px solid var(--border);
+  border-radius:12px;padding:10px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
+.v-menu-ref{font-size:11px;font-weight:800;letter-spacing:.04em;color:var(--gold);margin:0 2px 8px}
+.v-sw-row{display:flex;gap:7px;margin-bottom:9px}
+.v-sw{width:26px;height:26px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0;
+  transition:transform .1s,border-color .1s}
+.v-sw:hover{transform:scale(1.12)}
+.v-sw.on{border-color:#fff}
+.v-sw-amber{background:#e8c968}
+.v-sw-green{background:#34d399}
+.v-sw-blue{background:#4a9fd4}
+.v-sw-rose{background:#f47272}
+.v-sw-purple{background:#a78bfa}
+.v-sw-clear{background:var(--bg2);color:var(--muted);font-size:12px;line-height:22px;text-align:center;
+  border:1px solid var(--border)}
+.v-sw-clear.v-sw-off{opacity:.4}
+.v-menu-acts{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--border);padding-top:8px}
+.v-mi{display:block;width:100%;text-align:left;background:none;border:none;cursor:pointer;color:var(--text);
+  font-family:inherit;font-size:13px;padding:7px 8px;border-radius:8px}
+.v-mi:hover{background:rgba(255,255,255,.05);color:#fff}
+
+/* a saved verse note, shown under the verse */
+.v-note{margin:8px 0 2px;padding:8px 11px;background:rgba(167,139,250,0.07);border:1px solid rgba(167,139,250,0.22);
+  border-radius:9px;font-size:13px;line-height:1.6;color:var(--text);cursor:pointer;display:flex;gap:8px;align-items:flex-start}
+.v-note:hover{background:rgba(167,139,250,0.11)}
+.v-note-ic{flex:0 0 auto}
+.v-note-tx{flex:1 1 auto;white-space:pre-wrap}
+.v-note-edit{flex:0 0 auto;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+
+/* the inline note editor */
+.v-editor{margin:8px 0 2px}
+.v-ta,.cn-ta{display:block;width:100%;box-sizing:border-box;background:var(--bg2);color:var(--text);
+  border:1px solid var(--border);border-radius:9px;padding:9px 11px;font-family:inherit;font-size:13.5px;
+  line-height:1.6;resize:vertical}
+.v-ta:focus,.cn-ta:focus{outline:none;border-color:rgba(232,201,104,0.5)}
+.v-ed-row,.cn-row{display:flex;gap:8px;align-items:center;margin-top:7px}
+.v-btn{background:var(--bg2);color:var(--gold);border:1px solid rgba(232,201,104,0.4);border-radius:8px;
+  padding:6px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer}
+.v-btn:hover{background:rgba(232,201,104,0.12);color:#fff}
+.v-del{color:#f47272;border-color:rgba(244,114,114,0.4)}
+.v-del:hover{background:rgba(244,114,114,0.12)}
+.v-cancel{color:var(--muted);border-color:var(--border)}
+
+/* chapter-notes panel at the top of the reading area */
+.chap-notes{margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--bg1);overflow:hidden}
+.cn-toggle{display:flex;align-items:center;gap:8px;width:100%;background:none;border:none;cursor:pointer;
+  color:var(--text);font-family:inherit;font-size:13px;font-weight:700;padding:12px 16px;text-align:left}
+.cn-toggle:hover{background:rgba(255,255,255,.03)}
+.cn-count{color:var(--muted);font-weight:600;font-size:12px}
+.cn-caret{margin-left:auto;color:var(--dim);transition:transform .15s}
+.chap-notes.open .cn-caret{transform:rotate(90deg)}
+.cn-body{padding:0 16px 16px}
+.cn-saved{color:var(--gold);font-size:12px;font-weight:700}
+.cn-spacer{margin-left:auto}
+.cn-share{color:var(--b);border-color:rgba(34,211,238,0.4)}
+.cn-share:hover{background:rgba(34,211,238,0.12)}
+.cn-backup{margin-top:11px;padding-top:11px;border-top:1px solid var(--border);color:var(--muted);
+  font-size:11.5px;line-height:1.6}
+.cn-link{background:none;border:none;cursor:pointer;color:var(--b);font-family:inherit;font-size:11.5px;
+  padding:0;text-decoration:underline}
+.cn-link:hover{color:#7ee5f5}
+
+/* copied/saved toast */
+.ml-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(12px);z-index:80;
+  background:var(--bg2);color:#fff;border:1px solid rgba(232,201,104,0.4);border-radius:22px;
+  padding:9px 18px;font-size:13px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.5);
+  opacity:0;pointer-events:none;transition:opacity .18s,transform .18s}
+.ml-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
