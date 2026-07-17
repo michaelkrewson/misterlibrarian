@@ -259,6 +259,17 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Daniel 12 (Hebrew) ----
+    ("zohar", "zohar", "זֹהַר", "zohar",
+     "'Radiance, shining' — Daniel 12:3's wise 'shine like the SHINING of the vault' (yazhiru ke-zohar, the cognate kept). Rare: only here and Ezekiel 8:2. Eight centuries later the masterwork of Jewish mysticism took its title from this verse's word — the Zohar, 'Radiance.'", ("Daniel", 12, 3)),
+    ("diron", "dir'on", "דֵּרָאוֹן", "dir'on",
+     "'Abhorrence' — the dark pole of Daniel 12:2's double waking ('these to everlasting life, and these to... everlasting abhorrence'; KJV 'contempt'). Only twice in the Hebrew Bible: here, and Isaiah 66:24's closing image of corpses 'whose worm shall not die' — the picture Jesus borrows for Gehenna.", ("Daniel", 12, 2)),
+    ("qets", "qets", "קֵץ", "qets",
+     "'End' — from a root meaning CUT OFF: the drumbeat of Daniel 12. 'The time of the end' (et qets, 12:4, 9), 'the end of the wonders' (12:6), and the book's last breath — 'go on to the end... at the end of the days' (12:13). Genesis 6:13 uses it first: 'the end of all flesh has come before me.'", ("Daniel", 12, 4)),
+    ("goral", "goral", "גּוֹרָל", "goral",
+     "'Lot' — the pebble drawn or cast to divide land, duty, destiny; hence one's allotted PORTION (Joshua's tribal allotments are goral country). Daniel's last word of destiny: 'you shall stand up to your LOT at the end of the days' (12:13) — a share with your name on it, not a game of chance.", ("Daniel", 12, 13)),
+    ("moed", "mo'ed", "מוֹעֵד", "mo'ed",
+     "'Appointed time' — Genesis 1:14's word: the lights are hung 'for appointed times' (mo'adim), this translation's fixed rendering. In Daniel 12:7 time itself is measured in them — 'an appointed time, appointed times, and a half': the broken seven, three and a half, sworn by the One who lives forever. Later the word also names the tent of MEETING (ohel mo'ed) — appointed time, appointed place.", (1, 14)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
      "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
@@ -840,7 +851,8 @@ ENCYCLOPEDIA = [
               "and then Persian kings, interpreter of dreams in the book's first half, seer of visions in its "
               "second. Ezekiel, his contemporary, already uses the name proverbially for righteousness and wisdom "
               "(Ezekiel 14:14; 28:3).",
-         refs=[("Daniel", 1, 6), ("Daniel", 1, 8), ("Daniel", 1, 17), ("Daniel", 1, 21)], videos=[]),
+         refs=[("Daniel", 1, 6), ("Daniel", 1, 8), ("Daniel", 1, 17), ("Daniel", 1, 21),
+               ("Daniel", 12, 4), ("Daniel", 12, 13)], videos=[]),
     dict(slug="nebuchadnezzar", name="Nebuchadnezzar II", kind="person", aliases=["Nebuchadnezzar"],
          desc="King of Babylon 605–562 BC — the empire's great builder (the Ishtar Gate, the ziggurat Etemenanki) "
               "and Jerusalem's destroyer: the 605 campaign (the year of Carchemish, fixed by the Babylonian "
@@ -876,6 +888,17 @@ ENCYCLOPEDIA = [
               "mismatch with Daniel 11:40-45 is the oldest crux in the book's interpretation (Porphyry vs Jerome; "
               "see the chapter's notes).",
          refs=[("Daniel", 11, 21), ("Daniel", 11, 31)], videos=[]),
+
+    # ---- Daniel 12 ----
+    dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
+         desc="'Who is like God?' — an angel named after a rhetorical question, mi-kha-El, whose answer is NO "
+              "ONE. In Daniel's vision-frame he is 'one of the chief princes' who fights the unseen 'princes' of "
+              "Persia and Greece (10:13, 21), and at the end 'the great prince who stands over the sons of your "
+              "people' (12:1) — Israel's assigned guardian-advocate, standing up as the time of distress opens. "
+              "One of only two angels the Bible names (Gabriel is the other). The New Testament gives him two "
+              "more scenes: 'Michael the archangel' disputing over the body of Moses (Jude 9), and the war in "
+              "heaven — 'Michael and his angels fought against the dragon' (Revelation 12:7).",
+         refs=[("Daniel", 12, 1)], videos=[]),
 
     # ---- Revelation 1 ----
     dict(slug="john-of-patmos", name="John (of Revelation)", kind="person", aliases=["John"],
@@ -1101,6 +1124,14 @@ XREFS = [
     (("Revelation", 1, 8), (17, 1), "pantokratōr, 'the Almighty' — the Greek Bible's guess for El Shaddai, native at last"),
     (("Revelation", 1, 8), (2, 4), "'the one who is, and who was, and who is coming' — the divine name unfolded into tenses"),
     (("Revelation", 1, 17), (15, 1), "'do not be afraid' — the word to Abram at the Bible's first vision, spoken again at its last"),
+    # ---- Daniel 12 ----
+    (("Daniel", 12, 1), ("Daniel", 11, 41), "the escape-verb paid — Edom, Moab, and Ammon escaped the king's hand by geography; your people escape by enrollment, 'everyone found written in the book'"),
+    (("Daniel", 12, 2), (3, 19), "'the ground of dust' gives back its sleepers — Eden's sentence, 'dust you are, and to dust you shall return,' answered with waking"),
+    (("Daniel", 12, 2), ("John", 1, 4), "chayyei olam, 'everlasting life' — the Hebrew Bible's only use of the phrase; John's Gospel opens with the word: 'in him was life'"),
+    (("Daniel", 12, 3), (1, 6), "'the shining of the VAULT' — raqia, day two's hammered dome, the measure of the risen teachers' brightness"),
+    (("Daniel", 12, 4), ("Revelation", 1, 3), "'seal the book until the time of the end' — and the counter-order at the canon's far end: Revelation opens UNsealed, 'for the time is near'"),
+    (("Daniel", 12, 7), (14, 22), "the oath posture — Abram raised one hand to Jehovah; the man in linen raises both hands to the heavens"),
+    (("Daniel", 12, 10), ("Daniel", 11, 35), "'purified, made white, refined' — the martyrs' three-verb metallurgy, promised its finish"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1228,6 +1259,7 @@ VERSE_OF_DAY = [
     ("Revelation", 2, 10, "Smyrna's charge — kept to the letter, two generations on, by its own bishop Polycarp."),
     ("Daniel", 1, 8, "The quiet verb the whole book stands on: Daniel set on his heart."),
     ("Daniel", 11, 32, "The chapter's hinge between empires and martyrs: the people who know their God stand firm."),
+    ("Daniel", 12, 3, "The Hebrew Bible's clearest resurrection scene gives the teachers the sky: shining like the vault, like the stars, forever."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1383,6 +1415,9 @@ CHRON_CHAPTERS = {
     "dan11": dict(era="exile",
                   when="The angel's scroll of wars — from Persia through Alexander to the abomination that desolates.",
                   clock="The vision stands in Cyrus's first Persian years (ch. 10 dates it ~536 BC) and sweeps 370 years forward — to Antiochus IV's desecration, 15 Kislev 167 BC. Where its accuracy stops (v40) is the hinge of the whole dating debate."),
+    "dan12": dict(era="exile",
+                  when="The vision's last words — the sleepers in the dust wake, the book is sealed, and Daniel is promised his lot at the end of the days.",
+                  clock="Still Cyrus's first Persian years (~536 BC), closing the single vision of chs. 10–12 — and counting past 167 BC's desolation to the 1,290 and 1,335 days that twenty-two centuries of readers have never quite decoded."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1437,6 +1472,9 @@ CHRON_EVENTS = [
     dict(era="exile", am="—", trad="539 BC", event="Babylon falls to Cyrus — 'and Daniel continued until the first year of King Cyrus'",
          note="The exile's terminus, posted at its start (Daniel 1:21); pinned outside the Bible by the Nabonidus Chronicle and the Cyrus Cylinder.",
          ref=("Daniel", 1, 21)),
+    dict(era="exile", am="—", trad="c. 536 BC", event="Daniel's last vision, by the great river — the scroll of wars, the sleepers who wake, the sealed book",
+         note="One scene spanning chapters 10–12, dated by 10:1 to 'the third year of Cyrus' — an old man shown the far end of history and dismissed with a personal promise: 'you shall rest, and you shall stand up to your lot at the end of the days' (12:13). The Hebrew Bible's clearest resurrection text (12:2) belongs to this vision.",
+         ref=("Daniel", 12, 2)),
     # -- Between the Testaments --
     dict(era="intertestament", am="—", trad="167 BC", event="The abomination that desolates — Antiochus IV halts the daily offering; an altar to Zeus on the altar of burnt offering",
          note="1 Maccabees 1:54 dates it to 15 Kislev, 167 BC, quoting Daniel 11:31's own phrase. Whether Daniel foresees or records the day is the book's great dating question — both readings, at full strength, on the chapter page. The temple was rededicated three years later (Hanukkah, 164 BC).",
