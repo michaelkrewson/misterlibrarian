@@ -272,6 +272,17 @@ DICTIONARY = [
      "The NAME — given a Hebrew reason, 'because I DREW HIM OUT (meshitihu) of the water' (2:10), from mashah, 'to draw out.' But the form Mosheh is ACTIVE ('the one who draws out'), not the passive mashuy ('drawn out') the reason would need — the tell of a Hebrew pun laid over a genuinely EGYPTIAN name: mose / mes, 'born of, son,' the element in Thut-mose, Ah-mose, Ra-messes. The full case (and why the Egyptian name argues the story is authentic) is in the encyclopedia's <a href=\"encyclopedia.html#moses\">Moses</a> entry.", ("Exodus", 2, 10)),
     ("suph", "suph", "סוּף", "suph",
      "REEDS — the papyrus-marsh growth of the Nile's edge, where the baby's ark is set (2:3, 5). The same word names the sea Israel crosses: the YAM SUPH, 'Sea of Reeds' (Exodus 13:18; 15:4), which the KJV and most versions render 'Red Sea' (following the Greek Septuagint's eruthra thalassa). So the deliverer is drawn from the reeds before the nation is drawn through the reed-sea — the book plants its rescue in its opening scene. NWT keeps 'Red Sea' by convention but footnotes 'Reed Sea.'", ("Exodus", 2, 3)),
+    # ---- Exodus 3 (Hebrew) ----
+    ("ehyeh", "ehyeh", "אֶהְיֶה", "ehyeh",
+     "'I WILL BE / I AM' — God's answer at the bush, 'ehyeh asher ehyeh' (3:14), from hayah, 'to be,' in the Hebrew IMPERFECT: a form that spans I am / I will be / I will prove to be, so the shelf splits (KJV 'I AM THAT I AM'; ASV footnotes 'I WILL BE'; NWT 'I Will Become What I Choose to Become'; the Greek 'ho ōn,' 'the One who is,' handed to Revelation 1:8). This translation keeps it 'I WILL BE' to match v12's ehyeh immakh, 'I WILL BE with you' — the Presence promised to Moses IS the Name given to Israel. And ehyeh (first person, 'I will be') is the verb the third-person Name YHWH is built on ('He will be'): God names himself, Israel names him. See the <a href=\"encyclopedia.html#jehovah\">Jehovah</a> entry.", ("Exodus", 3, 14)),
+    ("seneh", "seneh", "סְנֶה", "seneh",
+     "The BUSH — a thornbush or bramble, the one Moses sees burning unconsumed (3:2). Rare (almost only this scene, plus Deuteronomy 33:16, 'him who dwelt in the seneh'), and it carries a quiet pun: seneh sounds like SINAI, the mountain it burns on — as if the bush names the mountain, or the mountain is a bush grown to stone. The fire that does not devour is the whole sign: a Presence that can dwell in the fragile without destroying it.", ("Exodus", 3, 2)),
+    ("qodesh", "qodesh", "קֹדֶשׁ", "qodesh",
+     "HOLY, holiness — the root sense is 'set apart, cut off from the common.' 'The place on which you stand is holy ground' (admat-qodesh, 3:5) is the first patch of EARTH in the Bible called holy — and the ground is admah, Adam's own soil (Genesis 2:7), made holy by nothing but the Presence standing on it. (The seventh day was 'made holy' first, Genesis 2:3 — holiness begins in TIME, then touches a PLACE here, and will fill the tabernacle by the book's end.) Not a quality of the dirt, but of Who is there.", ("Exodus", 3, 5)),
+    ("zavat-chalav-udevash", "zavat chalav u-devash", "זָבַת חָלָב וּדְבָשׁ", "zavat chalav u-devash",
+     "'Flowing with milk and honey' — the land-promise's signature phrase, first spoken here (3:8, 17) and repeated some twenty times through the Torah. 'Milk' from flocks on good pasture, 'honey' (devash — wild bee-honey, or the thick syrup of dates/figs) from fruited hills: not luxury but a land that FEEDS its people, the opposite of Egypt's rationed bricks-and-straw. Literally 'flowing (zavah) with milk and honey' — the land itself pouring out sustenance.", ("Exodus", 3, 8)),
+    ("natsal", "natsal", "נָצַל", "natsal",
+     "A root that runs both ways in this chapter — TO RESCUE, snatch away (hifil, hitsil): 'I have come down to RESCUE them from the hand of Egypt' (3:8) — and TO STRIP, plunder, despoil (piel, nitsel): 'you will STRIP Egypt bare' (3:22). One verb for the deliverance and for the spoil: Israel is snatched out of Egypt's hand, and carries Egypt's silver out in the same motion — the wages of four centuries, and the down payment on Genesis 15:14's 'great possessions.' KJV 'spoil'; the pun on 'deliver' is only visible in the Hebrew.", ("Exodus", 3, 22)),
     # ---- Genesis 23 (Hebrew) ----
     ("ger", "ger / toshav", "גֵּר / תּוֹשָׁב", "ger / toshav",
      "Two distinct legal statuses the shelf often merges (KJV 'a stranger and a sojourner,' Genesis 23:4; NWT keeps them, 'an alien resident and a settler'). A GER is a resident foreigner — living among a people, protected by law, but WITHOUT citizenship or the right to own land (Torah's great charge: 'love the ger, for you were gerim in Egypt'). A TOSHAV is a settled outsider, more rooted but still landless. Abraham names himself both — the man promised the whole land cannot legally buy a grave in it.", (23, 4)),
@@ -1163,7 +1174,7 @@ ENCYCLOPEDIA = [
               "counsel to appoint judges and delegate, the Bible's first management lesson. A Midianite priest "
               "who worships Israel's God: one of scripture's quiet witnesses that the knowledge of the true "
               "God was not sealed inside Israel alone.",
-         refs=[("Exodus", 2, 16), ("Exodus", 2, 18), ("Exodus", 2, 21)], videos=[]),
+         refs=[("Exodus", 2, 16), ("Exodus", 2, 18), ("Exodus", 2, 21), ("Exodus", 3, 1)], videos=[]),
     dict(slug="zipporah", name="Zipporah", kind="person", aliases=["Zipporah"],
          desc="'Bird' (tsippor, a small bird) — a daughter of the priest of Midian, given to Moses as his "
               "wife (Exodus 2:21), mother of his sons Gershom and Eliezer. She reappears in one of the "
@@ -1174,6 +1185,23 @@ ENCYCLOPEDIA = [
               "sign that saves the covenant mediator's life. (Numbers 12 records Miriam and Aaron murmuring "
               "against Moses over his 'Cushite wife' — whether Zipporah or another is debated.)",
          refs=[("Exodus", 2, 21), ("Exodus", 2, 22)], videos=[]),
+    dict(slug="horeb", name="Horeb (Mount Sinai)", kind="place", aliases=["Horeb"],
+         desc="'The mountain of God' (Exodus 3:1), where the bush burns, where Moses is called, and where — "
+              "one book later — Israel will camp for a year and receive the Law in fire and cloud. HOREB and "
+              "SINAI are the same mountain under two names (Exodus tends to 'Sinai,' Deuteronomy to 'Horeb'); "
+              "the exact peak is unknown. The traditional site since Byzantine times is JEBEL MUSA ('the "
+              "mountain of Moses') in the south-central Sinai Peninsula, at whose foot St. Catherine's "
+              "Monastery guards a thornbush said to be the descendant of the seneh. Other proposals have been "
+              "argued — a northern Sinai peak, or JEBEL AL-LAWZ in northwest Arabia (favored by those who "
+              "place Midian, where Moses was shepherding, across the Gulf of Aqaba, and read Galatians 4:25's "
+              "'Sinai in Arabia' literally) — none decisive. What the text fixes is not the coordinates but "
+              "the pattern: the God who meets Moses here in fire brings the whole nation back to the same "
+              "fire (Exodus 19), and the sign given at the bush is the meeting itself — 'you will serve God "
+              "on this mountain' (3:12).",
+         refs=[("Exodus", 3, 1), ("Exodus", 3, 12)],
+         coords=(28.5392, 33.9750, 0.5), approx=True,
+         modern="Traditionally Jebel Musa, St. Catherine, south-central Sinai Peninsula, Egypt (disputed)",
+         videos=[]),
 
     # ---- Genesis 23 ----
     dict(slug="machpelah", name="Machpelah", kind="place", aliases=["Machpelah"],
@@ -1443,8 +1471,10 @@ ENCYCLOPEDIA = [
               "American Standard Version and by the New World Translation) — a hybrid of the consonants YHWH with "
               "the vowels of <em>Adonai</em>; scholars reconstruct the original pronunciation as 'Yahweh.' The full "
               "discussion, and why this project chose 'Jehovah,' is on the "
-              "<a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>.",
-         refs=[(2, 4)],
+              "<a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>. The Name's own self-explanation is given "
+              "at the burning bush — 'ehyeh asher ehyeh,' and then 'YHWH … this is my name forever' (Exodus "
+              "3:14-15); see that chapter.",
+         refs=[(2, 4), ("Exodus", 3, 15)],
          videos=[("Searching for the earliest mention of the Israelite's God, \"Yahweh.\"",
                   "https://www.youtube.com/watch?v=pGEOZ5YI22M")]),
 ]
@@ -1487,6 +1517,16 @@ XREFS = [
     (("Exodus", 2, 2),  (1, 4),  "ki tov — 'she saw him, that he was GOOD' — the mother's word over her baby is God's word over the light on the first day, 'and God saw the light, that it was good'"),
     (("Exodus", 2, 22), (23, 4), "ger, a 'resident alien' — Moses names his son Gershom by Abraham's own confession at Machpelah, 'I am a resident alien among you': the patriarch's statelessness handed to the man who will end it"),
     (("Exodus", 2, 24), (17, 7), "God 'remembered his covenant' — not that he had forgotten, but that the everlasting covenant cut with Abraham (17:7) has now come due; zakhar here means to ACT on a promise"),
+
+    # ---- Exodus 3 ----
+    (("Exodus", 3, 2),  (16, 7),  "the ANGEL OF JEHOVAH — the same seam met at the Bible's first mal'akh YHWH, Hagar's well: the messenger who so carries the Sender that the account slides from 'the angel' to 'Jehovah' speaking as God himself"),
+    (("Exodus", 3, 4),  (22, 11), "the doubled name and 'Here I am' — 'Moses, Moses!' answered with hineni, exactly as 'Abraham, Abraham!' was answered with the knife raised on Moriah"),
+    (("Exodus", 3, 7),  ("Exodus", 2, 25), "'I have SEEN … HEARD … KNOW' — the four verbs that closed chapter 2 (God heard, remembered, saw, knew), now spoken in the first person out of the fire"),
+    (("Exodus", 3, 12), ("Exodus", 3, 14), "ehyeh, 'I will be' — the presence promised to Moses, 'I WILL BE with you,' is the very word God gives two verses on as his Name, 'I WILL BE WHAT I WILL BE'"),
+    (("Exodus", 3, 14), ("Revelation", 1, 8), "'I WILL BE / I AM' — the Greek Bible's 'ho ōn,' the One who is, is the title Revelation hands to Christ: 'him who is and who was and who is coming'"),
+    (("Exodus", 3, 16), (21, 1),  "paqod paqadti, 'I have surely attended to you' — the paqad of 'Jehovah visited Sarah' with a son, and dying Joseph's password: 'God will surely visit you'"),
+    (("Exodus", 3, 20), ("Jeremiah", 21, 2), "niflaotai, 'my wonders' — the Exodus wonders first promised here; Zedekiah's officials would one day beg Jeremiah to see them repeated, and learn the Wonder-worker had changed sides"),
+    (("Exodus", 3, 22), (15, 14), "'you will strip Egypt bare' — the great possessions God foretold to Abram in the dark: 'afterward they will come out with great wealth'"),
 
     # ---- Genesis 23 ----
     ((23, 4),  (17, 8),  "achuzzah, a 'holding' — the everlasting HOLDING God promised Abraham (all Canaan), and here the one burial holding is all of it he owns in his lifetime"),
@@ -1837,6 +1877,8 @@ VERSE_OF_DAY = [
     ("Exodus", 2, 24, "Four verbs turn the whole book: 'God heard… God remembered his covenant… God saw… and God knew.'"),
     ("Jeremiah", 22, 16, "The prophets' definition of knowing God: 'He judged the cause of the poor and needy… Is that not to know me? declares Jehovah.'"),
     ("Jeremiah", 22, 29, "The threefold cry, unforgettable in the Hebrew — erets, erets, arets: 'Land! Land! Land! Hear the word of Jehovah!'"),
+    ("Exodus", 3, 5, "The first patch of earth the Bible calls holy — made holy only by the Presence: 'the place on which you are standing is holy ground.'"),
+    ("Exodus", 3, 14, "The sentence the whole Bible turns on — God's own name for himself: 'I WILL BE WHAT I WILL BE.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1994,6 +2036,9 @@ CHRON_CHAPTERS = {
     "exod2": dict(era="exodus",
                   when="Moses is born and drawn from the Nile in an ark of papyrus; grown, he kills an Egyptian and flees to Midian; and God hears, remembers, sees, and knows.",
                   clock="On the EARLY date this translation follows (Exodus 1446 BC), Moses is born about 1526 BC, flees Thutmose III to Midian about forty years later (2:11-15), and shepherds there through the pharaoh's death (2:23, c. 1425 BC) until the burning-bush call returns him to Amenhotep II's Egypt. The whole chapter is the forty silent years before Exodus 3."),
+    "exod3": dict(era="exodus",
+                  when="The burning bush at Horeb — Moses called, holy ground, and the Name revealed: 'I will be what I will be,' Jehovah, 'my name forever.'",
+                  clock="c. 1446 BC on the early date — Moses is about eighty (Exodus 7:7), the oppressing pharaoh (Thutmose III) has died, and the forty Midian years end at the mountain of God. The call launches the year of the Exodus itself; Amenhotep II now sits on Egypt's throne."),
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
@@ -2095,6 +2140,9 @@ CHRON_EVENTS = [
     dict(era="exodus", am="—", trad="c. 1526–1486 BC", event="Moses born and drawn from the Nile; grown, he flees to Midian — and God hears Israel's groaning and remembers his covenant",
          note="Born to a Levite couple under Pharaoh's death-decree, hidden three months, then floated on the Nile in an ark of papyrus (the word tevah, Noah's ark) and drawn out by Pharaoh's daughter to be raised in the Egyptian court (Exodus 2). His very name is Egyptian — mose, 'born of, son,' the element in Thut-mose and Ra-messes — under a Hebrew pun on mashah, 'to draw out.' At about forty he kills an Egyptian overseer and flees to Midian, marries Zipporah, and shepherds there until the oppressing pharaoh (Thutmose III on the early date) dies (2:23) — the forty silent years before the burning bush. The chapter ends on four verbs that turn the whole book: God heard, remembered his covenant, saw, and knew.",
          ref=("Exodus", 2, 10)),
+    dict(era="exodus", am="—", trad="c. 1446 BC", event="The burning bush at Horeb — Moses called; the Name revealed: 'I will be what I will be,' Jehovah",
+         note="At the mountain of God, an angel of Jehovah in a bush that burns unconsumed; 'take off your sandals, for the place is holy ground'; and the God of Abraham, Isaac, and Jacob names himself — ehyeh asher ehyeh, 'I will be what I will be,' and YHWH, 'this is my name forever, my memorial to all generations' (Exodus 3:14-15). The four verbs that closed chapter 2 (God heard, remembered, saw, knew) come back in the first person out of the fire. On the early date Moses is about eighty (7:7); the call opens the year of the Exodus, 1446 BC. This chapter is the ground of the whole translation's rendering of the Name as Jehovah.",
+         ref=("Exodus", 3, 14)),
     # -- The Kingdom --
     dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
          note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",
