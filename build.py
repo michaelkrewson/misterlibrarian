@@ -325,8 +325,18 @@ def page(title, body, active="", desc="", url="", image=""):
 """
 
 
+# Chapter slugs in SOURCE-FILE order. New panels are appended, so this is publish
+# order — which is what the homepage "Newest" surfaces need. CHAPTERS itself is kept
+# in CANONICAL order (for book-scoped chapter nav), so its tail is the canonically-
+# last chapter, NOT the most recently shipped one. Set by extract_source.
+PUBLISH_ORDER = []
+
+
 def extract_source(source_path):
     src = open(source_path, encoding="utf-8").read()
+    global PUBLISH_ORDER
+    PUBLISH_ORDER = re.findall(
+        r'<div class="chapter-panel[^"]*" id="chapter-([a-z0-9]+)">', src)
     chapters = {}
     for slug, _, _, _ in CHAPTERS:
         m = re.search(
@@ -1264,6 +1274,83 @@ def _render_default_card(path):
     return True
 
 
+# --- verse-card staleness + size budget -------------------------------------------
+# Cards are expensive to render, so they are reused across builds. But "reuse if the
+# file exists" strands the old image when a later exactness pass rewords the verse.
+# A tiny content-hash manifest (img/v/.cards.json) fixes that: a card is re-rendered
+# only when the verse text (or CARD_TEMPLATE_VERSION) changed. A pre-manifest card is
+# trusted and seeded, so this ships without re-rendering the ~1,200 existing cards.
+CARD_TEMPLATE_VERSION = "1"   # bump to force-regenerate EVERY verse card after a card-design change
+CARD_BUDGET_WARN_MB = 700     # GitHub Pages publishes ~1 GB max; warn before the cards get there
+_CARD_MANIFEST = None
+_CARD_MANIFEST_DIRTY = False
+
+
+def _card_manifest_path():
+    return os.path.join(OUT, "img", VERSE_DIR, ".cards.json")
+
+
+def _card_manifest():
+    global _CARD_MANIFEST
+    if _CARD_MANIFEST is None:
+        try:
+            _CARD_MANIFEST = json.load(open(_card_manifest_path(), encoding="utf-8"))
+        except (OSError, ValueError):
+            _CARD_MANIFEST = {}
+    return _CARD_MANIFEST
+
+
+def _card_hash(text):
+    return hashlib.sha1(f"{CARD_TEMPLATE_VERSION}\x00{text}".encode("utf-8")).hexdigest()[:16]
+
+
+def _set_card_hash(key, h):
+    global _CARD_MANIFEST_DIRTY
+    _card_manifest()[key] = h
+    _CARD_MANIFEST_DIRTY = True
+
+
+def _ensure_verse_card(book, num, v, stem, text, card_rel):
+    """(Re)render the verse's og:image card only when needed. A hash MISMATCH (verse
+    text or CARD_TEMPLATE_VERSION changed) forces a re-render; an existing card with no
+    manifest entry is trusted and seeded. Returns card_rel, or None if Pillow/fonts are
+    unavailable (the caller then falls back to the branded default og:image)."""
+    card_path = os.path.join(OUT, card_rel)
+    key = f"{stem}-{v}"
+    want = _card_hash(text)
+    have = _card_manifest().get(key)
+    if os.path.exists(card_path):
+        if have == want:
+            return card_rel
+        if have is None:                 # pre-existing card from before the manifest — trust + seed
+            _set_card_hash(key, want)
+            return card_rel
+    if _render_verse_card(book, num, v, text, card_path):
+        _set_card_hash(key, want)
+        return card_rel
+    return None
+
+
+def save_card_manifest():
+    if _CARD_MANIFEST_DIRTY and _CARD_MANIFEST is not None:
+        with open(_card_manifest_path(), "w", encoding="utf-8") as f:
+            json.dump(_CARD_MANIFEST, f, ensure_ascii=False, sort_keys=True)
+
+
+def report_card_budget():
+    cdir = os.path.join(OUT, "img", VERSE_DIR)
+    if not os.path.isdir(cdir):
+        return
+    pngs = [f for f in os.listdir(cdir) if f.endswith(".png")]
+    mb = sum(os.path.getsize(os.path.join(cdir, f)) for f in pngs) / (1024 * 1024)
+    over = mb >= CARD_BUDGET_WARN_MB
+    msg = f"{'⚠  ' if over else '   '}verse cards: {len(pngs)} PNGs, {mb:.0f} MB"
+    if over:
+        msg += (" — approaching the ~1 GB GitHub Pages publish cap; plan smaller/JPEG "
+                "cards, per-chapter cards, or a separate image host before broad coverage")
+    print(msg)
+
+
 def build_verse_stubs(book, num, content):
     """Emit one /v/<book>-<ch>-<v>.html share-stub per verse in this chapter, so a
     shared verse link unfurls with THAT verse's text (crawlers ignore #fragments)."""
@@ -1284,14 +1371,12 @@ def build_verse_stubs(book, num, content):
         desc = text if len(text) <= 200 else text[:197].rsplit(" ", 1)[0] + "…"
         target = f"/{chfile}#{verse_anchor(num, v)}"
         stub_url = f"{SITE_URL}/{VERSE_DIR}/{stem}-{v}.html"
-        # per-verse og:image card (rendered once, then reused — the audio-MP3
-        # pattern); falls back to the branded default if Pillow/fonts are absent.
-        card_rel = f"img/{VERSE_DIR}/{stem}-{v}.png"
-        card_path = os.path.join(OUT, card_rel)
-        if not os.path.exists(card_path):
-            if not _render_verse_card(book, num, v, text, card_path):
-                card_rel = None
-        og_image = f"{SITE_URL}/{card_rel}" if card_rel and os.path.exists(card_path) else OG_IMAGE
+        # per-verse og:image card — reused across builds, but re-rendered when the verse
+        # text changed (see _ensure_verse_card); falls back to the branded default if
+        # Pillow/fonts are absent.
+        card_rel = _ensure_verse_card(book, num, v, stem, text,
+                                      f"img/{VERSE_DIR}/{stem}-{v}.png")
+        og_image = f"{SITE_URL}/{card_rel}" if card_rel else OG_IMAGE
         out = _verse_stub_html(ref, desc, target, chfile, stub_url, og_image)
         open(os.path.join(vdir, f"{stem}-{v}.html"), "w", encoding="utf-8").write(out)
 
@@ -1677,11 +1762,17 @@ check a chapter off directly from its own page, next to the Hide Hebrew toggle.)
 
 
 def build_index(chapters):
-    latest = CHAPTERS[-1]
+    # "Newest" = most-recently-published = the LAST panel in the source file
+    # (PUBLISH_ORDER), NOT CHAPTERS[-1]: CHAPTERS is in canonical order, so its tail is
+    # the canonically-last chapter (currently Exodus), not the one shipped most recently.
+    # Both the button and the card grid (newest-first) follow publish order so they agree.
+    _by_slug = {slug: (slug, book, num, teaser) for slug, book, num, teaser in CHAPTERS}
+    pub = [_by_slug[s] for s in PUBLISH_ORDER if s in _by_slug] or list(CHAPTERS)
+    latest = pub[-1]
     cards = "".join(
         f'<a class="card" href="{chapter_filename(book, num)}"><div class="card-t">{book} {num}</div>'
         f'<div class="card-d">{teaser}</div></a>'
-        for _, book, num, teaser in reversed(CHAPTERS))
+        for _, book, num, teaser in reversed(pub))
     votd_json = json.dumps(votd_entries(chapters), ensure_ascii=False).replace("</", "<\\/")
     ch_json = json.dumps(
         [{"slug": slug, "label": f"{book} {num}", "href": chapter_filename(book, num)}
@@ -2813,6 +2904,8 @@ def main():
     n_places, n_people = build_encyclopedia()
     n_mapped, n_atlas_places = build_atlas()
     build_library((n_words, n_refs, n_dict, n_places, n_people, len(XREFS), n_mapped, n_atlas_places))
+    save_card_manifest()
+    report_card_budget()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp, "
           f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}) from {args.source}")
