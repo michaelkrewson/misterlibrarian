@@ -94,8 +94,9 @@ CHAPTERS = [
     ("mat7", "Matthew", 7, "The Sermon's finale — the splinter and the beam, ask-seek-knock, the Golden Rule signed, the narrow gate, wolves and fruit, 'I never knew you' — and the house on the rock."),
     ("jer20", "Jeremiah", 20, "Pashhur and the stocks — the prophet renames his jailer Terror-All-Around, names Babylon at last, confesses the fire shut up in his bones — and curses the day he was born."),
     ("jer21", "Jeremiah", 21, "The final siege — Zedekiah's delegation asks for a miracle and hears the bleakest answer in the book: the Exodus formula aimed inward, the way of life through the enemy camp, and fire for the cedar forest."),
+    ("gen21", "Genesis", 21, "Isaac is born and the laughter lands — then Hagar's second desert scene ('God heard the boy, there where he is'), seven ewe-lambs, the well of the oath, and the Everlasting God at a tamarisk."),
 ]
-NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
+NEXT_UP = "Genesis 22"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),

@@ -206,7 +206,7 @@ DICTIONARY = [
     ("hamon", "hamon", "הֲמוֹן", "hamon",
      "A multitude, a roaring crowd — the word folded into Abraham's new name: av hamon goyim, 'father of a multitude of nations' (17:4-5).", (17, 4)),
     ("tsachaq", "tsachaq", "צָחַק", "tsachaq",
-     "To laugh — Abraham's face-down laugh at 17:17 mints the name Isaac (Yitschaq, 'he laughs'); Sarah's laugh (18:12) and her 'God has made laughter for me' (21:6) keep the pun running.", (17, 17)),
+     "To laugh — Abraham's face-down laugh at 17:17 mints the name Isaac (Yitschaq, 'he laughs'); Sarah's laugh (18:12) and her 'God has made laughter for me' (21:6) keep the pun running — until its sting: at 21:9 Sarah sees Ishmael metsacheq, 'laughing,' the participle of Isaac's own name-verb. Whatever he was doing, in Hebrew he was doing ISAAC — and it costs him his home (KJV 'mocking'; Douay 'playing'; Paul, 'persecuted,' Galatians 4:29).", (17, 17)),
     # ---- Genesis 18 (Hebrew) ----
     ("tseaqah", "za'aqah / tse'aqah", "זְעָקָה / צְעָקָה", "za'aqah / tse'aqah",
      "The outcry — the legal scream of the wronged. Abel's blood 'cries out' from the ground (4:10), the outcry of Sodom's victims reaches heaven (18:20-21), and Israel's own cry in Egypt will rise the same way (Exodus 3:7, 9).", (18, 20)),
@@ -259,6 +259,15 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Genesis 21 (Hebrew) ----
+    ("paqad", "paqad", "פָּקַד", "paqad",
+     "To visit, attend to — for good or for ill: 'Jehovah VISITED Sarah' with a son (Genesis 21:1; KJV 'visited'), and the same verb 'visits' Jerusalem's doings upon her in judgment (Jeremiah 21:14). The Bible's word for God turning his attention toward someone — what happens next depends on the ledger.", (21, 1)),
+    ("el-olam", "El Olam", "אֵל עוֹלָם", "El Olam",
+     "'The Everlasting God' — the fourth El-name collected at a landmark: El Elyon at Salem (14:18), El Roi at Hagar's well (16:13), El Shaddai at the covenant (17:1), and El Olam at a tamarisk beside a sworn well (21:33). NWT, keeping its clock, 'the indefinitely lasting God.'", (21, 33)),
+    ("eshel", "eshel", "אֵשֶׁל", "eshel",
+     "The tamarisk — a desert tree that lives for centuries; planting one at a well (Genesis 21:33) is filing a claim on the future in slow motion. KJV, following an older guess, 'planted a GROVE'; ASV 'a tamarisk tree.'", (21, 33)),
+    ("sheva", "sheva / nishba", "שֶׁבַע / נִשְׁבַּע", "sheva / nishba",
+     "Seven — and the oath: Hebrew's verb 'to swear' (nishba) is literally 'to SEVEN oneself.' So Be'er Sheva (Genesis 21:31) reads two ways that are one — 'well of the seven' (the ewe-lambs, v30) and 'well of the oath' (v31): one word wearing both faces, and the text offers both etymologies on purpose.", (21, 31)),
     # ---- Jeremiah 20 (Hebrew) ----
     ("magor-missaviv", "Magor-Missaviv", "מָגוֹר מִסָּבִיב", "magor missaviv",
      "'Terror all around' — magor (dread) + missaviv (from every side): the name Jeremiah gives his jailer Pashhur after a night in the stocks (20:3), and the prophet's own signature phrase of dread (6:25; 46:5; 49:29; Psalm 31:13 borrows it). By 20:10 the street is chanting it back at him as a taunt. KJV runs it together as one grim word: 'Magormissabib.'", ("Jeremiah", 20, 3)),
@@ -829,7 +838,7 @@ ENCYCLOPEDIA = [
               "in the Bible he visits, the only woman in Genesis to receive the offspring-beyond-counting promise "
               "from God directly (16:10), and the only person in the Bible who confers a name on God — El Ro'i, "
               "'the God who sees me' (16:13). Her story resumes in Genesis 21.",
-         refs=[(16, 1), (16, 4), (16, 8), (16, 13), (16, 15)], videos=[]),
+         refs=[(16, 1), (16, 4), (16, 8), (16, 13), (16, 15), (21, 9), (21, 14), (21, 17)], videos=[]),
     dict(slug="ishmael", name="Ishmael", kind="person",
          desc="'God hears' (yishma-El) — named by the angel for the affliction Jehovah heard (16:11), born when "
               "Abram was 86 (16:15-16), and his only son for the next thirteen years. The oracle makes him 'a "
@@ -866,7 +875,7 @@ ENCYCLOPEDIA = [
               "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
               "later be his home (24:62; 25:11).",
-         refs=[(17, 19), (17, 21)], videos=[]),
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -895,7 +904,7 @@ ENCYCLOPEDIA = [
               "word from 18:23), whose 'integrity of heart' God himself confirms, and who answers being wronged "
               "with gifts and an open invitation (20:14-15). He returns to cut a treaty with Abraham at Beersheba "
               "(21:22-34).",
-         refs=[(20, 2), (20, 4), (20, 9), (20, 14), (20, 17)], videos=[]),
+         refs=[(20, 2), (20, 4), (20, 9), (20, 14), (20, 17), (21, 22), (21, 25), (21, 32)], videos=[]),
 
     # ---- Daniel 1 ----
     dict(slug="daniel-person", name="Daniel", kind="person", aliases=["Daniel"],
@@ -967,7 +976,22 @@ ENCYCLOPEDIA = [
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
          refs=[("Matthew", 6, 29)], videos=[]),
 
+    # ---- Genesis 21 ----
+    dict(slug="beersheba", name="Beersheba", kind="place", aliases=["Beersheba"],
+         desc="'Well of the seven / well of the oath' — the double-named well where Abraham and Abimelech "
+              "swore over seven ewe-lambs (21:28-31; Hebrew 'to swear,' nishba, is literally 'to seven "
+              "oneself,' so the two readings are one word). Abraham plants a tamarisk here and calls on El "
+              "Olam, the Everlasting God (21:33); Isaac and Jacob will both anchor here after him, and 'from "
+              "Dan to Beersheba' becomes the Bible's own phrase for the whole land, north to south. The "
+              "excavated tell (Tel Be'er Sheva) preserves an Iron-Age planned town with a monumental well at "
+              "its gate — a city built around exactly the asset this chapter litigates.",
+         refs=[(21, 14), (21, 31), (21, 33)],
+         coords=(31.2448, 34.8410, 0.08),
+         modern="Tel Be'er Sheva, east of modern Beersheba, Israel",
+         videos=[]),
+
     # ---- Jeremiah 20 ----
+    # (gen21 ref-extensions handled inline on the existing hagar/isaac/abimelech entries below)
     dict(slug="jeremiah-person", name="Jeremiah", kind="person", aliases=["Jeremiah"],
          desc="A priest's son from Anathoth, drafted as a boy over his own objection ('before I formed you in "
               "the womb, I knew you… I am only a youth,' ch. 1) — and made to say, for some forty years under "
@@ -1142,6 +1166,15 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 21 ----
+    ((21, 6),  (17, 17), "the laughter thread — Abraham laughed face-down at the promise; now Sarah sings it: 'Laughter God has made for me'"),
+    ((21, 6),  (18, 12), "Sarah's hidden, fearful laugh inside the tent — paid here as an open one, and a name"),
+    ((21, 9),  (17, 17), "Ishmael metsacheq — 'laughing,' the participle of Isaac's own name-verb: whatever he did, in Hebrew he did Isaac"),
+    ((21, 12), (3, 17),  "'listen to her voice' — the exact phrase of the garden's indictment, inverted here into a command that carries the plan forward"),
+    ((21, 17), (16, 11), "'God heard the boy' — shama Elohim: Ishmael's name (Yishma-El, God hears), promised at his announcement, paid as an event"),
+    ((21, 19), (16, 13), "God opened her eyes and she saw a well — sight returned as rescue to the woman who named him El Roi, the One who sees"),
+    ((21, 33), (14, 18), "El Olam joins the El-name series — El Elyon at Salem, El Roi at the well, El Shaddai at the covenant, now the Everlasting God at a tamarisk"),
+
     ((1, 2),  (7, 11),  "the deep (tehom) — sealed at creation, burst open at the flood"),
     ((1, 2),  (8, 1),   "ruach over the waters — creation's opening echoed at re-creation"),
     ((1, 6),  (7, 11),  "the waters above the vault — released as the floodgates of the sky"),
@@ -1440,6 +1473,8 @@ VERSE_OF_DAY = [
     ("Jeremiah", 20, 9, "The fire shut up in the bones — the confession of a man who tried to resign and could not."),
     ("Jeremiah", 20, 11, "The chapter's power-verb closes its ledger: God prevailed, the prophet could not, the pursuers shall not."),
     ("Jeremiah", 21, 8, "The Two Ways at their sharpest — the way of life and the way of death, with life outside the walls."),
+    (21, 6, "Genesis 21 — the laughter banked since Abraham's face-down laugh finally lands: 'Laughter God has made for me.'"),
+    (21, 17, "God hears the boy 'there where he is' — Ishmael's name paid as an event in the wilderness."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1586,6 +1621,9 @@ CHRON_CHAPTERS = {
     "gen19": dict(era="patriarchs",
                   when="Sodom's last night — the fire at sunrise, the flight to Zoar, and the cave.",
                   clock="AM 2047 · 1897 BC in Ussher's reckoning — the year before Isaac."),
+    "gen21": dict(era="patriarchs",
+                  when="Isaac is born and the laughter lands; Hagar's second desert; the well of the oath at Beersheba.",
+                  clock="AM 2048 · c. 1896 BC traditional — the promise of 17:21 kept 'at the appointed time,' one year on; Abraham is 100, Sarah 90."),
     "gen20": dict(era="patriarchs",
                   when="Gerar — the sister-ruse replayed; Abimelech's dream; the Bible's first 'prophet.'",
                   clock="AM 2047–2048 · c. 1897 BC traditional — between Sodom's fall and Isaac's birth, which is one verse away."),
@@ -1659,7 +1697,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Three visitors at Mamre; Abraham argues the Judge of all the earth down to ten", ref=(18, 1)),
     dict(era="patriarchs", am="2047", trad="1897 BC", event="Sodom and Gomorrah overthrown; Lot escapes to Zoar; Moab and Ammon born", ref=(19, 24)),
     dict(era="patriarchs", am="2047–2048", trad="c. 1897 BC", event="Abraham at Gerar — the sister-ruse replayed; Abimelech's dream; the first 'prophet'", ref=(20, 3)),
-    dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at this appointed time'", coming="Genesis 21 — coming"),
+    dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at the appointed time' — and the laughter lands; Hagar and Ishmael sent to the wilderness of Beersheba",
+         note="The child promised for three chapters is born to a hundred-year-old Abraham and a ninety-year-old Sarah, and the name banked since 17:17 is paid: Yitschaq, 'he laughs' (21:6). At the weaning feast the household divides — Hagar's second desert scene closes on the same seeing that named her first (21:19).",
+         ref=("Genesis", 21, 2)),
     # -- The Exile --
     dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
          note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",
