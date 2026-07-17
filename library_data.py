@@ -224,7 +224,7 @@ DICTIONARY = [
     ("gophrit", "gophrit", "גָּפְרִית", "gophrit",
      "Sulfur — the old Bibles' 'brimstone' — rained with fire on the cities (19:24); afterwards the fixed image of scorched judgment (Deuteronomy 29:23; Job 18:15; Revelation keeps it to the end).", (19, 24)),
     ("chesed", "chesed", "חֶסֶד", "chesed",
-     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet) — behind John's 'grace and truth' (see charis).", (19, 19)),
+     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels.", (19, 19)),
     ("chemlah", "chemlah", "חֶמְלָה", "chemlah",
      "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
     ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
@@ -290,6 +290,15 @@ DICTIONARY = [
      "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
     ("nasi", "nasi", "נָשִׂיא", "nasi",
      "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. Later nasi titles the tribal chieftains and Ezekiel's coming ruler.", (23, 6)),
+    # ---- Genesis 24 (Hebrew) ----
+    ("yarekh", "yarekh", "יָרֵךְ", "yarekh",
+     "The THIGH / loins — under which the servant puts his hand to swear (24:2, 9). Not an idle gesture: the yarekh is the seat of procreation, the region of the covenant-of-circumcision sign (17:11), and 'those who came out of the yarekh' is the Hebrew for a man's own offspring (46:26; Exodus 1:5). To swear by it is to swear by the seed the whole promise runs through — fitting for an oath about the son who will carry the line. The Bible knows this gesture only twice, both about the promised posterity: here, and Jacob making Joseph swear to bury him in the land (47:29).", (24, 2)),
+    ("emet", "emet", "אֱמֶת", "emet",
+     "Truth, faithfulness, reliability — from aman, 'to be firm, trustworthy' (the root of amen). Its home is the pair chesed ve-EMET, 'kindness and truth' (24:27, 49): not two things but one — loyal love that can be RELIED ON, love that keeps faith. The servant blesses Jehovah for not forsaking his chesed ve-emet toward Abraham, and asks Laban's house to deal in chesed ve-emet with his master. The same pair becomes a title of God himself, 'abundant in chesed and emet' (Exodus 34:6).", (24, 27)),
+    ("almah", "almah", "עַלְמָה", "almah",
+     "A young woman of marriageable age — Rebekah is called almah at 24:43 in the servant's retelling, though the narrator called her na'arah ('girl,' 24:14) and betulah ('virgin,' 24:16) when she first appeared. That overlap is the crux of the famous Isaiah 7:14 debate ('a almah shall conceive'): almah marks a young woman, YOUNG enough to be presumed unmarried and chaste, without betulah's technical focus on virginity — and here the same Rebekah is all three words at once. The Greek Bible rendered Isaiah's almah as parthenos, 'virgin,' the reading Matthew 1:23 carries.", (24, 43)),
+    ("suach", "suach", "שׂוּחַ", "suach",
+     "A rare verb — Isaac 'went out la-SUACH in the field toward evening' (24:63), and no one is quite sure what he was doing. The old readings: to MEDITATE (KJV; a quiet turning-over in the mind), to PRAY (the rabbis made this the origin of the evening prayer), to walk/muse, or even to lament (still grieving his mother, v67). The word occurs only here in this sense, so the shelf spreads out — NWT 'to meditate'; some 'to stroll.' This translation keeps 'to meditate,' the reading that best fits a solitary man in a field at dusk, looking up to see camels — and a bride — on the horizon.", (24, 63)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -906,8 +915,14 @@ ENCYCLOPEDIA = [
     # ---- Genesis 15 ----
     dict(slug="eliezer", name="Eliezer of Damascus", kind="person", aliases=["Eliezer of Damascus", "Eliezer"],
          desc="Abram's servant and, before a son was born, his heir-presumptive (15:2) — 'the steward of my house.' "
-              "The Hebrew that names him (ben-mesheq beiti) is famously obscure.",
-         refs=[(15, 2)], videos=[]),
+              "The Hebrew that names him (ben-mesheq beiti) is famously obscure. Jewish tradition identifies him "
+              "with the UNNAMED 'senior servant who ruled over all Abraham had' sent to find Isaac's bride in "
+              "Genesis 24 — the most-developed servant in Genesis, and pointedly left nameless there so that his "
+              "whole character is his faithfulness: he prays for his master's success, tests the girl for kindness "
+              "rather than beauty, and refuses even to eat until his errand is told (24:33). The chapter never "
+              "confirms the identification, but the man who once stood to inherit everything is a fitting choice "
+              "to go win the heir's wife and hand the inheritance on.",
+         refs=[(15, 2), (24, 2)], videos=[]),
     dict(slug="river-of-egypt", name="the river of Egypt", kind="place",
          aliases=["the river of Egypt", "river of Egypt"],
          desc="The south-western boundary of the land granted in the covenant (15:18), paired with the Euphrates. "
@@ -944,7 +959,7 @@ ENCYCLOPEDIA = [
               "name minted from her own sentence (16:13-14). Fixed 'between Kadesh and Bered,' but Bered appears "
               "nowhere else, so the spot is lost to the map. Isaac — the son who will displace Ishmael — later "
               "arrives from, and settles beside, this same well (24:62; 25:11).",
-         refs=[(16, 14)], videos=[]),
+         refs=[(16, 14), (24, 62)], videos=[]),
     dict(slug="kadesh", name="Kadesh", kind="place",
          desc="The great oasis of the north-east Sinai / Negev frontier — Kadesh-barnea, usually identified with "
               "the springs at Ein el-Qudeirat / Ein Qadis. Named in the war of the kings as En-mishpat, 'spring "
@@ -1261,7 +1276,37 @@ ENCYCLOPEDIA = [
               "will go' (24:58); at the well she waters ten camels unasked. She bears the twins Esau and "
               "Jacob, receives the oracle that 'the elder shall serve the younger' (25:23), and engineers "
               "the blessing to Jacob (ch. 27) — the matriarch who reads the promise better than her husband.",
-         refs=[(22, 23)], videos=[]),
+         refs=[(22, 23), (24, 15), (24, 58), (24, 67)], videos=[]),
+
+    # ---- Genesis 24 ----
+    dict(slug="laban", name="Laban", kind="person", aliases=["Laban"],
+         desc="Rebekah's brother — and the narrator introduces his character in a single sly stroke: Laban 'ran "
+              "out to the man, to the spring' (24:29) — but the very next verse tells us WHEN: 'when he saw the "
+              "nose-ring, and the bracelets on his sister's hands' (24:30). The hospitality has an eye on the gold. "
+              "He calls the stranger 'blessed of Jehovah' and clears the house, and with his father Bethuel gives "
+              "Rebekah up graciously enough ('the thing is from Jehovah'). But the man glimpsed here is the same "
+              "LABAN THE ARAMEAN who, a generation later, will take in the fleeing Jacob, swap Leah for Rachel on "
+              "the wedding night, cheat his wages ten times over, and chase him down over stolen household idols "
+              "(Genesis 29–31) — the grasping uncle whose greed the gold at the well already forecasts.",
+         refs=[(24, 29), (24, 50)], videos=[]),
+    dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
+         desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
+              "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
+              "curiously faint figure: at the decisive moment it is 'LABAN and Bethuel' who answer — the son named "
+              "before the father (24:50) — and after that Bethuel vanishes from the scene while Laban and the "
+              "mother do the negotiating. The order has fed old readings that Bethuel was aged, or that Laban had "
+              "already taken the household in hand; the text simply lets the son speak first and moves on.",
+         refs=[(24, 24), (24, 50)], videos=[]),
+    dict(slug="aram-naharaim", name="Aram-naharaim", kind="place", aliases=["Aram-naharaim"],
+         desc="'Aram of the Two Rivers' — upper Mesopotamia, the region around Haran where Abraham's kindred "
+              "stayed when he went on to Canaan (24:10, 'the city of Nahor'). It is the ancestral homeland the "
+              "family keeps returning to: Abraham came out of it by call, the servant goes back to it for Isaac's "
+              "bride, and Jacob will flee to it to find his own wives among Laban's daughters (28:2-5). The "
+              "'two rivers' are the Euphrates and either the Tigris or the Habur; the heart of it is Paddan-aram, "
+              "the Haran district of the far upper Euphrates.",
+         refs=[(24, 10)],
+         coords=(36.86, 39.03, 1.2), approx=True,
+         modern="Upper Mesopotamia around Harran, southeastern Turkey / northern Syria"),
 
     # ---- Genesis 21 ----
     dict(slug="beersheba", name="Beersheba", kind="place", aliases=["Beersheba"],
@@ -1533,6 +1578,14 @@ XREFS = [
     ((23, 17), (13, 18), "Machpelah 'faced Mamre' — the oaks where Abraham first pitched his tent and built an altar now look onto the family tomb"),
     ((23, 6),  (12, 2),  "'a prince of God among us' — the Hittites see the great name God promised to make of Abraham"),
     ((23, 20), (12, 7),  "the land promised 'to your seed' — of which this single witnessed field, bought for a grave, is the first legal parcel"),
+
+    # ---- Genesis 24 ----
+    ((24, 58), (12, 1),  "'I will go' — elekh: Rebekah leaves her land and kindred for a land she has never seen, doing of her own will exactly what the call commanded Abraham, 'go, you yourself, from your land and your birthplace'"),
+    ((24, 60), (22, 17), "'let your seed possess the gate of those who hate them' — her family's blessing on Rebekah quotes, almost word for word, the oath sworn to Abraham at the Aqedah"),
+    ((24, 7),  (15, 18), "'to your seed I will give this land' — Abraham cites the oath of the covenant of the pieces as the guarantee the servant will not fail"),
+    ((24, 62), (16, 14), "Isaac settles at Beer-lahai-roi — 'the well of the Living One who sees me,' where the angel had found the outcast Hagar: the heir dwells where the seeing-God met the cast-out"),
+    ((24, 67), (23, 19), "'Isaac was comforted after his mother' — Sarah, buried at Machpelah one chapter before, and now her tent holds a bride: the grief of ch. 23 answered"),
+    ((24, 12), (19, 19), "chesed — the loyal kindness the servant asks God to show and designs his sign to test, the same covenant-love Lot named when the angels dragged him free of Sodom"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -1879,6 +1932,8 @@ VERSE_OF_DAY = [
     ("Jeremiah", 22, 29, "The threefold cry, unforgettable in the Hebrew — erets, erets, arets: 'Land! Land! Land! Hear the word of Jehovah!'"),
     ("Exodus", 3, 5, "The first patch of earth the Bible calls holy — made holy only by the Presence: 'the place on which you are standing is holy ground.'"),
     ("Exodus", 3, 14, "The sentence the whole Bible turns on — God's own name for himself: 'I WILL BE WHAT I WILL BE.'"),
+    (24, 58, "The bride's one-word answer, and the whole faith of Abraham in it: 'Will you go with this man?' — 'I will go.'"),
+    (24, 67, "The tenderest close in Genesis: Isaac brought her into his mother Sarah's tent, and took Rebekah, and she became his wife; and he loved her — and Isaac was comforted after his mother."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2042,6 +2097,9 @@ CHRON_CHAPTERS = {
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
+    "gen24": dict(era="patriarchs",
+                  when="Abraham sends his servant back to the family in Aram-naharaim for Isaac's bride; the sign at the well, Rebekah's 'I will go,' and the tent of Sarah restored.",
+                  clock="AM 2088 · c. 1856 BC traditional — Isaac is 40 when he takes Rebekah (25:20), three years after Sarah's death; Abraham, 'old and well on in years,' is about 140. The longest chapter in Genesis, and the hinge between the first generation of the promise and the second."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2133,6 +2191,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2085", trad="1859 BC", event="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the patriarchs' first foothold in the land",
          note="Sarah dies at 127 (the only woman whose lifespan the Torah records), and Abraham — a landless 'resident alien' in the land promised to his seed — buys a field and cave from Ephron the Hittite for 400 shekels, witnessed at the city gate (Genesis 23). It is the first parcel of Canaan the patriarchs indisputably own, and becomes their tomb (Abraham, Isaac, Rebekah, Jacob, Leah); Herod's enclosure over the cave still stands at Hebron.",
          ref=("Genesis", 23, 19)),
+    dict(era="patriarchs", am="2088", trad="1856 BC", event="Isaac marries Rebekah — the servant's journey to the old country, the sign at the well, 'I will go'",
+         note="Abraham, old, sends his senior servant back to the family in Aram-naharaim to find Isaac a wife — not from the Canaanites, and not by bringing Isaac back east (the promise runs forward, not home). At the well the servant asks for a sign of CHESED — the girl who waters ten thirsty camels unasked — and 'before he had finished speaking' Rebekah appears (Genesis 24, the longest chapter in the book). Asked 'Will you go?', she answers with the whole faith of Abraham in a single word — 'I will go' (elekh) — leaving her land and kindred for a land she has never seen, and her family blesses her in the very words of the Aqedah oath. Isaac is 40 (25:20); he brings her into his mother Sarah's tent, loves her, and is comforted after Sarah's death.",
+         ref=("Genesis", 24, 67)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
