@@ -148,6 +148,8 @@ DICTIONARY = [
      "The personal name of God (יהוה), first here at 2:4. Most English Bibles hide it behind the title 'the LORD' (small caps); this translation restores it as <strong>Jehovah</strong> — the traditional English form since about the 1200s, used throughout the ASV and by the NWT. ('Jehovah' is a hybrid, the consonants with Adonai's vowels; scholars reconstruct the original as 'Yahweh.') The full discussion is on the <a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>.", (2, 4)),
     ("yada", "yada", "יָדַע", "yada",
      "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1).", (4, 1)),
+    ("yom", "yom", "יוֹם", "yom",
+     "DAY — one of the most elastic words in the Hebrew Bible, and the reason the length of the creation 'days' has been debated for two thousand years. It means the daylight hours (Genesis 1:5, 'God named the light DAY'), a 24-hour calendar day, AND an indefinite stretch of time — an age: 'in the DAY that Jehovah made earth and heaven' (2:4) folds the whole creation week into a single yom, and 'the DAY of Jehovah' names a whole era of judgment. So the six 'days' of Genesis 1 can be read as ordinary days OR as long ages (the 'day-age' reading — ancient, going back to Augustine, and the way many hold the text and the ~13.8-billion-year cosmos together). This translation renders it plainly 'day' and lays out the readings without voting — see the note at 1:5.", (1, 5)),
     ("zakhar-remember", "zakhar", "זָכַר", "zakhar",
      "To remember — divine remembering that acts: 'God remembered Noah' turns the flood (8:1); God looks at the bow 'to remember' (9:16).", (8, 1)),
     # ---- John 1 (Greek) ----
