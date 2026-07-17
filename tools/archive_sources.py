@@ -50,6 +50,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 # URL: https://mechon-mamre.org/p/pt/pt{code}{chapter:02d}.htm
 MECHON_BOOKS = {
     "01": ("Genesis", 50),
+    "02": ("Exodus", 40),
     "11": ("Jeremiah", 52),
     "28": ("Proverbs", 31),
     "34": ("Daniel", 12),

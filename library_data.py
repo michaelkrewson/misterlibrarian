@@ -259,6 +259,15 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Exodus 1 (Hebrew) ----
+    ("sharats", "sharats", "שָׁרַץ", "sharats",
+     "To SWARM, teem — the creation-word for life multiplying (Genesis 1:20, the waters 'swarm with swarms'; 9:7, Noah told to 'swarm'). Exodus 1:7 stacks it into the five-verb increase — Israel 'were fruitful, and SWARMED, and multiplied, and grew mighty' — so the opening of the bondage is the CREATION BLESSING still at full volume on a slave people. KJV flattens it to 'increased abundantly.'", (1, 7)),
+    ("perekh", "perekh", "פֶּרֶךְ", "perekh",
+     "Crushing harshness — pitiless, breaking labor (Exodus 1:13, 14). KJV 'with rigour'; NWT 'under tyranny.' A rare, heavy word (also Leviticus 25's law against ruling a fellow Israelite be-farekh, 'with harshness') — the opposite of the discipline a father gives; this is cruelty made a system.", (1, 13)),
+    ("avodah", "avodah", "עֲבֹדָה", "avodah",
+     "Service, labor — and, in the same breath, SLAVERY (from eved, 'servant/slave,' the root the exodus turns on: Israel serves Pharaoh, then is freed to SERVE God — same verb). Exodus 1:14's avodah kashah, 'hard service,' the mortar and the bricks. The word will pivot: the goal of the exodus is not idleness but a change of masters — 'let my people go, that they may serve me.'", (1, 14)),
+    ("yeor", "ye'or", "יְאוֹר", "ye'or",
+     "The NILE — Egypt's OWN word for its river (Egyptian itrw), used in Hebrew almost only of the Nile (KJV 'the river'; NWT 'the Nile River'). The babies are thrown into the ye'or (1:22) — the same river a basket will float on (2:3), and the first the plagues turn to blood (7:20). Borrowed once, memorably, for the Tigris of Daniel's vision (Daniel 12:5).", (1, 22)),
     # ---- Genesis 23 (Hebrew) ----
     ("ger", "ger / toshav", "גֵּר / תּוֹשָׁב", "ger / toshav",
      "Two distinct legal statuses the shelf often merges (KJV 'a stranger and a sojourner,' Genesis 23:4; NWT keeps them, 'an alien resident and a settler'). A GER is a resident foreigner — living among a people, protected by law, but WITHOUT citizenship or the right to own land (Torah's great charge: 'love the ger, for you were gerim in Egypt'). A TOSHAV is a settled outsider, more rooted but still landless. Abraham names himself both — the man promised the whole land cannot legally buy a grave in it.", (23, 4)),
@@ -585,7 +594,7 @@ ENCYCLOPEDIA = [
          desc="In Hebrew, Mizraim — also the 'son' of Ham whose name IS the country (10:6,13). Abram goes down in "
               "famine (12:10) and his stay runs the Exodus pattern in miniature: danger, plagues, 'send away,' "
               "wealth out.",
-         refs=[(10, 6), (10, 13), (12, 10), (12, 14)], videos=[],
+         refs=[(10, 6), (10, 13), (12, 10), (12, 14), ("Exodus", 1, 1), ("Exodus", 1, 8), ("Exodus", 1, 13)], videos=[],
          coords=(30.05, 31.23, 4.0), approx=True,
          modern="Egypt — the Cairo/Nile Delta area"),
     dict(slug="jordan-plain", name="The Plain of the Jordan (Kikkar)", kind="place", aliases=["the plain of the Jordan"],
@@ -1026,6 +1035,62 @@ ENCYCLOPEDIA = [
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
          refs=[("Proverbs", 1, 1), ("Matthew", 6, 29)], videos=[]),
 
+    # ---- Exodus 1 ----
+    dict(slug="exodus-pharaoh", name="Pharaoh (of the Exodus)", kind="person", aliases=["Pharaoh"],
+         desc="The unnamed king of Exodus 1 — 'a new king over Egypt who did not know Joseph' (1:8) — who "
+              "turns a rescued family into a slave force and orders the newborn boys drowned. Pharaoh is a "
+              "title ('great house'), not a name, and the story pointedly withholds the man's name while "
+              "keeping the midwives'. WHICH pharaoh depends on the date of the Exodus, and this translation "
+              "follows the EARLY DATE (1446 BC, from 1 Kings 6:1's '480 years' before Solomon's temple), "
+              "argued in our own time most carefully — and, Michael judges, least tendentiously — by JOEL "
+              "KRAMER of Expedition Bible (Associates for Biblical Research). On that reading: the pharaoh of "
+              "the OPPRESSION here is Thutmose III (reigned c. 1479–1425 BC), Egypt's great empire-builder, "
+              "whose relentless Canaan campaigns created the demand for the store-cities Israel is forced to "
+              "build; the pharaoh of the EXODUS itself, a generation later, is his son Amenhotep II. Kramer's "
+              "film below makes the striking case that Amenhotep II did NOT drown (Scripture says the ARMY "
+              "drowned, not pharaoh, Exodus 14:28; Psalm 136:15) — he reigned on, his Canaan campaigns "
+              "abruptly ceasing after 1446, and was buried in tomb KV35, whose mummy survives: 'the tomb of "
+              "the Exodus pharaoh you can visit.' The DREAM STELE of his successor Thutmose IV — which needs "
+              "a god's promise to explain why he, not the firstborn, took the throne — fits a firstborn who "
+              "died (Exodus 12:29). The store-city name 'Raamses' (1:11), the mainstay of the rival LATE date "
+              "(Ramesses II, ~1250 BC, the academic majority), is best read as an updated place-name — the "
+              "same editorial modernizing already seen at 'Dan' (Genesis 14:14) and 'Ur of the Chaldeans.'",
+         refs=[("Exodus", 1, 8), ("Exodus", 1, 11), ("Exodus", 1, 22)],
+         videos=[("Tomb of the Exodus Pharaoh: What Was Found & Why You Don't Know About It!",
+                  "https://www.youtube.com/watch?v=mJP4pVjnWpk")]),
+    dict(slug="shiphrah-puah", name="Shiphrah and Puah", kind="person", aliases=["Shiphrah", "Puah"],
+         desc="The two Hebrew midwives of Exodus 1:15-21 — Shiphrah ('beauty') and Puah ('splendor,' or "
+              "'one who cries out') — who commit the FIRST recorded act of civil disobedience in the Bible: "
+              "ordered by the king of Egypt to kill the newborn boys on the birthing-stones, they 'feared "
+              "God' (yare Elohim) and refused, letting the boys live. Their nimble answer to Pharaoh — the "
+              "Hebrew women give birth before a midwife can arrive — the narrator does not stop to judge; "
+              "'God dealt well with the midwives, and made them households' (families of their own). The story "
+              "withholds the mighty pharaoh's name and preserves these two — the moral inversion the whole "
+              "book runs on. (Whether they were Hebrew women or Egyptian midwives OF the Hebrews the grammar "
+              "leaves open; the tradition made them Jochebed and Miriam, Moses' mother and sister.)",
+         refs=[("Exodus", 1, 15), ("Exodus", 1, 17), ("Exodus", 1, 21)], videos=[]),
+    dict(slug="pithom-raamses", name="Pithom and Raamses", kind="place", aliases=["Pithom", "Raamses"],
+         desc="The two 'store-cities' (arei miskenot — supply depots / garrison-granaries) the enslaved "
+              "Israelites build for Pharaoh (Exodus 1:11), in the eastern Nile Delta. RAAMSES is the city "
+              "later known as Pi-Ramesses, the Delta capital built up by Ramesses II (13th c.) near ancient "
+              "Avaris (Tell el-Dab'a / Qantir) — which is why the name anchors the LATE date of the Exodus. "
+              "On the EARLY date (see the Exodus-pharaoh entry), 'Raamses' is an updated place-name for a "
+              "site that existed earlier, like 'Dan' for Laish. PITHOM (Egyptian Per-Atum, 'house of Atum') "
+              "is usually located at Tell el-Retabeh or Tell el-Maskhuta in the Wadi Tumilat. Both guard "
+              "Egypt's vulnerable northeastern frontier — the road Israel will later walk OUT.",
+         refs=[("Exodus", 1, 11)],
+         coords=(30.8, 31.83, 0.4), approx=True,
+         modern="Eastern Nile Delta: Raamses = Qantir/Tell el-Dab'a; Pithom = Tell el-Retabeh, Egypt"),
+    dict(slug="joseph", name="Joseph", kind="person", aliases=["Joseph"],
+         desc="Jacob's eleventh son, sold into Egypt by his brothers and risen to be its vizier — the man "
+              "whose foresight in the famine saved Egypt and brought Jacob's household of seventy down to "
+              "settle there (his story fills Genesis 37–50, not yet on this site). Exodus opens on the far "
+              "side of his life: 'Joseph died, and all his brothers, and all that generation' (1:6), and then "
+              "the fatal hinge — 'a new king arose who did not know Joseph' (1:8). The rescue is forgotten; "
+              "the rescued become slaves. His bones, by his own oath, will be carried out of Egypt at the "
+              "Exodus (Genesis 50:25; Exodus 13:19) — the one man of Genesis who makes the journey home.",
+         refs=[("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
+
     # ---- Genesis 23 ----
     dict(slug="machpelah", name="Machpelah", kind="place", aliases=["Machpelah"],
          desc="'The double' (from kaphal, 'to fold, to double') — the cave at the edge of Ephron the "
@@ -1278,6 +1343,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Exodus 1 ----
+    (("Exodus", 1, 7),  (1, 28), "the creation blessing — 'be fruitful and multiply and fill' — fulfilled at full volume on a slave people; sharats, 'swarm,' is the creation-word"),
+    (("Exodus", 1, 13), (15, 13), "the affliction God foretold to Abraham at the covenant of the pieces: 'your seed will be sojourners… and they will afflict them'"),
+    (("Exodus", 1, 17), (22, 12), "'the midwives feared God' — the same reverent fear the angel found in Abraham at the altar: 'now I know that you fear God'"),
+    (("Exodus", 1, 17), ("Proverbs", 1, 7), "the fear of God — 'the beginning of knowledge' — as the midwives' wisdom: when king and God command opposite, disobey the king"),
+
     # ---- Genesis 23 ----
     ((23, 4),  (17, 8),  "achuzzah, a 'holding' — the everlasting HOLDING God promised Abraham (all Canaan), and here the one burial holding is all of it he owns in his lifetime"),
     ((23, 17), (13, 18), "Machpelah 'faced Mamre' — the oaks where Abraham first pitched his tent and built an altar now look onto the family tomb"),
@@ -1508,10 +1579,10 @@ VIDEO_QUEUE = [
      "https://www.youtube.com/watch?v=conaKQoe4hk",
      "Exodus (the sea crossing)",
      "Field evidence for the Red Sea/Sea of Reeds crossing route and location."),
-    ("Tomb of the Exodus Pharaoh: What Was Found & Why You Don't Know About It!",
-     "https://www.youtube.com/watch?v=mJP4pVjnWpk",
-     "Exodus (the plagues / the Pharaoh of the Exodus)",
-     "Argues for a specific identification and tomb of the Exodus-era Pharaoh."),
+    # ("Tomb of the Exodus Pharaoh: What Was Found & Why You Don't Know About It!"
+    #  — PLACED 2026-07-16 on the EXODUS-PHARAOH encyclopedia entry (Exodus 1),
+    #  per Michael's call to lead with Joel Kramer's early-date identification.
+    #  Full research captured in research/exodus_pharaoh_early_date.md for later chapters.)
     ("#1 Evidence for Israel's Conquest of the Promised Land...other than the Bible!",
      "https://www.youtube.com/watch?v=mLxE3JmHV2U",
      "Joshua (the conquest)",
@@ -1613,6 +1684,8 @@ VERSE_OF_DAY = [
     (22, 14, "Abraham names the place Jehovah-Yireh — 'on the mount of Jehovah, it is seen to': the hill of the future Temple."),
     (23, 4, "Abraham's own word for himself in the land promised to his seed: 'a resident alien and a settler among you.'"),
     (23, 6, "The Hittites' verdict on the landless stranger in their midst: 'a prince of God you are among us.'"),
+    ("Exodus", 1, 12, "The blessing outruns the whip: 'the more they afflicted them, the more they multiplied and spread.'"),
+    ("Exodus", 1, 17, "The Bible's first civil disobedience — two women: 'the midwives feared God, and did not do as the king commanded.'"),
     ("Proverbs", 1, 7, "The motto the whole book is tuned to: the fear of Jehovah is the beginning — and the chief part — of knowledge."),
     ("Proverbs", 1, 33, "Wisdom's last, quiet promise: whoever listens will dwell secure — safety not from trouble, but from fear."),
 ]
@@ -1697,6 +1770,7 @@ CHRON_ERAS = [
     ("flood",      "The Flood"),
     ("postflood",  "After the Flood"),
     ("patriarchs", "The Patriarchs"),
+    ("exodus",     "Egypt and the Exodus"),
     ("monarchy",   "The Kingdom"),
     ("exile",      "The Exile"),
     ("intertestament", "Between the Testaments"),
@@ -1765,6 +1839,9 @@ CHRON_CHAPTERS = {
     "gen21": dict(era="patriarchs",
                   when="Isaac is born and the laughter lands; Hagar's second desert; the well of the oath at Beersheba.",
                   clock="AM 2048 · c. 1896 BC traditional — the promise of 17:21 kept 'at the appointed time,' one year on; Abraham is 100, Sarah 90."),
+    "exod1": dict(era="exodus",
+                  when="A family becomes a nation; a new king enslaves them; and two midwives who feared God defy the order to kill the boys.",
+                  clock="The bondage in Egypt, before the Exodus. On the EARLY date this translation follows (1 Kings 6:1 → Exodus 1446 BC; Joel Kramer / Expedition Bible), the oppressing pharaoh is Thutmose III (d. c. 1425 BC) and the store-cities are built for his empire; the pharaoh of the Exodus itself is Amenhotep II. The mainstream LATE date (~1250 BC, Ramesses II) rests on the store-city name Raamses — read here as an updated place-name."),
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
@@ -1856,6 +1933,10 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2085", trad="1859 BC", event="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the patriarchs' first foothold in the land",
          note="Sarah dies at 127 (the only woman whose lifespan the Torah records), and Abraham — a landless 'resident alien' in the land promised to his seed — buys a field and cave from Ephron the Hittite for 400 shekels, witnessed at the city gate (Genesis 23). It is the first parcel of Canaan the patriarchs indisputably own, and becomes their tomb (Abraham, Isaac, Rebekah, Jacob, Leah); Herod's enclosure over the cave still stands at Hebron.",
          ref=("Genesis", 23, 19)),
+    # -- Egypt and the Exodus --
+    dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
+         note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
+         ref=("Exodus", 1, 11)),
     # -- The Kingdom --
     dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
          note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",

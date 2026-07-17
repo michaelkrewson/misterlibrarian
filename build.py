@@ -98,6 +98,7 @@ CHAPTERS = [
     ("gen21", "Genesis", 21, "Isaac is born and the laughter lands — then Hagar's second desert scene ('God heard the boy, there where he is'), seven ewe-lambs, the well of the oath, and the Everlasting God at a tamarisk."),
     ("gen22", "Genesis", 22, "The Aqedah — 'take your son, your only one, whom you love': the binding of Isaac on Moriah, the ram in the thicket, the mountain of seeing, and the promise sealed by oath."),
     ("gen23", "Genesis", 23, "Sarah dies at Hebron, and Abraham — a landless resident alien in the land promised to his seed — buys the cave of Machpelah for 400 shekels: the first foothold of the Promised Land is a grave."),
+    ("exod1", "Exodus", 1, "A family becomes a nation, a new king 'who did not know Joseph' enslaves them, and two midwives who feared God defy Pharaoh's order to kill the boys — the second book of the Bible opens."),
 ]
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
