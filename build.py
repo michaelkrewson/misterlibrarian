@@ -204,8 +204,9 @@ def header(active=""):
 
 FOOTER = """<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
-  the original Hebrew (the Masoretic Text) one chapter at a time, with translator's notes comparing every
-  choice against seven landmark versions. Kept by Mr. Librarian; translated with Claude.</p>
+  the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
+  with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian;
+  translated with Claude.</p>
   <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
 </footer>"""
 
