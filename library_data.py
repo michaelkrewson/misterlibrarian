@@ -299,6 +299,15 @@ DICTIONARY = [
      "A young woman of marriageable age — Rebekah is called almah at 24:43 in the servant's retelling, though the narrator called her na'arah ('girl,' 24:14) and betulah ('virgin,' 24:16) when she first appeared. That overlap is the crux of the famous Isaiah 7:14 debate ('a almah shall conceive'): almah marks a young woman, YOUNG enough to be presumed unmarried and chaste, without betulah's technical focus on virginity — and here the same Rebekah is all three words at once. The Greek Bible rendered Isaiah's almah as parthenos, 'virgin,' the reading Matthew 1:23 carries.", (24, 43)),
     ("suach", "suach", "שׂוּחַ", "suach",
      "A rare verb — Isaac 'went out la-SUACH in the field toward evening' (24:63), and no one is quite sure what he was doing. The old readings: to MEDITATE (KJV; a quiet turning-over in the mind), to PRAY (the rabbis made this the origin of the evening prayer), to walk/muse, or even to lament (still grieving his mother, v67). The word occurs only here in this sense, so the shelf spreads out — NWT 'to meditate'; some 'to stroll.' This translation keeps 'to meditate,' the reading that best fits a solitary man in a field at dusk, looking up to see camels — and a bride — on the horizon.", (24, 63)),
+    # ---- Genesis 25 (Hebrew) ----
+    ("neesaf-el-ammav", "ne'esaf el-ammav", "וַיֵּאָסֶף אֶל-עַמָּיו", "ne'esaf el-ammav",
+     "'And he was GATHERED to his people' — the death-formula, spoken over Abraham (25:8) and Ishmael (25:17), and later Isaac, Jacob, Moses, Aaron. It is distinct from burial (Abraham is 'gathered' in v8, then buried in v9) — the phrase reaches past the grave to a JOINING of the ancestors, a quiet, undogmatic hint of continued existence long before the Hebrew Bible speaks plainly of resurrection (Daniel 12:2). Not a tomb but a homecoming; the same dignity is given Ishmael as Abraham.", (25, 8)),
+    ("bekhorah", "bekhorah", "בְּכֹרָה", "bekhorah",
+     "The BIRTHRIGHT — the firstborn's (bekhor) privilege: a double share of the inheritance (Deuteronomy 21:17), the headship of the family, and here, in the line of promise, the covenant blessing itself. Esau trades it for a bowl of stew (25:29-34) and 'despised' it (see bazah); Jacob will later steal the matching blessing (ch. 27). The New Testament makes Esau the type of the 'profane' person who sells the eternal for one meal (Hebrews 12:16). Genesis keeps overturning it — the younger again and again takes the bekhorah (Isaac over Ishmael, Jacob over Esau, Ephraim over Manasseh).", (25, 31)),
+    ("aqev", "aqev", "עָקֵב", "aqev",
+     "The HEEL — Jacob is born gripping Esau's aqev, 'and his name was called Ya'aqov' (25:26), 'heel-holder.' The name turns into a verb of treachery: 'is he not rightly named Ya'aqov (Jacob)? He has SUPPLANTED me (ya'aqveni) these two times' (27:36) — to grab the heel is to trip, to overreach, to supplant. And it is the very word of the first promise-and-curse: 'he will strike your head, and you will strike his HEEL' (3:15). The whole Jacob cycle is folded into a newborn's fist.", (25, 26)),
+    ("atar", "atar", "עָתַר", "atar",
+     "To ENTREAT, plead — and the same verb, turned around, for GRANTING the plea: 'Isaac ENTREATED (va-ye'tar) Jehovah for his wife … and Jehovah was ENTREATED (va-ye'ater) of him' (25:21). One word for the asking and the answering, the prayer and the yes — the Hebrew's neat way of showing the circuit close. KJV keeps the echo ('intreated … was intreated'); Rebekah, barren twenty years, conceives.", (25, 21)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -664,7 +673,7 @@ ENCYCLOPEDIA = [
               "Amorite ally of Abram's named in the very next chapter (14:13, 24) — the place and the man are not "
               "shown to be connected beyond sharing the name, the same double-use already flagged at Haran. Here, "
               "in the heat of the day, the three visitors arrive and Isaac is promised within the year (18:1-15).",
-         refs=[(13, 18), (18, 1), (23, 17), (23, 19)], videos=[("MAMRE — Where God Appeared to Abraham!", "https://www.youtube.com/watch?v=WzunDBINbS4")],
+         refs=[(13, 18), (18, 1), (23, 17), (23, 19), (25, 9)], videos=[("MAMRE — Where God Appeared to Abraham!", "https://www.youtube.com/watch?v=WzunDBINbS4")],
          coords=(31.5566, 35.1027, 0.15), approx=True,
          modern="Ramat el-Khalil, just north of Hebron, West Bank"),
 
@@ -947,7 +956,7 @@ ENCYCLOPEDIA = [
               "honors his name even as the covenant passes to Isaac. Genesis gives him twelve princes (25:12-16) "
               "and a place beside Isaac at their father's grave (25:9); later tradition — Jewish, Christian, and "
               "Islamic — remembers him as ancestor of the Arab peoples.",
-         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25)], videos=[]),
+         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25), (25, 9), (25, 12), (25, 17)], videos=[]),
     dict(slug="shur", name="Shur", kind="place",
          desc="'Wall' — the desert fronting Egypt's north-east frontier, possibly named for the Egyptian line of "
               "border forts, and crossed by the caravan road from Canaan. Hagar is found 'on the way to Shur' "
@@ -975,7 +984,7 @@ ENCYCLOPEDIA = [
               "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
               "later be his home (24:62; 25:11).",
-         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9)], videos=[]),
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -1174,7 +1183,7 @@ ENCYCLOPEDIA = [
               "meets Jehovah in the burning bush. Later the relationship sours — Midian joins Moab to hire "
               "Balaam (Numbers 22–25) — but at the exodus it is Midian that shelters the deliverer and gives "
               "him a wife and a wise father-in-law.",
-         refs=[("Exodus", 2, 15), ("Exodus", 2, 16)],
+         refs=[(25, 2), (25, 4), ("Exodus", 2, 15), ("Exodus", 2, 16)],
          coords=(28.4, 35.3, 1.6), approx=True,
          modern="Northwest Arabia, east of the Gulf of Aqaba (Saudi Arabia), reaching into the Sinai/Transjordan"),
     dict(slug="jethro", name="Jethro (Reuel)", kind="person", aliases=["Reuel", "Jethro"],
@@ -1230,7 +1239,7 @@ ENCYCLOPEDIA = [
               "stone enclosure Herod the Great built over the cave still stands at Hebron (the Cave of the "
               "Patriarchs / al-Haram al-Ibrahimi) — among the oldest continuously-venerated sites on earth, "
               "and sacred to Jews, Christians, and Muslims alike.",
-         refs=[(23, 9), (23, 17), (23, 19)],
+         refs=[(23, 9), (23, 17), (23, 19), (25, 9)],
          coords=(31.5247, 35.1108, 0.05),
          modern="The Cave of the Patriarchs (Tomb of the Patriarchs / al-Haram al-Ibrahimi), Hebron",
          videos=[]),
@@ -1307,6 +1316,50 @@ ENCYCLOPEDIA = [
          refs=[(24, 10)],
          coords=(36.86, 39.03, 1.2), approx=True,
          modern="Upper Mesopotamia around Harran, southeastern Turkey / northern Syria"),
+
+    # ---- Genesis 25 ----
+    dict(slug="keturah", name="Keturah", kind="person", aliases=["Keturah"],
+         desc="The wife Abraham takes after Sarah's death (25:1; called a 'concubine' at 1 Chronicles 1:32) — "
+              "mother of six sons who become the peoples of the Arabian desert and the eastern trade routes: "
+              "Zimran, Jokshan, Medan, MIDIAN, Ishbak, and Shuah, with grandsons Sheba and Dedan. Chief among them "
+              "is Midian — so the Midianites who buy Joseph, and among whom Moses later shepherds and marries (see "
+              "Midian), descend from Abraham himself. Abraham gives everything to Isaac and sends Keturah's sons "
+              "'eastward, to the land of the east' with gifts (25:6): the promise is not divided, but the "
+              "old man's line still fans out into a dozen nations, as he was told it would.",
+         refs=[(25, 1), (25, 4)], videos=[]),
+    dict(slug="esau", name="Esau (Edom)", kind="person", aliases=["Esau"],
+         desc="Isaac and Rebekah's firstborn twin — born 'ruddy (admoni), all over like a hairy mantle,' so they "
+              "called him ESAU; and because he traded his birthright for a bowl of RED (adom) stew, he earned the "
+              "second name EDOM (25:25, 30). A man of the open field, a hunter, his father's favorite for the game "
+              "he brought home — and the one who 'despised his birthright' (25:34), selling the eternal for a "
+              "single meal, which is why the New Testament makes him the type of the 'profane' person (Hebrews "
+              "12:16). Jacob will later cheat him of the blessing too (ch. 27), and Esau's murderous grief drives "
+              "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
+              "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
+              "rival to the south.",
+         refs=[(25, 25), (25, 30), (25, 34)], videos=[]),
+    dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
+         desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
+              "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
+              "overreaches (25:26; 27:36). He buys Esau's birthright for stew, steals Esau's blessing with his "
+              "mother's help, and flees to Laban in the old country — where he is out-tricked in turn (Leah for "
+              "Rachel) and fathers eleven sons and a daughter over twenty hard years. Wrestling a stranger at the "
+              "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
+              "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
+              "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
+         refs=[(25, 26), (25, 27), (25, 31)], videos=[]),
+    dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
+         desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
+              "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
+              "the red stew (25:30) and matches the red Nubian sandstone of the region (whose later capital, Petra, "
+              "is carved into it). Edom and Israel are the archetypal quarreling brothers of the Bible: kin, yet "
+              "perennial enemies — Edom refuses Israel passage in the wilderness (Numbers 20), and the prophets "
+              "return to it again and again (Obadiah is entirely an oracle against Edom; Jeremiah 49; Isaiah 34). "
+              "Herod the Great was an Idumean — a Hellenized Edomite — so the brother-rivalry runs right up to the "
+              "Gospels.",
+         refs=[(25, 30)],
+         coords=(30.32, 35.44, 0.9), approx=True,
+         modern="The highlands of southern Jordan (Seir), south-east of the Dead Sea"),
 
     # ---- Genesis 21 ----
     dict(slug="beersheba", name="Beersheba", kind="place", aliases=["Beersheba"],
@@ -1586,6 +1639,14 @@ XREFS = [
     ((24, 62), (16, 14), "Isaac settles at Beer-lahai-roi — 'the well of the Living One who sees me,' where the angel had found the outcast Hagar: the heir dwells where the seeing-God met the cast-out"),
     ((24, 67), (23, 19), "'Isaac was comforted after his mother' — Sarah, buried at Machpelah one chapter before, and now her tent holds a bride: the grief of ch. 23 answered"),
     ((24, 12), (19, 19), "chesed — the loyal kindness the servant asks God to show and designs his sign to test, the same covenant-love Lot named when the angels dragged him free of Sodom"),
+
+    # ---- Genesis 25 ----
+    ((25, 9),  (23, 19), "Isaac AND Ishmael bury Abraham in the cave of Machpelah — the field he bought for Sarah's grave one generation before; the two sons, one sent away, stand together at their father's tomb"),
+    ((25, 17), (17, 20), "Ishmael's twelve princes — the exact promise God made to Abraham for him: 'twelve chieftains he will father, and I will make him a great nation'"),
+    ((25, 18), (16, 12), "'over against all his brothers he settled' — the angel's word to Hagar in the desert, 'he will dwell in the face of all his brothers,' now recorded as fact"),
+    ((25, 23), (21, 12), "'the elder will serve the younger' — the promise runs through the chosen son, not the firstborn: 'in Isaac your seed will be called,' the reversal Isaac himself embodied, now handed to Jacob"),
+    ((25, 26), (3, 15),  "Jacob is born gripping the HEEL (aqev) — the rare word of the first promise, 'you will strike his heel': the name Ya'aqov folds the whole struggle of the seed into a newborn's fist"),
+    ((25, 11), (16, 14), "Isaac settles at Beer-lahai-roi — 'the well of the Living One who sees me,' Hagar's well: the son of the promise makes his home where the seeing-God met the cast-out"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -1934,6 +1995,8 @@ VERSE_OF_DAY = [
     ("Exodus", 3, 14, "The sentence the whole Bible turns on — God's own name for himself: 'I WILL BE WHAT I WILL BE.'"),
     (24, 58, "The bride's one-word answer, and the whole faith of Abraham in it: 'Will you go with this man?' — 'I will go.'"),
     (24, 67, "The tenderest close in Genesis: Isaac brought her into his mother Sarah's tent, and took Rebekah, and she became his wife; and he loved her — and Isaac was comforted after his mother."),
+    (25, 23, "The oracle to Rebekah, and the pattern that runs through Genesis: 'Two nations are in your womb… and the elder will serve the younger.'"),
+    (25, 34, "Five flat verbs and a verdict — 'he ate and drank and rose and went his way; so Esau despised his birthright.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2100,6 +2163,9 @@ CHRON_CHAPTERS = {
     "gen24": dict(era="patriarchs",
                   when="Abraham sends his servant back to the family in Aram-naharaim for Isaac's bride; the sign at the well, Rebekah's 'I will go,' and the tent of Sarah restored.",
                   clock="AM 2088 · c. 1856 BC traditional — Isaac is 40 when he takes Rebekah (25:20), three years after Sarah's death; Abraham, 'old and well on in years,' is about 140. The longest chapter in Genesis, and the hinge between the first generation of the promise and the second."),
+    "gen25": dict(era="patriarchs",
+                  when="Keturah's sons and the peoples of the east; Abraham dies at 175, buried by Isaac and Ishmael; and the twins Esau and Jacob are born and the birthright sold.",
+                  clock="Not one date but a span, in the toldot (generations) style: the twins are born when Isaac is 60 (AM 2108 · c. 1836 BC), and Abraham dies at 175 fifteen years later (AM 2123 · c. 1821 BC) — so the grandfather lived to see the boys grow. The chapter closes the first generation of the promise and opens the third."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2194,6 +2260,12 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2088", trad="1856 BC", event="Isaac marries Rebekah — the servant's journey to the old country, the sign at the well, 'I will go'",
          note="Abraham, old, sends his senior servant back to the family in Aram-naharaim to find Isaac a wife — not from the Canaanites, and not by bringing Isaac back east (the promise runs forward, not home). At the well the servant asks for a sign of CHESED — the girl who waters ten thirsty camels unasked — and 'before he had finished speaking' Rebekah appears (Genesis 24, the longest chapter in the book). Asked 'Will you go?', she answers with the whole faith of Abraham in a single word — 'I will go' (elekh) — leaving her land and kindred for a land she has never seen, and her family blesses her in the very words of the Aqedah oath. Isaac is 40 (25:20); he brings her into his mother Sarah's tent, loves her, and is comforted after Sarah's death.",
          ref=("Genesis", 24, 67)),
+    dict(era="patriarchs", am="2108", trad="1836 BC", event="Esau and Jacob born to Isaac and Rebekah; the elder to serve the younger, and the birthright sold for stew",
+         note="After twenty barren years Isaac entreats Jehovah and Rebekah conceives twins who struggle in the womb; she inquires of Jehovah directly and hears the oracle that governs the rest of Genesis — 'two nations… and the elder will serve the younger' (25:23). Esau is born ruddy and hairy (Edom, Seir), Jacob gripping his heel (Ya'aqov, the heel-holder who will supplant). Isaac is 60. Grown, Esau trades his birthright for a bowl of red lentil stew and 'despised' it (25:34) — the New Testament's type of the profane man who sells the eternal for one meal (Hebrews 12:16).",
+         ref=("Genesis", 25, 26)),
+    dict(era="patriarchs", am="2123", trad="1821 BC", event="Abraham dies at 175, 'old and full of years,' and is gathered to his people — buried by Isaac and Ishmael at Machpelah",
+         note="The first generation of the promise closes: Abraham dies at 175, 'gathered to his people' (the death-formula that reaches past the grave to the ancestors), and his two eldest sons — Isaac the heir and Ishmael the sent-away — stand together to bury him in the cave he had bought for Sarah (Genesis 25:7-10). He lived fifteen years past the twins' birth, long enough to see his grandsons grow. Keturah's six sons, meanwhile, fan out east as the peoples of Arabia — Midian among them, the line Moses will later marry into.",
+         ref=("Genesis", 25, 8)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
