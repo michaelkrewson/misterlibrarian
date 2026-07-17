@@ -93,6 +93,7 @@ CHAPTERS = [
     ("mat6", "Matthew", 6, "The Sermon's middle chapter — alms, prayer, and fasting in secret; the Lord's Prayer and its famous missing doxology; treasure, the undivided eye, Mammon — and the birds and the lilies."),
     ("mat7", "Matthew", 7, "The Sermon's finale — the splinter and the beam, ask-seek-knock, the Golden Rule signed, the narrow gate, wolves and fruit, 'I never knew you' — and the house on the rock."),
     ("jer20", "Jeremiah", 20, "Pashhur and the stocks — the prophet renames his jailer Terror-All-Around, names Babylon at last, confesses the fire shut up in his bones — and curses the day he was born."),
+    ("jer21", "Jeremiah", 21, "The final siege — Zedekiah's delegation asks for a miracle and hears the bleakest answer in the book: the Exodus formula aimed inward, the way of life through the enemy camp, and fire for the cedar forest."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189

@@ -268,6 +268,15 @@ DICTIONARY = [
      "The stocks — literally 'the TWISTER,' a frame that bent the prisoner's body (Jeremiah 20:2; paired with the collar at 29:26). Built on haphakh, the overturning-verb of Sodom — so Jeremiah's chapter is bracketed by one root: twisted in the mahpekhet at its start, wishing 'the cities Jehovah overthrew' on the world at its end (20:16).", ("Jeremiah", 20, 2)),
     ("kelayot", "kelayot", "כְּלָיוֹת", "kelayot",
      "Kidneys — Hebrew's seat of the hidden self, the innermost person: 'who sees kidneys and heart' (Jeremiah 20:12). KJV renders 'the REINS' (Latin renes, kidneys) — four centuries of English readers picturing bridles by accident. Revelation quotes the pair back in Greek: 'I am the one who searches kidneys and hearts' (2:23).", ("Jeremiah", 20, 12)),
+    # ---- Jeremiah 21 (Hebrew) ----
+    ("niflaot", "niflaot", "נִפְלָאוֹת", "niflaot",
+     "'Wondrous works' — the Exodus-wonder word (pele, wonder): the sea, the plagues, Sennacherib's melted army. Zedekiah's delegation asks for one more (Jeremiah 21:2) — 'perhaps Jehovah will deal with us according to all his wondrous works' — and the answer is that the Exodus God is already on the field, on the other side.", ("Jeremiah", 21, 2)),
+    ("shalal", "shalal", "שָׁלָל", "shalal",
+     "Spoil, plunder — and the grimmest idiom built on it: nefesh li-shalal, 'his life as SPOIL' (Jeremiah 21:9; KJV 'his life shall be unto him for a prey'): the only plunder you will carry out of this war is yourself. Jeremiah later hands it to the two men who trusted him, as a personal promise — Ebed-melech (39:18) and Baruch (45:5).", ("Jeremiah", 21, 9)),
+    ("dever", "dever", "דֶּבֶר", "dever",
+     "Pestilence — the third leg of Jeremiah's drumbeat triad, SWORD–FAMINE–PESTILENCE, which tolls through the book from 21:7 on (some fifteen times). The same word names the Exodus cattle-plague; in the siege oracles it is the death that needs no army.", ("Jeremiah", 21, 6)),
+    ("zeroa-netuyah", "zeroa netuyah", "זְרוֹעַ נְטוּיָה", "zeroa netuyah",
+     "'Outstretched arm' — the redemption formula: 'a mighty hand and an outstretched arm' is how Deuteronomy says Israel was brought out of Egypt, repeated like a creed. Jeremiah 21:5 turns it around — 'I myself will fight AGAINST you with an outstretched hand and with a strong arm': the most chilling diplomatic note in the book.", ("Jeremiah", 21, 5)),
     # ---- Daniel 12 (Hebrew) ----
     ("zohar", "zohar", "זֹהַר", "zohar",
      "'Radiance, shining' — Daniel 12:3's wise 'shine like the SHINING of the vault' (yazhiru ke-zohar, the cognate kept). Rare: only here and Ezekiel 8:2. Eight centuries later the masterwork of Jewish mysticism took its title from this verse's word — the Zohar, 'Radiance.'", ("Daniel", 12, 3)),
@@ -899,14 +908,14 @@ ENCYCLOPEDIA = [
               "(Ezekiel 14:14; 28:3).",
          refs=[("Daniel", 1, 6), ("Daniel", 1, 8), ("Daniel", 1, 17), ("Daniel", 1, 21),
                ("Daniel", 12, 4), ("Daniel", 12, 13)], videos=[]),
-    dict(slug="nebuchadnezzar", name="Nebuchadnezzar II", kind="person", aliases=["Nebuchadnezzar"],
+    dict(slug="nebuchadnezzar", name="Nebuchadnezzar II", kind="person", aliases=["Nebuchadnezzar", "Nebuchadrezzar"],
          desc="King of Babylon 605–562 BC — the empire's great builder (the Ishtar Gate, the ziggurat Etemenanki) "
               "and Jerusalem's destroyer: the 605 campaign (the year of Carchemish, fixed by the Babylonian "
               "Chronicle) took Daniel; 597 took king Jehoiachin; 586 burned the city and the temple. Daniel's "
               "court tales give him a dream he refuses to tell (ch. 2), a furnace (ch. 3), a humbling madness — "
               "and, uniquely among scripture's tyrants, a doxology (4:34-37). Douay, via the Greek, spells him "
               "Nabuchodonosor.",
-         refs=[("Daniel", 1, 1), ("Daniel", 1, 18)], videos=[]),
+         refs=[("Daniel", 1, 1), ("Daniel", 1, 18), ("Jeremiah", 21, 2), ("Jeremiah", 21, 7)], videos=[]),
     dict(slug="hananiah-mishael-azariah", name="Hananiah, Mishael, and Azariah", kind="person",
          aliases=["Hananiah", "Mishael", "Azariah", "Shadrach", "Meshach", "Abednego"],
          desc="Daniel's three companions from Judah — 'Yah has been gracious,' 'who is what El is?', 'Yah has "
@@ -995,6 +1004,27 @@ ENCYCLOPEDIA = [
          coords=(32.5364, 44.4209, 0.5),
          modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
          videos=[]),
+
+    # ---- Jeremiah 21 ----
+    dict(slug="zedekiah", name="Zedekiah", kind="person", aliases=["Zedekiah"],
+         desc="Judah's last king — born Mattaniah, installed and renamed by Nebuchadnezzar himself after the "
+              "597 deportation (2 Kings 24:17): a vassal wearing a throne-name his conqueror chose. Twenty-one "
+              "when crowned, chronically unable to choose between his officials and his conscience — he sends "
+              "delegations to Jeremiah (21:1; 37:3), consults him in secret (37:17; 38:14-16), lets the "
+              "officials drop him in the cistern, then lets Ebed-melech pull him out. The rebellion the "
+              "prophet begged him not to make brought the final siege (588–586). His end at Riblah is the "
+              "book's darkest sentence: his sons killed before his eyes, then his eyes put out — the last "
+              "thing he ever saw (39:6-7).",
+         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[]),
+    dict(slug="pashhur-malchiah", name="Pashhur son of Malchiah", kind="person", aliases=["Pashhur"],
+         desc="NOT the Pashhur of the stocks (that was the son of Immer, ch. 20) — a second official of the "
+              "same name, sent by Zedekiah during the final siege to ask Jeremiah for a miracle (21:1). The "
+              "book's editors filed the two Pashhur scenes side by side, seventeen years apart — the scroll's "
+              "own catchword filing system. This Pashhur has a future: he stands among the officials who have "
+              "Jeremiah thrown into the cistern as a defeatist (38:1-6) — in the very verse where a 'Gedaliah "
+              "son of Pashhur' also appears, whose clay seal-impression was excavated in the City of David's "
+              "destruction ash.",
+         refs=[("Jeremiah", 21, 1)], videos=[]),
 
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
@@ -1267,6 +1297,12 @@ XREFS = [
     (("Jeremiah", 20, 1), ("Matthew", 5, 22), "'these things' = the sermon of ch. 19, preached over the valley of Ben-Hinnom — the valley Greek wears as Gehenna"),
     (("Jeremiah", 20, 4), ("Daniel", 1, 2), "'all Judah into the hand of the king of Babylon' — prophesied from the stocks; recorded as done on Daniel's first page"),
     (("Jeremiah", 20, 11), (15, 1), "'Jehovah is with me like a dread warrior' — the vision-word to Abram, 'I am a shield to you,' in a fighter's key"),
+    # ---- Jeremiah 21 ----
+    (("Jeremiah", 21, 8), ("Matthew", 7, 13), "the Two Ways — 'the way of life and the way of death'; the Sermon's two gates walk the same fork, both descending from Deuteronomy's choice"),
+    (("Jeremiah", 21, 2), ("Jeremiah", 20, 4), "Babylon, named from the stocks (~605) — now at the walls (588): the book files its two Pashhur scenes side by side, seventeen years apart"),
+    (("Jeremiah", 21, 12), (18, 19), "'to do righteousness and justice' — Abraham's brief; the house of David measured against it: render justice in the morning"),
+    (("Jeremiah", 21, 13), (11, 5), "'Who shall come down against us?' — Babel's page already answered the fortified boast: 'Jehovah came down'"),
+    (("Jeremiah", 21, 7), ("Daniel", 1, 1), "the same king, two spellings, two sieges — Daniel's opening is Nebuchadnezzar's first visit (605); this oracle is his last (588)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1403,6 +1439,7 @@ VERSE_OF_DAY = [
     ("Matthew", 7, 7, "Three present imperatives — Greek's continuous aspect: keep asking, keep seeking, keep knocking."),
     ("Jeremiah", 20, 9, "The fire shut up in the bones — the confession of a man who tried to resign and could not."),
     ("Jeremiah", 20, 11, "The chapter's power-verb closes its ledger: God prevailed, the prophet could not, the pursuers shall not."),
+    ("Jeremiah", 21, 8, "The Two Ways at their sharpest — the way of life and the way of death, with life outside the walls."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1555,6 +1592,9 @@ CHRON_CHAPTERS = {
     "jer20": dict(era="exile",
                   when="Pashhur puts Jeremiah in the stocks; the prophet renames him Terror-All-Around, names Babylon at last — and curses the day he was born.",
                   clock="c. 605–598 BC, Jehoiakim's Jerusalem — after Carchemish (Babylon is finally named as the exile's destination, five times in three verses), before the first deportation arrives to prove it."),
+    "jer21": dict(era="exile",
+                  when="Zedekiah's delegation asks for a miracle; the answer is the bleakest in the book — God fights on the siege's side, and life is outside the walls.",
+                  clock="588–586 BC, the final siege — the book has jumped seventeen years past ch. 20 (its chapters are filed by theme and catchword, not by calendar). The city and its cedar 'forest' burn in the summer of 586."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -1627,6 +1667,9 @@ CHRON_EVENTS = [
     dict(era="exile", am="—", trad="c. 605–598 BC", event="Jeremiah in the stocks — Pashhur renamed Terror-All-Around; Babylon named as the exile's destination",
          note="The first recorded violence against Jeremiah: a night in the 'twister' at the upper Benjamin Gate, for the sermon preached over the valley of Ben-Hinnom. The oracle that followed is the first in the book to say 'Babylon' out loud — five times in three verses — and the confession after it ('You enticed me… a burning fire shut up in my bones… cursed be the day I was born') is the rawest prayer in the prophets.",
          ref=("Jeremiah", 20, 7)),
+    dict(era="exile", am="—", trad="588–586 BC", event="The final siege of Jerusalem — Zedekiah's delegation told: the city goes to the fire; life is outside the walls",
+         note="Nebuchadrezzar's armies close on the city; the king's last-ditch embassy asks for an Exodus-style wonder and hears the Exodus formula aimed inward — 'I myself will fight against you with an outstretched hand and a strong arm' (Jeremiah 21:5). The city and temple burned in the summer of 586 (2 Kings 25:8-9); the Lachish ostraca — Judean military letters scratched during this very campaign, dug from the gate-room ash — carry the panic contemporaneously.",
+         ref=("Jeremiah", 21, 5)),
     dict(era="exile", am="—", trad="539 BC", event="Babylon falls to Cyrus — 'and Daniel continued until the first year of King Cyrus'",
          note="The exile's terminus, posted at its start (Daniel 1:21); pinned outside the Bible by the Nabonidus Chronicle and the Cyrus Cylinder.",
          ref=("Daniel", 1, 21)),
