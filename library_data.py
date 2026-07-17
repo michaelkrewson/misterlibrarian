@@ -296,6 +296,17 @@ DICTIONARY = [
      "'To babble on' (Matthew 6:7) — a word found almost nowhere before this verse, quite possibly built to sound like what it means (batta-batta…), and glossed by the next phrase: 'their many words.' KJV 'use not vain repetitions.' The target is pagan-style prayer as word-count — 'your Father knows what you need before you ask him.'", ("Matthew", 6, 7)),
     ("haplous", "haplous", "ἁπλοῦς", "haplous",
      "'Single, simple, undivided' — the healthy eye of Matthew 6:22 (KJV 'single'; NWT 'simple'; NIV 'healthy'), opposed to the 'evil eye,' which in Hebrew idiom is the STINGY eye (Deuteronomy 15:9). Generosity as optics: the undivided eye lights the whole body — and the very next sentence is about divided service: no one can be a slave to two masters.", ("Matthew", 6, 22)),
+    # ---- Matthew 7 (Greek) ----
+    ("dokos", "karphos / dokos", "κάρφος / δοκός", "karphos / dokos",
+     "The splinter and the BEAM (Matthew 7:3-5) — karphos is a chip, a fleck of straw (KJV's famous 'mote'); dokos is a roof-timber, the piece a builder lays across a house. Workshop comedy drawn to scale — from, tradition remembers, a builder's household ('the carpenter's son,' 13:55).", ("Matthew", 7, 3)),
+    ("metron", "metron", "μέτρον", "metron",
+     "'Measure' — 'with the measure you measure, it will be measured out to you' (Matthew 7:2): the rabbis' own principle, middah keneged middah, measure for measure. The judgment you dispense is the container your own verdict arrives in.", ("Matthew", 7, 2)),
+    ("anomia", "anomia", "ἀνομία", "anomia",
+     "'Lawlessness' — literally no-Torah-ness (a-nomos). The verdict-word of Matthew 7:23, 'depart from me, you workers of lawlessness' — Psalm 6:8 with the psalmist's seat taken. The charge is not failed performance (the résumé of wonders goes undisputed) but a life unaligned with the will of the Father (7:21).", ("Matthew", 7, 23)),
+    ("phronimos", "phronimos", "φρόνιμος", "phronimos",
+     "'Prudent, sensible' — the man who built on rock (Matthew 7:24; KJV 'wise'). Matthew's word for practical foresight: it returns picking the wise virgins (25:2), the faithful steward (24:45), and — paired with doves — the serpents (10:16). Opposite: mōros, the fool who built on sand.", ("Matthew", 7, 24)),
+    ("exousia", "exousia", "ἐξουσία", "exousia",
+     "'Authority' — what astounded the crowds (Matthew 7:29): the scribes taught by citation, rulings in the names of earlier teachers; this preacher's only footnote was 'but I say to you.' Planted where the book can reach it: Matthew's last sentence claims 'ALL authority, in heaven and on earth' (28:18).", ("Matthew", 7, 29)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
      "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
@@ -667,7 +678,7 @@ ENCYCLOPEDIA = [
               "the firstborn of the dead, and the ruler of the kings of the earth' (Rev 1:5) — one like a son of man "
               "among the lampstands, wearing the Ancient of Days' own description, who says 'I am the first and the "
               "last... and I was dead, and look: I am alive forever' (Rev 1:13-18).",
-         refs=[("John", 1, 17), ("John", 1, 29), ("John", 1, 36), ("John", 1, 42), ("John", 1, 45), ("John", 1, 50),
+         refs=[("Matthew", 7, 28), ("John", 1, 17), ("John", 1, 29), ("John", 1, 36), ("John", 1, 42), ("John", 1, 45), ("John", 1, 50),
                ("Revelation", 1, 1), ("Revelation", 1, 5), ("Revelation", 1, 9)],
          videos=[]),
     dict(slug="andrew", name="Andrew", kind="person", aliases=["Andrew"],
@@ -1196,6 +1207,13 @@ XREFS = [
     (("Matthew", 6, 26), (1, 30), "the birds of the heaven, fed — 'every green plant for food': the Creator was feeding the creatures on the record's first page"),
     (("Matthew", 6, 11), (3, 19), "bread by the sweat of your face — Eden's sentence; the prayer asks bread back as a gift, one day at a time"),
     (("Matthew", 6, 33), ("Matthew", 5, 6), "seek first the kingdom and his righteousness — the fourth Beatitude's hunger, given its compass heading"),
+    # ---- Matthew 7 ----
+    (("Matthew", 7, 12), ("Matthew", 5, 17), "'the Law and the Prophets' — the Sermon's bookend: opened at 5:17 ('not to tear down, but to fulfill'), closed by the Golden Rule"),
+    (("Matthew", 7, 16), (3, 18), "thorns and thistles — Eden's curse-crop, the same word-pair in the Greek Bible; no grapes grow on the curse's own vegetation"),
+    (("Matthew", 7, 25), (7, 17), "rain and rising waters as the test of what stands — the flood's grammar, scaled to a single house"),
+    (("Matthew", 7, 15), ("Revelation", 2, 2), "wolves in sheep's clothing — Ephesus, two generations on, praised for testing self-styled apostles and finding them false"),
+    (("Matthew", 7, 9), ("Matthew", 6, 11), "the prayer's bread-petition, argued from fatherhood — what father hands his child a stone?"),
+    (("Matthew", 7, 26), ("Matthew", 5, 22), "mōros — forbidden as an insult at 5:22, earned as a description at 7:26: the man who hears and does not do"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1328,6 +1346,8 @@ VERSE_OF_DAY = [
     ("Matthew", 5, 9, "The seventh Happy-saying: the peacemakers, called sons of God."),
     ("Matthew", 6, 21, "The Sermon's compass needle: the heart follows the treasure."),
     ("Matthew", 6, 26, "The argument against anxiety is a bird — fed daily by the same Father, and worth less than you."),
+    ("Matthew", 7, 12, "The Golden Rule — stated positive where the ancients stated it negative, and signed: this IS the Law and the Prophets."),
+    ("Matthew", 7, 7, "Three present imperatives — Greek's continuous aspect: keep asking, keep seeking, keep knocking."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1492,6 +1512,9 @@ CHRON_CHAPTERS = {
     "mat6": dict(era="gospels",
                  when="The Sermon continues — alms, prayer, and fasting in secret; the Lord's Prayer; treasure, the undivided eye, Mammon; the birds and the lilies.",
                  clock="Same hillside, same discourse (c. AD 28–30) — the middle chapter of the Sermon's three. Its prayer became the most-recited text in human history; the Didache, within living memory of the apostles, already prescribes it three times a day."),
+    "mat7": dict(era="gospels",
+                 when="The Sermon's finale — judge not, ask-seek-knock, the Golden Rule, the narrow gate, wolves and fruit, 'I never knew you,' and the house on the rock.",
+                 clock="Same hillside, same discourse (c. AD 28–30) — the Sermon's closing chapter. Its last line ('when Jesus finished these words') is the first of five such seams: the visible joints of Matthew's five-discourse architecture."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),

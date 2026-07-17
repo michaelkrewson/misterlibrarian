@@ -91,6 +91,7 @@ CHAPTERS = [
     ("dan12", "Daniel", 12, "The sleepers in the ground of dust wake — everlasting life named for the first time, the sealed book, two numbers nobody has decoded, and a lot promised at the end of the days."),
     ("mat5", "Matthew", 5, "The Sermon on the Mount opens in red letters — eight Happy-sayings, salt and light, not one iota, and six rounds of 'You have heard… but I say': anger, lust, oaths, the other cheek, love for enemies."),
     ("mat6", "Matthew", 6, "The Sermon's middle chapter — alms, prayer, and fasting in secret; the Lord's Prayer and its famous missing doxology; treasure, the undivided eye, Mammon — and the birds and the lilies."),
+    ("mat7", "Matthew", 7, "The Sermon's finale — the splinter and the beam, ask-seek-knock, the Golden Rule signed, the narrow gate, wolves and fruit, 'I never knew you' — and the house on the rock."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
