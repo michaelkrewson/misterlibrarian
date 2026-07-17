@@ -2056,6 +2056,9 @@ exactly how this series grows.</p>
   <a class="card" href="ask-enoch.html"><div class="card-t">Why isn't the Book of Enoch in this translation?</div>
   <div class="card-d">The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea
   Scrolls.</div></a>
+  <a class="card" href="ask-creation-days.html"><div class="card-t">How long were the days of creation?</div>
+  <div class="card-d">The elastic Hebrew word <em>yom</em>, the sunless first days and the open seventh, and the
+  ordinary-day, day-age, and literary-framework readings — with their pedigrees, no vote cast.</div></a>
 </div>"""
     out = page(f"Ask Mr. Librarian — {SITE_NAME}", body, active="ask",
                desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
@@ -2447,6 +2450,138 @@ def build_ask_jehovah():
     open(os.path.join(OUT, "ask-jehovah.html"), "w", encoding="utf-8").write(out)
 
 
+def build_ask_creation_days():
+    """Ask Mr. Librarian post on the length of the creation 'days' — the word yom,
+    the internal signals of Genesis 1, the ordinary-day / day-age / framework
+    readings with their pedigrees, and the honest 'isn't this just bending the Bible
+    to fit science?' question. Companion to the Genesis 1 v5 note and the yom
+    dictionary entry. Neutrality habit: lay out the views, don't cast a vote."""
+    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+<h1 class="pagetitle">How long were the days of creation?</h1>
+<h2 style="margin-top:2px">The word <em>yom</em>, the age of the earth, and the &ldquo;day-age&rdquo; reading</h2>
+
+<div class="qbox">
+  <div class="qlabel">A reader asked</div>
+  <p>&ldquo;Does Genesis really mean six 24-hour days? Or can a &lsquo;day&rsquo; of creation stand for a long
+  age &mdash; millions of years &mdash; so the Bible and the age of the earth aren&rsquo;t at war?&rdquo;</p>
+</div>
+
+<div class="panel prose">
+  <p><strong>The short answer.</strong> The Hebrew word for &ldquo;day&rdquo; here is
+  <a href="dictionary.html#yom"><em>yom</em></a>, and it is one of the most elastic words in the Bible: it can
+  mean the daylight hours, an ordinary 24-hour day, <em>or</em> an indefinite stretch of time &mdash; an age.
+  That range is real, and it is the reason serious readers have held very different views of the six
+  &ldquo;days&rdquo; for two thousand years. A &ldquo;day&rdquo; that stands for a long age is a legitimate,
+  ancient reading &mdash; not a modern dodge &mdash; and this translation lays out the options rather than
+  insisting on one. Here is the whole picture.</p>
+</div>
+
+<h2>The word does the heavy lifting</h2>
+<div class="panel prose">
+  <p>Right in <a href="genesis-1.html#v5">Genesis 1:5</a>, <em>yom</em> is used two ways in a single sentence:
+  &ldquo;God named the light <strong>day</strong> (<em>yom</em>), and the darkness he named night&rdquo; &mdash;
+  there <em>yom</em> is the <em>daylight</em>, half of a 24-hour period &mdash; and then &ldquo;there was
+  evening, and there was morning, <strong>day</strong> (<em>yom</em>) one,&rdquo; where it is the whole unit.
+  Elsewhere the same word stretches much further:</p>
+  <ul>
+    <li>&ldquo;in the <strong>day</strong> that Jehovah made earth and heaven&rdquo;
+    (<a href="genesis-2.html#v2-4">Genesis 2:4</a>) &mdash; here one <em>yom</em> gathers up the <em>entire</em>
+    creation week; it plainly means &ldquo;when,&rdquo; not a single sunrise-to-sunset;</li>
+    <li>&ldquo;the <strong>day</strong> of Jehovah&rdquo; &mdash; a whole era of judgment, not an afternoon;</li>
+    <li>&ldquo;a thousand years in your sight are but as a <strong>day</strong>&rdquo; (Psalm 90:4, quoted at
+    2 Peter 3:8) &mdash; the Bible&rsquo;s own reminder that God&rsquo;s days are not measured by our clocks.</li>
+  </ul>
+  <p>So the question &ldquo;how long is a day of creation?&rdquo; cannot be settled just by pointing at the word
+  &ldquo;day.&rdquo; The word itself leaves the door open.</p>
+</div>
+
+<h2>What Genesis 1 itself hints</h2>
+<div class="panel prose">
+  <p>Two features of the chapter have made even careful, conservative readers wonder whether these are ordinary
+  days:</p>
+  <ul>
+    <li><strong>The sun is not made until the fourth day</strong> (<a href="genesis-1.html#v14">1:14&ndash;19</a>).
+    But an ordinary &ldquo;evening and morning&rdquo; day is defined by the sun. So the first three
+    &ldquo;days&rdquo; pass with no sun to clock them &mdash; which suggests the word may be doing something
+    other than marking solar days.</li>
+    <li><strong>The seventh day has no &ldquo;evening and morning.&rdquo;</strong> Every other day is sealed
+    with that refrain; the seventh is left open. The New Testament still speaks of God&rsquo;s
+    <strong>rest</strong> as something a believer can enter <em>now</em> (Hebrews 4:3&ndash;11) &mdash; an
+    open-ended &ldquo;day&rdquo; that has not yet closed.</li>
+  </ul>
+</div>
+
+<h2>The readings, and their pedigrees</h2>
+<div class="panel prose">
+  <p>Three views have been held by serious readers, and a fourth older one. This library sets them out with
+  their credentials and <strong>does not cast a vote</strong>.</p>
+
+  <h3>1. Ordinary days &mdash; six literal 24-hour days</h3>
+  <p>The plain force of &ldquo;evening and morning&rdquo; attached to a number, and the ground the Fourth
+  Commandment gives for the seven-day week: &ldquo;in <em>six days</em> Jehovah made the heavens and the earth
+  &hellip; and rested the seventh&rdquo; (Exodus 20:11). This is the reading of the Reformers and of modern
+  <strong>young-earth creationism</strong>, which on the genealogies&rsquo; arithmetic places creation about
+  six thousand years ago.</p>
+
+  <h3>2. Long ages &mdash; the &ldquo;day-age&rdquo; reading</h3>
+  <p>Each <em>yom</em> is a vast epoch, so the six &ldquo;days&rdquo; can span the millions and billions of
+  years the earth and cosmos actually show. This is emphatically <em>not</em> a modern invention to escape
+  geology: <strong>Augustine</strong> argued in the early fifth century (in <em>The Literal Meaning of
+  Genesis</em>) that the creation &ldquo;days&rdquo; were <em>not</em> ordinary days at all, and
+  <strong>Origen</strong> and the Jewish philosopher <strong>Philo</strong> read them non-literally centuries
+  before that &mdash; more than a thousand years before anyone measured a rock. The day-age reading lets the
+  Genesis account and the age of the universe (about <strong>13.8 billion years</strong>, with the earth about
+  4.5 billion) stand together without forcing either to bend.</p>
+
+  <h3>3. The literary framework</h3>
+  <p>The &ldquo;days&rdquo; are a <em>topical</em>, not a stopwatch, arrangement. Days one to three form the
+  <strong>realms</strong> &mdash; light, then sky and sea, then land &mdash; and days four to six fill those
+  realms with their <strong>rulers</strong>: the luminaries, then birds and fish, then land animals and
+  humankind. On this reading the chapter is a deliberately patterned poem of order, and &ldquo;how many
+  hours?&rdquo; is simply the wrong question to put to it.</p>
+
+  <h3>4. The gap reading (older)</h3>
+  <p>An unstated stretch of time &mdash; long enough for whatever geology shows &mdash; falls <em>between</em>
+  verses 1 and 2, before the six days begin. Widely held a century ago, less so now, but still on the shelf.</p>
+</div>
+
+<h2>&ldquo;But isn&rsquo;t this just bending the Bible to fit science?&rdquo;</h2>
+<div class="panel prose">
+  <p>It is the fair question, and the honest answer is <strong>no &mdash; at least not necessarily</strong>. The
+  non-literal reading of the &ldquo;days&rdquo; is older than modern science by more than a millennium; Augustine
+  reached it with no geology in hand at all, simply from wrestling with the text (the sunless first days, the
+  open seventh, the elastic word). So a reader can hold the day-age or framework view on <em>literary and
+  linguistic</em> grounds and never mention a fossil.</p>
+  <p>Two honesty notes cut both ways. First, the <strong>age of the earth is a separate question</strong> from
+  the length of the &ldquo;days&rdquo;: it is answered, independently and consistently, by radiometric dating,
+  the cosmos&rsquo;s expansion, and the light-travel time of distant stars &mdash; and a 24-hour-day reader can
+  still hold an old earth (the gap or framework views allow it). Second, forcing a tight <em>concordance</em>
+  &mdash; matching each &ldquo;day&rdquo; to a geological era &mdash; can strain the text as much as ignoring
+  the science does. This library&rsquo;s habit is to refuse both kinds of forcing.</p>
+</div>
+
+<h2>Where this translation stands</h2>
+<div class="panel prose">
+  <p>It renders <em>yom</em> plainly <strong>&ldquo;day&rdquo;</strong> &mdash; the true word, carrying its own
+  full range &mdash; and presses no length onto it. It does not tell you the earth is six thousand years old, and
+  it does not tell you the &ldquo;days&rdquo; are geological ages. It tells you what the word can mean, what the
+  chapter hints, and who has read it which way &mdash; and leaves the weighing to you.</p>
+  <p>One thing to know about this site&rsquo;s dates: the traditional years on the
+  <a href="chronology.html">chronology</a> (Ussher&rsquo;s <strong>4004 BC</strong>, &ldquo;AM 1&rdquo;) are given
+  as <em>the text&rsquo;s own genealogical reckoning</em> &mdash; the number the &ldquo;begat&rdquo; lists add up
+  to &mdash; not as a scientific claim about the age of the planet. The long-age reading is fully on the table.
+  The verse-by-verse discussion lives in the note at <a href="genesis-1.html#n5">Genesis 1:5</a>.</p>
+</div>
+
+<div class="askbar askbar-foot"><a href="ask.html">← More from Ask Mr. Librarian</a></div>"""
+    out = page(f"How long were the days of creation? — {SITE_NAME}", body, active="ask",
+               desc="How long were the days of creation? The Hebrew word yom, the age of the earth, and the "
+                    "ordinary-day, day-age, and literary-framework readings — laid out with their pedigrees "
+                    "and left for you to weigh.",
+               url="ask-creation-days.html")
+    open(os.path.join(OUT, "ask-creation-days.html"), "w", encoding="utf-8").write(out)
+
+
 def build_contact():
     body = f"""<h1 class="pagetitle">✉️ Ask Mr. Librarian a question</h1>
 <p class="lede">A question about the project, a translation choice you'd argue with, a chapter request,
@@ -2670,6 +2805,7 @@ def main():
     build_ask_index()
     build_ask_jesus_god()
     build_ask_jehovah()
+    build_ask_creation_days()
     build_contact()
     build_thanks()
     n_words, n_refs = build_concordance(chapters)
