@@ -259,6 +259,13 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Genesis 23 (Hebrew) ----
+    ("ger", "ger / toshav", "גֵּר / תּוֹשָׁב", "ger / toshav",
+     "Two distinct legal statuses the shelf often merges (KJV 'a stranger and a sojourner,' Genesis 23:4; NWT keeps them, 'an alien resident and a settler'). A GER is a resident foreigner — living among a people, protected by law, but WITHOUT citizenship or the right to own land (Torah's great charge: 'love the ger, for you were gerim in Egypt'). A TOSHAV is a settled outsider, more rooted but still landless. Abraham names himself both — the man promised the whole land cannot legally buy a grave in it.", (23, 4)),
+    ("achuzzah", "achuzzah", "אֲחֻזָּה", "achuzzah",
+     "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
+    ("nasi", "nasi", "נָשִׂיא", "nasi",
+     "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. Later nasi titles the tribal chieftains and Ezekiel's coming ruler.", (23, 6)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -598,11 +605,13 @@ ENCYCLOPEDIA = [
                   "https://www.youtube.com/watch?v=QjPcSQUY2W0")],
          coords=(31.033, 35.484, 0.3), approx=True,
          modern="Near Ghor es-Safi, Jordan, southeast of the Dead Sea"),
-    dict(slug="hebron", name="Hebron", kind="place",
+    dict(slug="hebron", name="Hebron", kind="place", aliases=["Hebron", "Kiriath-arba"],
          desc="Where Abram settles after Lot's departure, among the oaks of Mamre, and builds his third altar "
-              "(13:18) — barely introduced here, but central later: Sarah's burial, the cave of Machpelah, "
-              "David's first capital.",
-         refs=[(13, 18)], videos=[],
+              "(13:18); also called KIRIATH-ARBA, 'town of Arba' (a giant of the Anakim) or 'town of the four.' "
+              "It becomes central: Sarah dies here and Abraham buys the cave of Machpelah for her tomb (ch. 23), "
+              "the patriarchs' burial place; and it is David's FIRST royal capital, where he reigns seven years "
+              "before taking Jerusalem (2 Samuel 5:5). One of the oldest continuously-inhabited towns on earth.",
+         refs=[(13, 18), (23, 2), (23, 19)], videos=[],
          coords=(31.5326, 35.0998, 0.15),
          modern="Hebron, West Bank"),
     dict(slug="mamre", name="Mamre (the oaks of)", kind="place", aliases=["Mamre"],
@@ -611,7 +620,7 @@ ENCYCLOPEDIA = [
               "Amorite ally of Abram's named in the very next chapter (14:13, 24) — the place and the man are not "
               "shown to be connected beyond sharing the name, the same double-use already flagged at Haran. Here, "
               "in the heat of the day, the three visitors arrive and Isaac is promised within the year (18:1-15).",
-         refs=[(13, 18), (18, 1)], videos=[("MAMRE — Where God Appeared to Abraham!", "https://www.youtube.com/watch?v=WzunDBINbS4")],
+         refs=[(13, 18), (18, 1), (23, 17), (23, 19)], videos=[("MAMRE — Where God Appeared to Abraham!", "https://www.youtube.com/watch?v=WzunDBINbS4")],
          coords=(31.5566, 35.1027, 0.15), approx=True,
          modern="Ramat el-Khalil, just north of Hebron, West Bank"),
 
@@ -705,7 +714,7 @@ ENCYCLOPEDIA = [
               "royal house — and the disclosure finally comes: she is Abraham's half-sister, his father's daughter "
               "(20:12).",
          refs=[(11, 29), (11, 30), (12, 11), (12, 15), (16, 1), (16, 5), (16, 6), (17, 15), (17, 19), (17, 21),
-               (18, 9), (18, 12), (18, 15), (20, 2), (20, 14), (20, 16), (20, 18)], videos=[]),
+               (18, 9), (18, 12), (18, 15), (20, 2), (20, 14), (20, 16), (20, 18), (23, 2), (23, 19)], videos=[]),
     dict(slug="lot", name="Lot", kind="person",
          desc="Son of Haran, Abram's orphaned nephew (11:27-28), who travels with him from Haran into Canaan (12:4-5). "
               "He chooses the well-watered plain and pitches his tent toward Sodom (13:10-12), is carried off in the "
@@ -1017,6 +1026,23 @@ ENCYCLOPEDIA = [
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
          refs=[("Proverbs", 1, 1), ("Matthew", 6, 29)], videos=[]),
 
+    # ---- Genesis 23 ----
+    dict(slug="machpelah", name="Machpelah", kind="place", aliases=["Machpelah"],
+         desc="'The double' (from kaphal, 'to fold, to double') — the cave at the edge of Ephron the "
+              "Hittite's field, facing Mamre at Hebron, that Abraham bought for 400 shekels of silver to "
+              "bury Sarah (Genesis 23). It is the FIRST legally-held parcel of the Promised Land — the man "
+              "promised the whole land owns, in his lifetime, one field with a grave in it. It becomes the "
+              "patriarchal tomb: Abraham himself (25:9), Isaac and Rebekah, and Jacob and Leah (49:31; "
+              "50:13) are all laid here — the one place in Canaan that indisputably belonged to the "
+              "patriarchs, its purchase witnessed at the city gate and recorded tree by tree. The massive "
+              "stone enclosure Herod the Great built over the cave still stands at Hebron (the Cave of the "
+              "Patriarchs / al-Haram al-Ibrahimi) — among the oldest continuously-venerated sites on earth, "
+              "and sacred to Jews, Christians, and Muslims alike.",
+         refs=[(23, 9), (23, 17), (23, 19)],
+         coords=(31.5247, 35.1108, 0.05),
+         modern="The Cave of the Patriarchs (Tomb of the Patriarchs / al-Haram al-Ibrahimi), Hebron",
+         videos=[]),
+
     # ---- Genesis 22 ----
     dict(slug="moriah", name="Moriah", kind="place", aliases=["Moriah"],
          desc="'The land of Moriah,' where Abraham was sent to bind Isaac (22:2) — and one of the most "
@@ -1252,6 +1278,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 23 ----
+    ((23, 4),  (17, 8),  "achuzzah, a 'holding' — the everlasting HOLDING God promised Abraham (all Canaan), and here the one burial holding is all of it he owns in his lifetime"),
+    ((23, 17), (13, 18), "Machpelah 'faced Mamre' — the oaks where Abraham first pitched his tent and built an altar now look onto the family tomb"),
+    ((23, 6),  (12, 2),  "'a prince of God among us' — the Hittites see the great name God promised to make of Abraham"),
+    ((23, 20), (12, 7),  "the land promised 'to your seed' — of which this single witnessed field, bought for a grave, is the first legal parcel"),
+
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
     (("Proverbs", 1, 7), (22, 12), "'the fear of Jehovah' — the reverent awe the angel found in Abraham at the altar: 'now I know that you fear God'"),
@@ -1579,6 +1611,8 @@ VERSE_OF_DAY = [
     (21, 17, "God hears the boy 'there where he is' — Ishmael's name paid as an event in the wilderness."),
     (22, 8, "The Aqedah's center: 'God will see to the lamb for himself' — the seeing that will name the mountain."),
     (22, 14, "Abraham names the place Jehovah-Yireh — 'on the mount of Jehovah, it is seen to': the hill of the future Temple."),
+    (23, 4, "Abraham's own word for himself in the land promised to his seed: 'a resident alien and a settler among you.'"),
+    (23, 6, "The Hittites' verdict on the landless stranger in their midst: 'a prince of God you are among us.'"),
     ("Proverbs", 1, 7, "The motto the whole book is tuned to: the fear of Jehovah is the beginning — and the chief part — of knowledge."),
     ("Proverbs", 1, 33, "Wisdom's last, quiet promise: whoever listens will dwell secure — safety not from trouble, but from fear."),
 ]
@@ -1731,6 +1765,9 @@ CHRON_CHAPTERS = {
     "gen21": dict(era="patriarchs",
                   when="Isaac is born and the laughter lands; Hagar's second desert; the well of the oath at Beersheba.",
                   clock="AM 2048 · c. 1896 BC traditional — the promise of 17:21 kept 'at the appointed time,' one year on; Abraham is 100, Sarah 90."),
+    "gen23": dict(era="patriarchs",
+                  when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
+                  clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -1816,6 +1853,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="—", trad="c. 1870s BC?", event="The Aqedah — Abraham binds Isaac on Mount Moriah; the ram in the thicket; the promise sealed by God's own oath",
          note="The altar of Genesis 22 stands on the hill 2 Chronicles 3:1 names as MOUNT MORIAH — the future Temple Mount, where David will buy Araunah's threshing floor and Solomon will build the first Temple (c. 966 BC). Moriah, north of the Jebusite town of Salem/Jebus, is drawn into Jerusalem only when the city expands to build there — so the hill of the binding becomes the city's heart before it wears the name. The year is uncertain: Isaac's age is debated (the midrash makes him 37).",
          ref=("Genesis", 22, 2)),
+    dict(era="patriarchs", am="2085", trad="1859 BC", event="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the patriarchs' first foothold in the land",
+         note="Sarah dies at 127 (the only woman whose lifespan the Torah records), and Abraham — a landless 'resident alien' in the land promised to his seed — buys a field and cave from Ephron the Hittite for 400 shekels, witnessed at the city gate (Genesis 23). It is the first parcel of Canaan the patriarchs indisputably own, and becomes their tomb (Abraham, Isaac, Rebekah, Jacob, Leah); Herod's enclosure over the cave still stands at Hebron.",
+         ref=("Genesis", 23, 19)),
     # -- The Kingdom --
     dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
          note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",
