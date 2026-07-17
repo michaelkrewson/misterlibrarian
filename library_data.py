@@ -1202,7 +1202,8 @@ ENCYCLOPEDIA = [
          refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1)],
          coords=(32.5364, 44.4209, 0.5),
          modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
-         videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8")]),
+         videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8"),
+                 ("Exploring Babylon and the Prophecies Against Her", "https://www.youtube.com/watch?v=QtUNHjDmGOY")]),
 
     # ---- Jeremiah 21 ----
     dict(slug="zedekiah", name="Zedekiah", kind="person", aliases=["Zedekiah"],
@@ -1214,7 +1215,7 @@ ENCYCLOPEDIA = [
               "prophet begged him not to make brought the final siege (588–586). His end at Riblah is the "
               "book's darkest sentence: his sons killed before his eyes, then his eyes put out — the last "
               "thing he ever saw (39:6-7).",
-         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[("Exploring Babylon and the Prophecies Against Her", "https://www.youtube.com/watch?v=QtUNHjDmGOY")]),
+         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[]),
     dict(slug="pashhur-malchiah", name="Pashhur son of Malchiah", kind="person", aliases=["Pashhur"],
          desc="NOT the Pashhur of the stocks (that was the son of Immer, ch. 20) — a second official of the "
               "same name, sent by Zedekiah during the final siege to ask Jeremiah for a miracle (21:1). The "
