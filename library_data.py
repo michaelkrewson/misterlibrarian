@@ -248,6 +248,17 @@ DICTIONARY = [
      "Seed-food, vegetables — a word found only in Daniel 1 (vv 12, 16), the diet of history's first recorded controlled trial. KJV gave English a treasure for it: 'give us PULSE to eat.'", ("Daniel", 1, 12)),
     ("saris", "saris", "סָרִיס", "saris",
      "Eunuch — or simply 'court official': the word covers both (Potiphar, a married saris, shows the broader sense). Ashpenaz is 'chief of the sarisim' (Daniel 1:3); Isaiah had told Hezekiah his descendants would be sarisim in Babylon's palace (Isaiah 39:7), and tradition heard Daniel in the prophecy.", ("Daniel", 1, 3)),
+    # ---- Daniel 11 (Hebrew) ----
+    ("tsvi", "erets ha-tsvi", "אֶרֶץ הַצְּבִי", "erets ha-tsvi",
+     "'The land of BEAUTY' — Daniel's title for the promised land (11:16, 41; 'the beautiful holy mountain,' 11:45): tsvi is both 'beauty, glory' and 'gazelle.' KJV 'the glorious land'; NWT, memorably, 'the land of the Decoration.'", ("Daniel", 11, 16)),
+    ("shiqquts", "shiqquts meshomem", "שִׁקּוּץ מְשֹׁמֵם", "shiqquts meshomem",
+     "'The abomination that desolates' (Daniel 11:31) — shiqquts, the standing slur-word for an idol, plus 'desolating.' 1 Maccabees 1:54 uses this very phrase for the altar Antiochus IV set up on the temple's altar, 15 Kislev 167 BC; Jesus lifts it toward a horizon of his own — 'spoken of by Daniel the prophet' (Matthew 24:15).", ("Daniel", 11, 31)),
+    ("maskilim", "maskilim", "מַשְׂכִּילִים", "maskilim",
+     "'The wise' — those with insight, who 'give understanding to many' and fall by sword and flame (Daniel 11:33-35): the book's heroes are teachers, not warriors (the armed revolt itself may be only 'a little help,' 11:34). Daniel 12:3 gives them the shining reward.", ("Daniel", 11, 33)),
+    ("kittim", "Kittim", "כִּתִּים", "Kittim",
+     "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
+    ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
+     "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
      "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
@@ -798,8 +809,10 @@ ENCYCLOPEDIA = [
               "Genesis: Moab ('from father,' the text's own sound-gloss) to Lot's firstborn daughter, Ben-Ammi "
               "('son of my kin,' father of the Ammonites) to the younger (19:30-38). The Bible remembers the "
               "cousinhood without flattery — and then hands the line its grace note: from Moab comes Ruth, "
-              "great-grandmother of David (Ruth 4:17), named in the genealogy of Jesus (Matthew 1:5).",
-         refs=[(19, 37), (19, 38)], videos=[]),
+              "great-grandmother of David (Ruth 4:17), named in the genealogy of Jesus (Matthew 1:5). Still on "
+              "the map four centuries after Genesis closes: Daniel's last vision has Edom, Moab, and the chief "
+              "of the sons of Ammon slipping the final king's hand (Daniel 11:41).",
+         refs=[(19, 37), (19, 38), ("Daniel", 11, 41)], videos=[]),
 
     # ---- Genesis 20 ----
     dict(slug="gerar", name="Gerar", kind="place",
@@ -843,6 +856,26 @@ ENCYCLOPEDIA = [
               "Babylonian god, Nebo's apparently garbled to 'Nego'). They share the vegetable test and the "
               "ten-hands verdict (1:19-20); their own hour, the furnace, comes in chapter 3.",
          refs=[("Daniel", 1, 6), ("Daniel", 1, 7), ("Daniel", 1, 11), ("Daniel", 1, 19)], videos=[]),
+
+    # ---- Daniel 11 ----
+    dict(slug="darius-the-mede", name="Darius the Mede", kind="person", aliases=["Darius the Mede", "Darius"],
+         desc="The king 'who received the kingdom' at Babylon's fall in Daniel's telling (5:31; 11:1 stands 'in "
+              "his first year') — and the book's famous historical puzzle: no king of this name appears in the "
+              "Babylonian or Persian records between Belshazzar and Cyrus. The proposals: a throne-name of Cyrus "
+              "himself ('Darius the Mede, that is, Cyrus the Persian' is even a possible reading of 6:28); "
+              "Gubaru/Ugbaru, the general-governor who took Babylon the night it fell; or an error of the "
+              "tradition. Reported, not adjudicated.",
+         refs=[("Daniel", 11, 1)], videos=[]),
+    dict(slug="antiochus-iv", name="Antiochus IV Epiphanes", kind="person",
+         desc="Seleucid king 175–164 BC — never named in Daniel (the text calls him 'a contemptible man,' 11:21), "
+              "but wearing his biography: the throne seized by intrigue, the high priest Onias III murdered, two "
+              "Egyptian wars, the Roman circle in the sand at Eleusis (168 BC), and the desecration of Jerusalem's "
+              "temple — the daily offering halted and 'the abomination that desolates' erected, 15 Kislev 167 BC "
+              "(1 Maccabees 1:54 quotes Daniel's own phrase for it). He styled himself Epiphanes, 'God Manifest'; "
+              "contemporaries punned Epimanes, 'the madman.' He died at Tabae in Persia, 164 BC — a death whose "
+              "mismatch with Daniel 11:40-45 is the oldest crux in the book's interpretation (Porphyry vs Jerome; "
+              "see the chapter's notes).",
+         refs=[("Daniel", 11, 21), ("Daniel", 11, 31)], videos=[]),
 
     # ---- Revelation 1 ----
     dict(slug="john-of-patmos", name="John (of Revelation)", kind="person", aliases=["John"],
@@ -1039,6 +1072,12 @@ XREFS = [
     (("Daniel", 1, 7), (17, 5), "renaming — the empire renames to erase; the God of Abraham renamed to bless"),
     (("Daniel", 1, 12), ("Revelation", 2, 10), "ten days of testing — Smyrna's bounded trial speaks Daniel's dialect"),
     (("Daniel", 1, 9), (19, 19), "chesed — covenant kindness, granted this time in a foreign court"),
+    # ---- Daniel 11 ----
+    (("Daniel", 11, 30), (10, 4), "Kittim — Javan's son in the Table of Nations, grown into Rome: the ships that turn a king"),
+    (("Daniel", 11, 16), (17, 8), "the Beautiful Land — the everlasting possession of the covenant, a chessboard square between empires"),
+    (("Daniel", 11, 41), (19, 37), "Edom, Moab, and Ammon — Lot's cave-born kin, still next door at history's end"),
+    (("Daniel", 11, 26), ("Daniel", 1, 8), "pat-bag — the king's portion Daniel refused, breaking a king at his own table"),
+    (("Daniel", 11, 8), ("Daniel", 1, 2), "gods and vessels carried captive — the trophy-theology of the exile's first verse, replayed between pagans"),
     # ---- Genesis 20 ----
     ((20, 2),  (12, 13), "the wife-sister ruse — Egypt's script replayed at Gerar, the Bible's most famous doublet"),
     ((20, 4),  (18, 25), "'will you kill a nation even though righteous?' — the pagan king files Abraham's own brief"),
@@ -1188,6 +1227,7 @@ VERSE_OF_DAY = [
     ("Revelation", 1, 17, "The vision-word to Abram, spoken again at the canon's last vision: do not be afraid."),
     ("Revelation", 2, 10, "Smyrna's charge — kept to the letter, two generations on, by its own bishop Polycarp."),
     ("Daniel", 1, 8, "The quiet verb the whole book stands on: Daniel set on his heart."),
+    ("Daniel", 11, 32, "The chapter's hinge between empires and martyrs: the people who know their God stand firm."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1271,6 +1311,7 @@ CHRON_ERAS = [
     ("postflood",  "After the Flood"),
     ("patriarchs", "The Patriarchs"),
     ("exile",      "The Exile"),
+    ("intertestament", "Between the Testaments"),
     ("gospels",    "The Gospels"),
     ("apostolic",  "The Apostolic Age"),
 ]
@@ -1339,6 +1380,9 @@ CHRON_CHAPTERS = {
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
+    "dan11": dict(era="exile",
+                  when="The angel's scroll of wars — from Persia through Alexander to the abomination that desolates.",
+                  clock="The vision stands in Cyrus's first Persian years (ch. 10 dates it ~536 BC) and sweeps 370 years forward — to Antiochus IV's desecration, 15 Kislev 167 BC. Where its accuracy stops (v40) is the hinge of the whole dating debate."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1393,6 +1437,10 @@ CHRON_EVENTS = [
     dict(era="exile", am="—", trad="539 BC", event="Babylon falls to Cyrus — 'and Daniel continued until the first year of King Cyrus'",
          note="The exile's terminus, posted at its start (Daniel 1:21); pinned outside the Bible by the Nabonidus Chronicle and the Cyrus Cylinder.",
          ref=("Daniel", 1, 21)),
+    # -- Between the Testaments --
+    dict(era="intertestament", am="—", trad="167 BC", event="The abomination that desolates — Antiochus IV halts the daily offering; an altar to Zeus on the altar of burnt offering",
+         note="1 Maccabees 1:54 dates it to 15 Kislev, 167 BC, quoting Daniel 11:31's own phrase. Whether Daniel foresees or records the day is the book's great dating question — both readings, at full strength, on the chapter page. The temple was rededicated three years later (Hanukkah, 164 BC).",
+         ref=("Daniel", 11, 31)),
     # -- The Gospels --
     dict(era="gospels", am="—", trad="c. AD 26–29", event="The Baptist at the Jordan; the Word made flesh; the first disciples", ref=("John", 1, 29)),
     dict(era="gospels", am="—", trad="c. AD 27–28", event="The first sign at Cana; the temple cleared at the first Passover",

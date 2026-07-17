@@ -87,6 +87,7 @@ CHAPTERS = [
     ("rev1", "Revelation", 1, "The unveiling begins — Patmos, the Lord's day, one like a son of man among the lampstands, and the Alpha and the Omega."),
     ("rev2", "Revelation", 2, "The letters begin — Ephesus's lost first love, Smyrna's crown, Satan's throne at Pergamum, and Jezebel of Thyatira."),
     ("dan1", "Daniel", 1, "Babylon takes its first captives — four renamed youths, a ten-day test of vegetables and water, and 'ten hands better' than the magicians."),
+    ("dan11", "Daniel", 11, "The angel's scroll of wars — Persia, Alexander, the kings of south and north, the abomination that desolates — and the seam where history becomes hope."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
