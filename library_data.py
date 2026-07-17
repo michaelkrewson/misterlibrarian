@@ -259,6 +259,21 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Proverbs 1 (Hebrew) ----
+    ("mashal", "mashal", "מָשָׁל", "mashal",
+     "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
+    ("chokhmah", "chokhmah", "חָכְמָה", "chokhmah",
+     "Wisdom — but skill, not just intellect: the same word names the CRAFTSMANSHIP of the tabernacle artisans (Exodus 31). In Proverbs it is skill for living rightly, and in 1:20 it stands up as a woman, 'Wisdom' personified, crying in the streets — the Lady Wisdom who reaches her full height in chapter 8.", (1, 2)),
+    ("musar", "musar", "מוּסָר", "musar",
+     "Instruction — with an edge of DISCIPLINE: correction that costs, the training a parent gives and a fool despises (1:7, 8). KJV 'instruction'; NIV 'discipline'; the word carries both, the lesson AND the rod behind it.", (1, 2)),
+    ("yirat-yhwh", "yirat Jehovah", "יִרְאַת יְהוָה", "yirat Jehovah",
+     "'The fear of Jehovah' — the motto and refrain of Proverbs: 'the beginning of knowledge' (1:7), 'the beginning of wisdom' (9:10). Not fright but reverent awe — the posture the angel found in Abraham at the altar, 'now I know you fear God' (Genesis 22:12). ASV reads 'the fear of Jehovah' with this translation; KJV prints its small-caps divine name in the slot.", (1, 7)),
+    ("ormah", "ormah", "עָרְמָה", "ormah",
+     "Shrewdness, prudence — the survival-craft Wisdom gives the naive (1:4). Its root is the serpent's: the snake of Genesis 3:1 was arum, 'crafty' (KJV 'subtil'), and KJV renders THIS word 'subtilty' too — the same cunning that ruined Eden, redeemed here into the sense that keeps the simple alive.", (1, 4)),
+    ("peti", "peti", "פֶּתִי", "peti",
+     "The simple one — from a root meaning 'open': the wide-open, gullible, un-made-up mind, easily persuaded either way (plural petayim, 1:4, 22). Not stupid — UNFORMED; Proverbs' prime student, and prime target for the sinner's enticement (the same root as patah, 'to entice,' 1:10). KJV 'the simple.'", (1, 4)),
+    ("kesil-evil-lets", "kesil / evil / lets", "כְּסִיל / אֱוִיל / לֵץ", "kesil / evil / lets",
+     "Proverbs' gallery of fools — three distinct kinds, kept distinct in this translation: the EVIL (1:7), the moral fool who despises wisdom; the KESIL (1:22), the thick, dull fool, complacent (KJV 'fool' for both); and the LETS (1:22), the SCOFFER, the cynic who mocks all correction (KJV 'scorner') — the hardest case, past teaching. Hebrew has a whole thesaurus for folly, and chapter 1 opens the drawer.", (1, 22)),
     # ---- Genesis 22 (Hebrew) ----
     ("hineni", "hineni", "הִנֵּנִי", "hineni",
      "'Here I am' — the word of total availability, sounded three times in the Aqedah: to God (22:1), to Isaac (22:7), and to the angel at the knife (22:11). Not a report of location but of readiness — the same answer Moses gives at the bush and Isaiah before the throne ('here I am, send me'). KJV 'Here am I.'", (22, 1)),
@@ -992,7 +1007,7 @@ ENCYCLOPEDIA = [
               "losing a beauty contest to a wildflower: 'not even Solomon, in all his glory, was clothed like "
               "one of these' (Matthew 6:29). Matthew's opening genealogy runs the royal line through him "
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
-         refs=[("Matthew", 6, 29)], videos=[]),
+         refs=[("Proverbs", 1, 1), ("Matthew", 6, 29)], videos=[]),
 
     # ---- Genesis 22 ----
     dict(slug="moriah", name="Moriah", kind="place", aliases=["Moriah"],
@@ -1229,6 +1244,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Proverbs 1 (cross-book) ----
+    (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
+    (("Proverbs", 1, 7), (22, 12), "'the fear of Jehovah' — the reverent awe the angel found in Abraham at the altar: 'now I know that you fear God'"),
+    (("Proverbs", 1, 4), (3, 1),   "ormah, 'shrewdness' — the serpent's own craft (arum, 'subtil'), redeemed into the survival-sense Wisdom gives the simple"),
+    (("Proverbs", 1, 10), ("Jeremiah", 20, 7), "patah, 'entice' — the seduction the sinners offer the son, the same verb Jeremiah threw at heaven: 'you enticed me, Jehovah'"),
+
     # ---- Genesis 22 ----
     ((22, 2),  (12, 1),  "lekh-lekha, 'go, you yourself' — the emphatic doubled command that appears exactly twice in the Torah, both to Abraham: leave your land (12:1), and go to Moriah (22:2)"),
     ((22, 2),  (14, 18), "the land of Moriah — the Temple Mount (2 Chr 3:1), the hill of Melchizedek's Salem (14:18) drawn into what would become Jerusalem"),
@@ -1550,6 +1571,8 @@ VERSE_OF_DAY = [
     (21, 17, "God hears the boy 'there where he is' — Ishmael's name paid as an event in the wilderness."),
     (22, 8, "The Aqedah's center: 'God will see to the lamb for himself' — the seeing that will name the mountain."),
     (22, 14, "Abraham names the place Jehovah-Yireh — 'on the mount of Jehovah, it is seen to': the hill of the future Temple."),
+    ("Proverbs", 1, 7, "The motto the whole book is tuned to: the fear of Jehovah is the beginning — and the chief part — of knowledge."),
+    ("Proverbs", 1, 33, "Wisdom's last, quiet promise: whoever listens will dwell secure — safety not from trouble, but from fear."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1632,6 +1655,7 @@ CHRON_ERAS = [
     ("flood",      "The Flood"),
     ("postflood",  "After the Flood"),
     ("patriarchs", "The Patriarchs"),
+    ("monarchy",   "The Kingdom"),
     ("exile",      "The Exile"),
     ("intertestament", "Between the Testaments"),
     ("gospels",    "The Gospels"),
@@ -1705,6 +1729,9 @@ CHRON_CHAPTERS = {
     "gen20": dict(era="patriarchs",
                   when="Gerar — the sister-ruse replayed; Abimelech's dream; the Bible's first 'prophet.'",
                   clock="AM 2047–2048 · c. 1897 BC traditional — between Sodom's fall and Isaac's birth, which is one verse away."),
+    "prov1": dict(era="monarchy",
+                  when="The prologue to Proverbs — the purpose of wisdom, a father's first warning, and Wisdom crying aloud in the streets.",
+                  clock="Attributed to Solomon, son of David (reigned c. 970–931 BC) — the wisdom gathered at Israel's royal court, though the book collects sayings from several hands across the monarchy. Wisdom literature keeps no calendar of its own: this is timeless counsel filed under the king who made the court famous for it."),
     "jer20": dict(era="exile",
                   when="Pashhur puts Jeremiah in the stocks; the prophet renames him Terror-All-Around, names Babylon at last — and curses the day he was born.",
                   clock="c. 605–598 BC, Jehoiakim's Jerusalem — after Carchemish (Babylon is finally named as the exile's destination, five times in three verses), before the first deportation arrives to prove it."),
@@ -1781,6 +1808,13 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="—", trad="c. 1870s BC?", event="The Aqedah — Abraham binds Isaac on Mount Moriah; the ram in the thicket; the promise sealed by God's own oath",
          note="The altar of Genesis 22 stands on the hill 2 Chronicles 3:1 names as MOUNT MORIAH — the future Temple Mount, where David will buy Araunah's threshing floor and Solomon will build the first Temple (c. 966 BC). Moriah, north of the Jebusite town of Salem/Jebus, is drawn into Jerusalem only when the city expands to build there — so the hill of the binding becomes the city's heart before it wears the name. The year is uncertain: Isaac's age is debated (the midrash makes him 37).",
          ref=("Genesis", 22, 2)),
+    # -- The Kingdom --
+    dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
+         note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",
+         ref=("Proverbs", 1, 1)),
+    dict(era="monarchy", am="—", trad="c. 966 BC", event="Solomon builds the First Temple on Mount Moriah — the hill of the Aqedah becomes the house of Jehovah",
+         note="2 Chronicles 3:1: Solomon built 'on Mount Moriah, on the threshing floor of Ornan the Jebusite' — the very hill where Abraham had bound Isaac (Genesis 22) and where David had raised an altar. The bare height north of the old Jebusite town is now the city's heart, and 'on the mount of Jehovah it is seen to' (Genesis 22:14) has its building. Destroyed by Nebuchadnezzar in 586 BC.",
+         ref=("Genesis", 22, 14)),
     # -- The Exile --
     dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
          note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",

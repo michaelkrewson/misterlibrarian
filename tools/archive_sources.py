@@ -51,6 +51,7 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 MECHON_BOOKS = {
     "01": ("Genesis", 50),
     "11": ("Jeremiah", 52),
+    "28": ("Proverbs", 31),
     "34": ("Daniel", 12),
 }
 
