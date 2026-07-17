@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archive the original-language source texts behind The MiSTeR Translation.
+"""Archive the original-language source texts behind The Mister Translation.
 
 Why this exists: the project translates from two free third-party suppliers —
 Mechon-Mamre (Masoretic Hebrew, https://mechon-mamre.org) and the SBLGNT

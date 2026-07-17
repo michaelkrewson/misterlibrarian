@@ -247,7 +247,7 @@
         else if (act === "share") shareVerse(vrs, verseId);
         else if (act === "image") shareImage(vrs, verseId);
         else if (act === "copytext") {
-          copyText(verseText(vrs) + "\n— " + refOf(verseId) + ", MiSTeR Translation\n" + urlFor(verseId),
+          copyText(verseText(vrs) + "\n— " + refOf(verseId) + ", Mister Translation\n" + urlFor(verseId),
             "Verse copied");
         }
       });
@@ -281,7 +281,7 @@
     var txt = verseText(vrs);
     if (navigator.share) {
       navigator.share({
-        title: ref + " — MiSTeR Translation",
+        title: ref + " — Mister Translation",
         text: txt + "\n— " + ref,
         url: url
       }).catch(function () {}); // user cancelled — ignore
@@ -312,7 +312,7 @@
   }
 
   // Draw the verse + reference onto a themed canvas card (dark bg, gold accent,
-  // the MiSTeR Translation wordmark + domain) sized to the verse's length.
+  // the Mister Translation wordmark + domain) sized to the verse's length.
   function renderCard(text, ref) {
     var S = 2, W = 1080, pad = 96, cw = W - pad * 2;
     var len = text.length;
@@ -417,7 +417,7 @@
       shareBtn.addEventListener("click", function () {
         withBlob(function (b) {
           navigator.share({ files: [new File([b], fname, { type: "image/png" })],
-            title: ref + " — MiSTeR Translation" }).catch(function () {});
+            title: ref + " — Mister Translation" }).catch(function () {});
         });
       });
       row.appendChild(shareBtn);
@@ -538,7 +538,7 @@
     });
     box.querySelector(".cn-share").addEventListener("click", function () {
       var url = location.origin + PATH;
-      var title = BC.book + " " + BC.ch + " — MiSTeR Translation";
+      var title = BC.book + " " + BC.ch + " — Mister Translation";
       if (navigator.share) navigator.share({ title: title, url: url }).catch(function () {});
       else copyText(url, "Chapter link copied");
     });
