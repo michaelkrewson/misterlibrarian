@@ -340,6 +340,17 @@ DICTIONARY = [
      "Pestilence — the third leg of Jeremiah's drumbeat triad, SWORD–FAMINE–PESTILENCE, which tolls through the book from 21:7 on (some fifteen times). The same word names the Exodus cattle-plague; in the siege oracles it is the death that needs no army.", ("Jeremiah", 21, 6)),
     ("zeroa-netuyah", "zeroa netuyah", "זְרוֹעַ נְטוּיָה", "zeroa netuyah",
      "'Outstretched arm' — the redemption formula: 'a mighty hand and an outstretched arm' is how Deuteronomy says Israel was brought out of Egypt, repeated like a creed. Jeremiah 21:5 turns it around — 'I myself will fight AGAINST you with an outstretched hand and with a strong arm': the most chilling diplomatic note in the book.", ("Jeremiah", 21, 5)),
+    # ---- Jeremiah 22 (Hebrew) ----
+    ("hoy", "hoy", "הוֹי", "hoy",
+     "A cry that does double duty in this chapter — and the Hebrew makes both edges sound alike. It is the prophet's 'WOE!', the funeral-toll flung at the living: 'HOY, him who builds his house without righteousness' (22:13). But hoy is ALSO the wail cried OVER a corpse — 'Alas (hoy), my brother! … Alas (hoy), lord!' (22:18) — the customary lament. So the woe that opens over Jehoiakim alive is the very cry his death will be denied: he gets the prophet's hoy, never the mourners'. KJV 'Woe' in v13, 'Ah!' in v18 — the same word.", ("Jeremiah", 22, 13)),
+    ("chotam", "chotam", "חוֹתָם", "chotam",
+     "A SIGNET — the engraved seal-ring pressed into wax or clay to stamp a document with a king's authority (the same word for the seals archaeologists dig up as clay bullae). To be God's signet 'on my right hand' (22:24) is to carry delegated royal power itself; to be 'torn off' it is to be un-authorized, decommissioned. The image is deliberately reversed for Coniah's own grandson: 'I will make you like a SIGNET, for I have chosen you,' God tells Zerubbabel (Haggai 2:23) — the ring pressed back onto the cursed line.", ("Jeremiah", 22, 24)),
+    ("ariri", "ariri", "עֲרִירִי", "ariri",
+     "'Childless / stripped' — the sentence on Coniah, 'write this man ariri' (22:30). Not that he had no children (he fathered seven sons in exile, 1 Chronicles 3:17) — the verse defines its own sense in the next line: childless AS TO THE THRONE, 'for none of his seed will prosper, sitting on the throne of David.' The root sense is 'stripped bare' (Genesis 15:2, Abram 'goes childless'). KJV/NWT both 'childless'; the qualification, not the word, is where the whole puzzle of the messianic line turns.", ("Jeremiah", 22, 30)),
+    ("betsa", "betsa", "בֶּצַע", "betsa",
+     "Dishonest gain, unjust profit — from a root meaning 'to cut off (a piece for oneself).' Jehoiakim's 'eyes and heart are on nothing but your betsa' (22:17): the greed that builds a cedar palace on unpaid labor. It is the disqualifying vice of a ruler (the corrupt judges 'turn aside after betsa,' 1 Samuel 8:3) — the exact opposite of the father who 'judged the cause of the poor and needy' (22:16). KJV 'covetousness.'", ("Jeremiah", 22, 17)),
+    ("moledet", "moledet", "מוֹלֶדֶת", "moledet",
+     "Native land, kindred, birthplace — 'the land of his birth (erets moladto)' that exiled Shallum will never see again (22:10). It is Abram's word, the thing the call told him to LEAVE: 'go from your land and your moledet and your father's house' (Genesis 12:1). Abraham surrendered his homeland by promise and gained a nation; the last kings lose theirs by force and gain a grave in a foreign land — the call run backward.", ("Jeremiah", 22, 10)),
     # ---- Daniel 12 (Hebrew) ----
     ("zohar", "zohar", "זֹהַר", "zohar",
      "'Radiance, shining' — Daniel 12:3's wise 'shine like the SHINING of the vault' (yazhiru ke-zohar, the cognate kept). Rare: only here and Ezekiel 8:2. Eight centuries later the masterwork of Jewish mysticism took its title from this verse's word — the Zohar, 'Radiance.'", ("Daniel", 12, 3)),
@@ -833,7 +844,7 @@ ENCYCLOPEDIA = [
               "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
               "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -1299,6 +1310,54 @@ ENCYCLOPEDIA = [
               "destruction ash.",
          refs=[("Jeremiah", 21, 1)], videos=[]),
 
+    # ---- Jeremiah 22 ----
+    dict(slug="josiah", name="Josiah", kind="person", aliases=["Josiah"],
+         desc="The last good king of Judah (reigned c. 640–609 BC) — crowned at eight, who purged the idols and, "
+              "when the lost scroll of the Law was found in the temple during his repairs (2 Kings 22), tore his "
+              "robes and led the deepest reform in Judah's history. Jeremiah's ministry began in his thirteenth "
+              "year (Jeremiah 1:2), and it is Josiah the prophet holds up in this chapter as the yardstick for his "
+              "own sons: 'Your father — did he not eat and drink, AND do justice and righteousness? … He judged the "
+              "cause of the poor and needy … Is that not to know me?' (22:15-16). His death was the hinge of the "
+              "age: he rode out to stop Pharaoh Necho at Megiddo and was killed (609 BC), and within a generation "
+              "everything he had built came down. He is the 'dead' of 22:10, mourned — while his sons are the ones "
+              "to weep over.",
+         refs=[("Jeremiah", 22, 15), ("Jeremiah", 22, 16)], videos=[]),
+    dict(slug="shallum-jehoahaz", name="Shallum (Jehoahaz)", kind="person", aliases=["Shallum", "Jehoahaz"],
+         desc="Josiah's son, the first of his heirs to fall — known by his personal name SHALLUM (22:11) and his "
+              "throne-name JEHOAHAZ. The people made him king after Josiah died at Megiddo, but he reigned only "
+              "three months: Pharaoh Necho, returning south, deposed him, fined the land, and carried him to Egypt "
+              "in chains, setting his brother Jehoiakim on the throne instead (2 Kings 23:31-34). Jeremiah's word "
+              "over him is the chapter's opening dirge — 'weep not for the dead, weep for the one who goes away, "
+              "for he will return no more, nor see the land of his birth' (22:10-12). He died in Egypt, the first "
+              "Davidic king to end his days a foreign prisoner, and the pattern for the two who would follow.",
+         refs=[("Jeremiah", 22, 11)], videos=[]),
+    dict(slug="jehoiakim", name="Jehoiakim", kind="person", aliases=["Jehoiakim"],
+         desc="Josiah's son Eliakim, renamed JEHOIAKIM by Pharaoh Necho, who put him on the throne after deposing "
+              "his brother Jehoahaz (2 Kings 23:34) — an Egyptian puppet who became a Babylonian vassal after "
+              "Carchemish (605), then rebelled. Jeremiah's woe against him (22:13-19) is scorching: he built a "
+              "cedar-and-vermilion palace with UNPAID labor, 'his eyes and heart on nothing but dishonest gain.' "
+              "He is the king who, in one of the Bible's most vivid scenes, sat by his brazier and personally "
+              "sliced Jeremiah's dictated scroll column by column into the fire (Jeremiah 36:23) — so his sentence "
+              "is the anti-funeral: no mourner's 'Alas!', 'the burial of a donkey, dragged and flung beyond the "
+              "gates.' (Kings and Chronicles are quieter about his actual death; the oracle stands as the verdict "
+              "pronounced.) His eleven-year reign spent Judah's last chance.",
+         refs=[("Jeremiah", 22, 18), ("Jeremiah", 22, 13)], videos=[]),
+    dict(slug="jehoiachin", name="Jehoiachin (Coniah / Jeconiah)", kind="person", aliases=["Coniah", "Jehoiachin", "Jeconiah"],
+         desc="Jehoiakim's son, three names for one doomed boy-king: JEHOIACHIN (his full name), JECONIAH, and the "
+              "clipped, almost contemptuous CONIAH that Jeremiah uses here (22:24, 28). Eighteen years old, three "
+              "months on the throne, when Nebuchadnezzar took Jerusalem in the first great deportation (597 BC) "
+              "and carried him to Babylon with the treasures and the craftsmen and ten thousand captives — the "
+              "exile Ezekiel and the young Daniel's world. Jeremiah's oracle strips him of authority in one image: "
+              "even were he 'a signet on my right hand, yet from there I would tear you off,' and 'write this man "
+              "childless.' Yet the curse is throne-deep, not blood-deep: he fathered seven sons in exile (1 "
+              "Chronicles 3:17), was released from prison and given a seat at the Babylonian king's table thirty-"
+              "seven years later (2 Kings 25:27-30) — a mercy corroborated by the excavated BABYLON RATION "
+              "TABLETS, which list oil and grain for 'Ya'u-kinu, king of Judah' and his sons by name. His grandson "
+              "Zerubbabel is handed the signet back (Haggai 2:23), and both Gospel genealogies of the Messiah pass "
+              "through his line — the king 'written childless' as to David's old throne became an ancestor of the "
+              "one who inherits a greater one.",
+         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28)], videos=[]),
+
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
          desc="'Who is like God?' — an angel named after a rhetorical question, mi-kha-El, whose answer is NO "
@@ -1621,6 +1680,12 @@ XREFS = [
     (("Jeremiah", 21, 12), (18, 19), "'to do righteousness and justice' — Abraham's brief; the house of David measured against it: render justice in the morning"),
     (("Jeremiah", 21, 13), (11, 5), "'Who shall come down against us?' — Babel's page already answered the fortified boast: 'Jehovah came down'"),
     (("Jeremiah", 21, 7), ("Daniel", 1, 1), "the same king, two spellings, two sieges — Daniel's opening is Nebuchadnezzar's first visit (605); this oracle is his last (588)"),
+    # ---- Jeremiah 22 ----
+    (("Jeremiah", 22, 5), (22, 16), "'By myself I have sworn' — bi nishbati, verbatim: the self-oath that once SEALED the blessing to Abraham on Moriah now seals the palace's ruin if it will not do justice"),
+    (("Jeremiah", 22, 21), (22, 18), "'you have not obeyed my voice' — the exact reverse of the reason Abraham was blessed, 'because you obeyed my voice': the royal house is the anti-Abraham"),
+    (("Jeremiah", 22, 16), ("Proverbs", 1, 7), "'is that not to know me?' — da'at: justice for the poor IS the knowledge of God, the very word the fear of Jehovah is 'the beginning of'"),
+    (("Jeremiah", 22, 10), (12, 1), "moledet, 'the land of his birth' — Abram was called to LEAVE his homeland and gained a nation; the exiled king loses his by force and never sees it again"),
+    (("Jeremiah", 22, 7), ("Jeremiah", 21, 14), "the choicest cedars felled and burned — the fire promised for the palace's cedar 'forest' (the House of the Forest of Lebanon) one chapter back"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1770,6 +1835,8 @@ VERSE_OF_DAY = [
     ("Proverbs", 1, 33, "Wisdom's last, quiet promise: whoever listens will dwell secure — safety not from trouble, but from fear."),
     ("Exodus", 2, 10, "The rescue funded from Pharaoh's own house: the princess names him Moses — 'because I drew him out of the water.'"),
     ("Exodus", 2, 24, "Four verbs turn the whole book: 'God heard… God remembered his covenant… God saw… and God knew.'"),
+    ("Jeremiah", 22, 16, "The prophets' definition of knowing God: 'He judged the cause of the poor and needy… Is that not to know me? declares Jehovah.'"),
+    ("Jeremiah", 22, 29, "The threefold cry, unforgettable in the Hebrew — erets, erets, arets: 'Land! Land! Land! Hear the word of Jehovah!'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1945,6 +2012,9 @@ CHRON_CHAPTERS = {
     "jer21": dict(era="exile",
                   when="Zedekiah's delegation asks for a miracle; the answer is the bleakest in the book — God fights on the siege's side, and life is outside the walls.",
                   clock="588–586 BC, the final siege — the book has jumped seventeen years past ch. 20 (its chapters are filed by theme and catchword, not by calendar). The city and its cedar 'forest' burn in the summer of 586."),
+    "jer22": dict(era="exile",
+                  when="The tariff of the last four kings — Shallum carried to Egypt, Jehoiakim's donkey-burial, Coniah the signet torn off; 'is that not to know me?' and 'write this man childless.'",
+                  clock="Delivered across Jehoiakim's reign (c. 609–598 BC), with its Coniah oracle reaching the deportation of 597 — the chapter surveys Josiah's dead and his three heirs in turn: Jehoahaz already in Egypt, Jehoiakim reigning, and Jehoiachin's fall previewed. The kings run in the reverse of Abraham: called out of their homeland by force, not promise."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -2039,6 +2109,9 @@ CHRON_EVENTS = [
     dict(era="exile", am="—", trad="c. 605–598 BC", event="Jeremiah in the stocks — Pashhur renamed Terror-All-Around; Babylon named as the exile's destination",
          note="The first recorded violence against Jeremiah: a night in the 'twister' at the upper Benjamin Gate, for the sermon preached over the valley of Ben-Hinnom. The oracle that followed is the first in the book to say 'Babylon' out loud — five times in three verses — and the confession after it ('You enticed me… a burning fire shut up in my bones… cursed be the day I was born') is the rawest prayer in the prophets.",
          ref=("Jeremiah", 20, 7)),
+    dict(era="exile", am="—", trad="597 BC", event="The first great deportation — Jehoiachin (Coniah), eighteen and three months on the throne, carried to Babylon; the signet torn off",
+         note="Nebuchadnezzar takes Jerusalem the first time (2 Kings 24:10-16) and deports the boy-king Jehoiachin with the treasures, the craftsmen, and ten thousand captives — Ezekiel and the exile community among them; Jeremiah's tariff of kings (ch. 22) ends on his sentence, 'though Coniah were a signet on my right hand, yet would I tear you off… write this man childless.' The Babylonian Chronicle dates the city's fall to 2 Adar (16 March 597), and the excavated palace RATION TABLETS list grain and oil for 'Ya'u-kinu, king of Judah' — the deposed king, alive in Babylon, named in the archive of his captor.",
+         ref=("Jeremiah", 22, 24)),
     dict(era="exile", am="—", trad="588–586 BC", event="The final siege of Jerusalem — Zedekiah's delegation told: the city goes to the fire; life is outside the walls",
          note="Nebuchadrezzar's armies close on the city; the king's last-ditch embassy asks for an Exodus-style wonder and hears the Exodus formula aimed inward — 'I myself will fight against you with an outstretched hand and a strong arm' (Jeremiah 21:5). The city and temple burned in the summer of 586 (2 Kings 25:8-9); the Lachish ostraca — Judean military letters scratched during this very campaign, dug from the gate-room ash — carry the panic contemporaneously.",
          ref=("Jeremiah", 21, 5)),
