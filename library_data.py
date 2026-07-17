@@ -259,6 +259,17 @@ DICTIONARY = [
      "Javan's son in the Table of Nations (Genesis 10:4) — Cyprus (Kition) first, then the whole Greek west, and by Daniel 11:30 the newest western sea-power: ROME, whose ships turn Antiochus back (the Dead Sea Scrolls read Kittim as the Romans too). KJV 'Chittim'; NIV translates the name away as 'western coastlands.'", (10, 4)),
     ("ketiv-qere", "ketiv / qere", "כְּתִיב / קְרֵי", "ketiv / qere",
      "'Written' / 'read' — the Masoretes' double track: where tradition READ a word differently than the consonants WRITE it, they left the written letters in the column and set the reading beside them. Daniel 11 shows several (vv 10, 12, 18, 39 — an unpointed word beside its pointed twin in the Hebrew column here). The manuscript's own honesty, kept.", ("Daniel", 11, 10)),
+    # ---- Genesis 22 (Hebrew) ----
+    ("hineni", "hineni", "הִנֵּנִי", "hineni",
+     "'Here I am' — the word of total availability, sounded three times in the Aqedah: to God (22:1), to Isaac (22:7), and to the angel at the knife (22:11). Not a report of location but of readiness — the same answer Moses gives at the bush and Isaiah before the throne ('here I am, send me'). KJV 'Here am I.'", (22, 1)),
+    ("aqad", "aqad", "עָקַד", "aqad",
+     "To bind — the verb of Genesis 22:9, 'he BOUND Isaac his son,' and it occurs ONLY this once in all of scripture. Yet from this one word Jewish tradition names the whole episode the Aqedah, 'the Binding' — memory resting on the binding, not the near-killing. KJV 'bound.'", (22, 9)),
+    ("ahav", "ahav", "אָהַב", "ahav",
+     "To love — and its FIRST appearance in the Bible is Genesis 22:2, 'your son, your only one, whom you LOVE.' Love enters scripture at the exact moment it is asked to be surrendered. The Greek Bible softened yachid ('only one') to agapēton, 'beloved' — the very word the voice at Jesus' baptism will use of a son.", (22, 2)),
+    ("yhwh-yireh", "Jehovah-Yireh", "יְהוָה יִרְאֶה", "Jehovah yireh",
+     "'Jehovah sees / provides' — the name Abraham gives Moriah after the ram (22:14), sealing the chapter's pun: yireh (he will see to it, v8) and yera'eh (it is seen to, v14) are one root, ra'ah, 'to see.' English 'provide' carries the same logic (Latin pro-videre, 'to see ahead'). It joins Hagar's El Roi, 'the God who sees' (16:13). KJV 'Jehovah-jireh.'", (22, 14)),
+    ("yachid", "yachid", "יָחִיד", "yachid",
+     "'Only one, only child' — 'take your son, your ONLY ONE' (22:2, 12, 16). Ishmael was sent away one chapter before, so Isaac is now the only son of the covenant; the word also means 'darling, precious' (Psalm 22:20 uses it for one's own life). KJV 'only son'; the Septuagint's agapēton, 'beloved,' set up the baptism echo.", (22, 2)),
     # ---- Genesis 21 (Hebrew) ----
     ("paqad", "paqad", "פָּקַד", "paqad",
      "To visit, attend to — for good or for ill: 'Jehovah VISITED Sarah' with a son (Genesis 21:1; KJV 'visited'), and the same verb 'visits' Jerusalem's doings upon her in judgment (Jeremiah 21:14). The Bible's word for God turning his attention toward someone — what happens next depends on the ledger.", (21, 1)),
@@ -475,7 +486,9 @@ ENCYCLOPEDIA = [
               "from Zoar's presumed site, spared in the account, did not burn.",
          refs=[(10, 19), (13, 10), (13, 12), (13, 13), (18, 20), (19, 24), (19, 28)],
          videos=[("Sodom burned—Zoar did NOT: the full story of the discovery of the Cities of the Plain",
-                  "https://www.youtube.com/watch?v=QjPcSQUY2W0")],
+                  "https://www.youtube.com/watch?v=QjPcSQUY2W0"),
+                 ("Sulfur Balls of Sodom and Gomorrah",
+                  "https://www.youtube.com/watch?v=jQl4KaRtef8")],
          coords=(31.8402, 35.6737, 0.4), approx=True,
          modern="Tall el-Hammam, Jordan, in the eastern Jordan Valley"),
     dict(slug="ur", name="Ur of the Chaldeans", kind="place",
@@ -575,7 +588,7 @@ ENCYCLOPEDIA = [
               "Amorite ally of Abram's named in the very next chapter (14:13, 24) — the place and the man are not "
               "shown to be connected beyond sharing the name, the same double-use already flagged at Haran. Here, "
               "in the heat of the day, the three visitors arrive and Isaac is promised within the year (18:1-15).",
-         refs=[(13, 18), (18, 1)], videos=[],
+         refs=[(13, 18), (18, 1)], videos=[("MAMRE — Where God Appeared to Abraham!", "https://www.youtube.com/watch?v=WzunDBINbS4")],
          coords=(31.5566, 35.1027, 0.15), approx=True,
          modern="Ramat el-Khalil, just north of Hebron, West Bank"),
 
@@ -763,13 +776,18 @@ ENCYCLOPEDIA = [
                   "https://www.youtube.com/watch?v=N0opJ2qGQs4")]),
     dict(slug="jerusalem", name="Jerusalem", kind="place", aliases=["Jerusalem"],
          desc="The holy city — entered by name in this translation's published chapters at John 2:13, though its "
-              "story here is far older: Genesis 14's SALEM, Melchizedek's city, is traditionally identified with "
-              "it (Psalm 76:2 makes the equation), and the war of the kings marched past its gates. In John, "
-              "Jesus goes up for the festivals — three Passovers structure the Gospel — and clears the temple's "
-              "courts at the first of them (2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its "
-              "temple vessels and its brightest youths (Daniel 1:1-6). The city of the temple, the exile, the "
-              "passion — and, in Revelation's last vision, the descending New Jerusalem with no temple in it at "
-              "all (Rev 21:22).",
+              "story here is far older, and it wore other names first. Its heart, the Temple Mount, is the MORIAH "
+              "of Genesis 22 (see that entry): the hill of the Aqedah, drawn into the city only when David and "
+              "Solomon expanded it northward to build the Temple. The nearby town of the patriarchs' day is SALEM, "
+              "Melchizedek's city (Genesis 14:18), traditionally identified with Jerusalem (Psalm 76:2 makes the "
+              "equation); the Jebusites called it JEBUS (Judges 19:10); and the name Jerusalem itself (Urusalim) "
+              "appears in the Amarna letters of about 1400 BC — so the city was named centuries before Israel "
+              "held it. David took the Jebusite stronghold and made it his capital (2 Samuel 5); Solomon built "
+              "the first Temple on Moriah, c. 966 BC (2 Chronicles 3:1). In John, Jesus goes up for the festivals "
+              "— three Passovers structure the Gospel — and clears the temple's courts at the first of them "
+              "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
+              "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
+              "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
          refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
@@ -875,7 +893,7 @@ ENCYCLOPEDIA = [
               "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
               "later be his home (24:62; 25:11).",
-         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10)], videos=[]),
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -976,6 +994,49 @@ ENCYCLOPEDIA = [
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
          refs=[("Matthew", 6, 29)], videos=[]),
 
+    # ---- Genesis 22 ----
+    dict(slug="moriah", name="Moriah", kind="place", aliases=["Moriah"],
+         desc="'The land of Moriah,' where Abraham was sent to bind Isaac (22:2) — and one of the most "
+              "consequential place-names in scripture, because the word appears in only TWO verses in the "
+              "whole Hebrew Bible. The other is 2 Chronicles 3:1: 'Solomon began to build the house of "
+              "Jehovah in Jerusalem, on MOUNT MORIAH, where Jehovah had appeared to David his father, at the "
+              "place David had prepared, on the threshing floor of Ornan the Jebusite.' So the Bible itself "
+              "sets the altar of the Aqedah on the future Temple Mount. The chain runs: Abraham's altar "
+              "(Genesis 22) → the threshing floor of Araunah/Ornan the Jebusite, bought by David for an "
+              "altar after the plague (2 Samuel 24; 1 Chronicles 21) → Solomon's Temple, c. 966 BC (2 "
+              "Chronicles 3:1) → the Second Temple → the platform standing today. Abraham's own name for the "
+              "spot, Jehovah-Yireh ('on the mount of Jehovah it is seen to,' 22:14), reads across the "
+              "centuries as a saying about this one hill. "
+              "A note on the NAME of the city: at the Aqedah the place is not yet 'Jerusalem.' The nearby "
+              "town is Salem, whose king Melchizedek Abraham had already met (14:18; Psalm 76:2 sets God's "
+              "dwelling 'in Salem'); the Jebusites called their city Jebus (Judges 19:10); and the name "
+              "Jerusalem itself (Urusalim) surfaces in the Amarna letters of about 1400 BC, after the "
+              "patriarchs. Moriah was a bare height NORTH of the walled Jebusite city — which is why a "
+              "threshing floor stood there, out in the wind above the town — and it was only drawn INTO "
+              "Jerusalem when David and Solomon expanded the city northward to build the Temple. So the hill "
+              "of Genesis 22 became the heart of Jerusalem before it wore that name. "
+              "Honest caveats: the identification with the Temple Mount rests on the Chronicler (2 "
+              "Chronicles 3:1) and Jewish tradition — a biblical-internal link, made explicit only "
+              "centuries later; and the Samaritan tradition instead locates the binding at Mount Gerizim "
+              "(their Pentateuch reads the name differently). The etymology of 'Moriah' is itself uncertain — "
+              "the chapter plays it as 'seeing' (ra'ah), but 'place of teaching' (yarah) and 'myrrh' (mor) "
+              "have all been proposed.",
+         refs=[(22, 2), (22, 14)],
+         coords=(31.7780, 35.2354, 0.06),
+         modern="The Temple Mount / Haram al-Sharif, Old City of Jerusalem",
+         videos=[("The Temple Mount — Where it IS. Where it ISN'T. What is it FOR?",
+                  "https://www.youtube.com/watch?v=IrqRoLxa178")]),
+    dict(slug="rebekah", name="Rebekah", kind="person", aliases=["Rebekah"],
+         desc="Isaac's future wife — named, almost in passing, in the genealogical coda to the Aqedah: "
+              "'Bethuel fathered Rebekah' (22:23), the last of the eight sons and one granddaughter Milcah "
+              "bore to Abraham's brother Nahor, back in the old country. The chapter that nearly ended the "
+              "line of promise closes by quietly naming the woman who will carry it on — two chapters before "
+              "Isaac meets her. When the servant is sent to find her (ch. 24), she is the decisive one: 'I "
+              "will go' (24:58); at the well she waters ten camels unasked. She bears the twins Esau and "
+              "Jacob, receives the oracle that 'the elder shall serve the younger' (25:23), and engineers "
+              "the blessing to Jacob (ch. 27) — the matriarch who reads the promise better than her husband.",
+         refs=[(22, 23)], videos=[]),
+
     # ---- Genesis 21 ----
     dict(slug="beersheba", name="Beersheba", kind="place", aliases=["Beersheba"],
          desc="'Well of the seven / well of the oath' — the double-named well where Abraham and Abimelech "
@@ -1039,7 +1100,7 @@ ENCYCLOPEDIA = [
               "prophet begged him not to make brought the final siege (588–586). His end at Riblah is the "
               "book's darkest sentence: his sons killed before his eyes, then his eyes put out — the last "
               "thing he ever saw (39:6-7).",
-         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[]),
+         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[("Exploring Babylon and the Prophecies Against Her", "https://www.youtube.com/watch?v=QtUNHjDmGOY")]),
     dict(slug="pashhur-malchiah", name="Pashhur son of Malchiah", kind="person", aliases=["Pashhur"],
          desc="NOT the Pashhur of the stocks (that was the son of Immer, ch. 20) — a second official of the "
               "same name, sent by Zedekiah during the final siege to ask Jeremiah for a miracle (21:1). The "
@@ -1166,6 +1227,16 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 22 ----
+    ((22, 2),  (12, 1),  "lekh-lekha, 'go, you yourself' — the emphatic doubled command that appears exactly twice in the Torah, both to Abraham: leave your land (12:1), and go to Moriah (22:2)"),
+    ((22, 2),  (14, 18), "the land of Moriah — the Temple Mount (2 Chr 3:1), the hill of Melchizedek's Salem (14:18) drawn into what would become Jerusalem"),
+    ((22, 3),  (21, 14), "'rose early in the morning' — the dawn-habit of Hagar's sending (21:14), now on a far darker morning"),
+    ((22, 13), (21, 19), "Abraham lifted his eyes and saw the ram — as God opened Hagar's eyes and she saw the well: the seeing-thread closing on rescue"),
+    ((22, 14), (16, 13), "Jehovah-Yireh, 'Jehovah sees' — the mountain named for the seeing-God Hagar first named El Roi, 'the God who sees'"),
+    ((22, 17), (15, 5),  "seed like the stars of the heavens — the count Abram was shown on a night long before, now sealed under oath, and joined by the sand"),
+    ((22, 18), (12, 3),  "'in your seed all the nations blessed' — the 12:3 promise, its channel now named and the whole sworn by God himself"),
+    ((22, 18), (21, 12), "'because you listened to my voice' — the phrase of the garden's fall (3:17), turned to obedience (21:12), now the ground of the world's blessing"),
+
     # ---- Genesis 21 ----
     ((21, 6),  (17, 17), "the laughter thread — Abraham laughed face-down at the promise; now Sarah sings it: 'Laughter God has made for me'"),
     ((21, 6),  (18, 12), "Sarah's hidden, fearful laugh inside the tent — paid here as an open one, and a name"),
@@ -1406,10 +1477,10 @@ VIDEO_QUEUE = [
      "https://www.youtube.com/watch?v=ufVXZBrbSsU",
      "The Gospels (the crucifixion narratives)",
      "The case for the crucifixion site; place at the Passion narrative in whichever Gospel is translated first."),
-    ("The Temple Mount--Where it IS. Where it ISN'T. What is it FOR?",
-     "https://www.youtube.com/watch?v=IrqRoLxa178",
-     "1 Kings (Solomon's Temple) and the Gospels (the Second Temple)",
-     "Broad relevance — likely worth entries at both Solomon's Temple and the Gospels/Acts Temple scenes."),
+    # ("The Temple Mount--Where it IS. Where it ISN'T. What is it FOR?"
+    #  — PLACED 2026-07-16 on the MORIAH encyclopedia entry (Genesis 22 = the
+    #  future Temple Mount, 2 Chr 3:1). Still broadly relevant; re-use for
+    #  1 Kings / Solomon's Temple and the Gospels' Temple scenes when those arrive.)
     ("Caesarea: The City that Changed the World!",
      "https://www.youtube.com/watch?v=SNnCtAR_8Q8",
      "Acts (Cornelius, Paul's imprisonment)",
@@ -1475,6 +1546,8 @@ VERSE_OF_DAY = [
     ("Jeremiah", 21, 8, "The Two Ways at their sharpest — the way of life and the way of death, with life outside the walls."),
     (21, 6, "Genesis 21 — the laughter banked since Abraham's face-down laugh finally lands: 'Laughter God has made for me.'"),
     (21, 17, "God hears the boy 'there where he is' — Ishmael's name paid as an event in the wilderness."),
+    (22, 8, "The Aqedah's center: 'God will see to the lamb for himself' — the seeing that will name the mountain."),
+    (22, 14, "Abraham names the place Jehovah-Yireh — 'on the mount of Jehovah, it is seen to': the hill of the future Temple."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1624,6 +1697,9 @@ CHRON_CHAPTERS = {
     "gen21": dict(era="patriarchs",
                   when="Isaac is born and the laughter lands; Hagar's second desert; the well of the oath at Beersheba.",
                   clock="AM 2048 · c. 1896 BC traditional — the promise of 17:21 kept 'at the appointed time,' one year on; Abraham is 100, Sarah 90."),
+    "gen22": dict(era="patriarchs",
+                  when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
+                  clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
     "gen20": dict(era="patriarchs",
                   when="Gerar — the sister-ruse replayed; Abimelech's dream; the Bible's first 'prophet.'",
                   clock="AM 2047–2048 · c. 1897 BC traditional — between Sodom's fall and Isaac's birth, which is one verse away."),
@@ -1700,6 +1776,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="2048", trad="1896 BC", event="Isaac born, 'at the appointed time' — and the laughter lands; Hagar and Ishmael sent to the wilderness of Beersheba",
          note="The child promised for three chapters is born to a hundred-year-old Abraham and a ninety-year-old Sarah, and the name banked since 17:17 is paid: Yitschaq, 'he laughs' (21:6). At the weaning feast the household divides — Hagar's second desert scene closes on the same seeing that named her first (21:19).",
          ref=("Genesis", 21, 2)),
+    dict(era="patriarchs", am="—", trad="c. 1870s BC?", event="The Aqedah — Abraham binds Isaac on Mount Moriah; the ram in the thicket; the promise sealed by God's own oath",
+         note="The altar of Genesis 22 stands on the hill 2 Chronicles 3:1 names as MOUNT MORIAH — the future Temple Mount, where David will buy Araunah's threshing floor and Solomon will build the first Temple (c. 966 BC). Moriah, north of the Jebusite town of Salem/Jebus, is drawn into Jerusalem only when the city expands to build there — so the hill of the binding becomes the city's heart before it wears the name. The year is uncertain: Isaac's age is debated (the midrash makes him 37).",
+         ref=("Genesis", 22, 2)),
     # -- The Exile --
     dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
          note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",

@@ -95,8 +95,9 @@ CHAPTERS = [
     ("jer20", "Jeremiah", 20, "Pashhur and the stocks — the prophet renames his jailer Terror-All-Around, names Babylon at last, confesses the fire shut up in his bones — and curses the day he was born."),
     ("jer21", "Jeremiah", 21, "The final siege — Zedekiah's delegation asks for a miracle and hears the bleakest answer in the book: the Exodus formula aimed inward, the way of life through the enemy camp, and fire for the cedar forest."),
     ("gen21", "Genesis", 21, "Isaac is born and the laughter lands — then Hagar's second desert scene ('God heard the boy, there where he is'), seven ewe-lambs, the well of the oath, and the Everlasting God at a tamarisk."),
+    ("gen22", "Genesis", 22, "The Aqedah — 'take your son, your only one, whom you love': the binding of Isaac on Moriah, the ram in the thicket, the mountain of seeing, and the promise sealed by oath."),
 ]
-NEXT_UP = "Genesis 22"         # (legacy; nav is now book-scoped in nav_strip)
+NEXT_UP = "Genesis 23"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
 
 BOOKS_OT = [("Genesis", 50), ("Exodus", 40), ("Leviticus", 27), ("Numbers", 36),
@@ -328,6 +329,7 @@ _YT_ID_RE = re.compile(r"(?:v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})")
 # it 401s, drop the 11-char id in here.
 NOEMBED_IDS = {
     "8cqBePFD9S4",   # Expedition Bible — "BETHEL: Where Jacob Met God" (embedding disabled)
+    "WzunDBINbS4",   # Expedition Bible — "MAMRE — Where God Appeared to Abraham!" (embedding disabled)
 }
 
 
