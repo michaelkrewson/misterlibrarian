@@ -89,6 +89,7 @@ CHAPTERS = [
     ("dan1", "Daniel", 1, "Babylon takes its first captives — four renamed youths, a ten-day test of vegetables and water, and 'ten hands better' than the magicians."),
     ("dan11", "Daniel", 11, "The angel's scroll of wars — Persia, Alexander, the kings of south and north, the abomination that desolates — and the seam where history becomes hope."),
     ("dan12", "Daniel", 12, "The sleepers in the ground of dust wake — everlasting life named for the first time, the sealed book, two numbers nobody has decoded, and a lot promised at the end of the days."),
+    ("mat5", "Matthew", 5, "The Sermon on the Mount opens in red letters — eight Happy-sayings, salt and light, not one iota, and six rounds of 'You have heard… but I say': anger, lust, oaths, the other cheek, love for enemies."),
 ]
 NEXT_UP = "Genesis 21"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
@@ -949,9 +950,11 @@ chapter is translated, so the library is always exactly as deep as the translati
 
 <h2>Where this library is heading</h2>
 <div class="panel prose">
-  <p><strong>🔴 Red letters.</strong> When this project reaches the Gospels, the words of Jesus will be
-  set in red — the plan is declared now so the convention is ready the day Matthew begins. (The Hebrew
-  Bible's direct divine speech stays in ordinary type, as in nearly all red-letter editions.)</p>
+  <p><strong>🔴 Red letters — live.</strong> The recorded words of Jesus are set in red — a promise
+  declared on this page "so the convention is ready the day Matthew begins," and kept the day Matthew
+  began: the Sermon on the Mount (Matthew 5), with John 1–2 and the risen Christ's words in
+  Revelation 1–2 retrofitted the same day. (The Hebrew Bible's direct divine speech stays in ordinary
+  type, as in nearly all red-letter editions.)</p>
   <p><strong>▶ The film shelf.</strong> Every place entry in the encyclopedia has a slot for curated
   archaeology and geography videos — excavations, site walk-throughs, museum pieces. Mr. Librarian
   curates; the encyclopedia is where they live.</p>

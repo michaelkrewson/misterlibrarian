@@ -56,6 +56,7 @@ MECHON_BOOKS = {
 # SBLGNT Greek via helloao API: book id -> (name, chapter count)
 # URL: https://bible.helloao.org/api/grc_sbl/{book}/{chapter}.json
 SBLGNT_BOOKS = {
+    "MAT": ("Matthew", 28),
     "JHN": ("John", 21),
     "REV": ("Revelation", 22),
 }

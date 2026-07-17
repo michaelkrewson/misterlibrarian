@@ -524,3 +524,9 @@ tr.ch-dim td{opacity:0.55}
   .hero-grid{display:block}
   .hero-fig{max-width:420px;margin:18px auto 0}
 }
+
+/* ---- Red letters: the recorded words of Jesus (the Gospels + the risen
+   Christ dictating in Revelation). The Hebrew Bible's direct divine speech
+   stays ordinary type, as in nearly all red-letter editions.
+   Debuted with Matthew 5 (the Sermon on the Mount), 2026-07-16. ---- */
+.eng .rl{color:#e0655f}

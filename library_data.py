@@ -270,6 +270,19 @@ DICTIONARY = [
      "'Lot' — the pebble drawn or cast to divide land, duty, destiny; hence one's allotted PORTION (Joshua's tribal allotments are goral country). Daniel's last word of destiny: 'you shall stand up to your LOT at the end of the days' (12:13) — a share with your name on it, not a game of chance.", ("Daniel", 12, 13)),
     ("moed", "mo'ed", "מוֹעֵד", "mo'ed",
      "'Appointed time' — Genesis 1:14's word: the lights are hung 'for appointed times' (mo'adim), this translation's fixed rendering. In Daniel 12:7 time itself is measured in them — 'an appointed time, appointed times, and a half': the broken seven, three and a half, sworn by the One who lives forever. Later the word also names the tent of MEETING (ohel mo'ed) — appointed time, appointed place.", (1, 14)),
+    # ---- Matthew 5 (Greek) ----
+    ("makarios", "makarios", "μακάριος", "makarios",
+     "'Happy, fortunate' — the Beatitude word (Matthew 5:3-11, nine times), and the Greek Bible's standing rendering of the Hebrew ashrei (Psalm 1:1; Daniel 12:12). It declares an enviable CONDITION, not a blessing pronounced (that's eulogētos). KJV/Geneva/Douay 'Blessed'; this translation reads 'Happy,' with the NWT — the same call it made for ashrei.", ("Matthew", 5, 3)),
+    ("geenna", "Gehenna", "γέεννα", "geenna",
+     "The Greek shape of gei-hinnom, the Valley of Hinnom below Jerusalem — the child-sacrifice valley of the kings (Josiah defiled its burning-place, 2 Kings 23:10), which became the standing name for the fiery end of the wicked; its unquenched fire and undying worm come from Isaiah 66:24. KJV translates it away as 'hell fire' (Matthew 5:22); this translation keeps the place-name — real geography doing figurative work.", ("Matthew", 5, 22)),
+    ("raca", "Raca", "Ῥακά", "raca",
+     "Aramaic rēqa, 'empty-head' — the insult Matthew 5:22 makes actionable, transliterated (not translated) by Matthew himself and left standing by nearly every version since. One of the New Testament's little windows into the Aramaic Jesus actually spoke.", ("Matthew", 5, 22)),
+    ("iota", "iota / keraia", "ἰῶτα / κεραία", "iōta / keraia",
+     "'Not one iota, not one little hook' (Matthew 5:18) — a GREEK sentence pointing at HEBREW letters: iōta stands for yod (י), the alphabet's smallest letter; keraia ('little horn') is the serif-stroke distinguishing near-twin letters. KJV 'one jot or one tittle' — 'jot' IS iota, worn smooth by English mouths.", ("Matthew", 5, 18)),
+    ("angareuo", "angareuō", "ἀγγαρεύω", "angareuō",
+     "'To press into service' — a Persian word from the royal courier-post (Herodotus' angaroi), by Roman times the soldier's legal right to commandeer a civilian for one mile (milion — a Latin loanword; Rome audible in the Greek). Matthew 5:41: go the second one. The verb returns on Simon of Cyrene, pressed into carrying a cross (27:32).", ("Matthew", 5, 41)),
+    ("teleios", "teleios", "τέλειος", "teleios",
+     "'Whole, complete, full-grown' — traditionally 'perfect' (KJV, Matthew 5:48), but the word means completeness, not flawlessness: the Greek Bible's counterpart to the Hebrew tamim, El Shaddai's charge to Abram ('walk before me, and be blameless,' Genesis 17:1). Luke's parallel reads 'merciful' (6:36) — the wholeness in question is love without a fence.", ("Matthew", 5, 48)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
      "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
@@ -706,7 +719,7 @@ ENCYCLOPEDIA = [
               "temple vessels and its brightest youths (Daniel 1:1-6). The city of the temple, the exile, the "
               "passion — and, in Revelation's last vision, the descending New Jerusalem with no temple in it at "
               "all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("John", 2, 13), ("John", 2, 23)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -888,6 +901,19 @@ ENCYCLOPEDIA = [
               "mismatch with Daniel 11:40-45 is the oldest crux in the book's interpretation (Porphyry vs Jerome; "
               "see the chapter's notes).",
          refs=[("Daniel", 11, 21), ("Daniel", 11, 31)], videos=[]),
+
+    # ---- Matthew 5 ----
+    dict(slug="mount-of-beatitudes", name="The Mount of Beatitudes", kind="place",
+         desc="'He went up the mountain; and when he had sat down…' (Matthew 5:1) — the unnamed hillside of the "
+              "Sermon on the Mount, somewhere above the Sea of Galilee's northwest shore near Capernaum, the "
+              "ministry's home base. Tradition since the Byzantine pilgrims has settled on the slope now called "
+              "the Mount of Beatitudes above Tabgha — a natural amphitheater where a seated voice genuinely "
+              "carries. Luke's parallel sermon stands 'on a level place' (6:17); a plateau on a hillside "
+              "satisfies both readers and both texts.",
+         refs=[("Matthew", 5, 1)],
+         coords=(32.8807, 35.5556, 0.06),
+         modern="Mount of Beatitudes, above Tabgha, northwest shore of the Sea of Galilee, Israel",
+         videos=[]),
 
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
@@ -1132,6 +1158,15 @@ XREFS = [
     (("Daniel", 12, 4), ("Revelation", 1, 3), "'seal the book until the time of the end' — and the counter-order at the canon's far end: Revelation opens UNsealed, 'for the time is near'"),
     (("Daniel", 12, 7), (14, 22), "the oath posture — Abram raised one hand to Jehovah; the man in linen raises both hands to the heavens"),
     (("Daniel", 12, 10), ("Daniel", 11, 35), "'purified, made white, refined' — the martyrs' three-verb metallurgy, promised its finish"),
+    # ---- Matthew 5 ----
+    (("Matthew", 5, 3), ("Daniel", 12, 12), "makarios is the Greek of ashrei — Daniel's beatitude on the one who waits, now the Sermon's opening word"),
+    (("Matthew", 5, 5), (15, 7), "'they shall inherit the earth' — Psalm 37's promise in the grammar of the land-grant to Abram: 'to give you this land, to inherit it'"),
+    (("Matthew", 5, 14), ("John", 1, 9), "'the light of the world' — the true light that gives light to everyone; the title handed on: YOU are the light of the world"),
+    (("Matthew", 5, 15), ("Revelation", 1, 20), "the lamp set on the lampstand — Revelation's vision makes the congregations themselves the lampstands"),
+    (("Matthew", 5, 18), (1, 1), "'until the heaven and the earth pass away' — Genesis 1:1's merism for everything, given an expiry clause"),
+    (("Matthew", 5, 22), (4, 6), "the first murder began as anger in a face — 'Why are you angry, and why has your face fallen?'"),
+    (("Matthew", 5, 45), (1, 17), "the sun hung 'to shine on the earth' — and it rises on evil and good alike; the Father's indiscriminate weather"),
+    (("Matthew", 5, 48), (17, 1), "'walk before me, and be blameless' — tamim, El Shaddai's charge to Abram; the Sermon closes on the Greek counterpart: whole, as the heavenly Father is whole"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1260,6 +1295,8 @@ VERSE_OF_DAY = [
     ("Daniel", 1, 8, "The quiet verb the whole book stands on: Daniel set on his heart."),
     ("Daniel", 11, 32, "The chapter's hinge between empires and martyrs: the people who know their God stand firm."),
     ("Daniel", 12, 3, "The Hebrew Bible's clearest resurrection scene gives the teachers the sky: shining like the vault, like the stars, forever."),
+    ("Matthew", 5, 44, "The Sermon's summit — love your enemies; the sun and the rain make the argument."),
+    ("Matthew", 5, 9, "The seventh Happy-saying: the peacemakers, called sons of God."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1418,6 +1455,9 @@ CHRON_CHAPTERS = {
     "dan12": dict(era="exile",
                   when="The vision's last words — the sleepers in the dust wake, the book is sealed, and Daniel is promised his lot at the end of the days.",
                   clock="Still Cyrus's first Persian years (~536 BC), closing the single vision of chs. 10–12 — and counting past 167 BC's desolation to the 1,290 and 1,335 days that twenty-two centuries of readers have never quite decoded."),
+    "mat5": dict(era="gospels",
+                 when="The Sermon on the Mount opens — eight Happy-sayings, salt and light, and six rounds of 'You have heard… but I say.'",
+                 clock="c. AD 28–30, early in the Galilean ministry, on a hillside above the lake's northwest shore (tradition: the Mount of Beatitudes, above Tabgha). The first of Matthew's five great discourses — and the first page of this site printed in red letters."),
     "john1": dict(era="gospels",
                   when="The Baptist at the Jordan; Jesus' first disciples — and a prologue that opens before day one.",
                   clock="c. AD 26–29 (Luke 3:1 pegs the Baptist to Tiberius's fifteenth year) — while verse 1 reaches back before creation itself."),
@@ -1484,6 +1524,9 @@ CHRON_EVENTS = [
     dict(era="gospels", am="—", trad="c. AD 27–28", event="The first sign at Cana; the temple cleared at the first Passover",
          note="'Forty-six years this temple has been under building' (John 2:20): Josephus dates Herod's rebuild from 20/19 BC — one of the Gospels' few countable dates, and a peg for the whole ministry.",
          ref=("John", 2, 20)),
+    dict(era="gospels", am="—", trad="c. AD 28–30", event="The Sermon on the Mount — the Happy-sayings; 'you have heard… but I say'; 'love your enemies'",
+         note="Matthew 5–7, the first of the Gospel's five great discourses, on a hillside above the Sea of Galilee's northwest shore (tradition: the Mount of Beatitudes, above Tabgha). Undatable to a year within the ministry — placed here mid-course, where Matthew places it: after the calling of the first disciples, before the sending of the Twelve.",
+         ref=("Matthew", 5, 1)),
     # -- The Apostolic Age --
     dict(era="apostolic", am="—", trad="c. AD 95", event="John, exiled on Patmos, sees the vision — 'I am the Alpha and the Omega'",
          note="Irenaeus (c. AD 180) places the vision 'toward the end of Domitian's reign' (d. 96); a minority tradition dates it under Nero, before 70. Reported, not settled.",
