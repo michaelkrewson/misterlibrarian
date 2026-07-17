@@ -46,7 +46,8 @@ NOTES_JS_VER = _asset_ver("reader-notes.js")
 
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
-SITE_URL = "https://michaelkrewson.github.io/misterlibrarian"
+SITE_URL = "https://mistertranslation.com"
+OG_IMAGE = f"{SITE_URL}/img/og-default.png"   # branded default link-preview image
 
 # FormSubmit endpoint for the Ask-a-Question form. This is the activated form's
 # random alias (delivers to the librarian's gmail without exposing the address in
@@ -264,14 +265,43 @@ def _stats_box():
 </script>"""
 
 
-def page(title, body, active="", desc=""):
+def _og_tags(title, desc, url="", image=""):
+    """Open Graph + Twitter-card meta so a shared link unfurls with a title,
+    description and image. canonical + og:url are emitted ONLY when the page's
+    own url is given — a wrong canonical (defaulting to the homepage) is worse
+    for SEO than none, so pages that don't pass a url simply omit it."""
+    img = image or OG_IMAGE
+    d = desc or ("A fresh translation of the Bible from the Hebrew and Greek, "
+                 "verse by verse.")
+    t = html.escape(title, quote=True)
+    de = html.escape(d, quote=True)
+    tags = [
+        f'<meta property="og:site_name" content="MiSTeR Translation"/>',
+        f'<meta property="og:type" content="{"article" if url else "website"}"/>',
+        f'<meta property="og:title" content="{t}"/>',
+        f'<meta property="og:description" content="{de}"/>',
+        f'<meta property="og:image" content="{img}"/>',
+        f'<meta name="twitter:card" content="summary_large_image"/>',
+        f'<meta name="twitter:title" content="{t}"/>',
+        f'<meta name="twitter:description" content="{de}"/>',
+        f'<meta name="twitter:image" content="{img}"/>',
+    ]
+    if url:
+        full = f"{SITE_URL}/{url}"
+        tags.insert(0, f'<link rel="canonical" href="{full}"/>')
+        tags.append(f'<meta property="og:url" content="{full}"/>')
+    return "\n" + "\n".join(tags)
+
+
+def page(title, body, active="", desc="", url="", image=""):
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
+    og = _og_tags(title, desc, url, image)
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>{html.escape(title)}</title>{d}
+<title>{html.escape(title)}</title>{d}{og}
 <link rel="icon" href="{FAVICON}"/>
 <link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script()}
 </head>
@@ -1030,6 +1060,77 @@ def chrono_strip(slug):
             f'</div>')
 
 
+VERSE_DIR = "v"   # per-verse share stubs live under /v/
+_VERSE_STUB_RE = re.compile(
+    r'id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">(.*?)</div>', re.S)
+
+
+def _plain(s):
+    """HTML fragment -> clean single-line text (for an og:description)."""
+    s = re.sub(r"<[^>]+>", "", s)
+    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+
+
+def _verse_stub_html(ref, desc, target, chfile, stub_url):
+    """A tiny share-stub page: crawlers read this verse's own OG tags; humans are
+    redirected instantly to the real chapter at the verse anchor. `noindex,follow`
+    keeps these thin pages out of search while the canonical points at the chapter."""
+    title = html.escape(f"{ref} · MiSTeR Translation", quote=True)
+    de = html.escape(desc, quote=True)
+    tgt = html.escape(target, quote=True)   # e.g. /genesis-1.html#v3 (root-relative)
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{title}</title>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="{SITE_URL}/{chfile}"/>
+<link rel="icon" href="{FAVICON}"/>
+<meta name="description" content="{de}"/>
+<meta property="og:site_name" content="MiSTeR Translation"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="{title}"/>
+<meta property="og:description" content="{de}"/>
+<meta property="og:url" content="{html.escape(stub_url, quote=True)}"/>
+<meta property="og:image" content="{OG_IMAGE}"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{title}"/>
+<meta name="twitter:description" content="{de}"/>
+<meta name="twitter:image" content="{OG_IMAGE}"/>
+<meta http-equiv="refresh" content="0;url={tgt}"/>
+<script>location.replace('{target}');</script>
+<style>body{{background:#060b14;color:#94a3b8;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-align:center;padding:80px 20px}}a{{color:#e8c968}}</style>
+</head>
+<body>
+<p>Opening <a href="{tgt}">{html.escape(ref)}</a> in the MiSTeR Translation…</p>
+</body>
+</html>
+"""
+
+
+def build_verse_stubs(book, num, content):
+    """Emit one /v/<book>-<ch>-<v>.html share-stub per verse in this chapter, so a
+    shared verse link unfurls with THAT verse's text (crawlers ignore #fragments)."""
+    chfile = chapter_filename(book, num)   # e.g. genesis-1.html
+    stem = chfile[:-5]                       # genesis-1  (matches reader-notes.js)
+    vdir = os.path.join(OUT, VERSE_DIR)
+    os.makedirs(vdir, exist_ok=True)
+    for m in _VERSE_STUB_RE.finditer(content):
+        vid = m.group(1)
+        v = vid.rsplit("-", 1)[-1] if "-" in vid else vid[1:]
+        eng = re.sub(r'<a class="notelink".*?</a>', "", m.group(2), flags=re.S)
+        text = _plain(eng)
+        if not text:
+            continue
+        ref = f"{book} {num}:{v}"
+        desc = text if len(text) <= 200 else text[:197].rsplit(" ", 1)[0] + "…"
+        target = f"/{chfile}#{verse_anchor(num, v)}"
+        stub_url = f"{SITE_URL}/{VERSE_DIR}/{stem}-{v}.html"
+        out = _verse_stub_html(ref, desc, target, chfile, stub_url)
+        open(os.path.join(vdir, f"{stem}-{v}.html"), "w", encoding="utf-8").write(out)
+
+
 def build_chapter_pages(chapters):
     for slug, book, num, teaser in CHAPTERS:
         content = clean_chapter(chapters[slug])
@@ -1089,8 +1190,10 @@ function toggleHeb(){{
         desc = (f"{book} {num} translated fresh from {src}, with verse-by-verse "
                 f"notes comparing NIV, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and "
                 f"NWT. {teaser}")
-        out = page(f"{book} {num} — {SITE_NAME}", body, desc=desc)
+        out = page(f"{book} {num} — {SITE_NAME}", body, desc=desc,
+                   url=chapter_filename(book, num))
         open(os.path.join(OUT, chapter_filename(book, num)), "w", encoding="utf-8").write(out)
+        build_verse_stubs(book, num, content)
 
 
 def build_toc():

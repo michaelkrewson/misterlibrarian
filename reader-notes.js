@@ -76,7 +76,13 @@
     var v = verseNum(verseId);
     return BC.book + " " + BC.ch + (v ? ":" + v : "");
   }
-  function urlFor(verseId) { return location.origin + PATH + "#" + verseId; }
+  // Share the /v/ stub, not the raw #fragment: the stub carries this verse's own
+  // Open Graph tags so the link unfurls with the verse text, then redirects a human
+  // straight to the chapter anchor. STEM matches build.py's chapter_filename stem.
+  var STEM = PATH.replace(/^.*\//, "").replace(/\.html$/, ""); // "genesis-1"
+  function urlFor(verseId) {
+    return location.origin + "/" + "v/" + STEM + "-" + verseNum(verseId) + ".html";
+  }
 
   // Clean English text of a verse — drops the "note" link and any cross-ref chips,
   // keeps the words (including linked entity words), collapses whitespace.
