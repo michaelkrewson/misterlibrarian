@@ -1197,7 +1197,9 @@ ENCYCLOPEDIA = [
               "the vowels of <em>Adonai</em>; scholars reconstruct the original pronunciation as 'Yahweh.' The full "
               "discussion, and why this project chose 'Jehovah,' is on the "
               "<a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>.",
-         refs=[(2, 4)], videos=[]),
+         refs=[(2, 4)],
+         videos=[("Searching for the earliest mention of the Israelite's God, \"Yahweh.\"",
+                  "https://www.youtube.com/watch?v=pGEOZ5YI22M")]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
