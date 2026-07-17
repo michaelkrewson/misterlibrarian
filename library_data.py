@@ -268,6 +268,10 @@ DICTIONARY = [
      "Service, labor — and, in the same breath, SLAVERY (from eved, 'servant/slave,' the root the exodus turns on: Israel serves Pharaoh, then is freed to SERVE God — same verb). Exodus 1:14's avodah kashah, 'hard service,' the mortar and the bricks. The word will pivot: the goal of the exodus is not idleness but a change of masters — 'let my people go, that they may serve me.'", (1, 14)),
     ("yeor", "ye'or", "יְאוֹר", "ye'or",
      "The NILE — Egypt's OWN word for its river (Egyptian itrw), used in Hebrew almost only of the Nile (KJV 'the river'; NWT 'the Nile River'). The babies are thrown into the ye'or (1:22) — the same river a basket will float on (2:3), and the first the plagues turn to blood (7:20). Borrowed once, memorably, for the Tigris of Daniel's vision (Daniel 12:5).", (1, 22)),
+    ("moshe", "Mosheh (Moses)", "מֹשֶׁה", "Mosheh",
+     "The NAME — given a Hebrew reason, 'because I DREW HIM OUT (meshitihu) of the water' (2:10), from mashah, 'to draw out.' But the form Mosheh is ACTIVE ('the one who draws out'), not the passive mashuy ('drawn out') the reason would need — the tell of a Hebrew pun laid over a genuinely EGYPTIAN name: mose / mes, 'born of, son,' the element in Thut-mose, Ah-mose, Ra-messes. The full case (and why the Egyptian name argues the story is authentic) is in the encyclopedia's <a href=\"encyclopedia.html#moses\">Moses</a> entry.", ("Exodus", 2, 10)),
+    ("suph", "suph", "סוּף", "suph",
+     "REEDS — the papyrus-marsh growth of the Nile's edge, where the baby's ark is set (2:3, 5). The same word names the sea Israel crosses: the YAM SUPH, 'Sea of Reeds' (Exodus 13:18; 15:4), which the KJV and most versions render 'Red Sea' (following the Greek Septuagint's eruthra thalassa). So the deliverer is drawn from the reeds before the nation is drawn through the reed-sea — the book plants its rescue in its opening scene. NWT keeps 'Red Sea' by convention but footnotes 'Reed Sea.'", ("Exodus", 2, 3)),
     # ---- Genesis 23 (Hebrew) ----
     ("ger", "ger / toshav", "גֵּר / תּוֹשָׁב", "ger / toshav",
      "Two distinct legal statuses the shelf often merges (KJV 'a stranger and a sojourner,' Genesis 23:4; NWT keeps them, 'an alien resident and a settler'). A GER is a resident foreigner — living among a people, protected by law, but WITHOUT citizenship or the right to own land (Torah's great charge: 'love the ger, for you were gerim in Egypt'). A TOSHAV is a settled outsider, more rooted but still landless. Abraham names himself both — the man promised the whole land cannot legally buy a grave in it.", (23, 4)),
@@ -1091,6 +1095,75 @@ ENCYCLOPEDIA = [
               "Exodus (Genesis 50:25; Exodus 13:19) — the one man of Genesis who makes the journey home.",
          refs=[("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
 
+    # ---- Exodus 2 ----
+    dict(slug="moses", name="Moses", kind="person", aliases=["Moses"],
+         desc="Israel's deliverer, lawgiver, and prophet — born to a Levite couple (Amram and Jochebed) "
+              "under Pharaoh's death-order, hidden three months, then floated on the Nile in a papyrus ARK "
+              "(the same word, tevah, as Noah's; see the dictionary) and drawn out by Pharaoh's own daughter, "
+              "who raises him in the Egyptian court. Grown, he kills an Egyptian overseer, flees to Midian, "
+              "marries Zipporah, and is called back at the burning bush to bring Israel out (Exodus 3). The "
+              "New Testament frames his life in three forties (Acts 7:23, 30, 36): forty years an Egyptian "
+              "prince, forty a Midianite shepherd, forty leading Israel; he dies at 120 (Deuteronomy 34:7), "
+              "the prophet 'whom Jehovah knew face to face.' "
+              "<strong>His name is Egyptian.</strong> The story gives a Hebrew reason — Pharaoh's daughter "
+              "names him Mosheh 'because I DREW HIM OUT (meshitihu) of the water' (2:10), from the Hebrew verb "
+              "mashah, 'to draw out.' But the name itself is the ordinary Egyptian element MOSE / MES, 'born "
+              "of, son, child' — the very piece in THUT-MOSE ('born of Thoth'), AH-MOSE, and RA-MESSES ('born "
+              "of Ra') — the kind of theophoric court-name an Egyptian princess would actually give (likely "
+              "with a god's name once attached and later dropped). Even the Hebrew wordplay betrays the seam: "
+              "the form Mosheh is ACTIVE, 'the one who draws out' — not the passive mashuy, 'drawn out,' that "
+              "the daughter's own explanation would require — a Hebrew pun laid over a genuinely Egyptian "
+              "name. Far from an embarrassment, that Egyptian name is a fingerprint of authenticity: a later "
+              "writer inventing a national hero would hardly hand him a foreign name advertising an Egyptian "
+              "upbringing. Ancient Jewish writers already knew it was Egyptian (Philo; Josephus derives it "
+              "from the Egyptian for water + saved). "
+              "<strong>Who he likely was.</strong> On the EARLY DATE this translation follows (Exodus 1446 BC; "
+              "see the Pharaoh-of-the-Exodus entry and Joel Kramer / Expedition Bible), Moses is born about "
+              "1526 BC and raised in the 18th-dynasty court during the reign of Thutmose I–III — the pharaoh "
+              "he later flees (2:15) being Thutmose III, whose death (2:23) clears his return to Amenhotep II. "
+              "Some early-date readers go further and identify the princess who drew him out with Hatshepsut, "
+              "the great female pharaoh of that court — a striking fit, though an identification the text does "
+              "not make and this entry offers only as a possibility. What is not speculative is the shape: an "
+              "Egyptian name, an Egyptian upbringing, and a Hebrew heart — the man at home nowhere (he names "
+              "his own son 'a resident alien in a foreign land,' 2:22) whom God makes the way home.",
+         refs=[("Exodus", 2, 2), ("Exodus", 2, 10), ("Exodus", 2, 11)], videos=[]),
+    dict(slug="midian", name="Midian", kind="place", aliases=["Midian"],
+         desc="The land Moses flees to and shepherds in for forty years (Exodus 2:15) — home of the "
+              "MIDIANITES, a people descended from Abraham through Keturah (Genesis 25:2), so distant kin to "
+              "Israel. Their territory lay in northwest Arabia, east of the Gulf of Aqaba, spreading north "
+              "into the Transjordan and the Sinai's edges — caravan-traders (it was Midianite/Ishmaelite "
+              "traders who bought Joseph, Genesis 37:28). Here Moses marries into the household of the priest "
+              "of Midian and, at Horeb/Sinai 'the mountain of God' at the desert's far side (Exodus 3:1), "
+              "meets Jehovah in the burning bush. Later the relationship sours — Midian joins Moab to hire "
+              "Balaam (Numbers 22–25) — but at the exodus it is Midian that shelters the deliverer and gives "
+              "him a wife and a wise father-in-law.",
+         refs=[("Exodus", 2, 15), ("Exodus", 2, 16)],
+         coords=(28.4, 35.3, 1.6), approx=True,
+         modern="Northwest Arabia, east of the Gulf of Aqaba (Saudi Arabia), reaching into the Sinai/Transjordan"),
+    dict(slug="jethro", name="Jethro (Reuel)", kind="person", aliases=["Reuel", "Jethro"],
+         desc="The priest of Midian, Moses' father-in-law, who gives him his daughter Zipporah (Exodus "
+              "2:16-21). He is named REUEL here ('friend of God,' 2:18) and JETHRO in the following chapters "
+              "(3:1; 18) — the standing puzzle of two names. The oldest solutions still hold: Reuel is the "
+              "personal name and Jethro (Yitro, from yeter, 'abundance, excellence') a title or honorific "
+              "('his excellency'); or Reuel is the clan-grandfather and Jethro the working head of the house. "
+              "(A third name, Hobab, appears too, Numbers 10:29 / Judges 4:11, sometimes read as Reuel's son "
+              "and Moses' brother-in-law.) In Exodus 18 Jethro returns to Moses at Sinai, offers sacrifice to "
+              "Jehovah — 'Now I know that Jehovah is greater than all gods' — and gives Moses the shrewd "
+              "counsel to appoint judges and delegate, the Bible's first management lesson. A Midianite priest "
+              "who worships Israel's God: one of scripture's quiet witnesses that the knowledge of the true "
+              "God was not sealed inside Israel alone.",
+         refs=[("Exodus", 2, 16), ("Exodus", 2, 18), ("Exodus", 2, 21)], videos=[]),
+    dict(slug="zipporah", name="Zipporah", kind="person", aliases=["Zipporah"],
+         desc="'Bird' (tsippor, a small bird) — a daughter of the priest of Midian, given to Moses as his "
+              "wife (Exodus 2:21), mother of his sons Gershom and Eliezer. She reappears in one of the "
+              "strangest, starkest scenes in the Torah: on the road back to Egypt, when Jehovah 'sought to "
+              "kill' Moses (over the uncircumcised son), it is Zipporah who acts — she takes a flint, "
+              "circumcises the boy, touches Moses' feet with the foreskin and calls him 'a bridegroom of "
+              "blood to me,' and the danger passes (Exodus 4:24-26). A Midianite woman performs the covenant "
+              "sign that saves the covenant mediator's life. (Numbers 12 records Miriam and Aaron murmuring "
+              "against Moses over his 'Cushite wife' — whether Zipporah or another is debated.)",
+         refs=[("Exodus", 2, 21), ("Exodus", 2, 22)], videos=[]),
+
     # ---- Genesis 23 ----
     dict(slug="machpelah", name="Machpelah", kind="place", aliases=["Machpelah"],
          desc="'The double' (from kaphal, 'to fold, to double') — the cave at the edge of Ephron the "
@@ -1349,6 +1422,12 @@ XREFS = [
     (("Exodus", 1, 13), (15, 13), "the affliction God foretold to Abraham at the covenant of the pieces: 'your seed will be sojourners… and they will afflict them'"),
     (("Exodus", 1, 17), (22, 12), "'the midwives feared God' — the same reverent fear the angel found in Abraham at the altar: 'now I know that you fear God'"),
     (("Exodus", 1, 17), ("Proverbs", 1, 7), "the fear of God — 'the beginning of knowledge' — as the midwives' wisdom: when king and God command opposite, disobey the king"),
+
+    # ---- Exodus 2 ----
+    (("Exodus", 2, 3),  (6, 14), "tevah, an 'ark' — the one other thing in scripture called a tevah: Noah's ark. Both are saved through the death-waters in a pitch-sealed ark; the deliverer floats the flood in miniature"),
+    (("Exodus", 2, 2),  (1, 4),  "ki tov — 'she saw him, that he was GOOD' — the mother's word over her baby is God's word over the light on the first day, 'and God saw the light, that it was good'"),
+    (("Exodus", 2, 22), (23, 4), "ger, a 'resident alien' — Moses names his son Gershom by Abraham's own confession at Machpelah, 'I am a resident alien among you': the patriarch's statelessness handed to the man who will end it"),
+    (("Exodus", 2, 24), (17, 7), "God 'remembered his covenant' — not that he had forgotten, but that the everlasting covenant cut with Abraham (17:7) has now come due; zakhar here means to ACT on a promise"),
 
     # ---- Genesis 23 ----
     ((23, 4),  (17, 8),  "achuzzah, a 'holding' — the everlasting HOLDING God promised Abraham (all Canaan), and here the one burial holding is all of it he owns in his lifetime"),
@@ -1689,6 +1768,8 @@ VERSE_OF_DAY = [
     ("Exodus", 1, 17, "The Bible's first civil disobedience — two women: 'the midwives feared God, and did not do as the king commanded.'"),
     ("Proverbs", 1, 7, "The motto the whole book is tuned to: the fear of Jehovah is the beginning — and the chief part — of knowledge."),
     ("Proverbs", 1, 33, "Wisdom's last, quiet promise: whoever listens will dwell secure — safety not from trouble, but from fear."),
+    ("Exodus", 2, 10, "The rescue funded from Pharaoh's own house: the princess names him Moses — 'because I drew him out of the water.'"),
+    ("Exodus", 2, 24, "Four verbs turn the whole book: 'God heard… God remembered his covenant… God saw… and God knew.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -1843,6 +1924,9 @@ CHRON_CHAPTERS = {
     "exod1": dict(era="exodus",
                   when="A family becomes a nation; a new king enslaves them; and two midwives who feared God defy the order to kill the boys.",
                   clock="The bondage in Egypt, before the Exodus. On the EARLY date this translation follows (1 Kings 6:1 → Exodus 1446 BC; Joel Kramer / Expedition Bible), the oppressing pharaoh is Thutmose III (d. c. 1425 BC) and the store-cities are built for his empire; the pharaoh of the Exodus itself is Amenhotep II. The mainstream LATE date (~1250 BC, Ramesses II) rests on the store-city name Raamses — read here as an updated place-name."),
+    "exod2": dict(era="exodus",
+                  when="Moses is born and drawn from the Nile in an ark of papyrus; grown, he kills an Egyptian and flees to Midian; and God hears, remembers, sees, and knows.",
+                  clock="On the EARLY date this translation follows (Exodus 1446 BC), Moses is born about 1526 BC, flees Thutmose III to Midian about forty years later (2:11-15), and shepherds there through the pharaoh's death (2:23, c. 1425 BC) until the burning-bush call returns him to Amenhotep II's Egypt. The whole chapter is the forty silent years before Exodus 3."),
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
@@ -1938,6 +2022,9 @@ CHRON_EVENTS = [
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
          ref=("Exodus", 1, 11)),
+    dict(era="exodus", am="—", trad="c. 1526–1486 BC", event="Moses born and drawn from the Nile; grown, he flees to Midian — and God hears Israel's groaning and remembers his covenant",
+         note="Born to a Levite couple under Pharaoh's death-decree, hidden three months, then floated on the Nile in an ark of papyrus (the word tevah, Noah's ark) and drawn out by Pharaoh's daughter to be raised in the Egyptian court (Exodus 2). His very name is Egyptian — mose, 'born of, son,' the element in Thut-mose and Ra-messes — under a Hebrew pun on mashah, 'to draw out.' At about forty he kills an Egyptian overseer and flees to Midian, marries Zipporah, and shepherds there until the oppressing pharaoh (Thutmose III on the early date) dies (2:23) — the forty silent years before the burning bush. The chapter ends on four verbs that turn the whole book: God heard, remembered his covenant, saw, and knew.",
+         ref=("Exodus", 2, 10)),
     # -- The Kingdom --
     dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
          note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",

@@ -100,6 +100,7 @@ CHAPTERS = [
     ("gen22", "Genesis", 22, "The Aqedah — 'take your son, your only one, whom you love': the binding of Isaac on Moriah, the ram in the thicket, the mountain of seeing, and the promise sealed by oath."),
     ("gen23", "Genesis", 23, "Sarah dies at Hebron, and Abraham — a landless resident alien in the land promised to his seed — buys the cave of Machpelah for 400 shekels: the first foothold of the Promised Land is a grave."),
     ("exod1", "Exodus", 1, "A family becomes a nation, a new king 'who did not know Joseph' enslaves them, and two midwives who feared God defy Pharaoh's order to kill the boys — the second book of the Bible opens."),
+    ("exod2", "Exodus", 2, "Moses is born and floated on the Nile in an ark of papyrus, drawn out by Pharaoh's daughter; grown, he kills an Egyptian and flees to Midian, marries Zipporah — and God hears, remembers, sees, and knows."),
 ]
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
