@@ -1071,7 +1071,7 @@ def _plain(s):
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
 
-def _verse_stub_html(ref, desc, target, chfile, stub_url):
+def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image):
     """A tiny share-stub page: crawlers read this verse's own OG tags; humans are
     redirected instantly to the real chapter at the verse anchor. `noindex,follow`
     keeps these thin pages out of search while the canonical points at the chapter."""
@@ -1093,11 +1093,11 @@ def _verse_stub_html(ref, desc, target, chfile, stub_url):
 <meta property="og:title" content="{title}"/>
 <meta property="og:description" content="{de}"/>
 <meta property="og:url" content="{html.escape(stub_url, quote=True)}"/>
-<meta property="og:image" content="{OG_IMAGE}"/>
+<meta property="og:image" content="{og_image}"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{title}"/>
 <meta name="twitter:description" content="{de}"/>
-<meta name="twitter:image" content="{OG_IMAGE}"/>
+<meta name="twitter:image" content="{og_image}"/>
 <meta http-equiv="refresh" content="0;url={tgt}"/>
 <script>location.replace('{target}');</script>
 <style>body{{background:#060b14;color:#94a3b8;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-align:center;padding:80px 20px}}a{{color:#e8c968}}</style>
@@ -1109,13 +1109,114 @@ def _verse_stub_html(ref, desc, target, chfile, stub_url):
 """
 
 
+_CARD_FONT_PATHS = {
+    "serif":   "/System/Library/Fonts/Supplemental/Georgia.ttf",
+    "serif_b": "/System/Library/Fonts/Supplemental/Georgia Bold.ttf",
+    "sans":    "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "sans_b":  "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+}
+_CARD_FONTS = {}
+
+
+def _card_font(kind, size):
+    from PIL import ImageFont
+    key = (kind, size)
+    if key not in _CARD_FONTS:
+        _CARD_FONTS[key] = ImageFont.truetype(_CARD_FONT_PATHS[kind], size)
+    return _CARD_FONTS[key]
+
+
+def _card_wrap(draw, text, font, maxw):
+    lines, cur = [], ""
+    for w in text.split():
+        t = (cur + " " + w).strip()
+        if cur and draw.textlength(t, font=font) > maxw:
+            lines.append(cur); cur = w
+        else:
+            cur = t
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def _render_verse_card(book, num, v, text, path):
+    """Render a 1200x630 og:image verse card (dark gradient + gold frame, the
+    verse centred, its reference, and the wordmark) as a quantized PNG (~30KB).
+    Returns True, or False if Pillow / the fonts aren't available — the caller
+    then falls back to the branded default og:image."""
+    try:
+        from PIL import Image, ImageDraw, ImageFilter
+    except Exception:
+        return False
+    if not all(os.path.exists(p) for p in _CARD_FONT_PATHS.values()):
+        return False
+    W, H = 1200, 630
+    img = Image.new("RGB", (W, H), (13, 21, 32))
+    d = ImageDraw.Draw(img)
+    top, bot = (13, 21, 32), (6, 11, 20)               # vertical gradient
+    for y in range(H):
+        t = y / (H - 1)
+        d.line([(0, y), (W, y)], fill=(int(top[0] + (bot[0] - top[0]) * t),
+                                       int(top[1] + (bot[1] - top[1]) * t),
+                                       int(top[2] + (bot[2] - top[2]) * t)))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))     # soft gold glow near the top
+    ImageDraw.Draw(glow).ellipse([W * 0.5 - 520, -380, W * 0.5 + 520, 300],
+                                 fill=(232, 201, 104, 42))
+    glow = glow.filter(ImageFilter.GaussianBlur(120))
+    img = Image.alpha_composite(img.convert("RGBA"), glow).convert("RGB")
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle([34, 34, W - 34, H - 34], radius=26, outline=(92, 84, 54), width=2)
+
+    pad = 110; cw = W - 2 * pad; n = len(text)
+    size = 58 if n <= 70 else 50 if n <= 140 else 44 if n <= 220 else 38 if n <= 320 else 32
+    while size >= 26:                                   # shrink to fit the verse zone
+        vf = _card_font("serif", size); lines = _card_wrap(d, text, vf, cw); lh = int(size * 1.42)
+        if len(lines) * lh <= 372:
+            break
+        size -= 3
+    vf = _card_font("serif", size); lines = _card_wrap(d, text, vf, cw); lh = int(size * 1.42)
+    if len(lines) * lh > 372:                           # still too tall -> truncate
+        keep = max(1, 372 // lh); lines = lines[:keep]
+        if lines:
+            lines[-1] = lines[-1].rstrip(".,;:") + " …"
+    verseH = len(lines) * lh
+
+    ref = f"{book} {num}:{v}".upper()
+    rf = _card_font("sans_b", 30); refH = 38; divH = 4; gap1 = 30; gap2 = 26
+    blockH = verseH + gap1 + divH + gap2 + refH
+    top_zone, bot_zone = 92, H - 135
+    y = top_zone + ((bot_zone - top_zone) - blockH) // 2
+    for ln in lines:
+        d.text((W / 2, y), ln, font=vf, fill=(242, 236, 218), anchor="ma"); y += lh
+    y += gap1
+    d.rectangle([W / 2 - 48, y, W / 2 + 48, y + divH], fill=(232, 201, 104)); y += divH + gap2
+    track = 3                                           # letter-spaced reference
+    tw = sum(d.textlength(c, font=rf) for c in ref) + track * (len(ref) - 1)
+    cx = W / 2 - tw / 2
+    for c in ref:
+        d.text((cx, y), c, font=rf, fill=(232, 201, 104), anchor="la")
+        cx += d.textlength(c, font=rf) + track
+
+    wf = _card_font("serif_b", 34); p1, p2 = "MiSTeR ", "Translation"
+    w1 = d.textlength(p1, font=wf); w2 = d.textlength(p2, font=wf); sx = W / 2 - (w1 + w2) / 2
+    d.text((sx, H - 100), p1, font=wf, fill=(247, 242, 226), anchor="la")
+    d.text((sx + w1, H - 100), p2, font=wf, fill=(232, 201, 104), anchor="la")
+    d.text((W / 2, H - 54), "mistertranslation.com",
+           font=_card_font("sans", 21), fill=(133, 147, 166), anchor="ma")
+
+    img.quantize(colors=128, dither=Image.FLOYDSTEINBERG).save(path, "PNG", optimize=True)
+    return True
+
+
 def build_verse_stubs(book, num, content):
     """Emit one /v/<book>-<ch>-<v>.html share-stub per verse in this chapter, so a
     shared verse link unfurls with THAT verse's text (crawlers ignore #fragments)."""
     chfile = chapter_filename(book, num)   # e.g. genesis-1.html
     stem = chfile[:-5]                       # genesis-1  (matches reader-notes.js)
     vdir = os.path.join(OUT, VERSE_DIR)
+    cdir = os.path.join(OUT, "img", VERSE_DIR)
     os.makedirs(vdir, exist_ok=True)
+    os.makedirs(cdir, exist_ok=True)
     for m in _VERSE_STUB_RE.finditer(content):
         vid = m.group(1)
         v = vid.rsplit("-", 1)[-1] if "-" in vid else vid[1:]
@@ -1127,7 +1228,15 @@ def build_verse_stubs(book, num, content):
         desc = text if len(text) <= 200 else text[:197].rsplit(" ", 1)[0] + "…"
         target = f"/{chfile}#{verse_anchor(num, v)}"
         stub_url = f"{SITE_URL}/{VERSE_DIR}/{stem}-{v}.html"
-        out = _verse_stub_html(ref, desc, target, chfile, stub_url)
+        # per-verse og:image card (rendered once, then reused — the audio-MP3
+        # pattern); falls back to the branded default if Pillow/fonts are absent.
+        card_rel = f"img/{VERSE_DIR}/{stem}-{v}.png"
+        card_path = os.path.join(OUT, card_rel)
+        if not os.path.exists(card_path):
+            if not _render_verse_card(book, num, v, text, card_path):
+                card_rel = None
+        og_image = f"{SITE_URL}/{card_rel}" if card_rel and os.path.exists(card_path) else OG_IMAGE
+        out = _verse_stub_html(ref, desc, target, chfile, stub_url, og_image)
         open(os.path.join(vdir, f"{stem}-{v}.html"), "w", encoding="utf-8").write(out)
 
 
