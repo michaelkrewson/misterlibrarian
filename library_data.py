@@ -2756,4 +2756,102 @@ BOOK_INTROS = {
                 "does not cast a vote — the same posture it takes on Genesis's composition and the date of "
                 "Daniel.",
     ),
+    "Numbers": dict(
+        hebrew_name="בְּמִדְבַּר",
+        hebrew_translit="Bemidbar",
+        hebrew_meaning="'In the wilderness' — from the fifth word of the opening verse, 'in the wilderness of "
+                       "Sinai.' The Hebrew title names the true subject of the book: the forty wilderness years.",
+        greek_name="Ἀριθμοί (Arithmoi)",
+        greek_meaning="'Numbers' — the Greek and Latin (Numeri) title, taken from the two great censuses that "
+                      "frame the book, of the first wilderness generation (ch. 1) and the second (ch. 26).",
+        tagline="The book of the wilderness years — a redeemed people counted and set in order, who then "
+                "refuse the land at its border and are left to die in the desert, while God keeps his promise "
+                "for their children.",
+        genre="Narrative and law interwoven — a march-journal braided with censuses, camp-arrangements, "
+              "priestly and purity law, and vivid set-pieces of rebellion and mercy, with a few very ancient "
+              "poems (the Song of the Ark, Balaam's oracles).",
+        canon="The fourth book of the TORAH (the Law / Pentateuch, the five books of Moses), and the fourth "
+              "book of the Christian Old Testament.",
+        author="By ancient and traditional reckoning, Jewish and Christian alike, Numbers is the work of "
+               "MOSES — the man at the center of nearly every scene, and the book records that 'Moses wrote "
+               "down their starting-places, stage by stage' (33:2). The events run from Mount Sinai in the "
+               "second year after the Exodus to the plains of Moab in the fortieth (15th century BC on the "
+               "early date this translation follows). Since Wellhausen the critical tradition has read Numbers, "
+               "like the rest of the Pentateuch, as a weave of sources — much of it assigned to a late "
+               "'Priestly' hand around the Babylonian exile, around an older narrative core. This translation "
+               "leads with the traditional Mosaic authorship — see 'Where the debates are' below.",
+        date="On the traditional view, essentially Mosaic: composed across the wilderness period, "
+             "c. 1445–1406 BC. Its events span from the first day of the second month of the second year after "
+             "the Exodus (1:1) to the fortieth year on the plains of Moab, just before Moses's death. (The "
+             "critical view dates the book's Priestly material's composition far later, around the 6th–5th "
+             "century BC.)",
+        place="The wilderness — the book moves from the wilderness of SINAI (chs. 1–10), through the desert "
+              "wanderings by way of Kadesh, to the plains of MOAB across the Jordan from Jericho (chs. 22–36), "
+              "where Israel encamps at the threshold of the promised land.",
+        audience="The SECOND generation — the children of those who came out of Egypt, mustered anew on the "
+                 "plains of Moab and about to enter the land their parents refused. Numbers is written to "
+                 "orient and to warn them: here is how the presence of God is to be ordered in the camp, and "
+                 "here is what unbelief cost the generation before you.",
+        structure=[
+            ("1–10", "At Sinai — the census and the camp arrayed around the tent, the Levites set apart, the "
+                     "Passover and the silver trumpets; then the cloud lifts and Israel marches."),
+            ("11–12", "The march and the first grumblings — the graves of craving, and Miriam and Aaron "
+                      "speaking against Moses, 'the meekest man on the face of the earth.'"),
+            ("13–14", "KADESH — the twelve spies, the majority's bad report, the people's refusal to enter, "
+                      "and the sentence: forty years in the wilderness, and this whole generation to die there."),
+            ("15–19", "Laws and rebellion — the revolt of Korah, the plague stayed by incense, and the "
+                      "budding of Aaron's staff that settles the priesthood."),
+            ("20–25", "The second generation moves — the deaths of Miriam and Aaron, Moses striking the rock, "
+                      "the bronze serpent, victories in Transjordan, Balaam's oracles, and the sin at Peor."),
+            ("26–36", "On the plains of Moab — the second census, Joshua appointed, the daughters of "
+                      "Zelophehad, the festival calendar, the boundaries of the land, and the cities of refuge."),
+        ],
+        themes=[
+            "The ORDER of the camp around the presence — God at the center, the tribes arrayed in their "
+            "armies, the Levites a ring between: holiness given a shape you could walk through.",
+            "UNBELIEF and its cost — Kadesh is the hinge of the book: the refusal of the land, the forty "
+            "years, 'your corpses shall fall in this wilderness' (14:29).",
+            "GRUMBLING against God, and his patience — a repeated cycle of complaint, judgment, Moses's "
+            "intercession, and mercy.",
+            "The FAITHFULNESS of God through the faithlessness of the people — a whole generation is lost, yet "
+            "the promise passes to their children intact.",
+            "PROVISION in the wilderness — the manna, the water from the rock, the guiding cloud and the "
+            "silver trumpets.",
+            "INTERCESSION — Moses standing again and again in the breach, pleading for the people who have "
+            "just risen against him (14:13–19).",
+        ],
+        key_words=["paqad", "eda", "matteh", "tsava", "gulgolet", "nasi", "moed"],
+        key_people=["moses", "aaron", "nahshon", "judah", "mount-sinai"],
+        source_text="Translated from the Hebrew MASORETIC TEXT — the digital Hebrew of Mechon-Mamre "
+                    "(the Leningrad/Aleppo tradition), consonants with the Masoretes' vowel-points and "
+                    "cantillation, and its scribal peculiarities kept. The scroll's own paragraph breaks are "
+                    "shown as it marks them: petuchah {פ} (open) and setumah {ס} (closed). Numbers carries one "
+                    "of the most striking scribal marks in the whole Torah — the two INVERTED NUNS "
+                    "(<span dir='rtl'>נ</span>) that bracket the little Song of the Ark at 10:35–36, an ancient "
+                    "editorial sign whose meaning the tradition still debates (a passage 'out of place,' or set "
+                    "apart as its own book). The seven-version shelf under every chapter compares the NIV, KJV, "
+                    "Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and NWT.",
+        christ="The New Testament reads the wilderness generation as a deliberate pattern: 'these things "
+               "happened to them as examples, and were written down for our instruction' (1 Corinthians "
+               "10:11). Paul calls the manna and the water 'spiritual food and drink,' and says of the "
+               "rock that followed them, 'that rock was Christ' (1 Corinthians 10:4). Two images reach "
+               "furthest: the BRONZE SERPENT lifted on a pole, that whoever looked to it might live (21:9), "
+               "which Jesus takes for his own cross — 'as Moses lifted up the serpent in the wilderness, so "
+               "must the Son of Man be lifted up' (John 3:14); and Balaam's oracle of 'a STAR that shall come "
+               "out of Jacob' (24:17), long read as a promise of the Messiah. This translation marks those "
+               "echoes as they come; it does not force them.",
+        debates="The questions are AUTHORSHIP, DATE, and — uniquely sharp in this book — the NUMBERS "
+                "themselves. On authorship and date the picture matches the rest of the Torah: the traditional "
+                "view is Mosaic composition in the 15th–13th centuries BC; the dominant academic view since "
+                "Wellhausen reads a late 'Priestly' edition (6th–5th c. BC) around older material. The "
+                "distinctive debate is the size of the census: taken plainly, 603,550 fighting men imply a "
+                "nation of perhaps two million crossing the desert — a miracle sustained by daily manna. "
+                "Because the Hebrew word eleph means both 'thousand' and 'clan / military unit,' some scholars "
+                "read the totals as a smaller host (so-many units of so-many men); others hold the plain "
+                "figures. A third strand of debate concerns the wilderness itinerary and the location of "
+                "Kadesh and of Mount Sinai itself. This library prints the numbers as the text gives them, "
+                "flags the eleph ambiguity in the word rather than resolving it, and lays out the readings "
+                "with their pedigrees without casting a vote — the same posture it takes on Genesis's "
+                "composition and the date of Daniel.",
+    ),
 }
