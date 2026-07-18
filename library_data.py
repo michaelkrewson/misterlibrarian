@@ -329,7 +329,7 @@ DICTIONARY = [
      "'BROAD PLACES, room' — the name of the third well, the one no one fought over: 'he called it Rehoboth, and said, For now Jehovah has made ROOM (hirchiv) for us, and we will be fruitful in the land' (26:22). From rachav, 'to be wide,' the root of rechov, a city's open 'square.' After Esek (contention) and Sitnah (enmity), the patient man is given room — the Hebrew for relief and enlargement, when the pressing-in finally opens out. (A modern Israeli city keeps the name.)", (26, 22)),
     # ---- Genesis 27 (Hebrew) ----
     ("berakhah", "berakhah", "בְּרָכָה", "berakhah",
-     "The BLESSING — from barak, 'to bless' (and 'to kneel'), the thing the whole chapter is fought over. In Genesis a father's deathbed blessing is not a fond wish but a PERFORMATIVE, near-irrevocable word: once spoken it takes effect and cannot be recalled — 'I have blessed him; yes, and he will be blessed' (27:33). It carries the covenant itself (dew and fatness, dominion, and Abraham's own 'cursed be those who curse you,' 12:3). Jacob steals Esau's berakhah as he had bought his bekhorah (birthright); Esau's cry 'have you but one blessing?' (27:38) is the anguish of a word that cannot be unsaid. Hebrews 12:17 makes him the man who 'found no place for repentance, though he sought it with tears.'", (27, 4)),
+     "The BLESSING — from barak, 'to bless' (and 'to kneel'), the thing the whole chapter is fought over. In Genesis a father's deathbed blessing is not a fond wish but a PERFORMATIVE, near-irrevocable word: once spoken it takes effect and cannot be recalled — 'I have blessed him; yes, and he will be blessed' (27:33). It carries the covenant itself (dew and fatness, dominion, and Abraham's own 'cursed be those who curse you,' 12:3). Jacob steals Esau's berakhah as he had bought his bekhorah (birthright); Esau's cry 'have you but one blessing?' (27:38) is the anguish of a word that cannot be unsaid. Hebrews 12:17 makes him the man who 'found no place for repentance, though he sought it with tears.' Twenty years later Jacob tries to give one back: pressing his gift on Esau at their reunion, he calls it not a 'present' but 'my berakhah, my BLESSING, that is brought to you' (33:11) — a deliberate, quiet restitution of the very thing he stole.", (27, 4)),
     ("matamim", "mat'ammim", "מַטְעַמִּים", "mat'ammim",
      "SAVORY FOOD — 'tasty things,' a delicacy (from ta'am, 'taste'): the dish of game Isaac craves and the disguise Rebekah cooks from two kids to fool him (27:4, 9, 31). KJV 'savoury meat'; NWT 'a tasty dish.' A small, human detail — the old blind man's love of a favorite meal — turned into the very instrument of the deception; the taste that was meant to confirm his son is the taste that helps steal the blessing.", (27, 4)),
     ("mirmah", "mirmah", "מִרְמָה", "mirmah",
@@ -363,6 +363,11 @@ DICTIONARY = [
      "'He STRIVES with God' (or 'God strives / God rules') — the new name wrestled out of Jacob at the Jabbok: 'no longer Jacob, but Israel, for you have striven (sarita, from sarah, 'to strive, struggle, persist') with God and with men, and have prevailed' (32:29). It answers 'Jacob' ('heel-grabber, supplanter'): the man who always grasped by cunning now prevails by HOLDING ON — refusing, though crippled, to let go without a blessing. The name is re-confirmed at Bethel (35:10) and becomes the name of the whole nation, the 'children of Israel' — a people named not for a triumph but for a night-long, limping struggle with God that would not quit.", (32, 29)),
     ("gid-hanasheh", "gid ha-nasheh", "גִּיד הַנָּשֶׁה", "gid ha-nasheh",
      "'The SINEW of the nasheh' — the thigh-tendon (traditionally the sciatic nerve) that the wrestling angel touched, leaving Jacob limping (32:26, 33). Because of that night, 'the children of Israel do not eat the sinew of the thigh, to this day' — an observance kept in kosher law ever since (the nerve and its branches are removed from an animal's hindquarters, or the hindquarters not eaten at all). It is the one dietary custom Genesis itself explains, a scar of memory worked into the daily table: every meal recalls the night their father was crippled and crowned at once.", (32, 33)),
+    # ---- Genesis 33 (Hebrew) ----
+    ("kesitah", "kesitah", "קְשִׂיטָה", "kesitah",
+     "An archaic unit of MONEY or weight — Jacob buys the field at Shechem 'for a hundred kesitah' (33:19; KJV 'pieces of money'). Its exact value is unknown; the word survives in only three places in the whole Bible (here, Joshua 24:32, and Job 42:11), a sign of its great age — later Hebrew had long since replaced it with the shekel. The Septuagint and rabbis guessed it was worth a lamb (some ancient coins were stamped with a lamb), so it may have meant 'a lamb's-worth' of silver. This translation keeps the old word untranslated rather than smoothing it into 'coins,' which would be an anachronism — coinage proper came a thousand years later.", (33, 19)),
+    ("el-elohe-israel", "El-Elohe-Israel", "אֵל אֱלֹהֵי יִשְׂרָאֵל", "El Elohe Yisrael",
+     "'El, the God of Israel' — the name Jacob gives the altar he builds at Shechem (33:20), the fifth of the great EL-landmark names of Genesis (after El Elyon at Salem, 14:18; El Roi at Hagar's well, 16:13; El Shaddai at the covenant, 17:1; and El Olam at Beersheba, 21:33). It is the first time Jacob claims the God of his fathers under his OWN new name — Israel — folding the name the angel just gave him (32:29) into a confession of faith: the vow he made fleeing the land, 'then Jehovah shall be my God' (28:21), made good at an altar on the ground he has just bought.", (33, 20)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -667,7 +672,7 @@ ENCYCLOPEDIA = [
          desc="Abram's first named stop in Canaan (12:6), at the great tree of Moreh — modern Tell Balata, between "
               "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7); it will echo "
               "through the whole Bible.",
-         refs=[(12, 6), (12, 7)],
+         refs=[(12, 6), (12, 7), (33, 18)],
          videos=[("The Discovery of Joshua's Great Witness Stone at Shechem "
                   "(preview — this discovery belongs to Joshua 24, centuries after Abram's visit here)",
                   "https://www.youtube.com/watch?v=mnis257Rd3E")],
@@ -1221,7 +1226,7 @@ ENCYCLOPEDIA = [
               "the fatal hinge — 'a new king arose who did not know Joseph' (1:8). The rescue is forgotten; "
               "the rescued become slaves. His bones, by his own oath, will be carried out of Egypt at the "
               "Exodus (Genesis 50:25; Exodus 13:19) — the one man of Genesis who makes the journey home.",
-         refs=[(30, 24), ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
+         refs=[(30, 24), (33, 2), ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
 
     # ---- Exodus 2 ----
     dict(slug="moses", name="Moses", kind="person", aliases=["Moses"],
@@ -1456,7 +1461,7 @@ ENCYCLOPEDIA = [
               "two most consequential sons of all: LEVI, father of the priesthood, and JUDAH, father of the kings "
               "and of the Messiah. She is buried beside Jacob at Machpelah (49:31) — not the wife he chose, but "
               "the wife in the ancestral tomb.",
-         refs=[(29, 16), (29, 23), (29, 31), (30, 9), (31, 4)], videos=[]),
+         refs=[(29, 16), (29, 23), (29, 31), (30, 9), (31, 4), (33, 2)], videos=[]),
     dict(slug="rachel", name="Rachel", kind="person", aliases=["Rachel"],
          desc="Laban's younger daughter and the love of Jacob's life — a shepherdess he meets at the well and "
               "serves fourteen years to marry (29:9-30). 'Beautiful in form and lovely to look at,' and beloved, "
@@ -1467,7 +1472,7 @@ ENCYCLOPEDIA = [
               "prophet hears her still weeping there for her exiled children — 'Rachel weeping for her children, "
               "refusing to be comforted' (Jeremiah 31:15), the verse Matthew hears again over Bethlehem's "
               "murdered infants (Matthew 2:18).",
-         refs=[(29, 6), (29, 18), (29, 30), (30, 1), (31, 4)], videos=[]),
+         refs=[(29, 6), (29, 18), (29, 30), (30, 1), (31, 4), (33, 2)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -1510,6 +1515,17 @@ ENCYCLOPEDIA = [
          refs=[(32, 23), (32, 25), (32, 31)],
          coords=(32.13, 35.68, 1.0), approx=True,
          modern="The Zarqa River, north-central Jordan, flowing west into the Jordan"),
+    dict(slug="succoth", name="Succoth", kind="place", aliases=["Succoth"],
+         desc="'BOOTHS' — Jacob's first stop after crossing back into the land, west of the Jabbok in the Jordan "
+              "valley. Genesis gives the name its own explanation: he 'built himself a house and made booths "
+              "(sukkot) for his livestock, therefore the place is named Succoth' (33:17). The word is the same "
+              "that names Israel's autumn festival of Sukkot, the Feast of BOOTHS, when the people live a week in "
+              "temporary shelters remembering the wilderness. Succoth reappears as a station of the Exodus "
+              "(Exodus 12:37) and, in the plain of the Jordan, as a town in the days of Gideon (Judges 8) and "
+              "of Solomon's bronze-casting (1 Kings 7:46).",
+         refs=[(33, 17)],
+         coords=(32.20, 35.61, 0.8), approx=True,
+         modern="The Jordan valley east of the river, near the mouth of the Jabbok (northern Jordan)"),
 
     # ---- Genesis 25 ----
     dict(slug="keturah", name="Keturah", kind="person", aliases=["Keturah"],
@@ -1531,7 +1547,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1541,7 +1557,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29), (33, 3)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
@@ -1906,6 +1922,13 @@ XREFS = [
     ((32, 13), (22, 17), "'your seed as the sand of the sea' — Jacob holds God to the oath of the binding of Isaac, 'I will multiply your seed as the stars… and as the sand on the seashore' (22:17): you cannot let me be killed, if your own word is to stand"),
     ((32, 29), (30, 8),  "'you have PREVAILED' — vatukhal, the very word Rachel cried at Naphtali's birth, 'I have prevailed' (30:8); but where she prevailed over her sister by scheming, Jacob prevails over God by refusing to let go"),
     ((32, 31), (16, 13), "Peniel, 'I have seen God face to face' — the seeing-God that Hagar first named at her well, El Roi, 'the God who sees… have I even here seen him who sees me?' (16:13)"),
+
+    # ---- Genesis 33 ----
+    ((33, 10), (32, 31), "'I have seen your face as one sees the face of God' — Jacob rereads the Peniel night (32:31, 'I have seen God face to face') in his brother's forgiving face: he has survived both faces, God's and Esau's, and lived"),
+    ((33, 11), (27, 36), "'take my BLESSING (birkhati)' — Jacob calls the gift a 'blessing,' quietly handing one back to the brother whose blessing he stole: 'he has taken my blessing!' (27:36). The one thing he took, he tries to restore"),
+    ((33, 4),  (27, 41), "Esau ran, embraced, and wept — the brother who once said 'I will kill my brother Jacob' (27:41); the murder-vow undone in an embrace so complete that Jesus paints the prodigal's father in its very words (Luke 15:20)"),
+    ((33, 3),  (27, 29), "Jacob bowed to the ground seven times — the man whom the stolen blessing had made lord, 'let your brothers bow down to you' (27:29), now on his face before the brother he cheated"),
+    ((33, 19), (12, 7),  "Jacob buys land and builds an altar at Shechem — at the very tree of Moreh where Abraham built his FIRST altar in Canaan (12:6-7); the grandson claims the same ground with the second parcel a patriarch has ever owned in the land"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2274,6 +2297,8 @@ VERSE_OF_DAY = [
     (31, 49, "The Mizpah stone — less a blessing than a fence: 'May Jehovah watch between me and you, when we are hidden from each other' — two rivals asking God to police a truce neither will keep on trust."),
     (32, 27, "The clinging that becomes a blessing: 'I will not let you go unless you bless me' — the man who once stole a blessing now demands one, wounded, holding on in the dark."),
     (32, 29, "The name that is a verdict: 'Your name shall no longer be Jacob, but Israel; for you have striven with God and with men, and have prevailed.'"),
+    (33, 4, "Grace outran fear: 'And Esau ran to meet him, and embraced him, and fell on his neck and kissed him; and they wept' — the brother who had sworn to kill him."),
+    (33, 10, "Forgiveness with the face of God in it: 'I have seen your face as one sees the face of God, and you have received me favorably.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2470,6 +2495,9 @@ CHRON_CHAPTERS = {
     "gen32": dict(era="patriarchs",
                   when="Coming home, Jacob is met by angels at Mahanaim, sends a lavish gift ahead to the brother he fears, prays his first prayer, and wrestles a man at the Jabbok until dawn — crippled, blessed, and renamed Israel.",
                   clock="AM ≈ 2205 · c. 1739 BC — days after leaving Laban, on the threshold of Canaan, Jacob about 97. Terrified that Esau is coming with four hundred men, he divides his camp, prays, and sends waves of livestock as a gift; then, alone by night at the ford of the Jabbok, he is renamed Israel by the wrestler and limps away at sunrise to meet his brother. The turning point of his life and the moment the nation gets its name."),
+    "gen33": dict(era="patriarchs",
+                  when="The dreaded reunion becomes an embrace — Esau runs, weeps, and forgives; Jacob presses his 'blessing' back on him, then crosses into Canaan, settles at Shechem, buys land, and builds an altar, El-Elohe-Israel.",
+                  clock="AM ≈ 2205 · c. 1739 BC — the morning after the Jabbok. Esau meets Jacob in peace and returns to Seir; Jacob crosses into Canaan for the first time in twenty years, camps at Succoth and then Shechem, buys a field, and raises an altar in his new name. The exile is over — but the family will not stay long at peace: the dark chapter at Shechem (ch. 34) waits, and the road to Bethel and Rachel's grave (ch. 35) lies just ahead."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2591,6 +2619,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2205", trad="c. 1739 BC", event="The wrestling at the Jabbok — Jacob crippled, blessed, and renamed Israel",
          note="On the threshold of Canaan, and terrified that Esau is marching to meet him with four hundred men, Jacob meets the angels of God at Mahanaim ('two camps'), sends a lavish gift of livestock ahead in waves to appease his brother, and prays the first recorded prayer of his life — 'I am too small (qatonti) for all the kindness you have shown your servant.' Then, having sent everyone across the ford of the Jabbok, 'Jacob was left alone, and a man wrestled with him until dawn' (Genesis 32). Crippled at the hip but refusing to let go without a blessing, he is given a new name: 'no longer Jacob, but Israel — for you have striven with God and with men, and have prevailed.' He names the place Peniel, 'the Face of God,' and limps away at sunrise to meet Esau. It is the turning point of the Jacob story and the moment the nation of Israel receives its name; the sinew of the thigh is not eaten to this day in memory of it.",
          ref=("Genesis", 32, 29)),
+    dict(era="patriarchs", am="≈2205", trad="c. 1739 BC", event="Jacob and Esau reconciled; Jacob settles at Shechem and builds an altar",
+         note="The reunion Jacob had dreaded turns out to be an embrace: Esau — who had once sworn to kill him — runs to meet him, falls on his neck, and weeps (Genesis 33). Jacob bows seven times, presses his lavish gift on his brother as a 'blessing' returned, and says, 'to see your face is like seeing the face of God.' They part in peace — Esau home to Seir, Jacob keeping a careful distance — and Jacob crosses into Canaan at last, camping at Succoth and then before the city of Shechem, where he buys a field for a hundred kesitah (the second parcel of the Promised Land any patriarch has owned, after Machpelah) and raises an altar, El-Elohe-Israel, 'El, the God of Israel' — claiming the God of his fathers under his own new name. The twenty-year exile is over.",
+         ref=("Genesis", 33, 4)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
