@@ -301,7 +301,7 @@ DICTIONARY = [
     ("achuzzah", "achuzzah", "אֲחֻזָּה", "achuzzah",
      "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
     ("nasi", "nasi", "נָשִׂיא", "nasi",
-     "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. Later nasi titles the tribal chieftains and Ezekiel's coming ruler.", (23, 6)),
+     "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. In Numbers the plural nesi'im titles the twelve tribal CHIEFTAINS who stand with Moses at the census (Numbers 1:16, 44) — one lifted-up head per tribe; and it later titles Ezekiel's coming ruler.", (23, 6)),
     # ---- Genesis 24 (Hebrew) ----
     ("yarekh", "yarekh", "יָרֵךְ", "yarekh",
      "The THIGH / loins — under which the servant puts his hand to swear (24:2, 9). Not an idle gesture: the yarekh is the seat of procreation, the region of the covenant-of-circumcision sign (17:11), and 'those who came out of the yarekh' is the Hebrew for a man's own offspring (46:26; Exodus 1:5). To swear by it is to swear by the seed the whole promise runs through — fitting for an oath about the son who will carry the line. The Bible knows this gesture only twice, both about the promised posterity: here, and Jacob making Joseph swear to bury him in the land (47:29).", (24, 2)),
@@ -380,7 +380,16 @@ DICTIONARY = [
      "'Only one, only child' — 'take your son, your ONLY ONE' (22:2, 12, 16). Ishmael was sent away one chapter before, so Isaac is now the only son of the covenant; the word also means 'darling, precious' (Psalm 22:20 uses it for one's own life). KJV 'only son'; the Septuagint's agapēton, 'beloved,' set up the baptism echo.", (22, 2)),
     # ---- Genesis 21 (Hebrew) ----
     ("paqad", "paqad", "פָּקַד", "paqad",
-     "To visit, attend to — for good or for ill: 'Jehovah VISITED Sarah' with a son (Genesis 21:1; KJV 'visited'), and the same verb 'visits' Jerusalem's doings upon her in judgment (Jeremiah 21:14). The Bible's word for God turning his attention toward someone — what happens next depends on the ledger.", (21, 1)),
+     "To visit, attend to — for good or for ill: 'Jehovah VISITED Sarah' with a son (Genesis 21:1; KJV 'visited'), and the same verb 'visits' Jerusalem's doings upon her in judgment (Jeremiah 21:14). The Bible's word for God turning his attention toward someone — what happens next depends on the ledger. In Numbers the same verb runs the census: to paqad is to MUSTER, to number an army (Numbers 1:3, 19); the pequdim are 'those mustered.' And in one chapter it turns three ways — the fighting tribes are paqad-mustered, the Levites are NOT paqad-counted (1:47) but are paqad-APPOINTED over the tabernacle (1:50). One root: to turn attention toward, whether to count, to charge, or to visit.", (21, 1)),
+    # ---- Numbers 1 (Hebrew) ----
+    ("eda", "eda", "עֵדָה", "edah",
+     "The congregation, community, assembly — the whole gathered people of Israel (Numbers 1:2), from the root ya'ad, 'to appoint, to meet by appointment' (the same family as mo'ed, the 'appointed time' and the 'tent of MEETING'). Not a random crowd but the summoned assembly; its chieftains are literally 'the CALLED ones of the eda' (1:16). KJV 'congregation,' NWT 'assembly.'", ("Numbers", 1, 2)),
+    ("matteh", "matteh", "מַטֶּה", "matteh",
+     "A tribe — but the word's plain meaning is a STAFF, a rod, a branch (from natah, 'to stretch out, extend'). Israel's tribes are 'staffs': shoots off the one stock of Jacob, each a branch of the family tree, and each led by a man holding a chief's staff. Numbers prefers matteh where Genesis often used shevet (also 'rod/tribe'); the picture is the same — a people that is one tree with twelve branches.", ("Numbers", 1, 4)),
+    ("tsava", "tsava", "צָבָא", "tsava",
+     "A host, an army — massed ranks for war (Numbers 1:3, 'all who go out to the tsava'). The census is a military muster: everyone counted is a soldier. The same word makes the divine title 'Jehovah of HOSTS' (the armies of heaven), and names the 'host of heaven' — sun, moon, and stars arrayed like troops. For the Levites the tsava is redefined: their 'service/warfare' is the tabernacle, not the battlefield (Numbers 4:23).", ("Numbers", 1, 3)),
+    ("gulgolet", "gulgolet", "גֻּלְגֹּלֶת", "gulgolet",
+     "A skull, a head — the census counts 'by their gulgolot,' head by head, each person reckoned singly (Numbers 1:2, 18; KJV 'by their polls'). The word for a rounded skull gives us, through Aramaic Gulgalta and Latin Calvaria, the two names of one hill: GOLGOTHA, 'the place of the skull' (Matthew 27:33). Every head is numbered and known — the same word that tallies an army will one day name a place of execution outside Jerusalem.", ("Numbers", 1, 2)),
     ("el-olam", "El Olam", "אֵל עוֹלָם", "El Olam",
      "'The Everlasting God' — the fourth El-name collected at a landmark: El Elyon at Salem (14:18), El Roi at Hagar's well (16:13), El Shaddai at the covenant (17:1), and El Olam at a tamarisk beside a sworn well (21:33). NWT, keeping its clock, 'the indefinitely lasting God.'", (21, 33)),
     ("eshel", "eshel", "אֵשֶׁל", "eshel",
@@ -1227,7 +1236,7 @@ ENCYCLOPEDIA = [
               "Egyptian name, an Egyptian upbringing, and a Hebrew heart — the man at home nowhere (he names "
               "his own son 'a resident alien in a foreign land,' 2:22) whom God makes the way home.",
          refs=[("Exodus", 2, 2), ("Exodus", 2, 10), ("Exodus", 2, 11),
-               ("Leviticus", 1, 1)], videos=[]),
+               ("Leviticus", 1, 1), ("Numbers", 1, 1)], videos=[]),
     dict(slug="aaron", name="Aaron", kind="person", aliases=["Aaron", "Aaron's sons"],
          desc="Moses's older brother (by three years, Exodus 7:7), the first HIGH PRIEST of Israel and head "
               "of the priestly line — the Levite family through whom all legitimate sacrifice would run. In "
@@ -1239,7 +1248,46 @@ ENCYCLOPEDIA = [
               "'strange fire.' He dies on Mount Hor (Numbers 20:28); his priesthood passes to his son Eleazar "
               "and endures as the Aaronic (or Levitical) priesthood, the office the letter to the Hebrews "
               "measures against a greater priest 'after the order of Melchizedek.'",
-         refs=[("Leviticus", 1, 5), ("Leviticus", 1, 7), ("Leviticus", 1, 11)], videos=[]),
+         refs=[("Leviticus", 1, 5), ("Leviticus", 1, 7), ("Leviticus", 1, 11),
+               ("Numbers", 1, 3), ("Numbers", 1, 17), ("Numbers", 1, 44)], videos=[]),
+    dict(slug="nahshon", name="Nahshon", kind="person", aliases=["Nahshon"],
+         desc="Son of Amminadab, CHIEFTAIN of the tribe of Judah at the wilderness census (Numbers 1:7; "
+              "2:3; 7:12) — and one of the most quietly important names in the Bible's genealogies. His "
+              "sister Elisheba married Aaron (Exodus 6:23), so he is the high priest's brother-in-law; and "
+              "the line runs straight from him to the throne and beyond: Nahshon → Salmon → Boaz (who marries "
+              "Ruth) → Obed → Jesse → King DAVID (Ruth 4:20–22), and on to the Messiah in both Gospel "
+              "genealogies (Matthew 1:4; Luke 3:32). It is fitting that Judah's chieftain heads the muster and "
+              "camps first, on the east, leading the march (Numbers 2:3, 9). Jewish tradition (Midrash, and "
+              "the Talmud at Sotah 37a) honors Nahshon as the first Israelite to step into the Red Sea, before "
+              "it parted — faith walking in before the water opened.",
+         refs=[("Numbers", 1, 7)], videos=[]),
+    dict(slug="judah", name="Judah", kind="person",
+         aliases=["Judah", "the tribe of Judah"],
+         desc="Jacob's fourth son by Leah, and the tribe descended from him — the ROYAL and messianic line. "
+              "Born with the cry 'this time I will praise (odeh) Jehovah' (Genesis 29:35), Judah rises over his "
+              "brothers: he saves Joseph's life, offers himself as surety for Benjamin, and receives Jacob's "
+              "deathbed blessing that 'the scepter shall not depart from Judah' (Genesis 49:10). At the "
+              "wilderness census his tribe is the largest of all (74,600 fighting men, Numbers 1:27) and takes "
+              "the place of honor: it camps on the east and marches at the head of the army (Numbers 2:3, 9), "
+              "led by the chieftain Nahshon. From Judah come David, the kings of Jerusalem, and — the New "
+              "Testament announces — 'the Lion of the tribe of Judah' (Revelation 5:5); the very word 'Jew' is "
+              "worn down from the name Judah.",
+         refs=[(29, 35), ("Numbers", 1, 7), ("Numbers", 1, 26)], videos=[]),
+    dict(slug="mount-sinai", name="Mount Sinai",
+         kind="place", aliases=["Sinai", "wilderness of Sinai", "Mount Sinai", "Horeb"],
+         desc="The mountain in the wilderness where Jehovah gave Israel the Law — also called HOREB. Here "
+              "Moses met the burning bush (Exodus 3), here the nation heard the Ten Words amid thunder and "
+              "gained the covenant (Exodus 19–24), here the tabernacle was built, and from the surrounding "
+              "'wilderness of Sinai' the books of Leviticus and Numbers are spoken. Israel encamps at Sinai "
+              "for about a year — from the third month after the Exodus (Exodus 19:1) until the cloud lifts on "
+              "the twentieth day of the second month of the second year (Numbers 10:11). Its exact location is "
+              "uncertain: the ancient and traditional site is Jebel Musa ('the Mountain of Moses') in the "
+              "granite peaks of the southern Sinai peninsula, where Saint Catherine's Monastery has stood "
+              "since the 6th century; other proposals place it elsewhere in the peninsula, in the Negev, or in "
+              "northwest Arabia (a Jabal al-Lawz / Midian theory). This library follows the traditional "
+              "identification while noting the debate.",
+         coords=(28.539, 33.973, 3.0), approx=True,
+         refs=[("Numbers", 1, 1), ("Numbers", 1, 19)], videos=[]),
     dict(slug="tabernacle", name="The Tabernacle",
          kind="place", aliases=["tent of meeting", "Tent of Meeting"],
          desc="The portable sanctuary Israel built at Sinai and carried through the wilderness — a curtained "
@@ -1789,6 +1837,13 @@ XREFS = [
     (("Leviticus", 1, 3), (17, 1), "tamim, 'without blemish' — the unflawed victim demanded at the altar is the same word God asked of Abraham's walk: 'walk before me and be blameless' (17:1)"),
     (("Leviticus", 1, 4), (6, 14), "kipper, 'to make atonement' — the piel of kaphar, 'to cover'; its plain root coated Noah's ark with pitch (kopher, 6:14). The ark that covered Noah from the judging waters and the offering that covers the sinner share one root"),
 
+    # ---- Numbers 1 (cross-book) ----
+    (("Numbers", 1, 1), ("Leviticus", 1, 1), "the tent of meeting, still speaking — Leviticus was given from it in the first month of the second year (Leviticus 1:1); one month later the same voice turns from the law of worship to the muster of an army"),
+    (("Numbers", 1, 2), (21, 1), "paqad, 'to muster' — the very verb by which 'Jehovah VISITED (paqad) Sarah' with a son (21:1): God's attention-turning, once given to a barren woman, now musters the nation her son fathered"),
+    (("Numbers", 1, 46), (15, 5), "603,550 fighting men — the promise made countable: God had told Abram to 'count the stars, if you are able… so shall your seed be' (15:5), a seed as uncountable as heaven; now it is an army numbered to the fifty"),
+    (("Numbers", 1, 7), (29, 35), "Nahshon, chieftain of Judah, heads the muster — Judah, Leah's son named 'this time I will PRAISE Jehovah' (29:35), now leads the host and camps first, on the east: the praise-tribe at the head of the army"),
+    (("Numbers", 1, 20), (29, 32), "'the sons of Reuben, Israel's firstborn' counted first — Leah's firstborn, 'Jehovah has looked on my affliction' (29:32); he keeps the honor of being numbered first, though the leadership has already passed to Judah"),
+
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
     (("Proverbs", 1, 7), (22, 12), "'the fear of Jehovah' — the reverent awe the angel found in Abraham at the altar: 'now I know that you fear God'"),
@@ -2148,6 +2203,8 @@ VERSE_OF_DAY = [
     (29, 31, "God on the side of the unloved: 'And Jehovah saw that Leah was unloved, and he opened her womb.'"),
     ("Leviticus", 1, 2, "Worship as drawing near: 'When any of you brings an offering (qorban) to Jehovah…' — the word means 'that which is brought near,' not destroyed but approached."),
     ("Leviticus", 1, 9, "The refrain of the whole altar: 'a burnt-offering, an offering by fire, a soothing aroma to Jehovah' — the exact phrase of Noah's first altar (Genesis 8:21)."),
+    ("Numbers", 1, 46, "The star-promise made countable: 'all those mustered were 603,550' — the seed once as uncountable as the stars (Genesis 15:5) is now an army you can number to the fifty."),
+    ("Numbers", 1, 53, "The guardians in the ring: 'the Levites shall camp around the tabernacle… that there be no wrath upon the congregation' — the one tribe left off the war-roll is the wall that keeps a holy God's people safe."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2311,6 +2368,9 @@ CHRON_CHAPTERS = {
     "lev1": dict(era="exodus",
                  when="At Sinai, from the newly-raised tent of meeting, Jehovah calls Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's bird, each an offering that ascends whole in smoke.",
                  clock="c. 1445 BC on the early date — the second year after the Exodus. The tabernacle is finished and filled with glory on the first day of the second year (Exodus 40:17, 34); Leviticus is spoken FROM it, in the roughly one month before Israel breaks camp (Numbers 10:11). The whole book is delivered at Mount Sinai, before the wilderness march resumes."),
+    "num1": dict(era="exodus",
+                 when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
+                 clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
@@ -2457,6 +2517,9 @@ CHRON_EVENTS = [
     dict(era="exodus", am="—", trad="c. 1445 BC", event="At Sinai, the law of the offerings given — Leviticus is spoken from the tent of meeting",
          note="In the second year after the Exodus, with the tabernacle finished and filled with the glory-cloud (Exodus 40:17, 34), Jehovah calls Moses from within it and gives the sacrificial law — beginning with the olah, the whole burnt-offering (Leviticus 1). Israel is still encamped at Mount Sinai; the whole book is delivered here in about a month, before the march north resumes (Numbers 10:11). The offering's refrain, 'a soothing aroma to Jehovah,' reaches back to Noah's first altar after the flood (Genesis 8:21), and the demand for a victim 'without blemish' (tamim) reaches back to the walk God asked of Abraham (Genesis 17:1).",
          ref=("Leviticus", 1, 3)),
+    dict(era="exodus", am="—", trad="c. 1445 BC", event="The census at Sinai — Israel mustered as an army; 603,550 fighting men, the Levites set apart",
+         note="On the first day of the second month of the second year — one month after Leviticus, thirteen months out of Egypt — Moses and Aaron take a census of the twelve tribes: every male from twenty years old and upward, all who could go to war, tribe by tribe, to a total of 603,550 fighting men (Numbers 1). Israel is arrayed as an army for the march to Canaan, one chieftain (nasi) per tribe, Judah's Nahshon at the head. The tribe of Levi alone is left off the war-roll, appointed instead to carry, pitch, and guard the tabernacle and to camp around it as a buffer 'that there be no wrath upon the congregation.' The star-promise to Abram (Genesis 15:5) has become a countable host; but this same generation, at Kadesh, will refuse the land and be sentenced to die in the wilderness — the muster is of an army that never fights the war it was numbered for.",
+         ref=("Numbers", 1, 46)),
     # -- The Kingdom --
     dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
          note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",
