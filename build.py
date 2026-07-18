@@ -110,6 +110,7 @@ CHAPTERS = [
     ("exod1", "Exodus", 1, "A family becomes a nation, a new king 'who did not know Joseph' enslaves them, and two midwives who feared God defy Pharaoh's order to kill the boys — the second book of the Bible opens."),
     ("exod2", "Exodus", 2, "Moses is born and floated on the Nile in an ark of papyrus, drawn out by Pharaoh's daughter; grown, he kills an Egyptian and flees to Midian, marries Zipporah — and God hears, remembers, sees, and knows."),
     ("exod3", "Exodus", 3, "The burning bush that is not consumed, holy ground, and the Name itself — 'I will be what I will be,' Jehovah, 'my name forever' — with the commission to Pharaoh and the promise of a land flowing with milk and honey."),
+    ("lev1", "Leviticus", 1, "The manual of worship opens: from the tent he has just filled, Jehovah CALLS Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's two birds, each ascending whole in smoke, 'a soothing aroma to Jehovah.'"),
 ]
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189

@@ -105,7 +105,17 @@ DICTIONARY = [
     ("nephilim", "Nephilim", "נְפִלִים", "Nefilim",
      "Beings 'on the earth in those days' (6:4); meaning unknown (possibly 'fallen ones'); LXX rendered 'giants.' Recur only at Numbers 13:33.", (6, 4)),
     ("olah", "olah", "עֹלָה", "olah",
-     "Burnt offering — literally an 'ascending' offering: the whole animal goes up in smoke. First at Noah's altar.", (8, 20)),
+     "Burnt offering — literally an 'ascending' offering (from alah, 'to go up'): unlike every other sacrifice, the WHOLE animal goes up in smoke, none of it eaten. First at Noah's altar (8:20); its full law opens Leviticus (ch. 1), where it is the offering of total self-gift. Douay-Rheims calls it a 'holocaust' — the Greek holokauston, 'wholly burnt.'", (8, 20)),
+    ("qorban", "qorban", "קָרְבָּן", "korban",
+     "Offering — literally 'that which is brought near' (from qarav, 'to draw near, approach'). The Bible's basic word for a sacrifice frames it not as destruction but as APPROACH: the worshipper draws near to God by bringing a gift near to the altar. The KJV renders it 'oblation'/'offering'; Mark 7:11 preserves the very word, 'Corban.' Leviticus 1:2 is its first occurrence.", ("Leviticus", 1, 2)),
+    ("nichoach", "reyach nichoach", "רֵיחַ נִיחוֹחַ", "reyach nichoach",
+     "A soothing aroma — the 'restful, pleasing smell' of an offering (nichoach shares the root nuach, 'to rest,' the root behind Noah's name). Its FIRST appearance is Noah's burnt-offering after the flood: 'Jehovah smelled the soothing aroma' and swore never again to curse the ground (8:21). Leviticus makes the same phrase the refrain of the whole sacrificial system (1:9, 13, 17) — what Noah did once at the altar becomes Israel's daily worship. KJV 'a sweet savour.'", ("Leviticus", 1, 9)),
+    ("kaphar", "kipper", "כִּפֶּר", "kipper",
+     "To make atonement — to cover, wipe away, or ransom (the piel of kaphar). Its plain root is 'to cover': Noah's ark was coated with 'pitch' (kopher, 6:14), the same three letters. In Leviticus it becomes the great cultic verb: the offering makes atonement 'for him' (1:4), the sin is covered over before God — the root behind kapporet, the atonement-cover on the ark of the covenant, and Yom Kippur, the Day of Atonement.", ("Leviticus", 1, 4)),
+    ("samakh", "samakh", "סָמַךְ", "samakh",
+     "To lean, press, lay firmly — the worshipper 'lays his hand upon the head' of the offering (1:4), pressing down, not merely touching (semikhah). The gesture identifies the offerer with the victim: this dies in my place. The same verb later ordains: Moses lays his hands on Joshua and the spirit passes (Numbers 27:18-23) — the root of both substitution and ordination.", ("Leviticus", 1, 4)),
+    ("shechitah", "shachat", "שָׁחַט", "shachat",
+     "To slaughter ritually — the precise verb for killing an offering (1:5, 11), the root of shechitah, kosher slaughter. ⚠ Not to be confused with its near-twin shachat (שָׁחַת, final tav), 'to ruin,' the flood's boomerang verb (6:11) — a different root that only sounds alike. This one, spelled with a final tet, means a clean, deliberate killing at the altar 'before Jehovah.'", ("Leviticus", 1, 5)),
     ("parad", "parad", "פָּרַד", "parad",
      "To separate — Genesis 13's hinge verb: Abram proposes it (13:9), Lot enacts it (13:11), and the renewed land promise arrives precisely 'after' it happens (13:14).", (13, 9)),
     ("qadash", "qadash", "קָדַשׁ", "qadash",
@@ -202,7 +212,7 @@ DICTIONARY = [
     ("shaddai", "El Shaddai", "אֵל שַׁדַּי", "El Shaddai",
      "The name God announces at 17:1. 'Almighty' is the Greek-and-Latin guess (LXX pantokrator, Vulgate omnipotens); the Hebrew meaning is uncertain — 'God of the mountain' (Akkadian shadu), the steppe, or a fertility word (Genesis 49:25 sets 'Shaddai' beside 'blessings of the breasts, shaddayim, and of the womb'). Kept untranslated here, as a name.", (17, 1)),
     ("tamim", "tamim", "תָּמִים", "tamim",
-     "Whole, sound, blameless — integrity of a piece, not sinless perfection. Noah's word (6:9); asked of Abraham at 17:1: 'walk before me and be blameless.'", (6, 9)),
+     "Whole, sound, blameless — integrity of a piece, not sinless perfection. Noah's word (6:9); asked of Abraham at 17:1: 'walk before me and be blameless.' In Leviticus the same word becomes the standard for every sacrifice: the animal must be tamim, 'without blemish' (1:3, 10) — the whole, unflawed victim mirrors the whole, unflawed walk God asks of the worshipper. The New Testament reaches for exactly this word: 'a lamb without blemish' (1 Peter 1:19).", (6, 9)),
     ("mul", "mul / himmol", "מוּל", "mul",
      "To circumcise — the covenant's sign cut into the flesh (17:10-14), at eight days old, house-born and money-bought alike; the male who refuses the cutting is himself 'cut off' (karet) — the penalty rhymes with the refusal.", (17, 10)),
     ("hamon", "hamon", "הֲמוֹן", "hamon",
@@ -1216,7 +1226,34 @@ ENCYCLOPEDIA = [
               "not make and this entry offers only as a possibility. What is not speculative is the shape: an "
               "Egyptian name, an Egyptian upbringing, and a Hebrew heart — the man at home nowhere (he names "
               "his own son 'a resident alien in a foreign land,' 2:22) whom God makes the way home.",
-         refs=[("Exodus", 2, 2), ("Exodus", 2, 10), ("Exodus", 2, 11)], videos=[]),
+         refs=[("Exodus", 2, 2), ("Exodus", 2, 10), ("Exodus", 2, 11),
+               ("Leviticus", 1, 1)], videos=[]),
+    dict(slug="aaron", name="Aaron", kind="person", aliases=["Aaron", "Aaron's sons"],
+         desc="Moses's older brother (by three years, Exodus 7:7), the first HIGH PRIEST of Israel and head "
+              "of the priestly line — the Levite family through whom all legitimate sacrifice would run. In "
+              "Exodus he is Moses's mouthpiece before Pharaoh ('he shall be your spokesman,' Exodus 4:16), his "
+              "arms held up over the battle with Amalek, and the maker of the golden calf — the one grave "
+              "failure the text never hides. In Leviticus he comes into his office: 'Aaron's sons, the priests' "
+              "are the ones who dash the blood and tend the altar-fire in the very first chapter (1:5, 7, 8, 11), "
+              "and chapters 8–10 ordain him and his sons, then strike two of them (Nadab and Abihu) dead for "
+              "'strange fire.' He dies on Mount Hor (Numbers 20:28); his priesthood passes to his son Eleazar "
+              "and endures as the Aaronic (or Levitical) priesthood, the office the letter to the Hebrews "
+              "measures against a greater priest 'after the order of Melchizedek.'",
+         refs=[("Leviticus", 1, 5), ("Leviticus", 1, 7), ("Leviticus", 1, 11)], videos=[]),
+    dict(slug="tabernacle", name="The Tabernacle",
+         kind="place", aliases=["tent of meeting", "Tent of Meeting"],
+         desc="The portable sanctuary Israel built at Sinai and carried through the wilderness — a curtained "
+              "tent within a courtyard, God's dwelling in the midst of the camp. Hebrew has two names for it: "
+              "the MISHKAN, 'dwelling-place' (from shakhan, 'to dwell'), and the OHEL MO'ED, the 'tent of "
+              "MEETING' — mo'ed being the 'appointed time/place,' the same word hung on the lights of Genesis "
+              "1:14 (see the dictionary). It is the appointed place of appointed meeting: 'there I will meet "
+              "with you and speak with you' (Exodus 25:22). Exodus 25–40 gives its blueprint and building; it is "
+              "finished and filled with the glory-cloud on the first day of the second year (Exodus 40:17, 34). "
+              "Leviticus is then spoken entirely FROM it — 'Jehovah called to Moses and spoke to him from the "
+              "tent of meeting' (1:1) — the offerings all brought 'to the door of the tent of meeting' (1:3). "
+              "Its inmost room, the Holy of Holies, housed the ark and its atonement-cover (kapporet); the "
+              "later Jerusalem Temple made its pattern permanent in stone.",
+         refs=[("Leviticus", 1, 1), ("Leviticus", 1, 3), ("Leviticus", 1, 5)], videos=[]),
     dict(slug="midian", name="Midian", kind="place", aliases=["Midian"],
          desc="The land Moses flees to and shepherds in for forty years (Exodus 2:15) — home of the "
               "MIDIANITES, a people descended from Abraham through Keturah (Genesis 25:2), so distant kin to "
@@ -1746,6 +1783,12 @@ XREFS = [
     ((29, 10), (24, 15), "Jacob meets Rachel at the well — the third of the Bible's well-betrothals: as Abraham's servant found Rebekah drawing water (24:15), so the son finds his own bride at a well in the old country"),
     ((29, 31), (25, 21), "Jehovah opens the barren womb — as he answered Isaac's prayer for barren Rebekah (25:21); the matriarchs' children come by God's gift, not nature's course"),
 
+    # ---- Leviticus 1 (cross-book) ----
+    (("Leviticus", 1, 1), ("Exodus", 3, 4), "vayiqra, 'and he called' — the very verb of the burning bush, where 'God CALLED to him from within the bush, Moses, Moses!' (Exodus 3:4); now the same voice calls from the tent it fills"),
+    (("Leviticus", 1, 9), (8, 21), "reyach nichoach, 'a soothing aroma' — the exact phrase of Noah's altar after the flood, when 'Jehovah smelled the soothing aroma' and swore never again to curse the ground (8:21): the first burnt-offering becomes Israel's daily law"),
+    (("Leviticus", 1, 3), (17, 1), "tamim, 'without blemish' — the unflawed victim demanded at the altar is the same word God asked of Abraham's walk: 'walk before me and be blameless' (17:1)"),
+    (("Leviticus", 1, 4), (6, 14), "kipper, 'to make atonement' — the piel of kaphar, 'to cover'; its plain root coated Noah's ark with pitch (kopher, 6:14). The ark that covered Noah from the judging waters and the offering that covers the sinner share one root"),
+
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
     (("Proverbs", 1, 7), (22, 12), "'the fear of Jehovah' — the reverent awe the angel found in Abraham at the altar: 'now I know that you fear God'"),
@@ -2103,6 +2146,8 @@ VERSE_OF_DAY = [
     (28, 17, "The fugitive's awe at an ordinary place made holy: 'How awesome is this place! This is none other than the house of God, and this is the gate of heaven.'"),
     (29, 20, "Love that makes the years light: 'Jacob served seven years for Rachel, and they seemed to him but a few days, because of his love for her.'"),
     (29, 31, "God on the side of the unloved: 'And Jehovah saw that Leah was unloved, and he opened her womb.'"),
+    ("Leviticus", 1, 2, "Worship as drawing near: 'When any of you brings an offering (qorban) to Jehovah…' — the word means 'that which is brought near,' not destroyed but approached."),
+    ("Leviticus", 1, 9, "The refrain of the whole altar: 'a burnt-offering, an offering by fire, a soothing aroma to Jehovah' — the exact phrase of Noah's first altar (Genesis 8:21)."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2263,6 +2308,9 @@ CHRON_CHAPTERS = {
     "exod3": dict(era="exodus",
                   when="The burning bush at Horeb — Moses called, holy ground, and the Name revealed: 'I will be what I will be,' Jehovah, 'my name forever.'",
                   clock="c. 1446 BC on the early date — Moses is about eighty (Exodus 7:7), the oppressing pharaoh (Thutmose III) has died, and the forty Midian years end at the mountain of God. The call launches the year of the Exodus itself; Amenhotep II now sits on Egypt's throne."),
+    "lev1": dict(era="exodus",
+                 when="At Sinai, from the newly-raised tent of meeting, Jehovah calls Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's bird, each an offering that ascends whole in smoke.",
+                 clock="c. 1445 BC on the early date — the second year after the Exodus. The tabernacle is finished and filled with glory on the first day of the second year (Exodus 40:17, 34); Leviticus is spoken FROM it, in the roughly one month before Israel breaks camp (Numbers 10:11). The whole book is delivered at Mount Sinai, before the wilderness march resumes."),
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
@@ -2406,6 +2454,9 @@ CHRON_EVENTS = [
     dict(era="exodus", am="—", trad="c. 1446 BC", event="The burning bush at Horeb — Moses called; the Name revealed: 'I will be what I will be,' Jehovah",
          note="At the mountain of God, an angel of Jehovah in a bush that burns unconsumed; 'take off your sandals, for the place is holy ground'; and the God of Abraham, Isaac, and Jacob names himself — ehyeh asher ehyeh, 'I will be what I will be,' and YHWH, 'this is my name forever, my memorial to all generations' (Exodus 3:14-15). The four verbs that closed chapter 2 (God heard, remembered, saw, knew) come back in the first person out of the fire. On the early date Moses is about eighty (7:7); the call opens the year of the Exodus, 1446 BC. This chapter is the ground of the whole translation's rendering of the Name as Jehovah.",
          ref=("Exodus", 3, 14)),
+    dict(era="exodus", am="—", trad="c. 1445 BC", event="At Sinai, the law of the offerings given — Leviticus is spoken from the tent of meeting",
+         note="In the second year after the Exodus, with the tabernacle finished and filled with the glory-cloud (Exodus 40:17, 34), Jehovah calls Moses from within it and gives the sacrificial law — beginning with the olah, the whole burnt-offering (Leviticus 1). Israel is still encamped at Mount Sinai; the whole book is delivered here in about a month, before the march north resumes (Numbers 10:11). The offering's refrain, 'a soothing aroma to Jehovah,' reaches back to Noah's first altar after the flood (Genesis 8:21), and the demand for a victim 'without blemish' (tamim) reaches back to the walk God asked of Abraham (Genesis 17:1).",
+         ref=("Leviticus", 1, 3)),
     # -- The Kingdom --
     dict(era="monarchy", am="—", trad="c. 970–931 BC", event="Solomon reigns in Jerusalem — the wisdom of the royal court; the proverbs gathered under his name",
          note="David's son, at his asking, is given 'a wise and understanding heart' (1 Kings 3); his court becomes the Bible's byword for wisdom, and Proverbs is filed under his name (Proverbs 1:1) — the wisdom books' home era. His forty-year reign is the high-water mark of the united kingdom, before it splits in two at his death.",
@@ -2548,5 +2599,98 @@ BOOK_INTROS = {
                 "Eastern parallels cut both ways. This library's rule holds: the readings are laid out "
                 "with their pedigrees, and it does not cast a vote — the same posture it takes on "
                 "Daniel's date and the date of the Exodus.",
+    ),
+    "Leviticus": dict(
+        hebrew_name="וַיִּקְרָא",
+        hebrew_translit="Vayiqra",
+        hebrew_meaning="'And he called' — the book's first word: Jehovah calling Moses from the tent. "
+                       "In the scroll the last letter of that first word, the aleph, is written SMALL — a "
+                       "scribal tradition as old as our earliest manuscripts (see the chapter-1 notes).",
+        greek_name="Λευιτικόν (Leuitikon)",
+        greek_meaning="'The Levitical (book)' — the Greek title, 'the book concerning the Levites,' the "
+                      "priestly tribe whose worship it governs; the Vulgate's Leviticus gives us the English "
+                      "name. The Jewish tradition also calls it Torat Kohanim, 'the priests' manual.'",
+        tagline="The priests' manual and the book of holiness — how a sinful people may draw near to a holy "
+                "God and live in his presence without being consumed.",
+        genre="Law and priestly instruction (torah) — largely DIVINE SPEECH: God dictating to Moses from the "
+              "tent of meeting, with a spine of narrative (the ordination of Aaron, the death of Nadab and "
+              "Abihu) running through the middle.",
+        canon="The third book of the TORAH (the Law / Pentateuch, the five books of Moses), at the very "
+              "center of the five — and, fittingly, the book at the heart of Israel's worship.",
+        author="By ancient and traditional reckoning, Jewish and Christian alike, Leviticus is the work of "
+               "MOSES — more than any other book it presents itself as words Moses received directly: some "
+               "fifty-six times 'Jehovah spoke to Moses, saying…' The events sit at Mount Sinai in the second "
+               "year after the Exodus (15th century BC on the early date this translation follows). The "
+               "critical tradition since Wellhausen assigns most of the book to a late 'Priestly' source (P), "
+               "with the Holiness Code of chapters 17–26 as a distinct hand (H); this translation leads with "
+               "the traditional Mosaic authorship — see 'Where the debates are' below.",
+        date="On the traditional view, essentially Mosaic: given at Sinai c. 1445 BC, in the roughly one "
+             "month between the raising of the tabernacle (Exodus 40, the first day of the second year) and "
+             "Israel's departure from Sinai (Numbers 10:11). (The critical view dates the Priestly material's "
+             "composition far later, around the Babylonian exile, 6th–5th century BC.)",
+        place="Mount Sinai — the whole book is spoken there, at and from the newly-built tent of meeting, "
+              "before the wilderness march resumes.",
+        audience="Israel newly redeemed and newly given God's dwelling in their midst — a people who now face "
+                 "the terrifying practical question the tabernacle raises: how does a holy God live in the "
+                 "camp of a sinful people without destroying it? Leviticus is the answer.",
+        structure=[
+            ("1–7", "The offerings — burnt, grain, peace, sin, and guilt: the five sacrifices, from the "
+                    "worshipper's side (chs. 1–5) and the priest's (chs. 6–7)."),
+            ("8–10", "The priesthood — Aaron and his sons ordained and installed; then Nadab and Abihu offer "
+                     "'strange fire' and are struck dead: holiness is not to be improvised."),
+            ("11–15", "Clean and unclean — foods, childbirth, skin disease, and bodily discharges: the daily "
+                      "boundaries between the holy and the common."),
+            ("16", "The Day of Atonement (Yom Kippur) — the book's center: the two goats, one for Jehovah and "
+                   "one 'for Azazel,' and the once-a-year entry into the Holy of Holies."),
+            ("17–26", "The Holiness Code — 'You shall be holy, for I, Jehovah your God, am holy': sexual, "
+                      "social, and sabbatical law, the festivals, the jubilee, and the covenant's blessings "
+                      "and curses."),
+            ("27", "Vows and tithes — an appendix on things dedicated to Jehovah and their redemption."),
+        ],
+        themes=[
+            "HOLINESS — the book's heartbeat: 'You shall be holy, for I am holy' (11:44; 19:2; 20:26). To be "
+            "holy (qadosh) is to be set apart, belonging to God.",
+            "ATONEMENT and BLOOD — 'the life of the flesh is in the blood… it is the blood that makes "
+            "atonement' (17:11); the sacrificial system is God's provided way to cover sin.",
+            "DRAWING NEAR — every offering is a qorban, 'that which is brought near': worship as approach, not "
+            "appeasement of a distant deity.",
+            "The PRESENCE of God in the camp — the whole book exists because the glory now dwells in the tent; "
+            "everything is arranged so that Israel can live next to holiness.",
+            "CLEAN and UNCLEAN — a daily grammar of the holy and the common that teaches a people to "
+            "distinguish, as God distinguished light from dark at creation.",
+            "'Love your neighbor as yourself' (19:18) — the verse Jesus named, with Deuteronomy 6:5, as the "
+            "hinge of the whole Law.",
+        ],
+        key_words=["qorban", "olah", "kaphar", "tamim", "nichoach", "samakh", "shechitah", "qadash", "moed"],
+        key_people=["moses", "aaron", "tabernacle"],
+        source_text="Translated from the Hebrew MASORETIC TEXT — the digital Hebrew of Mechon-Mamre "
+                    "(the Leningrad/Aleppo tradition), consonants with the Masoretes' vowel-points and "
+                    "cantillation, and its scribal peculiarities kept — including the famous SMALL ALEPH that "
+                    "ends the book's first word (1:1). The scroll's own paragraph breaks are shown as it marks "
+                    "them: petuchah {פ} (open) and setumah {ס} (closed). The seven-version shelf under every "
+                    "chapter compares the NIV, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, "
+                    "and NWT.",
+        christ="No book is read more christologically by the New Testament. The letter to the Hebrews takes "
+               "Leviticus as one long shadow: the sacrifices that must be repeated because they cannot finally "
+               "take away sin (Hebrews 10:1–4), the high priest who enters the Holy of Holies once a year with "
+               "blood not his own — all pointing to a single, final offering. The demand for a victim 'without "
+               "blemish' (tamim, 1:3) becomes 'a lamb without blemish or spot' (1 Peter 1:19); the Day of "
+               "Atonement's two goats — one killed, one bearing the sins away — are read as two sides of one "
+               "cross; and the poor person's two birds (1:14) are the very offering Mary and Joseph bring for "
+               "the infant Jesus (Luke 2:24). This translation marks those echoes as they come; it does not "
+               "force them.",
+        debates="The live questions are AUTHORSHIP and DATE, as with all the Torah, and they travel together. "
+                "The traditional view — Jewish and Christian for over two millennia — is Mosaic authorship at "
+                "Sinai in the 15th century BC; the book's relentless 'Jehovah spoke to Moses' frame makes it "
+                "the Pentateuch's strongest claimant to direct Mosaic dictation. The dominant academic view "
+                "since Wellhausen assigns Leviticus to the 'Priestly' source (P), edited into shape around the "
+                "Babylonian exile (6th–5th c. BC), and further isolates chapters 17–26 as a separate "
+                "'Holiness Code' (H) — pointing to differences of vocabulary and emphasis between them. "
+                "Conservatives answer that ancient Near Eastern ritual texts of the second millennium BC are "
+                "closely comparable, that the tabernacle-centered (not temple-centered) worship fits the "
+                "wilderness setting the book claims, and that thematic variation is not the same as separate "
+                "authorship. This library's rule holds: the readings are laid out with their pedigrees, and it "
+                "does not cast a vote — the same posture it takes on Genesis's composition and the date of "
+                "Daniel.",
     ),
 }
