@@ -1049,6 +1049,8 @@ def nav_strip(book, num, position):
         prev_html = f'<a href="{chapter_filename(book, same[i - 1])}">◄ {book} {same[i - 1]}</a>'
     elif _is_nt(book):
         prev_html = '<a href="new-testament.html">◄ New Testament</a>'
+    else:
+        prev_html = '<a href="old-testament.html">◄ Old Testament</a>'
     if i < len(same) - 1:
         next_html = f'<a href="{chapter_filename(book, same[i + 1])}">{book} {same[i + 1]} ►</a>'
     elif num < BOOK_TOTAL.get(book, num):
@@ -1654,6 +1656,7 @@ and link to their chapter; everything else is still ahead.</p>
 <h2>All 66 Books</h2>
 <div class="panel">
   <div class="testament">Old Testament · 39 books</div>
+  <p class="muted" style="margin:2px 0 12px"><a href="old-testament.html">📜 Introduction to the Old Testament — the Hebrew Scriptures →</a></p>
   <div class="bookgrid">{ot}</div>
   <div class="testament">New Testament · 27 books</div>
   <p class="muted" style="margin:2px 0 12px"><a href="new-testament.html">📜 Introduction to the New Testament — the Greek Scriptures →</a></p>
@@ -1834,6 +1837,8 @@ def build_index(chapters):
 
 <h2>From the desk</h2>
 <div class="cardgrid">
+  <a class="card" href="old-testament.html"><div class="card-t">\U0001F4DC The Old Testament</div>
+  <div class="card-d">The Hebrew Scriptures: what the Tanakh is and how it's arranged, the Masoretic text and its scribal marks, the older witnesses, and why the Name is rendered Jehovah.</div></a>
   <a class="card" href="new-testament.html"><div class="card-t">\U0001F4DC The New Testament</div>
   <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
   <a class="card" href="reading.html"><div class="card-t">\U0001F4D7 My Reading</div>
@@ -1927,6 +1932,169 @@ def build_about():
                desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
                     "essentially literal in a modern register, compared against seven landmark versions.")
     open(os.path.join(OUT, "about.html"), "w", encoding="utf-8").write(out)
+
+
+def build_old_testament():
+    """The heading page for the Old Testament / Hebrew Scriptures — the front door to
+    the bulk of the project: what the Hebrew Bible is and how it is arranged, the
+    Masoretic source text and its scribal apparatus, the witnesses the notes consult,
+    an honest account of how we know the text is reliable, and the translation's
+    signature decision — rendering the divine Name as Jehovah. A living page: edit this
+    function as the method for the Hebrew Scriptures develops."""
+    body = """<h1 class="pagetitle">The Old Testament</h1>
+<div class="nt-intro">
+<p class="lede nt-lede">This is where the project begins — in the <strong>Hebrew of the Tanakh</strong>, the
+Scriptures Jesus and the apostles called simply "the Law and the Prophets." Most of this library's work lives
+here: the five books of Moses, the histories, the poetry and wisdom, and the prophets. This page is the
+reference desk for the Hebrew Scriptures — what the collection is and how it is arranged, the text we translate
+from and the scribal marks we keep, the older witnesses the notes weigh, and the one decision that marks nearly
+every page: rendering the divine Name as <strong>Jehovah</strong>, not "the LORD." It's a <strong>living
+page</strong> — updated as the method takes shape.</p>
+
+<figure class="ms-figure">
+  <img src="img/great-isaiah-scroll.jpg" width="1040" height="639" loading="lazy"
+    alt="Two columns of the Great Isaiah Scroll from Qumran — dense hand-written Hebrew on warm parchment, with an ancient crack running between the sheets"/>
+  <figcaption>
+    <span class="ms-name">The Great Isaiah Scroll — Qumran, 2nd century BC</span>
+    Two columns of the <em>Great Isaiah Scroll</em> (1QIsa<sup>a</sup>), from Cave 1 at Qumran — the oldest
+    complete copy of any book of the Bible, roughly a thousand years older than the medieval manuscripts behind
+    the standard Hebrew text, and yet word-for-word almost the same.
+    <span class="ms-credit">Photograph: Ardon Bar Hama — via
+    <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · public domain (detail)</span>
+  </figcaption>
+</figure>
+
+<div class="panel prose nt-panel1">
+  <h2 style="margin-top:2px">What it is, and how it's arranged</h2>
+  <p><strong>Two names for one library.</strong> Christians call it the <strong>Old Testament</strong>; the
+  Jewish tradition calls it the <strong>Tanakh</strong> — an acronym for its three parts: <em>Torah</em> (the
+  Law), <em>Nevi'im</em> (the Prophets), and <em>Ketuvim</em> (the Writings). It is the same collection of
+  Scriptures, counted two ways: <strong>39 books</strong> in the common Christian reckoning, or
+  <strong>24</strong> in the Jewish, which groups the material differently (the twelve Minor Prophets are one
+  scroll, "The Twelve"; Samuel, Kings, and Chronicles are one book each). Written over roughly a thousand years,
+  almost entirely in Hebrew, with a few passages in Aramaic (parts of Daniel and Ezra).</p>
+  <p><strong>The order differs, too.</strong> The Jewish Tanakh runs Law → Prophets → Writings and ends on
+  Chronicles, looking toward a return. The Christian Old Testament regroups the same books by kind — Law,
+  History, Poetry and Wisdom, Prophets — and ends on Malachi, looking forward to a coming messenger. This
+  translation follows the familiar Christian book-order for navigation, while noting the Hebrew arrangement
+  where it matters (the placement of Daniel among the Writings, for instance).</p>
+</div>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">The source text — the Masoretic Text</h2>
+  <p>The Hebrew is translated from one remarkably stable traditional text: the <strong>Masoretic Text</strong>,
+  the edition fixed and safeguarded by the <em>Masoretes</em>, generations of Jewish scribe-scholars working
+  from roughly the 7th to the 10th centuries AD. Hebrew was first written with consonants only; the Masoretes
+  added, above and below the ancient letters, a precise system of <strong>vowel points</strong> and
+  <strong>cantillation marks</strong> (the <em>te'amim</em>, which double as musical and punctuation signs) —
+  preserving not just the letters but exactly how the text was to be read and chanted. Their standardization was
+  so thorough that medieval manuscripts a continent apart agree letter for letter.</p>
+  <p>This project translates the digital Hebrew of <strong>Mechon-Mamre</strong> (the Leningrad/Aleppo
+  tradition), and it deliberately keeps the scribes' own marks visible rather than smoothing them away:</p>
+  <ul class="prose-list">
+    <li>The scroll's paragraph breaks — <strong>petuchah</strong> <span class="hebph">{פ}</span> ("open") and
+    <strong>setumah</strong> <span class="hebph">{ס}</span> ("closed") — are shown where the text marks them.</li>
+    <li><strong>Ketiv / qere</strong> — the places where the tradition <em>writes</em> one thing (ketiv) and
+    <em>reads</em> another (qere) are kept and noted, not silently harmonized.</li>
+    <li>The famous <strong>oddities of the letters</strong> are preserved and explained — the shrunken
+    <strong>small aleph</strong> that opens Leviticus (<a href="leviticus-1.html#v1">Vayiqra</a>, 1:1), the two
+    <strong>inverted nuns</strong> that bracket the Song of the Ark in Numbers (10:35–36), the oversized and
+    dotted letters elsewhere: ancient scribal signals the tradition has carried for two millennia.</li>
+  </ul>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">The witnesses the notes consult</h2>
+  <p>The Masoretic Text is the base, but it is not the only ancient copy. Where a reading is disputed the notes
+  weigh the older and independent witnesses — always <strong>noted, never silently adopted</strong>
+  (the Masoretic reading stands unless the note argues otherwise):</p>
+  <div class="shelf">
+    <div class="sv"><b>The Dead Sea Scrolls</b> (c. 250 BC – 68 AD) — the Qumran manuscripts, a thousand years
+    older than the medieval Masoretic codices; the Great Isaiah Scroll above is the showpiece.</div>
+    <div class="sv"><b>The Septuagint (LXX)</b> — the pre-Christian Greek translation of the Hebrew, quoted
+    constantly in the New Testament; consulted through the printed <em>critical</em> editions (Göttingen,
+    Rahlfs-Hanhart), since the great Greek codices (Vaticanus, Sinaiticus) are damaged in early Genesis.</div>
+    <div class="sv"><b>The Samaritan Pentateuch</b> — the Torah as preserved by the Samaritan community in its
+    own script, an independent line of transmission.</div>
+    <div class="sv"><b>The Targums</b> — the ancient Aramaic translations-with-paraphrase (Onkelos, Jonathan),
+    a window on how the text was understood in the synagogue.</div>
+    <div class="sv"><b>The Peshitta</b> — the Syriac (Aramaic) translation, an early Eastern-church witness.</div>
+    <div class="sv"><b>The Vulgate</b> — Jerome's Latin, made partly from the Hebrew of his day; it is exactly
+    what the <strong>Douay-Rheims</strong> on our seven-version shelf renders into English.</div>
+  </div>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">How do we know the Hebrew text is reliable?</h2>
+  <p>The worry is natural: if the oldest complete medieval manuscripts of the Masoretic Text date from around
+  the 10th–11th centuries AD, how do we know they preserve what was written a thousand years and more before?
+  Two things answer it.</p>
+  <ul class="prose-list">
+    <li><strong>The Masoretes were fanatical copyists.</strong> They counted the letters of each book, marked
+    its middle letter and middle word, and recorded the tally in the margins, so that a single dropped letter
+    would betray itself. Their whole craft was built to transmit an already-fixed text without drift — and it
+    worked: their manuscripts agree with one another to an astonishing degree.</li>
+    <li><strong>The Dead Sea Scrolls let us check.</strong> When the Qumran scrolls surfaced in 1947, they
+    handed us Hebrew Bible manuscripts a <em>thousand years older</em> than anything previously known. The
+    verdict, most famously on the Great Isaiah Scroll: substantially the same text. The differences are mostly
+    spelling and small variants; the book you read is the book they read.</li>
+  </ul>
+  <p>Honesty requires the other half, too. In a few books the ancient <strong>versions preserve a genuinely
+  different edition</strong> — the Septuagint of Jeremiah, for instance, is about a seventh shorter than the
+  Hebrew and arranged differently, and some Qumran copies match it; the Samaritan Torah has its own harmonizing
+  expansions. This translation follows the Masoretic Text but <strong>flags such divergences where they matter</strong>,
+  laying out the readings with their pedigrees rather than pretending the tradition is seamless.</p>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">The Name: why this translation says "Jehovah"</h2>
+  <p>The defining decision of this Old Testament is what to do with the personal name of God. Some 6,800 times
+  the Hebrew writes four consonants — <span class="hebph" dir="rtl">יהוה</span>, <strong>YHWH</strong>, the
+  <em>Tetragrammaton</em> ("four letters"). Out of reverence, the Jewish reading tradition long ago stopped
+  pronouncing it, saying <em>Adonai</em> ("my Lord") aloud instead; the Masoretes marked this by pointing the
+  written YHWH with the vowels of Adonai — a standing "read it as Lord" instruction (a <em>qere perpetuum</em>).
+  Following that tradition, <strong>most English Bibles print "the LORD"</strong> in small capitals wherever the
+  name stands — a title in place of the Name.</p>
+  <p>This translation does the opposite: it <strong>keeps the Name visible</strong>, rendering it
+  <strong>Jehovah</strong> — the traditional English form (the ASV and the New World Translation use it too;
+  Tyndale and the King James translators knew it). The form <em>Jehovah</em> itself comes from reading YHWH's
+  consonants with Adonai's borrowed vowels; scholars reconstruct the original pronunciation as
+  <em>Yahweh</em>. This library uses "Jehovah" as the established English name, not as a claim about exact
+  pronunciation — and it never prints "the LORD" for the Name, not even inside a quotation, so the reader
+  always sees where the personal name of God actually stands. That single choice shapes the whole translation,
+  and it is the Hebrew Scriptures' counterpart to the neutrality problem the Greek Scriptures open on.</p>
+</div>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">What carries through — the method</h2>
+  <p>Everything that makes this a librarian's Bible and not a preacher's holds from the first verse of Genesis:
+  an <strong>essentially literal</strong> rendering in natural modern English (<em>vault</em>, not "firmament";
+  <em>side</em>, not "rib"); the <strong>seven-version shelf</strong> — NIV, KJV, Douay-Rheims, Living Bible,
+  1599 Geneva, ASV, and NWT — compared under every chapter; the <strong>neutrality rule</strong>, laying out
+  contested readings (the sons of God in Genesis 6, the date of the Exodus, the authorship of the Torah) with
+  their pedigrees and casting no vote; the <strong>echo system</strong>, flagging a word or motif when it first
+  appears and paying it off when it returns; and the <strong>honesty habits</strong> — hapax and uncertain
+  words called uncertain, anachronisms and source-critical seams shown, not sanded. The Library grows a
+  dictionary, an encyclopedia, an atlas, a chronology, and a concordance built from this translation's own
+  English as the chapters arrive.</p>
+</div>
+
+<div class="panel">
+  <p style="margin:0 0 6px"><strong>The Hebrew Scriptures begin at the beginning — Genesis 1.</strong></p>
+  <p class="muted" style="margin:0 0 12px">"In the beginning God created the heavens and the earth." From the
+  seven days and the garden through the flood, Babel, and the call of Abraham, the first book lays the ground
+  the whole Bible builds on. Browse everything published so far in the Table of Contents.</p>
+  <a class="btn" href="genesis-1.html">Read Genesis 1 →</a>
+  <a class="btn" href="toc.html" style="margin-left:8px">Table of Contents →</a>
+</div>"""
+    out = page(f"The Old Testament — {SITE_NAME}", body, active="ot",
+               desc="Introducing the Old Testament (the Hebrew Scriptures / Tanakh) in The MisterLibrarian "
+                    "Bible Project: what the Hebrew Bible is and how it is arranged, the Masoretic source text "
+                    "and its scribal apparatus, the witnesses the notes weigh (the Dead Sea Scrolls, the "
+                    "Septuagint, the Samaritan Pentateuch, the Targums), how we know the text is reliable, and "
+                    "why the translation renders the divine Name as Jehovah.")
+    open(os.path.join(OUT, "old-testament.html"), "w", encoding="utf-8").write(out)
 
 
 def build_new_testament():
@@ -2895,6 +3063,7 @@ def main():
     build_reading()
     build_index(chapters)
     build_about()
+    build_old_testament()
     build_new_testament()
     build_book_intros()
     build_chronology()
