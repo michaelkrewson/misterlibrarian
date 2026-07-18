@@ -1,0 +1,38 @@
+{
+ "newton-chronology-of-ancient-kingdoms.txt": {
+  "author": "Isaac Newton",
+  "bytes": 553006,
+  "fetched_at": "2026-07-18T22:50:51.756792+00:00",
+  "note": "Newton's attempt to re-date the ancient world against the biblical record \u2014 his own version of the project behind this site's Chronology feature. His conclusions are now dated, but the method (weighing sources, not asserting) is the same spirit.",
+  "published": "1728 (posthumous)",
+  "sha256": "a5aa2122bd499c2c80e6f7ce8656c1d906f174156f25b67595ab8609b3b460c3",
+  "source": "Project Gutenberg #15784",
+  "title": "The Chronology of Ancient Kingdoms Amended",
+  "url": "https://www.gutenberg.org/cache/epub/15784/pg15784.txt",
+  "written": "before 1727"
+ },
+ "newton-observations-daniel-apocalypse.txt": {
+  "author": "Isaac Newton",
+  "bytes": 450240,
+  "fetched_at": "2026-07-18T22:50:48.716859+00:00",
+  "note": "Newton's historicist reading of the two great apocalyptic books \u2014 the same Daniel and Revelation this translation has begun. The manuscript in which he calculated the world would not end before the year 2060 is a separate unpublished paper (Yahuda MS 7.3g), not this book.",
+  "published": "1733 (posthumous)",
+  "sha256": "ee7bdf6b96ce830da6bdb9e0c40a35a56205d1cfa2d07f885019f0b45b7baa03",
+  "source": "Project Gutenberg #16878",
+  "title": "Observations upon the Prophecies of Daniel, and the Apocalypse of St. John",
+  "url": "https://www.gutenberg.org/cache/epub/16878/pg16878.txt",
+  "written": "before 1727"
+ },
+ "newton-two-notable-corruptions-of-scripture.txt": {
+  "author": "Isaac Newton",
+  "bytes": 138620,
+  "fetched_at": "2026-07-18T22:50:55.128521+00:00",
+  "note": "Newton's textual criticism arguing that the Johannine Comma (1 John 5:7) and 1 Timothy 3:16 are later corruptions \u2014 the two passages the site's New Testament apparatus page already names as famously disputed. NB: this is OCR of a scanned reprint, so expect scanning artefacts; the 1733/1728 works above are clean Gutenberg transcriptions.",
+  "published": "1754 (posthumous); this copy is the 1841 reprint",
+  "sha256": "82343eae44ab658acfed1020f46b05d8ecf41fd01db746df9382363254a1a587",
+  "source": "Internet Archive (83824690-\u2026), OCR full text",
+  "title": "An Historical Account of Two Notable Corruptions of Scripture",
+  "url": "https://archive.org/download/83824690-an-historical-account-of-two-notable-corruptions-of-scripture/83824690-An-Historical-Account-of-Two-Notable-Corruptions-of-Scripture_djvu.txt",
+  "written": "c. 1690 (a letter to John Locke)"
+ }
+}

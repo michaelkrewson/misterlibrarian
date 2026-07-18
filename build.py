@@ -2309,6 +2309,134 @@ def build_ask_enoch():
     open(os.path.join(OUT, "ask-enoch.html"), "w", encoding="utf-8").write(out)
 
 
+def build_ask_newton():
+    """Ask Mr. Librarian: did Isaac Newton write about the Bible? Presents his three
+    public-domain biblical works, their genuine fit with this site (Daniel/Revelation,
+    the Johannine Comma on the NT apparatus page, the Chronology), and — under the
+    project's neutrality rule — handles his private anti-Trinitarianism factually,
+    distinguishing his sound textual findings from his partisan doctrinal motive. The
+    works themselves are archived (source/newton/ + S3) by tools/archive_newton.py."""
+    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+<h1 class="pagetitle">Did Isaac Newton write about the Bible?</h1>
+<h2 style="margin-top:2px">The scientist's other library — and where it touches this one</h2>
+
+<div class="qbox">
+  <div class="qlabel">A reader asked</div>
+  <p>"I've heard that Isaac Newton — the gravity and calculus Newton — wrote a huge amount about the Bible and
+  prophecy. Is that true? And is any of it something you'd use in this translation?"</p>
+</div>
+
+<div class="panel prose">
+  <p><strong>It is true, and it is stranger than most people know.</strong> The man who wrote the
+  <em>Principia</em> left behind <em>more</em> words on theology, prophecy, and church history than on physics
+  and mathematics combined — on the order of a million or two, most of it never published in his lifetime and
+  only fully catalogued in the last century (the Yahuda and Portsmouth papers). Newton saw no wall between the
+  two studies. He believed God had written two books — the book of nature and the book of Scripture — and that
+  both were coded, lawful, and open to patient decoding by the same careful mind. He read Hebrew and Greek,
+  collated manuscripts, drew up chronologies, and worked over Daniel and Revelation the way he worked over the
+  orbits of the planets: as a system with hidden rules, to be recovered, not invented.</p>
+  <p>Three of his biblical works were printed after his death and are long out of copyright. Remarkably, all
+  three land on ground this project already stands on — so yes, they are worth knowing, and we keep our own
+  copies so a dead link can never lose them (see <em>"Did we use any of it?"</em> below).</p>
+</div>
+
+<h2>1. His reading of Daniel and Revelation (1733)</h2>
+<div class="panel prose">
+  <p><strong>"Observations upon the Prophecies of Daniel, and the Apocalypse of St. John."</strong> This is
+  Newton's big published book of biblical interpretation, and it takes on exactly the two apocalyptic books this
+  translation has begun — <a href="daniel-1.html">Daniel</a> and <a href="revelation-1.html">Revelation</a>. He
+  read them as a <em>historicist</em>: the beasts, horns, and seals are a symbolic map of real empires and
+  church history, to be matched piece by piece against the record. He treated the imagery almost as a fixed
+  vocabulary — a sun for a king, a beast for a kingdom — and decoded it with the same confidence he brought to
+  a physical law.</p>
+  <p><strong>What to make of it.</strong> Newton is dazzling here, and dated. His historicist scheme — reading
+  the prophecies as a running commentary on the rise of Rome and the medieval church — is one honorable
+  tradition among several (this library lays those traditions out, with their pedigrees, in the Daniel and
+  Revelation notes, and casts no vote). And a famous footnote: in a <em>separate, unpublished</em> paper Newton
+  once calculated that the world could not end before the year <strong>2060</strong> — reckoning from Daniel's
+  1,260 "days" read as years. It is often misreported as a doomsday prediction; his own point was the opposite.
+  He was rebuking the date-setters of his day: not "the end comes in 2060," but "stop announcing it sooner —
+  the arithmetic won't even allow it." A scientist's caution, aimed at zealots.</p>
+</div>
+
+<h2>2. His textual criticism — and the Johannine Comma (1754)</h2>
+<div class="panel prose">
+  <p><strong>"An Historical Account of Two Notable Corruptions of Scripture,"</strong> written as a private
+  letter to John Locke around 1690. This is Newton at his most rigorous, and it touches this site at its most
+  sensitive seam. He argues, verse by verse and manuscript by manuscript, that <em>two</em> famous
+  Trinitarian proof-texts were not original but crept into the Bible later: the <strong>Johannine Comma</strong>
+  (1&nbsp;John&nbsp;5:7, "there are three that bear record in heaven, the Father, the Word, and the Holy
+  Ghost") and the reading of <strong>1&nbsp;Timothy&nbsp;3:16</strong> ("<em>God</em> was manifest in the
+  flesh" versus "<em>he who</em> was manifest").</p>
+  <p><strong>Here is the striking part: on the textual facts, Newton was right,</strong> and modern scholarship
+  — of every doctrinal stripe — agrees with him. The Johannine Comma is absent from every early Greek
+  manuscript and every early translation; it surfaces first in late Latin copies and is now dropped or bracketed
+  by essentially all critical editions. That is precisely why this site's <a href="new-testament.html">New
+  Testament introduction</a> already names the Comma among the handful of famously disputed passages the notes
+  will flag when we reach them. So Newton's <em>method</em> here — weigh the oldest and widest manuscript
+  witnesses, ask which reading best explains how the others arose — is the very method the Greek-Scriptures page
+  describes. When 1&nbsp;John&nbsp;5 is eventually translated, his letter will be the classic witness in the
+  note.</p>
+</div>
+
+<h2>3. His biblical chronology (1728)</h2>
+<div class="panel prose">
+  <p><strong>"The Chronology of Ancient Kingdoms Amended."</strong> Newton spent decades trying to fix the dates
+  of the ancient world — Egypt, Greece, Assyria, Israel — against the biblical record and the astronomy he could
+  reconstruct, arguing the standard chronologies of his day had stretched history too long. It is, in effect,
+  his own version of the project behind this site's <a href="chronology.html">Chronology</a> feature: the same
+  impulse to place the story on a timeline. His specific conclusions have not survived the two centuries of
+  archaeology since; but the instinct — build the timeline from the sources, show your working — is a kindred
+  one.</p>
+</div>
+
+<h2>The one thing to hold at arm's length</h2>
+<div class="panel prose bi-debates">
+  <p>There is a reason to read Newton's biblical work with care, and it would be dishonest to hide it. Privately,
+  Newton was an <strong>anti-Trinitarian</strong> — an "Arian," in the old term: he held that the Father alone is
+  God in the fullest sense and that the Son is subordinate. He kept it secret (it would have cost him his
+  Cambridge post and worse), but it shaped what he studied. His <em>Two Notable Corruptions</em> is not
+  disinterested textual criticism that happened to land on two verses — it is aimed, deliberately, at the two
+  verses most used to prove the Trinity.</p>
+  <p>So the honest distinction is this. Newton's <em>textual finding</em> — that the Johannine Comma is a late
+  insertion — stands on its own evidence and is accepted today by scholars who hold the Trinity as firmly as any
+  (the doctrine never rested on that one disputed verse). But Newton's <em>larger conclusion</em> — that the
+  deity of Christ itself is a corruption — is a doctrinal position, and a contested one, exactly the terrain of
+  this library's hardest question: <a href="ask-jesus-god.html">was the Word "God," or "a god"?</a> On that
+  question the site does what it always does — lays out the readings with their pedigrees and does not cast a
+  vote. Newton belongs in that conversation as a famous, formidable <em>witness</em> for one side; he does not
+  get to be the judge, and neither do we.</p>
+</div>
+
+<h2>Did we use any of it — and where are the books?</h2>
+<div class="panel prose">
+  <p><strong>Where Newton already touches this site:</strong> the <a href="new-testament.html">manuscript
+  apparatus page</a> flags the Johannine Comma he demolished; <a href="daniel-1.html">Daniel</a> and
+  <a href="revelation-1.html">Revelation</a> are the books of his <em>Observations</em>; and the
+  <a href="chronology.html">Chronology</a> is the project he attempted first. As the relevant chapters arrive, a
+  Newton observation will occasionally appear in a note — clearly labelled as a voice from history, never as the
+  translation's own ruling.</p>
+  <p><strong>And we keep the works themselves.</strong> All three are fully public domain (Newton died in 1727),
+  and this library now archives its own durable copies so they can't be lost to a broken link — mirrored the way
+  we mirror the Hebrew and Greek source texts. You can read them at their homes: the
+  <a href="https://www.gutenberg.org/ebooks/16878" rel="noopener">Observations on Daniel &amp; the Apocalypse</a>
+  and the <a href="https://www.gutenberg.org/ebooks/15784" rel="noopener">Chronology of Ancient Kingdoms</a> at
+  Project Gutenberg, and the <a href="https://archive.org/details/83824690-an-historical-account-of-two-notable-corruptions-of-scripture" rel="noopener">Two
+  Notable Corruptions of Scripture</a> at the Internet Archive.</p>
+  <p class="muted" style="font-size:12px">The librarian's takeaway: the most famous scientist in history spent
+  his hidden hours doing something very like what this project does — sourcing, collating, comparing, and
+  refusing to take a text on trust. On his best days (the manuscripts) he was decades ahead of his time; on his
+  boldest (the prophecy timetable, the chronology) he over-read the evidence; and on the deepest question he
+  took a side this library will not. Worth knowing, worth keeping — and worth weighing for yourself.</p>
+</div>"""
+    out = page(f"Did Isaac Newton write about the Bible? — {SITE_NAME}", body, active="ask",
+               desc="Isaac Newton wrote more on the Bible than on physics. His Observations on Daniel and "
+                    "Revelation, his textual criticism of the Johannine Comma (1 John 5:7), and his biblical "
+                    "chronology — how they fit The MisterLibrarian Bible Project, his private anti-Trinitarianism "
+                    "handled honestly, and where to read the public-domain works.")
+    open(os.path.join(OUT, "ask-newton.html"), "w", encoding="utf-8").write(out)
+
+
 def build_ask_index():
     body = """<h1 class="pagetitle">\U0001F4D6 Ask Mr. Librarian</h1>
 <p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
@@ -2328,6 +2456,10 @@ exactly how this series grows.</p>
   <a class="card" href="ask-creation-days.html"><div class="card-t">How long were the days of creation?</div>
   <div class="card-d">The elastic Hebrew word <em>yom</em>, the sunless first days and the open seventh, and the
   ordinary-day, day-age, and literary-framework readings — with their pedigrees, no vote cast.</div></a>
+  <a class="card" href="ask-newton.html"><div class="card-t">Did Isaac Newton write about the Bible?</div>
+  <div class="card-d">The scientist wrote more on Scripture than on physics — his Daniel &amp; Revelation, his
+  textual criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled
+  honestly.</div></a>
 </div>"""
     out = page(f"Ask Mr. Librarian — {SITE_NAME}", body, active="ask",
                desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
@@ -3076,6 +3208,7 @@ def main():
     build_ask_jesus_god()
     build_ask_jehovah()
     build_ask_creation_days()
+    build_ask_newton()
     build_contact()
     build_thanks()
     n_words, n_refs = build_concordance(chapters)
