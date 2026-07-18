@@ -344,6 +344,11 @@ DICTIONARY = [
      "'Leah's eyes were rakkot' (29:17) — and the shelf cannot agree what that means, because the word runs from 'weak, dull' to 'tender, delicate, soft.' KJV 'tender eyed'; many read it as a DEFECT — weak or watery eyes — set against Rachel's full-bodied beauty, so the sister no one chose is marked from the start; others hear a compliment, 'soft/lovely eyes,' her one loveliness. The Hebrew leaves it open, and the ambiguity is almost kind: whether her eyes were her flaw or her charm, she was the unloved one (see senuah), and it is she God will bless with the sons.", (29, 17)),
     ("senuah", "senuah", "שְׂנוּאָה", "senuah",
      "'HATED' — literally, from sane, 'to hate'; but Hebrew uses it for the LESS-loved of two, so 'unloved' catches the sense: 'Jehovah saw that Leah was senuah, and opened her womb' (29:31, 33). The same idiom governs a real law — the man with a loved wife and a 'hated' (unloved) one may not deny the unloved wife's firstborn his double portion (Deuteronomy 21:15-17), the exact situation this chapter sets up. The heart of it: God SIDES WITH THE UNLOVED. Rachel is adored and barren; Leah is unloved and fruitful — and from unloved Leah come Levi (the priesthood) and Judah (the kings, and the Messiah).", (29, 31)),
+    # ---- Genesis 30 (Hebrew) ----
+    ("dudaim", "dudaim", "דּוּדָאִים", "dudaim",
+     "MANDRAKES — a low plant of the nightshade family whose forked, vaguely human root and sweet, heady fruit made it the ancient Near East's great love-charm and fertility-drug (KJV 'mandrakes'; the name echoes dod, 'beloved,' so 'love-apples'). Reuben finds them at the wheat harvest, and Rachel trades a night with Jacob for them (30:14-16) — hoping they will open her womb. The chapter's irony is pointed: it is LEAH who conceives from that night, not Rachel; the mandrakes do nothing, and Rachel bears only later, when 'God remembered' her (30:22). The plant returns in the Song of Songs, where the lovers' mandrakes 'give forth fragrance' (7:14).", (30, 14)),
+    ("aqod-naqod", "aqod · naqod · talu", "עָקֹד נָקֹד טָלוּא", "aqod, naqod, talu",
+     "The FLOCK-MARKINGS at the heart of Jacob's wage-deal, kept distinct: aqod 'streaked / banded,' naqod 'speckled' (small spots), talu 'spotted / patched' (large blotches), and chum 'dark, brown.' In a flock of white sheep and dark goats these off-colored animals are the odd minority — which is exactly why Jacob asks for them as his wages (30:32-43): a bargain that looks generous to Laban and becomes, through Jacob's peeled rods and selective breeding, a fortune. KJV renders the trio 'ringstraked, speckled, and spotted.'", (30, 32)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -1202,7 +1207,7 @@ ENCYCLOPEDIA = [
               "the fatal hinge — 'a new king arose who did not know Joseph' (1:8). The rescue is forgotten; "
               "the rescued become slaves. His bones, by his own oath, will be carried out of Egypt at the "
               "Exodus (Genesis 50:25; Exodus 13:19) — the one man of Genesis who makes the journey home.",
-         refs=[("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
+         refs=[(30, 24), ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
 
     # ---- Exodus 2 ----
     dict(slug="moses", name="Moses", kind="person", aliases=["Moses"],
@@ -1426,7 +1431,7 @@ ENCYCLOPEDIA = [
               "LABAN THE ARAMEAN who, a generation later, will take in the fleeing Jacob, swap Leah for Rachel on "
               "the wedding night, cheat his wages ten times over, and chase him down over stolen household idols "
               "(Genesis 29–31) — the grasping uncle whose greed the gold at the well already forecasts.",
-         refs=[(24, 29), (24, 50), (27, 43), (28, 2), (28, 5), (29, 5), (29, 13), (29, 25)], videos=[]),
+         refs=[(24, 29), (24, 50), (27, 43), (28, 2), (28, 5), (29, 5), (29, 13), (29, 25), (30, 27)], videos=[]),
     dict(slug="leah", name="Leah", kind="person", aliases=["Leah"],
          desc="Laban's elder daughter, and the unloved wife — married to Jacob by her father's night-time trick "
               "in place of Rachel, the sister Jacob actually loved (29:23-25). The narrator marks her from the "
@@ -1437,7 +1442,7 @@ ENCYCLOPEDIA = [
               "two most consequential sons of all: LEVI, father of the priesthood, and JUDAH, father of the kings "
               "and of the Messiah. She is buried beside Jacob at Machpelah (49:31) — not the wife he chose, but "
               "the wife in the ancestral tomb.",
-         refs=[(29, 16), (29, 23), (29, 31)], videos=[]),
+         refs=[(29, 16), (29, 23), (29, 31), (30, 9)], videos=[]),
     dict(slug="rachel", name="Rachel", kind="person", aliases=["Rachel"],
          desc="Laban's younger daughter and the love of Jacob's life — a shepherdess he meets at the well and "
               "serves fourteen years to marry (29:9-30). 'Beautiful in form and lovely to look at,' and beloved, "
@@ -1448,7 +1453,7 @@ ENCYCLOPEDIA = [
               "prophet hears her still weeping there for her exiled children — 'Rachel weeping for her children, "
               "refusing to be comforted' (Jeremiah 31:15), the verse Matthew hears again over Bethlehem's "
               "murdered infants (Matthew 2:18).",
-         refs=[(29, 6), (29, 18), (29, 30)], videos=[]),
+         refs=[(29, 6), (29, 18), (29, 30), (30, 1)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -1499,7 +1504,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
@@ -1843,6 +1848,13 @@ XREFS = [
     (("Numbers", 1, 46), (15, 5), "603,550 fighting men — the promise made countable: God had told Abram to 'count the stars, if you are able… so shall your seed be' (15:5), a seed as uncountable as heaven; now it is an army numbered to the fifty"),
     (("Numbers", 1, 7), (29, 35), "Nahshon, chieftain of Judah, heads the muster — Judah, Leah's son named 'this time I will PRAISE Jehovah' (29:35), now leads the host and camps first, on the east: the praise-tribe at the head of the army"),
     (("Numbers", 1, 20), (29, 32), "'the sons of Reuben, Israel's firstborn' counted first — Leah's firstborn, 'Jehovah has looked on my affliction' (29:32); he keeps the honor of being numbered first, though the leadership has already passed to Judah"),
+
+    # ---- Genesis 30 ----
+    ((30, 3),  (16, 2),  "'that I may be BUILT UP through her' — ibbaneh, the ben/banah pun; Rachel gives Bilhah to Jacob in the exact words and gesture with which Sarai gave Hagar to Abram (16:2): the barren matriarch building a house through a maidservant"),
+    ((30, 22), (8, 1),   "'God REMEMBERED Rachel' — zakhar, the verb that turns a story: as 'God remembered Noah' and the flood began to recede (8:1), so God remembers Rachel and opens her womb"),
+    ((30, 22), (29, 31), "God opens Rachel's womb — the mercy that had opened Leah's (29:31); both sisters' children come as God's gift, not by the mandrakes or the striving of this chapter"),
+    ((30, 27), (12, 3),  "'Jehovah has blessed me FOR YOUR SAKE' — Laban, a pagan, blessed on Jacob's account: the Abrahamic promise that 'in you all the families of the earth will be blessed' (12:3) at work, as it later will be through Joseph in Egypt"),
+    ((30, 43), (17, 2),  "'the man increased EXCEEDINGLY' — me'od me'od, the 'very, very' of the multiply-blessing spoken over Abraham (17:2), now filling Jacob's flocks and household in Laban's own land"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2205,6 +2217,8 @@ VERSE_OF_DAY = [
     ("Leviticus", 1, 9, "The refrain of the whole altar: 'a burnt-offering, an offering by fire, a soothing aroma to Jehovah' — the exact phrase of Noah's first altar (Genesis 8:21)."),
     ("Numbers", 1, 46, "The star-promise made countable: 'all those mustered were 603,550' — the seed once as uncountable as the stars (Genesis 15:5) is now an army you can number to the fifty."),
     ("Numbers", 1, 53, "The guardians in the ring: 'the Levites shall camp around the tabernacle… that there be no wrath upon the congregation' — the one tribe left off the war-roll is the wall that keeps a holy God's people safe."),
+    (30, 2, "The limit of a husband and the givenness of life: 'Am I in God's place, who has withheld from you the fruit of the womb?' Children are God's to give."),
+    (30, 22, "The turn of the whole chapter: 'And God remembered Rachel, and God listened to her and opened her womb' — after all the striving, the answer comes as gift."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2392,6 +2406,9 @@ CHRON_CHAPTERS = {
     "gen29": dict(era="patriarchs",
                   when="Jacob at the well of Haran, and Laban's morning trick — Leah for Rachel; two wives, fourteen years' service, and Leah's first four sons.",
                   clock="AM ≈ 2185–2199 · c. 1760–1746 BC — the first years of Jacob's twenty in Haran. He serves seven years for Rachel, is tricked into Leah, serves seven more; the twelve tribes begin to be born (Reuben, Simeon, Levi, Judah to Leah). The deceiver's own schooling in being deceived."),
+    "gen30": dict(era="patriarchs",
+                  when="The war of the wives — the maidservants' sons, the mandrake bargain, and eight more children (Dan through Joseph); then Jacob out-shrewds Laban with the speckled flocks and grows rich.",
+                  clock="AM ≈ 2192–2205 · c. 1753–1740 BC — the middle and later years of Jacob's twenty in Haran. Most of the twelve tribes are born here (Dan, Naphtali, Gad, Asher, Issachar, Zebulun, and Joseph, plus Dinah); with Joseph's birth Jacob turns for home, and in his last six years builds the flocks that make him wealthy enough to leave."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2504,6 +2521,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2185", trad="c. 1760 BC", event="Jacob serves Laban — deceived into marrying Leah, then Rachel; the tribes begin to be born",
          note="Jacob reaches Haran, meets Rachel at the well, and serves Laban seven years for her — 'and they seemed to him but a few days, for the love he had for her.' But on the wedding night Laban substitutes his elder daughter Leah, and in the morning 'behold, it was Leah!' (Genesis 29). 'Why have you deceived me?', Jacob demands — and Laban answers with the very principle Jacob had trampled: 'we do not give the younger before the firstborn.' The deceiver is deceived; he serves seven more years for Rachel too. God, seeing Leah unloved, gives her the first four sons — Reuben, Simeon, Levi, and Judah — so that the priestly and the royal (and messianic) lines both spring from the wife nobody chose.",
          ref=("Genesis", 29, 25)),
+    dict(era="patriarchs", am="≈2192–2205", trad="c. 1753–1740 BC", event="The tribes born and Jacob grows rich — the war of the wives, and the speckled flocks that outwit Laban",
+         note="Through the bitter fertility-contest of Rachel and Leah and their two maidservants, eight more of Jacob's children are born (Genesis 30): Dan and Naphtali to Bilhah, Gad and Asher to Zilpah, Issachar and Zebulun and the daughter Dinah to Leah, and at last — 'God remembered Rachel' — Joseph, to the wife who had waited longest. With Joseph born Jacob asks to go home, but Laban, who admits 'Jehovah has blessed me for your sake,' bargains him into staying for wages of the speckled and spotted flock. Jacob answers Laban's cheating with the peeled rods and shrewd selective breeding, and 'the man increased exceedingly' — so that within six years the near-empty-handed fugitive is rich in flocks, servants, and camels, and ready to return to Canaan.",
+         ref=("Genesis", 30, 22)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
