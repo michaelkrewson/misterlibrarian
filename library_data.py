@@ -356,6 +356,13 @@ DICTIONARY = [
      "Household GODS — small domestic idols or figurines (KJV 'images'), used for luck and divination and, in the customs of that world, apparently bound up with family inheritance rights. Rachel steals her father's teraphim as she leaves (31:19), and why she wanted them the text leaves open: to press the inheritance Laban denied her (v. 14), for their supposed protection, or — the rabbis' kinder guess — to wean her father off idolatry. She hides them in the camel's saddle and sits on them, and 'the gods of Laban' end up sat upon (31:34). The word recurs across the Bible as a mark of forbidden worship — in Micah's shrine (Judges 17-18), in Michal's bed-decoy for David (1 Samuel 19:13), and among the idolatries Josiah purges (2 Kings 23:24).", (31, 19)),
     ("pachad-yitzchak", "Pachad Yitzchak", "פַּחַד יִצְחָק", "pachad Yitzchak",
      "'The FEAR of Isaac' — a rare divine title, found only in this chapter (31:42, 53): the God of Isaac named by the awe he inspires, 'the Awe-inspiring One whom Isaac reveres,' set beside 'the God of Abraham.' Pachad is dread, trembling reverence; some render it 'the Kinsman/Refuge of Isaac,' but the plain sense is the fear-of-God as a name for God himself. It is how Jacob distinguishes the true God of his fathers from 'the God of Nahor' that Laban swears by in the same breath (31:53) — the family's religion visibly dividing.", (31, 42)),
+    # ---- Genesis 32 (Hebrew) ----
+    ("qatonti", "qatonti", "קָטֹנְתִּי", "qatonti",
+     "'I am too SMALL' — literally 'I have become small' (from qaton, 'to be little'), Jacob's word at the head of his prayer: 'I am too small for all the kindness (chesed) and all the faithfulness you have shown your servant' (32:11; KJV 'I am not worthy'). It is the great reversal of his life spoken in one word: the man who spent every year grasping to be GREAT — who has just become 'two camps' of wealth — confesses himself little before God, remembering that he once crossed the Jordan with nothing but a walking-stick. Humility named exactly, not by self-hatred but by measuring oneself against undeserved grace.", (32, 11)),
+    ("israel", "Yisrael", "יִשְׂרָאֵל", "Yisrael",
+     "'He STRIVES with God' (or 'God strives / God rules') — the new name wrestled out of Jacob at the Jabbok: 'no longer Jacob, but Israel, for you have striven (sarita, from sarah, 'to strive, struggle, persist') with God and with men, and have prevailed' (32:29). It answers 'Jacob' ('heel-grabber, supplanter'): the man who always grasped by cunning now prevails by HOLDING ON — refusing, though crippled, to let go without a blessing. The name is re-confirmed at Bethel (35:10) and becomes the name of the whole nation, the 'children of Israel' — a people named not for a triumph but for a night-long, limping struggle with God that would not quit.", (32, 29)),
+    ("gid-hanasheh", "gid ha-nasheh", "גִּיד הַנָּשֶׁה", "gid ha-nasheh",
+     "'The SINEW of the nasheh' — the thigh-tendon (traditionally the sciatic nerve) that the wrestling angel touched, leaving Jacob limping (32:26, 33). Because of that night, 'the children of Israel do not eat the sinew of the thigh, to this day' — an observance kept in kosher law ever since (the nerve and its branches are removed from an animal's hindquarters, or the hindquarters not eaten at all). It is the one dietary custom Genesis itself explains, a scar of memory worked into the daily table: every meal recalls the night their father was crippled and crowned at once.", (32, 33)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -1491,6 +1498,18 @@ ENCYCLOPEDIA = [
          refs=[(31, 21), (31, 23), (31, 25)],
          coords=(32.31, 35.73, 1.0), approx=True,
          modern="The highlands of northwest Jordan, east of the Jordan River (the Ajlun/Jerash region)"),
+    dict(slug="jabbok", name="The Jabbok", kind="place", aliases=["Jabbok", "ford of the Jabbok", "Peniel", "Penuel", "Mahanaim"],
+         desc="A deep river-gorge east of the Jordan, a tributary running down to it through Gilead — and the "
+              "scene of the most famous night of Jacob's life. Its Hebrew name, YABBOQ, chimes with both "
+              "Ya'aqov ('Jacob') and the verb of that night, vayye'aveq, 'and he WRESTLED' (32:23-25): at the "
+              "ford of the Jabbok, Jacob wrestles a man until dawn and is renamed Israel. Two other names cluster "
+              "at the crossing: just before it he had met the angels and called the place MAHANAIM ('two camps,' "
+              "32:2-3), and after the wrestling he named the very spot PENIEL / Penuel, 'the Face of God,' "
+              "'for I have seen God face to face, and my life was delivered' (32:31). The river later marks a "
+              "boundary of the Ammonites and of the Amorite kingdom of Sihon.",
+         refs=[(32, 23), (32, 25), (32, 31)],
+         coords=(32.13, 35.68, 1.0), approx=True,
+         modern="The Zarqa River, north-central Jordan, flowing west into the Jordan"),
 
     # ---- Genesis 25 ----
     dict(slug="keturah", name="Keturah", kind="person", aliases=["Keturah"],
@@ -1512,7 +1531,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1522,7 +1541,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
@@ -1880,6 +1899,13 @@ XREFS = [
     ((31, 42), (29, 32), "'God has seen my AFFLICTION' — oni, the very word Leah spoke over Reuben's birth, 'Jehovah has looked on my affliction' (29:32): the God who sees the unloved wife sees the cheated servant"),
     ((31, 20), (27, 35), "Jacob 'stole the heart' of Laban (deceived him) — the ganav to match the mirmah with which 'your brother came… and took your blessing' (27:35): the deceiver's craft, now turned on his deceiver"),
     ((31, 53), (11, 29), "'the God of Abraham and the God of NAHOR' — Laban swears by the god of the family branch that stayed in the east; Nahor, Abraham's brother (11:29), is Laban's own ancestor, and their religions have visibly parted"),
+
+    # ---- Genesis 32 ----
+    ((32, 2),  (28, 12), "'the angels of God met him' — twenty years after the stairway at Bethel, where angels of God ascended and descended (28:12); the messengers of God bracket Jacob's whole exile, at the border going out and coming home"),
+    ((32, 12), (27, 41), "'deliver me from the hand of Esau' — the brother whose murder-grudge over the stolen blessing ('I will kill my brother Jacob', 27:41) drove the flight, now coming with four hundred men"),
+    ((32, 13), (22, 17), "'your seed as the sand of the sea' — Jacob holds God to the oath of the binding of Isaac, 'I will multiply your seed as the stars… and as the sand on the seashore' (22:17): you cannot let me be killed, if your own word is to stand"),
+    ((32, 29), (30, 8),  "'you have PREVAILED' — vatukhal, the very word Rachel cried at Naphtali's birth, 'I have prevailed' (30:8); but where she prevailed over her sister by scheming, Jacob prevails over God by refusing to let go"),
+    ((32, 31), (16, 13), "Peniel, 'I have seen God face to face' — the seeing-God that Hagar first named at her well, El Roi, 'the God who sees… have I even here seen him who sees me?' (16:13)"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2246,6 +2272,8 @@ VERSE_OF_DAY = [
     (30, 22, "The turn of the whole chapter: 'And God remembered Rachel, and God listened to her and opened her womb' — after all the striving, the answer comes as gift."),
     (31, 3, "The call home: 'Return to the land of your fathers and to your kindred, and I will be with you' — the Bethel promise coming due, twenty years on."),
     (31, 49, "The Mizpah stone — less a blessing than a fence: 'May Jehovah watch between me and you, when we are hidden from each other' — two rivals asking God to police a truce neither will keep on trust."),
+    (32, 27, "The clinging that becomes a blessing: 'I will not let you go unless you bless me' — the man who once stole a blessing now demands one, wounded, holding on in the dark."),
+    (32, 29, "The name that is a verdict: 'Your name shall no longer be Jacob, but Israel; for you have striven with God and with men, and have prevailed.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2439,6 +2467,9 @@ CHRON_CHAPTERS = {
     "gen31": dict(era="patriarchs",
                   when="Jacob flees Haran with his family and flocks; Rachel steals the household gods; Laban pursues and is warned off in a dream, and the two schemers part at the treaty-heap of Galeed and Mizpah.",
                   clock="AM ≈ 2205 · c. 1740 BC — the very end of Jacob's twenty years with Laban (he is about 97). Warned by God to go home, he flees across the Euphrates toward Gilead; Laban overtakes him after a seven-day chase, they trade accusations and make a boundary-covenant, and Laban goes home for good. Jacob is now poised to re-enter Canaan and face the brother he cheated."),
+    "gen32": dict(era="patriarchs",
+                  when="Coming home, Jacob is met by angels at Mahanaim, sends a lavish gift ahead to the brother he fears, prays his first prayer, and wrestles a man at the Jabbok until dawn — crippled, blessed, and renamed Israel.",
+                  clock="AM ≈ 2205 · c. 1739 BC — days after leaving Laban, on the threshold of Canaan, Jacob about 97. Terrified that Esau is coming with four hundred men, he divides his camp, prays, and sends waves of livestock as a gift; then, alone by night at the ford of the Jabbok, he is renamed Israel by the wrestler and limps away at sunrise to meet his brother. The turning point of his life and the moment the nation gets its name."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2557,6 +2588,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2205", trad="c. 1740 BC", event="Jacob flees Haran — Rachel steals the household gods; the treaty-heap at Galeed and Mizpah",
          note="Warned by God to return, and with Laban's goodwill soured, Jacob gathers his wives, eleven sons, and vast flocks and slips away across the Euphrates toward Gilead — while Rachel, unknown to him, steals her father's teraphim (household gods). Laban pursues for seven days, is warned in a dream to 'speak neither good nor bad,' and overtakes Jacob in the hills of Gilead; he ransacks the tents for his gods (Rachel hides them under the camel-saddle and sits on them) and finds nothing. After Jacob's long, bitter account of twenty years' faithful service, the two make a boundary-covenant and heap up stones — Laban names it in Aramaic (Jegar-sahadutha), Jacob in Hebrew (Galeed), the first Aramaic in the Bible — and set the Mizpah watchpost between them: 'May Jehovah watch between me and you.' In the morning Laban kisses his grandchildren and goes home for good; Jacob turns toward Canaan and the brother he wronged.",
          ref=("Genesis", 31, 49)),
+    dict(era="patriarchs", am="≈2205", trad="c. 1739 BC", event="The wrestling at the Jabbok — Jacob crippled, blessed, and renamed Israel",
+         note="On the threshold of Canaan, and terrified that Esau is marching to meet him with four hundred men, Jacob meets the angels of God at Mahanaim ('two camps'), sends a lavish gift of livestock ahead in waves to appease his brother, and prays the first recorded prayer of his life — 'I am too small (qatonti) for all the kindness you have shown your servant.' Then, having sent everyone across the ford of the Jabbok, 'Jacob was left alone, and a man wrestled with him until dawn' (Genesis 32). Crippled at the hip but refusing to let go without a blessing, he is given a new name: 'no longer Jacob, but Israel — for you have striven with God and with men, and have prevailed.' He names the place Peniel, 'the Face of God,' and limps away at sunrise to meet Esau. It is the turning point of the Jacob story and the moment the nation of Israel receives its name; the sinew of the thigh is not eaten to this day in memory of it.",
+         ref=("Genesis", 32, 29)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
