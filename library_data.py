@@ -324,6 +324,11 @@ DICTIONARY = [
      "SAVORY FOOD — 'tasty things,' a delicacy (from ta'am, 'taste'): the dish of game Isaac craves and the disguise Rebekah cooks from two kids to fool him (27:4, 9, 31). KJV 'savoury meat'; NWT 'a tasty dish.' A small, human detail — the old blind man's love of a favorite meal — turned into the very instrument of the deception; the taste that was meant to confirm his son is the taste that helps steal the blessing.", (27, 4)),
     ("mirmah", "mirmah", "מִרְמָה", "mirmah",
      "DECEIT, treachery — 'your brother came with mirmah and took your blessing' (27:35; KJV 'subtilty,' NWT 'deception'). It becomes a thread running through Jacob's whole life, the deceiver repeatedly deceived: he cheats Esau with mirmah here, and Laban will cheat HIM ('why have you deceived me?', Leah for Rachel, 29:25), and his own sons will deceive him with Joseph's blood-dipped coat (37:31-33). The man named 'supplanter' (Ya'aqov) traffics in mirmah until God wrestles a new name out of him — Israel; the true Israelite, John's Gospel will later say, is the one 'in whom is no mirmah / deceit' (John 1:47).", (27, 35)),
+    # ---- Genesis 28 (Hebrew) ----
+    ("sullam", "sullam", "סֻלָּם", "sullam",
+     "The famous 'LADDER' of Jacob's dream — a word that appears only ONCE in the whole Bible (28:12), so its exact shape is uncertain. KJV 'ladder' gave English 'Jacob's ladder,' but the likely root is salal, 'to heap up, cast up (a highway or ramp),' which points instead to a STAIRWAY or ramp — the monumental temple-stair of a Mesopotamian ziggurat, built precisely as a stepped bridge for the gods between earth and heaven. NWT and most modern scholars read 'stairway.' The broad steps also fit the traffic the dream shows: angels 'ascending and descending' both at once. This translation renders 'stairway,' keeping 'Jacob's ladder' in view as the traditional name.", (28, 12)),
+    ("matsevah", "matsevah", "מַצֵּבָה", "matsevah",
+     "A standing STONE, a pillar set upright (from natsav, 'to stand') as a memorial or marker of a holy encounter. Jacob takes his stone pillow, stands it up, and pours oil on it — the Bible's first anointing of a sacred object — to mark where he met God (28:18, 22; he does it again at 35:14). The patriarchs raise matsevot freely; but because the Canaanites used them in idol-worship, the Law later BANS them ('you shall not set up a matsevah, which Jehovah your God hates,' Deuteronomy 16:22) — one of the places where a patriarchal practice becomes a forbidden one once Israel has the Law.", (28, 18)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -626,12 +631,18 @@ ENCYCLOPEDIA = [
          coords=(32.2137, 35.2853, 0.15),
          modern="Tell Balata, near Nablus, West Bank"),
     dict(slug="bethel", name="Bethel", kind="place",
-         desc="'House of God' — Abram camps east of it and builds his second altar (12:8); the name's own story "
-              "(Jacob's ladder) is still ahead. Paired here with Ai to fix the camp's position.",
-         refs=[(12, 8)],
-         videos=[("BETHEL: Where Jacob Met God "
-                  "(preview — Jacob's ladder, the episode that names this site, is still ahead in Genesis 28)",
-                  "https://www.youtube.com/watch?v=8cqBePFD9S4")],
+         desc="'House of God' (Beit-El) — the site that gives Genesis one of its great scenes. Abram first camps "
+              "east of it and builds his second altar (12:8), but the name is minted later, by his grandson: "
+              "fleeing to Haran, Jacob sleeps here on a stone and dreams of a stairway between earth and heaven "
+              "with angels ascending and descending, wakes crying 'this is the house of God, the gate of heaven,' "
+              "sets his stone up as a pillar, and names the place Bethel — the city having been called LUZ before "
+              "(28:11-19). He returns and re-consecrates it after Peniel (35). Centuries on it turns tragic: "
+              "Jeroboam sets one of his two golden calves here to keep the northern kingdom from worshipping in "
+              "Jerusalem (1 Kings 12:29), and the prophets thereafter pun its name to 'Beth-aven,' house of "
+              "iniquity (Hosea 4:15; Amos names it a royal sanctuary he will smash). Identified with Beitin, "
+              "north of Jerusalem.",
+         refs=[(12, 8), (28, 19)],
+         videos=[("BETHEL: Where Jacob Met God", "https://www.youtube.com/watch?v=8cqBePFD9S4")],
          coords=(31.9306, 35.2317, 0.2), approx=True,
          modern="Beitin, West Bank, north of Jerusalem"),
     dict(slug="ai", name="Ai", kind="place",
@@ -972,7 +983,7 @@ ENCYCLOPEDIA = [
               "honors his name even as the covenant passes to Isaac. Genesis gives him twelve princes (25:12-16) "
               "and a place beside Isaac at their father's grave (25:9); later tradition — Jewish, Christian, and "
               "Islamic — remembers him as ancestor of the Arab peoples.",
-         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25), (25, 9), (25, 12), (25, 17)], videos=[]),
+         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25), (25, 9), (25, 12), (25, 17), (28, 9)], videos=[]),
     dict(slug="shur", name="Shur", kind="place",
          desc="'Wall' — the desert fronting Egypt's north-east frontier, possibly named for the Egyptian line of "
               "border forts, and crossed by the caravan road from Canaan. Hagar is found 'on the way to Shur' "
@@ -1000,7 +1011,7 @@ ENCYCLOPEDIA = [
               "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
               "later be his home (24:62; 25:11).",
-         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22)], videos=[]),
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22), (28, 1)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -1325,7 +1336,7 @@ ENCYCLOPEDIA = [
               "LABAN THE ARAMEAN who, a generation later, will take in the fleeing Jacob, swap Leah for Rachel on "
               "the wedding night, cheat his wages ten times over, and chase him down over stolen household idols "
               "(Genesis 29–31) — the grasping uncle whose greed the gold at the well already forecasts.",
-         refs=[(24, 29), (24, 50), (27, 43)], videos=[]),
+         refs=[(24, 29), (24, 50), (27, 43), (28, 2), (28, 5)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -1334,14 +1345,15 @@ ENCYCLOPEDIA = [
               "mother do the negotiating. The order has fed old readings that Bethuel was aged, or that Laban had "
               "already taken the household in hand; the text simply lets the son speak first and moves on.",
          refs=[(24, 24), (24, 50)], videos=[]),
-    dict(slug="aram-naharaim", name="Aram-naharaim", kind="place", aliases=["Aram-naharaim"],
+    dict(slug="aram-naharaim", name="Aram-naharaim (Paddan-aram)", kind="place", aliases=["Aram-naharaim", "Paddan-aram"],
          desc="'Aram of the Two Rivers' — upper Mesopotamia, the region around Haran where Abraham's kindred "
               "stayed when he went on to Canaan (24:10, 'the city of Nahor'). It is the ancestral homeland the "
               "family keeps returning to: Abraham came out of it by call, the servant goes back to it for Isaac's "
-              "bride, and Jacob will flee to it to find his own wives among Laban's daughters (28:2-5). The "
-              "'two rivers' are the Euphrates and either the Tigris or the Habur; the heart of it is Paddan-aram, "
-              "the Haran district of the far upper Euphrates.",
-         refs=[(24, 10)],
+              "bride, and Jacob flees to it to find his own wives among Laban's daughters (28:2-7). Genesis's own "
+              "name for its heartland is PADDAN-ARAM ('the field/plain of Aram'), the Haran district of the far "
+              "upper Euphrates — where Jacob will spend twenty years; the 'two rivers' are the Euphrates and "
+              "either the Tigris or the Habur.",
+         refs=[(24, 10), (28, 2), (28, 5)],
          coords=(36.86, 39.03, 1.2), approx=True,
          modern="Upper Mesopotamia around Harran, southeastern Turkey / northern Syria"),
 
@@ -1365,7 +1377,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1375,7 +1387,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
@@ -1691,6 +1703,14 @@ XREFS = [
     ((27, 36), (25, 33), "'he took my birthright, and now my blessing' — the two thefts: the bekhorah bought for stew (25:33) and now the berakhah stolen by disguise"),
     ((27, 41), (4, 8),   "'I will kill my brother Jacob' — the oldest sin in the family, brother rising to murder brother, as Cain rose against Abel (4:8); but Rebekah's warning turns it aside"),
     ((27, 46), (26, 35), "the Hittite daughters-in-law 'a bitterness of spirit' (26:35) — Rebekah's real grief becomes the perfect pretext to send Jacob safely east for a wife"),
+
+    # ---- Genesis 28 ----
+    ((28, 12), ("John", 1, 51), "the stairway with the angels 'ascending and descending' — Jesus tells Nathanael he will see 'the angels of God ascending and descending on the SON OF MAN': he is himself the Bethel, the meeting-place of heaven and earth"),
+    ((28, 13), (13, 15), "'the land on which you lie — to you I will give it, and to your seed' — the land-grant of Abraham (13:15) handed down to the grandson, spoken over him as he flees it"),
+    ((28, 14), (12, 3),  "'in you and your seed all the families of the earth will be blessed' — the promise of 12:3, third generation now, given to a fugitive with a stone for a pillow"),
+    ((28, 3),  (17, 1),  "EL SHADDAI blesses Jacob — Isaac hands on the covenant-name God gave Abraham at the circumcision, 'I am El Shaddai; walk before me' (17:1)"),
+    ((28, 15), (26, 24), "'I am with you, and will keep you wherever you go' — the presence promised to Isaac at Beersheba (26:24) now to Jacob on the road, the covenant word passing father to son"),
+    ((28, 22), (14, 20), "Jacob vows a TENTH of all God gives him — the first vowed tithe, as Abraham had given Melchizedek a tenth of everything (14:20)"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2045,6 +2065,8 @@ VERSE_OF_DAY = [
     (26, 24, "God to Isaac at Beersheba, in the night: 'I am the God of Abraham your father. Do not fear, for I am with you.'"),
     (27, 22, "The words that should have unmasked the whole deception, and didn't: 'The voice is the voice of Jacob, but the hands are the hands of Esau.'"),
     (27, 38, "The most anguished cry in Genesis — the rejected firstborn: 'Have you but one blessing, my father? Bless me too, my father!' And Esau lifted up his voice and wept."),
+    (28, 16, "Jacob wakes from the dream of the stairway, undone by grace he did not earn: 'Surely Jehovah is in this place, and I did not know it!'"),
+    (28, 17, "The fugitive's awe at an ordinary place made holy: 'How awesome is this place! This is none other than the house of God, and this is the gate of heaven.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2220,6 +2242,9 @@ CHRON_CHAPTERS = {
     "gen27": dict(era="patriarchs",
                   when="The stolen blessing — Rebekah and Jacob deceive the blind, dying Isaac to steal Esau's blessing; Esau's murderous grief drives Jacob to flee toward Haran.",
                   clock="AM ≈ 2185 · c. 1760 BC on the traditional reckoning — Isaac is about 137 (he wrongly thinks he is dying, though he will live some forty years more, to 180), and Jacob about 77. The hinge of the whole Jacob cycle: from here he flees to Laban, and the rest of Genesis follows him east and home."),
+    "gen28": dict(era="patriarchs",
+                  when="Jacob flees toward Haran; at Bethel he dreams of the stairway between earth and heaven, the covenant is confirmed to the fugitive, and he vows his first vow.",
+                  clock="AM ≈ 2185 · c. 1760 BC — the first night of the flight begun in ch. 27, Jacob about 77. His twenty years with Laban start here; the theophany at Bethel is his first personal meeting with the God of his fathers, alone on the road with a stone for a pillow."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2326,6 +2351,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2185", trad="c. 1760 BC", event="The stolen blessing — Jacob deceives the blind Isaac and takes Esau's blessing; Esau's grief drives him to flee toward Haran",
          note="Isaac, old and blind and thinking himself near death, sends Esau to hunt game for the blessing; Rebekah dresses Jacob in his brother's clothes and goatskins and cooks the savory food, and Jacob lies his way to the blessing his mother heard promised at his birth (Genesis 27). The blessing spoken cannot be recalled — 'yes, and he will be blessed' — and Esau's great and bitter cry, 'bless me too, my father!', is one of the Bible's most anguished moments (Hebrews 12:17). Esau plots murder; Rebekah sends Jacob east to her brother Laban 'for a few days' — she will never see him again. It is the hinge of the whole Jacob cycle, and the beginning of the deceiver's own long schooling in being deceived.",
          ref=("Genesis", 27, 35)),
+    dict(era="patriarchs", am="≈2185", trad="c. 1760 BC", event="Jacob's ladder at Bethel — the covenant confirmed to the fugitive on the road to Haran; his first vow",
+         note="On the first night of his flight, alone with a stone for a pillow, Jacob dreams of a stairway between earth and heaven with angels ascending and descending, and hears the whole Abrahamic promise spoken over him — land, seed like the dust, all families of the earth blessed, 'and I am with you, and will keep you wherever you go' (Genesis 28). He wakes crying 'Surely Jehovah is in this place, and I did not know it,' sets his stone up as an anointed pillar, names the place Bethel ('house of God'), and vows his first vow — a tenth of all he is given. It is grace to a deceiver on the run, and the stairway Jesus will one day claim as himself (John 1:51).",
+         ref=("Genesis", 28, 12)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
