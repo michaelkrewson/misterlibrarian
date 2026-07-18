@@ -317,6 +317,13 @@ DICTIONARY = [
      "'ENMITY, opposition' — the name of the second contested well (26:21). From the verb satan, 'to oppose, accuse, be an adversary' — the very root behind ha-SATAN, 'the accuser/adversary' (Job 1; Zechariah 3), and the name Satan the New Testament carries over untranslated. The related noun sitnah later heads a legal 'accusation' filed against the returning exiles (Ezra 4:6). Here it is just a well fought over — but the word already carries the whole Bible's idea of the one who stands against.", (26, 21)),
     ("rehoboth", "rehovot", "רְחֹבוֹת", "rehovot",
      "'BROAD PLACES, room' — the name of the third well, the one no one fought over: 'he called it Rehoboth, and said, For now Jehovah has made ROOM (hirchiv) for us, and we will be fruitful in the land' (26:22). From rachav, 'to be wide,' the root of rechov, a city's open 'square.' After Esek (contention) and Sitnah (enmity), the patient man is given room — the Hebrew for relief and enlargement, when the pressing-in finally opens out. (A modern Israeli city keeps the name.)", (26, 22)),
+    # ---- Genesis 27 (Hebrew) ----
+    ("berakhah", "berakhah", "בְּרָכָה", "berakhah",
+     "The BLESSING — from barak, 'to bless' (and 'to kneel'), the thing the whole chapter is fought over. In Genesis a father's deathbed blessing is not a fond wish but a PERFORMATIVE, near-irrevocable word: once spoken it takes effect and cannot be recalled — 'I have blessed him; yes, and he will be blessed' (27:33). It carries the covenant itself (dew and fatness, dominion, and Abraham's own 'cursed be those who curse you,' 12:3). Jacob steals Esau's berakhah as he had bought his bekhorah (birthright); Esau's cry 'have you but one blessing?' (27:38) is the anguish of a word that cannot be unsaid. Hebrews 12:17 makes him the man who 'found no place for repentance, though he sought it with tears.'", (27, 4)),
+    ("matamim", "mat'ammim", "מַטְעַמִּים", "mat'ammim",
+     "SAVORY FOOD — 'tasty things,' a delicacy (from ta'am, 'taste'): the dish of game Isaac craves and the disguise Rebekah cooks from two kids to fool him (27:4, 9, 31). KJV 'savoury meat'; NWT 'a tasty dish.' A small, human detail — the old blind man's love of a favorite meal — turned into the very instrument of the deception; the taste that was meant to confirm his son is the taste that helps steal the blessing.", (27, 4)),
+    ("mirmah", "mirmah", "מִרְמָה", "mirmah",
+     "DECEIT, treachery — 'your brother came with mirmah and took your blessing' (27:35; KJV 'subtilty,' NWT 'deception'). It becomes a thread running through Jacob's whole life, the deceiver repeatedly deceived: he cheats Esau with mirmah here, and Laban will cheat HIM ('why have you deceived me?', Leah for Rachel, 29:25), and his own sons will deceive him with Joseph's blood-dipped coat (37:31-33). The man named 'supplanter' (Ya'aqov) traffics in mirmah until God wrestles a new name out of him — Israel; the true Israelite, John's Gospel will later say, is the one 'in whom is no mirmah / deceit' (John 1:47).", (27, 35)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -993,7 +1000,7 @@ ENCYCLOPEDIA = [
               "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
               "later be his home (24:62; 25:11).",
-         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24)], videos=[]),
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -1306,7 +1313,7 @@ ENCYCLOPEDIA = [
               "will go' (24:58); at the well she waters ten camels unasked. She bears the twins Esau and "
               "Jacob, receives the oracle that 'the elder shall serve the younger' (25:23), and engineers "
               "the blessing to Jacob (ch. 27) — the matriarch who reads the promise better than her husband.",
-         refs=[(22, 23), (24, 15), (24, 58), (24, 67)], videos=[]),
+         refs=[(22, 23), (24, 15), (24, 58), (24, 67), (27, 5), (27, 42), (27, 46)], videos=[]),
 
     # ---- Genesis 24 ----
     dict(slug="laban", name="Laban", kind="person", aliases=["Laban"],
@@ -1318,7 +1325,7 @@ ENCYCLOPEDIA = [
               "LABAN THE ARAMEAN who, a generation later, will take in the fleeing Jacob, swap Leah for Rachel on "
               "the wedding night, cheat his wages ten times over, and chase him down over stolen household idols "
               "(Genesis 29–31) — the grasping uncle whose greed the gold at the well already forecasts.",
-         refs=[(24, 29), (24, 50)], videos=[]),
+         refs=[(24, 29), (24, 50), (27, 43)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -1358,7 +1365,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1368,7 +1375,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
@@ -1676,6 +1683,14 @@ XREFS = [
     ((26, 8),  (21, 9),  "Isaac was metsacheq ('Isaac-ing') with Rebekah — the same participle used of Ishmael 'laughing/mocking' (21:9): the name-verb tsachaq, here the affection that betrays a husband, not a sister"),
     ((26, 24), (15, 1),  "'Do not fear, for I am with you' — the 'fear not' first spoken to Abram in the night vision (15:1), now to his son at Beersheba"),
     ((26, 33), (21, 31), "Beersheba named for an OATH a second time — Isaac's pact with Abimelech re-founds the well his father named for the same sworn word (the sheva pun, oath and seven, both times)"),
+
+    # ---- Genesis 27 ----
+    ((27, 29), (12, 3),  "'cursed be those who curse you, and blessed be those who bless you' — the very words of the promise to Abram (12:3), now stolen into Jacob's blessing along with everything else"),
+    ((27, 29), (25, 23), "'be lord over your brothers, and let your mother's sons bow down to you' — the oracle Rebekah heard in the womb, 'the elder will serve the younger,' now enacted in a father's blessing"),
+    ((27, 36), (25, 26), "'is he not rightly named Jacob (Ya'aqov)? he has supplanted me' — the heel-grabber's name from birth (25:26) cashed out at last: to seize the heel is to trip and overreach"),
+    ((27, 36), (25, 33), "'he took my birthright, and now my blessing' — the two thefts: the bekhorah bought for stew (25:33) and now the berakhah stolen by disguise"),
+    ((27, 41), (4, 8),   "'I will kill my brother Jacob' — the oldest sin in the family, brother rising to murder brother, as Cain rose against Abel (4:8); but Rebekah's warning turns it aside"),
+    ((27, 46), (26, 35), "the Hittite daughters-in-law 'a bitterness of spirit' (26:35) — Rebekah's real grief becomes the perfect pretext to send Jacob safely east for a wife"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2028,6 +2043,8 @@ VERSE_OF_DAY = [
     (25, 34, "Five flat verbs and a verdict — 'he ate and drank and rose and went his way; so Esau despised his birthright.'"),
     (26, 22, "The reward of a patient man who kept yielding the wells — 'now Jehovah has made room for us, and we will be fruitful in the land.'"),
     (26, 24, "God to Isaac at Beersheba, in the night: 'I am the God of Abraham your father. Do not fear, for I am with you.'"),
+    (27, 22, "The words that should have unmasked the whole deception, and didn't: 'The voice is the voice of Jacob, but the hands are the hands of Esau.'"),
+    (27, 38, "The most anguished cry in Genesis — the rejected firstborn: 'Have you but one blessing, my father? Bless me too, my father!' And Esau lifted up his voice and wept."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2200,6 +2217,9 @@ CHRON_CHAPTERS = {
     "gen26": dict(era="patriarchs",
                   when="The one chapter all about Isaac — famine and the sister-ruse at Gerar, the re-dug wells (Esek, Sitnah, Rehoboth), the covenant reaffirmed, and a pact with Abimelech at Beersheba.",
                   clock="Isaac's Gerar-and-Beersheba years, spanning parts of his middle life; the chapter closes with Esau marrying at 40 (26:34), so Isaac is about 100 by its end (AM 2148 · c. 1796 BC). Non-chronological in the patriarchal manner — a portrait of the quiet middle patriarch who re-walks and re-digs his father's ground rather than breaking new."),
+    "gen27": dict(era="patriarchs",
+                  when="The stolen blessing — Rebekah and Jacob deceive the blind, dying Isaac to steal Esau's blessing; Esau's murderous grief drives Jacob to flee toward Haran.",
+                  clock="AM ≈ 2185 · c. 1760 BC on the traditional reckoning — Isaac is about 137 (he wrongly thinks he is dying, though he will live some forty years more, to 180), and Jacob about 77. The hinge of the whole Jacob cycle: from here he flees to Laban, and the rest of Genesis follows him east and home."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2303,6 +2323,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="—", trad="c. 1810–1796 BC", event="Isaac's Gerar years — the covenant reaffirmed, the re-dug wells, and a pact with Abimelech at Beersheba",
          note="The one chapter given wholly to Isaac (Genesis 26). A famine sends him to Gerar, but unlike his father he is told not to go down to Egypt; God re-grants him the whole Abrahamic oath — 'because Abraham obeyed my voice.' He replays the sister-ruse, grows rich enough that the Philistines envy him, and patiently re-digs his father's stopped wells, yielding the contested ones (Esek, Sitnah) until God gives him room (Rehoboth). At Beersheba he hears 'do not fear, for I am with you,' builds an altar, and cuts a treaty with Abimelech. The quiet middle patriarch inherits and preserves rather than breaking new ground; the chapter ends with Esau's Hittite wives — 'a bitterness of spirit' that will set the next chapter in motion.",
          ref=("Genesis", 26, 24)),
+    dict(era="patriarchs", am="≈2185", trad="c. 1760 BC", event="The stolen blessing — Jacob deceives the blind Isaac and takes Esau's blessing; Esau's grief drives him to flee toward Haran",
+         note="Isaac, old and blind and thinking himself near death, sends Esau to hunt game for the blessing; Rebekah dresses Jacob in his brother's clothes and goatskins and cooks the savory food, and Jacob lies his way to the blessing his mother heard promised at his birth (Genesis 27). The blessing spoken cannot be recalled — 'yes, and he will be blessed' — and Esau's great and bitter cry, 'bless me too, my father!', is one of the Bible's most anguished moments (Hebrews 12:17). Esau plots murder; Rebekah sends Jacob east to her brother Laban 'for a few days' — she will never see him again. It is the hinge of the whole Jacob cycle, and the beginning of the deceiver's own long schooling in being deceived.",
+         ref=("Genesis", 27, 35)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
