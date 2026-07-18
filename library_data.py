@@ -329,6 +329,11 @@ DICTIONARY = [
      "The famous 'LADDER' of Jacob's dream — a word that appears only ONCE in the whole Bible (28:12), so its exact shape is uncertain. KJV 'ladder' gave English 'Jacob's ladder,' but the likely root is salal, 'to heap up, cast up (a highway or ramp),' which points instead to a STAIRWAY or ramp — the monumental temple-stair of a Mesopotamian ziggurat, built precisely as a stepped bridge for the gods between earth and heaven. NWT and most modern scholars read 'stairway.' The broad steps also fit the traffic the dream shows: angels 'ascending and descending' both at once. This translation renders 'stairway,' keeping 'Jacob's ladder' in view as the traditional name.", (28, 12)),
     ("matsevah", "matsevah", "מַצֵּבָה", "matsevah",
      "A standing STONE, a pillar set upright (from natsav, 'to stand') as a memorial or marker of a holy encounter. Jacob takes his stone pillow, stands it up, and pours oil on it — the Bible's first anointing of a sacred object — to mark where he met God (28:18, 22; he does it again at 35:14). The patriarchs raise matsevot freely; but because the Canaanites used them in idol-worship, the Law later BANS them ('you shall not set up a matsevah, which Jehovah your God hates,' Deuteronomy 16:22) — one of the places where a patriarchal practice becomes a forbidden one once Israel has the Law.", (28, 18)),
+    # ---- Genesis 29 (Hebrew) ----
+    ("rakkot", "rakkot", "רַכּוֹת", "rakkot",
+     "'Leah's eyes were rakkot' (29:17) — and the shelf cannot agree what that means, because the word runs from 'weak, dull' to 'tender, delicate, soft.' KJV 'tender eyed'; many read it as a DEFECT — weak or watery eyes — set against Rachel's full-bodied beauty, so the sister no one chose is marked from the start; others hear a compliment, 'soft/lovely eyes,' her one loveliness. The Hebrew leaves it open, and the ambiguity is almost kind: whether her eyes were her flaw or her charm, she was the unloved one (see senuah), and it is she God will bless with the sons.", (29, 17)),
+    ("senuah", "senuah", "שְׂנוּאָה", "senuah",
+     "'HATED' — literally, from sane, 'to hate'; but Hebrew uses it for the LESS-loved of two, so 'unloved' catches the sense: 'Jehovah saw that Leah was senuah, and opened her womb' (29:31, 33). The same idiom governs a real law — the man with a loved wife and a 'hated' (unloved) one may not deny the unloved wife's firstborn his double portion (Deuteronomy 21:15-17), the exact situation this chapter sets up. The heart of it: God SIDES WITH THE UNLOVED. Rachel is adored and barren; Leah is unloved and fruitful — and from unloved Leah come Levi (the priesthood) and Judah (the kings, and the Messiah).", (29, 31)),
     # ---- Proverbs 1 (Hebrew) ----
     ("mashal", "mashal", "מָשָׁל", "mashal",
      "Proverb — the book's own title is its plural, Mishlei, 'the proverbs of Solomon' (1:1). A mashal is a saying that rules by LIKENESS (the root means both 'to be like' and 'to rule'): a comparison compact enough to govern a life. It stretches from a one-line saw to a taunt-song to Jesus' parables (the Greek Bible renders both mashal and its cousins parabolē).", (1, 1)),
@@ -1336,7 +1341,29 @@ ENCYCLOPEDIA = [
               "LABAN THE ARAMEAN who, a generation later, will take in the fleeing Jacob, swap Leah for Rachel on "
               "the wedding night, cheat his wages ten times over, and chase him down over stolen household idols "
               "(Genesis 29–31) — the grasping uncle whose greed the gold at the well already forecasts.",
-         refs=[(24, 29), (24, 50), (27, 43), (28, 2), (28, 5)], videos=[]),
+         refs=[(24, 29), (24, 50), (27, 43), (28, 2), (28, 5), (29, 5), (29, 13), (29, 25)], videos=[]),
+    dict(slug="leah", name="Leah", kind="person", aliases=["Leah"],
+         desc="Laban's elder daughter, and the unloved wife — married to Jacob by her father's night-time trick "
+              "in place of Rachel, the sister Jacob actually loved (29:23-25). The narrator marks her from the "
+              "start with the ambiguous 'weak / tender eyes' (rakkot), set against Rachel's beauty; and God marks "
+              "her with a tenderness of his own: 'Jehovah saw that Leah was HATED, and opened her womb' (29:31). "
+              "She becomes the great mother of Israel — six of the twelve tribes are hers, and each son's name is "
+              "a small cry of her longing to be loved (Reuben, Simeon, Levi, Judah…). The unloved wife bears the "
+              "two most consequential sons of all: LEVI, father of the priesthood, and JUDAH, father of the kings "
+              "and of the Messiah. She is buried beside Jacob at Machpelah (49:31) — not the wife he chose, but "
+              "the wife in the ancestral tomb.",
+         refs=[(29, 16), (29, 23), (29, 31)], videos=[]),
+    dict(slug="rachel", name="Rachel", kind="person", aliases=["Rachel"],
+         desc="Laban's younger daughter and the love of Jacob's life — a shepherdess he meets at the well and "
+              "serves fourteen years to marry (29:9-30). 'Beautiful in form and lovely to look at,' and beloved, "
+              "but for years barren while her unloved sister bears son after son; the ache turns to bitter rivalry "
+              "('give me children, or I die,' 30:1). At last God 'remembers' her and she bears JOSEPH, and then "
+              "dies giving birth to BENJAMIN on the road near Bethlehem, naming him with her last breath "
+              "Ben-oni, 'son of my sorrow' (35:16-20). Her lonely wayside tomb becomes a landmark, and the "
+              "prophet hears her still weeping there for her exiled children — 'Rachel weeping for her children, "
+              "refusing to be comforted' (Jeremiah 31:15), the verse Matthew hears again over Bethlehem's "
+              "murdered infants (Matthew 2:18).",
+         refs=[(29, 6), (29, 18), (29, 30)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -1387,7 +1414,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
@@ -1711,6 +1738,13 @@ XREFS = [
     ((28, 3),  (17, 1),  "EL SHADDAI blesses Jacob — Isaac hands on the covenant-name God gave Abraham at the circumcision, 'I am El Shaddai; walk before me' (17:1)"),
     ((28, 15), (26, 24), "'I am with you, and will keep you wherever you go' — the presence promised to Isaac at Beersheba (26:24) now to Jacob on the road, the covenant word passing father to son"),
     ((28, 22), (14, 20), "Jacob vows a TENTH of all God gives him — the first vowed tithe, as Abraham had given Melchizedek a tenth of everything (14:20)"),
+
+    # ---- Genesis 29 ----
+    ((29, 25), (27, 35), "'why have you DECEIVED me?' — rimmah, the very root of the mirmah ('deceit') Isaac named when Jacob stole the blessing (27:35): the deceiver, in the dark, is now the deceived"),
+    ((29, 26), (27, 36), "'we do not give the younger before the firstborn' — Laban's rule is a quiet judgment on the man who took both the firstborn's birthright and blessing (27:36); the measure he gave is measured back"),
+    ((29, 14), (2, 23),  "'you are my bone and my flesh' — Laban's welcome borrows the kinship-cry Adam first spoke over Eve, 'bone of my bones and flesh of my flesh' (2:23)"),
+    ((29, 10), (24, 15), "Jacob meets Rachel at the well — the third of the Bible's well-betrothals: as Abraham's servant found Rebekah drawing water (24:15), so the son finds his own bride at a well in the old country"),
+    ((29, 31), (25, 21), "Jehovah opens the barren womb — as he answered Isaac's prayer for barren Rebekah (25:21); the matriarchs' children come by God's gift, not nature's course"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2067,6 +2101,8 @@ VERSE_OF_DAY = [
     (27, 38, "The most anguished cry in Genesis — the rejected firstborn: 'Have you but one blessing, my father? Bless me too, my father!' And Esau lifted up his voice and wept."),
     (28, 16, "Jacob wakes from the dream of the stairway, undone by grace he did not earn: 'Surely Jehovah is in this place, and I did not know it!'"),
     (28, 17, "The fugitive's awe at an ordinary place made holy: 'How awesome is this place! This is none other than the house of God, and this is the gate of heaven.'"),
+    (29, 20, "Love that makes the years light: 'Jacob served seven years for Rachel, and they seemed to him but a few days, because of his love for her.'"),
+    (29, 31, "God on the side of the unloved: 'And Jehovah saw that Leah was unloved, and he opened her womb.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2245,6 +2281,9 @@ CHRON_CHAPTERS = {
     "gen28": dict(era="patriarchs",
                   when="Jacob flees toward Haran; at Bethel he dreams of the stairway between earth and heaven, the covenant is confirmed to the fugitive, and he vows his first vow.",
                   clock="AM ≈ 2185 · c. 1760 BC — the first night of the flight begun in ch. 27, Jacob about 77. His twenty years with Laban start here; the theophany at Bethel is his first personal meeting with the God of his fathers, alone on the road with a stone for a pillow."),
+    "gen29": dict(era="patriarchs",
+                  when="Jacob at the well of Haran, and Laban's morning trick — Leah for Rachel; two wives, fourteen years' service, and Leah's first four sons.",
+                  clock="AM ≈ 2185–2199 · c. 1760–1746 BC — the first years of Jacob's twenty in Haran. He serves seven years for Rachel, is tricked into Leah, serves seven more; the twelve tribes begin to be born (Reuben, Simeon, Levi, Judah to Leah). The deceiver's own schooling in being deceived."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2354,6 +2393,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2185", trad="c. 1760 BC", event="Jacob's ladder at Bethel — the covenant confirmed to the fugitive on the road to Haran; his first vow",
          note="On the first night of his flight, alone with a stone for a pillow, Jacob dreams of a stairway between earth and heaven with angels ascending and descending, and hears the whole Abrahamic promise spoken over him — land, seed like the dust, all families of the earth blessed, 'and I am with you, and will keep you wherever you go' (Genesis 28). He wakes crying 'Surely Jehovah is in this place, and I did not know it,' sets his stone up as an anointed pillar, names the place Bethel ('house of God'), and vows his first vow — a tenth of all he is given. It is grace to a deceiver on the run, and the stairway Jesus will one day claim as himself (John 1:51).",
          ref=("Genesis", 28, 12)),
+    dict(era="patriarchs", am="≈2185", trad="c. 1760 BC", event="Jacob serves Laban — deceived into marrying Leah, then Rachel; the tribes begin to be born",
+         note="Jacob reaches Haran, meets Rachel at the well, and serves Laban seven years for her — 'and they seemed to him but a few days, for the love he had for her.' But on the wedding night Laban substitutes his elder daughter Leah, and in the morning 'behold, it was Leah!' (Genesis 29). 'Why have you deceived me?', Jacob demands — and Laban answers with the very principle Jacob had trampled: 'we do not give the younger before the firstborn.' The deceiver is deceived; he serves seven more years for Rachel too. God, seeing Leah unloved, gives her the first four sons — Reuben, Simeon, Levi, and Judah — so that the priestly and the royal (and messianic) lines both spring from the wife nobody chose.",
+         ref=("Genesis", 29, 25)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
