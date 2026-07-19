@@ -207,6 +207,11 @@ DICTIONARY = [
      "An OUTRAGE — not ordinary wrong but the fixed, heavy term for a disgraceful act that tears the fabric of a people. Shechem's violation of Dinah is 'a nevalah in Israel, a thing that should not be done' (34:7); the same word names the gang-rape that ignites Israel's civil war (Judges 19-20) and Amnon's assault on Tamar ('no such nevalah is done in Israel,' 2 Samuel 13:12), and Achan's sacrilege (Joshua 7:15). It is kin to naval, the 'fool' who says in his heart there is no God (Psalm 14:1) — moral collapse, not mere foolishness. KJV and ASV flatten it to 'folly'; NIV 'disgraceful thing.' The tag 'in Israel' is pointed: the nation, freshly named two chapters back, meets its first atrocity from within its own tents.", (34, 7)),
     ("mohar", "mohar", "מֹהַר", "mohar",
      "The BRIDE-PRICE — the sum a groom's household paid to the bride's family for the marriage (distinct from the mattan, an added 'gift'). Shechem, desperate, tells Dinah's brothers to 'pile on me a very great mohar and gift, and I will give it' (34:12) — he will buy his way past the crime. The law fixes a mohar for a seduced unbetrothed girl (Exodus 22:16-17). KJV 'dowry,' which properly runs the other way (bride's family to groom); mohar is the price paid FOR the bride, not by her.", (34, 12)),
+    # ---- Genesis 35 (Hebrew) ----
+    ("nekhar", "nekhar", "נֵכָר", "nekhar",
+     "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
+    ("el-bethel", "El-Bethel", "אֵל בֵּית-אֵל", "El Beit-El",
+     "'God of Bethel' — the name Jacob gives the ALTAR he raises on his return (35:7): not the place but its God, the God who met him here as a fugitive now claimed as his own. It makes good the vow of his first night here — 'this stone shall be God's house' (28:22) — and follows the patriarchs' pattern of naming God from an encounter (El Roi, El Elyon, El-Elohe-Israel). The compound stacks El, the ancient name of God, onto Beit-El, 'house of God,' so the altar-name reads 'the God of the house of God.'", (35, 7)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
      "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
     ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
@@ -699,7 +704,7 @@ ENCYCLOPEDIA = [
               "Jerusalem (1 Kings 12:29), and the prophets thereafter pun its name to 'Beth-aven,' house of "
               "iniquity (Hosea 4:15; Amos names it a royal sanctuary he will smash). Identified with Beitin, "
               "north of Jerusalem.",
-         refs=[(12, 8), (28, 19)],
+         refs=[(12, 8), (28, 19), (35, 7)],
          videos=[("BETHEL: Where Jacob Met God", "https://www.youtube.com/watch?v=8cqBePFD9S4")],
          coords=(31.9306, 35.2317, 0.2), approx=True,
          modern="Beitin, West Bank, north of Jerusalem"),
@@ -1068,8 +1073,9 @@ ENCYCLOPEDIA = [
               "(17:17-19), and given the first hard date on the promise: 'at this appointed time next year' "
               "(17:21). The covenant's appointed heir — 'my covenant I will establish with Isaac' — announced a "
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
-              "later be his home (24:62; 25:11).",
-         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22), (28, 1)], videos=[]),
+              "later be his home (24:62; 25:11). He dies at 180, 'old and full of days,' at Hebron, and is buried in "
+              "the cave of Machpelah by his two sons — Esau and Jacob together (35:27-29).",
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22), (28, 1), (35, 27), (35, 29)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -1516,7 +1522,45 @@ ENCYCLOPEDIA = [
               "prophet hears her still weeping there for her exiled children — 'Rachel weeping for her children, "
               "refusing to be comforted' (Jeremiah 31:15), the verse Matthew hears again over Bethlehem's "
               "murdered infants (Matthew 2:18).",
-         refs=[(29, 6), (29, 18), (29, 30), (30, 1), (31, 4), (33, 2)], videos=[]),
+         refs=[(29, 6), (29, 18), (29, 30), (30, 1), (31, 4), (33, 2), (35, 16)], videos=[]),
+    dict(slug="benjamin", name="Benjamin", kind="person", aliases=["Benjamin", "Ben-oni"],
+         desc="Jacob's twelfth and last son, the second of Rachel's — born on the road near Bethlehem as she died in "
+              "labor (35:16-18). Her dying name for him was BEN-ONI, 'son of my sorrow'; his father overrode it to "
+              "BENJAMIN, 'son of the right hand' (the hand of strength and favor, or 'son of the south') — the only "
+              "child in Genesis whose name a parent changes, a father refusing to let his beloved wife's last son "
+              "carry her grief for life. The full brother of JOSEPH, he becomes the pledge and pivot of the Joseph "
+              "story — the son Jacob cannot bear to send to Egypt, the cup hidden in his sack, the test that breaks "
+              "the brothers open (chs. 42-45). His tribe gives Israel its first king, Saul, and the apostle Paul "
+              "('of the tribe of Benjamin,' Philippians 3:5); Jacob's deathbed calls him 'a ravenous wolf' (49:27).",
+         refs=[(35, 18), (35, 24)], videos=[]),
+    dict(slug="bethlehem", name="Bethlehem", kind="place", aliases=["Bethlehem", "Ephrath", "Ephrathah"],
+         desc="'House of Bread' (Beit-Lechem) — first named in the Bible here, under its older name Ephrath, when "
+              "Rachel dies in childbirth 'on the way to Ephrath, that is Bethlehem' and Jacob marks her grave with a "
+              "pillar (35:19-20). A small town six miles south of Jerusalem, it becomes the town of Ruth and Boaz "
+              "(Ruth 1-4) and the home and city of DAVID (1 Samuel 16), from which Micah foretells the ruler 'whose "
+              "origins are from of old' will come (Micah 5:2) — the prophecy Matthew and Luke set over the birth of "
+              "Jesus (Matthew 2; Luke 2). So the wayside where the mother of Israel lies buried, weeping, becomes the "
+              "road to the Messiah's cradle.",
+         refs=[(35, 19)], videos=[]),
+    dict(slug="deborah", name="Deborah", kind="person", aliases=["Deborah", "Allon-bacuth"],
+         desc="Rebekah's nurse — a servant who appears twice, both times in silence and both times honored past her "
+              "station. She is the unnamed nurse sent along when the young Rebekah leaves home for Isaac (24:59), and "
+              "she surfaces once more, now in the aged Jacob's camp, only to die and be buried under an oak below "
+              "Bethel that is named for the mourning: ALLON-BACUTH, 'the oak of weeping' (35:8). Rebekah herself gets "
+              "no death-scene in Genesis; her old nurse gets a named tree and a page of tears — the Bible pausing "
+              "over a life the world would have walked past. (A different Deborah, the prophet-judge, sings Israel's "
+              "victory generations later, Judges 4-5.)",
+         refs=[(35, 8)], videos=[]),
+    dict(slug="reuben", name="Reuben", kind="person", aliases=["Reuben"],
+         desc="Jacob and Leah's firstborn — his name (Re'uven) is Leah's cry, 'God has SEEN (ra'ah) my affliction… "
+              "now my husband will love me' (29:32). The eldest, forever almost saving the day and falling short: he "
+              "brings his mother the mandrakes that reopen the wife-war (30:14), and later he alone tries to spare "
+              "Joseph, talking the brothers out of murder so he can rescue him — and returns to an empty pit "
+              "(37:21-29). But here he commits the sin that undoes him, lying with Bilhah his father's concubine, a "
+              "grab at his father's authority (35:22). For it he loses the birthright: Jacob's deathbed verdict is "
+              "'unstable as water, you shall not have the excellency, because you went up to your father's bed' "
+              "(49:3-4) — and the double portion passes to Joseph, the leadership to Judah.",
+         refs=[(29, 32), (35, 22)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -2344,6 +2388,8 @@ VERSE_OF_DAY = [
     (33, 4, "Grace outran fear: 'And Esau ran to meet him, and embraced him, and fell on his neck and kissed him; and they wept' — the brother who had sworn to kill him."),
     (33, 10, "Forgiveness with the face of God in it: 'I have seen your face as one sees the face of God, and you have received me favorably.'"),
     (34, 7, "The text names the crime a crime: 'he had done an outrage in Israel, a thing that should not be done' — the newborn nation's first reckoning with an atrocity from within."),
+    (35, 3, "Jacob names his God by what God has done: 'an altar to the God who answered me in the day of my distress, and was with me on the way that I went.'"),
+    (35, 18, "Grief turned to blessing over a grave: the dying mother names him Ben-oni, 'son of my sorrow' — the father renames him Benjamin, 'son of the right hand.'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2546,6 +2592,9 @@ CHRON_CHAPTERS = {
     "gen34": dict(era="patriarchs",
                   when="The dark chapter at Shechem — Dinah violated by the prince, the brothers' answer 'with deceit,' and the massacre of the whole town by Simeon and Levi, that Jacob rebukes only for the danger it brings on him.",
                   clock="AM ≈ 2206 · c. 1739 BC — soon after Jacob settles near Shechem. The prince Shechem violates Dinah; her brothers trick the men of the town into circumcision, and on the third day Simeon and Levi put them all to the sword and plunder the city, carrying off its women and children. The atrocity forces the family off the land and drives the flight to Bethel in the next chapter — and it is not forgiven: Jacob curses the two brothers' swords on his deathbed (49:5-7)."),
+    "gen35": dict(era="patriarchs",
+                  when="Jacob keeps his Bethel vow — the foreign gods buried, his name sealed Israel a second time under El Shaddai — then the road takes Deborah, Rachel (bearing Benjamin at Bethlehem), and at last old Isaac, buried by Esau and Jacob together.",
+                  clock="AM ≈ 2207 · c. 1739 BC — God calls Jacob back to Bethel to keep the vow he made fleeing; he purges the camp of its foreign gods, builds the altar, and is confirmed as Israel, heir of El Shaddai's covenant. On the road south Rachel dies bearing Benjamin and is buried by Ephrath — Bethlehem; Reuben sins against his father's bed; the twelve sons are all named. Isaac's death at Hebron (age 180, buried by both his sons) is recorded here to close his generation, though by the numbers he outlives Joseph's sale by years."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2673,6 +2722,12 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2206", trad="c. 1739 BC", event="The massacre at Shechem — Dinah violated; Simeon and Levi deceive the town and destroy it; the family is driven toward Bethel",
          note="The homecoming turns dark. Dinah, Jacob's daughter by Leah, is seized and violated by Shechem, the Hivite prince of the town where the family has settled (Genesis 34). His father Hamor proposes a merger of the two peoples, and Shechem offers any bride-price; but the sons of Jacob answer 'with deceit' (b'mirmah — the family's own besetting word), demanding that every male of the town be circumcised. On the third day, while the men lie in pain, Simeon and Levi — Dinah's full brothers — take their swords, kill every male, and carry off the city's wealth, women, and children. Jacob rebukes the two only for the danger they have made ('you have made me a stench to the land'); they answer with a question the narrator leaves unanswered — 'Should he treat our sister like a prostitute?' The atrocity ends the family's peace at Shechem and sets up the flight to Bethel, and it is never forgiven: on his deathbed Jacob curses the brothers' anger and foretells that Simeon and Levi will be 'scattered in Israel' (49:5-7).",
          ref=("Genesis", 34, 25)),
+    dict(era="patriarchs", am="≈2207", trad="c. 1739 BC", event="Jacob returns to Bethel — the foreign gods buried, his name sealed Israel a second time; Rachel dies bearing Benjamin on the road to Bethlehem",
+         note="Called back by God to the place of his fleeing vow, Jacob purges his camp of its foreign gods and earrings, buries them under the oak at Shechem, and goes up to Bethel to build the altar he had promised twenty years before (Genesis 35). There God appears again, blesses him, and confirms the name Israel and the covenant of El Shaddai — a nation, a company of nations, and kings to come. On the road south Rachel dies in hard labor bearing her second son; with her last breath she names him Ben-oni, 'son of my sorrow,' but Jacob renames him Benjamin, and buries her by the way to Ephrath — that is, Bethlehem — under a pillar that stands 'to this day.' The twelve sons are now all named — just before the family begins to tear itself apart over Joseph.",
+         ref=("Genesis", 35, 19)),
+    dict(era="patriarchs", am="≈2288", trad="c. 1716 BC", event="Isaac dies at Hebron, 180 years old — buried by Esau and Jacob together (recorded in Genesis 35, though he outlives Joseph's sale)",
+         note="Isaac, 'old and full of days,' dies at 180 and is buried in the cave of Machpelah by his two sons — the twins who fought in the womb and over the birthright standing together at the grave, as Isaac and Ishmael had once buried Abraham (25:9). Genesis places his obituary in ch. 35 to close his generation before turning wholly to Joseph, but by the chronology he actually dies about a dozen years AFTER Joseph is sold into Egypt (ch. 37) — the same out-of-order mercy the book showed with Abraham, clearing the old man from the stage in peace before the years of grief begin.",
+         ref=("Genesis", 35, 29)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
