@@ -201,7 +201,12 @@ DICTIONARY = [
     ("shiphchah", "shiphchah", "שִׁפְחָה", "shiphchah",
      "A female slave — the word the shelf renders 'handmaid.' Hagar's title, used insistently through Genesis 16 (her status IS the plot); Pharaoh's gifts back at 12:16 included such women.", (16, 1)),
     ("anah", "anah / innah", "עָנָה", "anah",
-     "To afflict, oppress, humble. Prophesied of Israel in Egypt (15:13), dealt by Sarai to an Egyptian (16:6), accepted in the angel's hard 'submit yourself' (16:9), heard by God in Hagar's 'affliction' (16:11) — the Exodus verb, running backward.", (15, 13)),
+     "To afflict, oppress, humble — and, in the intensive innah, to FORCE, degrade, violate. Prophesied of Israel in Egypt (15:13), dealt by Sarai to an Egyptian (16:6), accepted in the angel's hard 'submit yourself' (16:9), heard by God in Hagar's 'affliction' (16:11) — the Exodus verb, running backward. Its darkest Genesis use is 34:2, of Shechem and Dinah — 'he took her and lay with her and innah her,' the law's own word for rape (Deuteronomy 22:29; what Amnon does to Tamar, 2 Samuel 13:14). The KJV/ASV soften it to 'humbled'; this translation renders it 'violated.'", (15, 13)),
+    # ---- Genesis 34 (Hebrew) ----
+    ("nevalah", "nevalah", "נְבָלָה", "nevalah",
+     "An OUTRAGE — not ordinary wrong but the fixed, heavy term for a disgraceful act that tears the fabric of a people. Shechem's violation of Dinah is 'a nevalah in Israel, a thing that should not be done' (34:7); the same word names the gang-rape that ignites Israel's civil war (Judges 19-20) and Amnon's assault on Tamar ('no such nevalah is done in Israel,' 2 Samuel 13:12), and Achan's sacrilege (Joshua 7:15). It is kin to naval, the 'fool' who says in his heart there is no God (Psalm 14:1) — moral collapse, not mere foolishness. KJV and ASV flatten it to 'folly'; NIV 'disgraceful thing.' The tag 'in Israel' is pointed: the nation, freshly named two chapters back, meets its first atrocity from within its own tents.", (34, 7)),
+    ("mohar", "mohar", "מֹהַר", "mohar",
+     "The BRIDE-PRICE — the sum a groom's household paid to the bride's family for the marriage (distinct from the mattan, an added 'gift'). Shechem, desperate, tells Dinah's brothers to 'pile on me a very great mohar and gift, and I will give it' (34:12) — he will buy his way past the crime. The law fixes a mohar for a seduced unbetrothed girl (Exodus 22:16-17). KJV 'dowry,' which properly runs the other way (bride's family to groom); mohar is the price paid FOR the bride, not by her.", (34, 12)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
      "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
     ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
@@ -333,7 +338,7 @@ DICTIONARY = [
     ("matamim", "mat'ammim", "מַטְעַמִּים", "mat'ammim",
      "SAVORY FOOD — 'tasty things,' a delicacy (from ta'am, 'taste'): the dish of game Isaac craves and the disguise Rebekah cooks from two kids to fool him (27:4, 9, 31). KJV 'savoury meat'; NWT 'a tasty dish.' A small, human detail — the old blind man's love of a favorite meal — turned into the very instrument of the deception; the taste that was meant to confirm his son is the taste that helps steal the blessing.", (27, 4)),
     ("mirmah", "mirmah", "מִרְמָה", "mirmah",
-     "DECEIT, treachery — 'your brother came with mirmah and took your blessing' (27:35; KJV 'subtilty,' NWT 'deception'). It becomes a thread running through Jacob's whole life, the deceiver repeatedly deceived: he cheats Esau with mirmah here, and Laban will cheat HIM ('why have you deceived me?', Leah for Rachel, 29:25), and his own sons will deceive him with Joseph's blood-dipped coat (37:31-33). The man named 'supplanter' (Ya'aqov) traffics in mirmah until God wrestles a new name out of him — Israel; the true Israelite, John's Gospel will later say, is the one 'in whom is no mirmah / deceit' (John 1:47).", (27, 35)),
+     "DECEIT, treachery — 'your brother came with mirmah and took your blessing' (27:35; KJV 'subtilty,' NWT 'deception'). It becomes a thread running through Jacob's whole life, the deceiver repeatedly deceived: he cheats Esau with mirmah here, and Laban will cheat HIM ('why have you deceived me?', Leah for Rachel, 29:25); his sons answer Shechem 'with mirmah' and turn it into the slaughter of a whole city over their sister (34:13); and those same sons will one day deceive Jacob himself with Joseph's blood-dipped coat (37:31-33). The man named 'supplanter' (Ya'aqov) traffics in mirmah until God wrestles a new name out of him — Israel; the true Israelite, John's Gospel will later say, is the one 'in whom is no mirmah / deceit' (John 1:47).", (27, 35)),
     # ---- Genesis 28 (Hebrew) ----
     ("sullam", "sullam", "סֻלָּם", "sullam",
      "The famous 'LADDER' of Jacob's dream — a word that appears only ONCE in the whole Bible (28:12), so its exact shape is uncertain. KJV 'ladder' gave English 'Jacob's ladder,' but the likely root is salal, 'to heap up, cast up (a highway or ramp),' which points instead to a STAIRWAY or ramp — the monumental temple-stair of a Mesopotamian ziggurat, built precisely as a stepped bridge for the gods between earth and heaven. NWT and most modern scholars read 'stairway.' The broad steps also fit the traffic the dream shows: angels 'ascending and descending' both at once. This translation renders 'stairway,' keeping 'Jacob's ladder' in view as the traditional name.", (28, 12)),
@@ -670,9 +675,14 @@ ENCYCLOPEDIA = [
          modern="Harran, in Turkey's Şanlıurfa Province"),
     dict(slug="shechem", name="Shechem", kind="place",
          desc="Abram's first named stop in Canaan (12:6), at the great tree of Moreh — modern Tell Balata, between "
-              "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7); it will echo "
-              "through the whole Bible.",
-         refs=[(12, 6), (12, 7), (33, 18)],
+              "Mounts Ebal and Gerizim. Site of the first land-promise and Abram's first altar (12:7). Jacob returns "
+              "generations later, camps 'in peace' before the city and buys a field from the sons of Hamor (33:18-19) — "
+              "but it is also where his daughter Dinah is violated by the town's prince (who bears the city's own name, "
+              "Shechem son of Hamor), and where Simeon and Levi answer with the massacre of the whole city (ch. 34). It "
+              "keeps echoing: Joseph's bones are buried in that same field (Joshua 24:32), Joshua gathers Israel here for "
+              "the covenant renewal and sets up the great witness-stone (Joshua 24), and it becomes the first capital of "
+              "the northern kingdom (1 Kings 12).",
+         refs=[(12, 6), (12, 7), (33, 18), (34, 2)],
          videos=[("The Discovery of Joshua's Great Witness Stone at Shechem "
                   "(preview — this discovery belongs to Joshua 24, centuries after Abram's visit here)",
                   "https://www.youtube.com/watch?v=mnis257Rd3E")],
@@ -1462,6 +1472,40 @@ ENCYCLOPEDIA = [
               "and of the Messiah. She is buried beside Jacob at Machpelah (49:31) — not the wife he chose, but "
               "the wife in the ancestral tomb.",
          refs=[(29, 16), (29, 23), (29, 31), (30, 9), (31, 4), (33, 2)], videos=[]),
+    dict(slug="dinah", name="Dinah", kind="person", aliases=["Dinah"],
+         desc="Jacob and Leah's daughter — the one daughter the family record names, and the still center of Genesis 34's "
+              "storm. She 'goes out to see the daughters of the land' and is seized and violated by Shechem, the prince of "
+              "the town (34:2); her full brothers Simeon and Levi answer by putting the whole city to the sword. Through the "
+              "entire chapter Dinah never speaks and is never asked — the men negotiate, deceive, and kill over her in "
+              "silence, and the narrator lets that silence indict them. Her name (from din, 'judgment') hangs over a chapter "
+              "that withholds its verdict until Jacob's deathbed curse of her avengers (49:5-7). She is listed among those "
+              "who go down to Egypt (46:15), then passes from the story.",
+         refs=[(34, 1), (34, 2), (34, 3), (34, 25)], videos=[]),
+    dict(slug="hamor", name="Hamor", kind="person", aliases=["Hamor"],
+         desc="The Hivite ruler of Shechem and father of the prince Shechem — the name means 'donkey.' He comes to Jacob "
+              "as a smooth negotiator, proposing that the two peoples intermarry, trade, and 'become one people' (34:8-10), "
+              "and sells the bargain to his own townsmen not by appeal to justice but to greed: 'their livestock and "
+              "property — will they not be ours?' (34:23). He and his son are the first to fall to Simeon and Levi's swords "
+              "(34:26). Long after, Jacob's purchase of a field 'from the sons of Hamor' (33:19) becomes Joseph's grave "
+              "(Joshua 24:32) — the one patch of Shechem that stays Israel's by right, not by the sword.",
+         refs=[(34, 2), (34, 6), (34, 20), (34, 26)], videos=[]),
+    dict(slug="simeon", name="Simeon", kind="person", aliases=["Simeon"],
+         desc="Jacob and Leah's second son — his name (Shim'on, from shama, 'to hear') is Leah's cry that 'Jehovah heard "
+              "that I was hated' (29:33). With his brother Levi he takes the sword at Shechem, avenging their sister Dinah by "
+              "slaughtering the town (34:25-31). The violence marks him for life: on his deathbed Jacob does not bless the two "
+              "brothers but curses their anger — 'weapons of violence are their swords… I will scatter them in Israel' "
+              "(49:5-7). The tribe of Simeon is given no separate territory but is swallowed into Judah's (Joshua 19:1), the "
+              "curse working itself out. It is Simeon whom Joseph will later bind and hold hostage in Egypt (42:24).",
+         refs=[(29, 33), (34, 25), (34, 30)], videos=[]),
+    dict(slug="levi", name="Levi", kind="person", aliases=["Levi"],
+         desc="Jacob and Leah's third son — named for her hope that now, with three sons, her husband will be 'joined' "
+              "(lavah) to her (29:34). With Simeon he leads the massacre at Shechem (34:25) and shares the same deathbed "
+              "curse for it: 'cursed be their anger… I will scatter them in Israel' (49:7). Yet the scattering turns to "
+              "grace: Levi's descendants become the priestly tribe, given no land of their own but Jehovah himself as their "
+              "portion — dispersed through all Israel's towns precisely as its teachers and priests, the curse of scattering "
+              "remade into a vocation. Moses, Aaron, and Miriam are Levites; so is the whole priesthood. The avenger's line "
+              "becomes the tribe that stands at the altar.",
+         refs=[(29, 34), (34, 25)], videos=[]),
     dict(slug="rachel", name="Rachel", kind="person", aliases=["Rachel"],
          desc="Laban's younger daughter and the love of Jacob's life — a shepherdess he meets at the well and "
               "serves fourteen years to marry (29:9-30). 'Beautiful in form and lovely to look at,' and beloved, "
@@ -2299,6 +2343,7 @@ VERSE_OF_DAY = [
     (32, 29, "The name that is a verdict: 'Your name shall no longer be Jacob, but Israel; for you have striven with God and with men, and have prevailed.'"),
     (33, 4, "Grace outran fear: 'And Esau ran to meet him, and embraced him, and fell on his neck and kissed him; and they wept' — the brother who had sworn to kill him."),
     (33, 10, "Forgiveness with the face of God in it: 'I have seen your face as one sees the face of God, and you have received me favorably.'"),
+    (34, 7, "The text names the crime a crime: 'he had done an outrage in Israel, a thing that should not be done' — the newborn nation's first reckoning with an atrocity from within."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2498,6 +2543,9 @@ CHRON_CHAPTERS = {
     "gen33": dict(era="patriarchs",
                   when="The dreaded reunion becomes an embrace — Esau runs, weeps, and forgives; Jacob presses his 'blessing' back on him, then crosses into Canaan, settles at Shechem, buys land, and builds an altar, El-Elohe-Israel.",
                   clock="AM ≈ 2205 · c. 1739 BC — the morning after the Jabbok. Esau meets Jacob in peace and returns to Seir; Jacob crosses into Canaan for the first time in twenty years, camps at Succoth and then Shechem, buys a field, and raises an altar in his new name. The exile is over — but the family will not stay long at peace: the dark chapter at Shechem (ch. 34) waits, and the road to Bethel and Rachel's grave (ch. 35) lies just ahead."),
+    "gen34": dict(era="patriarchs",
+                  when="The dark chapter at Shechem — Dinah violated by the prince, the brothers' answer 'with deceit,' and the massacre of the whole town by Simeon and Levi, that Jacob rebukes only for the danger it brings on him.",
+                  clock="AM ≈ 2206 · c. 1739 BC — soon after Jacob settles near Shechem. The prince Shechem violates Dinah; her brothers trick the men of the town into circumcision, and on the third day Simeon and Levi put them all to the sword and plunder the city, carrying off its women and children. The atrocity forces the family off the land and drives the flight to Bethel in the next chapter — and it is not forgiven: Jacob curses the two brothers' swords on his deathbed (49:5-7)."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2622,6 +2670,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2205", trad="c. 1739 BC", event="Jacob and Esau reconciled; Jacob settles at Shechem and builds an altar",
          note="The reunion Jacob had dreaded turns out to be an embrace: Esau — who had once sworn to kill him — runs to meet him, falls on his neck, and weeps (Genesis 33). Jacob bows seven times, presses his lavish gift on his brother as a 'blessing' returned, and says, 'to see your face is like seeing the face of God.' They part in peace — Esau home to Seir, Jacob keeping a careful distance — and Jacob crosses into Canaan at last, camping at Succoth and then before the city of Shechem, where he buys a field for a hundred kesitah (the second parcel of the Promised Land any patriarch has owned, after Machpelah) and raises an altar, El-Elohe-Israel, 'El, the God of Israel' — claiming the God of his fathers under his own new name. The twenty-year exile is over.",
          ref=("Genesis", 33, 4)),
+    dict(era="patriarchs", am="≈2206", trad="c. 1739 BC", event="The massacre at Shechem — Dinah violated; Simeon and Levi deceive the town and destroy it; the family is driven toward Bethel",
+         note="The homecoming turns dark. Dinah, Jacob's daughter by Leah, is seized and violated by Shechem, the Hivite prince of the town where the family has settled (Genesis 34). His father Hamor proposes a merger of the two peoples, and Shechem offers any bride-price; but the sons of Jacob answer 'with deceit' (b'mirmah — the family's own besetting word), demanding that every male of the town be circumcised. On the third day, while the men lie in pain, Simeon and Levi — Dinah's full brothers — take their swords, kill every male, and carry off the city's wealth, women, and children. Jacob rebukes the two only for the danger they have made ('you have made me a stench to the land'); they answer with a question the narrator leaves unanswered — 'Should he treat our sister like a prostitute?' The atrocity ends the family's peace at Shechem and sets up the flight to Bethel, and it is never forgiven: on his deathbed Jacob curses the brothers' anger and foretells that Simeon and Levi will be 'scattered in Israel' (49:5-7).",
+         ref=("Genesis", 34, 25)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
