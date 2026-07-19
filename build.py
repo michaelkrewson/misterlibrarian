@@ -211,18 +211,37 @@ def header(active="", lang="en"):
         # (so a Spanish-only reader is never dumped into English); it grows as the
         # Spanish edition is built out. The 🌐 switch jumps to the English home.
         return f"""<header class="site-head">
+  <div class="utilnav">
+    <a class="util-ask" href="contact.es.html" title="Enviar una pregunta">✉️ Preguntar</a>
+    <details class="langsel">
+      <summary title="Idioma">\U0001F310 Español</summary>
+      <div class="langlist">
+        <a href="index.html">English</a>
+        <a href="es.html" class="cur">Español</a>
+      </div>
+    </details>
+  </div>
   <a class="brand" href="es.html">
     {SCROLL_SVG}
-    <span class="brand-name">La Traducción <span class="lib">MiSTeR</span></span>
+    <span class="brand-name">La Traducción <span class="lib">Mister</span></span>
   </a>
   <div class="rule"></div>
   <div class="tag">Una nueva traducción de la Biblia desde el hebreo y el griego</div>
   <nav class="topnav">
     <a href="es.html"{cls('home')}>Inicio</a>
-    <a class="langswitch" href="index.html" title="English site">\U0001F310 English</a>
   </nav>
 </header>"""
     return f"""<header class="site-head">
+  <div class="utilnav">
+    <a class="util-ask" href="contact.html" title="Ask a question">✉️ Ask a Question</a>
+    <details class="langsel">
+      <summary title="Language">\U0001F310 English</summary>
+      <div class="langlist">
+        <a href="index.html" class="cur">English</a>
+        <a href="es.html">Español</a>
+      </div>
+    </details>
+  </div>
   <a class="brand" href="index.html">
     {SCROLL_SVG}
     <span class="brand-name">The Mister<span class="lib">Librarian</span> Bible Project</span>
@@ -236,9 +255,7 @@ def header(active="", lang="en"):
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="ask.html"{cls('ask')}>Ask Mr. Librarian</a>
-    <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
     <a href="about.html"{cls('about')}>About</a>
-    <a class="langswitch" href="es.html" title="Sitio en español">\U0001F310 Español</a>
   </nav>
 </header>"""
 
@@ -254,7 +271,7 @@ FOOTER = """<footer class="site-foot">
 # Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only
 # reader is never dropped into English. Grows as the Spanish edition is built out.
 ES_FOOTER = """<footer class="site-foot">
-  <p>La Traducción MiSTeR — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
+  <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian; traducida con
   Claude. Esta edición está creciendo capítulo por capítulo.</p>
@@ -2575,7 +2592,7 @@ function toggleHeb(){{
   document.getElementById("hebtgl").textContent = "Mostrar hebreo";
 }} }}catch(e){{}} }})();
 </script>"""
-        out = page(f"{es_title} — La Traducción MiSTeR", body, lang="es",
+        out = page(f"{es_title} — La Traducción Mister", body, lang="es",
                    url=es_file,
                    desc=f"{es_title}: una traducción nueva desde el hebreo, versículo por versículo, con notas del "
                         f"traductor y comparación con la Reina-Valera, la NVI y otras versiones. El Nombre: «Jehová».")
@@ -2588,7 +2605,7 @@ function toggleHeb(){{
         f'  <a class="card" href="{chapter_filename(b, n)[:-5]}.es.html"><div class="card-t">{t}</div>'
         f'<div class="card-d">{html.escape(teasers.get(s, ""))[:150]}</div></a>'
         for (s, b, n, t) in built)
-    home = f"""<h1 class="pagetitle">La Traducción MiSTeR</h1>
+    home = f"""<h1 class="pagetitle">La Traducción Mister</h1>
 <p class="lede">Una nueva traducción de la Biblia <strong>desde el hebreo y el griego</strong>, capítulo por
 capítulo y versículo por versículo, con notas del traductor y comparación con la Reina-Valera, la NVI, La Biblia
 de las Américas y Dios Habla Hoy. El Nombre de Dios se traduce «<strong>Jehová</strong>», como en la
@@ -2610,8 +2627,8 @@ Reina-Valera.</p>
 <div class="cardgrid">
 {cards}
 </div>"""
-    out = page("La Traducción MiSTeR — La Biblia en español", home, active="home", lang="es", url="es.html",
-               desc="La Traducción MiSTeR en español: la Biblia desde el hebreo, capítulo por capítulo, con notas "
+    out = page("La Traducción Mister — La Biblia en español", home, active="home", lang="es", url="es.html",
+               desc="La Traducción Mister en español: la Biblia desde el hebreo, capítulo por capítulo, con notas "
                     "y comparación con la Reina-Valera. El Nombre de Dios se traduce «Jehová».")
     open(os.path.join(OUT, "es.html"), "w", encoding="utf-8").write(out)
 
@@ -3211,6 +3228,56 @@ def build_thanks():
     open(os.path.join(OUT, "thanks.html"), "w", encoding="utf-8").write(out)
 
 
+def build_contact_es():
+    """Spanish twin of the contact form, so a Spanish-only reader's 'Preguntar'
+    (the top-right utility link) never lands on an English page. Same form endpoint,
+    Spanish labels, and its own Spanish thank-you page."""
+    body = f"""<h1 class="pagetitle">✉️ Hazle una pregunta a Mr. Librarian</h1>
+<p class="lede">Una pregunta sobre el proyecto, una decisión de traducción que te gustaría discutir,
+la solicitud de un capítulo, o algo que siempre te has preguntado sobre el texto — envíala. Las buenas
+preguntas se convierten en publicaciones del blog de preguntas y respuestas (de forma anónima, salvo que
+indiques lo contrario), y las preguntas de los lectores son justamente lo que hace crecer esa serie.</p>
+
+<div class="panel">
+  <form action="{FORM_ENDPOINT}" method="POST" class="askform">
+    <input type="hidden" name="_subject" value="Mr. Librarian — una pregunta desde el sitio"/>
+    <input type="hidden" name="_template" value="table"/>
+    <input type="hidden" name="_next" value="{SITE_URL}/thanks.es.html"/>
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+    <label>Tu nombre <span class="opt">(opcional)</span>
+      <input type="text" name="name" placeholder="Como quieras que te mencionemos — o déjalo en blanco"/>
+    </label>
+    <label>Tu correo <span class="opt">(opcional — solo si quieres una respuesta)</span>
+      <input type="email" name="email" placeholder="tu@ejemplo.com"/>
+    </label>
+    <label>Tu pregunta <span class="req">(obligatorio)</span>
+      <textarea name="question" required rows="7"
+        placeholder="Pregunta lo que quieras — un versículo, una elección de palabra, una comparación entre versiones, lo que viene…"></textarea>
+    </label>
+    <button class="btn" type="submit">Enviar al escritorio del bibliotecario</button>
+    <p class="formnote">Al enviar aparece un captcha rápido (para dejar a los robots fuera de la biblioteca)
+    y luego vuelves aquí. Nada se publica en público — las preguntas van directo al escritorio de Mr. Librarian.</p>
+  </form>
+</div>"""
+    out = page("Haz una pregunta — La Traducción Mister", body, lang="es", url="contact.es.html",
+               desc="Envíale a Mr. Librarian una pregunta sobre la traducción, un versículo o el proyecto.")
+    open(os.path.join(OUT, "contact.es.html"), "w", encoding="utf-8").write(out)
+
+
+def build_thanks_es():
+    body = """<h1 class="pagetitle">📬 Ya está en el escritorio del bibliotecario</h1>
+<div class="panel prose">
+  <p><strong>Tu pregunta llegó.</strong> Gracias — las preguntas de los lectores son el alma de esta
+  serie, y todas se leen. Si la tuya se convierte en una publicación, aparecerá de forma anónima salvo
+  que hayas pedido lo contrario; si dejaste un correo, quizá recibas una respuesta directa.</p>
+  <p>Mientras tanto, los estantes están abiertos: la edición en español está creciendo capítulo por
+  capítulo en la <a href="es.html">página principal</a>.</p>
+</div>"""
+    out = page("Pregunta recibida — La Traducción Mister", body, lang="es",
+               desc="Tu pregunta está en el escritorio de Mr. Librarian.")
+    open(os.path.join(OUT, "thanks.es.html"), "w", encoding="utf-8").write(out)
+
+
 def _chron_video_credit():
     """The Expedition Bible credit line for the chronology page's field-guide film."""
     for c in VIDEO_CREDITS:
@@ -3391,6 +3458,8 @@ def main():
     build_es()
     build_contact()
     build_thanks()
+    build_contact_es()
+    build_thanks_es()
     n_words, n_refs = build_concordance(chapters)
     n_dict = build_dictionary()
     n_places, n_people = build_encyclopedia()

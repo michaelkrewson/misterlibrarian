@@ -17,7 +17,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;colo
   background:rgba(255,255,255,0.05);padding:1px 5px;border-radius:4px}
 
 /* ── header ── */
-.site-head{text-align:center;padding:34px 0 20px;border-bottom:1px solid var(--border);margin-bottom:24px}
+.site-head{position:relative;text-align:center;padding:34px 0 20px;border-bottom:1px solid var(--border);margin-bottom:24px}
 .site-head .brand{display:inline-block;color:inherit}
 .mtlib-icon{display:block;margin:0 auto 14px;width:56px;height:56px;
   filter:drop-shadow(0 3px 12px rgba(232,201,104,0.28))}
@@ -135,7 +135,32 @@ body.hide-heb .heb{display:none}
 .esp .notelink{font-size:10px;color:var(--purple);vertical-align:super;margin-left:4px}
 .esp-page .esp{display:block}
 body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2px solid rgba(232,201,104,0.28)}
-.topnav .langswitch{border:1px solid var(--border);border-radius:7px;padding:2px 9px}
+/* top-right utility cluster: [✉️ Ask a Question] [🌐 Language ▾] — present site-wide,
+   pinned to the upper-right corner of the centered masthead. Dropdown is a native
+   <details> (no JS): click the pill to open, click an option to switch editions. */
+.utilnav{position:absolute;top:16px;right:18px;display:flex;align-items:center;gap:9px;z-index:30}
+.utilnav .util-ask,.langsel summary{font-size:12px;font-weight:700;color:var(--muted);
+  padding:5px 12px;border:1px solid var(--border);border-radius:14px;white-space:nowrap;
+  text-decoration:none;cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.utilnav .util-ask:hover{color:var(--gold);border-color:rgba(232,201,104,0.35);background:rgba(232,201,104,0.08)}
+.langsel{position:relative}
+.langsel summary{list-style:none;display:inline-flex;align-items:center}
+.langsel summary::-webkit-details-marker{display:none}
+.langsel summary::after{content:"▾";margin-left:6px;font-size:10px;opacity:.7}
+.langsel summary:hover{color:var(--text)}
+.langsel[open] summary{color:var(--text);background:rgba(255,255,255,0.05)}
+.langlist{position:absolute;right:0;top:calc(100% + 6px);min-width:132px;background:var(--bg2);
+  border:1px solid var(--border);border-radius:10px;padding:5px;display:flex;flex-direction:column;gap:2px;
+  box-shadow:0 12px 32px rgba(0,0,0,0.5)}
+.langlist a{font-size:12.5px;font-weight:600;color:var(--muted);text-decoration:none;
+  padding:7px 12px;border-radius:7px;white-space:nowrap}
+.langlist a:hover{color:var(--text);background:rgba(255,255,255,0.05)}
+.langlist a.cur{color:var(--gold)}
+.langlist a.cur::after{content:" ✓";font-size:11px;opacity:.85}
+@media (max-width:680px){
+  .utilnav{position:static;justify-content:center;margin:0 0 16px;gap:8px}
+  .langlist{right:auto;left:50%;transform:translateX(-50%)}
+}
 .note{background:var(--bg1);border:1px solid var(--border);border-left:3px solid rgba(167,139,250,0.5);
   border-radius:10px;padding:15px 18px;margin-bottom:14px}
 .note:target{border-left-color:var(--gold);background:rgba(232,201,104,0.05)}
