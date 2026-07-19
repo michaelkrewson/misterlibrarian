@@ -212,6 +212,13 @@ DICTIONARY = [
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
     ("el-bethel", "El-Bethel", "אֵל בֵּית-אֵל", "El Beit-El",
      "'God of Bethel' — the name Jacob gives the ALTAR he raises on his return (35:7): not the place but its God, the God who met him here as a fugitive now claimed as his own. It makes good the vow of his first night here — 'this stone shall be God's house' (28:22) — and follows the patriarchs' pattern of naming God from an encounter (El Roi, El Elyon, El-Elohe-Israel). The compound stacks El, the ancient name of God, onto Beit-El, 'house of God,' so the altar-name reads 'the God of the house of God.'", (35, 7)),
+    # ---- Genesis 36 (Hebrew) ----
+    ("toledot", "toledot", "תּוֹלְדוֹת", "toledot",
+     "GENERATIONS, descendants, 'the account of' — from yalad, 'to bear.' It is the load-bearing beam of Genesis: 'these are the toledot of…' divides the whole book into about ten panels — the heavens and earth (2:4), Adam (5:1), Noah (6:9), the nations (10:1), Shem and Terah (11:10, 27), Ishmael (25:12), Isaac (25:19), ESAU (36:1, and again 36:9), and Jacob (37:2). Each toledot hands the story from one generation to the next and, tellingly, clears the SIDE line before following the chosen one — Ishmael before Isaac, Esau before Jacob — so the long catalogue of Edom here is the book settling Esau's account with honor before it turns wholly to Joseph. KJV 'generations'; NWT 'history / origins.'", (36, 1)),
+    ("alluf", "alluf", "אַלּוּף", "alluf",
+     "A CLAN-CHIEF — the head of a 'thousand' (eleph), the leadership title of Edom, repeated like a drumbeat through this chapter (aluf Teman, aluf Omar…). The KJV famously renders it 'DUKE' (from the Latin dux, by way of the Vulgate) — a medieval European coronet comically out of place in Bronze-Age Seir; the ASV and NIV read 'chief,' the NWT 'sheik,' and this translation 'chief.' The word sketches Edom's early shape — not one throne but a federation of clan-heads — and even the king-list that follows (36:31-39) is non-dynastic, each king from a different town.", (36, 15)),
+    ("yemim", "yemim", "יֵּמִם", "yemim",
+     "A one-off word (a hapax legomenon) that has defeated every translator: 'this is the Anah who found the yemim in the wilderness as he pastured the donkeys' (36:24). The KJV guessed 'MULES' (from the donkey context); the NIV and most moderns read 'hot springs' (from an Aramaic cognate yamma, followed by the Vulgate's aquae calidae); the Samaritan and Syriac have 'water.' No one is sure — a clean example of how a single rare word, appearing once in the whole Bible, can leave the versions honestly guessing. This translation renders 'hot springs,' with the uncertainty flagged.", (36, 24)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
      "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
     ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
@@ -1635,7 +1642,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4), (36, 1)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1646,18 +1653,39 @@ ENCYCLOPEDIA = [
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
          refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29), (33, 3)], videos=[]),
-    dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom"],
+    dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom", "Seir"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
-              "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted in this chapter from "
-              "the red stew (25:30) and matches the red Nubian sandstone of the region (whose later capital, Petra, "
-              "is carved into it). Edom and Israel are the archetypal quarreling brothers of the Bible: kin, yet "
-              "perennial enemies — Edom refuses Israel passage in the wilderness (Numbers 20), and the prophets "
-              "return to it again and again (Obadiah is entirely an oracle against Edom; Jeremiah 49; Isaiah 34). "
-              "Herod the Great was an Idumean — a Hellenized Edomite — so the brother-rivalry runs right up to the "
-              "Gospels.",
-         refs=[(25, 30)],
+              "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted from the red stew "
+              "(25:30) and matches the red Nubian sandstone of the region (whose later capital, Petra, is carved "
+              "into it). Its whole family tree — Esau's wives and sons, the clan-chiefs (alufim), the older Horite "
+              "people they displaced, and eight kings who reigned 'before any king reigned over Israel' — fills "
+              "Genesis 36. Edom and Israel are the archetypal quarreling brothers of the Bible: kin, yet perennial "
+              "enemies — Edom refuses Israel passage in the wilderness (Numbers 20), and the prophets return to it "
+              "again and again (Obadiah is entirely an oracle against Edom; Jeremiah 49; Isaiah 34). Herod the Great "
+              "was an Idumean — a Hellenized Edomite — so the brother-rivalry runs right up to the Gospels.",
+         refs=[(25, 30), (36, 1), (36, 8)],
          coords=(30.32, 35.44, 0.9), approx=True,
          modern="The highlands of southern Jordan (Seir), south-east of the Dead Sea"),
+    dict(slug="amalek", name="Amalek", kind="people", aliases=["Amalek", "Amalekites", "Agagite"],
+         desc="Israel's oldest and bitterest enemy — and, this chapter reveals, a grandson of ESAU: 'Timna was "
+              "concubine to Eliphaz, Esau's son, and she bore Amalek' (36:12). The Amalekites ambush Israel's faint "
+              "and straggling just out of Egypt (Exodus 17:8-16), and for it earn a unique sentence — 'Jehovah will "
+              "have war with Amalek from generation to generation' — and the charge to 'blot out the memory of "
+              "Amalek from under heaven' (Deuteronomy 25:17-19). Saul loses his kingdom for sparing their king Agag "
+              "(1 Samuel 15); and Haman 'the Agagite,' who plots to annihilate every Jew in the Persian empire "
+              "(Esther 3), is read as the last flowering of that line. So the roll of honor for Esau also, in a "
+              "single verse, plants the enemy that will shadow Israel for a thousand years.",
+         refs=[(36, 12), (36, 16)], videos=[]),
+    dict(slug="horites", name="Horites", kind="people", aliases=["Horites", "Horite", "Hori"],
+         desc="The original inhabitants of Seir, before Edom — 'the sons of Seir the Horite, the inhabitants of the "
+              "land' (36:20), catalogued here alongside Esau's line. The name is usually tied to chor, 'cave,' so "
+              "the traditional gloss is 'cave-dwellers' (some scholars instead connect them with the Hurrians of the "
+              "wider ancient Near East). Genesis does not pretend Edom rose from empty land: Deuteronomy says plainly "
+              "that 'the Horites lived in Seir formerly, but the sons of Esau dispossessed them… and dwelt in their "
+              "place' (Deuteronomy 2:12) — the same honesty the Bible will later turn on the peoples Israel itself "
+              "displaces. One Horite clan, Anah, is remembered for a desert find, the yemim (hot springs?) — a rare "
+              "word no one can quite translate (36:24).",
+         refs=[(36, 20), (36, 21)], videos=[]),
 
     # ---- Genesis 21 ----
     dict(slug="beersheba", name="Beersheba", kind="place", aliases=["Beersheba"],
@@ -2390,6 +2418,7 @@ VERSE_OF_DAY = [
     (34, 7, "The text names the crime a crime: 'he had done an outrage in Israel, a thing that should not be done' — the newborn nation's first reckoning with an atrocity from within."),
     (35, 3, "Jacob names his God by what God has done: 'an altar to the God who answered me in the day of my distress, and was with me on the way that I went.'"),
     (35, 18, "Grief turned to blessing over a grave: the dying mother names him Ben-oni, 'son of my sorrow' — the father renames him Benjamin, 'son of the right hand.'"),
+    (36, 7, "The old rivalry ends in room made, not blood: too much to hold them both, Esau gathers everything and leaves Canaan to his brother, taking Seir for himself."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2595,6 +2624,9 @@ CHRON_CHAPTERS = {
     "gen35": dict(era="patriarchs",
                   when="Jacob keeps his Bethel vow — the foreign gods buried, his name sealed Israel a second time under El Shaddai — then the road takes Deborah, Rachel (bearing Benjamin at Bethlehem), and at last old Isaac, buried by Esau and Jacob together.",
                   clock="AM ≈ 2207 · c. 1739 BC — God calls Jacob back to Bethel to keep the vow he made fleeing; he purges the camp of its foreign gods, builds the altar, and is confirmed as Israel, heir of El Shaddai's covenant. On the road south Rachel dies bearing Benjamin and is buried by Ephrath — Bethlehem; Reuben sins against his father's bed; the twelve sons are all named. Isaac's death at Hebron (age 180, buried by both his sons) is recorded here to close his generation, though by the numbers he outlives Joseph's sale by years."),
+    "gen36": dict(era="patriarchs",
+                  when="The book pauses to catalogue Esau — his Canaanite wives, his move to Seir, the clans and chiefs of Edom, the Horites they displaced, and eight kings who reigned in Edom before Israel had any king.",
+                  clock="An undated genealogical interlude. Esau settles the red highlands of Seir 'away from his brother Jacob' — a peaceful separation, like Abraham and Lot's — and his line becomes the nation of Edom, with clan-chiefs and a non-dynastic line of kings. Amalek, Israel's perennial enemy, is born in it (36:12). The chapter clears the brother's account with honor before Genesis turns, in ch. 37, wholly to Joseph."),
     "gen22": dict(era="patriarchs",
                   when="The Aqedah — the binding of Isaac on Moriah, the ram in the thicket, and the promise sealed by God's own oath.",
                   clock="Some years after Isaac's birth (his age is debated — the midrash makes him 37, Josephus 25); Moriah is the hill 2 Chronicles 3:1 will name as the Temple Mount, so this altar stands where Solomon's will."),
@@ -2728,6 +2760,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="≈2288", trad="c. 1716 BC", event="Isaac dies at Hebron, 180 years old — buried by Esau and Jacob together (recorded in Genesis 35, though he outlives Joseph's sale)",
          note="Isaac, 'old and full of days,' dies at 180 and is buried in the cave of Machpelah by his two sons — the twins who fought in the womb and over the birthright standing together at the grave, as Isaac and Ishmael had once buried Abraham (25:9). Genesis places his obituary in ch. 35 to close his generation before turning wholly to Joseph, but by the chronology he actually dies about a dozen years AFTER Joseph is sold into Egypt (ch. 37) — the same out-of-order mercy the book showed with Abraham, clearing the old man from the stage in peace before the years of grief begin.",
          ref=("Genesis", 35, 29)),
+    dict(era="patriarchs", am="—", trad="—", event="Esau's line becomes Edom in Seir — the clans, chiefs, and kings of the brother-nation (a genealogical interlude)",
+         note="Genesis pauses to catalogue Esau (ch. 36): his Canaanite wives and sons, his move to the red highlands of Seir 'away from his brother Jacob' (a peaceful separation, echoing Abraham and Lot's, 13:6), the clan-chiefs of Edom, the older Horite people they displaced (Deuteronomy 2:12), and eight kings who 'reigned in Edom before any king reigned over Israel' — a notably non-dynastic line, each king from a different city. Amalek, Israel's future arch-enemy, is quietly born in the roll (36:12). Undated by design: a genealogical bridge that settles Esau's account with honor before the book turns wholly to Joseph.",
+         ref=("Genesis", 36, 1)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
