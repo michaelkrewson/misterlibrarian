@@ -203,9 +203,25 @@ SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3
 </svg>"""
 
 
-def header(active=""):
+def header(active="", lang="en"):
     def cls(k):
         return ' class="on"' if k == active else ""
+    if lang == "es":
+        # Spanish locale header. The nav links ONLY to pages that exist in Spanish
+        # (so a Spanish-only reader is never dumped into English); it grows as the
+        # Spanish edition is built out. The 🌐 switch jumps to the English home.
+        return f"""<header class="site-head">
+  <a class="brand" href="es.html">
+    {SCROLL_SVG}
+    <span class="brand-name">La Traducción <span class="lib">MiSTeR</span></span>
+  </a>
+  <div class="rule"></div>
+  <div class="tag">Una nueva traducción de la Biblia desde el hebreo y el griego</div>
+  <nav class="topnav">
+    <a href="es.html"{cls('home')}>Inicio</a>
+    <a class="langswitch" href="index.html" title="English site">\U0001F310 English</a>
+  </nav>
+</header>"""
     return f"""<header class="site-head">
   <a class="brand" href="index.html">
     {SCROLL_SVG}
@@ -222,6 +238,7 @@ def header(active=""):
     <a href="ask.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="contact.html"{cls('contact')}>✉️ Ask a Question</a>
     <a href="about.html"{cls('about')}>About</a>
+    <a class="langswitch" href="es.html" title="Sitio en español">\U0001F310 Español</a>
   </nav>
 </header>"""
 
@@ -232,6 +249,16 @@ FOOTER = """<footer class="site-foot">
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian;
   translated with Claude.</p>
   <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+</footer>"""
+
+# Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only
+# reader is never dropped into English. Grows as the Spanish edition is built out.
+ES_FOOTER = """<footer class="site-foot">
+  <p>La Traducción MiSTeR — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
+  originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
+  que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian; traducida con
+  Claude. Esta edición está creciendo capítulo por capítulo.</p>
+  <p><a href="es.html">Inicio</a> · <a href="index.html">English edition</a></p>
 </footer>"""
 
 
@@ -307,11 +334,11 @@ def _og_tags(title, desc, url="", image=""):
     return "\n" + "\n".join(tags)
 
 
-def page(title, body, active="", desc="", url="", image=""):
+def page(title, body, active="", desc="", url="", image="", lang="en"):
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
     og = _og_tags(title, desc, url, image)
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -321,14 +348,14 @@ def page(title, body, active="", desc="", url="", image=""):
 </head>
 <body>
 <div class="wrap">
-{header(active)}
+{header(active, lang)}
 <script src="reading.js"></script>
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
 <script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
-{FOOTER}
+{ES_FOOTER if lang == "es" else FOOTER}
 </div>
 </body>
 </html>
@@ -1394,26 +1421,43 @@ def build_verse_stubs(book, num, content):
 
 
 def build_chapter_pages(chapters):
+    es_panels = _es_panels()   # chapters with a Spanish edition -> the reader's español toggle
     for slug, book, num, teaser in CHAPTERS:
         content = clean_chapter(chapters[slug])
         content = inject_encyclopedia_links(content, book, num)
         content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
         content = render_film_clips(content)
+        content, has_es = inject_spanish(content, slug, es_panels)
         orig_lang = "Greek" if _is_nt(book) else "Hebrew"   # the Hide-original toggle label
         # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
         # browser. gen_audio.py produces those files.
         mp3_rel = f"audio/{book_slug(book)}-{num}.mp3"
         audio_attr = f' data-audio="{mp3_rel}"' if os.path.exists(os.path.join(OUT, mp3_rel)) else ""
+        es_file = chapter_filename(book, num)[:-5] + ".es.html"
+        es_btn = ((f'<button class="tgl" id="esptgl" onclick="toggleEsp()">Mostrar español</button>'
+                   f'<a class="tgl" href="{es_file}" title="Edición en español">\U0001F310 Español</a>')
+                  if has_es else "")
         toggle = (f'<div class="togglebar">'
                   f'<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
                   f'<div class="tgl-group">'
                   f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
                   f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide {orig_lang}</button>'
+                  f'{es_btn}'
                   f'<a class="tgl" href="atlas.html#{book_slug(book)}-{num}">🗺️ Atlas</a>'
                   f'</div>'
                   f'</div>')
+        es_js = (("""
+function toggleEsp(){
+  var shown = document.body.classList.toggle("show-esp");
+  document.getElementById("esptgl").textContent = shown ? "Ocultar espa\\u00f1ol" : "Mostrar espa\\u00f1ol";
+  try{ localStorage.setItem("mtlib_showesp", shown ? "1" : "0"); }catch(e){}
+}
+(function(){ try{ if(localStorage.getItem("mtlib_showesp")==="1"){
+  document.body.classList.add("show-esp");
+  document.getElementById("esptgl").textContent = "Ocultar espa\\u00f1ol";
+} }catch(e){} })();""") if has_es else "")
         body = f"""{nav_strip(book, num, 'top')}
 {toggle}
 {chrono_strip(slug)}
@@ -1447,6 +1491,7 @@ function toggleHeb(){{
   }});
   render();
 }})();
+{es_js}
 </script>"""
         src = "the Greek (the critical Greek New Testament)" if _is_nt(book) else "the Hebrew (Masoretic Text)"
         desc = (f"{book} {num} translated fresh from {src}, with verse-by-verse "
@@ -2437,6 +2482,140 @@ def build_ask_newton():
     open(os.path.join(OUT, "ask-newton.html"), "w", encoding="utf-8").write(out)
 
 
+ES_BOOK = {"Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico",
+           "Numbers": "Números", "Jeremiah": "Jeremías", "Proverbs": "Proverbios",
+           "Daniel": "Daniel", "Matthew": "Mateo", "John": "Juan",
+           "Revelation": "Apocalipsis"}
+
+
+def _es_panels():
+    """Read source/es/*.html -> {slug: inner_content}. The single source of Spanish
+    truth: the Spanish page build AND the English-page 'Mostrar español' toggle both
+    read from here, so the two can never drift."""
+    es_dir = os.path.join(OUT, "source", "es")
+    out = {}
+    if not os.path.isdir(es_dir):
+        return out
+    for fn in sorted(os.listdir(es_dir)):
+        if not fn.endswith(".html"):
+            continue
+        raw = open(os.path.join(es_dir, fn), encoding="utf-8").read()
+        m = re.search(r'id="chapter-([a-z0-9]+)">(.*?)</div><!-- /chapter-\1 -->', raw, re.S)
+        if m:
+            out[m.group(1)] = m.group(2).strip()
+    return out
+
+
+def inject_spanish(content, slug, es_panels):
+    """Thread the Spanish verse line into an ENGLISH chapter's verses (for the
+    reader's 'Mostrar español' toggle). Pulls each verse's <div class="esp">…</div>
+    from the Spanish source by verse id and drops it in right after the English
+    <div class="eng">…</div>. No-op for chapters with no Spanish source yet."""
+    esp = es_panels.get(slug)
+    if not esp:
+        return content, False
+    # verse id -> spanish <div class="esp">…</div> (without the trailing notelink)
+    es_by_v = {}
+    for m in re.finditer(r'id="(v[\w-]+)".*?(<div class="esp">.*?</div>)', esp, re.S):
+        line = re.sub(r'<a class="notelink".*?</a>', '', m.group(2), flags=re.S)
+        es_by_v[m.group(1)] = line
+    if not es_by_v:
+        return content, False
+
+    def add(m):
+        vid = m.group("vid")
+        esline = es_by_v.get(vid)
+        if not esline:
+            return m.group(0)
+        return m.group(0) + "\n      " + esline
+    # after each verse's English line, insert the Spanish line
+    out = re.sub(
+        r'id="(?P<vid>v[\w-]+)".*?<div class="eng">.*?</div>',
+        add, content, flags=re.S)
+    return out, True
+
+
+def build_es():
+    """The Spanish locale — a parallel edition built chapter by chapter from
+    source/es/*.html. Each Spanish chapter renders to <slug>.es.html with Spanish
+    chrome (Spanish nav, an 'Ocultar hebreo' toggle, and the 🌐 language switch back
+    to English); es.html is the Spanish home. The English site is untouched. Grows as
+    source/es/ files are added — the same 'chapter by chapter on both sides' cadence."""
+    panels = _es_panels()
+    if not panels:
+        return
+    en_by_slug = {slug: (book, num) for slug, book, num, _ in CHAPTERS}
+    teasers = {slug: t for slug, _b, _n, t in CHAPTERS}
+    built = []
+    for slug, content in panels.items():
+        bk = en_by_slug.get(slug)
+        if not bk:
+            continue
+        book, num = bk
+        es_title = f"{ES_BOOK.get(book, book)} {num}"
+        en_file = chapter_filename(book, num)
+        es_file = en_file[:-5] + ".es.html"          # genesis-1.html -> genesis-1.es.html
+        toggle = (f'<div class="togglebar"><div class="tgl-group">'
+                  f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Ocultar hebreo</button>'
+                  f'<a class="tgl" href="{en_file}" title="Ver en inglés">\U0001F310 English</a>'
+                  f'</div></div>')
+        body = f"""{toggle}
+<article class="chapter esp-page">
+{content}
+</article>
+<p class="muted" style="text-align:center;margin:26px 0 0"><a href="{en_file}">Ver este capítulo en inglés (con la biblioteca y más notas) →</a></p>
+<script>
+function toggleHeb(){{
+  var hidden = document.body.classList.toggle("hide-heb");
+  document.getElementById("hebtgl").textContent = hidden ? "Mostrar hebreo" : "Ocultar hebreo";
+  try{{ localStorage.setItem("mtlib_hideheb", hidden ? "1" : "0"); }}catch(e){{}}
+}}
+(function(){{ try{{ if(localStorage.getItem("mtlib_hideheb")==="1"){{
+  document.body.classList.add("hide-heb");
+  document.getElementById("hebtgl").textContent = "Mostrar hebreo";
+}} }}catch(e){{}} }})();
+</script>"""
+        out = page(f"{es_title} — La Traducción MiSTeR", body, lang="es",
+                   url=es_file,
+                   desc=f"{es_title}: una traducción nueva desde el hebreo, versículo por versículo, con notas del "
+                        f"traductor y comparación con la Reina-Valera, la NVI y otras versiones. El Nombre: «Jehová».")
+        open(os.path.join(OUT, es_file), "w", encoding="utf-8").write(out)
+        built.append((slug, book, num, es_title))
+
+    # Spanish home / índice
+    built.sort(key=lambda x: (x[1], x[2]))
+    cards = "\n".join(
+        f'  <a class="card" href="{chapter_filename(b, n)[:-5]}.es.html"><div class="card-t">{t}</div>'
+        f'<div class="card-d">{html.escape(teasers.get(s, ""))[:150]}</div></a>'
+        for (s, b, n, t) in built)
+    home = f"""<h1 class="pagetitle">La Traducción MiSTeR</h1>
+<p class="lede">Una nueva traducción de la Biblia <strong>desde el hebreo y el griego</strong>, capítulo por
+capítulo y versículo por versículo, con notas del traductor y comparación con la Reina-Valera, la NVI, La Biblia
+de las Américas y Dios Habla Hoy. El Nombre de Dios se traduce «<strong>Jehová</strong>», como en la
+Reina-Valera.</p>
+
+<div class="panel prose">
+  <h2 style="margin-top:2px">Una edición que está naciendo</h2>
+  <p>Esta es la edición en español, apenas comenzando y creciendo <strong>capítulo por capítulo</strong> junto a
+  la <a href="index.html">edición en inglés</a>, que va más adelantada. Por ahora la biblioteca completa
+  (enciclopedia, diccionario, atlas, cronología) y el aparato de notas más extenso viven en inglés; todo eso se
+  irá traduciendo. Nada se traduce a la ligera: el texto viene del hebreo con el mismo cuidado que la edición
+  inglesa — «bóveda», no «expansión»; «la humanidad», no «el hombre» — y las notas comparan con la Reina-Valera
+  en vez de con las versiones inglesas.</p>
+  <p>Si además lees inglés, en cada capítulo de la edición inglesa puedes <strong>activar u ocultar</strong> el
+  hebreo, el inglés y el español a la vez, versículo por versículo.</p>
+</div>
+
+<h2>Capítulos disponibles</h2>
+<div class="cardgrid">
+{cards}
+</div>"""
+    out = page("La Traducción MiSTeR — La Biblia en español", home, active="home", lang="es", url="es.html",
+               desc="La Traducción MiSTeR en español: la Biblia desde el hebreo, capítulo por capítulo, con notas "
+                    "y comparación con la Reina-Valera. El Nombre de Dios se traduce «Jehová».")
+    open(os.path.join(OUT, "es.html"), "w", encoding="utf-8").write(out)
+
+
 def build_ask_index():
     body = """<h1 class="pagetitle">\U0001F4D6 Ask Mr. Librarian</h1>
 <p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
@@ -3209,6 +3388,7 @@ def main():
     build_ask_jehovah()
     build_ask_creation_days()
     build_ask_newton()
+    build_es()
     build_contact()
     build_thanks()
     n_words, n_refs = build_concordance(chapters)

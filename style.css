@@ -129,6 +129,13 @@ a.tgl{text-decoration:none;display:inline-block}
   transition:color 0.15s,border-color 0.15s}
 .eterm:hover{color:var(--gold);border-bottom-style:solid;border-bottom-color:var(--gold)}
 body.hide-heb .heb{display:none}
+/* Spanish line: hidden by default; shown by the English page's "Mostrar español"
+   toggle (body.show-esp) or always on the Spanish edition (.esp-page). */
+.esp{font-size:15.5px;line-height:1.8;color:var(--text);display:none}
+.esp .notelink{font-size:10px;color:var(--purple);vertical-align:super;margin-left:4px}
+.esp-page .esp{display:block}
+body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2px solid rgba(232,201,104,0.28)}
+.topnav .langswitch{border:1px solid var(--border);border-radius:7px;padding:2px 9px}
 .note{background:var(--bg1);border:1px solid var(--border);border-left:3px solid rgba(167,139,250,0.5);
   border-radius:10px;padding:15px 18px;margin-bottom:14px}
 .note:target{border-left-color:var(--gold);background:rgba(232,201,104,0.05)}
@@ -148,6 +155,12 @@ body.hide-heb .heb{display:none}
 .t-drb{background:rgba(248,113,113,0.10);color:#f87171}
 .t-tlb{background:rgba(0,255,157,0.08);color:#00ff9d}
 .t-gnv{background:rgba(251,191,36,0.10);color:#fbbf24}
+/* Spanish "shelf" version-tags (RV60 / NVI / LBLA / DHH / BJ) */
+.t-rv{background:rgba(34,211,238,0.10);color:var(--b)}
+.t-nvi{background:rgba(167,139,250,0.12);color:var(--purple)}
+.t-lbla{background:rgba(0,255,157,0.08);color:#00ff9d}
+.t-dhh{background:rgba(251,191,36,0.10);color:#fbbf24}
+.t-bj{background:rgba(248,113,113,0.10);color:#f87171}
 .t-asv{background:rgba(74,159,212,0.12);color:var(--blue)}
 .t-nwt{background:rgba(249,115,22,0.10);color:#f97316}
 .info-block{margin-top:14px;padding:14px 16px;background:rgba(167,139,250,0.04);
