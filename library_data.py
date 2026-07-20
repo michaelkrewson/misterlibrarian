@@ -219,6 +219,16 @@ DICTIONARY = [
      "A CLAN-CHIEF — the head of a 'thousand' (eleph), the leadership title of Edom, repeated like a drumbeat through this chapter (aluf Teman, aluf Omar…). The KJV famously renders it 'DUKE' (from the Latin dux, by way of the Vulgate) — a medieval European coronet comically out of place in Bronze-Age Seir; the ASV and NIV read 'chief,' the NWT 'sheik,' and this translation 'chief.' The word sketches Edom's early shape — not one throne but a federation of clan-heads — and even the king-list that follows (36:31-39) is non-dynastic, each king from a different town.", (36, 15)),
     ("yemim", "yemim", "יֵּמִם", "yemim",
      "A one-off word (a hapax legomenon) that has defeated every translator: 'this is the Anah who found the yemim in the wilderness as he pastured the donkeys' (36:24). The KJV guessed 'MULES' (from the donkey context); the NIV and most moderns read 'hot springs' (from an Aramaic cognate yamma, followed by the Vulgate's aquae calidae); the Samaritan and Syriac have 'water.' No one is sure — a clean example of how a single rare word, appearing once in the whole Bible, can leave the versions honestly guessing. This translation renders 'hot springs,' with the uncertainty flagged.", (36, 24)),
+    ("ketonet-passim", "ketonet passim", "כְּתֹנֶת פַּסִּים", "ketonet passim",
+     "The most famous garment in the Bible, and nobody is certain what it was (37:3). A ketonet is a plain tunic — the same word for the garments God makes in 3:21. Passim is the puzzle. The Septuagint guessed poikilos, 'many-hued'; the Vulgate followed with tunica polymita, 'many-threaded'; the KJV inherited 'a coat of many colours' and the Douay, translating the Latin, 'a coat of divers colours.' But elsewhere Hebrew pas means the flat of the hand or foot (it is the word for the PALM of the hand that writes on Belshazzar's wall, Daniel 5:5) — which yields a tunic reaching to the extremities: long-sleeved, ankle-length, the robe of someone who plainly does no work. The ASV keeps 'many colours' but concedes 'a long garment with sleeves' in the margin; the NWT reads 'a long striped garment'; the NIV 'an ornate robe,' noting the meaning is uncertain. The one hard clue: the phrase occurs in only one other story — it is what Tamar, David's daughter, wears, 'for so were the virgin daughters of the king robed,' and tears after Amnon rapes her (2 Samuel 13:18-19). Both are garments of royal rank; both end torn in a story about a violated sibling. This translation renders 'a long ornamented tunic,' with the doubt flagged rather than painted over.", (37, 3)),
+    ("dibbah", "dibbah", "דִּבָּה", "dibbah",
+     "A BAD REPORT, whispering, defamation — not neutral news but the word for a campaign of talk. Joseph brings his father 'their bad report' (37:2), and the text pointedly declines to say whether it was true. The word's two other famous appearances are both fatal: the ten spies bring back 'an evil report of the land' that costs a generation the promise (Numbers 13:32), and Jeremiah hears 'the whispering of many' from the men circling to kill him (Jeremiah 20:10). KJV 'evil report'; NWT 'bad report about them.'", (37, 2)),
+    ("nakar", "nakar", "נָכַר", "haker / hikkir",
+     "To RECOGNIZE, identify, acknowledge — the verb on which two of Genesis's cruelest scenes turn, and the same imperative both times. At Isaac's bedside the blind father 'did NOT recognize him, because his hands were hairy' (27:23), and Jacob takes a blessing that is not his. Ten chapters later Jacob's sons send him a bloodied tunic with the words haker-na — 'RECOGNIZE, PLEASE' — and he does (37:32-33), and believes a lie. Then, one chapter after that, Tamar sends Judah his own seal and staff with the identical phrase, haker-na (38:25) — the brother who engineered the sale receiving his own two words back. The verb is how this family lies to its fathers and how it is finally caught.", (37, 32)),
+    ("sheol", "Sheol", "שְׁאוֹל", "she'ol",
+     "The Hebrew realm of the dead — down, dark, silent — appearing here for the FIRST time in the Bible, in Jacob's 'I will go down to my son, mourning, to Sheol' (37:35). Crucially, everyone goes there: righteous and wicked alike, with no second word set against it. It is not a place of punishment, and the Hebrew Bible offers no rival destination. The KJV renders it 'the grave' here, but 'hell' in thirty-one other places and 'the pit' in three — so an English reader cannot tell that Jacob, Job, David and Isaiah are discussing one thing, and would reasonably conclude the patriarch expects the grave while the wicked go elsewhere. That is a doctrine assembled out of an inconsistent gloss. The Douay, following the Vulgate's infernum, prints 'into hell' right here — a patriarch expecting to join his beloved son there. The ASV and NWT both simply transliterate, 'Sheol,' declining to settle by translation what the Hebrew leaves open; this translation follows them on the merits — the same principle as 'vault' for raqia and 'side' for tsela.", (37, 35)),
+    ("saq", "saq", "שַׂק", "saq",
+     "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
      "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
     ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
@@ -1249,7 +1259,8 @@ ENCYCLOPEDIA = [
               "the fatal hinge — 'a new king arose who did not know Joseph' (1:8). The rescue is forgotten; "
               "the rescued become slaves. His bones, by his own oath, will be carried out of Egypt at the "
               "Exodus (Genesis 50:25; Exodus 13:19) — the one man of Genesis who makes the journey home.",
-         refs=[(30, 24), (33, 2), ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
+         refs=[(30, 24), (33, 2), (37, 2), (37, 3), (37, 23), (37, 28),
+               ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
 
     # ---- Exodus 2 ----
     dict(slug="moses", name="Moses", kind="person", aliases=["Moses"],
@@ -1319,7 +1330,7 @@ ENCYCLOPEDIA = [
               "led by the chieftain Nahshon. From Judah come David, the kings of Jerusalem, and — the New "
               "Testament announces — 'the Lion of the tribe of Judah' (Revelation 5:5); the very word 'Jew' is "
               "worn down from the name Judah.",
-         refs=[(29, 35), ("Numbers", 1, 7), ("Numbers", 1, 26)], videos=[]),
+         refs=[(29, 35), (37, 26), (37, 27), ("Numbers", 1, 7), ("Numbers", 1, 26)], videos=[]),
     dict(slug="mount-sinai", name="Mount Sinai",
          kind="place", aliases=["Sinai", "wilderness of Sinai", "Mount Sinai", "Horeb"],
          desc="The mountain in the wilderness where Jehovah gave Israel the Law — also called HOREB. Here "
@@ -1567,7 +1578,7 @@ ENCYCLOPEDIA = [
               "grab at his father's authority (35:22). For it he loses the birthright: Jacob's deathbed verdict is "
               "'unstable as water, you shall not have the excellency, because you went up to your father's bed' "
               "(49:3-4) — and the double portion passes to Joseph, the leadership to Judah.",
-         refs=[(29, 32), (35, 22)], videos=[]),
+         refs=[(29, 32), (35, 22), (37, 21), (37, 29)], videos=[]),
     dict(slug="bethuel", name="Bethuel", kind="person", aliases=["Bethuel"],
          desc="Rebekah's father — son of Nahor (Abraham's brother) and Milcah (24:15, 24, 47), so Isaac's bride is "
               "the granddaughter of Abraham's own brother, kept inside the family the oath required. He is a "
@@ -1686,6 +1697,32 @@ ENCYCLOPEDIA = [
               "displaces. One Horite clan, Anah, is remembered for a desert find, the yemim (hot springs?) — a rare "
               "word no one can quite translate (36:24).",
          refs=[(36, 20), (36, 21)], videos=[]),
+
+    # ---- Genesis 37 ----
+    dict(slug="dothan", name="Dothan", kind="place", aliases=["Dothan"],
+         desc="The grazing town where Joseph finally found his brothers — and was stripped, thrown into a dry "
+              "cistern, and sold (37:17-28). It is a real and well-identified site: TELL DOTHAN, about thirteen "
+              "miles north of Shechem, excavated by Joseph Free in the 1950s and 60s and found to have been "
+              "occupied continuously through the Bronze and Iron Ages, so a Bronze-Age family pasturing flocks "
+              "there fits the archaeology. Its position matters to the plot: Dothan sits on the caravan route "
+              "running from Gilead across the plain toward the coast road and Egypt — which is precisely why a "
+              "spice caravan bound for Egypt happens past the pit (37:25). The town returns once more, and in "
+              "the opposite key: it is at Dothan that Elisha's terrified servant wakes to find the hills around "
+              "them full of horses and chariots of fire (2 Kings 6:13-17). Same town; the other kind of morning.",
+         coord=(32.4106, 35.2264), refs=[(37, 17)], videos=[]),
+    dict(slug="potiphar", name="Potiphar", kind="person", aliases=["Potiphar"],
+         desc="The Egyptian who buys Joseph at the end of Genesis 37 — 'a court official of Pharaoh, chief of "
+              "the executioners' (37:36). Both halves of his title repay attention. SARIS is the court-official "
+              "word: it can mean a literal eunuch and often does, but is used broadly of high functionaries, "
+              "which is why the versions divide (KJV 'an officer,' NWT 'a court official') — and why Potiphar's "
+              "having a wife is not the contradiction it looks. SAR HA-TABBACHIM is literally 'chief of the "
+              "SLAUGHTERERS,' from tabbach, a butcher; the usual rendering 'captain of the guard' rests on the "
+              "reasonable ground that a royal bodyguard's business includes executions — and the Aramaic "
+              "equivalent is unambiguous when the same office turns up in Babylon, where Arioch, 'chief of the "
+              "executioners,' comes to kill the wise men (Daniel 2:14). His name is genuinely Egyptian: "
+              "Pa-di-pa-Ra, 'he whom Ra has given.' In his house Joseph will rise to steward, be accused by "
+              "Potiphar's wife, and be jailed (Genesis 39) — the second pit of his life.",
+         refs=[(37, 36)], videos=[]),
 
     # ---- Genesis 21 ----
     dict(slug="beersheba", name="Beersheba", kind="place", aliases=["Beersheba"],
@@ -2045,6 +2082,20 @@ XREFS = [
     ((33, 4),  (27, 41), "Esau ran, embraced, and wept — the brother who once said 'I will kill my brother Jacob' (27:41); the murder-vow undone in an embrace so complete that Jesus paints the prodigal's father in its very words (Luke 15:20)"),
     ((33, 3),  (27, 29), "Jacob bowed to the ground seven times — the man whom the stolen blessing had made lord, 'let your brothers bow down to you' (27:29), now on his face before the brother he cheated"),
     ((33, 19), (12, 7),  "Jacob buys land and builds an altar at Shechem — at the very tree of Moreh where Abraham built his FIRST altar in Canaan (12:6-7); the grandson claims the same ground with the second parcel a patriarch has ever owned in the land"),
+
+    # ---- Genesis 37 ----
+    ((37, 13), (22, 1),  "hineni, 'Here I am' — the answer of total availability, spoken at the book's two darkest hinges: Abraham at the Aqedah, and now a beloved son sent by his father toward a death the reader can already see. At Moriah a voice from heaven stopped the knife; in Genesis 37 God is not named once"),
+    ((37, 1),  (23, 4),  "'the land of his father's sojournings' — megurim, from ger: Jacob SETTLES in a land of not-settling, the same ache as Abraham's confession at Machpelah, 'I am a resident alien among you' — while Esau, one verse earlier, owns Seir outright"),
+    ((37, 2),  (36, 1),  "'these are the toledot of Jacob' — the last of the book's ten 'generations' headings, and the one that breaks the pattern: no genealogy follows it, only a boy and a grudge. Genesis stops listing and becomes a story"),
+    ((37, 8),  (3, 16),  "mashal, 'rule' — the brothers' sneer ('will you really RULE over us?') is the verb spoken over the woman in the garden and over Cain's crouching sin (4:7): from the beginning, the Bible's word for who is on top of whom"),
+    ((37, 31), (27, 16), "the goat and the garment, turned back on him — Jacob deceived his blind father wearing his brother's clothes and the skins of goat kids; his sons deceive him with his son's tunic and the blood of a goat. Genesis Rabbah: 'with a kid he deceived, and with a kid he was deceived'"),
+    ((37, 32), (27, 23), "haker-na, 'recognize, please' — the verb that FAILED at Isaac's bedside ('he did not recognize him') now succeeds on a bloodied tunic: the father who could not identify a son who was present identifies a son who is not"),
+    ((37, 26), ("Jeremiah", 22, 17), "betsa — not neutral profit but the prophets' word for unjust gain. Judah sells the murder as a bad deal ('what GAIN is it?'); Jeremiah aims the same noun at a king of Judah's own line whose 'eyes and heart are on nothing but your unjust gain'"),
+    ((37, 2),  ("Jeremiah", 20, 10), "dibbah, a 'bad report' — the whispering-campaign word. Joseph carries it to his father; Jeremiah hears it circling him from the men plotting his death"),
+    ((37, 35), (5, 29),  "nacham, 'comfort' — the hope Lamech named into his son Noah, 'this one will bring us comfort,' now refused: 'he refused to be comforted.' Jeremiah will hear Rachel, Joseph's own mother, refuse it too (31:15 → Matthew 2:18)"),
+    ((37, 26), (4, 10),  "'and cover his blood' — the first murder in this book left blood that was NOT covered, crying out from the ground. Judah's plan is precisely to make the ground keep quiet"),
+    ((37, 36), ("Daniel", 1, 3), "a Hebrew youth taken young into a world empire and handed to the chief official of a foreign king — Potiphar, 'chief of the executioners,' has an exact Babylonian counterpart in Arioch (Daniel 2:14). Both boys will read dreams no one else can read and rise to stand second in the kingdom"),
+    ((37, 12), (34, 25), "the brothers pasture the flock at SHECHEM — the town Simeon and Levi emptied of every male three chapters ago, after which Jacob said 'you have made me a stench to the inhabitants of the land.' The text names the place and says nothing else"),
 
     # ---- Proverbs 1 (cross-book) ----
     (("Proverbs", 1, 7), (1, 1),   "reshit, 'beginning' — the fear of Jehovah as the START of knowledge, the exact word that opens the Bible: bereshit, 'in the beginning'"),
@@ -2419,6 +2470,8 @@ VERSE_OF_DAY = [
     (35, 3, "Jacob names his God by what God has done: 'an altar to the God who answered me in the day of my distress, and was with me on the way that I went.'"),
     (35, 18, "Grief turned to blessing over a grave: the dying mother names him Ben-oni, 'son of my sorrow' — the father renames him Benjamin, 'son of the right hand.'"),
     (36, 7, "The old rivalry ends in room made, not blood: too much to hold them both, Esau gathers everything and leaves Canaan to his brother, taking Seir for himself."),
+    (37, 13, "“Here I am.” The same two syllables Abraham gave at the Aqedah — now from a boy being sent, unarmed, to brothers who cannot speak to him in peace."),
+    (37, 24, "“And the pit was empty — there was no water in it.” The Bible's most famous redundant sentence: not a drowning, a stone jar. Then they sat down to eat."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2763,6 +2816,9 @@ CHRON_EVENTS = [
     dict(era="patriarchs", am="—", trad="—", event="Esau's line becomes Edom in Seir — the clans, chiefs, and kings of the brother-nation (a genealogical interlude)",
          note="Genesis pauses to catalogue Esau (ch. 36): his Canaanite wives and sons, his move to the red highlands of Seir 'away from his brother Jacob' (a peaceful separation, echoing Abraham and Lot's, 13:6), the clan-chiefs of Edom, the older Horite people they displaced (Deuteronomy 2:12), and eight kings who 'reigned in Edom before any king reigned over Israel' — a notably non-dynastic line, each king from a different city. Amalek, Israel's future arch-enemy, is quietly born in the roll (36:12). Undated by design: a genealogical bridge that settles Esau's account with honor before the book turns wholly to Joseph.",
          ref=("Genesis", 36, 1)),
+    dict(era="patriarchs", am="≈2276", trad="c. 1728 BC", event="Joseph sold into Egypt at seventeen — the coat stripped, the pit at Dothan, twenty pieces of silver",
+         note="Joseph's age is given exactly ('seventeen years old,' 37:2), and Genesis later dates him precisely enough to anchor the rest: he stands before Pharaoh at thirty (41:46), and Jacob comes down to Egypt in the second year of the famine, when Joseph is thirty-nine (45:6, 47:9) — so the sale sits about twenty-two years before the family's descent. The brothers grazed the flock at Shechem, the town Simeon and Levi had destroyed (ch. 34), and sold him to a caravan on the Gilead-to-Egypt spice road; the price, twenty shekels, is exactly the valuation Leviticus 27:5 later fixes for a male his age. Note that by this chronology Isaac is still alive — his obituary was placed early, in ch. 35, to clear his generation before the story turned to Joseph.",
+         ref=("Genesis", 37, 28)),
     # -- Egypt and the Exodus --
     dict(era="exodus", am="—", trad="c. 15th c. BC", event="Israel enslaved in Egypt — store-cities Pithom and Raamses built; Pharaoh's decree against the newborn sons",
          note="A new king 'who did not know Joseph' turns Jacob's multiplying household into a slave force (Exodus 1). On the EARLY date this translation follows (Exodus 1446 BC, from 1 Kings 6:1; Joel Kramer / Expedition Bible — see research), the oppressor is Thutmose III, Egypt's great empire-builder, and the pharaoh of the Exodus a generation later is Amenhotep II, whose Canaan campaigns cease after 1446 and whose successor's Dream Stele hints his firstborn had died. The store-city name 'Raamses' — the pillar of the rival late date (Ramesses II, ~1250 BC) — is taken as an updated place-name, like 'Dan' in Genesis 14:14.",
