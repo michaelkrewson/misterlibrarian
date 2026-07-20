@@ -671,6 +671,12 @@ DICTIONARY = [
      "LOW ESTATE, lowliness, humiliation — a lowly CONDITION, not humility as a virtue. In the Magnificat God 'looked on the TAPEINOSIS of his bondslave' (1:48), the very word Hannah's Greek song uses (1 Samuel 1:11). Luke's point is that God NOTICES the low place and then reverses it; the song spells the reversal out — rulers pulled down, the lowly lifted, the hungry filled, the rich sent empty away.", ("Luke", 1, 48)),
     ("anatole", "anatole", "ἀνατολή", "anatole",
      "RISING / DAWN — and, in the Greek Old Testament, the messianic BRANCH. Zechariah's song says 'the ANATOLE from on high will visit us' (1:78). The word means the rising of the sun (light dawning on those in darkness, Isaiah 9:2) AND the 'Branch/shoot' promised to spring from David (Jeremiah 23:5; Zechariah 3:8; 6:12, where the Greek Bible uses this very word). Zechariah's ears would catch both at once: a sunrise and a sprouting Branch. ⚠️ No single English word holds both, so the versions split — 'dayspring' (KJV), 'sunrise' (ESV), 'daybreak' (NWT).", ("Luke", 1, 78)),
+    ("dabaq", "davaq", "דָּבַק", "davaq",
+     "TO CLING, cleave, stick fast — the verb of Genesis 2:24, where a man 'clings' to his wife and the two become one flesh. In Ruth 1:14 it is used of RUTH clinging to Naomi where Orpah kisses and leaves: Ruth's loyalty to her mother-in-law is written in marriage language, a woman cleaving as a spouse cleaves. The same root is used of Israel commanded to 'cling' to Jehovah (Deuteronomy 10:20).", ("Ruth", 1, 14)),
+    ("menuchah", "menuchah", "מְנוּחָה", "menuchah",
+     "REST — a settled security, a place to come to rest. Naomi prays Jehovah give her daughters-in-law MENUCHAH and spells out what she means, 'in the house of her husband' (Ruth 1:9): the safety of a home and marriage. It is the one thing the widowed, landless Naomi cannot provide, and the very thing the whole book circles back to give Ruth through Boaz (3:1, 'shall I not seek REST for you?'). The same root gives the Psalm's 'still waters,' literally 'waters of rest' (Psalm 23:2).", ("Ruth", 1, 9)),
+    ("mara", "mara", "מָרָא", "mara",
+     "BITTER — the name Naomi gives herself on her return: 'Do not call me Naomi [sweet]; call me MARA, for the Almighty has dealt very bitterly (hemar) with me' (Ruth 1:20). The pun turns her own name inside out. The same root marks the 'bitter' waters of Marah in the wilderness (Exodus 15:23) and the 'bitter herbs' of the Passover (Exodus 12:8). ⚠️ Naomi is wrong that she is empty — Ruth stands beside her — but the book lets her name her grief honestly before it answers it.", ("Ruth", 1, 20)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2220,6 +2226,45 @@ ENCYCLOPEDIA = [
          refs=[(2, 4), ("Exodus", 3, 15)],
          videos=[("Searching for the earliest mention of the Israelite's God, \"Yahweh.\"",
                   "https://www.youtube.com/watch?v=pGEOZ5YI22M")]),
+    dict(slug="ruth", name="Ruth", kind="person", aliases=["Ruth"],
+         desc="A woman of MOAB, widow of Mahlon, who binds herself to her Israelite mother-in-law NAOMI with the "
+              "great oath 'your people my people, your God my God' (1:16) and returns with her to Bethlehem. The "
+              "book named for her tells how this foreign convert gleans in the field of Boaz, claims the levirate "
+              "redemption, and marries him — becoming the great-grandmother of DAVID (4:17) and, in Matthew's "
+              "genealogy, an ancestress of Jesus (Matthew 1:5). ⚠️ That a MOABITE is the heroine cuts pointedly "
+              "against Deuteronomy 23:3's ban on Moabites in the assembly of Jehovah: Ruth's covenant belonging is "
+              "won by chesed and faith, not by blood. Her name's meaning is uncertain — often linked to re'ut, "
+              "'friendship, companionship,' or to a root for 'refreshment.'",
+         refs=[("Ruth", 1, 4), ("Ruth", 1, 16)], videos=[]),
+    dict(slug="naomi", name="Naomi (Mara)", kind="person", aliases=["Naomi"],
+         desc="Wife of ELIMELECH of Bethlehem, who loses husband and both sons in Moab and returns emptied to her "
+              "home town, telling the women to call her not Naomi ('my sweetness') but Mara ('bitter'), 'for the "
+              "Almighty has dealt very bitterly with me' (1:20). Her honest, unflinching naming of God as the author "
+              "of her grief runs through the book, and her scheme to seek 'rest' for her daughter-in-law RUTH (3:1) "
+              "drives its resolution. By the end the women of Bethlehem tell her a redeemer is born and 'a son has "
+              "been born to Naomi' (4:17) — the emptiness reversed, and the line of David begun.",
+         refs=[("Ruth", 1, 2), ("Ruth", 1, 20)], videos=[]),
+    dict(slug="moab", name="Moab", kind="place", aliases=["Moabites", "Moabite", "Moab"],
+         desc="The nation and high plateau east of the Dead Sea, descended from MOAB, son of LOT by his elder "
+              "daughter (Genesis 19:37). Israel's perennial neighbour and frequent enemy: Moab hired Balaam to curse "
+              "Israel (Numbers 22-24), and Deuteronomy 23:3 bars Moabites from 'the assembly of Jehovah, even to the "
+              "tenth generation.' Yet it is to the fields of Moab that Elimelech's family flees the famine, and out "
+              "of Moab comes RUTH, whose loyalty out-does Israel's own. The book quietly holds the ban and the "
+              "Moabite heroine in the same hand.",
+         refs=[("Ruth", 1, 1), (19, 37)], videos=[]),
+    dict(slug="elimelech", name="Elimelech", kind="person", aliases=["Elimelech"],
+         desc="'My God is King' — a man of Bethlehem, husband of NAOMI, who takes his family to sojourn in MOAB "
+              "during a famine and dies there (Ruth 1:2-3), leaving the name and land that Boaz will later 'redeem' "
+              "by marrying Ruth (4:9-10). His heavy, hopeful name stands over a story of exile and death — and then "
+              "over a kingship, David's, restored through his line.",
+         refs=[("Ruth", 1, 2)], videos=[]),
+    dict(slug="orpah", name="Orpah", kind="person", aliases=["Orpah"],
+         desc="The other Moabite daughter-in-law of NAOMI, widow of Chilion. Urged by Naomi to return home, Orpah "
+              "kisses her mother-in-law and goes back 'to her people and to her gods' (1:15) — set beside RUTH, who "
+              "clings and stays. ⚠️ The narrator does not blame her: hers is the reasonable choice, and the book "
+              "uses it to measure the extravagance of Ruth's. Her name is traditionally linked to oref, 'the back of "
+              "the neck' — the one who turns her back — though the etymology is uncertain.",
+         refs=[("Ruth", 1, 4), ("Ruth", 1, 14)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2754,6 +2799,10 @@ XREFS = [
     (("Jeremiah", 22, 16), ("Proverbs", 1, 7), "'is that not to know me?' — da'at: justice for the poor IS the knowledge of God, the very word the fear of Jehovah is 'the beginning of'"),
     (("Jeremiah", 22, 10), (12, 1), "moledet, 'the land of his birth' — Abram was called to LEAVE his homeland and gained a nation; the exiled king loses his by force and never sees it again"),
     (("Jeremiah", 22, 7), ("Jeremiah", 21, 14), "the choicest cedars felled and burned — the fire promised for the palace's cedar 'forest' (the House of the Forest of Lebanon) one chapter back"),
+    (("Ruth", 1, 1), ("Judges", 1, 1), "'in the days when the judges judged' — Ruth is set inside the era of Judges, and reads as its quiet counter-story of chesed"),
+    (("Ruth", 1, 14), (2, 24), "'clung to her' — dabaq, the Genesis 2:24 marriage verb, turned to a daughter-in-law's loyalty"),
+    (("Ruth", 1, 6), (21, 1), "paqad, 'Jehovah had visited his people' — the visitation verb of Sarah's son, now emptying the famine from the House of Bread"),
+    (("Ruth", 1, 20), (17, 1), "Shaddai, 'the Almighty' — the old patriarchal name of God from the covenant with Abram, reached for in Naomi's grief"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2985,6 +3034,11 @@ VERSE_OF_DAY = [
     ("Luke", 1, 46, "“My soul magnifies the Lord.” The Magnificat — a teenage girl sings the great reversal, built on Hannah's song."),
     ("Luke", 1, 52, "“He has brought down rulers from thrones and lifted up the lowly.” The most dangerous poem in the Gospels."),
     ("Luke", 1, 78, "“The dawn from on high will visit us” — ANATOLE: both the rising sun and the promised Branch of David."),
+    ("Ruth", 1, 16, "“Your people are my people, and your God my God.” A Moabite widow's covenant, sworn by the name of Jehovah."),
+    ("Ruth", 1, 17, "“May Jehovah do so to me, and more also, if anything but death parts me from you.” Ruth seals her oath."),
+    ("Ruth", 1, 20, "“Call me Mara, for the Almighty has dealt very bitterly with me.” Naomi turns her own sweet name inside out."),
+    ("Ruth", 1, 21, "“I went out full, and Jehovah has brought me back empty” — said while Ruth, the whole book's redemption, stands beside her."),
+    ("Ruth", 1, 22, "“They came to Bethlehem at the beginning of the barley harvest.” The famine over; the field of Boaz one verse away."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4287,5 +4341,37 @@ BOOK_INTROS = {
         source_text="Translated from the Greek of the SBL GREEK NEW TESTAMENT (SBLGNT), edited by Michael W. Holmes. Luke's Greek is the most refined in the Gospels — a classical, balanced periodic preface (1:1–4), then a deliberate shift into Septuagint-flavoured Greek for the infancy story, so the reader hears the Old Testament resume. Its sharpest textual questions cluster later (the sweat 'like blood' in Gethsemane, 22:43–44; some words from the cross), noted where they fall; chapter 1 is textually calm.",
         christ="Luke's Jesus is the Saviour of the whole world, and above all of those the world discards. He is announced not to kings but to shepherds; his mother is a nobody from Nazareth who sings a revolution; his genealogy runs past Abraham all the way to Adam, making him the second head of the entire human race, not one nation's Messiah only. He is 'Son of the Most High' and 'a Saviour, who is Christ the Lord' — and the one who says his whole mission is 'to seek and to save the lost' (19:10).",
         debates="AUTHORSHIP by Luke the physician is early and rarely contested even critically, helped by the first-person 'we' passages of Acts. The live questions are DATE (the 80s versus a pre-63 date tied to the abrupt ending of Acts), SOURCES (Luke names 'many' predecessors in 1:1; the majority view has him using Mark and a sayings source alongside material unique to him), and a handful of famous later VARIANTS. The two-volume unity of Luke–Acts, addressed to the same Theophilus, is broadly agreed.",
+    ),
+    "Ruth": dict(
+        hebrew_name="רוּת",
+        hebrew_translit="Rut",
+        hebrew_meaning="'Ruth' — the book's Moabite heroine gives it her name, its meaning uncertain (often linked to re'ut, 'friendship, companionship'). One of the Five Megillot (Festival Scrolls) of the Hebrew Bible, read aloud at Shavuot, the harvest feast — fitting for a story that turns on a barley field.",
+        greek_name="Ῥούθ (Rhouth)",
+        greek_meaning="The Septuagint moves Ruth out of the Writings and sets it right after Judges, as a historical bridge to the days of David — the placement the Christian Old Testament inherited.",
+        tagline="A short, luminous story of loyal love (chesed) in the dark age of the Judges — a famine, a Moabite widow's oath, and a redemption that runs down to David.",
+        genre="A HEBREW SHORT STORY / novella — a self-contained narrative of exceptional craft, built on the theme-word chesed and the machinery of gleaning-rights and levirate redemption. Set 'in the days when the judges judged,' it is the deliberate counter-story to the book of Judges: where that book is national, violent, and downward, Ruth is domestic, gentle, and redemptive.",
+        canon="In the Hebrew Bible, one of the Five Megillot among the Writings (Ketuvim), read at Shavuot (the barley-and-wheat harvest festival). In the Christian Old Testament, following the Septuagint, it is placed after Judges and before 1 Samuel — the bridge from the chaos of the Judges to the rise of David.",
+        author="Anonymous. Jewish tradition (Talmud, Bava Batra 14b) credits SAMUEL, but the book names no author, and its closing genealogy to David — plus its need to explain a custom that was 'formerly' done in Israel (4:7) — implies a writer looking back from David's time or later.",
+        date="Debated. The Davidic genealogy sets a floor at David's reign (c. 1000 BC); the classical, un-Aramaised Hebrew and the explanation of an obsolete custom (4:7) point to a later hand looking back. Two main proposals: an early-monarchic date, or a post-exilic one (5th c. BC) — on which reading the book stands pointedly AGAINST the expulsion of foreign wives under Ezra and Nehemiah. The setting ('the days of the judges') is fixed; the composition is the open question.",
+        place="The land of Judah — Bethlehem and the fields of Moab across the Dead Sea. A story of the Judahite countryside: barley fields, a threshing floor, the town gate.",
+        audience="Israel — and, on the post-exilic reading, an Israel arguing with itself over who belongs. The book's answer is a Moabite woman whose chesed makes her more truly a daughter of the covenant than many born inside it.",
+        structure=[
+            ["1", "Emptying — famine drives Elimelech's family to Moab; the men die; Naomi returns bereft with Ruth, who binds herself to her with the great oath."],
+            ["2", "Gleaning — Ruth 'happens' upon the field of Boaz, a kinsman; his kindness to a foreign widow; Naomi's first hope, 'he is one of our redeemers.'"],
+            ["3", "The threshing floor — Naomi's plan; Ruth's midnight appeal to Boaz to 'spread your wing over your servant'; his pledge to redeem."],
+            ["4", "Redemption — Boaz secures the right at the gate, marries Ruth, a son is born; the women bless Naomi; the genealogy runs to David."],
+        ],
+        themes=[
+            "CHESED — loyal, covenant love, the book's spine: Ruth's to Naomi, Boaz's to Ruth, and God's beneath both. The word recurs at 1:8, 2:20, 3:10.",
+            "REDEMPTION (ga'al) — the kinsman-redeemer who buys back land and raises up a dead man's name; Boaz as the go'el, the role the whole plot turns on.",
+            "THE OUTSIDER BROUGHT IN — a Moabite, barred by law, made an ancestress of the king; belonging by faith and loyalty, not blood.",
+            "PROVIDENCE IN THE ORDINARY — no miracles, no visions; God works through a chance-met field, a harvest, a levirate law, a gate full of witnesses. 'She happened to come to the field of Boaz' (2:3) is the book's whole theology of quiet providence.",
+            "EMPTY TO FULL — Naomi's arc from 'I went out full and came home empty' (1:21) to a child laid in her lap (4:16).",
+        ],
+        key_words=["chesed", "goel", "menuchah", "dabaq"],
+        key_people=["ruth", "naomi", "moab", "bethlehem"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Ruth's Hebrew is classical and clean — some of the finest narrative prose in the Bible — with a scatter of archaic or dialect forms and a few ketiv/qere (written-versus-read) notes that translators weigh but that rarely change the sense. The book is textually calm; its difficulties are literary and legal — the workings of gleaning-rights and levirate redemption — handled in the notes where they fall.",
+        christ="The book ends on a genealogy, and that is its Christian point: the line runs Boaz → Obed → Jesse → DAVID (4:17-22), and through David, in Matthew's opening chapter, to Jesus — where RUTH the Moabite is named among the women in his ancestry (Matthew 1:5). Boaz the kinsman-redeemer (go'el) who buys back the destitute and covers them has long been read as a figure of a greater Redeemer; and the gathering of a Gentile outsider into the covenant people foreshadows the gospel's reach beyond Israel. A harvest story that ends in a cradle — and the cradle leads to a king.",
+        debates="The main questions are DATE (early-monarchic vs post-exilic — which decides whether the book is a straightforward tale or a pointed argument against the foreign-wife expulsions of Ezra-Nehemiah) and AUTHORSHIP (the Samuel tradition vs an anonymous later hand). The legal machinery is also discussed — how gleaning-rights, the go'el's duty, and levirate marriage interlock, and why the nearer redeemer of chapter 4 backs out. On the book's meaning there is little dispute: it is about chesed, and about a foreigner made kin.",
     ),
 }

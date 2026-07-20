@@ -58,6 +58,7 @@ MECHON_BOOKS = {
     "07": ("Judges", 21),
     "11": ("Jeremiah", 52),
     "28": ("Proverbs", 31),
+    "29": ("Ruth", 4),
     "34": ("Daniel", 12),
 }
 
