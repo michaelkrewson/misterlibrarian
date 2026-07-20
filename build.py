@@ -1936,6 +1936,21 @@ def build_book_intros():
                                 f'<div class="bi-chips">{kp}</div>')
             words_panel += '</div>'
 
+        # A FINISHED book has nothing to report as progress: a 100% thermometer and
+        # "the rest are still ahead" both state something untrue-by-then, so a
+        # complete book just says so and goes straight to the chapters.
+        complete = bool(total) and len(pub) >= total
+        if complete:
+            progress_block = (f'  <div class="bi-prog"><b>\u2713 Complete</b> — all {total} '
+                              f'chapters translated</div>')
+            grid_hint = ""
+        else:
+            progress_block = (f'  <div class="bi-prog"><b>{len(pub)}</b> of {total} chapters translated '
+                              f'<span class="progress-label">· {pct}%</span></div>\n'
+                              f'  <div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div>')
+            grid_hint = ('  <p class="muted" style="margin:12px 0 8px">Gold chapters are published — '
+                         'click one to read it. The rest are still ahead.</p>\n')
+
         # Every reference panel is conditional: a book with no BOOK_INTROS entry
         # still gets a full, useful page rather than a scatter of empty headings.
         names_block = f'<p class="bi-names">{names_html}</p>' if names_html else ""
@@ -1967,10 +1982,8 @@ def build_book_intros():
 
 <h2>Chapters</h2>
 <div class="panel">
-  <div class="bi-prog"><b>{len(pub)}</b> of {total} chapters translated <span class="progress-label">· {pct}%</span></div>
-  <div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div>
-  <p class="muted" style="margin:12px 0 8px">Gold chapters are published — click one to read it. The rest are still ahead.</p>
-  <div class="chgrid">{chips}</div>
+{progress_block}
+{grid_hint}  <div class="chgrid">{chips}</div>
 </div>
 
 <h2>Chapter by chapter</h2>
