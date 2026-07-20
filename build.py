@@ -22,7 +22,7 @@ import re
 from collections import defaultdict
 
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
-                           LINK_OVERRIDES, VERSE_OF_DAY, ROUTES,
+                           LINK_OVERRIDES, VERSE_OF_DAY, ROUTES, REGIONS,
                            CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
@@ -527,6 +527,7 @@ def _norm_override(o):
 
 _OVERRIDE_MAP = dict(_norm_override(o) for o in LINK_OVERRIDES)
 _SLUG_TO_ENTRY = {e["slug"]: e for e in ENCYCLOPEDIA}
+_REGION_BY_SLUG = {r["slug"]: r for r in REGIONS}
 _VERSE_ENG_BLOCK = re.compile(
     r'(id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">)(.*?)(</div>)', re.S)
 
@@ -564,13 +565,21 @@ def inject_encyclopedia_links(content, book, ch):
             candidates = [c for c in _ALIAS_INDEX[word]
                           if any(rb == book for (rb, rc, rv) in c["refs"])]
             slug = _OVERRIDE_MAP.get((book, ch, vnum, word, occurrence))
+            # An explicit human pin is an instruction, so it BEATS the
+            # once-per-chapter cap below. Without this a territory named twenty
+            # times in one chapter links only at its first, incidental mention
+            # (Edom linked at 36:1, "that is, Edom") and the verse that actually
+            # describes the land — 36:8, "Esau dwelt in the hill country of
+            # Seir" — got no map link at all. The cap still governs everything
+            # unpinned, so ordinary names are never peppered with repeats.
+            pinned = slug is not None
             if slug is None:
                 if len(candidates) == 1:
                     slug = candidates[0]["slug"]
                 else:
                     ref_hits = [c["slug"] for c in candidates if (book, ch, vnum) in c["refs"]]
                     slug = ref_hits[0] if len(ref_hits) == 1 else None
-            if slug is None or slug in linked_slugs:
+            if slug is None or (slug in linked_slugs and not pinned):
                 return word
             linked_slugs.add(slug)
             name = html.escape(_SLUG_TO_ENTRY[slug]["name"], quote=True)
@@ -771,10 +780,20 @@ def build_encyclopedia():
             else:
                 vids = ('<div class="evids-empty">▶ No films on the shelf yet — archaeology and '
                         'geography videos get added here as Mr. Librarian finds good ones.</div>')
+            # A mapped place gets a direct route to its map. Without this the
+            # only way from an entry to the atlas was the chapter-level toggle,
+            # so a reader who clicked "Seir" in the verse landed on prose with
+            # no way to see where the territory actually was.
+            maplink = ""
+            if e.get("coords"):
+                is_region = e["slug"] in _REGION_BY_SLUG
+                label = "🗺️ See the territory boundary" if is_region else "🗺️ See it on the atlas"
+                maplink = (f'<div class="emap"><a href="atlas.html#atlas-{e["slug"]}">{label} →</a></div>')
             out.append(f"""<div class="eentry" id="{e['slug']}">
   <div class="ehead">{html.escape(e['name'])}</div>
   <p>{e['desc']}</p>
   <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
+  {maplink}
   {vids}
 </div>""")
         return "".join(out)
@@ -837,6 +856,178 @@ def _route_geo(stops, inner_w=780.0, pad=42.0):
         return (pad + (lon - lon_min) * kx * scale, pad + (lat_max - lat) * scale)
 
     return proj, w, h, (lat_min, lat_max, lon_min, lon_max)
+
+
+# --- territory maps -------------------------------------------------------
+# The Levant's fixed geography, in real lat/lon. These are the features that
+# genuinely DON'T move (coastline, rift lakes, the Jordan, the Arabah), so they
+# are what a reader orients by when an ancient border is only approximate.
+_COAST = [(33.20, 35.22), (32.90, 35.07), (32.50, 34.90), (32.08, 34.76),
+          (31.60, 34.55), (31.30, 34.35), (31.10, 34.25), (30.85, 34.00)]
+_DEAD_SEA = [(31.77, 35.48), (31.75, 35.56), (31.55, 35.59), (31.35, 35.53),
+             (31.20, 35.49), (31.05, 35.46), (31.02, 35.38), (31.20, 35.40),
+             (31.45, 35.42), (31.65, 35.44)]
+_GALILEE = [(32.88, 35.58), (32.86, 35.65), (32.75, 35.66), (32.70, 35.59),
+            (32.78, 35.54), (32.85, 35.54)]
+_JORDAN = [(32.70, 35.57), (32.45, 35.55), (32.20, 35.56), (31.95, 35.53), (31.80, 35.52)]
+_ARABAH = [(31.02, 35.38), (30.60, 35.22), (30.10, 35.08), (29.70, 35.02), (29.53, 34.98)]
+
+
+def _region_geo(pts, margin=0.55, inner_w=760.0, pad=40.0,
+                min_aspect=1.15, max_aspect=2.40):
+    """Same equirectangular + cos(lat) projection as the routes map, but framed
+    on a territory's own boundary with a margin so neighbours stay visible.
+
+    The frame is then clamped to a sane ASPECT RATIO. Most of these territories
+    are long north-south strips squeezed between the rift and the desert (Edom
+    is 1.4° of latitude by 0.9° of longitude), which projects to a ~840x1219
+    tower that reads terribly on screen. Widening the short axis instead of
+    cropping the long one keeps the whole territory visible AND pulls in more
+    surrounding geography, which is exactly what a boundary map is for."""
+    lats = [p[0] for p in pts]
+    lons = [p[1] for p in pts]
+    lat_min, lat_max = min(lats) - margin, max(lats) + margin
+    lon_min, lon_max = min(lons) - margin, max(lons) + margin
+    kx = math.cos(math.radians((lat_min + lat_max) / 2.0))
+
+    lat_span, lon_span = lat_max - lat_min, lon_max - lon_min
+    aspect = (lon_span * kx) / lat_span if lat_span else 1.0
+    if aspect < min_aspect:                      # too tall -> widen longitude
+        want = min_aspect * lat_span / kx
+        grow = (want - lon_span) / 2.0
+        lon_min, lon_max = lon_min - grow, lon_max + grow
+    elif aspect > max_aspect:                    # too wide -> grow latitude
+        want = (lon_span * kx) / max_aspect
+        grow = (want - lat_span) / 2.0
+        lat_min, lat_max = lat_min - grow, lat_max + grow
+        kx = math.cos(math.radians((lat_min + lat_max) / 2.0))
+    gw = ((lon_max - lon_min) * kx) or 1.0
+    scale = inner_w / gw
+    w = inner_w + 2 * pad
+    h = (lat_max - lat_min) * scale + 2 * pad
+
+    def proj(lat, lon):
+        return (pad + (lon - lon_min) * kx * scale, pad + (lat_max - lat) * scale)
+
+    return proj, w, h, (lat_min, lat_max, lon_min, lon_max), scale
+
+
+def _path(proj, pts, close=False):
+    d = "M " + " L ".join("%.1f,%.1f" % proj(a, b) for a, b in pts)
+    return d + " Z" if close else d
+
+
+def render_region_map(region, others=()):
+    """A self-contained inline-SVG territory map: the region's boundary drawn as
+    a bold DASHED outline over a soft fill (dashed on purpose — an ancient border
+    is an approximation and should not look surveyed), on a basemap of the
+    features that are actually fixed, with neighbouring territories outlined
+    faintly for context."""
+    bound = region["boundary"]
+    proj, W, H, (lat_min, lat_max, lon_min, lon_max), scale = _region_geo(bound)
+
+    def visible(pts):
+        return any(lat_min <= a <= lat_max and lon_min <= b <= lon_max for a, b in pts)
+
+    def inframe(lat, lon):
+        """A feature's PATH may run off the edge (a coastline should), but its
+        LABEL must not — an anchor outside the viewBox is simply invisible."""
+        return lat_min <= lat <= lat_max and lon_min <= lon <= lon_max
+
+    # Named SITES are the labels that matter most, so they are reserved first and
+    # everything else gives way to them: basemap labels are dropped on collision,
+    # and the big translucent region name is nudged clear. Without this the
+    # watermark lands on top of a city ("EDOM" printed through "Sela / Petra").
+    site_pts = [(proj(la, lo), lb) for la, lo, lb in region.get("sites", [])
+                if inframe(la, lo)]
+    reserved = [p for p, _ in site_pts]
+
+    def clear(x, y, rx=64.0, ry=13.0):
+        return all(abs(x - px) > rx or abs(y - py) > ry for px, py in reserved)
+
+    parts = []
+    # graticule
+    for lon in range(int(math.ceil(lon_min)), int(math.floor(lon_max)) + 1):
+        x, _ = proj(lat_max, lon)
+        parts.append(f'<line x1="{x:.1f}" y1="0" x2="{x:.1f}" y2="{H:.1f}" class="rg-grid"/>')
+        parts.append(f'<text x="{x:.1f}" y="{H-5:.1f}" class="rg-tick" text-anchor="middle">{lon}°E</text>')
+    for lat in range(int(math.ceil(lat_min)), int(math.floor(lat_max)) + 1):
+        _, y = proj(lat, lon_min)
+        parts.append(f'<line x1="0" y1="{y:.1f}" x2="{W:.1f}" y2="{y:.1f}" class="rg-grid"/>')
+        parts.append(f'<text x="5" y="{y-3:.1f}" class="rg-tick">{lat}°N</text>')
+
+    # basemap: the things that don't move
+    if visible(_COAST):
+        parts.append(f'<path d="{_path(proj, _COAST)}" class="reg-coast"/>')
+        clat, clon = _COAST[len(_COAST) // 2]
+        if inframe(clat, clon):
+            cx, cy = proj(clat, clon)
+            if clear(cx - 40, cy):
+                parts.append(f'<text x="{cx-8:.1f}" y="{cy:.1f}" class="reg-sea" text-anchor="end">Great Sea</text>')
+    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)), (_GALILEE, None, None)):
+        if visible(poly):
+            parts.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
+            if label and inframe(*anchor):
+                lx, ly = proj(*anchor)
+                if clear(lx, ly):
+                    parts.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
+    for line, label in ((_JORDAN, "Jordan"), (_ARABAH, "the Arabah")):
+        if visible(line):
+            parts.append(f'<path d="{_path(proj, line)}" class="reg-river"/>')
+            mlat, mlon = line[len(line) // 2]
+            if inframe(mlat, mlon):
+                mx, my = proj(mlat, mlon)
+                if clear(mx + 30, my):
+                    parts.append(f'<text x="{mx+6:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
+
+    # neighbouring territories, faint, for context
+    for o in others:
+        if o["slug"] == region["slug"] or not visible(o["boundary"]):
+            continue
+        parts.append(f'<path d="{_path(proj, o["boundary"], close=True)}" class="reg-other"/>')
+        olat = sum(p[0] for p in o["boundary"]) / len(o["boundary"])
+        olon = sum(p[1] for p in o["boundary"]) / len(o["boundary"])
+        if lat_min <= olat <= lat_max and lon_min <= olon <= lon_max:
+            ox, oy = proj(olat, olon)
+            parts.append(f'<text x="{ox:.1f}" y="{oy:.1f}" class="reg-olab" text-anchor="middle">'
+                         f'{html.escape(o["name"].split(" (")[0])}</text>')
+
+    # the territory itself
+    parts.append(f'<path d="{_path(proj, bound, close=True)}" class="reg-fill"/>')
+    parts.append(f'<path d="{_path(proj, bound, close=True)}" class="reg-edge"/>')
+
+    # sites
+    for (x, y), label in site_pts:
+        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.4" class="reg-dot"/>')
+        parts.append(f'<text x="{x+6:.1f}" y="{y+3.5:.1f}" class="reg-site">{html.escape(label)}</text>')
+
+    # region name across the middle — nudged off the nearest city label
+    clat = sum(p[0] for p in bound) / len(bound)
+    clon = sum(p[1] for p in bound) / len(bound)
+    nx, ny = proj(clat, clon)
+    for dy in (0, -34, 34, -68, 68, -102, 102):
+        if clear(nx, ny + dy, rx=96.0, ry=15.0) and 20 < ny + dy < H - 20:
+            ny += dy
+            break
+    parts.append(f'<text x="{nx:.1f}" y="{ny:.1f}" class="reg-name" text-anchor="middle">'
+                 f'{html.escape(region["name"].split(" (")[0].upper())}</text>')
+
+    # scale bar (50 km) + compass
+    km_deg = 111.0
+    bar = (50.0 / km_deg) * scale
+    bx, by = 54.0, H - 26.0
+    parts.append(f'<line x1="{bx:.1f}" y1="{by:.1f}" x2="{bx+bar:.1f}" y2="{by:.1f}" class="reg-bar"/>')
+    parts.append(f'<text x="{bx+bar/2:.1f}" y="{by-6:.1f}" class="rg-tick" text-anchor="middle">50 km</text>')
+    parts.append(f'<g transform="translate({W-40:.1f},34)">'
+                 f'<line x1="0" y1="10" x2="0" y2="-10" class="rg-comp"/>'
+                 f'<polygon points="0,-14 4,-5 -4,-5" class="rg-compf"/>'
+                 f'<text x="0" y="22" class="rg-cn" text-anchor="middle">N</text></g>')
+
+    return f"""<div class="region-map">
+  <svg viewBox="0 0 {W:.0f} {H:.0f}" role="img"
+       aria-label="Approximate territory of {html.escape(region['name'], quote=True)}">{''.join(parts)}</svg>
+  <div class="region-caveat"><strong>Approximate.</strong> {region['caveat']}</div>
+</div>"""
 
 
 def render_route_panel(route):
@@ -990,6 +1181,12 @@ def build_atlas():
                     if e.get("modern"):
                         caption += f' — modern-day {html.escape(e["modern"])}'
                     map_html = osm_embed(lat, lon, span, e["name"], caption=caption)
+                    # A territory gets its BOUNDARY drawn above the pin map: a marker
+                    # dropped in the middle of a country says nothing about its extent.
+                    reg = _REGION_BY_SLUG.get(pslug)
+                    if reg:
+                        badge = ' <span class="atlas-territory">territory</span>' + badge
+                        map_html = render_region_map(reg, others=REGIONS) + map_html
                 else:
                     badge = ""
                     map_html = ('<div class="atlas-nomap">📍 No fixed point plotted — the location is genuinely '

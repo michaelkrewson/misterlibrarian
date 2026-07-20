@@ -1964,6 +1964,11 @@ LINK_OVERRIDES = [
     # (chapter, verse, word, occurrence_index (1-based), slug)
     (11, 31, "Haran", 1, "haran-person"),   # "his grandson Lot son of Haran"
     (11, 31, "Haran", 2, "haran-city"),     # "they came to Haran, and settled there"
+    # A pin also OVERRIDES the once-per-chapter link cap (see build.py), which is
+    # how a territory gets a map link at the verse that actually describes it
+    # rather than at its first incidental mention.
+    (36, 8, "Seir", 1, "edom"),             # "Esau dwelt in the hill country of Seir" — the territory verse
+    (36, 8, "Edom", 1, "edom"),             # "— Esau is Edom"
 ]
 
 XREFS = [
@@ -2486,6 +2491,86 @@ VERSE_OF_DAY = [
 # from Jacob's reverse journey (Gen 31-33) — said so in the panel's own caption.
 # Genesis gives NO itinerary between Haran and Shechem; this is indicative.
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# REGIONS — territories drawn with a visible BOUNDARY, not a pin.
+#
+# A pin is the wrong shape for a country. "Esau dwelt in the hill country of
+# Seir" is a statement about a TERRITORY, and a marker dropped in the middle of
+# it tells the reader nothing about where it began or ended. Each region here
+# carries a boundary polygon in real (lat, lon), drawn by build.render_region_map
+# as a self-contained inline SVG over a shared Levant basemap (coast, Dead Sea,
+# Sea of Galilee, Jordan, Arabah) — no map library, no external tiles, same
+# approach as ROUTES.
+#
+# ⚠️ HONESTY RULE, and it is not decoration: ancient borders were fluid, mostly
+# undefined in the modern sense, and shifted over centuries. These outlines are
+# reconstructions from the biblical boundary lists (Numbers 34 for Canaan),
+# Egyptian and Assyrian records, and the hard geography — the rift valley, the
+# wadis, the desert fringe — which is the part that genuinely does not move.
+# Every region states its own `caveat`, every outline is drawn DASHED to signal
+# approximation, and no region may be added here without a defensible basis.
+# Where a location is genuinely unknown (Eden, Havilah), it gets NO polygon —
+# the same discipline as the atlas's "no guessed pin."
+#
+#   boundary : [(lat, lon), ...] closed implicitly; the dashed outline
+#   sites    : [(lat, lon, "Label"), ...] fixed points inside/near it
+#   caveat   : the honest sentence printed under the map
+REGIONS = [
+    dict(slug="edom", name="Edom (Seir)", ref=(36, 8),
+         blurb="The red-sandstone highlands east of the Arabah — Esau's country, and the one the book "
+               "has just spent forty-three verses cataloguing.",
+         boundary=[(30.95, 35.40), (31.00, 35.70), (30.85, 35.88), (30.50, 35.92),
+                   (30.15, 35.85), (29.85, 35.65), (29.60, 35.35), (29.55, 35.05),
+                   (29.85, 35.12), (30.30, 35.25), (30.65, 35.32)],
+         sites=[(30.7375, 35.6069, "Bozrah"), (30.3285, 35.4444, "Sela / Petra"),
+                (29.55, 35.00, "Ezion-geber"), (30.65, 35.60, "Teman")],
+         caveat="Edom's core is the highland block east of the Arabah, bounded north by the Wadi al-Hasa "
+                "(the biblical Zered) and running south to the Gulf of Aqaba — the rift and the wadi are "
+                "real and fixed, the eastern edge simply fades into desert with no line to draw. Later "
+                "Edomites spread west of the Arabah into the Negev, the region Greeks and Romans called "
+                "Idumea; that expansion is not shown here."),
+
+    dict(slug="canaan", name="Canaan", ref=(12, 5),
+         blurb="The land promised to Abraham and walked by all three patriarchs — the strip between the "
+               "Mediterranean and the Jordan rift.",
+         boundary=[(33.20, 35.20), (33.25, 35.65), (32.80, 35.62), (32.40, 35.56),
+                   (31.90, 35.53), (31.50, 35.47), (31.05, 35.40), (30.75, 35.10),
+                   (30.65, 34.55), (31.10, 34.28), (31.55, 34.52), (32.10, 34.78),
+                   (32.55, 34.92), (33.05, 35.10)],
+         sites=[(31.7683, 35.2137, "Jerusalem / Salem"), (32.2137, 35.2853, "Shechem"),
+                (31.5326, 35.0998, "Hebron"), (31.8700, 35.4440, "Jericho"),
+                (31.2518, 34.7913, "Beersheba"), (31.9309, 35.2203, "Bethel")],
+         caveat="Drawn from the boundary list of Numbers 34 — the Mediterranean on the west, the Jordan "
+                "and the Dead Sea on the east, the Wadi of Egypt and the wilderness of Zin on the south — "
+                "which is the Bible's own definition of the land, not a political border that ever "
+                "existed on the ground. The northern limit ('Lebo-hamath') is the least certain edge and "
+                "is drawn conservatively."),
+
+    dict(slug="gilead", name="Gilead", ref=(31, 21),
+         blurb="The wooded Transjordan highlands where Jacob and Laban made their heap of witness — good "
+               "grazing country, cut in half by the Jabbok gorge.",
+         boundary=[(32.72, 35.60), (32.75, 36.05), (32.40, 36.15), (32.00, 36.00),
+                   (31.80, 35.75), (31.80, 35.55), (32.10, 35.57), (32.45, 35.57)],
+         sites=[(32.13, 35.68, "the Jabbok"), (32.20, 35.61, "Succoth"),
+                (32.5578, 35.9906, "Ramoth-gilead"), (32.3100, 35.7300, "Mizpah / Galeed")],
+         caveat="Gilead is a geographic name rather than a fixed state — the highlands east of the Jordan "
+                "between the Yarmuk and the north end of the Dead Sea, split by the Jabbok into a northern "
+                "and southern half. Its western edge (the Jordan) is exact; its eastern edge dissolves "
+                "into the desert."),
+
+    dict(slug="negev", name="The Negev", ref=(12, 9),
+         blurb="The dry south — the country Abraham keeps drifting into, and the half-desert Israel will "
+               "later have to cross to enter the land from below.",
+         boundary=[(31.35, 34.35), (31.30, 35.05), (31.00, 35.25), (30.65, 34.95),
+                   (30.50, 34.60), (30.70, 34.30), (31.05, 34.28)],
+         sites=[(31.2518, 34.7913, "Beersheba"), (30.68, 34.50, "Kadesh-barnea"),
+                (31.40, 34.63, "Gerar")],
+         caveat="The Negev is defined by rainfall, not by a treaty — it is the arid belt south of the "
+                "Judean hills, roughly from the Beersheba basin down to the wilderness of Zin. The Hebrew "
+                "word simply means 'the dry country' (and, by extension, 'the south'), so its boundary is "
+                "a gradient, drawn here at the conventional limits."),
+]
+
 ROUTES = [
     dict(
         slug="abraham-migration",
