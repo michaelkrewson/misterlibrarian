@@ -871,6 +871,11 @@ _GALILEE = [(32.88, 35.58), (32.86, 35.65), (32.75, 35.66), (32.70, 35.59),
             (32.78, 35.54), (32.85, 35.54)]
 _JORDAN = [(32.70, 35.57), (32.45, 35.55), (32.20, 35.56), (31.95, 35.53), (31.80, 35.52)]
 _ARABAH = [(31.02, 35.38), (30.60, 35.22), (30.10, 35.08), (29.70, 35.02), (29.53, 34.98)]
+# The Gulf of Aqaba — the fixed feature the far south orients by. Without it a
+# Midian map is a dashed blob in empty space; it also gives Edom's southern tip
+# (Ezion-geber) something to sit on.
+_AQABA = [(29.53, 34.98), (29.10, 34.75), (28.60, 34.55), (28.10, 34.42), (27.80, 34.32),
+          (27.75, 34.52), (28.05, 34.62), (28.55, 34.78), (29.05, 34.98), (29.53, 35.08)]
 
 
 def _region_geo(pts, margin=0.55, inner_w=760.0, pad=40.0,
@@ -940,10 +945,15 @@ def render_region_map(region, others=()):
     # watermark lands on top of a city ("EDOM" printed through "Sela / Petra").
     site_pts = [(proj(la, lo), lb) for la, lo, lb in region.get("sites", [])
                 if inframe(la, lo)]
-    reserved = [p for p, _ in site_pts]
+    # Reserve the label's actual BOX, not just its anchor — a long name like
+    # "Al-Bad' (traditional Madyan)" reaches ~150px to the right of its dot, so
+    # anchor-only testing reports "clear" while the text visibly crowds.
+    reserved = [(x, x + 12.0 + len(lb) * 5.6, y) for (x, y), lb in site_pts]
 
-    def clear(x, y, rx=64.0, ry=13.0):
-        return all(abs(x - px) > rx or abs(y - py) > ry for px, py in reserved)
+    def clear(x, y, w=0.0, ry=13.0):
+        lo, hi = x - w / 2.0, x + w / 2.0
+        return all(hi < sx - 6 or lo > ex + 6 or abs(y - sy) > ry
+                   for sx, ex, sy in reserved)
 
     parts = []
     # graticule
@@ -962,14 +972,16 @@ def render_region_map(region, others=()):
         clat, clon = _COAST[len(_COAST) // 2]
         if inframe(clat, clon):
             cx, cy = proj(clat, clon)
-            if clear(cx - 40, cy):
+            if clear(cx - 40, cy, w=64):
                 parts.append(f'<text x="{cx-8:.1f}" y="{cy:.1f}" class="reg-sea" text-anchor="end">Great Sea</text>')
-    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)), (_GALILEE, None, None)):
+    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)),
+                                (_AQABA, "Gulf of Aqaba", (28.55, 34.62)),
+                                (_GALILEE, None, None)):
         if visible(poly):
             parts.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
             if label and inframe(*anchor):
                 lx, ly = proj(*anchor)
-                if clear(lx, ly):
+                if clear(lx, ly, w=len(label) * 5.6):
                     parts.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
     for line, label in ((_JORDAN, "Jordan"), (_ARABAH, "the Arabah")):
         if visible(line):
@@ -977,7 +989,7 @@ def render_region_map(region, others=()):
             mlat, mlon = line[len(line) // 2]
             if inframe(mlat, mlon):
                 mx, my = proj(mlat, mlon)
-                if clear(mx + 30, my):
+                if clear(mx + 30, my, w=len(label) * 5.6):
                     parts.append(f'<text x="{mx+6:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
 
     # neighbouring territories, faint, for context
@@ -1006,7 +1018,7 @@ def render_region_map(region, others=()):
     clon = sum(p[1] for p in bound) / len(bound)
     nx, ny = proj(clat, clon)
     for dy in (0, -34, 34, -68, 68, -102, 102):
-        if clear(nx, ny + dy, rx=96.0, ry=15.0) and 20 < ny + dy < H - 20:
+        if clear(nx, ny + dy, w=len(region["name"].split(" (")[0]) * 13.0, ry=16.0) and 20 < ny + dy < H - 20:
             ny += dy
             break
     parts.append(f'<text x="{nx:.1f}" y="{ny:.1f}" class="reg-name" text-anchor="middle">'

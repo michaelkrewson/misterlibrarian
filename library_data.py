@@ -2558,6 +2558,26 @@ REGIONS = [
                 "and southern half. Its western edge (the Jordan) is exact; its eastern edge dissolves "
                 "into the desert."),
 
+    dict(slug="midian", name="Midian", ref=(25, 2),
+         blurb="The desert country of Abraham's sons by Keturah — caravan people east of the Gulf of Aqaba, "
+               "and the land Moses will flee to and marry into.",
+         boundary=[(29.30, 34.95), (29.35, 35.60), (29.10, 36.30), (28.60, 36.85),
+                   (28.00, 36.95), (27.45, 36.40), (27.30, 35.80), (27.70, 35.35),
+                   (28.30, 35.05), (28.80, 34.90)],
+         sites=[(28.4767, 35.0219, "Al-Bad' (Madyan)"),
+                (28.80, 36.07, "Qurayyah"), (29.55, 35.00, "Ezion-geber")],
+         caveat="This is the loosest outline on the site, and it is drawn that way on purpose. Midian was a "
+                "PEOPLE before it was ever a place — tent-dwelling herders and caravan traders whose range "
+                "moved with their flocks and their routes, never a state with a frontier. What is shown is "
+                "the traditional heartland in north-west Arabia (the Hejaz), east of the Gulf of Aqaba: the "
+                "coast is real, and there are two genuine anchors inland — Al-Bad', identified with Madyan "
+                "since antiquity (Ptolemy and Josephus both put a 'Madiana' on this coast), and Qurayyah, the "
+                "oasis whose distinctive painted pottery archaeologists actually call Midianite Ware. "
+                "Everything east of those is a guess at where desert stops being anyone's. And the Bible "
+                "itself will not keep Midianites inside it: they raid deep into Canaan in Judges 6-8, camp "
+                "beside Moab in Numbers 22, and Moses pastures his father-in-law's flock as far as Horeb. "
+                "Read the shape as 'where Midian was at home,' not as a border."),
+
     dict(slug="negev", name="The Negev", ref=(12, 9),
          blurb="The dry south — the country Abraham keeps drifting into, and the half-desert Israel will "
                "later have to cross to enter the land from below.",
