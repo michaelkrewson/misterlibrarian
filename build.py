@@ -870,13 +870,6 @@ def build_encyclopedia():
 </div>""")
         return "".join(out)
 
-    credit_html = ""
-    for c in VIDEO_CREDITS:
-        credit_html += f"""<div class="vcredit">
-  <div class="vcredit-h">🎥 Video source: <a href="{html.escape(c['url'], quote=True)}" rel="noopener">{html.escape(c['channel'])}</a>, {html.escape(c['person'])}</div>
-  <p>{c['blurb']}</p>
-</div>"""
-
     queue_rows = "".join(
         f"""<div class="qrow"><div class="qrow-t"><a href="{html.escape(u, quote=True)}" rel="noopener">▶ {html.escape(t)}</a></div>
   <div class="qrow-target">→ {html.escape(target)}</div>
@@ -893,8 +886,6 @@ reach the book or chapter they belong to — logged here so nothing gets lost be
 <p class="lede">The people and places the translation has reached — <strong>{len(places)} places,
 {len(people)} people</strong> — each entry linked to every verse where it appears, with a growing film
 shelf of archaeology and geography footage embedded directly on the entries they illuminate.</p>
-
-{credit_html}
 
 <h2>Places</h2>
 <div class="panel ency">{render(places)}</div>

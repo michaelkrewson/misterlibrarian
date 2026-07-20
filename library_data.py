@@ -37,7 +37,7 @@ Three collections, all grown chapter by chapter as the translation advances:
                      readable English context next to the pin regardless of what
                      script the map itself renders.
                    Location source of record: Expedition Bible (Joel Kramer) is
-                   Michael's trusted field-archaeology channel (see VIDEO_CREDITS
+                   the project's trusted field-archaeology channel (see VIDEO_CREDITS
                    below) — where Kramer stakes out a specific identification
                    (Eden/Havilah via the Pishon = Wadi Ar-Rummah; Sodom & Gomorrah
                    = Tall el-Hammam; Ai = et-Tell after reconsidering Khirbet
@@ -1284,7 +1284,7 @@ ENCYCLOPEDIA = [
               "title ('great house'), not a name, and the story pointedly withholds the man's name while "
               "keeping the midwives'. WHICH pharaoh depends on the date of the Exodus, and this translation "
               "follows the EARLY DATE (1446 BC, from 1 Kings 6:1's '480 years' before Solomon's temple), "
-              "argued in our own time most carefully — and, Michael judges, least tendentiously — by JOEL "
+              "argued in our own time most carefully — and, in this project's judgement, least tendentiously — by JOEL "
               "KRAMER of Expedition Bible (Associates for Biblical Research). On that reading: the pharaoh of "
               "the OPPRESSION here is Thutmose III (reigned c. 1479–1425 BC), Egypt's great empire-builder, "
               "whose relentless Canaan campaigns created the demand for the store-cities Israel is forced to "
@@ -2692,13 +2692,6 @@ VIDEO_CREDITS = [
         channel="Expedition Bible",
         person="Joel Kramer",
         url="https://www.youtube.com/@ExpeditionBible",
-        blurb=(
-            "Joel Kramer is a biblical archaeologist who grew up in the Middle East and has lived for years "
-            "in Jerusalem. Expedition Bible takes viewers to the actual sites behind the text — with drone "
-            "footage, 3D reconstructions, and firsthand walk-throughs of the archaeology and the excavators' "
-            "own published records. Michael follows this channel's work closely and trusts its fieldwork; "
-            "videos are embedded here with gratitude and full credit to Joel Kramer and Expedition Bible."
-        ),
         added="2026-07-11",
     ),
 ]
