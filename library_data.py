@@ -241,6 +241,12 @@ DICTIONARY = [
      "To ACT WITH INSIGHT, and so to SUCCEED — the two senses are one in Hebrew, because to this literature success is the fruit of understanding, not luck or force. It is the root behind MASKIL ('a contemplative,' a title on several Psalms) and the verb that gave Jacob's crossed hands their meaning ('he crossed his hands SIKKEL — knowingly,' Genesis 48:14). Joshua 1:7-8 promises Joshua he will TASKIL 'wherever you go' — bracketed with TATZLIACH, 'prosper' — and pointedly attaches both to keeping the scroll rather than winning the war. The Bible's own definition of a successful general is a bookish one: prosperity follows from doing what is written. KJV 'then thou shalt have good success.'", ("Joshua", 1, 7)),
     ("nuach", "nuach", "נוּחַ", "meniach",
      "To REST, settle, come to a stop — the verb behind NOACH (Noah, 'rest') and the noun MENUCHAH, a resting-place. It is one of the book of Joshua's key promises: the point of crossing the Jordan is not conquest for its own sake but REST, somewhere to stop after forty years of not stopping (1:13, 15; 21:44; 22:4). \u26a0\ufe0f Hebrews 4 later reads this rest as UNFINISHED — 'if Joshua had given them rest, God would not have spoken of another day' — turning the land-rest into a figure for a rest still ahead, and leaning on the fact that 'Joshua' and 'Jesus' are the same name in Greek (IESOUS). The word that promises a place to stop becomes the word for something not yet reached.", ("Joshua", 1, 13)),
+    ("euangelion", "euangelion", "εὐαγγέλιον", "euangelion",
+     "GOOD NEWS — the word that gives us 'gospel' (Old English GOD-SPELL, 'good story'). In the wider Greek world it was an IMPERIAL announcement: the good news of a Caesar's birth, victory or accession, proclaimed across the empire — a famous inscription calls the birthday of Augustus 'the beginning (ARCHE) of the good news (EUANGELION) for the world.' Mark takes that political vocabulary and hangs it on a Galilean carpenter: his very first line, 'the beginning (ARCHE) of the good news of Jesus Christ' (1:1), reads almost as a deliberate answer to the emperor-cult. \u26a0\ufe0f Mark may have coined the use of EUANGELION as the title of a written LIFE of Jesus; the four accounts came to be called 'Gospels' after his opening word. In Jesus' own mouth it is not a book but an announcement: 'the kingdom of God has drawn near' (1:15).", ("Mark", 1, 1)),
+    ("euthys", "euthys", "εὐθύς", "euthys",
+     "IMMEDIATELY, at once — Mark's signature word and the engine of his Gospel. It appears about forty times in these sixteen short chapters (eleven in chapter 1 alone), far more than in all the rest of the New Testament combined, driving the narrative at a breathless run: Jesus calls, and 'IMMEDIATELY they left the nets'; he speaks, and 'IMMEDIATELY' the leprosy is gone. \u26a0\ufe0f It is not filler. The relentless EUTHYS is Mark's theology in an adverb — a kingdom breaking in with no pause for deliberation, a Jesus always in motion, a story that never sits down. Most translations vary it ('at once,' 'quickly,' 'straightway') for English elegance; keeping it consistent lets the drumbeat land. Same word EUTHEIAS in 1:3, 'make his paths STRAIGHT' — the root sense is 'straight,' and time-wise, 'straightaway.' KJV 'straightway,' its old catch-all for the word.", ("Mark", 1, 10)),
+    ("basileia", "basileia", "βασιλεία", "he basileia tou theou",
+     "KINGDOM, reign, royal rule — from BASILEUS, king. HE BASILEIA TOU THEOU, 'the kingdom of God,' is the heart of everything Jesus preaches, and his very first announcement: 'the time has been fulfilled, and the kingdom of God HAS DRAWN NEAR' (Mark 1:15). \u26a0\ufe0f It is less a place than an ACTIVITY — God's active reign breaking into the world — which is why 'kingdom' can mislead (there is no territory, no throne yet). The verb ENGIKEN, 'has drawn near,' is deliberately poised between 'is close at hand' and 'has arrived,' and the whole Gospel lives in that tension: the reign is here in Jesus' acts of authority and healing, and not yet in its fullness. Matthew, writing for Jewish readers wary of the divine name, mostly says 'kingdom of HEAVEN' for the same thing.", ("Mark", 1, 15)),
     ("propempo", "propempo", "προπέμπω", "propempsas",
      "To SEND ON THE WAY — a semi-technical word in the early church for equipping a traveller for the next leg of a journey: food, money, letters of introduction, sometimes an escort. It is the material engine of the whole early Christian mission. 3 John 6 tells Gaius he 'will do well to send them on their way (PROPEMPSAS) worthily of God,' and verse 8 turns the act into a theology: to support such travellers is to become 'FELLOW WORKERS with the truth.' The one who never leaves home but funds the one who does is a partner in the mission, not a spectator to it. Paul uses the same verb repeatedly of being outfitted by a church for onward travel (Romans 15:24; 1 Corinthians 16:6, 11; Titus 3:13).", ("3 John", 1, 6)),
     ("xenos", "xenos", "ξένος", "xenous",
@@ -2240,6 +2246,14 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Mark 1 ----
+    ((("Mark", 1, 2)), (("Mark", 1, 3)), "'in Isaiah the prophet' — but v2 is Malachi 3:1 spliced with Exodus 23:20; only v3 is Isaiah 40:3"),
+    ((("Mark", 1, 6)), (("Mark", 1, 7)), "camel's hair and a leather belt — John dressed as Elijah (2 Kings 1:8), the returning forerunner"),
+    ((("Mark", 1, 10)), (("Mark", 1, 12)), "the heavens TORN open (schizō) — paid off only at 15:38, the temple curtain torn top to bottom"),
+    ((("Mark", 1, 14)), (("Mark", 1, 15)), "'handed over' (paradothēnai), first of John, finally of Jesus — the forerunner's fate prefigures his"),
+    ((("Mark", 1, 24)), (("Mark", 1, 25)), "the first to name Jesus correctly is a demon, and is muzzled — the Messianic secret opens here"),
+    ((("Mark", 1, 41)), (("Mark", 1, 42)), "'moved with anger' (the harder reading) — and yet he touches the leper, the thing no one else would do"),
+
     # ---- Judges 1 ----
     ((("Judges", 1, 1)), (("Joshua", 1, 1)), "'after the death of Joshua' — the book opens exactly as Joshua did over Moses; the pattern is the point"),
     ((("Judges", 1, 2)), (49, 8), "Judah sent up first — Jacob's blessing, 'your brothers shall praise you,' made good at the head of the fighting"),
@@ -2814,6 +2828,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ("Mark", 1, 11, "“You are my beloved Son; in you I am well pleased.” King and servant welded in one sentence — Psalm 2 and Isaiah 42."),
+    ("Mark", 1, 15, "“The time has been fulfilled, and the kingdom of God has drawn near.” Jesus' first recorded words, and a manifesto."),
+    ("Mark", 1, 41, "“Moved with anger, he stretched out his hand and touched him.” Angry AT the disease; the touch is for the man."),
     ("Judges", 1, 7, "“As I have done, so God has repaid me.” A mutilated king pronounces the sentence on his own cruelty."),
     ("Judges", 1, 19, "“Jehovah was with Judah… but he could not, because they had chariots of iron.” The excuse the book is documenting."),
     ("Judges", 1, 28, "“When Israel grew strong, they put the Canaanite to forced labour” — a people redeemed from slavery imposing it."),
@@ -4127,5 +4144,101 @@ BOOK_INTROS = {
                 "which the book reports with striking refusal to tidy up; it shows the horror without "
                 "endorsing it, and readers have always argued over how much is description and how much is "
                 "verdict. This library lays the readings out with their pedigrees and does not cast a vote.",
+    ),
+    "Mark": dict(
+        greek_name="Κατὰ Μᾶρκον (Kata Markon)",
+        greek_meaning="'According to Mark' — the traditional title. The book itself names no author; the "
+                      "ascription to Mark is early and external. Its own opening word, EUANGELION ('good "
+                      "news'), is very likely where the whole genre got the name 'Gospel.'",
+        tagline="The shortest, fastest, and probably earliest of the four Gospels — a breathless, urgent "
+                "account of Jesus in action, with almost no teaching and one relentless adverb: "
+                "'immediately.'",
+        genre="A GOSPEL — a new literary form Mark may effectively have invented: not a biography in the "
+              "ancient sense, not a chronicle, but a theological narrative of the life, death and "
+              "resurrection of Jesus, written to proclaim rather than merely to record. Mark's is the most "
+              "action-driven of the four: heavy on miracle and movement, light on discourse.",
+        canon="The second Gospel in the traditional order (after Matthew), but on the majority scholarly view "
+              "the FIRST to be written — the earliest of the four, and a principal source drawn on by both "
+              "Matthew and Luke. One of the four canonical Gospels that open the New Testament.",
+        author="By strong and early tradition, JOHN MARK — the companion of Peter and, earlier, of Paul and "
+               "Barnabas (Acts 12:12, 25; 13:13; 1 Peter 5:13). Papias, writing around AD 130 and quoting an "
+               "even older source ('the Elder'), says Mark was Peter's INTERPRETER and 'wrote down accurately "
+               "all that he remembered' of Peter's preaching, 'though not in order.' This makes the Gospel, "
+               "on the traditional view, essentially the memoirs of PETER as set down by his assistant — "
+               "which fits its vivid, eyewitness-flavoured detail and its unflattering portrait of Peter "
+               "himself.",
+        date="Most place it around AD 65–70 — near or just after the deaths of Peter and Paul in Rome and "
+             "around the Jewish war that ended in the destruction of the Temple in AD 70. A few argue for a "
+             "date in the 50s. Either way it is early: within a generation of the events, and the earliest "
+             "written Gospel.",
+        place="By tradition ROME, written for a Gentile, largely Roman audience. The internal signs fit: Mark "
+              "explains Jewish customs his readers would not know (7:3-4), translates Aramaic phrases into "
+              "Greek, and uses a striking number of Latin loanwords (legion, denarius, centurion). It reads "
+              "like a Gospel made for people far from Galilee.",
+        audience="GENTILE believers, probably under pressure — a church that needed the story of a Messiah who "
+                 "suffered, told to people who might soon suffer themselves. Mark's Jesus is constantly "
+                 "misunderstood, and the disciples constantly fail, which speaks to a community learning that "
+                 "following the crucified one is hard.",
+        structure=[
+            ("1:1–13", "The beginning — no birth, straight to John the baptiser, the baptism, and the "
+                       "temptation, all in thirteen verses."),
+            ("1:14–8:26", "The ministry in Galilee — a whirlwind of healings, exorcisms, parables and growing "
+                          "crowds, and a mounting question: who is this? (with the disciples steadily failing "
+                          "to answer it)."),
+            ("8:27–10:52", "The turn — Peter confesses 'you are the Christ,' and from that moment Jesus sets "
+                           "his face toward Jerusalem, predicting his death three times and redefining "
+                           "greatness as service. The hinge of the book."),
+            ("11:1–16:8", "Jerusalem — the entry, the temple, the last supper, Gethsemane, the trial, the "
+                          "cross, and the empty tomb. The Gospel that has run at a sprint slows to tell the "
+                          "passion in detail."),
+        ],
+        themes=[
+            "URGENCY — the relentless 'immediately' (euthys), a kingdom breaking in with no pause, a Jesus "
+            "always on the move. The pace is itself a message.",
+            "The SUFFERING Messiah — Mark refuses a triumphant Christ. Nearly half the book is the road to the "
+            "cross, and its climax is not a resurrection appearance but a centurion at a corpse saying 'truly "
+            "this was the Son of God.'",
+            "The MESSIANIC SECRET — Jesus repeatedly silences those who would announce him (demons, the "
+            "healed, even the disciples). His identity is real but hidden, and only fully sayable at the "
+            "cross.",
+            "The FAILING disciples — nowhere are the twelve less flattering. They misunderstand, they sleep, "
+            "they flee, Peter denies him — a hard mirror for a struggling church, and a strange choice for a "
+            "book supposedly based on Peter's own preaching.",
+            "AUTHORITY (exousia) — over disease, demons, the Sabbath, sin, the sea. Mark shows rather than "
+            "argues: what Jesus DOES makes the claim his words leave unspoken.",
+            "SERVICE (diakoneō) — from the angels in the wilderness and Simon's mother-in-law to the book's "
+            "great definition, 'the Son of Man came not to be served but to serve, and to give his life as a "
+            "ransom for many' (10:45).",
+        ],
+        key_words=["euangelion", "euthys", "basileia", "exousia"],
+        key_people=["jesus", "john-the-baptist", "simon-peter", "capernaum"],
+        source_text="Translated from the Greek of the SBL GREEK NEW TESTAMENT (SBLGNT), the critical text "
+                    "edited by Michael W. Holmes — a modern eclectic text weighing the earliest manuscripts. "
+                    "\u26a0\ufe0f Mark carries two of the most consequential textual questions in the New "
+                    "Testament. Its OPENING (1:1) divides over whether 'Son of God' stood in the first "
+                    "sentence, and 1:41 over whether Jesus was 'moved with COMPASSION' or 'moved with ANGER' "
+                    "at the leper — a one-word difference this translation resolves toward the harder reading, "
+                    "explained in the note. And its ENDING is the single largest textual problem in the "
+                    "Gospels: the oldest manuscripts stop abruptly at 16:8, with the women fleeing the empty "
+                    "tomb 'for they were afraid,' and the familiar 'longer ending' (16:9-20) is a later "
+                    "addition — flagged there when the translation reaches it. This library prints the "
+                    "critical text and lays the variants out with their pedigrees. The seven-version shelf "
+                    "under every chapter compares the NIV, KJV, Douay-Rheims, The Living Bible, the 1599 "
+                    "Geneva, ASV, and NWT.",
+        christ="Mark IS a book about who Jesus is, and it withholds the answer on purpose. The demons know it "
+               "from the first page; the reader is told it in verse 1; but the human characters cannot see it "
+               "until the end — and the confession the whole Gospel drives toward comes not from a disciple "
+               "but from a Roman executioner looking at a dead man: 'truly this man was the Son of God' "
+               "(15:39). Mark's Christ is the crucified one, and his central claim is that you do not "
+               "understand the glory until you have seen the cross.",
+        debates="AUTHORSHIP is relatively secure by ancient standards — the Papias tradition linking Mark to "
+                "Peter is early and specific — though critical scholars treat 'Mark' as shorthand for the "
+                "community that produced it. The live questions are the ENDING (almost universally, 16:9-20 is "
+                "judged a later addition, since the earliest and best manuscripts end at 16:8; whether Mark "
+                "MEANT to end so abruptly, or whether the original ending was lost, is genuinely debated), "
+                "the two great VARIANTS at 1:1 and 1:41, and MARKAN PRIORITY — the majority view that Mark was "
+                "written first and used by Matthew and Luke, against the older tradition that Matthew came "
+                "first. This library prints the critical text and lays the readings out with their pedigrees "
+                "without casting a vote.",
     ),
 }

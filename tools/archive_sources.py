@@ -65,6 +65,7 @@ MECHON_BOOKS = {
 # URL: https://bible.helloao.org/api/grc_sbl/{book}/{chapter}.json
 SBLGNT_BOOKS = {
     "MAT": ("Matthew", 28),
+    "MRK": ("Mark", 16),
     "JHN": ("John", 21),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
