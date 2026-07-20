@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("megurim", "megurim", "מְגוּרִים", "megurai",
+     "SOJOURNINGS — the time spent living somewhere as a resident alien, from GUR, 'to reside as a stranger.' A GER is a foreigner lawfully present but landless: protected, tolerated, and holding no title to the ground under him. Pharaoh asks Jacob how many are the days of his LIFE; Jacob answers about the days of his MEGURIM (47:9), and then extends the word to his fathers as well. Standing in the richest country on earth, having just been handed its best province, he describes three generations as people who never owned anywhere — which is the patriarchal story in a single word, said to a man who owns everything he can see. The one piece of ground they do own is a grave (23:9). KJV 'the days of the years of my pilgrimage.'", (47, 9)),
+    ("chomesh", "chomesh", "חֹמֶשׁ", "la-chomesh",
+     "A FIFTH — twenty percent. It appears twice in the Joseph story and the second time is the first one made permanent: Joseph tells Pharaoh to take a fifth of the harvest through the seven good years (41:34), and then, when the famine has stripped the country of its silver, its livestock and finally its land, he fixes a fifth to Pharaoh as a STATUTE 'to this day' (47:26). The people are buying back their own stored surplus and paying for it with everything they own. A crown owning the land and taking a fixed share of every harvest, with a tax-exempt temple estate beside it, is a recognisable description of later Egyptian agriculture — the narrator is explaining to his readers why the country they know is arranged as it is.", (47, 24)),
     ("anokhi", "anokhi", "אָנֹכִי", "anokhi",
      "I, MYSELF — the long, emphatic form of the pronoun (beside the ordinary ANI). Hebrew normally carries the subject inside the verb, so writing the pronoun out at all is emphasis, and using the long form doubles it. Genesis 46:4 uses it TWICE in one verse, at the border, to a frightened old man: 'ANOKHI will go down with you to Egypt, and ANOKHI will surely bring you up again.' The promise is not that the family will be spared the descent but that God is going into it with them and coming back out. The same word opens the Ten Commandments ('ANOKHI is Jehovah your God,' Exodus 20:2). KJV catches it with 'I will go down with thee… and I will also surely bring thee up again.'", (46, 4)),
     ("mikneh", "mikneh", "מִקְנֶה", "anshei mikneh",
@@ -2198,6 +2202,18 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 47 ----
+    ((47, 3),  (46, 34), "the coached script delivered word for word — 'shepherds, both we and our fathers' — and it works: Goshen is granted"),
+    ((47, 9),  (23, 9),  "'the days of my sojournings' — three generations who owned one piece of ground in Canaan, and it was a grave"),
+    ((47, 14), (41, 34), "the silver of two countries buys back the grain his own administration took as the fifth in the good years"),
+    ((47, 22), (41, 45), "the priests alone keep their land — and Joseph's wife is the daughter of a priest of On. Genesis records both and connects neither"),
+    ((47, 25), (45, 5),  "'you have kept us alive' — the root of Joseph's own michyah, 'to preserve life,' now said by people selling themselves into servitude"),
+    ((47, 27), (1, 28),  "'fruitful and multiplied greatly' — the creation blessing, landing on Israel in the same chapter Egypt loses everything"),
+    ((47, 27), ("Exodus", 1, 7), "word for word the opening of Exodus 1:7, where the same verbs make a new king afraid"),
+    ((47, 29), (24, 2),  "'put your hand under my thigh' — the oath Abraham required of his servant; both times it is about the future of the line"),
+    ((47, 30), (46, 4),  "'carry me out of Egypt' — the practical form of 'I will surely bring you up again'"),
+    ((47, 31), (37, 10), "'Israel bowed' — the object of the verb is left out; the dream Jacob once rebuked was 'shall I and your mother come to bow down to you?'"),
+
     # ---- Genesis 46 ----
     ((46, 1),  (26, 24), "Beersheba: where Isaac had his own night visit and built an altar — which is why Jacob sacrifices here to 'the God of his father Isaac'"),
     ((46, 2),  (22, 11), "'Jacob, Jacob' — the doubled name and the one-word answer, hineni, as at the binding: 'Abraham, Abraham'"),
@@ -2699,6 +2715,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    (47, 9, "“Few and evil have been the days of the years of my life.” He is 130, and he calls it few."),
+    (47, 25, "“You have kept us alive!” — said gratefully, by people who have just sold themselves into servitude."),
+    (47, 27, "“And they were fruitful and multiplied greatly.” The creation blessing, in the same chapter Egypt loses everything."),
     (46, 3, "“Do not fear to go down to Egypt.” The permission the family needed — God had forbidden Isaac the same journey."),
     (46, 4, "“I myself will go down with you… and I myself will surely bring you up again.” The exile and the return promised in one breath."),
     (46, 30, "“Let me die this time, after my seeing your face.” Not a wish to die — a statement that the thing that made death unbearable is gone."),
