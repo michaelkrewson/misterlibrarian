@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("propempo", "propempo", "προπέμπω", "propempsas",
+     "To SEND ON THE WAY — a semi-technical word in the early church for equipping a traveller for the next leg of a journey: food, money, letters of introduction, sometimes an escort. It is the material engine of the whole early Christian mission. 3 John 6 tells Gaius he 'will do well to send them on their way (PROPEMPSAS) worthily of God,' and verse 8 turns the act into a theology: to support such travellers is to become 'FELLOW WORKERS with the truth.' The one who never leaves home but funds the one who does is a partner in the mission, not a spectator to it. Paul uses the same verb repeatedly of being outfitted by a church for onward travel (Romans 15:24; 1 Corinthians 16:6, 11; Titus 3:13).", ("3 John", 1, 6)),
+    ("xenos", "xenos", "ξένος", "xenous",
+     "A STRANGER, and also a GUEST — the same word for the unknown outsider and for the visitor you take in, because in the ancient world the two were meant to be the same act. It is the root of PHILOXENIA, 'love of strangers,' which is simply the Greek word for HOSPITALITY: a whole virtue named for treating the unknown traveller well. 3 John 5 praises Gaius for what he does for the brothers 'and these, XENOUS' — strangers he had never met and who could not repay him. The New Testament presses the point hard: 'do not neglect PHILOXENIA, for by it some have entertained angels unawares' (Hebrews 13:2). \u26a0\ufe0f The negative twin of the virtue stands one letter away in the pair: 2 John tells a church to refuse a XENOS who carries a false Christ. Same act, opposite travellers — the message decides, not the stranger's strangeness.", ("3 John", 1, 5)),
     ("agape", "agape", "ἀγάπη", "agape",
      "LOVE — the noun this literature is built on. Greek had several words for love and AGAPE was the least loaded of them: not EROS (desire), not PHILIA (the warm bond of friends and kin), but a comparatively colourless word that the Septuagint and then the New Testament filled up with content. \u26a0\ufe0f It is often said that AGAPE means specifically divine or selfless love while PHILEO means mere affection; that is an overstatement — John uses the two almost interchangeably (compare 21:15-17, where the verbs alternate with no evident shift). What is true is that this literature DEFINES the word rather than assuming it: 2 John 6 says flatly, 'this is love: that we walk according to his commandments' — love as a road walked, not a feeling described.", ("2 John", 1, 6)),
     ("aletheia", "aletheia", "ἀλήθεια", "aletheia",
@@ -2226,6 +2230,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- 3 John ----
+    ((("3 John", 1, 5)), (("2 John", 1, 10)), "the exact positive of 2 John's refusal — receive the travellers, because these carry the Name, not a false Christ"),
+    ((("3 John", 1, 8)), (("2 John", 1, 11)), "'fellow workers with the truth' — funding the right teacher makes you a partner in the mission, as funding the wrong one made you a partner in his work"),
+    ((("3 John", 1, 11)), ("John", 15, 15), "'the friends' — the circle names itself by Jesus' own word, 'I have called you friends'"),
+    ((("3 John", 1, 14)), (("2 John", 1, 12)), "'mouth to mouth' — the same close as the companion letter, a letter admitting a letter is not enough"),
+
     # ---- 2 John ----
     ((("2 John", 1, 5)), ("John", 13, 34), "'not a new commandment, but from the beginning' — set beside Jesus calling the love-command NEW"),
     ((("2 John", 1, 5)), ("John", 1, 1), "'from the beginning' — the same instinct as the Gospel to reach back to arche, here for a commandment"),
@@ -2781,6 +2791,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ("3 John", 1, 4, "“I have no greater joy than this: to hear that my children are walking in the truth.”"),
+    ("3 John", 1, 8, "“Fellow workers with the truth.” The one who funds the mission is a partner in it, not a spectator."),
+    ("3 John", 1, 15, "“Greet the friends by name.” The smallest, most human instruction in the New Testament's letters."),
     ("2 John", 1, 3, "“Grace, mercy, peace WILL be with us.” Every other letter makes this a wish; here it is a statement of fact."),
     ("2 John", 1, 6, "“This is love: that we walk according to his commandments.” Love defined as a road walked, not a feeling described."),
     ("2 John", 1, 12, "“I hope to come and speak mouth to mouth.” A letter's own admission that a letter is not enough."),
@@ -3915,5 +3928,82 @@ BOOK_INTROS = {
                 "repeatedly been used to justify shunning family and refusing ordinary courtesy — uses its "
                 "own context does not support. This library lays the readings out with their pedigrees and "
                 "does not cast a vote.",
+    ),
+    "3 John": dict(
+        greek_name="Ἰωάννου Γʹ (Iōannou G)",
+        greek_meaning="'Of John, 3' — the traditional Greek title. Like its companion, the letter names no "
+                      "author: it opens HO PRESBYTEROS, 'the elder.'",
+        tagline="A private note from 'the elder' to one man named Gaius — praising a host, warning against a "
+                "churchman who loves to be first, and vouching for a traveller — in the fewest Greek words of "
+                "any book in the Bible.",
+        genre="A personal letter, and the most private document in scripture: not addressed to a congregation "
+              "at all but to a single named individual about a specific local situation. It follows the "
+              "ordinary Greco-Roman letter form — sender, recipient, health-wish, body, closing — almost to "
+              "the letter.",
+        canon="One of the CATHOLIC or 'general' epistles, and — with 2 John — among the books the early church "
+              "was slowest to settle. Eusebius lists both 2 and 3 John among the ANTILEGOMENA, the "
+              "'spoken-against' writings: used but disputed, largely because they are short, personal, and "
+              "quote little that could be checked. They were received nonetheless.",
+        author="'The elder,' as in 2 John, and with the same unresolved question: John the apostle, or the "
+               "distinct 'John the elder' of Papias. The two letters are so alike in length, form, vocabulary "
+               "and situation that they are almost universally taken as a matched pair by one hand; whoever "
+               "wrote one wrote the other.",
+        date="Traditionally late first century, c. AD 85–95, from the same hand and moment as 2 John and near "
+             "1 John. Nothing inside the letter dates it; the date is inferred from the pair.",
+        place="By early tradition EPHESUS, writing to Gaius somewhere in the same region of Asia Minor — close "
+              "enough that the elder expects to visit soon (v. 14) and deal with Diotrephes in person.",
+        audience="GAIUS — 'the beloved,' a private Christian and evidently a householder who hosts and "
+                 "provisions travelling missionaries. One of the commonest names in the Roman world; he cannot "
+                 "be securely identified with any other Gaius in the New Testament. The letter is written to "
+                 "him alone.",
+        structure=[
+            ("1–4", "Greeting and joy — the elder to Gaius, an ancient health-wish, and gladness that Gaius "
+                    "'walks in truth.'"),
+            ("5–8", "Praise for hospitality — Gaius has received travelling brothers, even strangers; to send "
+                    "them on their way is to become a fellow worker with the truth."),
+            ("9–10", "Diotrephes — 'who loves to be first,' who rejects the elder's authority, refuses the "
+                     "brothers, and expels those who receive them."),
+            ("11–12", "The lesson and a recommendation — 'imitate the good, not the bad,' and Demetrius, "
+                      "vouched for by all and by the truth itself."),
+            ("13–15", "Closing — ink and reed are not enough; peace, the friends, and 'greet the friends by "
+                      "name.'"),
+        ],
+        themes=[
+            "HOSPITALITY as partnership in the mission — the exact positive of 2 John's warning. Receiving and "
+            "provisioning true travelling teachers makes the host a 'fellow worker with the truth.'",
+            "TRUTH walked, not merely held — the same test as 2 John and 1 John: Gaius is praised because he "
+            "'walks in truth,' Demetrius because the truth itself testifies to his life.",
+            "The danger of AMBITION inside the church. Where 2 John fears false teaching from outside, 3 John "
+            "fears a man who 'loves to be first' inside — arguably the harder danger, because it wears the "
+            "right clothes and cites no heresy.",
+            "AUTHORITY exercised with restraint. The elder, defied, does not curse, depose, or even write the "
+            "church again — he intends to come and speak face to face.",
+            "The church funding its OWN mission — the travellers 'took nothing from the outsiders,' so the "
+            "message could never be mistaken for a paid enterprise.",
+        ],
+        key_words=["propempo", "xenos", "aletheia", "ekklesia"],
+        key_people=["jesus"],
+        source_text="Translated from the Greek of the SBL GREEK NEW TESTAMENT (SBLGNT), the critical text "
+                    "edited by Michael W. Holmes. 3 John is textually calm compared with its neighbour — it "
+                    "has few significant variants and no doctrine-bearing ones; its interest is that it is, in "
+                    "actual Greek words, very nearly the shortest book in the Bible (2 John has fewer verses, "
+                    "3 John slightly fewer words). Both are about the size of a single papyrus sheet, which is "
+                    "very likely why each ends by saying the writer would rather come in person than keep "
+                    "writing. The seven-version shelf under the chapter compares the NIV, KJV, Douay-Rheims, "
+                    "The Living Bible, the 1599 Geneva, ASV, and NWT.",
+        christ="3 John says almost nothing directly about Christ — no confession, no title, no argument. What "
+               "it shows instead is Christ's ethic in miniature: the travellers go out 'for the sake of THE "
+               "NAME' (v. 7), which stands alone, unelaborated, the way a household says 'the' name; and the "
+               "circle calls itself simply 'THE FRIENDS' (v. 15), the word Jesus used of his disciples — 'I "
+               "have called you friends' (John 15:15). The letter is what the gospel looks like as ordinary "
+               "conduct: a door held open, a traveller vouched for, and a whole congregation greeted one name "
+               "at a time.",
+        debates="The same author question as 2 John — apostle or elder — and it is one question for both "
+                "letters, since they are a pair. Two smaller ones are peculiar to 3 John: WHO GAIUS IS (the "
+                "name is too common to place, and attempts to identify him with Paul's companions are "
+                "guesses), and WHAT DIOTREPHES' offence actually was — a doctrinal split dressed as a "
+                "personality clash, an early tension between travelling and settled authority, or simply the "
+                "ordinary sin of a man who wanted the head of the table. The letter blames only the ambition. "
+                "This library lays the readings out with their pedigrees and does not cast a vote.",
     ),
 }

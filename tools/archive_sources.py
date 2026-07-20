@@ -65,6 +65,7 @@ SBLGNT_BOOKS = {
     "MAT": ("Matthew", 28),
     "JHN": ("John", 21),
     "2JN": ("2 John", 1),
+    "3JN": ("3 John", 1),
     "REV": ("Revelation", 22),
 }
 
