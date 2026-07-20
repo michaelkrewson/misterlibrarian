@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("devarim", "devarim", "דְּבָרִים", "elleh ha-devarim",
+     "WORDS — and the Hebrew name of the fifth book of the Torah, taken as always from its own opening line: ELLEH HA-DEVARIM, 'these are the words that Moses spoke' (Deuteronomy 1:1). It could not be better named. Moses does almost nothing in this book but talk: it is three long sermons and a song, delivered in the last weeks of his life to a generation that did not see Egypt. \u26a0\ufe0f The ENGLISH title comes from a different route — the Greek DEUTERONOMION, 'second law,' from the Septuagint's rendering of a phrase at 17:18 that in Hebrew means 'a COPY of this instruction.' The Greek title has stuck for two thousand years and is not quite what the Hebrew says: this is not a second law but the first one preached. DAVAR itself covers word, thing, matter, affair — in Hebrew a word is an object with weight.", ("Deuteronomy", 1, 1)),
+    ("torah", "torah", "תּוֹרָה", "ha-torah ha-zot",
+     "INSTRUCTION, teaching, direction — from YARAH, to throw or shoot, and so to point the way (the same root behind MOREH, a teacher). Rendering it 'law' is the Greek Bible's choice (NOMOS) and it narrows the word: TORAH is what a parent teaches a child (Proverbs 1:8 calls a mother's teaching her torah) as much as what a court enforces. Deuteronomy 1:5 says Moses 'undertook to make this TORAH plain' — BE'ER, a concrete verb for digging out or engraving something so it can be read at a run (Habakkuk 2:2). So the book's own account of itself is not 'Moses restated the legislation' but: he set about making the teaching unmistakable. KJV 'began Moses to declare this law'; ESV 'undertook to explain this law.'", ("Deuteronomy", 1, 5)),
     ("chashav", "chashav", "חָשַׁב", "chashavtem / chashavah",
      "To DEVISE, plan, reckon, intend — the verb of deliberate purpose (it is also the word for accounting: to reckon something to someone's account, as at 15:6, 'he reckoned it to him as righteousness'). Genesis 50:20 uses it TWICE, of two different agents, over one event: 'you CHASHAV evil against me; God CHASHAV it for good.' \u26a0\ufe0f Notice what the sentence does not say. It does not say the evil was secretly good; the object of the first verb is RA'AH, evil, flatly. It does not deny they did it — three verses earlier their own message calls it 'the transgression of your brothers and their sin.' And it does not say God made them do it. Two agents, one event, opposite intentions, both intentions real. It is the fully developed form of what Joseph said in the heat of the reveal at 45:8 ('it was not you who sent me here, but God'), now restated with the guilt left in. KJV 'ye thought evil against me; but God meant it unto good.'", (50, 20)),
     ("aron", "aron", "אָרוֹן", "ba-aron",
@@ -2214,6 +2218,13 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Deuteronomy 1 ----
+    ((("Deuteronomy", 1, 2)), (("Deuteronomy", 1, 3)), "'eleven days from Horeb' set beside 'in the fortieth year' — the whole chapter is the explanation of that gap"),
+    ((("Deuteronomy", 1, 8)), (50, 24), "the oath to Abraham, Isaac and Jacob — the same three names Joseph quoted from his deathbed, now at the border they pointed to"),
+    ((("Deuteronomy", 1, 9)), (("Deuteronomy", 1, 31)), "nasa, 'carry': what was too heavy for Moses to lift is what God does 'as a man carries his son'"),
+    ((("Deuteronomy", 1, 27)), (("Exodus", 1, 11)), "'because Jehovah hated us he brought us out of Egypt' — the rescue reread as a trap"),
+    ((("Deuteronomy", 1, 39)), (2, 17), "'children who do not know good from evil' — the tree's pairing, used of an age too young to be guilty"),
+
     # ---- Genesis 50 ----
     ((50, 5),  (47, 29), "the oath under the thigh, discharged — with an Egyptian state cortege as escort"),
     ((50, 8),  ("Exodus", 1, 8), "'only their little ones… they left in the land of Goshen' — hostages in all but name, and the first chill of Exodus 1"),
@@ -2756,6 +2767,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ("Deuteronomy", 1, 2, "“Eleven days from Horeb.” The next verse says “in the fortieth year.” Nothing else needs to be said."),
+    ("Deuteronomy", 1, 17, "“You shall not shrink before any man, for the judgement is God's.” A judge is handling something that is not his."),
+    ("Deuteronomy", 1, 31, "“As a man carries his son.” Said directly against the accusation that God brought them out because he hated them."),
     (50, 17, "“And Joseph wept when they spoke to him.” Seventeen years on, his brothers still think he might kill them. That is what he weeps at."),
     (50, 20, "“You devised evil against me; God devised it for good.” One verb, two agents, both intentions real — and the guilt left in."),
     (50, 26, "“And he was put in a coffin in Egypt.” The last words of Genesis. Nothing promised has arrived yet."),
@@ -3697,5 +3711,105 @@ BOOK_INTROS = {
                 "flags the eleph ambiguity in the word rather than resolving it, and lays out the readings "
                 "with their pedigrees without casting a vote — the same posture it takes on Genesis's "
                 "composition and the date of Daniel.",
+    ),
+    "Deuteronomy": dict(
+        hebrew_name="דְּבָרִים",
+        hebrew_translit="Devarim",
+        hebrew_meaning="'Words' — from the opening line, 'these are the WORDS that Moses spoke.' The Hebrew "
+                       "title names the book by the thing it actually is: speech. Moses does almost nothing "
+                       "in Deuteronomy but talk.",
+        greek_name="Δευτερονόμιον (Deuteronomion)",
+        greek_meaning="'Second law' — the Greek and Latin (Deuteronomium) title, and a slightly misleading "
+                      "one. It comes from the Septuagint's rendering of a phrase at 17:18 that in Hebrew "
+                      "means 'a COPY of this instruction,' written out for the king. The name has stuck for "
+                      "two thousand years; the book is not a second law but the first one preached.",
+        tagline="The last words of Moses — three sermons and a song, delivered on the plains of Moab to a "
+                "generation that did not see Egypt, by a man who will not cross the river with them.",
+        genre="Preached law. Formally it is a series of ADDRESSES rather than narrative or statute: a covenant "
+              "document in the shape of an ancient treaty, with historical prologue, stipulations, blessings "
+              "and curses, witnesses and a written deposit — and, in the middle of it, some of the most "
+              "affectionate prose in the Hebrew Bible.",
+        canon="The fifth and final book of the TORAH (the Law / Pentateuch, the five books of Moses), and the "
+              "fifth book of the Christian Old Testament. It is the hinge of the canon: the last book before "
+              "Israel enters the land, and the one the rest of the Bible quotes most. Jesus answers all three "
+              "temptations from it.",
+        author="By ancient and traditional reckoning, Jewish and Christian alike, the addresses are the words "
+               "of MOSES — the book presents them as such throughout, in the first person, and says he wrote "
+               "them down (31:9, 24). The account of his own death in chapter 34 is traditionally credited to "
+               "JOSHUA or to a later hand; the Talmud already discusses the question. Critical scholarship "
+               "since the nineteenth century has widely identified Deuteronomy (or a core of it) with the "
+               "'book of the law' found in the temple under Josiah in 622 BC (2 Kings 22), and dated its "
+               "composition to that period or somewhat earlier. See 'Where the debates are.'",
+        date="On the traditional view, c. 1406 BC — the eleventh month of the fortieth year after the exodus "
+             "(1:3), in the last weeks of Moses' life, immediately before the crossing. On the Josianic view, "
+             "seventh century BC, with older material behind it.",
+        place="The plains of MOAB, east of the Jordan, opposite Jericho — the staging ground for the crossing. "
+              "Israel never moves in this book. The whole of Deuteronomy takes place standing still, at a "
+              "border.",
+        audience="The SECOND generation — the children of those who came out of Egypt. Moses says so bluntly: "
+                 "'not with our fathers did Jehovah make this covenant, but with us, we, these here today, all "
+                 "of us alive' (5:3). It is a book about how to hand faith to people who were not there.",
+        structure=[
+            ("1–4", "First address: what happened, and what to make of it — the wilderness retold to a "
+                    "generation that did not live it, ending in a plea to remember Horeb."),
+            ("5–11", "Second address, part one: the Ten Words repeated, the SHEMA ('Hear, O Israel'), and the "
+                     "great command to love God with all the heart, soul and strength — with the warning that "
+                     "prosperity, not hardship, is the likelier danger."),
+            ("12–26", "Second address, part two: the statutes — worship at one place, kings, prophets, courts, "
+                      "war, land, debt, gleaning, wages, weights. The law given a human face."),
+            ("27–28", "Blessings and curses on Ebal and Gerizim — the covenant sanctions, with the curses at "
+                      "four times the length of the blessings."),
+            ("29–30", "Third address: covenant renewal, and the offer of 'life and good, death and evil' — "
+                      "'therefore choose life.'"),
+            ("31–34", "The handover: Joshua commissioned, the Song of Moses, the blessing of the tribes, and "
+                      "the death of Moses on Nebo, buried by God in a grave no one knows."),
+        ],
+        themes=[
+            "REMEMBER — the book's central verb. A generation that did not see the exodus is told to hold it "
+            "as its own story; 'remember' and 'do not forget' run through it like a drumbeat.",
+            "LOVE as a command and a motive. Deuteronomy is where Israel is told to love God with everything "
+            "(6:5) — and, remarkably, where God's own choice of Israel is explained by nothing but love "
+            "(7:7-8): not their size, not their merit.",
+            "The danger of SUCCESS. The warnings are not mainly about suffering but about comfort: when you "
+            "have eaten and are full, and built good houses, 'beware lest you forget' (8:11-14).",
+            "The STRANGER, the orphan and the widow — protected again and again, with the same reason each "
+            "time: you were slaves in Egypt. Ethics grounded in memory rather than in principle.",
+            "ONE place, one God — the centralisation of worship, and the SHEMA's insistence that Jehovah is "
+            "one.",
+            "CHOICE. The book ends by setting life and death in front of the people and telling them to "
+            "choose. It assumes they can.",
+        ],
+        key_words=["devarim", "torah", "chesed", "ahav", "zakhar", "ger", "mishpat"],
+        key_people=["moses", "horeb", "mount-sinai", "egypt", "edom"],
+        source_text="Translated from the Hebrew MASORETIC TEXT — the digital Hebrew of Mechon-Mamre (the "
+                    "Leningrad/Aleppo tradition), consonants with the Masoretes' vowel-points and cantillation, "
+                    "and its scribal peculiarities kept. The scroll's own paragraph breaks are shown as it "
+                    "marks them: petuchah {פ} (open) and setumah {ס} (closed). Deuteronomy is also one of the "
+                    "best-attested books at Qumran — a large number of copies were found in the Dead Sea "
+                    "Scrolls, along with the oldest known texts of the Shema in the tefillin and mezuzah "
+                    "fragments. The seven-version shelf under every chapter compares the NIV, KJV, "
+                    "Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and NWT.",
+        christ="Deuteronomy is the book Jesus quotes most in the crisis moments. All three answers in the "
+               "wilderness temptation come from it — 'man does not live by bread alone' (8:3), 'you shall not "
+               "put Jehovah your God to the test' (6:16), 'him only shall you serve' (6:13). Asked for the "
+               "greatest commandment, he answers with the SHEMA and its love-command (6:4-5). And Moses' "
+               "promise of 'a prophet like me from among your brothers, him you shall hear' (18:15) is applied "
+               "to Jesus in Acts 3:22 and 7:37. This translation marks those echoes as they come; it does not "
+               "force them.",
+        debates="The central question is DATE, and it is sharper here than for any other book of the Torah. "
+                "The book presents itself as the addresses of Moses in the fortieth year, and traditional "
+                "Jewish and Christian reading takes it that way. Since W. M. L. de Wette in 1805, however, a "
+                "large body of scholarship has linked Deuteronomy to the scroll discovered in the temple in "
+                "622 BC (2 Kings 22-23), whose reading triggered Josiah's reform — a reform that looks "
+                "strikingly like this book's programme, above all the abolition of local shrines in favour of "
+                "one sanctuary. On that view Deuteronomy is a seventh-century composition (or an older core "
+                "given seventh-century form), presented in Moses' voice. Arguments run both ways and deserve "
+                "to be heard as arguments: the book's treaty FORM closely matches SECOND-MILLENNIUM Hittite "
+                "vassal treaties rather than the first-millennium Assyrian ones, which cuts toward an early "
+                "date; its language and concerns match late-monarchic Judah, which cuts toward a late one. "
+                "Smaller questions attach to the account of Moses' own death (34), to the phrase 'across the "
+                "Jordan' spoken as if from the west, and to notes like 'to this day.' This library lays the "
+                "readings out with their pedigrees and does not cast a vote — the same posture it takes on "
+                "Genesis's composition and the date of Daniel.",
     ),
 }

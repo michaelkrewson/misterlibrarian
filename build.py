@@ -133,6 +133,7 @@ CHAPTERS = [
     ("exod3", "Exodus", 3, "The burning bush that is not consumed, holy ground, and the Name itself — 'I will be what I will be,' Jehovah, 'my name forever' — with the commission to Pharaoh and the promise of a land flowing with milk and honey."),
     ("lev1", "Leviticus", 1, "The manual of worship opens: from the tent he has just filled, Jehovah CALLS Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's two birds, each ascending whole in smoke, 'a soothing aroma to Jehovah.'"),
     ("num1", "Numbers", 1, "'In the wilderness of Sinai' the redeemed people are counted and arrayed as an army for the march — twelve tribes, twelve chieftains, 603,550 fighting men; and one tribe, Levi, left off the war-roll to carry and guard the tent at the camp's center."),
+    ("deut1", "Deuteronomy", 1, "Moses begins the longest speech of his life, on the far side of the Jordan, to a generation that was not there. \"Eleven days from Horeb\" — and then \"in the fortieth year\": the whole chapter is the explanation of that gap. Judges appointed, spies sent, a land refused, and the flat closing line that nothing happened for a very long time."),
 ]
 # Spanish home-page teasers, keyed by chapter slug. The Spanish index used to
 # reuse CHAPTERS' ENGLISH teaser text, so es.html showed Spanish titles over
@@ -149,6 +150,7 @@ TEASERS_ES = {
     "gen39": "Abajo en Egipto, en casa de Potifar — y el narrador, que no nombró a Dios ni una vez mientras vendían a José, ahora lo dice cuatro veces.",
     "gen40": "El copero y el panadero sueñan la misma noche: «el faraón alzará tu cabeza» significa indulto para uno y horca para el otro.",
     "gen41": "El faraón sueña con siete vacas gordas y nadie sabe leerlo. José sale del pozo, dice «no yo», y acaba gobernando Egipto.",
+    "deut1": "\u00abOnce d\u00edas desde Horeb\u00bb — y luego \u00aben el a\u00f1o cuarenta\u00bb. Mois\u00e9s empieza a explicar los cuarenta a\u00f1os.",
     "gen50": "El \u00faltimo cap\u00edtulo: \u00abustedes pensaron mal contra m\u00ed; Dios lo pens\u00f3 para bien\u00bb. Y un ata\u00fad en Egipto.",
     "gen49": "El poema del lecho de muerte: Rubén degradado, Simeón y Leví maldecidos, y a Judá el cetro. Y luego una escritura de propiedad.",
     "gen48": "Jacob adopta a los dos hijos egipcios de José, y luego cruza las manos a propósito: \u00abLo sé, hijo mío, lo sé\u00bb.",
