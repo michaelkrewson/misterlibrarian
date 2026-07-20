@@ -229,6 +229,8 @@ DICTIONARY = [
      "The Hebrew realm of the dead — down, dark, silent — appearing here for the FIRST time in the Bible, in Jacob's 'I will go down to my son, mourning, to Sheol' (37:35). Crucially, everyone goes there: righteous and wicked alike, with no second word set against it. It is not a place of punishment, and the Hebrew Bible offers no rival destination. The KJV renders it 'the grave' here, but 'hell' in thirty-one other places and 'the pit' in three — so an English reader cannot tell that Jacob, Job, David and Isaiah are discussing one thing, and would reasonably conclude the patriarch expects the grave while the wicked go elsewhere. That is a doctrine assembled out of an inconsistent gloss. The Douay, following the Vulgate's infernum, prints 'into hell' right here — a patriarch expecting to join his beloved son there. The ASV and NWT both simply transliterate, 'Sheol,' declining to settle by translation what the Hebrew leaves open; this translation follows them on the merits — the same principle as 'vault' for raqia and 'side' for tsela.", (37, 35)),
     ("saq", "saq", "שַׂק", "saq",
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
+    ("tsalach", "tsalach", "צָלַח", "matsliach",
+     "To SUCCEED, prosper, be made to go well. Genesis 39 uses it as the drumbeat of Joseph's slavery — 'Jehovah was with Joseph, and he became a man who PROSPERED' (39:2), 'Jehovah made everything he did PROSPER in his hand' (39:3), and again in the jail at 39:23. The discomfort is deliberate and belongs to the Hebrew, not the English: the man being described is somebody's property in v. 2 and a prisoner by v. 20. Whatever the word promises, it plainly is not that things are pleasant or that he gets what he wants. KJV 'a prosperous man'; NWT 'a successful man.'", (39, 2)),
     ("yabam", "yabbem", "יַבֵּם", "yabbem",
      "To DO THE DUTY OF A BROTHER-IN-LAW — one Hebrew verb, built from yabam, 'a husband's brother.' When a man died childless his brother was to marry the widow, and their first son counted as the dead man's, so his name was not blotted out and the widow was not left destitute (38:8). Genesis shows the custom already operating two centuries before Deuteronomy 25:5-10 writes it into law — including the shaming ceremony for a brother who refuses. Everything in Genesis 38 turns on that refusal: Onan takes the marriage and withholds the duty, and Judah then withholds Shelah. The institution drives the whole book of Ruth, where Boaz performs the nearer kinsman's declined obligation. KJV 'perform the duty of an husband's brother unto her'; NWT 'perform brother-in-law marriage with her.'", (38, 8)),
     ("zonah", "zonah", "זוֹנָה", "zonah",
@@ -1708,6 +1710,27 @@ ENCYCLOPEDIA = [
               "word no one can quite translate (36:24).",
          refs=[(36, 20), (36, 21)], videos=[]),
 
+    # ---- Genesis 39 ----
+    # UNNAMED in the text, so no aliases — encyclopedia-only, the antiochus-iv pattern.
+    dict(slug="potiphars-wife", name="Potiphar's wife", kind="person",
+         desc="The woman who propositions Joseph, is refused, and has him jailed on a false charge (Genesis "
+              "39:7-20). The Hebrew never names her — she is 'his master's wife' throughout, which is part of "
+              "the chapter's design: she has all the power and no identity, while the slave has a name. Later "
+              "tradition supplied one anyway, calling her ZULEIKHA; the name is medieval, comes to prominence "
+              "in Persian and Islamic retellings (where the story is elaborated at length in Sura 12 of the "
+              "Qur'an and in Jami's poem <em>Yusuf and Zulaikha</em>), and has no basis in Genesis. Her "
+              "accusation is a small masterpiece of construction: she gathers the household staff BEFORE her "
+              "husband, opens with the ethnic word ('a HEBREW man… to laugh at US'), and by the time she "
+              "reaches Potiphar it has become 'the Hebrew slave whom YOU brought to us' — the blame quietly "
+              "relocated onto the man she is complaining to. Note too the one preposition she edits: the "
+              "narrator says Joseph left the garment IN HER HAND, because she was gripping it; in her two "
+              "retellings it becomes 'beside me,' and her hand vanishes from the story. ⚠️ A closely similar "
+              "tale survives in Egyptian — the <em>Tale of Two Brothers</em> (Papyrus d'Orbiney, c. 1200 BC) — "
+              "and in Greek myth as Phaedra and Hippolytus; whether that means borrowing, a shared stock of "
+              "story-shapes, or simply a recurring fact of life for powerless men in powerful houses is argued "
+              "and not settled.",
+         refs=[(39, 7), (39, 12), (39, 14), (39, 19)], videos=[]),
+
     # ---- Genesis 38 ----
     dict(slug="tamar", name="Tamar", kind="person", aliases=["Tamar"],
          desc="Judah's daughter-in-law — widowed twice by his sons Er and Onan, then left in limbo when Judah "
@@ -2159,6 +2182,15 @@ XREFS = [
     ((33, 3),  (27, 29), "Jacob bowed to the ground seven times — the man whom the stolen blessing had made lord, 'let your brothers bow down to you' (27:29), now on his face before the brother he cheated"),
     ((33, 19), (12, 7),  "Jacob buys land and builds an altar at Shechem — at the very tree of Moreh where Abraham built his FIRST altar in Canaan (12:6-7); the grandson claims the same ground with the second parcel a patriarch has ever owned in the land"),
 
+    # ---- Genesis 39 ----
+    ((39, 6),  (29, 17), "yefeh to'ar vifeh mar'eh — 'beautiful in form and lovely to look at,' word for word the Hebrew used of RACHEL, and of no one else in the Bible. Joseph has his mother's face, and the narrator mentions it one verse before his master's wife looks at him"),
+    ((39, 12), (37, 23), "the second garment. His brothers stripped his ornamented tunic and used it to tell his father a lie; a second garment is taken off him, kept back deliberately, and used to tell his master another. Twice stripped, twice the cloth speaks against him, and both times he says nothing"),
+    ((39, 5),  (12, 3),  "'in you all the families of the earth will be blessed' — the promise operating in miniature and out of sight: an Egyptian slave-owner's whole estate is blessed 'for Joseph's sake,' and he never learns why"),
+    ((39, 14), (14, 13), "ivri, 'Hebrew' — the outsider-word, first used of Abram and now spat by an Egyptian woman rallying the household staff: 'he has brought US in a HEBREW man'"),
+    ((39, 14), (21, 9),  "letsacheq, 'to laugh at' — the laughter-root that named ISAAC, turned cruel once already when Sarah saw Ishmael metsacheq and demanded he be cast out, and now weaponised against Rachel's son by a stranger"),
+    ((39, 9),  (20, 6),  "'sin against God' — Joseph names the wrong as God's before it is Potiphar's; at Gerar it was God who said 'I kept you from sinning against me,' to a pagan king in a dream about another man's wife"),
+    ((39, 21), (19, 19), "chesed, covenant kindness — 'extended' to Joseph in a cell, the same faithful loyalty Lot invoked when he was pulled out of Sodom"),
+
     # ---- Genesis 38 ----
     ((38, 25), (37, 32), "haker-na, 'recognize, please' — Judah and his brothers sent their father a bloodied tunic with these two words; Tamar sends Judah his own seal and staff with the same two. He is answered in his own sentence, and the props rhyme: a garment and a goat used to make a father believe a lie, a seal and a staff used to make a son admit a truth"),
     ((38, 16), (27, 23), "'he did not know that she was his daughter-in-law' — the third turn of nakar in three generations: Isaac did NOT recognize the son in front of him, Jacob DID recognize a coat that was lying to him, and Judah recognizes only what carries his own signature"),
@@ -2561,6 +2593,8 @@ VERSE_OF_DAY = [
     (37, 24, "“And the pit was empty — there was no water in it.” The Bible's most famous redundant sentence: not a drowning, a stone jar. Then they sat down to eat."),
     (38, 26, "“She is more righteous than I.” The first honest sentence Judah ever speaks — and the hinge of his whole life."),
     (38, 25, "“Recognize, please.” The two words Judah used to break his father, handed back to him with his own seal attached."),
+    (39, 2, "“And Jehovah was with Joseph.” Said four times in one chapter — and never once in the chapter where he was sold."),
+    (39, 9, "“How then could I do this great evil, and sin against God?” The wrong he names is against someone who is not in the room."),
 ]
 
 # ---------------------------------------------------------------------------
