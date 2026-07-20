@@ -122,6 +122,7 @@ CHAPTERS = [
     ("gen42", "Genesis", 42, "Ten brothers go down to Egypt for grain and bow to the governor, faces to the ground — the dream of the sheaves, fulfilled through the pit that was meant to stop it. He recognizes them instantly and makes himself unrecognizable, calls them spies, and jails them three days; and in the cell they say to each other, not knowing he understands every word, “we are guilty concerning our brother — we saw the distress of his soul when he pleaded with us.” He turns away and weeps, binds Simeon, and sends the rest home with their silver hidden in the sacks."),
     ("gen43", "Genesis", 43, "The grain runs out and Jacob has to let Benjamin go. Judah puts up himself — “I myself will be surety for him” — where Reuben had offered his own sons, and his father says yes. They go down with double silver and a gift of balm, gum and ladanum: the very cargo the caravan was carrying the day they sold Joseph into it. An Egyptian steward greets them with the word their family could not say — peace — and the governor seats them in exact birth order, stares at his mother's other son, and has to leave the room."),
     ("gen44", "Genesis", 44, "The silver cup is planted in Benjamin's sack and the brothers are overtaken on the road — chapter 37 rebuilt to specification: Rachel's favoured son condemned alone, and the other ten explicitly free to go home unharmed. Not one of them takes it. Then Judah steps forward and speaks for seventeen verses, the longest speech in Genesis, almost entirely in quotation of an old man's grief — and offers to stay a slave in the boy's place."),
+    ("gen45", "Genesis", 45, "Joseph clears the room and the restraint he has held for two chapters fails in a single clause — the Egyptians hear him weeping through the palace wall. \"I am Joseph. Is my father still alive?\" His brothers cannot answer; they are terrified. Then the sentence twenty-two years in arriving: \"it was not you who sent me here, but God\" — said nine words after \"whom you sold.\" And in Canaan an old man's heart goes numb, until he sees the wagons."),
     ("exod1", "Exodus", 1, "A family becomes a nation, a new king 'who did not know Joseph' enslaves them, and two midwives who feared God defy Pharaoh's order to kill the boys — the second book of the Bible opens."),
     ("exod2", "Exodus", 2, "Moses is born and floated on the Nile in an ark of papyrus, drawn out by Pharaoh's daughter; grown, he kills an Egyptian and flees to Midian, marries Zipporah — and God hears, remembers, sees, and knows."),
     ("exod3", "Exodus", 3, "The burning bush that is not consumed, holy ground, and the Name itself — 'I will be what I will be,' Jehovah, 'my name forever' — with the commission to Pharaoh and the promise of a land flowing with milk and honey."),
@@ -143,6 +144,7 @@ TEASERS_ES = {
     "gen39": "Abajo en Egipto, en casa de Potifar — y el narrador, que no nombró a Dios ni una vez mientras vendían a José, ahora lo dice cuatro veces.",
     "gen40": "El copero y el panadero sueñan la misma noche: «el faraón alzará tu cabeza» significa indulto para uno y horca para el otro.",
     "gen41": "El faraón sueña con siete vacas gordas y nadie sabe leerlo. José sale del pozo, dice «no yo», y acaba gobernando Egipto.",
+    "gen45": "José despide a todos y se quiebra: \u00abYo soy José. \u00bfVive a\u00fan mi padre?\u00bb Y luego: no fueron ustedes, sino Dios.",
     "gen44": "La copa de plata aparece en el saco de Benjamín y los otros diez quedan libres de marcharse. Ninguno lo hace. Y Judá habla.",
     "gen43": "Se acaba el grano y Jacob debe dejar ir a Benjamín. Judá se ofrece a sí mismo como fiador, y bajan con un regalo que ya hizo ese camino.",
     "gen42": "Diez hermanos se inclinan ante un gobernador al que no reconocen — y confiesan, sin saber que él entiende cada palabra: «somos culpables».",
@@ -453,6 +455,29 @@ def verse_url(book, ch, v):
     return f"{chapter_filename(book, ch)}#{verse_anchor(ch, v)}"
 
 
+# Which chapters actually have a page built. Library entries (encyclopedia,
+# dictionary, atlas) legitimately cite verses from chapters we have not
+# translated yet — a place's refs list is about the PLACE, not about our
+# publication schedule — so those citations must render as plain text rather
+# than as links to a 404. Adding a chapter to CHAPTERS turns every pending
+# citation of it into a live link automatically, with no data to go back and
+# edit. The site-wide dead-link check is what caught this: Goshen cites
+# Gen 46-47 and Exod 8-9, none of which exist yet.
+PUBLISHED_CHAPTERS = {(book, num) for _slug, book, num, _teaser in CHAPTERS}
+
+
+def chapter_published(book, ch):
+    return (book, ch) in PUBLISHED_CHAPTERS
+
+
+def ref_link(book, ch, v, label=None):
+    """A verse citation: a link if that chapter is published, plain text if not."""
+    label = label or f"{book_abbr(book)} {ch}:{v}"
+    if not chapter_published(book, ch):
+        return f'<span class="ref-unpub" title="not translated yet">{label}</span>'
+    return f'<a href="{verse_url(book, ch, v)}">{label}</a>'
+
+
 _YT_ID_RE = re.compile(r"(?:v=|youtu\.be/|embed/)([A-Za-z0-9_-]{11})")
 
 # YouTube video IDs whose owner has DISABLED embedding on third-party sites
@@ -640,9 +665,19 @@ def inject_xrefs(content, book, ch):
             continue
         chips = ""
         for (tb, tc, tv), why in links:
+            # A chip is nothing but a jump target, so an unpublished chapter gets
+            # skipped outright rather than rendered as plain text (which is right
+            # for an encyclopedia citation but useless here). XREFS may legitimately
+            # point forward — the payoff of an echo often lands chapters ahead of
+            # where it was planted — and the chip appears by itself once that
+            # chapter ships. Nothing to remember, nothing to go back and edit.
+            if not chapter_published(tb, tc):
+                continue
             lbl = f"{tc}:{tv}" if tb == book else f"{book_abbr(tb)} {tc}:{tv}"
             chips += (f'<a class="xref" href="{verse_url(tb, tc, tv)}" '
                       f'title="{html.escape(why, quote=True)}">⤷ {lbl}</a>')
+        if not chips:
+            continue
         block = f'<div class="xrefs"><span class="xr-label">cross-refs</span>{chips}</div>'
         content = content[:j] + block + content[j:]
     return content
@@ -746,7 +781,7 @@ def build_concordance(chapters):
             cur = L
         refs = index[w]
         links = " ".join(
-            f'<a href="{verse_url(b, c, v)}">{book_abbr(b)} {c}:{v}</a>' for b, c, v in refs)
+            ref_link(b, c, v) for b, c, v in refs)
         sections.append(
             f'<div class="cw"><span class="cw-w">{html.escape(w)}</span>'
             f'<span class="cw-n">×{len(refs)}</span>'
@@ -801,7 +836,7 @@ def build_encyclopedia():
     def render(entries):
         out = []
         for e in sorted(entries, key=lambda x: x["name"].lower()):
-            refs = " ".join(f'<a href="{verse_url(b, c, v)}">{book_abbr(b)} {c}:{v}</a>' for b, c, v in e["refs"])
+            refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
             if e.get("videos"):
                 vids = "".join(youtube_embed(u, t) for t, u in e["videos"])
             else:
@@ -905,6 +940,25 @@ _AQABA = [(29.53, 34.98), (29.10, 34.75), (28.60, 34.55), (28.10, 34.42), (27.80
           (27.75, 34.52), (28.05, 34.62), (28.55, 34.78), (29.05, 34.98), (29.53, 35.08)]
 
 
+# EGYPT. The basemap above is Levantine, which was fine until the first Egyptian
+# territory (Goshen) rendered as a dashed polygon floating in empty space — a map
+# of a river delta with no river and no sea on it. These are the fixed features
+# the Delta orients by, and Exodus will lean on them too.
+_EGYPT_COAST = [(31.20, 29.90), (31.42, 30.40), (31.45, 31.10), (31.52, 31.83),
+                (31.32, 32.20), (31.27, 32.35), (31.15, 32.60), (31.10, 33.10),
+                (30.95, 33.60), (30.85, 34.00)]
+# The Nile up to the Delta apex just north of Cairo, then its two surviving
+# branches (Rosetta west, Damietta east). The Pelusiac branch that mattered most
+# in antiquity has silted up entirely and is left off — drawing a channel that no
+# longer exists as though it were as certain as the other two would be a lie of
+# exactly the kind these maps are supposed to avoid.
+_NILE = [(29.30, 31.20), (29.70, 31.25), (30.05, 31.23), (30.35, 31.15)]
+_NILE_ROSETTA = [(30.35, 31.15), (30.70, 30.95), (31.05, 30.65), (31.42, 30.40)]
+_NILE_DAMIETTA = [(30.35, 31.15), (30.70, 31.35), (31.05, 31.60), (31.52, 31.83)]
+_BITTER_LAKES = [(30.40, 32.33), (30.22, 32.44), (30.02, 32.48), (29.95, 32.40),
+                 (30.15, 32.34), (30.32, 32.27)]
+
+
 def _region_geo(pts, margin=0.55, inner_w=760.0, pad=40.0,
                 min_aspect=1.15, max_aspect=2.40):
     """Same equirectangular + cos(lat) projection as the routes map, but framed
@@ -994,6 +1048,8 @@ def render_region_map(region, others=()):
         parts.append(f'<text x="5" y="{y-3:.1f}" class="rg-tick">{lat}°N</text>')
 
     # basemap: the things that don't move
+    if visible(_EGYPT_COAST):
+        parts.append(f'<path d="{_path(proj, _EGYPT_COAST)}" class="reg-coast"/>')
     if visible(_COAST):
         parts.append(f'<path d="{_path(proj, _COAST)}" class="reg-coast"/>')
         clat, clon = _COAST[len(_COAST) // 2]
@@ -1003,6 +1059,7 @@ def render_region_map(region, others=()):
                 parts.append(f'<text x="{cx-8:.1f}" y="{cy:.1f}" class="reg-sea" text-anchor="end">Great Sea</text>')
     for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)),
                                 (_AQABA, "Gulf of Aqaba", (28.55, 34.62)),
+                                (_BITTER_LAKES, "Bitter Lakes", (30.18, 32.40)),
                                 (_GALILEE, None, None)):
         if visible(poly):
             parts.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
@@ -1010,11 +1067,12 @@ def render_region_map(region, others=()):
                 lx, ly = proj(*anchor)
                 if clear(lx, ly, w=len(label) * 5.6):
                     parts.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
-    for line, label in ((_JORDAN, "Jordan"), (_ARABAH, "the Arabah")):
+    for line, label in ((_JORDAN, "Jordan"), (_ARABAH, "the Arabah"),
+                        (_NILE, "the Nile"), (_NILE_ROSETTA, None), (_NILE_DAMIETTA, None)):
         if visible(line):
             parts.append(f'<path d="{_path(proj, line)}" class="reg-river"/>')
             mlat, mlon = line[len(line) // 2]
-            if inframe(mlat, mlon):
+            if label and inframe(mlat, mlon):
                 mx, my = proj(mlat, mlon)
                 if clear(mx + 30, my, w=len(label) * 5.6):
                     parts.append(f'<text x="{mx+6:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
@@ -1212,7 +1270,7 @@ def build_atlas():
             place_html = []
             for pslug, _first_v in entries:
                 e = _SLUG_TO_ENTRY[pslug]
-                refs = " ".join(f'<a href="{verse_url(b, c, v)}">{book_abbr(b)} {c}:{v}</a>' for b, c, v in e["refs"])
+                refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
                 if e.get("coords"):
                     lat, lon, span = e["coords"]
                     badge = ' <span class="atlas-approx">approximate</span>' if e.get("approx") else ""

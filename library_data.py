@@ -231,6 +231,14 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("michyah", "michyah", "מִחְיָה", "le-michyah",
+     "PRESERVATION OF LIFE, sustenance — from CHAYAH, to live: literally 'a means of staying alive.' It is the first of the three salvation words Joseph piles up when he finally explains himself: 'God sent me before you LE-MICHYAH — to preserve life' (45:5). The same root closes the chapter, when the wagons are seen and 'the SPIRIT OF JACOB REVIVED' (vatechi ruach, 45:27) — the man who insisted he would go down to Sheol mourning comes back to life in a clause. KJV 'to preserve life'; ASV the same.", (45, 5)),
+    ("sheerit", "she'erit", "שְׁאֵרִית", "she'erit",
+     "A REMNANT — what is LEFT OVER, from a root meaning to remain. Joseph uses it of a family of seventy people: 'God sent me before you to set for you a SHE'ERIT in the land' (45:7). The scale is domestic and the vocabulary is national — this is the word the prophets will spend centuries using for the surviving fragment of Israel after catastrophe (Isaiah 10:20-22; Jeremiah 23:3; Micah 2:12). Genesis plants it here, in a private room, describing a rescue nobody outside that room knows happened. KJV 'to preserve you a posterity in the earth'; ASV and ESV keep 'remnant.'", (45, 7)),
+    ("peletah", "peletah", "פְּלֵיטָה", "li-fletah gedolah",
+     "ESCAPE, DELIVERANCE — and by extension those who escape, the survivors; from PALAT, to slip away to safety. Joseph's third salvation word in three verses: 'to keep you alive LI-FLETAH GEDOLAH — for a great deliverance' (45:7). This translation keeps MICHYAH, SHE'ERIT and PELETAH as three distinct words rather than merging them into a single 'to save your lives,' because Joseph is deliberately stacking them: life preserved, a remnant set in place, an escape on a large scale. KJV 'to save your lives by a great deliverance'; the ESV flattens toward sense with 'to keep alive for you many survivors.'", (45, 7)),
+    ("ragaz", "ragaz", "רָגַז", "al tirgezu",
+     "To TREMBLE, be stirred up, be agitated — and, by an easy extension, to QUARREL. Joseph's last words to his brothers as they leave for Canaan: 'AL TIRGEZU BA-DEREKH — do not be agitated on the way' (45:24). The range is the whole interest. Read one way it is reassurance: don't be afraid, nothing will happen to you. Read the other it is a warning he has good reason to give — don't spend the entire journey arguing about whose idea the pit was; the old Jewish reading, and the one behind KJV's 'see that ye fall not out by the way.' NIV and ESV both choose 'quarrel'; NWT 'do not get upset.' This translation keeps AGITATED, which is where the Hebrew sits, and leaves the reader holding both.", (45, 24)),
     ("avon", "avon", "עָוֺן", "avon",
      "GUILT, iniquity — from a root meaning to bend or twist; the heaviest of the Hebrew words for wrongdoing, naming not a single act but the crookedness a person carries, and the liability that comes with it. It is the word in Judah's extraordinary answer when the cup is found in Benjamin's bag: 'God has found out the AVON of your servants' (44:16). They are innocent of the theft and Judah knows it — he is confessing something else entirely, twenty-two years old, to the one man in the room who knows exactly what he means. KJV 'God hath found out the iniquity of thy servants.'", (44, 16)),
     ("arav", "arav", "עָרַב", "e'ervennu",
@@ -1778,7 +1786,7 @@ ENCYCLOPEDIA = [
               "signet ring, the fine linen, the gold collar of honour, the second chariot, and a state grain "
               "administration — all attested Egyptian court practice. Genesis knows the country it is "
               "describing, whatever century it is describing.",
-         refs=[(37, 36), (39, 1), (40, 2), (41, 1), (41, 38), (41, 41)], videos=[]),
+         refs=[(37, 36), (39, 1), (40, 2), (41, 1), (41, 38), (41, 41), (42, 15), (44, 18), (45, 2)], videos=[]),
     dict(slug="asenath", name="Asenath", kind="person", aliases=["Asenath"],
          desc="The Egyptian wife Pharaoh gives Joseph — 'daughter of Potiphera priest of ON' (41:45) — and so "
               "the mother of Manasseh and Ephraim, which means two of Israel's twelve tribes descend from an "
@@ -1895,6 +1903,24 @@ ENCYCLOPEDIA = [
          refs=[(38, 14), (38, 21)], videos=[]),
 
     # ---- Genesis 37 ----
+    dict(slug="goshen", name="Goshen", kind="place", aliases=["Goshen", "land of Goshen"],
+         coords=(30.75, 31.90, 1.05), approx=True,
+         modern="Eastern Nile Delta, Egypt — the Wadi Tumilat and the country around Tell el-Dab'a (Avaris)",
+         desc="The district of the eastern NILE DELTA that Joseph gives his family to live in (45:10), and the "
+              "address of Israel for the next four hundred years. Its qualifications are practical and the text "
+              "says so: good pasture for flocks and herds, and 'near to me' — close enough to the seat of "
+              "government to be provisioned through five more years of famine. It is also, crucially, at the "
+              "EDGE. Goshen sits in the Delta's eastern reach, toward Canaan and slightly outside Egypt proper, "
+              "which is why a family of shepherds can settle there and stay a distinct people rather than being "
+              "absorbed — and Genesis 46:34 makes the separation explicit and mutual: 'every shepherd is an "
+              "abomination to Egypt.' ⚠️ The exact boundaries are not recoverable. The name is not Egyptian and "
+              "appears in no Egyptian text; the identification with the Wadi Tumilat and the region around "
+              "Tell el-Dab'a (ancient Avaris, a Semitic settlement in exactly this area in the Middle Bronze "
+              "Age) is a reasonable inference from the biblical geography plus the archaeology, not a "
+              "documented match. What the text is clear about is the shape of the story: the same ground that "
+              "receives them as honoured guests of the vizier holds them as slaves in Exodus 1, and it is from "
+              "here that they leave.",
+         refs=[(45, 10), (46, 28), (47, 6), (47, 27), ("Exodus", 8, 22), ("Exodus", 9, 26)]),
     dict(slug="dothan", name="Dothan", kind="place", aliases=["Dothan"],
          desc="The grazing town where Joseph finally found his brothers — and was stripped, thrown into a dry "
               "cistern, and sold (37:17-28). It is a real and well-identified site: TELL DOTHAN, about thirteen "
@@ -2168,6 +2194,18 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 45 ----
+    ((45, 1),  (43, 31), "'could no longer hold himself in' — the same verb (hit'appeq) he used to get through the meal in ch. 43, now negated: the restraint finally fails"),
+    ((45, 4),  (37, 28), "'whom you sold into Egypt' — the act named plainly, to their faces, twenty-two years later"),
+    ((45, 4),  (40, 15), "contrast: telling the cupbearer, he said only 'I was stolen away' — a sentence with the criminals left out of it"),
+    ((45, 8),  (50, 20), "'it was not you who sent me here, but God' — the first half of the verdict that closes the book: 'you meant evil against me, but God meant it for good'"),
+    ((45, 12), (42, 23), "'it is my mouth speaking to you' — the interpreter of 42:23, who existed because Joseph was pretending not to understand Hebrew, is gone"),
+    ((45, 22), (37, 3),  "five changes of garments to Rachel's other son, in front of the same ten men — the coat, again"),
+    ((45, 24), (37, 26), "'do not be agitated on the way' — with, on the old reading, a specific quarrel in mind: whose idea the pit was"),
+    ((45, 26), (37, 32), "'he did not believe them' — the last thing these men brought their father was a bloodied coat and an invitation to draw his own conclusion"),
+    ((45, 27), (37, 35), "'the spirit of Jacob revived' — the man who said he would go down to Sheol mourning his son"),
+    ((45, 28), (46, 3),  "'let me go and see him before I die' — and God will meet him at Beersheba to promise the journey is safe"),
+
     # ---- Exodus 1 ----
     (("Exodus", 1, 7),  (1, 28), "the creation blessing — 'be fruitful and multiply and fill' — fulfilled at full volume on a slave people; sharats, 'swarm,' is the creation-word"),
     (("Exodus", 1, 13), (15, 13), "the affliction God foretold to Abraham at the covenant of the pieces: 'your seed will be sojourners… and they will afflict them'"),
@@ -2644,6 +2682,10 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    (45, 3, "“I am Joseph. Is my father still alive?” — and his brothers could not answer him."),
+    (45, 8, "“It was not you who sent me here, but God” — said nine words after “whom you sold.” Both are true."),
+    (45, 24, "“Do not be agitated on the way.” The last thing he says to them, and it may mean: don't spend the trip arguing about whose fault it was."),
+    (45, 28, "“Enough! Joseph my son is still alive.” An old man stops asking questions and starts packing."),
     (1, 1, "The opening line — the whole project starts here."),
     (1, 3, "The first command in the Bible, and the first thing it does is make light."),
     (1, 27, "Male and female both, equally, in the image of God."),
@@ -2833,6 +2875,24 @@ REGIONS = [
                 "and southern half. Its western edge (the Jordan) is exact; its eastern edge dissolves "
                 "into the desert."),
 
+    dict(slug="goshen", name="Goshen", ref=(45, 10),
+         blurb="The corner of the eastern Nile Delta Joseph gives his family — good pasture, close to the "
+               "government, and just far enough out of Egypt proper to stay a separate people.",
+         boundary=[(30.30, 31.55), (30.35, 32.35), (30.60, 32.45), (30.95, 32.30),
+                   (31.15, 32.00), (31.20, 31.60), (31.00, 31.30), (30.65, 31.25)],
+         sites=[(30.79, 31.82, "Tell el-Dab'a (Avaris)"),
+                (30.55, 32.05, "Wadi Tumilat"),
+                (30.57, 31.51, "Bubastis")],
+         caveat="Drawn approximately, and it has to be. GOSHEN is not an Egyptian word and appears in no "
+                "Egyptian text \u2014 there is no ancient map, boundary stone or administrative list to copy "
+                "from. What can be reconstructed is a general area rather than a border: the Bible places it "
+                "in the eastern Delta, on the road to Canaan (46:28-29), with pasture good enough for large "
+                "flocks and near enough to the seat of government to be provisioned through a famine. The "
+                "Wadi Tumilat \u2014 the fertile east-west corridor running from the Delta toward the "
+                "Bitter Lakes \u2014 fits all three, and Tell el-Dab'a at its north-west end was a genuine "
+                "Semitic settlement in exactly this region in the Middle Bronze Age. The outline shown is "
+                "that reasoning, not a documented frontier.",
+         ),
     dict(slug="midian", name="Midian", ref=(25, 2),
          blurb="The desert country of Abraham's sons by Keturah — caravan people east of the Gulf of Aqaba, "
                "and the land Moses will flee to and marry into.",
