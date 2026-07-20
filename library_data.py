@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("goel", "go'el", "גֹּאֵל", "ha-go'el",
+     "REDEEMER — one who BUYS BACK. GA'AL is not a religious abstraction but a family obligation in Israelite law: the go'el is the nearest kinsman with both the standing and the duty to recover what a relative has lost — to buy back sold land, to ransom a relative sold into servitude, to marry a childless widow, to avenge a killing (Leviticus 25:25-55; Numbers 35). Its FIRST occurrence in the Bible is here, in a blessing over two boys: 'the angel who has REDEEMED me from all evil' (48:16). Jacob places it in apposition with 'the God who has shepherded me' — whether identifying the angel WITH God or distinguishing him from God is grammatically open, and readers have gone both ways for two thousand years. The word goes on to carry Boaz in Ruth, the jubilee laws, and a great deal of Isaiah. KJV 'the Angel which redeemed me from all evil.'", (48, 16)),
+    ("sikkel", "sikkel", "שִׂכֵּל", "sikkel et yadav",
+     "He CROSSED his hands — KNOWINGLY. The word every translation renders 'crossed' is the piel of SAKAL, whose entire family of meanings is about insight, prudence and acting with understanding; it is not the ordinary Hebrew word for crossing anything. At the exact moment Jacob's arms go over each other to put his right hand on the younger boy's head, the narrator chooses a verb meaning TO DO A THING ADVISEDLY (48:14) — so the crossing and the knowing are one act in one word, and you are told the answer before Joseph objects. The KJV caught it and has never been bettered: 'guiding his hands wittingly'; ASV the same. Modern versions (ESV 'crossing his hands,' NIV 'crossing his arms') are accurate about the gesture and lose the deliberateness entirely. Three verses later Jacob says it in plain words: 'I know, my son, I know.'", (48, 14)),
     ("megurim", "megurim", "מְגוּרִים", "megurai",
      "SOJOURNINGS — the time spent living somewhere as a resident alien, from GUR, 'to reside as a stranger.' A GER is a foreigner lawfully present but landless: protected, tolerated, and holding no title to the ground under him. Pharaoh asks Jacob how many are the days of his LIFE; Jacob answers about the days of his MEGURIM (47:9), and then extends the word to his fathers as well. Standing in the richest country on earth, having just been handed its best province, he describes three generations as people who never owned anywhere — which is the patriarchal story in a single word, said to a man who owns everything he can see. The one piece of ground they do own is a grave (23:9). KJV 'the days of the years of my pilgrimage.'", (47, 9)),
     ("chomesh", "chomesh", "חֹמֶשׁ", "la-chomesh",
@@ -2202,6 +2206,18 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 48 ----
+    ((48, 3),  (35, 11), "El Shaddai at Luz — Jacob quotes the Bethel promise back before he uses it to adopt"),
+    ((48, 5),  (35, 22), "'like Reuben and Simeon' — the double portion Reuben forfeited, reassigned to Joseph through his two sons"),
+    ((48, 7),  (35, 19), "Rachel's grave on the road to Ephrath, remembered sixty years later in the middle of a legal document"),
+    ((48, 8),  (27, 18), "'Who are these?' — the last blind father in this book blessing two brothers was Isaac, and Jacob was the one lying to him"),
+    ((48, 14), (25, 23), "the younger over the elder, a fourth time — and the only time it happens in the open, with nobody deceived"),
+    ((48, 16), (32, 30), "'the angel who has redeemed me from all evil' — the first ga'al in the Bible, from a man who wrestled one at the Jabbok"),
+    ((48, 19), (37, 9),  "'I know, my son, I know' — a father overruling Joseph on precedence, to the face of the dreamer of precedence"),
+    ((48, 21), (46, 4),  "'God will bring you back' — plural: the Beersheba promise handed on as Jacob's last word to Joseph"),
+    ((48, 22), (33, 19), "the ground at Shechem Jacob is recorded as BUYING, not taking 'with my sword and with my bow'"),
+    ((48, 22), (34, 25), "the only violence at Shechem in this book is Simeon and Levi's — which Jacob condemned, and curses one chapter later"),
+
     # ---- Genesis 47 ----
     ((47, 3),  (46, 34), "the coached script delivered word for word — 'shepherds, both we and our fathers' — and it works: Goshen is granted"),
     ((47, 9),  (23, 9),  "'the days of my sojournings' — three generations who owned one piece of ground in Canaan, and it was a grave"),
@@ -2715,6 +2731,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    (48, 14, "“He crossed his hands knowingly.” The Hebrew verb for crossing is the verb for acting with insight — the gesture and the intent are one word."),
+    (48, 16, "“The angel who has redeemed me from all evil.” The first time the Bible uses its word for a redeemer, and it is a grandfather blessing two boys."),
+    (48, 19, "“I know, my son, I know.” The man who once deceived a blind father, now blind, refusing to be corrected."),
     (47, 9, "“Few and evil have been the days of the years of my life.” He is 130, and he calls it few."),
     (47, 25, "“You have kept us alive!” — said gratefully, by people who have just sold themselves into servitude."),
     (47, 27, "“And they were fruitful and multiplied greatly.” The creation blessing, in the same chapter Egypt loses everything."),
