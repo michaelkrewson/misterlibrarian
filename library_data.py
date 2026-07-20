@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("chashav", "chashav", "חָשַׁב", "chashavtem / chashavah",
+     "To DEVISE, plan, reckon, intend — the verb of deliberate purpose (it is also the word for accounting: to reckon something to someone's account, as at 15:6, 'he reckoned it to him as righteousness'). Genesis 50:20 uses it TWICE, of two different agents, over one event: 'you CHASHAV evil against me; God CHASHAV it for good.' \u26a0\ufe0f Notice what the sentence does not say. It does not say the evil was secretly good; the object of the first verb is RA'AH, evil, flatly. It does not deny they did it — three verses earlier their own message calls it 'the transgression of your brothers and their sin.' And it does not say God made them do it. Two agents, one event, opposite intentions, both intentions real. It is the fully developed form of what Joseph said in the heat of the reveal at 45:8 ('it was not you who sent me here, but God'), now restated with the guilt left in. KJV 'ye thought evil against me; but God meant it unto good.'", (50, 20)),
+    ("aron", "aron", "אָרוֹן", "ba-aron",
+     "A CHEST, box, or coffer — and the last noun in the book of Genesis. 'They embalmed him, and he was put BA-ARON BE-MITZRAYIM' (50:26): in a coffin, in Egypt. \u26a0\ufe0f It is the same ordinary word that will later name the ARK OF THE COVENANT, the chest carried through the wilderness and into the land — so the container that ends Genesis and the container at the centre of Israel's worship are called the same thing. A book that opens 'in the beginning God created the heavens and the earth' closes on an embalmed man in a box, and the final Hebrew word is the name of the wrong country. Nothing promised has arrived: the land is a grave-plot, the nation is seventy people in a border province. The ending is not a resolution, and is not meant to be one.", (50, 26)),
     ("acharit-hayamim", "acharit ha-yamim", "אַחֲרִית הַיָּמִים", "be-acharit ha-yamim",
      "THE LATTER DAYS — literally 'the AFTER of the days': the far end of things, what lies at the horizon of what is coming. Its first occurrence is Jacob summoning his sons (49:1) to hear what will happen to them BE-ACHARIT HA-YAMIM. \u26a0\ufe0f The phrase does NOT by itself mean 'the end of the world.' In the prophets it can mean anything from 'later on' to a genuinely final horizon, and later readers — Jewish and Christian — took it as a technical term for the eschaton and read Genesis 49 accordingly. Here it introduces a poem about tribal territories, forced labour and roadside ambushes, so the reach of the phrase is exactly what is in dispute. KJV 'in the last days'; ESV 'in days to come.' This translation renders it plainly and leaves the distance open.", (49, 1)),
     ("shiloh", "shiloh", "שִׁילֹה", "ad ki yavo shiloh",
@@ -2210,6 +2214,18 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 50 ----
+    ((50, 5),  (47, 29), "the oath under the thigh, discharged — with an Egyptian state cortege as escort"),
+    ((50, 8),  ("Exodus", 1, 8), "'only their little ones… they left in the land of Goshen' — hostages in all but name, and the first chill of Exodus 1"),
+    ((50, 13), (23, 16), "Machpelah, bought from Ephron — used for the fourth and last time in the book"),
+    ((50, 17), (37, 24), "'the transgression of your brothers and their sin' — the pit, named at last, in a message their father probably never sent"),
+    ((50, 18), (37, 7),  "the dream of brothers bowing, completed — and the dreamer refuses to enjoy it"),
+    ((50, 19), (30, 2),  "'am I in the place of God?' — Jacob threw the same phrase at Rachel in anger; Joseph uses it to decline a power he actually holds"),
+    ((50, 20), (45, 8),  "'it was not you who sent me here, but God' restated more carefully, with the guilt left in"),
+    ((50, 20), (45, 5),  "'to keep a numerous people alive' — the michyah root a third time, each time survival somebody paid for"),
+    ((50, 24), ("Exodus", 3, 16), "'God will surely visit you' — quoted back at the burning bush, four hundred years later"),
+    ((50, 25), (47, 30), "Joseph asks for what his father asked for, and stakes his body on a promise he will not see kept"),
+
     # ---- Genesis 49 ----
     ((49, 4),  (35, 22), "'you went up to your father's bed' — the one flat verse where 'Israel heard,' answered roughly forty years later"),
     ((49, 7),  (34, 25), "'cursed be their anger' — Shechem condemned at last on moral grounds, not the prudential ones he used at the time"),
@@ -2747,6 +2763,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    (50, 17, "“And Joseph wept when they spoke to him.” Seventeen years on, his brothers still think he might kill them. That is what he weeps at."),
+    (50, 20, "“You devised evil against me; God devised it for good.” One verb, two agents, both intentions real — and the guilt left in."),
+    (50, 26, "“And he was put in a coffin in Egypt.” The last words of Genesis. Nothing promised has arrived yet."),
     (49, 10, "“The sceptre shall not depart from Judah.” The most disputed line in Genesis — four readings, and the note takes no vote."),
     (49, 18, "“For your salvation I have waited, Jehovah.” A dying man stops mid-prophecy, halfway down the list of his sons, and prays."),
     (49, 31, "“And there I buried Leah.” Genesis never told us she died. He asks to be laid beside her."),
