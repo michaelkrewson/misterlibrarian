@@ -229,6 +229,16 @@ DICTIONARY = [
      "The Hebrew realm of the dead — down, dark, silent — appearing here for the FIRST time in the Bible, in Jacob's 'I will go down to my son, mourning, to Sheol' (37:35). Crucially, everyone goes there: righteous and wicked alike, with no second word set against it. It is not a place of punishment, and the Hebrew Bible offers no rival destination. The KJV renders it 'the grave' here, but 'hell' in thirty-one other places and 'the pit' in three — so an English reader cannot tell that Jacob, Job, David and Isaiah are discussing one thing, and would reasonably conclude the patriarch expects the grave while the wicked go elsewhere. That is a doctrine assembled out of an inconsistent gloss. The Douay, following the Vulgate's infernum, prints 'into hell' right here — a patriarch expecting to join his beloved son there. The ASV and NWT both simply transliterate, 'Sheol,' declining to settle by translation what the Hebrew leaves open; this translation follows them on the merits — the same principle as 'vault' for raqia and 'side' for tsela.", (37, 35)),
     ("saq", "saq", "שַׂק", "saq",
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
+    ("yabam", "yabbem", "יַבֵּם", "yabbem",
+     "To DO THE DUTY OF A BROTHER-IN-LAW — one Hebrew verb, built from yabam, 'a husband's brother.' When a man died childless his brother was to marry the widow, and their first son counted as the dead man's, so his name was not blotted out and the widow was not left destitute (38:8). Genesis shows the custom already operating two centuries before Deuteronomy 25:5-10 writes it into law — including the shaming ceremony for a brother who refuses. Everything in Genesis 38 turns on that refusal: Onan takes the marriage and withholds the duty, and Judah then withholds Shelah. The institution drives the whole book of Ruth, where Boaz performs the nearer kinsman's declined obligation. KJV 'perform the duty of an husband's brother unto her'; NWT 'perform brother-in-law marriage with her.'", (38, 8)),
+    ("zonah", "zonah", "זוֹנָה", "zonah",
+     "A PROSTITUTE — the plain, ordinary word (from zanah, to be unfaithful, to whore), used both literally and, all through the prophets, as the standing metaphor for Israel's unfaithfulness. It is what the narrator says Judah took Tamar to be (38:15) — and pointedly NOT the word his friend Hirah uses in public two verses later; see qedeshah. KJV 'harlot' for both, which loses the difference entirely.", (38, 15)),
+    ("qedeshah", "qedeshah", "קְדֵשָׁה", "qedeshah",
+     "A CONSECRATED WOMAN — from qadosh, 'holy,' the same root as sanctuary and saint. Traditionally understood as a cult or shrine prostitute attached to a temple, though the evidence outside the Bible is thinner and more disputed than confident commentaries admit, and some scholars doubt the institution existed in the form usually described. What is beyond dispute is the social register in Genesis 38: the narrator calls the veiled woman a zonah, a common prostitute (38:15), but when Hirah has to ask the locals for directions on his friend's behalf he says qedeshah (38:21) — the dignified term. The shelf splits four ways: KJV flattens both to 'harlot'; NIV 'shrine prostitute' and NWT 'temple prostitute' commit to the cultic reading; ASV keeps a distinction and flags the Hebrew in the margin. This translation renders 'consecrated woman' — near what the word says, without settling an institution the evidence won't settle.", (38, 21)),
+    ("tsadaq", "tsadaq", "צָדַק", "tsadqah",
+     "To BE IN THE RIGHT, be righteous — the root of tsedaqah, 'righteousness,' the noun 'counted' to Abram when he believed (15:6). Its most startling appearance is Judah's confession: tsadqah mimmenni, 'she is more righteous than I' (38:26) — the comparative form, spoken in public by a patriarch about the Canaanite widow who tricked him, and the first honest sentence he speaks in the Bible. The same root gives Noah his description ('a righteous man,' 6:9) and Abraham his argument at Sodom ('will you sweep away the righteous with the wicked?', 18:23).", (38, 26)),
+    ("perets", "perets", "פֶּרֶץ", "perets",
+     "A BREACH — a gap burst through a wall; from parats, to break out. The midwife's cry at the birth of Judah's twin is a pun on the name she is giving him: 'How you have BROKEN OUT (paratsta) — a breach (perets) upon you!' (38:29). It sounds like dismay and is kept as a name. Perez matters far past this chapter: Ruth closes by tracing 'the generations of Perez' ten names down to DAVID (Ruth 4:18-22), and Matthew opens the New Testament with the same line, naming 'Perez and Zerah by Tamar' (Matthew 1:3). KJV spells him Pharez, Douay (through the Greek) Phares.", (38, 29)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
      "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
     ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
@@ -1698,6 +1708,67 @@ ENCYCLOPEDIA = [
               "word no one can quite translate (36:24).",
          refs=[(36, 20), (36, 21)], videos=[]),
 
+    # ---- Genesis 38 ----
+    dict(slug="tamar", name="Tamar", kind="person", aliases=["Tamar"],
+         desc="Judah's daughter-in-law — widowed twice by his sons Er and Onan, then left in limbo when Judah "
+              "withheld his third son Shelah, the levirate duty that was her only route to a future. She takes "
+              "it by stratagem: veiled at the roadside on the Timnah road, she is taken by Judah for a "
+              "prostitute, and secures as his pledge the seal, cord and staff that are his identity. Three "
+              "months later, sentenced by him to be burned, she returns them with two words — 'RECOGNIZE, "
+              "PLEASE' — the exact phrase Judah had used to make his own father identify Joseph's bloodied "
+              "tunic. Judah's answer is the hinge of his life: 'She is more righteous than I' (38:26). "
+              "Genesis never calls her righteous in its own voice; it has the patriarch do it, in public, and "
+              "leaves the sentence standing. Her twins are Perez and Zerah — and the line of Perez runs to "
+              "David (Ruth 4:18-22) and into the opening paragraph of the New Testament, where Matthew names "
+              "her: 'Perez and Zerah by Tamar' (Matthew 1:3), one of only four women in that genealogy. "
+              "⚠️ Not the same Tamar as David's daughter (2 Samuel 13), though the two stories share a word — "
+              "the ketonet passim, the ornamented tunic.",
+         refs=[(38, 6), (38, 14), (38, 25), (38, 26)], videos=[]),
+    dict(slug="onan", name="Onan", kind="person", aliases=["Onan"],
+         desc="Judah's second son, who married his brother Er's widow Tamar under the levirate custom and then "
+              "refused its purpose — 'he knew that the offspring would not be his,' and so withheld it 'so as "
+              "not to give offspring to his brother' (38:9). The chapter states the charge plainly and it is a "
+              "property calculation: Er's death had made Onan heir, and a son credited to Er would displace "
+              "him, so he took the marriage and cheated the dead man's name. ⚠️ The English word 'onanism' is a "
+              "much later coinage that reads a different offence back into the verse; older Jewish and "
+              "Christian commentators argued that reading at length, but it is theirs, not the text's — "
+              "Genesis says what Onan withheld, and from whom.",
+         refs=[(38, 4), (38, 8), (38, 9)], videos=[]),
+    # ⚠️ NO "Zerah" alias: Genesis 36 has an Edomite Zerah (36:13, 17, 33) and a
+    # bare alias here wrongly linked HIM to Judah's son. Zerah goes unlinked; the
+    # entry covers him and is reachable from Perez.
+    dict(slug="perez", name="Perez", kind="person", aliases=["Perez"],
+         desc="The elder of Judah and Tamar's twins, named for the midwife's startled pun — 'how you have "
+              "BROKEN OUT, a breach (perets) upon you!' — after his brother Zerah's hand appeared first, was "
+              "marked with a scarlet thread, and withdrew (38:27-30). One more firstborn in this book who "
+              "isn't. The name outlives the joke: Ruth ends by tracing 'the generations of Perez' ten "
+              "names down to DAVID (Ruth 4:18-22), and Matthew opens the New Testament with the same line "
+              "(Matthew 1:3). So the royal and messianic descent runs not through the son Judah protected nor "
+              "the marriage he arranged, but through the widow he wronged. KJV spells him Pharez; Douay, "
+              "through the Greek, Phares.",
+         refs=[(38, 29), (38, 30)], videos=[]),
+    dict(slug="adullam", name="Adullam", kind="place", aliases=["Adullam", "Adullamite"],
+         desc="The town in the Judean lowlands (the Shephelah) where Judah 'went down' and took up with Hirah, "
+              "his friend and go-between in the affair with Tamar (38:1, 12, 20). Identified with Tell "
+              "esh-Sheikh Madhkur, in the hill country between the coastal plain and Hebron. Its cave will "
+              "later shelter DAVID — a descendant of the twins conceived in this chapter — when he flees Saul "
+              "and four hundred desperate men gather to him there (1 Samuel 22:1-2).",
+         coord=(31.6497, 34.9569), refs=[(38, 1), (38, 12)], videos=[]),
+    dict(slug="timnah", name="Timnah", kind="place", aliases=["Timnah"],
+         desc="The town Judah went up to for his sheepshearing — a festival occasion — and on whose road Tamar "
+              "took her seat (38:12-14). Usually identified with Tel Batash in the Sorek valley, excavated and "
+              "occupied through the Bronze and Iron Ages. A Timnah is also where Samson finds his Philistine "
+              "wife and kills a lion (Judges 14), though whether it is the same town is disputed.",
+         coord=(31.7842, 34.9161), approx=True, refs=[(38, 12), (38, 13), (38, 14)], videos=[]),
+    dict(slug="enaim", name="Enaim", kind="place", aliases=["Enaim"],
+         desc="The place on the Timnah road where Tamar sat veiled — and the site of one of the Bible's driest "
+              "jokes. The Hebrew petach einayim is 'the entrance of Enaim,' a real town; but einayim is also "
+              "the ordinary word for EYES, so the phrase reads simultaneously as 'the Opening of the Eyes.' "
+              "She takes her seat at Eyes-Open, and the very next verse is 'he did not know that she was his "
+              "daughter-in-law' (38:14-16). The KJV misses both, reading 'in an open place'; ASV and NIV "
+              "recover the town. Its exact location is unknown — somewhere between Adullam and Timnah.",
+         refs=[(38, 14), (38, 21)], videos=[]),
+
     # ---- Genesis 37 ----
     dict(slug="dothan", name="Dothan", kind="place", aliases=["Dothan"],
          desc="The grazing town where Joseph finally found his brothers — and was stripped, thrown into a dry "
@@ -2088,6 +2159,17 @@ XREFS = [
     ((33, 3),  (27, 29), "Jacob bowed to the ground seven times — the man whom the stolen blessing had made lord, 'let your brothers bow down to you' (27:29), now on his face before the brother he cheated"),
     ((33, 19), (12, 7),  "Jacob buys land and builds an altar at Shechem — at the very tree of Moreh where Abraham built his FIRST altar in Canaan (12:6-7); the grandson claims the same ground with the second parcel a patriarch has ever owned in the land"),
 
+    # ---- Genesis 38 ----
+    ((38, 25), (37, 32), "haker-na, 'recognize, please' — Judah and his brothers sent their father a bloodied tunic with these two words; Tamar sends Judah his own seal and staff with the same two. He is answered in his own sentence, and the props rhyme: a garment and a goat used to make a father believe a lie, a seal and a staff used to make a son admit a truth"),
+    ((38, 16), (27, 23), "'he did not know that she was his daughter-in-law' — the third turn of nakar in three generations: Isaac did NOT recognize the son in front of him, Jacob DID recognize a coat that was lying to him, and Judah recognizes only what carries his own signature"),
+    ((38, 17), (37, 31), "a kid of the goats — the family's instrument of deception offered as a fee. His brothers slaughtered a goat to soak Joseph's tunic; his father wore goatskins to rob a blind man (27:16); Judah walks into a deception on the very animal he has used to run one"),
+    ((38, 12), (37, 35), "nacham — Jacob 'REFUSED to be comforted' for the son Judah sold; eleven verses later Judah buries a wife, 'was comforted,' and goes up to a sheepshearing. The narrator sets the same verb on both men and says nothing"),
+    ((38, 14), (24, 65), "the veil — Rebekah covered herself when she first saw Isaac; Leah's wedding-night substitution (29:25) only works because a bride's face is hidden. This house knows exactly what a veil is for"),
+    ((38, 26), (15, 6), "tsedaqah, 'righteousness' — the word counted to Abram when he believed is now spoken by a patriarch, in public, about the Canaanite widow who tricked him: 'she is more righteous than I'"),
+    ((38, 9),  (6, 11), "shichet, to RUIN — the flood's own verb (the earth was ruined, so God resolved to ruin it) used of what Onan does on the ground; this translation keeps the root audible in both places"),
+    ((38, 29), (25, 26), "twins struggling over who comes out first — Jacob was born gripping Esau's heel, having lost that race; here even the midwife's scarlet marker cannot make the birth-order hold"),
+    ((38, 18), ("Jeremiah", 22, 24), "the chotam, a signet — Judah hands his over to a stranger as a pledge and nearly loses it for good; Jeremiah's Coniah IS the signet, torn off God's right hand and thrown away"),
+
     # ---- Genesis 37 ----
     ((37, 13), (22, 1),  "hineni, 'Here I am' — the answer of total availability, spoken at the book's two darkest hinges: Abraham at the Aqedah, and now a beloved son sent by his father toward a death the reader can already see. At Moriah a voice from heaven stopped the knife; in Genesis 37 God is not named once"),
     ((37, 1),  (23, 4),  "'the land of his father's sojournings' — megurim, from ger: Jacob SETTLES in a land of not-settling, the same ache as Abraham's confession at Machpelah, 'I am a resident alien among you' — while Esau, one verse earlier, owns Seir outright"),
@@ -2477,6 +2559,8 @@ VERSE_OF_DAY = [
     (36, 7, "The old rivalry ends in room made, not blood: too much to hold them both, Esau gathers everything and leaves Canaan to his brother, taking Seir for himself."),
     (37, 13, "“Here I am.” The same two syllables Abraham gave at the Aqedah — now from a boy being sent, unarmed, to brothers who cannot speak to him in peace."),
     (37, 24, "“And the pit was empty — there was no water in it.” The Bible's most famous redundant sentence: not a drowning, a stone jar. Then they sat down to eat."),
+    (38, 26, "“She is more righteous than I.” The first honest sentence Judah ever speaks — and the hinge of his whole life."),
+    (38, 25, "“Recognize, please.” The two words Judah used to break his father, handed back to him with his own seal attached."),
 ]
 
 # ---------------------------------------------------------------------------
