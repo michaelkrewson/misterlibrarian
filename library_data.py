@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("acharit-hayamim", "acharit ha-yamim", "אַחֲרִית הַיָּמִים", "be-acharit ha-yamim",
+     "THE LATTER DAYS — literally 'the AFTER of the days': the far end of things, what lies at the horizon of what is coming. Its first occurrence is Jacob summoning his sons (49:1) to hear what will happen to them BE-ACHARIT HA-YAMIM. \u26a0\ufe0f The phrase does NOT by itself mean 'the end of the world.' In the prophets it can mean anything from 'later on' to a genuinely final horizon, and later readers — Jewish and Christian — took it as a technical term for the eschaton and read Genesis 49 accordingly. Here it introduces a poem about tribal territories, forced labour and roadside ambushes, so the reach of the phrase is exactly what is in dispute. KJV 'in the last days'; ESV 'in days to come.' This translation renders it plainly and leaves the distance open.", (49, 1)),
+    ("shiloh", "shiloh", "שִׁילֹה", "ad ki yavo shiloh",
+     "The most disputed word in Genesis. 'The sceptre shall not depart from Judah… AD KI YAVO SHILOH' (49:10). Four serious readings: (1) a NAME — 'until Shiloh comes,' which is what the Masoretic vowels give and the least self-explanatory, since the referent is undefined; (2) a PLACE — 'until he comes to Shiloh,' the town in Ephraim where the tabernacle stood; (3) reading the consonants as SHELLO, 'until that which is his comes' / 'until he comes to whom it belongs' — the understanding behind the Septuagint and Syriac, and apparently alluded to at Ezekiel 21:27, 'until he comes whose right it is'; (4) SHAI LO, 'until tribute comes to him.' \u26a0\ufe0f The verse has been read messianically in BOTH traditions for a very long time — the Jewish Targums render it 'until Messiah comes,' and Christian readers apply it to Jesus — but that reading rests on options (1) or (3), not on anything the consonants settle by themselves. Modern versions genuinely disagree: KJV/NWT 'until Shiloh come'; ASV with a margin note; ESV 'until tribute comes to him.' This project gives the readings with their pedigrees and does not vote.", (49, 10)),
     ("goel", "go'el", "גֹּאֵל", "ha-go'el",
      "REDEEMER — one who BUYS BACK. GA'AL is not a religious abstraction but a family obligation in Israelite law: the go'el is the nearest kinsman with both the standing and the duty to recover what a relative has lost — to buy back sold land, to ransom a relative sold into servitude, to marry a childless widow, to avenge a killing (Leviticus 25:25-55; Numbers 35). Its FIRST occurrence in the Bible is here, in a blessing over two boys: 'the angel who has REDEEMED me from all evil' (48:16). Jacob places it in apposition with 'the God who has shepherded me' — whether identifying the angel WITH God or distinguishing him from God is grammatically open, and readers have gone both ways for two thousand years. The word goes on to carry Boaz in Ruth, the jubilee laws, and a great deal of Isaiah. KJV 'the Angel which redeemed me from all evil.'", (48, 16)),
     ("sikkel", "sikkel", "שִׂכֵּל", "sikkel et yadav",
@@ -2206,6 +2210,18 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 49 ----
+    ((49, 4),  (35, 22), "'you went up to your father's bed' — the one flat verse where 'Israel heard,' answered roughly forty years later"),
+    ((49, 7),  (34, 25), "'cursed be their anger' — Shechem condemned at last on moral grounds, not the prudential ones he used at the time"),
+    ((49, 8),  (29, 35), "Leah named him from yadah, 'to praise' — the poem hands the name back as a prophecy"),
+    ((49, 8),  (37, 7),  "'your father's sons shall bow down to you' — Joseph's dream, awarded here to Judah"),
+    ((49, 10), (44, 33), "the sceptre goes to the brother who offered to be a slave in Benjamin's place"),
+    ((49, 22), (37, 24), "'the masters of arrows harassed him' — spoken to the ten men who put him in the pit, apparently without knowing it"),
+    ((49, 25), (17, 1),  "Shaddai set beside 'blessings of shadayim, breasts' — the wordplay behind the name's uncertain meaning"),
+    ((49, 29), (23, 16), "the cave at Machpelah recited as a deed: bought, from Ephron, the only ground the family owns in the land"),
+    ((49, 31), (35, 19), "'and there I buried Leah' — the man who buried Rachel on a roadside asks to be laid beside the wife he did not choose"),
+    ((49, 33), (49, 1),  "asaf, 'gather': he calls his sons to gather, gathers his feet into the bed, and is gathered to his people"),
+
     # ---- Genesis 48 ----
     ((48, 3),  (35, 11), "El Shaddai at Luz — Jacob quotes the Bethel promise back before he uses it to adopt"),
     ((48, 5),  (35, 22), "'like Reuben and Simeon' — the double portion Reuben forfeited, reassigned to Joseph through his two sons"),
@@ -2731,6 +2747,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    (49, 10, "“The sceptre shall not depart from Judah.” The most disputed line in Genesis — four readings, and the note takes no vote."),
+    (49, 18, "“For your salvation I have waited, Jehovah.” A dying man stops mid-prophecy, halfway down the list of his sons, and prays."),
+    (49, 31, "“And there I buried Leah.” Genesis never told us she died. He asks to be laid beside her."),
     (48, 14, "“He crossed his hands knowingly.” The Hebrew verb for crossing is the verb for acting with insight — the gesture and the intent are one word."),
     (48, 16, "“The angel who has redeemed me from all evil.” The first time the Bible uses its word for a redeemer, and it is a grandfather blessing two boys."),
     (48, 19, "“I know, my son, I know.” The man who once deceived a blind father, now blind, refusing to be corrected."),
