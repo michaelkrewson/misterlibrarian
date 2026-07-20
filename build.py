@@ -126,6 +126,24 @@ CHAPTERS = [
     ("lev1", "Leviticus", 1, "The manual of worship opens: from the tent he has just filled, Jehovah CALLS Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's two birds, each ascending whole in smoke, 'a soothing aroma to Jehovah.'"),
     ("num1", "Numbers", 1, "'In the wilderness of Sinai' the redeemed people are counted and arrayed as an army for the march — twelve tribes, twelve chieftains, 603,550 fighting men; and one tribe, Levi, left off the war-roll to carry and guard the tent at the camp's center."),
 ]
+# Spanish home-page teasers, keyed by chapter slug. The Spanish index used to
+# reuse CHAPTERS' ENGLISH teaser text, so es.html showed Spanish titles over
+# English descriptions. Add a line here whenever a source/es/<slug>.html lands;
+# build_es WARNS (and prints no description) if one is missing, rather than
+# silently falling back to English again.
+TEASERS_ES = {
+    "gen1":  "Los siete días — el día uno, la bóveda, y la imagen de Dios.",
+    "gen34": "El capítulo oscuro de Siquem: Dina es violada, y sus hermanos responden «con engaño».",
+    "gen35": "Jacob cumple su voto en Betel y entierra los dioses extranjeros — y el camino se cobra a Débora, a Raquel y a Isaac.",
+    "gen36": "El libro se detiene a catalogar a Esaú: sus mujeres, los jefes de Edom y, escondido en la lista, el nacimiento de Amalec.",
+    "gen37": "La túnica, los dos sueños, el pozo en Dotán y veinte piezas de plata — y dos palabras que volverán: «reconoce, por favor».",
+    "gen38": "Judá y Tamar: ella toma su sello, su cordón y su báculo, y se los devuelve con las dos palabras que él enseñó a su padre.",
+    "gen39": "Abajo en Egipto, en casa de Potifar — y el narrador, que no nombró a Dios ni una vez mientras vendían a José, ahora lo dice cuatro veces.",
+    "gen40": "El copero y el panadero sueñan la misma noche: «el faraón alzará tu cabeza» significa indulto para uno y horca para el otro.",
+    "gen41": "El faraón sueña con siete vacas gordas y nadie sabe leerlo. José sale del pozo, dice «no yo», y acaba gobernando Egipto.",
+    "gen42": "Diez hermanos se inclinan ante un gobernador al que no reconocen — y confiesan, sin saber que él entiende cada palabra: «somos culpables».",
+}
+
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)
 TOTAL_BIBLE_CHAPTERS = 1189
 
@@ -2780,7 +2798,16 @@ def build_es():
     if not panels:
         return
     en_by_slug = {slug: (book, num) for slug, book, num, _ in CHAPTERS}
-    teasers = {slug: t for slug, _b, _n, t in CHAPTERS}
+    def es_teaser(slug):
+        """Spanish description for a Spanish card. Never falls back to English —
+        a missing teaser prints a warning and an empty description instead."""
+        t = TEASERS_ES.get(slug)
+        if not t:
+            print(f"   \u26a0 no Spanish teaser for {slug} — add one to TEASERS_ES")
+            return ""
+        if len(t) > 160:                     # truncate the TEXT, then escape:
+            t = t[:160].rsplit(" ", 1)[0] + "\u2026"   # escaping first can cut an
+        return html.escape(t)                # HTML entity in half (&#x27; -> &#x2)
     built = []
     for slug, content in panels.items():
         bk = en_by_slug.get(slug)
@@ -2821,7 +2848,7 @@ function toggleHeb(){{
     built.sort(key=lambda x: (x[1], x[2]))
     cards = "\n".join(
         f'  <a class="card" href="{chapter_filename(b, n)[:-5]}.es.html"><div class="card-t">{t}</div>'
-        f'<div class="card-d">{html.escape(teasers.get(s, ""))[:150]}</div></a>'
+        f'<div class="card-d">{es_teaser(s)}</div></a>'
         for (s, b, n, t) in built)
     home = f"""<h1 class="pagetitle">La Traducción Mister</h1>
 <p class="lede">Una nueva traducción de la Biblia <strong>desde el hebreo y el griego</strong>, capítulo por
