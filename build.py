@@ -136,6 +136,7 @@ CHAPTERS = [
     ("lev1", "Leviticus", 1, "The manual of worship opens: from the tent he has just filled, Jehovah CALLS Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's two birds, each ascending whole in smoke, 'a soothing aroma to Jehovah.'"),
     ("num1", "Numbers", 1, "'In the wilderness of Sinai' the redeemed people are counted and arrayed as an army for the march — twelve tribes, twelve chieftains, 603,550 fighting men; and one tribe, Levi, left off the war-roll to carry and guard the tent at the camp's center."),
     ("deut1", "Deuteronomy", 1, "Moses begins the longest speech of his life, on the far side of the Jordan, to a generation that was not there. \"Eleven days from Horeb\" — and then \"in the fortieth year\": the whole chapter is the explanation of that gap. Judges appointed, spies sent, a land refused, and the flat closing line that nothing happened for a very long time."),
+    ("josh1", "Joshua", 1, "The book of the crossing opens on the worst possible news — \"Moses my servant is dead\" — and refuses to let it stop anything: rise, cross the Jordan. Three times Joshua is told to be strong and resolute, and the courage he most needs turns out to be for keeping the scroll, not the sword. Then rations, a marching order, an old promise called in, and the people handing the charge back: \"only be strong and resolute.\""),
 ]
 # Spanish home-page teasers, keyed by chapter slug. The Spanish index used to
 # reuse CHAPTERS' ENGLISH teaser text, so es.html showed Spanish titles over
@@ -154,6 +155,7 @@ TEASERS_ES = {
     "gen41": "El faraón sueña con siete vacas gordas y nadie sabe leerlo. José sale del pozo, dice «no yo», y acaba gobernando Egipto.",
     "3john1": "El documento más privado de la Biblia: \u00abel anciano\u00bb a Gayo, y contra Di\u00f3trefes, \u00abque ama ser el primero\u00bb.",
     "2john1": "El libro más corto de la Biblia: \u00abel anciano\u00bb a \u00abuna se\u00f1ora elegida\u00bb — verdad y amor, y una puerta que no se abre.",
+    "josh1": "\u00abMois\u00e9s ha muerto\u00bb — y ahora, cruza el Jord\u00e1n. Tres veces: s\u00e9 fuerte y resuelto; y el valor es para el rollo, no la espada.",
     "deut1": "\u00abOnce d\u00edas desde Horeb\u00bb — y luego \u00aben el a\u00f1o cuarenta\u00bb. Mois\u00e9s empieza a explicar los cuarenta a\u00f1os.",
     "gen50": "El \u00faltimo cap\u00edtulo: \u00abustedes pensaron mal contra m\u00ed; Dios lo pens\u00f3 para bien\u00bb. Y un ata\u00fad en Egipto.",
     "gen49": "El poema del lecho de muerte: Rubén degradado, Simeón y Leví maldecidos, y a Judá el cetro. Y luego una escritura de propiedad.",

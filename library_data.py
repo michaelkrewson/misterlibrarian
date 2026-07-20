@@ -231,6 +231,12 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("hagah", "hagah", "הָגָה", "ve-hagita",
+     "To MURMUR, mutter, growl — a concrete sound-word, not the abstraction 'meditate' most versions reach for. It is the low noise a lion makes over its prey (Isaiah 31:4), the moan of a dove, the muttering of a person turning something over. Applied to a scroll it means reading ALOUD UNDER THE BREATH, the ancient way of studying by voicing a text continually rather than scanning it in silence. Joshua 1:8 charges Joshua to HAGAH over the book of the instruction 'day and night,' and Psalm 1:2 uses the exact same verb of the blessed man — the two great 'day and night in the torah' texts, one opening the Prophets, one opening the Writings. KJV 'thou shalt meditate therein'; NWT 'you must read it in an undertone,' which keeps the voice.", ("Joshua", 1, 8)),
+    ("sakal", "sakal", "שָׂכַל", "taskil",
+     "To ACT WITH INSIGHT, and so to SUCCEED — the two senses are one in Hebrew, because to this literature success is the fruit of understanding, not luck or force. It is the root behind MASKIL ('a contemplative,' a title on several Psalms) and the verb that gave Jacob's crossed hands their meaning ('he crossed his hands SIKKEL — knowingly,' Genesis 48:14). Joshua 1:7-8 promises Joshua he will TASKIL 'wherever you go' — bracketed with TATZLIACH, 'prosper' — and pointedly attaches both to keeping the scroll rather than winning the war. The Bible's own definition of a successful general is a bookish one: prosperity follows from doing what is written. KJV 'then thou shalt have good success.'", ("Joshua", 1, 7)),
+    ("nuach", "nuach", "נוּחַ", "meniach",
+     "To REST, settle, come to a stop — the verb behind NOACH (Noah, 'rest') and the noun MENUCHAH, a resting-place. It is one of the book of Joshua's key promises: the point of crossing the Jordan is not conquest for its own sake but REST, somewhere to stop after forty years of not stopping (1:13, 15; 21:44; 22:4). \u26a0\ufe0f Hebrews 4 later reads this rest as UNFINISHED — 'if Joshua had given them rest, God would not have spoken of another day' — turning the land-rest into a figure for a rest still ahead, and leaning on the fact that 'Joshua' and 'Jesus' are the same name in Greek (IESOUS). The word that promises a place to stop becomes the word for something not yet reached.", ("Joshua", 1, 13)),
     ("propempo", "propempo", "προπέμπω", "propempsas",
      "To SEND ON THE WAY — a semi-technical word in the early church for equipping a traveller for the next leg of a journey: food, money, letters of introduction, sometimes an escort. It is the material engine of the whole early Christian mission. 3 John 6 tells Gaius he 'will do well to send them on their way (PROPEMPSAS) worthily of God,' and verse 8 turns the act into a theology: to support such travellers is to become 'FELLOW WORKERS with the truth.' The one who never leaves home but funds the one who does is a partner in the mission, not a spectator to it. Paul uses the same verb repeatedly of being outfitted by a church for onward travel (Romans 15:24; 1 Corinthians 16:6, 11; Titus 3:13).", ("3 John", 1, 6)),
     ("xenos", "xenos", "ξένος", "xenous",
@@ -2230,6 +2236,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Joshua 1 ----
+    ((("Joshua", 1, 4)), (("Deuteronomy", 1, 7)), "the same ideal borders promised to Moses — wilderness to Lebanon to the Euphrates — repeated as the land is finally entered"),
+    ((("Joshua", 1, 5)), (("Deuteronomy", 1, 8)), "'as I was with Moses, I will be with you' — the succession sealed by the same presence"),
+    ((("Joshua", 1, 7)), (48, 14), "taskil, 'act wisely' — the insight-root that gave the crossed hands their meaning, now the promise to Joshua"),
+    ((("Joshua", 1, 18)), (("Joshua", 1, 6)), "'only be strong and resolute' — the charge God laid on Joshua handed back to him by the people"),
+
     # ---- 3 John ----
     ((("3 John", 1, 5)), (("2 John", 1, 10)), "the exact positive of 2 John's refusal — receive the travellers, because these carry the Name, not a false Christ"),
     ((("3 John", 1, 8)), (("2 John", 1, 11)), "'fellow workers with the truth' — funding the right teacher makes you a partner in the mission, as funding the wrong one made you a partner in his work"),
@@ -2791,6 +2803,8 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ("Joshua", 1, 8, "“You shall murmur over it day and night.” Not silent study — reading aloud under the breath, continually."),
+    ("Joshua", 1, 9, "“Be strong and resolute… for Jehovah your God is with you wherever you go.” The reason is never his competence."),
     ("3 John", 1, 4, "“I have no greater joy than this: to hear that my children are walking in the truth.”"),
     ("3 John", 1, 8, "“Fellow workers with the truth.” The one who funds the mission is a partner in it, not a spectator."),
     ("3 John", 1, 15, "“Greet the friends by name.” The smallest, most human instruction in the New Testament's letters."),
