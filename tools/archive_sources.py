@@ -66,6 +66,7 @@ MECHON_BOOKS = {
 SBLGNT_BOOKS = {
     "MAT": ("Matthew", 28),
     "MRK": ("Mark", 16),
+    "LUK": ("Luke", 24),
     "JHN": ("John", 21),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),

@@ -663,6 +663,14 @@ DICTIONARY = [
      "The white stone — literally a pebble (NWT's 'white pebble' is exact), with uses all over ancient life: a juror's acquittal vote, an admission token to a feast, an amulet bearing a secret name. Which the promise of Rev 2:17 means is honestly unknown; all three fit a letter about verdicts, banquets, and a new name.", ("Revelation", 2, 17)),
     ("morning-star", "ho astēr ho prōinos", "ὁ ἀστὴρ ὁ πρωϊνός", "ho astēr ho prōinos",
      "The morning star (Rev 2:28) — Venus at dawn, the promise the book decodes only on its last page: 'I am the root and the offspring of David, the bright morning star' (22:16). The gift is the giver.", ("Revelation", 2, 28)),
+    ("parthenos", "parthenos", "παρθένος", "parthenos",
+     "VIRGIN — a young woman who has not known a man. In Luke 1:27 Mary is twice called PARTHENOS; in 1:34 she says plainly, 'since I do not know a man.' The Greek Old Testament used this same word to render Isaiah 7:14 ('a PARTHENOS shall conceive'), the verse Matthew 1:23 applies to this birth — where the Hebrew ALMAH means a young woman of marriageable age without BETULAH's technical focus on virginity. Luke's Greek settles what Isaiah's Hebrew left open.", ("Luke", 1, 27)),
+    ("doule", "doule", "δούλη", "doule",
+     "BONDSLAVE (female) — the strongest word for a slave, not merely a servant. Mary answers Gabriel, 'Behold, the DOULE of the Lord' (1:38), and sings that God looked on 'the low estate of his DOULE' (1:48). It is a word of total belonging, and she chooses it for herself: her assent, 'may it happen to me according to your word,' is a slave's yes to a master — and the pivot of the chapter, set against the priest Zechariah who could only be struck dumb.", ("Luke", 1, 38)),
+    ("tapeinosis", "tapeinosis", "ταπείνωσις", "tapeinosis",
+     "LOW ESTATE, lowliness, humiliation — a lowly CONDITION, not humility as a virtue. In the Magnificat God 'looked on the TAPEINOSIS of his bondslave' (1:48), the very word Hannah's Greek song uses (1 Samuel 1:11). Luke's point is that God NOTICES the low place and then reverses it; the song spells the reversal out — rulers pulled down, the lowly lifted, the hungry filled, the rich sent empty away.", ("Luke", 1, 48)),
+    ("anatole", "anatole", "ἀνατολή", "anatole",
+     "RISING / DAWN — and, in the Greek Old Testament, the messianic BRANCH. Zechariah's song says 'the ANATOLE from on high will visit us' (1:78). The word means the rising of the sun (light dawning on those in darkness, Isaiah 9:2) AND the 'Branch/shoot' promised to spring from David (Jeremiah 23:5; Zechariah 3:8; 6:12, where the Greek Bible uses this very word). Zechariah's ears would catch both at once: a sunrise and a sprouting Branch. ⚠️ No single English word holds both, so the versions split — 'dayspring' (KJV), 'sunrise' (ESV), 'daybreak' (NWT).", ("Luke", 1, 78)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2972,6 +2980,11 @@ VERSE_OF_DAY = [
     (43, 30, "“His compassion grew warm toward his brother” — rachamim, the word built on the womb."),
     (44, 33, "“Let your servant remain instead of the boy.” The man who once sold a brother offers to take his place."),
     (44, 34, "“How can I go up to my father, and the boy not with me?” The end of the longest speech in Genesis."),
+    ("Luke", 1, 37, "“No word will be impossible with God.” The sentence spoken to Sarah at Mamre, carried now to a girl in Nazareth."),
+    ("Luke", 1, 38, "“Behold, the bondslave of the Lord; may it happen to me according to your word.” Where a priest was struck dumb, a girl says yes."),
+    ("Luke", 1, 46, "“My soul magnifies the Lord.” The Magnificat — a teenage girl sings the great reversal, built on Hannah's song."),
+    ("Luke", 1, 52, "“He has brought down rulers from thrones and lifted up the lowly.” The most dangerous poem in the Gospels."),
+    ("Luke", 1, 78, "“The dawn from on high will visit us” — ANATOLE: both the rising sun and the promised Branch of David."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3346,6 +3359,9 @@ CHRON_CHAPTERS = {
     "rev2": dict(era="apostolic",
                  when="The seven letters begin — Ephesus, Smyrna, Pergamum, Thyatira.",
                  clock="c. AD 95 — the congregations of the Asian postal road, a generation after Paul walked it."),
+    "luke1": dict(era="gospels",
+                  when="Two annunciations and two songs — Gabriel to Zechariah in the temple and to Mary in Nazareth, the Visitation, the birth of John, the Magnificat and the Benedictus.",
+                  clock="c. 6–5 BC, 'in the days of Herod the king' (Herod the Great died in 4 BC) — the six months before the birth of Jesus. Luke's preface (1:1–4) is the one place a Gospel opens with a dated, first-person dedication."),
 }
 
 CHRON_EVENTS = [
@@ -4240,5 +4256,36 @@ BOOK_INTROS = {
                 "written first and used by Matthew and Luke, against the older tradition that Matthew came "
                 "first. This library prints the critical text and lays the readings out with their pedigrees "
                 "without casting a vote.",
+    ),
+    "Luke": dict(
+        greek_name="Κατὰ Λουκᾶν (Kata Loukan)",
+        greek_meaning="'According to Luke.' The book names no author; the ascription to LUKE — a physician and companion of Paul — is early and undisputed. It is the first of two volumes: the Gospel and the Acts of the Apostles, both addressed to the same Theophilus, together the longest single contribution to the New Testament by any one hand.",
+        tagline="The longest and most literary of the Gospels — a physician's orderly account, and the Gospel of the outsider: women, the poor, the Samaritan, the tax-collector; a Saviour whose coming is sung by a teenage girl and announced first to shepherds.",
+        genre="A GOSPEL, and volume one of a two-part history (Luke–Acts) — the most consciously literary of the four. It opens with a classical Greek preface, dates events by emperors and governors, carries the largest vocabulary in the New Testament, and preserves a wealth of material found in no other Gospel (the Good Samaritan, the Prodigal Son, the Rich Man and Lazarus, the road to Emmaus).",
+        canon="The THIRD Gospel and the LONGEST book in the New Testament; paired with Acts as a single two-volume work that together makes up about a quarter of the NT — more text than Paul. One of the three Synoptics.",
+        author="By early and near-unanimous tradition, LUKE, 'the beloved physician' (Colossians 4:14) — a Gentile companion of Paul, present in the first-person 'we' sections of Acts (16, 20, 27–28) and named in Philemon 24 and 2 Timothy 4:11. On the majority view the only GENTILE author in the Bible; the medical vocabulary and the close interest in Paul's journeys fit the tradition.",
+        date="Commonly placed around AD 80–85, though some argue the 60s–70s. It turns partly on Luke's use of Mark (which he clearly draws on) and on where Acts breaks off — with Paul still alive under house arrest in Rome (c. AD 62), which some read as an early terminus for the whole two-volume work.",
+        place="Uncertain — proposals include Rome, Achaia, and Antioch. Written for a Greco-Roman readership: Luke smooths Semitic detail, explains Palestine to outsiders, and frames the story inside the wider empire.",
+        audience="GENTILE Christians and inquirers — 'most excellent Theophilus' and everyone like him. Luke universalises the good news: he traces Jesus' genealogy back not merely to Abraham but to ADAM, 'son of God' (3:38), and ends Acts with the gospel reaching Rome, the heart of the world.",
+        structure=[
+            ["1:1–4", "The preface — a formal dedication to Theophilus; the one place a Gospel opens like a Greek history."],
+            ["1:5–2:52", "The infancy narrative — two annunciations, the Visitation, the births of John and Jesus, the shepherds, Simeon and Anna, the boy in the temple. Luke's alone, and full of songs."],
+            ["3:1–4:13", "John the baptiser, the baptism, the genealogy back to Adam, the temptation."],
+            ["4:14–9:50", "The Galilean ministry — healings, parables, the calling and sending of the twelve."],
+            ["9:51–19:27", "The long journey to Jerusalem — the heart of Luke, holding most of his unique parables (the Good Samaritan, the Prodigal Son, the Rich Man and Lazarus)."],
+            ["19:28–24:53", "Jerusalem — the entry, the temple, the Last Supper, the cross, the empty tomb, and the road to Emmaus."],
+        ],
+        themes=[
+            "The OUTSIDER welcomed — women, the poor, tax-collectors, Samaritans, sinners. Luke's Jesus eats with the wrong people and tells stories in which they are the heroes.",
+            "The GREAT REVERSAL — sounded first in Mary's song (the lowly lifted, the rich sent empty away) and paid out in the Beatitudes-and-woes, in Lazarus at the gate, in the last made first.",
+            "The HOLY SPIRIT and PRAYER — the Spirit fills Elizabeth, Mary, Zechariah, and Simeon before a single miracle is done; Jesus prays at every hinge and teaches his followers to.",
+            "JOY and SONG — Luke 1–2 is the songbook of the church (Magnificat, Benedictus, Gloria, Nunc Dimittis); the Gospel begins and ends with people praising God 'with great joy.'",
+            "SALVATION for ALL — the genealogy to Adam, the Samaritan neighbour, the promise that 'all flesh will see the salvation of God' (3:6).",
+        ],
+        key_words=["charis", "parthenos", "makarios", "euangelion"],
+        key_people=["jesus", "john-the-baptist", "nazareth"],
+        source_text="Translated from the Greek of the SBL GREEK NEW TESTAMENT (SBLGNT), edited by Michael W. Holmes. Luke's Greek is the most refined in the Gospels — a classical, balanced periodic preface (1:1–4), then a deliberate shift into Septuagint-flavoured Greek for the infancy story, so the reader hears the Old Testament resume. Its sharpest textual questions cluster later (the sweat 'like blood' in Gethsemane, 22:43–44; some words from the cross), noted where they fall; chapter 1 is textually calm.",
+        christ="Luke's Jesus is the Saviour of the whole world, and above all of those the world discards. He is announced not to kings but to shepherds; his mother is a nobody from Nazareth who sings a revolution; his genealogy runs past Abraham all the way to Adam, making him the second head of the entire human race, not one nation's Messiah only. He is 'Son of the Most High' and 'a Saviour, who is Christ the Lord' — and the one who says his whole mission is 'to seek and to save the lost' (19:10).",
+        debates="AUTHORSHIP by Luke the physician is early and rarely contested even critically, helped by the first-person 'we' passages of Acts. The live questions are DATE (the 80s versus a pre-63 date tied to the abrupt ending of Acts), SOURCES (Luke names 'many' predecessors in 1:1; the majority view has him using Mark and a sayings source alongside material unique to him), and a handful of famous later VARIANTS. The two-volume unity of Luke–Acts, addressed to the same Theophilus, is broadly agreed.",
     ),
 }
