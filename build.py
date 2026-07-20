@@ -137,6 +137,7 @@ CHAPTERS = [
     ("num1", "Numbers", 1, "'In the wilderness of Sinai' the redeemed people are counted and arrayed as an army for the march — twelve tribes, twelve chieftains, 603,550 fighting men; and one tribe, Levi, left off the war-roll to carry and guard the tent at the camp's center."),
     ("deut1", "Deuteronomy", 1, "Moses begins the longest speech of his life, on the far side of the Jordan, to a generation that was not there. \"Eleven days from Horeb\" — and then \"in the fortieth year\": the whole chapter is the explanation of that gap. Judges appointed, spies sent, a land refused, and the flat closing line that nothing happened for a very long time."),
     ("josh1", "Joshua", 1, "The book of the crossing opens on the worst possible news — \"Moses my servant is dead\" — and refuses to let it stop anything: rise, cross the Jordan. Three times Joshua is told to be strong and resolute, and the courage he most needs turns out to be for keeping the scroll, not the sword. Then rations, a marching order, an old promise called in, and the people handing the charge back: \"only be strong and resolute.\""),
+    ("judg1", "Judges", 1, "The conquest, told from underneath. It opens well — Israel asks God, Judah goes up, cities fall — and then, tribe by tribe marching north up the map, the same phrase tolls seven times: DID NOT DRIVE OUT. A king mutilated as he mutilated others, a woman who negotiates for water, iron chariots offered as an excuse, and a redeemed people putting the Canaanites to forced labour instead of removing them."),
 ]
 # Spanish home-page teasers, keyed by chapter slug. The Spanish index used to
 # reuse CHAPTERS' ENGLISH teaser text, so es.html showed Spanish titles over
@@ -155,6 +156,7 @@ TEASERS_ES = {
     "gen41": "El faraón sueña con siete vacas gordas y nadie sabe leerlo. José sale del pozo, dice «no yo», y acaba gobernando Egipto.",
     "3john1": "El documento más privado de la Biblia: \u00abel anciano\u00bb a Gayo, y contra Di\u00f3trefes, \u00abque ama ser el primero\u00bb.",
     "2john1": "El libro más corto de la Biblia: \u00abel anciano\u00bb a \u00abuna se\u00f1ora elegida\u00bb — verdad y amor, y una puerta que no se abre.",
+    "judg1": "La conquista contada por debajo: empieza bien, y luego, tribu por tribu, la misma frase suena siete veces — no expuls\u00f3.",
     "josh1": "\u00abMois\u00e9s ha muerto\u00bb — y ahora, cruza el Jord\u00e1n. Tres veces: s\u00e9 fuerte y resuelto; y el valor es para el rollo, no la espada.",
     "deut1": "\u00abOnce d\u00edas desde Horeb\u00bb — y luego \u00aben el a\u00f1o cuarenta\u00bb. Mois\u00e9s empieza a explicar los cuarenta a\u00f1os.",
     "gen50": "El \u00faltimo cap\u00edtulo: \u00abustedes pensaron mal contra m\u00ed; Dios lo pens\u00f3 para bien\u00bb. Y un ata\u00fad en Egipto.",

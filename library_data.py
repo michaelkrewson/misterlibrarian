@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("cherem", "cherem", "חֵרֶם", "vayacharimu",
+     "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood.", ("Judges", 1, 17)),
+    ("mas", "mas", "מַס", "la-mas",
+     "FORCED LABOUR, corvée — conscripted, unpaid work owed to a ruler or state; a levy paid in bodies rather than money. \u26a0\ufe0f The word carries a bitter history in the Bible. It is what EGYPT imposed on Israel — 'they set taskmasters over them… to afflict them with their burdens' (Exodus 1:11 uses the cognate) — the very thing the exodus was a rescue FROM. So when Judges 1 says that, once Israel 'grew strong,' the tribes put the surviving Canaanites to MAS rather than driving them out (1:28, 30, 33, 35), the irony is deliberate and heavy: a people redeemed from forced labour imposing it, and doing so as a COMPROMISE with the command they were failing to keep. Solomon will later levy the same MAS on the remaining Canaanites (1 Kings 9:21) — and, disastrously, on Israel itself, which splits the kingdom. KJV 'tribute'; ESV/NIV 'forced labor.'", ("Judges", 1, 28)),
     ("hagah", "hagah", "הָגָה", "ve-hagita",
      "To MURMUR, mutter, growl — a concrete sound-word, not the abstraction 'meditate' most versions reach for. It is the low noise a lion makes over its prey (Isaiah 31:4), the moan of a dove, the muttering of a person turning something over. Applied to a scroll it means reading ALOUD UNDER THE BREATH, the ancient way of studying by voicing a text continually rather than scanning it in silence. Joshua 1:8 charges Joshua to HAGAH over the book of the instruction 'day and night,' and Psalm 1:2 uses the exact same verb of the blessed man — the two great 'day and night in the torah' texts, one opening the Prophets, one opening the Writings. KJV 'thou shalt meditate therein'; NWT 'you must read it in an undertone,' which keeps the voice.", ("Joshua", 1, 8)),
     ("sakal", "sakal", "שָׂכַל", "taskil",
@@ -2236,6 +2240,13 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Judges 1 ----
+    ((("Judges", 1, 1)), (("Joshua", 1, 1)), "'after the death of Joshua' — the book opens exactly as Joshua did over Moses; the pattern is the point"),
+    ((("Judges", 1, 2)), (49, 8), "Judah sent up first — Jacob's blessing, 'your brothers shall praise you,' made good at the head of the fighting"),
+    ((("Judges", 1, 7)), (("Judges", 1, 6)), "Adoni-bezek's thumbs and toes: 'as I have done, so God has repaid me' — the victim names the justice"),
+    ((("Judges", 1, 21)), (("Joshua", 1, 1)), "the Jebusites still in Jerusalem 'to this day' — the conquest of Joshua on the record as unfinished, before David"),
+    ((("Judges", 1, 28)), (("Exodus", 1, 11)), "mas, 'forced labour' — the tribes impose on the Canaanites the very thing Egypt imposed on Israel"),
+
     # ---- Joshua 1 ----
     ((("Joshua", 1, 4)), (("Deuteronomy", 1, 7)), "the same ideal borders promised to Moses — wilderness to Lebanon to the Euphrates — repeated as the land is finally entered"),
     ((("Joshua", 1, 5)), (("Deuteronomy", 1, 8)), "'as I was with Moses, I will be with you' — the succession sealed by the same presence"),
@@ -2803,6 +2814,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ("Judges", 1, 7, "“As I have done, so God has repaid me.” A mutilated king pronounces the sentence on his own cruelty."),
+    ("Judges", 1, 19, "“Jehovah was with Judah… but he could not, because they had chariots of iron.” The excuse the book is documenting."),
+    ("Judges", 1, 28, "“When Israel grew strong, they put the Canaanite to forced labour” — a people redeemed from slavery imposing it."),
     ("Joshua", 1, 8, "“You shall murmur over it day and night.” Not silent study — reading aloud under the breath, continually."),
     ("Joshua", 1, 9, "“Be strong and resolute… for Jehovah your God is with you wherever you go.” The reason is never his competence."),
     ("3 John", 1, 4, "“I have no greater joy than this: to hear that my children are walking in the truth.”"),
@@ -4019,5 +4033,99 @@ BOOK_INTROS = {
                 "personality clash, an early tension between travelling and settled authority, or simply the "
                 "ordinary sin of a man who wanted the head of the table. The letter blames only the ambition. "
                 "This library lays the readings out with their pedigrees and does not cast a vote.",
+    ),
+    "Judges": dict(
+        hebrew_name="שׁוֹפְטִים",
+        hebrew_translit="Shofetim",
+        hebrew_meaning="'Judges' — but the Hebrew SHOFET is wider than a courtroom judge. A shofet DELIVERS as "
+                       "much as he decides: the 'judges' of this book are chiefly military rescuers raised up "
+                       "to save Israel from oppressors, and only secondarily settlers of disputes. 'Chieftain' "
+                       "or 'deliverer' catches the sense as well as 'judge.'",
+        greek_name="Κριταί (Kritai)",
+        greek_meaning="'Judges' — the Greek and Latin (Iudices) title, a direct translation of the Hebrew, "
+                      "carrying the same courtroom narrowing that the Hebrew word itself does not intend.",
+        tagline="What happened after the conquest: a downward spiral of a people who forgot, a God who kept "
+                "rescuing them anyway, and a refrain that ends the book — 'in those days there was no king in "
+                "Israel; everyone did what was right in his own eyes.'",
+        genre="Narrative history, but shaped as a THEOLOGY OF THE CYCLE: a repeating pattern (Israel does "
+              "evil → is oppressed → cries out → God raises a deliverer → the land has rest → the deliverer "
+              "dies → Israel does evil again) that spirals downward rather than round, so each turn is worse "
+              "than the last. It contains some of the Bible's most vivid — and most disturbing — storytelling.",
+        canon="The second book of the FORMER PROPHETS in the Hebrew Bible (Joshua, Judges, Samuel, Kings), "
+              "the great history that runs from entering the land to losing it. In the Christian Old Testament "
+              "it is the seventh book, grouped with the 'historical books.' It bridges Joshua's conquest and "
+              "the rise of the monarchy under Samuel.",
+        author="Anonymous. Ancient Jewish tradition (the Talmud) credits SAMUEL, and the book's repeated "
+               "refrain, 'in those days there was no king in Israel,' is written from a standpoint that "
+               "already has one — so a monarchy-era hand, plausibly early, is the traditional and natural "
+               "reading. Critical scholarship sees it as part of a larger 'Deuteronomistic History' (Joshua "
+               "through Kings) shaped in the seventh-sixth centuries BC around older hero-stories. See 'Where "
+               "the debates are.'",
+        date="The EVENTS fall in the roughly two centuries between the conquest and the monarchy — on the "
+             "traditional chronology c. 1380–1050 BC, a period of tribal, decentralised Israel with no "
+             "central government. The COMPOSITION is later: monarchy-era on any view, whether early (near "
+             "Samuel) or, on the Deuteronomistic view, considerably later.",
+        place="The land of Canaan itself, tribe by tribe — the hill country, the valleys, the coastal plain "
+              "held by the Philistines, and the Transjordan. The book is intensely geographical: its "
+              "disasters and rescues are local, tied to particular tribes and particular towns.",
+        audience="Later Israel — a people who DID have a king, reading the story of what life was like when "
+                 "there was none. The book is, among other things, an argument about leadership: what happens "
+                 "to a covenant people with no centre to hold them.",
+        structure=[
+            ("1:1–3:6", "The double introduction — the incomplete conquest (ch. 1) and its theological "
+                        "diagnosis (ch. 2): a generation arose 'who did not know Jehovah,' and the cycle "
+                        "begins."),
+            ("3:7–16:31", "The judges themselves — Othniel, Ehud and the fat king, Deborah and Barak and Jael "
+                          "with her tent-peg, Gideon and his fleece, the tragedy of Jephthah's vow, and the "
+                          "long ruin of Samson. Each cycle darker than the last."),
+            ("17–21", "The double epilogue — Micah's idol and the migration of Dan, and the horror at Gibeah "
+                      "and the near-destruction of Benjamin: two stories with no judge at all, showing how far "
+                      "the rot has gone. The refrain closes it: 'everyone did what was right in his own eyes.'"),
+        ],
+        themes=[
+            "The CYCLE — sin, servitude, supplication, salvation, and back to sin — spiralling DOWN. The land "
+            "gets less rest and the deliverers get more flawed as the book goes on.",
+            "God's exhausting FAITHFULNESS. He keeps rescuing a people who keep forgetting him, raising "
+            "deliverer after deliverer for a nation that does not deserve one — grace stretched to the point "
+            "of grief.",
+            "The FLAWED deliverer. These are not saints: a left-handed assassin, a reluctant thresher, a man "
+            "who sacrifices his own daughter to a rash vow, a womanising strongman undone by his own "
+            "appetites. God works through deeply compromised people, and the book never pretends otherwise.",
+            "The danger of the UNFINISHED task — Judges 1's 'did not drive out' becomes the root of everything "
+            "that follows: the peoples left in the land become the snare that pulls Israel into their gods.",
+            "The question of a KING. The refrain 'no king in Israel; everyone did what was right in his own "
+            "eyes' frames the anarchy as a leadership vacuum — setting up the books of Samuel and the demand "
+            "for a monarchy.",
+            "Some of the Bible's most prominent WOMEN — Deborah the prophet-judge, Jael the killer of Sisera, "
+            "Achsah who negotiates for water, Jephthah's unnamed daughter, Samson's Delilah, and the horrific "
+            "fate of the Levite's concubine — for good and for terrible ill.",
+        ],
+        key_words=["cherem", "mas", "chesed", "goral"],
+        key_people=["judah", "moses", "jerusalem"],
+        source_text="Translated from the Hebrew MASORETIC TEXT — the digital Hebrew of Mechon-Mamre (the "
+                    "Leningrad/Aleppo tradition), consonants with the Masoretes' vowel-points and cantillation, "
+                    "and its scribal peculiarities kept. The scroll's own paragraph breaks are shown as it "
+                    "marks them: petuchah {פ} (open) and setumah {ס} (closed). Judges also contains one of the "
+                    "oldest passages in the Hebrew Bible — the SONG OF DEBORAH (ch. 5), archaic poetry many "
+                    "scholars date close to the events it celebrates, and a place where the Masoretic text is "
+                    "famously difficult. The seven-version shelf under every chapter compares the NIV, KJV, "
+                    "Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and NWT.",
+        christ="Judges is the Bible's long argument that flawed human deliverers are not enough. Every judge "
+               "rescues, and every rescue fails to last, because the deliverer dies and the people relapse — "
+               "and the book ends crying out, in effect, for a king who will not. The New Testament reads the "
+               "whole pattern as pointing past itself: Hebrews 11 lists Gideon, Barak, Samson and Jephthah "
+               "among the heroes of faith, flaws and all, 'of whom the world was not worthy' — people who "
+               "'were commended through their faith, yet did not receive what was promised,' because the "
+               "something better was still ahead.",
+        debates="AUTHORSHIP AND DATE, as with the other Former Prophets: the traditional ascription to Samuel "
+                "(monarchy-era, early) versus the critical view of a Deuteronomistic History edited in the "
+                "seventh-sixth centuries around older sources — the recurring refrain about 'no king' clearly "
+                "post-dates the events either way. CHRONOLOGY: the judgeships and their round numbers (many "
+                "periods of 40 or 80 years) add up to more time than the span between conquest and monarchy "
+                "allows, so most read the judges as partly OVERLAPPING regional figures rather than a single "
+                "national succession. And the HARD ETHICS — the ban, Jephthah's vow, the atrocity at Gibeah — "
+                "which the book reports with striking refusal to tidy up; it shows the horror without "
+                "endorsing it, and readers have always argued over how much is description and how much is "
+                "verdict. This library lays the readings out with their pedigrees and does not cast a vote.",
     ),
 }

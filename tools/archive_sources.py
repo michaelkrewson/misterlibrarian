@@ -55,6 +55,7 @@ MECHON_BOOKS = {
     "04": ("Numbers", 36),
     "05": ("Deuteronomy", 34),
     "06": ("Joshua", 24),
+    "07": ("Judges", 21),
     "11": ("Jeremiah", 52),
     "28": ("Proverbs", 31),
     "34": ("Daniel", 12),
