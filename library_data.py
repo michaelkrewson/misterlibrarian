@@ -229,6 +229,10 @@ DICTIONARY = [
      "The Hebrew realm of the dead — down, dark, silent — appearing here for the FIRST time in the Bible, in Jacob's 'I will go down to my son, mourning, to Sheol' (37:35). Crucially, everyone goes there: righteous and wicked alike, with no second word set against it. It is not a place of punishment, and the Hebrew Bible offers no rival destination. The KJV renders it 'the grave' here, but 'hell' in thirty-one other places and 'the pit' in three — so an English reader cannot tell that Jacob, Job, David and Isaiah are discussing one thing, and would reasonably conclude the patriarch expects the grave while the wicked go elsewhere. That is a doctrine assembled out of an inconsistent gloss. The Douay, following the Vulgate's infernum, prints 'into hell' right here — a patriarch expecting to join his beloved son there. The ASV and NWT both simply transliterate, 'Sheol,' declining to settle by translation what the Hebrew leaves open; this translation follows them on the merits — the same principle as 'vault' for raqia and 'side' for tsela.", (37, 35)),
     ("saq", "saq", "שַׂק", "saq",
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
+    ("chartummim", "chartummim", "חַרְטֻמִּים", "chartummim",
+     "The Egyptian LECTOR-PRIESTS — not 'magicians' in the conjuring sense but the literate temple specialists who kept the ritual books and, among much else, interpreted dreams. Pharaoh summons them and they cannot read his dream (41:8, 24). This was a real profession with real manuals: the Dream Book of Papyrus Chester Beatty III lists dreams in columns beside standard readings. The narrator is not sneering at Egyptian learning; he is making a narrower claim — that this dream is not in the reference books. The word is itself probably an Egyptian loanword, and it travels: the SAME term turns up in another empire's court, where Babylon's experts likewise fail in front of a Hebrew captive (Daniel 1:20; 2:2), and again against Moses (Exodus 7:11). KJV 'magicians'; NWT 'magic-practicing priests' — clumsier English, closer to the institution.", (41, 8)),
+    ("abrekh", "abrekh", "אַבְרֵךְ", "abrekh",
+     "The herald's cry before Joseph's chariot (41:43) — and nobody knows what it means. Three serious proposals: a Hebrew derivation from barakh, 'to kneel,' giving the KJV's and ASV's committed 'BOW THE KNEE'; an Egyptian derivation (ib-r-k, roughly 'attention!', or a court title) giving the NIV's 'MAKE WAY!'; and the Akkadian abarakku, a high household steward. The NWT simply transliterates, and so does this translation — a shout in a foreign court that two thousand years of scholarship has not decoded should look like what it is. One of the small honest pleasures of the Hebrew Bible: a word can survive perfectly intact and completely opaque.", (41, 43)),
     ("nasa-rosh", "nasa rosh", "נָשָׂא רֹאשׁ", "yissa rosh",
      "To LIFT UP THE HEAD — a court idiom for singling a man out of the crowd: to review him, reckon him, take notice of him, raise him up. It is also the hinge on which Genesis 40 turns. Joseph tells the cupbearer 'Pharaoh will LIFT UP YOUR HEAD and restore you' (40:13) — pardon and promotion. He tells the baker 'Pharaoh will LIFT UP YOUR HEAD — from off you — and hang you on a tree' (40:19): the same phrase, two words added, and it means decapitation. Then verse 20 uses it once, governing both men at once — Pharaoh 'lifted up the head' of the cupbearer AND the head of the baker at his birthday feast, one back to his cup and one off his shoulders. KJV and ASV keep it literal in all three places and so preserve the wordplay; versions that smooth it to 'summoned' or 'sent for' destroy the architecture of the chapter. Elsewhere the same idiom means taking a census (Exodus 30:12, 'when you lift up the head of the sons of Israel').", (40, 13)),
     ("pitron", "pitron", "פִּתְרוֹן", "pitron",
@@ -1720,6 +1724,76 @@ ENCYCLOPEDIA = [
               "word no one can quite translate (36:24).",
          refs=[(36, 20), (36, 21)], videos=[]),
 
+    # ---- Genesis 41 ----
+    # ⚠️ ALIAS PARTITION: three entries now claim "Pharaoh" (Genesis 12, Joseph,
+    # the Exodus). Their refs must partition per-verse or the resolver links the
+    # wrong king — which it was doing: "Pharaoh" all through the Joseph story
+    # resolved to the Genesis-12 entry, a man about two centuries earlier. The
+    # refs below cover the FIRST occurrence in each Joseph chapter, which is what
+    # the once-per-chapter link cap actually reaches.
+    dict(slug="pharaoh-joseph", name="Pharaoh (of Joseph's time)", kind="person", aliases=["Pharaoh"],
+         desc="The king who dreams of seven cows and seven ears, cannot get a reading from his own experts, and "
+              "then hands a thirty-year-old Hebrew prisoner the government of Egypt (Genesis 41). He is never "
+              "named — Genesis calls every Egyptian king simply 'Pharaoh,' which is itself the Egyptian phrase "
+              "<em>per-aa</em>, 'the Great House,' the palace standing in for its occupant. ⚠️ NOT the Pharaoh "
+              "of Genesis 12 (who took Sarai) nor the Pharaoh of the Exodus (who 'did not know Joseph'); the "
+              "Bible's Egypt spans centuries under one recycled title. He is never named, so no identification "
+              "is certain — but the chronology this translation follows elsewhere narrows it sharply. Taking the "
+              "Exodus at 1446 BC (1 Kings 6:1) and Israel's 430 years in Egypt (Exodus 12:40) puts Jacob's "
+              "arrival at 1876 BC; Joseph is thirty at his elevation (41:46) and thirty-nine when his father "
+              "comes down, so he takes office around 1885 BC. That lands squarely in the <strong>12th Dynasty "
+              "of the Middle Kingdom</strong>, in the reign of <strong>Senusret II</strong> and running on into "
+              "Senusret III — a strong, centralized Egypt, which fits a chapter about a national grain "
+              "bureaucracy. ⚠️ It also RULES OUT the popular HYKSOS theory, which places Joseph under the "
+              "Semitic-speaking rulers of Lower Egypt on the appealing reasoning that a foreign dynasty would "
+              "more readily elevate a Semite: the Hyksos period (c. 1650-1550 BC) is roughly 235 years too late "
+              "for this reckoning. That view belongs to a different Exodus chronology, and the two should not be "
+              "mixed. Corroborating material deserves grading rather than listing: the Semitic settlement "
+              "excavated at AVARIS (Tell el-Dab'a) in the eastern Delta — Goshen's region — dating from the "
+              "late 12th Dynasty is real archaeology and genuinely suggestive of Asiatics settled in Egypt at "
+              "about the right time; the BAHR YUSSEF ('Joseph's Canal'), the channel feeding the Faiyum that "
+              "Amenemhat III's hydraulic works expanded, is often cited but is far weaker — the name is "
+              "medieval Arabic tradition, not an ancient inscription; and attempts to identify Joseph with a "
+              "particular named vizier are speculation. What the chapter does get demonstrably right is the "
+              "SETTING: the "
+              "shaving before a royal audience (Egyptians were clean-shaven where Semites were bearded), the "
+              "signet ring, the fine linen, the gold collar of honour, the second chariot, and a state grain "
+              "administration — all attested Egyptian court practice. Genesis knows the country it is "
+              "describing, whatever century it is describing.",
+         refs=[(37, 36), (39, 1), (40, 2), (41, 1), (41, 38), (41, 41)], videos=[]),
+    dict(slug="asenath", name="Asenath", kind="person", aliases=["Asenath"],
+         desc="The Egyptian wife Pharaoh gives Joseph — 'daughter of Potiphera priest of ON' (41:45) — and so "
+              "the mother of Manasseh and Ephraim, which means two of Israel's twelve tribes descend from an "
+              "Egyptian priest's daughter. Genesis reports it without a flicker of anxiety, though later "
+              "readers were less relaxed: a Hellenistic romance, <em>Joseph and Aseneth</em>, was written "
+              "largely to supply her with a conversion. Her name is genuinely Egyptian, plausibly "
+              "<em>ns-Nt</em>, 'she belongs to (the goddess) Neith.' ⚠️ Her father's name, POTIPHERA, is a "
+              "fuller spelling of the same Egyptian name as POTIPHAR ('he whom Ra has given'); they are "
+              "presented as different men — one the chief of the executioners, the other a priest of On — and "
+              "the identical-sounding names are a coincidence of a very common formula, though some ancient "
+              "traditions could not resist merging them.",
+         refs=[(41, 45), (41, 50)], videos=[]),
+    dict(slug="on-heliopolis", name="On (Heliopolis)", kind="place", aliases=["On"],
+         desc="The ancient centre of the Egyptian sun-cult, where Joseph's father-in-law served as priest "
+              "(41:45) — Egyptian <em>Iunu</em>, Greek HELIOPOLIS, 'sun city,' at the apex of the Delta inside "
+              "modern Cairo. It was one of the oldest and most prestigious temple establishments in Egypt, the "
+              "home of the Ennead and of Ra's own priesthood; a priest of On was an aristocrat of the "
+              "religious establishment, which is the measure of the marriage Pharaoh arranges. Almost nothing "
+              "of it survives above ground but a single standing obelisk of Senusret I (c. 1950 BC), which "
+              "Joseph would have seen. Jeremiah names it Beth-shemesh, 'house of the sun' (43:13).",
+         coord=(30.1290, 31.3070), refs=[(41, 45), (41, 50)], videos=[]),
+    dict(slug="manasseh-ephraim", name="Manasseh and Ephraim", kind="person",
+         aliases=["Manasseh", "Ephraim"],
+         desc="Joseph's two sons by Asenath, born in Egypt before the famine, and both named for what exile "
+              "had done to him. MANASSEH (Menashsheh) puns on <em>nashani</em> — 'God has made me FORGET all "
+              "my toil and all my father's house' (41:51), a startling thing to say aloud about the family "
+              "that is about to walk back into his life. EPHRAIM puns on <em>hiphrani</em> — 'God has made me "
+              "FRUITFUL in the land of my affliction' (41:52); he calls Egypt, where he governs, the land of "
+              "his affliction. Jacob later adopts both as his own and crosses his hands to put the younger "
+              "first (48:5, 14) — one more overturned birthright — and their names become two of Israel's "
+              "tribes; 'Ephraim' eventually stands for the whole northern kingdom in the prophets.",
+         refs=[(41, 51), (41, 52)], videos=[]),
+
     # ---- Genesis 39 ----
     # UNNAMED in the text, so no aliases — encyclopedia-only, the antiochus-iv pattern.
     dict(slug="potiphars-wife", name="Potiphar's wife", kind="person",
@@ -2192,6 +2266,16 @@ XREFS = [
     ((33, 3),  (27, 29), "Jacob bowed to the ground seven times — the man whom the stolen blessing had made lord, 'let your brothers bow down to you' (27:29), now on his face before the brother he cheated"),
     ((33, 19), (12, 7),  "Jacob buys land and builds an altar at Shechem — at the very tree of Moreh where Abraham built his FIRST altar in Canaan (12:6-7); the grandson claims the same ground with the second parcel a patriarch has ever owned in the land"),
 
+    # ---- Genesis 41 ----
+    ((41, 9),  (40, 23), "zakhar — 'I bring my faults to REMEMBRANCE today.' Two years after the chapter that ended 'he did not remember Joseph, and he forgot him,' the same verb finally fires, prompted not by conscience but by a king in a bad mood and a room with no answers"),
+    ((41, 14), (37, 24), "bor, 'the pit' — the third and last time the word is used of Joseph, and the only time he comes UP out of one. Thrown into a pit at Dothan, he called his cell a pit (40:15), and now they run him out of the pit to stand before a king"),
+    ((41, 32), (37, 5),  "'the dream was DOUBLED… because the thing is established from God' — Joseph explains to a foreign king the exact rule that governs his own life. His two dreams, sheaves and stars, were the doubled pair his brothers hated him for; by this rule they were never boasting but a settled decree, and the brothers will bow"),
+    ((41, 16), (40, 8),  "'Not I' — biladai. He said it to two prisoners ('do not interpretations belong to God?'); he says it again to the most powerful man on earth, at the one moment when overstating the gift would have paid"),
+    ((41, 16), (37, 4),  "shalom — Joseph promises Pharaoh an answer for his PEACE, the very word his brothers could not speak to him and the errand his father sent him on (37:14)"),
+    ((41, 8),  ("Daniel", 1, 20), "the chartummim fail — and the same word, the same failure, recurs in Babylon's court, where the king's experts are outmatched by a Hebrew captive (Daniel 1:20; 2:2). Genesis 41 is the template Daniel is written on"),
+    ((41, 42), (38, 18), "the signet — the last man in this book to hand one over was Judah, surrendering his identity to a stranger at a roadside; here a king gives his away to make a slave into himself"),
+    ((41, 43), (37, 7),  "Egypt bows before Joseph's chariot while a herald shouts — the sheaves of his own dream 'came around and bowed down to my sheaf'"),
+
     # ---- Genesis 40 ----
     ((40, 15), (37, 24), "bor, 'the pit' — Joseph describes his Egyptian cell with the identical word used of the dry cistern his brothers threw him into at Dothan. The KJV, ASV and NIV all switch to 'dungeon' here and hide it; this translation reads 'pit' in both"),
     ((40, 14), (39, 21), "chesed — two verses from the end of the previous chapter God 'extended kindness' to Joseph in this same jail; now Joseph asks a man for the same thing, and the chapter's last verse is the answer"),
@@ -2615,6 +2699,8 @@ VERSE_OF_DAY = [
     (39, 9, "“How then could I do this great evil, and sin against God?” The wrong he names is against someone who is not in the room."),
     (40, 8, "“Do not interpretations belong to God?” Said by a prisoner to two courtiers who miss their professionals."),
     (40, 23, "“And he forgot him.” The whole chapter turns on a verb that, every other time Genesis uses it, is followed by a rescue."),
+    (41, 16, "“Not I — God will answer.” The one moment when overstating his gift would have paid, and he refuses the credit first."),
+    (41, 32, "Why a dream comes twice: “the thing is established from God, and God is hurrying to do it.”"),
 ]
 
 # ---------------------------------------------------------------------------
