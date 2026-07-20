@@ -231,6 +231,14 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("agape", "agape", "ἀγάπη", "agape",
+     "LOVE — the noun this literature is built on. Greek had several words for love and AGAPE was the least loaded of them: not EROS (desire), not PHILIA (the warm bond of friends and kin), but a comparatively colourless word that the Septuagint and then the New Testament filled up with content. \u26a0\ufe0f It is often said that AGAPE means specifically divine or selfless love while PHILEO means mere affection; that is an overstatement — John uses the two almost interchangeably (compare 21:15-17, where the verbs alternate with no evident shift). What is true is that this literature DEFINES the word rather than assuming it: 2 John 6 says flatly, 'this is love: that we walk according to his commandments' — love as a road walked, not a feeling described.", ("2 John", 1, 6)),
+    ("aletheia", "aletheia", "ἀλήθεια", "aletheia",
+     "TRUTH — and in John's writing far more than accuracy. The word saturates 2 John: five times in the first three verses (loved IN truth, all who KNOW the truth, the truth that REMAINS in us, grace and peace 'in truth and love'). It behaves less like a set of correct statements than like a place you can stand in and walk in — one can 'walk in truth' (v. 4) the way one walks in a road. \u26a0\ufe0f The letter's whole argument depends on truth and love being welded rather than balanced: the refusal of hospitality in vv. 10-11 is offered as an APPLICATION of love, not an exception to it. Greek ALETHEIA is built on a negation — 'un-concealment' — though by the first century that etymology is long buried in ordinary usage.", ("2 John", 1, 1)),
+    ("meno", "meno", "μένω", "meno",
+     "To REMAIN, abide, stay put — John's favourite verb and the hinge of 2 John. The letter sets it directly against PROAGO, to 'run ahead': 'everyone who RUNS AHEAD and does not REMAIN in the teaching of the Christ does not have God' (v. 9). \u26a0\ufe0f The irony is almost certainly deliberate — the opponents evidently presented themselves as ADVANCED, and the letter takes their own vocabulary and turns it: to get out in front of the teaching is not to arrive somewhere better but to leave. The same verb carries the Gospel's 'remain in me' (John 15) and the truth that 'REMAINS in us and will be with us forever' (v. 2). In a letter about who may be received, the verb for staying is the one that decides it.", ("2 John", 1, 9)),
+    ("entole", "entole", "ἐντολή", "entole",
+     "A COMMANDMENT — a specific charge or instruction, not a body of law (that would be NOMOS). John uses it for the one thing commanded: love one another. 2 John 5 makes the paradox explicit — 'not as though writing you a NEW commandment, but the one we have had FROM THE BEGINNING' — which sits deliberately beside Jesus calling that same command NEW (John 13:34). Both hold in their own frame: new in the manner of the commanding, old in that it was there from the start. \u26a0\ufe0f The letter is written to people being offered novelty, which is why it presses the old.", ("2 John", 1, 5)),
     ("devarim", "devarim", "דְּבָרִים", "elleh ha-devarim",
      "WORDS — and the Hebrew name of the fifth book of the Torah, taken as always from its own opening line: ELLEH HA-DEVARIM, 'these are the words that Moses spoke' (Deuteronomy 1:1). It could not be better named. Moses does almost nothing in this book but talk: it is three long sermons and a song, delivered in the last weeks of his life to a generation that did not see Egypt. \u26a0\ufe0f The ENGLISH title comes from a different route — the Greek DEUTERONOMION, 'second law,' from the Septuagint's rendering of a phrase at 17:18 that in Hebrew means 'a COPY of this instruction.' The Greek title has stuck for two thousand years and is not quite what the Hebrew says: this is not a second law but the first one preached. DAVAR itself covers word, thing, matter, affair — in Hebrew a word is an object with weight.", ("Deuteronomy", 1, 1)),
     ("torah", "torah", "תּוֹרָה", "ha-torah ha-zot",
@@ -2218,6 +2226,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- 2 John ----
+    ((("2 John", 1, 5)), ("John", 13, 34), "'not a new commandment, but from the beginning' — set beside Jesus calling the love-command NEW"),
+    ((("2 John", 1, 5)), ("John", 1, 1), "'from the beginning' — the same instinct as the Gospel to reach back to arche, here for a commandment"),
+    ((("2 John", 1, 7)), ("John", 1, 14), "'Jesus Christ coming in flesh' — the confession the Gospel stated as 'the Word became flesh'"),
+    ((("2 John", 1, 12)), (("Numbers", 12, 8)), "'mouth to mouth' — the phrase used of God speaking with Moses, kept literal here rather than 'face to face'"),
+
     # ---- Deuteronomy 1 ----
     ((("Deuteronomy", 1, 2)), (("Deuteronomy", 1, 3)), "'eleven days from Horeb' set beside 'in the fortieth year' — the whole chapter is the explanation of that gap"),
     ((("Deuteronomy", 1, 8)), (50, 24), "the oath to Abraham, Isaac and Jacob — the same three names Joseph quoted from his deathbed, now at the border they pointed to"),
@@ -2767,6 +2781,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ("2 John", 1, 3, "“Grace, mercy, peace WILL be with us.” Every other letter makes this a wish; here it is a statement of fact."),
+    ("2 John", 1, 6, "“This is love: that we walk according to his commandments.” Love defined as a road walked, not a feeling described."),
+    ("2 John", 1, 12, "“I hope to come and speak mouth to mouth.” A letter's own admission that a letter is not enough."),
     ("Deuteronomy", 1, 2, "“Eleven days from Horeb.” The next verse says “in the fortieth year.” Nothing else needs to be said."),
     ("Deuteronomy", 1, 17, "“You shall not shrink before any man, for the judgement is God's.” A judge is handling something that is not his."),
     ("Deuteronomy", 1, 31, "“As a man carries his son.” Said directly against the accusation that God brought them out because he hated them."),
@@ -3811,5 +3828,92 @@ BOOK_INTROS = {
                 "Jordan' spoken as if from the west, and to notes like 'to this day.' This library lays the "
                 "readings out with their pedigrees and does not cast a vote — the same posture it takes on "
                 "Genesis's composition and the date of Daniel.",
+    ),
+    "2 John": dict(
+        greek_name="Ἰωάννου Βʹ (Iōannou B)",
+        greek_meaning="'Of John, 2' — the traditional Greek title. The letter itself carries no author's name at "
+                      "all: it opens simply HO PRESBYTEROS, 'the elder.'",
+        tagline="One sheet of papyrus, thirteen verses, from a man who signs himself only 'the elder' to a "
+                "woman nobody has ever conclusively identified — on truth, love, and who may be let in the "
+                "door.",
+        genre="A letter, and formally a very ordinary one: sender, recipient, greeting, body, travel plans, "
+              "closing greetings. It follows the standard Greco-Roman letter shape almost exactly, which is "
+              "part of why its length is what it is — this is about as much as fits on a single sheet.",
+        canon="One of the CATHOLIC or 'general' epistles, and one of the four short letters (2 Peter, 2 John, "
+              "3 John, Jude) that the early church was slowest to settle. Eusebius in the fourth century still "
+              "lists 2 and 3 John among the ANTILEGOMENA — the 'spoken-against' books, widely used but "
+              "disputed — while placing 1 John among the undisputed. They were received into the canon "
+              "nonetheless, and their brevity and lack of doctrinal novelty are probably why the argument was "
+              "quiet.",
+        author="The letter says only 'the elder' (HO PRESBYTEROS). The style, vocabulary and thought-world are "
+               "so close to 1 John and the Gospel of John — truth, love, remaining, light, the commandment "
+               "'from the beginning' — that common authorship with those is granted by nearly everyone. WHO "
+               "that is, is the open question: John the apostle, son of Zebedee; or a distinct figure "
+               "traditionally called 'JOHN THE ELDER,' whom Papias (c. AD 130) appears to distinguish from the "
+               "apostle in a much-argued sentence preserved by Eusebius. See 'Where the debates are.'",
+        date="Traditionally late in the first century, c. AD 85–95, from the same period and setting as 1 John. "
+             "There is nothing datable inside the letter itself; the date is inferred from its relationship to "
+             "1 John and from the situation it describes.",
+        place="By strong early tradition, EPHESUS in Asia Minor, where John is said to have spent his last "
+              "years — writing to a household or congregation somewhere in the same region, close enough to "
+              "visit (v. 12).",
+        audience="'A chosen lady and her children.' ⚠️ Whether that means an individual woman with a family, a "
+                 "CONGREGATION addressed as a woman (with 'her children' as its members and 'your chosen "
+                 "sister' in v. 13 as a sister church), or a woman actually named Kyria or Eklektē, has been "
+                 "argued since the earliest commentators and is not settled. The pronouns shift between "
+                 "singular and plural through the letter, which fits either reading.",
+        structure=[
+            ("1–3", "Greeting — the elder to the chosen lady, with truth used five times before the letter "
+                    "properly begins, and a greeting that is a statement rather than a wish."),
+            ("4–6", "Joy and the old commandment — some of her children are walking in truth; love and the "
+                    "commandments defined in terms of each other."),
+            ("7–9", "The warning — many deceivers, the confession of 'Jesus Christ coming in flesh,' the "
+                    "antichrist, and the contrast between running ahead and remaining."),
+            ("10–11", "The instruction — a teacher who does not bring this teaching gets no house and no "
+                      "welcome, because to greet him is to share in his work."),
+            ("12–13", "Closing — paper and ink are not enough; he hopes to come and speak mouth to mouth."),
+        ],
+        themes=[
+            "TRUTH and LOVE as one thing. The letter refuses to let them separate: love is defined as walking "
+            "in the commandments, and the refusal of hospitality in vv. 10-11 is an application of love, not "
+            "an exception to it.",
+            "REMAINING (menō) against running ahead. The opponents evidently presented themselves as advanced; "
+            "the letter takes the word and turns it — to go out in front of the teaching is not progress but "
+            "departure.",
+            "The confession of Jesus Christ IN FLESH — the same test as 1 John 4:2, and the dividing line the "
+            "letter draws.",
+            "HOSPITALITY as endorsement. In a world where a congregation met in a house and a travelling "
+            "teacher lived on what he was given, receiving someone was funding him. The letter is about a "
+            "door and a purse, not about ordinary courtesy.",
+            "The insufficiency of writing. It ends by saying so out loud: paper and ink will not do, and the "
+            "writer wants to be in the room.",
+        ],
+        key_words=["agape", "aletheia", "meno", "entole"],
+        key_people=["jesus"],
+        source_text="Translated from the Greek of the SBL GREEK NEW TESTAMENT (SBLGNT), the critical text "
+                    "edited by Michael W. Holmes — a modern eclectic text weighing the earliest manuscripts. "
+                    "⚠️ 2 John is short enough that its textual questions are individually visible: verse 8 "
+                    "divides over whether it is what WE worked for or what YOU worked for (and who does the "
+                    "losing), and verse 12 over whether the joy made full is OURS or YOURS — a one-letter "
+                    "difference (hēmōn / humōn) that sounded nearly identical in later Greek and is confused "
+                    "throughout the New Testament. This translation prints the SBL reading and flags the "
+                    "alternative in the note rather than quietly choosing the warmer one. The seven-version "
+                    "shelf under the chapter compares the NIV, KJV, Douay-Rheims, The Living Bible, the 1599 "
+                    "Geneva, ASV, and NWT.",
+        christ="The letter's test is Christological and blunt: 'Jesus Christ coming in flesh.' ⚠️ It is aimed "
+               "at teaching that denied a real incarnation — the tendency later called docetic, that the Son "
+               "only appeared to be human — and the answer is not an argument but a confession. Verse 9 is "
+               "the positive form: to remain in the teaching of the Christ is to have both the Father and the "
+               "Son, and to leave it is to have neither. The letter assumes the Father and Son are held or "
+               "lost together.",
+        debates="Three, and none is settled. WHO WROTE IT: 'the elder' is either John the apostle writing "
+                "modestly of himself, or a separate 'John the elder' known in Asia Minor — the question turns "
+                "largely on one ambiguous sentence of Papias preserved by Eusebius, and honest readers have "
+                "divided over it since the third century. WHO SHE IS: an individual woman, a personified "
+                "congregation, or a woman named Kyria/Eklektē. And WHAT VV. 10-11 REQUIRE: the setting is "
+                "clearly travelling teachers and the hospitality that sponsored them, but the letter has "
+                "repeatedly been used to justify shunning family and refusing ordinary courtesy — uses its "
+                "own context does not support. This library lays the readings out with their pedigrees and "
+                "does not cast a vote.",
     ),
 }
