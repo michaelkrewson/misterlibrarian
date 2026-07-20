@@ -1856,9 +1856,22 @@ def build_book_intros():
         return (f'<div class="bi-row"><div class="bi-k">{label}</div>'
                 f'<div class="bi-v">{val}</div></div>') if val else ""
 
-    for book, info in BOOK_INTROS.items():
+    # Every book the translation has STARTED gets a page — not only the ones with
+    # a hand-written BOOK_INTROS entry. A book page is first a navigator (chapter
+    # buttons + each chapter's commentary); the reference material is a bonus that
+    # appears when the data exists. Without this, seven started books (Exodus,
+    # Jeremiah, Proverbs, Daniel, Matthew, John, Revelation) were dead chips on
+    # the Table of Contents with nowhere to click through to.
+    started = []
+    for _s, b, _n, _t in CHAPTERS:
+        if b not in started:
+            started.append(b)
+
+    for book in started:
+        info = BOOK_INTROS.get(book, {})
         total = BOOK_TOTAL.get(book, 0)
-        pub = sorted(n for (_s, b, n, _t) in CHAPTERS if b == book)
+        chs = sorted(((n, t) for (_s, b, n, t) in CHAPTERS if b == book))
+        pub = [n for n, _t in chs]
         pct = round(len(pub) / total * 1000) / 10 if total else 0
 
         heb, heb_tr, heb_m = info.get("hebrew_name", ""), info.get("hebrew_translit", ""), info.get("hebrew_meaning", "")
@@ -1890,8 +1903,22 @@ def build_book_intros():
             f'<a class="bi-chip" href="encyclopedia.html#{s}">{html.escape(ency_name[s])}</a>'
             for s in info.get("key_people", []) if s in ency_name)
 
-        chapter_links = " · ".join(
-            f'<a href="{chapter_filename(book, i)}">{i}</a>' for i in pub) or "—"
+        # The chapter buttons: published chapters are live, the rest are placeholders
+        # so you can see the shape of the whole book at a glance.
+        pubset = set(pub)
+        chips = "".join(
+            (f'<a class="chch chch-done" href="{chapter_filename(book, i)}">{i}</a>'
+             if i in pubset else f'<span class="chch">{i}</span>')
+            for i in range(1, (total or (max(pub) if pub else 0)) + 1))
+
+        # Each published chapter's commentary, on the book's own page. This is the
+        # per-chapter blurb that used to live only as one long undifferentiated
+        # list on the Table of Contents, mixed in with every other book.
+        commentary = "".join(
+            f'<a class="chrow" href="{chapter_filename(book, n)}">'
+            f'<span class="chrow-n">{book} {n}</span>'
+            f'<span class="chrow-t">{t}</span></a>'
+            for n, t in chs)
 
         christ = info.get("christ", "")
         christ_panel = (f'<div class="panel prose"><h2 style="margin-top:2px">Looking forward</h2>'
@@ -1909,43 +1936,49 @@ def build_book_intros():
                                 f'<div class="bi-chips">{kp}</div>')
             words_panel += '</div>'
 
+        # Every reference panel is conditional: a book with no BOOK_INTROS entry
+        # still gets a full, useful page rather than a scatter of empty headings.
+        names_block = f'<p class="bi-names">{names_html}</p>' if names_html else ""
+        tagline_block = f'<p class="lede">{info["tagline"]}</p>' if info.get("tagline") else ""
+        facts_block = f'<div class="panel">\n  <div class="bi-facts">{facts}</div>\n</div>' if facts else ""
+        struct_block = f"<h2>How it's laid out</h2>\n<div class=\"panel\">{struct}</div>" if struct else ""
+        themes_block = (f'<h2>What it\'s about</h2>\n<div class="panel prose">'
+                        f'<ul style="margin:2px 0 0;padding-left:20px;line-height:1.6">{themes}</ul></div>'
+                        ) if themes else ""
+        source_block = (f'<div class="panel prose">\n  <h2 style="margin-top:2px">The source text</h2>'
+                        f'\n  <p>{info["source_text"]}</p>\n</div>') if info.get("source_text") else ""
+        debates_block = (f'<div class="panel prose bi-debates">\n'
+                         f'  <h2 style="margin-top:2px">Where the debates are</h2>\n'
+                         f'  <p>{info["debates"]}</p>\n</div>') if info.get("debates") else ""
+
+        ref_blocks = "\n\n".join(b for b in [facts_block, struct_block, themes_block, words_panel,
+                                              source_block, christ_panel, debates_block] if b)
+        reference = "<h2>About the book</h2>\n" + (ref_blocks or
+                    '<div class="panel prose"><p class="muted" style="margin:0">A full introduction to '
+                    f'{book} — author, date, structure, themes and the honest questions of authorship — '
+                    'is still to be written for this book.</p></div>')
+
         body = f"""{_BOOK_INTRO_CSS}
 <p class="muted" style="margin:0 0 6px"><a href="toc.html">\U0001F4DC Table of Contents</a> ›
 {book}</p>
 <h1 class="pagetitle bi-head">\U0001F4D6 {book}</h1>
-<p class="bi-names">{names_html}</p>
-<p class="lede">{info.get('tagline','')}</p>
+{names_block}
+{tagline_block}
 
-<div class="panel">
-  <div class="bi-facts">{facts}</div>
-</div>
-
-<h2>How it's laid out</h2>
-<div class="panel">{struct}</div>
-
-<h2>What it's about</h2>
-<div class="panel prose"><ul style="margin:2px 0 0;padding-left:20px;line-height:1.6">{themes}</ul></div>
-
-{words_panel}
-
-<div class="panel prose">
-  <h2 style="margin-top:2px">The source text</h2>
-  <p>{info.get('source_text','')}</p>
-</div>
-
-{christ_panel}
-
-<div class="panel prose bi-debates">
-  <h2 style="margin-top:2px">Where the debates are</h2>
-  <p>{info.get('debates','')}</p>
-</div>
-
-<h2>In this translation so far</h2>
+<h2>Chapters</h2>
 <div class="panel">
   <div class="bi-prog"><b>{len(pub)}</b> of {total} chapters translated <span class="progress-label">· {pct}%</span></div>
   <div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div>
-  <p style="margin:12px 0 0">Chapters: {chapter_links}</p>
+  <p class="muted" style="margin:12px 0 8px">Gold chapters are published — click one to read it. The rest are still ahead.</p>
+  <div class="chgrid">{chips}</div>
 </div>
+
+<h2>Chapter by chapter</h2>
+<div class="panel chlist">
+{commentary}
+</div>
+
+{reference}
 """
         out = page(f"{book} — Introduction — {SITE_NAME}", body, active="toc",
                    desc=f"An introduction to the book of {book}: author, date, place, structure, themes, "
@@ -1967,40 +2000,22 @@ def build_toc():
         pub[book].add(num)
 
     def book_chip(name, n):
+        # Any book the translation has started is a live link to its own page —
+        # build_book_intros() now generates one for every started book, so a
+        # started book is never a dead chip here.
         if name in pub:
             inner = f'{name} <b>{len(pub[name])}/{n}</b>'
-            if name in BOOK_INTROS:
-                return f'<a class="book book-active" href="book-{book_slug(name)}.html">{inner}</a>'
-            return f'<span class="book book-active">{inner}</span>'
+            return f'<a class="book book-active" href="book-{book_slug(name)}.html">{inner}</a>'
         return f'<span class="book">{name} <i>{n}</i></span>'
     ot = "".join(book_chip(n, c) for n, c in BOOKS_OT)
     nt = "".join(book_chip(n, c) for n, c in BOOKS_NT)
-    rows = "".join(
-        f'<a class="chrow" href="{chapter_filename(book, num)}"><span class="chrow-n">{book} {num}</span>'
-        f'<span class="chrow-t">{teaser}</span></a>'
-        for _, book, num, teaser in CHAPTERS)
-
-    # a "Now Reading" chip grid for each in-progress book
-    now_reading = []
-    for book in book_seen:
-        total = BOOK_TOTAL.get(book, max(pub[book]))
-        chips = "".join(
-            (f'<a class="chch chch-done" href="{chapter_filename(book, i)}">{i}</a>'
-             if i in pub[book] else f'<span class="chch">{i}</span>')
-            for i in range(1, total + 1))
-        intro_link = (f'  <p class="muted" style="margin:2px 0 10px"><a href="book-{book_slug(book)}.html">'
-                      f'\U0001F4D6 Introduction to {book} — author, date, structure, and the questions '
-                      f'behind it →</a></p>\n') if book in BOOK_INTROS else ""
-        now_reading.append(f'''<h2>Now Reading — {book}</h2>
-<div class="panel">
-  <div class="now-reading"><span class="nr-badge">In Progress</span>
-  <span class="nr-book">{book} · {len(pub[book])} of {total} chapters</span></div>
-{intro_link}  <div class="chgrid">{chips}</div>
-</div>''')
-    now_reading_html = "\n".join(now_reading)
+    # The per-book chapter grids and the per-chapter commentary that used to be
+    # duplicated here now live on each book's own page, where they belong. This
+    # page is the navigator: progress, then all 66 books.
     body = f"""<h1 class="pagetitle">\U0001F4DC Table of Contents</h1>
-<p class="lede">Every chapter of the translation, tracked as it's finished. Gold numbers are published
-and link to their chapter; everything else is still ahead.</p>
+<p class="lede">Every book of the Bible, and how far the translation has reached in each. A book in
+gold has been started — open it for its chapters and the commentary on each one. Everything else is
+still ahead.</p>
 
 <h2>Progress</h2>
 <div class="panel">
@@ -2010,13 +2025,6 @@ and link to their chapter; everything else is still ahead.</p>
   </div>
   <div class="bar"><div class="bar-fill" style="width:{pct}%"></div></div>
 </div>
-
-<h2>Published chapters</h2>
-<div class="panel chlist">
-{rows}
-</div>
-
-{now_reading_html}
 
 <h2>All 66 Books</h2>
 <div class="panel">
