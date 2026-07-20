@@ -231,6 +231,10 @@ DICTIONARY = [
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
+    ("anokhi", "anokhi", "אָנֹכִי", "anokhi",
+     "I, MYSELF — the long, emphatic form of the pronoun (beside the ordinary ANI). Hebrew normally carries the subject inside the verb, so writing the pronoun out at all is emphasis, and using the long form doubles it. Genesis 46:4 uses it TWICE in one verse, at the border, to a frightened old man: 'ANOKHI will go down with you to Egypt, and ANOKHI will surely bring you up again.' The promise is not that the family will be spared the descent but that God is going into it with them and coming back out. The same word opens the Ten Commandments ('ANOKHI is Jehovah your God,' Exodus 20:2). KJV catches it with 'I will go down with thee… and I will also surely bring thee up again.'", (46, 4)),
+    ("mikneh", "mikneh", "מִקְנֶה", "anshei mikneh",
+     "LIVESTOCK, and by extension the wealth held in it — from QANAH, 'to acquire': cattle as the thing you buy WITH, the standing capital of a herding people. The phrase ANSHEI MIKNEH, 'men of livestock,' is the one Joseph coaches his brothers to say to Pharaoh (46:34) instead of the blunter RO'EI TSON, 'shepherds of flocks,' which he uses himself when briefing them (46:32) — owners rather than hired hands, the same trade with a better title on it. It is a small, precise piece of court management, and Genesis lets you watch him do it.", (46, 32)),
     ("michyah", "michyah", "מִחְיָה", "le-michyah",
      "PRESERVATION OF LIFE, sustenance — from CHAYAH, to live: literally 'a means of staying alive.' It is the first of the three salvation words Joseph piles up when he finally explains himself: 'God sent me before you LE-MICHYAH — to preserve life' (45:5). The same root closes the chapter, when the wagons are seen and 'the SPIRIT OF JACOB REVIVED' (vatechi ruach, 45:27) — the man who insisted he would go down to Sheol mourning comes back to life in a clause. KJV 'to preserve life'; ASV the same.", (45, 5)),
     ("sheerit", "she'erit", "שְׁאֵרִית", "she'erit",
@@ -2194,6 +2198,19 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Genesis 46 ----
+    ((46, 1),  (26, 24), "Beersheba: where Isaac had his own night visit and built an altar — which is why Jacob sacrifices here to 'the God of his father Isaac'"),
+    ((46, 2),  (22, 11), "'Jacob, Jacob' — the doubled name and the one-word answer, hineni, as at the binding: 'Abraham, Abraham'"),
+    ((46, 2),  (37, 13), "hineni, 'here I am' — Joseph's word when his father sent him to find his brothers; the errand that ended in the pit"),
+    ((46, 3),  (26, 2),  "the prohibition reversed at the same border: God told ISAAC 'do not go down to Egypt'; Jacob is told 'do not FEAR to go down'"),
+    ((46, 4),  (50, 13), "'I will surely bring you up again' — discharged personally when Jacob's body is carried back to Machpelah, and nationally at the exodus"),
+    ((46, 5),  (45, 27), "the wagons that convinced him, now carrying him"),
+    ((46, 12), (38, 7),  "'and Er and Onan died in the land of Canaan' — chapter 38 acknowledged in a subordinate clause of the family record"),
+    ((46, 15), (34, 1),  "Dinah counted among Leah's children, so chapter 34 is not quietly dropped"),
+    ((46, 30), (37, 35), "'let me die this time' — against all the times he said he would go down to Sheol mourning"),
+    ((46, 30), (45, 28), "'let me go and see him before I die' — answered"),
+    ((46, 34), ("Exodus", 1, 8), "the separation strategy that keeps them a people, and eventually marks them: 'there arose a new king who did not know Joseph'"),
+
     # ---- Genesis 45 ----
     ((45, 1),  (43, 31), "'could no longer hold himself in' — the same verb (hit'appeq) he used to get through the meal in ch. 43, now negated: the restraint finally fails"),
     ((45, 4),  (37, 28), "'whom you sold into Egypt' — the act named plainly, to their faces, twenty-two years later"),
@@ -2682,6 +2699,9 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    (46, 3, "“Do not fear to go down to Egypt.” The permission the family needed — God had forbidden Isaac the same journey."),
+    (46, 4, "“I myself will go down with you… and I myself will surely bring you up again.” The exile and the return promised in one breath."),
+    (46, 30, "“Let me die this time, after my seeing your face.” Not a wish to die — a statement that the thing that made death unbearable is gone."),
     (45, 3, "“I am Joseph. Is my father still alive?” — and his brothers could not answer him."),
     (45, 8, "“It was not you who sent me here, but God” — said nine words after “whom you sold.” Both are true."),
     (45, 24, "“Do not be agitated on the way.” The last thing he says to them, and it may mean: don't spend the trip arguing about whose fault it was."),
