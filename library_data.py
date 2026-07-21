@@ -729,6 +729,14 @@ DICTIONARY = [
      "BURDENS, forced labors — the specific word for Egypt's imposed toil. It runs through the opening of Exodus like a drumbeat: taskmasters set over Israel 'to afflict them with their SIVLOT' (1:11), Pharaoh's 'get to your burdens!' (5:4), and then, in the great promise, 'I will bring you out from under the BURDENS of the Egyptians' (6:6-7) — the very word of the oppression turned around in the mouth of the redeemer. What God undoes is named with the word that named the wound.", ("Exodus", 6, 6)),
     ("mofet", "mofet", "מוֹפֵת", "mofet",
      "A WONDER, portent, marvel — the heavier partner of OT ('sign'). Pharaoh demands one ('give a MOFET for yourselves,' 7:9) and God promises to multiply 'my signs and my WONDERS in the land of Egypt' (7:3). The pair signs-and-wonders becomes the fixed phrase for the Exodus acts (Deuteronomy 6:22; Psalm 135:9) and is carried straight into the New Testament for the works of Jesus and the apostles (Acts 2:22). A mofet is not a trick to impress but a portent that MEANS something — it points past itself to the one who sent it.", ("Exodus", 7, 9)),
+    ("arov", "arov", "עָרֹב", "arov",
+     "SWARM — the name of the fourth plague, and the Hebrew never says a swarm of WHAT. The root suggests 'mixture,' which has produced three readings: swarms of flies (the KJV supplies 'flies'), the dog-fly specifically (the Greek Old Testament), or a mixed horde of wild animals (a strand of Jewish tradition). ⚠️ This translation keeps the bare 'swarms.' It is the first plague from which GOSHEN is exempted (8:18) — the point at which the blows begin to discriminate between Israel and Egypt.", ("Exodus", 8, 17)),
+    ("kinnim", "kinnim", "כִּנִּים", "kinnim",
+     "GNATS — or lice, or mosquitoes; the word is genuinely uncertain (KJV 'lice,' most modern versions 'gnats'). The third plague comes with no warning and no demand, straight out of the dust of the earth, and it is the one the magicians of Egypt CANNOT reproduce: 'this is the finger of God' (8:15). Whatever the insect, its importance is that it ends the contest of skill — from here Egypt's experts are spectators.", ("Exodus", 8, 12)),
+    ("etzba", "etzba Elohim", "אֶצְבַּע אֱלֹהִים", "etzba Elohim",
+     "'THE FINGER OF GOD' — the confession wrung out of Pharaoh's own magicians when they cannot duplicate the gnats (8:15). The idiom means God acting DIRECTLY, without instrument or effort: a finger, not even a hand or an arm. It returns for the tablets of the covenant, 'written with the finger of God' (31:18; Deuteronomy 9:10), and Jesus takes it up for his exorcisms — 'if I by the finger of God cast out demons, then the kingdom of God has come upon you' (Luke 11:20), where Matthew's parallel reads 'the Spirit of God.'", ("Exodus", 8, 15)),
+    ("kaved", "kaved", "כָּבֵד", "kaved",
+     "HEAVY, weighty — and of a heart, dull and unresponsive. It is one of THREE verbs Exodus uses for Pharaoh's refusal: KAVED ('made heavy,' 8:11, 28; 9:34), CHAZAQ ('made strong, firm,' 7:13; 8:15), and QASHAH ('made stubborn,' 7:3). ⚠️ Most English versions flatten all three into 'hardened,' which hides that Exodus is describing the same refusal from different angles — a heart weighed down like a stone, braced like a wall, stiffened like a neck — and that the same book says both that PHARAOH did it and that GOD did it, without ever reconciling them. The root also gives kavod, 'glory' — literally 'weight.'", ("Exodus", 8, 11)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3003,6 +3011,9 @@ XREFS = [
     (("Exodus", 7, 17), ("Exodus", 5, 2), "'by this you shall know that I am Jehovah' — the direct answer to Pharaoh's 'Who is Jehovah? I do not know Jehovah' (5:2)"),
     (("Exodus", 7, 20), ("Exodus", 1, 22), "the Nile struck first and turned to blood — the very river into which Pharaoh commanded every Hebrew boy be thrown (1:22)"),
     (("Exodus", 7, 9), (1, 21), "tannin — the staff becomes not a mere snake but the great serpent-monster, the word used of the sea creatures at creation (Genesis 1:21)"),
+    (("Exodus", 8, 22), (43, 32), "'an abomination to the Egyptians' — to'evah, the same revulsion that made the Egyptians eat at a separate table from Joseph's brothers (Genesis 43:32)"),
+    (("Exodus", 8, 18), (45, 10), "Goshen set apart from the swarms — the very land Joseph secured for his family (Genesis 45:10), now marked out for protection"),
+    (("Exodus", 8, 6), ("Exodus", 7, 17), "'so that you may know that there is none like Jehovah our God' — the refrain begun at the first plague (7:17)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3267,6 +3278,9 @@ VERSE_OF_DAY = [
     ("Exodus", 7, 1, "“See, I have made you God to Pharaoh, and Aaron your brother shall be your prophet.”"),
     ("Exodus", 7, 5, "“The Egyptians shall know that I am Jehovah.” The direct answer to Pharaoh's 'I do not know Jehovah.'"),
     ("Exodus", 7, 12, "“Aaron's staff swallowed up their staffs.” The first picture of what the sea will do to Pharaoh's army."),
+    ("Exodus", 8, 6, "“Tomorrow.” Offered the end of the plague, Pharaoh chooses one more night with the frogs."),
+    ("Exodus", 8, 15, "“This is the finger of God.” Egypt's own magicians concede what the king will not."),
+    ("Exodus", 8, 18, "“I will set apart the land of Goshen… that you may know that I am Jehovah in the midst of the land.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3668,6 +3682,9 @@ CHRON_CHAPTERS = {
     "exod7": dict(era="exodus",
                   when="'I have made you God to Pharaoh' — the staff that becomes a serpent and swallows the magicians', and the first plague: the Nile turned to blood.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds; Moses is eighty and Aaron eighty-three (7:7) when the plagues begin."),
+    "exod8": dict(era="exodus",
+                  when="Plagues two through four — the frogs and Pharaoh's strange 'tomorrow'; the gnats the magicians cannot copy ('the finger of God'); and the swarms, from which Goshen alone is set apart.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds. ⚠️ Masoretic numbering: this chapter = English 8:5-32."),
 }
 
 CHRON_EVENTS = [
