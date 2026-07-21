@@ -753,6 +753,12 @@ DICTIONARY = [
      "LOCUST — from a root meaning to be many, so the name is the swarm. The eighth plague (Exodus 10:4-19), and afterward the Bible's standing image of unstoppable devastation and of armies: Judges 6:5 has Midian coming up 'like locusts for multitude,' and Joel builds a whole book out of a locust invasion read as the day of Jehovah. ⚠️ The plague is delivered by ordinary weather — an east wind brings the swarm in, a strong sea wind carries it out — which is the pattern of most of the plagues: not impossible events so much as announced ones. John the Baptist ate them (Mark 1:6); Leviticus 11:22 lists the locust among the few insects Israel may eat.", ("Exodus", 10, 4)),
     ("choshech", "choshech", "חֹשֶׁךְ", "choshech",
      "DARKNESS — the word that is present in the Bible's second sentence, 'and DARKNESS was over the face of the deep' (Genesis 1:2), before light is spoken. The ninth plague brings it back over Egypt for three days, doubled for weight as choshech-afelah, a darkness of thick gloom, and described by a strange phrase: 'let the darkness be FELT' (Exodus 10:21). ⚠️ It is aimed at Ra, the sun god at the head of Egypt's pantheon, whose son the Pharaoh claimed to be. Scripture keeps the word moral as well as physical — 'the people walking in DARKNESS have seen a great light' (Isaiah 9:2) — and the plague's own image returns at the cross, where darkness covers the land for three hours (Mark 15:33).", ("Exodus", 10, 21)),
+    ("tzeakah", "tze'akah / za'aq", "צְעָקָה", "tze'akah",
+     "An OUTCRY — not a prayer but the raw shout of someone being crushed, and in the Bible God is depicted as hearing it whether or not it is addressed to him. It opens Exodus: 'the sons of Israel groaned because of the bondage and CRIED OUT, and their OUTCRY went up to God' (2:23), 'I have heard their OUTCRY' (3:7, 9). ⚠️ The same word then returns on the other side: 'there shall be a great OUTCRY in all the land of Egypt' (11:6; 12:30). Exodus never comments on the symmetry — it simply uses one word for both. The outcry of Sodom and Gomorrah reached God the same way (Genesis 18:20-21), and Abel's blood 'cries out' from the ground (Genesis 4:10); Isaiah puns on it bitterly — God looked for justice (mishpat) and found bloodshed (mispach), for righteousness (tzedaqah) and found an OUTCRY (tze'aqah) (5:7).", ("Exodus", 11, 6)),
+    ("hifla", "hiflah / palah", "הִפְלָה", "hiflah",
+     "To SEPARATE, set apart, make a distinction — and it belongs to the same family as PELE, 'a wonder,' so the word carries a hint of something marvellously singled out. It is the technical term for the dividing line the plagues draw: 'I will SET APART the land of Goshen' at the swarms (Exodus 8:18), 'Jehovah will make a DIVISION between the livestock of Israel and the livestock of Egypt' (9:4), and, on the last night, 'that you may know that Jehovah makes a DISTINCTION between Egypt and Israel' (11:7). ⚠️ The distinction is announced three times before it is ever sealed in blood on a doorframe — the mechanism of Passover is the last form of a line already being drawn.", ("Exodus", 11, 7)),
+    ("af", "af", "אַף", "af",
+     "The NOSE — and therefore ANGER, because Hebrew locates rage in the flaring, snorting nostril. 'Burning of the AF' (charon af / chori-af) is the standard idiom for fury: Moses leaves Pharaoh 'in BURNING ANGER' (Exodus 11:8), and the same phrase is used far more often of God. ⚠️ The idiom shapes one of the Bible's great self-descriptions: God is erekh APAYIM, 'LONG OF NOSTRILS' (Exodus 34:6) — slow to anger, a long fuse before the burn — which the KJV renders 'longsuffering' and most versions 'slow to anger,' losing the picture. Proverbs keeps it physical: 'he who is LONG OF NOSTRILS is better than the mighty' (16:32).", ("Exodus", 11, 8)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3040,6 +3046,12 @@ XREFS = [
     (("Exodus", 10, 15), ("Exodus", 9, 32), "the locusts eat the late wheat and spelt the hail had spared (Ex 9:32)"),
     (("Exodus", 10, 19), ("Exodus", 2, 3), "the Sea of REEDS — the same word as the reeds among which the baby's ark was set (Ex 2:3)"),
     (("Exodus", 10, 23), ("Exodus", 8, 18), "'light in their dwellings' — the distinction first drawn at the swarms (Ex 8:18, Masoretic numbering)"),
+    (("Exodus", 11, 2), (15, 14), "'articles of silver and gold' — 'afterward they shall come out with great possessions' (Gen 15:14)"),
+    (("Exodus", 11, 2), ("Exodus", 3, 22), "the asking of silver and gold, told to Moses at the burning bush (Ex 3:22)"),
+    (("Exodus", 11, 5), ("Exodus", 4, 22), "'every firstborn shall die' — the sentence announced at 4:22-23, 'Israel is my firstborn son… I will kill your son, your firstborn'"),
+    (("Exodus", 11, 6), ("Exodus", 2, 23), "'a great outcry in all the land of Egypt' — the same word as Israel's outcry from the bondage (Ex 2:23)"),
+    (("Exodus", 11, 7), ("Exodus", 8, 18), "'Jehovah makes a distinction' — the dividing verb of the swarms (Ex 8:18) and the livestock (9:4)"),
+    (("Exodus", 11, 8), ("Exodus", 10, 7), "'your servants shall bow down to me' — the officials who already said 'do you not yet know that Egypt is destroyed?' (Ex 10:7)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3315,6 +3327,9 @@ VERSE_OF_DAY = [
     ("Exodus", 10, 7, "“How long shall this man be a snare to us? Do you not yet know that Egypt is destroyed?” The servants see what the king cannot."),
     ("Exodus", 10, 23, "“They did not see one another… but for all the sons of Israel there was light in their dwellings.”"),
     ("Exodus", 10, 26, "“Not a hoof shall be left behind… and we do not know with what we are to serve Jehovah until we come there.”"),
+    ("Exodus", 11, 3, "“The man Moses was very great in the land of Egypt.” The fugitive shepherd of chapter 2, in Pharaoh's own court."),
+    ("Exodus", 11, 6, "“There shall be a great outcry in all the land of Egypt.” The book's first word for Israel's suffering, now used of Egypt."),
+    ("Exodus", 11, 7, "“Not a dog shall sharpen its tongue… so that you may know that Jehovah makes a distinction.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3725,6 +3740,9 @@ CHRON_CHAPTERS = {
     "exod10": dict(era="exodus",
                   when="Plagues eight and nine: locusts brought in on an east wind and swept into the Sea of Reeds by a west wind, and three days of darkness that can be felt. Pharaoh's own officials break first — 'do you not yet know that Egypt is destroyed?' — and the bargaining ends with Moses refusing to leave a hoof behind.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds. The locusts finish the late wheat and spelt the hail spared, so this falls weeks after chapter 9 and shortly before the Passover in the month of the ear."),
+    "exod11": dict(era="exodus",
+                  when="The tenth blow announced: at midnight every firstborn in Egypt, from the throne to the millstones. Moses is told to have the people ask their neighbors for silver and gold, and leaves Pharaoh in burning anger — the last words of the last audience.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — days before the Passover, in the month of the ripening ear."),
 }
 
 CHRON_EVENTS = [
