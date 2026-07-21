@@ -737,6 +737,14 @@ DICTIONARY = [
      "'THE FINGER OF GOD' — the confession wrung out of Pharaoh's own magicians when they cannot duplicate the gnats (8:15). The idiom means God acting DIRECTLY, without instrument or effort: a finger, not even a hand or an arm. It returns for the tablets of the covenant, 'written with the finger of God' (31:18; Deuteronomy 9:10), and Jesus takes it up for his exorcisms — 'if I by the finger of God cast out demons, then the kingdom of God has come upon you' (Luke 11:20), where Matthew's parallel reads 'the Spirit of God.'", ("Exodus", 8, 15)),
     ("kaved", "kaved", "כָּבֵד", "kaved",
      "HEAVY, weighty — and of a heart, dull and unresponsive. It is one of THREE verbs Exodus uses for Pharaoh's refusal: KAVED ('made heavy,' 8:11, 28; 9:34), CHAZAQ ('made strong, firm,' 7:13; 8:15), and QASHAH ('made stubborn,' 7:3). ⚠️ Most English versions flatten all three into 'hardened,' which hides that Exodus is describing the same refusal from different angles — a heart weighed down like a stone, braced like a wall, stiffened like a neck — and that the same book says both that PHARAOH did it and that GOD did it, without ever reconciling them. The root also gives kavod, 'glory' — literally 'weight.'", ("Exodus", 8, 11)),
+    ("shechin", "shechin", "שְׁחִין", "shechin",
+     "A BOIL, an inflamed ulcerating sore — the sixth plague, 'a SHECHIN breaking out in blisters on man and on beast' (Exodus 9:9-11), severe enough that Egypt's magicians could not stand up under it. The word runs through the rest of the Bible as the mark of affliction: the sores Leviticus 13 teaches the priest to examine; the boil Hezekiah is healed of by a cake of figs (2 Kings 20:7); and the sores that cover Job from the sole of his foot to his crown (Job 2:7). ⚠️ Most pointedly, Deuteronomy 28:27 threatens a disobedient Israel with 'the SHECHIN OF EGYPT' — the plague they watched fall on their oppressors, named as a covenant curse against themselves.", ("Exodus", 9, 9)),
+    ("barad", "barad", "בָּרָד", "barad",
+     "HAIL — the seventh plague, and in the Bible a weapon rather than weather. Exodus 9 describes it with fire flashing inside it, shattering trees and killing whatever was left in the open. Joshua 10:11 records that in the battle at Beth-horon 'more died from the HAILSTONES than the sons of Israel killed with the sword,' and Job is asked whether he has seen 'the storehouses of the HAIL, which I have reserved for the time of trouble, for the day of battle and war' (38:22-23). Hail falls again as the last plague of Revelation 16:21 — the plague cycle of Exodus is the pattern the last book of the Bible reaches for.", ("Exodus", 9, 18)),
+    ("tzaddiq", "tzaddiq", "צַדִּיק", "tzaddiq",
+     "RIGHTEOUS — and not first as a moral compliment but as a COURTROOM verdict: the one who is in the right, the party the judge finds for. Its opposite, RASHA, is the guilty party. So Pharaoh's confession is legal language turned on himself: 'Jehovah is the TZADDIQ, and I and my people are the RESHA'IM' (Exodus 9:27) — the sentence a judge pronounces, spoken by the defendant. ⚠️ The same pair carries Abraham's argument at Sodom: 'will you sweep away the RIGHTEOUS with the WICKED?… shall the Judge of all the earth not do justice?' (Genesis 18:23-25). Noah is called a TZADDIQ (Genesis 6:9), and Habakkuk 2:4 — 'the RIGHTEOUS shall live by his faithfulness' — becomes the verse Paul builds Romans on.", ("Exodus", 9, 27)),
+    ("aviv", "aviv", "אָבִיב", "aviv",
+     "The EAR of grain at the green, ripening stage — barley nearly ready but not yet hard. Exodus 9:31 uses it as a farmer would: the hail destroyed the barley 'for the barley was in the AVIV,' while the later wheat survived, a detail that quietly dates the plague to roughly late January or early February in Egypt. ⚠️ The word then becomes a MONTH: 'today you are going out, in the month of the AVIV' (Exodus 13:4), the month of the ripening ear, in which Passover falls and Israel is commanded to keep it forever (Deuteronomy 16:1). After the exile the same month is called by its Babylonian name, NISAN. The barley that ripens in this chapter is the calendar the redemption is dated by.", ("Exodus", 9, 31)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2046,7 +2054,7 @@ ENCYCLOPEDIA = [
               "documented match. What the text is clear about is the shape of the story: the same ground that "
               "receives them as honoured guests of the vizier holds them as slaves in Exodus 1, and it is from "
               "here that they leave.",
-         refs=[(45, 10), (46, 28), (47, 6), (47, 27), ("Exodus", 8, 22), ("Exodus", 9, 26)]),
+         refs=[(45, 10), (46, 28), (47, 6), (47, 27), ("Exodus", 8, 18), ("Exodus", 9, 26)]),
     dict(slug="dothan", name="Dothan", kind="place", aliases=["Dothan"],
          desc="The grazing town where Joseph finally found his brothers — and was stripped, thrown into a dry "
               "cistern, and sold (37:17-28). It is a real and well-identified site: TELL DOTHAN, about thirteen "
@@ -3014,6 +3022,11 @@ XREFS = [
     (("Exodus", 8, 22), (43, 32), "'an abomination to the Egyptians' — to'evah, the same revulsion that made the Egyptians eat at a separate table from Joseph's brothers (Genesis 43:32)"),
     (("Exodus", 8, 18), (45, 10), "Goshen set apart from the swarms — the very land Joseph secured for his family (Genesis 45:10), now marked out for protection"),
     (("Exodus", 8, 6), ("Exodus", 7, 17), "'so that you may know that there is none like Jehovah our God' — the refrain begun at the first plague (7:17)"),
+    (("Exodus", 9, 4), ("Exodus", 8, 18), "'a division between the livestock of Israel and the livestock of Egypt' — the distinction first drawn at the swarms (Ex 8:18, Masoretic numbering)"),
+    (("Exodus", 9, 12), ("Exodus", 4, 21), "the first time the narrative says JEHOVAH hardened it — announced long before at Ex 4:21"),
+    (("Exodus", 9, 12), ("Exodus", 7, 3), "'I will harden Pharaoh's heart' — the announcement now enacted"),
+    (("Exodus", 9, 26), (45, 10), "'only in the land of Goshen… there was no hail' — the land Joseph secured for his family (Gen 45:10)"),
+    (("Exodus", 9, 27), (18, 25), "'Jehovah is the righteous one, and I and my people are the wicked' — the courtroom pair of Abraham's plea at Sodom (Gen 18:25)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3281,6 +3294,10 @@ VERSE_OF_DAY = [
     ("Exodus", 8, 6, "“Tomorrow.” Offered the end of the plague, Pharaoh chooses one more night with the frogs."),
     ("Exodus", 8, 15, "“This is the finger of God.” Egypt's own magicians concede what the king will not."),
     ("Exodus", 8, 18, "“I will set apart the land of Goshen… that you may know that I am Jehovah in the midst of the land.”"),
+    ("Exodus", 9, 16, "“For this very reason I have kept you standing: to show you my power, and so that my name may be declared in all the earth.”"),
+    ("Exodus", 9, 20, "“The one who feared the word of Jehovah among the servants of Pharaoh made his servants and his livestock flee into the houses.” The first Egyptians to believe a warning."),
+    ("Exodus", 9, 27, "“I have sinned this time. Jehovah is the righteous one, and I and my people are the wicked.” A confession with a qualifier in it."),
+    ("Exodus", 9, 30, "“But as for you and your servants, I know that you do not yet fear Jehovah God.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3685,6 +3702,9 @@ CHRON_CHAPTERS = {
     "exod8": dict(era="exodus",
                   when="Plagues two through four — the frogs and Pharaoh's strange 'tomorrow'; the gnats the magicians cannot copy ('the finger of God'); and the swarms, from which Goshen alone is set apart.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds. ⚠️ Masoretic numbering: this chapter = English 8:5-32."),
+    "exod9": dict(era="exodus",
+                  when="Plagues five, six, and seven: the pestilence on Egypt's herds, the boils that drive the magicians from the court, and the hail with fire in it — the first plague announced a day ahead with instructions for surviving it, and the first that some Egyptians believe.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds. The ripening barley of 9:31 places the hail in roughly late January or early February — about two months before the Passover in the month of the ear."),
 }
 
 CHRON_EVENTS = [
