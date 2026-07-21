@@ -727,6 +727,8 @@ DICTIONARY = [
      "A POSSESSION, inheritance held by grant — the last of the seven 'I will' promises: 'I will give it to you as a MORASHAH' (Exodus 6:8). The word is rarer and more formal than the common 'inheritance' (nachalah), and it stresses that the land is not seized but GIVEN, held from the giver: Israel's title deed runs through the oath sworn to Abraham, Isaac, and Jacob. Ezekiel later uses the same word bitterly of those who claim the land by right (Ezekiel 33:24).", ("Exodus", 6, 8)),
     ("sivlot", "sivlot", "סִבְלֹת", "sivlot",
      "BURDENS, forced labors — the specific word for Egypt's imposed toil. It runs through the opening of Exodus like a drumbeat: taskmasters set over Israel 'to afflict them with their SIVLOT' (1:11), Pharaoh's 'get to your burdens!' (5:4), and then, in the great promise, 'I will bring you out from under the BURDENS of the Egyptians' (6:6-7) — the very word of the oppression turned around in the mouth of the redeemer. What God undoes is named with the word that named the wound.", ("Exodus", 6, 6)),
+    ("mofet", "mofet", "מוֹפֵת", "mofet",
+     "A WONDER, portent, marvel — the heavier partner of OT ('sign'). Pharaoh demands one ('give a MOFET for yourselves,' 7:9) and God promises to multiply 'my signs and my WONDERS in the land of Egypt' (7:3). The pair signs-and-wonders becomes the fixed phrase for the Exodus acts (Deuteronomy 6:22; Psalm 135:9) and is carried straight into the New Testament for the works of Jesus and the apostles (Acts 2:22). A mofet is not a trick to impress but a portent that MEANS something — it points past itself to the one who sent it.", ("Exodus", 7, 9)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2428,6 +2430,17 @@ ENCYCLOPEDIA = [
               "child for Pharaoh's daughter (2:1-10); Hebrews 11:23 praises the parents' faith in not fearing the "
               "king's edict.",
          refs=[("Exodus", 6, 20)], videos=[]),
+    dict(slug="gods-of-egypt", name="The gods of Egypt (and the plagues)", kind="people", aliases=[],
+         desc="Exodus states its own thesis about the plagues: 'against all the GODS OF EGYPT I will execute "
+              "judgments — I am Jehovah' (12:12). Each blow lands on something Egypt held divine. The NILE was "
+              "worshiped as HAPI, god of the inundation and giver of abundance, and bound up with Osiris — it is "
+              "turned to blood (7:20). HEQET, the frog-headed goddess of birth, supplies the second plague, her "
+              "sacred creature made unbearable by multiplication. The cattle plague strikes at HATHOR and the Apis "
+              "bull; the boils at Imhotep and the healing deities; the darkness at RA himself, the sun-god from whom "
+              "Pharaoh claimed descent; and the death of the firstborn at Pharaoh's own divinity and his heir. "
+              "⚠️ The correspondences are drawn with differing confidence by different writers — some are secure, "
+              "others are neat schemes imposed later — but the framing is the Bible's own, not a modern invention.",
+         refs=[("Exodus", 7, 17), ("Exodus", 12, 12)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2987,6 +3000,9 @@ XREFS = [
     (("Exodus", 6, 3), (17, 1), "'I appeared… as God Almighty' — El Shaddai, the name given to Abram at Genesis 17:1"),
     (("Exodus", 6, 3), (15, 7), "'by my name Jehovah I did not make myself known to them' — yet Jehovah says to Abram, 'I am Jehovah who brought you out of Ur' (Genesis 15:7); the crux of the verse"),
     (("Exodus", 6, 5), ("Exodus", 2, 24), "'I have remembered my covenant' — the same remembering that set the whole deliverance in motion (Ex 2:24)"),
+    (("Exodus", 7, 17), ("Exodus", 5, 2), "'by this you shall know that I am Jehovah' — the direct answer to Pharaoh's 'Who is Jehovah? I do not know Jehovah' (5:2)"),
+    (("Exodus", 7, 20), ("Exodus", 1, 22), "the Nile struck first and turned to blood — the very river into which Pharaoh commanded every Hebrew boy be thrown (1:22)"),
+    (("Exodus", 7, 9), (1, 21), "tannin — the staff becomes not a mere snake but the great serpent-monster, the word used of the sea creatures at creation (Genesis 1:21)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3248,6 +3264,9 @@ VERSE_OF_DAY = [
     ("Exodus", 6, 6, "“I will bring you out… I will deliver you… I will redeem you with an outstretched arm.” The seven 'I will's begin."),
     ("Exodus", 6, 7, "“I will take you to myself for a people, and I will be to you a God.” The covenant formula in a single line."),
     ("Exodus", 6, 9, "“They did not listen to Moses, from shortness of spirit and from cruel bondage.” The crushed cannot take in good news."),
+    ("Exodus", 7, 1, "“See, I have made you God to Pharaoh, and Aaron your brother shall be your prophet.”"),
+    ("Exodus", 7, 5, "“The Egyptians shall know that I am Jehovah.” The direct answer to Pharaoh's 'I do not know Jehovah.'"),
+    ("Exodus", 7, 12, "“Aaron's staff swallowed up their staffs.” The first picture of what the sea will do to Pharaoh's army."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3646,6 +3665,9 @@ CHRON_CHAPTERS = {
     "exod6": dict(era="exodus",
                   when="God's answer to Moses' accusation — 'I am Jehovah,' the seven 'I will' promises of redemption, a people too crushed to hear them, and the Levite genealogy that certifies Moses and Aaron.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — immediately before the plagues begin."),
+    "exod7": dict(era="exodus",
+                  when="'I have made you God to Pharaoh' — the staff that becomes a serpent and swallows the magicians', and the first plague: the Nile turned to blood.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds; Moses is eighty and Aaron eighty-three (7:7) when the plagues begin."),
 }
 
 CHRON_EVENTS = [
