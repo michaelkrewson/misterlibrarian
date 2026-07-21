@@ -693,6 +693,12 @@ DICTIONARY = [
      "A YOUTH, boy, young man — also a servant or attendant. Jeremiah objects to his call with it: 'I do not know how to speak, for I am only a NA'AR' (1:6), the reluctant-prophet's plea of inadequacy (compare Moses, Gideon, Isaiah). God does not dispute the youth; he answers 'do not say I am a youth' and sends him anyway. The same word covers a wide span of age and status — the infant Moses in the ark, the lad Isaac on Moriah, a king's servant.", ("Jeremiah", 1, 6)),
     ("chatat", "chatat", "חָתַת", "chatat",
      "TO BE SHATTERED, dismayed, broken with terror. In Jeremiah's charge it is a warning built on a pun: 'do not be SHATTERED (chatat) before them, lest I SHATTER (achittekha) you before them' (1:17) — fear the people and God himself will break you; the only safety is obedience. The same root sounds through the prophets for the panic of armies and the collapse of courage; its opposite is the steadiness of the one who trusts.", ("Jeremiah", 1, 17)),
+    ("raz", "raz", "רָז", "raz",
+     "MYSTERY, secret — an Aramaic word borrowed from Persian, the theme-word of Daniel 2, where it sounds eight times: Nebuchadnezzar's dream is a RAZ that only 'a God in heaven who reveals mysteries' can disclose (2:28). It names not a puzzle to be solved by cleverness but a hidden thing that must be REVEALED from above. ⚠️ The word travels: the Greek Bible and then the New Testament render it MYSTERION — Paul's 'mystery' of the gospel, once hidden and now made known (Romans 16:25; Ephesians 3:3-6), is Daniel's RAZ.", ("Daniel", 2, 18)),
+    ("pesher", "pishra / pesher", "פִּשְׁרָא", "pishra / pesher",
+     "INTERPRETATION — the Aramaic word for the meaning of a dream, sign, or oracle, paired all through Daniel with RAZ (mystery): the king demands both the dream and its PISHRA (2:6). It is the same root as the Hebrew PESHER that names the Dead Sea Scrolls' running commentaries ('the PESHER of this is…'), a whole Jewish way of reading in which a text's true meaning is a disclosed secret. In Daniel the interpretation is never the interpreter's ingenuity; it is given by God.", ("Daniel", 2, 4)),
+    ("malku", "malku", "מַלְכוּ", "malku",
+     "KINGDOM, kingship, reign — the Aramaic word that governs Daniel 2 and 7. It is kept the same across the four earthly MALKU (Babylon and the three that follow) and the everlasting fifth that 'the God of heaven shall set up… which shall never be destroyed' (2:44). The book's whole argument is a contest of kingdoms: the towering, brittle empires of the statue against the stone-become-mountain, the 'kingdom of God' that grinds them to chaff and fills the earth.", ("Daniel", 2, 44)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2330,6 +2336,26 @@ ENCYCLOPEDIA = [
               "shall again be bought in this land' (ch 32). Identified with the modern village of Anata / nearby "
               "Ras el-Kharrubeh.",
          coords=(31.83, 35.28, 0.06), refs=[("Jeremiah", 1, 1)], videos=[]),
+    dict(slug="daniel", name="Daniel (Belteshazzar)", kind="person", aliases=["Daniel"],
+         desc="'God is my judge' — a Judean of noble birth taken to Babylon in the first deportation (605 BC) and "
+              "given the Babylonian name BELTESHAZZAR (1:7). Trained for the royal court, he refuses the king's food, "
+              "is found ten times wiser than the magicians, and rises to rule the province of Babylon after revealing "
+              "and interpreting Nebuchadnezzar's dream (ch 2) — the first of a series in which he reads what no wise "
+              "man can: the writing on Belshazzar's wall, and his own visions of the four beasts, the seventy weeks, "
+              "and the resurrection. Delivered from the lions' den under Darius, he serves into the Persian period. "
+              "The book bears his name and, from chapter 7, speaks in his own voice ('I, Daniel'). His three friends "
+              "are SHADRACH, MESHACH, and ABEDNEGO.",
+         refs=[("Daniel", 1, 6), ("Daniel", 2, 19)], videos=[]),
+    dict(slug="shadrach-meshach-abednego", name="Shadrach, Meshach, and Abednego", kind="person",
+         aliases=["Shadrach", "Meshach", "Abednego"],
+         desc="The three companions of DANIEL — Judean youths whose Hebrew names, HANANIAH ('Jehovah is gracious'), "
+              "MISHAEL ('who is what God is'), and AZARIAH ('Jehovah has helped'), each carried the name of the true "
+              "God, and who were renamed in Babylon Shadrach, Meshach, and Abednego, names bound to Babylonian gods "
+              "(1:6-7). Set over the province of Babylon at Daniel's request (2:49), they are the heroes of chapter 3: "
+              "refusing to bow to Nebuchadnezzar's golden image, they are thrown into the fiery furnace and walk "
+              "unburned with a fourth figure 'like a son of the gods' — 'our God is able to deliver us; but if not, "
+              "we will not serve your gods' (3:17-18).",
+         refs=[("Daniel", 2, 49)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2874,6 +2900,9 @@ XREFS = [
     (("Jeremiah", 1, 5), (2, 7), "'before I formed you' — yatsar, the potter's verb that shaped the man from the dust (Genesis 2:7)"),
     (("Jeremiah", 1, 16), ("Jeremiah", 22, 9), "'forsaking me… other gods' — the very indictment the tariff of the last kings turns on (Jer 22:9)"),
     (("Jeremiah", 1, 17), ("Jeremiah", 20, 11), "'do not be shattered' / 'Jehovah is with me' — the fortress promise Jeremiah clings to in his darkest confession (Jer 20:11)"),
+    (("Daniel", 2, 44), ("Daniel", 12, 3), "the everlasting kingdom that 'shall stand forever' — the hope that ends in the wise shining 'like the stars forever' (Dan 12:3)"),
+    (("Daniel", 2, 28), ("Daniel", 12, 4), "'what will be in the latter days' — the horizon Daniel is told to seal up 'until the time of the end' (Dan 12:4)"),
+    (("Daniel", 2, 21), ("Daniel", 11, 2), "'he removes kings and sets up kings' — the sovereignty played out in detail through the kings of Persia and Greece (Dan 11)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3118,6 +3147,10 @@ VERSE_OF_DAY = [
     ("Jeremiah", 1, 8, "“Do not be afraid before them, for I am with you to deliver you.” The promise that bookends Jeremiah's whole call."),
     ("Jeremiah", 1, 10, "“To uproot and to tear down, to destroy and to overthrow, to build and to plant.” The mission of the whole book in six verbs."),
     ("Jeremiah", 1, 12, "“You have seen well, for I am watching over my word, to do it.” The almond (shaqed) and the Watcher (shoqed)."),
+    ("Daniel", 2, 21, "“He changes the times and the seasons; he removes kings and sets up kings.” Daniel's thesis: God, not the empires, turns history."),
+    ("Daniel", 2, 22, "“He reveals the deep and the hidden things; he knows what is in the darkness, and the light dwells with him.”"),
+    ("Daniel", 2, 28, "“There is a God in heaven who reveals mysteries.” Against gods 'whose dwelling is not with flesh' — one who speaks to a man."),
+    ("Daniel", 2, 44, "“The God of heaven shall set up a kingdom that shall never be destroyed… and it shall stand forever.” The stone that became a mountain."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3501,6 +3534,9 @@ CHRON_CHAPTERS = {
     "jer1": dict(era="exile",
                  when="The call of Jeremiah — known before the womb, made 'a prophet to the nations,' shown the almond branch and the boiling pot from the north.",
                  clock="627 BC, 'the thirteenth year of Josiah' (v2) — the start of a forty-year ministry that runs, per the superscription, to the fall of Jerusalem in 586 BC."),
+    "dan2": dict(era="exile",
+                 when="Nebuchadnezzar's dream of the four-metal statue and the stone cut without hands — the four kingdoms and the everlasting fifth; Daniel reveals both the dream and its meaning.",
+                 clock="'The second year of Nebuchadnezzar' (v1), c. 603 BC — early in the Babylonian exile. The Aramaic section of the book (2:4b-7:28) begins here."),
 }
 
 CHRON_EVENTS = [
@@ -4521,5 +4557,41 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Jeremiah is the Old Testament's great case of a book that survives in TWO editions: the Hebrew (Masoretic) text is roughly one-eighth longer than the Greek Septuagint, and the two place the oracles-against-the-nations differently — and a Hebrew fragment from Qumran matches the shorter Greek. This translation follows the Masoretic Hebrew and notes the major differences where they fall. The book is otherwise rich in wordplay — the almond/watcher pun of 1:11-12 is the first of many.",
         christ="Jeremiah's summit is the NEW COVENANT (31:31-34): 'I will put my law within them, and write it on their hearts… and I will remember their sin no more.' The New Testament takes this as the covenant sealed in Christ's blood (Luke 22:20; 1 Corinthians 11:25) and quotes it in full as fulfilled (Hebrews 8:8-12; 10:16-17). The weeping prophet — rejected by his own, made to suffer for the word, promising a covenant of the heart — has long been read as a figure of the one who wept over the same city (Luke 19:41) and inaugurated the covenant Jeremiah foresaw.",
         debates="The two EDITIONS (shorter Greek vs longer Hebrew, and the differing place of the nations-oracles) — most scholars now see the Greek as translating an earlier, shorter Hebrew edition, and the Masoretic text as a later expanded one. The book's COMPOSITION — how its poetry, prose sermons, and biography (the last likely from Baruch) came together — is much studied, as is the authenticity and dating of individual oracles, especially the prose sermons whose style resembles Deuteronomy. The prophet himself, by contrast, is one of the most vividly and personally known figures in the Old Testament.",
+    ),
+    "Daniel": dict(
+        hebrew_name="דָּנִיֵּאל",
+        hebrew_translit="Daniyyel",
+        hebrew_meaning="'God is my judge' (or 'God has judged'). The book is named for its hero, a young Judean exile in the Babylonian and Persian courts — and it is unique in the Old Testament for being written in TWO languages, Hebrew (1:1-2:4a; 8-12) and Aramaic (2:4b-7:28).",
+        greek_name="Δανιήλ (Daniel)",
+        greek_meaning="The Greek versions of Daniel carry THREE sections not in the Hebrew-Aramaic text — the Prayer of Azariah and the Song of the Three Young Men (within ch 3), Susanna, and Bel and the Dragon — which Catholic and Orthodox Bibles include and Protestants place among the Apocrypha. There were also two quite different Greek translations (the Old Greek and Theodotion), an unusual textual situation.",
+        tagline="A young exile in a pagan court, and the God who 'removes kings and sets up kings' — court tales of faith under empire (chs 1-6) and visions of the world-kingdoms giving way to the kingdom of God (chs 7-12).",
+        genre="Two genres in one book. Chapters 1-6 are COURT TALES — narratives of Daniel and his friends keeping faith under Babylonian and Persian kings (the dream-statue, the fiery furnace, the writing on the wall, the lions' den). Chapters 7-12 are APOCALYPTIC — symbolic visions of beasts, horns, and the end, the Old Testament's fullest example of the genre that flowers in Revelation.",
+        canon="In the Christian Old Testament, grouped with the Major Prophets (after Ezekiel). In the HEBREW canon, notably, Daniel stands not among the Prophets but among the WRITINGS (Ketuvim) — a placement much discussed, often tied to the book's date and its apocalyptic rather than classically-prophetic character.",
+        author="Traditionally DANIEL himself, a Judean of noble birth taken to Babylon in the first deportation (605 BC) and serving into the Persian period. The book mixes third-person narrative (chs 1-6) with first-person visions (chs 7-12, 'I, Daniel'). Critical scholarship widely holds that the book reached its final form in the 2nd century BC (see the debates).",
+        date="The great crux of the book. The TRADITIONAL date is the 6th century BC (the events' own setting, 605-536 BC), making chapters 7-12 genuine long-range prophecy. The CRITICAL consensus dates the final book to c. 165 BC, during the persecution of the Jews under Antiochus IV Epiphanes — reading the 'prophecies,' especially the detailed history of chapter 11, as a review of past events down to the author's own day (a recognized ancient genre). The question turns on the precision of chapter 11, the book's Persian and Greek loanwords, its place in the Hebrew canon, and one's view of predictive prophecy. Laid out with pedigrees; no vote.",
+        place="Babylon and the Persian court — the exile and its aftermath, from Nebuchadnezzar through Belshazzar to Darius the Mede and Cyrus of Persia.",
+        audience="The people of God under a hostile empire — whether sixth-century exiles in Babylon or second-century Jews under Antiochus, the message is the same: the pagan powers are real and terrible, but their days are numbered, God is sovereign over every throne, and faithfulness under pressure will be vindicated.",
+        structure=[
+            ["1", "The court education — Daniel and his three friends refuse the king's food and are found ten times wiser."],
+            ["2", "Nebuchadnezzar's dream of the four-metal statue and the stone — the four kingdoms and the everlasting fifth."],
+            ["3", "The golden image and the fiery furnace — Shadrach, Meshach, and Abednego, and a fourth 'like a son of the gods.'"],
+            ["4", "Nebuchadnezzar's madness and restoration — the king who learns 'heaven rules.'"],
+            ["5", "Belshazzar's feast and the writing on the wall — 'weighed and found wanting'; Babylon falls that night."],
+            ["6", "Daniel in the lions' den under Darius."],
+            ["7", "The vision of the four beasts and the 'one like a son of man,' given dominion forever."],
+            ["8-12", "Further visions — the ram and goat, the seventy weeks, the kings of the north and south (ch 11), and the resurrection and the end (ch 12)."],
+        ],
+        themes=[
+            "GOD IS SOVEREIGN OVER EMPIRES — 'he removes kings and sets up kings' (2:21); the lesson every proud king must learn, that 'the Most High rules the kingdom of men and gives it to whom he will' (4:17).",
+            "FAITHFULNESS UNDER PRESSURE — the food, the image, the prayer, the lions: God's people keep faith without power, and are vindicated (though ch 11's martyrs show that vindication is not always rescue).",
+            "THE KINGDOM OF GOD — the stone that becomes a mountain (ch 2), the everlasting dominion given to 'one like a son of man' (ch 7): the world-empires give way to a kingdom that never ends.",
+            "REVELATION OF MYSTERIES — God 'reveals the deep and hidden things' (2:22); the RAZ (mystery) made known, the sealed book, the interpreting angel — the apocalyptic conviction that the shape of history is known to God and can be disclosed.",
+            "RESURRECTION AND JUDGMENT — Daniel 12:2 is the Old Testament's clearest word of a resurrection to 'everlasting life' or 'everlasting contempt,' the horizon the whole book leans toward.",
+        ],
+        key_words=["raz", "malku", "acharit-hayamim", "pesher"],
+        key_people=["daniel", "nebuchadnezzar", "babylon", "shadrach-meshach-abednego"],
+        source_text="Translated from the pointed Masoretic text (as printed by Mechon-Mamre). ⚠️ Daniel is the Old Testament's BILINGUAL book: it opens in Hebrew (1:1-2:4a), switches to ARAMAIC — the international language of the empires — for 2:4b-7:28, then returns to Hebrew for chapters 8-12. The Aramaic chapters are the ones about the Gentile world-powers, and the seam falls mid-sentence at 2:4. The Greek tradition adds material not in the Hebrew-Aramaic (the Song of the Three, Susanna, Bel and the Dragon) and survives in two divergent translations; this translation follows the Masoretic Hebrew-Aramaic and notes the major issues where they fall.",
+        christ="Two images from Daniel became central to how the New Testament speaks of Christ. The STONE 'cut out without hands' that breaks the empires and grows to fill the earth (ch 2) is heard behind Jesus' 'stone the builders rejected' and the kingdom of God that starts small and grows (Matthew 21:42-44; 13:31-33). And the 'ONE LIKE A SON OF MAN' who comes with the clouds and is given everlasting dominion (7:13-14) is the title Jesus most often takes for himself — 'the Son of Man' — and quotes at his own trial (Mark 14:62). Daniel 9's 'seventy weeks' and 12's resurrection also run deep in New Testament expectation.",
+        debates="The DATE is the master-question (6th-century prophecy vs 2nd-century review-as-prophecy — see above), and nearly everything else attaches to it: the identity of the four kingdoms (Rome vs Greece as the fourth), of 'Darius the Mede' (unattested in other sources), the meaning of the 'seventy weeks' (9:24-27), and the referent of the 'abomination that makes desolate' (Antiochus IV, a future antichrist, or both). The book's Persian and Greek loanwords, its place in the Writings, and the extraordinary precision of chapter 11 down to about 165 BC are the main data. Laid out with pedigrees; the library prints the text and does not cast a vote.",
     ),
 }

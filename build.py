@@ -92,6 +92,7 @@ CHAPTERS = [
     ("rev1", "Revelation", 1, "The unveiling begins — Patmos, the Lord's day, one like a son of man among the lampstands, and the Alpha and the Omega."),
     ("rev2", "Revelation", 2, "The letters begin — Ephesus's lost first love, Smyrna's crown, Satan's throne at Pergamum, and Jezebel of Thyatira."),
     ("dan1", "Daniel", 1, "Babylon takes its first captives — four renamed youths, a ten-day test of vegetables and water, and 'ten hands better' than the magicians."),
+    ("dan2", "Daniel", 2, "Nebuchadnezzar's dream, and an impossible test — tell me the dream I will not tell you, or die. Daniel prays, the mystery is revealed, and he sings: God 'removes kings and sets up kings.' Then the dream itself: a great statue of gold, silver, bronze, and iron, its feet iron mixed with clay — and a stone cut without hands that shatters it all and grows into a mountain filling the earth. The four kingdoms, and the everlasting fifth; and the chapter where the book turns from Hebrew to ARAMAIC."),
     ("dan11", "Daniel", 11, "The angel's scroll of wars — Persia, Alexander, the kings of south and north, the abomination that desolates — and the seam where history becomes hope."),
     ("dan12", "Daniel", 12, "The sleepers in the ground of dust wake — everlasting life named for the first time, the sealed book, two numbers nobody has decoded, and a lot promised at the end of the days."),
     ("mat5", "Matthew", 5, "The Sermon on the Mount opens in red letters — eight Happy-sayings, salt and light, not one iota, and six rounds of 'You have heard… but I say': anger, lust, oaths, the other cheek, love for enemies."),
@@ -178,6 +179,7 @@ TEASERS_ES = {
     "gen43": "Se acaba el grano y Jacob debe dejar ir a Benjamín. Judá se ofrece a sí mismo como fiador, y bajan con un regalo que ya hizo ese camino.",
     "gen42": "Diez hermanos se inclinan ante un gobernador al que no reconocen — y confiesan, sin saber que él entiende cada palabra: «somos culpables».",
     "jer1": "El llamado de Jeremías: un muchacho que dice «solo soy un joven», conocido antes del vientre, hecho «profeta a las naciones» — con los seis verbos (arrancar, derribar… edificar y plantar), la rama de almendro y la olla hirviente del norte.",
+    "dan2": "El sueño de Nabucodonosor y una prueba imposible: la estatua de oro, plata, bronce y hierro con pies de barro, y la piedra cortada sin manos que la deshace y se hace montaña — los cuatro reinos y el quinto eterno; y el capítulo donde el libro pasa del hebreo al ARAMEO.",
 }
 
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)
