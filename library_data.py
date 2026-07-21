@@ -745,6 +745,14 @@ DICTIONARY = [
      "RIGHTEOUS — and not first as a moral compliment but as a COURTROOM verdict: the one who is in the right, the party the judge finds for. Its opposite, RASHA, is the guilty party. So Pharaoh's confession is legal language turned on himself: 'Jehovah is the TZADDIQ, and I and my people are the RESHA'IM' (Exodus 9:27) — the sentence a judge pronounces, spoken by the defendant. ⚠️ The same pair carries Abraham's argument at Sodom: 'will you sweep away the RIGHTEOUS with the WICKED?… shall the Judge of all the earth not do justice?' (Genesis 18:23-25). Noah is called a TZADDIQ (Genesis 6:9), and Habakkuk 2:4 — 'the RIGHTEOUS shall live by his faithfulness' — becomes the verse Paul builds Romans on.", ("Exodus", 9, 27)),
     ("aviv", "aviv", "אָבִיב", "aviv",
      "The EAR of grain at the green, ripening stage — barley nearly ready but not yet hard. Exodus 9:31 uses it as a farmer would: the hail destroyed the barley 'for the barley was in the AVIV,' while the later wheat survived, a detail that quietly dates the plague to roughly late January or early February in Egypt. ⚠️ The word then becomes a MONTH: 'today you are going out, in the month of the AVIV' (Exodus 13:4), the month of the ripening ear, in which Passover falls and Israel is commanded to keep it forever (Deuteronomy 16:1). After the exile the same month is called by its Babylonian name, NISAN. The barley that ripens in this chapter is the calendar the redemption is dated by.", ("Exodus", 9, 31)),
+    ("sapar", "sapar / sipper", "סָפַר", "sapar",
+     "To COUNT, and so to RECOUNT — to tell a thing through in order. The two senses stay joined: the same root gives 'number' (mispar) and 'scroll' (sefer). It carries the purpose God states for the plagues: 'that my name may be DECLARED in all the earth' (Exodus 9:16) and 'so that you may RECOUNT in the ears of your son and your son's son' (10:2). ⚠️ That second use makes the plagues a story being deliberately made — the deliverance is designed from the start to be told, which is why Passover is kept by a child asking and a parent answering. 'The heavens RECOUNT the glory of God' (Psalm 19:1) is the same verb.", ("Exodus", 10, 2)),
+    ("mokesh", "mokesh", "מוֹקֵשׁ", "mokesh",
+     "A SNARE — specifically the trigger-stick or bait-piece of a bird trap, the small thing that springs the whole mechanism. Pharaoh's own officials use it of Moses: 'How long shall this man be a MOKESH to us?' (Exodus 10:7). The Bible turns the word on Israel more often than on its enemies: the nations left in the land will be a snare (Judges 2:3), their gods a snare (Exodus 23:33; Deuteronomy 7:16), and Gideon's ephod became 'a SNARE to Gideon and to his house' (Judges 8:27). Proverbs uses it of a man's own mouth: 'the words of his lips are a SNARE to his soul' (18:7).", ("Exodus", 10, 7)),
+    ("arbeh", "arbeh", "אַרְבֶּה", "arbeh",
+     "LOCUST — from a root meaning to be many, so the name is the swarm. The eighth plague (Exodus 10:4-19), and afterward the Bible's standing image of unstoppable devastation and of armies: Judges 6:5 has Midian coming up 'like locusts for multitude,' and Joel builds a whole book out of a locust invasion read as the day of Jehovah. ⚠️ The plague is delivered by ordinary weather — an east wind brings the swarm in, a strong sea wind carries it out — which is the pattern of most of the plagues: not impossible events so much as announced ones. John the Baptist ate them (Mark 1:6); Leviticus 11:22 lists the locust among the few insects Israel may eat.", ("Exodus", 10, 4)),
+    ("choshech", "choshech", "חֹשֶׁךְ", "choshech",
+     "DARKNESS — the word that is present in the Bible's second sentence, 'and DARKNESS was over the face of the deep' (Genesis 1:2), before light is spoken. The ninth plague brings it back over Egypt for three days, doubled for weight as choshech-afelah, a darkness of thick gloom, and described by a strange phrase: 'let the darkness be FELT' (Exodus 10:21). ⚠️ It is aimed at Ra, the sun god at the head of Egypt's pantheon, whose son the Pharaoh claimed to be. Scripture keeps the word moral as well as physical — 'the people walking in DARKNESS have seen a great light' (Isaiah 9:2) — and the plague's own image returns at the cross, where darkness covers the land for three hours (Mark 15:33).", ("Exodus", 10, 21)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3027,6 +3035,11 @@ XREFS = [
     (("Exodus", 9, 12), ("Exodus", 7, 3), "'I will harden Pharaoh's heart' — the announcement now enacted"),
     (("Exodus", 9, 26), (45, 10), "'only in the land of Goshen… there was no hail' — the land Joseph secured for his family (Gen 45:10)"),
     (("Exodus", 9, 27), (18, 25), "'Jehovah is the righteous one, and I and my people are the wicked' — the courtroom pair of Abraham's plea at Sodom (Gen 18:25)"),
+    (("Exodus", 10, 2), ("Exodus", 9, 16), "'that you may RECOUNT' — the same verb as 'that my name may be declared in all the earth' (Ex 9:16)"),
+    (("Exodus", 10, 3), (15, 13), "'refuse to humble yourself' — the affliction-word God spoke to Abraham of his offspring (Gen 15:13)"),
+    (("Exodus", 10, 15), ("Exodus", 9, 32), "the locusts eat the late wheat and spelt the hail had spared (Ex 9:32)"),
+    (("Exodus", 10, 19), ("Exodus", 2, 3), "the Sea of REEDS — the same word as the reeds among which the baby's ark was set (Ex 2:3)"),
+    (("Exodus", 10, 23), ("Exodus", 8, 18), "'light in their dwellings' — the distinction first drawn at the swarms (Ex 8:18, Masoretic numbering)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3298,6 +3311,10 @@ VERSE_OF_DAY = [
     ("Exodus", 9, 20, "“The one who feared the word of Jehovah among the servants of Pharaoh made his servants and his livestock flee into the houses.” The first Egyptians to believe a warning."),
     ("Exodus", 9, 27, "“I have sinned this time. Jehovah is the righteous one, and I and my people are the wicked.” A confession with a qualifier in it."),
     ("Exodus", 9, 30, "“But as for you and your servants, I know that you do not yet fear Jehovah God.”"),
+    ("Exodus", 10, 2, "“So that you may recount in the ears of your son and your son's son.” The deliverance is designed to be told."),
+    ("Exodus", 10, 7, "“How long shall this man be a snare to us? Do you not yet know that Egypt is destroyed?” The servants see what the king cannot."),
+    ("Exodus", 10, 23, "“They did not see one another… but for all the sons of Israel there was light in their dwellings.”"),
+    ("Exodus", 10, 26, "“Not a hoof shall be left behind… and we do not know with what we are to serve Jehovah until we come there.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3705,6 +3722,9 @@ CHRON_CHAPTERS = {
     "exod9": dict(era="exodus",
                   when="Plagues five, six, and seven: the pestilence on Egypt's herds, the boils that drive the magicians from the court, and the hail with fire in it — the first plague announced a day ahead with instructions for surviving it, and the first that some Egyptians believe.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds. The ripening barley of 9:31 places the hail in roughly late January or early February — about two months before the Passover in the month of the ear."),
+    "exod10": dict(era="exodus",
+                  when="Plagues eight and nine: locusts brought in on an east wind and swept into the Sea of Reeds by a west wind, and three days of darkness that can be felt. Pharaoh's own officials break first — 'do you not yet know that Egypt is destroyed?' — and the bargaining ends with Moses refusing to leave a hoof behind.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds. The locusts finish the late wheat and spelt the hail spared, so this falls weeks after chapter 9 and shortly before the Passover in the month of the ear."),
 }
 
 CHRON_EVENTS = [
