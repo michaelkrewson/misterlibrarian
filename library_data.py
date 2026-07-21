@@ -707,6 +707,14 @@ DICTIONARY = [
      "A VOW — a binding promise made to God, often conditional ('if you will… then I will'). Hannah 'vowed a vow' (nadrah neder, 1:11): if Jehovah gives her a son she will give him back for life. The Law treats a vow with the utmost seriousness — 'when you make a vow to God, do not delay to fulfill it' (Deuteronomy 23:21; Ecclesiastes 5:4) — and Hannah keeps hers to the letter, carrying the weaned child to Shiloh and leaving him there.", ("1 Samuel", 1, 11)),
     ("nazir", "nazir", "נָזִיר", "nazir",
      "A NAZIRITE — one 'separated,' set apart to God by a vow, marked by abstaining from wine, avoiding corpse-defilement, and above all letting the hair grow uncut: 'no razor shall touch his head' (the sign Hannah pledges for Samuel, 1:11, and the mark of Samson, Judges 13). The full law is in Numbers 6. Usually a temporary vow, it is here a LIFELONG dedication from before birth — Samuel, like Samson, is given to God for the whole of his life.", ("1 Samuel", 1, 11)),
+    ("ot", "ot / otot", "אוֹת / אֹתוֹת", "ot / otot",
+     "A SIGN — a mark, token, or wonder that points beyond itself to authenticate a word or a promise. God gives Moses three OTOT to make Israel believe (Exodus 4:8-9): the staff-serpent, the leprous hand, the water-to-blood. The word runs from the rainbow, the 'sign' of the covenant with Noah (Genesis 9:12), and the sabbath, the 'sign' between God and Israel, to the plagues and the great 'signs and wonders' of the Exodus. A sign is not the point; it is a finger pointing at the one who gives it.", ("Exodus", 4, 8)),
+    ("chazak", "chazaq", "חָזַק", "chazaq",
+     "TO BE STRONG, to STRENGTHEN — and, of a heart, to HARDEN, make firm and unyielding. It opens the Exodus's hardest theological thread: 'I will HARDEN (chazaq) his heart, and he will not let the people go' (4:21). Across the plagues the book says both that JEHOVAH hardened Pharaoh's heart and that PHARAOH hardened his own (and uses two other verbs, kavad 'made heavy' and qashah 'made stubborn', alongside this one). Scripture holds the divine and the human hardening together without resolving them; the translation keeps the strong verb rather than softening it.", ("Exodus", 4, 21)),
+    ("bekhor", "bekhor", "בְּכוֹר", "bekhor",
+     "FIRSTBORN — the eldest son, who by right held the birthright, a double inheritance, and the family headship. Genesis is full of the firstborn displaced (Ishmael, Esau, Reuben); Exodus makes the firstborn a matter of life and death. God claims Israel itself as his BEKHOR — 'Israel is my firstborn son' (4:22), a claim of covenant sonship — and the conflict with Pharaoh becomes a contest over sons, climaxing when 'every firstborn in Egypt' is struck and Israel's firstborn are spared by blood (ch 12), after which every firstborn of Israel belongs to Jehovah.", ("Exodus", 4, 22)),
+    ("chatan", "chatan damim", "חֲתַן דָּמִים", "chatan damim",
+     "'BRIDEGROOM (or son-in-law) OF BLOOD' — the cryptic phrase Zipporah speaks at the terrifying night-lodging scene, cutting off her son's foreskin with a flint and touching it to 'his feet': 'surely you are a CHATAN DAMIM to me' (4:25-26). ⚠️ One of the most obscure expressions in the Hebrew Bible: chatan is 'bridegroom / son-in-law' (from the root for marriage-by-blood-tie), damim is 'blood' (plural, often of bloodshed); who is addressed, and what the phrase means, are genuinely uncertain. The likeliest sense ties it to the covenant blood of circumcision (Genesis 17) that averts the death Moses' household faced.", ("Exodus", 4, 25)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2948,6 +2956,9 @@ XREFS = [
     (("1 Samuel", 1, 10), ("Ruth", 1, 20), "'bitter in soul' — the same bitterness Naomi named over herself, calling herself Mara (Ruth 1:20)"),
     (("1 Samuel", 1, 19), (30, 22), "'Jehovah remembered her' — zakar, the covenant verb that opened Rachel's womb (Genesis 30:22)"),
     (("1 Samuel", 1, 11), ("Luke", 1, 48), "'look on the affliction of your servant' — the note Mary's Magnificat, built on Hannah's song, will strike: 'he looked on the low estate of his bondslave' (Luke 1:48)"),
+    (("Exodus", 4, 10), ("Jeremiah", 1, 6), "'not a man of words… heavy of mouth' — the reluctant prophet's plea, sounded again by Jeremiah, 'I am only a youth' (Jer 1:6)"),
+    (("Exodus", 4, 12), ("Exodus", 3, 14), "'I will be with your mouth' — ehyeh, the same verb as the Name revealed at the bush, 'I will be what I will be' (Ex 3:14)"),
+    (("Exodus", 4, 31), (50, 24), "paqad — Jehovah 'visited' Israel and saw their affliction, the very verb Joseph swore by over his coffin at the end of Genesis (50:24)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3200,6 +3211,9 @@ VERSE_OF_DAY = [
     ("1 Samuel", 1, 15, "“I have poured out my soul before Jehovah.” Hannah, praying silently, mistaken for a drunk by the priest."),
     ("1 Samuel", 1, 20, "“She called his name Samuel: because I have asked him of Jehovah.”"),
     ("1 Samuel", 1, 27, "“For this child I prayed, and Jehovah has granted me my petition that I asked of him.”"),
+    ("Exodus", 4, 11, "“Who made man's mouth?… Is it not I, Jehovah?” God's answer to Moses' 'I am slow of speech.'"),
+    ("Exodus", 4, 12, "“Now go; I will be with your mouth and teach you what you shall speak.”"),
+    ("Exodus", 4, 22, "“Israel is my firstborn son… let my son go, that he may serve me.” The tenth plague announced at the outset."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3589,6 +3603,9 @@ CHRON_CHAPTERS = {
     "1sam1": dict(era="monarchy",
                   when="The birth of Samuel — Hannah's barrenness, her vow at Shiloh, and the child asked of Jehovah and given back; the book that will give Israel its kings opens on an answered prayer.",
                   clock="Late in the period of the Judges, c. 1105 BC — a generation before Israel demands a king. 1 Samuel is the hinge from the judges to the monarchy."),
+    "exod4": dict(era="exodus",
+                  when="Moses given the three signs, appointed Aaron as his mouth, and sent back to Egypt — 'Israel is my firstborn son,' the tenth plague already spoken, and the strange night of the 'bridegroom of blood.'",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the pharaoh of the oppression (Thutmose III) has died; Moses returns to Amenhotep II, the pharaoh of the Exodus."),
 }
 
 CHRON_EVENTS = [
