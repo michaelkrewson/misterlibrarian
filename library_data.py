@@ -783,6 +783,14 @@ DICTIONARY = [
      "To REDEEM by paying a price — to buy back something that has fallen under another's claim. It is the verb of the firstborn law: a donkey's firstling is bought back with a lamb, and 'every firstborn of MAN among your sons you shall REDEEM' (Exodus 13:13, 15). ⚠️ The distinction from its close relative GA'AL is roughly that ga'al stresses the redeemer's family duty while padah stresses the PAYMENT. The word then carries the exodus itself — 'Jehovah REDEEMED you from the house of slaves' (Deuteronomy 7:8) — and becomes one of the standing verbs of rescue in the Psalms ('he will REDEEM Israel from all his iniquities,' 130:8).", ("Exodus", 13, 13)),
     ("ammud-anan", "ammud anan", "עַמּוּד עָנָן", "ammud anan",
      "PILLAR OF CLOUD — with its night form the pillar of fire, the visible presence that goes ahead of Israel from the moment they leave Egypt: 'the pillar of cloud did not depart by day, nor the pillar of fire by night, from before the people' (Exodus 13:21-22). ⚠️ It is not a map. It is a presence that moves and is followed, and it sets the pattern for the rest of the Torah: it stands between Israel and Egypt at the sea (14:19-20), descends at the tent of meeting where God speaks with Moses 'face to face' (33:9-11), and finally fills the finished tabernacle so that Israel travels only when it lifts (40:34-38; Numbers 9:15-23). Paul reads the passage under the cloud as a kind of baptism (1 Corinthians 10:1-2).", ("Exodus", 13, 21)),
+    ("mashiach", "mashiach", "מָשִׁיחַ", "mashiach",
+     "ANOINTED — one smeared with oil at his installation, so that the office belongs to God and not to the man holding it. It is the settled principle of David's exile: twice he had Saul at his mercy and refused, 'Jehovah forbid that I should stretch out my hand against JEHOVAH'S ANOINTED' (1 Samuel 24:6; 26:9), and he executes a man for claiming to have done it (2 Samuel 1:14-16). ⚠️ Kings, priests and occasionally prophets are anointed; strikingly, so is the Persian CYRUS, called 'his MASHIACH' (Isaiah 45:1) — a foreign emperor. Through Greek the word becomes MESSIAH and, translated rather than transliterated, CHRIST. The larger sense grows out of this smaller one; do not read the later meaning back into every occurrence. ⚠️ Note the bitter pun in the lament: Saul is Jehovah's MASHIACH, and his shield lies on Gilboa 'not MASHIACH with oil' (1:21) — a shield was oiled to keep the leather supple.", ("2 Samuel", 1, 14)),
+    ("qinah", "qinah", "קִינָה", "qinah",
+     "A LAMENT, a formal dirge — both the poem and the act of chanting it ('David chanted this QINAH,' 2 Samuel 1:17). It is a recognized genre with its own limping rhythm, and its signature is a repeated cry: here 'How the mighty have fallen,' three times (vv19, 25, 27). ⚠️ A lament is not a balanced obituary — David's says nothing of Saul's madness, the spear thrown at him, or the years of pursuit. Its whole business is to praise and to grieve. The book of LAMENTATIONS is named from this word in Hebrew tradition (Eikhah, 'How…', is its opening cry), and Amos parodies the form to devastating effect (5:1-2).", ("2 Samuel", 1, 17)),
+    ("tzvi", "tzvi", "צְבִי", "tzvi",
+     "BEAUTY, glory, ornament — and also GAZELLE, and the Bible plays on both. The lament opens 'the TZVI, O Israel, lies slain on your high places' (2 Samuel 1:19) and the versions split: KJV 'the beauty of Israel,' ESV 'your glory, O Israel,' NIV 'a gazelle lies slain on your heights.' ⚠️ The ambiguity may well be deliberate — a lament for something swift and lovely brought down on a hill suits either sense, and verse 23 goes on to call the dead 'swifter than eagles.' In the other direction the word names the promised land itself, 'the GLORY of all lands' (Ezekiel 20:6, 15) and Daniel's 'beautiful land' (11:16, 41).", ("2 Samuel", 1, 19)),
+    ("sefer-hayashar", "sefer ha-yashar", "סֵפֶר הַיָּשָׁר", "sefer ha-yashar",
+     "THE BOOK OF JASHAR — literally 'the Book of the Upright,' a collection the Bible quotes and we no longer possess. It is cited twice: for the sun standing still at Gibeon (Joshua 10:13) and for David's lament over Saul and Jonathan (2 Samuel 1:18). ⚠️ Scripture openly names sources that have not survived — also 'the Book of the Wars of Jehovah' (Numbers 21:14) and the royal chronicles repeatedly referenced in Kings — which tells us the biblical writers worked with archives and expected readers to know it. (Several later works circulate under the title 'Book of Jasher'; none is the book quoted here.)", ("2 Samuel", 1, 18)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1912,7 +1920,7 @@ ENCYCLOPEDIA = [
               "(1 Samuel 15); and Haman 'the Agagite,' who plots to annihilate every Jew in the Persian empire "
               "(Esther 3), is read as the last flowering of that line. So the roll of honor for Esau also, in a "
               "single verse, plants the enemy that will shadow Israel for a thousand years.",
-         refs=[(36, 12), (36, 16)], videos=[]),
+         refs=[(36, 12), (36, 16), ("2 Samuel", 1, 1), ("2 Samuel", 1, 13)], videos=[]),
     dict(slug="horites", name="Horites", kind="people", aliases=["Horites", "Horite", "Hori"],
          desc="The original inhabitants of Seir, before Edom — 'the sons of Seir the Horite, the inhabitants of the "
               "land' (36:20), catalogued here alongside Esau's line. The name is usually tied to chor, 'cave,' so "
@@ -2517,6 +2525,74 @@ ENCYCLOPEDIA = [
               "which would suit the edge of Egypt's eastern defenses; from here Israel is told to turn back "
               "and camp by the sea (14:2), the manoeuvre that makes Pharaoh think they are wandering lost.",
          refs=[("Exodus", 13, 20)], videos=[]),
+    dict(slug="david", name="David", kind="person", aliases=["David"],
+         desc="Israel's second king and the figure the rest of the Bible measures kings against — youngest son of "
+              "Jesse of Bethlehem, anointed as a boy while Saul still reigned, the harpist who soothed Saul's "
+              "torment, the giant-killer, and then for years a fugitive with a price on his head. 2 Samuel is his "
+              "book: it opens with him mourning the king who hunted him and closes with him an old man, having "
+              "united the tribes, taken Jerusalem, and committed the adultery and murder that break his house. "
+              "⚠️ The Bible is unusually candid about him — it records the crimes as fully as the psalms — and "
+              "still calls him 'a man after Jehovah's own heart' (1 Samuel 13:14), a phrase about God's CHOICE "
+              "rather than David's record. The covenant of 2 Samuel 7, promising his throne forever, is the root "
+              "of Israel's messianic hope, which is why the Gospels open by calling Jesus 'son of David.'",
+         refs=[("2 Samuel", 1, 1), ("2 Samuel", 1, 17)], videos=[]),
+    dict(slug="saul-king", name="Saul (Israel's first king)", kind="person", aliases=["Saul"],
+         desc="Israel's FIRST king — a tall young Benjaminite sent to look for lost donkeys who came home anointed "
+              "(1 Samuel 9-10). He is the answer to a demand the people made and were warned about: 'give us a king "
+              "to judge us like all the nations.' ⚠️ His reign is a study in a man unravelling: early victories, "
+              "then two acts of disobedience that cost him the kingdom — offering the sacrifice himself at Gilgal, "
+              "and sparing Agag and the best of the flocks when told to destroy AMALEK (1 Samuel 15) — followed by "
+              "jealousy of David, a spear thrown at him twice, the massacre of the priests of Nob, and a night "
+              "visit to a medium at En-dor. He dies by his own sword on Mount Gilboa with three of his sons, and "
+              "David, whom he hunted for years, tears his clothes and composes his elegy (2 Samuel 1). Not to be "
+              "confused with SAUL of Tarsus, the apostle Paul, who was named after him.",
+         refs=[("2 Samuel", 1, 1), ("2 Samuel", 1, 12)], videos=[]),
+    dict(slug="jonathan", name="Jonathan", kind="person", aliases=["Jonathan"],
+         desc="Saul's eldest son and heir, and David's sworn friend — the crown prince who took his father's rival's "
+              "side. He wins a reckless victory at Michmash with only his armor-bearer (1 Samuel 14), and when he "
+              "meets David he 'cuts a covenant' with him and gives him his own robe, sword, bow and belt (18:1-4) — "
+              "in effect handing over the insignia of the succession. ⚠️ He twice warns David of Saul's plots and "
+              "argues for him to his father's face, and their last meeting ends with an oath binding their "
+              "descendants (20:16-17; 23:18) — an oath David keeps years later by seeking out Jonathan's crippled "
+              "son Mephibosheth and seating him at the king's table (2 Samuel 9). He dies beside his father on "
+              "Gilboa, and David's lament for him is the most personal poetry in the books of Samuel.",
+         refs=[("2 Samuel", 1, 4), ("2 Samuel", 1, 26)], videos=[]),
+    dict(slug="gilboa", name="Mount Gilboa", kind="place", aliases=["Gilboa"],
+         coords=(32.48, 35.42, 0.35),
+         desc="The ridge on the southeastern edge of the Jezreel valley where Saul's reign ends — the Philistines "
+              "drawn up on the plain below, Israel broken on the heights, Saul falling on his own sword after three "
+              "of his sons are killed (1 Samuel 31). ⚠️ David's lament curses the ground itself: 'Mountains in "
+              "Gilboa — let there be no dew and no rain on you, nor fields of offerings' (2 Samuel 1:21). The site "
+              "matters strategically: whoever holds the Jezreel valley holds the road between Egypt and Mesopotamia, "
+              "which is why so much of Israel's history is decided in this one plain.",
+         refs=[("2 Samuel", 1, 6), ("2 Samuel", 1, 21)], videos=[]),
+    dict(slug="ziklag", name="Ziklag", kind="place", aliases=["Ziklag"], approx=True,
+         coords=(31.4, 34.75, 0.5),
+         desc="The town in the Negev given to David by ACHISH the Philistine king of Gath during his exile, and held "
+              "by David's family afterward (1 Samuel 27:6). It is where he is living when Saul dies — a man anointed "
+              "king of Israel, quartered in enemy territory on an enemy's grant. ⚠️ Days earlier the Amalekites had "
+              "burned it and carried off the wives and children of David's men, who spoke of stoning him; he "
+              "pursued and recovered everything (1 Samuel 30), which is the raid he has just returned from as "
+              "2 Samuel opens. Its site is disputed — Tell esh-Shari'a and Tel Sera' are among the candidates — so "
+              "the map marks it approximately.",
+         refs=[("2 Samuel", 1, 1)], videos=[]),
+    dict(slug="gath", name="Gath", kind="place", aliases=["Gath"],
+         coords=(31.7, 34.85, 0.3), approx=True,
+         desc="One of the five Philistine cities, and the hometown of GOLIATH. ⚠️ Its role in David's life is "
+              "strange and worth holding onto: the man who killed Gath's champion later took refuge in Gath twice — "
+              "the first time feigning madness to escape (1 Samuel 21:10-15), the second living there over a year "
+              "under king Achish, who granted him Ziklag. So when the lament says 'tell it not in GATH,' David is "
+              "naming a city he has eaten in. Generally identified with Tell es-Safi, in the Judean foothills.",
+         refs=[("2 Samuel", 1, 20)], videos=[]),
+    dict(slug="ashkelon", name="Ashkelon", kind="place", aliases=["Ashkelon"],
+         coords=(31.66, 34.55, 0.25),
+         desc="One of the five Philistine cities, on the Mediterranean coast — a major seaport, and one of the "
+              "oldest continuously occupied sites in the region, mentioned in Egyptian texts centuries before "
+              "Israel's monarchy. It is paired with Gath in David's lament, 'proclaim it not in the streets of "
+              "ASHKELON' (2 Samuel 1:20) — the two named as the places where the news would be celebrated. The "
+              "prophets return to it repeatedly in their oracles against Philistia (Amos 1:8; Zephaniah 2:4-7; "
+              "Jeremiah 47:5-7).",
+         refs=[("2 Samuel", 1, 20)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3113,6 +3189,8 @@ XREFS = [
     (("Exodus", 13, 14), ("Exodus", 12, 26), "'when your son asks you, What is this?' — the child's question of 12:26, now triggered by a rite he notices"),
     (("Exodus", 13, 19), (50, 25), "the bones of Joseph — the oath sworn four hundred years earlier (Gen 50:25)"),
     (("Exodus", 13, 19), ("Exodus", 3, 16), "'God will surely visit you' — Joseph's doubled verb, given back to Moses at the bush (Ex 3:16)"),
+    (("2 Samuel", 1, 10), ("2 Samuel", 1, 16), "the crown in his hand, and the confession that convicts him"),
+    (("2 Samuel", 1, 14), ("2 Samuel", 1, 16), "'Jehovah's anointed' — twice in three verses, the principle David refuses to break"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3401,6 +3479,10 @@ VERSE_OF_DAY = [
     ("Exodus", 13, 17, "“Lest the people change their minds when they see war, and return to Egypt.” The route is chosen around their fragility."),
     ("Exodus", 13, 19, "“And Moses took the bones of Joseph with him.” An oath four hundred years old, discharged in the middle of an evacuation."),
     ("Exodus", 13, 22, "“The pillar of cloud did not depart by day, nor the pillar of fire by night, from before the people.”"),
+    ("2 Samuel", 1, 12, "“And they mourned and wept and fasted until the evening.” David grieves the king who hunted him."),
+    ("2 Samuel", 1, 19, "“The glory, O Israel, lies slain on your high places! How the mighty have fallen!”"),
+    ("2 Samuel", 1, 23, "“Beloved and lovely in their lives, and in their death they were not parted.”"),
+    ("2 Samuel", 1, 27, "“How the mighty have fallen, and the weapons of war perished!”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3820,6 +3902,9 @@ CHRON_CHAPTERS = {
     "exod13": dict(era="exodus",
                   when="The firstborn claimed for Jehovah because Israel's were spared; the unleavened bread and the telling of a son commanded again; the people routed the long way round rather than up the Philistine coast road, carrying Joseph's bones out on a four-hundred-year-old oath, and followed by a pillar of cloud and fire from Succoth to Etham.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — the first days out of Egypt, in the month of Abib."),
+    "2sam1": dict(era="monarchy",
+                  when="News of Saul's death on Gilboa reaches David at Ziklag. An Amalekite claims to have finished the king and is executed for it, and David chants the Song of the Bow over Saul and Jonathan.",
+                  clock="c. 1010 BC on the conventional chronology of the united monarchy — the hinge between Saul's reign and David's."),
 }
 
 CHRON_EVENTS = [
@@ -4942,5 +5027,103 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Exodus sits at the center of two long debates this library flags rather than settles: the COMPOSITION of the Pentateuch (Mosaic authorship vs the Documentary Hypothesis), and the DATE of the Exodus with the identity of its pharaohs. On the latter, this translation foregrounds the early date (1446 BC; Thutmose III of the oppression, Amenhotep II of the Exodus) argued by Associates for Biblical Research / Joel Kramer, and notes the mainstream late date (~1250 BC, Ramesses II) honestly wherever it bears on a verse — the fullest discussion is in the Exodus 4 notes and the exodus-pharaoh encyclopedia entry.",
         christ="Exodus is the Bible's master-image of salvation, and the New Testament reads Christ all through it. The PASSOVER LAMB whose blood saves the firstborn is 'Christ our Passover, sacrificed for us' (1 Corinthians 5:7) — John's Gospel has Jesus die as the lambs are killed, with not a bone broken. The going-out through the SEA is read as a baptism (1 Corinthians 10:1-2); the MANNA is the bread of life and the ROCK is Christ (John 6; 1 Corinthians 10:4). The TABERNACLE, where God comes down to dwell, is fulfilled in the one who 'tabernacled among us, and we beheld his glory' (John 1:14). And the Name given at the bush, 'I AM,' is the phrase John's Jesus takes onto his own lips: 'before Abraham was, I AM' (John 8:58).",
         debates="The DATE of the Exodus (early ~1446 vs late ~1250 BC) and the identity of the pharaohs; the COMPOSITION of the Pentateuch (Mosaic vs documentary and later theories); the HISTORICITY and scale of the event (a literal mass departure, or a smaller exodus grown in national memory — the absence of direct Egyptian record is expected either way, since Egypt did not memorialize defeats); the theological knot of the HARDENING of Pharaoh's heart (divine and human, held together unresolved); and the relation of the covenant law to the ancient Near Eastern codes (Hammurabi and others) and of the covenant form to Hittite treaties. The library prints the text, foregrounds the early date per this project's stated preference, and lays the alternatives out with their pedigrees.",
+    ),
+    "2 Samuel": dict(
+        hebrew_name="שְׁמוּאֵל ב",
+        hebrew_translit="Shemuel Bet",
+        hebrew_meaning=(
+            "'2 Samuel.' In the Hebrew Bible there is no such book: Samuel is ONE scroll, named for the prophet "
+            "whose birth opens it, and it is still counted as one in the Jewish canon. The division into 1 and 2 "
+            "Samuel comes from the Greek Septuagint, whose translators needed more scroll-length than Hebrew did — "
+            "so the seam is a matter of stationery, not of subject. ⚠️ It happens to fall well: at the death of "
+            "Saul, with a runner coming from a lost battle. But the book does not begin here. It continues."
+        ),
+        greek_name="Βασιλειῶν Βʹ (Basileion B) — '2 Kingdoms'",
+        greek_meaning=(
+            "The Septuagint groups Samuel and Kings as four 'books of the Kingdoms,' so 2 Samuel is '2 Kingdoms' "
+            "and what we call 1 Kings is '3 Kingdoms.' The Greek titles name the books by their institution; the "
+            "Hebrew names them by their prophet."
+        ),
+        tagline=(
+            "The reign of David — his rise to a united throne, the promise of an everlasting dynasty, and then the "
+            "adultery and murder that break his own house. A national epic that records its hero's worst crime in "
+            "detail, names the victim, and lets a prophet say to the king's face: you are the man."
+        ),
+        genre=(
+            "HISTORICAL NARRATIVE — one of the 'Former Prophets' in the Hebrew canon, and part of what scholars "
+            "call the Deuteronomistic History. Chapters 9-20 (with 1 Kings 1-2) are often set apart as the COURT "
+            "HISTORY or Succession Narrative, and are widely regarded as some of the finest prose in the Hebrew "
+            "Bible — close-focus, psychologically acute, and unsparing. The book also carries very old POETRY: the "
+            "lament here in chapter 1, David's psalm in chapter 22 (a twin of Psalm 18), and the 'last words' of "
+            "chapter 23."
+        ),
+        canon=(
+            "In the Hebrew Bible, the second half of 'Samuel' among the Former Prophets; in the Christian Old "
+            "Testament, 2 Samuel, following 1 Samuel and preceding 1-2 Kings. 1 Chronicles retells much of the same "
+            "reign — and pointedly omits the Bathsheba affair and Absalom's revolt, which makes the two accounts a "
+            "useful lesson in what a given writer is FOR."
+        ),
+        author=(
+            "Anonymous. Jewish tradition (Talmud, Bava Batra 14b) assigns the later material to the prophets NATHAN "
+            "and GAD, following 1 Chronicles 29:29, which names 'the records of Samuel the seer, of Nathan the "
+            "prophet, and of Gad the seer' — Samuel himself being dead since 1 Samuel 25. The narrative's intimacy "
+            "with court affairs has long suggested a writer close to the palace."
+        ),
+        date=(
+            "The events span roughly 1010-970 BC — from Saul's death to David's old age. The sources are "
+            "demonstrably old (the poetry especially, and chapter 1 cites the lost Book of Jashar outright); the "
+            "final composition is debated and commonly placed within the monarchy, with later editing."
+        ),
+        place=(
+            "Judah and the central hill country, then JERUSALEM — a Jebusite stronghold David captures and turns "
+            "into a capital that had belonged to no tribe, which is a shrewd act of unification as much as a "
+            "military one. The horizon widens through the book to the Philistine coast, Moab, Ammon, Edom and "
+            "Aram, as a tribal confederation becomes a small empire."
+        ),
+        audience=(
+            "Israel living under the dynasty this book explains — a people asking why THIS family, and on what "
+            "terms. The answer given is a covenant (ch. 7) that does not depend on the king's goodness, which is "
+            "just as well, since the same book then documents at length how bad he could be."
+        ),
+        structure=[
+            ["1-4", "The end of the house of Saul — David mourns Saul and Jonathan, is made king over Judah at Hebron, and a long civil war grinds on until Abner and Ish-bosheth are murdered (David executing the murderers each time)."],
+            ["5-10", "The ascent — king over all Israel, Jerusalem taken and made the capital, the ark brought up, the covenant of chapter 7 promising David's throne forever, victories on every border, and kindness shown to Jonathan's crippled son."],
+            ["11-12", "The hinge — Bathsheba, Uriah killed by letter, and Nathan's parable: 'YOU are the man.'"],
+            ["13-20", "The consequences working through the family — Amnon's rape of Tamar, Absalom's revenge and revolt, David fleeing Jerusalem barefoot, Absalom's death and David's cry, and Sheba's rebellion."],
+            ["21-24", "An appendix, arranged as a ring — famine and warriors, two great poems at the centre, and the census and plague that ends on the threshing floor which becomes the temple site."],
+        ],
+        themes=[
+            "COVENANT AND DYNASTY — chapter 7 is the theological centre of the book and one of the hinges of the whole Bible: David wants to build God a house, and is told instead that God will build HIM one. The promise of an everlasting throne becomes the root of Israel's messianic hope.",
+            "THE HONESTY OF THE RECORD — the book's most remarkable feature is what it refuses to hide. Ancient royal literature exists to flatter; this one narrates its king's adultery, his arrangement of a loyal soldier's death, and his catastrophic failures as a father, and it lets the prophet's verdict stand.",
+            "CONSEQUENCE — Nathan says the sword will not depart from David's house, and the rest of the book is that sentence being served, mostly by David's own children. Forgiveness is granted (12:13) and consequences run their course anyway; the book holds both without resolving the tension.",
+            "RESTRAINT AND THE ANOINTED — David will not take the throne by force. He refuses to kill Saul, mourns him, executes the men who murder Abner and Ish-bosheth, and here executes a man for merely CLAIMING to have finished the king. The crown must be given, not seized.",
+            "GRIEF — the book is full of laments, and they are among its finest writing: over Saul and Jonathan here, over Abner, and the terrible repeated cry over Absalom, 'my son, my son.'",
+        ],
+        key_words=["mashiach", "qinah", "tzvi", "sefer-hayashar"],
+        key_people=["david", "saul-king", "jonathan", "gilboa"],
+        source_text=(
+            "Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Samuel has the most "
+            "difficult text of any Old Testament book: the Masoretic manuscripts carry a number of damaged or "
+            "obscure passages, and the Greek Septuagint often differs substantially — sometimes supported by the "
+            "Samuel scrolls from Qumran, which show that variant Hebrew forms genuinely circulated. This "
+            "translation follows the Masoretic Text and NOTES significant variants rather than quietly adopting "
+            "them; where a word is simply uncertain, the note says so."
+        ),
+        christ=(
+            "The covenant of chapter 7 — 'your throne shall be established forever' — is quoted and built on "
+            "throughout Scripture (Psalm 89; Isaiah 9:7; Luke 1:32-33), and is why the Gospels open by tracing "
+            "Jesus to David and why 'son of David' functions as a messianic title. ⚠️ The link runs through the "
+            "word this chapter turns on: MASHIACH, 'anointed,' which becomes Messiah and, in Greek translation, "
+            "Christ. Here it still means a man with oil on his head — and the book is careful to show that man "
+            "sinning grievously, which is part of why the hope attached to the promise eventually outgrows him."
+        ),
+        debates=(
+            "SOURCES AND COMPOSITION — how the History of David's Rise and the Court History were joined, and the "
+            "book's relation to the Deuteronomistic History. HISTORICITY — how much of the united monarchy's scale "
+            "is recoverable; the ninth-century TEL DAN inscription's reference to the 'house of David' is widely "
+            "taken as extra-biblical attestation of the dynasty, while the extent of David's empire is argued over. "
+            "TEXT — the Masoretic/Septuagint/Qumran differences noted above. And the perennial literary question of "
+            "how sympathetically the book means us to read David, whose portrait is admiring and damning at once."
+        ),
     ),
 }
