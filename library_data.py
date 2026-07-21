@@ -721,6 +721,12 @@ DICTIONARY = [
      "STRAW — chopped stubble mixed into Nile mud to bind sun-dried bricks, a technique well attested in Egyptian brickmaking (and Egyptian scribes really did record daily brick quotas). Pharaoh's cruelty in Exodus 5 is exact: he does not lower the quota, he withdraws the TEBEN and keeps the number, so the slaves must scatter across Egypt gathering stubble and still deliver as before. 'Bricks without straw' has become the English proverb for an impossible demand.", ("Exodus", 5, 7)),
     ("nogesim", "nogsim / shotrim", "נֹגְשִׂים / שֹׁטְרִים", "nogsim / shotrim",
      "TASKMASTERS and FOREMEN — the two ranks between Pharaoh and the slaves. The NOGSIM (from a root for 'press, drive, exact') are the Egyptian slave-drivers; the SHOTRIM are Israelite foremen set over their own kinsmen to enforce the quota. ⚠️ The distinction matters: when the bricks fall short it is the ISRAELITE foremen who are beaten (5:14) — the system makes the oppressed enforce their own oppression and then punishes them when it breaks. Keeping the two words distinct keeps that cruelty visible.", ("Exodus", 5, 6)),
+    ("aral", "aral sefatayim", "עֲרַל שְׂפָתַיִם", "aral sefatayim",
+     "'UNCIRCUMCISED OF LIPS' — Moses' objection in Exodus 6:12, 30: his mouth is unfit, unconsecrated, as if closed by a foreskin. The Bible uses the image for more than the body: there are uncircumcised EARS that cannot hear (Jeremiah 6:10) and uncircumcised HEARTS that will not yield (Deuteronomy 10:16; Jeremiah 4:4). It is the fourth time Moses has pleaded his mouth (4:10), and the last: God answers not with an argument but with a commission.", ("Exodus", 6, 12)),
+    ("morashah", "morashah", "מוֹרָשָׁה", "morashah",
+     "A POSSESSION, inheritance held by grant — the last of the seven 'I will' promises: 'I will give it to you as a MORASHAH' (Exodus 6:8). The word is rarer and more formal than the common 'inheritance' (nachalah), and it stresses that the land is not seized but GIVEN, held from the giver: Israel's title deed runs through the oath sworn to Abraham, Isaac, and Jacob. Ezekiel later uses the same word bitterly of those who claim the land by right (Ezekiel 33:24).", ("Exodus", 6, 8)),
+    ("sivlot", "sivlot", "סִבְלֹת", "sivlot",
+     "BURDENS, forced labors — the specific word for Egypt's imposed toil. It runs through the opening of Exodus like a drumbeat: taskmasters set over Israel 'to afflict them with their SIVLOT' (1:11), Pharaoh's 'get to your burdens!' (5:4), and then, in the great promise, 'I will bring you out from under the BURDENS of the Egyptians' (6:6-7) — the very word of the oppression turned around in the mouth of the redeemer. What God undoes is named with the word that named the wound.", ("Exodus", 6, 6)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2330,7 +2336,7 @@ ENCYCLOPEDIA = [
               "company (Numbers 16). Jude makes him the type of rebellion against God-given leadership: the false "
               "teachers 'perished in the rebellion (antilogia) of Korah' (1:11) — the third of his three named "
               "ruins, after Cain's murder and Balaam's greed.",
-         refs=[("Jude", 1, 11)], videos=[]),
+         refs=[("Jude", 1, 11), ("Exodus", 6, 21)], videos=[]),
     dict(slug="sodom", name="Sodom (and Gomorrah)", kind="place", aliases=["Sodom", "Gomorrah"],
          desc="The chief of the cities of the plain by the Dead Sea, a byword for wickedness, destroyed by fire and "
               "sulphur from Jehovah in the days of Abraham and Lot (Genesis 18-19). LOT escapes; his wife looks back "
@@ -2412,6 +2418,16 @@ ENCYCLOPEDIA = [
               "my place that was in Shiloh… and see what I did to it' (Jeremiah 7:12). ⚠️ Not to be confused with the "
               "disputed word 'Shiloh' of Genesis 49:10, a different Hebrew term.",
          coords=(32.06, 35.29, 0.05), refs=[("1 Samuel", 1, 3), ("1 Samuel", 1, 9)], videos=[]),
+    dict(slug="amram-jochebed", name="Amram and Jochebed", kind="person", aliases=["Amram", "Jochebed"],
+         desc="The parents of MOSES, AARON, and Miriam — Levites of the clan of Kohath. The genealogy of Exodus 6 "
+              "names them at the center of its priestly line: 'Amram took Jochebed his father's sister as his wife, "
+              "and she bore him Aaron and Moses' (6:20). ⚠️ It is an aunt-nephew marriage that the later law will "
+              "forbid outright (Leviticus 18:12); the narrator records it without embarrassment, as he records "
+              "Jacob's marriage to two sisters, because the law had not yet been given. Jochebed is the mother who "
+              "hid her son three months and set him in the ark of bulrushes, and was then paid to nurse her own "
+              "child for Pharaoh's daughter (2:1-10); Hebrews 11:23 praises the parents' faith in not fearing the "
+              "king's edict.",
+         refs=[("Exodus", 6, 20)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2968,6 +2984,9 @@ XREFS = [
     (("Exodus", 5, 1), ("Exodus", 4, 23), "'let my people go' — the same verb (shalach) as God's claim one chapter earlier, 'let my SON go, that he may serve me'"),
     (("Exodus", 5, 2), ("Exodus", 3, 15), "'I do not know Jehovah' — Pharaoh's sneer set against the Name just revealed at the bush, 'Jehovah… this is my name forever' (Ex 3:15)"),
     (("Exodus", 5, 22), ("Jeremiah", 20, 7), "'why have you brought evil on this people? why did you ever send me?' — the prophet accusing God to his face, as Jeremiah will (Jer 20:7)"),
+    (("Exodus", 6, 3), (17, 1), "'I appeared… as God Almighty' — El Shaddai, the name given to Abram at Genesis 17:1"),
+    (("Exodus", 6, 3), (15, 7), "'by my name Jehovah I did not make myself known to them' — yet Jehovah says to Abram, 'I am Jehovah who brought you out of Ur' (Genesis 15:7); the crux of the verse"),
+    (("Exodus", 6, 5), ("Exodus", 2, 24), "'I have remembered my covenant' — the same remembering that set the whole deliverance in motion (Ex 2:24)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3226,6 +3245,9 @@ VERSE_OF_DAY = [
     ("Exodus", 5, 1, "“Thus says Jehovah, the God of Israel: Let my people go, that they may hold a feast to me in the wilderness.”"),
     ("Exodus", 5, 2, "“Who is Jehovah, that I should obey his voice?” Pharaoh's sneer — the question the whole book exists to answer."),
     ("Exodus", 5, 22, "“Why have you brought evil on this people? Why did you ever send me?” Moses accuses God, and Scripture does not censor it."),
+    ("Exodus", 6, 6, "“I will bring you out… I will deliver you… I will redeem you with an outstretched arm.” The seven 'I will's begin."),
+    ("Exodus", 6, 7, "“I will take you to myself for a people, and I will be to you a God.” The covenant formula in a single line."),
+    ("Exodus", 6, 9, "“They did not listen to Moses, from shortness of spirit and from cruel bondage.” The crushed cannot take in good news."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3621,6 +3643,9 @@ CHRON_CHAPTERS = {
     "exod5": dict(era="exodus",
                   when="The first audience with Pharaoh — 'let my people go' answered by 'who is Jehovah?'; bricks without straw, the beaten foremen, and both the people and Moses turning in complaint.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — the opening move of the contest with Amenhotep II, before the first plague."),
+    "exod6": dict(era="exodus",
+                  when="God's answer to Moses' accusation — 'I am Jehovah,' the seven 'I will' promises of redemption, a people too crushed to hear them, and the Levite genealogy that certifies Moses and Aaron.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — immediately before the plagues begin."),
 }
 
 CHRON_EVENTS = [
