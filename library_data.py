@@ -795,6 +795,14 @@ DICTIONARY = [
      "SALVATION — but concretely: rescue, being got out of danger, victory. 'Stand firm and see the YESHUAH of Jehovah' (Exodus 14:13) is not about the afterlife; it is about an army behind and water ahead. ⚠️ The root gives the names JOSHUA (Yehoshua, 'Jehovah saves') and, through Greek, JESUS — so the angel's explanation in Matthew 1:21, 'you shall call his name Jesus, for he will SAVE his people,' is a play on the name in Hebrew that the Greek cannot show. Keep the concrete sense in view when the word appears: Israel's vocabulary for being saved was built at a seashore.", ("Exodus", 14, 13)),
     ("chomah", "chomah", "חוֹמָה", "chomah",
      "A WALL — specifically the defensive wall of a city (Jericho's CHOMAH falls flat, Joshua 6:20; Nehemiah rebuilds Jerusalem's). It is the word used of the water at the crossing: 'the waters were a CHOMAH for them on their right and on their left' (Exodus 14:22, 29), which is why every painting shows two standing cliffs of sea. ⚠️ A minority reading takes it here as a metaphor of PROTECTION — a defensive wall on either flank — noting that a wind strong enough to dry a seabed is not obviously one that leaves water in vertical faces. The plain sense of the noun is a wall, and this translation keeps it; the alternative is noted, not adopted.", ("Exodus", 14, 22)),
+    ("massa", "massa", "מַשָּׂא", "massa",
+     "BURDEN — or utterance. Built on nasa, 'to lift,' so it can mean either a LOAD lifted onto the shoulders or a VOICE lifted up; the prophets use it to head an oracle and the versions split (KJV/ASV 'burden,' NWT 'pronouncement,' NIV 'prophecy'). Malachi's first word, and the same root asks two verses later whether anyone will 'lift up your face.'", ("Malachi", 1, 1)),
+    ("bazah", "bazah", "בָּזָה", "bazah",
+     "To DESPISE — to treat a thing as of no account, the exact opposite of kaved ('honor,' literally to treat as heavy). It runs down Malachi 1 like a drumbeat: priests who 'despise my name' (v6), a table that 'is contemptible' (vv7, 12). Not unbelief; contempt. The charge is that God has been found SLIGHT.", ("Malachi", 1, 6)),
+    ("minchah", "minchah", "מִנְחָה", "minchah",
+     "GIFT, tribute, offering — the broadest of the offering-words, and not necessarily a sacrifice: it is Cain's and Abel's offering (Genesis 4:3-5), the present Jacob sends ahead to Esau (32:14), and in the priestly law the grain-offering specifically. In Malachi 1 it is the thing God refuses from Judah's hand (v10) and receives, pure, from the nations (v11).", ("Malachi", 1, 10)),
+    ("tiqqun-soferim", "tiqqun soferim", "תִּקּוּן סוֹפְרִים", "tiqqun soferim",
+     "'CORRECTION OF THE SCRIBES' — a short traditional list of passages where Jewish tradition itself reports that the transmitted text is a reverent softening of a blunter original, usually to avoid an irreverent-sounding statement about God. Malachi 1:13 is on the list: the received text has the priests snorting at IT (the offering), the tradition says the original read at ME. This translation prints the received Masoretic reading and reports the tradition — as it did at Genesis 18:22.", ("Malachi", 1, 13)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1891,7 +1899,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4), (36, 1)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4), (36, 1), ("Malachi", 1, 2)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1901,7 +1909,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29), (33, 3)], videos=[]),
+         refs=[(25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29), (33, 3), ("Malachi", 1, 2)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom", "Seir"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted from the red stew "
@@ -1912,7 +1920,7 @@ ENCYCLOPEDIA = [
               "enemies — Edom refuses Israel passage in the wilderness (Numbers 20), and the prophets return to it "
               "again and again (Obadiah is entirely an oracle against Edom; Jeremiah 49; Isaiah 34). Herod the Great "
               "was an Idumean — a Hellenized Edomite — so the brother-rivalry runs right up to the Gospels.",
-         refs=[(25, 30), (36, 1), (36, 8)],
+         refs=[(25, 30), (36, 1), (36, 8), ("Malachi", 1, 4)],
          coords=(30.32, 35.44, 0.9), approx=True,
          modern="The highlands of southern Jordan (Seir), south-east of the Dead Sea"),
     dict(slug="amalek", name="Amalek", kind="people", aliases=["Amalek", "Amalekites", "Agagite"],
@@ -2616,6 +2624,17 @@ ENCYCLOPEDIA = [
               "question. The map marks the traditional zone approximately.",
          refs=[("Exodus", 13, 18), ("Exodus", 14, 2), ("Exodus", 15, 4)],
          videos=[("Where God Divided the Sea...Exploring the Exodus!", "https://www.youtube.com/watch?v=conaKQoe4hk")]),
+    dict(slug="malachi", name="Malachi", kind="person", aliases=["Malachi"],
+         desc="The prophet of the last book of the Christian Old Testament — and possibly not a person at all. "
+              "The Hebrew Mal'akhi means simply 'my messenger,' and the name occurs nowhere else in the Bible. "
+              "The Greek Septuagint does not read it as a name, rendering the superscription 'by the hand of HIS "
+              "messenger,' which would make the book anonymous and its title borrowed from 3:1 ('behold, I send my "
+              "messenger'). The Aramaic Targum identifies him with EZRA the scribe, an old guess with no support in "
+              "the text; the Talmud (Megillah 15a) records the debate. Whoever he was, he prophesied in Persian-period "
+              "Judah — a province with a governor and no king, a rebuilt but shabby temple, and a priesthood going "
+              "through the motions — and he is the last prophetic voice in the Christian arrangement of the Old "
+              "Testament before the Gospels. His 3:1 was the verse Mark chose to open his Gospel with.",
+         refs=[("Malachi", 1, 1)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3218,6 +3237,14 @@ XREFS = [
     (("Exodus", 14, 19), ("Exodus", 13, 21), "the pillar moves from the front to the rear — the guide becomes a rear-guard"),
     (("Exodus", 14, 25), ("Exodus", 10, 7), "Egypt says the true thing before Israel does — as the officials did at 10:7"),
     (("Exodus", 14, 31), ("Exodus", 4, 31), "'they believed' — the question asked at the burning bush (Ex 4:1, 31), answered at last"),
+    # ---- Malachi 1 ----
+    ((("Malachi", 1, 1)), (("Mark", 1, 2)), "mal'akhi, 'my messenger' — the word that is either this prophet's name or his book's title returns at Malachi 3:1, the verse Mark opens his Gospel with"),
+    ((("Malachi", 1, 2)), (25, 23), "'the elder shall serve the younger' — the choice Malachi calls in as evidence that God has loved Judah"),
+    ((("Malachi", 1, 3)), (36, 8), "Esau settled in the hill country of Seir; Malachi looks at the same highlands and calls them a desolation"),
+    ((("Malachi", 1, 6)), (("Exodus", 8, 11)), "kaved — the weight-word: honor here, Pharaoh's HEAVY heart there; the same root doing opposite work"),
+    ((("Malachi", 1, 13)), (18, 22), "the second tiqqun soferim on the site — a place where the scribes report softening the text out of reverence"),
+    ((("Malachi", 1, 14)), (("Malachi", 1, 6)), "'where is my fear?' asked at the altar, answered from outside it: 'my name is FEARED among the nations'"),
+    ((("Malachi", 1, 14)), (6, 11), "moshchat, 'what is ruined' — the flood's own ruin-verb, turning up on an altar"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3515,6 +3542,9 @@ VERSE_OF_DAY = [
     ("Exodus", 14, 14, "“Jehovah will fight for you, and you shall keep silent.”"),
     ("Exodus", 14, 15, "“Why do you cry out to me? Speak to the sons of Israel, that they set out.”"),
     ("Exodus", 14, 31, "“And they believed in Jehovah and in Moses his servant.” The first time Israel believes."),
+    ("Malachi", 1, 6, "“If I am a father, where is my honor? And if I am a master, where is my fear?” The question the whole chapter is built to answer — from outside Israel."),
+    ("Malachi", 1, 10, "“Who is there even among you who would shut the doors?” God would rather the temple were closed than served like this."),
+    ("Malachi", 1, 11, "“From the rising of the sun to its setting my name is great among the nations.” The last prophet, pointing outward."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3718,6 +3748,7 @@ CHRON_ERAS = [
     ("exodus",     "Egypt and the Exodus"),
     ("monarchy",   "The Kingdom"),
     ("exile",      "The Exile"),
+    ("return",     "The Return"),
     ("intertestament", "Between the Testaments"),
     ("gospels",    "The Gospels"),
     ("apostolic",  "The Apostolic Age"),
@@ -3940,6 +3971,9 @@ CHRON_CHAPTERS = {
     "exod14": dict(era="exodus",
                   when="The sea. Israel is told to camp with the water at its back so Pharaoh will think them trapped; six hundred chariots overtake them; a strong east wind blows all night, Israel crosses on dry ground, and the returning water destroys the army — after which Israel believes for the first time.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — days after the Passover, at a place the text names precisely and no one can now locate."),
+    "mal1": dict(era="return",
+                 when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
+                 clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
 }
 
 CHRON_EVENTS = [
@@ -4074,6 +4108,16 @@ CHRON_EVENTS = [
          note="One scene spanning chapters 10–12, dated by 10:1 to 'the third year of Cyrus' — an old man shown the far end of history and dismissed with a personal promise: 'you shall rest, and you shall stand up to your lot at the end of the days' (12:13). The Hebrew Bible's clearest resurrection text (12:2) belongs to this vision.",
          ref=("Daniel", 12, 2)),
     # -- Between the Testaments --
+    # -- The Return --
+    dict(era="return", am="—", trad="538 BC", event="Cyrus of Persia allows the exiles to return; the first company goes home to a ruined Jerusalem",
+         note="The Cyrus Cylinder records the Persian policy of restoring deported peoples and their sanctuaries — the imperial background to Ezra 1. Daniel 1:21 closes on the same year, 'the first year of King Cyrus.'",
+         ref=("Daniel", 1, 21)),
+    dict(era="return", am="—", trad="515 BC", event="The second temple finished — smaller than Solomon's, and wept over by those who remembered the first",
+         note="Ezra 6:15. It is this temple, in working order and taken for granted, whose altar Malachi finds treated with contempt.",
+         ref=("Malachi", 1, 7)),
+    dict(era="return", am="—", trad="c. 460-430 BC", event="Malachi — the last of the prophets: a burden against a bored priesthood, and 'my name is great among the nations'",
+         note="Undated by the book itself. Judah is a Persian province under a governor (1:8), the temple is running, and the abuses Malachi names — blemished offerings, neglected tithes, foreign marriages, casual divorce — are the same ones Ezra and Nehemiah confront. In the Christian arrangement of the Old Testament his is the last prophetic voice before the Gospels.",
+         ref=("Malachi", 1, 1)),
     dict(era="intertestament", am="—", trad="167 BC", event="The abomination that desolates — Antiochus IV halts the daily offering; an altar to Zeus on the altar of burnt offering",
          note="1 Maccabees 1:54 dates it to 15 Kislev, 167 BC, quoting Daniel 11:31's own phrase. Whether Daniel foresees or records the day is the book's great dating question — both readings, at full strength, on the chapter page. The temple was rededicated three years later (Hanukkah, 164 BC).",
          ref=("Daniel", 11, 31)),
@@ -5160,5 +5204,41 @@ BOOK_INTROS = {
             "TEXT — the Masoretic/Septuagint/Qumran differences noted above. And the perennial literary question of "
             "how sympathetically the book means us to read David, whose portrait is admiring and damning at once."
         ),
+    ),
+    "Malachi": dict(
+        hebrew_name="מַלְאָכִי",
+        hebrew_translit="Mal'akhi",
+        hebrew_meaning="'My messenger' — the ordinary Hebrew word mal'akh ('messenger, angel') with a first-person suffix. It occurs nowhere else in the Bible as a personal name, which is why it is genuinely uncertain whether the book is named for its prophet or titled from its own most famous line, 3:1: 'behold, I send MY MESSENGER to prepare the way before me.'",
+        greek_name="Μαλαχίας (Malachias)",
+        greek_meaning="The Septuagint does not treat the word as a name at all: it renders the superscription 'by the hand of HIS messenger' — the oldest witness for reading Malachi as a title rather than a person. The Aramaic Targum takes the other extreme and adds 'whose name is called Ezra the scribe.'",
+        tagline="The last of the prophets — a burden delivered to a bored priesthood in a small Persian province, arguing with a people who have stopped denying God and started cross-examining him.",
+        genre="PROPHECY, in a form found nowhere else in the Bible: the DISPUTATION. Six times the book runs the same move — God makes a claim, the people answer back with a question ('in what have you loved us?', 'in what have we despised your name?'), and God answers the question. The result reads less like an oracle than like a transcript of an argument, and it is largely prose, unusually plain for a prophetic book.",
+        canon="The twelfth and last of the MINOR PROPHETS (the Book of the Twelve, counted as one book in the Hebrew Bible), and — in the Christian ordering of the Old Testament — the very last book before the New Testament. In the Hebrew Bible the Writings follow the Prophets, so Malachi is not the final word there; the Christian arrangement, which puts him last, is the reason he reads as the closing voice before four centuries of silence and then a man at a river.",
+        author="Uncertain, and the uncertainty is in the first verse. Either a prophet named Malachi, or an anonymous book titled from 3:1. The Talmud (Megillah 15a) preserves the debate, including the identification with Ezra; the Septuagint reads the word as a title. Nothing else in the book names its author or his family, which is unusual — most prophets are introduced by father, town, or reign.",
+        date="Not dated by the book, but the internal evidence is unusually clear about the period. Judah is a PROVINCE with a GOVERNOR (pechah, 1:8 — the Persian administrative title Nehemiah holds), not a kingdom with a king; the second temple is standing and in ordinary working order (so after 515 BC); and the abuses attacked — blemished offerings, a neglected tithe, marriage to foreign wives, casual divorce — are precisely the ones Ezra and Nehemiah confront. The usual estimate is c. 460-430 BC, either just before those reforms or alongside them.",
+        place="Jerusalem and the province of Yehud — the small, poor, walled-in Judah of the Persian empire, a century after Cyrus let the exiles go home. The great restoration promised by the earlier prophets had arrived, and it looked like this: a modest temple, a working priesthood, hard farming, and a persistent sense of anticlimax.",
+        audience="A disillusioned people, and especially their PRIESTS. Malachi's hearers are not idolaters — the exile cured that — but they are tired. They keep the machinery running while believing it makes no difference ('it is vain to serve God,' 3:14), and the book answers cynicism rather than apostasy, which is what makes it feel modern.",
+        structure=[
+            ["1:1-5", "'I have loved you' — the first disputation, answered from the ruins of Edom: Jacob loved, Esau hated."],
+            ["1:6-2:9", "Against the PRIESTS — blemished animals on the altar, a table treated as contemptible, and the covenant with Levi broken; 'my name is great among the nations.'"],
+            ["2:10-16", "Against the PEOPLE — marriage to the daughters of a foreign god, and the wife of one's youth dealt with treacherously."],
+            ["2:17-3:5", "'Where is the God of justice?' — the Lord will come suddenly to his temple, as a refiner's fire."],
+            ["3:6-12", "The tithe — 'bring the whole tithe into the storehouse, and test me in this.'"],
+            ["3:13-4:3", "'It is vain to serve God' — and the scroll of remembrance written for those who feared him."],
+            ["4:4-6", "The closing charge: remember the law of Moses; and I will send ELIJAH the prophet before the great and terrible day."],
+        ],
+        themes=[
+            "THE DISPUTATION — God on one side, a people answering back on the other. Malachi's characteristic sound is a question thrown at heaven and answered from it.",
+            "CONTEMPT, NOT UNBELIEF — the sin the book prosecutes is not denying God but finding him SLIGHT: honor is weight (kaved), and the priests treat him as weightless.",
+            "THE COVENANT WITH LEVI — a real priesthood is defined here as fully as anywhere in the Bible ('the law of truth was in his mouth… he walked with me in peace,' 2:6), and measured against the men actually holding the office.",
+            "COVENANT FAITHFULNESS IN MARRIAGE — the book moves from the altar to the household and treats a marriage as a covenant witnessed by God, in the passage every later argument about divorce has quoted.",
+            "THE NATIONS — from the rising of the sun to its setting God's name is great among them (1:11), an astonishing note to sound in the last book of the Old Testament, and the reason the offering of Judah can be refused at all.",
+            "THE DAY THAT IS COMING — the refiner's fire, the messenger who prepares the way, and Elijah before the great day: the book ends leaning forward, which is exactly how the Christian canon uses it.",
+        ],
+        key_words=["massa", "bazah", "minchah", "kaved"],
+        key_people=["malachi", "edom", "esau", "levi"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ A VERSIFICATION NOTE that will matter at the end of the book: the Hebrew Malachi has THREE chapters, not four. What English Bibles print as chapter 4 ('behold, the day is coming, burning like a furnace… I will send you Elijah the prophet') is, in the Masoretic text, simply the last six verses of chapter 3. The chapter grid on this page follows the familiar English numbering; the translation follows the Hebrew, and the seam will be flagged where it falls. Malachi's Hebrew is otherwise plain and well preserved — its difficulties are lexical (a scatter of rare words: mattela'ah, niv, moshchat) and interpretive rather than textual, with one famous exception: 1:13 stands on the traditional list of tiqqunei soferim, passages the scribes are said to have reverently softened.",
+        christ="No Old Testament book is put to more direct Christian use in its last pages. 'Behold, I send my messenger, and he will prepare the way before me' (3:1) is quoted at the opening of Mark's Gospel and applied to John the Baptist (Mark 1:2), and the promise of ELIJAH before the great day (4:5-6, Hebrew 3:23-24) is what Jesus answers when the disciples ask about Elijah's coming (Matthew 17:10-13). The Lord who 'will suddenly come to his temple' and sit 'as a refiner and purifier of silver' (3:1-3) has been read as Christ since the earliest Christian centuries, and 1:11's 'pure offering' in every place became the classic patristic text for the Eucharist (the Didache, Justin Martyr, Irenaeus). Chapter 1's own contribution is quieter and larger: a God whose name is already great among the nations, refusing the offerings of the people who own the altar.",
+        debates="First, WHO MALACHI IS — a name or a title (the Septuagint's 'his messenger' against the plain Hebrew reading), and whether he is Ezra (the Targum's guess). Second, 1:2-3, 'Jacob I loved, and Esau I hated' — whether love and hate here are the covenant idiom for choosing and passing over, or mean what they say; Paul's use of the verse at Romans 9:13 keeps the argument alive. Third, 1:11 — whether the pure offering among the nations is PRESENT (the nations already honor God better than Judah does), FUTURE (a prophecy of Gentile worship, read from the second century onward as the Eucharist), or a reference to the scattered Jews of the diaspora. And fourth, the unity of the book — whether the closing verses about Moses and Elijah are Malachi's own ending or a later editorial seal on the whole prophetic collection. All laid out with pedigrees; the library does not cast a vote.",
     ),
 }

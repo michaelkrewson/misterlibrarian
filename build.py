@@ -157,6 +157,7 @@ CHAPTERS = [
     ("judg1", "Judges", 1, "The conquest, told from underneath. It opens well — Israel asks God, Judah goes up, cities fall — and then, tribe by tribe marching north up the map, the same phrase tolls seven times: DID NOT DRIVE OUT. A king mutilated as he mutilated others, a woman who negotiates for water, iron chariots offered as an excuse, and a redeemed people putting the Canaanites to forced labour instead of removing them."),
     ("ruth1", "Ruth", 1, "The quiet counter-story to the Judges: a famine empties the House of Bread, a family flees to Moab and loses its men, and a widow named Naomi turns home 'empty' — while a Moabite daughter-in-law refuses to leave her with the Bible's great oath of loyalty: 'your people my people, your God my God.' Names turn to omens, Naomi renames herself Mara ('bitter'), and the last line opens a barley field where redemption is about to begin."),
     ("1sam1", "1 Samuel", 1, "The book that gives Israel its kings opens on a barren woman. Hannah, provoked year after year by her rival, prays silently at Shiloh until the priest Eli takes her for a drunk; she vows her son to God, and when Samuel is born she carries the weaned boy back and gives him away — 'lent to Jehovah' for life. The FIRST 'Jehovah of hosts' in the Bible, a wordplay ('asked') that reaches toward Saul, and the seed of the song (ch 2) that Mary's Magnificat will be built on."),
+    ("mal1", "Malachi", 1, "The last of the prophets opens his case, and the people answer back — the move that is the book’s signature: ‘I have loved you’ / ‘in WHAT have you loved us?’ Jacob loved and Esau hated, Edom’s highlands left in rubble, and then the charge that fills the chapter: a priesthood bringing blind, lame and stolen animals to the altar of a God they find, above all, BORING. Try that on the Persian governor, says Malachi — and then, astonishingly, in the last book of the Old Testament: ‘from the rising of the sun to its setting my name is great among the nations.’"),
 ]
 # Spanish home-page teasers, keyed by chapter slug. The Spanish index used to
 # reuse CHAPTERS' ENGLISH teaser text, so es.html showed Spanish titles over
@@ -206,6 +207,7 @@ TEASERS_ES = {
     "exod13": "Como los primogénitos de Israel fueron perdonados, quedan reclamados: «conságrame todo primogénito: mío es». El primer nacido de un asno se rescata con un cordero o se le quiebra el cuello; un hijo primogénito se rescata SIEMPRE, nunca se sacrifica. El mandato de contárselo a un hijo aparece aquí dos veces más (cuatro en cuatro capítulos). Y lo primero que Dios hace con un pueblo libre es llevarlo por el camino LARGO —«no sea que cambien de parecer al ver la guerra»—, mientras Moisés saca los huesos de José por un juramento de cuatrocientos años y una columna de nube y de fuego va delante.",
     "exod14": "El mar. A Israel se le manda VOLVER atrás y acampar con el agua a la espalda —una posición militarmente absurda, y el texto dice sin rodeos que es un cebo: «el faraón dirá: andan errantes»—. Seiscientos carros les dan alcance, las primeras palabras de Israel como pueblo libre son «mejor nos era servir a los egipcios que morir en el desierto», y un fuerte viento del este sopla toda la noche. ⚠ Nótese qué dice el versículo 28 que se ahogó —el EJÉRCITO— y qué no dice nunca.",
     "2sam1": "Saúl ha muerto en Gilboa, y un hombre entra corriendo en Siclag con la corona en la mano y un relato que no cuadra con el que 1 Samuel acaba de contar. David —que pasó años siendo el rival perseguido de Saúl— rasga sus vestiduras, ayuna, manda ejecutar al mensajero por poner la mano sobre «el ungido de Jehová», y entona el Canto del Arco: «¡Cómo han caído los valientes!». Un lamento que no dice nada de la lanza que le arrojaron, ni de los años de persecución, ni de los sacerdotes de Nob.",
+    "mal1": "El último de los profetas abre su caso y el pueblo le replica — la seña del libro: «Los he amado» / «¿En QUÉ nos has amado?». Jacob amado y Esaú aborrecido, los montes de Edom en ruinas, y luego la acusación que llena el capítulo: sacerdotes que traen animales ciegos, cojos y robados al altar de un Dios que, sobre todo, les parece ABURRIDO. Llévalo a tu gobernador persa, dice Malaquías — y luego, en el último libro del Antiguo Testamento: «desde donde el sol nace hasta donde se pone, grande es mi nombre entre las naciones».",
 }
 
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)
@@ -2868,9 +2870,12 @@ def build_ask_newton():
 
 
 ES_BOOK = {"Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico",
-           "Numbers": "Números", "Jeremiah": "Jeremías", "Proverbs": "Proverbios",
-           "Daniel": "Daniel", "Matthew": "Mateo", "John": "Juan",
-           "Revelation": "Apocalipsis"}
+           "Numbers": "Números", "Deuteronomy": "Deuteronomio", "Joshua": "Josué",
+           "Judges": "Jueces", "Ruth": "Rut", "1 Samuel": "1 Samuel",
+           "2 Samuel": "2 Samuel", "Jeremiah": "Jeremías", "Proverbs": "Proverbios",
+           "Daniel": "Daniel", "Malachi": "Malaquías", "Matthew": "Mateo",
+           "Mark": "Marcos", "Luke": "Lucas", "John": "Juan", "2 John": "2 Juan",
+           "3 John": "3 Juan", "Jude": "Judas", "Revelation": "Apocalipsis"}
 
 
 def _es_panels():

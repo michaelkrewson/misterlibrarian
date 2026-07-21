@@ -59,6 +59,7 @@ MECHON_BOOKS = {
     "08a": ("1 Samuel", 31),
     "08b": ("2 Samuel", 24),
     "11": ("Jeremiah", 52),
+    "24": ("Malachi", 3),
     "28": ("Proverbs", 31),
     "29": ("Ruth", 4),
     "34": ("Daniel", 12),
