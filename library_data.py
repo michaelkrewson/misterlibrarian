@@ -803,6 +803,16 @@ DICTIONARY = [
      "GIFT, tribute, offering — the broadest of the offering-words, and not necessarily a sacrifice: it is Cain's and Abel's offering (Genesis 4:3-5), the present Jacob sends ahead to Esau (32:14), and in the priestly law the grain-offering specifically. In Malachi 1 it is the thing God refuses from Judah's hand (v10) and receives, pure, from the nations (v11).", ("Malachi", 1, 10)),
     ("tiqqun-soferim", "tiqqun soferim", "תִּקּוּן סוֹפְרִים", "tiqqun soferim",
      "'CORRECTION OF THE SCRIBES' — a short traditional list of passages where Jewish tradition itself reports that the transmitted text is a reverent softening of a blunter original, usually to avoid an irreverent-sounding statement about God. Malachi 1:13 is on the list: the received text has the priests snorting at IT (the offering), the tradition says the original read at ME. This translation prints the received Masoretic reading and reports the tradition — as it did at Genesis 18:22.", ("Malachi", 1, 13)),
+    ("chashmal", "chashmal", "חַשְׁמַל", "chashmal",
+     "A word whose meaning is genuinely LOST. It occurs three times in the Bible, all in Ezekiel (1:4, 1:27, 8:2), of the gleam at the heart of the fire. The Septuagint guessed elektron (amber, or the pale gold-silver alloy electrum), the Vulgate followed with electrum, and that is where the KJV's 'amber' comes from; ASV and NIV retreat to 'glowing metal.' This translation leaves it untranslated, as it does Sheol and El Shaddai. ⚠ When Hebrew was revived as a spoken language chashmal was drafted to mean ELECTRICITY — taken straight from the Greek guess at this verse.", ("Ezekiel", 1, 4)),
+    ("demut", "demut", "דְּמוּת", "demut",
+     "LIKENESS, resemblance — one of the two words (with mar'eh, 'appearance') that carry Ezekiel 1, where between them they occur about twenty times in twenty-eight verses. The hedging is the theology: Ezekiel never says he saw God, only 'the appearance of the LIKENESS of the glory of Jehovah.' It is also the word of Genesis 1:26 — humankind made in God's image and after his demut — which is why the figure on the throne having 'the demut of a human' is so loaded.", ("Ezekiel", 1, 5)),
+    ("ofan", "ofan / ofannim", "אוֹפַן / אוֹפַנִּים", "ofan / ofannim",
+     "WHEEL — the wheels beside the living creatures in Ezekiel 1, gleaming like beryl, 'a wheel within a wheel,' their rims full of eyes, moving wherever the spirit goes. Ordinary Hebrew for a cart-wheel; later Jewish angelology promoted the OPHANIM into an order of angels ranked with the cherubim and seraphim — celestial beings that began as furniture in this vision.", ("Ezekiel", 1, 15)),
+    ("kavod", "kavod", "כָּבוֹד", "kavod",
+     "GLORY — and literally WEIGHT. Built on kaved, 'heavy' (the same root behind 'honor,' which is treating a person as weighty, and behind Pharaoh's HEAVY heart). God's glory is his weight, his sheer mattering. In Ezekiel the kavod is not an abstraction but a character in the plot: seen first in exile by the Chebar canal (1:28), watched LEAVING the temple in chapters 10-11, and watched returning in chapter 43.", ("Ezekiel", 1, 28)),
+    ("merkavah", "merkavah", "מֶרְכָּבָה", "merkavah",
+     "CHARIOT — the name readers gave Ezekiel 1, though the word never appears in the chapter. Ma'aseh Merkavah, 'the Work of the Chariot,' is the oldest strand of Jewish mysticism, and the Mishnah restricts it as it restricts nothing else: it may not be expounded even to a single student unless he is wise and understands of his own knowledge (Hagigah 2:1).", ("Ezekiel", 1, 15)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2261,7 +2271,7 @@ ENCYCLOPEDIA = [
               "Zerubbabel is handed the signet back (Haggai 2:23), and both Gospel genealogies of the Messiah pass "
               "through his line — the king 'written childless' as to David's old throne became an ancestor of the "
               "one who inherits a greater one.",
-         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28)], videos=[]),
+         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Ezekiel", 1, 2)], videos=[]),
 
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
@@ -2635,6 +2645,26 @@ ENCYCLOPEDIA = [
               "through the motions — and he is the last prophetic voice in the Christian arrangement of the Old "
               "Testament before the Gospels. His 3:1 was the verse Mark chose to open his Gospel with.",
          refs=[("Malachi", 1, 1)], videos=[]),
+    dict(slug="ezekiel", name="Ezekiel", kind="person", aliases=["Ezekiel"],
+         desc="A priest, son of Buzi, deported to Babylonia with King Jehoiachin in 597 BC and called as a prophet "
+              "five years later by the Chebar canal — the first prophet in the Bible commissioned entirely OUTSIDE "
+              "the land of Israel. His name means 'God strengthens' (or 'may God strengthen'). He is the most "
+              "precisely dated prophet in the Old Testament, the most physically afflicted (struck dumb, made to "
+              "lie on one side for months, forbidden to mourn his wife), and the one to whom God speaks almost "
+              "exclusively as 'son of man' — ninety-three times. His book runs from the chariot vision of chapter 1, "
+              "through the departure of the glory from the temple, to the valley of dry bones and a temple measured "
+              "stone by stone in a final vision, ending on the name of the city: 'Jehovah is there.'",
+         refs=[("Ezekiel", 1, 3)], videos=[]),
+    dict(slug="chebar", name="the river Chebar", kind="place", aliases=["Chebar"],
+         desc="Not a river but the nāru kabaru, the 'Great Canal' — a major irrigation channel off the Euphrates "
+              "running past the ancient city of NIPPUR in southern Mesopotamia, named in Babylonian cuneiform "
+              "business documents of exactly this period. Judean deportees were settled in villages along it; "
+              "tablets recovered in recent decades name one of them āl-Yāhūdu, 'Judah-town.' Ezekiel saw the "
+              "chariot vision here (1:1, 1:3), and the site of it can be pointed to on a map — the glory of "
+              "Jehovah appearing in the irrigation district of the empire that had carried them off.",
+         refs=[("Ezekiel", 1, 1), ("Ezekiel", 1, 3)], videos=[],
+         coords=(32.13, 45.19, 1.2), approx=True,
+         modern="Southern Iraq — the canal system around Nippur (Nuffar), south-east of Babylon"),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3245,6 +3275,14 @@ XREFS = [
     ((("Malachi", 1, 13)), (18, 22), "the second tiqqun soferim on the site — a place where the scribes report softening the text out of reverence"),
     ((("Malachi", 1, 14)), (("Malachi", 1, 6)), "'where is my fear?' asked at the altar, answered from outside it: 'my name is FEARED among the nations'"),
     ((("Malachi", 1, 14)), (6, 11), "moshchat, 'what is ruined' — the flood's own ruin-verb, turning up on an altar"),
+    # ---- Ezekiel 1 ----
+    ((("Ezekiel", 1, 3)), (("Jeremiah", 1, 2)), "'the word of Jehovah came' — the same formula that opened Jeremiah, now reaching a priest outside the land, in the country of the Chaldeans"),
+    ((("Ezekiel", 1, 22)), (1, 6), "raqia, the VAULT of Genesis 1 — Ezekiel is looking at it from underneath, and there is a throne on top of it"),
+    ((("Ezekiel", 1, 24)), (("Revelation", 1, 15)), "'like the sound of many waters' — the same comparison John reaches for describing the voice of the risen Christ"),
+    ((("Ezekiel", 1, 26)), (1, 26), "demut — humankind made in God's LIKENESS; and here what is on the throne has the likeness of a human"),
+    ((("Ezekiel", 1, 28)), (9, 13), "the bow in the cloud — the war-bow God hung up as a promise not to destroy, now the light around the throne"),
+    ((("Ezekiel", 1, 28)), (("Malachi", 1, 6)), "kavod, glory, is literally WEIGHT — the root behind Malachi's 'where is my honor?', arriving in person"),
+    ((("Ezekiel", 1, 10)), (("Revelation", 4, 7)), "the four faces — human, lion, ox, eagle — reappear around the throne in Revelation, one face each"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3545,6 +3583,9 @@ VERSE_OF_DAY = [
     ("Malachi", 1, 6, "“If I am a father, where is my honor? And if I am a master, where is my fear?” The question the whole chapter is built to answer — from outside Israel."),
     ("Malachi", 1, 10, "“Who is there even among you who would shut the doors?” God would rather the temple were closed than served like this."),
     ("Malachi", 1, 11, "“From the rising of the sun to its setting my name is great among the nations.” The last prophet, pointing outward."),
+    ("Ezekiel", 1, 1, "“The heavens were opened, and I saw visions of God.” Said by a deported priest sitting beside an irrigation canal in Iraq."),
+    ("Ezekiel", 1, 26, "“A likeness like the appearance of a human upon it.” The most carefully hedged sentence in the Old Testament."),
+    ("Ezekiel", 1, 28, "“Like the appearance of the bow that is in the cloud on a day of rain.” The light around the throne is the weapon God hung up."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3974,6 +4015,9 @@ CHRON_CHAPTERS = {
     "mal1": dict(era="return",
                  when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
                  clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
+    "ezek1": dict(era="exile",
+                  when="By the Chebar canal in Babylonia, five years into the exile of King Jehoiachin — the chariot vision, and the call of a priest who will never serve at an altar.",
+                  clock="593 BC, and the book says so to the day: 'the fifth of the fourth month, the fifth year of the exile of King Jehoiachin' (597 BC + 5). ⚠ Verse 1's OWN date — 'the thirtieth year' — is counted from something the book never names; the readings (Ezekiel's age at 30, Josiah's reform in 622, a Babylonian era) are set out in the notes."),
 }
 
 CHRON_EVENTS = [
@@ -4108,6 +4152,12 @@ CHRON_EVENTS = [
          note="One scene spanning chapters 10–12, dated by 10:1 to 'the third year of Cyrus' — an old man shown the far end of history and dismissed with a personal promise: 'you shall rest, and you shall stand up to your lot at the end of the days' (12:13). The Hebrew Bible's clearest resurrection text (12:2) belongs to this vision.",
          ref=("Daniel", 12, 2)),
     # -- Between the Testaments --
+    dict(era="exile", am="—", trad="597 BC", event="Jerusalem surrenders; King Jehoiachin, the court and the craftsmen deported to Babylonia — the exile Ezekiel dates everything from",
+         note="The Babylonian Chronicle records Nebuchadnezzar taking the city and appointing a king of his own choosing, dating the capture to 2 Adar (16 March) 597 BC — one of the firmest dates in Old Testament history. Ration tablets excavated in Babylon name 'Ya'u-kinu, king of the land of Yahudu' among those fed at the king's expense.",
+         ref=("Ezekiel", 1, 2)),
+    dict(era="exile", am="—", trad="593 BC", event="Ezekiel's call by the Chebar canal — the chariot vision, and the first prophet commissioned outside the land",
+         note="Dated by the book to the day (1:1-2). The point of a throne on wheels, seen in Babylonia, is that it goes where the exiles are.",
+         ref=("Ezekiel", 1, 1)),
     # -- The Return --
     dict(era="return", am="—", trad="538 BC", event="Cyrus of Persia allows the exiles to return; the first company goes home to a ruined Jerusalem",
          note="The Cyrus Cylinder records the Persian policy of restoring deported peoples and their sanctuaries — the imperial background to Ezra 1. Daniel 1:21 closes on the same year, 'the first year of King Cyrus.'",
@@ -5240,5 +5290,39 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ A VERSIFICATION NOTE that will matter at the end of the book: the Hebrew Malachi has THREE chapters, not four. What English Bibles print as chapter 4 ('behold, the day is coming, burning like a furnace… I will send you Elijah the prophet') is, in the Masoretic text, simply the last six verses of chapter 3. The chapter grid on this page follows the familiar English numbering; the translation follows the Hebrew, and the seam will be flagged where it falls. Malachi's Hebrew is otherwise plain and well preserved — its difficulties are lexical (a scatter of rare words: mattela'ah, niv, moshchat) and interpretive rather than textual, with one famous exception: 1:13 stands on the traditional list of tiqqunei soferim, passages the scribes are said to have reverently softened.",
         christ="No Old Testament book is put to more direct Christian use in its last pages. 'Behold, I send my messenger, and he will prepare the way before me' (3:1) is quoted at the opening of Mark's Gospel and applied to John the Baptist (Mark 1:2), and the promise of ELIJAH before the great day (4:5-6, Hebrew 3:23-24) is what Jesus answers when the disciples ask about Elijah's coming (Matthew 17:10-13). The Lord who 'will suddenly come to his temple' and sit 'as a refiner and purifier of silver' (3:1-3) has been read as Christ since the earliest Christian centuries, and 1:11's 'pure offering' in every place became the classic patristic text for the Eucharist (the Didache, Justin Martyr, Irenaeus). Chapter 1's own contribution is quieter and larger: a God whose name is already great among the nations, refusing the offerings of the people who own the altar.",
         debates="First, WHO MALACHI IS — a name or a title (the Septuagint's 'his messenger' against the plain Hebrew reading), and whether he is Ezra (the Targum's guess). Second, 1:2-3, 'Jacob I loved, and Esau I hated' — whether love and hate here are the covenant idiom for choosing and passing over, or mean what they say; Paul's use of the verse at Romans 9:13 keeps the argument alive. Third, 1:11 — whether the pure offering among the nations is PRESENT (the nations already honor God better than Judah does), FUTURE (a prophecy of Gentile worship, read from the second century onward as the Eucharist), or a reference to the scattered Jews of the diaspora. And fourth, the unity of the book — whether the closing verses about Moses and Elijah are Malachi's own ending or a later editorial seal on the whole prophetic collection. All laid out with pedigrees; the library does not cast a vote.",
+    ),
+    "Ezekiel": dict(
+        hebrew_name="יְחֶזְקֵאל",
+        hebrew_translit="Yechezqel",
+        hebrew_meaning="'God strengthens' — or 'may God strengthen.' The book is named for its prophet, a deported priest, and it is the only prophetic book set entirely OUTSIDE the land of Israel.",
+        greek_name="Ἰεζεκιήλ (Iezekiel)",
+        greek_meaning="The Greek Septuagint of Ezekiel is noticeably shorter than the Hebrew (by some four to five percent) and one important papyrus omits a long stretch of chapter 36 — evidence, as in Jeremiah, that the book circulated in more than one edition before the text settled.",
+        tagline="The strangest book in the Old Testament — a priest with no temple, sitting by an irrigation canal in Iraq, who sees the throne of God on wheels; and who then watches the glory leave Jerusalem, and promises it will come back.",
+        genre="PROPHECY of an unusually extreme kind: vast symbolic VISIONS (the chariot, the valley of dry bones, the measured temple), SIGN-ACTS performed on the prophet's own body (lying bound on one side for months, shaving his head with a sword, refusing to mourn his wife), long prose oracles, ALLEGORIES (the two sisters, the vine, the great eagle), laments over the nations, and a closing law-code and temple blueprint. It is the Old Testament's principal quarry for later apocalyptic — Daniel and Revelation both build with its stone.",
+        canon="One of the Major Prophets (with Isaiah and Jeremiah), placed after Jeremiah and Lamentations; in the Hebrew canon, among the Latter Prophets. ⚠ Its place was not automatic: the Talmud reports that the book was nearly withdrawn from public use because its temple laws contradict the Torah, until Hananiah ben Hezekiah 'burned three hundred jars of oil' reconciling them (Shabbat 13b) — and the Mishnah restricts the chariot vision of chapter 1 more tightly than any other passage in Scripture (Hagigah 2:1).",
+        author="EZEKIEL son of Buzi, a priest (1:3), deported to Babylonia in 597 BC with King Jehoiachin and called as a prophet five years later. The book is overwhelmingly first-person and remarkably unified in style and vocabulary — which has made it, unusually among the prophets, a book most scholars are willing to credit largely to the man it names, with later editing of the temple vision and the oracles against the nations.",
+        date="Precisely dated, and almost uniquely so: fourteen oracles carry a day, month and year counted from Jehoiachin's exile, running from 593 BC (the call, 1:1-2) to 571 BC (29:17) — a ministry of just over twenty years spanning the fall of Jerusalem in 586, which arrives at its exact midpoint and splits the book in two. ⚠ The one date the book does not explain is its first: 'the thirtieth year' (1:1), counted from something unnamed.",
+        place="Babylonia — the Judean deportee settlements along the nāru kabaru, the 'Great Canal' near Nippur, which the book calls the river Chebar. Ezekiel never returns to Jerusalem in the flesh; he is carried there in visions (8:3) and watches it fall from five hundred miles away.",
+        audience="The FIRST wave of exiles — the court, the craftsmen and the priests taken in 597, living in their own villages in southern Mesopotamia and confident that the disaster was temporary and Jerusalem would stand. Half of Ezekiel's work is destroying that confidence; the other half, after the city falls and hope dies with it, is rebuilding a future for the same people. The turn is exact: at 33:21 a fugitive arrives with the news, and the book changes direction in a single verse.",
+        structure=[
+            ["1-3", "The call — the chariot vision by the Chebar, the scroll he is told to eat, and the appointment as a watchman."],
+            ["4-24", "Judgment on Jerusalem — sign-acts, allegories, and the great vision (chs 8-11) in which the glory of Jehovah leaves the temple; ending on the night the city is besieged and his wife dies."],
+            ["25-32", "Oracles against the nations — Ammon, Moab, Edom, Philistia, TYRE (the longest, with its lament over a great ship), Sidon, and Egypt."],
+            ["33-39", "After the fall — the watchman renewed, the shepherds indicted, a new heart and a new spirit, the VALLEY OF DRY BONES, and Gog of Magog."],
+            ["40-48", "The final vision — a new temple measured cubit by cubit, the glory returning by the east gate, a river running from under the threshold, and the land redivided. The last words are the city's new name: 'Jehovah is there.'"],
+        ],
+        themes=[
+            "THE GLORY (kavod) THAT MOVES — the book's spine. God's presence is seen first in Babylonia (ch 1), watched leaving the temple by stages (chs 10-11), and watched returning at the end (43:1-5). The theological earthquake is that God is not confined to a building — which is exactly what an exile needed to hear and a Jerusalemite refused to.",
+            "'THEY SHALL KNOW THAT I AM JEHOVAH' — the recognition formula, some seventy times, attached to judgment and rescue alike; everything that happens in the book happens so that someone will know who God is.",
+            "'SON OF MAN' — God's only form of address to the prophet, ninety-three times: a standing reminder of the distance between the human on the throne and the human on the ground.",
+            "INDIVIDUAL RESPONSIBILITY — chapter 18 breaks the proverb about fathers eating sour grapes and children's teeth being set on edge: 'the soul that sins, it shall die,' and the one who turns will live.",
+            "A NEW HEART — the promise that the problem is internal and the cure must be too: 'I will give you a new heart, and put a new spirit within you; I will remove the heart of stone' (36:26), which is the same insight as Jeremiah's new covenant, and which the dry bones then act out (ch 37).",
+            "HOLINESS AND THE NAME — God acts, the book insists uncomfortably often, 'for the sake of my holy name' rather than because Israel deserves it; the priest-prophet's categories are clean and unclean, holy and profane, all the way through.",
+        ],
+        key_words=["kavod", "raqia", "demut", "chashmal"],
+        key_people=["ezekiel", "chebar", "jehoiachin", "babylon"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Ezekiel's Hebrew is famously difficult: heavily Aramaic-influenced, with a large vocabulary of rare and unique words (chashmal, bazaq, and the technical architectural terms of chapters 40-48 among them), and grammar that in the vision passages goes genuinely unstable — genders and numbers slipping inside single verses, as they do all through chapter 1. Translations quietly regularize this; the notes flag it where it falls. The Greek Septuagint is several percent shorter than the Hebrew and occasionally clearly better, and the Masoretes left an unusual number of ketiv/qere (written/read) notes in this book. This translation follows the Masoretic Hebrew and reports the significant divergences.",
+        christ="Ezekiel supplies the New Testament with some of its largest furniture. 'SON OF MAN,' God's address to the prophet here, is the title Jesus uses of himself more than any other (though its apocalyptic weight comes from Daniel 7). The chariot vision's four living creatures reappear around the throne in Revelation 4, its measuring-reed and river of life in Revelation 21-22, and Gog and Magog in Revelation 20. The indictment of Israel's SHEPHERDS in chapter 34, and God's answer — 'I myself will search for my sheep… I will set up over them one shepherd' — stands directly behind John 10, 'I am the good shepherd.' And the promise of a new heart and a new spirit (36:26), acted out in the valley of dry bones, is the Old Testament's clearest statement of the thing Jesus tells Nicodemus must happen to a person (John 3).",
+        debates="The UNITY of the book (how much of the temple vision and the nations-oracles is the prophet's own hand), and its two EDITIONS (the shorter Greek against the longer Hebrew). Then the prophet himself: the extremity of his symbolic acts and visionary states has attracted every kind of psychological explanation, from ecstatic trance to catalepsy to schizophrenia — a discussion that says at least as much about its own eras as about him, and that the ancient world would not have recognized as a question. Also debated: whether he prophesied partly in Palestine (a minority view, generated by how vividly he describes Jerusalem from five hundred miles away), the identity of Gog of Magog, and above all what to make of the TEMPLE of chapters 40-48 — a literal building to be built, an idealized symbol, or a vision of the age to come; it has never been built, and its laws do not match the Torah's, which is the fact that nearly cost the book its place in the canon.",
     ),
 }
