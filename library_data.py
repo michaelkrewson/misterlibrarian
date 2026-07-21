@@ -791,6 +791,10 @@ DICTIONARY = [
      "BEAUTY, glory, ornament — and also GAZELLE, and the Bible plays on both. The lament opens 'the TZVI, O Israel, lies slain on your high places' (2 Samuel 1:19) and the versions split: KJV 'the beauty of Israel,' ESV 'your glory, O Israel,' NIV 'a gazelle lies slain on your heights.' ⚠️ The ambiguity may well be deliberate — a lament for something swift and lovely brought down on a hill suits either sense, and verse 23 goes on to call the dead 'swifter than eagles.' In the other direction the word names the promised land itself, 'the GLORY of all lands' (Ezekiel 20:6, 15) and Daniel's 'beautiful land' (11:16, 41).", ("2 Samuel", 1, 19)),
     ("sefer-hayashar", "sefer ha-yashar", "סֵפֶר הַיָּשָׁר", "sefer ha-yashar",
      "THE BOOK OF JASHAR — literally 'the Book of the Upright,' a collection the Bible quotes and we no longer possess. It is cited twice: for the sun standing still at Gibeon (Joshua 10:13) and for David's lament over Saul and Jonathan (2 Samuel 1:18). ⚠️ Scripture openly names sources that have not survived — also 'the Book of the Wars of Jehovah' (Numbers 21:14) and the royal chronicles repeatedly referenced in Kings — which tells us the biblical writers worked with archives and expected readers to know it. (Several later works circulate under the title 'Book of Jasher'; none is the book quoted here.)", ("2 Samuel", 1, 18)),
+    ("yeshuah", "yeshuah", "יְשׁוּעָה", "yeshuah",
+     "SALVATION — but concretely: rescue, being got out of danger, victory. 'Stand firm and see the YESHUAH of Jehovah' (Exodus 14:13) is not about the afterlife; it is about an army behind and water ahead. ⚠️ The root gives the names JOSHUA (Yehoshua, 'Jehovah saves') and, through Greek, JESUS — so the angel's explanation in Matthew 1:21, 'you shall call his name Jesus, for he will SAVE his people,' is a play on the name in Hebrew that the Greek cannot show. Keep the concrete sense in view when the word appears: Israel's vocabulary for being saved was built at a seashore.", ("Exodus", 14, 13)),
+    ("chomah", "chomah", "חוֹמָה", "chomah",
+     "A WALL — specifically the defensive wall of a city (Jericho's CHOMAH falls flat, Joshua 6:20; Nehemiah rebuilds Jerusalem's). It is the word used of the water at the crossing: 'the waters were a CHOMAH for them on their right and on their left' (Exodus 14:22, 29), which is why every painting shows two standing cliffs of sea. ⚠️ A minority reading takes it here as a metaphor of PROTECTION — a defensive wall on either flank — noting that a wind strong enough to dry a seabed is not obviously one that leaves water in vertical faces. The plain sense of the noun is a wall, and this translation keeps it; the alternative is noted, not adopted.", ("Exodus", 14, 22)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2593,6 +2597,25 @@ ENCYCLOPEDIA = [
               "prophets return to it repeatedly in their oracles against Philistia (Amos 1:8; Zephaniah 2:4-7; "
               "Jeremiah 47:5-7).",
          refs=[("2 Samuel", 1, 20)], videos=[]),
+    dict(slug="yam-suph", name="the Sea of Reeds (Red Sea)", kind="place", aliases=["Sea of Reeds"],
+         coords=(29.9, 32.55, 1.6), approx=True,
+         desc="The water Israel crosses (Exodus 14), and one of the most argued-over locations in the Bible. "
+              "⚠️ The Hebrew is YAM SUPH, 'sea of REEDS' — suph is the marsh growth of the Nile's edge, the same "
+              "word used of the reeds among which the infant Moses was hidden (2:3). The Greek Old Testament "
+              "rendered it 'Red Sea,' and through the Latin and the KJV that is how English inherited it. "
+              "⚠️ Three candidate zones, each with a real case: (1) the NORTHERN LAKES — Lake Timsah or the Bitter "
+              "Lakes in the isthmus of Suez, which suits the literal 'sea of reeds' (papyrus grows in fresh and "
+              "brackish marsh, not in the salt Red Sea) and the short march from Goshen; (2) the GULF OF SUEZ, the "
+              "western arm of the Red Sea — the traditional identification held by ancient Jewish and early "
+              "Christian writers, and the site explored in the film below; (3) the GULF OF AQABA, the eastern arm, "
+              "argued by those who place Mount Sinai in Arabia (Galatians 4:25 is enlisted for this), a view that "
+              "is popular but contested. Complicating all of it: yam suph elsewhere plainly means the Gulf of "
+              "Aqaba (1 Kings 9:26, where Solomon's fleet is built at Ezion-geber) — so the phrase does not name "
+              "one fixed body of water. ⚠️ The three camp-sites of 14:2 (Pi-hahiroth, Migdol, Baal-zephon) are "
+              "given with striking precision and none can be securely located, which is the honest state of the "
+              "question. The map marks the traditional zone approximately.",
+         refs=[("Exodus", 13, 18), ("Exodus", 14, 2), ("Exodus", 15, 4)],
+         videos=[("Where God Divided the Sea...Exploring the Exodus!", "https://www.youtube.com/watch?v=conaKQoe4hk")]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3191,6 +3214,10 @@ XREFS = [
     (("Exodus", 13, 19), ("Exodus", 3, 16), "'God will surely visit you' — Joseph's doubled verb, given back to Moses at the bush (Ex 3:16)"),
     (("2 Samuel", 1, 10), ("2 Samuel", 1, 16), "the crown in his hand, and the confession that convicts him"),
     (("2 Samuel", 1, 14), ("2 Samuel", 1, 16), "'Jehovah's anointed' — twice in three verses, the principle David refuses to break"),
+    (("Exodus", 14, 21), ("Exodus", 10, 13), "'a strong east wind all night' — the same wind that carried in the locusts (Ex 10:13)"),
+    (("Exodus", 14, 19), ("Exodus", 13, 21), "the pillar moves from the front to the rear — the guide becomes a rear-guard"),
+    (("Exodus", 14, 25), ("Exodus", 10, 7), "Egypt says the true thing before Israel does — as the officials did at 10:7"),
+    (("Exodus", 14, 31), ("Exodus", 4, 31), "'they believed' — the question asked at the burning bush (Ex 4:1, 31), answered at last"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3218,10 +3245,11 @@ VIDEO_CREDITS = [
 # before starting a new chapter or book; move anything relevant into an
 # ENCYCLOPEDIA entry (new or existing) as soon as its target is reached.
 VIDEO_QUEUE = [
-    ("Where God Divided the Sea...Exploring the Exodus!",
-     "https://www.youtube.com/watch?v=conaKQoe4hk",
-     "Exodus (the sea crossing)",
-     "Field evidence for the Red Sea/Sea of Reeds crossing route and location."),
+    # ("Where God Divided the Sea...Exploring the Exodus!"
+    #  — PLACED 2026-07-21 on the YAM-SUPH encyclopedia entry (Exodus 14), at
+    #  Michael's request while translating the sea crossing. The entry lays out
+    #  all three candidate zones; the film explores the traditional Gulf of Suez
+    #  site. Location notes in research/exodus_pharaoh_early_date.md.)
     # ("Tomb of the Exodus Pharaoh: What Was Found & Why You Don't Know About It!"
     #  — PLACED 2026-07-16 on the EXODUS-PHARAOH encyclopedia entry (Exodus 1),
     #  per Michael's call to lead with Joel Kramer's early-date identification.
@@ -3483,6 +3511,10 @@ VERSE_OF_DAY = [
     ("2 Samuel", 1, 19, "“The glory, O Israel, lies slain on your high places! How the mighty have fallen!”"),
     ("2 Samuel", 1, 23, "“Beloved and lovely in their lives, and in their death they were not parted.”"),
     ("2 Samuel", 1, 27, "“How the mighty have fallen, and the weapons of war perished!”"),
+    ("Exodus", 14, 12, "“It is better for us to serve the Egyptians than to die in the wilderness.” Three days free, and asking to go back."),
+    ("Exodus", 14, 14, "“Jehovah will fight for you, and you shall keep silent.”"),
+    ("Exodus", 14, 15, "“Why do you cry out to me? Speak to the sons of Israel, that they set out.”"),
+    ("Exodus", 14, 31, "“And they believed in Jehovah and in Moses his servant.” The first time Israel believes."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3905,6 +3937,9 @@ CHRON_CHAPTERS = {
     "2sam1": dict(era="monarchy",
                   when="News of Saul's death on Gilboa reaches David at Ziklag. An Amalekite claims to have finished the king and is executed for it, and David chants the Song of the Bow over Saul and Jonathan.",
                   clock="c. 1010 BC on the conventional chronology of the united monarchy — the hinge between Saul's reign and David's."),
+    "exod14": dict(era="exodus",
+                  when="The sea. Israel is told to camp with the water at its back so Pharaoh will think them trapped; six hundred chariots overtake them; a strong east wind blows all night, Israel crosses on dry ground, and the returning water destroys the army — after which Israel believes for the first time.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — days after the Passover, at a place the text names precisely and no one can now locate."),
 }
 
 CHRON_EVENTS = [
