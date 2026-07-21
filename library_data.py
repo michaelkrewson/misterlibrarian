@@ -677,6 +677,14 @@ DICTIONARY = [
      "REST — a settled security, a place to come to rest. Naomi prays Jehovah give her daughters-in-law MENUCHAH and spells out what she means, 'in the house of her husband' (Ruth 1:9): the safety of a home and marriage. It is the one thing the widowed, landless Naomi cannot provide, and the very thing the whole book circles back to give Ruth through Boaz (3:1, 'shall I not seek REST for you?'). The same root gives the Psalm's 'still waters,' literally 'waters of rest' (Psalm 23:2).", ("Ruth", 1, 9)),
     ("mara", "mara", "מָרָא", "mara",
      "BITTER — the name Naomi gives herself on her return: 'Do not call me Naomi [sweet]; call me MARA, for the Almighty has dealt very bitterly (hemar) with me' (Ruth 1:20). The pun turns her own name inside out. The same root marks the 'bitter' waters of Marah in the wilderness (Exodus 15:23) and the 'bitter herbs' of the Passover (Exodus 12:8). ⚠️ Naomi is wrong that she is empty — Ruth stands beside her — but the book lets her name her grief honestly before it answers it.", ("Ruth", 1, 20)),
+    ("despotes", "despotes", "δεσπότης", "despotes",
+     "MASTER, sovereign owner — the master of a household SLAVE (our 'despot'), a stronger, more possessive word than the ordinary 'lord' (kyrios). Jude calls himself a 'slave (doulos) of Jesus Christ' (1:1), then charges the intruders with denying 'our only DESPOTES and Lord, Jesus Christ' (1:4): runaway slaves disowning the one who owns them. The same title is given to the Sovereign Lord in Simeon's song (Luke 2:29) and the martyrs' cry (Revelation 6:10).", ("Jude", 1, 4)),
+    ("aselgeia", "aselgeia", "ἀσέλγεια", "aselgeia",
+     "LICENTIOUSNESS, unrestrained indecency — sensuality with no shame or brake, flaunted rather than hidden. Jude's charge is exact: the false teachers 'turn the grace of our God into ASELGEIA' (1:4), making forgiveness a licence and grace an excuse for the very thing it saves from. It heads Paul's works-of-the-flesh (Galatians 5:19) and names the old life's abandon (1 Peter 4:3).", ("Jude", 1, 4)),
+    ("hapax", "hapax", "ἅπαξ", "hapax",
+     "ONCE, once for all — a single decisive time, not to be repeated. It is the hinge of Jude's appeal: contend for 'the faith HAPAX delivered to the holy ones' (1:3) — handed over ONCE, complete, not to be revised, added to, or traded. The same word carries the weight of Hebrews' 'once for all' sacrifice of Christ (Hebrews 9:26-28; 10:10): what is done hapax cannot be undone.", ("Jude", 1, 3)),
+    ("spilas", "spilas", "σπιλάς", "spilas",
+     "A HIDDEN REEF (plural spilades) — a rock just under the surface that tears the hull out of a ship that never saw it. Jude's image for the intruders 'in your love-feasts' (1:12): they sit at the common table and wreck the church from below, unseen. ⚠️ A near-identical word, spilos ('spot, blemish'), stands behind the parallel in 2 Peter 2:13, and some render Jude's word 'blemishes' — but the seafaring 'reef' suits his storm of sea-images (waves, wandering stars) and is kept here.", ("Jude", 1, 12)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2265,6 +2273,36 @@ ENCYCLOPEDIA = [
               "uses it to measure the extravagance of Ruth's. Her name is traditionally linked to oref, 'the back of "
               "the neck' — the one who turns her back — though the etymology is uncertain.",
          refs=[("Ruth", 1, 4), ("Ruth", 1, 14)], videos=[]),
+    dict(slug="jude", name="Jude (Judas, brother of James)", kind="person", aliases=["Jude"],
+         desc="The author of the letter that bears his name — 'a slave of Jesus Christ and brother of JAMES' (1:1). "
+              "Naming James the Just, leader of the Jerusalem church and a brother of Jesus, identifies this Jude as "
+              "another of the Lord's brothers (listed in Mark 6:3 as 'James and Joses and Judas and Simon'). He "
+              "writes not by family claim but as a servant, calling the church to 'contend for the faith once for "
+              "all delivered.' ⚠️ Not to be confused with Judas Iscariot, or with the apostle Judas 'not Iscariot' "
+              "(John 14:22); the brother-of-James signature marks him out.",
+         refs=[("Jude", 1, 1)], videos=[]),
+    dict(slug="balaam", name="Balaam", kind="person", aliases=["Balaam"],
+         desc="The gentile seer of Numbers 22-24, hired by Balak of Moab to curse Israel and made to bless them "
+              "instead — but who then taught Balak to seduce Israel into idolatry and immorality for a fee (Numbers "
+              "31:16). In the New Testament he becomes the type of the teacher who sells his gift for money: Jude "
+              "condemns those who 'for pay abandoned themselves to the error of Balaam' (1:11), and 2 Peter 2:15 and "
+              "Revelation 2:14 use him the same way. Greed dressed up as prophecy.",
+         refs=[("Jude", 1, 11)], videos=[]),
+    dict(slug="korah", name="Korah", kind="person", aliases=["Korah"],
+         desc="A Levite who led a revolt against the authority of Moses and Aaron in the wilderness, claiming the "
+              "whole congregation was holy and needed no mediators; the earth opened and swallowed him and his "
+              "company (Numbers 16). Jude makes him the type of rebellion against God-given leadership: the false "
+              "teachers 'perished in the rebellion (antilogia) of Korah' (1:11) — the third of his three named "
+              "ruins, after Cain's murder and Balaam's greed.",
+         refs=[("Jude", 1, 11)], videos=[]),
+    dict(slug="sodom", name="Sodom (and Gomorrah)", kind="place", aliases=["Sodom", "Gomorrah"],
+         desc="The chief of the cities of the plain by the Dead Sea, a byword for wickedness, destroyed by fire and "
+              "sulphur from Jehovah in the days of Abraham and Lot (Genesis 18-19). LOT escapes; his wife looks back "
+              "and becomes a pillar of salt; and Moab and Ammon are born of the aftermath (Genesis 19:37-38). Ever "
+              "after, Sodom is Scripture's shorthand for judgment — the prophets invoke it, Jesus warns that towns "
+              "rejecting him will fare worse than it (Matthew 10:15), and Jude sets it among his examples, "
+              "'undergoing the punishment of eternal fire' (1:7).",
+         refs=[(19, 24), ("Jude", 1, 7)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2803,6 +2841,9 @@ XREFS = [
     (("Ruth", 1, 14), (2, 24), "'clung to her' — dabaq, the Genesis 2:24 marriage verb, turned to a daughter-in-law's loyalty"),
     (("Ruth", 1, 6), (21, 1), "paqad, 'Jehovah had visited his people' — the visitation verb of Sarah's son, now emptying the famine from the House of Bread"),
     (("Ruth", 1, 20), (17, 1), "Shaddai, 'the Almighty' — the old patriarchal name of God from the covenant with Abram, reached for in Naomi's grief"),
+    (("Jude", 1, 11), (4, 8), "'the way of Cain' — the first murder (Genesis 4), Jude's first archetype of rebellion"),
+    (("Jude", 1, 7), (19, 24), "Sodom and Gomorrah 'undergoing the punishment of eternal fire' — the fire and sulphur of Genesis 19"),
+    (("Jude", 1, 14), (5, 24), "'Enoch, the seventh from Adam' — the man who 'walked with God, and was not' (Genesis 5:24), here the named source of a prophecy"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3039,6 +3080,10 @@ VERSE_OF_DAY = [
     ("Ruth", 1, 20, "“Call me Mara, for the Almighty has dealt very bitterly with me.” Naomi turns her own sweet name inside out."),
     ("Ruth", 1, 21, "“I went out full, and Jehovah has brought me back empty” — said while Ruth, the whole book's redemption, stands beside her."),
     ("Ruth", 1, 22, "“They came to Bethlehem at the beginning of the barley harvest.” The famine over; the field of Boaz one verse away."),
+    ("Jude", 1, 3, "“Contend for the faith once for all delivered to the holy ones.” Jude's whole letter in a line — hapax, handed over once, complete."),
+    ("Jude", 1, 21, "“Keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ.” The fierce letter's tender center."),
+    ("Jude", 1, 24, "“To him who is able to keep you from stumbling, and to make you stand before his glory blameless, with great joy.”"),
+    ("Jude", 1, 25, "“To the only God our Savior… be glory, majesty, dominion, and authority, before all time and now and forever.” The great doxology."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3416,6 +3461,9 @@ CHRON_CHAPTERS = {
     "luke1": dict(era="gospels",
                   when="Two annunciations and two songs — Gabriel to Zechariah in the temple and to Mary in Nazareth, the Visitation, the birth of John, the Magnificat and the Benedictus.",
                   clock="c. 6–5 BC, 'in the days of Herod the king' (Herod the Great died in 4 BC) — the six months before the birth of Jesus. Luke's preface (1:1–4) is the one place a Gospel opens with a dated, first-person dedication."),
+    "jude1": dict(era="apostolic",
+                  when="A single-chapter warning against false teachers who 'crept in unnoticed' — with the letter's two famous citations of works outside the canon (the Assumption of Moses, and 1 Enoch).",
+                  clock="Hard to date; commonly placed c. AD 65-80. Its close kinship with 2 Peter 2, and its appeal to 'remember the words of the apostles' as an established past, put it a generation into the church."),
 }
 
 CHRON_EVENTS = [
@@ -4373,5 +4421,34 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Ruth's Hebrew is classical and clean — some of the finest narrative prose in the Bible — with a scatter of archaic or dialect forms and a few ketiv/qere (written-versus-read) notes that translators weigh but that rarely change the sense. The book is textually calm; its difficulties are literary and legal — the workings of gleaning-rights and levirate redemption — handled in the notes where they fall.",
         christ="The book ends on a genealogy, and that is its Christian point: the line runs Boaz → Obed → Jesse → DAVID (4:17-22), and through David, in Matthew's opening chapter, to Jesus — where RUTH the Moabite is named among the women in his ancestry (Matthew 1:5). Boaz the kinsman-redeemer (go'el) who buys back the destitute and covers them has long been read as a figure of a greater Redeemer; and the gathering of a Gentile outsider into the covenant people foreshadows the gospel's reach beyond Israel. A harvest story that ends in a cradle — and the cradle leads to a king.",
         debates="The main questions are DATE (early-monarchic vs post-exilic — which decides whether the book is a straightforward tale or a pointed argument against the foreign-wife expulsions of Ezra-Nehemiah) and AUTHORSHIP (the Samuel tradition vs an anonymous later hand). The legal machinery is also discussed — how gleaning-rights, the go'el's duty, and levirate marriage interlock, and why the nearer redeemer of chapter 4 backs out. On the book's meaning there is little dispute: it is about chesed, and about a foreigner made kin.",
+    ),
+    "Jude": dict(
+        greek_name="Ἰούδα (Iouda)",
+        greek_meaning="'Of Jude' — Ioudas, the same name as Judah and Judas. The author names himself 'brother of James,' which marks him as a brother of Jesus who calls himself only the Lord's slave.",
+        tagline="The New Testament's fiercest short letter — a one-chapter call to 'contend for the faith,' famous for quoting two books that are not in the Bible.",
+        genre="A general (catholic) EPISTLE — a circular letter of warning and exhortation, not addressed to one named church. Twenty-five verses of sustained polemic against false teachers, built on a chain of Old-Testament and Jewish judgment-examples, and closed by one of Scripture's greatest doxologies.",
+        canon="One of the seven 'catholic' (general) epistles near the end of the New Testament, just before Revelation. Among the shortest books in the Bible, and — with 2 and 3 John and 2 Peter — one whose place in the canon was debated in the early centuries, partly because of its use of non-canonical sources.",
+        author="JUDE — Ioudas, 'a slave of Jesus Christ and brother of James' (v1). Naming James the Just (leader of the Jerusalem church and a brother of Jesus) identifies the author as another brother of the Lord (Mark 6:3), writing not by family claim but as a servant. A minority take him for a different, otherwise-unknown Jude.",
+        date="Debated; commonly c. AD 65-80. The appeal to 'remember the words of the apostles' as an established past (v17) and the letter's close relationship with 2 Peter 2 suggest a date a generation into the church. Nothing in it is precisely datable.",
+        place="Unknown. The thoroughly Jewish character of its examples (the Exodus, the fallen angels, Enoch, Moses, Korah) and its ease with extra-biblical Jewish tradition point to a Jewish-Christian author writing to Jewish-Christian congregations, somewhere in the eastern Mediterranean world.",
+        audience="Christian congregations under threat from within — 'certain men have crept in unnoticed' (v4). Not a single church but believers generally, warned against teachers who turned grace into licence and denied the Lord who bought them.",
+        structure=[
+            ["1-4", "Greeting, and the occasion — a letter meant to be warm, turned urgent: 'contend for the faith once for all delivered.'"],
+            ["5-16", "The indictment — a chain of judgment-examples (the wilderness generation, the fallen angels, Sodom; Cain, Balaam, Korah; Enoch's prophecy) and vivid portraits of the intruders."],
+            ["17-23", "The exhortation — remember the apostles' warning; build yourselves up, pray, keep, wait; and rescue the wavering, 'snatching them out of the fire.'"],
+            ["24-25", "The doxology — to the God able to keep you from stumbling and present you blameless, glory forever."],
+        ],
+        themes=[
+            "CONTENDING FOR THE FAITH — the faith 'once for all (hapax) delivered,' complete and not to be traded; the whole letter is a call to guard it.",
+            "JUDGMENT ON THE UNGODLY — a relentless chain of examples that rescue is no guarantee: a redeemed people, angels, famous men, all fell.",
+            "GRACE TURNED TO LICENCE — the specific heresy: making forgiveness an excuse for the sin it forgives (aselgeia), and denying the Master (despotes) who owns them.",
+            "MERCY WITHIN THE WARNING — the fierce letter's other face: 'keep yourselves in the love of God,' 'have mercy,' 'snatch them from the fire.'",
+            "THE USE OF JEWISH TRADITION — Jude reaches openly for material outside the canon (the Assumption of Moses, 1 Enoch) to make his case — the clearest such case in the Bible.",
+        ],
+        key_words=["hapax", "despotes", "aselgeia", "agape"],
+        key_people=["enoch", "michael-archangel", "balaam", "sodom"],
+        source_text="Translated from the Greek of the SBL Greek New Testament (SBLGNT), edited by Michael W. Holmes. Jude's Greek is vigorous and vivid — a torrent of triads and sea-and-storm images — and carries two significant textual questions handled in the notes: the reading 'JESUS' (rather than 'the Lord') saving the people out of Egypt (v5), adopted here on the strength of the earliest witnesses; and the tangled 'have mercy… snatch from the fire… mercy with fear' of vv22-23, where the manuscripts cannot all be reconciled.",
+        christ="For all its fierceness the letter is framed by Christ: its readers are 'kept for Jesus Christ' (v1) and told to 'wait for the mercy of our Lord Jesus Christ' (v21), and it ends 'to the only God our Savior, through Jesus Christ our Lord' (v25). The heresy Jude fights is precisely a denial of 'our only Master and Lord, Jesus Christ' (v4) — and if the disputed reading of v5 stands, Jude sees Christ himself as the one who led Israel out of Egypt. The Lord who saves is the Lord who judges, and the same hands that keep you from stumbling will present you blameless before his glory.",
+        debates="Two clusters. First, the NON-CANONICAL SOURCES — Jude's use of the Assumption of Moses (v9) and his direct quotation of 1 Enoch as prophecy (vv14-15), which unsettled some early churches and still raises the question of what 'quoting' a book implies about its authority (the note takes no vote). Second, the RELATIONSHIP TO 2 PETER — Jude and 2 Peter 2 share so much material (the fallen angels, Sodom, Balaam, the waterless clouds) that one almost certainly drew on the other or a common source; which came first is a standing literary question. Authorship (the Lord's brother vs an unknown Jude) and date follow from these.",
     ),
 }
