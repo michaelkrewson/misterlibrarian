@@ -1954,13 +1954,13 @@ def build_book_intros():
                                 f'<div class="bi-chips">{kp}</div>')
             words_panel += '</div>'
 
-        # A FINISHED book has nothing to report as progress: a 100% thermometer and
-        # "the rest are still ahead" both state something untrue-by-then, so a
-        # complete book just says so and goes straight to the chapters.
+        # A FINISHED book has nothing to report as progress: a 100% thermometer,
+        # "the rest are still ahead," AND a "Complete — all N chapters translated"
+        # banner all state the obvious once the grid is entirely gold, so a complete
+        # book skips the status line and goes straight to the chapters.
         complete = bool(total) and len(pub) >= total
         if complete:
-            progress_block = (f'  <div class="bi-prog"><b>\u2713 Complete</b> — all {total} '
-                              f'chapters translated</div>')
+            progress_block = ""
             grid_hint = ""
         else:
             progress_block = (f'  <div class="bi-prog"><b>{len(pub)}</b> of {total} chapters translated '
