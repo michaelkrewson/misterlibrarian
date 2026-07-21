@@ -775,6 +775,14 @@ DICTIONARY = [
      "A THOUSAND — and also a CLAN or a military unit, and the ambiguity is load-bearing. Gideon protests that 'my ELEF is the poorest in Manasseh' (Judges 6:15), where a numeral makes no sense and a clan does; Saul's tribe is 'the least of the tribes' yet its families are counted by ELEF (1 Samuel 10:19). ⚠️ This is why the exodus figure of 'six hundred ELEF on foot' (Exodus 12:37) is discussed: read as a numeral it means a nation of roughly two million, read as units it means six hundred fighting companies of unstated size. The library reports both — the second is a real feature of the language, not a modern escape hatch — and takes no vote.", ("Exodus", 12, 37)),
     ("shimmurim", "leil shimmurim", "לֵיל שִׁמֻּרִים", "leil shimmurim",
      "A NIGHT OF WATCHING — from shamar, to keep or guard, and Exodus 12:42 uses it in BOTH directions in a single verse: it is a night on which Jehovah kept watch to bring them out, and a night to be kept by all the sons of Israel throughout their generations. God's vigil becomes the people's vigil. ⚠️ Jewish tradition has observed it literally ever since as a night of staying awake; the same root gives the ordinary command to 'KEEP' the Passover, so remembering and guarding are one word. Compare the failed vigil in Gethsemane on a Passover night — 'could you not WATCH with me one hour?' (Matthew 26:40).", ("Exodus", 12, 42)),
+    ("totafot", "totafot", "טוֹטָפֹת", "totafot",
+     "FRONTLETS — a rare word of uncertain origin, probably a band or ornament worn on the head. It appears in the twin commands 'it shall be for a sign on your hand and for TOTAFOT between your eyes' (Exodus 13:16; Deuteronomy 6:8; 11:18). ⚠️ Read literally these verses are the basis of TEFILLIN, the small boxes of scripture bound to arm and forehead in Jewish practice to this day — the 'phylacteries' Jesus mentions being widened for show (Matthew 23:5). Read figuratively they are an idiom for keeping something constantly before you, like Proverbs' 'bind them on your fingers, write them on the tablet of your heart' (7:3). Both readings are ancient; note that Exodus 13:9 gives the purpose as verbal — 'so that the law of Jehovah may be IN YOUR MOUTH.'", ("Exodus", 13, 16)),
+    ("chamushim", "chamushim", "חֲמֻשִׁים", "chamushim",
+     "In BATTLE ORDER — 'the sons of Israel went up CHAMUSHIM out of the land of Egypt' (Exodus 13:18), and the word is genuinely uncertain. It is usually taken as armed, equipped, or drawn up in ranks (so at Joshua 1:14; 4:12; Judges 7:11); but it resembles the word for FIVE, which has produced the old alternative 'in five divisions' or 'by fifties.' ⚠️ Whatever the detail, it cuts against the picture of a panicked rabble — and it sits pointedly next to the previous verse, where the same people are judged not ready to see war.", ("Exodus", 13, 18)),
+    ("padah", "padah", "פָּדָה", "padah",
+     "To REDEEM by paying a price — to buy back something that has fallen under another's claim. It is the verb of the firstborn law: a donkey's firstling is bought back with a lamb, and 'every firstborn of MAN among your sons you shall REDEEM' (Exodus 13:13, 15). ⚠️ The distinction from its close relative GA'AL is roughly that ga'al stresses the redeemer's family duty while padah stresses the PAYMENT. The word then carries the exodus itself — 'Jehovah REDEEMED you from the house of slaves' (Deuteronomy 7:8) — and becomes one of the standing verbs of rescue in the Psalms ('he will REDEEM Israel from all his iniquities,' 130:8).", ("Exodus", 13, 13)),
+    ("ammud-anan", "ammud anan", "עַמּוּד עָנָן", "ammud anan",
+     "PILLAR OF CLOUD — with its night form the pillar of fire, the visible presence that goes ahead of Israel from the moment they leave Egypt: 'the pillar of cloud did not depart by day, nor the pillar of fire by night, from before the people' (Exodus 13:21-22). ⚠️ It is not a map. It is a presence that moves and is followed, and it sets the pattern for the rest of the Torah: it stands between Israel and Egypt at the sea (14:19-20), descends at the tent of meeting where God speaks with Moses 'face to face' (33:9-11), and finally fills the finished tabernacle so that Israel travels only when it lifts (40:34-38; Numbers 9:15-23). Paul reads the passage under the cloud as a kind of baptism (1 Corinthians 10:1-2).", ("Exodus", 13, 21)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1341,7 +1349,7 @@ ENCYCLOPEDIA = [
               "for later readers (the same modernizing seen at 'Dan,' 14:14, and 'Ur of the Chaldeans'); a few "
               "posit an earlier Aegean presence. Either way it is the kind of seam the authorship-and-date "
               "debate turns on (see the Genesis introduction).",
-         refs=[(26, 1), (26, 8), (26, 14), (26, 15)], videos=[]),
+         refs=[(26, 1), (26, 8), (26, 14), (26, 15), ("Exodus", 13, 17)], videos=[]),
     dict(slug="abimelech", name="Abimelech (of Gerar)", kind="person", aliases=["Abimelech"],
          desc="King of Gerar — 'my-father-is-king,' possibly a dynastic title rather than a personal name (like "
               "'Pharaoh'; an Abimelech meets Isaac in ch. 26 too). The pagan king who argues righteousness with "
@@ -1476,7 +1484,7 @@ ENCYCLOPEDIA = [
               "the rescued become slaves. His bones, by his own oath, will be carried out of Egypt at the "
               "Exodus (Genesis 50:25; Exodus 13:19) — the one man of Genesis who makes the journey home.",
          refs=[(30, 24), (33, 2), (37, 2), (37, 3), (37, 23), (37, 28),
-               ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8)], videos=[]),
+               ("Exodus", 1, 5), ("Exodus", 1, 6), ("Exodus", 1, 8), ("Exodus", 13, 19)], videos=[]),
 
     # ---- Exodus 2 ----
     dict(slug="moses", name="Moses", kind="person", aliases=["Moses"],
@@ -2501,6 +2509,14 @@ ENCYCLOPEDIA = [
               "location is reasoned from Egyptian records and the route, not certain; the map marks it "
               "approximately.",
          refs=[("Exodus", 12, 37)], videos=[]),
+    dict(slug="etham", name="Etham", kind="place", aliases=["Etham"],
+         desc="The SECOND station of the exodus, 'at the edge of the wilderness' (Exodus 13:20; Numbers "
+              "33:6-8), reached after Succoth and before the turn back toward the sea. ⚠️ Its location is "
+              "unidentified — no site has been fixed, which is why this atlas leaves it unmapped rather "
+              "than guessing. The name may be related to Egyptian khetem, a frontier FORT or fortress-gate, "
+              "which would suit the edge of Egypt's eastern defenses; from here Israel is told to turn back "
+              "and camp by the sea (14:2), the manoeuvre that makes Pharaoh think they are wandering lost.",
+         refs=[("Exodus", 13, 20)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3091,6 +3107,12 @@ XREFS = [
     (("Exodus", 12, 36), (15, 14), "'they stripped Egypt' — 'afterward they shall come out with great possessions' (Gen 15:14)"),
     (("Exodus", 12, 38), ("Exodus", 9, 20), "the mixed multitude — plausibly beginning with the Egyptians who feared the word at the hail (Ex 9:20)"),
     (("Exodus", 12, 40), (15, 13), "'four hundred and thirty years' — Genesis 15:13 told Abraham four hundred"),
+    (("Exodus", 13, 2), ("Exodus", 12, 29), "'consecrate to me every firstborn' — because Israel's were spared on the night Egypt's died"),
+    (("Exodus", 13, 4), ("Exodus", 9, 31), "'in the month of Abib' — the ripening ear the hail chapter was already counting by (Ex 9:31)"),
+    (("Exodus", 13, 8), ("Exodus", 10, 2), "'you shall tell your son' — the third of four tellings, commanded first at 10:2"),
+    (("Exodus", 13, 14), ("Exodus", 12, 26), "'when your son asks you, What is this?' — the child's question of 12:26, now triggered by a rite he notices"),
+    (("Exodus", 13, 19), (50, 25), "the bones of Joseph — the oath sworn four hundred years earlier (Gen 50:25)"),
+    (("Exodus", 13, 19), ("Exodus", 3, 16), "'God will surely visit you' — Joseph's doubled verb, given back to Moses at the bush (Ex 3:16)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3375,6 +3397,10 @@ VERSE_OF_DAY = [
     ("Exodus", 12, 32, "“And bless me also.” Pharaoh, who began with “I do not know Jehovah.”"),
     ("Exodus", 12, 42, "“It is a night of watching for Jehovah… a watching for all the sons of Israel throughout their generations.”"),
     ("Exodus", 12, 49, "“One law shall there be for the native and for the sojourner who sojourns among you.”"),
+    ("Exodus", 13, 8, "“And you shall tell your son on that day.” A people made by a conversation across generations."),
+    ("Exodus", 13, 17, "“Lest the people change their minds when they see war, and return to Egypt.” The route is chosen around their fragility."),
+    ("Exodus", 13, 19, "“And Moses took the bones of Joseph with him.” An oath four hundred years old, discharged in the middle of an evacuation."),
+    ("Exodus", 13, 22, "“The pillar of cloud did not depart by day, nor the pillar of fire by night, from before the people.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3791,6 +3817,9 @@ CHRON_CHAPTERS = {
     "exod12": dict(era="exodus",
                   when="The Passover instituted and the tenth blow struck at midnight; Pharaoh surrenders everything and asks for a blessing; Israel leaves Raamses for Succoth with a mixed multitude, having stripped Egypt — and the chapter ends with one law for the native and the sojourner alike.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — the fourteenth of Abib, the month the ripening barley of 9:31 had been counting toward. The text dates it three times as 'this very day' (12:17, 41, 51)."),
+    "exod13": dict(era="exodus",
+                  when="The firstborn claimed for Jehovah because Israel's were spared; the unleavened bread and the telling of a son commanded again; the people routed the long way round rather than up the Philistine coast road, carrying Joseph's bones out on a four-hundred-year-old oath, and followed by a pillar of cloud and fire from Succoth to Etham.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the first days out of Egypt, in the month of Abib."),
 }
 
 CHRON_EVENTS = [
