@@ -99,6 +99,7 @@ CHAPTERS = [
     ("mat7", "Matthew", 7, "The Sermon's finale — the splinter and the beam, ask-seek-knock, the Golden Rule signed, the narrow gate, wolves and fruit, 'I never knew you' — and the house on the rock."),
     ("mark1", "Mark", 1, "The most breathless of the four Gospels starts already at a run — no birth, no genealogy, just a grown man at a river and the word 'immediately' eleven times over. The heavens are TORN open at the baptism (the same violent verb as the temple curtain at the end), a demon is the first to name Jesus correctly, and a leper is healed by a man 'moved with anger' who reaches across the line and touches him."),
     ("luke1", "Luke", 1, "The longest chapter in the Gospels and the songbook of the church — two annunciations set against each other (a priest struck dumb for doubting, a girl in Nazareth blessed for believing), the leap in Elizabeth's womb, and two of the great canticles: Mary's Magnificat ('he has brought down rulers from thrones and lifted up the lowly') and Zechariah's Benedictus ('the dawn from on high')."),
+    ("jer1", "Jeremiah", 1, "The call of Jeremiah — the longest, most turbulent prophetic career in the Bible opens on a boy who says 'I am only a youth.' Known before the womb and made 'a prophet to the nations,' his mouth is touched and filled, and he is charged with the six verbs that are the program of the whole book: to uproot and to tear down, to destroy and to overthrow, to build and to plant. Two visions seal it — an almond branch (God WATCHING over his word) and a boiling pot tilting from the north (the disaster coming) — and a frightened boy is made an iron pillar."),
     ("jer20", "Jeremiah", 20, "Pashhur and the stocks — the prophet renames his jailer Terror-All-Around, names Babylon at last, confesses the fire shut up in his bones — and curses the day he was born."),
     ("jer21", "Jeremiah", 21, "The final siege — Zedekiah's delegation asks for a miracle and hears the bleakest answer in the book: the Exodus formula aimed inward, the way of life through the enemy camp, and fire for the cedar forest."),
     ("jer22", "Jeremiah", 22, "The tariff of the last kings — Shallum carried to Egypt, Jehoiakim's donkey-burial, and Coniah the signet torn off God's right hand; 'is that not to know me?' and 'write this man childless.'"),
@@ -176,6 +177,7 @@ TEASERS_ES = {
     "gen44": "La copa de plata aparece en el saco de Benjamín y los otros diez quedan libres de marcharse. Ninguno lo hace. Y Judá habla.",
     "gen43": "Se acaba el grano y Jacob debe dejar ir a Benjamín. Judá se ofrece a sí mismo como fiador, y bajan con un regalo que ya hizo ese camino.",
     "gen42": "Diez hermanos se inclinan ante un gobernador al que no reconocen — y confiesan, sin saber que él entiende cada palabra: «somos culpables».",
+    "jer1": "El llamado de Jeremías: un muchacho que dice «solo soy un joven», conocido antes del vientre, hecho «profeta a las naciones» — con los seis verbos (arrancar, derribar… edificar y plantar), la rama de almendro y la olla hirviente del norte.",
 }
 
 NEXT_UP = "Genesis 24"         # (legacy; nav is now book-scoped in nav_strip)

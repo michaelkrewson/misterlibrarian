@@ -685,6 +685,14 @@ DICTIONARY = [
      "ONCE, once for all — a single decisive time, not to be repeated. It is the hinge of Jude's appeal: contend for 'the faith HAPAX delivered to the holy ones' (1:3) — handed over ONCE, complete, not to be revised, added to, or traded. The same word carries the weight of Hebrews' 'once for all' sacrifice of Christ (Hebrews 9:26-28; 10:10): what is done hapax cannot be undone.", ("Jude", 1, 3)),
     ("spilas", "spilas", "σπιλάς", "spilas",
      "A HIDDEN REEF (plural spilades) — a rock just under the surface that tears the hull out of a ship that never saw it. Jude's image for the intruders 'in your love-feasts' (1:12): they sit at the common table and wreck the church from below, unseen. ⚠️ A near-identical word, spilos ('spot, blemish'), stands behind the parallel in 2 Peter 2:13, and some render Jude's word 'blemishes' — but the seafaring 'reef' suits his storm of sea-images (waves, wandering stars) and is kept here.", ("Jude", 1, 12)),
+    ("yatsar", "yatsar", "יָצַר", "yatsar",
+     "TO FORM, shape, fashion — the potter's verb. It is the word for God forming the man from the dust of the ground (Genesis 2:7), and it opens Jeremiah's call: 'before I FORMED you in the belly I knew you' (1:5). Jeremiah later turns it into a whole sign-act at the potter's house, where the clay marred in the potter's hand is reshaped (ch 18) — the nation as clay under a hand that can make and unmake. The related noun yetser is the 'inclination' formed in the human heart.", ("Jeremiah", 1, 5)),
+    ("shaqed", "shaqed / shoqed", "שָׁקֵד / שֹׁקֵד", "shaqed / shoqed",
+     "ALMOND — and, one letter's sound away, WATCHING. Jeremiah sees 'a branch of an almond tree' (SHAQED), and God answers, 'you have seen well, for I am WATCHING (SHOQED) over my word to do it' (1:11-12). The almond is the first tree to wake and blossom in the Judean spring — the 'wakeful' or 'watcher' tree — so the pun makes the vision mean God is AWAKE over his word, watching to perform it. ⚠️ The wordplay cannot fully cross into English; the KJV reads the root as speed ('I will hasten my word'), most modern versions as watchfulness.", ("Jeremiah", 1, 11)),
+    ("naar", "na'ar", "נַעַר", "na'ar",
+     "A YOUTH, boy, young man — also a servant or attendant. Jeremiah objects to his call with it: 'I do not know how to speak, for I am only a NA'AR' (1:6), the reluctant-prophet's plea of inadequacy (compare Moses, Gideon, Isaiah). God does not dispute the youth; he answers 'do not say I am a youth' and sends him anyway. The same word covers a wide span of age and status — the infant Moses in the ark, the lad Isaac on Moriah, a king's servant.", ("Jeremiah", 1, 6)),
+    ("chatat", "chatat", "חָתַת", "chatat",
+     "TO BE SHATTERED, dismayed, broken with terror. In Jeremiah's charge it is a warning built on a pun: 'do not be SHATTERED (chatat) before them, lest I SHATTER (achittekha) you before them' (1:17) — fear the people and God himself will break you; the only safety is obedience. The same root sounds through the prophets for the panic of armies and the collapse of courage; its opposite is the steadiness of the one who trusts.", ("Jeremiah", 1, 17)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2303,6 +2311,25 @@ ENCYCLOPEDIA = [
               "rejecting him will fare worse than it (Matthew 10:15), and Jude sets it among his examples, "
               "'undergoing the punishment of eternal fire' (1:7).",
          refs=[(19, 24), ("Jude", 1, 7)], videos=[]),
+    dict(slug="jeremiah", name="Jeremiah", kind="person", aliases=["Jeremiah"],
+         desc="'Jehovah exalts' (or 'loosens,' or 'establishes' — the root is uncertain). A priest of ANATHOTH in "
+              "Benjamin, called in 627 BC (1:2) to a forty-year ministry that ran through the last five kings of "
+              "Judah to the destruction of Jerusalem in 586 BC and beyond. Known before the womb and made 'a prophet "
+              "to the nations' (1:5), he was charged 'to uproot and to tear down… to build and to plant' (1:10) — a "
+              "career mostly of warning a doomed nation to submit to Babylon, and mostly rejected for it: beaten, put "
+              "in the stocks, thrown down a cistern, and finally carried off to Egypt. The 'weeping prophet,' whose "
+              "anguished 'confessions' lay his inner life bare, and who was given the promise of a NEW COVENANT "
+              "written on the heart (31:31-34). His scribe BARUCH wrote his words down (ch 36).",
+         refs=[("Jeremiah", 1, 1), ("Jeremiah", 1, 5)], videos=[]),
+    dict(slug="anathoth", name="Anathoth", kind="place", aliases=["Anathoth"],
+         desc="A Levitical (priestly) town in the territory of Benjamin, about three miles (5 km) northeast of "
+              "Jerusalem — JEREMIAH's home village (1:1). It was very likely the place to which Solomon banished the "
+              "priest Abiathar, sparing his life 'because you carried the ark' (1 Kings 2:26), which would make "
+              "Jeremiah a son of that sidelined priestly line. Its men later plot against Jeremiah's life (11:21), "
+              "and yet it is a field at Anathoth that Jeremiah buys, under siege, as a sign that 'houses and fields "
+              "shall again be bought in this land' (ch 32). Identified with the modern village of Anata / nearby "
+              "Ras el-Kharrubeh.",
+         coords=(31.83, 35.28, 0.06), refs=[("Jeremiah", 1, 1)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2844,6 +2871,9 @@ XREFS = [
     (("Jude", 1, 11), (4, 8), "'the way of Cain' — the first murder (Genesis 4), Jude's first archetype of rebellion"),
     (("Jude", 1, 7), (19, 24), "Sodom and Gomorrah 'undergoing the punishment of eternal fire' — the fire and sulphur of Genesis 19"),
     (("Jude", 1, 14), (5, 24), "'Enoch, the seventh from Adam' — the man who 'walked with God, and was not' (Genesis 5:24), here the named source of a prophecy"),
+    (("Jeremiah", 1, 5), (2, 7), "'before I formed you' — yatsar, the potter's verb that shaped the man from the dust (Genesis 2:7)"),
+    (("Jeremiah", 1, 16), ("Jeremiah", 22, 9), "'forsaking me… other gods' — the very indictment the tariff of the last kings turns on (Jer 22:9)"),
+    (("Jeremiah", 1, 17), ("Jeremiah", 20, 11), "'do not be shattered' / 'Jehovah is with me' — the fortress promise Jeremiah clings to in his darkest confession (Jer 20:11)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3084,6 +3114,10 @@ VERSE_OF_DAY = [
     ("Jude", 1, 21, "“Keep yourselves in the love of God, waiting for the mercy of our Lord Jesus Christ.” The fierce letter's tender center."),
     ("Jude", 1, 24, "“To him who is able to keep you from stumbling, and to make you stand before his glory blameless, with great joy.”"),
     ("Jude", 1, 25, "“To the only God our Savior… be glory, majesty, dominion, and authority, before all time and now and forever.” The great doxology."),
+    ("Jeremiah", 1, 5, "“Before I formed you in the belly I knew you… a prophet to the nations I appointed you.” The call that reached back before the womb."),
+    ("Jeremiah", 1, 8, "“Do not be afraid before them, for I am with you to deliver you.” The promise that bookends Jeremiah's whole call."),
+    ("Jeremiah", 1, 10, "“To uproot and to tear down, to destroy and to overthrow, to build and to plant.” The mission of the whole book in six verbs."),
+    ("Jeremiah", 1, 12, "“You have seen well, for I am watching over my word, to do it.” The almond (shaqed) and the Watcher (shoqed)."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3464,6 +3498,9 @@ CHRON_CHAPTERS = {
     "jude1": dict(era="apostolic",
                   when="A single-chapter warning against false teachers who 'crept in unnoticed' — with the letter's two famous citations of works outside the canon (the Assumption of Moses, and 1 Enoch).",
                   clock="Hard to date; commonly placed c. AD 65-80. Its close kinship with 2 Peter 2, and its appeal to 'remember the words of the apostles' as an established past, put it a generation into the church."),
+    "jer1": dict(era="exile",
+                 when="The call of Jeremiah — known before the womb, made 'a prophet to the nations,' shown the almond branch and the boiling pot from the north.",
+                 clock="627 BC, 'the thirteenth year of Josiah' (v2) — the start of a forty-year ministry that runs, per the superscription, to the fall of Jerusalem in 586 BC."),
 }
 
 CHRON_EVENTS = [
@@ -4450,5 +4487,39 @@ BOOK_INTROS = {
         source_text="Translated from the Greek of the SBL Greek New Testament (SBLGNT), edited by Michael W. Holmes. Jude's Greek is vigorous and vivid — a torrent of triads and sea-and-storm images — and carries two significant textual questions handled in the notes: the reading 'JESUS' (rather than 'the Lord') saving the people out of Egypt (v5), adopted here on the strength of the earliest witnesses; and the tangled 'have mercy… snatch from the fire… mercy with fear' of vv22-23, where the manuscripts cannot all be reconciled.",
         christ="For all its fierceness the letter is framed by Christ: its readers are 'kept for Jesus Christ' (v1) and told to 'wait for the mercy of our Lord Jesus Christ' (v21), and it ends 'to the only God our Savior, through Jesus Christ our Lord' (v25). The heresy Jude fights is precisely a denial of 'our only Master and Lord, Jesus Christ' (v4) — and if the disputed reading of v5 stands, Jude sees Christ himself as the one who led Israel out of Egypt. The Lord who saves is the Lord who judges, and the same hands that keep you from stumbling will present you blameless before his glory.",
         debates="Two clusters. First, the NON-CANONICAL SOURCES — Jude's use of the Assumption of Moses (v9) and his direct quotation of 1 Enoch as prophecy (vv14-15), which unsettled some early churches and still raises the question of what 'quoting' a book implies about its authority (the note takes no vote). Second, the RELATIONSHIP TO 2 PETER — Jude and 2 Peter 2 share so much material (the fallen angels, Sodom, Balaam, the waterless clouds) that one almost certainly drew on the other or a common source; which came first is a standing literary question. Authorship (the Lord's brother vs an unknown Jude) and date follow from these.",
+    ),
+    "Jeremiah": dict(
+        hebrew_name="יִרְמְיָהוּ",
+        hebrew_translit="Yirmeyahu",
+        hebrew_meaning="'Jeremiah' — likely 'Jehovah exalts,' or 'Jehovah loosens/casts,' or 'Jehovah establishes' (the root is genuinely uncertain). The book is named for its prophet, whose forty-year ministry spanned the last kings of Judah and the destruction of Jerusalem.",
+        greek_name="Ἰερεμίας (Ieremias)",
+        greek_meaning="In the Septuagint, Jeremiah is significantly SHORTER (by about one-eighth) and arranges the oracles-against-the-nations in a different place — one of the most important cases in the Old Testament of two genuinely different editions of one book (a Hebrew Dead Sea Scroll fragment matches the shorter Greek order).",
+        tagline="The longest book in the Bible by word count — the forty-year cry of the 'weeping prophet' who watched Judah fall, who tore down and planted, and who was given the promise of a new covenant written on the heart.",
+        genre="PROPHECY — poetry and prose intertwined: oracles of judgment and hope, symbolic sign-acts, a running biography of the prophet's own sufferings (the 'confessions'), and historical narrative of Jerusalem's last days. By word count, the largest book in the Bible.",
+        canon="One of the Major Prophets (with Isaiah and Ezekiel), placed after Isaiah; in the Hebrew canon, among the Latter Prophets. The book of Lamentations, traditionally ascribed to Jeremiah, follows it in the Christian order.",
+        author="JEREMIAH son of Hilkiah, a priest of Anathoth, called in 627 BC (1:2). The book credits its writing to Jeremiah dictating to his scribe BARUCH son of Neriah (ch 36 — where the king burns the first scroll and it is rewritten larger). The complex final shape — poetry, prose sermons, and third-person narrative — points to Baruch and later hands gathering and arranging the material.",
+        date="The ministry runs c. 627-586 BC and after (Jeremiah is carried to Egypt following the fall). The book reached its two differing editions — the shorter Greek and the longer Hebrew — over the decades that followed, likely in the exile.",
+        place="Judah — Anathoth, Jerusalem, and finally Egypt, where fleeing survivors carry Jeremiah off after the assassination of Gedaliah (chs 42-44). He prophesied through the reigns of Josiah, Jehoahaz, Jehoiakim, Jehoiachin, and Zedekiah.",
+        audience="Judah in its last generation — kings, priests, false prophets, and people — warned to submit to Babylon as God's instrument and to turn back, and refusing; and then the exiles, given a letter (ch 29) to settle, build, and pray for the city of their captivity, and wait out seventy years.",
+        structure=[
+            ["1", "The call — Jeremiah known before the womb, the almond branch and the boiling pot, the charge to uproot and to plant."],
+            ["2-25", "Oracles against Judah and Jerusalem — the great indictment (the broken cisterns, the temple sermon, the potter's house, the sign-acts), interlaced with the prophet's own anguished 'confessions.'"],
+            ["26-45", "Narratives of conflict and the fall — Jeremiah against the kings and false prophets; the burned scroll; the letter to the exiles; the siege, the cistern, the destruction, and the flight to Egypt."],
+            ["30-33", "The Book of Consolation (set within the above) — restoration, and the NEW COVENANT written on the heart (31:31-34)."],
+            ["46-51", "Oracles against the nations — Egypt, Philistia, Moab, Ammon, Edom, Damascus, Kedar, Elam, and Babylon."],
+            ["52", "A historical appendix — the fall of Jerusalem retold (paralleling 2 Kings 25)."],
+        ],
+        themes=[
+            "THE COVENANT BETRAYED — Judah has 'forsaken the fountain of living waters and hewn out broken cisterns' (2:13); idolatry is adultery, and the judgment is the marriage's grief, not God's caprice.",
+            "SUBMIT TO BABYLON — Jeremiah's scandalous, treasonous-sounding message: Babylon is God's instrument, resistance is rebellion against God, and the exile must be accepted and outlasted (the seventy years).",
+            "TEAR DOWN AND PLANT — the six verbs of 1:10; a ministry mostly of demolition that nonetheless ends in building, because judgment is never God's last word.",
+            "THE NEW COVENANT — the book's summit (31:31-34): a covenant written not on stone but on the heart, sins remembered no more — the passage the New Testament takes as fulfilled in Christ (Hebrews 8).",
+            "THE COST OF THE WORD — the 'confessions' (e.g. 20:7-18), where the prophet accuses God of deceiving him, curses the day of his birth, and yet cannot stop speaking because the word is 'a fire shut up in my bones.' No prophet's inner life is so exposed.",
+        ],
+        key_words=["yatsar", "navi", "qadash", "shaqed"],
+        key_people=["jeremiah", "josiah", "zedekiah", "babylon"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Jeremiah is the Old Testament's great case of a book that survives in TWO editions: the Hebrew (Masoretic) text is roughly one-eighth longer than the Greek Septuagint, and the two place the oracles-against-the-nations differently — and a Hebrew fragment from Qumran matches the shorter Greek. This translation follows the Masoretic Hebrew and notes the major differences where they fall. The book is otherwise rich in wordplay — the almond/watcher pun of 1:11-12 is the first of many.",
+        christ="Jeremiah's summit is the NEW COVENANT (31:31-34): 'I will put my law within them, and write it on their hearts… and I will remember their sin no more.' The New Testament takes this as the covenant sealed in Christ's blood (Luke 22:20; 1 Corinthians 11:25) and quotes it in full as fulfilled (Hebrews 8:8-12; 10:16-17). The weeping prophet — rejected by his own, made to suffer for the word, promising a covenant of the heart — has long been read as a figure of the one who wept over the same city (Luke 19:41) and inaugurated the covenant Jeremiah foresaw.",
+        debates="The two EDITIONS (shorter Greek vs longer Hebrew, and the differing place of the nations-oracles) — most scholars now see the Greek as translating an earlier, shorter Hebrew edition, and the Masoretic text as a later expanded one. The book's COMPOSITION — how its poetry, prose sermons, and biography (the last likely from Baruch) came together — is much studied, as is the authenticity and dating of individual oracles, especially the prose sermons whose style resembles Deuteronomy. The prophet himself, by contrast, is one of the most vividly and personally known figures in the Old Testament.",
     ),
 }
