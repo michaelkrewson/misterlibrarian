@@ -1438,10 +1438,10 @@ ENCYCLOPEDIA = [
               "abruptly ceasing after 1446, and was buried in tomb KV35, whose mummy survives: 'the tomb of "
               "the Exodus pharaoh you can visit.' The DREAM STELE of his successor Thutmose IV — which needs "
               "a god's promise to explain why he, not the firstborn, took the throne — fits a firstborn who "
-              "died (Exodus 12:29). The store-city name 'Raamses' (1:11), the mainstay of the rival LATE date "
+              "died (Exodus 12:29). ⚠️ And the tomb holds a SON. Buried in KV35 with Amenhotep II was WEBENSENU, a son who predeceased his father — his name inscribed on canopic jars holding his organs and on a funerary statuette, and a boy's mummy from the tomb is generally identified as his, its head shaved except for the sidelock that marked a royal child. Kramer's point is restrained and worth quoting: we know for certain this son died before his father, because he is buried in his father's tomb — and Exodus 12:29 says the firstborn of Pharaoh 'who sits on his throne' died in the night. ⚠️ What it does NOT establish is that Webensenu was the crown prince, or how he died; Egyptology reads him simply as a prince who died young, and Kramer himself says he does not want to make too much of it — 'but I also don't want to make too little of it either.' Taken together with the Dream Stele, it is suggestive and not probative, which is how this library files it. The store-city name 'Raamses' (1:11), the mainstay of the rival LATE date "
               "(Ramesses II, ~1250 BC, the academic majority), is best read as an updated place-name — the "
               "same editorial modernizing already seen at 'Dan' (Genesis 14:14) and 'Ur of the Chaldeans.'",
-         refs=[("Exodus", 1, 8), ("Exodus", 1, 11), ("Exodus", 1, 22)],
+         refs=[("Exodus", 1, 8), ("Exodus", 1, 11), ("Exodus", 1, 22), ("Exodus", 11, 5), ("Exodus", 12, 29)],
          videos=[("Tomb of the Exodus Pharaoh: What Was Found & Why You Don't Know About It!",
                   "https://www.youtube.com/watch?v=mJP4pVjnWpk")]),
     dict(slug="shiphrah-puah", name="Shiphrah and Puah", kind="person", aliases=["Shiphrah", "Puah"],

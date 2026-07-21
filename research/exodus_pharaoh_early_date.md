@@ -74,3 +74,25 @@ articles are the fuller written form of this position.
   tomb; his campaigns cease after 1446.
 - Keep the 1446 date + Thutmose III/Amenhotep II pairing consistent throughout; always note the late-date
   (Ramesses II) exists but is not the view this translation foregrounds.
+
+## The SON in the tomb — Webensenu (added 2026-07-21, Michael's ask)
+The firstborn argument has a second leg besides the Dream Stele, and it is the stronger visual one —
+it is the substance of the video already attached to the `exodus-pharaoh` entry
+("Tomb of the Exodus Pharaoh", https://youtu.be/mJP4pVjnWpk — oEmbed 200, embeddable).
+- Buried in **KV35 with Amenhotep II** is a son, **WEBENSENU**, who **predeceased his father** — that
+  much is certain, because he is buried in his father's tomb.
+- Attested by **canopic jars inscribed with his name** (holding his organs) and a **funerary statuette**;
+  a **boy's mummy** from the tomb is generally identified as his, head shaved except for the **sidelock**
+  that marked a royal child.
+- Kramer's line: "We know for certain that Webensenu died before his father because he's buried in his
+  tomb" — set against **Exodus 12:29**, the firstborn of Pharaoh "who sits on his throne."
+- ⚠ **HONEST LIMITS — keep these attached whenever this is cited.** It does NOT establish that Webensenu
+  was the crown prince/firstborn, nor how he died; Egyptology reads him as a prince who died young.
+  Kramer himself: "I don't want to make too much of this… but I also don't want to make too little of it
+  either." **Suggestive, not probative** — file it exactly that way (the site's neutrality rule).
+- A further claim circulates that Amenhotep II's mummy shows unusual skin nodules read as the plague of
+  boils. **Not used on the site** — I could not verify how Egyptologists read those lesions, and it is a
+  weaker claim than the Webensenu one. Don't cite it without sourcing it properly.
+- **Deployed:** `exodus-pharaoh` desc (Webensenu paragraph + the limits) with refs extended to
+  Ex 11:5 and 12:29 so the entry surfaces at the firstborn verses; and a paragraph in the Exodus 12
+  note group n29 pointing to the entry/film.
