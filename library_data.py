@@ -759,6 +759,22 @@ DICTIONARY = [
      "To SEPARATE, set apart, make a distinction — and it belongs to the same family as PELE, 'a wonder,' so the word carries a hint of something marvellously singled out. It is the technical term for the dividing line the plagues draw: 'I will SET APART the land of Goshen' at the swarms (Exodus 8:18), 'Jehovah will make a DIVISION between the livestock of Israel and the livestock of Egypt' (9:4), and, on the last night, 'that you may know that Jehovah makes a DISTINCTION between Egypt and Israel' (11:7). ⚠️ The distinction is announced three times before it is ever sealed in blood on a doorframe — the mechanism of Passover is the last form of a line already being drawn.", ("Exodus", 11, 7)),
     ("af", "af", "אַף", "af",
      "The NOSE — and therefore ANGER, because Hebrew locates rage in the flaring, snorting nostril. 'Burning of the AF' (charon af / chori-af) is the standard idiom for fury: Moses leaves Pharaoh 'in BURNING ANGER' (Exodus 11:8), and the same phrase is used far more often of God. ⚠️ The idiom shapes one of the Bible's great self-descriptions: God is erekh APAYIM, 'LONG OF NOSTRILS' (Exodus 34:6) — slow to anger, a long fuse before the burn — which the KJV renders 'longsuffering' and most versions 'slow to anger,' losing the picture. Proverbs keeps it physical: 'he who is LONG OF NOSTRILS is better than the mighty' (16:32).", ("Exodus", 11, 8)),
+    ("pesach", "pesach / pasach", "פֶּסַח", "pesach",
+     "PASSOVER — the name of the night, the rite, and the lamb. ⚠️ The verb's meaning is genuinely uncertain and three readings are old: (1) to PASS OVER, skip, spare — the traditional rendering and that of the Greek Old Testament; (2) to PROTECT or hover over defensively, supported by Isaiah 31:5, where Jehovah 'protects and delivers, PASSES OVER and rescues' Jerusalem as a bird over its nest; (3) to LIMP or leap, the verb's plain sense elsewhere (1 Kings 18:21, 26 — the prophets 'limping' at their altar). The difference is not trivial: one has God stepping past a door, another has him standing over it. The New Testament makes the identification directly — 'Christ our PASSOVER has been sacrificed' (1 Corinthians 5:7).", ("Exodus", 12, 11)),
+    ("matzah", "matzah / matzot", "מַצָּה", "matzah",
+     "UNLEAVENED BREAD — flat cakes made without leaven, and the sign of a departure too fast for dough to rise: 'they baked the dough… into cakes of UNLEAVENED bread, for it was not leavened, because they had been driven out of Egypt and could not delay' (Exodus 12:39). ⚠️ But the command comes BEFORE the haste (12:15-20), so the bread is not merely a souvenir of hurry; it is a seven-day discipline of removing something. Deuteronomy 16:3 names it 'the bread of affliction.' In the New Testament the unleavened loaf of this meal becomes the bread Jesus breaks at a Passover table (Luke 22:19).", ("Exodus", 12, 8)),
+    ("seor", "se'or / chametz", "שְׂאֹר", "se'or",
+     "LEAVEN, sourdough starter — and the thing Passover requires be actively hunted out of the house: 'seven days no LEAVEN shall be found in your houses' (Exodus 12:19). Its force as an image is that it works invisibly and spreads through everything, which is why it becomes a metaphor for corruption that cannot be quarantined — 'a little LEAVEN leavens the whole lump' (1 Corinthians 5:6, where Paul goes straight on to call Christ our Passover), and 'beware of the LEAVEN of the Pharisees' (Matthew 16:6). ⚠️ It is not always negative: Jesus also likens the kingdom of the heavens to leaven a woman hides in three measures of flour until the whole is leavened (Matthew 13:33) — the same property, working the other way.", ("Exodus", 12, 15)),
+    ("ezov", "ezov", "אֵזוֹב", "ezov",
+     "HYSSOP — a small bushy plant (probably Syrian marjoram rather than true hyssop), used as a BRUSH wherever something is applied for cleansing or covering. Its first use is the most consequential: 'take a bunch of HYSSOP and dip it in the blood… and touch the lintel and the two doorposts' (Exodus 12:22). It reappears in the cleansing of a healed skin disease and of a house (Leviticus 14), in the water of purification (Numbers 19), and in David's plea, 'purge me with HYSSOP and I shall be clean' (Psalm 51:7). ⚠️ At the crucifixion a sponge of sour wine is lifted to Jesus on a hyssop stalk (John 19:29) — the plant of the Passover doorposts, at a Passover.", ("Exodus", 12, 22)),
+    ("mashchit", "mashchit", "מַשְׁחִית", "mashchit",
+     "THE DESTROYER — 'Jehovah will pass over the door and will not allow THE DESTROYER to come into your houses' (Exodus 12:23). ⚠️ The chapter does not harmonize this with verse 12, where Jehovah says 'I will pass through… I will strike.' Both stand: God strikes, and a destroyer is held at the door. Readers ancient and modern have taken ha-mashchit as a distinct agent (compare the destroying angel who halts at the threshing floor, 2 Samuel 24:16), as a personification of the plague itself, or as a way of speaking of God's own act at one remove. Hebrews 11:28 keeps the same double vision: Moses kept the Passover 'so that THE DESTROYER of the firstborn might not touch them.'", ("Exodus", 12, 23)),
+    ("erev-rav", "erev rav", "עֵרֶב רַב", "erev rav",
+     "A MIXED MULTITUDE — a mingled crowd; erev is a mixture, and the phrase names the non-Israelites who walked out of Egypt with Israel: 'a great MIXED MULTITUDE also went up with them' (Exodus 12:38). ⚠️ Exodus has already shown who some of them must have been — at the hail, 'the one who FEARED the word of Jehovah among the servants of Pharaoh' brought his household indoors (9:20). Egypt was not a solid block. So Israel is not ethnically pure from its first hour as a free people, which is why the same chapter legislates for the circumcised sojourner and declares 'ONE LAW for the native and for the sojourner' (12:48-49). The mixed multitude is later blamed for the craving at Kibroth-hattaavah (Numbers 11:4), and the phrase turns up again at Nehemiah 13:3.", ("Exodus", 12, 38)),
+    ("elef", "elef", "אֶלֶף", "elef",
+     "A THOUSAND — and also a CLAN or a military unit, and the ambiguity is load-bearing. Gideon protests that 'my ELEF is the poorest in Manasseh' (Judges 6:15), where a numeral makes no sense and a clan does; Saul's tribe is 'the least of the tribes' yet its families are counted by ELEF (1 Samuel 10:19). ⚠️ This is why the exodus figure of 'six hundred ELEF on foot' (Exodus 12:37) is discussed: read as a numeral it means a nation of roughly two million, read as units it means six hundred fighting companies of unstated size. The library reports both — the second is a real feature of the language, not a modern escape hatch — and takes no vote.", ("Exodus", 12, 37)),
+    ("shimmurim", "leil shimmurim", "לֵיל שִׁמֻּרִים", "leil shimmurim",
+     "A NIGHT OF WATCHING — from shamar, to keep or guard, and Exodus 12:42 uses it in BOTH directions in a single verse: it is a night on which Jehovah kept watch to bring them out, and a night to be kept by all the sons of Israel throughout their generations. God's vigil becomes the people's vigil. ⚠️ Jewish tradition has observed it literally ever since as a night of staying awake; the same root gives the ordinary command to 'KEEP' the Passover, so remembering and guarding are one word. Compare the failed vigil in Gethsemane on a Passover night — 'could you not WATCH with me one hour?' (Matthew 26:40).", ("Exodus", 12, 42)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1826,9 +1842,11 @@ ENCYCLOPEDIA = [
               "valley. Genesis gives the name its own explanation: he 'built himself a house and made booths "
               "(sukkot) for his livestock, therefore the place is named Succoth' (33:17). The word is the same "
               "that names Israel's autumn festival of Sukkot, the Feast of BOOTHS, when the people live a week in "
-              "temporary shelters remembering the wilderness. Succoth reappears as a station of the Exodus "
-              "(Exodus 12:37) and, in the plain of the Jordan, as a town in the days of Gideon (Judges 8) and "
-              "of Solomon's bronze-casting (1 Kings 7:46).",
+              "temporary shelters remembering the wilderness. THIS Succoth reappears in the plain of the "
+              "Jordan as a town in the days of Gideon (Judges 8) and of Solomon's bronze-casting (1 Kings "
+              "7:46). ⚠️ It is NOT the Succoth of the Exodus: the first station out of Egypt (Exodus "
+              "12:37) is a different place of the same common name — 'booths' was an ordinary toponym — "
+              "lying in the eastern Nile Delta, some three hundred miles away.",
          refs=[(33, 17)],
          coords=(32.20, 35.61, 0.8), approx=True,
          modern="The Jordan valley east of the river, near the mouth of the Jabbok (northern Jordan)"),
@@ -2471,6 +2489,18 @@ ENCYCLOPEDIA = [
               "⚠️ The correspondences are drawn with differing confidence by different writers — some are secure, "
               "others are neat schemes imposed later — but the framing is the Bible's own, not a modern invention.",
          refs=[("Exodus", 7, 17), ("Exodus", 12, 12)], videos=[]),
+    dict(slug="succoth-egypt", name="Succoth (the Exodus station)", kind="place", aliases=["Succoth"],
+         coords=(30.55, 32.1, 0.7), approx=True,
+         desc="'BOOTHS' — the FIRST stop of the exodus, 'and the sons of Israel journeyed from Raamses to "
+              "SUCCOTH' (Exodus 12:37; 13:20; Numbers 33:5-6). ⚠️ It is not the Succoth of Genesis 33:17, "
+              "where Jacob built booths for his livestock: that one lies in the Jordan valley, some three "
+              "hundred miles away and on the wrong side of a sea Israel has not yet crossed. 'Booths' was an "
+              "ordinary place-name, and the Bible carries at least two. This Succoth is generally identified "
+              "with Egyptian Tjeku, in the Wadi Tumilat of the eastern Nile Delta — commonly located at Tell "
+              "el-Maskhuta — a day's march from the store-city district where Israel had been living. The "
+              "location is reasoned from Egyptian records and the route, not certain; the map marks it "
+              "approximately.",
+         refs=[("Exodus", 12, 37)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3052,6 +3082,15 @@ XREFS = [
     (("Exodus", 11, 6), ("Exodus", 2, 23), "'a great outcry in all the land of Egypt' — the same word as Israel's outcry from the bondage (Ex 2:23)"),
     (("Exodus", 11, 7), ("Exodus", 8, 18), "'Jehovah makes a distinction' — the dividing verb of the swarms (Ex 8:18) and the livestock (9:4)"),
     (("Exodus", 11, 8), ("Exodus", 10, 7), "'your servants shall bow down to me' — the officials who already said 'do you not yet know that Egypt is destroyed?' (Ex 10:7)"),
+    (("Exodus", 12, 2), ("Exodus", 9, 31), "'the head of months' — the month whose ripening barley the hail was already dating (Ex 9:31)"),
+    (("Exodus", 12, 12), ("Exodus", 11, 5), "'I will strike every firstborn' — the blow announced at 11:4-5"),
+    (("Exodus", 12, 12), ("Exodus", 4, 22), "'against all the gods of Egypt I will execute judgments' — and the sentence of 4:22-23 carried out"),
+    (("Exodus", 12, 26), ("Exodus", 10, 2), "'when your sons say to you, what does this service mean?' — the telling commanded at 10:2"),
+    (("Exodus", 12, 30), ("Exodus", 2, 23), "'a great outcry in Egypt' — the word Exodus opened with, of Israel's own outcry (2:23)"),
+    (("Exodus", 12, 31), ("Exodus", 5, 2), "'bless me also' — from the king who began with 'I do not know Jehovah' (Ex 5:2)"),
+    (("Exodus", 12, 36), (15, 14), "'they stripped Egypt' — 'afterward they shall come out with great possessions' (Gen 15:14)"),
+    (("Exodus", 12, 38), ("Exodus", 9, 20), "the mixed multitude — plausibly beginning with the Egyptians who feared the word at the hail (Ex 9:20)"),
+    (("Exodus", 12, 40), (15, 13), "'four hundred and thirty years' — Genesis 15:13 told Abraham four hundred"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3330,6 +3369,12 @@ VERSE_OF_DAY = [
     ("Exodus", 11, 3, "“The man Moses was very great in the land of Egypt.” The fugitive shepherd of chapter 2, in Pharaoh's own court."),
     ("Exodus", 11, 6, "“There shall be a great outcry in all the land of Egypt.” The book's first word for Israel's suffering, now used of Egypt."),
     ("Exodus", 11, 7, "“Not a dog shall sharpen its tongue… so that you may know that Jehovah makes a distinction.”"),
+    ("Exodus", 12, 2, "“This month shall be for you the head of months.” Time itself is re-founded on the night of the rescue."),
+    ("Exodus", 12, 13, "“And I will see the blood and pass over you.” The mark is on the outside of the door, where those inside cannot see it."),
+    ("Exodus", 12, 26, "“And when your sons say to you, ‘What does this service mean to you?’” The rite is built around a child's question."),
+    ("Exodus", 12, 32, "“And bless me also.” Pharaoh, who began with “I do not know Jehovah.”"),
+    ("Exodus", 12, 42, "“It is a night of watching for Jehovah… a watching for all the sons of Israel throughout their generations.”"),
+    ("Exodus", 12, 49, "“One law shall there be for the native and for the sojourner who sojourns among you.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3743,6 +3788,9 @@ CHRON_CHAPTERS = {
     "exod11": dict(era="exodus",
                   when="The tenth blow announced: at midnight every firstborn in Egypt, from the throne to the millstones. Moses is told to have the people ask their neighbors for silver and gold, and leaves Pharaoh in burning anger — the last words of the last audience.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — days before the Passover, in the month of the ripening ear."),
+    "exod12": dict(era="exodus",
+                  when="The Passover instituted and the tenth blow struck at midnight; Pharaoh surrenders everything and asks for a blessing; Israel leaves Raamses for Succoth with a mixed multitude, having stripped Egypt — and the chapter ends with one law for the native and the sojourner alike.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the fourteenth of Abib, the month the ripening barley of 9:31 had been counting toward. The text dates it three times as 'this very day' (12:17, 41, 51)."),
 }
 
 CHRON_EVENTS = [
