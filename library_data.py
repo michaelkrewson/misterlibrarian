@@ -699,6 +699,14 @@ DICTIONARY = [
      "INTERPRETATION — the Aramaic word for the meaning of a dream, sign, or oracle, paired all through Daniel with RAZ (mystery): the king demands both the dream and its PISHRA (2:6). It is the same root as the Hebrew PESHER that names the Dead Sea Scrolls' running commentaries ('the PESHER of this is…'), a whole Jewish way of reading in which a text's true meaning is a disclosed secret. In Daniel the interpretation is never the interpreter's ingenuity; it is given by God.", ("Daniel", 2, 4)),
     ("malku", "malku", "מַלְכוּ", "malku",
      "KINGDOM, kingship, reign — the Aramaic word that governs Daniel 2 and 7. It is kept the same across the four earthly MALKU (Babylon and the three that follow) and the everlasting fifth that 'the God of heaven shall set up… which shall never be destroyed' (2:44). The book's whole argument is a contest of kingdoms: the towering, brittle empires of the statue against the stone-become-mountain, the 'kingdom of God' that grinds them to chaff and fills the earth.", ("Daniel", 2, 44)),
+    ("shaal", "sha'al", "שָׁאַל", "sha'al",
+     "TO ASK, request — and, in a special sense, to LEND or give on loan. The verb generates the whole naming of 1 Samuel: Hannah 'ASKED' Samuel of Jehovah (1:20), and then 'LENT' him back — 'he is SHA'UL (lent/asked) to Jehovah' (1:28). ⚠️ The narrator's folk-etymology links the name SAMUEL to sha'al, though the name more likely means 'name of God' or 'God has heard'; and the wordplay reaches past Samuel to SAUL (Sha'ul, 'the asked-for one'), the king a people will 'ask' for (ch 8). One root quietly names the prophet, the gift, and the whole book's theme.", ("1 Samuel", 1, 20)),
+    ("tzevaot", "tzeva'ot", "צְבָאוֹת", "tzeva'ot",
+     "HOSTS, armies — the plural in the divine title YHWH TZEVA'OT, 'Jehovah of hosts' (or 'of armies'), which makes its FIRST appearance in the Bible at 1 Samuel 1:3, on the lips of Elkanah's family at Shiloh. The 'hosts' are the armies of heaven and earth, the whole marshaled power of creation, of which Jehovah is commander. The title then rings through the prophets and the Psalms as the name of the God who fights for his people — and it enters, fittingly, at a sanctuary, in an act of worship.", ("1 Samuel", 1, 3)),
+    ("neder", "neder", "נֶדֶר", "neder",
+     "A VOW — a binding promise made to God, often conditional ('if you will… then I will'). Hannah 'vowed a vow' (nadrah neder, 1:11): if Jehovah gives her a son she will give him back for life. The Law treats a vow with the utmost seriousness — 'when you make a vow to God, do not delay to fulfill it' (Deuteronomy 23:21; Ecclesiastes 5:4) — and Hannah keeps hers to the letter, carrying the weaned child to Shiloh and leaving him there.", ("1 Samuel", 1, 11)),
+    ("nazir", "nazir", "נָזִיר", "nazir",
+     "A NAZIRITE — one 'separated,' set apart to God by a vow, marked by abstaining from wine, avoiding corpse-defilement, and above all letting the hair grow uncut: 'no razor shall touch his head' (the sign Hannah pledges for Samuel, 1:11, and the mark of Samson, Judges 13). The full law is in Numbers 6. Usually a temporary vow, it is here a LIFELONG dedication from before birth — Samuel, like Samson, is given to God for the whole of his life.", ("1 Samuel", 1, 11)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2356,6 +2364,40 @@ ENCYCLOPEDIA = [
               "unburned with a fourth figure 'like a son of the gods' — 'our God is able to deliver us; but if not, "
               "we will not serve your gods' (3:17-18).",
          refs=[("Daniel", 2, 49)], videos=[]),
+    dict(slug="samuel", name="Samuel", kind="person", aliases=["Samuel"],
+         desc="'God has heard' (or 'name of God') — the child asked of Jehovah by his barren mother HANNAH and given "
+              "back to serve at Shiloh (ch 1). He becomes the LAST of the judges and the first of the great "
+              "prophets, the hinge-figure of Israel's history: he leads a repentant Israel against the Philistines, "
+              "and then, when the people demand a king 'like all the nations,' he warns them, anoints SAUL, and later "
+              "anoints DAVID in Saul's place. A lifelong Nazirite, called by God as a boy ('speak, for your servant "
+              "hears,' ch 3), he is the prophet under whose word the whole monarchy begins. He dies at 1 Samuel 25, "
+              "before the book that bears his name is done.",
+         refs=[("1 Samuel", 1, 20), ("1 Samuel", 1, 27)], videos=[]),
+    dict(slug="hannah", name="Hannah", kind="person", aliases=["Hannah"],
+         desc="'Grace, favor' — the barren, beloved wife of ELKANAH, provoked year after year by her rival Peninnah, "
+              "who prays silently at Shiloh until the priest Eli takes her for a drunk, vows her son to God if he is "
+              "given, and, when SAMUEL is born, carries him back to the sanctuary and leaves him there (ch 1). She "
+              "joins the line of Israel's once-barren mothers (Sarah, Rebekah, Rachel), and her song of the God who "
+              "'raises the poor from the dust' and 'brings low and lifts up' (2:1-10) becomes, centuries later, the "
+              "model for Mary's Magnificat (Luke 1:46-55).",
+         refs=[("1 Samuel", 1, 2), ("1 Samuel", 1, 20)], videos=[]),
+    dict(slug="eli", name="Eli", kind="person", aliases=["Eli"],
+         desc="The priest and judge at SHILOH in Samuel's boyhood. He blesses the praying Hannah (after first "
+              "mistaking her for a drunk) and raises the child Samuel at the sanctuary — but he fails to restrain his "
+              "own wicked sons, HOPHNI and PHINEHAS, who defile the priesthood, and a man of God pronounces the end "
+              "of his house (ch 2). Old and blind, he dies falling from his seat when word comes that the ark of God "
+              "has been captured and his sons killed (ch 4) — the collapse of the old order that Samuel's rise "
+              "replaces.",
+         refs=[("1 Samuel", 1, 9), ("1 Samuel", 1, 17)], videos=[]),
+    dict(slug="shiloh", name="Shiloh (the sanctuary)", kind="place", aliases=[],
+         desc="A town in the hill country of EPHRAIM, north of Bethel, that was Israel's central sanctuary through "
+              "the whole period of the Judges: here the tabernacle and the ark of the covenant stood (Joshua 18:1), "
+              "and here Israel came up to worship 'Jehovah of hosts' (1 Samuel 1:3). It is the setting of Hannah's "
+              "vow and the boyhood of Samuel — and it falls when the ark is captured in battle (ch 4), a loss the "
+              "prophet Jeremiah invokes as a warning to a later generation trusting in the Jerusalem temple: 'go to "
+              "my place that was in Shiloh… and see what I did to it' (Jeremiah 7:12). ⚠️ Not to be confused with the "
+              "disputed word 'Shiloh' of Genesis 49:10, a different Hebrew term.",
+         coords=(32.06, 35.29, 0.05), refs=[("1 Samuel", 1, 3), ("1 Samuel", 1, 9)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -2903,6 +2945,9 @@ XREFS = [
     (("Daniel", 2, 44), ("Daniel", 12, 3), "the everlasting kingdom that 'shall stand forever' — the hope that ends in the wise shining 'like the stars forever' (Dan 12:3)"),
     (("Daniel", 2, 28), ("Daniel", 12, 4), "'what will be in the latter days' — the horizon Daniel is told to seal up 'until the time of the end' (Dan 12:4)"),
     (("Daniel", 2, 21), ("Daniel", 11, 2), "'he removes kings and sets up kings' — the sovereignty played out in detail through the kings of Persia and Greece (Dan 11)"),
+    (("1 Samuel", 1, 10), ("Ruth", 1, 20), "'bitter in soul' — the same bitterness Naomi named over herself, calling herself Mara (Ruth 1:20)"),
+    (("1 Samuel", 1, 19), (30, 22), "'Jehovah remembered her' — zakar, the covenant verb that opened Rachel's womb (Genesis 30:22)"),
+    (("1 Samuel", 1, 11), ("Luke", 1, 48), "'look on the affliction of your servant' — the note Mary's Magnificat, built on Hannah's song, will strike: 'he looked on the low estate of his bondslave' (Luke 1:48)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3151,6 +3196,10 @@ VERSE_OF_DAY = [
     ("Daniel", 2, 22, "“He reveals the deep and the hidden things; he knows what is in the darkness, and the light dwells with him.”"),
     ("Daniel", 2, 28, "“There is a God in heaven who reveals mysteries.” Against gods 'whose dwelling is not with flesh' — one who speaks to a man."),
     ("Daniel", 2, 44, "“The God of heaven shall set up a kingdom that shall never be destroyed… and it shall stand forever.” The stone that became a mountain."),
+    ("1 Samuel", 1, 11, "“If you will look on the affliction of your servant and remember me… I will give him to Jehovah all the days of his life.” Hannah's vow."),
+    ("1 Samuel", 1, 15, "“I have poured out my soul before Jehovah.” Hannah, praying silently, mistaken for a drunk by the priest."),
+    ("1 Samuel", 1, 20, "“She called his name Samuel: because I have asked him of Jehovah.”"),
+    ("1 Samuel", 1, 27, "“For this child I prayed, and Jehovah has granted me my petition that I asked of him.”"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3537,6 +3586,9 @@ CHRON_CHAPTERS = {
     "dan2": dict(era="exile",
                  when="Nebuchadnezzar's dream of the four-metal statue and the stone cut without hands — the four kingdoms and the everlasting fifth; Daniel reveals both the dream and its meaning.",
                  clock="'The second year of Nebuchadnezzar' (v1), c. 603 BC — early in the Babylonian exile. The Aramaic section of the book (2:4b-7:28) begins here."),
+    "1sam1": dict(era="monarchy",
+                  when="The birth of Samuel — Hannah's barrenness, her vow at Shiloh, and the child asked of Jehovah and given back; the book that will give Israel its kings opens on an answered prayer.",
+                  clock="Late in the period of the Judges, c. 1105 BC — a generation before Israel demands a king. 1 Samuel is the hinge from the judges to the monarchy."),
 }
 
 CHRON_EVENTS = [
@@ -4593,5 +4645,36 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Masoretic text (as printed by Mechon-Mamre). ⚠️ Daniel is the Old Testament's BILINGUAL book: it opens in Hebrew (1:1-2:4a), switches to ARAMAIC — the international language of the empires — for 2:4b-7:28, then returns to Hebrew for chapters 8-12. The Aramaic chapters are the ones about the Gentile world-powers, and the seam falls mid-sentence at 2:4. The Greek tradition adds material not in the Hebrew-Aramaic (the Song of the Three, Susanna, Bel and the Dragon) and survives in two divergent translations; this translation follows the Masoretic Hebrew-Aramaic and notes the major issues where they fall.",
         christ="Two images from Daniel became central to how the New Testament speaks of Christ. The STONE 'cut out without hands' that breaks the empires and grows to fill the earth (ch 2) is heard behind Jesus' 'stone the builders rejected' and the kingdom of God that starts small and grows (Matthew 21:42-44; 13:31-33). And the 'ONE LIKE A SON OF MAN' who comes with the clouds and is given everlasting dominion (7:13-14) is the title Jesus most often takes for himself — 'the Son of Man' — and quotes at his own trial (Mark 14:62). Daniel 9's 'seventy weeks' and 12's resurrection also run deep in New Testament expectation.",
         debates="The DATE is the master-question (6th-century prophecy vs 2nd-century review-as-prophecy — see above), and nearly everything else attaches to it: the identity of the four kingdoms (Rome vs Greece as the fourth), of 'Darius the Mede' (unattested in other sources), the meaning of the 'seventy weeks' (9:24-27), and the referent of the 'abomination that makes desolate' (Antiochus IV, a future antichrist, or both). The book's Persian and Greek loanwords, its place in the Writings, and the extraordinary precision of chapter 11 down to about 165 BC are the main data. Laid out with pedigrees; the library prints the text and does not cast a vote.",
+    ),
+    "1 Samuel": dict(
+        hebrew_name="שְׁמוּאֵל א",
+        hebrew_translit="Shemuel Alef",
+        hebrew_meaning="'1 Samuel.' In the Hebrew Bible, Samuel is a SINGLE book (named for the prophet Samuel — 'God has heard,' or 'name of God'); the split into 1 and 2 Samuel comes from the Greek Septuagint, which divided it (and Kings) for length. It is the book of the great turn from the judges to the monarchy.",
+        greek_name="Βασιλειῶν Αʹ (Basileion A) — '1 Kingdoms'",
+        greek_meaning="The Septuagint groups Samuel and Kings as four 'books of the Kingdoms' (Basileion A-D), so that 1 Samuel is '1 Kingdoms' and 2 Samuel '2 Kingdoms' — a title that names the books by their subject, the rise and history of Israel's kings.",
+        tagline="The hinge from the judges to the kings — Samuel the last judge and first great prophet, Saul the first king and his fall, and the rise of David; and it opens on a barren woman's answered prayer.",
+        genre="HISTORICAL NARRATIVE — part of the 'Former Prophets' (Joshua, Judges, Samuel, Kings) in the Hebrew canon, and of what scholars call the Deuteronomistic History. Superb narrative art: the intertwined stories of Samuel, Saul, and David, told with a psychological depth and moral ambiguity rarely matched in ancient literature.",
+        canon="In the Hebrew Bible, one book ('Samuel') among the Former Prophets; in the Christian Old Testament, 1 and 2 Samuel, following Ruth and preceding 1-2 Kings — the second stretch of the four-book sweep (Samuel-Kings) from the last judge to the fall of Jerusalem.",
+        author="Anonymous. Jewish tradition (Talmud, Bava Batra 14b) credits Samuel with the early chapters and the prophets Nathan and Gad with the rest (cf 1 Chronicles 29:29) — though Samuel himself dies at 1 Samuel 25. Critical scholarship sees the book as woven from older sources (an 'Ark Narrative,' a 'History of David's Rise,' the 'Court History' of 2 Samuel) into the larger Deuteronomistic History, reaching its final form in or after the exile.",
+        date="The events span roughly 1100-1010 BC (from Samuel's birth to Saul's death on Gilboa). The book's sources are old; its final composition is debated, commonly placed within the monarchy and edited into the Deuteronomistic History by the exile (6th century BC).",
+        place="The central hill country of Israel — Ramah, Shiloh, Gibeah, and the Philistine borderlands — in the generation when Israel, pressed by the Philistines and led by a corrupt priesthood and a last great judge, demanded a king 'like all the nations.'",
+        audience="Israel under, or remembering, the monarchy — a people wrestling with the institution of kingship itself: was asking for a king a rejection of God's own rule, or the means through which God would raise up David and, through him, the promise of an everlasting throne? The book holds both truths in tension and never quite resolves them.",
+        structure=[
+            ["1-7", "Samuel — his birth to Hannah, his call at Shiloh, the loss and return of the ark, and his judgeship over a repentant Israel."],
+            ["8-15", "Saul — Israel demands a king; Samuel warns them and anoints Saul; Saul's early victories, his disobedience, and his rejection by God."],
+            ["16-31", "David's rise and Saul's fall — David anointed in secret, Goliath, David at court, Saul's jealousy and pursuit, David the fugitive, and Saul's death on Mount Gilboa."],
+        ],
+        themes=[
+            "KINGSHIP, and its ambiguity — Israel asks for a king 'like the nations,' which Samuel calls a rejection of God's own kingship (8:7); yet God grants it and works through it. The book neither simply endorses nor simply condemns the monarchy.",
+            "GOD LIFTS THE LOWLY — sounded first in Hannah's song (2:1-10): 'he raises the poor from the dust… Jehovah kills and makes alive.' The barren bear children, the shepherd-boy becomes king, the mighty are brought down — the theme Mary's Magnificat takes up (Luke 1).",
+            "OBEDIENCE OVER SACRIFICE — Saul is rejected not for weakness but for disobedience dressed up as worship; 'to obey is better than sacrifice' (15:22) is the book's verdict on him.",
+            "THE ANOINTED ONE (MASHIACH) — Saul, then David, is 'Jehovah's anointed'; David, 'a man after God's own heart,' becomes the pattern of the king to come, and 'Jehovah looks on the heart, not the outward appearance' (16:7).",
+            "THE WORD OF THE PROPHET — from Samuel's night-call ('speak, for your servant hears') onward, the prophet's word directs and judges the king; the throne stands under the word.",
+        ],
+        key_words=["shaal", "tzevaot", "neder", "nazir"],
+        key_people=["samuel", "hannah", "eli", "shiloh"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Samuel is famous among Old Testament books for the DIFFICULTY of its Hebrew text: the Masoretic text has suffered more than most from scribal slips, and the Greek Septuagint and the Dead Sea Scrolls (especially the Samuel scrolls from Qumran cave 4) frequently differ, at times preserving a better reading. This translation follows the Masoretic Hebrew and notes the major variants where they fall (already at 1:24, 'three bulls' vs 'a three-year-old bull').",
+        christ="The book's gravity all leans toward DAVID — 'Jehovah's anointed' (mashiach, 'messiah'), the shepherd-king chosen not for his height but for his heart, whose throne God will promise to establish forever (2 Samuel 7). The New Testament traces Jesus to David's line and calls him 'Son of David'; the anointing, the shepherd, the rejected-then-exalted king are all patterns the Gospels take up. And the book opens with a note the Gospels echo directly: Hannah's song of the God who lifts the lowly and casts down the proud (2:1-10) is the model on which Mary sings her Magnificat (Luke 1:46-55).",
+        debates="The main questions are SOURCES and COMPOSITION (how the Ark Narrative, the History of David's Rise, and the Court History were combined, and the book's place in the Deuteronomistic History), and the two attitudes to KINGSHIP the book seems to hold at once (the 'pro-' and 'anti-monarchic' strands of chapters 8-12). The TEXT itself is a standing problem — where the Masoretic Hebrew, the Septuagint, and the Qumran scrolls diverge, which preserves the original. And particular cruxes (the two accounts of how Saul became king, the two of David entering Saul's service, Goliath's height in the Hebrew vs the Greek) are much discussed.",
     ),
 }
