@@ -715,6 +715,12 @@ DICTIONARY = [
      "FIRSTBORN — the eldest son, who by right held the birthright, a double inheritance, and the family headship. Genesis is full of the firstborn displaced (Ishmael, Esau, Reuben); Exodus makes the firstborn a matter of life and death. God claims Israel itself as his BEKHOR — 'Israel is my firstborn son' (4:22), a claim of covenant sonship — and the conflict with Pharaoh becomes a contest over sons, climaxing when 'every firstborn in Egypt' is struck and Israel's firstborn are spared by blood (ch 12), after which every firstborn of Israel belongs to Jehovah.", ("Exodus", 4, 22)),
     ("chatan", "chatan damim", "חֲתַן דָּמִים", "chatan damim",
      "'BRIDEGROOM (or son-in-law) OF BLOOD' — the cryptic phrase Zipporah speaks at the terrifying night-lodging scene, cutting off her son's foreskin with a flint and touching it to 'his feet': 'surely you are a CHATAN DAMIM to me' (4:25-26). ⚠️ One of the most obscure expressions in the Hebrew Bible: chatan is 'bridegroom / son-in-law' (from the root for marriage-by-blood-tie), damim is 'blood' (plural, often of bloodshed); who is addressed, and what the phrase means, are genuinely uncertain. The likeliest sense ties it to the covenant blood of circumcision (Genesis 17) that averts the death Moses' household faced.", ("Exodus", 4, 25)),
+    ("shalach", "shalach", "שָׁלַח", "shalach",
+     "TO SEND — and, in the intensive form, to SEND AWAY, let go, release. It is the exodus refrain: 'SHALACH my people, that they may hold a feast to me' (5:1), the demand repeated to Pharaoh through ten plagues, and the same verb of God's own claim one verse earlier in the story — 'let my SON go' (4:23). Pharaoh's refusal is stated in the same word ('I will not let Israel go,' 5:2), so the whole contest is fought over a single verb: who has the right to send this people where.", ("Exodus", 5, 1)),
+    ("teben", "teben", "תֶּבֶן", "teben",
+     "STRAW — chopped stubble mixed into Nile mud to bind sun-dried bricks, a technique well attested in Egyptian brickmaking (and Egyptian scribes really did record daily brick quotas). Pharaoh's cruelty in Exodus 5 is exact: he does not lower the quota, he withdraws the TEBEN and keeps the number, so the slaves must scatter across Egypt gathering stubble and still deliver as before. 'Bricks without straw' has become the English proverb for an impossible demand.", ("Exodus", 5, 7)),
+    ("nogesim", "nogsim / shotrim", "נֹגְשִׂים / שֹׁטְרִים", "nogsim / shotrim",
+     "TASKMASTERS and FOREMEN — the two ranks between Pharaoh and the slaves. The NOGSIM (from a root for 'press, drive, exact') are the Egyptian slave-drivers; the SHOTRIM are Israelite foremen set over their own kinsmen to enforce the quota. ⚠️ The distinction matters: when the bricks fall short it is the ISRAELITE foremen who are beaten (5:14) — the system makes the oppressed enforce their own oppression and then punishes them when it breaks. Keeping the two words distinct keeps that cruelty visible.", ("Exodus", 5, 6)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2959,6 +2965,9 @@ XREFS = [
     (("Exodus", 4, 10), ("Jeremiah", 1, 6), "'not a man of words… heavy of mouth' — the reluctant prophet's plea, sounded again by Jeremiah, 'I am only a youth' (Jer 1:6)"),
     (("Exodus", 4, 12), ("Exodus", 3, 14), "'I will be with your mouth' — ehyeh, the same verb as the Name revealed at the bush, 'I will be what I will be' (Ex 3:14)"),
     (("Exodus", 4, 31), (50, 24), "paqad — Jehovah 'visited' Israel and saw their affliction, the very verb Joseph swore by over his coffin at the end of Genesis (50:24)"),
+    (("Exodus", 5, 1), ("Exodus", 4, 23), "'let my people go' — the same verb (shalach) as God's claim one chapter earlier, 'let my SON go, that he may serve me'"),
+    (("Exodus", 5, 2), ("Exodus", 3, 15), "'I do not know Jehovah' — Pharaoh's sneer set against the Name just revealed at the bush, 'Jehovah… this is my name forever' (Ex 3:15)"),
+    (("Exodus", 5, 22), ("Jeremiah", 20, 7), "'why have you brought evil on this people? why did you ever send me?' — the prophet accusing God to his face, as Jeremiah will (Jer 20:7)"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3214,6 +3223,9 @@ VERSE_OF_DAY = [
     ("Exodus", 4, 11, "“Who made man's mouth?… Is it not I, Jehovah?” God's answer to Moses' 'I am slow of speech.'"),
     ("Exodus", 4, 12, "“Now go; I will be with your mouth and teach you what you shall speak.”"),
     ("Exodus", 4, 22, "“Israel is my firstborn son… let my son go, that he may serve me.” The tenth plague announced at the outset."),
+    ("Exodus", 5, 1, "“Thus says Jehovah, the God of Israel: Let my people go, that they may hold a feast to me in the wilderness.”"),
+    ("Exodus", 5, 2, "“Who is Jehovah, that I should obey his voice?” Pharaoh's sneer — the question the whole book exists to answer."),
+    ("Exodus", 5, 22, "“Why have you brought evil on this people? Why did you ever send me?” Moses accuses God, and Scripture does not censor it."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3606,6 +3618,9 @@ CHRON_CHAPTERS = {
     "exod4": dict(era="exodus",
                   when="Moses given the three signs, appointed Aaron as his mouth, and sent back to Egypt — 'Israel is my firstborn son,' the tenth plague already spoken, and the strange night of the 'bridegroom of blood.'",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — the pharaoh of the oppression (Thutmose III) has died; Moses returns to Amenhotep II, the pharaoh of the Exodus."),
+    "exod5": dict(era="exodus",
+                  when="The first audience with Pharaoh — 'let my people go' answered by 'who is Jehovah?'; bricks without straw, the beaten foremen, and both the people and Moses turning in complaint.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the opening move of the contest with Amenhotep II, before the first plague."),
 }
 
 CHRON_EVENTS = [
@@ -4693,5 +4708,40 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Samuel is famous among Old Testament books for the DIFFICULTY of its Hebrew text: the Masoretic text has suffered more than most from scribal slips, and the Greek Septuagint and the Dead Sea Scrolls (especially the Samuel scrolls from Qumran cave 4) frequently differ, at times preserving a better reading. This translation follows the Masoretic Hebrew and notes the major variants where they fall (already at 1:24, 'three bulls' vs 'a three-year-old bull').",
         christ="The book's gravity all leans toward DAVID — 'Jehovah's anointed' (mashiach, 'messiah'), the shepherd-king chosen not for his height but for his heart, whose throne God will promise to establish forever (2 Samuel 7). The New Testament traces Jesus to David's line and calls him 'Son of David'; the anointing, the shepherd, the rejected-then-exalted king are all patterns the Gospels take up. And the book opens with a note the Gospels echo directly: Hannah's song of the God who lifts the lowly and casts down the proud (2:1-10) is the model on which Mary sings her Magnificat (Luke 1:46-55).",
         debates="The main questions are SOURCES and COMPOSITION (how the Ark Narrative, the History of David's Rise, and the Court History were combined, and the book's place in the Deuteronomistic History), and the two attitudes to KINGSHIP the book seems to hold at once (the 'pro-' and 'anti-monarchic' strands of chapters 8-12). The TEXT itself is a standing problem — where the Masoretic Hebrew, the Septuagint, and the Qumran scrolls diverge, which preserves the original. And particular cruxes (the two accounts of how Saul became king, the two of David entering Saul's service, Goliath's height in the Hebrew vs the Greek) are much discussed.",
+    ),
+    "Exodus": dict(
+        hebrew_name="שְׁמוֹת",
+        hebrew_translit="Shemot",
+        hebrew_meaning="'Names' — Hebrew books are named from their opening words, and Exodus begins 'And these are the NAMES (shemot) of the sons of Israel who came into Egypt.' The English title comes instead from the Greek.",
+        greek_name="Ἔξοδος (Exodos) — 'the going-out'",
+        greek_meaning="'Exodus' is Greek for 'the way out, the departure' — the Septuagint's title, naming the book by its central event: the going-out of Israel from Egypt, the act by which Israel is made a people and by which it will define God ever after ('I am Jehovah your God, who brought you out of the land of Egypt').",
+        tagline="The going-out — slaves delivered, the plagues and the Passover, the sea and the Ten Words, and a God who comes down to dwell in the midst of the people he rescued.",
+        genre="NARRATIVE and LAW intertwined — the second book of the Torah. It moves in three great movements: the deliverance story (bondage, the plagues, the Passover, the sea, chs 1-18), the covenant at Sinai (the Ten Words and the law, chs 19-24), and the tabernacle (its pattern, the golden calf, and its building, chs 25-40) — rescue, then covenant, then the presence of God among his people.",
+        canon="The SECOND book of the Bible and of the Torah/Pentateuch in every tradition. It follows Genesis (which ended with Jacob's family going down into Egypt and Joseph's coffin waiting there) and sets up the whole rest of the Torah.",
+        author="Traditionally MOSES — the Torah is 'the five books of Moses,' and Exodus itself records Moses writing ('Moses wrote all the words of Jehovah,' 24:4; cf 34:27). Critical scholarship sees the Pentateuch as woven from earlier sources over centuries (the Documentary Hypothesis and its successors), reaching final form after the exile — while widely granting the antiquity of much of the material and the memory of a real deliverance behind it.",
+        date="⚠️ Two chronologies. On the EARLY date this project foregrounds — from 1 Kings 6:1's '480 years' before Solomon's temple — the Exodus falls in 1446 BC, under Amenhotep II, with Thutmose III as the pharaoh of the oppression (the reading argued by Associates for Biblical Research / Joel Kramer). The mainstream academic view is the LATE date, ~1250 BC under Ramesses II, resting largely on the store-city name 'Raamses' (1:11). Both are laid out in the chapter notes and the exodus-pharaoh entry; the composition date of the book is a separate and equally debated question.",
+        place="EGYPT and the SINAI wilderness — from the delta where Israel was enslaved, out through the Sea of Reeds, to the mountain (Sinai/Horeb) where the covenant is cut and the tabernacle raised.",
+        audience="Israel — a people constituted by this story. Exodus is what Israel tells about who it is: a nation of slaves that Jehovah redeemed 'with a mighty hand and an outstretched arm,' bound to him by covenant and given his presence in its midst. It became the paradigm of redemption for the whole Bible, and for every people since who have read their own bondage into it.",
+        structure=[
+            ["1-2", "Bondage — a family become a nation, a new king who did not know Joseph, and the birth, flight, and exile of Moses."],
+            ["3-4", "The call — the burning bush, the Name, the signs, and a reluctant prophet sent back."],
+            ["5-11", "The contest — 'Let my people go' met with 'Who is Jehovah?', and nine plagues on Egypt and its gods."],
+            ["12-15", "The deliverance — the Passover and the tenth plague, the going-out, the sea, and the Song of the Sea."],
+            ["16-18", "The wilderness — manna, water from the rock, Amalek, and Jethro's counsel."],
+            ["19-24", "Sinai — the covenant, the Ten Words, the Book of the Covenant, sealed in blood."],
+            ["25-40", "The tabernacle — the pattern given, the golden calf and the covenant renewed, and the building, until 'the glory of Jehovah filled the tabernacle.'"],
+        ],
+        themes=[
+            "REDEMPTION — the Bible's master-image: Jehovah hears the cry of slaves, 'comes down' to deliver, and brings them out with a mighty hand. Israel's confession ever after begins there.",
+            "KNOWING JEHOVAH — Pharaoh says 'I do not know Jehovah' (5:2), and the plagues come 'that you may know that I am Jehovah.' The book is the making-known of the Name, to Egypt and to Israel alike.",
+            "THE NAME — revealed at the bush ('I will be what I will be'; 'Jehovah… this is my name forever,' 3:14-15), the pivot of the book's theology: the God who is present, who acts, who keeps covenant.",
+            "COVENANT and LAW — at Sinai a rescued people is bound to its rescuer: 'you shall be my treasured possession… a kingdom of priests.' Law follows rescue; the commandments open by naming the God who brought them out.",
+            "GOD DWELLING WITH HIS PEOPLE — the book climaxes not at the sea but at the tabernacle: the point of the going-out is that God comes to DWELL in Israel's midst ('that I may dwell among them,' 25:8). The glory filling the tent looks ahead to the Word who 'tabernacled among us' (John 1:14).",
+        ],
+        key_words=["ehyeh", "shalach", "chazak", "bekhor"],
+        key_people=["moses", "aaron", "exodus-pharaoh", "jethro"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Exodus sits at the center of two long debates this library flags rather than settles: the COMPOSITION of the Pentateuch (Mosaic authorship vs the Documentary Hypothesis), and the DATE of the Exodus with the identity of its pharaohs. On the latter, this translation foregrounds the early date (1446 BC; Thutmose III of the oppression, Amenhotep II of the Exodus) argued by Associates for Biblical Research / Joel Kramer, and notes the mainstream late date (~1250 BC, Ramesses II) honestly wherever it bears on a verse — the fullest discussion is in the Exodus 4 notes and the exodus-pharaoh encyclopedia entry.",
+        christ="Exodus is the Bible's master-image of salvation, and the New Testament reads Christ all through it. The PASSOVER LAMB whose blood saves the firstborn is 'Christ our Passover, sacrificed for us' (1 Corinthians 5:7) — John's Gospel has Jesus die as the lambs are killed, with not a bone broken. The going-out through the SEA is read as a baptism (1 Corinthians 10:1-2); the MANNA is the bread of life and the ROCK is Christ (John 6; 1 Corinthians 10:4). The TABERNACLE, where God comes down to dwell, is fulfilled in the one who 'tabernacled among us, and we beheld his glory' (John 1:14). And the Name given at the bush, 'I AM,' is the phrase John's Jesus takes onto his own lips: 'before Abraham was, I AM' (John 8:58).",
+        debates="The DATE of the Exodus (early ~1446 vs late ~1250 BC) and the identity of the pharaohs; the COMPOSITION of the Pentateuch (Mosaic vs documentary and later theories); the HISTORICITY and scale of the event (a literal mass departure, or a smaller exodus grown in national memory — the absence of direct Egyptian record is expected either way, since Egypt did not memorialize defeats); the theological knot of the HARDENING of Pharaoh's heart (divine and human, held together unresolved); and the relation of the covenant law to the ancient Near Eastern codes (Hammurabi and others) and of the covenant form to Hittite treaties. The library prints the text, foregrounds the early date per this project's stated preference, and lays the alternatives out with their pedigrees.",
     ),
 }
