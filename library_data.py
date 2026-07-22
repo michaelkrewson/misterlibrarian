@@ -833,6 +833,8 @@ DICTIONARY = [
      "To SEEK, inquire of, consult — the ordinary verb for going to a god, a prophet, or an oracle with a question. It is the drumbeat of 2 Kings 1 (vv 2, 3, 6, 16): the charge against Ahaziah is not that he broke a rule but that he sent to INQUIRE somewhere else, 'as though there were no God in Israel.' The same verb carries the warmer sense in the prophets and psalms — to seek Jehovah, to resort to him.", ("2 Kings", 1, 2)),
     ("ish-haelohim", "ish ha-Elohim", "אִישׁ הָאֱלֹהִים", "ish ha-Elohim",
      "MAN OF GOD — the standing title for a prophet in the Elijah and Elisha narratives, used some seventy times in Kings. ⚠ In 2 Kings 1 it becomes a wordplay: the captains address Elijah with the title as a formula, and he answers 'if I am a man of God (ISH), let fire (ESH) come down' — the two words are one letter apart in Hebrew, and verse 12 fuses them as esh Elohim, 'the fire of God.'", ("2 Kings", 1, 9)),
+    ("pilegesh", "pilegesh", "פִּילֶגֶשׁ", "pilegesh",
+     "CONCUBINE — a secondary wife, of lower standing than an ishah but genuinely a wife, whose children could inherit or not depending on the household. ⚠ The word is where Genesis and Chronicles visibly differ: Genesis 25:1 calls KETURAH Abraham's WIFE (ishah), 1 Chronicles 1:32 calls her his pilegesh. This translation prints each book as it stands and does not reconcile them; whether the later book is clarifying her status relative to Sarah, protecting Isaac's line, or simply using the other available word is arguable.", ("1 Chronicles", 1, 32)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1099,7 +1101,7 @@ ENCYCLOPEDIA = [
               "Built the ark, offered the first altar's sacrifice (8:20), received the first covenant (9:9-17), "
               "planted the first vineyard and fell (9:20-21). Died at 950 (9:29). His name's rest-root (n-ch) puns "
               "through the whole flood story.",
-         refs=[(5, 29), (6, 9), (8, 20), (9, 20), (9, 29)], videos=[]),
+         refs=[(5, 29), (6, 9), (8, 20), (9, 20), (9, 29), ("1 Chronicles", 1, 4)], videos=[]),
     dict(slug="shem-ham-japheth", name="Shem, Ham, and Japheth", kind="person",
          aliases=["Shem", "Ham", "Japheth"],
          desc="Noah's three sons, fathers of the Table of Nations' seventy peoples (10). Shem — whose name means "
@@ -1110,7 +1112,7 @@ ENCYCLOPEDIA = [
          desc="'The first mighty man on the earth… a mighty hunter before Jehovah' (10:8-9) — the Table of Nations' "
               "only biography. His kingdom starts at Babel and extends to Nineveh: empire, personified, and the "
               "setup for the tower story.",
-         refs=[(10, 8), (10, 9), (10, 10)],
+         refs=[(10, 8), (10, 9), (10, 10), ("1 Chronicles", 1, 10)],
          videos=[("Search for the Tower of Babel — the city Nimrod founded (10:10)",
                   "https://www.youtube.com/watch?v=cYc_VgjJfw8")]),
     dict(slug="terah", name="Terah", kind="person",
@@ -1337,7 +1339,7 @@ ENCYCLOPEDIA = [
               "honors his name even as the covenant passes to Isaac. Genesis gives him twelve princes (25:12-16) "
               "and a place beside Isaac at their father's grave (25:9); later tradition — Jewish, Christian, and "
               "Islamic — remembers him as ancestor of the Arab peoples.",
-         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25), (25, 9), (25, 12), (25, 17), (28, 9)], videos=[]),
+         refs=[(16, 11), (16, 15), (16, 16), (17, 18), (17, 20), (17, 25), (25, 9), (25, 12), (25, 17), (28, 9), ("1 Chronicles", 1, 28)], videos=[]),
     dict(slug="shur", name="Shur", kind="place",
          desc="'Wall' — the desert fronting Egypt's north-east frontier, possibly named for the Egyptian line of "
               "border forts, and crossed by the caravan road from Canaan. Hagar is found 'on the way to Shur' "
@@ -1366,7 +1368,7 @@ ENCYCLOPEDIA = [
               "chapter before Sarah herself hears of it. Born in Genesis 21; Beer-lahai-roi, Hagar's well, will "
               "later be his home (24:62; 25:11). He dies at 180, 'old and full of days,' at Hebron, and is buried in "
               "the cave of Machpelah by his two sons — Esau and Jacob together (35:27-29).",
-         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22), (28, 1), (35, 27), (35, 29)], videos=[]),
+         refs=[(17, 19), (17, 21), (21, 3), (21, 5), (21, 10), (22, 2), (22, 9), (25, 11), (25, 19), (25, 21), (26, 1), (26, 12), (26, 24), (27, 1), (27, 22), (28, 1), (35, 27), (35, 29), ("1 Chronicles", 1, 28)], videos=[]),
 
     # ---- Genesis 19 ----
     dict(slug="moab-ammon", name="Moab and Ammon", kind="people",
@@ -1918,7 +1920,7 @@ ENCYCLOPEDIA = [
               "Midian), descend from Abraham himself. Abraham gives everything to Isaac and sends Keturah's sons "
               "'eastward, to the land of the east' with gifts (25:6): the promise is not divided, but the "
               "old man's line still fans out into a dozen nations, as he was told it would.",
-         refs=[(25, 1), (25, 4)], videos=[]),
+         refs=[(25, 1), (25, 4), ("1 Chronicles", 1, 32)], videos=[]),
     dict(slug="esau", name="Esau (Edom)", kind="person", aliases=["Esau"],
          desc="Isaac and Rebekah's firstborn twin — born 'ruddy (admoni), all over like a hairy mantle,' so they "
               "called him ESAU; and because he traded his birthright for a bowl of RED (adom) stew, he earned the "
@@ -1929,7 +1931,7 @@ ENCYCLOPEDIA = [
               "Jacob into exile; yet at their reunion Esau runs to embrace him and weeps (ch. 33), the wronged "
               "brother more gracious than the schemer. He is the father of EDOM, Israel's perennial neighbor and "
               "rival to the south.",
-         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4), (36, 1), ("Malachi", 1, 2)], videos=[]),
+         refs=[(25, 25), (25, 30), (25, 34), (26, 34), (27, 34), (27, 41), (28, 6), (32, 4), (33, 4), (36, 1), ("Malachi", 1, 2), ("1 Chronicles", 1, 34)], videos=[]),
     dict(slug="jacob", name="Jacob (Israel)", kind="person", aliases=["Jacob"],
          desc="The third patriarch, and the one the nation is named for — born gripping his twin's HEEL (aqev), so "
               "called YA'AQOV, 'heel-holder,' a name that becomes a byword for the supplanter who trips and "
@@ -1950,7 +1952,7 @@ ENCYCLOPEDIA = [
               "enemies — Edom refuses Israel passage in the wilderness (Numbers 20), and the prophets return to it "
               "again and again (Obadiah is entirely an oracle against Edom; Jeremiah 49; Isaiah 34). Herod the Great "
               "was an Idumean — a Hellenized Edomite — so the brother-rivalry runs right up to the Gospels.",
-         refs=[(25, 30), (36, 1), (36, 8), ("Malachi", 1, 4)],
+         refs=[(25, 30), (36, 1), (36, 8), ("Malachi", 1, 4), ("1 Chronicles", 1, 43)],
          coords=(30.32, 35.44, 0.9), approx=True,
          modern="The highlands of southern Jordan (Seir), south-east of the Dead Sea"),
     dict(slug="amalek", name="Amalek", kind="people", aliases=["Amalek", "Amalekites", "Agagite"],
@@ -1962,7 +1964,7 @@ ENCYCLOPEDIA = [
               "(1 Samuel 15); and Haman 'the Agagite,' who plots to annihilate every Jew in the Persian empire "
               "(Esther 3), is read as the last flowering of that line. So the roll of honor for Esau also, in a "
               "single verse, plants the enemy that will shadow Israel for a thousand years.",
-         refs=[(36, 12), (36, 16), ("2 Samuel", 1, 1), ("2 Samuel", 1, 13)], videos=[]),
+         refs=[(36, 12), (36, 16), ("2 Samuel", 1, 1), ("2 Samuel", 1, 13), ("1 Chronicles", 1, 36)], videos=[]),
     dict(slug="horites", name="Horites", kind="people", aliases=["Horites", "Horite", "Hori"],
          desc="The original inhabitants of Seir, before Edom — 'the sons of Seir the Horite, the inhabitants of the "
               "land' (36:20), catalogued here alongside Esau's line. The name is usually tied to chor, 'cave,' so "
@@ -3438,6 +3440,13 @@ XREFS = [
     ((("2 Kings", 1, 8)), (("Mark", 1, 6)), "hair and a leather belt — John the Baptist wears Elijah's costume, and it is a claim about whose successor he is"),
     ((("2 Kings", 1, 12)), (("Job", 1, 16)), "'the fire of God' fell from the heavens — the same phrase, there in the mouth of a messenger who has no idea what he is saying"),
     ((("2 Kings", 1, 16)), (("2 Kings", 1, 3)), "'is it because there is no God in Israel?' — asked three times, word for word: by the angel, by the messengers, and to the king's face"),
+    # ---- 1 Chronicles 1 ----
+    ((("1 Chronicles", 1, 1)), (5, 1), "Genesis 5 walks from Adam to Noah in thirty-two verses of ages and deaths; here it is nine words and no verb"),
+    ((("1 Chronicles", 1, 10)), (10, 8), "Nimrod is given the only verb in forty-two verses of names — of a whole book of narrative, this is what the compiler kept"),
+    ((("1 Chronicles", 1, 27)), (17, 5), "'Abram — he is Abraham': Genesis spends a chapter on the renaming and God explains it; here it is a bare apposition"),
+    ((("1 Chronicles", 1, 32)), (25, 1), "Genesis calls Keturah Abraham's WIFE; Chronicles calls her his concubine — printed as each book stands"),
+    ((("1 Chronicles", 1, 34)), (32, 29), "'Esau and ISRAEL' — the name Jacob never appears in this chapter; the Chronicler goes straight to the name given at the Jabbok"),
+    ((("1 Chronicles", 1, 50)), (36, 8), "the Edomite king-list repeated — and the spelling differences (Hadar/Hadad, Pau/Pai) are the d/r and w/y confusions, the fingerprint of hand-copying"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3750,6 +3759,9 @@ VERSE_OF_DAY = [
     ("2 Kings", 1, 3, "“Is it because there is no God in Israel that you are going to inquire of Baal-zebub?” The charge is not idolatry but vacancy."),
     ("2 Kings", 1, 8, "“A man possessed of hair, with a leather belt bound about his waist.” Eight centuries later John the Baptist wears it on purpose."),
     ("2 Kings", 1, 15, "“Go down with him; do not be afraid of him.” Said to the prophet who once ran a day into the wilderness from this man's mother."),
+    ("1 Chronicles", 1, 1, "“Adam, Seth, Enosh.” The most extreme compression in the Bible — and note where the line is made to start."),
+    ("1 Chronicles", 1, 27, "“Abram — he is Abraham.” Four words for the call, the covenant, Sodom, Isaac and Moriah."),
+    ("1 Chronicles", 1, 43, "“Before any king reigned over the sons of Israel.” Recorded, without comment, for a people who had no king at all."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4191,6 +4203,9 @@ CHRON_CHAPTERS = {
     "2kgs1": dict(era="monarchy",
                   when="Samaria, in the two-year reign of Ahaziah son of Ahab — a king injured by a fall who sends to a Philistine god for a prognosis, and the last appearance of Elijah before he is taken up.",
                   clock="c. 852 BC. ⚠ The verse that dates the succession (1:17, 'the second year of Jehoram son of Jehoshaphat') does not sit easily with the synchronisms at 3:1 and 8:16 — a small sample of the largest technical problem in Kings, whose cross-dated regnal notices are the backbone of Old Testament chronology and do not add up on a plain reading."),
+    "1chr1": dict(era="return",
+                  when="Written in the Persian province of Yehud, generations after the return — a genealogist walking from Adam to Edom to establish who his readers are.",
+                  clock="⚠ Two clocks. The CONTENT spans from creation to the Edomite kings, recycling Genesis; the COMPOSITION belongs to the post-exilic period (commonly 4th century BC), which is why the chapter is filed here rather than at creation. Chronicles is a book about the deep past written for a small community with a temple, a governor and no king."),
 }
 
 CHRON_EVENTS = [
@@ -5612,5 +5627,41 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Two things a reader should know. First, the CHRONOLOGY: the cross-dated regnal notices — each king of Judah dated by the reigning king of Israel and vice versa — are the backbone of Old Testament dating and do not add up on a plain reading. The standard reconciliation invokes co-regencies and two different new-year reckonings; it is widely used, genuinely reflects ancient practice, and is also flexible enough to absorb almost any discrepancy. The Greek text rearranges some of the numbers, which suggests the difficulty was felt early. Second, 2 Kings is where the Bible and the ANNALS OF OTHER EMPIRES finally describe the same events: Shalmaneser III's Black Obelisk shows Jehu bowing, Sennacherib's prism describes shutting Hezekiah up 'like a bird in a cage,' the Babylonian Chronicle dates the capture of Jerusalem to March 597, and ration tablets from Babylon name Jehoiachin. The notes flag these where they fall.",
         christ="Elijah is the thread that runs straight out of this book into the Gospels. He does not die; Malachi's last words promise he will be sent again before the great and terrible day of Jehovah; and the New Testament opens with a man in his exact costume, of whom Jesus says 'he is Elijah who was to come.' Elijah then appears in person beside Moses at the transfiguration. Elisha supplies a different kind of anticipation: his miracles — multiplied bread with some left over, a dead child raised, a foreigner healed of leprosy — are the closest Old Testament analogues to the Gospel miracles, and Jesus cites two of them in his first sermon at Nazareth (Luke 4:25-27) precisely to make the point that God's mercy went to outsiders. And the book's last paragraph keeps a son of David alive in exile, which is the thread Matthew picks up in his first sentence.",
         debates="The CHRONOLOGY, above all. Then the historicity and shape of the Elisha cycle, which reads unlike the annalistic material around it and is usually thought to have circulated separately. The number and date of the DEUTERONOMISTIC editions (Josianic-plus-exilic is the common view; some argue for one exilic composition). The relationship to CHRONICLES, which omits the northern kingdom almost entirely and rehabilitates Manasseh. And a cluster of specific problems where the biblical account and the Assyrian records overlap without quite agreeing — most famously Sennacherib's campaign of 701, where the Bible reports the siege lifted by a catastrophe in the Assyrian camp and Sennacherib reports tribute received, and the two are not straightforwardly reconcilable. Laid out with pedigrees; the library does not cast a vote.",
+    ),
+    "1 Chronicles": dict(
+        hebrew_name="דִּבְרֵי הַיָּמִים א",
+        hebrew_translit="Divrei ha-Yamim Alef",
+        hebrew_meaning="'The events of the days' — that is, the ANNALS or chronicle. As with Samuel and Kings, it is ONE book in the Hebrew Bible; the split into 1 and 2 is the Greek Septuagint's, for length. ⚠ In the Hebrew canon Chronicles stands LAST — the final book of the entire Bible — so that the Jewish Scriptures end not with a prophet but with a Persian king's decree telling the exiles to go home and build.",
+        greek_name="Παραλειπομένων (Paraleipomenon) — 'Of the things left over'",
+        greek_meaning="The Greek title means, more or less, 'the leftovers' — the things omitted from Samuel and Kings. It is a condescending name for the book and has coloured its reputation ever since. Jerome proposed the better one: 'chronicon of the whole of sacred history,' from which the English CHRONICLES comes.",
+        tagline="The same history told again, for people starting over — nine chapters of genealogy that begin at Adam, then David and the temple, written for a small province with no king and a reason to wonder whether it still counted.",
+        genre="HISTORY, rewritten with a purpose — and the Bible's own clearest case of one biblical book INTERPRETING another. It draws on Samuel and Kings (often verbatim), on genealogical lists, and on sources it names and we do not have; and it selects, omits, rearranges and adds with complete freedom. The first nine chapters are genealogy, the most sustained in Scripture; the rest is narrative built around David, the ark, and the preparation of the temple.",
+        canon="In the HEBREW Bible, the last book of the Writings and therefore the last book of the Bible — a placement worth pausing on, since it means the Jewish canon closes on 'let him go up.' In the Christian Old Testament it is moved back to follow Kings, next to the history it retells, and split in two. It is the same book in a different place, and the place changes what it sounds like.",
+        author="Anonymous — 'the Chronicler.' Talmudic tradition credits EZRA (Bava Batra 15a), which fits the book's priestly and Levitical interests, its Persian-period Hebrew, and the fact that Chronicles ends on the same decree with which Ezra begins. Whether Chronicles and Ezra-Nehemiah are by one hand is much argued; the overlap at the join is real, and the theological differences are also real.",
+        date="Post-exilic, commonly placed in the 4th century BC. The genealogy of David's line in 1 Chronicles 3 runs several generations past Zerubbabel, which sets a floor; the Hebrew is late; and the book's whole concern — who belongs, which families serve in which temple courses, and why a community with no king is still Israel — is the concern of the Persian province of Yehud.",
+        place="Jerusalem, and a Judah reduced to a small district around it. The temple has been rebuilt but is not Solomon's; the Davidic line survives as a family, not a throne; and the priests and Levites, who barely register in Samuel-Kings, are everywhere in this book.",
+        audience="The returned community, and especially anyone in it wondering whether the story was over. Chronicles answers by re-telling it from Adam forward and ending on a command to go up and build. Its notorious omissions are aimed at the same readers: it is not hiding David's sins from people who had Samuel in front of them — it is writing about the throne and the temple rather than about the man's private life.",
+        structure=[
+            ["1-9", "GENEALOGIES — from Adam to the returned exiles: the nations, Israel's twelve tribes with Judah and Levi given the most room, the line of David, and the resettlement of Jerusalem."],
+            ["10", "The death of Saul, told in a single chapter, with a verdict: he died for his unfaithfulness."],
+            ["11-12", "David made king over all Israel; the capture of Jerusalem; the mighty men and the forces that came to him."],
+            ["13-16", "THE ARK brought to Jerusalem — Uzzah, the failed first attempt, then the procession done properly by the Levites, with the psalm David appoints."],
+            ["17-20", "The dynastic promise (paralleling 2 Samuel 7), and the wars, compressed."],
+            ["21-27", "The census and the plague — and the threshing floor of Ornan, which the book identifies as the temple site; then David's vast preparations for a temple he is not allowed to build, and the organization of priests, Levites, singers, gatekeepers and officers."],
+            ["28-29", "David's public charge to Solomon and to the assembly, the gifts for the house, his prayer ('all things come from you, and of your own we have given you'), and his death."],
+        ],
+        themes=[
+            "ALL ISRAEL — the phrase runs through the book. Written after the northern kingdom is long gone, it insists on a single people, and traces every tribe.",
+            "THE TEMPLE AND ITS WORSHIP — David's real work in this book is not conquest but PREPARATION: materials, plans, and above all the rosters of Levites, singers and gatekeepers. For a community whose one institution was the temple, this is the point.",
+            "THE DAVIDIC PROMISE — the throne is the spine of the genealogies and the narrative alike, held out to readers who could see for themselves that no one was sitting on it.",
+            "IMMEDIATE RETRIBUTION — the Chronicler's most distinctive and most debated conviction: each generation reaps its own. Kings can blame the exile on Manasseh's sins two reigns earlier; Chronicles will not, and instead gives Manasseh a repentance of his own.",
+            "SEEK, AND YOU WILL BE FOUND — 'if you seek him, he will be found by you' (28:9) is the book's recurring hinge, along with an unusual amount of successful prayer, humbling and turning. Chronicles is far more hopeful than Kings on purpose.",
+            "GENEALOGY AS ARGUMENT — nine chapters of names are not an appendix; for a people asked who they were and whether they belonged, a list of names IS the argument.",
+        ],
+        key_words=["toledot", "alluf", "pilegesh", "kisse"],
+        key_people=["edom", "esau", "ishmael", "isaac"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Chronicles is unusually valuable textually, because for long stretches we possess the SAME text twice — here and in Samuel-Kings — and can watch how names and numbers drift in copying. Chapter 1's Edomite king-list is the classic demonstration: nearly every difference from Genesis 36 is a d/r (ד/ר) or w/y (ו/י) confusion, the two most easily mistaken pairs in the Hebrew script. Elsewhere the Chronicler's own Hebrew is late and sometimes difficult, the numbers are frequently larger than the parallel accounts (a genuine and unresolved problem), and the Dead Sea Scrolls have shown that some of his apparent 'changes' to Samuel in fact reflect a different and older Hebrew text of Samuel than the one the Masoretic tradition preserved.",
+        christ="Matthew opens his Gospel with a genealogy, and it is Chronicles' move: establish who a man is by walking the line down to him. The line this book spends nine chapters constructing — Adam, Abraham, Israel, Judah, David — is the line Matthew's first seventeen verses retrace, and 1 Chronicles 3 supplies part of it directly. Beyond the genealogy, the book's David is a liturgist: he prepares a house he will never enter, organizes its worship, and hands it to his son. The New Testament takes up both halves of that — a temple made of people, and a son of David who builds it.",
+        debates="The AUTHORSHIP and unity of Chronicles and Ezra-Nehemiah. The NUMBERS, which are often far larger in Chronicles than in the parallel texts and have no agreed explanation. The book's relationship to Samuel-Kings — how much is deliberate theological revision and how much reflects a different underlying Hebrew text (the Qumran Samuel scrolls have shifted this argument substantially in the Chronicler's favour). The doctrine of immediate retribution, and whether it is a serious theological position or a flattening one. And the perennial question of the omissions — Bathsheba, Absalom, the northern kingdom — which are better read as the consequence of what the book IS about than as an attempt to conceal what its readers already had on the shelf. Laid out with pedigrees; the library does not cast a vote.",
     ),
 }
