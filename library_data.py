@@ -835,6 +835,10 @@ DICTIONARY = [
      "MAN OF GOD — the standing title for a prophet in the Elijah and Elisha narratives, used some seventy times in Kings. ⚠ In 2 Kings 1 it becomes a wordplay: the captains address Elijah with the title as a formula, and he answers 'if I am a man of God (ISH), let fire (ESH) come down' — the two words are one letter apart in Hebrew, and verse 12 fuses them as esh Elohim, 'the fire of God.'", ("2 Kings", 1, 9)),
     ("pilegesh", "pilegesh", "פִּילֶגֶשׁ", "pilegesh",
      "CONCUBINE — a secondary wife, of lower standing than an ishah but genuinely a wife, whose children could inherit or not depending on the household. ⚠ The word is where Genesis and Chronicles visibly differ: Genesis 25:1 calls KETURAH Abraham's WIFE (ishah), 1 Chronicles 1:32 calls her his pilegesh. This translation prints each book as it stands and does not reconcile them; whether the later book is clarifying her status relative to Sarah, protecting Isaac's line, or simply using the other available word is arguable.", ("1 Chronicles", 1, 32)),
+    ("madda", "madda", "מַדָּע", "madda",
+     "KNOWLEDGE, understanding — from yada, 'to know.' ⚠ A LATE word: it occurs only a handful of times in the Hebrew Bible, and all of them (Chronicles, Ecclesiastes, Daniel) are books whose Hebrew belongs to the Persian period or after — one of the small pieces of evidence for dating Chronicles late. At 2 Chronicles 1:10 Solomon asks for chokhmah u-madda, 'wisdom and knowledge,' where the parallel at 1 Kings 3:9 has him ask for a LISTENING HEART to discern good and evil: moral discernment in one book, administrative competence in the other. In modern Hebrew madda is the ordinary word for SCIENCE.", ("2 Chronicles", 1, 10)),
+    ("bamah", "bamah", "בָּמָה", "bamah",
+     "HIGH PLACE — a raised open-air sanctuary, the ordinary form of worship in Canaan and in Israel before the temple. The book of Kings condemns them relentlessly and judges nearly every king by whether he removed them. ⚠ 2 Chronicles 1:3 handles the awkward fact that Solomon sacrificed at the high place at GIBEON by explaining what Kings never does: the tent of meeting Moses made was there, with Bezalel's bronze altar in front of it. Whether that is older information or the Chronicler's defence of a beloved king is a real question; the library does not vote.", ("2 Chronicles", 1, 3)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1256,7 +1260,7 @@ ENCYCLOPEDIA = [
               "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
               "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -1479,7 +1483,7 @@ ENCYCLOPEDIA = [
               "losing a beauty contest to a wildflower: 'not even Solomon, in all his glory, was clothed like "
               "one of these' (Matthew 6:29). Matthew's opening genealogy runs the royal line through him "
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
-         refs=[("Proverbs", 1, 1), ("Matthew", 6, 29), ("1 Kings", 1, 10)], videos=[]),
+         refs=[("Proverbs", 1, 1), ("Matthew", 6, 29), ("1 Kings", 1, 10), ("2 Chronicles", 1, 1)], videos=[]),
 
     # ---- Exodus 1 ----
     dict(slug="exodus-pharaoh", name="Pharaoh (of the Exodus)", kind="person", aliases=["Pharaoh"],
@@ -1570,7 +1574,7 @@ ENCYCLOPEDIA = [
               "Egyptian name, an Egyptian upbringing, and a Hebrew heart — the man at home nowhere (he names "
               "his own son 'a resident alien in a foreign land,' 2:22) whom God makes the way home.",
          refs=[("Exodus", 2, 2), ("Exodus", 2, 10), ("Exodus", 2, 11),
-               ("Leviticus", 1, 1), ("Numbers", 1, 1)], videos=[]),
+               ("Leviticus", 1, 1), ("Numbers", 1, 1), ("2 Chronicles", 1, 3)], videos=[]),
     dict(slug="aaron", name="Aaron", kind="person", aliases=["Aaron", "Aaron's sons"],
          desc="Moses's older brother (by three years, Exodus 7:7), the first HIGH PRIEST of Israel and head "
               "of the priestly line — the Levite family through whom all legitimate sacrifice would run. In "
@@ -2579,7 +2583,7 @@ ENCYCLOPEDIA = [
               "still calls him 'a man after Jehovah's own heart' (1 Samuel 13:14), a phrase about God's CHOICE "
               "rather than David's record. The covenant of 2 Samuel 7, promising his throne forever, is the root "
               "of Israel's messianic hope, which is why the Gospels open by calling Jesus 'son of David.'",
-         refs=[("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1)], videos=[]),
+         refs=[("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1), ("2 Chronicles", 1, 1)], videos=[]),
     dict(slug="saul-king", name="Saul (Israel's first king)", kind="person", aliases=["Saul"],
          desc="Israel's FIRST king — a tall young Benjaminite sent to look for lost donkeys who came home anointed "
               "(1 Samuel 9-10). He is the answer to a demand the people made and were warned about: 'give us a king "
@@ -2805,6 +2809,25 @@ ENCYCLOPEDIA = [
          refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3)], videos=[],
          coords=(32.2803, 35.1897, 0.06),
          modern="Sebastia, in the hills north-west of Nablus, West Bank"),
+    dict(slug="gibeon", name="Gibeon", kind="place", aliases=["Gibeon"],
+         desc="A major town about ten kilometres north-west of Jerusalem, and in 2 Chronicles the site of the tent "
+              "of meeting Moses made in the wilderness, with Bezalel's bronze altar standing before it — which is "
+              "how this book explains Solomon sacrificing at a 'high place.' Its people tricked Joshua into a "
+              "treaty with stale bread and worn sandals (Joshua 9) and were made woodcutters and water-carriers; "
+              "Saul later broke that treaty, and 2 Samuel 21 records the consequence. Excavated at el-Jib, where "
+              "jar handles stamped GB'N — Gibeon — confirmed the identification, along with a vast rock-cut pool "
+              "and water system that matches the 'pool of Gibeon' where Joab's and Abner's men fought (2 Samuel 2).",
+         refs=[("2 Chronicles", 1, 3), ("2 Chronicles", 1, 13)], videos=[],
+         coords=(31.8465, 35.1846, 0.04),
+         modern="El-Jib, West Bank — north-west of Jerusalem"),
+    dict(slug="bezalel", name="Bezalel", kind="person", aliases=["Bezalel"],
+         desc="The craftsman of the tabernacle — son of Uri, son of Hur, of the tribe of Judah, and the first "
+              "person in the Bible said to be filled with the spirit of God, which is given him for skill in "
+              "workmanship: 'to devise artistic designs, to work in gold, silver and bronze, in cutting stones and "
+              "carving wood' (Exodus 31:1-5). He made the ark, the lampstand and the bronze altar. 2 Chronicles 1:5 "
+              "notes that his altar was still standing at Gibeon in Solomon's day, which links the new temple's "
+              "worship directly back to Moses.",
+         refs=[("2 Chronicles", 1, 5)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3447,6 +3470,11 @@ XREFS = [
     ((("1 Chronicles", 1, 32)), (25, 1), "Genesis calls Keturah Abraham's WIFE; Chronicles calls her his concubine — printed as each book stands"),
     ((("1 Chronicles", 1, 34)), (32, 29), "'Esau and ISRAEL' — the name Jacob never appears in this chapter; the Chronicler goes straight to the name given at the Jabbok"),
     ((("1 Chronicles", 1, 50)), (36, 8), "the Edomite king-list repeated — and the spelling differences (Hadar/Hadad, Pau/Pai) are the d/r and w/y confusions, the fingerprint of hand-copying"),
+    # ---- 2 Chronicles 1 ----
+    ((("2 Chronicles", 1, 1)), (("1 Kings", 1, 1)), "Chronicles begins the reign where 1 Kings 2 ended it — and does not tell you what the two intervening chapters cost"),
+    ((("2 Chronicles", 1, 10)), (("2 Chronicles", 1, 12)), "'wisdom and knowledge' — where 1 Kings 3:9 has Solomon ask for a LISTENING HEART to discern good and evil"),
+    ((("2 Chronicles", 1, 16)), (("2 Chronicles", 1, 17)), "horses out of Egypt — the two things Deuteronomy 17:16 forbids a king by name, recorded here without comment"),
+    ((("2 Chronicles", 1, 18)), (("1 Kings", 1, 13)), "a house for the Name and a house for his kingdom — the temple this book exists for, and the palace it will barely mention"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3762,6 +3790,9 @@ VERSE_OF_DAY = [
     ("1 Chronicles", 1, 1, "“Adam, Seth, Enosh.” The most extreme compression in the Bible — and note where the line is made to start."),
     ("1 Chronicles", 1, 27, "“Abram — he is Abraham.” Four words for the call, the covenant, Sodom, Isaac and Moriah."),
     ("1 Chronicles", 1, 43, "“Before any king reigned over the sons of Israel.” Recorded, without comment, for a people who had no king at all."),
+    ("2 Chronicles", 1, 10, "“Now give me wisdom and knowledge.” In 1 Kings he asks for a listening heart; the same night, told twice."),
+    ("2 Chronicles", 1, 12, "“Such as none of the kings before you has had, and none after you shall have.” Written for readers who knew how the line ended."),
+    ("2 Chronicles", 1, 18, "“A house for the name of Jehovah, and a house for his kingdom.” Two buildings; this book cares about one of them."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4206,6 +4237,9 @@ CHRON_CHAPTERS = {
     "1chr1": dict(era="return",
                   when="Written in the Persian province of Yehud, generations after the return — a genealogist walking from Adam to Edom to establish who his readers are.",
                   clock="⚠ Two clocks. The CONTENT spans from creation to the Edomite kings, recycling Genesis; the COMPOSITION belongs to the post-exilic period (commonly 4th century BC), which is why the chapter is filed here rather than at creation. Chronicles is a book about the deep past written for a small community with a temple, a governor and no king."),
+    "2chr1": dict(era="monarchy",
+                  when="The opening of Solomon's reign — the assembly at Gibeon, the night God appeared, and the resolve to build.",
+                  clock="c. 970 BC by the book's own reckoning, though Chronicles (written centuries later, in the Persian period) is telling it to readers with no king at all. ⚠ Note the two clocks this book always keeps: the events are tenth-century, the telling is post-exilic, and the second is why the first is told this way."),
 }
 
 CHRON_EVENTS = [
@@ -5663,5 +5697,41 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Chronicles is unusually valuable textually, because for long stretches we possess the SAME text twice — here and in Samuel-Kings — and can watch how names and numbers drift in copying. Chapter 1's Edomite king-list is the classic demonstration: nearly every difference from Genesis 36 is a d/r (ד/ר) or w/y (ו/י) confusion, the two most easily mistaken pairs in the Hebrew script. Elsewhere the Chronicler's own Hebrew is late and sometimes difficult, the numbers are frequently larger than the parallel accounts (a genuine and unresolved problem), and the Dead Sea Scrolls have shown that some of his apparent 'changes' to Samuel in fact reflect a different and older Hebrew text of Samuel than the one the Masoretic tradition preserved.",
         christ="Matthew opens his Gospel with a genealogy, and it is Chronicles' move: establish who a man is by walking the line down to him. The line this book spends nine chapters constructing — Adam, Abraham, Israel, Judah, David — is the line Matthew's first seventeen verses retrace, and 1 Chronicles 3 supplies part of it directly. Beyond the genealogy, the book's David is a liturgist: he prepares a house he will never enter, organizes its worship, and hands it to his son. The New Testament takes up both halves of that — a temple made of people, and a son of David who builds it.",
         debates="The AUTHORSHIP and unity of Chronicles and Ezra-Nehemiah. The NUMBERS, which are often far larger in Chronicles than in the parallel texts and have no agreed explanation. The book's relationship to Samuel-Kings — how much is deliberate theological revision and how much reflects a different underlying Hebrew text (the Qumran Samuel scrolls have shifted this argument substantially in the Chronicler's favour). The doctrine of immediate retribution, and whether it is a serious theological position or a flattening one. And the perennial question of the omissions — Bathsheba, Absalom, the northern kingdom — which are better read as the consequence of what the book IS about than as an attempt to conceal what its readers already had on the shelf. Laid out with pedigrees; the library does not cast a vote.",
+    ),
+    "2 Chronicles": dict(
+        hebrew_name="דִּבְרֵי הַיָּמִים ב",
+        hebrew_translit="Divrei ha-Yamim Bet",
+        hebrew_meaning="'2 Chronicles' — but as with Samuel and Kings there is no such book in the Hebrew Bible. Chronicles is ONE scroll, Divrei ha-Yamim, 'the events of the days'; the Greek Septuagint split it for length. ⚠ Because Chronicles stands LAST in the Hebrew canon, this book's final verses are the final verses of the Jewish Bible.",
+        greek_name="Παραλειπομένων Βʹ (Paraleipomenon B)",
+        greek_meaning="'Of the things left over, book 2' — the Septuagint's dismissive title for a book that is nothing of the kind. Jerome's 'chronicon' is the better name and the one English inherited.",
+        tagline="Solomon's temple built and dedicated, then the kingdom split and the long road down to the exile — the same kings as in Kings, judged by the same standard, but told to people rebuilding rather than people losing everything.",
+        genre="HISTORY with a thesis. It covers the same ground as 1 Kings 1 to 2 Kings 25, often in the same words, but selects and re-weights ruthlessly: nine chapters on Solomon (six of them on the temple), the northern kingdom almost entirely absent, and disproportionate space for the reforming kings of Judah — Asa, Jehoshaphat, Hezekiah, Josiah — and for priests, Levites, singers and the conduct of worship.",
+        canon="The second half of Chronicles, which closes the Writings and therefore the Hebrew Bible. In the Christian Old Testament it follows 1 Chronicles and precedes Ezra — a natural join, since the book's last two verses are the first two verses of Ezra, the decree of Cyrus, broken off mid-sentence at 'let him go up.'",
+        author="The same anonymous 'Chronicler' as 1 Chronicles; Talmudic tradition names Ezra. Named sources are cited constantly and are lost: the book of the kings of Judah and Israel, the words of Samuel the seer, of Nathan the prophet, of Gad, of Shemaiah, of Iddo, and a commentary (midrash) on the book of the kings.",
+        date="Post-exilic, commonly the 4th century BC. The book ends with Cyrus's decree of 538 BC, and its concerns — temple worship, Levitical duties, and who counts as Israel — belong to the restored community rather than to the monarchy it describes.",
+        place="Jerusalem, and specifically the temple. More than half the Solomon material is about one building, and the reforming kings are measured largely by what they did to it: cleansed it, repaired it, shut it, reopened it.",
+        audience="The returned exiles. They had the temple rebuilt, no king, and every reason to ask whether the promises had lapsed. Chronicles answers by retelling the monarchy as the story of a house of worship rather than a dynasty of power — an emphasis that happens to be exactly what a community with a temple and a governor could still act on.",
+        structure=[
+            ["1-9", "SOLOMON — Gibeon and the gift of wisdom; the letter to Huram of Tyre; the building, furnishing, dedication and glory-filled consecration of the TEMPLE; the queen of Sheba; his wealth and death. Nine chapters, and no Bathsheba, no foreign wives, no divided heart."],
+            ["10-12", "THE SPLIT — Rehoboam's answer at Shechem, the loss of the ten tribes, and Shishak of Egypt stripping the temple five years into the reign."],
+            ["13-20", "Abijah, ASA and JEHOSHAPHAT — reform, reliance on God in battle, and prophets who confront kings at the moment of victory."],
+            ["21-28", "Decline — Jehoram, Ahaziah, Athaliah's usurpation and the boy Joash hidden in the temple; Amaziah, Uzziah struck with leprosy for burning incense, Jotham, and Ahaz shutting the doors."],
+            ["29-32", "HEZEKIAH — the largest treatment of any king after Solomon: the temple reopened and cleansed, a great Passover to which the northern remnant is invited, and Sennacherib's siege."],
+            ["33-35", "Manasseh — and, uniquely in the Bible, his captivity, repentance and restoration; then Amon, and JOSIAH's reform and the Passover, and his death at Megiddo."],
+            ["36", "The last four kings, the burning of the temple, the seventy years — and then, in the final two verses, the decree of Cyrus: 'Whoever is among you of all his people, may Jehovah his God be with him, and let him go up.'"],
+        ],
+        themes=[
+            "THE TEMPLE AS THE PLOT — the building is the book's centre of gravity, and the reigns are largely graded by what each king did to it. For readers whose one surviving institution was that building, this is not antiquarianism.",
+            "IMMEDIATE RETRIBUTION — the Chronicler's distinctive conviction, and it produces this book's most striking departures: Uzziah's leprosy is explained (he burned incense), Manasseh repents and is restored, and Josiah's death at Megiddo is given a cause. Kings leaves all three unexplained.",
+            "IF MY PEOPLE — 7:14, the book's most quoted verse: 'if my people who are called by my name humble themselves, and pray, and seek my face, and turn from their evil ways, then I will hear.' It is the programme for every reform narrative that follows, and it is addressed to people who can still do it.",
+            "SEEK AND BE FOUND — darash, 'seek,' recurs constantly as the verb of true religion, along with an unusual number of prayers that are answered and repentances that are accepted.",
+            "ALL ISRAEL, STILL — the north is barely narrated, but northerners are repeatedly invited south to worship (Hezekiah's Passover most of all). The book will not concede that the ten tribes are simply gone.",
+            "AN UNFINISHED ENDING — the Hebrew Bible closes mid-decree, on a command to go up and build. It is the most forward-leaning ending any canon has.",
+        ],
+        key_words=["bamah", "madda", "darash", "kisse"],
+        key_people=["solomon", "gibeon", "bezalel", "david"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Two practical notes. First, VERSIFICATION: Hebrew 2 Chronicles 1 has eighteen verses where English Bibles have seventeen — Hebrew 1:18 is English 2:1 — and the offset runs through chapter 2 before the systems re-align at chapter 3. This translation follows the Masoretic numbering and flags the seam. Second, this book runs parallel to Samuel-Kings for long stretches, which makes it unusually useful for watching how a text was transmitted and how an ancient historian felt free to re-word what he had received: 1 Kings 3's 'listening heart' becomes 'wisdom and knowledge' here, in the same scene on the same night, and both stand in the same Bible.",
+        christ="Chronicles ends the Hebrew Bible on an unfinished sentence — a decree to go up and build — and the New Testament opens on a genealogy that runs through the line this book has been tracing. Between them, the temple is the connection Christian reading has always made: a house for the NAME, which Solomon himself says cannot contain God ('the heavens and the heaven of heavens cannot contain you'), and which the New Testament first replaces with a body and then with a people. The book's other bequest is 7:14, which has probably been preached more often than any other verse in Chronicles, and whose conditions — humble, pray, seek, turn — are the shape of every reform this book admires.",
+        debates="The book's HISTORICAL VALUE, long dismissed on the assumption that it simply rewrote Kings for pious ends, and substantially rehabilitated: several of its distinctive details (Hezekiah's tunnel and water works, Uzziah's building, Manasseh's Babylonian captivity) fit the archaeological and Assyrian evidence, and the Qumran Samuel scrolls showed that some of its apparent 'changes' reflect a different Hebrew text rather than invention. Also debated: the doctrine of immediate retribution and whether it flattens the tradition or sharpens it; the NUMBERS, frequently larger than the parallels; the relationship to Ezra-Nehemiah; and, in this chapter, whether the tent of meeting really stood at Gibeon or whether the Chronicler supplied it to explain away a high place. Laid out with pedigrees; the library does not cast a vote.",
     ),
 }
