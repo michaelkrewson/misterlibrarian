@@ -819,6 +819,14 @@ DICTIONARY = [
      "ACCUSER, adversary — one who opposes, obstructs, or brings a charge. ⚠ In Job it always appears as HA-satan, WITH THE DEFINITE ARTICLE (all fourteen times), and Hebrew does not put 'the' in front of a proper name: it is an office, not yet a name. The same titled figure prosecutes the high priest in Zechariah 3:1-2, and in Numbers 22:22 the angel of Jehovah himself stands in the road 'as a satan' against Balaam — the plainest proof that the word is a role. The one occurrence without the article, and so possibly a name, is 1 Chronicles 21:1 — the latest of the texts, retelling a story in which 2 Samuel 24 has JEHOVAH incite David. The word's growth into a name is visible inside the Bible.", ("Job", 1, 6)),
     ("tiflah", "tiflah", "תִּפְלָה", "tiflah",
      "Something UNSAVORY — from a root meaning tasteless, unseasoned (Job 6:6 asks whether what is taphel can be eaten without salt). Job 1:22 says he 'laid no tiflah to God's charge': the accusation he refuses to bring is not quite blasphemy but insipidity — that there is nothing in God. KJV 'nor charged God foolishly'; NIV 'did not charge God with wrongdoing.'", ("Job", 1, 22)),
+    ("sokhenet", "sokhenet", "סֹכֶנֶת", "sokhenet",
+     "ATTENDANT, carer — a rare feminine form from a root meaning 'to be of use, of benefit.' Used of Abishag the Shunammite, brought to warm the dying David (1 Kings 1:2, 4). KJV 'let her cherish him'; the proposal is medical in form and dynastic in substance, and the narrator's flat 'but the king did not know her' publishes its result.", ("1 Kings", 1, 2)),
+    ("chayil", "chayil", "חַיִל", "chayil",
+     "STRENGTH, worth, capability — and depending on context: an army, wealth, valor, or plain competence. An ish chayil is a 'worthy man'; the eshet chayil of Proverbs 31 is the 'capable wife.' In 1 Kings 1 the same phrase is used twice within ten verses in opposite directions: Adonijah flatters the messenger as a worthy man (v42), and Solomon then makes Adonijah's life conditional on proving himself a 'son of chayil' (v52).", ("1 Kings", 1, 52)),
+    ("nagid", "nagid", "נָגִיד", "nagid",
+     "LEADER, designated ruler — the older, less grand word Israel's tradition prefers for the man God appoints over his people, distinct from melekh, 'king.' Samuel anoints Saul as nagid before anyone calls him king; David uses it of Solomon at 1 Kings 1:35 ('it is he whom I have appointed to be leader over Israel and over Judah'). A nagid is designated by someone; a melekh simply reigns.", ("1 Kings", 1, 35)),
+    ("kisse", "kisse", "כִּסֵּא", "kisse",
+     "THRONE — literally a seat of honor. It is the drumbeat of 1 Kings 1, named some ten times in fifty-three verses: whoever 'sits on the throne of my lord the king after him' is the chapter's whole question, and every party to the quarrel repeats the phrase. Behind it stands the promise of 2 Samuel 7:16, that David's throne would be established forever — a promise the rest of the book watches go wrong.", ("1 Kings", 1, 13)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1463,7 +1471,7 @@ ENCYCLOPEDIA = [
               "losing a beauty contest to a wildflower: 'not even Solomon, in all his glory, was clothed like "
               "one of these' (Matthew 6:29). Matthew's opening genealogy runs the royal line through him "
               "(1:6-7), and Jesus will invoke him once more: 'something greater than Solomon is here' (12:42).",
-         refs=[("Proverbs", 1, 1), ("Matthew", 6, 29)], videos=[]),
+         refs=[("Proverbs", 1, 1), ("Matthew", 6, 29), ("1 Kings", 1, 10)], videos=[]),
 
     # ---- Exodus 1 ----
     dict(slug="exodus-pharaoh", name="Pharaoh (of the Exodus)", kind="person", aliases=["Pharaoh"],
@@ -2563,7 +2571,7 @@ ENCYCLOPEDIA = [
               "still calls him 'a man after Jehovah's own heart' (1 Samuel 13:14), a phrase about God's CHOICE "
               "rather than David's record. The covenant of 2 Samuel 7, promising his throne forever, is the root "
               "of Israel's messianic hope, which is why the Gospels open by calling Jesus 'son of David.'",
-         refs=[("2 Samuel", 1, 1), ("2 Samuel", 1, 17)], videos=[]),
+         refs=[("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1)], videos=[]),
     dict(slug="saul-king", name="Saul (Israel's first king)", kind="person", aliases=["Saul"],
          desc="Israel's FIRST king — a tall young Benjaminite sent to look for lost donkeys who came home anointed "
               "(1 Samuel 9-10). He is the answer to a demand the people made and were warned about: 'give us a king "
@@ -2692,6 +2700,65 @@ ENCYCLOPEDIA = [
               "the question can be asked without a national answer. ⚠ No pin is offered on the atlas, on the same "
               "principle as Eden — a guessed location is worse than an admitted blank.",
          refs=[("Job", 1, 1)], videos=[]),
+    dict(slug="adonijah", name="Adonijah", kind="person", aliases=["Adonijah"],
+         desc="David's fourth son, by Haggith, and — with Amnon, Absalom and Chileab dead or out of the picture — "
+              "the eldest surviving claimant to the throne. He proclaims himself king while his father is dying "
+              "(1 Kings 1:5), copying his brother Absalom's method almost word for word, and is deserted at his own "
+              "coronation feast the moment Solomon is anointed at Gihon. Spared on condition, he asks in the next "
+              "chapter for Abishag — the dying king's attendant — and is executed for it, the request being read, "
+              "rightly or not, as a renewed claim on the throne.",
+         refs=[("1 Kings", 1, 5)], videos=[]),
+    dict(slug="bathsheba", name="Bathsheba", kind="person", aliases=["Bathsheba"],
+         desc="Wife of Uriah the Hittite and then of David, whose taking of her is the great crime of 2 Samuel 11; "
+              "mother of Solomon. In 1 Kings 1 she appears for the first time as an agent rather than an object — "
+              "briefed by Nathan, she goes to the dying king, improves on the script she was given (adding the oath "
+              "'by Jehovah your God' and the threat that she and her son will be counted offenders), and secures the "
+              "throne for Solomon. She becomes the queen mother, and Matthew's genealogy names her, unusually, as "
+              "'the wife of Uriah' (Matthew 1:6).",
+         refs=[("1 Kings", 1, 11)], videos=[]),
+    dict(slug="nathan-prophet", name="Nathan the prophet", kind="person", aliases=["Nathan"],
+         desc="The court prophet of David's reign, and the man who twice changes its direction. He delivers the "
+              "dynastic promise of 2 Samuel 7 ('your throne shall be established forever'), then confronts David "
+              "over Bathsheba and Uriah with the parable of the poor man's lamb and the four words 'you are the "
+              "man' (2 Samuel 12:7). In 1 Kings 1 he is the strategist of Solomon's accession — briefing Bathsheba, "
+              "arriving on cue, and framing his own speech as a question that asserts nothing he could be held to.",
+         refs=[("1 Kings", 1, 8)], videos=[]),
+    dict(slug="joab", name="Joab", kind="person", aliases=["Joab"],
+         desc="David's nephew and the commander of his army for the whole reign — indispensable, loyal in his "
+              "fashion, and repeatedly a murderer: of Abner, of Absalom against explicit orders, and of Amasa. He "
+              "is also the man David used to have Uriah killed. In 1 Kings 1 he backs Adonijah, and in chapter 2 he "
+              "dies holding the horns of the altar, on David's deathbed instructions.",
+         refs=[("1 Kings", 1, 7)], videos=[]),
+    dict(slug="zadok-abiathar", name="Zadok and Abiathar", kind="people", aliases=["Zadok", "Abiathar"],
+         desc="The two priestly houses of David's reign, and in 1 Kings 1 they end up on opposite sides. ABIATHAR "
+              "is the sole survivor of Saul's massacre of the priests at Nob, who fled to David in the wilderness "
+              "and carried the ark for him ever since — the old comrade, and he backs Adonijah. ZADOK appears "
+              "without such a history and is aligned with the Jerusalem establishment; he anoints Solomon at Gihon. "
+              "In chapter 2 Abiathar is stripped of the priesthood and banished to Anathoth, and Zadok's line holds "
+              "the high priesthood from then on — the 'sons of Zadok' whom Ezekiel's temple vision names as the "
+              "only legitimate priests, and from whose name the party of the Sadducees is usually derived.",
+         refs=[("1 Kings", 1, 7), ("1 Kings", 1, 8)], videos=[]),
+    dict(slug="gihon-spring", name="the Gihon spring", kind="place", aliases=["Gihon"],
+         desc="Jerusalem's water source — a karst spring in the Kidron valley immediately below the eastern ridge "
+              "of the old city, and the reason a city stands there at all. Solomon is anointed here (1 Kings 1:33, "
+              "38, 45) in full public earshot, while Adonijah's rival feast is held out of sight downstream at En "
+              "Rogel: the geography is the politics. Hezekiah later cut a 533-metre tunnel through solid rock to "
+              "bring its water inside the walls ahead of the Assyrian siege — the tunnel is still walkable, and the "
+              "inscription its diggers left describing the moment the two teams met is one of the most remarkable "
+              "objects from the Old Testament world. ⚠ Not to be confused with the Gihon of Genesis 2:13, one of "
+              "the four rivers of Eden, which is a different name entirely.",
+         refs=[("1 Kings", 1, 33), ("1 Kings", 1, 38), ("1 Kings", 1, 45)], videos=[],
+         coords=(31.7735, 35.2364, 0.02),
+         modern="Jerusalem — the spring in the Kidron valley, below the City of David"),
+    dict(slug="en-rogel", name="En Rogel", kind="place", aliases=["En Rogel"],
+         desc="A spring at the junction of the Kidron and Hinnom valleys, below and outside Jerusalem — usually "
+              "identified with Bir Ayyub, 'Job's Well.' It marks the boundary between Judah and Benjamin (Joshua "
+              "15:7), and it is where David's spies waited during Absalom's revolt (2 Samuel 17:17). In 1 Kings 1 "
+              "Adonijah holds his coronation feast here, by the Stone of Zoheleth — out of sight of the city, which "
+              "is precisely the difference between his claim and Solomon's.",
+         refs=[("1 Kings", 1, 9)], videos=[],
+         coords=(31.7705, 35.2364, 0.02), approx=True,
+         modern="Jerusalem — Bir Ayyub, where the Kidron and Hinnom valleys meet"),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3316,6 +3383,12 @@ XREFS = [
     ((("Job", 1, 9)), (("Malachi", 1, 10)), "chinnam, 'for nothing' — Malachi's priests would not serve unpaid; the Accuser asks whether anyone ever does"),
     ((("Job", 1, 21)), (("Job", 1, 11)), "berakh — the Accuser swore Job would 'bless' God meaning curse; Job says the word and means it straight"),
     ((("Job", 1, 22)), (("Job", 1, 20)), "'Job did not sin' — it does not say he was patient; the poetry from chapter 3 on is anything but"),
+    # ---- 1 Kings 1 ----
+    ((("1 Kings", 1, 5)), (("1 Kings", 1, 6)), "the chariot and the fifty runners are Absalom's, word for word (2 Samuel 15:1) — and the next verse says Adonijah was born after him"),
+    ((("1 Kings", 1, 6)), (("1 Samuel", 1, 3)), "'his father never pained him by saying, why have you done so' — the failure Samuel laid against Eli, with the same result"),
+    ((("1 Kings", 1, 13)), (("1 Kings", 1, 30)), "the oath the reader has never heard of — asserted by Bathsheba, never claimed by Nathan, and confirmed by David in words that could equally be a new one"),
+    ((("1 Kings", 1, 39)), (("1 Samuel", 1, 1)), "anointing with the horn of oil — the act that makes a king a mashiach, an anointed one"),
+    ((("1 Kings", 1, 50)), (("Exodus", 1, 1)), "the horns of the altar as sanctuary — but Exodus 21:14 says a deliberate killer is to be taken FROM the altar to die"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3622,6 +3695,9 @@ VERSE_OF_DAY = [
     ("Job", 1, 9, "“Is it for nothing that Job fears God?” The question the whole book exists to answer — is devotion possible unpaid?"),
     ("Job", 1, 21, "“Jehovah gave and Jehovah has taken; may the name of Jehovah be blessed.” The same verb the Accuser used for cursing."),
     ("Job", 1, 22, "“In all this Job did not sin.” Note what it does not say: that he was patient, or serene, or unshaken."),
+    ("1 Kings", 1, 6, "“His father had never pained him all his days by saying, ‘Why have you done so?’” The quietest indictment in the book."),
+    ("1 Kings", 1, 13, "“Did not you, my lord the king, swear to your servant…?” An oath the reader has never once heard of."),
+    ("1 Kings", 1, 40, "“So that the earth was split with their sound.” The joy at Solomon's anointing is loud enough to break something."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4057,6 +4133,9 @@ CHRON_CHAPTERS = {
     "job1": dict(era="patriarchs",
                  when="Nowhere and no-when in particular — the land of Uz, in a household run like a patriarch's: wealth counted in livestock, the father offering his own sacrifices, no priest, no temple, no Israel.",
                  clock="⚠ The book gives no date and names no king. Its SETTING is drawn in patriarchal colors (Job's lifespan of 140 further years in 42:16, the qesitah coin of 42:11, sacrifice offered by the head of the family), which is why it is placed here; but the DATE OF COMPOSITION is a separate and open question, with proposals running from Solomon's court to the period after the exile. Setting and writing need not be the same century, and in this book almost certainly are not."),
+    "1kgs1": dict(era="monarchy",
+                  when="The last days of David — an old king who cannot get warm, two sons claiming the throne on the same afternoon, and Solomon anointed at the Gihon spring.",
+                  clock="c. 970 BC. David reigns forty years (seven in Hebron, thirty-three in Jerusalem, 2 Samuel 5:4-5), so his death falls near 970 and Solomon's temple is begun 'in the four hundred and eightieth year after the exodus' and his own fourth year (1 Kings 6:1) — the verse on which the whole biblical chronology of the monarchy is pinned, and one of the two anchors of the exodus date."),
 }
 
 CHRON_EVENTS = [
@@ -4172,6 +4251,9 @@ CHRON_EVENTS = [
          note="2 Chronicles 3:1: Solomon built 'on Mount Moriah, on the threshing floor of Ornan the Jebusite' — the very hill where Abraham had bound Isaac (Genesis 22) and where David had raised an altar. The bare height north of the old Jebusite town is now the city's heart, and 'on the mount of Jehovah it is seen to' (Genesis 22:14) has its building. Destroyed by Nebuchadnezzar in 586 BC.",
          ref=("Genesis", 22, 14)),
     # -- The Exile --
+    dict(era="monarchy", am="—", trad="c. 970 BC", event="David dies; Solomon anointed at Gihon and the kingdom established in his hand",
+         note="1 Kings 1-2. The succession is settled in a single afternoon: Adonijah's feast at En Rogel against Solomon's anointing at the city's own spring. Solomon's fourth year, when the temple is begun, is dated in 1 Kings 6:1 to the 480th year after the exodus — the verse the whole chronology of the monarchy hangs from.",
+         ref=("1 Kings", 1, 39)),
     dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
          note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",
          ref=("Daniel", 1, 1)),
@@ -5401,5 +5483,40 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Job's Hebrew is the most difficult in the Bible: the poem is dense, archaic and deliberately strange, with a very high proportion of words that occur nowhere else (so their meanings are reconstructed from Arabic, Aramaic and context), and several passages — the third speech cycle, where Bildad's turn is short and Zophar's is missing, and the description of Behemoth and Leviathan — are textually or structurally disputed. The Greek Septuagint is roughly a sixth shorter. A translator's honesty here consists largely in flagging how much is uncertain; the notes do that where it falls, and this chapter, being prose, is the easy part.",
         christ="Job's cry for an arbiter is the thread Christian reading has always followed: 'there is no umpire between us, who might lay his hand on us both' (9:33), 'my witness is in heaven' (16:19), and above all 'I know that my REDEEMER lives, and at the last he will stand upon the earth' (19:25) — go'el, the kinsman-redeemer word of Ruth and Boaz. What Job asks for is someone who can stand on both sides at once. Beyond that, the book supplies the New Testament with its sharpest refusal of the idea that misfortune measures sin — the assumption Jesus rejects flatly about the man born blind (John 9:2-3) and the tower of Siloam (Luke 13:4) — and, in the innocent sufferer who is vindicated and whose prayer is then accepted on behalf of those who wronged him (42:8-10), a shape Christians have not been able to read without recognition.",
         debates="Nearly everything. Whether Job is a historical figure or a parable (the Talmud records both views). Whether the prose frame and the poem are one composition or a poet's use of an older tale. The DATE, spanning nearly a millennium of proposals. Whether the ELIHU speeches (chs 32-37) are original or a later insertion — he is not introduced in the prologue, not mentioned in the epilogue, and nobody answers him. What Behemoth and Leviathan are (hippopotamus and crocodile, or the chaos-monsters of ancient myth, or both at once). The famous crux at 13:15 — 'though he slay me, yet will I trust him' or 'I have no hope' — where the written and read forms of the Hebrew differ by one word. And above all what God's answer means: whether the whirlwind humbles Job, overwhelms him, or finally treats him as an equal worth speaking to. Laid out with pedigrees; the library does not cast a vote.",
+    ),
+    "1 Kings": dict(
+        hebrew_name="מְלָכִים א",
+        hebrew_translit="Melakhim Alef",
+        hebrew_meaning="'1 Kings.' As with Samuel, KINGS is a SINGLE book in the Hebrew Bible — 'Melakhim' — and the division into 1 and 2 Kings comes from the Greek Septuagint, which split it for length (a scroll has a practical limit). The break falls in the middle of a story: Ahaziah falls through a lattice at the end of 1 Kings and is still lying there at the start of 2 Kings.",
+        greek_name="Βασιλειῶν Γʹ (Basileion C) — '3 Kingdoms'",
+        greek_meaning="The Septuagint groups Samuel and Kings as four 'books of the Kingdoms,' so 1 Kings is '3 Kingdoms.' The Greek text of Kings also differs from the Hebrew in more than length: it arranges some material in a different order, and its account of Jeroboam in particular preserves a substantially different version of events.",
+        tagline="The rise and division of a kingdom — Solomon's temple, wisdom and slow corruption; then the split into Israel and Judah, and a procession of kings measured by one standard and mostly failing it, until a prophet appears out of nowhere and stops the rain.",
+        genre="HISTORICAL NARRATIVE, but written to a thesis. Part of the 'Former Prophets' in the Hebrew canon and of what scholars call the DEUTERONOMISTIC HISTORY (Joshua-Judges-Samuel-Kings), it judges every reign by one question — did the king keep the worship of Jehovah undivided and in Jerusalem? — and gives its verdict in a repeating formula. Woven through it are older sources it names openly (the Book of the Acts of Solomon, the Chronicles of the Kings of Israel and of Judah) and a great cycle of PROPHET STORIES about Elijah, told in a completely different register.",
+        canon="In the Hebrew Bible one book, Kings, among the Former Prophets; in the Christian Old Testament, 1 and 2 Kings, following 1-2 Samuel — the closing stretch of the long narrative that runs from the conquest to the fall of Jerusalem. The parallel account in 1-2 Chronicles covers much of the same ground from a later and very different angle, and comparing the two is one of the most instructive exercises in the Old Testament.",
+        author="Anonymous. Jewish tradition (Talmud, Bava Batra 15a) credits JEREMIAH, which is at least a shrewd guess — the book ends in his lifetime, its prose often sounds like his, and its theology is close to Deuteronomy's. Modern scholarship generally sees a Deuteronomistic historian (or school) compiling named older sources, with a first edition plausibly in the reign of Josiah — whose reform the book builds toward and all but crowns — and a short updating after the exile, since the last event recorded is the release of Jehoiachin from a Babylonian prison in about 561 BC.",
+        date="The narrative runs c. 970 BC (David's death) to 561 BC (Jehoiachin's release) — roughly four centuries. The book's own composition is placed by most in the late monarchy and finished in the exile. ⚠ Its chronological notes, which cross-date each king of Judah against the reigning king of Israel and vice versa, are the backbone of Old Testament chronology and are famously hard to reconcile; the standard solution (Edwin Thiele's) invokes co-regencies and two different calendar systems, and is widely used and not universally accepted.",
+        place="Jerusalem and Samaria — the two capitals of a people who become two peoples in chapter 12. The book's horizon widens as it goes: Egypt, Tyre, Sheba, Aram-Damascus, and finally the Assyrian and Babylonian empires that end both kingdoms.",
+        audience="A people who have lost, or are losing, everything the book describes — a temple, a land, a dynasty. Kings is not an archive; it is an explanation, written for readers who need to know whether their God failed or their kings did. Its answer is unambiguous and unflattering, and it never once suggests that the disaster was undeserved or that the promise is finished.",
+        structure=[
+            ["1-2", "The succession — David's last days, Adonijah's failed coup, Solomon anointed, and the settling of accounts."],
+            ["3-10", "SOLOMON at his height — the dream at Gibeon and the request for a listening heart, the judgment of the two mothers, the building and dedication of the TEMPLE, the wealth, the queen of Sheba."],
+            ["11", "Solomon's decline — foreign wives, foreign gods, and the sentence: the kingdom will be torn away, but not in his lifetime, and not entirely."],
+            ["12-16", "THE DIVISION — Rehoboam's answer to the northern tribes, Jeroboam's golden calves at Bethel and Dan, and then two parallel lines of kings, each judged in turn, down to Omri and Ahab."],
+            ["17-19", "ELIJAH — the drought, the widow of Zarephath, the contest with the prophets of Baal on Carmel, and the still small voice at Horeb."],
+            ["20-22", "Ahab and Jezebel — the wars with Aram, NABOTH'S VINEYARD, and the prophet Micaiah before two kings; Ahab dies at Ramoth-gilead."],
+        ],
+        themes=[
+            "ONE GOD, ONE PLACE — the standard by which every reign is measured. The temple is built so that worship has a centre, and the sin the book returns to over and over is the 'high places' and the calves at Bethel and Dan.",
+            "THE WORD THAT COMES TRUE — prophecy is the book's engine: a word is spoken, and chapters or centuries later the narrator notes that it happened. Ahijah to Jeroboam, the man of God at Bethel who names Josiah three hundred years early, Elijah to Ahab over Naboth's vineyard.",
+            "THE PROMISE TO DAVID, AND ITS CONDITION — 'you shall not lack a man on the throne of Israel, IF your sons take heed to their way' (2:4). The book holds an unconditional promise and a conditional one together and never resolves the tension, which is exactly the problem the exile poses.",
+            "WISDOM AND ITS LIMITS — Solomon asks for a listening heart and is given more than he asked, and the same book records that he ended up building shrines for the gods of his wives. The wisest man in Israel is not saved by being wise.",
+            "PROPHET AGAINST KING — the Elijah cycle turns the book inside out: for three chapters the palace is a minor character and a man in a hair cloak is the plot. It is the pattern for everything the writing prophets will later do.",
+            "AND YET — the book's habit of leaving a door open: a lamp for David in Jerusalem, seven thousand who have not bowed to Baal, and a king lifted out of a Babylonian prison and given a seat at a table in the very last paragraph.",
+        ],
+        key_words=["kisse", "nagid", "mashiach", "chayil"],
+        key_people=["solomon", "david", "adonijah", "nathan-prophet"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). The narrative Hebrew of Kings is classical and clean — 1 Kings 1-2, the conclusion of the 'succession narrative' begun in 2 Samuel, is often called the finest prose in the Bible. ⚠ Two textual matters worth knowing: the Greek Septuagint of Kings differs from the Hebrew in ORDER as well as wording, and preserves a notably different account of Jeroboam; and the book carries an unusual number of ketiv/qere (written/read) notes, three of them in chapter 1 alone. The technical vocabulary of the temple chapters (6-7) contains a number of architectural terms whose meanings are reconstructed rather than known.",
+        christ="The throne of David is the thread. The promise that his house and kingdom would be established forever (2 Samuel 7:16) is quoted, invoked and tested all through Kings, and it survives the book's own ending — the dynasty is deported, not extinguished, and the last paragraph has a son of David eating at a king's table. The New Testament picks that thread up in its first sentence, 'Jesus Christ, son of David.' Solomon supplies both a type and a warning: Jesus speaks of himself as one 'greater than Solomon' (Matthew 12:42), and of the lilies outclassing Solomon in all his glory (Matthew 6:29). And Elijah, who arrives in this book without introduction, is the figure the New Testament reaches for constantly — the one Malachi promises will come before the day of Jehovah, whom Jesus identifies with John the Baptist, and who stands beside Moses on the mountain of transfiguration.",
+        debates="The CHRONOLOGY — the cross-dated regnal notices do not add up on a plain reading, and the standard reconciliation (co-regencies, differing new-year reckonings) is a construction, not a datum. The COMPOSITION — how many editions of the Deuteronomistic History there were, and whether the first was Josianic or exilic. The relationship to CHRONICLES, which tells much of the same story with different emphases and sometimes different facts. The historicity of SOLOMON's empire, where the biblical description of a wealthy imperial state and the archaeological record of tenth-century Jerusalem are hard to line up, and the dating of the monumental gates at Hazor, Megiddo and Gezer (1 Kings 9:15) is actively contested. And, within the text itself, the question this site's first chapter raises: whether the oath Bathsheba invokes was ever sworn. Laid out with pedigrees; the library does not cast a vote.",
     ),
 }

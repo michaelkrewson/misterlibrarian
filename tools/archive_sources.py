@@ -58,6 +58,8 @@ MECHON_BOOKS = {
     "07": ("Judges", 21),
     "08a": ("1 Samuel", 31),
     "08b": ("2 Samuel", 24),
+    "09a": ("1 Kings", 22),
+    "09b": ("2 Kings", 25),
     "11": ("Jeremiah", 52),
     "12": ("Ezekiel", 48),
     "24": ("Malachi", 3),
