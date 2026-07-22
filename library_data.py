@@ -847,6 +847,12 @@ DICTIONARY = [
      "A FREEWILL OFFERING — a gift given because the giver chose to, as distinct from anything owed or commanded; the root nadav means to volunteer. It runs through the return literature: the neighbours' contributions here (1:4, 6), the householders' gifts at the foundation, and — in the same idiom — the people who 'freely offered themselves' for the work.", ("Ezra", 1, 4)),
     ("cherpah", "cherpah", "חֶרְפָּה", "cherpah",
      "REPROACH, disgrace — public shame, the state of being an object of scorn; from charaf, to taunt or revile. It is the word Nehemiah's informants use of the community in Judah (Nehemiah 1:3) and the word he uses when he finally puts the case to the people: 'let us build the wall of Jerusalem, that we may no longer be a cherpah' (2:17). The problem the book sets out to solve is not primarily military but the humiliation of a people whose city lies open.", ("Nehemiah", 1, 3)),
+    ("dat", "dat", "דָּת", "dat",
+     "LAW, decree, edict — a PERSIAN loanword (data), and the key word of Esther, where it occurs about twenty times, more than in all the rest of the Bible together. ⚠ Watch its career across the book: its FIRST appearance is a courtesy about wine ('the drinking was according to the dat: no one compelling,' 1:8); by chapter 3 the same word carries an edict for the extermination of a people; and because a dat of the Medes and Persians cannot be revoked, chapter 8 can only answer it with another one. It is also the word behind 'the laws of the king' that Haman claims the Jews do not keep.", ("Esther", 1, 8)),
+    ("mishteh", "mishteh", "מִשְׁתֶּה", "mishteh",
+     "A BANQUET — literally a DRINKING, from shatah, to drink. It is the structural unit of Esther: the book contains ten of them, arranged in pairs, and everything decisive happens at one — the king's two feasts here, Vashti's, the wedding feast, Esther's two banquets for the king and Haman, and finally the feasting of Purim itself. A book that never mentions prayer or sacrifice organizes itself entirely around meals.", ("Esther", 1, 3)),
+    ("birah", "birah", "בִּירָה", "birah",
+     "A CITADEL, fortified complex — not a palace in the sense of a residence but the walled acropolis that housed the government. 'Shushan ha-birah,' Susa the citadel, is where Nehemiah is when he hears about Jerusalem (Nehemiah 1:1) and where the whole of Esther takes place. The distinction matters: these Judeans are not near the court, they are INSIDE the compound.", ("Esther", 1, 2)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2875,7 +2881,7 @@ ENCYCLOPEDIA = [
               "Excavated by French expeditions from the 1880s, it produced Darius's palace, the great columned "
               "apadana, and the glazed-brick reliefs of the royal guard now in the Louvre — as well as, remarkably, "
               "the stele of Hammurabi's laws, carried there as war booty from Babylon a thousand years earlier.",
-         refs=[("Nehemiah", 1, 1)], videos=[],
+         refs=[("Nehemiah", 1, 1), ("Esther", 1, 2)], videos=[],
          coords=(32.1897, 48.2578, 0.06),
          modern="Shush, Khuzestan province, Iran"),
     dict(slug="artaxerxes", name="Artaxerxes", kind="person", aliases=["Artaxerxes"],
@@ -2887,6 +2893,27 @@ ENCYCLOPEDIA = [
               "year (Ezra 7:7) belongs to Artaxerxes I in 458 BC or Artaxerxes II in 398 BC is the crux of the "
               "long argument over whether Ezra preceded Nehemiah or followed him.",
          refs=[("Nehemiah", 1, 11)], videos=[]),
+    dict(slug="ahasuerus", name="Ahasuerus (Xerxes)", kind="person", aliases=["Ahasuerus"],
+         desc="XERXES I, king of Persia 486-465 BC. The Hebrew Achashverosh is a careful transcription of Old "
+              "Persian Khshayarsha, which Greek rendered Xerxes; the identification is secure. He is the son of "
+              "Darius I and the father of Artaxerxes I, under whom Ezra and Nehemiah came up — so Esther falls "
+              "between Ezra 6 and Ezra 7. ⚠ His third year (Esther 1:3) is 483 BC, which Herodotus describes as the "
+              "period in which Xerxes gathered his nobles and provincial governors to plan the invasion of Greece; "
+              "the campaign sailed in 480 and ended at Salamis, and Esther becomes queen in his seventh year, 479, "
+              "just after his return. The book never mentions the war, and the gap between its first two chapters "
+              "is exactly the length of it. Herodotus also portrays him as impulsive, extravagant and easily "
+              "swayed by courtiers, which is recognizably the king of this chapter.",
+         refs=[("Esther", 1, 1), ("Esther", 1, 2)], videos=[]),
+    dict(slug="vashti", name="Vashti", kind="person", aliases=["Vashti"],
+         desc="Queen of Persia, who refuses to be displayed to her husband's guests and is deposed for it in the "
+              "first chapter of Esther — the vacancy that makes the rest of the book possible. ⚠ The text gives NO "
+              "reason for her refusal, and the silence is almost certainly deliberate; an ancient Jewish reading "
+              "(Talmud, Megillah 12b) supplies one by holding that she was summoned to appear wearing the royal "
+              "crown and nothing else. The book never criticizes her. She holds her own banquet for the women in "
+              "her own house, and she is the first person in the story to defy imperial power and pay for it — a "
+              "pattern the book will repeat with a queen who succeeds. She is not named in Persian records, where "
+              "Xerxes' queen is Amestris.",
+         refs=[("Esther", 1, 9), ("Esther", 1, 12)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3544,6 +3571,11 @@ XREFS = [
     ((("Nehemiah", 1, 4)), (("Ezra", 1, 2)), "'the God of the heavens' — the Persian-period official title, used by Cyrus in his decree and here by a Judean who works at that court"),
     ((("Nehemiah", 1, 9)), (("2 Chronicles", 1, 18)), "'the place I have chosen to make my name dwell' — the Deuteronomic formula: a building can house the NAME without housing God"),
     ((("Nehemiah", 1, 11)), (("Genesis", 40, 1)), "cupbearer to the king — the office that was the hinge of Joseph's story too, in the other empire"),
+    # ---- Esther 1 ----
+    ((("Esther", 1, 2)), (("Nehemiah", 1, 1)), "'Susa the citadel' — the same fortified palace complex, two Judeans and two generations apart"),
+    ((("Esther", 1, 7)), (("Ezra", 1, 7)), "gold vessels at a Persian king's drinking party, in a book that never mentions the temple whose vessels Ezra counted home"),
+    ((("Esther", 1, 8)), (("Esther", 1, 19)), "dat, the Persian word for law: first a courtesy about wine, then an edict that cannot be revoked — and by chapter 3, a genocide"),
+    ((("Esther", 1, 19)), (("Daniel", 1, 1)), "'the laws of Persia and Media, so that it cannot pass away' — the same convention that traps Darius in Daniel 6; unattested in Persian sources"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3868,6 +3900,9 @@ VERSE_OF_DAY = [
     ("Nehemiah", 1, 4, "“I sat down and wept and mourned for days.” The most practical book in the Bible opens with four months of doing nothing but pray."),
     ("Nehemiah", 1, 8, "“Remember, please, the word that you commanded Moses your servant.” Not a flourish — a man holding God to a document."),
     ("Nehemiah", 1, 11, "“Grant him mercy before this man.” The man is the king of Persia. Now I was cupbearer to the king."),
+    ("Esther", 1, 8, "“The drinking was according to the law: no one compelling.” The empire's law, on its first outing, is a rule about wine."),
+    ("Esther", 1, 12, "“But Vashti the queen refused to come.” The book gives no reason, and the whole story depends on it."),
+    ("Esther", 1, 22, "“That every man should be master in his own house.” The imperial post, in every script, carrying a drunk man's hangover."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4321,6 +4356,9 @@ CHRON_CHAPTERS = {
     "neh1": dict(era="return",
                  when="Susa, in the Persian winter palace — a Judean court official hears that Jerusalem still lies open and disgraced, and spends four months praying about it.",
                  clock="445 BC — Kislev of the twentieth year of Artaxerxes I. ⚠ A wrinkle: this is Kislev (Nov/Dec) of the twentieth year and 2:1 is Nisan (Mar/Apr) of the SAME twentieth year, though Nisan begins the Babylonian year — so Nehemiah is counting regnal years from an autumn new year or from the king's accession. Roughly a century after Cyrus's decree, and some ninety years after the second temple was finished."),
+    "est1": dict(era="return",
+                 when="Susa the citadel, in the third year of Xerxes — a hundred and eighty days of imperial display, and a queen who will not be exhibited.",
+                 clock="483 BC. ⚠ The same year Herodotus has Xerxes assembling his nobles and satraps to plan the invasion of GREECE; the campaign sails in 480 and is broken at Salamis, and Esther becomes queen in the seventh year (2:16), 479, just after the king comes home. The book never mentions the war — the gap between chapters 1 and 2 is exactly its length. Between the finishing of the second temple (516) and the missions of Ezra and Nehemiah under this king's son."),
 }
 
 CHRON_EVENTS = [
@@ -4480,6 +4518,9 @@ CHRON_EVENTS = [
     dict(era="return", am="—", trad="445 BC", event="Nehemiah hears of Jerusalem's broken wall in Susa; the following year he rebuilds it in fifty-two days",
          note="Nehemiah 1-6. The twentieth year of Artaxerxes I. An Aramaic papyrus from the Jewish garrison at Elephantine in Egypt, dated 407 BC, names both Sanballat's sons as authorities in Samaria and Johanan as high priest in Jerusalem — an independent fix on the same officials this book names.",
          ref=("Nehemiah", 1, 3)),
+    dict(era="return", am="—", trad="483 BC", event="Xerxes' great assembly at Susa — and, four years later, a Judean queen of Persia",
+         note="Esther 1-2. Herodotus places Xerxes' war council for the Greek campaign in this same period; the invasion sails in 480 and is broken at Salamis. Esther becomes queen in 479, the year after the king's return. The book never mentions Greece.",
+         ref=("Esther", 1, 3)),
     dict(era="intertestament", am="—", trad="167 BC", event="The abomination that desolates — Antiochus IV halts the daily offering; an altar to Zeus on the altar of burnt offering",
          note="1 Maccabees 1:54 dates it to 15 Kislev, 167 BC, quoting Daniel 11:31's own phrase. Whether Daniel foresees or records the day is the book's great dating question — both readings, at full strength, on the chapter page. The temple was rededicated three years later (Hanukkah, 164 BC).",
          ref=("Daniel", 11, 31)),
@@ -5887,5 +5928,41 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). The Hebrew is late — Persian loanwords (pardes 'park', pechah 'governor', iggeret 'letter'), Aramaic influence, and a fondness for technical administrative vocabulary. Unlike Ezra, Nehemiah contains no Aramaic sections; its documents are summarized rather than reproduced. The main textual questions are the relationship of the register in chapter 7 to the parallel in Ezra 2 (they differ in numerous numbers, in the usual way of lists), and the placement of chapter 8, which the Greek 1 Esdras attaches to the Ezra material instead — a hint that the two memoirs were combined by a later hand.",
         christ="Nehemiah is not a book of messianic prophecy and it does not pretend to be; its bequest is a shape. It is the last stretch of Old Testament narrative history, and it leaves the people inside a wall, under a signed covenant, with the law read aloud — and, in its final chapter, already sliding. The gap between the covenant of chapter 10 and the failures of chapter 13 is the argument for something the law by itself does not supply, which is where the prophets and the New Testament both push. Chapter 8's reading and explaining of Scripture to a standing congregation is the direct ancestor of the synagogue service Jesus stands up to read in at Nazareth (Luke 4:16-20). And Nehemiah's own posture — weeping over a ruined city, and then doing something about it at cost to himself — has been read alongside another figure who wept over the same city.",
         debates="The ORDER of Ezra and Nehemiah (458 vs 398 BC for Ezra's arrival), and which Artaxerxes each commission belongs to — the largest question, and unresolved. The placement of Nehemiah 8, which reads as though it belonged with Ezra's material and is placed there in 1 Esdras. The relationship of chapter 7's register to Ezra 2, and their divergent numbers. The extent of the original memoir and how much a compiler added. And the character of Nehemiah himself, on which readers have always differed sharply: the same chapters that show courage, personal generosity and genuine reform also show a man who curses opponents, pulls out hair, and keeps his own accounts before God. The book supplies the evidence for both readings and shows no sign of wanting to settle it.",
+    ),
+    "Esther": dict(
+        hebrew_name="אֶסְתֵּר",
+        hebrew_translit="Ester",
+        hebrew_meaning="'Esther' — probably from Persian stara or Median, 'star,' or from the goddess Ishtar; the heroine's Hebrew name is HADASSAH, 'myrtle' (2:7). The double name is the book's whole situation in miniature: a Judean woman with a Persian name who is told not to say which she is. Jewish tradition also hears in Ester the root satar, 'to hide' — 'I will surely HIDE my face' (Deuteronomy 31:18) — which is a pun the book has entirely earned.",
+        greek_name="Ἐσθήρ (Esther)",
+        greek_meaning="⚠ The Greek Esther is a substantially DIFFERENT book: it adds six long passages (the 'Additions to Esther') containing Mordecai's dream, the texts of both royal edicts, and — pointedly — prayers by Mordecai and Esther in which God is named repeatedly. Catholic and Orthodox Bibles include them; Protestant Bibles place them among the Apocrypha. The additions are the oldest surviving evidence that readers found the Hebrew book's silence about God uncomfortable.",
+        tagline="The only book in the Bible that never mentions God — a comedy of drunk officials and irrevocable decrees that turns, halfway through, into the story of a genocide narrowly averted by a woman who was told to hide who she was.",
+        genre="A HEBREW SHORT STORY of exceptional craft — closer to Ruth and the Joseph narrative than to anything else, and often classed as a historical novella or a diaspora tale. Its methods are literary rather than theological: irony, reversal, elaborate symmetry (ten banquets in pairs; the gallows built for one man used on another), farce that curdles into horror, and a plot in which every deliverance arrives through coincidence, insomnia and bad timing rather than through a miracle. It is also the festival scroll for PURIM, and it reads like something written to be performed aloud, which it still is.",
+        canon="One of the Five Megillot (Festival Scrolls) among the Writings, read at Purim. ⚠ Its place in the canon was more contested than any other book's: no fragment of Esther has been found at Qumran — the only book of the Hebrew Bible entirely absent there — the rabbis debated whether it 'defiles the hands' (their idiom for canonical status), and among Christians Melito's second-century list omits it, several Eastern fathers ignored it, and Luther said he wished it did not exist. It survived on the strength of the festival it explains.",
+        author="Anonymous, and evidently someone who knew the Persian court well: the book uses Persian administrative vocabulary correctly, names the palace features accurately, and describes procedures (the royal post, the harem, the king's records read aloud at night) that fit what is known independently. Whoever wrote it was writing about a court from the inside of its world, if not of its palace.",
+        date="Debated, commonly 4th-3rd century BC — after the Persian period it describes and before the Maccabean era, since the book shows no Greek influence and no awareness of the Hellenistic crisis. The narrative itself is set squarely in the reign of Xerxes I (486-465 BC).",
+        place="SUSA THE CITADEL, entirely — the fortified Persian palace complex, which is also where Nehemiah is when he hears about Jerusalem. Jerusalem itself is mentioned once, in a flashback, as the place Mordecai's ancestors were taken from. Nobody in this book goes home.",
+        audience="Jews living permanently outside the land, under a power that could not be resisted and generally could not be trusted — people for whom the questions were not about temple worship but about survival, assimilation, when to hide and when to speak. Esther is the Bible's most sustained treatment of what it is like to be a minority inside an empire, and it is notably unsentimental about it.",
+        structure=[
+            ["1", "Xerxes' banquets; Vashti's refusal and deposition; a decree that every man be master in his own house."],
+            ["2", "The search for a new queen; Mordecai and Hadassah/Esther, who does not reveal her people; and Mordecai's uncredited discovery of a plot against the king."],
+            ["3", "HAMAN promoted; Mordecai will not bow; and an edict, sealed with the king's ring and sent to every province, to destroy all the Jews on a day chosen by lot."],
+            ["4", "'Do not think you will escape in the king's house' — and 'if I perish, I perish.'"],
+            ["5-7", "THE REVERSAL — Esther's two banquets; the king's sleepless night and the reading of the records; Haman forced to honour the man he meant to hang; and the second banquet, at which she finally says who she is."],
+            ["8-9", "The counter-edict, since the first cannot be revoked; the fighting on the appointed day; and the institution of PURIM, named for the pur, the lot Haman cast."],
+            ["10", "Three verses on the greatness of Mordecai, in the style of the annals of the kings — the book's last joke."],
+        ],
+        themes=[
+            "THE HIDDEN HAND — God is never named, never prayed to, never invoked, and yet the book is built out of coincidences so precisely fitted (a sleepless night, a record read at the right page, a man arriving early with a request) that most readers have felt providence in the joinery. The book will not say so, and refuses to relieve the reader of the decision.",
+            "REVERSAL — the structural principle, stated at 9:1: 'it was turned to the contrary.' The gallows, the edict, the honour, the lot: every instrument of destruction ends up aimed the other way.",
+            "IDENTITY, CONCEALED AND DECLARED — Esther is told to hide her people and does; the whole crisis turns on Mordecai refusing to hide his; and the book's hinge is the moment she stops hiding hers.",
+            "'FOR SUCH A TIME AS THIS' — Mordecai's argument at 4:14 is the book's nearest approach to theology, and even it is careful: relief will arise 'from another place' if she is silent, which names a rescuer without naming him.",
+            "LAW AS A WEAPON AND A TRAP — dat, the Persian word for law, runs through the book from a rule about wine to an instrument of extermination that not even the king can cancel.",
+            "SURVIVAL WITHOUT A HOMELAND — no temple, no prophet, no return, no miracle; a people who must be shrewd, well-placed and brave, in a court where the wrong word is fatal. It is the Bible's most practical book about being a minority.",
+        ],
+        key_words=["dat", "mishteh", "birah", "kelim"],
+        key_people=["ahasuerus", "vashti", "susa", "jerusalem"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Esther's Hebrew is late and thick with PERSIAN loanwords — dat (law), pitgam (decree), partemim (nobles), genez (treasury), pur (lot) — which is one of the reasons it is dated where it is. The luxury vocabulary of chapter 1 includes several words found nowhere else in the Bible whose meanings are genuinely unknown (bahat, dar, socharet), and this translation flags them rather than choosing confidently. ⚠ The Greek tradition preserves not one but two divergent Greek versions, both longer than the Hebrew by six substantial Additions; those Additions are not translated here, but they are the earliest commentary on the Hebrew book's most famous feature.",
+        christ="Esther offers no prophecy and no messianic figure, and any Christian reading has to work from shape rather than text. What it supplies is a pattern the New Testament assumes everywhere: that God acts through events that look, from inside them, like accidents, and that deliverance can come through a person who chooses to identify with a threatened people at personal risk when they had the option of silence and safety ('do not think that in the king's house you will escape'). The book's insistence that the Jews were preserved as a people is also, structurally, the precondition of everything that follows; and the feast it institutes, Purim, is the one Jewish festival born entirely inside the diaspora.",
+        debates="The HISTORICITY, on which positions range widely: the book's Persian detail is impressively accurate, but Xerxes' queen is Amestris in Herodotus, no Persian source knows a Vashti or an Esther, and the numbers and decrees have the scale of storytelling. Many read it as a historical novella working with real materials. Then the ABSENCE OF GOD — deliberate artistry, diaspora realism, or (as the Greek Additions evidently felt) a deficiency to be repaired. The book's CANONICITY, uniquely contested and uniquely absent from Qumran. And chapter 9, where the Jews kill their attackers and Haman's ten sons are hanged — a passage read by some as self-defence recorded soberly and by others as troubling, and which the library prints without softening. No votes cast.",
     ),
 }
