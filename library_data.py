@@ -919,6 +919,12 @@ DICTIONARY = [
      "TO TEAR, rend — what a predator does to a carcass. The noun terefah is the torn animal that a shepherd had to account for (Genesis 31:39; Exodus 22:12) and that Israelites were forbidden to eat, and Jacob's own sons use the verb when they present the bloodied coat: 'a wild beast has TORN him' (Genesis 37:33). ⚠ Amos gives it to a temper: 'his anger TORE without ceasing' (1:11), the animal register of the book's opening roar handed to a man's grudge. Edom's rage is described as a beast eating.", ("Amos", 1, 11)),
     ("teruah", "teru'ah", "תְּרוּעָה", "teru'ah",
      "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire.", ("Amos", 1, 14)),
+    ("zadon", "zadon", "זָדוֹן", "zadon",
+     "INSOLENCE, presumptuous arrogance — not ordinary pride but the overreaching kind that thinks itself untouchable. From the root zid, 'to boil up, act presumptuously' — the same root behind the 'high-handed' (bezadon) deliberate sin that has no sacrifice (Numbers 15:30) and the 'proud/raging' waters that would have swept the psalmist away (Psalm 124:5). ⚠ It is Edom's one named sin in the FIRST half of Obadiah: 'the ZADON of your heart has deceived you' (1:3) — a security so complete, up in the rock, that it has curdled into contempt. Distinct from the ordinary word for pride (ga'avah); the shelf mostly levels it to 'pride' (KJV/NIV), but the word is sharper.", ("Obadiah", 1, 3)),
+    ("gemul", "gemul", "גְּמוּל", "gemul",
+     "A DEALING that comes back — a recompense, what one has done returning onto one's own head. From gamal, 'to deal out, requite' (also 'to wean, ripen' — to bring a thing to its completion). ⚠ It is the hinge of Obadiah: 'as you have done, it will be done to you; your GEMUL will return upon your own head' (1:15) — the boomerang of exact, measure-for-measure justice, the deed circling back to its doer. The same principle the Sermon on the Mount restates ('the measure you give will be the measure you get,' Matthew 7:2). KJV 'thy reward shall return'; NIV 'your deeds will return.'", ("Obadiah", 1, 15)),
+    ("moshia", "moshia (pl. moshi'im)", "מוֹשִׁיעַ", "moshia",
+     "A DELIVERER, rescuer, saviour — the active participle of yasha, 'to save,' the same root behind the names Joshua (Yehoshua) and Jesus (Yeshua) and the word Hosanna ('save now'). ⚠ It is the RESCUER-word of the book of Judges, where God raises up a moshia to deliver Israel from an oppressor (Judges 3:9, 15) — a temporary, Spirit-seized champion, not a king. Obadiah gives the shortest book in the Bible its last hope with it: 'and DELIVERERS will go up on Mount Zion to judge the mountain of Esau' (1:21) — plural, human, and answerable to the kingdom that 'belongs to Jehovah.'", ("Obadiah", 1, 21)),
     ("dat", "dat", "דָּת", "dat",
      "LAW, decree, edict — a PERSIAN loanword (data), and the key word of Esther, where it occurs about twenty times, more than in all the rest of the Bible together. ⚠ Watch its career across the book: its FIRST appearance is a courtesy about wine ('the drinking was according to the dat: no one compelling,' 1:8); by chapter 3 the same word carries an edict for the extermination of a people; and because a dat of the Medes and Persians cannot be revoked, chapter 8 can only answer it with another one. It is also the word behind 'the laws of the king' that Haman claims the Jews do not keep.", ("Esther", 1, 8)),
     ("mishteh", "mishteh", "מִשְׁתֶּה", "mishteh",
@@ -2042,7 +2048,7 @@ ENCYCLOPEDIA = [
               "enemies — Edom refuses Israel passage in the wilderness (Numbers 20), and the prophets return to it "
               "again and again (Obadiah is entirely an oracle against Edom; Jeremiah 49; Isaiah 34). Herod the Great "
               "was an Idumean — a Hellenized Edomite — so the brother-rivalry runs right up to the Gospels.",
-         refs=[(25, 30), (36, 1), (36, 8), ("Malachi", 1, 4), ("1 Chronicles", 1, 43)],
+         refs=[(25, 30), (36, 1), (36, 8), ("Amos", 1, 11), ("Obadiah", 1, 1), ("Obadiah", 1, 8), ("Malachi", 1, 4), ("1 Chronicles", 1, 43)],
          coords=(30.32, 35.44, 0.9), approx=True,
          modern="The highlands of southern Jordan (Seir), south-east of the Dead Sea"),
     dict(slug="amalek", name="Amalek", kind="people", aliases=["Amalek", "Amalekites", "Agagite"],
@@ -3174,7 +3180,7 @@ ENCYCLOPEDIA = [
               "Job's first and most confident friend, Eliphaz, is 'the TEMANITE', so the book of Job situates its "
               "conventional wisdom in Edomite country. Amos pairs it with Bozrah as the target of the fire (1:12), "
               "and Habakkuk 3:3 has God himself coming 'from Teman'.",
-         refs=[("Amos", 1, 12), (36, 11), (36, 15)], videos=[]),
+         refs=[("Amos", 1, 12), ("Obadiah", 1, 9), (36, 11), (36, 15)], videos=[]),
     dict(slug="bozrah", name="Bozrah", kind="place", aliases=["Bozrah"],
          desc="The chief city of northern EDOM, and the one the prophets name when they mean Edom's power: Amos "
               "burns its citadels (1:12), Jeremiah 49:13 makes it 'a desolation, a reproach, a waste', and Isaiah "
@@ -3224,6 +3230,54 @@ ENCYCLOPEDIA = [
          refs=[("Amos", 1, 2)],
          coords=(32.73, 35.05, 0.35), approx=True,
          modern="Mount Carmel, above Haifa, Israel", videos=[]),
+
+    # ---- Obadiah 1 ----
+    dict(slug="obadiah", name="Obadiah", kind="person", aliases=["Obadiah", "Abdias"],
+         desc="'Servant / worshipper of Jehovah' (Oved-Yah) — the author of the SHORTEST book in the Hebrew "
+              "Bible (21 verses, one chapter), and one of its most anonymous. ⚠ Nothing is known about him but "
+              "his name, which is a job description rather than a biography; there are about a dozen Obadiahs in "
+              "the Old Testament — including the God-fearing steward of Ahab's palace who hid a hundred prophets "
+              "from Jezebel in two caves (1 Kings 18:3-4) — and none can be securely matched to this one. His "
+              "whole book is a single oracle against EDOM for standing by while Jerusalem was sacked, and its "
+              "first nine verses run almost word for word alongside Jeremiah 49:7-22 (which prophet borrowed, or "
+              "whether both drew on a lost older oracle, is unsettled — the majority favour a common source). The "
+              "Vulgate and Douay spell the name Abdias.",
+         refs=[("Obadiah", 1, 1)], videos=[]),
+    dict(slug="sela", name="Sela (the rock)", kind="place", aliases=["Sela"],
+         desc="'The ROCK, the crag' — both a common Hebrew noun and the name of Edom's cliff-fortress capital. "
+              "Obadiah's taunt turns on the double sense: 'you who dwell in the clefts of the SELA' (1:3) means "
+              "at once 'in the crags' and 'in Sela.' Edom's heartland is the red-sandstone highlands south-east "
+              "of the Dead Sea — a country of gorges and rock-cut strongholds reached through narrow ravines, "
+              "which gave the nation its sense of being untouchable. ⚠ Sela is commonly pictured as PETRA, the "
+              "rose-red Nabatean city carved into this same stone, and travellers have read Obadiah with Petra in "
+              "front of them for centuries — but the Nabatean city is later; the Edomite Sela was probably an "
+              "earlier fortress-summit nearby (often identified with Umm el-Biyara, the flat-topped cliff above "
+              "the Petra basin, or with es-Sela further north). Amaziah of Judah captured a 'Sela' and renamed it "
+              "Joktheel (2 Kings 14:7). The geography is the point either way: a home where no army could follow.",
+         refs=[("Obadiah", 1, 3)],
+         coords=(30.33, 35.44, 0.30), approx=True,
+         modern="The rock highlands of Edom, southern Jordan (the Petra region / Umm el-Biyara)", videos=[]),
+    dict(slug="sepharad", name="Sepharad", kind="place", aliases=["Sepharad"],
+         desc="⚠ AN UNIDENTIFIED PLACE whose misidentification became the name of a people — which is why it has "
+              "no confident pin. Obadiah 1:20 says the exiles of Jerusalem are 'in Sepharad.' The best scholarly "
+              "guesses are SARDIS, the Lydian capital in western Asia Minor (a bilingual Aramaic inscription found "
+              "there names a place 'Sfrd'), or a Median district the Assyrians recorded as Saparda. ⚠ But the "
+              "Aramaic Targum, paraphrasing the verse centuries later, rendered Sepharad as SPAIN (Aspamia) — and "
+              "that single translator's guess stuck so hard that the Jews of Spain and their descendants have been "
+              "called SEPHARDI ever since, and are to this day, as against the ASHKENAZI Jews of the Rhineland "
+              "(Ashkenaz being another obscure biblical place-name, Genesis 10:3, reassigned to Germany the same "
+              "way). A guess about one unknown word became an ethnonym for half of world Jewry.",
+         refs=[("Obadiah", 1, 20)], videos=[]),
+    dict(slug="zarephath", name="Zarephath", kind="place", aliases=["Zarephath"],
+         desc="A small Phoenician harbour town on the Mediterranean coast between Tyre and Sidon — its name means "
+              "'smelting-place, refinery.' It is best known as the place Elijah was sent during the drought, to "
+              "lodge with a starving widow whose jar of flour and jug of oil did not run out, and whose son he "
+              "later raised (1 Kings 17:8-24); Jesus points to that episode at Luke 4:26. Obadiah 1:20 uses it as "
+              "a boundary marker — the returning exiles will hold the coast 'as far as Zarephath,' i.e. up into "
+              "old Phoenician territory. Called SAREPTA in the Greek and Latin.",
+         refs=[("Obadiah", 1, 20)],
+         coords=(33.27, 35.30, 0.20), approx=True,
+         modern="Sarafand, southern Lebanon coast, between Tyre and Sidon", videos=[]),
 
     dict(slug="vashti", name="Vashti", kind="person", aliases=["Vashti"],
          desc="Queen of Persia, who refuses to be displayed to her husband's guests and is deposed for it in the "
@@ -3282,6 +3336,13 @@ XREFS = [
     (("Amos", 1, 11), ("Genesis", 27, 41), "'he pursued his BROTHER with the sword' — Esau's grudge, still running a thousand years later"),
     (("Amos", 1, 12), ("Genesis", 36, 11), "Teman — Esau's grandson, and the Edomite district his clan named"),
     (("Amos", 1, 13), ("Genesis", 31, 21), "Gilead — the treaty-highlands, threshed by one neighbour and disembowelled by another"),
+    (("Obadiah", 1, 10), ("Genesis", 27, 41), "'the violence done to your BROTHER Jacob' — Esau's grudge, the frame of the whole book"),
+    (("Obadiah", 1, 10), ("Genesis", 6, 11), "chamas, VIOLENCE — the flood-word for society-wrecking cruelty, Edom's one named crime"),
+    (("Obadiah", 1, 1), ("Amos", 1, 11), "Amos condemned Edom in one oracle of eight; Obadiah is that oracle grown into a whole book"),
+    (("Obadiah", 1, 1), ("Jeremiah", 1, 1), "Obadiah 1-9 runs almost word for word with Jeremiah 49:7-22 — who quoted whom is unsettled"),
+    (("Obadiah", 1, 9), ("Amos", 1, 12), "Teman — the Edomite district Amos burned; here its warriors are shattered"),
+    (("Obadiah", 1, 15), ("Amos", 1, 13), "the day of Jehovah — Amos pointed it at Israel, Joel at Judah, Obadiah at all the nations"),
+    (("Obadiah", 1, 15), ("Joel", 1, 15), "the day of Jehovah, near — the doctrine Joel built, here aimed outward at the nations"),
     (("Hosea", 1, 1), ("Isaiah", 1, 1), "the identical four Judean kings — heading the book of a prophet who preached to the NORTH"),
     (("Hosea", 1, 4), ("1 Kings", 1, 1), "the blood of Jezreel — Jehu's coup (2 Kings 9-10), which 2 Kings 10:30 has God commend"),
     (("Hosea", 1, 6), ("Genesis", 43, 14), "Lo-Ruchamah — rachamim, mercy, is built on rechem, the WOMB: Not-Mother-Loved"),
@@ -4026,6 +4087,10 @@ VERSE_OF_DAY = [
     ("Amos", 1, 2, "“Jehovah roars from Zion.” The verb is a lion's roar over prey, given to God by a man who had heard the real thing on the edge of the wilderness."),
     ("Amos", 1, 3, "“For three revolts of Damascus, and for four, I will not turn it back.” Eight times this formula runs — and the eighth is aimed at the people nodding along."),
     ("Amos", 1, 13, "“Because they ripped open the pregnant women of Gilead, in order to enlarge their own border.” The only crime in the list that comes with a stated motive, and the motive is real estate."),
+    ("Obadiah", 1, 3, "“The insolence of your heart has deceived you, you who dwell in the clefts of the rock.” A nation so high up it thought no one could reach it — the tallest boast in the shortest book."),
+    ("Obadiah", 1, 11, "“On the day you stood aside… you too were like one of them.” Edom's crime is not that it sacked Jerusalem, but that it watched — and by watching, joined in."),
+    ("Obadiah", 1, 15, "“As you have done, it will be done to you; your dealing will return upon your own head.” The whole book in one line: the deed circling back onto the head that did it."),
+    ("Obadiah", 1, 21, "“And the kingdom will belong to Jehovah.” The last word of the smallest book — a war-summons among the nations that ends by handing the whole map back to its owner."),
     ("Hosea", 1, 2, "“Go, take yourself a wife of promiscuity.” The most disputed sentence in the prophets — and the text shows no discomfort with it and offers no explanation."),
     ("Hosea", 1, 4, "“Call his name Jezreel.” A child named after a massacre — and after a verb that means TO SOW, which the next chapter turns into a promise."),
     ("Hosea", 1, 6, "“Call her name Lo-Ruchamah — Not-Pitied.” Hebrew's word for mercy is built on the word for a womb. The name is worse in Hebrew than in English."),
@@ -4755,6 +4820,9 @@ CHRON_CHAPTERS = {
     "amos1": dict(era="monarchy",
                   when="Five foreign nations sentenced in turn — Damascus, Gaza, Tyre, Edom, Ammon — by a Judean sheep-breeder standing in the northern kingdom at the height of its prosperity.",
                   clock="≈760 BC, and this is one of the most precisely dated books in the Bible: Uzziah is on the throne in Judah, Jeroboam II in Israel, and Amos adds a second fix nobody else uses — 'two years before THE earthquake', with the definite article, because his readers could count from it. Zechariah 14:5 was still measuring by that earthquake two and a half centuries later, and mid-eighth-century destruction layers at Hazor, Lachish, Gezer and in the City of David are commonly identified with it. Amos is, on most reckonings, the EARLIEST of the writing prophets — about thirty years before Samaria falls."),
+    "obad1": dict(era="exile",
+                  when="The whole book: a single oracle against EDOM for standing by — and cheering — while Babylon sacked Jerusalem, and a closing promise that Zion's exiles will return and 'the kingdom will belong to Jehovah.'",
+                  clock="⚠ DISPUTED, but the internal evidence points hard at just after 586 BC. Verses 11-14 describe Edom standing aside while foreigners entered Jerusalem's gates and cast lots over the city — which reads like an eyewitness of the Babylonian sack, and matches the bitter memory of Psalm 137:7 and Lamentations 4:21-22. A minority dates the book far earlier, to a 9th-century raid under Jehoram (2 Kings 8:20-22; 2 Chronicles 21:16-17). The shared material with Jeremiah 49 (Jeremiah preached through the fall of Jerusalem) fits the exilic setting. Filed here just after the fall."),
     "hos1": dict(era="monarchy",
                  when="A prophet in the northern kingdom is told to marry a promiscuous woman and to name their three children after the sentence on his own country: a massacre, an unpitied daughter, and a people God will not call his.",
                  clock="Begun under JEROBOAM II of Israel (d. c. 747 BC), at the height of northern prosperity, and running through the collapse that followed — four of the next six kings assassinated — toward Samaria's fall in 722. ⚠ The heading dates the book by four kings of JUDAH (Uzziah, Jotham, Ahaz, Hezekiah), the same span as Isaiah 1:1, which is almost certainly the work of the Judean editors who preserved a northern prophet's book after the north was destroyed. ⚠ This chapter has NINE verses in the Hebrew; English Bibles print 1:10-11, which the Masoretic text numbers 2:1-2."),
@@ -4932,6 +5000,9 @@ CHRON_EVENTS = [
     dict(era="exile", am="—", trad="586 BC", event="Jerusalem burned — the First Temple destroyed, the walls broken down, the city emptied",
          note="Nebuzaradan, Nebuchadnezzar's officer, burns the house of Jehovah, the king's house and every large house, and the Babylonian army pulls down the walls (2 Kings 25:8-10). Lamentations is the poetry written over it — five poems, four of them alphabetical, read every year on the ninth of Av. Babylon is not mentioned once in them.",
          ref=("Lamentations", 1, 1)),
+    dict(era="exile", am="—", trad="c. 586 BC", event="Obadiah — the shortest book in the Bible — condemns EDOM for standing by, and looting, at Jerusalem's fall",
+         note="⚠ Dated by the crime it describes: verses 11-14 have Edom watching foreigners enter Jerusalem's gates and cast lots over the city, then joining the plunder and cutting off the fugitives. The same bitter memory is in Psalm 137:7 ('remember, Jehovah, against the sons of Edom the day of Jerusalem') and Lamentations 4:21-22. Its first nine verses run almost word for word with Jeremiah 49:7-22. A minority dates it to a 9th-century raid instead; the internal evidence points hard at just after 586.",
+         ref=("Obadiah", 1, 11)),
     dict(era="return", am="—", trad="538 BC", event="Cyrus of Persia allows the exiles to return; the first company goes home to a ruined Jerusalem",
          note="The Cyrus Cylinder records the Persian policy of restoring deported peoples and their sanctuaries — the imperial background to Ezra 1. Daniel 1:21 closes on the same year, 'the first year of King Cyrus.'",
          ref=("Daniel", 1, 21)),
@@ -6419,6 +6490,38 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Amos's Hebrew is direct, concrete and mostly clear — the difficulties are lexical rather than syntactic: rare words like NOQED (1:1) and BOLES (7:14), a handful of agricultural and architectural terms, and the perennial question of what the unattached pronoun in 'I will not turn IT back' refers to. Where a word is uncertain this translation says so; where the versions differ sharply (Edom's 'compassions' at 1:11, 'their king' or the god Milcom at 1:15) both readings are given with their pedigrees and neither is adopted by fiat.",
         christ="Amos reaches the New Testament twice by direct quotation, and both times through the GREEK rather than the Hebrew. ⚠ At the Jerusalem council, James settles the question of Gentile converts by quoting Amos 9:11-12 in a form that reads 'that the rest of mankind may seek the Lord' — where the Hebrew reads 'that they may possess the remnant of Edom' (Acts 15:16-17). And Stephen, in the speech that gets him killed, quotes Amos 5:25-27 with its Septuagint 'Rephan' (Acts 7:42-43). Beyond quotation, the book's insistence that worship without justice is offensive to God runs straight into the Gospels' quarrel about tithing mint and cumin while neglecting 'the weightier matters of the law: justice, mercy and faith' (Matthew 23:23). 'Let justice roll down like waters' was quoted by Martin Luther King Jr. on the steps of the Lincoln Memorial and is carved on his memorial in Washington.",
         debates="WHETHER THE SHORT ORACLES ARE ORIGINAL — Tyre, Edom and Judah lack the closing formula and the expansion the others have, and many critics read them as later additions; others read the variation as pacing. WHETHER 9:11-15 IS BY AMOS — the book's one unqualified promise, in a book otherwise without consolation, and the passage that mentions the fallen booth of DAVID, a southern dynasty; defenders point out that a prophet may end differently from how he began. WHETHER AMOS REJECTS SACRIFICE ITSELF or only sacrifice offered by the people described in chapters 2-6. WHAT AMOS WAS — a man of property or a hired hand, which turns on one rare word. And the perennial question of how a book so hostile to the northern kingdom's sanctuary came to be preserved by anyone at all.",
+    ),
+    "Obadiah": dict(
+        hebrew_name="עֹבַדְיָה",
+        hebrew_translit="Ovadyah",
+        hebrew_meaning="'Servant / worshipper of Jehovah' — oved (servant) + Yah (the divine name). ⚠ It is a job description, not a biography: about a dozen men in the Hebrew Bible bear it, and this one cannot be securely matched to any of them. The name is literally the only thing the book tells us about its author.",
+        greek_name="Ἀβδιού (Abdiou)",
+        greek_meaning="The Septuagint places Obadiah fifth among the Twelve rather than fourth. The Vulgate and the Douay-Rheims call the book ABDIAS, the Greek/Latin form of the name — which is why older Catholic Bibles list a book by that name where Protestant ones have Obadiah.",
+        tagline="The shortest book in the Old Testament — twenty-one verses, one chapter — and every word of it is aimed at one target: Edom, the nation descended from Esau, condemned for standing by (and cheering, and looting) while Babylon sacked Jerusalem. It ends by handing the whole contested map back to its owner: 'the kingdom will belong to Jehovah.'",
+        genre="PROPHETIC ORACLE against a foreign nation, in poetry — the single most concentrated example of a form every prophet uses. ⚠ It has no call narrative, no biography, no dateline and no second subject: it is pure oracle, front to back. Its first nine verses run almost word for word alongside Jeremiah 49:7-22, the largest sustained parallel between two prophetic books in the Bible.",
+        canon="FOURTH of THE TWELVE in the Hebrew order (after Amos, before Jonah), which the Hebrew canon counts as a single book. The shortest book in the Hebrew Bible at 21 verses — shorter than several single Psalms. Being one chapter, it is cited simply by verse ('Obadiah 15'), and this site prints it as one unbroken unit, since the scroll gives it no paragraph breaks until the closing mark at verse 21.",
+        author="OBADIAH, about whom nothing is known but the name. His concern is entirely with EDOM and with Jerusalem's fall, which he seems to have witnessed or heard of at close range (verses 11-14 read like an eyewitness). Whether he was a temple prophet, a refugee, or something else, the book does not say — it is the most self-effacing of all the prophetic books.",
+        date="⚠ DISPUTED, but the weight of the internal evidence falls just after 586 BC. Verses 11-14 describe Edom standing aside on 'the day' foreigners entered Jerusalem's gates, cast lots over the city, and carried off its wealth — which matches the Babylonian destruction of 586 and the bitter memory preserved in Psalm 137:7 ('remember, Jehovah, against the sons of Edom the day of Jerusalem, who said, Strip it, strip it') and Lamentations 4:21-22. The parallel with Jeremiah 49 fits the same window. A MINORITY reads the book far earlier, in the ninth century, tying it to the revolt of Edom under Jehoram and a Philistine-Arab raid on Jerusalem (2 Kings 8:20-22; 2 Chronicles 21:16-17). This site leads with 586 and records the older view.",
+        place="EDOM — the red-sandstone highlands south-east of the Dead Sea, a country of gorges and rock-cut strongholds (the later Nabateans carved Petra into the same stone) — is the target throughout; JERUSALEM and MOUNT ZION are the wronged party and, at the end, the restored centre. The two are held together by one fact the book never lets go of: Edom is Esau and Judah is Jacob, so this is a family crime.",
+        audience="Judah in the aftermath of catastrophe — a people who had just watched their city burn and their neighbour-kinsman gloat and loot. To them the book offers two things: a naming of Edom's guilt, and a promise that the deed will return on the doer's head and that Zion will be restored. It is, among other things, a book about what to do with the memory of a betrayal.",
+        structure=[
+            ["1-9", "EDOM BROUGHT DOWN — the war-summons already going out; the pride of the rock-dweller who thinks no one can reach him; the eagle's nest among the stars pulled down; a plundering more thorough than any thief's; betrayal by his own allies; and the destruction of Edom's proverbial wisdom. (This is the section shared with Jeremiah 49.)"],
+            ["10-14", "THE CHARGE — 'for the violence done to your brother Jacob.' Eight commands not to have done what Edom did on 'the day' Jerusalem fell: not to gloat, not to enter the gate, not to loot, not to cut off the fugitives. The word 'day' beats ten times."],
+            ["15-16", "THE DAY OF JEHOVAH — near against all the nations; measure for measure ('as you have done, it will be done to you'); and the cup — Edom drank at Jerusalem's fall, and now the nations will drink the cup of wrath and 'be as though they had never been.'"],
+            ["17-21", "ZION RESTORED — a remnant of escapees on the holy mountain; the house of Jacob a fire and the house of Esau stubble; the exiles returning to the old borders, as far as Zarephath and out of Sepharad; and deliverers going up on Zion, 'and the kingdom will belong to Jehovah.'"],
+        ],
+        themes=[
+            "THE BROTHER WHO STOOD BY — Edom is Esau, Judah is Jacob, and the twins of Genesis are the frame the whole book hangs on. Edom's crime is not that it attacked (foreigners did that) but that it WATCHED, and by watching joined in (v11). The special horror of the book is the passivity: an accessory's guilt, told as if it were the murderer's.",
+            "MEASURE FOR MEASURE — 'as you have done, it will be done to you; your dealing will return upon your own head' (v15). The book's engine is exact recompense: the fugitive-hunter loses his own survivors, the gloater drinks the cup, the man who ransacked is ransacked. It is the clearest statement of lex talionis as a principle of HISTORY, not just of law.",
+            "PRIDE IN THE ROCK — Edom's sin in the first half is a state of mind: a security so complete, up in the crags, that it curdled into contempt ('who will bring me down?'). The reply is the tallest image in the prophets — 'though you set your nest among the stars' — and its collapse.",
+            "THE DAY OF JEHOVAH, AIMED AT THE NATIONS — Amos turned the phrase against Israel, Joel made it a doctrine aimed at Judah, and Obadiah aims it outward: 'near against ALL the nations,' with Edom only the first. The three prophets stand in a line, the same phrase pointed three different directions.",
+            "THE KINGDOM IS JEHOVAH'S — the last three words are the destination the whole prophetic hope is tuned to. A book that opens with a war-summons among the nations closes by dissolving the whole quarrel into a single sovereignty. It is the note Revelation will end on.",
+        ],
+        key_words=["zadon", "chamas", "gemul", "yom-yhwh", "moshia"],
+        key_people=["obadiah", "edom", "esau", "teman", "sela", "zion", "jerusalem"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Obadiah's Hebrew is mostly clear and forceful; the two hardest places are the abrupt closing clause of verse 7 ('there is no understanding in him' — its grammar and referent are much discussed) and the two obscure place-names of verse 20, Zarephath and especially SEPHARAD, which no one can securely locate. The large overlap with Jeremiah 49:7-22 is shown as a parallel, not resolved: this site prints the Masoretic Obadiah and notes the shared material without deciding who quoted whom.",
+        christ="Obadiah reaches the New Testament by its atmosphere more than by direct quotation. ⚠ Its target, EDOM, has a strange afterlife: pushed out of Seir by the Nabateans, the Edomites drifted into southern Judah — which became 'Idumea' — and were forcibly converted to Judaism by John Hyrcanus around 125 BC, after which HEROD THE GREAT, an Idumean, ruled Jacob's land at the birth of Jesus (Matthew 2). So the last Edomite in Scripture is the king who tries to kill the infant Christ, and 'no survivor for the house of Esau' (v18) comes true in the strangest way — by absorption into the very people Esau had wronged. The book's images run on into the New Testament: the CUP of the nations (v16) into Gethsemane and Revelation; 'as you have done, it will be done to you' (v15) into the Sermon on the Mount's 'the measure you give will be the measure you get'; and the final 'the kingdom will belong to Jehovah' into Revelation 11:15, 'the kingdom of the world has become the kingdom of our Lord.'",
+        debates="THE DATE — 586 BC (the majority, from the eyewitness quality of vv11-14) versus a 9th-century raid (the minority). THE RELATIONSHIP TO JEREMIAH 49 — did Jeremiah borrow Obadiah, Obadiah borrow Jeremiah, or both draw on a lost older oracle (the majority view today)? WHETHER THE BOOK IS A UNITY — some divide it into an earlier oracle against Edom (vv1-14) and a later, broader 'day of Jehovah / restoration' section (vv15-21). And the perennial small mysteries of verse 20: where on earth is SEPHARAD, and how did a translator's guess about it become the name of Spanish Jewry?",
     ),
     "Hosea": dict(
         hebrew_name="הוֹשֵׁעַ",
