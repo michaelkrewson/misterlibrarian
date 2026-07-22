@@ -61,6 +61,7 @@ MECHON_BOOKS = {
     "11": ("Jeremiah", 52),
     "12": ("Ezekiel", 48),
     "24": ("Malachi", 3),
+    "27": ("Job", 42),
     "28": ("Proverbs", 31),
     "29": ("Ruth", 4),
     "34": ("Daniel", 12),

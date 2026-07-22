@@ -813,6 +813,12 @@ DICTIONARY = [
      "GLORY — and literally WEIGHT. Built on kaved, 'heavy' (the same root behind 'honor,' which is treating a person as weighty, and behind Pharaoh's HEAVY heart). God's glory is his weight, his sheer mattering. In Ezekiel the kavod is not an abstraction but a character in the plot: seen first in exile by the Chebar canal (1:28), watched LEAVING the temple in chapters 10-11, and watched returning in chapter 43.", ("Ezekiel", 1, 28)),
     ("merkavah", "merkavah", "מֶרְכָּבָה", "merkavah",
      "CHARIOT — the name readers gave Ezekiel 1, though the word never appears in the chapter. Ma'aseh Merkavah, 'the Work of the Chariot,' is the oldest strand of Jewish mysticism, and the Mishnah restricts it as it restricts nothing else: it may not be expounded even to a single student unless he is wise and understands of his own knowledge (Hagigah 2:1).", ("Ezekiel", 1, 15)),
+    ("chinnam", "chinnam", "חִנָּם", "chinnam",
+     "FOR NOTHING — gratis, without payment, for no return; from chen, 'favor,' so: as a free gift. It carries the hinge of two books. In Malachi 1:10 the priests will not kindle the altar chinnam (on one reading, 'for free, unpaid' — the KJV and Geneva take it that way; ASV and NIV read 'in vain'). In Job 1:9 the Accuser asks the question the whole book exists to answer: 'Is it for nothing (ha-chinnam) that Job fears God?' — is disinterested devotion possible, or is piety only ever a paid arrangement?", ("Job", 1, 9)),
+    ("satan", "satan / ha-satan", "שָׂטָן / הַשָּׂטָן", "satan / ha-satan",
+     "ACCUSER, adversary — one who opposes, obstructs, or brings a charge. ⚠ In Job it always appears as HA-satan, WITH THE DEFINITE ARTICLE (all fourteen times), and Hebrew does not put 'the' in front of a proper name: it is an office, not yet a name. The same titled figure prosecutes the high priest in Zechariah 3:1-2, and in Numbers 22:22 the angel of Jehovah himself stands in the road 'as a satan' against Balaam — the plainest proof that the word is a role. The one occurrence without the article, and so possibly a name, is 1 Chronicles 21:1 — the latest of the texts, retelling a story in which 2 Samuel 24 has JEHOVAH incite David. The word's growth into a name is visible inside the Bible.", ("Job", 1, 6)),
+    ("tiflah", "tiflah", "תִּפְלָה", "tiflah",
+     "Something UNSAVORY — from a root meaning tasteless, unseasoned (Job 6:6 asks whether what is taphel can be eaten without salt). Job 1:22 says he 'laid no tiflah to God's charge': the accusation he refuses to bring is not quite blasphemy but insipidity — that there is nothing in God. KJV 'nor charged God foolishly'; NIV 'did not charge God with wrongdoing.'", ("Job", 1, 22)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2665,6 +2671,27 @@ ENCYCLOPEDIA = [
          refs=[("Ezekiel", 1, 1), ("Ezekiel", 1, 3)], videos=[],
          coords=(32.13, 45.19, 1.2), approx=True,
          modern="Southern Iraq — the canal system around Nippur (Nuffar), south-east of Babylon"),
+    dict(slug="job-person", name="Job", kind="person", aliases=["Job"],
+         desc="The hero of the book that bears his name — a man of the land of Uz, outside Israel and outside the "
+              "covenant, 'blameless and upright, fearing God and turning away from evil,' and the wealthiest of the "
+              "sons of the east. He loses ten children, his livestock and his health in two chapters, and spends "
+              "thirty-nine more refusing both to curse God and to accept his friends' explanation of why it "
+              "happened. Ezekiel names him with Noah and Daniel as a byword for righteousness (Ezekiel 14:14, 20), "
+              "and James cites his endurance (James 5:11). Nothing outside the book is known of him; whether he is "
+              "remembered history or a figure made for the argument has been debated since antiquity, and the "
+              "Talmud preserves the opinion that 'Job never existed and was a parable' (Bava Batra 15a) alongside "
+              "those who insisted he did.",
+         refs=[("Job", 1, 1)], videos=[]),
+    dict(slug="uz", name="the land of Uz", kind="place", aliases=["Uz"],
+         desc="Job's homeland, and genuinely unlocated. Two families of evidence pull in different directions: "
+              "Lamentations 4:21 addresses 'daughter of Edom, dwelling in the land of Uz' and Job's friend Eliphaz "
+              "is a Temanite (Teman is in Edom), which points SOUTH-EAST of the Dead Sea; but Uz is also a name in "
+              "the Aramean line of Genesis 10:23 and 22:21, which points NORTH-EAST toward Syria. The Greek "
+              "translation adds a note placing Job 'on the borders of Idumea and Arabia.' The book itself gives no "
+              "coordinates and does not care: its point is a man outside Israel, in no particular place, so that "
+              "the question can be asked without a national answer. ⚠ No pin is offered on the atlas, on the same "
+              "principle as Eden — a guessed location is worse than an admitted blank.",
+         refs=[("Job", 1, 1)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3283,6 +3310,12 @@ XREFS = [
     ((("Ezekiel", 1, 28)), (9, 13), "the bow in the cloud — the war-bow God hung up as a promise not to destroy, now the light around the throne"),
     ((("Ezekiel", 1, 28)), (("Malachi", 1, 6)), "kavod, glory, is literally WEIGHT — the root behind Malachi's 'where is my honor?', arriving in person"),
     ((("Ezekiel", 1, 10)), (("Revelation", 4, 7)), "the four faces — human, lion, ox, eagle — reappear around the throne in Revelation, one face each"),
+    # ---- Job 1 ----
+    ((("Job", 1, 1)), (6, 9), "tam — 'blameless': the word means WHOLE, of a piece, not sinless; the same word used of Noah"),
+    ((("Job", 1, 6)), (6, 2), "'the sons of God' — the divine council; the reader last met the phrase in the strangest passage in Genesis"),
+    ((("Job", 1, 9)), (("Malachi", 1, 10)), "chinnam, 'for nothing' — Malachi's priests would not serve unpaid; the Accuser asks whether anyone ever does"),
+    ((("Job", 1, 21)), (("Job", 1, 11)), "berakh — the Accuser swore Job would 'bless' God meaning curse; Job says the word and means it straight"),
+    ((("Job", 1, 22)), (("Job", 1, 20)), "'Job did not sin' — it does not say he was patient; the poetry from chapter 3 on is anything but"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3586,6 +3619,9 @@ VERSE_OF_DAY = [
     ("Ezekiel", 1, 1, "“The heavens were opened, and I saw visions of God.” Said by a deported priest sitting beside an irrigation canal in Iraq."),
     ("Ezekiel", 1, 26, "“A likeness like the appearance of a human upon it.” The most carefully hedged sentence in the Old Testament."),
     ("Ezekiel", 1, 28, "“Like the appearance of the bow that is in the cloud on a day of rain.” The light around the throne is the weapon God hung up."),
+    ("Job", 1, 9, "“Is it for nothing that Job fears God?” The question the whole book exists to answer — is devotion possible unpaid?"),
+    ("Job", 1, 21, "“Jehovah gave and Jehovah has taken; may the name of Jehovah be blessed.” The same verb the Accuser used for cursing."),
+    ("Job", 1, 22, "“In all this Job did not sin.” Note what it does not say: that he was patient, or serene, or unshaken."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4018,6 +4054,9 @@ CHRON_CHAPTERS = {
     "ezek1": dict(era="exile",
                   when="By the Chebar canal in Babylonia, five years into the exile of King Jehoiachin — the chariot vision, and the call of a priest who will never serve at an altar.",
                   clock="593 BC, and the book says so to the day: 'the fifth of the fourth month, the fifth year of the exile of King Jehoiachin' (597 BC + 5). ⚠ Verse 1's OWN date — 'the thirtieth year' — is counted from something the book never names; the readings (Ezekiel's age at 30, Josiah's reform in 622, a Babylonian era) are set out in the notes."),
+    "job1": dict(era="patriarchs",
+                 when="Nowhere and no-when in particular — the land of Uz, in a household run like a patriarch's: wealth counted in livestock, the father offering his own sacrifices, no priest, no temple, no Israel.",
+                 clock="⚠ The book gives no date and names no king. Its SETTING is drawn in patriarchal colors (Job's lifespan of 140 further years in 42:16, the qesitah coin of 42:11, sacrifice offered by the head of the family), which is why it is placed here; but the DATE OF COMPOSITION is a separate and open question, with proposals running from Solomon's court to the period after the exile. Setting and writing need not be the same century, and in this book almost certainly are not."),
 }
 
 CHRON_EVENTS = [
@@ -5324,5 +5363,43 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Ezekiel's Hebrew is famously difficult: heavily Aramaic-influenced, with a large vocabulary of rare and unique words (chashmal, bazaq, and the technical architectural terms of chapters 40-48 among them), and grammar that in the vision passages goes genuinely unstable — genders and numbers slipping inside single verses, as they do all through chapter 1. Translations quietly regularize this; the notes flag it where it falls. The Greek Septuagint is several percent shorter than the Hebrew and occasionally clearly better, and the Masoretes left an unusual number of ketiv/qere (written/read) notes in this book. This translation follows the Masoretic Hebrew and reports the significant divergences.",
         christ="Ezekiel supplies the New Testament with some of its largest furniture. 'SON OF MAN,' God's address to the prophet here, is the title Jesus uses of himself more than any other (though its apocalyptic weight comes from Daniel 7). The chariot vision's four living creatures reappear around the throne in Revelation 4, its measuring-reed and river of life in Revelation 21-22, and Gog and Magog in Revelation 20. The indictment of Israel's SHEPHERDS in chapter 34, and God's answer — 'I myself will search for my sheep… I will set up over them one shepherd' — stands directly behind John 10, 'I am the good shepherd.' And the promise of a new heart and a new spirit (36:26), acted out in the valley of dry bones, is the Old Testament's clearest statement of the thing Jesus tells Nicodemus must happen to a person (John 3).",
         debates="The UNITY of the book (how much of the temple vision and the nations-oracles is the prophet's own hand), and its two EDITIONS (the shorter Greek against the longer Hebrew). Then the prophet himself: the extremity of his symbolic acts and visionary states has attracted every kind of psychological explanation, from ecstatic trance to catalepsy to schizophrenia — a discussion that says at least as much about its own eras as about him, and that the ancient world would not have recognized as a question. Also debated: whether he prophesied partly in Palestine (a minority view, generated by how vividly he describes Jerusalem from five hundred miles away), the identity of Gog of Magog, and above all what to make of the TEMPLE of chapters 40-48 — a literal building to be built, an idealized symbol, or a vision of the age to come; it has never been built, and its laws do not match the Torah's, which is the fact that nearly cost the book its place in the canon.",
+    ),
+    "Job": dict(
+        hebrew_name="אִיּוֹב",
+        hebrew_translit="Iyyov",
+        hebrew_meaning="'Job' — the name's meaning is uncertain and may be deliberately apt: it can be read from a root meaning 'to be hostile' (so 'the assailed one,' or 'enemy'), or as an old Semitic name meaning 'where is my father?' The name is attested outside the Bible in Egyptian and Amarna-period texts as an ordinary personal name, centuries before the book.",
+        greek_name="Ἰώβ (Iob)",
+        greek_meaning="⚠ The Greek Septuagint of Job is about ONE-SIXTH SHORTER than the Hebrew — some four hundred lines missing, mostly from the speeches — and it softens Job considerably. It also appends a note identifying him with a king of Edom and naming his friends' kingdoms. Whether the Greek translator abbreviated a difficult text or worked from a shorter Hebrew one is a live question.",
+        tagline="The book that refuses to comfort you — a blameless man is ruined on a wager he never learns about, argues with God for thirty-nine chapters, and is answered out of a whirlwind with a speech that never mentions his suffering.",
+        genre="WISDOM literature, and the Bible's most ambitious piece of writing. The shape is deliberate: a PROSE folktale frame (chs 1-2 and 42:7-17) wrapped around a vast POEM (3:1-42:6) — three cycles of speeches between Job and three friends, a fourth speaker who arrives unannounced, and God's answer from the whirlwind. The Hebrew of the poem is the hardest in the Bible, with more words occurring only once here than in any other book.",
+        canon="Among the WRITINGS (Ketuvim) in the Hebrew Bible; in the Christian Old Testament it heads the poetic books, before Psalms and Proverbs. Its canonicity was never seriously in doubt, though what to make of it has been argued from the beginning — the Talmud preserves the striking opinion that 'Job never existed and was a parable' (Bava Batra 15a) beside rabbis who dated him anywhere from Abraham to the return from exile.",
+        author="Unknown, and unusually so — the book names no prophet, no king, no setting in Israel's history to attach itself to. Talmudic tradition credits Moses (Bava Batra 14b), which no one now defends; the sophistication of the poetry, the Aramaic colouring, and the international wisdom setting have suggested authors from Solomon's court to the post-exilic period. The prose frame and the poem differ in language and in the portrait of Job, which has long raised the question of whether an older folktale was taken up by a later poet — arguable either way, and the book as it stands is a single deliberate design.",
+        date="Genuinely open, with proposals spanning nearly a thousand years. The SETTING is patriarchal (wealth in livestock, the father sacrificing without priest or temple, a lifespan of 140 further years, the archaic qesitah coin of 42:11, no mention of Israel, the law, the covenant, or Jerusalem). The COMPOSITION is another matter: the Aramaic-tinged vocabulary, the developed figure of the Accuser, and the theological question itself have most scholars placing the book somewhere between the 7th and 4th centuries BC, often after the exile — when the collapse of a nation had made 'why do the innocent suffer?' unavoidable. Setting and writing are two questions, and this book keeps them apart.",
+        place="The land of Uz — unlocated, and outside Israel. Job is not an Israelite; neither are his friends. This is the one book of the Hebrew Bible whose hero stands wholly outside the covenant, which is precisely what lets it ask its question without the covenant supplying the answer.",
+        audience="Anyone who has been told that suffering is deserved. The book's targets are not atheists but the pious: the friends say what most of the Old Testament seems to say — that God rewards the righteous and punishes the wicked — and they say it fluently, at length, and with real conviction, and at the end God tells them they have not spoken rightly of him, and Job has.",
+        structure=[
+            ["1-2", "PROSE. Job's uprightness and wealth; two scenes in the divine council; the loss of his children, property and health; his wife; and three friends who come and sit with him seven days in silence."],
+            ["3", "Job breaks the silence by cursing the day he was born."],
+            ["4-27", "Three cycles of speeches — Eliphaz, Bildad and Zophar in turn, each answered by Job. The friends' case hardens from gentle piety into accusation; Job's moves from grief into a demand for a hearing."],
+            ["28", "The poem on wisdom: 'But where shall wisdom be found?' — a meditation that stands apart from the argument."],
+            ["29-31", "Job's final defence — his former life, his present humiliation, and an oath of innocence, clause by clause, daring God to answer."],
+            ["32-37", "ELIHU, a young man who has been listening and is not introduced beforehand, speaks four uninterrupted chapters that nobody replies to."],
+            ["38-41", "JEHOVAH ANSWERS OUT OF THE WHIRLWIND — a tour of creation, wild goats and ostriches and the war-horse, then Behemoth and Leviathan. He asks Job seventy-odd questions and answers none."],
+            ["42:1-6", "Job's reply: 'I had heard of you by the hearing of the ear, but now my eye sees you.'"],
+            ["42:7-17", "PROSE. God rebukes the friends — 'you have not spoken of me what is right, as my servant Job has' — and Job's fortunes are restored double; the children are replaced, not doubled."],
+        ],
+        themes=[
+            "IS DISINTERESTED PIETY POSSIBLE? — the Accuser's question at 1:9, 'is it for NOTHING (chinnam) that Job fears God?', is the wager the whole book runs. Strip away every reward and see what is left.",
+            "THE FAILURE OF THE RETRIBUTION PRINCIPLE — the friends hold that suffering proves sin. It is a decent theology, it is what most people believe, it is much of what Proverbs says — and the book demolishes it, from the inside, using a case the reader knows is innocent.",
+            "THE ABSENCE OF AN EXPLANATION — the reader is told why in chapter 1; Job never is. God's answer from the whirlwind does not mention the wager, the Accuser, or Job's suffering at all. The book is at least as interested in what it refuses to say as in what it says.",
+            "SPEAKING TO GOD RATHER THAN ABOUT HIM — Job accuses God to his face; the friends defend God behind his back; God vindicates Job. Honest protest is treated as a form of faith, and correct piety as a form of lying.",
+            "CREATION AS THE ANSWER THAT IS NOT AN ANSWER — the whirlwind speeches answer a moral question with a zoological one: the rain that falls where no one lives, the ostrich that forgets her eggs, the crocodile no one can tame. The world is not organized around human deserving, and it is not thereby meaningless.",
+            "A REDEEMER, AND A HEARING — from the depths Job keeps demanding a witness, an umpire, a go'el who will stand on the earth (9:33, 16:19, 19:25) — the longing that Handel put to music and that Christians have read forward.",
+        ],
+        key_words=["chinnam", "satan", "tamim", "goel"],
+        key_people=["job-person", "uz", "edom"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Job's Hebrew is the most difficult in the Bible: the poem is dense, archaic and deliberately strange, with a very high proportion of words that occur nowhere else (so their meanings are reconstructed from Arabic, Aramaic and context), and several passages — the third speech cycle, where Bildad's turn is short and Zophar's is missing, and the description of Behemoth and Leviathan — are textually or structurally disputed. The Greek Septuagint is roughly a sixth shorter. A translator's honesty here consists largely in flagging how much is uncertain; the notes do that where it falls, and this chapter, being prose, is the easy part.",
+        christ="Job's cry for an arbiter is the thread Christian reading has always followed: 'there is no umpire between us, who might lay his hand on us both' (9:33), 'my witness is in heaven' (16:19), and above all 'I know that my REDEEMER lives, and at the last he will stand upon the earth' (19:25) — go'el, the kinsman-redeemer word of Ruth and Boaz. What Job asks for is someone who can stand on both sides at once. Beyond that, the book supplies the New Testament with its sharpest refusal of the idea that misfortune measures sin — the assumption Jesus rejects flatly about the man born blind (John 9:2-3) and the tower of Siloam (Luke 13:4) — and, in the innocent sufferer who is vindicated and whose prayer is then accepted on behalf of those who wronged him (42:8-10), a shape Christians have not been able to read without recognition.",
+        debates="Nearly everything. Whether Job is a historical figure or a parable (the Talmud records both views). Whether the prose frame and the poem are one composition or a poet's use of an older tale. The DATE, spanning nearly a millennium of proposals. Whether the ELIHU speeches (chs 32-37) are original or a later insertion — he is not introduced in the prologue, not mentioned in the epilogue, and nobody answers him. What Behemoth and Leviathan are (hippopotamus and crocodile, or the chaos-monsters of ancient myth, or both at once). The famous crux at 13:15 — 'though he slay me, yet will I trust him' or 'I have no hope' — where the written and read forms of the Hebrew differ by one word. And above all what God's answer means: whether the whirlwind humbles Job, overwhelms him, or finally treats him as an equal worth speaking to. Laid out with pedigrees; the library does not cast a vote.",
     ),
 }
