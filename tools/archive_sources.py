@@ -71,6 +71,7 @@ MECHON_BOOKS = {
     "29": ("Ruth", 4),
     "30": ("Song of Solomon", 8),
     "31": ("Ecclesiastes", 12),
+    "32": ("Lamentations", 5),
     "33": ("Esther", 10),
     "34": ("Daniel", 12),
     "35a": ("Ezra", 10),
