@@ -845,6 +845,8 @@ DICTIONARY = [
      "VESSELS, implements — the temple's gold and silver service, and one of the few physical objects whose whole story the Bible tells. Nebuchadnezzar carries them off to the treasure house of his god (Daniel 1:2; 2 Kings 25); Belshazzar drinks wine from them at his last feast and sees the writing on the wall (Daniel 5); and here Cyrus has them counted out of that same temple and sent home (Ezra 1:7-11). They are what survives the catastrophe intact — returned, like everything else in this book, by inventory.", ("Ezra", 1, 7)),
     ("nedavah", "nedavah", "נְדָבָה", "nedavah",
      "A FREEWILL OFFERING — a gift given because the giver chose to, as distinct from anything owed or commanded; the root nadav means to volunteer. It runs through the return literature: the neighbours' contributions here (1:4, 6), the householders' gifts at the foundation, and — in the same idiom — the people who 'freely offered themselves' for the work.", ("Ezra", 1, 4)),
+    ("cherpah", "cherpah", "חֶרְפָּה", "cherpah",
+     "REPROACH, disgrace — public shame, the state of being an object of scorn; from charaf, to taunt or revile. It is the word Nehemiah's informants use of the community in Judah (Nehemiah 1:3) and the word he uses when he finally puts the case to the people: 'let us build the wall of Jerusalem, that we may no longer be a cherpah' (2:17). The problem the book sets out to solve is not primarily military but the humiliation of a people whose city lies open.", ("Nehemiah", 1, 3)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1266,7 +1268,7 @@ ENCYCLOPEDIA = [
               "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
               "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3), ("Nehemiah", 1, 3)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -1580,7 +1582,7 @@ ENCYCLOPEDIA = [
               "Egyptian name, an Egyptian upbringing, and a Hebrew heart — the man at home nowhere (he names "
               "his own son 'a resident alien in a foreign land,' 2:22) whom God makes the way home.",
          refs=[("Exodus", 2, 2), ("Exodus", 2, 10), ("Exodus", 2, 11),
-               ("Leviticus", 1, 1), ("Numbers", 1, 1), ("2 Chronicles", 1, 3)], videos=[]),
+               ("Leviticus", 1, 1), ("Numbers", 1, 1), ("2 Chronicles", 1, 3), ("Nehemiah", 1, 7)], videos=[]),
     dict(slug="aaron", name="Aaron", kind="person", aliases=["Aaron", "Aaron's sons"],
          desc="Moses's older brother (by three years, Exodus 7:7), the first HIGH PRIEST of Israel and head "
               "of the priestly line — the Levite family through whom all legitimate sacrifice would run. In "
@@ -2855,6 +2857,36 @@ ENCYCLOPEDIA = [
               "3:18, which would make him a genuine Davidic prince and Zerubbabel's uncle. None is proven, and the "
               "gap is a real one in an otherwise well-documented period.",
          refs=[("Ezra", 1, 8), ("Ezra", 1, 11)], videos=[]),
+    dict(slug="nehemiah", name="Nehemiah", kind="person", aliases=["Nehemiah"],
+         desc="Son of Hacaliah, cupbearer to Artaxerxes I, and twice governor of the province of Judah. He hears in "
+              "Susa that Jerusalem lies open and disgraced, prays for four months, asks the king for leave and "
+              "letters, and rebuilds the wall in fifty-two days against organized opposition — inspecting it by "
+              "night before telling anyone his plan, arming the builders, and refusing three invitations to a "
+              "meeting on the plain of Ono. His book is the closest thing in the Bible to a senior official's "
+              "memoir, written mostly in the first person, and four times it breaks off to say 'remember me, my "
+              "God, for good.' The last chapter finds him back from a trip to court and furious at what has slid "
+              "in his absence. Not a prophet, not a king, and the most practical administrator in Scripture.",
+         refs=[("Nehemiah", 1, 1)], videos=[]),
+    dict(slug="susa", name="Susa", kind="place", aliases=["Susa", "Shushan"],
+         desc="One of the capitals of the Persian empire — the winter residence, in the lowlands of Elam, and much "
+              "older than Persia itself (it had been a major city for three thousand years already). 'Susa the "
+              "citadel' (Shushan ha-birah) is the fortified palace acropolis rather than the town: Nehemiah is "
+              "inside the government complex. The same acropolis is the setting of the whole book of Esther. "
+              "Excavated by French expeditions from the 1880s, it produced Darius's palace, the great columned "
+              "apadana, and the glazed-brick reliefs of the royal guard now in the Louvre — as well as, remarkably, "
+              "the stele of Hammurabi's laws, carried there as war booty from Babylon a thousand years earlier.",
+         refs=[("Nehemiah", 1, 1)], videos=[],
+         coords=(32.1897, 48.2578, 0.06),
+         modern="Shush, Khuzestan province, Iran"),
+    dict(slug="artaxerxes", name="Artaxerxes", kind="person", aliases=["Artaxerxes"],
+         desc="Artaxerxes I Longimanus, king of Persia 465-424 BC — the monarch behind both Ezra's and Nehemiah's "
+              "commissions, and the 'this man' of Nehemiah's prayer. He appears in this literature as an ordinary "
+              "administrator: stopping the rebuilding of Jerusalem's walls when petitioned against it (Ezra 4), "
+              "then granting his cupbearer leave, letters and timber to do the same work a few years later. ⚠ The "
+              "identification is not quite certain — there were three kings of the name, and whether Ezra's seventh "
+              "year (Ezra 7:7) belongs to Artaxerxes I in 458 BC or Artaxerxes II in 398 BC is the crux of the "
+              "long argument over whether Ezra preceded Nehemiah or followed him.",
+         refs=[("Nehemiah", 1, 11)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3507,6 +3539,11 @@ XREFS = [
     ((("Ezra", 1, 3)), (("2 Chronicles", 1, 18)), "'let him go up' is the LAST WORD OF THE HEBREW BIBLE — Chronicles closes the canon mid-sentence, and Ezra finishes it"),
     ((("Ezra", 1, 4)), (("Exodus", 12, 35)), "the neighbours hand over silver and gold — a second exodus, signalled by the shape of the sentence and never named"),
     ((("Ezra", 1, 7)), (("Daniel", 1, 2)), "the vessels Nebuchadnezzar put in the treasure house of his god, now counted back out of it"),
+    # ---- Nehemiah 1 ----
+    ((("Nehemiah", 1, 2)), (45, 7), "peletah, 'the escaped remnant' — Joseph's word for what God sent him ahead to preserve, now the administrative term for the people left in Judah"),
+    ((("Nehemiah", 1, 4)), (("Ezra", 1, 2)), "'the God of the heavens' — the Persian-period official title, used by Cyrus in his decree and here by a Judean who works at that court"),
+    ((("Nehemiah", 1, 9)), (("2 Chronicles", 1, 18)), "'the place I have chosen to make my name dwell' — the Deuteronomic formula: a building can house the NAME without housing God"),
+    ((("Nehemiah", 1, 11)), (("Genesis", 40, 1)), "cupbearer to the king — the office that was the hinge of Joseph's story too, in the other empire"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3828,6 +3865,9 @@ VERSE_OF_DAY = [
     ("Ezra", 1, 1, "“Jehovah stirred up the spirit of Cyrus king of Persia.” The same verb, four verses later, is used of ordinary householders."),
     ("Ezra", 1, 3, "“Let him go up to Jerusalem.” The last words of the Hebrew Bible, here finished into a sentence."),
     ("Ezra", 1, 11, "“All this Sheshbazzar brought up when the exiles were brought up.” Gold, silver and people, going up the same road."),
+    ("Nehemiah", 1, 4, "“I sat down and wept and mourned for days.” The most practical book in the Bible opens with four months of doing nothing but pray."),
+    ("Nehemiah", 1, 8, "“Remember, please, the word that you commanded Moses your servant.” Not a flourish — a man holding God to a document."),
+    ("Nehemiah", 1, 11, "“Grant him mercy before this man.” The man is the king of Persia. Now I was cupbearer to the king."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4278,6 +4318,9 @@ CHRON_CHAPTERS = {
     "ezra1": dict(era="return",
                   when="Babylon has fallen and the first year of Persian rule has begun — the decree of Cyrus, the first party of returners, and the temple vessels counted out of a foreign treasury.",
                   clock="538 BC — 'the first year of Cyrus king of Persia,' counted from his capture of Babylon in 539. The chapter dates itself by Jeremiah's seventy years (Jer 25:11-12; 29:10) reaching their term, and the policy behind it is externally fixed by the Cyrus Cylinder."),
+    "neh1": dict(era="return",
+                 when="Susa, in the Persian winter palace — a Judean court official hears that Jerusalem still lies open and disgraced, and spends four months praying about it.",
+                 clock="445 BC — Kislev of the twentieth year of Artaxerxes I. ⚠ A wrinkle: this is Kislev (Nov/Dec) of the twentieth year and 2:1 is Nisan (Mar/Apr) of the SAME twentieth year, though Nisan begins the Babylonian year — so Nehemiah is counting regnal years from an autumn new year or from the king's accession. Roughly a century after Cyrus's decree, and some ninety years after the second temple was finished."),
 }
 
 CHRON_EVENTS = [
@@ -4434,6 +4477,9 @@ CHRON_EVENTS = [
     dict(era="return", am="—", trad="c. 460-430 BC", event="Malachi — the last of the prophets: a burden against a bored priesthood, and 'my name is great among the nations'",
          note="Undated by the book itself. Judah is a Persian province under a governor (1:8), the temple is running, and the abuses Malachi names — blemished offerings, neglected tithes, foreign marriages, casual divorce — are the same ones Ezra and Nehemiah confront. In the Christian arrangement of the Old Testament his is the last prophetic voice before the Gospels.",
          ref=("Malachi", 1, 1)),
+    dict(era="return", am="—", trad="445 BC", event="Nehemiah hears of Jerusalem's broken wall in Susa; the following year he rebuilds it in fifty-two days",
+         note="Nehemiah 1-6. The twentieth year of Artaxerxes I. An Aramaic papyrus from the Jewish garrison at Elephantine in Egypt, dated 407 BC, names both Sanballat's sons as authorities in Samaria and Johanan as high priest in Jerusalem — an independent fix on the same officials this book names.",
+         ref=("Nehemiah", 1, 3)),
     dict(era="intertestament", am="—", trad="167 BC", event="The abomination that desolates — Antiochus IV halts the daily offering; an altar to Zeus on the altar of burnt offering",
          note="1 Maccabees 1:54 dates it to 15 Kislev, 167 BC, quoting Daniel 11:31's own phrase. Whether Daniel foresees or records the day is the book's great dating question — both readings, at full strength, on the chapter page. The temple was rededicated three years later (Hanukkah, 164 BC).",
          ref=("Daniel", 11, 31)),
@@ -5805,5 +5851,41 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Ezra is one of only two books in the Bible partly written in ARAMAIC (with Daniel): 4:8-6:18 and 7:12-26, precisely the stretches that reproduce imperial correspondence, are in the administrative language of the Persian empire — a feature this translation will mark where it falls. The Hebrew elsewhere is late, with Persian loanwords (satrap, treasury, decree) and a number of technical terms whose meanings are reconstructed. Chapter 1's inventory of vessels is a well-known crux: the itemized figures total 2,499 and the stated total is 5,400. This translation prints the Masoretic numbers and states the discrepancy rather than repairing it.",
         christ="Ezra's contribution is less a set of prophecies than a shape. The second temple this book builds is the one standing in the Gospels — smaller than Solomon's, wept over at its foundation, and the building Jesus taught in, cleansed and said would be destroyed. The figure of the SCRIBE who studies, does and teaches the law begins here, and by the Gospels the scribes are an institution Jesus argues with constantly. And the book's hardest theme — who belongs — is the question the New Testament reopens from the other side, when the covenant is thrown open to precisely the outsiders Ezra 9-10 separated from. Reading Ezra and Ruth together is the oldest way of feeling how live that argument already was inside the Old Testament.",
         debates="The CHRONOLOGY, above all: whether Ezra preceded Nehemiah (the traditional order, 458 BC) or followed him (398 BC), which turns on which Artaxerxes chapter 7 means; and the deliberately non-chronological arrangement of chapter 4. The authenticity of the Aramaic DOCUMENTS, which most scholars now accept as substantially genuine on the basis of their formulae and vocabulary. The relationship of Ezra-Nehemiah to Chronicles. The historical value of 1 Esdras, which preserves a different arrangement. And the ethics of chapters 9-10, on which the Bible does not speak with one voice — a fact this library takes as data rather than as a problem to be resolved.",
+    ),
+    "Nehemiah": dict(
+        hebrew_name="נְחֶמְיָה",
+        hebrew_translit="Nechemyah",
+        hebrew_meaning="'Jehovah has comforted' — from nacham, the verb of comfort and of relenting, which is Noah's word and Jeremiah's. ⚠ In the Hebrew Bible EZRA AND NEHEMIAH ARE ONE BOOK, a single scroll among the Writings; the split is Christian, from the Greek and Latin tradition, and did not become standard in Hebrew Bibles until the late Middle Ages.",
+        greek_name="Νεεμίας (Neemias) — 'Esdras B' part 2",
+        greek_meaning="The Septuagint carries Ezra-Nehemiah as one book, 'Esdras B'. The separate Greek 1 Esdras ('Esdras A') covers the same period differently and includes Nehemiah 8 — the reading of the law — attached to the Ezra material instead, which is one of the arguments that the two memoirs were combined by an editor.",
+        tagline="A senior civil servant hears that his people's city lies open, cries for four months, asks his emperor for leave — and rebuilds the wall in fifty-two days with a trowel in one hand and a weapon in the other.",
+        genre="MEMOIR, largely — the long first-person stretches (chs 1-7, 12:27-13:31) are usually called the Nehemiah Memoir, and their closest formal parallels are Near Eastern official inscriptions in which a man records his works and asks his god to remember them, which is exactly what this book does four times over. Around that are lists (the register, the wall-builders, the signatories, the settlers), the Aramaic-flavoured world of Persian administration, and one great set-piece of narrative liturgy: the public reading of the law in chapter 8.",
+        canon="One book with Ezra in the Hebrew canon, among the Writings; in the Christian Old Testament, the last of the historical books, after Ezra and before Esther. Since Ezra-Nehemiah stands just before Chronicles in the Hebrew order, this material is very near the end of the Jewish Bible.",
+        author="NEHEMIAH himself for the memoir, on almost all views — the first-person sections are vivid, specific, self-serving in places, and full of the kind of administrative detail an editor does not invent. The book as a whole was assembled by a compiler who also had Ezra's memoir and the lists; whether that compiler is the Chronicler is the same long argument as for Ezra.",
+        date="The mission begins in 445 BC, the twentieth year of Artaxerxes I, and the memoir covers roughly the next dozen years including a return visit to the Persian court and a second term. An Aramaic papyrus from the Jewish garrison at ELEPHANTINE in Egypt, dated 407 BC, independently names Sanballat's sons in Samaria and Johanan as high priest in Jerusalem — an unusually firm external fix on the world this book describes.",
+        place="Susa, and then Jerusalem — a small, half-empty walled town in a minor Persian province, surrounded by neighbouring authorities (Samaria, Ammon, Arabia, Ashdod) with every administrative and financial reason to prefer it stayed that way.",
+        audience="A community that had a temple and no security, a law and no consistent practice, and a leadership entangled by marriage and debt with the people around it. Nehemiah is the book of the unglamorous second half of a restoration — and the only book of the Bible whose central action is a construction project.",
+        structure=[
+            ["1-2", "The report from Judah, the prayer, the request to the king, the journey, the night ride around the ruins, and the first opposition."],
+            ["3", "The wall, section by section, with every family and guild that built its stretch named — a builder's schedule preserved as Scripture."],
+            ["4-6", "BUILDING UNDER THREAT — mockery, then the threat of attack and the famous half-armed workforce; then the internal crisis of debt and mortgaged children, which Nehemiah settles by shaking out his robe; then plots, a hired prophet, and the wall finished in fifty-two days."],
+            ["7", "The register of those who first came up, reproduced from Ezra 2, and the resettlement of an under-populated Jerusalem."],
+            ["8-10", "THE READING OF THE LAW — Ezra reads from morning to midday while Levites explain, the people weep and are told not to, the feast of booths is kept as it had not been since Joshua; then a great confession rehearsing the whole history, and a signed covenant."],
+            ["11-12", "The settlement of Jerusalem by lot, the priestly and Levitical lists, and the dedication of the wall by two choirs walking in opposite directions along the top of it."],
+            ["13", "The second term — Nehemiah returns from court to find the temple chamber let to Tobiah, the Levites unpaid, the sabbath a market day and the children unable to speak Judean; and deals with all four, one of them physically. It ends 'remember me, my God, for good.'"],
+        ],
+        themes=[
+            "PRAYER AND LOGISTICS, TOGETHER — the book prays constantly and plans constantly, and never treats the two as alternatives. Nehemiah prays between a question and his answer to it (2:4), and also counts timber.",
+            "REPROACH AND HONOUR — cherpah, the shame of a people whose city lies open, is the motive he puts to the people (2:17); the wall is as much about standing as about safety.",
+            "OPPOSITION AS THE NORMAL CONDITION — mockery, alliance, infiltration, a hired prophet, four identical invitations to a meeting. The work is never done in peace, and the book treats that as unremarkable.",
+            "JUSTICE INSIDE THE WALLS — chapter 5 is the hinge: the building stops while Nehemiah confronts his own people over interest, mortgaged fields and enslaved children, and he waives his own governor's allowance for twelve years.",
+            "THE LAW READ ALOUD AND EXPLAINED — chapter 8 is one of the most important scenes in the history of religion: a text, a raised platform, a public reading, and interpreters making it plain. The synagogue and the sermon are visible in embryo.",
+            "'REMEMBER ME, MY GOD' — the memoir's refrain, and a surprisingly exposed one. A man who has done difficult, unpopular, partly ungracious work asks the only reader whose opinion he cannot manage to think well of him.",
+        ],
+        key_words=["cherpah", "mashqeh", "chesed", "alah"],
+        key_people=["nehemiah", "susa", "artaxerxes", "jerusalem"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). The Hebrew is late — Persian loanwords (pardes 'park', pechah 'governor', iggeret 'letter'), Aramaic influence, and a fondness for technical administrative vocabulary. Unlike Ezra, Nehemiah contains no Aramaic sections; its documents are summarized rather than reproduced. The main textual questions are the relationship of the register in chapter 7 to the parallel in Ezra 2 (they differ in numerous numbers, in the usual way of lists), and the placement of chapter 8, which the Greek 1 Esdras attaches to the Ezra material instead — a hint that the two memoirs were combined by a later hand.",
+        christ="Nehemiah is not a book of messianic prophecy and it does not pretend to be; its bequest is a shape. It is the last stretch of Old Testament narrative history, and it leaves the people inside a wall, under a signed covenant, with the law read aloud — and, in its final chapter, already sliding. The gap between the covenant of chapter 10 and the failures of chapter 13 is the argument for something the law by itself does not supply, which is where the prophets and the New Testament both push. Chapter 8's reading and explaining of Scripture to a standing congregation is the direct ancestor of the synagogue service Jesus stands up to read in at Nazareth (Luke 4:16-20). And Nehemiah's own posture — weeping over a ruined city, and then doing something about it at cost to himself — has been read alongside another figure who wept over the same city.",
+        debates="The ORDER of Ezra and Nehemiah (458 vs 398 BC for Ezra's arrival), and which Artaxerxes each commission belongs to — the largest question, and unresolved. The placement of Nehemiah 8, which reads as though it belonged with Ezra's material and is placed there in 1 Esdras. The relationship of chapter 7's register to Ezra 2, and their divergent numbers. The extent of the original memoir and how much a compiler added. And the character of Nehemiah himself, on which readers have always differed sharply: the same chapters that show courage, personal generosity and genuine reform also show a man who curses opponents, pulls out hair, and keeps his own accounts before God. The book supplies the evidence for both readings and shows no sign of wanting to settle it.",
     ),
 }
