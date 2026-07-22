@@ -65,6 +65,7 @@ MECHON_BOOKS = {
     "12": ("Ezekiel", 48),
     "13": ("Hosea", 14),
     "14": ("Joel", 4),
+    "15": ("Amos", 9),
     "24": ("Malachi", 3),
     "25a": ("1 Chronicles", 29),
     "25b": ("2 Chronicles", 36),

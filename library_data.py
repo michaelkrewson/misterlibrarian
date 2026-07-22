@@ -907,6 +907,18 @@ DICTIONARY = [
      "A DRINK OFFERING — wine poured out beside a sacrifice, from nasakh, to pour. With the minchah (grain offering) it made up the DAILY service, presented every morning and evening with the lamb (Exodus 29:38-42; Numbers 28). ⚠ That is why Joel 1:9 is the theological centre of his first chapter: when the harvest fails there is no flour and no wine, so the daily offering simply cannot be made. The locusts have not only made people hungry — they have severed the country's standing conversation with God, which is why the PRIESTS are the ones told to mourn.", ("Joel", 1, 9)),
     ("taarog", "ta'arog", "תַּעֲרוֹג", "ta'arog",
      "TO PANT, long for — a rare verb occurring only THREE times in the Hebrew Bible. Twice in Psalm 42:2, in one of the best-known lines in scripture: 'as the deer PANTS for streams of water, so my soul pants for you, God.' ⚠ The third is Joel 1:20, where it is given to real animals at a dry streambed: 'even the beasts of the field pant for you, for the channels of water have dried up.' The most famous image of spiritual longing in the Bible turns out, in its other occurrence, to be a literally thirsty animal.", ("Joel", 1, 20)),
+    ("noqed", "noqed", "נֹקֵד", "noqed",
+     "A SHEEP-BREEDER — and one of the most argued-over words in the prophets, because it occurs exactly TWICE in the Hebrew Bible. Amos 1:1 calls Amos one of the noqedim of Tekoa; 2 Kings 3:4 calls MESHA KING OF MOAB a noqed, who paid Israel a tribute of a hundred thousand lambs and the wool of a hundred thousand rams. It is therefore not the ordinary word for shepherd (ro'eh) but something closer to a stock-breeder or flock-manager; the Arabic cognate naqad names a small, fine-fleeced breed. ⚠ So the familiar picture of Amos as a barefoot peasant is a picture the vocabulary does not require — but do not over-read it either: at Amos 7:14 he calls himself a boqer (a cattleman, a different word again) and a dresser of sycamore figs, which is hired work. The rare word points one way and the day-labour points the other, and the honest position is that both are in the text. The shelf mostly levels it to 'herdmen' (KJV) or 'shepherds' (NIV); only the NWT keeps the technical sense, 'sheep raisers.'", ("Amos", 1, 1)),
+    ("pesha", "pesha", "פֶּשַׁע", "pesha",
+     "REVOLT, rebellion — usually flattened in English to 'transgression', which loses the courtroom. Its plain sense is a vassal's political REBELLION against his overlord: 'Moab REBELLED against Israel' (2 Kings 1:1), 'Israel REBELLED against the house of David' (1 Kings 12:19). ⚠ That is why it matters in Amos 1-2, where the formula 'for three PESHA'IM of Damascus, and for four' is repeated eight times: the prophet is convening a court in which foreign nations stand charged as REBELS, which quietly presumes a sovereign whose authority they had never acknowledged. The word is distinct from chet (a miss, a fault) and avon (crookedness, guilt) — Hebrew keeps three ideas apart where English tends to use one. KJV/ASV 'transgressions'; NIV 'sins'; Douay-Rheims 'crimes'; NWT alone renders 'revolts', and on the merits it is the more exact word.", ("Amos", 1, 3)),
+    ("armon", "armon", "אַרְמוֹן", "armon (pl. armenot)",
+     "A CITADEL — the fortified keep or stronghold-palace inside a walled city, the residence of whoever rules it. Usually rendered 'palace' (KJV/ASV), 'fortress' (NIV) or 'dwelling tower' (NWT); 'citadel' keeps both halves, the luxury and the defences. ⚠ It is one of Amos's signature words. It appears in every one of the eight oracles of chapters 1-2 — the fire always devours the ARMENOT, never simply 'the city' — and it keeps returning (3:9-11; 6:8), until the ruling class inside those buildings is the entire subject of the book. Amos's quarrel is not with a country but with an address.", ("Amos", 1, 4)),
+    ("shaag", "sha'ag", "שָׁאַג", "sha'ag",
+     "TO ROAR — specifically the roar of a LION, and in Hebrew usage most often the roar over prey, the sound made after the kill rather than while hunting. ⚠ It is the first thing God does in the book of Amos ('Jehovah ROARS from Zion', 1:2) and it is given by a man who had spent his life on the edge of the Judean wilderness, where the sound was a working hazard rather than an image. Amos makes it his own at 3:8: 'a lion has roared — who will not fear? The Lord Jehovah has spoken — who will not prophesy?' The same verb is used of God at Jeremiah 25:30, Hosea 11:10 and Joel 4:16, and of enemies in the Psalms; 1 Peter 5:8 gives it, in Greek, to the adversary.", ("Amos", 1, 2)),
+    ("taraf", "taraf", "טָרַף", "taraf",
+     "TO TEAR, rend — what a predator does to a carcass. The noun terefah is the torn animal that a shepherd had to account for (Genesis 31:39; Exodus 22:12) and that Israelites were forbidden to eat, and Jacob's own sons use the verb when they present the bloodied coat: 'a wild beast has TORN him' (Genesis 37:33). ⚠ Amos gives it to a temper: 'his anger TORE without ceasing' (1:11), the animal register of the book's opening roar handed to a man's grudge. Edom's rage is described as a beast eating.", ("Amos", 1, 11)),
+    ("teruah", "teru'ah", "תְּרוּעָה", "teru'ah",
+     "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire.", ("Amos", 1, 14)),
     ("dat", "dat", "דָּת", "dat",
      "LAW, decree, edict — a PERSIAN loanword (data), and the key word of Esther, where it occurs about twenty times, more than in all the rest of the Bible together. ⚠ Watch its career across the book: its FIRST appearance is a courtesy about wine ('the drinking was according to the dat: no one compelling,' 1:8); by chapter 3 the same word carries an edict for the extermination of a people; and because a dat of the Medes and Persians cannot be revoked, chapter 8 can only answer it with another one. It is also the word behind 'the laws of the king' that Haman claims the Jews do not keep.", ("Esther", 1, 8)),
     ("mishteh", "mishteh", "מִשְׁתֶּה", "mishteh",
@@ -3060,6 +3072,159 @@ ENCYCLOPEDIA = [
               "revolves around the temple's daily offering. He is quoted at Pentecost (Acts 2:17-21, from Hebrew 3:1-5) and by "
               "Paul at Romans 10:13.",
          refs=[("Joel", 1, 1)], videos=[]),
+
+    # ---- Amos 1 ----
+    dict(slug="amos", name="Amos", kind="person", aliases=["Amos"],
+         desc="A Judean sheep-breeder from Tekoa, sent north — on most reckonings the EARLIEST of the writing "
+              "prophets, preaching about 760 BC under Uzziah of Judah and Jeroboam II of Israel. ⚠ Everything about "
+              "him is a mismatch. He is a southerner whose whole message is aimed at the northern kingdom; he is not "
+              "a professional (7:14: 'I am no prophet, nor a prophet's son'); and he arrives at the height of northern "
+              "prosperity to say it is over. His name means 'borne / carried' — nothing to do with Amoz, the father of "
+              "Isaiah, whose name is spelled differently. What he actually was is argued: NOQED in 1:1 is a rare word "
+              "used elsewhere only of a king who paid tribute in a hundred thousand lambs, so he may have been a man "
+              "of property; but he also calls himself a cattleman and a dresser of sycamore figs, which is hired work. "
+              "Amaziah, priest of Bethel, eventually reports him to the king for sedition and tells him to go home and "
+              "earn his bread in Judah (7:10-13).",
+         refs=[("Amos", 1, 1)], videos=[]),
+    dict(slug="tekoa", name="Tekoa", kind="place", aliases=["Tekoa"],
+         desc="Amos's home town: a Judean settlement about ten miles south of Jerusalem and six south of Bethlehem, "
+              "perched on the edge of the wilderness that falls away toward the Dead Sea — grazing country, and rough. "
+              "Rehoboam fortified it (2 Chronicles 11:6). It is also the home of the WISE WOMAN OF TEKOA whom Joab "
+              "coached into telling David a parable that changed his mind about Absalom (2 Samuel 14:1-20), so the "
+              "place has a small reputation for producing people who tell kings things they do not want to hear.",
+         refs=[("Amos", 1, 1)],
+         coords=(31.616, 35.223, 0.25), approx=True,
+         modern="Khirbet Tequ'a, south of Bethlehem in the Judean hills", videos=[]),
+    dict(slug="uzziah", name="Uzziah", kind="person", aliases=["Uzziah", "Azariah king of Judah"],
+         desc="King of Judah for about fifty-two years in the eighth century BC (also called AZARIAH in Kings), and "
+              "one of the two monarchs who date the book of Amos. His long reign, running parallel to Jeroboam II's in "
+              "the north, was the most prosperous Judah had known since Solomon: he rebuilt the ports, broke the "
+              "Philistines, and equipped an army (2 Chronicles 26). ⚠ It ended badly — he took a censer into the "
+              "temple to burn incense, a priest's prerogative, and lived out his life in isolation with a skin "
+              "disease. His death is the date-stamp on Isaiah's call: 'in the year that King Uzziah died, I saw the "
+              "Lord' (Isaiah 6:1). A limestone plaque now in the Israel Museum, cut some seven centuries later, reads "
+              "'Hither were brought the bones of Uzziah king of Judah — do not open.'",
+         refs=[("Amos", 1, 1), ("Isaiah", 1, 1)], videos=[]),
+    dict(slug="jeroboam-ii", name="Jeroboam II", kind="person", aliases=["Jeroboam"],
+         desc="King of Israel for forty-one years (roughly 793-753 BC) and the ruler under whom Amos and Hosea both "
+              "preached. 2 Kings 14:23-29 gives him four verses: he did what was evil, and he restored the borders of "
+              "Israel from Lebo-hamath to the Sea of the Arabah — the largest the northern kingdom ever was. That "
+              "combination is the whole setting of Amos: a rich, expanding, militarily successful country being told "
+              "it is finished. ⚠ Not to be confused with JEROBOAM SON OF NEBAT, the very different king who split the "
+              "kingdom two centuries earlier and set up the calves at Bethel and Dan; this one is his distant "
+              "successor, and the Bible distinguishes them only by patronymic — 'son of Joash'.",
+         refs=[("Amos", 1, 1), ("Hosea", 1, 1)], videos=[]),
+    dict(slug="hazael", name="Hazael", kind="person", aliases=["Hazael"],
+         desc="King of Aram-Damascus in the later ninth century BC, and the most destructive enemy Israel faced "
+              "before Assyria. He came to the throne by murder — 2 Kings 8:15 has him smother his sick master "
+              "Ben-hadad with a wet cloth, the day after Elisha wept in front of him — and he then took all of Gilead "
+              "from Israel (2 Kings 10:32-33), captured Gath (2 Kings 12:17), and had to be bought off from "
+              "Jerusalem with the temple treasury. ⚠ He is unusually well attested outside the Bible: Assyrian "
+              "inscriptions of Shalmaneser III call him 'son of a nobody', their standard phrase for a usurper, and "
+              "the Aramaic victory stele found at TEL DAN in 1993 — which contains the earliest extra-biblical "
+              "mention of the 'House of David' — is generally attributed to him. Amos names his dynasty, not his "
+              "country: the fire falls on 'the house of Hazael' and 'the citadels of Ben-hadad'.",
+         refs=[("Amos", 1, 4)], videos=[]),
+    dict(slug="aram", name="Aram (the Arameans)", kind="people", aliases=["Arameans", "Aramean"],
+         desc="The Aramaic-speaking peoples of Syria, whose chief kingdom was DAMASCUS — Israel's nearest and most "
+              "persistent rival through the ninth and eighth centuries, and (in the King James Bible and the "
+              "Septuagint) called SYRIA. The family connection is old and awkward: Abraham's kin at Haran are "
+              "Arameans, Rebekah's brother Laban is 'the Aramean', and Deuteronomy 26:5 has every Israelite farmer "
+              "recite 'a wandering Aramean was my father.' ⚠ Amos ends his Damascus oracle by sending them into exile "
+              "'to KIR' — which at 9:7 turns out to be where they came from, so the sentence is that their own "
+              "national origin-story is being cancelled. Aramaic outlasted the kingdoms: it became the administrative "
+              "language of the Persian empire, parts of Ezra and Daniel are written in it, and it was the everyday "
+              "speech of first-century Galilee.",
+         refs=[("Amos", 1, 5)], videos=[]),
+    dict(slug="gaza", name="Gaza", kind="place", aliases=["Gaza"],
+         desc="The southernmost of the five Philistine cities and the gateway between Canaan and Egypt — which is "
+              "why it appears as a boundary marker as early as the Table of Nations (Genesis 10:19) and why every "
+              "empire that ever marched that coast road took it. It is the city where Samson pulled the gate off its "
+              "hinges and later died between the pillars (Judges 16). ⚠ Amos charges it with the slave trade: "
+              "carrying off 'a whole population' and handing them on to Edom (1:6) — a raid that emptied a place "
+              "rather than a battle that took prisoners.",
+         refs=[("Amos", 1, 6), ("Amos", 1, 7)],
+         coords=(31.52, 34.45, 0.25),
+         modern="Gaza City", videos=[]),
+    dict(slug="ashdod", name="Ashdod", kind="place", aliases=["Ashdod"],
+         desc="One of the five Philistine cities, on the coastal plain between Ashkelon and Joppa. It is where the "
+              "captured ark was taken into the temple of Dagon, and where the statue was found face-down on the "
+              "threshold two mornings running with its head and hands broken off (1 Samuel 5:1-5). Sargon II of "
+              "Assyria besieged and took it in 711 BC — an event Isaiah 20:1 dates by name, and which Sargon's own "
+              "annals record. Amos names it among the Philistine cities whose rulers will be cut off (1:8).",
+         refs=[("Amos", 1, 8)],
+         coords=(31.80, 34.65, 0.25),
+         modern="Tel Ashdod, near modern Ashdod, Israel", videos=[]),
+    dict(slug="tyre", name="Tyre", kind="place", aliases=["Tyre", "Tyrus"],
+         desc="The great Phoenician seaport north of Carmel, built on an island a little offshore with a mainland "
+              "settlement facing it — a trading power rather than a territorial one, with colonies as far west as "
+              "Carthage. Its king HIRAM supplied David and then Solomon with cedar, craftsmen and shipping, and the "
+              "two kingdoms signed a treaty: 'there was peace between Hiram and Solomon, and the two of them cut a "
+              "covenant' (1 Kings 5:12), with Hiram addressing Solomon as 'my brother' (1 Kings 9:13). ⚠ That is "
+              "almost certainly the 'covenant of brothers' Amos says Tyre forgot (1:9). Ezekiel 26-28 devotes three "
+              "chapters to the city, and Alexander the Great finally took it in 332 BC by building a causeway out to "
+              "the island — which is still there, and has silted up, so that the island is now a peninsula.",
+         refs=[("Amos", 1, 9), ("Amos", 1, 10)],
+         coords=(33.271, 35.196, 0.25),
+         modern="Sour, southern Lebanon", videos=[]),
+    dict(slug="teman", name="Teman", kind="place", aliases=["Teman", "Temanite"],
+         desc="Both a man and a district. TEMAN is a grandson of Esau — the son of Eliphaz, listed among the chiefs "
+              "of Edom (Genesis 36:11, 15) — and his clan gives its name to a region of Edom, apparently in the "
+              "north, which becomes a byword for wisdom: 'is there no longer wisdom in Teman?' (Jeremiah 49:7). ⚠ "
+              "Job's first and most confident friend, Eliphaz, is 'the TEMANITE', so the book of Job situates its "
+              "conventional wisdom in Edomite country. Amos pairs it with Bozrah as the target of the fire (1:12), "
+              "and Habakkuk 3:3 has God himself coming 'from Teman'.",
+         refs=[("Amos", 1, 12), (36, 11), (36, 15)], videos=[]),
+    dict(slug="bozrah", name="Bozrah", kind="place", aliases=["Bozrah"],
+         desc="The chief city of northern EDOM, and the one the prophets name when they mean Edom's power: Amos "
+              "burns its citadels (1:12), Jeremiah 49:13 makes it 'a desolation, a reproach, a waste', and Isaiah "
+              "63:1 has a figure coming from Bozrah 'with garments dyed red'. It is one of the eight royal seats "
+              "listed in the Edomite king-list of Genesis 36:33. Identified with BUSEIRAH in southern Jordan, "
+              "excavated in the 1970s and found to be exactly what the oracles assume — a fortified administrative "
+              "centre on a spur, with a large public building complex.",
+         refs=[("Amos", 1, 12)],
+         coords=(30.74, 35.60, 0.25), approx=True,
+         modern="Buseirah, Tafilah Governorate, southern Jordan", videos=[]),
+    dict(slug="ammon", name="Ammon (the Ammonites)", kind="people", aliases=["Ammon", "Ammonites"],
+         desc="Israel's neighbour east of the Jordan, north of Moab — and, like Moab, traced in Genesis 19:38 to "
+              "Lot's younger daughter, so a kinsman nation with an unflattering origin story. Their capital was "
+              "RABBAH, under modern Amman, which still carries the name. Relations were bad for centuries: Jephthah "
+              "fights them (Judges 11), Nahash demands the right eye of every man at Jabesh-gilead (1 Samuel 11), "
+              "David takes Rabbah, and Solomon's Ammonite wives bring the worship of MILCOM to Jerusalem (1 Kings "
+              "11:5). ⚠ Amos charges them with the worst crime in his list — ripping open the pregnant women of "
+              "Gilead — and, uniquely among the eight oracles, states the motive: to enlarge their border (1:13).",
+         refs=[("Amos", 1, 13), ("Amos", 1, 15)], videos=[]),
+    dict(slug="rabbah", name="Rabbah", kind="place", aliases=["Rabbah", "Rabbath-Ammon"],
+         desc="The capital of Ammon, on the upper Jabbok — 'Rabbah of the Ammonites', and still called Amman today. "
+              "It is the city outside whose wall Uriah the Hittite was placed to be killed while David stayed home "
+              "(2 Samuel 11:14-17), and which David finally captured, taking the crown off its king's head (2 Samuel "
+              "12:26-31). Later, as PHILADELPHIA — renamed by Ptolemy II — it became one of the ten cities of the "
+              "Decapolis. Amos promises fire in its wall, with a war cry and a whirlwind (1:14).",
+         refs=[("Amos", 1, 14)],
+         coords=(31.954, 35.933, 0.25),
+         modern="Amman, Jordan (the citadel hill, Jabal al-Qal'a)", videos=[]),
+    dict(slug="kir", name="Kir", kind="place", aliases=["Kir"],
+         desc="⚠ NOBODY KNOWS WHERE THIS IS — which is why it has no pin on the atlas. Kir is named four times: "
+              "Amos 1:5 sends the Arameans into exile there; Amos 9:7 says it is where God BROUGHT THEM FROM ('did I "
+              "not bring Israel up from Egypt, and the Philistines from Caphtor, and Aram from Kir?'); 2 Kings 16:9 "
+              "records that Tiglath-pileser III actually did deport Damascus there in 732 BC; and Isaiah 22:6 has "
+              "Kir alongside Elam in a muster of troops. Proposals put it in Mesopotamia, in Media, or somewhere on "
+              "the middle Euphrates, and none of them is more than an inference from those four verses. The name "
+              "means simply 'wall' or 'city'. The theological point does not depend on the geography: Aram is being "
+              "sent back to its own beginning.",
+         refs=[("Amos", 1, 5)], videos=[]),
+    dict(slug="carmel", name="Carmel", kind="place", aliases=["Carmel"],
+         desc="The wooded headland that runs out into the Mediterranean at modern Haifa — the greenest, wettest "
+              "ground in the country, catching the sea rain, and so the LAST place in the land to dry out. That is "
+              "the point of Amos 1:2: from the shepherds' pastures on the desert edge to 'the top of Carmel', the "
+              "first thing to burn off and the last, and therefore everything in between. The name means 'garden "
+              "land' or 'orchard'. It is also the mountain of Elijah's contest with the prophets of Baal, and the "
+              "place where he then crouched with his face between his knees while his servant went to look at the "
+              "sea seven times (1 Kings 18).",
+         refs=[("Amos", 1, 2)],
+         coords=(32.73, 35.05, 0.35), approx=True,
+         modern="Mount Carmel, above Haifa, Israel", videos=[]),
+
     dict(slug="vashti", name="Vashti", kind="person", aliases=["Vashti"],
          desc="Queen of Persia, who refuses to be displayed to her husband's guests and is deposed for it in the "
               "first chapter of Esther — the vacancy that makes the rest of the book possible. ⚠ The text gives NO "
@@ -3109,6 +3274,14 @@ XREFS = [
     (("Joel", 1, 14), ("Isaiah", 1, 13), "atzarah — Joel summons a solemn assembly; Isaiah has God say he cannot bear them"),
     (("Joel", 1, 15), ("Genesis", 17, 1), "'like SHOD from SHADDAI' — a pun on the divine title announced to Abram"),
     (("Joel", 1, 2), ("Hosea", 1, 1), "a prophetic heading with NO king in it — unique among the dated prophets, and why Joel cannot be placed"),
+    (("Amos", 1, 1), ("Hosea", 1, 1), "the same northern king, Jeroboam son of Joash — the two prophets sent to the same prosperous kingdom"),
+    (("Amos", 1, 1), ("Isaiah", 1, 1), "Uzziah of Judah, the other king who dates this book — and the king in whose death-year Isaiah was called"),
+    (("Amos", 1, 2), ("Joel", 1, 19), "the pastures mourn — and Joel 4:16 repeats this verse's opening almost word for word; nobody can say which prophet quoted which"),
+    (("Amos", 1, 11), ("Hosea", 1, 6), "rachamim, womb-mercy — named onto a daughter in Hosea, destroyed by a brother-nation here"),
+    (("Amos", 1, 11), ("Genesis", 6, 11), "shachat, to RUIN — the verb tolled three times over the pre-flood world, turned here on a man's own capacity for pity"),
+    (("Amos", 1, 11), ("Genesis", 27, 41), "'he pursued his BROTHER with the sword' — Esau's grudge, still running a thousand years later"),
+    (("Amos", 1, 12), ("Genesis", 36, 11), "Teman — Esau's grandson, and the Edomite district his clan named"),
+    (("Amos", 1, 13), ("Genesis", 31, 21), "Gilead — the treaty-highlands, threshed by one neighbour and disembowelled by another"),
     (("Hosea", 1, 1), ("Isaiah", 1, 1), "the identical four Judean kings — heading the book of a prophet who preached to the NORTH"),
     (("Hosea", 1, 4), ("1 Kings", 1, 1), "the blood of Jezreel — Jehu's coup (2 Kings 9-10), which 2 Kings 10:30 has God commend"),
     (("Hosea", 1, 6), ("Genesis", 43, 14), "Lo-Ruchamah — rachamim, mercy, is built on rechem, the WOMB: Not-Mother-Loved"),
@@ -3849,6 +4022,10 @@ VERSE_OF_DAY = [
     ("Joel", 1, 4, "“What the shearer left, the swarmer ate.” Four Hebrew words for locust, and nobody knows whether they are four species, four stages, or four names piled up for weight."),
     ("Joel", 1, 9, "“Grain offering and drink offering are cut off from the house of Jehovah.” The disaster is measured in liturgy, not in bushels — which is why the priests are the ones told to mourn."),
     ("Joel", 1, 20, "“Even the beasts of the field pant for you.” The verb is the one from Psalm 42 — the deer panting for streams of water — here given to real animals at a dry riverbed."),
+    ("Amos", 1, 1, "“Two years before the earthquake.” No other book in the Bible dates itself by a natural disaster — and archaeologists keep finding the layer."),
+    ("Amos", 1, 2, "“Jehovah roars from Zion.” The verb is a lion's roar over prey, given to God by a man who had heard the real thing on the edge of the wilderness."),
+    ("Amos", 1, 3, "“For three revolts of Damascus, and for four, I will not turn it back.” Eight times this formula runs — and the eighth is aimed at the people nodding along."),
+    ("Amos", 1, 13, "“Because they ripped open the pregnant women of Gilead, in order to enlarge their own border.” The only crime in the list that comes with a stated motive, and the motive is real estate."),
     ("Hosea", 1, 2, "“Go, take yourself a wife of promiscuity.” The most disputed sentence in the prophets — and the text shows no discomfort with it and offers no explanation."),
     ("Hosea", 1, 4, "“Call his name Jezreel.” A child named after a massacre — and after a verb that means TO SOW, which the next chapter turns into a promise."),
     ("Hosea", 1, 6, "“Call her name Lo-Ruchamah — Not-Pitied.” Hebrew's word for mercy is built on the word for a womb. The name is worse in Hebrew than in English."),
@@ -4575,6 +4752,9 @@ CHRON_CHAPTERS = {
     "joel1": dict(era="monarchy",
                   when="A locust plague strips Judah bare — vine, fig, grain, oil and wine all gone — and the daily offering at the temple stops for want of flour and wine.",
                   clock="⚠ UNDATABLE, and this is the most disputed date in the Bible. Joel's heading names NO king, and nothing in the book supplies one: proposals run from the ninth century BC to the fourth, argued from the same silences in opposite directions (no king mentioned because Joash was a minor; or because there was no longer a monarchy). Filed under the monarchy for want of a better slot, with the argument left open in the book introduction. ⚠ This book has FOUR chapters in Hebrew; English Bibles fold Hebrew 3:1-5 into 2:28-32 and renumber Hebrew 4 as 3."),
+    "amos1": dict(era="monarchy",
+                  when="Five foreign nations sentenced in turn — Damascus, Gaza, Tyre, Edom, Ammon — by a Judean sheep-breeder standing in the northern kingdom at the height of its prosperity.",
+                  clock="≈760 BC, and this is one of the most precisely dated books in the Bible: Uzziah is on the throne in Judah, Jeroboam II in Israel, and Amos adds a second fix nobody else uses — 'two years before THE earthquake', with the definite article, because his readers could count from it. Zechariah 14:5 was still measuring by that earthquake two and a half centuries later, and mid-eighth-century destruction layers at Hazor, Lachish, Gezer and in the City of David are commonly identified with it. Amos is, on most reckonings, the EARLIEST of the writing prophets — about thirty years before Samaria falls."),
     "hos1": dict(era="monarchy",
                  when="A prophet in the northern kingdom is told to marry a promiscuous woman and to name their three children after the sentence on his own country: a massacre, an unpitied daughter, and a people God will not call his.",
                  clock="Begun under JEROBOAM II of Israel (d. c. 747 BC), at the height of northern prosperity, and running through the collapse that followed — four of the next six kings assassinated — toward Samaria's fall in 722. ⚠ The heading dates the book by four kings of JUDAH (Uzziah, Jotham, Ahaz, Hezekiah), the same span as Isaiah 1:1, which is almost certainly the work of the Judean editors who preserved a northern prophet's book after the north was destroyed. ⚠ This chapter has NINE verses in the Hebrew; English Bibles print 1:10-11, which the Masoretic text numbers 2:1-2."),
@@ -4695,6 +4875,9 @@ CHRON_EVENTS = [
          note="On the first day of the second month of the second year — one month after Leviticus, thirteen months out of Egypt — Moses and Aaron take a census of the twelve tribes: every male from twenty years old and upward, all who could go to war, tribe by tribe, to a total of 603,550 fighting men (Numbers 1). Israel is arrayed as an army for the march to Canaan, one chieftain (nasi) per tribe, Judah's Nahshon at the head. The tribe of Levi alone is left off the war-roll, appointed instead to carry, pitch, and guard the tabernacle and to camp around it as a buffer 'that there be no wrath upon the congregation.' The star-promise to Abram (Genesis 15:5) has become a countable host; but this same generation, at Kadesh, will refuse the land and be sentenced to die in the wilderness — the muster is of an army that never fights the war it was numbered for.",
          ref=("Numbers", 1, 46)),
     # -- The Kingdom --
+    dict(era="monarchy", am="—", trad="c. 762–760 BC", event="Amos of Tekoa goes north — and dates his own book two years before an earthquake",
+         note="A Judean sheep-breeder preaching at Bethel in the reign of Jeroboam II, when the northern kingdom was as rich and as large as it ever became. On most reckonings the EARLIEST of the writing prophets. ⚠ Uniquely, he fixes his date by a natural disaster as well as by two kings: 'two years before THE earthquake' — still a landmark for Zechariah two and a half centuries later (14:5), and commonly identified with the mid-eighth-century destruction layers at Hazor, Lachish, Gezer, Deir Alla and in the City of David. He opens by sentencing five foreign nations, and his audience agrees with every word until the eighth oracle turns on them.",
+         ref=("Amos", 1, 1)),
     dict(era="monarchy", am="—", trad="c. 750–722 BC", event="Hosea preaches in the northern kingdom — three children named as sentences, and the covenant formula unsaid",
          note="Beginning under Jeroboam II at the height of northern prosperity and running to the edge of Samaria's fall. Jezreel, Lo-Ruchamah (Not-Pitied) and Lo-Ammi (Not-My-People) are the message; within three Hebrew verses all three names are reversed. Assyria took Samaria in 722 and the northern kingdom never returned.",
          ref=("Hosea", 1, 4)),
@@ -6204,6 +6387,38 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre), following the Hebrew FOUR-chapter division. ⚠ Joel's Hebrew is mostly clear but locally very hard: chapter 1 alone contains four words for locust whose distinctions are unknown, and verse 17 packs THREE words that occur nowhere else in the Bible (avshu, perudot, megrefoteihem) into one clause, so that every English rendering of it is a reasoned guess. Where the text is uncertain this translation says so rather than choosing silently, and where a pun cannot be carried (shod/Shaddai at 1:15) it flags the loss.",
         christ="Joel reaches the New Testament chiefly through one passage and one line. ⚠ At PENTECOST, Peter stands up and says 'this is what was spoken through the prophet Joel,' and quotes Hebrew 3:1-5 entire (Acts 2:17-21) — the spirit poured out on all flesh, sons and daughters prophesying, slaves included, and 'everyone who calls on the name of Jehovah will be saved.' Paul quotes that last line again at Romans 10:13, and the book's phrase 'the day of Jehovah' becomes, in Greek, 'the day of the Lord' throughout the epistles. What the library will not do is flatten the original: in Joel the promise is made to a farming community in Judah after a locust plague, and Acts reads it as opened outward rather than as having meant that all along.",
         debates="THE DATE, which is the largest open question in the Twelve and is argued entirely from silences. WHETHER THE LOCUSTS ARE LITERAL — an actual plague, a metaphor for an invading army, or a real plague read as the advance sign of the day of Jehovah (the majority view). THE FOUR LOCUST WORDS — species, stages or synonyms. WHETHER JOEL IS QUOTING the other prophets or drawing with them on a common stock. And how to read the Pentecost citation: fulfilment, inauguration, or pattern — a question Acts raises and does not settle, since the signs in the heavens Joel describes did not accompany it.",
+    ),
+    "Amos": dict(
+        hebrew_name="עָמוֹס",
+        hebrew_translit="Amos",
+        hebrew_meaning="'Borne' or 'carried' — from amas, to load up, to carry a burden. ⚠ Not the same name as AMOZ (אָמוֹץ), the father of Isaiah, though English spells them almost alike: different consonants, different men, and the old rabbinic identification of the two is a pun rather than a fact.",
+        greek_name="Ἀμώς (Amōs)",
+        greek_meaning="The Septuagint keeps Amos third among the Twelve. ⚠ Its most consequential divergence is at 9:11-12, the fallen booth of David: the Hebrew says the restored kingdom will 'POSSESS the remnant of EDOM', the Greek says 'that the REST OF MANKIND may SEEK the Lord' — a difference of one or two consonants (adam/edom, yirash/yidrosh). At the Jerusalem council in Acts 15:16-17, James quotes the GREEK, and the case for admitting Gentiles without circumcision is built on it. Stephen likewise quotes the Greek of Amos 5:25-27, with its 'Rephan' (Acts 7:42-43).",
+        tagline="A sheep-breeder from a Judean village walks into the royal sanctuary of a foreign kingdom at the height of its wealth and tells it that it is finished. He begins by sentencing everybody else — Damascus, Gaza, Tyre, Edom, Ammon, Moab, and then Judah — so that his audience is still agreeing with him when the eighth oracle turns and names Israel.",
+        genre="PROPHETIC ORACLE, mostly poetry, in four sharply distinct forms: the eight-fold oracle cycle against the nations (1-2), the 'hear this word' addresses and two woes (3-6), five visions with a prose confrontation wedged into the middle of them (7:1-9:10), and a closing promise of restoration. ⚠ Amos contains the earliest account in the Bible of a prophet being thrown out of a sanctuary, together with the text of the report the priest sent to the king about him (7:10-17). It is also, verse for verse, the most socially specific book in the prophets: it names the furniture, the debts, the shoes, the measuring baskets and the wine.",
+        canon="THIRD of THE TWELVE in the Hebrew order — after Hosea and Joel, before Obadiah — which the Hebrew canon counts as a single book. Nine chapters. ⚠ Unusually for this neighbourhood, the chapter and verse divisions match the English exactly: Hosea on one side and Joel on the other both carry numbering offsets, and Amos carries none.",
+        author="AMOS OF TEKOA, a Judean, and the first prophet whose oracles were collected into a scroll under his own name — which is why he is usually called the earliest of the 'writing prophets'. He is emphatic that he is not a professional: 'I am no prophet, nor a prophet's son, but a herdsman and a dresser of sycamore figs, and Jehovah took me from following the flock' (7:14-15). ⚠ How poor he was is genuinely disputed. The rare word NOQED in 1:1 is used elsewhere only of Mesha king of Moab, who paid tribute in a hundred thousand lambs, which suggests a stock-breeder of substance; the sycamore-dressing of 7:14 is seasonal hired work. The text supports both pictures and settles neither.",
+        date="c. 760 BC — one of the most closely dated books in the Bible, and the only one dated by a natural disaster. The heading gives two reigns, Uzziah of Judah and Jeroboam II of Israel, which overlap between about 767 and 753; and then 'two years before THE earthquake', with the definite article, because the readers could count from it. ⚠ Zechariah 14:5 was still using that earthquake as a fixed point two and a half centuries later, and archaeologists have found mid-eighth-century collapse layers at Hazor, Lachish, Gezer, Deir Alla, Tell Judeideh and En Haseva, with a comparable destruction reported from the City of David in Jerusalem in 2021; Dead Sea sediment cores record a very large seismic event in the same window. The identification is standard and is an identification, not a proof. Samaria fell to Assyria in 722, about a generation after Amos spoke.",
+        place="TEKOA, on the edge of the Judean wilderness ten miles south of Jerusalem, is where he came from. BETHEL, the royal sanctuary of the northern kingdom, is where he preached and where he was expelled; SAMARIA, the northern capital with its ivory-panelled houses, is what he describes. ⚠ So the book crosses a border in both directions: a southerner speaking in the north, and a voice that locates itself in Zion (1:2) while standing in a rival kingdom's temple.",
+        audience="The northern kingdom of ISRAEL at the wealthiest moment of its history. Jeroboam II had pushed the borders out further than any king since Solomon; the archaeology of the period shows large houses, imported luxuries and the carved ivory inlays Amos mocks (3:15; 6:4). His quarrel is not with a poor country's failures but with a rich one's arrangements — and specifically with the people who owned the citadels, kept the shrines busy, and financed both by squeezing everyone below them.",
+        structure=[
+            ["1:1-2:16", "THE EIGHT ORACLES — 'for three revolts of X, and for four, I will not turn it back.' Damascus, Gaza, Tyre, Edom, Ammon, Moab, JUDAH, and finally ISRAEL, which gets the longest oracle of all. A rhetorical trap: the audience agrees with the first seven."],
+            ["3-6", "THE INDICTMENT — three 'hear this word' addresses and two woes. 'You only have I known of all the families of the earth; therefore I will punish you' (3:2). The cows of Bashan (4:1); the funeral song for a nation not yet dead (5:1-2); 'let justice roll down like waters' (5:24); and the woe on those who are at ease in Zion (6:1)."],
+            ["7:1-9:10", "FIVE VISIONS — locusts, fire, a plumb line, a basket of summer fruit, and the Lord standing beside the altar. ⚠ Twice Amos successfully talks God out of it ('how can Jacob stand? He is so small') and then stops asking. Wedged into the middle is the prose confrontation at Bethel: the priest Amaziah reports him to the king and tells him to go home."],
+            ["9:11-15", "THE FALLEN BOOTH OF DAVID — the only unqualified promise in the book, and the one passage whose authorship is most argued: raised ruins, replanted vineyards, and a people who will not be uprooted again."],
+        ],
+        themes=[
+            "JUSTICE AS THE TEST OF WORSHIP — the most quoted lines in the book are 5:21-24, where God says he HATES the festivals he commanded and will not look at the offerings, and then: 'let justice roll down like waters, and righteousness like an ever-flowing stream.' ⚠ Whether Amos rejects sacrifice in principle or only as practised by people who are selling the poor for a pair of sandals is one of the standing arguments about him.",
+            "THE DAY OF JEHOVAH, TURNED AROUND — Amos is the first person on record to take a phrase his audience used about their enemies and point it at them: 'woe to you who long for the day of Jehovah! Why do you want it? It is darkness and not light' (5:18). Every later use of the phrase, in Joel, Zephaniah, Malachi and the New Testament, is downstream of that reversal.",
+            "ELECTION AS LIABILITY — 'you ONLY have I known of all the families of the earth; THEREFORE I will punish you for all your iniquities' (3:2). The logic that was expected to end 'therefore you are safe' ends the other way, and the therefore is doing all the work.",
+            "GOD'S OTHER EXODUSES — 9:7 is one of the most startling verses in the prophets: 'Are you not like the Ethiopians to me, Israelites? Did I not bring Israel up from Egypt — and the Philistines from Caphtor, and Aram from Kir?' Israel's founding miracle is said to have counterparts in the histories of nations Israel despised.",
+            "PEOPLE AS MERCHANDISE — the phrase that recurs is the selling of a human being for money: 'they sell the righteous for silver, and the needy for a pair of sandals' (2:6; again at 8:6), alongside rigged scales, a shortened measure and a heavy shekel. The crimes of chapter 1 are committed by armies; the crimes of chapter 8 are committed by accountants.",
+        ],
+        key_words=["pesha", "armon", "noqed", "shaag", "teruah", "yom-yhwh"],
+        key_people=["amos", "tekoa", "uzziah", "jeroboam-ii", "bethel", "samaria", "gilead"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Amos's Hebrew is direct, concrete and mostly clear — the difficulties are lexical rather than syntactic: rare words like NOQED (1:1) and BOLES (7:14), a handful of agricultural and architectural terms, and the perennial question of what the unattached pronoun in 'I will not turn IT back' refers to. Where a word is uncertain this translation says so; where the versions differ sharply (Edom's 'compassions' at 1:11, 'their king' or the god Milcom at 1:15) both readings are given with their pedigrees and neither is adopted by fiat.",
+        christ="Amos reaches the New Testament twice by direct quotation, and both times through the GREEK rather than the Hebrew. ⚠ At the Jerusalem council, James settles the question of Gentile converts by quoting Amos 9:11-12 in a form that reads 'that the rest of mankind may seek the Lord' — where the Hebrew reads 'that they may possess the remnant of Edom' (Acts 15:16-17). And Stephen, in the speech that gets him killed, quotes Amos 5:25-27 with its Septuagint 'Rephan' (Acts 7:42-43). Beyond quotation, the book's insistence that worship without justice is offensive to God runs straight into the Gospels' quarrel about tithing mint and cumin while neglecting 'the weightier matters of the law: justice, mercy and faith' (Matthew 23:23). 'Let justice roll down like waters' was quoted by Martin Luther King Jr. on the steps of the Lincoln Memorial and is carved on his memorial in Washington.",
+        debates="WHETHER THE SHORT ORACLES ARE ORIGINAL — Tyre, Edom and Judah lack the closing formula and the expansion the others have, and many critics read them as later additions; others read the variation as pacing. WHETHER 9:11-15 IS BY AMOS — the book's one unqualified promise, in a book otherwise without consolation, and the passage that mentions the fallen booth of DAVID, a southern dynasty; defenders point out that a prophet may end differently from how he began. WHETHER AMOS REJECTS SACRIFICE ITSELF or only sacrifice offered by the people described in chapters 2-6. WHAT AMOS WAS — a man of property or a hired hand, which turns on one rare word. And the perennial question of how a book so hostile to the northern kingdom's sanctuary came to be preserved by anyone at all.",
     ),
     "Hosea": dict(
         hebrew_name="הוֹשֵׁעַ",
