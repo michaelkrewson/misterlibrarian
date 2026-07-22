@@ -827,6 +827,12 @@ DICTIONARY = [
      "LEADER, designated ruler — the older, less grand word Israel's tradition prefers for the man God appoints over his people, distinct from melekh, 'king.' Samuel anoints Saul as nagid before anyone calls him king; David uses it of Solomon at 1 Kings 1:35 ('it is he whom I have appointed to be leader over Israel and over Judah'). A nagid is designated by someone; a melekh simply reigns.", ("1 Kings", 1, 35)),
     ("kisse", "kisse", "כִּסֵּא", "kisse",
      "THRONE — literally a seat of honor. It is the drumbeat of 1 Kings 1, named some ten times in fifty-three verses: whoever 'sits on the throne of my lord the king after him' is the chapter's whole question, and every party to the quarrel repeats the phrase. Behind it stands the promise of 2 Samuel 7:16, that David's throne would be established forever — a promise the rest of the book watches go wrong.", ("1 Kings", 1, 13)),
+    ("baal-zevuv", "Ba'al Zevuv", "בַּעַל זְבוּב", "Ba'al Zevuv",
+     "'LORD OF FLIES' — the god of Ekron whom Ahaziah consults (2 Kings 1:2, 3, 6, 16), and almost certainly a Hebrew slander rather than a real cult title. The Ugaritic texts attest zbl b'l, 'BAAL THE PRINCE' (zevul = prince, or exalted dwelling), and the Hebrew looks like a one-consonant demotion: Prince Baal becomes Fly-lord. The decisive evidence is that the Greek New Testament, centuries later, still knows the un-mocked form — BEELZEBOUL, with the L, as a name for the prince of the demons (Matthew 12:24; Mark 3:22). That is how a Philistine city god became, by way of a pun, a name for the devil in English.", ("2 Kings", 1, 2)),
+    ("darash", "darash", "דָּרַשׁ", "darash",
+     "To SEEK, inquire of, consult — the ordinary verb for going to a god, a prophet, or an oracle with a question. It is the drumbeat of 2 Kings 1 (vv 2, 3, 6, 16): the charge against Ahaziah is not that he broke a rule but that he sent to INQUIRE somewhere else, 'as though there were no God in Israel.' The same verb carries the warmer sense in the prophets and psalms — to seek Jehovah, to resort to him.", ("2 Kings", 1, 2)),
+    ("ish-haelohim", "ish ha-Elohim", "אִישׁ הָאֱלֹהִים", "ish ha-Elohim",
+     "MAN OF GOD — the standing title for a prophet in the Elijah and Elisha narratives, used some seventy times in Kings. ⚠ In 2 Kings 1 it becomes a wordplay: the captains address Elijah with the title as a formula, and he answers 'if I am a man of God (ISH), let fire (ESH) come down' — the two words are one letter apart in Hebrew, and verse 12 fuses them as esh Elohim, 'the fire of God.'", ("2 Kings", 1, 9)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2759,6 +2765,44 @@ ENCYCLOPEDIA = [
          refs=[("1 Kings", 1, 9)], videos=[],
          coords=(31.7705, 35.2364, 0.02), approx=True,
          modern="Jerusalem — Bir Ayyub, where the Kidron and Hinnom valleys meet"),
+    dict(slug="elijah", name="Elijah", kind="person", aliases=["Elijah"],
+         desc="The Tishbite — the prophet who arrives in 1 Kings 17 with no introduction, no father named and no "
+              "call narrative, announces a drought, and dominates the rest of the book. He is fed by ravens, raises "
+              "a widow's son, faces down the prophets of Baal on Carmel, then runs from Jezebel into the wilderness "
+              "and asks to die, and hears God not in wind, earthquake or fire but in a thin whisper of silence. "
+              "Recognizable by a hair garment and a leather belt (2 Kings 1:8) — the costume John the Baptist wears "
+              "as a claim. He does not die: a chariot of fire separates him from Elisha and he goes up in a "
+              "whirlwind (2 Kings 2). Malachi ends the Old Testament promising he will come again before the great "
+              "day, which is why he is expected in the Gospels, identified there with John, and appears beside "
+              "Moses at the transfiguration.",
+         refs=[("2 Kings", 1, 3), ("Luke", 1, 17)], videos=[]),
+    dict(slug="ahaziah-israel", name="Ahaziah of Israel", kind="person", aliases=["Ahaziah"],
+         desc="Son of Ahab and Jezebel, king of Israel for barely two years (c. 853-852 BC). His whole recorded "
+              "reign is a fall through a roof lattice and its consequences: injured, he sends to Baal-zebub of "
+              "Ekron for a prognosis, is intercepted by Elijah, sends three companies of fifty to bring the prophet "
+              "in, and dies childless, succeeded by his brother Jehoram. ⚠ Not to be confused with the AHAZIAH of "
+              "Judah, his nephew and namesake, who reigns a few years later (2 Kings 8-9) — two kings of the same "
+              "name in the two kingdoms, one of several such collisions that make the chronology of Kings hard.",
+         refs=[("2 Kings", 1, 2)], videos=[]),
+    dict(slug="ekron", name="Ekron", kind="place", aliases=["Ekron"],
+         desc="The northernmost of the five Philistine cities, and the nearest of them to Israelite territory — "
+              "which is why Ahaziah's delegation goes there. Identified since 1957 with Tel Miqne, and confirmed in "
+              "1996 by one of the most satisfying finds in Levantine archaeology: a dedicatory inscription in a "
+              "7th-century temple naming the city as Ekron and listing five of its rulers, including two kings "
+              "known from Assyrian records. In the ark narrative of 1 Samuel it is the last of the Philistine "
+              "cities the captured ark is sent to, and the one that finally sends it home.",
+         refs=[("2 Kings", 1, 2)], videos=[],
+         coords=(31.7783, 34.8517, 0.06),
+         modern="Tel Miqne, Israel — inland from Ashdod, near the modern Kibbutz Revadim"),
+    dict(slug="samaria", name="Samaria", kind="place", aliases=["Samaria"],
+         desc="Capital of the northern kingdom of Israel from Omri onward — he bought the hill from a man named "
+              "Shemer and built a new capital on it (1 Kings 16:24), the way David had taken Jerusalem: a city "
+              "belonging to the dynasty rather than to a tribe. Ahab and Jezebel's ivory-inlaid palace here is "
+              "described in Kings and its ivories have been excavated. Besieged and taken by Assyria in 722 BC, "
+              "ending the northern kingdom; its later inhabitants are the Samaritans of the Gospels.",
+         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3)], videos=[],
+         coords=(32.2803, 35.1897, 0.06),
+         modern="Sebastia, in the hills north-west of Nablus, West Bank"),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3389,6 +3433,11 @@ XREFS = [
     ((("1 Kings", 1, 13)), (("1 Kings", 1, 30)), "the oath the reader has never heard of — asserted by Bathsheba, never claimed by Nathan, and confirmed by David in words that could equally be a new one"),
     ((("1 Kings", 1, 39)), (("1 Samuel", 1, 1)), "anointing with the horn of oil — the act that makes a king a mashiach, an anointed one"),
     ((("1 Kings", 1, 50)), (("Exodus", 1, 1)), "the horns of the altar as sanctuary — but Exodus 21:14 says a deliberate killer is to be taken FROM the altar to die"),
+    # ---- 2 Kings 1 ----
+    ((("2 Kings", 1, 2)), (("1 Kings", 1, 1)), "Kings is ONE scroll — the Greek split fell mid-reign, and the second half opens as the first did, on a royal body that has stopped working"),
+    ((("2 Kings", 1, 8)), (("Mark", 1, 6)), "hair and a leather belt — John the Baptist wears Elijah's costume, and it is a claim about whose successor he is"),
+    ((("2 Kings", 1, 12)), (("Job", 1, 16)), "'the fire of God' fell from the heavens — the same phrase, there in the mouth of a messenger who has no idea what he is saying"),
+    ((("2 Kings", 1, 16)), (("2 Kings", 1, 3)), "'is it because there is no God in Israel?' — asked three times, word for word: by the angel, by the messengers, and to the king's face"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3698,6 +3747,9 @@ VERSE_OF_DAY = [
     ("1 Kings", 1, 6, "“His father had never pained him all his days by saying, ‘Why have you done so?’” The quietest indictment in the book."),
     ("1 Kings", 1, 13, "“Did not you, my lord the king, swear to your servant…?” An oath the reader has never once heard of."),
     ("1 Kings", 1, 40, "“So that the earth was split with their sound.” The joy at Solomon's anointing is loud enough to break something."),
+    ("2 Kings", 1, 3, "“Is it because there is no God in Israel that you are going to inquire of Baal-zebub?” The charge is not idolatry but vacancy."),
+    ("2 Kings", 1, 8, "“A man possessed of hair, with a leather belt bound about his waist.” Eight centuries later John the Baptist wears it on purpose."),
+    ("2 Kings", 1, 15, "“Go down with him; do not be afraid of him.” Said to the prophet who once ran a day into the wilderness from this man's mother."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4136,6 +4188,9 @@ CHRON_CHAPTERS = {
     "1kgs1": dict(era="monarchy",
                   when="The last days of David — an old king who cannot get warm, two sons claiming the throne on the same afternoon, and Solomon anointed at the Gihon spring.",
                   clock="c. 970 BC. David reigns forty years (seven in Hebron, thirty-three in Jerusalem, 2 Samuel 5:4-5), so his death falls near 970 and Solomon's temple is begun 'in the four hundred and eightieth year after the exodus' and his own fourth year (1 Kings 6:1) — the verse on which the whole biblical chronology of the monarchy is pinned, and one of the two anchors of the exodus date."),
+    "2kgs1": dict(era="monarchy",
+                  when="Samaria, in the two-year reign of Ahaziah son of Ahab — a king injured by a fall who sends to a Philistine god for a prognosis, and the last appearance of Elijah before he is taken up.",
+                  clock="c. 852 BC. ⚠ The verse that dates the succession (1:17, 'the second year of Jehoram son of Jehoshaphat') does not sit easily with the synchronisms at 3:1 and 8:16 — a small sample of the largest technical problem in Kings, whose cross-dated regnal notices are the backbone of Old Testament chronology and do not add up on a plain reading."),
 }
 
 CHRON_EVENTS = [
@@ -4254,6 +4309,9 @@ CHRON_EVENTS = [
     dict(era="monarchy", am="—", trad="c. 970 BC", event="David dies; Solomon anointed at Gihon and the kingdom established in his hand",
          note="1 Kings 1-2. The succession is settled in a single afternoon: Adonijah's feast at En Rogel against Solomon's anointing at the city's own spring. Solomon's fourth year, when the temple is begun, is dated in 1 Kings 6:1 to the 480th year after the exodus — the verse the whole chronology of the monarchy hangs from.",
          ref=("1 Kings", 1, 39)),
+    dict(era="monarchy", am="—", trad="c. 852 BC", event="Ahaziah of Israel dies after a fall; Elijah's last confrontation with a king, and Moab's revolt",
+         note="2 Kings 1. The Moabite side of that same revolt survives independently on the MESHA STELE (the Moabite Stone, found at Dhiban in 1868), where King Mesha gives his own account of throwing off Israel and credits his god Chemosh — one of the few places where the other party to a biblical war left a statement of its own.",
+         ref=("2 Kings", 1, 1)),
     dict(era="exile", am="—", trad="605 BC", event="Nebuchadnezzar's first deportation: Daniel taken to Babylon; the temple vessels to Shinar",
          note="Daniel 1:1's 'third year of Jehoiakim' vs Jeremiah 25:1's 'fourth' — Babylonian accession-year counting vs Judean inclusive counting; both land on 605, the year of Carchemish, fixed by the Babylonian Chronicle tablets: the chronology's first externally documented date.",
          ref=("Daniel", 1, 1)),
@@ -5518,5 +5576,41 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). The narrative Hebrew of Kings is classical and clean — 1 Kings 1-2, the conclusion of the 'succession narrative' begun in 2 Samuel, is often called the finest prose in the Bible. ⚠ Two textual matters worth knowing: the Greek Septuagint of Kings differs from the Hebrew in ORDER as well as wording, and preserves a notably different account of Jeroboam; and the book carries an unusual number of ketiv/qere (written/read) notes, three of them in chapter 1 alone. The technical vocabulary of the temple chapters (6-7) contains a number of architectural terms whose meanings are reconstructed rather than known.",
         christ="The throne of David is the thread. The promise that his house and kingdom would be established forever (2 Samuel 7:16) is quoted, invoked and tested all through Kings, and it survives the book's own ending — the dynasty is deported, not extinguished, and the last paragraph has a son of David eating at a king's table. The New Testament picks that thread up in its first sentence, 'Jesus Christ, son of David.' Solomon supplies both a type and a warning: Jesus speaks of himself as one 'greater than Solomon' (Matthew 12:42), and of the lilies outclassing Solomon in all his glory (Matthew 6:29). And Elijah, who arrives in this book without introduction, is the figure the New Testament reaches for constantly — the one Malachi promises will come before the day of Jehovah, whom Jesus identifies with John the Baptist, and who stands beside Moses on the mountain of transfiguration.",
         debates="The CHRONOLOGY — the cross-dated regnal notices do not add up on a plain reading, and the standard reconciliation (co-regencies, differing new-year reckonings) is a construction, not a datum. The COMPOSITION — how many editions of the Deuteronomistic History there were, and whether the first was Josianic or exilic. The relationship to CHRONICLES, which tells much of the same story with different emphases and sometimes different facts. The historicity of SOLOMON's empire, where the biblical description of a wealthy imperial state and the archaeological record of tenth-century Jerusalem are hard to line up, and the dating of the monumental gates at Hazor, Megiddo and Gezer (1 Kings 9:15) is actively contested. And, within the text itself, the question this site's first chapter raises: whether the oath Bathsheba invokes was ever sworn. Laid out with pedigrees; the library does not cast a vote.",
+    ),
+    "2 Kings": dict(
+        hebrew_name="מְלָכִים ב",
+        hebrew_translit="Melakhim Bet",
+        hebrew_meaning="'2 Kings.' ⚠ There is no such book in the Hebrew Bible. Kings — Melakhim — is ONE scroll; the division into two is the Greek Septuagint's, made because a scroll has a practical length, and it fell in the middle of a reign: Ahaziah falls through his lattice at the end of 1 Kings and is still lying there in the second verse of 2 Kings.",
+        greek_name="Βασιλειῶν Δʹ (Basileion D) — '4 Kingdoms'",
+        greek_meaning="The Septuagint counts Samuel and Kings as four 'books of the Kingdoms,' so 2 Kings is '4 Kingdoms.' Its Greek text differs from the Hebrew in wording and sometimes in the regnal numbers, which it appears to have rearranged in an attempt to make the chronology work.",
+        tagline="The end of two kingdoms — Elijah taken up in a whirlwind, Elisha's miracles, a long line of kings mostly failing one test, and then Assyria takes the north and Babylon takes the south, and the book closes on a released prisoner eating at a foreign king's table.",
+        genre="HISTORICAL NARRATIVE with a thesis, and two registers that sit oddly together: the PROPHET STORIES of the Elijah-Elisha cycle (chs 1-13) — vivid, folkloric, full of floating axe-heads and healed generals — and the ANNALISTIC record of the two kingdoms' kings, each judged by the same formula and cross-dated against the other. The second half is the closest the Bible comes to sustained political history, and it is where biblical narrative and Assyrian and Babylonian records finally start naming the same people.",
+        canon="One book with 1 Kings in the Hebrew canon, among the Former Prophets; in the Christian Old Testament, the fourth of the Samuel-Kings sequence, followed by 1-2 Chronicles, which retells much of it from a later and very different angle.",
+        author="Anonymous — the same Deuteronomistic historian (or school) as 1 Kings, working from named sources: the Chronicles of the Kings of Israel and the Chronicles of the Kings of Judah, both lost, cited some thirty times between the two books. Jewish tradition credits Jeremiah (Bava Batra 15a); the last event recorded, the release of Jehoiachin in about 561 BC, sets the earliest possible date for the finished work.",
+        date="The narrative runs c. 852 BC (this chapter) to 561 BC. Most reconstructions posit a first edition in the reign of JOSIAH — whose reform (ch 22-23) reads like the climax the whole history has been building toward — and a short, bleak updating in the exile, after everything Josiah did was undone in a generation.",
+        place="Samaria and Jerusalem, and then neither. The book's geography widens as its subjects lose control of it: Damascus, Nineveh, Babylon, and finally Egypt and a Babylonian prison. The last verses are set at a table in Babylon.",
+        audience="Exiles — people holding a promise about a dynasty and a temple, both of which have just been demolished. Kings answers the question they cannot avoid asking, and its answer is that the covenant was not broken by God. It is a hard book written for people in a hard position, and it does not offer them comfort so much as an account.",
+        structure=[
+            ["1-2", "The end of Elijah — Ahaziah's fall and the fire on the hillside; then the whirlwind, the chariot of fire, and the mantle passing to Elisha."],
+            ["3-8", "THE ELISHA CYCLE — the widow's oil, the Shunammite's son, the poisoned stew, Naaman the Syrian leper, the floating axe-head, the army struck blind and fed dinner, the siege of Samaria lifted by four lepers."],
+            ["9-11", "JEHU's coup — the bloodiest chapters in the Bible: Joram, Ahaziah, Jezebel at the window, the seventy sons, the priests of Baal; then Athaliah in Judah and the boy king hidden in the temple."],
+            ["12-16", "Two kingdoms in parallel decline, as Assyria begins to arrive."],
+            ["17", "THE FALL OF SAMARIA (722 BC) — and the one chapter where the narrator stops the story to explain, at length, exactly why."],
+            ["18-20", "HEZEKIAH — Sennacherib's siege of Jerusalem, the Rabshakeh's speech from the wall, the angel in the Assyrian camp, and the king's tunnel and his illness."],
+            ["21-23", "Manasseh's long reign, then JOSIAH: a scroll found during temple repairs, the most thorough reform in the book — and the flat statement that it changed nothing about what was coming."],
+            ["24-25", "THE FALL OF JERUSALEM (586 BC) — siege, famine, the temple burned, the vessels itemized as they are carried off; and a last paragraph in which Jehoiachin is let out of prison and given a seat."],
+        ],
+        themes=[
+            "THE WORD THAT COMES TRUE — a prophecy is spoken and the narrator returns, sometimes centuries later, to note that it happened. The book's logic is that history is the record of God's word arriving.",
+            "PROPHET AGAINST KING — Elijah and Elisha have more narrative weight than any monarch, and the miracles they work are mostly small, domestic and aimed at people with no power: a widow's debt, a poisoned pot, a borrowed axe, a foreign soldier's skin.",
+            "ONE TEST, APPLIED TO EVERYONE — every reign gets the same verdict formula, and the standard never moves. Every king of Israel fails it; most kings of Judah do; two (Hezekiah and Josiah) pass outright, and it is not enough.",
+            "IT WAS NOT UNDESERVED — chapter 17 is the book's thesis stated without narrative: an explicit, unhurried explanation of why the northern kingdom fell, so that no reader can conclude that God simply lost.",
+            "AND YET THE DOOR IS LEFT OPEN — the book will not end in the ashes. Its final paragraph is small, strange and deliberate: a Davidic king taken out of a Babylonian prison, given clothes, and seated at a table for the rest of his life.",
+        ],
+        key_words=["darash", "ish-haelohim", "baal-zevuv", "kisse"],
+        key_people=["elijah", "ahaziah-israel", "samaria", "ekron"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Two things a reader should know. First, the CHRONOLOGY: the cross-dated regnal notices — each king of Judah dated by the reigning king of Israel and vice versa — are the backbone of Old Testament dating and do not add up on a plain reading. The standard reconciliation invokes co-regencies and two different new-year reckonings; it is widely used, genuinely reflects ancient practice, and is also flexible enough to absorb almost any discrepancy. The Greek text rearranges some of the numbers, which suggests the difficulty was felt early. Second, 2 Kings is where the Bible and the ANNALS OF OTHER EMPIRES finally describe the same events: Shalmaneser III's Black Obelisk shows Jehu bowing, Sennacherib's prism describes shutting Hezekiah up 'like a bird in a cage,' the Babylonian Chronicle dates the capture of Jerusalem to March 597, and ration tablets from Babylon name Jehoiachin. The notes flag these where they fall.",
+        christ="Elijah is the thread that runs straight out of this book into the Gospels. He does not die; Malachi's last words promise he will be sent again before the great and terrible day of Jehovah; and the New Testament opens with a man in his exact costume, of whom Jesus says 'he is Elijah who was to come.' Elijah then appears in person beside Moses at the transfiguration. Elisha supplies a different kind of anticipation: his miracles — multiplied bread with some left over, a dead child raised, a foreigner healed of leprosy — are the closest Old Testament analogues to the Gospel miracles, and Jesus cites two of them in his first sermon at Nazareth (Luke 4:25-27) precisely to make the point that God's mercy went to outsiders. And the book's last paragraph keeps a son of David alive in exile, which is the thread Matthew picks up in his first sentence.",
+        debates="The CHRONOLOGY, above all. Then the historicity and shape of the Elisha cycle, which reads unlike the annalistic material around it and is usually thought to have circulated separately. The number and date of the DEUTERONOMISTIC editions (Josianic-plus-exilic is the common view; some argue for one exilic composition). The relationship to CHRONICLES, which omits the northern kingdom almost entirely and rehabilitates Manasseh. And a cluster of specific problems where the biblical account and the Assyrian records overlap without quite agreeing — most famously Sennacherib's campaign of 701, where the Bible reports the siege lifted by a catastrophe in the Assyrian camp and Sennacherib reports tribute received, and the two are not straightforwardly reconcilable. Laid out with pedigrees; the library does not cast a vote.",
     ),
 }
