@@ -68,6 +68,7 @@ MECHON_BOOKS = {
     "27": ("Job", 42),
     "28": ("Proverbs", 31),
     "29": ("Ruth", 4),
+    "30": ("Song of Solomon", 8),
     "31": ("Ecclesiastes", 12),
     "33": ("Esther", 10),
     "34": ("Daniel", 12),
