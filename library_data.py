@@ -839,6 +839,12 @@ DICTIONARY = [
      "KNOWLEDGE, understanding — from yada, 'to know.' ⚠ A LATE word: it occurs only a handful of times in the Hebrew Bible, and all of them (Chronicles, Ecclesiastes, Daniel) are books whose Hebrew belongs to the Persian period or after — one of the small pieces of evidence for dating Chronicles late. At 2 Chronicles 1:10 Solomon asks for chokhmah u-madda, 'wisdom and knowledge,' where the parallel at 1 Kings 3:9 has him ask for a LISTENING HEART to discern good and evil: moral discernment in one book, administrative competence in the other. In modern Hebrew madda is the ordinary word for SCIENCE.", ("2 Chronicles", 1, 10)),
     ("bamah", "bamah", "בָּמָה", "bamah",
      "HIGH PLACE — a raised open-air sanctuary, the ordinary form of worship in Canaan and in Israel before the temple. The book of Kings condemns them relentlessly and judges nearly every king by whether he removed them. ⚠ 2 Chronicles 1:3 handles the awkward fact that Solomon sacrificed at the high place at GIBEON by explaining what Kings never does: the tent of meeting Moses made was there, with Bezalel's bronze altar in front of it. Whether that is older information or the Chronicler's defence of a beloved king is a real question; the library does not vote.", ("2 Chronicles", 1, 3)),
+    ("alah", "alah", "עָלָה", "alah",
+     "To GO UP — and in the books of the return it is the technical word for making the journey from Babylonia to Jerusalem, which is uphill in every sense (the road climbs, and one 'goes up' to a sanctuary). ⚠ It carries extraordinary weight: 'let him GO UP' (ve-ya'al) is the LAST WORD OF THE HEBREW BIBLE, since Chronicles closes the canon and breaks off mid-sentence on Cyrus's decree — the sentence Ezra 1:3 then finishes. It is also the last clause of Ezra 1 ('Sheshbazzar brought up… when the exiles were brought up'), and it survives in modern Hebrew as ALIYAH, immigration to Israel.", ("Ezra", 1, 3)),
+    ("kelim", "kelim", "כֵּלִים", "kelim",
+     "VESSELS, implements — the temple's gold and silver service, and one of the few physical objects whose whole story the Bible tells. Nebuchadnezzar carries them off to the treasure house of his god (Daniel 1:2; 2 Kings 25); Belshazzar drinks wine from them at his last feast and sees the writing on the wall (Daniel 5); and here Cyrus has them counted out of that same temple and sent home (Ezra 1:7-11). They are what survives the catastrophe intact — returned, like everything else in this book, by inventory.", ("Ezra", 1, 7)),
+    ("nedavah", "nedavah", "נְדָבָה", "nedavah",
+     "A FREEWILL OFFERING — a gift given because the giver chose to, as distinct from anything owed or commanded; the root nadav means to volunteer. It runs through the return literature: the neighbours' contributions here (1:4, 6), the householders' gifts at the foundation, and — in the same idiom — the people who 'freely offered themselves' for the work.", ("Ezra", 1, 4)),
 ]
 
 ENCYCLOPEDIA = [
@@ -1260,7 +1266,7 @@ ENCYCLOPEDIA = [
               "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
               "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -1433,7 +1439,7 @@ ENCYCLOPEDIA = [
               "court tales give him a dream he refuses to tell (ch. 2), a furnace (ch. 3), a humbling madness — "
               "and, uniquely among scripture's tyrants, a doxology (4:34-37). Douay, via the Greek, spells him "
               "Nabuchodonosor.",
-         refs=[("Daniel", 1, 1), ("Daniel", 1, 18), ("Jeremiah", 21, 2), ("Jeremiah", 21, 7)], videos=[]),
+         refs=[("Daniel", 1, 1), ("Daniel", 1, 18), ("Jeremiah", 21, 2), ("Jeremiah", 21, 7), ("Ezra", 1, 7)], videos=[]),
     dict(slug="hananiah-mishael-azariah", name="Hananiah, Mishael, and Azariah", kind="person",
          aliases=["Hananiah", "Mishael", "Azariah", "Shadrach", "Meshach", "Abednego"],
          desc="Daniel's three companions from Judah — 'Yah has been gracious,' 'who is what El is?', 'Yah has "
@@ -2224,7 +2230,7 @@ ENCYCLOPEDIA = [
               "begun (605 BC). The city fell to Cyrus in 539 BC (the Nabonidus Chronicle and Cyrus Cylinder "
               "carry the receipt), and Revelation will pick the name up again as the world-city's cipher "
               "(chs. 17–18).",
-         refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1)],
+         refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1), ("Ezra", 1, 11)],
          coords=(32.5364, 44.4209, 0.5),
          modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
          videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8"),
@@ -2468,7 +2474,7 @@ ENCYCLOPEDIA = [
               "in the stocks, thrown down a cistern, and finally carried off to Egypt. The 'weeping prophet,' whose "
               "anguished 'confessions' lay his inner life bare, and who was given the promise of a NEW COVENANT "
               "written on the heart (31:31-34). His scribe BARUCH wrote his words down (ch 36).",
-         refs=[("Jeremiah", 1, 1), ("Jeremiah", 1, 5)], videos=[]),
+         refs=[("Jeremiah", 1, 1), ("Jeremiah", 1, 5), ("Ezra", 1, 1)], videos=[]),
     dict(slug="anathoth", name="Anathoth", kind="place", aliases=["Anathoth"],
          desc="A Levitical (priestly) town in the territory of Benjamin, about three miles (5 km) northeast of "
               "Jerusalem — JEREMIAH's home village (1:1). It was very likely the place to which Solomon banished the "
@@ -2828,6 +2834,27 @@ ENCYCLOPEDIA = [
               "notes that his altar was still standing at Gibeon in Solomon's day, which links the new temple's "
               "worship directly back to Moses.",
          refs=[("2 Chronicles", 1, 5)], videos=[]),
+    dict(slug="cyrus", name="Cyrus", kind="person", aliases=["Cyrus"],
+         desc="Cyrus II, 'the Great' — founder of the Persian empire, who took Babylon in 539 BC and issued the "
+              "decree that ends the exile. Isaiah 45:1 calls him Jehovah's MASHIACH, his anointed — the only "
+              "foreigner in the Bible given that title — and names him a century-and-a-half before, which is one of "
+              "the standing arguments about the composition of Isaiah. ⚠ His policy of repatriating deported "
+              "peoples and restoring their sanctuaries is attested outside the Bible on the CYRUS CYLINDER (British "
+              "Museum), a clay barrel inscribed after the fall of Babylon — on which Cyrus credits MARDUK, in "
+              "wording strikingly close to Ezra 1:2, with giving him the kingdoms and commissioning the work. "
+              "Whether Ezra preserves a genuine Judean-language version of the same rescript or the Judean "
+              "historian's framing of it is set out in the notes; the policy itself is not in doubt.",
+         refs=[("Ezra", 1, 1), ("Ezra", 1, 2), ("Ezra", 1, 7)], videos=[]),
+    dict(slug="sheshbazzar", name="Sheshbazzar", kind="person", aliases=["Sheshbazzar"],
+         desc="'The prince of Judah,' who receives the temple vessels from Cyrus's treasurer (Ezra 1:8) and brings "
+              "them up to Jerusalem — and whom Ezra 5:14-16 says was made governor and laid the foundation of the "
+              "house of God. Then he vanishes, and every other account credits ZERUBBABEL with the foundation. "
+              "Three explanations are current: that Sheshbazzar and Zerubbabel are one man under two names (a "
+              "Babylonian court name and a Hebrew one, as with Daniel and his friends); that they are two men a "
+              "generation apart; and that he is the SHENAZZAR listed among the sons of Jehoiachin at 1 Chronicles "
+              "3:18, which would make him a genuine Davidic prince and Zerubbabel's uncle. None is proven, and the "
+              "gap is a real one in an otherwise well-documented period.",
+         refs=[("Ezra", 1, 8), ("Ezra", 1, 11)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -3475,6 +3502,11 @@ XREFS = [
     ((("2 Chronicles", 1, 10)), (("2 Chronicles", 1, 12)), "'wisdom and knowledge' — where 1 Kings 3:9 has Solomon ask for a LISTENING HEART to discern good and evil"),
     ((("2 Chronicles", 1, 16)), (("2 Chronicles", 1, 17)), "horses out of Egypt — the two things Deuteronomy 17:16 forbids a king by name, recorded here without comment"),
     ((("2 Chronicles", 1, 18)), (("1 Kings", 1, 13)), "a house for the Name and a house for his kingdom — the temple this book exists for, and the palace it will barely mention"),
+    # ---- Ezra 1 ----
+    ((("Ezra", 1, 1)), (("Jeremiah", 1, 5)), "'so that the word of Jehovah from the mouth of Jeremiah might be completed' — the seventy years, treated as an account come due"),
+    ((("Ezra", 1, 3)), (("2 Chronicles", 1, 18)), "'let him go up' is the LAST WORD OF THE HEBREW BIBLE — Chronicles closes the canon mid-sentence, and Ezra finishes it"),
+    ((("Ezra", 1, 4)), (("Exodus", 12, 35)), "the neighbours hand over silver and gold — a second exodus, signalled by the shape of the sentence and never named"),
+    ((("Ezra", 1, 7)), (("Daniel", 1, 2)), "the vessels Nebuchadnezzar put in the treasure house of his god, now counted back out of it"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -3793,6 +3825,9 @@ VERSE_OF_DAY = [
     ("2 Chronicles", 1, 10, "“Now give me wisdom and knowledge.” In 1 Kings he asks for a listening heart; the same night, told twice."),
     ("2 Chronicles", 1, 12, "“Such as none of the kings before you has had, and none after you shall have.” Written for readers who knew how the line ended."),
     ("2 Chronicles", 1, 18, "“A house for the name of Jehovah, and a house for his kingdom.” Two buildings; this book cares about one of them."),
+    ("Ezra", 1, 1, "“Jehovah stirred up the spirit of Cyrus king of Persia.” The same verb, four verses later, is used of ordinary householders."),
+    ("Ezra", 1, 3, "“Let him go up to Jerusalem.” The last words of the Hebrew Bible, here finished into a sentence."),
+    ("Ezra", 1, 11, "“All this Sheshbazzar brought up when the exiles were brought up.” Gold, silver and people, going up the same road."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4240,6 +4275,9 @@ CHRON_CHAPTERS = {
     "2chr1": dict(era="monarchy",
                   when="The opening of Solomon's reign — the assembly at Gibeon, the night God appeared, and the resolve to build.",
                   clock="c. 970 BC by the book's own reckoning, though Chronicles (written centuries later, in the Persian period) is telling it to readers with no king at all. ⚠ Note the two clocks this book always keeps: the events are tenth-century, the telling is post-exilic, and the second is why the first is told this way."),
+    "ezra1": dict(era="return",
+                  when="Babylon has fallen and the first year of Persian rule has begun — the decree of Cyrus, the first party of returners, and the temple vessels counted out of a foreign treasury.",
+                  clock="538 BC — 'the first year of Cyrus king of Persia,' counted from his capture of Babylon in 539. The chapter dates itself by Jeremiah's seventy years (Jer 25:11-12; 29:10) reaching their term, and the policy behind it is externally fixed by the Cyrus Cylinder."),
 }
 
 CHRON_EVENTS = [
@@ -5733,5 +5771,39 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Two practical notes. First, VERSIFICATION: Hebrew 2 Chronicles 1 has eighteen verses where English Bibles have seventeen — Hebrew 1:18 is English 2:1 — and the offset runs through chapter 2 before the systems re-align at chapter 3. This translation follows the Masoretic numbering and flags the seam. Second, this book runs parallel to Samuel-Kings for long stretches, which makes it unusually useful for watching how a text was transmitted and how an ancient historian felt free to re-word what he had received: 1 Kings 3's 'listening heart' becomes 'wisdom and knowledge' here, in the same scene on the same night, and both stand in the same Bible.",
         christ="Chronicles ends the Hebrew Bible on an unfinished sentence — a decree to go up and build — and the New Testament opens on a genealogy that runs through the line this book has been tracing. Between them, the temple is the connection Christian reading has always made: a house for the NAME, which Solomon himself says cannot contain God ('the heavens and the heaven of heavens cannot contain you'), and which the New Testament first replaces with a body and then with a people. The book's other bequest is 7:14, which has probably been preached more often than any other verse in Chronicles, and whose conditions — humble, pray, seek, turn — are the shape of every reform this book admires.",
         debates="The book's HISTORICAL VALUE, long dismissed on the assumption that it simply rewrote Kings for pious ends, and substantially rehabilitated: several of its distinctive details (Hezekiah's tunnel and water works, Uzziah's building, Manasseh's Babylonian captivity) fit the archaeological and Assyrian evidence, and the Qumran Samuel scrolls showed that some of its apparent 'changes' reflect a different Hebrew text rather than invention. Also debated: the doctrine of immediate retribution and whether it flattens the tradition or sharpens it; the NUMBERS, frequently larger than the parallels; the relationship to Ezra-Nehemiah; and, in this chapter, whether the tent of meeting really stood at Gibeon or whether the Chronicler supplied it to explain away a high place. Laid out with pedigrees; the library does not cast a vote.",
+    ),
+    "Ezra": dict(
+        hebrew_name="עֶזְרָא",
+        hebrew_translit="Ezra",
+        hebrew_meaning="'Help' — short for Azaryah, 'Jehovah has helped.' ⚠ In the Hebrew Bible EZRA AND NEHEMIAH ARE ONE BOOK, counted as a single scroll among the Writings; the division into two is Christian, following the Greek and Latin tradition, and only became standard in Hebrew Bibles in the late Middle Ages.",
+        greek_name="Ἔσδρας (Esdras)",
+        greek_meaning="⚠ The Greek tradition is a thicket. The Septuagint's 'Esdras A' (1 Esdras) is a differently-arranged Greek book covering roughly 2 Chronicles 35 to Nehemiah 8, including a famous story of three young bodyguards debating what is strongest (the answer: truth); 'Esdras B' is the Greek of Ezra-Nehemiah as we have it. The numbering of the Esdras books differs between Greek, Latin and English tradition and has confused readers for centuries.",
+        tagline="The exile ends and nothing is easy — a decree, a caravan, an altar on a ruin, a foundation laid to the sound of shouting and weeping, twenty years of obstruction, and then a scribe who arrives with a scroll and a mandate.",
+        genre="HISTORICAL NARRATIVE with documents. Ezra is unusual in the Old Testament for quoting its sources at length — royal decrees, official letters and a legal correspondence with the Persian court — and for switching language to do it: 4:8-6:18 and 7:12-26 are in ARAMAIC, the empire's administrative tongue, exactly where imperial paperwork is being reproduced. It also contains a register (ch 2), lists of returners and offenders, and a long first-person section usually called the 'Ezra memoir.'",
+        canon="One book with Nehemiah in the Hebrew canon, among the Writings, and standing immediately BEFORE Chronicles there — so in the Jewish order the return is narrated and then the whole history is retold from Adam. In the Christian Old Testament the order is reversed and Ezra follows Chronicles, which makes the join at Cyrus's decree read as a continuation.",
+        author="Anonymous as a whole. Substantial parts are first-person from EZRA himself (chs 7-9), a priest and 'scribe skilled in the law of Moses' who arrives in Jerusalem in the seventh year of Artaxerxes; tradition credits him with the book and the Talmud with much else besides. The compiler drew on Ezra's memoir, Nehemiah's memoir, the Aramaic dossier, and lists; whether that compiler is the Chronicler is a long-running argument.",
+        date="The events run 538 BC (Cyrus's decree) to the mid-400s BC. ⚠ The book's own chronology is not straightforward: chapter 4 gathers opposition-letters from several reigns into one place, out of sequence, and the relative order of Ezra's and Nehemiah's missions — which depends on which Artaxerxes is meant — has been argued for over a century, with 458 BC and 398 BC the main proposals for Ezra's arrival. The compilation is usually placed in the 4th century.",
+        place="Two ends of a road. Babylonia, where most of the Judean community stayed, prospered and remained (their business archives survive); and Jerusalem, a small ruined town in a small Persian province, where a minority chose to go and rebuild.",
+        audience="The community that made that choice and then had to live with it. Ezra is about the unglamorous second act of a rescue — the paperwork, the funding, the neighbours' objections, the disappointment of the old men who remembered the first temple, and the hard question of who counts as Israel now.",
+        structure=[
+            ["1", "The decree of Cyrus; the temple vessels counted out and returned; the first party stirred up to go."],
+            ["2", "The register of those who came up — families, towns, singers, gatekeepers, temple servants; and the priests who could not prove their descent."],
+            ["3", "The altar rebuilt first, before any foundation; the feast of booths kept; and the foundation laid to a noise in which shouting and weeping could not be told apart."],
+            ["4-6", "OPPOSITION and permission — the neighbours' offer refused, letters to and from the Persian court (in Aramaic), the work stopped and restarted under Haggai and Zechariah, Darius's search of the archives at Ecbatana, and the temple finished in 516 BC and dedicated."],
+            ["7-8", "EZRA arrives — a priest and scribe with a royal commission, a caravan, a fast at the river Ahava, and a great deal of silver carried without an escort."],
+            ["9-10", "The crisis of the foreign marriages — Ezra's prayer of confession, the assembly in the rain, and the painful separations with which the book ends."],
+        ],
+        themes=[
+            "GOD WORKS THROUGH EMPIRES — the book opens with Jehovah stirring the spirit of a Persian king and keeps crediting imperial decrees, letters and funding to him. Providence here looks like administration.",
+            "THE HOUSE — the temple is the object of the first six chapters, and its rebuilding is treated as the real substance of the return; the walls wait for Nehemiah.",
+            "TORAH AND THE SCRIBE — with Ezra a new kind of figure arrives: not a prophet or a king but a man whose authority is a BOOK, who 'set his heart to study the law of Jehovah, and to do it, and to teach' (7:10). Much of later Judaism starts here.",
+            "WHO COUNTS AS ISRAEL — genealogies, registers, and the fierce and painful question of the foreign marriages. The book's answer is exclusive, and the Bible itself contains the counter-argument: Ruth the Moabite is David's great-grandmother.",
+            "THE GAP BETWEEN PROMISE AND ARRIVAL — the prophets had described a glorious restoration; what arrives is a modest building, a governor, and a lot of correspondence. Ezra is the book that describes what fulfilment actually felt like.",
+        ],
+        key_words=["alah", "kelim", "nedavah", "darash"],
+        key_people=["cyrus", "sheshbazzar", "jerusalem", "babylon"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠️ Ezra is one of only two books in the Bible partly written in ARAMAIC (with Daniel): 4:8-6:18 and 7:12-26, precisely the stretches that reproduce imperial correspondence, are in the administrative language of the Persian empire — a feature this translation will mark where it falls. The Hebrew elsewhere is late, with Persian loanwords (satrap, treasury, decree) and a number of technical terms whose meanings are reconstructed. Chapter 1's inventory of vessels is a well-known crux: the itemized figures total 2,499 and the stated total is 5,400. This translation prints the Masoretic numbers and states the discrepancy rather than repairing it.",
+        christ="Ezra's contribution is less a set of prophecies than a shape. The second temple this book builds is the one standing in the Gospels — smaller than Solomon's, wept over at its foundation, and the building Jesus taught in, cleansed and said would be destroyed. The figure of the SCRIBE who studies, does and teaches the law begins here, and by the Gospels the scribes are an institution Jesus argues with constantly. And the book's hardest theme — who belongs — is the question the New Testament reopens from the other side, when the covenant is thrown open to precisely the outsiders Ezra 9-10 separated from. Reading Ezra and Ruth together is the oldest way of feeling how live that argument already was inside the Old Testament.",
+        debates="The CHRONOLOGY, above all: whether Ezra preceded Nehemiah (the traditional order, 458 BC) or followed him (398 BC), which turns on which Artaxerxes chapter 7 means; and the deliberately non-chronological arrangement of chapter 4. The authenticity of the Aramaic DOCUMENTS, which most scholars now accept as substantially genuine on the basis of their formulae and vocabulary. The relationship of Ezra-Nehemiah to Chronicles. The historical value of 1 Esdras, which preserves a different arrangement. And the ethics of chapters 9-10, on which the Bible does not speak with one voice — a fact this library takes as data rather than as a problem to be resolved.",
     ),
 }

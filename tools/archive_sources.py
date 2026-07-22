@@ -69,6 +69,8 @@ MECHON_BOOKS = {
     "28": ("Proverbs", 31),
     "29": ("Ruth", 4),
     "34": ("Daniel", 12),
+    "35a": ("Ezra", 10),
+    "35b": ("Nehemiah", 13),
 }
 
 # SBLGNT Greek via helloao API: book id -> (name, chapter count)
