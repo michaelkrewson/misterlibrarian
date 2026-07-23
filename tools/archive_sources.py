@@ -68,6 +68,7 @@ MECHON_BOOKS = {
     "15": ("Amos", 9),
     "16": ("Obadiah", 1),
     "17": ("Jonah", 4),
+    "18": ("Micah", 7),
     "24": ("Malachi", 3),
     "25a": ("1 Chronicles", 29),
     "25b": ("2 Chronicles", 36),

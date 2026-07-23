@@ -588,7 +588,7 @@ DICTIONARY = [
     ("qets", "qets", "קֵץ", "qets",
      "'End' — from a root meaning CUT OFF: the drumbeat of Daniel 12. 'The time of the end' (et qets, 12:4, 9), 'the end of the wonders' (12:6), and the book's last breath — 'go on to the end... at the end of the days' (12:13). Genesis 6:13 uses it first: 'the end of all flesh has come before me.'", ("Daniel", 12, 4)),
     ("goral", "goral", "גּוֹרָל", "goral",
-     "'Lot' — the pebble drawn or cast to divide land, duty, destiny; hence one's allotted PORTION (Joshua's tribal allotments are goral country). Daniel's last word of destiny: 'you shall stand up to your LOT at the end of the days' (12:13) — a share with your name on it, not a game of chance.", ("Daniel", 12, 13)),
+     "A LOT — a marked stone or token drawn or cast to decide a question thought to be in God's hands (the 'let God point' procedure): 'the LOT is cast into the lap, but its every decision is from Jehovah' (Proverbs 16:33). Casting lots divides the promised land among the tribes (Numbers 26:55 — Joshua's tribal allotments are goral country), exposes Achan (Joshua 7:14-18), nearly condemns Jonathan (1 Samuel 14:41-42), and chooses Saul as king (1 Samuel 10:20-21). ⚠ In Jonah 1:7 pagan sailors cast lots to find whose guilt has raised the storm, and it falls on Jonah — the same procedure Edom had just thrown OVER Jerusalem as it fell (Obadiah 11). Its last appearances frame the Gospels: soldiers cast lots for Jesus' clothing (Matthew 27:35, fulfilling Psalm 22:18) and the eleven cast lots to replace Judas with Matthias (Acts 1:26) — the last time in Scripture, just before the Spirit comes and it is never used again. By extension goral means one's allotted PORTION or destiny — Daniel's last word of hope: 'you shall stand up to your LOT at the end of the days' (Daniel 12:13), a share with your name on it, not a game of chance.", ("Jonah", 1, 7)),
     ("moed", "mo'ed", "מוֹעֵד", "mo'ed",
      "'Appointed time' — Genesis 1:14's word: the lights are hung 'for appointed times' (mo'adim), this translation's fixed rendering. In Daniel 12:7 time itself is measured in them — 'an appointed time, appointed times, and a half': the broken seven, three and a half, sworn by the One who lives forever. Later the word also names the tent of MEETING (ohel mo'ed) — appointed time, appointed place.", (1, 14)),
     # ---- Matthew 5 (Greek) ----
@@ -939,10 +939,14 @@ DICTIONARY = [
      "EVIL, calamity, harm — a word that covers both moral wickedness AND the disaster it brings, since Hebrew often names a deed and its consequence with one word. ⚠ It is a thread through Jonah: Nineveh's 'EVIL has come up before me' (1:2, their wickedness); 'on whose account this EVIL has come upon us' (1:7, the sailors mean the calamity of the storm); God sees Nineveh turn from its 'EVIL way' and relents of the 'EVIL' he had said he would do (3:10, both senses in one verse); and — the book's sting — 'it was EVIL to Jonah, a great evil' (4:1) that God had been merciful. The same word carries the crime, the punishment, and Jonah's fury that the punishment was cancelled.", ("Jonah", 1, 2)),
     ("dag-gadol", "dag gadol", "דָּג גָּדוֹל", "dag gadol",
      "A GREAT FISH — the two plain Hebrew words of Jonah 2:1 (English 1:17). ⚠ It is NOT a whale: dag is the ordinary word for 'fish,' and no species is named anywhere in the book. The whale is an accretion of later art and translation (and a zoological impossibility besides — no whale can swallow a man whole). Even the New Testament keeps it unspecific: Jesus' 'sign of Jonah' (Matthew 12:40) uses the Greek ketos, 'sea-monster / huge fish.' ⚠ Note also that the fish is grammatically FEMININE in 2:2 (dagah) though masculine (dag) in 2:1 — a much-discussed shift, variously read as a scribal variation or a deliberate touch. The fish is one of four things God 'appoints' (manah) in the book — fish, plant, worm, wind — each a small creature bent to the divine will that Jonah resists.", ("Jonah", 1, 15)),
-    ("goral", "goral", "גּוֹרָל", "goral",
-     "A LOT — a marked stone, stick or token thrown to decide a question thought to be in God's hands (the 'let God point' procedure): 'the LOT is cast into the lap, but its every decision is from Jehovah' (Proverbs 16:33). Casting lots divides the promised land among the tribes (Numbers 26:55), exposes Achan (Joshua 7:14-18), nearly condemns Jonathan (1 Samuel 14:41-42), and chooses Saul as king (1 Samuel 10:20-21). ⚠ In Jonah 1:7 pagan sailors cast lots to find whose guilt has raised the storm, and it falls on Jonah — the same procedure Edom had just thrown OVER Jerusalem as it fell (Obadiah 11). Its last appearances frame the Gospels: soldiers cast lots for Jesus' clothing (Matthew 27:35, fulfilling Psalm 22:18) and the eleven cast lots to replace Judas with Matthias (Acts 1:26) — the last time in Scripture, just before the Spirit comes and it is never used again. By extension goral also means one's 'portion, destiny' — the lot life deals you.", ("Jonah", 1, 7)),
     ("chatar", "chatar", "חָתַר", "chatar",
      "TO DIG — and, of oarsmen, TO ROW HARD, to 'dig' at the water with the oars. The verb's plain sense is digging through a wall (a burglar 'digs through' in Exodus 22:2; Ezekiel is told to 'dig through' the wall). ⚠ Jonah 1:13 turns it to the sea: the pagan sailors 'dig' at their oars, straining to bring the ship back to land so they will not have to throw the guilty prophet overboard — risking their own lives to spare his. The vivid physical verb underlines the book's sharpest irony: the heathen crew is more merciful toward one endangering stranger than the prophet Jonah will be toward a whole repentant city.", ("Jonah", 1, 13)),
+    ("etnan", "etnan", "אֶתְנַן", "etnan",
+     "A HARLOT'S WAGE — the specific fee paid to a prostitute, a word the law singles out: 'you shall not bring the wage of a harlot (etnan) or the price of a dog into the house of Jehovah' (Deuteronomy 23:18), because it is 'an abomination.' ⚠ Micah 1:7 turns it double-edged on Samaria: the prophets routinely call idolatry 'whoring' after other gods, so the city's idols ARE a harlot's wages; and the gold that gilded them had been gathered from cult offerings and tribute — so 'from a harlot's wage she gathered them, and to a harlot's wage they will return' (the plundered idol-gold ends up back in the temples of Assyria, where such money circulates). Idolatry described as prostitution, with the economics to match.", ("Micah", 1, 7)),
+    ("qorchah", "qorchah", "קָרְחָה", "qorchah",
+     "BALDNESS — specifically a bald patch made by SHAVING the head as a mourning rite. Deuteronomy 14:1 forbids it ('you shall not make any baldness between your eyes for the dead') and Leviticus 21:5 forbids it to priests — yet the prophets keep commanding it as the fitting response to catastrophe (Isaiah 22:12; Jeremiah 16:6; Amos 8:10; Ezekiel 7:18). ⚠ Micah 1:16 turns it on the land as a bereaved mother: 'make yourself BALD… make your baldness wide as the vulture's, for your children have gone into exile' — shave your whole head bare, like the griffon-vulture's naked scalp, because your people are being deported.", ("Micah", 1, 16)),
+    ("nesher", "nesher", "נֶשֶׁר", "nesher",
+     "The great EAGLE or griffon-VULTURE — the huge soaring bird of the crags, and the same Hebrew word for both (they are hard to tell apart at altitude, and the biblical writers do not try). ⚠ It carries opposite senses by context: SWIFTNESS and height (God bears Israel 'on eagles' wings,' Exodus 19:4; the enemy 'swoops like an eagle,' Deuteronomy 28:49; Obadiah 4, 'though you set your nest among the stars'); and, as a carrion-VULTURE, DEATH and mourning — Micah 1:16, 'make your baldness wide as the NESHER's,' because the griffon-vulture has a bare, down-covered head that looks shaved. The context, not the word, tells you which bird: the eagle that lifts, or the vulture that waits.", ("Micah", 1, 16)),
     ("dat", "dat", "דָּת", "dat",
      "LAW, decree, edict — a PERSIAN loanword (data), and the key word of Esther, where it occurs about twenty times, more than in all the rest of the Bible together. ⚠ Watch its career across the book: its FIRST appearance is a courtesy about wine ('the drinking was according to the dat: no one compelling,' 1:8); by chapter 3 the same word carries an edict for the extermination of a people; and because a dat of the Medes and Persians cannot be revoked, chapter 8 can only answer it with another one. It is also the word behind 'the laws of the king' that Haman claims the Jews do not keep.", ("Esther", 1, 8)),
     ("mishteh", "mishteh", "מִשְׁתֶּה", "mishteh",
@@ -2226,7 +2230,7 @@ ENCYCLOPEDIA = [
               "esh-Sheikh Madhkur, in the hill country between the coastal plain and Hebron. Its cave will "
               "later shelter DAVID — a descendant of the twins conceived in this chapter — when he flees Saul "
               "and four hundred desperate men gather to him there (1 Samuel 22:1-2).",
-         coord=(31.6497, 34.9569), refs=[(38, 1), (38, 12)], videos=[]),
+         coord=(31.6497, 34.9569), refs=[(38, 1), (38, 12), ("Micah", 1, 15)], videos=[]),
     dict(slug="timnah", name="Timnah", kind="place", aliases=["Timnah"],
          desc="The town Judah went up to for his sheepshearing — a festival occasion — and on whose road Tamar "
               "took her seat (38:12-14). Usually identified with Tel Batash in the Sorek valley, excavated and "
@@ -2916,7 +2920,7 @@ ENCYCLOPEDIA = [
               "belonging to the dynasty rather than to a tribe. Ahab and Jezebel's ivory-inlaid palace here is "
               "described in Kings and its ivories have been excavated. Besieged and taken by Assyria in 722 BC, "
               "ending the northern kingdom; its later inhabitants are the Samaritans of the Gospels.",
-         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3)], videos=[],
+         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3), ("Micah", 1, 1), ("Micah", 1, 6)], videos=[],
          coords=(32.2803, 35.1897, 0.06),
          modern="Sebastia, in the hills north-west of Nablus, West Bank"),
     dict(slug="gibeon", name="Gibeon", kind="place", aliases=["Gibeon"],
@@ -3333,6 +3337,58 @@ ENCYCLOPEDIA = [
          refs=[("Jonah", 1, 3)],
          coords=(32.054, 34.752, 0.10),
          modern="Jaffa (Yafo), southern Tel Aviv, Israel", videos=[]),
+
+    # ---- Micah 1 ----
+    dict(slug="micah", name="Micah", kind="person", aliases=["Micah", "Micah of Moresheth", "Micah the Morashtite"],
+         desc="'Who is like Jehovah?' (Mikhah, short for Mikha-yahu) — a Judean prophet of the later eighth "
+              "century BC, contemporary with ISAIAH in Jerusalem and (earlier) with Amos and Hosea in the north. "
+              "⚠ Where Isaiah is a man of the royal court, Micah is a COUNTRYMAN — 'of Moresheth,' a farming "
+              "village in the Shephelah about 25 miles south-west of Jerusalem — and he speaks for the rural poor "
+              "being dispossessed by the capital's land-grabbing elite (2:1-2). The two prophets even share a poem "
+              "(swords into plowshares, Micah 4:1-3 = Isaiah 2:1-4). Micah has a distinction no other prophet has: "
+              "he is quoted BY NAME by a later prophet — the elders defending Jeremiah cite 'Micah of Moresheth… "
+              "in the days of Hezekiah' and his line 'Zion will be plowed as a field' as the precedent that "
+              "Hezekiah repented rather than kill the prophet (Jeremiah 26:18-19, the only such citation in the "
+              "Hebrew Bible). His book gives the New Testament the birthplace of the Messiah (5:2, Bethlehem, quoted "
+              "at Matthew 2:6) and the most famous one-line summary of true religion in the Old Testament (6:8, 'do "
+              "justice, love mercy, walk humbly'). ⚠ Not the same as MICAIAH son of Imlah, the earlier northern "
+              "prophet of 1 Kings 22, though the names are the same word.",
+         refs=[("Micah", 1, 1)], videos=[]),
+    dict(slug="moresheth-gath", name="Moresheth-gath", kind="place", aliases=["Moresheth-gath", "Moresheth"],
+         desc="Micah's home village — a farming town in the Judean Shephelah (lowland foothills), roughly 25 miles "
+              "south-west of Jerusalem and near the old Philistine border-city of Gath, from which it takes its "
+              "second name. It gives Micah his title, 'the Morashtite.' ⚠ In his town-by-town lament (1:14) Micah "
+              "mourns his OWN home by a pun: Moresheth chimes with me'orasah, 'betrothed,' and the verse says the "
+              "village will be given 'parting gifts' (shilluchim, a bride's dowry send-off) — handed over to the "
+              "enemy like a girl married off. Commonly identified with Tell ej-Judeideh (Tel Goded).",
+         refs=[("Micah", 1, 1), ("Micah", 1, 14)],
+         coords=(31.60, 34.92, 0.12), approx=True,
+         modern="Tell ej-Judeideh (Tel Goded), Judean Shephelah, Israel", videos=[]),
+    dict(slug="lachish", name="Lachish", kind="place", aliases=["Lachish"],
+         desc="The second city of Judah after Jerusalem — a great fortress guarding the Shephelah approaches, "
+              "excavated since the 1930s and one of the most important archaeological sites in Israel. ⚠ Micah 1:13 "
+              "gives it the sharpest line of his lament, punning Lakhish on la-rekhesh ('to the steeds' — harness "
+              "and flee) and charging it as 'the beginning of sin for Daughter Zion,' the gateway by which the "
+              "north's idolatry and chariot-trust entered the south. Its fall is the best-documented battle in the "
+              "Bible: SENNACHERIB besieged and took it in 701 BC and carved the whole assault across a room of his "
+              "palace at Nineveh — the LACHISH RELIEFS, now in the British Museum, showing the siege ramp, the "
+              "battering rams, and the captives led out (the ramp itself has been excavated). The LACHISH LETTERS, "
+              "ostraca from its last days before Babylon destroyed it in 586, are among the oldest Hebrew "
+              "documents. Amaziah of Judah was murdered here (2 Kings 14:19).",
+         refs=[("Micah", 1, 13)],
+         coords=(31.565, 34.849, 0.12),
+         modern="Tel Lachish (Tell ed-Duweir), Judean Shephelah, Israel", videos=[]),
+    dict(slug="mareshah", name="Mareshah", kind="place", aliases=["Mareshah"],
+         desc="A fortified Shephelah town (Joshua 15:44; fortified by Rehoboam, 2 Chronicles 11:8), and the setting "
+              "of Asa's great victory over Zerah the Cushite (2 Chronicles 14:9-10). ⚠ Micah 1:15 puns its name — "
+              "Mareshah on yoresh, 'the heir / dispossessor' — 'I will bring the dispossessor upon you, inhabitant "
+              "of Possession-town.' Later, as MARISA, it became the chief city of Idumea (Edomites resettled in the "
+              "southern hills), was Hellenized, and its painted tombs and underground complexes are a major "
+              "excavation (part of the Beit Guvrin–Maresha national park). It was the home town of Herod's "
+              "grandfather.",
+         refs=[("Micah", 1, 15)],
+         coords=(31.593, 34.899, 0.10),
+         modern="Tel Maresha (Beit Guvrin–Maresha park), Judean Shephelah, Israel", videos=[]),
     dict(slug="gath-hepher", name="Gath-hepher", kind="place", aliases=["Gath-hepher"],
          desc="Jonah's home town — a village in the territory of Zebulun, in lower Galilee (Joshua 19:13; 2 Kings "
               "14:25), traditionally identified with el-Meshhed, a few miles north-east of what would become "
@@ -3410,6 +3466,11 @@ XREFS = [
     (("Jonah", 1, 5), ("Genesis", 2, 21), "the deep sleep (radam/tardemah) — fallen on Adam in the garden, here on a prophet in a storm"),
     (("Jonah", 1, 7), ("Obadiah", 1, 11), "casting lots — Edom cast them OVER Jerusalem; pagan sailors cast them to find the guilty prophet"),
     (("Jonah", 1, 9), ("Genesis", 1, 10), "'who made the sea and the dry land' — Jonah confesses the Creator of the sea while fleeing across it"),
+    (("Micah", 1, 2), ("Isaiah", 1, 2), "the covenant lawsuit — heaven and earth summoned as witnesses, opening both contemporaries' books"),
+    (("Micah", 1, 5), ("Amos", 1, 3), "pesha, 'revolt' — Amos aimed it at the nations; Micah turns it on Israel's own two capitals"),
+    (("Micah", 1, 10), ("2 Samuel", 1, 20), "'tell it not in Gath' — David's lament over Saul, quoted into a lament over Judah"),
+    (("Micah", 1, 15), ("Genesis", 38, 1), "Adullam — the lowland town, and (1 Samuel 22) David's outlaw cave, refuge now of a ruined nobility"),
+    (("Micah", 1, 16), ("Obadiah", 1, 4), "the nesher — the soaring bird of Obadiah's pride, its bare vulture-head here an emblem of mourning"),
     (("Hosea", 1, 1), ("Isaiah", 1, 1), "the identical four Judean kings — heading the book of a prophet who preached to the NORTH"),
     (("Hosea", 1, 4), ("1 Kings", 1, 1), "the blood of Jezreel — Jehu's coup (2 Kings 9-10), which 2 Kings 10:30 has God commend"),
     (("Hosea", 1, 6), ("Genesis", 43, 14), "Lo-Ruchamah — rachamim, mercy, is built on rechem, the WOMB: Not-Mother-Loved"),
@@ -4162,6 +4223,10 @@ VERSE_OF_DAY = [
     ("Jonah", 1, 5, "“But Jonah had gone down into the innermost part of the vessel, and lay down, and fell into a deep sleep.” The pagan sailors pray for their lives; the prophet of the true God is asleep in the hold."),
     ("Jonah", 1, 9, "“I am a Hebrew, and I fear Jehovah, the God of the heavens, who made the sea and the dry land.” Every clause is orthodox, and every clause condemns him — he confesses the maker of the sea while using it to flee."),
     ("Jonah", 1, 16, "“And the men feared Jehovah with a great fear, and offered a sacrifice to Jehovah, and made vows.” The first converts in the book are the pagan crew — and the prophet has not preached them a word."),
+    ("Micah", 1, 4, "“The mountains melt under him, and the valleys split open — like wax before the fire, like waters poured down a slope.” One of the great theophanies: God comes down, and solid rock runs like candle-wax."),
+    ("Micah", 1, 5, "“What is the revolt of Jacob — is it not Samaria? And what are the high places of Judah — are they not Jerusalem?” The sin is not IN the capitals; the sin IS the capitals."),
+    ("Micah", 1, 8, "“I will make a lament like the jackals, and mourning like the ostriches.” The real ruin-animals of the night — where the KJV, guessing, put dragons and owls."),
+    ("Micah", 1, 16, "“Make your baldness wide as the vulture’s, for they have gone from you into exile.” The land as a mother, told to shave her head bare for her deported children."),
     ("Hosea", 1, 2, "“Go, take yourself a wife of promiscuity.” The most disputed sentence in the prophets — and the text shows no discomfort with it and offers no explanation."),
     ("Hosea", 1, 4, "“Call his name Jezreel.” A child named after a massacre — and after a verb that means TO SOW, which the next chapter turns into a promise."),
     ("Hosea", 1, 6, "“Call her name Lo-Ruchamah — Not-Pitied.” Hebrew's word for mercy is built on the word for a womb. The name is worse in Hebrew than in English."),
@@ -4891,6 +4956,9 @@ CHRON_CHAPTERS = {
     "amos1": dict(era="monarchy",
                   when="Five foreign nations sentenced in turn — Damascus, Gaza, Tyre, Edom, Ammon — by a Judean sheep-breeder standing in the northern kingdom at the height of its prosperity.",
                   clock="≈760 BC, and this is one of the most precisely dated books in the Bible: Uzziah is on the throne in Judah, Jeroboam II in Israel, and Amos adds a second fix nobody else uses — 'two years before THE earthquake', with the definite article, because his readers could count from it. Zechariah 14:5 was still measuring by that earthquake two and a half centuries later, and mid-eighth-century destruction layers at Hazor, Lachish, Gezer and in the City of David are commonly identified with it. Amos is, on most reckonings, the EARLIEST of the writing prophets — about thirty years before Samaria falls."),
+    "micah1": dict(era="monarchy",
+                  when="A country prophet from the Shephelah watches the storm-God come down and melt the mountains, hears the sin named as the two capital cities themselves, and mourns his own home region town by town as the Assyrian invasion rolls through it.",
+                  clock="c. 730–700 BC — Micah's heading dates him by three kings of Judah (Jotham, Ahaz, Hezekiah), making him the exact contemporary of Isaiah in Jerusalem. The chapter's horizon spans the two great blows of the age: Samaria's fall to Assyria in 722 (vv6-7) and Sennacherib's invasion of the Judean Shephelah in 701 (the town lament, vv10-16, and 'the wound has reached the gate of Jerusalem,' v9). Jeremiah 26:18 fixes his preaching 'in the days of Hezekiah,' the only prophet the Hebrew Bible quotes by name."),
     "jonah1": dict(era="monarchy",
                   when="A prophet flees his commission by sea; God hurls a storm; pagan sailors, more merciful than the prophet, at last throw him overboard and the sea calms — and they worship the God he was running from.",
                   clock="⚠ TWO dates, one for the man and one for the book. The prophet Jonah son of Amittai is REAL and 8th-century: 2 Kings 14:25 sets him under Jeroboam II (c. 780 BC), a contemporary of Amos and Hosea — which is why the chapter is filed here in the monarchy. But the BOOK that tells his story is widely thought to be POST-EXILIC (5th-4th c.), a later, pointed tale built around the old northern prophet's name, aimed at a narrow nationalism the returned community had to unlearn. Nineveh, its setting, fell in 612 BC. The two datings sit side by side without contradiction: an 8th-century figure, a later book."),
@@ -5023,6 +5091,9 @@ CHRON_EVENTS = [
     dict(era="monarchy", am="—", trad="c. 780 BC", event="Jonah son of Amittai prophesies under Jeroboam II — later the runaway of his own book",
          note="2 Kings 14:25 has the historical Jonah, of Gath-hepher near Nazareth, foretell Jeroboam II's restoration of Israel's borders — a nationalist good-news prophet. ⚠ The BOOK of Jonah, which sends that same prophet to save Nineveh and has him flee to Tarshish and be swallowed by a great fish, is widely dated centuries later (post-exilic), a pointed tale built on his name. Filed here for the man; the book is a later telling.",
          ref=("Jonah", 1, 1)),
+    dict(era="monarchy", am="—", trad="c. 730–700 BC", event="Micah of Moresheth prophesies in Judah — the country prophet who out-lasted his own words",
+         note="A Shephelah farmer's-prophet, contemporary of Isaiah under Jotham, Ahaz and Hezekiah. His horizon spans Samaria's fall (722) and Sennacherib's invasion of the Judean lowlands (701), which he mourns town by town in an untranslatable chain of place-name puns (Micah 1:10-16). ⚠ Jeremiah 26:18 quotes him BY NAME a century later — the only writing prophet so cited — and credits his 'Zion will be plowed as a field' with moving Hezekiah to repent. His book gives the NT Bethlehem (5:2) and 'do justice, love mercy, walk humbly' (6:8).",
+         ref=("Micah", 1, 1)),
     dict(era="monarchy", am="—", trad="c. 750–722 BC", event="Hosea preaches in the northern kingdom — three children named as sentences, and the covenant formula unsaid",
          note="Beginning under Jeroboam II at the height of northern prosperity and running to the edge of Samaria's fall. Jezreel, Lo-Ruchamah (Not-Pitied) and Lo-Ammi (Not-My-People) are the message; within three Hebrew verses all three names are reversed. Assyria took Samaria in 722 and the northern kingdom never returned.",
          ref=("Hosea", 1, 4)),
@@ -6631,6 +6702,37 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre), following the Hebrew chapter division (so the great fish is 2:1, not 1:17). Jonah's Hebrew is clear, brisk and full of deliberate repetition — 'great,' 'go down,' 'hurl,' 'evil,' 'fear,' 'appoint' — which this translation preserves rather than smoothing into variety, because the repetition is the craft. The one genuinely hard word is BOLES in the historical Amos (not here); Jonah's difficulties are literary, not lexical. The psalm of chapter 2 is older, denser poetry set inside the prose.",
         christ="Jonah is the Old Testament book Jesus points to most pointedly about himself. ⚠ 'The SIGN OF JONAH' is his answer to those demanding a miracle: 'as Jonah was three days and three nights in the belly of the great fish, so will the Son of Man be three days and three nights in the heart of the earth' (Matthew 12:40) — the fish read as a figure of burial and resurrection. And he twins it with a rebuke: 'the men of Nineveh will rise at the judgment with this generation and condemn it, for they repented at the preaching of Jonah, and look — something greater than Jonah is here' (Matthew 12:41; Luke 11:32). Beyond the sign, the whole book is a Gospel in miniature: mercy extended to outsiders, a reluctant messenger, and a God 'slow to anger and abounding in loyal love' — the very character the New Testament says was made flesh. The rooftop-at-Joppa vision that finally sends Peter to the Gentiles (Acts 10) begins from Jonah's own port, and is the book's argument carried into the church.",
         debates="THE GENRE — history, parable, satire, or didactic novella (the largest question, and increasingly answered 'satire/parable' by scholars, though the traditional 'history' reading persists and Jesus references Nineveh's repentance as real). THE DATE — 8th-century (with the prophet) versus post-exilic (the majority for the book). THE FISH — a real event, a symbol of exile-and-return, or a folktale motif; and its odd gender shift (masculine dag in 2:1, feminine dagah in 2:2). WHETHER JONAH'S 'throw me overboard' (1:12) is repentance, self-sacrifice or a death-wish. And the great open ending: does Jonah ever answer God's final question, and does the reader?",
+    ),
+    "Micah": dict(
+        hebrew_name="מִיכָה",
+        hebrew_translit="Mikhah",
+        hebrew_meaning="'Who is like Jehovah?' — a shortened form of Mikha-yahu, a rhetorical question expecting the answer 'no one.' ⚠ The book turns its author's own name into its final word: 'WHO IS A GOD LIKE YOU, pardoning iniquity?' (7:18) — so Micah's name is both the opening credit and the closing doxology. He is called 'the Morashtite,' after his home village Moresheth-gath.",
+        greek_name="Μιχαίας (Michaias)",
+        greek_meaning="The Septuagint keeps Micah third among the Twelve (before Joel and Obadiah, whose order the Greek shuffles). ⚠ Its most consequential moment for readers of the New Testament is 5:1 (English 5:2), the Bethlehem oracle: when Herod asks the chief priests where the Messiah is to be born, they answer with Micah — 'and you, Bethlehem… from you shall come a ruler' (Matthew 2:6), the verse that sends the wise men to Bethlehem.",
+        tagline="The country cousin of Isaiah: a Shephelah farmer's prophet who preached the same eighth-century word from the bottom of society that Isaiah preached from the top. He indicts both capitals — Samaria and Jerusalem — for grinding the rural poor, mourns his own home region town by town in an untranslatable chain of puns, and swings between the darkest sentence in the prophets ('Zion will be plowed as a field') and some of the brightest ('do justice, love mercy, walk humbly'; Bethlehem's coming ruler; swords into plowshares).",
+        genre="PROPHETIC ORACLE in poetry, alternating sharply between JUDGMENT and HOPE — three cycles, each of which turns from doom to deliverance ('hear!' at 1:2, 3:1, 6:1). ⚠ Micah is a virtuoso of the SOUND of Hebrew: chapter 1's town-lament is a chain of place-name puns that no translation can carry, and the book is full of legal-lawsuit forms, funeral dirges, and courtroom disputation. It is short (seven chapters) and its social anger is the sharpest in the prophets after Amos.",
+        canon="SIXTH of THE TWELVE in the Hebrew order (after Jonah, before Nahum). Seven chapters. ⚠ A verse-numbering seam to watch at chapter 4/5: the Bethlehem oracle is Hebrew 5:1 but English 5:2 (English pulls the last verse of Hebrew ch 4 down into ch 5), so the chapter is off by one from 4:14 onward — the same kind of offset seen in Hosea and Joel. Chapter 1 itself matches the English.",
+        author="MICAH OF MORESHETH, a Judean of the later eighth century (2 Kings-era, under Jotham/Ahaz/Hezekiah). ⚠ He is the pair to ISAIAH — same city, same decades — but from the opposite social pole: not a court insider but a countryman from a Shephelah farming village, whose fury is aimed at the landowners and officials of the capital who 'covet fields and seize them' (2:2). He is the first prophet the Hebrew Bible records as being quoted by a LATER prophet (Jeremiah 26:18), which means his preaching was remembered, and effective, for a hundred years.",
+        date="c. 730–700 BC, well anchored. The heading names three kings of Judah, and the book's events span the two great Assyrian blows of the age: the fall of SAMARIA in 722 (1:6-7) and SENNACHERIB's invasion of the Judean Shephelah in 701 (the town-lament of 1:10-16, and 'the wound has reached the gate of Jerusalem,' 1:9). Jeremiah 26:18 pins his ministry specifically 'in the days of Hezekiah.' Some later material (the return-from-exile hope of chapters 4 and 7) is argued by critics to be a post-exilic expansion; the eighth-century core is not in doubt.",
+        place="JUDAH — and specifically the SHEPHELAH, the lowland belt of farming towns between the coastal plain and the Judean hills, which was Micah's own country and the corridor every invader used. SAMARIA and JERUSALEM are the two capitals he indicts; the town-lament of chapter 1 walks through a dozen Shephelah villages (Gath, Lachish, Mareshah, Adullam, his own Moresheth) as the Assyrian army rolls over them.",
+        audience="The powerful of Judah, seen from below. Micah writes for and about the rural poor — the smallholders whose land is being annexed, whose debts are being called, whose courts are for sale — and against the 'heads of Jacob who hate good and love evil,' the prophets who preach for pay, and the priests who teach for hire (3:9-11). His is the most class-conscious voice in the prophets.",
+        structure=[
+            ["1-2", "JUDGMENT ON BOTH CAPITALS — the theophany (God melts the mountains), the sin named as Samaria and Jerusalem themselves, the town-by-town lament over the Shephelah, and the woe on the land-grabbers who 'covet fields and seize them' — ending on a first flash of hope, the remnant gathered like sheep."],
+            ["3-5", "THE CORRUPT LEADERS, THEN THE COMING RULER — the rulers who 'tear the skin off my people,' the prophets-for-hire, and 'Zion plowed as a field' (3:12); then the great turn: the mountain of Jehovah's house raised up and swords beaten into plowshares (4, shared with Isaiah 2), and the ruler from BETHLEHEM 'whose origins are from of old' (5:2)."],
+            ["6-7", "THE LAWSUIT AND THE PARDON — God takes Israel to court ('what have I done to you? testify against me'), the famous answer that he requires not sacrifice but 'to do justice, love mercy, and walk humbly with your God' (6:8), and a closing hymn that answers the prophet's own name: 'WHO IS A GOD LIKE YOU, pardoning iniquity… you will cast all their sins into the depths of the sea' (7:18-19)."],
+        ],
+        themes=[
+            "JUSTICE FOR THE POOR — Micah's signature. The sin he names is not chiefly idolatry but ECONOMIC violence: coveting fields and seizing them, defrauding the smallholder, rulers who 'eat the flesh of my people' (3:2-3), judges who take bribes. His most famous line makes justice, not ritual, the whole of religion (6:8).",
+            "THE TWO CAPITALS INDICTED TOGETHER — uniquely, Micah opens by condemning Samaria AND Jerusalem in one breath, and identifies each kingdom's sin with its capital CITY by name (1:5). The corruption is centred in the seats of power, north and south alike.",
+            "JUDGMENT WOVEN WITH HOPE — the book swings hard between the two: 'Zion will be plowed as a field' and 'they shall beat their swords into plowshares' stand a chapter apart. Micah refuses to let either the doom or the promise cancel the other.",
+            "THE RULER FROM BETHLEHEM — 5:2, the little clan of Judah from which the shepherd-king David came, and from which one 'whose origins are from ancient days' will come again. The New Testament reads it straight to Jesus; the chief priests quote it to Herod.",
+            "'WHO IS LIKE JEHOVAH?' — the meaning of the prophet's own name, and the book's last movement: a God who does not stay angry forever but 'delights in loyal love' and drowns sin in the sea. Judgment is real, but the last word is pardon.",
+        ],
+        key_words=["pesha", "etnan", "qorchah", "nesher"],
+        key_people=["micah", "moresheth-gath", "samaria", "jerusalem", "lachish", "adullam"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). ⚠ Micah's Hebrew is among the most difficult in the prophets — dense, elliptical, and locally damaged — and chapter 1's town-lament (10-16) is famous for it: a series of puns on place-names whose exact wording is uncertain in several spots (the 'weep not' of v10, the 'Beth-ezel' clause of v11). This translation keeps the town names and glosses each pun rather than smoothing them into plain English, because the wordplay IS the passage; where the Hebrew is broken it says so. The chapter/verse numbering follows the Hebrew (with the 4/5 seam noted).",
+        christ="Micah reaches the New Testament through one town and one summary. ⚠ BETHLEHEM: 'and you, Bethlehem Ephrathah, though you are little among the clans of Judah, from you shall come one to be ruler in Israel, whose origins are from of old, from ancient days' (5:2) — quoted by the chief priests to Herod (Matthew 2:6) as the birthplace of the Messiah, and the reason the wise men go there. And 6:8, 'he has told you, O man, what is good, and what does Jehovah require of you but to do justice, to love mercy, and to walk humbly with your God' — the verse most often cited as the Old Testament's own summary of the ethical heart of religion, which the Gospels' quarrel about 'the weightier matters of the law: justice, mercy and faith' (Matthew 23:23) restates almost word for word. The peace-vision of 4:3 (swords into plowshares) and the pardoning God of 7:18-19 ('you will cast all their sins into the depths of the sea') both feed the New Testament's hope directly.",
+        debates="THE UNITY AND DATE — how much of the book is the 8th-century Micah and how much a later (exilic/post-exilic) expansion, especially the restoration passages of chapters 4 and 7; the judgment core is undisputed. THE TEXT of the town-lament (1:10-16), damaged in several places, so that both the exact town names and the exact puns are argued. THE RELATIONSHIP TO ISAIAH — the shared swords-into-plowshares oracle (Micah 4 = Isaiah 2): did Micah borrow Isaiah, Isaiah borrow Micah, or both draw on an older liturgy? And the identity of the Bethlehem ruler 'whose origins are from of old' — a Davidic king, or (as the New Testament reads it) something more.",
     ),
     "Hosea": dict(
         hebrew_name="הוֹשֵׁעַ",
