@@ -35,6 +35,7 @@ import hashlib
 import json
 import sys
 import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -77,6 +78,7 @@ MECHON_BOOKS = {
     "24": ("Malachi", 3),
     "25a": ("1 Chronicles", 29),
     "25b": ("2 Chronicles", 36),
+    "26": ("Psalms", 150),
     "27": ("Job", 42),
     "28": ("Proverbs", 31),
     "29": ("Ruth", 4),
@@ -135,7 +137,7 @@ def fetch_all() -> dict:
     manifest = {}
     if MANIFEST.exists():
         manifest = json.loads(MANIFEST.read_text())
-    fetched = skipped = 0
+    fetched = skipped = missing = 0
     for subdir, fn, url in _plan():
         dest = OUT / subdir / fn
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -148,7 +150,19 @@ def fetch_all() -> dict:
                                  "fetched_at": datetime.now(timezone.utc).isoformat()}
             skipped += 1
             continue
-        data = _fetch(url)
+        try:
+            data = _fetch(url)
+        except urllib.error.HTTPError as e:
+            # A supplier that does not serve a chapter at the expected URL
+            # (Mechon-Mamre does not expose Psalms 100-150 at pt26NNN) must
+            # NOT wedge the archive of every OTHER book. Skip-and-report a
+            # 404; anything else is a real problem and still raises.
+            if e.code == 404:
+                missing += 1
+                print(f"  missing (404), skipping: {rel}", flush=True)
+                time.sleep(DELAY_S)
+                continue
+            raise
         if len(data) < 500:
             raise SystemExit(f"suspiciously small response ({len(data)}b): {url}")
         dest.write_bytes(data)
@@ -159,7 +173,8 @@ def fetch_all() -> dict:
         time.sleep(DELAY_S)
     MANIFEST.write_text(json.dumps(manifest, indent=1, sort_keys=True))
     print(f"fetch done: {fetched} new, {skipped} already local, "
-          f"{len(manifest)} in manifest", flush=True)
+          f"{missing} missing-at-source (404), {len(manifest)} in manifest",
+          flush=True)
     return manifest
 
 
