@@ -71,6 +71,7 @@ MECHON_BOOKS = {
     "18": ("Micah", 7),
     "19": ("Nahum", 3),
     "20": ("Habakkuk", 3),
+    "21": ("Zephaniah", 3),
     "24": ("Malachi", 3),
     "25a": ("1 Chronicles", 29),
     "25b": ("2 Chronicles", 36),
