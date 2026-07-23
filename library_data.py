@@ -971,6 +971,14 @@ DICTIONARY = [
      "In RUINS, a waste, desolate — from the root ch-r-b (חרב), which carries both 'lie in ruins' and 'be dry.' Haggai builds his whole first chapter on the double meaning: God's house lies charev, 'a ruin' (1:4, 9), so God calls a chorev — a DROUGHT, a drying-up — 'upon the land' (1:11). Same three consonants: the desolation the people left on the temple is returned, letter for letter, on their fields. Because you left my house charev, I made your land chorev.", ("Haggai", 1, 4)),
     ("pechah", "pechah", "פֶּחָה", "pechah",
      "GOVERNOR — a loan-word (Akkadian pihatu, later Persian) for the imperial official set over a province, NOT a native king. It is the office Zerubbabel holds over Judah under Darius (Haggai 1:1, 14), and the same title Nehemiah will hold and pointedly refuse to profit from (Nehemiah 5:14-18). Its ordinariness is the point: the house of David now governs as a mid-level administrator of Persia, and even that only by imperial appointment.", ("Haggai", 1, 1)),
+    ("shuv", "shuv", "שׁוּב", "shuv",
+     "To RETURN, turn back, repent — the central verb of the prophets, and the engine of Zechariah 1. 'Return (shuvu) to me, and I will return (ashuvah) to you' (1:3) makes repentance reciprocal: not a work that earns God's favor but a turning that God both initiates and answers (Malachi 3:7 quotes the same line). The word threads the chapter — the fathers who would not turn (1:4), the fathers who finally turned back and confessed (1:6), and God himself who has 'returned to Jerusalem with compassion' (1:16). Its noun teshuvah is the Hebrew word for repentance to this day.", ("Zechariah", 1, 3)),
+    ("hadas", "hadas", "הֲדַס", "hadas",
+     "The MYRTLE — a low, fragrant, evergreen shrub. Its branches are among the 'boughs of leafy trees' waved at the Feast of Booths (Nehemiah 8:15), and it is the plant behind a famous name: Esther's Hebrew name is HADASSAH, 'myrtle.' In Zechariah's first vision the divine horseman-patrol stands 'among the myrtle trees that were in the ravine' (1:8) — Israel pictured as something small, sweet-smelling, and in the shade, with heaven's cavalry planted right in its midst. Isaiah makes the myrtle a sign of the reversed curse: 'instead of the brier, the myrtle' (55:13).", ("Zechariah", 1, 8)),
+    ("nicham", "nacham", "נָחַם", "nacham",
+     "To COMFORT, console — and, in other stems, to relent or be sorry. It is the root behind the name NOAH ('this one will comfort us,' Genesis 5:29) and the name NAHUM ('Comfort'). In Zechariah 1 God answers the angel's 'how long?' not with a date but with 'good words, comforting (nichumim) words' (1:13), and promises 'Jehovah will again comfort (nicham) Zion' (1:17). The same root drives Isaiah's 'Comfort, comfort my people' (40:1). Judgment and consolation share a Hebrew root because both are God turning toward his people.", ("Zechariah", 1, 13)),
+    ("qav", "qav", "קָו", "qav",
+     "A MEASURING LINE — the surveyor's cord, stretched to lay out a building. Its direction is the whole point: a qav can be stretched to mark a city for DEMOLITION (2 Kings 21:13, 'the measuring line of Samaria'; Lamentations 2:8, God 'stretching the line' to tear Zion down; Isaiah 34:11, 'the line of chaos'), or, as in Zechariah 1:16, for RE-CONSTRUCTION: 'a measuring line will be stretched out over Jerusalem,' the cord of rebuilding. The very next vision is 'a man with a measuring line in his hand' going out to measure Jerusalem for its restoration.", ("Zechariah", 1, 16)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3558,7 +3566,7 @@ ENCYCLOPEDIA = [
               "royal treasury (Ezra 6) — so the house is finished in his sixth year, 516 BC. ⚠ He is a different king from "
               "Darius the Mede of Daniel, and from Darius II; the shared name is why this Persian Darius must claim the "
               "word here, so it is not mistaken for the figure in Daniel.",
-         refs=[("Haggai", 1, 1), ("Haggai", 1, 15)], videos=[]),
+         refs=[("Haggai", 1, 1), ("Haggai", 1, 15), ("Zechariah", 1, 1), ("Zechariah", 1, 7)], videos=[]),
     dict(slug="second-temple", name="The Second Temple", kind="place",
          aliases=["The Second Temple", "Zerubbabel's Temple"],
          desc="The temple these hands began — built on the platform of Solomon's ruined first temple on the eastern hill of "
@@ -3571,6 +3579,22 @@ ENCYCLOPEDIA = [
               "survives.",
          refs=[("Haggai", 1, 8)],
          coords=(31.778, 35.2354, 0.01), approx=True, videos=[]),
+    dict(slug="zechariah", name="Zechariah son of Berechiah", kind="person",
+         aliases=["Zechariah son of Berechiah"],
+         desc="The prophet of the book — 'Jehovah remembers' (zakhar + the divine name), a programmatic name for a book of "
+              "restoration. Haggai's exact contemporary in 520 BC, he is 'son of Berechiah, son of Iddo' — Iddo heading a "
+              "priestly family that returned from exile (Nehemiah 12:4, 16), so Zechariah is, like Jeremiah and Ezekiel, a "
+              "priest as well as a prophet. Ezra 5:1 and 6:14 name him and Haggai as the two prophets whose preaching got "
+              "the second temple built. Where Haggai is plain and administrative, Zechariah is the first true APOCALYPTIC "
+              "seer — eight night visions decoded by an interpreting angel — and his book's second half feeds the Passion "
+              "narratives with more images than any prophet but Isaiah (the king on a donkey, the thirty pieces of silver, "
+              "the pierced one, the struck shepherd). ⚠ At Matthew 23:35 Jesus names 'Zechariah son of Berechiah' as "
+              "murdered 'between the temple and the altar' — but the temple-court martyr of 2 Chronicles 24 was Zechariah "
+              "son of JEHOIADA; whether the Gospel conflates the two, preserves a lost tradition of this prophet's "
+              "martyrdom, or reflects a copyist's slip (Luke 11:51 gives only 'Zechariah') is an ancient crux. ⚠ 'Zechariah' "
+              "is one of the commonest names in the Bible (kings, priests, gatekeepers, John the Baptist's father in Luke "
+              "1), which is why this entry answers only to the full 'Zechariah son of Berechiah.'",
+         refs=[("Zechariah", 1, 1), ("Zechariah", 1, 7)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -4301,6 +4325,10 @@ XREFS = [
     (("Haggai", 1, 1), ("Jeremiah", 22, 24), "Zerubbabel is grandson of the King Jehoiachin whom Jeremiah 'tears off' here like a signet ring — and Haggai's last oracle (2:23) makes Zerubbabel the signet ring again, reversing the curse"),
     (("Haggai", 1, 11), ("Zephaniah", 1, 2), "the same creation-list (ground, human, beast, produce): Zephaniah has God SWEEP the categories off the ground, Haggai has him DRY THEM UP with a drought called down on the land"),
     (("Haggai", 1, 12), ("Isaiah", 1, 9), "she'erit, 'the remnant' — the surviving few that Isaiah says were all that kept Judah from becoming Sodom, and that Haggai makes the whole workforce of the rebuilt house"),
+    (("Zechariah", 1, 7), ("Haggai", 1, 1), "the two prophets of the rebuilding, dated to the same season of Darius's second year — Zechariah's call (the eighth month) falls between Haggai's second and third oracles; Ezra 5:1 names them together"),
+    (("Zechariah", 1, 14), ("Zephaniah", 1, 18), "qin'ah, jealous zeal — Zephaniah aims 'the fire of his jealousy' AT Jerusalem, Zechariah turns the same word into a jealousy FOR her; wrath's fire becomes Zion's shield"),
+    (("Zechariah", 1, 13), ("Nahum", 1, 1), "nacham, 'comfort' — the root behind Nahum's very name; here God answers 'how long?' with 'comforting words' and vows to 'comfort Zion' (1:17)"),
+    (("Zechariah", 1, 9), ("Revelation", 1, 1), "the interpreting angel — the heavenly guide who decodes the vision, which Zechariah pioneers and which becomes the furniture of apocalyptic down to the angel who 'signifies' Revelation"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4680,6 +4708,9 @@ VERSE_OF_DAY = [
     ("Haggai", 1, 4, "“Is it a time for you yourselves to dwell in your paneled houses, while this house lies a ruin?” The question that ended a sixteen-year delay: they had roofed their own homes and stopped noticing the gap."),
     ("Haggai", 1, 6, "“The wage-earner earns wages into a bag full of holes.” Effort without the one thing it was built around does not fail loudly; it just never STAYS."),
     ("Haggai", 1, 13, "“I am with you, declares Jehovah.” Not ‘work harder’ — the four words that moved a discouraged people to break ground twenty-three days later."),
+    ("Zechariah", 1, 3, "“Return to me, and I will return to you.” The whole prophetic corpus in six words — a turning that God both begins and answers."),
+    ("Zechariah", 1, 5, "“Your fathers, where are they? And the prophets — do they live forever?” The generations pass; the word that overtook them does not."),
+    ("Zechariah", 1, 12, "“How long, Jehovah, will you withhold compassion from Jerusalem?” The angel's question — the one the martyrs under the altar will raise again."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -5145,6 +5176,9 @@ CHRON_CHAPTERS = {
     "amos1": dict(era="monarchy",
                   when="Five foreign nations sentenced in turn — Damascus, Gaza, Tyre, Edom, Ammon — by a Judean sheep-breeder standing in the northern kingdom at the height of its prosperity.",
                   clock="≈760 BC, and this is one of the most precisely dated books in the Bible: Uzziah is on the throne in Judah, Jeroboam II in Israel, and Amos adds a second fix nobody else uses — 'two years before THE earthquake', with the definite article, because his readers could count from it. Zechariah 14:5 was still measuring by that earthquake two and a half centuries later, and mid-eighth-century destruction layers at Hazor, Lachish, Gezer and in the City of David are commonly identified with it. Amos is, on most reckonings, the EARLIEST of the writing prophets — about thirty years before Samaria falls."),
+    "zechariah1": dict(era="return",
+                  when="The first of Zechariah's eight night visions — apocalyptic's first flowering. A divine patrol on horseback stands among the myrtles in a shadowed hollow, reports that 'all the earth is at rest' (while Zion still mourns), and the interpreting angel cries 'How long?' God answers with a jealous love for Jerusalem: 'my house will be built in it, and a measuring line stretched over it.' The whole is framed by the opening call, 'Return to me, and I will return to you.'",
+                  clock="520 BC — the eighth and eleventh months of Darius's second year, interleaved with Haggai's oracles (Zechariah's opening call falls between Haggai's second and third). Zechariah son of Berechiah, a priest as well as a prophet, is Haggai's exact contemporary, and Ezra 5:1 names the two together as the prophets whose preaching rebuilt the temple. Where Haggai is plain, Zechariah opens the age of APOCALYPTIC — the interpreting angel, the symbolic visions, the heavenly court — the seedbed of Daniel and Revelation."),
     "haggai1": dict(era="return",
                   when="The word that restarted the temple: a discouraged remnant, busy roofing its own houses while God's house lies a ruin, is asked to 'set your heart on your ways' — and, uniquely among the prophets, OBEYS, breaking ground twenty-three days later. The chapter's engine is not a threat but a presence: 'I am with you, declares Jehovah.'",
                   clock="The first day of the sixth month in the second year of Darius the king — 29 August 520 BC, dated to the day. Eighteen years after the first exiles came home under Cyrus (538) and laid a foundation that then sat untouched for some sixteen years; Haggai and his contemporary Zechariah rouse the rebuilding, and the second temple is finished in 516 (Ezra 6:15). The calendar now runs by a Persian emperor, for there is no king in Jerusalem."),
@@ -5367,6 +5401,9 @@ CHRON_EVENTS = [
     dict(era="return", am="—", trad="520 BC", event="Haggai and Zechariah rouse the stalled rebuilding of the temple; ground is broken twenty-three days after Haggai's first word",
          note="Haggai 1. The first day of the sixth month in the second year of Darius I, dated to the day. Ezra 5:1-2 records the same moment from the outside; the enemies' protest sends Darius to the archives, where Cyrus's decree is found (Ezra 6), and the house is finished four years later in 516.",
          ref=("Haggai", 1, 1)),
+    dict(era="return", am="—", trad="520 BC", event="Zechariah, Haggai's contemporary, begins the eight night visions — the first sustained apocalypse, and the seedbed of Daniel and Revelation",
+         note="Zechariah 1. His opening call ('return to me, and I will return to you') is dated the eighth month of Darius's second year, between Haggai's second and third oracles; the myrtle-trees vision follows in the eleventh month. Ezra 5:1 names the two prophets together as the preaching that rebuilt the temple.",
+         ref=("Zechariah", 1, 1)),
     dict(era="return", am="—", trad="515 BC", event="The second temple finished — smaller than Solomon's, and wept over by those who remembered the first",
          note="Ezra 6:15. It is this temple, in working order and taken for granted, whose altar Malachi finds treated with contempt.",
          ref=("Malachi", 1, 7)),
@@ -7071,6 +7108,39 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Haggai's Hebrew is clear and straightforward — the difficulties are few: a ketiv/qere on 'I will be glorified' (1:8), the two spellings Shealtiel/Shaltiel for Zerubbabel's father (1:1 vs 1:12, 14), and the sustained pun on the root ch-r-b, 'ruin' and 'drought' (1:4, 9, 11), which no translation can carry in a single English word. This translation keeps the Persian office pechah as 'governor,' the creation-list of 1:11 in order, and 'I am with you' bare.",
         christ="Haggai reaches the New Testament through ZERUBBABEL and the GLORY OF THE HOUSE. Zerubbabel stands in both genealogies of Jesus (Matthew 1:12; Luke 3:27), and Haggai's closing 'signet ring' oracle (2:23) reverses the curse on his grandfather Jehoiachin (Jeremiah 22:24), keeping the Davidic line — and so the messianic hope — alive through the exile. The promise that 'the latter glory of this house will be greater than the former' (2:9), and 'I will shake the nations, and the treasure of all nations will come, and I will fill this house with glory,' is read in Christian tradition as fulfilled when the Messiah himself entered the second temple's courts (echoed in Malachi 3:1, 'the Lord will suddenly come to his temple'), and 2:6 ('yet once more I will shake the heavens and the earth') is quoted directly in Hebrews 12:26-27. And 'I am with you' (1:13) runs forward to Immanuel and to 'I am with you always, to the end of the age' (Matthew 28:20).",
         debates="THE GLORY OF 2:9 — whether 'this house' means Zerubbabel's temple as later enlarged by Herod (so the greater glory is architectural and historical) or points beyond any building to the Messiah's presence (the Christian reading). THE SIGNET-RING ORACLE — whether Haggai (and Zechariah) briefly hoped Zerubbabel would be crowned king, a hope history disappointed, and how that squares with the messianic reading. And the RELATION to Ezra 4-6, whose account of the delay and restart Haggai's dates are usually used to reconstruct.",
+    ),
+    "Zechariah": dict(
+        hebrew_name="זְכַרְיָה",
+        hebrew_translit="Zekharyah",
+        hebrew_meaning="'Jehovah remembers' — from zakhar, to remember, joined to the divine name. A programmatic name for a book of restoration: at the nation's lowest ebb, the promise buried in the prophet's own name is that God has NOT forgotten. ⚠ It is also one of the commonest names in the Old Testament (some thirty men bear it — kings, priests, gatekeepers, the temple-court martyr of 2 Chronicles 24), which is exactly what makes the Gospel reference at Matthew 23:35 so tangled.",
+        greek_name="Ζαχαρίας (Zacharias)",
+        greek_meaning="Eleventh of the Twelve in both the Hebrew and Greek orders. ⚠ The Greek form Zacharias is also the New Testament's name for the father of John the Baptist (Luke 1) and for the Zechariah Jesus names as martyred 'between the temple and the altar' (Matthew 23:35) — a verse debated for two millennia, since the temple-court martyr of 2 Chronicles 24 was a DIFFERENT Zechariah, son of Jehoiada. The Vulgate calls the prophet Zacharias.",
+        tagline="The prophet who opened the age of apocalyptic. Haggai's exact contemporary in the rubble of 520 BC, Zechariah answers the same discouragement not with a builder's plain command but with EIGHT NIGHT VISIONS — a horseman patrol among the myrtles, four horns and four smiths, a man with a measuring line, a high priest re-robed, a golden lampstand, a flying scroll, a woman in a basket, four chariots — each decoded by 'the angel who talked with me.' His book's second half then supplies the Passion narratives with more images than any prophet but Isaiah: the king on a donkey, the thirty pieces of silver, the pierced one, the struck shepherd.",
+        genre="PROPHETIC and APOCALYPTIC — the Old Testament's first sustained apocalypse. Chapters 1-6 are the eight night visions, each a symbolic tableau decoded by an interpreting angel; chapters 7-8 are prose oracles on fasting and restoration; chapters 9-14 (often called 'Deutero-Zechariah') turn to longer, wilder poetic 'burdens' about a coming king, a smitten shepherd, and a final battle for Jerusalem. The visionary machinery — the mediating angel, the coloured horses, the heavenly court, the 'how long?' — is the template Daniel and Revelation build on.",
+        canon="Eleventh of THE TWELVE, the single Book of the Twelve in the Hebrew canon, and by far the longest and most complex of them (fourteen chapters). With Haggai it is one of the two prophetic books of the temple RESTORATION; Ezra 5:1 and 6:14 name the pair as the preaching that got the house built. Zechariah 9-14 is the most-quoted prophetic text in the Passion narratives after Isaiah.",
+        author="ZECHARIAH son of Berechiah, son of Iddo — a priest as well as a prophet (Iddo heads a priestly house that returned from exile, Nehemiah 12:4, 16), and so, like Jeremiah and Ezekiel, a man of the sanctuary. ⚠ The authorship of chapters 9-14 is the classic critical question: their different style, absent dating, and shifted concerns have led many to assign them to a later hand or hands ('Deutero-Zechariah'), while others read the whole book as one prophet's development. The visions of 1-8 are securely dated by the book itself to 520-518 BC.",
+        date="The dated visions fall in 520-518 BC — the second to fourth years of Darius I — interleaved with Haggai's oracles (Zechariah's opening call, the eighth month of Darius's second year, sits between Haggai's second and third). The undated burdens of 9-14 are placed by most well after this, some into the Greek period, on internal grounds. With Haggai, it is among the last securely datable prophecy in the Hebrew Bible.",
+        place="JERUSALEM and the Persian province of Yehud, in the years the second temple was going up — its two leaders the governor Zerubbabel and the high priest Joshua. In the visions the horizon widens to the whole earth, patrolled by heavenly riders and weighed in a heavenly court.",
+        audience="The returned remnant of 520 BC — poor, few, and surrounded by comfortable empires 'at ease' while Zion lay in ruins — the same discouraged community Haggai addressed, told here in vision after vision that heaven has not forgotten them, that God is 'jealous for Zion,' and that the temple they are raising is the hinge of a cosmic restoration.",
+        structure=[
+            ["1", "THE OPENING CALL AND THE FIRST VISION — 'return to me, and I will return to you'; then the horseman patrol among the myrtles, the report that 'all the earth is at rest,' the angel's 'how long?', and God's jealous comfort for Zion. (The four horns and four craftsmen are Hebrew 2:1-4 / English 1:18-21.)"],
+            ["2-6", "THE REST OF THE EIGHT NIGHT VISIONS — the man with the measuring line and 'a wall of fire around her'; the high priest Joshua re-robed and 'the BRANCH'; the golden lampstand and two olive trees ('not by might, nor by power, but by my Spirit'); the flying scroll; the woman (Wickedness) in a basket flown to Babylon; the four chariots; and the crowning of the Branch."],
+            ["7-8", "FASTING AND RESTORATION — a question about whether to keep mourning the temple's fall becomes an oracle on true justice and a vision of a Jerusalem so blessed that 'ten men from every nation will grasp the robe of a Jew and say, We will go with you, for we have heard that God is with you.'"],
+            ["9-11", "THE COMING KING AND THE SHEPHERDS — 'your king comes to you, righteous and victorious, humble and riding on a donkey' (9:9); the worthless shepherd, and the thirty pieces of silver flung to the potter in the house of Jehovah (11:12-13)."],
+            ["12-14", "THE FINAL BURDEN — 'they will look on me whom they have pierced' and mourn (12:10); 'strike the shepherd, and the sheep will scatter' (13:7); a fountain opened for sin; and the last-day battle after which 'Jehovah will be king over all the earth' (14:9)."],
+        ],
+        themes=[
+            "'RETURN TO ME' — the book opens (1:3) on the reciprocal turning that is the heart of repentance: not a work that earns God's favor but a response God himself initiates and answers.",
+            "THE UNSEEN GOVERNMENT — apocalyptic's core conviction, born here: behind the small, discouraging politics of a Persian backwater stands a heavenly court, a patrol of the whole earth, angels interceding 'how long?' — history is run from a room the seer is briefly shown.",
+            "JEALOUS FOR ZION — God's zeal (qin'ah), so often the fire of judgment, is turned protective (1:14): the fierce love of a husband for a wronged wife, aimed now at the nations who overdid the punishment.",
+            "'NOT BY MIGHT, NOR BY POWER' — the word to Zerubbabel (4:6) that the temple, and the whole restoration, will be finished not by human strength but by God's Spirit — the theological center of the visions.",
+            "THE BRANCH AND THE PIERCED KING — the messianic thread from Haggai's Zerubbabel through Zechariah's 'Branch' (tzemach) to the humble king (9:9), the sold shepherd (11), and the pierced one (12:10) — the reason the Gospels reach for this book at the cross more than any prophet but Isaiah.",
+        ],
+        key_words=["shuv", "hadas", "nicham", "qav"],
+        key_people=["zechariah", "darius-i", "zerubbabel", "joshua-highpriest"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Zechariah's Hebrew is mostly clear in the visions (1-8) and notably harder in the burdens (9-14), where the text is at points obscure and the ancient versions diverge. Chapter 1 carries two ketiv/qere pairs (v4 'your deeds,' v16 'a measuring line'), the spelling variants Berechiah/Berechiahu and Iddo/Iddo (with a final aleph) between vv1 and 7, and the versification seam by which the four-horns vision is Hebrew 2:1-4 but English 1:18-21. This translation keeps the shuv ('return') thread, the myrtles, the interpreting angel, and qin'ah ('jealous zeal') distinct from its near-homograph qinah ('lament').",
+        christ="No prophet but Isaiah feeds the Passion more. From Zechariah's second half the Gospels draw the TRIUMPHAL ENTRY ('your king comes… humble and riding on a donkey,' 9:9 → Matthew 21:5), the THIRTY PIECES OF SILVER thrown to the potter (11:12-13 → Matthew 27:9-10), 'they will look on the one they have PIERCED' (12:10 → John 19:37), and 'strike the SHEPHERD, and the sheep will be scattered' (13:7 → Matthew 26:31, at Gethsemane). Chapter 1's own contributions run in the machinery more than the plot: the interpreting angel and the heavenly 'how long?' (1:9, 12) become the furniture of Revelation (1:1; 6:10), and 'return to me and I will return to you' (1:3) is the gospel call to repentance in miniature. The BRANCH (3:8; 6:12), crowned as priest-king, ties Haggai's royal Zerubbabel to the Messiah the New Testament proclaims.",
+        debates="THE UNITY of the book — whether chapters 9-14 are Zechariah's own later work or a separate 'Deutero-Zechariah' (or more), the classic higher-critical question raised by their style and their silence about date. THE MATTHEW 23:35 CRUX — 'Zechariah son of Berechiah' murdered in the temple, when the temple martyr of 2 Chronicles 24 was son of Jehoiada: conflation, lost tradition, or textual slip. THE HORSES' colours, and the identity of the 'man among the myrtles' (an ordinary angel, or the Angel of Jehovah himself?). And the reference of the shepherd and pierced-one oracles, read messianically in Christian tradition and otherwise in Jewish.",
     ),
     "Hosea": dict(
         hebrew_name="הוֹשֵׁעַ",
