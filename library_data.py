@@ -965,6 +965,12 @@ DICTIONARY = [
      "A BANQUET — literally a DRINKING, from shatah, to drink. It is the structural unit of Esther: the book contains ten of them, arranged in pairs, and everything decisive happens at one — the king's two feasts here, Vashti's, the wedding feast, Esther's two banquets for the king and Haman, and finally the feasting of Purim itself. A book that never mentions prayer or sacrifice organizes itself entirely around meals.", ("Esther", 1, 3)),
     ("birah", "birah", "בִּירָה", "birah",
      "A CITADEL, fortified complex — not a palace in the sense of a residence but the walled acropolis that housed the government. 'Shushan ha-birah,' Susa the citadel, is where Nehemiah is when he hears about Jerusalem (Nehemiah 1:1) and where the whole of Esther takes place. The distinction matters: these Judeans are not near the court, they are INSIDE the compound.", ("Esther", 1, 2)),
+    ("safun", "safun", "סָפוּן", "safun",
+     "PANELED, ceiled — roofed and lined inside with wood, the mark of a finished, costly house. It is Solomon 'paneling the house with cedar' (1 Kings 6:9) and the doom on the king who must have his rooms 'paneled with cedar' (Jeremiah 22:14). Haggai's rebuke turns on it: the people's own houses are safun, finished and ceiled, while the house of God is charev, a ruin (1:4) — the exact inversion of David's unease at dwelling in cedar while the ark sat in a tent (2 Samuel 7:2).", ("Haggai", 1, 4)),
+    ("charev", "charev", "חָרֵב", "charev",
+     "In RUINS, a waste, desolate — from the root ch-r-b (חרב), which carries both 'lie in ruins' and 'be dry.' Haggai builds his whole first chapter on the double meaning: God's house lies charev, 'a ruin' (1:4, 9), so God calls a chorev — a DROUGHT, a drying-up — 'upon the land' (1:11). Same three consonants: the desolation the people left on the temple is returned, letter for letter, on their fields. Because you left my house charev, I made your land chorev.", ("Haggai", 1, 4)),
+    ("pechah", "pechah", "פֶּחָה", "pechah",
+     "GOVERNOR — a loan-word (Akkadian pihatu, later Persian) for the imperial official set over a province, NOT a native king. It is the office Zerubbabel holds over Judah under Darius (Haggai 1:1, 14), and the same title Nehemiah will hold and pointedly refuse to profit from (Nehemiah 5:14-18). Its ordinariness is the point: the house of David now governs as a mid-level administrator of Persia, and even that only by imperial appointment.", ("Haggai", 1, 1)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3510,6 +3516,61 @@ ENCYCLOPEDIA = [
               "pattern the book will repeat with a queen who succeeds. She is not named in Persian records, where "
               "Xerxes' queen is Amestris.",
          refs=[("Esther", 1, 9), ("Esther", 1, 12)], videos=[]),
+    dict(slug="haggai", name="Haggai", kind="person", aliases=["Haggai", "Aggeus"],
+         desc="The prophet of the book — the FIRST voice of the second-temple age, prophesying in 520 BC alongside his "
+              "younger contemporary Zechariah. His whole book is four oracles dated to the day across a single autumn "
+              "(Elul to Kislev of Darius's second year), aimed at one goal: getting the stalled rebuilding of the temple "
+              "restarted. The name means 'FESTIVE / my feast' (from chag, a pilgrim festival) — perhaps 'born on a feast "
+              "day.' He is the only prophet in the Hebrew Bible given the title mal'ach YHVH, 'the messenger of Jehovah' "
+              "(1:13). His hint that some in his audience 'saw this house in its former glory' (2:3) would make him an old "
+              "man who remembered Solomon's temple before 587 — otherwise nothing personal is known. Ezra 5:1 and 6:14 name "
+              "him and Zechariah from the outside as the prophets whose preaching got the work done. The Vulgate calls him "
+              "Aggeus.",
+         refs=[("Haggai", 1, 1), ("Haggai", 1, 3), ("Haggai", 1, 12), ("Haggai", 1, 13)], videos=[]),
+    dict(slug="zerubbabel", name="Zerubbabel", kind="person", aliases=["Zerubbabel"],
+         desc="Governor (pechah) of Judah under Darius, and the last real Davidic hope in the Old Testament — grandson of "
+              "the exiled king Jehoiachin, and so a prince of the house of David governing his ancestors' land as a "
+              "Persian appointee. He led the first company of exiles home (Ezra 2), laid the temple's foundation, and here "
+              "is roused by Haggai to finish it. His name is Babylonian — Zeru-Babili, 'seed / offspring of Babylon' — the "
+              "mark of a man born in exile. ⚠ Haggai calls him son of SHEALTIEL (1:1), as does Ezra, while 1 Chronicles "
+              "3:19 makes him son of Pedaiah, Shealtiel's brother — most likely a levirate marriage or an adoption within "
+              "the royal line. Haggai's last oracle makes him the SIGNET RING God will wear (2:23), reversing the curse by "
+              "which Jeremiah had 'torn off' his grandfather Jehoiachin as a signet (Jeremiah 22:24). He appears in both "
+              "genealogies of Jesus (Matthew 1:12; Luke 3:27) and then vanishes from history without becoming king.",
+         refs=[("Haggai", 1, 1), ("Haggai", 1, 12), ("Haggai", 1, 14)], videos=[]),
+    dict(slug="joshua-highpriest", name="Joshua son of Jehozadak", kind="person",
+         aliases=["Joshua son of Jehozadak", "Joshua the high priest", "Jeshua"],
+         desc="The first high priest of the rebuilt temple, the priestly half of the pair (with the governor Zerubbabel) "
+              "that carries Israel through an age with no king. He is grandson of the Seraiah whom Nebuchadnezzar executed "
+              "at the fall of Jerusalem (2 Kings 25:18-21) and son of Jehozadak, who was carried to Babylon (1 Chronicles "
+              "6:15) — so the high-priestly line, like the royal one, comes home out of exile in his person. Zechariah, "
+              "Haggai's contemporary, gives him two visions: stripped of filthy garments and re-clothed with a clean "
+              "turban (Zechariah 3), and crowned as a sign of 'the Branch' who will build the temple (Zechariah 6). Ezra "
+              "and Nehemiah spell his name JESHUA. ⚠ He is NOT Joshua son of Nun, the conqueror — a different man five "
+              "centuries later — which is why this entry never answers to the bare name 'Joshua.'",
+         refs=[("Haggai", 1, 1), ("Haggai", 1, 12), ("Haggai", 1, 14)], videos=[]),
+    dict(slug="darius-i", name="Darius I", kind="person", aliases=["Darius the king", "Darius"],
+         desc="Darius I 'the Great,' son of Hystaspes, king of Persia 522-486 BC — the emperor by whose regnal years "
+              "Haggai and Zechariah date every oracle. He seized the throne in the chaos after Cambyses died and spent his "
+              "first two years crushing revolts across the empire, a campaign he had carved in three languages on the cliff "
+              "at BEHISTUN. In his second year (520) the temple work resumes; when Judah's enemies protest, Darius has the "
+              "archives searched, finds Cyrus's original decree at Ecbatana, and orders the rebuilding funded from the "
+              "royal treasury (Ezra 6) — so the house is finished in his sixth year, 516 BC. ⚠ He is a different king from "
+              "Darius the Mede of Daniel, and from Darius II; the shared name is why this Persian Darius must claim the "
+              "word here, so it is not mistaken for the figure in Daniel.",
+         refs=[("Haggai", 1, 1), ("Haggai", 1, 15)], videos=[]),
+    dict(slug="second-temple", name="The Second Temple", kind="place",
+         aliases=["The Second Temple", "Zerubbabel's Temple"],
+         desc="The temple these hands began — built on the platform of Solomon's ruined first temple on the eastern hill of "
+              "Jerusalem, on the traditional Mount Moriah. Its foundation was laid soon after the return under Cyrus (Ezra "
+              "3), then sat untouched for some sixteen years until Haggai and Zechariah restarted the work in 520; it was "
+              "finished in 516 BC (Ezra 6:15). It was smaller and plainer than Solomon's, and the old men who remembered "
+              "the first wept at the sight (Ezra 3:12) — the grief Haggai answers with 'the latter glory of this house will "
+              "be greater than the former' (2:9). This modest building stood, much altered, for nearly five centuries, "
+              "until Herod the Great remade it on a vast scale and Rome burned it in AD 70. Only its western retaining wall "
+              "survives.",
+         refs=[("Haggai", 1, 8)],
+         coords=(31.778, 35.2354, 0.01), approx=True, videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -4236,6 +4297,10 @@ XREFS = [
     ((("Esther", 1, 7)), (("Ezra", 1, 7)), "gold vessels at a Persian king's drinking party, in a book that never mentions the temple whose vessels Ezra counted home"),
     ((("Esther", 1, 8)), (("Esther", 1, 19)), "dat, the Persian word for law: first a courtesy about wine, then an edict that cannot be revoked — and by chapter 3, a genocide"),
     ((("Esther", 1, 19)), (("Daniel", 1, 1)), "'the laws of Persia and Media, so that it cannot pass away' — the same convention that traps Darius in Daniel 6; unattested in Persian sources"),
+    (("Haggai", 1, 13), ("Exodus", 3, 12), "'I am with you' — the four words Haggai gives the discouraged builders are the covenant assurance God gave Moses at the burning bush, 'I will surely be with you'"),
+    (("Haggai", 1, 1), ("Jeremiah", 22, 24), "Zerubbabel is grandson of the King Jehoiachin whom Jeremiah 'tears off' here like a signet ring — and Haggai's last oracle (2:23) makes Zerubbabel the signet ring again, reversing the curse"),
+    (("Haggai", 1, 11), ("Zephaniah", 1, 2), "the same creation-list (ground, human, beast, produce): Zephaniah has God SWEEP the categories off the ground, Haggai has him DRY THEM UP with a drought called down on the land"),
+    (("Haggai", 1, 12), ("Isaiah", 1, 9), "she'erit, 'the remnant' — the surviving few that Isaiah says were all that kept Judah from becoming Sodom, and that Haggai makes the whole workforce of the rebuilt house"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -4612,6 +4677,9 @@ VERSE_OF_DAY = [
     ("Esther", 1, 8, "“The drinking was according to the law: no one compelling.” The empire's law, on its first outing, is a rule about wine."),
     ("Esther", 1, 12, "“But Vashti the queen refused to come.” The book gives no reason, and the whole story depends on it."),
     ("Esther", 1, 22, "“That every man should be master in his own house.” The imperial post, in every script, carrying a drunk man's hangover."),
+    ("Haggai", 1, 4, "“Is it a time for you yourselves to dwell in your paneled houses, while this house lies a ruin?” The question that ended a sixteen-year delay: they had roofed their own homes and stopped noticing the gap."),
+    ("Haggai", 1, 6, "“The wage-earner earns wages into a bag full of holes.” Effort without the one thing it was built around does not fail loudly; it just never STAYS."),
+    ("Haggai", 1, 13, "“I am with you, declares Jehovah.” Not ‘work harder’ — the four words that moved a discouraged people to break ground twenty-three days later."),
 ]
 
 # ---------------------------------------------------------------------------
@@ -5077,6 +5145,9 @@ CHRON_CHAPTERS = {
     "amos1": dict(era="monarchy",
                   when="Five foreign nations sentenced in turn — Damascus, Gaza, Tyre, Edom, Ammon — by a Judean sheep-breeder standing in the northern kingdom at the height of its prosperity.",
                   clock="≈760 BC, and this is one of the most precisely dated books in the Bible: Uzziah is on the throne in Judah, Jeroboam II in Israel, and Amos adds a second fix nobody else uses — 'two years before THE earthquake', with the definite article, because his readers could count from it. Zechariah 14:5 was still measuring by that earthquake two and a half centuries later, and mid-eighth-century destruction layers at Hazor, Lachish, Gezer and in the City of David are commonly identified with it. Amos is, on most reckonings, the EARLIEST of the writing prophets — about thirty years before Samaria falls."),
+    "haggai1": dict(era="return",
+                  when="The word that restarted the temple: a discouraged remnant, busy roofing its own houses while God's house lies a ruin, is asked to 'set your heart on your ways' — and, uniquely among the prophets, OBEYS, breaking ground twenty-three days later. The chapter's engine is not a threat but a presence: 'I am with you, declares Jehovah.'",
+                  clock="The first day of the sixth month in the second year of Darius the king — 29 August 520 BC, dated to the day. Eighteen years after the first exiles came home under Cyrus (538) and laid a foundation that then sat untouched for some sixteen years; Haggai and his contemporary Zechariah rouse the rebuilding, and the second temple is finished in 516 (Ezra 6:15). The calendar now runs by a Persian emperor, for there is no king in Jerusalem."),
     "zephaniah1": dict(era="monarchy",
                   when="The 'day of Jehovah' at its most total — a de-creation that undoes Genesis 1 ('I will sweep away human and beast, the birds and the fish'), narrowing to a Jerusalem searched with lamps for the complacent, and widening back out to 'the whole earth consumed in the fire of his jealousy.'",
                   clock="c. 630 BC, in the reign of Josiah (640-609) and probably BEFORE his great reform of 622 — since Zephaniah still condemns live Baal-worship, rooftop star-worship, and swearing by Milcom, the very things the reform would sweep out. That makes him a herald of Josiah's reform and an older contemporary of the young Jeremiah, a couple of decades before Babylon (whom the chapter's world-ending scope anticipates) would end the kingdom. ⚠ A prophet of royal blood: his heading traces him four generations back to King Hezekiah."),
@@ -5293,6 +5364,9 @@ CHRON_EVENTS = [
     dict(era="return", am="—", trad="538 BC", event="Cyrus of Persia allows the exiles to return; the first company goes home to a ruined Jerusalem",
          note="The Cyrus Cylinder records the Persian policy of restoring deported peoples and their sanctuaries — the imperial background to Ezra 1. Daniel 1:21 closes on the same year, 'the first year of King Cyrus.'",
          ref=("Daniel", 1, 21)),
+    dict(era="return", am="—", trad="520 BC", event="Haggai and Zechariah rouse the stalled rebuilding of the temple; ground is broken twenty-three days after Haggai's first word",
+         note="Haggai 1. The first day of the sixth month in the second year of Darius I, dated to the day. Ezra 5:1-2 records the same moment from the outside; the enemies' protest sends Darius to the archives, where Cyrus's decree is found (Ezra 6), and the house is finished four years later in 516.",
+         ref=("Haggai", 1, 1)),
     dict(era="return", am="—", trad="515 BC", event="The second temple finished — smaller than Solomon's, and wept over by those who remembered the first",
          note="Ezra 6:15. It is this temple, in working order and taken for granted, whose altar Malachi finds treated with contempt.",
          ref=("Malachi", 1, 7)),
@@ -6965,6 +7039,38 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Zephaniah's Hebrew is mostly clear and forceful; the local difficulties are lexical — the emphatic doubling asof asef (1:2), the winemaking image of men 'congealed on their dregs' (1:12), and a few rare terms in the Day-of-Wrath catalogue. This translation keeps the Genesis-1 categories in order so the de-creation shows, keeps kemarim ('idol-priests') distinct from kohanim, and keeps sho'ah ('ruin') visible in 1:15 — the word the modern age made the name of the Holocaust.",
         christ="Zephaniah reaches the New Testament through the DAY OF JEHOVAH and the SINGING GOD. ⚠ Its Day-of-Wrath language — darkness, trumpet, fire, the wrath from which wealth cannot buy escape — feeds directly into the New Testament's 'day of the Lord' (1 Thessalonians 5:2; 2 Peter 3:10) and the imagery of Revelation, and through the Latin Vulgate became the Dies Irae sung over the Christian dead. But the book's deepest Christian resonance is its END: 'Jehovah your God is in your midst… he will exult over you with singing' (3:17) is read as the promise of God-with-us (Immanuel) and of the joy of salvation — the same note as the angels' 'good news of great joy' and the father running to the prodigal. And 3:12-13, the 'humble and lowly' remnant who 'do no wrong and speak no lies,' is heard in the Beatitudes' 'blessed are the meek' and in the description of the Lamb 'in whose mouth no lie was found' (Revelation 14:5).",
         debates="THE DATE within Josiah's reign — before the 622 reform (the majority, from the live idolatry condemned) or after. THE EXTENT of the original book — whether the bright restoration of chapter 3 (and parts of ch 2) is Zephaniah's own or a later, post-exilic addition, the same unity-question raised for most of the prophets who end in hope. THE FATHER'S NAME 'Cushi' — a personal name, or a marker of Cushite (African) descent, weighed against the royal Hezekiah pedigree. And the exact location of the MAKTESH, named only here.",
+    ),
+    "Haggai": dict(
+        hebrew_name="חַגַּי",
+        hebrew_translit="Chaggai",
+        hebrew_meaning="'FESTIVE / my feast' — from chag, a pilgrim festival (the root behind the three great feasts). The likeliest sense is 'born on a festival day.' ⚠ There is a quiet irony in it: a prophet named for the feast-days arrives to a people who have let the house where the feasts are kept sit in ruins for sixteen years.",
+        greek_name="Ἀγγαῖος (Aggaios)",
+        greek_meaning="Tenth of the Twelve in both the Hebrew and Greek orders. The Septuagint attaches Haggai's name to several psalms (with Zechariah) as if he were among their singers — a late tradition, not in the Hebrew. The Vulgate calls him Aggeus.",
+        tagline="The prophet who got the job DONE. In four oracles dated to the day across one autumn of 520 BC, Haggai shames a discouraged remnant out of roofing its own houses while God's house lies a ruin — and, alone among the prophets, is OBEYED: they break ground twenty-three days after his first word. The engine of the whole book is four words: 'I am with you.'",
+        genre="PROPHETIC ORACLE in a spare, repetitive, almost administrative prose — the plainest style in the Twelve. Haggai has none of Isaiah's soaring poetry; his book is built out of dated headings ('in the second year of Darius, the Nth day of the Nth month...'), direct commands, and a refrain ('set your heart on your ways') — the register of a man running a building project, not painting a vision. Its four oracles are precisely dated and tightly sequenced across a single four-month span.",
+        canon="Tenth of THE TWELVE (the Minor Prophets), the single Book of the Twelve in the Hebrew canon. Haggai and Zechariah 1-8 are the two prophetic books of the RESTORATION — the only ones set after the exile, in the small Persian province of Yehud — and the book of Ezra (5:1; 6:14) names them together as the preaching that actually got the temple built. Haggai is the shortest book in the Twelve after Obadiah.",
+        author="HAGGAI the prophet, of whom nothing personal is recorded except his work. His remark that some hearers 'saw this house in its former glory' (2:3) has been read to mean he was an old man who remembered Solomon's temple before its destruction in 587 — which would make him well over seventy in 520. He is named nine times in his own two chapters, always simply 'Haggai the prophet,' and twice by Ezra. The book's tight dating and third-person framing ('the word of Jehovah came by the hand of Haggai') suggest it was gathered by a close editor, perhaps from the temple archive.",
+        date="Fixed to the second year of DARIUS I of Persia — 520 BC — and, uniquely, to the DAY: the four oracles fall on the first of the sixth month (1:1), the twenty-first of the seventh (2:1), and the twenty-fourth of the ninth (2:10, 2:20), from late August to mid-December 520. It is the most precisely dated book in the Old Testament, and the dating by a Persian regnal year rather than a Judean king is itself the message: the age of kings in Jerusalem is over.",
+        place="JERUSALEM and its ruined temple mount, in the Persian province of Yehud — a small, poor, discouraged community of returned exiles rebuilding a shrunken city. The horizon never leaves the temple platform and the fields around it; the 'nations' appear only as the wealth God will shake loose to fill the house (2:7).",
+        audience="The RETURNED REMNANT (she'erit ha-am) and its two leaders — Zerubbabel the Davidic governor and Joshua the high priest — roughly eighteen years after the first return, dispirited by poverty, drought, and hostile neighbours, and telling themselves 'the time has not come.' Haggai's whole task is to break that paralysis.",
+        structure=[
+            ["1", "THE CALL TO REBUILD — 'is it a time for you to dwell in your paneled houses while this house lies a ruin?'; the futility curse (a bag full of holes); the wordplay of a ruined house and a drought-ruined land; and — uniquely — the people OBEY, breaking ground on the twenty-fourth of the sixth month."],
+            ["2:1-9", "THE GLORY OF THE LATTER HOUSE — to the old men who wept that this temple was 'as nothing' beside Solomon's: 'be strong... I am with you... yet once more I will shake the heavens and the earth... and the latter glory of this house will be greater than the former.'"],
+            ["2:10-19", "FROM DEFILEMENT TO BLESSING — a priestly ruling on holiness and uncleanness, turned into a promise: from the day the foundation was relaid, 'I will bless you.'"],
+            ["2:20-23", "THE SIGNET RING — a closing word to Zerubbabel: God will overturn the thrones of the nations and make him 'like a signet ring, for I have chosen you' — reversing the curse on his grandfather Jehoiachin (Jeremiah 22:24)."],
+        ],
+        themes=[
+            "PUT FIRST THINGS FIRST — the book's whole diagnosis: the people's failure is not open rebellion but misordered priority ('me first, God's house later'), and its symptom is a strange, leaking futility — real effort that never quite adds up, because the one thing it was all built around was left undone.",
+            "'I AM WITH YOU' — the promise (1:13; 2:4) that carries the book. Haggai motivates not by fear of wrath but by the assurance of PRESENCE, the covenant word from the burning bush forward, and the far horizon of Immanuel.",
+            "GOD STIRS THE WILL — the same verb ('ur, to rouse) that God used on Cyrus's spirit to send the exiles home (Ezra 1:1) he now uses on the spirit of Zerubbabel, Joshua and the whole remnant (1:14): God rouses, and the roused hands build.",
+            "THE RETURNING GLORY — the kavod that filled Solomon's temple and then departed in Ezekiel's vision will come back to this plainer house, and 'the latter glory... will be greater than the former' (2:9) — a promise the New Testament will read as fulfilled in the one who walked its courts.",
+            "THE PRINCE AND THE PRIEST — Zerubbabel and Joshua, the two offices that will govern Israel through an age with no king; Zechariah's 'two olive trees' and, at the book's end, the signet ring that keeps the Davidic hope alive.",
+        ],
+        key_words=["charev", "safun", "pechah", "sheerit"],
+        key_people=["haggai", "zerubbabel", "joshua-highpriest", "darius-i", "second-temple"],
+        source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Haggai's Hebrew is clear and straightforward — the difficulties are few: a ketiv/qere on 'I will be glorified' (1:8), the two spellings Shealtiel/Shaltiel for Zerubbabel's father (1:1 vs 1:12, 14), and the sustained pun on the root ch-r-b, 'ruin' and 'drought' (1:4, 9, 11), which no translation can carry in a single English word. This translation keeps the Persian office pechah as 'governor,' the creation-list of 1:11 in order, and 'I am with you' bare.",
+        christ="Haggai reaches the New Testament through ZERUBBABEL and the GLORY OF THE HOUSE. Zerubbabel stands in both genealogies of Jesus (Matthew 1:12; Luke 3:27), and Haggai's closing 'signet ring' oracle (2:23) reverses the curse on his grandfather Jehoiachin (Jeremiah 22:24), keeping the Davidic line — and so the messianic hope — alive through the exile. The promise that 'the latter glory of this house will be greater than the former' (2:9), and 'I will shake the nations, and the treasure of all nations will come, and I will fill this house with glory,' is read in Christian tradition as fulfilled when the Messiah himself entered the second temple's courts (echoed in Malachi 3:1, 'the Lord will suddenly come to his temple'), and 2:6 ('yet once more I will shake the heavens and the earth') is quoted directly in Hebrews 12:26-27. And 'I am with you' (1:13) runs forward to Immanuel and to 'I am with you always, to the end of the age' (Matthew 28:20).",
+        debates="THE GLORY OF 2:9 — whether 'this house' means Zerubbabel's temple as later enlarged by Herod (so the greater glory is architectural and historical) or points beyond any building to the Messiah's presence (the Christian reading). THE SIGNET-RING ORACLE — whether Haggai (and Zechariah) briefly hoped Zerubbabel would be crowned king, a hope history disappointed, and how that squares with the messianic reading. And the RELATION to Ezra 4-6, whose account of the delay and restart Haggai's dates are usually used to reconstruct.",
     ),
     "Hosea": dict(
         hebrew_name="הוֹשֵׁעַ",
