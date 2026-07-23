@@ -56,6 +56,15 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ["tekmerion", "tekmērion", "τεκμήριον", "tekmērion", "A DEMONSTRATIVE proof — not a hint but the kind of sign that settles a case. Aristotle separates it from sēmeion, an ordinary sign that can mislead, and defines a tekmērion as the necessary sign that cannot be refuted (Rhetoric 1357b); Greek doctors used it of the symptom that makes a diagnosis certain. It appears once in the whole New Testament, of the risen Jesus presenting himself alive 'by many conclusive proofs' — courtroom-and-clinic vocabulary chosen at the exact point where the argument needs it. KJV 'many infallible proofs' catches the force; ASV's 'many proofs' loses it.", ["Acts", 1, 3]],
+    ["synalizomai", "synalizomai", "συναλίζομαι", "synalizomai", "A genuine crux, and one of the more entertaining ones. Parsed as syn + halizomai (from hals, SALT) it means to take salt with someone — to share a meal, and in the ancient Near East to eat a man's salt was to be bound to him. Parsed as syn + alizō, 'to gather', it means simply 'assembling with'. The Vulgate chose the meal (convescens) and Douay follows it; KJV and ASV read 'being assembled together with them'. This translation takes the meal, on the strength of Luke's own habit rather than the etymology — his risen Jesus eats broiled fish, is known in the breaking of bread, and Peter later defines the witnesses as those 'who ate and drank with him after he rose'.", ["Acts", 1, 4]],
+    ["chronos", "chronos", "χρόνος", "chronos", "Time as DURATION — the stretch a calendar or a clock measures; the root of 'chronology' and 'chronic'. Paired with kairos, its opposite number, in the formal phrase 'times or seasons' (Acts 1:7; 1 Thessalonians 5:1; and in the Greek of Daniel 2:21). Translations that flatten both words into 'times' lose the point: what the Father holds within his own authority is both the long duration AND the exact hour.", ["Acts", 1, 7]],
+    ["kairos", "kairos", "καιρός", "kairos", "Time as the DECISIVE MOMENT — the right time, the opening, the hour when a thing can be done; the twin and opposite of chronos, which is mere duration. Classical Greek personified Kairos as a god with a forelock you must seize as he passes, since he is bald behind. The New Testament uses it for the appointed moment of God's action ('the kairos is fulfilled', Mark 1:15), which is why keeping it distinct from chronos matters: a calendar cannot predict a kairos.", ["Acts", 1, 7]],
+    ["homothymadon", "homothymadon", "ὁμοθυμαδόν", "homothymadon", "Of one mind, with one impulse — homou ('together') + thymos ('passion, impulse'), so not merely agreement but a shared drive. Ten of its eleven New Testament occurrences are in Acts, which makes it something close to Luke's signature word for the church when it is working: praying with one accord before Pentecost, meeting with one accord in Solomon's colonnade. KJV and ASV 'with one accord'; NWT 'with one purpose'.", ["Acts", 1, 14]],
+    ["kardiognostes", "kardiognōstēs", "καρδιογνώστης", "kardiognōstēs", "KNOWER OF HEARTS — kardia ('heart') + ginōskō ('to know'). A compound so rare that its only two appearances in early literature are both in Acts: here, where eleven men who cannot see inside either candidate hand the choice to the one who can, and at Acts 15:8, where God 'who knows the heart' is the argument for admitting Gentiles. It may well be a coinage of the first Christians, standing on 1 Samuel 16:7 — 'man looks at the outward appearance, but Jehovah looks at the heart'.", ["Acts", 1, 24]],
+    ["kleros", "klēros", "κλῆρος", "klēros", "A LOT — first the pebble or marked stone that is cast, then the share it assigns you, then the inheritance you hold; the Greek Bible's standing rendering of the Hebrew goral. Acts 1 uses it both ways within ten verses: Judas 'was allotted his share (klēros) in this ministry' (v17), and the lot (klēros) falls on Matthias (v26) — the LAST casting of lots anywhere in the Bible. Its English afterlife is odd and exact: through Latin clericus it is the root of CLERGY, a word for the ordained that began as a word for a dice-throw.", ["Acts", 1, 26]],
+    ["episkope", "episkopē", "ἐπισκοπή", "episkopē", "An OVERSEER'S POST — the office of one who watches over; from episkopos, 'overseer', which travelled through Latin into Old English and emerged as BISHOP. Peter applies Psalm 109:8 to the vacancy Judas left: 'let another take his episkopē'. KJV says the later word out loud — 'his bishoprick let another take' — a fair rendering of the term and, at the same time, an anachronism, since no such office exists in that room. The same noun elsewhere means a divine 'visitation' (Luke 19:44).", ["Acts", 1, 20]],
+    ["analambano", "analambanō", "ἀναλαμβάνω", "analambanō", "To TAKE UP, lift up and receive — the verb Acts uses four times in one chapter for the ascension (1:2, 1:11, 1:22), always in the passive: he was taken up. It is the word the Greek Old Testament uses of ELIJAH, taken up in the whirlwind while Elisha watched and then received a double portion of his spirit (2 Kings 2:9-11), and it is picked up in the hymn fragment of 1 Timothy 3:16, 'taken up in glory'. Luke's second volume opens with the Elijah pattern in the frame: the master goes up, and the successors receive the Spirit.", ["Acts", 1, 9]],
     ("adam", "adam", "אָדָם", "adam",
      "Humankind / the human; a personal name only later. Puns on adamah, 'ground' — the groundling from the ground.", (2, 7)),
     ("adamah", "adamah", "אֲדָמָה", "adamah",
@@ -988,6 +997,35 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="peter", name="Peter", kind="person", aliases=["Peter"],
+         desc="Simon son of John, a fisherman of Bethsaida and Capernaum, renamed Kēphas/Petros — 'Rock'. He is the first name in every list of the Twelve, the one who confesses and the one who denies, and in the first half of Acts he is the church's voice: he proposes the twelfth apostle here, preaches at Pentecost, is arrested repeatedly, is the first to take the message to a Gentile household, and then all but disappears from the book after chapter 15 as Paul takes over the narrative. Tradition, first recorded within a generation or two (1 Clement; later Eusebius), places his death in Rome under Nero, crucified — a detail Origen adds — head downward. In Acts 1 he does the plainest possible thing: he stands up in a room of a hundred and twenty and reads a psalm.",
+         refs=[("Acts", 1, 13), ("Acts", 1, 15)]),
+    dict(slug="matthias", name="Matthias", kind="person", aliases=["Matthias"],
+         desc="The twelfth apostle, chosen by lot in Acts 1 to take the place Judas left. The qualification Peter states is strict — he must have been with the group from John's baptism through to the ascension, and he must be a witness of the resurrection — so Matthias had been present all along and simply never named. He is never mentioned again in the New Testament, which has fed a persistent reading that the election was premature and that the real twelfth apostle was Paul; against that stands Luke's own silence about any fault, his calling the group 'the twelve' five chapters later, and the fact that nine of the other eleven vanish from the record too. Later tradition sends him to preach in Ethiopia or Cappadocia and gives him a martyr's death; none of it is early. He is the last person in the Bible chosen by casting lots.",
+         refs=[("Acts", 1, 23), ("Acts", 1, 26)]),
+    dict(slug="judas-iscariot", name="Judas Iscariot", kind="person", aliases=["Judas"],
+         desc="The apostle who handed Jesus over — 'Iscariot' probably meaning 'man of Kerioth', a Judean town, which would make him the only non-Galilean of the Twelve (a rival derivation ties it to the sicarii, the dagger-men, though that movement is attested later). Acts 1 does not curse him: Peter says only that 'he was counted among us, and was allotted his share in this ministry', which is worse than an insult. ⚠ Luke's account of his death (Acts 1:18-19 — a field bought with the wages of wickedness, a headlong fall, a body burst open) does not agree with Matthew's (27:3-10 — the silver thrown into the sanctuary, a hanging, and the priests buying the potter's field). The harmonisations are old and the disagreement is real; this library prints both and does not vote.",
+         refs=[("Acts", 1, 16), ("Acts", 1, 25)]),
+    dict(slug="judas-son-of-james", name="Judas son of James", kind="person", aliases=["Judas son of James"],
+         desc="The OTHER Judas among the Twelve — listed by Luke both in his Gospel (6:16) and here, and identified by his father precisely so that nobody confuses him with Iscariot. John 14:22 gives him one line of dialogue and takes the same care: 'Judas — not Iscariot — said to him…'. Matthew and Mark call the same man Thaddaeus (and some manuscripts, Lebbaeus), which is either a second name or a second tradition; the church has generally treated the names as belonging to one person. That two of the Twelve shared a name is a small fact with a long shadow: after the betrayal, the second Judas needed a qualifier for the rest of history.",
+         refs=[("Acts", 1, 13)]),
+    dict(slug="theophilus", name="Theophilus", kind="person", aliases=["Theophilus"],
+         desc="The man to whom both of Luke's volumes are addressed (Luke 1:3; Acts 1:1) — and the reason they are read as one work. The name means 'friend of God' or 'loved by God', which has always left room for the suggestion that it is a way of addressing any reader who loves God; against that stands the title Luke gives him in the Gospel, kratistos, 'most excellent', a form of address for a man of rank that Luke otherwise reserves for the governors Felix and Festus. The likeliest reading is the ordinary one: a real person of standing, possibly the book's patron, who had already been catechised in the faith and was owed 'the certainty' of it.",
+         refs=[("Acts", 1, 1)]),
+    dict(slug="mary", name="Mary the mother of Jesus", kind="person", aliases=["Mary"],
+         desc="Mariam of Nazareth. Luke gives her more attention than any other evangelist — the annunciation, the Magnificat, the treasuring of things in her heart — and then hands her the quietest possible exit: ⚠ Acts 1:14 is the LAST mention of Mary in the New Testament, and in it she is simply in the room, praying with the others, holding no office and given no last word. She is named among 'the women' and beside 'his brothers' — the brothers who, one Gospel says flatly, 'did not believe in him' (John 7:5) and who are now waiting with the rest. The vast later structure of Marian doctrine and devotion is built elsewhere; the Bible's own final image of her is a woman at prayer in an upstairs room, indistinguishable from the crowd.",
+         refs=[("Luke", 1, 27), ("Acts", 1, 14)]),
+    dict(slug="mount-of-olives", name="Mount of Olives", kind="place", aliases=["Olivet", "Mount of Olives"],
+         coords=(31.7783, 35.2464, 0.04),
+         desc="The limestone ridge east of Jerusalem, across the Kidron valley, rising a little above the temple mount and facing it — so that anyone standing on it looks down into the city. Named for the olive groves on its slopes; Gethsemane lies at its foot. Luke calls it by a place-name form, Elaiōn, 'Olivet', and adds that it is 'a sabbath day's journey' from Jerusalem — about two thousand cubits, two-thirds of a mile — which is the only time the Bible uses that measure. It is where David fled weeping from Absalom, where Zechariah 14:4 says Jehovah's feet will stand, where Jesus taught, wept over the city, and was arrested, and where Acts places the ascension.",
+         refs=[("Acts", 1, 12)]),
+    dict(slug="akeldama", name="Akeldama", kind="place", aliases=["Akeldama"],
+         coords=(31.7692, 35.2331, 0.02), approx=True,
+         desc="The 'Field of Blood' — Aramaic ḥăqēl dəmā, which Luke transliterates and then translates for his Greek readers, a small detail that tells you a good deal about who he was writing for. Both Gospels and Acts agree that a plot of ground outside Jerusalem was bought with the betrayal money and carried that name; they explain the name differently, and this library prints both accounts. ⚠ The pin is TRADITIONAL, not certain: the site shown to pilgrims since at least the fourth century lies on the southern slope of the Hinnom valley, where Jerusalem's potters worked the clay and where rock-cut tombs were used as a burial ground for foreigners — which fits Matthew's 'field for the burial of strangers'. The identification is early and plausible; it is not evidence.",
+         refs=[("Acts", 1, 19)]),
+    dict(slug="galilee", name="Galilee", kind="place", aliases=["Galilee", "Galileans"],
+         desc="The northern region of the land — hill country and a freshwater lake, ringed by Gentile territory, which is why Isaiah 9:1 calls it 'Galilee of the nations'. It was fertile, densely settled, and politically restless: Judas the Galilean's tax revolt of AD 6 began there, and the word 'Galilean' carried in Jerusalem roughly the tone of a provincial accent — Peter's own speech gives him away in the high priest's courtyard. Almost all of Jesus' ministry happens here, all of the Twelve but perhaps one come from here, and the men in white at the ascension address the whole future church by the name of a backwater: 'Men of Galilee, why do you stand looking into heaven?'",
+         refs=[("Acts", 1, 11)]),
     # ---- places ----
     dict(slug="eden", name="Eden", kind="place",
          desc="The garden's region, 'in the east' (2:8), watered by a river that splits into four. Two of the four "
@@ -1327,7 +1365,7 @@ ENCYCLOPEDIA = [
               "Prophet, calls himself only 'a voice crying in the wilderness' (Isaiah 40:3), and points his own "
               "disciples to 'the Lamb of God.' (The Gospel of John never names its own author, so every 'John' in "
               "this book is the Baptist.)",
-         refs=[("John", 1, 6), ("John", 1, 15), ("John", 1, 19), ("John", 1, 26), ("John", 1, 29), ("John", 1, 35)],
+         refs=[("John", 1, 6), ("John", 1, 15), ("John", 1, 19), ("John", 1, 26), ("John", 1, 29), ("John", 1, 35), ("Acts", 1, 5)],
          videos=[]),
     dict(slug="jesus", name="Jesus", kind="person", aliases=["Jesus"],
          desc="Jesus of Nazareth, son of Joseph — the Word made flesh (1:14). Hailed by the Baptist as 'the Lamb of "
@@ -1337,7 +1375,7 @@ ENCYCLOPEDIA = [
               "among the lampstands, wearing the Ancient of Days' own description, who says 'I am the first and the "
               "last... and I was dead, and look: I am alive forever' (Rev 1:13-18).",
          refs=[("Matthew", 7, 28), ("John", 1, 17), ("John", 1, 29), ("John", 1, 36), ("John", 1, 42), ("John", 1, 45), ("John", 1, 50),
-               ("Revelation", 1, 1), ("Revelation", 1, 5), ("Revelation", 1, 9)],
+               ("Revelation", 1, 1), ("Revelation", 1, 5), ("Revelation", 1, 9), ("Acts", 1, 1)],
          videos=[]),
     dict(slug="andrew", name="Andrew", kind="person", aliases=["Andrew"],
          desc="Simon Peter's brother and one of the Baptist's disciples — the first to follow Jesus. He finds his "
@@ -1406,7 +1444,7 @@ ENCYCLOPEDIA = [
               "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
               "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3), ("Nehemiah", 1, 3)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3), ("Nehemiah", 1, 3), ("Acts", 1, 4)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -2952,7 +2990,7 @@ ENCYCLOPEDIA = [
               "belonging to the dynasty rather than to a tribe. Ahab and Jezebel's ivory-inlaid palace here is "
               "described in Kings and its ivories have been excavated. Besieged and taken by Assyria in 722 BC, "
               "ending the northern kingdom; its later inhabitants are the Samaritans of the Gospels.",
-         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3), ("Micah", 1, 1), ("Micah", 1, 6)], videos=[],
+         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3), ("Micah", 1, 1), ("Micah", 1, 6), ("Acts", 1, 8)], videos=[],
          coords=(32.2803, 35.1897, 0.06),
          modern="Sebastia, in the hills north-west of Nablus, West Bank"),
     dict(slug="gibeon", name="Gibeon", kind="place", aliases=["Gibeon"],
@@ -3635,6 +3673,14 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    [["Acts", 1, 1], ["Luke", 1, 3], "the same Theophilus, and 'the first account' — the seam that makes Luke and Acts one two-volume work by one hand"],
+    [["Acts", 1, 5], ["Mark", 1, 8], "John's own promise — 'I baptized you with water, but he will baptize you with the Holy Spirit' — quoted back by the risen Jesus ten days before it happens"],
+    [["Acts", 1, 14], ["Luke", 1, 38], "Mary's 'may it happen to me according to your word' opened Luke's Gospel; here, at her last mention in the Bible, she is praying in an upstairs room with the rest"],
+    [["Acts", 1, 26], ["Jonah", 1, 7], "casting lots to put a decision beyond human management — the sailors find Jonah by it; this is the last time in the Bible anyone does it"],
+    [["Acts", 1, 9], ["Daniel", 7, 13], "'one like a son of man coming with the clouds of heaven' — brought to the Ancient of Days and given a kingdom, moments after the disciples asked about a kingdom"],
+    [["Acts", 1, 8], ["Isaiah", 49, 6], "'to the end of the earth' — quoted word for word from the servant song, and set in place as the outline of the whole book"],
+    [["Acts", 1, 20], ["Psalms", 69, 25], "'let his homestead become desolate' — the psalm curses enemies in the plural; Peter reads it in the singular, of one man"],
+    [["Acts", 1, 24], ["1 Samuel", 16, 7], "'man looks at the outward appearance, but Jehovah looks at the heart' — the sentence standing behind the coined title 'knower of hearts'"],
     (("Joel", 1, 4), ("Exodus", 10, 4), "arbeh — the locust of the eighth plague, here only one of four words"),
     (("Joel", 1, 9), ("Leviticus", 1, 1), "grain and drink offering — the daily service of the sanctuary, which a failed harvest makes impossible"),
     (("Joel", 1, 14), ("Isaiah", 1, 13), "atzarah — Joel summons a solemn assembly; Isaiah has God say he cannot bear them"),
@@ -4422,6 +4468,10 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ["Acts", 1, 8, "“You will be my witnesses.” The last sentence Jesus speaks in this book is also its table of contents — Jerusalem, Judea and Samaria, and the end of the earth."],
+    ["Acts", 1, 11, "“Why do you stand looking into heaven?” The first words spoken to the church are a rebuke of stargazing, and an order to get walking."],
+    ["Acts", 1, 14, "“All these were devoting themselves with one accord to prayer.” Between the ascension and Pentecost the church does, strictly speaking, nothing — together."],
+    ["Acts", 1, 24, "“You, Lord, knower of the hearts of all.” Eleven men who cannot see inside either candidate hand the choice to the one who can."],
     ("Joel", 1, 3, "“Tell your children about it, and your children their children, and their children the next generation.” Whatever has happened, its first significance is that it must be reported forward."),
     ("Joel", 1, 4, "“What the shearer left, the swarmer ate.” Four Hebrew words for locust, and nobody knows whether they are four species, four stages, or four names piled up for weight."),
     ("Joel", 1, 9, "“Grain offering and drink offering are cut off from the house of Jehovah.” The disaster is measured in liturgy, not in bushels — which is why the priests are the ones told to mourn."),
@@ -4934,6 +4984,9 @@ CHRON_ERAS = [
 ]
 
 CHRON_CHAPTERS = {
+    "acts1": dict(era="apostolic",
+        when="Forty days of appearances end on the Mount of Olives; the ascension, the return to the upper room, and the choosing of a twelfth apostle to replace Judas.",
+        clock="c. AD 30–33, in the ten days between the ascension and Pentecost — the shortest measured gap in the New Testament, and the only stretch in which the church exists and does nothing but wait. The year turns on the date of the crucifixion, for which AD 30 and AD 33 are the two serious candidates; this library reports the pair and does not choose."),
     "gen1":  dict(era="creation",
                   when="The creation week — 'day one' through the seventh day.",
                   clock="The chapter keeps its own clock: seven days. Every date below hangs from them."),
@@ -5441,6 +5494,9 @@ CHRON_EVENTS = [
          note="Matthew 5–7, the first of the Gospel's five great discourses, on a hillside above the Sea of Galilee's northwest shore (tradition: the Mount of Beatitudes, above Tabgha). Undatable to a year within the ministry — placed here mid-course, where Matthew places it: after the calling of the first disciples, before the sending of the Twelve.",
          ref=("Matthew", 5, 1)),
     # -- The Apostolic Age --
+    dict(era="apostolic", am="—", trad="c. AD 30–33", event="The ascension from the Mount of Olives — 'you will be my witnesses … to the end of the earth'",
+         note="Ten days before Pentecost, and the opening scene of Acts. The eleven walk back a sabbath day's journey to an upper room in Jerusalem and, among about a hundred and twenty, choose Matthias by lot to complete the Twelve — the last casting of lots recorded in the Bible. The year depends on the date of the crucifixion, for which AD 30 and AD 33 are the two serious candidates; both are reported, neither chosen.",
+         ref=("Acts", 1, 9)),
     dict(era="apostolic", am="—", trad="c. AD 95", event="John, exiled on Patmos, sees the vision — 'I am the Alpha and the Omega'",
          note="Irenaeus (c. AD 180) places the vision 'toward the end of Domitian's reign' (d. 96); a minority tradition dates it under Nero, before 70. Reported, not settled.",
          ref=("Revelation", 1, 9)),
@@ -7403,5 +7459,36 @@ BOOK_INTROS = {
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Esther's Hebrew is late and thick with PERSIAN loanwords — dat (law), pitgam (decree), partemim (nobles), genez (treasury), pur (lot) — which is one of the reasons it is dated where it is. The luxury vocabulary of chapter 1 includes several words found nowhere else in the Bible whose meanings are genuinely unknown (bahat, dar, socharet), and this translation flags them rather than choosing confidently. ⚠ The Greek tradition preserves not one but two divergent Greek versions, both longer than the Hebrew by six substantial Additions; those Additions are not translated here, but they are the earliest commentary on the Hebrew book's most famous feature.",
         christ="Esther offers no prophecy and no messianic figure, and any Christian reading has to work from shape rather than text. What it supplies is a pattern the New Testament assumes everywhere: that God acts through events that look, from inside them, like accidents, and that deliverance can come through a person who chooses to identify with a threatened people at personal risk when they had the option of silence and safety ('do not think that in the king's house you will escape'). The book's insistence that the Jews were preserved as a people is also, structurally, the precondition of everything that follows; and the feast it institutes, Purim, is the one Jewish festival born entirely inside the diaspora.",
         debates="The HISTORICITY, on which positions range widely: the book's Persian detail is impressively accurate, but Xerxes' queen is Amestris in Herodotus, no Persian source knows a Vashti or an Esther, and the numbers and decrees have the scale of storytelling. Many read it as a historical novella working with real materials. Then the ABSENCE OF GOD — deliberate artistry, diaspora realism, or (as the Greek Additions evidently felt) a deficiency to be repaired. The book's CANONICITY, uniquely contested and uniquely absent from Qumran. And chapter 9, where the Jews kill their attackers and Haman's ten sons are hanged — a passage read by some as self-defence recorded soberly and by others as troubling, and which the library prints without softening. No votes cast.",
+    ),
+    "Acts": dict(
+        greek_name="Πράξεις Ἀποστόλων (Praxeis Apostolōn)",
+        greek_meaning="'Acts of Apostles' — and in the oldest manuscripts there is no article: not 'the acts of THE apostles' but simply 'acts of apostles.' Praxeis was an ordinary Greek book-title for an account of a hero's deeds, so the name reads like a familiar genre label. It is also inaccurate, and everyone has always known it: only two apostles get real attention (Peter, then Paul), several are never mentioned again after chapter 1, and the actor the book keeps crediting is the Holy Spirit. The title is not the author's — the book never names itself, and the manuscripts vary.",
+        tagline="The only sequel in the Bible, and the hinge on which it turns: how a movement of about a hundred and twenty frightened people in one upstairs room in Jerusalem became, inside thirty years, a faith preached in the capital of the world.",
+        genre="HISTORICAL NARRATIVE in the Hellenistic manner — volume two of the two-part work that begins with Luke's Gospel. It has the furniture of ancient historiography: a dedication, synchronisms with named emperors and governors, speeches placed at the turning points (about a third of the book is speech), sea-voyages, trials, and a travel diary. It is also the New Testament's only book of its kind: without it the road from the empty tomb to Paul's letters would be almost entirely dark.",
+        canon="The FIFTH book of the New Testament, standing between the Gospels and the letters — which is exactly its function, since it supplies the narrative the letters assume. In the Greek manuscript tradition it often travels not with Luke but at the head of the 'Praxapostolos,' bound with the general epistles, which is why the two halves of one work were separated early and have been read apart ever since.",
+        author="Unnamed, and by early, wide, and unchallenged tradition LUKE — the same hand as the Third Gospel (the preface at 1:1 points back to it and to the same Theophilus). The strongest internal evidence is peculiar: from 16:10 the narrative slips, without explanation, into the first person plural — the 'we' passages — as though the writer joined the journey at Troas and is reporting what he was there for. Read one way that is an eyewitness signature; read another it is a literary convention of sea-voyage narrative. The tradition's Luke is 'the beloved physician' of Colossians 4:14, a Gentile companion of Paul.",
+        date="Disputed across a range of some forty years. An EARLY date (c. AD 62–64) rests on the way the book simply stops, with Paul alive and under house arrest in Rome and no word of his death, the fall of Jerusalem, or Nero's persecution. A MIDDLE date (c. 80–85) is the majority view, tied to Luke's use of Mark and to a Gospel that seems to look back on Jerusalem's fall. A LATE date (c. 110–120) is argued from possible knowledge of Josephus and of Paul's collected letters. The book itself gives no year.",
+        place="Unknown. Rome, Antioch, Ephesus and Achaia have all been proposed, none decisively. What is clear is the horizon: the story ends at Rome, and Rome is where it has been pointing since 1:8.",
+        audience="Theophilus — a real patron, an inquirer, or a name for every reader who loves God — and beyond him a Greek-speaking readership that needed two things at once: assurance that the faith rested on evidence, and an account of how a Jewish messianic movement came to be full of Gentiles without ceasing to be the fulfilment of Israel's scriptures. A third audience is often suspected: Roman officialdom, since the book takes visible care to record that magistrate after magistrate found nothing criminal in the accused.",
+        structure=[
+            ["1:1–2:47", "Jerusalem, waiting and then filled — the ascension, the twelfth apostle, and the day of Pentecost."],
+            ["3:1–7:60", "The Jerusalem congregation — signs, arrests, the first shared purse, the first internal quarrel, and the first blood: Stephen."],
+            ["8:1–12:25", "Judea and Samaria — the scattering that spreads the message, Philip and the Ethiopian, the road to Damascus, Cornelius, and Peter's escape from Herod."],
+            ["13:1–20:38", "To the nations — three journeys out of Antioch, the Jerusalem council that decides Gentiles need not become Jews, and congregations planted across Asia and Greece."],
+            ["21:1–28:31", "Arrest, trials, and Rome — Jerusalem, Caesarea, the appeal to Caesar, shipwreck at Malta, and two years teaching 'with all boldness, unhindered' — the last word of the book."],
+        ],
+        themes=[
+            "The HOLY SPIRIT as the real protagonist — poured out, forbidding, sending, snatching away; the book is called Acts of Apostles but reads as acts of the Spirit through them.",
+            "WITNESS (martyria) — the whole apostolic claim is evidentiary, resting on men who saw; the same word, in this book, begins its journey toward meaning 'martyr'.",
+            "The WORD that spreads — Luke punctuates the book with progress reports ('the word of God kept growing'), and the plot is measured in geography, not in years.",
+            "GENTILES, and the cost of including them — the argument the church nearly split over, settled in chapter 15 and defended for the rest of the book.",
+            "GOD'S PLAN and human resistance — Luke's small relentless 'must' (dei): what happens is what had to happen, including the opposition.",
+            "PRAYER, and decisions made in it — the church waits, prays, fasts, and lays on hands before every hinge in the story.",
+        ],
+        key_words=["tekmerion", "martys", "homothymadon", "kleros", "chronos", "kairos", "episkope", "kardiognostes"],
+        key_people=["peter", "matthias", "theophilus", "judas-iscariot", "mary", "jesus"],
+        source_text="Translated from the Greek of the SBL GREEK NEW TESTAMENT (SBLGNT), edited by Michael W. Holmes. ⚠ Acts is the New Testament's most textually turbulent book. Alongside the familiar Alexandrian text stands the so-called WESTERN text — represented above all by Codex Bezae (D, 5th c.) — which is roughly 8.5% LONGER, adding names, motives, itineraries and small vivid details throughout. Whether that is early tradition preserved or later expansion is a question two centuries of scholarship have not closed; a few have even argued Luke issued two editions. This translation follows the critical text and flags the notable Western readings where they fall.",
+        christ="The book's Jesus is absent and everywhere. He is taken up in the first chapter and does not return — and then acts on nearly every page: he is preached as the crucified man God raised and made 'both Lord and Christ' (2:36); he stands up at Stephen's death (7:56); he stops Saul on a road and identifies himself with the people being arrested ('why are you persecuting ME?', 9:4); his name heals, and is the thing men are forbidden to speak in. Luke's opening sentence sets the terms: the Gospel was what Jesus BEGAN to do and to teach, and this volume is the continuation — which is why the sermons in Acts are the earliest surviving Christian preaching we have, and every one of them is about a resurrection somebody claims to have seen.",
+        debates="AUTHORSHIP and the 'we' passages — eyewitness diary, a source Luke used, or a literary convention. The DATE, on which the abrupt ending is the strongest single argument and also the most argued-over. HISTORICAL RELIABILITY, where the book's local detail (titles like politarch and proconsul, harbours, winds, the Gallio inscription at Delphi) has repeatedly checked out, while its account of the Jerusalem council is famously hard to line up with Galatians 2. The SPEECHES — verbatim record, Lukan composition in the manner of Thucydides, or something between. And the WESTERN TEXT, on which no consensus exists. This library reports the positions and their pedigrees; it does not vote.",
     ),
 }
