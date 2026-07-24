@@ -103,6 +103,8 @@ SBLGNT_BOOKS = {
     "1CO": ("1 Corinthians", 16),
     "2CO": ("2 Corinthians", 13),
     "GAL": ("Galatians", 6),
+    "EPH": ("Ephesians", 6),
+    "PHP": ("Philippians", 4),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
