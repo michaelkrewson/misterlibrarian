@@ -99,6 +99,7 @@ SBLGNT_BOOKS = {
     "LUK": ("Luke", 24),
     "JHN": ("John", 21),
     "ACT": ("Acts", 28),
+    "ROM": ("Romans", 16),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
