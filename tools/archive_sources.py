@@ -105,6 +105,7 @@ SBLGNT_BOOKS = {
     "GAL": ("Galatians", 6),
     "EPH": ("Ephesians", 6),
     "PHP": ("Philippians", 4),
+    "COL": ("Colossians", 4),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
