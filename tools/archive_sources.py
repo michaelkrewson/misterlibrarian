@@ -101,6 +101,7 @@ SBLGNT_BOOKS = {
     "ACT": ("Acts", 28),
     "ROM": ("Romans", 16),
     "1CO": ("1 Corinthians", 16),
+    "2CO": ("2 Corinthians", 13),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
