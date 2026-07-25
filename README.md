@@ -55,6 +55,10 @@ python3 build_travel.py --drafts   # local preview incl. draft: true posts
   really be taken back out. `--check` audits what's already there.
 - **The build refuses to run** on a front-matter typo, a missing summary, or a date
   that disagrees with the filename. That's on purpose.
+- **Originals go to S3, not git** — `python3 tools/travel_archive.py add <slug> <files…>`
+  puts the full-size photos and any video in the durable blob store, so the Desktop
+  copies can be deleted. `list` / `check` / `restore` do what they say. Only the
+  web-sized derivatives belong in this repo.
 - **`build.py` and `build_travel.py` never touch each other's output** — the Bible
   builder writes only to the repo root and never globs or deletes elsewhere. Keep it
   that way: don't import one from the other.
