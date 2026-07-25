@@ -114,6 +114,7 @@ SBLGNT_BOOKS = {
     "HEB": ("Hebrews", 13),
     "JAS": ("James", 5),
     "1PE": ("1 Peter", 5),
+    "2PE": ("2 Peter", 3),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
