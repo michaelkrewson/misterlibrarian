@@ -107,6 +107,7 @@ SBLGNT_BOOKS = {
     "PHP": ("Philippians", 4),
     "COL": ("Colossians", 4),
     "1TH": ("1 Thessalonians", 5),
+    "1JN": ("1 John", 5),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
