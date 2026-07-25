@@ -1,39 +1,31 @@
 /* The Librarian Abroad — travel & food blog.
-   Deliberately its own stylesheet and its own palette. The Bible project at the
-   site root uses purple + gold + parchment; this uses terracotta + olive + cream,
-   so the two never read as the same publication. Nothing here is shared with, or
-   imported from, /style.css. */
+   Its own stylesheet: nothing here is shared with, or imported from, /style.css,
+   and the two sites are never linked. It does borrow the main site's page
+   treatment — deep navy under a soft gold top-glow — at Michael's request, while
+   keeping terracotta as its own accent so the two still read as different
+   publications. */
 
+/* Palette: the deep navy + warm top-glow treatment from the main site (Michael's
+   call — he likes those colours), carrying this blog's own terracotta accent so
+   the two still read as different publications. Dark-only, like the main site:
+   one predictable appearance beats a light/dark pair that renders two ways on
+   two phones. The --paper / --ink variable names are kept from the light era so
+   every rule below stayed valid. */
 :root {
-  --paper:      #fbf7f0;
-  --paper-2:    #fffdf9;
-  --ink:        #2b2118;
-  --ink-soft:   #5d4f42;
-  --muted:      #8a7a6b;
-  --line:       #e6dccd;
-  --terra:      #c25e3a;
-  --terra-dk:   #a44a2a;
-  --olive:      #6b7a4a;
-  --gold:       #d9a441;
-  --shadow:     0 1px 2px rgba(43,33,24,.05), 0 8px 24px rgba(43,33,24,.06);
+  --paper:      #060b14;   /* page ground */
+  --paper-2:    #0d1520;   /* raised panels and cards */
+  --paper-3:    #0a0f1a;
+  --ink:        #e8dfd2;   /* warm off-white — a shade warmer than the main site */
+  --ink-soft:   #c3b7a8;
+  --muted:      #94a3b8;
+  --line:       rgba(255,255,255,.09);
+  --terra:      #e8865c;
+  --terra-dk:   #f0a382;
+  --olive:      #a3b378;
+  --gold:       #e8c968;   /* the main site's gold — also the star colour */
+  --shadow:     0 1px 2px rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.45);
   --radius:     14px;
   --maxw:       860px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper:    #17130f;
-    --paper-2:  #201a15;
-    --ink:      #f0e7db;
-    --ink-soft: #cdbfae;
-    --muted:    #9d8d7c;
-    --line:     #372c23;
-    --terra:    #e8865c;
-    --terra-dk: #f0a382;
-    --olive:    #a3b378;
-    --gold:     #e6bb63;
-    --shadow:   0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
-  }
 }
 
 * { box-sizing: border-box; }
@@ -42,7 +34,12 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--paper);
+  /* The glow: a wide, soft gold wash falling from just above the top edge.
+     `fixed` anchors it to the viewport, so it reads as light in the room rather
+     than a gradient that scrolls away with the content. */
+  background:
+    radial-gradient(120% 80% at 50% -8%, rgba(232,201,104,0.08), transparent 60%) fixed,
+    var(--paper);
   color: var(--ink);
   font: 17px/1.7 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
 }
@@ -60,7 +57,12 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ------------------------------------------------------------------ header -- */
 
-.site-head { padding: 30px 0 14px; text-align: center; }
+.site-head { padding: 34px 0 14px; text-align: center; }
+
+/* The site name is the h1 on the home page and a plain div elsewhere (where the
+   entry title takes that role). This resets the h1's default type so the header
+   looks identical either way. */
+.brandwrap { margin: 0; font-size: inherit; font-weight: inherit; line-height: 1; }
 
 .brand {
   display: inline-flex;
@@ -69,7 +71,35 @@ img { max-width: 100%; height: auto; display: block; }
   text-decoration: none;
   color: inherit;
 }
-.brand .mark { flex: none; }
+.brand .mark {
+  flex: none;
+  filter: drop-shadow(0 0 14px rgba(232,201,104,.22));
+}
+
+/* The needle swings past north and settles, then rests — a compass finding its
+   bearing, not a spinner. Most of the 11s cycle is stillness on purpose: motion
+   that never stops is motion you stop seeing, and it would fight the photographs
+   for attention. transform-box/-origin are required for the rotation to pivot on
+   the SVG's own centre rather than the element box. */
+.brand .needle {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: compass-settle 11s cubic-bezier(.28,.9,.32,1) infinite;
+}
+@keyframes compass-settle {
+  0%   { transform: rotate(0deg); }
+  6%   { transform: rotate(-19deg); }
+  13%  { transform: rotate(13deg); }
+  20%  { transform: rotate(-7deg); }
+  27%  { transform: rotate(3deg); }
+  34%  { transform: rotate(-1deg); }
+  40%, 100% { transform: rotate(0deg); }
+}
+.brand:hover .needle { animation-duration: 3.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .brand .needle { animation: none; }
+}
 .brand-name {
   font-size: 30px;
   letter-spacing: .2px;
@@ -108,8 +138,7 @@ img { max-width: 100%; height: auto; display: block; }
   transition: background .15s, border-color .15s, color .15s;
 }
 .topnav a:hover { background: var(--paper-2); border-color: var(--line); color: var(--ink); }
-.topnav a.on { background: var(--terra); border-color: var(--terra); color: #fff; }
-@media (prefers-color-scheme: dark) { .topnav a.on { color: #17130f; } }
+.topnav a.on { background: var(--terra); border-color: var(--terra); color: #0a0f1a; }
 
 /* -------------------------------------------------------------------- lede -- */
 
@@ -142,8 +171,7 @@ img { max-width: 100%; height: auto; display: block; }
   transition: all .15s;
 }
 .chip:hover { border-color: var(--terra); color: var(--terra); }
-.chip.on { background: var(--olive); border-color: var(--olive); color: #fff; }
-@media (prefers-color-scheme: dark) { .chip.on { color: #17130f; } }
+.chip.on { background: var(--olive); border-color: var(--olive); color: #0a0f1a; }
 
 /* ------------------------------------------------------------------- cards -- */
 
@@ -157,7 +185,8 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: var(--shadow);
   transition: transform .18s ease, box-shadow .18s ease;
 }
-.card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(43,33,24,.08), 0 16px 40px rgba(43,33,24,.10); }
+.card:hover { transform: translateY(-2px); border-color: rgba(232,201,104,.28);
+  box-shadow: 0 4px 12px rgba(0,0,0,.4), 0 18px 48px rgba(0,0,0,.5); }
 
 .cardlink { text-decoration: none; color: inherit; display: block; }
 
@@ -191,7 +220,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .postmeta .place { text-transform: none; letter-spacing: 0; }
 .postmeta .draftflag {
-  color: #fff;
+  color: #0a0f1a;
   background: var(--terra-dk);
   padding: 2px 8px;
   border-radius: 4px;
@@ -339,7 +368,7 @@ figcaption, .credit {
   transition: all .15s;
 }
 .sortbtn:hover { border-color: var(--gold); color: var(--gold); }
-.sortbtn.on { background: var(--gold); border-color: var(--gold); color: #2b2118; }
+.sortbtn.on { background: var(--gold); border-color: var(--gold); color: #0a0f1a; }
 
 /* ------------------------------------------------------- write-in / respond -- */
 
@@ -385,7 +414,7 @@ figcaption, .credit {
   align-self: flex-start;
   font: 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   background: var(--terra);
-  color: #fff;
+  color: #0a0f1a;
   border: 0;
   border-radius: 999px;
   padding: 13px 26px;
@@ -393,7 +422,6 @@ figcaption, .credit {
   transition: background .15s;
 }
 .askform .btn:hover { background: var(--terra-dk); }
-@media (prefers-color-scheme: dark) { .askform .btn { color: #17130f; } }
 .askform .formnote { margin: 0; font-size: 13.5px; color: var(--muted); font-style: italic; }
 
 /* ------------------------------------------------------------------ panels -- */

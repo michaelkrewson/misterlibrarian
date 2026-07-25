@@ -126,14 +126,21 @@ def _asset_ver(rel):
 # ------------------------------------------------------------------- chrome ---
 
 # A plate that is also a compass — the blog's mark. Deliberately nothing like the
-# Bible project's scroll: different shape, different palette, no shared glyph.
-COMPASS_SVG = """<svg class="mark" viewBox="0 0 48 48" width="46" height="46" aria-hidden="true">
-  <circle cx="24" cy="24" r="21" fill="#fdf6ea" stroke="#c25e3a" stroke-width="2"/>
-  <circle cx="24" cy="24" r="15.5" fill="none" stroke="#e0c9a6" stroke-width="1.2"/>
-  <path d="M24 9.5 L27.4 20.6 L38.5 24 L27.4 27.4 L24 38.5 L20.6 27.4 L9.5 24 L20.6 20.6 Z"
-        fill="#c25e3a" opacity="0.9"/>
-  <circle cx="24" cy="24" r="3.4" fill="#6b7a4a"/>
-  <circle cx="24" cy="24" r="1.3" fill="#fdf6ea"/>
+# Bible project's scroll: different shape, no shared glyph.
+#
+# The needle ANIMATES: it swings past north and settles, the way a real compass
+# does when you stop walking, then rests for most of the cycle. Deliberately not
+# a continuous spin — a needle that never settles reads as a loading spinner.
+# The CSS honours prefers-reduced-motion and drops it entirely.
+COMPASS_SVG = """<svg class="mark" viewBox="0 0 48 48" width="62" height="62" aria-hidden="true">
+  <circle cx="24" cy="24" r="21" fill="#0d1520" stroke="var(--terra)" stroke-width="2"/>
+  <circle cx="24" cy="24" r="15.5" fill="none" stroke="rgba(232,201,104,.35)" stroke-width="1.2"/>
+  <g class="needle">
+    <path d="M24 9.5 L27.4 20.6 L38.5 24 L27.4 27.4 L24 38.5 L20.6 27.4 L9.5 24 L20.6 20.6 Z"
+          fill="var(--terra)"/>
+  </g>
+  <circle cx="24" cy="24" r="3.4" fill="var(--olive)"/>
+  <circle cx="24" cy="24" r="1.3" fill="#0d1520"/>
 </svg>"""
 
 
@@ -143,10 +150,12 @@ def header(active=""):
     def cls(k):
         return ' class="on"' if k == active else ""
     return f"""<header class="site-head">
+  {'<h1 class="brandwrap">' if active == "home" else '<div class="brandwrap">'}
   <a class="brand" href="index.html">
     {COMPASS_SVG}
     <span class="brand-name">The Librarian <span class="abroad">Abroad</span></span>
   </a>
+  {'</h1>' if active == "home" else '</div>'}
   <div class="rule"></div>
   <div class="tag">{TAGLINE}</div>
   <nav class="topnav">
@@ -481,8 +490,7 @@ def build_index(posts):
                '<button class="sortbtn on" data-sort="date">Newest</button>'
                '<button class="sortbtn" data-sort="stars">Highest rated</button></div>')
 
-    body = f"""<section class="lede">
-  <h1>{html.escape(SITE_NAME)}</h1>
+    body = f"""<section class="lede lede-home">
   <p>{html.escape(BLURB)}</p>
 </section>
 {_half_defs(17)}{_half_defs(14)}
