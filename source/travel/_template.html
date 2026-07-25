@@ -1,0 +1,58 @@
+title: Copy this file to start a new entry
+date: 2026-01-01
+place: City, Country
+tags: food, italy, markets
+hero: some-photo.jpg
+hero_alt: Describe the photo for someone who can't see it
+hero_credit: Optional — leave the line out entirely if the photo is yours
+summary: One or two sentences. This is what shows on the index card, in the RSS feed, and in the link preview when someone shares it.
+draft: true
+---
+<!--
+  HOW TO USE THIS FILE
+  ────────────────────
+  1. Copy it to  source/travel/YYYY-MM-DD-a-short-slug.html
+     The filename date MUST match the `date:` above — the build refuses to
+     run if they disagree, which is what stops a post filing itself under
+     the wrong year.
+  2. Put photos through the resizer first:
+         python3 tools/travel_photos.py ~/Desktop/trip-photos/*.jpg
+     It writes web-sized copies into travel/img/ and prints the filenames
+     to paste into `hero:` and the <figure> tags below.
+  3. Delete `draft: true` when it's ready. Until then it's skipped by the
+     normal build and only appears with:  python3 build_travel.py --drafts
+  4. Rebuild and push:
+         python3 build_travel.py
+         git add travel source/travel && git commit -m "New entry: …" && git push
+
+  Everything below the `---` is plain HTML. The stylesheet already handles
+  <p>, <h2>, <h3>, <blockquote>, <ul>, <figure>, and the two custom blocks
+  shown at the bottom.
+-->
+
+<p>Open with the moment, not the itinerary. What did it look like, smell like,
+cost? The reader can find the opening hours themselves.</p>
+
+<h2>A section heading</h2>
+
+<p>Ordinary paragraphs. <em>Emphasis</em> and <strong>strong</strong> both work.
+Links look like <a href="https://example.com">this</a>.</p>
+
+<figure>
+  <img src="img/some-photo.jpg" alt="Describe it for someone who can't see it" loading="lazy"/>
+  <figcaption>A caption. Optional, but a photo without one is a wasted sentence.</figcaption>
+</figure>
+
+<p>Two photos side by side on a wide screen, stacked on a phone:</p>
+
+<div class="pair">
+  <figure><img src="img/left.jpg" alt="…" loading="lazy"/><figcaption>Left.</figcaption></figure>
+  <figure><img src="img/right.jpg" alt="…" loading="lazy"/><figcaption>Right.</figcaption></figure>
+</div>
+
+<blockquote>A line worth setting apart — something overheard, or read on a menu.</blockquote>
+
+<div class="verdict">
+  <strong>Worth it?</strong> The honest answer, in a sentence or two. This box is
+  for the verdict, so the reader who skipped to the bottom still gets something true.
+</div>
