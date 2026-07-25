@@ -3919,6 +3919,86 @@ def check_shelf_density(chapters):
                          + "\n(compare against the shelf with tag t-kjv/t-niv/… spans, or consciously exempt the slug)")
 
 
+def build_sitemap():
+    """Write sitemap.xml for the main site.
+
+    Until now this site had none at all — 320 indexable pages and no map handed to
+    any search engine. (The travel blog has always had its own; the two stay
+    separate and both are listed in robots.txt.)
+
+    Three decisions worth keeping:
+
+    * The 3,800+ /v/ verse stubs are EXCLUDED. They are `noindex` with a canonical
+      pointing at their chapter and a meta-refresh on top — they exist to give a
+      shared verse link its own card, not to be indexed. Listing noindex URLs in a
+      sitemap is a reported error in Search Console, and 3,800 thin redirect pages
+      would swamp the 320 real ones twelve to one.
+    * `lastmod` comes from GIT, not the filesystem. Every build rewrites every
+      file, so mtime would stamp today's date on all 320 pages every time — and a
+      lastmod that is always "today" is one search engines learn to ignore. One
+      `git log` pass gives the real date each page last changed.
+    * No `priority` or `changefreq`. Google ignores both; emitting them is noise.
+
+    Spanish pages are paired with their English twin via hreflang alternates, so a
+    Spanish reader is offered the Spanish edition rather than either being treated
+    as a duplicate of the other.
+    """
+    import subprocess
+    pages = sorted(f for f in os.listdir(OUT)
+                   if f.endswith(".html") and os.path.isfile(os.path.join(OUT, f)))
+
+    # Real dates, one subprocess call. Recent history is plenty: anything older
+    # than the window simply omits lastmod, which is better than inventing one.
+    dates = {}
+    try:
+        log = subprocess.run(
+            ["git", "-C", OUT, "log", "--format=%cI", "--name-only", "-n", "600"],
+            capture_output=True, text=True, timeout=45).stdout
+        cur = None
+        for line in log.splitlines():
+            if line[:2] == "20" and "T" in line:
+                cur = line[:10]
+            elif line.strip() and cur:
+                dates.setdefault(line.strip(), cur)
+    except Exception:
+        pass                      # a sitemap without lastmod is still a fine sitemap
+
+    entries = []
+    for f in pages:
+        try:
+            head = open(os.path.join(OUT, f), encoding="utf-8").read(2500)
+        except OSError:
+            continue
+        if 'name="robots" content="noindex' in head:
+            continue              # never advertise a page we've asked not to index
+
+        loc = f"{SITE_URL}/{f}"
+        alts = []
+        if f.endswith(".es.html"):
+            en = f[:-8] + ".html"
+            if en in pages:
+                alts = [("es", loc), ("en", f"{SITE_URL}/{en}")]
+        else:
+            es = f[:-5] + ".es.html"
+            if es in pages:
+                alts = [("en", loc), ("es", f"{SITE_URL}/{es}")]
+
+        row = [f"  <url><loc>{loc}</loc>"]
+        if f in dates:
+            row.append(f"<lastmod>{dates[f]}</lastmod>")
+        for lang, href in alts:
+            row.append(f'<xhtml:link rel="alternate" hreflang="{lang}" href="{href}"/>')
+        row.append("</url>")
+        entries.append("".join(row))
+
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+           '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+           + "\n".join(entries) + "\n</urlset>\n")
+    open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(xml)
+    return len(entries)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
@@ -3951,11 +4031,12 @@ def main():
     n_places, n_people = build_encyclopedia()
     n_mapped, n_atlas_places = build_atlas()
     build_library((n_words, n_refs, n_dict, n_places, n_people, len(XREFS), n_mapped, n_atlas_places))
+    n_sitemap = build_sitemap()
     save_card_manifest()
     report_card_budget()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp, "
-          f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}) from {args.source}")
+          f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), sitemap {n_sitemap} urls from {args.source}")
 
 
 if __name__ == "__main__":
