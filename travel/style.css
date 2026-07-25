@@ -1,0 +1,356 @@
+/* The Librarian Abroad — travel & food blog.
+   Deliberately its own stylesheet and its own palette. The Bible project at the
+   site root uses purple + gold + parchment; this uses terracotta + olive + cream,
+   so the two never read as the same publication. Nothing here is shared with, or
+   imported from, /style.css. */
+
+:root {
+  --paper:      #fbf7f0;
+  --paper-2:    #fffdf9;
+  --ink:        #2b2118;
+  --ink-soft:   #5d4f42;
+  --muted:      #8a7a6b;
+  --line:       #e6dccd;
+  --terra:      #c25e3a;
+  --terra-dk:   #a44a2a;
+  --olive:      #6b7a4a;
+  --gold:       #d9a441;
+  --shadow:     0 1px 2px rgba(43,33,24,.05), 0 8px 24px rgba(43,33,24,.06);
+  --radius:     14px;
+  --maxw:       860px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper:    #17130f;
+    --paper-2:  #201a15;
+    --ink:      #f0e7db;
+    --ink-soft: #cdbfae;
+    --muted:    #9d8d7c;
+    --line:     #372c23;
+    --terra:    #e8865c;
+    --terra-dk: #f0a382;
+    --olive:    #a3b378;
+    --gold:     #e6bb63;
+    --shadow:   0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.7 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 22px 72px;
+}
+
+a { color: var(--terra-dk); }
+a:hover { color: var(--terra); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ------------------------------------------------------------------ header -- */
+
+.site-head { padding: 30px 0 14px; text-align: center; }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+.brand .mark { flex: none; }
+.brand-name {
+  font-size: 30px;
+  letter-spacing: .2px;
+  font-weight: 400;
+}
+.brand-name .abroad { color: var(--terra); font-style: italic; }
+
+.site-head .rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line) 18%, var(--line) 82%, transparent);
+  margin: 16px 0 12px;
+}
+
+.site-head .tag {
+  color: var(--muted);
+  font-size: 14.5px;
+  font-style: italic;
+  letter-spacing: .3px;
+}
+
+.topnav {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 13.5px;
+}
+.topnav a {
+  text-decoration: none;
+  color: var(--ink-soft);
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.topnav a:hover { background: var(--paper-2); border-color: var(--line); color: var(--ink); }
+.topnav a.on { background: var(--terra); border-color: var(--terra); color: #fff; }
+@media (prefers-color-scheme: dark) { .topnav a.on { color: #17130f; } }
+
+/* -------------------------------------------------------------------- lede -- */
+
+.lede { text-align: center; margin: 40px 0 26px; }
+.lede h1 {
+  font-size: 34px;
+  line-height: 1.25;
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+.lede p { color: var(--ink-soft); margin: 0 auto; max-width: 34em; font-size: 17px; }
+
+/* ----------------------------------------------------------------- filters -- */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 30px;
+}
+.chip {
+  font: 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding: 8px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all .15s;
+}
+.chip:hover { border-color: var(--terra); color: var(--terra); }
+.chip.on { background: var(--olive); border-color: var(--olive); color: #fff; }
+@media (prefers-color-scheme: dark) { .chip.on { color: #17130f; } }
+
+/* ------------------------------------------------------------------- cards -- */
+
+.cards { display: grid; gap: 26px; }
+
+.card {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(43,33,24,.08), 0 16px 40px rgba(43,33,24,.10); }
+
+.cardlink { text-decoration: none; color: inherit; display: block; }
+
+.card .thumb { margin: 0; }
+.card .thumb img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+
+.cardbody { padding: 20px 22px 22px; }
+.cardbody h2 {
+  margin: 8px 0 8px;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.cardbody .summary { margin: 0; color: var(--ink-soft); font-size: 16px; }
+
+@media (min-width: 720px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+  .cards .card:first-child { grid-column: 1 / -1; }
+  .cards .card:first-child .thumb img { aspect-ratio: 21 / 9; }
+  .cards .card:first-child .cardbody h2 { font-size: 27px; }
+}
+
+/* -------------------------------------------------------------- post metas -- */
+
+.postmeta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 12.5px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.postmeta .place { text-transform: none; letter-spacing: 0; }
+.postmeta .draftflag {
+  color: #fff;
+  background: var(--terra-dk);
+  padding: 2px 8px;
+  border-radius: 4px;
+  letter-spacing: .5px;
+}
+
+.tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  font: 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+/* -------------------------------------------------------------------- post -- */
+
+.post { margin: 34px 0 10px; }
+.post h1 {
+  font-size: 34px;
+  line-height: 1.22;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+.post .postmeta { margin-bottom: 28px; }   /* breathing room before the first line */
+.post .hero { margin: 26px 0 30px; }
+.post .hero img { width: 100%; border-radius: var(--radius); }
+
+figure { margin: 26px 0; }
+figure img { border-radius: var(--radius); }
+figcaption, .credit {
+  margin-top: 9px;
+  font: italic 14px/1.5 Georgia, serif;
+  color: var(--muted);
+  text-align: center;
+}
+
+.postbody { font-size: 18px; }
+.postbody p { margin: 0 0 1.15em; }
+.postbody h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 1.9em 0 .5em;
+  padding-bottom: .28em;
+  border-bottom: 1px solid var(--line);
+}
+.postbody h3 { font-size: 20px; font-weight: 400; margin: 1.6em 0 .4em; color: var(--terra-dk); }
+.postbody blockquote {
+  margin: 1.6em 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--gold);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.postbody ul, .postbody ol { padding-left: 1.3em; }
+.postbody li { margin: .4em 0; }
+
+/* A two-column photo pair: <div class="pair"><figure>…</figure><figure>…</figure></div> */
+.pair { display: grid; gap: 14px; margin: 26px 0; }
+.pair figure { margin: 0; }
+@media (min-width: 640px) { .pair { grid-template-columns: 1fr 1fr; } }
+
+/* A short verdict box: <div class="verdict"><strong>Worth it?</strong> …</div> */
+.verdict {
+  margin: 30px 0;
+  padding: 18px 22px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--olive);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 16.5px;
+}
+.verdict strong { color: var(--olive); }
+
+/* ------------------------------------------------------------------ panels -- */
+
+.panel {
+  margin: 44px 0 0;
+  padding: 26px 28px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.panel h2 { margin: 0 0 14px; font-size: 22px; font-weight: 400; }
+.prose h2 { margin-top: 1.6em; }
+.prose p { color: var(--ink-soft); }
+
+.archive { list-style: none; margin: 0; padding: 0; }
+.archive li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px dotted var(--line);
+}
+.archive li:last-child { border-bottom: 0; }
+.archive time {
+  font: 12.5px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--muted);
+  flex: none;
+  min-width: 5.6em;
+}
+.archive a { text-decoration: none; }
+.archive a:hover { text-decoration: underline; }
+.archive .place { color: var(--muted); font-size: 14px; font-style: italic; }
+
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }
+.empty code {
+  font: 14px ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------------- post nav -- */
+
+.postnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin: 40px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+}
+.postnav a { text-decoration: none; max-width: 46%; }
+.postnav a:hover { text-decoration: underline; }
+.postnav .next { margin-left: auto; text-align: right; }
+
+.backlink { margin-top: 26px; font-size: 15px; }
+.backlink a { text-decoration: none; }
+.backlink a:hover { text-decoration: underline; }
+
+/* ------------------------------------------------------------------ footer -- */
+
+.site-foot {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+.site-foot p { margin: 0 0 10px; }
+.site-foot a { color: var(--ink-soft); text-decoration: none; }
+.site-foot a:hover { color: var(--terra); text-decoration: underline; }
+
+/* --------------------------------------------------------------- narrow UI -- */
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .brand-name { font-size: 24px; }
+  .lede h1, .post h1 { font-size: 27px; }
+  .postbody { font-size: 17px; }
+  .wrap { padding: 0 16px 56px; }
+  .panel { padding: 20px 18px; }
+  .postnav a { max-width: 100%; }
+}

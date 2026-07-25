@@ -1,0 +1,12 @@
+# mistertranslation.com — crawling is allowed everywhere.
+# (This file changes nothing about what crawlers may read; with no robots.txt at
+# all the default is already "crawl everything". It exists only to advertise the
+# sitemap below.)
+
+User-agent: *
+Allow: /
+
+# /travel/ is a separate publication that is deliberately not linked from
+# anywhere on this site, so a crawler has no path to it. This is how it gets
+# found. Delete the line if you would rather it stayed link-only.
+Sitemap: https://mistertranslation.com/travel/sitemap.xml
