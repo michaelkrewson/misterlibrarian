@@ -5,3 +5,7 @@
 source/originals/
 __pycache__/
 .DS_Store
+
+# Claude Code session worktrees — never commit (a worktree dir is a gitlink,
+# which makes GitHub Pages checkout fail: "No url found for submodule path")
+.claude/worktrees/
