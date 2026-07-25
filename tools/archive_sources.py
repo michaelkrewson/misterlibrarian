@@ -112,6 +112,7 @@ SBLGNT_BOOKS = {
     "TIT": ("Titus", 3),
     "PHM": ("Philemon", 1),
     "HEB": ("Hebrews", 13),
+    "JAS": ("James", 5),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
