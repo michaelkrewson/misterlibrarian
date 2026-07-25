@@ -107,6 +107,7 @@ CHAPTERS = [
     ("mark1", "Mark", 1, "The most breathless of the four Gospels starts already at a run — no birth, no genealogy, just a grown man at a river and the word 'immediately' eleven times over. The heavens are TORN open at the baptism (the same violent verb as the temple curtain at the end), a demon is the first to name Jesus correctly, and a leper is healed by a man 'moved with anger' who reaches across the line and touches him."),
     ("luke1", "Luke", 1, "The longest chapter in the Gospels and the songbook of the church — two annunciations set against each other (a priest struck dumb for doubting, a girl in Nazareth blessed for believing), the leap in Elizabeth's womb, and two of the great canticles: Mary's Magnificat ('he has brought down rulers from thrones and lifted up the lowly') and Zechariah's Benedictus ('the dawn from on high')."),
     ("jer1", "Jeremiah", 1, "The call of Jeremiah — the longest, most turbulent prophetic career in the Bible opens on a boy who says 'I am only a youth.' Known before the womb and made 'a prophet to the nations,' his mouth is touched and filled, and he is charged with the six verbs that are the program of the whole book: to uproot and to tear down, to destroy and to overthrow, to build and to plant. Two visions seal it — an almond branch (God WATCHING over his word) and a boiling pot tilting from the north (the disaster coming) — and a frightened boy is made an iron pillar."),
+    ("jer18", "Jeremiah", 18, "The potter's house — sent down to a workshop on the city's edge, Jeremiah watches a vessel go wrong under the hand and be thrown again, and hears the most CONDITIONAL sentence in the prophets: “if that nation turns back from its evil… then I relent.” The clay's answer is one flat word — “Hopeless” — refusing an offer that was still open. Then the potter's own verb turns on them (“I am FORMING evil against you”), the fourth “device” in the chapter is aimed at the prophet himself, and it closes in an imprecatory prayer this library will not soften. ⚠ Two genuine cruxes are left standing with their pedigrees and no vote: verse 14's “rock of the field” and verse 17's “back and not the face.”"),
     ("jer20", "Jeremiah", 20, "Pashhur and the stocks — the prophet renames his jailer Terror-All-Around, names Babylon at last, confesses the fire shut up in his bones — and curses the day he was born."),
     ("jer21", "Jeremiah", 21, "The final siege — Zedekiah's delegation asks for a miracle and hears the bleakest answer in the book: the Exodus formula aimed inward, the way of life through the enemy camp, and fire for the cedar forest."),
     ("jer22", "Jeremiah", 22, "The tariff of the last kings — Shallum carried to Egypt, Jehoiakim's donkey-burial, and Coniah the signet torn off God's right hand; 'is that not to know me?' and 'write this man childless.'"),
@@ -276,6 +277,7 @@ TEASERS_ES = {
     "gen44": "La copa de plata aparece en el saco de Benjamín y los otros diez quedan libres de marcharse. Ninguno lo hace. Y Judá habla.",
     "gen43": "Se acaba el grano y Jacob debe dejar ir a Benjamín. Judá se ofrece a sí mismo como fiador, y bajan con un regalo que ya hizo ese camino.",
     "gen42": "Diez hermanos se inclinan ante un gobernador al que no reconocen — y confiesan, sin saber que él entiende cada palabra: «somos culpables».",
+    "jer18": 'La casa del alfarero: enviado a un taller en el borde de la ciudad, Jeremías ve una vasija estropearse bajo la mano y ser rehecha, y oye la frase más CONDICIONAL de los profetas: «si esa nación se vuelve de su mal… me arrepiento del mal que pensaba hacerle». La respuesta del barro es una sola palabra llana —«Sin esperanza»—, rechazando una oferta que seguía abierta. Entonces el propio verbo del alfarero se vuelve contra ellos («estoy FORMANDO el mal contra vosotros»), el cuarto «designio» del capítulo apunta al profeta mismo, y todo termina en una oración imprecatoria que esta biblioteca no va a suavizar. ⚠ Dos pasajes genuinamente disputados quedan en pie con sus pedigríes y sin voto: la «roca del campo» del versículo 14 y «la espalda y no el rostro» del versículo 17.',
     "jer1": "El llamado de Jeremías: un muchacho que dice «solo soy un joven», conocido antes del vientre, hecho «profeta a las naciones» — con los seis verbos (arrancar, derribar… edificar y plantar), la rama de almendro y la olla hirviente del norte.",
     "dan2": "El sueño de Nabucodonosor y una prueba imposible: la estatua de oro, plata, bronce y hierro con pies de barro, y la piedra cortada sin manos que la deshace y se hace montaña — los cuatro reinos y el quinto eterno; y el capítulo donde el libro pasa del hebreo al ARAMEO.",
     "exod4": "Tres señales para que Israel crea —vara que se hace serpiente, mano leprosa, agua vuelta sangre— y las últimas excusas de Moisés; Aarón como su boca, y la palabra asombrosa: «Israel es mi hijo primogénito», con la décima plaga ya anunciada.",
@@ -990,6 +992,19 @@ vocabulary, not an abridged lexicon.</p>
 def build_encyclopedia():
     places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
     people = [e for e in ENCYCLOPEDIA if e["kind"] in ("person", "people")]
+    # A third bucket for the things the text keeps reaching for that are neither
+    # a person nor a place — a craft, a trade, an object. The potter of Jeremiah
+    # 18 is the first: the metaphor only lands once you know how the job was
+    # actually done, and that belongs in prose with the verses attached, not in
+    # a one-line dictionary gloss. Anything whose kind is not place/person/
+    # people/craft would be silently dropped from every section, so the build
+    # refuses it rather than letting an entry go invisible.
+    things = [e for e in ENCYCLOPEDIA if e["kind"] in ("craft", "thing")]
+    _known = {"place", "person", "people", "craft", "thing"}
+    stray = sorted({e["kind"] for e in ENCYCLOPEDIA} - _known)
+    if stray:
+        raise SystemExit(f"encyclopedia: unknown kind(s) {stray} would render nowhere — "
+                         f"add a section in build_encyclopedia() or fix the entry")
 
     def render(entries):
         out = []
@@ -1030,10 +1045,23 @@ def build_encyclopedia():
 reach the book or chapter they belong to — logged here so nothing gets lost between now and then.</p>
 <div class="panel qlist">{queue_rows}</div>"""
 
+    things_section = ""
+    if things:
+        things_section = f"""<h2>Crafts &amp; Trades</h2>
+<p class="lede">The work of ordinary hands — the jobs the prophets and poets reach for when they want
+to say something about God. These entries explain how the craft was actually done, because that is
+usually where the metaphor's force is hiding.</p>
+<div class="panel ency">{render(things)}</div>"""
+
+    counts = f"<strong>{len(places)} places, {len(people)} people</strong>"
+    if things:
+        _c = "craft" if len(things) == 1 else "crafts"
+        counts = f"<strong>{len(places)} places, {len(people)} people, {len(things)} {_c}</strong>"
+
     body = f"""<h1 class="pagetitle">🏺 Encyclopedia</h1>
-<p class="lede">The people and places the translation has reached — <strong>{len(places)} places,
-{len(people)} people</strong> — each entry linked to every verse where it appears, with a growing film
-shelf of archaeology and geography footage embedded directly on the entries they illuminate.</p>
+<p class="lede">The people and places the translation has reached — {counts} — each entry linked to
+every verse where it appears, with a growing film shelf of archaeology and geography footage embedded
+directly on the entries they illuminate.</p>
 
 <h2>Places</h2>
 <div class="panel ency">{render(places)}</div>
@@ -1041,12 +1069,14 @@ shelf of archaeology and geography footage embedded directly on the entries they
 <h2>People</h2>
 <div class="panel ency">{render(people)}</div>
 
+{things_section}
+
 {queue_section}"""
     out = page(f"Encyclopedia — {SITE_NAME}", body, active="library",
                desc="People and places of the MisterLibrarian translation — every entry verse-linked, "
                     "with embedded archaeology videos credited to Expedition Bible.")
     open(os.path.join(OUT, "encyclopedia.html"), "w", encoding="utf-8").write(out)
-    return len(places), len(people)
+    return len(places), len(people), len(things)
 
 
 def _route_geo(stops, inner_w=780.0, pad=42.0):
@@ -1477,7 +1507,7 @@ the same honest way the encyclopedia's film shelf grows.</p>
 
 
 def build_library(stats):
-    n_words, n_refs, n_dict, n_places, n_people, n_xrefs, n_mapped, n_atlas_places = stats
+    n_words, n_refs, n_dict, n_places, n_people, n_things, n_xrefs, n_mapped, n_atlas_places = stats
     body = f"""<h1 class="pagetitle">📚 The Library</h1>
 <p class="lede">The reference room of the project — every shelf grows automatically or by hand as each
 chapter is translated, so the library is always exactly as deep as the translation itself.</p>
@@ -1490,8 +1520,8 @@ chapter is translated, so the library is always exactly as deep as the translati
   <div class="card-d">{n_dict} Hebrew terms — the working vocabulary behind the translation, each linked
   to the note that first discussed it.</div></a>
   <a class="card" href="encyclopedia.html"><div class="card-t">🏺 Encyclopedia</div>
-  <div class="card-d">{n_places} places · {n_people} people — verse-linked entries, with a film shelf on
-  every place for archaeology &amp; geography videos.</div></a>
+  <div class="card-d">{n_places} places · {n_people} people · {n_things} {'craft' if n_things == 1 else 'crafts'} — verse-linked
+  entries, with a film shelf on every place for archaeology &amp; geography videos.</div></a>
   <a class="card" href="atlas.html"><div class="card-t">🗺️ Atlas</div>
   <div class="card-d">{n_mapped} of {n_atlas_places} places mapped so far, chapter by chapter — a live map
   for every located site, with an ancient-world overlay shelf still growing.</div></a>
@@ -4032,14 +4062,14 @@ def main():
     build_thanks_es()
     n_words, n_refs = build_concordance(chapters)
     n_dict = build_dictionary()
-    n_places, n_people = build_encyclopedia()
+    n_places, n_people, n_things = build_encyclopedia()
     n_mapped, n_atlas_places = build_atlas()
-    build_library((n_words, n_refs, n_dict, n_places, n_people, len(XREFS), n_mapped, n_atlas_places))
+    build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_sitemap = build_sitemap()
     save_card_manifest()
     report_card_budget()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
-          f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp, "
+          f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp/{n_things}c, "
           f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), sitemap {n_sitemap} urls from {args.source}")
 
 
