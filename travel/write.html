@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Write to the librarian — The Librarian Abroad</title>
+<meta name="description" content="Send a note, a correction or a recommendation to Mr. Librarian."/>
+<link rel="canonical" href="https://mistertranslation.com/travel/write.html"/>
+<meta property="og:site_name" content="The Librarian Abroad"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Write to the librarian — The Librarian Abroad"/>
+<meta property="og:description" content="Send a note, a correction or a recommendation to Mr. Librarian."/>
+<meta property="og:image" content="https://mistertranslation.com/travel/img/og-default.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Write to the librarian — The Librarian Abroad"/>
+<meta name="twitter:description" content="Send a note, a correction or a recommendation to Mr. Librarian."/>
+<meta name="twitter:image" content="https://mistertranslation.com/travel/img/og-default.png"/>
+<meta property="og:url" content="https://mistertranslation.com/travel/write.html"/>
+<link rel="icon" href="img/favicon.svg"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian Abroad" href="feed.xml"/>
+<link rel="stylesheet" href="style.css?v=ebfff3677f"/>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+<header class="site-head">
+  <a class="brand" href="index.html">
+    <svg class="mark" viewBox="0 0 48 48" width="46" height="46" aria-hidden="true">
+  <circle cx="24" cy="24" r="21" fill="#fdf6ea" stroke="#c25e3a" stroke-width="2"/>
+  <circle cx="24" cy="24" r="15.5" fill="none" stroke="#e0c9a6" stroke-width="1.2"/>
+  <path d="M24 9.5 L27.4 20.6 L38.5 24 L27.4 27.4 L24 38.5 L20.6 27.4 L9.5 24 L20.6 20.6 Z"
+        fill="#c25e3a" opacity="0.9"/>
+  <circle cx="24" cy="24" r="3.4" fill="#6b7a4a"/>
+  <circle cx="24" cy="24" r="1.3" fill="#fdf6ea"/>
+</svg>
+    <span class="brand-name">The Librarian <span class="abroad">Abroad</span></span>
+  </a>
+  <div class="rule"></div>
+  <div class="tag">Travels and meals, kept by Mr. Librarian</div>
+  <nav class="topnav">
+    <a href="index.html">Latest</a>
+    <a href="index.html#archive">Archive</a>
+    <a href="write.html" class="on">✉️ Write</a>
+    <a href="about.html">About</a>
+    <a href="feed.xml" title="Subscribe by RSS">RSS</a>
+  </nav>
+</header>
+<section class="lede">
+  <h1>Write to the librarian</h1>
+  <p>Been somewhere in here? Think I got it wrong? Know the place I should have gone
+  instead? This goes straight to my desk.</p>
+</section>
+
+<div class="panel">
+  <form action="https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c" method="POST" class="askform">
+    <input type="hidden" name="_subject" value="The Librarian Abroad — a note from a reader"/>
+    <input type="hidden" name="_template" value="table"/>
+    <input type="hidden" name="_next" value="https://mistertranslation.com/travel/thanks.html"/>
+    <!-- Honeypot: a real person never sees this, a bot fills it in. -->
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+    <label>Which entry is this about? <span class="opt">(optional)</span>
+      <input type="text" name="entry" id="entryField"
+             placeholder="Leave blank if it's not about a particular one"/>
+    </label>
+    <label>Your name <span class="opt">(optional)</span>
+      <input type="text" name="name" placeholder="However you'd like to be known — or leave blank"/>
+    </label>
+    <label>Your email <span class="opt">(optional — only if you'd like a reply)</span>
+      <input type="email" name="email" placeholder="you@example.com"/>
+    </label>
+    <label>Your message <span class="req">(required)</span>
+      <textarea name="message" required rows="7"
+        placeholder="A correction, a recommendation, an argument about the chashu…"></textarea>
+    </label>
+    <button class="btn" type="submit">Send it</button>
+    <p class="formnote">Sending shows a quick captcha to keep the robots out, then brings you
+    back here. Nothing is posted publicly — messages go straight to my inbox, and I read all
+    of them.</p>
+  </form>
+</div>
+
+<script>
+// Pre-fill "which entry" when a reader arrives from the link at the foot of a post.
+// Set with .value (never innerHTML) so a crafted URL can't inject markup.
+(function(){
+  try {
+    var re = new URLSearchParams(location.search).get('re');
+    var f = document.getElementById('entryField');
+    if (re && f) f.value = re.slice(0, 200);
+  } catch (e) {}
+})();
+</script>
+<footer class="site-foot">
+  <p>The Librarian Abroad — Notes from the road and from the table — what was worth the trip, what was worth the plate, and what wasn't.</p>
+  <p><a href="index.html">Latest</a> · <a href="write.html">Write to the librarian</a> ·
+  <a href="about.html">About</a> · <a href="feed.xml">RSS</a></p>
+</footer>
+</div>
+</body>
+</html>
