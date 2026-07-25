@@ -23,7 +23,8 @@ from collections import defaultdict
 
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
                            LINK_OVERRIDES, VERSE_OF_DAY, ROUTES, REGIONS,
-                           CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS)
+                           CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS,
+                           DICTIONARY_ES, ENCYCLOPEDIA_ES)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
@@ -422,6 +423,7 @@ def header(active="", lang="en"):
   <div class="tag">Una nueva traducción de la Biblia desde el hebreo y el griego</div>
   <nav class="topnav">
     <a href="es.html"{cls('home')}>Inicio</a>
+    <a href="biblioteca.html"{cls('biblioteca')}>Biblioteca</a>
   </nav>
 </header>"""
     return f"""<header class="site-head">
@@ -989,6 +991,70 @@ vocabulary, not an abridged lexicon.</p>
     return len(entries)
 
 
+
+# --- entry images -----------------------------------------------------------
+# Michael asked to start hosting images (2026-07-25), specifically "a photo of a
+# statue of Baal", with a hard constraint: "we don't wanna pay anything... we have
+# to follow those rules for where we find something."
+#
+# ⚠ TWO THINGS THAT ARE NOT OBVIOUS:
+#
+# 1. WHERE THE FILE LIVES. The published copy must be committed to THIS repo,
+#    because GitHub Pages can only serve what it hosts — our S3 bucket is private,
+#    so a browser cannot load an image from it. The ORIGINAL goes to S3 for
+#    archival. That is exactly the split tools/travel_archive.py already uses, and
+#    the same live-in-git / durable-in-S3 pattern as the rest of Michael's records.
+#
+# 2. LICENSING IS ENFORCED, NOT TRUSTED. _entry_image_html REFUSES to render an
+#    image that is missing its license, credit or source, so an unlicensed file
+#    cannot reach the site by being added carelessly later. We credit even
+#    public-domain photographs whose licence requires no attribution — it costs a
+#    line and it is the same habit as showing a reading's pedigree.
+#
+# A 3-D object like a stele is the case to be careful about: the ARTEFACT is
+# thousands of years old and out of copyright, but the PHOTOGRAPH of it carries its
+# own fresh copyright, so the photographer's licence is the one that matters.
+_IMG_REQUIRED = ("file", "alt", "credit", "license", "source_url")
+
+
+def _entry_image_html(img, lang="en"):
+    missing = [k for k in _IMG_REQUIRED if not img.get(k)]
+    if missing:
+        raise SystemExit(f"entry image {img.get('file', '?')!r} is missing {missing} — "
+                         f"every image must carry its licence, credit and source before "
+                         f"it can be published")
+    path = f"img/ency/{img['file']}"
+    if not os.path.isfile(os.path.join(OUT, path)):
+        raise SystemExit(f"entry image {path} is referenced but not in the repo — "
+                         f"GitHub Pages can only serve committed files")
+    es = lang == "es"
+    cap = img.get("caption_es") if es else img.get("caption")
+    # A Spanish page must not carry an English credit line — same rule as every
+    # other Spanish surface here. Falls back to the English string only if no
+    # Spanish one was supplied, which is visible rather than silent.
+    lic_txt = (img.get("license_es") or img["license"]) if es else img["license"]
+    credit_txt = (img.get("credit_es") or img["credit"]) if es else img["credit"]
+    lic = html.escape(lic_txt)
+    if img.get("license_url"):
+        lic = f'<a href="{html.escape(img["license_url"], quote=True)}" rel="noopener">{lic}</a>'
+    word = "Foto" if es else "Photo"
+    via = "vía" if es else "via"
+    credit = (f'{word}: {html.escape(credit_txt)} · {lic} · '
+              f'{via} <a href="{html.escape(img["source_url"], quote=True)}" rel="noopener">'
+              f'{html.escape(img.get("source_name", "Wikimedia Commons"))}</a>')
+    capline = f'<div class="eimg-cap">{cap}</div>' if cap else ""
+    return f"""<figure class="eimg" style="margin:10px 0;padding:0">
+  <img src="{path}" alt="{html.escape(img['alt'], quote=True)}" loading="lazy"
+       style="max-width:100%;height:auto;border-radius:6px;display:block"/>
+  {capline}
+  <figcaption class="eimg-credit" style="font-size:11.5px;opacity:.72;margin-top:5px">{credit}</figcaption>
+</figure>"""
+
+
+def _entry_images_html(e, lang="en"):
+    return "".join(_entry_image_html(i, lang) for i in (e.get("images") or []))
+
+
 def build_encyclopedia():
     places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
     people = [e for e in ENCYCLOPEDIA if e["kind"] in ("person", "people")]
@@ -1027,6 +1093,7 @@ def build_encyclopedia():
             out.append(f"""<div class="eentry" id="{e['slug']}">
   <div class="ehead">{html.escape(e['name'])}</div>
   <p>{e['desc']}</p>
+  {_entry_images_html(e)}
   <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
   {maplink}
   {vids}
@@ -3055,6 +3122,367 @@ def inject_spanish(content, slug, es_panels):
     return out, True
 
 
+
+# ---------------------------------------------------------------------------
+# THE SPANISH LIBRARY (2026-07-25) — diccionario, enciclopedia, concordancia,
+# atlas, and the biblioteca hub that gathers them.
+#
+# The governing rule is the one already written into the Spanish nav: a page is
+# linked in Spanish ONLY if it exists in Spanish, and a Spanish-only reader is
+# never dumped into English. So:
+#   * the CONCORDANCIA is complete on day one, because it is generated from the
+#     Spanish verse text itself -- no translation needed, ever;
+#   * the DICCIONARIO and ENCICLOPEDIA render ONLY the entries present in
+#     library_data.DICTIONARY_ES / ENCYCLOPEDIA_ES, and each page prints its own
+#     honest coverage ("8 de 572") rather than padding itself with English;
+#   * the ATLAS shows only places that have a Spanish entry, for the same reason.
+# ---------------------------------------------------------------------------
+
+SITE_NAME_ES = "La Traducción Mister"
+
+# Spanish book names, for citations like "Jeremías 18:3". Falls back to the
+# English name if a book is missing, so a new book can never crash a build.
+_BOOK_ES = {
+    "Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico",
+    "Numbers": "Números", "Deuteronomy": "Deuteronomio", "Joshua": "Josué",
+    "Judges": "Jueces", "Ruth": "Rut", "1 Samuel": "1 Samuel", "2 Samuel": "2 Samuel",
+    "1 Kings": "1 Reyes", "2 Kings": "2 Reyes", "1 Chronicles": "1 Crónicas",
+    "2 Chronicles": "2 Crónicas", "Ezra": "Esdras", "Nehemiah": "Nehemías",
+    "Esther": "Ester", "Job": "Job", "Psalms": "Salmos", "Proverbs": "Proverbios",
+    "Ecclesiastes": "Eclesiastés", "Song of Solomon": "Cantar de los Cantares",
+    "Isaiah": "Isaías", "Jeremiah": "Jeremías", "Lamentations": "Lamentaciones",
+    "Ezekiel": "Ezequiel", "Daniel": "Daniel", "Hosea": "Oseas", "Joel": "Joel",
+    "Amos": "Amós", "Obadiah": "Obadías", "Jonah": "Jonás", "Micah": "Miqueas",
+    "Nahum": "Nahúm", "Habakkuk": "Habacuc", "Zephaniah": "Sofonías",
+    "Haggai": "Hageo", "Zechariah": "Zacarías", "Malachi": "Malaquías",
+    "Matthew": "Mateo", "Mark": "Marcos", "Luke": "Lucas", "John": "Juan",
+    "Acts": "Hechos", "Romans": "Romanos", "1 Corinthians": "1 Corintios",
+    "2 Corinthians": "2 Corintios", "Galatians": "Gálatas", "Ephesians": "Efesios",
+    "Philippians": "Filipenses", "Colossians": "Colosenses",
+    "1 Thessalonians": "1 Tesalonicenses", "2 Thessalonians": "2 Tesalonicenses",
+    "1 Timothy": "1 Timoteo", "2 Timothy": "2 Timoteo", "Titus": "Tito",
+    "Philemon": "Filemón", "Hebrews": "Hebreos", "James": "Santiago",
+    "1 Peter": "1 Pedro", "2 Peter": "2 Pedro", "1 John": "1 Juan",
+    "2 John": "2 Juan", "3 John": "3 Juan", "Jude": "Judas",
+    "Revelation": "Apocalipsis",
+}
+
+
+def book_es(book):
+    return _BOOK_ES.get(book, book)
+
+
+# Spanish function words, plus the few translation-mechanical words that would
+# otherwise top the frequency list and tell a reader nothing.
+_STOPWORDS_ES = {
+    "los", "las", "una", "unos", "unas", "del", "por", "para", "con", "sin",
+    "sobre", "entre", "hasta", "desde", "como", "más", "pero", "porque", "que",
+    "sus", "sea", "ser", "son", "fue", "era", "eran", "está", "están", "estaba",
+    "han", "has", "hay", "había", "les", "nos", "vos", "ellos", "ellas",
+    "esto", "esta", "este", "estos", "estas", "eso", "esa", "ese", "esos",
+    "esas", "aquel", "todo", "toda", "todos", "todas", "cada", "cual",
+    "cuales", "quien", "quienes", "donde", "cuando", "también", "así",
+    "aun", "aún", "muy", "tan", "mis", "tus", "nuestro", "nuestra",
+    "vuestro", "vuestra", "vuestros", "vuestras", "dijo", "dice", "diciendo",
+    "dijeron", "hizo", "hacer", "haré", "fueron", "sino", "aunque",
+    "según", "entonces", "luego", "ahora", "he", "ha", "mi", "tu", "su",
+    "me", "te", "se", "le", "lo", "la", "el", "un", "no", "ni", "si", "ya",
+}
+
+
+def extract_verses_spanish(panels):
+    """[(book, chapter_num, anchor, verse_num, plain_spanish_text), ...] for every
+    Spanish verse we have. The ANCHOR is carried through verbatim rather than
+    rebuilt, because a book's chapter 1 uses a bare `vN` while later chapters use
+    `vCH-N` -- recomputing it would silently produce dead links."""
+    rows = []
+    en_by_slug = {slug: (book, num) for slug, book, num, _ in CHAPTERS}
+    for slug, content in panels.items():
+        bk = en_by_slug.get(slug)
+        if not bk:
+            continue
+        book, num = bk
+        for m in re.finditer(r'id="(v(?:\d+-)?\d+)".*?<div class="esp">(.*?)</div>',
+                             content, re.S):
+            anchor, esp = m.group(1), m.group(2)
+            vnum = int(anchor.rsplit("-", 1)[-1] if "-" in anchor else anchor[1:])
+            text = re.sub(r"<[^>]+>", " ", esp)
+            text = html.unescape(text)
+            text = re.sub(r"\s*nota\s*$", "", text.strip())
+            text = re.sub(r"\s+", " ", text)
+            rows.append((book, num, anchor, vnum, text))
+    return rows
+
+
+def es_verse_url(book, ch, anchor):
+    return f"{book_slug(book)}-{ch}.es.html#{anchor}"
+
+
+def es_ref_link(book, ch, anchor, vnum):
+    return (f'<a href="{es_verse_url(book, ch, anchor)}">'
+            f'{book_es(book)} {ch}:{vnum}</a>')
+
+
+def _es_slugs_available(panels):
+    """{'jeremiah-18', ...} -- which chapters have a Spanish page."""
+    en_by_slug = {slug: (book, num) for slug, book, num, _ in CHAPTERS}
+    out = set()
+    for slug in panels:
+        bk = en_by_slug.get(slug)
+        if bk:
+            out.add(f"{book_slug(bk[0])}-{bk[1]}")
+    return out
+
+
+def _es_dict_ref(book, ch, v, es_slugs):
+    """Cite a verse in Spanish. Links ONLY when that chapter has a SPANISH page;
+    otherwise plain text, so a Spanish reader is never sent into English."""
+    label = f"{book_es(book)} {ch}:{v}"
+    slug = f"{book_slug(book)}-{ch}"
+    if slug in es_slugs:
+        anchor = f"v{v}" if ch == 1 else f"v{ch}-{v}"
+        return f'<a href="{slug}.es.html#{anchor}">{label}</a>'
+    return f'<span class="ref-unpub" title="capítulo aún no traducido">{label}</span>'
+
+
+def build_concordance_es(panels):
+    """The one Spanish library page COMPLETE from day one: generated from the
+    Spanish verse text, so it needs no separate translation and cannot fall
+    behind the chapters."""
+    rows = extract_verses_spanish(panels)
+    index = defaultdict(list)
+    for book, ch, anchor, vnum, text in rows:
+        seen = set()
+        for raw in re.findall(
+                r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]"
+                r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ'’\-]*",
+                text):
+            w = raw.lower().strip("'’-")
+            if len(w) < 3 or w in _STOPWORDS_ES or w in seen:
+                continue
+            seen.add(w)
+            index[w].append((book, ch, anchor, vnum))
+    words = sorted(index.keys())
+    total_refs = sum(len(v) for v in index.values())
+
+    letters = sorted({w[0].upper() for w in words})
+    jump = " ".join(f'<a href="#L{L}">{L}</a>' for L in letters)
+    sections, cur = [], None
+    for w in words:
+        L = w[0].upper()
+        if L != cur:
+            if cur is not None:
+                sections.append("</div>")
+            sections.append(f'<h2 id="L{L}">{L}</h2><div class="panel conc">')
+            cur = L
+        refs = index[w]
+        links = " ".join(es_ref_link(b, c, a, v) for b, c, a, v in refs)
+        sections.append(
+            f'<div class="cw"><span class="cw-w">{html.escape(w)}</span>'
+            f'<span class="cw-n">×{len(refs)}</span>'
+            f'<span class="cw-refs">{links}</span></div>')
+    if cur is not None:
+        sections.append("</div>")
+
+    body = f"""<h1 class="pagetitle">\U0001F520 Concordancia</h1>
+<p class="lede">Todas las palabras significativas de la traducción española, indexadas a cada
+versículo donde aparecen — <strong>{len(words)} palabras · {total_refs} apariciones</strong>
+en {len(rows)} versículos. Se genera automáticamente del texto español en cada compilación,
+así que nunca se queda atrás: es la única página de esta biblioteca que está
+<strong>completa</strong> desde el primer día.</p>
+<div class="panel alpha">{jump}</div>
+{"".join(sections)}"""
+    out = page(f"Concordancia — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
+               desc="Concordancia completa de la traducción española, generada del texto mismo.")
+    open(os.path.join(OUT, "concordancia.html"), "w", encoding="utf-8").write(out)
+    return len(words), total_refs
+
+
+def build_dictionary_es(panels):
+    es_slugs = _es_slugs_available(panels)
+    by_slug = {d[0]: d for d in DICTIONARY}
+    items = []
+    for slug in sorted(DICTIONARY_ES, key=lambda k: DICTIONARY_ES[k][0].lower()):
+        term_es, desc_es = DICTIONARY_ES[slug]
+        src = by_slug.get(slug)
+        if not src:
+            continue
+        _, term, orig, translit, _gloss, ref = src
+        book, ch, v = _ref(ref)
+        script_cls = "dgreek" if _is_nt(book) else "dheb"
+        items.append(f"""<div class="dentry" id="{slug}">
+  <div class="dhead"><span class="dterm">{html.escape(term_es)}</span>
+    <span class="{script_cls}">{orig}</span> <span class="dtr">{html.escape(translit)}</span></div>
+  <p>{desc_es} <span class="dref">→ primero comentado en {_es_dict_ref(book, ch, v, es_slugs)}</span></p>
+</div>""")
+    body = f"""<h1 class="pagetitle">\U0001F4D6 Diccionario</h1>
+<p class="lede">Las palabras del idioma original que esta traducción ha encontrado — hebreo para el
+Tanaj, griego para el Nuevo Testamento — explicadas en español.
+<strong>{len(items)} de {len(DICTIONARY)} términos</strong> tienen ya su entrada española.</p>
+<div class="panel" style="padding:10px 14px">
+  <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Aquí aparecen
+  únicamente los términos que ya están escritos en español, porque una entrada en inglés
+  dentro de una página española no le sirve a nadie que lea solo español. Los que faltan se van
+  añadiendo a medida que se traduce cada capítulo nuevo.</p>
+</div>
+{"".join(items)}"""
+    out = page(f"Diccionario — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
+               desc="Diccionario hebreo y griego de la traducción, en español.")
+    open(os.path.join(OUT, "diccionario.html"), "w", encoding="utf-8").write(out)
+    return len(items)
+
+
+def build_encyclopedia_es(panels):
+    es_slugs = _es_slugs_available(panels)
+    by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
+    groups = {"place": [], "people": [], "craft": []}
+    for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
+        e = by_slug.get(slug)
+        if not e:
+            continue
+        k = e["kind"]
+        k = ("people" if k in ("person", "people")
+             else "craft" if k in ("craft", "thing") else "place")
+        groups[k].append((slug, name_es, desc_es, e))
+
+    def render(entries):
+        out = []
+        for slug, name_es, desc_es, e in sorted(entries, key=lambda x: x[1].lower()):
+            refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
+            maplink = ""
+            if e.get("coords"):
+                maplink = (f'<div class="emap"><a href="atlas-es.html#atlas-{slug}">'
+                           f'\U0001F5FA️ Verlo en el atlas →</a></div>')
+            out.append(f"""<div class="eentry" id="{slug}">
+  <div class="ehead">{html.escape(name_es)}</div>
+  <p>{desc_es}</p>
+  {_entry_images_html(e, "es")}
+  <div class="erefs"><span class="xr-label">en el texto</span> {refs}</div>
+  {maplink}
+</div>""")
+        return "".join(out)
+
+    total = sum(len(v) for v in groups.values())
+    secs = []
+    for key, title in (("place", "Lugares"), ("people", "Personas"),
+                       ("craft", "Oficios y artes")):
+        if groups[key]:
+            secs.append(f'<h2>{title}</h2><div class="panel ency">{render(groups[key])}</div>')
+
+    body = f"""<h1 class="pagetitle">\U0001F3FA Enciclopedia</h1>
+<p class="lede">Las personas, los lugares y los oficios que la traducción ha alcanzado, cada entrada
+enlazada a los versículos donde aparece. <strong>{total} de {len(ENCYCLOPEDIA)} entradas</strong>
+están ya escritas en español.</p>
+<div class="panel" style="padding:10px 14px">
+  <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Solo se muestran las
+  entradas que ya tienen texto español; nada se rellena con inglés.</p>
+</div>
+{"".join(secs)}"""
+    out = page(f"Enciclopedia — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
+               desc="Personas, lugares y oficios de la traducción, en español.")
+    open(os.path.join(OUT, "enciclopedia.html"), "w", encoding="utf-8").write(out)
+    return total
+
+
+def build_atlas_es(panels):
+    """Spanish atlas. Shows only places that HAVE a Spanish entry -- the
+    coordinates are language-neutral and reused, but the prose must be Spanish or
+    the page would dump a Spanish reader into English."""
+    es_slugs = _es_slugs_available(panels)
+    by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
+    places = []
+    for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
+        e = by_slug.get(slug)
+        if e and e["kind"] == "place":
+            places.append((slug, name_es, desc_es, e))
+    mapped = sum(1 for _, _, _, e in places if e.get("coords"))
+
+    blocks = []
+    for slug, name_es, desc_es, e in sorted(places, key=lambda x: x[1].lower()):
+        refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
+        if e.get("coords"):
+            lat, lon, span = e["coords"]
+            badge = ' <span class="atlas-approx">aproximado</span>' if e.get("approx") else ""
+            caption = f'\U0001F4CD <strong>{html.escape(name_es)}</strong>'
+            if e.get("modern"):
+                caption += f' — hoy {html.escape(e["modern"])}'
+            map_html = osm_embed(lat, lon, span, name_es, caption=caption)
+        else:
+            badge = ""
+            map_html = ('<div class="atlas-nomap">\U0001F4CD Sin punto fijo: la ubicación está '
+                        "genuinamente sin determinar, así que no se muestra ninguna chincheta "
+                        "adivinada.</div>")
+        blocks.append(f"""<div class="atlas-place" id="atlas-{slug}">
+  <div class="atlas-place-h"><a href="enciclopedia.html#{slug}">{html.escape(name_es)}</a>{badge}</div>
+  <p>{desc_es}</p>
+  <div class="erefs"><span class="xr-label">en el texto</span> {refs}</div>
+  {map_html}
+</div>""")
+
+    body = f"""<h1 class="pagetitle">\U0001F5FA️ Atlas</h1>
+<p class="lede">Los lugares de la traducción, situados en un mapa vivo —
+<strong>{mapped} de {len(places)}</strong> con coordenadas. Las coordenadas se comparten con la
+edición inglesa; el texto es español.</p>
+<div class="panel" style="padding:10px 14px">
+  <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Aparecen únicamente
+  los lugares que ya tienen entrada en español.</p>
+</div>
+{"".join(blocks)}"""
+    out = page(f"Atlas — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
+               desc="Atlas de los lugares de la traducción, en español.")
+    open(os.path.join(OUT, "atlas-es.html"), "w", encoding="utf-8").write(out)
+    return mapped, len(places)
+
+
+def build_library_es(stats):
+    n_words, n_refs, n_dict, n_ency, n_mapped, n_places = stats
+    body = f"""<h1 class="pagetitle">\U0001F4DA La Biblioteca</h1>
+<p class="lede">La sala de consulta de la edición española. Cada estante crece —
+automáticamente o a mano — a medida que se traduce cada capítulo, así que la biblioteca es
+siempre exactamente tan honda como la traducción misma.</p>
+
+<div class="cardgrid">
+  <a class="card" href="concordancia.html"><div class="card-t">\U0001F520 Concordancia</div>
+  <div class="card-d">{n_words} palabras · {n_refs} apariciones — todas las palabras significativas
+  del texto español, indexadas a cada versículo. Generada del texto mismo:
+  <strong>completa</strong>.</div></a>
+  <a class="card" href="diccionario.html"><div class="card-t">\U0001F4D6 Diccionario</div>
+  <div class="card-d">{n_dict} de {len(DICTIONARY)} términos hebreos y griegos explicados en
+  español — crece con cada capítulo.</div></a>
+  <a class="card" href="enciclopedia.html"><div class="card-t">\U0001F3FA Enciclopedia</div>
+  <div class="card-d">{n_ency} de {len(ENCYCLOPEDIA)} entradas de personas, lugares y oficios en
+  español — crece con cada capítulo.</div></a>
+  <a class="card" href="atlas-es.html"><div class="card-t">\U0001F5FA️ Atlas</div>
+  <div class="card-d">{n_mapped} de {n_places} lugares situados en el mapa, con el texto en
+  español.</div></a>
+</div>
+
+<div class="panel" style="padding:12px 16px">
+  <h3 style="margin-top:0">Por qué algunas páginas están incompletas</h3>
+  <p>La regla de esta edición es sencilla: <strong>nada se rellena con inglés</strong>. La
+  navegación española enlaza solo a páginas que existen en español, y una entrada del
+  diccionario escrita en inglés dentro de una página española no le sirve de nada a quien lee
+  solo español. Así que cada estante muestra su cobertura real y va creciendo capítulo a
+  capítulo.</p>
+  <p>La <strong>concordancia</strong> es la excepción: se construye a partir del texto español
+  mismo, de modo que está completa desde el primer día y no puede quedarse atrás.</p>
+</div>"""
+    out = page(f"La Biblioteca — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
+               desc="La sala de consulta de la edición española: concordancia, diccionario, "
+                    "enciclopedia y atlas.")
+    open(os.path.join(OUT, "biblioteca.html"), "w", encoding="utf-8").write(out)
+
+
+def build_library_es_all(panels):
+    """Build all four Spanish library pages + the hub. Returns a summary tuple."""
+    n_words, n_refs = build_concordance_es(panels)
+    n_dict = build_dictionary_es(panels)
+    n_ency = build_encyclopedia_es(panels)
+    n_mapped, n_places = build_atlas_es(panels)
+    build_library_es((n_words, n_refs, n_dict, n_ency, n_mapped, n_places))
+    return n_words, n_refs, n_dict, n_ency, n_mapped, n_places
+
+
 def build_es():
     """The Spanish locale — a parallel edition built chapter by chapter from
     source/es/*.html. Each Spanish chapter renders to <slug>.es.html with Spanish
@@ -3064,6 +3492,12 @@ def build_es():
     panels = _es_panels()
     if not panels:
         return
+    # The Spanish reference room, built from the same panels. Kept inside build_es
+    # so it can never run without Spanish chapters to build from.
+    es_lib = build_library_es_all(panels)
+    print(f"   biblioteca es: concordancia {es_lib[0]}w/{es_lib[1]}refs, "
+          f"diccionario {es_lib[2]}/{len(DICTIONARY)}, enciclopedia {es_lib[3]}/{len(ENCYCLOPEDIA)}, "
+          f"atlas {es_lib[4]}/{es_lib[5]}")
     en_by_slug = {slug: (book, num) for slug, book, num, _ in CHAPTERS}
     def es_teaser(slug):
         """Spanish description for a Spanish card. Never falls back to English —

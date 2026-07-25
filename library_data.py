@@ -1142,6 +1142,34 @@ ENCYCLOPEDIA = [
     # entries needed.
     dict(slug="baal", name="Baal", kind="people",
          aliases=["Baal"],
+         # The artefact is ~3,400 years old and long out of copyright, but a
+         # PHOTOGRAPH of a 3-D object carries its own fresh copyright, so the
+         # photographer's licence is the one that governs. Jastrow explicitly
+         # released this one into the public domain (no attribution required) —
+         # we credit it anyway. Web copy committed to img/ency/; the 6.8 MB
+         # original is archived to S3 under blobs/entry_images/.
+         images=[dict(
+             file="baal-stele-ugarit.jpg",
+             alt="Limestone stele of Baal holding a raised mace and a downward-pointing "
+                 "spear, from Ugarit, in the Louvre",
+             caption="The <strong>Baal with Thunderbolt</strong> stele — limestone, 15th century BC, "
+                     "excavated at Ugarit (Ras Shamra) in 1932, now Louvre AO 15775. The raised arm is "
+                     "the &lsquo;smiting god&rsquo; pose found across the Levant; the spear-head running "
+                     "down from his other hand is read as the lightning of a storm god.",
+             caption_es="La estela de <strong>Baal con el rayo</strong> — piedra caliza, siglo XV a. C., "
+                        "excavada en Ugarit (Ras Shamra) en 1932, hoy Louvre AO 15775. El brazo en alto es "
+                        "la postura del &laquo;dios que golpea&raquo; que se encuentra por todo el Levante; "
+                        "la punta de lanza que baja de su otra mano se lee como el rayo de un dios de la "
+                        "tormenta.",
+             credit="Jastrow, liberada al dominio público" if False else
+                    "Jastrow, released into the public domain",
+             credit_es="Jastrow, liberada al dominio público",
+             license="Public domain",
+             license_es="Dominio público",
+             license_url="https://en.wikipedia.org/wiki/Public_domain",
+             source_url="https://commons.wikimedia.org/wiki/File:Baal_thunderbolt_Louvre_AO15775.jpg",
+             source_name="Wikimedia Commons",
+         )],
          refs=[("Jeremiah", 2, 8), ("Jeremiah", 7, 9), ("Jeremiah", 19, 5),
                ("Jeremiah", 23, 13), ("Jeremiah", 32, 35), ("Zephaniah", 1, 4)],
          desc='The storm god of the Canaanites and Phoenicians, and the rival the Hebrew prophets name more often than any other. <em>Ba&rsquo;al</em> is an ordinary Hebrew noun before it is a name — &lsquo;owner, master, husband&rsquo; — which the prophets exploit: Hosea has God say that Israel will call him &lsquo;my husband&rsquo; (<em>ishi</em>) and &lsquo;no longer call me my Baal&rsquo; (2:16). As a god he is HADAD, lord of rain, thunder and the fertility of the fields, titled &lsquo;rider of the clouds&rsquo;; his father is El, his sister-consort Anat, and his enemies are Yam (Sea) and Mot (Death). ⚠ Psalm 68:4 gives &lsquo;rider of the clouds&rsquo; to Jehovah instead — the Bible taking the storm god&rsquo;s own epithet and reassigning it, and the same idiom stands behind &lsquo;one like a son of man coming with the clouds&rsquo; (Daniel 7:13).<br><br><strong>The archaeology.</strong> Almost everything we know about Baal worship from the WORSHIPPERS&rsquo; own side comes from one find: in 1928 a farmer&rsquo;s plough struck a tomb at Minet el-Beida on the Syrian coast, and excavation from 1929 under CLAUDE SCHAEFFER uncovered the city of UGARIT (Ras Shamra) and its archive — clay tablets in a previously unknown alphabetic cuneiform, written c. 1400–1200 BC, including the long poems now called the BAAL CYCLE. Before Ugarit, Baal was known mainly through the polemic of his opponents. ⚠ But the gap must be stated: Ugarit is Late Bronze Age and some 400 km north of Jerusalem, while Jeremiah is Iron Age Judah five centuries later — the cult certainly changed in between, and the tablets describe its Syrian form, not Judah&rsquo;s. Objects: bronze &lsquo;smiting god&rsquo; figurines — a striding male, arm raised to strike — turn up across the Levant, and a celebrated limestone stele from Ugarit (now in the Louvre) shows the god with mace lifted and a spear whose head runs down like a lightning-bolt. ⚠ Identifying any individual figurine as Baal SPECIFICALLY is almost always an inference from iconography, not from an inscription on the object.<br><br><strong>What the worship was.</strong> High places (<em>bamot</em>), standing stones, altars and incense — Jeremiah&rsquo;s charge is &lsquo;burning incense to Baal&rsquo; (7:9) — and, as the Bible states it, child sacrifice by fire at Topheth in the Valley of Ben-Hinnom (19:5; 32:35 locates &lsquo;the high places of Baal&rsquo; there). Elijah&rsquo;s contest on Carmel is built as a storm-god polemic: the tests are FIRE and then RAIN, Baal&rsquo;s own portfolio, and he supplies neither. Two finds sit close to Jeremiah&rsquo;s own doorstep. Thousands of JUDEAN PILLAR FIGURINES — a moulded female head on a pillar body — come from ordinary houses in 8th–7th century Judah, Jerusalem included, which is household religion in exactly Jeremiah&rsquo;s century; ⚠ what they were FOR (Asherah? a fertility charm? a votive?) is genuinely disputed. And the inscriptions from KUNTILLET AJRUD (c. 800 BC, in the Sinai) read &lsquo;Jehovah of Samaria and his asherah&rsquo; — the epigraphic face of the hedging the prophets attack; ⚠ whether &lsquo;his asherah&rsquo; means the goddess or a wooden cult object is unresolved. The Jerusalem Topheth itself has never been securely identified in the ground. The Phoenician and Punic tophets — Carthage above all, with Motya, Sulcis and Tharros — do contain thousands of urns holding cremated infant and animal bone, the strongest physical evidence for the practice anywhere in the Phoenician world; ⚠ and their reading is fiercely contested, some specialists taking them for cemeteries of infants who died naturally, with the dental and skeletal age studies argued both ways. This library does not cast a vote.<br><br>⚠ <strong>Note for Jeremiah 18.</strong> Baal is NOT named in the potter&rsquo;s-house chapter. It says only that the people &lsquo;burn incense to worthlessness&rsquo; (18:15), the prophets&rsquo; standard shorthand for an idol. The god is named on either side of it — 2:8, 19:5, 23:13, 32:29-35 — so the identification is fair, but it is the surrounding chapters that supply the name, not this one.'),
@@ -8763,3 +8791,201 @@ BOOK_INTROS = {
         debates="AUTHORSHIP and DATE above all — the most disputed in the New Testament: Peter's own last testament, or a later disciple writing in his name c. AD 100–130. The relationship with JUDE — which borrowed from which, or whether both drew on a common source (most judge 2 Peter the borrower). The meaning of 'partakers of the divine nature' (1:4) and how far theosis may be pressed. Whether 1:20's 'no prophecy is of one's own interpretation' concerns the ORIGIN of prophecy or its READING. And the scope of the cosmic dissolution of chapter 3. The library reports the positions; it does not vote.",
     ),
 }
+
+
+# ---------------------------------------------------------------------------
+# THE SPANISH LIBRARY (2026-07-25, Michael's ask: "let's start building those
+# Spanish diccionario enciclopedia concordancia... as we go forward").
+#
+# Deliberately SEPARATE dicts keyed by slug, rather than extra fields on the
+# DICTIONARY tuples / ENCYCLOPEDIA dicts. Two reasons: DICTIONARY is a list of
+# SIX-element tuples that several call sites unpack positionally, so a seventh
+# element would break them; and keeping Spanish apart makes coverage trivially
+# countable, which the Spanish pages print honestly ("N de M términos").
+#
+# The contract: a Spanish library page renders ONLY the entries that appear here.
+# Nothing falls back to English — the Spanish nav's own rule is that a
+# Spanish-only reader is never dumped into English. So these grow chapter by
+# chapter as each new chapter is translated, and the gaps get filled in
+# deliberately (Michael: "Sunday we can go back and fill in the gaps").
+#
+# Shapes:  DICTIONARY_ES[slug]   = (term_es, desc_es)
+#          ENCYCLOPEDIA_ES[slug] = (name_es, desc_es)
+# term_es is the SPANISH gloss of the headword, not the transliteration — the
+# original-script word and transliteration are language-neutral and come from
+# DICTIONARY itself.
+# ---------------------------------------------------------------------------
+
+DICTIONARY_ES = {
+    "ovnayim": ("las dos piedras",
+        "LAS DOS PIEDRAS — el torno del alfarero, y una de las palabras más informativas del hebreo "
+        "bíblico, porque es un DUAL: no «rueda», sino el dual de <em>even</em>, «piedra». La palabra es una "
+        "fotografía de la máquina: una piedra inferior girada con la mano o el pie que mueve una piedra "
+        "superior sobre un pivote, con el barro encima. Las versiones antiguas todavía oyen el número (KJV y "
+        "ASV ponen «las ruedas», en plural, en Jeremías 18:3; las modernas lo aplanan a una sola rueda). "
+        "⚠ Aparece solo DOS veces en la Biblia, y el otro lugar sorprende: Éxodo 1:16, donde es la SILLA DE "
+        "PARTOS sobre la que se ponen las madres hebreas. Una misma palabra dual para las dos piedras del "
+        "alfarero y para las dos piedras del parto — las dos, el lugar donde a una vida se le da forma."),
+    "chomer": ("barro",
+        "BARRO — barro de alfarero, húmedo y trabajable, y por extensión lodo o mortero (es el material de "
+        "la cuota de ladrillos de Egipto en Éxodo 1:14). ⚠ Toda la fuerza de la imagen de Jeremías 18 "
+        "depende de un hecho físico del <em>chomer</em> que un lector de hoy puede no traer consigo: el "
+        "barro HÚMEDO puede aplastarse y volver a tornearse cuantas veces se quiera, mientras que el barro "
+        "COCIDO nunca puede rehacerse, solo romperse. Por eso la vasija estropeada del capítulo 18 se rehace "
+        "en el torno y la vasija ya cocida del capítulo 19 se quiebra «de modo que no se pueda remendar más» "
+        "(19:11) — dos señales, una tras otra, y la diferencia entre ellas es el horno. Isaías convierte el "
+        "mismo sustantivo en oración: «nosotros somos el <em>chomer</em>, y tú nuestro alfarero» (64:8)."),
+    "noash": ("sin esperanza",
+        "SIN ESPERANZA, desesperado, darse por vencido — una palabra rara, y en Jeremías 18:12 es la "
+        "respuesta ENTERA del pueblo a Dios: una sola sílaba llana. Las versiones se reparten: RV60 «Es en "
+        "vano»; NVI «De nada sirve»; NWT «¡Es inútil!». ⚠ Nótese exactamente qué se llama sin esperanza. "
+        "Dios acaba de decir, en el mismo aliento, que el resultado NO está fijado — «si esa nación se "
+        "vuelve de su mal, entonces me arrepiento» (18:8) — y ha nombrado la salida: «volveos, cada uno de "
+        "su mal camino» (18:11). Así que <em>no'ash</em> no es un informe sobre sus circunstancias. Es un "
+        "veredicto sobre la oferta, y el capítulo lo presenta como falso."),
+    "yatsar": ("formar",
+        "FORMAR, modelar, dar forma — el verbo del alfarero. Es la palabra para Dios formando al hombre del "
+        "polvo de la tierra (Génesis 2:7), y abre el llamado de Jeremías: «antes que te FORMARA en el "
+        "vientre, te conocí» (1:5). Jeremías lo convierte después en toda una señal en la casa del alfarero, "
+        "donde el barro estropeado en la mano del alfarero se rehace (cap. 18) — la nación como barro bajo "
+        "una mano que puede hacer y deshacer. ⚠ Y la señal tiene un aguijón que el español puede esconder: "
+        "después de llamar al obrero <em>ha-YOTSER</em>, «el alfarero», cuatro veces (18:2, 3, 4, 6), Dios "
+        "usa la misma raíz de sí mismo como participio y con otro objeto: «mirad, estoy FORMANDO el mal "
+        "contra vosotros» (18:11). El alfarero sigue en el torno; lo que ahora está en el torno es esto."),
+    "nacham": ("consolar / arrepentirse",
+        "CONSOLAR — y lamentar. La esperanza del nombre de Noé (Génesis 5:29) vuelve como el pesar de Dios "
+        "(6:6): una raíz, dos estados de ánimo opuestos. ⚠ En Jeremías 18 no es ni un nombre ni un estado de "
+        "ánimo, sino una POLÍTICA DECLARADA, dos veces: «si esa nación se vuelve de su mal… entonces me "
+        "ARREPIENTO del mal que pensaba hacerle» (18:8), y la misma maquinaria en sentido contrario para una "
+        "nación que deja de escuchar (18:10). Ese es el gozne del capítulo del alfarero: la imagen se lee "
+        "normalmente como pura soberanía, pero el oráculo construido sobre ella es condicional, y "
+        "<em>nacham</em> es la palabra que lo hace así."),
+    "shachat": ("arruinar",
+        "ARRUINAR — el verbo boomerang del diluvio: la tierra se arruinó a sí misma, y Dios completa la "
+        "ruina (Génesis 6:11-13). ⚠ Vuelve en Jeremías 18:4, de la vasija que se estropea bajo la mano del "
+        "alfarero: RV60 lo suaviza a «se echó a perder», que es lo que diría un artesano, pero el hebreo es "
+        "la palabra del diluvio, y esta traducción conserva «se arruinó» para que el eco siga oyéndose. Lo "
+        "que se arruina en Génesis queda destruido; lo que se arruina en el torno se vuelve a tornear."),
+    "chashav": ("pensar / designar",
+        "PENSAR, planear, calcular, proponerse — el verbo del propósito deliberado (es también la palabra "
+        "de la contabilidad: contar algo a la cuenta de alguien, como en Génesis 15:6, «le fue contado por "
+        "justicia»). Génesis 50:20 lo usa DOS veces, de dos agentes distintos, sobre un mismo hecho: "
+        "«vosotros PENSASTEIS mal contra mí; Dios lo PENSÓ para bien». ⚠ Jeremías 18 corre la misma raíz "
+        "cuatro veces en un capítulo, y la secuencia es la trama en miniatura: el mal que Dios PENSÓ y puede "
+        "dejar (18:8); el DESIGNIO que Dios está pensando ahora (18:11); «nuestros propios DESIGNIOS», que "
+        "el pueblo prefiere (18:12); y por fin «pensemos DESIGNIOS contra Jeremías» (18:18). Dios piensa, el "
+        "pueblo contrapiensa, y luego apuntan uno contra el hombre que se lo dijo."),
+    "shuv": ("volver / arrepentirse",
+        "VOLVER, volverse atrás, arrepentirse — el verbo central de los profetas. «Volveos (<em>shuvu</em>) "
+        "a mí, y yo me volveré (<em>ashuvah</em>) a vosotros» (Zacarías 1:3) hace del arrepentimiento algo "
+        "recíproco: no una obra que gana el favor de Dios, sino un volverse que Dios mismo inicia y "
+        "responde. Su sustantivo <em>teshuvah</em> es la palabra hebrea para arrepentimiento hasta hoy. "
+        "⚠ En Jeremías 18 el PRIMER volverse del capítulo no es el de la nación: es el del alfarero, que "
+        "«volvió» y rehizo la vasija (18:4), antes de que se le pida a nadie volverse (18:8, 11)."),
+}
+
+ENCYCLOPEDIA_ES = {
+    "potter": ("El alfarero",
+        "El oficio más común del mundo antiguo, y el que los profetas usan más a menudo cuando quieren decir "
+        "algo sobre Dios y una nación. La cerámica es también lo más abundante que los arqueólogos "
+        "desenterran en el Levante — el barro cocido es prácticamente inmortal bajo tierra —, y por eso la "
+        "datación relativa de casi todo yacimiento descansa en la tipología cerámica: el perfil del borde de "
+        "una olla puede fechar un suelo. ⚠ La fuerza de la metáfora está casi toda en el PROCEDIMIENTO, así "
+        "que vale la pena saber cómo se hacía el trabajo.<br><br>"
+        "<strong>Cómo se trabajaba.</strong> El barro se excavaba, se remojaba y se dejaba reposar para que "
+        "la arenilla y las piedrecillas se fueran al fondo; luego se AMASABA — con las manos o con los pies "
+        "— para sacarle el aire. Esa preparación no es esmero: una bolsa de aire atrapada o una piedra sin "
+        "notar es precisamente lo que hace que una vasija salga mal después, torciendo la pared bajo la mano "
+        "o reventándola en el horno. El barro se torneaba sobre lo que el hebreo llama <em>ovnayim</em> "
+        "(Jeremías 18:3), un DUAL que significa literalmente «las dos piedras»: una piedra inferior girada "
+        "con la mano o el pie que mueve una piedra superior sobre un pivote. Se han excavado pares de "
+        "piedras de torno de esta clase en yacimientos del Levante, junto con hornos y los vertederos de "
+        "piezas mal cocidas que los especialistas llaman «desechos de horno» — el residuo físico de una "
+        "vasija «estropeada en la mano del alfarero». La cocción rondaba los 700–1000 °C. ⚠ El ÚNICO otro "
+        "lugar donde aparece <em>ovnayim</em> en la Biblia es Éxodo 1:16, donde es la SILLA DE PARTOS. Y "
+        "como el oficio necesita yacimientos de barro, agua y combustible, y como un horno es un peligro de "
+        "humo y fuego, los talleres se situaban en el borde de la ciudad — por eso Jeremías es enviado ABAJO "
+        "a la casa del alfarero (18:2) y luego afuera, a la Puerta de los Tiestos (19:2).<br><br>"
+        "<strong>Por qué la imagen encaja.</strong> Tres cosas a la vez. El alfarero tiene AUTORIDAD total "
+        "sobre el terrón — pero no lo está destruyendo, lo está haciendo bien; el barro estropeado se "
+        "rehace, no se castiga. Una vasija es ÚTIL, no ornamental: existe para contener algo. Y — la parte "
+        "que sostiene Jeremías 18 — el barro RESISTE de verdad: una piedra o una burbuja en el material "
+        "realmente se niega a la forma, y por eso el oráculo construido sobre la imagen es condicional («si "
+        "esa nación se vuelve», 18:8) y no fatalista. ⚠ Sobre todo, el oficio tiene un PLAZO. El barro "
+        "húmedo puede aplastarse y volver a tornearse cuantas veces se quiera; el barro cocido nunca puede "
+        "rehacerse, solo romperse. Ese único hecho físico es toda la diferencia entre las dos señales "
+        "seguidas de Jeremías: el capítulo 18 es barro blando rehecho en el torno, y el 19 es una vasija "
+        "COCIDA quebrada «de modo que no se pueda remendar más» (19:11). La ventana para rehacer es la "
+        "ventana anterior al horno."),
+    "baal": ("Baal",
+        "El dios de la tormenta de los cananeos y fenicios, y el rival que los profetas hebreos nombran más "
+        "que a ningún otro. <em>Ba'al</em> es un sustantivo hebreo corriente antes de ser un nombre — "
+        "«dueño, señor, marido» —, y los profetas lo aprovechan: Oseas hace decir a Dios que Israel lo "
+        "llamará «mi marido» y «ya no me llamará mi Baal» (2:16). Como dios es HADAD, señor de la lluvia, "
+        "del trueno y de la fertilidad de los campos, con el título de «el que cabalga sobre las nubes»; su "
+        "padre es El, su hermana y consorte Anat, y sus enemigos Yam (el Mar) y Mot (la Muerte). ⚠ El Salmo "
+        "68:4 da «el que cabalga sobre las nubes» a Jehová — la Biblia toma el epíteto propio del dios de la "
+        "tormenta y lo reasigna.<br><br>"
+        "<strong>La arqueología.</strong> Casi todo lo que sabemos del culto de Baal desde el lado de sus "
+        "PROPIOS adoradores viene de un hallazgo: en 1928 el arado de un campesino dio con una tumba en "
+        "Minet el-Beida, en la costa siria, y la excavación desde 1929 bajo CLAUDE SCHAEFFER sacó a la luz "
+        "la ciudad de UGARIT (Ras Shamra) y su archivo — tablillas de barro en un cuneiforme alfabético "
+        "hasta entonces desconocido, escritas c. 1400–1200 a. C., entre ellas los poemas que hoy se llaman "
+        "el CICLO DE BAAL. Antes de Ugarit, Baal se conocía sobre todo por la polémica de sus adversarios. "
+        "⚠ Pero hay que decir la distancia: Ugarit es del Bronce Final y está a unos 400 km al norte de "
+        "Jerusalén, mientras Jeremías es del Hierro en Judá, cinco siglos después; el culto cambió, y las "
+        "tablillas describen su forma siria, no la de Judá. Objetos: figurillas de bronce del «dios que "
+        "golpea» — un varón a zancadas con el brazo alzado — aparecen por todo el Levante, y una célebre "
+        "estela de piedra caliza de Ugarit (hoy en el Louvre) muestra al dios con la maza en alto y una "
+        "lanza cuya punta baja como un rayo. ⚠ Identificar una figurilla concreta como Baal EN PARTICULAR "
+        "es casi siempre una inferencia iconográfica, no algo inscrito en el objeto.<br><br>"
+        "<strong>En qué consistía el culto.</strong> Lugares altos (<em>bamot</em>), piedras erguidas, "
+        "altares e incienso — la acusación de Jeremías es «quemar incienso a Baal» (7:9) — y, como lo "
+        "declara la Biblia, sacrificio de niños por fuego en Tofet, en el valle de Ben-Hinom (19:5; 32:35 "
+        "sitúa allí «los lugares altos de Baal»). El desafío de Elías en el Carmelo está construido como "
+        "polémica contra el dios de la tormenta: las pruebas son FUEGO y luego LLUVIA, lo propio de Baal, y "
+        "él no da ninguna de las dos. Dos hallazgos quedan cerca de la puerta de Jeremías. Miles de "
+        "FIGURILLAS DE PILAR JUDAÍTAS — una cabeza femenina moldeada sobre un cuerpo en forma de pilar — "
+        "salen de casas corrientes de Judá de los siglos VIII y VII, Jerusalén incluida: religión doméstica "
+        "exactamente en el siglo de Jeremías; ⚠ para qué SERVÍAN (¿Aserá? ¿un amuleto de fertilidad? ¿un "
+        "exvoto?) está genuinamente discutido. Y las inscripciones de KUNTILLET AJRUD (c. 800 a. C., en el "
+        "Sinaí) dicen «Jehová de Samaria y su aserá» — la cara epigráfica de la componenda que los profetas "
+        "atacan; ⚠ si «su aserá» significa la diosa o un objeto de culto de madera sigue sin resolverse. El "
+        "Tofet de Jerusalén nunca se ha identificado con seguridad en el terreno. Los tofets fenicios y "
+        "púnicos — Cartago sobre todo, con Motia, Sulcis y Tharros — sí contienen miles de urnas con huesos "
+        "incinerados de niños y de animales, la evidencia física más fuerte de la práctica en todo el mundo "
+        "fenicio; ⚠ y su lectura está ferozmente discutida: algunos especialistas los toman por cementerios "
+        "de niños muertos por causas naturales, y los estudios dentales y esqueléticos de edad se argumentan "
+        "en los dos sentidos. Esta biblioteca no emite un voto.<br><br>"
+        "⚠ <strong>Nota para Jeremías 18.</strong> Baal NO se nombra en el capítulo de la casa del alfarero. "
+        "Solo dice que el pueblo «quema incienso a la nada» (18:15), la abreviatura habitual de los profetas "
+        "para un ídolo. El dios se nombra a un lado y al otro — 2:8, 19:5, 23:13, 32:29-35 — así que la "
+        "identificación es razonable, pero son los capítulos vecinos los que aportan el nombre, no este."),
+}
+
+# Places, so the Spanish atlas has real content rather than an empty page. The
+# coordinates live on the English entry and are language-neutral; only the prose
+# needs writing.
+ENCYCLOPEDIA_ES["jerusalem"] = ("Jerusalén",
+    "La ciudad en el centro de la Biblia hebrea: capital de David, sede del templo, y — en Jeremías — "
+    "la ciudad cuya destrucción el profeta pasó cuarenta años anunciando. Está en la cresta de las "
+    "montañas de Judá, a unos 750 m de altura, con el valle del Cedrón al oriente y el valle de "
+    "Ben-Hinom al sur y al occidente. ⚠ Ese segundo valle importa para el capítulo del alfarero: por "
+    "allí salía la Puerta de los Tiestos, junto a los talleres de cerámica y sus vertederos, y allí "
+    "estaban los lugares altos donde se quemaban niños (Jeremías 19:2, 5). El nombre griego de ese "
+    "valle, <em>Gehena</em>, se volvió una palabra para el juicio. Cayó ante Babilonia en 587 a. C., "
+    "como Jeremías había dicho.")
+ENCYCLOPEDIA_ES["anathoth"] = ("Anatot",
+    "El pueblo natal de Jeremías, a unos 5 km al nordeste de Jerusalén, en territorio de Benjamín — "
+    "una aldea sacerdotal (Josué 21:18), lo que explica la primera línea del libro: «de los sacerdotes "
+    "que estaban en Anatot». ⚠ Que el profeta venga de una familia sacerdotal da filo a su pleito con "
+    "el templo: no es un forastero atacando una institución ajena, sino alguien de dentro. Sus propios "
+    "vecinos de Anatot conspiran contra él (11:21), y años más tarde, con la invasión ya encima, "
+    "comprará un campo allí como señal de que habrá regreso (32:6-15).")
+ENCYCLOPEDIA_ES["babylon"] = ("Babilonia",
+    "La gran ciudad del Éufrates, en la llanura de la actual Irak, y el imperio que Jeremías nombra "
+    "como el instrumento del juicio sobre Judá. Bajo Nabucodonosor II tomó Jerusalén, quemó el templo "
+    "y se llevó cautivo al pueblo en 587 a. C. ⚠ Jeremías hace las dos cosas a la vez: anuncia que "
+    "Babilonia vendrá y que hay que someterse a ella, y anuncia también que Babilonia misma caerá "
+    "(capítulos 50-51) — lo que le costó ser tratado como traidor por unos y como falso profeta por "
+    "otros. Mucho después, el Apocalipsis convierte el nombre en una cifra.")
