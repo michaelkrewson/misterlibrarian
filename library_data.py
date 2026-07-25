@@ -56,6 +56,10 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ("peirazo", "peirazō", "πειράζω", "peirazō", "To TEST — and to TEMPT. One Greek word covers both English ones: to put to the proof (as metal is assayed, or as God 'tested' Abraham) and to solicit toward evil. ⚠ Matthew 4:1 needs both senses at once and English cannot hold them: the devil is tempting, and the Spirit who leads Jesus there is proving. This translation reads 'tested' because the passage Jesus quotes in reply is itself about a testing — Deuteronomy 8:2, 'to test you, to know what was in your heart' — while noting that the other sense is live in the same word. The intensified form ekpeirazō appears three verses later in Jesus' answer, pointed the other way: the one thing forbidden is for a man to test GOD (Deuteronomy 6:16, 'as you tested him at Massah' — Massah being simply the Hebrew word for 'testing', a place named after the offence).", ("Matthew", 4, 1)),
+    ("diabolos", "diabolos", "διάβολος", "diabolos", "THE SLANDERER — from dia-ballō, to throw across, hence to accuse falsely; the Greek Old Testament's word for the Hebrew SATAN, 'the adversary'. English 'devil' descends from it directly. ⚠ Matthew 4 uses three names in eleven verses and they are not interchangeable: 'the diabolos' (vv1, 5, 8, 11), the accuser; 'the TEMPTER' (ho peirazōn, v3), naming him by what he is doing; and 'SATAN' (v10), the Hebrew adversary-name, which is the one Jesus uses when he finally addresses him. ⚠ Note what the passage does NOT do: it never explains where he came from, and when he claims the kingdoms of the world are his to give (v9), Jesus refuses the offer without disputing the claim.", ("Matthew", 4, 1)),
+    ("amphiblestron", "amphiblēstron", "ἀμφίβληστρον", "amphiblēstron", "A CASTING NET — from amphi-ballō, to throw around: the circular hand-net, weighted at its rim, that a single fisherman flings over a shoal in shallow water and hauls in by a cord. ⚠ Matthew uses it once, of Simon and Andrew (4:18), and then switches to the ordinary word diktya, 'nets', for James and John (4:20-21), who are in a BOAT with their FATHER, mending tackle (Mark adds their hired men). The two words quietly sketch two rungs of the same trade: two men wading with a hand-net, and a family business with a hull and staff. Most versions flatten both to 'nets'; this translation keeps 'a net' for the one thrown and 'the nets' for the gear left behind.", ("Matthew", 4, 18)),
+    ("seleniazomai", "selēniazomai", "σεληνιάζομαι", "selēniazomai", "To be MOONSTRUCK — from selēnē, the moon: afflicted, as antiquity supposed, by its phases, which is how the ancient world explained the falling sickness. ⚠ The KJV reads 'those which were LUNATICK', the same idea carried by Latin luna; the NIV and NWT modernize to 'those having seizures' / 'epileptics'. This translation keeps 'moonstruck' — it is what the word says, and it leaves the reader inside the explanation the text was written with instead of quietly substituting ours. Note that Matthew 4:24 lists 'demon-possessed and moonstruck and paralysed' as three separate categories; he is not equating them.", ("Matthew", 4, 24)),
     ("metanoia", "metanoeō / metanoia", "μετανοέω", "metanoeō", "To CHANGE THE MIND — meta ('after, differently') + noeō ('to think'): to think again, and so to turn. Behind the Greek stands Hebrew shuv, to TURN AROUND, the prophets' own summons, so the word asks for a reversal of direction and not a mood of regret. ⚠ It is also the most consequential translation dispute in Christian history. The Vulgate rendered it poenitentiam agite, 'do penance', which is what Douay-Rheims still prints at Matthew 3:2 — and in 1516 Erasmus argued from the Greek that the word means a change of mind rather than an act of satisfaction. Luther read him; the FIRST of the Ninety-Five Theses is an argument about this verb. KJV/Geneva/ASV/NIV/NWT all read 'repent'. Note what John does NOT let it stay inward: 'produce fruit worthy of repentance' (3:8).", ("Matthew", 3, 2)),
     ("ouranos", "ouranos", "οὐρανός", "ouranos", "HEAVEN, sky — and in Matthew almost always PLURAL, 'the heavens', because Hebrew shamayim is plural. ⚠ Matthew says 'the kingdom of the HEAVENS' about thirty times and 'the kingdom of God' barely at all, where Mark and Luke say the opposite; the usual explanation is Jewish reverence, 'heaven' standing in for the divine name (as in 'I have sinned against heaven'). KJV/NIV/Douay flatten it to a singular 'kingdom of heaven'; ASV and NWT keep the plural, and this translation has kept it since the Sermon on the Mount. The plural also frames the baptism: the voice comes 'out of the heavens' (3:17), which have just been 'opened' (3:16).", ("Matthew", 3, 2)),
     ("baptizo", "baptizō", "βαπτίζω", "baptizō", "To DIP, immerse, plunge — an ordinary Greek word used of sinking ships and of dyeing cloth, which every English Bible transliterates instead of translating, so that a reader has to be told what it means. ⚠ What was new in John's use of it was not the water: ritual washing was prescribed by the Law, practised daily at Qumran, and required of a Gentile converting to Judaism. But those washings were SELF-administered and REPEATED. John's is done BY ANOTHER, happens ONCE, and is demanded of JEWS — he treats the children of Abraham as though they needed the convert's bath, which is exactly the offence he names at 3:9. His own baptism is 'for repentance' with water; he says the one coming will baptize 'with the Holy Spirit and fire' (3:11).", ("Matthew", 3, 6)),
@@ -1104,6 +1108,27 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="satan", name="Satan", kind="person", aliases=["Satan"],
+         desc="'The ADVERSARY' — Hebrew ha-satan is not originally a name but a job description, the one who opposes or brings the accusation; in Job he appears among the sons of God as a kind of prosecutor, and in Zechariah 3 he stands to accuse the high priest. The Greek Old Testament renders it DIABOLOS, 'slanderer', which is where English 'devil' comes from. ⚠ In Matthew 4 both words sit side by side: the narrator calls him 'the devil' and 'the tempter', and when Jesus finally addresses him directly he uses the Hebrew adversary-name — 'Go away, SATAN' (4:10). ⚠ Matthew then puts those same words in Jesus' mouth once more, at 16:23, to PETER, when the disciple tells him he must not suffer: 'Go behind me, Satan.' The name attaches not to a monster but to whoever offers the shortcut. Scripture is markedly reticent about his origin; the familiar biography (a fallen angel of light) is assembled largely from Isaiah 14 and Ezekiel 28, passages whose stated subjects are the kings of Babylon and Tyre — a later synthesis rather than a claim of the text.",
+         refs=[("Matthew", 4, 10)]),
+    dict(slug="sea-of-galilee", name="The Sea of Galilee", kind="place",
+         aliases=["sea of Galilee"],
+         coords=(32.80, 35.59, 0.35),
+         desc="A freshwater lake about thirteen miles long and eight across, fed and drained by the Jordan, lying some 700 feet BELOW sea level in a basin ringed by hills — which is why the sudden squalls the Gospels describe are a real feature of the place and not a literary device: cool air spilling down the ravines onto warm water raises a violent chop in minutes. It carries four names in the Bible (the Sea of Galilee, of Tiberias, of Chinnereth, and the lake of Gennesaret) and supported a serious fishing industry, with salting works at Magdala and a fleet whose gear the Gospels describe in detail. ⚠ Almost all of Jesus' recorded ministry happens within a short walk of this shoreline: Capernaum, where he settled (Matthew 4:13), sits on its north-west shore, and the towns he taught in ring its northern end. The 'mountain' of the Sermon is one of the slopes above it.",
+         refs=[("Matthew", 4, 18)]),
+    dict(slug="decapolis", name="The Decapolis", kind="place",
+         aliases=["Decapolis"],
+         coords=(32.40, 35.90, 1.6),
+         desc="'The TEN CITIES' — a loose league of Greek-speaking cities east and south-east of the Sea of Galilee (Pliny's list includes Scythopolis, Gadara, Gerasa, Pella, Philadelphia — modern Amman — and Damascus), founded or refounded in the wake of Alexander and organized under Rome. They were Hellenistic in language, temple and civic life: theatres, colonnaded streets, coins with Greek legends. ⚠ Their presence at Matthew 4:25 is the point of the verse. Eight verses earlier Matthew quoted Isaiah's 'Galilee of the NATIONS', and now the crowd following Jesus includes people out of a Gentile federation — the Gospel that opened with foreign astrologers is already drawing a foreign public, long before its closing command to 'make disciples of all nations'. The ruins of several of the ten (Jerash/Gerasa above all) are among the best-preserved Roman cities anywhere.",
+         refs=[("Matthew", 4, 25)]),
+    dict(slug="james-son-of-zebedee", name="James son of Zebedee", kind="person",
+         aliases=["James the son of Zebedee"],
+         desc="One of the four fishermen called at the lake, and with his brother JOHN and with Peter one of the three taken apart at the transfiguration, at the raising of Jairus' daughter, and in Gethsemane. Their father ZEBEDEE had a boat and (Mark 1:20) hired men, so the family was in business rather than subsistence; Jesus nicknamed the pair 'Boanerges', sons of thunder, which the Gospels then illustrate — they want to call fire down on a Samaritan village, and they ask for the two best seats in the kingdom. ⚠ He is the first of the Twelve to be killed: Herod Agrippa I had him beheaded (Acts 12:2), which makes him the only apostle whose death the New Testament actually records. Not to be confused with James the brother of Jesus, who led the Jerusalem church and wrote the letter, nor with James son of Alphaeus, also one of the Twelve.",
+         refs=[("Matthew", 4, 21)]),
+    dict(slug="john-apostle", name="John son of Zebedee", kind="person",
+         aliases=["John his brother"],
+         desc="The fisherman brother of JAMES, called with him from Zebedee's boat (Matthew 4:21), and one of the inner three. ⚠ He is NOT John the Baptist, who is the 'John' of Matthew 3 and of 4:12 — a collision this library handles by giving each entry its own verses rather than letting either claim the bare name. Tradition, from Irenaeus onward, identifies him with 'the disciple whom Jesus loved' in the Fourth Gospel, and so with the author of that Gospel, of the three letters of John, and (more disputed) of Revelation; the Gospel itself never names him, which is either modesty or a sign that the identification is later inference. Paul lists him among the 'pillars' at Jerusalem (Galatians 2:9), and Acts pairs him almost silently with Peter through the early chapters. He is remembered as the one apostle who was not martyred, dying old at Ephesus.",
+         refs=[("Matthew", 4, 21)]),
     dict(slug="jordan", name="The Jordan", kind="place", aliases=["Jordan"],
          coords=(31.90, 35.55, 1.2),
          desc="The river of the Israelite imagination, and a modest one: it falls from the Sea of Galilee to the Dead Sea in about 105 miles of channel, dropping below sea level the whole way, muddy and in most places narrow enough to wade. ⚠ Its meaning is entirely about CROSSING. Israel entered the land through it (Joshua 3), Elijah divided it and was taken up beyond it, Elisha sent Naaman to wash in it seven times — so a prophet dressed as Elijah, calling the nation out of its towns to be immersed in this particular water, is staging the entry into the land again from the outside. Matthew has the crowds come from Jerusalem and all Judea to a stretch of it 'in the wilderness' rather than to the temple twelve miles away, which is itself an argument. ⚠ Matthew does not name the spot; the traditional site (Bethany beyond the Jordan, on the east bank near Jericho) rests on John 1:28 and on Byzantine pilgrim accounts, and the map pin here covers the lower river rather than claiming a place the text leaves unnamed.",
@@ -1588,7 +1613,7 @@ ENCYCLOPEDIA = [
               "Prophet, calls himself only 'a voice crying in the wilderness' (Isaiah 40:3), and points his own "
               "disciples to 'the Lamb of God.' (The Gospel of John never names its own author, so every 'John' in "
               "this book is the Baptist.)",
-         refs=[("Matthew", 3, 1), ("John", 1, 6), ("John", 1, 15), ("John", 1, 19), ("John", 1, 26), ("John", 1, 29), ("John", 1, 35), ("Acts", 1, 5)],
+         refs=[("Matthew", 3, 1), ("Matthew", 4, 12), ("John", 1, 6), ("John", 1, 15), ("John", 1, 19), ("John", 1, 26), ("John", 1, 29), ("John", 1, 35), ("Acts", 1, 5)],
          videos=[]),
     dict(slug="jesus", name="Jesus", kind="person", aliases=["Jesus"],
          desc="Jesus of Nazareth, son of Joseph — the Word made flesh (1:14). Hailed by the Baptist as 'the Lamb of "
@@ -1602,11 +1627,11 @@ ENCYCLOPEDIA = [
     dict(slug="andrew", name="Andrew", kind="person", aliases=["Andrew"],
          desc="Simon Peter's brother and one of the Baptist's disciples — the first to follow Jesus. He finds his "
               "brother with the words 'We have found the Messiah.'",
-         refs=[("John", 1, 40), ("John", 1, 44)], videos=[]),
+         refs=[("Matthew", 4, 18), ("John", 1, 40), ("John", 1, 44)], videos=[]),
     dict(slug="simon-peter", name="Simon Peter", kind="person", aliases=["Simon Peter", "Simon", "Cephas", "Peter"],
          desc="Simon son of John, Andrew's brother, whom Jesus renames on sight: Cephas — Aramaic kepha, 'rock,' "
               "rendered into Greek as Petros.",
-         refs=[("John", 1, 40), ("John", 1, 41), ("John", 1, 42)], videos=[]),
+         refs=[("Matthew", 4, 18), ("John", 1, 40), ("John", 1, 41), ("John", 1, 42)], videos=[]),
     dict(slug="philip", name="Philip", kind="person", aliases=["Philip"],
          desc="From Bethsaida, the town of Andrew and Peter. Called by Jesus with 'Follow me,' he in turn finds "
               "Nathanael and answers his doubt with 'Come and see.'",
@@ -1647,7 +1672,7 @@ ENCYCLOPEDIA = [
               "town that saw the most and believed the least: 'more bearable for Sodom' (Matthew 11:23-24). The "
               "excavated site — the basalt-and-limestone synagogue and the house-church over Peter's house — is "
               "among the best-preserved Gospel settings anywhere.",
-         refs=[("John", 2, 12)],
+         refs=[("Matthew", 4, 13), ("John", 2, 12)],
          coords=(32.8809, 35.5753, 0.06),
          modern="Tell Hum (Capernaum), north shore of the Sea of Galilee, Israel",
          videos=[("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
@@ -3895,6 +3920,19 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (("Matthew", 4, 3), ("Matthew", 3, 9), "'these stones' — John says God can raise children to Abraham from them; the tempter says the Son can make bread of them. Same noun, same demonstrative, same wilderness"),
+    (("Matthew", 4, 3), ("Matthew", 3, 17), "'IF you are the Son of God' — the tempter's first words answer the last thing the voice from the heavens said"),
+    (("Matthew", 4, 10), ("Matthew", 2, 11), "proskyneō — the magi bowed to the child, Herod lied about wanting to, and now the devil asks for it outright; Jesus answers with the one verse that names its object"),
+    (("Matthew", 4, 12), ("Matthew", 2, 14), "anachōreō — the fourth withdrawal: as a child he was carried away from a ruler, and as a man he withdraws from one"),
+    (("Matthew", 4, 17), ("Matthew", 3, 2), "word for word the Baptist's sentence, taken up by the king immediately after the Baptist is arrested for saying it"),
+    (("Matthew", 4, 11), ("Matthew", 3, 15), "aphiēmi — 'allow it', and John allowed him; here the devil 'leaves' him. One verb, two very different releases"),
+    (("Matthew", 4, 4), ("Genesis", 1, 27), "ha-adam, 'the human' — Deuteronomy's word for the creature who does not live on bread alone is the word Genesis uses for the creature made in the image"),
+    (("Matthew", 4, 2), ("Exodus", 34, 28), "'forty days and forty nights — bread he did not eat': the phrase Matthew alone adds is Moses' on the mountain, and the first thing offered afterward is bread"),
+    (("Matthew", 4, 4), ("Deuteronomy", 8, 3), "'not on bread alone shall the human live' — quoted out of the passage that explains forty years of hunger as a testing"),
+    (("Matthew", 4, 6), ("Psalms", 91, 11), "the devil's quotation drops the middle clause, 'to guard you in all your ways' — the words that would have answered him"),
+    (("Matthew", 4, 7), ("Deuteronomy", 6, 16), "'you shall not test Jehovah your God, as you tested him at Massah' — Massah being the Hebrew for 'testing', a place named after the offence"),
+    (("Matthew", 4, 10), ("Deuteronomy", 6, 13), "'you shall fear Jehovah your God and him shall you serve' — Matthew reads 'bow before' for 'fear' and adds 'alone', which is the hinge of the reply"),
+    (("Matthew", 4, 16), ("Isaiah", 9, 1), "'the people walking in darkness have seen a great light' — Hebrew 8:23-9:1, and where the Hebrew has them WALKING Matthew has them SITTING"),
     (("Matthew", 3, 4), ("2 Kings", 1, 8), "the hairy man with a leather belt about his waist — the clothes that made Ahaziah's messengers say 'It is Elijah the Tishbite'; John is dressed as the prophet Malachi promised, and this library renders both verses the same way so the quotation is audible in English"),
     (("Matthew", 3, 12), ("Psalms", 1, 4), "the threshing floor at the head of the Psalms — the wicked as chaff (motz) the wind drives away — in the mouth of the last prophet before Jesus"),
     (("Matthew", 3, 17), ("Genesis", 22, 2), "'your son, your only one, whom you love' — the Greek Old Testament renders that 'your BELOVED son', which is the overtone in 'this is my beloved Son'"),
@@ -4827,6 +4865,8 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ["Matthew", 4, 4, "“Not on bread alone shall the human live, but on every word that comes out through the mouth of God.” Answered out of Deuteronomy 8 — the chapter that calls forty years of hunger a testing."],
+    ["Matthew", 4, 19, "“Come after me, and I will make you fishers of men.” Said to two men with a net in their hands; they left it mid-cast."],
     ["Matthew", 3, 2, "“Repent, for the kingdom of the heavens has drawn near.” The herald's whole sermon in eight words — and, word for word, the sentence Jesus will begin with at 4:17."],
     ["Matthew", 3, 17, "“This is my beloved Son, in whom I am well pleased.” One sentence assembled out of three: the king of Psalm 2, the only son of Genesis 22, the servant of Isaiah 42."],
     ["Matthew", 2, 2, "“Where is the one born king of the Jews?” The first people in this Gospel to come looking for him are foreigners with a star and no Scripture — and they ask it in the palace of a king who was appointed, not born."],
@@ -5994,6 +6034,9 @@ CHRON_EVENTS = [
     dict(era="gospels", am="—", trad="c. AD 27–28", event="The first sign at Cana; the temple cleared at the first Passover",
          note="'Forty-six years this temple has been under building' (John 2:20): Josephus dates Herod's rebuild from 20/19 BC — one of the Gospels' few countable dates, and a peg for the whole ministry.",
          ref=("John", 2, 20)),
+    dict(era="gospels", am="—", trad="c. AD 28–29", event="The testing in the wilderness; Capernaum; the first four disciples",
+         note="Forty days and forty nights in the Judean wilderness, and three temptations answered out of Deuteronomy — the book of the wilderness generation. ⚠ Matthew and Luke give the three in a different ORDER (Matthew: bread, temple, mountain; Luke: bread, mountain, temple), and neither claims to be sequencing them. Then John the Baptist is arrested and Jesus withdraws north, leaving Nazareth for CAPERNAUM on the lake — the base for nearly everything that follows — and begins preaching the identical sentence John had been preaching. Four fishermen are called off two boats: Simon Peter and Andrew, James and John.",
+         ref=("Matthew", 4, 17)),
     dict(era="gospels", am="—", trad="c. AD 28–30", event="The Sermon on the Mount — the Happy-sayings; 'you have heard… but I say'; 'love your enemies'",
          note="Matthew 5–7, the first of the Gospel's five great discourses, on a hillside above the Sea of Galilee's northwest shore (tradition: the Mount of Beatitudes, above Tabgha). Undatable to a year within the ministry — placed here mid-course, where Matthew places it: after the calling of the first disciples, before the sending of the Twelve.",
          ref=("Matthew", 5, 1)),
