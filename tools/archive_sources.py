@@ -110,6 +110,7 @@ SBLGNT_BOOKS = {
     "1TI": ("1 Timothy", 6),
     "2TI": ("2 Timothy", 4),
     "TIT": ("Titus", 3),
+    "PHM": ("Philemon", 1),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
