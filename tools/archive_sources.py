@@ -33,6 +33,8 @@ from __future__ import annotations
 
 import hashlib
 import json
+import random
+import re
 import sys
 import time
 import urllib.error
@@ -137,6 +139,83 @@ def _sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def _mechon_wholebook_backfill(manifest: dict) -> int:
+    """Fill any Mechon chapter the per-chapter URL scheme cannot reach.
+
+    Mechon's flat scheme is pt{code}{chapter:02d}.htm — TWO digits — so a book
+    with more than 99 chapters has no per-chapter URL for the rest, and every
+    such request 404s. Psalms is the only book in the Bible this affects
+    (100-150), which is why the archive sat 51 psalms short and Psalm 107 could
+    not be checked when Matthew 8 wanted it.
+
+    The fix stays with the SAME source of record rather than introducing a
+    second Hebrew text: Mechon also serves the whole book on one page at
+    pt{code}.htm (Psalms is ~600KB there), and that page is exactly 150
+    <H2>-delimited chapters. We fetch it once and slice.
+
+    Refuses to write anything unless the slice verifies: the chapter count must
+    match the book's known length AND every heading must read "Chapter N" in
+    order. A guessed slice is worse than a gap.
+
+    Each written file is wrapped so it is indistinguishable in USE from a
+    per-chapter fetch — in particular it carries the same
+    "<TITLE>Psalms 107 / Hebrew - English Bible / Mechon-Mamre</TITLE>" line,
+    because reading that title back is how a careless lookup gets caught (a
+    Daniel 7:13 query once silently returned Job 7:13). The manifest records
+    the whole-book URL plus derived_from, so nobody later mistakes these for
+    individual fetches.
+    """
+    need = {}   # code -> [chapter, ...]
+    for code, (_name, n) in MECHON_BOOKS.items():
+        for ch in range(1, n + 1):
+            if ch <= 99:
+                continue          # the per-chapter scheme reaches these
+            dest = OUT / "mechon" / f"pt{code}{ch}.htm"
+            if not (dest.exists() and dest.stat().st_size > 500):
+                need.setdefault(code, []).append(ch)
+    if not need:
+        return 0
+
+    written = 0
+    for code, chapters in need.items():
+        name, n = MECHON_BOOKS[code]
+        url = f"https://mechon-mamre.org/p/pt/pt{code}.htm"
+        print(f"  whole-book backfill: {name} needs {len(chapters)} chapter(s) "
+              f"-> {url}", flush=True)
+        page = _fetch(url).decode("utf-8", "replace")
+        time.sleep(DELAY_S)
+        parts = [p for p in re.split(r"(?=<H2[^>]*>)", page) if re.match(r"<H2", p)]
+        if len(parts) != n:
+            raise SystemExit(f"{name}: whole-book page sliced into {len(parts)} "
+                             f"chapters, expected {n} — refusing to write")
+        for idx, chunk in enumerate(parts, start=1):
+            head = re.search(r"<H2[^>]*>(.*?)</H2>", chunk, re.S)
+            label = re.sub(r"<[^>]+>", "", head.group(1) if head else "").strip()
+            if label.lower() != f"chapter {idx}":
+                raise SystemExit(f"{name}: chapter {idx} heading reads "
+                                 f"{label!r} — refusing to write a guessed slice")
+        for ch in chapters:
+            body = parts[ch - 1]
+            doc = ("<!DOCTYPE HTML>\n<HTML>\n<HEAD>\n"
+                   '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">\n'
+                   f"<TITLE>{name} {ch} / Hebrew - English Bible / Mechon-Mamre</TITLE>\n"
+                   f"<!-- sliced by tools/archive_sources.py from {url} "
+                   f"(Mechon has no per-chapter URL above chapter 99) -->\n"
+                   "</HEAD>\n<BODY>\n" + body + "\n</BODY>\n</HTML>\n")
+            data = doc.encode("utf-8")
+            dest = OUT / "mechon" / f"pt{code}{ch}.htm"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(data)
+            manifest[f"mechon/pt{code}{ch}.htm"] = {
+                "url": url,
+                "derived_from": f"whole-book page, <H2> slice {ch} of {n}",
+                "sha256": _sha256(data), "bytes": len(data),
+                "fetched_at": datetime.now(timezone.utc).isoformat()}
+            written += 1
+        print(f"  wrote {len(chapters)} chapter file(s) for {name}", flush=True)
+    return written
+
+
 def _plan() -> list[tuple[str, str, str]]:
     """-> [(subdir, filename, url), ...] for every chapter of every book."""
     jobs = []
@@ -172,10 +251,14 @@ def fetch_all() -> dict:
         try:
             data = _fetch(url)
         except urllib.error.HTTPError as e:
-            # A supplier that does not serve a chapter at the expected URL
-            # (Mechon-Mamre does not expose Psalms 100-150 at pt26NNN) must
+            # A supplier that does not serve a chapter at the expected URL must
             # NOT wedge the archive of every OTHER book. Skip-and-report a
             # 404; anything else is a real problem and still raises.
+            # NB the known case here — Mechon has no pt26NNN for Psalms
+            # 100-150, because its per-chapter scheme is two-digit — is now
+            # FIXED by _mechon_wholebook_backfill() below, which slices those
+            # chapters out of the whole-book page. This branch stays as the
+            # general safety net, not as the Psalms workaround it once was.
             if e.code == 404:
                 missing += 1
                 print(f"  missing (404), skipping: {rel}", flush=True)
@@ -190,10 +273,11 @@ def fetch_all() -> dict:
         fetched += 1
         print(f"  fetched {rel} ({len(data):,}b)", flush=True)
         time.sleep(DELAY_S)
+    derived = _mechon_wholebook_backfill(manifest)
     MANIFEST.write_text(json.dumps(manifest, indent=1, sort_keys=True))
     print(f"fetch done: {fetched} new, {skipped} already local, "
-          f"{missing} missing-at-source (404), {len(manifest)} in manifest",
-          flush=True)
+          f"{missing} missing-at-source (404), {derived} sliced from a "
+          f"whole-book page, {len(manifest)} in manifest", flush=True)
     return manifest
 
 
