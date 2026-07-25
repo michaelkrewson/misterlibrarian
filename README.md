@@ -53,8 +53,19 @@ python3 build_travel.py --drafts   # local preview incl. draft: true posts
   writes web-sized copies into `travel/img/` and **strips EXIF, including GPS**.
   Git history is forever, so an oversized or geotagged original committed once can't
   really be taken back out. `--check` audits what's already there.
-- **The build refuses to run** on a front-matter typo, a missing summary, or a date
-  that disagrees with the filename. That's on purpose.
+- **The build refuses to run** on a front-matter typo, a missing summary, a date
+  that disagrees with the filename, or a `stars:` value that isn't on the scale.
+  That's on purpose.
+- **Librarian's Stars** — an optional `stars:` (1–5, halves allowed) turns an entry
+  into a review: a rating block under the title, stars on the index card and archive
+  row, and schema.org `Review` markup so search results can show the score. Leave the
+  line out for a notes entry. ⚠ **The scale only works if it discriminates** — the
+  published meaning of each level lives on the About page and *three stars is a good
+  meal*; if everything you enjoyed gets five, the rating stops saying anything.
+- **Readers write in via a form, not comments** (`write.html`, in the nav, plus a nudge
+  at the foot of every entry that pre-fills which one). Deliberate: a comment system on
+  a static site means adopting Disqus's tracking, a GitHub login, or a server to run —
+  and a permanent spam-moderation chore. See the note on `FORM_ENDPOINT`.
 - **Originals go to S3, not git** — `python3 tools/travel_archive.py add <slug> <files…>`
   puts the full-size photos and any video in the durable blob store, so the Desktop
   copies can be deleted. `list` / `check` / `restore` do what they say. Only the

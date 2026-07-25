@@ -38,8 +38,10 @@ import argparse
 import datetime as dt
 import hashlib
 import html
+import json
 import os
 import re
+import urllib.parse
 import xml.sax.saxutils as sax
 
 # ---------------------------------------------------------------- identity ---
@@ -60,6 +62,20 @@ OG_IMAGE = f"{SITE_URL}{BASE}/img/og-default.png"
 # between the two sites. Set to None to disable entirely.
 GOATCOUNTER_CODE = "mistertranslation"
 
+# FormSubmit alias for the "write to the librarian" form — the SAME activated
+# endpoint the Bible site uses, so there was nothing to set up and it worked from
+# the first deploy. Both sites land in one inbox; the _subject line below is what
+# tells them apart. A shared INBOX is not a shared page: this creates no public
+# link between the two sites.
+#
+# Chosen over a comment system deliberately (2026-07-25). A static site has no
+# backend, so real comments would mean Disqus (ads + tracking, which would break
+# the About page's promise), Giscus (readers need a GitHub account — wrong
+# audience for a food blog), or something self-hosted (a server to maintain).
+# All of them also bring an unending spam-moderation chore to a notebook that is
+# written irregularly by design. A form has the reach and none of the upkeep.
+FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(ROOT, "source", "travel")
 OUT_DIR = os.path.join(ROOT, "travel")
@@ -68,9 +84,33 @@ OUT_DIR = os.path.join(ROOT, "travel")
 # better a loud typo than a silently-ignored `sumary:` line.
 KNOWN_KEYS = {
     "title", "date", "place", "tags", "hero", "hero_alt", "hero_credit",
-    "summary", "draft",
+    "summary", "draft", "stars", "subject", "subject_type",
 }
 REQUIRED_KEYS = {"title", "date", "summary"}
+
+# ------------------------------------------------------------ the star scale ---
+#
+# "Librarian's Stars" — 1 to 5, half-steps allowed, and OPTIONAL: a notes entry
+# isn't a review and gets none.
+#
+# ⚠ THE WHOLE POINT IS THAT IT DISCRIMINATES. A scale where everything the writer
+# enjoyed gets 5 carries no information — that is how restaurant ratings on the
+# big sites ended up averaging 4.6 and meaning nothing. So each level is given a
+# published meaning (rendered on the About page), THREE is defined as a good meal
+# rather than a mediocre one, and the labels below are the contract with the
+# reader. Five has to stay rare or it stops being worth printing.
+RATING_LABELS = {
+    5.0: "Worth crossing a city for",
+    4.5: "Very nearly the top of the shelf",
+    4.0: "I'll be going back on purpose",
+    3.5: "Better than good",
+    3.0: "Glad I went",
+    2.5: "Some of it worked",
+    2.0: "Fine. Something was off, or it wasn't for me",
+    1.5: "Disappointing",
+    1.0: "Wouldn't return",
+    0.5: "Avoid",
+}
 
 
 def _asset_ver(rel):
@@ -112,6 +152,7 @@ def header(active=""):
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Latest</a>
     <a href="index.html#archive">Archive</a>
+    <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
     <a href="feed.xml" title="Subscribe by RSS">RSS</a>
   </nav>
@@ -120,8 +161,8 @@ def header(active=""):
 
 FOOTER = f"""<footer class="site-foot">
   <p>{SITE_NAME} — {BLURB}</p>
-  <p><a href="index.html">Latest</a> · <a href="about.html">About</a> ·
-  <a href="feed.xml">RSS</a></p>
+  <p><a href="index.html">Latest</a> · <a href="write.html">Write to the librarian</a> ·
+  <a href="about.html">About</a> · <a href="feed.xml">RSS</a></p>
 </footer>"""
 
 
@@ -154,15 +195,18 @@ def _og(title, desc, url="", image=""):
     return "\n" + "\n".join(tags)
 
 
-def page(title, body, active="", desc="", url="", image=""):
+def page(title, body, active="", desc="", url="", image="", noindex=False):
     css_v = _asset_ver("style.css")
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
+    # noindex is for pages that exist only as a destination (the post-submit
+    # thank-you); they're not content and shouldn't turn up in a search result.
+    r = '\n<meta name="robots" content="noindex,follow"/>' if noindex else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>{html.escape(title)}</title>{d}{_og(title, desc, url, image)}
+<title>{html.escape(title)}</title>{d}{r}{_og(title, desc, url, image)}
 <link rel="icon" href="img/favicon.svg"/>
 <link rel="alternate" type="application/rss+xml" title="{html.escape(SITE_NAME, quote=True)}" href="feed.xml"/>
 <link rel="stylesheet" href="style.css?v={css_v}"/>{_goatcounter()}
@@ -246,8 +290,25 @@ def load_posts(include_drafts=False):
         except ValueError:
             raise ValueError(f"source/travel/{fn}: date must be YYYY-MM-DD")
 
+        # Stars are optional, but a malformed one is an error rather than a
+        # silently-dropped rating — a review that quietly loses its score is worse
+        # than a build that stops.
+        stars = None
+        if meta.get("stars", "").strip():
+            try:
+                stars = float(meta["stars"])
+            except ValueError:
+                raise ValueError(f"source/travel/{fn}: stars must be a number, got {meta['stars']!r}")
+            if stars not in RATING_LABELS:
+                raise ValueError(
+                    f"source/travel/{fn}: stars must be one of "
+                    f"{', '.join(str(k) for k in sorted(RATING_LABELS))} — got {stars}")
+
         tags = [t.strip() for t in meta.get("tags", "").split(",") if t.strip()]
         posts.append({
+            "stars": stars,
+            "subject": meta.get("subject", "").strip(),
+            "subject_type": meta.get("subject_type", "Restaurant").strip() or "Restaurant",
             "slug": slug,
             "file": f"{slug}.html",
             "date": date,
@@ -276,6 +337,60 @@ def _pretty_date(d):
         return d.strftime("%B %-d, %Y")
     except ValueError:
         return d.strftime("%B %d, %Y")
+
+
+def _stars_svg(value, size=22):
+    """Five stars, gold for earned and outlined for not, with a real half state.
+
+    Inline SVG rather than the ★/☆ characters: those render at wildly different
+    weights across platforms and cannot do halves at all. A gradient with a hard
+    stop at 50% gives an exact half star everywhere.
+    """
+    pts = ("M12 2.6l2.95 5.98 6.6.96-4.78 4.66 1.13 6.57L12 17.66 "
+           "6.1 20.77l1.13-6.57L2.45 9.54l6.6-.96z")
+    out = [f'<span class="stars" role="img" aria-label="{value} out of 5 stars">']
+    for i in range(1, 6):
+        if value >= i:
+            fill = "var(--gold)"
+        elif value >= i - 0.5:
+            fill = f"url(#half{size})"
+        else:
+            fill = "none"
+        out.append(
+            f'<svg viewBox="0 0 24 24" width="{size}" height="{size}" aria-hidden="true">'
+            f'<path d="{pts}" fill="{fill}" stroke="var(--gold)" stroke-width="1.4"'
+            f' stroke-linejoin="round"/></svg>')
+    out.append("</span>")
+    return "".join(out)
+
+
+def _half_defs(size=22):
+    """One shared gradient definition per page — referenced by any half star."""
+    return (f'<svg width="0" height="0" aria-hidden="true" focusable="false"><defs>'
+            f'<linearGradient id="half{size}"><stop offset="50%" stop-color="var(--gold)"/>'
+            f'<stop offset="50%" stop-color="transparent"/></linearGradient></defs></svg>')
+
+
+def _rating_block(p, size=22):
+    """The rating as it appears at the top of a post."""
+    if p["stars"] is None:
+        return ""
+    label = RATING_LABELS[p["stars"]]
+    n = int(p["stars"]) if p["stars"] == int(p["stars"]) else p["stars"]
+    return (f'<div class="rating">{_stars_svg(p["stars"], size)}'
+            f'<span class="ratingnum">{n}<span class="of">/5</span></span>'
+            f'<span class="ratinglabel">{html.escape(label)}</span>'
+            f'<a class="ratinghelp" href="about.html#stars" '
+            f'title="What the stars mean">?</a></div>')
+
+
+def _rating_key():
+    """The published meaning of each level, rendered for the About page."""
+    return "\n    ".join(
+        f'<tr><td>{_stars_svg(v, 18)}</td>'
+        f'<td class="rk-num"><strong>{int(v) if v == int(v) else v}</strong></td>'
+        f'<td>{html.escape(RATING_LABELS[v])}</td></tr>'
+        for v in (5.0, 4.0, 3.0, 2.0, 1.0))
 
 
 def _tag_slug(t):
@@ -312,11 +427,14 @@ def _tag_pills(p):
 
 def post_card(p):
     data_tags = " ".join(_tag_slug(t) for t in p["tags"])
-    return f"""<article class="card" data-tags="{html.escape(data_tags, quote=True)}">
+    stars = (f'<div class="cardrating">{_stars_svg(p["stars"], 17)}</div>'
+             if p["stars"] is not None else "")
+    return f"""<article class="card" data-tags="{html.escape(data_tags, quote=True)}" data-stars="{p['stars'] if p['stars'] is not None else -1}">
   <a class="cardlink" href="{p['file']}">
     {_hero_img(p, 'thumb')}
     <div class="cardbody">
       {_meta_line(p)}
+      {stars}
       <h2>{html.escape(p['title'])}</h2>
       <p class="summary">{html.escape(p['summary'])}</p>
       {_tag_pills(p)}
@@ -346,6 +464,8 @@ def build_index(posts):
             f'<li><time datetime="{p["date"].isoformat()}">{p["date"].isoformat()}</time>'
             f'<a href="{p["file"]}">{html.escape(p["title"])}</a>'
             + (f'<span class="place">{html.escape(p["place"])}</span>' if p["place"] else "")
+            + (f'<span class="archstars">{_stars_svg(p["stars"], 14)}</span>'
+               if p["stars"] is not None else "")
             + "</li>"
             for p in posts)
         archive = f"""<section class="panel" id="archive">
@@ -355,11 +475,19 @@ def build_index(posts):
   </ul>
 </section>"""
 
+    rated = [p for p in posts if p["stars"] is not None]
+    sortbar = ("" if len(rated) < 2 else
+               '<div class="sortbar" id="sortbar">Sort: '
+               '<button class="sortbtn on" data-sort="date">Newest</button>'
+               '<button class="sortbtn" data-sort="stars">Highest rated</button></div>')
+
     body = f"""<section class="lede">
   <h1>{html.escape(SITE_NAME)}</h1>
   <p>{html.escape(BLURB)}</p>
 </section>
+{_half_defs(17)}{_half_defs(14)}
 {chips}
+{sortbar}
 <div class="cards" id="cards">
 {cards}
 </div>
@@ -381,6 +509,27 @@ def build_index(posts):
     }});
   }});
 }})();
+
+// Re-order the cards by rating. Pure DOM shuffle — no second page to keep in sync,
+// and unrated entries (a notes post is not a review) always sink to the bottom.
+(function(){{
+  var bar = document.getElementById('sortbar');
+  if (!bar) return;
+  var wrap = document.getElementById('cards');
+  var original = Array.prototype.slice.call(wrap.children);
+  bar.addEventListener('click', function(e){{
+    var b = e.target.closest('.sortbtn');
+    if (!b) return;
+    bar.querySelectorAll('.sortbtn').forEach(function(x){{ x.classList.toggle('on', x === b); }});
+    var list = original.slice();
+    if (b.dataset.sort === 'stars') {{
+      list.sort(function(a, c){{
+        return (parseFloat(c.dataset.stars) || -1) - (parseFloat(a.dataset.stars) || -1);
+      }});
+    }}
+    list.forEach(function(el){{ wrap.appendChild(el); }});
+  }});
+}})();
 </script>"""
     return page(SITE_NAME, body, active="home", desc=BLURB, url="index.html")
 
@@ -397,15 +546,46 @@ def build_post_pages(posts):
             nav.append(f'<a class="next" href="{newer["file"]}">{html.escape(newer["title"])} →</a>')
         navbar = f'<nav class="postnav">{"".join(nav)}</nav>' if nav else ""
 
-        body = f"""<article class="post">
+        # Per-post nudge: the reach of comments without running a comment system.
+        # The title rides along in `re=` so a message says which entry prompted it.
+        respond = (
+            '<div class="respond">'
+            '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
+            f'should have gone instead? <a href="write.html?re={urllib.parse.quote(p["title"])}">'
+            'Write to the librarian</a> — it goes straight to my desk.</p>'
+            '</div>')
+
+        # schema.org Review — this is what puts a star rating on the search
+        # result itself, which matters a great deal for a blog nothing links to.
+        ld = ""
+        if p["stars"] is not None:
+            ld = "\n<script type=\"application/ld+json\">" + json.dumps({
+                "@context": "https://schema.org",
+                "@type": "Review",
+                "itemReviewed": {
+                    "@type": p["subject_type"],
+                    "name": p["subject"] or p["title"],
+                    **({"address": p["place"]} if p["place"] else {}),
+                },
+                "reviewRating": {"@type": "Rating", "ratingValue": p["stars"],
+                                 "bestRating": 5, "worstRating": 1},
+                "author": {"@type": "Person", "name": "Mr. Librarian"},
+                "datePublished": p["date"].isoformat(),
+                "publisher": {"@type": "Organization", "name": SITE_NAME},
+            }, ensure_ascii=False) + "</script>"
+
+        body = f"""<article class="post">{ld}
+  {_half_defs()}
   <h1>{html.escape(p['title'])}</h1>
   {_meta_line(p)}
+  {_rating_block(p)}
   {_hero_img(p)}
   <div class="postbody">
 {p['body']}
   </div>
   {_tag_pills(p)}
 </article>
+{respond}
 {navbar}
 <p class="backlink"><a href="index.html">← All entries</a></p>"""
 
@@ -420,6 +600,7 @@ def build_about():
     body = f"""<section class="lede">
   <h1>About</h1>
 </section>
+{_half_defs(18)}
 <div class="panel prose">
   <p>{html.escape(BLURB)} This is a personal notebook — where we went, what we ate,
   what it cost in time and shoe leather, and whether it was worth it. No sponsored
@@ -427,6 +608,19 @@ def build_about():
 
   <p>Photographs are my own unless credited otherwise. Places and prices were true on
   the day I wrote them down and probably aren't any more — check before you go.</p>
+
+  <h2 id="stars">Librarian's Stars</h2>
+  <p>Entries that review somewhere carry a rating out of five. Notes and odds and ends
+  don't — not everything is a verdict.</p>
+  <p>A scale is worth nothing unless it can say no, and the failure mode is obvious: if
+  everywhere I enjoyed gets five, the number stops carrying information at all. That is
+  how the big review sites ended up averaging four-and-a-half out of five and telling you
+  nothing. So the levels below are a contract. <strong>Three stars is a good meal.</strong>
+  Five is meant to stay rare.</p>
+  <table class="ratingkey">
+    {_rating_key()}
+  </table>
+  <p class="half-note">Half stars exist for the places that sit between two of these.</p>
 
   <h2>Following along</h2>
   <p>There's an <a href="feed.xml">RSS feed</a> if you'd like new entries to come to you.
@@ -438,6 +632,80 @@ def build_about():
 </div>"""
     return page(f"About — {SITE_NAME}", body, active="about",
                 desc=f"About {SITE_NAME}.", url="about.html")
+
+
+def build_write():
+    """The one place readers can reach the librarian.
+
+    A form, not a comment thread — see the note on FORM_ENDPOINT. It posts to
+    FormSubmit, so there is no backend, no database and no cookie. The `re`
+    query parameter carries which entry the reader was reading (set by the
+    per-post nudge) and is filled in client-side.
+    """
+    body = f"""<section class="lede">
+  <h1>Write to the librarian</h1>
+  <p>Been somewhere in here? Think I got it wrong? Know the place I should have gone
+  instead? This goes straight to my desk.</p>
+</section>
+
+<div class="panel">
+  <form action="{FORM_ENDPOINT}" method="POST" class="askform">
+    <input type="hidden" name="_subject" value="The Librarian Abroad — a note from a reader"/>
+    <input type="hidden" name="_template" value="table"/>
+    <input type="hidden" name="_next" value="{SITE_URL}{BASE}/thanks.html"/>
+    <!-- Honeypot: a real person never sees this, a bot fills it in. -->
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+    <label>Which entry is this about? <span class="opt">(optional)</span>
+      <input type="text" name="entry" id="entryField"
+             placeholder="Leave blank if it's not about a particular one"/>
+    </label>
+    <label>Your name <span class="opt">(optional)</span>
+      <input type="text" name="name" placeholder="However you'd like to be known — or leave blank"/>
+    </label>
+    <label>Your email <span class="opt">(optional — only if you'd like a reply)</span>
+      <input type="email" name="email" placeholder="you@example.com"/>
+    </label>
+    <label>Your message <span class="req">(required)</span>
+      <textarea name="message" required rows="7"
+        placeholder="A correction, a recommendation, an argument about the chashu…"></textarea>
+    </label>
+    <button class="btn" type="submit">Send it</button>
+    <p class="formnote">Sending shows a quick captcha to keep the robots out, then brings you
+    back here. Nothing is posted publicly — messages go straight to my inbox, and I read all
+    of them.</p>
+  </form>
+</div>
+
+<script>
+// Pre-fill "which entry" when a reader arrives from the link at the foot of a post.
+// Set with .value (never innerHTML) so a crafted URL can't inject markup.
+(function(){{
+  try {{
+    var re = new URLSearchParams(location.search).get('re');
+    var f = document.getElementById('entryField');
+    if (re && f) f.value = re.slice(0, 200);
+  }} catch (e) {{}}
+}})();
+</script>"""
+    return page(f"Write to the librarian — {SITE_NAME}", body, active="write",
+                desc="Send a note, a correction or a recommendation to Mr. Librarian.",
+                url="write.html")
+
+
+def build_thanks():
+    body = """<section class="lede">
+  <h1>It's on the desk</h1>
+</section>
+<div class="panel prose">
+  <p><strong>Your note is in.</strong> Thank you — I read everything that arrives, and a
+  good tip about somewhere I haven't been is the most useful thing anyone sends.</p>
+  <p>If you left an email and it wants an answer, you'll get one. Meanwhile the
+  <a href="index.html">rest of the entries</a> are here.</p>
+</div>"""
+    # noindex: this page only exists as somewhere to land after submitting.
+    return page(f"Message received — {SITE_NAME}", body,
+                desc="Your note is on the librarian's desk.", noindex=True)
 
 
 def _rfc822(d):
@@ -485,7 +753,8 @@ def build_sitemap(posts):
     """
     newest = posts[0]["date"] if posts else dt.date.today()
     urls = [(f"{SITE_URL}{BASE}/", newest),
-            (f"{SITE_URL}{BASE}/about.html", newest)]
+            (f"{SITE_URL}{BASE}/about.html", newest),
+            (f"{SITE_URL}{BASE}/write.html", newest)]
     urls += [(f"{SITE_URL}{BASE}/{p['file']}", p["date"]) for p in posts]
     body = "\n".join(
         f"  <url><loc>{u}</loc><lastmod>{d.isoformat()}</lastmod></url>" for u, d in urls)
@@ -517,6 +786,8 @@ def main():
 
     write("index.html", build_index(posts))
     write("about.html", build_about())
+    write("write.html", build_write())
+    write("thanks.html", build_thanks())
     for fn, doc in build_post_pages(posts):
         write(fn, doc)
     write("feed.xml", build_feed(posts))
