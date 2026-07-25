@@ -113,6 +113,7 @@ SBLGNT_BOOKS = {
     "PHM": ("Philemon", 1),
     "HEB": ("Hebrews", 13),
     "JAS": ("James", 5),
+    "1PE": ("1 Peter", 5),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
     "JUD": ("Jude", 1),
