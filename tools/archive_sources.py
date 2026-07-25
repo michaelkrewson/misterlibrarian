@@ -108,6 +108,7 @@ SBLGNT_BOOKS = {
     "COL": ("Colossians", 4),
     "1TH": ("1 Thessalonians", 5),
     "1TI": ("1 Timothy", 6),
+    "2TI": ("2 Timothy", 4),
     "TIT": ("Titus", 3),
     "2JN": ("2 John", 1),
     "3JN": ("3 John", 1),
