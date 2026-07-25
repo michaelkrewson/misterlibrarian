@@ -24,7 +24,7 @@ from collections import defaultdict
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
                            LINK_OVERRIDES, VERSE_OF_DAY, ROUTES, REGIONS,
                            CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS,
-                           DICTIONARY_ES, ENCYCLOPEDIA_ES)
+                           DICTIONARY_ES, ENCYCLOPEDIA_ES, CHAPTER_ART)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
@@ -1981,10 +1981,66 @@ def build_verse_stubs(book, num, content):
         open(os.path.join(vdir, f"{stem}-{v}.html"), "w", encoding="utf-8").write(out)
 
 
+
+# --- chapter art ------------------------------------------------------------
+# A public-domain painting of the scene, inserted as a frontispiece right under
+# the chapter heading, with painter / year / where it hangs underneath — Michael's
+# "art education along the way" (2026-07-25). See library_data.CHAPTER_ART for the
+# licence reasoning (2-D reproductions are PD-Art, unlike a photo of a 3-D object).
+_ART_REQUIRED = ("file", "title", "artist", "year", "location", "alt", "license", "source_url")
+
+
+def _chapter_art_html(art, lang="en"):
+    missing = [k for k in _ART_REQUIRED if not art.get(k)]
+    if missing:
+        raise SystemExit(f"chapter art {art.get('file', '?')!r} is missing {missing} — "
+                         f"a painting cannot be published without its painter, year, "
+                         f"location, licence and source")
+    path = f"img/art/{art['file']}"
+    if not os.path.isfile(os.path.join(OUT, path)):
+        raise SystemExit(f"chapter art {path} is referenced but not committed — "
+                         f"GitHub Pages can only serve files in the repo")
+    es = lang == "es"
+    title = art.get("title_es") if es and art.get("title_es") else art["title"]
+    where = art.get("location_es") if es and art.get("location_es") else art["location"]
+    note = (art.get("note_es") if es else art.get("note")) or ""
+    lic = html.escape(art["license"])
+    src = html.escape(art["source_url"], quote=True)
+    seen = "Ver el original" if es else "View the original"
+    line = (f'<span class="art-artist">{html.escape(art["artist"])}</span>, '
+            f'{html.escape(art["year"])} · {html.escape(where)}')
+    notep = f'<p class="art-note">{note}</p>' if note else ""
+    return f"""<figure class="chapter-art">
+  <img src="{path}" alt="{html.escape(art['alt'], quote=True)}" loading="lazy"/>
+  <figcaption>
+    <div class="art-title"><em>{html.escape(title)}</em></div>
+    <div class="art-meta">{line}</div>
+    {notep}
+    <div class="art-lic">{lic} · <a href="{src}" rel="noopener">{seen}</a></div>
+  </figcaption>
+</figure>"""
+
+
+def inject_chapter_art(content, slug, lang="en"):
+    """Drop the chapter's painting in immediately after the <h2> heading, like the
+    plate facing the text in an illustrated Bible. No-op for a chapter with no art,
+    which is most of them — the shelf grows one chapter at a time."""
+    arts = CHAPTER_ART.get(slug) or []
+    if not arts:
+        return content
+    block = "".join(_chapter_art_html(a, lang) for a in arts)
+    m = re.search(r"(</h2>)", content)
+    if not m:
+        return content          # no heading to anchor to: leave the page alone
+    i = m.end()
+    return content[:i] + "\n" + block + content[i:]
+
+
 def build_chapter_pages(chapters):
     es_panels = _es_panels()   # chapters with a Spanish edition -> the reader's español toggle
     for slug, book, num, teaser in CHAPTERS:
         content = clean_chapter(chapters[slug])
+        content = inject_chapter_art(content, slug)
         content = inject_encyclopedia_links(content, book, num)
         content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
@@ -3140,36 +3196,13 @@ def inject_spanish(content, slug, es_panels):
 
 SITE_NAME_ES = "La Traducción Mister"
 
-# Spanish book names, for citations like "Jeremías 18:3". Falls back to the
-# English name if a book is missing, so a new book can never crash a build.
-_BOOK_ES = {
-    "Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico",
-    "Numbers": "Números", "Deuteronomy": "Deuteronomio", "Joshua": "Josué",
-    "Judges": "Jueces", "Ruth": "Rut", "1 Samuel": "1 Samuel", "2 Samuel": "2 Samuel",
-    "1 Kings": "1 Reyes", "2 Kings": "2 Reyes", "1 Chronicles": "1 Crónicas",
-    "2 Chronicles": "2 Crónicas", "Ezra": "Esdras", "Nehemiah": "Nehemías",
-    "Esther": "Ester", "Job": "Job", "Psalms": "Salmos", "Proverbs": "Proverbios",
-    "Ecclesiastes": "Eclesiastés", "Song of Solomon": "Cantar de los Cantares",
-    "Isaiah": "Isaías", "Jeremiah": "Jeremías", "Lamentations": "Lamentaciones",
-    "Ezekiel": "Ezequiel", "Daniel": "Daniel", "Hosea": "Oseas", "Joel": "Joel",
-    "Amos": "Amós", "Obadiah": "Obadías", "Jonah": "Jonás", "Micah": "Miqueas",
-    "Nahum": "Nahúm", "Habakkuk": "Habacuc", "Zephaniah": "Sofonías",
-    "Haggai": "Hageo", "Zechariah": "Zacarías", "Malachi": "Malaquías",
-    "Matthew": "Mateo", "Mark": "Marcos", "Luke": "Lucas", "John": "Juan",
-    "Acts": "Hechos", "Romans": "Romanos", "1 Corinthians": "1 Corintios",
-    "2 Corinthians": "2 Corintios", "Galatians": "Gálatas", "Ephesians": "Efesios",
-    "Philippians": "Filipenses", "Colossians": "Colosenses",
-    "1 Thessalonians": "1 Tesalonicenses", "2 Thessalonians": "2 Tesalonicenses",
-    "1 Timothy": "1 Timoteo", "2 Timothy": "2 Timoteo", "Titus": "Tito",
-    "Philemon": "Filemón", "Hebrews": "Hebreos", "James": "Santiago",
-    "1 Peter": "1 Pedro", "2 Peter": "2 Pedro", "1 John": "1 Juan",
-    "2 John": "2 Juan", "3 John": "3 Juan", "Jude": "Judas",
-    "Revelation": "Apocalipsis",
-}
-
-
+# Spanish book names for citations like "Jeremías 18:3".
+# ⚠ Reuses the EXISTING ES_BOOK map (158 entries, defined just above) rather than
+# keeping a second copy — two book-name maps would drift the first time a book was
+# added to one and not the other. Falls back to the English name so a new book can
+# never crash a build.
 def book_es(book):
-    return _BOOK_ES.get(book, book)
+    return ES_BOOK.get(book, book)
 
 
 # Spanish function words, plus the few translation-mechanical words that would
@@ -3515,6 +3548,7 @@ def build_es():
         if not bk:
             continue
         book, num = bk
+        content = inject_chapter_art(content, slug, "es")
         es_title = f"{ES_BOOK.get(book, book)} {num}"
         en_file = chapter_filename(book, num)
         es_file = en_file[:-5] + ".es.html"          # genesis-1.html -> genesis-1.es.html

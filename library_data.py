@@ -8989,3 +8989,131 @@ ENCYCLOPEDIA_ES["babylon"] = ("Babilonia",
     "Babilonia vendrá y que hay que someterse a ella, y anuncia también que Babilonia misma caerá "
     "(capítulos 50-51) — lo que le costó ser tratado como traidor por unos y como falso profeta por "
     "otros. Mucho después, el Apocalipsis convierte el nombre en una cifra.")
+
+
+# ---------------------------------------------------------------------------
+# CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
+# copyright famous paintings of biblical scenes... embed them right in the same
+# page as they're reading... underneath who the painter was, what year, and where
+# that painting is located... kind of an art education along the way."
+#
+# ⚠ A separate dict keyed by chapter slug, NOT a fifth element on CHAPTERS --
+# CHAPTERS is a 4-tuple unpacked positionally all over build.py, the same trap as
+# DICTIONARY's 6-tuples.
+#
+# ⚠ THE LICENCE LOGIC IS THE OPPOSITE OF THE BAAL STELE, and in our favour. For a
+# 3-D object the artefact is out of copyright but the PHOTOGRAPH carries its own
+# fresh copyright. For a FLAT 2-D painting, a faithful photographic reproduction
+# attracts NO new copyright in the US (Bridgeman v. Corel; Wikimedia tags these
+# "PD-Art"), so a photo of a public-domain painting is itself public domain.
+# ⚠ Some European museums nonetheless ASSERT rights over reproductions; the US
+# position governs a US-hosted site. Say so rather than pretending it's settled.
+#
+# Every licence here was read off the Commons file page (extmetadata
+# LicenseShortName + Artist + DateTimeOriginal), not assumed from the artist's
+# death date. Originals are archived to S3 blobs/chapter_art/; the web copies live
+# in img/art/ because GitHub Pages can only serve what it hosts.
+#
+# GROWS CHAPTER BY CHAPTER (Michael, same session): "just add a search for art
+# really relevant to the chapter we're building out... we can build out slowly."
+# `python3 tools/find_art.py <search terms>` does the searching and prints the
+# licence for each candidate.
+CHAPTER_ART = {
+    "mat8": [dict(
+        file="rembrandt-storm-galilee.jpg",
+        title="Christ in the Storm on the Lake of Galilee",
+        title_es="Cristo en la tormenta en el lago de Galilea",
+        artist="Rembrandt van Rijn",
+        year="1633",
+        location="Isabella Stewart Gardner Museum, Boston — stolen in 1990 and still missing",
+        location_es="Museo Isabella Stewart Gardner, Boston — robado en 1990 y aún desaparecido",
+        alt="A small boat pitched almost vertical on a black wave, its sail torn, "
+            "sailors clinging to the rigging while Christ sits calm in the stern",
+        note="Rembrandt&rsquo;s only seascape, painted at twenty-seven. He puts fourteen "
+             "figures in a boat built for far fewer and tips the whole hull up the "
+             "diagonal &mdash; and one face near the mast, gripping a rope and looking "
+             "straight out at us rather than at the storm, is usually taken for Rembrandt "
+             "himself. ⚠ It was cut from its frame in the 1990 Gardner Museum robbery and "
+             "has never been recovered, so this photograph is now among the better records "
+             "of it.",
+        note_es="El único paisaje marino de Rembrandt, pintado a los veintisiete años. Mete "
+                "catorce figuras en una barca hecha para muchas menos y vuelca el casco "
+                "entero por la diagonal &mdash; y un rostro junto al mástil, agarrado a un "
+                "cabo y mirando hacia fuera, hacia nosotros, en vez de a la tormenta, se "
+                "suele tomar por Rembrandt mismo. ⚠ Fue cortado de su marco en el robo del "
+                "Museo Gardner en 1990 y nunca se ha recuperado.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Christ_in_the_Storm_on_the_Lake_of_Galilee.jpg",
+    )],
+    "gen22": [dict(
+        file="caravaggio-sacrifice-isaac.jpg",
+        title="The Sacrifice of Isaac",
+        title_es="El sacrificio de Isaac",
+        artist="Caravaggio",
+        year="c. 1603",
+        location="Uffizi Gallery, Florence",
+        location_es="Galería Uffizi, Florencia",
+        alt="An angel seizes Abraham's wrist as he holds a knife over Isaac, whose head is "
+            "pressed against the altar and whose mouth is open in a cry",
+        note="Caravaggio refuses every pious softening. Isaac is not serene &mdash; his "
+             "cheek is mashed into the stone and his mouth is open; Abraham&rsquo;s hand is "
+             "on his son&rsquo;s neck. And the angel does not appear at a distance and "
+             "speak: he grabs the wrist. ⚠ The ram on the right is looking straight at the "
+             "knife, which is the painting&rsquo;s own quiet argument about substitution.",
+        note_es="Caravaggio se niega a toda suavización piadosa. Isaac no está sereno "
+                "&mdash; tiene la mejilla aplastada contra la piedra y la boca abierta; la "
+                "mano de Abraham está sobre el cuello de su hijo. Y el ángel no aparece a "
+                "distancia para hablar: le agarra la muñeca. ⚠ El carnero de la derecha "
+                "mira directamente al cuchillo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Sacrifice_of_Isaac-Caravaggio_(Uffizi).jpg",
+    )],
+    "gen32": [dict(
+        file="rembrandt-jacob-wrestling.jpg",
+        title="Jacob Wrestling with the Angel",
+        title_es="Jacob luchando con el ángel",
+        artist="Rembrandt van Rijn",
+        year="c. 1659",
+        location="Gemäldegalerie, Berlin",
+        location_es="Gemäldegalerie, Berlín",
+        alt="An angel with large wings holds a straining man from behind in something "
+            "closer to an embrace than a fight",
+        note="Rembrandt paints the strangest thing about the passage: it barely looks like "
+             "a fight. The angel&rsquo;s hold is almost an embrace, his face is calm and "
+             "sorrowful, and the effort is all in Jacob&rsquo;s shoulders and jaw. ⚠ The "
+             "hand near Jacob&rsquo;s hip is where the hollow of the thigh is touched "
+             "&mdash; the injury he limps away with, and the reason the text refuses to say "
+             "who won.",
+        note_es="Rembrandt pinta lo más extraño del pasaje: apenas parece una pelea. El "
+                "abrazo del ángel es casi un abrazo, su rostro está sereno y triste, y todo "
+                "el esfuerzo está en los hombros y la mandíbula de Jacob. ⚠ La mano junto a "
+                "la cadera de Jacob está donde se toca el hueco del muslo &mdash; la herida "
+                "con la que se marcha cojeando.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_-_Jacob_Wrestling_with_the_Angel_-_Google_Art_Project.jpg",
+    )],
+    "jer1": [dict(
+        file="rembrandt-jeremiah-lamenting.jpg",
+        title="Jeremiah Lamenting the Destruction of Jerusalem",
+        title_es="Jeremías lamentando la destrucción de Jerusalén",
+        artist="Rembrandt van Rijn",
+        year="1630",
+        location="Rijksmuseum, Amsterdam",
+        location_es="Rijksmuseum, Ámsterdam",
+        alt="An old man in rich robes leans on one elbow in the dark, head on hand, while "
+            "a city burns behind him",
+        note="Painted when Rembrandt was twenty-four. The prophet is not preaching; he is "
+             "sitting with his head on his hand, and the burning city is small and far off "
+             "behind him &mdash; the ruin is finished, and the whole picture is the "
+             "aftermath. ⚠ The books and the gold vessels beside him are the painter&rsquo;s "
+             "addition, not the text&rsquo;s: they carry the awkward fact that Jeremiah was "
+             "treated well by Babylon precisely because he had told Jerusalem to submit.",
+        note_es="Pintado cuando Rembrandt tenía veinticuatro años. El profeta no está "
+                "predicando; está sentado con la cabeza apoyada en la mano, y la ciudad en "
+                "llamas queda pequeña y lejana detrás de él &mdash; la ruina ya está "
+                "consumada, y todo el cuadro es lo que viene después. ⚠ Los libros y los "
+                "vasos de oro a su lado son añadido del pintor, no del texto.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Jeremia_treurend_over_de_verwoesting_van_Jeruzalem_-_Google_Art_Project.jpg",
+    )],
+}
