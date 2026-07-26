@@ -75,6 +75,10 @@ DICTIONARY = [
     ("agapetos", "agapētos", "ἀγαπητός", "agapētos", "BELOVED — the adjective in the voice at the baptism, 'this is my beloved Son' (Matthew 3:17). ⚠ Its overtone is Isaac. Where the Hebrew of Genesis 22:2 says 'your son, your ONLY one, whom you love' (yachid, only), the Greek Old Testament renders it ton agapēton, 'your beloved son' — so in Greek the words 'beloved son' carry the Aqedah with them, the son a father takes up a mountain. The voice at the Jordan combines it with Psalm 2:7 ('you are my son') and Isaiah 42:1 ('my chosen, in whom my soul delights'), whose very next clause is 'I have put my spirit upon him' — which is what the dove has just done.", ("Matthew", 3, 17)),
     ("magoi", "magoi", "μάγοι", "magoi", "MAGI — a hereditary PRIESTLY CASTE of the Medes and Persians: keepers of ritual, interpreters of dreams, and readers of the sky. The Greek translations of Daniel use the word for one of the classes of Babylonian diviners a king summons, the guild over which Daniel himself was set (Daniel 2:48). By the first century it had also loosened into plain 'sorcerer' (so Acts, of Bar-Jesus), which is where English 'magic' comes from. ⚠ So the men of Matthew 2 are neither philosophers nor monarchs but foreign astrologer-priests, and Matthew never says how many there were: three GIFTS became three givers, and Psalm 72:10-11 with Isaiah 60:3-6 made the givers kings. KJV/Geneva/Douay 'wise men'; ASV 'Wise-men'; NIV 'Magi'; NWT 'astrologers' — the bluntest about the trade, though it also passes a judgment the Greek does not.", ("Matthew", 2, 1)),
     ("proskyneo", "proskyneō", "προσκυνέω", "proskyneō", "To BOW DOWN, to prostrate oneself, to do homage — a body-word before it is a theological one. Greek used it of gods and of kings alike, and Matthew uses it both ways: of a slave on his face before his master (18:26) and of the disciples in the boat saying 'truly you are the Son of God' (14:33). ⚠ The shelf divides on it and the division is doctrinal. KJV/ASV/NIV read 'worship' — defensible, but note that the KJV also has the slave 'worship' his lord in 18:26, because in 1611 the English word still covered homage to a human superior, which it no longer does. NWT reads 'do obeisance', lexically available and closer to the gesture, but applies it to Jesus while keeping 'worship' for God — a distinction the Greek word does not itself make. This translation prints the gesture in every mouth that uses it, Herod's included (2:8), and leaves what the gesture means to the reader.", ("Matthew", 2, 2)),
+    ("tharseo", "tharsei", "θάρσει", "tharsei", "TAKE HEART, take courage — the imperative Jesus uses to both the paralyzed man and the bleeding woman in the same chapter (Matthew 9:2, 22), the one word linking two otherwise very different healings. It is not mere comfort; in both places it opens a sentence that immediately follows with the reason for courage — forgiveness, or healed faith. KJV renders it 'be of good cheer' both times, which keeps the echo but softens the command; NWT 'take courage.' The same word will meet the disciples again on the water: 'take courage, it is I' (14:27, not yet on these pages).", ("Matthew", 9, 2)),
+    ("kraspedon", "kraspedon", "κράσπεδον", "kraspedon", "FRINGE, tassel — the word the Greek Old Testament uses for the TASSELS the Law commands on the four corners of a garment (Numbers 15:38-39; Deuteronomy 22:12, neither yet on these pages), which means Matthew 9:20 is quietly showing Jesus wearing them: the bleeding woman touches his kraspedon, not merely 'his robe.' ⚠ The word returns twice more in this Gospel — crowds beg only to touch it at 14:36, and Jesus criticizes Pharisees for lengthening theirs for show at 23:5 — three appearances, three different lights on the same detail of dress.", ("Matthew", 9, 20)),
+    ("splanchnizomai", "splanchnizomai", "σπλαγχνίζομαι", "splanchnizomai", "TO HAVE COMPASSION, at the gut — built on splanchna, the inward organs (English 'splanchnic' descends from it), so the verb is not sympathy observed from a distance but something felt in the body. Matthew 9:36 is its first use in this Gospel: Jesus sees the crowds, 'harassed and thrown down like sheep without a shepherd,' and is moved AT THE INSIDES. ⚠ It recurs at moments of real need — before feeding the five thousand (14:14) and the four thousand (15:32), for two blind men (20:34), never as a mere narrative aside.", ("Matthew", 9, 36)),
+    ("sozo", "sōzō", "σῴζω", "sōzō", "TO SAVE — and, in the same breath, TO HEAL; Greek does not force a choice between the two senses the way English does. It is the verb of Jesus' own name, unfolded at his naming: 'you shall call his name Jesus, for he will SAVE (sōsei) his people from their sins' (Matthew 1:21). Matthew 9 puts the same verb in three mouths in three verses over the bleeding woman — her own hope ('I will be sozō,' 9:21), Jesus' verdict ('your faith has sesōken you,' 9:22), and the narrator's confirmation ('the woman was esōthē,' 9:22) — so a chapter about physical healing keeps sounding, in its own vocabulary, exactly like the larger promise the name itself made.", ("Matthew", 9, 21)),
     ("lathra", "lathra", "λάθρᾳ", "lathra", "SECRETLY, quietly, without publicity — an adverb that takes its moral colour entirely from who is using it. It occurs twice in Matthew's opening chapters and nowhere else in his Gospel: Joseph, 'being righteous and unwilling to expose her to disgrace,' resolves to divorce Mary <em>lathra</em> (1:19) — quietly, to shield a woman from a public penalty; and Herod calls the magi <em>lathra</em> (2:7) — secretly, to fix the location of a child he intends to kill. ⚠ One word, two chapters, mercy and murder, and Matthew never comments on the pairing.", ("Matthew", 2, 7)),
     ("akriboo", "akriboō", "ἀκριβόω", "akriboō", "To ASCERTAIN EXACTLY — to learn a thing to the last detail. A rare verb, in the New Testament only in Matthew 2, twice, with its adverb <em>akribōs</em> standing between: Herod 'ascertained exactly the time' (v7), tells the magi to 'search out exactly concerning the child' (v8), and then kills every boy 'from two years old and under, according to the time he had ascertained exactly from the magi' (v16). ⚠ The precision extracted in verse 7 IS the width of the slaughter in verse 16 — the chapter's grimmest piece of vocabulary, and it works only if a translation uses one English word for all three.", ("Matthew", 2, 7)),
     ("anachoreo", "anachōreō", "ἀναχωρέω", "anachōreō", "To WITHDRAW — to give ground, to retire, to get out of the way. It is the structural verb of Matthew 2, sounding four times in twelve verses: the magi withdraw to their own country (v12), 'when they had withdrawn' (v13), Joseph withdraws to Egypt (v14), and at the close he withdraws into Galilee (v22). ⚠ Matthew then keeps the word for what Jesus does when a threat is real — he withdraws when John is arrested (4:12), when the Pharisees take counsel against him (12:15), when John is beheaded (14:13). The Messiah's first recorded movement is a retreat, and the retreat becomes a habit.", ("Matthew", 2, 12)),
@@ -1247,6 +1251,34 @@ ENCYCLOPEDIA = [
     dict(slug="sadducees", name="The Sadducees", kind="people", aliases=["Sadducees"],
          desc="The priestly aristocracy who ran the temple — wealthy, few, and politically pragmatic in their dealings with Rome, since the arrangement that kept the temple running was the arrangement that kept them in office. Their name probably descends from ZADOK, Solomon's high priest. They held to the written Law alone and rejected what the Pharisees added: no oral tradition, no angels, and — the difference that mattered most — no resurrection (which is why the one argument Matthew records between them and Jesus is about a dead man's wife, 22:23). ⚠ Because their whole existence was tied to the building, they did not outlive it: after AD 70 the Sadducees effectively vanish from history, while the Pharisees' successors wrote the Talmud. At Matthew 3:7 they arrive at the Jordan alongside the Pharisees, which almost never happens, and John addresses the two parties as one crowd.",
          refs=[("Matthew", 3, 7)]),
+    dict(slug="matthew-apostle", name="Matthew", kind="person", aliases=["Matthew"],
+         desc="A tax collector called from his customs booth at Capernaum (Matthew 9:9) &mdash; and the only one of "
+              "the Gospels to call him that. Mark 2:14 and Luke 5:27 both name this same man LEVI (Mark adds &lsquo;son "
+              "of Alphaeus&rsquo;); only this Gospel uses &lsquo;Matthew,&rsquo; and only this Gospel&rsquo;s own list "
+              "of the Twelve adds a label the other two both omit: &lsquo;Matthew THE TAX COLLECTOR&rsquo; (10:3, not "
+              "yet on these pages). Tradition has long read the extra, self-incriminating word as the author quietly "
+              "signing his own book &mdash; naming the job the other Gospels leave off his name, and identifying "
+              "himself by it rather than hiding it. ⚠ The identification of the tax collector, the apostle, and the "
+              "Gospel's traditional author as one person is ancient (Papias, early 2nd century, already credits a "
+              "&lsquo;Matthew&rsquo; with compiling the sayings) but not something the text itself asserts outright; "
+              "this library states the tradition and its age rather than treating it as settled. As a tax collector he "
+              "would have been literate, numerate, and a record-keeper by trade &mdash; qualifications that make the "
+              "attribution, whatever its date, at least a plausible one for a book this carefully structured.",
+         refs=[("Matthew", 9, 9)]),
+    dict(slug="tax-collectors", name="Tax Collectors", kind="people", aliases=["tax collectors"],
+         desc="Local men, usually Jewish, who bought or held the right to collect Rome's tolls and duties and made "
+              "their living on what they collected above the quota &mdash; a system that rewarded overcharging and "
+              "built extortion into the job description. ⚠ The resentment was not only economic: collecting for Rome "
+              "made a man a visible collaborator with the occupying power, and contact with Gentile money and Gentile "
+              "administration carried its own ritual taint. The fixed pairing &lsquo;tax collectors and "
+              "sinners&rsquo; (Matthew 9:10-11, and again at 11:19) is doing real social work &mdash; the phrase "
+              "names a category, not two overlapping groups. Yet Matthew's own Gospel is written under the name of "
+              "one of them (see <a href='#matthew-apostle'>Matthew</a>), and the class recurs: 21:31-32 has tax "
+              "collectors and prostitutes entering the kingdom ahead of the chief priests and elders, and Luke's "
+              "Zacchaeus (not on this site) becomes the type-scene for the whole reversal. The Pharisees' objection "
+              "in this chapter is not manufactured outrage &mdash; sharing a table was a real social and religious "
+              "line, and Jesus is shown crossing it on purpose.",
+         refs=[("Matthew", 9, 10)]),
     dict(slug="herod-the-great", name="Herod the Great", kind="person", aliases=["Herod"],
          desc="'King of the Jews' by vote of the Roman Senate — which is the title the magi walk into his palace and unknowingly ask him to give up. An IDUMEAN (Edomite by descent, Jewish by religion, and in the eyes of many of his subjects not Jewish by blood), son of Antipater, he was granted the kingship in 40 BC and had to besiege Jerusalem for three years to take possession of it. He ruled some thirty-three years and was by any measure an extraordinary builder: the temple whose vast retaining wall still stands in Jerusalem, the artificial harbour at Caesarea, the fortresses of Masada and Machaerus, and the palace-tomb of the Herodium. ⚠ He is also the man Josephus describes executing his favourite wife Mariamne, her brother, her grandfather and her mother, and three of his own sons — the last of them, Antipater, five days before his own death — and ordering the leading men of Judea shut in the hippodrome to be killed the moment he died, so that the nation would be seen to mourn (his sister quietly cancelled it). Josephus does not mention the killing at Bethlehem; it would not have been the most newsworthy act of that reign. He died, on the usual reckoning, in 4 BC, and his will divided the kingdom between three sons. ⚠ Not to be confused with them: the 'Herod' who beheaded John the Baptist and questioned Jesus is his son ANTIPAS, tetrarch of Galilee, and the 'Herod' of Acts 12 is his grandson Agrippa I.",
          refs=[("Matthew", 2, 1), ("Luke", 1, 5)]),
@@ -4043,6 +4075,15 @@ XREFS = [
     (("Matthew", 8, 8), ("Matthew", 3, 11), "ouk eimi hikanos, 'I am not worthy' — the Baptist said it of the sandals, the centurion of his own roof; the only two in Matthew who say it"),
     (("Matthew", 8, 11), ("Matthew", 4, 25), "the crowd already came from the Decapolis and beyond the Jordan; now Gentiles are seated at the patriarchs' table"),
     (("Matthew", 8, 29), ("Matthew", 8, 6), "basanizō — the centurion's boy 'terribly tormented', and the demons afraid of 'torment'; one word for a servant's suffering and a spirit's dread"),
+    (("Matthew", 9, 2), ("Matthew", 9, 22), "tharsei, 'take heart' — the identical word to a paralyzed man and, twenty verses later, to a bleeding woman; one chapter, one command, two very different healings"),
+    (("Matthew", 9, 9), ("Matthew", 4, 19), "akolouthei moi, 'follow me' — the same bare call and the same instant obedience that pulled two fishermen off their nets; a tax collector rises from a booth on the identical two words"),
+    (("Matthew", 9, 18), ("Matthew", 8, 2), "proskyneō, a fifth time — the magi, Herod, the devil, a leper, and now an unnamed synagogue ruler; every step widens who bows, and none yet settles what the gesture means"),
+    (("Matthew", 9, 20), ("Numbers", 15, 38), "kraspedon — the same word the Greek Old Testament uses for the tassels the Law commands, which means the text is quietly showing Jesus wearing them when the bleeding woman touches his fringe"),
+    (("Matthew", 9, 22), ("Matthew", 1, 21), "sōzō, 'save/heal' — the identical verb as Jesus' own name unfolded at his naming ('he will SAVE his people from their sins'), now the word of an actual healing, three times in one verse"),
+    (("Matthew", 9, 24), ("Daniel", 12, 2), "sleep as a euphemism for death — 'those who sleep in the dust of the earth' — though the crowd's laughter argues Matthew means it as more than a euphemism here"),
+    (("Matthew", 9, 35), ("Matthew", 4, 23), "the three-part summary — teaching, proclaiming, healing — repeated word for word; the frame this site's own note on 4:23 promised would close five chapters later"),
+    (("Matthew", 9, 13), ("Hosea", 6, 6), "'I desire mercy and not sacrifice' — quoted here against the Pharisees, and quoted again, against the identical charge, at Matthew 12:7"),
+    (("Matthew", 9, 15), ("Hosea", 2, 19), "the bridegroom claim, made sideways — the same prophet who supplies the covenant's marriage-metaphor for Jehovah and Israel, quoted three verses after 'mercy, not sacrifice'"),
     (("Matthew", 8, 17), ("Isaiah", 53, 4), "'surely our diseases he bore, and our pains he carried' — Matthew follows the HEBREW here, where the Greek Old Testament turns the first noun into 'sins', and applies it to an evening of healings rather than to the cross"),
     (("Matthew", 8, 4), ("Leviticus", 14, 4), "'the gift that Moses commanded' — two living clean birds, cedar-wood, scarlet and hyssop: the cleansed man is certified by the ordinary machinery of the Law, not exempted from it"),
     (("Matthew", 8, 20), ("Daniel", 7, 13), "'one like a son of man' coming with the clouds — the Aramaic kevar enash behind the title, used here of a man with nowhere to lay his head"),
@@ -8942,6 +8983,37 @@ DICTIONARY_ES = {
         "responde. Su sustantivo <em>teshuvah</em> es la palabra hebrea para arrepentimiento hasta hoy. "
         "⚠ En Jeremías 18 el PRIMER volverse del capítulo no es el de la nación: es el del alfarero, que "
         "«volvió» y rehizo la vasija (18:4), antes de que se le pida a nadie volverse (18:8, 11)."),
+    "tharseo": ("ánimo",
+        "TEN ÁNIMO, ten valor — el imperativo que Jesús dirige, en el mismo capítulo, tanto al paralítico "
+        "como a la mujer que sangraba (Mateo 9:2, 22): una sola palabra que une dos sanaciones muy "
+        "distintas. No es simple consuelo; en ambos lugares abre una frase que da de inmediato la razón "
+        "del ánimo — el perdón, o la fe que sana. KJV traduce «sé de buen ánimo» las dos veces, lo que "
+        "conserva el eco pero suaviza la orden. La misma palabra vuelve a los discípulos sobre el agua: "
+        "«tened ánimo, soy yo» (14:27, todavía no en estas páginas)."),
+    "kraspedon": ("fleco",
+        "FLECO, borla — la palabra que la Biblia griega usa para las BORLAS que la Ley manda en las cuatro "
+        "puntas de un manto (Números 15:38-39; Deuteronomio 22:12, ninguno todavía en estas páginas), lo "
+        "que significa que Mateo 9:20 muestra, sin decirlo, a Jesús llevándolas puestas: la mujer que "
+        "sangraba toca su <em>kraspedon</em>, no simplemente «su manto». ⚠ La palabra vuelve dos veces "
+        "más en este Evangelio — las multitudes solo piden tocarlo en 14:36, y Jesús critica a los "
+        "fariseos por alargar el suyo para ser vistos en 23:5 — tres apariciones, tres luces distintas "
+        "sobre el mismo detalle de vestimenta."),
+    "splanchnizomai": ("compasión",
+        "TENER COMPASIÓN, desde las entrañas — construida sobre <em>splanchna</em>, los órganos internos, "
+        "así que el verbo no es simpatía observada a distancia sino algo sentido en el cuerpo. Mateo 9:36 "
+        "es su primer uso en este Evangelio: Jesús ve a las multitudes, «agobiadas y abatidas como ovejas "
+        "sin pastor», y se conmueve POR DENTRO. ⚠ Vuelve en momentos de necesidad real — antes de "
+        "alimentar a los cinco mil (14:14) y a los cuatro mil (15:32), por dos ciegos (20:34) — nunca "
+        "como un simple detalle narrativo."),
+    "sozo": ("salvar / sanar",
+        "SALVAR — y, en el mismo aliento, SANAR; el griego no obliga a elegir entre los dos sentidos como "
+        "obliga el español. Es el verbo del propio nombre de Jesús, desplegado en su nombramiento: "
+        "«llamarás su nombre Jesús, porque él SALVARÁ (<em>sōsei</em>) a su pueblo de sus pecados» (Mateo "
+        "1:21). Mateo 9 pone el mismo verbo en tres bocas en tres versículos sobre la mujer que sangraba "
+        "— su propia esperanza («seré <em>sozō</em>», 9:21), el veredicto de Jesús («tu fe te ha "
+        "<em>sesōken</em>», 9:22), y la confirmación del narrador («la mujer fue <em>esōthē</em>», 9:22) "
+        "— así que un capítulo sobre sanación física sigue sonando, en su propio vocabulario, exactamente "
+        "como la promesa mayor que el nombre mismo hizo."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -9070,6 +9142,29 @@ ENCYCLOPEDIA_ES["babylon"] = ("Babilonia",
     "Babilonia vendrá y que hay que someterse a ella, y anuncia también que Babilonia misma caerá "
     "(capítulos 50-51) — lo que le costó ser tratado como traidor por unos y como falso profeta por "
     "otros. Mucho después, el Apocalipsis convierte el nombre en una cifra.")
+ENCYCLOPEDIA_ES["matthew-apostle"] = ("Mateo",
+    "Un recaudador de impuestos llamado desde su puesto de aduana en Cafarnaúm (Mateo 9:9) — y el único "
+    "de los Evangelios que lo llama así. Marcos 2:14 y Lucas 5:27 nombran a este mismo hombre LEVÍ (Marcos "
+    "añade «hijo de Alfeo»); solo este Evangelio usa «Mateo», y solo la propia lista de los Doce de este "
+    "Evangelio añade una etiqueta que los otros dos omiten: «Mateo EL RECAUDADOR DE IMPUESTOS» (10:3, "
+    "todavía no en estas páginas). La tradición ha leído durante largo tiempo esa palabra extra, "
+    "autoincriminatoria, como el autor firmando en silencio su propio libro — nombrando el oficio que los "
+    "otros Evangelios omiten de su nombre, identificándose por él en vez de ocultarlo. ⚠ La identificación "
+    "del recaudador, el apóstol y el autor tradicional del Evangelio como una sola persona es antigua "
+    "(Papías, principios del siglo II, ya atribuye a un «Mateo» la recopilación de los dichos) pero no algo "
+    "que el propio texto afirme abiertamente; esta biblioteca declara la tradición y su antigüedad en vez "
+    "de tratarla como resuelta.")
+ENCYCLOPEDIA_ES["tax-collectors"] = ("Los recaudadores de impuestos",
+    "Hombres locales, casi siempre judíos, que compraban o mantenían el derecho de cobrar los peajes y "
+    "aranceles de Roma y vivían de lo que cobraban por encima de la cuota — un sistema que premiaba el "
+    "cobro excesivo y llevaba la extorsión incorporada al oficio. ⚠ El resentimiento no era solo "
+    "económico: cobrar para Roma convertía a un hombre en colaborador visible de la potencia ocupante, y "
+    "el contacto con dinero y administración gentiles llevaba su propia mancha ritual. El par fijo "
+    "«recaudadores de impuestos y pecadores» (Mateo 9:10-11, y de nuevo en 11:19) hace un trabajo social "
+    "real — la frase nombra una categoría, no dos grupos que se superponen. Y sin embargo el propio "
+    "Evangelio de Mateo se escribe bajo el nombre de uno de ellos (véase <a href='#matthew-apostle'>"
+    "Mateo</a>), y la clase vuelve a aparecer: 21:31-32 tiene a recaudadores de impuestos y prostitutas "
+    "entrando en el reino antes que los sumos sacerdotes y los ancianos.")
 
 
 # ---------------------------------------------------------------------------
@@ -9196,5 +9291,46 @@ CHAPTER_ART = {
                 "vasos de oro a su lado son añadido del pintor, no del texto.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Jeremia_treurend_over_de_verwoesting_van_Jeruzalem_-_Google_Art_Project.jpg",
+    )],
+    "mat9": [dict(
+        file="caravaggio-calling-of-matthew.jpg",
+        title="The Calling of Saint Matthew",
+        title_es="La vocación de San Mateo",
+        artist="Caravaggio",
+        year="1599&ndash;1600",
+        location="Contarelli Chapel, San Luigi dei Francesi, Rome",
+        location_es="Capilla Contarelli, San Luigi dei Francesi, Roma",
+        alt="A shaft of light cuts across a dim tax-collector's table where several men in "
+            "contemporary dress sit counting money; Christ, half-shadowed at the right edge "
+            "with Peter beside him, points into the group, and one bearded man points back "
+            "at his own chest as if asking 'me?'",
+        note="Caravaggio dresses the whole scene as his own Rome, not first-century Judea "
+             "&mdash; plumed hats, slashed doublets, a table of coin-counters lit like a "
+             "tavern. Christ and Peter arrive from the dark at the edge of the frame, almost "
+             "an intrusion into an ordinary business transaction, and the single shaft of "
+             "light overhead is the only supernatural note in an otherwise completely "
+             "everyday room. ⚠ Who is Matthew has been argued for a century: the traditional "
+             "reading is the bearded man pointing at himself, but a persistent minority "
+             "reading takes the young man bent over the coins at the table's near end, "
+             "unaware he is even being addressed, as Matthew instead &mdash; and the painting "
+             "may be deliberately ambiguous about which man looks up. Either way, the hand "
+             "gesture itself quotes Michelangelo's Adam on the Sistine ceiling, a debt "
+             "Caravaggio's contemporaries would have recognized at once.",
+        note_es="Caravaggio viste toda la escena con su propia Roma, no la Judea del siglo I "
+                "&mdash; sombreros con plumas, jubones acuchillados, una mesa de contadores "
+                "de monedas iluminada como una taberna. Cristo y Pedro llegan desde la "
+                "oscuridad en el borde del cuadro, casi una intrusión en una transacción "
+                "comercial ordinaria, y el único haz de luz arriba es la única nota "
+                "sobrenatural en una sala por lo demás completamente cotidiana. ⚠ Quién es "
+                "Mateo se ha discutido durante un siglo: la lectura tradicional es el hombre "
+                "barbudo que se señala a sí mismo, pero una lectura minoritaria persistente "
+                "toma al joven inclinado sobre las monedas al extremo cercano de la mesa, "
+                "sin darse cuenta de que se le habla, como Mateo en cambio &mdash; y puede "
+                "que el cuadro sea deliberadamente ambiguo sobre cuál de los dos levanta la "
+                "vista. De cualquier modo, el gesto de la mano cita al Adán de Miguel Ángel "
+                "en el techo de la Capilla Sixtina, una deuda que los contemporáneos de "
+                "Caravaggio habrían reconocido de inmediato.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Caravaggio,_Michelangelo_Merisi_da_-_The_Calling_of_Saint_Matthew_-_1599-1600_(hi_res).jpg",
     )],
 }
