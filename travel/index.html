@@ -18,7 +18,7 @@
 <meta property="og:url" content="https://mistertranslation.com/travel/index.html"/>
 <link rel="icon" href="img/favicon.svg"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian Abroad" href="feed.xml"/>
-<link rel="stylesheet" href="style.css?v=63a3eaea30"/>
+<link rel="stylesheet" href="style.css?v=d008000be0"/>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -39,6 +39,9 @@
     <span class="brand-name">The Librarian <span class="abroad">Abroad</span></span>
   </a>
   </h1>
+  <form class="headersearch" action="index.html" method="get" role="search">
+    <input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/>
+  </form>
   <div class="rule"></div>
   <div class="tag">Travels and meals, kept by Mr. Librarian</div>
   <nav class="topnav">
@@ -53,7 +56,7 @@
   <p>Notes from the road and from the table — what was worth the trip, what was worth the plate, and what wasn&#x27;t.</p>
 </section>
 <svg width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="half17"><stop offset="50%" stop-color="var(--gold)"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs></svg><svg width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="half14"><stop offset="50%" stop-color="var(--gold)"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs></svg>
-<div class="searchbar" id="searchbar"><input type="search" id="searchInput" placeholder="Search past entries — a dish, a place, a tag…" aria-label="Search past entries"/><span class="searchcount" id="searchCount"></span></div>
+<div class="searchcount" id="searchCount"></div>
 <div class="filters" id="filters"><button class="chip on" data-tag="">All</button><button class="chip" data-tag="burgers">burgers</button><button class="chip" data-tag="california">california</button><button class="chip" data-tag="fast-food">fast food</button><button class="chip" data-tag="food">food</button><button class="chip" data-tag="japanese">japanese</button><button class="chip" data-tag="notes">notes</button><button class="chip" data-tag="oregon">oregon</button><button class="chip" data-tag="portland">portland</button><button class="chip" data-tag="ramen">ramen</button><button class="chip" data-tag="road-food">road food</button><button class="chip" data-tag="washington">washington</button></div>
 <div class="sortbar" id="sortbar">Sort: <button class="sortbtn on" data-sort="date">Newest</button><button class="sortbtn" data-sort="stars">Highest rated</button></div>
 <div class="cards" id="cards">
@@ -104,15 +107,15 @@
   </ul>
 </section>
 <script>
-// Search box + tag filter, combined — pure client-side, so there are no
+// Search box (in the header, reachable from every page — see header() in
+// build_travel.py) + tag filter, combined. Both narrow the SAME card list, so
+// a query and a tag chip compose (AND, not OR): typing "ramen" while the
+// "oregon" chip is on shows only cards matching both. Pure client-side — no
 // per-tag or per-query pages to generate, keep in sync, or leave behind.
-// Both narrow the SAME card list, so a query and a tag chip compose (AND,
-// not OR): typing "ramen" while the "oregon" chip is on shows only cards
-// matching both.
 (function(){
   var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
   var filterBar = document.getElementById('filters');
-  var input = document.getElementById('searchInput');
+  var input = document.getElementById('headerSearch');
   var count = document.getElementById('searchCount');
   var empty = document.getElementById('searchEmpty');
   var activeTag = '';
@@ -145,10 +148,31 @@
   }
 
   if (input) {
+    // Live as you type, so Enter is never required — but the input still sits
+    // inside a real <form action="index.html">, which is what makes searching
+    // from a POST PAGE work (plain GET navigation, no JS needed there). Here,
+    // already on the index, that same submit would just reload the page with
+    // an unchanged ?q=, so it's swallowed — the input event already applied it.
+    var form = input.form;
+    if (form) form.addEventListener('submit', function(e){ e.preventDefault(); });
+
     input.addEventListener('input', function(){
       query = input.value.trim().toLowerCase();
       apply();
+      var url = new URL(location.href);
+      if (query) url.searchParams.set('q', input.value); else url.searchParams.delete('q');
+      history.replaceState(null, '', url.pathname + url.search + url.hash);
     });
+
+    // Arriving here FROM another page's header search lands as index.html?q=…
+    // — pick that up and apply it immediately rather than showing everything
+    // until the reader retypes what they already searched.
+    var handed = new URLSearchParams(location.search).get('q');
+    if (handed) {
+      input.value = handed;
+      query = handed.trim().toLowerCase();
+      apply();
+    }
   }
 })();
 
