@@ -267,6 +267,23 @@ img { max-width: 100%; height: auto; display: block; }
   letter-spacing: .5px;
 }
 
+/* The unmissable banner atop a draft preview page (build_draft_previews) —
+   deliberately louder than the small .draftflag pill above, since this is
+   the ONE thing standing between a private preview link and a page that
+   reads like a normal published entry. */
+.draftbanner {
+  margin: 0 0 30px;
+  padding: 14px 20px;
+  background: rgba(232,134,92,.12);
+  border: 1px solid var(--terra);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font: 14.5px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  text-align: center;
+}
+.draftbanner strong { color: var(--terra-dk); }
+.draftbanner a { color: var(--terra-dk); }
+
 .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
 .pill {
   font: 12px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;

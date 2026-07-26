@@ -56,6 +56,14 @@ python3 build_travel.py --drafts   # local preview incl. draft: true posts
 - **The build refuses to run** on a front-matter typo, a missing summary, a date
   that disagrees with the filename, or a `stars:` value that isn't on the scale.
   That's on purpose.
+- **A `draft: true` entry gets a real preview link on the live site**, not just a
+  local build — every plain `python3 build_travel.py` (no flag needed) publishes it
+  to `mistertranslation.com/travel/draft-<slug>.html`, with everything currently in
+  draft listed at `/travel/drafts.html`. Same unlinked posture as the rest of this
+  blog: `noindex`, no nav link, absent from the sitemap and RSS feed — reachable only
+  by that direct URL, which is enough to review on a phone before flipping the front
+  matter to `draft: false` and rebuilding. Publishing or deleting a draft prunes its
+  stale preview page automatically on the next build.
 - **Librarian's Stars** — an optional `stars:` (1–5, halves allowed) turns an entry
   into a review: a rating block under the title, stars on the index card and archive
   row, and schema.org `Review` markup so search results can show the score. Leave the

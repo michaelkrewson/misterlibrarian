@@ -647,6 +647,54 @@ def build_index(posts):
     return page(SITE_NAME, body, active="home", desc=BLURB, url="index.html")
 
 
+def _post_article(p, extra=""):
+    """The actual entry: title, rating, hero, body, tags. Shared by the real
+    published post page and the unlisted draft preview (build_draft_previews)
+    so the two can never drift apart — `extra` is where each caller hangs
+    whatever comes before it (nothing, or a draft banner)."""
+    # schema.org Review — this is what puts a star rating on the search
+    # result itself, which matters a great deal for a blog nothing links to.
+    ld = ""
+    if p["stars"] is not None:
+        ld = "\n<script type=\"application/ld+json\">" + json.dumps({
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "itemReviewed": {
+                "@type": p["subject_type"],
+                "name": p["subject"] or p["title"],
+                **({"address": p["place"]} if p["place"] else {}),
+            },
+            "reviewRating": {"@type": "Rating", "ratingValue": p["stars"],
+                             "bestRating": 5, "worstRating": 1},
+            "author": {"@type": "Person", "name": "Mr. Librarian"},
+            "datePublished": p["date"].isoformat(),
+            "publisher": {"@type": "Organization", "name": SITE_NAME},
+        }, ensure_ascii=False) + "</script>"
+
+    return f"""{extra}<article class="post">{ld}
+  {_half_defs()}
+  <h1>{html.escape(p['title'])}</h1>
+  {_meta_line(p)}
+  {_rating_block(p)}
+  {_hero_img(p)}
+  <div class="postbody">
+{p['body']}
+  </div>
+  {_tag_pills(p)}
+</article>"""
+
+
+def _respond_nudge(p):
+    # Per-post nudge: the reach of comments without running a comment system.
+    # The title rides along in `re=` so a message says which entry prompted it.
+    return (
+        '<div class="respond">'
+        '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
+        f'should have gone instead? <a href="write.html?re={urllib.parse.quote(p["title"])}">'
+        'Write to the librarian</a> — it goes straight to my desk.</p>'
+        '</div>')
+
+
 def build_post_pages(posts):
     out = []
     for i, p in enumerate(posts):
@@ -659,46 +707,8 @@ def build_post_pages(posts):
             nav.append(f'<a class="next" href="{newer["file"]}">{html.escape(newer["title"])} →</a>')
         navbar = f'<nav class="postnav">{"".join(nav)}</nav>' if nav else ""
 
-        # Per-post nudge: the reach of comments without running a comment system.
-        # The title rides along in `re=` so a message says which entry prompted it.
-        respond = (
-            '<div class="respond">'
-            '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
-            f'should have gone instead? <a href="write.html?re={urllib.parse.quote(p["title"])}">'
-            'Write to the librarian</a> — it goes straight to my desk.</p>'
-            '</div>')
-
-        # schema.org Review — this is what puts a star rating on the search
-        # result itself, which matters a great deal for a blog nothing links to.
-        ld = ""
-        if p["stars"] is not None:
-            ld = "\n<script type=\"application/ld+json\">" + json.dumps({
-                "@context": "https://schema.org",
-                "@type": "Review",
-                "itemReviewed": {
-                    "@type": p["subject_type"],
-                    "name": p["subject"] or p["title"],
-                    **({"address": p["place"]} if p["place"] else {}),
-                },
-                "reviewRating": {"@type": "Rating", "ratingValue": p["stars"],
-                                 "bestRating": 5, "worstRating": 1},
-                "author": {"@type": "Person", "name": "Mr. Librarian"},
-                "datePublished": p["date"].isoformat(),
-                "publisher": {"@type": "Organization", "name": SITE_NAME},
-            }, ensure_ascii=False) + "</script>"
-
-        body = f"""<article class="post">{ld}
-  {_half_defs()}
-  <h1>{html.escape(p['title'])}</h1>
-  {_meta_line(p)}
-  {_rating_block(p)}
-  {_hero_img(p)}
-  <div class="postbody">
-{p['body']}
-  </div>
-  {_tag_pills(p)}
-</article>
-{respond}
+        body = f"""{_post_article(p)}
+{_respond_nudge(p)}
 {navbar}
 <p class="backlink"><a href="index.html">← All entries</a></p>"""
 
@@ -707,6 +717,101 @@ def build_post_pages(posts):
                     page(f"{p['title']} — {SITE_NAME}", body,
                          desc=p["summary"], url=p["file"], image=img)))
     return out
+
+
+# ------------------------------------------------------------- draft previews ---
+#
+# "Draft" means not on the index, not in the archive, not in the sitemap, not
+# in the RSS feed — but Michael still needs to actually SEE a finished entry
+# somewhere before deciding to publish it, and "run build_travel.py --drafts
+# and read the HTML" isn't that for anyone on a phone. So every draft ALSO
+# gets a real, deployed preview page — same live site, same styling, one
+# click from a phone — reachable ONLY by direct link. It follows the exact
+# posture the whole /travel/ blog already uses relative to the Bible project
+# (README: "deliberately not linked… discovery is via the sitemap only"):
+# unlinked from every nav/footer/index/archive, `noindex` on every page, and
+# simply absent from sitemap.xml/feed.xml (both already build from
+# load_posts(include_drafts=False), so this needs no change there). That is
+# NOT real access control — anyone who has or guesses the URL can open it —
+# consistent with how the rest of this blog already trades that for "no
+# backend, no login, still just git push".
+#
+# Preview pages live at travel/draft-<slug>.html — a SIBLING of the real post
+# pages, not a subdirectory — specifically so every relative link and
+# <img src="img/…"> already written into a post's body just works unchanged;
+# nesting under travel/drafts/ would have silently broken every image on
+# every draft. DRAFTS_INDEX_FILE is the one page that lists them, for a
+# single bookmarkable "what's waiting on me" URL.
+
+DRAFTS_INDEX_FILE = "drafts.html"
+
+
+def _draft_preview_file(slug):
+    return f"draft-{slug}.html"
+
+
+def _draft_banner():
+    return (
+        '<div class="draftbanner">🔒 <strong>Draft preview</strong> — not '
+        "published. This page isn't linked from the site and won't appear in "
+        f'search or the RSS feed. <a href="{DRAFTS_INDEX_FILE}">All drafts →</a></div>\n')
+
+
+def build_draft_previews(all_posts):
+    out = []
+    for p in all_posts:
+        if not p["draft"]:
+            continue
+        body = f"""{_post_article(p, extra=_draft_banner())}
+{_respond_nudge(p)}
+<p class="backlink"><a href="{DRAFTS_INDEX_FILE}">← All drafts</a></p>"""
+        out.append((_draft_preview_file(p["slug"]),
+                    page(f"[DRAFT] {p['title']} — {SITE_NAME}", body,
+                         desc=p["summary"], noindex=True)))
+    return out
+
+
+def build_drafts_index(all_posts):
+    drafts = [p for p in all_posts if p["draft"]]
+    if not drafts:
+        listing = '<p class="empty">Nothing in draft right now.</p>'
+    else:
+        rows = "\n".join(
+            f'<li><time datetime="{p["date"].isoformat()}">{p["date"].isoformat()}</time>'
+            f'<a href="{_draft_preview_file(p["slug"])}">{html.escape(p["title"])}</a>'
+            + (f'<span class="place">{html.escape(p["place"])}</span>' if p["place"] else "")
+            + "</li>"
+            for p in drafts)
+        listing = f'<ul class="archive">\n{rows}\n  </ul>'
+    body = f"""<section class="lede">
+  <h1>Drafts</h1>
+  <p>Unpublished entries, previewed here before they go out. Nothing on this
+  page is linked from the rest of the site or shows up in search — bookmark
+  it if you want a fixed place to check back.</p>
+</section>
+<div class="panel">
+{listing}
+</div>"""
+    return page(f"Drafts — {SITE_NAME}", body,
+                desc="Unpublished entries, for preview only.", noindex=True)
+
+
+def _prune_stale_draft_previews(current_draft_slugs):
+    """Remove a preview page left behind by a post that's since been published
+    or deleted — write() only ever adds files, so without this a stale
+    draft-<slug>.html (with a stale [DRAFT] title, pointing at content that
+    may since have changed under the real published URL) would just sit there
+    forever. Same class of bug as the orphaned travel/in-n-out-vancouver.html
+    from the local --drafts preview build a few commits back."""
+    if not os.path.isdir(OUT_DIR):
+        return
+    for fn in os.listdir(OUT_DIR):
+        if not (fn.startswith("draft-") and fn.endswith(".html")):
+            continue
+        slug = fn[len("draft-"):-len(".html")]
+        if slug not in current_draft_slugs:
+            os.remove(os.path.join(OUT_DIR, fn))
+            print(f"  (removed stale draft preview: {fn})")
 
 
 def build_about():
@@ -891,10 +996,11 @@ def write(rel, text):
 def main():
     ap = argparse.ArgumentParser(description="Build The Librarian Abroad (/travel/).")
     ap.add_argument("--drafts", action="store_true",
-                    help="include posts marked `draft: true` (local preview only)")
+                    help="fold drafts into the real index/archive too — local preview only")
     args = ap.parse_args()
 
-    posts = load_posts(include_drafts=args.drafts)
+    all_posts = load_posts(include_drafts=True)
+    posts = all_posts if args.drafts else [p for p in all_posts if not p["draft"]]
     os.makedirs(os.path.join(OUT_DIR, "img"), exist_ok=True)
 
     write("index.html", build_index(posts))
@@ -906,16 +1012,32 @@ def main():
     write("feed.xml", build_feed(posts))
     write("sitemap.xml", build_sitemap(posts))
 
-    drafts = sum(1 for p in posts if p["draft"])
+    # Always on, regardless of --drafts: this is what makes a draft checkable
+    # from the LIVE site (see the big comment above build_draft_previews), so
+    # a plain `python3 build_travel.py` before a normal commit keeps it in
+    # sync without a separate step to remember.
+    draft_slugs = {p["slug"] for p in all_posts if p["draft"]}
+    for fn, doc in build_draft_previews(all_posts):
+        write(fn, doc)
+    write(DRAFTS_INDEX_FILE, build_drafts_index(all_posts))
+    _prune_stale_draft_previews(draft_slugs)
+
+    drafts = len(draft_slugs)
     print("built {} post(s){} -> {}".format(
         len(posts),
-        " (including {} draft(s))".format(drafts) if drafts else "",
+        " (including {} draft(s))".format(drafts) if drafts and args.drafts else "",
         OUT_DIR))
     for p in posts:
         print("  {}  {:<34} {}{}".format(
             p["date"], p["file"], p["title"], "   [DRAFT]" if p["draft"] else ""))
     if args.drafts:
         print("\n⚠ --drafts is a LOCAL PREVIEW build. Re-run without it before committing.")
+    if drafts:
+        print("\n{} draft(s) previewable at {}/{} once pushed:".format(
+            drafts, BASE, DRAFTS_INDEX_FILE))
+        for p in all_posts:
+            if p["draft"]:
+                print("  {}{}/{}".format(SITE_URL, BASE, _draft_preview_file(p["slug"])))
 
 
 if __name__ == "__main__":
