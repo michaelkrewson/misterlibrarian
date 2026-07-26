@@ -708,7 +708,7 @@ tr.ch-dim td{opacity:0.55}
 
 /* --- chapter art: a public-domain painting as a frontispiece under the h2 --- */
 .chapter-art{margin:14px 0 22px;padding:0;text-align:center}
-.chapter-art img{max-width:100%;height:auto;border-radius:7px;display:block;margin:0 auto;
+.chapter-art img{max-width:480px;width:100%;height:auto;border-radius:7px;display:block;margin:0 auto;
   box-shadow:0 3px 14px rgba(0,0,0,.35)}
 .chapter-art figcaption{margin:9px auto 0;max-width:620px;text-align:center;line-height:1.5}
 .chapter-art .art-title{font-size:14.5px}
