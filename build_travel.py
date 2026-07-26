@@ -235,6 +235,24 @@ def page(title, body, active="", desc="", url="", image="", noindex=False):
 
 FNAME_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-([a-z0-9][a-z0-9-]*)\.html$")
 
+_TAG_RE = re.compile(r"<[^>]+>")
+_WS_RE = re.compile(r"\s+")
+# A ceiling, not a real limit — a normal entry (even a long one, ~9-12K chars
+# of plain text) is indexed in full, because a search box that quietly can't
+# find a word that's genuinely on the page is worse than a slightly heavier
+# index.html. This only exists to stop one pathological post (a full menu
+# transcript, a pasted transcript) from blowing the card's markup out
+# indefinitely. See build_index()'s `search` var for the real scaling note.
+SEARCH_BODY_CHARS = 20_000
+
+
+def _plain_text(body_html):
+    """Strip tags out of a post body for search indexing. Not a sanitizer —
+    the input is our own post source, never reader-supplied — just enough to
+    turn markup into words a search box can match against."""
+    text = html.unescape(_TAG_RE.sub(" ", body_html))
+    return _WS_RE.sub(" ", text).strip()
+
 
 def parse_front_matter(text, where):
     """Split `key: value` front matter from the HTML body.
@@ -330,6 +348,15 @@ def load_posts(include_drafts=False):
             "summary": meta["summary"],
             "draft": is_draft,
             "body": body,
+            # Lowercased haystack for the on-page search box — title/place/tags/
+            # summary in full (short, and exactly the fields a reader searches
+            # by), body text capped at SEARCH_BODY_CHARS so a long post can't
+            # blow up every card's markup. See build_search_data() for why this
+            # rides in the page rather than a separate fetched index.
+            "search": _WS_RE.sub(" ", " ".join([
+                meta["title"], meta.get("place", ""), meta.get("tags", ""),
+                meta["summary"], _plain_text(body)[:SEARCH_BODY_CHARS],
+            ])).strip().lower(),
         })
 
     posts.sort(key=lambda p: (p["date"], p["slug"]), reverse=True)
@@ -438,7 +465,7 @@ def post_card(p):
     data_tags = " ".join(_tag_slug(t) for t in p["tags"])
     stars = (f'<div class="cardrating">{_stars_svg(p["stars"], 17)}</div>'
              if p["stars"] is not None else "")
-    return f"""<article class="card" data-tags="{html.escape(data_tags, quote=True)}" data-stars="{p['stars'] if p['stars'] is not None else -1}">
+    return f"""<article class="card" data-tags="{html.escape(data_tags, quote=True)}" data-stars="{p['stars'] if p['stars'] is not None else -1}" data-search="{html.escape(p['search'], quote=True)}">
   <a class="cardlink" href="{p['file']}">
     {_hero_img(p, 'thumb')}
     <div class="cardbody">
@@ -457,6 +484,7 @@ def build_index(posts):
         cards = ('<p class="empty">Nothing published yet. Add a file to '
                  '<code>source/travel/</code> and rebuild.</p>')
         chips = ""
+        search = ""
         archive = ""
     else:
         cards = "\n".join(post_card(p) for p in posts)
@@ -469,6 +497,20 @@ def build_index(posts):
                          f'<button class="chip" data-tag="{_tag_slug(t)}">{html.escape(t)}</button>'
                          for t in all_tags)
                      + "</div>")
+        # Client-side only — no separate index file to fetch, keep in sync, or go
+        # stale between builds. Each card already carries its own searchable text
+        # in data-search (see post_card()), so this scales the same way the tag
+        # filter already does: more cards on one page, not more infrastructure.
+        # If the archive ever gets big enough that shipping every card's text is
+        # itself a problem, that's the point to switch to a fetched JSON index —
+        # not before.
+        search = (
+            '<div class="searchbar" id="searchbar">'
+            '<input type="search" id="searchInput" '
+            'placeholder="Search past entries — a dish, a place, a tag…" '
+            'aria-label="Search past entries"/>'
+            '<span class="searchcount" id="searchCount"></span>'
+            "</div>")
         rows = "\n".join(
             f'<li><time datetime="{p["date"].isoformat()}">{p["date"].isoformat()}</time>'
             f'<a href="{p["file"]}">{html.escape(p["title"])}</a>'
@@ -494,28 +536,61 @@ def build_index(posts):
   <p>{html.escape(BLURB)}</p>
 </section>
 {_half_defs(17)}{_half_defs(14)}
+{search}
 {chips}
 {sortbar}
 <div class="cards" id="cards">
 {cards}
 </div>
+<p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
 {archive}
 <script>
-// Tag filter — pure client-side, so there are no per-tag pages to generate,
-// keep in sync, or leave behind when a tag stops being used.
+// Search box + tag filter, combined — pure client-side, so there are no
+// per-tag or per-query pages to generate, keep in sync, or leave behind.
+// Both narrow the SAME card list, so a query and a tag chip compose (AND,
+// not OR): typing "ramen" while the "oregon" chip is on shows only cards
+// matching both.
 (function(){{
-  var bar = document.getElementById('filters');
-  if (!bar) return;
-  bar.addEventListener('click', function(e){{
-    var b = e.target.closest('.chip');
-    if (!b) return;
-    var want = b.dataset.tag;
-    bar.querySelectorAll('.chip').forEach(function(c){{ c.classList.toggle('on', c === b); }});
-    document.querySelectorAll('#cards .card').forEach(function(card){{
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
+  var filterBar = document.getElementById('filters');
+  var input = document.getElementById('searchInput');
+  var count = document.getElementById('searchCount');
+  var empty = document.getElementById('searchEmpty');
+  var activeTag = '';
+  var query = '';
+
+  function apply(){{
+    var shown = 0;
+    cards.forEach(function(card){{
       var tags = (card.dataset.tags || '').split(/\\s+/);
-      card.style.display = (!want || tags.indexOf(want) !== -1) ? '' : 'none';
+      var tagOk = !activeTag || tags.indexOf(activeTag) !== -1;
+      var textOk = !query || (card.dataset.search || '').indexOf(query) !== -1;
+      var show = tagOk && textOk;
+      card.style.display = show ? '' : 'none';
+      if (show) shown++;
     }});
-  }});
+    if (empty) empty.hidden = shown > 0;
+    if (count) count.textContent = query
+      ? (shown + ' of ' + cards.length + (cards.length === 1 ? ' entry' : ' entries'))
+      : '';
+  }}
+
+  if (filterBar) {{
+    filterBar.addEventListener('click', function(e){{
+      var b = e.target.closest('.chip');
+      if (!b) return;
+      activeTag = b.dataset.tag;
+      filterBar.querySelectorAll('.chip').forEach(function(c){{ c.classList.toggle('on', c === b); }});
+      apply();
+    }});
+  }}
+
+  if (input) {{
+    input.addEventListener('input', function(){{
+      query = input.value.trim().toLowerCase();
+      apply();
+    }});
+  }}
 }})();
 
 // Re-order the cards by rating. Pure DOM shuffle — no second page to keep in sync,
