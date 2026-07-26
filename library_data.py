@@ -821,6 +821,10 @@ DICTIONARY = [
      "A YOUTH, boy, young man — also a servant or attendant. Jeremiah objects to his call with it: 'I do not know how to speak, for I am only a NA'AR' (1:6), the reluctant-prophet's plea of inadequacy (compare Moses, Gideon, Isaiah). God does not dispute the youth; he answers 'do not say I am a youth' and sends him anyway. The same word covers a wide span of age and status — the infant Moses in the ark, the lad Isaac on Moriah, a king's servant.", ("Jeremiah", 1, 6)),
     ("chatat", "chatat", "חָתַת", "chatat",
      "TO BE SHATTERED, dismayed, broken with terror. In Jeremiah's charge it is a warning built on a pun: 'do not be SHATTERED (chatat) before them, lest I SHATTER (achittekha) you before them' (1:17) — fear the people and God himself will break you; the only safety is obedience. The same root sounds through the prophets for the panic of armies and the collapse of courage; its opposite is the steadiness of the one who trusts.", ("Jeremiah", 1, 17)),
+    ("baqbuq", "baqbuq", "בַּקְבֻּק", "baqbuq",
+     "A FLASK, narrow-necked jug — and the Hebrew word is almost certainly onomatopoeic, imitating the buq-buq gurgle of liquid poured from just such a vessel (compare English 'glug-glug'). Jeremiah is sent to buy one made by a potter (19:1) — not the soft, reshapable clay of the previous chapter's wheel, but a finished, FIRED piece — and ordered to smash it before witnesses at the valley's edge, 'that it cannot be mended again' (19:11). ⚠️ The same three consonants, b-q-q, return four verses after the purchase in a very different verb: 'I will EMPTY OUT (baqoti) the counsel of Judah and Jerusalem' (19:7) — the sign's own name becomes the sentence.", ("Jeremiah", 19, 1)),
+    ("cheres", "cheres", "חֶרֶס", "cheres",
+     "CLAY, earthenware — and, in the plural, POTSHERDS: the broken pieces a firing, and a lifetime of use, leave behind. It names the material of Jeremiah's flask ('a vessel of cheres,' 19:1) and, almost certainly, the gate he carries it through — sha'ar ha-charsit (19:2), 'the Potsherd Gate,' the industrial quarter's own name for its rubbish, opening exactly where the potters' broken rejects were thrown out. ⚠️ The gate's name is one of the Bible's small, genuine puzzles: the consonants are written one way and traditionally read another, a ketiv/qere pair, and the shelf itself divides on what it even means. KJV, apparently hearing a different sense of the same letters (cheres, 'sun'), reads 'the east gate'; ASV simply transliterates, 'the gate Harsith'; Douay, following the Vulgate, reads 'the earthen gate.' This translation follows the reading that fits the scene it stands in: a flask of fired clay, broken at the gate named for broken clay.", ("Jeremiah", 19, 2)),
     ("raz", "raz", "רָז", "raz",
      "MYSTERY, secret — an Aramaic word borrowed from Persian, the theme-word of Daniel 2, where it sounds eight times: Nebuchadnezzar's dream is a RAZ that only 'a God in heaven who reveals mysteries' can disclose (2:28). It names not a puzzle to be solved by cleverness but a hidden thing that must be REVEALED from above. ⚠️ The word travels: the Greek Bible and then the New Testament render it MYSTERION — Paul's 'mystery' of the gospel, once hidden and now made known (Romans 16:25; Ephesians 3:3-6), is Daniel's RAZ.", ("Daniel", 2, 18)),
     ("pesher", "pishra / pesher", "פִּשְׁרָא", "pishra / pesher",
@@ -1173,6 +1177,36 @@ ENCYCLOPEDIA = [
          refs=[("Jeremiah", 2, 8), ("Jeremiah", 7, 9), ("Jeremiah", 19, 5),
                ("Jeremiah", 23, 13), ("Jeremiah", 32, 35), ("Zephaniah", 1, 4)],
          desc='The storm god of the Canaanites and Phoenicians, and the rival the Hebrew prophets name more often than any other. <em>Ba&rsquo;al</em> is an ordinary Hebrew noun before it is a name — &lsquo;owner, master, husband&rsquo; — which the prophets exploit: Hosea has God say that Israel will call him &lsquo;my husband&rsquo; (<em>ishi</em>) and &lsquo;no longer call me my Baal&rsquo; (2:16). As a god he is HADAD, lord of rain, thunder and the fertility of the fields, titled &lsquo;rider of the clouds&rsquo;; his father is El, his sister-consort Anat, and his enemies are Yam (Sea) and Mot (Death). ⚠ Psalm 68:4 gives &lsquo;rider of the clouds&rsquo; to Jehovah instead — the Bible taking the storm god&rsquo;s own epithet and reassigning it, and the same idiom stands behind &lsquo;one like a son of man coming with the clouds&rsquo; (Daniel 7:13).<br><br><strong>The archaeology.</strong> Almost everything we know about Baal worship from the WORSHIPPERS&rsquo; own side comes from one find: in 1928 a farmer&rsquo;s plough struck a tomb at Minet el-Beida on the Syrian coast, and excavation from 1929 under CLAUDE SCHAEFFER uncovered the city of UGARIT (Ras Shamra) and its archive — clay tablets in a previously unknown alphabetic cuneiform, written c. 1400–1200 BC, including the long poems now called the BAAL CYCLE. Before Ugarit, Baal was known mainly through the polemic of his opponents. ⚠ But the gap must be stated: Ugarit is Late Bronze Age and some 400 km north of Jerusalem, while Jeremiah is Iron Age Judah five centuries later — the cult certainly changed in between, and the tablets describe its Syrian form, not Judah&rsquo;s. Objects: bronze &lsquo;smiting god&rsquo; figurines — a striding male, arm raised to strike — turn up across the Levant, and a celebrated limestone stele from Ugarit (now in the Louvre) shows the god with mace lifted and a spear whose head runs down like a lightning-bolt. ⚠ Identifying any individual figurine as Baal SPECIFICALLY is almost always an inference from iconography, not from an inscription on the object.<br><br><strong>What the worship was.</strong> High places (<em>bamot</em>), standing stones, altars and incense — Jeremiah&rsquo;s charge is &lsquo;burning incense to Baal&rsquo; (7:9) — and, as the Bible states it, child sacrifice by fire at Topheth in the Valley of Ben-Hinnom (19:5; 32:35 locates &lsquo;the high places of Baal&rsquo; there). Elijah&rsquo;s contest on Carmel is built as a storm-god polemic: the tests are FIRE and then RAIN, Baal&rsquo;s own portfolio, and he supplies neither. Two finds sit close to Jeremiah&rsquo;s own doorstep. Thousands of JUDEAN PILLAR FIGURINES — a moulded female head on a pillar body — come from ordinary houses in 8th–7th century Judah, Jerusalem included, which is household religion in exactly Jeremiah&rsquo;s century; ⚠ what they were FOR (Asherah? a fertility charm? a votive?) is genuinely disputed. And the inscriptions from KUNTILLET AJRUD (c. 800 BC, in the Sinai) read &lsquo;Jehovah of Samaria and his asherah&rsquo; — the epigraphic face of the hedging the prophets attack; ⚠ whether &lsquo;his asherah&rsquo; means the goddess or a wooden cult object is unresolved. The Jerusalem Topheth itself has never been securely identified in the ground. The Phoenician and Punic tophets — Carthage above all, with Motya, Sulcis and Tharros — do contain thousands of urns holding cremated infant and animal bone, the strongest physical evidence for the practice anywhere in the Phoenician world; ⚠ and their reading is fiercely contested, some specialists taking them for cemeteries of infants who died naturally, with the dental and skeletal age studies argued both ways. This library does not cast a vote.<br><br>⚠ <strong>Note for Jeremiah 18.</strong> Baal is NOT named in the potter&rsquo;s-house chapter. It says only that the people &lsquo;burn incense to worthlessness&rsquo; (18:15), the prophets&rsquo; standard shorthand for an idol. The god is named on either side of it — 2:8, 19:5, 23:13, 32:29-35 — so the identification is fair, but it is the surrounding chapters that supply the name, not this one.'),
+    dict(slug="topheth", name="Topheth", kind="place",
+         aliases=["Topheth", "Gehenna", "valley of the son of Hinnom", "valley of Ben-Hinnom", "valley of slaughter"],
+         coords=(31.7710, 35.2295, 0.03),
+         refs=[("Jeremiah", 19, 2), ("Jeremiah", 19, 6), ("Jeremiah", 19, 11), ("Jeremiah", 19, 12),
+               ("Jeremiah", 19, 13), ("Jeremiah", 19, 14), ("Jeremiah", 7, 31), ("Jeremiah", 32, 35),
+               ("2 Kings", 16, 3), ("2 Kings", 21, 6), ("2 Kings", 23, 10),
+               ("Matthew", 5, 22), ("Matthew", 5, 29), ("Matthew", 5, 30)],
+         desc="A real, walkable valley — <em>gei Ven-Hinnom</em>, &lsquo;the valley of the son of Hinnom&rsquo; — running "
+              "along Jerusalem&rsquo;s southern and western edge, past the pottery workshops and their dumps at the "
+              "<strong>Potsherd Gate</strong> (Jeremiah 19:2), down to where it meets the Kidron. Kings Ahaz and "
+              "Manasseh made their own sons &lsquo;pass through the fire&rsquo; here (2 Kings 16:3; 21:6); Josiah&rsquo;s "
+              "reform &lsquo;defiled Topheth&hellip; that no man might make his son or his daughter pass through the "
+              "fire to Molech&rsquo; (2 Kings 23:10). ⚠ Jeremiah, by contrast, names the recipient BAAL, not Molech "
+              "(19:5; 7:31; 32:35) — a tension this library states rather than resolves; see the note at "
+              "<a href='jeremiah-19.html#n19-4'>Jeremiah 19:4&ndash;6</a> and the <a href='#baal'>Baal entry</a>&rsquo;s "
+              "own account of the archaeology (the Jerusalem Topheth itself has never been securely located in the "
+              "ground; the Phoenician tophets of Carthage, Motya, Sulcis and Tharros are the strongest physical "
+              "evidence for the practice anywhere, and their reading is contested).<br><br>"
+              "<strong>The name itself, and the renaming.</strong> Some scholars suggest <em>Topheth</em> carries "
+              "the vowels of a different word, <em>bosheth</em>, &lsquo;shame&rsquo;, deliberately stamped onto the "
+              "site&rsquo;s consonants — a scribal insult read aloud, the same device some propose behind "
+              "&lsquo;Molech&rsquo; itself. Jeremiah 19:6 pronounces the valley&rsquo;s own name condemned: &lsquo;this "
+              "place will no longer be called Topheth&hellip; but the valley of slaughter&rsquo; — an oracle that "
+              "recurs, almost word for word, earlier in the book at 7:31&ndash;32.<br><br>"
+              "<strong>Gehenna.</strong> The valley&rsquo;s Greek name, <em>Geenna</em>, becomes the New Testament&rsquo;s "
+              "standing name for the fiery end of the wicked — first met on these pages inside the Sermon on the Mount, "
+              "&lsquo;the Gehenna of fire&rsquo; (Matthew 5:22). Ordinary geography doing figurative work: a valley a "
+              "reader could once have walked to from the palace in a few minutes, still doing that work centuries "
+              "later, on another continent's readers.",
+         modern="the Wadi er-Rababi, southwest of Jerusalem's Old City"),
     dict(slug="gadara", name="Gadara and the Gadarenes", kind="place",
          aliases=["Gadarenes"],
          coords=(32.65, 35.68, 0.5),
@@ -1759,7 +1793,10 @@ ENCYCLOPEDIA = [
               "the first Temple on Moriah, c. 966 BC (2 Chronicles 3:1). In John, Jesus goes up for the festivals "
               "— three Passovers structure the Gospel — and clears the temple's courts at the first of them "
               "(2:13-22). Nebuchadnezzar besieges it in 605 BC and carries off its temple vessels and its "
-              "brightest youths (Daniel 1:1-6). The city of the temple, the exile, the passion — and, in "
+              "brightest youths (Daniel 1:1-6). ⚠ Its southern and western flank is the valley of Ben-Hinnom — "
+              "TOPHETH, later Greek GEHENNA (see that entry) — where the Potsherd Gate opened onto the "
+              "potters' dumps and the high places where children were burned (Jeremiah 19). The city of the "
+              "temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
          refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3), ("Nehemiah", 1, 3), ("Acts", 1, 4), ("Galatians", 1, 17)],
          coords=(31.7784, 35.2354, 0.12),
@@ -3998,6 +4035,9 @@ XREFS = [
     (('Jeremiah', 18, 11), ('Genesis', 2, 7), "yatsar, the potter's verb that formed the man from the dust, turned around: 'I am FORMING evil against you'"),
     (('Jeremiah', 18, 6), ('Daniel', 2, 41), "clay in a hand versus clay in a statue's feet — Daniel's iron mixed with potter's clay (Aramaic pechar) will not bond, and that failure to hold together is the point"),
     (('Jeremiah', 18, 18), ('Jeremiah', 20, 2), "'let us devise devices against Jeremiah… strike him with the tongue' — the plot that turns physical two chapters later, when Pashhur strikes him and puts him in the stocks"),
+    (('Jeremiah', 19, 11), ('Jeremiah', 18, 4), "the same clay, now FIRED — chapter 18's vessel is reworked on the wheel when it goes wrong; chapter 19's is smashed 'so that it cannot be mended again'. The window for remaking was the window before the kiln"),
+    (('Jeremiah', 19, 5), ('Genesis', 22, 13), "olah, 'burnt offering' — the identical word for Abraham's ram 'in place of his son' and for the sons Baal's worshippers burn AS the offering; one substitutes, the other does not"),
+    (('Jeremiah', 19, 15), ('Jeremiah', 20, 1), "'these things' Pashhur hears in the very next verse are this sermon, just preached in the temple court — the valley's oracle carried indoors, and struck down for it"),
     (("Matthew", 8, 1), ("Matthew", 4, 23), "the three-verb summary promised teaching AND healing: chapters 5-7 were the teaching, and the healing starts as he comes down the mountain"),
     (("Matthew", 8, 2), ("Matthew", 2, 11), "proskyneō, a fourth time — the magi's verb, Herod's lie and the devil's demand, now offered by an unclean man with nothing to give"),
     (("Matthew", 8, 8), ("Matthew", 3, 11), "ouk eimi hikanos, 'I am not worthy' — the Baptist said it of the sandals, the centurion of his own roof; the only two in Matthew who say it"),
@@ -8852,6 +8892,26 @@ DICTIONARY_ES = {
         "después de llamar al obrero <em>ha-YOTSER</em>, «el alfarero», cuatro veces (18:2, 3, 4, 6), Dios "
         "usa la misma raíz de sí mismo como participio y con otro objeto: «mirad, estoy FORMANDO el mal "
         "contra vosotros» (18:11). El alfarero sigue en el torno; lo que ahora está en el torno es esto."),
+    "baqbuq": ("frasco",
+        "UN FRASCO, jarra de cuello angosto — y la palabra hebrea es, casi con toda certeza, onomatopéyica: "
+        "imita el gluglú (<em>buq-buq</em>) del líquido al verterse de una vasija así. Jeremías recibe la "
+        "orden de comprar uno hecho por un alfarero (19:1) — no ya el barro blando y remodelable del torno "
+        "del capítulo anterior, sino una pieza terminada y COCIDA — y de romperlo ante testigos, en el filo "
+        "del valle, «de modo que no se pueda remendar más» (19:11). ⚠ Las mismas tres consonantes, b-q-q, "
+        "vuelven cuatro versículos después de la compra en un verbo muy distinto: «VACIARÉ el consejo de "
+        "Judá y de Jerusalén» (19:7, <em>baqoti</em>) — el nombre de la señal se vuelve la sentencia misma."),
+    "cheres": ("barro cocido",
+        "BARRO COCIDO, cerámica — y, en plural, TIESTOS: los pedazos rotos que deja una cocción y toda una "
+        "vida de uso. Nombra el material del frasco de Jeremías («una vasija de <em>cheres</em>», 19:1) y, "
+        "casi con toda certeza, la puerta por la que lo lleva: <em>sha&rsquo;ar ha-charsit</em> (19:2), «la "
+        "Puerta de los Tiestos» — el nombre que el propio barrio de los alfareros daba a su basura, justo "
+        "donde se tiraban las piezas rotas. ⚠ El nombre de la puerta es uno de los pequeños enigmas genuinos "
+        "de la Biblia: las consonantes se escriben de un modo y tradicionalmente se leen de otro — un "
+        "<em>ketiv/qere</em> — y el propio estante de versiones se divide sobre lo que incluso significa. "
+        "KJV, oyendo aparentemente otro sentido de las mismas letras (<em>cheres</em>, «sol»), lee «la "
+        "puerta oriental»; ASV simplemente transcribe «la puerta Harsith»; Douay, siguiendo la Vulgata, lee "
+        "«la puerta de barro». Esta traducción sigue la lectura que encaja con la escena en la que se "
+        "encuentra: un frasco de barro cocido, roto en la puerta que lleva el nombre del barro roto."),
     "nacham": ("consolar / arrepentirse",
         "CONSOLAR — y lamentar. La esperanza del nombre de Noé (Génesis 5:29) vuelve como el pesar de Dios "
         "(6:6): una raíz, dos estados de ánimo opuestos. ⚠ En Jeremías 18 no es ni un nombre ni un estado de "
@@ -8975,6 +9035,27 @@ ENCYCLOPEDIA_ES["jerusalem"] = ("Jerusalén",
     "estaban los lugares altos donde se quemaban niños (Jeremías 19:2, 5). El nombre griego de ese "
     "valle, <em>Gehena</em>, se volvió una palabra para el juicio. Cayó ante Babilonia en 587 a. C., "
     "como Jeremías había dicho.")
+ENCYCLOPEDIA_ES["topheth"] = ("Tofet",
+    "Un valle real y transitable — <em>gei Ven-Hinom</em>, «el valle del hijo de Hinom» — que corre por el "
+    "borde sur y occidental de Jerusalén, pasando por los talleres de cerámica y sus vertederos junto a la "
+    "<strong>Puerta de los Tiestos</strong> (Jeremías 19:2), hasta encontrarse con el Cedrón. Los reyes Acaz "
+    "y Manasés hicieron «pasar por fuego» a sus propios hijos aquí (2 Reyes 16:3; 21:6); la reforma de "
+    "Josías «profanó el Tofet… para que nadie hiciera pasar a su hijo o a su hija por fuego a Moloc» (2 "
+    "Reyes 23:10). ⚠ Jeremías, en cambio, nombra a BAAL como destinatario, no a Moloc (19:5; 7:31; 32:35) — "
+    "una tensión que esta biblioteca declara en vez de resolver. El Tofet de Jerusalén mismo nunca se ha "
+    "localizado con seguridad en el terreno; los tofets fenicios de Cartago, Motia, Sulcis y Tharros son la "
+    "evidencia física más fuerte de la práctica en cualquier lugar, y su lectura sigue siendo discutida.<br><br>"
+    "<strong>El nombre, y el nuevo nombre.</strong> Algunos eruditos sugieren que <em>Tofet</em> lleva las "
+    "vocales de otra palabra, <em>bosheth</em>, «vergüenza», estampadas deliberadamente sobre las "
+    "consonantes del lugar — un insulto de escriba leído en voz alta, el mismo recurso que algunos proponen "
+    "detrás de «Moloc» mismo. Jeremías 19:6 condena el propio nombre del valle: «no se llamará más este "
+    "lugar Tofet… sino Valle de la Matanza» — un oráculo que se repite, casi palabra por palabra, antes en "
+    "el libro, en 7:31-32.<br><br>"
+    "<strong>Gehena.</strong> El nombre griego del valle, <em>Geenna</em>, se convierte en el nombre fijo "
+    "del Nuevo Testamento para el fin ardiente de los impíos — encontrado ya en estas páginas dentro del "
+    "Sermón del Monte, «la Gehena de fuego» (Mateo 5:22). Geografía ordinaria haciendo trabajo figurado: un "
+    "valle al que un lector podría haber caminado desde el palacio en pocos minutos, todavía haciendo ese "
+    "trabajo siglos después, para lectores de otro continente.")
 ENCYCLOPEDIA_ES["anathoth"] = ("Anatot",
     "El pueblo natal de Jeremías, a unos 5 km al nordeste de Jerusalén, en territorio de Benjamín — "
     "una aldea sacerdotal (Josué 21:18), lo que explica la primera línea del libro: «de los sacerdotes "
