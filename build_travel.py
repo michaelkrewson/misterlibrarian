@@ -146,7 +146,17 @@ COMPASS_SVG = """<svg class="mark" viewBox="0 0 48 48" width="62" height="62" ar
 
 def header(active=""):
     """Site header. NOTE: every link here is relative and stays inside /travel/ —
-    there is intentionally no route from this blog to the Bible project."""
+    there is intentionally no route from this blog to the Bible project.
+
+    The search box lives here, not just on the index page, so it's reachable
+    from anywhere on the site — a post page, About, wherever. It's a REAL form
+    (action="index.html", GET, name="q") on purpose: submitting it works even
+    with JS off, or from a page that has no cards to filter client-side, by
+    just navigating to the index with ?q=… in the URL. index.html's own script
+    then does two extra things JS-only: filters live as you type instead of
+    waiting for Enter, and reads a ?q= it was handed on arrival and applies it
+    immediately, so a search that starts on a post page lands already-filtered.
+    """
     def cls(k):
         return ' class="on"' if k == active else ""
     return f"""<header class="site-head">
@@ -156,6 +166,9 @@ def header(active=""):
     <span class="brand-name">The Librarian <span class="abroad">Abroad</span></span>
   </a>
   {'</h1>' if active == "home" else '</div>'}
+  <form class="headersearch" action="index.html" method="get" role="search">
+    <input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/>
+  </form>
   <div class="rule"></div>
   <div class="tag">{TAGLINE}</div>
   <nav class="topnav">
@@ -497,20 +510,16 @@ def build_index(posts):
                          f'<button class="chip" data-tag="{_tag_slug(t)}">{html.escape(t)}</button>'
                          for t in all_tags)
                      + "</div>")
-        # Client-side only — no separate index file to fetch, keep in sync, or go
-        # stale between builds. Each card already carries its own searchable text
-        # in data-search (see post_card()), so this scales the same way the tag
-        # filter already does: more cards on one page, not more infrastructure.
-        # If the archive ever gets big enough that shipping every card's text is
-        # itself a problem, that's the point to switch to a fetched JSON index —
-        # not before.
-        search = (
-            '<div class="searchbar" id="searchbar">'
-            '<input type="search" id="searchInput" '
-            'placeholder="Search past entries — a dish, a place, a tag…" '
-            'aria-label="Search past entries"/>'
-            '<span class="searchcount" id="searchCount"></span>'
-            "</div>")
+        # The INPUT itself lives in the header now (see header() — reachable from
+        # every page). This is just where the live result count shows up once a
+        # search is active. Client-side only — no separate index file to fetch,
+        # keep in sync, or go stale between builds. Each card already carries its
+        # own searchable text in data-search (see post_card()), so this scales the
+        # same way the tag filter already does: more cards on one page, not more
+        # infrastructure. If the archive ever gets big enough that shipping every
+        # card's text is itself a problem, that's the point to switch to a
+        # fetched JSON index — not before.
+        search = '<div class="searchcount" id="searchCount"></div>'
         rows = "\n".join(
             f'<li><time datetime="{p["date"].isoformat()}">{p["date"].isoformat()}</time>'
             f'<a href="{p["file"]}">{html.escape(p["title"])}</a>'
@@ -545,15 +554,15 @@ def build_index(posts):
 <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
 {archive}
 <script>
-// Search box + tag filter, combined — pure client-side, so there are no
+// Search box (in the header, reachable from every page — see header() in
+// build_travel.py) + tag filter, combined. Both narrow the SAME card list, so
+// a query and a tag chip compose (AND, not OR): typing "ramen" while the
+// "oregon" chip is on shows only cards matching both. Pure client-side — no
 // per-tag or per-query pages to generate, keep in sync, or leave behind.
-// Both narrow the SAME card list, so a query and a tag chip compose (AND,
-// not OR): typing "ramen" while the "oregon" chip is on shows only cards
-// matching both.
 (function(){{
   var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
   var filterBar = document.getElementById('filters');
-  var input = document.getElementById('searchInput');
+  var input = document.getElementById('headerSearch');
   var count = document.getElementById('searchCount');
   var empty = document.getElementById('searchEmpty');
   var activeTag = '';
@@ -586,10 +595,31 @@ def build_index(posts):
   }}
 
   if (input) {{
+    // Live as you type, so Enter is never required — but the input still sits
+    // inside a real <form action="index.html">, which is what makes searching
+    // from a POST PAGE work (plain GET navigation, no JS needed there). Here,
+    // already on the index, that same submit would just reload the page with
+    // an unchanged ?q=, so it's swallowed — the input event already applied it.
+    var form = input.form;
+    if (form) form.addEventListener('submit', function(e){{ e.preventDefault(); }});
+
     input.addEventListener('input', function(){{
       query = input.value.trim().toLowerCase();
       apply();
+      var url = new URL(location.href);
+      if (query) url.searchParams.set('q', input.value); else url.searchParams.delete('q');
+      history.replaceState(null, '', url.pathname + url.search + url.hash);
     }});
+
+    // Arriving here FROM another page's header search lands as index.html?q=…
+    // — pick that up and apply it immediately rather than showing everything
+    // until the reader retypes what they already searched.
+    var handed = new URLSearchParams(location.search).get('q');
+    if (handed) {{
+      input.value = handed;
+      query = handed.trim().toLowerCase();
+      apply();
+    }}
   }}
 }})();
 
