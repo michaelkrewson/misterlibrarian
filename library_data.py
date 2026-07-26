@@ -79,6 +79,8 @@ DICTIONARY = [
     ("kraspedon", "kraspedon", "κράσπεδον", "kraspedon", "FRINGE, tassel — the word the Greek Old Testament uses for the TASSELS the Law commands on the four corners of a garment (Numbers 15:38-39; Deuteronomy 22:12, neither yet on these pages), which means Matthew 9:20 is quietly showing Jesus wearing them: the bleeding woman touches his kraspedon, not merely 'his robe.' ⚠ The word returns twice more in this Gospel — crowds beg only to touch it at 14:36, and Jesus criticizes Pharisees for lengthening theirs for show at 23:5 — three appearances, three different lights on the same detail of dress.", ("Matthew", 9, 20)),
     ("splanchnizomai", "splanchnizomai", "σπλαγχνίζομαι", "splanchnizomai", "TO HAVE COMPASSION, at the gut — built on splanchna, the inward organs (English 'splanchnic' descends from it), so the verb is not sympathy observed from a distance but something felt in the body. Matthew 9:36 is its first use in this Gospel: Jesus sees the crowds, 'harassed and thrown down like sheep without a shepherd,' and is moved AT THE INSIDES. ⚠ It recurs at moments of real need — before feeding the five thousand (14:14) and the four thousand (15:32), for two blind men (20:34), never as a mere narrative aside.", ("Matthew", 9, 36)),
     ("sozo", "sōzō", "σῴζω", "sōzō", "TO SAVE — and, in the same breath, TO HEAL; Greek does not force a choice between the two senses the way English does. It is the verb of Jesus' own name, unfolded at his naming: 'you shall call his name Jesus, for he will SAVE (sōsei) his people from their sins' (Matthew 1:21). Matthew 9 puts the same verb in three mouths in three verses over the bleeding woman — her own hope ('I will be sozō,' 9:21), Jesus' verdict ('your faith has sesōken you,' 9:22), and the narrator's confirmation ('the woman was esōthē,' 9:22) — so a chapter about physical healing keeps sounding, in its own vocabulary, exactly like the larger promise the name itself made.", ("Matthew", 9, 21)),
+    ("eirene", "eirēnē", "εἰρήνη", "eirēnē", "PEACE — and, in Matthew 10, something almost sent by hand: a disciple's spoken peace 'comes upon' a worthy house or, finding none, 'returns' to the one who spoke it (10:13), as if the blessing were a physical thing that cannot simply vanish unclaimed. ⚠ The same chapter turns the word inside out twenty-one verses later — 'I did not come to bring peace, but a sword' (10:34) — and this translation prints both without smoothing the collision: a household's peace can be given and returned like a possession, and the peace of the whole earth is, in the same breath, what Jesus says he did not come to bring.", ("Matthew", 10, 13)),
+    ("psyche", "psychē", "ψυχή", "psychē", "SOUL — and, just as often, LIFE; one Greek word doing two jobs English keeps separate. Matthew 10 uses it both ways within eleven verses: 'fear the one who can destroy both soul and body in Gehenna' (10:28, the self clearly distinct from the body), then 'whoever finds his psychē will lose it, and whoever loses his psychē for my sake will find it' (10:39, where 'life' is the only sense that makes the paradox work). ⚠ This translation renders it 'soul' in the first case and 'life' in the second, printing the word's genuine double range rather than forcing one English noun to cover both — the ambiguity is in the Greek, not smoothed away by the choice of English.", ("Matthew", 10, 28)),
     ("lathra", "lathra", "λάθρᾳ", "lathra", "SECRETLY, quietly, without publicity — an adverb that takes its moral colour entirely from who is using it. It occurs twice in Matthew's opening chapters and nowhere else in his Gospel: Joseph, 'being righteous and unwilling to expose her to disgrace,' resolves to divorce Mary <em>lathra</em> (1:19) — quietly, to shield a woman from a public penalty; and Herod calls the magi <em>lathra</em> (2:7) — secretly, to fix the location of a child he intends to kill. ⚠ One word, two chapters, mercy and murder, and Matthew never comments on the pairing.", ("Matthew", 2, 7)),
     ("akriboo", "akriboō", "ἀκριβόω", "akriboō", "To ASCERTAIN EXACTLY — to learn a thing to the last detail. A rare verb, in the New Testament only in Matthew 2, twice, with its adverb <em>akribōs</em> standing between: Herod 'ascertained exactly the time' (v7), tells the magi to 'search out exactly concerning the child' (v8), and then kills every boy 'from two years old and under, according to the time he had ascertained exactly from the magi' (v16). ⚠ The precision extracted in verse 7 IS the width of the slaughter in verse 16 — the chapter's grimmest piece of vocabulary, and it works only if a translation uses one English word for all three.", ("Matthew", 2, 7)),
     ("anachoreo", "anachōreō", "ἀναχωρέω", "anachōreō", "To WITHDRAW — to give ground, to retire, to get out of the way. It is the structural verb of Matthew 2, sounding four times in twelve verses: the magi withdraw to their own country (v12), 'when they had withdrawn' (v13), Joseph withdraws to Egypt (v14), and at the close he withdraws into Galilee (v22). ⚠ Matthew then keeps the word for what Jesus does when a threat is real — he withdraws when John is arrested (4:12), when the Pharisees take counsel against him (12:15), when John is beheaded (14:13). The Messiah's first recorded movement is a retreat, and the retreat becomes a habit.", ("Matthew", 2, 12)),
@@ -1279,6 +1281,31 @@ ENCYCLOPEDIA = [
               "in this chapter is not manufactured outrage &mdash; sharing a table was a real social and religious "
               "line, and Jesus is shown crossing it on purpose.",
          refs=[("Matthew", 9, 10)]),
+    dict(slug="thomas", name="Thomas", kind="person", aliases=["Thomas"],
+         desc="&lsquo;Twin&rsquo; &mdash; <em>Te'oma</em> in Aramaic, which John translates outright as "
+              "&lsquo;the one called DIDYMUS,&rsquo; the Greek word for twin (John 11:16; 20:24; 21:2, none yet on "
+              "these pages). Neither Gospel says who the other twin was. ⚠ Matthew&rsquo;s list (10:3) gives him no "
+              "further comment &mdash; he is paired with Matthew himself in the six pairs of the Twelve &mdash; but "
+              "he becomes, in John, the disciple willing to say &lsquo;let us also go, that we may die with "
+              "him&rsquo; (11:16) and, after the resurrection, the one who will not believe without putting his own "
+              "hand in the wound: &lsquo;doubting Thomas,&rsquo; a nickname the text itself never uses, earned by a "
+              "single scene (John 20:24&ndash;29, not yet on these pages) that also ends in one of the four "
+              "Gospels&rsquo; plainest confessions: &lsquo;my Lord and my God.&rsquo;",
+         refs=[("Matthew", 10, 3)]),
+    dict(slug="simon-the-zealot", name="Simon the Cananaean / Zealot", kind="person",
+         aliases=["Simon the Cananaean"],
+         desc="⚠ &lsquo;Cananaean&rsquo; is not a place-name and has nothing to do with Canaan &mdash; "
+              "<em>Kananaios</em> transliterates the Aramaic <em>qan&rsquo;an</em>, &lsquo;zealous one&rsquo;, which "
+              "Luke simply translates into Greek: &lsquo;Simon who was called the ZEALOT&rsquo; (Luke 6:15; Acts "
+              "1:13, neither yet on these pages). By the mid-first century that title marked a real political "
+              "stance &mdash; commitment to armed resistance against Roman rule, the movement that would eventually "
+              "drive the war of AD 66&ndash;70 &mdash; though it is disputed how organized or formal a &lsquo;Zealot "
+              "party&rsquo; yet was in Jesus&rsquo; own lifetime as opposed to a general disposition. Nothing else "
+              "is recorded of him anywhere in the New Testament. ⚠ What is worth noting is only the list he stands "
+              "in: three names away from Matthew the tax collector (<a href='#matthew-apostle'>see the entry</a>), "
+              "a man whose former livelihood was collecting Rome&rsquo;s own revenue &mdash; a revolutionary and a "
+              "collaborator, called by the same voice into the same twelve.",
+         refs=[("Matthew", 10, 4)]),
     dict(slug="herod-the-great", name="Herod the Great", kind="person", aliases=["Herod"],
          desc="'King of the Jews' by vote of the Roman Senate — which is the title the magi walk into his palace and unknowingly ask him to give up. An IDUMEAN (Edomite by descent, Jewish by religion, and in the eyes of many of his subjects not Jewish by blood), son of Antipater, he was granted the kingship in 40 BC and had to besiege Jerusalem for three years to take possession of it. He ruled some thirty-three years and was by any measure an extraordinary builder: the temple whose vast retaining wall still stands in Jerusalem, the artificial harbour at Caesarea, the fortresses of Masada and Machaerus, and the palace-tomb of the Herodium. ⚠ He is also the man Josephus describes executing his favourite wife Mariamne, her brother, her grandfather and her mother, and three of his own sons — the last of them, Antipater, five days before his own death — and ordering the leading men of Judea shut in the hippodrome to be killed the moment he died, so that the nation would be seen to mourn (his sister quietly cancelled it). Josephus does not mention the killing at Bethlehem; it would not have been the most newsworthy act of that reign. He died, on the usual reckoning, in 4 BC, and his will divided the kingdom between three sons. ⚠ Not to be confused with them: the 'Herod' who beheaded John the Baptist and questioned Jesus is his son ANTIPAS, tetrarch of Galilee, and the 'Herod' of Acts 12 is his grandson Agrippa I.",
          refs=[("Matthew", 2, 1), ("Luke", 1, 5)]),
@@ -1775,8 +1802,13 @@ ENCYCLOPEDIA = [
     dict(slug="nathanael", name="Nathanael", kind="person", aliases=["Nathanael"],
          desc="The disciple Jesus greets as 'truly an Israelite, in whom there is no deceit' — a Jacob without "
               "Jacob's guile. Convinced by Jesus' sight of him 'under the fig tree,' he confesses him 'Son of God' "
-              "and 'King of Israel.'",
-         refs=[("John", 1, 45), ("John", 1, 47), ("John", 1, 49)], videos=[]),
+              "and 'King of Israel.' ⚠ He never appears by this name in Matthew, Mark, or Luke; by long and near-"
+              "universal tradition he is the same man those three Gospels call BARTHOLOMEW ('son of Tolmai', a "
+              "patronymic rather than a given name — see Matthew's own list of the Twelve, 10:3), on the strength "
+              "of the two names never once appearing together and each Gospel-writer favoring one exclusively. "
+              "Neither name is stated to be an alias anywhere in the text; the identification is inference, old "
+              "and widely held rather than proven.",
+         refs=[("John", 1, 45), ("John", 1, 47), ("John", 1, 49), ("Matthew", 10, 3)], videos=[]),
 
     # ---- John 1 (places) ----
     dict(slug="bethany-jordan", name="Bethany beyond the Jordan", kind="place",
@@ -4082,6 +4114,14 @@ XREFS = [
     (("Matthew", 9, 22), ("Matthew", 1, 21), "sōzō, 'save/heal' — the identical verb as Jesus' own name unfolded at his naming ('he will SAVE his people from their sins'), now the word of an actual healing, three times in one verse"),
     (("Matthew", 9, 24), ("Daniel", 12, 2), "sleep as a euphemism for death — 'those who sleep in the dust of the earth' — though the crowd's laughter argues Matthew means it as more than a euphemism here"),
     (("Matthew", 9, 35), ("Matthew", 4, 23), "the three-part summary — teaching, proclaiming, healing — repeated word for word; the frame this site's own note on 4:23 promised would close five chapters later"),
+    (("Matthew", 10, 7), ("Matthew", 3, 2), "'the kingdom of the heavens has drawn near' — John's own proclamation, word for word, now the Twelve's assigned sentence too"),
+    (("Matthew", 10, 7), ("Matthew", 4, 17), "the identical sentence a second time — John announced it, Jesus took it up, and now the Twelve are sent out to say it as their own commission"),
+    (("Matthew", 10, 25), ("Matthew", 9, 34), "Beelzeboul, finally named — 9:34 had only 'the ruler of the demons'; here the slander gets its proper name, and Jesus claims it as the household's baseline treatment"),
+    (("Matthew", 10, 28), ("Matthew", 5, 22), "Gehenna, met already inside the Sermon on the Mount ('the Gehenna of fire') — the same valley, now the place named for what only God, not a human executioner, can do"),
+    (("Matthew", 10, 36), ("Micah", 7, 6), "'a man's enemies will be the members of his own household' — quoting Micah's own list of a collapsing society's betrayals almost word for word, and applying it to loyalty to one man"),
+    (("Matthew", 10, 38), ("Matthew", 9, 15), "the first mention of the cross anywhere in this Gospel — the nearest hint before this one that the story ends in loss was the veiled 'when the bridegroom is taken away'"),
+    (("Matthew", 10, 5), ("Matthew", 28, 19), "'do not go the way of the Gentiles' — the very restriction this closing commission ('make disciples of all nations') will explicitly lift"),
+    (("Matthew", 10, 32), ("Matthew", 26, 69), "the acknowledge/deny formula, waiting to be enacted: Peter will do the second half of this exact sentence three times before a servant girl's fire"),
     (("Matthew", 9, 13), ("Hosea", 6, 6), "'I desire mercy and not sacrifice' — quoted here against the Pharisees, and quoted again, against the identical charge, at Matthew 12:7"),
     (("Matthew", 9, 15), ("Hosea", 2, 19), "the bridegroom claim, made sideways — the same prophet who supplies the covenant's marriage-metaphor for Jehovah and Israel, quoted three verses after 'mercy, not sacrifice'"),
     (("Matthew", 8, 17), ("Isaiah", 53, 4), "'surely our diseases he bore, and our pains he carried' — Matthew follows the HEBREW here, where the Greek Old Testament turns the first noun into 'sins', and applies it to an evening of healings rather than to the cross"),
@@ -9014,6 +9054,23 @@ DICTIONARY_ES = {
         "<em>sesōken</em>», 9:22), y la confirmación del narrador («la mujer fue <em>esōthē</em>», 9:22) "
         "— así que un capítulo sobre sanación física sigue sonando, en su propio vocabulario, exactamente "
         "como la promesa mayor que el nombre mismo hizo."),
+    "eirene": ("paz",
+        "PAZ — y, en Mateo 10, algo casi enviado a mano: la paz hablada de un discípulo «viene sobre» una "
+        "casa digna o, si no la encuentra, «vuelve» al que la pronunció (10:13), como si la bendición fuera "
+        "algo físico que no puede simplemente desvanecerse sin ser reclamado. ⚠ El mismo capítulo pone la "
+        "palabra al revés veintiún versículos después — «no vine a traer paz, sino espada» (10:34) — y esta "
+        "traducción imprime ambas sin suavizar el choque: la paz de una casa puede darse y devolverse como "
+        "una posesión, y la paz de toda la tierra es, en el mismo aliento, lo que Jesús dice que no vino a "
+        "traer."),
+    "psyche": ("alma / vida",
+        "ALMA — y, con la misma frecuencia, VIDA; una sola palabra griega haciendo dos trabajos que el "
+        "español mantiene separados. Mateo 10 la usa de las dos formas en once versículos: «temed a quien "
+        "puede destruir tanto el alma como el cuerpo en la Gehena» (10:28, el yo claramente distinto del "
+        "cuerpo), luego «el que halle su <em>psychē</em> la perderá, y el que pierda su <em>psychē</em> por "
+        "mí, la hallará» (10:39, donde «vida» es el único sentido que hace funcionar la paradoja). ⚠ Esta "
+        "traducción la vierte «alma» en el primer caso y «vida» en el segundo, imprimiendo el rango doble "
+        "genuino de la palabra en vez de forzar un solo sustantivo español a cubrir ambos — la ambigüedad "
+        "está en el griego, no suavizada por la elección del español."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -9165,6 +9222,28 @@ ENCYCLOPEDIA_ES["tax-collectors"] = ("Los recaudadores de impuestos",
     "Evangelio de Mateo se escribe bajo el nombre de uno de ellos (véase <a href='#matthew-apostle'>"
     "Mateo</a>), y la clase vuelve a aparecer: 21:31-32 tiene a recaudadores de impuestos y prostitutas "
     "entrando en el reino antes que los sumos sacerdotes y los ancianos.")
+ENCYCLOPEDIA_ES["thomas"] = ("Tomás",
+    "«Gemelo» — <em>Te'oma</em> en arameo, que Juan traduce directamente como «el llamado DÍDIMO», la "
+    "palabra griega para gemelo (Juan 11:16; 20:24; 21:2, ninguno todavía en estas páginas). Ningún "
+    "Evangelio dice quién era el otro gemelo. ⚠ La lista de Mateo (10:3) no le añade ningún comentario "
+    "más — está emparejado con el propio Mateo en los seis pares de los Doce — pero en Juan se convierte "
+    "en el discípulo dispuesto a decir «vayamos también nosotros, para morir con él» (11:16) y, tras la "
+    "resurrección, el que no creerá sin poner su propia mano en la herida: «Tomás el incrédulo», un "
+    "apodo que el texto mismo nunca usa, ganado por una sola escena (Juan 20:24-29, todavía no en estas "
+    "páginas) que también termina en una de las confesiones más claras de los cuatro Evangelios: «Señor "
+    "mío, y Dios mío».")
+ENCYCLOPEDIA_ES["simon-the-zealot"] = ("Simón el Cananeo / Zelote",
+    "⚠ «Cananeo» no es un nombre de lugar y no tiene nada que ver con Canaán — <em>Kananaios</em> "
+    "transcribe el arameo <em>qan'an</em>, «celoso», que Lucas simplemente traduce al griego: «Simón, "
+    "llamado el ZELOTE» (Lucas 6:15; Hechos 1:13, ninguno todavía en estas páginas). Para mediados del "
+    "siglo I ese título marcaba una postura política real — el compromiso con la resistencia armada "
+    "contra el dominio romano, el movimiento que eventualmente llevaría a la guerra del 66-70 d.C. — "
+    "aunque se discute cuán organizado o formal era ya un «partido zelote» en la propia vida de Jesús, "
+    "frente a una simple disposición general. No se registra nada más sobre él en ningún lugar del Nuevo "
+    "Testamento. ⚠ Lo que vale la pena notar es solo la lista en la que está — tres nombres después de "
+    "Mateo el recaudador de impuestos (<a href='#matthew-apostle'>véase la entrada</a>), un hombre cuyo "
+    "antiguo sustento era cobrar los propios ingresos de Roma — un revolucionario y un colaborador, "
+    "llamados por la misma voz a los mismos doce.")
 
 
 # ---------------------------------------------------------------------------
@@ -9332,5 +9411,53 @@ CHAPTER_ART = {
                 "Caravaggio habrían reconocido de inmediato.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Caravaggio,_Michelangelo_Merisi_da_-_The_Calling_of_Saint_Matthew_-_1599-1600_(hi_res).jpg",
+    )],
+    "mat10": [dict(
+        file="mat10-exhortation-apostles-tissot.jpg",
+        title="The Exhortation to the Apostles",
+        title_es="La exhortación a los apóstoles",
+        artist="James Tissot",
+        year="1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="Under the low branches of an olive tree on a bare hillside, Jesus sits at left in "
+            "plain white and sandals, leaning forward with both hands open as he speaks; the "
+            "Twelve are arranged in a loose semicircle on the rocky ground around him, wrapped "
+            "in the everyday robes and head-cloths of the region, several with a hand raised to "
+            "the face in the posture of men listening hard, a hazy line of hills fading into a "
+            "pale sky behind them.",
+        note="Tissot painted this scene after two research trips to Ottoman-ruled Palestine and "
+             "Syria in the 1880s, sketching landscape, dress, and local models on site so that "
+             "his four hundred Gospel watercolors could aim at ethnographic plausibility rather "
+             "than the European staging most earlier painters had used without a second thought "
+             "&mdash; the plain wool robes and striped head-wraps here are drawn from what he saw "
+             "worn in the region, not invented in a Paris studio. ⚠ The result is deliberately "
+             "unglamorous: no halo, no supernatural light, no raised pulpit &mdash; just a teacher "
+             "and twelve tired-looking men sitting on the ground under a tree, which is arguably "
+             "closer to what a genuine outdoor briefing before a dangerous, unpaid mission ('no "
+             "gold, no silver... no bag for the road', 10:9-10) would actually have looked like "
+             "than any gilded altarpiece. Compare the deliberately CONTEMPORARY 1600s-Rome "
+             "staging Caravaggio chose for the calling scene one chapter back &mdash; two painters, "
+             "nearly three centuries apart, making opposite bets about how to make an ancient "
+             "scene feel real to their own audience.",
+        note_es="Tissot pintó esta escena tras dos viajes de investigación a Palestina y Siria, "
+                "entonces bajo dominio otomano, en la década de 1880, dibujando el paisaje, la "
+                "vestimenta y modelos locales en el propio lugar para que sus cuatrocientas "
+                "acuarelas del Evangelio buscaran verosimilitud etnográfica en vez de la "
+                "ambientación europea que la mayoría de los pintores anteriores habían usado sin "
+                "pensarlo dos veces &mdash; las sencillas túnicas de lana y los pañuelos a rayas "
+                "aquí están tomados de lo que vio usar en la región, no inventados en un estudio "
+                "de París. ⚠ El resultado es deliberadamente poco glamoroso: sin aureola, sin luz "
+                "sobrenatural, sin púlpito elevado &mdash; solo un maestro y doce hombres de "
+                "aspecto cansado sentados en el suelo bajo un árbol, lo cual está posiblemente más "
+                "cerca de cómo habría lucido en realidad una instrucción al aire libre antes de "
+                "una misión peligrosa y sin paga («ni oro, ni plata... ni bolsa para el camino», "
+                "10:9-10) que cualquier retablo dorado. Compárese con la ambientación "
+                "deliberadamente CONTEMPORÁNEA de la Roma de 1600 que Caravaggio eligió para la "
+                "escena de la vocación un capítulo atrás &mdash; dos pintores, con casi tres "
+                "siglos de diferencia, apostando en direcciones opuestas sobre cómo hacer que una "
+                "escena antigua se sienta real para su propio público.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Exhortation_to_the_Apostles_(Recommandation_aux_ap%C3%B4tres)_-_James_Tissot.jpg",
     )],
 }
