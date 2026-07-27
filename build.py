@@ -406,18 +406,22 @@ SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3
 def header(active="", lang="en"):
     def cls(k):
         return ' class="on"' if k == active else ""
-    # Views + Share ride as the last two items in the same nav row as Home/About/etc
-    # (not a separate floating line below it — that read as disjointed). The span
-    # starts empty; _page_view_script() fills it in wherever that script lands.
-    pageviews_item = '<span class="pageviews" id="pgviews"></span>' if GOATCOUNTER_CODE else ""
+    # Share rides as the last item in the same nav row as Home/About/etc (not a
+    # separate floating line below it — that read as disjointed). Views moved to
+    # the footer (see _FOOT_VIEWS_LINE) -- it was competing for room in this row
+    # and it's the kind of thing a reader checks at the end, not the top, anyway.
     share_item = '<span class="share-widget" id="shareWidget"></span>'
     if lang == "es":
         # Spanish locale header. The nav links ONLY to pages that exist in Spanish
         # (so a Spanish-only reader is never dumped into English); it grows as the
         # Spanish edition is built out. The 🌐 switch jumps to the English home.
+        # "Preguntar" sits on its own on the LEFT (mirroring the English layout's
+        # split -- see the note below) so it isn't crowded against the brand icon.
         return f"""<header class="site-head">
-  <div class="utilnav">
+  <div class="utilnav utilnav-left">
     <a class="util-ask" href="contact.es.html" title="Enviar una pregunta">✉️ Preguntar</a>
+  </div>
+  <div class="utilnav utilnav-right">
     <details class="langsel">
       <summary title="Idioma">\U0001F310 Español</summary>
       <div class="langlist">
@@ -435,17 +439,23 @@ def header(active="", lang="en"):
   <nav class="topnav">
     <a href="es.html"{cls('home')}>Inicio</a>
     <a href="biblioteca.html"{cls('biblioteca')}>Biblioteca</a>
-    {pageviews_item}{share_item}
+    {share_item}
   </nav>
 </header>"""
-    # "Ask a Question" (contact.html, submit yours) and "Dear Mr. Librarian" (ask.html,
-    # browse answered ones) are a real pair -- every answered post links back to the
-    # contact form as "send yours to the librarian's desk" -- so they sit together
-    # here rather than one living in the content nav and the other in a corner.
+    # "Ask a Question" (contact.html, submit yours) now sits on the LEFT, mirrored
+    # from "Dear Mr. Librarian" + the language switch on the right -- on desktop
+    # the two used to crowd together right next to the brand icon; splitting them
+    # across both sides balances the header instead of bunching everything on one
+    # side. "Ask a Question" and "Dear Mr. Librarian" (ask.html, browse answered
+    # ones) are still a real pair conceptually -- every answered post links back to
+    # the contact form as "send yours to the librarian's desk" -- that relationship
+    # doesn't depend on them being pixel-adjacent.
     ask_on = " on" if active == "ask" else ""
     return f"""<header class="site-head">
-  <div class="utilnav">
+  <div class="utilnav utilnav-left">
     <a class="util-ask" href="contact.html" title="Ask a question">✉️ Ask a Question</a>
+  </div>
+  <div class="utilnav utilnav-right">
     <a class="util-ask{ask_on}" href="ask.html" title="Reader questions, answered one at a time">\U0001F4D6 Dear Mr. Librarian</a>
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
@@ -468,27 +478,36 @@ def header(active="", lang="en"):
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="about.html"{cls('about')}>About</a>
-    {pageviews_item}{share_item}
+    {share_item}
   </nav>
 </header>"""
 
 
-FOOTER = """<footer class="site-foot">
+# The "N views" count moved here from the nav row (2026-07-27) -- it was competing
+# for room in an already-busy nav, and it's a bit of trivia a reader checks at the
+# end of a page, not something that belongs up top with the destinations. Sits as
+# its own line at the very bottom-left, after the footer's other two paragraphs
+# (which are already left-aligned by default -- .site-foot has no centering).
+# Empty string (renders nothing) when GoatCounter isn't configured.
+_FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>'
+                    if GOATCOUNTER_CODE else "")
+
+FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian;
   translated with Claude.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 # Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only
 # reader is never dropped into English. Grows as the Spanish edition is built out.
-ES_FOOTER = """<footer class="site-foot">
+ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian; traducida con
   Claude. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="index.html">English edition</a></p>
+  <p><a href="es.html">Inicio</a> · <a href="index.html">English edition</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 
@@ -565,11 +584,12 @@ def _og_tags(title, desc, url="", image=""):
 
 
 def _page_view_script(lang="en"):
-    """Populates the '\U0001F441️ N views' nav item header() already emitted (as
-    #pgviews, sitting among Home/About/etc — a floating line below the header read
-    as disjointed). GoatCounter has been recording a per-path count since the
-    sitewide script was added (_goatcounter_script) -- this just displays it, no new
-    tracking. Mirrors _stats_box()'s hard-won handling: fetch().then(r=>r.json())
+    """Populates the '\U0001F441️ N views' line FOOTER/ES_FOOTER already emitted (as
+    #pgviews, at the very bottom-left of the page -- moved out of the nav row
+    2026-07-27, where it was competing for space). GoatCounter has been recording
+    a per-path count since the sitewide script was added (_goatcounter_script) --
+    this just displays it, no new tracking. Mirrors _stats_box()'s hard-won
+    handling: fetch().then(r=>r.json())
     WITHOUT checking r.ok, because GoatCounter's counter endpoint returns HTTP 404
     for a thin/zero-hit path even when the JSON body is a perfectly valid
     {"count":"..."}. A brand-new page with no hits yet, or the fetch failing

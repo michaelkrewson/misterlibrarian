@@ -135,10 +135,14 @@ body.hide-heb .heb{display:none}
 .esp .notelink{font-size:10px;color:var(--purple);vertical-align:super;margin-left:4px}
 .esp-page .esp{display:block}
 body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2px solid rgba(232,201,104,0.28)}
-/* top-right utility cluster: [✉️ Ask a Question] [🌐 Language ▾] — present site-wide,
-   pinned to the upper-right corner of the centered masthead. Dropdown is a native
-   <details> (no JS): click the pill to open, click an option to switch editions. */
-.utilnav{position:absolute;top:16px;right:18px;display:flex;align-items:center;gap:9px;z-index:30}
+/* Utility clusters pinned to the upper corners of the centered masthead, split
+   left/right (2026-07-27) so they don't bunch up next to the brand icon on
+   desktop: [✉️ Ask a Question] on the left, [📖 Dear Mr. Librarian] [🌐 Language ▾]
+   on the right. Dropdown is a native <details> (no JS): click the pill to open,
+   click an option to switch editions. */
+.utilnav{position:absolute;top:16px;display:flex;align-items:center;gap:9px;z-index:30}
+.utilnav-left{left:18px}
+.utilnav-right{right:18px}
 .utilnav .util-ask,.langsel summary{font-size:12px;font-weight:700;color:var(--muted);
   padding:5px 12px;border:1px solid var(--border);border-radius:14px;white-space:nowrap;
   text-decoration:none;cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
@@ -162,11 +166,9 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
   .utilnav{position:static;justify-content:center;margin:0 0 16px;gap:8px}
   .langlist{right:auto;left:50%;transform:translateX(-50%)}
 }
-/* Views + Share ride as the last two items in .topnav itself (see header()) --
-   sized to match .topnav a so they read as native nav items, not a separate
-   floating line under the header. */
-.topnav .pageviews{display:inline-flex;align-items:center;padding:6px 6px;
-  font-size:12px;font-weight:600;color:var(--muted);opacity:.75;white-space:nowrap}
+/* Share rides as the last item in .topnav itself (see header()) -- sized to
+   match .topnav a so it reads as a native nav item, not a separate floating
+   line under the header. */
 .share-widget{display:inline-flex;align-items:center;gap:8px}
 .share-btn{font-family:inherit;font-size:12px;font-weight:700;color:var(--muted);
   background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
@@ -260,6 +262,10 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
 .site-foot p{font-size:11.5px;color:var(--dim);line-height:1.7;margin:0 0 8px}
 .site-foot a{color:var(--muted)}
 .site-foot a:hover{color:var(--gold)}
+/* The "N views" line -- moved here from the nav row 2026-07-27. Sits after the
+   other two footer paragraphs (already left-aligned, .site-foot sets no
+   centering), so it lands at the very bottom-left of the page as its own line. */
+.site-foot p.foot-views{margin:0;opacity:.7}
 
 /* ── ask-a-question form ── */
 .askform{display:flex;flex-direction:column;gap:16px}
