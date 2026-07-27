@@ -180,6 +180,44 @@ img { max-width: 100%; height: auto; display: block; }
 .topnav a:hover { background: var(--paper-2); border-color: var(--line); color: var(--ink); }
 .topnav a.on { background: var(--terra); border-color: var(--terra); color: #0a0f1a; }
 
+/* Mobile nav menu (2026-07-27) -- below 640px this REPLACES .topnav (which
+   otherwise word-wraps Latest/Archive/Bookmarked/Write/About/RSS/Share into a
+   couple of ragged rows) with one collapsed <details> panel, same pattern as
+   the Bible site's .mobmenu -- kept as its own copy per this site's
+   no-cross-dependency rule. Desktop untouched. MUST come after the base
+   .topnav rule above (paid for once already): with equal specificity, CSS
+   breaks the tie by source order regardless of media-query nesting, so a
+   `.topnav{display:none}` declared BEFORE the unconditional `.topnav{display:
+   flex}` gets silently overridden even while the media query matches. */
+.mobmenu { display: none; }
+@media (max-width: 640px) {
+  .topnav { display: none; }
+  .mobmenu { display: block; margin: 14px auto 0; max-width: 300px; }
+  .mobmenu summary {
+    list-style: none; cursor: pointer; user-select: none;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    font: 14px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-weight: 600; color: var(--ink);
+    padding: 10px 20px; border: 1px solid var(--line); border-radius: 999px;
+    background: var(--paper-2);
+  }
+  .mobmenu summary::-webkit-details-marker { display: none; }
+  .mobmenu summary::after { content: "▾"; font-size: 11px; opacity: .7; transition: transform .15s; }
+  .mobmenu[open] summary::after { transform: rotate(180deg); }
+  .mobmenu-panel {
+    margin-top: 8px; padding: 6px; background: var(--paper-2); border: 1px solid var(--line);
+    border-radius: 14px; display: flex; flex-direction: column; gap: 2px; text-align: left;
+  }
+  .mobmenu-panel a {
+    font: 14px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    font-weight: 500; color: var(--ink-soft); text-decoration: none;
+    padding: 10px 14px; border-radius: 9px;
+  }
+  .mobmenu-panel a:hover, .mobmenu-panel a.on { color: var(--terra-dk); background: rgba(232,134,92,.08); }
+  .mobmenu-sep { height: 1px; background: var(--line); margin: 6px 8px; }
+  .mobmenu-panel .share-widget { padding: 6px 14px; }
+}
+
 /* -------------------------------------------------------------------- lede -- */
 
 .lede { text-align: center; margin: 40px 0 26px; }
@@ -213,6 +251,15 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .chip:hover { border-color: var(--terra); color: var(--terra); }
 .chip.on { background: var(--olive); border-color: var(--olive); color: #0a0f1a; }
+/* A tag list wraps to 6-7 rows once there are ~20 tags -- fine on desktop, but
+   on a phone that's most of a screen of filter chips before the first post
+   card. A single horizontally-scrolling row keeps every tag reachable in the
+   footprint of one line. */
+@media (max-width: 560px) {
+  .filters { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; padding-bottom: 4px; margin: 0 0 22px; }
+  .chip { flex: 0 0 auto; white-space: nowrap; }
+}
 
 /* ------------------------------------------------------------------- cards -- */
 

@@ -76,6 +76,16 @@ h2{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:upperc
 .chnav .mid{color:var(--muted);font-weight:600;white-space:nowrap}
 .chnav .mid a{color:var(--gold)}
 .chnav .dis{color:var(--dim);font-weight:600}
+/* Below ~560px the fixed-width .mid (nowrap, so it never shrinks) squeezed the
+   prev/next side links until their text clipped off the right edge. Force .mid
+   onto its own full-width row and let it wrap, so the sides always have the
+   whole row to themselves. */
+@media (max-width:560px){
+  .chnav{flex-wrap:wrap;row-gap:6px}
+  .chnav .mid{flex:1 1 100%;order:-1;white-space:normal;text-align:center}
+  .chnav .side{flex:1 1 auto;min-width:0}
+  .chnav .side.left a,.chnav .side.right a{white-space:normal}
+}
 
 /* ── verse of the day (home) ── */
 .votd{background:linear-gradient(135deg,rgba(232,201,104,0.08) 0%,var(--bg1) 60%);
@@ -112,6 +122,15 @@ h2{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:upperc
 .tgl.done{color:var(--gold);border-color:rgba(232,201,104,0.5)}
 .tgl-group{display:flex;gap:8px;flex-wrap:wrap}
 a.tgl{text-decoration:none;display:inline-block}
+/* Listen/Hide Greek/Mostrar español/Español/Atlas wrapped to 2-3 rows on a
+   phone. Same horizontal-scroll treatment as .cs-eras -- one row, full width
+   to scroll within (flex-basis:100% forces it below "Mark as read" instead of
+   fighting it for room), buttons keep their natural (unshrunk) size. */
+@media (max-width:560px){
+  .tgl-group{flex:1 1 100%;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    padding-bottom:2px}
+  .tgl{flex:0 0 auto;white-space:nowrap}
+}
 .vrs{display:block;padding:16px 18px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .vrs:last-child{border-bottom:none}
 .vrs:target{background:rgba(167,139,250,0.08);border-radius:10px}
@@ -165,6 +184,33 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
 @media (max-width:680px){
   .utilnav{position:static;justify-content:center;margin:0 0 16px;gap:8px}
   .langlist{right:auto;left:50%;transform:translateX(-50%)}
+}
+/* Mobile nav menu (2026-07-27) -- below the breakpoint this REPLACES the
+   utilnav pair + the word-wrapped .topnav entirely (which otherwise sprawl
+   into 3-4 ragged rows of chrome before any page content). Desktop is
+   untouched: .mobmenu stays display:none above 680px, same breakpoint the
+   utilnav/topnav already used. A native <details> (no JS) -- same
+   no-dependency pattern as .langsel. */
+.mobmenu{display:none}
+@media (max-width:680px){
+  .utilnav,.topnav{display:none}
+  .mobmenu{display:block;margin:18px auto 0;max-width:300px}
+  .mobmenu summary{list-style:none;cursor:pointer;user-select:none;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    font-size:14px;font-weight:700;color:var(--text);
+    padding:11px 20px;border:1px solid var(--border);border-radius:14px;background:var(--bg1)}
+  .mobmenu summary::-webkit-details-marker{display:none}
+  .mobmenu summary::after{content:"▾";font-size:11px;opacity:.7;transition:transform .15s}
+  .mobmenu[open] summary::after{transform:rotate(180deg)}
+  .mobmenu-panel{margin-top:8px;padding:6px;background:var(--bg1);border:1px solid var(--border);
+    border-radius:14px;display:flex;flex-direction:column;gap:2px;text-align:left}
+  .mobmenu-panel a{font-size:13.5px;font-weight:600;color:var(--muted);text-decoration:none;
+    padding:10px 14px;border-radius:9px}
+  .mobmenu-panel a:hover,.mobmenu-panel a.on{color:var(--gold);background:rgba(232,201,104,0.08)}
+  .mobmenu-panel a.cur{color:var(--gold)}
+  .mobmenu-panel a.cur::after{content:" ✓";font-size:11px;opacity:.85}
+  .mobmenu-sep{height:1px;background:var(--border);margin:6px 8px}
+  .mobmenu-panel .share-widget{padding:6px 14px}
 }
 /* Share rides as the last item in .topnav itself (see header()) -- sized to
    match .topnav a so it reads as a native nav item, not a separate floating
@@ -578,6 +624,13 @@ body.hide-heb .grk{display:none}
   color:var(--dim);border:1px solid var(--border);border-radius:999px;padding:2px 8px;
   background:rgba(0,0,0,0.18)}
 .cs-era.cs-on{color:#0b1929;background:var(--gold);border-color:var(--gold)}
+/* Six wrapping era chips read fine on desktop but ate ~4 rows of vertical space
+   above the actual chapter text on a phone. A single horizontally-scrolling
+   strip keeps every era reachable in the same footprint as one text line. */
+@media (max-width:560px){
+  .cs-eras{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .cs-era{flex:0 0 auto}
+}
 .cs-body{display:flex;align-items:flex-start;gap:9px;flex-wrap:wrap}
 .cs-icon{font-size:15px;line-height:1.3}
 .cs-text{flex:1;min-width:220px}
