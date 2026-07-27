@@ -755,6 +755,30 @@ def osm_embed(lat, lon, span, label, caption=None):
 </div>"""
 
 
+def osm_bbox_embed(lat_min, lat_max, lon_min, lon_max, label, caption=None, pad_frac=0.08):
+    """A key-less OpenStreetMap embed framed to an explicit bounding box -- the
+    real-map companion to a journey's schematic overview (osm_embed's sibling,
+    which frames on a single point+span instead). No `marker` param: a route
+    has several stops, not one, and the embed macro only supports one pin.
+    `pad_frac` grows the box a little on every side so the edge stops aren't
+    cropped flush against the frame."""
+    lat_pad = (lat_max - lat_min) * pad_frac
+    lon_pad = (lon_max - lon_min) * pad_frac
+    bbox = (f"{lon_min - lon_pad:.4f},{lat_min - lat_pad:.4f},"
+            f"{lon_max + lon_pad:.4f},{lat_max + lat_pad:.4f}")
+    clat, clon = (lat_min + lat_max) / 2.0, (lon_min + lon_max) / 2.0
+    view_url = f"https://www.openstreetmap.org/#map=6/{clat:.4f}/{clon:.4f}"
+    cap_html = f'<div class="atlas-caption">{caption}</div>' if caption else ""
+    return f"""<div class="mapembed">
+  <div class="mapembed-frame">
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&layer=mapnik"
+      title="{html.escape(label, quote=True)}" loading="lazy"></iframe>
+  </div>
+  {cap_html}
+  <div class="mapembed-link"><a href="{view_url}" rel="noopener">View larger map on OpenStreetMap →</a></div>
+</div>"""
+
+
 def _build_alias_index():
     """alias word/phrase -> [entry, ...] candidate encyclopedia entries."""
     index = defaultdict(list)
@@ -1650,11 +1674,21 @@ def render_route_panel(route):
            f'<path d="{d}" class="rg-under"/><path d="{d}" class="rg-line"/>'
            f'{"".join(via)}{"".join(marks)}{compass}</svg>')
 
+    # The real-place companion: the schematic carries the numbered-stop story
+    # (notes, verse refs) a real map can't show; a real map carries actual
+    # terrain/place-names/scale the schematic -- a hand-drawn illustration --
+    # never will. Framed to the whole route's extent, not one point.
+    real_caption = (f'🌍 <strong>{html.escape(route["title"])}</strong> — the real ground this '
+                    f'route crosses (not a pin on any one stop — the whole journey\'s extent)')
+    real_map = osm_bbox_embed(lat_min, lat_max, lon_min, lon_max, route["title"], caption=real_caption)
+
     return (f'<section class="route-panel" id="route-{route["slug"]}">'
             f'<h2>🧭 {html.escape(route["title"])}</h2>'
             f'<div class="route-sub">{html.escape(route["chapters"])} · the journey at a glance</div>'
             f'<p class="route-blurb">{route["blurb"]}</p>'
             f'<div class="route-map">{svg}</div>'
+            f'<div class="route-realmap-h">🌍 The real place <span>live map, OpenStreetMap</span></div>'
+            f'<div class="route-realmap">{real_map}</div>'
             f'{render_route_inset(route)}'
             f'<ol class="route-legend">{"".join(legend)}</ol>'
             f'</section>')
