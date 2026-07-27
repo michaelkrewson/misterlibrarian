@@ -594,12 +594,22 @@ def _page_view_script(lang="en"):
     for a thin/zero-hit path even when the JSON body is a perfectly valid
     {"count":"..."}. A brand-new page with no hits yet, or the fetch failing
     outright (network error, ad-blocker, GoatCounter unconfigured), just removes the
-    item rather than showing a wrong or empty number."""
+    item rather than showing a wrong or empty number.
+
+    Wrapped in DOMContentLoaded (2026-07-27, paid for): this script tag is still
+    emitted right after header(), but #pgviews now lives all the way down in the
+    footer -- document.getElementById would run before the footer is even parsed
+    and silently capture null, making the whole thing a permanent no-op (found
+    live: the element existed, un-removed AND un-filled, because `el` was null
+    from the start so neither the success nor the .catch() branch ever had
+    anything to act on). Deferring the lookup to DOMContentLoaded means it runs
+    after the whole document -- footer included -- is parsed, regardless of where
+    in the page this <script> tag itself sits."""
     if not GOATCOUNTER_CODE:
         return ""
     label = "vistas" if lang == "es" else "views"
     return f"""<script>
-(function(){{
+document.addEventListener("DOMContentLoaded", function(){{
   var el = document.getElementById("pgviews");
   fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
     .then(function(r){{ return r.json(); }})
@@ -608,7 +618,7 @@ def _page_view_script(lang="en"):
       else if (el) el.remove();
     }})
     .catch(function(){{ if (el) el.remove(); }});
-}})();
+}});
 </script>"""
 
 
