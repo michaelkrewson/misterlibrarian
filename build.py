@@ -834,7 +834,19 @@ def inject_encyclopedia_links(content, book, ch):
             if slug is None or (slug in linked_slugs and not pinned):
                 return word
             linked_slugs.add(slug)
-            name = html.escape(_SLUG_TO_ENTRY[slug]["name"], quote=True)
+            entry = _SLUG_TO_ENTRY[slug]
+            name = html.escape(entry["name"], quote=True)
+            # A PLACE goes straight to its atlas page (description + refs +
+            # the actual live map, in one hop) rather than the Encyclopedia's
+            # lean index -- a reader mid-chapter who clicks "Ur" wants to see
+            # where that is, not a one-line teaser two more clicks from the
+            # map. Every place has an atlas page regardless of whether it's
+            # mappable (an undetermined site still gets its note + refs), so
+            # this is unconditional on kind, not on e.get("coords").
+            # Non-place entries (people, crafts) are unaffected.
+            if entry["kind"] == "place":
+                return (f'<a class="eterm" href="atlas/{slug}.html" '
+                        f'title="{name} — see the Atlas">{word}</a>')
             return (f'<a class="eterm" href="encyclopedia.html#{slug}" '
                     f'title="{name} — see the Encyclopedia">{word}</a>')
 
@@ -1329,6 +1341,17 @@ _NILE_ROSETTA = [(30.35, 31.15), (30.70, 30.95), (31.05, 30.65), (31.42, 30.40)]
 _NILE_DAMIETTA = [(30.35, 31.15), (30.70, 31.35), (31.05, 31.60), (31.52, 31.83)]
 _BITTER_LAKES = [(30.40, 32.33), (30.22, 32.44), (30.02, 32.48), (29.95, 32.40),
                  (30.15, 32.34), (30.32, 32.27)]
+# The Euphrates, from its Raqqa-area bend (the Balikh confluence -- also a `via`
+# point on Abram's route, see ROUTES) down through Deir ez-Zor and along the
+# Syria/Iraq border, past Ramadi and Fallujah, by Babylon, and on down toward Ur.
+# A journey up this river is the only way to get from southern Mesopotamia to
+# Haran without crossing open desert, and it is why the Ur-to-Haran leg of
+# Abram's migration bends northwest before it ever turns toward Canaan --
+# without the river drawn in, that bend looks arbitrary. Hand-simplified like
+# every other polyline here, not survey-grade.
+_EUPHRATES = [(35.95, 39.02), (35.34, 40.15), (34.45, 40.92), (33.85, 42.20),
+              (33.42, 43.30), (33.35, 43.77), (32.90, 44.10), (32.5422, 44.4208),
+              (32.00, 44.93), (31.32, 45.28), (30.9626, 46.1035)]
 
 
 def _region_geo(pts, margin=0.55, inner_w=760.0, pad=40.0,
@@ -1501,17 +1524,38 @@ def render_region_map(region, others=()):
 
 def render_route_panel(route):
     """A self-contained inline-SVG map of a journey — no map library, no
-    external tiles: real lat/lon projected, a dashed route line, numbered
-    PRIMARY stops, small `via` bend-points that curve the line to the rivers,
-    a faint degree graticule, river hints, a compass, and a numbered legend."""
+    external tiles: real lat/lon projected onto the SAME fixed basemap the
+    territory maps use (coastline, the Jordan and Euphrates traced as real
+    paths, not just labels dropped in empty space), a dashed route line,
+    numbered PRIMARY stops labeled directly by name, small `via` bend-points
+    that curve the line to the rivers, a faint degree graticule, a compass,
+    and a supporting legend with each stop's note and verse ref.
+
+    Without a real basemap this used to be a bare coordinate grid with two
+    river names floating at arbitrary points -- geographically accurate
+    (real lat/lon) but unreadable as a MAP (nothing to orient by, and the
+    numbered dots meant nothing without reading the legend below). This
+    reuses `render_region_map`'s basemap fragments and priority-reservation
+    pattern (stops matter more than river/sea labels, so those degrade first
+    on collision) so a journey drawn across real geography looks like one."""
     stops = route["stops"]
     proj, W, H, (lat_min, lat_max, lon_min, lon_max) = _route_geo(stops)
 
+    def visible(pts):
+        return any(lat_min <= a <= lat_max and lon_min <= b <= lon_max for a, b in pts)
+
+    def inframe(lat, lon):
+        return lat_min <= lat <= lat_max and lon_min <= lon <= lon_max
+
+    # A journey can sweep a much wider longitude range than a single territory
+    # (Ur to Shechem is ~11°), so label every OTHER degree once the frame gets
+    # that wide -- labeling every one would just crowd the bottom edge.
+    lon_step = 2 if (lon_max - lon_min) > 6 else 1
     grid = []
     for lon in range(int(math.ceil(lon_min)), int(math.floor(lon_max)) + 1):
         x, _ = proj(lat_max, lon)
         grid.append(f'<line x1="{x:.1f}" y1="0" x2="{x:.1f}" y2="{H:.1f}" class="rg-grid"/>')
-        if lon % 2 == 0:
+        if lon % lon_step == 0:
             grid.append(f'<text x="{x:.1f}" y="{H-5:.1f}" class="rg-tick" text-anchor="middle">{lon}°E</text>')
     for lat in range(int(math.ceil(lat_min)), int(math.floor(lat_max)) + 1):
         _, y = proj(lat, lon_min)
@@ -1520,6 +1564,43 @@ def render_route_panel(route):
 
     pts = [proj(s["coord"][0], s["coord"][1]) for s in stops]
     d = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+
+    # Reserve every stop's dot AND its prospective name label FIRST -- the
+    # stops are the most important thing on this map, so the basemap's own
+    # labels (rivers, the coast) below have to give way to them, never the
+    # reverse (see render_region_map's identical site-labels-first rule).
+    reserved = []
+    for s, (x, y) in zip(stops, pts):
+        w = 22.0 if s.get("via") else 30.0 + len(s.get("name", "")) * 6.2
+        reserved.append((x - w / 2.0, x + w / 2.0, y))
+
+    def clear(x, y, w=0.0, ry=13.0):
+        lo, hi = x - w / 2.0, x + w / 2.0
+        return all(hi < sx - 6 or lo > ex + 6 or abs(y - sy) > ry
+                   for sx, ex, sy in reserved)
+
+    # basemap: the real, fixed geography this route actually crosses. Drawn
+    # UNDER the dashed route line, exactly like a territory map's coastline.
+    basemap = []
+    if visible(_COAST):
+        basemap.append(f'<path d="{_path(proj, _COAST)}" class="reg-coast"/>')
+    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)),
+                                (_GALILEE, None, None)):
+        if visible(poly):
+            basemap.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
+            if label and inframe(*anchor):
+                lx, ly = proj(*anchor)
+                if clear(lx, ly, len(label) * 5.6):
+                    basemap.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
+    for line, label in ((_JORDAN, "the Jordan"), (_EUPHRATES, "the Euphrates")):
+        if visible(line):
+            basemap.append(f'<path d="{_path(proj, line)}" class="reg-river"/>')
+            mlat, mlon = line[len(line) // 2]
+            if inframe(mlat, mlon):
+                mx, my = proj(mlat, mlon)
+                lbl_w = len(label) * 5.6
+                if clear(mx + 8, my, lbl_w):
+                    basemap.append(f'<text x="{mx+8:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
 
     via, marks, legend = [], [], []
     n = 0
@@ -1532,9 +1613,18 @@ def render_route_panel(route):
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="12" class="rg-halo"/>'
             f'<circle cx="{x:.1f}" cy="{y:.1f}" r="9.5" class="rg-dot"/>'
             f'<text x="{x:.1f}" y="{y+3.6:.1f}" class="rg-num" text-anchor="middle">{n}</text>')
+        # The name goes right on the map next to its dot -- a reader
+        # shouldn't have to cross-reference a numbered legend just to know
+        # what "3" is. Labels near the right edge flip to the left so they
+        # never run off the canvas (same rule the inset uses for the Jordan).
+        label_left = x > W * 0.82
+        anchor_attr = ' text-anchor="end"' if label_left else ""
+        lx = x - 16 if label_left else x + 16
+        marks.append(f'<text x="{lx:.1f}" y="{y+3.6:.1f}" class="rg-ilbl"{anchor_attr}>'
+                     f'{html.escape(s["name"])}</text>')
         name = html.escape(s["name"])
         if s.get("slug"):
-            name = f'<a href="encyclopedia.html#{s["slug"]}">{name}</a>'
+            name = f'<a href="atlas/{s["slug"]}.html">{name}</a>'
         ref = ""
         if s.get("ref"):
             c, v = s["ref"]
@@ -1542,11 +1632,6 @@ def render_route_panel(route):
         note = f' — {html.escape(s["note"])}' if s.get("note") else ""
         legend.append(f'<li><span class="route-num">{n}</span>'
                       f'<span><strong>{name}</strong>{note}{ref}</span></li>')
-
-    ex, ey = proj(34.6, 42.2)
-    jx, jy = proj(31.55, 35.55)
-    rivers = (f'<text x="{ex:.1f}" y="{ey:.1f}" class="rg-river" text-anchor="middle">Euphrates</text>'
-              f'<text x="{jx:.1f}" y="{jy:.1f}" class="rg-river" text-anchor="middle">Jordan</text>')
 
     compass = (f'<g transform="translate({W-24:.0f},26)">'
                f'<line x1="0" y1="9" x2="0" y2="-7" class="rg-comp"/>'
@@ -1556,7 +1641,7 @@ def render_route_panel(route):
     svg = (f'<svg viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
            f'aria-label="Route map: {html.escape(route["title"])}" xmlns="http://www.w3.org/2000/svg">'
            f'<title>{html.escape(route["title"])}</title>'
-           f'{"".join(grid)}{rivers}'
+           f'{"".join(grid)}{"".join(basemap)}'
            f'<path d="{d}" class="rg-under"/><path d="{d}" class="rg-line"/>'
            f'{"".join(via)}{"".join(marks)}{compass}</svg>')
 
@@ -1621,11 +1706,18 @@ def render_route_inset(route):
 
 
 def _atlas_card(e, permalink=True):
-    """One place's full atlas content -- description, verse refs, the live map (+
-    territory-boundary overlay when the place is a REGION, not a point), and the
-    ancient-world-overlay placeholder. Shared by the standalone page (atlas/<slug>.html,
-    one place alone) and formerly by atlas.html's per-chapter listing (now a lean
-    link list instead -- see build_atlas())."""
+    """One place's COMPLETE atlas content -- description, images, verse refs,
+    videos, the live map (+ territory-boundary overlay when the place is a
+    REGION, not a point), and the ancient-world-overlay placeholder.
+
+    This carries everything the Encyclopedia's own card has (images/videos)
+    PLUS the actual embedded map the Encyclopedia only links out to, so a
+    reader who reaches a place through EITHER an in-text mention (which now
+    goes straight here -- see inject_encyclopedia_links) or the Encyclopedia
+    entry gets the same complete page, not two different partial ones.
+    Shared by the standalone page (atlas/<slug>.html, one place alone) and
+    formerly by atlas.html's per-chapter listing (now a lean link list
+    instead -- see build_atlas())."""
     refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
     if e.get("coords"):
         lat, lon, span = e["coords"]
@@ -1644,30 +1736,86 @@ def _atlas_card(e, permalink=True):
         badge = ""
         map_html = ('<div class="atlas-nomap">📍 No fixed point plotted — the location is genuinely '
                     "undetermined (see the note above), so this shows no guessed pin.</div>")
+    if e.get("videos"):
+        vids = "".join(youtube_embed(u, t) for t, u in e["videos"])
+    else:
+        vids = ('<div class="evids-empty">▶ No films on the shelf yet — archaeology and '
+                'geography videos get added here as Mr. Librarian finds good ones.</div>')
     perma = (f'<a href="atlas/{e["slug"]}.html" style="font-size:11px;font-weight:400;opacity:.55;'
               f'margin-left:8px" title="Permalink — link directly to this place">🔗 permalink</a>'
              if permalink else "")
     return f"""<div class="atlas-place" id="atlas-{e['slug']}">
-  <div class="atlas-place-h"><a href="encyclopedia.html#{e['slug']}">{html.escape(e['name'])}</a>{badge}{perma}</div>
+  <div class="atlas-place-h"><a href="ency/{e['slug']}.html">{html.escape(e['name'])}</a>{badge}{perma}</div>
   <p>{e['desc']}</p>
+  {_entry_images_html(e)}
   <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
   {map_html}
   <div class="atlas-overlay-empty">🗺️ No ancient-world overlay on the shelf yet for this site — a period map
   showing how the region actually looked in the biblical world gets added here as Mr. Librarian curates one,
   the same way the encyclopedia's film shelf grows.</div>
+  {vids}
 </div>"""
 
 
+def _route_index_row(route):
+    """One lean, clickable card for a Journey on the Atlas index -- title, a
+    trimmed teaser, and the stop count, linking to the full map+legend on its
+    own page (routes/<slug>.html). Mirrors _ency_index_row's reasoning: full
+    content moves OUT of the index so it never grows as more journeys (the
+    Exodus, the wilderness years, Paul's missionary journeys) get added --
+    the same reason encyclopedia.html stopped carrying every full entry."""
+    teaser = _plain(route["blurb"])
+    if len(teaser) > 170:
+        teaser = teaser[:167].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    n_stops = sum(1 for s in route["stops"] if not s.get("via"))
+    # Reuses the site's existing generic .card/.cardgrid (build_library's card
+    # language) rather than inventing a parallel set of classes for one more
+    # kind of teaser card.
+    return (f'<a class="card" href="routes/{route["slug"]}.html">'
+            f'<div class="card-t">🧭 {html.escape(route["title"])}</div>'
+            f'<div class="card-d"><strong>{html.escape(route["chapters"])} · {n_stops} stops</strong><br>'
+            f'{html.escape(teaser)}</div></a>')
+
+
+def _atlas_index_row(e):
+    """One lean, clickable line for the Atlas' alphabetical gazetteer -- name +
+    a short teaser + a mapped/unmapped pin, linking to atlas/<slug>.html where
+    the full entry (map, description, refs, videos) lives. This is the ONE
+    place a place's `id="atlas-slug"` anchor is printed (a place can legitimately
+    appear in many chapters' sections below, but a gazetteer lists it once)."""
+    teaser = _plain(e["desc"])
+    if len(teaser) > 130:
+        teaser = teaser[:127].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    pin = "📍" if e.get("coords") else "❓"
+    return (f'<a class="eirow" id="atlas-{e["slug"]}" href="atlas/{e["slug"]}.html">'
+            f'<span class="ei-name">{pin} {html.escape(e["name"])}</span>'
+            f'<span class="ei-teaser">{html.escape(teaser)}</span></a>')
+
+
 def build_atlas():
-    """One INDEX page, organized chapter-by-chapter (not place-by-place like the
-    encyclopedia) so a chapter's Atlas toggle can jump straight to `atlas.html#genesis-N`
-    -- each chapter section is now a lean list of place links (a place can legitimately
-    appear in several chapters' sections), with the full content living on that place's
-    own standalone page (atlas/<slug>.html, see build_atlas_entry_pages()). A place's
-    `id="atlas-slug"` anchor -- so an already-shared atlas.html#atlas-seir link still
-    works -- is printed on its FIRST chapter mention only (a place named in many
-    chapters would otherwise emit the same id many times, which is invalid HTML and
-    was a latent bug in the old one-full-card-per-mention layout).
+    """One INDEX page, THREE ways to reach every mapped place -- following how
+    real print Bible atlases (Zondervan, Holman, Carta) are actually organized:
+    they lead with a sequence of big narrative/era maps (Patriarchal Age,
+    Exodus, the Conquest, Paul's journeys...), then carry an alphabetical
+    GAZETTEER, usually at the back, for looking a name up once you already
+    know it. Neither of those is "by chapter" -- that third mode is unique to
+    a chapter-by-chapter translation project, so it's kept, just last:
+
+    1. Journeys -- a lean teaser card per multi-stop trip (Abram's migration
+       today; more as the translation reaches them), linking to its own full
+       map+legend on routes/<slug>.html.
+    2. Places, A-Z -- the gazetteer, one lean row per place.
+    3. Browse by Chapter -- "what's mapped in the chapter I'm reading", so a
+       chapter's own 🗺️ Atlas toggle can jump straight to its section.
+
+    A place's full content (description, images, refs, live map, videos) lives
+    on its own standalone page (atlas/<slug>.html, see
+    build_atlas_entry_pages()); every section here is a lean list of links.
+    Its `id="atlas-slug"` anchor -- so an already-shared atlas.html#atlas-seir
+    link still works -- is printed ONCE now, on its A-Z row (two elements
+    sharing one id is invalid HTML, which the old per-chapter-mention version
+    had to work around with a seen_ids set; the gazetteer needs no such thing,
+    since a place is listed there exactly once).
     Reuses ENCYCLOPEDIA's existing (chapter, verse) refs — no new authoring needed to
     know which places belong to which chapter."""
     places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
@@ -1680,7 +1828,6 @@ def build_atlas():
             if e["slug"] not in by_chapter[key] or v < by_chapter[key][e["slug"]]:
                 by_chapter[key][e["slug"]] = v
 
-    seen_ids = set()
     sections = []
     for slug, book, num, teaser in CHAPTERS:
         entries = sorted(by_chapter.get((book, num), {}).items(), key=lambda kv: kv[1])
@@ -1688,12 +1835,8 @@ def build_atlas():
             rows = []
             for pslug, _first_v in entries:
                 e = _SLUG_TO_ENTRY[pslug]
-                anchor = ""
-                if pslug not in seen_ids:
-                    anchor = f' id="atlas-{pslug}"'
-                    seen_ids.add(pslug)
                 pin = "📍" if e.get("coords") else "❓"
-                rows.append(f'<a class="atlas-item"{anchor} href="atlas/{pslug}.html">'
+                rows.append(f'<a class="atlas-item" href="atlas/{pslug}.html">'
                             f'{pin} {html.escape(e["name"])}</a>')
             body_html = f'<div class="atlas-items">{"".join(rows)}</div>'
         else:
@@ -1704,22 +1847,31 @@ def build_atlas():
   {body_html}
 </div>""")
 
-    route_html = "".join(render_route_panel(r) for r in ROUTES)
+    routes_html = "".join(_route_index_row(r) for r in ROUTES)
+    gazetteer_html = "".join(_atlas_index_row(e) for e in sorted(places, key=lambda x: x["name"].lower()))
 
     body = f"""<h1 class="pagetitle">🗺️ Atlas</h1>
 <p class="lede">Every place the translation has named so far — <strong>{n_mapped} of {len(places)}
 places</strong> located on a live map (a handful are genuinely debated or unidentified, and say so
-rather than guess a pin). Click a place for its full entry, description, verse links, and map — or
-jump here straight from any chapter's toggle bar and browse chapter by chapter below. Where
-Expedition Bible's Joel Kramer stakes out a specific site — Eden and Havilah via the Pishon, Sodom
-and Gomorrah at Tall el-Hammam — that identification is the one plotted, credited in the place's own
-note.</p>
+rather than guess a pin). Where Expedition Bible's Joel Kramer stakes out a specific site — Eden and
+Havilah via the Pishon, Sodom and Gomorrah at Tall el-Hammam — that identification is the one plotted,
+credited in the place's own note.</p>
 
-{route_html}
+<h2>🧭 Journeys</h2>
+<p class="lede">The big multi-stop trips the story covers, start to finish — the way a printed atlas
+leads with its narrative maps before the alphabetical index at the back.</p>
+<div class="cardgrid">{routes_html}</div>
+
+<h2>Places, A–Z</h2>
+<p class="lede">Click a name for its full entry — description, verse links, and a live map.</p>
+<div class="panel eilist">{gazetteer_html}</div>
+
+<h2>Browse by Chapter</h2>
+<p class="lede">Jump here straight from any chapter's own 🗺️ Atlas toggle, or browse chapter by chapter.</p>
 {''.join(sections)}"""
     out = page(f"Atlas — {SITE_NAME}", body, active="library",
-               desc="A chapter-by-chapter atlas of the MisterLibrarian Bible Project — every named place mapped, "
-                    "with an ancient-world overlay shelf still growing.")
+               desc="An atlas of the MisterLibrarian Bible Project — the big journeys mapped in full, "
+                    "every named place in an A-Z gazetteer, and a chapter-by-chapter browse.")
     open(os.path.join(OUT, "atlas.html"), "w", encoding="utf-8").write(out)
     return n_mapped, len(places)
 
@@ -1744,6 +1896,27 @@ def build_atlas_entry_pages():
                    desc=_plain(e['desc']), url=f"atlas/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{e['slug']}.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
+
+
+def build_route_pages():
+    """One standalone, shareable page per Journey: routes/<slug>.html. Same
+    reasoning as build_encyclopedia_entry_pages() -- a shareable URL with its
+    own title/OG description, and (as more journeys are added -- the Exodus,
+    the wilderness years, Paul's missionary journeys) an atlas.html that stays
+    a lean index of teaser cards instead of inlining every journey's full map
+    and legend on one ever-growing page."""
+    outdir = os.path.join(OUT, "routes")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for r in ROUTES:
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="atlas.html">🗺️ Atlas</a></p>
+{render_route_panel(r)}"""
+        out = page(f"{r['title']} — Atlas — {SITE_NAME}", body, active="library",
+                   desc=_plain(r["blurb"]), url=f"routes/{r['slug']}.html", base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{r['slug']}.html"), "w", encoding="utf-8").write(out)
         n += 1
     return n
 
@@ -4752,7 +4925,7 @@ def build_sitemap():
     # alone never sees them. Walked separately and added with their subdir prefix
     # so every downstream step (hreflang pairing via string-slicing, lastmod
     # lookup, the noindex sniff) treats "ency/seir.html" exactly like a root page.
-    for sub in ("ency", "dict", "atlas"):
+    for sub in ("ency", "dict", "atlas", "routes"):
         subdir = os.path.join(OUT, sub)
         if os.path.isdir(subdir):
             pages += sorted(f"{sub}/{f}" for f in os.listdir(subdir) if f.endswith(".html"))
@@ -4843,6 +5016,7 @@ def main():
     build_encyclopedia_entry_pages()
     n_mapped, n_atlas_places = build_atlas()
     build_atlas_entry_pages()
+    build_route_pages()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_sitemap = build_sitemap()
     save_card_manifest()
