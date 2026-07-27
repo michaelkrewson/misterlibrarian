@@ -84,6 +84,7 @@ DICTIONARY = [
     ("biazomai", "biazetai / biastai", "βιάζεται", "biazetai", "TO FORCE, or TO BE FORCED — one of the New Testament's most argued single verses. Matthew 11:12's biazetai can be read two directions, and the difference is not a nuance but an opposite claim. MIDDLE voice: 'the kingdom of the heavens FORCES ITS WAY forward, powerfully advancing' — a picture of unstoppable momentum, with biastai its eager, forceful entrants. PASSIVE voice: 'the kingdom SUFFERS VIOLENCE' — under active assault, biastai now its violent opponents, plundering (harpazousin, the verb for snatching or ransacking) what is not theirs. ⚠ Its nearest relative argues for the middle sense — Luke's parallel reads unambiguously reflexive, 'everyone is forcing their way into it' (Luke 16:16, not yet on these pages) — but Matthew's own context, a generation that refuses to dance OR mourn no matter what is played (11:16-19), reads more naturally as violence done TO the kingdom. KJV/ASV/NWT all print the passive; this translation follows them as the primary reading and names the argument rather than closing it.", ("Matthew", 11, 12)),
     ("nepios", "nēpios / nēpioi", "νήπιος", "nēpioi", "INFANT, BABE — literally 'not-speaking' (nē-, negative + epos, 'word'), the ordinary Greek word for a small child too young to talk, used figuratively of the untaught or the simple. ⚠ Matthew 11:25 sets it directly against sophoi kai synetoi, 'the wise and the understanding' — Jesus thanks the Father for hiding 'these things' from precisely the people equipped to grasp them and revealing them instead to the ones with no equipment at all. Paul uses the same word for immature believers fed only milk, not solid food (1 Corinthians 3:1-2, not yet on these pages); here the immaturity is not a fault to outgrow but the actual qualification for the revelation.", ("Matthew", 11, 25)),
     ("zygos", "zygos", "ζυγός", "zygos", "YOKE — the wooden crossbar laid across a paired team's necks so two animals pull one load together; by metaphor, in both Greek and the rabbinic idiom of Jesus' own day ('the yoke of the Torah,' 'the yoke of the kingdom'), a body of teaching or obligation TAKEN ON. ⚠ So 'take my yoke' (11:29) pictures not burden alone — every yoke is a burden — but DISCIPLESHIP itself: the word used for a rabbi's teaching, offered here as replacing whatever yoke the hearer already carries. Paul uses it once more of marriage to an unbeliever ('unequally yoked,' 2 Corinthians 6:14, not yet on these pages) — the same image of two pulling one load, mismatched.", ("Matthew", 11, 29)),
+    ("kalos", "kalos", "καλός", "kalos", "GOOD — but a specific flavor of good: sound, fine, admirable, working as it should, closer to English 'good-quality' than to the purely moral 'good' of agathos (its near-synonym, also used in this same chapter, 12:35). A tree is kalos when it bears kalos fruit (12:33) because it is doing what a tree is FOR; doing good on the sabbath (12:12) is kalos in the same sense — not a rule kept but a thing rightly done. The word underlies English 'calligraphy' (kalos + graphē, 'beautiful writing').", ("Matthew", 12, 33)),
     ("praus", "praus", "πραΰς", "praus", "MEEK, gentle — the identical word this translation has already met once: 'Happy the MEEK, for they shall inherit the earth' (Matthew 5:5). ⚠ There it named a beatitude to be pursued; here Jesus applies it to himself — 'I am meek and humble in heart' (11:29) — the only two places in this Gospel the word appears, first as a virtue promised a reward and then as a virtue claimed by the one making the promise. Not weakness: Greek writers used the word of a tamed animal or a controlled temper, never a spineless one.", ("Matthew", 11, 29)),
     ("chrestos", "chrēstos", "χρηστός", "chrēstos", "KIND, easy, useful — of a yoke that fits well rather than one that galls; a craftsman's word for well-made, serviceable, GOOD to use. ⚠ Its close relative is a genuine ancient confusion rather than a modern pun: christos ('anointed') and chrēstos were near-homophones in first-century pronunciation, common enough that 'Chrestus' turns up as a variant spelling of 'Christus' in later Roman writing (Suetonius's Life of Claudius). Matthew does not exploit the pun; it is simply there, in the sound of the last word Jesus gives this chapter for his own yoke.", ("Matthew", 11, 30)),
     ("lathra", "lathra", "λάθρᾳ", "lathra", "SECRETLY, quietly, without publicity — an adverb that takes its moral colour entirely from who is using it. It occurs twice in Matthew's opening chapters and nowhere else in his Gospel: Joseph, 'being righteous and unwilling to expose her to disgrace,' resolves to divorce Mary <em>lathra</em> (1:19) — quietly, to shield a woman from a public penalty; and Herod calls the magi <em>lathra</em> (2:7) — secretly, to fix the location of a child he intends to kill. ⚠ One word, two chapters, mercy and murder, and Matthew never comments on the pairing.", ("Matthew", 2, 7)),
@@ -1515,7 +1516,7 @@ ENCYCLOPEDIA = [
     dict(slug="nineveh", name="Nineveh", kind="place",
          desc="Great Assyrian capital on the Tigris, founded in the Nimrod tradition (10:11); its mounds (Kuyunjik, "
               "opposite modern Mosul) have been excavated for nearly two centuries. Later the setting of Jonah.",
-         refs=[(10, 11), (10, 12), ("Jonah", 1, 2), ("Nahum", 1, 1)],
+         refs=[(10, 11), (10, 12), ("Jonah", 1, 2), ("Nahum", 1, 1), ("Matthew", 12, 41)],
          videos=[("Bible Evidence Unearthed at Nineveh!", "https://www.youtube.com/watch?v=34XBkm4QiLo")],
          coords=(36.3605, 43.1575, 0.15),
          modern="Kuyunjik mound, opposite Mosul, Iraq"),
@@ -3842,7 +3843,20 @@ ENCYCLOPEDIA = [
               "God was merciful. Jesus invokes 'the sign of Jonah' — three days in the fish, and Nineveh's "
               "repentance as a rebuke to his own generation (Matthew 12:39-41; Luke 11:29-32). The Vulgate and Douay "
               "call him JONAS.",
-         refs=[("Jonah", 1, 1), ("2 Kings", 14, 25)], videos=[]),
+         refs=[("Jonah", 1, 1), ("2 Kings", 14, 25), ("Matthew", 12, 40)], videos=[]),
+    dict(slug="queen-of-sheba", name="The Queen of Sheba", kind="person", aliases=["Queen of Sheba", "queen of the south"],
+         desc="An unnamed monarch who travels to Jerusalem to test Solomon 'with hard questions' after hearing of "
+              "his fame, arriving with a camel caravan of spices, gold, and precious stones and leaving convinced "
+              "the reports had not told her the half of it (1 Kings 10:1-13). ⚠ Her kingdom's location is genuinely "
+              "disputed — most often placed in South Arabia (modern Yemen), the historic incense-trade kingdom of "
+              "Saba, though Ethiopian tradition (the Kebra Nagast) claims her as its own and traces the Solomonic "
+              "line of its emperors to a son she bore Solomon, Menelik I. Jesus calls her 'the queen of the SOUTH,' "
+              "the direction rather than the name, and sets her alongside Nineveh as a Gentile who responded rightly "
+              "to less evidence than stands in front of his own generation (Matthew 12:42; Luke 11:31). 'Sheba' also "
+              "recurs among the names in Genesis' own Table of Nations, in more than one branch of the family tree "
+              "(Genesis 10:7, 10:28) — whether any of those namesakes is the kingdom behind this queen is not "
+              "something the text settles.",
+         refs=[("1 Kings", 10, 1), ("Matthew", 12, 42)], videos=[]),
     dict(slug="tarshish", name="Tarshish", kind="place", aliases=["Tarshish", "Tharsis"],
          desc="A distant western seaport — the far edge of the known world, and the OPPOSITE direction from Nineveh, "
               "which is the whole point of Jonah's choosing it. ⚠ Most likely TARTESSOS in southern Spain (the "
@@ -5037,6 +5051,13 @@ XREFS = [
     (("Psalms", 1, 2), ("Joshua", 1, 8), "hagah, 'meditate' — the identical command over the identical book: 'this book of the law shall not depart from your mouth; you shall meditate on it day and night'"),
     (("Psalms", 1, 3), ("Jeremiah", 17, 8), "the tree planted by water whose leaf does not wither and which bears fruit in season — shared almost verbatim; which poet drew on which is unknown"),
     (("Psalms", 1, 1), ("Proverbs", 1, 10), "the counsel of the wicked — Psalm 1's happy man will not walk in it; Proverbs' father warns, 'my son, if sinners entice you, do not consent'"),
+    (("Matthew", 12, 7), ("Matthew", 9, 13), "Eleos thelō kai ou thysian, 'I desire mercy, and not sacrifice' — Hosea 6:6 quoted word for word a second time, against the identical opponents over the identical charge, exactly as promised at 9:13"),
+    (("Matthew", 12, 24), ("Matthew", 9, 34), "the ruler of the demons — a muttered, nameless accusation at 9:34 finally gets the name Beelzeboul and a full scene where Jesus answers it point by point"),
+    (("Matthew", 12, 24), ("Matthew", 10, 25), "Beelzeboul — the name Jesus hands the disciples as a warning at 10:25 ('if they have called the master of the house Beelzeboul') is now spoken to his own face"),
+    (("Matthew", 12, 24), ("2 Kings", 1, 2), "Beelzeboul is the Greek carrying-over of Ba'al Zevuv, 'lord of flies' — Ahaziah's god of Ekron becomes, by way of a Hebrew pun, the New Testament's name for the prince of the demons"),
+    (("Matthew", 12, 34), ("Matthew", 3, 7), "gennēmata echidnōn, 'brood of vipers' — John the Baptist's insult to the Pharisees and Sadducees at the Jordan, word for word, now spoken by Jesus against the same opponents"),
+    (("Matthew", 12, 39), ("Jonah", 1, 3), "the sign of Jonah — the prophet who ran from Nineveh instead of preaching to it becomes, three days in the fish, the one sign this generation is given"),
+    (("Matthew", 12, 42), ("1 Kings", 10, 1), "the queen of the south — Sheba's queen, who crossed the earth to hear Solomon's wisdom, set beside a generation with something greater than Solomon standing in front of it"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -5120,6 +5141,8 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ["Matthew", 12, 20, "“A bruised reed he will not break, and a smoldering wick he will not quench.” Isaiah's servant, cited over Jesus at the height of his popularity — gentleness as the shape of power, not its absence."],
+    ["Matthew", 12, 50, "“Whoever does the will of my Father who is in the heavens, that person is my brother and sister and mother.” Family redrawn around one criterion, spoken with a hand stretched toward ordinary disciples."],
     ["Matthew", 8, 3, "“I am willing; be cleansed.” The leper doubted the will, not the power — and the answer picks up his own word and drops the condition."],
     ["Matthew", 11, 28, "“Come to me, all who labor and are heavy-laden, and I will give you rest.” Not a demand for the strong — an invitation issued precisely to the exhausted."],
     ["Matthew", 11, 6, "“And happy is whoever is not offended in me.” Not a demand for certainty — a blessing on those who stay, doubts and all, the same John who sent to ask it."],
@@ -8990,6 +9013,12 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "kalos": ("bueno",
+        "BUENO — pero un matiz específico: sano, de buena calidad, admirable, funcionando como debe, más "
+        "cerca del «buena calidad» del español que del «bueno» puramente moral de <em>agathos</em> (su casi "
+        "sinónimo, usado en este mismo capítulo, 12:35). Un árbol es <em>kalos</em> cuando da fruto "
+        "<em>kalos</em> (12:33) porque hace aquello para lo que existe; hacer el bien en sábado (12:12) es "
+        "<em>kalos</em> en el mismo sentido — no una regla cumplida, sino algo hecho como corresponde."),
     "ovnayim": ("las dos piedras",
         "LAS DOS PIEDRAS — el torno del alfarero, y una de las palabras más informativas del hebreo "
         "bíblico, porque es un DUAL: no «rueda», sino el dual de <em>even</em>, «piedra». La palabra es una "
@@ -9160,6 +9189,15 @@ DICTIONARY_ES = {
 }
 
 ENCYCLOPEDIA_ES = {
+    "queen-of-sheba": ("La reina de Sabá",
+        "Una monarca sin nombre que viaja a Jerusalén a probar a Salomón «con preguntas difíciles» tras oír "
+        "de su fama, y llega con una caravana de camellos cargada de especias, oro y piedras preciosas "
+        "(1 Reyes 10:1-13). ⚠ La ubicación de su reino es genuinamente discutida — casi siempre situado en "
+        "el sur de Arabia (el actual Yemen), el histórico reino del incienso llamado Saba, aunque la "
+        "tradición etíope (el Kebra Nagast) la reclama como propia y traza la línea salomónica de sus "
+        "emperadores hasta un hijo que ella le habría dado a Salomón, Menelik I. Jesús la llama «la reina "
+        "del SUR», la dirección y no el nombre, y la coloca junto a Nínive como una gentil que respondió "
+        "correctamente a menos evidencia de la que tiene delante su propia generación (Mateo 12:42)."),
     "potter": ("El alfarero",
         "El oficio más común del mundo antiguo, y el que los profetas usan más a menudo cuando quieren decir "
         "algo sobre Dios y una nación. La cerámica es también lo más abundante que los arqueólogos "
@@ -9562,6 +9600,38 @@ CHAPTER_ART = {
                 "escena antigua se sienta real para su propio público.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Exhortation_to_the_Apostles_(Recommandation_aux_ap%C3%B4tres)_-_James_Tissot.jpg",
+    )],
+    "mat12": [dict(
+        file="mat12.jpg",
+        title="The Man with the Withered Hand",
+        title_es="El hombre de la mano seca",
+        artist="James Tissot",
+        year="c. 1886-1894",
+        location="Brooklyn Museum, New York",
+        location_es="Brooklyn Museum, Nueva York",
+        alt="A gouache painting of a synagogue interior, hung with rows of glass oil lamps and dominated "
+            "by an elevated wooden reading platform crowded with turbaned onlookers. In the foreground "
+            "Jesus, in white, stands at left with his hand raised; a man in a striped robe steps toward "
+            "him holding out his arm, while seated men in prayer shawls watch with folded arms and "
+            "skeptical faces.",
+        note="Tissot travelled to the Middle East researching costume, architecture, and synagogue "
+             "furnishing before painting his 350-work &lsquo;Life of Christ&rsquo; series, and it shows: "
+             "the hanging glass lamps and the raised bimah platform are not generic biblical-movie set "
+             "dressing but a real attempt at what a first-century Galilean synagogue actually held. ⚠ The "
+             "painting stages the QUESTION, not the miracle &mdash; the man&rsquo;s arm is still bent close "
+             "to his body, not yet stretched out, and the seated men&rsquo;s crossed arms and lowered brows "
+             "are the &lsquo;so that they might accuse him&rsquo; of v10, watching to see what he will do "
+             "before he has done it.",
+        note_es="Tissot viajó a Oriente Próximo a investigar vestuario, arquitectura y mobiliario de "
+                "sinagoga antes de pintar su serie de 350 obras &lsquo;La vida de Cristo&rsquo;, y se nota: "
+                "las lámparas de vidrio colgantes y la plataforma elevada (bimá) no son decorado genérico "
+                "de película bíblica, sino un intento real de mostrar lo que una sinagoga galilea del siglo "
+                "primero realmente tenía. ⚠ El cuadro escenifica la PREGUNTA, no el milagro &mdash; el "
+                "brazo del hombre sigue doblado junto a su cuerpo, todavía no extendido, y los brazos "
+                "cruzados y las cejas bajas de los hombres sentados son el &lsquo;para acusarlo&rsquo; del "
+                "v10, observando qué hará antes de que lo haya hecho.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Man_with_the_Withered_Hand_(L%27homme_%C3%A0_la_main_dess%C3%A9ch%C3%A9e)_-_James_Tissot_-_overall.jpg",
     )],
     "mat11": [dict(
         file="mat11.jpg",
