@@ -294,11 +294,11 @@ DICTIONARY = [
     ("tsela", "tsela", "צֵלָע", "tsela",
      "Side — everywhere else a structural side (tabernacle, ark, temple), never a rib bone; this translation's 'side, not rib' at 2:21 rests on that usage.", (2, 21)),
     ("yhvh", "YHVH", "יְהוָה", "YHVH (the Tetragrammaton)",
-     "The personal name of God (יהוה), first here at 2:4. Most English Bibles hide it behind the title 'the LORD' (small caps); this translation restores it as <strong>Jehovah</strong> — the traditional English form since about the 1200s, used throughout the ASV and by the NWT. ('Jehovah' is a hybrid, the consonants with Adonai's vowels; scholars reconstruct the original as 'Yahweh.') The full discussion is on the <a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>.", (2, 4)),
+     "The personal name of God (יהוה), first here at 2:4. Most English Bibles hide it behind the title 'the LORD' (small caps); this translation restores it as <strong>Jehovah</strong> — the traditional English form since about the 1200s, used throughout the ASV and by the NWT. ('Jehovah' is a hybrid, the consonants with Adonai's vowels; scholars reconstruct the original as 'Yahweh.') The full discussion is on the <a href=\"ask-jehovah.html\">Dear Mr. Librarian page</a>.", (2, 4)),
     ("yada", "yada", "יָדַע", "yada",
      "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1).", (4, 1)),
     ("yom", "yom", "יוֹם", "yom",
-     "DAY — one of the most elastic words in the Hebrew Bible, and the reason the length of the creation 'days' has been debated for two thousand years. It means the daylight hours (Genesis 1:5, 'God named the light DAY'), a 24-hour calendar day, AND an indefinite stretch of time — an age: 'in the DAY that Jehovah made earth and heaven' (2:4) folds the whole creation week into a single yom, and 'the DAY of Jehovah' names a whole era of judgment. So the six 'days' of Genesis 1 can be read as ordinary days OR as long ages (the 'day-age' reading — ancient, going back to Augustine, and the way many hold the text and the ~13.8-billion-year cosmos together). This translation renders it plainly 'day' and lays out the readings without voting — see the note at 1:5, or the fuller discussion on the <a href=\"ask-creation-days.html\">Ask Mr. Librarian page</a>.", (1, 5)),
+     "DAY — one of the most elastic words in the Hebrew Bible, and the reason the length of the creation 'days' has been debated for two thousand years. It means the daylight hours (Genesis 1:5, 'God named the light DAY'), a 24-hour calendar day, AND an indefinite stretch of time — an age: 'in the DAY that Jehovah made earth and heaven' (2:4) folds the whole creation week into a single yom, and 'the DAY of Jehovah' names a whole era of judgment. So the six 'days' of Genesis 1 can be read as ordinary days OR as long ages (the 'day-age' reading — ancient, going back to Augustine, and the way many hold the text and the ~13.8-billion-year cosmos together). This translation renders it plainly 'day' and lays out the readings without voting — see the note at 1:5, or the fuller discussion on the <a href=\"ask-creation-days.html\">Dear Mr. Librarian page</a>.", (1, 5)),
     ("zakhar-remember", "zakhar", "זָכַר", "zakhar",
      "To remember — divine remembering that acts: 'God remembered Noah' turns the flood (8:1); God looks at the bow 'to remember' (9:16).", (8, 1)),
     # ---- John 1 (Greek) ----
@@ -1693,7 +1693,7 @@ ENCYCLOPEDIA = [
     dict(slug="enoch", name="Enoch (who walked with God)", kind="person", aliases=["Enoch"],
          desc="Seventh from Adam: the one man in Genesis 5 who does not die — 'Enoch walked with God, and then he "
               "was not there, for God took him' (5:24), at 365 years. The later Book of Enoch grew from these two "
-              "verses (see the Ask Mr. Librarian post). Distinct from Cain's son Enoch (4:17), for whom the first "
+              "verses (see the Dear Mr. Librarian post). Distinct from Cain's son Enoch (4:17), for whom the first "
               "city was named.",
          refs=[(5, 18), (5, 19), (5, 21), (5, 22), (5, 23), (5, 24)], videos=[]),
     dict(slug="methuselah", name="Methuselah", kind="person",
@@ -2992,7 +2992,7 @@ ENCYCLOPEDIA = [
               "American Standard Version and by the New World Translation) — a hybrid of the consonants YHWH with "
               "the vowels of <em>Adonai</em>; scholars reconstruct the original pronunciation as 'Yahweh.' The full "
               "discussion, and why this project chose 'Jehovah,' is on the "
-              "<a href=\"ask-jehovah.html\">Ask Mr. Librarian page</a>. The Name's own self-explanation is given "
+              "<a href=\"ask-jehovah.html\">Dear Mr. Librarian page</a>. The Name's own self-explanation is given "
               "at the burning bush — 'ehyeh asher ehyeh,' and then 'YHWH … this is my name forever' (Exodus "
               "3:14-15); see that chapter.",
          refs=[(2, 4), ("Exodus", 3, 15)],

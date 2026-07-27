@@ -143,6 +143,7 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
   padding:5px 12px;border:1px solid var(--border);border-radius:14px;white-space:nowrap;
   text-decoration:none;cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
 .utilnav .util-ask:hover{color:var(--gold);border-color:rgba(232,201,104,0.35);background:rgba(232,201,104,0.08)}
+.utilnav .util-ask.on{color:var(--gold);border-color:rgba(232,201,104,0.35);background:rgba(232,201,104,0.08)}
 .langsel{position:relative}
 .langsel summary{list-style:none;display:inline-flex;align-items:center}
 .langsel summary::-webkit-details-marker{display:none}

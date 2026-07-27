@@ -5,7 +5,7 @@ Single source of truth: mstr-trader's dashboard/mister_translation.html
 (each chapter lives there as a <div class="chapter-panel" id="chapter-genN">
 block). This script extracts every chapter panel and regenerates the public
 site: one page per chapter with prev/next navigation, a Table of Contents
-with live progress, the home page, and the Ask Mr. Librarian posts.
+with live progress, the home page, and the Dear Mr. Librarian posts.
 
 Usage:
     python3 build.py [--source /path/to/mister_translation.html]
@@ -438,9 +438,15 @@ def header(active="", lang="en"):
     {pageviews_item}{share_item}
   </nav>
 </header>"""
+    # "Ask a Question" (contact.html, submit yours) and "Dear Mr. Librarian" (ask.html,
+    # browse answered ones) are a real pair -- every answered post links back to the
+    # contact form as "send yours to the librarian's desk" -- so they sit together
+    # here rather than one living in the content nav and the other in a corner.
+    ask_on = " on" if active == "ask" else ""
     return f"""<header class="site-head">
   <div class="utilnav">
     <a class="util-ask" href="contact.html" title="Ask a question">✉️ Ask a Question</a>
+    <a class="util-ask{ask_on}" href="ask.html" title="Reader questions, answered one at a time">\U0001F4D6 Dear Mr. Librarian</a>
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
       <div class="langlist">
@@ -461,7 +467,6 @@ def header(active="", lang="en"):
     <a href="reading.html"{cls('reading')}>📗 My Reading</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
-    <a href="ask.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="about.html"{cls('about')}>About</a>
     {pageviews_item}{share_item}
   </nav>
@@ -2927,7 +2932,7 @@ def build_index(chapters):
   <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
   <a class="card" href="reading.html"><div class="card-t">\U0001F4D7 My Reading</div>
   <div class="card-d">Track your own progress through the translation, chapter by chapter — kept privately in your browser.</div></a>
-  <a class="card" href="ask.html"><div class="card-t">\U0001F4D6 Ask Mr. Librarian</div>
+  <a class="card" href="ask.html"><div class="card-t">\U0001F4D6 Dear Mr. Librarian</div>
   <div class="card-d">Reader questions answered — was the Word "God" or "a god" (John 1:1 and the deity of Christ), and why the Book of Enoch isn't included.</div></a>
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
@@ -3337,7 +3342,7 @@ roughly 5,800 Greek manuscripts is actually weighed, and what carries over from 
 
 
 def build_ask_enoch():
-    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
 <h1 class="pagetitle">Why isn't the Book of Enoch in this translation?</h1>
 
 <div class="qbox">
@@ -3383,20 +3388,20 @@ def build_ask_enoch():
   what's coming next? Reader questions are exactly how this series grows — the next one could be yours.</p>
   <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
 </div>"""
-    out = page(f"Ask Mr. Librarian: the Book of Enoch — {SITE_NAME}", body, active="ask",
+    out = page(f"Dear Mr. Librarian: the Book of Enoch — {SITE_NAME}", body, active="ask",
                desc="Why the Book of Enoch isn't part of this Bible translation: the Masoretic source "
                     "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.")
     open(os.path.join(OUT, "ask-enoch.html"), "w", encoding="utf-8").write(out)
 
 
 def build_ask_newton():
-    """Ask Mr. Librarian: did Isaac Newton write about the Bible? Presents his three
+    """Dear Mr. Librarian: did Isaac Newton write about the Bible? Presents his three
     public-domain biblical works, their genuine fit with this site (Daniel/Revelation,
     the Johannine Comma on the NT apparatus page, the Chronology), and — under the
     project's neutrality rule — handles his private anti-Trinitarianism factually,
     distinguishing his sound textual findings from his partisan doctrinal motive. The
     works themselves are archived (source/newton/ + S3) by tools/archive_newton.py."""
-    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
 <h1 class="pagetitle">Did Isaac Newton write about the Bible?</h1>
 <h2 style="margin-top:2px">The scientist's other library — and where it touches this one</h2>
 
@@ -4143,7 +4148,7 @@ Reina-Valera.</p>
 
 
 def build_ask_index():
-    body = """<h1 class="pagetitle">\U0001F4D6 Ask Mr. Librarian</h1>
+    body = """<h1 class="pagetitle">\U0001F4D6 Dear Mr. Librarian</h1>
 <p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
 between versions — answered one at a time, in the librarian's way: sourced, compared, and left for you to
 weigh rather than settled from the desk. Have one of your own? The <a href="contact.html">question box</a> is
@@ -4166,18 +4171,18 @@ exactly how this series grows.</p>
   textual criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled
   honestly.</div></a>
 </div>"""
-    out = page(f"Ask Mr. Librarian — {SITE_NAME}", body, active="ask",
+    out = page(f"Dear Mr. Librarian — {SITE_NAME}", body, active="ask",
                desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
                     "compared, and left for you to weigh.")
     open(os.path.join(OUT, "ask.html"), "w", encoding="utf-8").write(out)
 
 
 def build_ask_jesus_god():
-    """The exhaustive, balanced Ask Mr. Librarian post on John 1:1 and the deity of
+    """The exhaustive, balanced Dear Mr. Librarian post on John 1:1 and the deity of
     Christ. Presents BOTH the subordinationist/unitarian case and the full-deity case
     at full strength and declines to hand down a verdict — the project's 'catalogue,
     source, compare, don't preach' ethos. Edit this function to revise the post."""
-    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
 <h1 class="pagetitle">Was the Word "God," or "a god"?</h1>
 <h2 style="margin-top:2px">John 1:1 and the deity of Christ</h2>
 
@@ -4426,11 +4431,11 @@ def build_ask_jesus_god():
 </div>
 
 <div class="panel" style="margin-top:14px">
-  <p class="muted" style="margin:0 0 12px">More from <a href="ask.html">Ask Mr. Librarian</a>:
+  <p class="muted" style="margin:0 0 12px">More from <a href="ask.html">Dear Mr. Librarian</a>:
   <a href="ask-enoch.html">Why isn't the Book of Enoch in this translation?</a></p>
   <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
 </div>"""
-    out = page(f"Ask Mr. Librarian: was the Word God, or a god? — {SITE_NAME}", body, active="ask",
+    out = page(f"Dear Mr. Librarian: was the Word God, or a god? — {SITE_NAME}", body, active="ask",
                desc="John 1:1 and the deity of Christ: the Greek grammar of the missing article (Colwell, "
                     "Harner), the three readings, 'firstborn of all creation,' the Angel of Jehovah and Michael "
                     "the archangel, the earliest manuscripts, and the whole case on both sides — laid out, not "
@@ -4439,10 +4444,10 @@ def build_ask_jesus_god():
 
 
 def build_ask_jehovah():
-    """Ask Mr. Librarian post explaining the divine-name choice: the Tetragrammaton,
+    """Dear Mr. Librarian post explaining the divine-name choice: the Tetragrammaton,
     why nearly every Bible hides it behind 'the LORD,' Yahweh vs. Jehovah, and why this
     project restores the traditional English form 'Jehovah.'"""
-    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
 <h1 class="pagetitle">Why does this translation say &ldquo;Jehovah&rdquo;?</h1>
 <h2 style="margin-top:2px">The name of God &mdash; the LORD, Yahweh, or Jehovah</h2>
 
@@ -4545,11 +4550,11 @@ def build_ask_jehovah():
 <div class="panel" style="margin-top:14px">
   <p class="muted" style="margin:0 0 12px">See it first at <a href="genesis-2.html">Genesis 2:4</a>, or in the
   <a href="dictionary.html">Dictionary</a> and <a href="encyclopedia.html">Encyclopedia</a>. More from
-  <a href="ask.html">Ask Mr. Librarian</a>: <a href="ask-jesus-god.html">Was the Word God, or a god?</a> &middot;
+  <a href="ask.html">Dear Mr. Librarian</a>: <a href="ask-jesus-god.html">Was the Word God, or a god?</a> &middot;
   <a href="ask-enoch.html">Why isn&rsquo;t the Book of Enoch here?</a></p>
   <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
 </div>"""
-    out = page(f"Ask Mr. Librarian: why “Jehovah”? — {SITE_NAME}", body, active="ask",
+    out = page(f"Dear Mr. Librarian: why “Jehovah”? — {SITE_NAME}", body, active="ask",
                desc="The divine name in this translation: the Tetragrammaton (YHWH), why nearly every Bible hides "
                     "it behind 'the LORD,' the difference between 'Yahweh' and 'Jehovah,' and why this project "
                     "restores the traditional English form 'Jehovah.'")
@@ -4557,12 +4562,12 @@ def build_ask_jehovah():
 
 
 def build_ask_creation_days():
-    """Ask Mr. Librarian post on the length of the creation 'days' — the word yom,
+    """Dear Mr. Librarian post on the length of the creation 'days' — the word yom,
     the internal signals of Genesis 1, the ordinary-day / day-age / framework
     readings with their pedigrees, and the honest 'isn't this just bending the Bible
     to fit science?' question. Companion to the Genesis 1 v5 note and the yom
     dictionary entry. Neutrality habit: lay out the views, don't cast a vote."""
-    body = """<div class="askbar"><a href="ask.html">← Ask Mr. Librarian</a></div>
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
 <h1 class="pagetitle">How long were the days of creation?</h1>
 <h2 style="margin-top:2px">The word <em>yom</em>, the age of the earth, and the &ldquo;day-age&rdquo; reading</h2>
 
@@ -4679,7 +4684,7 @@ def build_ask_creation_days():
   The verse-by-verse discussion lives in the note at <a href="genesis-1.html#n5">Genesis 1:5</a>.</p>
 </div>
 
-<div class="askbar askbar-foot"><a href="ask.html">← More from Ask Mr. Librarian</a></div>"""
+<div class="askbar askbar-foot"><a href="ask.html">← More from Dear Mr. Librarian</a></div>"""
     out = page(f"How long were the days of creation? — {SITE_NAME}", body, active="ask",
                desc="How long were the days of creation? The Hebrew word yom, the age of the earth, and the "
                     "ordinary-day, day-age, and literary-framework readings — laid out with their pedigrees "
@@ -4692,7 +4697,7 @@ def build_contact():
     body = f"""<h1 class="pagetitle">✉️ Ask Mr. Librarian a question</h1>
 <p class="lede">A question about the project, a translation choice you'd argue with, a chapter request,
 or something you've always wondered about the text — send it in. Good questions become
-<a href="ask-enoch.html">Ask Mr. Librarian</a> posts (anonymously unless you say otherwise), and reader
+<a href="ask-enoch.html">Dear Mr. Librarian</a> posts (anonymously unless you say otherwise), and reader
 questions are exactly how that series grows.</p>
 
 <div class="panel">
@@ -4718,7 +4723,7 @@ questions are exactly how that series grows.</p>
 </div>"""
     out = page(f"Ask a question — {SITE_NAME}", body, active="contact",
                desc="Send Mr. Librarian a question about the translation, a verse, or the project — "
-                    "good questions become Ask Mr. Librarian posts.")
+                    "good questions become Dear Mr. Librarian posts.")
     open(os.path.join(OUT, "contact.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4726,7 +4731,7 @@ def build_thanks():
     body = """<h1 class="pagetitle">📬 It's on the librarian's desk</h1>
 <div class="panel prose">
   <p><strong>Your question is in.</strong> Thank you — reader questions are the lifeblood of the
-  <a href="ask-enoch.html">Ask Mr. Librarian</a> series, and every one gets read. If yours becomes a post,
+  <a href="ask-enoch.html">Dear Mr. Librarian</a> series, and every one gets read. If yours becomes a post,
   it will appear anonymously unless you asked otherwise; if you left an email, you may get a reply
   directly.</p>
   <p>Meanwhile, the shelves are open: the <a href="toc.html">Table of Contents</a> has every chapter
