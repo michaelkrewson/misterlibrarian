@@ -507,12 +507,57 @@ def _hero_img(p, cls="hero"):
             f'{credit}</figure>')
 
 
-def _meta_line(p):
+def _hits_id(path):
+    return "hits-" + re.sub(r"[^a-z0-9]+", "-", path.lower()).strip("-")
+
+
+def _hits_widget(path, suffix=""):
+    """A small, inline view-count chip — GoatCounter's public PER-PATH counter
+    (same account as the Bible site, so this rides the one already-configured
+    dashboard), fetched client-side. `path` is the page's own path from the
+    domain root, e.g. "/travel/foo.html" — NOT the bare filename, since
+    GoatCounter records whatever `location.pathname` actually was for a visit,
+    and every internal link here is relative (so index.html always resolves to
+    the full /travel/index.html path, never the bare "/travel/").
+
+    Same resilience contract as the Bible site's site-wide stats box
+    (build.py's _stats_box): don't gate on response.ok — GoatCounter 404s a
+    thin/zero-data path even though the JSON body is still valid — and fail
+    SILENT (hide the chip) on any error rather than leave a stuck "—" behind.
+    A brand-new page with zero hits yet is exactly this case, so it should
+    just not show a count until there's a real one to show.
+    """
+    if not GOATCOUNTER_CODE:
+        return ""
+    hid = _hits_id(path)
+    encoded = urllib.parse.quote(path, safe="")
+    return f"""<span class="hits" id="{hid}">👁 <span id="{hid}-n">—</span>{html.escape(suffix)}</span>
+<script>
+(function(){{
+  fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter/{encoded}.json")
+    .then(function(r){{ return r.json(); }})
+    .then(function(d){{
+      var n = document.getElementById("{hid}-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else {{ var el = document.getElementById("{hid}"); if (el) el.style.display = "none"; }}
+    }})
+    .catch(function(){{
+      var el = document.getElementById("{hid}"); if (el) el.style.display = "none";
+    }});
+}})();
+</script>"""
+
+
+def _meta_line(p, show_hits=False):
     bits = [f'<time datetime="{p["date"].isoformat()}">{_pretty_date(p["date"])}</time>']
     if p["place"]:
         bits.append(f'<span class="place">📍 {html.escape(p["place"])}</span>')
     if p["draft"]:
         bits.append('<span class="draftflag">DRAFT — not published</span>')
+    # Hits are skipped on a draft: it's an unlisted preview, not a real page
+    # visitors land on, so a view count there would be nearly meaningless noise.
+    if show_hits and not p["draft"]:
+        bits.append(_hits_widget(f"{BASE}/{p['file']}", " views"))
     return '<div class="postmeta">' + " · ".join(bits) + "</div>"
 
 
@@ -591,8 +636,10 @@ def build_index(posts):
                '<button class="sortbtn on" data-sort="date">Newest</button>'
                '<button class="sortbtn" data-sort="stars">Highest rated</button></div>')
 
+    index_hits = _hits_widget(f"{BASE}/index.html", " visits to this page")
+    index_hits_html = f'\n  <p class="pagehits">{index_hits}</p>' if index_hits else ""
     body = f"""<section class="lede lede-home">
-  <p>{html.escape(BLURB)}</p>
+  <p>{html.escape(BLURB)}</p>{index_hits_html}
 </section>
 {_half_defs(17)}{_half_defs(14)}
 {search}
@@ -724,7 +771,7 @@ def _post_article(p, extra=""):
     return f"""{extra}<article class="post">{ld}
   {_half_defs()}
   <h1>{html.escape(p['title'])}</h1>
-  {_meta_line(p)}
+  {_meta_line(p, show_hits=True)}
   {_rating_block(p)}
   {_hero_img(p)}
   <div class="postbody">
