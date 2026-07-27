@@ -15,7 +15,7 @@
 <meta name="twitter:description" content="Atlas de los lugares de la traducción, en español."/>
 <meta name="twitter:image" content="https://mistertranslation.com/img/og-default.png"/>
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 46 46&#x27;&gt;&lt;circle cx=&#x27;23&#x27; cy=&#x27;23&#x27; r=&#x27;22.5&#x27; fill=&#x27;#0b1929&#x27;/&gt;&lt;rect x=&#x27;9&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;33.4&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;12.6&#x27; y=&#x27;14.5&#x27; width=&#x27;20.8&#x27; height=&#x27;17&#x27; fill=&#x27;#efe6cf&#x27;/&gt;&lt;path d=&#x27;M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z&#x27; fill=&#x27;#e8c968&#x27;/&gt;&lt;/svg&gt;"/>
-<link rel="stylesheet" href="style.css?v=1a612709f0"/>
+<link rel="stylesheet" href="style.css?v=bc6cbd753d"/>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -54,6 +54,19 @@
     <a href="biblioteca.html" class="on">Biblioteca</a>
   </nav>
 </header>
+<div class="pageviews" id="pgviews" style="font-size:11.5px;opacity:.55;margin:-4px 0 10px"></div>
+<script>
+(function(){
+  var el = document.getElementById("pgviews");
+  fetch("https://mistertranslation.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (el && d && d.count) el.textContent = "👁️ " + d.count + " vistas";
+      else if (el) el.remove();
+    })
+    .catch(function(){ if (el) el.remove(); });
+})();
+</script>
 <script src="reading.js"></script>
 <script src="player-clips.js?v=fdee541f34"></script>
 <script src="audio-reader.js?v=720e67d173"></script>
@@ -62,84 +75,12 @@
 <h1 class="pagetitle">🗺️ Atlas</h1>
 <p class="lede">Los lugares de la traducción, situados en un mapa vivo —
 <strong>6 de 6</strong> con coordenadas. Las coordenadas se comparten con la
-edición inglesa; el texto es español.</p>
+edición inglesa; el texto es español. Haz clic en un lugar para ver la entrada completa.</p>
 <div class="panel" style="padding:10px 14px">
   <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Aparecen únicamente
   los lugares que ya tienen entrada en español.</p>
 </div>
-<div class="atlas-place" id="atlas-anathoth">
-  <div class="atlas-place-h"><a href="enciclopedia.html#anathoth">Anatot</a></div>
-  <p>El pueblo natal de Jeremías, a unos 5 km al nordeste de Jerusalén, en territorio de Benjamín — una aldea sacerdotal (Josué 21:18), lo que explica la primera línea del libro: «de los sacerdotes que estaban en Anatot». ⚠ Que el profeta venga de una familia sacerdotal da filo a su pleito con el templo: no es un forastero atacando una institución ajena, sino alguien de dentro. Sus propios vecinos de Anatot conspiran contra él (11:21), y años más tarde, con la invasión ya encima, comprará un campo allí como señal de que habrá regreso (32:6-15).</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> <a href="jeremiah-1.es.html#v1">Jeremías 1:1</a></div>
-  <div class="mapembed">
-  <div class="mapembed-frame">
-    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=35.2500,31.8000,35.3100,31.8600&layer=mapnik&marker=31.8300,35.2800"
-      title="Anatot" loading="lazy"></iframe>
-  </div>
-  <div class="atlas-caption">📍 <strong>Anatot</strong></div>
-  <div class="mapembed-link"><a href="https://www.openstreetmap.org/?mlat=31.8300&mlon=35.2800#map=13/31.8300/35.2800" rel="noopener">View larger map on OpenStreetMap →</a></div>
-</div>
-</div><div class="atlas-place" id="atlas-babylon">
-  <div class="atlas-place-h"><a href="enciclopedia.html#babylon">Babilonia</a></div>
-  <p>La gran ciudad del Éufrates, en la llanura de la actual Irak, y el imperio que Jeremías nombra como el instrumento del juicio sobre Judá. Bajo Nabucodonosor II tomó Jerusalén, quemó el templo y se llevó cautivo al pueblo en 587 a. C. ⚠ Jeremías hace las dos cosas a la vez: anuncia que Babilonia vendrá y que hay que someterse a ella, y anuncia también que Babilonia misma caerá (capítulos 50-51) — lo que le costó ser tratado como traidor por unos y como falso profeta por otros. Mucho después, el Apocalipsis convierte el nombre en una cifra.</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 20:4</span> <span class="ref-unpub" title="capítulo aún no traducido">Daniel 1:1</span> <a href="ezra-1.es.html#v11">Esdras 1:11</a> <a href="matthew-1.es.html#v11">Mateo 1:11</a></div>
-  <div class="mapembed">
-  <div class="mapembed-frame">
-    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=44.1709,32.2864,44.6709,32.7864&layer=mapnik&marker=32.5364,44.4209"
-      title="Babilonia" loading="lazy"></iframe>
-  </div>
-  <div class="atlas-caption">📍 <strong>Babilonia</strong> — hoy Tell Babil, near Hillah, Babil Governorate, Iraq</div>
-  <div class="mapembed-link"><a href="https://www.openstreetmap.org/?mlat=32.5364&mlon=44.4209#map=10/32.5364/44.4209" rel="noopener">View larger map on OpenStreetMap →</a></div>
-</div>
-</div><div class="atlas-place" id="atlas-chorazin">
-  <div class="atlas-place-h"><a href="enciclopedia.html#chorazin">Corazín</a></div>
-  <p>Uno de solo dos pueblos que Jesús maldice expresamente por incredulidad (Mateo 11:21 / Lucas 10:13), y el ÚNICO sitio de ese reproche sobre el cual los Evangelios no registran nada más — ningún relato de milagro, ninguna visita narrada, nada más allá de la acusación desnuda de que allí se hicieron «la mayoría de sus milagros». ⚠ Ese silencio es un vacío real, no un hecho resuelto: lo que se hizo en Corazín quedó tan sin registrar como, al parecer, sin arrepentimiento. El sitio probable, Khirbet Kerazeh, está en una loma de basalto a poca distancia (2-3 km) al norte de Cafarnaúm, junto al mar de Galilea, y las excavaciones han descubierto una sinagoga de basalto (siglos III-IV d.C., probablemente sobre una anterior) y un pueblo romano-bizantino.</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> <a href="matthew-11.es.html#v11-21">Mateo 11:21</a></div>
-  <div class="mapembed">
-  <div class="mapembed-frame">
-    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=35.5110,32.8620,35.6010,32.9520&layer=mapnik&marker=32.9070,35.5560"
-      title="Corazín" loading="lazy"></iframe>
-  </div>
-  <div class="atlas-caption">📍 <strong>Corazín</strong> — hoy Khirbet Kerazeh, north of Capernaum, Israel</div>
-  <div class="mapembed-link"><a href="https://www.openstreetmap.org/?mlat=32.9070&mlon=35.5560#map=12/32.9070/35.5560" rel="noopener">View larger map on OpenStreetMap →</a></div>
-</div>
-</div><div class="atlas-place" id="atlas-jerusalem">
-  <div class="atlas-place-h"><a href="enciclopedia.html#jerusalem">Jerusalén</a></div>
-  <p>La ciudad en el centro de la Biblia hebrea: capital de David, sede del templo, y — en Jeremías — la ciudad cuya destrucción el profeta pasó cuarenta años anunciando. Está en la cresta de las montañas de Judá, a unos 750 m de altura, con el valle del Cedrón al oriente y el valle de Ben-Hinom al sur y al occidente. ⚠ Ese segundo valle importa para el capítulo del alfarero: por allí salía la Puerta de los Tiestos, junto a los talleres de cerámica y sus vertederos, y allí estaban los lugares altos donde se quemaban niños (Jeremías 19:2, 5). El nombre griego de ese valle, <em>Gehena</em>, se volvió una palabra para el juicio. Cayó ante Babilonia en 587 a. C., como Jeremías había dicho.</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> <span class="ref-unpub" title="capítulo aún no traducido">Daniel 1:1</span> <span class="ref-unpub" title="capítulo aún no traducido">Mateo 5:35</span> <span class="ref-unpub" title="capítulo aún no traducido">Juan 2:13</span> <span class="ref-unpub" title="capítulo aún no traducido">Juan 2:23</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 22:19</span> <a href="2-chronicles-1.es.html#v4">2 Crónicas 1:4</a> <a href="ezra-1.es.html#v3">Esdras 1:3</a> <a href="nehemiah-1.es.html#v3">Nehemías 1:3</a> <a href="acts-1.es.html#v4">Hechos 1:4</a> <a href="galatians-1.es.html#v17">Gálatas 1:17</a></div>
-  <div class="mapembed">
-  <div class="mapembed-frame">
-    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=35.1754,31.7184,35.2954,31.8384&layer=mapnik&marker=31.7784,35.2354"
-      title="Jerusalén" loading="lazy"></iframe>
-  </div>
-  <div class="atlas-caption">📍 <strong>Jerusalén</strong> — hoy Jerusalem</div>
-  <div class="mapembed-link"><a href="https://www.openstreetmap.org/?mlat=31.7784&mlon=35.2354#map=12/31.7784/35.2354" rel="noopener">View larger map on OpenStreetMap →</a></div>
-</div>
-</div><div class="atlas-place" id="atlas-sidon">
-  <div class="atlas-place-h"><a href="enciclopedia.html#sidon">Sidón</a></div>
-  <p>La más antigua de las dos grandes ciudades portuarias fenicias, unos 40 km al norte de Tiro por la costa, y en Génesis 10:15 el PRIMOGÉNITO de Canaán — «Sidón» es a la vez una ciudad y, en la Tabla de las Naciones, un antepasado. JEZABEL, que introduce el culto a Baal en Israel, es «hija de Et-baal, rey de los sidonios» (1 Reyes 16:31, todavía no en estas páginas). ⚠ Jesús visita más adelante en persona «la región de Tiro y de Sidón» (Mateo 15:21, todavía no en estas páginas) — el único territorio gentil que los Evangelios lo registran pisando — después de invocar aquí el par como el estándar frente al cual la incredulidad galilea sale peor parada (11:21-22).</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> <a href="matthew-11.es.html#v11-21">Mateo 11:21</a></div>
-  <div class="mapembed">
-  <div class="mapembed-frame">
-    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=35.2470,33.4320,35.4970,33.6820&layer=mapnik&marker=33.5570,35.3720"
-      title="Sidón" loading="lazy"></iframe>
-  </div>
-  <div class="atlas-caption">📍 <strong>Sidón</strong> — hoy Saida, Lebanon</div>
-  <div class="mapembed-link"><a href="https://www.openstreetmap.org/?mlat=33.5570&mlon=35.3720#map=11/33.5570/35.3720" rel="noopener">View larger map on OpenStreetMap →</a></div>
-</div>
-</div><div class="atlas-place" id="atlas-topheth">
-  <div class="atlas-place-h"><a href="enciclopedia.html#topheth">Tofet</a></div>
-  <p>Un valle real y transitable — <em>gei Ven-Hinom</em>, «el valle del hijo de Hinom» — que corre por el borde sur y occidental de Jerusalén, pasando por los talleres de cerámica y sus vertederos junto a la <strong>Puerta de los Tiestos</strong> (Jeremías 19:2), hasta encontrarse con el Cedrón. Los reyes Acaz y Manasés hicieron «pasar por fuego» a sus propios hijos aquí (2 Reyes 16:3; 21:6); la reforma de Josías «profanó el Tofet… para que nadie hiciera pasar a su hijo o a su hija por fuego a Moloc» (2 Reyes 23:10). ⚠ Jeremías, en cambio, nombra a BAAL como destinatario, no a Moloc (19:5; 7:31; 32:35) — una tensión que esta biblioteca declara en vez de resolver. El Tofet de Jerusalén mismo nunca se ha localizado con seguridad en el terreno; los tofets fenicios de Cartago, Motia, Sulcis y Tharros son la evidencia física más fuerte de la práctica en cualquier lugar, y su lectura sigue siendo discutida.<br><br><strong>El nombre, y el nuevo nombre.</strong> Algunos eruditos sugieren que <em>Tofet</em> lleva las vocales de otra palabra, <em>bosheth</em>, «vergüenza», estampadas deliberadamente sobre las consonantes del lugar — un insulto de escriba leído en voz alta, el mismo recurso que algunos proponen detrás de «Moloc» mismo. Jeremías 19:6 condena el propio nombre del valle: «no se llamará más este lugar Tofet… sino Valle de la Matanza» — un oráculo que se repite, casi palabra por palabra, antes en el libro, en 7:31-32.<br><br><strong>Gehena.</strong> El nombre griego del valle, <em>Geenna</em>, se convierte en el nombre fijo del Nuevo Testamento para el fin ardiente de los impíos — encontrado ya en estas páginas dentro del Sermón del Monte, «la Gehena de fuego» (Mateo 5:22). Geografía ordinaria haciendo trabajo figurado: un valle al que un lector podría haber caminado desde el palacio en pocos minutos, todavía haciendo ese trabajo siglos después, para lectores de otro continente.</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 19:2</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 19:6</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 19:11</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 19:12</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 19:13</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 19:14</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 7:31</span> <span class="ref-unpub" title="capítulo aún no traducido">Jeremías 32:35</span> <span class="ref-unpub" title="capítulo aún no traducido">2 Reyes 16:3</span> <span class="ref-unpub" title="capítulo aún no traducido">2 Reyes 21:6</span> <span class="ref-unpub" title="capítulo aún no traducido">2 Reyes 23:10</span> <span class="ref-unpub" title="capítulo aún no traducido">Mateo 5:22</span> <span class="ref-unpub" title="capítulo aún no traducido">Mateo 5:29</span> <span class="ref-unpub" title="capítulo aún no traducido">Mateo 5:30</span></div>
-  <div class="mapembed">
-  <div class="mapembed-frame">
-    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=35.2145,31.7560,35.2445,31.7860&layer=mapnik&marker=31.7710,35.2295"
-      title="Tofet" loading="lazy"></iframe>
-  </div>
-  <div class="atlas-caption">📍 <strong>Tofet</strong> — hoy the Wadi er-Rababi, southwest of Jerusalem&#x27;s Old City</div>
-  <div class="mapembed-link"><a href="https://www.openstreetmap.org/?mlat=31.7710&mlon=35.2295#map=14/31.7710/35.2295" rel="noopener">View larger map on OpenStreetMap →</a></div>
-</div>
-</div>
+<div class="atlas-items"><a class="atlas-item" id="atlas-anathoth" href="atlas/anathoth.es.html">📍 Anatot</a><a class="atlas-item" id="atlas-babylon" href="atlas/babylon.es.html">📍 Babilonia</a><a class="atlas-item" id="atlas-chorazin" href="atlas/chorazin.es.html">📍 Corazín</a><a class="atlas-item" id="atlas-jerusalem" href="atlas/jerusalem.es.html">📍 Jerusalén</a><a class="atlas-item" id="atlas-sidon" href="atlas/sidon.es.html">📍 Sidón</a><a class="atlas-item" id="atlas-topheth" href="atlas/topheth.es.html">📍 Tofet</a></div>
 <footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor

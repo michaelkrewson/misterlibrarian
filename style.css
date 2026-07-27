@@ -298,6 +298,19 @@ body.hide-heb .xrefs{margin-top:5px}
 .eentry{padding:13px 4px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .eentry:last-child{border-bottom:none}
 .eentry:target{background:rgba(232,201,104,0.06);border-radius:8px}
+/* lean clickable index lists (encyclopedia/dictionary/atlas index pages -> each
+   entry's own standalone page carries the full text/images/videos/map now) */
+.eilist{display:flex;flex-direction:column;gap:1px}
+.eirow{display:flex;gap:10px;align-items:baseline;padding:9px 10px;border-radius:8px;
+  text-decoration:none;color:var(--text);border:1px solid transparent}
+.eirow:hover{background:var(--bg2);border-color:var(--border)}
+.eirow:target,.atlas-item:target{background:rgba(232,201,104,0.10);border-color:rgba(232,201,104,0.4)}
+.ei-name{font-weight:700;color:#fff;white-space:nowrap;flex:none}
+.ei-teaser{font-size:12.5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.atlas-items{display:flex;flex-wrap:wrap;gap:6px 8px;padding:2px 0}
+.atlas-item{font-size:12.5px;padding:5px 10px;border-radius:14px;background:var(--bg2);
+  border:1px solid var(--border);text-decoration:none;color:var(--text)}
+.atlas-item:hover{background:var(--bg1);border-color:var(--dim)}
 .ehead{font-weight:800;color:#fff;font-size:14.5px;margin-bottom:6px}
 .eentry p{margin:0 0 8px;font-size:12.8px;line-height:1.72;color:var(--muted)}
 .erefs{font-size:11.5px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
