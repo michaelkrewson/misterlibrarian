@@ -406,6 +406,11 @@ SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3
 def header(active="", lang="en"):
     def cls(k):
         return ' class="on"' if k == active else ""
+    # Views + Share ride as the last two items in the same nav row as Home/About/etc
+    # (not a separate floating line below it — that read as disjointed). The span
+    # starts empty; _page_view_script() fills it in wherever that script lands.
+    pageviews_item = '<span class="pageviews" id="pgviews"></span>' if GOATCOUNTER_CODE else ""
+    share_item = '<span class="share-widget" id="shareWidget"></span>'
     if lang == "es":
         # Spanish locale header. The nav links ONLY to pages that exist in Spanish
         # (so a Spanish-only reader is never dumped into English); it grows as the
@@ -430,6 +435,7 @@ def header(active="", lang="en"):
   <nav class="topnav">
     <a href="es.html"{cls('home')}>Inicio</a>
     <a href="biblioteca.html"{cls('biblioteca')}>Biblioteca</a>
+    {pageviews_item}{share_item}
   </nav>
 </header>"""
     return f"""<header class="site-head">
@@ -457,6 +463,7 @@ def header(active="", lang="en"):
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="ask.html"{cls('ask')}>Ask Mr. Librarian</a>
     <a href="about.html"{cls('about')}>About</a>
+    {pageviews_item}{share_item}
   </nav>
 </header>"""
 
@@ -552,20 +559,21 @@ def _og_tags(title, desc, url="", image=""):
     return "\n" + "\n".join(tags)
 
 
-def _page_view_snippet(lang="en"):
-    """A quiet '\U0001F441️ N views' line under the header, on every page built via page().
-    GoatCounter has been recording a per-path count since the sitewide script was added
-    (_goatcounter_script) -- this just displays it, no new tracking. Mirrors _stats_box()'s
-    hard-won handling: fetch().then(r=>r.json()) WITHOUT checking r.ok, because GoatCounter's
-    counter endpoint returns HTTP 404 for a thin/zero-hit path even when the JSON body is a
-    perfectly valid {"count":"..."}. A brand-new page with no hits yet, or the fetch failing
-    outright (network error, ad-blocker, GoatCounter unconfigured), just removes the line
-    rather than showing a wrong or empty number."""
+def _page_view_script(lang="en"):
+    """Populates the '\U0001F441️ N views' nav item header() already emitted (as
+    #pgviews, sitting among Home/About/etc — a floating line below the header read
+    as disjointed). GoatCounter has been recording a per-path count since the
+    sitewide script was added (_goatcounter_script) -- this just displays it, no new
+    tracking. Mirrors _stats_box()'s hard-won handling: fetch().then(r=>r.json())
+    WITHOUT checking r.ok, because GoatCounter's counter endpoint returns HTTP 404
+    for a thin/zero-hit path even when the JSON body is a perfectly valid
+    {"count":"..."}. A brand-new page with no hits yet, or the fetch failing
+    outright (network error, ad-blocker, GoatCounter unconfigured), just removes the
+    item rather than showing a wrong or empty number."""
     if not GOATCOUNTER_CODE:
         return ""
     label = "vistas" if lang == "es" else "views"
-    return f"""<div class="pageviews" id="pgviews" style="font-size:11.5px;opacity:.55;margin:-4px 0 10px"></div>
-<script>
+    return f"""<script>
 (function(){{
   var el = document.getElementById("pgviews");
   fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
@@ -599,8 +607,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base=""):
 <body>
 <div class="wrap">
 {header(active, lang)}
-{_page_view_snippet(lang)}
-<div class="share-widget" id="shareWidget"></div>
+{_page_view_script(lang)}
 <script src="share.js?v={SHARE_JS_VER}" defer></script>
 <script src="reading.js"></script>
 <script src="player-clips.js?v={JS_VER}"></script>

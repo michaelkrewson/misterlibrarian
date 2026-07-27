@@ -161,11 +161,14 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
   .utilnav{position:static;justify-content:center;margin:0 0 16px;gap:8px}
   .langlist{right:auto;left:50%;transform:translateX(-50%)}
 }
-/* Share-this-page button (share.js), mounted right under the header on every
-   page. Same small-pill language as .util-ask above. */
-.share-widget{display:inline-flex;align-items:center;gap:10px;margin:-2px 0 12px}
-.share-btn{font:inherit;font-size:12px;font-weight:700;color:var(--muted);
-  background:transparent;padding:5px 12px;border:1px solid var(--border);border-radius:14px;
+/* Views + Share ride as the last two items in .topnav itself (see header()) --
+   sized to match .topnav a so they read as native nav items, not a separate
+   floating line under the header. */
+.topnav .pageviews{display:inline-flex;align-items:center;padding:6px 6px;
+  font-size:12px;font-weight:600;color:var(--muted);opacity:.75;white-space:nowrap}
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:var(--muted);
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
   cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
 .share-btn:hover,.share-btn:focus-visible{color:var(--gold);border-color:rgba(232,201,104,0.35);
   background:rgba(232,201,104,0.08)}
