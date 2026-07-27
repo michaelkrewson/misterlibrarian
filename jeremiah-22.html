@@ -65,7 +65,7 @@
   </nav>
 </header>
 <script>
-(function(){
+document.addEventListener("DOMContentLoaded", function(){
   var el = document.getElementById("pgviews");
   fetch("https://mistertranslation.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
     .then(function(r){ return r.json(); })
@@ -74,7 +74,7 @@
       else if (el) el.remove();
     })
     .catch(function(){ if (el) el.remove(); });
-})();
+});
 </script>
 <script src="share.js?v=b513d671a1" defer></script>
 <script src="reading.js"></script>
