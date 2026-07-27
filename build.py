@@ -1398,6 +1398,55 @@ def _path(proj, pts, close=False):
     return d + " Z" if close else d
 
 
+def _basemap_fragments(proj, visible, inframe, clear):
+    """The Levant + Egypt basemap fragments that don't move: coastlines, the
+    rift-valley water bodies, and the rivers (Jordan, Euphrates, the Nile and
+    its two surviving branches) -- each drawn only if some point of it is
+    actually `visible` in the current frame, with its label additionally
+    gated on `clear` (the CALLER's own label-priority reservation) so a
+    lower-priority basemap label yields to whatever the caller has already
+    reserved (a region's named sites; a route's numbered stops) rather than
+    overlapping it. The graticule and every FOREGROUND layer (a territory's
+    dashed boundary; a journey's dashed route + stops) stay with the caller,
+    since those differ per map -- this is only the shared backdrop.
+
+    Shared by render_region_map (a territory's fixed backdrop) and
+    render_route_panel (a journey's) so a map crossing real geography always
+    orients on the same ground -- and so a future route through Egypt (the
+    Exodus) gets the Nile for free instead of needing its own copy of this."""
+    parts = []
+    if visible(_EGYPT_COAST):
+        parts.append(f'<path d="{_path(proj, _EGYPT_COAST)}" class="reg-coast"/>')
+    if visible(_COAST):
+        parts.append(f'<path d="{_path(proj, _COAST)}" class="reg-coast"/>')
+        clat, clon = _COAST[len(_COAST) // 2]
+        if inframe(clat, clon):
+            cx, cy = proj(clat, clon)
+            if clear(cx - 40, cy, 64):
+                parts.append(f'<text x="{cx-8:.1f}" y="{cy:.1f}" class="reg-sea" text-anchor="end">Great Sea</text>')
+    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)),
+                                (_AQABA, "Gulf of Aqaba", (28.55, 34.62)),
+                                (_BITTER_LAKES, "Bitter Lakes", (30.18, 32.40)),
+                                (_GALILEE, None, None)):
+        if visible(poly):
+            parts.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
+            if label and inframe(*anchor):
+                lx, ly = proj(*anchor)
+                if clear(lx, ly, len(label) * 5.6):
+                    parts.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
+    for line, label in ((_JORDAN, "the Jordan"), (_ARABAH, "the Arabah"),
+                        (_EUPHRATES, "the Euphrates"),
+                        (_NILE, "the Nile"), (_NILE_ROSETTA, None), (_NILE_DAMIETTA, None)):
+        if visible(line):
+            parts.append(f'<path d="{_path(proj, line)}" class="reg-river"/>')
+            mlat, mlon = line[len(line) // 2]
+            if label and inframe(mlat, mlon):
+                mx, my = proj(mlat, mlon)
+                if clear(mx + 6, my, len(label) * 5.6):
+                    parts.append(f'<text x="{mx+6:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
+    return "".join(parts)
+
+
 def render_region_map(region, others=()):
     """A self-contained inline-SVG territory map: the region's boundary drawn as
     a bold DASHED outline over a soft fill (dashed on purpose — an ancient border
@@ -1442,35 +1491,8 @@ def render_region_map(region, others=()):
         parts.append(f'<line x1="0" y1="{y:.1f}" x2="{W:.1f}" y2="{y:.1f}" class="rg-grid"/>')
         parts.append(f'<text x="5" y="{y-3:.1f}" class="rg-tick">{lat}°N</text>')
 
-    # basemap: the things that don't move
-    if visible(_EGYPT_COAST):
-        parts.append(f'<path d="{_path(proj, _EGYPT_COAST)}" class="reg-coast"/>')
-    if visible(_COAST):
-        parts.append(f'<path d="{_path(proj, _COAST)}" class="reg-coast"/>')
-        clat, clon = _COAST[len(_COAST) // 2]
-        if inframe(clat, clon):
-            cx, cy = proj(clat, clon)
-            if clear(cx - 40, cy, w=64):
-                parts.append(f'<text x="{cx-8:.1f}" y="{cy:.1f}" class="reg-sea" text-anchor="end">Great Sea</text>')
-    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)),
-                                (_AQABA, "Gulf of Aqaba", (28.55, 34.62)),
-                                (_BITTER_LAKES, "Bitter Lakes", (30.18, 32.40)),
-                                (_GALILEE, None, None)):
-        if visible(poly):
-            parts.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
-            if label and inframe(*anchor):
-                lx, ly = proj(*anchor)
-                if clear(lx, ly, w=len(label) * 5.6):
-                    parts.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
-    for line, label in ((_JORDAN, "Jordan"), (_ARABAH, "the Arabah"),
-                        (_NILE, "the Nile"), (_NILE_ROSETTA, None), (_NILE_DAMIETTA, None)):
-        if visible(line):
-            parts.append(f'<path d="{_path(proj, line)}" class="reg-river"/>')
-            mlat, mlon = line[len(line) // 2]
-            if label and inframe(mlat, mlon):
-                mx, my = proj(mlat, mlon)
-                if clear(mx + 30, my, w=len(label) * 5.6):
-                    parts.append(f'<text x="{mx+6:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
+    # basemap: the things that don't move (shared with render_route_panel)
+    parts.append(_basemap_fragments(proj, visible, inframe, clear))
 
     # neighbouring territories, faint, for context
     for o in others:
@@ -1580,27 +1602,10 @@ def render_route_panel(route):
                    for sx, ex, sy in reserved)
 
     # basemap: the real, fixed geography this route actually crosses. Drawn
-    # UNDER the dashed route line, exactly like a territory map's coastline.
-    basemap = []
-    if visible(_COAST):
-        basemap.append(f'<path d="{_path(proj, _COAST)}" class="reg-coast"/>')
-    for poly, label, anchor in ((_DEAD_SEA, "Salt Sea", (31.40, 35.48)),
-                                (_GALILEE, None, None)):
-        if visible(poly):
-            basemap.append(f'<path d="{_path(proj, poly, close=True)}" class="reg-water"/>')
-            if label and inframe(*anchor):
-                lx, ly = proj(*anchor)
-                if clear(lx, ly, len(label) * 5.6):
-                    basemap.append(f'<text x="{lx:.1f}" y="{ly:.1f}" class="reg-sea" text-anchor="middle">{label}</text>')
-    for line, label in ((_JORDAN, "the Jordan"), (_EUPHRATES, "the Euphrates")):
-        if visible(line):
-            basemap.append(f'<path d="{_path(proj, line)}" class="reg-river"/>')
-            mlat, mlon = line[len(line) // 2]
-            if inframe(mlat, mlon):
-                mx, my = proj(mlat, mlon)
-                lbl_w = len(label) * 5.6
-                if clear(mx + 8, my, lbl_w):
-                    basemap.append(f'<text x="{mx+8:.1f}" y="{my:.1f}" class="reg-rlab">{label}</text>')
+    # UNDER the dashed route line, exactly like a territory map's coastline --
+    # same shared fragments render_region_map uses, so a future route through
+    # Egypt (the Exodus) gets the Nile without needing its own copy of this.
+    basemap = _basemap_fragments(proj, visible, inframe, clear)
 
     via, marks, legend = [], [], []
     n = 0
@@ -1641,7 +1646,7 @@ def render_route_panel(route):
     svg = (f'<svg viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
            f'aria-label="Route map: {html.escape(route["title"])}" xmlns="http://www.w3.org/2000/svg">'
            f'<title>{html.escape(route["title"])}</title>'
-           f'{"".join(grid)}{"".join(basemap)}'
+           f'{"".join(grid)}{basemap}'
            f'<path d="{d}" class="rg-under"/><path d="{d}" class="rg-line"/>'
            f'{"".join(via)}{"".join(marks)}{compass}</svg>')
 
