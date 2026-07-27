@@ -81,6 +81,11 @@ DICTIONARY = [
     ("sozo", "sōzō", "σῴζω", "sōzō", "TO SAVE — and, in the same breath, TO HEAL; Greek does not force a choice between the two senses the way English does. It is the verb of Jesus' own name, unfolded at his naming: 'you shall call his name Jesus, for he will SAVE (sōsei) his people from their sins' (Matthew 1:21). Matthew 9 puts the same verb in three mouths in three verses over the bleeding woman — her own hope ('I will be sozō,' 9:21), Jesus' verdict ('your faith has sesōken you,' 9:22), and the narrator's confirmation ('the woman was esōthē,' 9:22) — so a chapter about physical healing keeps sounding, in its own vocabulary, exactly like the larger promise the name itself made.", ("Matthew", 9, 21)),
     ("eirene", "eirēnē", "εἰρήνη", "eirēnē", "PEACE — and, in Matthew 10, something almost sent by hand: a disciple's spoken peace 'comes upon' a worthy house or, finding none, 'returns' to the one who spoke it (10:13), as if the blessing were a physical thing that cannot simply vanish unclaimed. ⚠ The same chapter turns the word inside out twenty-one verses later — 'I did not come to bring peace, but a sword' (10:34) — and this translation prints both without smoothing the collision: a household's peace can be given and returned like a possession, and the peace of the whole earth is, in the same breath, what Jesus says he did not come to bring.", ("Matthew", 10, 13)),
     ("psyche", "psychē", "ψυχή", "psychē", "SOUL — and, just as often, LIFE; one Greek word doing two jobs English keeps separate. Matthew 10 uses it both ways within eleven verses: 'fear the one who can destroy both soul and body in Gehenna' (10:28, the self clearly distinct from the body), then 'whoever finds his psychē will lose it, and whoever loses his psychē for my sake will find it' (10:39, where 'life' is the only sense that makes the paradox work). ⚠ This translation renders it 'soul' in the first case and 'life' in the second, printing the word's genuine double range rather than forcing one English noun to cover both — the ambiguity is in the Greek, not smoothed away by the choice of English.", ("Matthew", 10, 28)),
+    ("biazomai", "biazetai / biastai", "βιάζεται", "biazetai", "TO FORCE, or TO BE FORCED — one of the New Testament's most argued single verses. Matthew 11:12's biazetai can be read two directions, and the difference is not a nuance but an opposite claim. MIDDLE voice: 'the kingdom of the heavens FORCES ITS WAY forward, powerfully advancing' — a picture of unstoppable momentum, with biastai its eager, forceful entrants. PASSIVE voice: 'the kingdom SUFFERS VIOLENCE' — under active assault, biastai now its violent opponents, plundering (harpazousin, the verb for snatching or ransacking) what is not theirs. ⚠ Its nearest relative argues for the middle sense — Luke's parallel reads unambiguously reflexive, 'everyone is forcing their way into it' (Luke 16:16, not yet on these pages) — but Matthew's own context, a generation that refuses to dance OR mourn no matter what is played (11:16-19), reads more naturally as violence done TO the kingdom. KJV/ASV/NWT all print the passive; this translation follows them as the primary reading and names the argument rather than closing it.", ("Matthew", 11, 12)),
+    ("nepios", "nēpios / nēpioi", "νήπιος", "nēpioi", "INFANT, BABE — literally 'not-speaking' (nē-, negative + epos, 'word'), the ordinary Greek word for a small child too young to talk, used figuratively of the untaught or the simple. ⚠ Matthew 11:25 sets it directly against sophoi kai synetoi, 'the wise and the understanding' — Jesus thanks the Father for hiding 'these things' from precisely the people equipped to grasp them and revealing them instead to the ones with no equipment at all. Paul uses the same word for immature believers fed only milk, not solid food (1 Corinthians 3:1-2, not yet on these pages); here the immaturity is not a fault to outgrow but the actual qualification for the revelation.", ("Matthew", 11, 25)),
+    ("zygos", "zygos", "ζυγός", "zygos", "YOKE — the wooden crossbar laid across a paired team's necks so two animals pull one load together; by metaphor, in both Greek and the rabbinic idiom of Jesus' own day ('the yoke of the Torah,' 'the yoke of the kingdom'), a body of teaching or obligation TAKEN ON. ⚠ So 'take my yoke' (11:29) pictures not burden alone — every yoke is a burden — but DISCIPLESHIP itself: the word used for a rabbi's teaching, offered here as replacing whatever yoke the hearer already carries. Paul uses it once more of marriage to an unbeliever ('unequally yoked,' 2 Corinthians 6:14, not yet on these pages) — the same image of two pulling one load, mismatched.", ("Matthew", 11, 29)),
+    ("praus", "praus", "πραΰς", "praus", "MEEK, gentle — the identical word this translation has already met once: 'Happy the MEEK, for they shall inherit the earth' (Matthew 5:5). ⚠ There it named a beatitude to be pursued; here Jesus applies it to himself — 'I am meek and humble in heart' (11:29) — the only two places in this Gospel the word appears, first as a virtue promised a reward and then as a virtue claimed by the one making the promise. Not weakness: Greek writers used the word of a tamed animal or a controlled temper, never a spineless one.", ("Matthew", 11, 29)),
+    ("chrestos", "chrēstos", "χρηστός", "chrēstos", "KIND, easy, useful — of a yoke that fits well rather than one that galls; a craftsman's word for well-made, serviceable, GOOD to use. ⚠ Its close relative is a genuine ancient confusion rather than a modern pun: christos ('anointed') and chrēstos were near-homophones in first-century pronunciation, common enough that 'Chrestus' turns up as a variant spelling of 'Christus' in later Roman writing (Suetonius's Life of Claudius). Matthew does not exploit the pun; it is simply there, in the sound of the last word Jesus gives this chapter for his own yoke.", ("Matthew", 11, 30)),
     ("lathra", "lathra", "λάθρᾳ", "lathra", "SECRETLY, quietly, without publicity — an adverb that takes its moral colour entirely from who is using it. It occurs twice in Matthew's opening chapters and nowhere else in his Gospel: Joseph, 'being righteous and unwilling to expose her to disgrace,' resolves to divorce Mary <em>lathra</em> (1:19) — quietly, to shield a woman from a public penalty; and Herod calls the magi <em>lathra</em> (2:7) — secretly, to fix the location of a child he intends to kill. ⚠ One word, two chapters, mercy and murder, and Matthew never comments on the pairing.", ("Matthew", 2, 7)),
     ("akriboo", "akriboō", "ἀκριβόω", "akriboō", "To ASCERTAIN EXACTLY — to learn a thing to the last detail. A rare verb, in the New Testament only in Matthew 2, twice, with its adverb <em>akribōs</em> standing between: Herod 'ascertained exactly the time' (v7), tells the magi to 'search out exactly concerning the child' (v8), and then kills every boy 'from two years old and under, according to the time he had ascertained exactly from the magi' (v16). ⚠ The precision extracted in verse 7 IS the width of the slaughter in verse 16 — the chapter's grimmest piece of vocabulary, and it works only if a translation uses one English word for all three.", ("Matthew", 2, 7)),
     ("anachoreo", "anachōreō", "ἀναχωρέω", "anachōreō", "To WITHDRAW — to give ground, to retire, to get out of the way. It is the structural verb of Matthew 2, sounding four times in twelve verses: the magi withdraw to their own country (v12), 'when they had withdrawn' (v13), Joseph withdraws to Egypt (v14), and at the close he withdraws into Galilee (v22). ⚠ Matthew then keeps the word for what Jesus does when a threat is real — he withdraws when John is arrested (4:12), when the Pharisees take counsel against him (12:15), when John is beheaded (14:13). The Messiah's first recorded movement is a retreat, and the retreat becomes a habit.", ("Matthew", 2, 12)),
@@ -159,7 +164,7 @@ DICTIONARY = [
     ["arrabon", "arrabōn", "ἀρραβών", "arrabōn", "A DOWN PAYMENT — a commercial term Greek borrowed from Semitic traders (Hebrew eravon, the very pledge Judah leaves with Tamar in Genesis 38:18): the first instalment that both guarantees the rest AND is itself part of the full sum, legally binding the buyer to complete the deal. Paul calls the Spirit the arrabōn 'in our hearts' (2 Corinthians 1:22; also 5:5; Ephesians 1:14) — not a substitute for what is coming but a genuine first taste of it, the same currency as the balance. ⚠ In modern Greek arravónas is still the word for an ENGAGEMENT RING. KJV 'the earnest of the Spirit' — 'earnest' being the old English commercial word for exactly this; NWT 'a token of what is to come'.", ["2 Corinthians", 1, 22]],
     ["sphragis", "sphragis", "σφραγίς", "sphragis", "A SEAL — the impression a signet ring leaves in wax, stamped on a document or a jar of goods to mark it as genuinely owned and to prove it had not been tampered with. To be 'sealed' by God (2 Corinthians 1:22; Ephesians 1:13; 4:30) is to be marked as authentically his. The image runs through Revelation, where the servants of God are sealed on the forehead (Rev 7:3) and the scroll of destiny is sealed with seven seals. The verb sphragizō is the action; the noun is the mark it leaves.", ["2 Corinthians", 1, 22]],
     ["schisma", "schisma", "σχίσμα", "schisma", "A TEAR, a rip — from schizō, 'to split' (the root of 'schism' and, by a long road, 'schizophrenia'). It is the Gospels' word for a rip in a garment and for the temple curtain torn in two. Paul asks the Corinthians to have no schismata among them and instead to be katērtismenoi — 'mended together', the very verb used of the sons of Zebedee MENDING THEIR NETS (Matthew 4:21). The image is not a broken machine but torn cloth, and the request is not uniformity of opinion but repair. KJV 'divisions… perfectly joined together' loses both halves.", ["1 Corinthians", 1, 10]],
-    ["sophia", "sophia", "σοφία", "sophia", "WISDOM — skill, and then the reasoned understanding a Greek education existed to produce; the root of 'philosophy', love of it. 1 Corinthians 1 uses it eight times in fifteen verses and does something odd with it: God 'made the wisdom of the world foolish', Greeks 'look for wisdom' and get a crucifixion instead, and then Christ himself 'became wisdom for us from God'. ⚠ Paul is not anti-intellectual — chapter 2 turns round and says 'we do speak wisdom among the mature' — he is against wisdom as a thing to be admired for, which is the currency the Corinthian factions were trading in.", ["1 Corinthians", 1, 17]],
+    ["sophia", "sophia", "σοφία", "sophia", "WISDOM — skill, and then the reasoned understanding a Greek education existed to produce; the root of 'philosophy', love of it. 1 Corinthians 1 uses it eight times in fifteen verses and does something odd with it: God 'made the wisdom of the world foolish', Greeks 'look for wisdom' and get a crucifixion instead, and then Christ himself 'became wisdom for us from God'. ⚠ Paul is not anti-intellectual — chapter 2 turns round and says 'we do speak wisdom among the mature' — he is against wisdom as a thing to be admired for, which is the currency the Corinthian factions were trading in. ⚠ The identical Greek noun has an earlier, very different life in this library: at Matthew 11:19, sophia is a WOMAN who acts and is vindicated by her own deeds ('wisdom is vindicated by her deeds'), standing in the Hebrew Bible's own tradition of Wisdom calling out in the marketplace (Proverbs 1, 8-9, not yet on these pages in Greek dress) — one noun, personified in one Gospel and intellectualized in one letter.", ["1 Corinthians", 1, 17]],
     ["moria", "mōria", "μωρία", "mōria", "FOLLY, idiocy — from mōros, the root of English 'moron' (and of 'sophomore', literally a wise-fool). It is a blunt word, not a polite one: Paul says the message of the cross is not merely difficult or mysterious to outsiders but STUPID, and then declines to argue the charge — 'the foolish thing of God is wiser than human beings'. The related verb mōrainō, 'to make foolish', appears here of God doing it to the world's wisdom (1:20) and in Romans 1:22 of those 'claiming to be wise' having it done to them.", ["1 Corinthians", 1, 18]],
     ["skandalon", "skandalon", "σκάνδαλον", "skandalon", "A STUMBLING-BLOCK — originally the trigger-stick of a trap, the baited peg that springs it, and then anything you trip over; the source, through Latin, of English 'scandal' and 'slander'. To Jews a crucified messiah was a skandalon and not merely an implausibility, because Deuteronomy 21:23 says a man hanged on a tree is under God's curse. Paul's point is that he does not remove the obstacle: he preaches it. Douay renders it 'a scandal'; KJV 'a stumblingblock'; NWT 'a cause for stumbling'.", ["1 Corinthians", 1, 23]],
     ["stauros", "stauros", "σταυρός", "stauros", "CROSS — in older Greek simply an upright stake or pale, and by Roman times the instrument of crucifixion, a punishment reserved principally for slaves, rebels and provincials. ⚠ Modern readers meet it as jewellery, which makes the New Testament's sentences about it nearly unhearable: Cicero called crucifixion 'the most cruel and disgusting penalty' and wrote that the very word should be kept far from a Roman citizen's ears. 'The word of the cross' was therefore an obscenity to announce as good news, and Paul says so outright rather than softening it.", ["1 Corinthians", 1, 17]],
@@ -1821,7 +1826,7 @@ ENCYCLOPEDIA = [
     dict(slug="bethsaida", name="Bethsaida", kind="place", aliases=["Bethsaida"],
          desc="The town of Andrew, Peter, and Philip, on the north shore of the Sea of Galilee near where the Jordan "
               "flows in. The site is debated between the mounds of et-Tell and el-Araj.",
-         refs=[("John", 1, 44)], coords=(32.910, 35.631, 0.09),
+         refs=[("John", 1, 44), ("Matthew", 11, 21)], coords=(32.910, 35.631, 0.09),
          modern="et-Tell / el-Araj, northern Sea of Galilee", approx=True, videos=[]),
     dict(slug="cana", name="Cana of Galilee", kind="place", aliases=["Cana"],
          desc="The Galilean village of the first sign — water into wine at a wedding (John 2:1-11); Nathanael's "
@@ -1840,7 +1845,7 @@ ENCYCLOPEDIA = [
               "town that saw the most and believed the least: 'more bearable for Sodom' (Matthew 11:23-24). The "
               "excavated site — the basalt-and-limestone synagogue and the house-church over Peter's house — is "
               "among the best-preserved Gospel settings anywhere.",
-         refs=[("Matthew", 4, 13), ("John", 2, 12)],
+         refs=[("Matthew", 4, 13), ("Matthew", 11, 23), ("John", 2, 12)],
          coords=(32.8809, 35.5753, 0.06),
          modern="Tell Hum (Capernaum), north shore of the Sea of Galilee, Israel",
          videos=[("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
@@ -3061,7 +3066,7 @@ ENCYCLOPEDIA = [
               "after, Sodom is Scripture's shorthand for judgment — the prophets invoke it, Jesus warns that towns "
               "rejecting him will fare worse than it (Matthew 10:15), and Jude sets it among his examples, "
               "'undergoing the punishment of eternal fire' (1:7).",
-         refs=[(19, 24), ("Jude", 1, 7)], videos=[]),
+         refs=[(19, 24), ("Matthew", 11, 24), ("Jude", 1, 7)], videos=[]),
     dict(slug="jeremiah", name="Jeremiah", kind="person", aliases=["Jeremiah"],
          desc="'Jehovah exalts' (or 'loosens,' or 'establishes' — the root is uncertain). A priest of ANATHOTH in "
               "Benjamin, called in 627 BC (1:2) to a forty-year ministry that ran through the last five kings of "
@@ -3272,8 +3277,12 @@ ENCYCLOPEDIA = [
               "the text; the Talmud (Megillah 15a) records the debate. Whoever he was, he prophesied in Persian-period "
               "Judah — a province with a governor and no king, a rebuilt but shabby temple, and a priesthood going "
               "through the motions — and he is the last prophetic voice in the Christian arrangement of the Old "
-              "Testament before the Gospels. His 3:1 was the verse Mark chose to open his Gospel with.",
-         refs=[("Malachi", 1, 1)], videos=[]),
+              "Testament before the Gospels. His 3:1 was the verse Mark chose to open his Gospel with. "
+              "Matthew quotes the identical verse again, later, on JESUS' OWN LIPS rather than the "
+              "narrator's (11:10) — and his book's very last two verses (3:23-24, Hebrew numbering; "
+              "English 4:5-6) promise that Elijah will return before the great day, a promise Jesus "
+              "applies to John directly (11:14).",
+         refs=[("Malachi", 1, 1), ("Matthew", 11, 10), ("Matthew", 11, 14)], videos=[]),
     dict(slug="ezekiel", name="Ezekiel", kind="person", aliases=["Ezekiel"],
          desc="A priest, son of Buzi, deported to Babylonia with King Jehoiachin in 597 BC and called as a prophet "
               "five years later by the Chebar canal — the first prophet in the Bible commissioned entirely OUTSIDE "
@@ -3384,7 +3393,7 @@ ENCYCLOPEDIA = [
               "whirlwind (2 Kings 2). Malachi ends the Old Testament promising he will come again before the great "
               "day, which is why he is expected in the Gospels, identified there with John, and appears beside "
               "Moses at the transfiguration.",
-         refs=[("2 Kings", 1, 3), ("Luke", 1, 17)], videos=[]),
+         refs=[("2 Kings", 1, 3), ("Matthew", 11, 14), ("Luke", 1, 17)], videos=[]),
     dict(slug="ahaziah-israel", name="Ahaziah of Israel", kind="person", aliases=["Ahaziah"],
          desc="Son of Ahab and Jezebel, king of Israel for barely two years (c. 853-852 BC). His whole recorded "
               "reign is a fall through a roof lattice and its consequences: injured, he sends to Baal-zebub of "
@@ -3680,10 +3689,40 @@ ENCYCLOPEDIA = [
               "covenant' (1 Kings 5:12), with Hiram addressing Solomon as 'my brother' (1 Kings 9:13). ⚠ That is "
               "almost certainly the 'covenant of brothers' Amos says Tyre forgot (1:9). Ezekiel 26-28 devotes three "
               "chapters to the city, and Alexander the Great finally took it in 332 BC by building a causeway out to "
-              "the island — which is still there, and has silted up, so that the island is now a peninsula.",
-         refs=[("Amos", 1, 9), ("Amos", 1, 10)],
+              "the island — which is still there, and has silted up, so that the island is now a peninsula. "
+              "Centuries later, Jesus invokes the city as the standard by which an OUTSIDER would have repented "
+              "where his own Galilean towns did not: 'if the mighty works done in you had been done in Tyre and "
+              "Sidon, they would have repented long ago in sackcloth and ashes' (Matthew 11:21).",
+         refs=[("Amos", 1, 9), ("Amos", 1, 10), ("Matthew", 11, 21)],
          coords=(33.271, 35.196, 0.25),
          modern="Sour, southern Lebanon", videos=[]),
+    dict(slug="sidon", name="Sidon", kind="place", aliases=["Sidon", "Sidonians", "Sidonian"],
+         desc="The older of the two great Phoenician seaports, some 40 km (25 miles) up the coast from Tyre, and "
+              "in Genesis 10:15 the FIRSTBORN of Canaan — making 'Sidon' both a city and, in the Table of Nations, "
+              "an ancestor. Homer already knows it for skilled craftsmen and traders; the Hebrew Bible often uses "
+              "'Sidonian' loosely for Phoenicians generally, Tyre's own later dominance notwithstanding. JEZEBEL, "
+              "who imports Baal worship into Israel, is 'daughter of Ethbaal, king of the Sidonians' (1 Kings "
+              "16:31, not yet on these pages). ⚠ Jesus later visits 'the region of Tyre and Sidon' in person "
+              "(Matthew 15:21, not yet on these pages) — the only Gentile territory the Gospels record him "
+              "personally entering — after first invoking the pair, here, as the standard against which Galilean "
+              "unbelief comes off worse (11:21-22).",
+         refs=[("Matthew", 11, 21)],
+         coords=(33.557, 35.372, 0.25),
+         modern="Saida, Lebanon", videos=[]),
+    dict(slug="chorazin", name="Chorazin", kind="place", aliases=["Chorazin"],
+         desc="One of only two named towns Jesus specifically curses for unbelief (Matthew 11:21 / Luke 10:13), "
+              "and the ONLY site in that rebuke about which the Gospels record nothing else at all — no miracle "
+              "story, no visit narrated anywhere, nothing beyond the bare charge that 'most of his mighty works' "
+              "happened there. ⚠ That silence is a real gap, not a settled fact: whatever was done in Chorazin "
+              "went as unrecorded as it apparently went unrepented. The likely site, Khirbet Kerazeh, sits on a "
+              "basalt ridge a short walk (2-3 km) north of Capernaum along the Sea of Galilee's shore, and "
+              "excavations have uncovered a substantial basalt synagogue (3rd-4th century AD, likely built over "
+              "an earlier one) and a Roman-Byzantine town. Basalt, not Capernaum's limestone, is the local "
+              "building stone here — a harder, darker rock that may be part of why so little survives of "
+              "whatever first-century structures once stood.",
+         refs=[("Matthew", 11, 21)],
+         coords=(32.907, 35.556, 0.09),
+         modern="Khirbet Kerazeh, north of Capernaum, Israel", videos=[]),
     dict(slug="teman", name="Teman", kind="place", aliases=["Teman", "Temanite"],
          desc="Both a man and a district. TEMAN is a grandson of Esau — the son of Eliphaz, listed among the chiefs "
               "of Edom (Genesis 36:11, 15) — and his clan gives its name to a region of Edom, apparently in the "
@@ -4122,6 +4161,14 @@ XREFS = [
     (("Matthew", 10, 38), ("Matthew", 9, 15), "the first mention of the cross anywhere in this Gospel — the nearest hint before this one that the story ends in loss was the veiled 'when the bridegroom is taken away'"),
     (("Matthew", 10, 5), ("Matthew", 28, 19), "'do not go the way of the Gentiles' — the very restriction this closing commission ('make disciples of all nations') will explicitly lift"),
     (("Matthew", 10, 32), ("Matthew", 26, 69), "the acknowledge/deny formula, waiting to be enacted: Peter will do the second half of this exact sentence three times before a servant girl's fire"),
+    (("Matthew", 11, 2), ("Matthew", 4, 12), "John's imprisonment, noted in passing when Jesus withdrew to Capernaum, now becomes the scene itself — the same arrest, seen this time from inside the cell"),
+    (("Matthew", 11, 10), ("Matthew", 3, 3), "a second prophecy laid over John, now on Jesus' own lips: 3:3 identified him as Isaiah's voice in the wilderness, 11:10 as Malachi's messenger sent before the coming one"),
+    (("Matthew", 11, 12), ("Matthew", 4, 17), "'the kingdom of the heavens' — the same phrase John and then Jesus announced as having 'drawn near', now described, three chapters later, as something actively contested"),
+    (("Matthew", 11, 14), ("Matthew", 3, 4), "the camel's-hair costume that silently claimed Elijah at his first appearance is now named outright: 'he himself is Elijah, the one who is to come'"),
+    (("Matthew", 11, 19), ("Matthew", 9, 11), "'a friend of tax collectors and sinners' — the same charge already levelled, unnamed, over Matthew's own dinner table two chapters earlier, now quoted as this generation's own words"),
+    (("Matthew", 11, 23), ("Matthew", 4, 13), "Capernaum, the base of the whole Galilean ministry when Jesus first settled there, now named the town facing the harshest single verdict in the Gospel"),
+    (("Matthew", 11, 27), ("Matthew", 3, 17), "the voice at the Jordan named him Son; here Jesus claims an exclusive, mutual knowledge between Father and Son that no one else in this Gospel is given to share"),
+    (("Matthew", 11, 29), ("Matthew", 5, 5), "praus, 'meek' — the identical word, first promised as a beatitude's reward and now claimed by Jesus as his own description of himself"),
     (("Matthew", 9, 13), ("Hosea", 6, 6), "'I desire mercy and not sacrifice' — quoted here against the Pharisees, and quoted again, against the identical charge, at Matthew 12:7"),
     (("Matthew", 9, 15), ("Hosea", 2, 19), "the bridegroom claim, made sideways — the same prophet who supplies the covenant's marriage-metaphor for Jehovah and Israel, quoted three verses after 'mercy, not sacrifice'"),
     (("Matthew", 8, 17), ("Isaiah", 53, 4), "'surely our diseases he bore, and our pains he carried' — Matthew follows the HEBREW here, where the Greek Old Testament turns the first noun into 'sins', and applies it to an evening of healings rather than to the cross"),
@@ -5074,6 +5121,8 @@ VIDEO_QUEUE = [
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
     ["Matthew", 8, 3, "“I am willing; be cleansed.” The leper doubted the will, not the power — and the answer picks up his own word and drops the condition."],
+    ["Matthew", 11, 28, "“Come to me, all who labor and are heavy-laden, and I will give you rest.” Not a demand for the strong — an invitation issued precisely to the exhausted."],
+    ["Matthew", 11, 6, "“And happy is whoever is not offended in me.” Not a demand for certainty — a blessing on those who stay, doubts and all, the same John who sent to ask it."],
     ["Matthew", 8, 27, "“What sort of man is this, that even the winds and the sea obey him?” The men in the boat do not conclude anything. They ask."],
     ["Matthew", 4, 4, "“Not on bread alone shall the human live, but on every word that comes out through the mouth of God.” Answered out of Deuteronomy 8 — the chapter that calls forty years of hunger a testing."],
     ["Matthew", 4, 19, "“Come after me, and I will make you fishers of men.” Said to two men with a net in their hands; they left it mid-cast."],
@@ -6253,6 +6302,9 @@ CHRON_EVENTS = [
     dict(era="gospels", am="—", trad="c. AD 28–30", event="The Sermon on the Mount — the Happy-sayings; 'you have heard… but I say'; 'love your enemies'",
          note="Matthew 5–7, the first of the Gospel's five great discourses, on a hillside above the Sea of Galilee's northwest shore (tradition: the Mount of Beatitudes, above Tabgha). Undatable to a year within the ministry — placed here mid-course, where Matthew places it: after the calling of the first disciples, before the sending of the Twelve.",
          ref=("Matthew", 5, 1)),
+    dict(era="gospels", am="—", trad="c. AD 28–30", event="John's question from prison; woes on Chorazin, Bethsaida and Capernaum; 'Come to me, all who are weary'",
+         note="Matthew 11. John, now imprisoned, sends to ask the one question his own ministry never quite let him ask aloud: 'Are you the one who is to come, or should we look for another?' Jesus answers with a list of deeds echoing Isaiah's own picture of restoration, then identifies John himself as the promised Elijah (Malachi 3:23-24, Hebrew numbering) — before turning to reproach the towns that saw the most and repented the least, and closing on the Gospel's gentlest invitation to rest.",
+         ref=("Matthew", 11, 28)),
     # -- The Apostolic Age --
     dict(era="apostolic", am="—", trad="c. AD 30–33", event="The ascension from the Mount of Olives — 'you will be my witnesses … to the end of the earth'",
          note="Ten days before Pentecost, and the opening scene of Acts. The eleven walk back a sabbath day's journey to an upper room in Jerusalem and, among about a hundred and twenty, choose Matthias by lot to complete the Twelve — the last casting of lots recorded in the Bible. The year depends on the date of the crucifixion, for which AD 30 and AD 33 are the two serious candidates; both are reported, neither chosen.",
@@ -9071,6 +9123,40 @@ DICTIONARY_ES = {
         "traducción la vierte «alma» en el primer caso y «vida» en el segundo, imprimiendo el rango doble "
         "genuino de la palabra en vez de forzar un solo sustantivo español a cubrir ambos — la ambigüedad "
         "está en el griego, no suavizada por la elección del español."),
+    "biazomai": ("padecer violencia / forzar el paso",
+        "FORZAR, o SER FORZADO — uno de los versículos más discutidos del Nuevo Testamento. El verbo "
+        "biazetai de Mateo 11:12 puede leerse en dos direcciones opuestas: en voz MEDIA, «el reino avanza "
+        "con fuerza» — un impulso imparable; en voz PASIVA, «el reino padece violencia» — bajo asalto, con "
+        "los violentos como sus enemigos. ⚠ El paralelo de Lucas es claramente medio («todos se esfuerzan "
+        "por entrar en él», Lucas 16:16, todavía no en estas páginas), pero el contexto propio de Mateo — "
+        "una generación que no baila ni se lamenta pase lo que pase — lee más naturalmente como violencia "
+        "hecha AL reino. Esta traducción sigue la lectura pasiva y nombra el argumento contrario en vez de "
+        "cerrarlo."),
+    "nepios": ("niño pequeño",
+        "NIÑO PEQUEÑO — literalmente «que no habla» (partícula negativa + «palabra»), la palabra griega "
+        "ordinaria para un niño demasiado pequeño para hablar, usada en figura de lo no instruido o lo "
+        "sencillo. ⚠ Mateo 11:25 la pone directamente contra «los sabios y los entendidos» — precisamente "
+        "los mejor equipados para entender son de quienes se esconden estas cosas, y quienes no tienen "
+        "ningún equipo son quienes las reciben."),
+    "zygos": ("yugo",
+        "YUGO — la barra de madera puesta sobre el cuello de una pareja de animales para que tiren juntos "
+        "de una misma carga; por metáfora, en el lenguaje rabínico de la época de Jesús («el yugo de la "
+        "Torá»), un cuerpo de enseñanza asumido. ⚠ Así «tomad mi yugo» (Mateo 11:29) no es solo imagen de "
+        "carga — todo yugo pesa — sino de discipulado: la palabra usada para la enseñanza de un rabino, "
+        "ofrecida aquí como reemplazo de cualquier yugo que el oyente ya lleve."),
+    "praus": ("manso",
+        "MANSO, apacible — la palabra griega idéntica ya encontrada una vez: «dichosos los MANSOS, porque "
+        "ellos heredarán la tierra» (Mateo 5:5). ⚠ Allí nombraba una bienaventuranza a perseguir; aquí "
+        "Jesús la aplica a sí mismo — «soy manso y humilde de corazón» (11:29) — los únicos dos lugares de "
+        "este Evangelio donde aparece la palabra. No es debilidad: los escritores griegos la usaban de un "
+        "animal domado o de un temperamento controlado, nunca de uno sin carácter."),
+    "chrestos": ("fácil, bueno de llevar",
+        "FÁCIL, bueno de llevar, bien hecho — de un yugo que ajusta bien y no lastima; palabra de "
+        "artesano para lo bien construido, lo útil. ⚠ Su pariente cercano es una confusión antigua genuina "
+        "y no un juego de palabras moderno: <em>christos</em> («ungido») y <em>chrēstos</em> eran casi "
+        "homófonos en la pronunciación del siglo primero, lo bastante como para que «Chrestus» aparezca "
+        "como variante de «Christus» en escritos romanos posteriores. Mateo no explota el parecido; "
+        "simplemente está ahí, en el sonido de la última palabra que Jesús da a su propio yugo."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -9244,6 +9330,23 @@ ENCYCLOPEDIA_ES["simon-the-zealot"] = ("Simón el Cananeo / Zelote",
     "Mateo el recaudador de impuestos (<a href='#matthew-apostle'>véase la entrada</a>), un hombre cuyo "
     "antiguo sustento era cobrar los propios ingresos de Roma — un revolucionario y un colaborador, "
     "llamados por la misma voz a los mismos doce.")
+ENCYCLOPEDIA_ES["sidon"] = ("Sidón",
+    "La más antigua de las dos grandes ciudades portuarias fenicias, unos 40 km al norte de Tiro por la "
+    "costa, y en Génesis 10:15 el PRIMOGÉNITO de Canaán — «Sidón» es a la vez una ciudad y, en la Tabla "
+    "de las Naciones, un antepasado. JEZABEL, que introduce el culto a Baal en Israel, es «hija de "
+    "Et-baal, rey de los sidonios» (1 Reyes 16:31, todavía no en estas páginas). ⚠ Jesús visita más "
+    "adelante en persona «la región de Tiro y de Sidón» (Mateo 15:21, todavía no en estas páginas) — el "
+    "único territorio gentil que los Evangelios lo registran pisando — después de invocar aquí el par "
+    "como el estándar frente al cual la incredulidad galilea sale peor parada (11:21-22).")
+ENCYCLOPEDIA_ES["chorazin"] = ("Corazín",
+    "Uno de solo dos pueblos que Jesús maldice expresamente por incredulidad (Mateo 11:21 / Lucas 10:13), "
+    "y el ÚNICO sitio de ese reproche sobre el cual los Evangelios no registran nada más — ningún relato "
+    "de milagro, ninguna visita narrada, nada más allá de la acusación desnuda de que allí se hicieron "
+    "«la mayoría de sus milagros». ⚠ Ese silencio es un vacío real, no un hecho resuelto: lo que se hizo "
+    "en Corazín quedó tan sin registrar como, al parecer, sin arrepentimiento. El sitio probable, Khirbet "
+    "Kerazeh, está en una loma de basalto a poca distancia (2-3 km) al norte de Cafarnaúm, junto al mar "
+    "de Galilea, y las excavaciones han descubierto una sinagoga de basalto (siglos III-IV d.C., "
+    "probablemente sobre una anterior) y un pueblo romano-bizantino.")
 
 
 # ---------------------------------------------------------------------------
@@ -9459,5 +9562,32 @@ CHAPTER_ART = {
                 "escena antigua se sienta real para su propio público.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Exhortation_to_the_Apostles_(Recommandation_aux_ap%C3%B4tres)_-_James_Tissot.jpg",
+    )],
+    "mat11": [dict(
+        file="mat11.jpg",
+        title="Saint John the Baptist in Prison Sends His Disciples to Question Jesus",
+        title_es="San Juan el Bautista en prisión envía a sus discípulos a preguntar a Jesús",
+        artist="Ermenegildo Lodi",
+        year="c. 1598-1616",
+        location="The Metropolitan Museum of Art, New York",
+        location_es="El Metropolitan Museum of Art, Nueva York",
+        alt="A monochrome pen-and-wash drawing, cut to an elongated octagon: John the Baptist, gaunt and "
+            "bearded, reaches a hand through the iron grating of a prison window at the centre; two of his "
+            "disciples lean toward him from outside the bars, one gesturing back the way they are about to "
+            "go, while a small line of figures files toward a walled town in the distance at right.",
+        note="A design drawing rather than a finished painting — the elongated, corner-clipped octagon is "
+             "the shape used for a 'sopraporta' or ceiling spandrel in an Italian interior scheme, not a "
+             "standalone picture. ⚠ It stages the SENDING rather than the arrival: John's own hand and face "
+             "are the only parts of him the grating lets through, gesturing his two disciples on their way, "
+             "while a line of small figures already threads toward the town where they will meet the one "
+             "they have been sent to ask about.",
+        note_es="Un dibujo de diseño a pluma y aguada más que una pintura terminada — el octágono alargado "
+                "y de esquinas cortadas es la forma usada para un «sopraporta» o luneto decorativo en un "
+                "interior italiano, no un cuadro independiente. ⚠ Escenifica el ENVÍO, no la llegada: de "
+                "Juan solo se ven la mano y el rostro que dejan pasar los barrotes de hierro, indicando el "
+                "camino a sus dos discípulos, mientras una fila de pequeñas figuras ya se dirige hacia la "
+                "ciudad al fondo, donde encontrarán a aquel sobre quien han sido enviados a preguntar.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:Saint_John_the_Baptist_in_Prison_Sends_His_Disciples_to_Question_Jesus_MET_DP810371.jpg",
     )],
 }
