@@ -1018,15 +1018,27 @@ def _dict_card(slug, term, orig, translit, gloss, ref, permalink=True):
 </div>"""
 
 
+def _dict_index_row(slug, term, orig, translit, gloss, ref):
+    """Lean clickable line for the dictionary INDEX page (dictionary.html) -- term
+    + a short gloss teaser. Full entry (original script, transliteration, full
+    gloss, first-discussed link) lives on dict/<slug>.html now. Keeps id="slug"
+    so an already-shared dictionary.html#slug link still lands close to the term."""
+    teaser = _plain(gloss)
+    if len(teaser) > 110:
+        teaser = teaser[:107].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    return (f'<a class="eirow" id="{slug}" href="dict/{slug}.html">'
+            f'<span class="ei-name">{html.escape(term)}</span>'
+            f'<span class="ei-teaser">{html.escape(teaser)}</span></a>')
+
+
 def build_dictionary():
     entries = sorted(DICTIONARY, key=lambda e: e[1].lower())
-    items = [_dict_card(*e) for e in entries]
+    items = [_dict_index_row(*e) for e in entries]
     body = f"""<h1 class="pagetitle">📖 Dictionary</h1>
 <p class="lede">The original-language words this translation has met so far — Hebrew for the Tanakh, Greek for
-the New Testament — <strong>{len(entries)} terms</strong>, each added the chapter its translator's note first
-discussed it, with a link back to that discussion. This is a reader's glossary of the actual working
-vocabulary, not an abridged lexicon.</p>
-<div class="panel dict">
+the New Testament — <strong>{len(entries)} terms</strong>. Click a term for its full entry — original script,
+transliteration, gloss, and a link back to the chapter that first discussed it.</p>
+<div class="panel eilist">
 {''.join(items)}
 </div>"""
     out = page(f"Dictionary — {SITE_NAME}", body, active="library",
@@ -1121,7 +1133,7 @@ def _ency_card(e, permalink=True):
     if e.get("coords"):
         is_region = e["slug"] in _REGION_BY_SLUG
         label = "🗺️ See the territory boundary" if is_region else "🗺️ See it on the atlas"
-        maplink = (f'<div class="emap"><a href="atlas.html#atlas-{e["slug"]}">{label} →</a></div>')
+        maplink = (f'<div class="emap"><a href="atlas/{e["slug"]}.html">{label} →</a></div>')
     perma = (f'<a href="ency/{e["slug"]}.html" style="font-size:11px;font-weight:400;opacity:.55;'
               f'margin-left:8px" title="Permalink — link directly to this entry">🔗 permalink</a>'
              if permalink else "")
@@ -1133,6 +1145,20 @@ def _ency_card(e, permalink=True):
   {maplink}
   {vids}
 </div>"""
+
+
+def _ency_index_row(e):
+    """One lean, clickable line for the encyclopedia INDEX page (encyclopedia.html)
+    -- name + a short teaser, linking straight to ency/<slug>.html where the full
+    entry (description/images/refs/map link/videos) actually lives now. Keeps the
+    entry's `id="slug"` anchor so an already-shared encyclopedia.html#slug link
+    still lands on (a leaner version of) the right spot."""
+    teaser = _plain(e["desc"])
+    if len(teaser) > 130:
+        teaser = teaser[:127].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    return (f'<a class="eirow" id="{e["slug"]}" href="ency/{e["slug"]}.html">'
+            f'<span class="ei-name">{html.escape(e["name"])}</span>'
+            f'<span class="ei-teaser">{html.escape(teaser)}</span></a>')
 
 
 def build_encyclopedia():
@@ -1153,7 +1179,7 @@ def build_encyclopedia():
                          f"add a section in build_encyclopedia() or fix the entry")
 
     def render(entries):
-        return "".join(_ency_card(e) for e in sorted(entries, key=lambda x: x["name"].lower()))
+        return "".join(_ency_index_row(e) for e in sorted(entries, key=lambda x: x["name"].lower()))
 
     queue_rows = "".join(
         f"""<div class="qrow"><div class="qrow-t"><a href="{html.escape(u, quote=True)}" rel="noopener">▶ {html.escape(t)}</a></div>
@@ -1173,7 +1199,7 @@ reach the book or chapter they belong to — logged here so nothing gets lost be
 <p class="lede">The work of ordinary hands — the jobs the prophets and poets reach for when they want
 to say something about God. These entries explain how the craft was actually done, because that is
 usually where the metaphor's force is hiding.</p>
-<div class="panel ency">{render(things)}</div>"""
+<div class="panel eilist">{render(things)}</div>"""
 
     counts = f"<strong>{len(places)} places, {len(people)} people</strong>"
     if things:
@@ -1181,15 +1207,15 @@ usually where the metaphor's force is hiding.</p>
         counts = f"<strong>{len(places)} places, {len(people)} people, {len(things)} {_c}</strong>"
 
     body = f"""<h1 class="pagetitle">🏺 Encyclopedia</h1>
-<p class="lede">The people and places the translation has reached — {counts} — each entry linked to
-every verse where it appears, with a growing film shelf of archaeology and geography footage embedded
-directly on the entries they illuminate.</p>
+<p class="lede">The people and places the translation has reached — {counts}. Click a name for the full
+entry — description, every verse it appears in, and (for places) a growing film shelf of archaeology
+and geography footage from Expedition Bible.</p>
 
 <h2>Places</h2>
-<div class="panel ency">{render(places)}</div>
+<div class="panel eilist">{render(places)}</div>
 
 <h2>People</h2>
-<div class="panel ency">{render(people)}</div>
+<div class="panel eilist">{render(people)}</div>
 
 {things_section}
 
@@ -1594,9 +1620,54 @@ def render_route_inset(route):
             f'<span>zoom</span></div>{svg}</div>')
 
 
+def _atlas_card(e, permalink=True):
+    """One place's full atlas content -- description, verse refs, the live map (+
+    territory-boundary overlay when the place is a REGION, not a point), and the
+    ancient-world-overlay placeholder. Shared by the standalone page (atlas/<slug>.html,
+    one place alone) and formerly by atlas.html's per-chapter listing (now a lean
+    link list instead -- see build_atlas())."""
+    refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
+    if e.get("coords"):
+        lat, lon, span = e["coords"]
+        badge = ' <span class="atlas-approx">approximate</span>' if e.get("approx") else ""
+        caption = f'📍 <strong>{html.escape(e["name"])}</strong>'
+        if e.get("modern"):
+            caption += f' — modern-day {html.escape(e["modern"])}'
+        map_html = osm_embed(lat, lon, span, e["name"], caption=caption)
+        # A territory gets its BOUNDARY drawn above the pin map: a marker
+        # dropped in the middle of a country says nothing about its extent.
+        reg = _REGION_BY_SLUG.get(e["slug"])
+        if reg:
+            badge = ' <span class="atlas-territory">territory</span>' + badge
+            map_html = render_region_map(reg, others=REGIONS) + map_html
+    else:
+        badge = ""
+        map_html = ('<div class="atlas-nomap">📍 No fixed point plotted — the location is genuinely '
+                    "undetermined (see the note above), so this shows no guessed pin.</div>")
+    perma = (f'<a href="atlas/{e["slug"]}.html" style="font-size:11px;font-weight:400;opacity:.55;'
+              f'margin-left:8px" title="Permalink — link directly to this place">🔗 permalink</a>'
+             if permalink else "")
+    return f"""<div class="atlas-place" id="atlas-{e['slug']}">
+  <div class="atlas-place-h"><a href="encyclopedia.html#{e['slug']}">{html.escape(e['name'])}</a>{badge}{perma}</div>
+  <p>{e['desc']}</p>
+  <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
+  {map_html}
+  <div class="atlas-overlay-empty">🗺️ No ancient-world overlay on the shelf yet for this site — a period map
+  showing how the region actually looked in the biblical world gets added here as Mr. Librarian curates one,
+  the same way the encyclopedia's film shelf grows.</div>
+</div>"""
+
+
 def build_atlas():
-    """One page, organized chapter-by-chapter (not place-by-place like the
-    encyclopedia) so a chapter's Atlas toggle can jump straight to `atlas.html#genesis-N`.
+    """One INDEX page, organized chapter-by-chapter (not place-by-place like the
+    encyclopedia) so a chapter's Atlas toggle can jump straight to `atlas.html#genesis-N`
+    -- each chapter section is now a lean list of place links (a place can legitimately
+    appear in several chapters' sections), with the full content living on that place's
+    own standalone page (atlas/<slug>.html, see build_atlas_entry_pages()). A place's
+    `id="atlas-slug"` anchor -- so an already-shared atlas.html#atlas-seir link still
+    works -- is printed on its FIRST chapter mention only (a place named in many
+    chapters would otherwise emit the same id many times, which is invalid HTML and
+    was a latent bug in the old one-full-card-per-mention layout).
     Reuses ENCYCLOPEDIA's existing (chapter, verse) refs — no new authoring needed to
     know which places belong to which chapter."""
     places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
@@ -1609,41 +1680,22 @@ def build_atlas():
             if e["slug"] not in by_chapter[key] or v < by_chapter[key][e["slug"]]:
                 by_chapter[key][e["slug"]] = v
 
+    seen_ids = set()
     sections = []
     for slug, book, num, teaser in CHAPTERS:
         entries = sorted(by_chapter.get((book, num), {}).items(), key=lambda kv: kv[1])
         if entries:
-            place_html = []
+            rows = []
             for pslug, _first_v in entries:
                 e = _SLUG_TO_ENTRY[pslug]
-                refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
-                if e.get("coords"):
-                    lat, lon, span = e["coords"]
-                    badge = ' <span class="atlas-approx">approximate</span>' if e.get("approx") else ""
-                    caption = f'📍 <strong>{html.escape(e["name"])}</strong>'
-                    if e.get("modern"):
-                        caption += f' — modern-day {html.escape(e["modern"])}'
-                    map_html = osm_embed(lat, lon, span, e["name"], caption=caption)
-                    # A territory gets its BOUNDARY drawn above the pin map: a marker
-                    # dropped in the middle of a country says nothing about its extent.
-                    reg = _REGION_BY_SLUG.get(pslug)
-                    if reg:
-                        badge = ' <span class="atlas-territory">territory</span>' + badge
-                        map_html = render_region_map(reg, others=REGIONS) + map_html
-                else:
-                    badge = ""
-                    map_html = ('<div class="atlas-nomap">📍 No fixed point plotted — the location is genuinely '
-                                "undetermined (see the note above), so this shows no guessed pin.</div>")
-                place_html.append(f"""<div class="atlas-place" id="atlas-{e['slug']}">
-  <div class="atlas-place-h"><a href="encyclopedia.html#{e['slug']}">{html.escape(e['name'])}</a>{badge}</div>
-  <p>{e['desc']}</p>
-  <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
-  {map_html}
-  <div class="atlas-overlay-empty">🗺️ No ancient-world overlay on the shelf yet for this site — a period map
-  showing how the region actually looked in the biblical world gets added here as Mr. Librarian curates one,
-  the same way the encyclopedia's film shelf grows.</div>
-</div>""")
-            body_html = "".join(place_html)
+                anchor = ""
+                if pslug not in seen_ids:
+                    anchor = f' id="atlas-{pslug}"'
+                    seen_ids.add(pslug)
+                pin = "📍" if e.get("coords") else "❓"
+                rows.append(f'<a class="atlas-item"{anchor} href="atlas/{pslug}.html">'
+                            f'{pin} {html.escape(e["name"])}</a>')
+            body_html = f'<div class="atlas-items">{"".join(rows)}</div>'
         else:
             body_html = '<div class="atlas-empty">No places are named in this chapter yet — nothing to map.</div>'
         sections.append(f"""<div class="atlas-chapter" id="{book_slug(book)}-{num}">
@@ -1655,14 +1707,13 @@ def build_atlas():
     route_html = "".join(render_route_panel(r) for r in ROUTES)
 
     body = f"""<h1 class="pagetitle">🗺️ Atlas</h1>
-<p class="lede">Every place the translation has named so far, mapped chapter by chapter —
-<strong>{n_mapped} of {len(places)} places</strong> located on a live map (a handful are genuinely debated or
-unidentified, and say so rather than guess a pin). Jump here straight from any chapter's toggle bar, or browse
-chapter by chapter below. Where Expedition Bible's Joel Kramer stakes out a specific site — Eden and Havilah via
-the Pishon, Sodom and Gomorrah at Tall el-Hammam — that identification is the one plotted, credited in the
-place's own note. An <strong>ancient-world overlay</strong> — how each region actually looked in the biblical
-world, not just today — is a shelf still being built; it starts empty and fills in as real sources are curated,
-the same honest way the encyclopedia's film shelf grows.</p>
+<p class="lede">Every place the translation has named so far — <strong>{n_mapped} of {len(places)}
+places</strong> located on a live map (a handful are genuinely debated or unidentified, and say so
+rather than guess a pin). Click a place for its full entry, description, verse links, and map — or
+jump here straight from any chapter's toggle bar and browse chapter by chapter below. Where
+Expedition Bible's Joel Kramer stakes out a specific site — Eden and Havilah via the Pishon, Sodom
+and Gomorrah at Tall el-Hammam — that identification is the one plotted, credited in the place's own
+note.</p>
 
 {route_html}
 {''.join(sections)}"""
@@ -1671,6 +1722,30 @@ the same honest way the encyclopedia's film shelf grows.</p>
                     "with an ancient-world overlay shelf still growing.")
     open(os.path.join(OUT, "atlas.html"), "w", encoding="utf-8").write(out)
     return n_mapped, len(places)
+
+
+def build_atlas_entry_pages():
+    """One standalone, shareable page per mapped place: atlas/<slug>.html. Purely
+    additive in spirit -- see build_encyclopedia_entry_pages()'s docstring; the
+    place's `atlas-<slug>` anchor on atlas.html (see build_atlas()) still works
+    for an already-shared link, this just gives it a real page of its own too."""
+    outdir = os.path.join(OUT, "atlas")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for e in ENCYCLOPEDIA:
+        if e["kind"] != "place":
+            continue
+        img = (e.get("images") or [None])[0]
+        og_image = f"{SITE_URL}/img/ency/{img['file']}" if img else ""
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="atlas.html">🗺️ Atlas</a></p>
+{_atlas_card(e, permalink=False)}"""
+        out = page(f"{e['name']} — Atlas — {SITE_NAME}", body, active="library",
+                   desc=_plain(e['desc']), url=f"atlas/{e['slug']}.html", image=og_image,
+                   base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{e['slug']}.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
 
 
 def build_library(stats):
@@ -3443,6 +3518,17 @@ def _dict_card_es(slug, term_es, orig, translit, desc_es, book, ch, v, es_slugs,
 </div>"""
 
 
+def _dict_index_row_es(slug, term_es, desc_es):
+    """Lean clickable line for diccionario.html -- full entry lives on
+    dict/<slug>.es.html now."""
+    teaser = _plain(desc_es)
+    if len(teaser) > 110:
+        teaser = teaser[:107].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    return (f'<a class="eirow" id="{slug}" href="dict/{slug}.es.html">'
+            f'<span class="ei-name">{html.escape(term_es)}</span>'
+            f'<span class="ei-teaser">{html.escape(teaser)}</span></a>')
+
+
 def build_dictionary_es(panels):
     es_slugs = _es_slugs_available(panels)
     by_slug = {d[0]: d for d in DICTIONARY}
@@ -3452,20 +3538,19 @@ def build_dictionary_es(panels):
         src = by_slug.get(slug)
         if not src:
             continue
-        _, term, orig, translit, _gloss, ref = src
-        book, ch, v = _ref(ref)
-        items.append(_dict_card_es(slug, term_es, orig, translit, desc_es, book, ch, v, es_slugs))
+        items.append(_dict_index_row_es(slug, term_es, desc_es))
     body = f"""<h1 class="pagetitle">\U0001F4D6 Diccionario</h1>
 <p class="lede">Las palabras del idioma original que esta traducción ha encontrado — hebreo para el
 Tanaj, griego para el Nuevo Testamento — explicadas en español.
-<strong>{len(items)} de {len(DICTIONARY)} términos</strong> tienen ya su entrada española.</p>
+<strong>{len(items)} de {len(DICTIONARY)} términos</strong> tienen ya su entrada española. Haz clic en un
+término para ver la entrada completa.</p>
 <div class="panel" style="padding:10px 14px">
   <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Aquí aparecen
   únicamente los términos que ya están escritos en español, porque una entrada en inglés
   dentro de una página española no le sirve a nadie que lea solo español. Los que faltan se van
   añadiendo a medida que se traduce cada capítulo nuevo.</p>
 </div>
-{"".join(items)}"""
+<div class="panel eilist">{"".join(items)}</div>"""
     out = page(f"Diccionario — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
                desc="Diccionario hebreo y griego de la traducción, en español.")
     open(os.path.join(OUT, "diccionario.html"), "w", encoding="utf-8").write(out)
@@ -3473,11 +3558,11 @@ Tanaj, griego para el Nuevo Testamento — explicadas en español.
 
 
 def _ency_card_es(slug, name_es, desc_es, e, es_slugs, permalink=True):
-    """Spanish twin of _ency_card -- shared by enciclopedia.html and ency/<slug>.es.html."""
+    """Spanish twin of _ency_card -- the standalone page ency/<slug>.es.html."""
     refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
     maplink = ""
     if e.get("coords"):
-        maplink = (f'<div class="emap"><a href="atlas-es.html#atlas-{slug}">'
+        maplink = (f'<div class="emap"><a href="atlas/{slug}.es.html">'
                    f'\U0001F5FA️ Verlo en el atlas →</a></div>')
     perma = (f'<a href="ency/{slug}.es.html" style="font-size:11px;font-weight:400;opacity:.55;'
               f'margin-left:8px" title="Enlace permanente — comparte esta entrada">🔗 enlace</a>'
@@ -3491,8 +3576,18 @@ def _ency_card_es(slug, name_es, desc_es, e, es_slugs, permalink=True):
 </div>"""
 
 
+def _ency_index_row_es(slug, name_es, desc_es):
+    """Lean clickable line for enciclopedia.html -- full entry lives on
+    ency/<slug>.es.html now."""
+    teaser = _plain(desc_es)
+    if len(teaser) > 130:
+        teaser = teaser[:127].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    return (f'<a class="eirow" id="{slug}" href="ency/{slug}.es.html">'
+            f'<span class="ei-name">{html.escape(name_es)}</span>'
+            f'<span class="ei-teaser">{html.escape(teaser)}</span></a>')
+
+
 def build_encyclopedia_es(panels):
-    es_slugs = _es_slugs_available(panels)
     by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
     groups = {"place": [], "people": [], "craft": []}
     for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
@@ -3502,23 +3597,23 @@ def build_encyclopedia_es(panels):
         k = e["kind"]
         k = ("people" if k in ("person", "people")
              else "craft" if k in ("craft", "thing") else "place")
-        groups[k].append((slug, name_es, desc_es, e))
+        groups[k].append((slug, name_es, desc_es))
 
     def render(entries):
-        return "".join(_ency_card_es(slug, name_es, desc_es, e, es_slugs)
-                       for slug, name_es, desc_es, e in sorted(entries, key=lambda x: x[1].lower()))
+        return "".join(_ency_index_row_es(slug, name_es, desc_es)
+                       for slug, name_es, desc_es in sorted(entries, key=lambda x: x[1].lower()))
 
     total = sum(len(v) for v in groups.values())
     secs = []
     for key, title in (("place", "Lugares"), ("people", "Personas"),
                        ("craft", "Oficios y artes")):
         if groups[key]:
-            secs.append(f'<h2>{title}</h2><div class="panel ency">{render(groups[key])}</div>')
+            secs.append(f'<h2>{title}</h2><div class="panel eilist">{render(groups[key])}</div>')
 
     body = f"""<h1 class="pagetitle">\U0001F3FA Enciclopedia</h1>
-<p class="lede">Las personas, los lugares y los oficios que la traducción ha alcanzado, cada entrada
-enlazada a los versículos donde aparece. <strong>{total} de {len(ENCYCLOPEDIA)} entradas</strong>
-están ya escritas en español.</p>
+<p class="lede">Las personas, los lugares y los oficios que la traducción ha alcanzado —
+<strong>{total} de {len(ENCYCLOPEDIA)} entradas</strong> están ya escritas en español. Haz clic en un
+nombre para ver la entrada completa.</p>
 <div class="panel" style="padding:10px 14px">
   <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Solo se muestran las
   entradas que ya tienen texto español; nada se rellena con inglés.</p>
@@ -3581,54 +3676,91 @@ def build_encyclopedia_entry_pages_es(panels):
     return n
 
 
+def _atlas_card_es(slug, name_es, desc_es, e, es_slugs, permalink=True):
+    """Spanish twin of _atlas_card -- the standalone page atlas/<slug>.es.html."""
+    refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
+    if e.get("coords"):
+        lat, lon, span = e["coords"]
+        badge = ' <span class="atlas-approx">aproximado</span>' if e.get("approx") else ""
+        caption = f'\U0001F4CD <strong>{html.escape(name_es)}</strong>'
+        if e.get("modern"):
+            caption += f' — hoy {html.escape(e["modern"])}'
+        map_html = osm_embed(lat, lon, span, name_es, caption=caption)
+    else:
+        badge = ""
+        map_html = ('<div class="atlas-nomap">\U0001F4CD Sin punto fijo: la ubicación está '
+                    "genuinamente sin determinar, así que no se muestra ninguna chincheta "
+                    "adivinada.</div>")
+    perma = (f'<a href="atlas/{slug}.es.html" style="font-size:11px;font-weight:400;opacity:.55;'
+              f'margin-left:8px" title="Enlace permanente — comparte este lugar">🔗 enlace</a>'
+             if permalink else "")
+    return f"""<div class="atlas-place" id="atlas-{slug}">
+  <div class="atlas-place-h"><a href="enciclopedia.html#{slug}">{html.escape(name_es)}</a>{badge}{perma}</div>
+  <p>{desc_es}</p>
+  <div class="erefs"><span class="xr-label">en el texto</span> {refs}</div>
+  {map_html}
+</div>"""
+
+
 def build_atlas_es(panels):
-    """Spanish atlas. Shows only places that HAVE a Spanish entry -- the
+    """Spanish atlas INDEX. Shows only places that HAVE a Spanish entry -- the
     coordinates are language-neutral and reused, but the prose must be Spanish or
-    the page would dump a Spanish reader into English."""
-    es_slugs = _es_slugs_available(panels)
+    the page would dump a Spanish reader into English. Already place-organized
+    (unlike the English atlas's chapter-by-chapter layout), so this is a
+    straightforward lean-list conversion -- full content moves to
+    atlas/<slug>.es.html (build_atlas_entry_pages_es())."""
     by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
     places = []
     for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
         e = by_slug.get(slug)
         if e and e["kind"] == "place":
-            places.append((slug, name_es, desc_es, e))
-    mapped = sum(1 for _, _, _, e in places if e.get("coords"))
+            places.append((slug, name_es, e))
+    mapped = sum(1 for _, _, e in places if e.get("coords"))
 
-    blocks = []
-    for slug, name_es, desc_es, e in sorted(places, key=lambda x: x[1].lower()):
-        refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
-        if e.get("coords"):
-            lat, lon, span = e["coords"]
-            badge = ' <span class="atlas-approx">aproximado</span>' if e.get("approx") else ""
-            caption = f'\U0001F4CD <strong>{html.escape(name_es)}</strong>'
-            if e.get("modern"):
-                caption += f' — hoy {html.escape(e["modern"])}'
-            map_html = osm_embed(lat, lon, span, name_es, caption=caption)
-        else:
-            badge = ""
-            map_html = ('<div class="atlas-nomap">\U0001F4CD Sin punto fijo: la ubicación está '
-                        "genuinamente sin determinar, así que no se muestra ninguna chincheta "
-                        "adivinada.</div>")
-        blocks.append(f"""<div class="atlas-place" id="atlas-{slug}">
-  <div class="atlas-place-h"><a href="enciclopedia.html#{slug}">{html.escape(name_es)}</a>{badge}</div>
-  <p>{desc_es}</p>
-  <div class="erefs"><span class="xr-label">en el texto</span> {refs}</div>
-  {map_html}
-</div>""")
+    rows = []
+    for slug, name_es, e in sorted(places, key=lambda x: x[1].lower()):
+        pin = "📍" if e.get("coords") else "❓"
+        rows.append(f'<a class="atlas-item" id="atlas-{slug}" href="atlas/{slug}.es.html">'
+                    f'{pin} {html.escape(name_es)}</a>')
 
     body = f"""<h1 class="pagetitle">\U0001F5FA️ Atlas</h1>
 <p class="lede">Los lugares de la traducción, situados en un mapa vivo —
 <strong>{mapped} de {len(places)}</strong> con coordenadas. Las coordenadas se comparten con la
-edición inglesa; el texto es español.</p>
+edición inglesa; el texto es español. Haz clic en un lugar para ver la entrada completa.</p>
 <div class="panel" style="padding:10px 14px">
   <p style="margin:0"><strong>Esta página crece capítulo a capítulo.</strong> Aparecen únicamente
   los lugares que ya tienen entrada en español.</p>
 </div>
-{"".join(blocks)}"""
+<div class="atlas-items">{"".join(rows)}</div>"""
     out = page(f"Atlas — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
                desc="Atlas de los lugares de la traducción, en español.")
     open(os.path.join(OUT, "atlas-es.html"), "w", encoding="utf-8").write(out)
     return mapped, len(places)
+
+
+def build_atlas_entry_pages_es(panels):
+    """Spanish twin of build_atlas_entry_pages() -- atlas/<slug>.es.html, one per
+    mapped place that already has an ENCYCLOPEDIA_ES translation."""
+    es_slugs = _es_slugs_available(panels)
+    by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
+    outdir = os.path.join(OUT, "atlas")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
+        e = by_slug.get(slug)
+        if not e or e["kind"] != "place":
+            continue
+        img = (e.get("images") or [None])[0]
+        og_image = f"{SITE_URL}/img/ency/{img['file']}" if img else ""
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="atlas-es.html">🗺️ Atlas</a></p>
+{_atlas_card_es(slug, name_es, desc_es, e, es_slugs, permalink=False)}"""
+        out = page(f"{name_es} — Atlas — {SITE_NAME_ES}", body, active="biblioteca",
+                   lang="es", desc=_plain(desc_es), url=f"atlas/{slug}.es.html", image=og_image,
+                   base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{slug}.es.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
 
 
 def build_library_es(stats):
@@ -3678,6 +3810,7 @@ def build_library_es_all(panels):
     build_dictionary_entry_pages_es(panels)
     build_encyclopedia_entry_pages_es(panels)
     n_mapped, n_places = build_atlas_es(panels)
+    build_atlas_entry_pages_es(panels)
     build_library_es((n_words, n_refs, n_dict, n_ency, n_mapped, n_places))
     return n_words, n_refs, n_dict, n_ency, n_mapped, n_places
 
@@ -4619,7 +4752,7 @@ def build_sitemap():
     # alone never sees them. Walked separately and added with their subdir prefix
     # so every downstream step (hreflang pairing via string-slicing, lastmod
     # lookup, the noindex sniff) treats "ency/seir.html" exactly like a root page.
-    for sub in ("ency", "dict"):
+    for sub in ("ency", "dict", "atlas"):
         subdir = os.path.join(OUT, sub)
         if os.path.isdir(subdir):
             pages += sorted(f"{sub}/{f}" for f in os.listdir(subdir) if f.endswith(".html"))
@@ -4709,6 +4842,7 @@ def main():
     build_dictionary_entry_pages()
     build_encyclopedia_entry_pages()
     n_mapped, n_atlas_places = build_atlas()
+    build_atlas_entry_pages()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_sitemap = build_sitemap()
     save_card_manifest()
