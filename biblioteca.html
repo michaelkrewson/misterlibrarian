@@ -54,6 +54,19 @@
     <a href="biblioteca.html" class="on">Biblioteca</a>
   </nav>
 </header>
+<div class="pageviews" id="pgviews" style="font-size:11.5px;opacity:.55;margin:-4px 0 10px"></div>
+<script>
+(function(){
+  var el = document.getElementById("pgviews");
+  fetch("https://mistertranslation.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      if (el && d && d.count) el.textContent = "👁️ " + d.count + " vistas";
+      else if (el) el.remove();
+    })
+    .catch(function(){ if (el) el.remove(); });
+})();
+</script>
 <script src="reading.js"></script>
 <script src="player-clips.js?v=fdee541f34"></script>
 <script src="audio-reader.js?v=720e67d173"></script>

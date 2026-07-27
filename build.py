@@ -551,13 +551,45 @@ def _og_tags(title, desc, url="", image=""):
     return "\n" + "\n".join(tags)
 
 
-def page(title, body, active="", desc="", url="", image="", lang="en"):
+def _page_view_snippet(lang="en"):
+    """A quiet '\U0001F441️ N views' line under the header, on every page built via page().
+    GoatCounter has been recording a per-path count since the sitewide script was added
+    (_goatcounter_script) -- this just displays it, no new tracking. Mirrors _stats_box()'s
+    hard-won handling: fetch().then(r=>r.json()) WITHOUT checking r.ok, because GoatCounter's
+    counter endpoint returns HTTP 404 for a thin/zero-hit path even when the JSON body is a
+    perfectly valid {"count":"..."}. A brand-new page with no hits yet, or the fetch failing
+    outright (network error, ad-blocker, GoatCounter unconfigured), just removes the line
+    rather than showing a wrong or empty number."""
+    if not GOATCOUNTER_CODE:
+        return ""
+    label = "vistas" if lang == "es" else "views"
+    return f"""<div class="pageviews" id="pgviews" style="font-size:11.5px;opacity:.55;margin:-4px 0 10px"></div>
+<script>
+(function(){{
+  var el = document.getElementById("pgviews");
+  fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
+    .then(function(r){{ return r.json(); }})
+    .then(function(d){{
+      if (el && d && d.count) el.textContent = "\U0001F441️ " + d.count + " {label}";
+      else if (el) el.remove();
+    }})
+    .catch(function(){{ if (el) el.remove(); }});
+}})();
+</script>"""
+
+
+def page(title, body, active="", desc="", url="", image="", lang="en", base=""):
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
     og = _og_tags(title, desc, url, image)
+    # `base` is only passed by pages that live inside a subdirectory (ency/, dict/) --
+    # it lets every existing root-relative href in header()/FOOTER/body (style.css,
+    # img/..., encyclopedia.html#slug, ...) resolve correctly without rewriting a
+    # single one of them. Every other page omits it, so this is a no-op everywhere else.
+    base_tag = f'\n<base href="{html.escape(base, quote=True)}"/>' if base else ""
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
-<meta charset="utf-8"/>
+<meta charset="utf-8"/>{base_tag}
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{html.escape(title)}</title>{d}{og}
 <link rel="icon" href="{FAVICON}"/>
@@ -566,6 +598,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en"):
 <body>
 <div class="wrap">
 {header(active, lang)}
+{_page_view_snippet(lang)}
 <script src="reading.js"></script>
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
@@ -970,17 +1003,24 @@ translation, it reflects this project's actual renderings: look up <em>vault</em
     return len(words), total_refs
 
 
+def _dict_card(slug, term, orig, translit, gloss, ref, permalink=True):
+    """One dictionary entry's HTML block -- shared by dictionary.html (many cards,
+    each keeping its id="slug" anchor so dictionary.html#slug stays live) and the
+    entry's own standalone page (dict/<slug>.html). `permalink` mirrors _ency_card."""
+    book, ch, v = _ref(ref)
+    script_cls = "dgreek" if _is_nt(book) else "dheb"   # Greek renders LTR, Hebrew RTL
+    perma = (f'<a href="dict/{slug}.html" style="font-size:11px;font-weight:400;opacity:.55" '
+             f'title="Permalink — link directly to this entry">🔗 permalink</a>' if permalink else "")
+    return f"""<div class="dentry" id="{slug}">
+  <div class="dhead"><span class="dterm">{html.escape(term)}</span>
+    <span class="{script_cls}">{orig}</span> <span class="dtr">{html.escape(translit)}</span> {perma}</div>
+  <p>{gloss} <a class="dref" href="{verse_url(book, ch, v)}">→ first discussed at {book_abbr(book)} {ch}:{v}</a></p>
+</div>"""
+
+
 def build_dictionary():
     entries = sorted(DICTIONARY, key=lambda e: e[1].lower())
-    items = []
-    for slug, term, orig, translit, gloss, ref in entries:
-        book, ch, v = _ref(ref)
-        script_cls = "dgreek" if _is_nt(book) else "dheb"   # Greek renders LTR, Hebrew RTL
-        items.append(f"""<div class="dentry" id="{slug}">
-  <div class="dhead"><span class="dterm">{html.escape(term)}</span>
-    <span class="{script_cls}">{orig}</span> <span class="dtr">{html.escape(translit)}</span></div>
-  <p>{gloss} <a class="dref" href="{verse_url(book, ch, v)}">→ first discussed at {book_abbr(book)} {ch}:{v}</a></p>
-</div>""")
+    items = [_dict_card(*e) for e in entries]
     body = f"""<h1 class="pagetitle">📖 Dictionary</h1>
 <p class="lede">The original-language words this translation has met so far — Hebrew for the Tanakh, Greek for
 the New Testament — <strong>{len(entries)} terms</strong>, each added the chapter its translator's note first
@@ -1060,6 +1100,41 @@ def _entry_images_html(e, lang="en"):
     return "".join(_entry_image_html(i, lang) for i in (e.get("images") or []))
 
 
+def _ency_card(e, permalink=True):
+    """One encyclopedia entry's HTML block -- shared by encyclopedia.html (many
+    cards on one page, each keeping its id="slug" anchor so an already-shared
+    encyclopedia.html#slug link keeps working) and the entry's own standalone
+    page (ency/<slug>.html, one card alone). `permalink` prints a small share
+    link to that standalone page; the entry's own page passes False, since
+    linking a page to itself is pointless."""
+    refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
+    if e.get("videos"):
+        vids = "".join(youtube_embed(u, t) for t, u in e["videos"])
+    else:
+        vids = ('<div class="evids-empty">▶ No films on the shelf yet — archaeology and '
+                'geography videos get added here as Mr. Librarian finds good ones.</div>')
+    # A mapped place gets a direct route to its map. Without this the
+    # only way from an entry to the atlas was the chapter-level toggle,
+    # so a reader who clicked "Seir" in the verse landed on prose with
+    # no way to see where the territory actually was.
+    maplink = ""
+    if e.get("coords"):
+        is_region = e["slug"] in _REGION_BY_SLUG
+        label = "🗺️ See the territory boundary" if is_region else "🗺️ See it on the atlas"
+        maplink = (f'<div class="emap"><a href="atlas.html#atlas-{e["slug"]}">{label} →</a></div>')
+    perma = (f'<a href="ency/{e["slug"]}.html" style="font-size:11px;font-weight:400;opacity:.55;'
+              f'margin-left:8px" title="Permalink — link directly to this entry">🔗 permalink</a>'
+             if permalink else "")
+    return f"""<div class="eentry" id="{e['slug']}">
+  <div class="ehead">{html.escape(e['name'])}{perma}</div>
+  <p>{e['desc']}</p>
+  {_entry_images_html(e)}
+  <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
+  {maplink}
+  {vids}
+</div>"""
+
+
 def build_encyclopedia():
     places = [e for e in ENCYCLOPEDIA if e["kind"] == "place"]
     people = [e for e in ENCYCLOPEDIA if e["kind"] in ("person", "people")]
@@ -1078,32 +1153,7 @@ def build_encyclopedia():
                          f"add a section in build_encyclopedia() or fix the entry")
 
     def render(entries):
-        out = []
-        for e in sorted(entries, key=lambda x: x["name"].lower()):
-            refs = " ".join(ref_link(b, c, v) for b, c, v in e["refs"])
-            if e.get("videos"):
-                vids = "".join(youtube_embed(u, t) for t, u in e["videos"])
-            else:
-                vids = ('<div class="evids-empty">▶ No films on the shelf yet — archaeology and '
-                        'geography videos get added here as Mr. Librarian finds good ones.</div>')
-            # A mapped place gets a direct route to its map. Without this the
-            # only way from an entry to the atlas was the chapter-level toggle,
-            # so a reader who clicked "Seir" in the verse landed on prose with
-            # no way to see where the territory actually was.
-            maplink = ""
-            if e.get("coords"):
-                is_region = e["slug"] in _REGION_BY_SLUG
-                label = "🗺️ See the territory boundary" if is_region else "🗺️ See it on the atlas"
-                maplink = (f'<div class="emap"><a href="atlas.html#atlas-{e["slug"]}">{label} →</a></div>')
-            out.append(f"""<div class="eentry" id="{e['slug']}">
-  <div class="ehead">{html.escape(e['name'])}</div>
-  <p>{e['desc']}</p>
-  {_entry_images_html(e)}
-  <div class="erefs"><span class="xr-label">in the text</span> {refs}</div>
-  {maplink}
-  {vids}
-</div>""")
-        return "".join(out)
+        return "".join(_ency_card(e) for e in sorted(entries, key=lambda x: x["name"].lower()))
 
     queue_rows = "".join(
         f"""<div class="qrow"><div class="qrow-t"><a href="{html.escape(u, quote=True)}" rel="noopener">▶ {html.escape(t)}</a></div>
@@ -1149,6 +1199,51 @@ directly on the entries they illuminate.</p>
                     "with embedded archaeology videos credited to Expedition Bible.")
     open(os.path.join(OUT, "encyclopedia.html"), "w", encoding="utf-8").write(out)
     return len(places), len(people), len(things)
+
+
+def build_encyclopedia_entry_pages():
+    """One standalone, shareable page per encyclopedia entry: ency/<slug>.html.
+
+    Purely additive. encyclopedia.html still carries every entry in full, each
+    still at its id="slug" anchor -- an already-shared encyclopedia.html#slug
+    link keeps working exactly as before. This just gives each entry a page of
+    its OWN, with its own title/description/OG image, so pasting the link into
+    iMessage/Slack/X unfurls with that entry's name and blurb instead of the
+    whole Encyclopedia's -- and gives it a URL worth sharing in the first place.
+    """
+    outdir = os.path.join(OUT, "ency")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for e in ENCYCLOPEDIA:
+        img = (e.get("images") or [None])[0]
+        og_image = f"{SITE_URL}/img/ency/{img['file']}" if img else ""
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="encyclopedia.html">🏺 Encyclopedia</a></p>
+{_ency_card(e, permalink=False)}"""
+        out = page(f"{e['name']} — Encyclopedia — {SITE_NAME}", body, active="library",
+                   desc=_plain(e['desc']), url=f"ency/{e['slug']}.html", image=og_image,
+                   base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{e['slug']}.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
+
+
+def build_dictionary_entry_pages():
+    """One standalone, shareable page per dictionary entry: dict/<slug>.html.
+    Purely additive -- see build_encyclopedia_entry_pages()'s docstring; the
+    same reasoning applies here, with dictionary.html in place of encyclopedia.html."""
+    outdir = os.path.join(OUT, "dict")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for slug, term, orig, translit, gloss, ref in DICTIONARY:
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="dictionary.html">📖 Dictionary</a></p>
+{_dict_card(slug, term, orig, translit, gloss, ref, permalink=False)}"""
+        out = page(f"{term} — Dictionary — {SITE_NAME}", body, active="library",
+                   desc=_plain(gloss), url=f"dict/{slug}.html", base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{slug}.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
 
 
 def _route_geo(stops, inner_w=780.0, pad=42.0):
@@ -3336,6 +3431,18 @@ así que nunca se queda atrás: es la única página de esta biblioteca que est�
     return len(words), total_refs
 
 
+def _dict_card_es(slug, term_es, orig, translit, desc_es, book, ch, v, es_slugs, permalink=True):
+    """Spanish twin of _dict_card -- shared by diccionario.html and dict/<slug>.es.html."""
+    script_cls = "dgreek" if _is_nt(book) else "dheb"
+    perma = (f'<a href="dict/{slug}.es.html" style="font-size:11px;font-weight:400;opacity:.55" '
+             f'title="Enlace permanente — comparte esta entrada">🔗 enlace</a>' if permalink else "")
+    return f"""<div class="dentry" id="{slug}">
+  <div class="dhead"><span class="dterm">{html.escape(term_es)}</span>
+    <span class="{script_cls}">{orig}</span> <span class="dtr">{html.escape(translit)}</span> {perma}</div>
+  <p>{desc_es} <span class="dref">→ primero comentado en {_es_dict_ref(book, ch, v, es_slugs)}</span></p>
+</div>"""
+
+
 def build_dictionary_es(panels):
     es_slugs = _es_slugs_available(panels)
     by_slug = {d[0]: d for d in DICTIONARY}
@@ -3347,12 +3454,7 @@ def build_dictionary_es(panels):
             continue
         _, term, orig, translit, _gloss, ref = src
         book, ch, v = _ref(ref)
-        script_cls = "dgreek" if _is_nt(book) else "dheb"
-        items.append(f"""<div class="dentry" id="{slug}">
-  <div class="dhead"><span class="dterm">{html.escape(term_es)}</span>
-    <span class="{script_cls}">{orig}</span> <span class="dtr">{html.escape(translit)}</span></div>
-  <p>{desc_es} <span class="dref">→ primero comentado en {_es_dict_ref(book, ch, v, es_slugs)}</span></p>
-</div>""")
+        items.append(_dict_card_es(slug, term_es, orig, translit, desc_es, book, ch, v, es_slugs))
     body = f"""<h1 class="pagetitle">\U0001F4D6 Diccionario</h1>
 <p class="lede">Las palabras del idioma original que esta traducción ha encontrado — hebreo para el
 Tanaj, griego para el Nuevo Testamento — explicadas en español.
@@ -3370,6 +3472,25 @@ Tanaj, griego para el Nuevo Testamento — explicadas en español.
     return len(items)
 
 
+def _ency_card_es(slug, name_es, desc_es, e, es_slugs, permalink=True):
+    """Spanish twin of _ency_card -- shared by enciclopedia.html and ency/<slug>.es.html."""
+    refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
+    maplink = ""
+    if e.get("coords"):
+        maplink = (f'<div class="emap"><a href="atlas-es.html#atlas-{slug}">'
+                   f'\U0001F5FA️ Verlo en el atlas →</a></div>')
+    perma = (f'<a href="ency/{slug}.es.html" style="font-size:11px;font-weight:400;opacity:.55;'
+              f'margin-left:8px" title="Enlace permanente — comparte esta entrada">🔗 enlace</a>'
+             if permalink else "")
+    return f"""<div class="eentry" id="{slug}">
+  <div class="ehead">{html.escape(name_es)}{perma}</div>
+  <p>{desc_es}</p>
+  {_entry_images_html(e, "es")}
+  <div class="erefs"><span class="xr-label">en el texto</span> {refs}</div>
+  {maplink}
+</div>"""
+
+
 def build_encyclopedia_es(panels):
     es_slugs = _es_slugs_available(panels)
     by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
@@ -3384,21 +3505,8 @@ def build_encyclopedia_es(panels):
         groups[k].append((slug, name_es, desc_es, e))
 
     def render(entries):
-        out = []
-        for slug, name_es, desc_es, e in sorted(entries, key=lambda x: x[1].lower()):
-            refs = " ".join(_es_dict_ref(b, c, v, es_slugs) for b, c, v in e["refs"])
-            maplink = ""
-            if e.get("coords"):
-                maplink = (f'<div class="emap"><a href="atlas-es.html#atlas-{slug}">'
-                           f'\U0001F5FA️ Verlo en el atlas →</a></div>')
-            out.append(f"""<div class="eentry" id="{slug}">
-  <div class="ehead">{html.escape(name_es)}</div>
-  <p>{desc_es}</p>
-  {_entry_images_html(e, "es")}
-  <div class="erefs"><span class="xr-label">en el texto</span> {refs}</div>
-  {maplink}
-</div>""")
-        return "".join(out)
+        return "".join(_ency_card_es(slug, name_es, desc_es, e, es_slugs)
+                       for slug, name_es, desc_es, e in sorted(entries, key=lambda x: x[1].lower()))
 
     total = sum(len(v) for v in groups.values())
     secs = []
@@ -3420,6 +3528,57 @@ están ya escritas en español.</p>
                desc="Personas, lugares y oficios de la traducción, en español.")
     open(os.path.join(OUT, "enciclopedia.html"), "w", encoding="utf-8").write(out)
     return total
+
+
+def build_dictionary_entry_pages_es(panels):
+    """Spanish twin of build_dictionary_entry_pages() -- dict/<slug>.es.html, one
+    per term that already has a Spanish entry. Nothing falls back to English:
+    a slug with no DICTIONARY_ES entry simply gets no Spanish page yet."""
+    es_slugs = _es_slugs_available(panels)
+    by_slug = {d[0]: d for d in DICTIONARY}
+    outdir = os.path.join(OUT, "dict")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for slug in DICTIONARY_ES:
+        term_es, desc_es = DICTIONARY_ES[slug]
+        src = by_slug.get(slug)
+        if not src:
+            continue
+        _, term, orig, translit, _gloss, ref = src
+        book, ch, v = _ref(ref)
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="diccionario.html">📖 Diccionario</a></p>
+{_dict_card_es(slug, term_es, orig, translit, desc_es, book, ch, v, es_slugs, permalink=False)}"""
+        out = page(f"{term_es} — Diccionario — {SITE_NAME_ES}", body, active="biblioteca",
+                   lang="es", desc=_plain(desc_es), url=f"dict/{slug}.es.html", base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{slug}.es.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
+
+
+def build_encyclopedia_entry_pages_es(panels):
+    """Spanish twin of build_encyclopedia_entry_pages() -- ency/<slug>.es.html, one
+    per entry that already has an ENCYCLOPEDIA_ES translation."""
+    es_slugs = _es_slugs_available(panels)
+    by_slug = {e["slug"]: e for e in ENCYCLOPEDIA}
+    outdir = os.path.join(OUT, "ency")
+    os.makedirs(outdir, exist_ok=True)
+    n = 0
+    for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
+        e = by_slug.get(slug)
+        if not e:
+            continue
+        img = (e.get("images") or [None])[0]
+        og_image = f"{SITE_URL}/img/ency/{img['file']}" if img else ""
+        body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="enciclopedia.html">🏺 Enciclopedia</a></p>
+{_ency_card_es(slug, name_es, desc_es, e, es_slugs, permalink=False)}"""
+        out = page(f"{name_es} — Enciclopedia — {SITE_NAME_ES}", body, active="biblioteca",
+                   lang="es", desc=_plain(desc_es), url=f"ency/{slug}.es.html", image=og_image,
+                   base=f"{SITE_URL}/")
+        open(os.path.join(outdir, f"{slug}.es.html"), "w", encoding="utf-8").write(out)
+        n += 1
+    return n
 
 
 def build_atlas_es(panels):
@@ -3516,6 +3675,8 @@ def build_library_es_all(panels):
     n_words, n_refs = build_concordance_es(panels)
     n_dict = build_dictionary_es(panels)
     n_ency = build_encyclopedia_es(panels)
+    build_dictionary_entry_pages_es(panels)
+    build_encyclopedia_entry_pages_es(panels)
     n_mapped, n_places = build_atlas_es(panels)
     build_library_es((n_words, n_refs, n_dict, n_ency, n_mapped, n_places))
     return n_words, n_refs, n_dict, n_ency, n_mapped, n_places
@@ -4453,6 +4614,15 @@ def build_sitemap():
     import subprocess
     pages = sorted(f for f in os.listdir(OUT)
                    if f.endswith(".html") and os.path.isfile(os.path.join(OUT, f)))
+    # ency/ and dict/ hold real, indexable per-entry pages (unlike /v/'s noindex
+    # redirect stubs above) -- they just live one level down, so os.listdir(OUT)
+    # alone never sees them. Walked separately and added with their subdir prefix
+    # so every downstream step (hreflang pairing via string-slicing, lastmod
+    # lookup, the noindex sniff) treats "ency/seir.html" exactly like a root page.
+    for sub in ("ency", "dict"):
+        subdir = os.path.join(OUT, sub)
+        if os.path.isdir(subdir):
+            pages += sorted(f"{sub}/{f}" for f in os.listdir(subdir) if f.endswith(".html"))
 
     # Real dates, one subprocess call. Recent history is plenty: anything older
     # than the window simply omits lastmod, which is better than inventing one.
@@ -4536,6 +4706,8 @@ def main():
     n_words, n_refs = build_concordance(chapters)
     n_dict = build_dictionary()
     n_places, n_people, n_things = build_encyclopedia()
+    build_dictionary_entry_pages()
+    build_encyclopedia_entry_pages()
     n_mapped, n_atlas_places = build_atlas()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_sitemap = build_sitemap()
