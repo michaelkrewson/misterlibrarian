@@ -344,6 +344,23 @@ figcaption, .credit {
 .pair figure { margin: 0; }
 @media (min-width: 640px) { .pair { grid-template-columns: 1fr 1fr; } }
 
+/* A collage of many small photos — the menu-board / drink-lineup shot. Each
+   figure keeps its own caption, unlike .pair which is meant for exactly two. */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin: 26px 0;
+}
+.collage figure { margin: 0; }
+.collage img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: var(--radius); }
+.collage figcaption {
+  margin-top: 5px;
+  font-size: 12.5px;
+  color: var(--muted);
+  text-align: center;
+}
+
 /* A short verdict box: <div class="verdict"><strong>Worth it?</strong> …</div> */
 .verdict {
   margin: 30px 0;
@@ -514,24 +531,24 @@ figcaption, .credit {
 .archive a:hover { text-decoration: underline; }
 .archive .place { color: var(--muted); font-size: 14px; font-style: italic; }
 
-.onhold { list-style: none; margin: 30px 0 0; padding: 0; display: grid; gap: 16px; }
-.onhold li {
+.bookmarklist { list-style: none; margin: 30px 0 0; padding: 0; display: grid; gap: 16px; }
+.bookmarklist li {
   padding: 18px 22px;
   background: var(--paper-2);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.onhold h3 { margin: 0 0 3px; font-size: 19px; font-weight: 400; color: var(--ink); }
-.onhold .place { display: block; color: var(--muted); font-size: 14px; font-style: italic; margin-bottom: 10px; }
-.onhold p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
-.onhold .added {
+.bookmarklist h3 { margin: 0 0 3px; font-size: 19px; font-weight: 400; color: var(--ink); }
+.bookmarklist .place { display: block; color: var(--muted); font-size: 14px; font-style: italic; margin-bottom: 10px; }
+.bookmarklist p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
+.bookmarklist .added {
   display: inline-block;
   margin-top: 12px;
   font: 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
   color: var(--muted);
 }
-.onhold a.visit {
+.bookmarklist a.visit {
   display: inline-block;
   margin-top: 12px;
   margin-left: 14px;
@@ -539,7 +556,33 @@ figcaption, .credit {
   color: var(--terra);
   text-decoration: none;
 }
-.onhold a.visit:hover { text-decoration: underline; }
+.bookmarklist a.visit:hover { text-decoration: underline; }
+
+.bmphotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  margin: 14px 0 4px;
+}
+.bmphotos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+a.directions {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--olive);
+  text-decoration: none;
+  border: 1px solid rgba(163,179,120,.4);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+a.directions:hover { border-color: var(--olive); text-decoration: none; }
+.bookmarklist a.directions { margin-top: 12px; margin-right: 6px; }
 
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 .empty code {

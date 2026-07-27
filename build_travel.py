@@ -112,17 +112,19 @@ RATING_LABELS = {
     0.5: "Avoid",
 }
 
-# --------------------------------------------------------------- on hold ---
+# -------------------------------------------------------------- bookmarked ---
 #
-# A running list of places spotted but not yet eaten at — the library-desk
-# meaning of "on hold": reserved, waiting to be picked up. Not a post (there is
-# no meal to review yet, so no stars), just a running shelf. When a place here
+# A running list of places spotted but not yet eaten at — a page in the book
+# turned down to come back to, not a place put off. Not a post (there is no
+# meal to review yet, so no stars), just a running shelf. When a place here
 # actually gets eaten at, write its real entry in source/travel/ and delete its
 # dict below — the two are meant to be mutually exclusive, not duplicated.
 #
 # Each entry: name, place, why (one or two sentences — what tipped us off),
-# link (the place's own site, optional), added (the date it went on the list).
-ON_HOLD = [
+# link (the place's own site, optional), added (the date it went on the list),
+# and an optional photos list of {img, alt} dicts (img is a filename already
+# processed into travel/img/ — same convention as a post's figures).
+BOOKMARKED = [
     {
         "name": "Chuckie Pies",
         "place": "370 First Street, Lake Oswego, Oregon",
@@ -134,8 +136,29 @@ ON_HOLD = [
                  "the right hour this time."),
         "link": "https://chuckiepies.com",
         "added": dt.date(2026, 7, 26),
+        "photos": [
+            {"img": "chuckie-pies-sign.jpg",
+             "alt": "The Chuckie Pies hanging sign, a gold C-and-fork mark beside the name in gold letters on a black background"},
+            {"img": "chuckie-pies-interior.jpg",
+             "alt": "The dark wood, herringbone-floor dining room at Chuckie Pies, empty tables set for dinner, a please-wait-to-be-seated sign on the host stand"},
+            {"img": "chuckie-pies-awards.jpg",
+             "alt": "A yellow poster on the door reading Chuckie Pies, Voted Best Pizza, beside two award ribbons"},
+        ],
     },
 ]
+
+
+def _maps_link(address):
+    """One URL that works as 'get directions' everywhere: opens the native Maps
+    app on iOS or Android if one's installed, else Google Maps in a browser.
+    No per-platform detection needed — this is Google's own universal format.
+    """
+    return f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(address)}"
+
+
+def _directions_link(address):
+    return (f'<a class="directions" href="{_maps_link(address)}" rel="noopener" '
+            f'target="_blank">📍 Get directions</a>')
 
 
 def _asset_ver(rel):
@@ -199,7 +222,7 @@ def header(active=""):
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Latest</a>
     <a href="index.html#archive">Archive</a>
-    <a href="on-hold.html"{cls('onhold')}>On Hold</a>
+    <a href="bookmarked.html"{cls('bookmarked')}>📑 Bookmarked</a>
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
     <a href="feed.xml" title="Subscribe by RSS">RSS</a>
@@ -209,7 +232,7 @@ def header(active=""):
 
 FOOTER = f"""<footer class="site-foot">
   <p>{SITE_NAME} — {BLURB}</p>
-  <p><a href="index.html">Latest</a> · <a href="on-hold.html">On Hold</a> ·
+  <p><a href="index.html">Latest</a> · <a href="bookmarked.html">Bookmarked</a> ·
   <a href="write.html">Write to the librarian</a> ·
   <a href="about.html">About</a> · <a href="feed.xml">RSS</a></p>
 </footer>"""
@@ -841,45 +864,59 @@ def _prune_stale_draft_previews(current_draft_slugs):
             print(f"  (removed stale draft preview: {fn})")
 
 
-def _on_hold_card(item):
+def _bookmarked_photos(item):
+    photos = item.get("photos") or []
+    if not photos:
+        return ""
+    figs = "\n".join(
+        f'    <img src="img/{html.escape(p["img"], quote=True)}" '
+        f'alt="{html.escape(p["alt"], quote=True)}" loading="lazy"/>'
+        for p in photos)
+    return f'\n  <div class="bmphotos">\n{figs}\n  </div>'
+
+
+def _bookmarked_card(item):
+    directions = _directions_link(item["place"]) if item.get("place") else ""
     link = ""
     if item.get("link"):
         link = (f'\n    <a class="visit" href="{html.escape(item["link"], quote=True)}" '
                 f'rel="noopener">Visit their site →</a>')
+    photos = _bookmarked_photos(item)
     return f"""<li>
     <h3>{html.escape(item['name'])}</h3>
     <span class="place">{html.escape(item['place'])}</span>
-    <p>{html.escape(item['why'])}</p>
-    <span class="added">spotted {item['added'].isoformat()}</span>{link}
+    <p>{html.escape(item['why'])}</p>{photos}
+    <span class="added">spotted {item['added'].isoformat()}</span>
+    {directions}{link}
   </li>"""
 
 
-def build_on_hold():
+def build_bookmarked():
     """A running shelf of places worth going back for, not yet reviewed.
 
-    Deliberately not a post: there's no meal to score yet, so no stars, no hero
-    photo, no verdict box — just the name, the place, and why it caught our eye.
-    Add to ON_HOLD above; when a place actually gets eaten, write its real entry
-    and remove it from here.
+    Deliberately not a post: there's no meal to score yet, so no stars, no
+    verdict box — just the name, the place, why it caught our eye, and
+    whatever photos we already have. Add to BOOKMARKED above; when a place
+    actually gets eaten, write its real entry and remove it from here.
     """
-    if ON_HOLD:
-        items = "\n".join(_on_hold_card(i) for i in
-                           sorted(ON_HOLD, key=lambda i: i["added"], reverse=True))
-        list_html = f'<ul class="onhold">\n{items}\n</ul>'
+    if BOOKMARKED:
+        items = "\n".join(_bookmarked_card(i) for i in
+                           sorted(BOOKMARKED, key=lambda i: i["added"], reverse=True))
+        list_html = f'<ul class="bookmarklist">\n{items}\n</ul>'
     else:
-        list_html = '<p class="empty">Nothing on hold right now.</p>'
+        list_html = '<p class="empty">Nothing bookmarked right now.</p>'
 
     body = f"""<section class="lede">
-  <h1>On Hold</h1>
-  <p>A library term borrowed for the road: a book on hold is reserved, waiting
-  to be picked up. These are the same — places spotted, recommended, or walked
-  past with a window worth a second look, filed here until there's time to
-  actually sit down and eat.</p>
+  <h1>Bookmarked</h1>
+  <p>Places spotted, recommended, or walked past with a window worth a second
+  look — turned down like a page, to come back to. No stars yet, because
+  there's no meal to score. When one of these actually gets eaten, it
+  graduates into a real entry.</p>
 </section>
 {list_html}"""
-    return page(f"On Hold — {SITE_NAME}", body, active="onhold",
+    return page(f"Bookmarked — {SITE_NAME}", body, active="bookmarked",
                 desc="Places worth going back for — spotted but not yet reviewed.",
-                url="on-hold.html")
+                url="bookmarked.html")
 
 
 def build_about():
@@ -908,12 +945,12 @@ def build_about():
   </table>
   <p class="half-note">Half stars exist for the places that sit between two of these.</p>
 
-  <h2 id="onhold">On Hold</h2>
-  <p>A library term, borrowed: a book on hold is reserved, waiting to be picked up.
-  <a href="on-hold.html">This page</a> is the same idea for places — spotted, recommended,
-  or walked past with a window worth a second look — filed there until there's time to
-  actually sit down and eat. No stars yet, because there's no meal to score. Once one of
-  them gets eaten, it graduates into a real entry and comes off the shelf.</p>
+  <h2 id="bookmarked">Bookmarked</h2>
+  <p><a href="bookmarked.html">This page</a> is a page turned down to come back to —
+  places spotted, recommended, or walked past with a window worth a second look, filed
+  there until there's time to actually sit down and eat. No stars yet, because there's
+  no meal to score. Once one of them gets eaten, it graduates into a real entry and
+  comes off the shelf.</p>
 
   <h2>Following along</h2>
   <p>There's an <a href="feed.xml">RSS feed</a> if you'd like new entries to come to you.
@@ -1045,9 +1082,9 @@ def build_sitemap(posts):
     inbound link from somewhere, these pages are effectively invisible.
     """
     newest = posts[0]["date"] if posts else dt.date.today()
-    on_hold_newest = max((i["added"] for i in ON_HOLD), default=newest)
+    bookmarked_newest = max((i["added"] for i in BOOKMARKED), default=newest)
     urls = [(f"{SITE_URL}{BASE}/", newest),
-            (f"{SITE_URL}{BASE}/on-hold.html", on_hold_newest),
+            (f"{SITE_URL}{BASE}/bookmarked.html", bookmarked_newest),
             (f"{SITE_URL}{BASE}/about.html", newest),
             (f"{SITE_URL}{BASE}/write.html", newest)]
     urls += [(f"{SITE_URL}{BASE}/{p['file']}", p["date"]) for p in posts]
@@ -1081,7 +1118,7 @@ def main():
     os.makedirs(os.path.join(OUT_DIR, "img"), exist_ok=True)
 
     write("index.html", build_index(posts))
-    write("on-hold.html", build_on_hold())
+    write("bookmarked.html", build_bookmarked())
     write("about.html", build_about())
     write("write.html", build_write())
     write("thanks.html", build_thanks())
