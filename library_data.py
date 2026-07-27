@@ -85,6 +85,9 @@ DICTIONARY = [
     ("nepios", "nēpios / nēpioi", "νήπιος", "nēpioi", "INFANT, BABE — literally 'not-speaking' (nē-, negative + epos, 'word'), the ordinary Greek word for a small child too young to talk, used figuratively of the untaught or the simple. ⚠ Matthew 11:25 sets it directly against sophoi kai synetoi, 'the wise and the understanding' — Jesus thanks the Father for hiding 'these things' from precisely the people equipped to grasp them and revealing them instead to the ones with no equipment at all. Paul uses the same word for immature believers fed only milk, not solid food (1 Corinthians 3:1-2, not yet on these pages); here the immaturity is not a fault to outgrow but the actual qualification for the revelation.", ("Matthew", 11, 25)),
     ("zygos", "zygos", "ζυγός", "zygos", "YOKE — the wooden crossbar laid across a paired team's necks so two animals pull one load together; by metaphor, in both Greek and the rabbinic idiom of Jesus' own day ('the yoke of the Torah,' 'the yoke of the kingdom'), a body of teaching or obligation TAKEN ON. ⚠ So 'take my yoke' (11:29) pictures not burden alone — every yoke is a burden — but DISCIPLESHIP itself: the word used for a rabbi's teaching, offered here as replacing whatever yoke the hearer already carries. Paul uses it once more of marriage to an unbeliever ('unequally yoked,' 2 Corinthians 6:14, not yet on these pages) — the same image of two pulling one load, mismatched.", ("Matthew", 11, 29)),
     ("kalos", "kalos", "καλός", "kalos", "GOOD — but a specific flavor of good: sound, fine, admirable, working as it should, closer to English 'good-quality' than to the purely moral 'good' of agathos (its near-synonym, also used in this same chapter, 12:35). A tree is kalos when it bears kalos fruit (12:33) because it is doing what a tree is FOR; doing good on the sabbath (12:12) is kalos in the same sense — not a rule kept but a thing rightly done. The word underlies English 'calligraphy' (kalos + graphē, 'beautiful writing').", ("Matthew", 12, 33)),
+    ("kosmos", "kosmos", "κόσμος", "kosmos", "THE WORLD — but originally 'order, arrangement, ornament' (English 'cosmetic' is the same root: making a face orderly and pleasing). By the time of the New Testament it had long since become the standard word for the ordered universe, and by extension humanity spread across it. 'The field is the kosmos' (Matthew 13:38) sets the wheat-and-weeds parable's scope at the whole inhabited world, not one nation or one visible congregation — good and evil growing mixed everywhere a person could be found, with no human authority given the job of sorting them early.", ("Matthew", 13, 38)),
+    ("grammateus", "grammateus", "γραμματεύς", "grammateus", "A SCRIBE — a professional, trained copyist and interpreter of the Torah, expert enough to render legal and religious rulings; the word shares its root with English 'grammar'. Grammateis have opposed Jesus repeatedly in this Gospel as a class. So the scribe of 13:52, 'trained for the kingdom of the heavens,' who brings out treasure both new and old, reads as a pointed reversal — the very kind of expert who has resisted Jesus elsewhere in this book redescribed as an ideal disciple, holding the old Scripture and the new teaching in the same hand rather than defending one against the other.", ("Matthew", 13, 52)),
+    ("tekton", "tektōn", "τέκτων", "tektōn", "A CRAFTSMAN, builder — broader than English 'carpenter' suggests, covering work in wood, stone, or both; the ordinary trade of a small-town builder rather than a narrow specialist. 'Is not this the tektōn's son?' (Matthew 13:55) is the Nazarenes' whole objection compressed into one word — they know exactly what family, what trade, what house he comes from, and that familiarity is presented as the actual obstacle to hearing him.", ("Matthew", 13, 55)),
     ("praus", "praus", "πραΰς", "praus", "MEEK, gentle — the identical word this translation has already met once: 'Happy the MEEK, for they shall inherit the earth' (Matthew 5:5). ⚠ There it named a beatitude to be pursued; here Jesus applies it to himself — 'I am meek and humble in heart' (11:29) — the only two places in this Gospel the word appears, first as a virtue promised a reward and then as a virtue claimed by the one making the promise. Not weakness: Greek writers used the word of a tamed animal or a controlled temper, never a spineless one.", ("Matthew", 11, 29)),
     ("chrestos", "chrēstos", "χρηστός", "chrēstos", "KIND, easy, useful — of a yoke that fits well rather than one that galls; a craftsman's word for well-made, serviceable, GOOD to use. ⚠ Its close relative is a genuine ancient confusion rather than a modern pun: christos ('anointed') and chrēstos were near-homophones in first-century pronunciation, common enough that 'Chrestus' turns up as a variant spelling of 'Christus' in later Roman writing (Suetonius's Life of Claudius). Matthew does not exploit the pun; it is simply there, in the sound of the last word Jesus gives this chapter for his own yoke.", ("Matthew", 11, 30)),
     ("lathra", "lathra", "λάθρᾳ", "lathra", "SECRETLY, quietly, without publicity — an adverb that takes its moral colour entirely from who is using it. It occurs twice in Matthew's opening chapters and nowhere else in his Gospel: Joseph, 'being righteous and unwilling to expose her to disgrace,' resolves to divorce Mary <em>lathra</em> (1:19) — quietly, to shield a woman from a public penalty; and Herod calls the magi <em>lathra</em> (2:7) — secretly, to fix the location of a child he intends to kill. ⚠ One word, two chapters, mercy and murder, and Matthew never comments on the pairing.", ("Matthew", 2, 7)),
@@ -5058,6 +5061,8 @@ XREFS = [
     (("Matthew", 12, 34), ("Matthew", 3, 7), "gennēmata echidnōn, 'brood of vipers' — John the Baptist's insult to the Pharisees and Sadducees at the Jordan, word for word, now spoken by Jesus against the same opponents"),
     (("Matthew", 12, 39), ("Jonah", 1, 3), "the sign of Jonah — the prophet who ran from Nineveh instead of preaching to it becomes, three days in the fish, the one sign this generation is given"),
     (("Matthew", 12, 42), ("1 Kings", 10, 1), "the queen of the south — Sheba's queen, who crossed the earth to hear Solomon's wisdom, set beside a generation with something greater than Solomon standing in front of it"),
+    (("Matthew", 13, 33), ("Genesis", 18, 6), "sata, 'three measures' — the identical rare Greek loanword-measure: Sarah's understatement-then-abundance hospitality there, the kingdom's own disproportionate growth here"),
+    (("Matthew", 13, 55), ("Matthew", 12, 46), "'his mother and his brothers' — left unnamed at 12:46, a promise this translation made to name them; James, Joseph, Simon, and Judas are the payoff, one chapter later"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -5141,6 +5146,8 @@ VIDEO_QUEUE = [
 # drift from what the chapter page actually says. Grow this list as new
 # chapters land — it's fine for it to lag behind the newest chapter.
 VERSE_OF_DAY = [
+    ["Matthew", 13, 44, "“The kingdom of the heavens is like treasure hidden in a field, which a man found and hid; and in his joy he goes and sells all that he has, and buys that field.” No hesitation named — only joy."],
+    ["Matthew", 13, 16, "“But happy are your eyes, because they see, and your ears, because they hear.” Set right after the hardest saying in the chapter — a real blessing on ordinary attention."],
     ["Matthew", 12, 20, "“A bruised reed he will not break, and a smoldering wick he will not quench.” Isaiah's servant, cited over Jesus at the height of his popularity — gentleness as the shape of power, not its absence."],
     ["Matthew", 12, 50, "“Whoever does the will of my Father who is in the heavens, that person is my brother and sister and mother.” Family redrawn around one criterion, spoken with a hand stretched toward ordinary disciples."],
     ["Matthew", 8, 3, "“I am willing; be cleansed.” The leper doubted the will, not the power — and the answer picks up his own word and drops the condition."],
@@ -9019,6 +9026,24 @@ DICTIONARY_ES = {
         "sinónimo, usado en este mismo capítulo, 12:35). Un árbol es <em>kalos</em> cuando da fruto "
         "<em>kalos</em> (12:33) porque hace aquello para lo que existe; hacer el bien en sábado (12:12) es "
         "<em>kalos</em> en el mismo sentido — no una regla cumplida, sino algo hecho como corresponde."),
+    "kosmos": ("mundo",
+        "EL MUNDO — pero originalmente «orden, arreglo, adorno» (la misma raíz que «cosmético»: hacer un "
+        "rostro ordenado y agradable). Para el tiempo del Nuevo Testamento ya era la palabra estándar para "
+        "el universo ordenado y, por extensión, la humanidad esparcida en él. «El campo es el kosmos» "
+        "(Mateo 13:38) fija el alcance de la parábola de la cizaña en toda la tierra habitada, no una "
+        "nación ni una congregación visible — el bien y el mal crecen mezclados en todas partes, sin que "
+        "ninguna autoridad humana tenga la tarea de separarlos antes de tiempo."),
+    "grammateus": ("escriba",
+        "UN ESCRIBA — copista e intérprete profesional de la Torá, con formación suficiente para emitir "
+        "dictámenes legales y religiosos. Los escribas se han opuesto a Jesús repetidamente en este "
+        "Evangelio como clase. Así que el escriba de 13:52, «discipulado para el reino de los cielos», "
+        "que saca tesoro nuevo y viejo, se lee como una inversión deliberada — el mismo tipo de experto "
+        "que ha resistido a Jesús en otras partes de este libro, redescrito como discípulo ideal."),
+    "tekton": ("carpintero",
+        "UN ARTESANO, constructor — más amplio que «carpintero», cubre el trabajo en madera, piedra, o "
+        "ambos; el oficio ordinario de un constructor de pueblo pequeño, no un especialista estrecho. "
+        "«¿No es este el hijo del tektōn?» (Mateo 13:55) comprime toda la objeción de los de Nazaret en "
+        "una palabra — saben exactamente de qué familia, qué oficio, qué casa viene."),
     "ovnayim": ("las dos piedras",
         "LAS DOS PIEDRAS — el torno del alfarero, y una de las palabras más informativas del hebreo "
         "bíblico, porque es un DUAL: no «rueda», sino el dual de <em>even</em>, «piedra». La palabra es una "
@@ -9600,6 +9625,35 @@ CHAPTER_ART = {
                 "escena antigua se sienta real para su propio público.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Exhortation_to_the_Apostles_(Recommandation_aux_ap%C3%B4tres)_-_James_Tissot.jpg",
+    )],
+    "mat13": [dict(
+        file="mat13.jpg",
+        title="Landscape with the Parable of the Sower",
+        title_es="Paisaje con la parábola del sembrador",
+        artist="Pieter Brueghel the Elder",
+        year="1557",
+        location="San Diego Museum of Art",
+        location_es="San Diego Museum of Art",
+        alt="A vast panoramic river-valley landscape in the Flemish 'world landscape' style, dominated by "
+            "jagged blue mountains, a fortified town on the far bank, and small boats on the water. In the "
+            "shadowed lower-left foreground, small and easy to miss against the scenery, a lone sower in "
+            "work clothes strides across a furrowed field, one hand reaching into a basket of seed slung "
+            "at his hip.",
+        note="&#9888; The sower is almost the smallest figure in his own painting &mdash; Bruegel gives the "
+             "parable perhaps five percent of the canvas and the sweeping, invented landscape the rest, in "
+             "the era's 'world landscape' convention where the sacred subject is a pretext for the view "
+             "rather than its point. That imbalance is, unintentionally or not, a fair picture of how easy "
+             "the sower is to miss on a first read of the chapter he opens &mdash; scattered seed, most of "
+             "it lost before the eye even finds the one who threw it.",
+        note_es="&#9888; El sembrador es casi la figura más pequeña de su propio cuadro &mdash; Bruegel le "
+                "da a la parábola quizás un cinco por ciento del lienzo, y el resto al paisaje inventado y "
+                "extenso, según la convención de la época del 'paisaje universal', donde el tema sagrado es "
+                "un pretexto para la vista y no su punto. Ese desequilibrio retrata, sin quererlo o no, lo "
+                "fácil que es pasar por alto al sembrador en una primera lectura del capítulo que él abre "
+                "&mdash; semilla esparcida, casi toda perdida antes de que el ojo siquiera encuentre a quien "
+                "la lanzó.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_d._%C3%84._030.jpg",
     )],
     "mat12": [dict(
         file="mat12.jpg",
