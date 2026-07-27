@@ -226,6 +226,7 @@ def header(active=""):
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
     <a href="feed.xml" title="Subscribe by RSS">RSS</a>
+    <span class="share-widget" id="shareWidget"></span>
   </nav>
 </header>"""
 
@@ -287,7 +288,6 @@ def page(title, body, active="", desc="", url="", image="", noindex=False):
 <body>
 <div class="wrap">
 {header(active)}
-<div class="share-widget" id="shareWidget"></div>
 <script src="share.js?v={share_v}" defer></script>
 {body}
 {FOOTER}
