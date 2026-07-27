@@ -112,6 +112,31 @@ RATING_LABELS = {
     0.5: "Avoid",
 }
 
+# --------------------------------------------------------------- on hold ---
+#
+# A running list of places spotted but not yet eaten at — the library-desk
+# meaning of "on hold": reserved, waiting to be picked up. Not a post (there is
+# no meal to review yet, so no stars), just a running shelf. When a place here
+# actually gets eaten at, write its real entry in source/travel/ and delete its
+# dict below — the two are meant to be mutually exclusive, not duplicated.
+#
+# Each entry: name, place, why (one or two sentences — what tipped us off),
+# link (the place's own site, optional), added (the date it went on the list).
+ON_HOLD = [
+    {
+        "name": "Chuckie Pies",
+        "place": "370 First Street, Lake Oswego, Oregon",
+        "why": ("Neapolitan-style pies, walked past midday on a Sunday food crawl — "
+                 "it doesn't open until 4pm, so that was that. The window had two "
+                 "things taped to it worth remembering: The Oregonian's 2026 Reader's "
+                 "Choice, voted a top-3 pizza spot in Portland, and a local ribbon for "
+                 "Best Pizza from the Lake Oswego Review. Going back on purpose, at "
+                 "the right hour this time."),
+        "link": "https://chuckiepies.com",
+        "added": dt.date(2026, 7, 26),
+    },
+]
+
 
 def _asset_ver(rel):
     """Short content hash of a static asset, appended to its URL so a CSS edit is
@@ -174,6 +199,7 @@ def header(active=""):
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Latest</a>
     <a href="index.html#archive">Archive</a>
+    <a href="on-hold.html"{cls('onhold')}>On Hold</a>
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
     <a href="feed.xml" title="Subscribe by RSS">RSS</a>
@@ -183,7 +209,8 @@ def header(active=""):
 
 FOOTER = f"""<footer class="site-foot">
   <p>{SITE_NAME} — {BLURB}</p>
-  <p><a href="index.html">Latest</a> · <a href="write.html">Write to the librarian</a> ·
+  <p><a href="index.html">Latest</a> · <a href="on-hold.html">On Hold</a> ·
+  <a href="write.html">Write to the librarian</a> ·
   <a href="about.html">About</a> · <a href="feed.xml">RSS</a></p>
 </footer>"""
 
@@ -814,6 +841,47 @@ def _prune_stale_draft_previews(current_draft_slugs):
             print(f"  (removed stale draft preview: {fn})")
 
 
+def _on_hold_card(item):
+    link = ""
+    if item.get("link"):
+        link = (f'\n    <a class="visit" href="{html.escape(item["link"], quote=True)}" '
+                f'rel="noopener">Visit their site →</a>')
+    return f"""<li>
+    <h3>{html.escape(item['name'])}</h3>
+    <span class="place">{html.escape(item['place'])}</span>
+    <p>{html.escape(item['why'])}</p>
+    <span class="added">spotted {item['added'].isoformat()}</span>{link}
+  </li>"""
+
+
+def build_on_hold():
+    """A running shelf of places worth going back for, not yet reviewed.
+
+    Deliberately not a post: there's no meal to score yet, so no stars, no hero
+    photo, no verdict box — just the name, the place, and why it caught our eye.
+    Add to ON_HOLD above; when a place actually gets eaten, write its real entry
+    and remove it from here.
+    """
+    if ON_HOLD:
+        items = "\n".join(_on_hold_card(i) for i in
+                           sorted(ON_HOLD, key=lambda i: i["added"], reverse=True))
+        list_html = f'<ul class="onhold">\n{items}\n</ul>'
+    else:
+        list_html = '<p class="empty">Nothing on hold right now.</p>'
+
+    body = f"""<section class="lede">
+  <h1>On Hold</h1>
+  <p>A library term borrowed for the road: a book on hold is reserved, waiting
+  to be picked up. These are the same — places spotted, recommended, or walked
+  past with a window worth a second look, filed here until there's time to
+  actually sit down and eat.</p>
+</section>
+{list_html}"""
+    return page(f"On Hold — {SITE_NAME}", body, active="onhold",
+                desc="Places worth going back for — spotted but not yet reviewed.",
+                url="on-hold.html")
+
+
 def build_about():
     body = f"""<section class="lede">
   <h1>About</h1>
@@ -839,6 +907,13 @@ def build_about():
     {_rating_key()}
   </table>
   <p class="half-note">Half stars exist for the places that sit between two of these.</p>
+
+  <h2 id="onhold">On Hold</h2>
+  <p>A library term, borrowed: a book on hold is reserved, waiting to be picked up.
+  <a href="on-hold.html">This page</a> is the same idea for places — spotted, recommended,
+  or walked past with a window worth a second look — filed there until there's time to
+  actually sit down and eat. No stars yet, because there's no meal to score. Once one of
+  them gets eaten, it graduates into a real entry and comes off the shelf.</p>
 
   <h2>Following along</h2>
   <p>There's an <a href="feed.xml">RSS feed</a> if you'd like new entries to come to you.
@@ -970,7 +1045,9 @@ def build_sitemap(posts):
     inbound link from somewhere, these pages are effectively invisible.
     """
     newest = posts[0]["date"] if posts else dt.date.today()
+    on_hold_newest = max((i["added"] for i in ON_HOLD), default=newest)
     urls = [(f"{SITE_URL}{BASE}/", newest),
+            (f"{SITE_URL}{BASE}/on-hold.html", on_hold_newest),
             (f"{SITE_URL}{BASE}/about.html", newest),
             (f"{SITE_URL}{BASE}/write.html", newest)]
     urls += [(f"{SITE_URL}{BASE}/{p['file']}", p["date"]) for p in posts]
@@ -1004,6 +1081,7 @@ def main():
     os.makedirs(os.path.join(OUT_DIR, "img"), exist_ok=True)
 
     write("index.html", build_index(posts))
+    write("on-hold.html", build_on_hold())
     write("about.html", build_about())
     write("write.html", build_write())
     write("thanks.html", build_thanks())
