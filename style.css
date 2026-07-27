@@ -484,7 +484,12 @@ body.hide-heb .grk{display:none}
 .route-blurb{font-size:12.5px;color:var(--muted);line-height:1.65;max-width:76ch;margin:0 0 12px}
 .route-map{width:100%;max-width:880px;margin:0 auto 12px}
 .route-map svg{width:100%;height:auto;display:block;border:1px solid var(--border);
-  border-radius:10px;background:#070d18}
+  border-radius:10px;background:linear-gradient(180deg,#211a10,#191408)}
+.route-realmap-h{font-size:10.5px;font-weight:800;color:var(--gold);letter-spacing:0.12em;
+  text-transform:uppercase;margin:14px 0 6px;text-align:center}
+.route-realmap-h span{color:var(--dim);font-weight:600;text-transform:none;letter-spacing:0.02em;
+  font-size:11px;margin-left:6px}
+.route-realmap{max-width:880px;margin:0 auto 4px}
 .rg-grid{stroke:rgba(255,255,255,0.05);stroke-width:1}
 .rg-tick{fill:var(--dim);font-size:9px;font-family:ui-monospace,SFMono-Regular,monospace}
 .rg-under{fill:none;stroke:var(--gold);stroke-width:6;stroke-opacity:0.16;stroke-linecap:round;stroke-linejoin:round}
@@ -504,7 +509,7 @@ body.hide-heb .grk{display:none}
 /* --- territory maps (regions with a visible boundary) --- */
 .region-map{width:100%;max-width:880px;margin:0 auto 10px}
 .region-map svg{width:100%;height:auto;display:block;border:1px solid var(--border);
-  border-radius:10px;background:linear-gradient(180deg,#0b1522,#0a1119)}
+  border-radius:10px;background:linear-gradient(180deg,#211a10,#191408)}
 .reg-coast{fill:none;stroke:var(--blue);stroke-width:1.6;stroke-opacity:0.75}
 .reg-water{fill:var(--blue);fill-opacity:0.28;stroke:var(--blue);stroke-width:1;stroke-opacity:0.65}
 .reg-river{fill:none;stroke:var(--blue);stroke-width:1.4;stroke-opacity:0.7}
@@ -538,7 +543,7 @@ body.hide-heb .grk{display:none}
   text-transform:uppercase;margin-bottom:5px;text-align:center}
 .route-inset-h span{color:var(--dim);font-weight:600}
 .route-inset svg{width:100%;height:auto;display:block;border:1px solid var(--border);
-  border-radius:10px;background:#070d18}
+  border-radius:10px;background:linear-gradient(180deg,#211a10,#191408)}
 .rg-jordan{fill:none;stroke:var(--blue);stroke-width:2;stroke-opacity:0.5;stroke-linejoin:round}
 .rg-idot{fill:var(--gold);stroke:#0b1929;stroke-width:1}
 .rg-ilbl{fill:var(--text);font-size:11px;font-weight:600}
