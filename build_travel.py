@@ -269,6 +269,7 @@ def _og(title, desc, url="", image=""):
 
 def page(title, body, active="", desc="", url="", image="", noindex=False):
     css_v = _asset_ver("style.css")
+    share_v = _asset_ver("share.js")
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
     # noindex is for pages that exist only as a destination (the post-submit
     # thank-you); they're not content and shouldn't turn up in a search result.
@@ -286,6 +287,8 @@ def page(title, body, active="", desc="", url="", image="", noindex=False):
 <body>
 <div class="wrap">
 {header(active)}
+<div class="share-widget" id="shareWidget"></div>
+<script src="share.js?v={share_v}" defer></script>
 {body}
 {FOOTER}
 </div>
