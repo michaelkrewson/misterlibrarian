@@ -410,7 +410,7 @@ def header(active="", lang="en"):
     # separate floating line below it — that read as disjointed). Views moved to
     # the footer (see _FOOT_VIEWS_LINE) -- it was competing for room in this row
     # and it's the kind of thing a reader checks at the end, not the top, anyway.
-    share_item = '<span class="share-widget" id="shareWidget"></span>'
+    share_item = '<span class="share-widget"></span>'
     if lang == "es":
         # Spanish locale header. The nav links ONLY to pages that exist in Spanish
         # (so a Spanish-only reader is never dumped into English); it grows as the
@@ -436,6 +436,20 @@ def header(active="", lang="en"):
   </a>
   <div class="rule"></div>
   <div class="tag">Una nueva traducción de la Biblia desde el hebreo y el griego</div>
+  <details class="mobmenu">
+    <summary>\U00002630 Menú</summary>
+    <div class="mobmenu-panel">
+      <a href="es.html"{cls('home')}>Inicio</a>
+      <a href="biblioteca.html"{cls('biblioteca')}>Biblioteca</a>
+      <div class="mobmenu-sep"></div>
+      <a href="contact.es.html">\U00002709\U0000FE0F Preguntar</a>
+      <div class="mobmenu-sep"></div>
+      <a href="index.html">English</a>
+      <a href="es.html" class="cur">Español</a>
+      <div class="mobmenu-sep"></div>
+      <span class="share-widget"></span>
+    </div>
+  </details>
   <nav class="topnav">
     <a href="es.html"{cls('home')}>Inicio</a>
     <a href="biblioteca.html"{cls('biblioteca')}>Biblioteca</a>
@@ -471,6 +485,25 @@ def header(active="", lang="en"):
   </a>
   <div class="rule"></div>
   <div class="tag">{TAGLINE}</div>
+  <details class="mobmenu">
+    <summary>\U00002630 Menu</summary>
+    <div class="mobmenu-panel">
+      <a href="index.html"{cls('home')}>Home</a>
+      <a href="toc.html"{cls('toc')}>Table of Contents</a>
+      <a href="reading.html"{cls('reading')}>📗 My Reading</a>
+      <a href="library.html"{cls('library')}>📚 Library</a>
+      <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
+      <a href="about.html"{cls('about')}>About</a>
+      <div class="mobmenu-sep"></div>
+      <a href="contact.html">✉️ Ask a Question</a>
+      <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
+      <div class="mobmenu-sep"></div>
+      <a href="index.html" class="cur">English</a>
+      <a href="es.html">Español</a>
+      <div class="mobmenu-sep"></div>
+      <span class="share-widget"></span>
+    </div>
+  </details>
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Home</a>
     <a href="toc.html"{cls('toc')}>Table of Contents</a>

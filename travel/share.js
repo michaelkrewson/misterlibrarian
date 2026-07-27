@@ -79,6 +79,8 @@ function _shareInit(root){
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-  var root = document.getElementById("shareWidget");
-  if (root) _shareInit(root);
+  // querySelectorAll (not a single getElementById) because the mobile nav menu
+  // duplicates this widget alongside the desktop nav's copy -- every ".share-widget"
+  // container on the page gets its own independent button+toast.
+  document.querySelectorAll(".share-widget").forEach(function(root){ _shareInit(root); });
 });

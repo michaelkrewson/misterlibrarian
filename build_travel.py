@@ -219,6 +219,19 @@ def header(active=""):
   </form>
   <div class="rule"></div>
   <div class="tag">{TAGLINE}</div>
+  <details class="mobmenu">
+    <summary>\U00002630 Menu</summary>
+    <div class="mobmenu-panel">
+      <a href="index.html"{cls('home')}>Latest</a>
+      <a href="index.html#archive">Archive</a>
+      <a href="bookmarked.html"{cls('bookmarked')}>📑 Bookmarked</a>
+      <a href="write.html"{cls('write')}>✉️ Write</a>
+      <a href="about.html"{cls('about')}>About</a>
+      <a href="feed.xml">RSS</a>
+      <div class="mobmenu-sep"></div>
+      <span class="share-widget"></span>
+    </div>
+  </details>
   <nav class="topnav">
     <a href="index.html"{cls('home')}>Latest</a>
     <a href="index.html#archive">Archive</a>
@@ -226,7 +239,7 @@ def header(active=""):
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
     <a href="feed.xml" title="Subscribe by RSS">RSS</a>
-    <span class="share-widget" id="shareWidget"></span>
+    <span class="share-widget"></span>
   </nav>
 </header>"""
 
