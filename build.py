@@ -594,19 +594,28 @@ def _stats_box():
 </script>"""
 
 
-def _og_tags(title, desc, url="", image=""):
+def _og_tags(title, desc, url="", image="", og_type=None):
     """Open Graph + Twitter-card meta so a shared link unfurls with a title,
     description and image. canonical + og:url are emitted ONLY when the page's
     own url is given — a wrong canonical (defaulting to the homepage) is worse
-    for SEO than none, so pages that don't pass a url simply omit it."""
+    for SEO than none, so pages that don't pass a url simply omit it.
+
+    og_type defaults to "article" whenever a url is given (chapter/dict/ency/
+    atlas/ask-post pages really are articles) and "website" otherwise -- but a
+    caller can override it explicitly. That matters once url= started being
+    passed just to fix a missing canonical (2026-07-28): the homepage, TOC,
+    dictionary/encyclopedia/concordance/atlas INDEXES, and similar hub pages
+    now have canonicals but are not articles, so they pass og_type="website"
+    to keep the social-preview type honest."""
     img = image or OG_IMAGE
     d = desc or ("A fresh translation of the Bible from the Hebrew and Greek, "
                  "verse by verse.")
     t = html.escape(title, quote=True)
     de = html.escape(d, quote=True)
+    ogt = og_type or ("article" if url else "website")
     tags = [
         f'<meta property="og:site_name" content="Mister Translation"/>',
-        f'<meta property="og:type" content="{"article" if url else "website"}"/>',
+        f'<meta property="og:type" content="{ogt}"/>',
         f'<meta property="og:title" content="{t}"/>',
         f'<meta property="og:description" content="{de}"/>',
         f'<meta property="og:image" content="{img}"/>',
@@ -661,9 +670,9 @@ document.addEventListener("DOMContentLoaded", function(){{
 </script>"""
 
 
-def page(title, body, active="", desc="", url="", image="", lang="en", base=""):
+def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
-    og = _og_tags(title, desc, url, image)
+    og = _og_tags(title, desc, url, image, og_type)
     # `base` is only passed by pages that live inside a subdirectory (ency/, dict/) --
     # it lets every existing root-relative href in header()/FOOTER/body (style.css,
     # img/..., encyclopedia.html#slug, ...) resolve correctly without rewriting a
@@ -1118,7 +1127,8 @@ translation, it reflects this project's actual renderings: look up <em>vault</em
 {''.join(sections)}"""
     out = page(f"Concordance — {SITE_NAME}", body, active="library",
                desc="Auto-generated concordance of the MisterLibrarian translation — every significant "
-                    "word, every verse, rebuilt as each chapter is added.")
+                    "word, every verse, rebuilt as each chapter is added.", url="concordance.html",
+               og_type="website")
     open(os.path.join(OUT, "concordance.html"), "w", encoding="utf-8").write(out)
     return len(words), total_refs
 
@@ -1163,7 +1173,7 @@ transliteration, gloss, and a link back to the chapter that first discussed it.<
 </div>"""
     out = page(f"Dictionary — {SITE_NAME}", body, active="library",
                desc="A growing dictionary of the Hebrew terms behind the MisterLibrarian translation, "
-                    "added chapter by chapter.")
+                    "added chapter by chapter.", url="dictionary.html", og_type="website")
     open(os.path.join(OUT, "dictionary.html"), "w", encoding="utf-8").write(out)
     return len(entries)
 
@@ -1342,7 +1352,8 @@ and geography footage from Expedition Bible.</p>
 {queue_section}"""
     out = page(f"Encyclopedia — {SITE_NAME}", body, active="library",
                desc="People and places of the MisterLibrarian translation — every entry verse-linked, "
-                    "with embedded archaeology videos credited to Expedition Bible.")
+                    "with embedded archaeology videos credited to Expedition Bible.", url="encyclopedia.html",
+               og_type="website")
     open(os.path.join(OUT, "encyclopedia.html"), "w", encoding="utf-8").write(out)
     return len(places), len(people), len(things)
 
@@ -1994,7 +2005,8 @@ leads with its narrative maps before the alphabetical index at the back.</p>
 {''.join(sections)}"""
     out = page(f"Atlas — {SITE_NAME}", body, active="library",
                desc="An atlas of the MisterLibrarian Bible Project — the big journeys mapped in full, "
-                    "every named place in an A-Z gazetteer, and a chapter-by-chapter browse.")
+                    "every named place in an A-Z gazetteer, and a chapter-by-chapter browse.", url="atlas.html",
+               og_type="website")
     open(os.path.join(OUT, "atlas.html"), "w", encoding="utf-8").write(out)
     return n_mapped, len(places)
 
@@ -2097,7 +2109,8 @@ chapter is translated, so the library is always exactly as deep as the translati
 </div>"""
     out = page(f"Library — {SITE_NAME}", body, active="library",
                desc="The reference room of the MisterLibrarian Bible Project: concordance, dictionary, "
-                    "encyclopedia, and cross-references — all growing with the translation.")
+                    "encyclopedia, and cross-references — all growing with the translation.", url="library.html",
+               og_type="website")
     open(os.path.join(OUT, "library.html"), "w", encoding="utf-8").write(out)
 
 
@@ -2822,7 +2835,8 @@ still ahead.</p>
 </div>"""
     out = page(f"Table of Contents — {SITE_NAME}", body, active="toc",
                desc="Progress tracker for the MisterLibrarian Bible Project: every published chapter of "
-                    "the fresh-from-the-Hebrew translation, and everything still ahead.")
+                    "the fresh-from-the-Hebrew translation, and everything still ahead.", url="toc.html",
+               og_type="website")
     open(os.path.join(OUT, "toc.html"), "w", encoding="utf-8").write(out)
 
 
@@ -2924,7 +2938,8 @@ check a chapter off directly from its own page, next to the Hide Hebrew toggle.)
 </script>"""
     out = page(f"My Reading — {SITE_NAME}", body, active="reading",
                desc="Track your own progress through The MisterLibrarian Bible Project, chapter by "
-                    "chapter — kept privately in your browser, no account needed.")
+                    "chapter — kept privately in your browser, no account needed.", url="reading.html",
+               og_type="website")
     open(os.path.join(OUT, "reading.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3041,7 +3056,8 @@ var MTLIB_CHAPTERS = {ch_json};
 </script>"""
     out = page(SITE_NAME, body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
-                    "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.")
+                    "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.",
+               url="index.html", og_type="website")
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3088,7 +3104,8 @@ def build_about():
 </div>"""
     out = page(f"About — {SITE_NAME}", body, active="about",
                desc="How the MisterLibrarian Bible Project works: translated from the Masoretic Hebrew, "
-                    "essentially literal in a modern register, compared against seven landmark versions.")
+                    "essentially literal in a modern register, compared against seven landmark versions.",
+               url="about.html", og_type="website")
     open(os.path.join(OUT, "about.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3251,7 +3268,7 @@ page</strong> — updated as the method takes shape.</p>
                     "Bible Project: what the Hebrew Bible is and how it is arranged, the Masoretic source text "
                     "and its scribal apparatus, the witnesses the notes weigh (the Dead Sea Scrolls, the "
                     "Septuagint, the Samaritan Pentateuch, the Targums), how we know the text is reliable, and "
-                    "why the translation renders the divine Name as Jehovah.")
+                    "why the translation renders the divine Name as Jehovah.", url="old-testament.html")
     open(os.path.join(OUT, "old-testament.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3406,7 +3423,7 @@ roughly 5,800 Greek manuscripts is actually weighed, and what carries over from 
                desc="Introducing the New Testament (the Greek Scriptures) in The MisterLibrarian Bible "
                     "Project: the critical Greek text and manuscript apparatus behind the translation "
                     "(Vaticanus, Sinaiticus, the early papyri P52/P66/P75/P46), how thousands of manuscripts "
-                    "are weighed, and what carries over from the Hebrew.")
+                    "are weighed, and what carries over from the Hebrew.", url="new-testament.html")
     open(os.path.join(OUT, "new-testament.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3459,7 +3476,8 @@ def build_ask_enoch():
 </div>"""
     out = page(f"Dear Mr. Librarian: the Book of Enoch — {SITE_NAME}", body, active="ask",
                desc="Why the Book of Enoch isn't part of this Bible translation: the Masoretic source "
-                    "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.")
+                    "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.",
+               url="ask-enoch.html")
     open(os.path.join(OUT, "ask-enoch.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3587,7 +3605,7 @@ def build_ask_newton():
                desc="Isaac Newton wrote more on the Bible than on physics. His Observations on Daniel and "
                     "Revelation, his textual criticism of the Johannine Comma (1 John 5:7), and his biblical "
                     "chronology — how they fit The MisterLibrarian Bible Project, his private anti-Trinitarianism "
-                    "handled honestly, and where to read the public-domain works.")
+                    "handled honestly, and where to read the public-domain works.", url="ask-newton.html")
     open(os.path.join(OUT, "ask-newton.html"), "w", encoding="utf-8").write(out)
 
 
@@ -3797,7 +3815,8 @@ así que nunca se queda atrás: es la única página de esta biblioteca que est�
 <div class="panel alpha">{jump}</div>
 {"".join(sections)}"""
     out = page(f"Concordancia — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
-               desc="Concordancia completa de la traducción española, generada del texto mismo.")
+               desc="Concordancia completa de la traducción española, generada del texto mismo.",
+               url="concordancia.html", og_type="website")
     open(os.path.join(OUT, "concordancia.html"), "w", encoding="utf-8").write(out)
     return len(words), total_refs
 
@@ -3848,7 +3867,8 @@ término para ver la entrada completa.</p>
 </div>
 <div class="panel eilist">{"".join(items)}</div>"""
     out = page(f"Diccionario — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
-               desc="Diccionario hebreo y griego de la traducción, en español.")
+               desc="Diccionario hebreo y griego de la traducción, en español.", url="diccionario.html",
+               og_type="website")
     open(os.path.join(OUT, "diccionario.html"), "w", encoding="utf-8").write(out)
     return len(items)
 
@@ -3916,7 +3936,8 @@ nombre para ver la entrada completa.</p>
 </div>
 {"".join(secs)}"""
     out = page(f"Enciclopedia — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
-               desc="Personas, lugares y oficios de la traducción, en español.")
+               desc="Personas, lugares y oficios de la traducción, en español.", url="enciclopedia.html",
+               og_type="website")
     open(os.path.join(OUT, "enciclopedia.html"), "w", encoding="utf-8").write(out)
     return total
 
@@ -4029,7 +4050,8 @@ edición inglesa; el texto es español. Haz clic en un lugar para ver la entrada
 </div>
 <div class="atlas-items">{"".join(rows)}</div>"""
     out = page(f"Atlas — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
-               desc="Atlas de los lugares de la traducción, en español.")
+               desc="Atlas de los lugares de la traducción, en español.", url="atlas-es.html",
+               og_type="website")
     open(os.path.join(OUT, "atlas-es.html"), "w", encoding="utf-8").write(out)
     return mapped, len(places)
 
@@ -4094,7 +4116,7 @@ siempre exactamente tan honda como la traducción misma.</p>
 </div>"""
     out = page(f"La Biblioteca — {SITE_NAME_ES}", body, active="biblioteca", lang="es",
                desc="La sala de consulta de la edición española: concordancia, diccionario, "
-                    "enciclopedia y atlas.")
+                    "enciclopedia y atlas.", url="biblioteca.html", og_type="website")
     open(os.path.join(OUT, "biblioteca.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4242,7 +4264,7 @@ exactly how this series grows.</p>
 </div>"""
     out = page(f"Dear Mr. Librarian — {SITE_NAME}", body, active="ask",
                desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
-                    "compared, and left for you to weigh.")
+                    "compared, and left for you to weigh.", url="ask.html", og_type="website")
     open(os.path.join(OUT, "ask.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4508,7 +4530,7 @@ def build_ask_jesus_god():
                desc="John 1:1 and the deity of Christ: the Greek grammar of the missing article (Colwell, "
                     "Harner), the three readings, 'firstborn of all creation,' the Angel of Jehovah and Michael "
                     "the archangel, the earliest manuscripts, and the whole case on both sides — laid out, not "
-                    "settled.")
+                    "settled.", url="ask-jesus-god.html")
     open(os.path.join(OUT, "ask-jesus-god.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4626,7 +4648,7 @@ def build_ask_jehovah():
     out = page(f"Dear Mr. Librarian: why “Jehovah”? — {SITE_NAME}", body, active="ask",
                desc="The divine name in this translation: the Tetragrammaton (YHWH), why nearly every Bible hides "
                     "it behind 'the LORD,' the difference between 'Yahweh' and 'Jehovah,' and why this project "
-                    "restores the traditional English form 'Jehovah.'")
+                    "restores the traditional English form 'Jehovah.'", url="ask-jehovah.html")
     open(os.path.join(OUT, "ask-jehovah.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4792,7 +4814,7 @@ questions are exactly how that series grows.</p>
 </div>"""
     out = page(f"Ask a question — {SITE_NAME}", body, active="contact",
                desc="Send Mr. Librarian a question about the translation, a verse, or the project — "
-                    "good questions become Dear Mr. Librarian posts.")
+                    "good questions become Dear Mr. Librarian posts.", url="contact.html", og_type="website")
     open(os.path.join(OUT, "contact.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4807,7 +4829,7 @@ def build_thanks():
   published so far.</p>
 </div>"""
     out = page(f"Question received — {SITE_NAME}", body,
-               desc="Your question is on Mr. Librarian's desk.")
+               desc="Your question is on Mr. Librarian's desk.", url="thanks.html", og_type="website")
     open(os.path.join(OUT, "thanks.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4857,7 +4879,8 @@ def build_thanks_es():
   capítulo en la <a href="es.html">página principal</a>.</p>
 </div>"""
     out = page("Pregunta recibida — La Traducción Mister", body, lang="es",
-               desc="Tu pregunta está en el escritorio de Mr. Librarian.")
+               desc="Tu pregunta está en el escritorio de Mr. Librarian.", url="thanks.es.html",
+               og_type="website")
     open(os.path.join(OUT, "thanks.es.html"), "w", encoding="utf-8").write(out)
 
 
@@ -4990,7 +5013,7 @@ applies to Herod, Pilate, and "the fifteenth year of Tiberius."</p>
     out = page(f"The Chronology — {SITE_NAME}", body, active="chronology",
                desc="Where you are in time: the Bible's own year-count from Adam, the traditional "
                     "Ussher BC dates, and what archaeology can and cannot date — one honest timeline, "
-                    "growing chapter by chapter.")
+                    "growing chapter by chapter.", url="chronology.html")
     open(os.path.join(OUT, "chronology.html"), "w", encoding="utf-8").write(out)
 
 
