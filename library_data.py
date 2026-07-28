@@ -80,7 +80,7 @@ DICTIONARY = [
     ("splanchnizomai", "splanchnizomai", "σπλαγχνίζομαι", "splanchnizomai", "TO HAVE COMPASSION, at the gut — built on splanchna, the inward organs (English 'splanchnic' descends from it), so the verb is not sympathy observed from a distance but something felt in the body. Matthew 9:36 is its first use in this Gospel: Jesus sees the crowds, 'harassed and thrown down like sheep without a shepherd,' and is moved AT THE INSIDES. ⚠ It recurs at moments of real need — before feeding the five thousand (14:14) and the four thousand (15:32), for two blind men (20:34), never as a mere narrative aside.", ("Matthew", 9, 36)),
     ("sozo", "sōzō", "σῴζω", "sōzō", "TO SAVE — and, in the same breath, TO HEAL; Greek does not force a choice between the two senses the way English does. It is the verb of Jesus' own name, unfolded at his naming: 'you shall call his name Jesus, for he will SAVE (sōsei) his people from their sins' (Matthew 1:21). Matthew 9 puts the same verb in three mouths in three verses over the bleeding woman — her own hope ('I will be sozō,' 9:21), Jesus' verdict ('your faith has sesōken you,' 9:22), and the narrator's confirmation ('the woman was esōthē,' 9:22) — so a chapter about physical healing keeps sounding, in its own vocabulary, exactly like the larger promise the name itself made.", ("Matthew", 9, 21)),
     ("eirene", "eirēnē", "εἰρήνη", "eirēnē", "PEACE — and, in Matthew 10, something almost sent by hand: a disciple's spoken peace 'comes upon' a worthy house or, finding none, 'returns' to the one who spoke it (10:13), as if the blessing were a physical thing that cannot simply vanish unclaimed. ⚠ The same chapter turns the word inside out twenty-one verses later — 'I did not come to bring peace, but a sword' (10:34) — and this translation prints both without smoothing the collision: a household's peace can be given and returned like a possession, and the peace of the whole earth is, in the same breath, what Jesus says he did not come to bring.", ("Matthew", 10, 13)),
-    ("psyche", "psychē", "ψυχή", "psychē", "SOUL — and, just as often, LIFE; one Greek word doing two jobs English keeps separate. Matthew 10 uses it both ways within eleven verses: 'fear the one who can destroy both soul and body in Gehenna' (10:28, the self clearly distinct from the body), then 'whoever finds his psychē will lose it, and whoever loses his psychē for my sake will find it' (10:39, where 'life' is the only sense that makes the paradox work). ⚠ This translation renders it 'soul' in the first case and 'life' in the second, printing the word's genuine double range rather than forcing one English noun to cover both — the ambiguity is in the Greek, not smoothed away by the choice of English.", ("Matthew", 10, 28)),
+    ("psyche", "psychē", "ψυχή", "psychē", "SOUL — and, just as often, LIFE; one Greek word doing two jobs English keeps separate. Matthew 10 uses it both ways within eleven verses: 'fear the one who can destroy both soul and body in Gehenna' (10:28, the self clearly distinct from the body), then 'whoever finds his psychē will lose it, and whoever loses his psychē for my sake will find it' (10:39, where 'life' is the only sense that makes the paradox work). ⚠ This translation renders it 'soul' in the first case and 'life' in the second, printing the word's genuine double range rather than forcing one English noun to cover both — the ambiguity is in the Greek, not smoothed away by the choice of English. The 10:39 saying itself returns almost word for word at 16:25-26, restructured from find/lose to save/lose but making the identical claim.", ("Matthew", 10, 28)),
     ("biazomai", "biazetai / biastai", "βιάζεται", "biazetai", "TO FORCE, or TO BE FORCED — one of the New Testament's most argued single verses. Matthew 11:12's biazetai can be read two directions, and the difference is not a nuance but an opposite claim. MIDDLE voice: 'the kingdom of the heavens FORCES ITS WAY forward, powerfully advancing' — a picture of unstoppable momentum, with biastai its eager, forceful entrants. PASSIVE voice: 'the kingdom SUFFERS VIOLENCE' — under active assault, biastai now its violent opponents, plundering (harpazousin, the verb for snatching or ransacking) what is not theirs. ⚠ Its nearest relative argues for the middle sense — Luke's parallel reads unambiguously reflexive, 'everyone is forcing their way into it' (Luke 16:16, not yet on these pages) — but Matthew's own context, a generation that refuses to dance OR mourn no matter what is played (11:16-19), reads more naturally as violence done TO the kingdom. KJV/ASV/NWT all print the passive; this translation follows them as the primary reading and names the argument rather than closing it.", ("Matthew", 11, 12)),
     ("nepios", "nēpios / nēpioi", "νήπιος", "nēpioi", "INFANT, BABE — literally 'not-speaking' (nē-, negative + epos, 'word'), the ordinary Greek word for a small child too young to talk, used figuratively of the untaught or the simple. ⚠ Matthew 11:25 sets it directly against sophoi kai synetoi, 'the wise and the understanding' — Jesus thanks the Father for hiding 'these things' from precisely the people equipped to grasp them and revealing them instead to the ones with no equipment at all. Paul uses the same word for immature believers fed only milk, not solid food (1 Corinthians 3:1-2, not yet on these pages); here the immaturity is not a fault to outgrow but the actual qualification for the revelation.", ("Matthew", 11, 25)),
     ("zygos", "zygos", "ζυγός", "zygos", "YOKE — the wooden crossbar laid across a paired team's necks so two animals pull one load together; by metaphor, in both Greek and the rabbinic idiom of Jesus' own day ('the yoke of the Torah,' 'the yoke of the kingdom'), a body of teaching or obligation TAKEN ON. ⚠ So 'take my yoke' (11:29) pictures not burden alone — every yoke is a burden — but DISCIPLESHIP itself: the word used for a rabbi's teaching, offered here as replacing whatever yoke the hearer already carries. Paul uses it once more of marriage to an unbeliever ('unequally yoked,' 2 Corinthians 6:14, not yet on these pages) — the same image of two pulling one load, mismatched.", ("Matthew", 11, 29)),
@@ -776,7 +776,7 @@ DICTIONARY = [
      "'Authority' — what astounded the crowds (Matthew 7:29): the scribes taught by citation, rulings in the names of earlier teachers; this preacher's only footnote was 'but I say to you.' Planted where the book can reach it: Matthew's last sentence claims 'ALL authority, in heaven and on earth' (28:18).", ("Matthew", 7, 29)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
-     "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it.", ("Revelation", 1, 4)),
+     "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it. ⚠ Jesus himself says the word only twice in this Gospel — first at Matthew 16:18, 'on this rock I will build my ekklēsia,' answered to Peter's confession at Caesarea Philippi, long before this library reached Revelation to discuss the term at length.", ("Revelation", 1, 4)),
     ("apokalypsis", "apokalypsis", "ἀποκάλυψις", "apokalypsis",
      "An UNVEILING, an uncovering — apo, 'away', + kalyptō, 'to cover': the drawing-back of a veil from what was hidden. It is the first word of the last book of the Bible (Apokalypsis Iōannou, 'the Revelation of John') and the source of English 'apocalypse', which in ordinary use has drifted from disclosure to catastrophe. ⚠ At 2 Thessalonians 1:7 it names the Lord's coming as an uncovering — set beside parousia, 'arrival, presence', at 2:1 and 2:8: the same event under two images, a curtain drawn back and a monarch arriving. Paul also uses it of the disclosure of a hidden mystery (Romans 16:25) and of the future 'revealing of the sons of God' (Romans 8:19).", ("Revelation", 1, 1)),
     ("pantokrator", "pantokratōr", "παντοκράτωρ", "pantokratōr",
@@ -786,7 +786,7 @@ DICTIONARY = [
     ("martys", "martys", "μάρτυς", "martys",
      "Witness — Jesus 'the faithful witness' (Revelation 1:5). In Revelation the word begins its migration toward English 'martyr': the witness whose testimony costs blood.", ("Revelation", 1, 5)),
     ("hades", "hadēs", "ᾅδης", "hadēs",
-     "Hades — the Greek Bible's rendering of the Hebrew Sheol, the grave-realm of the dead; NOT the fiery hell of later imagery (KJV prints 'hell' at Revelation 1:18). Christ holds its keys.", ("Revelation", 1, 18)),
+     "Hades — the Greek Bible's rendering of the Hebrew Sheol, the grave-realm of the dead; NOT the fiery hell of later imagery (KJV prints 'hell' at Revelation 1:18). Christ holds its keys. ⚠ The word is older in this Gospel than in this library's own order of discussion: at Matthew 16:18, Peter is promised 'the gates of Hades will not overpower' the congregation Christ will build — a different set of keys from the ones Christ himself holds over 'Death and Hades' at Revelation 1:18, not the same claim repeated twice.", ("Revelation", 1, 18)),
     # ---- John 2 (Greek) ----
     ("semeion", "sēmeion", "σημεῖον", "sēmeion",
      "Sign — John's own word for the miracles: a deed that points past itself. Cana is 'the beginning of the signs' (2:11), first of the seven that structure the Gospel's first half — and the same root opens Revelation: 'he made it known in signs' (Rev 1:1).", ("John", 2, 11)),
@@ -1141,6 +1141,8 @@ DICTIONARY = [
      "A large provisions HAMPER, big enough (Acts 9:25, not yet on these pages) to lower a grown man — Paul — over the wall at Damascus in. ⚠ Twelve small, specifically JEWISH hand-baskets (kophinos) are left over feeding five thousand in Jewish territory at Matthew 14:20; when a second feeding happens on Gentile-adjacent ground two chapters later, Matthew switches the word entirely to spyris — a larger hamper with no particular ethnic marking — and counts seven, not twelve (15:37). The vocabulary itself seems to be tracking who is being fed.", ("Matthew", 15, 37)),
     ("chananaios", "Chananaia", "Χαναναία", "Chananaia",
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
+    ("petra", "petra", "πέτρα", "petra",
+     "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
 ]
 
 ENCYCLOPEDIA = [
@@ -4137,6 +4139,20 @@ ENCYCLOPEDIA = [
               "is one of the commonest names in the Bible (kings, priests, gatekeepers, John the Baptist's father in Luke "
               "1), which is why this entry answers only to the full 'Zechariah son of Berechiah.'",
          refs=[("Zechariah", 1, 1), ("Zechariah", 1, 7)], videos=[]),
+    dict(slug="caesarea-philippi", name="Caesarea Philippi", kind="place",
+         aliases=["Caesarea Philippi"],
+         desc="A city at the foot of Mount Hermon, by one of the springs that feeds the Jordan — built around an "
+              "older shrine to the Greek god PAN (the site's earlier name, Paneas, survives in the modern Arabic "
+              "Banias). Herod the Great received the district from Augustus and built a temple there to the "
+              "emperor himself; his son PHILIP the tetrarch enlarged the town and renamed it Caesarea in Augustus's "
+              "honor, adding 'Philippi' ('of Philip') to distinguish it from the OTHER Caesarea his father had "
+              "built on the coast (Caesarea Maritima, not on these pages). A city carrying Caesar's name twice "
+              "over is where Matthew 16:13 has Jesus ask his disciples who people say he is — the northernmost "
+              "point any Gospel records him traveling to, roughly forty kilometers north of the Sea of Galilee.",
+         refs=[("Matthew", 16, 13)],
+         coords=(33.2481, 35.6919, 0.02),
+         modern="Banias, Golan Heights",
+         videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -5102,6 +5118,14 @@ XREFS = [
     (("Matthew", 15, 32), ("Matthew", 9, 36), "splanchnizomai — narrated ABOUT Jesus before the five thousand and the crowds of 9:36; here, for the first of only two times in this Gospel, he says the word himself, in the first person"),
     (("Matthew", 15, 37), ("Matthew", 14, 20), "kophinos becomes spyris — twelve small Jewish hand-baskets in Jewish territory, seven larger unmarked hampers two chapters later on Gentile-adjacent ground; the vocabulary itself tracks who is being fed"),
     (("Matthew", 15, 14), ("Matthew", 23, 16), "typhloi hodēgoi, 'blind guides' — a phrase tossed off here as an aside returns as a title Jesus repeats twice over, by name, in the seven woes of chapter 23"),
+    (("Matthew", 16, 1), ("Matthew", 3, 7), "the Pharisees and Sadducees, first paired together at John's baptism, reunite for their second joint appearance in this Gospel — an odd alliance that agrees on almost nothing except, apparently, Jesus"),
+    (("Matthew", 16, 4), ("Matthew", 12, 39), "the identical refusal — 'no sign… except the sign of Jonah' — given once already at length; here the earliest text drops the fuller phrase's own 'the prophet'"),
+    (("Matthew", 16, 6), ("Matthew", 13, 33), "zymē, 'leaven' — a picture of the kingdom growing invisibly through a whole three chapters ago, now the identical word for a corrupting teaching spreading the same way"),
+    (("Matthew", 16, 17), ("Matthew", 11, 25), "apekalypsen, 'revealed' — the same rare verb for the same claim: truths hidden from the wise and revealed by the Father's own initiative, first to infants, now to a fisherman"),
+    (("Matthew", 16, 19), ("Revelation", 1, 18), "two different sets of keys, not one claim repeated — Peter's 'keys of the kingdom of the heavens' for binding and loosing on earth, Christ's own 'keys of Death and Hades' for dominion over death itself"),
+    (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
+    (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
+    (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -9305,6 +9329,55 @@ DICTIONARY_ES = {
         "en este Evangelio, discute con Jesús y es elogiada por encima de Israel por su fe (Mateo "
         "15:22-28). La elección de la palabra hace un trabajo teológico que la etiqueta más neutra de "
         "Marcos no intenta."),
+    "petra": ("roca / lecho de roca",
+        "LECHO DE ROCA — distinta de Petros, «una piedra», el nombre que Jesús le da a Simón en el "
+        "mismo aliento (Mateo 16:18, «tú eres Petros, y sobre esta petra edificaré mi congregación»). "
+        "Jesús casi con certeza hablaba arameo, lengua en la que una sola palabra, kepha, habría "
+        "nombrado a la vez al hombre y al fundamento; el juego de palabras sobrevive la traducción al "
+        "griego solo porque el griego tiene, por casualidad, un sustantivo masculino para «una piedra» "
+        "junto a uno femenino para «lecho de roca» lo bastante parecido en sonido para llevar la misma "
+        "broma. ⚠ Qué nombra «esta roca» ha dividido a los lectores durante siglos — la lectura "
+        "católica histórica la lee como Pedro mismo, fundando un oficio; la lectura protestante "
+        "histórica la lee más a menudo como la confesión o Cristo, señalando a 1 Corintios 3:11 y "
+        "Efesios 2:20 (ninguno todavía en estas páginas) como el único fundamento nombrado en otra "
+        "parte. Esta biblioteca declara las lecturas en vez de elegir entre ellas."),
+    "ekklesia": ("congregación",
+        "ASAMBLEA, la reunión de los llamados — en griego secular la asamblea votante de una ciudad "
+        "(Hechos 19 usa esta misma palabra para el MOTÍN de Éfeso), en la Biblia griega la asamblea de "
+        "Israel (qahal). Sin edificio, sin institución. Tyndale por eso la tradujo «congregación» — y "
+        "las instrucciones del rey Jacobo a sus traductores ordenaban conservar «las antiguas palabras "
+        "eclesiásticas... la palabra Church no se traducirá Congregation». Esta traducción lee "
+        "CONGREGACIÓN (como Tyndale, y la TNM después de él); «iglesia» desciende de una palabra "
+        "completamente distinta — kyriakon, «la casa del Señor» — y lleva consigo el edificio "
+        "posterior. ⚠ Jesús mismo dice la palabra solo dos veces en este Evangelio — primero en Mateo "
+        "16:18, «sobre esta roca edificaré mi ekklēsia», respondida a la confesión de Pedro en Cesarea "
+        "de Filipo, mucho antes de que esta biblioteca llegara al Apocalipsis para tratar el término "
+        "con detalle."),
+    "hades": ("Hades",
+        "HADES — la palabra que la Biblia griega usa para el Seol hebreo, el reino de los muertos; NO "
+        "el infierno de fuego de la imaginería posterior. Cristo tiene sus llaves. ⚠ La palabra es más "
+        "antigua en este Evangelio que en el orden en que esta biblioteca la trata — en Mateo 16:18 se "
+        "le promete a Pedro que «las puertas del Hades no prevalecerán» contra la congregación que "
+        "Cristo edificará — un juego de llaves distinto del que Cristo mismo tiene sobre «la Muerte y "
+        "el Hades» en Apocalipsis 1:18, no la misma afirmación repetida dos veces."),
+    "oligopistos": ("poca-fe",
+        "POCA-FE — una sola palabra griega, oligos («poco») + pistis («fe»), y hasta donde se sabe, "
+        "acuñación propia de Mateo; aparece en el Nuevo Testamento casi solo en labios de Jesús. ⚠ NO "
+        "es incredulidad. Los discípulos en la barca lo despertaron, lo cual es una especie de fe; lo "
+        "que él reprocha es su TAMAÑO (Mateo 8:26). La usa de nuevo con Pedro hundiéndose en el agua "
+        "(14:31), con todos ellos por el pan (16:8), y en 6:30 sobre quienes se preocupan por la ropa. "
+        "La palabra es un reproche y un diagnóstico, no un rechazo — las mismas personas siguen en la "
+        "barca, y siguen llamándose discípulos, al final de la frase."),
+    "huios-tou-anthropou": ("el Hijo del Hombre",
+        "EL HIJO DEL HOMBRE — el propio nombre de Jesús para sí mismo, usado unas treinta veces en "
+        "Mateo y casi nunca por nadie más. ⚠ Dos trasfondos, ambos genuinos, que tiran en direcciones "
+        "opuestas. En EZEQUIEL «hijo de hombre» es simplemente cómo Dios se dirige al profeta: mortal, "
+        "un ser humano, nada más. En DANIEL 7:13 — que es arameo, kevar enash — «uno como un hijo de "
+        "hombre» viene con las nubes del cielo ante el Anciano de Días y recibe dominio y un reino que "
+        "no pasará. Así que la frase puede significar «solo un hombre» o «la figura a quien se da el "
+        "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
+        "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
+        "buena parte de su utilidad — dice algo sin resolverlo."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -9556,6 +9629,17 @@ ENCYCLOPEDIA_ES["chorazin"] = ("Corazín",
     "de Galilea, y las excavaciones han descubierto una sinagoga de basalto (siglos III-IV d.C., "
     "probablemente sobre una anterior) y un pueblo romano-bizantino.")
 
+ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
+    "Una ciudad al pie del monte Hermón, junto a uno de los manantiales que alimentan el Jordán — "
+    "construida alrededor de un santuario más antiguo al dios griego PAN (el nombre anterior del sitio, "
+    "Paneas, sobrevive en el árabe moderno Banias). Herodes el Grande recibió el distrito de manos de "
+    "Augusto y levantó allí un templo al emperador mismo; su hijo FILIPO el tetrarca ensanchó la ciudad "
+    "y la renombró Cesarea en honor a Augusto, añadiendo «de Filipo» para distinguirla de la OTRA "
+    "Cesarea que su padre había construido en la costa (Cesarea Marítima, todavía no en estas páginas). "
+    "Una ciudad que lleva el nombre de César dos veces es donde Mateo 16:13 tiene a Jesús preguntando a "
+    "sus discípulos quién dice la gente que es él — el punto más al norte al que cualquier Evangelio lo "
+    "registra viajando, a unos cuarenta kilómetros al norte del mar de Galilea.")
+
 
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
@@ -9615,6 +9699,45 @@ CHAPTER_ART = {
                 "genérica &mdash; sin ningún intento de reflejar la topografía real de Tiro o Sidón.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Annibale_Carracci,_Cristo_e_la_Cananea,_1595,_Parma.jpg",
+    )],
+    "mat16": [dict(
+        file="perugino-delivery-of-the-keys.jpg",
+        title="Christ Handing the Keys to St. Peter",
+        title_es="La entrega de las llaves a San Pedro",
+        artist="Pietro Perugino",
+        year="1481&ndash;1482",
+        location="Sistine Chapel, Vatican City",
+        location_es="Capilla Sixtina, Ciudad del Vaticano",
+        alt="A crowd of robed, haloed apostles fills the foreground of a marble piazza; at its center an "
+            "elderly bearded man kneels and receives two keys from Christ, who stands before him in a "
+            "rose-colored robe with his other hand raised. Behind them a domed, octagonal Renaissance "
+            "temple rises between two Roman-style triumphal arches, with small groups of contemporary "
+            "15th-century onlookers scattered across the open square on either side",
+        note="Perugino paints the temple behind Christ and Peter as an octagonal, centrally-planned "
+             "Renaissance building &mdash; nothing like anything that stood in first-century Judea, and "
+             "nothing a first-century reader would have pictured on hearing &lsquo;I will build my "
+             "congregation.&rsquo; The dictionary&rsquo;s own point about ekkl&#275;sia is that the word "
+             "named no building at all; fourteen centuries later, the Pope&rsquo;s own chapel answers this "
+             "exact verse with the single most monumental building its painter could imagine. The two keys "
+             "passing hand to hand &mdash; traditionally gold for heaven and silver for binding-and-loosing "
+             "on earth &mdash; are the fresco&rsquo;s only strictly Biblical detail; the triumphal arches "
+             "flanking the temple are modeled on Rome&rsquo;s own Arch of Constantine, and the onlookers in "
+             "contemporary dress on the right are a standard 15th-century Italian convention, inserting the "
+             "painter&rsquo;s own century into a first-century scene.",
+        note_es="Perugino pinta el templo detrás de Cristo y Pedro como un edificio renacentista octogonal "
+                "de planta centralizada &mdash; nada parecido a lo que existía en la Judea del siglo primero, "
+                "y nada que un lector de esa época hubiera imaginado al oír &laquo;edificaré mi "
+                "congregación&raquo;. El propio punto del diccionario sobre ekkl&#275;sia es que la palabra "
+                "no nombraba ningún edificio; catorce siglos después, la propia capilla del Papa responde a "
+                "este mismo versículo con el edificio más monumental que su pintor pudo imaginar. Las dos "
+                "llaves que pasan de mano a mano &mdash; por tradición, oro para el cielo y plata para atar "
+                "y desatar en la tierra &mdash; son el único detalle estrictamente bíblico de todo el fresco; "
+                "los arcos triunfales que flanquean el templo están modelados sobre el propio Arco de "
+                "Constantino en Roma, y los espectadores vestidos a la moda del siglo XV a la derecha son una "
+                "convención italiana habitual de la época, que inserta el propio siglo del pintor en una "
+                "escena del siglo primero.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg",
     )],
     "mat8": [dict(
         file="rembrandt-storm-galilee.jpg",
