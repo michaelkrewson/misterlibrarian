@@ -1135,6 +1135,12 @@ DICTIONARY = [
      "A WAY, road, path — and, by extension, the manner and course of a whole life. It is the master-image of Hebrew wisdom: there are TWO WAYS, the way of the righteous and the way of the wicked, and everything hangs on which one a person walks. Psalm 1 is built on the contrast and ends on it — 'Jehovah knows the way of the righteous, but the way of the wicked will perish' — and the same two-ways picture runs through Proverbs and closes the Sermon on the Mount (the narrow road and the broad). The early church even called itself, simply, 'the Way' (Acts 9:2).", ("Psalms", 1, 6)),
     ("motz", "motz", "מוֹץ", "motz",
      "CHAFF — the dry, papery husk and broken straw left when grain is threshed, so light that the evening wind at the threshing-floor carries it off while the heavier grain falls back to be gathered. It is the Bible's picture of the weightless and rootless: 'not so the wicked — they are like chaff that the wind drives away' (Psalm 1:4), the exact opposite of the deep-rooted, watered tree of the righteous. John the Baptist takes the image up — the Coming One 'will clear his threshing floor… but the chaff he will burn with unquenchable fire' (Matthew 3:12).", ("Psalms", 1, 4)),
+    ("koinoo", "koinoō", "κοινόω", "koinoō",
+     "TO MAKE COMMON — built on koinos, 'common, shared, ordinary' (the same root behind koinōnia, 'fellowship,' and the 'common' purse of the early church in Acts). To defile, in this vocabulary, is to render something COMMON that ought to be set apart. Matthew 15 turns entirely on the verb: 'not what goes into the mouth defiles (koinoi) a person, but what comes out' (15:11, 18, 20) — food cannot make common what God set apart; words and deeds can. Peter hears the same verb again at Joppa, refusing to eat anything 'common or unclean' (Acts 10:14, not yet on these pages) — a vision built to answer this exact chapter's question about a wider circle than food.", ("Matthew", 15, 11)),
+    ("spyris", "spyris", "σπυρίς", "spyris",
+     "A large provisions HAMPER, big enough (Acts 9:25, not yet on these pages) to lower a grown man — Paul — over the wall at Damascus in. ⚠ Twelve small, specifically JEWISH hand-baskets (kophinos) are left over feeding five thousand in Jewish territory at Matthew 14:20; when a second feeding happens on Gentile-adjacent ground two chapters later, Matthew switches the word entirely to spyris — a larger hamper with no particular ethnic marking — and counts seven, not twelve (15:37). The vocabulary itself seems to be tracking who is being fed.", ("Matthew", 15, 37)),
+    ("chananaios", "Chananaia", "Χαναναία", "Chananaia",
+     "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3710,8 +3716,10 @@ ENCYCLOPEDIA = [
               "the island — which is still there, and has silted up, so that the island is now a peninsula. "
               "Centuries later, Jesus invokes the city as the standard by which an OUTSIDER would have repented "
               "where his own Galilean towns did not: 'if the mighty works done in you had been done in Tyre and "
-              "Sidon, they would have repented long ago in sackcloth and ashes' (Matthew 11:21).",
-         refs=[("Amos", 1, 9), ("Amos", 1, 10), ("Matthew", 11, 21)],
+              "Sidon, they would have repented long ago in sackcloth and ashes' (Matthew 11:21) — and later still "
+              "walks into its own territory in person, the only Gentile soil the Gospels record him personally "
+              "entering (<a href='matthew-15.html#v21'>Matthew 15:21</a>).",
+         refs=[("Amos", 1, 9), ("Amos", 1, 10), ("Matthew", 11, 21), ("Matthew", 15, 21)],
          coords=(33.271, 35.196, 0.25),
          modern="Sour, southern Lebanon", videos=[]),
     dict(slug="sidon", name="Sidon", kind="place", aliases=["Sidon", "Sidonians", "Sidonian"],
@@ -3721,10 +3729,11 @@ ENCYCLOPEDIA = [
               "'Sidonian' loosely for Phoenicians generally, Tyre's own later dominance notwithstanding. JEZEBEL, "
               "who imports Baal worship into Israel, is 'daughter of Ethbaal, king of the Sidonians' (1 Kings "
               "16:31, not yet on these pages). ⚠ Jesus later visits 'the region of Tyre and Sidon' in person "
-              "(Matthew 15:21, not yet on these pages) — the only Gentile territory the Gospels record him "
-              "personally entering — after first invoking the pair, here, as the standard against which Galilean "
-              "unbelief comes off worse (11:21-22).",
-         refs=[("Matthew", 11, 21)],
+              "(<a href='matthew-15.html#v21'>Matthew 15:21</a>) — the only Gentile territory the Gospels record "
+              "him personally entering — after first invoking the pair, here, as the standard against which "
+              "Galilean unbelief comes off worse (11:21-22). It is also where a Canaanite woman meets him and is "
+              "commended above Israel for her faith (15:22-28).",
+         refs=[("Matthew", 11, 21), ("Matthew", 15, 21)],
          coords=(33.557, 35.372, 0.25),
          modern="Saida, Lebanon", videos=[]),
     dict(slug="chorazin", name="Chorazin", kind="place", aliases=["Chorazin"],
@@ -5087,6 +5096,12 @@ XREFS = [
     (("Matthew", 14, 31), ("Matthew", 28, 17), "distazō, 'doubted' — the New Testament's only other use of this verb is the Eleven's own doubt on the mountain, worshiping the risen Christ and hesitating anyway"),
     (("Matthew", 14, 33), ("Matthew", 9, 18), "proskyneō, a seventh time — magi, Herod, the devil, a leper, a ruler, and now the Twelve themselves, the first to pair the gesture with the words it has been waiting for: 'truly you are the Son of God'"),
     (("Matthew", 14, 36), ("Matthew", 9, 20), "kraspedon — the fringe a bleeding woman touched in secret is now held out to a whole region in the open; a third appearance, a very different one, waits at 23:5"),
+    (("Matthew", 15, 21), ("Matthew", 11, 21), "Tyre and Sidon, invoked only as a standard of comparison at 11:21-22, are now the actual destination — Jesus' one recorded personal visit to Gentile soil in the Gospels"),
+    (("Matthew", 15, 22), ("Matthew", 9, 27), "eleēson me… huie Dauid, 'have mercy on me… Son of David' — the identical cry of two blind men in Israel now comes from the one Gentile this Gospel goes furthest to mark as an outsider"),
+    (("Matthew", 15, 25), ("Matthew", 14, 33), "proskyneō, an eighth bow — every earlier instance from a Jewish suppliant, a Roman-appointed king, or the devil himself; this is the first from a Gentile"),
+    (("Matthew", 15, 32), ("Matthew", 9, 36), "splanchnizomai — narrated ABOUT Jesus before the five thousand and the crowds of 9:36; here, for the first of only two times in this Gospel, he says the word himself, in the first person"),
+    (("Matthew", 15, 37), ("Matthew", 14, 20), "kophinos becomes spyris — twelve small Jewish hand-baskets in Jewish territory, seven larger unmarked hampers two chapters later on Gentile-adjacent ground; the vocabulary itself tracks who is being fed"),
+    (("Matthew", 15, 14), ("Matthew", 23, 16), "typhloi hodēgoi, 'blind guides' — a phrase tossed off here as an aside returns as a title Jesus repeats twice over, by name, in the seven woes of chapter 23"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -9264,6 +9279,32 @@ DICTIONARY_ES = {
         "homófonos en la pronunciación del siglo primero, lo bastante como para que «Chrestus» aparezca "
         "como variante de «Christus» en escritos romanos posteriores. Mateo no explota el parecido; "
         "simplemente está ahí, en el sonido de la última palabra que Jesús da a su propio yugo."),
+    "koinoo": ("hacer común",
+        "HACER COMÚN — construido sobre koinos, «común, compartido, ordinario» (la misma raíz de koinōnía, "
+        "«comunión»). Contaminar, en este vocabulario, es volver común algo que debía quedar apartado. Mateo "
+        "15 gira entero sobre este verbo: «no es lo que entra por la boca lo que contamina a una persona, "
+        "sino lo que sale» (15:11, 18, 20) — la comida no puede hacer común lo que Dios apartó; las palabras "
+        "y los actos, sí. Pedro oirá el mismo verbo en Jope, negándose a comer nada «común o impuro» "
+        "(Hechos 10:14, todavía no en estas páginas) — una visión construida para responder precisamente a "
+        "la pregunta de este capítulo, sobre un círculo más amplio que la comida."),
+    "spyris": ("cesto",
+        "Un CESTO de provisiones grande, lo bastante como para bajar a un hombre adulto — Pablo — por el "
+        "muro de Damasco (Hechos 9:25, todavía no en estas páginas). ⚠ Doce canastas pequeñas, "
+        "específicamente judías (kophinos), sobran al alimentar a cinco mil en territorio judío (Mateo "
+        "14:20); cuando una segunda alimentación ocurre en tierra cercana a lo gentil dos capítulos "
+        "después, Mateo cambia de palabra por completo — spyris, un cesto más grande sin ninguna marca "
+        "étnica — y cuenta siete, no doce (15:37). El vocabulario mismo parece registrar a quién se "
+        "alimenta."),
+    "chananaios": ("cananea",
+        "CANANEA — el gentilicio del propio Antiguo Testamento para los habitantes preisraelitas de la "
+        "tierra, obsoleto como término de uso corriente desde hacía mil años en el siglo primero "
+        "(sustituido en el habla ordinaria por «fenicio» o el nombre de la ciudad). ⚠ El paralelo de "
+        "Marcos sobre el mismo encuentro (7:26, todavía no en estas páginas) llama a la mujer «griega, "
+        "sirofenicia de nacimiento» — una etiqueta viva y contemporánea. Mateo elige en cambio el término "
+        "arcaico y cargado — el antiguo enemigo desposeído de Israel — y se lo pone a la única gentil que, "
+        "en este Evangelio, discute con Jesús y es elogiada por encima de Israel por su fe (Mateo "
+        "15:22-28). La elección de la palabra hace un trabajo teológico que la etiqueta más neutra de "
+        "Marcos no intenta."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -9487,9 +9528,24 @@ ENCYCLOPEDIA_ES["sidon"] = ("Sidón",
     "costa, y en Génesis 10:15 el PRIMOGÉNITO de Canaán — «Sidón» es a la vez una ciudad y, en la Tabla "
     "de las Naciones, un antepasado. JEZABEL, que introduce el culto a Baal en Israel, es «hija de "
     "Et-baal, rey de los sidonios» (1 Reyes 16:31, todavía no en estas páginas). ⚠ Jesús visita más "
-    "adelante en persona «la región de Tiro y de Sidón» (Mateo 15:21, todavía no en estas páginas) — el "
-    "único territorio gentil que los Evangelios lo registran pisando — después de invocar aquí el par "
-    "como el estándar frente al cual la incredulidad galilea sale peor parada (11:21-22).")
+    "adelante en persona «la región de Tiro y de Sidón» (<a href='matthew-15.html#v21'>Mateo 15:21</a>) — "
+    "el único territorio gentil que los Evangelios lo registran pisando — después de invocar aquí el par "
+    "como el estándar frente al cual la incredulidad galilea sale peor parada (11:21-22). Es también donde "
+    "una mujer cananea lo encuentra y es elogiada por encima de Israel por su fe (15:22-28).")
+ENCYCLOPEDIA_ES["tyre"] = ("Tiro",
+    "El gran puerto fenicio al norte del Carmelo, construido en una isla algo apartada de la costa con un "
+    "asentamiento continental frente a ella — una potencia comercial, no territorial, con colonias tan "
+    "lejanas como Cartago. Su rey HIRAM abasteció de cedro, artesanos y flota a David y luego a Salomón, y "
+    "los dos reinos firmaron un tratado: «hubo paz entre Hiram y Salomón, y los dos hicieron un pacto» "
+    "(1 Reyes 5:12), con Hiram llamando a Salomón «mi hermano» (1 Reyes 9:13). ⚠ Ese es casi con certeza "
+    "el «pacto de hermanos» que Amós dice que Tiro olvidó (1:9). Ezequiel 26-28 le dedica tres capítulos "
+    "enteros, y Alejandro Magno finalmente la tomó en 332 a.C. construyendo una calzada hasta la isla — "
+    "que sigue ahí, y se ha ido sedimentando, de modo que la isla es hoy una península. Siglos después, "
+    "Jesús invoca la ciudad como el estándar por el cual un EXTRAÑO se habría arrepentido donde sus "
+    "propios pueblos galileos no lo hicieron: «si en Tiro y en Sidón se hubieran hecho los milagros hechos "
+    "en vosotras, ya hace tiempo que se habrían arrepentido en saco y ceniza» (Mateo 11:21) — y más "
+    "adelante camina en persona por su propio territorio, el único suelo gentil que los Evangelios "
+    "registran que pisó (<a href='matthew-15.html#v21'>Mateo 15:21</a>).")
 ENCYCLOPEDIA_ES["chorazin"] = ("Corazín",
     "Uno de solo dos pueblos que Jesús maldice expresamente por incredulidad (Mateo 11:21 / Lucas 10:13), "
     "y el ÚNICO sitio de ese reproche sobre el cual los Evangelios no registran nada más — ningún relato "
@@ -9529,6 +9585,37 @@ ENCYCLOPEDIA_ES["chorazin"] = ("Corazín",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat15": [dict(
+        file="carracci-christ-canaanite-woman.jpg",
+        title="Christ and the Canaanite Woman",
+        title_es="Cristo y la mujer cananea",
+        artist="Annibale Carracci",
+        year="1590s",
+        location="Galleria Nazionale, Parma",
+        location_es="Galleria Nazionale, Parma",
+        alt="A kneeling woman in a gold mantle reaches toward Christ with one hand while pressing the "
+            "other to her chest; Christ stands over her gesturing back mid-reply, an older bearded "
+            "disciple looking on from behind him, and a small white dog lies at the woman's feet in the "
+            "foreground",
+        note="Carracci puts a small white dog directly at the kneeling woman's knees &mdash; the one "
+             "visual detail in the whole composition that names the exchange the text is actually having "
+             "(&ldquo;even the little dogs eat the crumbs that fall from their masters&rsquo; table&rdquo;). "
+             "Christ&rsquo;s open hand answers her raised one mid-conversation, not yet a blessing; the "
+             "disciple folded in behind him watches without acting, exactly as the Gospel has the Twelve "
+             "only ASKING Jesus to send her away rather than intervening themselves. The Levantine "
+             "townscape behind them is generic invention &mdash; no attempt at the real topography of Tyre "
+             "or Sidon.",
+        note_es="Carracci coloca un perrito blanco justo a las rodillas de la mujer arrodillada &mdash; el "
+                "único detalle visual de toda la composición que nombra el diálogo que el texto realmente "
+                "sostiene (&laquo;hasta los perritos comen de las migajas que caen de la mesa de sus "
+                "amos&raquo;). La mano abierta de Cristo responde a la suya alzada, en medio de la "
+                "conversación, todavía no una bendición; el discípulo que se asoma detrás de él observa sin "
+                "intervenir, tal como el Evangelio hace que los Doce solo le pidan a Jesús que la despida "
+                "en vez de actuar ellos mismos. El paisaje urbano levantino del fondo es una invención "
+                "genérica &mdash; sin ningún intento de reflejar la topografía real de Tiro o Sidón.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Annibale_Carracci,_Cristo_e_la_Cananea,_1595,_Parma.jpg",
+    )],
     "mat8": [dict(
         file="rembrandt-storm-galilee.jpg",
         title="Christ in the Storm on the Lake of Galilee",
