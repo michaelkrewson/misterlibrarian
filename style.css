@@ -251,6 +251,8 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
 .t-bj{background:rgba(248,113,113,0.10);color:#f87171}
 .t-asv{background:rgba(74,159,212,0.12);color:var(--blue)}
 .t-nwt{background:rgba(249,115,22,0.10);color:#f97316}
+/* TNM = the Spanish New World Translation (wol.jw.org), the Spanish-shelf twin of t-nwt */
+.t-tnm{background:rgba(249,115,22,0.10);color:#f97316;border-color:rgba(249,115,22,0.25)}
 .info-block{margin-top:14px;padding:14px 16px;background:rgba(167,139,250,0.04);
   border:1px solid rgba(167,139,250,0.15);border-radius:10px}
 .info-block h3{margin:0 0 8px;font-size:13px;color:var(--purple)}
@@ -688,8 +690,14 @@ tr.ch-dim td{opacity:0.55}
 /* ---- Red letters: the recorded words of Jesus (the Gospels + the risen
    Christ dictating in Revelation). The Hebrew Bible's direct divine speech
    stays ordinary type, as in nearly all red-letter editions.
-   Debuted with Matthew 5 (the Sermon on the Mount), 2026-07-16. ---- */
-.eng .rl{color:#e0655f}
+   Debuted with Matthew 5 (the Sermon on the Mount), 2026-07-16. Applies to both
+   .eng and .esp -- the Spanish verse text carries the identical <span class="rl">
+   marking (matthew-11 through 15 all use it), so this rule must not be
+   English-only or the Spanish pages silently lose the color with no visible
+   markup error (found visually reviewing Matthew 15's Spanish page, 2026-07-28,
+   the exact "actually look at the rendered page" lesson this project's own
+   doctrine already names). ---- */
+.eng .rl, .esp .rl{color:#e0655f}
 
 /* ---- Reader annotations: highlights, notes, sharing (reader-notes.js) ----
    Everything a visitor marks lives in their own browser (localStorage); nothing
