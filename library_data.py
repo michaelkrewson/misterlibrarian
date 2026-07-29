@@ -1143,6 +1143,17 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Jeremiah 23 (Hebrew) ----
+    ("tsemach", "tsemach", "צֶמַח", "tsemach",
+     "A SPROUT, a shoot — what comes up out of the ground; from tsamach, 'to sprout.' The image is a cut stump putting out green: something small rising where something great was felled. Jeremiah promises David a tsemach tsaddiq, a 'righteous Branch' (23:5), against the backdrop of a royal house whose cedars have just been cut down and burned (22:7). By the post-exilic prophets it has hardened into an outright title — Zechariah's 'my servant, the BRANCH' (3:8) and 'a man whose name is Branch' (6:12) — and it runs alongside Isaiah's netser, the 'shoot' from the stump of Jesse. English keeps 'Branch' by tradition, though NWT's 'sprout' is the more exact botany. The same oracle is spoken a second time in Jeremiah 33, where the name it carries is given to the CITY instead of the man.", ("Jeremiah", 23, 5)),
+    ("sod", "sod", "סוֹד", "sod",
+     "A CLOSED CIRCLE — the confidential session, the inner deliberation, and by extension the secret discussed there. Jeremiah's test for a prophet is entirely built on it: 'who has stood in the sod of Jehovah?' (23:18), and 'if they had stood in my sod, they would have turned my people back' (23:22). Scripture only ever glimpses that circle — the sons of God presenting themselves with the Adversary among them (Job 1:6), Micaiah seeing the host of heaven debating who will entice Ahab (1 Kings 22:19-22), Amos's flat rule that God does nothing without disclosing his sod to the prophets (3:7). KJV renders it 'counsel,' ASV 'council,' NWT 'the intimate group'; the word is a ROOM, not an opinion. Its ordinary human sense is the same: the huddle of friends (Psalm 55:14), or the gossip that leaks out of one (Proverbs 11:13).", ("Jeremiah", 23, 18)),
+    ("naveh", "naveh", "נָוֶה", "naveh",
+     "A PASTURE-ABODE — the grazing ground a shepherd keeps his flock in, and so also a settled dwelling. It is the quiet hinge of Jeremiah 23: God promises to bring the scattered flock back 'to their naveh' (v3), and eight verses later 'the ne'ot of the wilderness have dried up' under the curse (v10). The same word for the place promised and the place ruined. It is the word behind the Shepherd Psalm's 'green pastures' (Psalm 23:2) and behind Jerusalem as 'a quiet habitation' (Isaiah 33:20). Where English needs 'fold,' 'pasture' and 'habitation' for one Hebrew noun, the connection has to be pointed out rather than heard.", ("Jeremiah", 23, 3)),
+    ("laanah", "la'anah", "לַעֲנָה", "la'anah",
+     "WORMWOOD — the bitter Artemisia shrub of the Near East, the Bible's standing image for a taste that punishes. It arrives in pairs: 'a root bearing rosh and la'anah' (Deuteronomy 29:18), and here 'I am feeding them WORMWOOD and giving them mei-rosh to drink' (Jeremiah 23:15) — rosh being a second bitter or venomous plant, KJV's 'water of gall.' Lamentations makes it the taste of the whole catastrophe, 'the wormwood and the gall' (3:19). Not poison in the sense of a quick death; the point is that it must be swallowed and it cannot be enjoyed. Greek apsinthos carries it into Revelation 8:11 as the name of a falling star.", ("Jeremiah", 23, 15)),
+    ("sheqer", "sheqer", "שֶׁקֶר", "sheqer",
+     "FALSEHOOD, the Lie — and in Jeremiah it is nearly a proper noun. Not merely an untrue statement: a whole way of standing in the world that has no ground under it. The prophets 'prophesy sheqer in my name' and tell 'dreams of sheqer' (23:25, 32); the people 'walk in the sheqer' (23:14). It is the ninth commandment's word for a lying witness (Exodus 20:16) and the word for the deceitful balance (Proverbs 11:1). Its opposite in this chapter is not accuracy but emet — speaking God's word 'faithfully' (23:28) — and its natural companion is hevel, vapor: what the false prophets sell is empty, and what it makes of their hearers is empty too.", ("Jeremiah", 23, 25)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2873,7 +2884,11 @@ ENCYCLOPEDIA = [
               "officials drop him in the cistern, then lets Ebed-melech pull him out. The rebellion the "
               "prophet begged him not to make brought the final siege (588–586). His end at Riblah is the "
               "book's darkest sentence: his sons killed before his eyes, then his eyes put out — the last "
-              "thing he ever saw (39:6-7).",
+              "thing he ever saw (39:6-7). ⚠ And his name is doing work he did not choose. Mattaniah was "
+              "renamed TSIDQIYAHU, 'Yah is my righteousness'; while he sat on that throne Jeremiah announced "
+              "a coming Branch whose name would be YHVH TSIDQENU, 'Jehovah is OUR righteousness' (23:6) — the "
+              "same two elements re-set, the divine name moved to the front and 'my' replaced by 'our.' The "
+              "throne-name of Judah's last king is picked up, corrected, and handed to someone else.",
          refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[]),
     dict(slug="pashhur-malchiah", name="Pashhur son of Malchiah", kind="person", aliases=["Pashhur"],
          desc="NOT the Pashhur of the stocks (that was the son of Immer, ch. 20) — a second official of the "
@@ -5126,6 +5141,22 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Jeremiah 23 ----
+    (("Jeremiah", 23, 1), ("Jeremiah", 22, 13), "the same cry hoy — 'woe!' — that opened over Jehoiakim alive, moved off one king and onto the whole class of 'shepherds' his chapter paraded"),
+    (("Jeremiah", 23, 3), ("Genesis", 1, 28), "'be fruitful and multiply' — the creation blessing verbatim, applied to the remnant God gathers back himself: exile undone in the grammar of the first page"),
+    (("Jeremiah", 23, 4), ("Jeremiah", 1, 17), "chatat, 'be dismayed' — the fear laid on Jeremiah at his commissioning ('do not be dismayed... lest I dismay you') is the fear the new shepherds finally lift off the flock"),
+    (("Jeremiah", 23, 5), ("Jeremiah", 22, 3), "mishpat u-tsedaqah, 'justice and righteousness' — the exact demand laid on the palace and refused, now the job description of the Branch who will actually do it"),
+    (("Jeremiah", 23, 8), ("Jeremiah", 1, 14), "'the land of the north' — the direction the boiling pot tipped from in Jeremiah's second vision becomes the direction of the homecoming, and retires the Exodus oath"),
+    (("Jeremiah", 23, 9), ("Genesis", 1, 2), "rachaf — the same rare verb as the Spirit 'hovering' over the waters; only three occurrences in the Hebrew Bible, and this is the one where it is a man's bones that will not hold still"),
+    (("Jeremiah", 23, 13), ("Job", 1, 22), "tiflah, 'something unsavory' — the rare word for what Job refused to lay to God's charge is what Jeremiah saw in the prophets of Samaria"),
+    (("Jeremiah", 23, 14), ("Genesis", 19, 24), "'all of them have become to me like Sodom' — the city God overthrew becomes the measure of the holy city's own preaching"),
+    (("Jeremiah", 23, 16), ("Ecclesiastes", 1, 2), "mahbilim, from hevel — the vapor-word Ecclesiastes repeats five times in a line: these prophets do not merely say empty things, they make their hearers empty"),
+    (("Jeremiah", 23, 17), ("Jeremiah", 18, 12), "'the stubbornness of his own heart' — the people's own defiant boast, now sold back to them by the prophets as reassurance"),
+    (("Jeremiah", 23, 18), ("Job", 1, 6), "the sod, the closed divine council — one of Scripture's few glimpses inside it is the sons of God presenting themselves, with the Adversary among them"),
+    (("Jeremiah", 23, 20), ("Genesis", 49, 1), "'in the latter days' — the formula that opens Jacob's deathbed oracle, here holding off understanding of the storm until after it lands"),
+    (("Jeremiah", 23, 28), ("Exodus", 5, 7), "teven, 'straw' — the chopped stalk Pharaoh stopped supplying for bricks; not chaff but leftovers, weighed here against the grain"),
+    (("Jeremiah", 23, 29), ("Jeremiah", 20, 9), "'my word like fire' — the fire that consumed the prophet from inside when he tried to stop preaching is here aimed outward at the audience"),
+    (("Jeremiah", 23, 32), ("Genesis", 49, 4), "pachazut, 'recklessness' — the noun of the adjective flung at Reuben, 'unstable as water'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -9378,6 +9409,53 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Jeremías 23 ----
+    "tsemach": ("renuevo, brote",
+        "Un BROTE, un retoño — lo que sube de la tierra; de tsamach, «brotar». La imagen es un tocón "
+        "cortado que echa verde: algo pequeño que se levanta donde algo grande fue talado. Jeremías "
+        "promete a David un tsemach tsaddiq, un «Renuevo justo» (23:5), justo después de un capítulo "
+        "donde los cedros de la casa real han sido cortados y quemados (22:7). En los profetas "
+        "posteriores al destierro ya es un título hecho y derecho — «mi siervo el RENUEVO» de Zacarías "
+        "(3:8), «un varón cuyo nombre es Renuevo» (6:12) — y corre en paralelo al netser de Isaías, el "
+        "«vástago» del tronco de Isaí. La RV dice «Renuevo» por tradición; la TNM prefiere «brote», que "
+        "es la botánica más exacta. El mismo oráculo se repite en Jeremías 33, donde el nombre se le da "
+        "a la CIUDAD y no al hombre."),
+    "sod": ("consejo, círculo cerrado",
+        "Un CÍRCULO CERRADO — la sesión confidencial, la deliberación de dentro, y por extensión el "
+        "secreto que allí se trata. La prueba que Jeremías aplica a un profeta se apoya entera en esta "
+        "palabra: «¿quién ha estado en el sod de Jehová?» (23:18), y «si hubieran estado en mi sod, "
+        "habrían hecho volver a mi pueblo» (23:22). La Escritura solo entrevé ese círculo — los hijos "
+        "de Dios presentándose con el Adversario entre ellos (Job 1:6), Miqueas viendo al ejército del "
+        "cielo debatir quién inducirá a Acab (1 Reyes 22:19-22), la regla tajante de Amós de que Dios "
+        "no hace nada sin revelar su sod a los profetas (3:7). La RV traduce «secreto», la TNM «grupo "
+        "íntimo»; la palabra es una SALA, no una opinión. Su sentido humano corriente es el mismo: el "
+        "corrillo de amigos (Salmo 55:14), o el chisme que se escapa de uno (Proverbios 11:13)."),
+    "naveh": ("aprisco, pastizal, morada",
+        "Un PASTIZAL-MORADA — el terreno de pasto donde el pastor tiene su rebaño, y por eso también "
+        "una vivienda asentada. Es la bisagra callada de Jeremías 23: Dios promete devolver al rebaño "
+        "disperso «a su naveh» (v 3), y ocho versículos después «los ne'ot del desierto se han secado» "
+        "bajo la maldición (v 10). La misma palabra para el lugar prometido y el lugar arruinado. Es "
+        "la palabra detrás de los «delicados pastos» del Salmo del Pastor (23:2) y de Jerusalén como "
+        "«morada de quietud» (Isaías 33:20). Donde el español necesita «aprisco», «pasto» y «morada» "
+        "para un solo sustantivo hebreo, la conexión hay que señalarla en vez de oírla."),
+    "laanah": ("ajenjo",
+        "AJENJO — el arbusto amargo (Artemisia) del Próximo Oriente, la imagen bíblica corriente de un "
+        "sabor que castiga. Llega casi siempre en pareja: «una raíz que produce rosh y la'anah» "
+        "(Deuteronomio 29:18), y aquí «yo les hago comer AJENJO y les doy a beber mei-rosh» "
+        "(Jeremías 23:15) — siendo rosh una segunda planta amarga o venenosa, las «aguas de hiel» de la "
+        "RV. Lamentaciones lo convierte en el sabor de toda la catástrofe, «el ajenjo y la hiel» "
+        "(3:19). No es veneno en el sentido de una muerte rápida; el punto es que hay que tragarlo y no "
+        "se puede disfrutar. El griego apsinthos lo lleva hasta Apocalipsis 8:11 como nombre de una "
+        "estrella que cae."),
+    "sheqer": ("mentira, falsedad",
+        "MENTIRA, la Falsedad — y en Jeremías es casi un nombre propio. No solo una afirmación no "
+        "verdadera: toda una manera de estar en el mundo que no tiene suelo debajo. Los profetas "
+        "«profetizan sheqer en mi nombre» y cuentan «sueños de sheqer» (23:25, 32); el pueblo «anda en "
+        "la sheqer» (23:14). Es la palabra del noveno mandamiento para el testigo falso (Éxodo 20:16) y "
+        "la de la balanza engañosa (Proverbios 11:1). Su contrario en este capítulo no es la exactitud "
+        "sino emet — hablar la palabra de Dios «con fidelidad» (23:28) — y su compañera natural es "
+        "hevel, vapor: lo que venden los falsos profetas está vacío, y deja vacío también a quien los "
+        "oye."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -9640,6 +9718,44 @@ ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
     "sus discípulos quién dice la gente que es él — el punto más al norte al que cualquier Evangelio lo "
     "registra viajando, a unos cuarenta kilómetros al norte del mar de Galilea.")
 
+ENCYCLOPEDIA_ES["zedekiah"] = ("Sedequías",
+    "El último rey de Judá — nacido Matanías, instalado y rebautizado por el propio Nabucodonosor "
+    "después de la deportación del 597 (2 Reyes 24:17): un vasallo que lleva un nombre de trono "
+    "elegido por su conquistador. Coronado a los veintiún años, incapaz crónico de decidirse entre "
+    "sus funcionarios y su conciencia — manda delegaciones a Jeremías (21:1; 37:3), lo consulta a "
+    "escondidas (37:17; 38:14-16), deja que los príncipes lo echen a la cisterna y luego deja que "
+    "Ebed-mélec lo saque. La rebelión que el profeta le rogó no emprender trajo el sitio final "
+    "(588-586). Su final en Riblá es la frase más oscura del libro: sus hijos degollados delante de "
+    "sus ojos, y después sus ojos sacados — lo último que vio (39:6-7). ⚠ Y su nombre está haciendo "
+    "un trabajo que él no eligió. A Matanías lo renombraron TSIDQIYAHU, «Yah es mi justicia»; y "
+    "mientras él ocupaba ese trono, Jeremías anunció un Renuevo venidero cuyo nombre sería YHVH "
+    "TSIDQENU, «Jehová es NUESTRA justicia» (23:6) — los mismos dos elementos recolocados, el nombre "
+    "divino al frente y «mi» cambiado por «nuestra». El nombre de trono del último rey de Judá es "
+    "recogido, corregido y entregado a otro.")
+
+ENCYCLOPEDIA_ES["sodom-gomorrah"] = ("Sodoma y Gomorra",
+    "Mencionadas primero como puntos de referencia en la frontera cananea (Génesis 10:19). Lot va "
+    "derivando hacia ellas por etapas en el capítulo 13 — su ruina futura ya nombrada allí (13:10) — y "
+    "la maldad de la ciudad se declara sin rodeos en 13:13; en el capítulo 18 su «clamor» llega al "
+    "cielo y Abraham regatea con el Juez de toda la tierra hasta diez justos; y en el 19 cae la "
+    "sentencia: azufre y fuego desde los cielos, las ciudades y toda la llanura trastornadas "
+    "(19:24-29). «Como el trastorno de Sodoma» queda desde entonces como el dicho de los profetas para "
+    "la ruina total — y por eso escuece tanto que Jeremías se lo aplique a los profetas de la propia "
+    "Jerusalén (23:14). Joel Kramer, de Expedition Bible, identifica el sitio con Tall el-Hammam, en el "
+    "valle norte del Jordán: los escombros quemados y ricos en azufre encajan con las cuatro ciudades "
+    "destruidas de la llanura, mientras que una quinta muestra del lugar que se supone es Zoar — "
+    "perdonada en el relato — no ardió.")
+
+ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
+    "Capital del reino del norte, Israel, desde Omrí en adelante: compró la colina a un hombre llamado "
+    "Semer y edificó sobre ella una capital nueva (1 Reyes 16:24), igual que David había tomado "
+    "Jerusalén — una ciudad de la dinastía y no de una tribu. El palacio de Acab y Jezabel, con sus "
+    "incrustaciones de marfil, se describe en Reyes y esos marfiles han sido excavados. Asiria la "
+    "sitió y la tomó en 722 a. C., y con ella acabó el reino del norte; sus habitantes posteriores son "
+    "los samaritanos de los Evangelios. Jeremías la usa como vara de medir: lo que vio en los profetas "
+    "de Samaria fue «algo desabrido» — profetizaban por Baal —, pero lo que vio en los de Jerusalén "
+    "fue peor (23:13-14).")
+
 
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
@@ -9669,6 +9785,44 @@ ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "jer23": [dict(
+        file="dore-jeremiah-preaching.jpg",
+        title="The Prophet Jeremiah",
+        title_es="El profeta Jeremías",
+        artist="Gustave Doré",
+        year="1866",
+        location="Wood engraving, La Grande Bible de Tours",
+        location_es="Grabado en madera, La Grande Bible de Tours",
+        alt="A bearded prophet in flowing robes stands barefoot on a flight of stone temple steps, "
+            "leaning forward with one arm flung up toward a black, storm-filled sky and the other "
+            "braced on the stonework; below and around him a dozen hooded, seated listeners look "
+            "away, slump with their heads in their hands, or glance back over their shoulders at him, "
+            "and a spearman waits at the edge of the crowd",
+        note="⚠ NOT strictly this chapter's scene. Doré captioned this plate "
+             "<em>Jeremiah 1:14-15</em> &mdash; &ldquo;out of the north the evil will be opened "
+             "up&rdquo; &mdash; and chapter 1 on these pages already carries Rembrandt&rsquo;s "
+             "<em>Jeremiah Lamenting</em>, so nothing is spent by borrowing it here. It is placed on "
+             "chapter 23 because what Doré actually drew is this chapter&rsquo;s subject: not a "
+             "portrait but an <strong>audience</strong>. The prophet points at a sky the engraving "
+             "has already filled with the tempest of verse 19; the crowd he is pointing at has its "
+             "back to him, and the men who were paid to tell them &ldquo;you will have peace&rdquo; "
+             "(v 17) are the ones this chapter is about. Doré cut 241 of these for "
+             "<em>La Grande Bible de Tours</em> in 1866 &mdash; only two of them are Jeremiah, and "
+             "this is the one that is not Baruch taking dictation.",
+        note_es="⚠ NO es exactamente la escena de este capítulo. Doré tituló esta lámina "
+                "<em>Jeremías 1:14-15</em> &mdash; «del norte se soltará el mal» &mdash; y el "
+                "capítulo 1 en estas páginas ya lleva el <em>Jeremías lamentándose</em> de "
+                "Rembrandt, de modo que no se gasta nada al tomarla prestada aquí. Se coloca en el "
+                "capítulo 23 porque lo que Doré dibujó de hecho es el tema de este capítulo: no un "
+                "retrato, sino un <strong>auditorio</strong>. El profeta señala un cielo que el "
+                "grabado ya ha llenado con la tempestad del versículo 19; la multitud a la que "
+                "señala le da la espalda, y los hombres a quienes pagaban por decirle «tendréis paz» "
+                "(v 17) son de quienes trata este capítulo. Doré grabó 241 láminas para "
+                "<em>La Grande Bible de Tours</em> en 1866 &mdash; solo dos son de Jeremías, y esta "
+                "es la que no es Baruc tomando dictado.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:123.The_Prophet_Jeremiah.jpg",
+    )],
     "jer18": [dict(
         file="michelangelo-jeremiah-sistine.jpg",
         title="The Prophet Jeremiah",
