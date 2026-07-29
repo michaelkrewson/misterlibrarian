@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 23 (Greek) ----
+    ("hypokrites", "hypokritēs", "ὑποκριτής", "hypokritēs",
+     "AN ACTOR — one who speaks from behind a mask, from hypo-krinomai, to answer or play a part on stage. The moral sense came later; the theatrical one is what the word still carried. ⚠ Matthew uses it more than the rest of the New Testament together (13 of about 18 occurrences), and the seven woes of chapter 23 hammer it six times — always about the same thing, the gap between the outside and the inside. That is why the chapter's images are all outsides: widened phylacteries, lengthened tassels, a cup washed on one side, a tomb painted white. The Sermon had already used the word three times of praying, giving and fasting 'to be seen' (6:2, 5, 16), which is the same charge in miniature. Note what it does NOT mean here: insincerity in the modern sense of privately disbelieving. The accusation is that the performance and the person have come apart.", ("Matthew", 23, 13)),
+    ("phylakterion", "phylaktērion", "φυλακτήριον", "phylaktērion",
+     "A PHYLACTERY — the small leather case holding Torah texts, bound on the arm and forehead in obedience to Deuteronomy 6:8, 'bind them as a sign on your hand.' The Hebrew name is TEFILLIN. ⚠ The Greek word means an AMULET, a protective charm — which is either Matthew's wry choice of term or simply what Greek-speakers called them, and either way it is what English has inherited untranslated. The complaint at Matthew 23:5 is not that they are worn: it is platynousi, they WIDEN them, alongside megalynousi of the tassels — they make them big, so as 'to be seen.' Note that this is the only place the word appears in the New Testament, and that nothing in the Gospels says whether Jesus wore them, though 9:20 and 14:36 show he wore the tassels.", ("Matthew", 23, 5)),
+    ("kekoniamenos", "kekoniamenos", "κεκονιαμένος", "kekoniamenos",
+     "WHITEWASHED, limed — from konia, dust or lime. ⚠ The image at Matthew 23:27 is sharper than 'pretty outside, rotten inside,' because of WHY tombs were limed: not to decorate them but to make them VISIBLE, so that passers-by could avoid them — contact with a grave made a person ritually unclean for seven days (Numbers 19:16), and a pilgrim who touched one could not keep the festival. So the whitewash was a WARNING, and the accusation is that a mark of contagion has been mistaken for ornament. Luke has the mirror-image insult: unmarked graves that people walk over without knowing (11:44). English 'whited sepulchre' as a byword for hypocrisy descends directly from the KJV's rendering here.", ("Matthew", 23, 27)),
+    ("konops", "kōnōps", "κώνωψ", "kōnōps",
+     "A GNAT — the smallest winged insect, and the smallest unclean creature that could ruin a drink; wine was strained through cloth for exactly this reason. ⚠ At Matthew 23:24 it is paired with the KAMĒLOS, the largest unclean animal in the neighbourhood, in what is plainly a cartoon: 'you strain out the gnat and gulp down the camel.' The two words may also have rhymed in Aramaic — qalma (a gnat or louse) against gamla (a camel) — which if so makes it a pun as well. The verbs are technical and blunt in turn: diÿlizō is to filter, katapinō is to gulp down whole. This is the camel's second appearance in five chapters, after the needle's eye at 19:24; the shelf's 'swallow' is correct but tamer than the Greek.", ("Matthew", 23, 24)),
     # ---- Matthew 22 (Greek) ----
     ("eikon", "eikōn", "εἰκών", "eikōn",
      "AN IMAGE — a likeness, a portrait, and the root of English 'icon.' ⚠ It is not a neutral word in a Greek Bible: it is the word of Genesis 1:27, humankind made kat' eikona theou, 'according to the image of God.' Which is exactly why Matthew 22:20 is a better question than it looks. Jesus asks whose eikōn and whose epigraphē (inscription) the denarius carries; the answer is Caesar's, so the coin is already his — and the question of what carries GOD's image is left for the hearer to finish. Paul then uses the word of Christ himself, 'the eikōn of the invisible God' (Colossians 1:15), and of the believer being transformed 'into the same eikōn' (2 Corinthians 3:18). A Roman denarius of Tiberius carried his portrait and a legend naming him son of the divine Augustus, so the object in their hand was already awkward for anyone scrupulous about images.", ("Matthew", 22, 20)),
@@ -5195,6 +5204,17 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 23 ----
+    (("Matthew", 23, 5), ("Matthew", 9, 20), "kraspedon — the third and last of the fringe's appearances: touched for healing, begged for by crowds, and here criticized for being lengthened"),
+    (("Matthew", 23, 5), ("Matthew", 14, 36), "the fringe crowds begged to touch, now the fringe made big to be seen"),
+    (("Matthew", 23, 11), ("Matthew", 20, 26), "'the greater will be your servant' — repeated almost verbatim from the answer to the two ambitious brothers"),
+    (("Matthew", 23, 12), ("Matthew", 18, 4), "the exalted/humbled reversal — the same logic as the child set in the middle"),
+    (("Matthew", 23, 16), ("Matthew", 15, 14), "'blind guides' — returning by name in the woes, as chapter 15's note said it would, and paired there with the same pit"),
+    (("Matthew", 23, 22), ("Matthew", 5, 34), "no oath fails to reach God — the Sermon reached the same conclusion by the shorter route: do not swear at all"),
+    (("Matthew", 23, 24), ("Matthew", 19, 24), "the camel's second outing in five chapters, after the needle's eye"),
+    (("Matthew", 23, 33), ("Matthew", 3, 7), "'brood of vipers' — John the Baptist's phrase for the same men, now in Jesus' mouth"),
+    (("Matthew", 23, 39), ("Matthew", 21, 9), "Psalm 118:26 — shouted by the crowds at the gate, and handed back here as something still to be said"),
+    (("Matthew", 23, 39), ("Matthew", 21, 42), "the third use of Psalm 118 in three chapters: its ending sung, its rejected stone quoted, its ending made a condition"),
     # ---- Matthew 22 ----
     (("Matthew", 22, 12), ("Matthew", 20, 13), "hetaire, 'friend' — the third and coolest of Matthew's three uses, which chapter 20's note said was waiting for a wedding hall"),
     (("Matthew", 22, 14), ("Matthew", 20, 16), "'many are called, but few are chosen' — original HERE, where the parable has actually been about calling, and imported by copyists there, where it has nothing to attach to"),
@@ -9527,6 +9547,43 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 23 ----
+    "hypokrites": ("hipócrita, actor",
+        "UN ACTOR — el que habla desde detrás de una máscara, de hypo-krinomai, responder o representar un "
+        "papel en escena. El sentido moral vino después; el teatral es el que la palabra seguía llevando. "
+        "⚠ Mateo la usa más que el resto del Nuevo Testamento junto (13 de unas 18 apariciones), y los siete "
+        "ayes del capítulo 23 la martillean seis veces — siempre sobre lo mismo, la distancia entre el fuera y "
+        "el dentro. Por eso todas las imágenes del capítulo son exteriores: filacterias ensanchadas, flecos "
+        "alargados, una copa lavada por un lado, un sepulcro pintado de blanco. El Sermón ya había usado la "
+        "palabra tres veces del orar, dar y ayunar «para ser vistos» (6:2, 5, 16), que es el mismo cargo en "
+        "miniatura. Nótese lo que NO significa aquí: insinceridad en el sentido moderno de no creer en "
+        "privado. La acusación es que la actuación y la persona se han separado."),
+    "phylakterion": ("filacteria",
+        "UNA FILACTERIA — la cajita de cuero con textos de la Torá que se ata al brazo y a la frente en "
+        "obediencia a Deuteronomio 6:8, «átalas como señal en tu mano». El nombre hebreo es TEFILÍN. ⚠ La "
+        "palabra griega significa AMULETO, objeto protector — lo cual es o una elección socarrona de Mateo o "
+        "simplemente cómo las llamaban los griegos, y en cualquier caso es lo que el español ha heredado sin "
+        "traducir. La queja de Mateo 23:5 no es que se lleven: es platynousi, las ENSANCHAN, junto a "
+        "megalynousi de los flecos — las hacen grandes, para «ser vistos». Nótese que es el único lugar del "
+        "Nuevo Testamento donde aparece la palabra, y que nada en los Evangelios dice si Jesús las llevaba, "
+        "aunque 9:20 y 14:36 muestran que llevaba los flecos."),
+    "kekoniamenos": ("blanqueado, encalado",
+        "BLANQUEADO, encalado — de konia, polvo o cal. ⚠ La imagen de Mateo 23:27 es más afilada que «bonito "
+        "por fuera, podrido por dentro», por la RAZÓN de que se encalaran las tumbas: no para adornarlas, sino "
+        "para hacerlas VISIBLES, de modo que quien pasara pudiera evitarlas — el contacto con un sepulcro "
+        "dejaba a una persona ritualmente impura siete días (Números 19:16), y un peregrino que tocara uno no "
+        "podía celebrar la fiesta. Así que la cal era una ADVERTENCIA, y la acusación es que una marca de "
+        "contagio se ha tomado por ornamento. Lucas tiene el insulto espejo: tumbas sin marcar sobre las que "
+        "la gente camina sin saberlo (11:44). El «sepulcro blanqueado» como sinónimo de hipocresía en español "
+        "desciende directamente de esta imagen."),
+    "konops": ("mosquito",
+        "UN MOSQUITO — el insecto alado más pequeño, y la criatura impura más pequeña capaz de arruinar una "
+        "bebida; el vino se colaba con un paño exactamente por eso. ⚠ En Mateo 23:24 va emparejado con el "
+        "KAMĒLOS, el animal impuro más grande del vecindario, en lo que es a las claras una caricatura: "
+        "«coláis el mosquito y os tragáis el camello». Las dos palabras pudieron además rimar en arameo "
+        "—qalmá (mosquito o piojo) frente a gamlá (camello)—, lo que, si es así, lo vuelve también un juego de "
+        "palabras. Los verbos son técnicos y rotundos por turnos: diÿlizō es filtrar, katapinō es tragar de un "
+        "golpe. Es la segunda aparición del camello en cinco capítulos, tras el ojo de la aguja de 19:24."),
     # ---- Mateo 22 ----
     "eikon": ("imagen",
         "UNA IMAGEN — una semejanza, un retrato, y la raíz de «icono». ⚠ No es una palabra neutra en una "
@@ -10187,6 +10244,45 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat23": [dict(
+        file="tissot-woe-scribes-pharisees.jpg",
+        title="Woe unto You, Scribes and Pharisees",
+        title_es="¡Ay de vosotros, escribas y fariseos!",
+        artist="James Tissot",
+        year="1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Brooklyn Museum, Nueva York",
+        alt="A temple colonnade with a polished stone floor and a massive dark column on the right. Christ, "
+            "in white, stands in the middle distance with one arm raised, turning away down the portico; a "
+            "cluster of figures stands behind him. In the left foreground a group of elders in dark robes sit "
+            "on carved wooden benches, hunched forward with their heads in their hands or their faces "
+            "covered, one with an orange sash across his knees. Other figures in white stand at the right, "
+            "watching",
+        note="⚠ Tissot has put them in the <strong>seats</strong>. Verse 6 complains that they love &ldquo;the "
+             "first seats in the synagogues,&rdquo; and verse 2 says they sit on Moses&rsquo; own chair &mdash; "
+             "and here they are on carved benches in the front row, collapsed inward, heads in hands, faces "
+             "hidden. Note also that Christ is not confronting them face to face: he is already walking away "
+             "down the portico, which is what the chapter actually does &mdash; verse 1 addresses &ldquo;the "
+             "crowds and his disciples,&rdquo; talking <em>about</em> the scribes rather than to them until "
+             "Jerusalem itself is addressed at the end. One of some 350 gouaches Tissot made for an "
+             "illustrated life of Christ after travelling to Palestine to study the settings; the Brooklyn "
+             "Museum bought the whole series in 1900 and has held it since; Tissot made three trips to "
+             "Palestine to record the landscape, architecture and dress first-hand. This is the second "
+             "Tissot in the library, after chapter 10&rsquo;s.",
+        note_es="⚠ Tissot los ha puesto en los <strong>asientos</strong>. El versículo 6 se queja de que aman "
+                "«los primeros asientos en las sinagogas», y el versículo 2 dice que se sientan en la cátedra "
+                "misma de Moisés &mdash; y aquí están, en bancos tallados de primera fila, hundidos hacia "
+                "dentro, la cabeza entre las manos, el rostro tapado. Nótese además que Cristo no los "
+                "encara: ya va alejándose por el pórtico, que es lo que el capítulo hace de hecho &mdash; el "
+                "versículo 1 se dirige a «las multitudes y a sus discípulos», y habla <em>de</em> los escribas "
+                "y no con ellos hasta que al final se dirige a Jerusalén misma. Es uno de unos 350 gouaches "
+                "que Tissot hizo para una vida ilustrada de Cristo: hizo tres viajes a Palestina para "
+                "registrar de primera mano el paisaje, la arquitectura y la vestimenta. El Brooklyn Museum "
+                "compró la serie completa en 1900 y la conserva desde entonces. Es el segundo Tissot de la "
+                "biblioteca, tras el del capítulo 10.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Woe_unto_You,_Scribes_and_Pharisees_(Malheur_%C3%A0_vous,_scribes_et_pharisiens)_-_James_Tissot.jpg",
+    )],
     "mat22": [dict(
         file="titian-tribute-money.jpg",
         title="The Tribute Money (Der Zinsgroschen)",
