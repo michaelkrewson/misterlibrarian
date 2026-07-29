@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 19 (Greek) ----
+    ("porneia", "porneia", "πορνεία", "porneia",
+     "SEXUAL IMMORALITY — the general word, and deliberately wider than adultery, which Greek has its own term for (moicheia). It covers prostitution (pornē, a prostitute, is the root), incest, and unlawful unions generally. ⚠ Everything about Matthew's exception clause turns on that width: 'whoever divorces his wife — not for porneia — and marries another commits adultery' (19:9, and 5:32), where BOTH words appear in one sentence and are plainly not synonyms. Readings of the clause have divided churches for centuries: adultery; or marriage within forbidden degrees of kinship, which would make it an annulment rule rather than a divorce rule; or unchastity discovered during betrothal, as in Matthew 1:19. The clause is found ONLY in Matthew — Mark 10:11 and Luke 16:18 have the saying with no exception at all. This library sets out the readings and does not vote.", ("Matthew", 19, 9)),
+    ("palingenesia", "palingenesia", "παλιγγενεσία", "palingenesia",
+     "REBIRTH, of everything — palin ('again') + genesis ('origin, birth'). Not an individual's conversion but the remaking of the whole order of things: 'in the palingenesia, when the Son of Man sits on his throne of glory' (Matthew 19:28). It occurs only twice in the New Testament — here and Titus 3:5, of the washing of rebirth — and the Stoics used it of the periodic reconstitution of the cosmos after its dissolution. ⚠ The shelf scatters: KJV/ASV 'in the regeneration' (a word modern English has almost entirely handed over to the individual), NIV 'at the renewal of all things,' NWT 'in the re-creation.' This translation reads 'the renewal of all things' because the scale is the point.", ("Matthew", 19, 28)),
+    ("eunouchos", "eunouchos", "εὐνοῦχος", "eunouchos",
+     "A EUNUCH — literally 'bed-keeper' (eunē, bed + echō, to hold), from the role of guarding a royal harem; in the Greek Old Testament it also just means a court official, whether or not castrated (Potiphar is called one, and he has a wife). ⚠ Matthew 19:12 names three kinds, and the third is the argument: those born so, those made so by others, and those who 'made themselves eunuchs for the sake of the kingdom of the heavens' — read from very early on as voluntary celibacy. At least one famous reader took it literally: Eusebius reports that the young Origen castrated himself on the strength of this verse and later regretted it. Note how carefully the surrounding sentences fence it: 'not everyone can make room for this word,' and 'let the one who is able.' The Ethiopian of Acts 8 is the New Testament's other memorable eunuch — a man the Law barred from the assembly (Deuteronomy 23:1), baptized without discussion.", ("Matthew", 19, 12)),
+    ("sklerokardia", "sklērokardia", "σκληροκαρδία", "sklērokardia",
+     "HARDNESS OF HEART — sklēros ('hard, dry, stiff') + kardia. Not a classical Greek word: it was built for the Greek Old Testament to carry a Hebrew idiom, the uncircumcised or stubborn heart (Deuteronomy 10:16, Jeremiah 4:4). ⚠ It does one specific job in Matthew 19:8, and it is a job about LAW: Moses did not COMMAND the certificate of divorce, as the Pharisees claim — he PERMITTED it, and 'for your sklērokardia.' So a provision of the Torah is described as a concession to a condition, given because the ideal could not be enforced on people as they are. That distinction — between what is commanded and what is permitted, and between the beginning and the concession — is the whole of Jesus' answer, and the two Greek verbs (eneteilato / epetrepsen) are kept distinct in this translation for that reason.", ("Matthew", 19, 8)),
     # ---- Matthew 18 (Greek) ----
     ("skandalon", "skandalon / skandalizō", "σκάνδαλον", "skandalon",
      "THE TRIGGER OF A TRAP — the baited stick that springs it, and so anything set in a person's way that brings them down; the verb skandalizō is to spring it on someone. English has no noun for it, and every version reaches for a phrase. ⚠ The KJV's 'offend' and 'offences' is a genuine false friend: in 1611 it meant to cause a stumble, and it now means to hurt feelings, which turns Matthew 18:6-9 into something about rudeness. ASV reads 'cause to stumble' / 'occasions of stumbling,' NWT 'stumble,' NIV 'cause to sin.' This translation keeps ONE root visible — 'cause to stumble' / 'stumbling-block' — because the passage's whole force is that the same word runs from what you do to a child (18:6) to what your own hand does to you (18:8). The related skandalon is what Peter becomes to Jesus at 16:23, and what the cross itself is to Paul (1 Corinthians 1:23, 'a stumbling-block to Jews').", ("Matthew", 18, 6)),
@@ -5159,6 +5168,17 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 19 ----
+    (("Matthew", 19, 1), ("Matthew", 13, 53), "the discourse formula — the fourth of the five fixed sentences that mark the close of each great block of teaching"),
+    (("Matthew", 19, 4), ("Genesis", 1, 27), "'male and female he created them' — quoted to answer a question about divorce by going behind Moses to the first page"),
+    (("Matthew", 19, 5), ("Genesis", 2, 24), "'the two will become one flesh' — and note that Genesis 2:24 is the NARRATOR's comment, introduced here as something the Creator 'said'"),
+    (("Matthew", 19, 9), ("Matthew", 5, 32), "the exception clause — the second and last of the two places Matthew has it, and it appears in no other Gospel"),
+    (("Matthew", 19, 13), ("Matthew", 18, 2), "the same word, paidia — one chapter after a child was set in the middle of them as the measure of greatness, the disciples turn children away"),
+    (("Matthew", 19, 21), ("Matthew", 5, 48), "teleios, 'complete' — the Sermon's 'be complete as your heavenly Father is complete,' answering the young man's 'what do I still lack?'"),
+    (("Matthew", 19, 21), ("Matthew", 6, 20), "'treasure in the heavens' — the Sermon's instruction, here made a concrete and refusable offer"),
+    (("Matthew", 19, 21), ("Matthew", 4, 19), "'follow me' — the call that started the book, declined here for the only time in it"),
+    (("Matthew", 19, 24), ("Matthew", 12, 28), "'the kingdom of God' — one of the handful of places Matthew departs from his standing 'kingdom of the heavens,' one sentence after using it"),
+    (("Matthew", 19, 22), ("Matthew", 17, 23), "lypeō, 'grieving' — the disciples' word at the passion prediction, now the rich young man's as he walks away"),
     # ---- Matthew 18 ----
     (("Matthew", 18, 2), ("Matthew", 18, 20), "en mesō autōn, 'in the middle of them' — the same three Greek words open and close the discourse: the child stood in the middle, and then Christ in the middle"),
     (("Matthew", 18, 5), ("Matthew", 10, 40), "the receiving-chain — whoever receives you receives me, and here whoever receives one such child receives me"),
@@ -9451,6 +9471,48 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 19 ----
+    "porneia": ("inmoralidad sexual, fornicación",
+        "INMORALIDAD SEXUAL — la palabra general, y deliberadamente más ancha que «adulterio», para el cual "
+        "el griego tiene su propio término (moicheia). Abarca la prostitución (pornē, prostituta, es la "
+        "raíz), el incesto y las uniones ilícitas en general. ⚠ Todo lo que se discute sobre la cláusula de "
+        "excepción de Mateo gira sobre esa anchura: «cualquiera que repudie a su mujer —no por porneia— y se "
+        "case con otra, comete adulterio» (19:9, y 5:32), donde AMBAS palabras aparecen en una sola frase y "
+        "evidentemente no son sinónimos. Las lecturas de la cláusula llevan siglos dividiendo iglesias: "
+        "adulterio; o matrimonio dentro de grados de parentesco prohibidos, lo que la convertiría en una "
+        "regla de nulidad y no de divorcio; o deshonestidad descubierta durante el noviazgo, como en Mateo "
+        "1:19. La cláusula se encuentra SOLO en Mateo — Marcos 10:11 y Lucas 16:18 traen el dicho sin "
+        "excepción alguna. Esta biblioteca expone las lecturas y no vota."),
+    "palingenesia": ("renovación, regeneración",
+        "RENACIMIENTO, de todo — palin («otra vez») + genesis («origen, nacimiento»). No la conversión de un "
+        "individuo, sino el rehacerse de todo el orden de las cosas: «en la palingenesia, cuando el Hijo del "
+        "Hombre se siente en su trono de gloria» (Mateo 19:28). Aparece solo dos veces en el Nuevo Testamento "
+        "—aquí y en Tito 3:5, del lavamiento de la regeneración— y los estoicos la usaban de la "
+        "reconstitución periódica del cosmos tras su disolución. ⚠ El estante se dispersa: la RV «en la "
+        "regeneración» (palabra que el español moderno ha entregado casi del todo a lo individual), la TNM "
+        "«en la re-creación», la NVI «en la renovación de todas las cosas». Esta traducción lee «la "
+        "renovación de todas las cosas» porque la escala es justamente el asunto."),
+    "eunouchos": ("eunuco",
+        "UN EUNUCO — literalmente «guardián del lecho» (eunē, lecho + echō, tener), por el oficio de custodiar "
+        "un harén real; en el Antiguo Testamento griego significa además simplemente un funcionario de la "
+        "corte, castrado o no (a Potifar se le llama así, y tiene mujer). ⚠ Mateo 19:12 nombra tres clases, y "
+        "la tercera es el argumento: los que nacieron así, los que fueron hechos así por otros, y los que «se "
+        "hicieron eunucos a sí mismos por causa del reino de los cielos» — leído desde muy pronto como "
+        "celibato voluntario. Al menos un lector célebre lo tomó al pie de la letra: Eusebio cuenta que el "
+        "joven Orígenes se castró apoyándose en este versículo y después se arrepintió. Nótese con cuánto "
+        "cuidado lo acotan las frases vecinas: «no todos pueden dar cabida a esta palabra» y «el que pueda». "
+        "El etíope de Hechos 8 es el otro eunuco memorable del Nuevo Testamento — un hombre a quien la Ley "
+        "excluía de la asamblea (Deuteronomio 23:1), bautizado sin discusión."),
+    "sklerokardia": ("dureza de corazón",
+        "DUREZA DE CORAZÓN — sklēros («duro, seco, rígido») + kardia. No es palabra del griego clásico: se "
+        "fabricó para que el Antiguo Testamento griego pudiera llevar un modismo hebreo, el corazón "
+        "incircunciso o terco (Deuteronomio 10:16, Jeremías 4:4). ⚠ En Mateo 19:8 hace un trabajo muy "
+        "concreto, y es un trabajo sobre la LEY: Moisés no MANDÓ la carta de divorcio, como pretenden los "
+        "fariseos — la PERMITIÓ, y «por vuestra sklērokardia». Es decir, una disposición de la Torá se "
+        "describe como una concesión a una condición, dada porque el ideal no podía imponerse a la gente tal "
+        "como es. Esa distinción —entre lo mandado y lo permitido, y entre el principio y la concesión— es "
+        "toda la respuesta de Jesús, y por eso esta traducción mantiene distintos los dos verbos griegos "
+        "(eneteilato / epetrepsen)."),
     # ---- Mateo 18 ----
     "skandalon": ("tropiezo, trampa",
         "EL GATILLO DE UNA TRAMPA — el palito cebado que la dispara, y de ahí cualquier cosa puesta en el "
@@ -9948,6 +10010,42 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat19": [dict(
+        file="hofmann-rich-young-ruler.jpg",
+        title="Christ and the Rich Young Ruler",
+        title_es="Cristo y el joven rico",
+        artist="Heinrich Hofmann",
+        year="1889",
+        location="Riverside Church, New York",
+        location_es="Riverside Church, Nueva York",
+        alt="Christ stands at the centre in a red robe and dark blue mantle, turning toward a young man "
+            "on the right who is dressed in a heavy cream-and-gold cloak over a green sleeve, with a "
+            "jewelled turban; the young man looks down, hands clasped in front of him. Christ's right "
+            "hand is open and extended away from him, toward the lower left, where a thin, bare-shouldered "
+            "old beggar sits on the ground with his palm held out, a woman in a dark hood standing behind "
+            "him. Stone walls and an archway frame them, with a pale sky visible at the far left",
+        note="The sermon is in the gesture. Hofmann puts the young man and the beggar on opposite sides "
+             "of the picture and has Christ turn from the one and point to the other &mdash; which is "
+             "exactly what verse 21 says: sell what belongs to you and give <em>to the poor</em>. ⚠ Note "
+             "the young man&rsquo;s hands. They are folded over his own body, in front of the expensive "
+             "cloak, while the beggar&rsquo;s is open. Hofmann has decided the outcome before Matthew "
+             "reports it. Painted in 1889 by a German academic painter whose Christ heads became some of "
+             "the most widely reproduced religious images of the following century; this panel was bought "
+             "by John D. Rockefeller Jr. and hangs in Riverside Church in New York &mdash; a detail worth "
+             "a moment, given the subject.",
+        note_es="El serm&oacute;n est&aacute; en el gesto. Hofmann pone al joven y al mendigo en lados "
+                "opuestos del cuadro y hace que Cristo se aparte del uno y se&ntilde;ale al otro &mdash; "
+                "que es exactamente lo que dice el vers&iacute;culo 21: vende lo que te pertenece y da "
+                "<em>a los pobres</em>. ⚠ F&iacute;jese en las manos del joven: est&aacute;n cruzadas "
+                "sobre su propio cuerpo, delante del manto caro, mientras que la del mendigo est&aacute; "
+                "abierta. Hofmann ha decidido el desenlace antes de que Mateo lo cuente. Pintado en 1889 "
+                "por un pintor acad&eacute;mico alem&aacute;n cuyas cabezas de Cristo llegaron a ser de "
+                "las im&aacute;genes religiosas m&aacute;s reproducidas del siglo siguiente; esta tabla la "
+                "compr&oacute; John D. Rockefeller Jr. y cuelga en la Riverside Church de Nueva York "
+                "&mdash; detalle que merece un momento, dado el asunto.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Hoffman-ChristAndTheRichYoungRuler.jpg",
+    )],
     "mat18": [dict(
         file="hemessen-unmerciful-servant.jpg",
         title="The Parable of the Unmerciful Servant",
