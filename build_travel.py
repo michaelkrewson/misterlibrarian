@@ -581,7 +581,10 @@ def _tag_pills(p):
     if not p["tags"]:
         return ""
     return ('<div class="tags">'
-            + "".join(f'<span class="pill">{html.escape(t)}</span>' for t in p["tags"])
+            + "".join(
+                f'<a class="pill" href="index.html?tag={_tag_slug(t)}">'
+                f'{html.escape(t)}</a>'
+                for t in p["tags"])
             + "</div>")
 
 
@@ -731,6 +734,22 @@ def build_index(posts):
     if (handed) {{
       input.value = handed;
       query = handed.trim().toLowerCase();
+      apply();
+    }}
+  }}
+
+  // Arriving from a tag pill at the foot of an entry lands as index.html?tag=<slug>
+  // — the same plain-GET handoff the header search uses, so a post page needs no
+  // JS of its own. Only honoured if a chip with that slug actually exists, so a
+  // stale or hand-typed tag shows everything rather than an empty page.
+  var handedTag = new URLSearchParams(location.search).get('tag');
+  if (handedTag && filterBar) {{
+    var match = filterBar.querySelector('.chip[data-tag="' + handedTag + '"]');
+    if (match) {{
+      activeTag = handedTag;
+      filterBar.querySelectorAll('.chip').forEach(function(c){{
+        c.classList.toggle('on', c === match);
+      }});
       apply();
     }}
   }}
