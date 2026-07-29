@@ -776,7 +776,7 @@ DICTIONARY = [
      "'Authority' — what astounded the crowds (Matthew 7:29): the scribes taught by citation, rulings in the names of earlier teachers; this preacher's only footnote was 'but I say to you.' Planted where the book can reach it: Matthew's last sentence claims 'ALL authority, in heaven and on earth' (28:18).", ("Matthew", 7, 29)),
     # ---- Revelation 1 (Greek) ----
     ("ekklesia", "ekklēsia", "ἐκκλησία", "ekklēsia",
-     "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it. ⚠ Jesus himself says the word only twice in this Gospel — first at Matthew 16:18, 'on this rock I will build my ekklēsia,' answered to Peter's confession at Caesarea Philippi, long before this library reached Revelation to discuss the term at length.", ("Revelation", 1, 4)),
+     "Assembly, the called-out gathering — in secular Greek a city's voting assembly (Acts 19 uses this very word for the Ephesus RIOT), in the Greek Bible the assembly of Israel (qahal). No building, no institution. Tyndale therefore rendered it 'congregation' — and King James's Rule 3 ordered his translators to keep 'the old ecclesiastical words… the word Church not to be translated Congregation.' This translation reads CONGREGATION (with Tyndale, and the NWT after him); 'church' descends from a different word entirely — kyriakon, 'the Lord's house' — and carries the later building with it. ⚠ Jesus himself says the word only twice in this Gospel — and nowhere else in any Gospel. First at Matthew 16:18, 'on this rock I will build my ekklēsia,' answered to Peter's confession at Caesarea Philippi; then at Matthew 18:17, 'tell it to the ekklēsia,' inside a three-step procedure for a quarrel between two people. The second occurrence is the one that constrains the first: whatever the word means at 18:17, it has to be something small enough that a man can stand up in it and describe a private grievance. The KJV tradition prints 'church' in both places, which imports an institution into a domestic argument.", ("Revelation", 1, 4)),
     ("apokalypsis", "apokalypsis", "ἀποκάλυψις", "apokalypsis",
      "An UNVEILING, an uncovering — apo, 'away', + kalyptō, 'to cover': the drawing-back of a veil from what was hidden. It is the first word of the last book of the Bible (Apokalypsis Iōannou, 'the Revelation of John') and the source of English 'apocalypse', which in ordinary use has drifted from disclosure to catastrophe. ⚠ At 2 Thessalonians 1:7 it names the Lord's coming as an uncovering — set beside parousia, 'arrival, presence', at 2:1 and 2:8: the same event under two images, a curtain drawn back and a monarch arriving. Paul also uses it of the disclosure of a hidden mystery (Romans 16:25) and of the future 'revealing of the sons of God' (Romans 8:19).", ("Revelation", 1, 1)),
     ("pantokrator", "pantokratōr", "παντοκράτωρ", "pantokratōr",
@@ -1143,6 +1143,13 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 18 (Greek) ----
+    ("skandalon", "skandalon / skandalizō", "σκάνδαλον", "skandalon",
+     "THE TRIGGER OF A TRAP — the baited stick that springs it, and so anything set in a person's way that brings them down; the verb skandalizō is to spring it on someone. English has no noun for it, and every version reaches for a phrase. ⚠ The KJV's 'offend' and 'offences' is a genuine false friend: in 1611 it meant to cause a stumble, and it now means to hurt feelings, which turns Matthew 18:6-9 into something about rudeness. ASV reads 'cause to stumble' / 'occasions of stumbling,' NWT 'stumble,' NIV 'cause to sin.' This translation keeps ONE root visible — 'cause to stumble' / 'stumbling-block' — because the passage's whole force is that the same word runs from what you do to a child (18:6) to what your own hand does to you (18:8). The related skandalon is what Peter becomes to Jesus at 16:23, and what the cross itself is to Paul (1 Corinthians 1:23, 'a stumbling-block to Jews').", ("Matthew", 18, 6)),
+    ("gehenna", "geenna", "γέεννα", "geenna",
+     "GEHENNA — not a Greek word at all but a Hebrew place-name in Greek clothes: ge-hinnom, the Valley of Hinnom, the ravine running along Jerusalem's southern and western sides. Its history is the point. Children were burned there to Molech at the high place called TOPHETH (2 Kings 23:10; Jeremiah 19, where Jeremiah is sent to smash a flask over it), which is why Josiah defiled it and why the name became shorthand for the place of final judgement. ⚠ Every English version except ASV and NWT renders it 'hell,' which imports a great deal of later architecture — Greek, Latin and medieval — into a word that names a valley you can walk to. This translation transliterates. Note that the New Testament also uses HADES (the realm of the dead) and TARTARUS (2 Peter 2:4), and they are not synonyms; collapsing all three into 'hell' is the single largest thing English Bibles do to this subject.", ("Matthew", 18, 9)),
+    ("talanton", "talanton / dēnarion", "τάλαντον / δηνάριον", "talanton",
+     "THE LARGEST UNIT AND THE SMALLEST. A dēnarion was a labourer's day-wage (Matthew 20:2 sets the rate). A talanton was a weight of silver worth roughly six thousand denarii — about twenty years of daily work. ⚠ So the parable of Matthew 18 is doing arithmetic on purpose: the first slave owes MYRIŌN TALANTŌN, 'ten thousand talents' — the largest number in Greek attached to the largest unit — some sixty million day-wages, on the order of two hundred thousand years of labour. Josephus puts the combined annual tribute of Judea, Idumea and Samaria at six hundred talents, so the debt is over sixteen times the tax revenue of the province, and the man promises to repay it all. The second debt is a hundred denarii: a hundred days' wages, a real and ruinous sum, and about one six-hundred-thousandth of the first. Versions that render these as 'a great sum' and 'a few pounds' preserve the moral and destroy the joke.", ("Matthew", 18, 24)),
     # ---- Matthew 17 (Greek) ----
     ("metamorphoo", "metamorphoō", "μεταμορφόω", "metamorphoō",
      "To CHANGE FORM — meta ('change') + morphē ('form'); the root of English 'metamorphosis.' Matthew 17:2 puts it in the PASSIVE: he WAS transfigured, something done to him rather than performed by him. ⚠ English hides a connection the Greek makes plainly, because the New Testament uses this same verb only twice more and both times of ordinary Christians: 'be TRANSFORMED by the renewing of your mind' (Romans 12:2) and 'we all… are being TRANSFORMED into the same image from glory to glory' (2 Corinthians 3:18) — the second inside a passage about Moses' shining face and the veil over it, which is exactly the imagery of the mountain. Every English shelf version reads 'transfigured' here (from the Latin transfiguratus) and 'transformed' there, so the reader is not told they are one word. The related noun morphē is Philippians 2:6-7's 'form of God' / 'form of a slave.'", ("Matthew", 17, 2)),
@@ -5152,6 +5159,16 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 18 ----
+    (("Matthew", 18, 2), ("Matthew", 18, 20), "en mesō autōn, 'in the middle of them' — the same three Greek words open and close the discourse: the child stood in the middle, and then Christ in the middle"),
+    (("Matthew", 18, 5), ("Matthew", 10, 40), "the receiving-chain — whoever receives you receives me, and here whoever receives one such child receives me"),
+    (("Matthew", 18, 8), ("Matthew", 5, 29), "the hand, foot and eye — the Sermon's hyperbole, re-aimed from lust at what one member of a community does to another"),
+    (("Matthew", 18, 17), ("Matthew", 16, 18), "ekklēsia — the word appears in the Gospels exactly twice, both in Matthew, and the second occurrence constrains the first: it has to be small enough to hear a private grievance"),
+    (("Matthew", 18, 18), ("Matthew", 16, 19), "bind and loose, word for word — but singular there, to Peter alone, and plural here, to the assembled disciples"),
+    (("Matthew", 18, 22), ("Genesis", 4, 24), "hebdomēkontakis hepta — the Septuagint's exact words for Lamech's boast of seventy-sevenfold revenge, run backwards into forgiveness"),
+    (("Matthew", 18, 31), ("Matthew", 17, 23), "elypēthēsan sphodra, 'deeply grieved' — the disciples' own reaction to the passion prediction, now the fellow slaves' reaction to cruelty"),
+    (("Matthew", 18, 34), ("Matthew", 17, 22), "paradidōmi, 'handed over' — the verb planted one chapter earlier of the Son of Man, here of a debtor given to the torturers"),
+    (("Matthew", 18, 35), ("Matthew", 6, 12), "'forgive us our debts as we also have forgiven our debtors' — the Lord's Prayer made debt the model of sin, and this parable argues it at length"),
     # ---- Matthew 17 ----
     (("Matthew", 17, 1), ("Matthew", 16, 28), "'after six days' — the interval since the promise that 'some standing here will not taste death until they see the Son of Man coming in his kingdom,' which this scene is widely read as the first instalment of"),
     (("Matthew", 17, 2), ("Matthew", 13, 43), "'his face shone like the sun' — Matthew has already used that exact image once, of the righteous in the kingdom of their Father"),
@@ -9434,6 +9451,40 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 18 ----
+    "skandalon": ("tropiezo, trampa",
+        "EL GATILLO DE UNA TRAMPA — el palito cebado que la dispara, y de ahí cualquier cosa puesta en el "
+        "camino de alguien que lo hace caer; el verbo skandalizō es dispararla sobre otro. ⚠ La RV conserva "
+        "el latinismo transparente «escandalizar» / «escándalo», que es un falso amigo de primer orden: hoy "
+        "en español dice indignación o murmuración, y convierte Mateo 18:6-9 en algo sobre la mala fama. La "
+        "TNM lee «hacer tropezar» y «causas de tropiezo», que es lo que la palabra significa. Esta "
+        "traducción mantiene UNA sola raíz visible — «hacer tropezar» / «tropiezo» — porque toda la fuerza "
+        "del pasaje está en que la misma palabra corre desde lo que le haces a un niño (18:6) hasta lo que "
+        "tu propia mano te hace a ti (18:8). El mismo sustantivo es lo que Pedro llega a ser para Jesús en "
+        "16:23, y lo que la cruz misma es para Pablo (1 Corintios 1:23, «piedra de tropiezo para los "
+        "judíos»)."),
+    "gehenna": ("Gehena",
+        "GEHENA — no es una palabra griega en absoluto, sino un topónimo hebreo con ropa griega: ge-hinom, "
+        "el valle de Hinom, el barranco que corre por el sur y el oeste de Jerusalén. Su historia es lo que "
+        "importa. Allí se quemaban niños a Moloc, en el lugar alto llamado TOFET (2 Reyes 23:10; Jeremías "
+        "19, donde Jeremías es enviado a romper una vasija sobre él), razón por la cual Josías lo profanó y "
+        "por la que el nombre quedó como abreviatura del juicio final. ⚠ La RV vierte «infierno», lo que "
+        "importa muchísima arquitectura posterior — griega, latina y medieval — a una palabra que nombra un "
+        "valle al que se puede ir andando; la TNM transcribe «Gehena», y esta traducción también. Nótese "
+        "que el Nuevo Testamento usa además HADES (el reino de los muertos) y TÁRTARO (2 Pedro 2:4), y no "
+        "son sinónimos: refundir los tres en «infierno» es lo más grave que las versiones hacen con este "
+        "asunto."),
+    "talanton": ("talento / denario",
+        "LA UNIDAD MAYOR Y LA MENOR. Un dēnarion era el jornal de un obrero (Mateo 20:2 fija la tarifa). Un "
+        "talanton era un peso de plata que valía unos seis mil denarios: unos veinte años de trabajo "
+        "diario. ⚠ Así que la parábola de Mateo 18 está haciendo aritmética a propósito: el primer esclavo "
+        "debe MYRIŌN TALANTŌN, «diez mil talentos» — el número más grande del griego pegado a la unidad más "
+        "grande — unos sesenta millones de jornales, del orden de doscientos mil años de trabajo. Josefo "
+        "cifra el tributo anual conjunto de Judea, Idumea y Samaria en seiscientos talentos, de modo que la "
+        "deuda supera dieciséis veces la recaudación de la provincia, y el hombre promete pagarla entera. "
+        "La segunda deuda son cien denarios: cien jornales, una suma real y capaz de arruinar a alguien, y "
+        "más o menos una seiscientosmilésima parte de la primera. Las versiones que ponen «una gran suma» y "
+        "«unas monedas» conservan la moraleja y destruyen el chiste."),
     # ---- Mateo 17 ----
     "metamorphoo": ("transfigurar, transformar",
         "CAMBIAR DE FORMA — meta («cambio») + morphē («forma»); la raíz de «metamorfosis». Mateo 17:2 lo "
@@ -9897,6 +9948,50 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat18": [dict(
+        file="hemessen-unmerciful-servant.jpg",
+        title="The Parable of the Unmerciful Servant",
+        title_es="La parábola del siervo despiadado",
+        artist="Jan Sanders van Hemessen",
+        year="c. 1556",
+        location="University of Michigan Museum of Art, Ann Arbor",
+        location_es="Museo de Arte de la Universidad de Míchigan, Ann Arbor",
+        alt="A wide painting crowded to the edges. At a table heaped with gold and silver coins, ledgers "
+            "and a money bag, a crowned king in dark red leans in from the left; beside him a man in a "
+            "black cap points sharply down at the coins, and a bearded clerk holds a pen over an open "
+            "account book; a fourth man in red slumps at the right edge, watching. Through an opening at "
+            "the back, small and far off, figures struggle in a sunlit courtyard where one man is being "
+            "seized by others",
+        note="Hemessen paints the parable as an <strong>audit</strong> &mdash; the crowned king, the "
+             "steward, the clerk with his pen, and the table of coins and ledgers that verses 23-24 "
+             "actually describe. ⚠ Look through the opening at the back, though: the small sunlit scene "
+             "in the distance is the <em>second</em> half of the story, the forgiven man seizing his "
+             "fellow slave by the throat over a hundred denarii. Both halves are on one canvas, the way "
+             "Raphael put both halves of chapter 17 on one &mdash; but here the arrangement carries an "
+             "argument of its own: the cruelty is painted small, far away, and easy to miss, which is "
+             "roughly how the man himself seems to have regarded it. Painted in Antwerp, then the centre of "
+             "European banking: the setting is a <strong>tax collector's office</strong>, a stock subject "
+             "in sixteenth-century Flemish painting, and Hemessen is credited with originating this kind "
+             "of moralizing genre picture &mdash; a parable staged as an everyday commercial scene. The "
+             "panel is unusually wide for its height (about 82 × 155 cm), which is what lets the distant "
+             "courtyard sit so far from the table.",
+        note_es="Hemessen pinta la parábola como una <strong>auditoría</strong> &mdash; el rey coronado, "
+                "el mayordomo, el escribano con su pluma, y la mesa de monedas y libros de cuentas que los "
+                "versículos 23-24 describen literalmente. ⚠ Pero mírese por el vano del fondo: la pequeña "
+                "escena iluminada a lo lejos es la <em>segunda</em> mitad del relato, el hombre perdonado "
+                "agarrando por el cuello a su coesclavo por cien denarios. Las dos mitades están en un solo "
+                "lienzo, igual que Rafael puso las dos mitades del capítulo 17 en uno &mdash; pero aquí la "
+                "disposición lleva su propio argumento: la crueldad está pintada pequeña, lejos y fácil de "
+                "pasar por alto, que es más o menos como parece haberla mirado el propio hombre. Pintado en "
+                "Amberes, entonces el centro de la banca europea: el escenario es una <strong>oficina de "
+                "recaudación de impuestos</strong>, asunto corriente en la pintura flamenca del siglo XVI, "
+                "y a Hemessen se le atribuye haber originado este tipo de cuadro de género moralizante "
+                "&mdash; una parábola puesta en escena como una escena comercial cualquiera. La tabla es "
+                "insólitamente ancha para su altura (unos 82 × 155 cm), que es lo que permite que el patio "
+                "del fondo quede tan lejos de la mesa.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Jan_van_Hemessen_-_The_Parable_of_the_Unmerciful_Servant.jpg",
+    )],
     "mat17": [dict(
         file="raphael-transfiguration.jpg",
         title="The Transfiguration",
