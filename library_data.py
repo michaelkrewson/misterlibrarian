@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 20 (Greek) ----
+    ("lytron", "lytron / antilytron", "λύτρον", "lytron",
+     "A RANSOM — the price paid to release a slave, a captive or a debtor; from lyō, 'to loose.' It is the Greek Old Testament's word for the redemption-price of a life (Exodus 21:30) and for the half-shekel every Israelite paid 'as a lytron for his soul' (Exodus 30:12 — the very tax argued over at Matthew 17:24). ⚠ It appears in the Gospels exactly twice, in one saying: 'to give his life a lytron ANTI many' (Matthew 20:28 and Mark 10:45). The preposition matters and is often flattened — anti is the ordinary word for 'in place of, in exchange for,' and NWT's 'a ransom IN EXCHANGE FOR many' is the most exact reading on the shelf, against KJV/ASV's 'a ransom for many.' Paul intensifies it to antilytron, 'a corresponding ransom' (1 Timothy 2:6). ⚠ The word says a price was paid and does not say to whom — the question later theology spent centuries on. And 'many' (pollōn) is itself disputed: a limit, or the Semitic idiom for 'the great number, i.e. all.'", ("Matthew", 20, 28)),
+    ("diakonos", "diakonos / doulos", "διάκονος / δοῦλος", "diakonos",
+     "A TABLE-WAITER, and a SLAVE. Two words on two rungs, and Matthew 20:26-27 uses them as an ascending pair: whoever wants to be GREAT becomes your diakonos, whoever wants to be FIRST becomes your doulos. ⚠ A diakonos serves and remains free — the word is ordinary Greek for a servant who waits at table, and the New Testament will make it an office (Philippians 1:1, and 'deacon' descends from it directly). A doulos is owned. There is no euphemism available and English versions that soften it to 'servant' erase the second step, which is the whole rhetorical point: the ladder does not stop at willing service, it goes down one more rung to somebody with no rights at all. KJV reads 'minister' and 'servant'; ASV 'minister' and 'servant' with 'bondservant' in the margin; NWT 'minister' and 'slave.' This translation reads SERVANT and SLAVE.", ("Matthew", 20, 26)),
+    ("poterion", "potērion", "ποτήριον", "potērion",
+     "A CUP — the ordinary drinking vessel, and in the prophets a standing image for the portion God assigns. Usually of wrath ('the cup of staggering,' Isaiah 51:17; 'the cup of his fury'), sometimes of blessing (Psalm 23:5's cup that runs over; Psalm 116:13's 'cup of salvation'). ⚠ Jesus uses it of his own fate three times in Matthew, and the three are a chain: 'are you able to drink the cup I am about to drink?' to two ambitious brothers (20:22), 'let this cup pass from me' in Gethsemane (26:39), and the cup he hands the disciples at the supper (26:27). The brothers answer 'we are able' without knowing what they have agreed to, and are told they will indeed drink it — which both of them, in different ways, did.", ("Matthew", 20, 22)),
+    ("ophthalmos-poneros", "ophthalmos ponēros", "ὀφθαλμὸς πονηρός", "ophthalmos ponēros",
+     "THE EVIL EYE — a fixed Semitic idiom, and not about eyesight or the folk-magic of a curse. A 'good eye' is generosity and a 'bad eye' is stinginess and envy: 'do not eat the bread of a man with an evil eye' (Proverbs 23:6); 'your eye shall not be evil toward your poor brother' (Deuteronomy 15:9). ⚠ Matthew uses the pair twice, and both times inside teaching about MONEY: in the Sermon, where a 'single' eye fills the body with light and an evil one with darkness (6:22-23, three verses before 'you cannot serve God and mammon'), and here, where the householder asks the grumbler 'is your eye evil because I am good?' (20:15). KJV/ASV/NWT keep the eye; NIV translates the sense ('are you envious?') and loses the idiom, and with it the link between the two passages.", ("Matthew", 20, 15)),
     # ---- Matthew 19 (Greek) ----
     ("porneia", "porneia", "πορνεία", "porneia",
      "SEXUAL IMMORALITY — the general word, and deliberately wider than adultery, which Greek has its own term for (moicheia). It covers prostitution (pornē, a prostitute, is the root), incest, and unlawful unions generally. ⚠ Everything about Matthew's exception clause turns on that width: 'whoever divorces his wife — not for porneia — and marries another commits adultery' (19:9, and 5:32), where BOTH words appear in one sentence and are plainly not synonyms. Readings of the clause have divided churches for centuries: adultery; or marriage within forbidden degrees of kinship, which would make it an annulment rule rather than a divorce rule; or unchastity discovered during betrothal, as in Matthew 1:19. The clause is found ONLY in Matthew — Mark 10:11 and Luke 16:18 have the saying with no exception at all. This library sets out the readings and does not vote.", ("Matthew", 19, 9)),
@@ -5168,6 +5177,17 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 20 ----
+    (("Matthew", 20, 16), ("Matthew", 19, 30), "'the last will be first' — the parable is a bracket: 19:30 says it, sixteen verses argue it, and v16 says it again"),
+    (("Matthew", 20, 15), ("Matthew", 6, 22), "the evil eye — the Sermon's good-eye/bad-eye pair, and both passages sit inside teaching about money"),
+    (("Matthew", 20, 18), ("Matthew", 17, 22), "paradidōmi, 'handed over' — the verb planted at the second passion prediction, used twice here and now naming the Gentiles and the cross"),
+    (("Matthew", 20, 19), ("Matthew", 16, 21), "the third and fullest passion prediction — the first named Jerusalem and the elders; this one adds mocking, flogging and crucifixion"),
+    (("Matthew", 20, 26), ("Matthew", 18, 4), "greatness redefined again — chapter 18 answered it with a child; here with a table-waiter and a slave"),
+    (("Matthew", 20, 30), ("Matthew", 9, 27), "two blind men calling him Son of David — Matthew tells this twice, and whether it is a doublet or two events is genuinely disputed"),
+    (("Matthew", 20, 30), ("Matthew", 15, 22), "'Son of David' — always shouted by someone with no standing to confer a royal title, and always over an objection from the people nearby"),
+    (("Matthew", 20, 31), ("Matthew", 19, 13), "the crowd tells them to be quiet — exactly what the disciples did to the children one chapter earlier"),
+    (("Matthew", 20, 34), ("Matthew", 15, 32), "splanchnizomai — the fifth and last time Matthew uses the gut-word of Jesus, as chapter 15's note said it would be"),
+    (("Matthew", 20, 34), ("Matthew", 19, 22), "'they followed him' — the rich young man could see and went away; two blind men, given sight, walk toward Jerusalem"),
     # ---- Matthew 19 ----
     (("Matthew", 19, 1), ("Matthew", 13, 53), "the discourse formula — the fourth of the five fixed sentences that mark the close of each great block of teaching"),
     (("Matthew", 19, 4), ("Genesis", 1, 27), "'male and female he created them' — quoted to answer a question about divorce by going behind Moses to the first page"),
@@ -9471,6 +9491,47 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 20 ----
+    "lytron": ("rescate",
+        "UN RESCATE — el precio que se paga para liberar a un esclavo, a un cautivo o a un deudor; de lyō, "
+        "«soltar». Es la palabra del Antiguo Testamento griego para el precio de redención de una vida "
+        "(Éxodo 21:30) y para el medio siclo que cada israelita pagaba «como lytron por su alma» (Éxodo "
+        "30:12 — justamente el impuesto que se discute en Mateo 17:24). ⚠ Aparece en los Evangelios "
+        "exactamente dos veces, en un solo dicho: «dar su vida en lytron ANTI muchos» (Mateo 20:28 y Marcos "
+        "10:45). La preposición importa y suele aplanarse: anti es la palabra corriente para «en lugar de, a "
+        "cambio de», y el «en rescate EN CAMBIO POR muchos» de la TNM es la lectura más exacta del estante, "
+        "frente al «en rescate por muchos» de la RV. Pablo lo intensifica en antilytron, «rescate "
+        "correspondiente» (1 Timoteo 2:6). ⚠ La palabra dice que se pagó un precio y no dice a quién — la "
+        "pregunta en la que la teología posterior invirtió siglos. Y «muchos» (pollōn) está a su vez "
+        "discutido: un límite, o el modismo semítico para «el gran número, es decir, todos»."),
+    "diakonos": ("servidor / esclavo",
+        "EL QUE SIRVE A LA MESA, y EL ESCLAVO. Dos palabras en dos peldaños, y Mateo 20:26-27 las usa como "
+        "un par ascendente: el que quiera ser GRANDE será vuestro diakonos, el que quiera ser PRIMERO será "
+        "vuestro doulos. ⚠ Un diakonos sirve y sigue siendo libre — la palabra es griego corriente para el "
+        "que atiende la mesa, y el Nuevo Testamento la convertirá en un oficio (Filipenses 1:1; de ahí viene "
+        "«diácono»). Un doulos es propiedad de otro. No hay eufemismo disponible, y las versiones que lo "
+        "suavizan a «siervo» borran el segundo peldaño, que es todo el sentido retórico: la escalera no se "
+        "detiene en el servicio voluntario, baja un peldaño más, hasta alguien sin ningún derecho. La RV lee "
+        "«servidor» y «siervo»; la TNM «ministro» y «esclavo». Esta traducción lee SERVIDOR y ESCLAVO."),
+    "poterion": ("copa",
+        "UNA COPA — el vaso corriente, y en los profetas una imagen fija de la porción que Dios asigna. Casi "
+        "siempre de ira («la copa del aturdimiento», Isaías 51:17; «la copa de su furor»), a veces de "
+        "bendición (la copa que rebosa del Salmo 23:5; la «copa de la salvación» del Salmo 116:13). ⚠ Jesús "
+        "la usa de su propio destino tres veces en Mateo, y las tres forman una cadena: «¿podéis beber la "
+        "copa que yo estoy a punto de beber?», a dos hermanos ambiciosos (20:22); «pase de mí esta copa», en "
+        "Getsemaní (26:39); y la copa que entrega a los discípulos en la cena (26:27). Los hermanos responden "
+        "«podemos» sin saber a qué acceden, y se les dice que en efecto la beberán — cosa que los dos, cada "
+        "uno a su manera, hicieron."),
+    "ophthalmos-poneros": ("ojo malo",
+        "EL OJO MALO — un modismo semítico fijo, y no una cuestión de vista ni la magia popular del mal de "
+        "ojo. Un «ojo bueno» es la generosidad y un «ojo malo» la tacañería y la envidia: «no comas el pan "
+        "del hombre de ojo maligno» (Proverbios 23:6); «no será maligno tu ojo contra tu hermano pobre» "
+        "(Deuteronomio 15:9). ⚠ Mateo usa el par dos veces, y las dos dentro de enseñanzas sobre el DINERO: "
+        "en el Sermón, donde un ojo «sencillo» llena de luz el cuerpo y uno malo de tinieblas (6:22-23, tres "
+        "versículos antes de «no podéis servir a Dios y a las riquezas»), y aquí, donde el dueño pregunta al "
+        "que murmura «¿es malo tu ojo porque yo soy bueno?» (20:15). La RV y la TNM conservan el ojo; la NVI "
+        "traduce el sentido («¿acaso tienes envidia?») y pierde el modismo, y con él el vínculo entre los dos "
+        "pasajes."),
     # ---- Mateo 19 ----
     "porneia": ("inmoralidad sexual, fornicación",
         "INMORALIDAD SEXUAL — la palabra general, y deliberadamente más ancha que «adulterio», para el cual "
@@ -10010,6 +10071,40 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat20": [dict(
+        file="rembrandt-vineyard-labourers.jpg",
+        title="The Parable of the Labourers in the Vineyard",
+        title_es="La parábola de los obreros de la viña",
+        artist="Rembrandt van Rijn",
+        year="1637",
+        location="Hermitage Museum, St Petersburg",
+        location_es="Museo del Hermitage, San Petersburgo",
+        alt="A dark, high-ceilinged interior lit by a tall arched window on the left. The householder sits "
+            "behind a heavy table strewn with papers and coins; a clerk bends over ledgers in the shadowed "
+            "foreground at left. A knot of labourers presses in from the right &mdash; one leaning across "
+            "the table with an outstretched arm, others waiting behind him in near-darkness, faces lit only "
+            "at the edges. A barred lantern hangs from the ceiling on a rope, and a dog lies on the flagstones "
+            "in the foreground",
+        note="⚠ Rembrandt does not paint the vineyard. He paints verses 8&ndash;15 &mdash; the "
+             "<strong>reckoning</strong> &mdash; and puts it indoors, at a table of accounts, with the "
+             "grumbling labourer leaning across it in the light and the rest waiting in shadow. That is the "
+             "second chapter running whose art is a northern painter staging a parable as a scene of "
+             "book-keeping (chapter 18 has van Hemessen doing the same), which says something about what "
+             "these painters thought the parables were <em>about</em>. Note that the householder is seated "
+             "and still while the man arguing with him is the one in motion &mdash; and that the money on "
+             "the table is already counted out. Painted in 1637, and now in the Hermitage.",
+        note_es="⚠ Rembrandt no pinta la viña. Pinta los versículos 8-15 &mdash; el <strong>ajuste de "
+                "cuentas</strong> &mdash; y lo mete dentro de una casa, en una mesa de contabilidad, con el "
+                "obrero que murmura inclinado sobre ella a plena luz y los demás esperando en penumbra. Es el "
+                "segundo capítulo seguido cuya imagen es la de un pintor del norte poniendo en escena una "
+                "parábola como una escena de contaduría (el capítulo 18 tiene a van Hemessen haciendo lo "
+                "mismo), lo cual dice algo sobre de qué creían estos pintores que trataban las parábolas. "
+                "Fíjese en que el dueño está sentado y quieto mientras el que discute con él es el que se "
+                "mueve &mdash; y en que el dinero de la mesa ya está contado. Pintado en 1637; hoy en el "
+                "Hermitage.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_The_parable_of_the_Labourers_in_the_Vineyard.jpg",
+    )],
     "mat19": [dict(
         file="hofmann-rich-young-ruler.jpg",
         title="Christ and the Rich Young Ruler",
