@@ -4,7 +4,7 @@ place: City, Country
 stars: 4.5
 subject: The Name Of The Place
 subject_type: Restaurant
-tags: food, italy, markets
+tags: food, italy, markets, cacio e pepe, artichokes
 hero: some-photo.jpg
 hero_alt: Describe the photo for someone who can't see it
 hero_credit: Optional — leave the line out entirely if the photo is yours
@@ -27,6 +27,13 @@ draft: true
   4. Rebuild and push:
          python3 build_travel.py
          git add travel source/travel && git commit -m "New entry: …" && git push
+
+  TAGS: tag the food ITEMS, not just the cuisine and the place. Anything
+  pictured or discussed by name — "brussels sprouts", "cacio e pepe",
+  "egg coffee" — gets its own tag, so a reader who wants every sprout on the
+  site can click one at the foot of an entry and get them. Spaces are fine;
+  they slugify. Broad tags (food, portland, oregon) still earn their keep for
+  browsing, so keep those too.
 
   Everything below the `---` is plain HTML. The stylesheet already handles
   <p>, <h2>, <h3>, <blockquote>, <ul>, <figure>, and the two custom blocks

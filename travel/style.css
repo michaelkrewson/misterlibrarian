@@ -306,6 +306,16 @@ img { max-width: 100%; height: auto; display: block; }
   text-transform: uppercase;
   color: var(--muted);
 }
+a.pill {
+  text-decoration: none;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+a.pill:hover,
+a.pill:focus-visible {
+  color: var(--ink);
+  border-color: var(--terra);
+  background: var(--paper-2);
+}
 .postmeta .place { text-transform: none; letter-spacing: 0; }
 .postmeta .draftflag {
   color: #0a0f1a;
