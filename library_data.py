@@ -9706,38 +9706,42 @@ CHAPTER_ART = {
         source_url="https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Jeremiah_01.jpg",
     )],
     "jer19": [dict(
-        file="rembrandt-jeremiah-lamenting.jpg",
-        title="Jeremiah Lamenting the Destruction of Jerusalem",
-        title_es="Jeremías lamentando la destrucción de Jerusalén",
-        artist="Rembrandt van Rijn",
-        year="1630",
-        location="Rijksmuseum, Amsterdam",
-        location_es="Rijksmuseum, Ámsterdam",
-        alt="An elderly bearded man sits in a dark cave-like space, his head heavy in one hand, gold "
-            "and silver temple vessels and a large closed book beside him, one bare foot extended into "
-            "a shaft of light; through an opening in the rock behind him, a distant city burns against "
-            "a dark sky",
-        note="⚠ NOT this chapter's scene, and not even from the same moment in the story &mdash; "
-             "placed here as an honestly-labeled placeholder. This shows Jerusalem already fallen (the "
-             "burning city visible through the cave mouth, the rescued temple vessels at his side), a "
-             "scene usually tied to 2 Kings 25 or the book of Lamentations, decades after this "
-             "chapter's sign-act at Tophet. It stands here for its own fame &mdash; one of Rembrandt's "
-             "most reproduced Old Testament paintings &mdash; until a real depiction of Jeremiah "
-             "smashing the earthen flask before the elders turns up. The one thing the two scenes do "
-             "share: this chapter is the prophecy that the devastation pictured here is coming.",
-        note_es="⚠ NO es la escena de este capítulo, y ni siquiera es el mismo momento de la "
-                "historia &mdash; colocada aquí como un marcador temporal declarado honestamente "
-                "como tal. Esta pintura muestra Jerusalén ya caída (la ciudad en llamas "
-                "visible a través de la boca de la cueva, los vasos del templo rescatados a su "
-                "lado), una escena que normalmente se vincula a 2 Reyes 25 o al libro de "
-                "Lamentaciones, décadas después del acto simbólico de este capítulo "
-                "en Tófet. Se conserva aquí por su propia fama &mdash; una de las pinturas "
-                "vetero-testamentarias más reproducidas de Rembrandt &mdash; hasta que aparezca "
-                "una representación real de Jeremías rompiendo la vasija de barro ante los "
-                "ancianos. Lo único que ambas escenas comparten: este capítulo es la "
-                "profecía de que la devastación aquí retratada está por llegar.",
+        file="barthelemy-deyck-jeremiah.jpg",
+        title="Prophet Jeremiah (Annunciation triptych, reverse panel)",
+        title_es="El profeta Jeremías (tríptico de la Anunciación, panel del reverso)",
+        artist="Barthélemy d'Eyck (the Master of the Aix Annunciation)",
+        year="c. 1443–1445",
+        location="Royal Museums of Fine Arts of Belgium, Brussels",
+        location_es="Museos Reales de Bellas Artes de Bélgica, Bruselas",
+        alt="A bearded man in a scarlet cardinal's robe and cap stands reading intently from a small "
+            "open blue book, framed inside a carved Gothic stone archway on a pedestal; a shelf above "
+            "him holds books, papers, a quill and a small pot, with a knife and pouch hanging on the "
+            "wall beside him",
+        note="⚠ NOT this chapter's scene &mdash; placed here as an honestly-labeled placeholder, not a "
+             "depiction of Jeremiah smashing the earthen flask before the elders. The painting itself "
+             "is stranger than it first looks: Jeremiah is dressed not as an ancient Hebrew prophet but "
+             "as a 15th-century cardinal, in the same scarlet robes a viewer of this altarpiece would "
+             "have seen on a real churchman &mdash; a standard Northern Renaissance habit of painting "
+             "Old Testament figures in the artist's own contemporary dress rather than attempting "
+             "historical costume. The panel originally formed the REVERSE of an Annunciation "
+             "altarpiece, paired there with the risen Christ &mdash; Jeremiah placed as a witness to "
+             "what his own prophecies pointed toward, reading rather than pronouncing judgment. Kept "
+             "here for its own quality until a real depiction of this chapter's scene turns up.",
+        note_es="⚠ NO es la escena de este capítulo &mdash; se coloca aquí como un marcador "
+                "temporal declarado honestamente como tal, no una representación de Jeremías "
+                "rompiendo la vasija de barro ante los ancianos. El cuadro mismo es más extraño de "
+                "lo que parece a primera vista: Jeremías no está vestido como un antiguo profeta "
+                "hebreo sino como un cardenal del siglo XV, con las mismas vestiduras escarlata que "
+                "un espectador de este retablo habría visto en un clérigo real &mdash; una "
+                "costumbre habitual del Renacimiento nórdico de pintar a las figuras del Antiguo "
+                "Testamento con la vestimenta contemporánea del propio artista, en vez de intentar "
+                "un vestuario histórico. El panel formaba originalmente el REVERSO de un retablo de "
+                "la Anunciación, emparejado allí con el Cristo resucitado &mdash; Jeremías colocado "
+                "como testigo de aquello hacia lo que apuntaban sus propias profecías, leyendo en "
+                "vez de pronunciar juicio. Se conserva aquí por su propia calidad hasta que aparezca "
+                "una representación real de la escena de este capítulo.",
         license="Public domain",
-        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Jeremia_treurend_over_de_verwoesting_van_Jeruzalem_-_Google_Art_Project.jpg",
+        source_url="https://commons.wikimedia.org/wiki/File:Annunciation_triptych_by_Barth%C3%A9lemy_d%27Eyck,_right_panel,_prophet_Jeremiah.jpg",
     )],
     "mat15": [dict(
         file="carracci-christ-canaanite-woman.jpg",
