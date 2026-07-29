@@ -9669,6 +9669,76 @@ ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "jer18": [dict(
+        file="michelangelo-jeremiah-sistine.jpg",
+        title="The Prophet Jeremiah",
+        title_es="El profeta Jeremías",
+        artist="Michelangelo",
+        year="1511",
+        location="Sistine Chapel ceiling, Vatican City",
+        location_es="Techo de la Capilla Sixtina, Ciudad del Vaticano",
+        alt="An elderly, bearded prophet sits slumped forward in thought, his chin pressed into his "
+            "knuckles and his white beard spilling over his hand, wrapped in heavy orange and "
+            "rose-pink robes, beneath a Latin nameplate reading HIEREMIAS and flanked by carved "
+            "stone putti and the fresco's own painted architecture",
+        note="⚠ NOT this chapter's scene, and placed here as a placeholder, honestly labeled as "
+             "one. Michelangelo's Jeremiah, on the Sistine Chapel ceiling, is a solitary character "
+             "study &mdash; among the most reproduced and most melancholic of his seven Sistine "
+             "prophets, often read as the most inward and exhausted of the set, seated at the end of "
+             "the ceiling nearest the altar &mdash; not a narrative depicting the potter's house. The "
+             "pose (a hand pressed to the beard, eyes lowered) is traditionally read as brooding grief, "
+             "the opposite of the active WATCHING this chapter actually describes &mdash; Jeremiah "
+             "going down to the potter's house and observing the wheel at work. Kept here for its own "
+             "fame until a real depiction of that scene turns up.",
+        note_es="⚠ NO es la escena de este capítulo, y se coloca aquí como un marcador "
+                "temporal, declarado honestamente como tal. El Jeremías de Miguel Ángel, en "
+                "el techo de la Capilla Sixtina, es un estudio de carácter solitario &mdash; entre "
+                "los más reproducidos y más melancólicos de sus siete profetas sixtinos, "
+                "leído a menudo como el más introspectivo y agotado del conjunto, sentado en "
+                "el extremo del techo más cercano al altar &mdash; no una narración que "
+                "represente la casa del alfarero. La postura (una mano presionada contra la barba, los "
+                "ojos bajos) se lee tradicionalmente como duelo introspectivo, lo contrario de la "
+                "OBSERVACIÓN activa que este capítulo en verdad describe &mdash; Jeremías "
+                "bajando a la casa del alfarero y observando el torno en funcionamiento. Se conserva "
+                "aquí por su propia fama hasta que aparezca una representación real de esa "
+                "escena.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Jeremiah_01.jpg",
+    )],
+    "jer19": [dict(
+        file="rembrandt-jeremiah-lamenting.jpg",
+        title="Jeremiah Lamenting the Destruction of Jerusalem",
+        title_es="Jeremías lamentando la destrucción de Jerusalén",
+        artist="Rembrandt van Rijn",
+        year="1630",
+        location="Rijksmuseum, Amsterdam",
+        location_es="Rijksmuseum, Ámsterdam",
+        alt="An elderly bearded man sits in a dark cave-like space, his head heavy in one hand, gold "
+            "and silver temple vessels and a large closed book beside him, one bare foot extended into "
+            "a shaft of light; through an opening in the rock behind him, a distant city burns against "
+            "a dark sky",
+        note="⚠ NOT this chapter's scene, and not even from the same moment in the story &mdash; "
+             "placed here as an honestly-labeled placeholder. This shows Jerusalem already fallen (the "
+             "burning city visible through the cave mouth, the rescued temple vessels at his side), a "
+             "scene usually tied to 2 Kings 25 or the book of Lamentations, decades after this "
+             "chapter's sign-act at Tophet. It stands here for its own fame &mdash; one of Rembrandt's "
+             "most reproduced Old Testament paintings &mdash; until a real depiction of Jeremiah "
+             "smashing the earthen flask before the elders turns up. The one thing the two scenes do "
+             "share: this chapter is the prophecy that the devastation pictured here is coming.",
+        note_es="⚠ NO es la escena de este capítulo, y ni siquiera es el mismo momento de la "
+                "historia &mdash; colocada aquí como un marcador temporal declarado honestamente "
+                "como tal. Esta pintura muestra Jerusalén ya caída (la ciudad en llamas "
+                "visible a través de la boca de la cueva, los vasos del templo rescatados a su "
+                "lado), una escena que normalmente se vincula a 2 Reyes 25 o al libro de "
+                "Lamentaciones, décadas después del acto simbólico de este capítulo "
+                "en Tófet. Se conserva aquí por su propia fama &mdash; una de las pinturas "
+                "vetero-testamentarias más reproducidas de Rembrandt &mdash; hasta que aparezca "
+                "una representación real de Jeremías rompiendo la vasija de barro ante los "
+                "ancianos. Lo único que ambas escenas comparten: este capítulo es la "
+                "profecía de que la devastación aquí retratada está por llegar.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Jeremia_treurend_over_de_verwoesting_van_Jeruzalem_-_Google_Art_Project.jpg",
+    )],
     "mat15": [dict(
         file="carracci-christ-canaanite-woman.jpg",
         title="Christ and the Canaanite Woman",
