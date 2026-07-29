@@ -5043,6 +5043,37 @@ def check_shelf_density(chapters):
                          + "\n(compare against the shelf with tag t-kjv/t-niv/… spans, or consciously exempt the slug)")
 
 
+def check_sblgnt_sigla(chapters):
+    """The SBLGNT source (source/originals/sblgnt/*.json, fetched via the
+    bible.helloao.org API) embeds CRITICAL-APPARATUS SIGLA in its Greek text --
+    Unicode Supplemental Punctuation marks (U+2E00-U+2E05: ⸀⸁ single-word
+    variant markers, ⸂⸃⸄⸅ paired-span variant brackets) that anchor the
+    accompanying footnotes. They exist to mark WHERE a textual variant sits for
+    the apparatus, not to be read -- every chapter shipped before Matthew 16 is
+    clean of them (a full scan of all 260 archived NT chapter files found only
+    these six sigla in use, nothing broader). Added 2026-07-28 after a chapter
+    almost shipped with four of them still sitting in the Greek, copy-pasted
+    straight from the source JSON and caught only by a manual byte-comparison
+    against the previous chapter's clean text -- this makes that comparison
+    automatic and permanent, the same way check_shelf_density did for shelf
+    comparisons. Scoped to <div class="grk"> content specifically, so it can
+    never misfire on Hebrew (class="heb") chapters, which don't carry these
+    marks at all."""
+    SIGLA_LO, SIGLA_HI = 0x2E00, 0x2E7F   # the whole Supplemental Punctuation block
+    bad = []
+    for slug, body in chapters.items():
+        for m in re.finditer(r'<div class="vrs" id="([^"]+)">.*?<div class="grk">([^<]*)</div>', body, re.S):
+            vid, grk = m.group(1), m.group(2)
+            sigla = sorted(set(ch for ch in grk if SIGLA_LO <= ord(ch) <= SIGLA_HI))
+            if sigla:
+                bad.append(f"  {slug} #{vid}: {''.join(sigla)}")
+    if bad:
+        raise SystemExit("SBLGNT SIGLA CHECK FAILED — critical-apparatus marks left in the Greek text:\n"
+                         + "\n".join(bad)
+                         + "\n(strip ⸀⸁⸂⸃⸄⸅ from the Greek before pasting into the source panel --"
+                           " they anchor footnotes, they are not part of the reading text)")
+
+
 def build_sitemap():
     """Write sitemap.xml for the main site.
 
@@ -5138,6 +5169,7 @@ def main():
     args = ap.parse_args()
     chapters = extract_source(args.source)
     check_shelf_density(chapters)
+    check_sblgnt_sigla(chapters)
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
     build_chapter_pages(chapters)
     build_toc()
