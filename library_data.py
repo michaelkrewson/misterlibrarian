@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 22 (Greek) ----
+    ("eikon", "eikōn", "εἰκών", "eikōn",
+     "AN IMAGE — a likeness, a portrait, and the root of English 'icon.' ⚠ It is not a neutral word in a Greek Bible: it is the word of Genesis 1:27, humankind made kat' eikona theou, 'according to the image of God.' Which is exactly why Matthew 22:20 is a better question than it looks. Jesus asks whose eikōn and whose epigraphē (inscription) the denarius carries; the answer is Caesar's, so the coin is already his — and the question of what carries GOD's image is left for the hearer to finish. Paul then uses the word of Christ himself, 'the eikōn of the invisible God' (Colossians 1:15), and of the believer being transformed 'into the same eikōn' (2 Corinthians 3:18). A Roman denarius of Tiberius carried his portrait and a legend naming him son of the divine Augustus, so the object in their hand was already awkward for anyone scrupulous about images.", ("Matthew", 22, 20)),
+    ("phimoo", "phimoō", "φιμόω", "phimoō",
+     "TO MUZZLE — literally, to put a muzzle on an animal; Paul quotes the law about not muzzling a threshing ox with this verb (1 Corinthians 9:9). ⚠ Matthew uses it twice in one chapter and the pairing is deliberate: the man with no wedding garment 'ephimōthē' (22:12), and then the Pharisees hear that Jesus 'ephimōsen the Sadducees' (22:34). Same verb, same chapter — one silenced by a question he cannot answer, the others silenced by an argument. The shelf reaches for abstractions (KJV 'was speechless' / 'put to silence,' NIV 'was silent'), which are accurate and lose the animal. It is also what Jesus says to the storm in Mark 4:39 — 'be muzzled' — and to demons.", ("Matthew", 22, 12)),
+    ("apodidomi", "apodidōmi", "ἀποδίδωμι", "apodidōmi",
+     "TO GIVE BACK — apo ('back, away from') + didōmi ('to give'): to render, repay, return what is owed or what belongs to another. ⚠ The prefix is the entire argument of Matthew 22:21. Jesus does not say 'give' to Caesar; he says APODOTE, give back — because the coin already carries Caesar's face, so handing it over returns his own property to him. KJV's 'Render therefore unto Caesar' has the prefix exactly; NIV's 'give to Caesar' loses it, and with it the logic. The same verb runs the settling of accounts in the parable of the talents-debtor (18:25-34, 'repay what you owe') and the wages at the vineyard (20:8). ⚠ Note what the saying does NOT specify: how much belongs to Caesar. Read as two separate spheres, or as the claim that since everything bears God's image Caesar's share is the small change — the library gives both.", ("Matthew", 22, 21)),
+    ("kremannymi", "kremannymi", "κρεμάννυμι", "kremannymi",
+     "TO HANG, to be suspended from — an ordinary verb for something on a peg or a hook. ⚠ Matthew 22:40 makes it structural: 'on these two commandments the whole Law HANGS, and the Prophets.' The metaphor is not that the rest is unimportant but that it DEPENDS from these — remove the peg and everything on it comes down. Compare the Sermon's own summary of the same two-fold ethic, 'this is the Law and the Prophets' (7:12). The same verb is used of a millstone hung round a neck (18:6, and see skandalon) and, grimly, of a man hanging on a tree (Acts 5:30; Galatians 3:13, quoting Deuteronomy 21:23). KJV 'hang all the law and the prophets'; NWT keeps the Greek's slightly awkward order, 'the whole Law hangs, and the Prophets,' which is followed here.", ("Matthew", 22, 40)),
     # ---- Matthew 21 (Greek) ----
     ("hosanna", "hōsanna", "ὡσαννά", "hōsanna",
      "SAVE, PLEASE — and it is a cry for help, not a word of praise, though it has become one. The Greek transliterates Hebrew hoshi'a-na (hoshia, 'save,' + the particle of entreaty na), and it comes straight out of Psalm 118:25; the crowd's next line at Matthew 21:9, 'blessed is the one who comes in the name of Jehovah,' is verse 26 of the same psalm. ⚠ Note what else comes out of Psalm 118 in this chapter: the rejected stone that becomes the head of the corner (21:42) is verses 22-23, three verses earlier. In one chapter the crowd sings the psalm's end and Jesus quotes its middle against the authorities. The shelf divides on whether to translate the word or keep it — KJV/ASV/NIV transliterate, NWT renders 'save, we pray' — and both are defensible, since by Matthew's day it plainly functions as an acclamation and the crowd is not asking to be rescued from anything in particular.", ("Matthew", 21, 9)),
@@ -5186,6 +5195,14 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 22 ----
+    (("Matthew", 22, 12), ("Matthew", 20, 13), "hetaire, 'friend' — the third and coolest of Matthew's three uses, which chapter 20's note said was waiting for a wedding hall"),
+    (("Matthew", 22, 14), ("Matthew", 20, 16), "'many are called, but few are chosen' — original HERE, where the parable has actually been about calling, and imported by copyists there, where it has nothing to attach to"),
+    (("Matthew", 22, 20), ("Genesis", 1, 27), "eikōn — the coin carries Caesar's image; the word is the one used of humankind made in the image of God, and the second half of the question is left unspoken"),
+    (("Matthew", 22, 34), ("Matthew", 22, 12), "phimoō, 'muzzled' — the same verb twice in one chapter: a guest with no answer, and then a whole party silenced by an argument"),
+    (("Matthew", 22, 39), ("Matthew", 19, 19), "'love your neighbour as yourself' — quoted to the rich young man, and now promoted to the second of the two pegs the Law hangs from"),
+    (("Matthew", 22, 40), ("Matthew", 7, 12), "'this is the Law and the Prophets' — the Sermon's own summary of the same two-fold ethic, now given as a structural claim"),
+    (("Matthew", 22, 46), ("Matthew", 21, 23), "the silence that closes the temple controversy, which opened when they demanded his credentials"),
     # ---- Matthew 21 ----
     (("Matthew", 21, 9), ("Matthew", 20, 30), "'Son of David' — the fourth and fifth cries of the title, and again over an objection; the objectors here are the chief priests"),
     (("Matthew", 21, 9), ("Matthew", 11, 3), "'the one who comes' — John's own question from prison, shouted back at him word for word by crowds at the gates"),
@@ -9510,6 +9527,45 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 22 ----
+    "eikon": ("imagen",
+        "UNA IMAGEN — una semejanza, un retrato, y la raíz de «icono». ⚠ No es una palabra neutra en una "
+        "Biblia griega: es la palabra de Génesis 1:27, el ser humano hecho kat' eikona theou, «a imagen de "
+        "Dios». Y por eso mismo Mateo 22:20 es una pregunta mejor de lo que parece. Jesús pregunta de quién "
+        "es la eikōn y de quién la epigraphē (inscripción) que lleva el denario; la respuesta es que del "
+        "César, así que la moneda ya es suya — y la cuestión de qué lleva la imagen de DIOS se deja para que "
+        "la termine quien escucha. Pablo usará después la palabra de Cristo mismo, «la eikōn del Dios "
+        "invisible» (Colosenses 1:15), y del creyente transformado «en la misma eikōn» (2 Corintios 3:18). Un "
+        "denario romano de Tiberio llevaba su retrato y una leyenda que lo nombraba hijo del divino Augusto, "
+        "así que el objeto que tenían en la mano ya era incómodo para cualquiera escrupuloso con las "
+        "imágenes."),
+    "phimoo": ("amordazar, poner bozal",
+        "PONER BOZAL — literalmente, poner un bozal a un animal; Pablo cita con este verbo la ley de no poner "
+        "bozal al buey que trilla (1 Corintios 9:9). ⚠ Mateo lo usa dos veces en un solo capítulo y el "
+        "emparejamiento es deliberado: el hombre sin traje de bodas «ephimōthē» (22:12), y luego los fariseos "
+        "oyen que Jesús «ephimōsen a los saduceos» (22:34). El mismo verbo, el mismo capítulo — uno callado "
+        "por una pregunta que no puede responder, los otros callados por un argumento. El estante recurre a "
+        "abstracciones (la RV «enmudeció» / «había hecho callar», la TNM «se quedó sin habla»), que son "
+        "exactas y pierden el animal. Es además lo que Jesús dice a la tormenta en Marcos 4:39 —«ponte "
+        "bozal»— y a los demonios."),
+    "apodidomi": ("devolver, restituir",
+        "DEVOLVER — apo («de vuelta, desde») + didōmi («dar»): restituir, pagar, dar de vuelta lo que se debe "
+        "o lo que es de otro. ⚠ El prefijo es todo el argumento de Mateo 22:21. Jesús no dice «dad» al César; "
+        "dice APODOTE, devolved — porque la moneda ya lleva la cara del César, así que entregarla es "
+        "restituirle lo suyo. La RV «pagad» da la transacción pero pierde el prefijo, y con él la lógica. El "
+        "mismo verbo mueve el ajuste de cuentas en la parábola del deudor (18:25-34, «paga lo que debes») y "
+        "el jornal de la viña (20:8). ⚠ Nótese lo que el dicho NO especifica: cuánto le corresponde al César. "
+        "Leído como dos esferas separadas, o como la afirmación de que, puesto que todo lleva la imagen de "
+        "Dios, lo del César es la calderilla — la biblioteca da las dos."),
+    "kremannymi": ("pender, colgar",
+        "COLGAR, estar suspendido de — un verbo corriente para algo que pende de una clavija o un gancho. "
+        "⚠ Mateo 22:40 lo vuelve estructural: «de estos dos mandamientos PENDE toda la Ley, y los Profetas». "
+        "La metáfora no es que el resto no importe, sino que DEPENDE de estos: quítese la clavija y todo lo "
+        "que colgaba de ella se viene abajo. Compárese el resumen que el propio Sermón hace de la misma ética "
+        "doble, «esto es la Ley y los Profetas» (7:12). El mismo verbo se usa de una piedra de molino colgada "
+        "del cuello (18:6; véase skandalon) y, siniestramente, de un hombre colgado de un madero (Hechos "
+        "5:30; Gálatas 3:13, citando Deuteronomio 21:23). La RV lee «penden», y esta traducción conserva la "
+        "imagen y el orden de palabras del griego."),
     # ---- Mateo 21 ----
     "hosanna": ("Hosanna",
         "SALVA, POR FAVOR — y es un grito de auxilio, no una palabra de alabanza, aunque se haya vuelto una. "
@@ -10131,6 +10187,50 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat22": [dict(
+        file="titian-tribute-money.jpg",
+        title="The Tribute Money (Der Zinsgroschen)",
+        title_es="La moneda del tributo (Der Zinsgroschen)",
+        artist="Titian",
+        year="1516",
+        location="Gemäldegalerie Alte Meister, Dresden",
+        location_es="Gemäldegalerie Alte Meister, Dresde",
+        alt="A very close two-figure painting against a near-black ground. On the left, Christ &mdash; young, "
+            "long dark hair, faint rays about his head, a red robe under a dark blue-green mantle &mdash; "
+            "turns his eyes to the right without turning his body; his own hand rests open and relaxed. On "
+            "the right, pressed in at the edge of the frame, a balding weathered older man with a heavy "
+            "beard, a coarse cream shirt and a pearl drop earring holds a small gold coin up between them "
+            "between thumb and forefinger",
+        note="Titian throws away the crowd, the temple and the trap, and leaves two faces and a coin. ⚠ Note "
+             "what the composition argues. The <strong>coin is the exact centre</strong> of the picture, and "
+             "Christ does not take it &mdash; his hand is open and at rest while the questioner&rsquo;s "
+             "fingers push the money into the space between them. Verse 20 asks whose <em>image</em> and "
+             "whose <em>inscription</em> the thing carries; Titian makes the viewer do the looking. The "
+             "questioner is marked as worldly by small means &mdash; the pearl earring, the coarse shirt, the "
+             "weathered scalp against Christ&rsquo;s smoothness &mdash; without being made a grotesque. "
+             "⚠ And the object it was made for is almost too neat: Vasari says the panel was painted in "
+             "1516 as the <strong>door of Alfonso I d&rsquo;Este&rsquo;s coin cabinet</strong> &mdash; a picture "
+             "about a coin, hinged onto the place the duke kept his coins. The subject is very rare in "
+             "painting and this may be its first appearance, and it is the earliest signed work by Titian. "
+             "&ldquo;Render to Caesar&rdquo; had some edge for a duke whose territory straddled the Empire "
+             "and the Papal States. Now in Dresden.",
+        note_es="Tiziano tira por la borda la multitud, el templo y la trampa, y deja dos rostros y una "
+                "moneda. ⚠ Fíjese en lo que argumenta la composición. La <strong>moneda es el centro "
+                "exacto</strong> del cuadro, y Cristo no la toma: su mano está abierta y en reposo mientras "
+                "los dedos del que pregunta empujan el dinero al espacio que hay entre los dos. El versículo "
+                "20 pregunta de quién es la <em>imagen</em> y de quién la <em>inscripción</em> que lleva la "
+                "cosa; Tiziano hace que sea el espectador quien mire. Al interrogador se lo marca como mundano "
+                "con medios pequeños &mdash; el pendiente de perla, la camisa burda, el cráneo curtido frente "
+                "a la tersura de Cristo &mdash; sin convertirlo en un grotesco. ⚠ Y el objeto para el que se "
+                "hizo es casi demasiado redondo: Vasari dice que la tabla se pintó en 1516 como "
+                "<strong>puerta del monetario de Alfonso I d&rsquo;Este</strong> &mdash; un cuadro sobre una "
+                "moneda, montado con goznes en el mueble donde el duque guardaba sus monedas. El asunto es "
+                "rarísimo en pintura y esta puede ser su primera aparición; es además la obra firmada más "
+                "antigua de Tiziano. Y el «dad al César» tenía cierto filo para un duque cuyo territorio "
+                "quedaba a caballo entre el Imperio y los Estados Pontificios. Hoy en Dresde.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Titian_-_The_Tribute_Money_-_Google_Art_Project_(715452).jpg",
+    )],
     "mat21": [dict(
         file="giotto-entry-jerusalem.jpg",
         title="Entry into Jerusalem",
