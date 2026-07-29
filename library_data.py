@@ -1143,6 +1143,17 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 17 (Greek) ----
+    ("metamorphoo", "metamorphoō", "μεταμορφόω", "metamorphoō",
+     "To CHANGE FORM — meta ('change') + morphē ('form'); the root of English 'metamorphosis.' Matthew 17:2 puts it in the PASSIVE: he WAS transfigured, something done to him rather than performed by him. ⚠ English hides a connection the Greek makes plainly, because the New Testament uses this same verb only twice more and both times of ordinary Christians: 'be TRANSFORMED by the renewing of your mind' (Romans 12:2) and 'we all… are being TRANSFORMED into the same image from glory to glory' (2 Corinthians 3:18) — the second inside a passage about Moses' shining face and the veil over it, which is exactly the imagery of the mountain. Every English shelf version reads 'transfigured' here (from the Latin transfiguratus) and 'transformed' there, so the reader is not told they are one word. The related noun morphē is Philippians 2:6-7's 'form of God' / 'form of a slave.'", ("Matthew", 17, 2)),
+    ("horama", "horama", "ὅραμα", "horama",
+     "A SIGHT, a thing seen — from horaō, to see. Jesus calls the transfiguration a horama (Matthew 17:9), and it is the word's ONLY appearance in the Gospels; Acts then uses it a dozen times for Peter's sheet, Paul's man of Macedonia, Ananias's instructions. ⚠ Its usefulness is its refusal to settle the question: it does not say 'a mere vision' (as against something real) and it does not say 'a bodily event' — it says a thing was seen. KJV/ASV/NWT all keep 'vision'; NIV dissolves it into 'what you have seen,' a fair gloss that loses the technical noun. Matthew alone supplies it: Mark and Luke narrate the same scene with no such word.", ("Matthew", 17, 9)),
+    ("skene", "skēnē", "σκηνή", "skēnē",
+     "A TENT — and, in the Greek Old Testament, THE tent: skēnē is what the Septuagint calls the tabernacle, and skēnopēgia is the Feast of Booths. So Peter's offer to build three skēnas on the mountain (Matthew 17:4) is either camping gear or liturgy, depending how much you want to hear. KJV/Douay read 'tabernacles' and import the feast; NIV/NWT read 'shelters'/'tents' and keep the object. ⚠ The word's whole range gets used elsewhere in the New Testament: John 1:14's 'the Word became flesh and TENTED (eskēnōsen) among us'; Peter's own 'the putting off of my TENT is soon' for his body (2 Peter 1:14, in the same paragraph where he remembers this mountain); and Revelation 21:3's 'the TENT of God is with humankind.'", ("Matthew", 17, 4)),
+    ("didrachmon", "didrachmon / statēr", "δίδραχμον / στατήρ", "didrachmon",
+     "THE TWO-DRACHMA and THE FOUR-DRACHMA. The didrachmon was the annual half-shekel every Israelite male owed toward the temple's upkeep (Exodus 30:11-16) — about two days' wages, and NOT Roman tribute, which is what makes Jesus' argument in Matthew 17:25-26 work: it is his own Father's house being taxed. The statēr found in the fish's mouth is a tetradrachm, four drachmas — exactly two didrachmas, the tax for two men, 'for me and for you,' to the coin. ⚠ The shelf scatters: KJV's 'a piece of money' tells the reader nothing, ASV reads 'a shekel,' NWT transliterates 'a stater,' NIV explains it as 'a four-drachma coin.' The precision IS the point, so this translation keeps the coin and puts the arithmetic in the note. Only Matthew — the Gospel that begins its author's story at a tax booth — records the episode at all.", ("Matthew", 17, 24)),
+    ("apokathistemi", "apokathistēmi", "ἀποκαθίστημι", "apokathistēmi",
+     "To RESTORE — to set a thing back as it was. Jesus grants the scribes their doctrine with it: 'Elijah does come, and will RESTORE all things' (Matthew 17:11), which is Malachi's promise that the returning Elijah will 'turn the hearts of fathers to their children' (Malachi 3:23-24 Hebrew / 4:5-6 English). ⚠ The verb has a quiet second career: it is what the disciples ask about in Acts 1:6 ('are you at this time RESTORING the kingdom to Israel?'), and its noun apokatastasis is Acts 3:21's 'the restoration of all things' — a phrase later theology has argued over for centuries. In the Gospels it is also the plain medical word for a hand or an eye put back to working order (Mark 3:5).", ("Matthew", 17, 11)),
     # ---- Jeremiah 23 (Hebrew) ----
     ("tsemach", "tsemach", "צֶמַח", "tsemach",
      "A SPROUT, a shoot — what comes up out of the ground; from tsamach, 'to sprout.' The image is a cut stump putting out green: something small rising where something great was felled. Jeremiah promises David a tsemach tsaddiq, a 'righteous Branch' (23:5), against the backdrop of a royal house whose cedars have just been cut down and burned (22:7). By the post-exilic prophets it has hardened into an outright title — Zechariah's 'my servant, the BRANCH' (3:8) and 'a man whose name is Branch' (6:12) — and it runs alongside Isaiah's netser, the 'shoot' from the stump of Jesse. English keeps 'Branch' by tradition, though NWT's 'sprout' is the more exact botany. The same oracle is spoken a second time in Jeremiah 33, where the name it carries is given to the CITY instead of the man.", ("Jeremiah", 23, 5)),
@@ -5141,6 +5152,20 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 17 ----
+    (("Matthew", 17, 1), ("Matthew", 16, 28), "'after six days' — the interval since the promise that 'some standing here will not taste death until they see the Son of Man coming in his kingdom,' which this scene is widely read as the first instalment of"),
+    (("Matthew", 17, 2), ("Matthew", 13, 43), "'his face shone like the sun' — Matthew has already used that exact image once, of the righteous in the kingdom of their Father"),
+    (("Matthew", 17, 5), ("Matthew", 3, 17), "the voice at the baptism, word for word — with one imperative added here that was not said at the river: 'listen to him'"),
+    (("Matthew", 17, 9), ("Matthew", 16, 20), "the same order to say nothing, with the same expiry: the title is only safe once the cross has defined it"),
+    (("Matthew", 17, 12), ("Matthew", 11, 14), "'he is Elijah who is to come' — said there with a conditional ('if you are willing to accept it'), stated flat here, and the disciples finally understand"),
+    (("Matthew", 17, 12), ("Matthew", 14, 10), "what the identification costs: the Elijah who already came was beheaded at a birthday party, and Jesus draws the line straight from that to himself"),
+    (("Matthew", 17, 15), ("Matthew", 4, 24), "selēniazomai, 'moonstruck' — and Matthew's own summary there lists moonstruck and demon-possessed as SEPARATE categories, which verse 18 then merges in this one case"),
+    (("Matthew", 17, 20), ("Matthew", 16, 8), "oligopistia — the noun of Matthew's coined 'little-faith,' the fourth time the rebuke lands and the first time it is given as a diagnosis of failed power"),
+    (("Matthew", 17, 20), ("Matthew", 14, 31), "'little faith' to Peter sinking on the water — a rebuke about SIZE, aimed at someone still called a disciple at the end of the sentence"),
+    (("Matthew", 17, 20), ("Matthew", 13, 31), "the mustard grain — Matthew's established image for the smallest possible beginning, here held up as sufficient"),
+    (("Matthew", 17, 22), ("Matthew", 16, 21), "the second passion prediction — the first came with Jerusalem and the elders spelled out; this one is stripped to the bone, and nobody argues"),
+    (("Matthew", 17, 23), ("Matthew", 16, 23), "last time Peter rebuked him for saying it and was called Satan; this time the only response Matthew records is grief"),
+    (("Matthew", 17, 24), ("Matthew", 9, 9), "only Matthew records the temple-tax episode — and only Matthew opens its own author's story at a tax booth"),
     # ---- Jeremiah 23 ----
     (("Jeremiah", 23, 1), ("Jeremiah", 22, 13), "the same cry hoy — 'woe!' — that opened over Jehoiakim alive, moved off one king and onto the whole class of 'shepherds' his chapter paraded"),
     (("Jeremiah", 23, 3), ("Genesis", 1, 28), "'be fruitful and multiply' — the creation blessing verbatim, applied to the remnant God gathers back himself: exile undone in the grammar of the first page"),
@@ -9409,6 +9434,53 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 17 ----
+    "metamorphoo": ("transfigurar, transformar",
+        "CAMBIAR DE FORMA — meta («cambio») + morphē («forma»); la raíz de «metamorfosis». Mateo 17:2 lo "
+        "pone en PASIVA: <em>fue</em> transfigurado, algo que le sucede y no algo que él ejecuta — matiz "
+        "que la TNM conserva y que el reflexivo «se transfiguró» de la RV difumina. ⚠ El español, como el "
+        "inglés, esconde una conexión que el griego hace a la vista: el Nuevo Testamento usa este mismo "
+        "verbo solo dos veces más, y ambas de cristianos corrientes — «transformaos por la renovación de "
+        "vuestro entendimiento» (Romanos 12:2) y «somos transformados de gloria en gloria en la misma "
+        "imagen» (2 Corintios 3:18), esta última dentro de un pasaje sobre el rostro resplandeciente de "
+        "Moisés y el velo que lo cubría, que es justamente la imaginería del monte. El sustantivo "
+        "emparentado morphē es la «forma de Dios» / «forma de esclavo» de Filipenses 2:6-7."),
+    "horama": ("visión, cosa vista",
+        "UNA COSA VISTA — de horaō, ver. Jesús llama al episodio del monte un horama (Mateo 17:9), y es la "
+        "ÚNICA aparición de la palabra en los Evangelios; Hechos la usará luego una docena de veces para "
+        "el lienzo de Pedro, el varón macedonio de Pablo, las instrucciones a Ananías. ⚠ Su utilidad está "
+        "en que se niega a zanjar la cuestión: no dice «solo una visión» (por oposición a algo real) ni "
+        "dice «un hecho corporal» — dice que algo fue visto. La RV y la TNM mantienen «visión»; la NVI la "
+        "disuelve en «lo que han visto», glosa razonable que pierde el sustantivo técnico. Lo aporta solo "
+        "Mateo: Marcos y Lucas narran la misma escena sin ninguna palabra semejante."),
+    "skene": ("tienda, enramada, tabernáculo",
+        "UNA TIENDA — y, en el Antiguo Testamento griego, LA tienda: skēnē es como la Septuaginta llama al "
+        "tabernáculo, y skēnopēgia es la fiesta de las Cabañas. Así que la oferta de Pedro de levantar tres "
+        "skēnas en el monte (Mateo 17:4) es material de acampada o es liturgia, según cuánto se quiera oír. "
+        "La RV lee «pabellones», la TNM «tiendas», la NVI «albergues». ⚠ Todo el registro de la palabra se "
+        "usa en otros lugares del Nuevo Testamento: «el Verbo se hizo carne y PUSO SU TIENDA (eskēnōsen) "
+        "entre nosotros» (Juan 1:14); «el desarmar mi TIENDA es inminente», dicho Pedro de su propio cuerpo "
+        "(2 Pedro 1:14, en el mismo párrafo en que recuerda este monte); y «la TIENDA de Dios está con los "
+        "hombres» (Apocalipsis 21:3)."),
+    "didrachmon": ("dos dracmas / estatero",
+        "EL DE DOS DRACMAS y EL DE CUATRO. El didracma era el medio siclo anual que cada varón israelita "
+        "debía para el sostenimiento del templo (Éxodo 30:11-16) — unos dos jornales, y NO tributo romano, "
+        "que es lo que hace funcionar el argumento de Jesús en Mateo 17:25-26: lo que se está gravando es "
+        "la casa de su propio Padre. El estatero hallado en la boca del pez es un tetradracma, cuatro "
+        "dracmas — exactamente dos didracmas, el impuesto de dos hombres, «por mí y por ti», al céntimo. "
+        "⚠ El estante se dispersa: la RV transcribe «estatero», la TNM «una moneda de estater», la NVI "
+        "explica «una moneda de cuatro dracmas». La precisión ES el asunto, así que esta traducción conserva "
+        "la moneda y pone la aritmética en la nota. Solo Mateo — el Evangelio que empieza la historia de su "
+        "propio autor en una mesa de impuestos — registra el episodio."),
+    "apokathistemi": ("restaurar",
+        "RESTAURAR — volver a poner una cosa como estaba. Jesús concede a los escribas su doctrina con este "
+        "verbo: «Elías sí viene, y RESTAURARÁ todas las cosas» (Mateo 17:11), que es la promesa de Malaquías "
+        "de que el Elías que vuelve «hará volver el corazón de los padres hacia los hijos» (Malaquías 3:23-24 "
+        "hebreo / 4:5-6 español). ⚠ El verbo tiene una segunda carrera discreta: es lo que preguntan los "
+        "discípulos en Hechos 1:6 («¿restaurarás en este tiempo el reino a Israel?»), y su sustantivo "
+        "apokatastasis es «la restauración de todas las cosas» de Hechos 3:21 — expresión sobre la que la "
+        "teología posterior lleva siglos discutiendo. En los Evangelios es además la palabra médica llana "
+        "para una mano o un ojo devueltos a su función (Marcos 3:5)."),
     # ---- Jeremías 23 ----
     "tsemach": ("renuevo, brote",
         "Un BROTE, un retoño — lo que sube de la tierra; de tsamach, «brotar». La imagen es un tocón "
@@ -9718,6 +9790,46 @@ ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
     "sus discípulos quién dice la gente que es él — el punto más al norte al que cualquier Evangelio lo "
     "registra viajando, a unos cuarenta kilómetros al norte del mar de Galilea.")
 
+ENCYCLOPEDIA_ES["elijah"] = ("Elías",
+    "El tisbita — el profeta que aparece en 1 Reyes 17 sin presentación, sin padre nombrado y sin relato "
+    "de llamamiento, anuncia una sequía y domina el resto del libro. Lo alimentan cuervos, resucita al "
+    "hijo de una viuda, se enfrenta a los profetas de Baal en el Carmelo, luego huye de Jezabel al "
+    "desierto y pide morirse, y oye a Dios no en el viento, ni en el terremoto, ni en el fuego, sino en un "
+    "delgado susurro de silencio. Se le reconoce por una vestidura de pelo y un cinturón de cuero "
+    "(2 Reyes 1:8) — el disfraz que Juan el Bautista lleva como una declaración. No muere: un carro de "
+    "fuego lo separa de Eliseo y sube en un torbellino (2 Reyes 2). Malaquías cierra el Antiguo Testamento "
+    "prometiendo que volverá antes del gran día, y por eso se le espera en los Evangelios. Jesús lo "
+    "identifica con Juan — primero con una condición, «si queréis recibirlo» (Mateo 11:14), y después sin "
+    "ella (Mateo 17:12) — y él mismo aparece en persona junto a Moisés en la transfiguración.")
+
+ENCYCLOPEDIA_ES["moses"] = ("Moisés",
+    "Libertador, legislador y profeta de Israel — nacido de una pareja levita (Amram y Jocabed) bajo la "
+    "orden de muerte del faraón, escondido tres meses y luego puesto a flotar en el Nilo en un ARCA de "
+    "papiro (la misma palabra, tevah, que la de Noé) y sacado del agua por la propia hija del faraón, que "
+    "lo cría en la corte egipcia. Ya adulto mata a un capataz egipcio, huye a Madián, se casa con Séfora y "
+    "es llamado de vuelta en la zarza ardiente (Éxodo 3). El Nuevo Testamento enmarca su vida en tres "
+    "cuarentenas (Hechos 7:23, 30, 36): cuarenta años príncipe egipcio, cuarenta pastor madianita, "
+    "cuarenta guiando a Israel; muere a los 120 (Deuteronomio 34:7), el profeta «a quien Jehová conoció "
+    "cara a cara». ⚠ <strong>Su nombre es egipcio.</strong> El relato da una razón hebrea — la hija del "
+    "faraón lo llama Mosheh «porque de las aguas lo SAQUÉ (meshitihu)» (2:10), del verbo hebreo mashah, "
+    "«sacar». Pero el nombre mismo es el elemento egipcio corriente MOSE / MES, «nacido de, hijo, niño» — "
+    "la pieza que está en TUT-MOSIS («nacido de Tot»), AH-MOSE y RA-MSES («nacido de Ra»). Hasta el juego "
+    "de palabras hebreo delata la costura: la forma Mosheh es ACTIVA, «el que saca», y no la pasiva "
+    "mashuy, «sacado», que exigiría la explicación de la propia princesa. Lejos de ser un problema, ese "
+    "nombre egipcio es una huella de autenticidad: un escritor tardío que inventara un héroe nacional "
+    "difícilmente le pondría un nombre extranjero que anuncia una crianza egipcia. Ya los escritores "
+    "judíos antiguos sabían que era egipcio (Filón; Josefo). En la transfiguración está de pie en el monte "
+    "— y la voz manda escuchar a otro (Mateo 17:3-5).")
+
+ENCYCLOPEDIA_ES["john-the-baptist"] = ("Juan el Bautista",
+    "El testigo enviado por delante de Jesús, que bautizaba en el Jordán. Niega ser el Mesías, ni Elías, "
+    "ni el Profeta, se llama a sí mismo solamente «una voz que clama en el desierto» (Isaías 40:3), y "
+    "señala a sus propios discípulos hacia «el Cordero de Dios». Viste pelo de camello y un cinturón de "
+    "cuero, que es el disfraz de Elías (2 Reyes 1:8) llevado como una declaración — y Jesús lo confirma: "
+    "«Elías ya vino, y no lo reconocieron» (Mateo 17:12), dicho justo después de que Herodes lo decapitara "
+    "en una fiesta de cumpleaños (Mateo 14:10). ⚠ El Evangelio de Juan nunca nombra a su propio autor, así "
+    "que todo «Juan» que aparece en ese libro es el Bautista.")
+
 ENCYCLOPEDIA_ES["zedekiah"] = ("Sedequías",
     "El último rey de Judá — nacido Matanías, instalado y rebautizado por el propio Nabucodonosor "
     "después de la deportación del 597 (2 Reyes 24:17): un vasallo que lleva un nombre de trono "
@@ -9785,6 +9897,45 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat17": [dict(
+        file="raphael-transfiguration.jpg",
+        title="The Transfiguration",
+        title_es="La Transfiguración",
+        artist="Raphael",
+        year="1516–1520",
+        location="Pinacoteca Vaticana, Vatican City",
+        location_es="Pinacoteca Vaticana, Ciudad del Vaticano",
+        alt="A tall painting in two halves. Above, Christ floats in white light with arms outspread and "
+            "robes blown upward, flanked by two hovering figures — Moses and Elijah — while three "
+            "disciples lie collapsed on the hilltop below, shielding their eyes from the glare. Below, in "
+            "shadow, a large crowd presses around a boy with rolled-back eyes and a rigid outflung arm "
+            "held up by his father; a woman kneels in the foreground and several disciples gesture "
+            "helplessly, some of them pointing up toward the mountain",
+        note="⚠ This one is not a placeholder — it is the chapter. Raphael's last painting, left "
+             "unfinished at his death in 1520 and placed at the head of his funeral bier, puts BOTH "
+             "halves of Matthew 17 on a single canvas: the transfiguration of verses 1–8 in the light "
+             "above, and the boy his disciples could not heal, verses 14–18, in the dark below. The "
+             "picture's own catalogue title in German says so outright — <em>Transfiguration und "
+             "Heilung des besessenen Knaben</em>, &ldquo;Transfiguration and Healing of the Possessed "
+             "Boy.&rdquo; Contemporaries were unsettled by the split; Vasari admired it, later "
+             "academic critics thought the two scenes did not belong together, and the disciple "
+             "pointing up the hill is the hinge that says they do. Note the argument Raphael is making "
+             "with the composition: the crowd below is looking everywhere except at the one place the "
+             "answer is.",
+        note_es="⚠ Esta no es una imagen de relleno — es el capítulo. El último cuadro de Rafael, "
+                "inacabado a su muerte en 1520 y colocado a la cabecera de su féretro, pone AMBAS "
+                "mitades de Mateo 17 en un solo lienzo: la transfiguración de los versículos 1-8 en la "
+                "luz de arriba, y el muchacho que sus discípulos no pudieron curar, versículos 14-18, en "
+                "la oscuridad de abajo. El propio título de catálogo en alemán lo dice sin rodeos: "
+                "<em>Transfiguration und Heilung des besessenen Knaben</em>, «Transfiguración y curación "
+                "del muchacho endemoniado». A sus contemporáneos les inquietó la división; Vasari lo "
+                "admiró, críticos académicos posteriores pensaron que las dos escenas no casaban, y el "
+                "discípulo que señala hacia el monte es la bisagra que dice que sí. Fíjese en el "
+                "argumento que Rafael hace con la composición: la multitud de abajo mira a todas partes "
+                "menos al único sitio donde está la respuesta.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg",
+    )],
     "jer23": [dict(
         file="dore-jeremiah-preaching.jpg",
         title="The Prophet Jeremiah",
