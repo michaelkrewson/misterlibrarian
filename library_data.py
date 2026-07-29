@@ -9669,6 +9669,80 @@ ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "jer18": [dict(
+        file="michelangelo-jeremiah-sistine.jpg",
+        title="The Prophet Jeremiah",
+        title_es="El profeta Jeremías",
+        artist="Michelangelo",
+        year="1511",
+        location="Sistine Chapel ceiling, Vatican City",
+        location_es="Techo de la Capilla Sixtina, Ciudad del Vaticano",
+        alt="An elderly, bearded prophet sits slumped forward in thought, his chin pressed into his "
+            "knuckles and his white beard spilling over his hand, wrapped in heavy orange and "
+            "rose-pink robes, beneath a Latin nameplate reading HIEREMIAS and flanked by carved "
+            "stone putti and the fresco's own painted architecture",
+        note="⚠ NOT this chapter's scene, and placed here as a placeholder, honestly labeled as "
+             "one. Michelangelo's Jeremiah, on the Sistine Chapel ceiling, is a solitary character "
+             "study &mdash; among the most reproduced and most melancholic of his seven Sistine "
+             "prophets, often read as the most inward and exhausted of the set, seated at the end of "
+             "the ceiling nearest the altar &mdash; not a narrative depicting the potter's house. The "
+             "pose (a hand pressed to the beard, eyes lowered) is traditionally read as brooding grief, "
+             "the opposite of the active WATCHING this chapter actually describes &mdash; Jeremiah "
+             "going down to the potter's house and observing the wheel at work. Kept here for its own "
+             "fame until a real depiction of that scene turns up.",
+        note_es="⚠ NO es la escena de este capítulo, y se coloca aquí como un marcador "
+                "temporal, declarado honestamente como tal. El Jeremías de Miguel Ángel, en "
+                "el techo de la Capilla Sixtina, es un estudio de carácter solitario &mdash; entre "
+                "los más reproducidos y más melancólicos de sus siete profetas sixtinos, "
+                "leído a menudo como el más introspectivo y agotado del conjunto, sentado en "
+                "el extremo del techo más cercano al altar &mdash; no una narración que "
+                "represente la casa del alfarero. La postura (una mano presionada contra la barba, los "
+                "ojos bajos) se lee tradicionalmente como duelo introspectivo, lo contrario de la "
+                "OBSERVACIÓN activa que este capítulo en verdad describe &mdash; Jeremías "
+                "bajando a la casa del alfarero y observando el torno en funcionamiento. Se conserva "
+                "aquí por su propia fama hasta que aparezca una representación real de esa "
+                "escena.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Michelangelo,_profeti,_Jeremiah_01.jpg",
+    )],
+    "jer19": [dict(
+        file="barthelemy-deyck-jeremiah.jpg",
+        title="Prophet Jeremiah (Annunciation triptych, reverse panel)",
+        title_es="El profeta Jeremías (tríptico de la Anunciación, panel del reverso)",
+        artist="Barthélemy d'Eyck (the Master of the Aix Annunciation)",
+        year="c. 1443–1445",
+        location="Royal Museums of Fine Arts of Belgium, Brussels",
+        location_es="Museos Reales de Bellas Artes de Bélgica, Bruselas",
+        alt="A bearded man in a scarlet cardinal's robe and cap stands reading intently from a small "
+            "open blue book, framed inside a carved Gothic stone archway on a pedestal; a shelf above "
+            "him holds books, papers, a quill and a small pot, with a knife and pouch hanging on the "
+            "wall beside him",
+        note="⚠ NOT this chapter's scene &mdash; placed here as an honestly-labeled placeholder, not a "
+             "depiction of Jeremiah smashing the earthen flask before the elders. The painting itself "
+             "is stranger than it first looks: Jeremiah is dressed not as an ancient Hebrew prophet but "
+             "as a 15th-century cardinal, in the same scarlet robes a viewer of this altarpiece would "
+             "have seen on a real churchman &mdash; a standard Northern Renaissance habit of painting "
+             "Old Testament figures in the artist's own contemporary dress rather than attempting "
+             "historical costume. The panel originally formed the REVERSE of an Annunciation "
+             "altarpiece, paired there with the risen Christ &mdash; Jeremiah placed as a witness to "
+             "what his own prophecies pointed toward, reading rather than pronouncing judgment. Kept "
+             "here for its own quality until a real depiction of this chapter's scene turns up.",
+        note_es="⚠ NO es la escena de este capítulo &mdash; se coloca aquí como un marcador "
+                "temporal declarado honestamente como tal, no una representación de Jeremías "
+                "rompiendo la vasija de barro ante los ancianos. El cuadro mismo es más extraño de "
+                "lo que parece a primera vista: Jeremías no está vestido como un antiguo profeta "
+                "hebreo sino como un cardenal del siglo XV, con las mismas vestiduras escarlata que "
+                "un espectador de este retablo habría visto en un clérigo real &mdash; una "
+                "costumbre habitual del Renacimiento nórdico de pintar a las figuras del Antiguo "
+                "Testamento con la vestimenta contemporánea del propio artista, en vez de intentar "
+                "un vestuario histórico. El panel formaba originalmente el REVERSO de un retablo de "
+                "la Anunciación, emparejado allí con el Cristo resucitado &mdash; Jeremías colocado "
+                "como testigo de aquello hacia lo que apuntaban sus propias profecías, leyendo en "
+                "vez de pronunciar juicio. Se conserva aquí por su propia calidad hasta que aparezca "
+                "una representación real de la escena de este capítulo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Annunciation_triptych_by_Barth%C3%A9lemy_d%27Eyck,_right_panel,_prophet_Jeremiah.jpg",
+    )],
     "mat15": [dict(
         file="carracci-christ-canaanite-woman.jpg",
         title="Christ and the Canaanite Woman",
