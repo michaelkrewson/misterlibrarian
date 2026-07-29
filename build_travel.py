@@ -928,6 +928,30 @@ def build_drafts_index(all_posts):
                 desc="Unpublished entries, for preview only.", noindex=True)
 
 
+def _prune_leaked_draft_pages(current_draft_slugs):
+    """Remove a REAL <slug>.html left behind for a post that is still a draft.
+
+    A `--drafts` preview build writes every draft out at its real published URL
+    — that's the point of the preview — but write() only ever adds files, so the
+    next plain build leaves that page sitting in travel/ as a live, indexable
+    page for an unpublished entry. It's orphaned (nothing links to it, and it's
+    absent from the index, feed and sitemap), which is exactly what makes it
+    easy to miss and commit. This has now happened twice: the orphaned
+    travel/in-n-out-vancouver.html noted in _prune_stale_draft_previews, and
+    travel/our-lady-of-sorrows.html from the 2026-07-29 preview build.
+
+    Only ever touches a slug whose post is a draft RIGHT NOW, and only on a
+    non-`--drafts` build, so it can never delete a legitimately published page.
+    """
+    if not os.path.isdir(OUT_DIR):
+        return
+    for slug in sorted(current_draft_slugs):
+        path = os.path.join(OUT_DIR, slug + ".html")
+        if os.path.exists(path):
+            os.remove(path)
+            print(f"  (removed leaked draft page: {slug}.html — it is still a draft)")
+
+
 def _prune_stale_draft_previews(current_draft_slugs):
     """Remove a preview page left behind by a post that's since been published
     or deleted — write() only ever adds files, so without this a stale
@@ -1218,6 +1242,8 @@ def main():
         write(fn, doc)
     write(DRAFTS_INDEX_FILE, build_drafts_index(all_posts))
     _prune_stale_draft_previews(draft_slugs)
+    if not args.drafts:
+        _prune_leaked_draft_pages(draft_slugs)
 
     drafts = len(draft_slugs)
     print("built {} post(s){} -> {}".format(
