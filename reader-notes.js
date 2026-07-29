@@ -57,8 +57,17 @@
   ];
 
   // "/genesis-1.html" -> { book:"Genesis", ch:1 }; the verse number comes from the id.
+  // The Spanish twin of a chapter is served as "<stem>.es.html", so the raw
+  // filename stem is "jeremiah-23.es". Strip that suffix before parsing: without
+  // it every Spanish page read its chapter as "23.es" (wrong ref on every note
+  // label and share title) AND built its per-verse share link as
+  // /v/jeremiah-23.es-5.html, which is a 404 — the real stubs are language-neutral
+  // (/v/jeremiah-23-5.html). Found 2026-07-29 by looking at a rendered ES page.
+  function baseStem() {
+    return PATH.replace(/^.*\//, "").replace(/\.html$/, "").replace(/\.es$/, "");
+  }
   function bookChapter() {
-    var stem = PATH.replace(/^.*\//, "").replace(/\.html$/, ""); // "genesis-1"
+    var stem = baseStem();                                       // "genesis-1"
     var i = stem.lastIndexOf("-");
     var bookSlug = i < 0 ? stem : stem.slice(0, i);
     var ch = i < 0 ? "" : stem.slice(i + 1);
@@ -79,7 +88,7 @@
   // Share the /v/ stub, not the raw #fragment: the stub carries this verse's own
   // Open Graph tags so the link unfurls with the verse text, then redirects a human
   // straight to the chapter anchor. STEM matches build.py's chapter_filename stem.
-  var STEM = PATH.replace(/^.*\//, "").replace(/\.html$/, ""); // "genesis-1"
+  var STEM = baseStem();                                       // "genesis-1"
   function urlFor(verseId) {
     return location.origin + "/" + "v/" + STEM + "-" + verseNum(verseId) + ".html";
   }
