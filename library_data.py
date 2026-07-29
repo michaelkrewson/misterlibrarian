@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 21 (Greek) ----
+    ("hosanna", "hōsanna", "ὡσαννά", "hōsanna",
+     "SAVE, PLEASE — and it is a cry for help, not a word of praise, though it has become one. The Greek transliterates Hebrew hoshi'a-na (hoshia, 'save,' + the particle of entreaty na), and it comes straight out of Psalm 118:25; the crowd's next line at Matthew 21:9, 'blessed is the one who comes in the name of Jehovah,' is verse 26 of the same psalm. ⚠ Note what else comes out of Psalm 118 in this chapter: the rejected stone that becomes the head of the corner (21:42) is verses 22-23, three verses earlier. In one chapter the crowd sings the psalm's end and Jesus quotes its middle against the authorities. The shelf divides on whether to translate the word or keep it — KJV/ASV/NIV transliterate, NWT renders 'save, we pray' — and both are defensible, since by Matthew's day it plainly functions as an acclamation and the crowd is not asking to be rescued from anything in particular.", ("Matthew", 21, 9)),
+    ("lestes", "lēstēs", "λῃστής", "lēstēs",
+     "A BANDIT — an armed robber or brigand, not a pickpocket and not a swindler. Josephus uses it of insurgents; John uses it of Barabbas (18:40); and it is the word for the two men crucified beside Jesus (Matthew 27:38), which is why 'thieves' there is misleading too. ⚠ So the temple charge at 21:13 is not primarily about overcharging. Quoting Jeremiah 7:11, Jesus says the house has become a spēlaion lēstōn — a CAVE of bandits, a hideout — and Jeremiah's own context is people who steal and murder and then shelter in the temple as if it were a refuge. KJV's 'den of thieves' and NIV's 'den of robbers' both suggest commercial dishonesty; the charge is closer to 'this has become a brigands' hideout.' Distinguish kleptēs, the ordinary thief who works by stealth (the word in 'the Lord will come like a kleptēs').", ("Matthew", 21, 13)),
+    ("metamelomai", "metamelomai", "μεταμέλομαι", "metamelomai",
+     "TO REGRET, to have a change of feeling — and NOT the standard word for repentance, which is metanoeō, 'to change the mind' (see that entry). ⚠ Matthew uses this softer, more emotional verb at exactly two places and they are worth reading together. The son in the parable of the two sons refuses and then 'metamelētheis, went' (21:29), and the priests 'did not even metamelēthēte afterwards and believe' (21:32) — the charge is not that they reasoned badly but that nothing moved. Then it is what JUDAS does: 'seeing that he was condemned, he metamelētheis' and returned the silver (27:3), a regret that changes nothing and ends in a rope. The Greek Old Testament also uses it of God 'relenting' — the same territory as Hebrew nacham. English 'repent' covers both verbs and hides the distinction.", ("Matthew", 21, 29)),
+    ("kephale-gonias", "kephalē gōnias", "κεφαλὴ γωνίας", "kephalē gōnias",
+     "HEAD OF THE CORNER — and what that actually is architecturally is genuinely uncertain, which is why this translation keeps the literal phrase. Two candidates: the foundation cornerstone from which a building's lines are set, or the capstone at the summit of an arch or a parapet. Both fit different New Testament uses. ⚠ Quoted from Psalm 118:22-23 at Matthew 21:42, and it becomes one of the most-used images in the apostolic writings — Acts 4:11, Ephesians 2:20 ('Christ Jesus himself the akrogōniaios'), 1 Peter 2:6-7, where it is fused with Isaiah 8:14's stone of stumbling exactly as Matthew 21:44 fuses it. The shelf splits: KJV/ASV 'the head of the corner,' NIV 'the cornerstone,' NWT 'the chief corner stone' — the modern renderings settle a question the Greek leaves open.", ("Matthew", 21, 42)),
     # ---- Matthew 20 (Greek) ----
     ("lytron", "lytron / antilytron", "λύτρον", "lytron",
      "A RANSOM — the price paid to release a slave, a captive or a debtor; from lyō, 'to loose.' It is the Greek Old Testament's word for the redemption-price of a life (Exodus 21:30) and for the half-shekel every Israelite paid 'as a lytron for his soul' (Exodus 30:12 — the very tax argued over at Matthew 17:24). ⚠ It appears in the Gospels exactly twice, in one saying: 'to give his life a lytron ANTI many' (Matthew 20:28 and Mark 10:45). The preposition matters and is often flattened — anti is the ordinary word for 'in place of, in exchange for,' and NWT's 'a ransom IN EXCHANGE FOR many' is the most exact reading on the shelf, against KJV/ASV's 'a ransom for many.' Paul intensifies it to antilytron, 'a corresponding ransom' (1 Timothy 2:6). ⚠ The word says a price was paid and does not say to whom — the question later theology spent centuries on. And 'many' (pollōn) is itself disputed: a limit, or the Semitic idiom for 'the great number, i.e. all.'", ("Matthew", 20, 28)),
@@ -5177,6 +5186,16 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 21 ----
+    (("Matthew", 21, 9), ("Matthew", 20, 30), "'Son of David' — the fourth and fifth cries of the title, and again over an objection; the objectors here are the chief priests"),
+    (("Matthew", 21, 9), ("Matthew", 11, 3), "'the one who comes' — John's own question from prison, shouted back at him word for word by crowds at the gates"),
+    (("Matthew", 21, 10), ("Matthew", 8, 24), "eseisthē — the earthquake-root Matthew keeps for hinges: the sea did this, and now the city does"),
+    (("Matthew", 21, 21), ("Matthew", 17, 20), "'say to this mountain' — the same proverb for the impossible, with doubt substituted for littleness of faith"),
+    (("Matthew", 21, 23), ("Matthew", 7, 29), "exousia — the authority the crowds noticed in the first discourse, now demanded as a credential by the men who administer the building"),
+    (("Matthew", 21, 29), ("Matthew", 3, 2), "metamelomai, not metanoeō — a softer, more emotional word than the repentance John preached, and the one Judas will be given"),
+    (("Matthew", 21, 31), ("Matthew", 12, 28), "'the kingdom of God' — the second of the handful of departures from Matthew's standing phrase, flagged and promised in chapter 12's note"),
+    (("Matthew", 21, 43), ("Matthew", 12, 28), "'the kingdom of God' again — the third and last of the departures, which pays chapter 12's promise in full"),
+    (("Matthew", 21, 42), ("Matthew", 21, 9), "Psalm 118 twice in one chapter — the crowd sings vv25-26 at the gate, and Jesus quotes vv22-23 against the authorities"),
     # ---- Matthew 20 ----
     (("Matthew", 20, 16), ("Matthew", 19, 30), "'the last will be first' — the parable is a bracket: 19:30 says it, sixteen verses argue it, and v16 says it again"),
     (("Matthew", 20, 15), ("Matthew", 6, 22), "the evil eye — the Sermon's good-eye/bad-eye pair, and both passages sit inside teaching about money"),
@@ -9491,6 +9510,47 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 21 ----
+    "hosanna": ("Hosanna",
+        "SALVA, POR FAVOR — y es un grito de auxilio, no una palabra de alabanza, aunque se haya vuelto una. "
+        "El griego transcribe el hebreo hoshi'a-na (hoshia, «salva», + la partícula de ruego na), y viene "
+        "directamente del Salmo 118:25; la línea siguiente de la multitud en Mateo 21:9, «bendito el que "
+        "viene en el nombre de Jehová», es el versículo 26 del mismo salmo. ⚠ Nótese qué más sale del Salmo "
+        "118 en este capítulo: la piedra desechada que llega a ser cabeza del ángulo (21:42) son los "
+        "versículos 22-23, tres antes. En un solo capítulo la multitud canta el final del salmo y Jesús cita "
+        "su parte central contra las autoridades. El estante se divide sobre traducir la palabra o "
+        "conservarla — la RV transcribe «¡Hosanna!», la TNM vierte «¡Salva, rogamos!» — y las dos son "
+        "defendibles, porque para los días de Mateo funciona claramente como aclamación y la multitud no pide "
+        "que la rescaten de nada en concreto."),
+    "lestes": ("bandido, salteador",
+        "UN BANDIDO — un salteador armado, no un ratero ni un estafador. Josefo la usa de los insurgentes; "
+        "Juan la usa de Barrabás (18:40); y es la palabra para los dos hombres crucificados junto a Jesús "
+        "(Mateo 27:38), razón por la cual «ladrones» también engaña allí. ⚠ Así que la acusación del templo "
+        "en 21:13 no trata en primer lugar de cobrar de más. Citando Jeremías 7:11, Jesús dice que la casa se "
+        "ha vuelto un spēlaion lēstōn — una CUEVA de bandidos, un escondrijo — y el contexto de Jeremías es "
+        "gente que roba y mata y luego se refugia en el templo como si fuera un asilo. La «cueva de ladrones» "
+        "de la RV sugiere deshonestidad comercial; la «cueva de salteadores» de la TNM es más exacta. "
+        "Distíngase kleptēs, el ladrón corriente que actúa a escondidas."),
+    "metamelomai": ("pesarle, arrepentirse (de sentimiento)",
+        "PESARLE ALGO, cambiar de sentimiento — y NO la palabra estándar del arrepentimiento, que es "
+        "metanoeō, «cambiar la mente» (véase esa entrada). ⚠ Mateo usa este verbo, más blando y más emotivo, "
+        "en exactamente dos lugares y conviene leerlos juntos. El hijo de la parábola se niega y luego "
+        "«metamelētheis, fue» (21:29), y a los sacerdotes «ni les metamelēthēte después para creerle» "
+        "(21:32) — el cargo no es que razonaran mal, sino que nada se movió. Y después es lo que hace JUDAS: "
+        "«viendo que era condenado, metamelētheis» y devolvió la plata (27:3), un pesar que no cambia nada y "
+        "acaba en una cuerda. El Antiguo Testamento griego la usa también de Dios «arrepintiéndose» — el "
+        "mismo terreno que el hebreo nacham. El español «arrepentirse» cubre los dos verbos y esconde la "
+        "distinción."),
+    "kephale-gonias": ("cabeza del ángulo",
+        "CABEZA DEL ÁNGULO — y qué es eso arquitectónicamente resulta genuinamente incierto, razón por la "
+        "cual esta traducción conserva la frase literal. Dos candidatos: la piedra angular de cimiento desde "
+        "la que se fijan las líneas del edificio, o la clave en lo alto de un arco o de un pretil. Las dos "
+        "encajan con usos distintos del Nuevo Testamento. ⚠ Citada del Salmo 118:22-23 en Mateo 21:42, llega "
+        "a ser una de las imágenes más usadas de los escritos apostólicos — Hechos 4:11, Efesios 2:20 "
+        "(«Cristo Jesús mismo, el akrogōniaios»), 1 Pedro 2:6-7, donde se fusiona con la piedra de tropiezo "
+        "de Isaías 8:14 exactamente como la fusiona Mateo 21:44. El estante se divide: la RV «cabeza del "
+        "ángulo», la TNM «la principal piedra angular» — la lectura moderna zanja una cuestión que el griego "
+        "deja abierta."),
     # ---- Mateo 20 ----
     "lytron": ("rescate",
         "UN RESCATE — el precio que se paga para liberar a un esclavo, a un cautivo o a un deudor; de lyō, "
@@ -10071,6 +10131,40 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat21": [dict(
+        file="giotto-entry-jerusalem.jpg",
+        title="Entry into Jerusalem",
+        title_es="La entrada en Jerusalén",
+        artist="Giotto",
+        year="1304–1306",
+        location="Scrovegni Chapel, Padua",
+        location_es="Capilla de los Scrovegni, Padua",
+        alt="A fresco with a deep blue sky and a green painted border. Christ, haloed and in a red mantle, "
+            "rides a single grey donkey from left to right, raising his hand; the disciples follow close "
+            "behind him on the left. On the right, townspeople crowd out of a white city gate flanked by two "
+            "tall towers; two of them bend to the ground in the foreground spreading cloaks in the road. Two "
+            "boys have climbed trees behind the donkey and are cutting branches. Patches of the blue "
+            "background have flaked away",
+        note="⚠ Count the animals. Giotto paints <strong>one</strong> donkey &mdash; and Matthew is the only "
+             "evangelist who has <em>two</em> (vv2, 7), because he reads Zechariah&rsquo;s Hebrew parallelism "
+             "as naming a beast and a colt rather than saying one thing twice. Nearly the entire visual "
+             "tradition quietly sides with Mark, Luke and John, and this fresco is a fair sample of it: the "
+             "picture everyone has in their head is not the one Matthew wrote. Everything else here is his "
+             "text, though &mdash; the cloaks going down in the road, the boys up in the trees cutting "
+             "branches (v8), the city coming out through the gate. Painted about 1304-06 in the Scrovegni "
+             "Chapel; the flaking in the blue is real, and the fresco is roughly seven hundred years old.",
+        note_es="⚠ Cuente los animales. Giotto pinta <strong>un</strong> asno &mdash; y Mateo es el único "
+                "evangelista que tiene <em>dos</em> (vv 2, 7), porque lee el paralelismo hebreo de Zacarías "
+                "como si nombrara una bestia y un pollino en vez de decir una cosa dos veces. Casi toda la "
+                "tradición visual se pone calladamente del lado de Marcos, Lucas y Juan, y este fresco es "
+                "una muestra fiel: la imagen que todo el mundo tiene en la cabeza no es la que escribió "
+                "Mateo. Todo lo demás sí es su texto: los mantos tendidos en el camino, los muchachos "
+                "subidos a los árboles cortando ramas (v 8), la ciudad saliendo por la puerta. Pintado hacia "
+                "1304-06 en la Capilla de los Scrovegni; el desprendimiento del azul es real, y el fresco "
+                "tiene unos setecientos años.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Giotto_di_Bondone_-_No._26_Scenes_from_the_Life_of_Christ_-_10._Entry_into_Jerusalem_-_WGA09206.jpg",
+    )],
     "mat20": [dict(
         file="rembrandt-vineyard-labourers.jpg",
         title="The Parable of the Labourers in the Vineyard",
