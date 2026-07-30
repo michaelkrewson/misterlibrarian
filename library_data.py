@@ -1141,6 +1141,14 @@ DICTIONARY = [
      "To MAKE A DISCIPLE of somebody &mdash; a transitive verb built on mathētēs, a learner or apprentice, and not the same thing as 'teach' (didaskō, which Matthew 28:20 uses separately, in the next breath). &#9888; It occurs three times in Matthew and nowhere else in the Gospels, and the pattern is the point: twice in the PASSIVE, of a scribe 'who has been made a disciple of the kingdom' (13:52) and of Joseph of Arimathea, who 'had been made a disciple' (27:57) &mdash; and then once in the ACTIVE, as the imperative carrying the last command in the book, mathēteusate panta ta ethnē (28:19). Two men are made disciples, and then the made are told to make. &#9888; Its object at 28:19 is the NATIONS, not individuals, which is a grammatical fact worth noticing before anybody uses it as an argument.", ("Matthew", 13, 52)),
     ("ethnos", "ethnos", "ἔθνος", "ethnos",
      "A NATION, a people &mdash; and in the plural, in Jewish Greek, THE NATIONS: everybody who is not Israel, the Gentiles. The Greek Old Testament uses it for Hebrew goyim, and English 'ethnic' descends from it. &#9888; The word is the hinge of the sharpest unresolved tension in Matthew. At 10:5-6 the Twelve are sent out under a hard restriction stated twice &mdash; go nowhere among the ethnē, only to the lost sheep of the house of Israel &mdash; and at 15:24 he says the same of himself. The book then closes with mathēteusate PANTA TA ETHNĒ, make disciples of ALL the nations (28:19). Same word, opposite instruction, eighteen chapters apart, and Matthew offers no reconciliation. The library reports both and observes that this Gospel is willing to end on a reversal it never explains.", ("Matthew", 10, 5)),
+    ("porosis", "pōrōsis", "πώρωσις", "pōrōsis",
+     "A HARDENING &mdash; and the word is medical before it is moral: pōros is a callus, the bony deposit that forms over a healed fracture, or the stone-like matter in a joint. &#9888; So Mark 3:5, 'grieved at the pōrōsis of their heart', is not describing stubbornness as a mood but tissue that has stopped being able to feel. And the diagnosis is not reserved for opponents: Mark turns the same root on the DISCIPLES twice, after the loaves (6:52) and again in the boat (8:17), which is the sort of thing this Gospel does without comment. Paul takes the noun up at Romans 11:25 for a hardening 'in part' that is temporary, and at Ephesians 4:18. KJV reads 'hardness', which is right but has lost the physical picture.", ("Mark", 3, 5)),
+    ("boanerges", "Boanērges", "Βοανηργές", "Boanērges",
+     "SONS OF THUNDER &mdash; the name given to James and John at Mark 3:17. &#9888; Mark transliterates something Semitic and then translates it for his readers, which is his standing habit (talitha koum 5:41, ephphatha 7:34, abba 14:36, eloi 15:34) and one of the clearest signs that he is writing for people who do not know Aramaic. The first element is plainly benē, sons. The second is the difficulty: 'thunder' in Aramaic is ra'am, and Boanērges is usually traced instead to regesh or regaz &mdash; tumult, agitation, rage &mdash; so the gloss Mark supplies is easier than the etymology behind it. The library reports that and notes what the Gospel does not: nobody ever calls them this again, and the two men it is given to are the pair who ask for the thrones (10:37) and want to call fire down on a village (Luke 9:54).", ("Mark", 3, 17)),
+    ("hamartema", "hamartēma", "ἁμάρτημα", "hamartēma",
+     "A SIN &mdash; specifically a sinful ACT, the deed rather than the condition; hamartia is the wider word. &#9888; It carries the crux at Mark 3:29: the earliest text says the blasphemer against the Spirit is guilty of an aiōnion hamartēma, an ETERNAL SIN, and the Byzantine tradition reads aiōniou kriseōs, eternal JUDGEMENT &mdash; which is where the KJV's 'in danger of eternal damnation' comes from. The difference is between a condition that does not stop and a penalty that is announced. 'An eternal sin' is a strange expression in Greek as in English, which is the argument for it: a copyist meeting it has an obvious reason to write the familiar word, and no reason runs the other way. &#9888; Mark then supplies his own gloss in the next verse &mdash; 'because they were saying, he has an unclean spirit' &mdash; which narrows the saying to a specific act: looking at a rescue and calling it demonic.", ("Mark", 3, 29)),
+    ("herodianoi", "Hērōdianoi", "Ἡρῳδιανοί", "Hērōdianoi",
+     "THE HERODIANS &mdash; supporters or clients of the Herodian dynasty; the ending is Latin (-ianus), the formation the same as 'Caesariani', a great man's party. &#9888; They are named only three times in the New Testament, all in a plot: with the Pharisees against Jesus after the withered hand (Mark 3:6), and again in the trap about the tribute coin (Mark 12:13; Matthew 22:16). Nobody explains who they were and no ancient source describes them as a sect, so what can be said is structural: they are the political interest of a client king, and the Pharisees are religious purists, and the two have nothing in common except this. &#9888; Mark makes the plot to kill him form six verses into a chapter, out of a coalition that should not exist.", ("Mark", 3, 6)),
     ("krabattos", "krabattos", "κράβαττος", "krabattos",
      "A MAT, a straw pallet &mdash; the bedding of somebody who owns one blanket. It is a Latin loanword (grabatus) wearing Greek endings, it is low-register, and Mark uses it without embarrassment (2:4, 2:9, 2:11, 2:12, and again at 6:55). &#9888; The interesting fact is what the other two do with it: at the same scene Matthew (9:2) and Luke (5:18) both replace it with klinē, an ordinary bed, and Luke also swaps Mark's dug-through mud roof for TILES (5:19). That pair of changes is the clearest small window in the Gospels onto Mark's Greek &mdash; the roughest in the New Testament, and roughest precisely where the others smooth. This translation reads 'mat' and does not upgrade it.", ("Mark", 2, 4)),
     ("prothesis", "prothesis", "πρόθεσις", "prothesis",
@@ -4390,6 +4398,14 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Mark', 3, 5), ('Mark', 1, 41), "met' orges — the anger chapter 1 followed as the harder reading at the leper, here textually undisputed"),
+    (('Mark', 3, 5), ('Matthew', 12, 13), "Matthew removes the look and the anger entirely; Luke keeps the looking-round, drops the emotion, and gives the rage to the opponents instead (6:11)"),
+    (('Mark', 3, 6), ('Mark', 12, 13), "Pharisees and Herodians — a coalition with nothing in common, named together only when there is a plot"),
+    (('Mark', 3, 12), ('Mark', 1, 25), "the Messianic secret: the only characters who know what he is are unclean spirits, and they are the ones ordered to be quiet"),
+    (('Mark', 3, 16), ('Mark', 2, 14), "the list of the Twelve contains a Matthew and a James son of Alphaeus — and no Levi, though 2:14 called a Levi son of Alphaeus"),
+    (('Mark', 3, 21), ('Mark', 3, 31), "the first of Mark's sandwiches: the family sets out (vv20-21), the scribes accuse (vv22-30), the family arrives (vv31-35) — and the two verdicts are read through each other"),
+    (('Mark', 3, 22), ('2 Kings', 1, 2), "Beelzebul — the Philistine city-god Baal-zebub, 'lord of flies', reshaped into a name for the prince of demons"),
+
     (('Mark', 2, 4), ('Matthew', 9, 2), "krabattos, a straw pallet — Matthew and Luke both replace it with an ordinary bed, and Luke swaps the dug-through mud roof for tiles"),
     (('Mark', 2, 10), ('Matthew', 9, 6), "the sentence breaks off mid-clause in both Gospels — 'so that you may know…' — he says to the paralysed man"),
     (('Mark', 2, 14), ('Matthew', 9, 9), "Mark calls him LEVI son of Alphaeus; Matthew calls him MATTHEW — and Mark's own list of the Twelve has no Levi in it"),
@@ -9770,6 +9786,35 @@ DICTIONARY_ES = {
         "discípulos de TODAS las naciones (28:19). La misma palabra, la instrucción contraria, dieciocho capítulos "
         "después, y Mateo no ofrece reconciliación. La biblioteca informa de las dos y observa que este Evangelio "
         "está dispuesto a terminar en una inversión que nunca explica."),
+    "porosis": ("endurecimiento, callosidad",
+        "UN ENDURECIMIENTO —y la palabra es médica antes que moral: pōros es un callo, el depósito óseo que se "
+        "forma sobre una fractura curada, o la materia pétrea de una articulación—. ⚠ Así que Marcos 3:5, "
+        "«entristecido por la pōrōsis de su corazón», no describe la terquedad como estado de ánimo sino tejido "
+        "que ha dejado de poder sentir. Y el diagnóstico no queda reservado a los adversarios: Marcos vuelve la "
+        "misma raíz contra los DISCÍPULOS dos veces, tras los panes (6:52) y otra vez en la barca (8:17)."),
+    "boanerges": ("Boanerges, hijos del trueno",
+        "HIJOS DEL TRUENO —el nombre dado a Santiago y Juan en Marcos 3:17—. ⚠ Marcos translitera algo semítico y "
+        "luego lo traduce para sus lectores, que es su costumbre constante (talitha koum 5:41, effatá 7:34, abba "
+        "14:36, eloí 15:34) y una de las señales más claras de que escribe para gente que no sabe arameo. El "
+        "primer elemento es sin duda benē, hijos. El segundo es la dificultad: «trueno» en arameo es ra'am, y "
+        "Boanērges se suele remontar más bien a regesh o regaz —tumulto, agitación, ira—, de modo que la glosa "
+        "que da Marcos es más fácil que la etimología que hay detrás. Nadie vuelve a llamarlos así nunca."),
+    "hamartema": ("pecado (acto)",
+        "UN PECADO —en concreto un ACTO pecaminoso, el hecho más que la condición; hamartia es la palabra más "
+        "amplia—. ⚠ Lleva el nudo de Marcos 3:29: el texto más antiguo dice que quien blasfema contra el "
+        "Espíritu es reo de un aiōnion hamartēma, un PECADO ETERNO, y la tradición bizantina lee aiōniou "
+        "kriseōs, JUICIO eterno —de donde sale la «condenación eterna» de la RV—. La diferencia va entre una "
+        "condición que no cesa y una pena que se anuncia. «Un pecado eterno» es una expresión extraña en griego "
+        "como en castellano, y ese es el argumento a su favor: un copista que se la encuentra tiene un motivo "
+        "obvio para escribir la palabra familiar, y ninguno corre en sentido contrario."),
+    "herodianoi": ("herodianos",
+        "LOS HERODIANOS —partidarios o clientes de la dinastía herodiana; la terminación es latina (-ianus), la "
+        "misma formación que «cesarianos», el partido de un grande—. ⚠ Se los nombra solo tres veces en el Nuevo "
+        "Testamento, y las tres en una conspiración: con los fariseos contra Jesús tras la mano seca (Marcos "
+        "3:6), y otra vez en la trampa de la moneda del tributo (Marcos 12:13; Mateo 22:16). Nadie explica "
+        "quiénes eran y ninguna fuente antigua los describe como secta, así que lo que puede decirse es "
+        "estructural: son el interés político de un rey cliente, y los fariseos son puristas religiosos, y las "
+        "dos cosas no tienen nada en común salvo esto."),
     "krabattos": ("camilla, jergón",
         "UNA ESTERA, un jergón de paja —la cama de quien tiene una sola manta—. Es un préstamo latino (grabatus) "
         "con terminación griega, es de registro bajo, y Marcos lo usa sin apuro (2:4, 2:9, 2:11, 2:12, y otra vez "
@@ -10655,6 +10700,49 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mark3": [dict(
+        file="tissot-withered-hand.jpg",
+        title="The Man with the Withered Hand",
+        title_es="El hombre de la mano seca",
+        artist="James Tissot",
+        year="1886\u20131894",
+        location="Brooklyn Museum, New York",
+        location_es="Brooklyn Museum, Nueva York",
+        alt="A synagogue interior with an ornate carved gallery above and clusters of hanging oil lamps. "
+            "In the centre a man in a striped robe and yellow trousers stands and stretches his arm "
+            "straight out. At the left Jesus stands in a white prayer shawl, one hand raised. All around, "
+            "men seated in white prayer shawls watch him &mdash; several with their hands at their faces, "
+            "several wearing leather straps bound on the arm and forehead &mdash; and more look down from "
+            "the gallery.",
+        note="&#9888; Tissot catches the exact instant of verse 5: the arm is already going out. He also "
+             "gets the watching right &mdash; the chapter opens with men who are there to see whether he "
+             "will do it, and almost every face in this room is turned to the same spot. &#9888; What he "
+             "does not paint is the anger. Mark says Jesus looked round at them <em>with anger</em>, and "
+             "Tissot gives him the calm face of every other picture in the series, which puts him with "
+             "Matthew and Luke rather than with the Gospel he is illustrating. And one detail is worth "
+             "flagging because it is the fruit of his care rather than his carelessness: Tissot travelled "
+             "in Palestine and painted observant practice closely, and several of these men wear "
+             "<em>tefillin</em>, the leather boxes bound to arm and head &mdash; which, in the practice he "
+             "was documenting, are not worn on the sabbath. What first-century custom was is less certain, "
+             "so the library records the tension rather than calling it an error: the most researched "
+             "detail in the picture is the one that argues with the day the story turns on.",
+        note_es="&#9888; Tissot capta el instante exacto del versículo 5: el brazo ya va saliendo. Acierta "
+             "tambi\u00e9n con la observaci\u00f3n &mdash; el cap\u00edtulo abre con hombres que est\u00e1n "
+             "all\u00ed para ver si lo har\u00e1, y casi todos los rostros de esta sala miran al mismo "
+             "punto. &#9888; Lo que no pinta es la ira. Marcos dice que Jes\u00fas los mir\u00f3 en derredor "
+             "<em>con ira</em>, y Tissot le da el rostro sereno de todos los dem\u00e1s cuadros de la serie, "
+             "lo que lo pone del lado de Mateo y Lucas y no del Evangelio que ilustra. Y un detalle merece "
+             "se\u00f1alarse porque es fruto de su cuidado y no de su descuido: Tissot viaj\u00f3 por "
+             "Palestina y pint\u00f3 de cerca la pr\u00e1ctica observante, y varios de estos hombres llevan "
+             "<em>tefil\u00edn</em>, las cajas de cuero atadas al brazo y a la cabeza &mdash; que, en la "
+             "pr\u00e1ctica que \u00e9l documentaba, no se llevan en s\u00e1bado. Qu\u00e9 se "
+             "acostumbraba en el siglo I es menos seguro, as\u00ed que la biblioteca registra la tensi\u00f3n "
+             "en vez de llamarlo error: el detalle m\u00e1s investigado del cuadro es el que discute con el "
+             "d\u00eda del que depende el relato.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Man_with_the_Withered_Hand_(L%27homme_%C3%A0_la_main_dess%C3%A9ch%C3%A9e)_-_James_Tissot_-_overall.jpg",
+    )],
+
     "mark2": [dict(
         file="hemessen-calling-of-levi.jpg",
         title="The Calling of Saint Matthew",
