@@ -1280,7 +1280,22 @@ ENCYCLOPEDIA = [
               "narrative interest of each source is easy to see. Coins struck under him carry Roman cultic "
               "implements, which Jewish coinage in Judaea otherwise avoided. Nothing certain is known of his end; "
               "Eusebius reports a tradition that he was removed and later killed himself, and the several surviving "
-              "\u2018Acts of Pilate\u2019 are much later Christian compositions."),
+              "\u2018Acts of Pilate\u2019 are much later Christian compositions. "
+              "\u26a0 WHERE he judged is a live archaeological question, and it bears directly on Matthew "
+              "27. The traditional site is the Antonia fortress beside the temple \u2014 which is why the Via "
+              "Dolorosa starts there \u2014 but a scholarly consensus reported by Shimon Gibson holds that the "
+              "PRAETORIUM of Mark 15:16 and Matthew 27:27 was rather HEROD\u2019S PALACE on the WESTERN side "
+              "of the city, the seat of government where a visiting Roman prefect would naturally stay. "
+              "Excavations along the Old City\u2019s western wall in 1973\u201378, directed by Magen Broshi, "
+              "uncovered a gate complex with a stone pavement and, on the upper pavement, a small stepped "
+              "platform \u2014 a BEMA, which is the Greek word Matthew uses at 27:19 for the seat Pilate is "
+              "sitting on when his wife\u2019s message arrives, and the word John 19:13 pairs with the Aramaic "
+              "name GABBATHA, the Stone Pavement. \u26a0 The identification is an interpretation and not a "
+              "demonstration: no inscription names the place, Matthew never uses the name Gabbatha at all, and "
+              "the bema stone itself has been found toppled out of position. The library records a well-argued "
+              "candidate, not a settled fact.",
+         videos=[("Is this where Jesus was tried by Pontius Pilate?",
+                  "https://www.youtube.com/watch?v=nKJ6GPvNUgc")]),
     dict(slug="golgotha", name="Golgotha", kind="place",
          aliases=["Place of a Skull", "Calvary"],
          refs=[("Matthew", 27, 33)],
@@ -1294,7 +1309,9 @@ ENCYCLOPEDIA = [
               "Sepulchre fits both, since the second wall ran inside it in the first century and the area was a "
               "disused quarry with rock-cut tombs, which is as much as archaeology supports. The rival "
               "nineteenth-century \u2018Garden Tomb\u2019 north of the Damascus Gate is a genuine tomb of the wrong "
-              "period. \u26a0 Note what the texts do NOT say: none of the four Gospels calls it a hill."),
+              "period. \u26a0 Note what the texts do NOT say: none of the four Gospels calls it a hill.",
+         videos=[("Where Jesus Was Crucified: The archaeological evidence!",
+                  "https://www.youtube.com/watch?v=ufVXZBrbSsU")]),
     dict(slug="barabbas", name="Barabbas", kind="person",
          aliases=["Jesus Barabbas", "Bar-abbas"],
          refs=[("Matthew", 27, 16)],
@@ -5575,10 +5592,10 @@ VIDEO_QUEUE = [
     #  embeds, their "preview" caveats removed.)
     # ("Capernaum Unearthed" — PLACED 2026-07-16 when John 2 shipped: Capernaum
     #  entered the text at John 2:12 and got its encyclopedia entry, video embedded.)
-    ("Where Jesus Was Crucified: The archaeological evidence!",
-     "https://www.youtube.com/watch?v=ufVXZBrbSsU",
-     "The Gospels (the crucifixion narratives)",
-     "The case for the crucifixion site; place at the Passion narrative in whichever Gospel is translated first."),
+    # ("Where Jesus Was Crucified" \u2014 PLACED 2026-07-30 on the GOLGOTHA encyclopedia
+    #  entry, which was created when Matthew 27 shipped. This one was overdue: the queue note
+    #  said "place at the Passion narrative in whichever Gospel is translated first," and
+    #  Matthew 26-28 went by without the queue being checked.)
     # ("The Temple Mount--Where it IS. Where it ISN'T. What is it FOR?"
     #  — PLACED 2026-07-16 on the MORIAH encyclopedia entry (Genesis 22 = the
     #  future Temple Mount, 2 Chr 3:1). Still broadly relevant; re-use for
