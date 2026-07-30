@@ -5041,6 +5041,24 @@ applies to Herod, Pilate, and "the fifteenth year of Tiberius."</p>
     open(os.path.join(OUT, "chronology.html"), "w", encoding="utf-8").write(out)
 
 
+def check_library_slug_collisions():
+    """One slug, one entry. The per-word page is built from
+    {d[0]: d for d in DICTIONARY}, so a repeated slug SILENTLY DISCARDS the earlier
+    entry while the dictionary index still lists the word twice, with two different
+    definitions. Added 2026-07-29 after a reader question about parthenos surfaced
+    six collisions (parthenos, phronimos, hypokrites, eikon, diakonos, skandalon) —
+    every one of them a later sitting re-coining a term an earlier book had already
+    catalogued, and the term count overstated by six as a result. Nothing in the
+    build noticed, because both entries were individually well-formed."""
+    from collections import Counter
+    dupes = {s: n for s, n in Counter(e[0] for e in DICTIONARY).items() if n > 1}
+    if dupes:
+        raise SystemExit("LIBRARY SLUG COLLISION — one slug, one entry:" + chr(10)
+            + chr(10).join("  %s: %d entries" % (s, n) for s, n in sorted(dupes.items()))
+            + chr(10) + "(a term catalogued for an earlier book is already there — EXTEND that"
+            + chr(10) + " entry to cover the new passage instead of adding a second one)")
+
+
 def check_shelf_density(chapters):
     """The site's promise is 'catalogued & COMPARED' — every chapter's notes weigh
     this translation against the seven-version shelf. This guard makes the promise
@@ -5190,6 +5208,7 @@ def main():
     chapters = extract_source(args.source)
     check_shelf_density(chapters)
     check_sblgnt_sigla(chapters)
+    check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
     build_chapter_pages(chapters)
     build_toc()
