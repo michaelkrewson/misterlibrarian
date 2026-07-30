@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 25 (Greek) ----
+    ("parthenos", "parthenos", "παρθένος", "parthenos",
+     "A VIRGIN — and also, in ordinary usage, simply an unmarried young woman. ⚠ Both senses are live in Matthew and the difference matters twice. At 1:23 the word carries the whole weight of the Isaiah 7:14 quotation, where the Hebrew is almah ('young woman') and the Greek Old Testament chose parthenos; that choice is the hinge of a very old argument. But at 25:1 it is a WEDDING: ten parthenoi with lamps are the bridal party, and nothing in the parable turns on chastity — the difference between the two fives is oil. So English 'virgins' (KJV/ASV/NWT, and the Spanish shelf) imports a sexual reference the story never uses, which is why this translation reads 'girls' at 25:1 and keeps 'virgin' at 1:23. The choice is stated in the note rather than made silently.", ("Matthew", 25, 1)),
+    ("phronimos", "phronimos", "φρόνιμος", "phronimos",
+     "SENSIBLE, prudent — practical shrewdness about how things actually work, not intelligence and not cleverness; from phrēn, the mind or diaphragm as the seat of thought. ⚠ It is one of Matthew's quiet keywords and the pattern is worth following: the man who built on rock (7:24), the serpents the disciples are told to imitate — 'shrewd as serpents and innocent as doves' (10:16) — the faithful and phronimos slave put in charge of a household (24:45), and the five girls who brought oil (25:2). Every one of them is somebody who thought ahead about a thing they could not fix later. KJV reads 'wise,' which pulls it toward wisdom in general; ASV/NIV/NWT use 'wise' or 'prudent' too. This translation keeps SENSIBLE throughout so the family stays visible.", ("Matthew", 25, 2)),
+    ("elachistos", "elachistos", "ἐλάχιστος", "elachistos",
+     "LEAST, smallest — the superlative of mikros. ⚠ Everything about Matthew 25:40 turns on it: 'in so far as you did it to one of these ELACHISTŌN of my brothers, you did it to me.' Matthew has used the mikros family of the vulnerable INSIDE the community (18:6, 10, 14 — 'these little ones,' whom it would be better to be drowned than to trip) and adelphos, 'brother,' of disciples (23:8). Hence the two long-standing readings of the sheep and the goats: the least are the poor and afflicted generally, or they are Christ's own messengers, the 'little ones' of 10:42 who get a cup of cold water. ⚠ One textual detail resists tidying in either direction: v40 says 'these least ones OF MY BROTHERS' and v45, giving the same verdict in reverse, says only 'these least ones.' The library prints the asymmetry and does not vote.", ("Matthew", 25, 40)),
+    ("kolasis", "kolasis / aiōnios", "κόλασις / αἰώνιος", "kolasis",
+     "PUNISHMENT — but not the ordinary word for it. Greek's standard term for retributive penalty is timōria; kolasis is rooted in kolazō, whose older sense is to PRUNE or lop, and which in some usage carries correction rather than mere penalty — though by the first century it plainly means punishment, and 1 John 4:18 pairs it with fear. ⚠ It occurs in Matthew once, at 25:46, where AIŌNIOS is attached to it and to 'life' in the same breath: 'these will go away into kolasin aiōnion, but the righteous into zōēn aiōnion.' Aiōnios is the adjective of aiōn, an age, and is contested in the same way — 'everlasting' in duration, or 'of the age to come' in quality; the Greek Old Testament applies it to institutions that demonstrably ended. ⚠ These two words are the textual ground of a three-way argument (eternal conscious punishment; annihilation; a remedial reading) that has had serious defenders since the early centuries. NWT reads 'everlasting cutting-off,' which is defensible from the root and is a doctrinal rendering. This translation prints 'eternal punishment,' flags both words, and does not settle either.", ("Matthew", 25, 46)),
     # ---- Matthew 24 (Greek) ----
     ("parousia", "parousia", "παρουσία", "parousia",
      "PRESENCE — or an arrival that results in a presence; from pareimi, 'to be alongside.' ⚠ In ordinary Greek it is a technical term: the state visit of a king, emperor or governor to a city, with the welcome, the delegation and the honours that went with it. That background matters, because the word is not a synonym for 'coming' in the sense of travelling. Matthew uses it four times and ALL FOUR are in chapter 24 (vv3, 27, 37, 39); it appears nowhere else in any Gospel, and then becomes Paul's standard term. KJV/ASV/NIV read 'coming,' which blurs it into erchomai, the ordinary verb the same chapter uses at vv30, 42 and 44; NWT reads 'presence' and keeps them distinct, which is followed here. Note that the disciples ask for the SIGN of the parousia (v3) and are told it is like lightning (v27) — something nobody needs to be told about.", ("Matthew", 24, 3)),
@@ -5213,6 +5222,15 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 25 ----
+    (("Matthew", 25, 5), ("Matthew", 24, 48), "chronizō, 'taking his time' — the wicked slave's excuse becomes the condition everyone in this parable waits under, and all ten fall asleep"),
+    (("Matthew", 25, 12), ("Matthew", 7, 23), "'I do not know you' — the Sermon's answer to people who call him 'Lord, lord,' which is exactly what the shut-out girls call him"),
+    (("Matthew", 25, 13), ("Matthew", 24, 42), "grēgoreite, 'stay awake' — the word chapter 24 ended its argument on, and the one this parable exists to press"),
+    (("Matthew", 25, 15), ("Matthew", 18, 24), "the talent — the coin whose arithmetic was set out at the ten-thousand-talent debt: the smallest share here is about twenty years' wages"),
+    (("Matthew", 25, 29), ("Matthew", 13, 12), "'to everyone who has, it will be given' — the bare principle stated in the explanation of the parables, now built into a whole story"),
+    (("Matthew", 25, 30), ("Matthew", 22, 13), "the outer darkness and the grinding of teeth — the formula last used of the guest without a wedding garment"),
+    (("Matthew", 25, 40), ("Matthew", 18, 6), "'these least ones' — the mikros family Matthew has used of the vulnerable inside the community"),
+    (("Matthew", 25, 40), ("Matthew", 10, 42), "a cup of cold water given to a 'little one' — the other passage that decides who the least ones might be"),
     # ---- Matthew 24 ----
     (("Matthew", 24, 1), ("Matthew", 23, 38), "he walks out of the temple three verses after calling it 'left to you' — the desolation and the departure are the same gesture"),
     (("Matthew", 24, 15), ("Daniel", 11, 31), "the abomination of desolation, named as Daniel's — and Daniel's own phrase already had a first fulfilment under Antiochus IV in 167 BC"),
@@ -9565,6 +9583,48 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 25 ----
+    "parthenos": ("virgen; joven soltera",
+        "UNA VIRGEN — y también, en el uso corriente, simplemente una joven soltera. ⚠ Los dos sentidos están "
+        "vivos en Mateo y la diferencia importa dos veces. En 1:23 la palabra lleva todo el peso de la cita de "
+        "Isaías 7:14, donde el hebreo es almah («joven») y el Antiguo Testamento griego eligió parthenos; esa "
+        "elección es la bisagra de una discusión antiquísima. Pero en 25:1 es una BODA: diez parthenoi con "
+        "lámparas son el cortejo nupcial, y nada en la parábola depende de la castidad — lo que distingue a las "
+        "dos cincos es el aceite. Así que «vírgenes» (RV, TNM) importa una referencia sexual que el relato "
+        "nunca usa, razón por la cual esta traducción lee «muchachas» en 25:1 y conserva «virgen» en 1:23. La "
+        "elección se declara en la nota en vez de hacerse en silencio."),
+    "phronimos": ("sensato, prudente",
+        "SENSATO, prudente — astucia práctica sobre cómo funcionan de hecho las cosas, no inteligencia ni "
+        "listeza; de phrēn, la mente. ⚠ Es una de las palabras clave discretas de Mateo y el patrón merece "
+        "seguirse: el hombre que edificó sobre la roca (7:24), las serpientes que se manda imitar a los "
+        "discípulos —«sensatos como serpientes e inocentes como palomas» (10:16)—, el esclavo fiel y phronimos "
+        "puesto al frente de una casa (24:45), y las cinco muchachas que llevaron aceite (25:2). Todos ellos "
+        "son alguien que pensó por adelantado en algo que después no podría arreglar. La RV lee «prudente», que "
+        "tira hacia la sabiduría en general. Esta traducción mantiene SENSATO en todos los casos para que la "
+        "familia siga visible."),
+    "elachistos": ("el más pequeño, el menor",
+        "EL MENOR, el más pequeño — superlativo de mikros. ⚠ Todo en Mateo 25:40 gira sobre él: «en cuanto lo "
+        "hicisteis a uno de estos ELACHISTŌN de mis hermanos, a mí me lo hicisteis». Mateo ha usado la familia "
+        "de mikros de los vulnerables DENTRO de la comunidad (18:6, 10, 14 — «estos pequeños», a quienes más "
+        "valdría estar ahogado que hacer tropezar) y adelphos, «hermano», de los discípulos (23:8). De ahí las "
+        "dos lecturas de siempre de las ovejas y los cabritos: los más pequeños son los pobres y afligidos en "
+        "general, o son los propios mensajeros de Cristo, los «pequeños» de 10:42 que reciben un vaso de agua "
+        "fría. ⚠ Un detalle textual se resiste a la pulcritud en cualquiera de las dos direcciones: el v 40 "
+        "dice «estos más pequeños DE MIS HERMANOS» y el v 45, que da el mismo veredicto al revés, dice solo "
+        "«estos más pequeños». La biblioteca imprime la asimetría y no vota."),
+    "kolasis": ("castigo / eterno",
+        "CASTIGO — pero no la palabra corriente para eso. El término estándar del griego para la pena "
+        "retributiva es timōria; kolasis está arraigada en kolazō, cuyo sentido más antiguo es PODAR o cortar, y "
+        "que en parte del uso lleva corrección más que simple pena — aunque para el siglo I significa "
+        "llanamente castigo, y 1 Juan 4:18 la empareja con el temor. ⚠ Aparece una sola vez en Mateo, en 25:46, "
+        "donde AIŌNIOS se le pega a ella y a «vida» en el mismo aliento: «estos irán a kolasin aiōnion, pero los "
+        "justos a zōēn aiōnion». Aiōnios es el adjetivo de aiōn, una era, y se discute del mismo modo: "
+        "«perpetuo» en duración, o «del siglo venidero» en cualidad; el Antiguo Testamento griego lo aplica a "
+        "instituciones que demostrablemente terminaron. ⚠ Estas dos palabras son el terreno textual de una "
+        "discusión a tres bandas (castigo consciente eterno; aniquilación; una lectura correctiva) que ha "
+        "tenido defensores serios desde los primeros siglos. La TNM lee «cortamiento eterno», que es defendible "
+        "desde la raíz y es una traducción doctrinal. Esta traducción imprime «castigo eterno», señala las dos "
+        "palabras y no zanja ninguna."),
     # ---- Mateo 24 ----
     "parousia": ("presencia",
         "PRESENCIA — o una llegada que da como resultado una presencia; de pareimi, «estar al lado». ⚠ En "
@@ -10302,6 +10362,50 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat25": [dict(
+        file="blake-wise-foolish-virgins.jpg",
+        title="The Parable of the Wise and Foolish Virgins",
+        title_es="La parábola de las vírgenes prudentes y las necias",
+        artist="William Blake",
+        year="c. 1799–1800",
+        location="Metropolitan Museum of Art, New York",
+        location_es="Metropolitan Museum of Art, Nueva York",
+        alt="A watercolour in cold greys, whites and blues under a dark stormy sky. On the left, five women "
+            "in pale robes stand upright in a row, each holding a small hanging lamp with a lit flame; the "
+            "foremost, in white, stretches out her arm and points away to the right. On the right, five other "
+            "women in blue and brown kneel, crouch and throw their arms up, faces turned upward in dismay, "
+            "their lamps dark. Across the top of the picture an angel in a long trailing robe flies "
+            "horizontally, blowing a very long trumpet. A distant city with towers is silhouetted at the "
+            "centre right, and the edge of a doorway shows at the far right",
+        note="Blake makes the whole parable a matter of <strong>posture</strong>: the sensible five stand "
+             "vertical in a row with their lamps lit, and the foolish five collapse &mdash; kneeling, "
+             "crouching, arms flung up. And the pointing arm is not a welcome; it is verse 9, "
+             "<em>go to the sellers</em>, a refusal. ⚠ Note the trumpeter across the top, because it is not in "
+             "this chapter at all: the trumpet belongs to <a href=\"matthew-24.html#v24-31\">24:31</a>, one "
+             "chapter earlier. Blake has read the two chapters as one discourse, which is what they are, and "
+             "imported the sound &mdash; the Met&rsquo;s own reading treats the wise five as already listening "
+             "for it. The door at the far right is verse 10. ⚠ And it is small: watercolour with pen and ink "
+             "over graphite, about 36 &times; 33 cm, which is a sheet you could hold in two hands, painted to "
+             "read as though it were the size of a wall. One of the large set of biblical subjects Blake made "
+             "between 1799 and 1809 for Thomas Butts, a government clerk of modest means who bought Blake&rsquo;s "
+             "work when almost nobody else would. The Metropolitan Museum released the file under CC0.",
+        note_es="Blake convierte toda la parábola en una cuestión de <strong>postura</strong>: las cinco "
+                "sensatas están de pie, verticales, en fila, con las lámparas encendidas, y las cinco necias "
+                "se desmoronan &mdash; de rodillas, agachadas, con los brazos lanzados al aire. Y el brazo que "
+                "señala no es una bienvenida: es el versículo 9, <em>id a los vendedores</em>, una negativa. "
+                "⚠ Fíjese en la figura que toca la trompeta en lo alto, porque no está en este capítulo: la "
+                "trompeta pertenece a <a href=\"matthew-24.es.html#v24-31\">24:31</a>, un capítulo antes. "
+                "Blake ha leído los dos capítulos como un solo discurso, que es lo que son, y ha importado el "
+                "sonido &mdash; la propia lectura del Met da por hecho que las cinco sensatas ya están "
+                "escuchándola. La puerta del extremo derecho es el versículo 10. ⚠ Y es pequeño: acuarela con "
+                "pluma y tinta sobre grafito, unos 36 &times; 33 cm, una hoja que cabe en dos manos, pintada "
+                "para leerse como si midiera lo que una pared. Es uno del gran conjunto de asuntos bíblicos que "
+                "Blake hizo entre 1799 y 1809 para Thomas Butts, un funcionario de medios modestos que compraba "
+                "la obra de Blake cuando casi nadie más lo hacía. El Metropolitan Museum liberó el archivo con "
+                "CC0.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Parable_of_the_Wise_and_Foolish_Virgins_MET_DT995.jpg",
+    )],
     "mat24": [dict(
         file="hayez-destruction-temple.jpg",
         title="The Destruction of the Temple of Jerusalem",
