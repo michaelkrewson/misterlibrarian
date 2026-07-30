@@ -1,0 +1,128 @@
+# Publish one /travel/ draft from a phone, with no backend and no secrets.
+#
+# The "✓ Publish this entry" button at the foot of a draft preview page
+# (build_travel._publish_box) opens a pre-filled issue titled `publish: <slug>`.
+# This workflow is what turns that into a live page:
+#
+#     tools/publish_draft.py <slug>   flips `draft: true` -> `draft: false`
+#     build_travel.py                 rebuilds /travel/ (drops the draft- preview,
+#                                     adds the real page, index, feed, sitemap)
+#     commit + push to main           GitHub Pages redeploys (source: main /)
+#
+# SECURITY. The repo and the site are both public, so anyone can read a draft URL
+# and open the same issue. Two things make that harmless:
+#
+#   1. `author_association == 'OWNER'` below — checked by GitHub on the server,
+#      not by the page. A stranger opening `publish: whatever` gets no run; they
+#      have filed an issue and nothing else.
+#   2. Untrusted strings never reach a shell. The issue title arrives via `env:`
+#      (not `${{ }}` inside `run:`, which would be a script-injection hole) and
+#      the slug is then whitelisted to [a-z0-9-] before it is used for anything.
+#
+# This is deliberately NOT `pull_request_target` or a PAT-in-the-page design;
+# it needs no stored secret at all beyond the automatic GITHUB_TOKEN.
+
+name: Publish a draft entry
+
+on:
+  issues:
+    types: [opened]
+  # Manual escape hatch: Actions tab -> this workflow -> Run workflow -> slug.
+  # Useful when the button was never pressed, or for testing.
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug of the draft to publish, e.g. our-lady-of-sorrows"
+        required: true
+        type: string
+
+permissions:
+  contents: write        # commit the flipped front matter + rebuilt /travel/
+  issues: write          # report back on the issue and close it
+
+# Two publishes at once would race on the same branch; queue them instead.
+concurrency:
+  group: publish-draft
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (startsWith(github.event.issue.title, 'publish:') &&
+       github.event.issue.author_association == 'OWNER')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Work out which slug to publish
+        id: pick
+        env:
+          EVENT: ${{ github.event_name }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          INPUT_SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            raw="$INPUT_SLUG"
+          else
+            raw="${ISSUE_TITLE#publish:}"
+          fi
+          # Strip all whitespace, then refuse anything that isn't a plain slug.
+          slug="$(printf '%s' "$raw" | tr -d '[:space:]')"
+          case "$slug" in
+            ""|*[!a-z0-9-]*)
+              echo "::error::not a usable slug: '$slug' (expected [a-z0-9-])"
+              exit 1
+              ;;
+          esac
+          echo "slug=$slug" >> "$GITHUB_OUTPUT"
+          echo "Publishing slug: $slug"
+
+      - name: Flip the front matter
+        env:
+          SLUG: ${{ steps.pick.outputs.slug }}
+        run: python3 tools/publish_draft.py "$SLUG"
+
+      - name: Rebuild /travel/
+        run: python3 build_travel.py
+
+      - name: Commit and push
+        env:
+          SLUG: ${{ steps.pick.outputs.slug }}
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Only these two trees are ever touched: the source entry and the
+          # built blog. Never `git add -A` — the Bible project shares this repo.
+          git add source/travel travel
+          if git diff --cached --quiet; then
+            echo "::error::nothing changed — was it already published?"
+            exit 1
+          fi
+          git commit -m "Publish: $SLUG (via the draft page's publish button)"
+          git push
+
+      - name: Report back and close the issue
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUM: ${{ github.event.issue.number }}
+          SLUG: ${{ steps.pick.outputs.slug }}
+        run: |
+          gh issue comment "$NUM" --body \
+            "Published. It's live at https://mistertranslation.com/travel/$SLUG.html — give Pages a minute if it 404s at first. The draft preview for this entry is gone, which is expected."
+          gh issue close "$NUM"
+
+      - name: Say so if it failed
+        if: failure() && github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUM: ${{ github.event.issue.number }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue comment "$NUM" --body \
+            "Publish **failed** — nothing was changed and the entry is still a draft. Log: $RUN"

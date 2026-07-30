@@ -76,6 +76,10 @@ GOATCOUNTER_CODE = "mistertranslation"
 # written irregularly by design. A form has the reach and none of the upkeep.
 FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 
+# Repo behind the "Publish this entry" button on a draft preview (_publish_box).
+# Only used to build that one link; nothing else here knows about GitHub.
+PUBLISH_REPO = "michaelkrewson/misterlibrarian"
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(ROOT, "source", "travel")
 OUT_DIR = os.path.join(ROOT, "travel")
@@ -889,12 +893,58 @@ def _draft_banner():
         f'search or the RSS feed. <a href="{DRAFTS_INDEX_FILE}">All drafts →</a></div>\n')
 
 
+def _publish_box(p):
+    """The "Publish this entry" button at the foot of a draft preview.
+
+    A static page cannot flip its own front matter, so this is a HAND-OFF, not
+    a form: the button opens a pre-filled GitHub issue titled `publish: <slug>`
+    and .github/workflows/publish-draft.yml does the actual work
+    (tools/publish_draft.py -> build_travel.py -> commit -> Pages redeploys).
+
+    Why an issue rather than the page calling an API directly: the only way a
+    static page can write to a repo is by carrying a token, and BOTH this site
+    and the repo are PUBLIC. A push token pasted into a public page — or parked
+    in localStorage on a phone — is a repo takeover waiting to happen, and it
+    would also hand write access to anyone who found a draft URL. An issue link
+    carries no secret whatsoever: the authorisation is an ordinary GitHub login,
+    and the workflow re-checks SERVER-SIDE that the issue author is the repo
+    owner. So a stranger who finds this page and opens the same issue publishes
+    nothing at all; they have just filed an issue.
+
+    It costs one extra tap (GitHub's own "Create") and that tap is the
+    confirmation step, which on a button whose whole job is "make this public"
+    is a feature rather than friction.
+    """
+    live = f"{SITE_URL}{BASE}/{p['file']}"
+    draft_url = f"{SITE_URL}{BASE}/{_draft_preview_file(p['slug'])}"
+    body = (
+        f"Publishing **{p['title']}**.\n\n"
+        "Opening this issue *is* the whole action — press **Create** and the "
+        "publish workflow flips `draft: false`, rebuilds `/travel/`, and pushes. "
+        "It will comment here and close itself once the entry is live.\n\n"
+        f"- Draft: {draft_url}\n"
+        f"- Goes live at: {live}\n\n"
+        "Nothing to fill in."
+    )
+    q = urllib.parse.urlencode({"title": f"publish: {p['slug']}", "body": body})
+    return (
+        '<div class="publishbox">\n'
+        "  <strong>Read it, happy with it?</strong>\n"
+        f'  <a class="pubbtn" href="https://github.com/{PUBLISH_REPO}/issues/new?{q}"'
+        ' target="_blank" rel="noopener">✓ Publish this entry</a>\n'
+        '  <span class="pubnote">Opens GitHub with everything filled in — press '
+        "<em>Create</em> there and it's live in about a minute. Only you can: the "
+        "workflow checks server-side that the request came from you.</span>\n"
+        "</div>\n")
+
+
 def build_draft_previews(all_posts):
     out = []
     for p in all_posts:
         if not p["draft"]:
             continue
         body = f"""{_post_article(p, extra=_draft_banner())}
+{_publish_box(p)}
 {_respond_nudge(p)}
 <p class="backlink"><a href="{DRAFTS_INDEX_FILE}">← All drafts</a></p>"""
         out.append((_draft_preview_file(p["slug"]),
