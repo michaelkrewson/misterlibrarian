@@ -1143,6 +1143,15 @@ DICTIONARY = [
      "CANAANITE (feminine) — the Old Testament's own ethnonym for the land's pre-Israelite inhabitants, a thousand years obsolete as a live term of address by the first century (replaced in ordinary speech by 'Phoenician' or a city name). ⚠ Mark's parallel account of the same encounter (7:26, not yet on these pages) calls the woman 'a Greek, a Syrophoenician by birth' — a live, contemporary label. Matthew reaches instead for the archaic, loaded term — Israel's ancient dispossessed enemy — and puts it on the one Gentile who, in this Gospel, out-argues Jesus and is commended above Israel for her faith (Matthew 15:22-28). The word choice is doing theological work Mark's more neutral label does not attempt.", ("Matthew", 15, 22)),
     ("petra", "petra", "πέτρα", "petra",
      "BEDROCK, a rock formation — as distinct from Petros, 'a stone,' the name Jesus gives Simon in the very same breath (Matthew 16:18, 'you are Petros, and on this petra I will build my congregation'). Jesus almost certainly spoke Aramaic, in which a single word, kepha, would have named both the man and the foundation; the pun survives translation into Greek only because Greek happens to have a masculine noun for 'a stone' beside a feminine one for 'bedrock' close enough in sound to carry the same joke. ⚠ Whether 'this rock' names Peter himself, his just-spoken confession, or Christ has divided readers for centuries — the historic Catholic reading takes it as Peter, founding an office; the historic Protestant reading more often takes it as the confession or Christ, pointing to 1 Corinthians 3:11 and Ephesians 2:20 (neither yet on these pages) as the only foundation named elsewhere. This library states the readings rather than choosing among them.", ("Matthew", 16, 18)),
+    # ---- Matthew 24 (Greek) ----
+    ("parousia", "parousia", "παρουσία", "parousia",
+     "PRESENCE — or an arrival that results in a presence; from pareimi, 'to be alongside.' ⚠ In ordinary Greek it is a technical term: the state visit of a king, emperor or governor to a city, with the welcome, the delegation and the honours that went with it. That background matters, because the word is not a synonym for 'coming' in the sense of travelling. Matthew uses it four times and ALL FOUR are in chapter 24 (vv3, 27, 37, 39); it appears nowhere else in any Gospel, and then becomes Paul's standard term. KJV/ASV/NIV read 'coming,' which blurs it into erchomai, the ordinary verb the same chapter uses at vv30, 42 and 44; NWT reads 'presence' and keeps them distinct, which is followed here. Note that the disciples ask for the SIGN of the parousia (v3) and are told it is like lightning (v27) — something nobody needs to be told about.", ("Matthew", 24, 3)),
+    ("synteleia", "synteleia tou aiōnos", "συντέλεια τοῦ αἰῶνος", "synteleia",
+     "THE COMPLETION OF THE AGE — syn ('together') + teleia (from telos, an end or goal): a bringing-to-completion, not a mere stopping. ⚠ It is Matthew's own phrase: he uses it five times (13:39, 40, 49; 24:3; 28:20) and no other evangelist has it at all. AIŌN is an age or era rather than 'the world' — which is why KJV's 'the end of the world' at 24:3 imports a cosmology the Greek does not state, and why ASV/NIV/NWT read 'age.' Note where the phrase last appears: the very final sentence of the Gospel, 'I am with you all the days until the synteleia of the age' (28:20), which makes the completion something Matthew ends on rather than fears.", ("Matthew", 24, 3)),
+    ("odin", "ōdin", "ὠδίν", "ōdin",
+     "A LABOUR PAIN — specifically the pangs of childbirth, not pain in general. ⚠ At Matthew 24:8 the wars, famines and earthquakes are 'the beginning of ōdinōn,' and the whole force of the metaphor is that pain of this kind is PRODUCTIVE: it is the pain that precedes a birth, and it means the process is under way rather than that the end has come. The prophets use it exactly so (Isaiah 26:17; Jeremiah 22:23; Hosea 13:13), and later Jewish writing speaks of 'the birth pangs of the Messiah' as a fixed phrase. So the verse is doing the opposite of what a reader collecting disasters wants: it says these are the early contractions, and adds 'the end is not yet' two verses earlier. Paul uses the same image of the whole creation groaning as in childbirth (Romans 8:22).", ("Matthew", 24, 8)),
+    ("bdelygma", "bdelygma tēs erēmōseōs", "βδέλυγμα τῆς ἐρημώσεως", "bdelygma",
+     "THE ABOMINATION OF DESOLATION — bdelygma is something that makes you retch (from bdelyssomai, to feel disgust), the Greek Old Testament's word for an idol or a defilement; erēmōsis is a laying-waste. ⚠ The phrase is quoted, and Matthew 24:15 names its source out loud: Daniel, at 11:31, 12:11 and 9:27. Daniel's own phrase had a first fulfilment the first century knew well — in 167 BC Antiochus IV set up an altar to Zeus in the temple and sacrificed on it, which is what 1 Maccabees calls by the same words. So the verse invokes something that had ALREADY happened once, which is a large part of why dating its second reference is so contested. Note also that Matthew 24:15 carries the Gospel's one aside to the reader ('let the reader understand'), which is the writer speaking rather than Jesus.", ("Matthew", 24, 15)),
     # ---- Matthew 23 (Greek) ----
     ("hypokrites", "hypokritēs", "ὑποκριτής", "hypokritēs",
      "AN ACTOR — one who speaks from behind a mask, from hypo-krinomai, to answer or play a part on stage. The moral sense came later; the theatrical one is what the word still carried. ⚠ Matthew uses it more than the rest of the New Testament together (13 of about 18 occurrences), and the seven woes of chapter 23 hammer it six times — always about the same thing, the gap between the outside and the inside. That is why the chapter's images are all outsides: widened phylacteries, lengthened tassels, a cup washed on one side, a tomb painted white. The Sermon had already used the word three times of praying, giving and fasting 'to be seen' (6:2, 5, 16), which is the same charge in miniature. Note what it does NOT mean here: insincerity in the modern sense of privately disbelieving. The accusation is that the performance and the person have come apart.", ("Matthew", 23, 13)),
@@ -5204,6 +5213,15 @@ XREFS = [
     (("Matthew", 16, 21), ("Matthew", 4, 17), "apo tote ērxato ho Iēsous, 'from then on Jesus began' — the identical four words that opened his public preaching now open his teaching about the cross, the seam scholars read between this Gospel's two halves"),
     (("Matthew", 16, 23), ("Matthew", 4, 19), "opisō mou, 'behind me' — the same word used calling Peter to follow in the first place now orders him back into that exact position after he tries to redirect Jesus away from the cross"),
     (("Matthew", 16, 25), ("Matthew", 10, 39), "the identical paradox already given the Twelve on their first mission — find/lose the psychē there, save/lose it here — restructured but making the same claim almost word for word"),
+    # ---- Matthew 24 ----
+    (("Matthew", 24, 1), ("Matthew", 23, 38), "he walks out of the temple three verses after calling it 'left to you' — the desolation and the departure are the same gesture"),
+    (("Matthew", 24, 15), ("Daniel", 11, 31), "the abomination of desolation, named as Daniel's — and Daniel's own phrase already had a first fulfilment under Antiochus IV in 167 BC"),
+    (("Matthew", 24, 15), ("Daniel", 12, 11), "the second Daniel passage the phrase comes from, both of which are on these pages"),
+    (("Matthew", 24, 30), ("Matthew", 8, 20), "the Son of Man on the clouds — the title whose first use in this Gospel was a man with nowhere to lay his head"),
+    (("Matthew", 24, 32), ("Matthew", 21, 19), "the fig tree, with its sign-value reversed: there the leaves were a lie, here they are reliable"),
+    (("Matthew", 24, 34), ("Matthew", 23, 36), "'this generation' — the phrase used nine verses before this chapter began, and the hardest sentence here"),
+    (("Matthew", 24, 34), ("Matthew", 12, 39), "'this generation' again — Matthew's usual sense is the contemporaries, which is what makes v34 difficult"),
+    (("Matthew", 24, 51), ("Matthew", 22, 13), "'the weeping and the grinding of teeth' — the formula last used of the guest without a wedding garment"),
     # ---- Matthew 23 ----
     (("Matthew", 23, 5), ("Matthew", 9, 20), "kraspedon — the third and last of the fringe's appearances: touched for healing, begged for by crowds, and here criticized for being lengthened"),
     (("Matthew", 23, 5), ("Matthew", 14, 36), "the fringe crowds begged to touch, now the fringe made big to be seen"),
@@ -9547,6 +9565,46 @@ DICTIONARY_ES = {
         "reino», y Jesús la usa en ambas direcciones: en su primera aparición (Mateo 8:20) pertenece a "
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
+    # ---- Mateo 24 ----
+    "parousia": ("presencia",
+        "PRESENCIA — o una llegada que da como resultado una presencia; de pareimi, «estar al lado». ⚠ En "
+        "griego corriente es un término técnico: la visita de estado de un rey, un emperador o un gobernador a "
+        "una ciudad, con el recibimiento, la delegación y los honores del caso. Ese fondo importa, porque la "
+        "palabra no es sinónimo de «venida» en el sentido de desplazarse. Mateo la usa cuatro veces y LAS "
+        "CUATRO están en el capítulo 24 (vv 3, 27, 37, 39); no aparece en ningún otro lugar de ningún "
+        "Evangelio, y luego se convierte en el término habitual de Pablo. La RV lee «venida», que la difumina "
+        "con erchomai, el verbo corriente que el mismo capítulo usa en los vv 30, 42 y 44; la TNM lee "
+        "«presencia» y los mantiene distintos, y aquí se la sigue. Nótese que los discípulos piden la SEÑAL de "
+        "la parousia (v 3) y se les dice que es como el relámpago (v 27): algo de lo que nadie necesita ser "
+        "informado."),
+    "synteleia": ("conclusión del siglo",
+        "LA CONCLUSIÓN DEL SIGLO — syn («juntamente») + teleia (de telos, fin o meta): un llevar-a-término, no "
+        "un simple detenerse. ⚠ Es una expresión propia de Mateo: la usa cinco veces (13:39, 40, 49; 24:3; "
+        "28:20) y ningún otro evangelista la tiene. AIŌN es una era o un siglo más que «el mundo» — razón por "
+        "la cual «el fin del mundo» importa una cosmología que el griego no afirma, y por la que conviene leer "
+        "«siglo» o «era». Nótese dónde aparece la expresión por última vez: en la frase final del Evangelio, "
+        "«yo estoy con vosotros todos los días hasta la synteleia del siglo» (28:20), lo que convierte la "
+        "conclusión en algo con lo que Mateo termina y no en algo que teme."),
+    "odin": ("dolor de parto",
+        "UN DOLOR DE PARTO — específicamente las contracciones del alumbramiento, no el dolor en general. ⚠ En "
+        "Mateo 24:8 las guerras, las hambres y los terremotos son «principio de ōdinōn», y toda la fuerza de "
+        "la metáfora está en que un dolor de esa clase es PRODUCTIVO: es el dolor que precede a un nacimiento, "
+        "y significa que el proceso está en marcha y no que el fin haya llegado. Los profetas la usan "
+        "exactamente así (Isaías 26:17; Jeremías 22:23; Oseas 13:13), y la literatura judía posterior habla de "
+        "«los dolores de parto del Mesías» como expresión fija. Así que el versículo hace lo contrario de lo "
+        "que quiere un lector que colecciona desastres: dice que son las primeras contracciones, y dos "
+        "versículos antes añade «todavía no es el fin». Pablo usa la misma imagen de toda la creación gimiendo "
+        "como en un parto (Romanos 8:22)."),
+    "bdelygma": ("abominación de la desolación",
+        "LA ABOMINACIÓN DE LA DESOLACIÓN — bdelygma es algo que da náuseas (de bdelyssomai, sentir asco), la "
+        "palabra del Antiguo Testamento griego para un ídolo o una profanación; erēmōsis es una devastación. "
+        "⚠ La expresión es una cita, y Mateo 24:15 nombra su fuente en voz alta: Daniel, en 11:31, 12:11 y "
+        "9:27. La propia expresión de Daniel tuvo un primer cumplimiento que el siglo I conocía bien: en el "
+        "167 a. C. Antíoco IV puso un altar a Zeus en el templo y sacrificó en él, que es lo que 1 Macabeos "
+        "llama con las mismas palabras. Así que el versículo invoca algo que YA había ocurrido una vez, lo cual "
+        "es buena parte de por qué fechar su segunda referencia se discute tanto. Nótese además que Mateo "
+        "24:15 lleva el único aparte al lector de todo el Evangelio («el que lee, entienda»), que es el "
+        "escritor hablando y no Jesús."),
     # ---- Mateo 23 ----
     "hypokrites": ("hipócrita, actor",
         "UN ACTOR — el que habla desde detrás de una máscara, de hypo-krinomai, responder o representar un "
@@ -10244,6 +10302,48 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat24": [dict(
+        file="hayez-destruction-temple.jpg",
+        title="The Destruction of the Temple of Jerusalem",
+        title_es="La destrucción del Templo de Jerusalén",
+        artist="Francesco Hayez",
+        year="1867",
+        location="Gallerie dell'Accademia, Venice",
+        location_es="Gallerie dell'Accademia, Venecia",
+        alt="An enormous crowded canvas. A high pale stone wall fills the centre; along its top men fight "
+            "hand to hand and bodies are thrown off it, one figure falling headlong down the face of the "
+            "wall. Below, Roman soldiers in helmets stand with red banners and standards around an officer "
+            "in a scarlet cloak. Dead and dying people lie strewn across the wide temple steps in the "
+            "foreground. At the left, men carry off a large seven-branched menorah and other temple vessels "
+            "while fire and black smoke pour from a colonnade; winged figures are visible in the smoke "
+            "above. Blue sky breaks through at the top right",
+        note="⚠ This is verse 2 painted &mdash; &ldquo;not one stone will be left here on another&rdquo; "
+             "&mdash; and the detail that anchors it is at the far left: men carrying off a "
+             "<strong>seven-branched menorah</strong> and the temple vessels, which is the scene carved on "
+             "the Arch of Titus in Rome, where it can still be seen. Hayez fills the canvas with the "
+             "things the chapter does not describe and the historians do: the standards, the bodies on the "
+             "steps, the men thrown from the wall. Note the smoke at the upper left, where he has put "
+             "winged figures &mdash; a nineteenth-century allegorical instinct the Gospel text does not "
+             "license, and worth seeing as his addition rather than Matthew&rsquo;s. Begun in 1860 and "
+             "finished in 1867 (oil on canvas, about 183 &times; 282 cm); Hayez gave it in 1868 to the "
+             "Venice academy where he had trained half a century earlier, and it hangs there still. "
+             "⚠ Commons credits the photographer, not the painter, on this file; the attribution here is "
+             "Hayez.",
+        note_es="⚠ Este es el versículo 2 pintado &mdash; «no quedará aquí piedra sobre piedra» &mdash; y el "
+                "detalle que lo ancla está en el extremo izquierdo: unos hombres se llevan un gran "
+                "<strong>candelabro de siete brazos</strong> y los utensilios del templo, que es la escena "
+                "esculpida en el Arco de Tito en Roma, donde todavía puede verse. Hayez llena el lienzo con "
+                "las cosas que el capítulo no describe y los historiadores sí: los estandartes, los cuerpos "
+                "en las gradas, los hombres arrojados desde el muro. Fíjese en el humo del ángulo superior "
+                "izquierdo, donde ha puesto figuras aladas &mdash; un instinto alegórico del siglo XIX que el "
+                "texto evangélico no autoriza, y que conviene ver como añadido suyo y no de Mateo. Comenzado "
+                "en 1860 y terminado en 1867 (óleo sobre lienzo, unos 183 &times; 282 cm); Hayez lo donó en "
+                "1868 a la academia de Venecia donde se había formado medio siglo antes, y allí sigue. "
+                "⚠ Commons acredita al fotógrafo y no al pintor en este archivo; la atribución de aquí es "
+                "Hayez.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:(Venice)_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg",
+    )],
     "mat23": [dict(
         file="tissot-woe-scribes-pharisees.jpg",
         title="Woe unto You, Scribes and Pharisees",
