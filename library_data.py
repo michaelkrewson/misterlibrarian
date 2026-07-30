@@ -168,7 +168,7 @@ DICTIONARY = [
     ["paraklesis", "paraklēsis", "παράκλησις", "paraklēsis", "COMFORT, encouragement, consolation — from parakaleō, 'to call alongside' (para + kaleō); the drawing-near of one who steadies you and calls you to your feet. It is not soft: the related noun paraklētos is the word John's Gospel uses for the Holy Spirit — the ADVOCATE, the Comforter, one summoned to your side in a court (John 14:16). ⚠ The word-family rings TEN TIMES in 2 Corinthians 1:3-7, a drum-beat English cannot keep — Greek can ring one root like a bell, but English has to alternate 'comfort / console / encourage', which breaks the chime. This translation holds to 'comfort' throughout, with the KJV.", ["2 Corinthians", 1, 3]],
     ["arrabon", "arrabōn", "ἀρραβών", "arrabōn", "A DOWN PAYMENT — a commercial term Greek borrowed from Semitic traders (Hebrew eravon, the very pledge Judah leaves with Tamar in Genesis 38:18): the first instalment that both guarantees the rest AND is itself part of the full sum, legally binding the buyer to complete the deal. Paul calls the Spirit the arrabōn 'in our hearts' (2 Corinthians 1:22; also 5:5; Ephesians 1:14) — not a substitute for what is coming but a genuine first taste of it, the same currency as the balance. ⚠ In modern Greek arravónas is still the word for an ENGAGEMENT RING. KJV 'the earnest of the Spirit' — 'earnest' being the old English commercial word for exactly this; NWT 'a token of what is to come'.", ["2 Corinthians", 1, 22]],
     ["sphragis", "sphragis", "σφραγίς", "sphragis", "A SEAL — the impression a signet ring leaves in wax, stamped on a document or a jar of goods to mark it as genuinely owned and to prove it had not been tampered with. To be 'sealed' by God (2 Corinthians 1:22; Ephesians 1:13; 4:30) is to be marked as authentically his. The image runs through Revelation, where the servants of God are sealed on the forehead (Rev 7:3) and the scroll of destiny is sealed with seven seals. The verb sphragizō is the action; the noun is the mark it leaves.", ["2 Corinthians", 1, 22]],
-    ["schisma", "schisma", "σχίσμα", "schisma", "A TEAR, a rip — from schizō, 'to split' (the root of 'schism' and, by a long road, 'schizophrenia'). It is the Gospels' word for a rip in a garment and for the temple curtain torn in two. Paul asks the Corinthians to have no schismata among them and instead to be katērtismenoi — 'mended together', the very verb used of the sons of Zebedee MENDING THEIR NETS (Matthew 4:21). The image is not a broken machine but torn cloth, and the request is not uniformity of opinion but repair. KJV 'divisions… perfectly joined together' loses both halves.", ["1 Corinthians", 1, 10]],
+    ["schisma", "schisma", "σχίσμα", "schisma", "A TEAR, a rip — from schizō, 'to split' (the root of 'schism' and, by a long road, 'schizophrenia'). It is the Gospels' word for a rip in a garment and for the temple curtain torn in two. &#9888; In Mark the family runs a deliberate-looking course: the heavens are TORN OPEN at the baptism (1:10), a schisma is what a bad patch makes of an old coat (2:21), and the curtain is torn from top to bottom at the death (15:38) &mdash; the word Mark chose for the sky is the word for what happens to a garment. Paul asks the Corinthians to have no schismata among them and instead to be katērtismenoi — 'mended together', the very verb used of the sons of Zebedee MENDING THEIR NETS (Matthew 4:21). The image is not a broken machine but torn cloth, and the request is not uniformity of opinion but repair. KJV 'divisions… perfectly joined together' loses both halves.", ["1 Corinthians", 1, 10]],
     ["sophia", "sophia", "σοφία", "sophia", "WISDOM — skill, and then the reasoned understanding a Greek education existed to produce; the root of 'philosophy', love of it. 1 Corinthians 1 uses it eight times in fifteen verses and does something odd with it: God 'made the wisdom of the world foolish', Greeks 'look for wisdom' and get a crucifixion instead, and then Christ himself 'became wisdom for us from God'. ⚠ Paul is not anti-intellectual — chapter 2 turns round and says 'we do speak wisdom among the mature' — he is against wisdom as a thing to be admired for, which is the currency the Corinthian factions were trading in. ⚠ The identical Greek noun has an earlier, very different life in this library: at Matthew 11:19, sophia is a WOMAN who acts and is vindicated by her own deeds ('wisdom is vindicated by her deeds'), standing in the Hebrew Bible's own tradition of Wisdom calling out in the marketplace (Proverbs 1, 8-9, not yet on these pages in Greek dress) — one noun, personified in one Gospel and intellectualized in one letter.", ["1 Corinthians", 1, 17]],
     ["moria", "mōria", "μωρία", "mōria", "FOLLY, idiocy — from mōros, the root of English 'moron' (and of 'sophomore', literally a wise-fool). It is a blunt word, not a polite one: Paul says the message of the cross is not merely difficult or mysterious to outsiders but STUPID, and then declines to argue the charge — 'the foolish thing of God is wiser than human beings'. The related verb mōrainō, 'to make foolish', appears here of God doing it to the world's wisdom (1:20) and in Romans 1:22 of those 'claiming to be wise' having it done to them.", ["1 Corinthians", 1, 18]],
     ["stauros", "stauros", "σταυρός", "stauros", "CROSS — in older Greek simply an upright stake or pale, and by Roman times the instrument of crucifixion, a punishment reserved principally for slaves, rebels and provincials. ⚠ Modern readers meet it as jewellery, which makes the New Testament's sentences about it nearly unhearable: Cicero called crucifixion 'the most cruel and disgusting penalty' and wrote that the very word should be kept far from a Roman citizen's ears. 'The word of the cross' was therefore an obscenity to announce as good news, and Paul says so outright rather than softening it.", ["1 Corinthians", 1, 17]],
@@ -1141,6 +1141,14 @@ DICTIONARY = [
      "To MAKE A DISCIPLE of somebody &mdash; a transitive verb built on mathētēs, a learner or apprentice, and not the same thing as 'teach' (didaskō, which Matthew 28:20 uses separately, in the next breath). &#9888; It occurs three times in Matthew and nowhere else in the Gospels, and the pattern is the point: twice in the PASSIVE, of a scribe 'who has been made a disciple of the kingdom' (13:52) and of Joseph of Arimathea, who 'had been made a disciple' (27:57) &mdash; and then once in the ACTIVE, as the imperative carrying the last command in the book, mathēteusate panta ta ethnē (28:19). Two men are made disciples, and then the made are told to make. &#9888; Its object at 28:19 is the NATIONS, not individuals, which is a grammatical fact worth noticing before anybody uses it as an argument.", ("Matthew", 13, 52)),
     ("ethnos", "ethnos", "ἔθνος", "ethnos",
      "A NATION, a people &mdash; and in the plural, in Jewish Greek, THE NATIONS: everybody who is not Israel, the Gentiles. The Greek Old Testament uses it for Hebrew goyim, and English 'ethnic' descends from it. &#9888; The word is the hinge of the sharpest unresolved tension in Matthew. At 10:5-6 the Twelve are sent out under a hard restriction stated twice &mdash; go nowhere among the ethnē, only to the lost sheep of the house of Israel &mdash; and at 15:24 he says the same of himself. The book then closes with mathēteusate PANTA TA ETHNĒ, make disciples of ALL the nations (28:19). Same word, opposite instruction, eighteen chapters apart, and Matthew offers no reconciliation. The library reports both and observes that this Gospel is willing to end on a reversal it never explains.", ("Matthew", 10, 5)),
+    ("krabattos", "krabattos", "κράβαττος", "krabattos",
+     "A MAT, a straw pallet &mdash; the bedding of somebody who owns one blanket. It is a Latin loanword (grabatus) wearing Greek endings, it is low-register, and Mark uses it without embarrassment (2:4, 2:9, 2:11, 2:12, and again at 6:55). &#9888; The interesting fact is what the other two do with it: at the same scene Matthew (9:2) and Luke (5:18) both replace it with klinē, an ordinary bed, and Luke also swaps Mark's dug-through mud roof for TILES (5:19). That pair of changes is the clearest small window in the Gospels onto Mark's Greek &mdash; the roughest in the New Testament, and roughest precisely where the others smooth. This translation reads 'mat' and does not upgrade it.", ("Mark", 2, 4)),
+    ("prothesis", "prothesis", "πρόθεσις", "prothesis",
+     "A SETTING-OUT, a placing before &mdash; and in the phrase artoi tēs protheseōs, the loaves of the PRESENCE: twelve loaves kept on a table in the sanctuary, renewed weekly and then eaten by the priests (Leviticus 24:5-9). Hebrew calls it lechem ha-panim, 'bread of the face', bread set before God. &#9888; Its New Testament fame is a precedent: David, on the run and hungry, ate it (1 Samuel 21), and Jesus cites the episode against a sabbath charge at Mark 2:26. Note the shape of that argument &mdash; he does not say the Law permitted what David did. He says David did it. The precedent is an admitted irregularity, which is harder to answer than a loophole. The same noun means 'purpose' elsewhere (Romans 8:28), from the sense of a thing set out in advance.", ("Mark", 2, 26)),
+    ("sabbaton", "sabbaton", "σάββατον", "sabbaton",
+     "THE SABBATH &mdash; a Greek spelling of Hebrew shabbat, from a root meaning to CEASE. &#9888; Mark 2:27 carries the sentence no other Gospel has: 'the sabbath came into being for the human being, and not the human being for the sabbath.' Matthew (12:8) and Luke (6:5) both retell this whole scene and both go straight to 'the Son of Man is lord of the sabbath' with that line missing &mdash; so the most radical sentence in the paragraph survives in one Gospel only. And the Greek egeneto, 'came into being', is the verb of Genesis 1: the sabbath is spoken of as something MADE, with a purpose. &#9888; The word is often plural in form (ta sabbata) with singular sense, which is why versions vary between 'sabbath' and 'sabbaths' with no difference of meaning; it also came to mean simply a WEEK, which is why 'the first of the sabbaton' at Matthew 28:1 means the first day of the week.", ("Mark", 2, 27)),
+    ("telones", "telōnēs", "τελώνης", "telōnēs",
+     "A TAX COLLECTOR &mdash; more exactly a toll-farmer: not a salaried official but a man who bought the right to collect a levy and kept whatever he could raise above his bid. That is why the word is a byword in the Gospels and why it is paired, again and again, with 'sinners' (Mark 2:15-16) &mdash; the objection is occupational, not merely moral. &#9888; They collected for Rome, or for Herod, at customs posts on roads and lake crossings; the telōnion of Mark 2:14 is the booth itself. This translation keeps 'tax collector' rather than the KJV's 'publican', which now suggests an innkeeper and in 1611 meant a farmer of public revenue &mdash; a false friend that has quietly cost the word its sting.", ("Mark", 2, 14)),
     ("katapetasma", "katapetasma", "καταπέτασμα", "katapetasma",
      "THE CURTAIN of the sanctuary &mdash; from katapetannymi, to spread out downward; a hanging, not a wall. &#9888; Matthew 27:51 says it was torn in two &lsquo;from top to bottom&rsquo;, and the direction is the whole point: it is the one detail that makes the tearing a statement about who did it rather than a consequence of the earthquake two clauses later. The text does NOT say which curtain. The sanctuary had an outer hanging at the entrance, visible from the court, and an inner one before the holy of holies, seen once a year by one man; a tearing of the first is a public sign and a tearing of the second is a statement about access, and commentators have argued for each since antiquity on grounds the text does not supply. Hebrews 10:20 takes the inner one and makes it the flesh of Christ. The library reports that Matthew leaves it open.", ("Matthew", 27, 51)),
     ("korbanas", "korbanas", "κορβανᾶς", "korbanas",
@@ -4382,6 +4390,13 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Mark', 2, 4), ('Matthew', 9, 2), "krabattos, a straw pallet — Matthew and Luke both replace it with an ordinary bed, and Luke swaps the dug-through mud roof for tiles"),
+    (('Mark', 2, 10), ('Matthew', 9, 6), "the sentence breaks off mid-clause in both Gospels — 'so that you may know…' — he says to the paralysed man"),
+    (('Mark', 2, 14), ('Matthew', 9, 9), "Mark calls him LEVI son of Alphaeus; Matthew calls him MATTHEW — and Mark's own list of the Twelve has no Levi in it"),
+    (('Mark', 2, 21), ('Mark', 1, 10), "schisma — the tearing-word: the heavens torn open at the baptism, a coat torn by a bad patch here, and the curtain at 15:38"),
+    (('Mark', 2, 26), ('Mark', 12, 26), "epi + genitive can mean 'in the passage about' — Mark uses it that way himself, 'epi tou batou', in the passage about the bush"),
+    (('Mark', 2, 27), ('Matthew', 12, 8), "'the sabbath came into being for the human being' is in Mark alone; Matthew and Luke both go straight to the Son of Man saying"),
+
     (('Matthew', 28, 2), ('Matthew', 8, 24), "seismos — the family Matthew runs from a lake (8:24) to the city (21:10) to the earth at the death (27:51) to the tomb and the guards (28:2, 28:4): seven uses against one each in Mark, Luke and Acts"),
     (('Matthew', 28, 6), ('Matthew', 16, 21), "'he was raised' — passive, with the agent unstated, exactly as the three passion predictions put it"),
     (('Matthew', 28, 9), ('Matthew', 26, 49), "chairete — the greeting Judas used in the garden and the soldiers used at the cross; its third use is the only honest one"),
@@ -9755,6 +9770,35 @@ DICTIONARY_ES = {
         "discípulos de TODAS las naciones (28:19). La misma palabra, la instrucción contraria, dieciocho capítulos "
         "después, y Mateo no ofrece reconciliación. La biblioteca informa de las dos y observa que este Evangelio "
         "está dispuesto a terminar en una inversión que nunca explica."),
+    "krabattos": ("camilla, jergón",
+        "UNA ESTERA, un jergón de paja —la cama de quien tiene una sola manta—. Es un préstamo latino (grabatus) "
+        "con terminación griega, es de registro bajo, y Marcos lo usa sin apuro (2:4, 2:9, 2:11, 2:12, y otra vez "
+        "en 6:55). ⚠ Lo interesante es qué hacen los otros dos con él: en la misma escena, Mateo (9:2) y Lucas "
+        "(5:18) lo sustituyen por klinē, una cama corriente, y Lucas cambia además el techo de barro excavado de "
+        "Marcos por TEJAS (5:19). Ese par de cambios es la ventana más clara que hay a la lengua de Marcos: el "
+        "griego más tosco del Nuevo Testamento, y más tosco justo donde los otros lo aliñan."),
+    "prothesis": ("proposición; los panes de la Presencia",
+        "UN PONER DELANTE —y en la expresión artoi tēs protheseōs, los panes de la PRESENCIA: doce panes sobre una "
+        "mesa del santuario, renovados cada semana y comidos después por los sacerdotes (Levítico 24:5-9). El "
+        "hebreo lo llama lechem ha-panim, «pan del rostro», pan puesto ante Dios. ⚠ Su fama neotestamentaria es "
+        "como precedente: David, huido y hambriento, lo comió (1 Samuel 21), y Jesús cita el episodio contra una "
+        "acusación de sábado en Marcos 2:26. Nótese la forma del argumento: no dice que la Ley permitiera lo que "
+        "David hizo. Dice que David lo hizo. El precedente es una irregularidad admitida, más difícil de "
+        "responder que un resquicio."),
+    "sabbaton": ("sábado",
+        "EL SÁBADO —grafía griega del hebreo shabbat, de una raíz que significa CESAR—. ⚠ Marcos 2:27 lleva la "
+        "frase que ningún otro Evangelio tiene: «el sábado vino a ser por causa del ser humano, y no el ser humano "
+        "por causa del sábado». Mateo (12:8) y Lucas (6:5) cuentan toda esta escena y los dos pasan directamente a "
+        "«el Hijo del Hombre es señor del sábado» sin esa línea: la frase más radical del párrafo sobrevive en un "
+        "solo Evangelio. Y el griego egeneto, «vino a ser», es el verbo de Génesis 1: se habla del sábado como de "
+        "algo HECHO, con un propósito."),
+    "telones": ("recaudador de impuestos",
+        "UN RECAUDADOR —más exactamente un arrendatario de impuestos: no un funcionario con sueldo, sino un hombre "
+        "que compraba el derecho a cobrar un gravamen y se quedaba con lo que lograra sacar por encima de su "
+        "puja—. Por eso la palabra es un insulto corriente en los Evangelios y por eso va emparejada una y otra "
+        "vez con «pecadores» (Marcos 2:15-16): la objeción es de oficio, no solo moral. ⚠ Recaudaban para Roma o "
+        "para Herodes en puestos de aduana; el telōnion de Marcos 2:14 es la garita misma. Esta traducción "
+        "mantiene «recaudador de impuestos» y no el «publicano» de la RV, que hoy no dice nada a casi nadie."),
     "katapetasma": ("cortina del santuario",
         "LA CORTINA del santuario —de katapetannymi, extender hacia abajo; un paño colgante, no un muro—. ⚠ Mateo "
         "27:51 dice que se rasgó en dos «de arriba abajo», y la dirección es todo el asunto: es el único detalle que "
@@ -10611,6 +10655,46 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mark2": [dict(
+        file="hemessen-calling-of-levi.jpg",
+        title="The Calling of Saint Matthew",
+        title_es="La vocaci\u00f3n de san Mateo",
+        artist="Jan Sanders van Hemessen",
+        year="c. 1548",
+        location="Kunsthistorisches Museum, Vienna",
+        location_es="Kunsthistorisches Museum, Viena",
+        alt="A crowded half-length scene pressed close to the picture plane. At the right, Christ in "
+            "green, haloed, one arm flung up and out of the frame, the other hand reaching down toward a "
+            "table heaped with coins, a green money-box, purses and an open ledger. At the lower right a "
+            "man in red with a fur collar bends over the ledger with a pen in his hand, head down, still "
+            "writing. Around the table a bearded man in a red fur-trimmed robe gestures, a woman in "
+            "blue-green leans in, and a clerk counts. Behind, ruined arches open onto a landscape with "
+            "small distant figures.",
+        note="&#9888; The painting is called The Calling of Saint MATTHEW, and this chapter calls him "
+             "LEVI. That is not the painter&rsquo;s error &mdash; it is the tradition&rsquo;s, and it is "
+             "the point of the note at v14: every famous picture of this scene carries the name Mark does "
+             "not use. &#9888; And look at what the man is doing. Hemessen paints the instant BEFORE the "
+             "response: the pen is still moving, the coins are still on the table, and the tax collector "
+             "has not raised his head. Mark allows no such instant. His sentence is &lsquo;follow me &mdash; "
+             "and getting up he followed him&rsquo;, one clause, no interior life, no pause for the painter "
+             "to work in. What the picture gets exactly right is the setting: this is a working "
+             "tax office, with the money in front and the ledger open, and Hemessen is credited with "
+             "originating that kind of moralizing counting-house picture &mdash; the same painter, and the "
+             "same milieu, as the <a href=\"matthew-18.html\">unforgiving servant</a> two Gospels away.",
+        note_es="&#9888; El cuadro se llama La vocaci\u00f3n de san MATEO, y este cap\u00edtulo lo llama "
+             "LEV\u00cd. No es un error del pintor: es de la tradici\u00f3n, y es justo lo que dice la nota "
+             "del v14 &mdash; toda imagen famosa de esta escena lleva el nombre que Marcos no usa. &#9888; Y "
+             "f\u00edjese en lo que hace el hombre. Hemessen pinta el instante ANTERIOR a la respuesta: la "
+             "pluma sigue en marcha, las monedas siguen sobre la mesa, y el recaudador no ha levantado la "
+             "cabeza. Marcos no concede ese instante. Su frase es «s\u00edgueme &mdash;y levant\u00e1ndose "
+             "lo sigui\u00f3», una sola cl\u00e1usula, sin vida interior, sin pausa donde el pintor pueda "
+             "trabajar. Lo que la imagen acierta del todo es el escenario: es una oficina de impuestos en "
+             "funcionamiento, con el dinero delante y el libro abierto, y a Hemessen se le atribuye haber "
+             "originado esa clase de cuadro moralizante de casa de cuentas.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Jan_Sanders_van_Hemessen_-_The_Calling_of_Saint_Matthew_(1548).jpg",
+    )],
+
     "mat28": [dict(
         file="angelico-women-at-the-tomb.jpg",
         title="The Resurrection of Christ and the Women at the Tomb",
