@@ -342,6 +342,47 @@ a.pill:focus-visible {
 .draftbanner strong { color: var(--terra-dk); }
 .draftbanner a { color: var(--terra-dk); }
 
+/* "Publish this entry" — foot of a draft preview only (_publish_box). Olive
+   rather than terracotta on purpose: every other draft-only chrome on the page
+   is terracotta and means "careful, not live", and this is the one control that
+   means "yes, go". Sits AFTER the article because it is meant to be pressed
+   having read the thing, not from the top of the page. */
+.publishbox {
+  margin: 38px 0 30px;
+  padding: 22px 20px;
+  background: rgba(163,179,120,.09);
+  border: 1px solid rgba(163,179,120,.45);
+  border-radius: var(--radius);
+  text-align: center;
+  font: 14.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+.publishbox strong { display: block; color: var(--olive); margin-bottom: 14px; }
+.pubbtn {
+  display: inline-block;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: var(--olive);
+  color: #0a0f1a;
+  font-weight: 700;
+  font-size: 15.5px;
+  letter-spacing: .2px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform .12s ease, filter .12s ease;
+}
+.pubbtn:hover, .pubbtn:focus { filter: brightness(1.08); transform: translateY(-1px); }
+.pubbtn:active { transform: translateY(0); }
+.pubnote {
+  display: block;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pubbtn { transition: none; }
+  .pubbtn:hover, .pubbtn:focus, .pubbtn:active { transform: none; }
+}
+
 /* Share-this-page button (share.js) rides as the last item in .topnav itself
    (see header()) -- sized/padded to match .topnav a so it reads as a native
    nav item, not a separate floating line under the header. */
