@@ -187,7 +187,7 @@ DICTIONARY = [
     ["dikaiosyne", "dikaiosynē", "δικαιοσύνη", "dikaiosynē", "RIGHTEOUSNESS / justice — one word in Greek for what English splits into two, and the key term of Romans. ⚠ 'The righteousness of God' (dikaiosynē theou, 1:17) is the most argued-over phrase in the letter, and the dispute is grammatical before it is theological: a righteousness that BELONGS to God (his covenant faithfulness, his putting-things-right), one that COMES from God as a gift, or one that COUNTS before God. Luther described his whole turn as a change of mind about this genitive. Behind it stands the Hebrew tsedaqah, which is likewise relational — being right BY someone, not merely being morally correct. ⚠ In Matthew the word runs the other way round — not a status God gives but the doing of what God has asked: it is what Jesus says he and John are completing when he insists on being baptized, 'thus it is fitting for us to fulfil all righteousness' (3:15), and it becomes the spine of the Sermon on the Mount (hunger for it, 5:6; exceed the scribes' and Pharisees' measure of it, 5:20; do not practise it to be seen, 6:1).", ["Romans", 1, 17]],
     ["orge", "orgē", "ὀργή", "orgē", "WRATH — settled anger, not a flare of temper (that is thymos); the root of English 'orgy' only by a long and unrelated road. Romans 1:18 pairs it deliberately with 1:17: God's righteousness 'is revealed', and God's wrath 'is revealed' — the same verb, present tense, both happening now. ⚠ And the chapter defines the wrath by what follows: three times 'God gave them over'. The judgment described is not a thunderbolt but a letting-go — being handed the thing you wanted more than God.", ["Romans", 1, 18]],
     ["doxa", "doxa", "δόξα", "doxa", "GLORY — weight, splendour, the visible worth of a thing; the root of 'doxology'. In classical Greek it means opinion or reputation (hence 'orthodox', right opinion, and 'paradox', beside opinion), but the Greek Old Testament pressed it into service for the Hebrew kavod, 'weight' — the heaviness of God's presence that fills the tabernacle. Romans 1:23 turns on it: they 'exchanged the GLORY of the incorruptible God for a likeness of an image' — a trade, and the psalm being quoted (106:20) had said the same thing about Israel and the golden calf.", ["Romans", 1, 23]],
-    ["paradidomi", "paradidōmi", "παραδίδωμι", "paradidōmi", "To HAND OVER, deliver up — a judicial word: what a magistrate does when he hands a prisoner to the executioner. It tolls three times in Romans 1 (vv 24, 26, 28), 'God gave them over', and the three occurrences are the skeleton of the paragraph. ⚠ It is also the word used all through the Gospels of Jesus being handed over — by Judas, by the priests, by Pilate — and by Paul of God who 'did not spare his own Son but gave him over for us all' (Romans 8:32). The same verb does the condemning and the rescuing.", ["Romans", 1, 24]],
+    ["paradidomi", "paradidōmi", "παραδίδωμι", "paradidōmi", "To HAND OVER, deliver up — a judicial word: what a magistrate does when he hands a prisoner to the executioner. It tolls three times in Romans 1 (vv 24, 26, 28), 'God gave them over', and the three occurrences are the skeleton of the paragraph. ⚠ It is also the word used all through the Gospels of Jesus being handed over — by Judas, by the priests, by Pilate — and by Paul of God who 'did not spare his own Son but gave him over for us all' (Romans 8:32). The same verb does the condemning and the rescuing. &#9888; Its densest concentration anywhere is Matthew 26, where it sounds in TEN of seventy-five verses (2, 15, 16, 21, 23, 24, 25, 45, 46, 48) and is the chapter's spine. That chapter is also why 'betray' will not do as a standing rendering: Matthew uses the same verb actively of what Judas does AND passively, with no agent named, of what is being done to the Son of Man (26:2, 24, 45), and no English sentence can make 'betray' work in the passives.", ["Matthew", 26, 2]],
     ["physis", "physis", "φύσις", "physis", "NATURE — the way a thing grows or is constituted, from phyō, 'to grow'; the root of 'physics' and 'physical'. The phrase para physin, 'contrary to nature', is Stoic ethical vocabulary, common in Hellenistic Jewish writers such as Philo and Josephus, and it stands at the centre of the most contested paragraph in Romans (1:26-27). ⚠ One datum both sides of that argument cite: Paul uses para physin once more in the same letter, at 11:24, of GOD grafting a wild olive branch into a cultivated tree 'contrary to nature' — so in his usage the phrase is not automatically a term of absolute moral condemnation. The library reports the readings and does not vote.", ["Romans", 1, 26]],
     ["adokimos", "adokimos", "ἀδόκιμος", "adokimos", "UNAPPROVED — failing the test; used of counterfeit coin and of metal that does not pass assay, from dokimazō, 'to test and approve'. Romans 1:28 is a pun that only survives if both halves keep the same root: they did not APPROVE of holding God in accurate knowledge, so God gave them over to an UNAPPROVED mind. KJV's 'reprobate mind' carries the idea through Latin; NWT reads 'disapproved mental state'. Paul turns it on himself at 1 Corinthians 9:27 — the fear of preaching to others and being adokimos himself.", ["Romans", 1, 28]],
     ["tekmerion", "tekmērion", "τεκμήριον", "tekmērion", "A DEMONSTRATIVE proof — not a hint but the kind of sign that settles a case. Aristotle separates it from sēmeion, an ordinary sign that can mislead, and defines a tekmērion as the necessary sign that cannot be refuted (Rhetoric 1357b); Greek doctors used it of the symptom that makes a diagnosis certain. It appears once in the whole New Testament, of the risen Jesus presenting himself alive 'by many conclusive proofs' — courtroom-and-clinic vocabulary chosen at the exact point where the argument needs it. KJV 'many infallible proofs' catches the force; ASV's 'many proofs' loses it.", ["Acts", 1, 3]],
@@ -1137,6 +1137,14 @@ DICTIONARY = [
     # ---- Matthew 25 (Greek) ----
     ("parthenos", "parthenos", "παρθένος", "parthenos",
      "A VIRGIN &mdash; and also, in ordinary usage, simply an UNMARRIED YOUNG WOMAN; which sense is live depends entirely on context. ⚠ It occurs in only 15 verses in the whole New Testament, and just two of them are about Mary: Matthew 1:23, quoting Isaiah 7:14, and Luke 1:27, which uses it twice. Elsewhere its core is plainly marital STATUS rather than chastity &mdash; Philip's four unmarried daughters who prophesied (Acts 21:9), the marriageable daughters of 1 Corinthians 7, Anna who lived with a husband seven years 'from her parthenia', her girlhood (Luke 2:36) &mdash; and, decisively, Revelation 14:4, where parthenoi is used of MEN. ⚠ Hence the two Matthews. At 1:23 the word carries the weight of the Isaiah quotation, where the Hebrew is almah, a young woman of marriageable age, without the technical focus on virginity that betulah has; the Greek Old Testament had already chosen parthenos, and that choice is the hinge of a very old argument. At 25:1 it is a WEDDING: ten parthenoi with lamps are the bridal party, and nothing in the parable turns on chastity &mdash; the difference between the two fives is oil. So 'virgins' there (KJV/ASV/NWT, and the whole Spanish shelf) imports a sexual reference the story never uses, which is why this translation reads 'girls' at 25:1 and keeps 'virgin' at 1:23. ⚠ And worth saying for its own sake: the virgin birth does not rest on this noun. Luke puts it in Mary's own mouth &mdash; 'since I do not know a man' (1:34) &mdash; and Matthew states it in his narration (1:18, 25). It would stand unchanged if parthenos were rendered 'girl' everywhere it appears.", ("Matthew", 1, 23)),
+    ("diatheke", "diathēkē", "διαθήκη", "diathēkē",
+     "A COVENANT &mdash; and the word that named both halves of this Bible, by a route worth knowing. In ordinary Greek a diathēkē is a WILL, the document by which a man disposes of his estate; that is the sense Latin caught with testamentum, and through Latin English got TESTAMENT, and through that the titles Old Testament and New Testament. But in the Greek Old Testament diathēkē is the standing rendering of Hebrew berit, a sworn bond between parties, and that is unmistakably the sense at Matthew 26:28 &mdash; blood, a Passover meal, and an echo of Exodus 24:8. &#9888; So the two Testaments on every shelf in the world are named from the reading the shelf has since abandoned: KJV and Douay read \'testament\' at 26:28 (Douay because it translates the Vulgate, which is the Latin route itself), while ASV, NIV and NWT all read \'covenant.\' &#9888; A second dispute sits in the same verse: the earliest text reads \'my blood OF THE COVENANT\' and the Byzantine tradition adds kainēs, \'of the NEW covenant\' &mdash; which is where the KJV\'s famous phrasing comes from. Luke 22:20 and 1 Corinthians 11:25 read \'new covenant\' with no dispute at all, so a copyist had two familiar parallels pulling the adjective in, and the next verse hands it to him outright.", ("Matthew", 26, 28)),
+    ("hetairos", "hetairos", "ἑταῖρος", "hetairos",
+     "COMRADE, fellow &mdash; and in this Gospel never once a warm word. It is not philos, \'friend\' in the affectionate sense; it is the cool, faintly formal address a superior uses to somebody he is holding at arm\'s length. &#9888; It occurs THREE times in the whole New Testament and all three are in Matthew: to the labourer grumbling about his wage (20:13), to the man with no wedding garment (22:12), and to Judas in the garden (26:50). Every one is spoken to somebody who has just broken faith, by the person they broke it with, and in the first two the man is about to lose something. Translations render it \'Friend\' (KJV, ASV, NIV) because English has no equivalent that is chilly without being rude &mdash; so the coldness lives in the Greek word choice and has to be pointed out rather than translated.", ("Matthew", 20, 13)),
+    ("aparneomai", "aparneomai", "ἀπαρνέομαι", "aparneomai",
+     "To DENY, disown, refuse to acknowledge &mdash; a strengthened form of arneomai. &#9888; In Matthew the compound appears in exactly two settings, and setting them side by side is the point: at 16:24, \'if anyone wants to come after me, let him DENY HIMSELF and take up his cross\'; and at 26:34 and 26:75, \'you will DENY me three times.\' Denying yourself and denying him are one word apart in this Gospel, and Peter &mdash; who was standing there for the first &mdash; does the second. Matthew never remarks on it. A detail the English usually loses: the two ACTUAL denials in the courtyard (26:70, 72) use the simple verb arneomai, while the prediction and the remembering use the compound.", ("Matthew", 16, 24)),
+    ("katathematizo", "katathematizō", "καταθεματίζω", "katathematizō",
+     "To CALL DOWN A CURSE &mdash; to place something under a katathema, an anathema, a thing devoted to destruction. &#9888; It is not swearing in the sense of foul language, which is how KJV\'s \'began to curse and to swear\' (Matthew 26:74) has been read for centuries; it is the formal invocation of a curse on oneself as a guarantee of truthfulness &mdash; may this happen to me if I am lying. That is why it is the THIRD step of Peter\'s denials and not merely a louder version of the first: he denies plainly (v70), then denies under oath (v72), then calls down curses (v74). Denial, perjury, self-imprecation. The word is used only here in the New Testament.", ("Matthew", 26, 74)),
     ("phronimos", "phronimos", "φρόνιμος", "phronimos",
      "SENSIBLE, prudent &mdash; practical shrewdness about how things actually work, not intelligence and not cleverness; from phrēn, the mind (and the diaphragm, taken as the seat of thought). ⚠ It is one of Matthew's quiet keywords and the pattern rewards following: the man who built on rock (7:24), the serpents the disciples are told to imitate &mdash; 'shrewd as serpents and innocent as doves' (10:16) &mdash; the faithful and phronimos slave put in charge of a household (24:45), and the five girls who brought oil (25:2). Every one of them is somebody who thought ahead about a thing that could not be fixed later. Its opposite in Matthew is mōros, the fool who built on sand (7:26) and the five who brought no oil. KJV reads 'wise' throughout, which pulls the word toward wisdom in general; ASV, NIV and NWT use 'wise' or 'prudent'. This translation keeps SENSIBLE everywhere so the family stays visible.", ("Matthew", 7, 24)),
     ("elachistos", "elachistos", "ἐλάχιστος", "elachistos",
@@ -1174,7 +1182,7 @@ DICTIONARY = [
     ("hosanna", "hōsanna", "ὡσαννά", "hōsanna",
      "SAVE, PLEASE — and it is a cry for help, not a word of praise, though it has become one. The Greek transliterates Hebrew hoshi'a-na (hoshia, 'save,' + the particle of entreaty na), and it comes straight out of Psalm 118:25; the crowd's next line at Matthew 21:9, 'blessed is the one who comes in the name of Jehovah,' is verse 26 of the same psalm. ⚠ Note what else comes out of Psalm 118 in this chapter: the rejected stone that becomes the head of the corner (21:42) is verses 22-23, three verses earlier. In one chapter the crowd sings the psalm's end and Jesus quotes its middle against the authorities. The shelf divides on whether to translate the word or keep it — KJV/ASV/NIV transliterate, NWT renders 'save, we pray' — and both are defensible, since by Matthew's day it plainly functions as an acclamation and the crowd is not asking to be rescued from anything in particular.", ("Matthew", 21, 9)),
     ("lestes", "lēstēs", "λῃστής", "lēstēs",
-     "A BANDIT — an armed robber or brigand, not a pickpocket and not a swindler. Josephus uses it of insurgents; John uses it of Barabbas (18:40); and it is the word for the two men crucified beside Jesus (Matthew 27:38), which is why 'thieves' there is misleading too. ⚠ So the temple charge at 21:13 is not primarily about overcharging. Quoting Jeremiah 7:11, Jesus says the house has become a spēlaion lēstōn — a CAVE of bandits, a hideout — and Jeremiah's own context is people who steal and murder and then shelter in the temple as if it were a refuge. KJV's 'den of thieves' and NIV's 'den of robbers' both suggest commercial dishonesty; the charge is closer to 'this has become a brigands' hideout.' Distinguish kleptēs, the ordinary thief who works by stealth (the word in 'the Lord will come like a kleptēs').", ("Matthew", 21, 13)),
+     "A BANDIT — an armed robber or brigand, not a pickpocket and not a swindler. Josephus uses it of insurgents; John uses it of Barabbas (18:40); and it is the word for the two men crucified beside Jesus (Matthew 27:38), which is why 'thieves' there is misleading too. ⚠ So the temple charge at 21:13 is not primarily about overcharging. Quoting Jeremiah 7:11, Jesus says the house has become a spēlaion lēstōn — a CAVE of bandits, a hideout — and Jeremiah's own context is people who steal and murder and then shelter in the temple as if it were a refuge. KJV's 'den of thieves' and NIV's 'den of robbers' both suggest commercial dishonesty; the charge is closer to 'this has become a brigands' hideout.' Distinguish kleptēs, the ordinary thief who works by stealth (the word in 'the Lord will come like a kleptēs'). &#9888; And Matthew turns the word back on the arrest: 'have you come out with swords and clubs to take me as against a LESTES?' (26:55) &mdash; the people he had called bandits in the temple, coming for him as for one.", ("Matthew", 21, 13)),
     ("metamelomai", "metamelomai", "μεταμέλομαι", "metamelomai",
      "TO REGRET, to have a change of feeling — and NOT the standard word for repentance, which is metanoeō, 'to change the mind' (see that entry). ⚠ Matthew uses this softer, more emotional verb at exactly two places and they are worth reading together. The son in the parable of the two sons refuses and then 'metamelētheis, went' (21:29), and the priests 'did not even metamelēthēte afterwards and believe' (21:32) — the charge is not that they reasoned badly but that nothing moved. Then it is what JUDAS does: 'seeing that he was condemned, he metamelētheis' and returned the silver (27:3), a regret that changes nothing and ends in a rope. The Greek Old Testament also uses it of God 'relenting' — the same territory as Hebrew nacham. English 'repent' covers both verbs and hides the distinction.", ("Matthew", 21, 29)),
     ("kephale-gonias", "kephalē gōnias", "κεφαλὴ γωνίας", "kephalē gōnias",
@@ -1229,6 +1237,50 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="gethsemane", name="Gethsemane", kind="place",
+         aliases=["Gethsemani", "Garden of Gethsemane"],
+         refs=[("Matthew", 26, 36)],
+         desc="An olive grove at the foot of the Mount of Olives, across the Kidron valley from the temple, "
+              "where Jesus prayed on the night of his arrest. The name is Aramaic gat shemanē &mdash; OIL PRESS: "
+              "the stone basin and weighted beam that crushed the olives grown on the slope above it. Matthew "
+              "and Mark call it a ch\u014drion, a plot or parcel of ground, and neither translates the name; "
+              "John does not use the name at all, saying only that there was a garden across the Kidron. "
+              "\u26a0 The traditional site, at the foot of the western slope beside the Church of All Nations, "
+              "has been venerated since at least the fourth century, when Eusebius mentions Christians praying "
+              "there &mdash; but the precise spot is tradition rather than evidence, and the several ancient "
+              "olive trees shown to visitors, though genuinely old, have been dated to well after the first "
+              "century. What the geography does establish is the short distance: from the upper city to the "
+              "grove is a walk of minutes, downhill, through a gate."),
+    dict(slug="caiaphas", name="Caiaphas", kind="person",
+         aliases=["Joseph Caiaphas", "the high priest"],
+         refs=[("Matthew", 26, 3), ("Matthew", 26, 57)],
+         desc="The high priest before whom Jesus was tried, in office roughly 18\u201336 CE &mdash; an unusually "
+              "long tenure in a post the Roman governors appointed and removed at will, which by itself says "
+              "something about how well he managed them. His full name was Joseph, called Caiaphas; Josephus "
+              "supplies both. He was son-in-law to Annas, the previous high priest, whose family held the office "
+              "across two generations. \u26a0 He is one of relatively few New Testament figures with direct "
+              "archaeological attestation: an ossuary found in a burial cave in the Peace Forest south of "
+              "Jerusalem in 1990 is inscribed \u2018Yehosef bar Qayafa\u2019, Joseph son of Caiaphas, and is "
+              "widely though not universally accepted as his. Matthew has him preside over a night hearing, "
+              "put Jesus under oath, and tear his garments at the answer &mdash; the one gesture Leviticus 21:10 "
+              "forbids his office, though later Jewish tradition distinguished a judicial tearing on hearing "
+              "blasphemy from the mourning-tear the Law prohibits."),
+    dict(slug="sanhedrin", name="Sanhedrin", kind="people",
+         aliases=["council", "synedrion"],
+         refs=[("Matthew", 26, 59)],
+         desc="The council of Jerusalem &mdash; Greek synedrion, literally a \u2018sitting together\u2019, the "
+              "same word English borrowed for a synod. Under Roman rule it was the chief Jewish judicial and "
+              "administrative body, chaired by the high priest and drawn from the chief priests, the elders "
+              "(heads of leading families) and the scribes; the Gospels name all three groups. \u26a0 How it "
+              "actually operated at the time of Jesus is genuinely uncertain, and this matters for reading the "
+              "trial narratives. The detailed procedural rules preserved in the Mishnah tractate Sanhedrin "
+              "&mdash; no capital trial at night, none on the eve of a festival, a verdict of acquittal the same "
+              "day but conviction only on the next &mdash; were written down around 200 CE, well after the "
+              "council itself had ceased to exist, and describe an idealized court. Whether they held in the "
+              "30s is unknown. So the long-argued question of whether the hearing Matthew describes was "
+              "\u2018illegal\u2019 is being asked against a rulebook that may be later than the event, and "
+              "the library records that rather than joining the argument."),
+
     # The first entry of kind "craft" — see build_encyclopedia(), which renders a
     # third "Crafts & Trades" section for these. Michael asked for it while we were
     # translating Jeremiah 18: the potter metaphor only lands once you know how the
@@ -4274,6 +4326,26 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Matthew', 26, 1), ('Matthew', 7, 28), "the fifth and last of Matthew's discourse seams, 'when Jesus had finished' — and the only one of the five that reads 'ALL these words', closing not a discourse but the teaching"),
+    (('Matthew', 26, 11), ('Deuteronomy', 15, 11), "'the poor you always have with you' quotes the premise of a COMMAND to give: 'therefore I command you: you shall surely open your hand to your poor brother'"),
+    (('Matthew', 26, 15), ('Zechariah', 11, 12), "thirty pieces of silver, and both texts use a WEIGHING verb — 'they weighed out my hire, thirty of silver'"),
+    (('Matthew', 26, 15), ('Exodus', 21, 32), "thirty shekels of silver is the Law's compensation for a slave killed by an ox — the statutory price of a dead slave"),
+    (('Matthew', 26, 25), ('Matthew', 23, 8), "Judas is the only person in Matthew who addresses Jesus as RABBI (26:25, 49) — three chapters after Jesus forbids the title"),
+    (('Matthew', 26, 28), ('Isaiah', 53, 12), "'poured out for MANY' — the servant who 'bore the sin of many', the same word the ransom saying used at 20:28"),
+    (('Matthew', 26, 31), ('Zechariah', 13, 7), "'I will strike the shepherd' — where the Hebrew has an IMPERATIVE addressed to a sword, 'strike the shepherd', and the Gospel has God in the first person"),
+    (('Matthew', 26, 34), ('Matthew', 16, 24), "the same compound verb aparneomai: 'let him DENY HIMSELF' and 'you will DENY me three times'"),
+    (('Matthew', 26, 39), ('Matthew', 20, 22), "the cup, third of three — 'are you able to drink the cup I am about to drink?', then the cup handed over at 26:27, then 'let this cup pass'"),
+    (('Matthew', 26, 41), ('Matthew', 6, 13), "'pray that you do not enter into TESTING' is the Lord's Prayer petition, peirasmos, spoken in the hour it was for"),
+    (('Matthew', 26, 41), ('Matthew', 24, 42), "grēgoreite, 'stay awake' — commanded at 24:42 and 25:13 and failed three times here by the three men who heard it"),
+    (('Matthew', 26, 50), ('Matthew', 20, 13), "hetaire, 'Friend' — the third and last of Matthew's three uses, all to somebody who has just broken faith"),
+    (('Matthew', 26, 52), ('Matthew', 10, 34), "'all who take up a sword will perish by a sword' against 'I did not come to bring peace but a sword' — the tension chapter 10 stated and refused to resolve"),
+    (('Matthew', 26, 55), ('Matthew', 21, 13), "lēstēs — he called the temple crowd a den of BANDITS, and they come for him with swords as for a bandit"),
+    (('Matthew', 26, 64), ('Matthew', 25, 31), "the throne of glory, now described from the dock — the Son of Man in his glory, next seen under interrogation"),
+    (('Matthew', 26, 64), ('Daniel', 7, 13), "'coming on the clouds of heaven' welded to Psalm 110:1's 'seated at the right hand'"),
+    (('Matthew', 26, 65), ('Leviticus', 21, 10), "the high priest 'shall not rend his clothes' — the one gesture his office forbids, though later tradition carved out a judicial tearing on hearing blasphemy"),
+    (('Matthew', 26, 67), ('Isaiah', 50, 6), "spat on, struck with fists, slapped — 'I gave my back to the smiters... I hid not my face from shame and spitting'"),
+    (('Matthew', 26, 75), ('Matthew', 10, 33), "'whoever denies me before men, I will deny before my Father' — Peter enacts the second half, three times, in the courtyard outside the trial"),
+
     (('Jeremiah', 18, 3), ('Exodus', 1, 16), "the same rare DUAL word, ovnayim: the potter's two stones here, the two stones of the birth-stool there — both places where a life is given its shape"),
     (('Jeremiah', 18, 4), ('Genesis', 6, 11), "the vessel is RUINED with the flood's own verb, nishchat — the word for an earth that ruined itself; here what is ruined gets thrown again"),
     (('Jeremiah', 18, 7), ('Jeremiah', 1, 10), "five of the six verbs of Jeremiah's original commission stand again here and at v9 — uproot, tear down, destroy, build, plant — now as God's own operating rule"),
@@ -9575,6 +9647,39 @@ DICTIONARY_ES = {
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
     # ---- Mateo 25 ----
+    "diatheke": ("pacto; testamento",
+        "UN PACTO — y la palabra que dio nombre a las dos mitades de esta Biblia, por un camino que vale conocer. "
+        "En griego corriente una diathēkē es un TESTAMENTO, el documento con que un hombre dispone de sus bienes; ese es el "
+        "sentido que recogió el latín testamentum, y por el latín el castellano TESTAMENTO, y por él los títulos Antiguo y "
+        "Nuevo Testamento. Pero en el Antiguo Testamento griego diathēkē traduce habitualmente el hebreo berit, vínculo "
+        "jurado entre partes, y ese es sin duda el sentido en Mateo 26:28 —sangre, una cena de Pascua, y un eco de "
+        "Éxodo 24:8—. ⚠ Aquí el estante español está en mejor posición que el inglés: RV60, NVI y TNM leen todas «pacto», "
+        "mientras el inglés arrastra «testament» desde la Vulgata. ⚠ Una segunda disputa vive en el mismo versículo: el "
+        "texto más antiguo lee «mi sangre DEL PACTO» y la tradición bizantina añade kainēs, «del pacto NUEVO». Lucas 22:20 "
+        "y 1 Corintios 11:25 dicen «pacto nuevo» sin discusión alguna, así que el copista tenía dos paralelos familiares "
+        "tirando del adjetivo, y el versículo siguiente se lo entrega."),
+    "hetairos": ("compañero; «amigo» frío",
+        "COMPAÑERO, camarada — y en este Evangelio ni una sola vez una palabra cálida. No es philos, «amigo» en sentido "
+        "afectuoso; es el tratamiento frío y algo formal que usa un superior con alguien a quien mantiene a distancia. "
+        "⚠ Aparece TRES veces en todo el Nuevo Testamento y las tres están en Mateo: al jornalero que se queja de su paga "
+        "(20:13), al hombre sin traje de bodas (22:12), y a Judas en el huerto (26:50). Cada una va dirigida a alguien que "
+        "acaba de romper la palabra dada, por la persona con quien la rompió. Las versiones ponen «Amigo» porque el "
+        "castellano no tiene un equivalente que sea gélido sin ser grosero —así que la frialdad vive en la elección griega "
+        "y hay que señalarla en la nota, no traducirla."),
+    "aparneomai": ("negar, renegar",
+        "NEGAR, renegar, rehusar reconocer — forma reforzada de arneomai. ⚠ En Mateo el compuesto aparece en exactamente "
+        "dos escenarios, y ponerlos uno al lado del otro es lo importante: en 16:24, «si alguno quiere venir en pos de mí, "
+        "NIÉGUESE A SÍ MISMO y tome su cruz»; y en 26:34 y 26:75, «me NEGARÁS tres veces». Negarse a sí mismo y negarlo a "
+        "él están a una palabra de distancia en este Evangelio, y Pedro —que estaba presente para lo primero— hace lo "
+        "segundo. Mateo nunca lo comenta. Un detalle que suele perderse: las dos negaciones EFECTIVAS del patio (26:70, 72) "
+        "usan el verbo simple arneomai, mientras la predicción y el recuerdo usan el compuesto."),
+    "katathematizo": ("maldecir, invocar maldición",
+        "INVOCAR UNA MALDICIÓN — poner algo bajo un katathema, un anatema, cosa consagrada a la destrucción. ⚠ No es "
+        "«maldecir» en el sentido de decir palabrotas, que es como se ha leído durante siglos el «comenzó a maldecir y a "
+        "jurar» de Mateo 26:74; es la invocación formal de una maldición sobre uno mismo como garantía de que se dice la "
+        "verdad —que esto me ocurra si miento—. Por eso es el TERCER paso de las negaciones de Pedro y no una versión más "
+        "alta de la primera: niega llanamente (v70), luego niega bajo juramento (v72), luego invoca maldiciones (v74). "
+        "Negación, perjurio, imprecación contra sí mismo. La palabra se usa solo aquí en el Nuevo Testamento."),
     "parthenos": ("virgen; joven soltera",
         "UNA VIRGEN — y también, en el uso corriente, simplemente una JOVEN SOLTERA; qué sentido está "
         "vivo depende por completo del contexto. ⚠ Aparece en solo 15 versículos de todo el Nuevo "
@@ -10363,6 +10468,41 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat26": [dict(
+        file="rembrandt-peter-denial.jpg",
+        title="St Peter’s Denial",   title_es="La negaci\u00f3n de san Pedro",
+        artist="Rembrandt",
+        year="1660",
+        location="Rijksmuseum, Amsterdam",  location_es="Rijksmuseum, \u00c1msterdam",
+        alt="A night interior lit by a single candle. A servant woman holds the candle up toward Peter, "
+            "who raises his left hand in a gesture of denial; two soldiers in armour watch from the left, "
+            "one seated at a table. In the shadows at the right, Christ, bound, turns his head to look "
+            "back over his shoulder as he is led away.",
+        note="&#9888; Rembrandt does to this scene what Matthew does, and then one thing Matthew does not. "
+             "The Gospel runs two hearings at once in one house &mdash; Jesus under oath inside, Peter under "
+             "oath in the courtyard &mdash; and uses the same word, <em>aul\u0113</em>, for where each of them "
+             "is standing (vv58, 69). Rembrandt collapses the two into a single room: the denial in the lit "
+             "foreground, and in the dark at the right the bound figure being led away, turning his head. "
+             "&#9888; The turn is the painter&rsquo;s addition, not Matthew&rsquo;s &mdash; it is Luke who "
+             "writes that the Lord looked at Peter, and this library notes the borrowing rather than letting "
+             "it pass as the text. What is exactly Matthew&rsquo;s is the light: the accusation and the only "
+             "lamp in the picture are in the same hand. She is holding the candle up to read his face, and "
+             "three verses later it is not her eyes but his accent that convicts him.",
+        note_es="&#9888; Rembrandt hace con esta escena lo que hace Mateo, y adem\u00e1s una cosa que Mateo no "
+             "hace. El Evangelio corre dos audiencias a la vez en una misma casa &mdash; Jes\u00fas bajo "
+             "juramento dentro, Pedro bajo juramento en el patio &mdash; y usa la misma palabra, "
+             "<em>aul\u0113</em>, para donde est\u00e1 cada uno (vv58, 69). Rembrandt fusiona las dos en un "
+             "solo cuarto: la negaci\u00f3n en el primer plano iluminado y, en la oscuridad de la derecha, la "
+             "figura atada que se llevan, volviendo la cabeza. &#9888; Ese volver la cabeza lo a\u00f1ade el "
+             "pintor, no Mateo &mdash; es Lucas quien escribe que el Se\u00f1or mir\u00f3 a Pedro, y esta "
+             "biblioteca anota el pr\u00e9stamo en vez de dejarlo pasar como si fuera el texto. Lo que s\u00ed "
+             "es exactamente de Mateo es la luz: la acusaci\u00f3n y la \u00fanica l\u00e1mpara del cuadro "
+             "est\u00e1n en la misma mano. Ella levanta la vela para leerle la cara, y tres vers\u00edculos "
+             "despu\u00e9s no son sus ojos sino el acento de \u00e9l lo que lo condena.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_012.jpg",
+    )],
+
     "mat25": [dict(
         file="blake-wise-foolish-virgins.jpg",
         title="The Parable of the Wise and Foolish Virgins",
