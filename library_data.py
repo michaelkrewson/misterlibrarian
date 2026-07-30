@@ -90,7 +90,7 @@ DICTIONARY = [
     ("tekton", "tektōn", "τέκτων", "tektōn", "A CRAFTSMAN, builder — broader than English 'carpenter' suggests, covering work in wood, stone, or both; the ordinary trade of a small-town builder rather than a narrow specialist. 'Is not this the tektōn's son?' (Matthew 13:55) is the Nazarenes' whole objection compressed into one word — they know exactly what family, what trade, what house he comes from, and that familiarity is presented as the actual obstacle to hearing him.", ("Matthew", 13, 55)),
     ("praus", "praus", "πραΰς", "praus", "MEEK, gentle — the identical word this translation has already met once: 'Happy the MEEK, for they shall inherit the earth' (Matthew 5:5). ⚠ There it named a beatitude to be pursued; here Jesus applies it to himself — 'I am meek and humble in heart' (11:29) — the only two places in this Gospel the word appears, first as a virtue promised a reward and then as a virtue claimed by the one making the promise. Not weakness: Greek writers used the word of a tamed animal or a controlled temper, never a spineless one.", ("Matthew", 11, 29)),
     ("tetrarches", "tetraarchēs", "τετράρχης", "tetraarchēs", "A TETRARCH — literally 'ruler of a fourth part', the Hellenistic title for one of several client-princes sharing a divided territory, one notch below a king. ⚠ When Herod the Great died his kingdom was split three ways among his sons, and Rome never upgraded any of them to full kingship: Antipas received Galilee and Perea and kept the lesser title 'tetrarch' his whole reign (Matthew 14:1), while Archelaus's larger share was demoted even further, to ethnarch, then removed outright within a decade. Matthew is precise about the title here — and then, three verses later (14:9), calls the very same man 'the king,' the way people actually addressed him rather than the label Rome gave him. This translation prints both, without smoothing the inconsistency away.", ("Matthew", 14, 1)),
-    ("distazo", "distazō", "διστάζω", "distazō", "TO DOUBT, to waver between two — from dis, 'twice' or 'two ways', so the verb itself pictures a mind split between directions rather than simple unbelief. ⚠ It occurs only twice in the entire New Testament, and both times in this Gospel, both times of someone who has already seen real evidence and hesitates anyway: Peter, walking on the water until he 'sees the wind' (Matthew 14:31), and the Eleven on the mountain at the very end of the book, worshiping the risen Christ and yet — 'some doubted' (28:17, not yet on these pages). Neither doubter is condemned or expelled; both remain, in the boat and on the mountain, with everyone else.", ("Matthew", 14, 31)),
+    ("distazo", "distazō", "διστάζω", "distazō", "TO DOUBT, to waver between two — from dis, 'twice' or 'two ways', so the verb itself pictures a mind split between directions rather than simple unbelief. ⚠ It occurs only twice in the entire New Testament, and both times in this Gospel, both times of someone who has already seen real evidence and hesitates anyway: Peter, walking on the water until he 'sees the wind' (Matthew 14:31), and the Eleven on the mountain at the very end of the book, worshiping the risen Christ and yet — 'some doubted' (28:17). &#9888; And the second time there is no rebuke at all &mdash; the sentence moves straight from the doubting to the giving of all authority. Neither doubter is condemned or expelled; both remain, in the boat and on the mountain, with everyone else.", ("Matthew", 14, 31)),
     ("kophinos", "kophinos", "κόφινος", "kophinos", "A BASKET — specifically the small, sturdy wicker HAND-BASKET a traveler carried, well enough known as Jewish gear that Roman satirists mocked Jews in the city for carrying one everywhere (a kophinos and a bundle of hay, so as to keep kosher provisions and a portable bed together without depending on Gentile food or lodging). ⚠ Matthew counts twelve of them left over from the five loaves and two fish (14:20) — one for each of the Twelve, feeding a crowd in a Jewish region. When a second feeding happens in Gentile territory (15:32-38, not yet on these pages), Matthew switches to a different word, spyris, a larger provisions hamper with no particular ethnic association (the same word used of the basket Paul is lowered from a wall in, Acts 9:25) — and counts seven, not twelve. The vocabulary itself seems to be tracking who is being fed.", ("Matthew", 14, 20)),
     ("chrestos", "chrēstos", "χρηστός", "chrēstos", "KIND, easy, useful — of a yoke that fits well rather than one that galls; a craftsman's word for well-made, serviceable, GOOD to use. ⚠ Its close relative is a genuine ancient confusion rather than a modern pun: christos ('anointed') and chrēstos were near-homophones in first-century pronunciation, common enough that 'Chrestus' turns up as a variant spelling of 'Christus' in later Roman writing (Suetonius's Life of Claudius). Matthew does not exploit the pun; it is simply there, in the sound of the last word Jesus gives this chapter for his own yoke.", ("Matthew", 11, 30)),
     ("lathra", "lathra", "λάθρᾳ", "lathra", "SECRETLY, quietly, without publicity — an adverb that takes its moral colour entirely from who is using it. It occurs twice in Matthew's opening chapters and nowhere else in his Gospel: Joseph, 'being righteous and unwilling to expose her to disgrace,' resolves to divorce Mary <em>lathra</em> (1:19) — quietly, to shield a woman from a public penalty; and Herod calls the magi <em>lathra</em> (2:7) — secretly, to fix the location of a child he intends to kill. ⚠ One word, two chapters, mercy and murder, and Matthew never comments on the pairing.", ("Matthew", 2, 7)),
@@ -1137,6 +1137,10 @@ DICTIONARY = [
     # ---- Matthew 25 (Greek) ----
     ("parthenos", "parthenos", "παρθένος", "parthenos",
      "A VIRGIN &mdash; and also, in ordinary usage, simply an UNMARRIED YOUNG WOMAN; which sense is live depends entirely on context. ⚠ It occurs in only 15 verses in the whole New Testament, and just two of them are about Mary: Matthew 1:23, quoting Isaiah 7:14, and Luke 1:27, which uses it twice. Elsewhere its core is plainly marital STATUS rather than chastity &mdash; Philip's four unmarried daughters who prophesied (Acts 21:9), the marriageable daughters of 1 Corinthians 7, Anna who lived with a husband seven years 'from her parthenia', her girlhood (Luke 2:36) &mdash; and, decisively, Revelation 14:4, where parthenoi is used of MEN. ⚠ Hence the two Matthews. At 1:23 the word carries the weight of the Isaiah quotation, where the Hebrew is almah, a young woman of marriageable age, without the technical focus on virginity that betulah has; the Greek Old Testament had already chosen parthenos, and that choice is the hinge of a very old argument. At 25:1 it is a WEDDING: ten parthenoi with lamps are the bridal party, and nothing in the parable turns on chastity &mdash; the difference between the two fives is oil. So 'virgins' there (KJV/ASV/NWT, and the whole Spanish shelf) imports a sexual reference the story never uses, which is why this translation reads 'girls' at 25:1 and keeps 'virgin' at 1:23. ⚠ And worth saying for its own sake: the virgin birth does not rest on this noun. Luke puts it in Mary's own mouth &mdash; 'since I do not know a man' (1:34) &mdash; and Matthew states it in his narration (1:18, 25). It would stand unchanged if parthenos were rendered 'girl' everywhere it appears.", ("Matthew", 1, 23)),
+    ("matheteuo", "mathēteuō", "μαθητεύω", "mathēteuō",
+     "To MAKE A DISCIPLE of somebody &mdash; a transitive verb built on mathētēs, a learner or apprentice, and not the same thing as 'teach' (didaskō, which Matthew 28:20 uses separately, in the next breath). &#9888; It occurs three times in Matthew and nowhere else in the Gospels, and the pattern is the point: twice in the PASSIVE, of a scribe 'who has been made a disciple of the kingdom' (13:52) and of Joseph of Arimathea, who 'had been made a disciple' (27:57) &mdash; and then once in the ACTIVE, as the imperative carrying the last command in the book, mathēteusate panta ta ethnē (28:19). Two men are made disciples, and then the made are told to make. &#9888; Its object at 28:19 is the NATIONS, not individuals, which is a grammatical fact worth noticing before anybody uses it as an argument.", ("Matthew", 13, 52)),
+    ("ethnos", "ethnos", "ἔθνος", "ethnos",
+     "A NATION, a people &mdash; and in the plural, in Jewish Greek, THE NATIONS: everybody who is not Israel, the Gentiles. The Greek Old Testament uses it for Hebrew goyim, and English 'ethnic' descends from it. &#9888; The word is the hinge of the sharpest unresolved tension in Matthew. At 10:5-6 the Twelve are sent out under a hard restriction stated twice &mdash; go nowhere among the ethnē, only to the lost sheep of the house of Israel &mdash; and at 15:24 he says the same of himself. The book then closes with mathēteusate PANTA TA ETHNĒ, make disciples of ALL the nations (28:19). Same word, opposite instruction, eighteen chapters apart, and Matthew offers no reconciliation. The library reports both and observes that this Gospel is willing to end on a reversal it never explains.", ("Matthew", 10, 5)),
     ("katapetasma", "katapetasma", "καταπέτασμα", "katapetasma",
      "THE CURTAIN of the sanctuary &mdash; from katapetannymi, to spread out downward; a hanging, not a wall. &#9888; Matthew 27:51 says it was torn in two &lsquo;from top to bottom&rsquo;, and the direction is the whole point: it is the one detail that makes the tearing a statement about who did it rather than a consequence of the earthquake two clauses later. The text does NOT say which curtain. The sanctuary had an outer hanging at the entrance, visible from the court, and an inner one before the holy of holies, seen once a year by one man; a tearing of the first is a public sign and a tearing of the second is a statement about access, and commentators have argued for each since antiquity on grounds the text does not supply. Hebrews 10:20 takes the inner one and makes it the flesh of Christ. The library reports that Matthew leaves it open.", ("Matthew", 27, 51)),
     ("korbanas", "korbanas", "κορβανᾶς", "korbanas",
@@ -4378,6 +4382,19 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Matthew', 28, 2), ('Matthew', 8, 24), "seismos — the family Matthew runs from a lake (8:24) to the city (21:10) to the earth at the death (27:51) to the tomb and the guards (28:2, 28:4): seven uses against one each in Mark, Luke and Acts"),
+    (('Matthew', 28, 6), ('Matthew', 16, 21), "'he was raised' — passive, with the agent unstated, exactly as the three passion predictions put it"),
+    (('Matthew', 28, 9), ('Matthew', 26, 49), "chairete — the greeting Judas used in the garden and the soldiers used at the cross; its third use is the only honest one"),
+    (('Matthew', 28, 9), ('Matthew', 2, 11), "proskyneo — the magi knelt at the beginning, the women kneel at the end, and the eleven eight verses later"),
+    (('Matthew', 28, 12), ('Matthew', 26, 15), "silver changes hands twice in this Gospel: thirty pieces to buy a man, and 'a sufficient sum' to buy an account of what happened"),
+    (('Matthew', 28, 17), ('Matthew', 14, 31), "distazo — the whole New Testament uses this verb twice: Peter sinking, and the eleven on the mountain. No rebuke the second time"),
+    (('Matthew', 28, 18), ('Matthew', 7, 29), "exousia — the authority the crowds noticed in the Sermon, claimed in full in the book's last speech"),
+    (('Matthew', 28, 18), ('Matthew', 11, 27), "'all things have been handed over to me' was this Gospel's first claim of universal authority; this is its last"),
+    (('Matthew', 28, 19), ('Matthew', 10, 5), "panta ta ethne — the hard border of 10:5-6 ('go nowhere among the nations') thrown open in the last sentence, with no reconciliation offered"),
+    (('Matthew', 28, 19), ('Matthew', 27, 57), "matheteuo — passive of Joseph of Arimathea, and of the scribe at 13:52; active here, as a command"),
+    (('Matthew', 28, 20), ('Matthew', 1, 23), "the inclusio closes: the book opens on Emmanuel, 'God with us', and ends on 'I am with you all the days'"),
+    (('Matthew', 28, 20), ('Matthew', 24, 3), "synteleia tou aionos, 'the completion of the age' — Matthew's own phrase, and the boundary the last promise is set against"),
+
     (('Matthew', 27, 3), ('Matthew', 21, 29), "metamelomai — remorse, a change of FEELING, not the metanoeo of 3:2 that turns; chapter 21's note said Judas would supply the distinction"),
     (('Matthew', 27, 4), ('Matthew', 27, 24), "'you will see to it' — the priests brush Judas off, and twenty verses later Pilate uses the same words on the priests"),
     (('Matthew', 27, 6), ('Matthew', 15, 5), "korbanas and korban — the same root: money made holy in order to make it unavailable"),
@@ -9720,6 +9737,24 @@ DICTIONARY_ES = {
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
     # ---- Mateo 25 ----
+    "matheteuo": ("hacer discípulo",
+        "HACER DISCÍPULO de alguien —verbo transitivo construido sobre mathētēs, aprendiz, y no lo mismo que "
+        "«enseñar» (didaskō, que Mateo 28:20 usa aparte, en la frase siguiente)—. ⚠ Aparece tres veces en Mateo y "
+        "en ningún otro Evangelio, y el patrón es lo importante: dos veces en PASIVA, de un escriba «hecho "
+        "discípulo del reino» (13:52) y de José de Arimatea, que «había sido hecho discípulo» (27:57) —y luego una "
+        "vez en ACTIVA, como el imperativo que lleva el último mandato del libro, mathēteusate panta ta ethnē "
+        "(28:19). A dos hombres se los hace discípulos, y luego se manda a los hechos que hagan. ⚠ Su objeto en "
+        "28:19 son las NACIONES, no individuos, hecho gramatical que vale notar antes de que alguien lo use como "
+        "argumento."),
+    "ethnos": ("nación; las naciones, los gentiles",
+        "UNA NACIÓN, un pueblo —y en plural, en griego judío, LAS NACIONES: todos los que no son Israel, los "
+        "gentiles. El Antiguo Testamento griego lo usa para el hebreo goyim, y «étnico» desciende de ahí. ⚠ La "
+        "palabra es el gozne de la tensión no resuelta más aguda de Mateo. En 10:5-6 los Doce son enviados con una "
+        "restricción dura dicha dos veces —no vayáis a los ethnē, solo a las ovejas perdidas de la casa de "
+        "Israel— y en 15:24 él dice lo mismo de sí. Y el libro cierra con mathēteusate PANTA TA ETHNĒ, haced "
+        "discípulos de TODAS las naciones (28:19). La misma palabra, la instrucción contraria, dieciocho capítulos "
+        "después, y Mateo no ofrece reconciliación. La biblioteca informa de las dos y observa que este Evangelio "
+        "está dispuesto a terminar en una inversión que nunca explica."),
     "katapetasma": ("cortina del santuario",
         "LA CORTINA del santuario —de katapetannymi, extender hacia abajo; un paño colgante, no un muro—. ⚠ Mateo "
         "27:51 dice que se rasgó en dos «de arriba abajo», y la dirección es todo el asunto: es el único detalle que "
@@ -10576,6 +10611,48 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat28": [dict(
+        file="angelico-women-at-the-tomb.jpg",
+        title="The Resurrection of Christ and the Women at the Tomb",
+        title_es="La resurrecci\u00f3n de Cristo y las mujeres en el sepulcro",
+        artist="Fra Angelico",
+        year="c. 1440\u20131442",
+        location="Convent of San Marco, Florence (cell 8)",
+        location_es="Convento de San Marcos, Florencia (celda 8)",
+        alt="An arched fresco. A winged angel in white sits on the edge of an open stone tomb, one hand "
+            "raised, the other gesturing into the empty box; the lid is off and the inside is visible and "
+            "bare. Four haloed women stand at the right, one of them leaning over the tomb and shielding "
+            "her eyes. Above, the risen Christ floats in an oval of light, in white, holding a "
+            "cross-staff with a banner. At the lower left a small haloed friar in a black-and-white "
+            "Dominican habit kneels in prayer, facing away from the tomb.",
+        note="&#9888; The angel is SITTING, and that is Matthew&rsquo;s detail alone. He rolls the stone "
+             "away and then sits on it (v2); no other Gospel has him sit down, and Fra Angelico paints "
+             "the posture rather than the action. The lid is off and the box is visibly empty, which is "
+             "the errand of v6 &mdash; the stone is not moved to let him out, since he is already gone, "
+             "but so that the women can look in. &#9888; Two things here are not in Matthew, and the "
+             "second is deliberate. The risen Christ hovering above the tomb is not this chapter&rsquo;s "
+             "scene &mdash; Matthew has him meet the women on the road (v9), not appear over the "
+             "grave. And the kneeling friar at the lower left, generally identified as St Dominic, is "
+             "thirteen centuries early: these frescoes were painted on the walls of the friars&rsquo; own "
+             "cells at San Marco as aids to prayer, and the Dominican in the corner is the viewer, put "
+             "into the picture on purpose. He is the only figure not looking at the tomb.",
+        note_es="&#9888; El \u00e1ngel est\u00e1 SENTADO, y ese detalle es solo de Mateo. Hace rodar la "
+             "piedra y luego se sienta sobre ella (v2); ning\u00fan otro Evangelio lo tiene sentado, y "
+             "Fra Angelico pinta la postura y no la acci\u00f3n. La tapa est\u00e1 quitada y la caja se "
+             "ve vac\u00eda, que es el encargo del v6: la piedra no se quita para dejarlo salir, puesto "
+             "que ya no est\u00e1, sino para que las mujeres puedan mirar dentro. &#9888; Dos cosas de "
+             "aqu\u00ed no est\u00e1n en Mateo, y la segunda es deliberada. El Cristo resucitado "
+             "flotando sobre el sepulcro no es la escena de este cap\u00edtulo &mdash; Mateo lo hace "
+             "encontrarse con las mujeres en el camino (v9), no aparecer sobre la tumba. Y el fraile "
+             "arrodillado abajo a la izquierda, identificado en general como santo Domingo, llega trece "
+             "siglos temprano: estos frescos se pintaron en las paredes de las celdas de los propios "
+             "frailes de San Marcos como ayuda para la oraci\u00f3n, y el dominico del rinc\u00f3n es el "
+             "espectador, metido en el cuadro a prop\u00f3sito. Es la \u00fanica figura que no mira al "
+             "sepulcro.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_Resurrection_of_Christ_and_Women_at_the_Tomb_(Cell_8)_-_WGA00542.jpg",
+    )],
+
     "mat27": [dict(
         file="mantegna-crucifixion.jpg",
         title="Crucifixion",   title_es="Crucifixi\u00f3n",
