@@ -1137,6 +1137,14 @@ DICTIONARY = [
     # ---- Matthew 25 (Greek) ----
     ("parthenos", "parthenos", "παρθένος", "parthenos",
      "A VIRGIN &mdash; and also, in ordinary usage, simply an UNMARRIED YOUNG WOMAN; which sense is live depends entirely on context. ⚠ It occurs in only 15 verses in the whole New Testament, and just two of them are about Mary: Matthew 1:23, quoting Isaiah 7:14, and Luke 1:27, which uses it twice. Elsewhere its core is plainly marital STATUS rather than chastity &mdash; Philip's four unmarried daughters who prophesied (Acts 21:9), the marriageable daughters of 1 Corinthians 7, Anna who lived with a husband seven years 'from her parthenia', her girlhood (Luke 2:36) &mdash; and, decisively, Revelation 14:4, where parthenoi is used of MEN. ⚠ Hence the two Matthews. At 1:23 the word carries the weight of the Isaiah quotation, where the Hebrew is almah, a young woman of marriageable age, without the technical focus on virginity that betulah has; the Greek Old Testament had already chosen parthenos, and that choice is the hinge of a very old argument. At 25:1 it is a WEDDING: ten parthenoi with lamps are the bridal party, and nothing in the parable turns on chastity &mdash; the difference between the two fives is oil. So 'virgins' there (KJV/ASV/NWT, and the whole Spanish shelf) imports a sexual reference the story never uses, which is why this translation reads 'girls' at 25:1 and keeps 'virgin' at 1:23. ⚠ And worth saying for its own sake: the virgin birth does not rest on this noun. Luke puts it in Mary's own mouth &mdash; 'since I do not know a man' (1:34) &mdash; and Matthew states it in his narration (1:18, 25). It would stand unchanged if parthenos were rendered 'girl' everywhere it appears.", ("Matthew", 1, 23)),
+    ("katapetasma", "katapetasma", "καταπέτασμα", "katapetasma",
+     "THE CURTAIN of the sanctuary &mdash; from katapetannymi, to spread out downward; a hanging, not a wall. &#9888; Matthew 27:51 says it was torn in two &lsquo;from top to bottom&rsquo;, and the direction is the whole point: it is the one detail that makes the tearing a statement about who did it rather than a consequence of the earthquake two clauses later. The text does NOT say which curtain. The sanctuary had an outer hanging at the entrance, visible from the court, and an inner one before the holy of holies, seen once a year by one man; a tearing of the first is a public sign and a tearing of the second is a statement about access, and commentators have argued for each since antiquity on grounds the text does not supply. Hebrews 10:20 takes the inner one and makes it the flesh of Christ. The library reports that Matthew leaves it open.", ("Matthew", 27, 51)),
+    ("korbanas", "korbanas", "κορβανᾶς", "korbanas",
+     "THE TEMPLE TREASURY &mdash; a Greek form built on Hebrew qorban, an offering, a thing brought near and dedicated. &#9888; It is the word in the priests\' one scruple at Matthew 27:6: blood-money cannot go into the korbanas, so they buy a field with it instead. The same root produced the dodge Jesus attacked at 15:5, where a man declares his property korban, dedicated, and is thereby released from the duty of supporting his parents &mdash; money made holy in order to make it unavailable. &#9888; And there is a second, stranger connection: the Hebrew of Zechariah 11:13, the passage Matthew is quoting four verses later, reads ha-yotser, THE POTTER, where a great many English Bibles print &lsquo;the treasury&rsquo; (from ha-otsar, following the Syriac). Matthew\'s narrative touches both readings at once &mdash; refused by the treasury, spent on the potter\'s field &mdash; which is an argument that he knew the verse better than a loose citation would suggest.", ("Matthew", 27, 6)),
+    ("planos", "planos", "πλάνος", "planos",
+     "A DECEIVER, an impostor &mdash; from planaō, to lead astray, to cause to wander; the root behind English \'planet\', a wandering star. &#9888; It is the chief priests\' word for Jesus at Matthew 27:63, &lsquo;that deceiver&rsquo;, and its force comes from where the reader last met the root: four times in the discourse of chapter 24, of the false messiahs and false prophets who &lsquo;will lead many astray&rsquo; (24:4, 5, 11, 24). They use the vocabulary of his own warning, against him, three days after he gave it. Matthew does not point it out. In 2 Corinthians 6:8 Paul takes the same word up as one of the paired opposites of his ministry &mdash; &lsquo;as deceivers, and yet true.&rsquo;", ("Matthew", 27, 63)),
+    ("chole", "cholē", "χολή", "cholē",
+     "GALL, bile &mdash; and by extension anything bitter or poisonous. &#9888; At Matthew 27:34 he is offered wine mixed with cholē and will not drink it, and the phrase is built out of Psalm 69:21, where the Greek Old Testament uses this very word for the rosh, the bitter or poisonous thing put in the sufferer\'s food. The psalm has TWO items in one verse &mdash; something bitter to eat and vinegar for the thirst &mdash; and Matthew separates them: gall at the start (v34) and oxos, sour wine, at the end (v48). &#9888; The Byzantine tradition reads oxos in both places, collapsing the two into one drink and producing the KJV\'s &lsquo;vinegar mingled with gall&rsquo;; the older text\'s two-drink shape matches the psalm better and is followed here. The other New Testament use is Acts 8:23, &lsquo;the gall of bitterness&rsquo;.", ("Matthew", 27, 34)),
     ("diatheke", "diathēkē", "διαθήκη", "diathēkē",
      "A COVENANT &mdash; and the word that named both halves of this Bible, by a route worth knowing. In ordinary Greek a diathēkē is a WILL, the document by which a man disposes of his estate; that is the sense Latin caught with testamentum, and through Latin English got TESTAMENT, and through that the titles Old Testament and New Testament. But in the Greek Old Testament diathēkē is the standing rendering of Hebrew berit, a sworn bond between parties, and that is unmistakably the sense at Matthew 26:28 &mdash; blood, a Passover meal, and an echo of Exodus 24:8. &#9888; So the two Testaments on every shelf in the world are named from the reading the shelf has since abandoned: KJV and Douay read \'testament\' at 26:28 (Douay because it translates the Vulgate, which is the Latin route itself), while ASV, NIV and NWT all read \'covenant.\' &#9888; A second dispute sits in the same verse: the earliest text reads \'my blood OF THE COVENANT\' and the Byzantine tradition adds kainēs, \'of the NEW covenant\' &mdash; which is where the KJV\'s famous phrasing comes from. Luke 22:20 and 1 Corinthians 11:25 read \'new covenant\' with no dispute at all, so a copyist had two familiar parallels pulling the adjective in, and the next verse hands it to him outright.", ("Matthew", 26, 28)),
     ("hetairos", "hetairos", "ἑταῖρος", "hetairos",
@@ -1182,7 +1190,7 @@ DICTIONARY = [
     ("hosanna", "hōsanna", "ὡσαννά", "hōsanna",
      "SAVE, PLEASE — and it is a cry for help, not a word of praise, though it has become one. The Greek transliterates Hebrew hoshi'a-na (hoshia, 'save,' + the particle of entreaty na), and it comes straight out of Psalm 118:25; the crowd's next line at Matthew 21:9, 'blessed is the one who comes in the name of Jehovah,' is verse 26 of the same psalm. ⚠ Note what else comes out of Psalm 118 in this chapter: the rejected stone that becomes the head of the corner (21:42) is verses 22-23, three verses earlier. In one chapter the crowd sings the psalm's end and Jesus quotes its middle against the authorities. The shelf divides on whether to translate the word or keep it — KJV/ASV/NIV transliterate, NWT renders 'save, we pray' — and both are defensible, since by Matthew's day it plainly functions as an acclamation and the crowd is not asking to be rescued from anything in particular.", ("Matthew", 21, 9)),
     ("lestes", "lēstēs", "λῃστής", "lēstēs",
-     "A BANDIT — an armed robber or brigand, not a pickpocket and not a swindler. Josephus uses it of insurgents; John uses it of Barabbas (18:40); and it is the word for the two men crucified beside Jesus (Matthew 27:38), which is why 'thieves' there is misleading too. ⚠ So the temple charge at 21:13 is not primarily about overcharging. Quoting Jeremiah 7:11, Jesus says the house has become a spēlaion lēstōn — a CAVE of bandits, a hideout — and Jeremiah's own context is people who steal and murder and then shelter in the temple as if it were a refuge. KJV's 'den of thieves' and NIV's 'den of robbers' both suggest commercial dishonesty; the charge is closer to 'this has become a brigands' hideout.' Distinguish kleptēs, the ordinary thief who works by stealth (the word in 'the Lord will come like a kleptēs'). &#9888; And Matthew turns the word back on the arrest: 'have you come out with swords and clubs to take me as against a LESTES?' (26:55) &mdash; the people he had called bandits in the temple, coming for him as for one.", ("Matthew", 21, 13)),
+     "A BANDIT — an armed robber or brigand, not a pickpocket and not a swindler. Josephus uses it of insurgents; John uses it of Barabbas (18:40); and it is the word for the two men crucified beside Jesus (Matthew 27:38), which is why 'thieves' there is misleading too. ⚠ So the temple charge at 21:13 is not primarily about overcharging. Quoting Jeremiah 7:11, Jesus says the house has become a spēlaion lēstōn — a CAVE of bandits, a hideout — and Jeremiah's own context is people who steal and murder and then shelter in the temple as if it were a refuge. KJV's 'den of thieves' and NIV's 'den of robbers' both suggest commercial dishonesty; the charge is closer to 'this has become a brigands' hideout.' Distinguish kleptēs, the ordinary thief who works by stealth (the word in 'the Lord will come like a kleptēs'). &#9888; Two chapters on, the same word names the two men crucified on either side of him (27:38), which is why 'thieves' is misleading there too. &#9888; And Matthew turns the word back on the arrest: 'have you come out with swords and clubs to take me as against a LESTES?' (26:55) &mdash; the people he had called bandits in the temple, coming for him as for one.", ("Matthew", 21, 13)),
     ("metamelomai", "metamelomai", "μεταμέλομαι", "metamelomai",
      "TO REGRET, to have a change of feeling — and NOT the standard word for repentance, which is metanoeō, 'to change the mind' (see that entry). ⚠ Matthew uses this softer, more emotional verb at exactly two places and they are worth reading together. The son in the parable of the two sons refuses and then 'metamelētheis, went' (21:29), and the priests 'did not even metamelēthēte afterwards and believe' (21:32) — the charge is not that they reasoned badly but that nothing moved. Then it is what JUDAS does: 'seeing that he was condemned, he metamelētheis' and returned the silver (27:3), a regret that changes nothing and ends in a rope. The Greek Old Testament also uses it of God 'relenting' — the same territory as Hebrew nacham. English 'repent' covers both verbs and hides the distinction.", ("Matthew", 21, 29)),
     ("kephale-gonias", "kephalē gōnias", "κεφαλὴ γωνίας", "kephalē gōnias",
@@ -1237,6 +1245,50 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="pontius-pilate", name="Pontius Pilate", kind="person",
+         aliases=["Pilate"],
+         refs=[("Matthew", 27, 2)],
+         desc="Roman governor of Judaea, in office roughly 26\u201336 CE, under whom Jesus was executed &mdash; the "
+              "only person besides Jesus and Mary named in the Christian creeds. Matthew calls him "
+              "h\u0113gem\u014dn, a general word for a ruling official; \u26a0 his actual title is now known from "
+              "an inscription, the Pilate Stone, found reused in the theatre at Caesarea Maritima in 1961, which "
+              "gives it as PRAEFECTUS rather than the procurator of later tradition. He is also attested by "
+              "Josephus, by Philo &mdash; who describes him in strongly hostile terms as inflexible and given to "
+              "executions without trial &mdash; and by Tacitus. \u26a0 That external picture sits awkwardly beside "
+              "the Gospels\u2019 reluctant Pilate, and the tension is worth stating rather than resolving: a "
+              "governor who crucified people readily is not obviously the man who washes his hands, and the "
+              "narrative interest of each source is easy to see. Coins struck under him carry Roman cultic "
+              "implements, which Jewish coinage in Judaea otherwise avoided. Nothing certain is known of his end; "
+              "Eusebius reports a tradition that he was removed and later killed himself, and the several surviving "
+              "\u2018Acts of Pilate\u2019 are much later Christian compositions."),
+    dict(slug="golgotha", name="Golgotha", kind="place",
+         aliases=["Place of a Skull", "Calvary"],
+         refs=[("Matthew", 27, 33)],
+         desc="The place outside the walls of Jerusalem where Jesus was crucified. The name is Aramaic "
+              "gulgolta, A SKULL, which Matthew and Mark both stop to translate; \u2018Calvary\u2019 comes into "
+              "English from the Vulgate\u2019s Latin calvaria, the same word. \u26a0 Why the name, nobody knows: a "
+              "skull-shaped outcrop, a place of execution, and a burial-ground association have all been proposed, "
+              "and the tradition that Adam\u2019s skull lay beneath it &mdash; the reason a skull appears at the "
+              "foot of the cross in a great deal of Christian art &mdash; is legend rather than evidence. "
+              "The Gospels place it outside the city and near a garden tomb; the site under the Church of the Holy "
+              "Sepulchre fits both, since the second wall ran inside it in the first century and the area was a "
+              "disused quarry with rock-cut tombs, which is as much as archaeology supports. The rival "
+              "nineteenth-century \u2018Garden Tomb\u2019 north of the Damascus Gate is a genuine tomb of the wrong "
+              "period. \u26a0 Note what the texts do NOT say: none of the four Gospels calls it a hill."),
+    dict(slug="barabbas", name="Barabbas", kind="person",
+         aliases=["Jesus Barabbas", "Bar-abbas"],
+         refs=[("Matthew", 27, 16)],
+         desc="The prisoner released instead of Jesus. The name is Aramaic bar-abba, SON OF THE FATHER, and "
+              "Matthew does not translate it although he translates Emmanuel and Golgotha when he wants a name "
+              "heard. Matthew calls him \u2018notorious\u2019, Mark and Luke connect him with an insurrection and a "
+              "killing, and John calls him a l\u0113st\u0113s, a bandit &mdash; the word this Gospel uses of the "
+              "two men crucified beside Jesus. \u26a0 A number of manuscripts, and the Nestle-Aland text, give his "
+              "full name as JESUS Barabbas, so that Pilate\u2019s question offers a choice between two men called "
+              "Jesus. Origen, in the third century, records that he found the name in copies and argued it should "
+              "not stand, since no sinner is called Jesus &mdash; which attests both the reading\u2019s antiquity "
+              "and the exact reverence that would remove it. \u26a0 The Passover amnesty Matthew describes is not "
+              "attested outside the Gospels, and Roman practice elsewhere offers only partial parallels; the "
+              "library records that rather than assuming it either way."),
     dict(slug="gethsemane", name="Gethsemane", kind="place",
          aliases=["Gethsemani", "Garden of Gethsemane"],
          refs=[("Matthew", 26, 36)],
@@ -4326,6 +4378,27 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Matthew', 27, 3), ('Matthew', 21, 29), "metamelomai — remorse, a change of FEELING, not the metanoeo of 3:2 that turns; chapter 21's note said Judas would supply the distinction"),
+    (('Matthew', 27, 4), ('Matthew', 27, 24), "'you will see to it' — the priests brush Judas off, and twenty verses later Pilate uses the same words on the priests"),
+    (('Matthew', 27, 6), ('Matthew', 15, 5), "korbanas and korban — the same root: money made holy in order to make it unavailable"),
+    (('Matthew', 27, 9), ('Zechariah', 11, 13), "the WORDS are Zechariah's, and its Hebrew reads POTTER where most Bibles print 'treasury' — Matthew's narrative touches both"),
+    (('Matthew', 27, 9), ('Jeremiah', 19, 11), "the SCENE is Jeremiah's: a potter's vessel, a burial ground 'for want of room to bury', and a place given a new and terrible name"),
+    (('Matthew', 27, 14), ('Matthew', 12, 19), "'he did not answer a single word' — Isaiah 42's servant who will not quarrel nor cry out, which chapter 12's note said pointed at this scene"),
+    (('Matthew', 27, 19), ('Matthew', 2, 12), "the last of this Gospel's dreams, and the first that fails — because the man who receives it ignores it"),
+    (('Matthew', 27, 24), ('Deuteronomy', 21, 6), "washing the hands is the Law's own rite for elders disclaiming a killing — performed by the one man in the scene with the authority"),
+    (('Matthew', 27, 32), ('Matthew', 5, 41), "angareuo — the Sermon's requisition-verb: 'whoever compels you one mile, go two', now compelling a stranger to carry a cross"),
+    (('Matthew', 27, 34), ('Psalms', 69, 21), "gall in the food and vinegar for the thirst — the psalm has both, and Matthew separates them across v34 and v48"),
+    (('Matthew', 27, 35), ('Psalms', 22, 18), "'they divided his garments, casting lots' — quoted almost word for word, and Matthew makes no announcement of it"),
+    (('Matthew', 27, 37), ('Matthew', 2, 2), "'king of the Jews' — the magi's words, said by Gentiles kneeling; now nailed over his head by Gentiles as a joke"),
+    (('Matthew', 27, 29), ('Matthew', 2, 16), "empaizo — the first man mocked in this Gospel is Herod; the last is the child he was afraid of"),
+    (('Matthew', 27, 38), ('Matthew', 20, 21), "two bandits at his right and his left — the places two disciples asked for, and were told they did not know what they were asking"),
+    (('Matthew', 27, 40), ('Matthew', 4, 3), "'if you are the Son of God' — word for word the tempter's formula, now in the mouths of passers-by, priests and dying men"),
+    (('Matthew', 27, 43), ('Psalms', 22, 8), "'let him rescue him now, if he wants him' — the mockers recite the psalm's own account of what the sufferer's enemies say"),
+    (('Matthew', 27, 46), ('Psalms', 22, 1), "Eli Eli lema sabachthani — the address in Hebrew, the verb in Aramaic, which is why v47's mishearing of 'Elijah' works"),
+    (('Matthew', 27, 51), ('Matthew', 8, 24), "seismos — the second of three, and chapter 8's note flagged the word where Matthew oddly used it of a storm at sea"),
+    (('Matthew', 27, 57), ('Matthew', 19, 24), "a RICH man is named as a disciple, nineteen chapters after the camel and the needle, and Matthew does not resolve it"),
+    (('Matthew', 27, 63), ('Matthew', 24, 4), "planos — the priests call him the deceiver, using the discourse's own word for what he warned them about"),
+
     (('Matthew', 26, 1), ('Matthew', 7, 28), "the fifth and last of Matthew's discourse seams, 'when Jesus had finished' — and the only one of the five that reads 'ALL these words', closing not a discourse but the teaching"),
     (('Matthew', 26, 11), ('Deuteronomy', 15, 11), "'the poor you always have with you' quotes the premise of a COMMAND to give: 'therefore I command you: you shall surely open your hand to your poor brother'"),
     (('Matthew', 26, 15), ('Zechariah', 11, 12), "thirty pieces of silver, and both texts use a WEIGHING verb — 'they weighed out my hire, thirty of silver'"),
@@ -9647,6 +9720,41 @@ DICTIONARY_ES = {
         "un hombre sin dónde dormir, y en 24:30 a uno que viene sobre las nubes. Ese doble filo es "
         "buena parte de su utilidad — dice algo sin resolverlo."),
     # ---- Mateo 25 ----
+    "katapetasma": ("cortina del santuario",
+        "LA CORTINA del santuario —de katapetannymi, extender hacia abajo; un paño colgante, no un muro—. ⚠ Mateo "
+        "27:51 dice que se rasgó en dos «de arriba abajo», y la dirección es todo el asunto: es el único detalle que "
+        "convierte el rasgarse en una afirmación sobre quién lo hizo y no en una consecuencia del temblor que viene "
+        "dos cláusulas después. El texto NO dice qué cortina. El santuario tenía un paño exterior a la entrada, "
+        "visible desde el atrio, y otro interior ante el lugar santísimo, visto una vez al año por un solo hombre; "
+        "rasgar el primero es una señal pública y rasgar el segundo es una afirmación sobre el acceso, y se ha "
+        "discutido por ambos desde la antigüedad con argumentos que el texto no suministra. La biblioteca informa de "
+        "que Mateo lo deja abierto."),
+    "korbanas": ("tesoro del templo",
+        "EL TESORO DEL TEMPLO —forma griega construida sobre el hebreo qorbán, ofrenda, cosa acercada y consagrada—. "
+        "⚠ Es la palabra del único escrúpulo de los sacerdotes en Mateo 27:6: el dinero de sangre no puede entrar en "
+        "el korbanás, así que compran un campo con él. La misma raíz produjo el truco que Jesús atacó en 15:5, donde "
+        "un hombre declara sus bienes korbán, consagrados, y queda por ello liberado del deber de sostener a sus "
+        "padres: dinero santificado para volverlo indisponible. ⚠ Y hay una segunda conexión, más extraña: el hebreo "
+        "de Zacarías 11:13, el pasaje que Mateo cita cuatro versículos después, lee ha-yotsér, EL ALFARERO, donde "
+        "muchísimas Biblias imprimen «el tesoro» (de ha-otsár, siguiendo al siríaco). El relato de Mateo toca las dos "
+        "lecturas a la vez —rechazado por el tesoro, gastado en el campo del alfarero—, lo que es un argumento de que "
+        "conocía el versículo mejor de lo que sugeriría una cita floja."),
+    "planos": ("engañador, impostor",
+        "UN ENGAÑADOR, un impostor —de planáō, extraviar, hacer vagar; la raíz de «planeta», estrella errante—. ⚠ Es "
+        "la palabra de los principales sacerdotes para Jesús en Mateo 27:63, «aquel engañador», y su fuerza viene de "
+        "dónde encontró el lector la raíz por última vez: cuatro veces en el discurso del capítulo 24, sobre los "
+        "falsos mesías y falsos profetas que «engañarán a muchos» (24:4, 5, 11, 24). Usan el vocabulario de su propia "
+        "advertencia, contra él, tres días después de que la diera. Mateo no lo señala. En 2 Corintios 6:8 Pablo "
+        "recoge la misma palabra como uno de los pares opuestos de su ministerio: «como engañadores, pero veraces»."),
+    "chole": ("hiel",
+        "HIEL, bilis —y por extensión cualquier cosa amarga o venenosa—. ⚠ En Mateo 27:34 se le ofrece vino mezclado "
+        "con cholē y no quiere beberlo, y la frase está construida sobre el Salmo 69:21, donde el Antiguo Testamento "
+        "griego usa esta misma palabra para el rosh, lo amargo o venenoso puesto en la comida del que sufre. El salmo "
+        "tiene DOS cosas en un mismo versículo —algo amargo de comer y vinagre para la sed— y Mateo las separa: hiel "
+        "al principio (v34) y oxos, vinagre, al final (v48). ⚠ La tradición bizantina lee oxos en los dos sitios, "
+        "colapsando las dos en una sola bebida y produciendo el «vinagre mezclado con hiel» de la RV; la forma de dos "
+        "bebidas del texto más antiguo encaja mejor con el salmo y es la que se sigue aquí. El otro uso "
+        "neotestamentario es Hechos 8:23, «hiel de amargura»."),
     "diatheke": ("pacto; testamento",
         "UN PACTO — y la palabra que dio nombre a las dos mitades de esta Biblia, por un camino que vale conocer. "
         "En griego corriente una diathēkē es un TESTAMENTO, el documento con que un hombre dispone de sus bienes; ese es el "
@@ -10468,6 +10576,47 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mat27": [dict(
+        file="mantegna-crucifixion.jpg",
+        title="Crucifixion",   title_es="Crucifixi\u00f3n",
+        artist="Andrea Mantegna",
+        year="1457\u20131460",
+        location="Mus\u00e9e du Louvre, Paris",  location_es="Museo del Louvre, Par\u00eds",
+        alt="Three crosses on a paved rock platform. Jesus at the centre, the two bandits tied by the "
+            "wrists to bare timbers at either side, one of them twisting round. At the left a group of "
+            "women, one in dark blue collapsing into the arms of the others; a young man in blue-green "
+            "stands apart at the far edge, looking away. At the lower right, soldiers sit and sprawl on "
+            "the pavement casting lots on a round shield while another holds up a rose-coloured garment. "
+            "Mounted soldiers wait at the right. Skulls and bones lie at the foot of the left-hand cross. "
+            "Behind, a road winds down from a walled city on a hill, crowded with small figures.",
+        note="&#9888; Mantegna gives the largest patch of ground in the picture to the one thing Matthew "
+             "declines to comment on. The soldiers in the lower right are casting lots on an upturned "
+             "shield while a fourth holds up the rose garment: that is Psalm 22:18, both halves of it, and "
+             "the Gospel reports it in nine words with no announcement that anything is being fulfilled. "
+             "The painter also literalizes the place-name &mdash; the skulls at the foot of the left-hand "
+             "cross are the Place of a Skull, though the tradition that Adam was buried there is legend, "
+             "not text. &#9888; And two details are borrowed from elsewhere: the titulus reads "
+             "<em>INRI</em>, which abbreviates John&rsquo;s wording, not the <em>&lsquo;This is Jesus, the "
+             "king of the Jews&rsquo;</em> that Matthew gives four verses earlier; and no Gospel says "
+             "Golgotha was a hill. What is exactly Matthew&rsquo;s: the two men on either side are tied "
+             "rather than nailed, the women watch in a group, and there is a Roman officer on the "
+             "spot.",
+        note_es="&#9888; Mantegna dedica el mayor trozo de suelo del cuadro a lo \u00fanico que Mateo se "
+             "niega a comentar. Los soldados de la parte inferior derecha echan suertes sobre un escudo "
+             "vuelto del rev\u00e9s mientras un cuarto levanta la prenda de color rosa: eso es el Salmo "
+             "22:18, sus dos mitades, y el Evangelio lo cuenta en nueve palabras sin anunciar que se est\u00e9 "
+             "cumpliendo nada. El pintor tambi\u00e9n literaliza el top\u00f3nimo &mdash; las calaveras al "
+             "pie de la cruz izquierda son el Lugar de la Calavera, aunque la tradici\u00f3n de que Ad\u00e1n "
+             "fue sepultado all\u00ed es leyenda y no texto. &#9888; Y dos detalles est\u00e1n tomados de otra "
+             "parte: el t\u00edtulo lee <em>INRI</em>, que abrevia la redacci\u00f3n de Juan y no el "
+             "<em>«Este es Jes\u00fas, el rey de los jud\u00edos»</em> que Mateo da cuatro vers\u00edculos "
+             "antes; y ning\u00fan Evangelio dice que G\u00f3lgota fuera un monte. Lo que s\u00ed es "
+             "exactamente de Mateo: los dos hombres de los lados est\u00e1n atados y no clavados, las "
+             "mujeres miran en grupo, y hay un oficial romano en el sitio.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Mantegna,_Andrea_-_crucifixion_-_Louvre_from_Predella_San_Zeno_Altarpiece_Verona.jpg",
+    )],
+
     "mat26": [dict(
         file="rembrandt-peter-denial.jpg",
         title="St Peter’s Denial",   title_es="La negaci\u00f3n de san Pedro",
