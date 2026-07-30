@@ -1141,6 +1141,14 @@ DICTIONARY = [
      "To MAKE A DISCIPLE of somebody &mdash; a transitive verb built on mathētēs, a learner or apprentice, and not the same thing as 'teach' (didaskō, which Matthew 28:20 uses separately, in the next breath). &#9888; It occurs three times in Matthew and nowhere else in the Gospels, and the pattern is the point: twice in the PASSIVE, of a scribe 'who has been made a disciple of the kingdom' (13:52) and of Joseph of Arimathea, who 'had been made a disciple' (27:57) &mdash; and then once in the ACTIVE, as the imperative carrying the last command in the book, mathēteusate panta ta ethnē (28:19). Two men are made disciples, and then the made are told to make. &#9888; Its object at 28:19 is the NATIONS, not individuals, which is a grammatical fact worth noticing before anybody uses it as an argument.", ("Matthew", 13, 52)),
     ("ethnos", "ethnos", "ἔθνος", "ethnos",
      "A NATION, a people &mdash; and in the plural, in Jewish Greek, THE NATIONS: everybody who is not Israel, the Gentiles. The Greek Old Testament uses it for Hebrew goyim, and English 'ethnic' descends from it. &#9888; The word is the hinge of the sharpest unresolved tension in Matthew. At 10:5-6 the Twelve are sent out under a hard restriction stated twice &mdash; go nowhere among the ethnē, only to the lost sheep of the house of Israel &mdash; and at 15:24 he says the same of himself. The book then closes with mathēteusate PANTA TA ETHNĒ, make disciples of ALL the nations (28:19). Same word, opposite instruction, eighteen chapters apart, and Matthew offers no reconciliation. The library reports both and observes that this Gospel is willing to end on a reversal it never explains.", ("Matthew", 10, 5)),
+    ("glossa", "glōssa", "γλῶσσα", "glōssa",
+     "A TONGUE &mdash; the organ, the shape a flame makes, and a LANGUAGE. All three senses are live in Acts 2 and the chapter turns on the fact that Greek uses one word: tongues as of fire sit on each of them (v3), they speak in other tongues (v4), and the crowd hears its own tongues (v11). &#9888; This translation keeps 'tongues' throughout rather than switching to 'languages' where that would read more smoothly, because switching hides the hinge. Note also where Luke locates the miracle: not in the speakers' mouths only but in the hearers' ears &mdash; 'each one was hearing them in his own language' (v6), where the word is dialektos. The later Corinthian phenomenon (1 Corinthians 12-14) is described very differently, and the library does not assume the two are the same thing.", ("Acts", 2, 4)),
+    ("gleukos", "gleukos", "γλεῦκος", "gleukos",
+     "SWEET NEW WINE &mdash; the barely-fermented juice of a fresh pressing, still sugary; the root behind English 'glucose'. &#9888; It is the sneer at Acts 2:13, 'they are filled with gleukos', and it has a calendar problem the text does not point out: Pentecost falls in late spring, months before the vintage. The mockers reach for the least plausible explanation available, and Peter answers the drunkenness rather than the date &mdash; it is nine in the morning. The word occurs only here in the New Testament. KJV 'new wine'; NWT 'sweet wine', which is the most exact rendering on the shelf.", ("Acts", 2, 13)),
+    ("diaphthora", "diaphthora", "διαφθορά", "diaphthora",
+     "DECAY, corruption &mdash; the rotting of a body, from diaphtheirō, to destroy utterly. &#9888; It carries an argument at Acts 2:27 and 2:31, and the argument works in Greek in a way it does not in Hebrew. The Greek Old Testament renders Psalm 16:10 'you will not give your holy one to see DIAPHTHORA', and Peter presses exactly that: David's flesh did decay, so the psalm must mean somebody else. The Hebrew word behind it is SHACHAT, which the standard Jewish rendering gives as 'THE PIT' &mdash; the grave itself, in parallel with Sheol in the previous line &mdash; on which reading the verse is a prayer not to die rather than a claim about a body not rotting. Both senses are defensible from the Hebrew root; the Greek translators chose one, and the sermon reasons from theirs. &#9888; That is a fact about how the argument works and not a scandal: the Greek was the Bible of the Greek-speaking city Peter is addressing, and Luke wrote the speech in Greek. But no version on the shelf tells the reader, because it prints 'corruption' here and 'the pit' at Psalm 16, three hundred pages apart.", ("Acts", 2, 27)),
+    ("pentekoste", "pentēkostē", "πεντηκοστή", "pentēkostē",
+     "PENTECOST &mdash; Greek for FIFTIETH, and simply the Greek name for the Hebrew feast of Shavuot, Weeks: counted as fifty days from the barley offering of Passover week (Leviticus 23:15-16). &#9888; It is a HARVEST festival &mdash; the wheat harvest, with two loaves brought as first-fruits &mdash; and one of the three pilgrim feasts that filled Jerusalem with visitors, which is why Acts 2 has a crowd of Jews 'from every nation under heaven' standing outside a house in the city. Luke says the day was 'being FILLED UP' (symplērousthai), a fullness-word he likes. The later Jewish tradition associating Shavuot with the giving of the Law at Sinai is attested after the New Testament period, so the library records that a Sinai echo here is a possible reading and not a demonstrated one.", ("Acts", 2, 1)),
     ("porosis", "pōrōsis", "πώρωσις", "pōrōsis",
      "A HARDENING &mdash; and the word is medical before it is moral: pōros is a callus, the bony deposit that forms over a healed fracture, or the stone-like matter in a joint. &#9888; So Mark 3:5, 'grieved at the pōrōsis of their heart', is not describing stubbornness as a mood but tissue that has stopped being able to feel. And the diagnosis is not reserved for opponents: Mark turns the same root on the DISCIPLES twice, after the loaves (6:52) and again in the boat (8:17), which is the sort of thing this Gospel does without comment. Paul takes the noun up at Romans 11:25 for a hardening 'in part' that is temporary, and at Ephesians 4:18. KJV reads 'hardness', which is right but has lost the physical picture.", ("Mark", 3, 5)),
     ("boanerges", "Boanērges", "Βοανηργές", "Boanērges",
@@ -4415,6 +4423,14 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Acts', 2, 1), ('Acts', 1, 4), "Pentecost is the payment of the promise chapter 1 said was days away — the baptism in the Spirit, not dated by Jesus and arriving on a fixed feast"),
+    (('Acts', 2, 17), ('Joel', 3, 1), "Joel's Hebrew reads 'afterward' (acharei-khen) and the Greek Old Testament 'after these things'; the citation reads 'in the last days'"),
+    (('Acts', 2, 24), ('Psalms', 18, 5), "'the birth pangs of death' — Hebrew chevlei mavet, the CORDS of death, where chevel means both a cord and a birth pang, and the Greek took the second"),
+    (('Acts', 2, 27), ('Psalms', 16, 10), "'see DECAY' in Greek where the Hebrew shachat is 'the pit' — the sermon's argument runs on the Greek sense"),
+    (('Acts', 2, 34), ('Psalms', 110, 1), "'the Lord said to my lord' — the same psalm Jesus used against the scribes, now used of him"),
+    (('Acts', 2, 38), ('Matthew', 28, 19), "baptism 'on the name of Jesus Christ' — the Acts pattern set against Matthew's triadic formula, with neither harmonized"),
+    (('Acts', 2, 46), ('Acts', 1, 14), "homothymadon, 'with one accord' — Luke's word for the church at its best, back on schedule"),
+
     (('Mark', 3, 5), ('Mark', 1, 41), "met' orges — the anger chapter 1 followed as the harder reading at the leper, here textually undisputed"),
     (('Mark', 3, 5), ('Matthew', 12, 13), "Matthew removes the look and the anger entirely; Luke keeps the looking-round, drops the emotion, and gives the rage to the opponents instead (6:11)"),
     (('Mark', 3, 6), ('Mark', 12, 13), "Pharisees and Herodians — a coalition with nothing in common, named together only when there is a plot"),
@@ -9803,6 +9819,36 @@ DICTIONARY_ES = {
         "discípulos de TODAS las naciones (28:19). La misma palabra, la instrucción contraria, dieciocho capítulos "
         "después, y Mateo no ofrece reconciliación. La biblioteca informa de las dos y observa que este Evangelio "
         "está dispuesto a terminar en una inversión que nunca explica."),
+    "glossa": ("lengua; idioma",
+        "UNA LENGUA —el órgano, la forma que hace una llama, y un IDIOMA—. Los tres sentidos están vivos en "
+        "Hechos 2 y el capítulo gira sobre el hecho de que el griego usa una sola palabra: lenguas como de fuego "
+        "se posan sobre cada uno (v3), hablan en otras lenguas (v4), y la multitud oye sus propias lenguas (v11). "
+        "⚠ Esta traducción mantiene «lenguas» en todo el pasaje en vez de pasar a «idiomas» donde se leería más "
+        "liso, porque el cambio esconde el gozne. Nótese también dónde sitúa Lucas el milagro: no solo en la boca "
+        "de los que hablan sino en el oído de los que escuchan —«cada uno los oía en su propia lengua» (v6)."),
+    "gleukos": ("mosto, vino dulce nuevo",
+        "MOSTO —el jugo apenas fermentado de un prensado reciente, todavía dulce; la raíz de «glucosa»—. ⚠ Es la "
+        "burla de Hechos 2:13, «están llenos de gleukos», y tiene un problema de calendario que el texto no "
+        "señala: Pentecostés cae a finales de primavera, meses antes de la vendimia. Los burlones echan mano de "
+        "la explicación menos plausible que hay a mano, y Pedro responde a la borrachera y no a la fecha: son "
+        "las nueve de la mañana. La palabra aparece solo aquí en el Nuevo Testamento."),
+    "diaphthora": ("corrupción, descomposición",
+        "DESCOMPOSICIÓN, corrupción —el pudrirse de un cuerpo—. ⚠ Lleva un argumento en Hechos 2:27 y 2:31, y el "
+        "argumento funciona en griego de un modo que no funciona en hebreo. El Antiguo Testamento griego vierte "
+        "el Salmo 16:10 «no darás a tu santo a ver DIAPHTHORA», y Pedro insiste justo en eso: la carne de David "
+        "sí se descompuso, luego el salmo tiene que hablar de otro. La palabra hebrea de fondo es SHACHAT, que "
+        "la versión judía estándar da como «LA FOSA» —la tumba misma, en paralelo con Seol en la línea "
+        "anterior—, y en esa lectura el versículo es una oración por no morir y no una afirmación sobre un "
+        "cuerpo que no se pudre. Los dos sentidos son defendibles desde la raíz hebrea; los traductores griegos "
+        "eligieron uno, y el sermón razona desde el suyo."),
+    "pentekoste": ("Pentecostés",
+        "PENTECOSTÉS —griego para QUINCUAGÉSIMO, y sin más el nombre griego de la fiesta hebrea de Shavuot, las "
+        "Semanas: contada a cincuenta días desde la ofrenda de cebada de la semana de Pascua (Levítico "
+        "23:15-16)—. ⚠ Es una fiesta de COSECHA —la del trigo, con dos panes como primicias— y una de las tres "
+        "peregrinaciones que llenaban Jerusalén de visitantes, y por eso Hechos 2 tiene una multitud de judíos "
+        "«de toda nación bajo el cielo» delante de una casa de la ciudad. La tradición judía posterior que asocia "
+        "Shavuot con la entrega de la Ley en el Sinaí está atestiguada después del período neotestamentario, así "
+        "que la biblioteca registra que un eco del Sinaí aquí es lectura posible y no demostrada."),
     "porosis": ("endurecimiento, callosidad",
         "UN ENDURECIMIENTO —y la palabra es médica antes que moral: pōros es un callo, el depósito óseo que se "
         "forma sobre una fractura curada, o la materia pétrea de una articulación—. ⚠ Así que Marcos 3:5, "
@@ -10717,6 +10763,46 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "acts2": [dict(
+        file="elgreco-pentecost.jpg",
+        title="Pentecost",   title_es="Pentecost\u00e9s",
+        artist="El Greco",
+        year="c. 1600",
+        location="Museo del Prado, Madrid",  location_es="Museo del Prado, Madrid",
+        alt="A tall narrow altarpiece. At the top, a white dove in a burst of light under a dark arch. "
+            "Below it, small pointed flames stand on the heads of a ring of figures whose faces are "
+            "turned upward and whose hands are raised or clasped. At the centre a woman in a blue mantle "
+            "over a deep red robe holds her hands together in prayer. In the foreground three large "
+            "figures are seen from behind, kneeling, their backs to the viewer, in green, dark red and "
+            "blue-and-gold. Everything in the picture is elongated and pulled upward.",
+        note="&#9888; El Greco gets the flames exactly right &mdash; verse 3 says a tongue of fire sat on "
+             "each one of them, and here they stand on individual heads rather than hovering over the "
+             "group. What he adds is a DOVE, and there is no dove in Acts 2. That image belongs to the "
+             "baptism (Luke 3:22) and has been carried across; the sound in this chapter comes from above "
+             "but nothing is said to be seen except the fire. &#9888; And the woman at the centre is Mary. "
+             "Acts 2 does not mention her: it says only that they were all together. She is in the room in "
+             "<a href=\"acts-1.html#v14\">Acts 1:14</a>, named among the hundred and twenty, and the "
+             "tradition moved her to the middle. The library flags both imports rather than letting them "
+             "pass as the text. What the painting understands better than most is the direction of the "
+             "whole chapter: every line in it goes UP, and Luke&rsquo;s sound came DOWN and filled a house "
+             "&mdash; the picture is the answer, not the event.",
+        note_es="&#9888; El Greco acierta del todo con las llamas &mdash; el vers\u00edculo 3 dice que una "
+             "lengua de fuego se pos\u00f3 sobre cada uno de ellos, y aqu\u00ed est\u00e1n sobre cabezas "
+             "individuales y no flotando sobre el grupo. Lo que a\u00f1ade es una PALOMA, y en Hechos 2 no "
+             "hay ninguna paloma. Esa imagen pertenece al bautismo (Lucas 3:22) y ha sido tra\u00edda de "
+             "all\u00ed; el sonido de este cap\u00edtulo viene de arriba, pero no se dice que se viera nada "
+             "salvo el fuego. &#9888; Y la mujer del centro es Mar\u00eda. Hechos 2 no la menciona: dice "
+             "solo que estaban todos juntos. Est\u00e1 en la sala en "
+             "<a href=\"acts-1.es.html#v14\">Hechos 1:14</a>, nombrada entre los ciento veinte, y la "
+             "tradici\u00f3n la llev\u00f3 al medio. La biblioteca se\u00f1ala los dos pr\u00e9stamos en "
+             "vez de dejarlos pasar como si fueran el texto. Lo que el cuadro entiende mejor que casi "
+             "ninguno es la direcci\u00f3n del cap\u00edtulo entero: todas sus l\u00edneas van HACIA "
+             "ARRIBA, y el sonido de Lucas baj\u00f3 y llen\u00f3 una casa &mdash; el cuadro es la "
+             "respuesta, no el suceso.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Pentecost%C3%A9s_(El_Greco,_c._1600)_Prado.jpg",
+    )],
+
     "mark3": [dict(
         file="tissot-withered-hand.jpg",
         title="The Man with the Withered Hand",
