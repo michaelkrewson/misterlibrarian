@@ -309,7 +309,7 @@ DICTIONARY = [
     ("logos", "logos", "λόγος", "logos",
      "Word, reason, account — John's term for the pre-existent Christ, fusing the Hebrew 'word of Jehovah' by which the world was made (Genesis 1's ten-fold 'and God said') with the Greek philosophers' logos, the reason that orders the cosmos.", ("John", 1, 1)),
     ("monogenes", "monogenes", "μονογενής", "monogenēs",
-     "'One of a kind, an only child' (mono-, 'only,' + genos, 'kind/kin') — NOT 'only-begotten,' which came through the Latin unigenitus and reads a later doctrine into the word. Rendered here 'the only Son.'", ("John", 1, 14)),
+     "'One of a kind, an only child' (mono-, 'only,' + genos, 'kind/kin') — NOT 'only-begotten,' which came through the Latin unigenitus and reads a later doctrine into the word. Rendered here 'the only Son.' ⚠ Collected at its most famous occurrence in John 3:16, where the familiar 'his only begotten Son' has BOTH problems at once: 'begotten' is the Latin unigenitus, and the possessive 'his' stands only in the later manuscripts — the earliest text reads simply 'the Son.'", ("John", 1, 14)),
     ("eskenosen", "eskenosen", "ἐσκήνωσεν", "eskēnōsen",
      "'Tented, tabernacled' (from skēnē, 'tent') — the Word 'pitched his tent among us,' echoing the tabernacle where Jehovah's glory came to dwell with Israel (Exodus 40).", ("John", 1, 14)),
     ("charis", "charis", "χάρις", "charis",
@@ -1290,6 +1290,16 @@ DICTIONARY = [
      "To be ATTACHED to, to cling, to be bound by desire. Used of Shechem's longing for Dinah and, startlingly, of God's own inexplicable attachment to Israel ('YHVH did not chashaq you because you were more numerous,' Deuteronomy 7:7). Psalm 91:14 gives the reason God acts, and it is this verb rather than obedience or faith: 'because he has bound himself to me.' Warmer and more physical than the shelf's 'set his love upon me.'", ("Psalms", 91, 14)),
     ("evrah", "evrah", "אֶבְרָה", "evrah",
      "The PINION — the long, strong flight-feather of a wing, not soft down. Psalm 91:4, 'with his evrah he will cover you,' is the parent bird mantling over the young, the same picture as the eagle of Deuteronomy 32:11 and the hen of Matthew 23:37. The point of the precise word is that the covering feather is the one built for flying, not for warmth.", ("Psalms", 91, 4)),
+    ("anothen", "anōthen", "ἄνωθεν", "anōthen",
+     "FROM ABOVE — and also AGAIN. The word carries both, which is the whole engine of John 3: Jesus says a man must be born anōthen, Nicodemus hears the temporal sense and asks about re-entering a womb. ⚠ Counted in the SBLGNT archive it occurs 13 times in the New Testament and five are John's (3:3, 3:7, 3:31, 19:11, 19:23) — and every other Johannine use is SPATIAL (authority 'given from above,' a tunic woven 'from the top'), never temporal. The temporal sense is real elsewhere: Galatians 4:9 has men wanting to be enslaved anōthen, all over again. And John settles his own usage at 3:31, where 'the one coming anōthen' is glossed in the same verse by 'the one coming out of heaven.' No English word does both jobs, so every version breaks the hinge somewhere; both Spanish witnesses split it two ways inside this one chapter.", ("John", 3, 3)),
+    ("pneuma", "pneuma", "πνεῦμα", "pneuma",
+     "BREATH, WIND, SPIRIT — one Greek word for all three, exactly as Hebrew ruach is. John 3:8 builds a sentence on the fact and uses the cognate verb with it (to pneuma... pnei, 'the pneuma blows'): the first half is plainly weather — it blows, you hear its sound, you cannot track it — and the second half is plainly the Spirit, because you are BORN of it. No translation keeps both; this one prints 'wind' and then 'Spirit' and flags the seam rather than hiding it.", ("John", 3, 8)),
+    ("hypsoo", "hypsoō", "ὑψόω", "hypsoō",
+     "To LIFT UP — and to EXALT. In John the two senses are never separable: he uses it of Jesus at 3:14, 8:28 and 12:32, and at 12:33 he stops and tells the reader outright that it was said 'signifying by what death he was about to die.' Raised on a stake and raised in glory are one verb in this Gospel, and the double is the author's own, not a commentator's. 'Lifted up' keeps both, barely.", ("John", 3, 14)),
+    ("apeitheo", "apeitheō", "ἀπειθέω", "apeitheō",
+     "To DISOBEY, refuse to be persuaded — and pointedly NOT apisteō, 'to disbelieve,' which Greek has and John does not use here. John 3:36 sets 'the one believing' against 'the one DISOBEYING' the Son, so the opposite of faith in that sentence is not an empty head but a refusal. KJV ('believeth not') and NIV ('rejects') soften it; ASV ('obeyeth not') and NWT ('disobeys') keep the root.", ("John", 3, 36)),
+    ("phaulos", "phaulos", "φαῦλος", "phaulos",
+     "WORTHLESS, shoddy, of no account — a milder word than ponēros, actively evil, and John 3 uses both one verse apart: people loved darkness because their works were ponēra (v19), and everyone doing phaula avoids the light (v20). The man who will not come into the light is not necessarily a villain; he may simply have nothing he wants looked at. Most versions flatten both to 'evil'; ASV and NWT distinguish them.", ("John", 3, 20)),
 ]
 
 ENCYCLOPEDIA = [
@@ -4409,6 +4419,18 @@ ENCYCLOPEDIA = [
          coords=(33.2481, 35.6919, 0.02),
          modern="Banias, Golan Heights",
          videos=[]),
+    dict(slug="nicodemus", name="Nicodemus", kind="person", aliases=["Nicodemus"],
+         desc="A Pharisee and an <em>archōn</em> — a ruler, almost certainly a member of the council — who comes to Jesus "
+              "by night in John 3. ⚠ His name is Greek, not Hebrew: <em>Nikodēmos</em>, 'victory of the people,' an "
+              "ordinary Greek name borne by a leading Judaean, which is itself a small fact about how mixed that world "
+              "was. He appears three times and only in this Gospel, and the three form a line: at night with questions "
+              "(3:1-2); then at 7:50, alone in the council, insisting the law give a man a hearing before it condemns "
+              "him; then at 19:39, in daylight, carrying about a hundred Roman pounds of myrrh and aloes to bury an "
+              "executed man — a quantity fit for a king's funeral and an act that would have made him unclean and "
+              "conspicuous at once. The Gospel never says he believed; it just moves him from the dark to the daylight "
+              "and lets the reader notice. Later tradition supplies far more (a Gospel of Nicodemus, a martyrdom, a "
+              "place in the Talmud as Naqdimon ben Gurion), none of it early and none of it assumed here.",
+         refs=[("John", 3, 1)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -5571,6 +5593,8 @@ XREFS = [
     (("Psalms", 91, 13), ("Genesis", 1, 21), "tannin — the great sea-beast created on the fifth day, here the last of four animals a man treads on"),
     (("Psalms", 91, 16), ("Psalms", 23, 6), "orekh yamim — both psalms end on 'length of days,' and this one supplies the verb ('satisfy') that shows it means a long life and not eternity"),
     (("Psalms", 91, 1), ("Psalms", 23, 4), "tzel, the shadow — death's in Psalm 23, God's here"),
+    (("John", 3, 16), ("John", 1, 14), "monogenes — the word fixed at the prologue, collected here at its most famous occurrence; and both places are the narrator's voice, which is part of the argument about where Jesus' speech ends"),
+    (("John", 3, 3), ("John", 3, 31), "anothen — the ambiguous 'from above / again' of verse 3, glossed by John himself twenty-eight verses later with 'the one coming out of heaven'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -10520,6 +10544,26 @@ DICTIONARY_ES = {
         "91:4) es el ave que cubre a sus crías, la misma figura que el águila de Deuteronomio 32:11 y la gallina de "
         "Mateo 23:37. Lo que aporta la palabra precisa es que la pluma que cubre es la que sirve para volar, no "
         "para abrigar."),
+    "orge": ("ira",
+        "IRA — la cólera asentada, no un arrebato de mal genio (eso es thymos). Juan 3:36 la deja «permaneciendo» "
+        "sobre el que desobedece al Hijo: un estado que sigue en pie, no un estallido."),
+    "monogenes": ("único",
+        "ÚNICO EN SU CLASE, hijo único (mono-, «solo», + genos, «clase») — NO «unigénito», que entró por el latín "
+        "unigenitus y devuelve al término una doctrina posterior. ⚠ Recogido en su aparición más célebre, Juan 3:16, "
+        "donde el familiar «su Hijo unigénito» tiene los dos problemas a la vez: «unigénito» es el latín, y el "
+        "posesivo «su» solo está en los manuscritos tardíos."),
+    "anothen": ("de arriba",
+        "DE ARRIBA — y también OTRA VEZ. La palabra lleva las dos cosas, y en eso consiste todo el motor de Juan 3. "
+        "⚠ Contada en el archivo, aparece 13 veces en el Nuevo Testamento y cinco son de Juan; todos los demás usos "
+        "jonaicos son espaciales, nunca temporales. Y Juan resuelve su propio uso en 3:31, donde «el que viene "
+        "anōthen» queda glosado en el mismo verso por «el que viene del cielo»."),
+    "pneuma": ("espíritu, viento, aliento",
+        "ALIENTO, VIENTO, ESPÍRITU — una sola palabra griega para las tres cosas, igual que el hebreo ruaj. Juan 3:8 "
+        "construye una frase entera sobre ese hecho: la primera mitad es meteorología y la segunda es el Espíritu. "
+        "Ninguna traducción conserva ambas."),
+    "hypsoo": ("levantar, exaltar",
+        "LEVANTAR — y EXALTAR. En Juan los dos sentidos no se separan: lo usa de Jesús en 3:14, 8:28 y 12:32, y en "
+        "12:33 se detiene a decir que se dijo «indicando de qué muerte iba a morir»."),
 }
 
 ENCYCLOPEDIA_ES = {
