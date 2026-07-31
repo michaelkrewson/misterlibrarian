@@ -142,6 +142,13 @@ a.tgl{text-decoration:none;display:inline-block}
   font-size:21px;line-height:2.05;color:#f3ecd8;margin-bottom:8px}
 .heb .pe{font-size:12px;color:var(--dim);vertical-align:middle}
 .heb .smallheb{font-size:0.6em;vertical-align:0.18em}
+/* Acrostic letter shown at the head of an English/Spanish line, for chapters whose
+   Hebrew runs the alphabet (Proverbs 31:10-31, Psalm 119, Lamentations). Hebrew glyph
+   in an LTR line, so it needs its own direction reset or the punctuation after it
+   reorders. */
+.eng .acro,.esp .acro{direction:rtl;unicode-bidi:isolate;display:inline-block;
+  font-family:"SBL Hebrew","Ezra SIL","Frank Ruehl",serif;font-size:16px;
+  color:var(--gold);opacity:.85;margin-right:7px;vertical-align:baseline;cursor:help}
 .eng{font-size:15.5px;line-height:1.8;color:var(--text)}
 .eng .notelink{font-size:10px;color:var(--purple);vertical-align:super;margin-left:4px}
 .eterm{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(232,201,104,0.55);
