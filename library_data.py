@@ -12004,4 +12004,50 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Eastman_Johnson_-_The_Lord_Is_My_Shepherd_-_Google_Art_Project.jpg",
     )],
+    "psalms91": [dict(
+        file="stuttgart-psalter-psalm91-beasts.jpg",
+        title="Psalm 91:13 — treading on the beasts",
+        title_es="Salmo 91:13 — pisando las bestias",
+        artist="Unknown illuminator, the Stuttgart Psalter",
+        artist_es="Iluminador anónimo, el Salterio de Stuttgart",
+        year="c. 825",
+        location="Württembergische Landesbibliothek, Stuttgart (Cod. bibl. fol. 23, f. 107v)",
+        location_es="Württembergische Landesbibliothek, Stuttgart (Cod. bibl. fol. 23, f. 107v)",
+        alt="A manuscript page. Across the top, two lines of Latin in red and brown ink. Below, on a green "
+            "cross-hatched ground, a haloed figure in a mail shirt and helmet with a red cloak stands with legs "
+            "apart, gripping a long spear. His left foot presses down the head of a long red-and-white banded "
+            "serpent whose coils fill the lower left and whose tail runs off the edge of the picture; his right "
+            "foot presses down the head of a snarling tawny lion lying at the lower right. A winged angel leans "
+            "in from the left with both hands open toward him, and a hand reaches down out of drapery at the "
+            "upper right.",
+        note="&#9888; The verse is written across the top of its own picture, and it is the LATIN: "
+             "<em>super aspidem et basiliscum ambulabis et conculcabis leonem et draconem</em>. So the word this "
+             "chapter&rsquo;s note is about &mdash; <strong>basiliscum</strong>, Jerome&rsquo;s rendering of the "
+             "Hebrew <em>peten</em>, a cobra &mdash; is legible on the image itself. The illuminator is "
+             "illustrating the Vulgate, not the Hebrew, which is exactly how the basilisk got into Europe. "
+             "&#9888; And notice the arithmetic: the Latin names <strong>four</strong> creatures (asp, basilisk, "
+             "lion, dragon) and the picture shows <strong>two</strong> &mdash; one serpent, one lion. Even the "
+             "artist working directly from the text collapsed the two snakes into one snake and the two lions "
+             "into one lion, which is the same flattening every translation of this verse has to decide whether "
+             "to make. &#9888; The protected man is painted as a <strong>ninth-century Frankish soldier</strong> "
+             "&mdash; mail hauberk, helmet, spear, red cloak &mdash; and haloed, so the psalter is reading the "
+             "psalm christologically, one of the three modes this manuscript works in. The angel at the left is "
+             "not decoration either: it belongs to verses 11&ndash;12, the promise the devil quotes, so the "
+             "picture puts the tempter&rsquo;s proof-text and the trampling in a single frame.",
+        note_es="&#9888; El versículo está escrito sobre su propia ilustración, y está en LATÍN: "
+                "<em>super aspidem et basiliscum ambulabis et conculcabis leonem et draconem</em>. De modo que la "
+                "palabra de la que trata la nota de este capítulo &mdash; <strong>basiliscum</strong>, la "
+                "traducción de Jerónimo del hebreo <em>peten</em>, una cobra &mdash; se lee en la propia imagen. "
+                "El iluminador ilustra la Vulgata y no el hebreo, que es precisamente cómo entró el basilisco en "
+                "Europa. &#9888; Y obsérvese la aritmética: el latín nombra <strong>cuatro</strong> criaturas "
+                "(áspid, basilisco, león y dragón) y el cuadro muestra <strong>dos</strong>: una serpiente y un "
+                "león. Hasta el artista que trabajaba directamente sobre el texto fundió las dos serpientes en "
+                "una y los dos leones en uno. &#9888; El hombre protegido está pintado como un "
+                "<strong>soldado franco del siglo IX</strong> &mdash;cota de malla, yelmo, lanza, capa roja&mdash; "
+                "y con nimbo, de modo que el salterio lee el salmo cristológicamente. El ángel de la izquierda "
+                "tampoco es adorno: pertenece a los versículos 11 y 12, la promesa que cita el diablo, así que la "
+                "imagen reúne en un solo marco el texto-prueba del tentador y el pisoteo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Stuttgart_Psalter_fol23.jpg",
+    )],
 }
