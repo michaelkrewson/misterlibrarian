@@ -70,3 +70,43 @@ the thread is invisible. Same species of finding as *paga* (Isaiah 53) and *kata
       is Romans 2 and the nav will say so — the info-block must match)
 - [ ] screenshot BOTH languages and actually look
 - [ ] commit → push branch → merge into main FROM THE MAIN CHECKOUT → push → verify live
+
+---
+
+## PROGRESS — 2026-07-31, second pass
+
+**DONE: the 39 EN verse blocks** are written and saved as `ROM8_verses_en.html` in this
+worktree (NOT yet appended to source/mister_translation.html). Verified: 39 verses,
+&ldquo;/&rdquo; balanced 2/2, and **all nine syn- compounds render visibly** as
+"together with" (16, 26), "heirs together" / "suffer with" / "glorified together" (17),
+"groans together" / "travails together" (22), "work together" (28), "formed with" (29).
+
+Note anchors used, 9 groups: **n8-1** (vv1-4), **n8-5** (5-11), **n8-12** (12-14),
+**n8-15** (15-17), **n8-18** (18-22), **n8-23** (23-27), **n8-28** (28-30),
+**n8-31** (31-34), **n8-35** (35-39).
+
+Translation choices already made in those blocks, for consistency in the notes:
+- v19 "waits with its head craned" for *apokaradokia* (literally head-outstretched watching)
+- v21 "slavery of decay" for *phthora*; v18 "present season" for *kairos*
+- v26 "groanings unspeakable" for *stenagmois alalētois* (privative — un-speakable)
+- v29 "knew beforehand" / "marked out beforehand" for *proegnō* / *proōrisen* — kept as
+  transparent compounds rather than "foreknew/predestined", so the note can discuss what
+  the "pre-" is actually doing without the English having already decided
+- vv26,27,34 all use "pleads for" for *hyperentugchanei* / *entugchanei* — the same verb
+  family in all three, deliberately consistent
+
+## STILL TO DO
+1. **EN notes** — 9 grouped notes at the anchors above. Headline goes in n8-15/n8-18/n8-28
+   (the syn- thread crosses them); the two ⚠ cruxes are n8-1 (the Byzantine/KJV addition)
+   and n8-28 (WH's ὁ θεός); *proorizō* is n8-28 too, so that note carries the most weight.
+   ⚠ Still MUST verify the P46 attribution before naming manuscripts for the v28 reading.
+2. **Shelf fetch** — not yet done for this chapter. KJV/ASV via
+   `raw.githubusercontent.com/wldeh/bible-api/main/bibles/en-kjv/books/romans/chapters/8.json`;
+   RV 1909 same host, `es-rv09/books/romanos/chapters/8.json` (VERIFY the slug "romanos");
+   NWT 1984 `wol.jw.org/en/wol/b/r1/lp-e/Rbi8/45/8` and TNM `/es/wol/b/r4/lp-s/nwt/45/8`
+   (Romans = book 45). Aim for 20+ tags EN given 39 verses.
+3. EN info-block, then assemble panel `id="chapter-rom8"` (assert div balance first)
+4. ES twin `source/es/romans-8.html` (.panel closes BEFORE the notes header) — needs its
+   own shelf tags, t-rv/t-tnm, NOT zero
+5. The full library checklist above — dictionary + ES, encyclopedia + ES, xrefs w/ reverse
+   sweep, build.py registration, art, validation, screenshots, deploy
