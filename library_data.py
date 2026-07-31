@@ -1293,13 +1293,23 @@ DICTIONARY = [
     ("anothen", "anōthen", "ἄνωθεν", "anōthen",
      "FROM ABOVE — and also AGAIN. The word carries both, which is the whole engine of John 3: Jesus says a man must be born anōthen, Nicodemus hears the temporal sense and asks about re-entering a womb. ⚠ Counted in the SBLGNT archive it occurs 13 times in the New Testament and five are John's (3:3, 3:7, 3:31, 19:11, 19:23) — and every other Johannine use is SPATIAL (authority 'given from above,' a tunic woven 'from the top'), never temporal. The temporal sense is real elsewhere: Galatians 4:9 has men wanting to be enslaved anōthen, all over again. And John settles his own usage at 3:31, where 'the one coming anōthen' is glossed in the same verse by 'the one coming out of heaven.' No English word does both jobs, so every version breaks the hinge somewhere; both Spanish witnesses split it two ways inside this one chapter.", ("John", 3, 3)),
     ("pneuma", "pneuma", "πνεῦμα", "pneuma",
-     "BREATH, WIND, SPIRIT — one Greek word for all three, exactly as Hebrew ruach is. John 3:8 builds a sentence on the fact and uses the cognate verb with it (to pneuma... pnei, 'the pneuma blows'): the first half is plainly weather — it blows, you hear its sound, you cannot track it — and the second half is plainly the Spirit, because you are BORN of it. No translation keeps both; this one prints 'wind' and then 'Spirit' and flags the seam rather than hiding it.", ("John", 3, 8)),
+     "BREATH, WIND, SPIRIT — one Greek word for all three, exactly as Hebrew ruach is. John 3:8 builds a sentence on the fact and uses the cognate verb with it (to pneuma... pnei, 'the pneuma blows'): the first half is plainly weather — it blows, you hear its sound, you cannot track it — and the second half is plainly the Spirit, because you are BORN of it. No translation keeps both; this one prints 'wind' and then 'Spirit' and flags the seam rather than hiding it. ⚠ One chapter later the same noun raises a different question: John 4:24's pneuma ho theos is an anarthrous predicate standing before its subject — the identical construction as John 1:1 — so 'God is spirit' (qualitative) is what consistency with the prologue requires, rather than 'a spirit'.", ("John", 3, 8)),
     ("hypsoo", "hypsoō", "ὑψόω", "hypsoō",
      "To LIFT UP — and to EXALT. In John the two senses are never separable: he uses it of Jesus at 3:14, 8:28 and 12:32, and at 12:33 he stops and tells the reader outright that it was said 'signifying by what death he was about to die.' Raised on a stake and raised in glory are one verb in this Gospel, and the double is the author's own, not a commentator's. 'Lifted up' keeps both, barely.", ("John", 3, 14)),
     ("apeitheo", "apeitheō", "ἀπειθέω", "apeitheō",
      "To DISOBEY, refuse to be persuaded — and pointedly NOT apisteō, 'to disbelieve,' which Greek has and John does not use here. John 3:36 sets 'the one believing' against 'the one DISOBEYING' the Son, so the opposite of faith in that sentence is not an empty head but a refusal. KJV ('believeth not') and NIV ('rejects') soften it; ASV ('obeyeth not') and NWT ('disobeys') keep the root.", ("John", 3, 36)),
     ("phaulos", "phaulos", "φαῦλος", "phaulos",
      "WORTHLESS, shoddy, of no account — a milder word than ponēros, actively evil, and John 3 uses both one verse apart: people loved darkness because their works were ponēra (v19), and everyone doing phaula avoids the light (v20). The man who will not come into the light is not necessarily a villain; he may simply have nothing he wants looked at. Most versions flatten both to 'evil'; ASV and NWT distinguish them.", ("John", 3, 20)),
+    ("pege", "pēgē", "πηγή", "pēgē",
+     "A SPRING — water that moves by itself, as against a cistern or a dug shaft. ⚠ John 4 sets it against phrear and the two words sort by WHO IS SPEAKING: the narrator and Jesus say pēgē (4:6 twice; 4:14, 'a pēgē of water leaping up'), the woman says phrear (4:11, 12). They are looking at the same water and naming it differently, and the vocabulary IS the misunderstanding. The KJV prints 'well' at all four and the distinction vanishes; NWT ('fountain'/'well') and the archaic Spanish RV 1909 ('fuente'/'pozo') both keep it.", ("John", 4, 6)),
+    ("phrear", "phrear", "φρέαρ", "phrear",
+     "A DUG SHAFT — a well in the sense of a hole sunk to the water table, which you lower a vessel into; also a pit or cistern. The Samaritan woman's whole objection is built from this noun: 'you have nothing to draw with and the phrear is deep' (John 4:11). See pege for the pairing, which is the reason for cataloguing it separately.", ("John", 4, 11)),
+    ("hydor-zon", "hydōr zōn", "ὕδωρ ζῶν", "hydōr zōn",
+     "LIVING WATER — and in ordinary Greek that simply means RUNNING water, a spring or stream as against the still water of a cistern (Hebrew mayim chayyim does the same job, and certain purifications require it). This is why the woman at the well is not being slow when she hears an offer of fresh water: she is hearing the phrase correctly in its everyday sense. The same device as anothen one chapter earlier — the misunderstanding is a real possibility of the Greek, not a failure of the hearer.", ("John", 4, 10)),
+    ("egoeimi", "egō eimi", "ἐγώ εἰμι", "egō eimi",
+     "I AM — two ordinary words that can mean simply 'I'm he,' and that are also the Septuagint's phrase for God's self-naming. John 4:26 is the first time in this Gospel that Jesus says it to anybody, and the hearer is a Samaritan woman alone at noon. Whether the loud sense is audible there is a genuine question; by 8:58 ('before Abraham was, I am') it cannot be anything else. Most versions supply a 'he' to make an English sentence, which quietly closes the question.", ("John", 4, 26)),
+    ("synchraomai", "synchraomai", "συγχράομαι", "synchraomai",
+     "To HAVE DEALINGS WITH — or, on a narrower reading, to USE VESSELS IN COMMON. John 4:9's aside ('for Jews have no synchrōntai with Samaritans') is the word's only occurrence in the New Testament, so its exact force is inferred rather than known. The narrow reading fits the scene unusually well, since the whole exchange begins with a request to drink from her jar; the broad reading is the traditional one. The library reports both and adopts neither.", ("John", 4, 9)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5595,6 +5605,10 @@ XREFS = [
     (("Psalms", 91, 1), ("Psalms", 23, 4), "tzel, the shadow — death's in Psalm 23, God's here"),
     (("John", 3, 16), ("John", 1, 14), "monogenes — the word fixed at the prologue, collected here at its most famous occurrence; and both places are the narrator's voice, which is part of the argument about where Jesus' speech ends"),
     (("John", 3, 3), ("John", 3, 31), "anothen — the ambiguous 'from above / again' of verse 3, glossed by John himself twenty-eight verses later with 'the one coming out of heaven'"),
+    (("John", 4, 2), ("John", 3, 22), "the parenthesis that takes back 3:22's statement that Jesus baptized — the Gospel correcting itself, with neither half obviously the earlier hand"),
+    (("John", 4, 10), ("John", 3, 3), "living water / born from above — the same device twice: an outsider hears a double-meaning word correctly in its ORDINARY sense, and the conversation turns on it"),
+    (("John", 4, 24), ("John", 1, 1), "pneuma ho theos — the same anarthrous predicate construction as 'and the Word was God/divine', and the same readings compete"),
+    (("John", 4, 6), ("John", 3, 2), "the sixth hour against 'by night' — a foreign woman in full daylight set opposite a named ruler in the dark"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -10564,6 +10578,31 @@ DICTIONARY_ES = {
     "hypsoo": ("levantar, exaltar",
         "LEVANTAR — y EXALTAR. En Juan los dos sentidos no se separan: lo usa de Jesús en 3:14, 8:28 y 12:32, y en "
         "12:33 se detiene a decir que se dijo «indicando de qué muerte iba a morir»."),
+    "pege": ("fuente, manantial",
+        "UNA FUENTE — agua que se mueve por sí sola, frente a una cisterna o un pozo excavado. ⚠ Juan 4 la opone a "
+        "phrear y las dos palabras se reparten según QUIÉN HABLA: el narrador y Jesús dicen pēgē (4:6 dos veces; 4:14), "
+        "la mujer dice phrear (4:11, 12). Miran la misma agua y la nombran distinto, y el vocabulario ES el "
+        "malentendido. La RV 1909 conserva la distinción (fuente/pozo); la KJV imprime «well» en las cuatro y "
+        "desaparece."),
+    "phrear": ("pozo excavado",
+        "UN POZO EXCAVADO — un hueco abierto hasta la capa freática, en el que se baja un recipiente; también cisterna "
+        "o sima. Toda la objeción de la samaritana está hecha con este sustantivo: «no tienes con qué sacar y el phrear "
+        "es hondo» (Juan 4:11). Véase pege para el emparejamiento, que es la razón de catalogarlo aparte."),
+    "hydor-zon": ("agua viva",
+        "AGUA VIVA — y en griego corriente eso significa sencillamente agua CORRIENTE: un manantial o un arroyo frente "
+        "al agua quieta de una cisterna (el hebreo mayim chayyim hace lo mismo). Por eso la mujer del pozo no está "
+        "siendo lenta: oye la expresión correctamente en su sentido cotidiano. El mismo recurso que anothen un capítulo "
+        "antes."),
+    "egoeimi": ("yo soy",
+        "YO SOY — dos palabras corrientes que pueden significar sencillamente «soy yo», y que son además la fórmula con "
+        "que Dios se nombra en la Septuaginta. Juan 4:26 es la primera vez en este Evangelio que Jesús se lo dice a "
+        "alguien, y esa persona es una samaritana sola al mediodía. Si el sentido fuerte ya se oye ahí es una pregunta "
+        "legítima; en 8:58 ya no puede ser otra cosa."),
+    "synchraomai": ("tener trato con",
+        "TENER TRATO CON — o, en una lectura más estrecha, USAR VASIJAS EN COMÚN. El inciso de Juan 4:9 es su única "
+        "aparición en el Nuevo Testamento, así que su fuerza exacta se infiere. La lectura estrecha encaja "
+        "notablemente bien con la escena, que empieza con una petición de beber de su cántaro; la amplia es la "
+        "tradicional. La biblioteca expone las dos y no adopta ninguna."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -12140,5 +12179,53 @@ CHAPTER_ART = {
                 "el Jeremías del capítulo 18 de Jeremías.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Buonarroti,_Michelangelo_-_The_Brazen_Serpent_(restored).png",
+    )],
+    "jhn4": [dict(
+        file="lavinia-fontana-samaritan-woman.jpg",
+        title="Christ and the Samaritan Woman at the Well",
+        title_es="Cristo y la samaritana en el pozo",
+        artist="Lavinia Fontana",
+        year="1610s",
+        location="Museo Nazionale di Capodimonte, Naples",
+        location_es="Museo Nazionale di Capodimonte, Nápoles",
+        alt="An oil painting. At the left, a bearded man in a dark blue mantle over a deep red robe sits on the "
+            "stone kerb of a well, barefoot, resting his head on one hand as though tired, looking up; his other "
+            "hand is open in front of him, mid-gesture. At the right a woman stands over him, taller in the frame, "
+            "in a gold skirt, red bodice and blue mantle with a jewelled headdress, one hand on her hip and the "
+            "other on a copper water jar that sits on the well kerb with a rope running down into the shaft. "
+            "Behind them a landscape and a walled town, with three small figures on the road by its gate.",
+        note="&#9888; Almost every other painter has Jesus upright and teaching. Fontana reads verse 6 and paints "
+             "what it says: he is <strong>worn out from the journey</strong>, sitting on the kerb with his head "
+             "propped on his hand, barefoot &mdash; and he is looking <em>up</em>. <strong>She stands; he sits.</strong> "
+             "The woman is the taller figure, one hand on her hip, and the composition gives her the dominant "
+             "position in a conversation the disciples will shortly be scandalised by. &#9888; Note the jar: it is "
+             "still on the well with the rope running down into the water, so this is mid-conversation &mdash; before "
+             "<a href=\"#v4-28\">verse 28</a>, where she abandons it. The three small figures at the town gate are "
+             "the rest of the chapter, either the disciples gone to buy food (v8) or the town coming out (v30). "
+             "&#9888; And it is worth saying who painted it. <strong>Lavinia Fontana (1552&ndash;1614) is generally "
+             "reckoned the first professional woman painter of Renaissance Italy</strong> &mdash; she ran her own "
+             "studio in Bologna and later Rome, which is what distinguishes her from earlier women artists working "
+             "inside convents or courts, and left over a hundred documented works including monumental altarpieces. "
+             "In 1603 she was inducted into the all-male Academy of St Luke in Rome, an honour that eluded Caravaggio "
+             "&mdash; who appears twice elsewhere on these pages. On a chapter where the disciples are astonished not "
+             "that the woman is a Samaritan but that she is <em>a woman</em>, and where a town believes on her "
+             "testimony, the hand that made the picture is part of the note.",
+        note_es="&#9888; Casi todos los demás pintores ponen a Jesús de pie y enseñando. Fontana lee el versículo 6 y "
+                "pinta lo que dice: está <strong>cansado del camino</strong>, sentado en el brocal con la cabeza "
+                "apoyada en la mano, descalzo &mdash;y mira hacia arriba&mdash;. <strong>Ella está de pie; él "
+                "sentado.</strong> La mujer es la figura más alta, con una mano en la cadera, y la composición le da "
+                "la posición dominante en una conversación que los discípulos van a encontrar escandalosa. &#9888; "
+                "Obsérvese el cántaro: sigue sobre el pozo con la cuerda metida en el agua, así que esto es a mitad "
+                "de la conversación, antes del <a href=\"#v4-28\">versículo 28</a>, donde ella lo abandona. Las tres "
+                "figuritas junto a la puerta de la ciudad son el resto del capítulo. &#9888; Y conviene decir quién lo "
+                "pintó. <strong>Lavinia Fontana (1552-1614) suele considerarse la primera pintora profesional del "
+                "Renacimiento italiano</strong>: dirigió su propio taller en Bolonia y después en Roma &mdash;lo que "
+                "la distingue de las artistas anteriores, que trabajaban dentro de conventos o cortes&mdash; y dejó "
+                "más de cien obras documentadas, incluidos retablos monumentales. En 1603 ingresó en la Academia de "
+                "San Lucas de Roma, enteramente masculina, un honor que a Caravaggio se le escapó. En un capítulo "
+                "donde los discípulos se asombran no de que sea samaritana sino de que sea <em>mujer</em>, y donde un "
+                "pueblo cree por su testimonio, la mano que hizo el cuadro forma parte de la nota.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Lavinia_Fontana_-_Cristo_e_la_Samaritana_al_pozzo_-_Museo_Nazionale_di_Capodimonte.jpeg",
     )],
 }
