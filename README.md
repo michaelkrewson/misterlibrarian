@@ -78,6 +78,19 @@ python3 build_travel.py --drafts   # local preview incl. draft: true posts
   puts the full-size photos and any video in the durable blob store, so the Desktop
   copies can be deleted. `list` / `check` / `restore` do what they say. Only the
   web-sized derivatives belong in this repo.
+- **Voice memos become tasting notes** — `python3 tools/travel_transcribe.py <memo>
+  --archive <slug>` transcribes a memo recorded at the table and files the audio plus
+  a transcript next to that meal's photos. It runs Apple's **on-device** speech model:
+  no API key, no upload, nothing leaves the Mac — which is the point, since a memo is
+  Michael's voice in a public place. The texture and the one surprising thing about a
+  dish are exactly what's gone by the time the entry gets written, so thirty seconds
+  spoken at the table beats any amount of remembering later. ⚠ **Don't take the entry
+  from the filename** — Voice Memos names a recording after whatever venue its location
+  lookup resolves to, which on a street of restaurants is regularly a neighbour (the
+  St Honoré panini memo arrived called "Domaine Serene Wine Lounge"). ⚠ **The transcript
+  is a draft, not a quote** — the model mishears menu French ("brie" → "debris"), so the
+  archived `.txt` keeps the raw output as evidence and has a CORRECTIONS block to fill
+  in beside it. Never publish the audio itself.
 - **`build.py` and `build_travel.py` never touch each other's output** — the Bible
   builder writes only to the repo root and never globs or deletes elsewhere. Keep it
   that way: don't import one from the other.
