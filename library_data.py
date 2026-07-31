@@ -1335,6 +1335,27 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    {
+        "slug": "sychar", "name": "Sychar", "kind": "place", "aliases": ["Sychar"],
+        "desc": "The Samaritan town of John 4 \u2014 'a city of Samaria called Sychar, near the plot of ground Jacob gave to his son Joseph.' The whole chapter happens here, and the setting is doing work: it sits in the valley between Mount Ebal and Mount Gerizim, and Gerizim is the mountain the woman means when she says 'our fathers worshipped on THIS mountain' (4:20). Usually identified with the village of Askar on the lower slope of Ebal, a few hundred metres from Jacob's well; a minority view reads Sychar as a variant of Shechem itself, which lies just to the west. \u26a0 Coordinates take Askar and are marked approximate.",
+        "refs": [["John", 4, 5]],
+        "coords": [32.2131, 35.2856, 0.1], "approx": True,
+        "modern": "Askar, near Nablus, West Bank",
+    },
+    {
+        "slug": "jacobs-well", "name": "Jacob's Well", "kind": "place", "aliases": ["Jacob's well", "Bir Yaqub"],
+        "desc": "The well where the conversation of John 4 takes place \u2014 and one of the very few sites in the Gospels whose location has never seriously been in doubt, because the well is still there and still yields water. It is cut through rock to a depth of about 40 metres, which is why the woman's 'you have no bucket, and the well is deep' (4:11) is a practical objection rather than a symbolic one. The Hebrew Bible never actually calls it Jacob's, though Genesis 33:19 has Jacob buying the ground. A church has stood over it on and off since the fourth century; the present one is Greek Orthodox.",
+        "refs": [["John", 4, 6], ["John", 4, 11]],
+        "coords": [32.2106, 35.2814, 0.02],
+        "modern": "Bir Ya'qub, Balata, Nablus, West Bank",
+    },
+    {
+        "slug": "aenon", "name": "Aenon near Salim", "kind": "place", "aliases": ["Aenon", "Salim"],
+        "desc": "Where John was baptising in John 3:23, 'because there was much water there' \u2014 a detail the Gospel bothers to explain, which suggests the place was obscure even to its first readers. The name is Aramaic for 'springs'. \u26a0 The location is genuinely unknown: candidates include a cluster of springs in the Jordan valley south of Beth-shan, and a Salim east of Nablus. Coordinates take the Beth-shan area and are marked approximate; this is a guess with a pedigree, not an identification.",
+        "refs": [["John", 3, 23]],
+        "coords": [32.3392, 35.5297, 0.3], "approx": True,
+        "modern": "disputed \u2014 possibly the springs south of Beth-shan (Beit She'an)",
+    },
     dict(slug="pontius-pilate", name="Pontius Pilate", kind="person",
          aliases=["Pilate"],
          refs=[("Matthew", 27, 2)],
@@ -10644,6 +10665,8 @@ DICTIONARY_ES = {
     "ainigma": ("a\u00ednigma", "ENIGMA, acertijo. 1 Corintios 13:12 dice que vemos 'en enigma', que RV convierte en 'en obscuridad' \u2014 un problema de SENTIDO transformado en un problema de luz. Lo que tenemos ahora no es una imagen tenue sino un acertijo: algo dicho en una forma que hay que descifrar."),
     "meizon": ("me\u00edz\u014dn", "MAYOR \u2014 comparativo, no superlativo. 'La mayor de todas' ser\u00eda meg\u00edst\u0113 en griego, y Pablo no lo escribi\u00f3. Aqu\u00ed el espa\u00f1ol acierta donde el ingl\u00e9s no: RV y TNM escriben 'la mayor', el comparativo ordinario, mientras que las versiones inglesas fuerzan 'the greatest'. El amor es mayor porque es el \u00fanico de los tres que no queda abolido."),
     "stego": ("st\u00e9go", "CUBRIR \u2014 de stege, tejado. De ah\u00ed amparar algo y tambi\u00e9n contenerlo, y de ah\u00ed la ambig\u00fcedad real de 1 Corintios 13:7: el amor o lo SOPORTA todo o lo CUBRE todo, y el griego admite las dos. La ambig\u00fcedad es de Pablo."),
+    "apeitheo": ("apeith\u00e9o", "DESOBEDECER, negarse a ser persuadido \u2014 y precisamente NO apist\u00e9o, 'no creer', que el griego tiene y que Juan no usa aqu\u00ed. Juan 3:36 opone 'el que cree' a 'el que DESOBEDECE' al Hijo: lo contrario de la fe en esa frase no es una cabeza vac\u00eda sino una negativa. RV ('el que es incr\u00e9dulo') lo suaviza; TNM ('desobedece') conserva la ra\u00edz."),
+    "phaulos": ("phaulos", "SIN VALOR, chapucero, de poca monta \u2014 palabra m\u00e1s suave que pon\u0113r\u00f3s, 'activamente malo', y Juan 3 usa las dos con un vers\u00edculo de diferencia: amaron las tinieblas porque sus obras eran pon\u0113r\u00e1 (v. 19), y todo el que hace phaula rehuye la luz (v. 20). El que no viene a la luz no es forzosamente un villano; puede que simplemente no tenga nada que quiera que le miren."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -10770,6 +10793,11 @@ ENCYCLOPEDIA_ES = {
         "identificación es razonable, pero son los capítulos vecinos los que aportan el nombre, no este."),
     "corinth": ("Corinto", "Ciudad griega en el istmo estrecho que une el Peloponeso con el continente, due\u00f1a de dos puertos \u2014 uno hacia Italia y otro hacia Asia \u2014 y cobraba por el privilegio; los barcos peque\u00f1os se arrastraban enteros por el di\u00f3lkos de seis kil\u00f3metros antes que arriesgarse a doblar el cabo. Roma destruy\u00f3 la ciudad antigua en 146 a.C. y Julio C\u00e9sar la refund\u00f3 en 44 a.C. como colonia poblada en buena parte por libertos, de modo que el Corinto que Pablo conoci\u00f3 apenas ten\u00eda un siglo: romano en derecho, griego en habla, rico, de dinero nuevo y sin abolengo \u2014 justo la sensibilidad que 1 Corintios 1:26 aprieta. Fabricaba adem\u00e1s espejos de bronce pulido, lo que probablemente explica la comparaci\u00f3n de 1 Corintios 13:12."),
     "paul": ("Pablo", "Saulo de Tarso \u2014 jud\u00edo de habla griega de la tribu de Benjam\u00edn, formado como fariseo, ciudadano romano de nacimiento y el autor de cartas m\u00e1s influyente de la historia. Aparece por primera vez en Hechos aprobando la muerte de Esteban, es detenido en el camino de Damasco y pasa las tres d\u00e9cadas siguientes fundando congregaciones por Asia Menor y Grecia y sosteniendo que los gentiles pod\u00edan pertenecer al Dios de Israel sin hacerse jud\u00edos \u2014 el argumento que convirti\u00f3 al cristianismo en religi\u00f3n mundial y no en secta. Trece cartas llevan su nombre; siete son indiscutidas."),
+    "nicodemus": ("Nicodemo", "Fariseo y <em>arj\u014dn</em> \u2014 dirigente, casi con seguridad miembro del consejo \u2014 que viene a Jes\u00fas de noche en Juan 3. \u26a0 Su nombre es griego, no hebreo: <em>Nikod\u0113mos</em>, 'victoria del pueblo', cosa nada rara entre la aristocracia de Jerusal\u00e9n. Reaparece dos veces m\u00e1s, y siempre un poco m\u00e1s cerca: pide un juicio justo para Jes\u00fas en 7:50-51 y lleva treinta kilos de mirra y \u00e1loe al entierro en 19:39."),
+    "cana": ("Can\u00e1 de Galilea", "La aldea galilea de la primera se\u00f1al \u2014 el agua convertida en vino en una boda (Juan 2:1-11) \u2014 y tambi\u00e9n el pueblo de Natanael (Juan 21:2), lo que sazona su '\u00bfde Nazaret puede salir algo bueno?' con rivalidad local. El sitio se disputa: Kafr Kanna, en la ruta de peregrinaci\u00f3n cerca de Nazaret, tiene las iglesias; Khirbet Qana, al otro lado del valle de Bet Netofa, tiene mejor arqueolog\u00eda. Las coordenadas toman Khirbet Qana, marcadas como aproximadas."),
+    "sychar": ("Sicar", "La ciudad samaritana de Juan 4 \u2014 'una ciudad de Samaria llamada Sicar, junto a la heredad que Jacob dio a su hijo Jos\u00e9'. Todo el cap\u00edtulo ocurre aqu\u00ed, y el escenario trabaja: est\u00e1 en el valle entre el monte Ebal y el monte Guerizim, y Guerizim es el monte que la mujer se\u00f1ala al decir 'nuestros padres adoraron en ESTE monte' (4:20). Suele identificarse con la aldea de Askar, a unos cientos de metros del pozo de Jacob. \u26a0 Coordenadas aproximadas."),
+    "jacobs-well": ("El pozo de Jacob", "El pozo donde transcurre la conversaci\u00f3n de Juan 4 \u2014 y uno de los poqu\u00edsimos lugares evang\u00e9licos cuya ubicaci\u00f3n nunca se ha puesto seriamente en duda, porque el pozo sigue ah\u00ed y sigue dando agua. Est\u00e1 excavado en la roca hasta unos 40 metros, y por eso el 'no tienes con qu\u00e9 sacarla, y el pozo es hondo' (4:11) es una objeci\u00f3n pr\u00e1ctica y no simb\u00f3lica. Sobre \u00e9l se levanta desde el siglo IV, con interrupciones, una iglesia; la actual es griega ortodoxa."),
+    "aenon": ("Enon, junto a Sal\u00edm", "Donde Juan bautizaba en Juan 3:23, 'porque hab\u00eda all\u00ed muchas aguas' \u2014 detalle que el Evangelio se molesta en explicar, se\u00f1al de que el lugar ya resultaba oscuro para sus primeros lectores. El nombre es arameo y significa 'manantiales'. \u26a0 La ubicaci\u00f3n es realmente desconocida; las coordenadas toman la zona de Bet Shean y son una conjetura con pedigr\u00ed, no una identificaci\u00f3n."),
 }
 
 # Places, so the Spanish atlas has real content rather than an empty page. The
