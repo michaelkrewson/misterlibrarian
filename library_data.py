@@ -244,7 +244,7 @@ DICTIONARY = [
     ("nasa", "nasa", "נָשָׂא", "nasa",
      "To carry, bear, lift — one root doing three jobs in Genesis 13: the land 'could not bear' Abram and Lot together (13:6), then each of them 'lifts up' his eyes (13:10, 13:14) to opposite ends.", (13, 6)),
     ("nefesh", "nefesh chayah", "נֶפֶשׁ חַיָּה", "nefesh chayah",
-     "A living creature/being — fish, birds, animals, and humans alike; not an immaterial 'soul' inside a body.", (1, 20)),
+     "A living creature/being — fish, birds, animals, and humans alike; not an immaterial 'soul' inside a body. ⚠ Psalm 23:3 is where that matters most to an English reader: nafshi yeshovev is not 'he restoreth my soul' but 'he brings my LIFE back' — shuv, to turn back, applied to the whole living self. Put 'soul' beside 'restore' and English manufactures a Platonic sentence the Hebrew does not contain. The two shelves split on it: the English NWT 1984 keeps 'My soul he refreshes' while the Spanish TNM reads 'Renueva mis fuerzas,' renews my strength.", (1, 20)),
     ("nephilim", "Nephilim", "נְפִלִים", "Nefilim",
      "Beings 'on the earth in those days' (6:4); meaning unknown (possibly 'fallen ones'); LXX rendered 'giants.' Recur only at Numbers 13:33.", (6, 4)),
     ("olah", "olah", "עֹלָה", "olah",
@@ -276,7 +276,7 @@ DICTIONARY = [
     ("shamar", "shamar", "שָׁמַר", "shamar",
      "To keep, guard, watch over — the human's garden vocation (2:15), disowned by Cain ('my brother's keeper?', 4:9).", (2, 15)),
     ("shem", "shem", "שֵׁם", "shem",
-     "Name — what Babel grasps at ('let us make a name,' 11:4) and God gives ('I will make your name great,' 12:2). Also Noah's son Shem.", (11, 4)),
+     "Name — what Babel grasps at ('let us make a name,' 11:4) and God gives ('I will make your name great,' 12:2). Also Noah's son Shem. In Psalm 23:3 it is the reason the shepherd acts at all — lema'an shemo, 'for the sake of his name.'", (11, 4)),
     ("sherets", "sherets", "שֶׁרֶץ", "sherets",
      "Swarming things — the cognate behind 'swarm with swarms' (1:20).", (1, 20)),
     ("shuf", "shuf", "שׁוּף", "shuf",
@@ -510,7 +510,7 @@ DICTIONARY = [
     ("gophrit", "gophrit", "גָּפְרִית", "gophrit",
      "Sulfur — the old Bibles' 'brimstone' — rained with fire on the cities (19:24); afterwards the fixed image of scorched judgment (Deuteronomy 29:23; Job 18:15; Revelation keeps it to the end).", (19, 24)),
     ("chesed", "chesed", "חֶסֶד", "chesed",
-     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels.", (19, 19)),
+     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels. ⚠ Psalm 23:6 pairs it with tov and hands both to radaph, the hunting verb: goodness and chesed do not follow the psalmist, they pursue him.", (19, 19)),
     ("chemlah", "chemlah", "חֶמְלָה", "chemlah",
      "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
     ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
@@ -1113,7 +1113,7 @@ DICTIONARY = [
     ("pechah", "pechah", "פֶּחָה", "pechah",
      "GOVERNOR — a loan-word (Akkadian pihatu, later Persian) for the imperial official set over a province, NOT a native king. It is the office Zerubbabel holds over Judah under Darius (Haggai 1:1, 14), and the same title Nehemiah will hold and pointedly refuse to profit from (Nehemiah 5:14-18). Its ordinariness is the point: the house of David now governs as a mid-level administrator of Persia, and even that only by imperial appointment.", ("Haggai", 1, 1)),
     ("shuv", "shuv", "שׁוּב", "shuv",
-     "To RETURN, turn back, repent — the central verb of the prophets, and the engine of Zechariah 1. 'Return (shuvu) to me, and I will return (ashuvah) to you' (1:3) makes repentance reciprocal: not a work that earns God's favor but a turning that God both initiates and answers (Malachi 3:7 quotes the same line). The word threads the chapter — the fathers who would not turn (1:4), the fathers who finally turned back and confessed (1:6), and God himself who has 'returned to Jerusalem with compassion' (1:16). Its noun teshuvah is the Hebrew word for repentance to this day.", ("Zechariah", 1, 3)),
+     "To RETURN, turn back, repent — the central verb of the prophets, and the engine of Zechariah 1. 'Return (shuvu) to me, and I will return (ashuvah) to you' (1:3) makes repentance reciprocal ⚠ In Psalm 23 the same root frames the psalm's second half: at v3 he 'brings my life BACK' (yeshovev, polel) and at v6 'I shall come BACK to the house of Jehovah' (ve-shavti) — if the Masoretic pointing stands, since those consonants can also be read as yashav, 'dwell,' which is what nearly every version prints, erasing the frame.: not a work that earns God's favor but a turning that God both initiates and answers (Malachi 3:7 quotes the same line). The word threads the chapter — the fathers who would not turn (1:4), the fathers who finally turned back and confessed (1:6), and God himself who has 'returned to Jerusalem with compassion' (1:16). Its noun teshuvah is the Hebrew word for repentance to this day.", ("Zechariah", 1, 3)),
     ("hadas", "hadas", "הֲדַס", "hadas",
      "The MYRTLE — a low, fragrant, evergreen shrub. Its branches are among the 'boughs of leafy trees' waved at the Feast of Booths (Nehemiah 8:15), and it is the plant behind a famous name: Esther's Hebrew name is HADASSAH, 'myrtle.' In Zechariah's first vision the divine horseman-patrol stands 'among the myrtle trees that were in the ravine' (1:8) — Israel pictured as something small, sweet-smelling, and in the shade, with heaven's cavalry planted right in its midst. Isaiah makes the myrtle a sign of the reversed curse: 'instead of the brier, the myrtle' (55:13).", ("Zechariah", 1, 8)),
     ("nicham", "nacham", "נָחַם", "nacham",
@@ -1270,6 +1270,16 @@ DICTIONARY = [
      "WORMWOOD — the bitter Artemisia shrub of the Near East, the Bible's standing image for a taste that punishes. It arrives in pairs: 'a root bearing rosh and la'anah' (Deuteronomy 29:18), and here 'I am feeding them WORMWOOD and giving them mei-rosh to drink' (Jeremiah 23:15) — rosh being a second bitter or venomous plant, KJV's 'water of gall.' Lamentations makes it the taste of the whole catastrophe, 'the wormwood and the gall' (3:19). Not poison in the sense of a quick death; the point is that it must be swallowed and it cannot be enjoyed. Greek apsinthos carries it into Revelation 8:11 as the name of a falling star.", ("Jeremiah", 23, 15)),
     ("sheqer", "sheqer", "שֶׁקֶר", "sheqer",
      "FALSEHOOD, the Lie — and in Jeremiah it is nearly a proper noun. Not merely an untrue statement: a whole way of standing in the world that has no ground under it. The prophets 'prophesy sheqer in my name' and tell 'dreams of sheqer' (23:25, 32); the people 'walk in the sheqer' (23:14). It is the ninth commandment's word for a lying witness (Exodus 20:16) and the word for the deceitful balance (Proverbs 11:1). Its opposite in this chapter is not accuracy but emet — speaking God's word 'faithfully' (23:28) — and its natural companion is hevel, vapor: what the false prophets sell is empty, and what it makes of their hearers is empty too.", ("Jeremiah", 23, 25)),
+    ("tsalmavet", "tsalmavet", "צַלְמָוֶת", "tsalmavet",
+     "DEEPEST DARKNESS — the word behind 'the shadow of death.' The Masoretes pointed it tsal-mavet, which reads as a compound of tsel (shadow) and mavet (death); most modern lexicons instead re-point it tsalmut, an abstract noun from a root meaning 'be dark' (compare Akkadian salamu), and treat 'shadow of death' as an ancient folk etymology. The difference lies entirely in the vowels, which the consonantal text does not carry, so both readings are old and both are defensible. Counted in the Masoretic text it occurs 18 times — ten in Job, four in Psalms (23:4, 44:19, and twice in 107), two in Jeremiah, one each in Isaiah and Amos. Either way it is the darkest word Hebrew has, and this translation prints the Masoretic pointing because that is the standing rule, not because it is the familiar one.", ("Psalms", 23, 4)),
+    ("radaph", "radaph", "רָדַף", "radaph",
+     "To PURSUE, chase, hunt down — a hostile verb. It is what Egypt does to Israel at the sea and what Saul does to David through the wilderness. Psalm 23 ends by taking this word, worn smooth by a lifetime of enemies, and handing it to goodness and chesed: what hunts this man down is mercy. 'Follow' — the rendering of nearly every familiar version, and of both Spanish witnesses — is far too polite for it; the NWT's 'will pursue me' and the Septuagint's katadioxetai ('shall chase me down') are the exact ones.", ("Psalms", 23, 6)),
+    ("maagal", "ma'gal", "מַעְגָּל", "ma'gal",
+     "A WHEEL-TRACK, a rut — from agol, round. Not an abstract 'path' but the groove worn into ground by traffic that has already gone that way. So ma'gelei tzedek (Psalm 23:3) are worn tracks of righteousness, a route that is already there rather than a moral abstraction; the NWT alone on the shelf prints 'tracks.' The same noun is all over Proverbs for the course a life actually runs.", ("Psalms", 23, 3)),
+    ("dashen", "dashen", "דָּשֵׁן", "dashen",
+     "To make FAT, rich, greasy — and so to anoint generously with oil. The point of cataloguing it is what it is NOT: mashach, the verb for anointing kings, priests and prophets, from which mashiach (Messiah) is formed. When Psalm 23:5 says 'you have dishanta my head with oil,' it describes a host oiling a guest at a feast, ordinary hospitality, not a consecration. The NWT's 'greased' is literal to the point of ugliness and right about the root; the KJV's 'anointest' imports precisely the sense the verb avoids.", ("Psalms", 23, 5)),
+    ("mizmor", "mizmor", "מִזְמוֹר", "mizmor",
+     "A PSALM — strictly, a song sung to a plucked instrument (root zamar, to pluck strings), which is why the Greek psalmos and English 'psalm' follow it. Fifty-seven psalms carry the word in their heading. Worth pairing with the little prefix le- that so often follows it (le-David): le- means of, by, for, and belonging to all at once, so a heading like mizmor le-David is a heading and not a signature, and this library reports it as such rather than settling a question the Hebrew leaves open.", ("Psalms", 23, 1)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5548,6 +5558,10 @@ XREFS = [
     (("Jeremiah", 23, 28), ("Exodus", 5, 7), "teven, 'straw' — the chopped stalk Pharaoh stopped supplying for bricks; not chaff but leftovers, weighed here against the grain"),
     (("Jeremiah", 23, 29), ("Jeremiah", 20, 9), "'my word like fire' — the fire that consumed the prophet from inside when he tried to stop preaching is here aimed outward at the audience"),
     (("Jeremiah", 23, 32), ("Genesis", 49, 4), "pachazut, 'recklessness' — the noun of the adjective flung at Reuben, 'unstable as water'"),
+    (("Psalms", 23, 1), ("Jeremiah", 23, 1), "ro'i, 'my shepherd' — the same royal metaphor argued from the opposite end: here the shepherd who did not fail, there the woe on the shepherds who did"),
+    (("Psalms", 23, 3), ("Genesis", 12, 2), "lema'an shemo, 'for the sake of his name' — the shem Babel grasped at and God gave away, here the reason the shepherd acts at all"),
+    (("Psalms", 23, 4), ("Genesis", 5, 29), "yenachamuni, 'they comfort me' — nacham in its plainest mood, the root that carried Noah's name-hope and then God's regret"),
+    (("Psalms", 23, 6), ("Psalms", 23, 3), "shuv — he brings my life BACK (v3) and I shall come BACK to his house (v6): the root framing the psalm's second half, if the Masoretic pointing stands"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -10394,6 +10408,55 @@ DICTIONARY_ES = {
         "sino emet — hablar la palabra de Dios «con fidelidad» (23:28) — y su compañera natural es "
         "hevel, vapor: lo que venden los falsos profetas está vacío, y deja vacío también a quien los "
         "oye."),
+    "tsalmavet": ("oscuridad profunda",
+        "LA OSCURIDAD MÁS PROFUNDA — la palabra tras «sombra de muerte». Los masoretas la vocalizaron "
+        "tsal-mavet, que se lee como compuesto de tsel (sombra) y mavet (muerte); la mayoría de los léxicos "
+        "modernos revocaliza tsalmut, sustantivo abstracto de una raíz que significa «ser oscuro» (compárese "
+        "el acadio salamu), y considera «sombra de muerte» una etimología popular antigua. La diferencia está "
+        "entera en las vocales, que el texto consonántico no trae. Contada en el texto masorético aparece 18 "
+        "veces: diez en Job, cuatro en los Salmos, dos en Jeremías, una en Isaías y una en Amós."),
+    "radaph": ("perseguir",
+        "PERSEGUIR, dar caza — un verbo hostil: es lo que Egipto hace con Israel hasta el mar y lo que Saúl "
+        "hace con David por el desierto. El Salmo 23 termina tomando esa palabra, gastada toda su vida en "
+        "enemigos, y poniéndola en manos del bien y del amor leal: lo que le da caza a este hombre es la "
+        "misericordia. «Seguirán» (RV) y «me acompañarán» (TNM) son demasiado corteses; la Septuaginta "
+        "acierta con katadioxetai, dará caza."),
+    "maagal": ("rodada, senda trillada",
+        "UNA RODADA de rueda, un surco — de agol, redondo. No una «senda» abstracta, sino el surco que el "
+        "tránsito anterior ha abierto en el suelo. Así, ma'gelei tzedek (Salmo 23:3) son rodadas de justicia, "
+        "una ruta que ya está ahí, y no una abstracción moral. El mismo sustantivo abunda en Proverbios para "
+        "el curso que una vida recorre de hecho."),
+    "dashen": ("engrasar, untar de aceite",
+        "ENGORDAR, hacer rico o graso, y de ahí untar generosamente de aceite. Lo que importa catalogar es lo "
+        "que NO es: mashach, el verbo de ungir reyes, sacerdotes y profetas, del que sale mashiaj, Mesías. "
+        "Cuando el Salmo 23:5 dice «has dishanta mi cabeza con aceite» describe a un anfitrión untando a su "
+        "huésped en un banquete — hospitalidad corriente —, no una consagración."),
+    "mizmor": ("salmo",
+        "UN SALMO — en rigor, un canto acompañado de instrumento de cuerda (raíz zamar, pulsar), de donde el "
+        "griego psalmos y el castellano «salmo». Cincuenta y siete salmos llevan la palabra en su "
+        "encabezamiento. Conviene emparejarla con el prefijo le- que suele seguirla (le-David): le- significa "
+        "a la vez de, por, para y perteneciente a, de modo que mizmor le-David es un encabezamiento y no una "
+        "firma."),
+    "nefesh": ("nefesh — ser viviente",
+        "SER VIVIENTE — la garganta, el aliento, el apetito, la vida, el yo entero: la criatura viva completa, "
+        "no una parte inmaterial alojada dentro de ella. Peces, aves, animales y seres humanos son por igual "
+        "nefesh chayah. ⚠ Donde más importa en castellano es en el Salmo 23:3: nafshi yeshovev no es "
+        "«confortará mi alma» sino «me hace volver la VIDA». Las dos estanterías se parten sobre la palabra: "
+        "la NWT inglesa conserva «soul» y la TNM lee «Renueva mis fuerzas»."),
+    "chesed": ("amor leal",
+        "AMOR LEAL, bondad de pacto — uno de los grandes intraducibles de la Biblia, y la palabra tras la "
+        "«misericordia» de los Salmos. ⚠ El Salmo 23:6 lo empareja con tov y entrega ambos a radaph, el verbo "
+        "de caza: el bien y el amor leal no siguen al salmista, lo persiguen."),
+    "shem": ("nombre",
+        "NOMBRE — lo que Babel intenta agarrar («hagámonos un nombre», Génesis 11:4) y lo que Dios regala "
+        "(«engrandeceré tu nombre», 12:2). En el Salmo 23:3 es la razón misma por la que el pastor actúa: "
+        "lema'an shemo, «por causa de su nombre»."),
+    "shuv": ("volver",
+        "VOLVER, tornarse, arrepentirse — el verbo central de los profetas. ⚠ En el Salmo 23 la misma raíz "
+        "enmarca la segunda mitad del poema: en v3 él «me hace VOLVER la vida» (yeshovev) y en v6 "
+        "«VOLVERÉ a la casa de Jehová» (ve-shavti) — si se sostiene la vocalización masorética, porque esas "
+        "consonantes también admiten yashav, «habitar», que es lo que casi toda versión imprime, borrando el "
+        "marco."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -11845,5 +11908,37 @@ CHAPTER_ART = {
                 "ciudad al fondo, donde encontrarán a aquel sobre quien han sido enviados a preguntar.",
         license="CC0",
         source_url="https://commons.wikimedia.org/wiki/File:Saint_John_the_Baptist_in_Prison_Sends_His_Disciples_to_Question_Jesus_MET_DP810371.jpg",
+    )],
+    "psalms23": [dict(
+        file="eastman-johnson-lord-is-my-shepherd.jpg",
+        title="The Lord Is My Shepherd",   title_es="Jehová es mi pastor",
+        artist="Eastman Johnson",
+        year="1863",
+        location="Smithsonian American Art Museum, Washington, D.C.",
+        location_es="Smithsonian American Art Museum, Washington D. C.",
+        alt="A dark interior. A Black man in a white shirt and dark waistcoat sits alone on a low seat, "
+            "head bent, holding a small open book in both hands and reading it. A plank door stands open "
+            "behind him on the left. Embers glow on the floor at the lower right. The only light in the "
+            "picture falls on his shirt and on the open page.",
+        note="&#9888; The painting is titled from this psalm and contains none of it &mdash; no shepherd, no "
+             "pasture, no ravine, no table, no enemies. A man sits alone in a dark room with a book, and the "
+             "only light in the picture is on the page he is reading. Johnson painted it in 1863, the year of "
+             "the Emancipation Proclamation; the bundle he is sitting against is a blue jacket, usually read "
+             "as Union army service, and the book is open near its front, which is why the museum suggests he "
+             "may be in Exodus rather than the Psalms. Reading was precisely what had been withheld &mdash; "
+             "teaching an enslaved person to read was a crime in much of the South &mdash; so literacy is the "
+             "subject and the psalm is the title. &#9888; It is also far smaller than it photographs: oil on "
+             "wood, 42 &times; 33 cm, about the size of a sheet of paper.",
+        note_es="&#9888; El cuadro se titula con este salmo y no contiene nada de él: ni pastor, ni pastos, ni "
+                "barranco, ni mesa, ni enemigos. Un hombre sentado a solas en un cuarto oscuro con un libro, y "
+                "la única luz del cuadro cae sobre la página que lee. Johnson lo pintó en 1863, el año de la "
+                "Proclamación de Emancipación; el bulto en que se apoya es una casaca azul, leída normalmente "
+                "como servicio en el ejército de la Unión, y el libro está abierto cerca del principio, por lo "
+                "que el museo sugiere que quizá esté en Éxodo y no en los Salmos. Leer era justamente lo que se "
+                "le había negado &mdash; enseñar a leer a una persona esclavizada era delito en buena parte del "
+                "Sur &mdash;, de modo que el tema es la alfabetización y el salmo es el título. &#9888; Es "
+                "además mucho más pequeño de lo que parece en fotografía: óleo sobre tabla, 42 &times; 33 cm.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Eastman_Johnson_-_The_Lord_Is_My_Shepherd_-_Google_Art_Project.jpg",
     )],
 }
