@@ -12094,4 +12094,51 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Stuttgart_Psalter_fol23.jpg",
     )],
+    "jhn3": [dict(
+        file="michelangelo-brazen-serpent.jpg",
+        title="The Brazen Serpent",
+        title_es="La serpiente de bronce",
+        artist="Michelangelo",
+        artist_es="Miguel Ángel",
+        year="c. 1511",
+        location="Sistine Chapel ceiling, Vatican (corner pendentive)",
+        location_es="Bóveda de la Capilla Sixtina, Vaticano (pechina de esquina)",
+        alt="A curved triangular ceiling panel inside a carved stone moulding. On the left, a small group of "
+            "clothed figures stands upright, arms raised, all of them looking toward a slender bronze snake "
+            "coiled around a pale upright pole at the centre. The right two-thirds of the panel is a tangle of "
+            "mostly naked bodies being crushed and bitten by large green serpents; the figures are twisted and "
+            "foreshortened, their faces open in shouts, one man wrapped from shoulder to knee by a snake.",
+        note="This is the scene <a href=\"#v3-14\">verse 14</a> reaches for &mdash; Numbers 21, the bronze serpent "
+             "Moses raised in the wilderness &mdash; painted on one of the four corner pendentives of the Sistine "
+             "ceiling, all four of which are deliverances (the others are Judith, David and Goliath, and the "
+             "punishment of Haman). &#9888; But look at how the space is divided. The <strong>remedy is small, pale "
+             "and easy to miss</strong> &mdash; a thin snake on a thin pole at the centre &mdash; while the "
+             "<strong>plague fills two-thirds of the picture</strong> in a mass of twisting bodies and heavy green "
+             "serpents. Michelangelo gives the rescue a fraction of the field and the suffering nearly all of it. "
+             "&#9888; And notice what the saved are actually <em>doing</em>: on the left they are standing, arms up, "
+             "<strong>looking</strong>. That is the whole mechanism in Numbers &mdash; whoever was bitten looked at "
+             "it and lived &mdash; and it is why this is the picture John 3 wants, because the verse it is attached "
+             "to compares that looking to believing. The snake wound round an upright staff also happens to make the "
+             "shape the typology needs, which no one in 1511 would have thought accidental. &#9888; The awkward "
+             "triangular field is doing work too: the bodies are foreshortened and piled into the narrowing corner, "
+             "which is a virtuoso solution to a bad canvas and also, incidentally, makes the dying look like they "
+             "are sliding off the bottom of the world. This is the second image from this ceiling on these pages "
+             "&mdash; the Jeremiah at <a href=\"jeremiah-18.html\">Jeremiah 18</a> is the other.",
+        note_es="Esta es la escena a la que remite el <a href=\"#v3-14\">versículo 14</a> &mdash;Números 21, la "
+                "serpiente de bronce que Moisés levantó en el desierto&mdash;, pintada en una de las cuatro pechinas "
+                "de esquina de la bóveda Sixtina, las cuatro escenas de liberación (las otras son Judit, David y "
+                "Goliat, y el castigo de Amán). &#9888; Pero obsérvese el reparto del espacio. El <strong>remedio es "
+                "pequeño, pálido y fácil de pasar por alto</strong> &mdash;una serpiente delgada en un palo "
+                "delgado&mdash;, mientras que la <strong>plaga ocupa dos tercios del cuadro</strong> en una maraña de "
+                "cuerpos retorcidos y serpientes verdes enormes. Miguel Ángel le da al rescate una fracción del "
+                "campo y al sufrimiento casi todo. &#9888; Y nótese qué están <em>haciendo</em> los salvados: a la "
+                "izquierda están de pie, con los brazos en alto, <strong>mirando</strong>. Ese es todo el mecanismo "
+                "en Números &mdash;el mordido miraba y vivía&mdash; y por eso es la imagen que Juan 3 necesita, "
+                "porque el versículo al que va unida compara ese mirar con el creer. La serpiente enroscada en un "
+                "asta vertical forma además la figura que la tipología requiere, cosa que nadie en 1511 habría "
+                "tenido por casual. &#9888; Es la segunda imagen de esta misma bóveda en estas páginas: la otra es "
+                "el Jeremías del capítulo 18 de Jeremías.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Buonarroti,_Michelangelo_-_The_Brazen_Serpent_(restored).png",
+    )],
 }
