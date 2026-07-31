@@ -282,7 +282,7 @@ DICTIONARY = [
     ("shuf", "shuf", "שׁוּף", "shuf",
      "To crush / strike at — the rare verb (3× in the Bible) of the serpent's head and the offspring's heel.", (3, 15)),
     ("tannin", "tannin", "תַּנִּין", "tannin",
-     "Sea-beast; elsewhere serpent or dragon — the 'chaos monsters' listed as ordinary day-five creations.", (1, 21)),
+     "Sea-beast; elsewhere serpent or dragon — the 'chaos monsters' listed as ordinary day-five creations. ⚠ Psalm 91:13 puts one underfoot: the last of four beasts a man treads on, which quietly escalates the verse from road-hazards to the monster of the deep.", (1, 21)),
     ("tehom", "tehom", "תְּהוֹם", "tehom",
      "The deep — the primeval ocean of 1:2, whose springs burst open again at 7:11.", (1, 2)),
     ("teshuqah", "teshuqah", "תְּשׁוּקָה", "teshuqah",
@@ -326,7 +326,7 @@ DICTIONARY = [
     ("ivri", "ivri", "עִבְרִי", "ivri",
      "'Hebrew' — its first appearance in the Bible, on Abram (14:13). Most naturally 'a descendant of Eber' (10:21), the name flagged back in the Table of Nations; an older theory instead links it to the apiru, the landless outsiders of the ancient Near East.", (14, 13)),
     ("elyon", "El Elyon", "אֵל עֶלְיוֹן", "El Elyon",
-     "'God Most High' — the title under which Melchizedek, a Canaanite priest-king, blesses Abram (14:18); Abram then identifies his own YHWH with this Most High God (14:22).", (14, 18)),
+     "'God Most High' — the title under which Melchizedek, a Canaanite priest-king, blesses Abram (14:18); Abram then identifies his own YHWH with this Most High God (14:22). Psalm 91 opens by stacking it with three more names in two verses — Elyon, Shaddai, YHVH, 'my God' — moving from the highest title to the most personal possessive in a breath.", (14, 18)),
     ("qoneh", "qoneh", "קֹנֵה", "qoneh",
      "'Maker, creator, possessor' (from qanah) — 'Maker of heaven and earth' (14:19); the same root Eve punned on at Cain's birth, 'I have gotten/made a man' (4:1).", (14, 19)),
     ("maaser", "ma'aser", "מַעֲשֵׂר", "ma'aser",
@@ -477,14 +477,14 @@ DICTIONARY = [
     ("perets", "perets", "פֶּרֶץ", "perets",
      "A BREACH — a gap burst through a wall; from parats, to break out. The midwife's cry at the birth of Judah's twin is a pun on the name she is giving him: 'How you have BROKEN OUT (paratsta) — a breach (perets) upon you!' (38:29). It sounds like dismay and is kept as a name. Perez matters far past this chapter: Ruth closes by tracing 'the generations of Perez' ten names down to DAVID (Ruth 4:18-22), and Matthew opens the New Testament with the same line, naming 'Perez and Zerah by Tamar' (Matthew 1:3). KJV spells him Pharez, Douay (through the Greek) Phares.", (38, 29)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
-     "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings.", (16, 7)),
+     "Messenger — human or heavenly; 'angel' is simply the Greek for it (angelos). 'The angel of Jehovah' first appears at 16:7, speaking in God's own first person — see the note there for the three readings. ⚠ Psalm 91:11 is the verse the devil quotes at Matthew 4:6 — 'he will command his angels concerning you' — and the clause he leaves out is the next one.", (16, 7)),
     ("el-roi", "El Ro'i", "אֵל רֳאִי", "El Ro'i",
      "'God of seeing' — the name Hagar confers at 16:13: 'the God who sees me,' or 'the God whom I have seen'; the grammar holds both. The only name a person gives TO God in the Bible; the well Beer-lahai-roi preserves it.", (16, 13)),
     ("pere", "pere", "פֶּרֶא", "pere",
      "The wild donkey of the steppe — untamable, masterless, at home in the wilderness (Job 39:5-8 sings its freedom). 'A wild donkey of a man' (16:12) is Ishmael's freedom-oracle, not a slur.", (16, 12)),
     # ---- Genesis 17 (Hebrew) ----
     ("shaddai", "El Shaddai", "אֵל שַׁדַּי", "El Shaddai",
-     "The name God announces at 17:1. 'Almighty' is the Greek-and-Latin guess (LXX pantokrator, Vulgate omnipotens); the Hebrew meaning is uncertain — 'God of the mountain' (Akkadian shadu), the steppe, or a fertility word (Genesis 49:25 sets 'Shaddai' beside 'blessings of the breasts, shaddayim, and of the womb'). Kept untranslated here, as a name.", (17, 1)),
+     "The name God announces at 17:1. 'Almighty' is the Greek-and-Latin guess (LXX pantokrator, Vulgate omnipotens); the Hebrew meaning is uncertain — 'God of the mountain' (Akkadian shadu), the steppe, or a fertility word (Genesis 49:25 sets 'Shaddai' beside 'blessings of the breasts, shaddayim, and of the womb'). Kept untranslated here, as a name. Psalm 91:1 puts it in the psalm's opening image, 'in the shadow of Shaddai' (be-tzel Shaddai), a small sound-play as well as a shelter.", (17, 1)),
     ("tamim", "tamim", "תָּמִים", "tamim",
      "Whole, sound, blameless — integrity of a piece, not sinless perfection. Noah's word (6:9); asked of Abraham at 17:1: 'walk before me and be blameless.' In Leviticus the same word becomes the standard for every sacrifice: the animal must be tamim, 'without blemish' (1:3, 10) — the whole, unflawed victim mirrors the whole, unflawed walk God asks of the worshipper. The New Testament reaches for exactly this word: 'a lamb without blemish' (1 Peter 1:19).", (6, 9)),
     ("mul", "mul / himmol", "מוּל", "mul",
@@ -580,7 +580,7 @@ DICTIONARY = [
     ("yarekh", "yarekh", "יָרֵךְ", "yarekh",
      "The THIGH / loins — under which the servant puts his hand to swear (24:2, 9). Not an idle gesture: the yarekh is the seat of procreation, the region of the covenant-of-circumcision sign (17:11), and 'those who came out of the yarekh' is the Hebrew for a man's own offspring (46:26; Exodus 1:5). To swear by it is to swear by the seed the whole promise runs through — fitting for an oath about the son who will carry the line. The Bible knows this gesture only twice, both about the promised posterity: here, and Jacob making Joseph swear to bury him in the land (47:29).", (24, 2)),
     ("emet", "emet", "אֱמֶת", "emet",
-     "Truth, faithfulness, reliability — from aman, 'to be firm, trustworthy' (the root of amen). Its home is the pair chesed ve-EMET, 'kindness and truth' (24:27, 49): not two things but one — loyal love that can be RELIED ON, love that keeps faith. The servant blesses Jehovah for not forsaking his chesed ve-emet toward Abraham, and asks Laban's house to deal in chesed ve-emet with his master. The same pair becomes a title of God himself, 'abundant in chesed and emet' (Exodus 34:6).", (24, 27)),
+     "Truth, faithfulness, reliability — from aman, 'to be firm, trustworthy' (the root of amen). Its home is the pair chesed ve-EMET, 'kindness and truth' (24:27, 49): not two things but one — loyal love that can be RELIED ON, love that keeps faith. The servant blesses Jehovah for not forsaking his chesed ve-emet toward Abraham, and asks Laban's house to deal in chesed ve-emet with his master. The same pair becomes a title of God himself, 'abundant in chesed and emet' (Exodus 34:6). ⚠ Psalm 91:4 makes it ARMOUR: 'a shield and a socherah is his emet' — the thing that stands between a man and the arrow is God's reliability, stated as an abstract noun rather than softened to 'protection.'", (24, 27)),
     ("almah", "almah", "עַלְמָה", "almah",
      "A young woman of marriageable age — Rebekah is called almah at 24:43 in the servant's retelling, though the narrator called her na'arah ('girl,' 24:14) and betulah ('virgin,' 24:16) when she first appeared. That overlap is the crux of the famous Isaiah 7:14 debate ('a almah shall conceive'): almah marks a young woman, YOUNG enough to be presumed unmarried and chaste, without betulah's technical focus on virginity — and here the same Rebekah is all three words at once. The Greek Bible rendered Isaiah's almah as parthenos, 'virgin,' the reading Matthew 1:23 carries.", (24, 43)),
     ("suach", "suach", "שׂוּחַ", "suach",
@@ -709,7 +709,7 @@ DICTIONARY = [
     ("shalal", "shalal", "שָׁלָל", "shalal",
      "Spoil, plunder — and the grimmest idiom built on it: nefesh li-shalal, 'his life as SPOIL' (Jeremiah 21:9; KJV 'his life shall be unto him for a prey'): the only plunder you will carry out of this war is yourself. Jeremiah later hands it to the two men who trusted him, as a personal promise — Ebed-melech (39:18) and Baruch (45:5).", ("Jeremiah", 21, 9)),
     ("dever", "dever", "דֶּבֶר", "dever",
-     "Pestilence — the third leg of Jeremiah's drumbeat triad, SWORD–FAMINE–PESTILENCE, which tolls through the book from 21:7 on (some fifteen times). The same word names the Exodus cattle-plague; in the siege oracles it is the death that needs no army.", ("Jeremiah", 21, 6)),
+     "Pestilence — the third leg of Jeremiah's drumbeat triad, SWORD–FAMINE–PESTILENCE, which tolls through the book from 21:7 on (some fifteen times). The same word names the Exodus cattle-plague; in the siege oracles it is the death that needs no army. It appears twice in Psalm 91 (vv3, 6), once as the pestilence a man is snatched from and once as the one that 'walks in the dark' — the second of the psalm's four terrors set out on a clock.", ("Jeremiah", 21, 6)),
     ("zeroa-netuyah", "zeroa netuyah", "זְרוֹעַ נְטוּיָה", "zeroa netuyah",
      "'Outstretched arm' — the redemption formula: 'a mighty hand and an outstretched arm' is how Deuteronomy says Israel was brought out of Egypt, repeated like a creed. Jeremiah 21:5 turns it around — 'I myself will fight AGAINST you with an outstretched hand and with a strong arm': the most chilling diplomatic note in the book.", ("Jeremiah", 21, 5)),
     # ---- Jeremiah 22 (Hebrew) ----
@@ -933,7 +933,7 @@ DICTIONARY = [
     ("sefer-hayashar", "sefer ha-yashar", "סֵפֶר הַיָּשָׁר", "sefer ha-yashar",
      "THE BOOK OF JASHAR — literally 'the Book of the Upright,' a collection the Bible quotes and we no longer possess. It is cited twice: for the sun standing still at Gibeon (Joshua 10:13) and for David's lament over Saul and Jonathan (2 Samuel 1:18). ⚠️ Scripture openly names sources that have not survived — also 'the Book of the Wars of Jehovah' (Numbers 21:14) and the royal chronicles repeatedly referenced in Kings — which tells us the biblical writers worked with archives and expected readers to know it. (Several later works circulate under the title 'Book of Jasher'; none is the book quoted here.)", ("2 Samuel", 1, 18)),
     ("yeshuah", "yeshuah", "יְשׁוּעָה", "yeshuah",
-     "SALVATION — but concretely: rescue, being got out of danger, victory. 'Stand firm and see the YESHUAH of Jehovah' (Exodus 14:13) is not about the afterlife; it is about an army behind and water ahead. ⚠️ The root gives the names JOSHUA (Yehoshua, 'Jehovah saves') and, through Greek, JESUS — so the angel's explanation in Matthew 1:21, 'you shall call his name Jesus, for he will SAVE his people,' is a play on the name in Hebrew that the Greek cannot show. Keep the concrete sense in view when the word appears: Israel's vocabulary for being saved was built at a seashore.", ("Exodus", 14, 13)),
+     "SALVATION — but concretely: rescue, being got out of danger, victory. 'Stand firm and see the YESHUAH of Jehovah' (Exodus 14:13) is not about the afterlife; it is about an army behind and water ahead. ⚠️ The root gives the names JOSHUA (Yehoshua, 'Jehovah saves') and, through Greek, JESUS — so the angel's explanation in Matthew 1:21, 'you shall call his name Jesus, for he will SAVE his people,' is a play on the name in Hebrew that the Greek cannot show. Keep the concrete sense in view when the word appears: Israel's vocabulary for being saved was built at a seashore. Psalm 91 ends on it — 'I will let him see my yeshu'ati' (v16), the last word of the psalm the tempter quoted.", ("Exodus", 14, 13)),
     ("chomah", "chomah", "חוֹמָה", "chomah",
      "A WALL — specifically the defensive wall of a city (Jericho's CHOMAH falls flat, Joshua 6:20; Nehemiah rebuilds Jerusalem's). It is the word used of the water at the crossing: 'the waters were a CHOMAH for them on their right and on their left' (Exodus 14:22, 29), which is why every painting shows two standing cliffs of sea. ⚠️ A minority reading takes it here as a metaphor of PROTECTION — a defensive wall on either flank — noting that a wind strong enough to dry a seabed is not obviously one that leaves water in vertical faces. The plain sense of the noun is a wall, and this translation keeps it; the alternative is noted, not adopted.", ("Exodus", 14, 22)),
     ("massa", "massa", "מַשָּׂא", "massa",
@@ -1280,6 +1280,16 @@ DICTIONARY = [
      "To make FAT, rich, greasy — and so to anoint generously with oil. The point of cataloguing it is what it is NOT: mashach, the verb for anointing kings, priests and prophets, from which mashiach (Messiah) is formed. When Psalm 23:5 says 'you have dishanta my head with oil,' it describes a host oiling a guest at a feast, ordinary hospitality, not a consecration. The NWT's 'greased' is literal to the point of ugliness and right about the root; the KJV's 'anointest' imports precisely the sense the verb avoids.", ("Psalms", 23, 5)),
     ("mizmor", "mizmor", "מִזְמוֹר", "mizmor",
      "A PSALM — strictly, a song sung to a plucked instrument (root zamar, to pluck strings), which is why the Greek psalmos and English 'psalm' follow it. Fifty-seven psalms carry the word in their heading. Worth pairing with the little prefix le- that so often follows it (le-David): le- means of, by, for, and belonging to all at once, so a heading like mizmor le-David is a heading and not a signature, and this library reports it as such rather than settling a question the Hebrew leaves open.", ("Psalms", 23, 1)),
+    ("seter", "seter", "סֵתֶר", "seter",
+     "A HIDING-PLACE, a covert — the concealed spot you get behind, from satar, to hide. Psalm 91 opens there: 'the one who sits in the seter of the Most High.' The noun carries no sense of a fortress or a height; it is simply somewhere you cannot be seen, which is why the psalm pairs it immediately with a shadow and with a verb for staying the night.", ("Psalms", 91, 1)),
+    ("machseh", "machseh", "מַחְסֶה", "machseh",
+     "A REFUGE — the place you RUN INTO, from chasah, to seek shelter (the verb in Psalm 91:4, 'under his wings you will take refuge'). Distinct from metzudah, the mountain stronghold you hold, and from seter, the covert you hide in: machseh is about the running. It is one of the Psalter's favourite words for God and it is what Psalm 91:2 and 91:9 both call him. The Spanish RV 1909 softens it to 'esperanza,' hope, which turns a fortification into a feeling.", ("Psalms", 91, 2)),
+    ("qetev", "qetev", "קֶטֶב", "qetev",
+     "DESTRUCTION, a scourge — a rare noun for a devastating blow, and the fourth of Psalm 91's terrors, 'the qetev that lays waste at noon' (91:6). ⚠ It is the origin of a monster that never existed in Hebrew: the Septuagint rendered the phrase daimoniou mesembrinou and Jerome's Vulgate daemonium meridianum, the NOONDAY DEMON, which Evagrius Ponticus in the fourth century made the besetting spirit of monks — the ancestor of acedia. The Hebrew has a plague, not a personality; the demon entered through Greek.", ("Psalms", 91, 6)),
+    ("chashaq", "chashaq", "חָשַׁק", "chashaq",
+     "To be ATTACHED to, to cling, to be bound by desire. Used of Shechem's longing for Dinah and, startlingly, of God's own inexplicable attachment to Israel ('YHVH did not chashaq you because you were more numerous,' Deuteronomy 7:7). Psalm 91:14 gives the reason God acts, and it is this verb rather than obedience or faith: 'because he has bound himself to me.' Warmer and more physical than the shelf's 'set his love upon me.'", ("Psalms", 91, 14)),
+    ("evrah", "evrah", "אֶבְרָה", "evrah",
+     "The PINION — the long, strong flight-feather of a wing, not soft down. Psalm 91:4, 'with his evrah he will cover you,' is the parent bird mantling over the young, the same picture as the eagle of Deuteronomy 32:11 and the hen of Matthew 23:37. The point of the precise word is that the covering feather is the one built for flying, not for warmth.", ("Psalms", 91, 4)),
 ]
 
 ENCYCLOPEDIA = [
@@ -4538,7 +4548,6 @@ XREFS = [
     (("Matthew", 10, 28), ("Matthew", 5, 22), "Gehenna, met already inside the Sermon on the Mount ('the Gehenna of fire') — the same valley, now the place named for what only God, not a human executioner, can do"),
     (("Matthew", 10, 36), ("Micah", 7, 6), "'a man's enemies will be the members of his own household' — quoting Micah's own list of a collapsing society's betrayals almost word for word, and applying it to loyalty to one man"),
     (("Matthew", 10, 38), ("Matthew", 9, 15), "the first mention of the cross anywhere in this Gospel — the nearest hint before this one that the story ends in loss was the veiled 'when the bridegroom is taken away'"),
-    (("Matthew", 10, 5), ("Matthew", 28, 19), "'do not go the way of the Gentiles' — the very restriction this closing commission ('make disciples of all nations') will explicitly lift"),
     (("Matthew", 10, 32), ("Matthew", 26, 69), "the acknowledge/deny formula, waiting to be enacted: Peter will do the second half of this exact sentence three times before a servant girl's fire"),
     (("Matthew", 11, 2), ("Matthew", 4, 12), "John's imprisonment, noted in passing when Jesus withdrew to Capernaum, now becomes the scene itself — the same arrest, seen this time from inside the cell"),
     (("Matthew", 11, 10), ("Matthew", 3, 3), "a second prophecy laid over John, now on Jesus' own lips: 3:3 identified him as Isaiah's voice in the wilderness, 11:10 as Malachi's messenger sent before the coming one"),
@@ -4881,7 +4890,6 @@ XREFS = [
     ((45, 1),  (43, 31), "'could no longer hold himself in' — the same verb (hit'appeq) he used to get through the meal in ch. 43, now negated: the restraint finally fails"),
     ((45, 4),  (37, 28), "'whom you sold into Egypt' — the act named plainly, to their faces, twenty-two years later"),
     ((45, 4),  (40, 15), "contrast: telling the cupbearer, he said only 'I was stolen away' — a sentence with the criminals left out of it"),
-    ((45, 8),  (50, 20), "'it was not you who sent me here, but God' — the first half of the verdict that closes the book: 'you meant evil against me, but God meant it for good'"),
     ((45, 12), (42, 23), "'it is my mouth speaking to you' — the interpreter of 42:23, who existed because Joseph was pretending not to understand Hebrew, is gone"),
     ((45, 22), (37, 3),  "five changes of garments to Rachel's other son, in front of the same ten men — the coat, again"),
     ((45, 24), (37, 26), "'do not be agitated on the way' — with, on the old reading, a specific quarrel in mind: whose idea the pit was"),
@@ -5432,7 +5440,6 @@ XREFS = [
     (("Matthew", 14, 27), ("Matthew", 9, 2), "tharsei, 'take heart' — the same word for a paralyzed man and a bleeding woman now steadies two frightened fishermen in a storm, spoken this time by the one walking on the sea itself"),
     (("Matthew", 14, 30), ("Matthew", 9, 22), "sōzō, 'save' — the identical verb the bleeding woman heard applied to her own healing is now Peter's whole prayer, one word, as he sinks"),
     (("Matthew", 14, 31), ("Matthew", 8, 26), "oligopiste, 'you of little faith' — the identical rebuke for disciples afraid of a storm now meets Peter afraid of the very water he was just walking on"),
-    (("Matthew", 14, 31), ("Matthew", 28, 17), "distazō, 'doubted' — the New Testament's only other use of this verb is the Eleven's own doubt on the mountain, worshiping the risen Christ and hesitating anyway"),
     (("Matthew", 14, 33), ("Matthew", 9, 18), "proskyneō, a seventh time — magi, Herod, the devil, a leper, a ruler, and now the Twelve themselves, the first to pair the gesture with the words it has been waiting for: 'truly you are the Son of God'"),
     (("Matthew", 14, 36), ("Matthew", 9, 20), "kraspedon — the fringe a bleeding woman touched in secret is now held out to a whole region in the open; a third appearance, a very different one, waits at 23:5"),
     (("Matthew", 15, 21), ("Matthew", 11, 21), "Tyre and Sidon, invoked only as a standard of comparison at 11:21-22, are now the actual destination — Jesus' one recorded personal visit to Gentile soil in the Gospels"),
@@ -5472,7 +5479,6 @@ XREFS = [
     (("Matthew", 23, 5), ("Matthew", 14, 36), "the fringe crowds begged to touch, now the fringe made big to be seen"),
     (("Matthew", 23, 11), ("Matthew", 20, 26), "'the greater will be your servant' — repeated almost verbatim from the answer to the two ambitious brothers"),
     (("Matthew", 23, 12), ("Matthew", 18, 4), "the exalted/humbled reversal — the same logic as the child set in the middle"),
-    (("Matthew", 23, 16), ("Matthew", 15, 14), "'blind guides' — returning by name in the woes, as chapter 15's note said it would, and paired there with the same pit"),
     (("Matthew", 23, 22), ("Matthew", 5, 34), "no oath fails to reach God — the Sermon reached the same conclusion by the shorter route: do not swear at all"),
     (("Matthew", 23, 24), ("Matthew", 19, 24), "the camel's second outing in five chapters, after the needle's eye"),
     (("Matthew", 23, 33), ("Matthew", 3, 7), "'brood of vipers' — John the Baptist's phrase for the same men, now in Jesus' mouth"),
@@ -5562,6 +5568,9 @@ XREFS = [
     (("Psalms", 23, 3), ("Genesis", 12, 2), "lema'an shemo, 'for the sake of his name' — the shem Babel grasped at and God gave away, here the reason the shepherd acts at all"),
     (("Psalms", 23, 4), ("Genesis", 5, 29), "yenachamuni, 'they comfort me' — nacham in its plainest mood, the root that carried Noah's name-hope and then God's regret"),
     (("Psalms", 23, 6), ("Psalms", 23, 3), "shuv — he brings my life BACK (v3) and I shall come BACK to his house (v6): the root framing the psalm's second half, if the Masoretic pointing stands"),
+    (("Psalms", 91, 13), ("Genesis", 1, 21), "tannin — the great sea-beast created on the fifth day, here the last of four animals a man treads on"),
+    (("Psalms", 91, 16), ("Psalms", 23, 6), "orekh yamim — both psalms end on 'length of days,' and this one supplies the verb ('satisfy') that shows it means a long life and not eternity"),
+    (("Psalms", 91, 1), ("Psalms", 23, 4), "tzel, the shadow — death's in Psalm 23, God's here"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -10457,6 +10466,60 @@ DICTIONARY_ES = {
         "«VOLVERÉ a la casa de Jehová» (ve-shavti) — si se sostiene la vocalización masorética, porque esas "
         "consonantes también admiten yashav, «habitar», que es lo que casi toda versión imprime, borrando el "
         "marco."),
+    "elyon": ("Altísimo",
+        "EL ALTÍSIMO — el nombre que usa Melquisedec al bendecir a Abram (Génesis 14:18). El Salmo 91 lo abre "
+        "apilando otros tres nombres en dos versos —Elyon, Shaddai, YHVH, «mi Dios»—, moviéndose del título más "
+        "alto al posesivo más íntimo en un respiro."),
+    "shaddai": ("Todopoderoso",
+        "EL TODOPODEROSO — el nombre con que Dios se presenta a Abram en Génesis 17:1. Se conserva sin traducir, "
+        "como nombre propio. El Salmo 91:1 lo pone en la imagen inicial: «a la sombra de Shaddai» (be-tzel "
+        "Shaddai), que además es un pequeño juego sonoro."),
+    "emet": ("fidelidad, verdad",
+        "FIDELIDAD, verdad, ser de fiar — no la exactitud de un enunciado sino la solidez de quien cumple. ⚠ El "
+        "Salmo 91:4 la convierte en ARMADURA: «escudo y socherah es su emet». Lo que se interpone entre un hombre "
+        "y la flecha es que Dios es de fiar, dicho como sustantivo abstracto y no suavizado a «protección»."),
+    "dever": ("peste",
+        "PESTE, plaga mortal — la muerte que no necesita ejército. Aparece dos veces en el Salmo 91 (vv3 y 6): una "
+        "como la peste de la que se arrebata al hombre y otra como la que «anda en la oscuridad», la segunda de "
+        "los cuatro terrores que el salmo dispone sobre un reloj."),
+    "malakh": ("ángel, mensajero",
+        "MENSAJERO — y de ahí «ángel». La palabra no dice nada sobre alas ni sobre naturaleza: dice ENVIADO. ⚠ El "
+        "Salmo 91:11 es el verso que el diablo cita en Mateo 4:6 —«a sus ángeles mandará acerca de ti»— y la "
+        "cláusula que omite es la siguiente."),
+    "tannin": ("gran monstruo marino",
+        "GRAN MONSTRUO MARINO — la criatura del quinto día en Génesis 1:21, y en otros lugares la serpiente o el "
+        "dragón del caos, con que Isaías y Ezequiel nombran a Egipto y al faraón. ⚠ El Salmo 91:13 pone uno bajo "
+        "el pie: el último de cuatro bestias que un hombre pisa, lo que eleva el verso de los peligros del camino "
+        "al monstruo del abismo."),
+    "yeshuah": ("salvación",
+        "SALVACIÓN — y en su origen algo muy concreto: ser sacado de un aprieto, como en el mar de Éxodo 14:13. Es "
+        "el sustantivo que está detrás del nombre Josué y, por el griego, del nombre Jesús. El Salmo 91 termina en "
+        "ella: «le haré ver mi salvación» (v16), la última palabra del salmo que citó el tentador."),
+    "seter": ("escondite",
+        "UN ESCONDITE, un cubierto — el lugar detrás del cual uno se mete, de satar, esconder. Así empieza el Salmo "
+        "91: «el que se sienta en el seter del Altísimo». El sustantivo no sugiere fortaleza ni altura: es "
+        "sencillamente un sitio donde no se te ve, por lo que el salmo lo empareja en seguida con una sombra y con "
+        "un verbo de pasar la noche."),
+    "machseh": ("refugio",
+        "UN REFUGIO — el sitio al que se CORRE, de chasah, buscar abrigo (el verbo del Salmo 91:4, «bajo sus alas te "
+        "refugiarás»). Distinto de metzudah, la fortaleza de montaña que se defiende, y de seter, el escondite: "
+        "machseh trata de la carrera. La RV 1909 lo suaviza a «esperanza», que convierte una fortificación en un "
+        "sentimiento."),
+    "qetev": ("destrucción",
+        "DESTRUCCIÓN, azote — un sustantivo raro para un golpe devastador, y el cuarto de los terrores del Salmo 91: "
+        "«el qetev que asola al mediodía» (91:6). ⚠ Es el origen de un monstruo que nunca existió en hebreo: la "
+        "Septuaginta tradujo daimoniou mesembrinou y la Vulgata daemonium meridianum, el DEMONIO MERIDIANO, que "
+        "Evagrio Póntico hizo en el siglo IV el espíritu que asedia a los monjes —el antepasado de la acedia—. El "
+        "hebreo tiene una plaga, no una personalidad."),
+    "chashaq": ("prendarse, ceñirse",
+        "ESTAR PRENDADO de algo, ceñirse, quedar atado por el deseo. Se usa del anhelo de Siquem por Dina y, "
+        "sorprendentemente, del apego inexplicable de Dios por Israel (Deuteronomio 7:7). El Salmo 91:14 da la razón "
+        "por la que Dios actúa, y es este verbo y no la obediencia ni la fe: «porque se ha ceñido a mí»."),
+    "evrah": ("plumón de vuelo",
+        "LA PLUMA DE VUELO — la pluma larga y fuerte del ala, no el plumón suave. «Con su evrah te cubrirá» (Salmo "
+        "91:4) es el ave que cubre a sus crías, la misma figura que el águila de Deuteronomio 32:11 y la gallina de "
+        "Mateo 23:37. Lo que aporta la palabra precisa es que la pluma que cubre es la que sirve para volar, no "
+        "para abrigar."),
 }
 
 ENCYCLOPEDIA_ES = {
