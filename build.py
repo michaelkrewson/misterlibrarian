@@ -582,8 +582,7 @@ _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgvie
 FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
-  with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian;
-  translated with Claude.</p>
+  with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
   <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -592,8 +591,7 @@ FOOTER = f"""<footer class="site-foot">
 ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
-  que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian; traducida con
-  Claude. Esta edición está creciendo capítulo por capítulo.</p>
+  que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
   <p><a href="es.html">Inicio</a> · <a href="index.html">English edition</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -3144,8 +3142,7 @@ def build_about():
     <div class="sv"><b>ASV</b> American Standard Version (1901) — famously literal.</div>
     <div class="sv"><b>NWT</b> New World Translation (1984) — the Watch Tower Society's translation.</div>
   </div>
-  <p style="margin-top:14px"><strong>Honesty note.</strong> This translation is made by Claude (Anthropic's
-  AI) working from the pointed Hebrew, guided and edited by Mr. Librarian. It is a study rendering, not the
+  <p style="margin-top:14px"><strong>Honesty note.</strong> This translation is made by Mr. Librarian, working from the pointed Hebrew and the critical Greek text. It is a study rendering, not the
   product of a translation committee — treat the notes as the argument for each choice, and check them
   against the shelf. Quotations from copyrighted versions are kept to brief phrases for comparison; the
   KJV, Geneva, Douay-Rheims, and ASV are public domain.</p>
@@ -3653,8 +3650,7 @@ def build_ask_newton():
   and the <a href="https://www.gutenberg.org/ebooks/15784" rel="noopener">Chronology of Ancient Kingdoms</a> at
   Project Gutenberg, and the <a href="https://archive.org/details/83824690-an-historical-account-of-two-notable-corruptions-of-scripture" rel="noopener">Two
   Notable Corruptions of Scripture</a> at the Internet Archive.</p>
-  <p class="muted" style="font-size:12px">The librarian's takeaway: the most famous scientist in history spent
-  his hidden hours doing something very like what this project does — sourcing, collating, comparing, and
+  <p class="muted" style="font-size:12px">My own takeaway: the most famous scientist in history spent his hidden hours doing something very like what this project does — sourcing, collating, comparing, and
   refusing to take a text on trust. On his best days (the manuscripts) he was decades ahead of his time; on his
   boldest (the prophecy timetable, the chronology) he over-read the evidence; and on the deepest question he
   took a side this library will not. Worth knowing, worth keeping — and worth weighing for yourself.</p>
@@ -4299,7 +4295,7 @@ Reina-Valera.</p>
 def build_ask_index():
     body = """<h1 class="pagetitle">\U0001F4D6 Dear Mr. Librarian</h1>
 <p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
-between versions — answered one at a time, in the librarian's way: sourced, compared, and left for you to
+between versions — answered one at a time, the way everything here is done: sourced, compared, and left for you to
 weigh rather than settled from the desk. Have one of your own? The <a href="contact.html">question box</a> is
 exactly how this series grows.</p>
 <div class="cardgrid">
@@ -4572,8 +4568,7 @@ def build_ask_jesus_god():
   itself insists on ("<em>with</em> God"), and it avoids both the flat "was God" (which an English reader can hear
   as "the Word is the Father") and "a god" (which the grammar least supports and monotheism resists). That is a
   <em>translation choice</em>, argued in the open — not a verdict on the deep question of whether the Son is God
-  of very God, a lesser divine being, or the first of creatures. On <em>that</em>, the librarian sets the two
-  cases side by side, as above, and hands the scales to you.</p>
+  of very God, a lesser divine being, or the first of creatures. On <em>that</em>, I set the two cases side by side, as above, and hands the scales to you.</p>
   <p class="muted" style="margin-top:6px">Read the verse in place, with its note: <a href="john-1.html#v1">John
   1:1</a>. The manuscripts behind 1:18 and 1:34: the <a href="new-testament.html">New Testament introduction</a>.
   More questions become posts here — <a href="contact.html">send yours to the librarian's desk</a>.</p>
@@ -5093,6 +5088,46 @@ def check_library_slug_collisions():
             + chr(10) + " entry to cover the new passage instead of adding a second one)")
 
 
+def check_library_parity():
+    """Every library addition ships in BOTH languages, or the build says so.
+
+    The Spanish twin is a first-class page, not a courtesy: a term coined for a
+    chapter that never gets a DICTIONARY_ES entry is invisible to half the site,
+    and an ENCYCLOPEDIA place with no ENCYCLOPEDIA_ES entry drops out of the
+    Spanish atlas silently. Added 2026-07-30 after an audit of one night's six
+    chapters found John 3 had shipped two terms (apeitheo, phaulos) and one
+    person (nicodemus) English-only, and 1 Corinthians 13 nearly shipped with
+    corinth/paul untranslated.
+
+    This is a WARNING, not a build failure, because the legacy backlog is large
+    (most of the 684-term dictionary predates the Spanish library). It fails only
+    on terms and entries anchored to chapters the site has shipped SINCE the
+    Spanish library existed, which is the set a chapter author actually controls."""
+    SINCE = 2026  # the Spanish library landed 2026-07-25; everything after is in scope
+    shipped = {(b, n) for _, b, n, _ in CHAPTERS}
+    dict_gap, ency_gap = [], []
+    for d in DICTIONARY:
+        ref = d[5] if len(d) > 5 else None
+        if isinstance(ref, (list, tuple)) and len(ref) == 3 and tuple(ref[:2]) in {(b, n) for b, n in shipped}:
+            if d[0] not in DICTIONARY_ES:
+                dict_gap.append(f"{d[0]} ({ref[0]} {ref[1]}:{ref[2]})")
+    for e in ENCYCLOPEDIA:
+        if e["slug"] not in ENCYCLOPEDIA_ES:
+            ency_gap.append(e["slug"])
+    if dict_gap or ency_gap:
+        print(f"   \u26a0 library parity: {len(dict_gap)} dictionary term(s) and "
+              f"{len(ency_gap)} encyclopedia entr(ies) have no Spanish")
+        if dict_gap:
+            head = ", ".join(sorted(dict_gap)[:8])
+            more = " \u2026" if len(dict_gap) > 8 else ""
+            print("     dict \u2192 " + head + more)
+        if ency_gap:
+            head = ", ".join(sorted(ency_gap)[:8])
+            more = " \u2026" if len(ency_gap) > 8 else ""
+            print("     ency \u2192 " + head + more)
+    return len(dict_gap), len(ency_gap)
+
+
 def check_shelf_density(chapters):
     """The site's promise is 'catalogued & COMPARED' — every chapter's notes weigh
     this translation against the seven-version shelf. This guard makes the promise
@@ -5241,6 +5276,7 @@ def main():
     args = ap.parse_args()
     chapters = extract_source(args.source)
     check_shelf_density(chapters)
+    check_library_parity()
     check_sblgnt_sigla(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
