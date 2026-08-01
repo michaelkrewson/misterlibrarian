@@ -9,3 +9,11 @@ __pycache__/
 # Claude Code session worktrees — never commit (a worktree dir is a gitlink,
 # which makes GitHub Pages checkout fail: "No url found for submodule path")
 .claude/worktrees/
+
+# Per-chapter extraction dumps and build handoff notes. ROM8_greek.json (a whole
+# chapter of the SBLGNT) and ROM8_STATE.md were committed here by accident on
+# 2026-07-31 -- this repo is public, and extracted source text belongs in
+# source/originals/ (already ignored) or the private S3 archive, never here.
+*_STATE.md
+*_greek.json
+*_heb.json

@@ -146,6 +146,13 @@ a.tgl{text-decoration:none;display:inline-block}
    Hebrew runs the alphabet (Proverbs 31:10-31, Psalm 119, Lamentations). Hebrew glyph
    in an LTR line, so it needs its own direction reset or the punctuation after it
    reorders. */
+/* Parallel verse number, for chapters where the Hebrew and the English Bibles
+   divide the text differently (Exodus 20, where the Hebrew puts four commandments
+   in one verse; Psalm 51, where the superscription is counted). Latin text, so it
+   must NOT inherit the RTL Hebrew styling of .acro. */
+.eng .envnum,.esp .envnum{display:inline-block;font-size:10.5px;letter-spacing:.02em;
+  color:var(--dim);border:1px solid var(--border);border-radius:3px;padding:0 4px;
+  margin-right:7px;vertical-align:1px;white-space:nowrap;cursor:help}
 .eng .acro,.esp .acro{direction:rtl;unicode-bidi:isolate;display:inline-block;
   font-family:"SBL Hebrew","Ezra SIL","Frank Ruehl",serif;font-size:16px;
   color:var(--gold);opacity:.85;margin-right:7px;vertical-align:baseline;cursor:help}
@@ -247,11 +254,20 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
 .t-mine{background:rgba(232,201,104,0.14);color:var(--gold);border-color:rgba(232,201,104,0.3)}
 .t-niv{background:rgba(34,211,238,0.10);color:var(--b)}
 .t-kjv{background:rgba(167,139,250,0.12);color:var(--purple)}
-.t-drb{background:rgba(248,113,113,0.10);color:#f87171}
+.t-drb,.t-douay,.t-dou{background:rgba(248,113,113,0.10);color:#f87171}
 .t-tlb{background:rgba(0,255,157,0.08);color:#00ff9d}
-.t-gnv{background:rgba(251,191,36,0.10);color:#fbbf24}
+.t-gnv,.t-geneva{background:rgba(251,191,36,0.10);color:#fbbf24}
+/* Same audit as t-rv60: four more tag strings were in use with no rule at all,
+   so those chapters printed a plain grey chip where every other chapter printed
+   the version's colour. t-douay/t-dou are aliases of t-drb, t-geneva of t-gnv;
+   ESV is an occasional extra witness and gets a colour of its own. 2026-08-01. */
+.t-esv{background:rgba(163,230,53,0.10);color:#a3e635}
 /* Spanish "shelf" version-tags (RV60 / NVI / LBLA / DHH / BJ) */
-.t-rv{background:rgba(34,211,238,0.10);color:var(--b)}
+/* RV60 is the same version family as RV and must read the same colour. 434 tags
+   across the Spanish chapters used t-rv60, which had no rule at all and so fell
+   back to the plain .tag grey — the same version in two colours depending on
+   which string a chapter happened to type. 2026-08-01. */
+.t-rv,.t-rv60{background:rgba(34,211,238,0.10);color:var(--b)}
 .t-nvi{background:rgba(167,139,250,0.12);color:var(--purple)}
 .t-lbla{background:rgba(0,255,157,0.08);color:#00ff9d}
 .t-dhh{background:rgba(251,191,36,0.10);color:#fbbf24}

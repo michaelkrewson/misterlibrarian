@@ -170,6 +170,7 @@ CHAPTERS = [
     ("exod12", "Exodus", 12, "The chapter that answers everything since chapter 1 — and answers it not with another plague but with a calendar, a lamb, unleavened bread, and blood on two doorposts and a lintel. The year itself is re-founded on the night of the rescue; the rite is built around a child's question before the rescue has even happened; the tenth blow falls at midnight and Pharaoh, who began with 'I do not know Jehovah', ends by asking for a blessing. Israel walks out with a MIXED MULTITUDE — and the chapter closes with one law for the native and the sojourner alike."),
     ("exod13", "Exodus", 13, "Because Israel's firstborn were spared, they are claimed: 'consecrate to me every firstborn — it is mine.' A donkey's firstling is bought back with a lamb or its neck is broken; a firstborn son is ALWAYS bought back, never sacrificed. The command to tell a son comes twice more here (four times in four chapters). Then the first thing God does with a free people is take them the LONG way — 'lest they change their minds when they see war' — while Moses carries Joseph's bones out on an oath four hundred years old, and a pillar of cloud and fire goes ahead."),
     ("exod14", "Exodus", 14, "The sea. Israel is told to turn BACK and camp with the water behind them — a militarily absurd position, and the text says outright it is bait: 'Pharaoh will say, they are wandering in confusion.' Six hundred chariots overtake them, Israel's first words as a free people are 'better to serve the Egyptians than to die in the wilderness', and a strong east wind blows all night. ⚠ Note what verse 28 says drowned — the ARMY — and what it never says."),
+    ("exod20", "Exodus", 20, "The Ten Commandments \u2014 and the chapter that shows why TEN is a decision rather than a reading. The Hebrew runs 22 verses where English Bibles print 26, four commandments sit inside a single verse (separated not by verse numbers but by the scribes' paragraph marks), and the same unaltered text is counted three different ways by the Jewish, Catholic-Lutheran, and Reformed traditions \u2014 which is why 'the second commandment' means different things to different readers. \u26a0 The sixth is lo tirtzach, and RATZACH is the verb Numbers 35 uses of the manslayer who flees to a city of refuge, not harag, the ordinary word for killing: every version on this shelf but one says 'kill'. The third is not a rule about swearing but about LIFTING UP the Name emptily. And it ends with the people standing far off while Moses walks into the thick darkness where God was."),
     ("2sam1", "2 Samuel", 1, "Saul is dead on Gilboa, and a man runs into Ziklag with the crown in his hand and a story that does not match the one 1 Samuel just told. David — who spent years as Saul's hunted rival — tears his clothes, fasts, executes the messenger for laying a hand on 'Jehovah's anointed', and then chants the Song of the Bow: 'How the mighty have fallen.' A lament that says nothing of the spear thrown at him, the years of pursuit, or the priests of Nob."),
     ("lev1", "Leviticus", 1, "The manual of worship opens: from the tent he has just filled, Jehovah CALLS Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's two birds, each ascending whole in smoke, 'a soothing aroma to Jehovah.'"),
     ("num1", "Numbers", 1, "'In the wilderness of Sinai' the redeemed people are counted and arrayed as an army for the march — twelve tribes, twelve chieftains, 603,550 fighting men; and one tribe, Levi, left off the war-roll to carry and guard the tent at the camp's center."),
@@ -352,6 +353,7 @@ TEASERS_ES = {
     "exod12": "El capítulo que responde a todo lo ocurrido desde el capítulo 1, y no con otra plaga sino con un calendario, un cordero, pan sin levadura y sangre en dos postes y un dintel. El año mismo se refunda en la noche del rescate; el rito se construye en torno a la pregunta de un niño antes incluso de que el rescate ocurra; el décimo golpe cae a medianoche y el faraón, que empezó con «no conozco a Jehová», termina pidiendo una bendición. Israel sale con una MULTITUD MIXTA, y el capítulo cierra con una sola ley para el nativo y para el extranjero.",
     "exod13": "Como los primogénitos de Israel fueron perdonados, quedan reclamados: «conságrame todo primogénito: mío es». El primer nacido de un asno se rescata con un cordero o se le quiebra el cuello; un hijo primogénito se rescata SIEMPRE, nunca se sacrifica. El mandato de contárselo a un hijo aparece aquí dos veces más (cuatro en cuatro capítulos). Y lo primero que Dios hace con un pueblo libre es llevarlo por el camino LARGO —«no sea que cambien de parecer al ver la guerra»—, mientras Moisés saca los huesos de José por un juramento de cuatrocientos años y una columna de nube y de fuego va delante.",
     "exod14": "El mar. A Israel se le manda VOLVER atrás y acampar con el agua a la espalda —una posición militarmente absurda, y el texto dice sin rodeos que es un cebo: «el faraón dirá: andan errantes»—. Seiscientos carros les dan alcance, las primeras palabras de Israel como pueblo libre son «mejor nos era servir a los egipcios que morir en el desierto», y un fuerte viento del este sopla toda la noche. ⚠ Nótese qué dice el versículo 28 que se ahogó —el EJÉRCITO— y qué no dice nunca.",
+    "exod20": "Los Diez Mandamientos \u2014 y el cap\u00edtulo que muestra por qu\u00e9 DIEZ es una decisi\u00f3n y no una lectura. El hebreo tiene 22 vers\u00edculos donde las Biblias castellanas imprimen 26, cuatro mandamientos caben en un solo vers\u00edculo (separados no por n\u00fameros sino por las marcas de p\u00e1rrafo de los escribas), y el mismo texto se cuenta de tres maneras distintas en las tradiciones jud\u00eda, cat\u00f3lico-luterana y reformada. \u26a0 El sexto es lo tirtzaj, y RATZACH es el verbo que N\u00fameros 35 usa del homicida que huye a una ciudad de refugio, no harag, la palabra corriente para matar. El tercero no trata de jurar sino de LEVANTAR el Nombre en vano. Y termina con el pueblo a lo lejos mientras Mois\u00e9s entra en la densa oscuridad donde estaba Dios.",
     "2sam1": "Saúl ha muerto en Gilboa, y un hombre entra corriendo en Siclag con la corona en la mano y un relato que no cuadra con el que 1 Samuel acaba de contar. David —que pasó años siendo el rival perseguido de Saúl— rasga sus vestiduras, ayuna, manda ejecutar al mensajero por poner la mano sobre «el ungido de Jehová», y entona el Canto del Arco: «¡Cómo han caído los valientes!». Un lamento que no dice nada de la lanza que le arrojaron, ni de los años de persecución, ni de los sacerdotes de Nob.",
     "mal1": "El último de los profetas abre su caso y el pueblo le replica — la seña del libro: «Los he amado» / «¿En QUÉ nos has amado?». Jacob amado y Esaú aborrecido, los montes de Edom en ruinas, y luego la acusación que llena el capítulo: sacerdotes que traen animales ciegos, cojos y robados al altar de un Dios que, sobre todo, les parece ABURRIDO. Llévalo a tu gobernador persa, dice Malaquías — y luego, en el último libro del Antiguo Testamento: «desde donde el sol nace hasta donde se pone, grande es mi nombre entre las naciones».",
     "ezek1": "Un sacerdote deportado se sienta junto a un canal de riego en el sur de Irak —a cinco años del destierro, en el año en que debía haber empezado a servir ante un altar que ya no verá— y los cielos se abren. Una tempestad del norte, cuatro seres vivientes de cuatro rostros cada uno, ruedas dentro de ruedas con los aros llenos de ojos, una bóveda de hielo temible sobre sus cabezas y, encima de la bóveda, un trono de zafiro con algo que parece un ser humano. Ezequiel no dice ni una vez que vio a Dios: dice que vio la apariencia de la semejanza de la gloria de Jehová, y cayó sobre su rostro. La bóveda es la misma palabra que en Génesis 1, y la luz en torno al trono es el arco de guerra de Génesis 9.",
@@ -732,7 +734,7 @@ document.addEventListener("DOMContentLoaded", function(){{
 </script>"""
 
 
-def _chapter_jsonld(book, num, desc, url):
+def _chapter_jsonld(book, num, desc, url, lang="en", label=None):
     """Article + BreadcrumbList structured data for a chapter page.
 
     Added 2026-07-31. The site had no structured data at all. This is
@@ -744,27 +746,39 @@ def _chapter_jsonld(book, num, desc, url):
     site = "https://mistertranslation.com/"
     def esc(x):
         return json.dumps(x, ensure_ascii=False)
+    head = label or f"{book} {num}"
+    if lang == "es":
+        # The Spanish edition has no per-book index page, so its trail is two
+        # levels deep, not three. Better an honest short breadcrumb than one
+        # pointing at a URL that does not exist.
+        crumbs = (
+            f'{{"@type":"ListItem","position":1,"name":"La Traducci\u00f3n Mister",'
+            f'"item":{esc(site + "es.html")}}},'
+            f'{{"@type":"ListItem","position":2,"name":{esc(head)}}}')
+    else:
+        crumbs = (
+            f'{{"@type":"ListItem","position":1,"name":"Table of Contents","item":{esc(site + "toc.html")}}},'
+            f'{{"@type":"ListItem","position":2,"name":{esc(book)},"item":{esc(site + "book-" + book_slug(book) + ".html")}}},'
+            f'{{"@type":"ListItem","position":3,"name":{esc(head)}}}')
     return (
         '\n<script type="application/ld+json">'
         '{"@context":"https://schema.org","@graph":['
         '{"@type":"Article",'
-        f'"headline":{esc(f"{book} {num}")},'
+        f'"headline":{esc(head)},'
         f'"description":{esc(desc)},'
         f'"mainEntityOfPage":{esc(site + url)},'
         f'"isPartOf":{{"@type":"Book","name":{esc(book)}}},'
-        '"inLanguage":"en",'
+        f'"inLanguage":{esc(lang)},'
         '"author":{"@type":"Person","name":"Mr. Librarian"},'
         '"publisher":{"@type":"Organization","name":"The MisterLibrarian Bible Project",'
         f'"url":{esc(site)}}}}},'
         '{"@type":"BreadcrumbList","itemListElement":['
-        f'{{"@type":"ListItem","position":1,"name":"Table of Contents","item":{esc(site + "toc.html")}}},'
-        f'{{"@type":"ListItem","position":2,"name":{esc(book)},"item":{esc(site + "book-" + book_slug(book) + ".html")}}},'
-        f'{{"@type":"ListItem","position":3,"name":{esc(f"{book} {num}")}}}'
+        + crumbs +
         ']}]}</script>'
     )
 
 
-def _meta_desc(book, num, teaser, src):
+def _meta_desc(book, num, teaser, src, lang="en", label=None):
     """Front-load the CHAPTER'S OWN HOOK into the meta description.
 
     Search engines truncate descriptions around 155-160 characters. The old text
@@ -777,13 +791,18 @@ def _meta_desc(book, num, teaser, src):
     Google most often discards and rewrites.
 
     So: lead with the teaser, trimmed at a sentence boundary, and keep the
-    provenance line only as a short tail when there is room. Added 2026-07-31."""
+    provenance line only as a short tail when there is room. Added 2026-07-31.
+
+    2026-08-01: extended to the Spanish twin, which had been left behind -- all
+    130 es.html chapters shipped the SAME 178-character boilerplate, over the
+    truncation limit and with no chapter-specific hook in it at all. Same
+    treatment, Spanish lead and tail."""
     t = re.sub(r"<[^>]+>", "", teaser or "")
     t = (t.replace("\u26a0", "").replace("&mdash;", "\u2014").replace("&rsquo;", "\u2019")
           .replace("&ldquo;", "\u201c").replace("&rdquo;", "\u201d").replace("&laquo;", "\u00ab")
           .replace("&raquo;", "\u00bb").replace("&nbsp;", " "))
     t = re.sub(r"\s+", " ", t).strip()
-    lead = f"{book} {num}: "
+    lead = f"{label or f'{book} {num}'}: "
     room = 158 - len(lead)
     if len(t) > room:
         cut = t[:room]
@@ -800,7 +819,8 @@ def _meta_desc(book, num, teaser, src):
         t = cut.rstrip(" ,;\u2014-") + "\u2026"
     out = lead + t
     if len(out) < 120:
-        tail = f" Translated fresh from {src}."
+        tail = (f" Traducci\u00f3n nueva desde {src}." if lang == "es"
+                else f" Translated fresh from {src}.")
         if len(out) + len(tail) <= 155:
             out += tail
     return out
@@ -4347,11 +4367,23 @@ function toggleHeb(){{
         # is likewise OT-only: the NT's Greek reads kyrios, and this translation
         # prints "Señor" there (see the 1 Corinthians 1:24 / Acts 1:24 notes).
         _es_src = "el griego" if _is_nt(book) else "el hebreo"
-        _es_name = ("" if _is_nt(book) else " El Nombre: «Jehová».")
+        # 2026-08-01: the Spanish twin used to ship ONE hand-written boilerplate
+        # description on every chapter -- 178 characters, past the truncation
+        # limit, and identical across all 130 pages, so a search result for
+        # Éxodo 20 and one for Salmo 23 read exactly the same. Now it comes from
+        # the chapter's own Spanish teaser through the same _meta_desc() the
+        # English side uses, and a new chapter inherits it for free.
+        _es_raw = TEASERS_ES.get(slug)
+        if _es_raw:
+            _es_desc = _meta_desc(book, num, _es_raw, _es_src, lang="es", label=es_title)
+        else:
+            _es_name = "" if _is_nt(book) else " El Nombre: \u00abJehov\u00e1\u00bb."
+            _es_desc = (f"{es_title}: una traducci\u00f3n nueva desde {_es_src}, vers\u00edculo por "
+                        f"vers\u00edculo, con notas del traductor.{_es_name}")
         out = page(f"{es_title} — La Traducción Mister", body, lang="es",
-                   url=es_file,
-                   desc=f"{es_title}: una traducción nueva desde {_es_src}, versículo por versículo, con notas del "
-                        f"traductor y comparación con la Reina-Valera, la NVI y otras versiones.{_es_name}")
+                   url=es_file, desc=_es_desc)
+        out = out.replace("</head>", _chapter_jsonld(book, num, _es_desc, es_file,
+                                                     lang="es", label=es_title) + "\n</head>", 1)
         open(os.path.join(OUT, es_file), "w", encoding="utf-8").write(out)
         built.append((slug, book, num, es_title))
 
@@ -5256,6 +5288,25 @@ def check_seo(chapters):
         if key in seen:
             bad.append(f"  {book} {num}: description opening duplicates {seen[key]}")
         seen[key] = f"{book} {num}"
+    # 2026-08-01: the Spanish twin is now checked on the same terms. It had been
+    # exempt from this guard, and had quietly shipped ONE identical 178-character
+    # boilerplate description across all 130 of its chapter pages.
+    seen_es = {}
+    for slug, book, num, teaser in CHAPTERS:
+        t_es = TEASERS_ES.get(slug)
+        if not t_es:
+            continue  # a missing Spanish teaser is already reported by the ES build
+        label = f"{ES_BOOK.get(book, book)} {num}"
+        d = _meta_desc(book, num, t_es, "el griego" if _is_nt(book) else "el hebreo",
+                       lang="es", label=label)
+        if len(d) < 90:
+            bad.append(f"  {label} (es): description only {len(d)} chars -- teaser too thin")
+        if len(d) > 160:
+            bad.append(f"  {label} (es): description {len(d)} chars -- will be truncated")
+        key = d[:60]
+        if key in seen_es:
+            bad.append(f"  {label} (es): description opening duplicates {seen_es[key]}")
+        seen_es[key] = label
     if bad:
         raise SystemExit("SEO CHECK FAILED -- every chapter needs its own search-facing hook:\n"
                          + "\n".join(bad)
