@@ -730,6 +730,80 @@ document.addEventListener("DOMContentLoaded", function(){{
 </script>"""
 
 
+def _chapter_jsonld(book, num, desc, url):
+    """Article + BreadcrumbList structured data for a chapter page.
+
+    Added 2026-07-31. The site had no structured data at all. This is
+    second-order next to the meta descriptions, but it is cheap, it gives search
+    engines an explicit author/publisher/date and a Book > Chapter trail, and the
+    breadcrumb is what produces the site-hierarchy line under a result instead of
+    a bare URL. Deliberately minimal and honest: no fake ratings, no invented
+    dates, nothing the page does not actually contain."""
+    site = "https://mistertranslation.com/"
+    def esc(x):
+        return json.dumps(x, ensure_ascii=False)
+    return (
+        '\n<script type="application/ld+json">'
+        '{"@context":"https://schema.org","@graph":['
+        '{"@type":"Article",'
+        f'"headline":{esc(f"{book} {num}")},'
+        f'"description":{esc(desc)},'
+        f'"mainEntityOfPage":{esc(site + url)},'
+        f'"isPartOf":{{"@type":"Book","name":{esc(book)}}},'
+        '"inLanguage":"en",'
+        '"author":{"@type":"Person","name":"Mr. Librarian"},'
+        '"publisher":{"@type":"Organization","name":"The MisterLibrarian Bible Project",'
+        f'"url":{esc(site)}}}}},'
+        '{"@type":"BreadcrumbList","itemListElement":['
+        f'{{"@type":"ListItem","position":1,"name":"Table of Contents","item":{esc(site + "toc.html")}}},'
+        f'{{"@type":"ListItem","position":2,"name":{esc(book)},"item":{esc(site + "book-" + book_slug(book) + ".html")}}},'
+        f'{{"@type":"ListItem","position":3,"name":{esc(f"{book} {num}")}}}'
+        ']}]}</script>'
+    )
+
+
+def _meta_desc(book, num, teaser, src):
+    """Front-load the CHAPTER'S OWN HOOK into the meta description.
+
+    Search engines truncate descriptions around 155-160 characters. The old text
+    opened with ~140 characters of boilerplate ("... translated fresh from the
+    Hebrew, with verse-by-verse notes comparing NIV, KJV, Douay-Rheims, The Living
+    Bible, the 1599 Geneva, ASV, and NWT") and only then appended the teaser --
+    so the distinctive part, the only part that would earn a click, was cut off on
+    every one of the 180+ chapter pages, and every description was identical for
+    its first hundred-odd characters. Boilerplate descriptions are also the kind
+    Google most often discards and rewrites.
+
+    So: lead with the teaser, trimmed at a sentence boundary, and keep the
+    provenance line only as a short tail when there is room. Added 2026-07-31."""
+    t = re.sub(r"<[^>]+>", "", teaser or "")
+    t = (t.replace("\u26a0", "").replace("&mdash;", "\u2014").replace("&rsquo;", "\u2019")
+          .replace("&ldquo;", "\u201c").replace("&rdquo;", "\u201d").replace("&laquo;", "\u00ab")
+          .replace("&raquo;", "\u00bb").replace("&nbsp;", " "))
+    t = re.sub(r"\s+", " ", t).strip()
+    lead = f"{book} {num}: "
+    room = 158 - len(lead)
+    if len(t) > room:
+        cut = t[:room]
+        # prefer a sentence end, then a clause end, then a word boundary
+        for sep in (". ", "; ", " \u2014 ", ", "):
+            i = cut.rfind(sep)
+            if i > room * 0.45:
+                cut = cut[:i]
+                break
+        else:
+            i = cut.rfind(" ")
+            if i > 0:
+                cut = cut[:i]
+        t = cut.rstrip(" ,;\u2014-") + "\u2026"
+    out = lead + t
+    if len(out) < 120:
+        tail = f" Translated fresh from {src}."
+        if len(out) + len(tail) <= 155:
+            out += tail
+    return out
+
+
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
     og = _og_tags(title, desc, url, image, og_type)
@@ -2672,11 +2746,11 @@ function toggleHeb(){{
 {es_js}
 </script>"""
         src = "the Greek (the critical Greek New Testament)" if _is_nt(book) else "the Hebrew (Masoretic Text)"
-        desc = (f"{book} {num} translated fresh from {src}, with verse-by-verse "
-                f"notes comparing NIV, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva, ASV, and "
-                f"NWT. {teaser}")
+        desc = _meta_desc(book, num, teaser, src)
         out = page(f"{book} {num} — {SITE_NAME}", body, desc=desc,
                    url=chapter_filename(book, num))
+        out = out.replace("</head>", _chapter_jsonld(book, num, desc,
+                                                     chapter_filename(book, num)) + "\n</head>", 1)
         open(os.path.join(OUT, chapter_filename(book, num)), "w", encoding="utf-8").write(out)
         build_verse_stubs(book, num, content)
 
@@ -5149,6 +5223,44 @@ def check_library_parity():
     return len(dict_gap), len(ency_gap)
 
 
+def check_seo(chapters):
+    """Every chapter must carry its own search-facing metadata.
+
+    Two of the three SEO pieces are structural and therefore automatic: the meta
+    description is generated from the chapter's TEASER by _meta_desc(), and the
+    Article/BreadcrumbList JSON-LD by _chapter_jsonld(). A new chapter inherits
+    both simply by existing in CHAPTERS with a teaser. This guard exists so that
+    stays true -- it fails the build if a chapter would ship with a description
+    that is boilerplate-length, duplicated, or missing.
+
+    Added 2026-07-31, after finding that all 180+ chapters had been shipping an
+    IDENTICAL first ~140 characters ("... translated fresh from the Hebrew, with
+    verse-by-verse notes comparing NIV, KJV ...") with the distinctive teaser
+    appended AFTER the point search engines truncate -- so the only part that
+    could earn a click was cut off on every page on the site.
+
+    The third piece -- writing note headings that lead with the term a person
+    would actually search for -- is editorial and cannot be checked mechanically.
+    It lives in the per-chapter checklist."""
+    seen, bad = {}, []
+    for slug, book, num, teaser in CHAPTERS:
+        src = "the Greek" if _is_nt(book) else "the Hebrew"
+        d = _meta_desc(book, num, teaser, src)
+        if len(d) < 90:
+            bad.append(f"  {book} {num}: description only {len(d)} chars -- teaser too thin")
+        if len(d) > 160:
+            bad.append(f"  {book} {num}: description {len(d)} chars -- will be truncated")
+        key = d[:60]
+        if key in seen:
+            bad.append(f"  {book} {num}: description opening duplicates {seen[key]}")
+        seen[key] = f"{book} {num}"
+    if bad:
+        raise SystemExit("SEO CHECK FAILED -- every chapter needs its own search-facing hook:\n"
+                         + "\n".join(bad)
+                         + "\n(the description is generated from the chapter's teaser in CHAPTERS; "
+                           "give the chapter a real teaser and this passes)")
+
+
 def check_shelf_density(chapters):
     """The site's promise is 'catalogued & COMPARED' — every chapter's notes weigh
     this translation against the seven-version shelf. This guard makes the promise
@@ -5298,6 +5410,7 @@ def main():
     chapters = extract_source(args.source)
     check_shelf_density(chapters)
     check_library_parity()
+    check_seo(chapters)
     check_sblgnt_sigla(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
