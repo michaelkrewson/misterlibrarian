@@ -335,7 +335,16 @@ def _og(title, desc, url="", image=""):
         f'<meta name="twitter:image" content="{img}"/>',
     ]
     if url:
-        full = f"{SITE_URL}{BASE}/{url}"
+        # A directory index answers at BOTH /travel/ and /travel/index.html.
+        # build_sitemap() submits the directory form — it is the one a person
+        # would share — so the canonical has to agree with it. When it did not,
+        # the sitemap said "index this" while the page replied "no, the real
+        # one is index.html", and Google resolves that by dropping the
+        # submitted URL as "alternate page with proper canonical tag". On the
+        # blog's single most important URL. Found 2026-08-01, days after the
+        # sitemap was submitted.
+        path = "" if url == "index.html" else url
+        full = f"{SITE_URL}{BASE}/{path}"
         tags.insert(0, f'<link rel="canonical" href="{full}"/>')
         tags.append(f'<meta property="og:url" content="{full}"/>')
     return "\n" + "\n".join(tags)
@@ -1530,6 +1539,40 @@ def check_seo(posts):
                          "search metadata:\n" + "\n".join(fail))
 
 
+def check_canonicals():
+    """Every URL in the sitemap must agree with that page's own canonical.
+
+    A sitemap that submits one URL while the page names a different one is
+    self-contradicting, and Google resolves it by dropping the submitted URL.
+    It is silent — the sitemap reports as "success", the pages look fine, and
+    the URL simply never indexes. Ours did exactly this on /travel/ for the
+    first few days after submission.
+
+    Runs on the BUILT output, after everything is written, because that is the
+    only place the two are actually comparable."""
+    sm_path = os.path.join(OUT_DIR, "sitemap.xml")
+    if not os.path.exists(sm_path):
+        return
+    bad = []
+    for loc in re.findall(r"<loc>([^<]+)</loc>", open(sm_path, encoding="utf-8").read()):
+        rel = loc[len(f"{SITE_URL}{BASE}/"):] or "index.html"
+        fp = os.path.join(OUT_DIR, rel)
+        if not os.path.exists(fp):
+            bad.append(f"  {loc}: in the sitemap but no such file was built")
+            continue
+        doc = open(fp, encoding="utf-8").read()
+        m = re.search(r'<link rel="canonical" href="([^"]+)"', doc)
+        if not m:
+            bad.append(f"  {loc}: no canonical")
+        elif m.group(1) != loc:
+            bad.append(f"  {loc}: canonical disagrees -> {m.group(1)}")
+        if re.search(r'<meta name="robots"[^>]*noindex', doc, re.I):
+            bad.append(f"  {loc}: noindex, but submitted in the sitemap")
+    if bad:
+        raise SystemExit("Sitemap/canonical check failed — submitted URLs that "
+                         "contradict their own pages:\n" + "\n".join(bad))
+
+
 def main():
     ap = argparse.ArgumentParser(description="Build The Librarian Abroad (/travel/).")
     ap.add_argument("--drafts", action="store_true",
@@ -1564,6 +1607,9 @@ def main():
     _prune_stale_draft_previews(draft_slugs)
     if not args.drafts:
         _prune_leaked_draft_pages(draft_slugs)
+
+    # After everything is written: the sitemap and the pages must not disagree.
+    check_canonicals()
 
     drafts = len(draft_slugs)
     print("built {} post(s){} -> {}".format(
