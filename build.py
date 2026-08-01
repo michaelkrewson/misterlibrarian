@@ -689,7 +689,15 @@ def _og_tags(title, desc, url="", image="", og_type=None):
         f'<meta name="twitter:image" content="{img}"/>',
     ]
     if url:
-        full = f"{SITE_URL}/{url}"
+        # The home page answers at BOTH https://mistertranslation.com/ and
+        # .../index.html. We used to declare .../index.html everywhere — canonical,
+        # og:url, sitemap and nav all agreed on it — and Google OVERRODE us: it
+        # indexed the bare directory form and filed /index.html under "Duplicate
+        # without user-selected canonical" (GSC, confirmed 2026-08-01). That is
+        # Google's documented preference for a site root, and arguing with it just
+        # spends a sitemap entry to be told no. So declare what it already chose,
+        # which is also the URL a person would type or share.
+        full = f"{SITE_URL}/" if url == "index.html" else f"{SITE_URL}/{url}"
         tags.insert(0, f'<link rel="canonical" href="{full}"/>')
         tags.append(f'<meta property="og:url" content="{full}"/>')
     return "\n" + "\n".join(tags)
@@ -5257,6 +5265,36 @@ def check_library_parity():
     return len(dict_gap), len(ency_gap)
 
 
+def check_canonicals():
+    """Every URL in the sitemap must match the canonical its page declares.
+
+    Runs on the BUILT output, at the end, because that is the only point the
+    two are comparable. Added 2026-08-01 after Search Console reported the home
+    page as "Duplicate without user-selected canonical": we were submitting
+    /index.html while Google had chosen the bare directory form, so the
+    submitted URL was discarded. Silent by nature — the sitemap reports
+    success and the page looks fine.
+
+    Cheap: ~1,900 local reads of the first 2 KB of each file."""
+    sm = os.path.join(OUT, "sitemap.xml")
+    if not os.path.exists(sm):
+        return
+    bad = []
+    for loc in re.findall(r"<loc>([^<]+)</loc>", open(sm, encoding="utf-8").read()):
+        rel = loc[len(SITE_URL) + 1:] or "index.html"
+        fp = os.path.join(OUT, rel)
+        if not os.path.exists(fp):
+            bad.append(f"  {loc}: submitted but no such file was built")
+            continue
+        head = open(fp, encoding="utf-8").read(4000)
+        m = re.search(r'<link rel="canonical" href="([^"]+)"', head)
+        if m and m.group(1) != loc:
+            bad.append(f"  {loc}: canonical disagrees -> {m.group(1)}")
+    if bad:
+        raise SystemExit("Sitemap/canonical check failed — submitted URLs that "
+                         "contradict their own pages:\n" + "\n".join(bad[:25]))
+
+
 def check_seo(chapters):
     """Every chapter must carry its own search-facing metadata.
 
@@ -5429,7 +5467,11 @@ def build_sitemap():
         if 'name="robots" content="noindex' in head:
             continue              # never advertise a page we've asked not to index
 
-        loc = f"{SITE_URL}/{f}"
+        # Must match the canonical the page declares — see the note in the head
+        # builder. Submitting /index.html while the page canonicalises to / is
+        # how the home page ended up as a "Duplicate without user-selected
+        # canonical" in Search Console.
+        loc = f"{SITE_URL}/" if f == "index.html" else f"{SITE_URL}/{f}"
         alts = []
         if f.endswith(".es.html"):
             en = f[:-8] + ".html"
@@ -5497,6 +5539,7 @@ def main():
     build_route_pages()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_sitemap = build_sitemap()
+    check_canonicals()
     save_card_manifest()
     report_card_budget()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
