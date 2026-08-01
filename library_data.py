@@ -6067,6 +6067,24 @@ VIDEO_CREDITS = [
 # before starting a new chapter or book; move anything relevant into an
 # ENCYCLOPEDIA entry (new or existing) as soon as its target is reached.
 VIDEO_QUEUE = [
+    # Found 2026-08-01, prompted by Michael while Luke 2 was being shipped (whose
+    # katalyma note leans on Luke 22:11 — the same upper room). Channel CONFIRMED
+    # via oEmbed author_name = "Expedition Bible" (there is a near-identical
+    # "The Upper Room. Joel Kramer. SourceFlix." on the Biblicaltours channel —
+    # same presenter, different channel, so it would need its own credit line).
+    # oEmbed returns 200, so it embeds; no NOEMBED_IDS entry needed.
+    # \u26a0 NOT YET READ. YouTube was hard-rate-limiting (429) on every yt-dlp
+    # client and the video appears to carry no captions, so its actual argument
+    # is unverified. Do not place it off the title — that is exactly the mistake
+    # the Pilate video nearly caused. Pull the transcript or watch it first.
+    # \u26a0 Half its subject is PENTECOST, and Acts 2 is ALREADY TRANSLATED, so
+    # this is placeable as soon as it can be read — not chapters away. There is
+    # no `upper-room` encyclopedia entry yet; that is where it belongs, and it
+    # would give the Luke 2 katalyma note something to link to.
+    ("The Last Supper and Pentecost...HERE!", "https://www.youtube.com/watch?v=1e5paRyGr0A",
+     "Luke 22 / Mark 14 (the upper room) and Acts 1-2 (Pentecost \u2014 already translated)",
+     "Argues for the identification of the Upper Room \u2014 the room Luke calls a KATALYMA, the same "
+     "word he uses of the guest room in Bethlehem at 2:7. Wanted on a new Upper Room encyclopedia entry."),
     # ("Where God Divided the Sea...Exploring the Exodus!"
     #  — PLACED 2026-07-21 on the YAM-SUPH encyclopedia entry (Exodus 14), at
     #  Michael's request while translating the sea crossing. The entry lays out
