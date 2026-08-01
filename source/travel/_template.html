@@ -9,6 +9,7 @@ hero: some-photo.jpg
 hero_alt: Describe the photo for someone who can't see it
 hero_credit: Optional — leave the line out entirely if the photo is yours
 summary: One or two sentences. This is what shows on the index card, in the RSS feed, and in the link preview when someone shares it.
+meta_desc: Optional. Only set this when the auto-derived search description (the first whole sentences of `summary:` that fit in 155 characters) isn't the angle worth leading on. Leave the line out entirely otherwise.
 draft: true
 ---
 <!--
@@ -27,6 +28,37 @@ draft: true
   4. Rebuild and push:
          python3 build_travel.py
          git add travel source/travel && git commit -m "New entry: …" && git push
+
+  SEO — EVERY ENTRY, NOT AS AN AFTERWARDS
+  ───────────────────────────────────────
+  Standing rule (Michael, 2026-08-01): a post does not go up without its
+  search value considered. Most of it is now automatic and ENFORCED — the
+  build runs check_seo() before it writes anything and REFUSES to build on a
+  missing alt, a description that would be truncated, a duplicate description,
+  or an entry with no tags. You inherit the meta description, the Review and
+  BreadcrumbList structured data, the canonical, the OG/Twitter card, the image
+  dimensions and the eager hero just by filling in the front matter above.
+
+  What the build CANNOT judge, and what is therefore your job on every entry:
+
+  1. ONE HEADING THAT MATCHES A REAL SEARCH. Keep the literary <h2>s — they
+     are the voice of the thing. But make sure at least one heading uses the
+     words a person would actually type. "What I actually come here for" is
+     charming and invisible; "Is La Provence worth the wait?" is both. A
+     "Practical" section with the address, hours and prices is the reliable
+     one, and it doubles as the most useful part of the entry.
+  2. NAME THE THING, IN FULL, EARLY. The dish, the place and the town in the
+     first paragraph — "the West Coast Salmon Benedict at La Provence in
+     Vancouver, Washington", not "it". Nobody searches for "it".
+  3. ANSWER THE QUESTION THE READER ARRIVED WITH. Price, hours, whether there
+     is a line, whether it is worth it. That is the long-tail traffic on a
+     food blog, and it is also just a better entry.
+  4. PHOTO FILENAMES ARE TEXT TOO. laprovence-salmon-benedict.jpg says more
+     to an image crawler than IMG_6528.jpg. Name them at the resizer step:
+         python3 tools/travel_photos.py --name laprovence-sauce ~/Desktop/x.jpg
+  5. LINK ONE OLDER ENTRY where it genuinely belongs. This site has no inbound
+     links by design, so entry-to-entry links are most of its internal
+     structure. Never link to or from the Bible side — see the README.
 
   TAGS: tag the food ITEMS, not just the cuisine and the place. Anything
   pictured or discussed by name — "brussels sprouts", "cacio e pepe",

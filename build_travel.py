@@ -81,6 +81,44 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 # Only used to build that one link; nothing else here knows about GitHub.
 PUBLISH_REPO = "michaelkrewson/misterlibrarian"
 
+# -------------------------------------------------------- meta description ---
+
+# `summary:` is written for the index card and the RSS feed, where a couple of
+# full sentences read well. A search result is not that: Google shows about 155
+# characters and cuts the rest mid-word. Measured at 13 entries, TWELVE were
+# over — so on almost every page the half that would earn the click was the half
+# being thrown away. Same class of bug the Bible side hit in July, arriving from
+# the other direction: there the boilerplate was too long, here the good part is
+# simply too far back.
+#
+# So the description is derived, not reused: take whole sentences from the
+# summary while they fit. A complete thought that stops early beats a longer one
+# the search engine amputates. An entry can override with `meta_desc:` when the
+# derived version isn't the angle worth leading on.
+META_DESC_MAX = 155
+META_DESC_MIN = 70
+
+
+def _meta_desc(p):
+    if p.get("meta_desc"):
+        return p["meta_desc"]
+    summary = " ".join((p["summary"] or "").split())
+    if len(summary) <= META_DESC_MAX:
+        return summary
+    out = ""
+    for sentence in re.findall(r'[^.!?]*[.!?]', summary):
+        if len(out) + len(sentence) > META_DESC_MAX:
+            break
+        out += sentence
+    out = out.strip()
+    if len(out) >= META_DESC_MIN:
+        return out
+    # One very long opening sentence: fall back to a word-boundary cut. Still
+    # better than a mid-word truncation chosen by the search engine.
+    cut = summary[:META_DESC_MAX - 1].rsplit(" ", 1)[0].rstrip(",;:—- ")
+    return cut + "…"
+
+
 # ------------------------------------------------------------- tag filters ---
 
 # The entry template asks for a tag per DISH, by name — "brussels sprouts",
@@ -106,7 +144,7 @@ OUT_DIR = os.path.join(ROOT, "travel")
 # better a loud typo than a silently-ignored `sumary:` line.
 KNOWN_KEYS = {
     "title", "date", "place", "tags", "hero", "hero_alt", "hero_credit",
-    "summary", "draft", "stars", "subject", "subject_type",
+    "summary", "draft", "stars", "subject", "subject_type", "meta_desc",
 }
 REQUIRED_KEYS = {"title", "date", "summary"}
 
@@ -447,6 +485,7 @@ def load_posts(include_drafts=False):
             "hero_alt": meta.get("hero_alt", ""),
             "hero_credit": meta.get("hero_credit", ""),
             "summary": meta["summary"],
+            "meta_desc": meta.get("meta_desc", ""),
             "draft": is_draft,
             "body": body,
             # Lowercased haystack for the on-page search box — title/place/tags/
@@ -534,15 +573,73 @@ def _tag_slug(t):
     return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
 
 
-def _hero_img(p, cls="hero"):
+_DIMS_CACHE = {}
+
+
+def _img_dims(filename):
+    """(width, height) of a file in travel/img/, or None.
+
+    Emitting these is a Core Web Vitals fix, not decoration: without them the
+    browser reserves no space for a photo until it has loaded, so every image
+    shoves the text below it down the page as it arrives. On a photo-led entry
+    with seventeen figures that is a lot of cumulative layout shift, and CLS is
+    a ranking signal.
+
+    Fails OPEN — Pillow is already required by tools/travel_photos.py, but if it
+    is missing or a file is unreadable the build still produces a correct page,
+    just without the hint. Cached because the index re-renders every hero."""
+    if filename in _DIMS_CACHE:
+        return _DIMS_CACHE[filename]
+    dims = None
+    try:
+        from PIL import Image
+        with Image.open(os.path.join(OUT_DIR, "img", filename)) as im:
+            dims = im.size
+    except Exception:
+        dims = None
+    _DIMS_CACHE[filename] = dims
+    return dims
+
+
+def _dim_attrs(filename):
+    d = _img_dims(filename)
+    return f' width="{d[0]}" height="{d[1]}"' if d else ""
+
+
+def _hero_img(p, cls="hero", eager=False):
+    """`eager` marks the one image that is the page's LCP element.
+
+    A lazy-loaded LCP image is a well-known own goal: the browser defers the
+    very thing the score is measured against. The entry page's hero and the
+    index's first card are the only two that qualify — everything further down
+    stays lazy, which is what makes lazy loading worth having at all."""
     if not p["hero"]:
         return ""
     alt = html.escape(p["hero_alt"] or p["title"], quote=True)
     credit = (f'<figcaption class="credit">{html.escape(p["hero_credit"])}</figcaption>'
               if p["hero_credit"] else "")
+    load = ('loading="eager" fetchpriority="high"' if eager else 'loading="lazy"')
     return (f'<figure class="{cls}">'
-            f'<img src="img/{html.escape(p["hero"], quote=True)}" alt="{alt}" loading="lazy"/>'
+            f'<img src="img/{html.escape(p["hero"], quote=True)}" alt="{alt}"'
+            f'{_dim_attrs(p["hero"])} {load}/>'
             f'{credit}</figure>')
+
+
+_IMG_TAG_RE = re.compile(r'<img\s([^>]*?)src="img/([^"]+)"([^>]*?)>', re.I)
+
+
+def _add_img_dims(body):
+    """Inject width/height into the hand-written <figure> images in an entry.
+
+    The body is the author's own HTML, so this is the only place the dimensions
+    can be added without asking them to hand-count pixels for every photo. Skips
+    any tag that already declares a width, so an explicit choice always wins."""
+    def sub(m):
+        before, src, after = m.group(1), m.group(2), m.group(3)
+        if "width=" in (before + after).lower():
+            return m.group(0)
+        return f'<img {before}src="img/{src}"{after}{_dim_attrs(src)}>'
+    return _IMG_TAG_RE.sub(sub, body)
 
 
 def _hits_id(path):
@@ -610,13 +707,13 @@ def _tag_pills(p):
             + "</div>")
 
 
-def post_card(p):
+def post_card(p, eager=False):
     data_tags = " ".join(_tag_slug(t) for t in p["tags"])
     stars = (f'<div class="cardrating">{_stars_svg(p["stars"], 17)}</div>'
              if p["stars"] is not None else "")
     return f"""<article class="card" data-tags="{html.escape(data_tags, quote=True)}" data-stars="{p['stars'] if p['stars'] is not None else -1}" data-search="{html.escape(p['search'], quote=True)}">
   <a class="cardlink" href="{p['file']}">
-    {_hero_img(p, 'thumb')}
+    {_hero_img(p, 'thumb', eager=eager)}
     <div class="cardbody">
       {_meta_line(p)}
       {stars}
@@ -636,7 +733,9 @@ def build_index(posts):
         search = ""
         archive = ""
     else:
-        cards = "\n".join(post_card(p) for p in posts)
+        # Only the first card is eager: it is the index's LCP element. The rest
+        # stay lazy, which is the whole point of having lazy loading.
+        cards = "\n".join(post_card(p, eager=(i == 0)) for i, p in enumerate(posts))
         counts = collections.Counter(t for p in posts for t in p["tags"])
         all_tags = sorted(counts, key=str.lower)
         chips = ""
@@ -873,19 +972,44 @@ def _post_article(p, extra=""):
     # result itself, which matters a great deal for a blog nothing links to.
     ld = ""
     if p["stars"] is not None:
+        # ⚠ UNESCAPE before this goes into JSON. Front matter is written for
+        # HTML, so a subject like "Boulangerie &amp; Patisserie" is correct
+        # there — but JSON-LD is not HTML, and passing it through raw published
+        # the business name to Google with a literal "&amp;" in it.
+        subject = html.unescape(p["subject"] or p["title"])
+        url = f"{SITE_URL}{BASE}/{p['file']}"
+        hero_url = f"{SITE_URL}{BASE}/img/{p['hero']}" if p["hero"] else ""
         ld = "\n<script type=\"application/ld+json\">" + json.dumps({
             "@context": "https://schema.org",
             "@type": "Review",
             "itemReviewed": {
                 "@type": p["subject_type"],
-                "name": p["subject"] or p["title"],
-                **({"address": p["place"]} if p["place"] else {}),
+                "name": subject,
+                **({"address": html.unescape(p["place"])} if p["place"] else {}),
             },
             "reviewRating": {"@type": "Rating", "ratingValue": p["stars"],
                              "bestRating": 5, "worstRating": 1},
             "author": {"@type": "Person", "name": "Mr. Librarian"},
             "datePublished": p["date"].isoformat(),
             "publisher": {"@type": "Organization", "name": SITE_NAME},
+            "url": url,
+            # The headline and photo are what a rich result actually shows; a
+            # Review with neither renders as a bare star row.
+            "name": html.unescape(p["title"]),
+            **({"image": hero_url} if hero_url else {}),
+            **({"reviewBody": html.unescape(p["summary"])} if p.get("summary") else {}),
+        }, ensure_ascii=False) + "</script>"
+        # Breadcrumbs let the result show "The Librarian Abroad › <entry>"
+        # instead of a bare URL. Cheap, and this site has exactly one level.
+        ld += "\n<script type=\"application/ld+json\">" + json.dumps({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": SITE_NAME,
+                 "item": f"{SITE_URL}{BASE}/"},
+                {"@type": "ListItem", "position": 2,
+                 "name": html.unescape(p["title"])},
+            ],
         }, ensure_ascii=False) + "</script>"
 
     return f"""{extra}<article class="post">{ld}
@@ -893,9 +1017,9 @@ def _post_article(p, extra=""):
   <h1>{html.escape(p['title'])}</h1>
   {_meta_line(p, show_hits=True)}
   {_rating_block(p)}
-  {_hero_img(p)}
+  {_hero_img(p, eager=True)}
   <div class="postbody">
-{p['body']}
+{_add_img_dims(p['body'])}
   </div>
   {_tag_pills(p)}
 </article>"""
@@ -932,7 +1056,7 @@ def build_post_pages(posts):
         img = f"{SITE_URL}{BASE}/img/{p['hero']}" if p["hero"] else ""
         out.append((p["file"],
                     page(f"{p['title']} — {SITE_NAME}", body,
-                         desc=p["summary"], url=p["file"], image=img)))
+                         desc=_meta_desc(p), url=p["file"], image=img)))
     return out
 
 
@@ -1344,6 +1468,68 @@ def write(rel, text):
     return path
 
 
+def check_seo(posts):
+    """Every entry must carry its own search-facing metadata. Fails the build.
+
+    The rule Michael asked for (2026-08-01): a post does not go up without its
+    SEO being right. Enforcing it in the builder rather than in a habit is the
+    only version that survives a busy week — it applies to a draft preview as
+    much as to a publish, so a problem surfaces while the entry is still being
+    written, not months later in Search Console.
+
+    Most of the value here is STRUCTURAL and therefore automatic: an entry
+    inherits its meta description (_meta_desc), Review + BreadcrumbList JSON-LD
+    (_post_article), canonical, OG/Twitter card, image dimensions and an eager
+    hero simply by existing. This guard exists so that stays true.
+
+    What it deliberately does NOT check is the editorial half — whether a
+    heading leads with the words a person would actually type. No build can
+    judge that; it lives in the checklist in source/travel/_template.html.
+
+    WARN vs FAIL: it fails only on things that are unambiguously broken and
+    always fixable in the front matter. A missing hero is a warning, because a
+    notes entry legitimately has no photograph."""
+    fail, warn, seen = [], [], {}
+    for p in posts:
+        who = p["slug"]
+        d = _meta_desc(p)
+        if len(d) > META_DESC_MAX:
+            fail.append(f"  {who}: meta description {len(d)} chars — search will cut it "
+                        f"(shorten `summary:`, or set `meta_desc:`)")
+        if len(d) < META_DESC_MIN:
+            fail.append(f"  {who}: meta description only {len(d)} chars — too thin to earn "
+                        f"a click (lengthen `summary:`, or set `meta_desc:`)")
+        key = d[:60].lower()
+        if key in seen:
+            fail.append(f"  {who}: description opens identically to {seen[key]} — "
+                        f"duplicate descriptions compete with each other")
+        seen[key] = who
+
+        if not p["tags"]:
+            fail.append(f"  {who}: no `tags:` — nothing to file it under, and the tag "
+                        f"pills are this site's only internal linking")
+        if p["hero"] and not p["hero_alt"]:
+            fail.append(f"  {who}: `hero:` without `hero_alt:` — the hero is the OG "
+                        f"image and the one photo Google indexes by name")
+        # Body images: alt is both the accessibility contract and how an image
+        # earns anything in image search. A decorative <img> has no place here.
+        for tag in re.findall(r'<img\s[^>]*>', p["body"], re.I):
+            if not re.search(r'\balt="[^"]{4,}"', tag):
+                src = (re.search(r'src="([^"]*)"', tag) or [None, "?"])[1]
+                fail.append(f"  {who}: <img> with no useful alt text — {src}")
+        if not p["hero"]:
+            warn.append(f"  {who}: no `hero:` — shared links get no preview image")
+        if len(p["title"]) > 60:
+            warn.append(f"  {who}: title {len(p['title'])} chars — the "
+                        f"'— {SITE_NAME}' suffix will be cut in results")
+    if warn:
+        print("SEO notes:")
+        print("\n".join(warn))
+    if fail:
+        raise SystemExit("SEO check failed — an entry would ship without its "
+                         "search metadata:\n" + "\n".join(fail))
+
+
 def main():
     ap = argparse.ArgumentParser(description="Build The Librarian Abroad (/travel/).")
     ap.add_argument("--drafts", action="store_true",
@@ -1352,6 +1538,9 @@ def main():
 
     all_posts = load_posts(include_drafts=True)
     posts = all_posts if args.drafts else [p for p in all_posts if not p["draft"]]
+    # Before anything is written, and over ALL posts including drafts — an entry
+    # should fail this while it is still being drafted, not on the day it ships.
+    check_seo(all_posts)
     os.makedirs(os.path.join(OUT_DIR, "img"), exist_ok=True)
 
     write("index.html", build_index(posts))
