@@ -35,6 +35,7 @@ it. Keep it that way — do not import from build.py or library_data.py, and do 
 add a link between the two sites.
 """
 import argparse
+import collections
 import datetime as dt
 import hashlib
 import html
@@ -79,6 +80,23 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 # Repo behind the "Publish this entry" button on a draft preview (_publish_box).
 # Only used to build that one link; nothing else here knows about GitHub.
 PUBLISH_REPO = "michaelkrewson/misterlibrarian"
+
+# ------------------------------------------------------------- tag filters ---
+
+# The entry template asks for a tag per DISH, by name — "brussels sprouts",
+# "cacio e pepe" — which is deliberate and worth keeping: it is what lets a
+# reader who wants every sprout on the site click one pill and get them. The
+# side effect is a very long tail. Measured at 13 entries: 46 unique tags, 32 of
+# them used exactly once, growing ~3.5 tags per entry. Rendered flat that is a
+# few hundred chips above the first card.
+#
+# So the bar shows only tags that RECUR, and folds the rest away behind a
+# "+N more" toggle. Nothing is lost: the long tail is still one click away, it
+# is still linked from the foot of every entry, and the header search already
+# composes with it. The tail is for ARRIVING at (a search, a pill on a post),
+# not for browsing — nobody scans an index for "hollandaise".
+TAG_BAR_MIN_COUNT = 2    # a tag earns a visible slot by appearing more than once
+TAG_BAR_MAX_CHIPS = 18   # ...and the bar stays bounded however big the blog gets
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(ROOT, "source", "travel")
@@ -619,14 +637,50 @@ def build_index(posts):
         archive = ""
     else:
         cards = "\n".join(post_card(p) for p in posts)
-        all_tags = sorted({t for p in posts for t in p["tags"]}, key=str.lower)
+        counts = collections.Counter(t for p in posts for t in p["tags"])
+        all_tags = sorted(counts, key=str.lower)
         chips = ""
         if all_tags:
+            # Which tags earn a visible slot. Threshold first (a tag proves it is
+            # a theme by recurring), then a hard cap by frequency so the bar can
+            # never grow without bound — at a few hundred entries "used twice"
+            # would itself be a wall. Both lists render alphabetically: a chip
+            # should be where you last saw it, not move around as counts shift.
+            shown = [t for t in all_tags if counts[t] >= TAG_BAR_MIN_COUNT]
+            if len(shown) > TAG_BAR_MAX_CHIPS:
+                keep = set(sorted(shown, key=lambda t: (-counts[t], t.lower()))
+                           [:TAG_BAR_MAX_CHIPS])
+                shown = [t for t in all_tags if t in keep]
+            shown_set = set(shown)
+            rare = [t for t in all_tags if t not in shown_set]
+
+            def _chip(t, is_rare=False):
+                n = counts[t]
+                # A weight cue rather than a tag cloud: the frequent tags read a
+                # little stronger so the bar still says what the blog is mostly
+                # about, but every chip keeps a full-size tap target and the same
+                # contrast. Nothing is de-emphasised below the base style.
+                cls = "chip"
+                if is_rare:
+                    cls += " rare"
+                elif n >= 5:
+                    cls += " w3"
+                elif n >= 3:
+                    cls += " w2"
+                return (f'<button class="{cls}" data-tag="{_tag_slug(t)}" '
+                        f'title="{n} {"entry" if n == 1 else "entries"}">'
+                        f'{html.escape(t)}</button>')
+
+            more = ""
+            if rare:
+                more = (f'<button class="chip more" id="tagMore" type="button" '
+                        f'aria-expanded="false" aria-controls="filters" '
+                        f'data-count="{len(rare)}">+ {len(rare)} more</button>')
             chips = ('<div class="filters" id="filters">'
                      '<button class="chip on" data-tag="">All</button>'
-                     + "".join(
-                         f'<button class="chip" data-tag="{_tag_slug(t)}">{html.escape(t)}</button>'
-                         for t in all_tags)
+                     + "".join(_chip(t) for t in shown)
+                     + more
+                     + "".join(_chip(t, is_rare=True) for t in rare)
                      + "</div>")
         # The INPUT itself lives in the header now (see header() — reachable from
         # every page). This is just where the live result count shows up once a
@@ -704,10 +758,33 @@ def build_index(posts):
       : '';
   }}
 
+  // Unfold the long tail of tags. Kept separate from the filter handler below
+  // because this button is a disclosure, not a filter — it must never become
+  // the active tag or it would blank the card list.
+  function openTags(){{
+    if (!filterBar) return;
+    var more = document.getElementById('tagMore');
+    filterBar.classList.add('tags-open');
+    if (more) {{
+      more.setAttribute('aria-expanded', 'true');
+      more.textContent = '\\u2212 fewer';
+    }}
+  }}
+
   if (filterBar) {{
     filterBar.addEventListener('click', function(e){{
       var b = e.target.closest('.chip');
       if (!b) return;
+      if (b.id === 'tagMore') {{
+        if (filterBar.classList.contains('tags-open')) {{
+          filterBar.classList.remove('tags-open');
+          b.setAttribute('aria-expanded', 'false');
+          b.textContent = '+ ' + b.dataset.count + ' more';
+        }} else {{
+          openTags();
+        }}
+        return;
+      }}
       activeTag = b.dataset.tag;
       filterBar.querySelectorAll('.chip').forEach(function(c){{ c.classList.toggle('on', c === b); }});
       apply();
@@ -750,6 +827,10 @@ def build_index(posts):
   if (handedTag && filterBar) {{
     var match = filterBar.querySelector('.chip[data-tag="' + handedTag + '"]');
     if (match) {{
+      // Most tags are dish names used once, so the chip handed over here is
+      // usually one of the folded ones. Unfold, or the reader sees a filtered
+      // list with no visible chip explaining why — and no obvious way back.
+      if (match.classList.contains('rare')) openTags();
       activeTag = handedTag;
       filterBar.querySelectorAll('.chip').forEach(function(c){{
         c.classList.toggle('on', c === match);

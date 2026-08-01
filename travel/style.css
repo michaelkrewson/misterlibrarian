@@ -251,6 +251,29 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .chip:hover { border-color: var(--terra); color: var(--terra); }
 .chip.on { background: var(--olive); border-color: var(--olive); color: #0a0f1a; }
+
+/* The long tail of one-off dish tags, folded away until asked for. See
+   TAG_BAR_MIN_COUNT in build_travel.py for why. Display only — every tag is
+   still in the DOM, still filterable, still linked from the foot of an entry. */
+.chip.rare { display: none; }
+.filters.tags-open .chip.rare { display: block; }
+
+/* The disclosure itself: dashed, so it reads as "there is more behind this"
+   rather than as another tag you could filter by. */
+.chip.more {
+  border-style: dashed;
+  color: var(--muted);
+  background: transparent;
+}
+.chip.more:hover { border-color: var(--terra); color: var(--terra); }
+
+/* A weight cue instead of a tag cloud — the recurring tags read slightly
+   stronger so the bar still tells you what the blog is mostly about, but
+   nothing is shrunk and nothing loses contrast, so every chip stays an equal
+   tap target and screen readers are unaffected. */
+.chip.w2 { color: var(--ink); }
+.chip.w3 { color: var(--ink); font-weight: 600; border-color: rgba(255,255,255,.18); }
+.chip.w2.on, .chip.w3.on { color: #0a0f1a; }
 /* A tag list wraps to 6-7 rows once there are ~20 tags -- fine on desktop, but
    on a phone that's most of a screen of filter chips before the first post
    card. A single horizontally-scrolling row keeps every tag reachable in the
