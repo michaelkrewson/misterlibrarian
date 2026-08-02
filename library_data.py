@@ -56,6 +56,7 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('tohu', 'tohu', 'תֹּהוּ', 'tohu', "FORMLESSNESS, chaos, emptiness — the earth's condition before the first day, 'formless and empty' (tohu va-vohu, Genesis 1:2, its most famous appearance, paired there with its usual companion bohu). ⚠ Isaiah reaches for the same bare word, alone, twice in one chapter (40:17, 23) to describe the nations and their rulers before God — not merely small, but measured against the raw uncreated condition that existed before God spoke order into anything at all. Deuteronomy 32:10 uses it of literal desert waste ('a howling tohu of a wilderness'); 1 Samuel 12:21 of idols themselves, 'tohu that cannot profit or deliver.' A word for the specific nothing that precedes shape.", ('Isaiah', 40, 17)),
     ('ovnayim', 'ovnayim', 'אָבְנָיִם', 'ovnayim', "THE TWO STONES — the potter's wheel, and one of the most informative words in the Hebrew Bible, because it is a DUAL: not 'wheel' but the dual of even, 'stone'. The word is a photograph of the machine — a lower stone turned by hand or foot driving an upper stone on a pivot and socket, with the clay riding on top — and the older versions still hear the number (KJV and ASV both have 'the wheels', plural, at Jeremiah 18:3; modern versions flatten it to one wheel). ⚠ It occurs only TWICE in the Bible, and the other place is startling: Exodus 1:16, where it is the BIRTH-STOOL the Hebrew mothers crouch on and Pharaoh tells the midwives to watch. One dual word for the potter's twin stones and for the two stones of childbirth — both of them the place where a life is given its shape. See the encyclopedia entry on the potter for how the craft was actually done.", ('Jeremiah', 18, 3)),
     ('chomer', 'chomer', 'חֹמֶר', 'chomer', "CLAY — wet, workable potter's clay, and by extension mud or mortar (it is the stuff of the Egyptian brick-quota in Exodus 1:14). ⚠ The whole force of the image in Jeremiah 18 depends on one physical fact about chomer that a reader today may not carry: WET clay can be collapsed and thrown again as often as you like, while FIRED clay can never be reworked, only smashed. That is why chapter 18's marred vessel is reshaped on the wheel and chapter 19's baked flask is broken 'so that it can never be mended again' (19:11) — two sign-acts, back to back, and the difference between them is the kiln. Isaiah turns the same noun into a prayer: 'we are the chomer, and you our potter' (64:8). Job grants the premise from the other side: 'I too was nipped off from the chomer' (33:6).", ('Jeremiah', 18, 4)),
     ('noash', "no'ash", 'נוֹאָשׁ', "no'ash", 'HOPELESS, desperate, given up — a rare word, and in Jeremiah 18:12 it is the people\'s ENTIRE answer to God, one flat syllable of a reply. The shelf spreads out over how to say it: KJV \'There is no hope\'; ASV \'It is in vain\'; NIV "It\'s no use"; NWT \'It is hopeless!\' ⚠ Note precisely what is being called hopeless. God has just said, in the same breath, that the outcome is NOT fixed — \'if that nation turns back from its evil, then I relent\' (18:8) — and has named the way out: \'turn back, each of you, from his evil way\' (18:11). So no\'ash is not a report on their circumstances. It is a verdict on the offer, and the chapter presents it as false. The same root turns up as plain resignation elsewhere (1 Samuel 27:1, Saul giving up the chase), which is what makes its use here so bleak: the word for abandoning a search is used for abandoning repentance.', ('Jeremiah', 18, 12)),
@@ -2683,7 +2684,7 @@ ENCYCLOPEDIA = [
               "potters' dumps and the high places where children were burned (Jeremiah 19). The city of the "
               "temple, the exile, the passion — and, in "
               "Revelation's last vision, the descending New Jerusalem with no temple in it at all (Rev 21:22).",
-         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("2 Chronicles", 1, 4), ("Ezra", 1, 3), ("Nehemiah", 1, 3), ("Acts", 1, 4), ("Galatians", 1, 17)],
+         refs=[("Daniel", 1, 1), ("Matthew", 5, 35), ("John", 2, 13), ("John", 2, 23), ("Jeremiah", 22, 19), ("Isaiah", 40, 2), ("2 Chronicles", 1, 4), ("Ezra", 1, 3), ("Nehemiah", 1, 3), ("Acts", 1, 4), ("Galatians", 1, 17)],
          coords=(31.7784, 35.2354, 0.12),
          modern="Jerusalem", videos=[]),
     dict(slug="mary-mother", name="Mary (the mother of Jesus)", kind="person",
@@ -4380,6 +4381,18 @@ ENCYCLOPEDIA = [
               "Jewish tradition, preserved in the Ascension of Isaiah and the Talmud (Yevamot 49b), has Manasseh saw him in two "
               "— which is probably what Hebrews 11:37 means by 'they were sawn asunder.'",
          refs=[("Isaiah", 1, 1), ("Matthew", 3, 3)], videos=[]),
+    dict(slug="lebanon", name="Lebanon", kind="place", aliases=["Lebanon"],
+         coords=(34.0, 36.0, 0.6),
+         desc="The mountain range (and the country that now bears its name) running along the "
+              "Mediterranean coast north of Israel, famous through the whole ancient Near East for its "
+              "cedar forests — timber tall, straight, and rot-resistant enough that Solomon imported it "
+              "by the shipload for the Temple (1 Kings 5, forthcoming on this shelf), floated down the "
+              "coast in log-rafts under a treaty with Hiram of Tyre. Egyptian and Assyrian kings alike "
+              "boast in their own inscriptions of cutting Lebanon's cedars. ⚠ Isaiah 40:16 uses that "
+              "very reputation for a deliberately impossible image: naming the whole forest as fuel too "
+              "small for a single burnt offering, and its entire wildlife too few for the offering "
+              "itself — the richest natural resource the ancient world knew, called insufficient.",
+         refs=[("Isaiah", 40, 16)], videos=[]),
     dict(slug="zion", name="Zion", kind="place", aliases=["Zion", "daughter of Zion"],
          coords=(31.7750, 35.2350, 0.05),
          desc="Originally the fortified spur the Jebusites held and DAVID captured — 'David took the stronghold of Zion, that "
@@ -4388,7 +4401,7 @@ ENCYCLOPEDIA = [
               "to the people themselves ('daughter of Zion'), and finally, in the prophets, to a Jerusalem that does not yet exist. "
               "⚠ The hill called Mount Zion today is a THIRD site, on the western ridge — a Byzantine-era identification, not the "
               "biblical one. Isaiah uses the name about forty-five times, more than any other book.",
-         refs=[("Isaiah", 1, 8), ("Isaiah", 1, 27), ("Jeremiah", 31, 5)], videos=[]),
+         refs=[("Isaiah", 1, 8), ("Isaiah", 1, 27), ("Isaiah", 40, 9), ("Jeremiah", 31, 5)], videos=[]),
     dict(slug="first-temple", name="The First Temple", kind="place", aliases=["the First Temple", "Solomon's Temple"],
          coords=(31.7780, 35.2354, 0.03),
          desc="The house SOLOMON built on the threshing floor David bought, on the hill Genesis 22 calls MORIAH — begun in his "
@@ -6225,6 +6238,10 @@ XREFS = [
     (("Jeremiah", 31, 39), ("Jeremiah", 19, 6), "The same valley of corpses Jeremiah renamed 'the valley of slaughter' in judgment is declared holy and permanent here \u2014 the ugliest ground in the book, reversed"),
     (("Jeremiah", 31, 16), ("Jeremiah", 29, 11), "TIKVAH and ACHARIT, hope and outcome, the identical two words paired in reverse order \u2014 the same promise to the same exiles a few chapters apart"),
     (("Jeremiah", 31, 19), ("Genesis", 48, 14), "Jacob crosses his hands to bless the younger Ephraim ahead of Manasseh; Jehovah's own yearning for 'a precious son' plays out the same reversal one more time"),
+    (("Mark", 1, 3), ("Isaiah", 40, 3), "the second of four Gospel quotations of this verse for John the Baptist — see the note at Isaiah 40:3 for the Hebrew/Greek punctuation crux behind 'in the wilderness'"),
+    (("John", 1, 23), ("Isaiah", 40, 3), "the fourth Gospel's own quotation of the voice in the wilderness, put in John the Baptist's own mouth rather than the narrator's"),
+    (("1 Peter", 1, 24), ("Isaiah", 40, 6), "'all flesh is grass' quoted at length — the fading flower set against 'the word of the Lord endures forever,' Peter's own next line"),
+    (("Genesis", 1, 2), ("Isaiah", 40, 17), "⚠ TOHU — the same bare word for the earth's pre-creation formlessness, reached for again to describe what the nations amount to before God"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7271,6 +7288,9 @@ CHRON_CHAPTERS = {
     "isa1": dict(era="monarchy",
                  when="A covenant lawsuit against Judah — heaven and earth summoned as witnesses, the sacrifices refused, the courts indicted for taking bribes, and Jerusalem left standing like a watchman's hut in a stripped field.",
                  clock="c. 740-700 BC, the reigns of Uzziah, Jotham, Ahaz and Hezekiah (v1) — the decades in which ASSYRIA destroyed the northern kingdom (722) and besieged Jerusalem (701). ⚠ Verse 8's 'city under siege' is usually read as 701, and Sennacherib's own prism describes the same event: he shut Hezekiah up in Jerusalem 'like a bird in a cage' — one of the closest correspondences between the Bible and an independent ancient record. The chapter is often called the overture to the whole book, and may have been placed first rather than spoken first."),
+    "isa40": dict(era="exile",
+                  when="Comfort opens the book's second half — a voice in the wilderness, all flesh as grass, and the promise that those who wait for Jehovah will renew their strength.",
+                  clock="⚠ Genuinely disputed, and load-bearing: the traditional dating keeps this on the lips of the eighth-century Isaiah of ch. 1, speaking decades ahead of the events it describes; the critical-scholarly dating places its composition in or near the Babylonian exile itself, roughly 540 BC, a century and a half later, by a different hand. See the note at v1 for both cases laid out without a vote."),
     "sos1": dict(era="monarchy",
                  when="No narrative and no date — a woman speaks first and speaks most: kisses, perfume, sunburnt skin, a search for a shepherd at noon, and a bed of grass under cedars.",
                  clock="⚠ Filed under the monarchy because the title says 'which is Solomon's' (reigned c. 970–931 BC), but that one Hebrew letter can mean by, for, about, or in the manner of — the same ambiguity as 'of David' over the Psalms. The Song's own language is hard to date: it contains a PERSIAN loanword (pardes, 'park,' 4:13) and a Greek one is sometimes argued (appiryon, 3:9), which pull late, while its parallels with Egyptian love poetry of the New Kingdom pull early. Fragments were found at Qumran (4QCant-a, 4QCant-b, 6QCant), so it was being copied by the 1st century BC. Like Ecclesiastes, the century it CLAIMS and the century it was written are two separate questions."),
@@ -10194,6 +10214,15 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "tohu": ("tohu",
+        "AUSENCIA DE FORMA, caos, vacío — la condición de la tierra antes del primer día, «sin forma "
+        "y vacía» (tohu va-vohu, Génesis 1:2, su aparición más famosa, emparejada allí con su compañera "
+        "habitual bohu). ⚠ Isaías recurre a la misma palabra desnuda, sola, dos veces en un capítulo "
+        "(40:17, 23) para describir a las naciones y a sus gobernantes ante Dios — no simplemente "
+        "pequeños, sino medidos contra la condición misma, sin crear, que existía antes de que Dios "
+        "hablara orden en algo. Deuteronomio 32:10 la usa del desierto literal («un tohu aullante de "
+        "desierto»); 1 Samuel 12:21 de los ídolos mismos, «tohu que no puede aprovechar ni librar». Una "
+        "palabra para la nada específica que precede a la forma."),
     "tzelem-aram": ("tzelem",
         "UNA IMAGEN, estatua — arameo bíblico, la misma raíz que la palabra hebrea de la imagen divina en "
         "Génesis 1:26-27, aunque aquí nombra un objeto físico, no un estatus teológico. \u26a0 Aparece 17 "
@@ -11884,6 +11913,18 @@ ENCYCLOPEDIA_ES["kidron-valley"] = ("El valle de Cedrón",
     "mismo valle al salir del aposento alto hacia Getsemaní (Juan 18:1, aún no en esta "
     "estantería). Normalmente es un cauce seco, con agua solo en las lluvias de invierno.")
 
+ENCYCLOPEDIA_ES["lebanon"] = ("Líbano",
+    "La cordillera (y el país que hoy lleva su nombre) que corre a lo largo de la costa "
+    "mediterránea al norte de Israel, famosa en todo el antiguo Cercano Oriente por sus bosques "
+    "de cedro — madera alta, recta y lo bastante resistente a la pudrición como para que "
+    "Salomón la importara por barcadas para el Templo (1 Reyes 5, aún no en esta estantería), "
+    "flotada por la costa en balsas de troncos bajo un tratado con Hiram de Tiro. Reyes egipcios "
+    "y asirios por igual se jactan en sus propias inscripciones de haber cortado los cedros del "
+    "Líbano. ⚠ Isaías 40:16 usa precisamente esa reputación para una imagen deliberadamente "
+    "imposible: nombrar todo el bosque como combustible insuficiente para un solo holocausto, y "
+    "toda su fauna insuficiente como la ofrenda misma — el recurso natural más rico que conocía "
+    "el mundo antiguo, llamado insuficiente.")
+
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
 # copyright famous paintings of biblical scenes... embed them right in the same
@@ -11912,6 +11953,60 @@ ENCYCLOPEDIA_ES["kidron-valley"] = ("El valle de Cedrón",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "isa40": [dict(
+        file="rosa-john-baptist-wilderness.jpg",
+        title="Saint John the Baptist Preaching in the Wilderness",
+        title_es="San Juan Bautista predicando en el desierto",
+        artist="Salvator Rosa",
+        artist_es="Salvator Rosa",
+        year="1660",
+        location="Saint Louis Art Museum",
+        location_es="Saint Louis Art Museum",
+        alt="A tall, narrow landscape painting dominated by dark, wind-bent trees against a "
+            "dramatic sky of grey clouds breaking to light. In the lower left, a mixed crowd sits "
+            "and leans on a rocky outcrop: elderly bearded men, women in draped fabric, a soldier "
+            "in armor, a bare-shouldered woman in red, children. At the right edge, a standing "
+            "figure in rough dress, partly shadowed by the trees, gestures with one raised hand. "
+            "In the lower right, two small children play at the edge of a stream below the rock.",
+        note="⚠ This is not Isaiah's own scene &mdash; nothing in chapter 40 depicts a single "
+             "speaker addressing a seated crowd in a wood. It is the New Testament's fulfillment "
+             "of it: John the Baptist, six centuries after Isaiah, preaching to the mixed crowd "
+             "Mark and Luke describe coming out to him, in the wilderness Isaiah's voice first "
+             "named. Rosa paints the audience as pointedly various &mdash; old and young, a "
+             "soldier among the ordinary poor, a half-clothed woman at the base of the rock, "
+             "children absorbed in the stream below and paying no attention at all &mdash; a fair "
+             "match for &ldquo;all flesh shall see it together&rdquo; (v5). The Baptist himself is "
+             "pushed to the picture's right edge, partly lost in the shadow of the trees: the "
+             "landscape, not the preacher, dominates the canvas. That was Salvator Rosa's own "
+             "reputation in one image &mdash; contemporaries called him &ldquo;Salvator "
+             "Rosa&rdquo; and, less kindly, &ldquo;wild Rosa,&rdquo; for exactly this: rugged, "
+             "unpeopled-feeling wilderness landscapes with bandits, hermits, or, here, a prophet, "
+             "worked in almost as an afterthought to the trees and sky. He is now reckoned one of "
+             "the more important precursors of the Romantic landscape, a century before "
+             "Romanticism had a name.",
+        note_es="⚠ Esta no es la escena propia de Isaías &mdash; nada en el capítulo 40 describe a "
+                "un solo orador dirigiéndose a una multitud sentada en un bosque. Es el "
+                "cumplimiento que le da el Nuevo Testamento: Juan el Bautista, seis siglos después "
+                "de Isaías, predicando a la multitud variada que Marcos y Lucas describen saliendo "
+                "a su encuentro, en el desierto que la voz de Isaías nombró primero. Rosa pinta a "
+                "la audiencia deliberadamente diversa &mdash; ancianos y jóvenes, un soldado entre "
+                "gente pobre y corriente, una mujer semidesnuda al pie de la roca, niños absortos "
+                "en el arroyo de abajo sin prestar ninguna atención &mdash; una buena "
+                "correspondencia con &laquo;toda carne juntamente la verá&raquo; (v. 5). El propio "
+                "Bautista queda empujado al borde derecho del cuadro, medio perdido en la sombra "
+                "de los árboles: el paisaje, no el predicador, domina el lienzo. Esa fue la propia "
+                "reputación de Salvator Rosa en una sola imagen &mdash; sus contemporáneos lo "
+                "llamaban, menos amablemente, el &laquo;Rosa salvaje&raquo;, precisamente por esto: "
+                "paisajes de naturaleza agreste, de aspecto casi despoblado, con bandidos, "
+                "ermitaños o, aquí, un profeta, trabajados casi como una idea posterior frente a "
+                "los árboles y el cielo. Hoy se le considera uno de los precursores más "
+                "importantes del paisaje romántico, un siglo antes de que el Romanticismo tuviera "
+                "nombre.",
+        license="Public domain (artist d. 1673) — faithful photographic reproduction of a "
+                "two-dimensional work",
+        source_url="https://commons.wikimedia.org/wiki/File:Salvator_Rosa_-_Saint_John_the_Baptist_"
+                   "Preaching_in_the_Wilderness_-_72-1970_-_Saint_Louis_Art_Museum.jpg",
+    )],
     "jer31": [dict(
         file="luyken-rachels-tomb-massacre-innocents.jpg",
         title="Rachel's Tomb, with the Massacre of the Innocents",
