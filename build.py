@@ -98,6 +98,7 @@ CHAPTERS = [
     ("rev22", "Revelation", 22, "The last chapter of the Bible \u2014 the river, the tree of life on both banks, and leaves for the healing of the nations. \u26a0 Two variants here are worth more than most whole books of textual notes. Verse 14 is \u201cthose who WASH THEIR ROBES\u201d in every critical text and in the Byzantine majority text, and \u201cthose who DO HIS COMMANDMENTS\u201d only in the Textus Receptus behind the King James. And verse 19 reads TREE of life in every Greek witness \u2014 the KJV\u2019s \u201cbook of life\u201d comes from Erasmus in 1516 back-translating from the Latin Vulgate, because the last leaf of his only manuscript was missing. So the sentence forbidding anyone to add to the book contains, in the most influential English Bible ever printed, a word that was added to it. Plus Daniel told to seal his book and John told not to, and a final benediction the manuscripts never quite agreed on."),
     ("dan1", "Daniel", 1, "Babylon takes its first captives — four renamed youths, a ten-day test of vegetables and water, and 'ten hands better' than the magicians."),
     ("dan2", "Daniel", 2, "Nebuchadnezzar's dream, and an impossible test — tell me the dream I will not tell you, or die. Daniel prays, the mystery is revealed, and he sings: God 'removes kings and sets up kings.' Then the dream itself: a great statue of gold, silver, bronze, and iron, its feet iron mixed with clay — and a stone cut without hands that shatters it all and grows into a mountain filling the earth. The four kingdoms, and the everlasting fifth; and the chapter where the book turns from Hebrew to ARAMAIC."),
+    ("dan3", "Daniel", 3, "Nebuchadnezzar builds an image entirely of gold — his own unstated answer to the dream one chapter before — and demands the whole province bow at the sound of the orchestra. Three men refuse: 'our God is able to deliver us; but if not, we will not serve your gods.' The furnace heated seven times hotter kills the men who threw them in and leaves a fourth figure walking free inside the fire, 'like a son of the gods.' The king who tried to execute them ends the chapter blessing their God by name."),
     ("dan11", "Daniel", 11, "The angel's scroll of wars — Persia, Alexander, the kings of south and north, the abomination that desolates — and the seam where history becomes hope."),
     ("dan12", "Daniel", 12, "The sleepers in the ground of dust wake — everlasting life named for the first time, the sealed book, two numbers nobody has decoded, and a lot promised at the end of the days."),
     ("mat1", "Matthew", 1, "The New Testament opens on a genealogy — 'the book of the genesis of Jesus Christ, son of David, son of Abraham' — the word that opens the Bible (Genesis) chosen to open the Gospel. Forty-two generations in three panels of fourteen, from Abraham to David, David to the exile, the exile to the Christ — and ⚠ four women break into the list of fathers, three of them Gentile and every one touched by scandal: Tamar, Rahab, Ruth, and 'the wife of Uriah'. The count is a designed thing (fourteen is the number of DAVID's name in Hebrew), not a registry: it drops three kings, runs the royal line through the cursed Jechoniah, and breaks its 'fathered… fathered' drumbeat at the last link, where Jesus is not fathered by Joseph but 'BORN of' Mary. ⚠ Then the birth itself: Mary found with child 'of the Holy Spirit'; Joseph, a righteous man, resolving to divorce her quietly until an angel stops him in a dream; the name JESUS unfolded as 'YHWH saves' ('he will save his people from their sins'); and Isaiah's virgin-sign landed as EMMANUEL, 'God with us' — the name that brackets the whole Gospel, which will close on 'I am with you always'."),
@@ -350,6 +351,7 @@ TEASERS_ES = {
     "jer23": '¡Ay de los pastores! — y luego la promesa contra ellos: un RENUEVO justo levantado para David, cuyo nombre corrige el del rey que entonces reinaba («Jehová es nuestra justicia»). Después el capítulo se vuelve contra el propio oficio de Jeremías y no para en veintiocho versículos: profetas que llenan de vapor a quien los oye, que predican paz a los que desprecian a Dios, que se roban los oráculos unos a otros y se quedan con el sello de goma —«declaración de Jehová»— tras soltar el nombre. La prueba es una sola pregunta, «¿quién ha estado en el CONSEJO de Jehová?», y un resultado verificable: si hubieran estado dentro, habrían hecho volver al pueblo. Paja contra grano, una palabra como fuego y como martillo que destroza la roca, un Dios de quien no hay dónde esconderse — y un juego de palabras de ocho versículos sobre la palabra CARGA que acaba confiscándola. ⚠ Dos pasajes genuinamente disputados quedan en pie con sus pedigríes y sin voto: el «¡qué carga!» del versículo 33 frente al «vosotros sois la carga» de las versiones antiguas, y el olvidar-o-levantar del versículo 39.',
     "jer29": 'La carta de Jerem\u00edas a los desterrados en Babilonia: edifiquen casas, planten huertos, busquen la SHALOM de la ciudad que los deport\u00f3 \u2014 «porque en SU paz tendr\u00e1n ustedes paz». Y luego el vers\u00edculo m\u00e1s citado de internet, le\u00eddo en plural y dentro de sus setenta a\u00f1os: shalom aparece cuatro veces en el cap\u00edtulo y TRES son la prosperidad de Babilonia. El espa\u00f1ol lo ve mejor que el ingl\u00e9s \u2014 «vosotros» en RV, «ustedes» en TNM \u2014 donde el «you» ingl\u00e9s esconde que la promesa nunca fue a una sola persona. \u26a0 En el mismo cap\u00edtulo hay dos profetas asados al fuego (vv. 21-23) y espada, hambre y peste para los que se quedaron (v. 17); la biblioteca los imprime juntos porque juntos est\u00e1n en la carta.',
     "dan2": "El sueño de Nabucodonosor y una prueba imposible: la estatua de oro, plata, bronce y hierro con pies de barro, y la piedra cortada sin manos que la deshace y se hace montaña — los cuatro reinos y el quinto eterno; y el capítulo donde el libro pasa del hebreo al ARAMEO.",
+    "dan3": "Nabucodonosor levanta una imagen enteramente de oro — su propia respuesta no declarada al sueño de un capítulo antes — y exige que toda la provincia se postre al sonido de la orquesta. Tres hombres se niegan: «nuestro Dios puede librarnos; y si no, no serviremos a tus dioses». El horno calentado siete veces más mata a quienes los arrojan y deja caminar libre dentro del fuego a una cuarta figura, «como hijo de los dioses». El rey que intentó ejecutarlos termina el capítulo bendiciendo a su Dios por su nombre.",
     "exod4": "Tres señales para que Israel crea —vara que se hace serpiente, mano leprosa, agua vuelta sangre— y las últimas excusas de Moisés; Aarón como su boca, y la palabra asombrosa: «Israel es mi hijo primogénito», con la décima plaga ya anunciada.",
     "exod5": "La primera audiencia con el faraón sale mal: «¿Quién es Jehová para que yo oiga su voz?» — ladrillos sin paja, los capataces israelitas golpeados, el pueblo contra Moisés y Moisés contra Dios: «no has librado a tu pueblo».",
     "exod6": "Dios responde con su Nombre: «Yo soy Jehová» —y el versículo más difícil sobre ese Nombre— y las SIETE promesas «yo os», base de las cuatro copas de la Pascua, dichas a un pueblo demasiado aplastado para oírlas.",
@@ -447,6 +449,25 @@ def book_abbr(book):
 
 def _is_nt(book):
     return book in _NT_BOOKS
+
+
+# Chapters whose SOURCE TEXT is Aramaic, not Hebrew: Daniel 2:4b-7:28 is the Bible's
+# best-known Aramaic block (Ezra has two more, 4:8-6:18 and 7:12-26, not yet on
+# these pages). Daniel 2 itself is mixed -- Hebrew for its first four verses, Aramaic
+# for the other forty-five -- so "Aramaic" is the more honest single label for the
+# whole chapter's toggle button even though it is not the whole story.
+# Added 2026-08-01 shipping Daniel 3: the "Hide Hebrew" toggle was wrong on every
+# Aramaic chapter already on the site (Daniel 2), not just the new one.
+_ARAMAIC_CHAPTERS = {("Daniel", n) for n in (2, 3, 4, 5, 6, 7)}
+
+
+def _source_lang(book, num):
+    """The Hide-original toggle label: Greek / Aramaic / Hebrew."""
+    if _is_nt(book):
+        return "Greek"
+    if (book, num) in _ARAMAIC_CHAPTERS:
+        return "Aramaic"
+    return "Hebrew"
 
 
 def _ref(r):
@@ -2833,7 +2854,7 @@ def build_chapter_pages(chapters):
         content = move_clips_into_verses(content)
         content = render_film_clips(content)
         content, has_es = inject_spanish(content, slug, es_panels)
-        orig_lang = "Greek" if _is_nt(book) else "Hebrew"   # the Hide-original toggle label
+        orig_lang = _source_lang(book, num)   # the Hide-original toggle label
         # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
         # browser. gen_audio.py produces those files.
@@ -4473,8 +4494,14 @@ def build_es():
         es_title = f"{ES_BOOK.get(book, book)} {num}"
         en_file = chapter_filename(book, num)
         es_file = en_file[:-5] + ".es.html"          # genesis-1.html -> genesis-1.es.html
+        # 2026-08-01: this toggle hardcoded "hebreo" on all 135+ built Spanish
+        # chapters, including every NT chapter (actually Greek) and now Daniel 3
+        # (Aramaic) -- the same mislabel as the English side's toggle before
+        # _source_lang() existed. ES_LANG_LABEL mirrors that fix.
+        _src = _source_lang(book, num)
+        _lbl = {"Greek": "griego", "Aramaic": "arameo", "Hebrew": "hebreo"}[_src]
         toggle = (f'<div class="togglebar"><div class="tgl-group">'
-                  f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Ocultar hebreo</button>'
+                  f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Ocultar {_lbl}</button>'
                   f'<a class="tgl" href="{en_file}" title="Ver en inglés">\U0001F310 English</a>'
                   f'</div></div>')
         body = f"""{toggle}
@@ -4485,12 +4512,12 @@ def build_es():
 <script>
 function toggleHeb(){{
   var hidden = document.body.classList.toggle("hide-heb");
-  document.getElementById("hebtgl").textContent = hidden ? "Mostrar hebreo" : "Ocultar hebreo";
+  document.getElementById("hebtgl").textContent = hidden ? "Mostrar {_lbl}" : "Ocultar {_lbl}";
   try{{ localStorage.setItem("mtlib_hideheb", hidden ? "1" : "0"); }}catch(e){{}}
 }}
 (function(){{ try{{ if(localStorage.getItem("mtlib_hideheb")==="1"){{
   document.body.classList.add("hide-heb");
-  document.getElementById("hebtgl").textContent = "Mostrar hebreo";
+  document.getElementById("hebtgl").textContent = "Mostrar {_lbl}";
 }} }}catch(e){{}} }})();
 </script>"""
         # The source language is per-BOOK: the Tanakh is translated from the Hebrew,

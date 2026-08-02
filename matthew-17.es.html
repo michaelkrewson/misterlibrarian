@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(){
 <script src="audio-reader.js?v=720e67d173"></script>
 <script src="reader-notes.js?v=ed78597241" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
-<div class="togglebar"><div class="tgl-group"><button class="tgl" id="hebtgl" onclick="toggleHeb()">Ocultar hebreo</button><a class="tgl" href="matthew-17.html" title="Ver en inglés">🌐 English</a></div></div>
+<div class="togglebar"><div class="tgl-group"><button class="tgl" id="hebtgl" onclick="toggleHeb()">Ocultar griego</button><a class="tgl" href="matthew-17.html" title="Ver en inglés">🌐 English</a></div></div>
 <article class="chapter esp-page">
 <h2>Mateo 17 — La Traducción Mister</h2>
 <figure class="chapter-art">
@@ -488,12 +488,12 @@ document.addEventListener("DOMContentLoaded", function(){
 <script>
 function toggleHeb(){
   var hidden = document.body.classList.toggle("hide-heb");
-  document.getElementById("hebtgl").textContent = hidden ? "Mostrar hebreo" : "Ocultar hebreo";
+  document.getElementById("hebtgl").textContent = hidden ? "Mostrar griego" : "Ocultar griego";
   try{ localStorage.setItem("mtlib_hideheb", hidden ? "1" : "0"); }catch(e){}
 }
 (function(){ try{ if(localStorage.getItem("mtlib_hideheb")==="1"){
   document.body.classList.add("hide-heb");
-  document.getElementById("hebtgl").textContent = "Mostrar hebreo";
+  document.getElementById("hebtgl").textContent = "Mostrar griego";
 } }catch(e){} })();
 </script>
 <footer class="site-foot">

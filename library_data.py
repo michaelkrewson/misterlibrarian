@@ -1605,6 +1605,30 @@ DICTIONARY = [
     ("dendron", "dendron", "\u03b4\u03ad\u03bd\u03b4\u03c1\u03bf\u03bd", "dendron",
      "A TREE \u2014 the ordinary living one, roots and branches. \u26a0 Worth knowing mainly for contrast: Revelation never uses it. The tree of life at 2:7, 22:2, 22:14 and 22:19 is xylon, wood, the cut thing \u2014 which is also the New Testament's word for the cross.",
      ("Revelation", 22, 2)),
+    ("tzelem-aram", "tzelem", "\u05e6\u05dc\u05dd", "tzelem",
+     "IMAGE, statue \u2014 Biblical Aramaic, the same root as the Hebrew word for the divine image in Genesis 1:26-27, though here it names a physical object, not a theological status. \u26a0 Occurs 17 times across Daniel 2-3: five times of the composite statue in Nebuchadnezzar's dream (2:31-35), whose head alone was gold and whose kingdom Daniel said would be succeeded; eleven times of the golden image Nebuchadnezzar builds one chapter later, entirely gold, which reads as an unstated answer to that interpretation; and once more, at 3:19, of Nebuchadnezzar's OWN FACE, 'the tzelem of his face was changed' with rage \u2014 the identical word for the statue and for the king's furious expression.",
+     ("Daniel", 3, 1)),
+    ("attun", "attun", "\u05d0\u05ea\u05d5\u05df", "attun",
+     "A FURNACE, kiln. Biblical Aramaic; occurs 10 times, all in Daniel 3, in the fixed phrase attun nura yaqidta, 'furnace of fire, burning' \u2014 the KJV/ASV 'burning fiery furnace' actually reproduces the Aramaic's own piling-up of words more closely than most modern trimmed renderings do.",
+     ("Daniel", 3, 6)),
+    ("sgd", "sgad", "\u05e1\u05d2\u05d3", "sgad",
+     "To BOW DOWN, prostrate oneself, worship. Biblical Aramaic. \u26a0 Occurs 11 times in Daniel 3 (the refrain of the herald's proclamation, the accusation, and the king's ultimatum, repeated across the chapter) and once more at 2:46 \u2014 of NEBUCHADNEZZAR HIMSELF, falling down and sagid to Daniel after the dream is interpreted. The same verb the king used of his own posture toward Daniel one chapter earlier is the verb he spends chapter 3 demanding of everyone else toward a statue.",
+     ("Daniel", 3, 5)),
+    ("plach", "pelach", "\u05e4\u05dc\u05d7", "pelach",
+     "To SERVE, worship \u2014 Biblical Aramaic, paired throughout Daniel with sgad (bow down); the two verbs together are the chapter's refrain, 'serve...and worship.' \u26a0 Occurs 11 times across the Aramaic chapters of Daniel and Ezra: of the three men's refusal here (3:12,14,17,18,28), of Daniel's service to Darius (6:17,20), of universal service to 'one like a son of man' and to the saints of the Most High (7:14,27), and of temple service in Ezra 7 (7:19,24).",
+     ("Daniel", 3, 12)),
+    ("shezav", "sheyzav", "\u05e9\u05d9\u05d6\u05d1", "sheyzav",
+     "To DELIVER, rescue, save. Biblical Aramaic. \u26a0 Occurs 4 times in Daniel 3 (the famous 'able to deliver...but if not' of vv17-18, and the king's own doxology at v28) and 5 more times in Daniel 6's lions' den (6:15,17,20,28) \u2014 the same rescue-verb doing the same work in the Bible's two best-known Daniel deliverance stories.",
+     ("Daniel", 3, 17)),
+    ("nur", "nur", "\u05e0\u05d5\u05e8", "nur",
+     "FIRE. Biblical Aramaic (cognate to Hebrew or/light and to Akkadian nuru). \u26a0 Occurs 14 times in Daniel 3 across 12 verses \u2014 the chapter's dominant image \u2014 and twice more in Daniel 7:9-10, of the river of fire before the Ancient of Days' throne.",
+     ("Daniel", 3, 6)),
+    ("berikh", "berikh", "\u05d1\u05e8\u05d9\u05da", "berikh",
+     "BLESSED \u2014 Biblical Aramaic, the passive participle behind the Hebrew barukh that opens a thousand years of Jewish prayer. \u26a0 Its one occurrence in the Aramaic Bible is Daniel 3:28: a pagan king using the vocabulary of blessing correctly, on the God of three men he has just tried to execute \u2014 and praising them specifically for their willingness to die rather than for having survived.",
+     ("Daniel", 3, 28)),
+    ("elah-illaya", "elah illaya", "\u05d0\u05dc\u05d4\u05d0\u05de \u05e2\u05dc\u05d0\u05d4", "elaha illaya",
+     "GOD MOST HIGH \u2014 Biblical Aramaic, the title used of the God of Israel by pagan kings and courtiers throughout the Aramaic chapters of Daniel. \u26a0 Occurs 10 times, Daniel 3-7: here at 3:26 (the officials naming Shadrach, Meshach and Abed-nego 'servants of the Most High God') and 3:32 (Nebuchadnezzar's own doxology), then repeatedly through his humbling in chapter 4, in Belshazzar's feast in chapter 5, and once in the vision of chapter 7. The title a foreign court uses for Israel's God without becoming Israelite.",
+     ("Daniel", 3, 26)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2805,7 +2829,8 @@ ENCYCLOPEDIA = [
               "court tales give him a dream he refuses to tell (ch. 2), a furnace (ch. 3), a humbling madness — "
               "and, uniquely among scripture's tyrants, a doxology (4:34-37). Douay, via the Greek, spells him "
               "Nabuchodonosor.",
-         refs=[("Daniel", 1, 1), ("Daniel", 1, 18), ("Jeremiah", 21, 2), ("Jeremiah", 21, 7), ("Ezra", 1, 7)], videos=[]),
+         refs=[("Daniel", 1, 1), ("Daniel", 1, 18), ("Daniel", 3, 28), ("Jeremiah", 21, 2), ("Jeremiah", 21, 7),
+               ("Ezra", 1, 7)], videos=[]),
     dict(slug="hananiah-mishael-azariah", name="Hananiah, Mishael, and Azariah", kind="person",
          aliases=["Hananiah", "Mishael", "Azariah", "Shadrach", "Meshach", "Abednego"],
          desc="Daniel's three companions from Judah — 'Yah has been gracious,' 'who is what El is?', 'Yah has "
@@ -3597,7 +3622,7 @@ ENCYCLOPEDIA = [
               "begun (605 BC). The city fell to Cyrus in 539 BC (the Nabonidus Chronicle and Cyrus Cylinder "
               "carry the receipt), and Revelation will pick the name up again as the world-city's cipher "
               "(chs. 17–18).",
-         refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1), ("Ezra", 1, 11), ("Matthew", 1, 11)],
+         refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1), ("Daniel", 3, 1), ("Ezra", 1, 11), ("Matthew", 1, 11)],
          coords=(32.5364, 44.4209, 0.5),
          modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
          videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8"),
@@ -3874,7 +3899,19 @@ ENCYCLOPEDIA = [
               "refusing to bow to Nebuchadnezzar's golden image, they are thrown into the fiery furnace and walk "
               "unburned with a fourth figure 'like a son of the gods' — 'our God is able to deliver us; but if not, "
               "we will not serve your gods' (3:17-18).",
-         refs=[("Daniel", 2, 49)], videos=[]),
+         refs=[("Daniel", 2, 49), ("Daniel", 3, 17)], videos=[]),
+    dict(slug="dura", name="Dura", kind="place", aliases=["Dura", "plain of Dura"],
+         desc="'The plain of Dura, in the province of Babylon' (3:1) — the field where Nebuchadnezzar sets "
+              "up his golden image and where Shadrach, Meshach, and Abednego refuse to bow. ⚠ DURA "
+              "(Akkadian duru, 'wall, fortress') was a common place-name across Babylonia, so the site is "
+              "unidentified with any certainty; the leading candidate is a low mound south-southeast of "
+              "Babylon still called Tulul Dura, surveyed in the nineteenth century, but no inscription ties "
+              "it to Daniel's story, and the text gives no further landmark to fix it by. The narrator's "
+              "one geographic anchor is simply 'in the province of Babylon' — see BABYLON.",
+         refs=[("Daniel", 3, 1)],
+         coords=(32.42, 44.42, 5.0),
+         modern="unidentified; traditionally near Tulul Dura, south of Babil, Iraq",
+         videos=[]),
     dict(slug="samuel", name="Samuel", kind="person", aliases=["Samuel"],
          desc="'God has heard' (or 'name of God') — the child asked of Jehovah by his barren mother HANNAH and given "
               "back to serve at Shiloh (ch 1). He becomes the LAST of the judges and the first of the great "
@@ -6148,6 +6185,10 @@ XREFS = [
     (("Revelation", 22, 10), ("Daniel", 12, 4), "\u26a0 Daniel is told to SEAL the book until the time of the end; John is told NOT to seal it, because the time is near. Same image, opposite instruction"),
     (("Revelation", 22, 17), ("Revelation", 21, 6), "DOREAN \u2014 the water of life given for nothing, twice, in consecutive chapters"),
     (("Revelation", 22, 4), ("Exodus", 33, 20), "\u26a0 'They will see his face' \u2014 against 'you cannot see my face, for no one shall see me and live'"),
+    (("Daniel", 2, 31), ("Daniel", 3, 1), "TZELEM \u2014 the composite statue of the king's dream, gold-headed and destined to fall, answered one chapter later by an image made entirely of gold that will not fall down on its own"),
+    (("Daniel", 3, 1), ("Daniel", 3, 19), "\u26a0 The same word, TZELEM, names the golden image Nebuchadnezzar builds and, eighteen verses later, his own face \u2014 both 'changed' by fury"),
+    (("Daniel", 2, 46), ("Daniel", 3, 5), "SGD \u2014 Nebuchadnezzar himself falls down and worships Daniel one chapter before he commands the same posture from everyone, toward a statue, at the sound of the orchestra"),
+    (("Daniel", 3, 17), ("Daniel", 6, 16), "SHEZAV \u2014 'able to deliver' answers the furnace and the lions' den alike, Daniel's two best-known rescue stories sharing one Aramaic verb"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7035,6 +7076,9 @@ CHRON_CHAPTERS = {
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
+    "dan3": dict(era="exile",
+                 when="Nebuchadnezzar's golden image on the plain of Dura; Shadrach, Meshach, and Abednego refuse to bow and walk unburned from the furnace.",
+                 clock="⚠ No date is given — unlike chs. 1, 2, 5, and 6, which all open on a numbered year or a named night. Most placements put it early in the reign, after ch. 2's dream (c. 603 BC) supplies a plausible occasion for the image, but that is inference from the book's order, not a date in the text."),
     "dan11": dict(era="exile",
                   when="The angel's scroll of wars — from Persia through Alexander to the abomination that desolates.",
                   clock="The vision stands in Cyrus's first Persian years (ch. 10 dates it ~536 BC) and sweeps 370 years forward — to Antiochus IV's desecration, 15 Kislev 167 BC. Where its accuracy stops (v40) is the hinge of the whole dating debate."),
@@ -10111,6 +10155,54 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "tzelem-aram": ("tzelem",
+        "UNA IMAGEN, estatua — arameo bíblico, la misma raíz que la palabra hebrea de la imagen divina en "
+        "Génesis 1:26-27, aunque aquí nombra un objeto físico, no un estatus teológico. \u26a0 Aparece 17 "
+        "veces en Daniel 2-3: cinco de la estatua compuesta del sueño de Nabucodonosor (2:31-35), cuya "
+        "cabeza sola era de oro y cuyo reino Daniel dijo que sería sucedido; once del ídolo de oro que "
+        "Nabucodonosor levanta un capítulo después, todo de oro, lo que se lee como una respuesta no "
+        "declarada a esa interpretación; y una vez más, en 3:19, del ROSTRO del propio Nabucodonosor, "
+        "«el tzelem de su rostro se mudó» de furia — la misma palabra para la estatua y para el semblante "
+        "airado del rey."),
+    "attun": ("attun",
+        "UN HORNO. Arameo bíblico; aparece 10 veces, todas en Daniel 3, en la frase fija attun nura yaqidta, "
+        "«horno de fuego, ardiendo» — la RV1960 «horno de fuego ardiendo» reproduce en realidad el "
+        "amontonamiento de palabras del arameo más de cerca que la mayoría de las versiones modernas "
+        "recortadas."),
+    "sgd": ("sgad",
+        "POSTRARSE, inclinarse, adorar. Arameo bíblico. \u26a0 Aparece 11 veces en Daniel 3 (el estribillo "
+        "de la proclama del heraldo, la acusación, y el ultimátum del rey, repetido a lo largo del "
+        "capítulo) y una vez más en 2:46 — del propio NABUCODONOSOR, cayendo y postrándose ante Daniel "
+        "tras la interpretación del sueño. El mismo verbo que el rey usó de su propia postura hacia Daniel "
+        "un capítulo antes es el verbo que pasa el capítulo 3 exigiendo de todos hacia una estatua."),
+    "plach": ("pelach",
+        "SERVIR, rendir culto — arameo bíblico, emparejado en todo Daniel con sgad (postrarse); los dos "
+        "verbos juntos son el estribillo del capítulo, «sirvan... y adoren». \u26a0 Aparece 11 veces en "
+        "los capítulos arameos de Daniel y Esdras: de la negativa de los tres hombres aquí (3:12,14,17,"
+        "18,28), del servicio de Daniel a Darío (6:17,20), del servicio universal a «uno como hijo de "
+        "hombre» y a los santos del Altísimo (7:14,27), y del servicio del templo en Esdras 7 (7:19,24)."),
+    "shezav": ("sheyzav",
+        "LIBRAR, rescatar, salvar. Arameo bíblico. \u26a0 Aparece 4 veces en Daniel 3 (el célebre «capaz "
+        "de librar... pero si no» de los vv. 17-18, y la doxología del propio rey en el v. 28) y 5 veces "
+        "más en el foso de los leones de Daniel 6 (6:15,17,20,28) — el mismo verbo de rescate haciendo el "
+        "mismo trabajo en las dos historias de liberación más conocidas de Daniel."),
+    "nur": ("nur",
+        "FUEGO. Arameo bíblico (cognado del hebreo or, «luz», y del acadio nuru). \u26a0 Aparece 14 veces "
+        "en Daniel 3 a lo largo de 12 versículos — la imagen dominante del capítulo — y dos veces más en "
+        "Daniel 7:9-10, del río de fuego ante el trono del Anciano de Días."),
+    "berikh": ("berikh",
+        "BENDITO — arameo bíblico, el participio pasivo detrás del hebreo barukh que abre mil años de "
+        "oración judía. \u26a0 Su única aparición en la Biblia aramea es Daniel 3:28: un rey pagano usando "
+        "correctamente el vocabulario de la bendición, sobre el Dios de tres hombres a quienes acaba de "
+        "intentar ejecutar — y alabándolos precisamente por su disposición a morir, no por haber "
+        "sobrevivido."),
+    "elah-illaya": ("elaha illaya",
+        "DIOS ALTÍSIMO — arameo bíblico, el título que reyes y cortesanos paganos usan para el Dios de "
+        "Israel en los capítulos arameos de Daniel. \u26a0 Aparece 10 veces, Daniel 3-7: aquí en 3:26 (los "
+        "oficiales llamando a Sadrac, Mesac y Abed-nego «siervos del Dios Altísimo») y 3:32 (la doxología "
+        "del propio Nabucodonosor), luego repetidamente a través de su humillación en el capítulo 4, en el "
+        "banquete de Belsasar en el capítulo 5, y una vez en la visión del capítulo 7. El título que una "
+        "corte extranjera usa para el Dios de Israel sin volverse israelita."),
     "kalos": ("bueno",
         "BUENO — pero un matiz específico: sano, de buena calidad, admirable, funcionando como debe, más "
         "cerca del «buena calidad» del español que del «bueno» puramente moral de <em>agathos</em> (su casi "
@@ -11658,6 +11750,33 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
     "de Samaria fue «algo desabrido» — profetizaban por Baal —, pero lo que vio en los de Jerusalén "
     "fue peor (23:13-14).")
 
+ENCYCLOPEDIA_ES["shadrach-meshach-abednego"] = ("Sadrac, Mesac y Abed-nego",
+    "Los tres compañeros de DANIEL — jóvenes judíos cuyos nombres hebreos, HANANÍAS («Jehová es "
+    "misericordioso»), MISAEL («¿quién es lo que es Dios?») y AZARÍAS («Jehová ha ayudado»), llevaban "
+    "cada uno el nombre del Dios verdadero, y a quienes en Babilonia les cambiaron los nombres a Sadrac, "
+    "Mesac y Abed-nego, nombres ligados a dioses babilonios (1:6-7). Puestos sobre la provincia de "
+    "Babilonia a petición de Daniel (2:49), son los héroes del capítulo 3: al negarse a postrarse ante "
+    "la imagen de oro de Nabucodonosor, son arrojados al horno de fuego y salen caminando sin quemarse "
+    "junto a una cuarta figura «como hijo de los dioses» — «nuestro Dios puede librarnos; y si no, no "
+    "serviremos a tus dioses» (3:17-18).")
+
+ENCYCLOPEDIA_ES["nebuchadnezzar"] = ("Nabucodonosor II",
+    "Rey de Babilonia del 605 al 562 a. C. — el gran constructor del imperio (la puerta de Istar, el "
+    "zigurat Etemenanki) y el destructor de Jerusalén: la campaña del 605 (el año de Carquemis, fijado "
+    "por la Crónica Babilónica) se llevó a Daniel; la del 597 se llevó al rey Joaquín; la del 586 quemó "
+    "la ciudad y el templo. Los relatos de la corte en Daniel le dan un sueño que se niega a contar "
+    "(cap. 2), un horno (cap. 3), una locura humillante — y, de forma única entre los tiranos de la "
+    "Escritura, una doxología (4:34-37), aunque ya en 3:28-29 pronuncia un primer reconocimiento del "
+    "Dios de Sadrac, Mesac y Abed-nego. Douay, vía el griego, lo escribe Nabucodonosor también.")
+
+ENCYCLOPEDIA_ES["dura"] = ("Dura",
+    "«El llano de Dura, en la provincia de Babilonia» (3:1) — el campo donde Nabucodonosor levanta su "
+    "imagen de oro y donde Sadrac, Mesac y Abed-nego se niegan a postrarse. ⚠ DURA (del acadio duru, "
+    "«muro, fortaleza») era un nombre de lugar común en toda Babilonia, así que el sitio no está "
+    "identificado con certeza; el candidato principal es un montículo bajo al sur-sureste de Babilonia "
+    "todavía llamado Tulul Dura, prospectado en el siglo XIX, pero ninguna inscripción lo liga al relato "
+    "de Daniel, y el texto no da más punto de referencia para fijarlo. El único anclaje geográfico del "
+    "narrador es simplemente «en la provincia de Babilonia» — véase BABILONIA.")
 
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
@@ -11687,6 +11806,61 @@ ENCYCLOPEDIA_ES["samaria"] = ("Samaria",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "dan3": [dict(
+        file="turner-shadrach-meshach-abednego-furnace.jpg",
+        title="Shadrach, Meshach and Abednego in the Burning Fiery Furnace",
+        title_es="Sadrac, Mesac y Abed-nego en el horno de fuego ardiendo",
+        artist="J. M. W. Turner",
+        artist_es="J. M. W. Turner",
+        year="1832",
+        location="Tate, London",
+        location_es="Tate, Londres",
+        alt="A hazy oil painting in warm ochre and red tones. In the sharply lit lower left, a "
+            "cluster of elegantly dressed women and attendants stand together — one in a white "
+            "and gold gown with an elaborate hairstyle, another kneeling in red. Behind them at "
+            "upper left, a red canopy shelters indistinct seated figures. In the center "
+            "background, pale and ghostlike against a blue sky and distant towers, a tall robed "
+            "statue stands with both arms raised. To the right, spear-points and smoke rise into "
+            "a diffuse orange-red glow where a fire burns, its details dissolved into haze.",
+        note="⚠ Turner's canvas is easy to misread at first glance, because almost nothing in it "
+             "is where the story would put it. Look for the three men, or the furnace itself, and "
+             "what you find on the right is a wall of atmosphere — spear-points, smoke, a reddish "
+             "glow — with no figures inside it clear enough to name. The pale, upright form with "
+             "both arms raised in the center background, ghostly against the blue sky and the "
+             "city's towers, is Nebuchadnezzar's golden image, not the king: Turner pushes "
+             "Nebuchadnezzar himself back into the red canopy at upper left, a shadowy presence "
+             "rather than the commanding tyrant most painters of this scene put center stage. And "
+             "the sharpest, most fully realized passage in the whole picture — real faces, real "
+             "fabric, real light — is a cluster of elegantly dressed onlookers in the lower left "
+             "who have no clear role in Daniel's account at all. The painting has drawn little of "
+             "the attention Turner's other fire scenes from the same decade still receive, and its "
+             "figures specifically have been judged among his weakest. ⚠ It is oil on a mahogany "
+             "panel — Turner worked on wood as often as canvas — and entered the national "
+             "collection in 1856 as part of the Turner Bequest, the nearly 300 paintings and "
+             "30,000-plus works on paper he left to Britain at his death.",
+        note_es="⚠ El lienzo de Turner es fácil de malinterpretar a primera vista, porque casi "
+                "nada en él está donde el relato lo pondría. Búsquense los tres hombres, o el "
+                "horno mismo, y lo que se encuentra a la derecha es un muro de atmósfera — puntas "
+                "de lanza, humo, un resplandor rojizo — sin ninguna figura lo bastante clara para "
+                "nombrarla. La forma pálida y erguida que levanta ambos brazos en el fondo central, "
+                "fantasmal contra el cielo azul y las torres lejanas, es la imagen de oro de "
+                "Nabucodonosor, no el rey: Turner retira al propio Nabucodonosor bajo el dosel rojo "
+                "de la esquina superior izquierda, una presencia en sombra y no el tirano dominante "
+                "que la mayoría de los pintores de esta escena ponen en el centro. Y el pasaje más "
+                "nítido y logrado de todo el cuadro — rostros reales, tela real, luz real — es un "
+                "grupo de espectadoras elegantemente vestidas en la esquina inferior izquierda que "
+                "no tienen ningún papel claro en el relato de Daniel. El cuadro ha recibido poco de "
+                "la atención que aún reciben otras escenas de fuego de Turner de la misma década, y "
+                "sus figuras en particular se han juzgado entre las más débiles de su obra. ⚠ Está "
+                "pintado al óleo sobre un panel de caoba — Turner trabajaba en madera tan a menudo "
+                "como en lienzo — y entró en la colección nacional en 1856 como parte del Legado "
+                "Turner, los casi 300 cuadros y más de 30.000 obras sobre papel que dejó a "
+                "Gran Bretaña a su muerte.",
+        license="Public domain (artist d. 1851) — faithful photographic reproduction of a "
+                "two-dimensional work",
+        source_url="https://commons.wikimedia.org/wiki/File:Shadrach,_Meshach_and_Abednego_by_"
+                   "J.M.W.Turner_(1832,_Tate).jpg",
+    )],
     "rev22": [
         {
             "file": "saint-sever-beatus-river-of-life.jpg",
