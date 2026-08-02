@@ -845,6 +845,12 @@ def _meta_desc(book, num, teaser, src, lang="en", label=None):
 
 
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
+    # Trim here, at the choke point. Descriptions were being hand-written at ~70
+    # call sites and three of them (the book intros, the testament intros, the
+    # "Dear Mr. Librarian" answers) ran to 200-400 characters, which Google cuts
+    # mid-sentence. Trimming in page() means no call site can reintroduce it.
+    # 2026-08-01.
+    desc = _trim_desc(desc)
     d = f'\n<meta name="description" content="{html.escape(desc, quote=True)}"/>' if desc else ""
     og = _og_tags(title, desc, url, image, og_type)
     # `base` is only passed by pages that live inside a subdirectory (ency/, dict/) --
@@ -1551,8 +1557,8 @@ def build_encyclopedia_entry_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="encyclopedia.html">🏺 Encyclopedia</a></p>
 {_ency_card(e, permalink=False)}"""
-        out = page(f"{e['name']} — Encyclopedia — {SITE_NAME}", body, active="library",
-                   desc=_plain(e['desc']), url=f"ency/{e['slug']}.html", image=og_image,
+        out = page(f"{e['name']} — Encyclopedia — {SITE_NAME_SHORT}", body, active="library",
+                   desc=_entry_desc(e['name'], e['desc']), url=f"ency/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{e['slug']}.html"), "w", encoding="utf-8").write(out)
         n += 1
@@ -1570,8 +1576,8 @@ def build_dictionary_entry_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="dictionary.html">📖 Dictionary</a></p>
 {_dict_card(slug, term, orig, translit, gloss, ref, permalink=False)}"""
-        out = page(f"{term} — Dictionary — {SITE_NAME}", body, active="library",
-                   desc=_plain(gloss), url=f"dict/{slug}.html", base=f"{SITE_URL}/")
+        out = page(f"{term} — Dictionary — {SITE_NAME_SHORT}", body, active="library",
+                   desc=_entry_desc(term, gloss), url=f"dict/{slug}.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{slug}.html"), "w", encoding="utf-8").write(out)
         n += 1
     return n
@@ -2201,8 +2207,8 @@ def build_atlas_entry_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="atlas.html">🗺️ Atlas</a></p>
 {_atlas_card(e, permalink=False)}"""
-        out = page(f"{e['name']} — Atlas — {SITE_NAME}", body, active="library",
-                   desc=_plain(e['desc']), url=f"atlas/{e['slug']}.html", image=og_image,
+        out = page(f"{e['name']} — Atlas — {SITE_NAME_SHORT}", body, active="library",
+                   desc=_entry_desc(e['name'], e['desc']), url=f"atlas/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{e['slug']}.html"), "w", encoding="utf-8").write(out)
         n += 1
@@ -2223,8 +2229,8 @@ def build_route_pages():
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="atlas.html">🗺️ Atlas</a></p>
 {render_route_panel(r)}"""
-        out = page(f"{r['title']} — Atlas — {SITE_NAME}", body, active="library",
-                   desc=_plain(r["blurb"]), url=f"routes/{r['slug']}.html", base=f"{SITE_URL}/")
+        out = page(f"{r['title']} — Atlas — {SITE_NAME_SHORT}", body, active="library",
+                   desc=_entry_desc(r['title'], r["blurb"]), url=f"routes/{r['slug']}.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{r['slug']}.html"), "w", encoding="utf-8").write(out)
         n += 1
     return n
@@ -2355,6 +2361,112 @@ def chrono_strip(slug):
 VERSE_DIR = "v"   # per-verse share stubs live under /v/
 _VERSE_STUB_RE = re.compile(
     r'id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">(.*?)</div>', re.S)
+
+
+def _trim_desc(t, limit=158):
+    """Trim a description to `limit` characters at the nearest sentence, clause or
+    word boundary, appending an ellipsis if anything was cut. Shared by page() and
+    _entry_desc() so there is exactly one definition of 'too long' on the site."""
+    t = re.sub(r"\s+", " ", t or "").strip()
+    if len(t) <= limit:
+        return t
+    cut = t[:limit]
+    for sep in (". ", "; ", " \u2014 ", ", "):
+        i = cut.rfind(sep)
+        if i > limit * 0.45:
+            return cut[:i].rstrip(" ,;\u2014-") + "\u2026"
+    i = cut.rfind(" ")
+    return (cut[:i] if i > 0 else cut).rstrip(" ,;\u2014-") + "\u2026"
+
+
+SITE_NAME_SHORT = "Mister Translation"   # already the brand on verse-stub pages
+
+
+def _entry_desc(label, prose, lang="en"):
+    """Search-facing description for a LIBRARY ENTRY page (dict/ency/atlas).
+
+    These pages were passing the entry's whole gloss to `desc=`. That is not a
+    description, it is an essay: dict/tzeakah shipped 860 characters, taarog 530,
+    niflaot 350, against a truncation limit of about 155. Google cut every one of
+    them mid-sentence, and Search Console showed these exact pages ranking in the
+    top ten with a click-through rate of zero.
+
+    Added 2026-08-01, from the site's first week of real GSC data. 28 of the 54
+    pages ranking at position <= 10 are dictionary entries, so this is where a
+    snippet fix is worth most. Same treatment the chapter descriptions got on
+    2026-07-31: lead with the thing itself, trim at a sentence boundary, keep it
+    under the limit."""
+    t = re.sub(r"<[^>]+>", "", prose or "")
+    t = html.unescape(t)
+    t = (t.replace("\u26a0\ufe0f", "").replace("\u26a0", "")
+          .replace("\u2014", " \u2014 ").replace("\u2013", "-"))
+    t = re.sub(r"\s+", " ", t).strip(" \u2014-\u2013 ")
+    lead = f"{label}: " if label else ""
+    return lead + _trim_desc(t, 158 - len(lead))
+
+
+def check_built_descriptions():
+    """Scan the BUILT output for meta descriptions over the truncation limit.
+
+    This is the guard that would actually have caught the bug it was written for.
+    check_entry_seo() validates _entry_desc(), which caps by construction and so
+    can never fail; what went wrong was that three ES page builders (and, before
+    2026-07-31, every ES chapter) were still passing raw prose straight through.
+    A guard on the function cannot see that. A guard on the output can.
+
+    Added 2026-08-01 after Search Console showed 54 pages ranking at position <=
+    10 with a click-through rate of zero, 28 of them dictionary entries whose
+    descriptions ran to several hundred characters and were cut mid-sentence."""
+    import glob as _glob
+    bad = []
+    for pat in ("*.html", "dict/*.html", "ency/*.html", "atlas/*.html", "routes/*.html"):
+        for f in _glob.glob(os.path.join(OUT, pat)):
+            txt = open(f, encoding="utf-8").read()
+            m = re.search(r'<meta name="description" content="([^"]*)"', txt)
+            if not m:
+                continue
+            n = len(html.unescape(m.group(1)))
+            if n > 160:
+                bad.append((n, os.path.relpath(f, OUT)))
+    if bad:
+        bad.sort(reverse=True)
+        raise SystemExit(
+            "BUILT-DESCRIPTION CHECK FAILED -- %d page(s) over the 160-character "
+            "truncation limit:\n" % len(bad)
+            + "\n".join(f"  {n:5d}  {f}" for n, f in bad[:20])
+            + ("\n  ... and %d more" % (len(bad) - 20) if len(bad) > 20 else "")
+            + "\n(route the description through _entry_desc() or _meta_desc())")
+
+
+def check_entry_seo():
+    """Library entry pages must carry a real description, not a whole gloss.
+
+    Guards _entry_desc(). Fails the build if any dict/ency description would ship
+    over the truncation limit -- which is how 795 dictionary pages came to have
+    descriptions averaging several hundred characters without anyone noticing."""
+    bad = []
+    for slug, term, orig, translit, gloss, ref in DICTIONARY:
+        d = _entry_desc(term, gloss)
+        if len(d) > 160:
+            bad.append(f"  dict/{slug}: {len(d)} chars")
+    for e in ENCYCLOPEDIA:
+        d = _entry_desc(e["name"], e["desc"])
+        if len(d) > 160:
+            bad.append(f"  ency/{e['slug']}: {len(d)} chars")
+    # The Spanish twins were left out of the first pass, exactly as the Spanish
+    # CHAPTER descriptions were on 2026-07-31. 350 entry pages, median 400-700
+    # characters. Guard both sides from the start this time.
+    for slug, (term_es, desc_es) in DICTIONARY_ES.items():
+        d = _entry_desc(term_es, desc_es, lang="es")
+        if len(d) > 160:
+            bad.append(f"  dict/{slug}.es: {len(d)} chars")
+    for slug, (name_es, desc_es) in ENCYCLOPEDIA_ES.items():
+        d = _entry_desc(name_es, desc_es, lang="es")
+        if len(d) > 160:
+            bad.append(f"  ency/{slug}.es: {len(d)} chars")
+    if bad:
+        raise SystemExit("ENTRY SEO CHECK FAILED -- descriptions over the truncation limit:\n"
+                         + "\n".join(bad[:20]))
 
 
 def _plain(s):
@@ -4151,7 +4263,8 @@ def build_dictionary_entry_pages_es(panels):
   <a href="diccionario.html">📖 Diccionario</a></p>
 {_dict_card_es(slug, term_es, orig, translit, desc_es, book, ch, v, es_slugs, permalink=False)}"""
         out = page(f"{term_es} — Diccionario — {SITE_NAME_ES}", body, active="biblioteca",
-                   lang="es", desc=_plain(desc_es), url=f"dict/{slug}.es.html", base=f"{SITE_URL}/")
+                   lang="es", desc=_entry_desc(term_es, desc_es, lang="es"),
+                   url=f"dict/{slug}.es.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{slug}.es.html"), "w", encoding="utf-8").write(out)
         n += 1
     return n
@@ -4175,7 +4288,8 @@ def build_encyclopedia_entry_pages_es(panels):
   <a href="enciclopedia.html">🏺 Enciclopedia</a></p>
 {_ency_card_es(slug, name_es, desc_es, e, es_slugs, permalink=False)}"""
         out = page(f"{name_es} — Enciclopedia — {SITE_NAME_ES}", body, active="biblioteca",
-                   lang="es", desc=_plain(desc_es), url=f"ency/{slug}.es.html", image=og_image,
+                   lang="es", desc=_entry_desc(name_es, desc_es, lang="es"),
+                   url=f"ency/{slug}.es.html", image=og_image,
                    base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{slug}.es.html"), "w", encoding="utf-8").write(out)
         n += 1
@@ -4263,7 +4377,8 @@ def build_atlas_entry_pages_es(panels):
   <a href="atlas-es.html">🗺️ Atlas</a></p>
 {_atlas_card_es(slug, name_es, desc_es, e, es_slugs, permalink=False)}"""
         out = page(f"{name_es} — Atlas — {SITE_NAME_ES}", body, active="biblioteca",
-                   lang="es", desc=_plain(desc_es), url=f"atlas/{slug}.es.html", image=og_image,
+                   lang="es", desc=_entry_desc(name_es, desc_es, lang="es"),
+                   url=f"atlas/{slug}.es.html", image=og_image,
                    base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{slug}.es.html"), "w", encoding="utf-8").write(out)
         n += 1
@@ -5516,6 +5631,7 @@ def main():
     check_shelf_density(chapters)
     check_library_parity()
     check_seo(chapters)
+    check_entry_seo()
     check_sblgnt_sigla(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
@@ -5550,6 +5666,7 @@ def main():
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_sitemap = build_sitemap()
     check_canonicals()
+    check_built_descriptions()
     save_card_manifest()
     report_card_budget()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
