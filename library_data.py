@@ -1584,6 +1584,33 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="upper-room", name="The Upper Room", kind="place",
+         aliases=["upper room", "Upper Room", "Cenacle", "the guest room"],
+         desc="The room upstairs, and the New Testament calls it three different things. Luke 22:11 has Jesus ask "
+              "for the <em>katalyma</em>, the GUEST ROOM \u2014 the same word Luke uses of the crowded house in "
+              "Bethlehem at 2:7. The next verse calls it an <em>anagaion</em>, an upper room, a word that occurs "
+              "twice in the New Testament and both times in this scene (Luke 22:12; Mark 14:15). And Acts 1:13 calls "
+              "it a <em>hyper&#333;on</em>, the upstairs room where the eleven wait between the ascension and "
+              "Pentecost. \u26a0 Luke ties the two events to one place: the Last Supper happens in an upper room, "
+              "and the disciples afterwards go back <em>to the room where they were staying</em>. "
+              "\u26a0 A building on Jerusalem's Western Hill has been identified with that room since at least the "
+              "fourth century. Jacob Pinkerfeld excavated it after 1948 mortar damage, dug down through Arab, "
+              "Crusader and Byzantine floors to a Roman-period floor, and dated the massive lower courses and that "
+              "floor to the FIRST CENTURY. He read the building as a synagogue and was killed in 1956, before the "
+              "graffiti found on its collapsed first-century plaster had been translated. The translation, when it "
+              "came, included <em>&lsquo;O Jesus, that I may live&rsquo;</em> \u2014 which reframed the building as "
+              "a JUDEO-CHRISTIAN synagogue, a meeting-house built by Jews who followed Jesus, and matched Eusebius's "
+              "report (c. 318) of a large church on the Western Hill built by Jews. \u26a0 And its Torah niche does "
+              "not face the Temple Mount. It faces north-west, toward Golgotha and the empty tomb. Whatever else "
+              "that is, it is a deliberate architectural decision about where the centre had moved. See the video "
+              "below, and the entry for GOLGOTHA for the site it points at.",
+         refs=[("Luke", 22, 11), ("Luke", 22, 12), ("Acts", 1, 13)],
+         # Queued 2026-08-01 and PLACED the same day once the transcript could actually be
+         # pulled (YouTube had been 429-ing every yt-dlp client). Reading it mattered: the
+         # title says "Last Supper and Pentecost" and the video is really about Pinkerfeld's
+         # excavation, the graffiti, and the north-west orientation — none of which the
+         # title would have told you.
+         videos=[("The Last Supper and Pentecost...HERE!", "https://www.youtube.com/watch?v=1e5paRyGr0A")]),
     dict(slug="new-jerusalem", name="The New Jerusalem", kind="place",
          aliases=["new Jerusalem", "New Jerusalem", "the holy city"],
          desc="The city that comes DOWN. It is not built in Revelation 21 and nobody enters it from outside \u2014 "
@@ -6117,24 +6144,12 @@ VIDEO_CREDITS = [
 # before starting a new chapter or book; move anything relevant into an
 # ENCYCLOPEDIA entry (new or existing) as soon as its target is reached.
 VIDEO_QUEUE = [
-    # Found 2026-08-01, prompted by Michael while Luke 2 was being shipped (whose
-    # katalyma note leans on Luke 22:11 — the same upper room). Channel CONFIRMED
-    # via oEmbed author_name = "Expedition Bible" (there is a near-identical
-    # "The Upper Room. Joel Kramer. SourceFlix." on the Biblicaltours channel —
-    # same presenter, different channel, so it would need its own credit line).
-    # oEmbed returns 200, so it embeds; no NOEMBED_IDS entry needed.
-    # \u26a0 NOT YET READ. YouTube was hard-rate-limiting (429) on every yt-dlp
-    # client and the video appears to carry no captions, so its actual argument
-    # is unverified. Do not place it off the title — that is exactly the mistake
-    # the Pilate video nearly caused. Pull the transcript or watch it first.
-    # \u26a0 Half its subject is PENTECOST, and Acts 2 is ALREADY TRANSLATED, so
-    # this is placeable as soon as it can be read — not chapters away. There is
-    # no `upper-room` encyclopedia entry yet; that is where it belongs, and it
-    # would give the Luke 2 katalyma note something to link to.
-    ("The Last Supper and Pentecost...HERE!", "https://www.youtube.com/watch?v=1e5paRyGr0A",
-     "Luke 22 / Mark 14 (the upper room) and Acts 1-2 (Pentecost \u2014 already translated)",
-     "Argues for the identification of the Upper Room \u2014 the room Luke calls a KATALYMA, the same "
-     "word he uses of the guest room in Bethlehem at 2:7. Wanted on a new Upper Room encyclopedia entry."),
+    # 2026-08-01: "The Last Supper and Pentecost...HERE!" (video id 1e5paRyGr0A) was queued
+    # here in the morning and PLACED the same day on the new `upper-room` entry, once
+    # YouTube stopped 429-ing and the transcript could be pulled. Reading it changed the
+    # placement: the title names the two events, but the video is really about
+    # Pinkerfeld's excavation, the first-century graffiti ("O Jesus, that I may live"),
+    # and the fact that the Torah niche faces Golgotha and not the Temple Mount.
     # ("Where God Divided the Sea...Exploring the Exodus!"
     #  — PLACED 2026-07-21 on the YAM-SUPH encyclopedia entry (Exodus 14), at
     #  Michael's request while translating the sea crossing. The entry lays out
@@ -11387,6 +11402,7 @@ ENCYCLOPEDIA_ES = {
     "simeon-of-jerusalem": ("Sime\u00f3n (en el templo)", "El hombre que esperaba. Lucas lo llama justo y piadoso y no le da cargo alguno: ni sacerdote ni escriba, s\u00f3lo un hombre de Jerusal\u00e9n a quien se le hab\u00eda dicho que no morir\u00eda antes de ver al Cristo del Se\u00f1or. Toma al ni\u00f1o en brazos y dice el c\u00e1ntico que la iglesia llam\u00f3 despu\u00e9s NUNC DIMITTIS, por sus primeras palabras en lat\u00edn. \u26a0 Conviene leer el griego de Lucas 2:29 con sus tres palabras juntas \u2014apolyeis, doulos, despota: soltar, esclavo, due\u00f1o\u2014. Es el vocabulario de la manumisi\u00f3n. \u26a0 Y el alcance de lo que dice a continuaci\u00f3n es todo Lucas-Hechos en una l\u00ednea: luz para revelaci\u00f3n a las NACIONES y gloria de tu pueblo ISRAEL. No confundir con Sime\u00f3n hijo de Jacob ni con Sim\u00f3n Pedro; el nombre es el mismo hebreo Shim'on."),
     "anna-the-prophetess": ("Ana la profetisa", "Hija de Fanuel, de la tribu de ASER, una de las del norte deportadas por Asiria en el 722 a.C. y que, en el relato est\u00e1ndar, no volvieron. Lucas nombra a una mujer de Aser en el templo de Jerusal\u00e9n siete siglos despu\u00e9s, con una genealog\u00eda que evidentemente conoc\u00eda, y no lo explica. \u26a0 La llama proph\u0113tis, femenino de profeta, sin discutirlo y en mitad de una frase: el mismo t\u00edtulo que el Antiguo Testamento griego da a Mar\u00eda, D\u00e9bora y Hulda. \u26a0 Su edad es de verdad ambigua: 'viuda he\u014ds de ochenta y cuatro a\u00f1os' puede significar que AHORA tiene ochenta y cuatro, o que lleva viuda ochenta y cuatro, lo que la pondr\u00eda por encima de los cien. He\u014ds significa normalmente 'hasta', lo que favorece la primera. Su nombre griego es el mismo que Ana, la madre de Samuel, que tambi\u00e9n or\u00f3 en un santuario y tambi\u00e9n cant\u00f3."),
     "new-jerusalem": ("La nueva Jerusal\u00e9n", "La ciudad que BAJA. En Apocalipsis 21 no se construye y nadie entra en ella desde fuera: desciende del cielo, de parte de Dios, ya terminada, 'ataviada como una novia para su marido' (21:2). \u26a0 Sus medidas son el argumento: doce mil estadios de largo, de ancho Y de alto (21:16) \u2014unos 2.200 km en cada direcci\u00f3n\u2014 con un muro de 144 codos. Eso es 12 x 1.000 y 12 x 12, y hace de la ciudad un CUBO. \u26a0 El \u00fanico otro cubo de la Biblia es el Lugar Sant\u00edsimo, de veinte codos por lado (1 Reyes 6:20), el cuarto en el que un hombre entraba una vez al a\u00f1o. El cap\u00edtulo toma esas proporciones y las expande al tama\u00f1o del mundo conocido, y luego dice con palabras en 21:22 lo que ya hab\u00eda dicho con n\u00fameros: no hay santuario en ella, porque la ciudad entera lo es. \u26a0 Las puertas llevan las doce tribus y los cimientos los doce ap\u00f3stoles, y nada en el texto los concilia. Las puertas no se cierran nunca porque no hay noche contra la que cerrarlas, y el mismo cap\u00edtulo dice que nada com\u00fan entrar\u00e1. El Apocalipsis sostiene las dos frases a veinte vers\u00edculos de distancia y no las jerarquiza."),
+    "upper-room": ("El aposento alto", "El cuarto de arriba, y el Nuevo Testamento lo llama de tres maneras distintas. Lucas 22:11 hace que Jes\u00fas pregunte por el <em>katalyma</em>, el APOSENTO DE HU\u00c9SPEDES: la misma palabra que Lucas usa de la casa llena de Bel\u00e9n en 2:7. El vers\u00edculo siguiente lo llama <em>anagaion</em>, aposento alto, palabra que sale dos veces en el Nuevo Testamento y las dos en esta escena (Lucas 22:12; Marcos 14:15). Y Hechos 1:13 lo llama <em>hyper&#333;on</em>, el cuarto de arriba donde los once esperan entre la ascensi\u00f3n y Pentecost\u00e9s. \u26a0 Lucas ata los dos sucesos a un mismo lugar. \u26a0 Un edificio de la Colina Occidental de Jerusal\u00e9n se identifica con ese cuarto desde al menos el siglo IV. Jacob Pinkerfeld lo excav\u00f3 tras los da\u00f1os de mortero de 1948, baj\u00f3 por suelos \u00e1rabes, cruzados y bizantinos hasta un suelo de \u00e9poca romana, y fech\u00f3 las hiladas inferiores y ese suelo en el SIGLO I. Ley\u00f3 el edificio como sinagoga y muri\u00f3 en 1956, antes de que se tradujeran los grafitos hallados en el enlucido del siglo I ca\u00eddo dentro. La traducci\u00f3n, cuando lleg\u00f3, inclu\u00eda <em>&laquo;oh Jes\u00fas, que yo viva&raquo;</em>, lo que reformul\u00f3 el edificio como sinagoga JUDEOCRISTIANA \u2014 una casa de reuni\u00f3n levantada por jud\u00edos que segu\u00edan a Jes\u00fas \u2014 y encajaba con la noticia de Eusebio (h. 318) de una gran iglesia en la Colina Occidental construida por jud\u00edos. \u26a0 Y su nicho de la Tor\u00e1 no mira al Monte del Templo: mira al noroeste, hacia el G\u00f3lgota y la tumba vac\u00eda. Sea lo que sea, es una decisi\u00f3n arquitect\u00f3nica deliberada sobre d\u00f3nde se hab\u00eda desplazado el centro."),
 }
 
 # Places, so the Spanish atlas has real content rather than an empty page. The
