@@ -2104,7 +2104,35 @@ ENCYCLOPEDIA = [
     dict(slug="ramah", name="Ramah", kind="place", aliases=["Ramah"],
          coords=(31.8975, 35.2361, 0.05),
          desc="'The height' — a town of BENJAMIN a few miles north of Jerusalem, usually identified with er-Ram on the road toward Bethel. Jeremiah names it as the place where a voice is heard weeping (31:15 in English Bibles, 31:14 in the Hebrew), and it was the staging point where the captives of Judah were mustered before the march to Babylon (Jeremiah 40:1) — which is why a lament sung over lost children belongs there. ⚠ Two knots are worth naming rather than smoothing. First, Rachel's tomb: Genesis puts her burial 'on the way to Ephrath, that is, Bethlehem' (35:19), south of Jerusalem, while Jeremiah's 'in Ramah' and 1 Samuel 10:2 place it in Benjamin, to the north; the two traditions are ancient and unreconciled, and Matthew's citation at 2:18 works with the Bethlehem one. Second, Samuel's home town is also called Ramah (1 Samuel 1:19), and whether that is this Ramah or the 'Ramathaim of the hill country of Ephraim' of 1 Samuel 1:1 is still argued — so this entry does not claim it.",
-         refs=[("Matthew", 2, 18)]),
+         refs=[("Jeremiah", 31, 14), ("Matthew", 2, 18)]),
+    dict(slug="hananel-tower", name="The Tower of Hananel", kind="place",
+         aliases=["Tower of Hananel", "Hananel"],
+         desc="A tower on Jerusalem's north wall, named as one fixed end of the city's rebuilt boundary in "
+              "Jeremiah's New Covenant chapter ('the city will be rebuilt for Jehovah, from the Tower of Hananel "
+              "to the Corner Gate,' 31:38) — and it recurs: Nehemiah's post-exile wall-builders repair it by name "
+              "(Nehemiah 3:1, forthcoming on this shelf), and it reappears in Zechariah's vision of a widened, "
+              "permanently secure Jerusalem (Zechariah 14:10, forthcoming). ⚠ Its exact position is not otherwise "
+              "recoverable; three separate biblical writers, across roughly two centuries, treat it as a landmark "
+              "everyone would recognize without needing it described.",
+         refs=[("Jeremiah", 31, 37)], videos=[]),
+    dict(slug="horse-gate", name="The Horse Gate", kind="place", aliases=["Horse Gate"],
+         desc="A gate on Jerusalem's eastern wall, near the Kidron Valley — the far boundary-marker of the "
+              "rebuilt city in Jeremiah 31:39-40, and later one of the sections Nehemiah's wall-builders repair "
+              "by name, assigned to 'the priests, each in front of his own house' (Nehemiah 3:28, forthcoming on "
+              "this shelf). Its name most likely points to a royal stable or a cavalry muster point nearby, "
+              "though nothing more specific survives.",
+         refs=[("Jeremiah", 31, 39)], videos=[]),
+    dict(slug="kidron-valley", name="The Kidron Valley", kind="place", aliases=["Kidron", "brook Kidron"],
+         coords=(31.7767, 35.2380, 0.04),
+         desc="The valley running between Jerusalem's Temple Mount and the Mount of Olives, then south toward "
+              "the Dead Sea — the city's eastern boundary and, repeatedly, the place reforming kings dump what "
+              "they tear down: Asa burns his mother's idol here (1 Kings 15:13), Josiah has the vessels of Baal "
+              "and Asherah and the Topheth's ashes scattered and burned in it (2 Kings 23:4-12), and Jeremiah 31:40 "
+              "names it as the far edge of a Jerusalem finally declared holy and permanent. David crosses it "
+              "barefoot and weeping, fleeing Absalom (2 Samuel 15:23, forthcoming on this shelf); centuries later "
+              "Jesus crosses the same valley leaving the upper room for Gethsemane (John 18:1, forthcoming). It is "
+              "normally a dry wadi, running with water only in the winter rains.",
+         refs=[("Jeremiah", 31, 39)], videos=[]),
     dict(slug="thessalonica", name="Thessalonica", kind="place",
          aliases=["Thessalonica", "Thessalonians"],
          coords=(40.6403, 22.9439, 0.05),
@@ -3218,7 +3246,8 @@ ENCYCLOPEDIA = [
               "prophet hears her still weeping there for her exiled children — 'Rachel weeping for her children, "
               "refusing to be comforted' (Jeremiah 31:15), the verse Matthew hears again over Bethlehem's "
               "murdered infants (Matthew 2:18).",
-         refs=[(29, 6), (29, 18), (29, 30), (30, 1), (31, 4), (33, 2), (35, 16), ("Matthew", 2, 18)], videos=[]),
+         refs=[(29, 6), (29, 18), (29, 30), (30, 1), (31, 4), (33, 2), (35, 16),
+               ("Jeremiah", 31, 14), ("Matthew", 2, 18)], videos=[]),
     dict(slug="benjamin", name="Benjamin", kind="person", aliases=["Benjamin", "Ben-oni"],
          desc="Jacob's twelfth and last son, the second of Rachel's — born on the road near Bethlehem as she died in "
               "labor (35:16-18). Her dying name for him was BEN-ONI, 'son of my sorrow'; his father overrode it to "
@@ -3446,7 +3475,7 @@ ENCYCLOPEDIA = [
               "his affliction. Jacob later adopts both as his own and crosses his hands to put the younger "
               "first (48:5, 14) — one more overturned birthright — and their names become two of Israel's "
               "tribes; 'Ephraim' eventually stands for the whole northern kingdom in the prophets.",
-         refs=[(41, 51), (41, 52)], videos=[]),
+         refs=[(41, 51), (41, 52), ("Jeremiah", 31, 8), ("Jeremiah", 31, 19)], videos=[]),
 
     # ---- Genesis 39 ----
     # UNNAMED in the text, so no aliases — encyclopedia-only, the antiochus-iv pattern.
@@ -4224,7 +4253,8 @@ ENCYCLOPEDIA = [
               "belonging to the dynasty rather than to a tribe. Ahab and Jezebel's ivory-inlaid palace here is "
               "described in Kings and its ivories have been excavated. Besieged and taken by Assyria in 722 BC, "
               "ending the northern kingdom; its later inhabitants are the Samaritans of the Gospels.",
-         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3), ("Micah", 1, 1), ("Micah", 1, 6), ("Acts", 1, 8)], videos=[],
+         refs=[("2 Kings", 1, 2), ("2 Kings", 1, 3), ("Micah", 1, 1), ("Micah", 1, 6), ("Acts", 1, 8),
+               ("Jeremiah", 31, 4)], videos=[],
          coords=(32.2803, 35.1897, 0.06),
          modern="Sebastia, in the hills north-west of Nablus, West Bank"),
     dict(slug="gibeon", name="Gibeon", kind="place", aliases=["Gibeon"],
@@ -4358,7 +4388,7 @@ ENCYCLOPEDIA = [
               "to the people themselves ('daughter of Zion'), and finally, in the prophets, to a Jerusalem that does not yet exist. "
               "⚠ The hill called Mount Zion today is a THIRD site, on the western ridge — a Byzantine-era identification, not the "
               "biblical one. Isaiah uses the name about forty-five times, more than any other book.",
-         refs=[("Isaiah", 1, 8), ("Isaiah", 1, 27)], videos=[]),
+         refs=[("Isaiah", 1, 8), ("Isaiah", 1, 27), ("Jeremiah", 31, 5)], videos=[]),
     dict(slug="first-temple", name="The First Temple", kind="place", aliases=["the First Temple", "Solomon's Temple"],
          coords=(31.7780, 35.2354, 0.03),
          desc="The house SOLOMON built on the threshing floor David bought, on the hill Genesis 22 calls MORIAH — begun in his "
@@ -6189,6 +6219,12 @@ XREFS = [
     (("Daniel", 3, 1), ("Daniel", 3, 19), "\u26a0 The same word, TZELEM, names the golden image Nebuchadnezzar builds and, eighteen verses later, his own face \u2014 both 'changed' by fury"),
     (("Daniel", 2, 46), ("Daniel", 3, 5), "SGD \u2014 Nebuchadnezzar himself falls down and worships Daniel one chapter before he commands the same posture from everyone, toward a statue, at the sound of the orchestra"),
     (("Daniel", 3, 17), ("Daniel", 6, 16), "SHEZAV \u2014 'able to deliver' answers the furnace and the lions' den alike, Daniel's two best-known rescue stories sharing one Aramaic verb"),
+    (("Matthew", 2, 18), ("Jeremiah", 31, 14), "The verse Matthew quotes almost word for word \u2014 Rachel weeping for her children, refusing to be comforted \u2014 in its own original setting"),
+    (("Jeremiah", 31, 14), ("Genesis", 37, 35), "\u26a0 The same two roots, MA'EN and NACHAM \u2014 Jacob 'refused to be comforted' over Joseph, Rachel's own son; a generation later Rachel herself refuses comfort over her exiled descendants"),
+    (("Jeremiah", 31, 27), ("Jeremiah", 1, 10), "The six-verb commission given to the young Jeremiah \u2014 uproot, tear down, destroy, overthrow, build, plant \u2014 answered here almost verbatim, forty chapters and forty years later"),
+    (("Jeremiah", 31, 39), ("Jeremiah", 19, 6), "The same valley of corpses Jeremiah renamed 'the valley of slaughter' in judgment is declared holy and permanent here \u2014 the ugliest ground in the book, reversed"),
+    (("Jeremiah", 31, 16), ("Jeremiah", 29, 11), "TIKVAH and ACHARIT, hope and outcome, the identical two words paired in reverse order \u2014 the same promise to the same exiles a few chapters apart"),
+    (("Jeremiah", 31, 19), ("Genesis", 48, 14), "Jacob crosses his hands to bless the younger Ephraim ahead of Manasseh; Jehovah's own yearning for 'a precious son' plays out the same reversal one more time"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7070,6 +7106,9 @@ CHRON_CHAPTERS = {
     "jer21": dict(era="exile",
                   when="Zedekiah's delegation asks for a miracle; the answer is the bleakest in the book — God fights on the siege's side, and life is outside the walls.",
                   clock="588–586 BC, the final siege — the book has jumped seventeen years past ch. 20 (its chapters are filed by theme and catchword, not by calendar). The city and its cedar 'forest' burn in the summer of 586."),
+    "jer31": dict(era="exile",
+                  when="The New Covenant, Rachel weeping at Ramah, and the promise of a rebuilt Jerusalem — the center of chs. 30–31's 'Book of Consolation,' the one sustained block of pure hope in the book.",
+                  clock="⚠ Undated, like the rest of the Book of Consolation. Traditional placements range from early in Josiah's reign (linking it to Jeremiah's youthful ministry to the fallen northern kingdom, addressed here by name as 'Ephraim') to the depths of the Babylonian siege itself, when hope would have cost the most to speak. The text gives no anchor of its own; this library does not choose between them."),
     "jer22": dict(era="exile",
                   when="The tariff of the last four kings — Shallum carried to Egypt, Jehoiakim's donkey-burial, Coniah the signet torn off; 'is that not to know me?' and 'write this man childless.'",
                   clock="Delivered across Jehoiakim's reign (c. 609–598 BC), with its Coniah oracle reaching the deportation of 597 — the chapter surveys Josiah's dead and his three heirs in turn: Jehoahaz already in Egypt, Jehoiakim reigning, and Jehoiachin's fall previewed. The kings run in the reverse of Abraham: called out of their homeland by force, not promise."),
@@ -11778,6 +11817,73 @@ ENCYCLOPEDIA_ES["dura"] = ("Dura",
     "de Daniel, y el texto no da más punto de referencia para fijarlo. El único anclaje geográfico del "
     "narrador es simplemente «en la provincia de Babilonia» — véase BABILONIA.")
 
+ENCYCLOPEDIA_ES["rachel"] = ("Raquel",
+    "La hija menor de Labán y el amor de la vida de Jacob — una pastora a la que él conoce junto "
+    "al pozo y por la que sirve catorce años para casarse (29:9-30). «Hermosa de forma y bella de "
+    "aspecto», y amada, pero estéril durante años mientras su hermana no amada da a luz hijo tras "
+    "hijo; el dolor se vuelve rivalidad amarga («dame hijos, o me muero», 30:1). Al fin Dios «se "
+    "acuerda» de ella y da a luz a JOSÉ, y después muere dando a luz a BENJAMÍN en el camino cerca "
+    "de Belén, nombrándolo con su último aliento Benoni, «hijo de mi dolor» (35:16-20). Su tumba "
+    "solitaria junto al camino se vuelve un hito, y el profeta la oye todavía llorando allí por "
+    "sus hijos exiliados — «Raquel que llora por sus hijos, y no quiere ser consolada» "
+    "(Jeremías 31:15), el versículo que Mateo vuelve a oír sobre los niños asesinados de Belén "
+    "(Mateo 2:18).")
+
+ENCYCLOPEDIA_ES["ramah"] = ("Ramá",
+    "«La altura» — una ciudad de BENJAMÍN a pocos kilómetros al norte de Jerusalén, identificada "
+    "por lo general con er-Ram, en el camino hacia Betel. Jeremías la nombra como el lugar donde "
+    "se oye una voz que llora (31:15 en las Biblias en español, 31:14 en el hebreo), y fue el "
+    "punto de reunión donde se agrupaba a los cautivos de Judá antes de la marcha a Babilonia "
+    "(Jeremías 40:1) — por eso un lamento cantado por hijos perdidos pertenece ahí. ⚠ Vale la "
+    "pena nombrar dos nudos en vez de suavizarlos. Primero, la tumba de Raquel: Génesis sitúa su "
+    "sepultura «en el camino de Efrata, que es Belén» (35:19), al sur de Jerusalén, mientras que "
+    "el «en Ramá» de Jeremías y 1 Samuel 10:2 la sitúan en Benjamín, al norte; las dos tradiciones "
+    "son antiguas y no se han reconciliado, y la cita de Mateo en 2:18 funciona con la de Belén. "
+    "Segundo, el pueblo natal de Samuel también se llama Ramá (1 Samuel 1:19), y si es esta Ramá o "
+    "el «Ramataim de la región montañosa de Efraín» de 1 Samuel 1:1 sigue discutiéndose — así que "
+    "esta entrada no lo afirma.")
+
+ENCYCLOPEDIA_ES["manasseh-ephraim"] = ("Manasés y Efraín",
+    "Los dos hijos de José con Asenat, nacidos en Egipto antes del hambre, ambos nombrados por lo "
+    "que el exilio le había hecho. MANASÉS juega con <em>nashani</em> — «Dios me ha hecho olvidar "
+    "todo mi trabajo y toda la casa de mi padre» (41:51), algo sorprendente de decir en voz alta "
+    "sobre la familia que está a punto de volver a su vida. EFRAÍN juega con <em>hiphrani</em> — "
+    "«Dios me ha hecho fructificar en la tierra de mi aflicción» (41:52); llama a Egipto, donde "
+    "gobierna, la tierra de su aflicción. Jacob después adopta a ambos como propios y cruza las "
+    "manos para poner primero al menor (48:5, 14) — otro derecho de primogenitura invertido — y "
+    "sus nombres se vuelven dos de las tribus de Israel; «Efraín» termina representando a todo el "
+    "reino del norte en los profetas.")
+
+ENCYCLOPEDIA_ES["hananel-tower"] = ("La torre de Hananel",
+    "Una torre en el muro norte de Jerusalén, nombrada como uno de los extremos fijos de la "
+    "frontera reedificada de la ciudad en el capítulo del Pacto Nuevo de Jeremías («la ciudad "
+    "será reedificada para Jehová, desde la torre de Hananel hasta la puerta del Ángulo», "
+    "31:38) — y reaparece: los constructores del muro tras el exilio de Nehemías la reparan por "
+    "nombre (Nehemías 3:1, aún no en esta estantería), y vuelve a aparecer en la visión de "
+    "Zacarías de una Jerusalén ensanchada y permanentemente segura (Zacarías 14:10, aún no en "
+    "esta estantería). ⚠ Su posición exacta no se puede recuperar de otro modo; tres escritores "
+    "bíblicos distintos, a lo largo de casi dos siglos, la tratan como un hito que todos "
+    "reconocerían sin necesidad de describirlo.")
+
+ENCYCLOPEDIA_ES["horse-gate"] = ("La puerta de los Caballos",
+    "Una puerta en el muro oriental de Jerusalén, cerca del valle de Cedrón — el marcador "
+    "fronterizo más lejano de la ciudad reedificada en Jeremías 31:39-40, y más tarde una de las "
+    "secciones que los constructores del muro de Nehemías reparan por nombre, asignada «a los "
+    "sacerdotes, cada uno frente a su propia casa» (Nehemías 3:28, aún no en esta estantería). Su "
+    "nombre probablemente señala un establo real o un punto de reunión de caballería cercano, "
+    "aunque no sobrevive nada más específico.")
+
+ENCYCLOPEDIA_ES["kidron-valley"] = ("El valle de Cedrón",
+    "El valle que corre entre el Monte del Templo de Jerusalén y el Monte de los Olivos, y luego "
+    "hacia el sur en dirección al mar Muerto — la frontera oriental de la ciudad y, repetidamente, "
+    "el lugar donde los reyes reformadores tiran lo que derriban: Asa quema allí el ídolo de su "
+    "madre (1 Reyes 15:13), Josías hace esparcir y quemar en él los utensilios de Baal y de Asera "
+    "y las cenizas de Tofet (2 Reyes 23:4-12), y Jeremías 31:40 lo nombra como el borde más lejano "
+    "de una Jerusalén por fin declarada santa y permanente. David lo cruza descalzo y llorando, "
+    "huyendo de Absalón (2 Samuel 15:23, aún no en esta estantería); siglos después Jesús cruza el "
+    "mismo valle al salir del aposento alto hacia Getsemaní (Juan 18:1, aún no en esta "
+    "estantería). Normalmente es un cauce seco, con agua solo en las lluvias de invierno.")
+
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
 # copyright famous paintings of biblical scenes... embed them right in the same
@@ -11806,6 +11912,52 @@ ENCYCLOPEDIA_ES["dura"] = ("Dura",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "jer31": [dict(
+        file="luyken-rachels-tomb-massacre-innocents.jpg",
+        title="Rachel's Tomb, with the Massacre of the Innocents",
+        title_es="La tumba de Raquel, con la matanza de los inocentes",
+        artist="Jan Luyken (after a sketch by Jean de Thevenot)",
+        artist_es="Jan Luyken (según un boceto de Jean de Thevenot)",
+        year="1700",
+        location="Rijksmuseum, Amsterdam",
+        location_es="Rijksmuseum, Ámsterdam",
+        alt="A two-panel engraving. The upper panel shows a domed stone monument in an open landscape, "
+            "walled and gated, with pilgrims on foot and a camel caravan approaching under a palm tree — "
+            "Rachel's tomb as it stood to a 17th-century traveler's eye. The lower panel shows a similar "
+            "arched stone monument, now overgrown, with soldiers wielding swords among fleeing women; "
+            "several small bodies lie on the ground in the foreground while mothers kneel over them or "
+            "reach out in protest, and at right a soldier seizes a child from its mother's arms.",
+        note="⚠ Luyken builds this print in two decks on purpose. The top panel is reportage, not "
+             "invention: it copies a travel sketch by the French traveler Jean de Thevenot, who visited "
+             "the site around 1655 and recorded the tomb as European pilgrims were shown it — a domed "
+             "monument, walled precinct, camels on the approach road. The bottom panel takes the same "
+             "monument (redrawn as a roofed, overgrown pavilion, the difference itself a small comment on "
+             "time passing) and populates it with the Massacre of the Innocents, small bodies on the "
+             "ground and a soldier prying a child from its mother at the right edge. Nothing in Matthew's "
+             "own text puts Herod's massacre AT the tomb; Luyken is illustrating the citation, not the "
+             "geography — folding Jeremiah 31:15's weeping and Matthew 2:18's quotation of it into one "
+             "image, exactly the layering this chapter's own note on v14 tries to keep visible rather "
+             "than collapse. ⚠ Jan Luyken (1649&ndash;1712) was one of the most prolific book illustrators "
+             "of the Dutch Golden Age &mdash; roughly 3,336 etchings across some 500 books in his working "
+             "life &mdash; and a convert to the Mennonite church whose religious seriousness runs through "
+             "his biblical work.",
+        note_es="⚠ Luyken construye esta lámina en dos pisos a propósito. El panel superior es reportaje, "
+                "no invención: copia un boceto de viaje del francés Jean de Thevenot, que visitó el sitio "
+                "hacia 1655 y registró la tumba tal como se la mostraban a los peregrinos europeos — un "
+                "monumento con cúpula, un recinto amurallado, camellos en el camino de acceso. El panel "
+                "inferior toma el mismo monumento (redibujado como un pabellón techado y cubierto de "
+                "vegetación, la diferencia misma un pequeño comentario sobre el paso del tiempo) y lo puebla "
+                "con la matanza de los inocentes, pequeños cuerpos en el suelo y un soldado arrancando a un "
+                "niño de los brazos de su madre en el borde derecho. Nada en el propio texto de Mateo pone "
+                "la matanza de Herodes EN la tumba; Luyken ilustra la cita, no la geografía — fusionando el "
+                "llanto de Jeremías 31:15 y la cita que Mateo 2:18 hace de él en una sola imagen. ⚠ Jan "
+                "Luyken (1649-1712) fue uno de los ilustradores de libros más prolíficos del Siglo de Oro "
+                "neerlandés — unos 3.336 aguafuertes en cerca de 500 libros a lo largo de su vida — y un "
+                "converso a la iglesia menonita cuya seriedad religiosa recorre toda su obra bíblica.",
+        license="CC0 (Rijksmuseum)",
+        source_url="https://commons.wikimedia.org/wiki/File:Graf_en_gedenksteen_van_Rachel_in_Bethlehem_"
+                   "met_de_kindermoord_te_Bethlehem,_RP-P-OB-44.894.jpg",
+    )],
     "dan3": [dict(
         file="turner-shadrach-meshach-abednego-furnace.jpg",
         title="Shadrach, Meshach and Abednego in the Burning Fiery Furnace",
