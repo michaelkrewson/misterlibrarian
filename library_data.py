@@ -1316,6 +1316,10 @@ DICTIONARY = [
      "LIVING WATER — and in ordinary Greek that simply means RUNNING water, a spring or stream as against the still water of a cistern (Hebrew mayim chayyim does the same job, and certain purifications require it). This is why the woman at the well is not being slow when she hears an offer of fresh water: she is hearing the phrase correctly in its everyday sense. The same device as anothen one chapter earlier — the misunderstanding is a real possibility of the Greek, not a failure of the hearer.", ("John", 4, 10)),
     ("egoeimi", "egō eimi", "ἐγώ εἰμι", "egō eimi",
      "I AM — two ordinary words that can mean simply 'I'm he,' and that are also the Septuagint's phrase for God's self-naming. John 4:26 is the first time in this Gospel that Jesus says it to anybody, and the hearer is a Samaritan woman alone at noon. Whether the loud sense is audible there is a genuine question; by 8:58 ('before Abraham was, I am') it cannot be anything else. Most versions supply a 'he' to make an English sentence, which quietly closes the question.", ("John", 4, 26)),
+    ("isos", "isos", "ἴσος", "isos",
+     "EQUAL — the ordinary Greek word for equal shares, equal wages, equal weight, with no theological charge built into it anywhere else it appears. John 5:18 uses it of Jesus and God: calling God 'his own Father' made him, in the Jews' reading, ison heauton poiōn tō theō, 'making himself equal with God.' John states this as the accurate reading of what was said, not as an overreaction he corrects. Every English and Spanish version on this shelf translates it the same plain way. The word recurs, differently phrased, at 10:33 and 19:7.", ("John", 5, 18)),
+    ("eraunao", "eraunaō", "ἐραυνάω", "eraunaō",
+     "TO SEARCH, examine closely — a contract verb whose 2nd-person-plural present form is identical for the indicative ('you search') and the imperative ('Search!'), a genuine ambiguity no punctuation in the earliest manuscripts could resolve. John 5:39 sits exactly on that fork: KJV and RV60 read it as a command ('Search the scriptures'); ASV, NIV, ESV and NVI all read it as a statement of what the hearers are already doing. The verse that follows (v40, 'you are not willing to come to me') reads more naturally as the second half of a diagnosis than as an unrelated second command, which is the reading this translation follows.", ("John", 5, 39)),
     ("synchraomai", "synchraomai", "συγχράομαι", "synchraomai",
      "To HAVE DEALINGS WITH — or, on a narrower reading, to USE VESSELS IN COMMON. John 4:9's aside ('for Jews have no synchrōntai with Samaritans') is the word's only occurrence in the New Testament, so its exact force is inferred rather than known. The narrow reading fits the scene unusually well, since the whole exchange begins with a request to drink from her jar; the broad reading is the traditional one. The library reports both and adopts neither.", ("John", 4, 9)),
     ("acharit", "acharit", "אַחֲרִית", "acharit",
@@ -2664,6 +2668,23 @@ ENCYCLOPEDIA = [
          refs=[("John", 2, 1), ("John", 2, 11)],
          coords=(32.8214, 35.3010, 0.1), approx=True,
          modern="Khirbet Qana (or Kafr Kanna), Galilee, Israel", videos=[]),
+    dict(slug="bethesda", name="Bethesda", kind="place", aliases=["Bethesda", "Betzatha"],
+         desc="A five-porticoed pool by Jerusalem's Sheep Gate where a sick man who had waited "
+              "thirty-eight years was healed (John 5:1-9) &mdash; one of the few Johannine "
+              "settings with a confirmed physical match: archaeologists excavated a twin-pool "
+              "complex with five colonnades near St. Anne's Church, in the Muslim Quarter, that "
+              "matches the description exactly. ⚠️ The name itself is a textual fork: the "
+              "majority text and Byzantine tradition read BETHESDA ('house of mercy' or 'house "
+              "of the flowing,' depending how the Hebrew/Aramaic underlying it is parsed); the "
+              "earliest manuscripts (favored by the WH and NA28 editions) read BETHZATHA "
+              "instead. The SBLGNT text this library translates from prints Bethesda here even "
+              "while it sides with the earlier manuscripts in omitting v4 &mdash; a reminder "
+              "that 'the modern critical text' is not one single, internally consistent "
+              "witness, but an editor's judgment call made fresh at every verse.",
+         refs=[("John", 5, 2)],
+         coords=(31.7787, 35.2359, 0.05), approx=True,
+         modern="Pool of Bethesda excavation, near St. Anne's Church, Jerusalem Old City",
+         videos=[]),
     dict(slug="capernaum", name="Capernaum", kind="place", aliases=["Capernaum"],
          desc="Kefar Nachum, 'village of Nahum' — a fishing town on the north shore of the Sea of Galilee that "
               "becomes the base camp of Jesus' whole Galilean ministry ('his own city,' Matthew 9:1). It enters "
@@ -6278,6 +6299,8 @@ XREFS = [
     (("Psalms", 27, 1), ("Matthew", 1, 21), "'my salvation' is yishi, built on the same root (yasha) as the name the angel gives Mary's son: 'you shall call his name Jesus, for he will save his people'"),
     (("Genesis", 28, 15), ("Psalms", 121, 8), "the same verb (shamar) and the same totality — Jehovah's promise to a lone, frightened fugitive at Bethel becomes a pilgrim's song for the road"),
     (("Psalms", 91, 11), ("Psalms", 121, 7), "the same root, shamar — angels commanded 'to guard you in all your ways' answers this psalm's sixfold 'he will keep you'"),
+    (("John", 5, 19), ("John", 14, 9), "the same claim of total identity between Father and Son, now put plainly: 'whoever has seen me has seen the Father'"),
+    (("John", 4, 23), ("John", 5, 25), "the identical formula — 'an hour is coming, and now is' — planted for true worshippers, cashed here for the dead who hear and live"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -11435,6 +11458,24 @@ DICTIONARY_ES = {
         "que Dios se nombra en la Septuaginta. Juan 4:26 es la primera vez en este Evangelio que Jesús se lo dice a "
         "alguien, y esa persona es una samaritana sola al mediodía. Si el sentido fuerte ya se oye ahí es una pregunta "
         "legítima; en 8:58 ya no puede ser otra cosa."),
+    "isos": ("igual",
+        "IGUAL — la palabra griega corriente para partes iguales, salarios iguales, peso "
+        "igual, sin ninguna carga teológica propia en ningún otro lugar donde aparece. Juan "
+        "5:18 la usa de Jesús y de Dios: llamar a Dios «su propio Padre» hizo, en la lectura "
+        "de los judíos, <em>ison heautón poiōn tō theō</em>, «haciéndose igual a Dios». Juan "
+        "presenta esto como la lectura exacta de lo que se dijo, no como una exageración que "
+        "corrige. Todas las versiones inglesas y españolas de este estante la traducen del "
+        "mismo modo llano. La palabra regresa, con otra redacción, en 10:33 y 19:7."),
+    "eraunao": ("escudriñar",
+        "ESCUDRIÑAR, examinar de cerca — un verbo contracto cuya forma de segunda persona "
+        "plural del presente es idéntica para el indicativo («escudriñáis») y el imperativo "
+        "(«¡Escudriñad!»), una ambigüedad real que ninguna puntuación de los manuscritos más "
+        "antiguos pod&iacute;a resolver. Juan 5:39 se sitúa exactamente en esa bifurcación: "
+        "KJV y RV60 lo leen como orden («Escudriñad las Escrituras»); ASV, NIV, ESV y NVI lo "
+        "leen todos como afirmación de lo que los oyentes ya están haciendo. El versículo "
+        "que sigue (v. 40, «no queréis venir a mí») se lee con más naturalidad como la "
+        "segunda mitad de un diagnóstico que como una segunda orden sin relación, que es la "
+        "lectura que sigue esta traducción."),
     "synchraomai": ("tener trato con",
         "TENER TRATO CON — o, en una lectura más estrecha, USAR VASIJAS EN COMÚN. El inciso de Juan 4:9 es su única "
         "aparición en el Nuevo Testamento, así que su fuerza exacta se infiere. La lectura estrecha encaja "
@@ -11698,6 +11739,7 @@ ENCYCLOPEDIA_ES = {
     "corinth": ("Corinto", "Ciudad griega en el istmo estrecho que une el Peloponeso con el continente, due\u00f1a de dos puertos \u2014 uno hacia Italia y otro hacia Asia \u2014 y cobraba por el privilegio; los barcos peque\u00f1os se arrastraban enteros por el di\u00f3lkos de seis kil\u00f3metros antes que arriesgarse a doblar el cabo. Roma destruy\u00f3 la ciudad antigua en 146 a.C. y Julio C\u00e9sar la refund\u00f3 en 44 a.C. como colonia poblada en buena parte por libertos, de modo que el Corinto que Pablo conoci\u00f3 apenas ten\u00eda un siglo: romano en derecho, griego en habla, rico, de dinero nuevo y sin abolengo \u2014 justo la sensibilidad que 1 Corintios 1:26 aprieta. Fabricaba adem\u00e1s espejos de bronce pulido, lo que probablemente explica la comparaci\u00f3n de 1 Corintios 13:12."),
     "paul": ("Pablo", "Saulo de Tarso \u2014 jud\u00edo de habla griega de la tribu de Benjam\u00edn, formado como fariseo, ciudadano romano de nacimiento y el autor de cartas m\u00e1s influyente de la historia. Aparece por primera vez en Hechos aprobando la muerte de Esteban, es detenido en el camino de Damasco y pasa las tres d\u00e9cadas siguientes fundando congregaciones por Asia Menor y Grecia y sosteniendo que los gentiles pod\u00edan pertenecer al Dios de Israel sin hacerse jud\u00edos \u2014 el argumento que convirti\u00f3 al cristianismo en religi\u00f3n mundial y no en secta. Trece cartas llevan su nombre; siete son indiscutidas."),
     "nicodemus": ("Nicodemo", "Fariseo y <em>arj\u014dn</em> \u2014 dirigente, casi con seguridad miembro del consejo \u2014 que viene a Jes\u00fas de noche en Juan 3. \u26a0 Su nombre es griego, no hebreo: <em>Nikod\u0113mos</em>, 'victoria del pueblo', cosa nada rara entre la aristocracia de Jerusal\u00e9n. Reaparece dos veces m\u00e1s, y siempre un poco m\u00e1s cerca: pide un juicio justo para Jes\u00fas en 7:50-51 y lleva treinta kilos de mirra y \u00e1loe al entierro en 19:39."),
+    "bethesda": ("Betesda", "Un estanque de cinco pórticos junto a la puerta de las Ovejas de Jerusalén donde un enfermo que llevaba treinta y ocho años esperando fue sanado (Juan 5:1-9) — uno de los pocos escenarios joánicos con una correspondencia física confirmada: los arqueólogos excavaron un complejo de dos estanques gemelos con cinco columnatas cerca de la iglesia de Santa Ana, en el Barrio Musulmán, que coincide exactamente con la descripción. ⚠️ El nombre mismo es una bifurcación textual: el texto mayoritario y la tradición bizantina leen BETESDA («casa de misericordia» o «casa del que fluye», según cómo se interprete el hebreo o arameo que hay detrás); los manuscritos más antiguos (preferidos por las ediciones WH y NA28) leen en cambio BETZATÁ. El texto del SBLGNT del que traduce esta biblioteca imprime aquí Betesda, aunque en el mismo capítulo se alinea con los manuscritos más antiguos al omitir el v. 4 — un recordatorio de que «el texto crítico moderno» no es un solo testigo internamente coherente, sino una decisión editorial tomada de nuevo en cada versículo."),
     "cana": ("Can\u00e1 de Galilea", "La aldea galilea de la primera se\u00f1al \u2014 el agua convertida en vino en una boda (Juan 2:1-11) \u2014 y tambi\u00e9n el pueblo de Natanael (Juan 21:2), lo que sazona su '\u00bfde Nazaret puede salir algo bueno?' con rivalidad local. El sitio se disputa: Kafr Kanna, en la ruta de peregrinaci\u00f3n cerca de Nazaret, tiene las iglesias; Khirbet Qana, al otro lado del valle de Bet Netofa, tiene mejor arqueolog\u00eda. Las coordenadas toman Khirbet Qana, marcadas como aproximadas."),
     "sychar": ("Sicar", "La ciudad samaritana de Juan 4 \u2014 'una ciudad de Samaria llamada Sicar, junto a la heredad que Jacob dio a su hijo Jos\u00e9'. Todo el cap\u00edtulo ocurre aqu\u00ed, y el escenario trabaja: est\u00e1 en el valle entre el monte Ebal y el monte Guerizim, y Guerizim es el monte que la mujer se\u00f1ala al decir 'nuestros padres adoraron en ESTE monte' (4:20). Suele identificarse con la aldea de Askar, a unos cientos de metros del pozo de Jacob. \u26a0 Coordenadas aproximadas."),
     "jacobs-well": ("El pozo de Jacob", "El pozo donde transcurre la conversaci\u00f3n de Juan 4 \u2014 y uno de los poqu\u00edsimos lugares evang\u00e9licos cuya ubicaci\u00f3n nunca se ha puesto seriamente en duda, porque el pozo sigue ah\u00ed y sigue dando agua. Est\u00e1 excavado en la roca hasta unos 40 metros, y por eso el 'no tienes con qu\u00e9 sacarla, y el pozo es hondo' (4:11) es una objeci\u00f3n pr\u00e1ctica y no simb\u00f3lica. Sobre \u00e9l se levanta desde el siglo IV, con interrupciones, una iglesia; la actual es griega ortodoxa."),
@@ -12321,6 +12363,49 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Dance_of_Marian._Full_F15_from_"
                    "Golden_Haggadah.jpg",
+    )],
+    "jhn5": [dict(
+        file="murillo-healing-paralytic-bethesda.jpg",
+        title="Christ Healing the Paralytic at the Pool of Bethesda",
+        title_es="Curación del paralítico en la piscina de Betesda",
+        artist="Bartolomé Esteban Murillo",
+        artist_es="Bartolomé Esteban Murillo",
+        year="1667&ndash;1670",
+        location="National Gallery, London",
+        location_es="National Gallery, Londres",
+        alt="A large oil painting. At center, Christ in a lilac tunic and dark cloak stands and "
+            "reaches down with both hands toward a bearded, half-clothed old man lying on the "
+            "ground, arms raised in appeal, beside a jug and a shallow basin. Three men in "
+            "heavy robes stand watching just behind Christ. In the pale gold sky above, a "
+            "small, indistinct angel hovers in a burst of light. To the right, through a "
+            "colonnade, other sick people sit and lie around the edge of a pool where more "
+            "figures wait; a dog noses at a bundle of red cloth in the foreground.",
+        note="Painted for the church of the Hospital de la Caridad in Seville &mdash; a "
+             "charity hospital, so this scene of Jesus healing the poorest and most neglected "
+             "patient at the pool hung where actual patients could see it. &#9888; Look at the "
+             "sky: Murillo paints an ANGEL stirring the light above the water, the detail from "
+             "the traditional verse 4 that this translation omits from the running text (see "
+             "the note at v1) because the earliest manuscripts don't have it. Murillo, working "
+             "in 1667&ndash;1670 from the received Latin Vulgate text, had no reason to know "
+             "the verse would later be judged a scribal addition &mdash; he simply painted "
+             "what his Bible said. The sick man on the ground is still lame in this moment, "
+             "reaching up with empty hands before the healing; the mat he will shortly carry "
+             "on the Sabbath is not yet in the picture.",
+        note_es="Pintado para la iglesia del Hospital de la Caridad en Sevilla &mdash; un "
+                "hospital de beneficencia, así que esta escena de Jesús sanando al paciente "
+                "más pobre y desatendido junto al estanque colgaba donde los propios pacientes "
+                "podían verla. &#9888; Mírese el cielo: Murillo pinta un ÁNGEL agitando la luz "
+                "sobre el agua, el detalle del tradicional versículo 4 que esta traducción "
+                "omite del texto corrido (ver la nota del v. 1) porque los manuscritos más "
+                "antiguos no lo tienen. Murillo, trabajando entre 1667 y 1670 a partir del "
+                "texto recibido de la Vulgata latina, no tenía motivo para saber que el "
+                "versículo se juzgaría más tarde un añadido de copista &mdash; sencillamente "
+                "pintó lo que decía su Biblia. El enfermo en el suelo sigue cojo en este "
+                "instante, con las manos vacías levantadas antes de la sanación; la camilla "
+                "que cargará poco después en sábado todavía no está en el cuadro.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
+                   "1670.jpg",
     )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
