@@ -276,7 +276,7 @@ DICTIONARY = [
     ("shamayim", "shamayim", "שָׁמַיִם", "shamayim",
      "The heavens / the sky — one Hebrew word for both English registers.", (1, 8)),
     ("shamar", "shamar", "שָׁמַר", "shamar",
-     "To keep, guard, watch over — the human's garden vocation (2:15), disowned by Cain ('my brother's keeper?', 4:9).", (2, 15)),
+     "To keep, guard, watch over — the human's garden vocation (2:15), disowned by Cain ('my brother's keeper?', 4:9). ⚠ Psalm 121 turns it into the whole psalm: the root falls six times in six verses (3, 4, 5, 7 twice, 8), the highest concentration of one word anywhere in a psalm this short, closing on the same promise God made Jacob at Bethel — 'I will keep you wherever you go' (28:15).", (2, 15)),
     ("shem", "shem", "שֵׁם", "shem",
      "Name — what Babel grasps at ('let us make a name,' 11:4) and God gives ('I will make your name great,' 12:2). Also Noah's son Shem. In Psalm 23:3 it is the reason the shepherd acts at all — lema'an shemo, 'for the sake of his name.'", (11, 4)),
     ("sherets", "sherets", "שֶׁרֶץ", "sherets",
@@ -380,6 +380,8 @@ DICTIONARY = [
      "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood.", ("Judges", 1, 17)),
     ("sukkah", "sukkah (pl. sukkot)", "סֻכָּה", "sukkah",
      "A BOOTH — a light, temporary shelter woven from branches, as opposed to an OHEL (tent, sturdier and portable) or a permanent house. It is the word behind SUKKOT, the autumn Feast of Booths, when Israel is commanded to live for seven days in shelters like these on purpose, 'so that your generations may know that I made the people of Israel dwell in booths when I brought them out of the land of Egypt' (Leviticus 23:42-43). ⚠ Psalm 27:5 uses it of God himself as shelter — 'he will hide me in his sukkah in the day of trouble' — the most fragile-sounding structure in the Hebrew vocabulary of shelter, given to the one hiding-place the psalm treats as reliable. Jacob names a place SUKKOT after building shelters there for his livestock (Genesis 33:17), and Jonah builds one to sit under and watch Nineveh (Jonah 4:5).", ("Psalms", 27, 5)),
+    ("ma-alot", "shir la-ma'alot", "שִׁיר לַמַּעֲלוֹת", "shir la-ma'alot",
+     "A SONG OF ASCENTS — the title heading fifteen psalms in a row, 120-134, from ALAH, to go UP; the only run of consecutive psalms in the Psalter that all share one label. Jewish tradition offers two explanations that do not cancel each other: sung by pilgrims literally going up to Jerusalem, on a ridge, for the three pilgrim feasts (Deuteronomy 16:16); or sung one by one on the fifteen steps rising from the Court of the Women to the Court of Israel in the Temple (Mishnah, Middot 2:5). ⚠ Psalm 121 is the first of the fifteen on this shelf; the other fourteen remain untranslated here.", ("Psalms", 121, 1)),
     ("mas", "mas", "מַס", "la-mas",
      "FORCED LABOUR, corvée — conscripted, unpaid work owed to a ruler or state; a levy paid in bodies rather than money. \u26a0\ufe0f The word carries a bitter history in the Bible. It is what EGYPT imposed on Israel — 'they set taskmasters over them… to afflict them with their burdens' (Exodus 1:11 uses the cognate) — the very thing the exodus was a rescue FROM. So when Judges 1 says that, once Israel 'grew strong,' the tribes put the surviving Canaanites to MAS rather than driving them out (1:28, 30, 33, 35), the irony is deliberate and heavy: a people redeemed from forced labour imposing it, and doing so as a COMPROMISE with the command they were failing to keep. Solomon will later levy the same MAS on the remaining Canaanites (1 Kings 9:21) — and, disastrously, on Israel itself, which splits the kingdom. KJV 'tribute'; ESV/NIV 'forced labor.'", ("Judges", 1, 28)),
     ("hagah", "hagah", "הָגָה", "ve-hagita",
@@ -6258,6 +6260,8 @@ XREFS = [
     (("Matthew", 1, 5), ("Joshua", 6, 25), "the Canaanite prostitute Joshua kept alive named directly in Jesus' own genealogy, as the mother of Boaz"),
     (("Psalms", 27, 6), ("Joshua", 6, 20), "the same word, teru'ah — the shout that felled Jericho's wall, here offered at an altar instead"),
     (("Psalms", 27, 1), ("Matthew", 1, 21), "'my salvation' is yishi, built on the same root (yasha) as the name the angel gives Mary's son: 'you shall call his name Jesus, for he will save his people'"),
+    (("Genesis", 28, 15), ("Psalms", 121, 8), "the same verb (shamar) and the same totality — Jehovah's promise to a lone, frightened fugitive at Bethel becomes a pilgrim's song for the road"),
+    (("Psalms", 91, 11), ("Psalms", 121, 7), "the same root, shamar — angels commanded 'to guard you in all your ways' answers this psalm's sixfold 'he will keep you'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -10283,6 +10287,23 @@ DICTIONARY_ES = {
         "SUCOT despu&eacute;s de construir all&iacute; refugios para su ganado (G&eacute;nesis "
         "33:17), y Jon&aacute;s construye uno para sentarse debajo y observar N&iacute;nive "
         "(Jon&aacute;s 4:5)."),
+    "shamar": ("shamar",
+        "GUARDAR, cuidar, velar por &mdash; la vocaci&oacute;n humana en el jard&iacute;n "
+        "(2:15), que Ca&iacute;n rechaza (&laquo;&iquest;soy yo acaso guarda de mi "
+        "hermano?&raquo;, 4:9). ⚠ El Salmo 121 lo convierte en el salmo entero: la ra&iacute;z "
+        "cae seis veces en seis vers&iacute;culos (3, 4, 5, 7 dos veces, 8), la mayor "
+        "concentraci&oacute;n de una sola palabra en un salmo tan corto, y cierra con la misma "
+        "promesa que Dios le hizo a Jacob en Betel &mdash; &laquo;te guardar&eacute; por "
+        "dondequiera que fueres&raquo; (28:15)."),
+    "ma-alot": ("shir la-ma'alot",
+        "UN C&Aacute;NTICO DE LAS SUBIDAS &mdash; el t&iacute;tulo de quince salmos seguidos, "
+        "120&ndash;134, de <em>alah</em>, subir. Es la &uacute;nica serie de salmos "
+        "consecutivos en todo el Salterio que comparten una sola etiqueta, y la "
+        "tradici&oacute;n jud&iacute;a ofrece dos explicaciones que no se excluyen: cantados "
+        "por los peregrinos que sub&iacute;an literalmente a Jerusal&eacute;n, en una "
+        "cresta, para las tres fiestas de peregrinaci&oacute;n (Deuteronomio 16:16); o "
+        "cantados uno por uno en los quince escalones que suben del Atrio de las Mujeres al "
+        "Atrio de Israel en el Templo (Mishn&aacute;, Middot 2:5)."),
     "kadosh": ("kadosh",
         "SANTO — y, antes de significar puro moralmente, significa APARTADO, separado del uso "
         "ordinario. La primera aparición de la palabra en toda la Biblia no es una persona sino "
@@ -12164,6 +12185,47 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Feast_of_Tabernacle._Avram%27s_"
                    "booth._Yehia_seated_in_door_of_tabernacle_booth_LOC_matpc.19879.jpg",
+    )],
+    "psalms121": [dict(
+        file="carline-hills-of-judea-1919-crop.jpg",
+        title="The Hills of Judea",
+        title_es="Los montes de Judea",
+        artist="Sydney Carline",
+        artist_es="Sydney Carline",
+        year="1919",
+        location="Imperial War Museums, London (Art.IWM ART 4560)",
+        location_es="Imperial War Museums, Londres (Art.IWM ART 4560)",
+        alt="A small oil landscape painting of rolling brown and grey hills under a pale sky, "
+            "seen across a green cultivated valley floor. In the foreground a dry, stony "
+            "watercourse cuts through scrubby grass and pale boulders; a line of dark trees "
+            "marks the far edge of the green field before the bare hills rise behind it.",
+        note="&#9888; Painted on the spot, not composed to illustrate this psalm. Carline was a "
+             "British official war artist attached to the Palestine campaign; his own title "
+             "notes, dated 28 January 1919, record the afternoon it was made: &lsquo;we got "
+             "our oil boxes out of the car &amp; both set to paint a study of the hilly "
+             "landscape. The Hill of Judea are rolling hills, almost like glorified Downs, "
+             "with cultivated terraces covering all those that are not too rocky.&rsquo; "
+             "&lsquo;Downs&rsquo; are the chalk hills of southern England &mdash; a painter far "
+             "from home, reaching for the nearest comparison he had. These are, plainly and "
+             "without embellishment, the actual mountains v1 lifts its eyes to: no single peak, "
+             "no landmark, just hill after hill on the way up to the city.",
+        note_es="&#9888; Pintado en el lugar mismo, no compuesto para ilustrar este salmo. "
+                "Carline fue un pintor de guerra oficial brit&aacute;nico adscrito a la "
+                "campa&ntilde;a de Palestina; sus propias notas de t&iacute;tulo, fechadas el "
+                "28 de enero de 1919, registran la tarde en que se pint&oacute;: &laquo;sacamos "
+                "las cajas de &oacute;leos del coche y los dos nos pusimos a pintar un estudio "
+                "del paisaje monta&ntilde;oso. Los montes de Judea son colinas onduladas, casi "
+                "como los Downs glorificados, con terrazas cultivadas cubriendo todas las que "
+                "no son demasiado rocosas&raquo;. Los &laquo;Downs&raquo; son las colinas "
+                "calizas del sur de Inglaterra &mdash; un pintor lejos de casa, buscando la "
+                "comparaci&oacute;n m&aacute;s cercana que ten&iacute;a a mano. Estos son, "
+                "llanamente y sin adorno, los montes reales a los que el v. 1 alza los ojos: "
+                "sin un solo pico, sin punto de referencia, solo colina tras colina en el "
+                "camino de subida a la ciudad.",
+        license="Public domain (UK Crown Copyright, created on First World War active "
+                "service; expired)",
+        source_url="https://commons.wikimedia.org/wiki/File:Sydney_William_Carline_(1888-1929)"
+                   "_-_The_Hills_of_Judea_-_IWM_ART_4560_-_Imperial_War_Museums.jpg",
     )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
