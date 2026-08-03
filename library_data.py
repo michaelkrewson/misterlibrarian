@@ -799,7 +799,7 @@ DICTIONARY = [
      "Two temple-words: hieron, the whole precinct with its courts (where the traders sat, 2:14), and naos, the sanctuary-house itself — the word Jesus chooses for 'destroy this temple' (2:19), and John glosses: the naos of his body (2:21).", ("John", 2, 14)),
     # ---- Revelation 2 (Greek) ----
     ("nikao", "ho nikōn", "ὁ νικῶν", "ho nikōn",
-     "'The one who overcomes' — the victor. Each of the seven letters ends with a promise to ho nikōn (Rev 2:7, 11, 17, 26…), and every promise is paid at the book's end: the tree of life (22:2), immunity to the second death (20:6), the new name, the morning star (22:16).", ("Revelation", 2, 7)),
+     "'The one who overcomes' — the victor. Each of the seven letters ends with a promise to ho nikōn (Rev 2:7, 11, 17, 26; 3:5, 12, 21), and every promise is paid at the book's end: the tree of life (22:2), immunity to the second death (20:6), the new name, the morning star (22:16). The seventh and last promise — 'to sit with me on my throne, as I also overcame and sat down with my Father on his throne' (3:21) — is cashed almost word for word at 21:7: 'the one who overcomes will inherit these things.'", ("Revelation", 2, 7)),
     ("paradeisos", "paradeisos", "παράδεισος", "paradeisos",
      "Paradise — a Persian loan-word for a walled garden, and the very word the Greek Bible chose for EDEN (Genesis 2:8 LXX). 'The tree of life in the paradise of God' (Rev 2:7) is Eden's tree, promised back.", ("Revelation", 2, 7)),
     ("stephanos", "stephanos", "στέφανος", "stephanos",
@@ -3849,6 +3849,35 @@ ENCYCLOPEDIA = [
               "business happened, and the prophetess the letter code-names Jezebel taught the congregation to go along.",
          refs=[("Revelation", 1, 11), ("Revelation", 2, 18), ("Revelation", 2, 24)],
          coords=(38.9190, 27.8417, 0.1), modern="Akhisar, Türkiye", videos=[]),
+    dict(slug="sardis", name="Sardis", kind="place", aliases=["Sardis"],
+         desc="Once the capital of Lydia, King Croesus's own city, on an acropolis so steep it was thought "
+              "unassailable — and was famously stormed twice anyway by night, both times because a sentry stopped "
+              "watching the one climbable approach. The letter (Rev 3:1-6) is the only one of the seven with no "
+              "commendation at all: 'you have a name that you live, and you are dead.' A few names there hadn't "
+              "soiled their garments; the rest are told, with the city's own history behind the word, to become "
+              "watchful or be come upon like a thief.",
+         refs=[("Revelation", 1, 11), ("Revelation", 3, 1), ("Revelation", 3, 4)],
+         coords=(38.4864, 28.0403, 0.1), modern="Sart, near Salihli, Türkiye", videos=[]),
+    dict(slug="philadelphia-asia", name="Philadelphia (Asia Minor)", kind="place", aliases=["Philadelphia"],
+         desc="A frontier city on the edge of a volcanic plain so fertile it was called 'burnt land,' founded to "
+              "spread Greek language and culture eastward — hence its name, 'brotherly love.' Devastated by a major "
+              "earthquake in AD 17 and rebuilt with imperial help; aftershocks were frequent enough that ancient "
+              "writers describe residents camping outside rather than sleeping indoors. The only other congregation "
+              "besides Smyrna to receive no complaint at all (Rev 3:7-13): an open door no one can shut, and the "
+              "promise of becoming a pillar that will never again go out — permanence offered to a city that had "
+              "just learned how little its own buildings could promise.",
+         refs=[("Revelation", 1, 11), ("Revelation", 3, 7), ("Revelation", 3, 12)],
+         coords=(38.3529, 28.5136, 0.1), modern="Alaşehir, Türkiye", videos=[]),
+    dict(slug="laodicea", name="Laodicea", kind="place", aliases=["Laodicea"],
+         desc="A wealthy banking and textile center in the Lycus valley, rich enough to refuse Roman disaster "
+              "relief and rebuild itself unaided after the earthquake of AD 60 — famous for glossy black wool and "
+              "for a medical school's exported eye-salve. It had no water source of its own, drawing by aqueduct "
+              "from Hierapolis's hot springs and Colossae's cold ones, arriving lukewarm at the tap. The last and "
+              "sharpest of the seven letters (Rev 3:14-22) answers the city in its own vocabulary: gold refined by "
+              "fire against its banks, white garments against its black wool, salve that actually heals against "
+              "the salve it sold the world.",
+         refs=[("Revelation", 1, 11), ("Revelation", 3, 14), ("Revelation", 3, 18)],
+         coords=(37.8351, 29.1097, 0.1), modern="Laodikeia ruins, near Denizli, Türkiye", videos=[]),
 
     # ---- the divine name ----
     dict(slug="jehovah", name="Jehovah (the divine name)", kind="person", aliases=["Jehovah"],
@@ -6301,6 +6330,8 @@ XREFS = [
     (("Psalms", 91, 11), ("Psalms", 121, 7), "the same root, shamar — angels commanded 'to guard you in all your ways' answers this psalm's sixfold 'he will keep you'"),
     (("John", 5, 19), ("John", 14, 9), "the same claim of total identity between Father and Son, now put plainly: 'whoever has seen me has seen the Father'"),
     (("John", 4, 23), ("John", 5, 25), "the identical formula — 'an hour is coming, and now is' — planted for true worshippers, cashed here for the dead who hear and live"),
+    (("Revelation", 1, 5), ("Revelation", 3, 14), "the same title, almost word for word — 'the faithful witness' becomes 'the faithful and true witness,' the seventh letter closing a loop the first chapter opened"),
+    (("Revelation", 3, 21), ("Revelation", 21, 7), "the last of the seven overcomer-promises — 'sit with me on my throne' — cashed almost verbatim: 'the one who overcomes will inherit these things'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7231,6 +7262,9 @@ CHRON_CHAPTERS = {
     "rev2": dict(era="apostolic",
                  when="The seven letters begin — Ephesus, Smyrna, Pergamum, Thyatira.",
                  clock="c. AD 95 — the congregations of the Asian postal road, a generation after Paul walked it."),
+    "rev3": dict(era="apostolic",
+                 when="The seven letters conclude — Sardis, Philadelphia, Laodicea, the last three stops on the same circular postal route.",
+                 clock="c. AD 95 — Philadelphia and Laodicea both still visibly marked by earthquakes within living memory (AD 17 and AD 60)."),
     "luke1": dict(era="gospels",
                   when="Two annunciations and two songs — Gabriel to Zechariah in the temple and to Mary in Nazareth, the Visitation, the birth of John, the Magnificat and the Benedictus.",
                   clock="c. 6–5 BC, 'in the days of Herod the king' (Herod the Great died in 4 BC) — the six months before the birth of Jesus. Luke's preface (1:1–4) is the one place a Gospel opens with a dated, first-person dedication."),
@@ -11476,6 +11510,14 @@ DICTIONARY_ES = {
         "que sigue (v. 40, «no queréis venir a mí») se lee con más naturalidad como la "
         "segunda mitad de un diagnóstico que como una segunda orden sin relación, que es la "
         "lectura que sigue esta traducción."),
+    "nikao": ("ho nikōn",
+        "«El que vence» — el vencedor. Cada una de las siete cartas termina con una "
+        "promesa a <em>ho nikōn</em> (Apocalipsis 2:7, 11, 17, 26; 3:5, 12, 21), y cada "
+        "promesa se cobra al final del libro: el árbol de la vida (22:2), inmunidad a la "
+        "muerte segunda (20:6), el nombre nuevo, el lucero de la mañana (22:16). La "
+        "séptima y última promesa — «que se siente conmigo en mi trono, así como yo "
+        "también vencí, y me senté con mi Padre en su trono» (3:21) — se cobra casi "
+        "palabra por palabra en 21:7: «el que venza heredará estas cosas»."),
     "synchraomai": ("tener trato con",
         "TENER TRATO CON — o, en una lectura más estrecha, USAR VASIJAS EN COMÚN. El inciso de Juan 4:9 es su única "
         "aparición en el Nuevo Testamento, así que su fuerza exacta se infiere. La lectura estrecha encaja "
@@ -11740,6 +11782,33 @@ ENCYCLOPEDIA_ES = {
     "paul": ("Pablo", "Saulo de Tarso \u2014 jud\u00edo de habla griega de la tribu de Benjam\u00edn, formado como fariseo, ciudadano romano de nacimiento y el autor de cartas m\u00e1s influyente de la historia. Aparece por primera vez en Hechos aprobando la muerte de Esteban, es detenido en el camino de Damasco y pasa las tres d\u00e9cadas siguientes fundando congregaciones por Asia Menor y Grecia y sosteniendo que los gentiles pod\u00edan pertenecer al Dios de Israel sin hacerse jud\u00edos \u2014 el argumento que convirti\u00f3 al cristianismo en religi\u00f3n mundial y no en secta. Trece cartas llevan su nombre; siete son indiscutidas."),
     "nicodemus": ("Nicodemo", "Fariseo y <em>arj\u014dn</em> \u2014 dirigente, casi con seguridad miembro del consejo \u2014 que viene a Jes\u00fas de noche en Juan 3. \u26a0 Su nombre es griego, no hebreo: <em>Nikod\u0113mos</em>, 'victoria del pueblo', cosa nada rara entre la aristocracia de Jerusal\u00e9n. Reaparece dos veces m\u00e1s, y siempre un poco m\u00e1s cerca: pide un juicio justo para Jes\u00fas en 7:50-51 y lleva treinta kilos de mirra y \u00e1loe al entierro en 19:39."),
     "bethesda": ("Betesda", "Un estanque de cinco pórticos junto a la puerta de las Ovejas de Jerusalén donde un enfermo que llevaba treinta y ocho años esperando fue sanado (Juan 5:1-9) — uno de los pocos escenarios joánicos con una correspondencia física confirmada: los arqueólogos excavaron un complejo de dos estanques gemelos con cinco columnatas cerca de la iglesia de Santa Ana, en el Barrio Musulmán, que coincide exactamente con la descripción. ⚠️ El nombre mismo es una bifurcación textual: el texto mayoritario y la tradición bizantina leen BETESDA («casa de misericordia» o «casa del que fluye», según cómo se interprete el hebreo o arameo que hay detrás); los manuscritos más antiguos (preferidos por las ediciones WH y NA28) leen en cambio BETZATÁ. El texto del SBLGNT del que traduce esta biblioteca imprime aquí Betesda, aunque en el mismo capítulo se alinea con los manuscritos más antiguos al omitir el v. 4 — un recordatorio de que «el texto crítico moderno» no es un solo testigo internamente coherente, sino una decisión editorial tomada de nuevo en cada versículo."),
+    "sardis": ("Sardis", "Antigua capital de Lidia, la propia ciudad del rey Creso, sobre una "
+        "acr\u00f3polis tan escarpada que se cre\u00eda inexpugnable \u2014 y fue famosamente tomada dos "
+        "veces por asalto nocturno, ambas porque un centinela dej\u00f3 de vigilar el \u00fanico "
+        "acceso escalable. La carta (Apocalipsis 3:1-6) es la \u00fanica de las siete sin ning\u00fan "
+        "elogio: \u00abtienes nombre de que vives, y est\u00e1s muerto\u00bb. Unos pocos nombres all\u00ed no "
+        "hab\u00edan manchado sus vestiduras; al resto se le dice, con la propia historia de la "
+        "ciudad detr\u00e1s de la palabra, que se vuelva vigilante o sea sorprendido como por un "
+        "ladr\u00f3n."),
+    "philadelphia-asia": ("Filadelfia (Asia Menor)", "Una ciudad fronteriza en el borde de "
+        "una llanura volc\u00e1nica tan f\u00e9rtil que la llamaban \u00abtierra quemada\u00bb, fundada para "
+        "extender la lengua y la cultura griegas hacia el oriente \u2014 de ah\u00ed su nombre, "
+        "\u00abamor fraternal\u00bb. Devastada por un gran terremoto en el a\u00f1o 17 d.C. y reconstruida "
+        "con ayuda imperial; las r\u00e9plicas eran tan frecuentes que escritores antiguos "
+        "describen a los residentes acampando fuera en vez de dormir bajo techo. La \u00fanica "
+        "congregaci\u00f3n adem\u00e1s de Esmirna que no recibe ninguna queja (Apocalipsis 3:7-13): "
+        "una puerta abierta que nadie puede cerrar, y la promesa de convertirse en columna "
+        "que nunca m\u00e1s saldr\u00e1 \u2014 permanencia ofrecida a una ciudad que acababa de aprender "
+        "cu\u00e1n poco pod\u00edan prometer sus propios edificios."),
+    "laodicea": ("Laodicea", "Un centro bancario y textil pr\u00f3spero en el valle del Lico, lo "
+        "bastante rico como para rechazar la ayuda romana tras el terremoto del a\u00f1o 60 d.C. "
+        "y reconstruirse sin ayuda \u2014 famoso por su lana negra brillante y por el colirio "
+        "exportado de su escuela de medicina. No ten\u00eda fuente de agua propia, y la tra\u00eda "
+        "por acueducto desde las fuentes termales de Hier\u00e1polis y las fr\u00edas de Colosas, "
+        "llegando tibia al grifo. La \u00faltima y m\u00e1s dura de las siete cartas (Apocalipsis "
+        "3:14-22) responde a la ciudad en su propio vocabulario: oro refinado en fuego "
+        "frente a sus bancos, vestiduras blancas frente a su lana negra, colirio que de "
+        "verdad sana frente al que ella misma vend\u00eda al mundo."),
     "cana": ("Can\u00e1 de Galilea", "La aldea galilea de la primera se\u00f1al \u2014 el agua convertida en vino en una boda (Juan 2:1-11) \u2014 y tambi\u00e9n el pueblo de Natanael (Juan 21:2), lo que sazona su '\u00bfde Nazaret puede salir algo bueno?' con rivalidad local. El sitio se disputa: Kafr Kanna, en la ruta de peregrinaci\u00f3n cerca de Nazaret, tiene las iglesias; Khirbet Qana, al otro lado del valle de Bet Netofa, tiene mejor arqueolog\u00eda. Las coordenadas toman Khirbet Qana, marcadas como aproximadas."),
     "sychar": ("Sicar", "La ciudad samaritana de Juan 4 \u2014 'una ciudad de Samaria llamada Sicar, junto a la heredad que Jacob dio a su hijo Jos\u00e9'. Todo el cap\u00edtulo ocurre aqu\u00ed, y el escenario trabaja: est\u00e1 en el valle entre el monte Ebal y el monte Guerizim, y Guerizim es el monte que la mujer se\u00f1ala al decir 'nuestros padres adoraron en ESTE monte' (4:20). Suele identificarse con la aldea de Askar, a unos cientos de metros del pozo de Jacob. \u26a0 Coordenadas aproximadas."),
     "jacobs-well": ("El pozo de Jacob", "El pozo donde transcurre la conversaci\u00f3n de Juan 4 \u2014 y uno de los poqu\u00edsimos lugares evang\u00e9licos cuya ubicaci\u00f3n nunca se ha puesto seriamente en duda, porque el pozo sigue ah\u00ed y sigue dando agua. Est\u00e1 excavado en la roca hasta unos 40 metros, y por eso el 'no tienes con qu\u00e9 sacarla, y el pozo es hondo' (4:11) es una objeci\u00f3n pr\u00e1ctica y no simb\u00f3lica. Sobre \u00e9l se levanta desde el siglo IV, con interrupciones, una iglesia; la actual es griega ortodoxa."),
@@ -12406,6 +12475,52 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
                    "1670.jpg",
+    )],
+    "rev3": [dict(
+        file="holman-hunt-light-of-the-world.jpg",
+        title="The Light of the World",
+        title_es="La luz del mundo",
+        artist="William Holman Hunt",
+        artist_es="William Holman Hunt",
+        year="1851&ndash;1853",
+        location="Keble College, Oxford",
+        location_es="Keble College, Oxford",
+        alt="A dark, nocturnal oil painting. Christ, robed and haloed with a crown of thorns, "
+            "stands before a wooden door overgrown with weeds, ivy and briars, and knocks with "
+            "his right hand while holding a lit lantern in his left. Behind him a moonlit "
+            "orchard and a night sky are visible through bare branches. The door has no visible "
+            "handle or latch on the outside.",
+        note="&#9888; Look for the door handle &mdash; there isn&rsquo;t one. Hunt painted the "
+             "door of Revelation 3:20 with no way to open it from the outside on purpose: it "
+             "can only be opened from within. The overgrown weeds at the threshold suggest a "
+             "door that has not been opened in a long time. When first exhibited in 1854, "
+             "critics mocked the painting&rsquo;s murky darkness and stiff, almost medieval "
+             "style &mdash; until John Ruskin published a long letter defending it in The "
+             "Times that May, walking readers through its symbolism point by point and ranking "
+             "it among the noblest sacred art of any era. Hunt, one of the "
+             "founders of the Pre-Raphaelite Brotherhood, later painted two further versions "
+             "&mdash; a larger one, completed in 1900, toured the British Empire before "
+             "settling in St Paul&rsquo;s Cathedral, London, and became one of the most widely "
+             "reproduced religious images of the era. This is the original, smaller version, "
+             "still at the Oxford college that commissioned it.",
+        note_es="&#9888; B&uacute;squese el picaporte &mdash; no lo hay. Hunt pint&oacute; la "
+                "puerta de Apocalipsis 3:20 sin ninguna forma de abrirla desde fuera, a "
+                "prop&oacute;sito: solo puede abrirse desde dentro. Las malas hierbas crecidas "
+                "en el umbral sugieren una puerta que no se ha abierto en mucho tiempo. Cuando "
+                "se exhibi&oacute; por primera vez en 1854, la cr&iacute;tica se burl&oacute; "
+                "de la oscuridad turbia del cuadro y de su estilo r&iacute;gido, casi "
+                "medieval &mdash; hasta que John Ruskin public&oacute; en mayo de ese "
+                "a&ntilde;o una larga carta en el Times defendi&eacute;ndolo, explicando su "
+                "simbolismo punto por punto y situ&aacute;ndolo entre el arte sacro m&aacute;s "
+                "noble de cualquier &eacute;poca. Hunt, uno de los fundadores de la Hermandad "
+                "Prerrafaelita, pint&oacute; despu&eacute;s dos versiones m&aacute;s &mdash; "
+                "una m&aacute;s grande, terminada en 1900, gir&oacute; por todo el Imperio "
+                "brit&aacute;nico antes de instalarse en la Catedral de San Pablo, Londres, y "
+                "se convirti&oacute; en una de las im&aacute;genes religiosas m&aacute;s "
+                "reproducidas de su &eacute;poca. Esta es la versi&oacute;n original, m&aacute;s "
+                "peque&ntilde;a, que sigue en el colegio de Oxford que la encarg&oacute;.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Hunt-light-of-the-world.jpeg",
     )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
