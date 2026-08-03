@@ -56,6 +56,7 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('kadosh', 'kadosh', 'קָדוֹשׁ', 'kadosh', "HOLY — and, before it means morally pure, it means SET APART, marked off from ordinary use. The word's first-ever appearance in the Bible is not a person but a TIME: God 'made holy' the seventh day (Genesis 2:3, already on this shelf), before any law exists to keep or break. ⚠ Leviticus 19:2 turns the word into an imperative aimed at an entire people — 'you shall be kadosh, for I, Jehovah your God, am kadosh' — and the thirty-five verses that follow are the word unpacked into practice: not temple ritual but field edges left for the poor, wages paid on time, honest scales. Holiness here is closer to a way of drawing boundaries around ordinary life than to a private religious feeling.", ('Leviticus', 19, 2)),
     ('tohu', 'tohu', 'תֹּהוּ', 'tohu', "FORMLESSNESS, chaos, emptiness — the earth's condition before the first day, 'formless and empty' (tohu va-vohu, Genesis 1:2, its most famous appearance, paired there with its usual companion bohu). ⚠ Isaiah reaches for the same bare word, alone, twice in one chapter (40:17, 23) to describe the nations and their rulers before God — not merely small, but measured against the raw uncreated condition that existed before God spoke order into anything at all. Deuteronomy 32:10 uses it of literal desert waste ('a howling tohu of a wilderness'); 1 Samuel 12:21 of idols themselves, 'tohu that cannot profit or deliver.' A word for the specific nothing that precedes shape.", ('Isaiah', 40, 17)),
     ('ovnayim', 'ovnayim', 'אָבְנָיִם', 'ovnayim', "THE TWO STONES — the potter's wheel, and one of the most informative words in the Hebrew Bible, because it is a DUAL: not 'wheel' but the dual of even, 'stone'. The word is a photograph of the machine — a lower stone turned by hand or foot driving an upper stone on a pivot and socket, with the clay riding on top — and the older versions still hear the number (KJV and ASV both have 'the wheels', plural, at Jeremiah 18:3; modern versions flatten it to one wheel). ⚠ It occurs only TWICE in the Bible, and the other place is startling: Exodus 1:16, where it is the BIRTH-STOOL the Hebrew mothers crouch on and Pharaoh tells the midwives to watch. One dual word for the potter's twin stones and for the two stones of childbirth — both of them the place where a life is given its shape. See the encyclopedia entry on the potter for how the craft was actually done.", ('Jeremiah', 18, 3)),
     ('chomer', 'chomer', 'חֹמֶר', 'chomer', "CLAY — wet, workable potter's clay, and by extension mud or mortar (it is the stuff of the Egyptian brick-quota in Exodus 1:14). ⚠ The whole force of the image in Jeremiah 18 depends on one physical fact about chomer that a reader today may not carry: WET clay can be collapsed and thrown again as often as you like, while FIRED clay can never be reworked, only smashed. That is why chapter 18's marred vessel is reshaped on the wheel and chapter 19's baked flask is broken 'so that it can never be mended again' (19:11) — two sign-acts, back to back, and the difference between them is the kiln. Isaiah turns the same noun into a prayer: 'we are the chomer, and you our potter' (64:8). Job grants the premise from the other side: 'I too was nipped off from the chomer' (33:6).", ('Jeremiah', 18, 4)),
@@ -2435,7 +2436,8 @@ ENCYCLOPEDIA = [
          desc="In Hebrew, Mizraim — also the 'son' of Ham whose name IS the country (10:6,13). Abram goes down in "
               "famine (12:10) and his stay runs the Exodus pattern in miniature: danger, plagues, 'send away,' "
               "wealth out.",
-         refs=[(10, 6), (10, 13), (12, 10), (12, 14), ("Exodus", 1, 1), ("Exodus", 1, 8), ("Exodus", 1, 13), ("Matthew", 2, 13)], videos=[],
+         refs=[(10, 6), (10, 13), (12, 10), (12, 14), ("Exodus", 1, 1), ("Exodus", 1, 8), ("Exodus", 1, 13),
+               ("Leviticus", 19, 34), ("Matthew", 2, 13)], videos=[],
          coords=(30.05, 31.23, 4.0), approx=True,
          modern="Egypt — the Cairo/Nile Delta area"),
     dict(slug="jordan-plain", name="The Plain of the Jordan (Kikkar)", kind="place", aliases=["the plain of the Jordan"],
@@ -6242,6 +6244,11 @@ XREFS = [
     (("John", 1, 23), ("Isaiah", 40, 3), "the fourth Gospel's own quotation of the voice in the wilderness, put in John the Baptist's own mouth rather than the narrator's"),
     (("1 Peter", 1, 24), ("Isaiah", 40, 6), "'all flesh is grass' quoted at length — the fading flower set against 'the word of the Lord endures forever,' Peter's own next line"),
     (("Genesis", 1, 2), ("Isaiah", 40, 17), "⚠ TOHU — the same bare word for the earth's pre-creation formlessness, reached for again to describe what the nations amount to before God"),
+    (("Matthew", 22, 39), ("Leviticus", 19, 18), "'love your neighbor as yourself' quoted directly, and named the second great commandment, inseparable from the first"),
+    (("Matthew", 19, 19), ("Leviticus", 19, 18), "the same command quoted a second time in the same Gospel, to the rich young man, folded into the Decalogue's own list"),
+    (("1 Peter", 1, 16), ("Leviticus", 19, 2), "'you shall be holy, for I am holy' quoted directly, addressed to a scattered gentile church centuries later"),
+    (("Genesis", 9, 4), ("Leviticus", 19, 26), "the blood prohibition repeated — 'flesh with its life, that is, its blood, you shall not eat' echoed almost verbatim"),
+    (("Genesis", 17, 11), ("Leviticus", 19, 23), "ORLAH — the same word for the foreskin cut away at circumcision names a tree's first three years of fruit, both marked off-limits by the same term"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7063,6 +7070,9 @@ CHRON_CHAPTERS = {
     "lev1": dict(era="exodus",
                  when="At Sinai, from the newly-raised tent of meeting, Jehovah calls Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's bird, each an offering that ascends whole in smoke.",
                  clock="c. 1445 BC on the early date — the second year after the Exodus. The tabernacle is finished and filled with glory on the first day of the second year (Exodus 40:17, 34); Leviticus is spoken FROM it, in the roughly one month before Israel breaks camp (Numbers 10:11). The whole book is delivered at Mount Sinai, before the wilderness march resumes."),
+    "lev19": dict(era="exodus",
+                  when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
+                  clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
@@ -10214,6 +10224,17 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "kadosh": ("kadosh",
+        "SANTO — y, antes de significar puro moralmente, significa APARTADO, separado del uso "
+        "ordinario. La primera aparición de la palabra en toda la Biblia no es una persona sino "
+        "un TIEMPO: Dios «santificó» el séptimo día (Génesis 2:3, ya en esta estantería), antes "
+        "de que exista ninguna ley que guardar o quebrantar. ⚠ Levítico 19:2 convierte la palabra "
+        "en un imperativo dirigido a todo un pueblo — «santos seréis, porque santo soy yo, "
+        "Jehová vuestro Dios» — y los treinta y cinco versículos que siguen son la palabra "
+        "desplegada en la práctica: no ritual de templo, sino bordes de campo dejados para el "
+        "pobre, salarios pagados a tiempo, balanzas honestas. La santidad aquí se parece más a "
+        "una manera de trazar límites alrededor de la vida ordinaria que a un sentimiento "
+        "religioso privado."),
     "tohu": ("tohu",
         "AUSENCIA DE FORMA, caos, vacío — la condición de la tierra antes del primer día, «sin forma "
         "y vacía» (tohu va-vohu, Génesis 1:2, su aparición más famosa, emparejada allí con su compañera "
@@ -11925,6 +11946,11 @@ ENCYCLOPEDIA_ES["lebanon"] = ("Líbano",
     "toda su fauna insuficiente como la ofrenda misma — el recurso natural más rico que conocía "
     "el mundo antiguo, llamado insuficiente.")
 
+ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
+    "En hebreo, Mizraim — también el «hijo» de Cam cuyo nombre ES el país (10:6, 13). Abram "
+    "baja allí por el hambre (12:10) y su estancia recorre en miniatura el patrón del Éxodo: "
+    "peligro, plagas, «déjalos ir», riqueza que sale con ellos.")
+
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
 # copyright famous paintings of biblical scenes... embed them right in the same
@@ -11953,6 +11979,49 @@ ENCYCLOPEDIA_ES["lebanon"] = ("Líbano",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev19": [dict(
+        file="millet-the-gleaners.jpg",
+        title="The Gleaners",
+        title_es="Las espigadoras",
+        artist="Jean-François Millet",
+        artist_es="Jean-François Millet",
+        year="1857",
+        location="Musée d'Orsay, Paris",
+        location_es="Museo de Orsay, París",
+        alt="Three peasant women, bent low, gather loose stalks of wheat from a stubbled field "
+            "in the foreground. The nearest woman, in a green cap, stands more upright with a "
+            "sheaf tucked under her arm; the other two are bent nearly double, faces hidden. In "
+            "the hazy distance behind them, a much busier harvest scene unfolds under a pale sky: "
+            "haystacks, a loaded wagon, a crowd of workers and a mounted overseer.",
+        note="⚠ Millet paints the exact transaction Leviticus 19:9-10 legislates: what the main "
+             "harvest leaves behind &mdash; visible in the distant, well-peopled abundance of "
+             "haystacks and a loaded wagon &mdash; belongs, by law rather than charity, to figures "
+             "like the three women bent in the foreground. When Millet exhibited this at the Paris "
+             "Salon of 1857, French critics and the propertied classes reacted with genuine alarm: "
+             "one saw in it an intimation of &ldquo;the scaffolds of 1793,&rdquo; and the painting's "
+             "unusually large canvas &mdash; a size normally reserved for history painting or "
+             "religious subjects &mdash; read to contemporaries as a political claim about rural "
+             "poverty dressed up as a harvest scene. What Millet's own century found radical, this "
+             "chapter had already made law three thousand years earlier: the corner of the field "
+             "and the fallen grain were never the landowner's to withhold in the first place.",
+        note_es="⚠ Millet pinta exactamente la transacción que legisla Levítico 19:9-10: lo que la "
+                "cosecha principal deja atrás &mdash; visible en la abundancia lejana y muy "
+                "poblada de almiares y un carro cargado &mdash; pertenece, por ley y no por "
+                "caridad, a figuras como las tres mujeres encorvadas en primer plano. Cuando "
+                "Millet expuso esto en el Salón de París de 1857, los críticos franceses y las "
+                "clases propietarias reaccionaron con auténtica alarma: uno vio en ello una "
+                "intimación de «los cadalsos de 1793», y el tamaño inusualmente grande del "
+                "lienzo &mdash; un tamaño normalmente reservado para la pintura histórica o "
+                "religiosa &mdash; se leyó por sus contemporáneos como una afirmación política "
+                "sobre la pobreza rural disfrazada de escena de cosecha. Lo que el propio siglo "
+                "de Millet encontró radical, este capítulo ya lo había hecho ley tres mil años "
+                "antes: el rincón del campo y el grano caído nunca fueron del terrateniente para "
+                "retener en primer lugar.",
+        license="Public domain (artist d. 1875) — faithful photographic reproduction of a "
+                "two-dimensional work",
+        source_url="https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-"
+                   "_Google_Art_Project.jpg",
+    )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
         title="Saint John the Baptist Preaching in the Wilderness",
