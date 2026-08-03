@@ -1656,6 +1656,15 @@ DICTIONARY = [
     ("kes", "kes", "\u05db\u05b5\u05bc\u05e1", "kes",
      "THRONE \u2014 occurring EXACTLY ONCE in the entire Hebrew Bible, and disputed even there. \u26a0 Lexicographers are divided on whether kes is a contracted spelling of kisse (the ordinary word for throne) or a scribal slip for nes, BANNER \u2014 the very word the altar in the same verse's neighborhood was just named for ('Jehovah is my nes,' v15). The shelf splits three ways over the sentence it sits in (v16): some read an oath ('the LORD hath sworn'), some read Amalek's hand raised against Jehovah's throne, some leave it a bare unresolved exclamation. A single rare word, and the one verse it appears in still is not settled.",
      ("Exodus", 17, 16)),
+    ("pais", "pais", "παῖς", "pais",
+     "CHILD, or SERVANT — a word Greek never fully separates, and the New Testament's translators have never agreed how to split. ⚠ Acts 3:13 and 3:26 both apply it to Jesus, and KJV renders it 'Son' both times while ASV, NIV and ESV all render it 'servant' both times — RV60 and NVI split the same way in Spanish, Hijo against siervo. 'Servant' connects to Isaiah's Suffering Servant songs, since the Greek Old Testament uses this identical word, pais theou, for that figure (Isaiah 42:1, 52:13); 'Son' reads the same Greek through a more explicit filial theology available by the time these versions were made. Both readings are old, both are defended, and the single Greek word underneath does not settle which one is right.",
+     ("Acts", 3, 13)),
+    ("archegos", "archēgos", "ἀρχηγός", "archēgos",
+     "FOUNDER, ORIGINATOR, PIONEER — one who goes first and opens a way that others then follow, sometimes a chief or leader in the more ordinary sense. ⚠ Acts 3:15 calls Jesus 'the archēgos of life' in the same breath that accuses the crowd of killing him — a founder killed at the founding. The word returns twice in Hebrews, both times of Jesus as the one who goes ahead: 'the archēgos of their salvation' made perfect through suffering (2:10), and 'the archēgos and perfecter of faith' (12:2). Three occurrences, one consistent picture: someone who does not merely lead from the front but opens a road that did not exist before him.",
+     ("Acts", 3, 15)),
+    ("apokatastasis", "apokatastasis", "ἀποκατάστασις", "apokatastasis",
+     "RESTORATION — a single noun, occurring nowhere else in the New Testament, that has carried more theological weight than its one appearance would suggest. ⚠ Acts 3:21 has Peter preach 'the times of apokatastasis of all things' as what heaven is holding Jesus for until it arrives. KJV alone on the English shelf renders it 'restitution,' an older and more legal-sounding word; ASV, NIV and ESV all use some form of 'restore.' The term was later taken up by Origen and others to argue for the eventual restoration of literally everything, including the damned — a doctrine, apocatastasis, the wider church debated for centuries and never formally adopted. Whatever scope Peter himself intended, one noun named something total: not a repair, but everything returned to how it was meant to be.",
+     ("Acts", 3, 21)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5114,6 +5123,31 @@ ENCYCLOPEDIA = [
          refs=[("Exodus", 17, 1), ("Exodus", 17, 8), ("Exodus", 19, 2)],
          coords=(28.85, 33.62, 5.0), approx=True,
          modern="traditionally the Wadi Feiran region, South Sinai, Egypt — disputed", videos=[]),
+    dict(slug="beautiful-gate", name="The Beautiful Gate", kind="place",
+         aliases=["Beautiful Gate", "the Gate Beautiful"],
+         desc="A gate of the Jerusalem temple where a man lame from birth was healed by Peter and John (Acts "
+              "3:2-10) — named only here in the New Testament. ⚠ Its exact identity among the temple's several "
+              "gates is not fixed by the text; the strongest ancient candidate is the great bronze Nicanor Gate "
+              "on the temple's eastern side, between the Court of the Gentiles and the Court of Women, which "
+              "Josephus rated more valuable than the gold- and silver-plated gates around it. Other proposals "
+              "include the Shushan Gate (the temple's eastern entrance, facing the Mount of Olives) or one of "
+              "the Huldah Gates on the south. None is certain.",
+         refs=[("Acts", 3, 2), ("Acts", 3, 10)],
+         coords=(31.7784, 35.2354, 0.05), approx=True,
+         modern="Temple Mount, Jerusalem — exact gate disputed", videos=[]),
+    dict(slug="solomons-portico", name="Solomon's Portico", kind="place",
+         aliases=["Solomon's Portico", "Solomon's Porch", "Solomon's Colonnade"],
+         desc="A covered colonnade along the eastern wall of the Jerusalem temple, where the crowd gathers "
+              "after the healing at the Beautiful Gate (Acts 3:11) and where the earliest church later "
+              "assembles openly (Acts 5:12). ⚠ Jewish tradition traced the portico back to Solomon's original "
+              "temple, though the structure standing in the first century was Herod's, built roughly a "
+              "thousand years later on what was believed to be the same footprint — one of the few parts of "
+              "the temple complex Herod's rebuilding is said to have left largely alone. It is also where "
+              "Jesus himself walks and is questioned during the winter Feast of Dedication (John 10:22-23), "
+              "the only other New Testament scene set there.",
+         refs=[("Acts", 3, 11), ("Acts", 5, 12), ("John", 10, 23)],
+         coords=(31.7787, 35.2358, 0.05), approx=True,
+         modern="eastern Temple Mount, Jerusalem", videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -6388,6 +6422,9 @@ XREFS = [
     (("Exodus", 20, 9), ("Exodus", 16, 26), "'six days you shall labor... but the seventh day is a sabbath' — the Decalogue's version of a rest the people had already lived once, six weeks earlier, over bread that would not be there to gather"),
     (("Exodus", 17, 3), ("Exodus", 16, 2), "LUN, 'grumble' — the identical root falling twice in two chapters; a people fed daily bread from heaven is thirsty and reaching for the same word within days"),
     (("Exodus", 17, 14), ("Deuteronomy", 25, 17), "the command to blot out Amalek's memory, turned from a private word to Moses into formal, standing law: 'remember what Amalek did to you... do not forget'"),
+    (("Acts", 3, 21), ("Acts", 1, 6), "APOKATASTASIS — chapter 1's note on Jesus declining to date 'the restoration of the kingdom to Israel' said Peter would preach it here; this verse is that promise cashed"),
+    (("Acts", 3, 22), ("Deuteronomy", 18, 15), "Peter's citation of the prophet like Moses, quoted directly rather than merely alluded to — applied to Jesus without argument"),
+    (("Acts", 3, 13), ("Isaiah", 52, 13), "PAIS — the same Greek word (in the Septuagint) for God's servant, applied here to Jesus at the moment he is said to be glorified, echoing the servant song's own opening verb"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7138,6 +7175,9 @@ CHRON_CHAPTERS = {
     "acts1": dict(era="apostolic",
         when="Forty days of appearances end on the Mount of Olives; the ascension, the return to the upper room, and the choosing of a twelfth apostle to replace Judas.",
         clock="c. AD 30–33, in the ten days between the ascension and Pentecost — the shortest measured gap in the New Testament, and the only stretch in which the church exists and does nothing but wait. The year turns on the date of the crucifixion, for which AD 30 and AD 33 are the two serious candidates; this library reports the pair and does not choose."),
+    "acts3": dict(era="apostolic",
+        when="An ordinary afternoon at the temple, some time after Pentecost — a man lame from birth is healed at the Beautiful Gate, and Peter preaches a second time to the crowd it draws, in Solomon's Portico.",
+        clock="Undated by the text itself, beyond falling after chapter 2's Pentecost — days, weeks, or months later is all left open; the early apostolic community is shown still keeping the temple's own hours of prayer."),
     "gen1":  dict(era="creation",
                   when="The creation week — 'day one' through the seventh day.",
                   clock="The chapter keeps its own clock: seven days. Every date below hangs from them."),
@@ -11734,6 +11774,35 @@ DICTIONARY_ES = {
         "ingl\u00e9s a\u00f1ade una tercera v\u00eda \u2014 KJV y ASV leen ah\u00ed un juramento (\u00abel Se\u00f1or ha jurado\u00bb), siguiendo una "
         "tradici\u00f3n interpretativa antigua en vez del texto conson\u00e1ntico desnudo. Una sola palabra rara, y el "
         "\u00fanico vers\u00edculo donde aparece sigue sin zanjarse."),
+    "pais": ("pais", "NI\u00d1O, o SIERVO \u2014 una palabra que el griego nunca separa del todo, y que los "
+        "traductores del Nuevo Testamento nunca han logrado repartir de la misma manera. \u26a0 Hechos "
+        "3:13 y 3:26 aplican la palabra a Jes\u00fas las dos veces, y RV60 traduce \u00abHijo\u00bb las dos veces "
+        "mientras que NVI traduce \u00absiervo\u00bb las dos veces \u2014 KJV, ASV, NIV y ESV se dividen igual en "
+        "ingl\u00e9s, Son contra servant. \u00abSiervo\u00bb conecta con los c\u00e1nticos del Siervo Sufriente de "
+        "Isa\u00edas, ya que el Antiguo Testamento griego usa esta misma palabra, pais theou, para esa "
+        "figura (Isa\u00edas 42:1, 52:13); \u00abHijo\u00bb lee el mismo griego a trav\u00e9s de una teolog\u00eda filial "
+        "m\u00e1s expl\u00edcita, disponible para cuando se hicieron estas versiones. Las dos lecturas son "
+        "antiguas, las dos se defienden, y la sola palabra griega detr\u00e1s no decide cu\u00e1l es la "
+        "correcta."),
+    "archegos": ("arch\u0113g\u00f3s", "FUNDADOR, INICIADOR, PIONERO \u2014 el que va primero y abre un camino que "
+        "otros siguen despu\u00e9s, a veces tambi\u00e9n un jefe o l\u00edder en el sentido m\u00e1s corriente. \u26a0 "
+        "Hechos 3:15 llama a Jes\u00fas \u00abel arch\u0113g\u00f3s de la vida\u00bb en el mismo aliento en que acusa a la "
+        "multitud de haberlo matado \u2014 un fundador matado en el momento mismo de fundar. La palabra "
+        "reaparece dos veces en Hebreos, las dos de Jes\u00fas como el que va delante: \u00abel arch\u0113g\u00f3s de "
+        "su salvaci\u00f3n\u00bb hecho perfecto por el sufrimiento (2:10), y \u00abel arch\u0113g\u00f3s y consumador de la "
+        "fe\u00bb (12:2). Tres apariciones, una sola imagen: alguien que no solo lidera desde el frente, "
+        "sino que abre un camino que antes de \u00e9l no exist\u00eda."),
+    "apokatastasis": ("apokat\u00e1stasis", "RESTAURACI\u00d3N \u2014 un solo sustantivo, que no vuelve a aparecer "
+        "en ninguna otra parte del Nuevo Testamento, y que ha cargado m\u00e1s peso teol\u00f3gico del que su "
+        "\u00fanica aparici\u00f3n sugerir\u00eda. \u26a0 Hechos 3:21 tiene a Pedro predicando \u00ablos tiempos de la "
+        "apokat\u00e1stasis de todas las cosas\u00bb como aquello para lo que el cielo retiene a Jes\u00fas hasta "
+        "que llegue. RV60 y NVI coinciden en \u00abrestauraci\u00f3n\u00bb; en el estante ingl\u00e9s, KJV queda solo "
+        "con \u00abrestitution\u00bb, una palabra m\u00e1s antigua y de sabor m\u00e1s legal, mientras que ASV, NIV y "
+        "ESV usan alguna forma de \u00abrestore\u00bb. El t\u00e9rmino lo retomar\u00eda despu\u00e9s Or\u00edgenes para "
+        "argumentar la restauraci\u00f3n final de literalmente todo, incluidos los condenados \u2014 una "
+        "doctrina, apocat\u00e1stasis, que la iglesia en general discuti\u00f3 durante siglos y nunca adopt\u00f3 "
+        "formalmente. Fuera cual fuera el alcance que Pedro mismo pretend\u00eda, un solo sustantivo "
+        "nombraba algo total: no una reparaci\u00f3n, sino todo devuelto a como estaba destinado a ser."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -11965,6 +12034,22 @@ ENCYCLOPEDIA_ES = {
         "no se ha recuperado, como la mayoría del itinerario del desierto — la tradición lo sitúa en la región "
         "del Wadi Feirán, en el sur de la península del Sinaí, un corredor fértil de oasis que explicaría tanto "
         "una formación rocosa cercana como la presencia de Amalec defendiéndolo."),
+    "beautiful-gate": ("La puerta la Hermosa", "Una puerta del templo de Jerusalén donde Pedro y Juan sanaron a "
+        "un hombre cojo de nacimiento (Hechos 3:2-10) — nombrada solo aquí en todo el Nuevo Testamento. ⚠ Su "
+        "identidad exacta entre las varias puertas del templo no la fija el texto; la candidata antigua más "
+        "fuerte es la gran puerta de bronce de Nicanor, en el lado oriental del templo, entre el atrio de los "
+        "gentiles y el atrio de las mujeres, que Josefo consideraba más valiosa que las puertas chapadas en "
+        "oro y plata que la rodeaban. Otras propuestas incluyen la puerta de Susán (la entrada oriental del "
+        "templo, frente al monte de los Olivos) o una de las puertas de Hulda, al sur. Ninguna es segura."),
+    "solomons-portico": ("El Pórtico de Salomón", "Una columnata cubierta a lo largo del muro oriental del "
+        "templo de Jerusalén, donde se reúne la multitud tras la sanidad en la puerta la Hermosa (Hechos "
+        "3:11) y donde la iglesia primitiva se congregará después abiertamente (Hechos 5:12). ⚠ La tradición "
+        "judía remontaba el pórtico al templo original de Salomón, aunque la estructura en pie en el siglo I "
+        "era la de Herodes, construida casi mil años después sobre lo que se creía la misma huella — una de "
+        "las pocas partes del complejo del templo que la reconstrucción de Herodes, según se dice, dejó "
+        "prácticamente intacta. Es también donde el propio Jesús camina y es interrogado durante la fiesta "
+        "de invierno de la Dedicación (Juan 10:22-23), la única otra escena del Nuevo Testamento ambientada "
+        "allí."),
     "sin-wilderness": ("Desierto de Sin", "Un tramo de desierto en la ruta de los israelitas entre ELIM y el Sinaí "
         "(Éxodo 16:1), alcanzado el día quince del segundo mes después de salir de Egipto — donde el pueblo "
         "murmura por primera vez por comida y recibe codornices y maná. ⚠ Su nombre hebreo, Sin, es un topónimo de "
@@ -12330,6 +12415,49 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "acts3": [dict(
+        file="acts3-poussin-healing-lame-man.jpg",
+        title="Saints Peter and John Healing the Lame Man",
+        title_es="San Pedro y san Juan sanan al cojo",
+        artist="Nicolas Poussin",
+        artist_es="Nicolas Poussin",
+        year="1655",
+        location="The Metropolitan Museum of Art, New York",
+        location_es="Museo Metropolitano de Arte, Nueva York",
+        alt="An oil painting staged on a grand classical stairway between two massive stone "
+            "columns. On a landing at the top of the steps, a bearded man in an orange robe "
+            "reaches down with his right hand, fingers pointing, toward a shirtless, seated man "
+            "who reaches back up at him with both arms outstretched. A second robed figure in "
+            "green and lilac stands just behind, also reaching down. Below, on the lower steps, "
+            "beggars in the foreground turn toward the scene — a barefoot man beckoning, a "
+            "kneeling woman with a child, an old man with white hair and a staff. Other "
+            "onlookers in colorful robes climb or descend the stairs around them. Beyond the "
+            "columns, a blue sky with scattered clouds opens over distant classical buildings.",
+        note="⚠ Poussin sets the temple as Roman civic architecture &mdash; fluted columns, "
+             "coffered stone, a monumental stair &mdash; nothing here is first-century Jewish "
+             "temple construction, and Poussin knew that; the setting is a classicist's idea of "
+             "grandeur, not an attempt at archaeology. The composition stages the whole chapter's "
+             "argument visually: Peter, on the upper step, gestures with the exact motion of "
+             "someone declining something offered to him even as his other hand reaches to lift "
+             "the beggar &mdash; not our own power, not our piety. The healed man's whole body "
+             "leans up and out toward that hand, still in the position he was found in, not yet "
+             "risen. Other beggars fill the lower steps, unhealed, watching &mdash; a crowd the "
+             "single miracle does not clear.",
+        note_es="⚠ Poussin viste el templo de arquitectura c&iacute;vica romana &mdash; columnas "
+                "acanaladas, piedra artesonada, una escalinata monumental &mdash; nada aqu&iacute; "
+                "es construcci&oacute;n jud&iacute;a del siglo I, y Poussin lo sab&iacute;a; el "
+                "escenario es la idea de grandeza de un clasicista, no un intento de "
+                "arqueolog&iacute;a. La composici&oacute;n escenifica visualmente el argumento "
+                "entero del cap&iacute;tulo: Pedro, en el escal&oacute;n superior, hace el gesto "
+                "exacto de quien declina algo que le ofrecen mientras con la otra mano se "
+                "inclina a levantar al mendigo &mdash; no nuestro poder, no nuestra piedad. Todo "
+                "el cuerpo del hombre sanado se inclina hacia esa mano, todav&iacute;a en la "
+                "posici&oacute;n en que fue hallado, a&uacute;n sin levantarse. Otros mendigos "
+                "llenan los escalones inferiores, sin sanar, observando &mdash; una multitud que "
+                "un solo milagro no vac&iacute;a.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:Saints_Peter_and_John_Healing_the_Lame_Man_MET_DP340180.jpg",
+    )],
     "exod17": [dict(
         file="exod17-victory-o-lord-millais.jpg",
         title="Victory O Lord!",
