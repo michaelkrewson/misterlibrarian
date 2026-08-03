@@ -378,6 +378,8 @@ DICTIONARY = [
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
     ("cherem", "cherem", "חֵרֶם", "vayacharimu",
      "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood.", ("Judges", 1, 17)),
+    ("sukkah", "sukkah (pl. sukkot)", "סֻכָּה", "sukkah",
+     "A BOOTH — a light, temporary shelter woven from branches, as opposed to an OHEL (tent, sturdier and portable) or a permanent house. It is the word behind SUKKOT, the autumn Feast of Booths, when Israel is commanded to live for seven days in shelters like these on purpose, 'so that your generations may know that I made the people of Israel dwell in booths when I brought them out of the land of Egypt' (Leviticus 23:42-43). ⚠ Psalm 27:5 uses it of God himself as shelter — 'he will hide me in his sukkah in the day of trouble' — the most fragile-sounding structure in the Hebrew vocabulary of shelter, given to the one hiding-place the psalm treats as reliable. Jacob names a place SUKKOT after building shelters there for his livestock (Genesis 33:17), and Jonah builds one to sit under and watch Nineveh (Jonah 4:5).", ("Psalms", 27, 5)),
     ("mas", "mas", "מַס", "la-mas",
      "FORCED LABOUR, corvée — conscripted, unpaid work owed to a ruler or state; a levy paid in bodies rather than money. \u26a0\ufe0f The word carries a bitter history in the Bible. It is what EGYPT imposed on Israel — 'they set taskmasters over them… to afflict them with their burdens' (Exodus 1:11 uses the cognate) — the very thing the exodus was a rescue FROM. So when Judges 1 says that, once Israel 'grew strong,' the tribes put the surviving Canaanites to MAS rather than driving them out (1:28, 30, 33, 35), the irony is deliberate and heavy: a people redeemed from forced labour imposing it, and doing so as a COMPROMISE with the command they were failing to keep. Solomon will later levy the same MAS on the remaining Canaanites (1 Kings 9:21) — and, disastrously, on Israel itself, which splits the kingdom. KJV 'tribute'; ESV/NIV 'forced labor.'", ("Judges", 1, 28)),
     ("hagah", "hagah", "הָגָה", "ve-hagita",
@@ -1061,7 +1063,7 @@ DICTIONARY = [
     ("taraf", "taraf", "טָרַף", "taraf",
      "TO TEAR, rend — what a predator does to a carcass. The noun terefah is the torn animal that a shepherd had to account for (Genesis 31:39; Exodus 22:12) and that Israelites were forbidden to eat, and Jacob's own sons use the verb when they present the bloodied coat: 'a wild beast has TORN him' (Genesis 37:33). ⚠ Amos gives it to a temper: 'his anger TORE without ceasing' (1:11), the animal register of the book's opening roar handed to a man's grudge. Edom's rage is described as a beast eating.", ("Amos", 1, 11)),
     ("teruah", "teru'ah", "תְּרוּעָה", "teru'ah",
-     "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire.", ("Amos", 1, 14)),
+     "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire. Psalm 27:6 turns the same word toward worship — 'sacrifices with a teru'ah' — the identical noise that felled a wall now offered at an altar.", ("Amos", 1, 14)),
     ("zadon", "zadon", "זָדוֹן", "zadon",
      "INSOLENCE, presumptuous arrogance — not ordinary pride but the overreaching kind that thinks itself untouchable. From the root zid, 'to boil up, act presumptuously' — the same root behind the 'high-handed' (bezadon) deliberate sin that has no sacrifice (Numbers 15:30) and the 'proud/raging' waters that would have swept the psalmist away (Psalm 124:5). ⚠ It is Edom's one named sin in the FIRST half of Obadiah: 'the ZADON of your heart has deceived you' (1:3) — a security so complete, up in the rock, that it has curdled into contempt. Distinct from the ordinary word for pride (ga'avah); the shelf mostly levels it to 'pride' (KJV/NIV), but the word is sharper.", ("Obadiah", 1, 3)),
     ("gemul", "gemul", "גְּמוּל", "gemul",
@@ -4031,7 +4033,7 @@ ENCYCLOPEDIA = [
               "still calls him 'a man after Jehovah's own heart' (1 Samuel 13:14), a phrase about God's CHOICE "
               "rather than David's record. The covenant of 2 Samuel 7, promising his throne forever, is the root "
               "of Israel's messianic hope, which is why the Gospels open by calling Jesus 'son of David.'",
-         refs=[("Romans", 1, 3), ("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1), ("2 Chronicles", 1, 1), ("Matthew", 1, 6)], videos=[]),
+         refs=[("Romans", 1, 3), ("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1), ("2 Chronicles", 1, 1), ("Matthew", 1, 6), ("Psalms", 27, 1)], videos=[]),
     dict(slug="saul-king", name="Saul (Israel's first king)", kind="person", aliases=["Saul"],
          desc="Israel's FIRST king — a tall young Benjaminite sent to look for lost donkeys who came home anointed "
               "(1 Samuel 9-10). He is the answer to a demand the people made and were warned about: 'give us a king "
@@ -6254,6 +6256,8 @@ XREFS = [
     (("Hebrews", 11, 30), ("Joshua", 6, 20), "'by faith the walls of Jericho fell, after being encircled for seven days' — naming the six days of silent marching, not the shout itself, as what was believed"),
     (("Hebrews", 11, 31), ("Joshua", 6, 25), "'by faith Rahab the prostitute did not perish' — the same woman James cites for works, from the opposite side of the same argument"),
     (("Matthew", 1, 5), ("Joshua", 6, 25), "the Canaanite prostitute Joshua kept alive named directly in Jesus' own genealogy, as the mother of Boaz"),
+    (("Psalms", 27, 6), ("Joshua", 6, 20), "the same word, teru'ah — the shout that felled Jericho's wall, here offered at an altar instead"),
+    (("Psalms", 27, 1), ("Matthew", 1, 21), "'my salvation' is yishi, built on the same root (yasha) as the name the angel gives Mary's son: 'you shall call his name Jesus, for he will save his people'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -10245,6 +10249,40 @@ DICTIONARY_ES = {
         "⚠ Esta traducción ni suaviza la palabra ni la explica para hacerla desaparecer: la "
         "vierte tal como es y deja el peso moral en la nota, la misma postura que adopta con "
         "las cifras del éxodo y del diluvio."),
+    "teruah": ("teru'ah",
+        "UN GRITO o TOQUE — el ruido colectivo hecho por una multitud o por un cuerno de "
+        "carnero. Es el grito de guerra de un ej&eacute;rcito (Josu&eacute; 6:5, 20, en los "
+        "muros de Jeric&oacute;), la aclamaci&oacute;n que recibi&oacute; al arca (1 Samuel "
+        "4:5), y el sonido que da nombre a una fiesta: Lev&iacute;tico 23:24 llama al primer "
+        "d&iacute;a del s&eacute;ptimo mes un &laquo;memorial de teru'ah&raquo;, por lo que el "
+        "a&ntilde;o nuevo jud&iacute;o es un d&iacute;a de toques de shofar. ⚠ Am&oacute;s la "
+        "usa como el ruido dentro de una ciudad en llamas (1:14) &mdash; el &uacute;nico "
+        "or&aacute;culo de los ocho que se acelera hasta el sonido, el grito de guerra y el "
+        "torbellino sobre el fuego. El Salmo 27:6 vuelve la misma palabra hacia la "
+        "adoraci&oacute;n &mdash; &laquo;sacrificios con un teru'ah&raquo; &mdash; el mismo "
+        "ruido que derrib&oacute; un muro, ahora ofrecido en un altar."),
+    "yasha": ("yasha",
+        "SALVAR, librar, sacar a un lugar amplio (lo opuesto de tsar, &laquo;estrecho, "
+        "acorralado&raquo;). Es la ra&iacute;z detr&aacute;s del propio nombre de OSEAS "
+        "(Hoshea, &laquo;&eacute;l salva&raquo;), y detr&aacute;s de Josu&eacute;, Isa&iacute;as "
+        "y Jes&uacute;s. ⚠ Oseas 1:7 lo convierte en un juego de palabras discreto: el profeta "
+        "llamado Salvaci&oacute;n anuncia &laquo;los SALVAR&eacute; por Jehov&aacute; su Dios "
+        "&mdash; y no por arco, ni espada, ni guerra&raquo;. El verbo es el est&aacute;ndar "
+        "para que Dios rescate a su pueblo; el punto de Oseas est&aacute; en el instrumento."),
+    "sukkah": ("sukk&aacute; (pl. sukkot)",
+        "UNA CABA&Ntilde;A — un refugio ligero y temporal tejido con ramas, a diferencia de un "
+        "OHEL (tienda, m&aacute;s s&oacute;lida y port&aacute;til) o una casa permanente. Es la "
+        "palabra detr&aacute;s de SUCOT, la fiesta oto&ntilde;al de las Caba&ntilde;as, cuando "
+        "se ordena a Israel vivir siete d&iacute;as en refugios como estos a prop&oacute;sito, "
+        "&laquo;para que sepan vuestros descendientes que en caba&ntilde;as hice yo habitar a "
+        "los hijos de Israel cuando los saqu&eacute; de la tierra de Egipto&raquo; (L&eacute;vitico "
+        "23:42-43). ⚠ El Salmo 27:5 lo usa de Dios mismo como refugio &mdash; &laquo;me "
+        "esconder&aacute; en su sukk&aacute; en el d&iacute;a de la angustia&raquo; &mdash; la "
+        "estructura de aspecto m&aacute;s fr&aacute;gil en el vocabulario hebreo del refugio, "
+        "dada al &uacute;nico escondite que el salmo trata como fiable. Jacob nombra un lugar "
+        "SUCOT despu&eacute;s de construir all&iacute; refugios para su ganado (G&eacute;nesis "
+        "33:17), y Jon&aacute;s construye uno para sentarse debajo y observar N&iacute;nive "
+        "(Jon&aacute;s 4:5)."),
     "kadosh": ("kadosh",
         "SANTO — y, antes de significar puro moralmente, significa APARTADO, separado del uso "
         "ordinario. La primera aparición de la palabra en toda la Biblia no es una persona sino "
@@ -12085,6 +12123,47 @@ CHAPTER_ART = {
         license="CC BY 4.0 (Wellcome Collection)",
         source_url="https://commons.wikimedia.org/wiki/File:Rahab_hangs_the_scarlet_cord_from_"
                    "her_window._Autotype_after_Wellcome_V0034410.jpg",
+    )],
+    "psalms27": [dict(
+        file="matson-sukkah-booth-1939.jpg",
+        title="Feast of Tabernacles: Avram's booth",
+        title_es="Fiesta de los Tabernáculos: la cabaña de Avram",
+        artist="American Colony / Matson Collection",
+        artist_es="Colonia Americana / Colección Matson",
+        year="1939",
+        location="Jerusalem",
+        location_es="Jerusalén",
+        alt="A black-and-white photograph of an elderly bearded man in a striped headwrap and "
+            "wool jacket, seated in the doorway of a temporary booth. Above him the roof is "
+            "loosely woven branches, letting dappled light filter through in bright patches "
+            "across the dim interior. A second man sits further back at a cloth-covered table "
+            "set with dishes and a bottle. A wooden support post stands at the left edge of the "
+            "frame.",
+        note="&#9888; This is not a scene from Psalm 27 &mdash; the psalm never mentions the "
+             "festival, only borrows its word. It is a 1939 photograph of an actual "
+             "<em>sukkah</em>, a booth built for Sukkot, the autumn Feast of Booths (Leviticus "
+             "23:42-43), taken by the American Colony photographers in Jerusalem. The loosely "
+             "woven roof, letting light and weather through by design, is the whole point of "
+             "the structure &mdash; a sukkah is deliberately NOT weatherproof, which is exactly "
+             "what makes v5's image work: &lsquo;he will hide me in his sukkah in the day of "
+             "trouble&rsquo; is not a claim that the shelter is strong. It is the flimsiest "
+             "roof in the Hebrew vocabulary of shelter, made adequate only because of who is "
+             "keeping watch under it.",
+        note_es="&#9888; Esta no es una escena del Salmo 27 &mdash; el salmo nunca menciona la "
+                "fiesta, solo toma prestada su palabra. Es una fotograf&iacute;a de 1939 de una "
+                "<em>sukk&aacute;</em> real, una caba&ntilde;a construida para Sucot, la fiesta "
+                "oto&ntilde;al de las Caba&ntilde;as (Lev&iacute;tico 23:42-43), tomada por los "
+                "fot&oacute;grafos de la Colonia Americana en Jerusal&eacute;n. El techo tejido "
+                "sin apretar, que deja pasar la luz y la intemperie a prop&oacute;sito, es "
+                "precisamente el punto de la estructura &mdash; una sukk&aacute; "
+                "deliberadamente NO es impermeable, que es justo lo que hace funcionar la "
+                "imagen del v. 5: &laquo;me esconder&aacute; en su sukk&aacute; en el d&iacute;a "
+                "de la angustia&raquo; no afirma que el refugio sea fuerte. Es el techo m&aacute;s "
+                "end&eacute;ble del vocabulario hebreo del refugio, hecho suficiente solo por "
+                "qui&eacute;n vigila debajo de &eacute;l.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Feast_of_Tabernacle._Avram%27s_"
+                   "booth._Yehia_seated_in_door_of_tabernacle_booth_LOC_matpc.19879.jpg",
     )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
