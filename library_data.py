@@ -1742,9 +1742,11 @@ ENCYCLOPEDIA = [
     {
         "slug": "jericho", "name": "Jericho", "kind": "place", "aliases": ["Jericho"],
         "desc": "A city in the Jordan valley just north of the Dead Sea, and one of the oldest continuously occupied settlements known anywhere \u2014 excavation has found a stone tower and wall at Tell es-Sultan dating to roughly 8000 BC, several thousand years before writing. It sits about 250 metres BELOW sea level, watered by a spring, which is why a town is there at all in that heat. \u26a0 Hebrews 11:30 credits the fall of its walls to faith; the archaeology of the Late Bronze Age destruction and its date has been argued over for a century and is not settled here. Jericho returns in the Gospels as the city Jesus passes through for Zacchaeus and for blind Bartimaeus, and as the destination of the road in the parable of the good Samaritan.",
-        "refs": [["Hebrews", 11, 30]],
+        "refs": [["Joshua", 6, 1], ["Joshua", 6, 20], ["Hebrews", 11, 30]],
         "coords": [31.8700, 35.4440, 0.05],
         "modern": "Ariha / Tell es-Sultan, West Bank",
+        "videos": [("#1 Evidence for Israel's Conquest of the Promised Land...other than the Bible!",
+                    "https://www.youtube.com/watch?v=mLxE3JmHV2U")],
     },
     {
         "slug": "euodia-syntyche", "name": "Euodia and Syntyche", "kind": "people",
@@ -2241,7 +2243,7 @@ ENCYCLOPEDIA = [
          refs=[("Matthew", 1, 16), ("Matthew", 1, 19), ("Matthew", 1, 20), ("Matthew", 1, 24), ("Matthew", 2, 13)], videos=[]),
     dict(slug="rahab", name="Rahab", kind="person", aliases=["Rahab"],
          desc="The prostitute of Jericho who hid Joshua's two spies and let them down by a scarlet cord from her window in the city wall, in exchange for the promise that she and her household would be spared when the city fell (Joshua 2; 6:22-25). ⚠ Matthew 1:5 sets her in the genealogy of the Messiah as the mother of Boaz — a Canaanite and a harlot in the line of David and of Christ, one of the four irregular women Matthew names on purpose. The New Testament makes her a heroine twice over: 'by faith Rahab the prostitute did not perish' (Hebrews 11:31), and 'was she not justified by works when she received the messengers?' (James 2:25) — cited by the letter that argues faith and works from opposite directions. The scarlet cord was read by early Christian writers as a figure of the blood that saves.",
-         refs=[("Matthew", 1, 5)], videos=[]),
+         refs=[("Joshua", 6, 17), ("Joshua", 6, 25), ("Matthew", 1, 5)], videos=[]),
     dict(slug="mount-of-olives", name="Mount of Olives", kind="place", aliases=["Olivet", "Mount of Olives"],
          coords=(31.7783, 35.2464, 0.04),
          desc="The limestone ridge east of Jerusalem, across the Kidron valley, rising a little above the temple mount and facing it — so that anyone standing on it looks down into the city. Named for the olive groves on its slopes; Gethsemane lies at its foot. Luke calls it by a place-name form, Elaiōn, 'Olivet', and adds that it is 'a sabbath day's journey' from Jerusalem — about two thousand cubits, two-thirds of a mile — which is the only time the Bible uses that measure. It is where David fled weeping from Absalom, where Zechariah 14:4 says Jehovah's feet will stand, where Jesus taught, wept over the city, and was arrested, and where Acts places the ascension.",
@@ -6249,6 +6251,9 @@ XREFS = [
     (("1 Peter", 1, 16), ("Leviticus", 19, 2), "'you shall be holy, for I am holy' quoted directly, addressed to a scattered gentile church centuries later"),
     (("Genesis", 9, 4), ("Leviticus", 19, 26), "the blood prohibition repeated — 'flesh with its life, that is, its blood, you shall not eat' echoed almost verbatim"),
     (("Genesis", 17, 11), ("Leviticus", 19, 23), "ORLAH — the same word for the foreskin cut away at circumcision names a tree's first three years of fruit, both marked off-limits by the same term"),
+    (("Hebrews", 11, 30), ("Joshua", 6, 20), "'by faith the walls of Jericho fell, after being encircled for seven days' — naming the six days of silent marching, not the shout itself, as what was believed"),
+    (("Hebrews", 11, 31), ("Joshua", 6, 25), "'by faith Rahab the prostitute did not perish' — the same woman James cites for works, from the opposite side of the same argument"),
+    (("Matthew", 1, 5), ("Joshua", 6, 25), "the Canaanite prostitute Joshua kept alive named directly in Jesus' own genealogy, as the mother of Boaz"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -6291,10 +6296,11 @@ VIDEO_QUEUE = [
     #  — PLACED 2026-07-16 on the EXODUS-PHARAOH encyclopedia entry (Exodus 1),
     #  per Michael's call to lead with Joel Kramer's early-date identification.
     #  Full research captured in research/exodus_pharaoh_early_date.md for later chapters.)
-    ("#1 Evidence for Israel's Conquest of the Promised Land...other than the Bible!",
-     "https://www.youtube.com/watch?v=mLxE3JmHV2U",
-     "Joshua (the conquest)",
-     "Extra-biblical evidence for the conquest of Canaan."),
+    # ("#1 Evidence for Israel's Conquest of the Promised Land...other than the Bible!"
+    #  — PLACED 2026-08-03 on the JERICHO encyclopedia entry (Joshua 6), where the
+    #  archaeology of the Late Bronze Age destruction was already flagged as an
+    #  open, century-old debate — this video's extra-biblical conquest evidence
+    #  extends that discussion directly.)
     ("“The Problem” of Joshua's Ai...SOLVED!",
      "https://www.youtube.com/watch?v=lK7GQxkEkKk",
      "Joshua 7-8 (the battle of Ai)",
@@ -7073,6 +7079,9 @@ CHRON_CHAPTERS = {
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
+    "josh6": dict(era="exodus",
+                  when="Forty years after the Exodus, Israel crosses the Jordan into a fortified land its own generation of scouts once called impossible: Jericho, the first city, falls not to siege but to seven days of silent marching and a shout.",
+                  clock="⚠ One of the most contested dates in Old Testament chronology. The EARLY date (c. 1406 BC) follows 1 Kings 6:1's '480 years before Solomon's fourth year' and the internal count of Judges; the LATE date (c. 1230–1210 BC) follows the Merneptah Stele — the first extra-biblical mention of 'Israel' (c. 1208 BC), describing a people already settled in Canaan — and destruction layers at several Late Bronze Age sites. ⚠ Jericho itself sits at the center of the dispute: excavations (Garstang in the 1930s, Kenyon in the 1950s) disagree on whether any Late Bronze Age city wall existed there to fall at either date. Both positions are reported in this chapter's notes; neither is resolved."),
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
@@ -10224,6 +10233,18 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "cherem": ("cherem",
+        "EL ANATEMA — algo CONSAGRADO a Dios al colocarlo completamente fuera del uso humano, "
+        "lo que en la guerra significaba destruido en vez de saqueado. De CHARAM, cerrar, "
+        "sellar, consagrar de forma irreversible (la misma raíz da el árabe HARAM, "
+        "«prohibido/sagrado»). Es el concepto más difícil de los relatos de conquista: ciertas "
+        "ciudades enemigas se ponen bajo el CHEREM, y sus bienes y a menudo su gente no se toman "
+        "como botín sino que se exterminan como ofrenda que solo Dios posee. Jueces 1:17 (aún no "
+        "en esta estantería) tiene a Judá y Simeón «poniendo a Sefat bajo anatema» y "
+        "renombrándola HORMA — «Destrucción», la misma raíz — congelando el acto en el mapa. "
+        "⚠ Esta traducción ni suaviza la palabra ni la explica para hacerla desaparecer: la "
+        "vierte tal como es y deja el peso moral en la nota, la misma postura que adopta con "
+        "las cifras del éxodo y del diluvio."),
     "kadosh": ("kadosh",
         "SANTO — y, antes de significar puro moralmente, significa APARTADO, separado del uso "
         "ordinario. La primera aparición de la palabra en toda la Biblia no es una persona sino "
@@ -12021,6 +12042,49 @@ CHAPTER_ART = {
                 "two-dimensional work",
         source_url="https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Gleaners_-"
                    "_Google_Art_Project.jpg",
+    )],
+    "josh6": [dict(
+        file="shields-rahab-scarlet-cord.jpg",
+        title="Rahab",
+        title_es="Rahab",
+        artist="Frederic Shields",
+        artist_es="Frederic Shields",
+        year="1877",
+        location="Wellcome Collection, London",
+        location_es="Wellcome Collection, Londres",
+        alt="A monochrome pen-and-ink drawing of a woman in Middle Eastern dress leaning out "
+            "through a narrow stone window, one forearm braced on the sill, gazing off to the "
+            "side with an anxious expression. A thick knotted cord is tied to the window frame "
+            "and hangs down the outside wall past a spray of flowering plants below. Beneath the "
+            "image, lettering reads ‘RAHAB’ above a quoted verse from Psalm 119.",
+        note="Shields does not draw the spies' escape (Joshua 2) or the collapse of the walls "
+             "(Joshua 6) &mdash; he isolates the one object both chapters turn on: the cord "
+             "itself, still tied where Rahab left it, in a house built into the town wall "
+             "(Joshua 2:15). This chapter names her twice, well before the shout that ends it: "
+             "v17, before the battle, singles her out by name &mdash; ‘only Rahab the "
+             "prostitute shall live, she and all who are with her in the house, because she hid "
+             "the messengers we sent’ &mdash; and v25 confirms it kept, adding that she "
+             "‘has lived in the midst of Israel to this day,’ meaning at the time the "
+             "book itself was written. The devotional caption under the drawing, a line from "
+             "Psalm 119 (‘my soul fainteth for thy salvation&hellip;when wilt thou comfort "
+             "me?’), is the print's own later pairing of image and prayer &mdash; not part "
+             "of the Joshua narrative.",
+        note_es="Shields no dibuja la huida de los espías (Josué 2) ni el derrumbe de los muros "
+                "(Josué 6) &mdash; aísla el único objeto del que dependen ambos capítulos: el "
+                "cordón mismo, todavía atado donde Rahab lo dejó, en una casa construida dentro "
+                "del muro de la ciudad (Josué 2:15). Este capítulo la nombra dos veces, mucho "
+                "antes del grito con que termina: el v. 17, antes de la batalla, la señala por "
+                "nombre &mdash; «solo Rahab la ramera vivirá, ella y todos los que estén con "
+                "ella en la casa, porque escondió a los mensajeros que enviamos» &mdash; y "
+                "el v. 25 confirma la promesa cumplida, añadiendo que ella «ha habitado en "
+                "medio de Israel hasta hoy», es decir, en el momento en que se escribió el "
+                "libro. El texto devocional bajo el dibujo, una línea del Salmo 119 («mi "
+                "alma desfallece por tu salvación&hellip;¿cuándo me consolarás?»), es un "
+                "añadido posterior de la propia lámina, que empareja la imagen con una oración "
+                "&mdash; no forma parte del relato de Josué.",
+        license="CC BY 4.0 (Wellcome Collection)",
+        source_url="https://commons.wikimedia.org/wiki/File:Rahab_hangs_the_scarlet_cord_from_"
+                   "her_window._Autotype_after_Wellcome_V0034410.jpg",
     )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
