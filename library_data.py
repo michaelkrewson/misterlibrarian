@@ -1650,6 +1650,12 @@ DICTIONARY = [
     ("omer", "omer", "\u05e2\u05b9\u05de\u05b6\u05e8", "omer",
      "OMER \u2014 a dry measure, roughly two liters, a tenth of an ephah (v36). \u26a0 The same word, from the same root meaning 'a heap,' also names an ordinary SHEAF of grain (Leviticus 23:10-15; Ruth 2:7) \u2014 one lexical entry doing double duty as both a bundle in a field and a fixed unit of volume. Its afterlife is calendrical: Leviticus 23:15-16 commands counting fifty days from the first omer of harvest to Pentecost, a count still kept today as 'the Counting of the Omer' \u2014 a ritual with nothing to do with manna, borrowing only the measure's name from this chapter's daily ration.",
      ("Exodus", 16, 16)),
+    ("massah-meribah", "Massah / Meribah", "\u05de\u05b7\u05e1\u05b8\u05bc\u05d4 \u05d5\u05bc\u05de\u05b0\u05e8\u05b4\u05d9\u05d1\u05b8\u05d4", "massah u-merivah",
+     "TESTING and STRIFE \u2014 a double place-name built from two different roots, one event named twice over. MASSAH is from nissah, TO TEST; MERIBAH is from riv, STRIFE, CONTENTION, the same verb the people are accused of at v2 ('why do you STRIVE with me'). \u26a0 The location recurs: Numbers 20 tells an almost identical story \u2014 no water, a rock struck \u2014 at a DIFFERENT Meribah, late in the wilderness years, and that second incident costs Moses his own entry into the land. Deuteronomy 6:16 and Psalm 95:8 both look back on 'Massah' as the type-case for testing God and hardening the heart.",
+     ("Exodus", 17, 7)),
+    ("kes", "kes", "\u05db\u05b5\u05bc\u05e1", "kes",
+     "THRONE \u2014 occurring EXACTLY ONCE in the entire Hebrew Bible, and disputed even there. \u26a0 Lexicographers are divided on whether kes is a contracted spelling of kisse (the ordinary word for throne) or a scribal slip for nes, BANNER \u2014 the very word the altar in the same verse's neighborhood was just named for ('Jehovah is my nes,' v15). The shelf splits three ways over the sentence it sits in (v16): some read an oath ('the LORD hath sworn'), some read Amalek's hand raised against Jehovah's throne, some leave it a bare unresolved exclamation. A single rare word, and the one verse it appears in still is not settled.",
+     ("Exodus", 17, 16)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3450,7 +3456,7 @@ ENCYCLOPEDIA = [
               "(1 Samuel 15); and Haman 'the Agagite,' who plots to annihilate every Jew in the Persian empire "
               "(Esther 3), is read as the last flowering of that line. So the roll of honor for Esau also, in a "
               "single verse, plants the enemy that will shadow Israel for a thousand years.",
-         refs=[(36, 12), (36, 16), ("2 Samuel", 1, 1), ("2 Samuel", 1, 13), ("1 Chronicles", 1, 36)], videos=[]),
+         refs=[(36, 12), (36, 16), ("Exodus", 17, 8), ("2 Samuel", 1, 1), ("2 Samuel", 1, 13), ("1 Chronicles", 1, 36)], videos=[]),
     dict(slug="horites", name="Horites", kind="people", aliases=["Horites", "Horite", "Hori"],
          desc="The original inhabitants of Seir, before Edom — 'the sons of Seir the Horite, the inhabitants of the "
               "land' (36:20), catalogued here alongside Esau's line. The name is usually tied to chor, 'cave,' so "
@@ -5084,6 +5090,30 @@ ENCYCLOPEDIA = [
          refs=[("Exodus", 16, 1), ("Numbers", 33, 11)],
          coords=(29.0, 33.3, 5.0), approx=True,
          modern="traditional route, western Sinai Peninsula, Egypt — disputed", videos=[]),
+    dict(slug="joshua", name="Joshua", kind="person",
+         aliases=["Joshua", "Hoshea", "Yehoshua"],
+         desc="Moses' military commander and eventual successor, introduced here with no genealogy and no "
+              "backstory — already trusted to choose men and lead them against Amalek while Moses climbs a hill "
+              "(Exodus 17:9-13). ⚠ His name at this point is likely still HOSHEA, 'he saves'; Moses renames him "
+              "YEHOSHUA, folding in the divine name, only later (Numbers 13:16) — the same root that gives, "
+              "through Greek, the name JESUS. He becomes Moses' personal attendant (Exodus 24:13; 33:11), one of "
+              "only two of the twelve spies to bring back a good report of the land (Numbers 13-14), and is "
+              "commissioned as Moses' successor before Moses dies (Deuteronomy 31; Joshua 1) — leading the "
+              "conquest that gives his own book its name.",
+         refs=[("Exodus", 17, 9), ("Exodus", 17, 13), ("Numbers", 13, 16), ("Deuteronomy", 31, 7)],
+         videos=[]),
+    dict(slug="rephidim", name="Rephidim", kind="place",
+         aliases=["Rephidim"],
+         desc="Israel's last camp before Sinai (Exodus 17:1; 19:2) — the site of both the water struck from the "
+              "rock at nearby Horeb and the battle with Amalek. ⚠ Its name may mean 'supports' or 'resting "
+              "places,' which this chapter's own action echoes without comment: it is where Aaron and Hur "
+              "physically support Moses' arms (17:12). Its exact location is unrecovered, like most of the "
+              "wilderness itinerary — tradition places it in the Wadi Feiran region of the southern Sinai "
+              "peninsula, a fertile oasis corridor that would explain both a nearby rock formation and Amalek's "
+              "presence to defend it.",
+         refs=[("Exodus", 17, 1), ("Exodus", 17, 8), ("Exodus", 19, 2)],
+         coords=(28.85, 33.62, 5.0), approx=True,
+         modern="traditionally the Wadi Feiran region, South Sinai, Egypt — disputed", videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -6356,6 +6386,8 @@ XREFS = [
     (("Revelation", 3, 21), ("Revelation", 21, 7), "the last of the seven overcomer-promises — 'sit with me on my throne' — cashed almost verbatim: 'the one who overcomes will inherit these things'"),
     (("Exodus", 16, 23), (2, 3), "the sabbath spoken as a NOUN for the first time in the Bible, four chapters before the commandment — Genesis never used the word, only the verb, when God rested and blessed the seventh day"),
     (("Exodus", 20, 9), ("Exodus", 16, 26), "'six days you shall labor... but the seventh day is a sabbath' — the Decalogue's version of a rest the people had already lived once, six weeks earlier, over bread that would not be there to gather"),
+    (("Exodus", 17, 3), ("Exodus", 16, 2), "LUN, 'grumble' — the identical root falling twice in two chapters; a people fed daily bread from heaven is thirsty and reaching for the same word within days"),
+    (("Exodus", 17, 14), ("Deuteronomy", 25, 17), "the command to blot out Amalek's memory, turned from a private word to Moses into formal, standing law: 'remember what Amalek did to you... do not forget'"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7349,6 +7381,9 @@ CHRON_CHAPTERS = {
     "exod16": dict(era="exodus",
                   when="From Elim to the wilderness of Sin, where the people grumble for Egypt's food. Jehovah answers with quail and manna, a daily portion that cannot be hoarded, and — on the sixth day, before Sinai — the first commanded sabbath, a jar of manna set aside before the Testimony to be kept.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — the fifteenth day of the second month after leaving Egypt (16:1), roughly a month out."),
+    "exod17": dict(era="exodus",
+                  when="Israel's last camp before Sinai. No water at Rephidim, the rock struck at Horeb, and the battle with Amalek — Joshua's first appearance, Moses' hands held up by Aaron and Hur until sunset, and an altar named Jehovah-nissi.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — shortly after chapter 16, still within the second month out of Egypt, on the final approach to Sinai (19:1-2)."),
     "mal1": dict(era="return",
                  when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
                  clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
@@ -11684,6 +11719,21 @@ DICTIONARY_ES = {
     "man": ("man", "MAN\u00c1 \u2014 el pan del cielo, nombrado con un juego de palabras que el propio texto organiza. \u26a0 Cuando Israel lo ve por primera vez se preguntan unos a otros MAN HU? (v. 15) \u2014 y el vers\u00edculo glosa de inmediato su propia pregunta con la palabra hebrea corriente para \u00abqu\u00e9\u00bb, explicando \u00abporque no sab\u00edan MAH era\u00bb. Man no es el interrogativo est\u00e1ndar; se comporta m\u00e1s como una forma arcaica o de sabor arameo de \u00abqui\u00e9n/qu\u00e9\u00bb, lo bastante inusual como para que el narrador parezca traducirla en la misma frase. Sea lo que fuera que la gente preguntaba, la palabra que usaron se convierte, dieciseis vers\u00edculos despu\u00e9s, en el nombre mismo de la sustancia (v. 31) y en lo que se guarda en una vasija delante del Testimonio (v. 33) \u2014 una pregunta que se endurece en sustantivo antes de que termine el cap\u00edtulo."),
     "shabbat-noun": ("shabbat", "S\u00c1BADO \u2014 el sustantivo, no solo el descanso. \u26a0 No est\u00e1 en G\u00e9nesis: G\u00e9nesis 2:2-3 tiene a Dios DESCANSANDO (el verbo shavat, emparentado pero distinto) y bendiciendo el s\u00e9ptimo d\u00eda, pero la palabra shabbat misma no se pronuncia hasta aqu\u00ed, cuatro cap\u00edtulos antes de que se convierta en mandamiento en el Sina\u00ed (\u00c9xodo 20:8-11). Su primera aparici\u00f3n en la Biblia duplica el sustantivo para dar \u00e9nfasis \u2014 shabbaton, shabbat-qodesh, \u00abun reposo solemne, un s\u00e1bado consagrado\u00bb (v. 23) \u2014 como si el texto tuviera que recuperar el tiempo perdido."),
     "omer": ("gomer", "GOMER \u2014 una medida seca, algo m\u00e1s de dos litros, la d\u00e9cima parte de un efa (v. 36). \u26a0 La misma palabra, de la misma ra\u00edz que significa \u00abmont\u00f3n\u00bb, nombra tambi\u00e9n una GAVILLA de grano corriente (Lev\u00edtico 23:10-15; Rut 2:7) \u2014 una sola entrada l\u00e9xica haciendo doble trabajo, como un fajo de mies en el campo y como unidad fija de volumen. Su vida posterior es calendaria: Lev\u00edtico 23:15-16 manda contar cincuenta d\u00edas desde el primer gomer de la cosecha hasta Pentecost\u00e9s, una cuenta que a\u00fan se guarda hoy como \u00abel Conteo del \u00d3mer\u00bb \u2014 un ritual que nada tiene que ver con el man\u00e1 y que solo toma prestado el nombre de la medida de este cap\u00edtulo."),
+    "massah-meribah": ("Masah / Meriba", "PRUEBA y RENCILLA \u2014 un doble top\u00f3nimo construido con dos ra\u00edces "
+        "distintas, un solo suceso nombrado dos veces. MASAH viene de nissah, PROBAR; MERIBA viene de riv, "
+        "RENCILLA, CONTIENDA, el mismo verbo del que se acusa al pueblo en el v. 2 (\u00ab\u00bfpor qu\u00e9 alterc\u00e1is "
+        "conmigo?\u00bb). \u26a0 El lugar reaparece: N\u00fameros 20 cuenta una historia casi id\u00e9ntica \u2014 sin agua, una pe\u00f1a "
+        "golpeada \u2014 en OTRA Meriba, ya al final de los a\u00f1os del desierto, y ese segundo incidente le cuesta a "
+        "Mois\u00e9s la entrada a la tierra. Deuteronomio 6:16 y el Salmo 95:8 recuerdan ambos \u00abMasah\u00bb como el caso "
+        "modelo de tentar a Dios y endurecer el coraz\u00f3n."),
+    "kes": ("kes", "TRONO \u2014 aparece EXACTAMENTE UNA VEZ en toda la Biblia hebrea, y es disputado incluso ah\u00ed. "
+        "\u26a0 Los lexic\u00f3grafos no se ponen de acuerdo sobre si kes es una forma contra\u00edda de kisse (la palabra "
+        "corriente para trono) o un desliz de copista por nes, ENSE\u00d1A \u2014 la misma palabra con que se acaba de "
+        "nombrar el altar del mismo vers\u00edculo cercano (\u00abJehov\u00e1 es mi nes\u00bb, v. 15). RV60 y NVI coinciden en leer "
+        "la mano de Amalec alzada contra el trono de Jehov\u00e1, aunque con sujetos algo distintos; el estante "
+        "ingl\u00e9s a\u00f1ade una tercera v\u00eda \u2014 KJV y ASV leen ah\u00ed un juramento (\u00abel Se\u00f1or ha jurado\u00bb), siguiendo una "
+        "tradici\u00f3n interpretativa antigua en vez del texto conson\u00e1ntico desnudo. Una sola palabra rara, y el "
+        "\u00fanico vers\u00edculo donde aparece sigue sin zanjarse."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -11892,6 +11942,29 @@ ENCYCLOPEDIA_ES = {
     "simeon-of-jerusalem": ("Sime\u00f3n (en el templo)", "El hombre que esperaba. Lucas lo llama justo y piadoso y no le da cargo alguno: ni sacerdote ni escriba, s\u00f3lo un hombre de Jerusal\u00e9n a quien se le hab\u00eda dicho que no morir\u00eda antes de ver al Cristo del Se\u00f1or. Toma al ni\u00f1o en brazos y dice el c\u00e1ntico que la iglesia llam\u00f3 despu\u00e9s NUNC DIMITTIS, por sus primeras palabras en lat\u00edn. \u26a0 Conviene leer el griego de Lucas 2:29 con sus tres palabras juntas \u2014apolyeis, doulos, despota: soltar, esclavo, due\u00f1o\u2014. Es el vocabulario de la manumisi\u00f3n. \u26a0 Y el alcance de lo que dice a continuaci\u00f3n es todo Lucas-Hechos en una l\u00ednea: luz para revelaci\u00f3n a las NACIONES y gloria de tu pueblo ISRAEL. No confundir con Sime\u00f3n hijo de Jacob ni con Sim\u00f3n Pedro; el nombre es el mismo hebreo Shim'on."),
     "anna-the-prophetess": ("Ana la profetisa", "Hija de Fanuel, de la tribu de ASER, una de las del norte deportadas por Asiria en el 722 a.C. y que, en el relato est\u00e1ndar, no volvieron. Lucas nombra a una mujer de Aser en el templo de Jerusal\u00e9n siete siglos despu\u00e9s, con una genealog\u00eda que evidentemente conoc\u00eda, y no lo explica. \u26a0 La llama proph\u0113tis, femenino de profeta, sin discutirlo y en mitad de una frase: el mismo t\u00edtulo que el Antiguo Testamento griego da a Mar\u00eda, D\u00e9bora y Hulda. \u26a0 Su edad es de verdad ambigua: 'viuda he\u014ds de ochenta y cuatro a\u00f1os' puede significar que AHORA tiene ochenta y cuatro, o que lleva viuda ochenta y cuatro, lo que la pondr\u00eda por encima de los cien. He\u014ds significa normalmente 'hasta', lo que favorece la primera. Su nombre griego es el mismo que Ana, la madre de Samuel, que tambi\u00e9n or\u00f3 en un santuario y tambi\u00e9n cant\u00f3."),
     "new-jerusalem": ("La nueva Jerusal\u00e9n", "La ciudad que BAJA. En Apocalipsis 21 no se construye y nadie entra en ella desde fuera: desciende del cielo, de parte de Dios, ya terminada, 'ataviada como una novia para su marido' (21:2). \u26a0 Sus medidas son el argumento: doce mil estadios de largo, de ancho Y de alto (21:16) \u2014unos 2.200 km en cada direcci\u00f3n\u2014 con un muro de 144 codos. Eso es 12 x 1.000 y 12 x 12, y hace de la ciudad un CUBO. \u26a0 El \u00fanico otro cubo de la Biblia es el Lugar Sant\u00edsimo, de veinte codos por lado (1 Reyes 6:20), el cuarto en el que un hombre entraba una vez al a\u00f1o. El cap\u00edtulo toma esas proporciones y las expande al tama\u00f1o del mundo conocido, y luego dice con palabras en 21:22 lo que ya hab\u00eda dicho con n\u00fameros: no hay santuario en ella, porque la ciudad entera lo es. \u26a0 Las puertas llevan las doce tribus y los cimientos los doce ap\u00f3stoles, y nada en el texto los concilia. Las puertas no se cierran nunca porque no hay noche contra la que cerrarlas, y el mismo cap\u00edtulo dice que nada com\u00fan entrar\u00e1. El Apocalipsis sostiene las dos frases a veinte vers\u00edculos de distancia y no las jerarquiza."),
+    "joshua": ("Josué", "Comandante militar de Moisés y su eventual sucesor, presentado aquí sin genealogía ni "
+        "historia previa — ya de confianza para escoger hombres y llevarlos contra Amalec mientras Moisés sube "
+        "a un cerro (Éxodo 17:9-13). ⚠ Su nombre en este punto es probablemente todavía HOSEA, «él salva»; "
+        "Moisés lo renombra JOSUÉ (Yehoshúa), incorporando el nombre divino, solo más adelante (Números 13:16) "
+        "— la misma raíz que da, a través del griego, el nombre JESÚS. Se convierte en asistente personal de "
+        "Moisés (Éxodo 24:13; 33:11), uno de solo dos de los doce espías que traen un buen informe de la tierra "
+        "(Números 13-14), y es comisionado como sucesor de Moisés antes de que este muera (Deuteronomio 31; "
+        "Josué 1) — dirigiendo la conquista que da nombre a su propio libro."),
+    "amalek": ("Amalec", "El enemigo más antiguo y encarnizado de Israel — y, según revela Génesis, nieto de "
+        "ESAÚ: «Timna fue concubina de Elifaz hijo de Esaú, y le dio a luz a Amalec» (36:12). Los amalecitas "
+        "emboscan a los rezagados y débiles de Israel recién salidos de Egipto (Éxodo 17:8-16), y por ello se "
+        "ganan una sentencia única — «Jehová tendrá guerra con Amalec de generación en generación» — y la "
+        "orden de «raer la memoria de Amalec de debajo del cielo» (Deuteronomio 25:17-19). Saúl pierde su reino "
+        "por perdonar a su rey Agag (1 Samuel 15); y Amán «el agagueo», que trama aniquilar a todos los judíos "
+        "del imperio persa (Ester 3), se lee como la última floración de esa línea. Así, la lista de honor de "
+        "Esaú planta también, en un solo versículo, al enemigo que ensombrecerá a Israel durante mil años."),
+    "rephidim": ("Refidim", "El último campamento de Israel antes del Sinaí (Éxodo 17:1; 19:2) — el lugar tanto "
+        "del agua que brota de la peña cercana en Horeb como de la batalla contra Amalec. ⚠ Su nombre quizá "
+        "signifique «apoyos» o «lugares de descanso», lo que la propia acción del capítulo hace eco sin "
+        "comentarlo: es donde Aarón y Hur apoyan físicamente los brazos de Moisés (17:12). Su ubicación exacta "
+        "no se ha recuperado, como la mayoría del itinerario del desierto — la tradición lo sitúa en la región "
+        "del Wadi Feirán, en el sur de la península del Sinaí, un corredor fértil de oasis que explicaría tanto "
+        "una formación rocosa cercana como la presencia de Amalec defendiéndolo."),
     "sin-wilderness": ("Desierto de Sin", "Un tramo de desierto en la ruta de los israelitas entre ELIM y el Sinaí "
         "(Éxodo 16:1), alcanzado el día quince del segundo mes después de salir de Egipto — donde el pueblo "
         "murmura por primera vez por comida y recibe codornices y maná. ⚠ Su nombre hebreo, Sin, es un topónimo de "
@@ -12257,6 +12330,51 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "exod17": [dict(
+        file="exod17-victory-o-lord-millais.jpg",
+        title="Victory O Lord!",
+        title_es="¡Victoria, oh Jehová!",
+        artist="John Everett Millais",
+        artist_es="John Everett Millais",
+        year="1871",
+        location="Manchester Art Gallery, Manchester, United Kingdom",
+        location_es="Manchester Art Gallery, Mánchester, Reino Unido",
+        alt="An oil painting in warm golds and reds. An old, bearded man in a brown robe sits "
+            "exhausted at the center, head bowed, arms held up and outward by two men flanking "
+            "him on a rocky hilltop against a sunset sky. On the left a gray-bearded man in dark "
+            "robes grips a wooden staff alongside the seated man's raised arm. On the right a "
+            "younger man in a red tunic and armor plate braces the other arm, looking off toward "
+            "an unseen battle. All three figures are barefoot.",
+        note="⚠ The figure in red on the right is AARON, not Hur — easy to get backward, since "
+             "Hur is the one on the left, in dark robes, still gripping his own staff. Millais "
+             "painted this at what critics call a turning point in his career, working the canvas "
+             "over repeatedly (&lsquo;scraping and repainting the surface&rsquo;) to get the "
+             "exhaustion right. Contemporary critic F. G. Stephens praised exactly that choice: "
+             "the painting sets &lsquo;the unyielding and steadfast willpower of Moses&rsquo; "
+             "against &lsquo;the physical and emotional exhaustion of his companions&rsquo; — "
+             "an old man's raw, aged flesh doing the work, not a triumphant hero. Some readers of "
+             "the painting have noted the raised, outstretched arms as an unmistakable echo of "
+             "crucifixion imagery, suffering and victory painted as the same gesture. Millais "
+             "gives no glimpse of the battle itself — only three men on a hill, watching what "
+             "their own held-up arms are deciding.",
+        note_es="⚠ La figura de rojo a la derecha es AAR&Oacute;N, no Hur — f&aacute;cil de "
+                "confundir, ya que Hur es el de la izquierda, de t&uacute;nica oscura, "
+                "todav&iacute;a con su propio bast&oacute;n en la mano. Millais pint&oacute; "
+                "esta obra en lo que la cr&iacute;tica llama un punto de inflexi&oacute;n en su "
+                "carrera, retrabajando el lienzo una y otra vez (&laquo;raspando y "
+                "repintando la superficie&raquo;) para lograr el agotamiento exacto. El "
+                "cr&iacute;tico de la &eacute;poca F. G. Stephens elogi&oacute; justo esa "
+                "decisi&oacute;n: el cuadro enfrenta &laquo;la voluntad inquebrantable y firme "
+                "de Mois&eacute;s&raquo; con &laquo;el agotamiento f&iacute;sico y emocional de "
+                "sus compa&ntilde;eros&raquo; &mdash; la carne vieja y desnuda haciendo el "
+                "trabajo, no un h&eacute;roe triunfante. Algunos lectores del cuadro han notado "
+                "en los brazos alzados y extendidos un eco inconfundible de la iconograf&iacute;a "
+                "de la crucifixi&oacute;n, sufrimiento y victoria pintados con el mismo gesto. "
+                "Millais no muestra nada de la batalla misma &mdash; solo tres hombres en un "
+                "cerro, observando lo que sus propios brazos alzados est&aacute;n decidiendo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:VictoryOLord.JPG",
+    )],
     "exod16": [dict(
         file="exod16-gathering-manna-bouts.jpg",
         title="The Gathering of the Manna",
