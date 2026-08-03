@@ -1042,6 +1042,8 @@ DICTIONARY = [
      "MY PEOPLE — half of the covenant formula, 'I will take you to me for a people, and I will be your God' (Exodus 6:7), which recurs in that shape all through the Law and the Prophets. ⚠ Hosea 1:9 takes it apart by naming a child LO-AMMI, 'not my people' — and the reversal follows within three verses in the Hebrew (2:1, English 1:10), where those called 'not my people' are called 'sons of the living God.' Paul quotes that reversal at Romans 9:25-26 and 1 Peter 2:10 draws on it, applying to gentiles a promise made here to the northern kingdom.", ("Hosea", 1, 9)),
     ("zera", "zera", "זֶרַע", "zera",
      "SEED — grain sown, offspring, descendants; from zara, to scatter seed. ⚠ It is the root of JEZREEL (Yizre'el, 'God sows'), and Hosea works both edges of it: in 1:4 the name is a sentence of judgment because of the blood spilled in that valley, and in 2:25 the same name becomes the promise 'I will SOW her for myself in the land.' The prophet does not replace the name of judgment; he plants it and lets it germinate.", ("Hosea", 1, 4)),
+    ("yah", "Yah", "יָהּ", "Yah",
+     "The SHORT form of the divine name, one syllable rather than the full four consonants of YHVH — the form behind HALLELU-YAH, 'praise Yah.' ⚠ Its first appearance anywhere in the Hebrew Bible is Exodus 15:2, in the Song of the Sea ('my strength and song is Yah'), a line two later poets quote back word for word: Isaiah 12:2 and Psalm 118:14 both open the identical phrase. Usage is concentrated in poetry, especially the Hallel psalms (113-118, 146-150), where 'praise Yah' becomes the refrain.", ("Exodus", 15, 2)),
     ("yasha", "yasha", "יָשַׁע", "yasha",
      "TO SAVE, deliver, bring into a wide open place (the opposite of tsar, 'narrow, hemmed in'). It is the root behind HOSEA's own name (Hoshea, 'he saves'), and behind Joshua, Isaiah and Jesus. ⚠ Hosea 1:7 turns it into a quiet pun: the prophet named Salvation announces 'I will SAVE them by Jehovah their God — and not by bow or sword or war.' The verb is the standard one for God rescuing his people; Hosea's point is about the instrument.", ("Hosea", 1, 7)),
     ("gazam", "gazam / yeleq / chasil", "גָּזָם / יֶלֶק / חָסִיל", "gazam / yeleq / chasil",
@@ -1271,7 +1273,7 @@ DICTIONARY = [
     ("sod", "sod", "סוֹד", "sod",
      "A CLOSED CIRCLE — the confidential session, the inner deliberation, and by extension the secret discussed there. Jeremiah's test for a prophet is entirely built on it: 'who has stood in the sod of Jehovah?' (23:18), and 'if they had stood in my sod, they would have turned my people back' (23:22). Scripture only ever glimpses that circle — the sons of God presenting themselves with the Adversary among them (Job 1:6), Micaiah seeing the host of heaven debating who will entice Ahab (1 Kings 22:19-22), Amos's flat rule that God does nothing without disclosing his sod to the prophets (3:7). KJV renders it 'counsel,' ASV 'council,' NWT 'the intimate group'; the word is a ROOM, not an opinion. Its ordinary human sense is the same: the huddle of friends (Psalm 55:14), or the gossip that leaks out of one (Proverbs 11:13).", ("Jeremiah", 23, 18)),
     ("naveh", "naveh", "נָוֶה", "naveh",
-     "A PASTURE-ABODE — the grazing ground a shepherd keeps his flock in, and so also a settled dwelling. It is the quiet hinge of Jeremiah 23: God promises to bring the scattered flock back 'to their naveh' (v3), and eight verses later 'the ne'ot of the wilderness have dried up' under the curse (v10). The same word for the place promised and the place ruined. It is the word behind the Shepherd Psalm's 'green pastures' (Psalm 23:2) and behind Jerusalem as 'a quiet habitation' (Isaiah 33:20). Where English needs 'fold,' 'pasture' and 'habitation' for one Hebrew noun, the connection has to be pointed out rather than heard.", ("Jeremiah", 23, 3)),
+     "A PASTURE-ABODE — the grazing ground a shepherd keeps his flock in, and so also a settled dwelling. It is the quiet hinge of Jeremiah 23: God promises to bring the scattered flock back 'to their naveh' (v3), and eight verses later 'the ne'ot of the wilderness have dried up' under the curse (v10). The same word for the place promised and the place ruined. It is the word behind the Shepherd Psalm's 'green pastures' (Psalm 23:2) and behind Jerusalem as 'a quiet habitation' (Isaiah 33:20). Where English needs 'fold,' 'pasture' and 'habitation' for one Hebrew noun, the connection has to be pointed out rather than heard. ⚠ A related verb is behind one of the Bible's most disputed single words: Exodus 15:2's ve-anvehu, which the KJV alone on this shelf reads as 'I will PREPARE HIM AN HABITATION' (tying it to this very noun) where most other versions read a different root meaning 'to praise' instead.", ("Jeremiah", 23, 3)),
     ("laanah", "la'anah", "לַעֲנָה", "la'anah",
      "WORMWOOD — the bitter Artemisia shrub of the Near East, the Bible's standing image for a taste that punishes. It arrives in pairs: 'a root bearing rosh and la'anah' (Deuteronomy 29:18), and here 'I am feeding them WORMWOOD and giving them mei-rosh to drink' (Jeremiah 23:15) — rosh being a second bitter or venomous plant, KJV's 'water of gall.' Lamentations makes it the taste of the whole catastrophe, 'the wormwood and the gall' (3:19). Not poison in the sense of a quick death; the point is that it must be swallowed and it cannot be enjoyed. Greek apsinthos carries it into Revelation 8:11 as the name of a falling star.", ("Jeremiah", 23, 15)),
     ("sheqer", "sheqer", "שֶׁקֶר", "sheqer",
@@ -3022,6 +3024,20 @@ ENCYCLOPEDIA = [
               "measures against a greater priest 'after the order of Melchizedek.'",
          refs=[("Leviticus", 1, 5), ("Leviticus", 1, 7), ("Leviticus", 1, 11),
                ("Numbers", 1, 3), ("Numbers", 1, 17), ("Numbers", 1, 44)], videos=[]),
+    dict(slug="miriam", name="Miriam", kind="person", aliases=["Miriam"],
+         desc="Sister of Moses and Aaron, and the first person in the Bible called a PROPHETESS "
+              "(Exodus 15:20). As a girl she watches the basket in the reeds and arranges for her own "
+              "mother to nurse the baby who will become her brother's rival for leadership (Exodus 2:4-8) — "
+              "though she is not named there; the connection is made only in hindsight. After the sea "
+              "crossing she leads the women in the song's refrain with a timbrel, and her two-line reply "
+              "(15:21) is nearly identical to the opening of Moses's eighteen-verse song, which has led "
+              "some scholars to argue her couplet is the older, original core of the whole piece. ⚠️ Her "
+              "later story turns hard: in Numbers 12 she and Aaron challenge Moses's unique authority "
+              "('has Jehovah spoken only through Moses?'), and she alone is struck with a skin disease for "
+              "it, shut outside the camp seven days while Aaron goes untouched — a punishment the text "
+              "never fully explains. She dies at Kadesh (Numbers 20:1) and is named centuries later by "
+              "Micah among the three Jehovah sent ahead of Israel: 'Moses, Aaron, and Miriam' (Micah 6:4).",
+         refs=[("Exodus", 15, 20), ("Exodus", 15, 21)], videos=[]),
     dict(slug="nahshon", name="Nahshon", kind="person", aliases=["Nahshon"],
          desc="Son of Amminadab, CHIEFTAIN of the tribe of Judah at the wilderness census (Numbers 1:7; "
               "2:3; 7:12) — and one of the most quietly important names in the Bible's genealogies. His "
@@ -4093,7 +4109,7 @@ ENCYCLOPEDIA = [
               "prophets return to it repeatedly in their oracles against Philistia (Amos 1:8; Zephaniah 2:4-7; "
               "Jeremiah 47:5-7).",
          refs=[("2 Samuel", 1, 20)], videos=[]),
-    dict(slug="yam-suph", name="the Sea of Reeds (Red Sea)", kind="place", aliases=["Sea of Reeds"],
+    dict(slug="yam-suph", name="the Sea of Reeds (Red Sea)", kind="place", aliases=["Sea of Reeds", "Red Sea"],
          coords=(29.9, 32.55, 1.6), approx=True,
          desc="The water Israel crosses (Exodus 14), and one of the most argued-over locations in the Bible. "
               "⚠️ The Hebrew is YAM SUPH, 'sea of REEDS' — suph is the marsh growth of the Nile's edge, the same "
@@ -7246,6 +7262,9 @@ CHRON_CHAPTERS = {
     "exod14": dict(era="exodus",
                   when="The sea. Israel is told to camp with the water at its back so Pharaoh will think them trapped; six hundred chariots overtake them; a strong east wind blows all night, Israel crosses on dry ground, and the returning water destroys the army — after which Israel believes for the first time.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — days after the Passover, at a place the text names precisely and no one can now locate."),
+    "exod15": dict(era="exodus",
+                  when="Moses and Israel sing the Song of the Sea on the far shore; Miriam the prophetess answers with timbrels. Then three waterless days into the wilderness of Shur, bitter water at Marah sweetened by a tree, and rest at Elim's twelve springs and seventy palms.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the same day as chapter 14's crossing, followed within days by the march to Marah and Elim."),
     "mal1": dict(era="return",
                  when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
                  clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
@@ -10304,6 +10323,18 @@ DICTIONARY_ES = {
         "cresta, para las tres fiestas de peregrinaci&oacute;n (Deuteronomio 16:16); o "
         "cantados uno por uno en los quince escalones que suben del Atrio de las Mujeres al "
         "Atrio de Israel en el Templo (Mishn&aacute;, Middot 2:5)."),
+    "yah": ("Yah",
+        "La forma CORTA del nombre divino, una sola s&iacute;laba en vez de las cuatro "
+        "consonantes completas de YHVH &mdash; la forma detr&aacute;s de HALELU-YAH, "
+        "&laquo;alaben a Yah&raquo;. ⚠ Su primera aparici&oacute;n en toda la Biblia hebrea "
+        "es &Eacute;xodo 15:2, en el C&aacute;ntico del Mar (&laquo;mi fortaleza y mi "
+        "c&aacute;ntico es Yah&raquo;), una l&iacute;nea que dos poetas posteriores citan "
+        "palabra por palabra: Isa&iacute;as 12:2 y Salmo 118:14 abren ambos la misma frase. "
+        "Su uso se concentra en la poes&iacute;a, especialmente en los salmos del Halel "
+        "(113-118, 146-150), donde &laquo;alaben a Yah&raquo; se vuelve el estribillo."),
+    "elohim": ("Elohim",
+        "&laquo;Dios&raquo; &mdash; plural en la forma, singular en el verbo: el hebreo "
+        "b&iacute;blico est&aacute;ndar para el Dios &uacute;nico."),
     "kadosh": ("kadosh",
         "SANTO — y, antes de significar puro moralmente, significa APARTADO, separado del uso "
         "ordinario. La primera aparición de la palabra en toda la Biblia no es una persona sino "
@@ -11682,6 +11713,24 @@ ENCYCLOPEDIA_ES = {
     "philippi": ("Filipos", "Ciudad de Macedonia y COLONIA romana \u2014 refundada por Augusto tras la batalla del 42 a.C. y poblada con veteranos licenciados, de modo que sus habitantes ten\u00edan ciudadan\u00eda romana y eran muy conscientes de ello. Eso explica varias cosas de la carta: el lenguaje militar (el phroureo de 4:7, 'montar guardia'), la lista de virtudes en vocabulario c\u00edvico griego (4:8) y los saludos de 'la casa de C\u00e9sar' (4:22). Fue la primera congregaci\u00f3n de Pablo en Europa (Hechos 16), donde tambi\u00e9n us\u00f3 su propia ciudadan\u00eda romana con considerable efecto."),
     "macedonia": ("Macedonia", "Provincia romana al norte de Grecia, patria de Filipo y de Alejandro, y la primera regi\u00f3n de Europa a la que Pablo llev\u00f3 el mensaje tras la visi\u00f3n del 'var\u00f3n macedonio' de Hechos 16:9. Filipos y Tesal\u00f3nica estaban en ella, y Filipenses 4:15 recuerda que al salir de Macedonia ninguna congregaci\u00f3n mantuvo con \u00e9l 'una cuenta de dar y recibir' salvo la de Filipos."),
     "thessalonica": ("Tesal\u00f3nica", "Ciudad portuaria de Macedonia y capital de la provincia, en la V\u00eda Egnatia. Pablo fund\u00f3 all\u00ed una congregaci\u00f3n (Hechos 17) y le escribi\u00f3 dos cartas. Filipenses 4:16 la menciona de paso y con una precisi\u00f3n contable caracter\u00edstica: 'incluso en Tesal\u00f3nica enviaron para mi necesidad, una y dos veces'."),
+    "miriam": ("Miriam", "Hermana de Mois&eacute;s y Aar&oacute;n, y la primera persona en la "
+        "Biblia llamada PROFETISA (&Eacute;xodo 15:20). De ni&ntilde;a vigila la cesta entre "
+        "los juncos y logra que su propia madre amamante al beb&eacute; que ser&aacute; el "
+        "rival de su hermano por el liderazgo (&Eacute;xodo 2:4-8) &mdash; aunque all&iacute; "
+        "no se la nombra; la conexi&oacute;n solo se hace en retrospectiva. Despu&eacute;s del "
+        "cruce del mar dirige a las mujeres en el estribillo del c&aacute;ntico con un "
+        "pandero, y su respuesta de dos l&iacute;neas (15:21) es casi id&eacute;ntica a la "
+        "apertura del c&aacute;ntico de dieciocho vers&iacute;culos de Mois&eacute;s, lo que "
+        "ha llevado a algunos eruditos a argumentar que su d&iacute;stico es el n&uacute;cleo "
+        "m&aacute;s antiguo y original de toda la pieza. ⚠️ Su historia posterior se "
+        "endurece: en N&uacute;meros 12 ella y Aar&oacute;n desafían la autoridad &uacute;nica "
+        "de Mois&eacute;s (&laquo;&iquest;acaso Jehov&aacute; ha hablado solo por "
+        "Mois&eacute;s?&raquo;), y solo ella es herida con una enfermedad de la piel por "
+        "ello, encerrada fuera del campamento siete d&iacute;as mientras Aar&oacute;n queda "
+        "intacto &mdash; un castigo que el texto nunca explica del todo. Muere en Cades "
+        "(N&uacute;meros 20:1) y es nombrada siglos despu&eacute;s por Miqueas entre los tres "
+        "que Jehov&aacute; envi&oacute; delante de Israel: &laquo;Mois&eacute;s, Aar&oacute;n "
+        "y Miriam&raquo; (Miqueas 6:4)."),
     "david": ("David", "Segundo rey de Israel, y la figura a la que el Salterio atribuye m\u00e1s salmos que a nadie \u2014 setenta y tres llevan su nombre en el encabezamiento, entre ellos el 23, el 91 (an\u00f3nimo en hebreo) y el 139. \u26a0 La f\u00f3rmula hebrea le-David puede significar 'de David', 'para David' o 'perteneciente a la colecci\u00f3n dav\u00eddica', y no zanja la autor\u00eda. Los libros de Samuel lo presentan sin adornos: m\u00fasico, proscrito, jefe de banda, rey, ad\u00faltero y padre de una sucesi\u00f3n desastrosa; la tradici\u00f3n posterior lo convierte en el salmista por antonomasia."),
     "sarah": ("Sara", "Esposa de Abrah\u00e1n, y la \u00fanica mujer de la Biblia hebrea cuya edad al morir se registra (127 a\u00f1os, G\u00e9nesis 23:1). \u26a0 Hebreos 11 la convierte en el sujeto de una de las cuestiones textuales m\u00e1s agudas del Nuevo Testamento: si el v. 11 dice que ELLA recibi\u00f3 poder por fe (el nominativo, que imprimen casi todas las ediciones y todas las versiones de esta estanter\u00eda) o que Abrah\u00e1n lo recibi\u00f3 JUNTO CON ella (el dativo, que imprime el SBLGNT). Lo decide una frase sobre anatom\u00eda: el poder es 'para la siembra de simiente', parte del padre en el uso griego. La pregunta pesa porque G\u00e9nesis no la endulza: al o\u00edr que tendr\u00e1 un hijo a los noventa, se R\u00cdE (18:12) y luego niega haberse re\u00eddo. El nombre de Isaac significa '\u00e9l r\u00ede'."),
     "jericho": ("Jeric\u00f3", "Ciudad del valle del Jord\u00e1n, al norte del mar Muerto, y uno de los asentamientos ocupados de forma continua m\u00e1s antiguos que se conocen: en Tell es-Sultan se han excavado una torre y una muralla de piedra de hacia el 8000 a.C., varios milenios antes de la escritura. Est\u00e1 unos 250 metros POR DEBAJO del nivel del mar, regada por un manantial, que es la raz\u00f3n de que haya un pueblo ah\u00ed con ese calor. \u26a0 Hebreos 11:30 atribuye a la fe la ca\u00edda de sus muros; la arqueolog\u00eda de la destrucci\u00f3n del Bronce Final y su fecha llevan un siglo discuti\u00e9ndose y aqu\u00ed no se zanjan."),
@@ -12226,6 +12275,52 @@ CHAPTER_ART = {
                 "service; expired)",
         source_url="https://commons.wikimedia.org/wiki/File:Sydney_William_Carline_(1888-1929)"
                    "_-_The_Hills_of_Judea_-_IWM_ART_4560_-_Imperial_War_Museums.jpg",
+    )],
+    "exod15": [dict(
+        file="golden-haggadah-miriam-dance.jpg",
+        title="Folio 15r, the Golden Haggadah",
+        title_es="Folio 15r, la Hagadá Dorada",
+        artist="Unknown illuminator",
+        artist_es="Iluminador desconocido",
+        year="c. 1320",
+        location="British Library, London (Add. MS 27210, f. 15r)",
+        location_es="British Library, Londres (Add. MS 27210, f. 15r)",
+        alt="A medieval illuminated manuscript page on gold leaf, divided into four scenes "
+            "bordered in blue and orange. In the upper right, a group of women in blue, pink "
+            "and rose robes stand close together; one near the center holds a round hand "
+            "drum, another an open scroll. In the upper left, a seated figure under a canopy "
+            "hands food down to a group of children and adults on a stairway. The two lower "
+            "panels show a kitchen: meat hanging and roasting over an open fire on the left, "
+            "and figures cleaning and directing in a doorway on the right.",
+        note="&#9888; Only one of this page's four scenes belongs to this chapter. This is "
+             "folio 15 of the Golden Haggadah, made in Catalonia around 1320 for use at the "
+             "Passover seder table &mdash; one of the most lavishly illuminated Hebrew "
+             "manuscripts to survive the Middle Ages. Its upper-right panel is the Dance of "
+             "Miriam (Exodus 15:20): the timbrel, the huddled group of women, a scroll that "
+             "may stand for the song itself. The other three panels have nothing to do with "
+             "the Exodus narrative at all &mdash; they show a FOURTEENTH-CENTURY Jewish "
+             "household distributing matzah, slaughtering and roasting the Passover lamb, and "
+             "cleaning the house for the festival. The manuscript's makers put the ancient "
+             "dance and the medieval kitchen on the same gold page on purpose: the family "
+             "reading this book at their own seder was not just remembering Miriam's "
+             "generation, but continuing it.",
+        note_es="&#9888; Solo una de las cuatro escenas de esta p&aacute;gina pertenece a "
+                "este cap&iacute;tulo. Es el folio 15 de la Hagad&aacute; Dorada, hecha en "
+                "Catalu&ntilde;a hacia 1320 para usarse en la mesa del s&eacute;der de "
+                "Pascua &mdash; uno de los manuscritos hebreos m&aacute;s lujosamente "
+                "iluminados que sobreviven de la Edad Media. Su panel superior derecho es la "
+                "Danza de Miriam (&Eacute;xodo 15:20): el pandero, el grupo apretado de "
+                "mujeres, un pergamino que quiz&aacute; representa el c&aacute;ntico mismo. "
+                "Los otros tres paneles no tienen nada que ver con el relato del &Eacute;xodo "
+                "&mdash; muestran a una familia jud&iacute;a del SIGLO XIV repartiendo "
+                "matz&aacute;, sacrificando y asando el cordero pascual, y limpiando la casa "
+                "para la fiesta. Quienes hicieron el manuscrito pusieron la danza antigua y "
+                "la cocina medieval en la misma p&aacute;gina dorada a prop&oacute;sito: la "
+                "familia que le&iacute;a este libro en su propio s&eacute;der no solo "
+                "recordaba a la generaci&oacute;n de Miriam, sino que la continuaba.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Dance_of_Marian._Full_F15_from_"
+                   "Golden_Haggadah.jpg",
     )],
     "isa40": [dict(
         file="rosa-john-baptist-wilderness.jpg",
