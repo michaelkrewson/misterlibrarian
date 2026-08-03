@@ -1641,6 +1641,15 @@ DICTIONARY = [
     ("elah-illaya", "elah illaya", "\u05d0\u05dc\u05d4\u05d0\u05de \u05e2\u05dc\u05d0\u05d4", "elaha illaya",
      "GOD MOST HIGH \u2014 Biblical Aramaic, the title used of the God of Israel by pagan kings and courtiers throughout the Aramaic chapters of Daniel. \u26a0 Occurs 10 times, Daniel 3-7: here at 3:26 (the officials naming Shadrach, Meshach and Abed-nego 'servants of the Most High God') and 3:32 (Nebuchadnezzar's own doxology), then repeatedly through his humbling in chapter 4, in Belshazzar's feast in chapter 5, and once in the vision of chapter 7. The title a foreign court uses for Israel's God without becoming Israelite.",
      ("Daniel", 3, 26)),
+    ("man", "man", "\u05de\u05b8\u05df", "man",
+     "MANNA \u2014 the bread from heaven, named by a pun the text stages on itself. \u26a0 When Israel first sees it, they ask one another MAN HU? (v15) \u2014 and the verse immediately glosses its own question with the ordinary Hebrew word for 'what,' explaining 'for they did not know MAH it was.' Man is not the standard interrogative; it behaves more like an archaic or Aramaic-flavored 'who/what,' unusual enough that the narrator seems to translate it in the same breath. Whatever the people were actually asking, the word they used becomes, sixteen verses later, the substance's own name (v31) and the thing set aside in a jar before the Testimony (v33) \u2014 a question hardening into a noun before the chapter is over.",
+     ("Exodus", 16, 15)),
+    ("shabbat-noun", "shabbat", "\u05e9\u05b7\u05d1\u05b8\u05ea", "shabbat",
+     "SABBATH \u2014 the noun, not merely the rest. \u26a0 It is not in Genesis: Genesis 2:2-3 has God RESTING (the verb shavat, related but distinct) and blessing the seventh day, but the word shabbat itself is not spoken until here, four chapters before it becomes commandment at Sinai (Exodus 20:8-11). Its first appearance in the Bible doubles the noun for emphasis \u2014 shabbaton, shabbat-qodesh, 'a solemn rest, a holy sabbath' (v23) \u2014 as if the text has some catching up to do.",
+     ("Exodus", 16, 23)),
+    ("omer", "omer", "\u05e2\u05b9\u05de\u05b6\u05e8", "omer",
+     "OMER \u2014 a dry measure, roughly two liters, a tenth of an ephah (v36). \u26a0 The same word, from the same root meaning 'a heap,' also names an ordinary SHEAF of grain (Leviticus 23:10-15; Ruth 2:7) \u2014 one lexical entry doing double duty as both a bundle in a field and a fixed unit of volume. Its afterlife is calendrical: Leviticus 23:15-16 commands counting fifty days from the first omer of harvest to Pentecost, a count still kept today as 'the Counting of the Omer' \u2014 a ritual with nothing to do with manna, borrowing only the measure's name from this chapter's daily ration.",
+     ("Exodus", 16, 16)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5062,6 +5071,19 @@ ENCYCLOPEDIA = [
               "and lets the reader notice. Later tradition supplies far more (a Gospel of Nicodemus, a martyrdom, a "
               "place in the Talmud as Naqdimon ben Gurion), none of it early and none of it assumed here.",
          refs=[("John", 3, 1)], videos=[]),
+    dict(slug="sin-wilderness", name="Wilderness of Sin", kind="place",
+         aliases=["wilderness of Sin", "desert of Sin"],
+         desc="A stretch of desert on the Israelites' route between ELIM and Sinai (Exodus 16:1), reached on the "
+              "fifteenth day of the second month after leaving Egypt — where the people first grumble for food "
+              "and receive quail and manna. ⚠ Its Hebrew name, Sin, is a place name of unknown origin, unrelated "
+              "in sound or meaning to the English word for wrongdoing; the resemblance is a coincidence of "
+              "translation only, and it is a different word entirely from the SINAI it borders. Its exact route "
+              "is uncertain, like most of the wilderness itineraries — the traditional path runs along the "
+              "peninsula's western coastal plain — and it is named again only once more, as a stage the people "
+              "recall passing (Numbers 33:11-12).",
+         refs=[("Exodus", 16, 1), ("Numbers", 33, 11)],
+         coords=(29.0, 33.3, 5.0), approx=True,
+         modern="traditional route, western Sinai Peninsula, Egypt — disputed", videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -6332,6 +6354,8 @@ XREFS = [
     (("John", 4, 23), ("John", 5, 25), "the identical formula — 'an hour is coming, and now is' — planted for true worshippers, cashed here for the dead who hear and live"),
     (("Revelation", 1, 5), ("Revelation", 3, 14), "the same title, almost word for word — 'the faithful witness' becomes 'the faithful and true witness,' the seventh letter closing a loop the first chapter opened"),
     (("Revelation", 3, 21), ("Revelation", 21, 7), "the last of the seven overcomer-promises — 'sit with me on my throne' — cashed almost verbatim: 'the one who overcomes will inherit these things'"),
+    (("Exodus", 16, 23), (2, 3), "the sabbath spoken as a NOUN for the first time in the Bible, four chapters before the commandment — Genesis never used the word, only the verb, when God rested and blessed the seventh day"),
+    (("Exodus", 20, 9), ("Exodus", 16, 26), "'six days you shall labor... but the seventh day is a sabbath' — the Decalogue's version of a rest the people had already lived once, six weeks earlier, over bread that would not be there to gather"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7322,6 +7346,9 @@ CHRON_CHAPTERS = {
     "exod15": dict(era="exodus",
                   when="Moses and Israel sing the Song of the Sea on the far shore; Miriam the prophetess answers with timbrels. Then three waterless days into the wilderness of Shur, bitter water at Marah sweetened by a tree, and rest at Elim's twelve springs and seventy palms.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — the same day as chapter 14's crossing, followed within days by the march to Marah and Elim."),
+    "exod16": dict(era="exodus",
+                  when="From Elim to the wilderness of Sin, where the people grumble for Egypt's food. Jehovah answers with quail and manna, a daily portion that cannot be hoarded, and — on the sixth day, before Sinai — the first commanded sabbath, a jar of manna set aside before the Testimony to be kept.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the fifteenth day of the second month after leaving Egypt (16:1), roughly a month out."),
     "mal1": dict(era="return",
                  when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
                  clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
@@ -11654,6 +11681,9 @@ DICTIONARY_ES = {
     "syndoulos": ("s\u00fdndoulos", "CONSIERVO, compa\u00f1ero de esclavitud \u2014 doulos con syn-, y no 'compa\u00f1ero de servicio': la misma condici\u00f3n pose\u00edda, compartida. \u26a0 Juan cae a adorar al \u00e1ngel dos veces en este libro y las dos veces lo detienen con la misma palabra (19:10; 22:9): soy tu syndoulos, p\u00f3strate ante Dios. El sustantivo es tambi\u00e9n el que el cap\u00edtulo usa de los que dan culto en 22:3."),
     "proinos": ("pr\u014din\u00f3s", "DE LA MA\u00d1ANA, temprano. \u26a0 Sale dos veces en el Nuevo Testamento y las dos son del Apocalipsis, en los dos extremos del libro: 'le dar\u00e9 la ESTRELLA DE LA MA\u00d1ANA', la promesa a la iglesia de Tiatira (2:28), y 'yo soy la brillante ESTRELLA DE LA MA\u00d1ANA' en 22:16. La primera promesa del libro y su \u00faltima autodescripci\u00f3n son el mismo objeto."),
     "dendron": ("d\u00e9ndron", "\u00c1RBOL \u2014 el vivo, con ra\u00edces y ramas. \u26a0 Interesa sobre todo por contraste: el Apocalipsis no lo usa nunca. El \u00e1rbol de la vida de 2:7, 22:2, 22:14 y 22:19 es xylon, madero, la cosa cortada, que es tambi\u00e9n la palabra del Nuevo Testamento para la cruz."),
+    "man": ("man", "MAN\u00c1 \u2014 el pan del cielo, nombrado con un juego de palabras que el propio texto organiza. \u26a0 Cuando Israel lo ve por primera vez se preguntan unos a otros MAN HU? (v. 15) \u2014 y el vers\u00edculo glosa de inmediato su propia pregunta con la palabra hebrea corriente para \u00abqu\u00e9\u00bb, explicando \u00abporque no sab\u00edan MAH era\u00bb. Man no es el interrogativo est\u00e1ndar; se comporta m\u00e1s como una forma arcaica o de sabor arameo de \u00abqui\u00e9n/qu\u00e9\u00bb, lo bastante inusual como para que el narrador parezca traducirla en la misma frase. Sea lo que fuera que la gente preguntaba, la palabra que usaron se convierte, dieciseis vers\u00edculos despu\u00e9s, en el nombre mismo de la sustancia (v. 31) y en lo que se guarda en una vasija delante del Testimonio (v. 33) \u2014 una pregunta que se endurece en sustantivo antes de que termine el cap\u00edtulo."),
+    "shabbat-noun": ("shabbat", "S\u00c1BADO \u2014 el sustantivo, no solo el descanso. \u26a0 No est\u00e1 en G\u00e9nesis: G\u00e9nesis 2:2-3 tiene a Dios DESCANSANDO (el verbo shavat, emparentado pero distinto) y bendiciendo el s\u00e9ptimo d\u00eda, pero la palabra shabbat misma no se pronuncia hasta aqu\u00ed, cuatro cap\u00edtulos antes de que se convierta en mandamiento en el Sina\u00ed (\u00c9xodo 20:8-11). Su primera aparici\u00f3n en la Biblia duplica el sustantivo para dar \u00e9nfasis \u2014 shabbaton, shabbat-qodesh, \u00abun reposo solemne, un s\u00e1bado consagrado\u00bb (v. 23) \u2014 como si el texto tuviera que recuperar el tiempo perdido."),
+    "omer": ("gomer", "GOMER \u2014 una medida seca, algo m\u00e1s de dos litros, la d\u00e9cima parte de un efa (v. 36). \u26a0 La misma palabra, de la misma ra\u00edz que significa \u00abmont\u00f3n\u00bb, nombra tambi\u00e9n una GAVILLA de grano corriente (Lev\u00edtico 23:10-15; Rut 2:7) \u2014 una sola entrada l\u00e9xica haciendo doble trabajo, como un fajo de mies en el campo y como unidad fija de volumen. Su vida posterior es calendaria: Lev\u00edtico 23:15-16 manda contar cincuenta d\u00edas desde el primer gomer de la cosecha hasta Pentecost\u00e9s, una cuenta que a\u00fan se guarda hoy como \u00abel Conteo del \u00d3mer\u00bb \u2014 un ritual que nada tiene que ver con el man\u00e1 y que solo toma prestado el nombre de la medida de este cap\u00edtulo."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -11862,6 +11892,14 @@ ENCYCLOPEDIA_ES = {
     "simeon-of-jerusalem": ("Sime\u00f3n (en el templo)", "El hombre que esperaba. Lucas lo llama justo y piadoso y no le da cargo alguno: ni sacerdote ni escriba, s\u00f3lo un hombre de Jerusal\u00e9n a quien se le hab\u00eda dicho que no morir\u00eda antes de ver al Cristo del Se\u00f1or. Toma al ni\u00f1o en brazos y dice el c\u00e1ntico que la iglesia llam\u00f3 despu\u00e9s NUNC DIMITTIS, por sus primeras palabras en lat\u00edn. \u26a0 Conviene leer el griego de Lucas 2:29 con sus tres palabras juntas \u2014apolyeis, doulos, despota: soltar, esclavo, due\u00f1o\u2014. Es el vocabulario de la manumisi\u00f3n. \u26a0 Y el alcance de lo que dice a continuaci\u00f3n es todo Lucas-Hechos en una l\u00ednea: luz para revelaci\u00f3n a las NACIONES y gloria de tu pueblo ISRAEL. No confundir con Sime\u00f3n hijo de Jacob ni con Sim\u00f3n Pedro; el nombre es el mismo hebreo Shim'on."),
     "anna-the-prophetess": ("Ana la profetisa", "Hija de Fanuel, de la tribu de ASER, una de las del norte deportadas por Asiria en el 722 a.C. y que, en el relato est\u00e1ndar, no volvieron. Lucas nombra a una mujer de Aser en el templo de Jerusal\u00e9n siete siglos despu\u00e9s, con una genealog\u00eda que evidentemente conoc\u00eda, y no lo explica. \u26a0 La llama proph\u0113tis, femenino de profeta, sin discutirlo y en mitad de una frase: el mismo t\u00edtulo que el Antiguo Testamento griego da a Mar\u00eda, D\u00e9bora y Hulda. \u26a0 Su edad es de verdad ambigua: 'viuda he\u014ds de ochenta y cuatro a\u00f1os' puede significar que AHORA tiene ochenta y cuatro, o que lleva viuda ochenta y cuatro, lo que la pondr\u00eda por encima de los cien. He\u014ds significa normalmente 'hasta', lo que favorece la primera. Su nombre griego es el mismo que Ana, la madre de Samuel, que tambi\u00e9n or\u00f3 en un santuario y tambi\u00e9n cant\u00f3."),
     "new-jerusalem": ("La nueva Jerusal\u00e9n", "La ciudad que BAJA. En Apocalipsis 21 no se construye y nadie entra en ella desde fuera: desciende del cielo, de parte de Dios, ya terminada, 'ataviada como una novia para su marido' (21:2). \u26a0 Sus medidas son el argumento: doce mil estadios de largo, de ancho Y de alto (21:16) \u2014unos 2.200 km en cada direcci\u00f3n\u2014 con un muro de 144 codos. Eso es 12 x 1.000 y 12 x 12, y hace de la ciudad un CUBO. \u26a0 El \u00fanico otro cubo de la Biblia es el Lugar Sant\u00edsimo, de veinte codos por lado (1 Reyes 6:20), el cuarto en el que un hombre entraba una vez al a\u00f1o. El cap\u00edtulo toma esas proporciones y las expande al tama\u00f1o del mundo conocido, y luego dice con palabras en 21:22 lo que ya hab\u00eda dicho con n\u00fameros: no hay santuario en ella, porque la ciudad entera lo es. \u26a0 Las puertas llevan las doce tribus y los cimientos los doce ap\u00f3stoles, y nada en el texto los concilia. Las puertas no se cierran nunca porque no hay noche contra la que cerrarlas, y el mismo cap\u00edtulo dice que nada com\u00fan entrar\u00e1. El Apocalipsis sostiene las dos frases a veinte vers\u00edculos de distancia y no las jerarquiza."),
+    "sin-wilderness": ("Desierto de Sin", "Un tramo de desierto en la ruta de los israelitas entre ELIM y el Sinaí "
+        "(Éxodo 16:1), alcanzado el día quince del segundo mes después de salir de Egipto — donde el pueblo "
+        "murmura por primera vez por comida y recibe codornices y maná. ⚠ Su nombre hebreo, Sin, es un topónimo de "
+        "origen desconocido, sin relación de sonido ni de sentido con la palabra castellana para el pecado; el "
+        "parecido es pura coincidencia de la transliteración, y es una palabra distinta del SINAÍ al que bordea. "
+        "Su ruta exacta es incierta, como la mayoría de los itinerarios del desierto — la tradicional recorre la "
+        "llanura costera occidental de la península — y vuelve a nombrarse una sola vez más, como una etapa que "
+        "el pueblo recuerda haber pasado (Números 33:11-12)."),
     "upper-room": ("El aposento alto", "El cuarto de arriba, y el Nuevo Testamento lo llama de tres maneras distintas. Lucas 22:11 hace que Jes\u00fas pregunte por el <em>katalyma</em>, el APOSENTO DE HU\u00c9SPEDES: la misma palabra que Lucas usa de la casa llena de Bel\u00e9n en 2:7. El vers\u00edculo siguiente lo llama <em>anagaion</em>, aposento alto, palabra que sale dos veces en el Nuevo Testamento y las dos en esta escena (Lucas 22:12; Marcos 14:15). Y Hechos 1:13 lo llama <em>hyper&#333;on</em>, el cuarto de arriba donde los once esperan entre la ascensi\u00f3n y Pentecost\u00e9s. \u26a0 Lucas ata los dos sucesos a un mismo lugar. \u26a0 Un edificio de la Colina Occidental de Jerusal\u00e9n se identifica con ese cuarto desde al menos el siglo IV. Jacob Pinkerfeld lo excav\u00f3 tras los da\u00f1os de mortero de 1948, baj\u00f3 por suelos \u00e1rabes, cruzados y bizantinos hasta un suelo de \u00e9poca romana, y fech\u00f3 las hiladas inferiores y ese suelo en el SIGLO I. Ley\u00f3 el edificio como sinagoga y muri\u00f3 en 1956, antes de que se tradujeran los grafitos hallados en el enlucido del siglo I ca\u00eddo dentro. La traducci\u00f3n, cuando lleg\u00f3, inclu\u00eda <em>&laquo;oh Jes\u00fas, que yo viva&raquo;</em>, lo que reformul\u00f3 el edificio como sinagoga JUDEOCRISTIANA \u2014 una casa de reuni\u00f3n levantada por jud\u00edos que segu\u00edan a Jes\u00fas \u2014 y encajaba con la noticia de Eusebio (h. 318) de una gran iglesia en la Colina Occidental construida por jud\u00edos. \u26a0 Y su nicho de la Tor\u00e1 no mira al Monte del Templo: mira al noroeste, hacia el G\u00f3lgota y la tumba vac\u00eda. Sea lo que sea, es una decisi\u00f3n arquitect\u00f3nica deliberada sobre d\u00f3nde se hab\u00eda desplazado el centro."),
 }
 
@@ -12219,6 +12257,51 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "exod16": [dict(
+        file="exod16-gathering-manna-bouts.jpg",
+        title="The Gathering of the Manna",
+        title_es="La recolección del maná",
+        artist="Dieric Bouts",
+        artist_es="Dieric Bouts",
+        year="between 1464 and 1467",
+        location="St. Peter's Church, Leuven, Belgium — right wing of the Altarpiece of the Holy Sacrament",
+        location_es="Iglesia de San Pedro, Lovaina, Bélgica — ala derecha del Retablo del Santísimo Sacramento",
+        alt="A Flemish oil panel painting. In the foreground, five people in richly colored "
+            "fifteenth-century clothing — not biblical dress — kneel and bend low, gathering a "
+            "scattering of small pale flakes off bare ground into metal jugs and cups. A child "
+            "stands watching between two of the women. Behind them, tiny figures cross a rocky, "
+            "mountainous wilderness under a blue evening sky, where a bright glowing cloud hangs "
+            "near the top of the composition.",
+        note="⚠ Everyone here is dressed as fifteenth-century Flemish burghers, not Bronze Age "
+             "Israelites — deliberately. This panel is one of four Old Testament scenes flanking "
+             "Dieric Bouts's Last Supper at the center of the Altarpiece of the Holy Sacrament, "
+             "commissioned in 1464 by Leuven's own Confraternity of the Holy Sacrament for this "
+             "church. Each side panel was chosen as a TYPE of the Eucharist — Abraham and "
+             "Melchizedek's bread and wine, the Passover meal, Elijah fed in the wilderness, and "
+             "this one — so a congregation gathering for communion saw its own bread's whole "
+             "backstory in bread pictures on either side of it. The anachronistic dress is the "
+             "same instinct as this chapter's closing note: a jar of manna was kept, permanently, "
+             "specifically so it could be looked at rather than eaten (v33-34) — bread turned "
+             "into a standing witness. Bouts paints Israelites who look exactly like the "
+             "confraternity members funding the altar, collapsing forty centuries into one "
+             "gesture at the altar rail.",
+        note_es="⚠ Aquí todos visten como burgueses flamencos del siglo XV, no como israelitas "
+                "de la Edad del Bronce — a propósito. Este panel es una de cuatro escenas del "
+                "Antiguo Testamento que flanquean la Última Cena de Dieric Bouts, en el centro "
+                "del Retablo del Santísimo Sacramento, encargado en 1464 por la propia Cofradía "
+                "del Santísimo Sacramento de Lovaina para esta iglesia. Cada panel lateral se "
+                "eligió como TIPO de la Eucaristía — el pan y el vino de Abraham y Melquisedec, "
+                "la cena de la Pascua, Elías alimentado en el desierto, y este — de modo que una "
+                "congregación reunida para la comunión veía toda la historia previa de su propio "
+                "pan en cuadros de pan a ambos lados. El vestuario anacrónico responde al mismo "
+                "instinto que la nota final de este capítulo: se guardó una vasija de maná, "
+                "permanentemente, precisamente para que se pudiera mirar y no comer (vv. 33-34) "
+                "— pan convertido en testigo permanente. Bouts pinta israelitas que se parecen "
+                "exactamente a los miembros de la cofradía que costeó el retablo, colapsando "
+                "cuarenta siglos en un solo gesto junto al altar.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Dieric_Bouts_-_The_Gathering_of_the_Manna_-_WGA03012.jpg",
+    )],
     "lev19": [dict(
         file="millet-the-gleaners.jpg",
         title="The Gleaners",
