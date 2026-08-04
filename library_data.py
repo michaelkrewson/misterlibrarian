@@ -161,7 +161,7 @@ DICTIONARY = [
     ["politeuomai", "politeuomai", "πολιτεύομαι", "politeuomai", "To LIVE AS A CITIZEN — to discharge one's duties in the public life of a city, from politēs, citizen (the root of 'politics'). ⚠ Paul had a perfectly ordinary word for 'walk' or 'conduct yourselves' (peripateō, which he uses constantly) and deliberately did not use it at Philippians 1:27, because PHILIPPI WAS A ROMAN COLONY settled with army veterans and unusually proud of its citizenship — the magistrates who had beaten Paul there panicked the moment they learned he was a citizen (Acts 16:37-39). He tells them to exercise their citizenship worthily of the gospel, and at 3:20 lands the other half: 'our politeuma, our commonwealth, is in the heavens.' Every version smooths it to conduct or behaviour, and the local point vanishes.", ["Philippians", 1, 27]],
     ["splanchna", "splanchna", "σπλάγχνα", "splanchna", "The INWARD PARTS — bowels, entrails; and in both Greek and Hebrew idiom the seat of the deepest feeling, where English puts the heart. It is the strongest affection-word available: the related verb splanchnizomai is what the Gospels use of Jesus being moved with compassion at a crowd or a leper, and Judas's entrails 'poured out' in Acts 1:18 are the same noun in its literal sense. Paul longs for the Philippians 'in the splanchna of Christ Jesus' (1:8). KJV prints 'bowels' unembarrassed; modern versions retreat to 'affection', which is a substitution rather than a translation.", ["Philippians", 1, 8]],
     ["proorizo", "proorizō", "προορίζω", "proorizō", "To MARK OUT BEFOREHAND — pro ('before') + horizō ('to set a boundary'), the same verb behind 'horizon' and behind Romans 1:4's 'appointed Son of God'. The Latin praedestinare gave English PREDESTINE, which now arrives carrying five centuries of argument the Greek word did not originally have (Augustine against Pelagius, Calvin against Arminius). ⚠ Worth noticing WHAT Ephesians 1 says is predestined: not who is damned, but that those in Christ are destined FOR ADOPTION and TO BE HOLY. The chapter states a purpose, not a roster. This translation reads 'marked out beforehand' so the boundary-drawing image can be heard before the systems reach it. Romans 8:29 is the verse the whole argument is fought over, and it is worth being exact about what it says: they are marked out beforehand TO BE FORMED WITH THE IMAGE OF HIS SON \u2014 a marked-out destination. Whether the marking also fixes WHO travels to it is the Calvinist-Arminian question, and the verse leaves it to inference in both directions. KJV and RV import the Latin 'predestinate'; ASV and NWT retreat to 'foreordained'.", ["Ephesians", 1, 5]],
-    ["mysterion", "mystērion", "μυστήριον", "mystērion", "A MYSTERY — but emphatically not a puzzle or something unknowable. In Paul it is an OPEN SECRET: something long hidden in God and now announced, whose content he states plainly at Ephesians 3:6 — that Gentiles are fellow heirs, in the same body. ⚠ This is nearly the opposite of the word's use in the Hellenistic MYSTERY-RELIGIONS, where a mystērion was what initiates must never reveal; Paul's mysteries are precisely the things now published. The Latin Vulgate sometimes rendered it sacramentum, which is how 'mystery' and 'sacrament' came to be entangled in Western theology.", ["Ephesians", 1, 9]],
+    ["mysterion", "mystērion", "μυστήριον", "mystērion", "A MYSTERY — but emphatically not a puzzle or something unknowable. In Paul it is an OPEN SECRET: something long hidden in God and now announced, whose content he states plainly at Ephesians 3:6 — that Gentiles are fellow heirs, in the same body. ⚠ This is nearly the opposite of the word's use in the Hellenistic MYSTERY-RELIGIONS, where a mystērion was what initiates must never reveal; Paul's mysteries are precisely the things now published. The Latin Vulgate sometimes rendered it sacramentum, which is how 'mystery' and 'sacrament' came to be entangled in Western theology. ⚠ Mark uses the same word in nearly the opposite direction: at Mark 4:11, the mystērion of the kingdom is given to the Twelve alone, singular, while 'those outside' get only parables — a mystery still functioning as something kept, not yet the published, everyone's-mystery sense Paul will later give the word. Matthew's parallel (13:11) makes it plural, mystēria, a small but real difference this library does not harmonize away.", ["Ephesians", 1, 9]],
     ["anakephalaioo", "anakephalaioō", "ἀνακεφαλαιόω", "anakephalaioō", "To GATHER UP UNDER ONE HEAD — and English has no single equivalent. It is built on kephalaion, the SUM at the foot of a column of figures, the main point of an argument, the heading of a paragraph; and behind that stands kephalē, HEAD. So it means at once to sum up, to bring under one head, and to RECAPITULATE (the Latin calque recapitulare, which gave Irenaeus his whole theology of Christ redoing Adam's story rightly). Ephesians 1:10 uses it of God's plan for the fullness of the times: to gather up all things in Christ, in heaven and on earth. Every English version picks one strand of a word that holds three — KJV 'gather together in one', ASV 'sum up', Douay 're-establish'.", ["Ephesians", 1, 10]],
     ["pleroma", "plērōma", "πλήρωμα", "plērōma", "FULLNESS — that which fills, or the state of being full, or the full measure/complement (a ship's full crew is its plērōma). ⚠ Ephesians 1:23 puts it in one of the hardest phrases in Paul: the congregation is Christ's body, 'the plērōma of the one who fills all things in all' — which can mean that he fills IT, or, far more startlingly, that it COMPLETES him, as a body completes a head; and the participle can be read middle ('who fills') or passive ('who is being filled'). Chrysostom took the bold reading, most moderns the milder. The word was later seized on by the Gnostics for the divine realm of emanations, which is a much later development and no part of Paul's usage.", ["Ephesians", 1, 23]],
     ["anathema", "anathema", "ἀνάθεμα", "anathema", "A thing DEVOTED TO DESTRUCTION — set apart and handed over to God to be annihilated; the Greek Old Testament's rendering of the Hebrew cherem, the 'ban' under which Jericho and its contents were placed (Joshua 6:17). It began as a NEUTRAL word (anathēma, a votive offering hung up in a temple) and darkened: what is given wholly to God is beyond ordinary use, and for an enemy that means devoted to ruin. Paul pronounces it TWICE in Galatians 1:8-9 on anyone — himself or an angel included — who preaches a different gospel. English 'anathema' descends straight from it, and it is worth knowing it meant a curse of total destruction, not a mere strong dislike.", ["Galatians", 1, 8]],
@@ -1731,6 +1731,14 @@ DICTIONARY = [
      "the abstract 'Amargura,' Bitterness, trading the specific old image for the quality it "
      "stood for.",
      ("Revelation", 8, 11)),
+    ("automate", "automatē", "αὐτομάτη", "automatē",
+     "AUTOMATICALLY, OF ITSELF — the word behind the English 'automatic', and one of only two "
+     "uses in the whole New Testament (the other, Acts 12:10, a prison gate that opens by "
+     "itself). ⚠ In the Parable of the Growing Seed, unique to Mark, it describes what the earth "
+     "does: 'the earth bears fruit automatē' (Mark 4:28), with no verb of human effort attached "
+     "to the growing itself — the farmer sows, sleeps, rises, and reaps, but the word for what "
+     "happens in between belongs to the ground, not to him.",
+     ("Mark", 4, 28)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6549,6 +6557,13 @@ XREFS = [
     (("Revelation", 8, 7), ("Exodus", 9, 23), "hail and fire together, the same combination as the seventh plague of Egypt, now aimed at the whole earth rather than one nation"),
     (("Revelation", 8, 11), ("Deuteronomy", 29, 18), "wormwood as the Hebrew Bible's own standing image for the bitterness of broken covenant, long before this chapter names a star after it"),
     (("Revelation", 8, 11), ("Jeremiah", 9, 15), "a people fed wormwood and given poisoned water to drink, the same image this chapter turns into an actual star"),
+    (("Mark", 4, 1), ("Mark", 3, 9), "the boat Jesus told his disciples to keep ready three chapters ago is the boat used here"),
+    (("Mark", 4, 12), ("Isaiah", 6, 9), "seeing but not perceiving, hearing but not understanding -- Isaiah's own commissioning vocabulary, quoted without a citation formula"),
+    (("Mark", 4, 12), ("Matthew", 13, 14), "the same purpose stated as fulfilled prophecy rather than Jesus's own bald reason, a real difference between the two Gospels' framing"),
+    (("Mark", 4, 21), ("Matthew", 5, 15), "the lamp under a basket, recurring in an entirely different setting inside the Sermon on the Mount"),
+    (("Mark", 4, 24), ("Matthew", 7, 2), "the measure you measure, recurring attached to judging others rather than to parables"),
+    (("Mark", 4, 32), ("Ezekiel", 17, 23), "birds nesting in its branches, the same phrase Ezekiel uses of the cedar of Lebanon"),
+    (("Mark", 4, 39), ("Mark", 1, 25), "be muzzled, the identical rebuke-and-command pair Jesus already used on an unclean spirit"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -12045,6 +12060,13 @@ DICTIONARY_ES = {
         "la única del estante en español que no se limita a traducir el nombre de la estrella: lo "
         "cambia, del botánico 'Ajenjo' (que coincide con RV60) al abstracto 'Amargura', "
         "cambiando la imagen antigua concreta por la cualidad que representaba."),
+    "automate": ("automátē", "AUTOMÁTICAMENTE, POR SÍ MISMA — la palabra detrás del español "
+        "'automático', y uno de solo dos usos en todo el Nuevo Testamento (el otro, Hechos "
+        "12:10, una puerta de prisión que se abre por sí sola). ⚠ En la parábola de la semilla "
+        "que crece, exclusiva de Marcos, describe lo que hace la tierra: 'la tierra da fruto "
+        "automátē' (Marcos 4:28), sin ningún verbo de esfuerzo humano unido al crecimiento "
+        "mismo — el agricultor siembra, duerme, se levanta y siega, pero la palabra para lo que "
+        "sucede en medio pertenece a la tierra, no a él."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14031,6 +14053,60 @@ CHAPTER_ART = {
         source_url="https://commons.wikimedia.org/wiki/File:Pentecost%C3%A9s_(El_Greco,_c._1600)_Prado.jpg",
     )],
 
+    "mark4": [dict(
+        file="rembrandt-storm-sea-of-galilee.jpg",
+        title="Christ in the Storm on the Lake of Galilee",
+        title_es="Cristo en la tempestad en el mar de Galilea",
+        artist="Rembrandt van Rijn",
+        artist_es="Rembrandt van Rijn",
+        year="1633",
+        location="Stolen from the Isabella Stewart Gardner Museum, Boston, 1990; still missing",
+        location_es="Robado del Museo Isabella Stewart Gardner, Boston, en 1990; sigue "
+                    "desaparecido",
+        alt="A dramatic oil painting of a small fishing boat tilted almost vertically on a huge "
+            "breaking wave, its sail torn and straining, dark storm clouds filling most of the "
+            "sky above a single break of pale light at the upper left. At the bow, a man kneels "
+            "in the rigging hauling on a line; below him, several men strain against ropes and "
+            "the mast. In the crowded stern, a cluster of men huddle together, one bent forward "
+            "as if sick, others gripping the boat's sides or looking toward an unseen calm "
+            "figure among them. At the far right edge, a man in a cap holds a rope and looks "
+            "directly out of the painting.",
+        note="&#9888; <strong>This painting has been missing since 1990.</strong> It was one of "
+             "thirteen works stolen from the Isabella Stewart Gardner Museum in Boston in the "
+             "early hours of March 18, 1990 &mdash; still the largest unsolved art theft in "
+             "history, and the empty frame remains on the museum's wall by the terms of Gardner's "
+             "own will, waiting for the painting to come back. It is also Rembrandt's only "
+             "seascape.<br><br><strong>Count the figures.</strong> Thirteen disciples plus "
+             "Jesus would make fourteen, and fourteen is traditionally how many are counted "
+             "here &mdash; one more than the Twelve and their teacher strictly requires. The man "
+             "at the far right, in a cap, gripping a rope and looking directly out of the "
+             "canvas at the viewer rather than at the storm, is traditionally identified as "
+             "Rembrandt himself, painted into his own biblical scene as a witness.<br><br>"
+             "&#9888; <strong>The chapter never says how many were in the boat.</strong> Mark "
+             "4:36 only adds that 'other boats were with him' &mdash; a detail with nothing to "
+             "do with the number of men in this one, and easy to forget once a painting this "
+             "famous has supplied a headcount the text itself never gives.",
+        note_es="&#9888; <strong>Este cuadro está desaparecido desde 1990.</strong> Fue una de "
+                "trece obras robadas del Museo Isabella Stewart Gardner en Boston en las "
+                "primeras horas del 18 de marzo de 1990 &mdash; todavía el mayor robo de arte "
+                "sin resolver de la historia, y el marco vacío sigue colgado en la pared del "
+                "museo por disposición del propio testamento de Gardner, esperando a que el "
+                "cuadro regrese. Es también el único paisaje marino de Rembrandt.<br><br>"
+                "<strong>Cuente las figuras.</strong> Trece discípulos más Jesús darían "
+                "catorce, y catorce es tradicionalmente el número que se cuenta aquí &mdash; "
+                "una más de lo que exigen estrictamente los Doce y su maestro. El hombre del "
+                "extremo derecho, con gorra, sosteniendo una cuerda y mirando directamente "
+                "hacia afuera del lienzo, hacia el espectador, en vez de hacia la tormenta, se "
+                "identifica tradicionalmente como el propio Rembrandt, pintado dentro de su "
+                "propia escena bíblica como testigo.<br><br>&#9888; <strong>El capítulo nunca "
+                "dice cuántos iban en la barca.</strong> Marcos 4:36 solo añade que «había "
+                "otras barcas con él» &mdash; un detalle que nada tiene que ver con el número "
+                "de hombres en esta, y fácil de olvidar una vez que un cuadro tan famoso ha "
+                "dado un recuento que el propio texto nunca ofrece.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_Christ_in_the_Storm_on_"
+                   "the_Lake_of_Galilee.jpg",
+    )],
     "mark3": [dict(
         file="tissot-withered-hand.jpg",
         title="The Man with the Withered Hand",
