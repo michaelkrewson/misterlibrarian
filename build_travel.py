@@ -1297,7 +1297,10 @@ def build_about():
 <div class="panel prose">
   <p>{html.escape(BLURB)} This is a personal notebook — where we went, what we ate,
   what it cost in time and shoe leather, and whether it was worth it. No sponsored
-  posts, no affiliate links, no press trips. If something was disappointing, it says so.</p>
+  posts, no press trips. Once in a while there's a disclosed affiliate link, when it's
+  directly relevant to what I'm actually writing about — always flagged plainly right
+  where it appears, never folded in silently. If something was disappointing, it still
+  says so.</p>
 
   <p>Photographs are my own unless credited otherwise. Places and prices were true on
   the day I wrote them down and probably aren't any more — check before you go.</p>
