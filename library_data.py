@@ -969,7 +969,7 @@ DICTIONARY = [
     ("sokhenet", "sokhenet", "סֹכֶנֶת", "sokhenet",
      "ATTENDANT, carer — a rare feminine form from a root meaning 'to be of use, of benefit.' Used of Abishag the Shunammite, brought to warm the dying David (1 Kings 1:2, 4). KJV 'let her cherish him'; the proposal is medical in form and dynastic in substance, and the narrator's flat 'but the king did not know her' publishes its result.", ("1 Kings", 1, 2)),
     ("chayil", "chayil", "חַיִל", "chayil",
-     "STRENGTH, worth, capability — and depending on context: an army, wealth, valor, or plain competence. An ish chayil is a 'worthy man'; the eshet chayil of Proverbs 31 is a WOMAN OF VALOUR. In 1 Kings 1 the same phrase is used twice within ten verses in opposite directions: Adonijah flatters the messenger as a worthy man (v42), and Solomon then makes Adonijah's life conditional on proving himself a 'son of chayil' (v52). \u26a0 Proverbs 31 is where the English tradition does the most damage to the word. It occurs twice in that chapter and once in its preamble, and the three uses point in different directions: v3 warns a king not to give his CHAYIL to women; v10 praises an eshet chayil; v29 says many daughters have DONE chayil. The shelf splits five ways at v10 \u2014 KJV 'virtuous', ASV 'worthy', NWT 'capable', TNM 'competente' \u2014 and only RV 1909 keeps the force, with 'Mujer fuerte'. The KJV's own margin at v29 admits the alternative: 'or, have gotten riches'.", ("1 Kings", 1, 52)),
+     "STRENGTH, worth, capability — and depending on context: an army, wealth, valor, or plain competence. An ish chayil is a 'worthy man'; the eshet chayil of Proverbs 31 is a WOMAN OF VALOUR. In 1 Kings 1 the same phrase is used twice within ten verses in opposite directions: Adonijah flatters the messenger as a worthy man (v42), and Solomon then makes Adonijah's life conditional on proving himself a 'son of chayil' (v52). The plural anshei chayil is Jethro's own opening criterion for the judges Moses is told to appoint (Exodus 18:21, repeated at v25 of Moses' actual choice) — the same word applied not to one exceptional person but to an entire pool of candidates, first of four qualifications in a list otherwise made of character (fearing God, truthful, hating unjust gain) rather than pedigree. \u26a0 Proverbs 31 is where the English tradition does the most damage to the word. It occurs twice in that chapter and once in its preamble, and the three uses point in different directions: v3 warns a king not to give his CHAYIL to women; v10 praises an eshet chayil; v29 says many daughters have DONE chayil. The shelf splits five ways at v10 \u2014 KJV 'virtuous', ASV 'worthy', NWT 'capable', TNM 'competente' \u2014 and only RV 1909 keeps the force, with 'Mujer fuerte'. The KJV's own margin at v29 admits the alternative: 'or, have gotten riches'.", ("1 Kings", 1, 52)),
     ("nagid", "nagid", "נָגִיד", "nagid",
      "LEADER, designated ruler — the older, less grand word Israel's tradition prefers for the man God appoints over his people, distinct from melekh, 'king.' Samuel anoints Saul as nagid before anyone calls him king; David uses it of Solomon at 1 Kings 1:35 ('it is he whom I have appointed to be leader over Israel and over Judah'). A nagid is designated by someone; a melekh simply reigns.", ("1 Kings", 1, 35)),
     ("kisse", "kisse", "כִּסֵּא", "kisse",
@@ -3173,7 +3173,7 @@ ENCYCLOPEDIA = [
               "counsel to appoint judges and delegate, the Bible's first management lesson. A Midianite priest "
               "who worships Israel's God: one of scripture's quiet witnesses that the knowledge of the true "
               "God was not sealed inside Israel alone.",
-         refs=[("Exodus", 2, 16), ("Exodus", 2, 18), ("Exodus", 2, 21), ("Exodus", 3, 1)], videos=[]),
+         refs=[("Exodus", 2, 16), ("Exodus", 2, 18), ("Exodus", 2, 21), ("Exodus", 3, 1), ("Exodus", 18, 1), ("Exodus", 18, 11), ("Exodus", 18, 27)], videos=[]),
     dict(slug="zipporah", name="Zipporah", kind="person", aliases=["Zipporah"],
          desc="'Bird' (tsippor, a small bird) — a daughter of the priest of Midian, given to Moses as his "
               "wife (Exodus 2:21), mother of his sons Gershom and Eliezer. She reappears in one of the "
@@ -5160,6 +5160,27 @@ ENCYCLOPEDIA = [
          refs=[("Acts", 3, 11), ("Acts", 5, 12), ("John", 10, 23)],
          coords=(31.7787, 35.2358, 0.05), approx=True,
          modern="eastern Temple Mount, Jerusalem", videos=[]),
+    dict(slug="gershom-son-of-moses", name="Gershom", kind="person",
+         aliases=["Gershom"],
+         desc="Moses' firstborn son by Zipporah, named at his birth for the condition of his father's exile: "
+              "'I have been a sojourner in a foreign land' (Exodus 2:22, ger being the Hebrew for sojourner/"
+              "resident-alien). ⚠ He is a child mentioned twice and never once given a word of his own — "
+              "circumcised in the strange, violent scene at the inn on the road back to Egypt (4:24-26, where "
+              "the text does not even specify which son), then brought back to his father at Sinai by his "
+              "grandfather Jethro along with his younger brother Eliezer (18:2-6). A Levite genealogy centuries "
+              "later (1 Chronicles 23:14-16) lists his own son Shebuel among the Levitical officials, the only "
+              "trace of a line continuing after him.",
+         refs=[("Exodus", 2, 22), ("Exodus", 18, 3)], videos=[]),
+    dict(slug="eliezer-son-of-moses", name="Eliezer (son of Moses)", kind="person",
+         aliases=["Eliezer"],
+         desc="Moses' second son by Zipporah — named only once in the entire Bible, at Exodus 18:4, decades "
+              "after his birth was never narrated at all. ⚠ The name means 'my God is help,' and the verse "
+              "supplies its own explanation in Moses' own voice: 'for the God of my father was my help, and "
+              "delivered me from the sword of Pharaoh' — the only first-person naming-speech given to Moses "
+              "anywhere in the text, retroactively filling a birth Exodus 2 skipped in silence. Not to be "
+              "confused with Abraham's servant Eliezer of Damascus (Genesis 15:2) or the many other Eliezers "
+              "scattered through later genealogies — a common name built on a common root.",
+         refs=[("Exodus", 18, 4)], videos=[]),
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -6445,6 +6466,9 @@ XREFS = [
     (("John", 6, 41), ("Exodus", 16, 2), "GOGGUZŌ / LUN, 'grumble' — the identical pattern fourteen centuries apart: a crowd fed miraculously grumbles about the one who fed them, over the same bread"),
     (("John", 6, 69), ("Matthew", 16, 16), "Peter's confession in the other Gospel, 'the Christ, the Son of the living God' — the reading the Byzantine text imports here, against the earlier 'Holy One of God'"),
     (("John", 6, 45), ("Isaiah", 54, 13), "'they will all be taught by God' quoted directly, a promise to a restored Jerusalem applied here to a crowd fighting over bread"),
+    (("Exodus", 18, 3), ("Exodus", 2, 22), "Gershom's naming, given at his birth — 'I have been a sojourner in a foreign land' — recalled here decades later alongside the brother whose own naming this chapter finally supplies"),
+    (("Exodus", 18, 21), ("Deuteronomy", 1, 15), "Moses retells the same delegation almost verbatim, decades later, as his own decision rather than Jethro's counsel — the two accounts never fully reconciled"),
+    (("Exodus", 18, 25), ("Numbers", 11, 16), "a second, distinct burden-sharing story — seventy elders given the Spirit rather than a chain of appointed judges — read by some as this same reform in a different key"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7447,6 +7471,9 @@ CHRON_CHAPTERS = {
     "exod17": dict(era="exodus",
                   when="Israel's last camp before Sinai. No water at Rephidim, the rock struck at Horeb, and the battle with Amalek — Joshua's first appearance, Moses' hands held up by Aaron and Hur until sunset, and an altar named Jehovah-nissi.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds — shortly after chapter 16, still within the second month out of Egypt, on the final approach to Sinai (19:1-2)."),
+    "exod18": dict(era="exodus",
+                  when="Jethro brings Zipporah and her two sons back to Moses at the mountain of God, hears the whole story, offers sacrifice, and — seeing Moses judging the people alone from morning to evening — advises the delegation structure Moses then adopts.",
+                  clock="Placed here, immediately before Sinai — but the chapter's own language of Moses already teaching 'the statutes of God and his laws' (v16, v20) reads to many readers as later than its position in the text, since the law proper is not given until chapter 20. This library keeps the narrative's own placement and flags the puzzle rather than resolving it."),
     "mal1": dict(era="return",
                  when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
                  clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
@@ -11863,6 +11890,17 @@ DICTIONARY_ES = {
         "(Romanos 14:21; 1 Corintios 8:13). Aqu\u00ed nombra con precisi\u00f3n por qu\u00e9 muchos disc\u00edpulos se van en "
         "el vers\u00edculo siguiente: no porque la ense\u00f1anza fuera confusa, sino porque era una piedra en el "
         "camino que decidieron no esquivar."),
+    "chayil": ("chayil", "FUERZA, valía, capacidad — y según el contexto: un ejército, riqueza, valor, o "
+        "simple competencia. Un ish chayil es un «hombre de valía»; la eshet chayil de Proverbios 31 es "
+        "una MUJER VIRTUOSA. En 1 Reyes 1 la misma frase se usa dos veces en diez versículos en "
+        "direcciones opuestas: Adonías halaga al mensajero llamándolo hombre de valía (v. 42), y luego "
+        "Salomón hace depender la vida de Adonías de que demuestre ser «hijo de chayil» (v. 52). ⚠ El "
+        "plural anshei chayil es el primer criterio de Jetro para los jueces que Moisés debe nombrar "
+        "(Éxodo 18:21, repetido en el v. 25 sobre la elección real de Moisés) — la misma palabra "
+        "aplicada no a una sola persona excepcional sino a todo un grupo de candidatos, la primera de "
+        "cuatro cualidades en una lista hecha por lo demás de carácter (temor de Dios, verdad, "
+        "aborrecer la avaricia) y no de linaje. RV60 traduce aquí «varones de virtud»; NVI, «hombres "
+        "capaces»."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -12110,6 +12148,34 @@ ENCYCLOPEDIA_ES = {
         "prácticamente intacta. Es también donde el propio Jesús camina y es interrogado durante la fiesta "
         "de invierno de la Dedicación (Juan 10:22-23), la única otra escena del Nuevo Testamento ambientada "
         "allí."),
+    "jethro": ("Jetro (Reuel)", "El sacerdote de Madián, suegro de Moisés, que le da a su hija Séfora "
+        "(Éxodo 2:16-21). Se le llama REUEL allí («amigo de Dios», 2:18) y JETRO en los capítulos "
+        "siguientes (3:1; 18) — el enigma constante de los dos nombres. Las soluciones más antiguas "
+        "siguen en pie: Reuel es el nombre personal y Jetro (Yitró, de yeter, «abundancia, excelencia») "
+        "un título u honorífico («su excelencia»); o Reuel es el abuelo del clan y Jetro el jefe activo "
+        "de la casa. (Aparece también un tercer nombre, Hobab, Números 10:29 / Jueces 4:11, leído a "
+        "veces como hijo de Reuel y cuñado de Moisés.) En Éxodo 18 Jetro vuelve a Moisés en el Sinaí, "
+        "ofrece sacrificio a Jehová — «ahora conozco que Jehová es más grande que todos los dioses» — y "
+        "le da a Moisés el consejo astuto de nombrar jueces y delegar, la primera lección de gestión de "
+        "la Biblia. Un sacerdote madianita que adora al Dios de Israel: uno de los testigos silenciosos "
+        "de la Escritura de que el conocimiento del Dios verdadero no quedó sellado dentro de Israel."),
+    "gershom-son-of-moses": ("Gersón", "El primogénito de Moisés con Séfora, nombrado al nacer por la "
+        "condición del exilio de su padre: «forastero he sido en tierra ajena» (Éxodo 2:22, siendo ger "
+        "el hebreo para forastero/residente extranjero). ⚠ Es un niño mencionado dos veces y nunca se le "
+        "da una sola palabra propia — circuncidado en la escena extraña y violenta de la posada camino "
+        "de Egipto (4:24-26, donde el texto ni siquiera especifica cuál de los hijos), y traído de "
+        "vuelta a su padre en el Sinaí por su abuelo Jetro junto con su hermano menor Eliezer (18:2-6). "
+        "Una genealogía levítica de siglos después (1 Crónicas 23:14-16) enumera a su propio hijo "
+        "Sebuel entre los oficiales levíticos, el único rastro de una línea que continúa tras él."),
+    "eliezer-son-of-moses": ("Eliezer (hijo de Moisés)", "El segundo hijo de Moisés con Séfora — "
+        "nombrado una sola vez en toda la Biblia, en Éxodo 18:4, décadas después de que su nacimiento "
+        "nunca se narrara en absoluto. ⚠ El nombre significa «mi Dios es ayuda», y el propio versículo "
+        "aporta su explicación en boca de Moisés: «porque el Dios de mi padre me ayudó, y me libró de "
+        "la espada de Faraón» — el único discurso de nombramiento en primera persona que se le da a "
+        "Moisés en todo el texto, llenando retroactivamente un nacimiento que Éxodo 2 pasó por alto en "
+        "silencio. No confundir con Eliezer de Damasco, el siervo de Abraham (Génesis 15:2), ni con los "
+        "muchos otros Eliezer repartidos por genealogías posteriores — un nombre común construido sobre "
+        "una raíz común."),
     "judas-iscariot": ("Judas Iscariote", "El apóstol que entregó a Jesús — «Iscariote» probablemente "
         "signifique «hombre de Queriot», un pueblo de Judea, lo que lo haría el único no galileo de los "
         "Doce (una derivación rival lo liga a los sicarios, aunque ese movimiento está atestiguado más "
@@ -12495,6 +12561,42 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "exod18": [dict(
+        file="exod18-tissot-jethro-moses.jpg",
+        title="Jethro and Moses",
+        title_es="Jetro y Moisés",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="between 1896 and 1900",
+        location="Watercolor illustration, from Tissot's Bible series",
+        location_es="Acuarela, de la serie bíblica de Tissot",
+        alt="A watercolor painting of a group of bearded men seated cross-legged on a "
+            "patterned rug inside a large tent, its striped canvas ceiling ribbed overhead "
+            "with the pale evening sky visible through open flaps behind them. At the center, "
+            "an older man in a white and blue head-covering gestures with both hands while "
+            "speaking to a younger man across from him, who leans forward listening intently, "
+            "one hand raised as if in mid-reply. Several other men sit around them in the "
+            "circle, watching and listening, dressed in dark robes and turbans.",
+        note="⚠ Tissot sets the whole scene inside the tent of v7 — 'they came into the tent' "
+             "— rather than staging the more common choice of a formal audience or a public "
+             "court. The composition reads as conversation, not ceremony: no one stands, no "
+             "one is elevated above the others, and the central gesture is a hand raised "
+             "mid-argument rather than a blessing or a command. Tissot traveled twice to "
+             "Ottoman-ruled Palestine and Syria researching costume, dwellings, and landscape "
+             "for this series, painted late in his career after a religious conversion turned "
+             "him from society portraiture to scripture illustration almost exclusively.",
+        note_es="⚠ Tissot sitúa toda la escena dentro de la tienda del v. 7 — «vinieron a la "
+                "tienda» — en vez de escenificar la opción más común de una audiencia formal o "
+                "un tribunal público. La composición se lee como conversación, no como "
+                "ceremonia: nadie está de pie, nadie está elevado por encima de los demás, y "
+                "el gesto central es una mano alzada en pleno argumento y no una bendición ni "
+                "una orden. Tissot viajó dos veces a Palestina y Siria bajo dominio otomano "
+                "investigando vestuario, viviendas y paisaje para esta serie, pintada tarde en "
+                "su carrera tras una conversión religiosa que lo apartó del retrato de "
+                "sociedad para dedicarse casi por completo a la ilustración bíblica.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Tissot_Jethro_and_Moses.jpg",
+    )],
     "jhn6": [dict(
         file="jhn6-tabgha-mosaic-loaves-fishes.jpg",
         title="Mosaic of the Loaves and Fishes, Tabgha",
