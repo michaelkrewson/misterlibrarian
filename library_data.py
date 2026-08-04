@@ -1671,6 +1671,12 @@ DICTIONARY = [
     ("syneidesis", "syneidēsis", "συνείδησις", "syneidēsis",
      "CONSCIENCE — literally 'knowing together with' (syn + oida), a mind's awareness of itself measured against a standard. ⚠ Romans 2:15 gives its most consequential single appearance: Gentiles who never received the law still have the law's work 'written on their hearts,' with conscience as the witness testifying to it, and their own thoughts 'accusing or even excusing' them — a courtroom running inside a single person, verdict withheld until judgment day. Paul uses the word thirty times across his letters, more than any other New Testament writer, and it becomes one of his standing categories for how a person not under Torah can still be held to a moral standard.",
      ("Romans", 2, 15)),
+    ("trogo", "trōgō", "τρώγω", "trōgō",
+     "TO GNAW, MUNCH — a coarser, more physically concrete verb for eating than the ordinary phagein/esthiō, used elsewhere of animals feeding. ⚠ John 6 uses the ordinary verb for eating through v53, then switches to trōgō six times running (vv54, 56, 57, 58) and does not switch back — exactly at the point where 'eat my flesh' stops sounding like it could be a metaphor and the audience starts fighting over what it could possibly mean (v52). The same harder verb resurfaces at 13:18, of the one 'who eats my bread' who will lift his heel against Jesus — quoting Psalm 41:9, and naming the betrayer without naming him. Most English and Spanish versions flatten both Greek verbs to the same 'eat'/'comer,' losing the escalation the Greek marks on purpose.",
+     ("John", 6, 54)),
+    ("skandalizo", "skandalizō", "σκανδαλίζω", "skandalizō",
+     "TO CAUSE TO STUMBLE, OFFEND — from skandalon, the trigger-stick of a trap, so: to set a snare for, to trip up. ⚠ John 6:61 has Jesus ask his own disciples, after the hardest sentence of the bread-of-life discourse, 'does this skandalizei you?' — not 'does this confuse you' but 'does this trip you.' The noun and verb run through the New Testament as a technical pair for the specific offense the cross and a suffering Messiah give (1 Corinthians 1:23, 'Christ crucified, to Jews a skandalon'), and Paul uses the same verb of anything that might trip up a weaker believer's conscience (Romans 14:21; 1 Corinthians 8:13). Here it names precisely why many disciples leave in the next verse: not that the teaching was unclear, but that it was a stone in the road they chose not to step around.",
+     ("John", 6, 61)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2267,8 +2273,8 @@ ENCYCLOPEDIA = [
          desc="The twelfth apostle, chosen by lot in Acts 1 to take the place Judas left. The qualification Peter states is strict — he must have been with the group from John's baptism through to the ascension, and he must be a witness of the resurrection — so Matthias had been present all along and simply never named. He is never mentioned again in the New Testament, which has fed a persistent reading that the election was premature and that the real twelfth apostle was Paul; against that stands Luke's own silence about any fault, his calling the group 'the twelve' five chapters later, and the fact that nine of the other eleven vanish from the record too. Later tradition sends him to preach in Ethiopia or Cappadocia and gives him a martyr's death; none of it is early. He is the last person in the Bible chosen by casting lots.",
          refs=[("Acts", 1, 23), ("Acts", 1, 26)]),
     dict(slug="judas-iscariot", name="Judas Iscariot", kind="person", aliases=["Judas"],
-         desc="The apostle who handed Jesus over — 'Iscariot' probably meaning 'man of Kerioth', a Judean town, which would make him the only non-Galilean of the Twelve (a rival derivation ties it to the sicarii, the dagger-men, though that movement is attested later). Acts 1 does not curse him: Peter says only that 'he was counted among us, and was allotted his share in this ministry', which is worse than an insult. ⚠ Luke's account of his death (Acts 1:18-19 — a field bought with the wages of wickedness, a headlong fall, a body burst open) does not agree with Matthew's (27:3-10 — the silver thrown into the sanctuary, a hanging, and the priests buying the potter's field). The harmonisations are old and the disagreement is real; this library prints both and does not vote.",
-         refs=[("Acts", 1, 16), ("Acts", 1, 25)]),
+         desc="The apostle who handed Jesus over — 'Iscariot' probably meaning 'man of Kerioth', a Judean town, which would make him the only non-Galilean of the Twelve (a rival derivation ties it to the sicarii, the dagger-men, though that movement is attested later). Acts 1 does not curse him: Peter says only that 'he was counted among us, and was allotted his share in this ministry', which is worse than an insult. ⚠ Luke's account of his death (Acts 1:18-19 — a field bought with the wages of wickedness, a headlong fall, a body burst open) does not agree with Matthew's (27:3-10 — the silver thrown into the sanctuary, a hanging, and the priests buying the potter's field). The harmonisations are old and the disagreement is real; this library prints both and does not vote. John names him for the first time with his father's name — 'Judas, son of Simon Iscariot' (6:71) — in a narrator's aside placed well before any act of betrayal, so that every later scene he appears in carries the label from the start.",
+         refs=[("Acts", 1, 16), ("Acts", 1, 25), ("John", 6, 71)]),
     dict(slug="judas-son-of-james", name="Judas son of James", kind="person", aliases=["Judas son of James"],
          desc="The OTHER Judas among the Twelve — listed by Luke both in his Gospel (6:16) and here, and identified by his father precisely so that nobody confuses him with Iscariot. John 14:22 gives him one line of dialogue and takes the same care: 'Judas — not Iscariot — said to him…'. Matthew and Mark call the same man Thaddaeus (and some manuscripts, Lebbaeus), which is either a second name or a second tradition; the church has generally treated the names as belonging to one person. That two of the Twelve shared a name is a small fact with a long shadow: after the betrayal, the second Judas needed a qualifier for the rest of history.",
          refs=[("John", 14, 22), ("Acts", 1, 13)]),
@@ -2723,7 +2729,7 @@ ENCYCLOPEDIA = [
               "town that saw the most and believed the least: 'more bearable for Sodom' (Matthew 11:23-24). The "
               "excavated site — the basalt-and-limestone synagogue and the house-church over Peter's house — is "
               "among the best-preserved Gospel settings anywhere.",
-         refs=[("Matthew", 4, 13), ("Matthew", 11, 23), ("John", 2, 12)],
+         refs=[("Matthew", 4, 13), ("Matthew", 11, 23), ("John", 2, 12), ("John", 6, 59)],
          coords=(32.8809, 35.5753, 0.06),
          modern="Tell Hum (Capernaum), north shore of the Sea of Galilee, Israel",
          videos=[("Capernaum Unearthed: Why will this fishing village be judged harsher than Sodom?",
@@ -6435,6 +6441,10 @@ XREFS = [
     (("Romans", 2, 9), ("Romans", 1, 16), "'to the Jew first and also to the Greek' repeated word for word from the letter's own thesis — there naming who hears the gospel first, here naming who is judged first"),
     (("Romans", 2, 24), ("Isaiah", 52, 5), "'the name of God is blasphemed among the Gentiles because of you' — Paul's citation, presenting Israel's own scripture as having already convicted them of this centuries earlier"),
     (("Romans", 2, 29), ("2 Corinthians", 3, 6), "'by spirit, not by letter' restated as a standing Pauline pair — the same contrast applied there to the whole ministry of the new covenant"),
+    (("John", 6, 31), ("Exodus", 16, 15), "the manna citation, naming the very chapter that spent its own notes on this bread's Hebrew pun — 'what is it?' becoming its name"),
+    (("John", 6, 41), ("Exodus", 16, 2), "GOGGUZŌ / LUN, 'grumble' — the identical pattern fourteen centuries apart: a crowd fed miraculously grumbles about the one who fed them, over the same bread"),
+    (("John", 6, 69), ("Matthew", 16, 16), "Peter's confession in the other Gospel, 'the Christ, the Son of the living God' — the reading the Byzantine text imports here, against the earlier 'Holy One of God'"),
+    (("John", 6, 45), ("Isaiah", 54, 13), "'they will all be taught by God' quoted directly, a promise to a restored Jerusalem applied here to a crowd fighting over bread"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -11834,6 +11844,25 @@ DICTIONARY_ES = {
         "usa la palabra treinta veces en sus cartas, m\u00e1s que ning\u00fan otro escritor del Nuevo "
         "Testamento, y se convierte en una de sus categor\u00edas fijas para explicar c\u00f3mo una persona "
         "que no est\u00e1 bajo la Tor\u00e1 puede seguir sujeta a un est\u00e1ndar moral."),
+    "trogo": ("tr\u1e53g\u014d", "ROER, MASTICAR \u2014 un verbo m\u00e1s tosco y f\u00edsicamente concreto para comer que el "
+        "corriente phagein/esth\u00ed\u014d, usado en otros lugares de animales aliment\u00e1ndose. \u26a0 Juan 6 usa el "
+        "verbo corriente para comer hasta el v. 53, y luego cambia a tr\u1e53g\u014d seis veces seguidas (vv. 54, "
+        "56, 57, 58) y no vuelve atr\u00e1s \u2014 justo en el punto donde \u00abcomer mi carne\u00bb deja de sonar como una "
+        "posible met\u00e1fora y el p\u00fablico empieza a discutir entre s\u00ed sobre qu\u00e9 podr\u00eda querer decir (v. 52). "
+        "El mismo verbo m\u00e1s duro reaparece en 13:18, del que \u00abcome mi pan\u00bb y levantar\u00e1 el tal\u00f3n contra "
+        "Jes\u00fas \u2014 citando el Salmo 41:9, y nombrando al traidor sin nombrarlo. La mayor\u00eda de las versiones "
+        "castellanas e inglesas aplanan los dos verbos griegos al mismo \u00abcomer\u00bb, perdiendo la escalada que "
+        "el griego marca a prop\u00f3sito."),
+    "skandalizo": ("skandal\u00edz\u014d", "HACER TROPEZAR, OFENDER \u2014 de sk\u00e1ndalon, la varilla disparadora de una "
+        "trampa, as\u00ed que: poner una trampa a, hacer caer. \u26a0 Juan 6:61 tiene a Jes\u00fas preguntando a sus "
+        "propios disc\u00edpulos, despu\u00e9s de la frase m\u00e1s dura del discurso del pan de vida, \u00ab\u00bfesto os "
+        "skandal\u00edzei?\u00bb \u2014 no \u00ab\u00bfesto os confunde?\u00bb sino \u00ab\u00bfesto os hace tropezar?\u00bb. El sustantivo y el verbo "
+        "recorren el Nuevo Testamento como un par t\u00e9cnico para la ofensa espec\u00edfica que dan la cruz y un "
+        "Mes\u00edas sufriente (1 Corintios 1:23, \u00abCristo crucificado, para los jud\u00edos sk\u00e1ndalon\u00bb), y Pablo usa "
+        "el mismo verbo de cualquier cosa que pueda hacer tropezar la conciencia de un creyente m\u00e1s d\u00e9bil "
+        "(Romanos 14:21; 1 Corintios 8:13). Aqu\u00ed nombra con precisi\u00f3n por qu\u00e9 muchos disc\u00edpulos se van en "
+        "el vers\u00edculo siguiente: no porque la ense\u00f1anza fuera confusa, sino porque era una piedra en el "
+        "camino que decidieron no esquivar."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -12081,6 +12110,26 @@ ENCYCLOPEDIA_ES = {
         "prácticamente intacta. Es también donde el propio Jesús camina y es interrogado durante la fiesta "
         "de invierno de la Dedicación (Juan 10:22-23), la única otra escena del Nuevo Testamento ambientada "
         "allí."),
+    "judas-iscariot": ("Judas Iscariote", "El apóstol que entregó a Jesús — «Iscariote» probablemente "
+        "signifique «hombre de Queriot», un pueblo de Judea, lo que lo haría el único no galileo de los "
+        "Doce (una derivación rival lo liga a los sicarios, aunque ese movimiento está atestiguado más "
+        "tarde). Hechos 1 no lo maldice: Pedro dice solo que «era contado con nosotros, y tenía parte en "
+        "este ministerio», lo cual es peor que un insulto. ⚠ El relato de Lucas sobre su muerte (Hechos "
+        "1:18-19 — un campo comprado con el salario de la maldad, una caída de cabeza, un cuerpo reventado) "
+        "no concuerda con el de Mateo (27:3-10 — la plata arrojada en el santuario, un ahorcamiento, y los "
+        "sacerdotes comprando el campo del alfarero). Las armonizaciones son antiguas y el desacuerdo es "
+        "real; esta biblioteca imprime los dos relatos y no vota. Juan lo nombra por primera vez con el "
+        "nombre de su padre — «Judas, hijo de Simón Iscariote» (6:71) — en un apunte del narrador colocado "
+        "mucho antes de cualquier acto de traición, de modo que cada escena posterior en que aparece lleva "
+        "la etiqueta desde el principio."),
+    "capernaum": ("Capernaum", "Kefar Nahum, «aldea de Nahum» — un pueblo pesquero en la orilla norte del "
+        "mar de Galilea que se convierte en la base de todo el ministerio galileo de Jesús («su propia "
+        "ciudad», Mateo 9:1). Entra en este Evangelio por un versículo de viaje (Juan 2:12) y alberga el "
+        "discurso del pan de vida en su sinagoga (Juan 6:59); los sinópticos añaden la casa de Pedro y una "
+        "serie de sanidades — y el veredicto de Jesús sobre el pueblo que más vio y menos creyó: «más "
+        "tolerable será para Sodoma» (Mateo 11:23-24). El sitio excavado — la sinagoga de basalto y caliza "
+        "y la casa-iglesia sobre la casa de Pedro — está entre los escenarios evangélicos mejor conservados "
+        "que existen."),
     "sin-wilderness": ("Desierto de Sin", "Un tramo de desierto en la ruta de los israelitas entre ELIM y el Sinaí "
         "(Éxodo 16:1), alcanzado el día quince del segundo mes después de salir de Egipto — donde el pueblo "
         "murmura por primera vez por comida y recibe codornices y maná. ⚠ Su nombre hebreo, Sin, es un topónimo de "
@@ -12446,6 +12495,54 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "jhn6": [dict(
+        file="jhn6-tabgha-mosaic-loaves-fishes.jpg",
+        title="Mosaic of the Loaves and Fishes, Tabgha",
+        title_es="Mosaico de los panes y los peces, Tabgha",
+        artist="Unknown Byzantine mosaicist; photograph by the Matson Collection",
+        artist_es="Mosaísta bizantino desconocido; fotografía de la Colección Matson",
+        year="mosaic c. AD 480; photograph between 1934 and 1939",
+        location="Church of the Multiplication, Tabgha, Israel (in situ)",
+        location_es="Iglesia de la Multiplicación, Tabgha, Israel (in situ)",
+        alt="A black-and-white archival photograph of an ancient floor mosaic made of small "
+            "square stone tesserae. At the center is a woven basket viewed from above, filled "
+            "with round loaves of bread arranged in a cross pattern. A single fish, rendered "
+            "in dark stone against the lighter background, flanks the basket on each side, "
+            "both facing inward toward it. The surrounding mosaic field is a plain repeating "
+            "pattern of small light-colored tiles, with scattered dark stains and shadows "
+            "across the surface from age and weathering.",
+        note="⚠ Count the loaves: the basket holds only FOUR, not five. This is the floor of the "
+             "Church of the Multiplication at Tabgha, on the traditional site of this "
+             "chapter's miracle on the Sea of Galilee's northwest shore &mdash; a name that "
+             "descends from the Greek <em>Heptapegon</em>, &lsquo;seven springs,&rsquo; "
+             "shortened through Arabic into its present form. The mosaic itself dates to "
+             "roughly AD 480, when the original fourth-century church was enlarged under "
+             "Patriarch Martyrius, and it was laid directly in front of the altar on purpose: "
+             "the fifth loaf is the one detail the mosaic leaves out, so that the altar itself "
+             "&mdash; not a fifth tessera loaf, but the actual place where the Eucharist was "
+             "celebrated &mdash; completes the count. The church was destroyed in the Persian "
+             "invasion of 614 and the mosaic lay buried until German excavators uncovered it "
+             "between 1888 and 1932; this photograph, from the Matson collection, was taken "
+             "within a few years of that rediscovery, before a modern church was built over "
+             "the ancient floor plan in 1984 to protect it.",
+        note_es="⚠ Cuenten los panes: la cesta contiene solo CUATRO, no cinco. Este es el "
+                "suelo de la Iglesia de la Multiplicación en Tabgha, en el sitio tradicional "
+                "del milagro de este capítulo, en la orilla noroeste del mar de Galilea "
+                "&mdash; un nombre que desciende del griego <em>Heptapegon</em>, «siete "
+                "fuentes», acortado a través del árabe hasta su forma actual. El mosaico "
+                "mismo data de alrededor del año 480 d.C., cuando la iglesia original del "
+                "siglo IV se amplió bajo el patriarca Martirio, y se colocó justo delante del "
+                "altar a propósito: el quinto pan es el único detalle que el mosaico omite, de "
+                "modo que el propio altar &mdash; no una quinta tesela con forma de pan, sino "
+                "el lugar real donde se celebraba la eucaristía &mdash; completa la cuenta. La "
+                "iglesia fue destruida en la invasión persa del 614 y el mosaico quedó "
+                "enterrado hasta que excavadores alemanes lo descubrieron entre 1888 y 1932; "
+                "esta fotografía, de la colección Matson, se tomó pocos años después de ese "
+                "redescubrimiento, antes de que en 1984 se construyera una iglesia moderna "
+                "sobre la planta antigua para protegerlo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Mosaic_of_loaves_%26_fishes_at_Tabgha_LOC_matpc.04154.jpg",
+    )],
     "rom2": [dict(
         file="rom2-raphael-paul-preaching-athens.jpg",
         title="St Paul Preaching at Athens",
