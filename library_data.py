@@ -6527,6 +6527,13 @@ XREFS = [
     (("Revelation", 6, 13), ("Isaiah", 34, 4), "the stars falling like a fig tree's unripe fruit and the sky rolling up like a scroll, two images from a single verse of Isaiah's oracle against the nations, fused into one here"),
     (("Revelation", 6, 16), ("Hosea", 10, 8), "Fall on us, quoting Hosea's own words for judgment day"),
     (("Revelation", 6, 16), ("Luke", 23, 30), "the exact plea Jesus told the weeping women of Jerusalem would be made, quoting Hosea on his own way to the cross"),
+    (("Revelation", 7, 3), ("Ezekiel", 9, 4), "a mark on the forehead that protects by identifying, the same image behind the sealing of God's servants here"),
+    (("Revelation", 7, 5), ("Genesis", 49, 17), "Dan compared to a serpent by the way, the verse a later tradition read as an omen behind this tribe's absence from the sealed list"),
+    (("Revelation", 7, 5), ("1 Kings", 12, 29), "the golden calf shrine Jeroboam built at Dan itself, a separate leading explanation for the tribe's omission here"),
+    (("Revelation", 7, 9), ("John", 12, 13), "palm branches waved before a different entrance, into Jerusalem, for a different king"),
+    (("Revelation", 7, 14), ("Revelation", 1, 5), "the blood that washes robes white here is the same blood this book named first, in its own opening doxology, as what frees us from our sins"),
+    (("Revelation", 7, 16), ("Isaiah", 49, 10), "no hunger, no thirst, no scorching sun, guided to springs of water -- quoted almost word for word from Isaiah's own promise"),
+    (("Revelation", 7, 17), ("Revelation", 21, 4), "God wiping away every tear, the identical promise that closes the whole vision"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -13191,6 +13198,66 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
                    "1670.jpg",
+    )],
+    "rev7": [dict(
+        file="van-eyck-adoration-mystic-lamb.jpg",
+        title="The Adoration of the Mystic Lamb, central panel of the Ghent Altarpiece",
+        title_es="La adoraci\u00f3n del Cordero m\u00edstico, panel central del Retablo de Gante",
+        artist="Jan van Eyck",
+        artist_es="Jan van Eyck",
+        year="c. 1430&ndash;1432",
+        location="Saint Bavo Cathedral, Ghent",
+        location_es="Catedral de San Bavón, Gante",
+        alt="A detailed oil painting of a green meadow landscape. At the center, a white lamb "
+            "stands on an altar, blood flowing from its chest into a golden chalice, beneath a "
+            "radiant dove of light. Kneeling angels surround the altar holding instruments of "
+            "the Passion. In front of the altar, an octagonal fountain sends water flowing "
+            "toward the viewer. Four distinct crowds converge from the corners: at lower left, "
+            "bearded patriarchs and prophets in robes, some holding open books; at lower right, "
+            "barefoot apostles followed by popes, cardinals, and bishops in rich red vestments; "
+            "at upper left, a procession of bishops and confessors in blue and gold; at upper "
+            "right, a large group of women, martyrs and virgins, in white and colored robes. "
+            "Distant cities and towers rise on the horizon under a blue sky.",
+        note="&#9888; <strong>This panel is not an illustration of one chapter; it is several "
+             "Revelation scenes fused into a single traditional composition.</strong> The lamb "
+             "on the altar, blood flowing into a chalice, belongs to chapter 5's throne-room "
+             "vision; the four converging crowds &mdash; prophets, apostles, bishops, virgin "
+             "martyrs &mdash; are Van Eyck's own expansion of this chapter's &lsquo;every "
+             "nation and tribes and peoples and tongues&rsquo; (v9) into named medieval church "
+             "categories the text itself never specifies; and the octagonal fountain at the "
+             "very front, water flowing toward the viewer, reaches past this chapter's "
+             "&lsquo;springs of the water of life&rsquo; (v17) toward the river that will "
+             "appear in chapter 22.<br><br><strong>The blood becomes a Eucharistic image.</strong> "
+             "Nothing in Revelation 5 or 7 puts the Lamb's blood into a chalice &mdash; that is "
+             "the Mass read back onto the vision, John's slain Lamb and the altar of a "
+             "fifteenth-century church service merged into one picture.<br><br>&#9888; "
+             "<strong>The white-robed crowd is not confined to one corner.</strong> This chapter "
+             "describes a single multitude in white, palm branches in hand (v9); Van Eyck instead "
+             "distributes white and colored robes across all four groups by rank and calling, "
+             "an interpretive choice the text does not make for him.",
+        note_es="&#9888; <strong>Este panel no ilustra un solo cap\u00edtulo: funde varias "
+                "escenas del Apocalipsis en una sola composici\u00f3n tradicional.</strong> El "
+                "cordero sobre el altar, con la sangre cayendo en un c\u00e1liz, pertenece a la "
+                "visi\u00f3n de la sala del trono del cap\u00edtulo 5; las cuatro multitudes que "
+                "convergen &mdash; profetas, ap\u00f3stoles, obispos, v\u00edrgenes m\u00e1rtires "
+                "&mdash; son una ampliaci\u00f3n propia de Van Eyck de &laquo;toda naci\u00f3n y "
+                "tribus y pueblos y lenguas&raquo; (v. 9) en categor\u00edas eclesi\u00e1sticas "
+                "medievales que el texto mismo nunca especifica; y la fuente octogonal al frente, "
+                "con el agua que fluye hacia el espectador, se adelanta a las &laquo;fuentes de "
+                "aguas de vida&raquo; de este cap\u00edtulo (v. 17) hacia el r\u00edo que "
+                "aparecer\u00e1 en el cap\u00edtulo 22.<br><br><strong>La sangre se convierte en "
+                "una imagen eucar\u00edstica.</strong> Nada en Apocalipsis 5 ni 7 pone la sangre "
+                "del Cordero en un c\u00e1liz &mdash; eso es la misa le\u00edda sobre la "
+                "visi\u00f3n, el Cordero inmolado de Juan y el altar de un servicio religioso del "
+                "siglo XV fundidos en una sola imagen.<br><br>&#9888; <strong>La multitud vestida "
+                "de blanco no est\u00e1 confinada a una esquina.</strong> Este cap\u00edtulo "
+                "describe una sola multitud de blanco, con palmas en la mano (v. 9); Van Eyck, en "
+                "cambio, distribuye t\u00fanicas blancas y de colores entre los cuatro grupos "
+                "seg\u00fan rango y vocaci\u00f3n, una decisi\u00f3n interpretativa que el "
+                "texto no toma por \u00e9l.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_"
+                   "the_Mystic_Lamb.jpg",
     )],
     "rev6": [dict(
         file="durer-four-horsemen-apocalypse.jpg",
