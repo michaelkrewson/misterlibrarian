@@ -50,7 +50,7 @@ import xml.sax.saxutils as sax
 # Rename the blog by editing these three lines and rebuilding. Nothing else
 # hardcodes the name.
 SITE_NAME = "The Librarian Abroad"
-TAGLINE = "Travels and meals, kept by Mr. Librarian"
+TAGLINE = "Travels, meals, and musings by Mr. Librarian"
 BLURB = ("Notes from the road and from the table — what was worth the trip, "
          "what was worth the plate, and what wasn't.")
 
