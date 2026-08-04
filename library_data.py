@@ -1704,6 +1704,23 @@ DICTIONARY = [
      "the book's style rather than a puzzle to solve — a set phrase varied on purpose, not a fixed "
      "formula copied mechanically.",
      ("Revelation", 5, 9)),
+    ("choinix", "choinix", "χοῖνιξ", "choinix",
+     "A QUART, A DRY MEASURE — roughly one adult's daily bread ration, not a modern volume unit. "
+     "⚠ The third seal's voice prices a choinix of wheat at one denarius, a laborer's full daily "
+     "wage (Matthew 20:2) — a day's food costs a day's pay, with nothing left over for a family, "
+     "while the same voice orders the oil and the wine spared. KJV and ASV render it the vague "
+     "'measure'; ESV keeps 'quart'; NIV converts to 'two pounds.' The price is not vague in Greek: "
+     "it is a famine, quantified exactly.",
+     ("Revelation", 6, 6)),
+    ("chloros", "chlōros", "χλωρός", "chlōros",
+     "GREEN, PALE, SICKLY-YELLOW — the same word used of green grass elsewhere in the New Testament "
+     "(Mark 6:39), spanning a color range English and Spanish split on differently. ⚠ Every English "
+     "version compared here reads the fourth horse 'pale,' with no disagreement among them; both "
+     "Spanish versions compared read 'amarillo'/'amarillento,' yellow or yellowish — the two "
+     "language-shelves diverging from each other rather than within themselves. Both are legitimate "
+     "renderings of a word that covers the whole sickly spectrum from green to yellow to the color "
+     "of a corpse.",
+     ("Revelation", 6, 8)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6505,6 +6522,11 @@ XREFS = [
     (("Revelation", 5, 6), ("Revelation", 4, 5), "the seven spirits of God, named here for a fourth time, now held and sent out by the Lamb himself rather than burning before the throne"),
     (("Revelation", 5, 9), ("Revelation", 1, 6), "kingdom and priests, the same pairing already used of the redeemed in this book's own opening greeting"),
     (("Revelation", 5, 9), ("Exodus", 19, 6), "a kingdom of priests, the Sinai covenant language behind both this verse and Revelation 1:6"),
+    (("Revelation", 6, 12), ("Joel", 2, 31), "the sun turned dark and the moon to blood, Joel's own language for the day of Jehovah, quoted directly"),
+    (("Revelation", 6, 12), ("Acts", 2, 20), "the same verse of Joel that Peter quotes at Pentecost to explain what the crowd was witnessing"),
+    (("Revelation", 6, 13), ("Isaiah", 34, 4), "the stars falling like a fig tree's unripe fruit and the sky rolling up like a scroll, two images from a single verse of Isaiah's oracle against the nations, fused into one here"),
+    (("Revelation", 6, 16), ("Hosea", 10, 8), "Fall on us, quoting Hosea's own words for judgment day"),
+    (("Revelation", 6, 16), ("Luke", 23, 30), "the exact plea Jesus told the weeping women of Jerusalem would be made, quoting Hosea on his own way to the cross"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -11980,6 +12002,19 @@ DICTIONARY_ES = {
         "de las siete apariciones enumera las cuatro palabras en el mismo orden, lo cual la "
         "biblioteca expone como un rasgo del estilo del libro y no como un problema que resolver: "
         "una frase fija variada a propósito, no una fórmula fija copiada de forma mecánica."),
+    "choinix": ("choínix", "UNA MEDIDA SECA — aproximadamente la ración diaria de pan de un adulto, "
+        "no una unidad moderna de volumen. ⚠ La voz del tercer sello tasa una choínix de trigo en un "
+        "denario, el salario completo de un jornalero (Mateo 20:2) — la comida de un día cuesta el "
+        "salario de un día entero, sin nada de sobra para una familia, mientras esa misma voz ordena "
+        "que se respeten el aceite y el vino. RV60 traduce con 'libras'; NVI convierte a "
+        "'kilogramos.' El precio no es vago en griego: es un hambre, cuantificada con exactitud."),
+    "chloros": ("chlōrós", "VERDE, PÁLIDO, AMARILLENTO ENFERMIZO — la misma palabra que se usa de "
+        "la hierba verde en otro lugar del Nuevo Testamento (Marcos 6:39), y que abarca un rango de "
+        "color que el español y el inglés dividen de forma distinta. ⚠ RV60 y NVI coinciden en "
+        "traducir el cuarto caballo como 'amarillo'/'amarillento'; el estante inglés comparado aquí "
+        "lee uniformemente 'pale', pálido, sin desacuerdo entre ellas. Los dos estantes de idioma se "
+        "separan entre sí, no dentro de sí mismos — ambas son traducciones legítimas de una palabra "
+        "que cubre toda la gama enfermiza que va del verde al amarillo y al color de un cadáver."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -13156,6 +13191,71 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
                    "1670.jpg",
+    )],
+    "rev6": [dict(
+        file="durer-four-horsemen-apocalypse.jpg",
+        title="The Four Horsemen of the Apocalypse",
+        title_es="Los cuatro jinetes del Apocalipsis",
+        artist="Albrecht D\u00fcrer",
+        artist_es="Alberto Durero",
+        year="1498",
+        location="Metropolitan Museum of Art, New York",
+        location_es="Metropolitan Museum of Art, Nueva York",
+        alt="A black-and-white woodcut. Four horsemen ride together in a tight diagonal mass "
+            "across the page, their horses trampling human figures underfoot. At the back, a "
+            "crowned archer draws a bow. Beside him, a helmeted rider holds a set of balance "
+            "scales. In front of them, a bearded man swings a raised sword overhead. At the very "
+            "front and lowest, a gaunt, skeletal old man rides an emaciated horse, gripping a "
+            "long trident-like fork; below his horse's legs, a monstrous open-mouthed creature "
+            "swallows a crowned figure. Above the riders, a winged angel flies among heavy "
+            "clouds, one arm outstretched. In the lower right, several fallen figures -- among "
+            "them a bishop in a mitre and a king -- lie crushed beneath the horses' hooves.",
+        note="&#9888; <strong>D\u00fcrer compresses four separate summons into one simultaneous "
+             "charge.</strong> The text opens each seal in turn, one horse and rider at a time, "
+             "each announced by its own living creature's single word. The woodcut instead rides "
+             "all four together as a single wave &mdash; a deliberate artistic choice, not the "
+             "chapter's own sequence, and a genuinely different reading of the scene's pacing "
+             "than the text supplies.<br><br><strong>Identify them front to back.</strong> The "
+             "skeletal figure at the lowest front, gripping a long fork, is Death (v8); behind "
+             "him, the swordsman is the second seal's rider (v4, 'a great sword'); beside the "
+             "swordsman, the helmeted figure with the small balance scales is the third seal's "
+             "rider (v5, 'a scale in his hand'), easy to miss at this size; and the crowned "
+             "archer at the back is the first seal's rider (v2), bow and crown exactly as "
+             "written.<br><br>&#9888; <strong>The angel overhead is D\u00fcrer's own addition.</strong> "
+             "This chapter credits the summons to the four living creatures, not to any angel "
+             "presiding above the scene &mdash; the winged figure is the artist's framing device, "
+             "not a detail this text supplies.<br><br><strong>The fallen include a bishop's "
+             "mitre and a king's crown</strong>, among the ordinary bodies underfoot &mdash; this "
+             "chapter's own horsemen (vv1-8) trample no one by name or rank, but the choice reads "
+             "as a visual anticipation of v15's later list, kings and commoners alike, hiding "
+             "from a judgment none of their stations can exempt them from.",
+        note_es="&#9888; <strong>Durero comprime cuatro llamadas separadas en una sola carga "
+                "simult\u00e1nea.</strong> El texto abre cada sello por turno, un caballo y un "
+                "jinete a la vez, cada uno anunciado por la palabra \u00fanica de su propio ser "
+                "viviente. El grabado, en cambio, hace cabalgar a los cuatro juntos como una sola "
+                "oleada &mdash; una decisi\u00f3n art\u00edstica deliberada, no la secuencia "
+                "propia del cap\u00edtulo, y una lectura genuinamente distinta del ritmo de la "
+                "escena.<br><br><strong>Identif\u00edquelos de adelante hacia atr\u00e1s.</strong> "
+                "La figura esquel\u00e9tica al frente y m\u00e1s abajo, empu\u00f1ando un largo "
+                "tridente, es la Muerte (v. 8); detr\u00e1s de ella, el espadach\u00edn es el "
+                "jinete del segundo sello (v. 4, 'una gran espada'); junto a \u00e9l, la figura "
+                "con casco que sostiene la peque\u00f1a balanza es el jinete del tercer sello "
+                "(v. 5, 'una balanza en la mano'), f\u00e1cil de pasar por alto a este tama\u00f1o; "
+                "y el arquero coronado al fondo es el jinete del primer sello (v. 2), arco y "
+                "corona exactamente como está escrito.<br><br>&#9888; <strong>El \u00e1ngel de "
+                "arriba es a\u00f1adido propio de Durero.</strong> Este cap\u00edtulo atribuye "
+                "la convocatoria a los cuatro seres vivientes, no a ning\u00fan \u00e1ngel que "
+                "presida la escena desde arriba &mdash; la figura alada es un recurso de "
+                "encuadre del artista, no un detalle que d\u00e9 el texto.<br><br><strong>Entre "
+                "los ca\u00eddos hay una mitra de obispo y una corona de rey</strong>, junto a "
+                "los cuerpos comunes bajo los cascos &mdash; los jinetes de este cap\u00edtulo "
+                "(vv. 1-8) no pisotean a nadie por nombre o rango, pero la elecci\u00f3n se lee "
+                "como una anticipaci\u00f3n visual de la lista posterior del v. 15, reyes y "
+                "plebeyos por igual, escondi\u00e9ndose de un juicio del que ninguna condici\u00f3n "
+                "los exime.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Four_Horsemen,_from_The_"
+                   "Apocalypse_MET_MM4141.jpg",
     )],
     "rev5": [dict(
         file="burckhardt-wildt-apocalypse-lamb.jpg",
