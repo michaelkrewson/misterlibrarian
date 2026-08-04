@@ -1686,6 +1686,24 @@ DICTIONARY = [
     ("hepta-pneumata", "hepta pneumata tou theou", "ἑπτὰ πνεύματα τοῦ θεοῦ", "hepta pneumata tou theou",
      "THE SEVEN SPIRITS OF GOD — a phrase unique to Revelation, occurring four times (1:4, 3:1, 4:5, 5:6) and never explained. ⚠ It opens the book's own greeting, standing in a Trinity-shaped list between 'him who is and was and is to come' and Jesus Christ (1:4); it names something the risen Christ himself holds and sends out (3:1, 5:6, 'sent out into all the earth'); and here it is seven flames burning before the throne (4:5). The leading reading takes it as a symbolic description of the Holy Spirit in the fullness of his sevenfold activity (drawing on Isaiah 11:2's list of the Spirit's gifts), rather than seven separate beings — but the phrase itself never says so, and the library reports the reading rather than supplying it as the text's own words.",
      ("Revelation", 4, 5)),
+    ("arnion", "arnion", "ἀρνίον", "arnion",
+     "LITTLE LAMB — a diminutive of arēn, lamb, and the word Revelation uses for Christ twenty-nine "
+     "times, never once switching to amnos, the plain word for lamb used of Christ at John 1:29, "
+     "1:36, Acts 8:32, and 1 Peter 1:19. ⚠ Its first and defining use (5:6) is a deliberate mismatch: "
+     "an elder announces a conquering Lion (5:5), and John turns to see a Lamb, standing as though "
+     "slain — the small, diminutive word, not a predator's, standing at the center of the throne. "
+     "The same word will carry a slaughtered animal all the way to a wedding (19:7,9) and a city "
+     "with no need of the sun, because 'the Lamb is its lamp' (21:23).",
+     ("Revelation", 5, 6)),
+    ("phyle-glossa-laos-ethnos", "phylē kai glōssa kai laos kai ethnos", "φυλή καὶ γλῶσσα καὶ λαὸς καὶ ἔθνος",
+     "phylē kai glōssa kai laos kai ethnos",
+     "TRIBE AND TONGUE AND PEOPLE AND NATION — a four-part formula for the whole of humanity, first "
+     "sung of the redeemed at 5:9 and repeated, with the four nouns reshuffled each time, six more "
+     "times before the book ends (7:9, 10:11, 11:9, 13:7, 14:6, 17:15). ⚠ No two of the seven "
+     "occurrences list the four words in the same order, which the library reports as a feature of "
+     "the book's style rather than a puzzle to solve — a set phrase varied on purpose, not a fixed "
+     "formula copied mechanically.",
+     ("Revelation", 5, 9)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6482,6 +6500,11 @@ XREFS = [
     (("Revelation", 4, 5), ("Revelation", 1, 4), "the seven spirits of God, named here for the third time — first in the book's own greeting, paired with 'him who is and was and is to come' and Jesus Christ"),
     (("Revelation", 4, 8), ("Isaiah", 6, 3), "the Trisagion quoted directly from the seraphim's own cry, its wings and posture merged here with a different vision entirely, Ezekiel's four living creatures"),
     (("Revelation", 4, 6), ("Ezekiel", 1, 10), "the four faces — lion, ox, man, eagle — reworked from Ezekiel's vision, where all four faces belonged to each single creature rather than one face per creature as here"),
+    (("Revelation", 5, 5), ("Genesis", 49, 9), "the Lion of the tribe of Judah, quoting Jacob's own deathbed blessing over Judah — the first place a lion becomes this tribe's emblem"),
+    (("Revelation", 5, 5), ("Isaiah", 11, 1), "the Root of David, the same royal-shoot image Isaiah used for the coming king from Jesse's stump"),
+    (("Revelation", 5, 6), ("Revelation", 4, 5), "the seven spirits of God, named here for a fourth time, now held and sent out by the Lamb himself rather than burning before the throne"),
+    (("Revelation", 5, 9), ("Revelation", 1, 6), "kingdom and priests, the same pairing already used of the redeemed in this book's own opening greeting"),
+    (("Revelation", 5, 9), ("Exodus", 19, 6), "a kingdom of priests, the Sinai covenant language behind both this verse and Revelation 1:6"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -11942,6 +11965,21 @@ DICTIONARY_ES = {
         "Espíritu de Isaías 11:2), y no como siete seres distintos — pero la frase misma nunca lo "
         "dice, y la biblioteca expone la lectura en vez de presentarla como palabra propia del "
         "texto."),
+    "arnion": ("arníon", "CORDERITO — un diminutivo de arēn, cordero, y la palabra que Apocalipsis "
+        "usa para Cristo veintinueve veces, sin cambiar nunca a amnós, la palabra llana para "
+        "cordero que se usa de Cristo en Juan 1:29, 1:36, Hechos 8:32 y 1 Pedro 1:19. ⚠ Su primer "
+        "uso, y el que marca el tono (5:6), es un desajuste deliberado: un anciano anuncia un León "
+        "vencedor (5:5), y Juan se vuelve a ver un Cordero, en pie, como inmolado — la palabra "
+        "pequeña y diminutiva, no la de un depredador, de pie en el centro del trono. La misma "
+        "palabra llevará a un animal degollado hasta una boda (19:7,9) y una ciudad que no "
+        "necesita el sol, porque «el Cordero es su lumbrera» (21:23)."),
+    "phyle-glossa-laos-ethnos": ("phylḗ kaì glôssa kaì laòs kaì éthnos", "TRIBU Y LENGUA Y PUEBLO Y "
+        "NACIÓN — una fórmula de cuatro partes para la humanidad entera, cantada por primera vez de "
+        "los redimidos en 5:9 y repetida, con los cuatro sustantivos reordenados cada vez, seis "
+        "veces más antes de que termine el libro (7:9, 10:11, 11:9, 13:7, 14:6, 17:15). ⚠ Ninguna "
+        "de las siete apariciones enumera las cuatro palabras en el mismo orden, lo cual la "
+        "biblioteca expone como un rasgo del estilo del libro y no como un problema que resolver: "
+        "una frase fija variada a propósito, no una fórmula fija copiada de forma mecánica."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -13118,6 +13156,69 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
                    "1670.jpg",
+    )],
+    "rev5": [dict(
+        file="burckhardt-wildt-apocalypse-lamb.jpg",
+        title="The Lamb of the Apocalypse, with the Four Evangelist Symbols and the Twenty-Four Elders",
+        title_es="El Cordero del Apocalipsis, con los cuatro símbolos de los evangelistas y los veinticuatro ancianos",
+        artist="Unknown illuminator",
+        artist_es="Iluminador desconocido",
+        year="late 13th century",
+        location="Formerly Burckhardt&ndash;Wildt and Alan Thomas collections; sold at Christie's, "
+                 "present location unrecorded",
+        location_es="Antes en las colecciones Burckhardt&ndash;Wildt y Alan Thomas; vendido en "
+                    "Christie's, ubicación actual sin registrar",
+        alt="An illuminated manuscript page on vellum. At the center, inside a red quatrefoil frame, "
+            "a white horned lamb stands beside a tall staff topped with a cross. In the four lobes "
+            "around it are the four winged evangelist symbols: a haloed angel labeled MATHEUS at "
+            "upper left, holding a scroll and offering a small book toward the lamb; a haloed eagle "
+            "labeled IOHANNES at upper right; a haloed lion labeled MARCUS at lower left; and a "
+            "winged ox labeled LUCAS at lower right. Four rectangular panels fill the corners of the "
+            "page, each showing six crowned, richly robed elders with hands raised in prayer, "
+            "twenty-four figures in total.",
+        note="&#9888; <strong>The four living creatures have become the four Evangelists.</strong> "
+             "This chapter never says the zōa stand for the Gospel writers &mdash; that identification "
+             "is a much later Christian tradition, fixed in the West by Jerome around AD 400 (lion for "
+             "Mark, ox for Luke, eagle for John, and the fourth &mdash; here a haloed angel &mdash; for "
+             "Matthew). The illuminator has labeled each creature with its evangelist's name "
+             "(<em>MARCUS, LUCAS, IOHANNES, MATHEUS</em>) directly on its banderole, folding chapter "
+             "4's throne-room vision into a piece of church tradition four centuries younger than the "
+             "text itself.<br><br><strong>Count the elders.</strong> Four panels of six each, twenty-"
+             "four in total, hands raised in the gesture of acclamation rather than drawn casting "
+             "actual crowns &mdash; the miniature's other half (not shown here), on the same "
+             "parchment's reverse, depicts Christ breaking the seals with the Lamb beside him in a "
+             "mandorla, the elders now emerging from clouds in musical worship.<br><br>&#9888; "
+             "<strong>This cutting has no fixed home.</strong> The manuscript it came from was "
+             "dismembered in 1796 &mdash; cut apart and its leaves sold individually, a common fate "
+             "for illuminated books once collectors began prizing single miniatures over whole "
+             "volumes. This particular leaf is named for two of its later owners, Daniel "
+             "Burckhardt-Wildt and Alan Thomas, and last surfaced at a Christie's auction; where it "
+             "hangs today, if anywhere public, isn't recorded.",
+        note_es="&#9888; <strong>Los cuatro seres vivientes se han convertido en los cuatro "
+                "evangelistas.</strong> Este capítulo nunca dice que los zōa representen a los "
+                "escritores de los Evangelios &mdash; esa identificación es una tradición cristiana "
+                "mucho más tardía, fijada en Occidente por Jerónimo hacia el año 400 (león para "
+                "Marcos, buey para Lucas, águila para Juan, y el cuarto &mdash; aquí un ángel "
+                "aureolado &mdash; para Mateo). El iluminador ha rotulado cada ser con el nombre de "
+                "su evangelista (<em>MARCUS, LUCAS, IOHANNES, MATHEUS</em>) directamente en su "
+                "filacteria, plegando la visión de la sala del trono del capítulo 4 en una pieza de "
+                "tradición eclesiástica cuatro siglos más joven que el propio texto.<br><br>"
+                "<strong>Cuente los ancianos.</strong> Cuatro paneles de seis cada uno, veinticuatro "
+                "en total, con las manos alzadas en gesto de aclamación en vez de dibujados echando "
+                "sus coronas &mdash; la otra mitad de la miniatura (no mostrada aquí), en el reverso "
+                "del mismo pergamino, representa a Cristo rompiendo los sellos con el Cordero a su "
+                "lado dentro de una mandorla, y los ancianos emergiendo ahora de las nubes en "
+                "adoración musical.<br><br>&#9888; <strong>Este fragmento no tiene un hogar fijo.</strong> "
+                "El manuscrito del que procede fue desmembrado en 1796 &mdash; cortado en piezas y "
+                "vendidas sus hojas por separado, un destino común para los libros iluminados una vez "
+                "que los coleccionistas empezaron a valorar más las miniaturas sueltas que los "
+                "volúmenes completos. Esta hoja en particular lleva el nombre de dos de sus dueños "
+                "posteriores, Daniel Burckhardt-Wildt y Alan Thomas, y apareció por última vez en una "
+                "subasta de Christie's; dónde cuelga hoy, si es que está en algún lugar público, no "
+                "consta.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Burckhardt-Wildt_Apocalypse_-_Lamb_"
+                   "(Christie%27s).jpg",
     )],
     "rev4": [dict(
         file="blake-four-and-twenty-elders.jpg",
