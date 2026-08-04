@@ -7182,6 +7182,9 @@ CHRON_CHAPTERS = {
     "rom1": dict(era="apostolic",
         when="Paul, wintering in Corinth at the end of his third journey, dictates a letter of introduction to congregations in Rome he has never visited — and opens it with the thesis of the whole argument.",
         clock="c. AD 56–57, datable with unusual confidence: the collection for Jerusalem is gathered but not yet delivered (15:25), the eastern work is finished, and Spain is the next plan (15:24). Gaius the host and Erastus the city treasurer (16:23) both place the writing at Corinth — and a first-century Corinthian pavement naming an aedile Erastus has been excavated there."),
+    "rom2": dict(era="apostolic",
+        when="The same letter, the same dictation in Corinth — no narrative time passes between chapters. The argument turns from the Gentile world's guilt to the Jewish reader's own, springing the trap chapter 1 set.",
+        clock="c. AD 56–57, continuous with chapter 1's dating — Paul's argument, not a new scene with its own date."),
     "acts1": dict(era="apostolic",
         when="Forty days of appearances end on the Mount of Olives; the ascension, the return to the upper room, and the choosing of a twelfth apostle to replace Judas.",
         clock="c. AD 30–33, in the ten days between the ascension and Pentecost — the shortest measured gap in the New Testament, and the only stretch in which the church exists and does nothing but wait. The year turns on the date of the crucifixion, for which AD 30 and AD 33 are the two serious candidates; this library reports the pair and does not choose."),
@@ -12443,6 +12446,49 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "rom2": [dict(
+        file="rom2-raphael-paul-preaching-athens.jpg",
+        title="St Paul Preaching at Athens",
+        title_es="San Pablo predicando en Atenas",
+        artist="Raphael",
+        artist_es="Rafael",
+        year="c. 1515&ndash;1516",
+        location="Royal Collection, on long-term loan to the Victoria and Albert Museum, London",
+        location_es="Royal Collection, en préstamo permanente al Museo Victoria y Alberto, Londres",
+        alt="A large tapestry-cartoon painting. A bearded man in a green tunic and orange-red "
+            "cloak, with a faint halo, stands on a raised stone platform with both arms lifted "
+            "and hands open, mid-gesture, addressing a crowd below and around him. The listeners "
+            "are a mixed group in robes of green, orange, and white, some seated on the steps, "
+            "some standing, with varied expressions — attentive, skeptical, one man crouched with "
+            "his head in his hands. Behind them rises a grand classical rotunda with green marble "
+            "columns and a bronze statue of an armored, spear-carrying figure on a pedestal.",
+        note="⚠ This scene is Acts 17, not Romans — Paul arguing before the Areopagus in Athens, "
+             "not the letter to Rome. No painter has staged Romans 2 itself: there is no travel, no "
+             "crowd, no single moment to depict, only an argument dictated to a scribe. This cartoon "
+             "is chosen for what it gets right about the METHOD on display in this chapter: Paul's "
+             "raised, open hands are the gesture of a man building a case point by point for an "
+             "audience that includes both the persuaded and the skeptical &mdash; the same rhetorical "
+             "structure as the four rhetorical blows of vv21-22 (steal, adultery, idols, temple "
+             "robbery), each one landing before the next begins. Raphael painted this as a cartoon "
+             "&mdash; a full-scale design, pricked and pounced for tapestry weavers &mdash; commissioned "
+             "by Pope Leo X for the Sistine Chapel; the tapestries themselves still hang there on "
+             "special occasions, the cartoons long since separated from the finished cloth.",
+        note_es="⚠ Esta escena es Hechos 17, no Romanos &mdash; Pablo discutiendo ante el Areópago "
+                "en Atenas, no la carta a Roma. Ningún pintor ha escenificado Romanos 2 en sí: no hay "
+                "viaje, no hay multitud, no hay un solo instante que representar, solo un argumento "
+                "dictado a un escriba. Este cartón se elige por lo que acierta sobre el MÉTODO que "
+                "exhibe este capítulo: las manos alzadas y abiertas de Pablo son el gesto de un "
+                "hombre que construye un caso punto por punto ante un público que incluye tanto a "
+                "los persuadidos como a los escépticos &mdash; la misma estructura retórica de los "
+                "cuatro golpes de los vv. 21-22 (hurto, adulterio, ídolos, sacrilegio), cada uno "
+                "cayendo antes de que empiece el siguiente. Rafael pintó esto como un cartón &mdash; "
+                "un diseño a tamaño completo, picado y estarcido para los tejedores de tapices "
+                "&mdash; encargado por el papa León X para la Capilla Sixtina; los propios tapices "
+                "todavía cuelgan allí en ocasiones especiales, los cartones separados hace tiempo de "
+                "la tela terminada.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Raphael_-_St_Paul_Preaching_at_Athens_c.1515-6.jpg",
+    )],
     "acts3": [dict(
         file="acts3-poussin-healing-lame-man.jpg",
         title="Saints Peter and John Healing the Lame Man",
