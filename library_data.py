@@ -1665,6 +1665,12 @@ DICTIONARY = [
     ("apokatastasis", "apokatastasis", "ἀποκατάστασις", "apokatastasis",
      "RESTORATION — a single noun, occurring nowhere else in the New Testament, that has carried more theological weight than its one appearance would suggest. ⚠ Acts 3:21 has Peter preach 'the times of apokatastasis of all things' as what heaven is holding Jesus for until it arrives. KJV alone on the English shelf renders it 'restitution,' an older and more legal-sounding word; ASV, NIV and ESV all use some form of 'restore.' The term was later taken up by Origen and others to argue for the eventual restoration of literally everything, including the damned — a doctrine, apocatastasis, the wider church debated for centuries and never formally adopted. Whatever scope Peter himself intended, one noun named something total: not a repair, but everything returned to how it was meant to be.",
      ("Acts", 3, 21)),
+    ("prosopolempsia", "prosōpolēmpsia", "προσωπολημψία", "prosōpolēmpsia",
+     "PARTIALITY, favoritism — literally 'receiving the face,' judging by appearance, status, or favor rather than by fact; a compound Paul appears to have coined from the Septuagint's idiom 'lift up the face' (Leviticus 19:15), and possibly the earliest use of the noun in surviving Greek. ⚠ Romans 2:11 uses it of God's own impartial judgment — 'there is no prosōpolēmpsia with God' — and the same claim recurs at Ephesians 6:9, Colossians 3:25 and James 2:1, where it becomes a direct command to the church, not just a description of God. KJV and ASV both translate with the older English idiom 'no respect of persons,' which no longer means what it once did to a modern ear; NIV and ESV both modernize to 'no favoritism' / 'no partiality.'",
+     ("Romans", 2, 11)),
+    ("syneidesis", "syneidēsis", "συνείδησις", "syneidēsis",
+     "CONSCIENCE — literally 'knowing together with' (syn + oida), a mind's awareness of itself measured against a standard. ⚠ Romans 2:15 gives its most consequential single appearance: Gentiles who never received the law still have the law's work 'written on their hearts,' with conscience as the witness testifying to it, and their own thoughts 'accusing or even excusing' them — a courtroom running inside a single person, verdict withheld until judgment day. Paul uses the word thirty times across his letters, more than any other New Testament writer, and it becomes one of his standing categories for how a person not under Torah can still be held to a moral standard.",
+     ("Romans", 2, 15)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6425,6 +6431,10 @@ XREFS = [
     (("Acts", 3, 21), ("Acts", 1, 6), "APOKATASTASIS — chapter 1's note on Jesus declining to date 'the restoration of the kingdom to Israel' said Peter would preach it here; this verse is that promise cashed"),
     (("Acts", 3, 22), ("Deuteronomy", 18, 15), "Peter's citation of the prophet like Moses, quoted directly rather than merely alluded to — applied to Jesus without argument"),
     (("Acts", 3, 13), ("Isaiah", 52, 13), "PAIS — the same Greek word (in the Septuagint) for God's servant, applied here to Jesus at the moment he is said to be glorified, echoing the servant song's own opening verb"),
+    (("Romans", 2, 1), ("Romans", 1, 32), "the trap chapter 1's vice list set closes here — 'therefore you are without a defense, whoever you are who judges' answers a list its own reader had just been nodding along to"),
+    (("Romans", 2, 9), ("Romans", 1, 16), "'to the Jew first and also to the Greek' repeated word for word from the letter's own thesis — there naming who hears the gospel first, here naming who is judged first"),
+    (("Romans", 2, 24), ("Isaiah", 52, 5), "'the name of God is blasphemed among the Gentiles because of you' — Paul's citation, presenting Israel's own scripture as having already convicted them of this centuries earlier"),
+    (("Romans", 2, 29), ("2 Corinthians", 3, 6), "'by spirit, not by letter' restated as a standing Pauline pair — the same contrast applied there to the whole ministry of the new covenant"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -11803,6 +11813,24 @@ DICTIONARY_ES = {
         "doctrina, apocat\u00e1stasis, que la iglesia en general discuti\u00f3 durante siglos y nunca adopt\u00f3 "
         "formalmente. Fuera cual fuera el alcance que Pedro mismo pretend\u00eda, un solo sustantivo "
         "nombraba algo total: no una reparaci\u00f3n, sino todo devuelto a como estaba destinado a ser."),
+    "prosopolempsia": ("pros\u014dpol\u0113mps\u00eda", "PARCIALIDAD, favoritismo \u2014 literalmente \u00abrecibir el rostro\u00bb, "
+        "juzgar por apariencia, posici\u00f3n o favor en vez de por los hechos; un compuesto que Pablo "
+        "parece haber acu\u00f1ado a partir del modismo de la Septuaginta \u00abalzar el rostro\u00bb (Lev\u00edtico "
+        "19:15), posiblemente el uso m\u00e1s antiguo del sustantivo en el griego que se conserva. \u26a0 "
+        "Romanos 2:11 lo usa del propio juicio imparcial de Dios \u2014 \u00abno hay pros\u014dpol\u0113mps\u00eda para con "
+        "Dios\u00bb \u2014 y la misma afirmaci\u00f3n reaparece en Efesios 6:9, Colosenses 3:25 y Santiago 2:1, "
+        "donde se convierte en un mandato directo a la iglesia, no solo en una descripci\u00f3n de Dios. "
+        "RV60 mantiene el modismo tradicional castellano, \u00abno hay acepci\u00f3n de personas\u00bb; NVI "
+        "moderniza a \u00abno hay favoritismos\u00bb."),
+    "syneidesis": ("syne\u00edd\u0113sis", "CONCIENCIA \u2014 literalmente \u00absaber junto con\u00bb (syn + oida), la "
+        "conciencia de una mente de s\u00ed misma medida contra un est\u00e1ndar. \u26a0 Romanos 2:15 da su "
+        "aparici\u00f3n m\u00e1s trascendental: los gentiles que nunca recibieron la ley tienen, aun as\u00ed, la "
+        "obra de la ley \u00abescrita en sus corazones\u00bb, con la conciencia como testigo que da fe de "
+        "ello, y sus propios pensamientos \u00abacus\u00e1ndose o defendi\u00e9ndose\u00bb entre s\u00ed \u2014 un tribunal "
+        "funcionando dentro de una sola persona, veredicto retenido hasta el d\u00eda del juicio. Pablo "
+        "usa la palabra treinta veces en sus cartas, m\u00e1s que ning\u00fan otro escritor del Nuevo "
+        "Testamento, y se convierte en una de sus categor\u00edas fijas para explicar c\u00f3mo una persona "
+        "que no est\u00e1 bajo la Tor\u00e1 puede seguir sujeta a un est\u00e1ndar moral."),
 }
 
 ENCYCLOPEDIA_ES = {
