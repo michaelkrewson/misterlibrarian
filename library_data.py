@@ -1721,6 +1721,16 @@ DICTIONARY = [
      "renderings of a word that covers the whole sickly spectrum from green to yellow to the color "
      "of a corpse.",
      ("Revelation", 6, 8)),
+    ("apsinthos", "apsinthos", "ἄψινθος", "apsinthos",
+     "WORMWOOD — a real, bitter plant (Artemisia absinthium), and already the Hebrew Bible's "
+     "standing image for the bitterness that follows broken covenant and coming judgment long "
+     "before this chapter names a star after it: a root bearing wormwood and gall (Deuteronomy "
+     "29:18), justice itself turned to wormwood (Amos 5:7), a people fed wormwood and given "
+     "poisoned water (Jeremiah 9:15, 23:15). ⚠ NVI alone on the Spanish shelf does not simply "
+     "translate the star's name — it changes it, from the botanical 'Ajenjo' (matching RV60) to "
+     "the abstract 'Amargura,' Bitterness, trading the specific old image for the quality it "
+     "stood for.",
+     ("Revelation", 8, 11)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6534,6 +6544,11 @@ XREFS = [
     (("Revelation", 7, 14), ("Revelation", 1, 5), "the blood that washes robes white here is the same blood this book named first, in its own opening doxology, as what frees us from our sins"),
     (("Revelation", 7, 16), ("Isaiah", 49, 10), "no hunger, no thirst, no scorching sun, guided to springs of water -- quoted almost word for word from Isaiah's own promise"),
     (("Revelation", 7, 17), ("Revelation", 21, 4), "God wiping away every tear, the identical promise that closes the whole vision"),
+    (("Revelation", 8, 3), ("Revelation", 6, 10), "the prayers offered here at the golden altar are likely the same prayers already heard, the martyrs' own cry of 'how long'"),
+    (("Revelation", 8, 5), ("Revelation", 6, 8), "the third that structures every trumpet in this chapter intensifies the fourth seal's reach over a fourth of the earth"),
+    (("Revelation", 8, 7), ("Exodus", 9, 23), "hail and fire together, the same combination as the seventh plague of Egypt, now aimed at the whole earth rather than one nation"),
+    (("Revelation", 8, 11), ("Deuteronomy", 29, 18), "wormwood as the Hebrew Bible's own standing image for the bitterness of broken covenant, long before this chapter names a star after it"),
+    (("Revelation", 8, 11), ("Jeremiah", 9, 15), "a people fed wormwood and given poisoned water to drink, the same image this chapter turns into an actual star"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -12022,6 +12037,14 @@ DICTIONARY_ES = {
         "lee uniformemente 'pale', pálido, sin desacuerdo entre ellas. Los dos estantes de idioma se "
         "separan entre sí, no dentro de sí mismos — ambas son traducciones legítimas de una palabra "
         "que cubre toda la gama enfermiza que va del verde al amarillo y al color de un cadáver."),
+    "apsinthos": ("ápsinthos", "AJENJO — una planta real y amarga (Artemisia absinthium), y ya la "
+        "imagen fija de la Biblia hebrea para la amargura que sigue al pacto roto y al juicio que "
+        "viene, mucho antes de que este capítulo nombre una estrella con ella: una raíz que "
+        "produce ajenjo y hiel (Deuteronomio 29:18), la justicia misma convertida en ajenjo (Amós "
+        "5:7), un pueblo alimentado con ajenjo y agua envenenada (Jeremías 9:15, 23:15). ⚠ NVI es "
+        "la única del estante en español que no se limita a traducir el nombre de la estrella: lo "
+        "cambia, del botánico 'Ajenjo' (que coincide con RV60) al abstracto 'Amargura', "
+        "cambiando la imagen antigua concreta por la cualidad que representaba."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -13198,6 +13221,59 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
                    "1670.jpg",
+    )],
+    "rev8": [dict(
+        file="genevan-beatus-seven-trumpets.jpg",
+        title="Christ and the Seven Trumpets, from the Genevan Beatus",
+        title_es="Cristo y las siete trompetas, del Beato de Ginebra",
+        artist="Unknown illuminator, southern Italy",
+        artist_es="Iluminador desconocido, sur de Italia",
+        year="11th century",
+        location="Biblioth\u00e8que de Gen\u00e8ve, Ms. lat. 357",
+        location_es="Biblioteca de Ginebra, Ms. lat. 357",
+        alt="A page from an illuminated manuscript, painted in blue, gold, purple, and green "
+            "against aged parchment. At the top, a haloed, bearded Christ stands behind a "
+            "golden altar-like structure with a blank rectangular panel at its center, one hand "
+            "raised, the other holding a book. A small vessel hangs by a cord beneath the altar. "
+            "To the left, a standing figure holds a tall striped banner. Below, seven men in "
+            "colorful striped tunics are arranged in a descending diagonal row, each raising a "
+            "long trumpet to his lips. Beneath the image, red and black Latin text begins a new "
+            "section of commentary.",
+        note="&#9888; <strong>The trumpets are drawn together, not one at a time.</strong> This "
+             "chapter sounds its first four trumpets in sequence, each with its own verse and "
+             "its own disaster; the illuminator instead draws all seven angels at once, "
+             "cascading down the page in a single diagonal rush &mdash; the seven simply handed "
+             "out and ready (v2), or a compressed image of the whole sequence at once, is a "
+             "question the picture itself doesn't answer.<br><br><strong>The hanging vessel "
+             "beneath the altar</strong> is likely this chapter's golden censer (vv3-5) &mdash; "
+             "small and easy to miss, tucked under the altar's blank central panel, in a "
+             "chapter where it does real double duty: first carrying incense and the saints' "
+             "prayers up, then carrying fire back down.<br><br>&#9888; <strong>Christ presiding "
+             "is the illuminator's own framing, not this chapter's own scene.</strong> Chapter 8 "
+             "itself never redescribes the one on the throne at this point in the vision; the "
+             "haloed figure here draws on the book's other throne-room scenes rather than any "
+             "single verse in this chapter.",
+        note_es="&#9888; <strong>Las trompetas est\u00e1n dibujadas juntas, no una a la "
+                "vez.</strong> Este cap\u00edtulo hace sonar sus primeras cuatro trompetas en "
+                "secuencia, cada una con su propio vers\u00edculo y su propio desastre; el "
+                "iluminador, en cambio, dibuja a los siete \u00e1ngeles a la vez, en una sola "
+                "carrera diagonal que desciende por la p\u00e1gina &mdash; si son los siete "
+                "simplemente repartidos y listos (v. 2), o una imagen comprimida de toda la "
+                "secuencia a la vez, es una pregunta que la propia imagen no "
+                "responde.<br><br><strong>El recipiente que cuelga bajo el altar</strong> es "
+                "probablemente el incensario de oro de este cap\u00edtulo (vv. 3-5) &mdash; "
+                "peque\u00f1o y f\u00e1cil de pasar por alto, escondido bajo el panel central "
+                "en blanco del altar, en un cap\u00edtulo donde cumple una doble función real: "
+                "primero lleva arriba el incienso y las oraciones de los santos, luego lleva "
+                "abajo el fuego.<br><br>&#9888; <strong>Cristo presidiendo es un encuadre propio "
+                "del iluminador, no una escena de este cap\u00edtulo.</strong> El cap\u00edtulo "
+                "8 nunca vuelve a describir en este punto de la visi\u00f3n al que est\u00e1 "
+                "sentado en el trono; la figura aureolada aqu\u00ed se apoya en las otras "
+                "escenas de la sala del trono del libro, no en ning\u00fan vers\u00edculo "
+                "concreto de este cap\u00edtulo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Christ_and_the_seven_trumpets,_"
+                   "Genevan_Beatus,_Geneva,_Library_of_Geneva,_Ms._lat._357,_f._198v.jpg",
     )],
     "rev7": [dict(
         file="van-eyck-adoration-mystic-lamb.jpg",
