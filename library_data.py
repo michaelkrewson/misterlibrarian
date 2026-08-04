@@ -1677,6 +1677,15 @@ DICTIONARY = [
     ("skandalizo", "skandalizō", "σκανδαλίζω", "skandalizō",
      "TO CAUSE TO STUMBLE, OFFEND — from skandalon, the trigger-stick of a trap, so: to set a snare for, to trip up. ⚠ John 6:61 has Jesus ask his own disciples, after the hardest sentence of the bread-of-life discourse, 'does this skandalizei you?' — not 'does this confuse you' but 'does this trip you.' The noun and verb run through the New Testament as a technical pair for the specific offense the cross and a suffering Messiah give (1 Corinthians 1:23, 'Christ crucified, to Jews a skandalon'), and Paul uses the same verb of anything that might trip up a weaker believer's conscience (Romans 14:21; 1 Corinthians 8:13). Here it names precisely why many disciples leave in the next verse: not that the teaching was unclear, but that it was a stone in the road they chose not to step around.",
      ("John", 6, 61)),
+    ("zoa", "zōa", "ζῷα", "zōa",
+     "LIVING CREATURES — the plain, unremarkable plural of zōon, a living thing, animal. ⚠ KJV alone on the English shelf renders it 'beasts' at Revelation 4:6-9 and 5:6-14, a translation that has shaped centuries of English readers toward picturing something monstrous; every other version checked here, in both languages, reads some form of 'living creatures'/'seres vivientes.' The four zōa combine two older visions that had never before been combined — the four faces (lion, ox, man, eagle) come from Ezekiel's throne-vision (Ezekiel 1:5-10), where each single creature carries all four faces at once; the six wings and the unceasing cry come from Isaiah's seraphim (Isaiah 6:2-3). John gives his four creatures one face each rather than four apiece, reworking rather than simply repeating his sources.",
+     ("Revelation", 4, 6)),
+    ("axios", "axios", "ἄξιος", "axios",
+     "WORTHY — properly weighing as much as, balancing the scale; a commercial and legal word for value before it became a word of praise. ⚠ It becomes Revelation's own vocabulary for worship: the twenty-four elders declare God axios at 4:11 on the grounds of creation ('you created all things'); a mighty angel then asks who is axios to open the sealed scroll (5:2), and heaven finds no one — until the Lamb who was slain is declared axios on entirely different grounds, redemption rather than making (5:9, 5:12). Two hymns, two reasons, the same word deciding both.",
+     ("Revelation", 4, 11)),
+    ("hepta-pneumata", "hepta pneumata tou theou", "ἑπτὰ πνεύματα τοῦ θεοῦ", "hepta pneumata tou theou",
+     "THE SEVEN SPIRITS OF GOD — a phrase unique to Revelation, occurring four times (1:4, 3:1, 4:5, 5:6) and never explained. ⚠ It opens the book's own greeting, standing in a Trinity-shaped list between 'him who is and was and is to come' and Jesus Christ (1:4); it names something the risen Christ himself holds and sends out (3:1, 5:6, 'sent out into all the earth'); and here it is seven flames burning before the throne (4:5). The leading reading takes it as a symbolic description of the Holy Spirit in the fullness of his sevenfold activity (drawing on Isaiah 11:2's list of the Spirit's gifts), rather than seven separate beings — but the phrase itself never says so, and the library reports the reading rather than supplying it as the text's own words.",
+     ("Revelation", 4, 5)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6469,6 +6478,10 @@ XREFS = [
     (("Exodus", 18, 3), ("Exodus", 2, 22), "Gershom's naming, given at his birth — 'I have been a sojourner in a foreign land' — recalled here decades later alongside the brother whose own naming this chapter finally supplies"),
     (("Exodus", 18, 21), ("Deuteronomy", 1, 15), "Moses retells the same delegation almost verbatim, decades later, as his own decision rather than Jethro's counsel — the two accounts never fully reconciled"),
     (("Exodus", 18, 25), ("Numbers", 11, 16), "a second, distinct burden-sharing story — seventy elders given the Spirit rather than a chain of appointed judges — read by some as this same reform in a different key"),
+    (("Revelation", 4, 1), ("Revelation", 3, 20), "the door motif recurs immediately — Christ knocking at a closed door in the last letter, now a door already standing open in heaven"),
+    (("Revelation", 4, 5), ("Revelation", 1, 4), "the seven spirits of God, named here for the third time — first in the book's own greeting, paired with 'him who is and was and is to come' and Jesus Christ"),
+    (("Revelation", 4, 8), ("Isaiah", 6, 3), "the Trisagion quoted directly from the seraphim's own cry, its wings and posture merged here with a different vision entirely, Ezekiel's four living creatures"),
+    (("Revelation", 4, 6), ("Ezekiel", 1, 10), "the four faces — lion, ox, man, eagle — reworked from Ezekiel's vision, where all four faces belonged to each single creature rather than one face per creature as here"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -11901,6 +11914,34 @@ DICTIONARY_ES = {
         "cuatro cualidades en una lista hecha por lo demás de carácter (temor de Dios, verdad, "
         "aborrecer la avaricia) y no de linaje. RV60 traduce aquí «varones de virtud»; NVI, «hombres "
         "capaces»."),
+    "zoa": ("zōa", "SERES VIVIENTES — el plural llano y corriente de zōon, un ser vivo, animal. ⚠ KJV "
+        "es la única versión del estante inglés que traduce «bestias» en Apocalipsis 4:6-9 y 5:6-14, "
+        "una traducción que ha moldeado siglos de lectores ingleses hacia imaginar algo monstruoso; "
+        "todas las demás versiones comparadas aquí, en los dos idiomas, leen alguna forma de «living "
+        "creatures»/«seres vivientes». Los cuatro zōa combinan dos visiones antiguas que nunca se "
+        "habían combinado antes — los cuatro rostros (león, buey, hombre, águila) vienen de la "
+        "visión del trono de Ezequiel (Ezequiel 1:5-10), donde cada ser lleva los cuatro rostros a "
+        "la vez; las seis alas y el clamor incesante vienen de los serafines de Isaías (Isaías "
+        "6:2-3). Juan da a sus cuatro seres un rostro cada uno en vez de cuatro por cabeza, "
+        "reelaborando sus fuentes en vez de simplemente repetirlas."),
+    "axios": ("áxios", "DIGNO — propiamente, que pesa tanto como, que equilibra la balanza; una "
+        "palabra comercial y legal para el valor antes de convertirse en palabra de alabanza. ⚠ Se "
+        "convierte en el vocabulario propio de Apocalipsis para la adoración: los veinticuatro "
+        "ancianos declaran a Dios áxios en 4:11 por motivo de la creación («tú creaste todas las "
+        "cosas»); un ángel poderoso pregunta después quién es áxios para abrir el rollo sellado "
+        "(5:2), y el cielo no encuentra a nadie — hasta que el Cordero que fue inmolado es declarado "
+        "áxios por motivos completamente distintos, la redención y no el haber creado (5:9, 5:12). "
+        "Dos himnos, dos motivos, la misma palabra decidiendo ambos."),
+    "hepta-pneumata": ("hepta pneúmata toû theoû", "LOS SIETE ESPÍRITUS DE DIOS — una frase única de "
+        "Apocalipsis, que aparece cuatro veces (1:4, 3:1, 4:5, 5:6) y nunca se explica. ⚠ Abre el "
+        "propio saludo del libro, en una lista con forma trinitaria entre «el que es y que era y "
+        "que ha de venir» y Jesucristo (1:4); nombra algo que el Cristo resucitado mismo posee y "
+        "envía (3:1, 5:6, «enviados por toda la tierra»); y aquí son siete llamas ardiendo delante "
+        "del trono (4:5). La lectura principal lo toma como una descripción simbólica del Espíritu "
+        "Santo en la plenitud de su actividad séptuple (recurriendo a la lista de dones del "
+        "Espíritu de Isaías 11:2), y no como siete seres distintos — pero la frase misma nunca lo "
+        "dice, y la biblioteca expone la lectura en vez de presentarla como palabra propia del "
+        "texto."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -13077,6 +13118,69 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Curacion_del_paralitico_Murillo_"
                    "1670.jpg",
+    )],
+    "rev4": [dict(
+        file="blake-four-and-twenty-elders.jpg",
+        title="The Four and Twenty Elders Casting their Crowns before the Divine Throne",
+        title_es="Los veinticuatro ancianos echando sus coronas ante el trono divino",
+        artist="William Blake",
+        artist_es="William Blake",
+        year="circa 1803&ndash;1805",
+        location="Tate Gallery, London",
+        location_es="Tate Gallery, Londres",
+        alt="A watercolour and pencil drawing. An old, bearded, white-robed figure sits "
+            "enthroned at the center, one arm raised, the other hand resting on a scroll "
+            "marked with seven red seals down its edge. A wide rainbow arcs overhead. The "
+            "throne is framed on both sides by tall, twisting forms made entirely of open "
+            "eyes. Two white-robed elders bow low on either side, laying crowns at the base "
+            "of the throne. Along the bottom edge, seven small winged heads with flame-like "
+            "hair look outward in a row. Faint ghostly faces are sketched in the dark space "
+            "above the throne.",
+        note="&#9888; <strong>Blake drew the seven seals before the text asks for them.</strong> "
+             "The scroll resting on the enthroned figure's knee already carries seven small red "
+             "marks down its edge &mdash; the detail this chapter never actually mentions. That "
+             "scroll and its seals belong to chapter 5, the next scene Blake never painted as a "
+             "companion piece, but here it is anyway, already in the Ancient of Days' hand, one "
+             "chapter early.<br><br><strong>The eyes are not decoration.</strong> The twisting "
+             "arch framing the throne on both sides is built entirely out of open eyes &mdash; "
+             "Blake's solution to a description this chapter gives to the four living creatures "
+             "(&ldquo;full of eyes in front and behind,&rdquo; v6) and stretches to cover the "
+             "whole architecture of heaven around the throne, not just four animals in it. "
+             "&#9888; <strong>Only two elders appear, not twenty-four</strong> &mdash; Blake's "
+             "title names the full number but draws a pair bowing on each side as a stand-in for "
+             "all of them, the same shorthand Christian art uses for the twelve apostles or the "
+             "seventy disciples. <strong>The row of flame-headed faces along the bottom</strong> "
+             "are the seven spirits of God burning as lamps before the throne (v5) &mdash; the "
+             "same phrase named twice already in this book, drawn here as seven distinct small "
+             "heads rather than one abstract flame. Blake made this watercolour as part of a "
+             "series illustrating the whole of Revelation for his patron Thomas Butts; most of "
+             "the set, including this sheet, is now split between the Tate and the Rosenbach "
+             "Museum.",
+        note_es="&#9888; <strong>Blake dibuja los siete sellos antes de que el texto los pida.</strong> "
+                "El rollo que descansa sobre la rodilla de la figura entronizada ya lleva siete "
+                "pequeñas marcas rojas a lo largo del borde &mdash; el detalle que este capítulo "
+                "nunca menciona. Ese rollo y sus sellos pertenecen al capítulo 5, la escena "
+                "siguiente que Blake nunca pintó como pieza de acompañamiento, pero aquí está de "
+                "todos modos, ya en la mano del Anciano de días, un capítulo antes de tiempo."
+                "<br><br><strong>Los ojos no son decoración.</strong> El arco retorcido que "
+                "enmarca el trono a ambos lados está construido enteramente con ojos abiertos "
+                "&mdash; la solución de Blake a una descripción que este capítulo da a los "
+                "cuatro seres vivientes (&laquo;llenos de ojos delante y detrás&raquo;, v. 6) y "
+                "la extiende para cubrir toda la arquitectura del cielo alrededor del trono, no "
+                "solo cuatro animales dentro de él. &#9888; <strong>Solo aparecen dos ancianos, "
+                "no veinticuatro</strong> &mdash; el título de Blake nombra el número completo "
+                "pero dibuja un par inclinándose a cada lado como representación de todos ellos, "
+                "el mismo recurso que usa el arte cristiano para los doce apóstoles o los setenta "
+                "discípulos. <strong>La fila de rostros con cabellos de llama a lo largo del "
+                "borde inferior</strong> son los siete espíritus de Dios ardiendo como lámparas "
+                "delante del trono (v. 5) &mdash; la misma frase ya nombrada dos veces en este "
+                "libro, dibujada aquí como siete cabezas pequeñas distintas y no como una llama "
+                "abstracta. Blake hizo esta acuarela como parte de una serie que ilustraba todo "
+                "el Apocalipsis para su mecenas Thomas Butts; la mayor parte de la serie, "
+                "incluida esta hoja, está hoy repartida entre la Tate y el Rosenbach Museum.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Four_and_Twenty_Elders_"
+                   "(William_Blake).jpg",
     )],
     "rev3": [dict(
         file="holman-hunt-light-of-the-world.jpg",
