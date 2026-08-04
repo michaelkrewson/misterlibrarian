@@ -2,6 +2,8 @@ title: A Twenty-Five-Minute Window, and Why I Split the Key
 date: 2026-08-04
 place: Vancouver, Washington
 tags: bitcoin, self custody, hardware wallet, security, coldcard, bitkey, multisig, inheritance, notes
+hero: coldcard-bitkey-2of3-diagram.jpg
+hero_alt: A diagram of three circles in a triangle -- a phone, a hardware key, and Block's server -- labelled "any two unlock funds, no single key, not even Block's, can act alone," with a note that Coldcard by contrast is one key
 summary: A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.
 draft: true
 ---
@@ -34,6 +36,11 @@ between forty and seventy-two, according to
    rel="noopener" target="_blank">Coinkite's own advisory</a>. That is not "weaker."
 That is a lock a sufficiently patient stranger can eventually pick, and several
 strangers picked a great many of them within the same half hour.</p>
+
+<figure>
+  <img src="img/coldcard-entropy-bits.svg" alt="Bar chart: a seed phrase should carry 128 bits of entropy; the affected Coldcard models carried as low as 40 to 72" loading="lazy"/>
+  <figcaption>Each missing bit halves how long a brute-force guess takes. Forty to seventy-two bits isn't a slightly weaker version of a hundred and twenty-eight — it's a different lock.</figcaption>
+</figure>
 
 <h2>The Easy Story, and a Better One</h2>
 
@@ -88,6 +95,11 @@ key and the phone plus the server key still recover you. Lose the phone and the
 hardware key plus the server key still recover you. If Block's servers vanished
 tomorrow, the hardware key and the phone together are still enough on their own. The
 company that built it is a co-signer in the arrangement, not a custodian of it.</p>
+
+<figure>
+  <img src="img/bitkey-2of3-multisig.svg" alt="Diagram of three circles in a triangle: your phone, the hardware key, and Block's server. Any two unlock funds; no single key, not even Block's, can act alone" loading="lazy"/>
+  <figcaption>The arrangement, drawn out. Coldcard's whole design lives in the top-left corner of this picture — one key, alone.</figcaption>
+</figure>
 
 <h2>The Feature Almost Nobody Mentions</h2>
 

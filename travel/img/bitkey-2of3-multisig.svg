@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img"
+     aria-label="Diagram of Bitkey's two-of-three arrangement: your phone, the hardware key, and Block's server, any two of which can move funds but no single one can">
+  <rect width="900" height="620" fill="#0a0f1a"/>
+  <polygon points="450,120 190,410 710,410" fill="none" stroke="rgba(232,201,104,.28)" stroke-width="2"/>
+  <text x="450" y="272" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#e8c968" font-style="italic">any two unlock funds</text>
+  <text x="450" y="302" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" fill="#94a3b8">no single key — not even Block's — can act alone</text>
+  <g transform="translate(450,120)">
+    <circle r="58" fill="#0d1520" stroke="#e8865c" stroke-width="2.5"/>
+    <rect x="-16" y="-26" width="32" height="52" rx="6" fill="none" stroke="#e8dfd2" stroke-width="2.2"/>
+    <circle cx="0" cy="18" r="2.6" fill="#e8dfd2"/>
+    <text x="0" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="21" fill="#e8dfd2">Your phone</text>
+    <text x="0" y="119" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="14" fill="#94a3b8" font-style="italic">the app key</text>
+  </g>
+  <g transform="translate(190,410)">
+    <circle r="58" fill="#0d1520" stroke="#a3b378" stroke-width="2.5"/>
+    <rect x="-24" y="-15" width="48" height="30" rx="7" fill="none" stroke="#e8dfd2" stroke-width="2.2"/>
+    <circle cx="-11" cy="0" r="4.5" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <line x1="2" y1="0" x2="17" y2="0" stroke="#e8dfd2" stroke-width="2.2"/>
+    <line x1="17" y1="0" x2="17" y2="7" stroke="#e8dfd2" stroke-width="2.2"/>
+    <text x="0" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="21" fill="#e8dfd2">The hardware key</text>
+    <text x="0" y="119" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="14" fill="#94a3b8" font-style="italic">the NFC card</text>
+  </g>
+  <g transform="translate(710,410)">
+    <circle r="58" fill="#0d1520" stroke="#e8c968" stroke-width="2.5"/>
+    <rect x="-20" y="-24" width="40" height="15" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <rect x="-20" y="-6" width="40" height="15" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <rect x="-20" y="12" width="40" height="15" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <circle cx="-13" cy="1.5" r="1.6" fill="#e8dfd2"/>
+    <text x="0" y="95" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="21" fill="#e8dfd2">Block's server</text>
+    <text x="0" y="119" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="14" fill="#94a3b8" font-style="italic">co-signer, not custodian</text>
+  </g>
+  <text x="450" y="590" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="15" fill="#94a3b8">Coldcard, by contrast, is one key. One flawed line in one device was enough.</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img"
+     aria-label="Bar chart comparing 128 bits of entropy, what a seed phrase should carry, against the 40 to 72 bits some affected Coldcard models actually carried">
+  <rect width="900" height="440" fill="#0a0f1a"/>
+
+  <!-- scale: 0..128 bits maps to x=140..820 (680px) -->
+  <!-- axis -->
+  <line x1="140" y1="330" x2="820" y2="330" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <text x="140" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">0</text>
+  <text x="480" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">64 bits</text>
+  <text x="820" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">128 bits</text>
+  <line x1="480" y1="325" x2="480" y2="335" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+
+  <!-- row 1: what a seed should carry, full 128 -->
+  <text x="140" y="100" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">What a seed phrase is supposed to carry</text>
+  <rect x="140" y="116" width="680" height="34" rx="6" fill="#a3b378" opacity="0.85"/>
+  <text x="830" y="139" font-family="Georgia, serif" font-size="17" fill="#e8dfd2" font-weight="bold">128 bits</text>
+
+  <!-- row 2: what affected coldcards had -->
+  <text x="140" y="230" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">What the affected Coldcards actually had</text>
+  <rect x="140" y="246" width="382" height="34" rx="6" fill="#3a2420" opacity="0.9"/>
+  <rect x="140" y="246" width="212" height="34" rx="6" fill="#e8865c" opacity="0.9"/>
+  <rect x="140" y="246" width="382" height="34" rx="6" fill="none" stroke="#e8865c" stroke-width="1.5" opacity="0.5"/>
+  <text x="180" y="269" font-family="Georgia, serif" font-size="14" fill="#0a0f1a" font-weight="bold">40</text>
+  <text x="540" y="269" font-family="Georgia, serif" font-size="17" fill="#e8865c" font-weight="bold">as low as 40–72 bits</text>
+
+  <text x="140" y="400" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">Each missing bit halves how long a brute-force guess would take.</text>
+  <text x="140" y="422" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">This wasn't a little weaker — it was a different lock.</text>
+</svg>
