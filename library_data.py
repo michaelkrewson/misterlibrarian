@@ -62,7 +62,7 @@ DICTIONARY = [
     ('chomer', 'chomer', 'חֹמֶר', 'chomer', "CLAY — wet, workable potter's clay, and by extension mud or mortar (it is the stuff of the Egyptian brick-quota in Exodus 1:14). ⚠ The whole force of the image in Jeremiah 18 depends on one physical fact about chomer that a reader today may not carry: WET clay can be collapsed and thrown again as often as you like, while FIRED clay can never be reworked, only smashed. That is why chapter 18's marred vessel is reshaped on the wheel and chapter 19's baked flask is broken 'so that it can never be mended again' (19:11) — two sign-acts, back to back, and the difference between them is the kiln. Isaiah turns the same noun into a prayer: 'we are the chomer, and you our potter' (64:8). Job grants the premise from the other side: 'I too was nipped off from the chomer' (33:6).", ('Jeremiah', 18, 4)),
     ('noash', "no'ash", 'נוֹאָשׁ', "no'ash", 'HOPELESS, desperate, given up — a rare word, and in Jeremiah 18:12 it is the people\'s ENTIRE answer to God, one flat syllable of a reply. The shelf spreads out over how to say it: KJV \'There is no hope\'; ASV \'It is in vain\'; NIV "It\'s no use"; NWT \'It is hopeless!\' ⚠ Note precisely what is being called hopeless. God has just said, in the same breath, that the outcome is NOT fixed — \'if that nation turns back from its evil, then I relent\' (18:8) — and has named the way out: \'turn back, each of you, from his evil way\' (18:11). So no\'ash is not a report on their circumstances. It is a verdict on the offer, and the chapter presents it as false. The same root turns up as plain resignation elsewhere (1 Samuel 27:1, Saul giving up the chase), which is what makes its use here so bleak: the word for abandoning a search is used for abandoning repentance.', ('Jeremiah', 18, 12)),
     ("lepros", "lepros", "λεπρός", "lepros", "A LEPER — and the ancient category is wider than the modern disease. Greek lepros and the Hebrew tsara'at behind it cover a range of scaling, flaking skin conditions (and, in Leviticus, mould in cloth and walls too); Hansen's disease is only one candidate. ⚠ What made it devastating was less the pathology than the STATUS: Leviticus 13:45-46 puts the affected person outside the camp with torn clothes, calling out 'unclean', and contact transmits the uncleanness to whoever touches him (Leviticus 5:3). So when Matthew 8:3 says Jesus 'stretched out his hand and touched him', the sentence is deliberately shocking, and Matthew reports no defilement travelling the usual direction. The cleansed man is still sent to the priest with the offering of Leviticus 14 — certified by the ordinary machinery of the Law, not exempted from it.", ("Matthew", 8, 2)),
-    ("basanizo", "basanizō", "βασανίζω", "basanizō", "To TORMENT — originally to test metal on a touchstone (basanos), then to examine under torture, then simply to torture or torment. ⚠ Matthew 8 uses it twice, at both ends of the chapter and of the social order: the centurion's boy lies 'terribly TORMENTED' (8:6), and the demons across the lake ask whether Jesus has come 'before the time to TORMENT us' (8:29). A servant's suffering and a demon's dread are named with one word, and nothing in between explains the coincidence. It returns a third time at 14:24, where it is no longer a person or a spirit but the disciples' own BOAT that is 'battered' by the waves — suffering, dread, and now plain physical distress, all inside one verb Matthew keeps reaching for.", ("Matthew", 8, 6)),
+    ("basanizo", "basanizō", "βασανίζω", "basanizō", "To TORMENT — originally to test metal on a touchstone (basanos), then to examine under torture, then simply to torture or torment. ⚠ Matthew 8 uses it twice, at both ends of the chapter and of the social order: the centurion's boy lies 'terribly TORMENTED' (8:6), and the demons across the lake ask whether Jesus has come 'before the time to TORMENT us' (8:29). A servant's suffering and a demon's dread are named with one word, and nothing in between explains the coincidence. It returns a third time at 14:24, where it is no longer a person or a spirit but the disciples' own BOAT that is 'battered' by the waves — suffering, dread, and now plain physical distress, all inside one verb Matthew keeps reaching for. The identical demon's plea appears again at Mark 5:7, “do not torment me” — the Gerasene spirit using Matthew's exact word for what it fears from Jesus.", ("Matthew", 8, 6)),
     ("huios-tou-anthropou", "ho huios tou anthrōpou", "ὁ υἱὸς τοῦ ἀνθρώπου", "ho huios tou anthrōpou", "THE SON OF MAN — Jesus' own name for himself, used about thirty times in Matthew and almost never by anyone else. ⚠ Two backgrounds, both genuine, pulling opposite ways. In EZEKIEL 'son of man' is simply how God addresses the prophet: mortal, a human being, nothing more. In DANIEL 7:13 — which is Aramaic, kevar enash — 'one like a son of man' comes with the clouds of heaven to the Ancient of Days and receives dominion and a kingdom that will not pass away. So the phrase can mean 'just a man' or 'the figure who is given the kingdom', and Jesus uses it in both directions: at its first appearance (Matthew 8:20) it belongs to a man with nowhere to sleep, and at 24:30 to one coming on the clouds. That double edge is much of its usefulness — it says something without settling it, which is why the objectors in the Gospels never quite have a charge to bring until he answers under oath.", ("Matthew", 8, 20)),
     ("oligopistos", "oligopistos", "ὀλιγόπιστος", "oligopistos", "LITTLE-FAITH — one Greek word, oligos ('little') + pistis ('faith'), and as far as we can tell Matthew's own coinage; it appears in the New Testament essentially only on Jesus' lips. ⚠ It is NOT unbelief. The disciples in the boat woke him, which is a kind of faith; what he objects to is its SIZE (Matthew 8:26). He uses it again to Peter sinking on the water (14:31), to all of them over the bread (16:8), and at 6:30 of people who worry about clothes. The word is a rebuke and a diagnosis rather than a dismissal — the same people are still in the boat, and still called disciples, at the end of the sentence.", ("Matthew", 8, 26)),
     ("seismos", "seismos", "σεισμός", "seismos", "A SHAKING — from seiō, to shake; the ordinary Greek word for an EARTHQUAKE, and the root of English 'seismic'. ⚠ Matthew 8:24 uses it of the storm on the lake, where Mark 4:37 and Luke 8:23 both use lailaps, the ordinary word for a squall. The choice looks deliberate, because Matthew uses seismos twice more at the hinges of his Gospel: the shaking at the crucifixion (27:51, with the cognate verb of the earth) and the one at the empty tomb (28:2). So on Matthew's page the sea does what the earth does at the death and the resurrection — which is why this translation reads 'a great shaking' rather than smoothing it to 'storm' or 'tempest', both of which are fair renderings of a squall and lose the word he actually wrote.", ("Matthew", 8, 24)),
@@ -184,7 +184,7 @@ DICTIONARY = [
     ["horizo", "horizō", "ὁρίζω", "horizō", "To MARK OUT a boundary, appoint, determine — the root of English 'horizon', the line that bounds what you can see. Romans 1:4 says Jesus was horisthentos 'Son of God in power' by the resurrection, and the verse has been argued over since the second century: read flatly it could suggest the resurrection MADE him what he was not, which is why KJV, ASV and NWT all render it 'declared' rather than 'appointed'. Both senses lie inside the word. Elsewhere in Acts it is used of God appointing a day of judgment (17:31) and a judge of living and dead (10:42).", ["Romans", 1, 4]],
     ["hagios", "hagios", "ἅγιος", "hagios", "HOLY, set apart — and in the plural, hagioi, 'the holy ones', which is what Paul calls every member of an ordinary mixed congregation of slaves, freedmen and householders. ⚠ English 'saint' comes through Latin sanctus and now carries freight the Greek has not got: a canonised elite, a category of the exceptional dead. NWT's 'holy ones' is the tighter rendering and this translation follows it. The Hebrew behind it is qadosh — separated, devoted, belonging to God rather than to ordinary use.", ["Romans", 1, 7]],
     ["barbaros", "barbaros", "βάρβαρος", "barbaros", "BARBARIAN — and the word is onomatopoeia. To a Greek ear a foreign language sounded like 'bar-bar-bar', so a barbaros is simply somebody whose speech you cannot parse; it began as a description of noise and hardened into a description of people. Paul says he is a debtor 'to Greeks and to barbarians, to the wise and to the senseless' (Romans 1:14) — two divisions of the whole human race, by culture and by capacity, with himself in debt to all four groups.", ["Romans", 1, 14]],
-    ["dynamis", "dynamis", "δύναμις", "dynamis", "POWER — capacity, the ability to do a thing; the root of 'dynamic' and 'dynamo'. ⚠ Also of 'dynamite', but the explosive was named after the Greek word in 1867, not the other way round, so a sermon that calls the gospel 'the dynamite of God' is describing a nineteenth-century invention. In the Gospels dynameis in the plural are the 'mighty works', the miracles. Acts 1:8 promises it before witness; Romans 1:16 identifies the gospel AS it: 'God's power for salvation to everyone who believes'.", ["Romans", 1, 16]],
+    ["dynamis", "dynamis", "δύναμις", "dynamis", "POWER — capacity, the ability to do a thing; the root of 'dynamic' and 'dynamo'. ⚠ Also of 'dynamite', but the explosive was named after the Greek word in 1867, not the other way round, so a sermon that calls the gospel 'the dynamite of God' is describing a nineteenth-century invention. In the Gospels dynameis in the plural are the 'mighty works', the miracles. Acts 1:8 promises it before witness; Romans 1:16 identifies the gospel AS it: 'God's power for salvation to everyone who believes'. ⚠ Mark 5:30 gives the word its most physical moment in the New Testament: Jesus, healing the bleeding woman, “perceiving in himself that power had gone out from him” — a quantity that moves and can be felt leaving, not a figure of speech for attention or effort.", ["Romans", 1, 16]],
     ["soteria", "sōtēria", "σωτηρία", "sōtēria", "RESCUE, deliverance, coming through alive — an everyday Greek word long before it was a religious one. A doctor achieves sōtēria for a patient; a general achieves it for a besieged city; a ship's crew achieves it in a storm (Acts 27:34 uses it of simply surviving the wreck). The related sōtēr, 'saviour', was a standing title of Hellenistic kings and Roman emperors, which is part of what makes Romans 1:16 pointed: the letter announces a rival deliverer to the city that minted the coins.", ["Romans", 1, 16]],
     ["dikaiosyne", "dikaiosynē", "δικαιοσύνη", "dikaiosynē", "RIGHTEOUSNESS / justice — one word in Greek for what English splits into two, and the key term of Romans. ⚠ 'The righteousness of God' (dikaiosynē theou, 1:17) is the most argued-over phrase in the letter, and the dispute is grammatical before it is theological: a righteousness that BELONGS to God (his covenant faithfulness, his putting-things-right), one that COMES from God as a gift, or one that COUNTS before God. Luther described his whole turn as a change of mind about this genitive. Behind it stands the Hebrew tsedaqah, which is likewise relational — being right BY someone, not merely being morally correct. ⚠ In Matthew the word runs the other way round — not a status God gives but the doing of what God has asked: it is what Jesus says he and John are completing when he insists on being baptized, 'thus it is fitting for us to fulfil all righteousness' (3:15), and it becomes the spine of the Sermon on the Mount (hunger for it, 5:6; exceed the scribes' and Pharisees' measure of it, 5:20; do not practise it to be seen, 6:1).", ["Romans", 1, 17]],
     ["orge", "orgē", "ὀργή", "orgē", "WRATH — settled anger, not a flare of temper (that is thymos); the root of English 'orgy' only by a long and unrelated road. Romans 1:18 pairs it deliberately with 1:17: God's righteousness 'is revealed', and God's wrath 'is revealed' — the same verb, present tense, both happening now. ⚠ And the chapter defines the wrath by what follows: three times 'God gave them over'. The judgment described is not a thunderbolt but a letting-go — being handed the thing you wanted more than God.", ["Romans", 1, 18]],
@@ -1765,6 +1765,22 @@ DICTIONARY = [
      "possession.' The same word recurs of Israel at Deuteronomy 7:6, 14:2, 26:18, and of the "
      "faithful remnant at Malachi 3:17.",
      ("Exodus", 19, 5)),
+    ("legion", "legion", "\u039b\u03b5\u03b3\u03b9\u03ce\u03bd", "legi\u014dn",
+     "A LEGION \u2014 a Roman military unit of roughly five to six thousand soldiers, the "
+     "empire\u2019s own standing occupying force, borrowed here as a name for what possesses "
+     "one man. \u26a0 The choice of word is not neutral in a Roman province with legions "
+     "stationed nearby: \u2018my name is Legion, for we are many\u2019 (Mark 5:9) puts an "
+     "occupier\u2019s own vocabulary in the mouth of an unclean spirit, in the very land that "
+     "vocabulary describes.",
+     ("Mark", 5, 9)),
+    ("talitha", "talitha koum", "\u03a4\u03b1\u03bb\u03b9\u03b8\u03b1 \u03ba\u03bf\u03c5\u03bc", "talitha koum",
+     "LITTLE GIRL, GET UP \u2014 Aramaic, the language Jesus actually spoke, transliterated "
+     "directly into the Greek text and then translated for the reader. \u26a0 Mark does this "
+     "only a handful of times in the whole Gospel \u2014 the same pattern marks "
+     "\u2018Boanerges\u2019 at 3:17 and \u2018Ephphatha\u2019 at 7:34 \u2014 preserving the "
+     "actual sound of what was said before explaining it, as if the original words themselves "
+     "are part of what is being reported, not just their meaning.",
+     ("Mark", 5, 41)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6599,6 +6615,12 @@ XREFS = [
     (("Exodus", 19, 6), ("Revelation", 1, 6), "kingdom and priests, the same pairing this Sinai covenant language will supply to a very different book"),
     (("Exodus", 19, 6), ("Revelation", 5, 10), "a kingdom of priests, requoted of the redeemed in the Lamb's own new song"),
     (("Exodus", 19, 4), ("Deuteronomy", 32, 11), "eagles' wings, the same image Moses will use again decades later for how Jehovah carried Israel"),
+    (("Mark", 5, 1), ("Matthew", 8, 28), "the same miracle in the other Gospel: two possessed men instead of one, and the region called Gadarene rather than Gerasene"),
+    (("Mark", 5, 19), ("Mark", 3, 12), "the one healed man in Mark told to go home and tell, breaking the same secrecy that muzzles the unclean spirits three chapters earlier"),
+    (("Mark", 5, 30), ("Leviticus", 15, 25), "the ritual uncleanness of a chronic discharge, the law this woman has lived under for twelve years"),
+    (("Mark", 5, 37), ("Mark", 9, 2), "Peter, James, and John, the same three names Jesus takes up the mountain for the transfiguration"),
+    (("Mark", 5, 37), ("Mark", 14, 33), "Peter, James, and John, the same three names taken furthest into Gethsemane"),
+    (("Mark", 5, 41), ("Mark", 3, 17), "an Aramaic phrase transliterated and then translated, the same pattern already used for Boanerges"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -12130,6 +12152,20 @@ DICTIONARY_ES = {
         "genérico, sino algo más cercano a la posesión privada de un rey. RV60 'especial "
         "tesoro'; NVI 'propiedad exclusiva.' La misma palabra reaparece de Israel en "
         "Deuteronomio 7:6, 14:2, 26:18, y del remanente fiel en Malaquías 3:17."),
+    "legion": ("legión", "UNA LEGIÓN — una unidad militar romana de unos "
+        "cinco a seis mil soldados, la propia fuerza de ocupación permanente del "
+        "imperio, tomada aquí prestada como nombre de lo que posee a un solo hombre. "
+        "⚠ La elección de la palabra no es neutral en una provincia romana con "
+        "legiones acantonadas cerca: «mi nombre es Legión, porque somos muchos» "
+        "(Marcos 5:9) pone el vocabulario propio de un ocupante en boca de un espíritu "
+        "inmundo, en la misma tierra que ese vocabulario describe."),
+    "talitha": ("talita cum", "NIÑA, LEVÁNTATE — arameo, la lengua que Jesús "
+        "realmente hablaba, transliterado directamente al texto griego y luego traducido "
+        "para el lector. ⚠ Marcos hace esto solo un puñado de veces en todo el "
+        "Evangelio — el mismo patrón marca «Boanerges» en 3:17 y "
+        "«Efatá» en 7:34 — conservando el sonido real de lo que se dijo "
+        "antes de explicarlo, como si las propias palabras originales formaran parte de lo "
+        "que se relata, no solo su significado."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -12790,6 +12826,53 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "mark5": [dict(
+        file="apollinare-nuovo-demoniac.jpg",
+        title="Christ Exorcising the Gerasene Demoniac",
+        title_es="Cristo exorcizando al endemoniado geraseno",
+        artist="Unknown mosaicist",
+        artist_es="Mosaísta anónimo",
+        year="late 5th century AD",
+        location="Basilica of Sant'Apollinare Nuovo, Ravenna",
+        location_es="Basílica de San Apolinar Nuevo, Rávena",
+        alt="A monochrome photograph of an ancient wall mosaic in a rough, tessellated "
+            "style. On the left, two standing haloed figures face right: a young, "
+            "beardless Christ with a large halo, and a companion figure beside him with "
+            "one hand raised to his own chest. At their feet, a smaller kneeling man "
+            "reaches toward Christ with both hands. To the right, a rocky outcrop with "
+            "sparse vegetation separates the group from three dark, hunched animal "
+            "shapes lying along a shoreline, standing in for the herd of swine.",
+        note="&#9888; <strong>This is one of the oldest surviving pictures of any Gospel "
+             "miracle</strong> &mdash; a wall mosaic from Ravenna's Basilica of "
+             "Sant'Apollinare Nuovo, built around 500 AD, decades before the Byzantine "
+             "empire's own Justinianic mosaics a few streets away. Christ is shown young "
+             "and beardless, in the earliest Western convention for his image, a full "
+             "generation before the bearded type that later became standard. The kneeling "
+             "man and the dark shapes on the shore are the whole scene reduced to its "
+             "bones: the man delivered, and what became of the pigs. &#9888; <strong>The "
+             "mosaic's own church tells the region's later religious history in "
+             "miniature</strong> &mdash; built under the Arian Ostrogothic king "
+             "Theodoric, it was rededicated to Nicene orthodoxy within a generation, and "
+             "its original mosaic cycle survives largely intact along both walls of the "
+             "nave, one of the most complete such cycles anywhere from this period.",
+        note_es="&#9888; <strong>Esta es una de las imágenes más antiguas que se "
+             "conservan de cualquier milagro evangélico</strong> &mdash; un mosaico de "
+             "pared de la basílica ravenesa de San Apolinar Nuevo, construida hacia el "
+             "año 500 d.C., décadas antes de los propios mosaicos justinianeos "
+             "bizantinos a pocas calles de distancia. Cristo aparece joven e imberbe, "
+             "según la convención occidental más temprana de su imagen, una generación "
+             "antes de que se impusiera el tipo barbado. El hombre arrodillado y las "
+             "formas oscuras en la orilla son toda la escena reducida a su esqueleto: el "
+             "hombre liberado, y lo que fue de los cerdos. &#9888; <strong>La propia "
+             "iglesia del mosaico resume en miniatura la historia religiosa posterior de "
+             "la región</strong> &mdash; construida bajo el rey ostrogodo arriano "
+             "Teodorico, fue reconsagrada a la ortodoxia nicena una generación después, y "
+             "su ciclo de mosaicos original sobrevive en gran parte intacto a lo largo de "
+             "ambos muros de la nave, uno de los ciclos más completos que se conservan de "
+             "este periodo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Sant_Apollinare_Nuovo_-_Healing_of_the_demon-possessed.jpg",
+    )],
     "exod19": [dict(
         file="mcdonald-st-katherine-jebel-musa.jpg",
         title="Convent of St. Katherine, with Jebel Musa in the Background",
