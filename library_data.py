@@ -302,7 +302,12 @@ DICTIONARY = [
     ("yhvh", "YHVH", "יְהוָה", "YHVH (the Tetragrammaton)",
      "The personal name of God (יהוה), first here at 2:4. Most English Bibles hide it behind the title 'the LORD' (small caps); this translation restores it as <strong>Jehovah</strong> — the traditional English form since about the 1200s, used throughout the ASV and by the NWT. ('Jehovah' is a hybrid, the consonants with Adonai's vowels; scholars reconstruct the original as 'Yahweh.') The full discussion is on the <a href=\"ask-jehovah.html\">Dear Mr. Librarian page</a>.", (2, 4)),
     ("yada", "yada", "יָדַע", "yada",
-     "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1).", (4, 1)),
+     "To know — including Hebrew's own euphemism for intimacy ('the man knew his wife,' 4:1). ⚠ Distinct from "
+     "nakar (see that entry), a different root also glossed 'know/regard' but doing recognition rather than "
+     "relationship: Jeremiah 24:7 keeps them four verses apart on purpose, God 'regarding' (nakar) the exiles "
+     "favorably in v5 and then promising them 'a heart to know (yada) me' in v7 — the second is the relational "
+     "word, spoken of a whole people for the first time in a promise this book later expands into the New "
+     "Covenant's 'they will all know me' (Jeremiah 31:33).", (4, 1)),
     ("yom", "yom", "יוֹם", "yom",
      "DAY — one of the most elastic words in the Hebrew Bible, and the reason the length of the creation 'days' has been debated for two thousand years. It means the daylight hours (Genesis 1:5, 'God named the light DAY'), a 24-hour calendar day, AND an indefinite stretch of time — an age: 'in the DAY that Jehovah made earth and heaven' (2:4) folds the whole creation week into a single yom, and 'the DAY of Jehovah' names a whole era of judgment. So the six 'days' of Genesis 1 can be read as ordinary days OR as long ages (the 'day-age' reading — ancient, going back to Augustine, and the way many hold the text and the ~13.8-billion-year cosmos together). This translation renders it plainly 'day' and lays out the readings without voting — see the note at 1:5, or the fuller discussion on the <a href=\"ask-creation-days.html\">Dear Mr. Librarian page</a>.", (1, 5)),
     ("zakhar-remember", "zakhar", "זָכַר", "zakhar",
@@ -369,7 +374,7 @@ DICTIONARY = [
     ("dibbah", "dibbah", "דִּבָּה", "dibbah",
      "A BAD REPORT, whispering, defamation — not neutral news but the word for a campaign of talk. Joseph brings his father 'their bad report' (37:2), and the text pointedly declines to say whether it was true. The word's two other famous appearances are both fatal: the ten spies bring back 'an evil report of the land' that costs a generation the promise (Numbers 13:32), and Jeremiah hears 'the whispering of many' from the men circling to kill him (Jeremiah 20:10). KJV 'evil report'; NWT 'bad report about them.'", (37, 2)),
     ("nakar", "nakar", "נָכַר", "haker / hikkir",
-     "To RECOGNIZE, identify, acknowledge — the verb on which two of Genesis's cruelest scenes turn, and the same imperative both times. At Isaac's bedside the blind father 'did NOT recognize him, because his hands were hairy' (27:23), and Jacob takes a blessing that is not his. Ten chapters later Jacob's sons send him a bloodied tunic with the words haker-na — 'RECOGNIZE, PLEASE' — and he does (37:32-33), and believes a lie. Then, one chapter after that, Tamar sends Judah his own seal and staff with the identical phrase, haker-na (38:25) — the brother who engineered the sale receiving his own two words back. The verb is how this family lies to its fathers and how it is finally caught.", (37, 32)),
+     "To RECOGNIZE, identify, acknowledge — the verb on which two of Genesis's cruelest scenes turn, and the same imperative both times. At Isaac's bedside the blind father 'did NOT recognize him, because his hands were hairy' (27:23), and Jacob takes a blessing that is not his. Ten chapters later Jacob's sons send him a bloodied tunic with the words haker-na — 'RECOGNIZE, PLEASE' — and he does (37:32-33), and believes a lie. Then, one chapter after that, Tamar sends Judah his own seal and staff with the identical phrase, haker-na (38:25) — the brother who engineered the sale receiving his own two words back. The verb is how this family lies to its fathers and how it is finally caught. ⚠ The same root also runs the opposite direction: its noun form (nokri) names a FOREIGNER, someone kept at a distance, which makes Jeremiah 24:5's use of it pointed — 'so I will regard (akkir) the exiles of Judah,' God formally recognizing the deported community as the good figs of his own vision, the favorable sense of a root that can just as easily mean the reverse of welcome. KJV keeps the root-echo closest there, 'so will I acknowledge them'; ASV/NIV/NWT all unpack it as 'regard.'", (37, 32)),
     ("sheol", "Sheol", "שְׁאוֹל", "she'ol",
      "The Hebrew realm of the dead — down, dark, silent — appearing here for the FIRST time in the Bible, in Jacob's 'I will go down to my son, mourning, to Sheol' (37:35). Crucially, everyone goes there: righteous and wicked alike, with no second word set against it. It is not a place of punishment, and the Hebrew Bible offers no rival destination. The KJV renders it 'the grave' here, but 'hell' in thirty-one other places and 'the pit' in three — so an English reader cannot tell that Jacob, Job, David and Isaiah are discussing one thing, and would reasonably conclude the patriarch expects the grave while the wicked go elsewhere. That is a doctrine assembled out of an inconsistent gloss. The Douay, following the Vulgate's infernum, prints 'into hell' right here — a patriarch expecting to join his beloved son there. The ASV and NWT both simply transliterate, 'Sheol,' declining to settle by translation what the Hebrew leaves open; this translation follows them on the merits — the same principle as 'vault' for raqia and 'side' for tsela. \u26a0 Psalm 139:8 makes a stronger claim about it than the rest of the Psalter does: 'if I spread my bed in Sheol, there you are.' Elsewhere in the Psalms, Sheol is precisely where God is NOT remembered and does not act (6:5, 88:10-12, 115:17). Psalm 139 sits against those verses, and the Psalter does not reconcile them.", (37, 35)),
     ("saq", "saq", "שַׂק", "saq",
@@ -739,7 +744,7 @@ DICTIONARY = [
     ("goral", "goral", "גּוֹרָל", "goral",
      "A LOT — a marked stone or token drawn or cast to decide a question thought to be in God's hands (the 'let God point' procedure): 'the LOT is cast into the lap, but its every decision is from Jehovah' (Proverbs 16:33). Casting lots divides the promised land among the tribes (Numbers 26:55 — Joshua's tribal allotments are goral country), exposes Achan (Joshua 7:14-18), nearly condemns Jonathan (1 Samuel 14:41-42), and chooses Saul as king (1 Samuel 10:20-21). ⚠ In Jonah 1:7 pagan sailors cast lots to find whose guilt has raised the storm, and it falls on Jonah — the same procedure Edom had just thrown OVER Jerusalem as it fell (Obadiah 11). Its last appearances frame the Gospels: soldiers cast lots for Jesus' clothing (Matthew 27:35, fulfilling Psalm 22:18) and the eleven cast lots to replace Judas with Matthias (Acts 1:26) — the last time in Scripture, just before the Spirit comes and it is never used again. By extension goral means one's allotted PORTION or destiny — Daniel's last word of hope: 'you shall stand up to your LOT at the end of the days' (Daniel 12:13), a share with your name on it, not a game of chance.", ("Jonah", 1, 7)),
     ("moed", "mo'ed", "מוֹעֵד", "mo'ed",
-     "'Appointed time' — Genesis 1:14's word: the lights are hung 'for appointed times' (mo'adim), this translation's fixed rendering. In Daniel 12:7 time itself is measured in them — 'an appointed time, appointed times, and a half': the broken seven, three and a half, sworn by the One who lives forever. Later the word also names the tent of MEETING (ohel mo'ed) — appointed time, appointed place.", (1, 14)),
+     "'Appointed time' — Genesis 1:14's word: the lights are hung 'for appointed times' (mo'adim), this translation's fixed rendering. In Daniel 12:7 time itself is measured in them — 'an appointed time, appointed times, and a half': the broken seven, three and a half, sworn by the One who lives forever. Later the word also names the tent of MEETING (ohel mo'ed) — appointed time, appointed place. The same root turns up as a bare participle in Jeremiah 24:1 — two baskets of figs 'set' (mu'adim) before the temple, ordinary produce given the same verb that elsewhere marks a sacred appointment, though the text never says the baskets were placed there for any cultic reason.", (1, 14)),
     # ---- Matthew 5 (Greek) ----
     ("makarios", "makarios", "μακάριος", "makarios",
      "'Happy, fortunate' — the Beatitude word (Matthew 5:3-11, nine times), and the Greek Bible's standing rendering of the Hebrew ashrei (Psalm 1:1; Daniel 12:12). It declares an enviable CONDITION, not a blessing pronounced (that's eulogētos). KJV/Geneva/Douay 'Blessed'; this translation reads 'Happy,' with the NWT — the same call it made for ashrei.", ("Matthew", 5, 3)),
@@ -3857,7 +3862,7 @@ ENCYCLOPEDIA = [
               "a coming Branch whose name would be YHVH TSIDQENU, 'Jehovah is OUR righteousness' (23:6) — the "
               "same two elements re-set, the divine name moved to the front and 'my' replaced by 'our.' The "
               "throne-name of Judah's last king is picked up, corrected, and handed to someone else.",
-         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7)], videos=[]),
+         refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7), ("Jeremiah", 24, 8)], videos=[]),
     dict(slug="pashhur-malchiah", name="Pashhur son of Malchiah", kind="person", aliases=["Pashhur"],
          desc="NOT the Pashhur of the stocks (that was the son of Immer, ch. 20) — a second official of the "
               "same name, sent by Zedekiah during the final siege to ask Jeremiah for a miracle (21:1). The "
@@ -3914,7 +3919,7 @@ ENCYCLOPEDIA = [
               "Zerubbabel is handed the signet back (Haggai 2:23), and both Gospel genealogies of the Messiah pass "
               "through his line — the king 'written childless' as to David's old throne became an ancestor of the "
               "one who inherits a greater one.",
-         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Ezekiel", 1, 2)], videos=[]),
+         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Jeremiah", 24, 1), ("Ezekiel", 1, 2)], videos=[]),
 
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
@@ -6621,6 +6626,11 @@ XREFS = [
     (("Mark", 5, 37), ("Mark", 9, 2), "Peter, James, and John, the same three names Jesus takes up the mountain for the transfiguration"),
     (("Mark", 5, 37), ("Mark", 14, 33), "Peter, James, and John, the same three names taken furthest into Gethsemane"),
     (("Mark", 5, 41), ("Mark", 3, 17), "an Aramaic phrase transliterated and then translated, the same pattern already used for Boanerges"),
+    (("Jeremiah", 24, 6), ("Jeremiah", 1, 10), "build and plant, two of the prophet's own six commissioning verbs, turned from a mandate over nations into a promise to exiles"),
+    (("Jeremiah", 24, 7), ("Jeremiah", 31, 32), "they will be my people and I will be their God, the same covenant formula stated first to one deported generation and then to the whole house of Israel"),
+    (("Jeremiah", 24, 7), ("Jeremiah", 31, 33), "a heart to know me, paid in full at the New Covenant's they will all know me, from the least to the greatest"),
+    (("Jeremiah", 24, 8), ("Jeremiah", 21, 7), "Zedekiah, his princes, and the remnant of Jerusalem, nearly the identical guest list already delivered to the same king by name"),
+    (("Jeremiah", 24, 10), ("Jeremiah", 21, 9), "sword, famine, and pestilence, the identical triad already run through that chapter twice"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7524,6 +7534,9 @@ CHRON_CHAPTERS = {
     "jer22": dict(era="exile",
                   when="The tariff of the last four kings — Shallum carried to Egypt, Jehoiakim's donkey-burial, Coniah the signet torn off; 'is that not to know me?' and 'write this man childless.'",
                   clock="Delivered across Jehoiakim's reign (c. 609–598 BC), with its Coniah oracle reaching the deportation of 597 — the chapter surveys Josiah's dead and his three heirs in turn: Jehoahaz already in Egypt, Jehoiakim reigning, and Jehoiachin's fall previewed. The kings run in the reverse of Abraham: called out of their homeland by force, not promise."),
+    "jer24": dict(era="exile",
+                  when="Two baskets of figs, one very good and one too rotten to eat — the exiles already in Babylon are the good figs, Zedekiah and those left in the land are the bad.",
+                  clock="After the 597 BC deportation named in v1, sometime during Zedekiah's reign (597–586 BC) — the chapter dates itself by the event it follows rather than a regnal year, and Zedekiah is still addressed as reigning, so it falls before the final siege of ch. 21."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -10627,6 +10640,20 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "nakar": ("nakar",
+        "RECONOCER, identificar — el verbo sobre el que giran dos de las escenas más crueles del "
+        "Génesis, con el mismo imperativo las dos veces. Junto al lecho de Isaac, el padre ciego "
+        "«no lo reconoció, porque sus manos eran velludas» (27:23), y Jacob recibe una bendición "
+        "que no es suya. Diez capítulos después los hijos de Jacob le envían una túnica ensangrentada "
+        "con las palabras haker-na — «RECONOCE, POR FAVOR» — y él lo hace (37:32-33), y cree una "
+        "mentira. Luego, un capítulo más adelante, Tamar le envía a Judá su propio sello y su "
+        "bastón con la misma frase, haker-na (38:25) — el hermano que urdió la venta recibe sus "
+        "propias dos palabras de vuelta. ⚠ La misma raíz corre también en dirección casi opuesta: "
+        "su forma sustantiva (nokrí) nombra a un EXTRANJERO, alguien mantenido a distancia — lo que "
+        "vuelve significativo su uso en Jeremías 24:5: «así consideraré (akkir) a los desterrados "
+        "de Judá», Dios reconociendo formalmente a la comunidad deportada como los higos buenos de "
+        "su propia visión, el sentido favorable de una raíz que igual de fácil significa lo "
+        "contrario de la bienvenida. La RV60 traduce ahí «así miraré»; la NVI, «los consideraré»."),
     "cherem": ("cherem",
         "EL ANATEMA — algo CONSAGRADO a Dios al colocarlo completamente fuera del uso humano, "
         "lo que en la guerra significaba destruido en vez de saqueado. De CHARAM, cerrar, "
@@ -12662,6 +12689,24 @@ ENCYCLOPEDIA_ES["zedekiah"] = ("Sedequías",
     "TSIDQENU, «Jehová es NUESTRA justicia» (23:6) — los mismos dos elementos recolocados, el nombre "
     "divino al frente y «mi» cambiado por «nuestra». El nombre de trono del último rey de Judá es "
     "recogido, corregido y entregado a otro.")
+
+ENCYCLOPEDIA_ES["jehoiachin"] = ("Joaquín (Conías / Jeconías)",
+    "El hijo de Joacim, tres nombres para un rey-niño condenado: JOAQUÍN (su nombre completo), "
+    "JECONÍAS, y el CONÍAS recortado, casi despectivo, que usa Jeremías (22:24, 28). Dieciocho "
+    "años, tres meses en el trono, cuando Nabucodonosor tomó Jerusalén en la primera gran "
+    "deportación (597 a.C.) y lo llevó a Babilonia junto con los tesoros, los artesanos y diez "
+    "mil cautivos — el exilio del mundo de Ezequiel y del joven Daniel. El oráculo de Jeremías lo "
+    "despoja de autoridad con una sola imagen: aunque fuera «un anillo de sellar en mi mano "
+    "derecha, de allí te arrancaría», y «escribid a este hombre sin hijos». Pero la maldición es "
+    "del trono, no de la sangre: engendró siete hijos en el exilio (1 Crónicas 3:17), fue "
+    "liberado de la prisión y sentado a la mesa del rey de Babilonia treinta y siete años después "
+    "(2 Reyes 25:27-30) — una gracia corroborada por las TABLILLAS DE RACIONES DE BABILONIA "
+    "excavadas, que enumeran aceite y grano para «Ya'u-kinu, rey de Judá» y sus hijos por nombre. "
+    "A su nieto Zorobabel se le devuelve el anillo (Hageo 2:23), y las dos genealogías evangélicas "
+    "del Mesías pasan por su línea — el rey «escrito sin hijos» respecto al antiguo trono de David "
+    "se convirtió en antepasado de quien hereda uno mayor. ⚠ Jeremías 24 data su propia visión de "
+    "los higos precisamente por esta deportación (24:1) — el veredicto de Dios sobre el mismo "
+    "suceso que aquí lo destronó.")
 
 ENCYCLOPEDIA_ES["sodom-gomorrah"] = ("Sodoma y Gomorra",
     "Mencionadas primero como puntos de referencia en la frontera cananea (Génesis 10:19). Lot va "
