@@ -1755,6 +1755,16 @@ DICTIONARY = [
      "of the corner' (Psalm 118:22), requoted of Christ again at 1 Peter 2:6-7. The English "
      "shelf agrees on 'cornerstone'; architectural historians do not agree on what it built.",
      ("Ephesians", 2, 20)),
+    ("segullah", "segullah", "סְגֻלָּה", "segullah",
+     "A TREASURED POSSESSION — a rare word, used elsewhere of a king's own private wealth, the "
+     "personal fund a monarch keeps distinct from the state treasury (1 Chronicles 29:3; "
+     "Ecclesiastes 2:8). ⚠ At Exodus 19:5, offered to the whole nation of Israel, among a whole "
+     "earth God already owns — not generic favor, but something closer to a king's own private "
+     "holding. KJV 'a peculiar treasure' (Elizabethan English for 'one's own, particular'), now "
+     "easily misheard as 'a strange treasure'; ASV/NIV/ESV 'own possession'/'treasured "
+     "possession.' The same word recurs of Israel at Deuteronomy 7:6, 14:2, 26:18, and of the "
+     "faithful remnant at Malachi 3:17.",
+     ("Exodus", 19, 5)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6586,6 +6596,9 @@ XREFS = [
     (("Ephesians", 2, 14), ("Acts", 21, 28), "the accusation that nearly killed Paul -- bringing a Gentile past the temple's own dividing barrier -- the same wall this verse says Christ broke down"),
     (("Ephesians", 2, 20), ("Psalms", 118, 22), "the stone the builders rejected has become the head of the corner, the source text behind this chapter's cornerstone"),
     (("Ephesians", 2, 20), ("1 Peter", 2, 6), "the same cornerstone text requoted of Christ"),
+    (("Exodus", 19, 6), ("Revelation", 1, 6), "kingdom and priests, the same pairing this Sinai covenant language will supply to a very different book"),
+    (("Exodus", 19, 6), ("Revelation", 5, 10), "a kingdom of priests, requoted of the redeemed in the Lamb's own new song"),
+    (("Exodus", 19, 4), ("Deuteronomy", 32, 11), "eagles' wings, the same image Moses will use again decades later for how Jehovah carried Israel"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7594,6 +7607,9 @@ CHRON_CHAPTERS = {
     "exod18": dict(era="exodus",
                   when="Jethro brings Zipporah and her two sons back to Moses at the mountain of God, hears the whole story, offers sacrifice, and — seeing Moses judging the people alone from morning to evening — advises the delegation structure Moses then adopts.",
                   clock="Placed here, immediately before Sinai — but the chapter's own language of Moses already teaching 'the statutes of God and his laws' (v16, v20) reads to many readers as later than its position in the text, since the law proper is not given until chapter 20. This library keeps the narrative's own placement and flags the puzzle rather than resolving it."),
+    "exod19": dict(era="exodus",
+                  when="Israel arrives at Sinai and camps before the mountain. Jehovah proposes a covenant through Moses — treasured possession, kingdom of priests — the people accept, and three days of consecration end in thunder, lightning, smoke, and trumpet as Jehovah comes down onto the mountain.",
+                  clock="c. 1446 BC on the early-date chronology this project foregrounds — the third month out of Egypt (19:1), the same day named at the start of the chapter. The very next scene, chronologically, is the giving of the law at chapter 20, already on these pages."),
     "mal1": dict(era="return",
                  when="Persian-period Judah, a lifetime after the return from exile — the second temple standing, the priesthood at the altar, and the last prophet opening his case.",
                  clock="Undated by the book itself. The governor (pechah) of v8 and the temple in working order put it after 515 BC and inside the Persian empire; the usual estimate is c. 460-430 BC, around or just before the reforms of Ezra and Nehemiah, whose complaints Malachi's largely match."),
@@ -12107,6 +12123,13 @@ DICTIONARY_ES = {
         "venido a ser cabeza del ángulo' (Salmo 118:22), citado de nuevo de Cristo en 1 Pedro "
         "2:6-7. El estante en español coincide en 'piedra del ángulo'; los historiadores de la "
         "arquitectura no coinciden en qué construyó."),
+    "segullah": ("segulá", "UNA POSESIÓN ATESORADA — una palabra rara, usada en otros lugares "
+        "de la riqueza privada de un rey, el fondo personal que un monarca mantiene aparte del "
+        "tesoro del estado (1 Crónicas 29:3; Eclesiastés 2:8). ⚠ En Éxodo 19:5, ofrecida a toda "
+        "la nación de Israel, dentro de una tierra entera que Dios ya posee — no un favor "
+        "genérico, sino algo más cercano a la posesión privada de un rey. RV60 'especial "
+        "tesoro'; NVI 'propiedad exclusiva.' La misma palabra reaparece de Israel en "
+        "Deuteronomio 7:6, 14:2, 26:18, y del remanente fiel en Malaquías 3:17."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -12767,6 +12790,62 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "exod19": [dict(
+        file="mcdonald-st-katherine-jebel-musa.jpg",
+        title="Convent of St. Katherine, with Jebel Musa in the Background",
+        title_es="Convento de Santa Catalina, con el Jebel Musa al fondo",
+        artist="Sgt. James M. McDonald",
+        artist_es="Sargento James M. McDonald",
+        year="1869",
+        location="J. Paul Getty Museum, Los Angeles",
+        location_es="Museo J. Paul Getty, Los Ángeles",
+        alt="A sepia-toned 19th-century photograph of a massive fortified stone monastery "
+            "compound at the base of a steep, rocky mountain that fills most of the "
+            "background. Thick crenellated walls enclose a cluster of stone and timber "
+            "buildings; a few tiny human figures stand near the base of the wall, dwarfed by "
+            "both the fortification and the mountain behind it. A printed caption below the "
+            "image reads: CONVENT OF ST KATHERINE, WITH JEBEL MUSA IN THE BACKGROUND.",
+        note="&#9888; <strong>This mountain's identification with the Sinai of this chapter is "
+             "a tradition, not a certainty the text itself supplies.</strong> Jebel Musa "
+             "(&lsquo;Mountain of Moses&rsquo;) has been venerated as biblical Sinai since at "
+             "least the 4th century AD, when Christian monks first settled at its base; the "
+             "monastery photographed here, St. Catherine's, has stood continuously since the "
+             "6th century and holds one of the world's oldest working libraries. But the "
+             "biblical text never names which peak in the wider Sinai peninsula &mdash; or "
+             "beyond it &mdash; is meant, and the identification rests on church tradition "
+             "centuries after the events, not on a location given in Exodus itself. Serious "
+             "alternative proposals exist, most prominently Jebel al-Lawz in northwest Saudi "
+             "Arabia; none has displaced the traditional site in continuous use, veneration, "
+             "or the weight of accumulated pilgrimage, but none is textually provable "
+             "either.<br><br><strong>The scale in this photograph is the point.</strong> Tiny "
+             "figures at the base of walls built to withstand raiders for 1,500 years, dwarfed "
+             "again by the mountain rising behind them &mdash; the same disproportion this "
+             "chapter insists on between the people camped &lsquo;in front of the "
+             "mountain&rsquo; (v2) and what comes down onto its summit.",
+        note_es="&#9888; <strong>La identificación de esta montaña con el Sinaí de este "
+                "capítulo es una tradición, no una certeza que el propio texto aporte.</strong> "
+                "El Jebel Musa (&laquo;monte de Moisés&raquo;) se venera como el Sinaí bíblico "
+                "desde al menos el siglo IV d.C., cuando monjes cristianos se asentaron por "
+                "primera vez en su base; el monasterio fotografiado aquí, Santa Catalina, ha "
+                "estado en pie de forma continua desde el siglo VI y alberga una de las "
+                "bibliotecas en funcionamiento más antiguas del mundo. Pero el texto bíblico "
+                "nunca nombra qué cumbre, dentro de la península del Sinaí o más allá de ella, "
+                "es la que se refiere, y la identificación descansa en la tradición eclesiástica "
+                "de siglos después de los hechos, no en una ubicación que dé el propio Éxodo. "
+                "Existen propuestas alternativas serias, sobre todo el Jebel al-Lawz en el "
+                "noroeste de Arabia Saudita; ninguna ha desplazado al sitio tradicional en uso "
+                "continuo, veneración o peso de peregrinación acumulada, pero ninguna es "
+                "tampoco demostrable textualmente.<br><br><strong>La escala de esta fotografía "
+                "es el punto.</strong> Figuras diminutas al pie de muros construidos para "
+                "resistir asaltantes durante 1.500 años, empequeñecidas de nuevo por la "
+                "montaña que se alza detrás &mdash; la misma desproporción en que insiste este "
+                "capítulo entre el pueblo acampado &laquo;frente al monte&raquo; (v. 2) y lo "
+                "que desciende sobre su cumbre.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Sgt._James_M._McDonald_(English_-_"
+                   "Convent_of_St._Katherine,_with_Jebel_M%C3%BAs%C3%A1_in_the_Background_-_"
+                   "Google_Art_Project.jpg",
+    )],
     "exod18": [dict(
         file="exod18-tissot-jethro-moses.jpg",
         title="Jethro and Moses",
