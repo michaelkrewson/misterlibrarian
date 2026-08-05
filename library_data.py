@@ -1564,7 +1564,7 @@ DICTIONARY = [
      "A PROPHETESS \u2014 the feminine of proph\u0113t\u0113s. The Greek Old Testament uses it of Miriam (Exodus 15:20), Deborah (Judges 4:4) and Huldah (2 Kings 22:14). \u26a0 In the New Testament it appears twice: of Anna at Luke 2:36, where Luke gives her the title flatly and without argument in the middle of a sentence, and of 'Jezebel' at Revelation 2:20, where it is a charge. Between them lies most of the argument about the word.",
      ("Luke", 2, 36)),
     ("kainos", "kainos", "\u03ba\u03b1\u03b9\u03bd\u03cc\u03c2", "kainos",
-     "NEW in KIND \u2014 of a sort that was not there before, fresh as against worn out; distinct from neos, which is new in TIME (young, recent, the latest one). \u26a0 Revelation uses kainos NINE times and neos ZERO times, in a book of 405 verses and in a New Testament where neos turns up twenty-seven times elsewhere: a new song (5:9, 14:3), a new name (2:17, 3:12), the new Jerusalem (3:12, 21:2), a new heaven and a new earth (21:1), and 'I am making all things kaina' (21:5). The claim is not a later world but a different kind of one. English and Spanish each have one word and cannot show it.",
+     "NEW in KIND \u2014 of a sort that was not there before, fresh as against worn out; distinct from neos, which is new in TIME (young, recent, the latest one). \u26a0 Revelation uses kainos NINE times and neos ZERO times, in a book of 405 verses and in a New Testament where neos turns up twenty-seven times elsewhere: a new song (5:9, 14:3), a new name (2:17, 3:12), the new Jerusalem (3:12, 21:2), a new heaven and a new earth (21:1), and 'I am making all things kaina' (21:5). The claim is not a later world but a different kind of one. English and Spanish each have one word and cannot show it. The same choice appears at Ephesians 2:15, where Christ makes Jew and Gentile 'one kainon anthr\u014dpon' \u2014 not a merger into a bigger version of either, but a third kind of thing neither was before.",
      ("Revelation", 21, 1)),
     ("neos", "neos", "\u03bd\u03ad\u03bf\u03c2", "neos",
      "NEW in TIME \u2014 young, recent, the newer of two. Twenty-seven occurrences in the New Testament, mostly of people (the younger son, younger widows, young men) and of new wine in Matthew 9:17 and its parallels, where the point is that it is freshly made. \u26a0 It is worth knowing chiefly for where it is ABSENT: Revelation never uses it, preferring kainos every time. See kainos.",
@@ -1739,6 +1739,22 @@ DICTIONARY = [
      "to the growing itself — the farmer sows, sleeps, rises, and reaps, but the word for what "
      "happens in between belongs to the ground, not to him.",
      ("Mark", 4, 28)),
+    ("poiema", "poiēma", "ποίημα", "poiēma",
+     "A THING MADE — a work of craftsmanship, composed rather than assembled; the direct "
+     "ancestor of English 'poem'. ⚠ It occurs only twice in the New Testament: of the created "
+     "world itself, visible evidence of its maker (Romans 1:20), and here, of a person — "
+     "'we are his poiēma, created in Christ Jesus for good works' (Ephesians 2:10). The same "
+     "word for what God made in six days is used of what God makes of one life.",
+     ("Ephesians", 2, 10)),
+    ("akrogoniaios", "akrogōniaios", "ἀκρογωνιαῖος", "akrogōniaios",
+     "THE HIGHEST-CORNER-STONE — a rare architectural compound, and scholars of ancient "
+     "building genuinely disagree on which stone it names: the foundation stone laid first, "
+     "at the corner, that fixes the alignment of two walls; or the capstone that completes an "
+     "arch or gable at the top, the last stone set rather than the first. ⚠ Both readings "
+     "reach back to the same source text, 'the stone the builders rejected has become the head "
+     "of the corner' (Psalm 118:22), requoted of Christ again at 1 Peter 2:6-7. The English "
+     "shelf agrees on 'cornerstone'; architectural historians do not agree on what it built.",
+     ("Ephesians", 2, 20)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6564,6 +6580,12 @@ XREFS = [
     (("Mark", 4, 24), ("Matthew", 7, 2), "the measure you measure, recurring attached to judging others rather than to parables"),
     (("Mark", 4, 32), ("Ezekiel", 17, 23), "birds nesting in its branches, the same phrase Ezekiel uses of the cedar of Lebanon"),
     (("Mark", 4, 39), ("Mark", 1, 25), "be muzzled, the identical rebuke-and-command pair Jesus already used on an unclean spirit"),
+    (("Ephesians", 2, 5), ("Ephesians", 1, 7), "the blood already named as the price of redemption is the same blood that brings the far near"),
+    (("Ephesians", 2, 10), ("Romans", 1, 20), "poiēma, the only other New Testament use of the word, there of the created world itself and here of a person"),
+    (("Ephesians", 2, 13), ("Isaiah", 57, 19), "peace to the far and to the near, requoted almost exactly at v17"),
+    (("Ephesians", 2, 14), ("Acts", 21, 28), "the accusation that nearly killed Paul -- bringing a Gentile past the temple's own dividing barrier -- the same wall this verse says Christ broke down"),
+    (("Ephesians", 2, 20), ("Psalms", 118, 22), "the stone the builders rejected has become the head of the corner, the source text behind this chapter's cornerstone"),
+    (("Ephesians", 2, 20), ("1 Peter", 2, 6), "the same cornerstone text requoted of Christ"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7299,6 +7321,9 @@ CHRON_CHAPTERS = {
     "eph1": dict(era="apostolic",
         when="A circular letter of extraordinary calm — no crisis, no opponents, not one personal greeting — opening with a two-hundred-word blessing that runs without a full stop from before the founding of the world to the gathering up of all things in Christ.",
         clock="c. AD 60–62 on the traditional reading, from Paul's Roman imprisonment (3:1; 4:1; 6:20 — 'an ambassador in chains'), carried with Colossians and Philemon by Tychicus. ⚠ Two uncertainties ride along: the earliest manuscripts LACK 'in Ephesus' at 1:1, so the address itself is disputed (Marcion knew it as the letter to LAODICEA); and a substantial body of scholarship holds the letter to be by a disciple writing in Paul's name, which would move it later. Both are reported here, neither settled."),
+    "eph2": dict(era="apostolic",
+        when="The same letter, the same imprisonment — no narrative time passes between chapters. The doxology of chapter 1 turns to diagnosis: the readers were dead, and God made them alive.",
+        clock="c. AD 60–62, continuous with chapter 1's dating — the same Roman imprisonment, not a new scene with its own date."),
     "gal1": dict(era="apostolic",
         when="Furious that his converts are being talked into circumcision by rival missionaries, Paul opens the one letter with no thanksgiving — insisting his gospel came straight from a revelation and not from Jerusalem, with a travelogue designed to prove how little contact he had had with the human apostles.",
         clock="⚠ DISPUTED, and the dispute is the same one as 'which Galatia'. On the SOUTH-GALATIAN reading (the Roman province, the towns of the first journey) the letter can be c. AD 48 — possibly Paul's EARLIEST, written before the Jerusalem council of Acts 15. On the NORTH-GALATIAN reading (the ethnic Celtic highlands) it belongs to the mid-50s, near Romans, whose argument it anticipates in rougher form. This library reports both and does not choose."),
@@ -11883,7 +11908,7 @@ DICTIONARY_ES = {
     "prophetis": ("proph\u0113tis", "PROFETISA \u2014 femenino de proph\u0113t\u0113s. El Antiguo Testamento griego lo usa de Mar\u00eda (\u00c9xodo 15:20), D\u00e9bora (Jueces 4:4) y Hulda (2 Reyes 22:14). \u26a0 En el Nuevo Testamento sale dos veces: de Ana en Lucas 2:36, donde Lucas le da el t\u00edtulo sin discutirlo en mitad de una frase, y de 'Jezabel' en Apocalipsis 2:20, donde es una acusaci\u00f3n."),
     "despotes": ("despot\u0113s", "DUE\u00d1O de esclavos \u2014 el amo, no un se\u00f1or gen\u00e9rico. Sale diez veces en el Nuevo Testamento y la mayor\u00eda son amos literales (1 Timoteo 6:1-2; Tito 2:9; 1 Pedro 2:18). \u26a0 Lucas 2:29 conviene leerlo con sus tres palabras juntas: 'ahora APOLYEIS a tu DOULOS, DESPOTA' \u2014 soltar, esclavo, due\u00f1o. Es el vocabulario de la manumisi\u00f3n, y el 'Se\u00f1or' de RV pierde la pareja."),
     "prototokos": ("pr\u014dt\u00f3tokos", "PRIMOG\u00c9NITO. \u26a0 En Lucas 2:7 es un dato legal antes que teol\u00f3gico: el primog\u00e9nito var\u00f3n hab\u00eda que rescatarlo (v. 23, citando \u00c9xodo 13), y por eso el cap\u00edtulo termina con la familia en el templo. Si la palabra implica hermanos posteriores es una discusi\u00f3n aparte y muy antigua; el t\u00e9rmino por s\u00ed solo no la resuelve."),
-    "kainos": ("kain\u00f3s", "NUEVO EN CLASE \u2014 de una especie que antes no estaba, fresco frente a gastado; distinto de neos, que es nuevo en el TIEMPO. \u26a0 El Apocalipsis usa kainos NUEVE veces y neos CERO, en un libro de 405 vers\u00edculos y en un Nuevo Testamento donde neos sale veintisiete veces en otras partes: un c\u00e1ntico nuevo (5:9; 14:3), un nombre nuevo (2:17; 3:12), la nueva Jerusal\u00e9n (3:12; 21:2), un cielo nuevo y una tierra nueva (21:1) y 'hago kain\u00e1 todas las cosas' (21:5). No un mundo posterior, sino de otra clase. El castellano tiene una sola palabra."),
+    "kainos": ("kain\u00f3s", "NUEVO EN CLASE \u2014 de una especie que antes no estaba, fresco frente a gastado; distinto de neos, que es nuevo en el TIEMPO. \u26a0 El Apocalipsis usa kainos NUEVE veces y neos CERO, en un libro de 405 vers\u00edculos y en un Nuevo Testamento donde neos sale veintisiete veces en otras partes: un c\u00e1ntico nuevo (5:9; 14:3), un nombre nuevo (2:17; 3:12), la nueva Jerusal\u00e9n (3:12; 21:2), un cielo nuevo y una tierra nueva (21:1) y 'hago kain\u00e1 todas las cosas' (21:5). No un mundo posterior, sino de otra clase. El castellano tiene una sola palabra. La misma decisi\u00f3n aparece en Efesios 2:15, donde Cristo hace de jud\u00edo y gentil 'un solo hombre kainon' \u2014 no una fusi\u00f3n en una versi\u00f3n m\u00e1s grande de cualquiera de los dos, sino una tercera cosa que ninguno era antes."),
     "neos": ("n\u00e9os", "NUEVO EN EL TIEMPO \u2014 joven, reciente, el m\u00e1s nuevo de dos. Veintisiete apariciones en el Nuevo Testamento, casi todas de personas (el hijo menor, las viudas j\u00f3venes) y del vino nuevo de Mateo 9:17. \u26a0 Interesa sobre todo por d\u00f3nde NO est\u00e1: el Apocalipsis no lo usa nunca, y prefiere kainos siempre."),
     "skenoo": ("sk\u0113n\u00f3\u014d", "PLANTAR LA TIENDA, acampar \u2014 el verbo de sk\u0113n\u0113, el tabern\u00e1culo del desierto. \u26a0 Sale cinco veces en el Nuevo Testamento y pertenece a dos libros nada m\u00e1s: Juan 1:14 y Apocalipsis 7:15, 12:12, 13:6 y 21:3. El mismo verbo abre el Evangelio \u2014'la Palabra se hizo carne y PLANT\u00d3 SU TIENDA entre nosotros'\u2014 y cierra la \u00faltima visi\u00f3n de la Biblia. \u26a0 Apocalipsis 21:3 pone el sustantivo y el verbo en una misma frase, y ninguna versi\u00f3n de ninguna de las dos estanter\u00edas los mantiene como una sola palabra: RV 'tabern\u00e1culo... morar\u00e1', NVI 'santuario... habitar\u00e1'."),
     "exaleipho": ("exaleiph\u014d", "BORRAR, raspar \u2014 palabra de contabilidad antes que de ternura. \u26a0 Cinco apariciones en el Nuevo Testamento: borrar los pecados (Hechos 3:19), cancelar el acta de deuda (Colosenses 2:14), NO borrar un nombre del libro de la vida (Apocalipsis 3:5) y dos veces de las l\u00e1grimas (7:17 y 21:4). As\u00ed que 'enjugar\u00e1 toda l\u00e1grima' usa el verbo de quitar un asiento de un libro de cuentas."),
@@ -12067,6 +12092,21 @@ DICTIONARY_ES = {
         "automátē' (Marcos 4:28), sin ningún verbo de esfuerzo humano unido al crecimiento "
         "mismo — el agricultor siembra, duerme, se levanta y siega, pero la palabra para lo que "
         "sucede en medio pertenece a la tierra, no a él."),
+    "poiema": ("poíēma", "UNA COSA HECHA — una obra de artesanía, compuesta y no simplemente "
+        "ensamblada; el antepasado directo del español 'poema'. ⚠ Aparece solo dos veces en el "
+        "Nuevo Testamento: del mundo creado mismo, evidencia visible de su creador (Romanos "
+        "1:20), y aquí, de una persona — 'somos su poíēma, creados en Cristo Jesús para buenas "
+        "obras' (Efesios 2:10). La misma palabra para lo que Dios hizo en seis días se usa de "
+        "lo que Dios hace de una sola vida."),
+    "akrogoniaios": ("akrogōniaîos", "LA PIEDRA-DEL-ÁNGULO-MÁS-ALTA — un compuesto "
+        "arquitectónico raro, y los estudiosos de la construcción antigua genuinamente no están "
+        "de acuerdo sobre qué piedra nombra: la piedra de cimiento colocada primero, en la "
+        "esquina, que fija la alineación de dos muros; o la piedra clave que completa un arco o "
+        "un hastial en lo alto, la última piedra colocada y no la primera. ⚠ Ambas lecturas se "
+        "remontan al mismo texto de origen, 'la piedra que desecharon los edificadores ha "
+        "venido a ser cabeza del ángulo' (Salmo 118:22), citado de nuevo de Cristo en 1 Pedro "
+        "2:6-7. El estante en español coincide en 'piedra del ángulo'; los historiadores de la "
+        "arquitectura no coinciden en qué construyó."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14053,6 +14093,60 @@ CHAPTER_ART = {
         source_url="https://commons.wikimedia.org/wiki/File:Pentecost%C3%A9s_(El_Greco,_c._1600)_Prado.jpg",
     )],
 
+    "eph2": [dict(
+        file="temple-warning-inscription-soreg.jpg",
+        title="Temple Warning Inscription, from Herod's Temple, Jerusalem",
+        title_es="Inscripci\u00f3n de advertencia del Templo de Herodes, Jerusal\u00e9n",
+        artist="Photograph by Yong Woo Park",
+        artist_es="Fotograf\u00eda de Yong Woo Park",
+        year="Inscription c. 1st century BC \u2013 AD 70; photographed c. 2007",
+        location="Istanbul Archaeology Museums",
+        location_es="Museos Arqueol\u00f3gicos de Estambul",
+        alt="A photograph of a large tan limestone block on a museum pedestal, lit against a "
+            "dark background. Seven lines of ancient Greek capital letters are carved across "
+            "its face, worn and pitted with age but still legible in most places. A small "
+            "museum label is visible on a stand behind the stone.",
+        note="&#9888; <strong>This is not a symbolic image. It is the wall.</strong> This exact "
+             "stone &mdash; one of two copies ever recovered &mdash; stood on the balustrade "
+             "separating the Jerusalem temple's inner courts from the outer Court of the "
+             "Gentiles, the barrier this chapter's 'dividing wall of the fence' most likely "
+             "refers to. Its Greek reads: <em>no foreigner is to enter within the balustrade "
+             "and enclosure around the sanctuary; whoever is caught will have himself to blame "
+             "for the death that follows.</em> Discovered in 1871 near the Lions' Gate, it has "
+             "been in Istanbul since the Ottoman antiquities authority claimed it under "
+             "then-current law; a second, cruder fragment found in 1936 stayed in Jerusalem and "
+             "is now in the Israel Museum.<br><br><strong>Paul had almost certainly stood "
+             "beside a stone like this one.</strong> Acts 21:27-29 records the riot that nearly "
+             "killed him: a mob assumed, wrongly, that he had brought a Gentile companion past "
+             "exactly this line. Writing to Gentile Christians a few years later that Christ "
+             "'broke down the dividing wall' is not a metaphor picked at random &mdash; it is "
+             "the most physically specific image available to him, aimed at readers who may "
+             "have read this exact warning with their own eyes on a visit to Jerusalem.",
+        note_es="&#9888; <strong>Esta no es una imagen simb\u00f3lica. Es el muro.</strong> "
+                "Esta piedra exacta &mdash;una de las dos \u00fanicas copias recuperadas&mdash; "
+                "estuvo en la balaustrada que separaba los atrios interiores del templo de "
+                "Jerusal\u00e9n del Atrio de los Gentiles exterior, la barrera a la que muy "
+                "probablemente se refiere el \u00abmuro divisorio de la valla\u00bb de este "
+                "cap\u00edtulo. Su texto griego dice: <em>ning\u00fan extranjero puede entrar "
+                "dentro de la balaustrada y el recinto que rodea el santuario; el que sea "
+                "sorprendido ser\u00e1 responsable de su propia muerte, que seguir\u00e1</em>. "
+                "Descubierta en 1871 cerca de la Puerta de los Leones, ha estado en Estamb\u00fal "
+                "desde que la autoridad otomana de antig\u00fcedades la reclam\u00f3 bajo la "
+                "ley vigente entonces; un segundo fragmento, m\u00e1s tosco, hallado en 1936, se "
+                "qued\u00f3 en Jerusal\u00e9n y hoy est\u00e1 en el Museo de "
+                "Israel.<br><br><strong>Pablo casi con toda seguridad estuvo junto a una piedra "
+                "como esta.</strong> Hechos 21:27-29 registra el mot\u00edn que casi lo mata: "
+                "una multitud supuso, equivocadamente, que hab\u00eda llevado a un compa\u00f1ero "
+                "gentil m\u00e1s all\u00e1 de esa l\u00ednea exacta. Escribir a cristianos "
+                "gentiles pocos a\u00f1os despu\u00e9s que Cristo \u00abderrib\u00f3 el muro "
+                "divisorio\u00bb no es una met\u00e1fora elegida al azar: es la imagen "
+                "f\u00edsicamente m\u00e1s concreta de la que dispon\u00eda, dirigida a "
+                "lectores que quiz\u00e1 hab\u00edan le\u00eddo esta advertencia exacta con "
+                "sus propios ojos en una visita a Jerusal\u00e9n.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:Temple_Warning_Inscription_from_"
+                   "Jerusalem_Istanbul_Archaeology_Museums.jpg",
+    )],
     "mark4": [dict(
         file="rembrandt-storm-sea-of-galilee.jpg",
         title="Christ in the Storm on the Lake of Galilee",
