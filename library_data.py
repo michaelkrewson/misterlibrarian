@@ -382,7 +382,7 @@ DICTIONARY = [
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
     ("cherem", "cherem", "חֵרֶם", "vayacharimu",
-     "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood.", ("Judges", 1, 17)),
+     "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood. ⚠️ Jeremiah 25:9 turns the word outward: 'I will devote them to destruction' (vahacharamtim) is Jehovah applying the identical ban, generations later, not to a Canaanite city but to the surrounding nations -- Judah included -- through Nebuchadrezzar's own army. A category this book had until then reserved for conquest becomes, in the mouth of the same God, a sentence on his own covenant people.", ("Judges", 1, 17)),
     ("sukkah", "sukkah (pl. sukkot)", "סֻכָּה", "sukkah",
      "A BOOTH — a light, temporary shelter woven from branches, as opposed to an OHEL (tent, sturdier and portable) or a permanent house. It is the word behind SUKKOT, the autumn Feast of Booths, when Israel is commanded to live for seven days in shelters like these on purpose, 'so that your generations may know that I made the people of Israel dwell in booths when I brought them out of the land of Egypt' (Leviticus 23:42-43). ⚠ Psalm 27:5 uses it of God himself as shelter — 'he will hide me in his sukkah in the day of trouble' — the most fragile-sounding structure in the Hebrew vocabulary of shelter, given to the one hiding-place the psalm treats as reliable. Jacob names a place SUKKOT after building shelters there for his livestock (Genesis 33:17), and Jonah builds one to sit under and watch Nineveh (Jonah 4:5).", ("Psalms", 27, 5)),
     ("ma-alot", "shir la-ma'alot", "שִׁיר לַמַּעֲלוֹת", "shir la-ma'alot",
@@ -3833,7 +3833,7 @@ ENCYCLOPEDIA = [
               "'Jehucal son of Shelemiah' were excavated a few meters apart in the City of David, sealed in the "
               "ash of the destruction Jeremiah foretold.)",
          refs=[("Jeremiah", 20, 1), ("Jeremiah", 20, 3), ("Jeremiah", 20, 6)], videos=[]),
-    dict(slug="babylon", name="Babylon", kind="place", aliases=["Babylon"],
+    dict(slug="babylon", name="Babylon", kind="place", aliases=["Babylon", "Sheshach"],
          desc="Bab-ili, 'gate of the god' — the city on the Euphrates that gave the world Hammurabi's laws, "
               "and under Nebuchadnezzar II the Ishtar Gate, the ziggurat Etemenanki (standing behind the "
               "Bible's memory of Babel's tower — see Shinar), and the empire that ended Judah. In Jeremiah's "
@@ -3841,8 +3841,13 @@ ENCYCLOPEDIA = [
               "loud — Babylon, five times in three verses — and Daniel's first page records the fulfillment "
               "begun (605 BC). The city fell to Cyrus in 539 BC (the Nabonidus Chronicle and Cyrus Cylinder "
               "carry the receipt), and Revelation will pick the name up again as the world-city's cipher "
-              "(chs. 17–18).",
-         refs=[("Jeremiah", 20, 4), ("Daniel", 1, 1), ("Daniel", 3, 1), ("Ezra", 1, 11), ("Matthew", 1, 11)],
+              "(chs. 17–18). ⚠ At 25:26 the book names it a second way, in code: 'the king of SHESHACH' "
+              "unscrambles to 'Bavel' by running the Hebrew alphabet in reverse (aleph-tav, bet-shin — a "
+              "device called ATBASH), the very last name on a list of every nation Jehovah's cup of wrath "
+              "reaches, hidden in the one place a Judean scribe writing under Babylonian rule might have "
+              "wanted a name not spoken outright. The same cipher names it again at 51:41, not yet on these "
+              "pages.",
+         refs=[("Jeremiah", 20, 4), ("Jeremiah", 25, 26), ("Daniel", 1, 1), ("Daniel", 3, 1), ("Ezra", 1, 11), ("Matthew", 1, 11)],
          coords=(32.5364, 44.4209, 0.5),
          modern="Tell Babil, near Hillah, Babil Governorate, Iraq",
          videos=[("Search for the Tower of Babel", "https://www.youtube.com/watch?v=cYc_VgjJfw8"),
@@ -5054,6 +5059,26 @@ ENCYCLOPEDIA = [
               "region. By Roman times 'Chaldean' had also come to mean an astrologer, from Babylon's fame for the "
               "study of the stars.",
          refs=[("Habakkuk", 1, 6)], videos=[]),
+
+    dict(slug="elam", name="Elam", kind="place", aliases=["Elam"],
+         desc="An ancient power on the far side of the Tigris from Babylon (roughly southwestern Iran today), "
+              "old enough that Genesis 10:22 already lists Elam among Shem's sons and Genesis 14:1 has an "
+              "Elamite king, Chedorlaomer, leading the coalition Abraham defeats. Its capital, Susa, later "
+              "becomes the Persian court of Esther and Daniel. Jeremiah 25:25 hands Elam a cup of wrath "
+              "alongside Media in the same breath — two powers still centuries away from becoming, together, "
+              "the empire that will end Babylon's own captivity of Judah. Jeremiah 49:34-39 later devotes a "
+              "whole oracle to Elam by itself, not yet on these pages.",
+         refs=[("Jeremiah", 25, 25), ("Genesis", 10, 22)], videos=[]),
+
+    dict(slug="media", name="Media", kind="place", aliases=["Media", "Medes"],
+         desc="A power on the Iranian plateau, allied with Babylon under Nabopolassar to destroy Assyria's "
+              "Nineveh in 612 BC — the very partnership that let Babylon rise in the first place. Jeremiah "
+              "25:25 already names 'the kings of Media' in the roster handed Jehovah's cup, decades before "
+              "the empire Babylon helped build turns against it: the book of Daniel's own 'Darius the Mede' "
+              "(5:31) takes Babylon in 539 BC, and 'the Medes and Persians' becomes the fixed, unchangeable-law "
+              "phrase of the Persian court (Daniel 6:8, 12, 15; Esther 1:19). What Media helped Babylon do to "
+              "Nineveh, a joined Medo-Persian empire does to Babylon in turn.",
+         refs=[("Jeremiah", 25, 25), ("Daniel", 5, 31)], videos=[]),
 
     # ---- Zephaniah 1 ----
     dict(slug="zephaniah", name="Zephaniah", kind="person", aliases=["Zephaniah", "Sophonias"],
@@ -6631,6 +6656,17 @@ XREFS = [
     (("Jeremiah", 24, 7), ("Jeremiah", 31, 33), "a heart to know me, paid in full at the New Covenant's they will all know me, from the least to the greatest"),
     (("Jeremiah", 24, 8), ("Jeremiah", 21, 7), "Zedekiah, his princes, and the remnant of Jerusalem, nearly the identical guest list already delivered to the same king by name"),
     (("Jeremiah", 24, 10), ("Jeremiah", 21, 9), "sword, famine, and pestilence, the identical triad already run through that chapter twice"),
+    (("Jeremiah", 25, 3), ("Jeremiah", 1, 2), "the thirteenth year of Josiah, the prophet's own call-date, counted back to as twenty-three years of an unheeded message"),
+    (("Jeremiah", 25, 9), ("Jeremiah", 21, 9), "Nebuchadrezzar's sword sent against Judah, the same instrument already described in the siege chapter"),
+    (("Jeremiah", 25, 11), ("Ezra", 1, 1), "the seventy years treated as an accounting entry come due, at the very moment it's paid"),
+    (("Jeremiah", 25, 11), ("Zechariah", 1, 12), "the seventy years, nearly spent, behind the angel's own how-long"),
+    (("Jeremiah", 25, 26), ("Jeremiah", 23, 6), "Babylon named twice over in this book: once in code here, once in the wordplay on Zedekiah's own throne-name"),
+    (("Jeremiah", 25, 30), ("Amos", 1, 2), "Jehovah roars and gives his voice, the identical verb pair Amos used to open his own book a century and a half earlier"),
+    (("Jeremiah", 25, 34), ("Jeremiah", 23, 1), "woe to the shepherds who destroy and scatter the flock, the warning this chapter turns into a sentence"),
+    (("Jeremiah", 25, 36), ("Jeremiah", 23, 1), "Jehovah destroying their pasture, the same flock first named in the shepherds' own woe"),
+    (("Jeremiah", 25, 11), ("Daniel", 9, 2), "the seventy years, found written down and counted out by a reader who does the arithmetic"),
+    (("Jeremiah", 25, 15), ("Revelation", 14, 10), "the cup of wrath, the same image handed forward to the very end of the story"),
+    (("Jeremiah", 25, 26), ("Jeremiah", 51, 41), "Sheshach, Babylon's own name in code, used a second and more famous time"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7537,6 +7573,9 @@ CHRON_CHAPTERS = {
     "jer24": dict(era="exile",
                   when="Two baskets of figs, one very good and one too rotten to eat — the exiles already in Babylon are the good figs, Zedekiah and those left in the land are the bad.",
                   clock="After the 597 BC deportation named in v1, sometime during Zedekiah's reign (597–586 BC) — the chapter dates itself by the event it follows rather than a regnal year, and Zedekiah is still addressed as reigning, so it falls before the final siege of ch. 21."),
+    "jer25": dict(era="exile",
+                  when="Jeremiah audits twenty-three years of an unheeded message, then hands a cup of Jehovah's wrath to nation after nation — the seventy years of Babylonian service prophesied by name for the first time.",
+                  clock="The fourth year of Jehoiakim, dated twice over as also 'the first year of Nebuchadrezzar' — 605 BC, the year of Carchemish, the single most precisely fixed date in the book so far."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -10665,7 +10704,12 @@ DICTIONARY_ES = {
         "renombrándola HORMA — «Destrucción», la misma raíz — congelando el acto en el mapa. "
         "⚠ Esta traducción ni suaviza la palabra ni la explica para hacerla desaparecer: la "
         "vierte tal como es y deja el peso moral en la nota, la misma postura que adopta con "
-        "las cifras del éxodo y del diluvio."),
+        "las cifras del éxodo y del diluvio. ⚠ Jeremías 25:9 vuelve la palabra hacia afuera: "
+        "«los entregaré a la destrucción» (vahájaramtim) es Jehová aplicando el mismo anatema, "
+        "generaciones después, no ya a una ciudad cananea sino a las naciones que rodean a "
+        "Judá — Judá incluido — a través del propio ejército de Nabucodonosor. Una categoría "
+        "que este libro había reservado hasta entonces para la conquista se convierte, en boca "
+        "del mismo Dios, en una sentencia sobre su propio pueblo del pacto."),
     "teruah": ("teru'ah",
         "UN GRITO o TOQUE — el ruido colectivo hecho por una multitud o por un cuerno de "
         "carnero. Es el grito de guerra de un ej&eacute;rcito (Josu&eacute; 6:5, 20, en los "
@@ -12545,7 +12589,30 @@ ENCYCLOPEDIA_ES["babylon"] = ("Babilonia",
     "y se llevó cautivo al pueblo en 587 a. C. ⚠ Jeremías hace las dos cosas a la vez: anuncia que "
     "Babilonia vendrá y que hay que someterse a ella, y anuncia también que Babilonia misma caerá "
     "(capítulos 50-51) — lo que le costó ser tratado como traidor por unos y como falso profeta por "
-    "otros. Mucho después, el Apocalipsis convierte el nombre en una cifra.")
+    "otros. Mucho después, el Apocalipsis convierte el nombre en una cifra. ⚠ En 25:26 el libro la "
+    "nombra por segunda vía, en clave: «el rey de SESAC» se descifra como «Babel» al recorrer el "
+    "alfabeto hebreo al revés (álef-tav, bet-shin — un recurso llamado ATBASH), el último nombre de "
+    "una lista de todas las naciones a las que llega la copa de la ira de Jehová, escondido justo "
+    "donde un escriba judío bajo dominio babilónico podría haber querido un nombre no dicho en voz "
+    "alta. La misma clave la nombra de nuevo en 51:41, todavía no en estas páginas.")
+ENCYCLOPEDIA_ES["elam"] = ("Elam",
+    "Una potencia antigua al otro lado del Tigris desde Babilonia (a grandes rasgos, el suroeste del "
+    "actual Irán), tan antigua que Génesis 10:22 ya incluye a Elam entre los hijos de Sem y Génesis "
+    "14:1 tiene a un rey elamita, Quedorlaomer, encabezando la coalición que Abraham derrota. Su "
+    "capital, Susa, se convierte más tarde en la corte persa de Ester y Daniel. Jeremías 25:25 le "
+    "entrega a Elam una copa de ira junto con Media en el mismo aliento — dos potencias todavía a "
+    "siglos de convertirse, juntas, en el imperio que pondrá fin al propio cautiverio de Judá bajo "
+    "Babilonia. Jeremías 49:34-39 dedica más tarde un oráculo entero a Elam por sí sola, todavía no "
+    "en estas páginas.")
+ENCYCLOPEDIA_ES["media"] = ("Media",
+    "Una potencia de la meseta iraní, aliada de Babilonia bajo Nabopolasar para destruir Nínive de "
+    "Asiria en el 612 a.C. — la misma alianza que permitió el ascenso de Babilonia en primer lugar. "
+    "Jeremías 25:25 ya nombra a «los reyes de Media» en la lista que recibe la copa de Jehová, "
+    "décadas antes de que el imperio que Media ayudó a construir se vuelva contra Babilonia: el "
+    "propio «Darío el medo» del libro de Daniel (5:31) toma Babilonia en el 539 a.C., y «los medos "
+    "y los persas» se convierte en la frase fija e inmutable de la corte persa (Daniel 6:8, 12, 15; "
+    "Ester 1:19). Lo que Media ayudó a Babilonia a hacerle a Nínive, un imperio medo-persa unido se "
+    "lo hace después a Babilonia misma.")
 ENCYCLOPEDIA_ES["matthew-apostle"] = ("Mateo",
     "Un recaudador de impuestos llamado desde su puesto de aduana en Cafarnaúm (Mateo 9:9) — y el único "
     "de los Evangelios que lo llama así. Marcos 2:14 y Lucas 5:27 nombran a este mismo hombre LEVÍ (Marcos "
