@@ -242,7 +242,7 @@ DICTIONARY = [
     ("moadim", "mo'adim", "מוֹעֲדִים", "mo'adim",
      "Appointed times — the festival-calendar word; what the sun and moon are installed to mark.", (1, 14)),
     ("nacham", "nacham", "נָחַם", "nacham",
-     "Comfort — and regret. Noah's name-hope (5:29) returns as God's regret (6:6): one root, opposite moods. ⚠ In Jeremiah 18 it becomes neither a name nor a mood but a STATED POLICY, twice over: 'if that nation turns back from its evil… then I RELENT of the evil I devised' (18:8), and the same machinery in reverse for a nation that stops listening (18:10). That is the hinge of the potter chapter — the image is usually read as pure sovereignty, but the oracle built on it is conditional, and nacham is the word that makes it so. English 'repent' now implies wrongdoing, which is why this translation renders it 'relent' there.", (5, 29)),
+     "Comfort — and regret. Noah's name-hope (5:29) returns as God's regret (6:6): one root, opposite moods. ⚠ In Jeremiah 18 it becomes neither a name nor a mood but a STATED POLICY, twice over: 'if that nation turns back from its evil… then I RELENT of the evil I devised' (18:8), and the same machinery in reverse for a nation that stops listening (18:10). That is the hinge of the potter chapter — the image is usually read as pure sovereignty, but the oracle built on it is conditional, and nacham is the word that makes it so. English 'repent' now implies wrongdoing, which is why this translation renders it 'relent' there. ⚠ Jeremiah 26 then does something no other chapter does with it: the word appears three times in one episode (26:3, 13, 19), and the third time it is cited in COURT as evidence. Elders defending Jeremiah at a capital trial argue that Micah once prophesied Jerusalem's destruction, Hezekiah repented, 'and Jehovah RELENTED of the evil he had spoken against them' — a past case where the policy of chapter 18 actually operated, used as legal precedent to save a prophet's life. Chapter 18 states the rule; chapter 26 produces the case law.", (5, 29)),
     ("nasa", "nasa", "נָשָׂא", "nasa",
      "To carry, bear, lift — one root doing three jobs in Genesis 13: the land 'could not bear' Abram and Lot together (13:6), then each of them 'lifts up' his eyes (13:10, 13:14) to opposite ends. \u26a0 It is also the verb of the third commandment: Exodus 20:6 is lo tissa, 'you shall not LIFT UP the name of Jehovah your God la-shav' \u2014 not a verb of speaking. That is why 'taking the name in vain' is probably not a rule about profanity: the idiom is closer to BEARING the name, carrying it as one who belongs to it, and doing so emptily.", (13, 6)),
     ("nefesh", "nefesh chayah", "נֶפֶשׁ חַיָּה", "nefesh chayah",
@@ -4191,15 +4191,21 @@ ENCYCLOPEDIA = [
               "has been captured and his sons killed (ch 4) — the collapse of the old order that Samuel's rise "
               "replaces.",
          refs=[("1 Samuel", 1, 9), ("1 Samuel", 1, 17)], videos=[]),
-    dict(slug="shiloh", name="Shiloh (the sanctuary)", kind="place", aliases=[],
+    dict(slug="shiloh", name="Shiloh (the sanctuary)", kind="place", aliases=["Shiloh"],
          desc="A town in the hill country of EPHRAIM, north of Bethel, that was Israel's central sanctuary through "
               "the whole period of the Judges: here the tabernacle and the ark of the covenant stood (Joshua 18:1), "
               "and here Israel came up to worship 'Jehovah of hosts' (1 Samuel 1:3). It is the setting of Hannah's "
               "vow and the boyhood of Samuel — and it falls when the ark is captured in battle (ch 4), a loss the "
               "prophet Jeremiah invokes as a warning to a later generation trusting in the Jerusalem temple: 'go to "
-              "my place that was in Shiloh… and see what I did to it' (Jeremiah 7:12). ⚠️ Not to be confused with the "
+              "my place that was in Shiloh… and see what I did to it' (Jeremiah 7:12). ⚠️ And invoking it nearly got "
+              "him killed: the temple sermon of Jeremiah 26 says only that God will make 'this house like Shiloh' "
+              "(26:6), and the priests, prophets and people seize him on the spot and demand a death sentence, "
+              "quoting the Shiloh line back at him as the charge (26:9). The argument works precisely because it is "
+              "not theoretical — everyone in that courtyard knew there had been an earlier house of Jehovah, and "
+              "knew there were ruins where it stood. ⚠️ Not to be confused with the "
               "disputed word 'Shiloh' of Genesis 49:10, a different Hebrew term.",
-         coords=(32.06, 35.29, 0.05), refs=[("1 Samuel", 1, 3), ("1 Samuel", 1, 9)], videos=[]),
+         coords=(32.06, 35.29, 0.05),
+         refs=[("1 Samuel", 1, 3), ("1 Samuel", 1, 9), ("Jeremiah", 26, 6)], videos=[]),
     dict(slug="amram-jochebed", name="Amram and Jochebed", kind="person", aliases=["Amram", "Jochebed"],
          desc="The parents of MOSES, AARON, and Miriam — Levites of the clan of Kohath. The genealogy of Exodus 6 "
               "names them at the center of its priestly line: 'Amram took Jochebed his father's sister as his wife, "
@@ -4969,8 +4975,11 @@ ENCYCLOPEDIA = [
               "Hebrew Bible). His book gives the New Testament the birthplace of the Messiah (5:2, Bethlehem, quoted "
               "at Matthew 2:6) and the most famous one-line summary of true religion in the Old Testament (6:8, 'do "
               "justice, love mercy, walk humbly'). ⚠ Not the same as MICAIAH son of Imlah, the earlier northern "
-              "prophet of 1 Kings 22, though the names are the same word.",
-         refs=[("Micah", 1, 1)], videos=[]),
+              "prophet of 1 Kings 22, though the names are the same word. ⚠ One further detail the trial scroll "
+              "preserves: at Jeremiah 26:18 the consonants as WRITTEN spell the long form of his name, "
+              "Mikhayahu, while the vowels supplied read the short Mikhah his own book uses — a ketiv/qere that "
+              "keeps both halves of the same name side by side.",
+         refs=[("Micah", 1, 1), ("Jeremiah", 26, 18)], videos=[]),
     dict(slug="moresheth-gath", name="Moresheth-gath", kind="place", aliases=["Moresheth-gath", "Moresheth"],
          desc="Micah's home village — a farming town in the Judean Shephelah (lowland foothills), roughly 25 miles "
               "south-west of Jerusalem and near the old Philistine border-city of Gath, from which it takes its "
@@ -5059,6 +5068,51 @@ ENCYCLOPEDIA = [
               "region. By Roman times 'Chaldean' had also come to mean an astrologer, from Babylon's fame for the "
               "study of the stars.",
          refs=[("Habakkuk", 1, 6)], videos=[]),
+
+    dict(slug="uriah-prophet", name="Uriah son of Shemaiah", kind="person",
+         aliases=["Uriah son of Shemaiah"],
+         desc="A prophet of Kiriath-jearim who preached the same message as Jeremiah — 'according to all the "
+              "words of Jeremiah' — and was executed for it by JEHOIAKIM (Jeremiah 26:20-23). He is named "
+              "nowhere else in the Bible: no book, no other episode, five verses in total. ⚠ He fled to EGYPT, "
+              "and the king sent a named official, Elnathan son of Achbor, to bring him back — a state "
+              "extradition across an international border to retrieve a preacher. Jehoiakim then killed him "
+              "personally with the sword and threw his corpse into 'the graves of the common people' rather "
+              "than a family tomb, a deliberate final insult. ⚠ His whole story sits in the chapter as a "
+              "counterweight: it is told immediately after Jeremiah's own acquittal, to establish that the "
+              "verdict could easily have gone the other way, and for one man saying the identical thing in the "
+              "same reign, it did. He is the Bible's clearest evidence that prophesying against Jerusalem was "
+              "a capital risk and not a rhetorical pose. ⚠ Not the same man as URIAH THE HITTITE, Bathsheba's "
+              "husband, four centuries earlier.",
+         refs=[("Jeremiah", 26, 20)], videos=[]),
+
+    dict(slug="ahikam", name="Ahikam son of Shaphan", kind="person",
+         aliases=["Ahikam son of Shaphan", "Ahikam"],
+         desc="The official whose 'hand was with Jeremiah, so that he was not given into the hand of the "
+              "people to be put to death' (Jeremiah 26:24) — the last line of the temple-trial chapter, and "
+              "the reason there is a rest of the book. ⚠ He belongs to a family that shows up at three hinges "
+              "of Judah's last century. His father SHAPHAN is the royal scribe who read the recovered "
+              "law-book aloud to Josiah and set off that king's whole reform (2 Kings 22:8-10). Ahikam himself "
+              "was on the delegation Josiah sent to the prophetess Huldah about that book (22:12-14), which "
+              "makes his later protection of Jeremiah of a piece with his own history. And his son GEDALIAH "
+              "is the man Babylon appoints governor over the survivors after Jerusalem falls — the official "
+              "Jeremiah is finally released into the custody of (Jeremiah 39:14; 40:5-6), and who is "
+              "assassinated within months (ch. 41). One family at the discovery of the law, at the rescue of "
+              "the prophet, and at the administration of the ruins.",
+         refs=[("Jeremiah", 26, 24)], videos=[]),
+
+    dict(slug="kiriath-jearim", name="Kiriath-jearim", kind="place",
+         aliases=["Kiriath-jearim"],
+         desc="'City of forests' — a town on the Judah/Benjamin border about nine miles west of Jerusalem, "
+              "and the place the ARK of the covenant sat for twenty years after the Philistines sent it back "
+              "(1 Samuel 6:21–7:2), until David finally brought it up to Jerusalem (2 Samuel 6). ⚠ It is also "
+              "the home town of the prophet URIAH SON OF SHEMAIAH, whom Jehoiakim had extradited from Egypt "
+              "and executed (Jeremiah 26:20) — so the village that once housed the ark for two decades also "
+              "produced a prophet the state killed for saying what Jeremiah said. It appears in the returning "
+              "exiles' own census lists as well (Ezra 2:25; Nehemiah 7:29), which means it survived the "
+              "destruction that Uriah predicted.",
+         coords=(31.81, 35.10, 0.05),
+         modern="Usually identified with Deir el-Azar / Tell Qiryat Yearim, near Abu Ghosh, Israel",
+         refs=[("Jeremiah", 26, 20)], videos=[]),
 
     dict(slug="elam", name="Elam", kind="place", aliases=["Elam"],
          desc="An ancient power on the far side of the Tigris from Babylon (roughly southwestern Iran today), "
@@ -6667,6 +6721,13 @@ XREFS = [
     (("Jeremiah", 25, 11), ("Daniel", 9, 2), "the seventy years, found written down and counted out by a reader who does the arithmetic"),
     (("Jeremiah", 25, 15), ("Revelation", 14, 10), "the cup of wrath, the same image handed forward to the very end of the story"),
     (("Jeremiah", 25, 26), ("Jeremiah", 51, 41), "Sheshach, Babylon's own name in code, used a second and more famous time"),
+    (("Jeremiah", 26, 3), ("Jeremiah", 18, 8), "nacham, to relent -- stated as policy in the potter chapter, offered here as the reason the sermon is worth preaching at all"),
+    (("Jeremiah", 26, 5), ("Jeremiah", 25, 3), "rising up early and sending the prophets, the same idiom that measured twenty-three unheeded years"),
+    (("Jeremiah", 26, 6), ("1 Samuel", 1, 3), "Shiloh, the sanctuary that already fell once -- the precedent the whole temple sermon rests on"),
+    (("Jeremiah", 26, 18), ("Micah", 1, 1), "Micah of Moresheth quoted by name in a capital trial, the only time one writing prophet cites another"),
+    (("Jeremiah", 26, 19), ("Jeremiah", 18, 8), "Jehovah relented -- chapter 18's conditional policy produced in court as a decided case"),
+    (("Jeremiah", 26, 21), ("Jeremiah", 22, 13), "Jehoiakim, whose unpaid palace this book already judged, here hunting a prophet across a border"),
+    (("Jeremiah", 26, 24), ("Jeremiah", 39, 14), "Ahikam's hand saves Jeremiah here; his son Gedaliah is the governor Jeremiah is finally released to"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7576,6 +7637,9 @@ CHRON_CHAPTERS = {
     "jer25": dict(era="exile",
                   when="Jeremiah audits twenty-three years of an unheeded message, then hands a cup of Jehovah's wrath to nation after nation — the seventy years of Babylonian service prophesied by name for the first time.",
                   clock="The fourth year of Jehoiakim, dated twice over as also 'the first year of Nebuchadrezzar' — 605 BC, the year of Carchemish, the single most precisely fixed date in the book so far."),
+    "jer26": dict(era="exile",
+                  when="Jeremiah is seized in the temple court and tried for his life over the Shiloh sermon; the elders cite Micah as precedent, and Ahikam's hand keeps him alive.",
+                  clock="⚠ 'The beginning of the reign of Jehoiakim' — c. 609/608 BC, which puts this chapter three or four years EARLIER than ch. 25, another sign the book is filed by theme and catchword rather than by calendar. The prophet Uriah's execution, told in vv20-23, happens later in the same reign."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -10956,7 +11020,13 @@ DICTIONARY_ES = {
         "ARREPIENTO del mal que pensaba hacerle» (18:8), y la misma maquinaria en sentido contrario para una "
         "nación que deja de escuchar (18:10). Ese es el gozne del capítulo del alfarero: la imagen se lee "
         "normalmente como pura soberanía, pero el oráculo construido sobre ella es condicional, y "
-        "<em>nacham</em> es la palabra que lo hace así."),
+        "<em>nacham</em> es la palabra que lo hace así. ⚠ Jeremías 26 hace después algo que ningún otro "
+        "capítulo hace con ella: la palabra aparece tres veces en un solo episodio (26:3, 13, 19), y la "
+        "tercera vez se cita en un TRIBUNAL como prueba. Los ancianos que defienden a Jeremías en un juicio "
+        "capital argumentan que Miqueas ya profetizó la destrucción de Jerusalén, que Ezequías se arrepintió, "
+        "«y Jehová se ARREPINTIÓ del mal que había hablado contra ellos» — un caso pasado en que la política "
+        "del capítulo 18 funcionó de verdad, usado como precedente jurídico para salvarle la vida a un "
+        "profeta. El capítulo 18 enuncia la regla; el 26 aporta la jurisprudencia."),
     "shachat": ("arruinar",
         "ARRUINAR — el verbo boomerang del diluvio: la tierra se arruinó a sí misma, y Dios completa la "
         "ruina (Génesis 6:11-13). ⚠ Vuelve en Jeremías 18:4, de la vasija que se estropea bajo la mano del "
@@ -12595,6 +12665,40 @@ ENCYCLOPEDIA_ES["babylon"] = ("Babilonia",
     "una lista de todas las naciones a las que llega la copa de la ira de Jehová, escondido justo "
     "donde un escriba judío bajo dominio babilónico podría haber querido un nombre no dicho en voz "
     "alta. La misma clave la nombra de nuevo en 51:41, todavía no en estas páginas.")
+ENCYCLOPEDIA_ES["uriah-prophet"] = ("Urías hijo de Semaías",
+    "Un profeta de Quiriat-jearim que predicó el mismo mensaje que Jeremías — «conforme a todas las "
+    "palabras de Jeremías» — y fue ejecutado por ello por JOACIM (Jeremías 26:20-23). No se lo nombra en "
+    "ningún otro lugar de la Biblia: sin libro, sin ningún otro episodio, cinco versículos en total. "
+    "⚠ Huyó a EGIPTO, y el rey envió a un funcionario con nombre propio, Elnatán hijo de Acbor, a traerlo "
+    "de vuelta — una extradición estatal a través de una frontera internacional para recuperar a un "
+    "predicador. Joacim lo mató después personalmente con la espada y arrojó su cadáver a «las sepulturas "
+    "de la gente común» en vez de a un sepulcro familiar, un insulto final deliberado. ⚠ Toda su historia "
+    "está en el capítulo como contrapeso: se cuenta inmediatamente después de la absolución de Jeremías, "
+    "para establecer que el veredicto pudo haber ido fácilmente en la otra dirección, y que para un hombre "
+    "que decía exactamente lo mismo en el mismo reinado, así fue. Es la prueba más clara de la Biblia de "
+    "que profetizar contra Jerusalén era un riesgo capital y no una pose retórica. ⚠ No es el mismo hombre "
+    "que URÍAS EL HITITA, el marido de Betsabé, cuatro siglos antes.")
+ENCYCLOPEDIA_ES["ahikam"] = ("Ahicam hijo de Safán",
+    "El funcionario cuya «mano estuvo con Jeremías, para que no fuera entregado en mano del pueblo para "
+    "ser muerto» (Jeremías 26:24) — la última línea del capítulo del juicio en el templo, y la razón de "
+    "que exista el resto del libro. ⚠ Pertenece a una familia que aparece en tres goznes del último siglo "
+    "de Judá. Su padre SAFÁN es el escriba real que leyó en voz alta a Josías el libro de la ley "
+    "recuperado y desencadenó toda la reforma de aquel rey (2 Reyes 22:8-10). Ahicam mismo formó parte de "
+    "la delegación que Josías envió a la profetisa Hulda acerca de ese libro (22:12-14), lo que hace que "
+    "su posterior protección de Jeremías encaje con su propia historia. Y su hijo GEDALÍAS es el hombre a "
+    "quien Babilonia nombra gobernador sobre los sobrevivientes después de que cae Jerusalén — el "
+    "funcionario a cuya custodia Jeremías es finalmente entregado (Jeremías 39:14; 40:5-6), y que es "
+    "asesinado a los pocos meses (cap. 41). Una sola familia en el descubrimiento de la ley, en el rescate "
+    "del profeta y en la administración de las ruinas.")
+ENCYCLOPEDIA_ES["kiriath-jearim"] = ("Quiriat-jearim",
+    "«Ciudad de bosques» — un pueblo en la frontera de Judá y Benjamín, unos quince kilómetros al oeste "
+    "de Jerusalén, y el lugar donde estuvo el ARCA del pacto durante veinte años después de que los "
+    "filisteos la devolvieran (1 Samuel 6:21–7:2), hasta que David finalmente la subió a Jerusalén "
+    "(2 Samuel 6). ⚠ Es también el pueblo natal del profeta URÍAS HIJO DE SEMAÍAS, a quien Joacim hizo "
+    "extraditar de Egipto y ejecutar (Jeremías 26:20) — así que la aldea que albergó el arca durante dos "
+    "décadas produjo también un profeta al que el estado mató por decir lo que decía Jeremías. Aparece "
+    "igualmente en los censos de los exiliados que regresaron (Esdras 2:25; Nehemías 7:29), lo que "
+    "significa que sobrevivió a la destrucción que Urías anunció.")
 ENCYCLOPEDIA_ES["elam"] = ("Elam",
     "Una potencia antigua al otro lado del Tigris desde Babilonia (a grandes rasgos, el suroeste del "
     "actual Irán), tan antigua que Génesis 10:22 ya incluye a Elam entre los hijos de Sem y Génesis "
