@@ -379,6 +379,8 @@ DICTIONARY = [
      "The Hebrew realm of the dead — down, dark, silent — appearing here for the FIRST time in the Bible, in Jacob's 'I will go down to my son, mourning, to Sheol' (37:35). Crucially, everyone goes there: righteous and wicked alike, with no second word set against it. It is not a place of punishment, and the Hebrew Bible offers no rival destination. The KJV renders it 'the grave' here, but 'hell' in thirty-one other places and 'the pit' in three — so an English reader cannot tell that Jacob, Job, David and Isaiah are discussing one thing, and would reasonably conclude the patriarch expects the grave while the wicked go elsewhere. That is a doctrine assembled out of an inconsistent gloss. The Douay, following the Vulgate's infernum, prints 'into hell' right here — a patriarch expecting to join his beloved son there. The ASV and NWT both simply transliterate, 'Sheol,' declining to settle by translation what the Hebrew leaves open; this translation follows them on the merits — the same principle as 'vault' for raqia and 'side' for tsela. \u26a0 Psalm 139:8 makes a stronger claim about it than the rest of the Psalter does: 'if I spread my bed in Sheol, there you are.' Elsewhere in the Psalms, Sheol is precisely where God is NOT remembered and does not act (6:5, 88:10-12, 115:17). Psalm 139 sits against those verses, and the Psalter does not reconcile them.", (37, 35)),
     ("saq", "saq", "שַׂק", "saq",
      "SACKCLOTH — coarse, dark goat-hair cloth, worn against the skin as the dress of mourning and repentance. It enters the Bible in this verse, on Jacob, as a father's response to a lie about his son (37:34), and stays: the king of Nineveh trades his robe for it (Jonah 3:6), and Revelation's two witnesses prophesy in it (Revelation 11:3). The English word 'sackcloth' is literal — the same rough stuff sacks were made of.", (37, 34)),
+    ("qosem", "qosem", "קֹסֵם", "qosem",
+     "A DIVINER — a professional class, distinct from the verb nachash (see that entry): where nachash describes reading a specific omen, qosem names the trade itself, someone who does this for a living. It is the near-exact vocabulary of Deuteronomy 18:10-11's banned list -- diviner, soothsayer, augur, sorcerer, medium, necromancer -- Israel's own law naming the very professions Babylon and Canaan ran on. ⚠️ Jeremiah 27:9 stacks five of these categories in one breath -- prophets, diviners, dreams, soothsayers, sorcerers -- and dismisses all five together, which is the chapter's whole argument in miniature: whichever channel of hidden knowledge Judah trusted, exile was not on offer through any of them. The word resurfaces at Micah 3:11, where Jerusalem's own leaders 'divine for silver' -- the banned trade practiced for a fee by the people meant to have outlawed it.", ("Jeremiah", 27, 9)),
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
     ("cherem", "cherem", "חֵרֶם", "vayacharimu",
@@ -689,7 +691,7 @@ DICTIONARY = [
      "'Only one, only child' — 'take your son, your ONLY ONE' (22:2, 12, 16). Ishmael was sent away one chapter before, so Isaac is now the only son of the covenant; the word also means 'darling, precious' (Psalm 22:20 uses it for one's own life). KJV 'only son'; the Septuagint's agapēton, 'beloved,' set up the baptism echo.", (22, 2)),
     # ---- Genesis 21 (Hebrew) ----
     ("paqad", "paqad", "פָּקַד", "paqad",
-     "To visit, attend to — for good or for ill: 'Jehovah VISITED Sarah' with a son (Genesis 21:1; KJV 'visited'), and the same verb 'visits' Jerusalem's doings upon her in judgment (Jeremiah 21:14). The Bible's word for God turning his attention toward someone — what happens next depends on the ledger. In Numbers the same verb runs the census: to paqad is to MUSTER, to number an army (Numbers 1:3, 19); the pequdim are 'those mustered.' And in one chapter it turns three ways — the fighting tribes are paqad-mustered, the Levites are NOT paqad-counted (1:47) but are paqad-APPOINTED over the tabernacle (1:50). One root: to turn attention toward, whether to count, to charge, or to visit. \u26a0 Exodus 20:4 is the hardest use: God 'attends to' the guilt of fathers upon sons to the third and fourth generation. The versions say 'visiting', which in modern English sounds almost social; the verb is the bookkeeping one, and the same word delivers a FAVOURABLE outcome at Jeremiah 29:10. One verb, opposite results.", (21, 1)),
+     "To visit, attend to — for good or for ill: 'Jehovah VISITED Sarah' with a son (Genesis 21:1; KJV 'visited'), and the same verb 'visits' Jerusalem's doings upon her in judgment (Jeremiah 21:14). The Bible's word for God turning his attention toward someone — what happens next depends on the ledger. In Numbers the same verb runs the census: to paqad is to MUSTER, to number an army (Numbers 1:3, 19); the pequdim are 'those mustered.' And in one chapter it turns three ways — the fighting tribes are paqad-mustered, the Levites are NOT paqad-counted (1:47) but are paqad-APPOINTED over the tabernacle (1:50). One root: to turn attention toward, whether to count, to charge, or to visit. \u26a0 Exodus 20:4 is the hardest use: God 'attends to' the guilt of fathers upon sons to the third and fourth generation. The versions say 'visiting', which in modern English sounds almost social; the verb is the bookkeeping one, and the same word delivers a FAVOURABLE outcome at Jeremiah 29:10 -- and again at 27:22, 'until the day I attend to them... and restore them to this place,' spoken of the temple vessels themselves. One verb, opposite results.", (21, 1)),
     # ---- Numbers 1 (Hebrew) ----
     ("eda", "eda", "עֵדָה", "edah",
      "The congregation, community, assembly — the whole gathered people of Israel (Numbers 1:2), from the root ya'ad, 'to appoint, to meet by appointment' (the same family as mo'ed, the 'appointed time' and the 'tent of MEETING'). Not a random crowd but the summoned assembly; its chieftains are literally 'the CALLED ones of the eda' (1:16). KJV 'congregation,' NWT 'assembly.'", ("Numbers", 1, 2)),
@@ -3924,7 +3926,7 @@ ENCYCLOPEDIA = [
               "Zerubbabel is handed the signet back (Haggai 2:23), and both Gospel genealogies of the Messiah pass "
               "through his line — the king 'written childless' as to David's old throne became an ancestor of the "
               "one who inherits a greater one.",
-         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Jeremiah", 24, 1), ("Ezekiel", 1, 2)], videos=[]),
+         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Jeremiah", 24, 1), ("Jeremiah", 27, 20), ("Ezekiel", 1, 2)], videos=[]),
 
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
@@ -6728,6 +6730,14 @@ XREFS = [
     (("Jeremiah", 26, 19), ("Jeremiah", 18, 8), "Jehovah relented -- chapter 18's conditional policy produced in court as a decided case"),
     (("Jeremiah", 26, 21), ("Jeremiah", 22, 13), "Jehoiakim, whose unpaid palace this book already judged, here hunting a prophet across a border"),
     (("Jeremiah", 26, 24), ("Jeremiah", 39, 14), "Ahikam's hand saves Jeremiah here; his son Gedaliah is the governor Jeremiah is finally released to"),
+    (("Jeremiah", 27, 3), ("Jeremiah", 25, 21), "Edom, Moab, Ammon, Tyre, and Sidon, the same five nations already handed a cup of wrath"),
+    (("Jeremiah", 27, 6), ("Jeremiah", 25, 9), "my servant, the identical designation for Nebuchadnezzar, here grounded in an argument from creation itself"),
+    (("Jeremiah", 27, 7), ("Jeremiah", 25, 12), "the time of his own land -- Babylon's dominion given an expiration date in the same breath it is granted"),
+    (("Jeremiah", 27, 13), ("Jeremiah", 25, 11), "sword, famine, and pestilence, the same sentence already pronounced generally"),
+    (("Jeremiah", 27, 13), ("Jeremiah", 26, 8), "the same sentence already delivered specifically to this city's own prophets"),
+    (("Jeremiah", 27, 19), ("Daniel", 1, 2), "the same temple vessels, already carried off once in the first deportation, four years before this prophecy names the rest"),
+    (("Jeremiah", 27, 19), ("Ezra", 1, 7), "the temple vessels prophesied to go to Babylon here, and counted back to Jerusalem decades later"),
+    (("Jeremiah", 27, 20), ("Jeremiah", 24, 1), "Jeconiah's own deportation, the fixed point every later prophecy about the vessels measures itself against"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7640,6 +7650,9 @@ CHRON_CHAPTERS = {
     "jer26": dict(era="exile",
                   when="Jeremiah is seized in the temple court and tried for his life over the Shiloh sermon; the elders cite Micah as precedent, and Ahikam's hand keeps him alive.",
                   clock="⚠ 'The beginning of the reign of Jehoiakim' — c. 609/608 BC, which puts this chapter three or four years EARLIER than ch. 25, another sign the book is filed by theme and catchword rather than by calendar. The prophet Uriah's execution, told in vv20-23, happens later in the same reign."),
+    "jer27": dict(era="exile",
+                  when="Jeremiah wears a wooden yoke in the temple and sends its pieces to five allied kings, telling all of them and Zedekiah to submit to Babylon; the false prophets promising a quick return of the temple vessels are named liars.",
+                  clock="⚠ v1 dates this to 'the beginning of the reign of Jehoiakim,' but vv3, 12 and 20 all address Zedekiah and events of his reign — a well-known scribal duplication of 26:1's opening formula. The envoys' visit (v3) is usually placed c. 594 BC, the year of a known anti-Babylonian coalition among these same five nations."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -10743,6 +10756,17 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "qosem": ("qosem",
+        "UN ADIVINO — una clase profesional, distinta del verbo nachash (leer un presagio "
+        "concreto): qosem nombra el oficio mismo, alguien que vive de esto. Es casi el vocabulario "
+        "exacto de la lista prohibida de Deuteronomio 18:10-11 — adivino, agorero, augur, hechicero, "
+        "médium, nigromante — la propia ley de Israel nombrando los oficios de los que vivían "
+        "Babilonia y Canaán. ⚠ Jeremías 27:9 apila cinco de estas categorías en un solo aliento — "
+        "profetas, adivinos, sueños, agoreros, hechiceros — y las descarta juntas, que es todo el "
+        "argumento del capítulo en miniatura: cualquiera que fuera el canal de conocimiento oculto "
+        "en que Judá confiara, el exilio no se ofrecía a través de ninguno de ellos. La palabra "
+        "reaparece en Miqueas 3:11, donde los propios líderes de Jerusalén «adivinan por dinero» — "
+        "el oficio prohibido, practicado por sueldo, por la misma gente que debía haberlo proscrito."),
     "nakar": ("nakar",
         "RECONOCER, identificar — el verbo sobre el que giran dos de las escenas más crueles del "
         "Génesis, con el mismo imperativo las dos veces. Junto al lecho de Isaac, el padre ciego "
