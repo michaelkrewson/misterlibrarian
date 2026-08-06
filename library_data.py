@@ -1788,6 +1788,17 @@ DICTIONARY = [
      "actual sound of what was said before explaining it, as if the original words themselves "
      "are part of what is being reported, not just their meaning.",
      ("Mark", 5, 41)),
+    ("tsarah", "tsarah", "צָרָה", "tsarah",
+     "TROUBLE, DISTRESS, ANGUISH — narrow, tight, constricted at its root, the same "
+     "consonants that give Hebrew its word for a narrow strait or a rival wife (tzarah, a "
+     "co-wife) — trouble imagined physically as a space too small to move in. ⚠ The "
+     "exact two-word phrase ‘et tsarah,’ ‘a time of trouble,’ appears twice "
+     "in this library at a real distance: Jeremiah 30:7, of Jacob alone, facing a day "
+     "‘so great, none is like it’ — and Daniel 12:1, of every nation on earth, "
+     "‘such as has never been since there was a nation.’ Both promise rescue on the "
+     "far side of the identical phrase, one family's crisis becoming, in a later book, "
+     "everyone's.",
+     ("Jeremiah", 30, 7)),
 ]
 
 ENCYCLOPEDIA = [
@@ -3565,7 +3576,7 @@ ENCYCLOPEDIA = [
               "Jabbok, he is renamed ISRAEL, 'he strives with God' (32:28); his twelve sons become the twelve "
               "tribes. A flawed, grasping, unforgettable man whom God chooses anyway — 'the God of Abraham, Isaac, "
               "and Jacob' — and whose story fills the rest of Genesis (chs. 25–50).",
-         refs=[("Matthew", 8, 11), (25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29), (33, 3), ("Malachi", 1, 2)], videos=[]),
+         refs=[("Matthew", 8, 11), (25, 26), (25, 27), (25, 31), (27, 19), (27, 36), (28, 10), (28, 16), (29, 10), (29, 25), (30, 1), (31, 3), (32, 29), (33, 3), ("Malachi", 1, 2), ("Jeremiah", 30, 7)], videos=[]),
     dict(slug="edom", name="Edom (Seir)", kind="place", aliases=["Edom", "Seir"],
          desc="The nation and land descended from ESAU — the rugged red-sandstone highlands south-east of the Dead "
               "Sea, also called SEIR ('hairy,' echoing Esau). The name Edom ('red') is minted from the red stew "
@@ -4259,7 +4270,7 @@ ENCYCLOPEDIA = [
               "still calls him 'a man after Jehovah's own heart' (1 Samuel 13:14), a phrase about God's CHOICE "
               "rather than David's record. The covenant of 2 Samuel 7, promising his throne forever, is the root "
               "of Israel's messianic hope, which is why the Gospels open by calling Jesus 'son of David.'",
-         refs=[("Romans", 1, 3), ("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1), ("2 Chronicles", 1, 1), ("Matthew", 1, 6), ("Psalms", 27, 1)], videos=[]),
+         refs=[("Romans", 1, 3), ("2 Samuel", 1, 1), ("2 Samuel", 1, 17), ("1 Kings", 1, 1), ("2 Chronicles", 1, 1), ("Matthew", 1, 6), ("Psalms", 27, 1), ("Jeremiah", 30, 9)], videos=[]),
     dict(slug="saul-king", name="Saul (Israel's first king)", kind="person", aliases=["Saul"],
          desc="Israel's FIRST king — a tall young Benjaminite sent to look for lost donkeys who came home anointed "
               "(1 Samuel 9-10). He is the answer to a demand the people made and were warned about: 'give us a king "
@@ -6761,6 +6772,14 @@ XREFS = [
     (("Jeremiah", 28, 14), ("Jeremiah", 27, 6), "even the beasts of the field I have given him, the same oracle restated almost word for word after the wooden yoke is broken"),
     (("Jeremiah", 28, 15), ("Jeremiah", 27, 15), "Jehovah has not sent you -- the identical verdict already passed on peace-prophets in general, now delivered to one of them by name"),
     (("Jeremiah", 28, 16), ("Jeremiah", 29, 32), "spoken rebellion against Jehovah, the identical rare phrase brought against a second false prophet, Shemaiah the Nehelamite"),
+    (("Jeremiah", 30, 7), ("Daniel", 12, 1), "a time of trouble -- the identical two-word Hebrew phrase, widened from one family to every nation on earth"),
+    (("Jeremiah", 30, 8), ("Jeremiah", 27, 8), "the yoke, and the submission it demanded, finally given an expiration date after chapters of insisting only on the fact of it"),
+    (("Jeremiah", 30, 8), ("Jeremiah", 28, 2), "the yoke Hananiah claimed was already broken -- and died within the year for saying so before its time"),
+    (("Jeremiah", 30, 20), ("Jeremiah", 27, 22), "I will attend to, the same favorable use of paqad promising a homecoming"),
+    (("Jeremiah", 30, 20), ("Jeremiah", 29, 10), "I will attend to, the same favorable use of paqad promising a homecoming"),
+    (("Jeremiah", 30, 22), ("Jeremiah", 24, 7), "my people... their God, the covenant formula already sworn to the good figs"),
+    (("Jeremiah", 30, 22), ("Jeremiah", 31, 32), "my people... their God, the same covenant formula sworn a third time, now to the whole house of Israel under a new covenant"),
+    (("Jeremiah", 30, 23), ("Jeremiah", 23, 19), "the tempest of Jehovah, the same two verses planted a second time almost letter for letter"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7679,6 +7698,9 @@ CHRON_CHAPTERS = {
     "jer28": dict(era="exile",
                   when="Hananiah breaks Jeremiah's wooden yoke and promises Babylon's own fall within two years; Jeremiah answers with a yoke of iron and predicts Hananiah's death within the year -- which happens.",
                   clock="'That same year' as ch. 27, dated independently and precisely: 'the beginning of the reign of Zedekiah... in the fourth year, in the fifth month' (v1) -- roughly 594/593 BC, confirming which king's reign ch. 27 actually belongs to. Hananiah dies 'in the seventh month' of the same year (v17), two months later."),
+    "jer30": dict(era="exile",
+                  when="Jeremiah is told to write it in a book: the yoke broken for good, an incurable wound healed anyway, David's line restored, and the covenant formula sworn again -- the opening half of chs. 30-31's 'Book of Consolation.'",
+                  clock="⚠ Undated, like the rest of the Book of Consolation -- see ch. 31's own note. This library does not choose a placement between them."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -12357,6 +12379,15 @@ DICTIONARY_ES = {
         "«Efatá» en 7:34 — conservando el sonido real de lo que se dijo "
         "antes de explicarlo, como si las propias palabras originales formaran parte de lo "
         "que se relata, no solo su significado."),
+    "tsarah": ("angustia", "ANGUSTIA, APRIETO — estrecho, apretado en su raíz, "
+        "las mismas consonantes que dan al hebreo su palabra para un estrecho paso o para "
+        "una co-esposa rival (tzarah) — la angustia imaginada físicamente como un espacio "
+        "demasiado pequeño para moverse. ⚠ La frase exacta de dos palabras «et tsarah», "
+        "«tiempo de angustia», aparece dos veces en esta biblioteca a una distancia real: "
+        "Jeremías 30:7, de Jacob solo, frente a un día «tan grande, que no hay otro "
+        "semejante» — y Daniel 12:1, de toda nación de la tierra, «cual nunca fue desde "
+        "que hubo nación». Ambas prometen rescate al otro lado de la frase idéntica, la "
+        "crisis de una sola familia convertida, en un libro posterior, en la de todos."),
 }
 
 ENCYCLOPEDIA_ES = {
