@@ -3926,7 +3926,7 @@ ENCYCLOPEDIA = [
               "Zerubbabel is handed the signet back (Haggai 2:23), and both Gospel genealogies of the Messiah pass "
               "through his line — the king 'written childless' as to David's old throne became an ancestor of the "
               "one who inherits a greater one.",
-         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Jeremiah", 24, 1), ("Jeremiah", 27, 20), ("Ezekiel", 1, 2)], videos=[]),
+         refs=[("Jeremiah", 22, 24), ("Jeremiah", 22, 28), ("Jeremiah", 24, 1), ("Jeremiah", 27, 20), ("Jeremiah", 28, 4), ("Ezekiel", 1, 2)], videos=[]),
 
     # ---- Daniel 12 ----
     dict(slug="michael-archangel", name="Michael (the great prince)", kind="person", aliases=["Michael"],
@@ -4498,9 +4498,26 @@ ENCYCLOPEDIA = [
               "Saul later broke that treaty, and 2 Samuel 21 records the consequence. Excavated at el-Jib, where "
               "jar handles stamped GB'N — Gibeon — confirmed the identification, along with a vast rock-cut pool "
               "and water system that matches the 'pool of Gibeon' where Joab's and Abner's men fought (2 Samuel 2).",
-         refs=[("2 Chronicles", 1, 3), ("2 Chronicles", 1, 13)], videos=[],
+         refs=[("2 Chronicles", 1, 3), ("2 Chronicles", 1, 13), ("Jeremiah", 28, 1)], videos=[],
          coords=(31.8465, 35.1846, 0.04),
          modern="El-Jib, West Bank — north-west of Jerusalem"),
+    dict(slug="hananiah-prophet", name="Hananiah son of Azzur", kind="person",
+         aliases=["Hananiah son of Azzur", "Hananiah the prophet"],
+         desc="A prophet from Gibeon who confronted Jeremiah in the temple, in the sight of the priests and "
+              "all the people, with a detailed counter-prophecy: within two years the vessels, Jeconiah, and "
+              "all the exiles would return, because Jehovah had 'broken the yoke of the king of Babylon' "
+              "(Jeremiah 28:1-4). He is introduced with full credentials — a named father, a hometown, the "
+              "same title 'the prophet' the text gives Jeremiah throughout the chapter — and nothing marks "
+              "him as false until the confrontation itself. ⚠ He does not argue back when challenged; he acts, "
+              "physically breaking the wooden yoke off Jeremiah's neck as a counter-sign (28:10). Jeremiah's "
+              "reply escalates the same oracle into iron rather than contradicting it, and delivers a "
+              "public, near-term, checkable verdict: 'this year you will die, because you have spoken "
+              "rebellion against Jehovah' (28:16). He died two months later, in the seventh month of the same "
+              "year (28:17) — one of the only prophecies in the Bible whose fulfillment is reported inside "
+              "the same chapter that made it. The text never says whether he believed his own message or "
+              "invented it knowingly; the charge against him is that Jehovah did not send him, not that he "
+              "was insincere.",
+         refs=[("Jeremiah", 28, 1)], videos=[]),
     dict(slug="bezalel", name="Bezalel", kind="person", aliases=["Bezalel"],
          desc="The craftsman of the tabernacle — son of Uri, son of Hur, of the tribe of Judah, and the first "
               "person in the Bible said to be filled with the spirit of God, which is given him for skill in "
@@ -6738,6 +6755,12 @@ XREFS = [
     (("Jeremiah", 27, 19), ("Daniel", 1, 2), "the same temple vessels, already carried off once in the first deportation, four years before this prophecy names the rest"),
     (("Jeremiah", 27, 19), ("Ezra", 1, 7), "the temple vessels prophesied to go to Babylon here, and counted back to Jerusalem decades later"),
     (("Jeremiah", 27, 20), ("Jeremiah", 24, 1), "Jeconiah's own deportation, the fixed point every later prophecy about the vessels measures itself against"),
+    (("Jeremiah", 28, 2), ("Jeremiah", 27, 2), "I have broken the yoke, spoken to a man still wearing the actual wooden yoke it claims to have broken"),
+    (("Jeremiah", 28, 3), ("Jeremiah", 27, 19), "the vessels, promised home within two years against the previous chapter's prophecy that they are only going further into exile"),
+    (("Jeremiah", 28, 4), ("Jeremiah", 24, 1), "Jeconiah, promised home here -- the same deportation this book keeps measuring every later vessel-and-exile prophecy against"),
+    (("Jeremiah", 28, 14), ("Jeremiah", 27, 6), "even the beasts of the field I have given him, the same oracle restated almost word for word after the wooden yoke is broken"),
+    (("Jeremiah", 28, 15), ("Jeremiah", 27, 15), "Jehovah has not sent you -- the identical verdict already passed on peace-prophets in general, now delivered to one of them by name"),
+    (("Jeremiah", 28, 16), ("Jeremiah", 29, 32), "spoken rebellion against Jehovah, the identical rare phrase brought against a second false prophet, Shemaiah the Nehelamite"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7653,6 +7676,9 @@ CHRON_CHAPTERS = {
     "jer27": dict(era="exile",
                   when="Jeremiah wears a wooden yoke in the temple and sends its pieces to five allied kings, telling all of them and Zedekiah to submit to Babylon; the false prophets promising a quick return of the temple vessels are named liars.",
                   clock="⚠ v1 dates this to 'the beginning of the reign of Jehoiakim,' but vv3, 12 and 20 all address Zedekiah and events of his reign — a well-known scribal duplication of 26:1's opening formula. The envoys' visit (v3) is usually placed c. 594 BC, the year of a known anti-Babylonian coalition among these same five nations."),
+    "jer28": dict(era="exile",
+                  when="Hananiah breaks Jeremiah's wooden yoke and promises Babylon's own fall within two years; Jeremiah answers with a yoke of iron and predicts Hananiah's death within the year -- which happens.",
+                  clock="'That same year' as ch. 27, dated independently and precisely: 'the beginning of the reign of Zedekiah... in the fourth year, in the fifth month' (v1) -- roughly 594/593 BC, confirming which king's reign ch. 27 actually belongs to. Hananiah dies 'in the seventh month' of the same year (v17), two months later."),
     "dan1": dict(era="exile",
                  when="Nebuchadnezzar takes Jerusalem's first captives — Daniel and his three friends enter Babylon's court.",
                  clock="605 BC — the year of Carchemish, fixed by the Babylonian Chronicle: the first date on this site pinned by a document outside the Bible. Verse 21 spans the whole exile in one line, 'until the first year of King Cyrus' — 539 BC."),
@@ -12902,6 +12928,22 @@ ENCYCLOPEDIA_ES["jehoiachin"] = ("Joaquín (Conías / Jeconías)",
     "se convirtió en antepasado de quien hereda uno mayor. ⚠ Jeremías 24 data su propia visión de "
     "los higos precisamente por esta deportación (24:1) — el veredicto de Dios sobre el mismo "
     "suceso que aquí lo destronó.")
+
+ENCYCLOPEDIA_ES["hananiah-prophet"] = ("Hananías hijo de Azur",
+    "Un profeta de Gabaón que enfrentó a Jeremías en el templo, a la vista de los sacerdotes y de "
+    "todo el pueblo, con una contraprofecía detallada: dentro de dos años volverían los utensilios, "
+    "Jeconías y todos los exiliados, porque Jehová había «quebrado el yugo del rey de Babilonia» "
+    "(Jeremías 28:1-4). Se presenta con credenciales completas — un padre nombrado, un pueblo "
+    "natal, el mismo título «el profeta» que el texto le da a Jeremías durante todo el capítulo — "
+    "y nada lo marca como falso hasta el propio enfrentamiento. ⚠ No discute cuando se lo desafía; "
+    "actúa, quitándole físicamente el yugo de madera del cuello a Jeremías como contraseñal "
+    "(28:10). La respuesta de Jeremías escala el mismo oráculo hacia el hierro en vez de "
+    "contradecirlo, y entrega un veredicto público, cercano y comprobable: «este año morirás, "
+    "porque hablaste rebelión contra Jehová» (28:16). Murió dos meses después, en el séptimo mes "
+    "del mismo año (28:17) — una de las pocas profecías de la Biblia cuyo cumplimiento se reporta "
+    "dentro del mismo capítulo que la pronunció. El texto nunca dice si él creía su propio mensaje "
+    "o lo inventó a sabiendas; el cargo en su contra es que Jehová no lo envió, no que fuera "
+    "insincero.")
 
 ENCYCLOPEDIA_ES["sodom-gomorrah"] = ("Sodoma y Gomorra",
     "Mencionadas primero como puntos de referencia en la frontera cananea (Génesis 10:19). Lot va "
