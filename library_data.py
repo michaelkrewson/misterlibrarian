@@ -360,6 +360,9 @@ DICTIONARY = [
     # ---- Exodus 22 (Hebrew) ----
     ("kashaph", "kashaph / mekhashefah", "כָּשַׁף / מְכַשֵּׁפָה", "kashaph / mekhashefah",
      "TO PRACTICE SORCERY — and its feminine participle, 'a sorceress.' The law's one word for it here is deliberately gendered: 'you shall not let a mekhashefah live' (Exodus 22:18) uses only the FEMININE form, though Deuteronomy 18:10-11 (not yet on these pages) lists the same practice under a broader, ungendered vocabulary alongside diviners and mediums. ⚠ In the King James Version's wording — 'thou shalt not suffer a witch to live' — this exact verse was directly invoked for centuries to justify the European and American witch trials, a use of the text far removed from its own setting: three capital sentences (sorcery, bestiality, sacrificing to other gods) stated back to back with no reason given for any of them.", ("Exodus", 22, 18)),
+    # ---- Exodus 23 (Hebrew) ----
+    ("regalim", "regalim / chag", "רְגָלִים / חַג", "regalim / chag",
+     "PILGRIMAGE FESTIVALS — literally 'foot-festivals,' from regel, 'foot': the three annual occasions requiring every Israelite male to appear before Jehovah in person (Exodus 23:14-17), the Torah's first calendar. Unleavened Bread (tied to the Exodus itself), Harvest (firstfruits of the grain, later called Shavuot/Pentecost), and Ingathering (at the year's end, later Sukkot/Tabernacles) — named here in outline, with the full ritual detail supplied only much later, at Leviticus 23 (not yet on these pages). The related noun chag, 'festival,' shares a root with the verb chagag, to circle or process — a pilgrimage word before it is a calendar word.", ("Exodus", 23, 14)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5438,6 +5441,7 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('Exodus', 23, 6), ('Leviticus', 19, 15), "the same rare verb, hadar — do not show deference (hadar) to the poor in a lawsuit, matched by Leviticus 19's do not show deference to the great — one principle stated from both sides, in two different books"),
     (('Acts', 2, 1), ('Acts', 1, 4), "Pentecost is the payment of the promise chapter 1 said was days away — the baptism in the Spirit, not dated by Jesus and arriving on a fixed feast"),
     (('Acts', 2, 17), ('Joel', 3, 1), "Joel's Hebrew reads 'afterward' (acharei-khen) and the Greek Old Testament 'after these things'; the citation reads 'in the last days'"),
     (('Acts', 2, 24), ('Psalms', 18, 5), "'the birth pangs of death' — Hebrew chevlei mavet, the CORDS of death, where chevel means both a cord and a birth pang, and the Greek took the second"),
@@ -10846,6 +10850,16 @@ DICTIONARY_ES = {
         "texto muy alejado de su propio contexto: tres sentencias capitales (hechicería, "
         "bestialidad, sacrificar a otros dioses) enunciadas una tras otra sin dar razón alguna "
         "para ninguna de ellas."),
+    "regalim": ("regalim / jag",
+        "FIESTAS DE PEREGRINACIÓN — literalmente «fiestas del pie», de regel, «pie»: las tres "
+        "ocasiones anuales que exigían la presencia de todo varón israelita ante Jehová en "
+        "persona (Éxodo 23:14-17), el primer calendario de la Torá. Los Panes sin Levadura "
+        "(ligada al propio Éxodo), la Cosecha (primicias del grano, más tarde llamada Shavuot "
+        "o Pentecostés), y la Recolección (al final del año, más tarde Sucot o Tabernáculos) "
+        "— nombradas aquí en esquema, con el detalle ritual completo entregado solo mucho "
+        "después, en Levítico 23 (todavía no en estas páginas). El sustantivo emparentado jag, "
+        "«fiesta», comparte raíz con el verbo jagag, rodear o procesionar — una palabra de "
+        "peregrinación antes que una palabra de calendario."),
     "nakar": ("nakar",
         "RECONOCER, identificar — el verbo sobre el que giran dos de las escenas más crueles del "
         "Génesis, con el mismo imperativo las dos veces. Junto al lecho de Isaac, el padre ciego "
