@@ -33,6 +33,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 from datetime import datetime, timezone
 
 import blogkit
@@ -68,6 +69,18 @@ TAG_INDEX_MIN = 2
 SIBLING_NAME = "The Librarian Abroad"
 SIBLING_URL = "https://mistertranslation.com/travel/"
 SIBLING_BLURB = "Travels, meals, and musings"
+
+# The same FormSubmit endpoint the travel blog posts to, so both publications
+# land in one inbox; `_subject` is what tells them apart. Reusing it is safe on
+# both counts that matter: a shared inbox is not a shared page, so it creates no
+# public link between the sites, and the hash is already committed in
+# build_travel.py in this same public repo, so nothing new is exposed.
+#
+# A form rather than comments, for the reasons set out at length in
+# build_travel.py: a static site has no backend, and every real comment system
+# means ads, a GitHub account, or a server to keep alive — plus a permanent
+# spam-moderation chore on a publication written irregularly by design.
+FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -255,9 +268,10 @@ def _nav(active=""):
     return ('<nav class="nav">'
             '<a href="index.html"%s>Writing</a>'
             '<a href="board.html"%s>The Board</a>'
+            '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
             '<a class="sib" href="%s" title="%s">%s →</a>'
-            '</nav>' % (cls("home"), cls("board"), SIBLING_URL,
+            '</nav>' % (cls("home"), cls("board"), cls("ask"), SIBLING_URL,
                         esc(SIBLING_BLURB), esc(SIBLING_NAME)))
 
 
@@ -271,8 +285,9 @@ def _chrome(active=""):
 
 def _foot():
     return ('<footer>%s · <a href="board.html">The Board</a> · '
-            '<a href="tags.html">All tags</a> · <a href="feed.xml">RSS</a> · '
-            '<a href="%s">%s</a> · nothing here is investment advice</footer>'
+            '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
+            '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
+            'nothing here is investment advice</footer>'
             % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME)))
 
 
@@ -283,6 +298,16 @@ def _entry_hero(e):
     cap = "<figcaption>%s</figcaption>" % esc(e["hero_credit"]) if e["hero_credit"] else ""
     return ('<figure class="hero"><img src="img/%s" alt="%s"%s loading="eager"/>%s</figure>'
             % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
+
+
+def _ask_nudge(e):
+    """The reach of a comments section without running one. The entry title rides
+    along in `re=` so a message arrives saying what prompted it."""
+    return ('<div class="respond">'
+            '<p><strong>Got a question?</strong> Something here you want pushed on, '
+            'or think I have wrong? <a href="ask.html?re=%s">Ask Mr. Librarian</a> — '
+            'it goes straight to my desk.</p></div>'
+            % urllib.parse.quote(e["title"]))
 
 
 def build_entry_page(e):
@@ -322,6 +347,7 @@ def build_entry_page(e):
 %(body)s
     %(tags)s
   </article>
+  %(nudge)s
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
   <footer>
     %(site)s · <a href="feed.xml">RSS</a> · nothing here is investment advice
@@ -342,6 +368,7 @@ def build_entry_page(e):
         "hero": _entry_hero(e),
         "body": e["body"],
         "tags": _tag_chips(e),
+        "nudge": _ask_nudge(e),
     }
 
 
@@ -385,6 +412,105 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        "site": esc(SITE_NAME), "ogt": og_type,
        "css": CSS.replace("__ACCENT__", ACCENT),
        "chrome": _chrome(active), "body": body, "foot": _foot()}
+
+
+
+def build_ask():
+    """The one place a reader can reach the librarian about money writing.
+
+    Posts to FormSubmit, so there is no backend, no database and no cookie. The
+    `re` query parameter carries which entry the reader came from (set by the
+    per-entry nudge) and is filled in client-side.
+
+    ⚠️ The expectations paragraph is not boilerplate. This is a publication about
+    money, so "what should I buy?" is the question it will attract most, and it
+    is the one question that must never get an answer here — not out of caution
+    but because answering it would be giving individual financial advice to a
+    stranger whose circumstances are unknown. Saying so on the form is kinder
+    than saying it in a reply, and it steers people toward the questions that
+    can actually be answered well.
+    """
+    body = """  <section class="asklede">
+    <h1 class="wtitle">Ask Mr. Librarian</h1>
+    <p class="wsub">A question about something written here, a correction, or a number
+    you think is wrong. It goes straight to my desk.</p>
+  </section>
+
+  <div class="panel">
+    <form action="%(endpoint)s" method="POST" class="askform">
+      <input type="hidden" name="_subject" value="The Librarian's Ledger — a question from a reader"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_next" value="%(next)s"/>
+      <!-- Honeypot: a real person never sees this, a bot fills it in. -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+      <label>What is this about? <span class="opt">(optional)</span>
+        <input type="text" name="entry" id="entryField"
+               placeholder="An entry, the board, or leave blank"/>
+      </label>
+      <label>Your name <span class="opt">(optional)</span>
+        <input type="text" name="name" placeholder="However you'd like to be known — or leave blank"/>
+      </label>
+      <label>Your email <span class="opt">(optional — only if you'd like a reply)</span>
+        <input type="email" name="email" placeholder="you@example.com"/>
+      </label>
+      <label>Your question <span class="req">(required)</span>
+        <textarea name="message" required rows="7"
+          placeholder="Why is silver's number the softest on the board? What actually happens if a hardware wallet maker goes under?"></textarea>
+      </label>
+      <button class="btn" type="submit">Send it</button>
+      <p class="formnote">Sending shows a quick captcha to keep the robots out, then brings
+      you back here. Nothing is posted publicly — messages go to my inbox and I read all
+      of them.</p>
+    </form>
+  </div>
+
+  <div class="panel expect">
+    <h2>What I can and can't answer</h2>
+    <p><b>Ask me</b> how a number on the board is worked out, why I think an estimate is
+    soft, what I actually do about something and why, or to tell me I have got a fact
+    wrong — that last one is the most useful message anyone sends.</p>
+    <p><b>Don't ask me</b> what to buy, when to buy it, or what to do with your money.
+    I am not going to answer that, and you should be wary of anyone who would: they do
+    not know your circumstances, your taxes, or what would keep you up at night. Nothing
+    on this site is investment advice and no reply from me will be either.</p>
+  </div>
+
+<script>
+// Pre-fill "what is this about" when a reader arrives from the foot of an entry.
+// Set with .value (never innerHTML) so a crafted URL cannot inject markup.
+(function(){
+  try {
+    var re = new URLSearchParams(location.search).get('re');
+    var f = document.getElementById('entryField');
+    if (re && f) f.value = re.slice(0, 200);
+  } catch (e) {}
+})();
+</script>
+""" % {"endpoint": FORM_ENDPOINT, "next": "%sthanks.html" % BASE_URL}
+
+    return _shell(title="Ask Mr. Librarian — %s" % SITE_NAME,
+                  desc="Ask a question about something written on %s, or tell me I have "
+                       "a number wrong." % SITE_NAME,
+                  url="%sask.html" % BASE_URL, active="ask", body=body)
+
+
+def build_thanks():
+    body = """  <section class="asklede">
+    <h1 class="wtitle">It's on the desk</h1>
+  </section>
+  <div class="panel">
+    <p><b>Your question is in.</b> Thank you — I read everything that arrives, and
+    being told I have a number wrong is the most useful thing anyone sends.</p>
+    <p>If you left an email and it wants an answer, you'll get one. Meanwhile there is
+    <a href="index.html">the rest of the writing</a>, and
+    <a href="board.html">the board</a>.</p>
+  </div>
+"""
+    # noindex: this page exists only as somewhere to land after submitting.
+    return _shell(title="Question received — %s" % SITE_NAME,
+                  desc="Your question is on the librarian's desk.",
+                  url="%sthanks.html" % BASE_URL, body=body, noindex=True)
 
 
 def build_front(entries, board):
@@ -523,6 +649,34 @@ tr.metal{background:rgba(255,255,255,.018)}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:__ACCENT__;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:__ACCENT__}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:__ACCENT__;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
 
 /* ── nav + cross-publication link ────────────────────────────────────────── */
 header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
@@ -717,7 +871,8 @@ def build_sitemap(entries, tags):
     asking Google to index something we told it not to.
     """
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today)]
+    urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today),
+            ("%sask.html" % BASE_URL, today)]
     for e in entries:
         urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
     for tag, es in sorted(tags.items()):
@@ -754,6 +909,8 @@ def main():
             fh.write(text)
 
     write("index.html", build_front(live, board))
+    write("ask.html", build_ask())
+    write("thanks.html", build_thanks())
     write("board.html", build_board(board))
     for e in entries:
         write(e["file"], build_entry_page(e))

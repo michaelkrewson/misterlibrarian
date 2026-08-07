@@ -78,6 +78,34 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
 
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#5eb3d6;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#5eb3d6}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#5eb3d6;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+
 /* ── nav + cross-publication link ────────────────────────────────────────── */
 header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
   flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
@@ -182,7 +210,7 @@ a{color:#5eb3d6}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#5eb3d6" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#5eb3d6" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#5eb3d6"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">The Board</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">The Board</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
   <section class="writing">
     <h1 class="wtitle">multisig</h1>
     <p class="wsub">1 entry tagged <b>multisig</b>. <a href="index.html">All writing</a>.</p>
@@ -193,7 +221,7 @@ a{color:#5eb3d6}
     </a>
   </section>
 
-  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Board</a> · <a href="tags.html">All tags</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice</footer>
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Board</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice</footer>
 </div>
 </body>
 </html>
