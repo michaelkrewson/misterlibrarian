@@ -3,16 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>hardware wallet — The Librarian&#x27;s Ledger</title>
-<meta name="description" content="1 entry on hardware wallet from The Librarian&#x27;s Ledger."/>
-<meta name="robots" content="noindex,follow"/>
-<link rel="canonical" href="https://mistertranslation.com/finance/tag-hardware-wallet.html"/>
+<title>Ask Mr. Librarian — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Ask a question about something written on The Librarian&#x27;s Ledger, or tell me I have a number wrong."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/ask.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
-<meta property="og:title" content="hardware wallet — The Librarian&#x27;s Ledger"/>
-<meta property="og:description" content="1 entry on hardware wallet from The Librarian&#x27;s Ledger."/>
-<meta property="og:url" content="https://mistertranslation.com/finance/tag-hardware-wallet.html"/>
+<meta property="og:title" content="Ask Mr. Librarian — The Librarian&#x27;s Ledger"/>
+<meta property="og:description" content="Ask a question about something written on The Librarian&#x27;s Ledger, or tell me I have a number wrong."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/ask.html"/>
 <meta name="twitter:card" content="summary"/>
 <style>
 *{box-sizing:border-box}
@@ -210,16 +209,64 @@ a{color:#5eb3d6}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#5eb3d6" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#5eb3d6" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#5eb3d6"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">The Board</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
-  <section class="writing">
-    <h1 class="wtitle">hardware wallet</h1>
-    <p class="wsub">1 entry tagged <b>hardware wallet</b>. <a href="index.html">All writing</a>.</p>
-    <a class="ecard" href="coldcard-bitkey-security.html">
-      <span class="ec-d">AUGUST 4, 2026</span>
-      <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
-      <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
-    </a>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">The Board</a><a href="ask.html" class="on">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
+  <section class="asklede">
+    <h1 class="wtitle">Ask Mr. Librarian</h1>
+    <p class="wsub">A question about something written here, a correction, or a number
+    you think is wrong. It goes straight to my desk.</p>
   </section>
+
+  <div class="panel">
+    <form action="https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c" method="POST" class="askform">
+      <input type="hidden" name="_subject" value="The Librarian's Ledger — a question from a reader"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_next" value="https://mistertranslation.com/finance/thanks.html"/>
+      <!-- Honeypot: a real person never sees this, a bot fills it in. -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+      <label>What is this about? <span class="opt">(optional)</span>
+        <input type="text" name="entry" id="entryField"
+               placeholder="An entry, the board, or leave blank"/>
+      </label>
+      <label>Your name <span class="opt">(optional)</span>
+        <input type="text" name="name" placeholder="However you'd like to be known — or leave blank"/>
+      </label>
+      <label>Your email <span class="opt">(optional — only if you'd like a reply)</span>
+        <input type="email" name="email" placeholder="you@example.com"/>
+      </label>
+      <label>Your question <span class="req">(required)</span>
+        <textarea name="message" required rows="7"
+          placeholder="Why is silver's number the softest on the board? What actually happens if a hardware wallet maker goes under?"></textarea>
+      </label>
+      <button class="btn" type="submit">Send it</button>
+      <p class="formnote">Sending shows a quick captcha to keep the robots out, then brings
+      you back here. Nothing is posted publicly — messages go to my inbox and I read all
+      of them.</p>
+    </form>
+  </div>
+
+  <div class="panel expect">
+    <h2>What I can and can't answer</h2>
+    <p><b>Ask me</b> how a number on the board is worked out, why I think an estimate is
+    soft, what I actually do about something and why, or to tell me I have got a fact
+    wrong — that last one is the most useful message anyone sends.</p>
+    <p><b>Don't ask me</b> what to buy, when to buy it, or what to do with your money.
+    I am not going to answer that, and you should be wary of anyone who would: they do
+    not know your circumstances, your taxes, or what would keep you up at night. Nothing
+    on this site is investment advice and no reply from me will be either.</p>
+  </div>
+
+<script>
+// Pre-fill "what is this about" when a reader arrives from the foot of an entry.
+// Set with .value (never innerHTML) so a crafted URL cannot inject markup.
+(function(){
+  try {
+    var re = new URLSearchParams(location.search).get('re');
+    var f = document.getElementById('entryField');
+    if (re && f) f.value = re.slice(0, 200);
+  } catch (e) {}
+})();
+</script>
 
   <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Board</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice</footer>
 </div>
