@@ -1488,6 +1488,8 @@ DICTIONARY = [
     ("tarasso", "tarass\u014d", "\u03c4\u03b1\u03c1\u03ac\u03c3\u03c3\u03c9", "tarass\u014d",
      "To STIR UP, agitate, trouble \u2014 used of water being disturbed and of people being shaken. \u26a0 In John it occurs six times, and the distribution is the point: once of the pool (5:7), THREE TIMES OF JESUS HIMSELF \u2014 he 'troubled himself' at Lazarus' tomb (11:33), 'now my soul is troubled' (12:27), 'he was troubled in spirit' (13:21) \u2014 and then twice in the mouth of Jesus telling the disciples not to be (14:1, 14:27), which bracket that chapter. He is not asking them for a composure he has not needed himself.",
      ("John", 14, 1)),
+    ("skenopegia", "sk\u0113nop\u0113gia", "\u03c3\u03ba\u03b7\u03bd\u03bf\u03c0\u03b7\u03b3\u03af\u03b1", "sk\u0113nop\u0113gia",
+     "TABERNACLES \u2014 literally 'tent-pitching' (sk\u0113n\u0113, tent, + p\u0113gnymi, to fix/pitch). The autumn pilgrimage feast (Sukkot) commemorating the wilderness years, when Israel lived in temporary shelters \u2014 and, by the first century, the setting for a daily water-libation rite: a priest carried water from the Pool of Siloam to the temple altar while pilgrims sang the Hallel, on each of the feast's seven days. \u26a0 John 7 stages Jesus' cry \u2014 'let anyone who thirsts come to me and drink' (7:37) \u2014 on the feast's own last and greatest day, redirecting the ritual's whole action onto himself: not water carried and poured, but water flowing FROM the one who believes.", ("John", 7, 2)),
     ("orphanos", "orphanos", "\u1f40\u03c1\u03c6\u03b1\u03bd\u03cc\u03c2", "orphanos",
      "ORPHAN \u2014 the ordinary word for a child with no parents, and the source of the English word. It appears twice in the New Testament: John 14:18 and James 1:27 ('to look after orphans and widows in their distress'). \u26a0 KJV prints 'comfortless' at John 14:18 \u2014 consistent with having chosen 'Comforter' two verses earlier, and wrong twice for the same reason. ASV 'desolate', Geneva 'fatherless', NWT 'bereaved'; Douay-Rheims alone of the older versions, and RV in Spanish, simply say 'orphans'. The plain word is doing real work: the chapter has been about the FATHER's house.",
      ("John", 14, 18)),
@@ -5441,6 +5443,8 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    (('John', 7, 38), ('John', 4, 10), "living water offered privately to one Samaritan woman at a well is here offered publicly, at the Temple's own water-pouring ritual, to everyone within earshot"),
+    (('John', 7, 23), ('John', 5, 9), "'I did one work, and you are all astonished' — the Bethesda healing, left as an open charge at the end of that chapter, finally gets its Sabbath defense argued out loud here"),
     (('Exodus', 23, 6), ('Leviticus', 19, 15), "the same rare verb, hadar — do not show deference (hadar) to the poor in a lawsuit, matched by Leviticus 19's do not show deference to the great — one principle stated from both sides, in two different books"),
     (('Acts', 2, 1), ('Acts', 1, 4), "Pentecost is the payment of the promise chapter 1 said was days away — the baptism in the Spirit, not dated by Jesus and arriving on a fixed feast"),
     (('Acts', 2, 17), ('Joel', 3, 1), "Joel's Hebrew reads 'afterward' (acharei-khen) and the Greek Old Testament 'after these things'; the citation reads 'in the last days'"),
@@ -12167,6 +12171,7 @@ DICTIONARY_ES = {
     "mone": ("mon\u0113", "UN LUGAR DONDE QUEDARSE \u2014 sustantivo formado sobre men\u014d, permanecer. \u26a0 Aparece DOS veces en todo el Nuevo Testamento y las dos en un mismo cap\u00edtulo: Juan 14:2 y 14:23. \u26a0 Y aqu\u00ed el castellano lleva cuatro siglos de ventaja sobre el ingl\u00e9s: RV pone 'moradas' en el v. 2 y 'morada' en el v. 23, la misma palabra en los dos sitios, igual que el griego. La King James tradujo 'mansions' \u2014del mansio latino, que significaba posada o etapa del camino\u2014 y el ingl\u00e9s moderno entiende casa se\u00f1orial. La imagen del palacio ha llegado al castellano por los himnos y la predicaci\u00f3n traducida, nunca por una Biblia castellana."),
     "parakletos": ("parakl\u0113tos", "EL LLAMADO AL LADO \u2014 de par\u00e1 + kal\u00e9\u014d. Consolador, Ayudante, Abogado, Par\u00e1clito: ninguna palabra castellana lleva a la vez el sentido jur\u00eddico, el consolador y el de ser convocado junto a alguien. \u26a0 Sale CINCO veces: Juan 14:16, 14:26, 15:26, 16:7 y 1 Juan 2:1, donde el parakl\u0113tos es JES\u00daS. Esa quinta es decisiva, porque Juan 14:16 dice OTRO parakl\u0113tos, y otro supone un primero. \u26a0 RV y NVI ponen 'Consolador' en Juan y 'abogado'/'intercesor' en 1 Juan: una palabra griega, dos castellanas dentro de la misma Biblia, y el lector pierde el argumento. TNM conserva el v\u00ednculo con 'ayudante' en los dos sitios."),
     "tarasso": ("tarass\u014d", "REVOLVER, agitar, turbar \u2014 del agua que se mueve y de las personas que se sacuden. \u26a0 En Juan sale seis veces y el reparto es lo que importa: una del estanque (5:7), TRES DE JES\u00daS MISMO \u2014se turb\u00f3 ante la tumba de L\u00e1zaro (11:33), 'ahora mi alma est\u00e1 turbada' (12:27), 'se turb\u00f3 en esp\u00edritu' (13:21)\u2014 y luego dos veces en su boca dici\u00e9ndoles a ellos que no se turben (14:1 y 14:27), que enmarcan aquel cap\u00edtulo."),
+    "skenopegia": ("sk\u0113nop\u0113gia", "TABERN\u00c1CULOS \u2014 literalmente \u00abarmar tiendas\u00bb (sk\u0113n\u0113, tienda, + p\u0113gnymi, fijar/armar). La fiesta de peregrinaci\u00f3n de oto\u00f1o (Sucot) que conmemora los a\u00f1os en el desierto, cuando Israel vivi\u00f3 en refugios temporales \u2014y, ya en el siglo I, el marco de un rito diario de libaci\u00f3n de agua: un sacerdote llevaba agua del estanque de Silo\u00e9 hasta el altar del templo mientras los peregrinos cantaban el Hallel, cada uno de los siete d\u00edas de la fiesta. \u26a0 Juan 7 sit\u00faa el clamor de Jes\u00fas \u2014\u00absi alguien tiene sed, que venga a m\u00ed y beba\u00bb (7:37)\u2014 en el último y mayor día de la fiesta, redirigiendo toda la acción del rito hacia sí mismo: no agua llevada y derramada, sino agua que fluye DESDE el que cree."),
     "orphanos": ("orphan\u00f3s", "HU\u00c9RFANO \u2014 la palabra corriente para un ni\u00f1o sin padres. Sale dos veces en el Nuevo Testamento: Juan 14:18 y Santiago 1:27. \u26a0 Aqu\u00ed la estanter\u00eda castellana acierta donde la inglesa fall\u00f3: RV y NVI ponen 'hu\u00e9rfanos'; la King James puso 'comfortless', sin consuelo, coherente con haber elegido 'Comforter' dos vers\u00edculos antes y equivocada dos veces por lo mismo. La palabra sencilla est\u00e1 trabajando: el cap\u00edtulo lleva hablando de la casa del PADRE."),
     "aiteo": ("ait\u00e9\u014d", "PEDIR \u2014 uno de los dos verbos de Juan para pedir, y en este Evangelio nunca se intercambian. \u26a0 Cuando piden los DISC\u00cdPULOS es siempre ait\u00e9\u014d (14:13, 14:14, 15:7, 15:16, 16:23, 16:24, 16:26); cuando pide JES\u00daS al Padre es siempre er\u014dt\u00e1\u014d. En 16:26 est\u00e1n los dos en un mismo vers\u00edculo. El castellano dice 'pedir' para ambos y el reparto desaparece."),
     "erotao": ("er\u014dt\u00e1\u014d", "PEDIR, preguntar \u2014 el otro verbo de Juan. \u26a0 Cada vez que Jes\u00fas pide al Padre en este Evangelio es este verbo (14:16, 16:26, 17:9, 17:15, 17:20) y nunca ait\u00e9\u014d, reservado a lo que piden los disc\u00edpulos."),
@@ -13430,6 +13435,46 @@ CHAPTER_ART = {
                 "sobre la planta antigua para protegerlo.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Mosaic_of_loaves_%26_fishes_at_Tabgha_LOC_matpc.04154.jpg",
+    )],
+    "jhn7": [dict(
+        file="tissot-pharisees-question-jesus.jpg",
+        title="The Pharisees Question Jesus",
+        title_es="Los fariseos interrogan a Jesús",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="between 1886 and 1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="In a temple courtyard, Jesus stands in white robes with one arm raised, speaking. "
+            "A crowd sits and kneels on the paving stones around him, some with heads bowed "
+            "or faces covered by their hands. To the right, a cluster of elderly, "
+            "richly-dressed Pharisees and scribes with long beards stand apart, watching "
+            "with skeptical expressions. Temple colonnades and steps fill the background, "
+            "where more onlookers are gathered.",
+        note="Tissot's gouache is untitled to any single Gospel verse — the Brooklyn "
+             "Museum catalogs it simply as a recurring scene type, Pharisees confronting "
+             "Jesus in the temple courts — which makes it a fair match for this chapter's "
+             "own repeated pattern rather than a single moment: the crowd seated at his feet "
+             "while the religious authorities stand apart, arms folded, unconvinced. Tissot "
+             "traveled to the Middle East in the 1880s specifically to paint his enormous "
+             "Life of Christ series from life, using local dress, architecture and light "
+             "rather than the European settings earlier painters had defaulted to — the "
+             "temple colonnade behind this scene is drawn from buildings he sketched in "
+             "Jerusalem itself.",
+        note_es="La acuarela de Tissot no está vinculada a un solo versículo del Evangelio "
+                "&mdash; el Museo de Brooklyn la cataloga simplemente como un tipo de escena "
+                "recurrente, fariseos confrontando a Jesús en los atrios del templo&mdash;, lo "
+                "cual la hace un buen encaje para el patrón repetido de este capítulo antes "
+                "que para un momento único: la multitud sentada a sus pies mientras las "
+                "autoridades religiosas permanecen aparte, con los brazos cruzados, sin "
+                "convencerse. Tissot viajó a Oriente Medio en la década de 1880 "
+                "específicamente para pintar del natural su enorme serie La vida de Cristo, "
+                "usando vestimenta, arquitectura y luz locales en vez de los escenarios "
+                "europeos en que se habían apoyado por defecto los pintores anteriores "
+                "&mdash; la columnata del templo detrás de esta escena está tomada de "
+                "edificios que él mismo dibujó en Jerusalén.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Pharisees_Question_Jesus_(Les_pharisiens_questionnent_J%C3%A9sus)_-_James_Tissot.jpg",
     )],
     "rom2": [dict(
         file="rom2-raphael-paul-preaching-athens.jpg",
