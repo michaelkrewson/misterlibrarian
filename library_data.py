@@ -487,6 +487,8 @@ DICTIONARY = [
      "A CONSECRATED WOMAN — from qadosh, 'holy,' the same root as sanctuary and saint. Traditionally understood as a cult or shrine prostitute attached to a temple, though the evidence outside the Bible is thinner and more disputed than confident commentaries admit, and some scholars doubt the institution existed in the form usually described. What is beyond dispute is the social register in Genesis 38: the narrator calls the veiled woman a zonah, a common prostitute (38:15), but when Hirah has to ask the locals for directions on his friend's behalf he says qedeshah (38:21) — the dignified term. The shelf splits four ways: KJV flattens both to 'harlot'; NIV 'shrine prostitute' and NWT 'temple prostitute' commit to the cultic reading; ASV keeps a distinction and flags the Hebrew in the margin. This translation renders 'consecrated woman' — near what the word says, without settling an institution the evidence won't settle.", (38, 21)),
     ("tsadaq", "tsadaq", "צָדַק", "tsadqah",
      "To BE IN THE RIGHT, be righteous — the root of tsedaqah, 'righteousness,' the noun 'counted' to Abram when he believed (15:6). Its most startling appearance is Judah's confession: tsadqah mimmenni, 'she is more righteous than I' (38:26) — the comparative form, spoken in public by a patriarch about the Canaanite widow who tricked him, and the first honest sentence he speaks in the Bible. The same root gives Noah his description ('a righteous man,' 6:9) and Abraham his argument at Sodom ('will you sweep away the righteous with the wicked?', 18:23).", (38, 26)),
+    ("bala", "bala", "בָּלַע", "bala",
+     "To SWALLOW UP — a verb of complete, physical consumption: the ground that swallows Korah's company alive (Numbers 16:32), the great fish that swallows Jonah (Jonah 2:1), Pharaoh's lean cows swallowing the fat ones in a dream that turns out to mean famine (Genesis 41:4). Lamentations 2 uses it four times in sixteen verses (vv2, 5 twice, 16) for the destruction of Jerusalem — 'the Lord has swallowed up without mercy' — and then, in a single cruel turn, hands the identical verb to the ENEMY's own gloating mouth: 'we have swallowed her up!' (v16). The same act of consumption, first attributed to God, then repeated by the people who carried it out, as if both were true at once.", ("Lamentations", 2, 2)),
     ("perets", "perets", "פֶּרֶץ", "perets",
      "A BREACH — a gap burst through a wall; from parats, to break out. The midwife's cry at the birth of Judah's twin is a pun on the name she is giving him: 'How you have BROKEN OUT (paratsta) — a breach (perets) upon you!' (38:29). It sounds like dismay and is kept as a name. Perez matters far past this chapter: Ruth closes by tracing 'the generations of Perez' ten names down to DAVID (Ruth 4:18-22), and Matthew opens the New Testament with the same line, naming 'Perez and Zerah by Tamar' (Matthew 1:3). KJV spells him Pharez, Douay (through the Greek) Phares.", (38, 29)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
@@ -4671,7 +4673,7 @@ ENCYCLOPEDIA = [
               "the roads to Zion mourn and nations have entered the sanctuary. Its ark was never accounted for. The SECOND temple, "
               "begun under Cyrus's decree (Ezra 1) and finished in 516, stood on the same platform; the mourning for both is kept "
               "on the same day, the ninth of Av, when this book is read.",
-         refs=[("Lamentations", 1, 4), ("Lamentations", 1, 10)], videos=[]),
+         refs=[("Lamentations", 1, 4), ("Lamentations", 1, 10), ("Lamentations", 2, 7)], videos=[]),
     dict(slug="hosea", name="Hosea", kind="person", aliases=["Hosea"],
          desc="'He saves' (Hoshea — the same name the last king of Israel bore, and the name Moses changed to Joshua in "
               "Numbers 13:16). Son of Beeri, and the only writing prophet who was himself a NORTHERNER speaking to the north: "
@@ -5760,6 +5762,8 @@ XREFS = [
     (("Lamentations", 1, 10), ("Ezra", 1, 7), "nations in the sanctuary — the vessels Ezra 1 counts home are the ones taken in this catastrophe"),
     (("Lamentations", 1, 12), ("Ecclesiastes", 1, 18), "makh'ov — the same concrete word for pain; and in the plural, Isaiah 53:3's 'man of sorrows'"),
     (("Lamentations", 1, 16), ("Isaiah", 1, 24), "nacham — Isaiah's God says he will get relief; here, five times, there is nobody to give it"),
+    (("Lamentations", 2, 6), ("Lamentations", 1, 4), "the appointed feasts, mourned as empty by the pilgrims in ch. 1 and erased outright by God himself here"),
+    (("Lamentations", 2, 7), ("Lamentations", 1, 4), "the same festival vocabulary inverted a second time, now as the enemy's own victory shout inside the temple"),
     (("Isaiah", 1, 2), ("Deuteronomy", 1, 1), "'Hear, heavens; give ear, earth' — the covenant witnesses of Deuteronomy 32:1 and 30:19, summoned to court"),
     (("Isaiah", 1, 9), ("Genesis", 19, 24), "Sodom and Gomorrah — first as what nearly happened, then in v10 as who they already are"),
     (("Isaiah", 1, 12), ("Exodus", 23, 15), "'to be seen before me' — the same scribal pointing that guards the pilgrimage laws from 'seeing' God's face"),
@@ -7846,6 +7850,9 @@ CHRON_CHAPTERS = {
     "lam1": dict(era="exile",
                  when="Jerusalem after the fire — an alphabetical dirge over an emptied city: roads with no pilgrims, priests starving mid-errand, and a woman with no one to sit with her.",
                  clock="586 BC and the years just after. The city fell in Nebuchadnezzar's eighteenth/nineteenth year; Nebuzaradan burned the temple, the palace and every large house, and broke down the walls (2 Kings 25:8-10). ⚠ The poems read as eyewitness — the specific detail of who starved and where — and are usually dated within a generation of the fall, before the return under Cyrus in 538. Babylon is never named in the book."),
+    "lam2": dict(era="exile",
+                 when="The fiercest chapter in the book: God himself described as an enemy, bending his bow against his own city, tearing down his own temple, ending with children starving in the streets while priest and prophet are killed in the sanctuary.",
+                 clock="Same setting as ch. 1 — Jerusalem in the immediate aftermath of the 586 BC fall, read as eyewitness testimony rather than later reflection. Undated within the chapter itself, like the rest of the book."),
     "joel1": dict(era="monarchy",
                   when="A locust plague strips Judah bare — vine, fig, grain, oil and wine all gone — and the daily offering at the temple stops for want of flour and wine.",
                   clock="⚠ UNDATABLE, and this is the most disputed date in the Bible. Joel's heading names NO king, and nothing in the book supplies one: proposals run from the ninth century BC to the fourth, argued from the same silences in opposite directions (no king mentioned because Joash was a minor; or because there was no longer a monarchy). Filed under the monarchy for want of a better slot, with the argument left open in the book introduction. ⚠ This book has FOUR chapters in Hebrew; English Bibles fold Hebrew 3:1-5 into 2:28-32 and renumber Hebrew 4 as 3."),
@@ -12398,9 +12405,31 @@ DICTIONARY_ES = {
         "semejante» — y Daniel 12:1, de toda nación de la tierra, «cual nunca fue desde "
         "que hubo nación». Ambas prometen rescate al otro lado de la frase idéntica, la "
         "crisis de una sola familia convertida, en un libro posterior, en la de todos."),
+    "bala": ("bala", "DEVORAR, TRAGAR — un verbo de consumo completo y físico: la tierra "
+        "que devora viva a la compañía de Coré (Números 16:32), el gran pez que devora a "
+        "Jonás (Jonás 2:1), las vacas flacas de Faraón que devoran a las gordas en un "
+        "sueño que resulta significar hambre (Génesis 41:4). Lamentaciones 2 lo usa "
+        "cuatro veces en dieciséis versículos (vv. 2, 5 dos veces, 16) para la "
+        "destrucción de Jerusalén — «el Señor devoró sin compasión» — y luego, en un "
+        "giro cruel, entrega el mismo verbo a la boca jactanciosa del propio ENEMIGO: "
+        "«¡la devoramos!» (v. 16). El mismo acto de consumo, atribuido primero a Dios, "
+        "repetido después por quienes lo llevaron a cabo, como si ambas cosas fueran "
+        "ciertas a la vez."),
 }
 
 ENCYCLOPEDIA_ES = {
+    "first-temple": ("El Primer Templo",
+        "La casa que SALOMÓN construyó en la era que David compró, en el monte que "
+        "Génesis 22 llama MORIA — comenzada en su cuarto año (1 Reyes 6:1) y en pie, "
+        "con saqueos y reparaciones periódicas, durante casi cuatro siglos. La incendió "
+        "Nabuzaradán, oficial de NABUCODONOSOR, en el 586 a.C., junto con el palacio y "
+        "toda casa grande de Jerusalén (2 Reyes 25:9). ⚠ Ese incendio es el suceso para "
+        "el que existe LAMENTACIONES, y la razón por la que su primer capítulo puede "
+        "decir que los caminos de Sion están de luto y que naciones han entrado en el "
+        "santuario. Su arca nunca se volvió a contabilizar. El SEGUNDO templo, "
+        "comenzado bajo el decreto de Ciro (Esdras 1) y terminado en el 516, se alzó "
+        "sobre la misma plataforma; el duelo por ambos se guarda el mismo día, el "
+        "nueve de Av, cuando se lee este libro."),
     "herod-antipas": ("Herodes Antipas",
         "Hijo de Herodes el Grande y de Maltace (y por tanto hermano completo de Arquelao), y el «Herodes» "
         "del resto de la historia evangélica una vez que la familia se traslada al norte. Excluido del "
