@@ -14443,6 +14443,23 @@ CHAPTER_ART = {
             "source_url": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Moses_with_the_Ten_Commandments_-_Google_Art_Project.jpg",
         },
     ],
+    "exod21": [
+        {
+            "file": "hammurabi-code-louvre.jpg",
+            "title": "The Code of Hammurabi (detail)",
+            "title_es": "El C&oacute;digo de Hammurabi (detalle)",
+            "artist": "Photograph by Mbzt",
+            "artist_es": "Fotograf&iacute;a de Mbzt",
+            "year": "2011 (stele c. 1750 BC)",
+            "location": "Louvre Museum, Paris",
+            "location_es": "Museo del Louvre, Par&iacute;s",
+            "alt": "The upper portion of a tall, rounded black basalt stele. A relief carving shows a seated, bearded god on a throne, flames rising from his shoulders, extending a rod and ring toward a standing bearded king who faces him with one arm raised. Below the relief, dense columns of cuneiform script cover the remainder of the stone.",
+            "note": "&#9888; <strong>This is the other law code this chapter keeps mentioning.</strong> Discovered in 1901 at Susa (in modern Iran, where it had been carried off as war plunder in antiquity) and now in the Louvre, this basalt stele carries some 4,000 lines of cuneiform &mdash; nearly 300 case laws issued by Hammurabi, king of Babylon, roughly three centuries before the conventional date for Moses. The relief at the top shows the king receiving his authority to judge from the seated sun-god Shamash. Among the laws inscribed below is the same goring-ox case this chapter works through at Exodus 21:28-32 &mdash; a habitually dangerous ox, an owner warned and negligent, a two-tier penalty depending on who gets gored &mdash; close enough to the biblical law that the two are read side by side in nearly every serious commentary on this chapter. Neither text is thought to depend directly on the other; both draw on a much older, shared legal culture of the ancient Near East.",
+            "note_es": "&#9888; <strong>Este es el otro c&oacute;digo legal que este cap&iacute;tulo menciona una y otra vez.</strong> Descubierta en 1901 en Susa (en el actual Ir&aacute;n, adonde hab&iacute;a sido llevada como bot&iacute;n de guerra en la antig&uuml;edad) y hoy en el Louvre, esta estela de basalto lleva unas 4,000 l&iacute;neas de escritura cuneiforme &mdash; cerca de 300 leyes de casos emitidas por Hammurabi, rey de Babilonia, unos tres siglos antes de la fecha convencional de Mois&eacute;s. El relieve superior muestra al rey recibiendo su autoridad para juzgar del dios-sol Shamash, sentado en su trono. Entre las leyes inscritas abajo se encuentra el mismo caso del buey acorneador que este cap&iacute;tulo desarrolla en &Eacute;xodo 21:28-32 &mdash; un buey habitualmente peligroso, un due&ntilde;o advertido y negligente, una pena en dos niveles seg&uacute;n qui&eacute;n resulte corneado &mdash; lo bastante cercano a la ley b&iacute;blica como para que ambas se lean juntas en casi todo comentario serio sobre este cap&iacute;tulo. No se cree que ninguno de los dos textos dependa directamente del otro; ambos beben de una cultura legal mucho m&aacute;s antigua y compartida del antiguo Cercano Oriente.",
+            "license": "CC BY 3.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+        },
+    ],
     "psalms51": [
         {
             "file": "gentileschi-david-bathsheba.jpg",
