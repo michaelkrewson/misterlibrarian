@@ -45,6 +45,8 @@ import re
 import urllib.parse
 import xml.sax.saxutils as sax
 
+import blogkit
+
 # ---------------------------------------------------------------- identity ---
 
 # Rename the blog by editing these three lines and rebuilding. Nothing else
@@ -100,23 +102,8 @@ META_DESC_MIN = 70
 
 
 def _meta_desc(p):
-    if p.get("meta_desc"):
-        return p["meta_desc"]
-    summary = " ".join((p["summary"] or "").split())
-    if len(summary) <= META_DESC_MAX:
-        return summary
-    out = ""
-    for sentence in re.findall(r'[^.!?]*[.!?]', summary):
-        if len(out) + len(sentence) > META_DESC_MAX:
-            break
-        out += sentence
-    out = out.strip()
-    if len(out) >= META_DESC_MIN:
-        return out
-    # One very long opening sentence: fall back to a word-boundary cut. Still
-    # better than a mid-word truncation chosen by the search engine.
-    cut = summary[:META_DESC_MAX - 1].rsplit(" ", 1)[0].rstrip(",;:—- ")
-    return cut + "…"
+    return blogkit.meta_desc(p.get("meta_desc"), p["summary"],
+                             META_DESC_MIN, META_DESC_MAX)
 
 
 # ------------------------------------------------------------- tag filters ---
@@ -224,11 +211,7 @@ def _directions_link(address):
 def _asset_ver(rel):
     """Short content hash of a static asset, appended to its URL so a CSS edit is
     never masked by a stale browser cache. (Same trick the Bible builder uses.)"""
-    try:
-        with open(os.path.join(OUT_DIR, rel), "rb") as f:
-            return hashlib.sha1(f.read()).hexdigest()[:10]
-    except OSError:
-        return "0"
+    return blogkit.asset_ver(OUT_DIR, rel)
 
 
 # ------------------------------------------------------------------- chrome ---
@@ -395,11 +378,7 @@ SEARCH_BODY_CHARS = 20_000
 
 
 def _plain_text(body_html):
-    """Strip tags out of a post body for search indexing. Not a sanitizer —
-    the input is our own post source, never reader-supplied — just enough to
-    turn markup into words a search box can match against."""
-    text = html.unescape(_TAG_RE.sub(" ", body_html))
-    return _WS_RE.sub(" ", text).strip()
+    return blogkit.plain_text(body_html)
 
 
 def parse_front_matter(text, where):
@@ -517,11 +496,7 @@ def load_posts(include_drafts=False):
 # ------------------------------------------------------------------ rendering ---
 
 def _pretty_date(d):
-    # %-d is a GNU/BSD extension; fall back to the zero-padded form elsewhere.
-    try:
-        return d.strftime("%B %-d, %Y")
-    except ValueError:
-        return d.strftime("%B %d, %Y")
+    return blogkit.pretty_date(d)
 
 
 def _stars_svg(value, size=22):
@@ -579,40 +554,15 @@ def _rating_key():
 
 
 def _tag_slug(t):
-    return re.sub(r"[^a-z0-9]+", "-", t.lower()).strip("-")
-
-
-_DIMS_CACHE = {}
+    return blogkit.tag_slug(t)
 
 
 def _img_dims(filename):
-    """(width, height) of a file in travel/img/, or None.
-
-    Emitting these is a Core Web Vitals fix, not decoration: without them the
-    browser reserves no space for a photo until it has loaded, so every image
-    shoves the text below it down the page as it arrives. On a photo-led entry
-    with seventeen figures that is a lot of cumulative layout shift, and CLS is
-    a ranking signal.
-
-    Fails OPEN — Pillow is already required by tools/travel_photos.py, but if it
-    is missing or a file is unreadable the build still produces a correct page,
-    just without the hint. Cached because the index re-renders every hero."""
-    if filename in _DIMS_CACHE:
-        return _DIMS_CACHE[filename]
-    dims = None
-    try:
-        from PIL import Image
-        with Image.open(os.path.join(OUT_DIR, "img", filename)) as im:
-            dims = im.size
-    except Exception:
-        dims = None
-    _DIMS_CACHE[filename] = dims
-    return dims
+    return blogkit.img_dims(os.path.join(OUT_DIR, "img"), filename)
 
 
 def _dim_attrs(filename):
-    d = _img_dims(filename)
-    return f' width="{d[0]}" height="{d[1]}"' if d else ""
+    return blogkit.dim_attrs(os.path.join(OUT_DIR, "img"), filename)
 
 
 def _hero_img(p, cls="hero", eager=False):
@@ -1412,7 +1362,7 @@ def build_thanks():
 
 
 def _rfc822(d):
-    return dt.datetime(d.year, d.month, d.day, 12, 0, 0).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    return blogkit.rfc822(d)
 
 
 def build_feed(posts):
