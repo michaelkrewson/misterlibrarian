@@ -357,6 +357,9 @@ DICTIONARY = [
      "An OUTRAGE — not ordinary wrong but the fixed, heavy term for a disgraceful act that tears the fabric of a people. Shechem's violation of Dinah is 'a nevalah in Israel, a thing that should not be done' (34:7); the same word names the gang-rape that ignites Israel's civil war (Judges 19-20) and Amnon's assault on Tamar ('no such nevalah is done in Israel,' 2 Samuel 13:12), and Achan's sacrilege (Joshua 7:15). It is kin to naval, the 'fool' who says in his heart there is no God (Psalm 14:1) — moral collapse, not mere foolishness. KJV and ASV flatten it to 'folly'; NIV 'disgraceful thing.' The tag 'in Israel' is pointed: the nation, freshly named two chapters back, meets its first atrocity from within its own tents.", (34, 7)),
     ("mohar", "mohar", "מֹהַר", "mohar",
      "The BRIDE-PRICE — the sum a groom's household paid to the bride's family for the marriage (distinct from the mattan, an added 'gift'). Shechem, desperate, tells Dinah's brothers to 'pile on me a very great mohar and gift, and I will give it' (34:12) — he will buy his way past the crime. The law fixes a mohar for a seduced unbetrothed girl (Exodus 22:16-17). KJV 'dowry,' which properly runs the other way (bride's family to groom); mohar is the price paid FOR the bride, not by her.", (34, 12)),
+    # ---- Exodus 22 (Hebrew) ----
+    ("kashaph", "kashaph / mekhashefah", "כָּשַׁף / מְכַשֵּׁפָה", "kashaph / mekhashefah",
+     "TO PRACTICE SORCERY — and its feminine participle, 'a sorceress.' The law's one word for it here is deliberately gendered: 'you shall not let a mekhashefah live' (Exodus 22:18) uses only the FEMININE form, though Deuteronomy 18:10-11 (not yet on these pages) lists the same practice under a broader, ungendered vocabulary alongside diviners and mediums. ⚠ In the King James Version's wording — 'thou shalt not suffer a witch to live' — this exact verse was directly invoked for centuries to justify the European and American witch trials, a use of the text far removed from its own setting: three capital sentences (sorcery, bestiality, sacrificing to other gods) stated back to back with no reason given for any of them.", ("Exodus", 22, 18)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -1074,7 +1077,7 @@ DICTIONARY = [
     ("shaag", "sha'ag", "שָׁאַג", "sha'ag",
      "TO ROAR — specifically the roar of a LION, and in Hebrew usage most often the roar over prey, the sound made after the kill rather than while hunting. ⚠ It is the first thing God does in the book of Amos ('Jehovah ROARS from Zion', 1:2) and it is given by a man who had spent his life on the edge of the Judean wilderness, where the sound was a working hazard rather than an image. Amos makes it his own at 3:8: 'a lion has roared — who will not fear? The Lord Jehovah has spoken — who will not prophesy?' The same verb is used of God at Jeremiah 25:30, Hosea 11:10 and Joel 4:16, and of enemies in the Psalms; 1 Peter 5:8 gives it, in Greek, to the adversary.", ("Amos", 1, 2)),
     ("taraf", "taraf", "טָרַף", "taraf",
-     "TO TEAR, rend — what a predator does to a carcass. The noun terefah is the torn animal that a shepherd had to account for (Genesis 31:39; Exodus 22:12) and that Israelites were forbidden to eat, and Jacob's own sons use the verb when they present the bloodied coat: 'a wild beast has TORN him' (Genesis 37:33). ⚠ Amos gives it to a temper: 'his anger TORE without ceasing' (1:11), the animal register of the book's opening roar handed to a man's grudge. Edom's rage is described as a beast eating.", ("Amos", 1, 11)),
+     "TO TEAR, rend — what a predator does to a carcass. The noun terefah is the torn animal that a shepherd had to account for (Genesis 31:39; Exodus 22:13) and that Israelites were forbidden to eat (Exodus 22:31), and Jacob's own sons use the verb when they present the bloodied coat: 'a wild beast has TORN him' (Genesis 37:33). ⚠ Amos gives it to a temper: 'his anger TORE without ceasing' (1:11), the animal register of the book's opening roar handed to a man's grudge. Edom's rage is described as a beast eating.", ("Amos", 1, 11)),
     ("teruah", "teru'ah", "תְּרוּעָה", "teru'ah",
      "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire. Psalm 27:6 turns the same word toward worship — 'sacrifices with a teru'ah' — the identical noise that felled a wall now offered at an altar.", ("Amos", 1, 14)),
     ("zadon", "zadon", "זָדוֹן", "zadon",
@@ -10832,6 +10835,17 @@ DICTIONARY_ES = {
         "en que Judá confiara, el exilio no se ofrecía a través de ninguno de ellos. La palabra "
         "reaparece en Miqueas 3:11, donde los propios líderes de Jerusalén «adivinan por dinero» — "
         "el oficio prohibido, practicado por sueldo, por la misma gente que debía haberlo proscrito."),
+    "kashaph": ("kashaph / mekhashefah",
+        "PRACTICAR HECHICERÍA — y su participio femenino, «una hechicera». La ley usa aquí una "
+        "sola palabra, deliberadamente marcada por género: «no dejarás con vida a una mekhashefah» "
+        "(Éxodo 22:18) usa solo la forma FEMENINA, aunque Deuteronomio 18:10-11 (todavía no en "
+        "estas páginas) enumera la misma práctica bajo un vocabulario más amplio y sin marca de "
+        "género, junto a adivinos y médiums. ⚠ En la formulación inglesa de la Versión King James "
+        "— «no dejarás con vida a una bruja» — este versículo exacto fue invocado directamente "
+        "durante siglos para justificar los juicios de brujas en Europa y América, un uso del "
+        "texto muy alejado de su propio contexto: tres sentencias capitales (hechicería, "
+        "bestialidad, sacrificar a otros dioses) enunciadas una tras otra sin dar razón alguna "
+        "para ninguna de ellas."),
     "nakar": ("nakar",
         "RECONOCER, identificar — el verbo sobre el que giran dos de las escenas más crueles del "
         "Génesis, con el mismo imperativo las dos veces. Junto al lecho de Isaac, el padre ciego "
@@ -14458,6 +14472,23 @@ CHAPTER_ART = {
             "note_es": "&#9888; <strong>Este es el otro c&oacute;digo legal que este cap&iacute;tulo menciona una y otra vez.</strong> Descubierta en 1901 en Susa (en el actual Ir&aacute;n, adonde hab&iacute;a sido llevada como bot&iacute;n de guerra en la antig&uuml;edad) y hoy en el Louvre, esta estela de basalto lleva unas 4,000 l&iacute;neas de escritura cuneiforme &mdash; cerca de 300 leyes de casos emitidas por Hammurabi, rey de Babilonia, unos tres siglos antes de la fecha convencional de Mois&eacute;s. El relieve superior muestra al rey recibiendo su autoridad para juzgar del dios-sol Shamash, sentado en su trono. Entre las leyes inscritas abajo se encuentra el mismo caso del buey acorneador que este cap&iacute;tulo desarrolla en &Eacute;xodo 21:28-32 &mdash; un buey habitualmente peligroso, un due&ntilde;o advertido y negligente, una pena en dos niveles seg&uacute;n qui&eacute;n resulte corneado &mdash; lo bastante cercano a la ley b&iacute;blica como para que ambas se lean juntas en casi todo comentario serio sobre este cap&iacute;tulo. No se cree que ninguno de los dos textos dependa directamente del otro; ambos beben de una cultura legal mucho m&aacute;s antigua y compartida del antiguo Cercano Oriente.",
             "license": "CC BY 3.0",
             "source_url": "https://commons.wikimedia.org/wiki/File:P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
+        },
+    ],
+    "exod22": [
+        {
+            "file": "matteson-examination-of-a-witch.jpg",
+            "title": "Examination of a Witch",
+            "title_es": "Examen de una bruja",
+            "artist": "Tompkins H. Matteson",
+            "artist_es": "Tompkins H. Matteson",
+            "year": "1853",
+            "location": "Peabody Essex Museum, Salem, Massachusetts",
+            "location_es": "Museo Peabody Essex, Salem, Massachusetts",
+            "alt": "A crowded 17th-century colonial room. At the center, a young woman stands with one shoulder bared while an older woman in a red cloak inspects her skin; magistrates in wide-brimmed hats sit at a table on the left, one writing notes; men in steel helmets and Puritan dress point and gesture around her. In the foreground, a woman appears to have collapsed into a fit and is held up by another figure. A tall grandfather clock stands at the right.",
+            "note": "&#9888; <strong>A 19th-century American history painting, not a contemporary record.</strong> Matteson painted this scene of a Salem-style witchcraft examination in 1853 &mdash; over a century and a half after the Salem trials of 1692 &mdash; imagining the moment officials search a suspect's body for a &lsquo;witch's mark,&rsquo; a real practice in these proceedings, while an accuser collapses in a fit on the floor. This chapter's v18, in the King James Version's wording &mdash; &lsquo;thou shalt not suffer a witch to live&rsquo; &mdash; was cited directly, on both sides of the Atlantic, to justify trials exactly like the one imagined here. The painting hangs today in Salem itself, at the Peabody Essex Museum.",
+            "note_es": "&#9888; <strong>Una pintura hist&oacute;rica estadounidense del siglo XIX, no un registro contempor&aacute;neo de los hechos.</strong> Matteson pint&oacute; esta escena de un examen de brujer&iacute;a al estilo de Salem en 1853 &mdash; m&aacute;s de siglo y medio despu&eacute;s de los juicios de Salem de 1692 &mdash;, imaginando el momento en que los funcionarios buscan en el cuerpo de una sospechosa una &laquo;marca de bruja&raquo;, una pr&aacute;ctica real de aquellos procesos, mientras una acusadora se desploma en un ataque en el suelo. El v. 18 de este cap&iacute;tulo, en la formulaci&oacute;n inglesa de la Versi&oacute;n King James &mdash; &laquo;no dejar&aacute;s con vida a una bruja&raquo; &mdash;, fue citado directamente, a ambos lados del Atl&aacute;ntico, para justificar juicios exactamente como el que aqu&iacute; se imagina. La pintura cuelga hoy en la propia Salem, en el Museo Peabody Essex.",
+            "license": "Public domain",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Examination_of_a_Witch_-_Tompkins_Matteson.jpg",
         },
     ],
     "psalms51": [
