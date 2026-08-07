@@ -785,3 +785,11 @@ a.directions:hover { border-color: var(--olive); text-decoration: none; }
   .panel { padding: 20px 18px; }
   .postnav a { max-width: 100%; }
 }
+
+/* The other publication. Added 2026-08-07 — /travel/ and /finance/ now link to
+   each other. The Bible project at the root is still linked from neither, and
+   must stay that way (see README). */
+.topnav a.sib, .mobmenu-panel a.sib { font-style: italic; opacity: .82; }
+.topnav a.sib { border-color: transparent; }
+.topnav a.sib:hover, .mobmenu-panel a.sib:hover { color: #5eb3d6; border-color: #2f4257; opacity: 1; }
+.sibfoot { margin-top: .55rem; font-size: .82rem; opacity: .72; }

@@ -75,6 +75,29 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel li{margin:0 0 6px}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#5eb3d6}
+.nav a.sib{color:#7f8fa6;padding-left:20px;border-left:1px solid #1e2938;font-style:italic}
+.nav a.sib:hover{color:#e8865c}          /* the other publication's own accent */
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#5eb3d6}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#5eb3d6;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
 
 /* ── entries ─────────────────────────────────────────────────────────────── */
 header.hsm{padding:30px 0 6px;text-align:left}
@@ -120,7 +143,7 @@ a{color:#5eb3d6}
 
 /* ── the writing list on the board page ──────────────────────────────────── */
 .writing{margin:52px 0 0}
-.wh{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
 .wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
 .ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
   border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
@@ -349,7 +372,7 @@ If you buy through it, I get a small commission at no extra cost to you. I said 
 I ever posted</a>, on my travel blog, that if that ever changed, it would say so plainly
 where it happened. This is that.</p>
 
-    <div class="tags"><span class="tg">bitcoin</span><span class="tg">self custody</span><span class="tg">hardware wallet</span><span class="tg">security</span><span class="tg">coldcard</span><span class="tg">coinkite</span><span class="tg">bitkey</span><span class="tg">block</span><span class="tg">multisig</span><span class="tg">inheritance</span><span class="tg">seed phrase</span><span class="tg">entropy</span><span class="tg">bybit</span><span class="tg">jack dorsey</span><span class="tg">notes</span></div>
+    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-self-custody.html">self custody</a><a class="tg" href="tag-hardware-wallet.html">hardware wallet</a><a class="tg" href="tag-security.html">security</a><a class="tg" href="tag-coldcard.html">coldcard</a><a class="tg" href="tag-coinkite.html">coinkite</a><a class="tg" href="tag-bitkey.html">bitkey</a><a class="tg" href="tag-block.html">block</a><a class="tg" href="tag-multisig.html">multisig</a><a class="tg" href="tag-inheritance.html">inheritance</a><a class="tg" href="tag-seed-phrase.html">seed phrase</a><a class="tg" href="tag-entropy.html">entropy</a><a class="tg" href="tag-bybit.html">bybit</a><a class="tg" href="tag-jack-dorsey.html">jack dorsey</a><a class="tg" href="tag-notes.html">notes</a></div>
   </article>
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
   <footer>

@@ -8,11 +8,13 @@ which writes source/finance/asset_board.json; this reads that file and renders H
 Keeping the split means the build has no dependencies to install, cannot fail on a
 Yahoo outage, and works offline — and it is the same property build_travel.py has.
 
-THREE PUBLICATIONS, ONE DOMAIN, NO LINKS BETWEEN THEM
-────────────────────────────────────────────────────
-mistertranslation.com now serves three separate things that share only a hostname:
-the Bible project at the root (build.py), The Librarian Abroad at /travel/
-(build_travel.py), and this at /finance/. None of them links to another, on purpose.
+THREE PUBLICATIONS, ONE DOMAIN
+─────────────────────────────
+mistertranslation.com serves three separate things: the Bible project at the root
+(build.py), The Librarian Abroad at /travel/ (build_travel.py), and this at
+/finance/. The two blogs LINK TO EACH OTHER (Michael's call, 2026-08-07) — nav,
+footer, and the odd entry-to-entry reference. The Bible project links to neither
+and is linked from neither; that separation is the one that must hold.
 
 This builder writes ONLY inside finance/ and never globs or deletes anywhere else,
 which is the same discipline that lets the other two coexist safely. build.py's only
@@ -53,6 +55,19 @@ KNOWN_KEYS = {"title", "date", "tags", "summary", "meta_desc",
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
 META_DESC_MIN = 70
+
+# A tag page listing a single entry is a near-duplicate of that entry: nothing
+# for a searcher to land on that the entry itself doesn't already answer. The
+# pages are still BUILT and still work — a reader clicking a tag gets what they
+# asked for — they are just held back from the index (and out of the sitemap)
+# until enough entries share the tag to make the page its own answer.
+TAG_INDEX_MIN = 2
+
+# The sibling publication. The Bible project at the root is deliberately NOT
+# linked from here and must not be — see the README. These two are.
+SIBLING_NAME = "The Librarian Abroad"
+SIBLING_URL = "https://mistertranslation.com/travel/"
+SIBLING_BLURB = "Travels, meals, and musings"
 
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -213,18 +228,52 @@ def _entry_desc(e):
     return blogkit.meta_desc(e["meta_desc"], e["summary"], META_DESC_MIN, META_DESC_MAX)
 
 
-def _tag_chips(e):
-    """Tags render as plain chips, not links.
+def _tag_file(tag):
+    return "tag-%s.html" % blogkit.tag_slug(tag)
 
-    There are no tag pages yet, and generating one page per tag for a
-    publication with a couple of entries would be a pile of near-empty
-    thin-content pages — worse for a reader and worse in search than no tag
-    pages at all. Add them when the archive earns them.
-    """
+
+def _tag_chips(e):
     if not e["tags"]:
         return ""
-    chips = "".join('<span class="tg">%s</span>' % esc(t) for t in e["tags"])
+    chips = "".join('<a class="tg" href="%s">%s</a>' % (_tag_file(t), esc(t))
+                    for t in e["tags"])
     return '<div class="tags">%s</div>' % chips
+
+
+def tag_index(entries):
+    """{tag: [entries]} — every tag that appears on a live entry, newest first."""
+    out = {}
+    for e in entries:
+        for t in e["tags"]:
+            out.setdefault(t, []).append(e)
+    return out
+
+
+def _nav(active=""):
+    def cls(k):
+        return ' class="on"' if k == active else ""
+    return ('<nav class="nav">'
+            '<a href="index.html"%s>Writing</a>'
+            '<a href="board.html"%s>The Board</a>'
+            '<a href="feed.xml">RSS</a>'
+            '<a class="sib" href="%s" title="%s">%s →</a>'
+            '</nav>' % (cls("home"), cls("board"), SIBLING_URL,
+                        esc(SIBLING_BLURB), esc(SIBLING_NAME)))
+
+
+def _chrome(active=""):
+    """Header used by every page in the publication."""
+    return ('<header class="hsm">'
+            '<a class="brand" href="index.html">%s'
+            '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
+            '%s</header>' % (MARK_SVG.replace("__ACCENT__", ACCENT), _nav(active)))
+
+
+def _foot():
+    return ('<footer>%s · <a href="board.html">The Board</a> · '
+            '<a href="tags.html">All tags</a> · <a href="feed.xml">RSS</a> · '
+            '<a href="%s">%s</a> · nothing here is investment advice</footer>'
+            % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME)))
 
 
 def _entry_hero(e):
@@ -305,14 +354,108 @@ def _entry_card(e):
                           esc(e["title"]), esc(e["summary"])))
 
 
-def build_writing_section(entries):
-    if not entries:
-        return ""
-    return ('\n  <section class="writing">\n'
-            '    <h2 class="wh">Writing</h2>\n'
-            '    <p class="wsub">Occasional pieces about money, custody, and the '
-            'machinery underneath both. <a href="feed.xml">RSS</a>.</p>\n'
-            '%s\n  </section>\n' % "\n".join(_entry_card(e) for e in entries))
+def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website"):
+    robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
+    return """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>%(title)s</title>
+<meta name="description" content="%(desc)s"/>
+%(robots)s<link rel="canonical" href="%(url)s"/>
+<link rel="alternate" type="application/rss+xml" title="%(site)s" href="feed.xml"/>
+<meta property="og:type" content="%(ogt)s"/>
+<meta property="og:site_name" content="%(site)s"/>
+<meta property="og:title" content="%(title)s"/>
+<meta property="og:description" content="%(desc)s"/>
+<meta property="og:url" content="%(url)s"/>
+<meta name="twitter:card" content="summary"/>
+<style>%(css)s</style>
+</head>
+<body>
+<div class="wrap">
+  %(chrome)s
+%(body)s
+  %(foot)s
+</div>
+</body>
+</html>
+""" % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
+       "site": esc(SITE_NAME), "ogt": og_type,
+       "css": CSS.replace("__ACCENT__", ACCENT),
+       "chrome": _chrome(active), "body": body, "foot": _foot()}
+
+
+def build_front(entries, board):
+    """The publication's front page: what has been written, newest first.
+
+    The board used to live here and has moved to its own page. It is a standing
+    reference that rewrites itself every few hours, not a piece of writing, and
+    keeping it at the top pushed the actual entries below the fold on a laptop —
+    which is a strange thing for a publication to do to its own writing.
+    """
+    btc = board.get("btc_rank")
+    board_line = ("Gold, silver, the biggest public companies and Bitcoin, ranked by "
+                  "what the market says they are worth")
+    if btc:
+        board_line += " — Bitcoin currently sits at #%d" % btc
+    board_card = """    <a class="ecard board-card" href="board.html">
+      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
+      <span class="ec-t">The Biggest Assets in the World</span>
+      <span class="ec-s">%s.</span>
+    </a>""" % esc(board_line)
+
+    cards = "\n".join(_entry_card(e) for e in entries)
+    intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
+    return _shell(
+        title="%s — %s" % (SITE_NAME, TAGLINE),
+        desc=BLURB, url=BASE_URL, active="home",
+        body="""%s  <section class="writing">
+%s
+%s
+  </section>
+""" % (intro, board_card, cards))
+
+
+def build_tag_page(tag, entries, indexable):
+    slug = blogkit.tag_slug(tag)
+    n = len(entries)
+    desc = ("%d entr%s on %s from %s."
+            % (n, "y" if n == 1 else "ies", tag, SITE_NAME))
+    cards = "\n".join(_entry_card(e) for e in entries)
+    return _shell(
+        title="%s — %s" % (tag, SITE_NAME),
+        desc=desc, url="%stag-%s.html" % (BASE_URL, slug),
+        noindex=not indexable,
+        body="""  <section class="writing">
+    <h1 class="wtitle">%s</h1>
+    <p class="wsub">%d entr%s tagged <b>%s</b>. <a href="index.html">All writing</a>.</p>
+%s
+  </section>
+""" % (esc(tag), n, "y" if n == 1 else "ies", esc(tag), cards))
+
+
+def build_tag_list(tags):
+    """Every tag, as one browsable page. The thing that makes a tag system
+    usable once there are more tags than fit in a sidebar."""
+    if not tags:
+        return None
+    items = "".join(
+        '<a class="tg" href="%s">%s <span class="tgn">%d</span></a>'
+        % (_tag_file(t), esc(t), len(v))
+        for t, v in sorted(tags.items(), key=lambda kv: (-len(kv[1]), kv[0].lower())))
+    return _shell(
+        title="All tags — %s" % SITE_NAME,
+        desc="Every subject written about on %s." % SITE_NAME,
+        url="%stags.html" % BASE_URL,
+        noindex=True,   # a list of links, nothing to rank for
+        body="""  <section class="writing">
+    <h1 class="wtitle">All tags</h1>
+    <p class="wsub">%d subject%s so far. <a href="index.html">All writing</a>.</p>
+    <div class="tags taglist">%s</div>
+  </section>
+""" % (len(tags), "" if len(tags) == 1 else "s", items))
 
 
 # ─────────────────────────────────────────────────────────────────────── page ──
@@ -379,6 +522,29 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel li{margin:0 0 6px}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:__ACCENT__}
+.nav a.sib{color:#7f8fa6;padding-left:20px;border-left:1px solid #1e2938;font-style:italic}
+.nav a.sib:hover{color:#e8865c}          /* the other publication's own accent */
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:__ACCENT__}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:__ACCENT__;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
 
 /* ── entries ─────────────────────────────────────────────────────────────── */
 header.hsm{padding:30px 0 6px;text-align:left}
@@ -424,7 +590,7 @@ a{color:__ACCENT__}
 
 /* ── the writing list on the board page ──────────────────────────────────── */
 .writing{margin:52px 0 0}
-.wh{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
 .wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
 .ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
   border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
@@ -463,57 +629,7 @@ MARK_SVG = """<svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="tr
 </svg>"""
 
 
-def build_page(board, entries=()):
-    writing = build_writing_section(list(entries))
-    assets = board.get("assets", [])
-    btc_rank = board.get("btc_rank")
-    consts = board.get("constants", {})
-
-    btc_line = ""
-    if btc_rank:
-        btc_line = (f'<span class="dot">·</span>'
-                    f'<span class="hl">Bitcoin is the #{btc_rank} largest asset on earth</span>')
-
-    rows = "\n".join(row(a, btc_rank) for a in assets)
-
-    desc = (f"The largest assets in the world by market capitalisation — gold, silver, "
-            f"the biggest public companies and Bitcoin"
-            + (f", where Bitcoin currently ranks #{btc_rank}" if btc_rank else "") + ".")
-
-    gold_t = consts.get("gold_tonnes")
-    silver_t = consts.get("silver_tonnes")
-    btc_c = consts.get("btc_circulating")
-
-    return f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>{esc(SITE_NAME)} — the biggest assets in the world</title>
-<meta name="description" content="{esc(desc)}"/>
-<link rel="canonical" href="{BASE_URL}"/>
-<link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)}" href="feed.xml"/>
-<meta property="og:type" content="website"/>
-<meta property="og:site_name" content="{esc(SITE_NAME)}"/>
-<meta property="og:title" content="{esc(SITE_NAME)} — the biggest assets in the world"/>
-<meta property="og:description" content="{esc(desc)}"/>
-<meta property="og:url" content="{BASE_URL}"/>
-<meta name="twitter:card" content="summary"/>
-<style>{CSS.replace("__ACCENT__", ACCENT)}</style>
-</head>
-<body>
-<div class="wrap">
-  <header>
-    <span class="brand">{MARK_SVG.replace("__ACCENT__", ACCENT)}<h1>The Librarian's <span class="em">Ledger</span></h1></span>
-    <p class="tag">{esc(TAGLINE)}</p>
-  </header>
-
-  <p class="lede">{esc(BLURB)}</p>
-
-  <p class="stamp">Updated {esc(board.get('generated', '—'))}{btc_line}</p>
-
-  <div class="tw">
-  <table class="board">
+BOARD_BODY_TEMPLATE = """  <table class="board">
     <thead>
       <tr>
         <th class="rk">#</th>
@@ -526,7 +642,7 @@ def build_page(board, entries=()):
       </tr>
     </thead>
     <tbody>
-{rows}
+%(rows)s
     </tbody>
   </table>
   </div>
@@ -538,12 +654,12 @@ def build_page(board, entries=()):
     the working is shown here rather than asked to be taken on faith:</p>
     <ul>
       <li><b>Companies</b> — market cap as reported for the listed shares.</li>
-      <li><b>Gold</b> — spot price × <code>{gold_t:,} tonnes</code> of above-ground stock,
+      <li><b>Gold</b> — spot price × <code>%(gold)s tonnes</code> of above-ground stock,
       converted at 32,150.7466 troy ounces per tonne.</li>
-      <li><b>Silver</b> — the same arithmetic on <code>{silver_t:,} tonnes</code>. Silver's
+      <li><b>Silver</b> — the same arithmetic on <code>%(silver)s tonnes</code>. Silver's
       above-ground figure is the softest number on this page; estimates differ a great deal
       depending on whether industrial silver that has been used up is counted.</li>
-      <li><b>Bitcoin</b> — price × <code>{btc_c:,}</code> coins in circulation, a number
+      <li><b>Bitcoin</b> — price × <code>%(btcc)s</code> coins in circulation, a number
       that creeps slowly upward toward its 21 million limit.</li>
     </ul>
     <p>The tonnage and supply constants move slowly and are refreshed about once a year;
@@ -555,33 +671,65 @@ def build_page(board, entries=()):
     is investment advice, and nothing here is for sale.</p>
   </div>
 
-  {writing}
-  <footer>
-    {esc(SITE_NAME)} · built {datetime.now(timezone.utc).strftime('%Y-%m-%d')} ·
-    <a href="feed.xml">RSS</a> · figures from public market data
-  </footer>
-</div>
-</body>
-</html>
 """
 
 
-def build_sitemap(entries=()):
+def build_board(board):
+    """The standing asset board. Its own page since 2026-08-07 — it was the front
+    page, but a publication's front page should be its writing."""
+    assets = board.get("assets", [])
+    btc_rank = board.get("btc_rank")
+    consts = board.get("constants", {})
+    gold_t = consts.get("gold_tonnes")
+    silver_t = consts.get("silver_tonnes")
+    btc_c = consts.get("btc_circulating")
+
+    btc_line = ""
+    if btc_rank:
+        btc_line = ('<span class="dot">·</span><span class="hl">Bitcoin is the '
+                    '#%d largest asset on earth</span>' % btc_rank)
+    rows = "\n".join(row(a, btc_rank) for a in assets)
+
+    desc = ("The largest assets in the world by market capitalisation — gold, silver, "
+            "the biggest public companies and Bitcoin"
+            + (", where Bitcoin currently ranks #%d" % btc_rank if btc_rank else "") + ".")
+
+    body = """  <h1 class="btitle">The Biggest Assets in the World</h1>
+  <p class="lede">%(blurb)s</p>
+  <p class="stamp">Updated %(gen)s%(btc)s</p>
+%(table)s
+""" % {"blurb": esc(BLURB), "gen": esc(board.get("generated", "—")),
+       "btc": btc_line, "table": BOARD_BODY_TEMPLATE % {"rows": rows,
+                                                        "gold": "{:,}".format(gold_t),
+                                                        "silver": "{:,}".format(silver_t),
+                                                        "btcc": "{:,}".format(btc_c)}}
+
+    return _shell(title="The Biggest Assets in the World — %s" % SITE_NAME,
+                  desc=desc, url="%sboard.html" % BASE_URL, active="board", body=body)
+
+
+def build_sitemap(entries, tags):
     """A sitemap is not optional here — it IS the discovery plan.
 
-    Nothing links to this publication (that is the point), so a crawler has no
-    path in. robots.txt advertises this file; without it these pages are
-    effectively invisible.
+    Nothing links to this publication from outside, so a crawler has no path in.
+    robots.txt advertises this file. Tag pages appear only once they carry
+    TAG_INDEX_MIN entries; submitting a page we have marked noindex would be
+    asking Google to index something we told it not to.
     """
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    urls = ['  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n'
-            '    <changefreq>daily</changefreq>\n  </url>' % (BASE_URL, today)]
+    urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today)]
     for e in entries:
-        urls.append('  <url>\n    <loc>%s%s</loc>\n    <lastmod>%s</lastmod>\n'
-                    '  </url>' % (BASE_URL, e["file"], e["date"].isoformat()))
+        urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
+    for tag, es in sorted(tags.items()):
+        if len(es) >= TAG_INDEX_MIN:
+            urls.append(("%stag-%s.html" % (BASE_URL, blogkit.tag_slug(tag)),
+                         max(x["date"] for x in es).isoformat()))
+    body = "\n".join(
+        "  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n  </url>" % u
+        for u in urls)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            + "\n".join(urls) + "\n</urlset>\n")
+            + body + "\n</urlset>\n")
 
 
 def main():
@@ -589,46 +737,62 @@ def main():
 
     if not os.path.exists(SRC):
         sys.exit("no source/finance/asset_board.json — run tools/fetch_asset_board.py first")
-
     with open(SRC, encoding="utf-8") as fh:
         board = json.load(fh)
-
-    assets = board.get("assets") or []
-    if not assets:
+    if not (board.get("assets") or []):
         sys.exit("asset_board.json has no assets — refusing to build an empty board")
 
     entries = load_entries(include_drafts=include_drafts)
     live = [e for e in entries if not e["draft"]]
-
     check_entries(entries)
 
+    tags = tag_index(live)
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
 
-    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as fh:
-        fh.write(build_page(board, live))
+    def write(name, text):
+        with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
+            fh.write(text)
+
+    write("index.html", build_front(live, board))
+    write("board.html", build_board(board))
     for e in entries:
-        with open(os.path.join(OUT, e["file"]), "w", encoding="utf-8") as fh:
-            fh.write(build_entry_page(e))
-    with open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8") as fh:
-        fh.write(blogkit.build_feed(live, site_name=SITE_NAME, site_url=SITE_URL,
-                                    base=BASE, blurb=BLURB))
-    with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as fh:
-        fh.write(build_sitemap(live))
+        write(e["file"], build_entry_page(e))
+    for tag, es in tags.items():
+        write("tag-%s.html" % blogkit.tag_slug(tag),
+              build_tag_page(tag, es, len(es) >= TAG_INDEX_MIN))
+    tl = build_tag_list(tags)
+    if tl:
+        write("tags.html", tl)
+    write("feed.xml", blogkit.build_feed(live, site_name=SITE_NAME, site_url=SITE_URL,
+                                         base=BASE, blurb=BLURB))
+    write("sitemap.xml", build_sitemap(live, tags))
 
-    missing = [a["name"] for a in assets
-               if a.get("domain")
-               and not os.path.exists(os.path.join(OUT, "img", _logo_slug(a["domain"]) + ".png"))]
+    _prune_stale_tag_pages(tags)
 
+    indexable = sum(1 for v in tags.values() if len(v) >= TAG_INDEX_MIN)
     print("built /finance/ — %d assets, Bitcoin #%s, data %s"
-          % (len(assets), board.get("btc_rank"), board.get("generated")))
-    print("  %d entr%s (%d live%s)"
+          % (len(board["assets"]), board.get("btc_rank"), board.get("generated")))
+    print("  %d entr%s (%d live), %d tag page%s (%d indexable, %d held back at <%d entries)"
           % (len(entries), "y" if len(entries) == 1 else "ies", len(live),
-             ", %d draft" % (len(entries) - len(live)) if len(entries) != len(live) else ""))
+             len(tags), "" if len(tags) == 1 else "s", indexable,
+             len(tags) - indexable, TAG_INDEX_MIN))
     for e in entries:
         print("  %s  %-38s %s" % (e["date"], e["file"], "[DRAFT]" if e["draft"] else ""))
-    if missing:
-        print("  monogram fallback (no cached logo): %s" % ", ".join(missing))
     return 0
+
+
+def _prune_stale_tag_pages(tags):
+    """Delete tag pages whose tag no longer appears on any entry.
+
+    Without this, renaming a tag leaves the old page on disk forever — still
+    reachable, still in search, listing entries that have moved on. Scoped hard
+    to finance/tag-*.html so it can never reach another publication's output.
+    """
+    keep = {"tag-%s.html" % blogkit.tag_slug(t) for t in tags}
+    for fn in os.listdir(OUT):
+        if fn.startswith("tag-") and fn.endswith(".html") and fn not in keep:
+            os.remove(os.path.join(OUT, fn))
+            print("  (removed stale tag page: %s)" % fn)
 
 
 def check_entries(entries):
