@@ -15,3 +15,7 @@ Sitemap: https://mistertranslation.com/sitemap.xml
 # anywhere on this site, so a crawler has no path to it. This is how it gets
 # found. Delete the line if you would rather it stayed link-only.
 Sitemap: https://mistertranslation.com/travel/sitemap.xml
+
+# /finance/ — The Librarian's Ledger. Same arrangement: a third publication on the
+# same domain, linked from neither of the other two, found only through this line.
+Sitemap: https://mistertranslation.com/finance/sitemap.xml
