@@ -1,0 +1,79 @@
+# Keep /finance/ current without a server.
+#
+#     tools/fetch_asset_board.py   pulls public quotes -> source/finance/asset_board.json
+#     tools/finance_logos.py       fetches any logo we don't already have cached
+#     build_finance.py             renders finance/index.html from that JSON (stdlib only)
+#     commit + push to main        GitHub Pages redeploys (source: main /)
+#
+# WHY THIS NEEDS NO SECRET
+# Every input is a public market quote. There is no account, no key, and nothing
+# personal anywhere in this path — which is what makes it safe to run in a public
+# repo. The only token involved is the automatic GITHUB_TOKEN.
+#
+# WHY IT WILL NOT GO RED ON A BAD DAY
+# Yahoo rate-limits datacenter IP ranges far harder than a home connection, so a run
+# that resolves nothing is a question of when, not if. fetch_asset_board.py exits 0
+# and writes nothing in that case, the build re-renders from the last committed
+# board, and the page keeps showing slightly older figures with an honest "Updated"
+# timestamp on it. A stale board beats a blank page and beats a red inbox.
+#
+# IF YAHOO BLOCKS THE RUNNER FOR GOOD
+# The committed JSON is the interface, not this workflow. Point any other machine at
+# `python3 tools/fetch_asset_board.py` on a schedule and have it commit the same
+# file; the builder and the page do not change.
+
+name: Refresh the asset board
+
+on:
+  schedule:
+    # Every six hours. The ranking barely moves day to day, so this is about the
+    # page never looking abandoned rather than about being a live ticker. Note
+    # GitHub runs scheduled jobs late under load — treat it as "roughly".
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Two refreshes at once would race on the same branch.
+concurrency:
+  group: refresh-asset-board
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install yfinance
+        run: python -m pip install --quiet --upgrade yfinance
+
+      - name: Fetch the board
+        run: python3 tools/fetch_asset_board.py
+
+      - name: Cache any missing logos
+        run: python3 tools/finance_logos.py
+
+      - name: Rebuild /finance/
+        run: python3 build_finance.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source/finance finance
+          if git diff --cached --quiet; then
+            echo "nothing changed — not committing"
+            exit 0
+          fi
+          git commit -m "Refresh the asset board"
+          # Someone may have pushed while we were fetching; rebase rather than fail.
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
