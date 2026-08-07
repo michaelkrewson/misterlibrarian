@@ -4621,7 +4621,7 @@ ENCYCLOPEDIA = [
               "records name Qidri among the Arab tribes they fought. ⚠ It enters the Song for one reason: its TENTS, woven "
               "from black goat hair, which is what the woman compares her sun-darkened skin to — and she pairs them with "
               "the curtains of Solomon's pavilion, so both halves of the comparison are admiring.",
-         refs=[("Song of Solomon", 1, 5)], videos=[]),
+         refs=[("Song of Solomon", 1, 5), ("Jeremiah", 2, 10)], videos=[]),
     dict(slug="en-gedi", name="En-gedi", kind="place", aliases=["En-gedi", "Engedi"],
          coords=(31.4614, 35.3925, 0.12),
          desc="'Spring of the kid' — a freshwater spring in the cliffs on the WEST SHORE OF THE DEAD SEA, about 400 metres "
@@ -6780,6 +6780,7 @@ XREFS = [
     (("Jeremiah", 30, 22), ("Jeremiah", 24, 7), "my people... their God, the covenant formula already sworn to the good figs"),
     (("Jeremiah", 30, 22), ("Jeremiah", 31, 32), "my people... their God, the same covenant formula sworn a third time, now to the whole house of Israel under a new covenant"),
     (("Jeremiah", 30, 23), ("Jeremiah", 23, 19), "the tempest of Jehovah, the same two verses planted a second time almost letter for letter"),
+    (("Jeremiah", 2, 20), ("Jeremiah", 30, 8), "I broke your yoke... I tore off your bonds, the identical verb pair for two different liberations centuries apart -- one already accomplished at the Exodus, one still promised"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -7752,6 +7753,9 @@ CHRON_CHAPTERS = {
     "jer1": dict(era="exile",
                  when="The call of Jeremiah — known before the womb, made 'a prophet to the nations,' shown the almond branch and the boiling pot from the north.",
                  clock="627 BC, 'the thirteenth year of Josiah' (v2) — the start of a forty-year ministry that runs, per the superscription, to the fall of Jerusalem in 586 BC."),
+    "jer2": dict(era="exile",
+                 when="Jehovah's opening case against Judah: the loyal love of the bridal-and-wilderness years remembered, then a lawsuit over a devotion abandoned for cracked cisterns, foreign rivers, and gods made of wood and stone.",
+                 clock="⚠ Undated within the chapter itself, unlike ch. 1's precise year. Conventionally placed early in the forty-year ministry the superscription describes, likely still within Josiah's reign -- the opening argument the call of ch. 1 leads directly into. The text gives no anchor of its own; this library does not choose a firmer date than that."),
     "dan2": dict(era="exile",
                  when="Nebuchadnezzar's dream of the four-metal statue and the stone cut without hands — the four kingdoms and the everlasting fifth; Daniel reveals both the dream and its meaning.",
                  clock="'The second year of Nebuchadnezzar' (v1), c. 603 BC — early in the Babylonian exile. The Aramaic section of the book (2:4b-7:28) begins here."),
@@ -10804,6 +10808,12 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "ketiv-qere": ("ketiv / qere",
+        "«Escrito» / «leído» — el doble registro de los masoretas: donde la tradición LEÍA una "
+        "palabra de forma distinta a como la ESCRIBEN las consonantes, dejaron las letras escritas "
+        "en la columna y colocaron la lectura al lado. Daniel 11 muestra varios (vv. 10, 12, 18, "
+        "39 — una palabra sin vocalizar junto a su gemela vocalizada, en la propia columna hebrea "
+        "aquí). La honestidad del propio manuscrito, conservada."),
     "qosem": ("qosem",
         "UN ADIVINO — una clase profesional, distinta del verbo nachash (leer un presagio "
         "concreto): qosem nombra el oficio mismo, alguien que vive de esto. Es casi el vocabulario "
@@ -13139,6 +13149,44 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "jer2": [dict(
+        file="bassano-israelites-wilderness.jpg",
+        title="The Israelites in the Wilderness",
+        title_es="Los israelitas en el desierto",
+        artist="Jacopo Bassano",
+        artist_es="Jacopo Bassano",
+        year="c. 1575",
+        location="Gemäldegalerie Alte Meister, Dresden",
+        location_es="Gemäldegalerie Alte Meister, Dresde",
+        alt="A crowded, low-lit oil painting of a nomadic encampment at dusk. In the "
+            "foreground, several families draw and pour water into wooden buckets and "
+            "clay jars, surrounded by sheep, dogs, and pack donkeys; an old bearded man "
+            "in a turban carries a small child. In the middle distance, riders on "
+            "donkeys and horses set off toward a valley dotted with tents, with a "
+            "mountain and storm-lit sky on the horizon.",
+        note="&#9888; This chapter opens on a memory, not a vision: the &lsquo;bridal "
+             "days&rsquo; when Israel followed Jehovah through the wilderness with "
+             "nothing sown (vv2, 6). Bassano, a Venetian painter known for folding "
+             "whole flocks and working animals into his biblical scenes, paints that "
+             "wilderness not as empty desert but as a functioning, crowded camp "
+             "&mdash; water drawn, animals watered, children carried, tents pitched in "
+             "the distance. No single verse of this chapter names this exact moment; "
+             "the painting stands for the whole remembered period the lawsuit&rsquo;s "
+             "opening exhibit appeals to, not one scene within it.",
+        note_es="&#9888; Este cap&iacute;tulo se abre con un recuerdo, no con una "
+             "visi&oacute;n: los &laquo;d&iacute;as de desposorio&raquo; en que "
+             "Israel sigui&oacute; a Jehov&aacute; por el desierto sin nada sembrado "
+             "(vv. 2, 6). Bassano, pintor veneciano conocido por incorporar reba&ntilde;os "
+             "enteros y animales de trabajo a sus escenas b&iacute;blicas, no pinta ese "
+             "desierto como un vac&iacute;o, sino como un campamento activo y "
+             "concurrido &mdash; agua que se saca, animales que beben, ni&ntilde;os "
+             "cargados, tiendas plantadas a lo lejos. Ning&uacute;n vers&iacute;culo "
+             "concreto de este cap&iacute;tulo nombra este momento exacto; el cuadro "
+             "representa todo el per&iacute;odo recordado al que apela la primera "
+             "prueba del pleito, no una escena dentro de &eacute;l.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Israelites_in_the_Wilderness.jpg",
+    )],
     "mark5": [dict(
         file="apollinare-nuovo-demoniac.jpg",
         title="Christ Exorcising the Gerasene Demoniac",
