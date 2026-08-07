@@ -13476,6 +13476,53 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Pharisees_Question_Jesus_(Les_pharisiens_questionnent_J%C3%A9sus)_-_James_Tissot.jpg",
     )],
+    "jhn8": [dict(
+        file="rembrandt-woman-taken-in-adultery.jpg",
+        title="Christ and the Woman Taken in Adultery",
+        title_es="Cristo y la mujer sorprendida en adulterio",
+        artist="Rembrandt van Rijn",
+        artist_es="Rembrandt van Rijn",
+        year="1644",
+        location="National Gallery, London",
+        location_es="National Gallery, Londres",
+        alt="A small, brightly lit woman in a white and gold gown kneels on temple steps at "
+            "the center of an otherwise vast, shadowy interior. To her left, Christ stands in "
+            "a pale robe, one hand raised, lit by the same shaft of light. A crowd of richly "
+            "and variously dressed accusers and onlookers, including a man in armor and "
+            "another in a red robe and turban, presses close around her. Behind them all, "
+            "soaring into near-total darkness, rises an immense, gilded temple interior with "
+            "towering columns, a raised dais, and a distant crowd of tiny figures lost in the "
+            "gloom above.",
+        note="&#9888; <strong>Rembrandt paints a Dutch fantasy of Solomon's Temple, not first-century "
+             "Jerusalem, and the anachronism is the whole point of the composition.</strong> The "
+             "real drama of this scene &mdash; a woman, alone, exposed, at the center of a trap "
+             "with no safe answer &mdash; needed a setting big enough to dwarf her, so Rembrandt "
+             "built one from his own imagination: a vast, gilded, receding architecture that "
+             "swallows most of the panel in shadow, with the actual figures reduced to a small, "
+             "sharply lit huddle at the bottom of an enormous stair. The single shaft of light "
+             "falls on exactly two people &mdash; the woman and Christ &mdash; leaving her "
+             "accusers, richly dressed and individually detailed, only half-visible at the "
+             "light's own edge. Painted in 1644, now in the National Gallery, London, on the "
+             "small oak panel Rembrandt favored for his most intimate compositions even at his "
+             "most theatrically grand.",
+        note_es="&#9888; <strong>Rembrandt pinta una fantas&iacute;a holandesa del Templo de "
+                "Salom&oacute;n, no la Jerusal&eacute;n del siglo I, y el anacronismo es todo el "
+                "sentido de la composici&oacute;n.</strong> El verdadero drama de esta escena "
+                "&mdash;una mujer, sola, expuesta, en el centro de una trampa sin respuesta "
+                "segura&mdash; necesitaba un escenario lo bastante grande para empeque&ntilde;ecerla, "
+                "as&iacute; que Rembrandt construy&oacute; uno desde su propia imaginaci&oacute;n: "
+                "una arquitectura vasta, dorada, que se pierde en la distancia y que traga la "
+                "mayor parte del panel en sombra, con las figuras reales reducidas a un peque&ntilde;o "
+                "grupo intensamente iluminado al pie de una escalinata enorme. El &uacute;nico haz "
+                "de luz cae exactamente sobre dos personas &mdash;la mujer y Cristo&mdash;, dejando "
+                "a sus acusadores, ricamente vestidos y detallados individualmente, solo a medias "
+                "visibles en el borde mismo de la luz. Pintado en 1644, hoy en la National Gallery "
+                "de Londres, sobre el peque&ntilde;o panel de roble que Rembrandt prefer&iacute;a "
+                "para sus composiciones m&aacute;s &iacute;ntimas incluso en sus momentos m&aacute;s "
+                "teatralmente grandiosos.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Rembrandt_-_The_Woman_taken_in_Adultery_(1644).jpg",
+    )],
     "rom2": [dict(
         file="rom2-raphael-paul-preaching-athens.jpg",
         title="St Paul Preaching at Athens",
