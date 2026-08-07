@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>The Librarian's Ledger</title>
+  <link>https://mistertranslation.com/finance/</link>
+  <atom:link href="https://mistertranslation.com/finance/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>A standing count of the largest assets on earth — gold, silver, the biggest public companies, and Bitcoin — ranked by what the market says they are worth, and refreshed through the day.</description>
+  <language>en</language>
+  <item>
+    <title>A Twenty-Five-Minute Window, and Why I Split the Key</title>
+    <link>https://mistertranslation.com/finance/coldcard-bitkey-security.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/coldcard-bitkey-security.html</guid>
+    <pubDate>Tue, 04 Aug 2026 12:00:00 +0000</pubDate>
+    <description>A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</description>
+    <category>bitcoin</category>
+    <category>self custody</category>
+    <category>hardware wallet</category>
+    <category>security</category>
+    <category>coldcard</category>
+    <category>coinkite</category>
+    <category>bitkey</category>
+    <category>block</category>
+    <category>multisig</category>
+    <category>inheritance</category>
+    <category>seed phrase</category>
+    <category>entropy</category>
+    <category>bybit</category>
+    <category>jack dorsey</category>
+    <category>notes</category>
+  </item>
+</channel>
+</rss>

@@ -6,6 +6,7 @@
 <title>The Librarian&#x27;s Ledger — the biggest assets in the world</title>
 <meta name="description" content="The largest assets in the world by market capitalisation — gold, silver, the biggest public companies and Bitcoin, where Bitcoin currently ranks #12."/>
 <link rel="canonical" href="https://mistertranslation.com/finance/"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
 <meta property="og:title" content="The Librarian&#x27;s Ledger — the biggest assets in the world"/>
@@ -74,6 +75,66 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel li{margin:0 0 6px}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
+.wm{font-size:20px;letter-spacing:.01em}
+.wm .em{color:#5eb3d6;font-style:italic}
+a{color:#5eb3d6}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #5eb3d6;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wh{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
 
 @media (max-width:720px){
   .wrap{padding:0 15px 56px}
@@ -310,9 +371,20 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
     is investment advice, and nothing here is for sale.</p>
   </div>
 
+  
+  <section class="writing">
+    <h2 class="wh">Writing</h2>
+    <p class="wsub">Occasional pieces about money, custody, and the machinery underneath both. <a href="feed.xml">RSS</a>.</p>
+    <a class="ecard" href="coldcard-bitkey-security.html">
+      <span class="ec-d">AUGUST 4, 2026</span>
+      <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
+      <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
+    </a>
+  </section>
+
   <footer>
     The Librarian&#x27;s Ledger · built 2026-08-07 ·
-    figures from public market data
+    <a href="feed.xml">RSS</a> · figures from public market data
   </footer>
 </div>
 </body>
