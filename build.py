@@ -5724,6 +5724,122 @@ def build_sitemap():
     return len(entries)
 
 
+def _claimed_chapter_set(segment):
+    """Parse '1–14, and now 15' / '1–6 y ahora 14–15' style chapter claims:
+    accumulate numbers and ranges, stop at the first non-connective word."""
+    out = set()
+    for tok in re.findall(r"\d+\s*[–-]\s*\d+|\d+|[A-Za-zÀ-ÿ]+|[—.;]", segment):
+        if re.fullmatch(r"\d+\s*[–-]\s*\d+", tok):
+            a, b = (int(x) for x in re.findall(r"\d+", tok))
+            out |= set(range(a, b + 1))
+        elif tok.isdigit():
+            out.add(int(tok))
+        elif tok.lower() in ("and", "now", "y", "ahora", "e", "el", "la"):
+            continue
+        else:
+            break
+    return out
+
+
+def check_forward_claims(chapters):
+    """Chapters keep making CLAIMS about the rest of the site — 'not yet on these
+    pages', 'already on these pages', 'A note on order: X stands at chapters 1–N',
+    'next in sequence is X' — and every one of those claims silently goes stale
+    the moment a later chapter ships without the earlier page being re-edited.
+    Found live three separate times (Matthew 26 → Exodus 21:32; John 14/15's
+    note-on-order, twice in one day); a 2026-08-07 review audit then found ~20
+    more corpus-wide. This guard makes the whole claim-class self-enforcing: a
+    new chapter cannot ship until the pages that talked about it are updated.
+    Scans the English master AND source/es/*.html. The '(… en español)' variants
+    check Spanish-edition presence rather than site presence."""
+    shipped = {(t[1], t[2]) for t in CHAPTERS}
+    slug_of = {(t[1], t[2]): t[0] for t in CHAPTERS}
+    book_of_slug = {t[0]: t[1] for t in CHAPTERS}
+    es_slugs = set(_es_panels().keys())
+    es_to_en = {v: k for k, v in ES_BOOK.items()}
+    names = sorted(set(ES_BOOK) | set(ES_BOOK.values()), key=len, reverse=True)
+    ref_re = re.compile("(" + "|".join(re.escape(n) for n in names) + r")\s+(\d{1,3})")
+    bad = []
+
+    def last_ref(back):
+        refs = [(m, m.end()) for m in ref_re.finditer(back)]
+        if not refs:
+            return None
+        m, end = refs[-1]
+        # a bare N:MM citation between the ref and the claim phrase means the
+        # phrase is about some OTHER, book-less citation — don't guess
+        if re.search(r"\d+:\d+", back[end:]):
+            return None
+        return es_to_en.get(m.group(1), m.group(1)), int(m.group(2))
+
+    def scan(slug, body, where):
+        u = re.sub(r"\s+", " ", html.unescape(body))
+        for m in re.finditer(r"(?:not yet|neither yet) on these pages|"
+                             r"(?:todavía|aún) no(?: \w+){0,4}? (?:en |a )?estas páginas( en español)?", u):
+            ref = last_ref(u[max(0, m.start() - 130):m.start()])
+            if not ref:
+                continue
+            if m.group(1):
+                s = slug_of.get(ref)
+                if s and s in es_slugs:
+                    bad.append(f"  {where}: says {ref[0]} {ref[1]} is not in SPANISH, but its ES twin exists")
+            elif ref in shipped:
+                bad.append(f"  {where}: says {ref[0]} {ref[1]} is 'not yet on these pages', but it shipped")
+        for m in re.finditer(r"already on these pages|ya en estas páginas( en español)?", u):
+            ref = last_ref(u[max(0, m.start() - 130):m.start()])
+            if not ref:
+                continue
+            if m.group(0).startswith("ya") and m.group(1):
+                s = slug_of.get(ref)
+                if not (s and s in es_slugs):
+                    bad.append(f"  {where}: says {ref[0]} {ref[1]} is available in Spanish, but it is not")
+            elif ref not in shipped:
+                bad.append(f"  {where}: says {ref[0]} {ref[1]} is 'already on these pages', but it is not")
+        book = book_of_slug.get(slug)
+        if book:
+            for m in re.finditer(r"(?:stands? on these pages at chapters|"
+                                 r"(?:est[áa]|figura) en estas páginas (?:en|con) los capítulos)\s+([^—.;]+)", u):
+                claimed = _claimed_chapter_set(m.group(1))
+                actual = {n for b, n in shipped if b == book}
+                if claimed and claimed != actual:
+                    bad.append(f"  {where}: note-on-order claims chapters {sorted(claimed)}, "
+                               f"but {book} actually has {sorted(actual)}")
+        for m in re.finditer(r"(?:next in sequence is|el siguiente en orden es) (" +
+                             "|".join(re.escape(n) for n in names) + r") (\d+)", u):
+            ref = (es_to_en.get(m.group(1), m.group(1)), int(m.group(2)))
+            if ref in shipped:
+                bad.append(f"  {where}: says next in sequence is {ref[0]} {ref[1]}, but it already shipped")
+
+    for slug, body in chapters.items():
+        scan(slug, body, f"{slug} (en)")
+    for slug, body in _es_panels().items():
+        scan(slug, body, f"{slug} (es)")
+    if bad:
+        raise SystemExit("FORWARD-CLAIMS CHECK FAILED — a page's claim about the rest of the site went stale:\n"
+                         + "\n".join(sorted(set(bad)))
+                         + "\n(update the claiming page: flip 'not yet' to a link, or refresh its note-on-order)")
+
+
+def check_local_anchors(chapters):
+    """Every href=\"#x\" inside a chapter must resolve to an id=\"x\" in that same
+    chapter. Added 2026-08-07 after a review audit found verses whose 'note' links
+    pointed at note ids that never existed — shipped live, in BOTH languages, in
+    John 6, Mark 4–5, Exodus 15/18, Ephesians 2 and Revelation 6/8 (the verse
+    was grouped under a note named for the group's FIRST verse, but the verse's
+    own number was used in the href). Dead links, invisible to every other guard."""
+    bad = []
+    for corpus, tag in ((chapters, "en"), (_es_panels(), "es")):
+        for slug, body in corpus.items():
+            ids = set(re.findall(r'id="([^"]+)"', body))
+            for a in re.findall(r'href="#([^"]+)"', body):
+                if a not in ids:
+                    bad.append(f"  {slug} ({tag}): href #%s resolves to nothing in the chapter" % a)
+    if bad:
+        raise SystemExit("LOCAL-ANCHOR CHECK FAILED — links that go nowhere:\n"
+                         + "\n".join(sorted(set(bad)))
+                         + "\n(point each verse's note-link at the note that actually contains it)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
@@ -5734,6 +5850,8 @@ def main():
     check_seo(chapters)
     check_entry_seo()
     check_sblgnt_sigla(chapters)
+    check_forward_claims(chapters)
+    check_local_anchors(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
     build_chapter_pages(chapters)
