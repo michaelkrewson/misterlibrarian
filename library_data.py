@@ -713,7 +713,7 @@ DICTIONARY = [
     ("matteh", "matteh", "מַטֶּה", "matteh",
      "A tribe — but the word's plain meaning is a STAFF, a rod, a branch (from natah, 'to stretch out, extend'). Israel's tribes are 'staffs': shoots off the one stock of Jacob, each a branch of the family tree, and each led by a man holding a chief's staff. Numbers prefers matteh where Genesis often used shevet (also 'rod/tribe'); the picture is the same — a people that is one tree with twelve branches.", ("Numbers", 1, 4)),
     ("tsava", "tsava", "צָבָא", "tsava",
-     "A host, an army — massed ranks for war (Numbers 1:3, 'all who go out to the tsava'). The census is a military muster: everyone counted is a soldier. The same word makes the divine title 'Jehovah of HOSTS' (the armies of heaven), and names the 'host of heaven' — sun, moon, and stars arrayed like troops. For the Levites the tsava is redefined: their 'service/warfare' is the tabernacle, not the battlefield (Numbers 4:23).", ("Numbers", 1, 3)),
+     "An army — massed ranks for war (Numbers 1:3, 'all who go out to the tsava'). The census is a military muster: everyone counted is a soldier. The same word makes the divine title 'Jehovah of ARMIES' (traditionally 'of hosts' — see the fuller discussion at tzeva'ot), and names the 'army of heaven' — sun, moon, and stars arrayed like troops. For the Levites the tsava is redefined: their 'service/warfare' is the tabernacle, not the battlefield (Numbers 4:23).", ("Numbers", 1, 3)),
     ("gulgolet", "gulgolet", "גֻּלְגֹּלֶת", "gulgolet",
      "A skull, a head — the census counts 'by their gulgolot,' head by head, each person reckoned singly (Numbers 1:2, 18; KJV 'by their polls'). The word for a rounded skull gives us, through Aramaic Gulgalta and Latin Calvaria, the two names of one hill: GOLGOTHA, 'the place of the skull' (Matthew 27:33). Every head is numbered and known — the same word that tallies an army will one day name a place of execution outside Jerusalem.", ("Numbers", 1, 2)),
     ("el-olam", "El Olam", "אֵל עוֹלָם", "El Olam",
@@ -871,7 +871,7 @@ DICTIONARY = [
     ("shaal", "sha'al", "שָׁאַל", "sha'al",
      "TO ASK, request — and, in a special sense, to LEND or give on loan. The verb generates the whole naming of 1 Samuel: Hannah 'ASKED' Samuel of Jehovah (1:20), and then 'LENT' him back — 'he is SHA'UL (lent/asked) to Jehovah' (1:28). ⚠️ The narrator's folk-etymology links the name SAMUEL to sha'al, though the name more likely means 'name of God' or 'God has heard'; and the wordplay reaches past Samuel to SAUL (Sha'ul, 'the asked-for one'), the king a people will 'ask' for (ch 8). One root quietly names the prophet, the gift, and the whole book's theme.", ("1 Samuel", 1, 20)),
     ("tzevaot", "tzeva'ot", "צְבָאוֹת", "tzeva'ot",
-     "HOSTS, armies — the plural in the divine title YHWH TZEVA'OT, 'Jehovah of hosts' (or 'of armies'), which makes its FIRST appearance in the Bible at 1 Samuel 1:3, on the lips of Elkanah's family at Shiloh. The 'hosts' are the armies of heaven and earth, the whole marshaled power of creation, of which Jehovah is commander. The title then rings through the prophets and the Psalms as the name of the God who fights for his people — and it enters, fittingly, at a sanctuary, in an act of worship.", ("1 Samuel", 1, 3)),
+     "ARMIES — the plural in the divine title YHWH TZEVA'OT, 'Jehovah of Armies,' which makes its FIRST appearance in the Bible at 1 Samuel 1:3, on the lips of Elkanah's family at Shiloh. The 'armies' are the armies of heaven and earth, the whole marshaled power of creation, of which Jehovah is commander. ⚠ English tradition renders this 'Jehovah of HOSTS' — 'host' once meant exactly 'army' (the word survives in that sense in 'hostile' and 'hostage'), but ordinary modern English has let the meaning drift almost entirely away, leaving a reader more likely to hear 'a large quantity' or even 'one who hosts a gathering' than 'commander of armed troops.' This translation follows NWT's own 2013 revision ('Jehovah of Armies') on the same reasoning behind every other place this project prefers a plainer word to a fossilized one: tsava itself never grew vague — only the English gloss for it did. The title then rings through the prophets and the Psalms as the name of the God who fights for his people — and it enters, fittingly, at a sanctuary, in an act of worship.", ("1 Samuel", 1, 3)),
     ("neder", "neder", "נֶדֶר", "neder",
      "A VOW — a binding promise made to God, often conditional ('if you will… then I will'). Hannah 'vowed a vow' (nadrah neder, 1:11): if Jehovah gives her a son she will give him back for life. The Law treats a vow with the utmost seriousness — 'when you make a vow to God, do not delay to fulfill it' (Deuteronomy 23:21; Ecclesiastes 5:4) — and Hannah keeps hers to the letter, carrying the weaned child to Shiloh and leaving him there.", ("1 Samuel", 1, 11)),
     ("nazir", "nazir", "נָזִיר", "nazir",
@@ -1008,8 +1008,8 @@ DICTIONARY = [
      "KNOWLEDGE, understanding — from yada, 'to know.' ⚠ A LATE word: it occurs only a handful of times in the Hebrew Bible, and all of them (Chronicles, Ecclesiastes, Daniel) are books whose Hebrew belongs to the Persian period or after — one of the small pieces of evidence for dating Chronicles late. At 2 Chronicles 1:10 Solomon asks for chokhmah u-madda, 'wisdom and knowledge,' where the parallel at 1 Kings 3:9 has him ask for a LISTENING HEART to discern good and evil: moral discernment in one book, administrative competence in the other. In modern Hebrew madda is the ordinary word for SCIENCE.", ("2 Chronicles", 1, 10)),
     ("bamah", "bamah", "בָּמָה", "bamah",
      "HIGH PLACE — a raised open-air sanctuary, the ordinary form of worship in Canaan and in Israel before the temple. The book of Kings condemns them relentlessly and judges nearly every king by whether he removed them. ⚠ 2 Chronicles 1:3 handles the awkward fact that Solomon sacrificed at the high place at GIBEON by explaining what Kings never does: the tent of meeting Moses made was there, with Bezalel's bronze altar in front of it. Whether that is older information or the Chronicler's defence of a beloved king is a real question; the library does not vote.", ("2 Chronicles", 1, 3)),
-    ("alah", "alah", "עָלָה", "alah",
-     "To GO UP — and in the books of the return it is the technical word for making the journey from Babylonia to Jerusalem, which is uphill in every sense (the road climbs, and one 'goes up' to a sanctuary). ⚠ It carries extraordinary weight: 'let him GO UP' (ve-ya'al) is the LAST WORD OF THE HEBREW BIBLE, since Chronicles closes the canon and breaks off mid-sentence on Cyrus's decree — the sentence Ezra 1:3 then finishes. It is also the last clause of Ezra 1 ('Sheshbazzar brought up… when the exiles were brought up'), and it survives in modern Hebrew as ALIYAH, immigration to Israel.", ("Ezra", 1, 3)),
+    ("alah", "alah (go up)", "עָלָה", "alah",
+     "To GO UP — and in the books of the return it is the technical word for making the journey from Babylonia to Jerusalem, which is uphill in every sense (the road climbs, and one 'goes up' to a sanctuary). ⚠ It carries extraordinary weight: 'let him GO UP' (ve-ya'al) is the LAST WORD OF THE HEBREW BIBLE, since Chronicles closes the canon and breaks off mid-sentence on Cyrus's decree — the sentence Ezra 1:3 then finishes. It is also the last clause of Ezra 1 ('Sheshbazzar brought up… when the exiles were brought up'), and it survives in modern Hebrew as ALIYAH, immigration to Israel. Unrelated to the alah spelled with an alef, 'curse,' met at Zechariah 5:3 — same English transliteration, different root entirely.", ("Ezra", 1, 3)),
     ("kelim", "kelim", "כֵּלִים", "kelim",
      "VESSELS, implements — the temple's gold and silver service, and one of the few physical objects whose whole story the Bible tells. Nebuchadnezzar carries them off to the treasure house of his god (Daniel 1:2; 2 Kings 25); Belshazzar drinks wine from them at his last feast and sees the writing on the wall (Daniel 5); and here Cyrus has them counted out of that same temple and sent home (Ezra 1:7-11). They are what survives the catastrophe intact — returned, like everything else in this book, by inventory.", ("Ezra", 1, 7)),
     ("nedavah", "nedavah", "נְדָבָה", "nedavah",
@@ -1289,6 +1289,15 @@ DICTIONARY = [
      "THE TWO-DRACHMA and THE FOUR-DRACHMA. The didrachmon was the annual half-shekel every Israelite male owed toward the temple's upkeep (Exodus 30:11-16) — about two days' wages, and NOT Roman tribute, which is what makes Jesus' argument in Matthew 17:25-26 work: it is his own Father's house being taxed. The statēr found in the fish's mouth is a tetradrachm, four drachmas — exactly two didrachmas, the tax for two men, 'for me and for you,' to the coin. ⚠ The shelf scatters: KJV's 'a piece of money' tells the reader nothing, ASV reads 'a shekel,' NWT transliterates 'a stater,' NIV explains it as 'a four-drachma coin.' The precision IS the point, so this translation keeps the coin and puts the arithmetic in the note. Only Matthew — the Gospel that begins its author's story at a tax booth — records the episode at all.", ("Matthew", 17, 24)),
     ("apokathistemi", "apokathistēmi", "ἀποκαθίστημι", "apokathistēmi",
      "To RESTORE — to set a thing back as it was. Jesus grants the scribes their doctrine with it: 'Elijah does come, and will RESTORE all things' (Matthew 17:11), which is Malachi's promise that the returning Elijah will 'turn the hearts of fathers to their children' (Malachi 3:23-24 Hebrew / 4:5-6 English). ⚠ The verb has a quiet second career: it is what the disciples ask about in Acts 1:6 ('are you at this time RESTORING the kingdom to Israel?'), and its noun apokatastasis is Acts 3:21's 'the restoration of all things' — a phrase later theology has argued over for centuries. In the Gospels it is also the plain medical word for a hand or an eye put back to working order (Mark 3:5).", ("Matthew", 17, 11)),
+    # ---- Zechariah 5 (Hebrew) ----
+    ("alah-curse", "alah (curse)", "אָלָה", "alah",
+     "A CURSE — specifically an oath-curse, a formal imprecation invoked to enforce a covenant or an accusation. Spelled with an alef, and no relation at all to the unrelated alah spelled with an ayin, 'to go up' (the ALIYAH word, already met elsewhere in this project) — two different Hebrew roots that happen to romanize identically. The sworn curse of a covenant-breaker (Deuteronomy 29:19-20, not yet on these pages) and, at Zechariah 5:3, an entire flying scroll's worth of it, unrolled over the whole land against thieves and false swearers alike.", ("Zechariah", 5, 3)),
+    ("eiphah", "eiphah", "אֵיפָה", "eiphah",
+     "An EPHAH — an ordinary dry-goods measuring basket, roughly a bushel, a tenth of a homer. Amos condemns merchants for shrinking it ('making the eiphah small,' Amos 8:5, not yet on these pages) — the standard unit every marketplace transaction was weighed against. At Zechariah 5:6-11 it becomes a vision-prop far too small to literally hold what is inside it: a seated woman, sealed under a lead weight and flown off bodily between earth and heaven — scale answering to the vision's own logic rather than to an actual bushel basket.", ("Zechariah", 5, 6)),
+    ("rishah", "rishah", "רִשְׁעָה", "rish'ah",
+     "WICKEDNESS — the feminine abstract noun, built on the same root as rasha, 'the wicked (one),' the Psalms' standing foil for the righteous. At Zechariah 5:8 it is personified outright and given a body: 'this is Wickedness,' the angel says of the woman sealed inside the flying measuring-basket — an abstraction made small enough to shove down, seal shut, and fly out of the land entirely.", ("Zechariah", 5, 8)),
+    ("chasidah", "chasidah", "חֲסִידָה", "chasidah",
+     "STORK — built directly on chesed, covenant loyalty and lovingkindness: the bird's own name means 'the pious one' or 'the kind one,' for how attentively storks are seen tending their young. Yet Torah's dietary law lists the chasidah among the UNCLEAN birds regardless (Leviticus 11:19, not yet on these pages) — its scavenging diet earning the label despite the name. At Zechariah 5:9 two women with stork-wings carry Wickedness out of the land, a bird whose own name and status disagree with each other doing the carrying.", ("Zechariah", 5, 9)),
     # ---- Zechariah 4 (Hebrew) ----
     ("gullah", "gullah", "גֻּלָּה", "gullah",
      "A BOWL — specifically the reservoir bowl set atop Zechariah's vision-lampstand, feeding oil down through pipes to its seven lamps (4:2-3) — a gravity-fed design with no human hand shown refilling it, unlike the tabernacle menorah of Exodus 25 (not yet on these pages), which the priests topped up by hand every evening. The same root elsewhere names a natural spring or basin (Achsah's request for gullot mayim, 'springs of water,' Joshua 15:19) — the image throughout is a self-replenishing source, not a static container.", ("Zechariah", 4, 2)),
@@ -4252,7 +4261,7 @@ ENCYCLOPEDIA = [
     dict(slug="shiloh", name="Shiloh (the sanctuary)", kind="place", aliases=["Shiloh"],
          desc="A town in the hill country of EPHRAIM, north of Bethel, that was Israel's central sanctuary through "
               "the whole period of the Judges: here the tabernacle and the ark of the covenant stood (Joshua 18:1), "
-              "and here Israel came up to worship 'Jehovah of hosts' (1 Samuel 1:3). It is the setting of Hannah's "
+              "and here Israel came up to worship 'Jehovah of armies' (1 Samuel 1:3). It is the setting of Hannah's "
               "vow and the boyhood of Samuel — and it falls when the ark is captured in battle (ch 4), a loss the "
               "prophet Jeremiah invokes as a warning to a later generation trusting in the Jerusalem temple: 'go to "
               "my place that was in Shiloh… and see what I did to it' (Jeremiah 7:12). ⚠️ And invoking it nearly got "
@@ -5478,6 +5487,8 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Zechariah 5 ----
+    (("Zechariah", 5, 11), ("Genesis", 11, 2), "the same plain, Shinar — where an earlier generation built a tower 'with its top in the sky,' now the destination built for personified Wickedness to be installed on her own pedestal"),
     # ---- Zechariah 4 ----
     (("Zechariah", 4, 10), ("Zechariah", 3, 9), "the identical seven-eyes image, first engraved on the single stone, now named outright as Jehovah's own oversight ranging through the whole earth"),
     (("Zechariah", 4, 14), ("Zechariah", 3, 7), "the 'two sons of oil' left unnamed here are Zerubbabel and Joshua the high priest — the same Joshua the previous vision just cleansed and offered free access among the angels"),
@@ -12008,6 +12019,38 @@ DICTIONARY_ES = {
         "apokatastasis es «la restauración de todas las cosas» de Hechos 3:21 — expresión sobre la que la "
         "teología posterior lleva siglos discutiendo. En los Evangelios es además la palabra médica llana "
         "para una mano o un ojo devueltos a su función (Marcos 3:5)."),
+    # ---- Zacarías 5 ----
+    "alah-curse": ("maldici&oacute;n",
+        "Una MALDICI&Oacute;N &mdash;concretamente una maldici&oacute;n jurada, una imprecaci&oacute;n formal "
+        "invocada para hacer cumplir un pacto o una acusaci&oacute;n. Se escribe con <em>alef</em>, y no tiene "
+        "ning&uacute;n parentesco con la palabra homloga <em>alah</em> escrita con <em>ayin</em>, &laquo;subir&raquo; "
+        "(la palabra de ALIY&Aacute;) &mdash;dos ra&iacute;ces hebreas distintas que casualmente se transliteran "
+        "igual. La maldici&oacute;n jurada de quien rompe un pacto (Deuteronomio 29:19-20, a&uacute;n no traducido "
+        "a estas p&aacute;ginas) y, en Zacar&iacute;as 5:3, todo un rollo volador lleno de ella, desenrollado "
+        "sobre toda la tierra contra ladrones y perjuros por igual."),
+    "eiphah": ("eif&aacute;",
+        "Una EIF&Aacute; &mdash;una canasta ordinaria para medir g&eacute;neros secos, m&aacute;s o menos un "
+        "cel&eacute;min, la d&eacute;cima parte de un &oacute;mer mayor. Am&oacute;s condena a los mercaderes por "
+        "achicarla (&laquo;achicando la eif&aacute;&raquo;, Am&oacute;s 8:5, a&uacute;n no traducido a estas "
+        "p&aacute;ginas) &mdash;la unidad est&aacute;ndar contra la que se pesaba cada transacci&oacute;n del "
+        "mercado. En Zacar&iacute;as 5:6-11 se convierte en un objeto de visi&oacute;n demasiado peque&ntilde;o "
+        "para contener literalmente lo que hay dentro: una mujer sentada, sellada bajo un peso de plomo y "
+        "transportada por el aire entre la tierra y el cielo &mdash;una escala que responde a la l&oacute;gica "
+        "propia de la visi&oacute;n, no a una canasta real."),
+    "rishah": ("maldad",
+        "MALDAD &mdash;el sustantivo abstracto femenino, construido sobre la misma ra&iacute;z que <em>rasha</em>, "
+        "&laquo;el malvado&raquo;, el contrapunto fijo del justo en los Salmos. En Zacar&iacute;as 5:8 se "
+        "personifica sin rodeos y se le da un cuerpo: &laquo;esta es la Maldad&raquo;, dice el &aacute;ngel de la "
+        "mujer sellada dentro de la canasta voladora de medir &mdash;una abstracci&oacute;n hecha lo bastante "
+        "peque&ntilde;a para empujarla hacia abajo, sellarla y sacarla volando de la tierra por completo."),
+    "chasidah": ("cig&uuml;e&ntilde;a",
+        "CIG&Uuml;E&Ntilde;A &mdash;construida directamente sobre <em>chesed</em>, lealtad de pacto y bondad "
+        "amorosa: el propio nombre del ave significa &laquo;la piadosa&raquo; o &laquo;la bondadosa&raquo;, por lo "
+        "atentamente que se ve a las cig&uuml;e&ntilde;as cuidar a sus cr&iacute;as. Y sin embargo la ley "
+        "diet&eacute;tica de la Tor&aacute; incluye a la <em>chasidah</em> entre las aves IMPURAS de todos modos "
+        "(Levítico 11:19, a&uacute;n no traducido a estas p&aacute;ginas) &mdash;su dieta carro&ntilde;era le gana "
+        "la etiqueta pese al nombre. En Zacar&iacute;as 5:9 dos mujeres con alas de cig&uuml;e&ntilde;a sacan a la "
+        "Maldad de la tierra, un ave cuyo propio nombre y estatus se contradicen haciendo el transporte."),
     # ---- Zacarías 4 ----
     "gullah": ("taz&oacute;n",
         "Un TAZ&Oacute;N &mdash;concretamente el taz&oacute;n de dep&oacute;sito puesto sobre el candelabro de la "
