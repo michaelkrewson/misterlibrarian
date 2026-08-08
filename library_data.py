@@ -56,6 +56,8 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('tzoim', "tzo'im", 'צֹאִים', "tzo'im", "FILTHY — one of the crudest words in Biblical Hebrew, built on a root elsewhere connected with human excrement, not ordinary dust or dirt. Every major English version softens it to 'filthy,' and this translation follows them in the main text, but the word itself is stronger than the English suggests: the high priest, whose garments Exodus required to be spotless before he could so much as enter the sanctuary, is shown in a courtroom vision dressed in something closer to waste than grime. The word appears only here in the whole Hebrew Bible with this specific form, describing Joshua's garments before the angel of Jehovah orders them removed.", ('Zechariah', 3, 3)),
+    ('machalatzot', 'machalatzot', 'מַחֲלָצוֹת', 'machalatzot', "FINE ROBES — a rare word, built on a root meaning 'to strip off' or 'to change,' so literally something closer to 'a change of garments' than 'clothing' in general. It occurs only twice in the whole Hebrew Bible: here, replacing the filthy garments stripped from the high priest Joshua, and in Isaiah 3:22 (not yet on these pages), in a list of fine women's finery about to be stripped away in judgment — the same rare word doing opposite work in the two passages, clothing given in one and clothing threatened in the other.", ('Zechariah', 3, 4)),
     ('qeren', 'qeren', 'קֶרֶן', 'qeren', "A HORN — literally an animal's horn, and by extension a standing symbol of STRENGTH or POWER, especially royal or military power (a king's or a nation's horn is 'exalted'; smashing one is the ancient shorthand for humbling it). Zechariah's second vision puts four of them onstage with no names attached — 'the horns that scattered Judah, Israel, and Jerusalem' (2:2), any and every power that has broken this people, without singling one out. ⚠ Later apocalyptic ties the same image to specific empires — each of Daniel's horns corresponds to a named kingdom (Daniel 8, not yet on these pages) — a sharper, historically anchored use of the identical symbol.", ('Zechariah', 2, 1)),
     ('chevel-middah', 'chevel middah', 'חֶבֶל מִדָּה', 'chevel middah', "A CORD OF MEASURE — literally 'a rope, a measurement': the surveyor's tool for measuring an AREA (a city's width and length, as here) rather than for laying one straight builder's line. ⚠ It is a different word from the qav Zechariah used just one chapter earlier — 'a measuring line stretched out over Jerusalem' for REBUILDING (1:16, see qav) — and the difference matters: chapter 1 promises the surveyor's cord of construction; chapter 2 sends it out to actually measure the city, only to discover the answer makes the whole project pointless (Jerusalem will outgrow any wall a fixed measurement could build, 2:8). Chevel is also the ordinary word for a rope and, elsewhere, for a tribal territory's allotted portion of land — one rope-word for measuring, and for inheriting.", ('Zechariah', 2, 5)),
     ('bavat-ayin', 'bavat ayin', 'בָּבַת עַיִן', 'bavat ayin', "THE PUPIL OF THE EYE — literally uncertain. Bavat occurs in the Hebrew Bible exactly once, and its own root is disputed: some derive it from a word for 'gate' or 'opening' (so, 'the gate of the eye'), others hear an imitative word for a tiny reflected image, the same idea behind Latin pupilla and English 'pupil' — a person's own small reflection seen in another's eye. ⚠ This is NOT the more common Old Testament idiom for the same body part — ishon, 'the little man of the eye' (e.g. Deuteronomy 32:10, Psalm 17:8, not yet on these pages) — a different word doing similar work. Both are usually flattened in English into the same borrowed idiom, 'the apple of the eye' (itself an old, unrelated figure of English speech — apples have nothing to do with either Hebrew word), which is why this translation reads the plainer, more defensible 'pupil' instead.", ('Zechariah', 2, 12)),
@@ -5467,6 +5469,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Zechariah 3 ----
+    (("Zechariah", 3, 1), ("Job", 1, 6), "the same titled figure, ha-satan WITH the definite article, standing in the identical divine-council courtroom scene — named in advance at Job 1's own note as exactly this passage"),
+    (("Zechariah", 3, 8), ("Jeremiah", 23, 5), "tsemach, 'the Branch,' gets its first bare appearance here as a title — 'my servant, the Branch' — after Jeremiah's fuller unveiling, 'a righteous Branch,' against the felled royal cedars of his own chapter 22"),
+    (("Zechariah", 3, 8), ("Luke", 1, 78), "anatole, the Greek Old Testament's word for this exact title, becomes 'the dawn from on high' in the mouth of a NT priest who happens to share this OT prophet's own name, seven centuries later"),
+    (("Zechariah", 3, 9), ("Revelation", 5, 6), "the identical count doing the identical work — seven eyes on Zechariah's stone, then seven eyes on the slain Lamb, both glossed as total, sent-out oversight of the whole earth"),
     # ---- Zechariah 2 ----
     (("Zechariah", 2, 5), ("Zechariah", 1, 16), "the qav promised for REBUILDING in chapter 1 is answered one chapter later by a different word, chevel middah, actually sent out to measure Jerusalem's real extent"),
     (("Zechariah", 2, 9), ("Exodus", 14, 22), "the fire itself is called a chomah, 'a wall' — the same word this project has already met as the standing masonry wall of a city, here naming fire the city's literal fortification"),
@@ -10866,6 +10873,24 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "tzoim": ("tzo'im",
+        "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
+        "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
+        "ordinaria. Toda versión española importante la suaviza a 'sucia', y esta traducción las "
+        "sigue en el texto principal, pero la palabra misma es más fuerte de lo que sugiere el "
+        "español: el sumo sacerdote, cuyas vestiduras Éxodo exigía impecables antes de que pudiera "
+        "siquiera entrar al santuario, aparece en una visión de tribunal vestido con algo más "
+        "cercano al desecho que a la mugre. La palabra aparece solo aquí en toda la Biblia hebrea "
+        "con esta forma exacta, describiendo las vestiduras de Josué antes de que el ángel de "
+        "Jehová ordene quitárselas."),
+    "machalatzot": ("machalatzot",
+        "ROPAS DE GALA — una palabra rara, construida sobre una raíz que significa 'quitar' o "
+        "'cambiar', así que literalmente algo más cercano a 'una muda de ropa' que a 'vestimenta' "
+        "en general. Aparece solo dos veces en toda la Biblia hebrea: aquí, reemplazando las "
+        "vestiduras sucias que le quitan al sumo sacerdote Josué, y en Isaías 3:22 (aún no "
+        "traducido a estas páginas), en una lista de finas galas femeninas a punto de ser "
+        "arrebatadas en juicio — la misma palabra rara haciendo el trabajo opuesto en los dos "
+        "pasajes, ropa entregada en uno y ropa amenazada en el otro."),
     "qeren": ("qeren",
         "UN CUERNO — literalmente el cuerno de un animal, y por extensión un símbolo fijo de FUERZA o "
         "PODER, especialmente el poder real o militar (el cuerno de un rey o de una nación se 'exalta'; "
