@@ -1289,6 +1289,15 @@ DICTIONARY = [
      "THE TWO-DRACHMA and THE FOUR-DRACHMA. The didrachmon was the annual half-shekel every Israelite male owed toward the temple's upkeep (Exodus 30:11-16) — about two days' wages, and NOT Roman tribute, which is what makes Jesus' argument in Matthew 17:25-26 work: it is his own Father's house being taxed. The statēr found in the fish's mouth is a tetradrachm, four drachmas — exactly two didrachmas, the tax for two men, 'for me and for you,' to the coin. ⚠ The shelf scatters: KJV's 'a piece of money' tells the reader nothing, ASV reads 'a shekel,' NWT transliterates 'a stater,' NIV explains it as 'a four-drachma coin.' The precision IS the point, so this translation keeps the coin and puts the arithmetic in the note. Only Matthew — the Gospel that begins its author's story at a tax booth — records the episode at all.", ("Matthew", 17, 24)),
     ("apokathistemi", "apokathistēmi", "ἀποκαθίστημι", "apokathistēmi",
      "To RESTORE — to set a thing back as it was. Jesus grants the scribes their doctrine with it: 'Elijah does come, and will RESTORE all things' (Matthew 17:11), which is Malachi's promise that the returning Elijah will 'turn the hearts of fathers to their children' (Malachi 3:23-24 Hebrew / 4:5-6 English). ⚠ The verb has a quiet second career: it is what the disciples ask about in Acts 1:6 ('are you at this time RESTORING the kingdom to Israel?'), and its noun apokatastasis is Acts 3:21's 'the restoration of all things' — a phrase later theology has argued over for centuries. In the Gospels it is also the plain medical word for a hand or an eye put back to working order (Mark 3:5).", ("Matthew", 17, 11)),
+    # ---- Zechariah 4 (Hebrew) ----
+    ("gullah", "gullah", "גֻּלָּה", "gullah",
+     "A BOWL — specifically the reservoir bowl set atop Zechariah's vision-lampstand, feeding oil down through pipes to its seven lamps (4:2-3) — a gravity-fed design with no human hand shown refilling it, unlike the tabernacle menorah of Exodus 25 (not yet on these pages), which the priests topped up by hand every evening. The same root elsewhere names a natural spring or basin (Achsah's request for gullot mayim, 'springs of water,' Joshua 15:19) — the image throughout is a self-replenishing source, not a static container.", ("Zechariah", 4, 2)),
+    ("koach", "koach", "כֹּחַ", "koach",
+     "POWER, strength, capacity — the general word, paired at Zechariah 4:6 with the sharper-edged chayil ('not by chayil, and not by koach, but by my spirit'). Where chayil leans military — an army, a force fielded — koach is ability itself: the power to act, to stand, to accomplish, with no particular weapon implied. Samson's koach is in his hair (Judges 16:5, not yet on these pages); a sick man's koach fails him (Psalm 71:9). Pairing the two words at Zechariah 4:6 covers the whole field of human capability, military and otherwise, and denies Zerubbabel both at once.", ("Zechariah", 4, 6)),
+    ("shibbolet", "shibbolet", "שִׁבֹּלֶת", "shibbolet",
+     "An EAR of grain — the head of a stalk of wheat or barley, and, by the same root, a flowing stream. Judges 12:6 turns the word into history's most famous shibboleth: fleeing Ephraimites, unable to produce the sh- sound, said sibboleth instead and were killed at the fords of the Jordan for the accent alone (not yet on these pages). Zechariah 4:12 stretches the same grain-word onto an OLIVE tree by analogy — shibbelei ha-zeitim, 'ears of the olives' — rendered 'olive branches' or 'twigs' in translation, since English has no botanical word that crosses grain and fruit-tree the way Hebrew's does here.", ("Zechariah", 4, 12)),
+    ("yitzhar", "yitzhar", "יִצְהָר", "yitzhar",
+     "FRESH, pressed oil — the harvest word, third of the standing grain-wine-oil triad (dagan, tirosh, yitzhar) that names the whole produce of the land in tithe and blessing texts (Deuteronomy 7:13, not yet on these pages). Deliberately NOT shemen, the word for the oil actually poured on a priest's or king's head at an anointing (Exodus 29:7, not yet on these pages) — a distinction most English versions erase at Zechariah 4:14's beney ha-yitzhar, 'sons of yitzhar,' printed as 'the two anointed ones' though no anointing verb or noun appears in the phrase at all. The image is vitality and abundance, not ceremony.", ("Zechariah", 4, 14)),
     # ---- Jeremiah 23 (Hebrew) ----
     ("tsemach", "tsemach", "צֶמַח", "tsemach",
      "A SPROUT, a shoot — what comes up out of the ground; from tsamach, 'to sprout.' The image is a cut stump putting out green: something small rising where something great was felled. Jeremiah promises David a tsemach tsaddiq, 'a righteous Sprout' (23:5), against the backdrop of a royal house whose cedars have just been cut down and burned (22:7). The word carries no Hebrew definite article in any of its three occurrences — here, at Zechariah 3:8 ('my servant, Sprout'), or at 6:12, where the text calls it a NAME outright ('Sprout is his name') — which is why this translation treats it as one, not a titled common noun, and it runs alongside Isaiah's netser, the 'shoot' from the stump of Jesse. English tradition prints 'Branch' (KJV, ASV, NIV all follow it), but NWT's 'sprout' keeps the plainer botany the verb actually gives — 'Branch' evokes a limb on a living tree, when the image is new growth from a stump. The same oracle is spoken a second time in Jeremiah 33, where the name it carries is given to the CITY instead of the man.", ("Jeremiah", 23, 5)),
@@ -5469,6 +5478,9 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Zechariah 4 ----
+    (("Zechariah", 4, 10), ("Zechariah", 3, 9), "the identical seven-eyes image, first engraved on the single stone, now named outright as Jehovah's own oversight ranging through the whole earth"),
+    (("Zechariah", 4, 14), ("Zechariah", 3, 7), "the 'two sons of oil' left unnamed here are Zerubbabel and Joshua the high priest — the same Joshua the previous vision just cleansed and offered free access among the angels"),
     # ---- Zechariah 3 ----
     (("Zechariah", 3, 1), ("Job", 1, 6), "the same titled figure, ha-satan WITH the definite article, standing in the identical divine-council courtroom scene — named in advance at Job 1's own note as exactly this passage"),
     (("Zechariah", 3, 8), ("Jeremiah", 23, 5), "tsemach, 'Sprout,' gets its first bare appearance here as a name — 'my servant, Sprout,' no article, matching the anarthrous Hebrew — after Jeremiah's fuller unveiling, 'a righteous Sprout,' against the felled royal cedars of his own chapter 22"),
@@ -11996,6 +12008,44 @@ DICTIONARY_ES = {
         "apokatastasis es «la restauración de todas las cosas» de Hechos 3:21 — expresión sobre la que la "
         "teología posterior lleva siglos discutiendo. En los Evangelios es además la palabra médica llana "
         "para una mano o un ojo devueltos a su función (Marcos 3:5)."),
+    # ---- Zacarías 4 ----
+    "gullah": ("taz&oacute;n",
+        "Un TAZ&Oacute;N &mdash;concretamente el taz&oacute;n de dep&oacute;sito puesto sobre el candelabro de la "
+        "visi&oacute;n de Zacar&iacute;as, que alimenta con aceite, a trav&eacute;s de tubos, sus siete l&aacute;mparas "
+        "(4:2-3)&mdash; un dise&ntilde;o alimentado por gravedad, sin ninguna mano humana rellen&aacute;ndolo, a "
+        "diferencia del candelabro del tabern&aacute;culo de &Eacute;xodo 25 (a&uacute;n no traducido a estas "
+        "p&aacute;ginas), que los sacerdotes rellenaban a mano cada noche. La misma ra&iacute;z nombra en otros "
+        "lugares un manantial o dep&oacute;sito natural &mdash;la petici&oacute;n de Acsa por <em>gullot mayim</em>, "
+        "&laquo;manantiales de agua&raquo; (Josu&eacute; 15:19)&mdash;: la imagen en todo caso es una fuente "
+        "autosuficiente, no un simple recipiente est&aacute;tico."),
+    "koach": ("poder, fuerza",
+        "PODER, fuerza, capacidad &mdash;la palabra general, emparejada en Zacar&iacute;as 4:6 con la m&aacute;s "
+        "afilada <em>chayil</em> (&laquo;no con ej&eacute;rcito, ni con fuerza, sino con mi esp&iacute;ritu&raquo;). "
+        "Donde <em>chayil</em> se inclina hacia lo militar &mdash;un ej&eacute;rcito, una fuerza desplegada&mdash;, "
+        "<em>koach</em> es la capacidad misma: el poder de actuar, de mantenerse en pie, de lograr algo, sin ningún "
+        "arma concreta implicada. El <em>koach</em> de Sans&oacute;n est&aacute; en su cabello (Jueces 16:5, a&uacute;n "
+        "no traducido a estas p&aacute;ginas); el <em>koach</em> de un enfermo lo abandona (Salmo 71:9). Emparejar "
+        "ambas palabras en Zacar&iacute;as 4:6 cubre todo el campo de la capacidad humana, militar y de cualquier "
+        "otro tipo, y se lo niega a Zorobabel de una sola vez."),
+    "shibbolet": ("espiga",
+        "Una ESPIGA de grano &mdash;la cabeza de un tallo de trigo o cebada, y, por la misma ra&iacute;z, una "
+        "corriente. Jueces 12:6 convierte la palabra en la contrase&ntilde;a m&aacute;s famosa de la historia: "
+        "efrainitas en fuga, incapaces de producir el sonido <em>sh-</em>, dec&iacute;an <em>sibbolet</em> en su "
+        "lugar y eran matados en los vados del Jord&aacute;n por el mero acento (a&uacute;n no traducido a estas "
+        "p&aacute;ginas). Zacar&iacute;as 4:12 estira la misma palabra de grano hasta un OLIVO por analog&iacute;a "
+        "&mdash;<em>shibbelei ha-zeitim</em>, &laquo;espigas de los olivos&raquo;&mdash;, traducida como &laquo;ramas "
+        "de olivo&raquo; en el texto, ya que el espa&ntilde;ol no tiene una sola palabra bot&aacute;nica que cruce "
+        "grano y &aacute;rbol frutal como lo hace aqu&iacute; el hebreo."),
+    "yitzhar": ("aceite fresco",
+        "Aceite FRESCO, reci&eacute;n prensado &mdash;la palabra de cosecha, tercer miembro de la tr&iacute;ada fija "
+        "grano-vino-aceite (<em>dagan, tirosh, yitzhar</em>) que nombra toda la producci&oacute;n de la tierra en "
+        "los textos de diezmo y bendici&oacute;n (Deuteronomio 7:13, a&uacute;n no traducido a estas p&aacute;ginas). "
+        "Deliberadamente NO es <em>shemen</em>, la palabra para el aceite realmente derramado sobre la cabeza de un "
+        "sacerdote o un rey en una unci&oacute;n (&Eacute;xodo 29:7, a&uacute;n no traducido a estas p&aacute;ginas) "
+        "&mdash;una distinci&oacute;n que la mayor&iacute;a de las versiones borra en <em>beney ha-yitzhar</em> de "
+        "Zacar&iacute;as 4:14, &laquo;hijos de yitzhar&raquo;, impreso como &laquo;los dos ungidos&raquo; aunque "
+        "ning&uacute;n verbo o sustantivo de unci&oacute;n aparece en la frase. La imagen es vitalidad y abundancia, "
+        "no ceremonia."),
     # ---- Jeremías 23 ----
     "tsemach": ("brote, renuevo",
         "Un BROTE, un retoño — lo que sube de la tierra; de tsamach, «brotar». La imagen es un tocón "
