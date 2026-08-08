@@ -370,6 +370,9 @@ DICTIONARY = [
     # ---- Exodus 23 (Hebrew) ----
     ("regalim", "regalim / chag", "רְגָלִים / חַג", "regalim / chag",
      "PILGRIMAGE FESTIVALS — literally 'foot-festivals,' from regel, 'foot': the three annual occasions requiring every Israelite male to appear before Jehovah in person (Exodus 23:14-17), the Torah's first calendar. Unleavened Bread (tied to the Exodus itself), Harvest (firstfruits of the grain, later called Shavuot/Pentecost), and Ingathering (at the year's end, later Sukkot/Tabernacles) — named here in outline, with the full ritual detail supplied only much later, at Leviticus 23 (not yet on these pages). The related noun chag, 'festival,' shares a root with the verb chagag, to circle or process — a pilgrimage word before it is a calendar word.", ("Exodus", 23, 14)),
+    # ---- Exodus 24 (Hebrew) ----
+    ("sefer", "sefer", "סֵפֶר", "sefer",
+     "BOOK, scroll — from a root meaning to count or recount. Its first use naming a portion of the Torah itself is here: Moses writes and reads aloud the 'sefer ha-brit,' the BOOK OF THE COVENANT (24:4, 7), before a single stone tablet has even been carved. The same word will later name the whole Torah as a single scroll (Deuteronomy 31:26) and, further on still, the prophetic scroll Ezekiel is made to eat (Ezekiel 2:9) — both not yet on these pages. From this verse forward, a written record is something the text can point to, read aloud, and hand over.", ("Exodus", 24, 7)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5487,6 +5490,10 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Exodus 24 ----
+    (("Exodus", 24, 8), ("Matthew", 26, 28), "Moses' exact words — 'behold the blood of the covenant' — picked up almost verbatim over a cup of wine at the Last Supper, roughly thirteen centuries later"),
+    (("Exodus", 24, 4), ("Genesis", 28, 18), "the same word, matzevah — Jacob's single memorial pillar at Bethel becomes twelve national ones here, one for every tribe descended from his own twelve sons"),
+    (("Exodus", 24, 11), ("Genesis", 32, 30), "the identical shocking claim — 'they beheld God' here, 'I have seen God face to face' at Peniel — both survive, and neither text explains why"),
     # ---- Zechariah 5 ----
     (("Zechariah", 5, 11), ("Genesis", 11, 2), "the same plain, Shinar — where an earlier generation built a tower 'with its top in the sky,' now the destination built for personified Wickedness to be installed on her own pedestal"),
     # ---- Zechariah 4 ----
@@ -10896,6 +10903,16 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    # ---- Éxodo 24 ----
+    "sefer": ("sefer",
+        "LIBRO, rollo — de una raíz que significa contar o relatar. Su primer uso nombrando una "
+        "porción de la Torá misma es aquí: Moisés escribe y lee en voz alta el 'sefer ha-brit', el "
+        "LIBRO DEL PACTO (24:4, 7), antes de que se haya labrado siquiera una sola tabla de piedra. "
+        "La misma palabra nombrará más adelante a la Torá entera como un solo rollo (Deuteronomio "
+        "31:26) y, más adelante todavía, el rollo profético que Ezequiel es obligado a comer "
+        "(Ezequiel 2:9) —ninguno de los dos todavía en estas páginas—. Desde este versículo en "
+        "adelante, un registro escrito es algo que el texto puede señalar, leer en voz alta, y "
+        "entregar."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
