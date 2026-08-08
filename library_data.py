@@ -382,6 +382,13 @@ DICTIONARY = [
      "The gold COVER of the ark (25:17-22), from kaphar, 'to cover, wipe away,' with a secondary sense 'to atone.' The familiar English 'mercy seat' is not a translation of this word — it is William Tyndale's 16th-century coinage, following Luther's German Gnadenstuhl, 'seat of grace.' The Septuagint's Greek hilastērion ('the thing that atones') and the Vulgate's Latin propitiatorium both keep the secondary atoning sense without inventing a piece of furniture the Hebrew never names. This translation renders the literal 'cover.'", ("Exodus", 25, 17)),
     ("lechem-panim", "lechem panim", "לֶחֶם פָּנִים", "lechem panim",
      "BREAD OF THE PRESENCE — literally 'bread of the face,' the twelve loaves kept perpetually on the golden table 'before me always' (25:30). KJV/ASV's archaic 'shewbread' ('shew' is 1611's spelling of 'show') describes the same loaves David eats at Nob and Jesus later cites by name (Matthew 12:3-4, already on these pages) to defend his disciples for plucking grain on the sabbath — bread set out for God's own sight becomes, a millennium later, legal precedent.", ("Exodus", 25, 30)),
+    # ---- Exodus 26 (Hebrew) ----
+    ("keresh", "keresh", "קֶרֶשׁ", "keresh",
+     "The structural upright of the tabernacle's walls (26:15-29) — KJV/ASV/NASB translate 'board', a solid plank standing edge to edge; NIV/ESV/NLT translate 'frame', an open lattice with the fabric curtains forming the visible wall. Both readings are defended and neither is settled: a solid acacia plank ten cubits tall would be extraordinarily heavy to carry, and would hide the cherubim-woven inner curtains (26:1) from the priests inside — the case for a frame. This translation keeps the traditional 'board'.", ("Exodus", 26, 15)),
+    ("parochet-masakh", "parochet / masakh", "פָרֹכֶת / מָסָךְ", "parochet / masakh",
+     "Two Hebrew nouns for two distinct tabernacle hangings, easily conflated in translation and in the Greek text that later reports one of them torn. The PAROCHET (26:31-33) is the inner VEIL, woven with cherubim, dividing the holy place from the most holy — where the ark itself stands. The MASAKH (26:36-37) is the outer SCREEN at the tent's public door, plainer, embroidered but carrying no cherubim. The Septuagint translates both with the same Greek word, katapetasma — which is why Matthew 27:51 ('the curtain of the sanctuary was torn in two,' already on these pages) genuinely cannot specify which of the two is meant.", ("Exodus", 26, 31)),
+    ("choshev-rokem", "choshev / rokem", "חֹשֵׁב / רֹקֵם", "choshev / rokem",
+     "Two Hebrew craft-terms for two different textile techniques, per the Talmud (Yoma 72b) and later commentators: ma'aseh CHOSHEV ('the work of a designer', 26:1, 31) is woven so the pattern reads identically on both faces of the fabric; ma'aseh ROKEM ('the work of an embroiderer', 26:36) is stitched onto one face only, the reverse left plain. The distinction tracks which tabernacle curtains carry cherubim (choshev-work: the inner lining and the veil) and which do not (rokem-work: the outer screen) — the more expensive, two-sided weave reserved for what lies deepest inside the structure.", ("Exodus", 26, 1)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5499,6 +5506,8 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Exodus 26 ----
+    (("Exodus", 26, 33), ("Matthew", 27, 51), "the very curtain — or possibly its plainer outer neighbor, since Greek collapses both Hebrew names into one word — torn top to bottom at the moment Jesus dies, roughly thirteen centuries after this chapter first hung it"),
     # ---- Exodus 25 ----
     (("Exodus", 25, 30), ("Matthew", 12, 3), "the bread kept perpetually on this table is the exact bread David eats at Nob when he flees Saul — the precedent Jesus cites by name to defend his disciples for plucking grain on the sabbath"),
     (("Exodus", 25, 32), ("Zechariah", 4, 2), "the same seven-lamp, solid-gold lampstand, seen again roughly nine hundred years later — but Zechariah's has grown an automatic oil supply this one still needs a human hand to light"),
@@ -10963,6 +10972,34 @@ DICTIONARY_ES = {
         "período y el patrón usado, pero una aproximación común son unos 34 kilogramos (unas 75 "
         "libras) —la mayor unidad de peso de la Biblia, sea cual sea el objeto suficientemente "
         "redondo para llevar su nombre."),
+    # ---- Éxodo 26 ----
+    "keresh": ("keresh",
+        "El elemento vertical que forma los muros del tabernáculo (26:15-29) —las versiones "
+        "clásicas, entre ellas la Reina-Valera 1909, traducen 'tabla', una plancha sólida puesta de "
+        "canto junto a otra; muchas versiones modernas, entre ellas la Traducción del Nuevo Mundo "
+        "('armazones rectangulares'), traducen en cambio una estructura abierta, un marco tipo "
+        "escalera con la tela formando el muro visible. Ninguna de las dos lecturas está resuelta: "
+        "una plancha sólida de acacia de diez codos de alto sería enormemente pesada de cargar por "
+        "el desierto, y un muro sólido ocultaría a los sacerdotes las cortinas tejidas con "
+        "querubines que 26:1 describe con tanto detalle —el argumento a favor del marco. Esta "
+        "traducción conserva la lectura tradicional, 'tabla'."),
+    "parochet-masakh": ("parochet / masakh",
+        "Dos sustantivos hebreos para dos telas distintas del tabernáculo, fáciles de confundir en "
+        "traducción y en el griego que más tarde relata una de ellas rasgada. El PAROCHET (26:31-33) "
+        "es el VELO interior, tejido con querubines, que separa el lugar santo del santísimo —donde "
+        "está el arca misma. El MASAKH (26:36-37) es la CORTINA exterior, en la puerta pública de la "
+        "tienda, más sencilla, bordada pero sin querubines. La Septuaginta traduce ambas palabras "
+        "con el mismo término griego, katapétasma —por lo cual Mateo 27:51 ('la cortina del "
+        "santuario se rasgó en dos', ya en estas páginas) genuinamente no puede precisar cuál de "
+        "las dos se refiere."),
+    "choshev-rokem": ("choshev / rokem",
+        "Dos términos hebreos de oficio para dos técnicas textiles distintas, según el Talmud (Yoma "
+        "72b) y comentaristas posteriores: la obra de un CHOSHEV ('diseñador hábil', 26:1, 31) se "
+        "teje de modo que el dibujo se ve igual en ambas caras de la tela; la obra de un ROKEM "
+        "('bordador', 26:36) se cose sobre una sola cara, dejando el reverso liso. La distinción "
+        "marca qué cortinas del tabernáculo llevan querubines (obra choshev: el forro interior y el "
+        "velo) y cuáles no (obra rokem: la cortina exterior) —el tejido de doble cara, más costoso, "
+        "reservado para lo que está más adentro de la estructura."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
