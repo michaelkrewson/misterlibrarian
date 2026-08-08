@@ -835,7 +835,7 @@ DICTIONARY = [
     ("tapeinosis", "tapeinosis", "ταπείνωσις", "tapeinosis",
      "LOW ESTATE, lowliness, humiliation — a lowly CONDITION, not humility as a virtue. In the Magnificat God 'looked on the TAPEINOSIS of his bondslave' (1:48), the very word Hannah's Greek song uses (1 Samuel 1:11). Luke's point is that God NOTICES the low place and then reverses it; the song spells the reversal out — rulers pulled down, the lowly lifted, the hungry filled, the rich sent empty away.", ("Luke", 1, 48)),
     ("anatole", "anatole", "ἀνατολή", "anatole",
-     "RISING / DAWN — and, in the Greek Old Testament, the messianic BRANCH. Zechariah's song says 'the ANATOLE from on high will visit us' (1:78). The word means the rising of the sun (light dawning on those in darkness, Isaiah 9:2) AND the 'Branch/shoot' promised to spring from David (Jeremiah 23:5; Zechariah 3:8; 6:12, where the Greek Bible uses this very word). Zechariah's ears would catch both at once: a sunrise and a sprouting Branch. ⚠️ No single English word holds both, so the versions split — 'dayspring' (KJV), 'sunrise' (ESV), 'daybreak' (NWT). ⚠ Matthew 2 turns on the plainest sense: the magi saw the star <em>en tē anatolē</em> (2:2, 9) — 'in the east', or, since the phrase is singular with the article and is technical in Greek astronomical writing, 'at its RISING', a star's first reappearance in the dawn sky. The versions split three ways there (KJV 'in the east'; ASV 'in the east' with a margin 'at its rising'; NIV 'when it rose'; NWT 'when we were in the east'). And there is a quiet resonance: the Greek Bible's word for the messianic BRANCH is the same word — which is the very image, Hebrew <em>netser</em>, that the oldest reading of Matthew's closing 'he shall be called a Nazarene' (2:23) depends on.", ("Luke", 1, 78)),
+     "RISING / DAWN — and, in the Greek Old Testament, the messianic figure this project renders SPROUT. Zechariah's song says 'the ANATOLE from on high will visit us' (1:78). The word means the rising of the sun (light dawning on those in darkness, Isaiah 9:2) AND the 'Sprout/shoot' promised to spring from David (Jeremiah 23:5; Zechariah 3:8; 6:12, where the Greek Bible uses this very word). Zechariah's ears would catch both at once: a sunrise and a springing Sprout. ⚠️ No single English word holds both, so the versions split — 'dayspring' (KJV), 'sunrise' (ESV), 'daybreak' (NWT). ⚠ Matthew 2 turns on the plainest sense: the magi saw the star <em>en tē anatolē</em> (2:2, 9) — 'in the east', or, since the phrase is singular with the article and is technical in Greek astronomical writing, 'at its RISING', a star's first reappearance in the dawn sky. The versions split three ways there (KJV 'in the east'; ASV 'in the east' with a margin 'at its rising'; NIV 'when it rose'; NWT 'when we were in the east'). And there is a quiet resonance: the Greek Bible's word for the messianic Sprout is the same word — which is the very image, Hebrew <em>netser</em>, that the oldest reading of Matthew's closing 'he shall be called a Nazarene' (2:23) depends on.", ("Luke", 1, 78)),
     ("dabaq", "davaq", "דָּבַק", "davaq",
      "TO CLING, cleave, stick fast — the verb of Genesis 2:24, where a man 'clings' to his wife and the two become one flesh. In Ruth 1:14 it is used of RUTH clinging to Naomi where Orpah kisses and leaves: Ruth's loyalty to her mother-in-law is written in marriage language, a woman cleaving as a spouse cleaves. The same root is used of Israel commanded to 'cling' to Jehovah (Deuteronomy 10:20).", ("Ruth", 1, 14)),
     ("menuchah", "menuchah", "מְנוּחָה", "menuchah",
@@ -1291,7 +1291,7 @@ DICTIONARY = [
      "To RESTORE — to set a thing back as it was. Jesus grants the scribes their doctrine with it: 'Elijah does come, and will RESTORE all things' (Matthew 17:11), which is Malachi's promise that the returning Elijah will 'turn the hearts of fathers to their children' (Malachi 3:23-24 Hebrew / 4:5-6 English). ⚠ The verb has a quiet second career: it is what the disciples ask about in Acts 1:6 ('are you at this time RESTORING the kingdom to Israel?'), and its noun apokatastasis is Acts 3:21's 'the restoration of all things' — a phrase later theology has argued over for centuries. In the Gospels it is also the plain medical word for a hand or an eye put back to working order (Mark 3:5).", ("Matthew", 17, 11)),
     # ---- Jeremiah 23 (Hebrew) ----
     ("tsemach", "tsemach", "צֶמַח", "tsemach",
-     "A SPROUT, a shoot — what comes up out of the ground; from tsamach, 'to sprout.' The image is a cut stump putting out green: something small rising where something great was felled. Jeremiah promises David a tsemach tsaddiq, a 'righteous Branch' (23:5), against the backdrop of a royal house whose cedars have just been cut down and burned (22:7). By the post-exilic prophets it has hardened into an outright title — Zechariah's 'my servant, the BRANCH' (3:8) and 'a man whose name is Branch' (6:12) — and it runs alongside Isaiah's netser, the 'shoot' from the stump of Jesse. English keeps 'Branch' by tradition, though NWT's 'sprout' is the more exact botany. The same oracle is spoken a second time in Jeremiah 33, where the name it carries is given to the CITY instead of the man.", ("Jeremiah", 23, 5)),
+     "A SPROUT, a shoot — what comes up out of the ground; from tsamach, 'to sprout.' The image is a cut stump putting out green: something small rising where something great was felled. Jeremiah promises David a tsemach tsaddiq, 'a righteous Sprout' (23:5), against the backdrop of a royal house whose cedars have just been cut down and burned (22:7). The word carries no Hebrew definite article in any of its three occurrences — here, at Zechariah 3:8 ('my servant, Sprout'), or at 6:12, where the text calls it a NAME outright ('Sprout is his name') — which is why this translation treats it as one, not a titled common noun, and it runs alongside Isaiah's netser, the 'shoot' from the stump of Jesse. English tradition prints 'Branch' (KJV, ASV, NIV all follow it), but NWT's 'sprout' keeps the plainer botany the verb actually gives — 'Branch' evokes a limb on a living tree, when the image is new growth from a stump. The same oracle is spoken a second time in Jeremiah 33, where the name it carries is given to the CITY instead of the man.", ("Jeremiah", 23, 5)),
     ("sod", "sod", "סוֹד", "sod",
      "A CLOSED CIRCLE — the confidential session, the inner deliberation, and by extension the secret discussed there. Jeremiah's test for a prophet is entirely built on it: 'who has stood in the sod of Jehovah?' (23:18), and 'if they had stood in my sod, they would have turned my people back' (23:22). Scripture only ever glimpses that circle — the sons of God presenting themselves with the Adversary among them (Job 1:6), Micaiah seeing the host of heaven debating who will entice Ahab (1 Kings 22:19-22), Amos's flat rule that God does nothing without disclosing his sod to the prophets (3:7). KJV renders it 'counsel,' ASV 'council,' NWT 'the intimate group'; the word is a ROOM, not an opinion. Its ordinary human sense is the same: the huddle of friends (Psalm 55:14), or the gossip that leaks out of one (Proverbs 11:13).", ("Jeremiah", 23, 18)),
     ("naveh", "naveh", "נָוֶה", "naveh",
@@ -3913,7 +3913,7 @@ ENCYCLOPEDIA = [
               "book's darkest sentence: his sons killed before his eyes, then his eyes put out — the last "
               "thing he ever saw (39:6-7). ⚠ And his name is doing work he did not choose. Mattaniah was "
               "renamed TSIDQIYAHU, 'Yah is my righteousness'; while he sat on that throne Jeremiah announced "
-              "a coming Branch whose name would be YHVH TSIDQENU, 'Jehovah is OUR righteousness' (23:6) — the "
+              "a coming Sprout whose name would be YHVH TSIDQENU, 'Jehovah is OUR righteousness' (23:6) — the "
               "same two elements re-set, the divine name moved to the front and 'my' replaced by 'our.' The "
               "throne-name of Judah's last king is picked up, corrected, and handed to someone else.",
          refs=[("Jeremiah", 21, 1), ("Jeremiah", 21, 7), ("Jeremiah", 24, 8)], videos=[]),
@@ -5284,7 +5284,7 @@ ENCYCLOPEDIA = [
               "at the fall of Jerusalem (2 Kings 25:18-21) and son of Jehozadak, who was carried to Babylon (1 Chronicles "
               "6:15) — so the high-priestly line, like the royal one, comes home out of exile in his person. Zechariah, "
               "Haggai's contemporary, gives him two visions: stripped of filthy garments and re-clothed with a clean "
-              "turban (Zechariah 3), and crowned as a sign of 'the Branch' who will build the temple (Zechariah 6). Ezra "
+              "turban (Zechariah 3), and crowned as a sign of 'Sprout' who will build the temple (Zechariah 6). Ezra "
               "and Nehemiah spell his name JESHUA. ⚠ He is NOT Joshua son of Nun, the conqueror — a different man five "
               "centuries later — which is why this entry never answers to the bare name 'Joshua.'",
          refs=[("Haggai", 1, 1), ("Haggai", 1, 12), ("Haggai", 1, 14)], videos=[]),
@@ -5471,8 +5471,8 @@ LINK_OVERRIDES = [
 XREFS = [
     # ---- Zechariah 3 ----
     (("Zechariah", 3, 1), ("Job", 1, 6), "the same titled figure, ha-satan WITH the definite article, standing in the identical divine-council courtroom scene — named in advance at Job 1's own note as exactly this passage"),
-    (("Zechariah", 3, 8), ("Jeremiah", 23, 5), "tsemach, 'the Branch,' gets its first bare appearance here as a title — 'my servant, the Branch' — after Jeremiah's fuller unveiling, 'a righteous Branch,' against the felled royal cedars of his own chapter 22"),
-    (("Zechariah", 3, 8), ("Luke", 1, 78), "anatole, the Greek Old Testament's word for this exact title, becomes 'the dawn from on high' in the mouth of a NT priest who happens to share this OT prophet's own name, seven centuries later"),
+    (("Zechariah", 3, 8), ("Jeremiah", 23, 5), "tsemach, 'Sprout,' gets its first bare appearance here as a name — 'my servant, Sprout,' no article, matching the anarthrous Hebrew — after Jeremiah's fuller unveiling, 'a righteous Sprout,' against the felled royal cedars of his own chapter 22"),
+    (("Zechariah", 3, 8), ("Luke", 1, 78), "anatole, the Greek Old Testament's word for this same figure, becomes 'the dawn from on high' in the mouth of a NT priest who happens to share this OT prophet's own name, seven centuries later"),
     (("Zechariah", 3, 9), ("Revelation", 5, 6), "the identical count doing the identical work — seven eyes on Zechariah's stone, then seven eyes on the slain Lamb, both glossed as total, sent-out oversight of the whole earth"),
     # ---- Zechariah 2 ----
     (("Zechariah", 2, 5), ("Zechariah", 1, 16), "the qav promised for REBUILDING in chapter 1 is answered one chapter later by a different word, chevel middah, actually sent out to measure Jerusalem's real extent"),
@@ -6604,7 +6604,7 @@ XREFS = [
     (("Jeremiah", 23, 1), ("Jeremiah", 22, 13), "the same cry hoy — 'woe!' — that opened over Jehoiakim alive, moved off one king and onto the whole class of 'shepherds' his chapter paraded"),
     (("Jeremiah", 23, 3), ("Genesis", 1, 28), "'be fruitful and multiply' — the creation blessing verbatim, applied to the remnant God gathers back himself: exile undone in the grammar of the first page"),
     (("Jeremiah", 23, 4), ("Jeremiah", 1, 17), "chatat, 'be dismayed' — the fear laid on Jeremiah at his commissioning ('do not be dismayed... lest I dismay you') is the fear the new shepherds finally lift off the flock"),
-    (("Jeremiah", 23, 5), ("Jeremiah", 22, 3), "mishpat u-tsedaqah, 'justice and righteousness' — the exact demand laid on the palace and refused, now the job description of the Branch who will actually do it"),
+    (("Jeremiah", 23, 5), ("Jeremiah", 22, 3), "mishpat u-tsedaqah, 'justice and righteousness' — the exact demand laid on the palace and refused, now the job description of the Sprout who will actually do it"),
     (("Jeremiah", 23, 8), ("Jeremiah", 1, 14), "'the land of the north' — the direction the boiling pot tipped from in Jeremiah's second vision becomes the direction of the homecoming, and retires the Exodus oath"),
     (("Jeremiah", 23, 9), ("Genesis", 1, 2), "rachaf — the same rare verb as the Spirit 'hovering' over the waters; only three occurrences in the Hebrew Bible, and this is the one where it is a man's bones that will not hold still"),
     (("Jeremiah", 23, 13), ("Job", 1, 22), "tiflah, 'something unsavory' — the rare word for what Job refused to lay to God's charge is what Jeremiah saw in the prophets of Samaria"),
@@ -7224,7 +7224,7 @@ VERSE_OF_DAY = [
     ("Luke", 1, 38, "“Behold, the bondslave of the Lord; may it happen to me according to your word.” Where a priest was struck dumb, a girl says yes."),
     ("Luke", 1, 46, "“My soul magnifies the Lord.” The Magnificat — a teenage girl sings the great reversal, built on Hannah's song."),
     ("Luke", 1, 52, "“He has brought down rulers from thrones and lifted up the lowly.” The most dangerous poem in the Gospels."),
-    ("Luke", 1, 78, "“The dawn from on high will visit us” — ANATOLE: both the rising sun and the promised Branch of David."),
+    ("Luke", 1, 78, "“The dawn from on high will visit us” — ANATOLE: both the rising sun and the promised Sprout of David."),
     ("Ruth", 1, 16, "“Your people are my people, and your God my God.” A Moabite widow's covenant, sworn by the name of Jehovah."),
     ("Ruth", 1, 17, "“May Jehovah do so to me, and more also, if anything but death parts me from you.” Ruth seals her oath."),
     ("Ruth", 1, 20, "“Call me Mara, for the Almighty has dealt very bitterly with me.” Naomi turns her own sweet name inside out."),
@@ -10006,7 +10006,7 @@ BOOK_INTROS = {
         audience="The returned remnant of 520 BC — poor, few, and surrounded by comfortable empires 'at ease' while Zion lay in ruins — the same discouraged community Haggai addressed, told here in vision after vision that heaven has not forgotten them, that God is 'jealous for Zion,' and that the temple they are raising is the hinge of a cosmic restoration.",
         structure=[
             ["1", "THE OPENING CALL AND THE FIRST VISION — 'return to me, and I will return to you'; then the horseman patrol among the myrtles, the report that 'all the earth is at rest,' the angel's 'how long?', and God's jealous comfort for Zion. (The four horns and four craftsmen are Hebrew 2:1-4 / English 1:18-21.)"],
-            ["2-6", "THE REST OF THE EIGHT NIGHT VISIONS — the man with the measuring line and 'a wall of fire around her'; the high priest Joshua re-robed and 'the BRANCH'; the golden lampstand and two olive trees ('not by might, nor by power, but by my Spirit'); the flying scroll; the woman (Wickedness) in a basket flown to Babylon; the four chariots; and the crowning of the Branch."],
+            ["2-6", "THE REST OF THE EIGHT NIGHT VISIONS — the man with the measuring line and 'a wall of fire around her'; the high priest Joshua re-robed and 'SPROUT'; the golden lampstand and two olive trees ('not by might, nor by power, but by my Spirit'); the flying scroll; the woman (Wickedness) in a basket flown to Babylon; the four chariots; and the crowning of Sprout."],
             ["7-8", "FASTING AND RESTORATION — a question about whether to keep mourning the temple's fall becomes an oracle on true justice and a vision of a Jerusalem so blessed that 'ten men from every nation will grasp the robe of a Jew and say, We will go with you, for we have heard that God is with you.'"],
             ["9-11", "THE COMING KING AND THE SHEPHERDS — 'your king comes to you, righteous and victorious, humble and riding on a donkey' (9:9); the worthless shepherd, and the thirty pieces of silver flung to the potter in the house of Jehovah (11:12-13)."],
             ["12-14", "THE FINAL BURDEN — 'they will look on me whom they have pierced' and mourn (12:10); 'strike the shepherd, and the sheep will scatter' (13:7); a fountain opened for sin; and the last-day battle after which 'Jehovah will be king over all the earth' (14:9)."],
@@ -10016,12 +10016,12 @@ BOOK_INTROS = {
             "THE UNSEEN GOVERNMENT — apocalyptic's core conviction, born here: behind the small, discouraging politics of a Persian backwater stands a heavenly court, a patrol of the whole earth, angels interceding 'how long?' — history is run from a room the seer is briefly shown.",
             "JEALOUS FOR ZION — God's zeal (qin'ah), so often the fire of judgment, is turned protective (1:14): the fierce love of a husband for a wronged wife, aimed now at the nations who overdid the punishment.",
             "'NOT BY MIGHT, NOR BY POWER' — the word to Zerubbabel (4:6) that the temple, and the whole restoration, will be finished not by human strength but by God's Spirit — the theological center of the visions.",
-            "THE BRANCH AND THE PIERCED KING — the messianic thread from Haggai's Zerubbabel through Zechariah's 'Branch' (tzemach) to the humble king (9:9), the sold shepherd (11), and the pierced one (12:10) — the reason the Gospels reach for this book at the cross more than any prophet but Isaiah.",
+            "SPROUT AND THE PIERCED KING — the messianic thread from Haggai's Zerubbabel through Zechariah's 'Sprout' (tzemach) to the humble king (9:9), the sold shepherd (11), and the pierced one (12:10) — the reason the Gospels reach for this book at the cross more than any prophet but Isaiah.",
         ],
         key_words=["shuv", "hadas", "nicham", "qav"],
         key_people=["zechariah", "darius-i", "zerubbabel", "joshua-highpriest"],
         source_text="Translated from the pointed Hebrew Masoretic Text (as printed by Mechon-Mamre). Zechariah's Hebrew is mostly clear in the visions (1-8) and notably harder in the burdens (9-14), where the text is at points obscure and the ancient versions diverge. Chapter 1 carries two ketiv/qere pairs (v4 'your deeds,' v16 'a measuring line'), the spelling variants Berechiah/Berechiahu and Iddo/Iddo (with a final aleph) between vv1 and 7, and the versification seam by which the four-horns vision is Hebrew 2:1-4 but English 1:18-21. This translation keeps the shuv ('return') thread, the myrtles, the interpreting angel, and qin'ah ('jealous zeal') distinct from its near-homograph qinah ('lament').",
-        christ="No prophet but Isaiah feeds the Passion more. From Zechariah's second half the Gospels draw the TRIUMPHAL ENTRY ('your king comes… humble and riding on a donkey,' 9:9 → Matthew 21:5), the THIRTY PIECES OF SILVER thrown to the potter (11:12-13 → Matthew 27:9-10), 'they will look on the one they have PIERCED' (12:10 → John 19:37), and 'strike the SHEPHERD, and the sheep will be scattered' (13:7 → Matthew 26:31, at Gethsemane). Chapter 1's own contributions run in the machinery more than the plot: the interpreting angel and the heavenly 'how long?' (1:9, 12) become the furniture of Revelation (1:1; 6:10), and 'return to me and I will return to you' (1:3) is the gospel call to repentance in miniature. The BRANCH (3:8; 6:12), crowned as priest-king, ties Haggai's royal Zerubbabel to the Messiah the New Testament proclaims.",
+        christ="No prophet but Isaiah feeds the Passion more. From Zechariah's second half the Gospels draw the TRIUMPHAL ENTRY ('your king comes… humble and riding on a donkey,' 9:9 → Matthew 21:5), the THIRTY PIECES OF SILVER thrown to the potter (11:12-13 → Matthew 27:9-10), 'they will look on the one they have PIERCED' (12:10 → John 19:37), and 'strike the SHEPHERD, and the sheep will be scattered' (13:7 → Matthew 26:31, at Gethsemane). Chapter 1's own contributions run in the machinery more than the plot: the interpreting angel and the heavenly 'how long?' (1:9, 12) become the furniture of Revelation (1:1; 6:10), and 'return to me and I will return to you' (1:3) is the gospel call to repentance in miniature. Sprout (3:8; 6:12), crowned as priest-king, ties Haggai's royal Zerubbabel to the Messiah the New Testament proclaims.",
         debates="THE UNITY of the book — whether chapters 9-14 are Zechariah's own later work or a separate 'Deutero-Zechariah' (or more), the classic higher-critical question raised by their style and their silence about date. THE MATTHEW 23:35 CRUX — 'Zechariah son of Berechiah' murdered in the temple, when the temple martyr of 2 Chronicles 24 was son of Jehoiada: conflation, lost tradition, or textual slip. THE HORSES' colours, and the identity of the 'man among the myrtles' (an ordinary angel, or the Angel of Jehovah himself?). And the reference of the shepherd and pierced-one oracles, read messianically in Christian tradition and otherwise in Jewish.",
     ),
     "Psalms": dict(
@@ -11997,16 +11997,19 @@ DICTIONARY_ES = {
         "teología posterior lleva siglos discutiendo. En los Evangelios es además la palabra médica llana "
         "para una mano o un ojo devueltos a su función (Marcos 3:5)."),
     # ---- Jeremías 23 ----
-    "tsemach": ("renuevo, brote",
+    "tsemach": ("brote, renuevo",
         "Un BROTE, un retoño — lo que sube de la tierra; de tsamach, «brotar». La imagen es un tocón "
         "cortado que echa verde: algo pequeño que se levanta donde algo grande fue talado. Jeremías "
-        "promete a David un tsemach tsaddiq, un «Renuevo justo» (23:5), justo después de un capítulo "
-        "donde los cedros de la casa real han sido cortados y quemados (22:7). En los profetas "
-        "posteriores al destierro ya es un título hecho y derecho — «mi siervo el RENUEVO» de Zacarías "
-        "(3:8), «un varón cuyo nombre es Renuevo» (6:12) — y corre en paralelo al netser de Isaías, el "
-        "«vástago» del tronco de Isaí. La RV dice «Renuevo» por tradición; la TNM prefiere «brote», que "
-        "es la botánica más exacta. El mismo oráculo se repite en Jeremías 33, donde el nombre se le da "
-        "a la CIUDAD y no al hombre."),
+        "promete a David un tsemach tsaddiq, «un Brote justo» (23:5), justo después de un capítulo "
+        "donde los cedros de la casa real han sido cortados y quemados (22:7). La palabra no lleva "
+        "artículo determinado hebreo en ninguna de sus tres apariciones — aquí, en Zacarías 3:8 («mi "
+        "siervo, Brote»), o en 6:12, donde el propio texto la llama NOMBRE («Brote es su nombre») — por "
+        "lo que esta traducción la trata como uno, no como un sustantivo común con título, y corre en "
+        "paralelo al netser de Isaías, el «vástago» del tronco de Isaí. La tradición española imprime "
+        "«Renuevo» (así la RV); la TNM prefiere «brote», que conserva la botánica llana que el verbo da "
+        "— «Renuevo» evoca una rama sobre un árbol vivo, cuando la imagen es un crecimiento nuevo desde "
+        "un tocón. El mismo oráculo se repite en Jeremías 33, donde el nombre se le da a la CIUDAD y no "
+        "al hombre."),
     "sod": ("consejo, círculo cerrado",
         "Un CÍRCULO CERRADO — la sesión confidencial, la deliberación de dentro, y por extensión el "
         "secreto que allí se trata. La prueba que Jeremías aplica a un profeta se apoya entera en esta "
@@ -13149,7 +13152,7 @@ ENCYCLOPEDIA_ES["zedekiah"] = ("Sedequías",
     "(588-586). Su final en Riblá es la frase más oscura del libro: sus hijos degollados delante de "
     "sus ojos, y después sus ojos sacados — lo último que vio (39:6-7). ⚠ Y su nombre está haciendo "
     "un trabajo que él no eligió. A Matanías lo renombraron TSIDQIYAHU, «Yah es mi justicia»; y "
-    "mientras él ocupaba ese trono, Jeremías anunció un Renuevo venidero cuyo nombre sería YHVH "
+    "mientras él ocupaba ese trono, Jeremías anunció un Brote venidero cuyo nombre sería YHVH "
     "TSIDQENU, «Jehová es NUESTRA justicia» (23:6) — los mismos dos elementos recolocados, el nombre "
     "divino al frente y «mi» cambiado por «nuestra». El nombre de trono del último rey de Judá es "
     "recogido, corregido y entregado a otro.")
