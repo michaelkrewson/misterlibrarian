@@ -237,7 +237,7 @@ DICTIONARY = [
     ("itsavon", "itsavon", "עִצָּבוֹן", "itsavon",
      "Painful toil — the woman's pain and the man's toil in Eden's sentences; the same root reaches God's own grieved heart at 6:6.", (3, 16)),
     ("kikkar", "kikkar", "כִּכָּר", "kikkar",
-     "A disc, circle — hence 'plain': the round, well-watered Jordan valley Lot chooses (13:10-12); elsewhere the same word names a 'talent,' a round ingot of silver or gold.", (13, 10)),
+     "A disc, circle — hence 'plain': the round, well-watered Jordan valley Lot chooses (13:10-12). The same word also names a TALENT, a round ingot of silver or gold — the sense it carries at Exodus 25:39, sizing the gold the lampstand takes. Scholarly estimates for the weight vary by period and standard, but a common approximation is roughly 75 pounds (about 34 kilograms) — the largest weight unit in the Bible, whichever object it is disc-shaped enough to name.", (13, 10)),
     ("lekh-lekha", "lekh-lekha", "לֶךְ-לְךָ", "lekh-lekha",
      "'Go — you yourself': the emphatic doubled call of Abram; the third parashah takes its name from it.", (12, 1)),
     ("mabul", "mabul", "מַבּוּל", "mabul",
@@ -373,6 +373,15 @@ DICTIONARY = [
     # ---- Exodus 24 (Hebrew) ----
     ("sefer", "sefer", "סֵפֶר", "sefer",
      "BOOK, scroll — from a root meaning to count or recount. Its first use naming a portion of the Torah itself is here: Moses writes and reads aloud the 'sefer ha-brit,' the BOOK OF THE COVENANT (24:4, 7), before a single stone tablet has even been carved. The same word will later name the whole Torah as a single scroll (Deuteronomy 31:26) and, further on still, the prophetic scroll Ezekiel is made to eat (Ezekiel 2:9) — both not yet on these pages. From this verse forward, a written record is something the text can point to, read aloud, and hand over.", ("Exodus", 24, 7)),
+    # ---- Exodus 25 (Hebrew) ----
+    ("tachash", "tachash", "תַּחַשׁ", "tachash",
+     "A genuinely uncertain word for the outer covering-skins of the tabernacle (25:5) — the leading candidates are a marine mammal (dolphin, seal, or dugong, from an Arabic cognate applied to those animals in the Red Sea) or, in the older KJV/Luther tradition, 'badger' (a phonological guess, since badgers neither live in Sinai nor yield hides large enough for a tent covering). No consensus exists; this translation keeps the Hebrew rather than guess.", ("Exodus", 25, 5)),
+    ("tavnit", "tavnit", "תַּבְנִית", "tavnit",
+     "PATTERN, model, blueprint — from banah, 'to build.' Moses is shown a tavnit of the tabernacle and all its furnishings (25:9) and told simply 'so you shall make it'; the instruction recurs almost verbatim closing the same chapter (25:40, quoted directly at Hebrews 8:5, not yet on these pages). The word frames every specification that follows as a COPY of something Moses is shown, never his own design — the tabernacle is built to a plan, not invented on site.", ("Exodus", 25, 9)),
+    ("kapporet", "kapporet", "כַּפֹּרֶת", "kapporet",
+     "The gold COVER of the ark (25:17-22), from kaphar, 'to cover, wipe away,' with a secondary sense 'to atone.' The familiar English 'mercy seat' is not a translation of this word — it is William Tyndale's 16th-century coinage, following Luther's German Gnadenstuhl, 'seat of grace.' The Septuagint's Greek hilastērion ('the thing that atones') and the Vulgate's Latin propitiatorium both keep the secondary atoning sense without inventing a piece of furniture the Hebrew never names. This translation renders the literal 'cover.'", ("Exodus", 25, 17)),
+    ("lechem-panim", "lechem panim", "לֶחֶם פָּנִים", "lechem panim",
+     "BREAD OF THE PRESENCE — literally 'bread of the face,' the twelve loaves kept perpetually on the golden table 'before me always' (25:30). KJV/ASV's archaic 'shewbread' ('shew' is 1611's spelling of 'show') describes the same loaves David eats at Nob and Jesus later cites by name (Matthew 12:3-4, already on these pages) to defend his disciples for plucking grain on the sabbath — bread set out for God's own sight becomes, a millennium later, legal precedent.", ("Exodus", 25, 30)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5490,6 +5499,9 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Exodus 25 ----
+    (("Exodus", 25, 30), ("Matthew", 12, 3), "the bread kept perpetually on this table is the exact bread David eats at Nob when he flees Saul — the precedent Jesus cites by name to defend his disciples for plucking grain on the sabbath"),
+    (("Exodus", 25, 32), ("Zechariah", 4, 2), "the same seven-lamp, solid-gold lampstand, seen again roughly nine hundred years later — but Zechariah's has grown an automatic oil supply this one still needs a human hand to light"),
     # ---- Exodus 24 ----
     (("Exodus", 24, 8), ("Matthew", 26, 28), "Moses' exact words — 'behold the blood of the covenant' — picked up almost verbatim over a cup of wine at the Last Supper, roughly thirteen centuries later"),
     (("Exodus", 24, 4), ("Genesis", 28, 18), "the same word, matzevah — Jacob's single memorial pillar at Bethel becomes twelve national ones here, one for every tribe descended from his own twelve sons"),
@@ -10913,6 +10925,44 @@ DICTIONARY_ES = {
         "(Ezequiel 2:9) —ninguno de los dos todavía en estas páginas—. Desde este versículo en "
         "adelante, un registro escrito es algo que el texto puede señalar, leer en voz alta, y "
         "entregar."),
+    # ---- Éxodo 25 ----
+    "tachash": ("tachash",
+        "Una palabra genuinamente incierta para las pieles que cubren el tabernáculo por fuera "
+        "(25:5) —los candidatos principales son un mamífero marino (delfín, foca, o dugongo, de un "
+        "cognado árabe aplicado a esos animales en el Mar Rojo) o, en la tradición más antigua de "
+        "Lutero, 'tejón' (una conjetura fonética, ya que los tejones ni viven en el Sinaí ni dan "
+        "una piel lo bastante grande para cubrir una tienda). No existe consenso; esta traducción "
+        "conserva el hebreo en vez de adivinar."),
+    "tavnit": ("tavnit",
+        "PATRÓN, modelo, plano —de banah, 'edificar'. A Moisés se le muestra un tavnit del "
+        "tabernáculo y de todos sus utensilios (25:9) y se le dice simplemente 'así lo haréis'; la "
+        "instrucción se repite casi palabra por palabra al cerrar el mismo capítulo (25:40, citada "
+        "directamente en Hebreos 8:5, todavía no en estas páginas). La palabra enmarca cada "
+        "especificación que sigue como una COPIA de algo que se le muestra a Moisés, nunca como su "
+        "propio diseño —el tabernáculo se construye conforme a un plano, no se inventa sobre la "
+        "marcha."),
+    "kapporet": ("kapporet",
+        "La CUBIERTA de oro del arca (25:17-22), de kaphar, 'cubrir, borrar', con un sentido "
+        "secundario de 'expiar'. El familiar 'propiciatorio' del español no traduce esta palabra "
+        "—es un término derivado del latín propitiatorium de la Vulgata, que a su vez sigue el "
+        "griego de la Septuaginta hilastérion ('lo que expía'), ambos preservando el sentido "
+        "secundario sin inventar un mueble que el hebreo mismo no nombra. Esta traducción vierte la "
+        "literal 'cubierta'."),
+    "lechem-panim": ("lechem panim",
+        "PAN DE LA PRESENCIA —literalmente 'pan del rostro', los doce panes mantenidos "
+        "perpetuamente sobre la mesa dorada 'delante de mí siempre' (25:30). El arcaico 'pan de la "
+        "proposición' de la RV1909 (del latín panes propositionis de la Vulgata) describe los "
+        "mismos panes que David come en Nob y que Jesús cita después por nombre (Mateo 12:3-4, ya "
+        "en estas páginas) para defender a sus discípulos por arrancar espigas en sábado —pan "
+        "puesto a la vista de Dios se convierte, un milenio después, en precedente legal."),
+    "kikkar": ("kikkar",
+        "Un disco, círculo —de ahí 'llanura': el valle redondo y bien regado del Jordán que Lot "
+        "elige (Génesis 13:10-12, todavía no en estas páginas). La misma palabra nombra también un "
+        "TALENTO, un lingote redondo de plata u oro —el sentido que lleva en Éxodo 25:39, midiendo "
+        "el oro que requiere el candelabro. Las estimaciones eruditas del peso varían según el "
+        "período y el patrón usado, pero una aproximación común son unos 34 kilogramos (unas 75 "
+        "libras) —la mayor unidad de peso de la Biblia, sea cual sea el objeto suficientemente "
+        "redondo para llevar su nombre."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
