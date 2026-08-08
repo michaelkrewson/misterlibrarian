@@ -5692,6 +5692,15 @@ def build_sitemap():
             continue
         if 'name="robots" content="noindex' in head:
             continue              # never advertise a page we've asked not to index
+        if 'rel="canonical"' not in head:
+            continue              # a headless scratch/staging file with no template
+            # sailed through here once (ROM8_verses_en.html — 39 verse blocks left
+            # in the repo root from building Romans 8, no <head> at all so the
+            # noindex check above never saw it). It duplicated romans-8.html
+            # near-verbatim and, with no canonical to say which page was real,
+            # Google flagged it "Duplicate without user-selected canonical." Every
+            # real page in this build declares a canonical; anything that doesn't
+            # isn't a page this sitemap should ever be advertising.
 
         # Must match the canonical the page declares — see the note in the head
         # builder. Submitting /index.html while the page canonicalises to / is
