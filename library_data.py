@@ -56,6 +56,9 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('qeren', 'qeren', 'קֶרֶן', 'qeren', "A HORN — literally an animal's horn, and by extension a standing symbol of STRENGTH or POWER, especially royal or military power (a king's or a nation's horn is 'exalted'; smashing one is the ancient shorthand for humbling it). Zechariah's second vision puts four of them onstage with no names attached — 'the horns that scattered Judah, Israel, and Jerusalem' (2:2), any and every power that has broken this people, without singling one out. ⚠ Later apocalyptic ties the same image to specific empires — each of Daniel's horns corresponds to a named kingdom (Daniel 8, not yet on these pages) — a sharper, historically anchored use of the identical symbol.", ('Zechariah', 2, 1)),
+    ('chevel-middah', 'chevel middah', 'חֶבֶל מִדָּה', 'chevel middah', "A CORD OF MEASURE — literally 'a rope, a measurement': the surveyor's tool for measuring an AREA (a city's width and length, as here) rather than for laying one straight builder's line. ⚠ It is a different word from the qav Zechariah used just one chapter earlier — 'a measuring line stretched out over Jerusalem' for REBUILDING (1:16, see qav) — and the difference matters: chapter 1 promises the surveyor's cord of construction; chapter 2 sends it out to actually measure the city, only to discover the answer makes the whole project pointless (Jerusalem will outgrow any wall a fixed measurement could build, 2:8). Chevel is also the ordinary word for a rope and, elsewhere, for a tribal territory's allotted portion of land — one rope-word for measuring, and for inheriting.", ('Zechariah', 2, 5)),
+    ('bavat-ayin', 'bavat ayin', 'בָּבַת עַיִן', 'bavat ayin', "THE PUPIL OF THE EYE — literally uncertain. Bavat occurs in the Hebrew Bible exactly once, and its own root is disputed: some derive it from a word for 'gate' or 'opening' (so, 'the gate of the eye'), others hear an imitative word for a tiny reflected image, the same idea behind Latin pupilla and English 'pupil' — a person's own small reflection seen in another's eye. ⚠ This is NOT the more common Old Testament idiom for the same body part — ishon, 'the little man of the eye' (e.g. Deuteronomy 32:10, Psalm 17:8, not yet on these pages) — a different word doing similar work. Both are usually flattened in English into the same borrowed idiom, 'the apple of the eye' (itself an old, unrelated figure of English speech — apples have nothing to do with either Hebrew word), which is why this translation reads the plainer, more defensible 'pupil' instead.", ('Zechariah', 2, 12)),
     ('abyssos', 'abyssos', 'ἄβυσσος', 'abyssos', "THE ABYSS — without bottom (a-, negative + byssos, 'depth'), the Greek Old Testament's own word for the primordial deep, Hebrew tehom, over which darkness lay before the first day (Genesis 1:2, already on this shelf). ⚠ By the New Testament it has narrowed into a specific place: a sealed confinement for chaotic, destructive power, opened only by permission. It surfaces seven times in the New Testament, all in Revelation (9:1, 2, 11; 11:7; 17:8; 20:1, 3, only the first of them yet translated), tracing one arc across the book — a shaft opened here to release torment, later the place the beast rises FROM, and finally where Satan himself is shut in for a thousand years. Outside Revelation it appears twice more: demons beg Jesus not to send them there (Luke 8:31, not yet on these pages), and Paul borrows it to replace the sea in a quotation from Deuteronomy, asking rhetorically 'who will descend into the abyss?' (Romans 10:7, not yet on these pages) — by then already shorthand for the realm of the dead.", ('Revelation', 9, 1)),
     ('pharmakon', 'pharmakōn', 'φάρμακον', 'pharmakon', "A DRUG, POTION — and by extension SORCERY. One Greek word covers medicine, poison, and magic potion at once, because in the ancient world a healer, a poisoner, and a sorcerer were often the same trade: the same substance could cure, kill, or (it was believed) work magic, depending on who used it and how. English 'pharmacy' and 'pharmacist' descend directly from it. ⚠ Revelation uses the plural, pharmakōn, in a bare list of unrepented vices (9:21) without ever naming an actual potion or its effect; the noun pharmakeia recurs once more, of Babylon's own trade, 'by your sorcery all the nations were deceived' (18:23, not yet on these pages). The ancient overlap between medicine and magic has narrowed, by the time this book was written, into a single forbidden practice.", ('Revelation', 9, 21)),
     ('kadosh', 'kadosh', 'קָדוֹשׁ', 'kadosh', "HOLY — and, before it means morally pure, it means SET APART, marked off from ordinary use. The word's first-ever appearance in the Bible is not a person but a TIME: God 'made holy' the seventh day (Genesis 2:3, already on this shelf), before any law exists to keep or break. ⚠ Leviticus 19:2 turns the word into an imperative aimed at an entire people — 'you shall be kadosh, for I, Jehovah your God, am kadosh' — and the thirty-five verses that follow are the word unpacked into practice: not temple ritual but field edges left for the poor, wages paid on time, honest scales. Holiness here is closer to a way of drawing boundaries around ordinary life than to a private religious feeling.", ('Leviticus', 19, 2)),
@@ -5464,6 +5467,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Zechariah 2 ----
+    (("Zechariah", 2, 5), ("Zechariah", 1, 16), "the qav promised for REBUILDING in chapter 1 is answered one chapter later by a different word, chevel middah, actually sent out to measure Jerusalem's real extent"),
+    (("Zechariah", 2, 9), ("Exodus", 14, 22), "the fire itself is called a chomah, 'a wall' — the same word this project has already met as the standing masonry wall of a city, here naming fire the city's literal fortification"),
+    (("Zechariah", 2, 9), ("Revelation", 21, 23), "'I will be the glory within her' answered five centuries later — a city that needs no sun because 'the glory of God' is its light"),
+    (("Zechariah", 2, 5), ("Revelation", 21, 15), "a figure with a measuring cord takes a city's extent — almost verse for verse what the angel with the golden reed does at the New Jerusalem"),
+    (("Zechariah", 2, 9), ("Ezekiel", 1, 28), "the same kavod Ezekiel watches depart the temple in a roughly contemporary vision — here promised to fill an entire unwalled city instead"),
     # ---- Revelation 9 ----
     (("Revelation", 9, 1), ("Revelation", 1, 18), "the key given to the fallen star is the first key in this book that does not belong to Christ, who alone had said 'I hold the keys of Death and of Hades'"),
     (("Revelation", 9, 4), ("Revelation", 7, 3), "only those who do NOT carry 'the seal of God... on their foreheads' can be touched — the very seal four angels were told to finish placing two chapters earlier"),
@@ -10857,6 +10866,36 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "qeren": ("qeren",
+        "UN CUERNO — literalmente el cuerno de un animal, y por extensión un símbolo fijo de FUERZA o "
+        "PODER, especialmente el poder real o militar (el cuerno de un rey o de una nación se 'exalta'; "
+        "quebrarlo es la abreviatura antigua de humillarlo). La segunda visión de Zacarías pone cuatro en "
+        "escena sin nombrarlos — 'los cuernos que dispersaron a Judá, a Israel y a Jerusalén' (2:2), "
+        "cualquier poder que haya quebrado a este pueblo, sin señalar a uno solo. ⚠ El apocalipsis "
+        "posterior atará la misma imagen a imperios concretos — cada cuerno de Daniel corresponde a un "
+        "reino nombrado (Daniel 8, aún no traducido a estas páginas) — un uso más agudo, históricamente "
+        "anclado, del mismo símbolo."),
+    "chevel-middah": ("chevel middah",
+        "UN CORDEL DE MEDIDA — literalmente 'una cuerda, una medición': la herramienta del agrimensor "
+        "para medir un ÁREA (la anchura y la longitud de una ciudad, como aquí), no para trazar una sola "
+        "línea recta de construcción. ⚠ Es una palabra distinta del qav que Zacarías usó apenas un "
+        "capítulo antes — 'un cordel será tendido sobre Jerusalén' para RECONSTRUIR (1:16, véase qav) — "
+        "y la diferencia importa: el capítulo 1 promete el cordel de edificar; el capítulo 2 lo envía a "
+        "medir de verdad la ciudad, solo para descubrir que la respuesta vuelve inútil todo el proyecto "
+        "(Jerusalén superará cualquier muro que una medida fija pudiera construir, 2:8). Chevel es "
+        "también la palabra corriente para una cuerda y, en otros lugares, para la porción de tierra "
+        "asignada a una tribu — una sola palabra-cuerda para medir, y para heredar."),
+    "bavat-ayin": ("bavat ayin",
+        "LA PUPILA DEL OJO — literalmente incierto. Bavat aparece en toda la Biblia hebrea exactamente "
+        "una vez, y su propia raíz se discute: unos la derivan de una palabra para 'puerta' o 'abertura' "
+        "(así, 'la puerta del ojo'), otros oyen una palabra imitativa para una pequeña imagen reflejada, "
+        "la misma idea tras el latín pupilla y el español 'pupila' — el propio reflejo diminuto de una "
+        "persona visto en el ojo de otra. ⚠ NO es el modismo veterotestamentario más común para la misma "
+        "parte del cuerpo — ishon, 'el hombrecito del ojo' (p. ej. Deuteronomio 32:10, Salmo 17:8, aún "
+        "no traducidos a estas páginas) — una palabra distinta que hace un trabajo similar. Esta "
+        "traducción dice 'la niña de su ojo' — el modismo español tradicional para la pupila, y aquí "
+        "genuinamente más cercano al hebreo que el inglés 'apple' ('manzana'), que no tiene nada que ver "
+        "con ninguna de las dos palabras hebreas."),
     "abyssos": ("abyssos",
         "EL ABISMO — sin fondo (a-, negativo + byssos, 'profundidad'), la palabra propia de la "
         "Biblia griega para el abismo primordial, el hebreo tehom, sobre el cual había "
@@ -13287,6 +13326,46 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "zechariah2": [dict(
+        file="weigel-four-horns-craftsmen.jpg",
+        title="The Vision of the Four Horns and the Four Craftsmen",
+        title_es="La visión de los cuatro cuernos y los cuatro artesanos",
+        artist="Christoph Weigel",
+        artist_es="Christoph Weigel",
+        year="1695",
+        location="Engraving, Biblia Ectypa",
+        location_es="Grabado, Biblia Ectypa",
+        alt="A monochrome engraving in a decorative border. In the lower left, a bearded "
+            "man in flowing robes stands on the ground before a walled town, one hand "
+            "raised, gesturing up toward a bank of clouds. Within the clouds, four small "
+            "robed figures work with hammers and tools; above them, four curled, "
+            "horn-like shapes float in the sky. To the right, a winged angel is seated on "
+            "a cloud, gesturing back toward the craftsmen. German verse below the frame "
+            "identifies the scene.",
+        note="&#9888; Christoph Weigel the Elder was a Nuremberg engraver whose "
+             "<em>Biblia Ectypa</em> (1695) illustrated the whole Bible scene by scene, "
+             "one of the most widely copied German print Bibles of its era. His own "
+             "caption, in the German verse under the frame, numbers this &ldquo;Zach. I, "
+             "18&rdquo; &mdash; following the ENGLISH/Vulgate chapter count, which places "
+             "the four-horns vision at the tail end of chapter 1 (see the note on 1:16-17 "
+             "above). This translation follows the Masoretic count instead, where the "
+             "same vision opens chapter 2 &mdash; so a 320-year-old German engraving and "
+             "this translation number the identical picture two different ways, for the "
+             "same reason.",
+        note_es="&#9888; Christoph Weigel el Viejo fue un grabador de N&uacute;remberg cuya "
+                "<em>Biblia Ectypa</em> (1695) ilustr&oacute; toda la Biblia escena por "
+                "escena, una de las Biblias impresas alemanas m&aacute;s copiadas de su "
+                "&eacute;poca. Su propia leyenda, en el verso alem&aacute;n bajo el marco, "
+                "numera esto &laquo;Zach. I, 18&raquo; &mdash;siguiendo el conteo "
+                "ingl&eacute;s/de la Vulgata, que coloca la visi&oacute;n de los cuatro "
+                "cuernos al final del cap&iacute;tulo 1 (v&eacute;ase la nota a 1:16-17 "
+                "arriba). Esta traducci&oacute;n sigue en cambio el conteo masor&eacute;tico, "
+                "donde la misma visi&oacute;n abre el cap&iacute;tulo 2 &mdash;as&iacute; que "
+                "un grabado alem&aacute;n de hace 320 a&ntilde;os y esta traducci&oacute;n "
+                "numeran la misma imagen de dos maneras distintas, por la misma raz&oacute;n.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Four_horns_and_craftsmen_-_Weigel_(34134560).jpg",
+    )],
     "jer2": [dict(
         file="bassano-israelites-wilderness.jpg",
         title="The Israelites in the Wilderness",
