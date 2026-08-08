@@ -56,6 +56,8 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('abyssos', 'abyssos', 'ἄβυσσος', 'abyssos', "THE ABYSS — without bottom (a-, negative + byssos, 'depth'), the Greek Old Testament's own word for the primordial deep, Hebrew tehom, over which darkness lay before the first day (Genesis 1:2, already on this shelf). ⚠ By the New Testament it has narrowed into a specific place: a sealed confinement for chaotic, destructive power, opened only by permission. It surfaces seven times in the New Testament, all in Revelation (9:1, 2, 11; 11:7; 17:8; 20:1, 3, only the first of them yet translated), tracing one arc across the book — a shaft opened here to release torment, later the place the beast rises FROM, and finally where Satan himself is shut in for a thousand years. Outside Revelation it appears twice more: demons beg Jesus not to send them there (Luke 8:31, not yet on these pages), and Paul borrows it to replace the sea in a quotation from Deuteronomy, asking rhetorically 'who will descend into the abyss?' (Romans 10:7, not yet on these pages) — by then already shorthand for the realm of the dead.", ('Revelation', 9, 1)),
+    ('pharmakon', 'pharmakōn', 'φάρμακον', 'pharmakon', "A DRUG, POTION — and by extension SORCERY. One Greek word covers medicine, poison, and magic potion at once, because in the ancient world a healer, a poisoner, and a sorcerer were often the same trade: the same substance could cure, kill, or (it was believed) work magic, depending on who used it and how. English 'pharmacy' and 'pharmacist' descend directly from it. ⚠ Revelation uses the plural, pharmakōn, in a bare list of unrepented vices (9:21) without ever naming an actual potion or its effect; the noun pharmakeia recurs once more, of Babylon's own trade, 'by your sorcery all the nations were deceived' (18:23, not yet on these pages). The ancient overlap between medicine and magic has narrowed, by the time this book was written, into a single forbidden practice.", ('Revelation', 9, 21)),
     ('kadosh', 'kadosh', 'קָדוֹשׁ', 'kadosh', "HOLY — and, before it means morally pure, it means SET APART, marked off from ordinary use. The word's first-ever appearance in the Bible is not a person but a TIME: God 'made holy' the seventh day (Genesis 2:3, already on this shelf), before any law exists to keep or break. ⚠ Leviticus 19:2 turns the word into an imperative aimed at an entire people — 'you shall be kadosh, for I, Jehovah your God, am kadosh' — and the thirty-five verses that follow are the word unpacked into practice: not temple ritual but field edges left for the poor, wages paid on time, honest scales. Holiness here is closer to a way of drawing boundaries around ordinary life than to a private religious feeling.", ('Leviticus', 19, 2)),
     ('tohu', 'tohu', 'תֹּהוּ', 'tohu', "FORMLESSNESS, chaos, emptiness — the earth's condition before the first day, 'formless and empty' (tohu va-vohu, Genesis 1:2, its most famous appearance, paired there with its usual companion bohu). ⚠ Isaiah reaches for the same bare word, alone, twice in one chapter (40:17, 23) to describe the nations and their rulers before God — not merely small, but measured against the raw uncreated condition that existed before God spoke order into anything at all. Deuteronomy 32:10 uses it of literal desert waste ('a howling tohu of a wilderness'); 1 Samuel 12:21 of idols themselves, 'tohu that cannot profit or deliver.' A word for the specific nothing that precedes shape.", ('Isaiah', 40, 17)),
     ('ovnayim', 'ovnayim', 'אָבְנָיִם', 'ovnayim', "THE TWO STONES — the potter's wheel, and one of the most informative words in the Hebrew Bible, because it is a DUAL: not 'wheel' but the dual of even, 'stone'. The word is a photograph of the machine — a lower stone turned by hand or foot driving an upper stone on a pivot and socket, with the clay riding on top — and the older versions still hear the number (KJV and ASV both have 'the wheels', plural, at Jeremiah 18:3; modern versions flatten it to one wheel). ⚠ It occurs only TWICE in the Bible, and the other place is startling: Exodus 1:16, where it is the BIRTH-STOOL the Hebrew mothers crouch on and Pharaoh tells the midwives to watch. One dual word for the potter's twin stones and for the two stones of childbirth — both of them the place where a life is given its shape. See the encyclopedia entry on the potter for how the craft was actually done.", ('Jeremiah', 18, 3)),
@@ -1812,6 +1814,25 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="abaddon-apollyon", name="Abaddon / Apollyon", kind="person",
+         aliases=["Abaddon", "Apollyon"],
+         desc="The king of the locusts loosed from the Abyss, named twice in one breath — "
+              "once in Hebrew, once in Greek (Revelation 9:11). <em>Abaddon</em> ('ruin, "
+              "destruction') is not a proper name anywhere else it appears in the Hebrew "
+              "Bible: it stands beside Sheol as a near-personified word for the realm of "
+              "the dead, a place even God's own gaze reaches (Job 26:6; 28:22; Psalm 88:11; "
+              "Proverbs 15:11; 27:20 — none yet on these pages). John supplies his own Greek "
+              "equivalent, <em>Apollyon</em>, 'Destroyer,' built from the ordinary verb "
+              "<em>apollymi</em>, 'to destroy.' ⚠ It is also a near-homophone of "
+              "<em>Apollōn</em>, the god Apollo — who carried the cult title "
+              "<em>Parnopios</em>, 'the Locust-God,' at Athens (a bronze statue there, "
+              "recorded by the geographer Pausanias, credited him with driving locusts "
+              "from the land), and whom some scholars think the emperor Domitian, likely "
+              "John's own contemporary, liked to be seen as. If the pun is intended, "
+              "crowning the locusts' king with a name that sounds like the empire's own "
+              "patron god is a coded jab: the protector unmasked as the destroyer. The text "
+              "never says so outright — it hands the name to whoever can catch it.",
+         refs=[("Revelation", 9, 11)]),
     dict(slug="upper-room", name="The Upper Room", kind="place",
          aliases=["upper room", "Upper Room", "Cenacle", "the guest room"],
          desc="The room upstairs, and the New Testament calls it three different things. Luke 22:11 has Jesus ask "
@@ -5443,6 +5464,16 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Revelation 9 ----
+    (("Revelation", 9, 1), ("Revelation", 1, 18), "the key given to the fallen star is the first key in this book that does not belong to Christ, who alone had said 'I hold the keys of Death and of Hades'"),
+    (("Revelation", 9, 4), ("Revelation", 7, 3), "only those who do NOT carry 'the seal of God... on their foreheads' can be touched — the very seal four angels were told to finish placing two chapters earlier"),
+    (("Revelation", 9, 4), ("Exodus", 10, 15), "the eighth plague of Egypt left 'nothing green'; these locusts are ordered to leave every green thing untouched and strike people instead — the plague run in reverse"),
+    (("Revelation", 9, 12), ("Revelation", 8, 13), "the first of the eagle's own 'woe, woe, woe' has passed — two more are still to come"),
+    (("Revelation", 9, 13), ("Revelation", 8, 3), "the same golden altar that carried the martyrs' prayers up and fire down two chapters ago now gives voice to the command that follows"),
+    (("Revelation", 9, 15), ("Revelation", 8, 7), "the trumpets' own 'third' first struck the earth, sea, and sky — now, for the first time, it strikes people themselves"),
+    (("Revelation", 9, 20), ("Revelation", 2, 20), "the same pairing named twice in the letters — 'idol-sacrifices, and sexual immorality' — turns out to survive even the trumpet judgments"),
+    (("Revelation", 9, 8), ("Joel", 1, 6), "'their teeth were like the teeth of lions' repeats Joel's own locust-army image almost word for word"),
+
     (('John', 7, 38), ('John', 4, 10), "living water offered privately to one Samaritan woman at a well is here offered publicly, at the Temple's own water-pouring ritual, to everyone within earshot"),
     (('John', 7, 23), ('John', 5, 9), "'I did one work, and you are all astonished' — the Bethesda healing, left as an open charge at the end of that chapter, finally gets its Sabbath defense argued out loud here"),
     (('Exodus', 23, 6), ('Leviticus', 19, 15), "the same rare verb, hadar — do not show deference (hadar) to the poor in a lawsuit, matched by Leviticus 19's do not show deference to the great — one principle stated from both sides, in two different books"),
@@ -10826,6 +10857,33 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    "abyssos": ("abyssos",
+        "EL ABISMO — sin fondo (a-, negativo + byssos, 'profundidad'), la palabra propia de la "
+        "Biblia griega para el abismo primordial, el hebreo tehom, sobre el cual había "
+        "oscuridad antes del primer día (Génesis 1:2, ya en este estante). ⚠ Para el Nuevo "
+        "Testamento se ha estrechado hasta un lugar concreto: un encierro sellado para el "
+        "poder caótico y destructor, abierto solo con permiso. Aparece siete veces en el "
+        "Nuevo Testamento, todas en Apocalipsis (9:1, 2, 11; 11:7; 17:8; 20:1, 3, solo la "
+        "primera traducida hasta ahora), trazando un mismo arco por todo el libro: un pozo "
+        "abierto aquí para liberar tormento, luego el lugar de donde SUBE la bestia, y por "
+        "último donde Satanás mismo queda encerrado por mil años. Fuera de Apocalipsis "
+        "aparece dos veces más: los demonios ruegan a Jesús no enviarlos allí (Lucas 8:31, "
+        "todavía no en estas páginas), y Pablo lo usa para sustituir el mar en una cita de "
+        "Deuteronomio, preguntando retóricamente '¿quién descenderá al abismo?' (Romanos "
+        "10:7, todavía no en estas páginas) — ya entonces, taquigrafía del reino de los "
+        "muertos."),
+    "pharmakon": ("pharmakōn",
+        "UNA DROGA, POCIÓN — y por extensión HECHICERÍA. Una sola palabra griega cubre "
+        "medicina, veneno y pócima mágica a la vez, porque en el mundo antiguo un sanador, "
+        "un envenenador y un hechicero eran a menudo el mismo oficio: la misma sustancia "
+        "podía curar, matar o (se creía) obrar magia, según quién la usara y cómo. El "
+        "español 'farmacia' y 'farmacéutico' descienden de la misma raíz. ⚠ Apocalipsis usa "
+        "el plural, pharmakōn, en una lista escueta de vicios no arrepentidos (9:21) sin "
+        "nombrar nunca una poción concreta ni su efecto; el sustantivo pharmakeia vuelve a "
+        "aparecer una vez más, del propio comercio de Babilonia, 'por tu hechicería fueron "
+        "engañadas todas las naciones' (18:23, todavía no en estas páginas). La antigua "
+        "mezcla entre medicina y magia se ha estrechado, para cuando se escribe este libro, "
+        "en una sola práctica prohibida."),
     "ketiv-qere": ("ketiv / qere",
         "«Escrito» / «leído» — el doble registro de los masoretas: donde la tradición LEÍA una "
         "palabra de forma distinta a como la ESCRIBEN las consonantes, dejaron las letras escritas "
@@ -12451,6 +12509,24 @@ DICTIONARY_ES = {
 }
 
 ENCYCLOPEDIA_ES = {
+    "abaddon-apollyon": ("Abadón / Apolión",
+        "El rey de las langostas liberadas del abismo, nombrado dos veces en un mismo "
+        "aliento — una en hebreo, otra en griego (Apocalipsis 9:11). <em>Abadón</em> "
+        "('ruina, destrucción') no es un nombre propio en ningún otro lugar donde aparece "
+        "en la Biblia hebrea: se coloca junto al Seol como una palabra casi personificada "
+        "para el reino de los muertos, un lugar que alcanza incluso la mirada de Dios (Job "
+        "26:6; 28:22; Salmo 88:11; Proverbios 15:11; 27:20 — ninguno todavía en estas "
+        "páginas). Juan aporta su propio equivalente griego, <em>Apolión</em>, "
+        "'Destructor,' formado del verbo común <em>apollymi</em>, 'destruir.' ⚠ También es "
+        "casi homófono de <em>Apollōn</em>, el dios Apolo — que llevaba el título de culto "
+        "<em>Parnopios</em>, 'el Dios de las Langostas,' en Atenas (una estatua de bronce "
+        "allí, registrada por el geógrafo Pausanias, le acreditaba haber expulsado las "
+        "langostas de la tierra), y a quien algunos estudiosos creen que el emperador "
+        "Domiciano, probable contemporáneo de Juan, gustaba presentarse como encarnación. "
+        "Si el juego de palabras es intencional, coronar al rey de las langostas con un "
+        "nombre que suena como el propio dios patrón del imperio es una pulla cifrada: el "
+        "protector desenmascarado como destructor. El texto nunca lo dice abiertamente — "
+        "entrega el nombre a quien pueda captarlo."),
     "first-temple": ("El Primer Templo",
         "La casa que SALOMÓN construyó en la era que David compró, en el monte que "
         "Génesis 22 llama MORIA — comenzada en su cuarto año (1 Reyes 6:1) y en pie, "
