@@ -824,12 +824,15 @@ DICTIONARY = [
     ("ho-on", "ho ōn", "ὁ ὢν", "ho ōn",
      "'The One Who Is' — the Greek Bible's rendering of the divine name's explanation at the burning bush (Exodus 3:14). Revelation unfolds it into three tenses ('who is, and who was, and who is coming') and refuses to decline it — the deliberate grammar-break of 1:4.", ("Revelation", 1, 4)),
     ("martys", "martys", "μάρτυς", "martys",
-     "Witness — Jesus 'the faithful witness' (Revelation 1:5). In Revelation the word begins its migration toward English 'martyr': the witness whose testimony costs blood.", ("Revelation", 1, 5)),
+     "Witness — Jesus 'the faithful witness' (Revelation 1:5). In Revelation the word begins its migration toward English 'martyr': the witness whose testimony costs blood. ⚠ That migration completes on the page: the plural martysin names the TWO WITNESSES of chapter 11 (11:3), and their own testimony costs exactly what the word was already becoming — 'when they finish their testimony, the beast... will kill them' (11:7). The word's drift from 'one who testifies' to 'one killed for testifying' is not commentary added later; it happens inside this book's own nineteen verses.", ("Revelation", 1, 5)),
     ("hades", "hadēs", "ᾅδης", "hadēs",
      "Hades — the Greek Bible's rendering of the Hebrew Sheol, the grave-realm of the dead; NOT the fiery hell of later imagery (KJV prints 'hell' at Revelation 1:18). Christ holds its keys. ⚠ The word is older in this Gospel than in this library's own order of discussion: at Matthew 16:18, Peter is promised 'the gates of Hades will not overpower' the congregation Christ will build — a different set of keys from the ones Christ himself holds over 'Death and Hades' at Revelation 1:18, not the same claim repeated twice.", ("Revelation", 1, 18)),
     # ---- Revelation 10 (Greek) ----
     ("biblaridion", "biblaridion", "βιβλαρίδιον", "biblaridion",
      "A LITTLE SCROLL — a genuine diminutive of biblion, 'scroll, book', and the word for the object John is handed and told to eat (10:2, 9, 10). At verse 8 alone, the oldest manuscripts drop the diminutive and read plain biblion — the identical bare word already used for the great sealed scroll only the Lamb was worthy to open (Revelation 5:1). Whether that one bare verse means the SAME scroll, now open, or a smaller one merely modeled on it, is a real scholarly disagreement this text never resolves.", ("Revelation", 10, 2)),
+    # ---- Revelation 11 (Greek) ----
+    ("therion", "thērion", "θηρίον", "thērion",
+     "THE BEAST — this book's own word for its central antagonist, and it arrives already wearing the definite article: to thērion, 'THE beast' (11:7), as if the reader is expected to already know which one is meant, on its very first appearance. It does not surface again for several chapters (13:1; 17:8, both using the identical phrase 'coming up OUT OF THE ABYSS'), and its full portrait — heads, horns, a mortal wound healed — waits two chapters past this first bare mention. ⚠ Deliberately distinct from zōa, 'living creatures' (4:6-8), which this translation keeps untranslated as a technical term for exactly this reason — a false-friend collision the Greek itself does not make, since thērion and zōon share no root.", ("Revelation", 11, 7)),
     # ---- John 2 (Greek) ----
     ("semeion", "sēmeion", "σημεῖον", "sēmeion",
      "Sign — John's own word for the miracles: a deed that points past itself. Cana is 'the beginning of the signs' (2:11), first of the seven that structure the Gospel's first half — and the same root opens Revelation: 'he made it known in signs' (Rev 1:1).", ("John", 2, 11)),
@@ -2164,6 +2167,33 @@ ENCYCLOPEDIA = [
                ("Daniel", 2, 41), ("Job", 33, 6), ("Zechariah", 11, 13),
                ("Matthew", 27, 7), ("Romans", 9, 21), ("Revelation", 2, 27)],
          desc="The commonest craft in the ancient world, and the one the prophets reach for most often when they want to say something about God and a nation. Pottery is also the single most abundant thing archaeologists dig up in the Levant — fired clay is effectively immortal in the ground, which is why the relative dating of nearly every site behind this atlas rests on ceramic typology: the profile of a cooking-pot rim can date a floor. ⚠ The force of the metaphor is almost entirely in the PROCEDURE, so it is worth knowing how the job was actually done.<br><br><strong>How the work went.</strong> Clay was dug, soaked and left to settle so grit and pebbles sank out, then WEDGED — kneaded or trodden underfoot — to drive out the air. That preparation is not fussiness: a trapped air pocket or an unnoticed stone is precisely what makes a vessel go wrong later, pulling the wall off true under the hand, or bursting it in the kiln. The lump was thrown on a wheel which Hebrew calls the <em>ovnayim</em> (Jeremiah 18:3) — a DUAL noun meaning literally &lsquo;the two stones&rsquo;, and the word preserves the machine: a lower stone spun by hand or foot driving an upper stone on a pivot and socket, with the clay riding on top. Stone wheel-pairs of just this kind have been excavated at Levantine sites, alongside kilns and the dumps of misfired rejects that specialists call &lsquo;wasters&rsquo; — the physical residue of a pot &lsquo;marred in the potter&rsquo;s hand&rsquo;. Firing ran at roughly 700–1000°C. ⚠ The ONLY other place <em>ovnayim</em> occurs in the Bible is Exodus 1:16, where it is the BIRTH-STOOL the Hebrew mothers crouch on: the same dual word for the potter&rsquo;s twin stones and for the two stones of childbirth, both of them places where a life is given its shape. And because the trade needs clay beds, water and fuel, and because a kiln is a smoke-and-fire hazard, workshops sat at the city&rsquo;s edge — which is why Jeremiah is sent DOWN to the potter&rsquo;s house (18:2) and then out to the POTSHERD GATE (<em>sha&rsquo;ar ha-charsit</em>, 19:2) opening on the Valley of Ben-Hinnom: the same industrial quarter, visited twice.<br><br><strong>Why the image fits.</strong> Three things at once. The potter has total AUTHORITY over the lump — but he is not destroying it, he is getting it right; the marred clay is reworked, not punished. A pot is USEFUL rather than ornamental: a vessel exists to hold something. And — the part that carries Jeremiah 18 — the clay genuinely RESISTS: a stone or a bubble in the material really does refuse the shape, which is why the oracle built on the image is conditional (&lsquo;if that nation turn&rsquo;, 18:8) rather than fatalistic. ⚠ Above all, the craft has a DEADLINE. Wet clay can be collapsed and re-thrown as often as you like; fired clay can never be reworked, only broken. That one physical fact is the whole difference between Jeremiah&rsquo;s two back-to-back sign-acts: chapter 18 is soft clay reshaped on the wheel, and chapter 19 is a FIRED flask smashed &lsquo;so that it can never be mended again&rsquo; (19:11). The window for remaking is the window before the kiln.<br><br><strong>Where else it runs.</strong> The verb is there in the Bible&rsquo;s first pages, where God FORMS the man from the dust (Genesis 2:7) — the potter&rsquo;s verb, <a href='dictionary.html#yatsar'>yatsar</a>, doing the opening work. Isaiah turns it into a prayer: &lsquo;we are the clay and you our potter&rsquo; (64:8), the same two words as Jeremiah 18. Job grants the premise — &lsquo;I too am formed of clay&rsquo; (33:6). Psalm 2:9 makes the pot a threat, nations &lsquo;dashed like a potter&rsquo;s vessel&rsquo;, a line Revelation 2:27 quotes back. Daniel&rsquo;s statue stands on feet of iron mixed with potter&rsquo;s clay (2:41 — the Aramaic word there is <em>pechar</em>, not the Hebrew <em>yotser</em>), and the mixture IS the point: iron and fired clay will not bond. Paul presses it hardest of all, on whether the vessel may answer the one who shaped it (Romans 9:20-21). ⚠ And Zechariah 11:13&rsquo;s potter returns, by a road this project will have to walk carefully, as the &lsquo;potter&rsquo;s field&rsquo; bought with Judas&rsquo;s silver (Matthew 27:7-10). This entry grows as the translation reaches them."),
+    # ⚠ ALIAS TRAP, deliberately avoided: this project renders BOTH Noah's vessel
+    # (Genesis 6-9) and Moses' basket (Exodus 2) as the bare word "ark" — a deliberate
+    # kept wordplay (tevah), documented in Exodus 2's own note. This entry's refs
+    # include Exodus, so a bare "ark" alias here would risk the auto-linker attaching
+    # this entry to one of THOSE verses instead. Every alias below is therefore a
+    # multi-word phrase ("ark of the covenant" etc.) that never occurs for Noah's
+    # vessel or Moses' basket — never shorten these to bare "ark".
+    dict(slug="ark-of-the-covenant", name="The Ark of the Covenant", kind="thing",
+         aliases=["ark of the covenant", "Ark of the Covenant", "ark of the testimony",
+                   "ark of his covenant"],
+         refs=[("Exodus", 25, 10), ("Revelation", 11, 19)],
+         desc="The gold-covered acacia-wood chest, two and a half cubits long, that Moses is "
+              "told to build to hold 'the testimony' — the stone tablets — and over which God "
+              "promises to meet and speak with him from between two cherubim (Exodus "
+              "25:10&ndash;22, already on these pages). It travels through the wilderness and "
+              "into the land, sits at the center of Israel's worship for centuries, and then "
+              "simply disappears from the biblical record somewhere in the ruin of the first "
+              "temple, never described as destroyed and never described as recovered. A later "
+              "Jewish tradition (2 Maccabees 2:4&ndash;8, outside the canon this project "
+              "translates) has the prophet Jeremiah himself hide it in a cave on Mount Nebo "
+              "before the Babylonian destruction, sealing the entrance and declaring that its "
+              "place would 'remain unknown until God gathers his people together again.' The "
+              "New Testament's ONE mention of the ark answers that tradition's exact shape "
+              "without citing it: John sees 'the ark of his covenant' inside the temple IN "
+              "HEAVEN, opened for the first time (Revelation 11:19, already on these pages) "
+              "&mdash; the object was never destroyed and never merely lost, only ever looked "
+              "for in the wrong building."),
     # ⚠ ALIAS TRAP: the match pattern is \bBaal\b and a HYPHEN counts as a word
     # boundary, so "Baal" also matches inside Baal-hanan (an Edomite king, Gen 36 /
     # 1 Chr 1), Baal-zephon (a place, Exod 14) and Baal-zebub (2 Kgs 1) — all three
@@ -5509,6 +5539,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Revelation 11 ----
+    (("Exodus", 7, 19), ("Revelation", 11, 6), "the same power exercised twice on the same river across roughly sixty centuries of narrative time — Moses' opening plague on the Nile, and the authority John's two witnesses are given to turn 'the waters' to blood at will"),
+    (("2 Kings", 1, 10), ("Revelation", 11, 5), "Elijah's own exact power, worked twice on two companies of soldiers who came to arrest him, echoed almost verbatim as the standing defense of John's two witnesses — fire that comes out and devours anyone who tries to harm them"),
+    (("Exodus", 25, 10), ("Revelation", 11, 19), "the same chest, built to the cubit out of acacia wood and gold here, seen centuries after it vanishes from the earthly record — inside a temple John locates not on earth but in heaven"),
+    (("Matthew", 17, 3), ("Revelation", 11, 3), "the same pairing, transposed from a mountaintop to an unnamed street: Moses and Elijah stand beside Christ listening at the Transfiguration, and a reading many give to John's unnamed two witnesses fuses the same two figures' powers into one prophetic office"),
     # ---- Exodus 26 ----
     (("Exodus", 26, 33), ("Matthew", 27, 51), "the very curtain — or possibly its plainer outer neighbor, since Greek collapses both Hebrew names into one word — torn top to bottom at the moment Jesus dies, roughly thirteen centuries after this chapter first hung it"),
     # ---- Exodus 25 ----
@@ -12798,6 +12833,26 @@ DICTIONARY_ES = {
         "único versículo desnudo significa el MISMO rollo, ya abierto, o uno más pequeño "
         "simplemente modelado sobre él, es un desacuerdo erudito real que este texto nunca "
         "resuelve."),
+    # ---- Apocalipsis 11 ----
+    "martys": ("martys",
+        "Testigo —Jesús «el testigo fiel» (Apocalipsis 1:5). En Apocalipsis la palabra empieza "
+        "su migración hacia el español «mártir»: el testigo cuyo testimonio cuesta sangre. ⚠ Esa "
+        "migración se completa en la propia página: el plural martysin nombra a los DOS TESTIGOS "
+        "del capítulo 11 (11:3), y su propio testimonio cuesta exactamente lo que la palabra ya "
+        "estaba llegando a significar —«cuando terminen su testimonio, la bestia... los matará» "
+        "(11:7). El deslizamiento de la palabra, de «el que testifica» a «el que muere por "
+        "testificar», no es un comentario añadido después: ocurre dentro de los diecinueve "
+        "versículos de este mismo libro."),
+    "therion": ("thērion",
+        "LA BESTIA —la propia palabra de este libro para su antagonista central, y llega ya "
+        "vestida con el artículo definido: to thērion, «LA bestia» (11:7), como si se esperara "
+        "que el lector ya supiera de cuál se trata, en su primera aparición. No vuelve a "
+        "aparecer durante varios capítulos (13:1; 17:8, ambos con la frase idéntica «que sube "
+        "DEL ABISMO»), y su retrato completo —cabezas, cuernos, una herida mortal sanada— espera "
+        "dos capítulos más allá de esta primera mención desnuda. ⚠ Deliberadamente distinta de "
+        "zōa, «criaturas vivientes» (4:6-8), que esta traducción mantiene sin traducir como "
+        "término técnico precisamente por esto —una falsa coincidencia que el propio griego no "
+        "comete, ya que thērion y zōon no comparten raíz."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -12908,6 +12963,22 @@ ENCYCLOPEDIA_ES = {
         "seguidas de Jeremías: el capítulo 18 es barro blando rehecho en el torno, y el 19 es una vasija "
         "COCIDA quebrada «de modo que no se pueda remendar más» (19:11). La ventana para rehacer es la "
         "ventana anterior al horno."),
+    "ark-of-the-covenant": ("El arca del pacto",
+        "El cofre de madera de acacia recubierto de oro, de dos codos y medio de largo, que se "
+        "ordena a Moisés construir para guardar «el testimonio» —las tablas de piedra— y sobre "
+        "el cual Dios promete reunirse y hablar con él entre dos querubines (Éxodo "
+        "25:10&ndash;22, ya en estas páginas). Viaja por el desierto y entra en la tierra, ocupa "
+        "el centro del culto de Israel durante siglos, y luego simplemente desaparece del "
+        "registro bíblico en algún lugar de la ruina del primer templo, sin que jamás se la "
+        "describa destruida ni recuperada. Una tradición judía posterior (2 Macabeos "
+        "2:4&ndash;8, fuera del canon que traduce este proyecto) hace que el propio profeta "
+        "Jeremías la esconda en una cueva del monte Nebo antes de la destrucción babilónica, "
+        "sellando la entrada y declarando que su lugar «permanecería desconocido hasta que Dios "
+        "reúna de nuevo a su pueblo». La ÚNICA mención del arca en el Nuevo Testamento responde "
+        "a esa tradición sin citarla: Juan ve «el arca de su pacto» dentro del templo QUE ESTÁ "
+        "EN EL CIELO, abierto por primera vez (Apocalipsis 11:19, ya en estas páginas) —el "
+        "objeto nunca fue destruido ni simplemente perdido, solo buscado siempre en el edificio "
+        "equivocado."),
     "baal": ("Baal",
         "El dios de la tormenta de los cananeos y fenicios, y el rival que los profetas hebreos nombran más "
         "que a ningún otro. <em>Ba'al</em> es un sustantivo hebreo corriente antes de ser un nombre — "
@@ -14617,6 +14688,77 @@ CHAPTER_ART = {
         license="CC0",
         source_url="https://commons.wikimedia.org/wiki/File:Saint_John_Devouring_the_Book,_"
                    "from_The_Apocalypse_MET_DP816918.jpg",
+    )],
+    "rev11": [dict(
+        file="bamberg-apocalypse-two-witnesses.jpg",
+        title="The Two Witnesses, from the Bamberg Apocalypse",
+        title_es="Los dos testigos, del Apocalipsis de Bamberg",
+        artist="Unknown illuminator",
+        artist_es="Iluminador desconocido",
+        year="c. 1000&ndash;1020",
+        location="Bamberg State Library, Bamberg, Germany (MS A. II. 42)",
+        location_es="Biblioteca Estatal de Bamberg, Bamberg, Alemania (MS A. II. 42)",
+        alt="A page from an eleventh-century illuminated manuscript on cream parchment, divided "
+            "into panels bordered in red. Latin text runs across the top. In the upper-left "
+            "panel, a green-skinned, haloed, bearded man in an orange-and-red checked robe "
+            "stands preaching against a slate-gray background, one hand raised, palm out. In "
+            "the upper-right panel, an identical haloed man in the same robe stands in the "
+            "same preaching pose against a solid gold background. Between and below the two "
+            "figures, a blue serpent's coiled body descends and joins a brown, four-legged, "
+            "wolf-like beast with pointed ears, its open jaws breathing an orange flame. In the "
+            "lower-right panel, two identical haloed, bearded men in checked robes stand side "
+            "by side, both preaching with raised hands, against gray and gold backgrounds. In "
+            "the lower-left corner, two more haloed men in the same robes lie collapsed on top "
+            "of one another, eyes closed.",
+        note="&#9888; <strong>The same two witnesses appear four times on one page &mdash; the "
+             "manuscript's way of telling a whole story in a single image.</strong> Medieval "
+             "illuminators routinely painted one figure at several moments of a narrative "
+             "within a single frame rather than splitting it into separate pictures; read left "
+             "to right, top to bottom, this folio shows the two witnesses preaching (upper "
+             "panels), the beast rising to attack them (center), the two of them confronted "
+             "together (lower right), and finally fallen, dead, in the corner &mdash; their "
+             "whole ministry and death compressed into one composition.<br><br>&#9888; "
+             "<strong>The fire comes from the BEAST's mouth here, not the witnesses'.</strong> "
+             "The text gives the witnesses themselves the fire-breathing power (v5: 'fire "
+             "pours out of their mouth and devours their enemies'); this illuminator instead "
+             "puts the flame in the beast's jaws, reassigning the weapon to the attacker rather "
+             "than the defenders. Whether that is a simple artistic choice, a conflation with "
+             "the beast's own fearsome portrait two chapters later (13:1&ndash;10, whenever "
+             "that chapter is translated), or a reading of the scene as the beast's assault "
+             "overwhelming their power rather than being repelled by it, the manuscript does "
+             "not say.<br><br>The Latin caption at the top of the page &mdash; 'Vae secundum "
+             "abiit; Vae tertium venit cito', 'the second woe has passed; the third woe comes "
+             "quickly' &mdash; is this chapter's own v14, almost verbatim. The illuminator has "
+             "captioned the witnesses' whole story with the line that marks the HINGE between "
+             "their death and the seventh trumpet, not a caption for the death scene alone.",
+        note_es="&#9888; <strong>Los mismos dos testigos aparecen cuatro veces en una sola "
+             "página &mdash;la manera medieval de contar una historia entera en una sola "
+             "imagen.</strong> Los iluminadores medievales pintaban con frecuencia una misma "
+             "figura en varios momentos de una narración dentro de un solo marco, en vez de "
+             "dividirla en imágenes separadas; le&iacute;do de izquierda a derecha y de arriba "
+             "abajo, este folio muestra a los dos testigos predicando (paneles superiores), la "
+             "bestia levant&aacute;ndose para atacarlos (centro), a los dos juntos "
+             "enfrent&aacute;ndola (abajo a la derecha), y por &uacute;ltimo ca&iacute;dos, "
+             "muertos, en la esquina &mdash;todo su ministerio y su muerte comprimidos en una "
+             "sola composici&oacute;n.<br><br>&#9888; <strong>Aqu&iacute; el fuego sale de la "
+             "boca de LA BESTIA, no de la de los testigos.</strong> El texto da a los testigos "
+             "mismos el poder de exhalar fuego (v. 5: &laquo;fuego sale de su boca y devora a "
+             "sus enemigos&raquo;); este iluminador pone en cambio la llama en las fauces de la "
+             "bestia, reasignando el arma al atacante en vez de a los defensores. Si esto es "
+             "una simple elecci&oacute;n art&iacute;stica, una confusi&oacute;n con el propio "
+             "retrato temible de la bestia dos cap&iacute;tulos despu&eacute;s (13:1&ndash;10, "
+             "cuando ese cap&iacute;tulo se traduzca), o una lectura de la escena como el "
+             "asalto de la bestia venciendo su poder en vez de siendo repelido por &eacute;l, el "
+             "manuscrito no lo dice.<br><br>La leyenda lat&iacute;na en la parte superior de la "
+             "p&aacute;gina &mdash;&laquo;Vae secundum abiit; Vae tertium venit cito&raquo;, "
+             "&laquo;el segundo ay ha pasado; el tercer ay viene pronto&raquo;&mdash; es el v. "
+             "14 de este cap&iacute;tulo, casi palabra por palabra. El iluminador ha subtitulado "
+             "toda la historia de los testigos con la l&iacute;nea que marca la BISAGRA entre su "
+             "muerte y la s&eacute;ptima trompeta, no un pie de imagen solo para la escena de la "
+             "muerte.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:BambergApocalypseFolio027v2Prophets"
+                   "AndBeastFromAbyss.JPG",
     )],
     "rev5": [dict(
         file="burckhardt-wildt-apocalypse-lamb.jpg",
