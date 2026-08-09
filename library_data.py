@@ -833,6 +833,9 @@ DICTIONARY = [
     # ---- Revelation 11 (Greek) ----
     ("therion", "thērion", "θηρίον", "thērion",
      "THE BEAST — this book's own word for its central antagonist, and it arrives already wearing the definite article: to thērion, 'THE beast' (11:7), as if the reader is expected to already know which one is meant, on its very first appearance. It does not surface again for several chapters (13:1; 17:8, both using the identical phrase 'coming up OUT OF THE ABYSS'), and its full portrait — heads, horns, a mortal wound healed — waits two chapters past this first bare mention. ⚠ Deliberately distinct from zōa, 'living creatures' (4:6-8), which this translation keeps untranslated as a technical term for exactly this reason — a false-friend collision the Greek itself does not make, since thērion and zōon share no root.", ("Revelation", 11, 7)),
+    # ---- Revelation 12 (Greek) ----
+    ("kategor", "katēgōr", "κατήγωρ", "katēgōr",
+     "THE ACCUSER — not the ordinary Greek word for a prosecutor (katēgoros, which most later manuscripts smooth this to), but a rarer, Semitic-flavored form found almost nowhere else in surviving Greek — a foreign-sounding title for a figure John elsewhere leaves untranslated as SATAN, itself Hebrew for 'accuser.' English keeps the ordinary root in CATEGORY, a thing one is accused, or charged, of belonging to. The scene it names — a prosecutor accusing a man before God 'day and night' — restages Job 1:6 and Zechariah 3:1's own heavenly courtrooms a third and final time, only here the court itself is dissolved.", ("Revelation", 12, 10)),
     # ---- John 2 (Greek) ----
     ("semeion", "sēmeion", "σημεῖον", "sēmeion",
      "Sign — John's own word for the miracles: a deed that points past itself. Cana is 'the beginning of the signs' (2:11), first of the seven that structure the Gospel's first half — and the same root opens Revelation: 'he made it known in signs' (Rev 1:1).", ("John", 2, 11)),
@@ -2272,8 +2275,8 @@ ENCYCLOPEDIA = [
          desc="A Hellenistic city of the DECAPOLIS, on the heights south-east of the Sea of Galilee (modern Umm Qais in Jordan) — Greek-speaking, with a theatre and colonnaded streets, and famous enough to have produced philosophers and poets. Its territory apparently reached down toward the lake, which is what 'the region of the Gadarenes' means. ⚠ The name is one of the New Testament's best-known textual knots, and the geography is why: GADARA sits about six miles from the shore and GERASA a good thirty, and neither is a lakeside town with a cliff running into the water. The manuscripts differ across all three Gospels; the earliest witnesses of Matthew read Gadarenes (which this translation prints), while much of the later tradition reads GERGESENES — a name Origen argued for in the third century precisely because he knew the other two did not fit the terrain. Both a scribal correction toward plausible geography and an original local name remain live options; what can be said is that the difficulty was noticed early and argued about honestly. ⚠ The herd of pigs in the story is itself a piece of geography: unclean animals grazing in quantity mean Gentile country.",
          refs=[("Matthew", 8, 28)]),
     dict(slug="satan", name="Satan", kind="person", aliases=["Satan"],
-         desc="'The ADVERSARY' — Hebrew ha-satan is not originally a name but a job description, the one who opposes or brings the accusation; in Job he appears among the sons of God as a kind of prosecutor, and in Zechariah 3 he stands to accuse the high priest. The Greek Old Testament renders it DIABOLOS, 'slanderer', which is where English 'devil' comes from. ⚠ In Matthew 4 both words sit side by side: the narrator calls him 'the devil' and 'the tempter', and when Jesus finally addresses him directly he uses the Hebrew adversary-name — 'Go away, SATAN' (4:10). ⚠ Matthew then puts those same words in Jesus' mouth once more, at 16:23, to PETER, when the disciple tells him he must not suffer: 'Go behind me, Satan.' The name attaches not to a monster but to whoever offers the shortcut. Scripture is markedly reticent about his origin; the familiar biography (a fallen angel of light) is assembled largely from Isaiah 14 and Ezekiel 28, passages whose stated subjects are the kings of Babylon and Tyre — a later synthesis rather than a claim of the text.",
-         refs=[("Matthew", 4, 10)]),
+         desc="'The ADVERSARY' — Hebrew ha-satan is not originally a name but a job description, the one who opposes or brings the accusation; in Job he appears among the sons of God as a kind of prosecutor, and in Zechariah 3 he stands to accuse the high priest. The Greek Old Testament renders it DIABOLOS, 'slanderer', which is where English 'devil' comes from. ⚠ In Matthew 4 both words sit side by side: the narrator calls him 'the devil' and 'the tempter', and when Jesus finally addresses him directly he uses the Hebrew adversary-name — 'Go away, SATAN' (4:10). ⚠ Matthew then puts those same words in Jesus' mouth once more, at 16:23, to PETER, when the disciple tells him he must not suffer: 'Go behind me, Satan.' The name attaches not to a monster but to whoever offers the shortcut. Scripture is markedly reticent about his origin; the familiar biography (a fallen angel of light) is assembled largely from Isaiah 14 and Ezekiel 28, passages whose stated subjects are the kings of Babylon and Tyre — a later synthesis rather than a claim of the text. ⚠ Revelation 12:9 is the first place in the whole Bible where the serpent of Genesis 3 is named outright as this same figure — 'the great dragon... the ancient serpent, the one called Devil and Satan' — an identification centuries of later readers simply assumed, made explicit in the text for the first time here, on the very chapter that also puts the serpent's own head under a heel (Genesis 3:15).",
+         refs=[("Matthew", 4, 10), ("Revelation", 12, 9)]),
     dict(slug="sea-of-galilee", name="The Sea of Galilee", kind="place",
          aliases=["sea of Galilee"],
          coords=(32.80, 35.59, 0.35),
@@ -5539,6 +5542,14 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Revelation 12 ----
+    (("Genesis", 3, 1), ("Revelation", 12, 9), "the first place in the whole Bible where the crafty serpent of Eden is named outright as 'the Devil and Satan' — an identification later ages simply assumed, made explicit here for the first time"),
+    (("Genesis", 37, 9), ("Revelation", 12, 1), "Joseph's own boyhood dream — sun, moon, and eleven bowing stars — turned constellation and rounded to twelve, the tribes complete, on the woman's crown"),
+    (("Exodus", 19, 4), ("Revelation", 12, 14), "the identical rescue image, eagle's wings carrying a fleeing people into a wilderness of their own — Israel's exodus run again on the same terrain"),
+    (("Job", 1, 6), ("Revelation", 12, 10), "the heavenly courtroom's first staging — 'the Accuser also came among them' — closed for good in Revelation's own third and final staging of the same scene"),
+    (("Zechariah", 3, 1), ("Revelation", 12, 10), "the Accuser standing to prosecute a man before God, staged a second time on the high priest Joshua — and thrown out of the court entirely on its third and last appearance"),
+    (("Daniel", 12, 1), ("Revelation", 12, 7), "Michael, 'the great prince who stands over the sons of your people,' leads the counter-attack in person — the same archangel, and the same chapter that lent this book its own 'time, times, and half a time'"),
+    (("Jude", 1, 9), ("Revelation", 12, 7), "the only other place in Scripture Michael is called archangel by name — disputing with the Devil over the body of Moses there, leading heaven's whole army against him here"),
     # ---- Revelation 11 ----
     (("Exodus", 7, 19), ("Revelation", 11, 6), "the same power exercised twice on the same river across roughly sixty centuries of narrative time — Moses' opening plague on the Nile, and the authority John's two witnesses are given to turn 'the waters' to blood at will"),
     (("2 Kings", 1, 10), ("Revelation", 11, 5), "Elijah's own exact power, worked twice on two companies of soldiers who came to arrest him, echoed almost verbatim as the standing defense of John's two witnesses — fire that comes out and devours anyone who tries to harm them"),
@@ -12853,6 +12864,17 @@ DICTIONARY_ES = {
         "zōa, «criaturas vivientes» (4:6-8), que esta traducción mantiene sin traducir como "
         "término técnico precisamente por esto —una falsa coincidencia que el propio griego no "
         "comete, ya que thērion y zōon no comparten raíz."),
+    # ---- Apocalipsis 12 ----
+    "kategor": ("katēgōr",
+        "EL ACUSADOR —no la palabra griega corriente para un fiscal (katēgoros, a la que la "
+        "mayoría de manuscritos posteriores lo suavizan), sino una forma más rara, de sabor más "
+        "semítico, que casi no aparece en ningún otro lugar del griego conservado —un título de "
+        "sonido extranjero para una figura que Juan deja sin traducir en otras partes como "
+        "SATANÁS, que en hebreo significa precisamente «acusador». El español conserva la misma "
+        "raíz ordinaria en CATEGORÍA, aquello de lo que se acusa, o se carga, a alguien. La "
+        "escena que nombra —un fiscal acusando a un hombre delante de Dios «día y noche»— "
+        "repone por tercera y última vez los tribunales celestiales de Job 1:6 y Zacarías 3:1, "
+        "solo que aquí el tribunal mismo queda disuelto."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -13203,6 +13225,26 @@ ENCYCLOPEDIA_ES = {
         "llanura costera occidental de la península — y vuelve a nombrarse una sola vez más, como una etapa que "
         "el pueblo recuerda haber pasado (Números 33:11-12)."),
     "upper-room": ("El aposento alto", "El cuarto de arriba, y el Nuevo Testamento lo llama de tres maneras distintas. Lucas 22:11 hace que Jes\u00fas pregunte por el <em>katalyma</em>, el APOSENTO DE HU\u00c9SPEDES: la misma palabra que Lucas usa de la casa llena de Bel\u00e9n en 2:7. El vers\u00edculo siguiente lo llama <em>anagaion</em>, aposento alto, palabra que sale dos veces en el Nuevo Testamento y las dos en esta escena (Lucas 22:12; Marcos 14:15). Y Hechos 1:13 lo llama <em>hyper&#333;on</em>, el cuarto de arriba donde los once esperan entre la ascensi\u00f3n y Pentecost\u00e9s. \u26a0 Lucas ata los dos sucesos a un mismo lugar. \u26a0 Un edificio de la Colina Occidental de Jerusal\u00e9n se identifica con ese cuarto desde al menos el siglo IV. Jacob Pinkerfeld lo excav\u00f3 tras los da\u00f1os de mortero de 1948, baj\u00f3 por suelos \u00e1rabes, cruzados y bizantinos hasta un suelo de \u00e9poca romana, y fech\u00f3 las hiladas inferiores y ese suelo en el SIGLO I. Ley\u00f3 el edificio como sinagoga y muri\u00f3 en 1956, antes de que se tradujeran los grafitos hallados en el enlucido del siglo I ca\u00eddo dentro. La traducci\u00f3n, cuando lleg\u00f3, inclu\u00eda <em>&laquo;oh Jes\u00fas, que yo viva&raquo;</em>, lo que reformul\u00f3 el edificio como sinagoga JUDEOCRISTIANA \u2014 una casa de reuni\u00f3n levantada por jud\u00edos que segu\u00edan a Jes\u00fas \u2014 y encajaba con la noticia de Eusebio (h. 318) de una gran iglesia en la Colina Occidental construida por jud\u00edos. \u26a0 Y su nicho de la Tor\u00e1 no mira al Monte del Templo: mira al noroeste, hacia el G\u00f3lgota y la tumba vac\u00eda. Sea lo que sea, es una decisi\u00f3n arquitect\u00f3nica deliberada sobre d\u00f3nde se hab\u00eda desplazado el centro."),
+    "satan": ("Satan&aacute;s", "&laquo;El ADVERSARIO&raquo; &mdash;el hebreo ha-satan no es originalmente un "
+        "nombre propio sino un cargo, el que se opone o presenta la acusaci&oacute;n; en Job aparece entre los "
+        "hijos de Dios como una especie de fiscal, y en Zacar&iacute;as 3 se pone de pie para acusar al sumo "
+        "sacerdote. El Antiguo Testamento griego lo traduce como DIABOLOS, &laquo;calumniador&raquo;, de donde "
+        "viene la palabra espa&ntilde;ola &laquo;diablo&raquo;. &#9888; En Mateo 4 ambas palabras aparecen juntas: "
+        "el narrador lo llama &laquo;el diablo&raquo; y &laquo;el tentador&raquo;, y cuando Jes&uacute;s por fin "
+        "se dirige a &eacute;l directamente usa el nombre-adversario hebreo &mdash;&laquo;V&eacute;te, "
+        "SATAN&Aacute;S&raquo; (4:10). &#9888; Mateo pone esas mismas palabras en boca de Jes&uacute;s una vez "
+        "m&aacute;s, en 16:23, dirigidas a PEDRO, cuando el disc&iacute;pulo le dice que no debe sufrir: "
+        "&laquo;P&oacute;nte detr&aacute;s de m&iacute;, Satan&aacute;s&raquo;. El nombre no se adhiere a un "
+        "monstruo, sino a quien sea que ofrezca el atajo. La Escritura es notablemente reticente sobre su "
+        "origen; la biograf&iacute;a familiar (un &aacute;ngel de luz ca&iacute;do) se arma en gran parte a "
+        "partir de Isa&iacute;as 14 y Ezequiel 28, pasajes cuyos sujetos declarados son los reyes de Babilonia "
+        "y de Tiro &mdash;una s&iacute;ntesis posterior, no una afirmaci&oacute;n del propio texto. &#9888; "
+        "Apocalipsis 12:9 es el primer lugar de toda la Biblia donde la serpiente de G&eacute;nesis 3 es "
+        "nombrada abiertamente como esta misma figura &mdash;&laquo;el gran drag&oacute;n&hellip; la serpiente "
+        "antigua, el llamado Diablo y Satan&aacute;s&raquo;&mdash;, una identificaci&oacute;n que siglos de "
+        "lectores posteriores simplemente dieron por sentada, hecha expl&iacute;cita en el texto por primera "
+        "vez aqu&iacute;, en el mismo cap&iacute;tulo que tambi&eacute;n pone la cabeza de la propia serpiente "
+        "bajo un tal&oacute;n (G&eacute;nesis 3:15)."),
 }
 
 # Places, so the Spanish atlas has real content rather than an empty page. The
@@ -14759,6 +14801,46 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:BambergApocalypseFolio027v2Prophets"
                    "AndBeastFromAbyss.JPG",
+    )],
+    "rev12": [dict(
+        file="durer-apocalyptic-woman.jpg",
+        title="The Apocalyptic Woman",
+        title_es="La mujer apocalíptica",
+        artist="Albrecht Dürer",
+        artist_es="Alberto Durero",
+        year="1498",
+        location="National Gallery of Art, Washington, D.C.",
+        location_es="Galería Nacional de Arte, Washington, D.C.",
+        alt="A 1498 woodcut by Albrecht Dürer. At center-left, a winged woman haloed in "
+            "radiating light stands on a crescent moon, hands folded in prayer, confronted by a "
+            "coiling seven-headed, crowned dragon that fills the lower right of the scene. Above, "
+            "God the Father is enthroned in clouds, flanked by winged cherub heads and an angel; a "
+            "wavy trail of stars streams down from the upper right toward the dragon's tail.",
+        note="&#9888; <strong>D&uuml;rer compresses several verses into one crowded tableau</strong> "
+             "&mdash; a technique his whole Apocalypse series uses freely, rather than splitting the "
+             "chapter into separate scenes. The woman already wears the wings this book gives her "
+             "only at verse 14; what may be the flood of verse 15 already pours from the dragon's "
+             "mouth toward the ground; and no child is shown being born or caught up, though the "
+             "moment is clearly meant to evoke it. The seven heads each carry a small crown of their "
+             "own &mdash; D&uuml;rer's reading of the seven diadems of verse 3 &mdash; and the trail "
+             "of stars streaming from the upper right toward the dragon's tail renders the swept-away "
+             "third of heaven's stars (verse 4) as a single continuous line, rather than as stars "
+             "actually falling to earth.",
+        note_es="&#9888; <strong>Durero comprime varios vers&iacute;culos en un solo cuadro "
+             "abarrotado</strong> &mdash;una t&eacute;cnica que toda su serie del Apocalipsis usa con "
+             "libertad, en vez de dividir el cap&iacute;tulo en escenas separadas. La mujer ya lleva "
+             "las alas que este libro le da solo en el vers&iacute;culo 14; lo que podr&iacute;a ser "
+             "la inundaci&oacute;n del vers&iacute;culo 15 ya brota de la boca del drag&oacute;n hacia "
+             "el suelo; y no se muestra ning&uacute;n hijo naciendo ni siendo arrebatado, aunque el "
+             "momento claramente busca evocarlo. Las siete cabezas llevan cada una su propia corona "
+             "peque&ntilde;a &mdash;la lectura de Durero de las siete diademas del vers&iacute;culo 3"
+             "&mdash;, y el rastro de estrellas que fluye desde arriba a la derecha hacia la cola del "
+             "drag&oacute;n representa como una sola l&iacute;nea continua la tercera parte de las "
+             "estrellas del cielo arrastradas (vers&iacute;culo 4), en vez de estrellas realmente "
+             "cayendo a la tierra.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_The_Apocalyptic_"
+                   "Woman,_1498,_NGA_142358.jpg",
     )],
     "rev5": [dict(
         file="burckhardt-wildt-apocalypse-lamb.jpg",
