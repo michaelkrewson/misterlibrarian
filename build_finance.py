@@ -804,8 +804,10 @@ BOARD_BODY_TEMPLATE = """  <table class="board">
   <div class="panel">
     <h2>How these numbers are made</h2>
     <p>A market capitalisation is just a price multiplied by a count of the thing. For a
-    company that count is public and exact. For gold and Bitcoin it is an estimate, so
-    the working is shown here rather than asked to be taken on faith:</p>
+    company that count is public and exact. For gold and silver it is a genuine estimate.
+    For Bitcoin, it turns out not to be a guess at all — it can be computed exactly from
+    public information anyone can check. The working for all four is shown here rather
+    than asked to be taken on faith:</p>
     <ul>
       <li><b>Companies</b> — market cap as reported for the listed shares.</li>
       <li><b>Gold</b> — spot price × <code>%(gold)s tonnes</code> of above-ground stock,
@@ -813,13 +815,16 @@ BOARD_BODY_TEMPLATE = """  <table class="board">
       <li><b>Silver</b> — the same arithmetic on <code>%(silver)s tonnes</code>. Silver's
       above-ground figure is the softest number on this page; estimates differ a great deal
       depending on whether industrial silver that has been used up is counted.</li>
-      <li><b>Bitcoin</b> — price × <code>%(btcc)s</code> coins in circulation, a number
-      that creeps slowly upward toward its 21 million limit.</li>
+      <li><b>Bitcoin</b> — price × <code>%(btcc)s</code> coins, computed exactly from
+      block height <code>%(btch)s</code> and Bitcoin's own halving schedule. Not an
+      estimate — <a href="how-many-bitcoins-are-there.html">the arithmetic is worked
+      out here →</a>.</li>
     </ul>
-    <p>The tonnage and supply constants move slowly and are refreshed about once a year;
-    prices and company values refresh through the day. The 30-day line is a shape, not a
-    scale — each one is drawn to its own high and low, so two sparklines cannot be compared
-    against each other.</p>
+    <p>Gold and silver's tonnage estimates move slowly and are refreshed about once a
+    year. Everything else on this board — prices, company values, and now Bitcoin's exact
+    coin count — refreshes roughly hourly. The 30-day line is a shape, not a scale — each
+    one is drawn to its own high and low, so two sparklines cannot be compared against
+    each other.</p>
     <p>This is a curated list, not every asset on earth: the metals, Bitcoin, and the
     large companies that sit near enough to Bitcoin's rank to give it context. Nothing here
     is investment advice, and nothing here is for sale.</p>
@@ -837,6 +842,7 @@ def build_board(board):
     gold_t = consts.get("gold_tonnes")
     silver_t = consts.get("silver_tonnes")
     btc_c = consts.get("btc_circulating")
+    btc_h = consts.get("btc_block_height")
 
     btc_line = ""
     if btc_rank:
@@ -856,7 +862,9 @@ def build_board(board):
        "btc": btc_line, "table": BOARD_BODY_TEMPLATE % {"rows": rows,
                                                         "gold": "{:,}".format(gold_t),
                                                         "silver": "{:,}".format(silver_t),
-                                                        "btcc": "{:,}".format(btc_c)}}
+                                                        "btcc": "{:,}".format(btc_c),
+                                                        "btch": ("{:,}".format(btc_h)
+                                                                 if btc_h else "the current block")}}
 
     return _shell(title="The Biggest Assets in the World — %s" % SITE_NAME,
                   desc=desc, url="%sboard.html" % BASE_URL, active="board", body=body)

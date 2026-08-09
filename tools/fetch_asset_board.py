@@ -24,11 +24,17 @@ WHAT THE NUMBERS ARE
 ────────────────────
   stock   market cap straight from yfinance fast_info
   metal   spot price × a fixed above-ground-tonnage constant
-  crypto  price × a fixed circulating-supply constant
+  crypto  price × the EXACT circulating supply, computed from the current block
+          height and Bitcoin's own halving schedule — not an estimate at all
 
-The metal and crypto constants are estimates that move slowly; they are stamped into
-the payload as `constants` so the page can show its own working rather than asking
-the reader to take a $30T number on faith. Refresh them about once a year.
+Gold and silver's above-ground tonnage are genuine estimates that move slowly; they
+are stamped into the payload as `constants` so the page can show its own working
+rather than asking the reader to take a $30T number on faith. Bitcoin is different:
+issuance is a public, deterministic rule (50 BTC/block, halved every 210,000 blocks),
+so `_btc_supply_sats()` below derives the coin count directly from a live block
+height instead of carrying its own slow-moving guess. See the entry
+"How Many Bitcoins Are There, Exactly?" in source/finance/ for the full arithmetic.
+The metal constants still only need refreshing about once a year.
 
 NOTHING HERE IS PERSONAL. Every input is a public market quote. This script has no
 credentials, reads no account, and knows nothing about anyone's holdings — which is
@@ -52,11 +58,16 @@ OUT = os.path.join(ROOT, "source", "finance", "asset_board.json")
 
 OZ_PER_TONNE = 32150.7466
 
-# Above-ground stocks / circulating supply. Estimates, and the silver figure in
-# particular varies a lot between sources — hence `constants` in the payload.
+# Above-ground stocks. Genuine estimates, and the silver figure in particular
+# varies a lot between sources — hence `constants` in the payload.
 GOLD_TONNES = 216265          # World Gold Council, ~2024
 SILVER_TONNES = 1750000       # common board assumption; estimates vary widely
-BTC_CIRCULATING = 19_870_000  # grows slowly toward the 21M cap
+
+# Bitcoin's supply is NOT an estimate — see _btc_supply_sats() below — but this
+# is still the number that runs the board on a day every block-height API in
+# _BLOCK_HEIGHT_APIS has failed. Bump it every so often so a persistently offline
+# run degrades to "close" rather than "years stale"; it is never the normal path.
+BTC_CIRCULATING = 19_870_000
 
 # Metals, Bitcoin, and the mega-caps that sit around Bitcoin's rank, so Bitcoin is
 # always shown in context. Over-inclusion is safe: the board ranks by live market cap
@@ -81,6 +92,69 @@ ASSETS = [
     {"name": "Walmart",            "symbol": "WMT",     "kind": "stock",  "country": "🇺🇸", "domain": "walmart.com"},
     {"name": "Visa",               "symbol": "V",       "kind": "stock",  "country": "🇺🇸", "domain": "visa.com"},
 ]
+
+
+def _btc_supply_sats(height):
+    """Total satoshis mined through and including block `height`.
+
+    This is arithmetic, not an estimate. Bitcoin's issuance is a public,
+    deterministic rule — 50 BTC per block, halved every 210,000 blocks — and
+    this follows Bitcoin Core's own consensus subsidy formula exactly:
+    subsidy(h) = (50 BTC) >> (h // 210_000), summed over h = 1..height, done in
+    integer satoshis throughout to avoid float error.
+
+    Block 0 (the genesis block) is deliberately excluded from that sum: its
+    coinbase transaction was never added to the spendable UTXO set — a quirk
+    from Bitcoin's original code, not a rule of the halving schedule — so no
+    block explorer (blockchain.info, mempool.space) ever counts those 50 BTC
+    as circulating. See https://en.bitcoin.it/wiki/Genesis_block. That is also
+    why this is 50 BTC short of the "20,999,999.9769" figure quoted almost
+    everywhere: that number is the raw subsidy-schedule sum INCLUDING genesis;
+    this function returns the true spendable maximum, which is 50 BTC less.
+    """
+    HALVING_INTERVAL = 210_000
+    INITIAL_SUBSIDY = 50 * 100_000_000  # satoshis
+    total = 0
+    for epoch in range((height // HALVING_INTERVAL) + 1):
+        subsidy = INITIAL_SUBSIDY >> epoch
+        if subsidy == 0:
+            break
+        epoch_lo = epoch * HALVING_INTERVAL
+        epoch_hi = epoch_lo + HALVING_INTERVAL - 1
+        lo = max(1, epoch_lo)          # skip genesis's block-0 subsidy
+        hi = min(height, epoch_hi)
+        if hi >= lo:
+            total += (hi - lo + 1) * subsidy
+    return total
+
+
+# Public, keyless, no-auth block explorers, tried in order until one answers.
+# Three independent operators so a single outage or a single blocked IP can't
+# blind this script to the one number it actually needs from the chain itself.
+_BLOCK_HEIGHT_APIS = [
+    "https://mempool.space/api/blocks/tip/height",
+    "https://blockchain.info/q/getblockcount",
+    "https://blockstream.info/api/blocks/tip/height",
+]
+
+
+def _btc_block_height():
+    """The current Bitcoin block height, or None if every source failed.
+
+    None is the honest answer on a bad network day — the caller falls back to
+    BTC_CIRCULATING, the same fail-safe posture every other number in this
+    script already has (a bad Yahoo day keeps the previous board rather than
+    going blank; a bad block-explorer day keeps the previous coin count).
+    """
+    import urllib.request
+
+    for url in _BLOCK_HEIGHT_APIS:
+        try:
+            with urllib.request.urlopen(url, timeout=6) as r:
+                return int(r.read().decode().strip())
+        except Exception:
+            continue
+    return None
 
 
 def _closes(df):
@@ -131,7 +205,7 @@ def _fast(symbol):
             g("previous_close", "previousClose"))
 
 
-def one(asset):
+def one(asset, btc_circulating):
     """One board row, or None if it could not be priced."""
     sym = asset.get("px") or asset["symbol"]
     spark = _bars(sym)
@@ -151,7 +225,7 @@ def one(asset):
         tonnes = GOLD_TONNES if asset["symbol"] == "GOLD" else SILVER_TONNES
         mcap = price * tonnes * OZ_PER_TONNE
     elif asset["kind"] == "crypto":
-        mcap = price * BTC_CIRCULATING
+        mcap = price * btc_circulating
 
     if not mcap or mcap <= 0:
         return None
@@ -172,10 +246,18 @@ def one(asset):
 
 def compute():
     """The ranked board, or None if nothing resolved (caller keeps the old file)."""
+    btc_height = _btc_block_height()
+    if btc_height:
+        btc_circulating = round(_btc_supply_sats(btc_height) / 1e8, 2)
+    else:
+        print("  ! every block-height source failed — falling back to the "
+              "BTC_CIRCULATING constant", file=sys.stderr)
+        btc_circulating = float(BTC_CIRCULATING)
+
     rows = []
     for a in ASSETS:
         try:
-            r = one(a)
+            r = one(a, btc_circulating)
         except Exception as exc:
             print(f"  ! {a['symbol']}: {exc}", file=sys.stderr)
             continue
@@ -202,7 +284,8 @@ def compute():
         "constants": {
             "gold_tonnes": GOLD_TONNES,
             "silver_tonnes": SILVER_TONNES,
-            "btc_circulating": BTC_CIRCULATING,
+            "btc_circulating": btc_circulating,
+            "btc_block_height": btc_height,   # None only if every source failed
         },
     }
 
