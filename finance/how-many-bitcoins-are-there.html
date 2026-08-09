@@ -141,6 +141,7 @@ a{color:#5eb3d6}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
 .edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
   font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
@@ -215,16 +216,18 @@ a{color:#5eb3d6}
   
   <article class="entry">
     <h1 class="etitle">How Many Bitcoins Are There, Exactly?</h1>
-    <p class="edate">AUGUST 8, 2026</p>
+    <p class="edate">AUGUST 8, 2026 <span class="live-stamp">· numbers refreshed 2026-08-09 03:59 UTC, straight from the chain</span></p>
     
-<p>At block 961,671 — the moment I'm writing this — exactly 20,067,675 bitcoin exist. Not an
-estimate, not a number lifted off a market-data vendor's dashboard: an exact count, derived from
-a rule written into the software the week it started running, reproducible by anyone with an
-internet connection in about the time it takes to open a calculator. This publication keeps a
-<a href="board.html">standing board of the biggest assets in the world</a>, and Bitcoin's line on
-it uses exactly this number. Gold's line on that same board is a genuine estimate. Silver's is a
-softer one still. Bitcoin's, it turns out, isn't a guess at all — and once I'd actually worked
-through why, I liked the answer enough to write it down.</p>
+<p>This page rebuilds itself once an hour, straight from a live Bitcoin block height, so the
+number in the next sentence is never more than about sixty minutes old: as of block
+961,676, exactly 20,067,691 bitcoin exist. Not an estimate, not a number lifted off a
+market-data vendor's dashboard: an exact count, derived from a rule written into the software the
+week it started running, reproducible by anyone with an internet connection in about the time it
+takes to open a calculator. This publication keeps a <a href="board.html">standing board of the
+biggest assets in the world</a>, and Bitcoin's line on it uses exactly this number. Gold's line on
+that same board is a genuine estimate. Silver's is a softer one still. Bitcoin's, it turns out,
+isn't a guess at all — and once I'd actually worked through why, I liked the answer enough to
+build it a page that keeps proving itself.</p>
 
 <h2>A Rule, Not a Guess</h2>
 
@@ -239,36 +242,110 @@ share count. You only need to know how many blocks have been mined — which is 
 and has been since block zero — and do the arithmetic.</p>
 
 <figure>
-  <img src="img/bitcoin-supply-bar.svg" alt="Bar chart: 95.56 percent of Bitcoin's eventual total
-  supply, 20,067,675 coins, has already been mined; the remaining 4.44 percent, about 932,275
-  coins, will be created gradually over roughly the next 114 years" loading="lazy"/>
-  <figcaption>Ninety-five and a half percent of everything Bitcoin will ever produce already
-  exists. The last sliver arrives slowly, and takes a very long time to finish.</figcaption>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img"
+     aria-label="Bar showing Bitcoin's total possible supply: 95.56 percent, or
+     20,067,691 coins, already mined; the remaining coins, about 932,259, still to
+     be created">
+  <rect width="900" height="340" fill="#0a0f1a"/>
+  <text x="70" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="21"
+        fill="#e8dfd2">Bitcoin's total possible supply, right now</text>
+  <text x="70" y="88" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#f7931a">ALREADY MINED</text>
+  <text x="70" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        font-weight="bold" fill="#e8dfd2">20,067,691 BTC</text>
+  <rect x="70" y="126" width="760" height="60" rx="10" fill="#161f2e"/>
+  <rect x="70" y="126" width="726.26" height="60" rx="10" fill="#f7931a" opacity="0.92"/>
+  <rect x="70" y="126" width="760" height="60" rx="10" fill="none"
+        stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+  <text x="410" y="162" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" font-weight="bold" fill="#0a0f1a">95.56% already exists</text>
+  <line x1="70" y1="204" x2="830" y2="204" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <line x1="450" y1="199" x2="450" y2="209" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <text x="70" y="228" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8">0</text>
+  <text x="450" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="13.5"
+        fill="#94a3b8">10,500,000</text>
+  <text x="830" y="228" text-anchor="end" font-family="Georgia, serif" font-size="13.5"
+        fill="#94a3b8">≈21,000,000 — the hard cap</text>
+  <text x="830" y="278" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="12" letter-spacing="0.12em" fill="#94a3b8">STILL TO BE MINED</text>
+  <text x="830" y="300" text-anchor="end" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" fill="#e8dfd2">932,259 BTC — over roughly the next 114 years</text>
+  <text x="70" y="326" font-family="Georgia, serif" font-size="14" fill="#94a3b8"
+        font-style="italic">As of block 961,676. That bar's right edge ticks a little
+  further every ten minutes, forever slowing, never quite finishing.</text>
+</svg>
+  <figcaption>95.56% of everything Bitcoin will ever produce already exists. The last
+  sliver arrives slowly, and takes a very long time to finish.</figcaption>
 </figure>
 
-<p>Run that arithmetic at today's height and you get 20,067,675 BTC — 95.56% of everything Bitcoin
-will ever produce. What's left, about 932,275 coins, arrives at a rate that keeps shrinking: right
-now a block pays 3.125 BTC, one gets mined roughly every ten minutes, so a little under 450 new
-bitcoin enter the world on an average day. That drops to about 225 a day at the next halving,
-expected around block 1,050,000 — roughly 88,000 blocks and twenty months from where the chain
-sits as I write this.</p>
+<p>Run that arithmetic at the current height and you get 20,067,691 BTC — 95.56% of
+everything Bitcoin will ever produce. What's left, about 932,259 coins, arrives at a
+rate that keeps shrinking: right now a block pays 3.125 BTC, one gets mined roughly every
+ten minutes, so a little under 450 new bitcoin enter the world on an average day. That
+will drop to about 225 a day at the next halving, expected around block
+1,050,000 — roughly 88,324 blocks and 20 months
+from where the chain stands right now.</p>
 
 <h2>The Number That Isn't Quite Twenty-One Million</h2>
 
 <p>The "21 million" figure everyone quotes is a round stand-in for something more precise, and
 slightly stranger than I'd realized. Each halving isn't a smooth curve toward zero — it's integer
 division, so eventually the reward can't be cut in half again without rounding to nothing at all.
-That happens at the thirty-third halving, block 6,930,000, expected around October 2140. From that
-block on, mining pays no new bitcoin whatsoever — only whatever transaction fees happen to be
-attached — forever. Add up every reward from the very first block to the last one that will ever
-pay anything, and you land on 20,999,999.9769 BTC, the number that shows up almost everywhere this
-gets quoted.</p>
+That happens at the thirty-third halving, block 6,930,000, expected around the year
+2140. From that block on, mining pays no new bitcoin whatsoever — only whatever
+transaction fees happen to be attached — forever. Add up every reward from the very first block to
+the last one that will ever pay anything, and you land on 20,999,999.9769 BTC, the number that
+shows up almost everywhere this gets quoted.</p>
 
 <figure>
-  <img src="img/bitcoin-halving-staircase.svg" alt="Staircase chart of Bitcoin's block reward
-  across eight eras, each exactly half the one before: 50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78,
-  and 0.39 bitcoin, with the current era marked WE ARE HERE, and a note that halving continues 26
-  more times until around the year 2140" loading="lazy"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img"
+     aria-label="Staircase chart of Bitcoin's block reward across eight eras, each exactly
+     half the one before, with a real date range under every bar and the current era
+     marked WE ARE HERE">
+  <rect width="900" height="460" fill="#0a0f1a"/>
+  <text x="450" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">Every halving is worth exactly half of the one before it</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="14"
+        fill="#94a3b8" font-style="italic">block reward, by era — each era is 210,000 blocks,
+  roughly four years</text>
+  <line x1="60" y1="340" x2="880" y2="340" stroke="rgba(255,255,255,.22)" stroke-width="1.5"/>
+  <rect x="70.0" y="110.00" width="70" height="230.00" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="105.0" y="130.00" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">50</text>
+  <text x="105.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2009–2012</text>
+  <rect x="165.0" y="225.00" width="70" height="115.00" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="200.0" y="245.00" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">25</text>
+  <text x="200.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2012–2016</text>
+  <rect x="260.0" y="282.50" width="70" height="57.50" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="295.0" y="302.50" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">12.5</text>
+  <text x="295.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2016–2020</text>
+  <rect x="355.0" y="311.25" width="70" height="28.75" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="390.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">6.25</text>
+  <text x="390.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2020–2024</text>
+  <rect x="450.0" y="325.62" width="70" height="14.38" rx="3" fill="#f7931a" opacity="0.95" stroke="#5eb3d6" stroke-width="2.5"/>
+  <text x="485.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">3.125</text>
+  <text x="485.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2024–~2028</text>
+  <line x1="485.0" y1="285" x2="485.0" y2="310.62" stroke="#5eb3d6" stroke-width="1.6"/><text x="485.0" y="255" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="bold" letter-spacing="0.08em" fill="#5eb3d6">WE ARE HERE</text><text x="485.0" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">3.125 BTC / block</text>
+  <rect x="545.0" y="332.81" width="70" height="7.19" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="580.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">1.5625</text>
+  <text x="580.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">~2028–~2032</text>
+  <rect x="640.0" y="336.41" width="70" height="3.59" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="675.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">0.78125</text>
+  <text x="675.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">~2032–~2036</text>
+  <rect x="735.0" y="338.20" width="70" height="1.80" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="770.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">0.390625</text>
+  <text x="770.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">~2036–~2040</text>
+  <line x1="812" y1="339" x2="850" y2="339" stroke="rgba(255,255,255,.18)" stroke-width="1.2"
+        stroke-dasharray="2,4"/>
+  <text x="830" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">and more halvings</text>
+  <text x="830" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">after that, until</text>
+  <text x="830" y="440" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">≈2140</text>
+  <text x="60" y="415" font-family="Georgia, serif" font-size="14" fill="#94a3b8">
+    Half a coin, half again — never zero, until the reward finally can't be divided any further.
+  </text>
+</svg>
   <figcaption>Every step is worth exactly half the step before it. The last few dozen steps are
   too small to draw — which is the whole reason there's a limit at all.</figcaption>
 </figure>
@@ -287,16 +364,17 @@ including, until I ran this myself, in my own head.</p>
 
 <h2>Check My Math</h2>
 
-<p>None of this should be taken on my word, which is rather the point of a page called a ledger.
-Any major block explorer — <a href="https://mempool.space" rel="noopener" target="_blank">mempool.
+<p>None of this should be taken on my word, which is rather the point of a page called a ledger —
+and it's an easy thing to actually check, because this page keeps recomputing its own answer. Any
+major block explorer — <a href="https://mempool.space" rel="noopener" target="_blank">mempool.
 space</a>, blockchain.info, blockstream.info — will hand you the current block height for free,
 with no account and no key; it's usually the first number on the page. Take that height, apply
 the rule above (50 BTC for blocks 1 through 209,999, 25 for the next 210,000, 12.5 for the 210,000
-after that, halving every era, block zero excluded per the note above), and you'll land on the
-same figure this page did. It won't be the <em>exact</em> same figure — roughly six new blocks get
-mined every hour, so by the time you're reading this the true count has already ticked up a little
-further. That's not a flaw in the arithmetic. It's the whole point of it: the number is exact for
-a given moment, and the moment keeps moving.</p>
+after that, halving every era, block zero excluded per the note above), and you'll land on very
+nearly what's shown here — nearly, not exactly, because this page only rebuilds once an hour and
+roughly six new blocks get mined in that time. That's not a flaw in the arithmetic. It's the whole
+point of it: the number is exact for a given block, and the block keeps moving faster than any
+page, mine included, can keep up with.</p>
 
 <h2>What Isn't Exact</h2>
 
@@ -309,9 +387,9 @@ a laptop in 2009 and, in the middle of a 2013 house-clearing, accidentally sent 
 holding it to a landfill in Newport. He has spent over a decade since trying, unsuccessfully, to
 get permission to dig it back out — see
 <a href="https://en.wikipedia.org/wiki/Bitcoin_buried_in_Newport_landfill" rel="noopener"
-target="_blank">the whole saga, well documented</a>. Those coins are still counted in the
-20,067,675 above; nothing about losing the key changes what was validly mined. They're just, as
-far as anyone can tell, gone.</p>
+target="_blank">the whole saga, well documented</a>. Those coins are still counted in the current
+supply above; nothing about losing the key changes what was validly mined. They're just, as far
+as anyone can tell, gone.</p>
 
 <p>A dormant address looks identical whether its owner lost the key yesterday or simply hasn't
 spent anything in ten years, which is exactly what makes "how much is actually lost" impossible to
@@ -334,19 +412,21 @@ holds, something like one bitcoin in eighteen that will ever exist has sat untou
 most of today's exchanges were founded.</p>
 
 <div class="verdict">
-<strong>The honest summary:</strong> 20,067,675 BTC exist as of block 961,671 — an exact figure,
-not an estimate, checkable against any public block explorer in under a minute. The true limit
-those coins are climbing toward is 20,999,949.9769, not the round 21 million usually quoted (that
-figure includes 50 coins from the genesis block that were never actually spendable). What isn't
-exact, and never will be, is how many of those coins anyone can still reach — several million, by
-the better-informed guesses, sitting behind keys nobody will ever produce again.
+<strong>The honest summary:</strong> 20,067,691 BTC exist as of block 961,676 — an
+exact figure, not an estimate, checkable against any public block explorer in under a minute, and
+recomputed on this very page every hour. The true limit those coins are climbing toward is
+20,999,949.9769, not the round 21 million usually quoted (that figure includes 50 coins from the
+genesis block that were never actually spendable). What isn't exact, and never will be, is how
+many of those coins anyone can still reach — several million, by the better-informed guesses,
+sitting behind keys nobody will ever produce again.
 </div>
 
-<p>What stays with me, having written this next to a board that has to guess at how many tonnes of
-gold humanity has ever pulled out of the ground, is how rare Bitcoin's situation actually is. Most
-of what gets valued in the world can't be counted exactly — it can only be surveyed, reported, or
-estimated, and taken mostly on faith. This is the one line on that board where the faith isn't
-required.</p>
+<p>What stays with me, having worked all this out next to a board that has to guess at how many
+tonnes of gold humanity has ever pulled out of the ground, is how rare Bitcoin's situation
+actually is. Most of what gets valued in the world can't be counted exactly — it can only be
+surveyed, reported, or estimated, and taken mostly on faith. This is the one line on that board
+where the faith isn't required, and the one page here that gets to prove it again, quietly, every
+hour.</p>
 
     <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-halving.html">halving</a><a class="tg" href="tag-money-supply.html">money supply</a><a class="tg" href="tag-mining.html">mining</a><a class="tg" href="tag-scarcity.html">scarcity</a></div>
   </article>

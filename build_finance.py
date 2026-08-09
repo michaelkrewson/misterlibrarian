@@ -51,8 +51,14 @@ BASE = "/finance"
 # The Ledger's front-matter vocabulary. Deliberately NOT the travel blog's: an
 # entry here has no stars, no subject and no place, because it is writing about
 # money rather than a review of somewhere you can go.
+#
+# `live: true` opts a single entry into the substitution pass in
+# _render_live_entry() below — its body may contain {{BTC_*}} tokens that get
+# replaced with figures freshly derived from asset_board.json on EVERY build,
+# so the entry rebuilds itself hourly right alongside the board. Every other
+# entry ignores this key entirely; a body with no tokens is untouched by it.
 KNOWN_KEYS = {"title", "date", "tags", "summary", "meta_desc",
-              "hero", "hero_alt", "hero_credit", "draft"}
+              "hero", "hero_alt", "hero_credit", "draft", "live"}
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
 META_DESC_MIN = 70
@@ -186,6 +192,266 @@ def row(a, btc_rank):
 
 
 
+# ──────────────────────────────────────────────────────────── bitcoin, live ──
+#
+# The one entry in this publication whose numbers are correct only for an
+# instant — see source/finance/2026-08-08-how-many-bitcoins-are-there.html.
+# Its whole point is that Bitcoin's supply is exact arithmetic, not an
+# estimate, so the entry rebuilds that arithmetic from board data on every
+# run instead of freezing it at publish time. Everything here is pure — no
+# network, nothing yfinance-shaped — because compute() in
+# tools/fetch_asset_board.py already did the one thing that needed a network
+# call (the live block height) and stamped its result into
+# asset_board.json's `constants`. This just does arithmetic on that output.
+
+# Bitcoin's true spendable maximum supply. A fixed mathematical constant —
+# see tools/fetch_asset_board.py's _btc_supply_sats() for the derivation —
+# not something that needs recomputing each run. 50 BTC under the
+# "20,999,999.9769" figure quoted almost everywhere: that number includes
+# the genesis block's nominal reward, which was never actually spendable.
+BTC_TRUE_MAX = 20_999_949.9769
+BTC_HALVING_INTERVAL = 210_000
+BTC_INITIAL_SUBSIDY = 50.0
+BTC_ZERO_REWARD_BLOCK = 33 * BTC_HALVING_INTERVAL   # 6,930,000
+
+# Every halving to date, exact — historical fact, not an estimate, sourced
+# from the blocks' own timestamps. Anything past the last entry here is in
+# the future and gets extrapolated at Bitcoin's nominal 10-minutes-a-block
+# target instead, by _btc_era_date() below, which is careful to say so.
+BTC_KNOWN_HALVINGS = [
+    (0, dt.date(2009, 1, 3)),          # genesis block
+    (210_000, dt.date(2012, 11, 28)),  # 1st halving: 50 -> 25 BTC
+    (420_000, dt.date(2016, 7, 9)),    # 2nd halving: 25 -> 12.5 BTC
+    (630_000, dt.date(2020, 5, 11)),   # 3rd halving: 12.5 -> 6.25 BTC
+    (840_000, dt.date(2024, 4, 20)),   # 4th halving: 6.25 -> 3.125 BTC
+]
+
+
+def _btc_era_date(block):
+    """(date, is_exact) for the block height a halving era starts at.
+
+    Exact for every era that has already happened (the dates above, straight
+    off the chain). For a future era this extrapolates from the last known
+    halving at Bitcoin's nominal 10-minutes-a-block target — real block
+    times vary, so `is_exact=False` is the whole reason this returns a pair
+    instead of just a date: every caller has to decide how to label a guess.
+    """
+    for b, d in BTC_KNOWN_HALVINGS:
+        if b == block:
+            return d, True
+    last_b, last_d = BTC_KNOWN_HALVINGS[-1]
+    if block < last_b:
+        for (b0, d0), (b1, d1) in zip(BTC_KNOWN_HALVINGS, BTC_KNOWN_HALVINGS[1:]):
+            if b0 <= block <= b1:
+                frac = (block - b0) / (b1 - b0)
+                return d0 + dt.timedelta(days=(d1 - d0).days * frac), True
+        return last_d, True
+    minutes = (block - last_b) * 10
+    return last_d + dt.timedelta(minutes=minutes), False
+
+
+def _btc_live_stats(board):
+    """Everything the live entry's tokens need, derived from board data — or
+    None if the board can't supply the one thing that can't be derived (a
+    live block height), in which case the caller leaves the entry as it last
+    successfully built rather than publish a broken or misleading page.
+    Mirrors the fail-safe fetch_asset_board.py already uses: a bad run keeps
+    the last good output instead of going blank.
+    """
+    consts = board.get("constants", {})
+    supply = consts.get("btc_circulating")
+    height = consts.get("btc_block_height")
+    if supply is None or height is None:
+        return None
+
+    remaining = BTC_TRUE_MAX - supply
+    pct = supply / BTC_TRUE_MAX * 100
+    epoch = height // BTC_HALVING_INTERVAL
+    reward = BTC_INITIAL_SUBSIDY / (2 ** epoch) if epoch < 40 else 0.0
+    next_block = (epoch + 1) * BTC_HALVING_INTERVAL
+    blocks_to_go = next_block - height
+    months_to_go = blocks_to_go * 10 / 60 / 24 / 30.44
+    zero_date, _ = _btc_era_date(BTC_ZERO_REWARD_BLOCK)
+
+    return {
+        "supply": supply,
+        "height": height,
+        "pct": pct,
+        "remaining": remaining,
+        "epoch": epoch,
+        "reward": reward,
+        "next_halving_block": next_block,
+        "blocks_to_go": blocks_to_go,
+        "months_to_go": months_to_go,
+        "daily_new": reward * 144,
+        "daily_next": (reward / 2) * 144,
+        "zero_reward_year": zero_date.year,
+        "stamp": board.get("generated", "recently"),
+    }
+
+
+def _btc_era_bar_label(era):
+    """'2012–2016' for a settled era, '2024–~2028' for the current one (a
+    known start, an estimated end), '~2028–~2032' once both ends are
+    guesses. Every bar gets one of these — the hand-drawn original this
+    replaces only ever labelled the first bar, which was a real bug.
+    """
+    start, start_exact = _btc_era_date(era * BTC_HALVING_INTERVAL)
+    end, end_exact = _btc_era_date((era + 1) * BTC_HALVING_INTERVAL)
+    lo = str(start.year) if start_exact else "~%d" % start.year
+    hi = str(end.year) if end_exact else "~%d" % end.year
+    return "%s–%s" % (lo, hi)
+
+
+def _btc_supply_bar_svg(stats):
+    """The 'how much of it exists' bar, regenerated from live stats on every
+    build. Same house style as the rest of this publication's figures — dark
+    card, Georgia serif, bitcoin-orange fill — just computed now instead of
+    hand-drawn, because the numbers move.
+    """
+    pct = stats["pct"]
+    mined_w = 760 * pct / 100
+    return ("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img"
+     aria-label="Bar showing Bitcoin's total possible supply: %(pct).2f percent, or
+     %(supply)s coins, already mined; the remaining coins, about %(remaining)s, still to
+     be created">
+  <rect width="900" height="340" fill="#0a0f1a"/>
+  <text x="70" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="21"
+        fill="#e8dfd2">Bitcoin's total possible supply, right now</text>
+  <text x="70" y="88" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#f7931a">ALREADY MINED</text>
+  <text x="70" y="110" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        font-weight="bold" fill="#e8dfd2">%(supply)s BTC</text>
+  <rect x="70" y="126" width="760" height="60" rx="10" fill="#161f2e"/>
+  <rect x="70" y="126" width="%(mined_w).2f" height="60" rx="10" fill="#f7931a" opacity="0.92"/>
+  <rect x="70" y="126" width="760" height="60" rx="10" fill="none"
+        stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+  <text x="410" y="162" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" font-weight="bold" fill="#0a0f1a">%(pct).2f%% already exists</text>
+  <line x1="70" y1="204" x2="830" y2="204" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <line x1="450" y1="199" x2="450" y2="209" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <text x="70" y="228" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8">0</text>
+  <text x="450" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="13.5"
+        fill="#94a3b8">10,500,000</text>
+  <text x="830" y="228" text-anchor="end" font-family="Georgia, serif" font-size="13.5"
+        fill="#94a3b8">≈21,000,000 — the hard cap</text>
+  <text x="830" y="278" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="12" letter-spacing="0.12em" fill="#94a3b8">STILL TO BE MINED</text>
+  <text x="830" y="300" text-anchor="end" font-family="Georgia, 'Times New Roman', serif"
+        font-size="17" fill="#e8dfd2">%(remaining)s BTC — over roughly the next 114 years</text>
+  <text x="70" y="326" font-family="Georgia, serif" font-size="14" fill="#94a3b8"
+        font-style="italic">As of block %(height)s. That bar's right edge ticks a little
+  further every ten minutes, forever slowing, never quite finishing.</text>
+</svg>""") % {
+        "pct": pct, "supply": "{:,.0f}".format(stats["supply"]),
+        "remaining": "{:,.0f}".format(stats["remaining"]),
+        "height": "{:,}".format(stats["height"]), "mined_w": mined_w,
+    }
+
+
+def _btc_halving_staircase_svg(stats):
+    """The reward-by-era staircase, with a real date range under EVERY bar
+    (not just the first — a bug in the hand-drawn original this replaces)
+    and the current era pointed out live.
+    """
+    max_h = 230.0
+    bars = []
+    for era in range(8):
+        reward = BTC_INITIAL_SUBSIDY / (2 ** era)
+        h = max_h * reward / BTC_INITIAL_SUBSIDY
+        x = 70 + era * 95
+        y = 340 - h
+        label = _btc_era_bar_label(era)
+        is_current = era == stats["epoch"]
+        reward_s = "{:g}".format(reward)
+        fill_op = "0.95" if is_current else "0.85"
+        stroke = ' stroke="#5eb3d6" stroke-width="2.5"' if is_current else ""
+        bars.append(
+            '<rect x="%.1f" y="%.2f" width="70" height="%.2f" rx="3" '
+            'fill="#f7931a" opacity="%s"%s/>' % (x, y, h, fill_op, stroke))
+        # A short bar can't hold its own reward label inside it, so short
+        # bars get the number below (next to the date range); only the two
+        # tallest get it inside, in dark text on the orange fill.
+        if h > 40:
+            bars.append(
+                '<text x="%.1f" y="%.2f" text-anchor="middle" '
+                'font-family="Georgia, serif" font-size="14" font-weight="bold" '
+                'fill="#0a0f1a">%s</text>' % (x + 35, y + 20, reward_s))
+        else:
+            bars.append(
+                '<text x="%.1f" y="357" text-anchor="middle" font-family="Georgia, serif" '
+                'font-size="11.5" fill="#94a3b8">%s</text>' % (x + 35, reward_s))
+        bars.append(
+            '<text x="%.1f" y="373" text-anchor="middle" '
+            'font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" '
+            'fill="#6e7d92">%s</text>' % (x + 35, label))
+        if is_current:
+            bars.append(
+                '<line x1="%.1f" y1="285" x2="%.1f" y2="%.2f" stroke="#5eb3d6" '
+                'stroke-width="1.6"/>'
+                '<text x="%.1f" y="255" text-anchor="middle" '
+                'font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5" '
+                'font-weight="bold" letter-spacing="0.08em" fill="#5eb3d6">WE ARE '
+                'HERE</text>'
+                '<text x="%.1f" y="273" text-anchor="middle" font-family="Georgia, serif" '
+                'font-size="13.5" fill="#e8dfd2">%s BTC / block</text>'
+                % (x + 35, x + 35, y - 15, x + 35, x + 35, reward_s))
+    bars_svg = "\n  ".join(bars)
+    return ("""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img"
+     aria-label="Staircase chart of Bitcoin's block reward across eight eras, each exactly
+     half the one before, with a real date range under every bar and the current era
+     marked WE ARE HERE">
+  <rect width="900" height="460" fill="#0a0f1a"/>
+  <text x="450" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">Every halving is worth exactly half of the one before it</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="14"
+        fill="#94a3b8" font-style="italic">block reward, by era — each era is 210,000 blocks,
+  roughly four years</text>
+  <line x1="60" y1="340" x2="880" y2="340" stroke="rgba(255,255,255,.22)" stroke-width="1.5"/>
+  %(bars)s
+  <line x1="812" y1="339" x2="850" y2="339" stroke="rgba(255,255,255,.18)" stroke-width="1.2"
+        stroke-dasharray="2,4"/>
+  <text x="830" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">and more halvings</text>
+  <text x="830" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">after that, until</text>
+  <text x="830" y="440" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">≈%(zero_year)s</text>
+  <text x="60" y="415" font-family="Georgia, serif" font-size="14" fill="#94a3b8">
+    Half a coin, half again — never zero, until the reward finally can't be divided any further.
+  </text>
+</svg>""") % {"bars": bars_svg, "zero_year": stats["zero_reward_year"]}
+
+
+def _btc_template(body, stats):
+    """Substitute every {{BTC_*}} token in an entry body with a freshly
+    computed value. Plain string .replace(), not str.format() — the body is
+    prose that may one day contain a literal curly brace, and .replace() is
+    a silent no-op for any token this stats dict doesn't touch, which is
+    exactly the safety property a templated ENTRY needs (every other entry
+    in this publication has none of these tokens and is untouched by this).
+    """
+    tokens = {
+        "{{BTC_SUPPLY}}": "{:,.0f}".format(stats["supply"]),
+        "{{BTC_HEIGHT}}": "{:,}".format(stats["height"]),
+        "{{BTC_PCT}}": "{:.2f}".format(stats["pct"]),
+        "{{BTC_REMAINING}}": "{:,.0f}".format(stats["remaining"]),
+        "{{BTC_REWARD}}": "{:g}".format(stats["reward"]),
+        "{{BTC_DAILY}}": "{:.0f}".format(stats["daily_new"]),
+        "{{BTC_DAILY_NEXT}}": "{:.0f}".format(stats["daily_next"]),
+        "{{BTC_NEXT_HALVING_BLOCK}}": "{:,}".format(stats["next_halving_block"]),
+        "{{BTC_BLOCKS_TO_GO}}": "{:,}".format(stats["blocks_to_go"]),
+        "{{BTC_MONTHS_TO_GO}}": "{:.0f}".format(stats["months_to_go"]),
+        "{{BTC_ZERO_YEAR}}": str(stats["zero_reward_year"]),
+        "{{BTC_STAMP}}": stats["stamp"],
+        "{{BTC_SUPPLY_BAR_SVG}}": _btc_supply_bar_svg(stats),
+        "{{BTC_HALVING_SVG}}": _btc_halving_staircase_svg(stats),
+    }
+    for token, value in tokens.items():
+        body = body.replace(token, value)
+    return body
+
+
 # ───────────────────────────────────────────────────────────────── entries ───
 
 def load_entries(include_drafts=False):
@@ -218,6 +484,7 @@ def load_entries(include_drafts=False):
         draft = meta.get("draft", "").strip().lower() in ("true", "yes", "1")
         if draft and not include_drafts:
             continue
+        live = meta.get("live", "").strip().lower() in ("true", "yes", "1")
 
         entries.append({
             "slug": slug,
@@ -231,6 +498,7 @@ def load_entries(include_drafts=False):
             "hero_alt": meta.get("hero_alt", "").strip(),
             "hero_credit": meta.get("hero_credit", "").strip(),
             "draft": draft,
+            "live": live,
             "body": body,
         })
     entries.sort(key=lambda e: e["date"], reverse=True)
@@ -310,7 +578,23 @@ def _ask_nudge(e):
             % urllib.parse.quote(e["title"]))
 
 
-def build_entry_page(e):
+def build_entry_page(e, board=None):
+    """Render one entry. Returns None for a `live: true` entry when board
+    data can't supply a live block height (see _btc_live_stats) — the
+    caller's job in that case is to leave the file exactly as it last
+    successfully built, never to overwrite it with something broken or
+    silently wrong.
+    """
+    body = e["body"]
+    date_line = blogkit.pretty_date(e["date"]).upper()
+    if e.get("live"):
+        stats = _btc_live_stats(board or {})
+        if stats is None:
+            return None
+        body = _btc_template(body, stats)
+        date_line += (' <span class="live-stamp">· numbers refreshed %s, straight from '
+                      'the chain</span>' % esc(stats["stamp"]))
+
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
     banner = ('<div class="draftban">🔒 <b>Draft preview</b> — not published. This page '
@@ -364,9 +648,9 @@ def build_entry_page(e):
         "css": CSS.replace("__ACCENT__", ACCENT),
         "mark": MARK_SVG.replace("__ACCENT__", ACCENT),
         "banner": banner,
-        "date": blogkit.pretty_date(e["date"]).upper(),
+        "date": date_line,
         "hero": _entry_hero(e),
-        "body": e["body"],
+        "body": body,
         "tags": _tag_chips(e),
         "nudge": _ask_nudge(e),
     }
@@ -714,6 +998,7 @@ a{color:__ACCENT__}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
 .edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
   font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
@@ -921,7 +1206,12 @@ def main():
     write("thanks.html", build_thanks())
     write("board.html", build_board(board))
     for e in entries:
-        write(e["file"], build_entry_page(e))
+        page = build_entry_page(e, board)
+        if page is None:
+            print("  ! %s: no live block height in this run — leaving the "
+                  "last successful build in place" % e["file"], file=sys.stderr)
+            continue
+        write(e["file"], page)
     for tag, es in tags.items():
         write("tag-%s.html" % blogkit.tag_slug(tag),
               build_tag_page(tag, es, len(es) >= TAG_INDEX_MIN))

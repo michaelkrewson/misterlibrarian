@@ -2,17 +2,20 @@ title: How Many Bitcoins Are There, Exactly?
 date: 2026-08-08
 tags: bitcoin, halving, money supply, mining, scarcity
 summary: Gold and silver's numbers on the board above are genuine estimates. Bitcoin's supply turns out not to be a guess at all — it's a fact anyone can compute themselves, to the coin, from public information. Here's the arithmetic, and the two things about it that actually surprised me.
+live: true
 draft: false
 ---
 
-<p>At block 961,671 — the moment I'm writing this — exactly 20,067,675 bitcoin exist. Not an
-estimate, not a number lifted off a market-data vendor's dashboard: an exact count, derived from
-a rule written into the software the week it started running, reproducible by anyone with an
-internet connection in about the time it takes to open a calculator. This publication keeps a
-<a href="board.html">standing board of the biggest assets in the world</a>, and Bitcoin's line on
-it uses exactly this number. Gold's line on that same board is a genuine estimate. Silver's is a
-softer one still. Bitcoin's, it turns out, isn't a guess at all — and once I'd actually worked
-through why, I liked the answer enough to write it down.</p>
+<p>This page rebuilds itself once an hour, straight from a live Bitcoin block height, so the
+number in the next sentence is never more than about sixty minutes old: as of block
+{{BTC_HEIGHT}}, exactly {{BTC_SUPPLY}} bitcoin exist. Not an estimate, not a number lifted off a
+market-data vendor's dashboard: an exact count, derived from a rule written into the software the
+week it started running, reproducible by anyone with an internet connection in about the time it
+takes to open a calculator. This publication keeps a <a href="board.html">standing board of the
+biggest assets in the world</a>, and Bitcoin's line on it uses exactly this number. Gold's line on
+that same board is a genuine estimate. Silver's is a softer one still. Bitcoin's, it turns out,
+isn't a guess at all — and once I'd actually worked through why, I liked the answer enough to
+build it a page that keeps proving itself.</p>
 
 <h2>A Rule, Not a Guess</h2>
 
@@ -27,36 +30,32 @@ share count. You only need to know how many blocks have been mined — which is 
 and has been since block zero — and do the arithmetic.</p>
 
 <figure>
-  <img src="img/bitcoin-supply-bar.svg" alt="Bar chart: 95.56 percent of Bitcoin's eventual total
-  supply, 20,067,675 coins, has already been mined; the remaining 4.44 percent, about 932,275
-  coins, will be created gradually over roughly the next 114 years" loading="lazy"/>
-  <figcaption>Ninety-five and a half percent of everything Bitcoin will ever produce already
-  exists. The last sliver arrives slowly, and takes a very long time to finish.</figcaption>
+{{BTC_SUPPLY_BAR_SVG}}
+  <figcaption>{{BTC_PCT}}% of everything Bitcoin will ever produce already exists. The last
+  sliver arrives slowly, and takes a very long time to finish.</figcaption>
 </figure>
 
-<p>Run that arithmetic at today's height and you get 20,067,675 BTC — 95.56% of everything Bitcoin
-will ever produce. What's left, about 932,275 coins, arrives at a rate that keeps shrinking: right
-now a block pays 3.125 BTC, one gets mined roughly every ten minutes, so a little under 450 new
-bitcoin enter the world on an average day. That drops to about 225 a day at the next halving,
-expected around block 1,050,000 — roughly 88,000 blocks and twenty months from where the chain
-sits as I write this.</p>
+<p>Run that arithmetic at the current height and you get {{BTC_SUPPLY}} BTC — {{BTC_PCT}}% of
+everything Bitcoin will ever produce. What's left, about {{BTC_REMAINING}} coins, arrives at a
+rate that keeps shrinking: right now a block pays {{BTC_REWARD}} BTC, one gets mined roughly every
+ten minutes, so a little under {{BTC_DAILY}} new bitcoin enter the world on an average day. That
+will drop to about {{BTC_DAILY_NEXT}} a day at the next halving, expected around block
+{{BTC_NEXT_HALVING_BLOCK}} — roughly {{BTC_BLOCKS_TO_GO}} blocks and {{BTC_MONTHS_TO_GO}} months
+from where the chain stands right now.</p>
 
 <h2>The Number That Isn't Quite Twenty-One Million</h2>
 
 <p>The "21 million" figure everyone quotes is a round stand-in for something more precise, and
 slightly stranger than I'd realized. Each halving isn't a smooth curve toward zero — it's integer
 division, so eventually the reward can't be cut in half again without rounding to nothing at all.
-That happens at the thirty-third halving, block 6,930,000, expected around October 2140. From that
-block on, mining pays no new bitcoin whatsoever — only whatever transaction fees happen to be
-attached — forever. Add up every reward from the very first block to the last one that will ever
-pay anything, and you land on 20,999,999.9769 BTC, the number that shows up almost everywhere this
-gets quoted.</p>
+That happens at the thirty-third halving, block 6,930,000, expected around the year
+{{BTC_ZERO_YEAR}}. From that block on, mining pays no new bitcoin whatsoever — only whatever
+transaction fees happen to be attached — forever. Add up every reward from the very first block to
+the last one that will ever pay anything, and you land on 20,999,999.9769 BTC, the number that
+shows up almost everywhere this gets quoted.</p>
 
 <figure>
-  <img src="img/bitcoin-halving-staircase.svg" alt="Staircase chart of Bitcoin's block reward
-  across eight eras, each exactly half the one before: 50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78,
-  and 0.39 bitcoin, with the current era marked WE ARE HERE, and a note that halving continues 26
-  more times until around the year 2140" loading="lazy"/>
+{{BTC_HALVING_SVG}}
   <figcaption>Every step is worth exactly half the step before it. The last few dozen steps are
   too small to draw — which is the whole reason there's a limit at all.</figcaption>
 </figure>
@@ -75,16 +74,17 @@ including, until I ran this myself, in my own head.</p>
 
 <h2>Check My Math</h2>
 
-<p>None of this should be taken on my word, which is rather the point of a page called a ledger.
-Any major block explorer — <a href="https://mempool.space" rel="noopener" target="_blank">mempool.
+<p>None of this should be taken on my word, which is rather the point of a page called a ledger —
+and it's an easy thing to actually check, because this page keeps recomputing its own answer. Any
+major block explorer — <a href="https://mempool.space" rel="noopener" target="_blank">mempool.
 space</a>, blockchain.info, blockstream.info — will hand you the current block height for free,
 with no account and no key; it's usually the first number on the page. Take that height, apply
 the rule above (50 BTC for blocks 1 through 209,999, 25 for the next 210,000, 12.5 for the 210,000
-after that, halving every era, block zero excluded per the note above), and you'll land on the
-same figure this page did. It won't be the <em>exact</em> same figure — roughly six new blocks get
-mined every hour, so by the time you're reading this the true count has already ticked up a little
-further. That's not a flaw in the arithmetic. It's the whole point of it: the number is exact for
-a given moment, and the moment keeps moving.</p>
+after that, halving every era, block zero excluded per the note above), and you'll land on very
+nearly what's shown here — nearly, not exactly, because this page only rebuilds once an hour and
+roughly six new blocks get mined in that time. That's not a flaw in the arithmetic. It's the whole
+point of it: the number is exact for a given block, and the block keeps moving faster than any
+page, mine included, can keep up with.</p>
 
 <h2>What Isn't Exact</h2>
 
@@ -97,9 +97,9 @@ a laptop in 2009 and, in the middle of a 2013 house-clearing, accidentally sent 
 holding it to a landfill in Newport. He has spent over a decade since trying, unsuccessfully, to
 get permission to dig it back out — see
 <a href="https://en.wikipedia.org/wiki/Bitcoin_buried_in_Newport_landfill" rel="noopener"
-target="_blank">the whole saga, well documented</a>. Those coins are still counted in the
-20,067,675 above; nothing about losing the key changes what was validly mined. They're just, as
-far as anyone can tell, gone.</p>
+target="_blank">the whole saga, well documented</a>. Those coins are still counted in the current
+supply above; nothing about losing the key changes what was validly mined. They're just, as far
+as anyone can tell, gone.</p>
 
 <p>A dormant address looks identical whether its owner lost the key yesterday or simply hasn't
 spent anything in ten years, which is exactly what makes "how much is actually lost" impossible to
@@ -122,16 +122,18 @@ holds, something like one bitcoin in eighteen that will ever exist has sat untou
 most of today's exchanges were founded.</p>
 
 <div class="verdict">
-<strong>The honest summary:</strong> 20,067,675 BTC exist as of block 961,671 — an exact figure,
-not an estimate, checkable against any public block explorer in under a minute. The true limit
-those coins are climbing toward is 20,999,949.9769, not the round 21 million usually quoted (that
-figure includes 50 coins from the genesis block that were never actually spendable). What isn't
-exact, and never will be, is how many of those coins anyone can still reach — several million, by
-the better-informed guesses, sitting behind keys nobody will ever produce again.
+<strong>The honest summary:</strong> {{BTC_SUPPLY}} BTC exist as of block {{BTC_HEIGHT}} — an
+exact figure, not an estimate, checkable against any public block explorer in under a minute, and
+recomputed on this very page every hour. The true limit those coins are climbing toward is
+20,999,949.9769, not the round 21 million usually quoted (that figure includes 50 coins from the
+genesis block that were never actually spendable). What isn't exact, and never will be, is how
+many of those coins anyone can still reach — several million, by the better-informed guesses,
+sitting behind keys nobody will ever produce again.
 </div>
 
-<p>What stays with me, having written this next to a board that has to guess at how many tonnes of
-gold humanity has ever pulled out of the ground, is how rare Bitcoin's situation actually is. Most
-of what gets valued in the world can't be counted exactly — it can only be surveyed, reported, or
-estimated, and taken mostly on faith. This is the one line on that board where the faith isn't
-required.</p>
+<p>What stays with me, having worked all this out next to a board that has to guess at how many
+tonnes of gold humanity has ever pulled out of the ground, is how rare Bitcoin's situation
+actually is. Most of what gets valued in the world can't be counted exactly — it can only be
+surveyed, reported, or estimated, and taken mostly on faith. This is the one line on that board
+where the faith isn't required, and the one page here that gets to prove it again, quietly, every
+hour.</p>
