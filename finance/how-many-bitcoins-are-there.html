@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>How Many Bitcoins Are There, Exactly? — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute…"/>
+<link rel="canonical" href="https://mistertranslation.com/finance/how-many-bitcoins-are-there.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="How Many Bitcoins Are There, Exactly?"/>
+<meta property="og:description" content="Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute…"/>
+<meta property="og:url" content="https://mistertranslation.com/finance/how-many-bitcoins-are-there.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:46px;height:46px;flex:0 0 46px}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+h1 .em{color:#5eb3d6;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#5eb3d6}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#5eb3d6;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#5eb3d6;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#5eb3d6}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#5eb3d6;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#5eb3d6}
+.nav a.sib{color:#7f8fa6;padding-left:20px;border-left:1px solid #1e2938;font-style:italic}
+.nav a.sib:hover{color:#e8865c}          /* the other publication's own accent */
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#5eb3d6}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#5eb3d6;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
+.wm{font-size:20px;letter-spacing:.01em}
+.wm .em{color:#5eb3d6;font-style:italic}
+a{color:#5eb3d6}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #5eb3d6;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm">
+    <a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+  <circle cx="23" cy="23" r="21" stroke="#5eb3d6" stroke-width="1.5" opacity=".55"/>
+  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#5eb3d6" opacity=".55"/>
+  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#5eb3d6" opacity=".8"/>
+  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#5eb3d6"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a>
+  </header>
+  
+  <article class="entry">
+    <h1 class="etitle">How Many Bitcoins Are There, Exactly?</h1>
+    <p class="edate">AUGUST 8, 2026</p>
+    
+<p>At block 961,671 — the moment I'm writing this — exactly 20,067,675 bitcoin exist. Not an
+estimate, not a number lifted off a market-data vendor's dashboard: an exact count, derived from
+a rule written into the software the week it started running, reproducible by anyone with an
+internet connection in about the time it takes to open a calculator. This publication keeps a
+<a href="board.html">standing board of the biggest assets in the world</a>, and Bitcoin's line on
+it uses exactly this number. Gold's line on that same board is a genuine estimate. Silver's is a
+softer one still. Bitcoin's, it turns out, isn't a guess at all — and once I'd actually worked
+through why, I liked the answer enough to write it down.</p>
+
+<h2>A Rule, Not a Guess</h2>
+
+<p>New bitcoin enters existence exactly one way: a "coinbase" reward, paid to whoever successfully
+mines each new block. That reward started at 50 BTC per block in January 2009 and is cut exactly
+in half every 210,000 blocks — roughly every four years, an event everyone calls "the halving."
+The schedule isn't a policy someone could quietly change; it's enforced by every full node on the
+network, and a miner who tried paying themselves more than the rule allows would have that entire
+block rejected by everyone else running the software. That's the whole trick. You don't need to
+survey a vault or trust an issuer's annual disclosure, the way you would for gold or a company's
+share count. You only need to know how many blocks have been mined — which is public, sequential,
+and has been since block zero — and do the arithmetic.</p>
+
+<figure>
+  <img src="img/bitcoin-supply-bar.svg" alt="Bar chart: 95.56 percent of Bitcoin's eventual total
+  supply, 20,067,675 coins, has already been mined; the remaining 4.44 percent, about 932,275
+  coins, will be created gradually over roughly the next 114 years" loading="lazy"/>
+  <figcaption>Ninety-five and a half percent of everything Bitcoin will ever produce already
+  exists. The last sliver arrives slowly, and takes a very long time to finish.</figcaption>
+</figure>
+
+<p>Run that arithmetic at today's height and you get 20,067,675 BTC — 95.56% of everything Bitcoin
+will ever produce. What's left, about 932,275 coins, arrives at a rate that keeps shrinking: right
+now a block pays 3.125 BTC, one gets mined roughly every ten minutes, so a little under 450 new
+bitcoin enter the world on an average day. That drops to about 225 a day at the next halving,
+expected around block 1,050,000 — roughly 88,000 blocks and twenty months from where the chain
+sits as I write this.</p>
+
+<h2>The Number That Isn't Quite Twenty-One Million</h2>
+
+<p>The "21 million" figure everyone quotes is a round stand-in for something more precise, and
+slightly stranger than I'd realized. Each halving isn't a smooth curve toward zero — it's integer
+division, so eventually the reward can't be cut in half again without rounding to nothing at all.
+That happens at the thirty-third halving, block 6,930,000, expected around October 2140. From that
+block on, mining pays no new bitcoin whatsoever — only whatever transaction fees happen to be
+attached — forever. Add up every reward from the very first block to the last one that will ever
+pay anything, and you land on 20,999,999.9769 BTC, the number that shows up almost everywhere this
+gets quoted.</p>
+
+<figure>
+  <img src="img/bitcoin-halving-staircase.svg" alt="Staircase chart of Bitcoin's block reward
+  across eight eras, each exactly half the one before: 50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78,
+  and 0.39 bitcoin, with the current era marked WE ARE HERE, and a note that halving continues 26
+  more times until around the year 2140" loading="lazy"/>
+  <figcaption>Every step is worth exactly half the step before it. The last few dozen steps are
+  too small to draw — which is the whole reason there's a limit at all.</figcaption>
+</figure>
+
+<p>Except that number is very slightly wrong, in a way that surprised me when I actually checked
+it rather than just repeating it. Block zero — the genesis block, mined by Satoshi Nakamoto on
+January 3rd, 2009 — nominally paid the standard 50 BTC reward like any other block. But due to a
+quirk in Bitcoin's original code, that specific coinbase transaction was never added to the
+network's spendable ledger. Every node that has ever run Bitcoin excludes it by construction, and
+no wallet anywhere, run by anyone, can produce a valid transaction spending it — see
+<a href="https://en.bitcoin.it/wiki/Genesis_block" rel="noopener" target="_blank">the Bitcoin
+Wiki's own account of it</a>. Those 50 coins exist in the reward <em>schedule</em> but not in the
+actual supply; they're a rounding error nobody rounds away. Subtract them, and the true spendable
+maximum is 20,999,949.9769 BTC — fifty short of the figure quoted almost everywhere else,
+including, until I ran this myself, in my own head.</p>
+
+<h2>Check My Math</h2>
+
+<p>None of this should be taken on my word, which is rather the point of a page called a ledger.
+Any major block explorer — <a href="https://mempool.space" rel="noopener" target="_blank">mempool.
+space</a>, blockchain.info, blockstream.info — will hand you the current block height for free,
+with no account and no key; it's usually the first number on the page. Take that height, apply
+the rule above (50 BTC for blocks 1 through 209,999, 25 for the next 210,000, 12.5 for the 210,000
+after that, halving every era, block zero excluded per the note above), and you'll land on the
+same figure this page did. It won't be the <em>exact</em> same figure — roughly six new blocks get
+mined every hour, so by the time you're reading this the true count has already ticked up a little
+further. That's not a flaw in the arithmetic. It's the whole point of it: the number is exact for
+a given moment, and the moment keeps moving.</p>
+
+<h2>What Isn't Exact</h2>
+
+<p>Total supply is exact. How much of it anyone can actually still reach is a different question,
+and nobody knows the answer to that one for certain. A meaningful share of those twenty
+million-plus coins sits behind a key nobody can produce anymore — a forgotten password, a private
+key that only ever existed in one person's memory, or, in the case that made the most headlines, a
+hard drive thrown in the trash. A Welsh IT engineer named James Howells mined roughly 8,000 BTC on
+a laptop in 2009 and, in the middle of a 2013 house-clearing, accidentally sent the hard drive
+holding it to a landfill in Newport. He has spent over a decade since trying, unsuccessfully, to
+get permission to dig it back out — see
+<a href="https://en.wikipedia.org/wiki/Bitcoin_buried_in_Newport_landfill" rel="noopener"
+target="_blank">the whole saga, well documented</a>. Those coins are still counted in the
+20,067,675 above; nothing about losing the key changes what was validly mined. They're just, as
+far as anyone can tell, gone.</p>
+
+<p>A dormant address looks identical whether its owner lost the key yesterday or simply hasn't
+spent anything in ten years, which is exactly what makes "how much is actually lost" impossible to
+read off the chain the way total supply is. The most-cited attempt at an answer is a 2017
+Chainalysis study, reported widely at the time, estimating that somewhere between 2.78 million and
+3.79 million bitcoin were already permanently unreachable — 17 to 23 percent of the supply that
+existed then — using patterns of age and inactivity rather than anything provable
+(<a href="https://fortune.com/crypto/2017/11/25/lost-bitcoins" rel="noopener" target="_blank">Fortune's
+coverage</a>). It's a widely repeated number and a genuinely soft one; treat the range, not either
+end of it, as the honest answer.</p>
+
+<p>One case gets its own line, because of its size. On-chain analysis — the "Patoshi pattern,"
+named for and largely credited to the researcher Sergio Demian Lerner — has identified roughly 1.1
+million BTC, mined across Bitcoin's first two years, that has never moved since mining stopped
+around late 2010. It's believed, on strong circumstantial grounds but with no cryptographic proof
+anyone has produced, to belong to Satoshi Nakamoto personally
+(<a href="https://news.bitcoin.com/strong-evidence-suggests-a-single-entity-mined-more-than-1-million-bitcoin/"
+rel="noopener" target="_blank">one detailed writeup on the analysis</a>). If that attribution
+holds, something like one bitcoin in eighteen that will ever exist has sat untouched since before
+most of today's exchanges were founded.</p>
+
+<div class="verdict">
+<strong>The honest summary:</strong> 20,067,675 BTC exist as of block 961,671 — an exact figure,
+not an estimate, checkable against any public block explorer in under a minute. The true limit
+those coins are climbing toward is 20,999,949.9769, not the round 21 million usually quoted (that
+figure includes 50 coins from the genesis block that were never actually spendable). What isn't
+exact, and never will be, is how many of those coins anyone can still reach — several million, by
+the better-informed guesses, sitting behind keys nobody will ever produce again.
+</div>
+
+<p>What stays with me, having written this next to a board that has to guess at how many tonnes of
+gold humanity has ever pulled out of the ground, is how rare Bitcoin's situation actually is. Most
+of what gets valued in the world can't be counted exactly — it can only be surveyed, reported, or
+estimated, and taken mostly on faith. This is the one line on that board where the faith isn't
+required.</p>
+
+    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-halving.html">halving</a><a class="tg" href="tag-money-supply.html">money supply</a><a class="tg" href="tag-mining.html">mining</a><a class="tg" href="tag-scarcity.html">scarcity</a></div>
+  </article>
+  <div class="respond"><p><strong>Got a question?</strong> Something here you want pushed on, or think I have wrong? <a href="ask.html?re=How%20Many%20Bitcoins%20Are%20There%2C%20Exactly%3F">Ask Mr. Librarian</a> — it goes straight to my desk.</p></div>
+  <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
+  <footer>
+    The Librarian&#x27;s Ledger · <a href="feed.xml">RSS</a> · nothing here is investment advice
+  </footer>
+</div>
+</body>
+</html>

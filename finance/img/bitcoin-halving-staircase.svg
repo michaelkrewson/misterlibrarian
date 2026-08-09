@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img"
+     aria-label="Staircase chart of Bitcoin's block reward across eight eras, each exactly half the
+     one before: 50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78, and 0.39 bitcoin. The current era, paying
+     3.125 bitcoin, is marked WE ARE HERE. A note says the halving continues 26 more times, until
+     the reward is too small to divide, around the year 2140">
+  <rect width="900" height="460" fill="#0a0f1a"/>
+
+  <text x="450" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">Every halving is worth exactly half of the one before it</text>
+  <text x="450" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="14"
+        fill="#94a3b8" font-style="italic">block reward, by era — each era is 210,000 blocks,
+  roughly four years</text>
+
+  <line x1="60" y1="340" x2="880" y2="340" stroke="rgba(255,255,255,.22)" stroke-width="1.5"/>
+
+  <!-- era 0 — 50 BTC -->
+  <rect x="70" y="110" width="70" height="230" rx="4" fill="#f7931a" opacity="0.85"/>
+  <text x="105" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        font-weight="bold" fill="#0a0f1a">50</text>
+  <text x="105" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="12.5"
+        fill="#94a3b8">era 0</text>
+  <text x="105" y="376" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" fill="#6e7d92">2009–2012</text>
+
+  <!-- era 1 — 25 BTC -->
+  <rect x="165" y="225" width="70" height="115" rx="4" fill="#f7931a" opacity="0.85"/>
+  <text x="200" y="243" text-anchor="middle" font-family="Georgia, serif" font-size="14"
+        font-weight="bold" fill="#0a0f1a">25</text>
+  <text x="200" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="12.5"
+        fill="#94a3b8">era 1</text>
+
+  <!-- era 2 — 12.5 BTC -->
+  <rect x="260" y="282.5" width="70" height="57.5" rx="4" fill="#f7931a" opacity="0.85"/>
+  <text x="295" y="299" text-anchor="middle" font-family="Georgia, serif" font-size="13"
+        font-weight="bold" fill="#0a0f1a">12.5</text>
+  <text x="295" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="12.5"
+        fill="#94a3b8">era 2</text>
+
+  <!-- era 3 — 6.25 BTC -->
+  <rect x="355" y="311.25" width="70" height="28.75" rx="3" fill="#f7931a" opacity="0.85"/>
+  <text x="390" y="359.5" text-anchor="middle" font-family="Georgia, serif" font-size="12.5"
+        fill="#94a3b8">6.25</text>
+
+  <!-- era 4 — 3.125 BTC — CURRENT -->
+  <rect x="450" y="325.6" width="70" height="14.4" rx="2" fill="#f7931a" opacity="0.95"
+        stroke="#5eb3d6" stroke-width="2.5"/>
+  <line x1="485" y1="285" x2="485" y2="323" stroke="#5eb3d6" stroke-width="1.6"/>
+  <text x="485" y="255" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="12.5" font-weight="bold" letter-spacing="0.08em" fill="#5eb3d6">WE ARE HERE</text>
+  <text x="485" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="13.5"
+        fill="#e8dfd2">3.125 BTC / block</text>
+  <text x="485" y="359.5" text-anchor="middle" font-family="Georgia, serif" font-size="12"
+        fill="#94a3b8">era 4</text>
+
+  <!-- era 5 — 1.5625 BTC -->
+  <rect x="545" y="332.8" width="70" height="7.2" fill="#f7931a" opacity="0.8"/>
+  <text x="580" y="359.5" text-anchor="middle" font-family="Georgia, serif" font-size="11.5"
+        fill="#7f8fa6">1.56</text>
+
+  <!-- era 6 — 0.78 BTC -->
+  <rect x="640" y="336.4" width="70" height="3.6" fill="#f7931a" opacity="0.75"/>
+  <text x="675" y="359.5" text-anchor="middle" font-family="Georgia, serif" font-size="11"
+        fill="#6e7d92">0.78</text>
+
+  <!-- era 7 — 0.39 BTC, already a hairline -->
+  <rect x="735" y="338.2" width="70" height="1.8" fill="#f7931a" opacity="0.7"/>
+  <text x="770" y="359.5" text-anchor="middle" font-family="Georgia, serif" font-size="10.5"
+        fill="#6e7d92">0.39</text>
+
+  <line x1="812" y1="339" x2="850" y2="339" stroke="rgba(255,255,255,.18)" stroke-width="1.2"
+        stroke-dasharray="2,4"/>
+  <text x="830" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">and 26 more</text>
+  <text x="830" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">halvings after that,</text>
+  <text x="830" y="440" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">until ≈2140</text>
+
+  <text x="60" y="400" font-family="Georgia, serif" font-size="14" fill="#94a3b8">
+    Half a coin, half again — never zero, until the reward finally can't be divided any further.
+  </text>
+</svg>

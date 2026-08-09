@@ -26,10 +26,17 @@ name: Refresh the asset board
 
 on:
   schedule:
-    # Every six hours. The ranking barely moves day to day, so this is about the
-    # page never looking abandoned rather than about being a live ticker. Note
-    # GitHub runs scheduled jobs late under load — treat it as "roughly".
-    - cron: "0 */6 * * *"
+    # Hourly (2026-08-08, was every 6 hours). The ranking still barely moves day
+    # to day — this isn't about being a live ticker, it's about the Bitcoin count
+    # (now derived from the live block height, not a once-a-year guess below)
+    # staying genuinely current: Bitcoin mines ~6 blocks an hour, so hourly is
+    # roughly the finest cadence a reader would actually notice. Going tighter
+    # buys little and risks two things: GitHub documents that sub-hourly
+    # scheduled crons get unreliable (silently delayed/skipped under load), and
+    # Yahoo rate-limits a repeatedly-polling datacenter IP harder than that.
+    # Note GitHub runs scheduled jobs late under load regardless — treat this
+    # as "roughly hourly".
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
