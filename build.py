@@ -1038,13 +1038,22 @@ def clean_chapter(content):
 
 # ---------------------------------------------------------------- library ---
 
-def verse_anchor(ch, v):
-    """Anchor id used in the source markup: chapter 1 is bare vN, others vCH-N."""
-    return f"v{v}" if ch == 1 else f"v{ch}-{v}"
+def verse_anchor(book, ch, v):
+    """Anchor id used in the source markup: chapter 1 of any book is bare vN,
+    others vCH-N -- EXCEPT Lamentations, which uses bare vN in EVERY chapter
+    (established by lamentations-1/2's own source markup; each chapter builds
+    to its own standalone page, so the ids only ever collide across chapters
+    that never share a page, which is harmless). Recomputing this wrong for
+    Lamentations silently produces a dead #anchor on an otherwise-live link --
+    found 2026-08-09 when a fresh chinnam XREF into Lamentations 3:52 rendered
+    a broken chip on the Job 1 page and no chip at all on the Lamentations
+    side (the injector's `content.find()` just came up empty and skipped it).
+    Same bug was already latent for every citation into Lamentations 2."""
+    return f"v{v}" if ch == 1 or book == "Lamentations" else f"v{ch}-{v}"
 
 
 def verse_url(book, ch, v):
-    return f"{chapter_filename(book, ch)}#{verse_anchor(ch, v)}"
+    return f"{chapter_filename(book, ch)}#{verse_anchor(book, ch, v)}"
 
 
 # Which chapters actually have a page built. Library entries (encyclopedia,
@@ -1282,7 +1291,7 @@ def inject_xrefs(content, book, ch):
         if bb == book and bc == ch:
             by_verse[bv].append(((ab, ac, av), why))
     for v, links in sorted(by_verse.items()):
-        anchor = verse_anchor(ch, v)
+        anchor = verse_anchor(book, ch, v)
         marker = f'id="{anchor}"'
         i = content.find(marker)
         if i < 0:
@@ -2875,7 +2884,7 @@ def build_verse_stubs(book, num, content):
             continue
         ref = f"{book} {num}:{v}"
         desc = text if len(text) <= 200 else text[:197].rsplit(" ", 1)[0] + "…"
-        target = f"/{chfile}#{verse_anchor(num, v)}"
+        target = f"/{chfile}#{vid}"
         stub_url = f"{SITE_URL}/{VERSE_DIR}/{stem}-{v}.html"
         # per-verse og:image card — reused across builds, but re-rendered when the verse
         # text changed (see _ensure_verse_card); falls back to the branded default if
