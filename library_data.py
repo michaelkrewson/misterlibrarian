@@ -201,7 +201,7 @@ DICTIONARY = [
     ["adokimos", "adokimos", "ἀδόκιμος", "adokimos", "UNAPPROVED — failing the test; used of counterfeit coin and of metal that does not pass assay, from dokimazō, 'to test and approve'. Romans 1:28 is a pun that only survives if both halves keep the same root: they did not APPROVE of holding God in accurate knowledge, so God gave them over to an UNAPPROVED mind. KJV's 'reprobate mind' carries the idea through Latin; NWT reads 'disapproved mental state'. Paul turns it on himself at 1 Corinthians 9:27 — the fear of preaching to others and being adokimos himself.", ["Romans", 1, 28]],
     ["tekmerion", "tekmērion", "τεκμήριον", "tekmērion", "A DEMONSTRATIVE proof — not a hint but the kind of sign that settles a case. Aristotle separates it from sēmeion, an ordinary sign that can mislead, and defines a tekmērion as the necessary sign that cannot be refuted (Rhetoric 1357b); Greek doctors used it of the symptom that makes a diagnosis certain. It appears once in the whole New Testament, of the risen Jesus presenting himself alive 'by many conclusive proofs' — courtroom-and-clinic vocabulary chosen at the exact point where the argument needs it. KJV 'many infallible proofs' catches the force; ASV's 'many proofs' loses it.", ["Acts", 1, 3]],
     ["synalizomai", "synalizomai", "συναλίζομαι", "synalizomai", "A genuine crux, and one of the more entertaining ones. Parsed as syn + halizomai (from hals, SALT) it means to take salt with someone — to share a meal, and in the ancient Near East to eat a man's salt was to be bound to him. Parsed as syn + alizō, 'to gather', it means simply 'assembling with'. The Vulgate chose the meal (convescens) and Douay follows it; KJV and ASV read 'being assembled together with them'. This translation takes the meal, on the strength of Luke's own habit rather than the etymology — his risen Jesus eats broiled fish, is known in the breaking of bread, and Peter later defines the witnesses as those 'who ate and drank with him after he rose'.", ["Acts", 1, 4]],
-    ["chronos", "chronos", "χρόνος", "chronos", "Time as DURATION — the stretch a calendar or a clock measures; the root of 'chronology' and 'chronic'. Paired with kairos, its opposite number, in the formal phrase 'times or seasons' (Acts 1:7; 1 Thessalonians 5:1; and in the Greek of Daniel 2:21). Translations that flatten both words into 'times' lose the point: what the Father holds within his own authority is both the long duration AND the exact hour.", ["Acts", 1, 7]],
+    ["chronos", "chronos", "χρόνος", "chronos", "Time as DURATION — the stretch a calendar or a clock measures; the root of 'chronology' and 'chronic'. Paired with kairos, its opposite number, in the formal phrase 'times or seasons' (Acts 1:7; 1 Thessalonians 5:1; and in the Greek of Daniel 2:21). Translations that flatten both words into 'times' lose the point: what the Father holds within his own authority is both the long duration AND the exact hour. ⚠ The word resurfaces at the center of a real translation split late in the New Testament's last book: a mighty angel swears 'that chronos would be no more' (Revelation 10:6), and the shelf divides almost exactly down denominational and chronological lines — KJV/Geneva/Douay all print the literal 'time... no longer' (the reading behind the famous apocalyptic line 'time shall be no more'), while ASV/NIV/ESV/NWT/TNM all read 'no more delay', taking chronos there as the WAIT itself rather than time as a category. The oath's own next word, 'but' (Revelation 10:7), leans toward delay: something specific is about to happen, not time itself ending.", ["Acts", 1, 7]],
     ["kairos", "kairos", "καιρός", "kairos", "Time as the DECISIVE MOMENT — the right time, the opening, the hour when a thing can be done; the twin and opposite of chronos, which is mere duration. Classical Greek personified Kairos as a god with a forelock you must seize as he passes, since he is bald behind. The New Testament uses it for the appointed moment of God's action ('the kairos is fulfilled', Mark 1:15), which is why keeping it distinct from chronos matters: a calendar cannot predict a kairos.", ["Acts", 1, 7]],
     ["homothymadon", "homothymadon", "ὁμοθυμαδόν", "homothymadon", "Of one mind, with one impulse — homou ('together') + thymos ('passion, impulse'), so not merely agreement but a shared drive. Ten of its eleven New Testament occurrences are in Acts, which makes it something close to Luke's signature word for the church when it is working: praying with one accord before Pentecost, meeting with one accord in Solomon's colonnade. KJV and ASV 'with one accord'; NWT 'with one purpose'.", ["Acts", 1, 14]],
     ["kardiognostes", "kardiognōstēs", "καρδιογνώστης", "kardiognōstēs", "KNOWER OF HEARTS — kardia ('heart') + ginōskō ('to know'). A compound so rare that its only two appearances in early literature are both in Acts: here, where eleven men who cannot see inside either candidate hand the choice to the one who can, and at Acts 15:8, where God 'who knows the heart' is the argument for admitting Gentiles. It may well be a coinage of the first Christians, standing on 1 Samuel 16:7 — 'man looks at the outward appearance, but Jehovah looks at the heart'.", ["Acts", 1, 24]],
@@ -827,6 +827,9 @@ DICTIONARY = [
      "Witness — Jesus 'the faithful witness' (Revelation 1:5). In Revelation the word begins its migration toward English 'martyr': the witness whose testimony costs blood.", ("Revelation", 1, 5)),
     ("hades", "hadēs", "ᾅδης", "hadēs",
      "Hades — the Greek Bible's rendering of the Hebrew Sheol, the grave-realm of the dead; NOT the fiery hell of later imagery (KJV prints 'hell' at Revelation 1:18). Christ holds its keys. ⚠ The word is older in this Gospel than in this library's own order of discussion: at Matthew 16:18, Peter is promised 'the gates of Hades will not overpower' the congregation Christ will build — a different set of keys from the ones Christ himself holds over 'Death and Hades' at Revelation 1:18, not the same claim repeated twice.", ("Revelation", 1, 18)),
+    # ---- Revelation 10 (Greek) ----
+    ("biblaridion", "biblaridion", "βιβλαρίδιον", "biblaridion",
+     "A LITTLE SCROLL — a genuine diminutive of biblion, 'scroll, book', and the word for the object John is handed and told to eat (10:2, 9, 10). At verse 8 alone, the oldest manuscripts drop the diminutive and read plain biblion — the identical bare word already used for the great sealed scroll only the Lamb was worthy to open (Revelation 5:1). Whether that one bare verse means the SAME scroll, now open, or a smaller one merely modeled on it, is a real scholarly disagreement this text never resolves.", ("Revelation", 10, 2)),
     # ---- John 2 (Greek) ----
     ("semeion", "sēmeion", "σημεῖον", "sēmeion",
      "Sign — John's own word for the miracles: a deed that points past itself. Cana is 'the beginning of the signs' (2:11), first of the seven that structure the Gospel's first half — and the same root opens Revelation: 'he made it known in signs' (Rev 1:1).", ("John", 2, 11)),
@@ -12770,6 +12773,31 @@ DICTIONARY_ES = {
         "«¡la devoramos!» (v. 16). El mismo acto de consumo, atribuido primero a Dios, "
         "repetido después por quienes lo llevaron a cabo, como si ambas cosas fueran "
         "ciertas a la vez."),
+    # ---- Apocalipsis 10 ----
+    "chronos": ("chronos",
+        "El tiempo como DURACIÓN —el tramo que mide un calendario o un reloj; la raíz de "
+        "«cronología» y «crónico». Emparejado con kairos, su contraparte, en la fórmula fija "
+        "«tiempos u ocasiones» (Hechos 1:7; 1 Tesalonicenses 5:1; y en el griego de Daniel "
+        "2:21). Las traducciones que aplanan ambas palabras a «tiempos» pierden el matiz: lo "
+        "que el Padre retiene bajo su propia autoridad es tanto la larga duración COMO la hora "
+        "exacta. ⚠ La palabra reaparece en el centro de una división real de traducción, ya "
+        "muy avanzado el último libro del Nuevo Testamento: un ángel poderoso jura «que ya no "
+        "habría chronos» (Apocalipsis 10:6), y el estante se divide casi exactamente entre lo "
+        "tradicional y lo moderno —KJV/Ginebra/Douay leen todos la lectura literal «el "
+        "tiempo... no sería más» (la lectura detrás de la famosa línea apocalíptica «el tiempo "
+        "dejará de existir»), mientras que ASV/NIV/ESV/NWT/TNM leen todos «no habrá más "
+        "demora», tomando chronos aquí como la ESPERA misma y no como el tiempo en cuanto "
+        "categoría. La siguiente palabra del propio juramento, «pero» (Apocalipsis 10:7), se "
+        "inclina hacia la demora: algo específico está por suceder, no el tiempo mismo "
+        "acabando."),
+    "biblaridion": ("biblaridion",
+        "UN ROLLO PEQUEÑO —un diminutivo genuino de biblion, «rollo, libro», y la palabra para el "
+        "objeto que Juan recibe y se le ordena comer (10:2, 9, 10). Solo en el versículo 8, los "
+        "manuscritos más antiguos leen el simple biblion —la misma palabra desnuda ya usada para "
+        "el gran rollo sellado que solo el Cordero fue digno de abrir (Apocalipsis 5:1). Si ese "
+        "único versículo desnudo significa el MISMO rollo, ya abierto, o uno más pequeño "
+        "simplemente modelado sobre él, es un desacuerdo erudito real que este texto nunca "
+        "resuelve."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14513,6 +14541,82 @@ CHAPTER_ART = {
         license="CC0",
         source_url="https://commons.wikimedia.org/wiki/File:The_Four_Horsemen,_from_The_"
                    "Apocalypse_MET_MM4141.jpg",
+    )],
+    "rev10": [dict(
+        file="durer-john-devours-scroll.jpg",
+        title="Saint John Devouring the Book",
+        title_es="San Juan devora el libro",
+        artist="Albrecht Dürer",
+        artist_es="Alberto Durero",
+        year="1498",
+        location="Metropolitan Museum of Art, New York",
+        location_es="Metropolitan Museum of Art, Nueva York",
+        alt="A black-and-white woodcut. In the upper sky, a giant radiant human head, haloed "
+            "and surrounded by sunburst rays, floats above the scene; just above it, a winged, "
+            "cloud-wrapped figure appears among heavy clouds, and a pointing hand emerges from "
+            "the clouds to its left. In the upper-left corner, a small circular medallion "
+            "frames a miniature architectural structure resembling a colonnaded temple or "
+            "shrine, with two tiny robed figures beside it. Below the radiant head, two "
+            "massive stone columns rise directly from a rocky shoreline, planted like legs "
+            "with no connecting body between them and the head above. At the lower right, a "
+            "bearded, long-haired man in flowing robes kneels on the rocks among trees, "
+            "reaching up toward an open book held out by a hand descending from above; at his "
+            "feet lie a small inkwell, a quill, and another open book or scroll. In the "
+            "distance, the sea stretches to the horizon with two small sailing ships and what "
+            "may be a serpent or sea-creature breaking the surface. The artist's monogram, a "
+            "small AD, appears at the bottom center of the composition.",
+        note="&#9888; <strong>Dürer takes 'pillars of fire' completely literally, and "
+             "dissolves the rest of the angel to do it.</strong> The text describes one "
+             "integrated figure &mdash; a being who sets his feet, holds a scroll, raises a "
+             "hand, and swears an oath (vv1&ndash;6) &mdash; but this woodcut gives him no "
+             "connected body at all: two freestanding stone columns plant themselves directly "
+             "on the shore, a radiant disembodied head floats above them, and a separate "
+             "cloud-wrapped, winged form hovers higher still. Whether this is meant as one "
+             "impossible figure the eye can't quite assemble, or three, is a genuine ambiguity "
+             "of the composition, not the text.<br><br>The small circular medallion in the "
+             "upper-left corner, framing a miniature colonnaded structure, does not obviously "
+             "correspond to anything in this chapter &mdash; this print is one plate in a "
+             "longer series, and the detail may belong to the book's larger visual program "
+             "rather than to this scene specifically; this library reports what it shows "
+             "without claiming certainty about what it means.<br><br><strong>John himself is "
+             "shown already receiving the book at the very moment of the angel's "
+             "appearance</strong>, rather than in the separate approach-ask-receive sequence "
+             "the text actually gives him (vv8&ndash;9) &mdash; the same kind of compression "
+             "Dürer used two chapters earlier, riding four separate summonses as one "
+             "simultaneous charge (see the note at 6:1&ndash;8, already on these pages). At "
+             "his feet, an inkwell and quill lie unused beside another open book &mdash; "
+             "plausibly the pen John was told to seal up rather than use, two verses earlier "
+             "(v4), set down within reach of the very moment he's commanded to write nothing "
+             "at all.",
+        note_es="&#9888; <strong>Durero toma &laquo;columnas de fuego&raquo; de manera "
+                "completamente literal, y para lograrlo disuelve el resto del ángel.</strong> "
+                "El texto describe una sola figura integrada &mdash;un ser que planta los pies, "
+                "sostiene un rollo, levanta una mano y jura un juramento (vv. 1-6)&mdash;, pero "
+                "este grabado no le da ningún cuerpo conectado en absoluto: dos columnas de "
+                "piedra independientes se plantan directamente en la orilla, una cabeza "
+                "radiante y desconectada flota sobre ellas, y una forma alada envuelta en "
+                "nubes, separada, flota todavía más arriba. Si esto pretende ser una "
+                "sola figura imposible que el ojo no logra ensamblar del todo, o tres, es una "
+                "ambigüedad genuina de la composición, no del texto.<br><br>El "
+                "pequeño medallón circular de la esquina superior izquierda, que "
+                "enmarca una estructura miniatura con columnas, no corresponde obviamente a "
+                "nada de este capítulo &mdash;este grabado es una lámina dentro de "
+                "una serie más larga, y el detalle bien podría pertenecer al programa "
+                "visual mayor del libro y no a esta escena en particular; esta biblioteca "
+                "informa lo que muestra sin afirmar certeza sobre lo que "
+                "significa.<br><br><strong>A Juan mismo se le muestra ya recibiendo el libro "
+                "en el mismo instante de la aparición del ángel</strong>, en vez de "
+                "la secuencia separada de acercarse-pedir-recibir que el texto realmente le da "
+                "(vv. 8-9) &mdash;la misma clase de compresión que Durero usó dos "
+                "capítulos antes, haciendo cabalgar cuatro llamadas separadas como una "
+                "sola carga simultánea (véase la nota de 6:1-8, ya en estas "
+                "páginas). A sus pies, un tintero y una pluma yacen sin usar junto a otro "
+                "libro abierto &mdash;posiblemente la pluma que a Juan se le dijo que sellara "
+                "en vez de usar, dos versículos antes (v. 4), dejada al alcance justo en "
+                "el momento en que se le ordena no escribir nada en absoluto.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:Saint_John_Devouring_the_Book,_"
+                   "from_The_Apocalypse_MET_DP816918.jpg",
     )],
     "rev5": [dict(
         file="burckhardt-wildt-apocalypse-lamb.jpg",
