@@ -391,6 +391,13 @@ DICTIONARY = [
      "Two Hebrew nouns for two distinct tabernacle hangings, easily conflated in translation and in the Greek text that later reports one of them torn. The PAROCHET (26:31-33) is the inner VEIL, woven with cherubim, dividing the holy place from the most holy — where the ark itself stands. The MASAKH (26:36-37) is the outer SCREEN at the tent's public door, plainer, embroidered but carrying no cherubim. The Septuagint translates both with the same Greek word, katapetasma — which is why Matthew 27:51 ('the curtain of the sanctuary was torn in two,' already on these pages) genuinely cannot specify which of the two is meant.", ("Exodus", 26, 31)),
     ("choshev-rokem", "choshev / rokem", "חֹשֵׁב / רֹקֵם", "choshev / rokem",
      "Two Hebrew craft-terms for two different textile techniques, per the Talmud (Yoma 72b) and later commentators: ma'aseh CHOSHEV ('the work of a designer', 26:1, 31) is woven so the pattern reads identically on both faces of the fabric; ma'aseh ROKEM ('the work of an embroiderer', 26:36) is stitched onto one face only, the reverse left plain. The distinction tracks which tabernacle curtains carry cherubim (choshev-work: the inner lining and the veil) and which do not (rokem-work: the outer screen) — the more expensive, two-sided weave reserved for what lies deepest inside the structure.", ("Exodus", 26, 1)),
+    # ---- Exodus 27 (Hebrew) ----
+    ("mizbeach", "mizbeach", "מִזְבֵּחַ", "mizbeach",
+     "ALTAR — from zavach, 'to slaughter, sacrifice.' This chapter's bronze altar (27:1-8) stands OUTSIDE the tent, in the open court — acacia wood overlaid with bronze/copper, not the gold of every furnishing INSIDE the tabernacle (Exodus 25). Its horns (v2) are 'of one piece with it,' never bolted on. ⚠ Those horns become one of the most consequential objects in the whole narrative: fleeing men grasp them for asylum (1 Kings 1:50-51, already on these pages; 1 Kings 2:28, not yet), and their removal is itself a sentence of judgment ('the horns of the altar shall be cut off,' Amos 3:14, not yet on these pages). Hollow rather than solid (v8) — the standard reconciliation with the earlier law that a true altar be plain earth or unhewn stone, never cut and never elevated by steps (Exodus 20:24-26, already on these pages).", ("Exodus", 27, 1)),
+    ("chatzer", "chatzer", "חָצֵר", "chatzer",
+     "COURT, courtyard, enclosure — a hundred cubits by fifty, its entire perimeter a single course of 'fine twined linen' hung on sixty pillars (27:9-18) — cloth, not masonry, the only thing separating the sanctuary's ground from the ordinary camp outside it. The one gate, on the east, is a plainer twenty-cubit 'work of an embroiderer' (v16) — the same one-faced craft as the tent's own outer screen (26:36, already on these pages), reserving the more expensive two-faced weave and its woven cherubim for what stands deeper inside (the veil, 26:31).", ("Exodus", 27, 9)),
+    ("ner-tamid", "ner tamid", "נֵר תָּמִיד", "ner tamid",
+     "CONTINUAL LAMP — literally 'lamp of regularity.' The command (27:20-21) is the chapter's only instruction not addressed to Moses building something, but to the whole people bringing something: pure, beaten olive oil, so Aaron and his sons can tend the lampstand's flame every evening 'from evening to morning' before Jehovah — the text's own scope, not literal round-the-clock burning. ⚠ Its closing phrase, 'an EVERLASTING STATUTE throughout their generations,' is the identical Hebrew formula (chukkat olam) that first sealed the Passover three chapters back (12:14, already on these pages) — now sealing the priesthood's own first standing duty, one chapter before Aaron and his sons are even given their garments (Exodus 28, not yet on these pages). The modern synagogue's ever-burning 'Ner Tamid' lamp over the ark takes its name from this phrase, though its own continuous, day-and-night burning is a later development.", ("Exodus", 27, 20)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5559,6 +5566,12 @@ XREFS = [
     (("2 Kings", 1, 10), ("Revelation", 11, 5), "Elijah's own exact power, worked twice on two companies of soldiers who came to arrest him, echoed almost verbatim as the standing defense of John's two witnesses — fire that comes out and devours anyone who tries to harm them"),
     (("Exodus", 25, 10), ("Revelation", 11, 19), "the same chest, built to the cubit out of acacia wood and gold here, seen centuries after it vanishes from the earthly record — inside a temple John locates not on earth but in heaven"),
     (("Matthew", 17, 3), ("Revelation", 11, 3), "the same pairing, transposed from a mountaintop to an unnamed street: Moses and Elijah stand beside Christ listening at the Transfiguration, and a reading many give to John's unnamed two witnesses fuses the same two figures' powers into one prophetic office"),
+    # ---- Exodus 27 ----
+    (("Exodus", 27, 1), ("Exodus", 20, 24), "the tabernacle's own bronze altar is explicitly HOLLOW (v8) — the standard explanation offered for how a built, portable structure still satisfies the earlier law's plain 'altar of earth'"),
+    (("Exodus", 27, 8), ("Exodus", 24, 12), "the SAME word, luchot — the flat panels named 'tablets of stone' when Moses climbs for the covenant three chapters back now names the ordinary wooden boards of the altar's hollow shell"),
+    (("Exodus", 27, 16), ("Exodus", 26, 36), "the same one-faced 'work of an embroiderer' (rokem), no cherubim — the courtyard gate borrows the tent's own plainer outer-door craft"),
+    (("Exodus", 27, 21), ("Exodus", 26, 33), "'the testimony' — the same word naming what stands just beyond this veil: the ark holding the covenant tablets, described one chapter back"),
+    (("Exodus", 27, 21), ("Exodus", 12, 14), "chukkat olam le-dorotam, 'an everlasting statute throughout their generations' — the identical formula that first sealed the Passover, now sealing the priesthood's nightly duty at the lamp"),
     # ---- Exodus 26 ----
     (("Exodus", 26, 33), ("Matthew", 27, 51), "the very curtain — or possibly its plainer outer neighbor, since Greek collapses both Hebrew names into one word — torn top to bottom at the moment Jesus dies, roughly thirteen centuries after this chapter first hung it"),
     # ---- Exodus 25 ----
@@ -11053,6 +11066,38 @@ DICTIONARY_ES = {
         "marca qué cortinas del tabernáculo llevan querubines (obra choshev: el forro interior y el "
         "velo) y cuáles no (obra rokem: la cortina exterior) —el tejido de doble cara, más costoso, "
         "reservado para lo que está más adentro de la estructura."),
+    # ---- Éxodo 27 ----
+    "mizbeach": ("mizbeach",
+        "ALTAR —de zavach, 'degollar, sacrificar'. El altar de bronce de este capítulo (27:1-8) se "
+        "levanta AFUERA de la tienda, en el atrio abierto —madera de acacia recubierta de bronce/"
+        "cobre, no el oro de todo mueble DENTRO del tabernáculo (Éxodo 25). Sus cuernos (v2) son "
+        "'de una sola pieza con él', nunca atornillados. ⚠ Esos cuernos se convierten en uno de los "
+        "objetos más consecuentes de todo el relato: hombres que huyen se aferran a ellos buscando "
+        "asilo (1 Reyes 1:50-51, ya en estas páginas; 1 Reyes 2:28, todavía no), y su remoción es en sí misma "
+        "una sentencia de juicio ('los cuernos del altar serán cortados', Amós 3:14, todavía no en "
+        "estas páginas). Hueco en vez de sólido (v8) —la reconciliación habitual con la ley "
+        "anterior, que exigía un altar de tierra desnuda o piedra sin labrar, nunca cortada ni "
+        "elevada por escalones (Éxodo 20:24-26, ya en estas páginas)."),
+    "chatzer": ("chatzer",
+        "ATRIO, patio, recinto —cien codos por cincuenta, todo su perímetro un solo curso de 'lino "
+        "fino torcido' colgado de sesenta columnas (27:9-18) —tela, no mampostería, lo único que "
+        "separa el suelo del santuario del campamento ordinario que lo rodea. La única puerta, al "
+        "oriente, es una 'obra de un bordador' más sencilla, de veinte codos (v16) —el mismo oficio "
+        "de una sola cara que la propia cortina exterior de la tienda (26:36, ya en estas páginas), "
+        "reservando el tejido de doble cara, más costoso, y sus querubines, para lo que está más "
+        "adentro (el velo, 26:31)."),
+    "ner-tamid": ("ner tamid",
+        "LÁMPARA CONTINUA —literalmente 'lámpara de regularidad'. La orden (27:20-21) es la única "
+        "instrucción de este capítulo que no le dice a Moisés qué construir, sino al pueblo entero "
+        "qué traer: aceite de oliva puro, batido, para que Aarón y sus hijos atiendan la llama del "
+        "candelabro cada noche 'desde la tarde hasta la mañana' delante de Jehová —el alcance del "
+        "texto mismo, no una llama encendida las veinticuatro horas sin vigilancia. ⚠ Su frase "
+        "final, 'estatuto perpetuo por sus generaciones', es la misma fórmula hebrea (chukkat olam) "
+        "que selló primero la Pascua, tres capítulos atrás (12:14, ya en estas páginas) —ahora "
+        "sellando el primer deber estable del sacerdocio, un capítulo antes de que a Aarón y sus "
+        "hijos se les den siquiera sus vestiduras (Éxodo 28, todavía no en estas páginas). El 'Ner "
+        "Tamid' moderno de la sinagoga, una luz eterna que en verdad nunca se apaga, toma su nombre "
+        "de esta frase, aunque no, originalmente, su práctica nocturna exacta."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
