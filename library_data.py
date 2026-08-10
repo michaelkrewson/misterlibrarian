@@ -390,14 +390,21 @@ DICTIONARY = [
     ("parochet-masakh", "parochet / masakh", "פָרֹכֶת / מָסָךְ", "parochet / masakh",
      "Two Hebrew nouns for two distinct tabernacle hangings, easily conflated in translation and in the Greek text that later reports one of them torn. The PAROCHET (26:31-33) is the inner VEIL, woven with cherubim, dividing the holy place from the most holy — where the ark itself stands. The MASAKH (26:36-37) is the outer SCREEN at the tent's public door, plainer, embroidered but carrying no cherubim. The Septuagint translates both with the same Greek word, katapetasma — which is why Matthew 27:51 ('the curtain of the sanctuary was torn in two,' already on these pages) genuinely cannot specify which of the two is meant.", ("Exodus", 26, 31)),
     ("choshev-rokem", "choshev / rokem", "חֹשֵׁב / רֹקֵם", "choshev / rokem",
-     "Two Hebrew craft-terms for two different textile techniques, per the Talmud (Yoma 72b) and later commentators: ma'aseh CHOSHEV ('the work of a designer', 26:1, 31) is woven so the pattern reads identically on both faces of the fabric; ma'aseh ROKEM ('the work of an embroiderer', 26:36) is stitched onto one face only, the reverse left plain. The distinction tracks which tabernacle curtains carry cherubim (choshev-work: the inner lining and the veil) and which do not (rokem-work: the outer screen) — the more expensive, two-sided weave reserved for what lies deepest inside the structure.", ("Exodus", 26, 1)),
+     "Two Hebrew craft-terms for two different textile techniques, per the Talmud (Yoma 72b) and later commentators: ma'aseh CHOSHEV ('the work of a designer', 26:1, 31) is woven so the pattern reads identically on both faces of the fabric; ma'aseh ROKEM ('the work of an embroiderer', 26:36) is stitched onto one face only, the reverse left plain. The distinction tracks which tabernacle curtains carry cherubim (choshev-work: the inner lining and the veil) and which do not (rokem-work: the outer screen) — the more expensive, two-sided weave reserved for what lies deepest inside the structure. ⚠ The same gradient extends from the BUILDING to the PRIEST himself in Exodus 28, already on these pages: the ephod (28:6) and the breastplate it carries (28:15) both get the expensive choshev-work, while the priest's own sash (28:39) gets the plainer rokem-work — the identical rule, now running through a person's body instead of a curtain.", ("Exodus", 26, 1)),
     # ---- Exodus 27 (Hebrew) ----
     ("mizbeach", "mizbeach", "מִזְבֵּחַ", "mizbeach",
      "ALTAR — from zavach, 'to slaughter, sacrifice.' This chapter's bronze altar (27:1-8) stands OUTSIDE the tent, in the open court — acacia wood overlaid with bronze/copper, not the gold of every furnishing INSIDE the tabernacle (Exodus 25). Its horns (v2) are 'of one piece with it,' never bolted on. ⚠ Those horns become one of the most consequential objects in the whole narrative: fleeing men grasp them for asylum (1 Kings 1:50-51, already on these pages; 1 Kings 2:28, not yet), and their removal is itself a sentence of judgment ('the horns of the altar shall be cut off,' Amos 3:14, not yet on these pages). Hollow rather than solid (v8) — the standard reconciliation with the earlier law that a true altar be plain earth or unhewn stone, never cut and never elevated by steps (Exodus 20:24-26, already on these pages).", ("Exodus", 27, 1)),
     ("chatzer", "chatzer", "חָצֵר", "chatzer",
      "COURT, courtyard, enclosure — a hundred cubits by fifty, its entire perimeter a single course of 'fine twined linen' hung on sixty pillars (27:9-18) — cloth, not masonry, the only thing separating the sanctuary's ground from the ordinary camp outside it. The one gate, on the east, is a plainer twenty-cubit 'work of an embroiderer' (v16) — the same one-faced craft as the tent's own outer screen (26:36, already on these pages), reserving the more expensive two-faced weave and its woven cherubim for what stands deeper inside (the veil, 26:31).", ("Exodus", 27, 9)),
     ("ner-tamid", "ner tamid", "נֵר תָּמִיד", "ner tamid",
-     "CONTINUAL LAMP — literally 'lamp of regularity.' The command (27:20-21) is the chapter's only instruction not addressed to Moses building something, but to the whole people bringing something: pure, beaten olive oil, so Aaron and his sons can tend the lampstand's flame every evening 'from evening to morning' before Jehovah — the text's own scope, not literal round-the-clock burning. ⚠ Its closing phrase, 'an EVERLASTING STATUTE throughout their generations,' is the identical Hebrew formula (chukkat olam) that first sealed the Passover three chapters back (12:14, already on these pages) — now sealing the priesthood's own first standing duty, one chapter before Aaron and his sons are even given their garments (Exodus 28, not yet on these pages). The modern synagogue's ever-burning 'Ner Tamid' lamp over the ark takes its name from this phrase, though its own continuous, day-and-night burning is a later development.", ("Exodus", 27, 20)),
+     "CONTINUAL LAMP — literally 'lamp of regularity.' The command (27:20-21) is the chapter's only instruction not addressed to Moses building something, but to the whole people bringing something: pure, beaten olive oil, so Aaron and his sons can tend the lampstand's flame every evening 'from evening to morning' before Jehovah — the text's own scope, not literal round-the-clock burning. ⚠ Its closing phrase, 'an EVERLASTING STATUTE throughout their generations,' is the identical Hebrew formula (chukkat olam) that first sealed the Passover three chapters back (12:14, already on these pages) — now sealing the priesthood's own first standing duty, one chapter before Aaron and his sons are even given their garments (Exodus 28, already on these pages). The modern synagogue's ever-burning 'Ner Tamid' lamp over the ark takes its name from this phrase, though its own continuous, day-and-night burning is a later development.", ("Exodus", 27, 20)),
+    # ---- Exodus 28 (Hebrew) ----
+    ("choshen", "choshen", "חֹשֶׁן", "choshen",
+     "BREASTPLATE — the high priest's own name for JUDGMENT: 'breastplate of mishpat' (28:15), the identical root that named the Mishpatim, Exodus 21-23's whole law-code, already on these pages. Square, doubled, set with twelve stones (28:17-20) in four rows of three, one per tribe, and housing the Urim and Thummim (28:30) — a device that CARRIES a verdict, not merely symbolizes one: Aaron 'bears the judgment of the children of Israel on his heart before Jehovah continually' (v29-30), the object, the act, and the seven-chapters-earlier law-code all converging on one Hebrew root. ⚠ The twelve stones are the most disputed identifications in the whole Torah — see the chapter's own note at 28:15 for a full shelf comparison; four of the twelve (sapphire, agate, amethyst, onyx) are stable across every version checked, the other eight are genuine guesses.", ("Exodus", 28, 15)),
+    ("urim-thummim", "Urim and Thummim", "אוּרִים וְתֻמִּים", "Urim v'Thummim",
+     "Two objects placed inside the high priest's breastplate (28:30) and never once described — no shape, no material, no instructions for use, in a chapter otherwise obsessed with exact specification. The names likely mean something like 'lights' and 'perfections' or 'truth,' though even that etymology is genuinely uncertain; how the objects actually functioned — cast like lots, or read by some other sign — is a question ancient rabbinic sources already confessed they could not answer with confidence. Every major English version transliterates rather than translates both words — the rare point where the whole shelf agrees, by declining to guess.", ("Exodus", 28, 30)),
+    ("millu-yad", "mille et-yadam", "מִלֵּא אֶת־יָדָם", "mille et-yadam",
+     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him (Exodus 29, not yet on these pages, uses the same verb repeatedly at the ordination itself). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' — none keeps the image of a hand being FILLED. This translation renders it literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction.", ("Exodus", 28, 41)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -553,7 +560,7 @@ DICTIONARY = [
     ("tseaqah", "za'aqah / tse'aqah", "זְעָקָה / צְעָקָה", "za'aqah / tse'aqah",
      "The outcry — the legal scream of the wronged. Abel's blood 'cries out' from the ground (4:10), the outcry of Sodom's victims reaches heaven (18:20-21), and Israel's own cry in Egypt will rise the same way (Exodus 3:7, 9).", (18, 20)),
     ("mishpat", "mishpat / shaphat", "מִשְׁפָּט / שָׁפַט", "mishpat / shaphat",
-     "Justice — and the verb to judge. Sarai invokes it in anger (16:5), a desert spring is named for it (En-mishpat, 14:7), and Abraham aims it at heaven itself: 'Shall not the Judge of all the earth do justice?' (18:25).", (16, 5)),
+     "Justice — and the verb to judge. Sarai invokes it in anger (16:5), a desert spring is named for it (En-mishpat, 14:7), and Abraham aims it at heaven itself: 'Shall not the Judge of all the earth do justice?' (18:25). ⚠ The same root organizes a whole run of Exodus: it names the case-law code itself (the Mishpatim, Exodus 21-23, already on these pages), then means simply 'plan' or 'design' for the tabernacle's own construction (26:30, already on these pages), then names the high priest's breastplate — 'breastplate of mishpat' — and the verdict it lets Aaron carry 'on his heart before Jehovah continually' (Exodus 28:15, 29-30, already on these pages). Three senses of one root across three chapters: law, design, and judgment worn on the body.", (16, 5)),
     ("pala", "pala", "פָּלָא", "pala",
      "Wonder — what only God does. 'Is anything too wondrous for Jehovah?' (18:14) — the shelf's 'too hard' flattens it; Jeremiah asks the question back almost word for word (Jeremiah 32:17, 27).", (18, 14)),
     ("ednah", "ednah", "עֶדְנָה", "ednah",
@@ -5572,6 +5579,9 @@ XREFS = [
     (("Exodus", 27, 16), ("Exodus", 26, 36), "the same one-faced 'work of an embroiderer' (rokem), no cherubim — the courtyard gate borrows the tent's own plainer outer-door craft"),
     (("Exodus", 27, 21), ("Exodus", 26, 33), "'the testimony' — the same word naming what stands just beyond this veil: the ark holding the covenant tablets, described one chapter back"),
     (("Exodus", 27, 21), ("Exodus", 12, 14), "chukkat olam le-dorotam, 'an everlasting statute throughout their generations' — the identical formula that first sealed the Passover, now sealing the priesthood's nightly duty at the lamp"),
+    # ---- Exodus 28 ----
+    (("Exodus", 28, 17), ("Revelation", 21, 19), "twelve gemstones in a fixed order, reused thirteen centuries later for a city's own foundations — the two lists overlap in several English renderings and match in none of their positions, the uncertainty of both originals compounding rather than cancelling"),
+    (("Exodus", 28, 15), ("Exodus", 21, 1), "the identical root, mishpat, that names this breastplate 'of judgment' first named the whole case-law code seven chapters back — the Mishpatim — now worn literally over the high priest's heart"),
     # ---- Exodus 26 ----
     (("Exodus", 26, 33), ("Matthew", 27, 51), "the very curtain — or possibly its plainer outer neighbor, since Greek collapses both Hebrew names into one word — torn top to bottom at the moment Jesus dies, roughly thirteen centuries after this chapter first hung it"),
     # ---- Exodus 25 ----
@@ -11065,7 +11075,11 @@ DICTIONARY_ES = {
         "('bordador', 26:36) se cose sobre una sola cara, dejando el reverso liso. La distinción "
         "marca qué cortinas del tabernáculo llevan querubines (obra choshev: el forro interior y el "
         "velo) y cuáles no (obra rokem: la cortina exterior) —el tejido de doble cara, más costoso, "
-        "reservado para lo que está más adentro de la estructura."),
+        "reservado para lo que está más adentro de la estructura. ⚠ El mismo gradiente se extiende "
+        "del EDIFICIO al SACERDOTE mismo en Éxodo 28, ya en estas páginas: el efod (28:6) y el "
+        "pectoral que lleva (28:15) reciben ambos la obra choshev, cara; el propio cinto del "
+        "sacerdote (28:39) recibe la obra rokem, más sencilla —la misma regla, ahora recorriendo el "
+        "cuerpo de una persona en vez de una cortina."),
     # ---- Éxodo 27 ----
     "mizbeach": ("mizbeach",
         "ALTAR —de zavach, 'degollar, sacrificar'. El altar de bronce de este capítulo (27:1-8) se "
@@ -11095,9 +11109,52 @@ DICTIONARY_ES = {
         "final, 'estatuto perpetuo por sus generaciones', es la misma fórmula hebrea (chukkat olam) "
         "que selló primero la Pascua, tres capítulos atrás (12:14, ya en estas páginas) —ahora "
         "sellando el primer deber estable del sacerdocio, un capítulo antes de que a Aarón y sus "
-        "hijos se les den siquiera sus vestiduras (Éxodo 28, todavía no en estas páginas). El 'Ner "
+        "hijos se les den siquiera sus vestiduras (Éxodo 28, ya en estas páginas). El 'Ner "
         "Tamid' moderno de la sinagoga, una luz eterna que en verdad nunca se apaga, toma su nombre "
         "de esta frase, aunque no, originalmente, su práctica nocturna exacta."),
+    # ---- Éxodo 28 ----
+    "mishpat": ("mishpat / shafat",
+        "JUSTICIA —y el verbo juzgar. Saraí lo invoca con ira (16:5), un manantial del desierto "
+        "lleva su nombre (En-mispat, 14:7), y Abraham se lo dirige al cielo mismo: '¿el Juez de "
+        "toda la tierra no ha de hacer justicia?' (18:25). ⚠ La misma raíz organiza toda una serie "
+        "de capítulos de Éxodo: nombra el código de casuística mismo (los Mishpatim, Éxodo 21-23, "
+        "ya en estas páginas), luego significa simplemente 'plan' o 'diseño' para la construcción "
+        "del tabernáculo (26:30, ya en estas páginas), y luego nombra el pectoral del sumo "
+        "sacerdote —'pectoral de mishpat'— y el veredicto que le permite a Aarón llevar 'sobre su "
+        "corazón delante de Jehová continuamente' (Éxodo 28:15, 29-30, ya en estas páginas). Tres "
+        "sentidos de una sola raíz a lo largo de tres capítulos: ley, diseño, y juicio llevado "
+        "sobre el cuerpo."),
+    "choshen": ("choshen",
+        "PECTORAL —el propio nombre del sumo sacerdote para el JUICIO: 'pectoral de mishpat' "
+        "(28:15), la raíz idéntica que nombró los Mishpatim, todo el código legal de Éxodo 21-23, "
+        "ya en estas páginas. Cuadrado, doblado, engastado con doce piedras (28:17-20) en cuatro "
+        "hileras de tres, una por tribu, y albergando el Urim y el Tumim (28:30) —un dispositivo "
+        "que LLEVA un veredicto, no solo lo simboliza: Aarón 'lleva el juicio de los hijos de "
+        "Israel sobre su corazón delante de Jehová continuamente' (vv29-30), el objeto, el acto, y "
+        "el código legal de siete capítulos atrás, todos convergiendo en una sola raíz hebrea. ⚠ "
+        "Las doce piedras son las identificaciones más disputadas de toda la Torá —véase la propia "
+        "nota del capítulo en 28:15 para una comparación completa del estante; cuatro de las doce "
+        "(zafiro, ágata, amatista, ónice) son estables en todas las versiones consultadas, las "
+        "otras ocho son conjeturas genuinas."),
+    "urim-thummim": ("Urim y Tumim",
+        "Dos objetos colocados dentro del pectoral del sumo sacerdote (28:30) y nunca descritos "
+        "—sin forma, sin material, sin instrucción alguna para su uso, en un capítulo por lo demás "
+        "obsesionado con la especificación exacta. Los nombres probablemente significan algo como "
+        "'luces' y 'perfecciones' o 'verdad', aunque incluso esa etimología es genuinamente "
+        "incierta; cómo funcionaban realmente los objetos —echados como suertes, o leídos por "
+        "alguna otra señal— es una pregunta que ya las fuentes rabínicas antiguas confesaban no "
+        "poder responder con certeza. Toda versión mayor consultada transliteran, en vez de "
+        "traducir, ambas palabras —el raro punto donde todo el estante coincide, al negarse a "
+        "adivinar."),
+    "millu-yad": ("mille et-yadam",
+        "LLENAR LA MANO —el modismo hebreo estándar para la ordenación al oficio sacerdotal "
+        "(28:41), casi con certeza refiriéndose a que el sacerdote recibe su propia porción física "
+        "del mismo sacrificio que lo instala (Éxodo 29, todavía no en estas páginas, usa el mismo "
+        "verbo repetidamente en la ordenación misma). Toda versión mayor en español e inglés "
+        "traduce el modismo y lo pierde —RV60 'consagrarás', NVI 'para conferirles autoridad'— "
+        "ninguna conserva la imagen de una mano LLENADA. Esta traducción la mantiene literal, en "
+        "el mismo espíritu que 'costado' sobre 'costilla' en Génesis 2: un modismo físico y vivo "
+        "que todo el estante ha suavizado en silencio."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
