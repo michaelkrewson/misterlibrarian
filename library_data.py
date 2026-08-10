@@ -13835,6 +13835,43 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "exod29": [dict(
+        file="exod29-aaron-breastplate.jpg",
+        title="Aaron Is Vested with the Breastplate",
+        title_es="Aarón es revestido con el pectoral",
+        artist="Jan Luyken",
+        artist_es="Jan Luyken",
+        year="1700",
+        location="Etching, for Willem Goeree's Mosaize Historie der Hebreeuwse Kerke, Rijksmuseum",
+        location_es="Aguafuerte, para la Mosaize Historie der Hebreeuwse Kerke de Willem Goeree, Rijksmuseum",
+        alt="A monochrome etching in an ornate frame. In an inset panel at the top, three "
+            "richly patterned garment-shapes are displayed side by side against draped "
+            "curtains — the breastplate laid out for inspection. Below, in a scene set "
+            "before the tabernacle's tent-camp, several bearded men in turbans and long "
+            "robes gather around a bending figure being dressed; one man at right holds a "
+            "small square object, the breastplate's pouch; another figure stoops over a "
+            "basin of water at the left, beside a large ornate altar.",
+        note="&#9888; The Rijksmuseum's own catalog captions this print's scene as "
+             "Leviticus 8 &mdash; the narrated FULFILLMENT of Exodus 29's own instructions, "
+             "when Moses actually dresses Aaron in the priestly garments and fits the "
+             "breastplate holding the Urim and Thummim (visible here, held in the hand of "
+             "the man at right). Jan Luyken (1649&ndash;1712), one of the most prolific "
+             "Dutch Golden Age book-illustrators, engraved it for Willem Goeree's 1700 "
+             "<em>Mosaize Historie der Hebreeuwse Kerke</em> &mdash; the same ceremony this "
+             "chapter commands, shown as it was later carried out.",
+        note_es="&#9888; El propio cat&aacute;logo del Rijksmuseum titula la escena de este "
+                "grabado como Lev&iacute;tico 8 &mdash;el cumplimiento NARRADO de las propias "
+                "instrucciones de &Eacute;xodo 29, cuando Mois&eacute;s viste realmente a "
+                "Aar&oacute;n con las vestiduras sacerdotales y le ajusta el pectoral que "
+                "porta el Urim y el Tumim (visible aqu&iacute;, en la mano del hombre de la "
+                "derecha). Jan Luyken (1649&ndash;1712), uno de los ilustradores de libros "
+                "m&aacute;s prol&iacute;ficos del Siglo de Oro neerland&eacute;s, lo "
+                "grab&oacute; para la <em>Mosaize Historie der Hebreeuwse Kerke</em> de "
+                "Willem Goeree, de 1700 &mdash;la misma ceremonia que este cap&iacute;tulo "
+                "ordena, mostrada tal como se llev&oacute; a cabo despu&eacute;s.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:A%C3%A4ron_wordt_het_borstschild_(hoshen)_aangedaan,_RP-P-OB-44.900.jpg",
+    )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
         title="The Vision of the Four Horns and the Four Craftsmen",
