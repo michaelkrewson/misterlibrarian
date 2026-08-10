@@ -404,7 +404,9 @@ DICTIONARY = [
     ("urim-thummim", "Urim and Thummim", "אוּרִים וְתֻמִּים", "Urim v'Thummim",
      "Two objects placed inside the high priest's breastplate (28:30) and never once described — no shape, no material, no instructions for use, in a chapter otherwise obsessed with exact specification. The names likely mean something like 'lights' and 'perfections' or 'truth,' though even that etymology is genuinely uncertain; how the objects actually functioned — cast like lots, or read by some other sign — is a question ancient rabbinic sources already confessed they could not answer with confidence. Every major English version transliterates rather than translates both words — the rare point where the whole shelf agrees, by declining to guess.", ("Exodus", 28, 30)),
     ("millu-yad", "mille et-yadam", "מִלֵּא אֶת־יָדָם", "mille et-yadam",
-     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him (Exodus 29, not yet on these pages, uses the same verb repeatedly at the ordination itself). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' — none keeps the image of a hand being FILLED. This translation renders it literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction.", ("Exodus", 28, 41)),
+     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him. Exodus 29 (already on these pages) confirms it directly: the verb fires four more times at the ordination itself (29:9, 29, 33, 35), and its noun form — eil ha-millu'im, literally 'the ram OF FILLING' — becomes that chapter's own standing name for the ordination sacrifice (29:22, 26, 27, 31, 34), the priest's own portion pressed into his palms before it is burned (29:24). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' (and, for the noun, 'ram of consecration'/'ram of ordination') — none keeps the image of a hand being FILLED. This translation renders every occurrence literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction.", ("Exodus", 28, 41)),
+    ("mishkan", "mishkan", "מִשְׁכָּן", "mishkan",
+     "TABERNACLE — literally DWELLING-PLACE, from shakhan, 'to dwell, settle down.' The word names the whole portable sanctuary Moses is shown 'the pattern of' at its first appearance (25:9, already on these pages), and the entire five-chapter construction project it opens — gold, curtains, boards, altar, priestly garments — is a single extended answer to the question the word itself poses: a dwelling for whom? Exodus 29:45-46 (already on these pages) gives the answer directly, in the exact same root: 'I will DWELL (ve-shakhanti) among the children of Israel' — the tabernacle's own name, spoken as a verb, closing the whole instruction. Every major English version renders mishkan 'tabernacle,' following the Vulgate's tabernaculum; this translation keeps the same word, but flags the root wherever the text itself plays on it.", ("Exodus", 25, 9)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -1350,7 +1352,7 @@ DICTIONARY = [
     ("shibbolet", "shibbolet", "שִׁבֹּלֶת", "shibbolet",
      "An EAR of grain — the head of a stalk of wheat or barley, and, by the same root, a flowing stream. Judges 12:6 turns the word into history's most famous shibboleth: fleeing Ephraimites, unable to produce the sh- sound, said sibboleth instead and were killed at the fords of the Jordan for the accent alone (not yet on these pages). Zechariah 4:12 stretches the same grain-word onto an OLIVE tree by analogy — shibbelei ha-zeitim, 'ears of the olives' — rendered 'olive branches' or 'twigs' in translation, since English has no botanical word that crosses grain and fruit-tree the way Hebrew's does here.", ("Zechariah", 4, 12)),
     ("yitzhar", "yitzhar", "יִצְהָר", "yitzhar",
-     "FRESH, pressed oil — the harvest word, third of the standing grain-wine-oil triad (dagan, tirosh, yitzhar) that names the whole produce of the land in tithe and blessing texts (Deuteronomy 7:13, not yet on these pages). Deliberately NOT shemen, the word for the oil actually poured on a priest's or king's head at an anointing (Exodus 29:7, not yet on these pages) — a distinction most English versions erase at Zechariah 4:14's beney ha-yitzhar, 'sons of yitzhar,' printed as 'the two anointed ones' though no anointing verb or noun appears in the phrase at all. The image is vitality and abundance, not ceremony.", ("Zechariah", 4, 14)),
+     "FRESH, pressed oil — the harvest word, third of the standing grain-wine-oil triad (dagan, tirosh, yitzhar) that names the whole produce of the land in tithe and blessing texts (Deuteronomy 7:13, not yet on these pages). Deliberately NOT shemen, the word for the oil actually poured on a priest's or king's head at an anointing (Exodus 29:7, already on these pages) — a distinction most English versions erase at Zechariah 4:14's beney ha-yitzhar, 'sons of yitzhar,' printed as 'the two anointed ones' though no anointing verb or noun appears in the phrase at all. The image is vitality and abundance, not ceremony.", ("Zechariah", 4, 14)),
     # ---- Jeremiah 23 (Hebrew) ----
     ("tsemach", "tsemach", "צֶמַח", "tsemach",
      "A SPROUT, a shoot — what comes up out of the ground; from tsamach, 'to sprout.' The image is a cut stump putting out green: something small rising where something great was felled. Jeremiah promises David a tsemach tsaddiq, 'a righteous Sprout' (23:5), against the backdrop of a royal house whose cedars have just been cut down and burned (22:7). The word carries no Hebrew definite article in any of its three occurrences — here, at Zechariah 3:8 ('my servant, Sprout'), or at 6:12, where the text calls it a NAME outright ('Sprout is his name') — which is why this translation treats it as one, not a titled common noun, and it runs alongside Isaiah's netser, the 'shoot' from the stump of Jesse. English tradition prints 'Branch' (KJV, ASV, NIV all follow it), but NWT's 'sprout' keeps the plainer botany the verb actually gives — 'Branch' evokes a limb on a living tree, when the image is new growth from a stump. The same oracle is spoken a second time in Jeremiah 33, where the name it carries is given to the CITY instead of the man.", ("Jeremiah", 23, 5)),
@@ -5558,6 +5560,10 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Exodus 29 ----
+    (("Exodus", 27, 2), ("Exodus", 29, 12), "the altar's horns, 'of one piece' when built, put to their very first use one chapter later — not a fugitive's grip, but a priest's own ordination blood"),
+    (("Exodus", 25, 9), ("Exodus", 29, 45), "the word mishkan, 'tabernacle,' first named as the pattern Moses is shown — and, five chapters and one whole building later, spoken back as a verb: 'I will DWELL (ve-shakhanti) among the children of Israel'"),
+    (("Exodus", 12, 6), ("Exodus", 29, 39), "the identical phrase bein ha-arbayim, 'between the two evenings' — fixed once for the one-time Passover lamb's slaughter, reused here for the priesthood's own twice-daily offering, forever"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11149,12 +11155,35 @@ DICTIONARY_ES = {
     "millu-yad": ("mille et-yadam",
         "LLENAR LA MANO —el modismo hebreo estándar para la ordenación al oficio sacerdotal "
         "(28:41), casi con certeza refiriéndose a que el sacerdote recibe su propia porción física "
-        "del mismo sacrificio que lo instala (Éxodo 29, todavía no en estas páginas, usa el mismo "
-        "verbo repetidamente en la ordenación misma). Toda versión mayor en español e inglés "
-        "traduce el modismo y lo pierde —RV60 'consagrarás', NVI 'para conferirles autoridad'— "
-        "ninguna conserva la imagen de una mano LLENADA. Esta traducción la mantiene literal, en "
-        "el mismo espíritu que 'costado' sobre 'costilla' en Génesis 2: un modismo físico y vivo "
-        "que todo el estante ha suavizado en silencio."),
+        "del mismo sacrificio que lo instala. Éxodo 29 (ya en estas páginas) lo confirma directamente: "
+        "el verbo se dispara cuatro veces más en la ordenación misma (29:9, 29, 33, 35), y su forma "
+        "sustantiva —eil ha-millu'im, literalmente 'el carnero DE LLENADO'— se vuelve el nombre propio "
+        "de ese capítulo para el sacrificio de ordenación (29:22, 26, 27, 31, 34), la porción del "
+        "sacerdote presionada en sus propias palmas antes de ser quemada (29:24). Toda versión mayor "
+        "en español e inglés traduce el modismo y lo pierde —RV60 'consagrarás' (aunque en 29:33 la "
+        "misma RV60 conserva 'llenar sus manos'), NVI 'para conferirles autoridad'— ninguna conserva "
+        "la imagen de una mano LLENADA en todas sus ocurrencias. Esta traducción la mantiene literal "
+        "en cada una, en el mismo espíritu que 'costado' sobre 'costilla' en Génesis 2: un modismo "
+        "físico y vivo que todo el estante ha suavizado en silencio."),
+    "mishkan": ("mishkan",
+        "TABERNÁCULO —literalmente LUGAR DE MORADA, de shakhan, 'habitar, morar'. La palabra nombra "
+        "todo el santuario portátil cuyo 'patrón' se le muestra a Moisés en su primera aparición "
+        "(25:9, ya en estas páginas), y los cinco capítulos enteros de construcción que abre —oro, "
+        "cortinas, tablas, altar, vestiduras sacerdotales— son una sola respuesta extendida a la "
+        "pregunta que la palabra misma plantea: ¿una morada para quién? Éxodo 29:45-46 (ya en estas "
+        "páginas) da la respuesta directamente, en la misma raíz exacta: 'HABITARÉ (ve-shakhanti) "
+        "entre los hijos de Israel' —el propio nombre del tabernáculo, dicho como verbo, cerrando "
+        "toda la instrucción. Toda versión mayor traduce mishkan 'tabernáculo'; esta traducción "
+        "mantiene la misma palabra, pero señala la raíz dondequiera que el texto mismo juega con ella."),
+    "kavod": ("kavod",
+        "GLORIA —y literalmente PESO. Construida sobre kaved, 'pesado' (la misma raíz detrás de "
+        "'honrar', que es tratar a una persona como algo que PESA). En Ezequiel el kavod no es una "
+        "abstracción sino un personaje en la trama: visto primero en el exilio junto al río Quebar "
+        "(1:28), visto SALIENDO del templo en los capítulos 10-11, y visto regresando en el 43. En "
+        "Éxodo 28:2 la misma palabra se aplica, sorprendentemente, a la ROPA —las vestiduras de Aarón "
+        "son 'para gloria y para hermosura'—; Éxodo 29:43 (ya en estas páginas) invierte el contraste: "
+        "la tienda de reunión se santifica 'por mi gloria', la presencia misma de Dios, no una gloria "
+        "prestada."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
@@ -12343,7 +12372,7 @@ DICTIONARY_ES = {
         "grano-vino-aceite (<em>dagan, tirosh, yitzhar</em>) que nombra toda la producci&oacute;n de la tierra en "
         "los textos de diezmo y bendici&oacute;n (Deuteronomio 7:13, a&uacute;n no traducido a estas p&aacute;ginas). "
         "Deliberadamente NO es <em>shemen</em>, la palabra para el aceite realmente derramado sobre la cabeza de un "
-        "sacerdote o un rey en una unci&oacute;n (&Eacute;xodo 29:7, a&uacute;n no traducido a estas p&aacute;ginas) "
+        "sacerdote o un rey en una unci&oacute;n (&Eacute;xodo 29:7, ya en estas p&aacute;ginas) "
         "&mdash;una distinci&oacute;n que la mayor&iacute;a de las versiones borra en <em>beney ha-yitzhar</em> de "
         "Zacar&iacute;as 4:14, &laquo;hijos de yitzhar&raquo;, impreso como &laquo;los dos ungidos&raquo; aunque "
         "ning&uacute;n verbo o sustantivo de unci&oacute;n aparece en la frase. La imagen es vitalidad y abundancia, "
