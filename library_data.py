@@ -523,6 +523,8 @@ DICTIONARY = [
      "CUT OFF from his people — a penalty of divine, not human, execution: the wrongdoer is simply excised, by God's own hand, from the covenant community. Its first occurrence plays on its own root: Hebrew 'CUTS' a covenant (karat brit, 15:18, over the cut animals), and the male who will not be cut (circumcised) 'shall be CUT OFF (venikhretah) from his people' (17:14) — the penalty rhymes with the refusal. Exodus 30 (already on these pages) uses the identical formula twice for one crime committed two ways: compounding the holy anointing oil or incense for ordinary use (30:33), and merely making incense like it to enjoy its smell, without ever giving it away (30:38) — private enjoyment of a sacred formula is itself karet-worthy, without any transaction at all.", (17, 14)),
     ("rokeach", "rokeach", "רוֹקֵחַ", "rokeach",
      "A PERFUMER, blender of spices — from the verb rakach, 'to compound, blend.' Exodus 30 leans on the whole word-family twice, once for each of its two recipes: the holy anointing oil is made 'a blended perfume, THE WORK OF A PERFUMER' (rokach ma'aseh rokeach, 30:25), and the incense recipe closing the same chapter is made 'a blended perfume, THE WORK OF A PERFUMER' — the identical four-word Hebrew phrase, verbatim, at 30:35. Recipe and craftsman share one root twice over in a single chapter, the same cognate-noun device already flagged for 'the ram OF FILLING' (Exodus 29, already on these pages). The verb returns once more at 30:33, now as a warning: whoever COMPOUNDS (yirkach) anything like the holy oil for himself, or gives it to an outsider, is cut off from his people.", ("Exodus", 30, 25)),
+    ("nafash", "vayinafash", "וַיִּנָּפַשׁ", "vayinafash",
+     "To BE REFRESHED — a rare verb from the same root as nefesh, 'soul, life-breath': literally 'to be re-souled,' the physical relief of a spent body catching its breath. It occurs only twice in the Torah, both in the same short span of chapters. First for the exhausted: 'your ox and your donkey may rest, and your servant's son and the foreigner may be REFRESHED' (Exodus 23:12, already on these pages), a workday's fatigue undone by the weekly rest. Then, startlingly, for God: 'in six days Jehovah made heaven and earth, and on the seventh day he ceased from work and was REFRESHED' (Exodus 31:17) — the identical verb this book otherwise reserves for a tired laborer or a tired animal, now describing the Creator's own seventh-day rest. No other verb in the Hebrew Bible makes that particular claim.", ("Exodus", 31, 17)),
     ("pitron", "pitron", "פִּתְרוֹן", "pitron",
      "An INTERPRETATION — specifically of a dream, and the word is almost confined to the Joseph story (with its Aramaic cousin pesher in Daniel and at Qumran). Egypt had a professional dream-reading industry, with reference manuals: the Dream Book of Papyrus Chester Beatty III lists dreams in columns beside standard readings. So when the two imprisoned officials complain that 'there is no one to INTERPRET' (40:8), they mean no specialist — they are in jail, cut off from the professionals. Joseph's answer sidesteps the whole trade: 'Do not INTERPRETATIONS belong to God?' He does not claim the gift; he assigns it upward, then asks to hear the dream. He says it again in front of Pharaoh — 'it is not in me' (41:16).", (40, 8)),
     ("bor", "bor", "בּוֹר", "bor",
@@ -927,7 +929,7 @@ DICTIONARY = [
     ("nazir", "nazir", "נָזִיר", "nazir",
      "A NAZIRITE — one 'separated,' set apart to God by a vow, marked by abstaining from wine, avoiding corpse-defilement, and above all letting the hair grow uncut: 'no razor shall touch his head' (the sign Hannah pledges for Samuel, 1:11, and the mark of Samson, Judges 13). The full law is in Numbers 6. Usually a temporary vow, it is here a LIFELONG dedication from before birth — Samuel, like Samson, is given to God for the whole of his life.", ("1 Samuel", 1, 11)),
     ("ot", "ot / otot", "אוֹת / אֹתוֹת", "ot / otot",
-     "A SIGN — a mark, token, or wonder that points beyond itself to authenticate a word or a promise. God gives Moses three OTOT to make Israel believe (Exodus 4:8-9): the staff-serpent, the leprous hand, the water-to-blood. The word runs from the rainbow, the 'sign' of the covenant with Noah (Genesis 9:12), and the sabbath, the 'sign' between God and Israel, to the plagues and the great 'signs and wonders' of the Exodus. A sign is not the point; it is a finger pointing at the one who gives it.", ("Exodus", 4, 8)),
+     "A SIGN — a mark, token, or wonder that points beyond itself to authenticate a word or a promise. The word covers two distinct kinds of sign in this translation. The first is the AUTHENTICATING WONDER: God gives Moses three OTOT to make Israel believe (Exodus 4:8-9) — the staff-serpent, the leprous hand, the water-to-blood — and the same word later names the plagues themselves, the great 'signs and wonders' of the Exodus. The second is the COVENANT MARKER, a standing mark that seals a relationship rather than proving a message: the rainbow, 'set between me and the earth' after the flood, binding God to every living thing (Genesis 9:12-13); circumcision, cut into Abraham's own flesh, binding one family line (Genesis 17:11); and the sabbath, kept on the calendar itself, binding the nation redeemed from Egypt — 'a sign between me and you throughout your generations' (<a href=\"exodus-31.html#v31-13\">Exodus 31:13</a>, already on these pages). A sky-mark, a body-mark, a time-mark, one for each covenant's scale. Either way, a sign is not the point; it is a finger pointing at the one who gives it.", ("Exodus", 4, 8)),
     ("chazak", "chazaq", "חָזַק", "chazaq",
      "TO BE STRONG, to STRENGTHEN — and, of a heart, to HARDEN, make firm and unyielding. It opens the Exodus's hardest theological thread: 'I will HARDEN (chazaq) his heart, and he will not let the people go' (4:21). Across the plagues the book says both that JEHOVAH hardened Pharaoh's heart and that PHARAOH hardened his own (and uses two other verbs, kavad 'made heavy' and qashah 'made stubborn', alongside this one). Scripture holds the divine and the human hardening together without resolving them; the translation keeps the strong verb rather than softening it.", ("Exodus", 4, 21)),
     ("bekhor", "bekhor", "בְּכוֹר", "bekhor",
@@ -953,7 +955,7 @@ DICTIONARY = [
     ("kinnim", "kinnim", "כִּנִּים", "kinnim",
      "GNATS — or lice, or mosquitoes; the word is genuinely uncertain (KJV 'lice,' most modern versions 'gnats'). The third plague comes with no warning and no demand, straight out of the dust of the earth, and it is the one the magicians of Egypt CANNOT reproduce: 'this is the finger of God' (8:15). Whatever the insect, its importance is that it ends the contest of skill — from here Egypt's experts are spectators.", ("Exodus", 8, 12)),
     ("etzba", "etzba Elohim", "אֶצְבַּע אֱלֹהִים", "etzba Elohim",
-     "'THE FINGER OF GOD' — the confession wrung out of Pharaoh's own magicians when they cannot duplicate the gnats (8:15). The idiom means God acting DIRECTLY, without instrument or effort: a finger, not even a hand or an arm. It returns for the tablets of the covenant, 'written with the finger of God' (31:18; Deuteronomy 9:10), and Jesus takes it up for his exorcisms — 'if I by the finger of God cast out demons, then the kingdom of God has come upon you' (Luke 11:20), where Matthew's parallel reads 'the Spirit of God.'", ("Exodus", 8, 15)),
+     "'THE FINGER OF GOD' — the confession wrung out of Pharaoh's own magicians when they cannot duplicate the gnats (8:15). The idiom means God acting DIRECTLY, without instrument or effort: a finger, not even a hand or an arm. It returns for the tablets of the covenant, 'written with the finger of God' (<a href=\"exodus-31.html#v31-18\">31:18</a>, already on these pages; Deuteronomy 9:10, not yet on these pages), and Jesus takes it up for his exorcisms — 'if I by the finger of God cast out demons, then the kingdom of God has come upon you' (Luke 11:20), where Matthew's parallel reads 'the Spirit of God.'", ("Exodus", 8, 15)),
     ("kaved", "kaved", "כָּבֵד", "kaved",
      "HEAVY, weighty — and of a heart, dull and unresponsive. It is one of THREE verbs Exodus uses for Pharaoh's refusal: KAVED ('made heavy,' 8:11, 28; 9:34), CHAZAQ ('made strong, firm,' 7:13; 8:15), and QASHAH ('made stubborn,' 7:3). ⚠️ Most English versions flatten all three into 'hardened,' which hides that Exodus is describing the same refusal from different angles — a heart weighed down like a stone, braced like a wall, stiffened like a neck — and that the same book says both that PHARAOH did it and that GOD did it, without ever reconciling them. The root also gives kavod, 'glory' — literally 'weight.'", ("Exodus", 8, 11)),
     ("shechin", "shechin", "שְׁחִין", "shechin",
@@ -5576,6 +5578,14 @@ XREFS = [
     (("Genesis", 17, 14), ("Exodus", 30, 33), "the same penalty, 'cut off from his people,' first attached to a man who will not be circumcised, now attached twice over to two different ways of misusing one sacred formula"),
     (("Exodus", 28, 43), ("Exodus", 30, 21), "the third and fourth 'that he die not' in three chapters, and a closing statute formula spliced from two earlier ones — 'for him and for his seed' borrowed verbatim, 'throughout their generations' swapped in for the ending"),
     (("Exodus", 30, 13), ("Matthew", 17, 24), "the exact half-shekel this chapter fixes as the yearly tabernacle tax survives, roughly thirteen centuries later, as the temple tax a fish's mouth pays for Jesus and Peter — one didrachma each, 'for me and for you'"),
+    # ---- Exodus 31 ----
+    (("Exodus", 24, 12), ("Exodus", 31, 18), "a promise seven chapters in the waiting — 'I will give you the tablets of stone... that I have written' — finally kept, the entire tabernacle instruction unfolding inside one suspended sentence on the mountain"),
+    (("Exodus", 8, 15), ("Exodus", 31, 18), "the identical idiom, 'the finger of God' — first wrung as an unwilling confession from Pharaoh's own magicians over a plague they couldn't reproduce, now naming the writing of Israel's own covenant law"),
+    (("Exodus", 17, 12), ("Exodus", 31, 2), "Hur, who held up Moses' failing hands at the battle with Amalek, reappears by name only as the grandfather of Bezalel, the master craftsman chosen to build the house of the God that battle was won for"),
+    (("Genesis", 17, 14), ("Exodus", 31, 14), "the identical penalty, 'cut off from among his people,' first attached to a man who refuses circumcision's sign of the covenant, now attached to anyone who breaks the sabbath's sign of a second covenant"),
+    (("Exodus", 28, 3), ("Exodus", 31, 6), "the identical formula, 'wise of heart... filled with a spirit of wisdom,' first spoken of the anonymous craftsmen who sew Aaron's garments, now spoken of every skilled hand building any part of the tabernacle"),
+    (("Exodus", 20, 9), ("Exodus", 31, 15), "the Fourth Commandment restated almost verbatim — six days of work, a seventh day of rest holy to Jehovah, because Jehovah himself worked six days and rested on the seventh"),
+    (("Genesis", 1, 2), ("Exodus", 31, 3), "the identical phrase, ruach Elohim, 'the spirit of God' — the same power that hovered over the waters at creation now fills one craftsman's hands to build a dwelling for the God who made the world"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11225,6 +11235,37 @@ DICTIONARY_ES = {
         "sustantivo cognado ya señalado para 'el carnero DE LLENADO' (Éxodo 29, ya en estas páginas). El "
         "verbo regresa una vez más en el 30:33, ahora como advertencia: quien COMPONGA (yirkach) algo "
         "semejante al aceite santo para sí mismo, o lo dé a un extraño, es cortado de su pueblo."),
+    "ot": ("ot",
+        "UNA SEÑAL —una marca visible y permanente que apunta más allá de sí misma hacia una promesa o "
+        "una relación. Tres pactos en esta traducción tienen cada uno la suya hasta ahora: el arcoíris, "
+        "puesto «entre mí y la tierra» después del diluvio, vinculando a Dios con todo ser viviente "
+        "(Génesis 9:12-13); la circuncisión, cortada en la propia carne de Abraham, "
+        "vinculando a un solo linaje familiar (Génesis 17:11); y el sábado, guardado "
+        "en el propio calendario, vinculando a la nación rescatada de Egipto —«una señal entre mí y "
+        "vosotros por vuestras generaciones» (<a href=\"exodus-31.es.html#v31-13\">Éxodo 31:13</a>, "
+        "ya en estas páginas). Una marca en el cielo para toda carne, una "
+        "marca en el cuerpo para un linaje, una marca en el tiempo para un pueblo: la señal de cada pacto "
+        "está a la medida de lo que sella."),
+    "nafash": ("vayinafash",
+        "SER REFRESCADO —un verbo raro de la misma raíz que nefesh, 'alma, aliento de vida': "
+        "literalmente 'volver a tener alma', el alivio físico de un cuerpo agotado que recobra el "
+        "aliento. Aparece solo dos veces en la Torá, ambas en el mismo tramo corto de capítulos. Primero "
+        "para los agotados: «tu buey y tu asno descansen, y el hijo de tu sierva y el extranjero sean "
+        "REFRESCADOS» (<a href=\"exodus-23.es.html#v23-12\">Éxodo 23:12</a>, ya en estas páginas), la "
+        "fatiga de un día de trabajo deshecha por el "
+        "descanso semanal. Luego, sorprendentemente, para Dios: «en seis días Jehová hizo los cielos y "
+        "la tierra, y en el séptimo día cesó de su obra y fue REFRESCADO» (<a href=\"exodus-31.es.html#v31-17\">Éxodo 31:17</a>) —el mismo verbo "
+        "que este libro reserva en todo lo demás para un trabajador agotado o un animal agotado, ahora "
+        "describiendo el propio descanso del séptimo día del Creador. Ningún otro verbo en la Biblia "
+        "hebrea hace esa afirmación en particular."),
+    "etzba": ("etzba Elohim",
+        "«EL DEDO DE DIOS» —la confesión que se le arranca a los propios magos del Faraón cuando no "
+        "pueden reproducir los piojos (8:15). El modismo significa que Dios actúa DIRECTAMENTE, sin "
+        "instrumento ni esfuerzo: un dedo, ni siquiera una mano o un brazo. Regresa para las tablas del "
+        "pacto, «escritas con el dedo de Dios» (<a href=\"exodus-31.es.html#v31-18\">31:18</a>, ya en "
+        "estas páginas; Deuteronomio 9:10, todavía no en estas páginas), y Jesús lo retoma para sus "
+        "exorcismos —«si por el dedo de Dios echo fuera los demonios, el reino de Dios ha llegado a "
+        "vosotros» (Lucas 11:20), donde el paralelo de Mateo lee «el Espíritu de Dios»."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
@@ -13955,6 +13996,48 @@ CHAPTER_ART = {
                 "mismo, dando a cada uno su propio p&aacute;rrafo separado, nunca hace.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Holman_Altar_of_Incense_Altar_of_Burnt-Offering_Laver.jpg",
+    )],
+    "exod31": [dict(
+        file="exod31-raphael-tablets.jpg",
+        title="Moses Receiving the Tablets of the Law",
+        title_es="Moisés recibe las tablas de la ley",
+        artist="Raphael",
+        artist_es="Rafael",
+        year="1518",
+        location="Fresco, Loggia of the Palazzi Pontifici, Vatican",
+        location_es="Fresco, Loggia de los Palazzi Pontifici, Vaticano",
+        alt="A Renaissance fresco of a mountaintop scene. On the right, an old, "
+            "bearded man in flowing green robes kneels on bare rock, reaching "
+            "upward with both hands. On the left, a mass of winged figures "
+            "rises out of a bank of clouds, one of them extending a flat gray "
+            "stone tablet down toward the kneeling man's outstretched hands. "
+            "Golden light fills the sky behind the cloud; a strip of blue sky "
+            "and distant landscape is visible below the rocky ledge at right.",
+        note="&#9888; Raphael paints the handoff itself, the single instant this "
+             "chapter's own last verse names: Moses kneeling on Sinai, both "
+             "hands reaching up, as a tablet passes from the cloud into his "
+             "grip. The winged figures crowding the cloud are the painter's "
+             "own addition &mdash; the text names no attendants, only "
+             "&lsquo;the finger of God&rsquo; &mdash; but the composition's real "
+             "argument is the OUTSTRETCHED HAND itself: a small, plain gesture "
+             "asked to carry the weight of an entire covenant. Painted in "
+             "1518 for the Vatican Loggia's biblical fresco cycle, two years "
+             "before Raphael's death at thirty-seven.",
+        note_es="&#9888; Rafael pinta la entrega misma, el instante exacto que "
+                "nombra el &uacute;ltimo vers&iacute;culo de este cap&iacute;tulo: "
+                "Mois&eacute;s arrodillado en Sina&iacute;, ambas manos "
+                "extendidas hacia arriba, mientras una tabla pasa de la nube "
+                "a su mano. Las figuras aladas que llenan la nube son "
+                "a&ntilde;adido propio del pintor &mdash;el texto no nombra "
+                "ning&uacute;n asistente, solo &laquo;el dedo de Dios&raquo;&mdash;, "
+                "pero el verdadero argumento de la composici&oacute;n es la MANO "
+                "EXTENDIDA misma: un gesto peque&ntilde;o y sencillo al que se "
+                "le pide cargar el peso de todo un pacto. Pintado en 1518 para "
+                "el ciclo de frescos b&iacute;blicos de la Loggia Vaticana, dos "
+                "a&ntilde;os antes de la muerte de Rafael a los treinta y siete "
+                "a&ntilde;os.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Raphael_Moses_Receiving_the_Tablets_of_the_Law.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
