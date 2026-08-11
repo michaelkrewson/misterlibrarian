@@ -195,7 +195,7 @@ DICTIONARY = [
     ["soteria", "sōtēria", "σωτηρία", "sōtēria", "RESCUE, deliverance, coming through alive — an everyday Greek word long before it was a religious one. A doctor achieves sōtēria for a patient; a general achieves it for a besieged city; a ship's crew achieves it in a storm (Acts 27:34 uses it of simply surviving the wreck). The related sōtēr, 'saviour', was a standing title of Hellenistic kings and Roman emperors, which is part of what makes Romans 1:16 pointed: the letter announces a rival deliverer to the city that minted the coins.", ["Romans", 1, 16]],
     ["dikaiosyne", "dikaiosynē", "δικαιοσύνη", "dikaiosynē", "RIGHTEOUSNESS / justice — one word in Greek for what English splits into two, and the key term of Romans. ⚠ 'The righteousness of God' (dikaiosynē theou, 1:17) is the most argued-over phrase in the letter, and the dispute is grammatical before it is theological: a righteousness that BELONGS to God (his covenant faithfulness, his putting-things-right), one that COMES from God as a gift, or one that COUNTS before God. Luther described his whole turn as a change of mind about this genitive. Behind it stands the Hebrew tsedaqah, which is likewise relational — being right BY someone, not merely being morally correct. ⚠ In Matthew the word runs the other way round — not a status God gives but the doing of what God has asked: it is what Jesus says he and John are completing when he insists on being baptized, 'thus it is fitting for us to fulfil all righteousness' (3:15), and it becomes the spine of the Sermon on the Mount (hunger for it, 5:6; exceed the scribes' and Pharisees' measure of it, 5:20; do not practise it to be seen, 6:1).", ["Romans", 1, 17]],
     ["orge", "orgē", "ὀργή", "orgē", "WRATH — settled anger, not a flare of temper (that is thymos); the root of English 'orgy' only by a long and unrelated road. Romans 1:18 pairs it deliberately with 1:17: God's righteousness 'is revealed', and God's wrath 'is revealed' — the same verb, present tense, both happening now. ⚠ And the chapter defines the wrath by what follows: three times 'God gave them over'. The judgment described is not a thunderbolt but a letting-go — being handed the thing you wanted more than God.", ["Romans", 1, 18]],
-    ["doxa", "doxa", "δόξα", "doxa", "GLORY — weight, splendour, the visible worth of a thing; the root of 'doxology'. In classical Greek it means opinion or reputation (hence 'orthodox', right opinion, and 'paradox', beside opinion), but the Greek Old Testament pressed it into service for the Hebrew kavod, 'weight' — the heaviness of God's presence that fills the tabernacle. Romans 1:23 turns on it: they 'exchanged the GLORY of the incorruptible God for a likeness of an image' — a trade, and the psalm being quoted (106:20) had said the same thing about Israel and the golden calf.", ["Romans", 1, 23]],
+    ["doxa", "doxa", "δόξα", "doxa", "GLORY — weight, splendour, the visible worth of a thing; the root of 'doxology'. In classical Greek it means opinion or reputation (hence 'orthodox', right opinion, and 'paradox', beside opinion), but the Greek Old Testament pressed it into service for the Hebrew kavod, 'weight' — the heaviness of God's presence that fills the tabernacle. Romans 1:23 turns on it: they 'exchanged the GLORY of the incorruptible God for a likeness of an image' — a trade, and the psalm being quoted (106:20) had said the same thing about Israel and the golden calf — the exact day named at <a href=\"exodus-32.html#v32-4\">Exodus 32:4</a>, already on these pages.", ["Romans", 1, 23]],
     ["paradidomi", "paradidōmi", "παραδίδωμι", "paradidōmi", "To HAND OVER, deliver up — a judicial word: what a magistrate does when he hands a prisoner to the executioner. It tolls three times in Romans 1 (vv 24, 26, 28), 'God gave them over', and the three occurrences are the skeleton of the paragraph. ⚠ It is also the word used all through the Gospels of Jesus being handed over — by Judas, by the priests, by Pilate — and by Paul of God who 'did not spare his own Son but gave him over for us all' (Romans 8:32). The same verb does the condemning and the rescuing. &#9888; Its densest concentration anywhere is Matthew 26, where it sounds in TEN of seventy-five verses (2, 15, 16, 21, 23, 24, 25, 45, 46, 48) and is the chapter's spine. That chapter is also why 'betray' will not do as a standing rendering: Matthew uses the same verb actively of what Judas does AND passively, with no agent named, of what is being done to the Son of Man (26:2, 24, 45), and no English sentence can make 'betray' work in the passives.", ["Matthew", 26, 2]],
     ["physis", "physis", "φύσις", "physis", "NATURE — the way a thing grows or is constituted, from phyō, 'to grow'; the root of 'physics' and 'physical'. The phrase para physin, 'contrary to nature', is Stoic ethical vocabulary, common in Hellenistic Jewish writers such as Philo and Josephus, and it stands at the centre of the most contested paragraph in Romans (1:26-27). ⚠ One datum both sides of that argument cite: Paul uses para physin once more in the same letter, at 11:24, of GOD grafting a wild olive branch into a cultivated tree 'contrary to nature' — so in his usage the phrase is not automatically a term of absolute moral condemnation. The library reports the readings and does not vote.", ["Romans", 1, 26]],
     ["adokimos", "adokimos", "ἀδόκιμος", "adokimos", "UNAPPROVED — failing the test; used of counterfeit coin and of metal that does not pass assay, from dokimazō, 'to test and approve'. Romans 1:28 is a pun that only survives if both halves keep the same root: they did not APPROVE of holding God in accurate knowledge, so God gave them over to an UNAPPROVED mind. KJV's 'reprobate mind' carries the idea through Latin; NWT reads 'disapproved mental state'. Paul turns it on himself at 1 Corinthians 9:27 — the fear of preaching to others and being adokimos himself.", ["Romans", 1, 28]],
@@ -225,7 +225,7 @@ DICTIONARY = [
     ("chamas", "chamas", "חָמָס", "chamas",
      "Violence, lawless wrong — the earth's indictment before the flood, named twice.", (6, 11)),
     ("elohim", "Elohim", "אֱלֹהִים", "Elohim",
-     "'God' — plural in form, singular in verb: standard Biblical Hebrew for the one God.", (1, 1)),
+     "'God' — plural in form, singular in verb: standard Biblical Hebrew for the one God. ⚠ The sharpest exception in the Torah comes at the golden calf: when the people demand 'elohim who will go before us,' the relative clause uses a genuinely PLURAL verb, yelchu, 'they WILL go' (<a href=\"exodus-32.html#v32-1\">Exodus 32:1</a>, already on these pages) — the one moment the grammar itself seems to abandon the singular sense, at exactly the moment the theology is in question.", (1, 1)),
     ("ezer-kenegdo", "ezer kenegdo", "עֵזֶר כְּנֶגְדּוֹ", "ezer kenegdo",
      "'A helper corresponding to him' — ezer usually describes GOD helping Israel (strength, not servitude); kenegdo = a matching counterpart. Source of the misleading 'helpmeet.'", (2, 18)),
     ("gibbor", "gibbor", "גִּבֹּר", "gibbor",
@@ -249,7 +249,7 @@ DICTIONARY = [
     ("moadim", "mo'adim", "מוֹעֲדִים", "mo'adim",
      "Appointed times — the festival-calendar word; what the sun and moon are installed to mark.", (1, 14)),
     ("nacham", "nacham", "נָחַם", "nacham",
-     "Comfort — and regret. Noah's name-hope (5:29) returns as God's regret (6:6): one root, opposite moods. ⚠ In Jeremiah 18 it becomes neither a name nor a mood but a STATED POLICY, twice over: 'if that nation turns back from its evil… then I RELENT of the evil I devised' (18:8), and the same machinery in reverse for a nation that stops listening (18:10). That is the hinge of the potter chapter — the image is usually read as pure sovereignty, but the oracle built on it is conditional, and nacham is the word that makes it so. English 'repent' now implies wrongdoing, which is why this translation renders it 'relent' there. ⚠ Jeremiah 26 then does something no other chapter does with it: the word appears three times in one episode (26:3, 13, 19), and the third time it is cited in COURT as evidence. Elders defending Jeremiah at a capital trial argue that Micah once prophesied Jerusalem's destruction, Hezekiah repented, 'and Jehovah RELENTED of the evil he had spoken against them' — a past case where the policy of chapter 18 actually operated, used as legal precedent to save a prophet's life. Chapter 18 states the rule; chapter 26 produces the case law.", (5, 29)),
+     "Comfort — and regret. Noah's name-hope (5:29) returns as God's regret (6:6): one root, opposite moods. ⚠ At the golden calf the same verb reappears, but this time with someone standing in the gap: Moses argues, and 'Jehovah RELENTED of the evil that he had said he would do' (<a href=\"exodus-32.html#v32-14\">Exodus 32:14</a>, already on these pages) — the first recorded instance of intercession actually changing the outcome; Genesis 6 had no intercessor, and the regret there simply proceeded to judgment. ⚠ In Jeremiah 18 it becomes neither a name nor a mood but a STATED POLICY, twice over: 'if that nation turns back from its evil… then I RELENT of the evil I devised' (18:8), and the same machinery in reverse for a nation that stops listening (18:10). That is the hinge of the potter chapter — the image is usually read as pure sovereignty, but the oracle built on it is conditional, and nacham is the word that makes it so. English 'repent' now implies wrongdoing, which is why this translation renders it 'relent' there. ⚠ Jeremiah 26 then does something no other chapter does with it: the word appears three times in one episode (26:3, 13, 19), and the third time it is cited in COURT as evidence. Elders defending Jeremiah at a capital trial argue that Micah once prophesied Jerusalem's destruction, Hezekiah repented, 'and Jehovah RELENTED of the evil he had spoken against them' — a past case where the policy of chapter 18 actually operated, used as legal precedent to save a prophet's life. Chapter 18 states the rule; chapter 26 produces the case law.", (5, 29)),
     ("nasa", "nasa", "נָשָׂא", "nasa",
      "To carry, bear, lift — one root doing three jobs in Genesis 13: the land 'could not bear' Abram and Lot together (13:6), then each of them 'lifts up' his eyes (13:10, 13:14) to opposite ends. \u26a0 It is also the verb of the third commandment: Exodus 20:6 is lo tissa, 'you shall not LIFT UP the name of Jehovah your God la-shav' \u2014 not a verb of speaking. That is why 'taking the name in vain' is probably not a rule about profanity: the idiom is closer to BEARING the name, carrying it as one who belongs to it, and doing so emptily.", (13, 6)),
     ("nefesh", "nefesh chayah", "נֶפֶשׁ חַיָּה", "nefesh chayah",
@@ -404,9 +404,14 @@ DICTIONARY = [
     ("urim-thummim", "Urim and Thummim", "אוּרִים וְתֻמִּים", "Urim v'Thummim",
      "Two objects placed inside the high priest's breastplate (28:30) and never once described — no shape, no material, no instructions for use, in a chapter otherwise obsessed with exact specification. The names likely mean something like 'lights' and 'perfections' or 'truth,' though even that etymology is genuinely uncertain; how the objects actually functioned — cast like lots, or read by some other sign — is a question ancient rabbinic sources already confessed they could not answer with confidence. Every major English version transliterates rather than translates both words — the rare point where the whole shelf agrees, by declining to guess.", ("Exodus", 28, 30)),
     ("millu-yad", "mille et-yadam", "מִלֵּא אֶת־יָדָם", "mille et-yadam",
-     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him. Exodus 29 (already on these pages) confirms it directly: the verb fires four more times at the ordination itself (29:9, 29, 33, 35), and its noun form — eil ha-millu'im, literally 'the ram OF FILLING' — becomes that chapter's own standing name for the ordination sacrifice (29:22, 26, 27, 31, 34), the priest's own portion pressed into his palms before it is burned (29:24). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' (and, for the noun, 'ram of consecration'/'ram of ordination') — none keeps the image of a hand being FILLED. This translation renders every occurrence literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction.", ("Exodus", 28, 41)),
+     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him. Exodus 29 (already on these pages) confirms it directly: the verb fires four more times at the ordination itself (29:9, 29, 33, 35), and its noun form — eil ha-millu'im, literally 'the ram OF FILLING' — becomes that chapter's own standing name for the ordination sacrifice (29:22, 26, 27, 31, 34), the priest's own portion pressed into his palms before it is burned (29:24). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' (and, for the noun, 'ram of consecration'/'ram of ordination') — none keeps the image of a hand being FILLED. This translation renders every occurrence literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction. ⚠ The idiom returns once more, in a radically different key: after the golden calf, Moses tells the Levites to 'FILL YOUR HAND today to Jehovah' (<a href=\"exodus-32.html#v32-29\">Exodus 32:29</a>, already on these pages) — the identical phrase, but shouted as a command across a camp still littered with the dead, not performed as a robed ceremony with anointing oil. Aaron's line is ordained by ritual; the Levites are ordained by what they were willing to do.", ("Exodus", 28, 41)),
     ("mishkan", "mishkan", "מִשְׁכָּן", "mishkan",
      "TABERNACLE — literally DWELLING-PLACE, from shakhan, 'to dwell, settle down.' The word names the whole portable sanctuary Moses is shown 'the pattern of' at its first appearance (25:9, already on these pages), and the entire five-chapter construction project it opens — gold, curtains, boards, altar, priestly garments — is a single extended answer to the question the word itself poses: a dwelling for whom? Exodus 29:45-46 (already on these pages) gives the answer directly, in the exact same root: 'I will DWELL (ve-shakhanti) among the children of Israel' — the tabernacle's own name, spoken as a verb, closing the whole instruction. Every major English version renders mishkan 'tabernacle,' following the Vulgate's tabernaculum; this translation keeps the same word, but flags the root wherever the text itself plays on it.", ("Exodus", 25, 9)),
+    # ---- Exodus 32 (Hebrew) ----
+    ("massekhah", "egel massekhah", "עֵגֶל מַסֵּכָה", "egel massekhah",
+     "A MOLTEN or CAST image — from a root meaning to pour out metal, and the two-word phrase egel massekhah, 'molten calf,' becomes the Torah's own standing name for illegitimate worship (32:4, 8). Later writers reach for the identical phrase whenever they look back on this exact day: Israel's national confession names it directly — 'a molten calf, and said, This is your God' (Nehemiah 9:18) — and a psalm retells the same scene in poetry, 'they made a calf in Horeb... they exchanged their glory for the likeness of an ox' (Psalm 106:19-20). The single noun massekhah later becomes shorthand for any cast idol at all, forbidden outright a few books later: 'you shall make yourselves no molten gods' (Leviticus 19:4).", ("Exodus", 32, 4)),
+    ("qesheh-oref", "qesheh-oref", "קְשֵׁה-עֹרֶף", "qesheh-oref",
+     "STIFFNECKED — literally 'hard of neck,' the image of a stubborn ox refusing the yoke or the goad. Jehovah uses the phrase of Israel for the first time here (32:9), then twice more within three chapters (33:3, 5; 34:9), and Moses himself repeats it to the next generation in Deuteronomy (9:6, 13). It survives into Greek almost unchanged: the only New Testament use of sklerotrachēloi (Strong's 4644) is Stephen's, at the climax of a speech that has just retold this exact scene, nearly verbatim — 'you stiffnecked people... you always resist the Holy Spirit, just as your fathers did' (Acts 7:51).", ("Exodus", 32, 9)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -563,7 +568,7 @@ DICTIONARY = [
     ("hamon", "hamon", "הֲמוֹן", "hamon",
      "A multitude, a roaring crowd — the word folded into Abraham's new name: av hamon goyim, 'father of a multitude of nations' (17:4-5).", (17, 4)),
     ("tsachaq", "tsachaq", "צָחַק", "tsachaq",
-     "To laugh — Abraham's face-down laugh at 17:17 mints the name Isaac (Yitschaq, 'he laughs'); Sarah's laugh (18:12) and her 'God has made laughter for me' (21:6) keep the pun running — until its sting: at 21:9 Sarah sees Ishmael metsacheq, 'laughing,' the participle of Isaac's own name-verb. Whatever he was doing, in Hebrew he was doing ISAAC — and it costs him his home (KJV 'mocking'; Douay 'playing'; Paul, 'persecuted,' Galatians 4:29).", (17, 17)),
+     "To laugh — Abraham's face-down laugh at 17:17 mints the name Isaac (Yitschaq, 'he laughs'); Sarah's laugh (18:12) and her 'God has made laughter for me' (21:6) keep the pun running — until its sting: at 21:9 Sarah sees Ishmael metsacheq, 'laughing,' the participle of Isaac's own name-verb. Whatever he was doing, in Hebrew he was doing ISAAC — and it costs him his home (KJV 'mocking'; Douay 'playing'; Paul, 'persecuted,' Galatians 4:29). ⚠ The name-verb keeps costing people things: Isaac himself is caught metsacheq with Rebekah at 26:8, unmistakably conjugal (it is what gives their marriage away to a watching king), and the identical intensive form returns, in a false accusation, when Potiphar's wife claims the Hebrew slave came 'to sport with me' (Genesis 39:17, already on these pages). By the time Israel 'rises up to play' (le-tzachek) after building the golden calf (<a href=\"exodus-32.html#v32-6\">Exodus 32:6</a>, already on these pages), this intensive stem has never once described innocent play in an adult — the word itself is a warning the feast rarely gets read as.", (17, 17)),
     # ---- Genesis 18 (Hebrew) ----
     ("tseaqah", "za'aqah / tse'aqah", "זְעָקָה / צְעָקָה", "za'aqah / tse'aqah",
      "The outcry — the legal scream of the wronged. Abel's blood 'cries out' from the ground (4:10), the outcry of Sodom's victims reaches heaven (18:20-21), and Israel's own cry in Egypt will rise the same way (Exodus 3:7, 9).", (18, 20)),
@@ -1533,7 +1538,7 @@ DICTIONARY = [
     ("chattat", "chatta't", "\u05d7\u05b7\u05d8\u05b8\u05bc\u05d0\u05ea", "chatta't",
      "SIN \u2014 and literally a MISSING: the root is the ordinary verb for an arrow falling short of its mark (Judges 20:16 uses it of slingers who could NOT miss). It is the least dramatic of the Hebrew words for wrongdoing and the most common. Psalm 51 opens by stacking three of them that are not synonyms \u2014 pesha (rebellion, a breach of relationship), avon (guilt, the crookedness itself) and chatta't (missing) \u2014 and asks a different verb against each: wipe out, wash, cleanse.", ("Psalms", 51, 4)),
     ("machah", "machah", "\u05de\u05b8\u05d7\u05b8\u05d4", "machah",
-     "To WIPE OUT, blot, erase \u2014 what you do to WRITING. It is used of erasing a name from under heaven (Deuteronomy 29:20), of blotting a name from a book (Exodus 32:32-33), and of wiping a dish (2 Kings 21:13). \u26a0 Psalm 51:3 and 51:11 both ask God to machah the speaker's rebellions, which makes the request administrative rather than emotional: cancel the entry, not feel differently about it.", ("Psalms", 51, 3)),
+     "To WIPE OUT, blot, erase \u2014 what you do to WRITING. It is used of erasing a name from under heaven (Deuteronomy 29:20), of blotting a name from a book (<a href=\"exodus-32.html#v32-32\">Exodus 32:32-33</a>, already on these pages), and of wiping a dish (2 Kings 21:13). \u26a0 That Exodus scene is the word's most startling use anywhere: Moses offers his own name to be machah'd from God's book if it will save the people, and Jehovah's answer keeps the verb but narrows its target \u2014 only the one who actually sinned will be blotted out, not a willing substitute. \u26a0 Psalm 51:3 and 51:11 both ask God to machah the speaker's rebellions, which makes the request administrative rather than emotional: cancel the entry, not feel differently about it.", ("Psalms", 51, 3)),
     ("damim", "damim", "\u05d3\u05b8\u05bc\u05de\u05b4\u05d9\u05dd", "damim",
      "BLOOD in the PLURAL \u2014 and in Hebrew the plural of blood specifically means blood that has been SHED, and the guilt owed for it. Singular dam is the substance; damim is bloodshed. \u26a0 Psalm 51:16 asks to be rescued from damim, and if the psalm's superscription is right about its occasion the word is doing precise work: Uriah. The versions render it 'bloodguiltiness' (KJV), which is exactly right.", ("Psalms", 51, 16)),
     ("yacham", "yacham", "\u05d9\u05b8\u05d7\u05b7\u05dd", "yacham",
@@ -3327,7 +3332,8 @@ ENCYCLOPEDIA = [
          desc="Moses's older brother (by three years, Exodus 7:7), the first HIGH PRIEST of Israel and head "
               "of the priestly line — the Levite family through whom all legitimate sacrifice would run. In "
               "Exodus he is Moses's mouthpiece before Pharaoh ('he shall be your spokesman,' Exodus 4:16), his "
-              "arms held up over the battle with Amalek, and the maker of the golden calf — the one grave "
+              "arms held up over the battle with Amalek, and the maker of the "
+              "<a href='exodus-32.html#v32-4'>golden calf</a> — the one grave "
               "failure the text never hides. In Leviticus he comes into his office: 'Aaron's sons, the priests' "
               "are the ones who dash the blood and tend the altar-fire in the very first chapter (1:5, 7, 8, 11), "
               "and chapters 8–10 ordain him and his sons, then strike two of them (Nadab and Abihu) dead for "
@@ -5586,6 +5592,13 @@ XREFS = [
     (("Exodus", 28, 3), ("Exodus", 31, 6), "the identical formula, 'wise of heart... filled with a spirit of wisdom,' first spoken of the anonymous craftsmen who sew Aaron's garments, now spoken of every skilled hand building any part of the tabernacle"),
     (("Exodus", 20, 9), ("Exodus", 31, 15), "the Fourth Commandment restated almost verbatim — six days of work, a seventh day of rest holy to Jehovah, because Jehovah himself worked six days and rested on the seventh"),
     (("Genesis", 1, 2), ("Exodus", 31, 3), "the identical phrase, ruach Elohim, 'the spirit of God' — the same power that hovered over the waters at creation now fills one craftsman's hands to build a dwelling for the God who made the world"),
+    # ---- Exodus 32 ----
+    (("Exodus", 24, 12), ("Exodus", 32, 19), "the tablets promised seven chapters ago and only just handed over — delivered in one chapter's final verse, shattered before the next one reaches its midpoint"),
+    (("Exodus", 20, 4), ("Exodus", 32, 4), "the very sin the second commandment had just forbidden — 'you shall not make yourself a graven image' — committed while its ink is still fresh"),
+    (("Exodus", 17, 12), ("Exodus", 32, 2), "Aaron's two faces — the hands that helped hold up Moses' arms in battle are the same hands that shape the calf"),
+    (("Genesis", 22, 17), ("Exodus", 32, 13), "the stars-as-descendants oath, invoked word for word in Moses' plea to spare a people who have just broken the covenant that oath began"),
+    (("Genesis", 6, 6), ("Exodus", 32, 14), "the same rare verb, nacham — God's regret before the flood, with no intercessor, and God's regret here, with one; the first time in this book's own thread that a plea changes the outcome"),
+    (("Exodus", 28, 41), ("Exodus", 32, 29), "the identical ordination idiom, 'fill your hand' — once a formal robed installation with anointing oil, now shouted as a command across a camp still littered with the dead"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11186,7 +11199,49 @@ DICTIONARY_ES = {
         "misma RV60 conserva 'llenar sus manos'), NVI 'para conferirles autoridad'— ninguna conserva "
         "la imagen de una mano LLENADA en todas sus ocurrencias. Esta traducción la mantiene literal "
         "en cada una, en el mismo espíritu que 'costado' sobre 'costilla' en Génesis 2: un modismo "
-        "físico y vivo que todo el estante ha suavizado en silencio."),
+        "físico y vivo que todo el estante ha suavizado en silencio. ⚠ El modismo vuelve una vez más, "
+        "en una clave radicalmente distinta: tras el becerro de oro, Moisés les dice a los levitas "
+        "«LLENAD HOY VUESTRA MANO para Jehová» (<a href=\"exodus-32.es.html#v32-29\">Éxodo 32:29</a>, "
+        "ya en estas páginas) —la misma frase exacta, pero gritada como orden a través de un "
+        "campamento todavía cubierto de muertos, no realizada como ceremonia con vestiduras y aceite "
+        "de unción. El linaje de Aarón es ordenado por rito; los levitas son ordenados por lo que "
+        "estuvieron dispuestos a hacer."),
+    "massekhah": ("egel massekhah",
+        "UNA IMAGEN FUNDIDA o de fundición —de una raíz que significa verter metal, y la frase de dos "
+        "palabras egel massekhah, 'becerro de fundición', se vuelve el nombre propio de la Torá para "
+        "el culto ilegítimo (32:4, 8). Escritores posteriores retoman la frase idéntica cada vez que "
+        "miran hacia atrás a este mismo día: la confesión nacional de Israel lo nombra directamente "
+        "—'un becerro de fundición, y dijeron: Este es tu Dios' (Nehemías 9:18)— y un salmo relata la "
+        "misma escena en poesía, 'hicieron un becerro en Horeb... cambiaron su gloria por la imagen "
+        "de un buey' (Salmo 106:19-20). El sustantivo massekhah se vuelve después abreviatura para "
+        "cualquier ídolo fundido, prohibido sin rodeos unos libros más adelante: 'no os haréis dioses "
+        "de fundición' (Levítico 19:4)."),
+    "qesheh-oref": ("qesheh-oref",
+        "DE DURA CERVIZ —literalmente 'duro de cuello', la imagen de un buey terco que se resiste al "
+        "yugo o a la aguijada. Jehová usa la frase de Israel por primera vez aquí (32:9), luego dos "
+        "veces más dentro de tres capítulos (33:3, 5; 34:9), y el propio Moisés se la repite a la "
+        "siguiente generación en Deuteronomio (9:6, 13). Sobrevive al griego casi sin cambio: el único "
+        "uso en todo el Nuevo Testamento de sklerotrachēloi (Strong's 4644) es el de Esteban, en el "
+        "clímax de un discurso que acaba de relatar esta misma escena, casi palabra por palabra —'duros "
+        "de cerviz... vosotros resistís siempre al Espíritu Santo, como vuestros padres, así también "
+        "vosotros' (Hechos 7:51)."),
+    "tsachaq": ("tsachaq",
+        "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
+        "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
+        "—hasta su aguijón: en 21:9 Sara ve a Ismael metsachek, «riendo», el participio del mismo "
+        "verbo que da nombre a Isaac. Sea lo que fuera que estuviera haciendo, en hebreo estaba "
+        "haciendo ISAAC —y le cuesta su hogar (Génesis 21, todavía no traducido a estas páginas en "
+        "español; Pablo lo llama «persecución», Gálatas 4:29). ⚠ El verbo-nombre sigue cobrando "
+        "cosas: el propio Isaac es sorprendido metsachek con Rebeca en 26:8 (todavía no traducido a "
+        "estas páginas en español), inconfundiblemente conyugal —es lo que delata su matrimonio ante "
+        "un rey que miraba—, y la misma forma intensiva vuelve, en una falsa acusación, cuando la "
+        "esposa de Potifar afirma que el esclavo hebreo vino «a jugar conmigo» "
+        "(<a href=\"genesis-39.es.html#v39-17\">Génesis 39:17</a>, ya en estas páginas). "
+        "Para cuando Israel «se levanta a jugar» "
+        "(le-tzachek) tras construir el becerro de oro (<a href=\"exodus-32.es.html#v32-6\">Éxodo "
+        "32:6</a>, ya en estas páginas), esta forma intensiva nunca ha descrito juego inocente en un "
+        "adulto ni una sola vez —la palabra misma es una advertencia que la fiesta rara vez recibe "
+        "como tal."),
     "mishkan": ("mishkan",
         "TABERNÁCULO —literalmente LUGAR DE MORADA, de shakhan, 'habitar, morar'. La palabra nombra "
         "todo el santuario portátil cuyo 'patrón' se le muestra a Moisés en su primera aparición "
@@ -11472,7 +11527,12 @@ DICTIONARY_ES = {
         "(113-118, 146-150), donde &laquo;alaben a Yah&raquo; se vuelve el estribillo."),
     "elohim": ("Elohim",
         "&laquo;Dios&raquo; &mdash; plural en la forma, singular en el verbo: el hebreo "
-        "b&iacute;blico est&aacute;ndar para el Dios &uacute;nico."),
+        "b&iacute;blico est&aacute;ndar para el Dios &uacute;nico. &#9888; La excepci&oacute;n m&aacute;s "
+        "aguda en toda la Tor&aacute; llega en el becerro de oro: cuando el pueblo exige &laquo;dioses "
+        "que VAYAN delante de nosotros&raquo;, la cl&aacute;usula relativa usa un verbo genuinamente "
+        "PLURAL, <em>yelchu</em> (<a href=\"exodus-32.es.html#v32-1\">&Eacute;xodo 32:1</a>, ya en estas "
+        "p&aacute;ginas) &mdash;el &uacute;nico momento en que la propia gram&aacute;tica parece abandonar "
+        "el sentido singular, justo cuando la teolog&iacute;a est&aacute; en juego."),
     "kadosh": ("kadosh",
         "SANTO — y, antes de significar puro moralmente, significa APARTADO, separado del uso "
         "ordinario. La primera aparición de la palabra en toda la Biblia no es una persona sino "
@@ -11651,7 +11711,12 @@ DICTIONARY_ES = {
         "encuentra: un frasco de barro cocido, roto en la puerta que lleva el nombre del barro roto."),
     "nacham": ("consolar / arrepentirse",
         "CONSOLAR — y lamentar. La esperanza del nombre de Noé (Génesis 5:29) vuelve como el pesar de Dios "
-        "(6:6): una raíz, dos estados de ánimo opuestos. ⚠ En Jeremías 18 no es ni un nombre ni un estado de "
+        "(6:6): una raíz, dos estados de ánimo opuestos. ⚠ En el becerro de oro el mismo verbo reaparece, "
+        "pero esta vez con alguien de pie en la brecha: Moisés argumenta, y «Jehová se ARREPINTIÓ del mal "
+        "que dijo que había de hacer» (<a href=\"exodus-32.es.html#v32-14\">Éxodo 32:14</a>, ya en estas "
+        "páginas) —el primer caso registrado en que la intercesión de verdad cambia el resultado; Génesis 6 "
+        "no tiene intercesor, y el pesar allí simplemente procede al juicio. ⚠ En Jeremías 18 no es ni un "
+        "nombre ni un estado de "
         "ánimo, sino una POLÍTICA DECLARADA, dos veces: «si esa nación se vuelve de su mal… entonces me "
         "ARREPIENTO del mal que pensaba hacerle» (18:8), y la misma maquinaria en sentido contrario para una "
         "nación que deja de escuchar (18:10). Ese es el gozne del capítulo del alfarero: la imagen se lee "
@@ -12752,7 +12817,7 @@ DICTIONARY_ES = {
     "demiourgos": ("d\u0113miourgos", "HACEDOR, artesano \u2014 literalmente el que trabaja (ergon) para el pueblo (demos). Hapax del Nuevo Testamento en Hebreos 11:10, donde Dios es el t\u00e9chnit\u0113s y d\u0113miourgos de la ciudad que Abrah\u00e1n esperaba. \u26a0 Es la palabra de PLAT\u00d3N: el Timeo hace del Demiurgo el art\u00edfice del cosmos, y los gn\u00f3sticos posteriores lo convirtieron en un poder menor y hostil. Hebreos la usa de Dios sin disculparse."),
     "katabole": ("katabol\u0113", "UN ARROJAR ABAJO, y de ah\u00ed una FUNDACI\u00d3N \u2014 normalmente en la expresi\u00f3n 'la fundaci\u00f3n del mundo'. \u26a0 En Hebreos 11:11 significa la SIEMBRA o dep\u00f3sito de simiente, y ese sentido es lo que decide el pasaje disputado del vers\u00edculo: el poder recibido es 'para la katabole de simiente', que en griego describe la parte del padre \u2014 el argumento real para leer a Abrah\u00e1n y no a Sara como sujeto."),
     "chattat": ("chatta't", "PECADO \u2014 y literalmente un ERRAR EL BLANCO: la ra\u00edz es el verbo corriente de la flecha que se queda corta. Es la menos dram\u00e1tica de las palabras hebreas para el mal y la m\u00e1s com\u00fan. El Salmo 51 abre apilando tres que no son sin\u00f3nimas \u2014 pesha (rebeli\u00f3n), avon (culpa, lo torcido) y chatta't (errar) \u2014 y pide un verbo distinto contra cada una: borrar, lavar, limpiar."),
-    "machah": ("machah", "BORRAR, cancelar \u2014 lo que se hace con lo ESCRITO: borrar un nombre de debajo del cielo (Deuteronomio 29:20), de un libro (\u00c9xodo 32:32-33), enjugar un plato (2 Reyes 21:13). \u26a0 El Salmo 51:3 y 51:11 piden a Dios que machah las rebeliones del que habla, lo que hace la petici\u00f3n administrativa antes que emocional: cancela el asiento, no sientas otra cosa."),
+    "machah": ("machah", "BORRAR, cancelar \u2014 lo que se hace con lo ESCRITO: borrar un nombre de debajo del cielo (Deuteronomio 29:20), de un libro (<a href=\"exodus-32.es.html#v32-32\">\u00c9xodo 32:32-33</a>, ya en estas p\u00e1ginas), enjugar un plato (2 Reyes 21:13). \u26a0 Esa escena de \u00c9xodo es el uso m\u00e1s asombroso de la palabra en cualquier parte: Mois\u00e9s ofrece que su propio nombre sea machah del libro de Dios si eso salva al pueblo, y la respuesta de Jehov\u00e1 conserva el verbo pero acota su blanco \u2014solo qui\u00e9n realmente pec\u00f3 ser\u00e1 borrado, no un sustituto dispuesto. \u26a0 El Salmo 51:3 y 51:11 piden a Dios que machah las rebeliones del que habla, lo que hace la petici\u00f3n administrativa antes que emocional: cancela el asiento, no sientas otra cosa."),
     "damim": ("damim", "SANGRE en PLURAL \u2014 y en hebreo el plural de sangre significa concretamente sangre DERRAMADA, y la culpa que se debe por ella. El singular dam es la sustancia; damim es el derramamiento. \u26a0 El Salmo 51:16 pide ser librado de damim, y si el encabezamiento acierta sobre la ocasi\u00f3n del salmo, la palabra hace un trabajo preciso: Ur\u00edas."),
     "yacham": ("yacham", "ESTAR CALIENTE \u2014 y de ah\u00ed, en animales, estar en celo y concebir; G\u00e9nesis 30:38-39 y 31:10 lo usan de los reba\u00f1os de Jacob. \u26a0 Es el verbo del Salmo 51:7 (castellano 51:5), 'en pecado me CONCIBI\u00d3 mi madre', y la KJV admite la rareza en su propio margen: 'Heb. ME CALENT\u00d3'. Lo que el vers\u00edculo afirma se discute de verdad; n\u00f3tese s\u00f3lo que el salmo no saca de ah\u00ed ninguna doctrina."),
     "shavar": ("shavar", "QUEBRAR \u2014 lo que le pasa a la cer\u00e1mica, a los huesos, a un arco. \u26a0 El Salmo 51 lo usa dos veces y el emparejamiento es el argumento: los huesos que Dios TRITUR\u00d3 (v. 10) y el esp\u00edritu quebrantado que es el sacrificio que Dios s\u00ed quiere (v. 19). El salmo devuelve como \u00fanica ofrenda aquello que le hicieron."),
@@ -14038,6 +14103,80 @@ CHAPTER_ART = {
                 "a&ntilde;os.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Raphael_Moses_Receiving_the_Tablets_of_the_Law.jpg",
+    )],
+    "exod32": [dict(
+        file="exod32-poussin-golden-calf.jpg",
+        title="The Adoration of the Golden Calf",
+        title_es="La adoración del becerro de oro",
+        artist="Nicolas Poussin",
+        artist_es="Nicolas Poussin",
+        year="c. 1633–1634",
+        location="National Gallery, London",
+        location_es="Galería Nacional, Londres",
+        alt="A large classical oil painting. In the left third, a ring of "
+            "barefoot figures in loose, brightly colored robes — blue, "
+            "salmon, dark green — dance hand in hand before a tall wooden "
+            "altar decorated with garlands, on top of which stands a small "
+            "golden bull calf. A gold ring lies discarded on the ground in "
+            "the near foreground. In the right two-thirds, a dense crowd of "
+            "men, women, and children in red, orange, and blue robes "
+            "gesture with raised arms toward the dancers and the calf; a "
+            "group of women with small children sits in the lower right "
+            "corner. Far in the upper left background, tiny and easy to "
+            "overlook against the rocky hillside, a robed figure holds two "
+            "flat tablet-shaped objects aloft. The sky above is heavy with "
+            "dark storm clouds, broken by a narrow band of warm gold light "
+            "along the horizon.",
+        note="&#9888; Poussin paints the Israelites as classical revelers, "
+             "not as a Near Eastern camp &mdash; bare feet, draped "
+             "Greco-Roman robes, a ring-dance around the altar borrowing "
+             "its whole visual grammar from paintings of Bacchic "
+             "celebration. That is itself a reading of this chapter's own "
+             "disputed verb, TZACHEK, &lsquo;rose up to make merry&rsquo; "
+             "(v6) &mdash; rendered in paint as exactly the kind of "
+             "revelry the Hebrew leaves ambiguous.<br><br>And look for "
+             "Moses. He is there &mdash; upper left, a small robed figure "
+             "on the rocky height, two flat tablets lifted in his hands "
+             "&mdash; but he is nearly impossible to find on a first look, "
+             "dwarfed by the dance and the crowd that fill the rest of the "
+             "canvas. Poussin paints the very moment the text describes: "
+             "Moses is already descending with the tablets (v15), already "
+             "close enough for Joshua to hear the noise (vv17&ndash;18), "
+             "and the camp below has no idea he is watching.<br><br>One "
+             "small, easy-to-miss detail survives close inspection: a "
+             "gold ring lies discarded on the ground in the near-left "
+             "foreground &mdash; one of the ear-rings collected in "
+             "vv2&ndash;3, perhaps, dropped in the dancing.",
+        note_es="&#9888; Poussin pinta a los "
+                "israelitas como juerguistas cl&aacute;sicos, no como un "
+                "campamento del Cercano Oriente &mdash;pies descalzos, "
+                "t&uacute;nicas grecorromanas sueltas, una danza en "
+                "c&iacute;rculo alrededor del altar que toma prestada toda "
+                "su gram&aacute;tica visual de las pinturas de "
+                "celebraciones b&aacute;quicas. Eso mismo es una lectura "
+                "del verbo disputado propio de este cap&iacute;tulo, "
+                "TZACHEK, &laquo;se levantaron a jugar&raquo; (v6) "
+                "&mdash;puesto en pintura como exactamente el tipo de "
+                "desenfreno que el hebreo deja ambiguo.<br><br>Y "
+                "b&uacute;squese a Mois&eacute;s. Est&aacute; ah&iacute; "
+                "&mdash;arriba a la izquierda, una peque&ntilde;a figura "
+                "envuelta en t&uacute;nica sobre la altura rocosa, dos "
+                "tablas planas levantadas en sus manos&mdash;, pero es "
+                "casi imposible de encontrar a primera vista, empeque&ntilde;ecido "
+                "por la danza y la multitud que llenan el resto del "
+                "lienzo. Poussin pinta el instante exacto que describe el "
+                "texto: Mois&eacute;s ya est&aacute; descendiendo con las "
+                "tablas (v15), ya lo bastante cerca para que Josu&eacute; "
+                "oiga el ruido (vv17&ndash;18), y el campamento abajo no "
+                "tiene idea de que &eacute;l est&aacute; "
+                "observando.<br><br>Un detalle peque&ntilde;o y f&aacute;cil "
+                "de pasar por alto sobrevive a un examen cercano: un "
+                "anillo de oro yace descartado en el suelo, en primer "
+                "plano a la izquierda &mdash;uno de los zarcillos "
+                "recogidos en los vv2&ndash;3, quiz&aacute;, ca&iacute;do "
+                "en el baile.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Adoration_of_the_Golden_Calf_%E2%80%93_Nicolas_Poussin.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
@@ -15612,8 +15751,8 @@ CHAPTER_ART = {
             "location": "Gemäldegalerie, Berlin",
             "location_es": "Gemäldegalerie, Berlín",
             "alt": "An old man in a pale robe raises a dark stone tablet above his head with both hands, his face lowered and shadowed beneath it. The tablet facing the viewer carries four lines of gold Hebrew lettering; a second tablet stands edge-on behind it at the left, turned away, its writing reduced to a narrow strip",
-            "note": "&#9888; <strong>Read the tablet.</strong> Rembrandt painted the Hebrew, and he painted it accurately. The four lines you can see, top to bottom, are <em>lo tirtzach</em>, <em>lo tin&rsquo;af</em>, <em>lo tignov</em>, <em>lo ta&rsquo;aneh be-re&rsquo;akha ed shaqer</em> &mdash; do not kill, do not commit adultery, do not steal, do not answer against your neighbour as a false witness &mdash; with the coveting clause running on below. That is the SECOND tablet. The first one is the slab standing edge-on at the left, turned away from us, its text a sliver you cannot read.<br><br>Which is a fair picture of this chapter&rsquo;s problem. The commandments everyone agrees how to count are the legible ones. <strong>The argument is entirely about the tablet you cannot see</strong> &mdash; whether the opening declaration is itself a commandment, whether images are a separate command or part of the one about other gods. Three traditions divide those five differently and all arrive at ten.<br><br>And the top line, the largest and clearest thing in the painting, is the one this translation had to make a decision about: <em>lo tirtzach</em>.<br><br>One more thing. The Berlin museum calls this <em>Moses Smashing the Tablets of the Law</em>, and the pose will support that reading &mdash; arms up, about to bring them down, which would make it Exodus 32 and not this chapter at all. Others read the same gesture as presentation: lifting the law up so a crowd can see it. Rembrandt gives no crowd, no golden calf, and no answer. The face is doing something too complicated to label from the outside.",
-            "note_es": "&#9888; <strong>Lea la tabla.</strong> Rembrandt pint&oacute; el hebreo, y lo pint&oacute; bien. Las cuatro l&iacute;neas visibles, de arriba abajo, son <em>lo tirtzaj</em>, <em>lo tin&rsquo;af</em>, <em>lo tignov</em>, <em>lo ta&rsquo;ane be-re&rsquo;aja ed shaquer</em> &mdash; no matar&aacute;s, no cometer&aacute;s adulterio, no hurtar&aacute;s, no responder&aacute;s contra tu pr&oacute;jimo como testigo falso &mdash; y debajo sigue la cl&aacute;usula de la codicia. Esa es la SEGUNDA tabla. La primera es la losa que se ve de canto a la izquierda, vuelta de espaldas, con el texto reducido a una franja ilegible.<br><br>Lo cual retrata bien el problema de este cap&iacute;tulo. Los mandamientos que todos cuentan igual son los que se leen. <strong>La discusi&oacute;n es entera sobre la tabla que no se ve</strong>: si la declaraci&oacute;n inicial es ya un mandamiento, si las im&aacute;genes son mandato aparte o parte del que trata de los otros dioses. Tres tradiciones dividen esos cinco de maneras distintas y todas llegan a diez.<br><br>Y la l&iacute;nea superior, lo m&aacute;s grande y n&iacute;tido del cuadro, es aquella sobre la que esta traducci&oacute;n tuvo que decidir: <em>lo tirtzaj</em>.<br><br>Una cosa m&aacute;s. El museo de Berl&iacute;n titula la obra <em>Mois&eacute;s rompiendo las tablas de la Ley</em>, y la postura admite esa lectura &mdash; los brazos en alto, a punto de descargar, lo que la situar&iacute;a en &Eacute;xodo 32 y no en este cap&iacute;tulo. Otros leen el mismo gesto como presentaci&oacute;n: levantar la ley para que una multitud la vea. Rembrandt no pinta multitud, ni becerro de oro, ni respuesta. El rostro hace algo demasiado complicado para ponerle nombre desde fuera.",
+            "note": "&#9888; <strong>Read the tablet.</strong> Rembrandt painted the Hebrew, and he painted it accurately. The four lines you can see, top to bottom, are <em>lo tirtzach</em>, <em>lo tin&rsquo;af</em>, <em>lo tignov</em>, <em>lo ta&rsquo;aneh be-re&rsquo;akha ed shaqer</em> &mdash; do not kill, do not commit adultery, do not steal, do not answer against your neighbour as a false witness &mdash; with the coveting clause running on below. That is the SECOND tablet. The first one is the slab standing edge-on at the left, turned away from us, its text a sliver you cannot read.<br><br>Which is a fair picture of this chapter&rsquo;s problem. The commandments everyone agrees how to count are the legible ones. <strong>The argument is entirely about the tablet you cannot see</strong> &mdash; whether the opening declaration is itself a commandment, whether images are a separate command or part of the one about other gods. Three traditions divide those five differently and all arrive at ten.<br><br>And the top line, the largest and clearest thing in the painting, is the one this translation had to make a decision about: <em>lo tirtzach</em>.<br><br>One more thing. The Berlin museum calls this <em>Moses Smashing the Tablets of the Law</em>, and the pose will support that reading &mdash; arms up, about to bring them down, which would make it <a href=\"exodus-32.html#v32-19\">Exodus 32</a> and not this chapter at all. Others read the same gesture as presentation: lifting the law up so a crowd can see it. Rembrandt gives no crowd, no golden calf, and no answer. The face is doing something too complicated to label from the outside.",
+            "note_es": "&#9888; <strong>Lea la tabla.</strong> Rembrandt pint&oacute; el hebreo, y lo pint&oacute; bien. Las cuatro l&iacute;neas visibles, de arriba abajo, son <em>lo tirtzaj</em>, <em>lo tin&rsquo;af</em>, <em>lo tignov</em>, <em>lo ta&rsquo;ane be-re&rsquo;aja ed shaquer</em> &mdash; no matar&aacute;s, no cometer&aacute;s adulterio, no hurtar&aacute;s, no responder&aacute;s contra tu pr&oacute;jimo como testigo falso &mdash; y debajo sigue la cl&aacute;usula de la codicia. Esa es la SEGUNDA tabla. La primera es la losa que se ve de canto a la izquierda, vuelta de espaldas, con el texto reducido a una franja ilegible.<br><br>Lo cual retrata bien el problema de este cap&iacute;tulo. Los mandamientos que todos cuentan igual son los que se leen. <strong>La discusi&oacute;n es entera sobre la tabla que no se ve</strong>: si la declaraci&oacute;n inicial es ya un mandamiento, si las im&aacute;genes son mandato aparte o parte del que trata de los otros dioses. Tres tradiciones dividen esos cinco de maneras distintas y todas llegan a diez.<br><br>Y la l&iacute;nea superior, lo m&aacute;s grande y n&iacute;tido del cuadro, es aquella sobre la que esta traducci&oacute;n tuvo que decidir: <em>lo tirtzaj</em>.<br><br>Una cosa m&aacute;s. El museo de Berl&iacute;n titula la obra <em>Mois&eacute;s rompiendo las tablas de la Ley</em>, y la postura admite esa lectura &mdash; los brazos en alto, a punto de descargar, lo que la situar&iacute;a en <a href=\"exodus-32.es.html#v32-19\">&Eacute;xodo 32</a> y no en este cap&iacute;tulo. Otros leen el mismo gesto como presentaci&oacute;n: levantar la ley para que una multitud la vea. Rembrandt no pinta multitud, ni becerro de oro, ni respuesta. El rostro hace algo demasiado complicado para ponerle nombre desde fuera.",
             "license": "Public domain (artist d. 1669) — faithful photographic reproduction of a two-dimensional work",
             "source_url": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Moses_with_the_Ten_Commandments_-_Google_Art_Project.jpg",
         },
