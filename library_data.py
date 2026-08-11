@@ -518,7 +518,11 @@ DICTIONARY = [
     ("abrekh", "abrekh", "אַבְרֵךְ", "abrekh",
      "The herald's cry before Joseph's chariot (41:43) — and nobody knows what it means. Three serious proposals: a Hebrew derivation from barakh, 'to kneel,' giving the KJV's and ASV's committed 'BOW THE KNEE'; an Egyptian derivation (ib-r-k, roughly 'attention!', or a court title) giving the NIV's 'MAKE WAY!'; and the Akkadian abarakku, a high household steward. The NWT simply transliterates, and so does this translation — a shout in a foreign court that two thousand years of scholarship has not decoded should look like what it is. One of the small honest pleasures of the Hebrew Bible: a word can survive perfectly intact and completely opaque.", (41, 43)),
     ("nasa-rosh", "nasa rosh", "נָשָׂא רֹאשׁ", "yissa rosh",
-     "To LIFT UP THE HEAD — a court idiom for singling a man out of the crowd: to review him, reckon him, take notice of him, raise him up. It is also the hinge on which Genesis 40 turns. Joseph tells the cupbearer 'Pharaoh will LIFT UP YOUR HEAD and restore you' (40:13) — pardon and promotion. He tells the baker 'Pharaoh will LIFT UP YOUR HEAD — from off you — and hang you on a tree' (40:19): the same phrase, two words added, and it means decapitation. Then verse 20 uses it once, governing both men at once — Pharaoh 'lifted up the head' of the cupbearer AND the head of the baker at his birthday feast, one back to his cup and one off his shoulders. KJV and ASV keep it literal in all three places and so preserve the wordplay; versions that smooth it to 'summoned' or 'sent for' destroy the architecture of the chapter. Elsewhere the same idiom means taking a census (Exodus 30:12, 'when you lift up the head of the sons of Israel').", (40, 13)),
+     "To LIFT UP THE HEAD — a court idiom for singling a man out of the crowd: to review him, reckon him, take notice of him, raise him up. It is also the hinge on which Genesis 40 turns. Joseph tells the cupbearer 'Pharaoh will LIFT UP YOUR HEAD and restore you' (40:13) — pardon and promotion. He tells the baker 'Pharaoh will LIFT UP YOUR HEAD — from off you — and hang you on a tree' (40:19): the same phrase, two words added, and it means decapitation. Then verse 20 uses it once, governing both men at once — Pharaoh 'lifted up the head' of the cupbearer AND the head of the baker at his birthday feast, one back to his cup and one off his shoulders. KJV and ASV keep it literal in all three places and so preserve the wordplay; versions that smooth it to 'summoned' or 'sent for' destroy the architecture of the chapter. Elsewhere the same idiom means taking a census (Exodus 30:12, already on these pages: 'when you lift the head of the children of Israel' — a census counted not by a tally mark but by a half-shekel ransom paid per head, rich and poor alike).", (40, 13)),
+    ("karet", "karet", "כָּרֵת", "karet",
+     "CUT OFF from his people — a penalty of divine, not human, execution: the wrongdoer is simply excised, by God's own hand, from the covenant community. Its first occurrence plays on its own root: Hebrew 'CUTS' a covenant (karat brit, 15:18, over the cut animals), and the male who will not be cut (circumcised) 'shall be CUT OFF (venikhretah) from his people' (17:14) — the penalty rhymes with the refusal. Exodus 30 (already on these pages) uses the identical formula twice for one crime committed two ways: compounding the holy anointing oil or incense for ordinary use (30:33), and merely making incense like it to enjoy its smell, without ever giving it away (30:38) — private enjoyment of a sacred formula is itself karet-worthy, without any transaction at all.", (17, 14)),
+    ("rokeach", "rokeach", "רוֹקֵחַ", "rokeach",
+     "A PERFUMER, blender of spices — from the verb rakach, 'to compound, blend.' Exodus 30 leans on the whole word-family twice, once for each of its two recipes: the holy anointing oil is made 'a blended perfume, THE WORK OF A PERFUMER' (rokach ma'aseh rokeach, 30:25), and the incense recipe closing the same chapter is made 'a blended perfume, THE WORK OF A PERFUMER' — the identical four-word Hebrew phrase, verbatim, at 30:35. Recipe and craftsman share one root twice over in a single chapter, the same cognate-noun device already flagged for 'the ram OF FILLING' (Exodus 29, already on these pages). The verb returns once more at 30:33, now as a warning: whoever COMPOUNDS (yirkach) anything like the holy oil for himself, or gives it to an outsider, is cut off from his people.", ("Exodus", 30, 25)),
     ("pitron", "pitron", "פִּתְרוֹן", "pitron",
      "An INTERPRETATION — specifically of a dream, and the word is almost confined to the Joseph story (with its Aramaic cousin pesher in Daniel and at Qumran). Egypt had a professional dream-reading industry, with reference manuals: the Dream Book of Papyrus Chester Beatty III lists dreams in columns beside standard readings. So when the two imprisoned officials complain that 'there is no one to INTERPRET' (40:8), they mean no specialist — they are in jail, cut off from the professionals. Joseph's answer sidesteps the whole trade: 'Do not INTERPRETATIONS belong to God?' He does not claim the gift; he assigns it upward, then asks to hear the dream. He says it again in front of Pharaoh — 'it is not in me' (41:16).", (40, 8)),
     ("bor", "bor", "בּוֹר", "bor",
@@ -1301,7 +1305,7 @@ DICTIONARY = [
      "HEAD OF THE CORNER — and what that actually is architecturally is genuinely uncertain, which is why this translation keeps the literal phrase. Two candidates: the foundation cornerstone from which a building's lines are set, or the capstone at the summit of an arch or a parapet. Both fit different New Testament uses. ⚠ Quoted from Psalm 118:22-23 at Matthew 21:42, and it becomes one of the most-used images in the apostolic writings — Acts 4:11, Ephesians 2:20 ('Christ Jesus himself the akrogōniaios'), 1 Peter 2:6-7, where it is fused with Isaiah 8:14's stone of stumbling exactly as Matthew 21:44 fuses it. The shelf splits: KJV/ASV 'the head of the corner,' NIV 'the cornerstone,' NWT 'the chief corner stone' — the modern renderings settle a question the Greek leaves open.", ("Matthew", 21, 42)),
     # ---- Matthew 20 (Greek) ----
     ("lytron", "lytron / antilytron", "λύτρον", "lytron",
-     "A RANSOM — the price paid to release a slave, a captive or a debtor; from lyō, 'to loose.' It is the Greek Old Testament's word for the redemption-price of a life (Exodus 21:30) and for the half-shekel every Israelite paid 'as a lytron for his soul' (Exodus 30:12 — the very tax argued over at Matthew 17:24). ⚠ It appears in the Gospels exactly twice, in one saying: 'to give his life a lytron ANTI many' (Matthew 20:28 and Mark 10:45). The preposition matters and is often flattened — anti is the ordinary word for 'in place of, in exchange for,' and NWT's 'a ransom IN EXCHANGE FOR many' is the most exact reading on the shelf, against KJV/ASV's 'a ransom for many.' Paul intensifies it to antilytron, 'a corresponding ransom' (1 Timothy 2:6). ⚠ The word says a price was paid and does not say to whom — the question later theology spent centuries on. And 'many' (pollōn) is itself disputed: a limit, or the Semitic idiom for 'the great number, i.e. all.'", ("Matthew", 20, 28)),
+     "A RANSOM — the price paid to release a slave, a captive or a debtor; from lyō, 'to loose.' It is the Greek Old Testament's word for the redemption-price of a life (Exodus 21:30) and for the half-shekel every Israelite paid 'as a lytron for his soul' (Exodus 30:12, already on these pages — the very tax argued over at Matthew 17:24). ⚠ It appears in the Gospels exactly twice, in one saying: 'to give his life a lytron ANTI many' (Matthew 20:28 and Mark 10:45). The preposition matters and is often flattened — anti is the ordinary word for 'in place of, in exchange for,' and NWT's 'a ransom IN EXCHANGE FOR many' is the most exact reading on the shelf, against KJV/ASV's 'a ransom for many.' Paul intensifies it to antilytron, 'a corresponding ransom' (1 Timothy 2:6). ⚠ The word says a price was paid and does not say to whom — the question later theology spent centuries on. And 'many' (pollōn) is itself disputed: a limit, or the Semitic idiom for 'the great number, i.e. all.'", ("Matthew", 20, 28)),
     ("diakonos", "diakonos / doulos", "διάκονος / δοῦλος", "diakonos",
      "A TABLE-WAITER, and then any servant, agent or go-between &mdash; the root of 'deacon' and of the whole vocabulary of ministry. ⚠ Matthew 20:26-27 uses it as the lower rung of an ascending pair: whoever wants to be GREAT becomes your diakonos, whoever wants to be FIRST becomes your doulos, your slave. The distinction is real &mdash; a diakonos serves and remains free, a doulos is owned &mdash; so the second demand is the harder one, and the sentence climbs rather than repeats itself. The New Testament goes on to make the word an office (Philippians 1:1 addresses the overseers and diakonoi at Philippi), but the picture underneath it stays domestic: somebody carrying dishes.", ("Matthew", 20, 26)),
     ("poterion", "potērion", "ποτήριον", "potērion",
@@ -1332,7 +1336,7 @@ DICTIONARY = [
     ("skene", "skēnē", "σκηνή", "skēnē",
      "A TENT — and, in the Greek Old Testament, THE tent: skēnē is what the Septuagint calls the tabernacle, and skēnopēgia is the Feast of Booths. So Peter's offer to build three skēnas on the mountain (Matthew 17:4) is either camping gear or liturgy, depending how much you want to hear. KJV/Douay read 'tabernacles' and import the feast; NIV/NWT read 'shelters'/'tents' and keep the object. ⚠ The word's whole range gets used elsewhere in the New Testament: John 1:14's 'the Word became flesh and TENTED (eskēnōsen) among us'; Peter's own 'the putting off of my TENT is soon' for his body (2 Peter 1:14, in the same paragraph where he remembers this mountain); and Revelation 21:3's 'the TENT of God is with humankind.'", ("Matthew", 17, 4)),
     ("didrachmon", "didrachmon / statēr", "δίδραχμον / στατήρ", "didrachmon",
-     "THE TWO-DRACHMA and THE FOUR-DRACHMA. The didrachmon was the annual half-shekel every Israelite male owed toward the temple's upkeep (Exodus 30:11-16) — about two days' wages, and NOT Roman tribute, which is what makes Jesus' argument in Matthew 17:25-26 work: it is his own Father's house being taxed. The statēr found in the fish's mouth is a tetradrachm, four drachmas — exactly two didrachmas, the tax for two men, 'for me and for you,' to the coin. ⚠ The shelf scatters: KJV's 'a piece of money' tells the reader nothing, ASV reads 'a shekel,' NWT transliterates 'a stater,' NIV explains it as 'a four-drachma coin.' The precision IS the point, so this translation keeps the coin and puts the arithmetic in the note. Only Matthew — the Gospel that begins its author's story at a tax booth — records the episode at all.", ("Matthew", 17, 24)),
+     "THE TWO-DRACHMA and THE FOUR-DRACHMA. The didrachmon was the annual half-shekel every Israelite male owed toward the temple's upkeep (Exodus 30:11-16, already on these pages) — about two days' wages, and NOT Roman tribute, which is what makes Jesus' argument in Matthew 17:25-26 work: it is his own Father's house being taxed. The statēr found in the fish's mouth is a tetradrachm, four drachmas — exactly two didrachmas, the tax for two men, 'for me and for you,' to the coin. ⚠ The shelf scatters: KJV's 'a piece of money' tells the reader nothing, ASV reads 'a shekel,' NWT transliterates 'a stater,' NIV explains it as 'a four-drachma coin.' The precision IS the point, so this translation keeps the coin and puts the arithmetic in the note. Only Matthew — the Gospel that begins its author's story at a tax booth — records the episode at all.", ("Matthew", 17, 24)),
     ("apokathistemi", "apokathistēmi", "ἀποκαθίστημι", "apokathistēmi",
      "To RESTORE — to set a thing back as it was. Jesus grants the scribes their doctrine with it: 'Elijah does come, and will RESTORE all things' (Matthew 17:11), which is Malachi's promise that the returning Elijah will 'turn the hearts of fathers to their children' (Malachi 3:23-24 Hebrew / 4:5-6 English). ⚠ The verb has a quiet second career: it is what the disciples ask about in Acts 1:6 ('are you at this time RESTORING the kingdom to Israel?'), and its noun apokatastasis is Acts 3:21's 'the restoration of all things' — a phrase later theology has argued over for centuries. In the Gospels it is also the plain medical word for a hand or an eye put back to working order (Mark 3:5).", ("Matthew", 17, 11)),
     # ---- Zechariah 5 (Hebrew) ----
@@ -5564,6 +5568,14 @@ XREFS = [
     (("Exodus", 27, 2), ("Exodus", 29, 12), "the altar's horns, 'of one piece' when built, put to their very first use one chapter later — not a fugitive's grip, but a priest's own ordination blood"),
     (("Exodus", 25, 9), ("Exodus", 29, 45), "the word mishkan, 'tabernacle,' first named as the pattern Moses is shown — and, five chapters and one whole building later, spoken back as a verb: 'I will DWELL (ve-shakhanti) among the children of Israel'"),
     (("Exodus", 12, 6), ("Exodus", 29, 39), "the identical phrase bein ha-arbayim, 'between the two evenings' — fixed once for the one-time Passover lamb's slaughter, reused here for the priesthood's own twice-daily offering, forever"),
+    # ---- Exodus 30 ----
+    (("Exodus", 27, 2), ("Exodus", 30, 2), "the identical formula, 'of one piece with it,' used for a second altar's horns — the incense altar built to the same construction rule as the bronze altar of burnt offering three chapters earlier"),
+    (("Exodus", 29, 42), ("Exodus", 30, 6), "the identical clause, 'where I will meet with you' (asher iva'ed lecha shammah) — first spoken over the tent's own entrance at the ordination's climax, now placed at the incense altar just inside it, and echoed once more at the chapter's own close (30:36)"),
+    (("Exodus", 29, 37), ("Exodus", 30, 29), "the identical formula, 'whatever touches it shall become holy' — first spoken of the altar of burnt offering, repeated verbatim one chapter later for the whole set of anointed furniture"),
+    (("Genesis", 40, 13), ("Exodus", 30, 12), "the same court idiom, 'lift up the head' — a phrase that meant pardon for one prisoner and execution for another in Joseph's Egypt now becomes the standing Hebrew term for a national census"),
+    (("Genesis", 17, 14), ("Exodus", 30, 33), "the same penalty, 'cut off from his people,' first attached to a man who will not be circumcised, now attached twice over to two different ways of misusing one sacred formula"),
+    (("Exodus", 28, 43), ("Exodus", 30, 21), "the third and fourth 'that he die not' in three chapters, and a closing statute formula spliced from two earlier ones — 'for him and for his seed' borrowed verbatim, 'throughout their generations' swapped in for the ending"),
+    (("Exodus", 30, 13), ("Matthew", 17, 24), "the exact half-shekel this chapter fixes as the yearly tabernacle tax survives, roughly thirteen centuries later, as the temple tax a fish's mouth pays for Jesus and Peter — one didrachma each, 'for me and for you'"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11184,6 +11196,35 @@ DICTIONARY_ES = {
         "son 'para gloria y para hermosura'—; Éxodo 29:43 (ya en estas páginas) invierte el contraste: "
         "la tienda de reunión se santifica 'por mi gloria', la presencia misma de Dios, no una gloria "
         "prestada."),
+    "nasa-rosh": ("nasa rosh",
+        "LEVANTAR LA CABEZA —un modismo cortesano para distinguir a un hombre entre la multitud: "
+        "revisarlo, contarlo, tomarlo en cuenta, elevarlo. Es también el eje sobre el que gira Génesis "
+        "40: José le dice al copero 'Faraón LEVANTARÁ TU CABEZA y te restituirá' (40:13) —perdón y "
+        "ascenso. Le dice al panadero 'Faraón LEVANTARÁ TU CABEZA —de sobre ti— y te colgará en un "
+        "árbol' (40:19): la misma frase, con dos palabras añadidas, y significa decapitación. En otro "
+        "lugar el mismo modismo significa tomar un censo (Éxodo 30:12, ya en estas páginas: 'cuando "
+        "levantes la cabeza de los hijos de Israel' —un censo contado no por una marca sino por un "
+        "rescate de medio siclo pagado por cabeza, rico y pobre por igual)."),
+    "karet": ("karet",
+        "CORTADO de su pueblo —una pena de ejecución divina, no humana: el transgresor es simplemente "
+        "excindido, por la propia mano de Dios, de la comunidad del pacto. Su primera ocurrencia juega "
+        "con su propia raíz: el hebreo 'CORTA' un pacto (karat brit, 15:18, sobre los animales "
+        "partidos), y el varón que no se corte (circuncide) 'será CORTADO (venikhretah) de su pueblo' "
+        "(17:14) —la pena rima con la negativa. Éxodo 30 (ya en estas páginas) usa la fórmula idéntica "
+        "dos veces para un solo delito cometido de dos maneras: componer el aceite santo de la unción o "
+        "el incienso para uso ordinario (30:33), y simplemente hacer incienso semejante para disfrutar "
+        "su aroma, sin nunca darlo a nadie (30:38) —el disfrute privado de una fórmula sagrada es en sí "
+        "mismo digno de karet, sin transacción alguna de por medio."),
+    "rokeach": ("rokeach",
+        "Un PERFUMISTA, compositor de especias —del verbo rakach, 'componer, mezclar.' Éxodo 30 se apoya "
+        "en toda la familia de la palabra dos veces, una por cada una de sus dos recetas: el aceite santo "
+        "de la unción se hace 'perfume compuesto según el arte del PERFUMISTA' (rokach ma'aseh rokeach, "
+        "30:25), y la receta del incienso que cierra el mismo capítulo se hace 'perfume según el arte "
+        "del PERFUMISTA' —la misma frase hebrea de cuatro palabras, palabra por palabra, en el 30:35. "
+        "Receta y artesano comparten una sola raíz dos veces en un solo capítulo, el mismo recurso de "
+        "sustantivo cognado ya señalado para 'el carnero DE LLENADO' (Éxodo 29, ya en estas páginas). El "
+        "verbo regresa una vez más en el 30:33, ahora como advertencia: quien COMPONGA (yirkach) algo "
+        "semejante al aceite santo para sí mismo, o lo dé a un extraño, es cortado de su pueblo."),
     "tzoim": ("tzo'im",
         "SUCIAS — una de las palabras más crudas del hebreo bíblico, construida sobre una raíz "
         "relacionada en otros lugares con el excremento humano, no con el polvo o la suciedad "
@@ -12290,7 +12331,7 @@ DICTIONARY_ES = {
         "hombres» (Apocalipsis 21:3)."),
     "didrachmon": ("dos dracmas / estatero",
         "EL DE DOS DRACMAS y EL DE CUATRO. El didracma era el medio siclo anual que cada varón israelita "
-        "debía para el sostenimiento del templo (Éxodo 30:11-16) — unos dos jornales, y NO tributo romano, "
+        "debía para el sostenimiento del templo (Éxodo 30:11-16, ya en estas páginas) — unos dos jornales, y NO tributo romano, "
         "que es lo que hace funcionar el argumento de Jesús en Mateo 17:25-26: lo que se está gravando es "
         "la casa de su propio Padre. El estatero hallado en la boca del pez es un tetradracma, cuatro "
         "dracmas — exactamente dos didracmas, el impuesto de dos hombres, «por mí y por ti», al céntimo. "
@@ -13871,6 +13912,49 @@ CHAPTER_ART = {
                 "ordena, mostrada tal como se llev&oacute; a cabo despu&eacute;s.",
         license="CC0",
         source_url="https://commons.wikimedia.org/wiki/File:A%C3%A4ron_wordt_het_borstschild_(hoshen)_aangedaan,_RP-P-OB-44.900.jpg",
+    )],
+    "exod30": [dict(
+        file="exod30-altar-laver.jpg",
+        title="Altar of Incense, Altar of Burnt-Offering, and Laver",
+        title_es="Altar del incienso, altar del holocausto, y fuente",
+        artist="illustrators of the 1890 Holman Bible",
+        artist_es="ilustradores de la Biblia Holman de 1890",
+        year="1890",
+        location="Engraving, from the 1890 Holman Bible",
+        location_es="Grabado, de la Biblia Holman de 1890",
+        alt="A black-and-white engraving of three tabernacle objects side by side on a plain "
+            "background. At left, a small, waist-high square altar with a low crenellated "
+            "rim and short corner horns, incense smoke rising from its top and two carrying-"
+            "poles resting against its side, labeled ALTAR OF INCENSE. In the center, a much "
+            "larger box-shaped altar with a grated top on which a sacrificial animal burns, "
+            "thick smoke billowing upward; crossed carrying-poles lean against its base "
+            "beside a coiled cloth, labeled ALTAR OF BURNT-OFFERING. At right, a two-tiered, "
+            "urn-shaped basin on a decorated pedestal, with a small handled jug standing "
+            "beside it, labeled LAVER.",
+        note="&#9888; This study-Bible plate groups the three pieces of furniture this "
+             "chapter actually touches, not the whole tabernacle set: the incense altar "
+             "(vv1&ndash;10) and the laver (vv17&ndash;21) are genuinely NEW here, while the "
+             "altar of burnt offering &mdash; already built in <a href=\"exodus-27.html\">"
+             "Exodus 27</a> &mdash; reappears only to be anointed alongside them (v28). It "
+             "is a 19th-century artist's composite reconstruction, not a narrated scene from "
+             "the text and not an archaeological drawing &mdash; the same convention every "
+             "study-Bible furniture plate of its era shares, useful here precisely because it "
+             "sets the three objects side by side at a comparable scale, which the text "
+             "itself, giving each its own separate paragraph, never does.",
+        note_es="&#9888; Esta l&aacute;mina de Biblia de estudio agrupa las tres piezas de "
+                "mobiliario que este cap&iacute;tulo realmente trata, no todo el conjunto del "
+                "tabern&aacute;culo: el altar de incienso (vv1&ndash;10) y la fuente "
+                "(vv17&ndash;21) son genuinamente NUEVOS aqu&iacute;, mientras que el altar "
+                "del holocausto &mdash;ya construido en <a href=\"exodus-27.es.html\">&Eacute;"
+                "xodo 27</a>&mdash; reaparece solo para ser ungido junto a ellos (v28). Es "
+                "una reconstrucci&oacute;n compuesta de un artista del siglo XIX, no una "
+                "escena narrada del texto ni un dibujo arqueol&oacute;gico &mdash;la misma "
+                "convenci&oacute;n que comparte toda l&aacute;mina de mobiliario de Biblia de "
+                "estudio de su &eacute;poca, &uacute;til aqu&iacute; precisamente porque pone "
+                "los tres objetos uno junto a otro a una escala comparable, algo que el texto "
+                "mismo, dando a cada uno su propio p&aacute;rrafo separado, nunca hace.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Holman_Altar_of_Incense_Altar_of_Burnt-Offering_Laver.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
