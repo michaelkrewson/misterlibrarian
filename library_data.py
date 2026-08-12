@@ -273,6 +273,11 @@ DICTIONARY = [
      "MEMORIAL PORTION — the small handful of flour, oil, and frankincense the priest burns from a grain offering; everything else is left as food for Aaron and his sons (Leviticus 2:2). Built on the root zakhar, 'to remember' — the smoke that goes up is not the whole gift but a reminder OF it, standing in for a totality that is mostly eaten rather than burned. It recurs at 2:9, 2:16, 5:12, 6:15, and 24:7 (the last of the showbread), always naming the same principle: a part, formally set apart, made to represent the whole before God.", ("Leviticus", 2, 2)),
     ("melach", "melach", "מֶלַח", "melach",
      "SALT — first named as the fate of Lot's wife, who 'looked back… and became a pillar of SALT' (Genesis 19:26, already on these pages), an image of arrest and judgment. Every later use runs the opposite direction: salt PRESERVES rather than corrupts, so 'the salt of the covenant of your God' must never be missing from a grain offering (Leviticus 2:13) — an image of permanence, not paralysis. The same phrase, 'a covenant of salt,' later names the priesthood's own perpetual portion (Numbers 18:19, not yet on these pages), and Elisha throws salt into a poisoned spring to heal it, not to freeze it (2 Kings 2:20-21, not yet on these pages). One word, and Scripture uses it to mean opposite things depending on whether it names a fate or a promise.", ("Genesis", 19, 26)),
+    # ---- Leviticus 3 (Hebrew) ----
+    ("shelamim", "shalom", "שְׁלָמִים", "shelamim",
+     "PEACE-OFFERINGS — first named when Moses' young men sacrifice oxen alongside burnt offerings at the covenant ceremony (Exodus 24:5, already on these pages), and given its own full law here (Leviticus 3). Built on the same root as shalom, 'peace, wholeness, well-being' — and the offering's own mechanics enact that meaning literally: unlike the burnt-offering, wholly given to Jehovah in smoke, only the FAT of a peace-offering goes to the altar; the rest becomes a shared meal, part for the priests (Leviticus 7, not yet on these pages), the rest for the offerer's own family and guests. A sacrifice divided three ways — God, priest, and worshiper — eating from the same animal at the same time.", ("Exodus", 24, 5)),
+    ("chelev", "chelev", "חֵלֶב", "chelev",
+     "FAT — specifically the hard SUET packed around the internal organs (kidneys, liver, entrails), not the marbled fat within meat itself, and a distinct word from shemen, the pourable OIL of Leviticus 2's grain offerings. Leviticus 1 already burned an animal's fat as part of the whole burnt-offering without pausing to name it; here, in the peace-offering, chelev becomes the WHOLE of what reaches the altar (Leviticus 3:3-4, 9-10, 14-16) — everything else is eaten — and the chapter closes by making that boundary permanent: 'you shall eat neither fat nor blood' (3:17), a perpetual statute restated with a real penalty attached later in the book (Leviticus 7:23, 25, not yet on these pages).", ("Leviticus", 3, 3)),
     ("parad", "parad", "פָּרַד", "parad",
      "To separate — Genesis 13's hinge verb: Abram proposes it (13:9), Lot enacts it (13:11), and the renewed land promise arrives precisely 'after' it happens (13:14).", (13, 9)),
     ("qadash", "qadash", "קָדַשׁ", "qadash",
@@ -5669,6 +5674,10 @@ XREFS = [
     (("Exodus", 29, 37), ("Leviticus", 2, 3), "the altar itself was consecrated 'most holy' in the tabernacle account; the same top tier of the holiness system now applies to food, not stone"),
     (("Exodus", 23, 19), ("Leviticus", 2, 14), "the firstfruits offering commanded there in outline gets its own detailed grain-offering recipe here — fresh ears roasted with fire, crushed by hand"),
     (("Leviticus", 2, 13), ("Numbers", 18, 19), "the same phrase, 'a covenant of salt' — here of every grain offering, there of the priesthood's own perpetual portion"),
+    # ---- Leviticus 3 ----
+    (("Exodus", 24, 5), ("Leviticus", 3, 1), "the peace-offerings sacrificed at the founding covenant ceremony, alongside burnt offerings, finally get their own detailed law here"),
+    (("Leviticus", 3, 17), ("Leviticus", 7, 23), "the same fat prohibition, restated with a real penalty attached: whoever eats it is cut off from his people"),
+    (("Leviticus", 3, 17), ("Leviticus", 7, 26), "the same blood prohibition, restated with the identical penalty as the fat law beside it"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -7915,6 +7924,9 @@ CHRON_CHAPTERS = {
     "lev2": dict(era="exodus",
                  when="Immediately after the burnt-offering law, Jehovah gives the law of the grain offering — fine flour, oil, and frankincense, baked, griddled, or panned, a memorial portion burned and the rest kept for the priests; no leaven, no honey, but always salt.",
                  clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The offering laws of Leviticus 1–7 are given as one continuous block; nothing in the text marks a separate date for this chapter."),
+    "lev3": dict(era="exodus",
+                 when="Immediately after the grain-offering law, Jehovah gives the law of the peace-offering — herd, flock, or goat, only the fat turned to smoke while the meat becomes a shared meal — closing on a permanent ban: never eat fat, never eat blood.",
+                 clock="Same setting as ch. 1-2 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The offering laws of Leviticus 1-7 are given as one continuous block; nothing in the text marks a separate date for this chapter."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -13700,6 +13712,28 @@ DICTIONARY_ES = {
         "sal en un manantial envenenado para SANARLO, no para congelarlo (2 Reyes 2:20-21, "
         "todavía no en estas páginas). Una sola palabra, y la Escritura la usa para significar "
         "cosas opuestas según nombre un destino o una promesa."),
+    # ---- Levítico 3 ----
+    "shelamim": ("shelamim",
+        "OFRENDAS DE PAZ —nombradas por primera vez cuando los jóvenes de Moisés sacrifican "
+        "bueyes junto con holocaustos en la ceremonia del pacto (Éxodo 24:5, ya en estas "
+        "páginas), y aquí reciben su propia ley completa (Levítico 3). Construida sobre la "
+        "misma raíz que shalom, 'paz, plenitud, bienestar' —y la mecánica de la ofrenda "
+        "encarna ese significado literalmente: a diferencia del holocausto, entregado por "
+        "completo a Jehová en humo, de una ofrenda de paz solo la GRASA sube al altar; el "
+        "resto se convierte en una comida compartida, una porción para los sacerdotes "
+        "(Levítico 7, todavía no en estas páginas), el resto para la propia familia e "
+        "invitados de quien ofrece. Un sacrificio dividido tres veces —Dios, sacerdote, y "
+        "quien ofrece— comiendo del mismo animal al mismo tiempo."),
+    "chelev": ("chelev",
+        "GRASA —específicamente el sebo duro empaquetado alrededor de los órganos internos "
+        "(riñones, hígado, entrañas), no la grasa entreverada dentro de la carne misma, y una "
+        "palabra distinta de shemen, el aceite líquido de las ofrendas de grano de Levítico 2. "
+        "Levítico 1 ya quemó la grasa de un animal como parte del holocausto entero sin "
+        "detenerse a nombrarla; aquí, en la ofrenda de paz, chelev se convierte en TODO lo que "
+        "llega al altar (Levítico 3:3-4, 9-10, 14-16) —todo lo demás se come— y el capítulo "
+        "cierra haciendo permanente ese límite: 'no comeréis ninguna grasa ni ninguna sangre' "
+        "(3:17), un estatuto perpetuo repetido con una pena real más adelante en el libro "
+        "(Levítico 7:23, 25, todavía no en estas páginas)."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15141,6 +15175,82 @@ CHAPTER_ART = {
              "aseguró de que ese detalle sobreviviera en el diagrama.",
         license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_496._Inside_the_tabernacle._Exodus_40._Neagle.jpg",
+    )],
+    "lev1": [dict(
+        file="lev1-heuman-burntoffering.jpg",
+        title="Burnt Offering",
+        title_es="Holocausto",
+        artist="Heumann, from Johann Jakob Scheuchzer's Physica Sacra (Kupfer-Bibel)",
+        artist_es="Heumann, de la Physica Sacra (Kupfer-Bibel) de Johann Jakob Scheuchzer",
+        year="1731-1735, Augsburg",
+        location="The Phillip Medhurst Collection, St. George's Court, Kidderminster, England",
+        location_es="La Colección Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
+        alt="A wide baroque scene at the bronze altar: smoke and fire rise from a heap of wood "
+            "and pieces on top of a large stepped platform, a robed and turbaned priest "
+            "standing beside the fire. On the ground below, clustered groups of worshippers in "
+            "flowing robes bring animals and look on, with the tents of the wilderness camp and "
+            "two tall mountain peaks filling the background.",
+        note="The engraver puts the whole chapter's structure into one frame without staging a "
+             "single verse literally: the fire that consumes 'all of it' (v9, v13, v17) rises "
+             "continuously at the center, while the small clustered groups at ground level stand "
+             "in for the whole procession of individual offerers this chapter addresses one at a "
+             "time — herd, then flock, then bird — each bringing 'his own offering' rather than "
+             "a single national sacrifice. The mountains behind the camp place the scene exactly "
+             "where the text does: at Sinai, before the tent of meeting, tents pitched in view of "
+             "the peak the law was just given on.",
+        note_es="El grabador coloca la estructura de todo el capítulo en un solo marco sin "
+             "escenificar literalmente ningún versículo en particular: el fuego que consume "
+             "&laquo;todo&raquo; (v9, v13, v17) se eleva continuamente en el centro, mientras que "
+             "los pequeños grupos agrupados a nivel del suelo representan toda la procesión de "
+             "oferentes individuales a la que este capítulo se dirige uno por uno &mdash;el "
+             "rebaño, luego el ganado menor, luego el ave&mdash; cada uno trayendo &laquo;su "
+             "propia ofrenda&raquo; en vez de un único sacrificio nacional. Las montañas detrás "
+             "del campamento ubican la escena exactamente donde lo hace el texto: en el Sinaí, "
+             "ante la tienda de reunión, con las tiendas plantadas a la vista del mismo pico "
+             "donde la ley acababa de ser dada.",
+        license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_517._Burnt_offering._Leviticus_1_vv_8-14._Heuman.jpg",
+    )],
+    "lev3": [dict(
+        file="lev3-tyroff-peaceoffering.jpg",
+        title="Burnt Offering by Aaron's Sons",
+        title_es="Holocausto por los hijos de Aarón",
+        artist="Tyroff, from Johann Jakob Scheuchzer's Physica Sacra (Kupfer-Bibel)",
+        artist_es="Tyroff, de la Physica Sacra (Kupfer-Bibel) de Johann Jakob Scheuchzer",
+        year="1731-1735, Augsburg",
+        location="The Phillip Medhurst Collection, St. George's Court, Kidderminster, England",
+        location_es="La Colección Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
+        alt="An imaginative, monumental altar-mount rendered as a stepped architectural "
+            "structure with two grand staircases and a doorway at its base, priests visible atop "
+            "it tending a large fire whose smoke billows high against a mountain backdrop. Below, "
+            "small clusters of robed figures stand in conversation around the base, watching.",
+        note="&#9888; The engraving cannot show what actually makes this chapter's offering "
+             "different from chapter 1's — a fire looks the same on the page whether the whole "
+             "animal is burning or only its fat, and no static image can depict the meal the "
+             "rest of it became. What the plate captures instead is the priestly action the text "
+             "does share across every offering: Aaron's sons at the fire, the smoke rising 'a "
+             "soothing aroma to Jehovah,' and, scattered below at ground level, the small "
+             "clustered groups who stand in for the herd-owner, the shepherd, and the goatherd "
+             "the chapter addresses in turn. The altar itself is the engraver's own invention "
+             "&mdash; nothing in Exodus describes anything like this stepped, doored structure "
+             "&mdash; the baroque architectural fantasy typical of the Physica Sacra series, "
+             "more interested in monumental grandeur than in the actual small bronze altar the "
+             "text specifies.",
+        note_es="&#9888; El grabado no puede mostrar lo que realmente distingue la ofrenda de "
+             "este capítulo de la del capítulo 1 &mdash;un fuego se ve igual en la página ya sea "
+             "que se queme el animal entero o solo su grasa, y ninguna imagen estática puede "
+             "representar la comida en que se convirtió el resto. Lo que la lámina capta en su "
+             "lugar es la acción sacerdotal que el texto sí comparte entre todas las ofrendas: "
+             "los hijos de Aarón junto al fuego, el humo subiendo &laquo;aroma apacible a "
+             "Jehová&raquo;, y, dispersos abajo a nivel del suelo, los pequeños grupos que "
+             "representan al dueño del rebaño, al pastor, y al cabrero a quienes el capítulo se "
+             "dirige por turno. El altar mismo es invención propia del grabador &mdash;nada en "
+             "Éxodo describe algo parecido a esta estructura escalonada y con puerta&mdash; la "
+             "fantasía arquitectónica barroca típica de la serie Physica Sacra, más interesada "
+             "en la grandiosidad monumental que en el pequeño altar de bronce real que "
+             "especifica el texto.",
+        license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_518._Burnt_offering_by_Aaron%E2%80%99s_sons._Leviticus_3_vv_4-17._Tyroff.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
