@@ -221,7 +221,7 @@ DICTIONARY = [
     ("brit", "brit", "בְּרִית", "brit",
      "Covenant. First promised at 6:18, first enacted (with all flesh, unconditionally) in Genesis 9 — the word that structures the rest of the Bible.", (6, 18)),
     ("chen", "chen", "חֵן", "chen",
-     "Favor, grace. First appearance: 'Noah found favor in the eyes of Jehovah' — and chen reverses the letters of Noach.", (6, 8)),
+     "Favor, grace. First appearance: 'Noah found favor in the eyes of Jehovah' — and chen reverses the letters of Noach. ⚠ The word does its busiest work far later: it crosses between Moses and God FIVE separate times in six verses at the tent of meeting, a volley that turns God's own compliment into the currency of an argument (<a href=\"exodus-33.html#v33-12\">Exodus 33:12</a>–17, already on these pages).", (6, 8)),
     ("chamas", "chamas", "חָמָס", "chamas",
      "Violence, lawless wrong — the earth's indictment before the flood, named twice.", (6, 11)),
     ("elohim", "Elohim", "אֱלֹהִים", "Elohim",
@@ -411,7 +411,10 @@ DICTIONARY = [
     ("massekhah", "egel massekhah", "עֵגֶל מַסֵּכָה", "egel massekhah",
      "A MOLTEN or CAST image — from a root meaning to pour out metal, and the two-word phrase egel massekhah, 'molten calf,' becomes the Torah's own standing name for illegitimate worship (32:4, 8). Later writers reach for the identical phrase whenever they look back on this exact day: Israel's national confession names it directly — 'a molten calf, and said, This is your God' (Nehemiah 9:18) — and a psalm retells the same scene in poetry, 'they made a calf in Horeb... they exchanged their glory for the likeness of an ox' (Psalm 106:19-20). The single noun massekhah later becomes shorthand for any cast idol at all, forbidden outright a few books later: 'you shall make yourselves no molten gods' (Leviticus 19:4).", ("Exodus", 32, 4)),
     ("qesheh-oref", "qesheh-oref", "קְשֵׁה-עֹרֶף", "qesheh-oref",
-     "STIFFNECKED — literally 'hard of neck,' the image of a stubborn ox refusing the yoke or the goad. Jehovah uses the phrase of Israel for the first time here (32:9), then twice more within three chapters (33:3, 5; 34:9), and Moses himself repeats it to the next generation in Deuteronomy (9:6, 13). It survives into Greek almost unchanged: the only New Testament use of sklerotrachēloi (Strong's 4644) is Stephen's, at the climax of a speech that has just retold this exact scene, nearly verbatim — 'you stiffnecked people... you always resist the Holy Spirit, just as your fathers did' (Acts 7:51).", ("Exodus", 32, 9)),
+     "STIFFNECKED — literally 'hard of neck,' the image of a stubborn ox refusing the yoke or the goad. Jehovah uses the phrase of Israel for the first time here (32:9), then twice more within the very next chapter (<a href=\"exodus-33.html#v33-3\">33:3</a>, <a href=\"exodus-33.html#v33-5\">5</a>, already on these pages; 34:9, not yet), and Moses himself repeats it to the next generation in Deuteronomy (9:6, 13). It survives into Greek almost unchanged: the only New Testament use of sklerotrachēloi (Strong's 4644) is Stephen's, at the climax of a speech that has just retold this exact scene, nearly verbatim — 'you stiffnecked people... you always resist the Holy Spirit, just as your fathers did' (Acts 7:51).", ("Exodus", 32, 9)),
+    # ---- Exodus 33 (Hebrew) ----
+    ("panim", "panim", "פָּנִים", "panim",
+     "FACE — grammatically plural in form even for one face (like 'waters,' mayim), and one word doing three different jobs inside a single chapter. It names an intimate CONVERSATION at 'Jehovah spoke to Moses face to face, as a man speaks to his friend' (33:11) — the identical idiom Jacob uses of his own night at the Jabbok, 'I have seen God face to face' (<a href=\"genesis-32.html#v32-30\">Genesis 32:30</a>, already on these pages), and one Paul still reaches for centuries later, 'now we see through a glass, darkly, but then face to face' (<a href=\"1-corinthians-13.html#v13-12\">1 Corinthians 13:12</a>, already on these pages). Three verses later the same word means PRESENCE — 'my panim will go with you' (33:14), rendered idiomatically rather than literally — and by the chapter's end it means the plain, physical impossibility it started by not meaning at all: 'you cannot see my panim, for man shall not see me and live' (33:20, 23). One noun, three escalating jobs, in twelve verses.", ("Exodus", 33, 11)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -1036,7 +1039,7 @@ DICTIONARY = [
     ("ofan", "ofan / ofannim", "אוֹפַן / אוֹפַנִּים", "ofan / ofannim",
      "WHEEL — the wheels beside the living creatures in Ezekiel 1, gleaming like beryl, 'a wheel within a wheel,' their rims full of eyes, moving wherever the spirit goes. Ordinary Hebrew for a cart-wheel; later Jewish angelology promoted the OPHANIM into an order of angels ranked with the cherubim and seraphim — celestial beings that began as furniture in this vision.", ("Ezekiel", 1, 15)),
     ("kavod", "kavod", "כָּבוֹד", "kavod",
-     "GLORY — and literally WEIGHT. Built on kaved, 'heavy' (the same root behind 'honor,' which is treating a person as weighty, and behind Pharaoh's HEAVY heart). God's glory is his weight, his sheer mattering. In Ezekiel the kavod is not an abstraction but a character in the plot: seen first in exile by the Chebar canal (1:28), watched LEAVING the temple in chapters 10-11, and watched returning in chapter 43.", ("Ezekiel", 1, 28)),
+     "GLORY — and literally WEIGHT. Built on kaved, 'heavy' (the same root behind 'honor,' which is treating a person as weighty, and behind Pharaoh's HEAVY heart). God's glory is his weight, his sheer mattering. In Ezekiel the kavod is not an abstraction but a character in the plot: seen first in exile by the Chebar canal (1:28), watched LEAVING the temple in chapters 10-11, and watched returning in chapter 43. ⚠ The word's first request comes centuries earlier, and it is refused as much as it is granted: Moses asks to see it outright, and is shown only goodness, a name, and a retreating back — the kavod passing by too great to survive facing (<a href=\"exodus-33.html#v33-18\">Exodus 33:18</a>–23, already on these pages).", ("Ezekiel", 1, 28)),
     ("merkavah", "merkavah", "מֶרְכָּבָה", "merkavah",
      "CHARIOT — the name readers gave Ezekiel 1, though the word never appears in the chapter. Ma'aseh Merkavah, 'the Work of the Chariot,' is the oldest strand of Jewish mysticism, and the Mishnah restricts it as it restricts nothing else: it may not be expounded even to a single student unless he is wise and understands of his own knowledge (Hagigah 2:1).", ("Ezekiel", 1, 15)),
     ("chinnam", "chinnam", "חִנָּם", "chinnam",
@@ -5599,6 +5602,13 @@ XREFS = [
     (("Genesis", 22, 17), ("Exodus", 32, 13), "the stars-as-descendants oath, invoked word for word in Moses' plea to spare a people who have just broken the covenant that oath began"),
     (("Genesis", 6, 6), ("Exodus", 32, 14), "the same rare verb, nacham — God's regret before the flood, with no intercessor, and God's regret here, with one; the first time in this book's own thread that a plea changes the outcome"),
     (("Exodus", 28, 41), ("Exodus", 32, 29), "the identical ordination idiom, 'fill your hand' — once a formal robed installation with anointing oil, now shouted as a command across a camp still littered with the dead"),
+    # ---- Exodus 33 ----
+    (("Exodus", 3, 6), ("Exodus", 33, 18), "the same man's face, decades apart — Moses hiding it at the burning bush, afraid to look at God, then boldly asking to see God's glory outright"),
+    (("Genesis", 32, 30), ("Exodus", 33, 11), "the identical idiom, 'face to face' — first Jacob's own claim after wrestling all night at the Jabbok, now Jehovah's own description of every conversation with Moses"),
+    (("Exodus", 25, 9), ("Exodus", 33, 7), "two structures sharing one name — the still-unbuilt tabernacle's inner sanctuary and the plain tent Moses pitches far outside the camp, both called 'the tent of meeting'"),
+    (("Exodus", 32, 9), ("Exodus", 33, 5), "the same diagnosis, 'stiffnecked,' spoken to Israel's face twice more within a single chapter of first being spoken behind their backs"),
+    (("Exodus", 32, 14), ("Exodus", 33, 17), "the third round in two chapters of Moses arguing Jehovah out of a stated intention — and the one that wins back God's own presence, not merely a spared people"),
+    (("Genesis", 6, 8), ("Exodus", 33, 12), "the same rare word, chen, 'favor' — stated once, from one side, of Noah alone; here volleyed five times between Moses and God in six verses"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11219,12 +11229,33 @@ DICTIONARY_ES = {
     "qesheh-oref": ("qesheh-oref",
         "DE DURA CERVIZ —literalmente 'duro de cuello', la imagen de un buey terco que se resiste al "
         "yugo o a la aguijada. Jehová usa la frase de Israel por primera vez aquí (32:9), luego dos "
-        "veces más dentro de tres capítulos (33:3, 5; 34:9), y el propio Moisés se la repite a la "
+        "veces más dentro del capítulo siguiente "
+        "(<a href=\"exodus-33.es.html#v33-3\">33:3</a>, <a href=\"exodus-33.es.html#v33-5\">5</a>, "
+        "ya en estas páginas; 34:9, todavía no), y el propio Moisés se la repite a la "
         "siguiente generación en Deuteronomio (9:6, 13). Sobrevive al griego casi sin cambio: el único "
         "uso en todo el Nuevo Testamento de sklerotrachēloi (Strong's 4644) es el de Esteban, en el "
         "clímax de un discurso que acaba de relatar esta misma escena, casi palabra por palabra —'duros "
         "de cerviz... vosotros resistís siempre al Espíritu Santo, como vuestros padres, así también "
         "vosotros' (Hechos 7:51)."),
+    "chen": ("chen",
+        "FAVOR, gracia. Primera aparición: 'Noé halló favor ante los ojos de Jehová' —y chen invierte "
+        "las letras de Noaj. ⚠ La palabra hace su trabajo más intenso mucho más tarde: cruza entre "
+        "Moisés y Dios CINCO veces separadas en seis versículos junto a la tienda de reunión, una "
+        "volea que convierte el propio elogio de Dios en la moneda de un argumento "
+        "(<a href=\"exodus-33.es.html#v33-12\">Éxodo 33:12</a>–17, ya en estas páginas)."),
+    "panim": ("panim",
+        "ROSTRO —gramaticalmente plural en su forma incluso para un solo rostro (como 'aguas', mayim), "
+        "y una palabra que hace tres trabajos distintos dentro de un mismo capítulo. Nombra una "
+        "CONVERSACIÓN íntima en 'Jehová hablaba a Moisés cara a cara, como habla un hombre a su "
+        "amigo' (33:11) —el modismo idéntico que usa Jacob de su propia noche en el Jaboc, 'he visto "
+        "a Dios cara a cara' (<a href=\"genesis-32.es.html#v32-30\">Génesis 32:30</a>, ya en estas "
+        "páginas), y que Pablo sigue usando siglos después, 'ahora vemos por espejo, oscuramente; mas "
+        "entonces veremos cara a cara' (<a href=\"1-corinthians-13.es.html#v13-12\">1 Corintios "
+        "13:12</a>, ya en estas páginas). Tres versículos después la misma palabra significa PRESENCIA —'mis panim irán "
+        "contigo' (33:14), traducido idiomáticamente en vez de literalmente— y para el final del "
+        "capítulo significa la imposibilidad llana y física que al principio no significaba en "
+        "absoluto: 'no podrás ver mis panim, porque el hombre no puede verme y vivir' (33:20, 23). "
+        "Un solo sustantivo, tres trabajos crecientes, en doce versículos."),
     "tsachaq": ("tsachaq",
         "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
         "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
@@ -11260,7 +11291,10 @@ DICTIONARY_ES = {
         "Éxodo 28:2 la misma palabra se aplica, sorprendentemente, a la ROPA —las vestiduras de Aarón "
         "son 'para gloria y para hermosura'—; Éxodo 29:43 (ya en estas páginas) invierte el contraste: "
         "la tienda de reunión se santifica 'por mi gloria', la presencia misma de Dios, no una gloria "
-        "prestada."),
+        "prestada. ⚠ La primera petición de la palabra llega siglos antes, y se niega tanto como se "
+        "concede: Moisés pide verla directamente, y solo se le muestra bondad, un nombre, y una "
+        "espalda que se aleja —el kavod que pasa, demasiado grande para sostener la mirada "
+        "(<a href=\"exodus-33.es.html#v33-18\">Éxodo 33:18</a>–23, ya en estas páginas)."),
     "nasa-rosh": ("nasa rosh",
         "LEVANTAR LA CABEZA —un modismo cortesano para distinguir a un hombre entre la multitud: "
         "revisarlo, contarlo, tomarlo en cuenta, elevarlo. Es también el eje sobre el que gira Génesis "
@@ -14177,6 +14211,59 @@ CHAPTER_ART = {
                 "en el baile.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:The_Adoration_of_the_Golden_Calf_%E2%80%93_Nicolas_Poussin.jpg",
+    )],
+    "exod33": [dict(
+        file="exod33-medhurst-tent-of-meeting.jpg",
+        title="God Talks with Moses (after Raphael)",
+        title_es="Dios habla con Moisés (según Rafael)",
+        artist="After Raphael, engraved for an 18th-century illustrated Bible",
+        artist_es="Según Rafael, grabado para una Biblia ilustrada del siglo XVIII",
+        year="c. 1700s",
+        location="The Phillip Medhurst Collection, St. George's Court, Kidderminster, England",
+        location_es="La Colección Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
+        alt="A black-and-white copperplate engraving. At the center, a tall "
+            "pillar of cloud rises from the ground, rendered as a stack of "
+            "rounded, billowing puffs. To its right, a bearded man in a "
+            "loose robe kneels on the ground just outside a large dark "
+            "tent, one hand reaching toward the cloud. Behind the cloud, a "
+            "row of conical tents fills the middle distance, and at nearly "
+            "every tent door a small figure stands or kneels, several with "
+            "hands raised, watching the pillar. Trees, low hills, and a "
+            "small sailing boat on a distant river fill the background.",
+        note="&#9888; The engraver stages verses 8&ndash;10 all at once, "
+             "in one frame: Moses kneeling at the tent door as the pillar "
+             "of cloud descends (v9), and, behind him, the whole camp "
+             "doing exactly what the text says &mdash; &lsquo;all the "
+             "people rose up, and stood, every man at his tent door&rsquo; "
+             "(v8), then &lsquo;rose up and worshipped, every man at his "
+             "tent door&rsquo; (v10) &mdash; a field of small figures "
+             "each framed in their own doorway, watching from a distance "
+             "the conversation only Moses is allowed to have up "
+             "close.<br><br>Titled &lsquo;after Raphael&rsquo; by the "
+             "collection that preserved it &mdash; an old engraver's "
+             "acknowledgment that the composition borrows its figures from "
+             "a Raphael original, the common practice behind many "
+             "18th-century Bible plates.",
+        note_es="&#9888; El grabador escenifica los vers&iacute;culos "
+             "8&ndash;10 todos a la vez, en un solo cuadro: Mois&eacute;s "
+             "arrodillado en la puerta de la tienda mientras desciende la "
+             "columna de nube (v9), y, detr&aacute;s de &eacute;l, todo el "
+             "campamento haciendo exactamente lo que dice el texto "
+             "&mdash;&laquo;todo el pueblo se levantaba, y cada uno se "
+             "paraba a la puerta de su tienda&raquo; (v8), luego "
+             "&laquo;se levantaba y adoraba, cada uno a la puerta de su "
+             "tienda&raquo; (v10)&mdash; un campo de peque&ntilde;as "
+             "figuras, cada una enmarcada en su propio umbral, observando "
+             "desde la distancia la conversaci&oacute;n que solo a "
+             "Mois&eacute;s se le permite tener de cerca.<br><br>Titulado "
+             "&laquo;seg&uacute;n Rafael&raquo; por la colecci&oacute;n "
+             "que lo conserv&oacute; &mdash;el reconocimiento de un "
+             "grabador antiguo de que la composici&oacute;n toma prestadas "
+             "sus figuras de un original de Rafael, la pr&aacute;ctica "
+             "com&uacute;n detr&aacute;s de muchas l&aacute;minas "
+             "b&iacute;blicas del siglo XVIII.",
+        license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_462._God_talks_with_Moses._Exodus_cap_33_vv_9-11._after_Raphael.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
