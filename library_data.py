@@ -424,6 +424,11 @@ DICTIONARY = [
     # ---- Exodus 36 (Hebrew) ----
     ("kala", "kala", "כָּלָא", "vayikkale",
      "RESTRAINED, withheld, shut up — 'the people were kala from bringing' (36:6), and elsewhere this verb almost always names something held back against its own nature: the flood-rain finally restrained from falling (<a href=\"genesis-8.html#v8-2\">Genesis 8:2</a>, already on these pages), sky and earth restrained from giving dew and produce in a famine of Jehovah's own making (<a href=\"haggai-1.html#v10\">Haggai 1:10</a>, already on these pages), Jeremiah himself shut up under guard (Jeremiah 32:2-3, not yet on these pages). Only here does the word describe reining in an excess of generosity — Moses has to issue a public order to make the giving STOP, the one fundraising problem in the Bible that is too much rather than too little.", ("Exodus", 36, 6)),
+    # ---- Exodus 38 (Hebrew) ----
+    ("kiyor", "kiyor", "כִּיּוֹר", "kiyor",
+     "LAVER, basin — the bronze washstand set 'between the tent of meeting and the altar' (Exodus 30:18, already on these pages), where priests washed hands and feet before serving, 'that they die not' (30:20). The instruction names only the metal; the execution report names the source (38:8, already on these pages) — melted from mirrors donated by the tzava women, the one object in the whole account whose raw material the text bothers to trace back to a giver.", ("Exodus", 30, 18)),
+    ("tzava", "tzova", "צָבָא", "tzova / tzovot",
+     "HOST, ARMY — the same root behind Adonai Tzevaot, 'the LORD of Hosts,' God's own title as commander of a heavenly army, and behind the ordinary verb for mustering troops for war. Scripture uses this exact word for women only twice in the whole Hebrew Bible: here, of 'the tzovot who tzavu at the door of the tent of meeting' (38:8), and once more, centuries later, in a far darker context — Eli's sons lying with 'the women who tzavu at the entrance of the tent of meeting' (1 Samuel 2:22, not yet on these pages). What kind of service this word names — guard duty, formal ministry, something closer to army muster — is genuinely unrecoverable from the text alone; the shelf itself splits between 'assembling,' 'ministering,' and a flattened 'serving,' none of which fully carries the word's usual weight.", ("Exodus", 38, 8)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5638,6 +5643,10 @@ XREFS = [
     (("Exodus", 36, 1), ("Exodus", 37, 1), "the tabernacle's own construction narrows from a whole team, 'every man who was wise of heart,' to one man named once and simply assumed for twenty-eight verses after"),
     (("Exodus", 25, 31), ("Exodus", 37, 22), "the identical claim about the lampstand, made three times seven chapters ago and now repeated in the doing — hammered from a single mass of gold, no joints, no solder"),
     (("Exodus", 27, 1), ("Exodus", 37, 25), "two altars built to the same rule on opposite sides of the same curtain — bronze outside for blood, gold inside for incense, both with horns 'of one piece' and never bolted on"),
+    # ---- Exodus 38 ----
+    (("Exodus", 30, 17), ("Exodus", 38, 8), "the laver's own instruction names only its metal; the execution report names its source — mirrors donated by the women who served at the tent's door, the one object whose raw material the text traces back to a giver"),
+    (("Exodus", 30, 13), ("Exodus", 38, 26), "the half-shekel census tax and its total collected finally meet — 301,775 shekels of silver, at half a shekel a head, dividing out to exactly 603,550 men, the same figure the verse states outright"),
+    (("Exodus", 6, 23), ("Exodus", 38, 21), "Ithamar, named twice already as one of Aaron's four sons, given his first active role on these pages — auditor of the whole tabernacle's gold, silver, and bronze"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11332,6 +11341,25 @@ DICTIONARY_ES = {
         "exceso de generosidad —Moisés tiene que emitir una orden pública para hacer que la entrega "
         "SE DETENGA, el único problema de recaudación en la Biblia que es demasiado en vez de "
         "demasiado poco."),
+    "kiyor": ("kiyor",
+        "FUENTE, pila —el lavabo de bronce colocado 'entre la tienda de reunión y el altar' "
+        "(Éxodo 30:18, ya en estas páginas), donde los sacerdotes lavaban manos y pies antes de "
+        "servir, 'para que no mueran' (30:20). La instrucción nombra solo el metal; el reporte de "
+        "ejecución nombra la fuente (38:8, ya en estas páginas) —fundida de espejos donados por las "
+        "mujeres tzava, el único objeto de todo el relato cuyo material en bruto el texto se molesta "
+        "en rastrear hasta quien lo dio."),
+    "tzava": ("tzova / tzovot",
+        "HUESTE, EJÉRCITO —la misma raíz detrás de Adonai Tzevaot, 'el SEÑOR de los Ejércitos', el "
+        "propio título de Dios como comandante de un ejército celestial, y detrás del verbo corriente "
+        "para movilizar tropas para la guerra. La Escritura usa esta palabra exacta para mujeres solo "
+        "dos veces en toda la Biblia hebrea: aquí, de 'las tzovot que tzavu a la puerta de la tienda "
+        "de reunión' (38:8), y una vez más, siglos después, en un contexto mucho más oscuro —los "
+        "hijos de Elí acostándose con 'las mujeres que tzavu a la entrada de la tienda de reunión' "
+        "(1 Samuel 2:22, todavía no en estas páginas). Qué clase de servicio nombra esta palabra "
+        "—guardia, ministerio formal, algo más cercano a la movilización militar— es genuinamente "
+        "irrecuperable solo a partir del texto; el estante mismo se divide entre 'reuniéndose', "
+        "'ministrando', y un 'sirviendo' aplanado, ninguno de los cuales carga por completo el peso "
+        "habitual de la palabra."),
     "tsachaq": ("tsachaq",
         "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
         "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
@@ -14580,6 +14608,59 @@ CHAPTER_ART = {
              "cap&iacute;tulo construido enteramente de medidas.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Tissot_The_Ark_of_the_Covenant.jpg",
+    )],
+    "exod38": [dict(
+        file="exod38-medhurst-altar-laver.jpg",
+        title="The Altar and the Laver",
+        title_es="El altar y la fuente",
+        artist="After Mortier, engraved for an 18th-century illustrated Bible",
+        artist_es="Seg&uacute;n Mortier, grabado para una Biblia ilustrada del siglo XVIII",
+        year="18th century",
+        location="The Phillip Medhurst Collection, St. George's Court, Kidderminster, England",
+        location_es="La Colecci&oacute;n Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
+        alt="A black-and-white split engraving in two panels. On the left, "
+            "under a heavy column and drapery, priests tend a rectangular "
+            "wooden altar with a horned animal head laid on top, smoke "
+            "rising thickly into a hilled landscape, while a family group "
+            "watches from the side. On the right, an ornate, oversized "
+            "basin on a tall carved pedestal — decorated with a bearded "
+            "face and shell-like fluting, water flowing from a spout at "
+            "its base — where two men crouch washing their hands and feet "
+            "while a robed figure stands watching nearby.",
+        note="&#9888; The engraver imagines the laver as an elaborate "
+             "baroque fountain, all carved shells and a sculpted face, "
+             "worlds away from a plain bronze basin beaten out of donated "
+             "hand mirrors &mdash; a reminder that every old Bible "
+             "illustration draws as much on its own century's idea of "
+             "grandeur as on the text it depicts. What the engraving gets "
+             "right is the placement: this chapter's altar and laver "
+             "shown side by side, exactly as they will stand side by side "
+             "in the finished courtyard, one for sacrifice and one for "
+             "washing, a few steps apart.<br><br>Nothing in the image "
+             "hints at v8's real detail &mdash; the mirrors, the women who "
+             "gave them, the plain word 'bronze' that hides that gift "
+             "inside it. The chapter's most startling sentence left no "
+             "mark on how later artists pictured the object it describes.",
+        note_es="&#9888; El grabador imagina la fuente como una elaborada "
+             "fuente ornamental barroca, toda conchas talladas y un rostro "
+             "esculpido, muy lejos de una simple palangana de bronce "
+             "forjada a partir de espejos de mano donados &mdash;un "
+             "recordatorio de que toda ilustraci&oacute;n b&iacute;blica "
+             "antigua se apoya tanto en la idea de grandeza de su propio "
+             "siglo como en el texto que representa. Lo que el grabado "
+             "acierta es la ubicaci&oacute;n: el altar y la fuente de este "
+             "cap&iacute;tulo mostrados uno junto al otro, exactamente "
+             "como quedar&aacute;n uno junto al otro en el atrio "
+             "terminado, uno para el sacrificio y otro para lavarse, a "
+             "unos pasos de distancia.<br><br>Nada en la imagen sugiere "
+             "el detalle real del v8 &mdash;los espejos, las mujeres que "
+             "los dieron, la simple palabra &laquo;bronce&raquo; que "
+             "esconde ese regalo dentro de s&iacute;. La frase m&aacute;s "
+             "sorprendente del cap&iacute;tulo no dej&oacute; marca en "
+             "c&oacute;mo los artistas posteriores imaginaron el objeto "
+             "que describe.",
+        license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_476._The_altar_and_laver._Exodus_cap_38_vv_1-8._Mortier.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
