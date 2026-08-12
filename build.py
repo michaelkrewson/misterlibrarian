@@ -5913,6 +5913,31 @@ def check_local_anchors(chapters):
                          + "\n(point each verse's note-link at the note that actually contains it)")
 
 
+def check_chron_coverage(chapters):
+    """Every shipped chapter needs a CHRON_CHAPTERS entry — the little
+    'where you are in time' bar at the top of the page (chrono_strip()). A
+    missing entry is INVISIBLE: chrono_strip() just returns '' for a chapter
+    with none, so nothing warns, nothing breaks, and the gap only shows up if
+    someone happens to look. That is exactly what happened: coverage was
+    actively maintained early on, then silently stopped for whole stretches —
+    found 2026-08-12 as 114 of 254 shipped chapters (45%) with no entry at
+    all, including EVERY chapter of Exodus from 20 onward and the entire
+    second half of Genesis. This guard closes the gap for good: a new
+    chapter cannot ship without one line in CHRON_CHAPTERS, the same way it
+    cannot ship without a teaser, a dictionary check, or a forward-claims
+    sweep. If a chapter genuinely has no fixed point in time to give (a rare
+    case — most do, even loosely), give it an honest, undated 'when'/'clock'
+    rather than skip the entry outright; several already-shipped chapters
+    do exactly that (see gen36, jer2, lam1-2 for the pattern)."""
+    missing = sorted(slug for slug in chapters if slug not in CHRON_CHAPTERS)
+    if missing:
+        raise SystemExit("CHRONOLOGY-COVERAGE CHECK FAILED — no CHRON_CHAPTERS entry for:\n"
+                         + "\n".join(f"  {s}" for s in missing)
+                         + "\n(add a dict(era=..., when=..., clock=...) entry for each in "
+                           "library_data.py's CHRON_CHAPTERS — even a short, honestly-undated "
+                           "one is fine; see the docstring above for the pattern)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
@@ -5925,6 +5950,7 @@ def main():
     check_sblgnt_sigla(chapters)
     check_forward_claims(chapters)
     check_local_anchors(chapters)
+    check_chron_coverage(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
     build_chapter_pages(chapters)
