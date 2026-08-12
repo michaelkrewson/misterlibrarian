@@ -421,6 +421,9 @@ DICTIONARY = [
     # ---- Exodus 35 (Hebrew) ----
     ("nadiv", "nediv lev", "נְדִיב לֵב", "nediv lev",
      "WILLING OF HEART, literally 'noble of heart' — the phrase this chapter reaches for three separate times to describe why anyone gives anything at all: 'whoever is of a willing heart' (35:5), 'as many as were willing-hearted' (35:22), and a kindred verb, 'whose spirit made him willing' (35:21). The same root, nadiv, is the ordinary Hebrew word for a NOBLE or a PRINCE elsewhere in the Bible — as if the text assumes real nobility is measured by what a heart is moved to give, not by birth. ⚠ The gold this word describes giving is, verse for verse, the identical gold Aaron demanded be stripped for the calf three chapters earlier (Exodus 32:2-3, already on these pages) — the same metal, moving from coerced surrender to willing gift.", ("Exodus", 35, 5)),
+    # ---- Exodus 36 (Hebrew) ----
+    ("kala", "kala", "כָּלָא", "vayikkale",
+     "RESTRAINED, withheld, shut up — 'the people were kala from bringing' (36:6), and elsewhere this verb almost always names something held back against its own nature: the flood-rain finally restrained from falling (<a href=\"genesis-8.html#v8-2\">Genesis 8:2</a>, already on these pages), sky and earth restrained from giving dew and produce in a famine of Jehovah's own making (<a href=\"haggai-1.html#v10\">Haggai 1:10</a>, already on these pages), Jeremiah himself shut up under guard (Jeremiah 32:2-3, not yet on these pages). Only here does the word describe reining in an excess of generosity — Moses has to issue a public order to make the giving STOP, the one fundraising problem in the Bible that is too much rather than too little.", ("Exodus", 36, 6)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5628,6 +5631,9 @@ XREFS = [
     (("Exodus", 31, 2), ("Exodus", 35, 30), "Bezalel and Oholiab commissioned in the identical words twice — once before the golden calf, once after four chapters of rupture and repair, as if the crisis left no mark on the promise itself"),
     (("Exodus", 31, 12), ("Exodus", 35, 2), "the sabbath command, stated last every previous time it closed the tabernacle instructions — now stated first, before construction is allowed to begin at all"),
     (("Exodus", 28, 3), ("Exodus", 35, 25), "the identical qualification, 'wise of heart,' applied first to the men who sew Aaron's garments and now, without distinction, to the women who spin the tabernacle's own thread"),
+    # ---- Exodus 36 ----
+    (("Exodus", 26, 1), ("Exodus", 36, 8), "the identical tabernacle instructions, verb tense flipped from command to completed history — 'you SHALL make' becomes, seven chapters later, 'he MADE,' word for word"),
+    (("Exodus", 26, 36), ("Exodus", 36, 37), "the veil and the screen, two related crafts already distinguished by name, now both actually woven — the same care given to what only the high priest will see and what every worshiper sees daily"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11307,6 +11313,17 @@ DICTIONARY_ES = {
         "esta palabra describe entregando es, versículo por versículo, el mismo oro que Aarón exigió "
         "que se arrancara para el becerro tres capítulos antes (Éxodo 32:2-3, ya en estas páginas) "
         "—el mismo metal, pasando de la entrega forzada al regalo voluntario."),
+    "kala": ("vayikkale",
+        "REFRENADO, retenido, encerrado —'el pueblo fue kala de traer' (36:6), y en otras partes este "
+        "verbo casi siempre nombra algo retenido contra su propia naturaleza: la lluvia del diluvio "
+        "finalmente refrenada de caer (Génesis 8:2, todavía no traducido a estas páginas en español), "
+        "el cielo y la tierra refrenados de dar rocío y cosecha en una hambruna hecha por el propio "
+        "Jehová (<a href=\"haggai-1.es.html#v10\">Hageo 1:10</a>, ya en estas páginas), el propio "
+        "Jeremías encerrado bajo guardia "
+        "(Jeremías 32:2-3, todavía no en estas páginas). Solo aquí la palabra describe frenar un "
+        "exceso de generosidad —Moisés tiene que emitir una orden pública para hacer que la entrega "
+        "SE DETENGA, el único problema de recaudación en la Biblia que es demasiado en vez de "
+        "demasiado poco."),
     "tsachaq": ("tsachaq",
         "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
         "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
@@ -14451,6 +14468,61 @@ CHAPTER_ART = {
              "el material en sus manos.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Tissot_Bezalel.jpg",
+    )],
+    "exod36": [dict(
+        file="exod36-tissot-tailor.jpg",
+        title="The Tailor",
+        title_es="El sastre",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="circa 1896",
+        location="The Jewish Museum, New York",
+        location_es="El Museo Jud&iacute;o, Nueva York",
+        alt="A gouache painting of an elderly bearded man in a pointed hood "
+            "and striped robe, seated cross-legged on a woven mat, cutting "
+            "a large piece of pale rose-colored cloth with scissors. He "
+            "holds the fabric taut with one hand while cutting with the "
+            "other; sandals and loose threads lie on the mat before him. "
+            "Behind him, a woven hanging with a star-shaped pattern covers "
+            "part of a stone wall, a latticed window lets in light, and a "
+            "basket of colored yarn or dye sits at his side.",
+        note="&#9888; Tissot paints the plainest possible version of the "
+             "work this chapter describes at length &mdash; not a finished "
+             "curtain, not a ceremony, just an old man on a mat, cutting "
+             "cloth by hand. The chapter's own long recitation of measured "
+             "curtains, fifty loops, and fifty gold clasps (vv8&ndash;13) "
+             "all had to start exactly like this: someone sitting down "
+             "with a length of linen and a blade, making the first cut. "
+             "The star pattern woven into the hanging behind him is "
+             "Tissot's own invention, not a detail from the text, but it "
+             "quietly gestures at what the finished fabric is for, even "
+             "while the man in front of it does the unglamorous work of "
+             "getting there.<br><br>Nothing in the scene marks this cloth "
+             "as sacred. It could be any tailor cutting any fabric in any "
+             "workshop &mdash; which is exactly the point this chapter "
+             "keeps making: the tabernacle was built by ordinary skilled "
+             "hands, one measured cut at a time.",
+        note_es="&#9888; Tissot pinta la versi&oacute;n m&aacute;s llana "
+             "posible del trabajo que este cap&iacute;tulo describe "
+             "extensamente &mdash;no una cortina terminada, no una "
+             "ceremonia, solo un anciano sobre una estera, cortando tela a "
+             "mano. La propia larga recitaci&oacute;n del cap&iacute;tulo "
+             "de cortinas medidas, cincuenta lazadas, y cincuenta broches "
+             "de oro (vv8&ndash;13) tuvo que empezar exactamente as&iacute;: "
+             "alguien sent&aacute;ndose con un largo de lino y una "
+             "cuchilla, haciendo el primer corte. El patr&oacute;n "
+             "estrellado tejido en el tapiz detr&aacute;s de &eacute;l es "
+             "invenci&oacute;n propia de Tissot, no un detalle del texto, "
+             "pero apunta discretamente a para qu&eacute; es la tela "
+             "terminada, mientras el hombre frente a ella hace el trabajo "
+             "poco glamoroso de llegar hasta all&iacute;.<br><br>Nada en la "
+             "escena marca esta tela como sagrada. Podr&iacute;a ser "
+             "cualquier sastre cortando cualquier tela en cualquier taller "
+             "&mdash;que es exactamente el punto que este cap&iacute;tulo "
+             "insiste en hacer: el tabern&aacute;culo fue construido por "
+             "manos h&aacute;biles y ordinarias, un corte medido a la vez.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Tissot_Tailor.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
