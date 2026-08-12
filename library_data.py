@@ -393,7 +393,7 @@ DICTIONARY = [
      "Two Hebrew craft-terms for two different textile techniques, per the Talmud (Yoma 72b) and later commentators: ma'aseh CHOSHEV ('the work of a designer', 26:1, 31) is woven so the pattern reads identically on both faces of the fabric; ma'aseh ROKEM ('the work of an embroiderer', 26:36) is stitched onto one face only, the reverse left plain. The distinction tracks which tabernacle curtains carry cherubim (choshev-work: the inner lining and the veil) and which do not (rokem-work: the outer screen) — the more expensive, two-sided weave reserved for what lies deepest inside the structure. ⚠ The same gradient extends from the BUILDING to the PRIEST himself in Exodus 28, already on these pages: the ephod (28:6) and the breastplate it carries (28:15) both get the expensive choshev-work, while the priest's own sash (28:39) gets the plainer rokem-work — the identical rule, now running through a person's body instead of a curtain.", ("Exodus", 26, 1)),
     # ---- Exodus 27 (Hebrew) ----
     ("mizbeach", "mizbeach", "מִזְבֵּחַ", "mizbeach",
-     "ALTAR — from zavach, 'to slaughter, sacrifice.' This chapter's bronze altar (27:1-8) stands OUTSIDE the tent, in the open court — acacia wood overlaid with bronze/copper, not the gold of every furnishing INSIDE the tabernacle (Exodus 25). Its horns (v2) are 'of one piece with it,' never bolted on. ⚠ Those horns become one of the most consequential objects in the whole narrative: fleeing men grasp them for asylum (1 Kings 1:50-51, already on these pages; 1 Kings 2:28, not yet), and their removal is itself a sentence of judgment ('the horns of the altar shall be cut off,' Amos 3:14, not yet on these pages). Hollow rather than solid (v8) — the standard reconciliation with the earlier law that a true altar be plain earth or unhewn stone, never cut and never elevated by steps (Exodus 20:24-26, already on these pages).", ("Exodus", 27, 1)),
+     "ALTAR — from zavach, 'to slaughter, sacrifice.' This chapter's bronze altar (27:1-8) stands OUTSIDE the tent, in the open court — acacia wood overlaid with bronze/copper, not the gold of every furnishing INSIDE the tabernacle (Exodus 25). Its horns (v2) are 'of one piece with it,' never bolted on. ⚠ Those horns become one of the most consequential objects in the whole narrative: fleeing men grasp them for asylum (1 Kings 1:50-51, already on these pages; 1 Kings 2:28, not yet), and their removal is itself a sentence of judgment ('the horns of the altar shall be cut off,' Amos 3:14, not yet on these pages). Hollow rather than solid (v8) — the standard reconciliation with the earlier law that a true altar be plain earth or unhewn stone, never cut and never elevated by steps (Exodus 20:24-26, already on these pages). A second mizbeach stands INSIDE the tent, gold rather than bronze, for incense rather than blood — but built to the same rule, its horns likewise 'of one piece with it' (Exodus 37:25-26, already on these pages), as if one design vocabulary governs both altars regardless of which side of the curtain they stand on.", ("Exodus", 27, 1)),
     ("chatzer", "chatzer", "חָצֵר", "chatzer",
      "COURT, courtyard, enclosure — a hundred cubits by fifty, its entire perimeter a single course of 'fine twined linen' hung on sixty pillars (27:9-18) — cloth, not masonry, the only thing separating the sanctuary's ground from the ordinary camp outside it. The one gate, on the east, is a plainer twenty-cubit 'work of an embroiderer' (v16) — the same one-faced craft as the tent's own outer screen (26:36, already on these pages), reserving the more expensive two-faced weave and its woven cherubim for what stands deeper inside (the veil, 26:31).", ("Exodus", 27, 9)),
     ("ner-tamid", "ner tamid", "נֵר תָּמִיד", "ner tamid",
@@ -5634,6 +5634,10 @@ XREFS = [
     # ---- Exodus 36 ----
     (("Exodus", 26, 1), ("Exodus", 36, 8), "the identical tabernacle instructions, verb tense flipped from command to completed history — 'you SHALL make' becomes, seven chapters later, 'he MADE,' word for word"),
     (("Exodus", 26, 36), ("Exodus", 36, 37), "the veil and the screen, two related crafts already distinguished by name, now both actually woven — the same care given to what only the high priest will see and what every worshiper sees daily"),
+    # ---- Exodus 37 ----
+    (("Exodus", 36, 1), ("Exodus", 37, 1), "the tabernacle's own construction narrows from a whole team, 'every man who was wise of heart,' to one man named once and simply assumed for twenty-eight verses after"),
+    (("Exodus", 25, 31), ("Exodus", 37, 22), "the identical claim about the lampstand, made three times seven chapters ago and now repeated in the doing — hammered from a single mass of gold, no joints, no solder"),
+    (("Exodus", 27, 1), ("Exodus", 37, 25), "two altars built to the same rule on opposite sides of the same curtain — bronze outside for blood, gold inside for incense, both with horns 'of one piece' and never bolted on"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11167,7 +11171,11 @@ DICTIONARY_ES = {
         "una sentencia de juicio ('los cuernos del altar serán cortados', Amós 3:14, todavía no en "
         "estas páginas). Hueco en vez de sólido (v8) —la reconciliación habitual con la ley "
         "anterior, que exigía un altar de tierra desnuda o piedra sin labrar, nunca cortada ni "
-        "elevada por escalones (Éxodo 20:24-26, ya en estas páginas)."),
+        "elevada por escalones (Éxodo 20:24-26, ya en estas páginas). Un segundo mizbeach se levanta "
+        "DENTRO de la tienda, de oro en vez de bronce, para incienso en vez de sangre —pero "
+        "construido bajo la misma regla, sus cuernos igualmente 'de una sola pieza con él' "
+        "(Éxodo 37:25-26, ya en estas páginas), como si un solo vocabulario de diseño gobernara "
+        "ambos altares sin importar de qué lado de la cortina se levanten."),
     "chatzer": ("chatzer",
         "ATRIO, patio, recinto —cien codos por cincuenta, todo su perímetro un solo curso de 'lino "
         "fino torcido' colgado de sesenta columnas (27:9-18) —tela, no mampostería, lo único que "
@@ -14523,6 +14531,55 @@ CHAPTER_ART = {
              "manos h&aacute;biles y ordinarias, un corte medido a la vez.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Tissot_Tailor.jpg",
+    )],
+    "exod37": [dict(
+        file="exod37-tissot-ark.jpg",
+        title="The Ark of the Covenant",
+        title_es="El arca del pacto",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="circa 1896",
+        location="The Jewish Museum, New York",
+        location_es="El Museo Jud&iacute;o, Nueva York",
+        alt="A black-and-white line engraving of a rectangular wooden chest "
+            "with a lattice-patterned exterior, resting on four short legs. "
+            "Two long poles run through rings on its sides. On top, two "
+            "winged cherub figures kneel facing each other, their wings "
+            "arched upward and nearly touching above the center of the "
+            "chest's flat cover.",
+        note="&#9888; Unlike Tissot's usual gouache narrative scenes, this "
+             "is a plain reconstruction drawing &mdash; no camp, no "
+             "worshiper, no Bezalel, just the object itself, rendered the "
+             "way a careful reader of this chapter might sketch it while "
+             "following the measurements verse by verse: the box, the "
+             "rings, the poles that never come out, and the two cherubim "
+             "facing each other exactly as v9 describes, wings spread "
+             "above, faces bowed toward the cover between them.<br><br>"
+             "The plainness is its own kind of honesty. Nothing here tries "
+             "to guess at what the text does not say &mdash; no jewels, no "
+             "ornament beyond what vv1&ndash;9 actually list. It is close "
+             "to the least imaginative way this object could be drawn, "
+             "which is exactly what makes it a useful companion to a "
+             "chapter built entirely out of measurements.",
+        note_es="&#9888; A diferencia de las escenas narrativas habituales "
+             "de Tissot en gouache, este es un simple dibujo de "
+             "reconstrucci&oacute;n &mdash;sin campamento, sin adorador, "
+             "sin Bezalel, solo el objeto mismo, representado como lo "
+             "esbozar&iacute;a un lector cuidadoso de este cap&iacute;tulo "
+             "siguiendo las medidas vers&iacute;culo por vers&iacute;culo: "
+             "la caja, los anillos, las varas que nunca se sacan, y los "
+             "dos querubines encar&aacute;ndose exactamente como describe "
+             "el v9, alas extendidas hacia arriba, rostros inclinados "
+             "hacia la cubierta entre ellos.<br><br>La sencillez es su "
+             "propia forma de honestidad. Nada aqu&iacute; intenta "
+             "adivinar lo que el texto no dice &mdash;ninguna joya, ning&uacute;n "
+             "ornamento m&aacute;s all&aacute; de lo que los vv1&ndash;9 "
+             "realmente enumeran. Es casi la manera menos imaginativa "
+             "posible de dibujar este objeto, lo cual es exactamente lo "
+             "que lo hace un compa&ntilde;ero &uacute;til para un "
+             "cap&iacute;tulo construido enteramente de medidas.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Tissot_The_Ark_of_the_Covenant.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
