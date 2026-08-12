@@ -5655,6 +5655,11 @@ XREFS = [
     (("Exodus", 28, 17), ("Exodus", 39, 10), "the four rows of stones repeat this list word for word, now built rather than commanded"),
     (("Exodus", 28, 36), ("Exodus", 39, 30), "the plate's inscription and the note on Aaron bearing the guilt of the holy things the people bring"),
     (("Genesis", 2, 1), ("Exodus", 39, 32), "the same root, kalah, 'to finish' — the heavens and earth were finished; here, the tabernacle"),
+    # ---- Exodus 40 ----
+    (("Exodus", 29, 9), ("Exodus", 40, 15), "the everlasting-priesthood formula repeated from the ordination command itself, now folded into the final instruction"),
+    (("Exodus", 39, 32), ("Exodus", 40, 33), "the same root, kalah — there the work WAS finished (passive); here Moses HIMSELF finishes it (active)"),
+    (("Exodus", 33, 18), ("Exodus", 40, 34), "the glory Moses could only glimpse from a cleft in the rock now fills the whole tabernacle — too much even for him to enter"),
+    (("Exodus", 13, 21), ("Exodus", 40, 38), "the identical pillar of cloud by day and fire by night that led Israel out of Egypt at the very start of this book, now settled permanently on the tabernacle it built"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -14720,6 +14725,47 @@ CHAPTER_ART = {
              "propósito.",
         license="Public domain (PD-Art, author died 1902)",
         source_url="https://commons.wikimedia.org/wiki/File:The_Costume_of_the_High_Priest,_James_Jacques_Tissot_(1896-1901)(The_Jewish_Museum).jpg",
+    )],
+    "exod40": [dict(
+        file="exod40-neagle-insidetabernacle.jpg",
+        title="The Inside of the Tabernacle with the Holy of Holies and the Sacred Vessels",
+        title_es="El interior del tabernáculo, con el Lugar Santísimo y los utensilios sagrados",
+        artist="James Neagle, printed for Samuel Bagster",
+        artist_es="James Neagle, impreso para Samuel Bagster",
+        year="early 19th century",
+        location="The Phillip Medhurst Collection, St. George's Court, Kidderminster, England",
+        location_es="La Colección Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
+        alt="A technical cutaway engraving of the tabernacle, drawn as an architect's diagram "
+            "rather than a narrative scene. The outer coverings of five of the structure's "
+            "pillars are folded back and three pillars are shown broken away entirely, so the "
+            "viewer can see straight into the interior: the golden lampstand with its lamps "
+            "lit, the table of showbread, the altar of incense, and — beyond a hanging veil, "
+            "in the space labeled the Holy of Holies — a small billowing cloud rising above "
+            "where the ark stands, captioned in the print itself as 'the Cloud of Glory.'",
+        note="&#9888; This print is not trying to show a moment from the narrative at all — it "
+             "is a cutaway diagram, the pillars themselves 'turned back' and 'broken' in the "
+             "engraver's own words so the reader can see furniture no worshiper ever actually "
+             "saw arranged this way, side by side, veil included. And yet the one thing it "
+             "insists on showing, right where the text says it belongs, is the cloud: the "
+             "caption identifies it by name as 'the Cloud of Glory,' the same glory this "
+             "chapter's own closing verses describe filling the tabernacle so completely that "
+             "Moses himself could not go in. An 18th/19th-century engraver, working from "
+             "instructions rather than eyewitness testimony like everyone else who has ever "
+             "tried to draw this room, still made sure that detail survived the diagram.",
+        note_es="&#9888; Este grabado no intenta mostrar un momento del relato en absoluto "
+             "&mdash;es un diagrama de corte, con los propios pilares &laquo;vueltos hacia "
+             "atrás&raquo; y &laquo;rotos&raquo;, en palabras del propio grabador, para que "
+             "el lector vea un mobiliario que ningún adorador vio jamás dispuesto así, uno "
+             "junto a otro, velo incluido. Y sin embargo, lo único que insiste en mostrar, "
+             "exactamente donde el texto dice que pertenece, es la nube: el pie de imagen la "
+             "identifica por nombre como &laquo;la Nube de Gloria&raquo;, la misma gloria que "
+             "los versículos finales de este capítulo describen llenando el tabernáculo tan "
+             "completamente que el propio Moisés no pudo entrar. Un grabador de los siglos "
+             "XVIII/XIX, trabajando a partir de instrucciones y no de un testimonio ocular "
+             "como todos los demás que alguna vez intentaron dibujar esta sala, aun así se "
+             "aseguró de que ese detalle sobreviviera en el diagrama.",
+        license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_496._Inside_the_tabernacle._Exodus_40._Neagle.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
