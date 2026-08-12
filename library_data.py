@@ -418,6 +418,9 @@ DICTIONARY = [
     # ---- Exodus 34 (Hebrew) ----
     ("karan", "qaran", "קָרַן", "qaran",
      "SHONE, sent forth beams — 'the skin of his face qaran' (34:29), and the verb shares its root with keren, the ordinary Hebrew word for a literal animal HORN. That shared root produced one of the most consequential mistranslations in Western art. Jerome's Vulgate rendered the verb almost literally, cornuta esset facies sua, 'his face was HORNED' — a defensible reading of the bare consonants, but one no other detail in the passage supports. The Douay-Rheims, translating the Vulgate, keeps it: 'his face was horned from the conversation of the Lord.' Michelangelo, working thirteen centuries later from that same Latin tradition, carved Moses with two small horns rising from his head for the tomb of Pope Julius II — a sculpture now visited by millions who often assume the horns are simply what a fierce lawgiver looks like, not the fossil of a translator's word-choice. Every major English version corrects the reading to 'shone' or 'radiant'; the horns survive only in stone.", ("Exodus", 34, 29)),
+    # ---- Exodus 35 (Hebrew) ----
+    ("nadiv", "nediv lev", "נְדִיב לֵב", "nediv lev",
+     "WILLING OF HEART, literally 'noble of heart' — the phrase this chapter reaches for three separate times to describe why anyone gives anything at all: 'whoever is of a willing heart' (35:5), 'as many as were willing-hearted' (35:22), and a kindred verb, 'whose spirit made him willing' (35:21). The same root, nadiv, is the ordinary Hebrew word for a NOBLE or a PRINCE elsewhere in the Bible — as if the text assumes real nobility is measured by what a heart is moved to give, not by birth. ⚠ The gold this word describes giving is, verse for verse, the identical gold Aaron demanded be stripped for the calf three chapters earlier (Exodus 32:2-3, already on these pages) — the same metal, moving from coerced surrender to willing gift.", ("Exodus", 35, 5)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5619,6 +5622,12 @@ XREFS = [
     (("Exodus", 32, 4), ("Exodus", 34, 17), "the same two-word ban repeated almost immediately — 'molten gods' forbidden again, in the covenant remade to replace the one the golden calf broke"),
     (("Exodus", 23, 19), ("Exodus", 34, 26), "the identical six-word command, essentially unchanged — 'do not boil a young goat in its mother's milk,' repeated nearly verbatim as the covenant's terms are restated in full"),
     (("Exodus", 24, 18), ("Exodus", 34, 28), "a second forty days and nights on the mountain, fasting exactly as the first time the covenant was given — new tablets for the ones Moses broke"),
+    # ---- Exodus 35 ----
+    (("Exodus", 32, 2), ("Exodus", 35, 22), "the same word, nezem, 'ring' — gold rings stripped under pressure to build an idol, the identical jewelry now handed over freely to build a sanctuary"),
+    (("Exodus", 25, 1), ("Exodus", 35, 5), "the opening call for tabernacle materials, recited back almost word for word seven chapters later, now that the people who missed it the first time can finally hear it"),
+    (("Exodus", 31, 2), ("Exodus", 35, 30), "Bezalel and Oholiab commissioned in the identical words twice — once before the golden calf, once after four chapters of rupture and repair, as if the crisis left no mark on the promise itself"),
+    (("Exodus", 31, 12), ("Exodus", 35, 2), "the sabbath command, stated last every previous time it closed the tabernacle instructions — now stated first, before construction is allowed to begin at all"),
+    (("Exodus", 28, 3), ("Exodus", 35, 25), "the identical qualification, 'wise of heart,' applied first to the men who sew Aaron's garments and now, without distinction, to the women who spin the tabernacle's own thread"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11288,6 +11297,16 @@ DICTIONARY_ES = {
         "que a menudo suponen que los cuernos son simplemente el aspecto de un legislador feroz, no el "
         "fósil de la elección de palabra de un traductor. Toda versión mayor en inglés corrige la "
         "lectura a 'resplandecía' o 'radiante'; los cuernos sobreviven solo en piedra."),
+    "nadiv": ("nediv lev",
+        "GENEROSO DE CORAZÓN, literalmente 'noble de corazón' —la frase a la que este capítulo recurre "
+        "tres veces separadas para describir por qué alguien da algo: 'todo el que sea de corazón "
+        "generoso' (35:5), 'cuantos fueron de corazón generoso' (35:22), y un verbo emparentado, 'cuyo "
+        "espíritu lo hizo generoso' (35:21). La misma raíz, nadiv, es la palabra hebrea corriente para "
+        "un NOBLE o un PRÍNCIPE en otras partes de la Biblia —como si el texto asumiera que la nobleza "
+        "verdadera se mide por lo que un corazón se mueve a dar, no por el nacimiento. ⚠ El oro que "
+        "esta palabra describe entregando es, versículo por versículo, el mismo oro que Aarón exigió "
+        "que se arrancara para el becerro tres capítulos antes (Éxodo 32:2-3, ya en estas páginas) "
+        "—el mismo metal, pasando de la entrega forzada al regalo voluntario."),
     "tsachaq": ("tsachaq",
         "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
         "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
@@ -14375,6 +14394,63 @@ CHAPTER_ART = {
              "encontr&oacute;.",
         license="CC0 (Rijksmuseum)",
         source_url="https://commons.wikimedia.org/wiki/File:Sculptuur_in_de_San_Pietro_in_Vincoli,_voorstellende_Mozes,_RP-F-F01158-AM.jpg",
+    )],
+    "exod35": [dict(
+        file="exod35-tissot-bezalel.jpg",
+        title="Bezalel",
+        title_es="Bezalel",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1896–1902",
+        location="The Jewish Museum, New York",
+        location_es="El Museo Jud&iacute;o, Nueva York",
+        alt="A gouache painting of a bearded craftsman inside a tent workshop, "
+            "wearing a pointed cap, a blue striped tunic, and a heavy tan "
+            "leather apron or hide draped and gathered over one arm. He "
+            "studies the material closely, one hand raised thoughtfully "
+            "near his chin, the other steadying the leather at his hip. "
+            "Behind him, a carved wooden stand, a large metal vessel, and "
+            "an open chest of tools sit against the tent's sloped canvas "
+            "wall, lit by a shaft of light from an unseen opening.",
+        note="&#9888; Tissot paints Bezalel not receiving instructions or "
+             "standing for a portrait, but mid-appraisal &mdash; turning a "
+             "piece of hide or leather over in his hands, working out how "
+             "it will be cut. Nothing about the scene announces &lsquo;chief "
+             "craftsman of the tabernacle&rsquo;; it is simply a man doing "
+             "the specific, unglamorous work of figuring out material, "
+             "exactly the kind of skill this chapter spends six verses "
+             "insisting Bezalel was divinely filled to do (vv30&ndash;35): "
+             "wisdom, understanding, and knowledge in EVERY kind of "
+             "craftsmanship, not one dramatic gift but an aptitude for "
+             "leather and wood and gold and stone alike.<br><br>The "
+             "workshop clutter behind him &mdash; the wooden stand, the "
+             "waiting chest, the large vessel &mdash; reads as ordinary "
+             "shop furniture rather than sacred equipment, a reminder that "
+             "before any of it became holy by its use, the tabernacle was "
+             "built the way anything is built: by someone who knew the "
+             "material in his hands.",
+        note_es="&#9888; Tissot pinta a Bezalel no recibiendo instrucciones "
+             "ni posando para un retrato, sino a mitad de evaluaci&oacute;n "
+             "&mdash;dando vueltas a un trozo de piel o cuero entre las "
+             "manos, calculando c&oacute;mo cortarlo. Nada en la escena "
+             "anuncia &laquo;artesano principal del tabern&aacute;culo&raquo;; "
+             "es simplemente un hombre haciendo el trabajo espec&iacute;fico "
+             "y poco glamoroso de entender el material, exactamente la "
+             "clase de habilidad en la que este cap&iacute;tulo insiste "
+             "durante seis vers&iacute;culos que Bezalel fue llenado "
+             "divinamente (vv30&ndash;35): sabidur&iacute;a, inteligencia, y "
+             "conocimiento en TODA clase de artesan&iacute;a, no un solo don "
+             "dram&aacute;tico sino una aptitud para el cuero y la madera y "
+             "el oro y la piedra por igual.<br><br>El desorden del taller "
+             "detr&aacute;s de &eacute;l &mdash;el soporte de madera, el "
+             "cofre que espera, el gran recipiente&mdash; se lee como "
+             "mobiliario ordinario de tienda en vez de equipo sagrado, un "
+             "recordatorio de que antes de que nada de esto se volviera "
+             "santo por su uso, el tabern&aacute;culo se construy&oacute; "
+             "como se construye cualquier cosa: por alguien que conoc&iacute;a "
+             "el material en sus manos.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Tissot_Bezalel.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
