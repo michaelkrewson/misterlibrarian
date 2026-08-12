@@ -268,6 +268,11 @@ DICTIONARY = [
      "To lean, press, lay firmly — the worshipper 'lays his hand upon the head' of the offering (1:4), pressing down, not merely touching (semikhah). The gesture identifies the offerer with the victim: this dies in my place. The same verb later ordains: Moses lays his hands on Joshua and the spirit passes (Numbers 27:18-23) — the root of both substitution and ordination.", ("Leviticus", 1, 4)),
     ("shechitah", "shachat", "שָׁחַט", "shachat",
      "To slaughter ritually — the precise verb for killing an offering (1:5, 11), the root of shechitah, kosher slaughter. ⚠ Not to be confused with its near-twin shachat (שָׁחַת, final tav), 'to ruin,' the flood's boomerang verb (6:11) — a different root that only sounds alike. This one, spelled with a final tet, means a clean, deliberate killing at the altar 'before Jehovah.'", ("Leviticus", 1, 5)),
+    # ---- Leviticus 2 (Hebrew) ----
+    ("azkarah", "azkarah", "אַזְכָּרָה", "azkarah",
+     "MEMORIAL PORTION — the small handful of flour, oil, and frankincense the priest burns from a grain offering; everything else is left as food for Aaron and his sons (Leviticus 2:2). Built on the root zakhar, 'to remember' — the smoke that goes up is not the whole gift but a reminder OF it, standing in for a totality that is mostly eaten rather than burned. It recurs at 2:9, 2:16, 5:12, 6:15, and 24:7 (the last of the showbread), always naming the same principle: a part, formally set apart, made to represent the whole before God.", ("Leviticus", 2, 2)),
+    ("melach", "melach", "מֶלַח", "melach",
+     "SALT — first named as the fate of Lot's wife, who 'looked back… and became a pillar of SALT' (Genesis 19:26, already on these pages), an image of arrest and judgment. Every later use runs the opposite direction: salt PRESERVES rather than corrupts, so 'the salt of the covenant of your God' must never be missing from a grain offering (Leviticus 2:13) — an image of permanence, not paralysis. The same phrase, 'a covenant of salt,' later names the priesthood's own perpetual portion (Numbers 18:19, not yet on these pages), and Elisha throws salt into a poisoned spring to heal it, not to freeze it (2 Kings 2:20-21, not yet on these pages). One word, and Scripture uses it to mean opposite things depending on whether it names a fate or a promise.", ("Genesis", 19, 26)),
     ("parad", "parad", "פָּרַד", "parad",
      "To separate — Genesis 13's hinge verb: Abram proposes it (13:9), Lot enacts it (13:11), and the renewed land promise arrives precisely 'after' it happens (13:14).", (13, 9)),
     ("qadash", "qadash", "קָדַשׁ", "qadash",
@@ -1010,7 +1015,7 @@ DICTIONARY = [
     ("matzah", "matzah / matzot", "מַצָּה", "matzah",
      "UNLEAVENED BREAD — flat cakes made without leaven, and the sign of a departure too fast for dough to rise: 'they baked the dough… into cakes of UNLEAVENED bread, for it was not leavened, because they had been driven out of Egypt and could not delay' (Exodus 12:39). ⚠️ But the command comes BEFORE the haste (12:15-20), so the bread is not merely a souvenir of hurry; it is a seven-day discipline of removing something. Deuteronomy 16:3 names it 'the bread of affliction.' In the New Testament the unleavened loaf of this meal becomes the bread Jesus breaks at a Passover table (Luke 22:19).", ("Exodus", 12, 8)),
     ("seor", "se'or / chametz", "שְׂאֹר", "se'or",
-     "LEAVEN, sourdough starter — and the thing Passover requires be actively hunted out of the house: 'seven days no LEAVEN shall be found in your houses' (Exodus 12:19). Its force as an image is that it works invisibly and spreads through everything, which is why it becomes a metaphor for corruption that cannot be quarantined — 'a little LEAVEN leavens the whole lump' (1 Corinthians 5:6, where Paul goes straight on to call Christ our Passover), and 'beware of the LEAVEN of the Pharisees' (Matthew 16:6). ⚠️ It is not always negative: Jesus also likens the kingdom of the heavens to leaven a woman hides in three measures of flour until the whole is leavened (Matthew 13:33) — the same property, working the other way.", ("Exodus", 12, 15)),
+     "LEAVEN, sourdough starter — and the thing Passover requires be actively hunted out of the house: 'seven days no LEAVEN shall be found in your houses' (Exodus 12:19). Its force as an image is that it works invisibly and spreads through everything, which is why it becomes a metaphor for corruption that cannot be quarantined — 'a little LEAVEN leavens the whole lump' (1 Corinthians 5:6, where Paul goes straight on to call Christ our Passover), and 'beware of the LEAVEN of the Pharisees' (Matthew 16:6). ⚠️ It is not always negative: Jesus also likens the kingdom of the heavens to leaven a woman hides in three measures of flour until the whole is leavened (Matthew 13:33) — the same property, working the other way. ⚠ The grain-offering law states the flood-gate version of the same rule outright: no leaven, and no honey either, may ever be turned into smoke on the altar — not just at Passover, but from EVERY offering, without exception (Leviticus 2:11, already on these pages).", ("Exodus", 12, 15)),
     ("ezov", "ezov", "אֵזוֹב", "ezov",
      "HYSSOP — a small bushy plant (probably Syrian marjoram rather than true hyssop), used as a BRUSH wherever something is applied for cleansing or covering. Its first use is the most consequential: 'take a bunch of HYSSOP and dip it in the blood… and touch the lintel and the two doorposts' (Exodus 12:22). It reappears in the cleansing of a healed skin disease and of a house (Leviticus 14), in the water of purification (Numbers 19), and in David's plea, 'purge me with HYSSOP and I shall be clean' (Psalm 51:7). ⚠️ At the crucifixion a sponge of sour wine is lifted to Jesus on a hyssop stalk (John 19:29) — the plant of the Passover doorposts, at a Passover. ⚠ And Psalm 51:9 asks for it: 'purge the sin out of me with HYSSOP'. A psalm that nine verses later says God does not want sacrifice opens by asking for the ritual instrument of purification, and does not explain itself.", ("Exodus", 12, 22)),
     ("mashchit", "mashchit", "מַשְׁחִית", "mashchit",
@@ -5660,6 +5665,10 @@ XREFS = [
     (("Exodus", 39, 32), ("Exodus", 40, 33), "the same root, kalah — there the work WAS finished (passive); here Moses HIMSELF finishes it (active)"),
     (("Exodus", 33, 18), ("Exodus", 40, 34), "the glory Moses could only glimpse from a cleft in the rock now fills the whole tabernacle — too much even for him to enter"),
     (("Exodus", 13, 21), ("Exodus", 40, 38), "the identical pillar of cloud by day and fire by night that led Israel out of Egypt at the very start of this book, now settled permanently on the tabernacle it built"),
+    # ---- Leviticus 2 ----
+    (("Exodus", 29, 37), ("Leviticus", 2, 3), "the altar itself was consecrated 'most holy' in the tabernacle account; the same top tier of the holiness system now applies to food, not stone"),
+    (("Exodus", 23, 19), ("Leviticus", 2, 14), "the firstfruits offering commanded there in outline gets its own detailed grain-offering recipe here — fresh ears roasted with fire, crushed by hand"),
+    (("Leviticus", 2, 13), ("Numbers", 18, 19), "the same phrase, 'a covenant of salt' — here of every grain offering, there of the priesthood's own perpetual portion"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -7903,6 +7912,9 @@ CHRON_CHAPTERS = {
     "lev1": dict(era="exodus",
                  when="At Sinai, from the newly-raised tent of meeting, Jehovah calls Moses and gives the law of the burnt-offering — the herd, the flock, and the poor person's bird, each an offering that ascends whole in smoke.",
                  clock="c. 1445 BC on the early date — the second year after the Exodus. The tabernacle is finished and filled with glory on the first day of the second year (Exodus 40:17, 34); Leviticus is spoken FROM it, in the roughly one month before Israel breaks camp (Numbers 10:11). The whole book is delivered at Mount Sinai, before the wilderness march resumes."),
+    "lev2": dict(era="exodus",
+                 when="Immediately after the burnt-offering law, Jehovah gives the law of the grain offering — fine flour, oil, and frankincense, baked, griddled, or panned, a memorial portion burned and the rest kept for the priests; no leaven, no honey, but always salt.",
+                 clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The offering laws of Leviticus 1–7 are given as one continuous block; nothing in the text marks a separate date for this chapter."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -13325,6 +13337,27 @@ DICTIONARY_ES = {
         "escena que nombra —un fiscal acusando a un hombre delante de Dios «día y noche»— "
         "repone por tercera y última vez los tribunales celestiales de Job 1:6 y Zacarías 3:1, "
         "solo que aquí el tribunal mismo queda disuelto."),
+    # ---- Levítico 2 ----
+    "azkarah": ("azkarah",
+        "PORCIÓN MEMORIAL — el pequeño puñado de flor de harina, aceite, e incienso que el "
+        "sacerdote quema de una ofrenda de grano; todo lo demás queda como alimento para Aarón "
+        "y sus hijos (Levítico 2:2). Construida sobre la raíz zakhar, 'recordar' —el humo que "
+        "sube no es el regalo entero sino un RECORDATORIO de él, una parte que representa una "
+        "totalidad que en su mayoría se come en vez de quemarse. Vuelve a aparecer en 2:9, "
+        "2:16, 5:12, 6:15, y 24:7 (el pan de la proposición) —siempre nombrando el mismo "
+        "principio: una parte, formalmente apartada, hecha para representar el todo delante de "
+        "Dios."),
+    "melach": ("melach",
+        "SAL —nombrada por primera vez como el destino de la esposa de Lot, quien 'miró hacia "
+        "atrás…y se convirtió en una columna de SAL' (Génesis 19:26, ya en estas páginas), una "
+        "imagen de detención y juicio. Todo uso posterior corre en la dirección contraria: la "
+        "sal PRESERVA en vez de corromper, así que 'la sal del pacto de tu Dios' nunca puede "
+        "faltar de una ofrenda de grano (Levítico 2:13) —una imagen de permanencia, no de "
+        "parálisis. La misma frase, 'un pacto de sal,' más adelante nombra la propia porción "
+        "perpetua del sacerdocio (Números 18:19, todavía no en estas páginas), y Eliseo arroja "
+        "sal en un manantial envenenado para SANARLO, no para congelarlo (2 Reyes 2:20-21, "
+        "todavía no en estas páginas). Una sola palabra, y la Escritura la usa para significar "
+        "cosas opuestas según nombre un destino o una promesa."),
 }
 
 ENCYCLOPEDIA_ES = {
