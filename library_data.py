@@ -409,12 +409,15 @@ DICTIONARY = [
      "TABERNACLE — literally DWELLING-PLACE, from shakhan, 'to dwell, settle down.' The word names the whole portable sanctuary Moses is shown 'the pattern of' at its first appearance (25:9, already on these pages), and the entire five-chapter construction project it opens — gold, curtains, boards, altar, priestly garments — is a single extended answer to the question the word itself poses: a dwelling for whom? Exodus 29:45-46 (already on these pages) gives the answer directly, in the exact same root: 'I will DWELL (ve-shakhanti) among the children of Israel' — the tabernacle's own name, spoken as a verb, closing the whole instruction. Every major English version renders mishkan 'tabernacle,' following the Vulgate's tabernaculum; this translation keeps the same word, but flags the root wherever the text itself plays on it.", ("Exodus", 25, 9)),
     # ---- Exodus 32 (Hebrew) ----
     ("massekhah", "egel massekhah", "עֵגֶל מַסֵּכָה", "egel massekhah",
-     "A MOLTEN or CAST image — from a root meaning to pour out metal, and the two-word phrase egel massekhah, 'molten calf,' becomes the Torah's own standing name for illegitimate worship (32:4, 8). Later writers reach for the identical phrase whenever they look back on this exact day: Israel's national confession names it directly — 'a molten calf, and said, This is your God' (Nehemiah 9:18) — and a psalm retells the same scene in poetry, 'they made a calf in Horeb... they exchanged their glory for the likeness of an ox' (Psalm 106:19-20). The single noun massekhah later becomes shorthand for any cast idol at all, forbidden outright a few books later: 'you shall make yourselves no molten gods' (Leviticus 19:4).", ("Exodus", 32, 4)),
+     "A MOLTEN or CAST image — from a root meaning to pour out metal, and the two-word phrase egel massekhah, 'molten calf,' becomes the Torah's own standing name for illegitimate worship (32:4, 8). Later writers reach for the identical phrase whenever they look back on this exact day: Israel's national confession names it directly — 'a molten calf, and said, This is your God' (Nehemiah 9:18) — and a psalm retells the same scene in poetry, 'they made a calf in Horeb... they exchanged their glory for the likeness of an ox' (Psalm 106:19-20). The bare noun returns almost immediately, in the covenant renewed to replace what the calf destroyed — 'you shall make yourself no molten gods' (<a href=\"exodus-34.html#v34-17\">Exodus 34:17</a>, already on these pages) — and becomes shorthand for any cast idol at all a few books later, forbidden in the same words: 'you shall make yourselves no molten gods' (Leviticus 19:4).", ("Exodus", 32, 4)),
     ("qesheh-oref", "qesheh-oref", "קְשֵׁה-עֹרֶף", "qesheh-oref",
-     "STIFFNECKED — literally 'hard of neck,' the image of a stubborn ox refusing the yoke or the goad. Jehovah uses the phrase of Israel for the first time here (32:9), then twice more within the very next chapter (<a href=\"exodus-33.html#v33-3\">33:3</a>, <a href=\"exodus-33.html#v33-5\">5</a>, already on these pages; 34:9, not yet), and Moses himself repeats it to the next generation in Deuteronomy (9:6, 13). It survives into Greek almost unchanged: the only New Testament use of sklerotrachēloi (Strong's 4644) is Stephen's, at the climax of a speech that has just retold this exact scene, nearly verbatim — 'you stiffnecked people... you always resist the Holy Spirit, just as your fathers did' (Acts 7:51).", ("Exodus", 32, 9)),
+     "STIFFNECKED — literally 'hard of neck,' the image of a stubborn ox refusing the yoke or the goad. Jehovah uses the phrase of Israel three times running (32:9; <a href=\"exodus-33.html#v33-3\">33:3</a>, <a href=\"exodus-33.html#v33-5\">5</a>, already on these pages) before Moses himself takes the word up as his own plea for pardon, the fourth and final use — 'it is a stiffnecked people; and pardon our iniquity' (<a href=\"exodus-34.html#v34-9\">34:9</a>, already on these pages). Moses repeats it once more to the next generation in Deuteronomy (9:6, 13, not yet on these pages). It survives into Greek almost unchanged: the only New Testament use of sklerotrachēloi (Strong's 4644) is Stephen's, at the climax of a speech that has just retold this exact scene, nearly verbatim — 'you stiffnecked people... you always resist the Holy Spirit, just as your fathers did' (Acts 7:51).", ("Exodus", 32, 9)),
     # ---- Exodus 33 (Hebrew) ----
     ("panim", "panim", "פָּנִים", "panim",
-     "FACE — grammatically plural in form even for one face (like 'waters,' mayim), and one word doing three different jobs inside a single chapter. It names an intimate CONVERSATION at 'Jehovah spoke to Moses face to face, as a man speaks to his friend' (33:11) — the identical idiom Jacob uses of his own night at the Jabbok, 'I have seen God face to face' (<a href=\"genesis-32.html#v32-30\">Genesis 32:30</a>, already on these pages), and one Paul still reaches for centuries later, 'now we see through a glass, darkly, but then face to face' (<a href=\"1-corinthians-13.html#v13-12\">1 Corinthians 13:12</a>, already on these pages). Three verses later the same word means PRESENCE — 'my panim will go with you' (33:14), rendered idiomatically rather than literally — and by the chapter's end it means the plain, physical impossibility it started by not meaning at all: 'you cannot see my panim, for man shall not see me and live' (33:20, 23). One noun, three escalating jobs, in twelve verses.", ("Exodus", 33, 11)),
+     "FACE — grammatically plural in form even for one face (like 'waters,' mayim), and one word doing three different jobs inside a single chapter. It names an intimate CONVERSATION at 'Jehovah spoke to Moses face to face, as a man speaks to his friend' (33:11) — the identical idiom Jacob uses of his own night at the Jabbok, 'I have seen God face to face' (<a href=\"genesis-32.html#v32-30\">Genesis 32:30</a>, already on these pages), and one Paul still reaches for centuries later, 'now we see through a glass, darkly, but then face to face' (<a href=\"1-corinthians-13.html#v13-12\">1 Corinthians 13:12</a>, already on these pages). Three verses later the same word means PRESENCE — 'my panim will go with you' (33:14), rendered idiomatically rather than literally — and by the chapter's end it means the plain, physical impossibility it started by not meaning at all: 'you cannot see my panim, for man shall not see me and live' (33:20, 23). One noun, three escalating jobs, in twelve verses. ⚠ The word gets a fourth job one chapter later, and it is the strangest of all: Moses comes down from the mountain and 'the skin of his panim shone' (<a href=\"exodus-34.html#v34-29\">Exodus 34:29</a>, already on these pages) — the very face no one may look at directly now radiates a borrowed version of that glory onto Moses' own, bright enough that Israel is afraid to come near him.", ("Exodus", 33, 11)),
+    # ---- Exodus 34 (Hebrew) ----
+    ("karan", "qaran", "קָרַן", "qaran",
+     "SHONE, sent forth beams — 'the skin of his face qaran' (34:29), and the verb shares its root with keren, the ordinary Hebrew word for a literal animal HORN. That shared root produced one of the most consequential mistranslations in Western art. Jerome's Vulgate rendered the verb almost literally, cornuta esset facies sua, 'his face was HORNED' — a defensible reading of the bare consonants, but one no other detail in the passage supports. The Douay-Rheims, translating the Vulgate, keeps it: 'his face was horned from the conversation of the Lord.' Michelangelo, working thirteen centuries later from that same Latin tradition, carved Moses with two small horns rising from his head for the tomb of Pope Julius II — a sculpture now visited by millions who often assume the horns are simply what a fierce lawgiver looks like, not the fossil of a translator's word-choice. Every major English version corrects the reading to 'shone' or 'radiant'; the horns survive only in stone.", ("Exodus", 34, 29)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5609,6 +5612,13 @@ XREFS = [
     (("Exodus", 32, 9), ("Exodus", 33, 5), "the same diagnosis, 'stiffnecked,' spoken to Israel's face twice more within a single chapter of first being spoken behind their backs"),
     (("Exodus", 32, 14), ("Exodus", 33, 17), "the third round in two chapters of Moses arguing Jehovah out of a stated intention — and the one that wins back God's own presence, not merely a spared people"),
     (("Genesis", 6, 8), ("Exodus", 33, 12), "the same rare word, chen, 'favor' — stated once, from one side, of Noah alone; here volleyed five times between Moses and God in six verses"),
+    # ---- Exodus 34 ----
+    (("Exodus", 33, 19), ("Exodus", 34, 6), "a promise kept within nine verses — 'I will proclaim the name Jehovah before you,' and here, almost immediately, he does"),
+    (("Exodus", 33, 20), ("Exodus", 34, 29), "the impossibility and its echo — no one may see Jehovah's face and live, yet Moses stands close enough that his own face begins to shine with a borrowed version of that glory"),
+    (("Exodus", 33, 5), ("Exodus", 34, 9), "the fourth and final use of 'stiffnecked' in three chapters — twice from God, now once from Moses, turning the diagnosis into his own plea for pardon"),
+    (("Exodus", 32, 4), ("Exodus", 34, 17), "the same two-word ban repeated almost immediately — 'molten gods' forbidden again, in the covenant remade to replace the one the golden calf broke"),
+    (("Exodus", 23, 19), ("Exodus", 34, 26), "the identical six-word command, essentially unchanged — 'do not boil a young goat in its mother's milk,' repeated nearly verbatim as the covenant's terms are restated in full"),
+    (("Exodus", 24, 18), ("Exodus", 34, 28), "a second forty days and nights on the mountain, fasting exactly as the first time the covenant was given — new tablets for the ones Moses broke"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11223,16 +11233,20 @@ DICTIONARY_ES = {
         "miran hacia atrás a este mismo día: la confesión nacional de Israel lo nombra directamente "
         "—'un becerro de fundición, y dijeron: Este es tu Dios' (Nehemías 9:18)— y un salmo relata la "
         "misma escena en poesía, 'hicieron un becerro en Horeb... cambiaron su gloria por la imagen "
-        "de un buey' (Salmo 106:19-20). El sustantivo massekhah se vuelve después abreviatura para "
-        "cualquier ídolo fundido, prohibido sin rodeos unos libros más adelante: 'no os haréis dioses "
-        "de fundición' (Levítico 19:4)."),
+        "de un buey' (Salmo 106:19-20). El sustantivo puro regresa casi de inmediato, en el pacto "
+        "renovado para reemplazar lo que el becerro destruyó —'no te harás dioses de fundición' "
+        "(<a href=\"exodus-34.es.html#v34-17\">Éxodo 34:17</a>, ya en estas páginas)— y se vuelve "
+        "abreviatura para cualquier ídolo fundido, prohibido unos libros más adelante con las mismas "
+        "palabras: 'no os haréis dioses de fundición' (Levítico 19:4)."),
     "qesheh-oref": ("qesheh-oref",
         "DE DURA CERVIZ —literalmente 'duro de cuello', la imagen de un buey terco que se resiste al "
-        "yugo o a la aguijada. Jehová usa la frase de Israel por primera vez aquí (32:9), luego dos "
-        "veces más dentro del capítulo siguiente "
-        "(<a href=\"exodus-33.es.html#v33-3\">33:3</a>, <a href=\"exodus-33.es.html#v33-5\">5</a>, "
-        "ya en estas páginas; 34:9, todavía no), y el propio Moisés se la repite a la "
-        "siguiente generación en Deuteronomio (9:6, 13). Sobrevive al griego casi sin cambio: el único "
+        "yugo o a la aguijada. Jehová usa la frase de Israel tres veces seguidas "
+        "(32:9; <a href=\"exodus-33.es.html#v33-3\">33:3</a>, <a href=\"exodus-33.es.html#v33-5\">5</a>, "
+        "ya en estas páginas) antes de que el propio Moisés tome la palabra como su propio ruego de "
+        "perdón, el cuarto y último uso —'es un pueblo de dura cerviz; y perdona nuestra iniquidad' "
+        "(<a href=\"exodus-34.es.html#v34-9\">34:9</a>, ya en estas páginas). Moisés se la repite una "
+        "vez más a la siguiente generación en Deuteronomio (9:6, 13, todavía no en estas páginas). "
+        "Sobrevive al griego casi sin cambio: el único "
         "uso en todo el Nuevo Testamento de sklerotrachēloi (Strong's 4644) es el de Esteban, en el "
         "clímax de un discurso que acaba de relatar esta misma escena, casi palabra por palabra —'duros "
         "de cerviz... vosotros resistís siempre al Espíritu Santo, como vuestros padres, así también "
@@ -11255,7 +11269,25 @@ DICTIONARY_ES = {
         "contigo' (33:14), traducido idiomáticamente en vez de literalmente— y para el final del "
         "capítulo significa la imposibilidad llana y física que al principio no significaba en "
         "absoluto: 'no podrás ver mis panim, porque el hombre no puede verme y vivir' (33:20, 23). "
-        "Un solo sustantivo, tres trabajos crecientes, en doce versículos."),
+        "Un solo sustantivo, tres trabajos crecientes, en doce versículos. ⚠ La palabra recibe un "
+        "cuarto trabajo un capítulo después, y es el más extraño de todos: Moisés baja del monte y "
+        "'la piel de sus panim resplandecía' (<a href=\"exodus-34.es.html#v34-29\">Éxodo 34:29</a>, "
+        "ya en estas páginas) —el mismo rostro que nadie puede mirar directamente ahora irradia una "
+        "versión prestada de esa gloria sobre el propio rostro de Moisés, lo bastante brillante como "
+        "para que Israel tema acercarse a él."),
+    "karan": ("qaran",
+        "RESPLANDECÍA, emitía rayos —'la piel de su rostro qaran' (34:29), y el verbo comparte su raíz "
+        "con keren, la palabra hebrea corriente para un CUERNO animal literal. Esa raíz compartida "
+        "produjo una de las mistraducciones más consecuentes del arte occidental. La Vulgata de "
+        "Jerónimo tradujo el verbo de manera casi literal, cornuta esset facies sua, 'su rostro estaba "
+        "CON CUERNOS' —una lectura defendible de las consonantes desnudas, pero que ningún otro "
+        "detalle del pasaje respalda. La Douay-Rheims, traduciendo la Vulgata, la conserva: 'su rostro "
+        "estaba con cuernos por la conversación del Señor'. Miguel Ángel, trabajando trece siglos "
+        "después desde esa misma tradición latina, talló a Moisés con dos pequeños cuernos que se "
+        "alzan de su cabeza para la tumba del papa Julio II —una escultura hoy visitada por millones "
+        "que a menudo suponen que los cuernos son simplemente el aspecto de un legislador feroz, no el "
+        "fósil de la elección de palabra de un traductor. Toda versión mayor en inglés corrige la "
+        "lectura a 'resplandecía' o 'radiante'; los cuernos sobreviven solo en piedra."),
     "tsachaq": ("tsachaq",
         "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
         "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
@@ -14264,6 +14296,85 @@ CHAPTER_ART = {
              "b&iacute;blicas del siglo XVIII.",
         license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_462._God_talks_with_Moses._Exodus_cap_33_vv_9-11._after_Raphael.jpg",
+    )],
+    "exod34": [dict(
+        file="exod34-michelangelo-moses.jpg",
+        title="Moses",
+        title_es="Moisés",
+        artist="Michelangelo (vintage photograph, Fratelli Alinari/Brogi studio)",
+        artist_es="Miguel Ángel (fotografía de época, estudio Fratelli Alinari/Brogi)",
+        year="statue c. 1513–1515; photograph c. 1875–1907",
+        location="San Pietro in Vincoli, Rome — Tomb of Pope Julius II",
+        location_es="San Pietro in Vincoli, Roma — Tumba del papa Julio II",
+        alt="A vintage sepia-toned photograph, mounted in an old album with the "
+            "album's edge visible around it, of a seated marble statue of an "
+            "elderly bearded man. He wears a loose robe and holds the tablets "
+            "of the law under one arm while his other hand rests in his long, "
+            "flowing beard. Two small horn-like protrusions rise from the "
+            "hair at his temples. He sits in an ornate marble niche flanked "
+            "by carved pilasters. A caption below the image reads, in "
+            "Italian, 'Roma — Chiesa di S. Pietro in Vincoli — Il Mosè di "
+            "Michelangiolo.'",
+        note="&#9888; Look at the top of the head: two small horns, rising "
+             "from the hair at the temples — Michelangelo's own reading of "
+             "the same mistranslation the dictionary entry for <a "
+             "href=\"dictionary.html#karan\">qaran</a> traces back to "
+             "Jerome's Vulgate. The sculptor was not inventing an image; he "
+             "was carving the standard Latin text of his own day as "
+             "faithfully as he carved everything else &mdash; the horns are "
+             "exegesis in marble, not artistic license.<br><br>Everything "
+             "else about the figure argues for barely-contained motion "
+             "rather than horned menace: the twisted torso, the tension in "
+             "the raised veins of the forearm, the tablets gripped almost "
+             "as an afterthought under one arm while the other hand is lost "
+             "in his own beard, caught mid-gesture. A famous (and probably "
+             "apocryphal) legend, traced to Vasari, has Michelangelo "
+             "himself striking the statue's knee with his hammer on "
+             "finishing it and demanding, 'Why don't you speak?' &mdash; a "
+             "story no document confirms, but one that has outlived its "
+             "own uncertainty precisely because the figure looks so ready "
+             "to move. Whatever expression Michelangelo intended, four "
+             "centuries of visitors have read it as anger, and the horns "
+             "have not helped soften that impression.<br><br>This "
+             "photograph itself is a small piece of the same history of "
+             "reproduction and misreading it depicts "
+             "&mdash; a vintage studio print, mounted decades ago in a "
+             "traveler's photograph album, of a sculpture already three "
+             "and a half centuries old when the camera found it.",
+        note_es="&#9888; Mire la parte superior de la cabeza: dos peque&ntilde;os "
+             "cuernos que se alzan del cabello en las sienes &mdash;la propia "
+             "lectura de Miguel &Aacute;ngel de la misma mistraducci&oacute;n que "
+             "la entrada del diccionario para <a "
+             "href=\"diccionario.html#karan\">qaran</a> rastrea hasta la "
+             "Vulgata de Jer&oacute;nimo. El escultor no invent&oacute; una "
+             "imagen; tall&oacute; el texto lat&iacute;n est&aacute;ndar de su "
+             "propia &eacute;poca tan fielmente como tall&oacute; todo lo "
+             "dem&aacute;s &mdash;los cuernos son ex&eacute;gesis en m&aacute;rmol, "
+             "no licencia art&iacute;stica.<br><br>Todo lo dem&aacute;s en la "
+             "figura sugiere movimiento apenas contenido en vez de amenaza "
+             "cornuda: el torso girado, la tensi&oacute;n en las venas "
+             "marcadas del antebrazo, las tablas sostenidas casi como una "
+             "ocurrencia tard&iacute;a bajo un brazo mientras la otra mano se "
+             "pierde en su propia barba, capturada a mitad de gesto. Una "
+             "leyenda famosa (y probablemente apócrifa), rastreada hasta "
+             "Vasari, cuenta que el propio Miguel &Aacute;ngel, al terminarla, "
+             "golpe&oacute; la rodilla de la estatua con su martillo y "
+             "exigi&oacute;: &laquo;&iquest;Por qu&eacute; no hablas?&raquo; "
+             "&mdash;una historia que ning&uacute;n documento confirma, pero "
+             "que ha sobrevivido a su propia incertidumbre precisamente "
+             "porque la figura parece tan lista para moverse. "
+             "Cualquiera que fuera la expresi&oacute;n que Miguel &Aacute;ngel "
+             "quiso dar, cuatro siglos de visitantes la han le&iacute;do como "
+             "ira, y los cuernos no han ayudado a suavizar esa "
+             "impresi&oacute;n.<br><br>Esta misma fotograf&iacute;a es una "
+             "peque&ntilde;a pieza de la misma historia de reproducci&oacute;n y "
+             "malentendido que retrata &mdash;una impresi&oacute;n de estudio "
+             "de &eacute;poca, montada hace d&eacute;cadas en el &aacute;lbum de "
+             "fotos de un viajero, de una escultura ya con tres siglos y "
+             "medio de antig&uuml;edad cuando la c&aacute;mara la "
+             "encontr&oacute;.",
+        license="CC0 (Rijksmuseum)",
+        source_url="https://commons.wikimedia.org/wiki/File:Sculptuur_in_de_San_Pietro_in_Vincoli,_voorstellende_Mozes,_RP-F-F01158-AM.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
