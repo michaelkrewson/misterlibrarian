@@ -429,6 +429,9 @@ DICTIONARY = [
      "LAVER, basin — the bronze washstand set 'between the tent of meeting and the altar' (Exodus 30:18, already on these pages), where priests washed hands and feet before serving, 'that they die not' (30:20). The instruction names only the metal; the execution report names the source (38:8, already on these pages) — melted from mirrors donated by the tzava women, the one object in the whole account whose raw material the text bothers to trace back to a giver.", ("Exodus", 30, 18)),
     ("tzava", "tzova", "צָבָא", "tzova / tzovot",
      "HOST, ARMY — the same root behind Adonai Tzevaot, 'the LORD of Hosts,' God's own title as commander of a heavenly army, and behind the ordinary verb for mustering troops for war. Scripture uses this exact word for women only twice in the whole Hebrew Bible: here, of 'the tzovot who tzavu at the door of the tent of meeting' (38:8), and once more, centuries later, in a far darker context — Eli's sons lying with 'the women who tzavu at the entrance of the tent of meeting' (1 Samuel 2:22, not yet on these pages). What kind of service this word names — guard duty, formal ministry, something closer to army muster — is genuinely unrecoverable from the text alone; the shelf itself splits between 'assembling,' 'ministering,' and a flattened 'serving,' none of which fully carries the word's usual weight.", ("Exodus", 38, 8)),
+    # ---- Exodus 39 (Hebrew) ----
+    ("kalah", "kalah", "כָלָה", "vatechel",
+     "TO FINISH, complete — a different root from kala (כָלָא, 'restrain,' already documented at Exodus 36:6, spelled with an aleph rather than this word's heh) that only sounds alike in transliteration. 'Thus WAS FINISHED all the work of the tabernacle' (39:32, vatechel) uses the identical root Genesis uses twice for the end of creation itself: 'the heavens and the earth WERE FINISHED' and 'God FINISHED the work he had done' (Genesis 2:1-2, already on these pages). Scholars have long read the whole tabernacle account as deliberately echoing the creation story on this word alone — a made world and a made sanctuary, both brought to the same single verb of completion.", ("Exodus", 39, 32)),
     # ---- Genesis 35 (Hebrew) ----
     ("nekhar", "nekhar", "נֵכָר", "nekhar",
      "FOREIGN, strange, other — the 'foreign gods' (elohei nekhar) Jacob orders his household to bury before they go up to Bethel (35:2, 4), among them surely the teraphim Rachel had stolen from Laban (31:19). To 'put away the elohei nekhar' becomes the refrain of every later turning-back to God — Joshua at Shechem (Joshua 24:23), Samuel (1 Samuel 7:3), the great reforms of the kings. The word also names the ben-nekhar, the 'foreigner/outsider' the law both shelters and, at the Passover, fences off (Exodus 12:43). KJV 'strange gods'; ASV and NWT 'foreign gods.'", (35, 2)),
@@ -5647,6 +5650,11 @@ XREFS = [
     (("Exodus", 30, 17), ("Exodus", 38, 8), "the laver's own instruction names only its metal; the execution report names its source — mirrors donated by the women who served at the tent's door, the one object whose raw material the text traces back to a giver"),
     (("Exodus", 30, 13), ("Exodus", 38, 26), "the half-shekel census tax and its total collected finally meet — 301,775 shekels of silver, at half a shekel a head, dividing out to exactly 603,550 men, the same figure the verse states outright"),
     (("Exodus", 6, 23), ("Exodus", 38, 21), "Ithamar, named twice already as one of Aaron's four sons, given his first active role on these pages — auditor of the whole tabernacle's gold, silver, and bronze"),
+    # ---- Exodus 39 ----
+    (("Exodus", 37, 8), ("Exodus", 39, 4), "the same ketiv/qere — the identical unpointed form beside its pointed reading — recurs on the same word for 'its ends,' two chapters apart"),
+    (("Exodus", 28, 17), ("Exodus", 39, 10), "the four rows of stones repeat this list word for word, now built rather than commanded"),
+    (("Exodus", 28, 36), ("Exodus", 39, 30), "the plate's inscription and the note on Aaron bearing the guilt of the holy things the people bring"),
+    (("Genesis", 2, 1), ("Exodus", 39, 32), "the same root, kalah, 'to finish' — the heavens and earth were finished; here, the tabernacle"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -11360,6 +11368,15 @@ DICTIONARY_ES = {
         "irrecuperable solo a partir del texto; el estante mismo se divide entre 'reuniéndose', "
         "'ministrando', y un 'sirviendo' aplanado, ninguno de los cuales carga por completo el peso "
         "habitual de la palabra."),
+    "kalah": ("vatechel",
+        "TERMINAR, completar —una raíz distinta de kala (כָלָא, 'restringir', ya documentada en "
+        "Éxodo 36:6, escrita con álef en vez del he de esta palabra) que solo suena igual en "
+        "transliteración. 'Así SE ACABÓ toda la obra del tabernáculo' (39:32, vatechel) usa la raíz "
+        "idéntica que Génesis usa dos veces para el fin de la creación misma: 'los cielos y la "
+        "tierra FUERON TERMINADOS' y 'Dios TERMINÓ la obra que había hecho' (Génesis 2:1-2, ya en "
+        "estas páginas). Los eruditos hace tiempo que leen todo el relato del tabernáculo como un "
+        "eco deliberado del relato de la creación en esta sola palabra —un mundo hecho y un "
+        "santuario hecho, ambos llevados al mismo verbo único de terminación."),
     "tsachaq": ("tsachaq",
         "REÍR —la risa de Abraham boca abajo en 17:17 acuña el nombre Isaac (Yitzchaq, 'él ríe'); la "
         "risa de Sara (18:12) y su «Dios me ha hecho reír» (21:6) mantienen vivo el juego de palabras "
@@ -14661,6 +14678,48 @@ CHAPTER_ART = {
              "que describe.",
         license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_476._The_altar_and_laver._Exodus_cap_38_vv_1-8._Mortier.jpg",
+    )],
+    "exod39": [dict(
+        file="exod39-tissot-hpcostume.jpg",
+        title="The Costume of the High Priest",
+        title_es="El traje del sumo sacerdote",
+        artist="James Jacques Joseph Tissot",
+        artist_es="James Jacques Joseph Tissot",
+        year="c. 1896–1902",
+        location="Gouache on board, The Jewish Museum, New York",
+        location_es="Gouache sobre tabla, El Museo Judío, Nueva York",
+        alt="A watercolor study of the high priest in his full vestments, arms raised in "
+            "a gesture of blessing. He wears a white turban, an orange-and-red striped "
+            "robe with a fringed, tasseled hem, and a golden breastplate set with rows of "
+            "colored gems visible on his chest. A long, richly patterned blue-and-white "
+            "band hangs down the front of his waist to his ankles. He stands barefoot in "
+            "sandals against a striped curtain backdrop.",
+        note="Tissot painted this as a pure costume study — not a narrative scene from "
+             "any one moment in the text, but an attempt to reconstruct, garment by "
+             "garment, everything this chapter describes: the turban, the striped robe "
+             "with its hem of small tassels standing in for the woven pomegranates and "
+             "gold bells (vv24–26), and the breastplate's gemstones set in a visible "
+             "grid on his chest. &#9888; The long patterned band down the front is Tissot's "
+             "own invention — the text describes a woven band (v5) that FASTENS the "
+             "ephod at the waist, not a separate sash trailing to the floor, and no "
+             "surviving source tells an artist what the actual weave pattern looked like. "
+             "Every reconstruction of these garments, however careful, is filling in a "
+             "silence the text leaves on purpose.",
+        note_es="Tissot pintó esto como un estudio de vestuario puro —no una escena "
+             "narrativa de un momento concreto del texto, sino un intento de "
+             "reconstruir, prenda por prenda, todo lo que describe este capítulo: el "
+             "turbante, la túnica a rayas con su dobladillo de pequeñas borlas que "
+             "representan las granadas tejidas y las campanillas de oro (vv24–26), y "
+             "las gemas del pectoral engastadas en una cuadrícula visible sobre su "
+             "pecho. &#9888; La larga banda estampada que cuelga por delante es una "
+             "invención propia de Tissot —el texto describe una banda tejida (v5) que "
+             "SUJETA el efod a la cintura, no una banda separada que arrastra hasta el "
+             "suelo, y ninguna fuente conservada le dice a un artista cómo era en "
+             "realidad el patrón del tejido. Toda reconstrucción de estas prendas, por "
+             "cuidadosa que sea, está rellenando un silencio que el texto deja a "
+             "propósito.",
+        license="Public domain (PD-Art, author died 1902)",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Costume_of_the_High_Priest,_James_Jacques_Tissot_(1896-1901)(The_Jewish_Museum).jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
