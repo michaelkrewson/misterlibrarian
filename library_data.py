@@ -15303,6 +15303,46 @@ CHAPTER_ART = {
         license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_517._Burnt_offering._Leviticus_1_vv_8-14._Heuman.jpg",
     )],
+    "lev2": [dict(
+        file="lev2-engedi-scroll.jpg",
+        title="The En-Gedi Scroll",
+        title_es="El rollo de En-Gedi",
+        artist="Ancient synagogue Torah scroll, photographed by Shai Halevi, Israel Antiquities Authority",
+        artist_es="Rollo antiguo de la Torá de una sinagoga, fotografiado por Shai Halevi, Autoridad de Antigüedades de Israel",
+        year="2015",
+        location="Israel Antiquities Authority",
+        location_es="Autoridad de Antigüedades de Israel",
+        alt="A small, blackened, cylinder-shaped lump of charred, crumbling parchment, tightly "
+            "rolled and badly burned, photographed against a plain white background.",
+        note="&#9888; Not a picture of legible text — this is a photograph of a badly burned, "
+             "still-rolled lump of parchment, recovered from the ark of a synagogue at En-Gedi "
+             "that burned to the ground around AD 600. For decades no one could open it without "
+             "destroying it. In 2015, researchers CT-scanned the lump and used 'virtual "
+             "unwrapping' software to digitally flatten its layers without ever physically "
+             "unrolling it — and found, preserved inside, the opening verses of Leviticus 2, "
+             "word-for-word close to the medieval Masoretic text a full millennium before the "
+             "oldest previously known complete copy. Radiocarbon dating places the parchment "
+             "itself in the 3rd or 4th century AD. The scan that actually reads the text is a "
+             "separate, differently-licensed piece of published research (Seales et al., "
+             "<em>Science Advances</em>, 2016) — the object shown here is only what that scan "
+             "was performed on.",
+        note_es="&#9888; No es una fotografía de texto legible — es una fotografía de un trozo de "
+                "pergamino gravemente quemado y todavía enrollado, recuperado del arca de una "
+                "sinagoga en En-Gedi que ardió por completo hacia el año 600 d.C. Durante décadas "
+                "nadie pudo abrirlo sin destruirlo. En 2015, unos investigadores escanearon el "
+                "fragmento con tomografía computarizada y usaron software de &laquo;desenrollado "
+                "virtual&raquo; para aplanar digitalmente sus capas sin desenrollarlo jamás "
+                "físicamente &mdash;y encontraron, preservados en su interior, los versículos "
+                "iniciales de Levítico 2, casi palabra por palabra iguales al texto masorético "
+                "medieval, un milenio entero antes de la copia completa más antigua conocida "
+                "hasta entonces. La datación por radiocarbono ubica el pergamino mismo en el "
+                "siglo III o IV d.C. El escaneo que realmente lee el texto es una investigación "
+                "publicada aparte, con licencia distinta (Seales et al., <em>Science Advances</em>"
+                ", 2016) &mdash;el objeto que se muestra aquí es solo aquello sobre lo cual se "
+                "realizó ese escaneo.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:Ein_Gedi_Scroll_Fragment_2-Shai_Halevi-IAA.jpg",
+    )],
     "lev3": [dict(
         file="lev3-tyroff-peaceoffering.jpg",
         title="Burnt Offering by Aaron's Sons",
@@ -15343,6 +15383,71 @@ CHAPTER_ART = {
              "especifica el texto.",
         license="CC BY-SA 3.0 (The Phillip Medhurst Collection)",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_518._Burnt_offering_by_Aaron%E2%80%99s_sons._Leviticus_3_vv_4-17._Tyroff.jpg",
+    )],
+    "lev4": [dict(
+        file="lev4-beersheba-altar.jpg",
+        title="The Horned Altar of Tel Beersheba",
+        title_es="El altar con cuernos de Tel Beerseba",
+        artist="Ancient Israelite altar, photographed by Wikimedia contributor Tamarah",
+        artist_es="Altar israelita antiguo, fotografiado por la colaboradora de Wikimedia Tamarah",
+        year="2012",
+        location="Israel Museum, Jerusalem",
+        location_es="Museo de Israel, Jerusalén",
+        alt="A reassembled ancient altar built of large rectangular sandstone blocks, its four "
+            "upper corners rising into distinct curved horn-shapes, displayed on a low platform "
+            "in a dimly lit museum gallery.",
+        note="&#9888; Not a depiction of this chapter's narrative — a real object: a four-horned "
+             "sacrificial altar, hewn from sandstone ashlars, excavated at Tel Beersheba and "
+             "dated to the 8th century BC. It was found dismantled, its stones built into a "
+             "storehouse wall — probably torn down during a later king's reform of worship — and "
+             "three of its four original horns survive. This chapter's own ritual is built "
+             "entirely around this exact feature: the priest's finger carries blood 'on the "
+             "horns of the altar of burnt offering' (v25, v30), the physical detail this "
+             "photograph actually shows, even though the altar itself was excavated roughly "
+             "seven centuries after this law was first given.",
+        note_es="&#9888; No es una representación de la narrativa de este capítulo &mdash;es un "
+                "objeto real: un altar de sacrificios con cuatro cuernos, tallado en sillares de "
+                "arenisca, excavado en Tel Beerseba y fechado en el siglo VIII a.C. Se encontró "
+                "desmantelado, con sus piedras reutilizadas en el muro de un almacén &mdash;"
+                "probablemente derribado durante la reforma del culto de un rey posterior&mdash; "
+                "y sobreviven tres de sus cuatro cuernos originales. El propio rito de este "
+                "capítulo se construye enteramente alrededor de este detalle exacto: el dedo del "
+                "sacerdote lleva sangre &laquo;sobre los cuernos del altar del holocausto&raquo; "
+                "(v25, v30), el detalle físico que esta fotografía realmente muestra, aunque el "
+                "altar mismo fue excavado unos siete siglos después de que esta ley fuera dada "
+                "por primera vez.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:Altar_from_Tel_Be%27er-Sheva.JPG",
+    )],
+    "lev5": [dict(
+        file="lev5-judahite-weights.jpg",
+        title="Judahite Stone Weights",
+        title_es="Pesas de piedra judaítas",
+        artist="Ancient Judahite weight-stones, photographed by Wikimedia contributor Chamberi",
+        artist_es="Pesas de piedra judaítas antiguas, fotografiadas por el colaborador de Wikimedia Chamberi",
+        year="2013",
+        location="Israel Museum, Jerusalem",
+        location_es="Museo de Israel, Jerusalén",
+        alt="A row of small, smooth, dome-shaped stone weights of graduated sizes, several "
+            "inscribed with faint incised numeral marks, displayed against a plain wall in a "
+            "museum case.",
+        note="&#9888; Not a depiction of this chapter's narrative — a set of real, inscribed "
+             "dome-shaped weight-stones, Judahite, 8th&ndash;6th century BC, marked in the "
+             "shekel-and-gerah system this very chapter invokes. The guilt-offering ram is "
+             "priced 'in silver shekels, by the shekel of the sanctuary' (v15), and the "
+             "restitution law running through the chapter's second half assumes exactly this "
+             "kind of payment: silver weighed out on a scale, stone by stone, not coins counted "
+             "out — coined money did not yet exist in ancient Judah.",
+        note_es="&#9888; No es una representación de la narrativa de este capítulo &mdash;es un "
+                "conjunto de pesas de piedra reales, en forma de domo, inscritas, judaítas, de "
+                "los siglos VIII&ndash;VI a.C., marcadas según el sistema de siclos y geras que "
+                "este mismo capítulo invoca. El carnero de la ofrenda por la culpa se valora "
+                "&laquo;en siclos de plata, según el siclo del santuario&raquo; (v15), y la ley "
+                "de restitución que recorre la segunda mitad del capítulo supone exactamente este "
+                "tipo de pago: plata pesada en una balanza, piedra por piedra, no monedas "
+                "contadas &mdash;la moneda acuñada todavía no existía en el antiguo Judá.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:Judaean_weights._Israel_Museum,_Jerusalem.JPG",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
