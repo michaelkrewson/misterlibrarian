@@ -2938,6 +2938,14 @@ def build_verse_stubs(book, num, content):
 # the chapter heading, with painter / year / where it hangs underneath — Michael's
 # "art education along the way" (2026-07-25). See library_data.CHAPTER_ART for the
 # licence reasoning (2-D reproductions are PD-Art, unlike a photo of a 3-D object).
+# Fallback tier (2026-08-12): when no illustration depicts the chapter's own narrative
+# scene, a genuine ANCIENT artifact (an excavated Israelite/Judahite altar, a Judean
+# weight-stone, a Dead Sea Scroll fragment, etc.) is a legitimate substitute if it's
+# thematically anchored to the chapter's specific content — but the `note`/`note_es`
+# field must say plainly that it's not a narrated scene, and why it's relevant anyway
+# (same honesty standard as the exod30 furniture-plate entry below). Still "no strong
+# candidate found, ship without art" if nothing genuinely fits — see the corresponding
+# memory note for the full policy and sourcing priority order.
 _ART_REQUIRED = ("file", "title", "artist", "year", "location", "alt", "license", "source_url")
 
 
