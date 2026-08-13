@@ -56,6 +56,10 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('havdil', 'hivdil', 'הִבְדִּיל', 'hivdil',
+     "TO SEPARATE, divide, distinguish — root <em>badal</em>, one of the structural verbs of creation itself: God makes largely by separating (light from darkness, waters above from waters below, day from night, <a href=\"genesis-1.html#v4\">Genesis 1:4</a>, already on this shelf, and repeated at vv 6, 7, 14, 18). ⚠ The identical verb resurfaces, generations later, as the priesthood's own job description: Aaron is charged 'to distinguish between the holy and the common, and between the unclean and the clean' (<a href=\"leviticus-10.html#v10-10\">Leviticus 10:10</a>, already on these pages) — the same root that first ordered light from dark now ordering a nation's whole ritual life. Creation's first verb becomes the priesthood's daily one.", (1, 4)),
+    ('zarah', 'zarah', 'זָרָה', 'zarah',
+     "FOREIGN, unauthorized, illegitimate — the old sense of 'strange' (alien, not-belonging), not the modern sense (odd, peculiar). Built on a root meaning 'to turn aside, to be a stranger,' the same family that gives 'stranger' and 'estrangement' in English. It first earns real discussion on this shelf as a warning: the incense altar may burn nothing but the one recipe Jehovah specified — 'you shall offer no strange incense on it' (<a href=\"exodus-30.html#v30-9\">Exodus 30:9</a>, already on these pages), a rule with no penalty attached, just a boundary. ⚠ <a href=\"leviticus-10.html#v10-1\">Leviticus 10:1</a> (already on these pages) pays that warning off in the worst possible way: Nadab and Abihu, Aaron's own eldest sons, offer 'strange fire' (<em>esh zarah</em>) before Jehovah — the identical adjective, now naming the transgression that kills them on their first working day as priests. One boundary word, stated once as an ordinary regulation and once as the line two men actually crossed.", ('Exodus', 30, 9)),
     ('tzoim', "tzo'im", 'צֹאִים', "tzo'im", "FILTHY — one of the crudest words in Biblical Hebrew, built on a root elsewhere connected with human excrement, not ordinary dust or dirt. Every major English version softens it to 'filthy,' and this translation follows them in the main text, but the word itself is stronger than the English suggests: the high priest, whose garments Exodus required to be spotless before he could so much as enter the sanctuary, is shown in a courtroom vision dressed in something closer to waste than grime. The word appears only here in the whole Hebrew Bible with this specific form, describing Joshua's garments before the angel of Jehovah orders them removed.", ('Zechariah', 3, 3)),
     ('machalatzot', 'machalatzot', 'מַחֲלָצוֹת', 'machalatzot', "FINE ROBES — a rare word, built on a root meaning 'to strip off' or 'to change,' so literally something closer to 'a change of garments' than 'clothing' in general. It occurs only twice in the whole Hebrew Bible: here, replacing the filthy garments stripped from the high priest Joshua, and in Isaiah 3:22 (not yet on these pages), in a list of fine women's finery about to be stripped away in judgment — the same rare word doing opposite work in the two passages, clothing given in one and clothing threatened in the other.", ('Zechariah', 3, 4)),
     ('qeren', 'qeren', 'קֶרֶן', 'qeren', "A HORN — literally an animal's horn, and by extension a standing symbol of STRENGTH or POWER, especially royal or military power (a king's or a nation's horn is 'exalted'; smashing one is the ancient shorthand for humbling it). Zechariah's second vision puts four of them onstage with no names attached — 'the horns that scattered Judah, Israel, and Jerusalem' (2:2), any and every power that has broken this people, without singling one out. ⚠ Later apocalyptic ties the same image to specific empires — each of Daniel's horns corresponds to a named kingdom (Daniel 8, not yet on these pages) — a sharper, historically anchored use of the identical symbol.", ('Zechariah', 2, 1)),
@@ -5776,7 +5780,12 @@ XREFS = [
     # ---- Leviticus 9 ----
     (("Leviticus", 8, 35), ("Leviticus", 9, 1), "the seven-day confinement's own deadline — 'you shall remain at the door... for so I have been commanded' — expiring into this chapter's opening word, 'the eighth day'"),
     (("Leviticus", 8, 14), ("Leviticus", 9, 8), "the handoff Leviticus 8's own note flagged coming — Moses performing every ritual act because Aaron was not yet a priest — completed here as Aaron draws near and slaughters for himself"),
+    # ---- Leviticus 10 ----
+    (("Exodus", 30, 9), ("Leviticus", 10, 1), "the identical adjective zarah, 'strange' — planted as an ordinary ban on any incense but the one prescribed recipe, paid off here as the transgression that kills Nadab and Abihu"),
+    (("Leviticus", 9, 24), ("Leviticus", 10, 2), "the identical clause, word for word — 'fire came out from before Jehovah, and consumed' — first devouring the offering in celebration, now devouring the priests themselves"),
+    (("Genesis", 1, 4), ("Leviticus", 10, 10), "the root badal, 'to separate' — creation's own first verb, God dividing light from darkness, now handed to the priesthood as its daily charge: distinguishing holy from common, unclean from clean"),
     # ---- Lamentations 3 ----
+    (("Leviticus", 10, 3), ("Lamentations", 3, 28), "the identical root damam, 'to be silent' — Aaron's one-word response to his sons' deaths, echoed generations later as formal counsel for bearing an affliction God himself has laid on a person"),
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
     (("Genesis", 3, 1), ("Revelation", 12, 9), "the first place in the whole Bible where the crafty serpent of Eden is named outright as 'the Devil and Satan' — an identification later ages simply assumed, made explicit here for the first time"),
@@ -8043,6 +8052,9 @@ CHRON_CHAPTERS = {
     "lev9": dict(era="exodus",
                  when="The eighth day — the confinement of Leviticus 8 has just ended, and the priesthood begins working for real. Aaron offers a sin-offering and burnt-offering for himself, then the same for the whole congregation, twice performing the rituals Moses alone performed on his behalf a week earlier. Aaron blesses the people; he and Moses bless them again together; and fire comes out from before Jehovah and consumes the offering while the whole nation watches, shouting for joy and falling on their faces.",
                  clock="The very next day after Leviticus 8's own seven-day confinement closes — still inside the same short window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages). A single day's events, narrated start to finish, with no internal Masoretic paragraph break separating it from what follows."),
+    "lev10": dict(era="exodus",
+                  when="Still the eighth day of Leviticus 9 — the celebration that just consumed an offering in fire now, within two verses, consumes two of Aaron's own sons instead. Nadab and Abihu offer strange fire and are killed on the spot; Moses answers with a citation, Aaron with silence; kinsmen carry the bodies out while the working priests are forbidden the ordinary marks of grief; and Jehovah speaks to Aaron directly, banning wine and charging the priesthood to distinguish holy from common. The day ends in a quiet dispute over an uneaten offering, and Aaron's own defense of his surviving sons.",
+                  clock="No time has passed since Leviticus 9's own events — the chapter opens with no date marker at all, picking up mid-scene on the same eighth day. Still inside the same short window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -13875,6 +13887,31 @@ DICTIONARY_ES = {
         "no en estas páginas), sin ofrenda, sin expiación ofrecida. Toda la arquitectura de "
         "Levítico 4 descansa sobre esta única distinción: el error puede traerse al altar; el "
         "desafío no."),
+    # ---- Levítico 10 ----
+    "havdil": ("hivdil",
+        "SEPARAR, dividir, distinguir —raíz badal, uno de los verbos estructurales de la "
+        "creación misma: Dios crea en gran parte separando (la luz de las tinieblas, las "
+        "aguas de arriba de las aguas de abajo, el día de la noche, Génesis 1:4, ya en este "
+        "estante, y repetido en los vv. 6, 7, 14, 18). ⚠ El mismo verbo idéntico reaparece, "
+        "generaciones después, como la propia descripción del trabajo sacerdotal: a Aarón se "
+        "le encarga 'distinguir entre lo santo y lo común, y entre lo impuro y lo puro' "
+        "(Levítico 10:10, ya en estas páginas) —la misma raíz que primero ordenó la luz de "
+        "la oscuridad ahora ordena toda la vida ritual de una nación. El primer verbo de la "
+        "creación se convierte en el verbo diario del sacerdocio."),
+    "zarah": ("zarah",
+        "EXTRAÑO, no autorizado, ilegítimo —el sentido antiguo de 'extraño' (ajeno, que no "
+        "pertenece), no el sentido moderno (raro, curioso). Se construye sobre una raíz que "
+        "significa 'apartarse, ser forastero', la misma familia que da 'extranjero' y "
+        "'extrañeza' en español. Su primera discusión sustancial en estas páginas es una "
+        "advertencia: el altar del incienso no puede quemar más que la única receta que "
+        "Jehová especificó —'no ofreceréis sobre él incienso extraño' (Éxodo 30:9, ya en "
+        "estas páginas), una regla sin castigo señalado, solo un límite. ⚠ Levítico 10:1 (ya "
+        "en estas páginas) cobra esa advertencia de la peor manera posible: Nadab y Abiú, los "
+        "propios hijos mayores de Aarón, ofrecen 'fuego extraño' (esh zarah) delante de "
+        "Jehová —el mismo adjetivo idéntico, ahora nombrando la transgresión que los mata en "
+        "su primer día de trabajo como sacerdotes. Una sola palabra de límite, dicha una vez "
+        "como regulación ordinaria y una vez como la línea que dos hombres realmente "
+        "cruzaron."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15632,6 +15669,45 @@ CHAPTER_ART = {
                 "por todos a la vez.",
         license="CC BY-SA 3.0",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_523._Burnt_offering_consumed._Leviticus_cap_9_v_24._Sperling.jpg",
+    )],
+    "lev10": [dict(
+        file="lev10-marillier-nadab-abihu.jpg",
+        title="Nadab and Abihu Destroyed",
+        title_es="Nadab y Abiú destruidos",
+        artist="Engraving after Clément-Pierre Marillier",
+        artist_es="Grabado según Clément-Pierre Marillier",
+        year="c. 1789–1804",
+        location="Phillip Medhurst Collection, St. George's Court, Kidderminster",
+        location_es="Colección Phillip Medhurst, St. George's Court, Kidderminster",
+        alt="A black-and-white engraving of a diagonal shaft of fire striking down from the upper "
+            "right onto a group of robed priestly figures. One man in a turban falls backward, his "
+            "censer dropping to the floor beside him; a second figure collapses forward. Others "
+            "recoil with hands and arms raised in horror. A seven-branched menorah is visible in the "
+            "background at left, and a dark, shadowed figure stands apart at the right edge of the "
+            "scene.",
+        note="The moment of vv1&ndash;2 itself: fire striking down the instant the strange fire is "
+             "offered, one priestly figure already falling with his censer knocked loose, the other "
+             "still reeling &mdash; an engraving after Clément-Pierre Marillier (1740&ndash;1808), "
+             "one of 252 illustrations he made for an illustrated edition of the Sainte Bible "
+             "(Lemaistre de Sacy's French translation) published in Paris around the turn of the 19th "
+             "century, now held in the Phillip Medhurst Collection. Unlike the wide, crowd-filled scene <a href=\"leviticus-9.html\">Leviticus 9's own art</a> (already on these pages) uses for the celebration one chapter earlier, Marillier frames this moment tight and "
+             "close &mdash; the menorah just visible behind them is the only clue this is even happening "
+             "inside the sanctuary at all, which is exactly how fast and how privately the text says it "
+             "happened.",
+        note_es="El momento mismo de los vv1&ndash;2: el fuego que cae en el instante en que se ofrece "
+                "el fuego extraño, una figura sacerdotal que ya cae con su incensario desprendido, la "
+                "otra todavía tambaleándose &mdash;un grabado según Clément-Pierre Marillier "
+                "(1740&ndash;1808), una de las 252 ilustraciones que hizo para una edición ilustrada de "
+                "la Sainte Bible (la traducción francesa de Lemaistre de Sacy) publicada en París "
+                "hacia el cambio del siglo XIX, conservada hoy en la Colección Phillip Medhurst. A "
+                "diferencia de la escena amplia y llena de multitud que usa el arte propio de "
+                "Levítico 9 (ya en estas páginas) para la celebración un capítulo antes, Marillier "
+                "enmarca este momento de cerca y ajustado "
+                "&mdash;la menorah apenas visible detrás de ellos es la única pista de que esto "
+                "siquiera está sucediendo dentro del santuario, que es exactamente cuán rápido y "
+                "cuán privadamente dice el texto que sucedió.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_528._Nadab_and_Abihu_destroyed._Leviticus_cap_10_vv_1-2._Marillier.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
