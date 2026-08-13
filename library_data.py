@@ -1073,7 +1073,7 @@ DICTIONARY = [
     ("ofan", "ofan / ofannim", "אוֹפַן / אוֹפַנִּים", "ofan / ofannim",
      "WHEEL — the wheels beside the living creatures in Ezekiel 1, gleaming like beryl, 'a wheel within a wheel,' their rims full of eyes, moving wherever the spirit goes. Ordinary Hebrew for a cart-wheel; later Jewish angelology promoted the OPHANIM into an order of angels ranked with the cherubim and seraphim — celestial beings that began as furniture in this vision.", ("Ezekiel", 1, 15)),
     ("kavod", "kavod", "כָּבוֹד", "kavod",
-     "GLORY — and literally WEIGHT. Built on kaved, 'heavy' (the same root behind 'honor,' which is treating a person as weighty, and behind Pharaoh's HEAVY heart). God's glory is his weight, his sheer mattering. In Ezekiel the kavod is not an abstraction but a character in the plot: seen first in exile by the Chebar canal (1:28), watched LEAVING the temple in chapters 10-11, and watched returning in chapter 43. ⚠ The word's first request comes centuries earlier, and it is refused as much as it is granted: Moses asks to see it outright, and is shown only goodness, a name, and a retreating back — the kavod passing by too great to survive facing (<a href=\"exodus-33.html#v33-18\">Exodus 33:18</a>–23, already on these pages).", ("Ezekiel", 1, 28)),
+     "GLORY — and literally WEIGHT. Built on kaved, 'heavy' (the same root behind 'honor,' which is treating a person as weighty, and behind Pharaoh's HEAVY heart). Its first appearance in the whole Bible is almost domestic: 'in the morning you shall see the glory of Jehovah' (<a href=\"exodus-16.html#v16-7\">Exodus 16:7</a>, already on these pages), a promise about the coming manna, answered a few verses later when the glory itself appears in the cloud (16:10) — no fire, no vision, just a presence made visible to answer a complaint about food. In Ezekiel the kavod becomes something far larger: not an abstraction but a character in the plot, seen first in that book by the Chebar canal in exile (1:28), watched LEAVING the temple in chapters 10-11, and watched returning in chapter 43. ⚠ Its most dramatic request comes earlier still: Moses asks to see it outright, and is shown only goodness, a name, and a retreating back — the kavod passing by too great to survive facing (<a href=\"exodus-33.html#v33-18\">Exodus 33:18</a>–23, already on these pages).", ("Exodus", 16, 7)),
     ("merkavah", "merkavah", "מֶרְכָּבָה", "merkavah",
      "CHARIOT — the name readers gave Ezekiel 1, though the word never appears in the chapter. Ma'aseh Merkavah, 'the Work of the Chariot,' is the oldest strand of Jewish mysticism, and the Mishnah restricts it as it restricts nothing else: it may not be expounded even to a single student unless he is wise and understands of his own knowledge (Hagigah 2:1).", ("Ezekiel", 1, 15)),
     ("chinnam", "chinnam", "חִנָּם", "chinnam",
@@ -5773,6 +5773,9 @@ XREFS = [
     (("Exodus", 29, 1), ("Leviticus", 8, 5), "the identical opening formula — 'this is the thing' — spoken fifteen chapters apart: once as instruction on the mountain, once as public announcement at the moment it is finally carried out"),
     (("Exodus", 29, 20), ("Leviticus", 8, 23), "the same unrepeated blood rite, commanded and then performed word for word — the tip of the right ear, the thumb of the right hand, the big toe of the right foot"),
     (("Exodus", 39, 43), ("Leviticus", 8, 36), "the identical closing formula — 'as Jehovah had commanded, so they did' — sealing the tabernacle's own construction and, one book later, the priesthood built to serve inside it"),
+    # ---- Leviticus 9 ----
+    (("Leviticus", 8, 35), ("Leviticus", 9, 1), "the seven-day confinement's own deadline — 'you shall remain at the door... for so I have been commanded' — expiring into this chapter's opening word, 'the eighth day'"),
+    (("Leviticus", 8, 14), ("Leviticus", 9, 8), "the handoff Leviticus 8's own note flagged coming — Moses performing every ritual act because Aaron was not yet a priest — completed here as Aaron draws near and slaughters for himself"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -8037,6 +8040,9 @@ CHRON_CHAPTERS = {
     "lev8": dict(era="exodus",
                  when="Aaron and his sons are washed, vested, and anointed — the tabernacle itself anointed first, the men second; the sin-offering bull and burnt-offering ram enact laws already given but never yet performed; the second ram, the ram of consecration, seals ear, thumb, and toe with blood before filling Aaron's own open hands with the offering itself. The whole congregation watches. The priesthood does not yet begin serving — that waits seven more days, confined at the tabernacle door.",
                  clock="Within the same roughly one-month window as ch. 1-7 — after the tabernacle's completion on the first day of the first month of year two (Exodus 40:17, already on these pages) and before the census that opens Numbers, dated the first day of the SECOND month of the same year (Numbers 1:1, already on these pages). Unlike the law-giving of Leviticus 1-7, this chapter narrates an actual event with its own duration: the seven-day confinement it commands (v33, v35) consumes real days from within that same short window."),
+    "lev9": dict(era="exodus",
+                 when="The eighth day — the confinement of Leviticus 8 has just ended, and the priesthood begins working for real. Aaron offers a sin-offering and burnt-offering for himself, then the same for the whole congregation, twice performing the rituals Moses alone performed on his behalf a week earlier. Aaron blesses the people; he and Moses bless them again together; and fire comes out from before Jehovah and consumes the offering while the whole nation watches, shouting for joy and falling on their faces.",
+                 clock="The very next day after Leviticus 8's own seven-day confinement closes — still inside the same short window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages). A single day's events, narrated start to finish, with no internal Masoretic paragraph break separating it from what follows."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -11890,15 +11896,20 @@ DICTIONARY_ES = {
         "mantiene la misma palabra, pero señala la raíz dondequiera que el texto mismo juega con ella."),
     "kavod": ("kavod",
         "GLORIA —y literalmente PESO. Construida sobre kaved, 'pesado' (la misma raíz detrás de "
-        "'honrar', que es tratar a una persona como algo que PESA). En Ezequiel el kavod no es una "
-        "abstracción sino un personaje en la trama: visto primero en el exilio junto al río Quebar "
+        "'honrar', que es tratar a una persona como algo que PESA). Su primera aparición en toda la "
+        "Biblia es casi doméstica: 'por la mañana veréis la gloria de Jehová' (<a "
+        "href=\"exodus-16.es.html#v16-7\">Éxodo 16:7</a>, ya en estas páginas), una promesa sobre el "
+        "maná que vendría, cumplida unos versículos después cuando la gloria misma aparece en la nube "
+        "(16:10) —sin fuego, sin visión, solo una presencia hecha visible para responder a una queja "
+        "sobre la comida. En Ezequiel el kavod se vuelve algo mucho más grande: no una abstracción "
+        "sino un personaje en la trama, visto primero en ese libro junto al río Quebar, en el exilio "
         "(1:28), visto SALIENDO del templo en los capítulos 10-11, y visto regresando en el 43. En "
         "Éxodo 28:2 la misma palabra se aplica, sorprendentemente, a la ROPA —las vestiduras de Aarón "
         "son 'para gloria y para hermosura'—; Éxodo 29:43 (ya en estas páginas) invierte el contraste: "
         "la tienda de reunión se santifica 'por mi gloria', la presencia misma de Dios, no una gloria "
-        "prestada. ⚠ La primera petición de la palabra llega siglos antes, y se niega tanto como se "
-        "concede: Moisés pide verla directamente, y solo se le muestra bondad, un nombre, y una "
-        "espalda que se aleja —el kavod que pasa, demasiado grande para sostener la mirada "
+        "prestada. ⚠ Su petición más dramática llega antes: Moisés pide verla directamente, y solo se "
+        "le muestra bondad, un nombre, y una espalda que se aleja —el kavod que pasa, demasiado "
+        "grande para sostener la mirada "
         "(<a href=\"exodus-33.es.html#v33-18\">Éxodo 33:18</a>–23, ya en estas páginas)."),
     "nasa-rosh": ("nasa rosh",
         "LEVANTAR LA CABEZA —un modismo cortesano para distinguir a un hombre entre la multitud: "
@@ -15586,6 +15597,41 @@ CHAPTER_ART = {
                 "su desarrollo completo.",
         license="CC BY-SA 3.0",
         source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_519._Moses_consecrating_Aaron_and_his_sons._Leviticus_cap_8_vv_1-12._Marillier.jpg",
+    )],
+    "lev9": [dict(
+        file="lev9-medhurst-fire-consumed.jpg",
+        title="The Fire Consumes the Burnt Offering",
+        title_es="El fuego consume el holocausto",
+        artist="Engraving by Catharina Sperling, from Scheuchzer's Physica Sacra",
+        artist_es="Grabado de Catharina Sperling, de la Physica Sacra de Scheuchzer",
+        year="1731",
+        location="Phillip Medhurst Collection, St. George's Court, Kidderminster",
+        location_es="Colección Phillip Medhurst, St. George's Court, Kidderminster",
+        alt="A black-and-white engraving of a massive fire rising in tiers from a large stepped altar, "
+            "billowing dark smoke into a sky crossed by rays of light. A large crowd fills the "
+            "foreground below the altar, many with arms raised, some kneeling, gathered on both "
+            "sides and facing the blaze.",
+        note="The exact moment of v24: fire coming out from before Jehovah and consuming the burnt "
+             "offering on the altar, while the whole congregation watches, shouts for joy, and falls "
+             "on its face — an engraving by Catharina Sperling, one of the named engravers behind "
+             "Johann Jakob Scheuchzer's 1731 \"Physica Sacra\" (the \"Kupfer-Bibel,\" or Copper Bible), "
+             "now held in the Phillip Medhurst Collection. The rays of light behind the smoke and the "
+             "crowd's raised arms are the engraver's own reading of the scene, not the plain text — but "
+             "the towering, tiered flame and the mass of onlookers below it capture something the "
+             "chapter's own spare prose only states, never shows: that this was witnessed by everyone "
+             "at once.",
+        note_es="El momento exacto del v24: el fuego que sale de delante de Jehová y consume el "
+                "holocausto sobre el altar, mientras toda la congregación observa, grita de júbilo, y "
+                "cae sobre su rostro &mdash;un grabado de Catharina Sperling, una de las grabadoras "
+                "nombradas detrás de la \"Physica Sacra\" de 1731 de Johann Jakob Scheuchzer (la "
+                "\"Kupfer-Bibel\", o Biblia de Cobre), conservada hoy en la Colección Phillip Medhurst. "
+                "Los rayos de luz detrás del humo y los brazos alzados de la multitud son la propia "
+                "lectura de la grabadora sobre la escena, no el texto llano &mdash;pero la llama "
+                "escalonada y elevada, y la masa de espectadores debajo de ella, capturan algo que la "
+                "prosa escueta de este capítulo solo declara, nunca muestra: que esto fue presenciado "
+                "por todos a la vez.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_523._Burnt_offering_consumed._Leviticus_cap_9_v_24._Sperling.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
