@@ -3430,6 +3430,69 @@ ENCYCLOPEDIA = [
          refs=[("Exodus", 20, 1), ("Numbers", 1, 1), ("Numbers", 1, 19)], videos=[]),
     dict(slug="tabernacle", name="The Tabernacle",
          kind="place", aliases=["tent of meeting", "Tent of Meeting"],
+         # Both engravings are 18th/early-19th-century and long out of copyright, but
+         # the Phillip Medhurst Collection's own DIGITIZATION is uploaded to Wikimedia
+         # Commons under CC BY-SA 3.0 (verified on each file's own Commons page) --
+         # the same license used for this project's Leviticus 1/3 chapter art, so the
+         # credit line follows that convention rather than "public domain." Web copies
+         # (resized to 1000px on the long side) committed to img/ency/; NOT archived to
+         # S3 blobs/entry_images/ this session (no S3 access available) -- a gap, not a
+         # decision; do that the next time a session here has it.
+         images=[
+             dict(
+                 file="tabernacle-gunst-raising.jpg",
+                 alt="An 18th-century Dutch engraving of the tabernacle's gold-plated wooden frame and "
+                     "goats'-hair curtain being raised, with pillars marking the Holy Place and Holy of "
+                     "Holies and workers pegging the outer curtain into the ground.",
+                 caption="<strong>Raising the tabernacle</strong> — an engraving by Pieter van Gunst "
+                         "(Amsterdam, c. 1700), from the same Dutch illustrated-Bible tradition as "
+                         "Pieter Mortier's <em>Historie des Ouden en Nieuwen Testaments</em>. The Dutch "
+                         "labels read: A, <em>Het Heilige</em> ('the Holy Place'); B, <em>Het Heilige der "
+                         "Heilige</em> ('the Holy of Holies'); C, the gold-plated boards (<em>berderen</em>) "
+                         "of the tabernacle; D, their silver sockets (<em>voetstuk</em>) — Exodus 26's "
+                         "building instructions rendered as an actual construction scene.",
+                 caption_es="<strong>Erigiendo el tabernáculo</strong> — un grabado de Pieter van Gunst "
+                            "(Ámsterdam, c. 1700), de la misma tradición de Biblias ilustradas holandesas "
+                            "que la <em>Historie des Ouden en Nieuwen Testaments</em> de Pieter Mortier. "
+                            "Las etiquetas en holandés dicen: A, <em>Het Heilige</em> ('el Lugar Santo'); "
+                            "B, <em>Het Heilige der Heilige</em> ('el Lugar Santísimo'); C, las tablas "
+                            "enchapadas en oro (<em>berderen</em>) del tabernáculo; D, sus basas de plata "
+                            "(<em>voetstuk</em>) — las instrucciones de construcción de Éxodo 26 convertidas "
+                            "en una escena real de construcción.",
+                 credit="Pieter van Gunst, engraving, via the Phillip Medhurst Collection",
+                 credit_es="Pieter van Gunst, grabado, vía la Colección Phillip Medhurst",
+                 license="CC BY-SA 3.0",
+                 license_es="CC BY-SA 3.0",
+                 license_url="https://creativecommons.org/licenses/by-sa/3.0/",
+                 source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_491._Raising_the_tabernacle._Exodus_40_v_18._Gunst.jpg",
+                 source_name="Wikimedia Commons",
+             ),
+             dict(
+                 file="tabernacle-neagle-interior.jpg",
+                 alt="An engraving of a cutaway interior of the tabernacle, showing the seven-branched "
+                     "menorah, the altar of incense, the table of showbread, and the veil parted to "
+                     "reveal the Holy of Holies with a cloud.",
+                 caption="<strong>The inside of the tabernacle</strong>, engraved by James Neagle "
+                         "(printed for Samuel Bagster, Strand, London, early 19th century) — the "
+                         "covering of the outer pillars is folded back to expose the Holy Place, where "
+                         "the menorah, the altar of incense, and the table of showbread stand; the veil "
+                         "at the center is lifted to reveal the Holy of Holies, where the ark rested "
+                         "beneath the cloud of glory.",
+                 caption_es="<strong>El interior del tabernáculo</strong>, grabado por James Neagle "
+                            "(impreso para Samuel Bagster, Strand, Londres, principios del siglo XIX) "
+                            "— la cubierta de los pilares exteriores se aparta para mostrar el Lugar "
+                            "Santo, donde están el candelabro de siete brazos, el altar del incienso y "
+                            "la mesa de los panes de la proposición; el velo del centro se levanta para "
+                            "revelar el Lugar Santísimo, donde reposaba el arca bajo la nube de gloria.",
+                 credit="James Neagle, engraving, via the Phillip Medhurst Collection",
+                 credit_es="James Neagle, grabado, vía la Colección Phillip Medhurst",
+                 license="CC BY-SA 3.0",
+                 license_es="CC BY-SA 3.0",
+                 license_url="https://creativecommons.org/licenses/by-sa/3.0/",
+                 source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_496._Inside_the_tabernacle._Exodus_40._Neagle.jpg",
+                 source_name="Wikimedia Commons",
+             ),
+         ],
          desc="The portable sanctuary Israel built at Sinai and carried through the wilderness — a curtained "
               "tent within a courtyard, God's dwelling in the midst of the camp. Hebrew has two names for it: "
               "the MISHKAN, 'dwelling-place' (from shakhan, 'to dwell'), and the OHEL MO'ED, the 'tent of "
