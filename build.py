@@ -2947,9 +2947,14 @@ def build_verse_stubs(book, num, content):
 # weight-stone, a Dead Sea Scroll fragment, etc.) is a legitimate substitute if it's
 # thematically anchored to the chapter's specific content — but the `note`/`note_es`
 # field must say plainly that it's not a narrated scene, and why it's relevant anyway
-# (same honesty standard as the exod30 furniture-plate entry below). Still "no strong
-# candidate found, ship without art" if nothing genuinely fits — see the corresponding
-# memory note for the full policy and sourcing priority order.
+# (same honesty standard as the exod30 furniture-plate entry below). "Ancient" is a
+# PREFERENCE within this tier, not a hard requirement: genuine MODERN JEWISH practice
+# (e.g. a documented 20th-century photo of actual Jewish material culture, not a generic
+# regional ethnographic parallel from a different community) is a legitimate rung below
+# ancient-artifact and above shipping nothing — see lev7's own tabun-bread entry below.
+# Still "no strong candidate found, ship without art" if nothing genuinely fits — see the
+# corresponding memory note for the full priority order (illustration > ancient > modern
+# Jewish > nothing).
 _ART_REQUIRED = ("file", "title", "artist", "year", "location", "alt", "license", "source_url")
 
 

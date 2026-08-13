@@ -15506,6 +15506,43 @@ CHAPTER_ART = {
         license="CC BY-SA 3.0",
         source_url="https://commons.wikimedia.org/wiki/File:Clay_cokking_pot_Iron_age_02.jpg",
     )],
+    "lev7": [dict(
+        file="lev7-lachish-tabun-bread.jpg",
+        title="Baking Bread in a Tabun Oven, Moshav Lachish",
+        title_es="Horneando pan en un horno tabun, Moshav Lajish",
+        artist="Photograph by Boris Carmi, National Library of Israel",
+        artist_es="Fotografía de Boris Carmi, Biblioteca Nacional de Israel",
+        year="1958",
+        location="National Library of Israel, Meitar Collection",
+        location_es="Biblioteca Nacional de Israel, Colección Meitar",
+        alt="A black-and-white photograph of an elderly bearded man in traditional dress, kneeling "
+            "beside a dome-shaped clay oven built over an open fire, tending it with a stick. Two "
+            "round loaves of fresh flatbread rest on a cloth in front of the oven; a group of "
+            "children stand watching behind him.",
+        note="&#9888; Not ancient, and not a depiction of this chapter's narrative — a real "
+             "photograph of Moroccan-Jewish immigrants baking bread at Moshav Lachish in 1958, "
+             "shown here because it is genuinely Jewish practice, not because it is old. The "
+             "thanksgiving offering this chapter legislates (v12-15) came bundled with its own "
+             "baked bread — unleavened cakes AND, uniquely, leavened loaves too — and this tabun, "
+             "a clay oven built the same basic way for thousands of years across the region, is "
+             "the closest thing to a living picture of that baking this project could honestly "
+             "find. The site's own preference is for ancient material where it exists; here, it "
+             "did not, and modern Jewish practice was judged worth showing rather than nothing "
+             "at all.",
+        note_es="&#9888; No es antigua, y no es una representación de la narrativa de este "
+                "capítulo &mdash;una fotografía real de inmigrantes judíos marroquíes horneando "
+                "pan en Moshav Lajish en 1958, mostrada aquí porque es práctica judía genuina, no "
+                "porque sea antigua. La ofrenda de acción de gracias que este capítulo legisla "
+                "(v12-15) venía acompañada de su propio pan horneado &mdash;tortas sin levadura Y, "
+                "de manera única, panes leudados también&mdash; y este tabun, un horno de barro "
+                "construido de la misma manera básica durante miles de años en toda la región, es "
+                "lo más cercano a una imagen viva de ese horneado que este proyecto pudo encontrar "
+                "honestamente. La preferencia propia del sitio es por material antiguo donde "
+                "exista; aquí no lo hubo, y se juzgó que la práctica judía moderna merecía "
+                "mostrarse en vez de nada en absoluto.",
+        license="CC BY 4.0",
+        source_url="https://commons.wikimedia.org/wiki/File:Lachish_(997009323500805171.jpg",
+    )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
         title="The Vision of the Four Horns and the Four Craftsmen",
