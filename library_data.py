@@ -417,7 +417,7 @@ DICTIONARY = [
     ("urim-thummim", "Urim and Thummim", "אוּרִים וְתֻמִּים", "Urim v'Thummim",
      "Two objects placed inside the high priest's breastplate (28:30) and never once described — no shape, no material, no instructions for use, in a chapter otherwise obsessed with exact specification. The names likely mean something like 'lights' and 'perfections' or 'truth,' though even that etymology is genuinely uncertain; how the objects actually functioned — cast like lots, or read by some other sign — is a question ancient rabbinic sources already confessed they could not answer with confidence. Every major English version transliterates rather than translates both words — the rare point where the whole shelf agrees, by declining to guess.", ("Exodus", 28, 30)),
     ("millu-yad", "mille et-yadam", "מִלֵּא אֶת־יָדָם", "mille et-yadam",
-     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him. Exodus 29 (already on these pages) confirms it directly: the verb fires four more times at the ordination itself (29:9, 29, 33, 35), and its noun form — eil ha-millu'im, literally 'the ram OF FILLING' — becomes that chapter's own standing name for the ordination sacrifice (29:22, 26, 27, 31, 34), the priest's own portion pressed into his palms before it is burned (29:24). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' (and, for the noun, 'ram of consecration'/'ram of ordination') — none keeps the image of a hand being FILLED. This translation renders every occurrence literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction. ⚠ The idiom returns once more, in a radically different key: after the golden calf, Moses tells the Levites to 'FILL YOUR HAND today to Jehovah' (<a href=\"exodus-32.html#v32-29\">Exodus 32:29</a>, already on these pages) — the identical phrase, but shouted as a command across a camp still littered with the dead, not performed as a robed ceremony with anointing oil. Aaron's line is ordained by ritual; the Levites are ordained by what they were willing to do.", ("Exodus", 28, 41)),
+     "FILL THEIR HAND — the standard Hebrew idiom for ordination to priestly office (28:41), almost certainly referring to a priest receiving his own physical portion of the sacrifice that installs him. Exodus 29 (already on these pages) confirms it directly: the verb fires four more times at the ordination itself (29:9, 29, 33, 35), and its noun form — eil ha-millu'im, literally 'the ram OF FILLING' — becomes that chapter's own standing name for the ordination sacrifice (29:22, 26, 27, 31, 34), the priest's own portion pressed into his palms before it is burned (29:24). Every major English version translates the idiom away — KJV/ASV 'consecrate them,' NIV/NASB/ESV 'ordain them' (and, for the noun, 'ram of consecration'/'ram of ordination') — none keeps the image of a hand being FILLED. This translation renders every occurrence literally, in the same spirit as 'side' over 'rib' at Genesis 2: a vivid physical idiom the whole shelf has quietly smoothed into abstraction. ⚠ The idiom returns once more, in a radically different key: after the golden calf, Moses tells the Levites to 'FILL YOUR HAND today to Jehovah' (<a href=\"exodus-32.html#v32-29\">Exodus 32:29</a>, already on these pages) — the identical phrase, but shouted as a command across a camp still littered with the dead, not performed as a robed ceremony with anointing oil. Aaron's line is ordained by ritual; the Levites are ordained by what they were willing to do. The whole idiom finally gets its narrative payoff at <a href=\"leviticus-8.html#v8-22\">Leviticus 8:22-29</a> (already on these pages), where the ram of filling is actually slaughtered and the raw fat and bread are placed directly on Aaron's own open palms — the hand, quite literally, filled.", ("Exodus", 28, 41)),
     ("terumah", "terumah", "תְּרוּמָה", "terumah",
      "A LIFTING-OUT, contribution — from a root meaning to lift or raise; not a physical hoisting so much as a portion formally SET ASIDE, singled out from a larger whole for a specific recipient. First named for the freewill materials Israel gives to build the tabernacle itself — 'that they take for me a terumah' (Exodus 25:2, already on these pages) — every household's gift lifted out of ordinary use and set toward something holy. The word narrows to a specific ritual gesture at the ordination ceremony, where the ram's own thigh is lifted out for the priests specifically (Exodus 29:27-28, already on these pages), paired there with tenufah, 'waving' — two distinct priestly gestures for two distinct portions, the breast waved and the thigh lifted out. ⚠ Leviticus 7:32-34 makes this the ordinary, permanent rule for every peace-offering afterward, not a one-time ordination gift: the right thigh always belongs to the officiating priest, 'a due forever.'", ("Exodus", 25, 2)),
     ("tenufah", "tenufah", "תְּנוּפָה", "tenufah",
@@ -5768,7 +5768,11 @@ XREFS = [
     (("Leviticus", 6, 6), ("Leviticus", 9, 24), "the fire commanded never to go out has to start somewhere — an answer this book itself supplies eleven verses later, not yet on these pages: fire that comes out from before Jehovah and consumes the first offering on the newly-dedicated altar"),
     # ---- Leviticus 7 ----
     (("Leviticus", 7, 18), ("Leviticus", 19, 7), "the identical law almost word for word — the same third-day deadline, the same technical term, tainted meat — restated sixteen chapters later as if the peace-offering's own timing rule needed saying twice"),
-    (("Leviticus", 7, 37), ("Leviticus", 8, 1), "the colophon names a sixth offering this section never legislates, the consecration-offering — its only law is the story of the one time it was actually carried out, not yet on these pages"),
+    (("Leviticus", 7, 37), ("Leviticus", 8, 1), "the colophon names a sixth offering this section never legislates, the consecration-offering — its only law is the story of the one time it was actually carried out"),
+    # ---- Leviticus 8 ----
+    (("Exodus", 29, 1), ("Leviticus", 8, 5), "the identical opening formula — 'this is the thing' — spoken fifteen chapters apart: once as instruction on the mountain, once as public announcement at the moment it is finally carried out"),
+    (("Exodus", 29, 20), ("Leviticus", 8, 23), "the same unrepeated blood rite, commanded and then performed word for word — the tip of the right ear, the thumb of the right hand, the big toe of the right foot"),
+    (("Exodus", 39, 43), ("Leviticus", 8, 36), "the identical closing formula — 'as Jehovah had commanded, so they did' — sealing the tabernacle's own construction and, one book later, the priesthood built to serve inside it"),
     # ---- Lamentations 3 ----
     (("Job", 1, 9), ("Lamentations", 3, 52), "the identical Hebrew word chinnam, 'for nothing, without cause' — the Accuser's question about disinterested devotion, and a besieged man's charge that his enemies hunt him unearned"),
     # ---- Revelation 12 ----
@@ -8030,6 +8034,9 @@ CHRON_CHAPTERS = {
     "lev7": dict(era="exodus",
                  when="The guilt-offering's own priestly economics, the peace-offering's three occasions and three deadlines (thanksgiving eaten same-day, vow or freewill given an extra day, anything later tainted meat), the flat ban on eating fat or blood, and the two portions — breast waved, thigh contributed — permanently taxed for the priesthood. Closes with a formal colophon naming all six offerings and ending the whole seven-chapter section.",
                  clock="Same setting as ch. 1-6 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11), and its own closing colophon (v37-38) says so explicitly: commanded on Mount Sinai, in the wilderness of Sinai. Hebrew and English both run 1-38 here — no versification split, unlike Leviticus 5-6."),
+    "lev8": dict(era="exodus",
+                 when="Aaron and his sons are washed, vested, and anointed — the tabernacle itself anointed first, the men second; the sin-offering bull and burnt-offering ram enact laws already given but never yet performed; the second ram, the ram of consecration, seals ear, thumb, and toe with blood before filling Aaron's own open hands with the offering itself. The whole congregation watches. The priesthood does not yet begin serving — that waits seven more days, confined at the tabernacle door.",
+                 clock="Within the same roughly one-month window as ch. 1-7 — after the tabernacle's completion on the first day of the first month of year two (Exodus 40:17, already on these pages) and before the census that opens Numbers, dated the first day of the SECOND month of the same year (Numbers 1:1, already on these pages). Unlike the law-giving of Leviticus 1-7, this chapter narrates an actual event with its own duration: the seven-day confinement it commands (v33, v35) consumes real days from within that same short window."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -11739,7 +11746,10 @@ DICTIONARY_ES = {
         "ya en estas páginas) —la misma frase exacta, pero gritada como orden a través de un "
         "campamento todavía cubierto de muertos, no realizada como ceremonia con vestiduras y aceite "
         "de unción. El linaje de Aarón es ordenado por rito; los levitas son ordenados por lo que "
-        "estuvieron dispuestos a hacer."),
+        "estuvieron dispuestos a hacer. Todo el modismo recibe por fin su desenlace narrativo en "
+        "<a href=\"leviticus-8.es.html#v8-22\">Levítico 8:22-29</a> (ya en estas páginas), donde el carnero de llenado es realmente degollado "
+        "y la grasa cruda y el pan se colocan directamente sobre las propias palmas abiertas de "
+        "Aarón —la mano, literalmente, llenada."),
     "massekhah": ("egel massekhah",
         "UNA IMAGEN FUNDIDA o de fundición —de una raíz que significa verter metal, y la frase de dos "
         "palabras egel massekhah, 'becerro de fundición', se vuelve el nombre propio de la Torá para "
@@ -15542,6 +15552,40 @@ CHAPTER_ART = {
                 "mostrarse en vez de nada en absoluto.",
         license="CC BY 4.0",
         source_url="https://commons.wikimedia.org/wiki/File:Lachish_(997009323500805171.jpg",
+    )],
+    "lev8": [dict(
+        file="lev8-medhurst-consecration.jpg",
+        title="Moses Consecrating Aaron and His Sons",
+        title_es="Moisés consagrando a Aarón y a sus hijos",
+        artist="Engraving after Clément-Pierre Marillier, Phillip Medhurst Collection",
+        artist_es="Grabado según Clément-Pierre Marillier, Colección Phillip Medhurst",
+        year="1789",
+        location="Phillip Medhurst Collection, St. George's Court, Kidderminster",
+        location_es="Colección Phillip Medhurst, St. George's Court, Kidderminster",
+        alt="A black-and-white engraving of a bearded elderly man in flowing robes laying his hand "
+            "on a kneeling, bare-headed man beside the curtained entrance of a tent. A crowd looks "
+            "on from the left; an ox and rams stand in the foreground beside jars and a basin set "
+            "on the ground.",
+        note="Moses, at the tabernacle entrance, in the act of consecrating Aaron before the "
+             "watching congregation (v1-4) — an engraving after Clément-Pierre Marillier, made for "
+             "the 1789 de Sacy \"Sainte Bible\" and now held in the Phillip Medhurst Collection. The "
+             "ox and rams in the foreground are the chapter's own sin-offering bull and two rams; "
+             "the vessels on the ground are the oil and the basins of blood the rite requires. The "
+             "engraving stops short of the ear-thumb-toe blood rite and the filling of Aaron's "
+             "hands (v22-29) — no comparable illustration of that specific moment could be found — "
+             "so it stands here for the ceremony's opening, not its full course.",
+        note_es="Moisés, en la entrada del tabernáculo, en el acto de consagrar a Aarón ante la "
+                "congregación que observa (v1-4) &mdash;un grabado según Clément-Pierre Marillier, "
+                "hecho para la &laquo;Sainte Bible&raquo; de Sacy de 1789 y conservado hoy en la Colección "
+                "Phillip Medhurst. El buey y los carneros en primer plano son el propio toro de la "
+                "ofrenda por el pecado y los dos carneros de este capítulo; las vasijas en el suelo "
+                "son el aceite y las palanganas de sangre que exige el rito. El grabado se detiene "
+                "antes del rito de sangre en oreja-pulgar-dedo del pie y del llenado de las manos "
+                "de Aarón (v22-29) &mdash;no se pudo encontrar una ilustración comparable de ese "
+                "momento específico&mdash; así que aquí representa la apertura de la ceremonia, no "
+                "su desarrollo completo.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Phillip_Medhurst_Picture_Torah_519._Moses_consecrating_Aaron_and_his_sons._Leviticus_cap_8_vv_1-12._Marillier.jpg",
     )],
     "zechariah2": [dict(
         file="weigel-four-horns-craftsmen.jpg",
