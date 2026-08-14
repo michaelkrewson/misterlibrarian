@@ -1151,7 +1151,7 @@ DICTIONARY = [
     ("metzarim", "metzarim", "מְצָרִים", "metzarim",
      "NARROW PLACES, straits — from tsar, narrow or tight; the same root gives tsarah, 'distress,' and tsar, 'foe.' Lamentations 1:3 has Judah's pursuers overtake her 'bein ha-metzarim,' between the straits: cornered where there is no room to turn. ⚠ In later Judaism the phrase became the NAME of the three weeks of mourning between the 17th of Tammuz and the 9th of Av — the period that ends on the day this book is read aloud.", ("Lamentations", 1, 3)),
     ("niddah", "niddah / nidah", "נִדָּה", "niddah",
-     "RITUAL IMPURITY, specifically menstrual (Leviticus 15:19-24) — and by extension anything that must be kept at a distance. ⚠ Lamentations plays on it: verse 8 says Jerusalem became a nidah (from a root meaning to shake the head, so 'an object of head-shaking') and verse 17 says she became a niddah among the nations. The two words are near-identical and the poem almost certainly means both at once. The versions split badly here — KJV 'removed' at v8 and 'a menstruous woman' at v17; ASV 'an unclean thing'; NWT 'an object of disgust' — which is why this translation renders each verse as it stands and notes the play.", ("Lamentations", 1, 8)),
+     "RITUAL IMPURITY, specifically menstrual (Leviticus 15:19-24) — and by extension anything that must be kept at a distance. ⚠ The word's plainest legal use is at <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages), which twice defines a new mother's first days by comparison to it — unclean 'as in the days of her niddah' — without ever explaining the comparison, because the law it points at (Leviticus 15) is assumed known. Read there rather than in the prophets, it is what <a href=\"dictionary.html#tame\">tame</a> always is: a temporary bar on approaching the sanctuary, not a fault and not a verdict. ⚠ Lamentations then plays on it: verse 8 says Jerusalem became a nidah (from a root meaning to shake the head, so 'an object of head-shaking') and verse 17 says she became a niddah among the nations. The two words are near-identical and the poem almost certainly means both at once. The versions split badly there — KJV 'removed' at v8 and 'a menstruous woman' at v17; ASV 'an unclean thing'; NWT 'an object of disgust' — which is why this translation renders each verse as it stands and notes the play. The distance between that metaphor and the purity rule is exactly the distance this dictionary exists to show.", ("Lamentations", 1, 8)),
     ("makhov", "makh'ov", "מַכְאוֹב", "makh'ov",
      "PAIN — a body's ache, the hurt of a wound, not sadness in the abstract; from ka'av, to be in pain. It is the noun in Ecclesiastes' 'whoever adds knowledge adds pain' (1:18), the cry of Lamentations 1:12 ('is there any pain like my pain?'), and — in the plural — the phrase behind Isaiah 53:3, ish makh'ovot, 'a man of sorrows.' English versions vary it ('sorrow,' 'grief,' 'suffering'); the Hebrew is one concrete word.", ("Lamentations", 1, 12)),
     ("zenunim", "zenunim", "זְנוּנִים", "zenunim",
@@ -1585,7 +1585,7 @@ DICTIONARY = [
     ("katabole", "katabol\u0113", "\u03ba\u03b1\u03c4\u03b1\u03b2\u03bf\u03bb\u03ae", "katabol\u0113",
      "A THROWING-DOWN, and so a FOUNDING \u2014 usually in the phrase 'the foundation of the world' (Matthew 25:34, Ephesians 1:4). \u26a0 At Hebrews 11:11 it means the SOWING or depositing of seed, and that sense is what decides the verse's crux: the power received is 'for the katabole of seed', which in Greek usage describes the father's part \u2014 the real argument for reading Abraham rather than Sarah as the subject.", ("Hebrews", 11, 11)),
     ("chattat", "chatta't", "\u05d7\u05b7\u05d8\u05b8\u05bc\u05d0\u05ea", "chatta't",
-     "SIN \u2014 and literally a MISSING: the root is the ordinary verb for an arrow falling short of its mark (Judges 20:16 uses it of slingers who could NOT miss). It is the least dramatic of the Hebrew words for wrongdoing and the most common, and its very first appearance personifies it as a waiting predator: 'if you do not do well, sin is crouching at the door \u2014 its desire is for you, but you must master it' (4:7). \u26a0 The identical word is also the technical name of a SACRIFICE \u2014 Leviticus 4 gives the sin-offering (chattat) its own full law, the first of the book's two atonement sacrifices (the other, asham, 'guilt-offering', begins at Leviticus 5:14), a wordplay that chapter's own note leans on. That name is genuinely disputed: the same offering is required for ritual impurity carrying no moral fault at all (a woman after childbirth, Leviticus 12:6, not yet on these pages), which is why the modern scholar Jacob Milgrom argued for 'purification offering' instead \u2014 even NIV footnotes the alternative while keeping 'sin offering' in its main text. Psalm 51 later opens by stacking three of them that are not synonyms \u2014 pesha (rebellion, a breach of relationship), avon (guilt, the crookedness itself) and chatta't (missing) \u2014 and asks a different verb against each: wipe out, wash, cleanse.", ("Genesis", 4, 7)),
+     "SIN \u2014 and literally a MISSING: the root is the ordinary verb for an arrow falling short of its mark (Judges 20:16 uses it of slingers who could NOT miss). It is the least dramatic of the Hebrew words for wrongdoing and the most common, and its very first appearance personifies it as a waiting predator: 'if you do not do well, sin is crouching at the door \u2014 its desire is for you, but you must master it' (4:7). \u26a0 The identical word is also the technical name of a SACRIFICE \u2014 Leviticus 4 gives the sin-offering (chattat) its own full law, the first of the book's two atonement sacrifices (the other, asham, 'guilt-offering', begins at Leviticus 5:14), a wordplay that chapter's own note leans on. That name is genuinely disputed: the same offering is required for ritual impurity carrying no moral fault at all (a woman after childbirth, <a href=\"leviticus-12.html#v12-6\">Leviticus 12:6</a>, already on these pages \u2014 the case where the difficulty is sharpest, since she has done nothing wrong at all), which is why the modern scholar Jacob Milgrom argued for 'purification offering' instead \u2014 even NIV footnotes the alternative while keeping 'sin offering' in its main text. Psalm 51 later opens by stacking three of them that are not synonyms \u2014 pesha (rebellion, a breach of relationship), avon (guilt, the crookedness itself) and chatta't (missing) \u2014 and asks a different verb against each: wipe out, wash, cleanse.", ("Genesis", 4, 7)),
     ("machah", "machah", "\u05de\u05b8\u05d7\u05b8\u05d4", "machah",
      "To WIPE OUT, blot, erase \u2014 what you do to WRITING. It is used of erasing a name from under heaven (Deuteronomy 29:20), of blotting a name from a book (<a href=\"exodus-32.html#v32-32\">Exodus 32:32-33</a>, already on these pages), and of wiping a dish (2 Kings 21:13). \u26a0 That Exodus scene is the word's most startling use anywhere: Moses offers his own name to be machah'd from God's book if it will save the people, and Jehovah's answer keeps the verb but narrows its target \u2014 only the one who actually sinned will be blotted out, not a willing substitute. \u26a0 Psalm 51:3 and 51:11 both ask God to machah the speaker's rebellions, which makes the request administrative rather than emotional: cancel the entry, not feel differently about it.", ("Psalms", 51, 3)),
     ("damim", "damim", "\u05d3\u05b8\u05bc\u05de\u05b4\u05d9\u05dd", "damim",
@@ -1952,6 +1952,9 @@ DICTIONARY = [
     ("nevelah", "nevelah", "\u05e0\u05b0\u05d1\u05b5\u05dc\u05b8\u05d4", "nevelah",
      "A CARCASS \u2014 specifically an animal that died on its own rather than being slaughtered, from a root meaning to wither or fall away. It is the engine of the whole second half of <a href=\"leviticus-11.html\">Leviticus 11</a> (already on these pages): the flesh is one question, the corpse is another, and the corpse rules apply to CLEAN animals too \u2014 an ox that simply drops dead makes anyone who touches it unclean until evening (<a href=\"leviticus-11.html#v11-39\">Leviticus 11:39</a>). \u26a0 That is the quiet root of a large later structure: what makes a permitted animal edible is not only its species but the manner of its death, which is why deliberate slaughter, rather than merely finding the animal, became the requirement. The same word is used of human bodies too, and of the fallen carcass of an idol.",
      ("Leviticus", 11, 8)),
+    ("zara", "zara", "\u05d6\u05b8\u05e8\u05b7\u05e2", "zara",
+     "TO SOW \u2014 the ordinary farmer's verb, and the root behind <em>zera</em>, seed or offspring. It runs through the third day of creation, where the earth brings forth \u2018plants bearing seed\u2019 (<a href=\"genesis-1.html#v11\">Genesis 1:11</a>, already on these pages), and through the sowing-seed exemption in the purity laws (<a href=\"leviticus-11.html#v11-37\">Leviticus 11:37</a>). \u26a0 Its strangest use gives a whole Torah portion its name: <em>tazria</em>, a causative form, opens <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages) of a WOMAN \u2014 literally \u2018when a woman produces seed and bears a male.\u2019 KJV and ASV keep it (\u2018conceived seed\u2019); NIV and NWT smooth it to \u2018becomes pregnant\u2019, and on the Spanish shelf only TNM footnotes the literal sense. Keeping it puts the woman grammatically where Genesis 1 puts the earth.",
+     ("Leviticus", 12, 2)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5696,6 +5699,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 12 ----
+    (("Leviticus", 12, 8), ("Luke", 2, 24), "the concession for a mother who cannot afford a lamb \u2014 quoted, without comment, to report what the family of the Messiah actually brought to the temple"),
+    (("Genesis", 17, 12), ("Leviticus", 12, 3), "circumcision on the eighth day \u2014 commanded to Abraham centuries earlier, and dropped here as a single verse into the middle of a law about the mother, so that her uncleanness never delays the child's rite"),
+    (("Genesis", 1, 11), ("Leviticus", 12, 2), "the sowing root zara \u2014 the earth bringing forth seed-bearing plants on the third day, and the causative form tazria used, startlingly, of a woman"),
+    (("Leviticus", 4, 2), ("Leviticus", 12, 6), "the chattat, 'sin-offering' \u2014 legislated for sin through error, and required here of a woman who has committed none, which is the strongest single argument that the name means purification rather than guilt"),
     # ---- Leviticus 11 ----
     (("Leviticus", 10, 10), ("Leviticus", 11, 47), "the infinitive lehavdil, 'to distinguish' \u2014 handed to Aaron as the priesthood's job description on the day his sons died, and named one chapter later as the stated purpose of the entire clean-and-unclean code"),
     (("Genesis", 1, 10), ("Leviticus", 11, 36), "miqveh mayim, 'a gathering of water' \u2014 the phrase that named the seas on the third day, reappearing as the one thing in the food laws a carcass cannot defile, and the word later Judaism took for the ritual bath"),
@@ -8075,6 +8083,9 @@ CHRON_CHAPTERS = {
     "lev11": dict(era="exodus",
                   when="The clean and the unclean — the first law given to Moses AND Aaron together, immediately after the priesthood has been charged to tell one from the other. Two tests sort the land animals, fins and scales sort the water, twenty birds are simply listed, and locusts are carved out as the one edible insect. Then the law follows contamination into the kitchen — a clay pot smashed, an oven broken down, a spring left untouchable — and closes on the reason none of the preceding forty-three verses had given: be holy, for I am holy.",
                   clock="⚠ Undated within the chapter itself, like most of Leviticus. It carries no time marker of any kind and follows straight on from Leviticus 10 with no Masoretic break between them, so it reads as instruction given in the same Sinai window — after the tabernacle's completion (Exodus 40:17, already on these pages) and before the census that opens Numbers (Numbers 1:1, already on these pages) — but whether it belongs to the eighth day itself or simply comes next in the scroll is not something the text says."),
+    "lev12": dict(era="exodus",
+                  when="The law for a woman who has given birth: seven days unclean and thirty-three more in the blood of her purity for a son, doubled for a daughter, with the boy's circumcision on the eighth day dropped in as a single verse. At the end she brings a lamb and a bird to the tent of meeting \u2014 or, if she cannot afford the lamb, two birds, the concession Luke reports Mary and Joseph using.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus, and joined to what precedes it by subject rather than by any time marker: it applies the clean/unclean vocabulary of Leviticus 11 to a person instead of an animal. Still inside the Sinai window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages). The circumcision commandment it restates is far older, given to Abraham at Genesis 17:12 (already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -13505,7 +13516,7 @@ DICTIONARY_ES = {
     "teleioo": ("teleio\u014d", "COMPLETAR, llevar a su fin o meta \u2014 de telos. \u26a0 En Hebreos 11 aparece una sola vez, en la cl\u00e1usula final del cap\u00edtulo: Dios previ\u00f3 algo mejor 'para que no fueran COMPLETADOS aparte de nosotros'. La lista de h\u00e9roes acaba diciendo que sus h\u00e9roes no han terminado."),
     "demiourgos": ("d\u0113miourgos", "HACEDOR, artesano \u2014 literalmente el que trabaja (ergon) para el pueblo (demos). Hapax del Nuevo Testamento en Hebreos 11:10, donde Dios es el t\u00e9chnit\u0113s y d\u0113miourgos de la ciudad que Abrah\u00e1n esperaba. \u26a0 Es la palabra de PLAT\u00d3N: el Timeo hace del Demiurgo el art\u00edfice del cosmos, y los gn\u00f3sticos posteriores lo convirtieron en un poder menor y hostil. Hebreos la usa de Dios sin disculparse."),
     "katabole": ("katabol\u0113", "UN ARROJAR ABAJO, y de ah\u00ed una FUNDACI\u00d3N \u2014 normalmente en la expresi\u00f3n 'la fundaci\u00f3n del mundo'. \u26a0 En Hebreos 11:11 significa la SIEMBRA o dep\u00f3sito de simiente, y ese sentido es lo que decide el pasaje disputado del vers\u00edculo: el poder recibido es 'para la katabole de simiente', que en griego describe la parte del padre \u2014 el argumento real para leer a Abrah\u00e1n y no a Sara como sujeto."),
-    "chattat": ("chatta't", "PECADO —y literalmente un ERRAR EL BLANCO: la raíz es el verbo corriente de la flecha que se queda corta. Es la menos dramática de las palabras hebreas para el mal y la más común, y su primerísima aparición en la Biblia lo personifica como un depredador al acecho: «si no haces lo bueno, el pecado está agazapado a la puerta —su deseo es para ti, mas tú debes dominarlo» (4:7, todavía no en estas páginas en español). ⚠ La misma palabra, sin cambio, es también el nombre técnico de un SACRIFICIO —Levítico 4 le da a la ofrenda por el pecado (chattat) su propia ley completa, la primera de las dos ofrendas de expiación del libro (la otra, asham, «ofrenda por la culpa», comienza en Levítico 5:14), un juego de palabras en el que se apoya la propia nota de ese capítulo. Ese nombre es genuinamente discutido: la misma ofrenda se exige para impurezas rituales sin ninguna falta moral (una mujer después del parto, Levítico 12:6, todavía no en estas páginas), por lo cual el erudito moderno Jacob Milgrom propuso «ofrenda de purificación» en su lugar —incluso la NVI anota la alternativa en nota al pie mientras mantiene «ofrenda por el pecado» en su texto principal. El Salmo 51 abre después apilando tres que no son sinónimas —pesha (rebelión), avon (culpa, lo torcido) y chatta't (errar)— y pide un verbo distinto contra cada una: borrar, lavar, limpiar."),
+    "chattat": ("chatta't", "PECADO —y literalmente un ERRAR EL BLANCO: la raíz es el verbo corriente de la flecha que se queda corta. Es la menos dramática de las palabras hebreas para el mal y la más común, y su primerísima aparición en la Biblia lo personifica como un depredador al acecho: «si no haces lo bueno, el pecado está agazapado a la puerta —su deseo es para ti, mas tú debes dominarlo» (4:7, todavía no en estas páginas en español). ⚠ La misma palabra, sin cambio, es también el nombre técnico de un SACRIFICIO —Levítico 4 le da a la ofrenda por el pecado (chattat) su propia ley completa, la primera de las dos ofrendas de expiación del libro (la otra, asham, «ofrenda por la culpa», comienza en Levítico 5:14), un juego de palabras en el que se apoya la propia nota de ese capítulo. Ese nombre es genuinamente discutido: la misma ofrenda se exige para impurezas rituales sin ninguna falta moral (una mujer después del parto, <a href=\"leviticus-12.es.html#v12-6\">Levítico 12:6</a>, ya en estas páginas —el caso donde la dificultad es más aguda, pues ella no ha hecho nada malo), por lo cual el erudito moderno Jacob Milgrom propuso «ofrenda de purificación» en su lugar —incluso la NVI anota la alternativa en nota al pie mientras mantiene «ofrenda por el pecado» en su texto principal. El Salmo 51 abre después apilando tres que no son sinónimas —pesha (rebelión), avon (culpa, lo torcido) y chatta't (errar)— y pide un verbo distinto contra cada una: borrar, lavar, limpiar."),
     "machah": ("machah", "BORRAR, cancelar \u2014 lo que se hace con lo ESCRITO: borrar un nombre de debajo del cielo (Deuteronomio 29:20), de un libro (<a href=\"exodus-32.es.html#v32-32\">\u00c9xodo 32:32-33</a>, ya en estas p\u00e1ginas), enjugar un plato (2 Reyes 21:13). \u26a0 Esa escena de \u00c9xodo es el uso m\u00e1s asombroso de la palabra en cualquier parte: Mois\u00e9s ofrece que su propio nombre sea machah del libro de Dios si eso salva al pueblo, y la respuesta de Jehov\u00e1 conserva el verbo pero acota su blanco \u2014solo qui\u00e9n realmente pec\u00f3 ser\u00e1 borrado, no un sustituto dispuesto. \u26a0 El Salmo 51:3 y 51:11 piden a Dios que machah las rebeliones del que habla, lo que hace la petici\u00f3n administrativa antes que emocional: cancela el asiento, no sientas otra cosa."),
     "damim": ("damim", "SANGRE en PLURAL \u2014 y en hebreo el plural de sangre significa concretamente sangre DERRAMADA, y la culpa que se debe por ella. El singular dam es la sustancia; damim es el derramamiento. \u26a0 El Salmo 51:16 pide ser librado de damim, y si el encabezamiento acierta sobre la ocasi\u00f3n del salmo, la palabra hace un trabajo preciso: Ur\u00edas."),
     "yacham": ("yacham", "ESTAR CALIENTE \u2014 y de ah\u00ed, en animales, estar en celo y concebir; G\u00e9nesis 30:38-39 y 31:10 lo usan de los reba\u00f1os de Jacob. \u26a0 Es el verbo del Salmo 51:7 (castellano 51:5), 'en pecado me CONCIBI\u00d3 mi madre', y la KJV admite la rareza en su propio margen: 'Heb. ME CALENT\u00d3'. Lo que el vers\u00edculo afirma se discute de verdad; n\u00f3tese s\u00f3lo que el salmo no saca de ah\u00ed ninguna doctrina."),
@@ -14016,6 +14027,33 @@ DICTIONARY_ES = {
         "<a href=\"leviticus-11.es.html#v11-22\">Lev&iacute;tico 11:22</a> (ya en estas p&aacute;ginas) la "
         "except&uacute;a junto con otros tres nombres, raz&oacute;n por la cual la dieta de Juan el Bautista "
         "(<a href=\"mark-1.es.html\">Marcos 1:6</a>) es austera sin ser irregular."),
+# ---- Levítico 12 ----
+    "niddah": ("niddah",
+        "IMPUREZA RITUAL, espec&iacute;ficamente menstrual (Lev&iacute;tico 15:19-24) &mdash;y por extensi&oacute;n "
+        "todo lo que debe mantenerse a distancia. &#9888; Su uso legal m&aacute;s llano est&aacute; en "
+        "<a href=\"leviticus-12.es.html#v12-2\">Lev&iacute;tico 12</a> (ya en estas p&aacute;ginas), que define "
+        "dos veces los primeros d&iacute;as de una madre reciente por comparaci&oacute;n con &eacute;l "
+        "&mdash;impura &laquo;como en los d&iacute;as de su niddah&raquo;&mdash; sin explicar nunca la "
+        "comparaci&oacute;n, porque da por sabida la ley a la que apunta (Lev&iacute;tico 15, todav&iacute;a no en "
+        "estas p&aacute;ginas). Le&iacute;do ah&iacute; y no en los profetas, es lo que "
+        "<a href=\"diccionario.html#tame\">tame</a> es siempre: un impedimento temporal para acercarse al "
+        "santuario, no una falta ni un veredicto. &#9888; Lamentaciones juega con la palabra: 1:8 dice que "
+        "Jerusal&eacute;n se volvi&oacute; una <em>nidah</em> (de una ra&iacute;z que significa menear la cabeza, "
+        "as&iacute; &laquo;objeto de burla&raquo;) y 1:17 que se volvi&oacute; una <em>niddah</em> entre las "
+        "naciones. Las dos palabras son casi id&eacute;nticas y el poema casi con certeza quiere decir las dos a la "
+        "vez. La distancia entre esa met&aacute;fora y la regla de pureza es exactamente la distancia que este "
+        "diccionario existe para mostrar."),
+    "zara": ("zara",
+        "SEMBRAR &mdash;el verbo corriente del agricultor, y la ra&iacute;z detr&aacute;s de <em>zera</em>, "
+        "simiente o descendencia. Recorre el tercer d&iacute;a de la creaci&oacute;n, donde la tierra produce "
+        "&laquo;plantas que dan semilla&raquo; (<a href=\"genesis-1.es.html#v11\">G&eacute;nesis 1:11</a>, "
+        "ya en estas p&aacute;ginas), y la exenci&oacute;n de la semilla de siembra en las leyes de pureza "
+        "(<a href=\"leviticus-11.es.html#v11-37\">Lev&iacute;tico 11:37</a>). &#9888; Su uso m&aacute;s "
+        "extra&ntilde;o da nombre a toda una porci&oacute;n de la Tor&aacute;: <em>tazria</em>, una forma "
+        "causativa, abre <a href=\"leviticus-12.es.html#v12-2\">Lev&iacute;tico 12</a> (ya en estas "
+        "p&aacute;ginas) hablando de una MUJER &mdash;literalmente &laquo;cuando una mujer produce simiente y "
+        "da a luz un var&oacute;n&raquo;. RV60 y NVI imprimen ambas &laquo;conciba&raquo;; solo TNM anota el "
+        "sentido literal. Conservarlo pone a la mujer, gramaticalmente, donde G&eacute;nesis 1 pone a la tierra."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14833,6 +14871,38 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev12": [dict(
+        file="lorenzetti-presentation-temple.jpg",
+        title="The Presentation in the Temple",
+        title_es="La presentaci\u00f3n en el templo",
+        artist="Ambrogio Lorenzetti",
+        year="1342",
+        location="Uffizi Gallery, Florence",
+        location_es="Galer\u00eda Uffizi, Florencia",
+        alt="A tall gold-ground altarpiece. Under a painted Gothic temple, a priest in a mitre stands behind "
+            "an altar; a grey bird sits on the altar top by his hands. Mary, in blue and red, stands at the "
+            "left holding a white cloth; at the right an old man cradles the infant, and beyond him an elderly "
+            "woman in purple holds an inscribed scroll. Two prophets with scrolls fill the gable above.",
+        note="This chapter\u2019s last verse, painted. Lorenzetti shows the moment "
+             "<a href=\"leviticus-12.html#v12-6\">verses 6\u20138</a> legislate \u2014 and he paints the "
+             "cheaper option: there is no lamb anywhere in the panel, only the birds, one of them plainly "
+             "visible on the altar under the priest\u2019s hands. That is the offering of a family who could "
+             "not afford a lamb, which is exactly what Luke reports of this one. \u26a0 The setting is a "
+             "fourteenth-century Italian fantasy rather than a reconstruction: the temple is Gothic, the "
+             "priest wears a bishop\u2019s mitre, and the whole scene is staged in the architecture of "
+             "Lorenzetti\u2019s own Siena.",
+        note_es="El &uacute;ltimo vers&iacute;culo de este cap&iacute;tulo, pintado. Lorenzetti muestra el "
+                "momento que legislan los <a href=\"leviticus-12.es.html#v12-6\">vers&iacute;culos "
+                "6&ndash;8</a> &mdash;y pinta la opci&oacute;n barata: no hay ning&uacute;n cordero en todo "
+                "el panel, solo las aves, uno de ellos bien visible sobre el altar bajo las manos del "
+                "sacerdote. Esa es la ofrenda de una familia que no pod&iacute;a pagar un cordero, que es "
+                "exactamente lo que Lucas cuenta de esta. &#9888; El escenario es una fantas&iacute;a italiana "
+                "del siglo XIV y no una reconstrucci&oacute;n: el templo es g&oacute;tico, el sacerdote lleva "
+                "mitra de obispo, y toda la escena est&aacute; montada en la arquitectura de la Siena del "
+                "propio Lorenzetti.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Lorenzetti_Ambrogio_presentation-in-the-temple-_1342..jpg",
+    )],
     "lev11": [dict(
         file="hyrax-procavia-capensis.jpg",
         title="Rock hyrax (Procavia capensis)",
