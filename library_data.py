@@ -57,7 +57,7 @@ translation text itself at build time (see build.py).
 
 DICTIONARY = [
     ('havdil', 'hivdil', 'הִבְדִּיל', 'hivdil',
-     "TO SEPARATE, divide, distinguish — root <em>badal</em>, one of the structural verbs of creation itself: God makes largely by separating (light from darkness, waters above from waters below, day from night, <a href=\"genesis-1.html#v4\">Genesis 1:4</a>, already on this shelf, and repeated at vv 6, 7, 14, 18). ⚠ The identical verb resurfaces, generations later, as the priesthood's own job description: Aaron is charged 'to distinguish between the holy and the common, and between the unclean and the clean' (<a href=\"leviticus-10.html#v10-10\">Leviticus 10:10</a>, already on these pages) — the same root that first ordered light from dark now ordering a nation's whole ritual life. Creation's first verb becomes the priesthood's daily one.", (1, 4)),
+     "TO SEPARATE, divide, distinguish — root <em>badal</em>, one of the structural verbs of creation itself: God makes largely by separating (light from darkness, waters above from waters below, day from night, <a href=\"genesis-1.html#v4\">Genesis 1:4</a>, already on this shelf, and repeated at vv 6, 7, 14, 18). ⚠ The identical verb resurfaces, generations later, as the priesthood's own job description: Aaron is charged 'to distinguish between the holy and the common, and between the unclean and the clean' (<a href=\"leviticus-10.html#v10-10\">Leviticus 10:10</a>, already on these pages) — the same root that first ordered light from dark now ordering a nation's whole ritual life. Creation's first verb becomes the priesthood's daily one. \u26a0 One chapter further on it is named as the stated PURPOSE of an entire law: <a href=\"leviticus-11.html#v11-47\">Leviticus 11:47</a> (already on these pages) closes the whole clean-and-unclean code with this infinitive and nothing else \u2014 'to distinguish between the unclean and the clean.' The same act runs from the first day of the world to a rule about which pot to smash.", (1, 4)),
     ('zarah', 'zarah', 'זָרָה', 'zarah',
      "FOREIGN, unauthorized, illegitimate — the old sense of 'strange' (alien, not-belonging), not the modern sense (odd, peculiar). Built on a root meaning 'to turn aside, to be a stranger,' the same family that gives 'stranger' and 'estrangement' in English. It first earns real discussion on this shelf as a warning: the incense altar may burn nothing but the one recipe Jehovah specified — 'you shall offer no strange incense on it' (<a href=\"exodus-30.html#v30-9\">Exodus 30:9</a>, already on these pages), a rule with no penalty attached, just a boundary. ⚠ <a href=\"leviticus-10.html#v10-1\">Leviticus 10:1</a> (already on these pages) pays that warning off in the worst possible way: Nadab and Abihu, Aaron's own eldest sons, offer 'strange fire' (<em>esh zarah</em>) before Jehovah — the identical adjective, now naming the transgression that kills them on their first working day as priests. One boundary word, stated once as an ordinary regulation and once as the line two men actually crossed.", ('Exodus', 30, 9)),
     ('tzoim', "tzo'im", 'צֹאִים', "tzo'im", "FILTHY — one of the crudest words in Biblical Hebrew, built on a root elsewhere connected with human excrement, not ordinary dust or dirt. Every major English version softens it to 'filthy,' and this translation follows them in the main text, but the word itself is stronger than the English suggests: the high priest, whose garments Exodus required to be spotless before he could so much as enter the sanctuary, is shown in a courtroom vision dressed in something closer to waste than grime. The word appears only here in the whole Hebrew Bible with this specific form, describing Joshua's garments before the angel of Jehovah orders them removed.", ('Zechariah', 3, 3)),
@@ -249,7 +249,7 @@ DICTIONARY = [
     ("min", "min", "מִין", "min",
      "Kind, sort — a farmer's word, not a taxonomy; behind every 'of its own kind.'", (1, 11)),
     ("miqveh", "miqveh", "מִקְוֵה", "miqveh",
-     "A gathering (of water) — the word behind the seas' naming, and later Judaism's ritual bath.", (1, 10)),
+     "A gathering (of water) — the word behind the seas' naming, and later Judaism's ritual bath. \u26a0 The bridge between those two is one verse in the food laws: <a href=\"leviticus-11.html#v11-36\">Leviticus 11:36</a> (already on these pages) exempts a spring or a cistern, a miqveh mayim, from a whole chapter of contamination — the one thing a carcass cannot defile. The single item in Leviticus 11 that cannot be made unclean is the item later Judaism took as the standing means of removing uncleanness.", (1, 10)),
     ("moadim", "mo'adim", "מוֹעֲדִים", "mo'adim",
      "Appointed times — the festival-calendar word; what the sun and moon are installed to mark.", (1, 14)),
     ("nacham", "nacham", "נָחַם", "nacham",
@@ -1395,7 +1395,7 @@ DICTIONARY = [
     ("rishah", "rishah", "רִשְׁעָה", "rish'ah",
      "WICKEDNESS — the feminine abstract noun, built on the same root as rasha, 'the wicked (one),' the Psalms' standing foil for the righteous. At Zechariah 5:8 it is personified outright and given a body: 'this is Wickedness,' the angel says of the woman sealed inside the flying measuring-basket — an abstraction made small enough to shove down, seal shut, and fly out of the land entirely.", ("Zechariah", 5, 8)),
     ("chasidah", "chasidah", "חֲסִידָה", "chasidah",
-     "STORK — built directly on chesed, covenant loyalty and lovingkindness: the bird's own name means 'the pious one' or 'the kind one,' for how attentively storks are seen tending their young. Yet Torah's dietary law lists the chasidah among the UNCLEAN birds regardless (Leviticus 11:19, not yet on these pages) — its scavenging diet earning the label despite the name. At Zechariah 5:9 two women with stork-wings carry Wickedness out of the land, a bird whose own name and status disagree with each other doing the carrying.", ("Zechariah", 5, 9)),
+     "STORK — built directly on chesed, covenant loyalty and lovingkindness: the bird's own name means 'the pious one' or 'the kind one,' for how attentively storks are seen tending their young. Yet Torah's dietary law lists the chasidah among the UNCLEAN birds regardless (<a href=\"leviticus-11.html#v11-19\">Leviticus 11:19</a>, already on these pages) — its scavenging diet earning the label despite the name. At Zechariah 5:9 two women with stork-wings carry Wickedness out of the land, a bird whose own name and status disagree with each other doing the carrying.", ("Zechariah", 5, 9)),
     # ---- Zechariah 4 (Hebrew) ----
     ("gullah", "gullah", "גֻּלָּה", "gullah",
      "A BOWL — specifically the reservoir bowl set atop Zechariah's vision-lampstand, feeding oil down through pipes to its seven lamps (4:2-3) — a gravity-fed design with no human hand shown refilling it, unlike the tabernacle menorah of Exodus 25 (not yet on these pages), which the priests topped up by hand every evening. The same root elsewhere names a natural spring or basin (Achsah's request for gullot mayim, 'springs of water,' Joshua 15:19) — the image throughout is a self-replenishing source, not a static container.", ("Zechariah", 4, 2)),
@@ -1940,6 +1940,18 @@ DICTIONARY = [
      "far side of the identical phrase, one family's crisis becoming, in a later book, "
      "everyone's.",
      ("Jeremiah", 30, 7)),
+    ("tame", "tame", "\u05d8\u05b8\u05de\u05b5\u05d0", "tame",
+     "UNCLEAN \u2014 and almost everything an English reader hears in that word is wrong. It is not dirt, not sin, and not a judgement on anyone's character. It is a RITUAL STATUS: a temporary condition that bars a person from the sanctuary and then expires, usually at sundown, usually after washing. Ordinary unavoidable life produces it \u2014 touching a dead animal, burying a relative, childbirth \u2014 and none of those are wrong to do. \u26a0 <a href=\"leviticus-11.html\">Leviticus 11</a> (already on these pages) is where the word does its heaviest work, sorting every animal a person might eat or touch, and the chapter's own closing verse states the point of the whole exercise as the ability to <a href=\"dictionary.html#havdil\">distinguish</a> tame from tahor. The pair is a boundary system, not a moral scale: its opposite is not 'good' but <a href=\"dictionary.html#tahor\">tahor</a>, and its remedy is not repentance but time and water.",
+     ("Leviticus", 11, 4)),
+    ("tahor", "tahor", "\u05d8\u05b8\u05d4\u05d5\u05b9\u05e8", "tahor",
+     "CLEAN, pure \u2014 the opposite of <a href=\"dictionary.html#tame\">tame</a>, and the DEFAULT state rather than an achievement. Nothing has to be done to a person to make them tahor; it is simply what they are when nothing has made them otherwise. The word is also the ordinary adjective for unalloyed metal \u2014 the tabernacle's lampstand is beaten from 'pure gold' (Exodus 25:31, already on these pages) \u2014 which is the sense underneath the ritual one: not washed, but unmixed. \u26a0 <a href=\"leviticus-11.html#v11-36\">Leviticus 11:36</a> (already on these pages) gives the pair its most surprising line: a spring or a cistern stays tahor no matter what falls into it, the one thing in that whole chapter uncleanness cannot touch.",
+     ("Leviticus", 11, 36)),
+    ("sheqets", "sheqets", "\u05e9\u05c1\u05b6\u05e7\u05b6\u05e5", "sheqets",
+     "A DETESTABLE THING \u2014 and NOT a synonym for <a href=\"dictionary.html#tame\">tame</a>, though most modern versions blur the two. Where tame is a status a person can catch and then wait out, sheqets is a verdict on the creature itself, and the same root becomes a verb aimed at the reader: 'their carcasses you shall hold in detestation' (<a href=\"leviticus-11.html#v11-11\">Leviticus 11:11</a>, already on these pages). \u26a0 Leviticus 11 uses BOTH words and means different things by them \u2014 land animals that fail the two tests are unclean, while sea creatures without fins and scales, and swarming things, are sheqets. Checking which versions keep the distinction is a fair test of a shelf: KJV, ASV, Geneva ('abomination') and NWT ('a loathsome thing') keep it; NIV renders both Hebrew words 'unclean' and the distinction disappears. Its close cousin <em>to'evah</em>, the other great 'abomination' word, is a different term with a different range \u2014 sheqets belongs mostly to the food laws.",
+     ("Leviticus", 11, 10)),
+    ("nevelah", "nevelah", "\u05e0\u05b0\u05d1\u05b5\u05dc\u05b8\u05d4", "nevelah",
+     "A CARCASS \u2014 specifically an animal that died on its own rather than being slaughtered, from a root meaning to wither or fall away. It is the engine of the whole second half of <a href=\"leviticus-11.html\">Leviticus 11</a> (already on these pages): the flesh is one question, the corpse is another, and the corpse rules apply to CLEAN animals too \u2014 an ox that simply drops dead makes anyone who touches it unclean until evening (<a href=\"leviticus-11.html#v11-39\">Leviticus 11:39</a>). \u26a0 That is the quiet root of a large later structure: what makes a permitted animal edible is not only its species but the manner of its death, which is why deliberate slaughter, rather than merely finding the animal, became the requirement. The same word is used of human bodies too, and of the fallen carcass of an idol.",
+     ("Leviticus", 11, 8)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5684,6 +5696,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 11 ----
+    (("Leviticus", 10, 10), ("Leviticus", 11, 47), "the infinitive lehavdil, 'to distinguish' \u2014 handed to Aaron as the priesthood's job description on the day his sons died, and named one chapter later as the stated purpose of the entire clean-and-unclean code"),
+    (("Genesis", 1, 10), ("Leviticus", 11, 36), "miqveh mayim, 'a gathering of water' \u2014 the phrase that named the seas on the third day, reappearing as the one thing in the food laws a carcass cannot defile, and the word later Judaism took for the ritual bath"),
+    (("Leviticus", 11, 44), ("Leviticus", 19, 2), "'be holy, for I am holy' \u2014 stated first as the reason behind a food law, then repeated word for word to open the Holiness Code and unpacked into field edges, honest wages and honest scales"),
+    (("Genesis", 3, 14), ("Leviticus", 11, 42), "gachon, 'belly' \u2014 a noun that occurs in exactly two verses in the Hebrew Bible: the sentence pronounced on the serpent, and the ban on everything that goes the same way"),
     # ---- Exodus 29 ----
     (("Exodus", 27, 2), ("Exodus", 29, 12), "the altar's horns, 'of one piece' when built, put to their very first use one chapter later — not a fugitive's grip, but a priest's own ordination blood"),
     (("Exodus", 25, 9), ("Exodus", 29, 45), "the word mishkan, 'tabernacle,' first named as the pattern Moses is shown — and, five chapters and one whole building later, spoken back as a verb: 'I will DWELL (ve-shakhanti) among the children of Israel'"),
@@ -8055,6 +8072,9 @@ CHRON_CHAPTERS = {
     "lev10": dict(era="exodus",
                   when="Still the eighth day of Leviticus 9 — the celebration that just consumed an offering in fire now, within two verses, consumes two of Aaron's own sons instead. Nadab and Abihu offer strange fire and are killed on the spot; Moses answers with a citation, Aaron with silence; kinsmen carry the bodies out while the working priests are forbidden the ordinary marks of grief; and Jehovah speaks to Aaron directly, banning wine and charging the priesthood to distinguish holy from common. The day ends in a quiet dispute over an uneaten offering, and Aaron's own defense of his surviving sons.",
                   clock="No time has passed since Leviticus 9's own events — the chapter opens with no date marker at all, picking up mid-scene on the same eighth day. Still inside the same short window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages)."),
+    "lev11": dict(era="exodus",
+                  when="The clean and the unclean — the first law given to Moses AND Aaron together, immediately after the priesthood has been charged to tell one from the other. Two tests sort the land animals, fins and scales sort the water, twenty birds are simply listed, and locusts are carved out as the one edible insect. Then the law follows contamination into the kitchen — a clay pot smashed, an oven broken down, a spring left untouchable — and closes on the reason none of the preceding forty-three verses had given: be holy, for I am holy.",
+                  clock="⚠ Undated within the chapter itself, like most of Leviticus. It carries no time marker of any kind and follows straight on from Leviticus 10 with no Masoretic break between them, so it reads as instruction given in the same Sinai window — after the tabernacle's completion (Exodus 40:17, already on these pages) and before the census that opens Numbers (Numbers 1:1, already on these pages) — but whether it belongs to the eighth day itself or simply comes next in the scroll is not something the text says."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -13145,7 +13165,7 @@ DICTIONARY_ES = {
         "amorosa: el propio nombre del ave significa &laquo;la piadosa&raquo; o &laquo;la bondadosa&raquo;, por lo "
         "atentamente que se ve a las cig&uuml;e&ntilde;as cuidar a sus cr&iacute;as. Y sin embargo la ley "
         "diet&eacute;tica de la Tor&aacute; incluye a la <em>chasidah</em> entre las aves IMPURAS de todos modos "
-        "(Levítico 11:19, a&uacute;n no traducido a estas p&aacute;ginas) &mdash;su dieta carro&ntilde;era le gana "
+        "(<a href=\"leviticus-11.es.html#v11-19\">Lev&iacute;tico 11:19</a>, ya en estas p&aacute;ginas) &mdash;su dieta carro&ntilde;era le gana "
         "la etiqueta pese al nombre. En Zacar&iacute;as 5:9 dos mujeres con alas de cig&uuml;e&ntilde;a sacan a la "
         "Maldad de la tierra, un ave cuyo propio nombre y estatus se contradicen haciendo el transporte."),
     # ---- Zacarías 4 ----
@@ -13912,6 +13932,90 @@ DICTIONARY_ES = {
         "su primer día de trabajo como sacerdotes. Una sola palabra de límite, dicha una vez "
         "como regulación ordinaria y una vez como la línea que dos hombres realmente "
         "cruzaron."),
+    # ---- Levítico 11 ----
+    "tame": ("tame",
+        "IMPURO &mdash;y casi todo lo que un lector espa&ntilde;ol oye en esa palabra es err&oacute;neo. "
+        "No es suciedad, no es pecado, y no es un juicio sobre el car&aacute;cter de nadie. Es un ESTADO "
+        "RITUAL: una condici&oacute;n temporal que impide a una persona acercarse al santuario y luego "
+        "caduca, normalmente al ponerse el sol, normalmente tras lavarse. La vida ordinaria e inevitable "
+        "lo produce &mdash;tocar un animal muerto, enterrar a un pariente, dar a luz&mdash; y nada de eso "
+        "est&aacute; mal. &#9888; <a href=\"leviticus-11.es.html\">Lev&iacute;tico 11</a> (ya en estas "
+        "p&aacute;ginas) es donde la palabra hace su trabajo m&aacute;s pesado, y el &uacute;ltimo "
+        "vers&iacute;culo del cap&iacute;tulo declara que el prop&oacute;sito de todo el ejercicio es "
+        "poder <a href=\"diccionario.html#havdil\">distinguir</a> lo <em>tame</em> de lo <em>tahor</em>. "
+        "El par es un sistema de fronteras, no una escala moral: su contrario no es &laquo;bueno&raquo; "
+        "sino <a href=\"diccionario.html#tahor\">tahor</a>, y su remedio no es el arrepentimiento sino "
+        "el tiempo y el agua."),
+    "tahor": ("tahor",
+        "PURO &mdash;lo contrario de <a href=\"diccionario.html#tame\">tame</a>, y el estado POR DEFECTO "
+        "y no un logro. No hay que hacerle nada a una persona para que sea <em>tahor</em>; es simplemente "
+        "lo que es cuando nada la ha vuelto otra cosa. La palabra es tambi&eacute;n el adjetivo corriente "
+        "para el metal sin aleaci&oacute;n &mdash;el candelabro del tabern&aacute;culo se labra de "
+        "&laquo;oro puro&raquo; (&Eacute;xodo 25:31, ya en estas p&aacute;ginas)&mdash;, que es el sentido "
+        "que subyace al ritual: no lavado, sino sin mezcla. &#9888; "
+        "<a href=\"leviticus-11.es.html#v11-36\">Lev&iacute;tico 11:36</a> (ya en estas p&aacute;ginas) "
+        "le da al par su l&iacute;nea m&aacute;s sorprendente: un manantial o una cisterna sigue "
+        "<em>tahor</em> caiga lo que caiga en &eacute;l, lo &uacute;nico de todo ese cap&iacute;tulo que "
+        "la impureza no puede tocar."),
+    "sheqets": ("sheqets",
+        "COSA DETESTABLE &mdash;y NO un sin&oacute;nimo de <a href=\"diccionario.html#tame\">tame</a>, "
+        "aunque la mayor&iacute;a de las versiones modernas confunden los dos. Donde <em>tame</em> es un "
+        "estado que una persona contrae y luego espera a que pase, <em>sheqets</em> es un veredicto sobre "
+        "la criatura misma, y la misma ra&iacute;z se vuelve verbo dirigido al lector: &laquo;sus "
+        "cad&aacute;veres tendr&eacute;is por detestables&raquo; "
+        "(<a href=\"leviticus-11.es.html#v11-11\">Lev&iacute;tico 11:11</a>, ya en estas p&aacute;ginas). "
+        "&#9888; Lev&iacute;tico 11 usa AMBAS palabras y entiende cosas distintas por ellas. Comprobar "
+        "qu&eacute; versiones conservan la distinci&oacute;n es una prueba justa del estante: RV60 la "
+        "mantiene con &laquo;abominaci&oacute;n&raquo; frente a &laquo;inmundo&raquo;, y TNM con "
+        "&laquo;asqueroso&raquo; frente a &laquo;impuro&raquo;; NVI traduce las dos palabras hebreas por "
+        "&laquo;inmundo&raquo; y la distinci&oacute;n desaparece."),
+    "nevelah": ("nevelah",
+        "CAD&Aacute;VER &mdash;espec&iacute;ficamente un animal que muri&oacute; por s&iacute; mismo en "
+        "lugar de ser sacrificado, de una ra&iacute;z que significa marchitarse o caer. Es el motor de "
+        "toda la segunda mitad de <a href=\"leviticus-11.es.html\">Lev&iacute;tico 11</a> (ya en estas "
+        "p&aacute;ginas): la carne es una cuesti&oacute;n, el cuerpo muerto es otra, y las reglas del "
+        "cuerpo muerto se aplican tambi&eacute;n a los animales PUROS &mdash;un buey que simplemente cae "
+        "muerto deja impuro hasta la tarde a quien lo toque "
+        "(<a href=\"leviticus-11.es.html#v11-39\">Lev&iacute;tico 11:39</a>). &#9888; Esa es la "
+        "ra&iacute;z discreta de una estructura posterior mucho mayor: lo que hace comestible a un animal "
+        "permitido no es solo su especie sino la manera de su muerte, raz&oacute;n por la cual el "
+        "sacrificio deliberado, y no el mero hallazgo del animal, acab&oacute; siendo el requisito."),
+"min": ("min",
+        "ESPECIE, clase &mdash;una palabra de agricultor, no una taxonom&iacute;a; est&aacute; detr&aacute;s de "
+        "cada &laquo;seg&uacute;n su especie&raquo;. &#9888; Es la palabra que organiza las listas de "
+        "<a href=\"leviticus-11.es.html\">Lev&iacute;tico 11</a> (ya en estas p&aacute;ginas), donde vuelve "
+        "una y otra vez sobre aves e insectos cuyos nombres nadie puede ya identificar con certeza &mdash;lo "
+        "cual es un recordatorio &uacute;til de qu&eacute; clase de palabra es: agrupa lo que un observador "
+        "ve junto, no lo que un bi&oacute;logo clasificar&iacute;a junto."),
+    "sherets": ("sherets",
+        "LO QUE BULLE &mdash;el sustantivo detr&aacute;s de &laquo;bullan las aguas &mdash;un bullir&raquo; "
+        "(<a href=\"genesis-1.es.html#v20\">G&eacute;nesis 1:20</a>, ya en estas p&aacute;ginas), donde el "
+        "hebreo apila el sustantivo sobre su propio verbo. &#9888; En "
+        "<a href=\"leviticus-11.es.html\">Lev&iacute;tico 11</a> (ya en estas p&aacute;ginas) la misma "
+        "palabra se vuelve una categor&iacute;a legal: lo que bulle en el agua, lo que bulle con alas, y lo "
+        "que bulle sobre la tierra reciben cada uno su propia regla. Lo que en G&eacute;nesis era una "
+        "descripci&oacute;n exuberante de la abundancia del quinto d&iacute;a es aqu&iacute; el nombre de "
+        "una clase de criatura que no se come."),
+    "miqveh": ("miqveh",
+        "UN DEP&Oacute;SITO (de agua) &mdash;la palabra detr&aacute;s del nombre de los mares "
+        "(<a href=\"genesis-1.es.html#v10\">G&eacute;nesis 1:10</a>, ya en estas p&aacute;ginas), y m&aacute;s "
+        "tarde el ba&ntilde;o ritual del juda&iacute;smo, la <em>mikve</em>. &#9888; El puente entre esos dos "
+        "sentidos es un solo vers&iacute;culo de las leyes alimentarias: "
+        "<a href=\"leviticus-11.es.html#v11-36\">Lev&iacute;tico 11:36</a> (ya en estas p&aacute;ginas) "
+        "exime a un manantial o una cisterna, un <em>miqveh mayim</em>, de todo un cap&iacute;tulo de "
+        "contaminaci&oacute;n &mdash;lo &uacute;nico que un cad&aacute;ver no puede contaminar. Lo &uacute;nico "
+        "de Lev&iacute;tico 11 que no puede volverse impuro es justamente lo que el juda&iacute;smo posterior "
+        "tom&oacute; como el medio permanente de quitar la impureza."),
+    "arbeh": ("arbeh",
+        "LANGOSTA &mdash;de una ra&iacute;z que significa ser muchos, de modo que el nombre es el enjambre "
+        "mismo. Es la octava plaga (&Eacute;xodo 10:4-19) y despu&eacute;s la imagen fija de la Biblia para la "
+        "devastaci&oacute;n imparable y para los ej&eacute;rcitos: Jueces 6:5 hace subir a Madi&aacute;n "
+        "&laquo;como langostas en multitud&raquo;, y Joel construye un libro entero sobre una invasi&oacute;n de "
+        "langostas le&iacute;da como el d&iacute;a de Jehov&aacute;. &#9888; Y sin embargo es el &uacute;nico "
+        "insecto que la Tor&aacute; permite comer: "
+        "<a href=\"leviticus-11.es.html#v11-22\">Lev&iacute;tico 11:22</a> (ya en estas p&aacute;ginas) la "
+        "except&uacute;a junto con otros tres nombres, raz&oacute;n por la cual la dieta de Juan el Bautista "
+        "(<a href=\"mark-1.es.html\">Marcos 1:6</a>) es austera sin ser irregular."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14729,6 +14833,31 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev11": [dict(
+        file="hyrax-procavia-capensis.jpg",
+        title="Rock hyrax (Procavia capensis)",
+        title_es="Dam\u00e1n de las rocas (Procavia capensis)",
+        artist="Charles J. Sharp",
+        year="2018",
+        location="Erongo, Namibia",
+        location_es="Erongo, Namibia",
+        alt="A rock hyrax, a stout brown mammal about the size of a rabbit with small rounded ears, "
+            "short legs and no visible tail, sitting upright on a sunlit rock.",
+        note="The animal at the centre of this chapter\u2019s worst translation problem. Hebrew "
+             "<em>shaphan</em> (v5) is this creature \u2014 a hyrax, no relation to rabbits or badgers "
+             "despite being called a \u2018coney\u2019 by the KJV, ASV and Geneva and a \u2018rock "
+             "badger\u2019 by the NWT. Seeing it makes the chapter\u2019s other difficulty concrete too: "
+             "it is plainly not a cow, and the constant sideways grinding of its jaws is what an ancient "
+             "herdsman would have called bringing up the cud.",
+        note_es="El animal en el centro del peor problema de traducci\u00f3n de este cap\u00edtulo. El "
+                "hebreo <em>shaphan</em> (v5) es esta criatura \u2014un dam\u00e1n, sin parentesco con "
+                "conejos ni tejones pese a que RV60 imprime \u00abconejo\u00bb y NVI \u00abtej\u00f3n\u00bb. "
+                "Verlo vuelve concreta la otra dificultad del cap\u00edtulo: no es en absoluto una vaca, y "
+                "el constante movimiento lateral de sus mand\u00edbulas es lo que un pastor antiguo "
+                "habr\u00eda llamado rumiar.",
+        license="CC BY-SA 4.0",
+        source_url="https://commons.wikimedia.org/wiki/File:Rock_hyrax_(Procavia_capensis)_2.jpg",
+    )],
     "exod29": [dict(
         file="exod29-aaron-breastplate.jpg",
         title="Aaron Is Vested with the Breastplate",
