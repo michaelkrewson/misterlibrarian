@@ -552,7 +552,7 @@ DICTIONARY = [
     ("shalom", "shalom", "שָׁלוֹם", "shalom",
      "PEACE — but far wider than the absence of conflict: wholeness, soundness, welfare, everything being as it should be. You ask after a person's shalom the way English asks 'how are you?'. It runs through the Joseph story as a thread of withholding and return. The brothers 'could not speak to him in SHALOM' (37:4); their father then sent him on the errand that got him sold — 'go, see whether your brothers are at SHALOM' (37:14). The word then disappears for six chapters, until Joseph promises Pharaoh 'God will answer for Pharaoh's SHALOM' (41:16) — and returns in force in ch. 43, where an Egyptian steward greets the terrified brothers with 'SHALOM to you, do not be afraid' (43:23) and Joseph asks three times after their father's shalom (43:27-28). The men who could not say the word are asked it, in Egypt, by the brother they sold. Jeremiah 29 is the sharpest case in the library: shalom occurs four times, and THREE of them (v7) are the welfare of BABYLON \u2014 seek it, pray for it, 'for in ITS shalom you will have shalom.' Only the fourth is the famous 'plans of shalom' at v11. The most-quoted promise in the book is made with the word God had just spent four verses attaching to the empire that deported them.", (37, 4)),
     ("toevah", "to'evah", "תּוֹעֵבָה", "to'evah",
-     "An ABOMINATION — something detestable, ritually or socially intolerable to a particular group. Genesis uses it of EGYPTIAN sensibilities, not Israelite ones: 'the Egyptians cannot eat bread with the Hebrews, for that is an abomination to Egypt' (43:32), and later that shepherds are an abomination to them (46:34). The narrator reports the custom flatly, without mockery — and it quietly settles a clause left open at 39:6, where Potiphar 'knew nothing of what he had except the bread he ate.' It also leaves Joseph seated at neither table: not with the Egyptians, not with the Hebrews, eating alone between two peoples.", (43, 32)),
+     "An ABOMINATION — something detestable, ritually or socially intolerable to a particular group. Genesis uses it of EGYPTIAN sensibilities, not Israelite ones: 'the Egyptians cannot eat bread with the Hebrews, for that is an abomination to Egypt' (43:32), and later that shepherds are an abomination to them (46:34). The narrator reports the custom flatly, without mockery — and it quietly settles a clause left open at 39:6, where Potiphar 'knew nothing of what he had except the bread he ate.' It also leaves Joseph seated at neither table: not with the Egyptians, not with the Hebrews, eating alone between two peoples. ⚠ At <a href=\"leviticus-18.html\">Leviticus 18</a> (already on these pages) the word becomes a legal umbrella term rather than a report of foreign custom: incest, adultery, child sacrifice, and bestiality are all named to'evah together (18:26-30), the same single word covering the chapter's entire catalog rather than singling any one item out with harsher vocabulary.", (43, 32)),
     ("chanan", "chanan", "חָנַן", "yechonkha",
      "To BE GRACIOUS, show favour freely — the root behind chen ('favour') and behind the names Hannah, Hanan, and (through Hebrew Yochanan) JOHN, 'Jehovah has been gracious.' Joseph uses it as a blessing over the little brother he has not seen in twenty-two years and cannot yet claim: 'God be gracious to you, my son' (43:29). It is the last thing he manages to say before his compassion overwhelms him and he leaves the room.", (43, 29)),
     ("melits", "melits", "מֵלִיץ", "melits",
@@ -1991,6 +1991,15 @@ DICTIONARY = [
     ("trefah", "trefah", "טְרֵפָה", "trefah",
      "TORN — an animal killed by a predator rather than properly slaughtered, from taraf, 'to tear.' Its partner nevelah (see <a href=\"dictionary.html#nevelah\">that entry</a>, fixed at Leviticus 11:39) covers an animal that simply died; trefah covers one that was killed by something else. Both disqualify the meat regardless of species, and both carry the same 'unclean until evening' consequence for anyone who eats one (17:15). The word is the direct ancestor of the Yiddish and modern Hebrew 'treif,' still the standing term for anything not kosher — though its sense here is narrower than its later career, naming one specific manner of death rather than the whole category of forbidden food that word now covers.",
      ("Leviticus", 17, 15)),
+    ("ervah", "ervah", "עֶרְוָה", "ervah",
+     "NAKEDNESS — shameful exposure, ordinarily of a body. This chapter is the word's literal home: 'uncover the nakedness of' (gilah ervah) is its own fixed legal formula, repeated for every prohibited relationship in vv6-19. The word already appeared once on these pages in a figurative extension — Joseph's brothers accused of coming 'to see the nakedness (ervah) of the land' at <a href=\"genesis-42.html#v42-9\">Genesis 42:9, 12</a>, applied to a country's undefended border rather than a body. This chapter is where the figure returns to its source. ⚠ Genesis 9's own note on Ham (already on these pages) flagged that 'saw his father's nakedness' carries, for some readers, 'the darker idiom that phrase carries in Leviticus 20' — worth being precise: Ham's verb there is ra'ah, 'to see'; this chapter's own operative verb is gilah, 'to uncover.' Related roots, not identical acts — which is exactly why readers ancient and modern have split on how far Ham's own offense should be read.",
+     ("Leviticus", 18, 6)),
+    ("zimah", "zimah", "זִמָּה", "zimah",
+     "DEPRAVITY — deliberate, premeditated sexual wrongdoing, from a root meaning 'to plan, devise'; the word names not an act alone but the calculation behind it. Leviticus 18:17 uses it for one specific case (a man taking a woman and her daughter, or her granddaughters), distinct from this chapter's general umbrella term <a href=\"dictionary.html#toevah\">to'evah</a>, 'abomination.' <span class=\"tag t-kjv\">KJV</span> and <span class=\"tag t-niv\">NIV</span> both read 'wickedness'; <span class=\"tag t-asv\">ASV</span> has 'lewdness.' Ezekiel later makes zimah practically a technical term for calculated sexual betrayal (Ezekiel 23, not yet on these pages) — this chapter is the word's first appearance on these pages.",
+     ("Leviticus", 18, 17)),
+    ("tevel", "tevel", "תֶּבֶל", "tevel",
+     "PERVERSION — a rare word (Leviticus 18:23; 20:12, the latter not yet on these pages), from a root meaning 'to mix, confuse.' Where to'evah names something detestable and zimah names calculated wrongdoing, tevel names a violation of natural category itself — a boundary between kinds crossed rather than a rule broken. The three words sit near each other in this chapter's own vocabulary without ever being used interchangeably; this translation keeps them as three distinct English words rather than flattening them into one repeated 'abomination.'",
+     ("Leviticus", 18, 23)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5735,6 +5744,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 18 ----
+    (("Leviticus", 18, 6), ("Genesis", 42, 9), "ervah, 'nakedness' — met first in its figurative extension, 'the nakedness of the land,' before this chapter gives the word its literal, primary home"),
+    (("Leviticus", 18, 18), ("Genesis", 29, 28), "the ban on marrying two sisters as rivals — a law Jacob himself never kept, because it did not yet exist in his own lifetime"),
+    (("Leviticus", 18, 19), ("Leviticus", 15, 24), "niddah — the rule Leviticus 15 already legislated at length, folded here into one clause of a broader catalog"),
+    (("Leviticus", 18, 21), ("Jeremiah", 19, 5), "sons burned in fire as an offering — the practice this chapter forbids by name, and the practice Jeremiah reports actually happening in the Valley of Hinnom, attributed there to Baal rather than Molech"),
     # ---- Leviticus 17 ----
     (("Leviticus", 17, 7), ("Leviticus", 16, 8), "se'irim, 'goat-demons' — the real objects of popular worship this chapter suppresses, cited in advance as grammatical evidence for reading Azazel as a being rather than merely a place"),
     (("Leviticus", 17, 11), ("Genesis", 9, 4), "the blood prohibition, given Sinai's own legal teeth to a rule already stated to Noah and all his descendants, before Israel existed as a people"),
@@ -8164,6 +8178,9 @@ CHRON_CHAPTERS = {
     "lev17": dict(era="exodus",
                   when="Sixteen tight verses, all in a single unbroken paragraph like the chapter before it: every slaughter of an ox, lamb, or goat must be brought to the tent of meeting rather than killed anywhere in the open field, closing off sacrifice to the goat-demons some had drifted toward. Burnt-offerings and sacrifices generally get the same rule. Then the chapter turns to blood itself — never to be eaten, because the life is in the blood, and the blood belongs on the altar, making atonement. Hunted game's blood is poured out and covered with dust rather than carried to an altar at all. A carcass or an animal killed by a predator, if eaten, brings the same 'unclean until evening' as the rest of this block.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. Its centralized-slaughter law (vv3-9) is explicitly tied to the wilderness camp's own geography — one tent at the center of a small, mobile community — a law this project expects to see revised once Israel is settled across a whole land (Deuteronomy 12, not yet on these pages). Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev18": dict(era="exodus",
+                  when="Thirty verses framed as a boundary against two named cultures — 'not as they do in Egypt, not as they do in Canaan.' Twelve forbidden degrees of kinship each get their own paragraph break, one prohibition per verse; then, without pause, the list turns to marrying two sisters as rivals, sex during menstrual impurity, adultery, child sacrifice to Molech, male-male intercourse, and bestiality — all named 'abominations' together. It closes on the land itself as an agent that 'vomited out' its own inhabitants for these very practices, and a direct warning that Israel can suffer the identical fate.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. This chapter completes the run from Leviticus 1 straight through 19 with no gap — the last piece needed before Leviticus 20 restates the same catalog with prescribed penalties. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14285,6 +14302,53 @@ DICTIONARY_ES = {
         "para lo que no es kosher &mdash;aunque su sentido aqu&iacute; es m&aacute;s estrecho que su "
         "carrera posterior, y nombra una manera espec&iacute;fica de morir, no toda la categor&iacute;a "
         "de alimento prohibido que esa palabra cubre hoy."),
+    "toevah": ("to'evah",
+        "UNA ABOMINACI&Oacute;N &mdash;algo detestable, ritual o socialmente intolerable para un grupo "
+        "determinado. G&eacute;nesis lo usa de la sensibilidad EGIPCIA, no la israelita: «los egipcios "
+        "no pueden comer pan con los hebreos, porque eso es abominaci&oacute;n para Egipto» (43:32), y "
+        "m&aacute;s tarde que los pastores son abominaci&oacute;n para ellos (46:34). El narrador "
+        "informa la costumbre sin burla &mdash;y de paso resuelve una cl&aacute;usula dejada abierta en "
+        "39:6, donde Potifar «no sab&iacute;a nada de lo que ten&iacute;a, excepto el pan que "
+        "com&iacute;a». Tambi&eacute;n deja a Jos&eacute; sentado en ninguna de las dos mesas: ni con "
+        "los egipcios, ni con los hebreos, comiendo solo entre dos pueblos. &#9888; En "
+        "<a href=\"leviticus-18.es.html\">Lev&iacute;tico 18</a> (ya en estas p&aacute;ginas) la palabra "
+        "se vuelve un t&eacute;rmino legal general en vez de un informe sobre costumbre extranjera: "
+        "incesto, adulterio, sacrificio de ni&ntilde;os y bestialidad se nombran todos to'evah juntos "
+        "(18:26&ndash;30), la misma palabra &uacute;nica cubriendo todo el cat&aacute;logo del cap&iacute;tulo "
+        "en vez de separar un solo elemento con vocabulario m&aacute;s duro."),
+    "ervah": ("ervah",
+        "DESNUDEZ &mdash;exposici&oacute;n vergonzosa, normalmente de un cuerpo. Este cap&iacute;tulo es "
+        "el hogar literal de la palabra: «descubrir la desnudez de» (gilah ervah) es su propia f&oacute;rmula "
+        "legal fija, repetida para cada relaci&oacute;n prohibida en los vv6&ndash;19. La palabra ya "
+        "apareci&oacute; una vez en estas p&aacute;ginas en una extensi&oacute;n figurada &mdash;a los "
+        "hermanos de Jos&eacute; se les acusa de venir «a ver la desnudez (ervah) de la tierra» en "
+        "G&eacute;nesis 42:9, 12, aplicada a la frontera indefensa de un pa&iacute;s en vez de a un "
+        "cuerpo. Este cap&iacute;tulo es donde la figura regresa a su origen. &#9888; La propia nota de "
+        "este proyecto sobre Cam en G&eacute;nesis 9 (ya en estas p&aacute;ginas) ya se&ntilde;al&oacute; "
+        "que «vio la desnudez de su padre» lleva, para algunos lectores, «el modismo m&aacute;s oscuro "
+        "que esa frase lleva en Lev&iacute;tico 20» &mdash;vale la pena ser precisos: el verbo de Cam "
+        "all&iacute; es ra'ah, «ver»; el verbo propio de este cap&iacute;tulo es gilah, «descubrir». "
+        "Ra&iacute;ces relacionadas, no actos id&eacute;nticos &mdash;exactamente por qu&eacute; lectores "
+        "antiguos y modernos se han dividido sobre cu&aacute;n lejos debe leerse la propia ofensa de Cam."),
+    "zimah": ("zimah",
+        "DEPRAVACI&Oacute;N &mdash;maldad sexual deliberada y premeditada, de una ra&iacute;z que "
+        "significa «planear, idear»; la palabra nombra no solo un acto sino el c&aacute;lculo detr&aacute;s "
+        "de &eacute;l. Lev&iacute;tico 18:17 la usa para un caso espec&iacute;fico (un hombre que toma a "
+        "una mujer y a su hija, o a sus nietas), distinto del t&eacute;rmino general de este cap&iacute;tulo, "
+        "<a href=\"diccionario.html#toevah\">to'evah</a>, «abominaci&oacute;n». KJV y NIV leen ambos "
+        "«maldad»; ASV tiene «lascivia». Ezequiel convierte despu&eacute;s zimah en pr&aacute;cticamente "
+        "un t&eacute;rmino t&eacute;cnico para la traici&oacute;n sexual calculada (Ezequiel 23, "
+        "todav&iacute;a no en estas p&aacute;ginas) &mdash;este cap&iacute;tulo es la primera "
+        "aparici&oacute;n de la palabra en estas p&aacute;ginas."),
+    "tevel": ("tevel",
+        "PERVERSI&Oacute;N &mdash;una palabra rara (Lev&iacute;tico 18:23; 20:12, esta &uacute;ltima "
+        "todav&iacute;a no en estas p&aacute;ginas), de una ra&iacute;z que significa «mezclar, "
+        "confundir». Donde to'evah nombra algo detestable y zimah nombra maldad calculada, tevel nombra "
+        "una violaci&oacute;n de la categor&iacute;a natural misma &mdash;un l&iacute;mite entre "
+        "especies cruzado, en vez de una regla incumplida. Las tres palabras se sit&uacute;an cerca "
+        "unas de otras en el propio vocabulario de este cap&iacute;tulo sin usarse jam&aacute;s de "
+        "forma intercambiable; esta traducci&oacute;n las conserva como tres palabras espa&ntilde;olas "
+        "distintas en vez de aplanarlas en una sola «abominaci&oacute;n» repetida."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14655,6 +14719,19 @@ ENCYCLOPEDIA_ES = {
         "lectores posteriores simplemente dieron por sentada, hecha expl&iacute;cita en el texto por primera "
         "vez aqu&iacute;, en el mismo cap&iacute;tulo que tambi&eacute;n pone la cabeza de la propia serpiente "
         "bajo un tal&oacute;n (G&eacute;nesis 3:15)."),
+    "milcom": ("Milcom (Molec)",
+        "El dios nacional de AM&Oacute;N &mdash;«la abominaci&oacute;n de los amonitas» (1 Reyes 11:5, 7)&mdash;, "
+        "cuyo culto trajeron las esposas extranjeras de Salom&oacute;n a un lugar alto al este de "
+        "Jerusal&eacute;n, y que Jos&iacute;as despu&eacute;s profan&oacute; (2 Reyes 23:13). &#9888; Milcom, "
+        "Malcam y Molec/Moloc son nombres estrechamente emparentados (todos construidos sobre la ra&iacute;z "
+        "MLK, «rey»), y las mismas consonantes pueden leerse como el nombre del dios o como «su rey» "
+        "&mdash;la ambig&uuml;edad que recorre Am&oacute;s 1:15, Sofon&iacute;as 1:5 y Jerem&iacute;as "
+        "49:1&ndash;3. MOLEC en particular se vincula al sacrificio de ni&ntilde;os «hecho pasar por el "
+        "fuego» en el valle de Hinom (<a href=\"leviticus-18.es.html\">Lev&iacute;tico 18:21</a>, ya en "
+        "estas p&aacute;ginas; Jerem&iacute;as 32:35, todav&iacute;a no en estas p&aacute;ginas), el valle "
+        "cuyo nombre (Ge-Hinom) se convierte en GEHENA, la palabra del Nuevo Testamento para el infierno. "
+        "Sofon&iacute;as 1:5 condena no a los abiertamente paganos sino a los que cubren ambas apuestas, "
+        "«jurando por Jehov&aacute; Y jurando por Milcom» &mdash;un pie en cada campo."),
 }
 
 # Places, so the Spanish atlas has real content rather than an empty page. The
