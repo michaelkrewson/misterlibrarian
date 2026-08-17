@@ -1151,7 +1151,7 @@ DICTIONARY = [
     ("metzarim", "metzarim", "מְצָרִים", "metzarim",
      "NARROW PLACES, straits — from tsar, narrow or tight; the same root gives tsarah, 'distress,' and tsar, 'foe.' Lamentations 1:3 has Judah's pursuers overtake her 'bein ha-metzarim,' between the straits: cornered where there is no room to turn. ⚠ In later Judaism the phrase became the NAME of the three weeks of mourning between the 17th of Tammuz and the 9th of Av — the period that ends on the day this book is read aloud.", ("Lamentations", 1, 3)),
     ("niddah", "niddah / nidah", "נִדָּה", "niddah",
-     "RITUAL IMPURITY, specifically menstrual (Leviticus 15:19-24) — and by extension anything that must be kept at a distance. ⚠ The word's plainest legal use is at <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages), which twice defines a new mother's first days by comparison to it — unclean 'as in the days of her niddah' — without ever explaining the comparison, because the law it points at (Leviticus 15) is assumed known. Read there rather than in the prophets, it is what <a href=\"dictionary.html#tame\">tame</a> always is: a temporary bar on approaching the sanctuary, not a fault and not a verdict. ⚠ Lamentations then plays on it: verse 8 says Jerusalem became a nidah (from a root meaning to shake the head, so 'an object of head-shaking') and verse 17 says she became a niddah among the nations. The two words are near-identical and the poem almost certainly means both at once. The versions split badly there — KJV 'removed' at v8 and 'a menstruous woman' at v17; ASV 'an unclean thing'; NWT 'an object of disgust' — which is why this translation renders each verse as it stands and notes the play. The distance between that metaphor and the purity rule is exactly the distance this dictionary exists to show.", ("Lamentations", 1, 8)),
+     "RITUAL IMPURITY, specifically menstrual (<a href=\"leviticus-15.html#v15-19\">Leviticus 15:19-24</a>, now on these pages) — and by extension anything that must be kept at a distance. ⚠ The word's plainest legal use is at <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages), which twice defines a new mother's first days by comparison to it — unclean 'as in the days of her niddah' — without ever explaining the comparison, because the law it points at (Leviticus 15) is assumed known. Read there rather than in the prophets, it is what <a href=\"dictionary.html#tame\">tame</a> always is: a temporary bar on approaching the sanctuary, not a fault and not a verdict. ⚠ Lamentations then plays on it: verse 8 says Jerusalem became a nidah (from a root meaning to shake the head, so 'an object of head-shaking') and verse 17 says she became a niddah among the nations. The two words are near-identical and the poem almost certainly means both at once. The versions split badly there — KJV 'removed' at v8 and 'a menstruous woman' at v17; ASV 'an unclean thing'; NWT 'an object of disgust' — which is why this translation renders each verse as it stands and notes the play. The distance between that metaphor and the purity rule is exactly the distance this dictionary exists to show.", ("Lamentations", 1, 8)),
     ("makhov", "makh'ov", "מַכְאוֹב", "makh'ov",
      "PAIN — a body's ache, the hurt of a wound, not sadness in the abstract; from ka'av, to be in pain. It is the noun in Ecclesiastes' 'whoever adds knowledge adds pain' (1:18), the cry of Lamentations 1:12 ('is there any pain like my pain?'), and — in the plural — the phrase behind Isaiah 53:3, ish makh'ovot, 'a man of sorrows.' English versions vary it ('sorrow,' 'grief,' 'suffering'); the Hebrew is one concrete word.", ("Lamentations", 1, 12)),
     ("zenunim", "zenunim", "זְנוּנִים", "zenunim",
@@ -1973,6 +1973,9 @@ DICTIONARY = [
     ("log-measure", "log", "לֹג", "log",
      "A LOG — the smallest liquid measure named in the Hebrew Bible, roughly the volume of six eggs by later rabbinic reckoning (about a third of a litre). The word occurs five times, all of them in this one chapter, all of them measuring the same thing: the log of oil in the healed person&rsquo;s eighth-day offering. Every other Levitical liquid measure (the hin, the bath) belongs to the ordinary sacrificial economy; this one belongs to nothing but this rite, which is itself the kind of detail a genuinely ancient, specific ritual memory carries and a later invention would have no reason to include.",
      ("Leviticus", 14, 10)),
+    ("zav", "zav", "זָב", "zav",
+     "A DISCHARGE — and the Hebrew that names it is itself a euphemism. <em>Zav mibsaro</em> literally reads &lsquo;flows from his flesh&rsquo; or &lsquo;from his body&rsquo;; it never states what discharges, or from where. <span class=\"tag t-nwt\">NWT</span> resolves the gap &mdash; &lsquo;a discharge from his genital organ&rsquo; &mdash; almost certainly the correct referent, since the chapter&rsquo;s own structure (an abnormal case in vv1&ndash;15, contrasted with an ordinary emission of semen in vv16&ndash;18) makes plain what is meant. This translation keeps the indirection instead, on the reader test: the Hebrew itself chose not to be explicit, and a translation more specific than its source is making a decision, not just clarifying one. ⚠ The Spanish shelf splits on exactly this point, and in opposite directions from each other: <span class=\"tag t-rv60\">RV60</span> reads v2 as &lsquo;flujo de semen&rsquo; from the first verse, assuming the specific case the chapter has not yet reached; <span class=\"tag t-nvi\">NVI</span>&rsquo;s &lsquo;flujo inusual&rsquo; keeps the ambiguity the Hebrew keeps.",
+     ("Leviticus", 15, 2)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5717,6 +5720,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 15 ----
+    (("Leviticus", 15, 13), ("Leviticus", 14, 5), "mayim chayim, 'living water' — the third consecutive chapter's purification named with the same literal phrase every other version smooths to 'running' or 'fresh' water"),
+    (("Leviticus", 12, 2), ("Leviticus", 15, 19), "niddah — the comparison Leviticus 12 leaned on twice without explaining, because this is the law it was assuming the reader already knew"),
+    (("Leviticus", 15, 25), ("Mark", 5, 25), "the zavah's own condition, not for days but for twelve years — and the touch that finally runs the other direction"),
+    (("Leviticus", 15, 31), ("Leviticus", 10, 2), "the danger this whole chapter exists to manage, stated once in the driest possible terms here and once as an actual death two chapters earlier"),
     # ---- Leviticus 14 ----
     (("Leviticus", 14, 6), ("Exodus", 12, 22), "hyssop dipped in blood — the sprig that marked a doorway to be passed over now marks a person cleared to pass back into camp"),
     (("Leviticus", 14, 5), ("John", 4, 10), "mayim chayim, 'living water' — required here for a purification rite, offered there to a woman at a well by the one this whole law points toward"),
@@ -8122,6 +8130,9 @@ CHRON_CHAPTERS = {
     "lev14": dict(era="exodus",
                   when="The other half of the diagnostic law: not how to detect scaly disease, but how a person clears of it re-enters the community — two birds and living water outside the camp, seven days, then an eighth-day rite that touches blood and oil to the same ear, thumb and big toe Aaron's own ordination touched. A poor person's cheaper version follows, and then the identical law extended a third time, to the stones and plaster of a house.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. Its house-plague law (v34) is explicitly future-dated to the settlement — 'when you come into the land of Canaan' — the one piece of this two-chapter unit not given for the wilderness camp at all. Still inside the same Sinai window as Leviticus 13 (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev15": dict(era="exodus",
+                  when="The law of bodily discharges, closing the whole clean/unclean block that opened at Leviticus 11: an abnormal male discharge and its elaborate contact rules, an ordinary emission of semen, ordinary marital intercourse, ordinary menstruation, and an irregular or prolonged female discharge treated exactly like the man's own case. It closes on one blunt statement of stakes — die in your uncleanness by defiling the tabernacle in your midst — the reason the whole apparatus exists.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus, and — like Leviticus 11 and 13 — addressed to Moses AND Aaron together. This is the law Leviticus 12 (already on these pages) twice assumed its reader already knew, comparing a new mother's uncleanness to 'the days of her niddah' without ever explaining the term. Still inside the same Sinai window as the rest of this block."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14164,6 +14175,20 @@ DICTIONARY_ES = {
         "sacrificial ordinaria; esta no pertenece a nada m&aacute;s que a este rito, precisamente el tipo de "
         "detalle que lleva una memoria ritual genuinamente antigua y espec&iacute;fica, y que una "
         "invenci&oacute;n posterior no tendr&iacute;a raz&oacute;n para incluir."),
+    "zav": ("zav",
+        "UN FLUJO &mdash;y el hebreo que lo nombra es &eacute;l mismo un eufemismo. <em>Zav mibsaro</em> "
+        "se lee literalmente &laquo;fluye de su carne&raquo; o &laquo;de su cuerpo&raquo;; nunca dice qu&eacute; "
+        "fluye, ni de d&oacute;nde. TNM resuelve el vac&iacute;o &mdash;&laquo;una descarga de su &oacute;rgano "
+        "genital&raquo;&mdash;, casi con certeza el referente correcto, ya que la propia estructura del "
+        "cap&iacute;tulo (un caso anormal en los vv1&ndash;15, contrastado con una emisi&oacute;n ordinaria de "
+        "semen en los vv16&ndash;18) deja claro a qu&eacute; se refiere. Esta traducci&oacute;n conserva la "
+        "indirecci&oacute;n en su lugar, seg&uacute;n la prueba del lector: el propio hebreo eligi&oacute; no "
+        "ser expl&iacute;cito, y una traducci&oacute;n m&aacute;s espec&iacute;fica que su fuente est&aacute; "
+        "tomando una decisi&oacute;n, no solo aclarando una. &#9888; El estante espa&ntilde;ol se divide "
+        "exactamente en este punto, y en direcciones opuestas entre s&iacute;: <span class=\"tag t-rv60\">RV60</span> "
+        "lee el v2 como &laquo;flujo de semen&raquo; desde el primer vers&iacute;culo, asumiendo el caso "
+        "espec&iacute;fico que el cap&iacute;tulo a&uacute;n no ha alcanzado; <span class=\"tag t-nvi\">NVI</span> "
+        "con &laquo;flujo inusual&raquo; conserva la ambig&uuml;edad que conserva el hebreo."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14981,6 +15006,38 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev15": [dict(
+        file="toros-roslin-woman-issue-of-blood.jpg",
+        title="Healing of the Woman with the Issue of Blood",
+        title_es="La curación de la mujer con flujo de sangre",
+        artist="T'oros Roslin",
+        year="1262",
+        location="Walters Art Museum, Baltimore (Toros Roslin Gospels, MS W.539)",
+        location_es="Museo de Arte Walters, Baltimore (Evangelios de Toros Roslin, MS W.539)",
+        alt="A small gold-ground manuscript miniature beside two columns of Armenian text. At left, "
+            "three haloed figures walk together — Christ in the center, flanked by two disciples. A "
+            "woman kneels at the lower right, reaching toward the hem of Christ's robe. Beyond her, "
+            "two more standing figures look on, one holding a small child.",
+        note="Armenian, not Western European, and considerably older than most art this project has "
+             "used — an illuminated Gospel page rather than a later oil or gouache. The kneeling woman "
+             "reaching for a hem rather than a face or a hand is exactly what the text describes: she "
+             "does not ask, does not speak first, does not wait to be summoned. This is Leviticus 15's "
+             "own zavah (vv25-30), painted at the one moment this chapter's whole elaborate contact-law "
+             "runs backward. &#9888; The standing pair at right, one holding a child, most likely belong "
+             "to the story Mark and Luke interleave with this one — Jairus and his daughter, waiting on "
+             "the same page for the same interrupted journey to resume.",
+        note_es="Armenia, no Europa occidental, y considerablemente más antigua que la mayoría del arte "
+                "que ha usado este proyecto —una página de Evangelio iluminada en vez de un óleo o "
+                "gouache posterior. Que la mujer arrodillada busque el borde de la ropa y no un rostro "
+                "ni una mano es exactamente lo que describe el texto: no pregunta, no habla primero, no "
+                "espera a ser llamada. Esta es la propia zavah de Levítico 15 (vv25-30), pintada en el "
+                "único momento en que toda la elaborada ley de contacto de este capítulo corre al revés. "
+                "&#9888; La pareja de pie a la derecha, uno de ellos con un niño en brazos, probablemente "
+                "pertenece a la historia que Marcos y Lucas entrelazan con esta —Jairo y su hija, "
+                "esperando en la misma página a que se reanude el mismo viaje interrumpido.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:T%27oros_Roslin_-_Healing_of_the_Woman_with_the_Issue_of_Blood_-_Walters_W539148V_-_Detail.jpg",
+    )],
     "lev13": [dict(
         file="tissot-healing-ten-lepers.jpg",
         title="The Healing of the Ten Lepers",
