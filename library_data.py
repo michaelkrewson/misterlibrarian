@@ -627,7 +627,7 @@ DICTIONARY = [
     ("gophrit", "gophrit", "גָּפְרִית", "gophrit",
      "Sulfur — the old Bibles' 'brimstone' — rained with fire on the cities (19:24); afterwards the fixed image of scorched judgment (Deuteronomy 29:23; Job 18:15; Revelation keeps it to the end).", (19, 24)),
     ("chesed", "chesed", "חֶסֶד", "chesed",
-     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels. ⚠ Psalm 23:6 pairs it with tov and hands both to radaph, the hunting verb: goodness and chesed do not follow the psalmist, they pursue him.", (19, 19)),
+     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels. ⚠ Psalm 23:6 pairs it with tov and hands both to radaph, the hunting verb: goodness and chesed do not follow the psalmist, they pursue him. ⚠ <a href=\"leviticus-20.html#v20-17\">Leviticus 20:17</a> (already on these pages) turns the very same word against brother-sister incest — 'it is a chesed,' rendered 'a disgrace' — in the identical book that opened with Lot begging for chesed at Sodom's gate, before his own daughters and their father became exactly this law's own case. Two real explanations exist and this translation does not choose: a second, homonymous root (cognate with Aramaic/Arabic words for shame) that only looks identical to the covenant-kindness word, or the same root turned bitterly ironic. <span class=\"tag t-kjv\">KJV</span> reads 'a wicked thing' here; <span class=\"tag t-asv\">ASV</span> 'a shameful thing'; <span class=\"tag t-niv\">NIV</span> 'a disgrace.'", (19, 19)),
     ("chemlah", "chemlah", "חֶמְלָה", "chemlah",
      "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
     ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
@@ -1998,7 +1998,7 @@ DICTIONARY = [
      "DEPRAVITY — deliberate, premeditated sexual wrongdoing, from a root meaning 'to plan, devise'; the word names not an act alone but the calculation behind it. Leviticus 18:17 uses it for one specific case (a man taking a woman and her daughter, or her granddaughters), distinct from this chapter's general umbrella term <a href=\"dictionary.html#toevah\">to'evah</a>, 'abomination.' <span class=\"tag t-kjv\">KJV</span> and <span class=\"tag t-niv\">NIV</span> both read 'wickedness'; <span class=\"tag t-asv\">ASV</span> has 'lewdness.' Ezekiel later makes zimah practically a technical term for calculated sexual betrayal (Ezekiel 23, not yet on these pages) — this chapter is the word's first appearance on these pages.",
      ("Leviticus", 18, 17)),
     ("tevel", "tevel", "תֶּבֶל", "tevel",
-     "PERVERSION — a rare word (Leviticus 18:23; 20:12, the latter not yet on these pages), from a root meaning 'to mix, confuse.' Where to'evah names something detestable and zimah names calculated wrongdoing, tevel names a violation of natural category itself — a boundary between kinds crossed rather than a rule broken. The three words sit near each other in this chapter's own vocabulary without ever being used interchangeably; this translation keeps them as three distinct English words rather than flattening them into one repeated 'abomination.'",
+     "PERVERSION — a rare word (Leviticus 18:23; <a href=\"leviticus-20.html#v20-12\">20:12</a>, both already on these pages), from a root meaning 'to mix, confuse.' Where to'evah names something detestable and zimah names calculated wrongdoing, tevel names a violation of natural category itself — a boundary between kinds crossed rather than a rule broken. The three words sit near each other in this chapter's own vocabulary without ever being used interchangeably; this translation keeps them as three distinct English words rather than flattening them into one repeated 'abomination.'",
      ("Leviticus", 18, 23)),
 ]
 
@@ -5744,6 +5744,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 20 ----
+    (("Leviticus", 20, 17), ("Genesis", 19, 19), "chesed — the covenant-kindness word Lot himself first speaks in the whole Bible, begging the angels for it at Sodom's gate, turned here against the exact crime his own daughters and their father commit before that chapter ends"),
+    (("Leviticus", 20, 9), ("Exodus", 21, 17), "cursing father or mother — the identical clause, word for word, standing in two different law codes"),
+    (("Leviticus", 20, 6), ("Leviticus", 19, 31), "mediums and spiritists — the bare prohibition given first without a penalty, then closed with one at both the opening and the closing verse of this chapter's own catalog"),
+    (("Leviticus", 20, 25), ("Leviticus", 10, 10), "lehavdil, 'to distinguish' — Aaron's own job description, still the stated reason for the whole clean/unclean system at this book's near-final restatement of it"),
     # ---- Leviticus 18 ----
     (("Leviticus", 18, 6), ("Genesis", 42, 9), "ervah, 'nakedness' — met first in its figurative extension, 'the nakedness of the land,' before this chapter gives the word its literal, primary home"),
     (("Leviticus", 18, 18), ("Genesis", 29, 28), "the ban on marrying two sisters as rivals — a law Jacob himself never kept, because it did not yet exist in his own lifetime"),
@@ -8181,6 +8186,9 @@ CHRON_CHAPTERS = {
     "lev18": dict(era="exodus",
                   when="Thirty verses framed as a boundary against two named cultures — 'not as they do in Egypt, not as they do in Canaan.' Twelve forbidden degrees of kinship each get their own paragraph break, one prohibition per verse; then, without pause, the list turns to marrying two sisters as rivals, sex during menstrual impurity, adultery, child sacrifice to Molech, male-male intercourse, and bestiality — all named 'abominations' together. It closes on the land itself as an agent that 'vomited out' its own inhabitants for these very practices, and a direct warning that Israel can suffer the identical fate.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. This chapter completes the run from Leviticus 1 straight through 19 with no gap — the last piece needed before Leviticus 20 restates the same catalog with prescribed penalties. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev20": dict(era="exodus",
+                  when="Leviticus 18's own catalog, restated with penalties attached: death by stoning for giving a child to Molech (with a backstop clause if the community itself looks away), death for cursing a parent, adultery, the same list of forbidden kinships as chapter 18, and bestiality — most closed with 'their blood is upon them.' Sibling incest and menstrual intercourse close differently, on 'bearing iniquity'; the uncle's-wife and brother's-wife cases close differently still, on dying childless. It closes where it opened, on mediums and spiritists, framing the whole chapter around the single stated reason for it all: 'you shall be holy, for I am holy.'",
+                  clock="⚠ Undated within the chapter, like Leviticus 16 and 17 before it — a single unbroken Masoretic unit with no internal paragraph break. Follows directly on Leviticus 18's own catalog, now given prescribed penalties. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -13400,7 +13408,16 @@ DICTIONARY_ES = {
     "chesed": ("amor leal",
         "AMOR LEAL, bondad de pacto — uno de los grandes intraducibles de la Biblia, y la palabra tras la "
         "«misericordia» de los Salmos. ⚠ El Salmo 23:6 lo empareja con tov y entrega ambos a radaph, el verbo "
-        "de caza: el bien y el amor leal no siguen al salmista, lo persiguen."),
+        "de caza: el bien y el amor leal no siguen al salmista, lo persiguen. ⚠ "
+        "<a href=\"leviticus-20.es.html#v20-17\">Lev&iacute;tico 20:17</a> (ya en estas p&aacute;ginas) "
+        "vuelve la misma palabra contra el incesto entre hermanos —«es un chesed», traducido «una "
+        "deshonra»— en el mismo libro que abri&oacute; con Lot suplicando chesed a las puertas de Sodoma, "
+        "antes de que sus propias hijas y su padre se convirtieran exactamente en el caso de esta ley. "
+        "Existen dos explicaciones reales y esta traducci&oacute;n no elige entre ellas: una segunda "
+        "ra&iacute;z homon&iacute;ma (emparentada con palabras aramea/&aacute;rabe para la verg&uuml;enza) "
+        "que solo parece id&eacute;ntica a la palabra de bondad de pacto, o la misma ra&iacute;z vuelta "
+        "am&aacute;rgamente ir&oacute;nica. KJV lee aqu&iacute; «una cosa perversa»; ASV «una cosa "
+        "vergonzosa»; NIV «una deshonra»."),
     "shem": ("nombre",
         "NOMBRE — lo que Babel intenta agarrar («hagámonos un nombre», Génesis 11:4) y lo que Dios regala "
         "(«engrandeceré tu nombre», 12:2). En el Salmo 23:3 es la razón misma por la que el pastor actúa: "
@@ -14341,8 +14358,9 @@ DICTIONARY_ES = {
         "todav&iacute;a no en estas p&aacute;ginas) &mdash;este cap&iacute;tulo es la primera "
         "aparici&oacute;n de la palabra en estas p&aacute;ginas."),
     "tevel": ("tevel",
-        "PERVERSI&Oacute;N &mdash;una palabra rara (Lev&iacute;tico 18:23; 20:12, esta &uacute;ltima "
-        "todav&iacute;a no en estas p&aacute;ginas), de una ra&iacute;z que significa «mezclar, "
+        "PERVERSI&Oacute;N &mdash;una palabra rara (Lev&iacute;tico 18:23; "
+        "<a href=\"leviticus-20.es.html#v20-12\">20:12</a>, ambas ya en estas p&aacute;ginas), "
+        "de una ra&iacute;z que significa «mezclar, "
         "confundir». Donde to'evah nombra algo detestable y zimah nombra maldad calculada, tevel nombra "
         "una violaci&oacute;n de la categor&iacute;a natural misma &mdash;un l&iacute;mite entre "
         "especies cruzado, en vez de una regla incumplida. Las tres palabras se sit&uacute;an cerca "
