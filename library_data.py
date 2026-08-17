@@ -72,7 +72,7 @@ DICTIONARY = [
     ('ovnayim', 'ovnayim', 'אָבְנָיִם', 'ovnayim', "THE TWO STONES — the potter's wheel, and one of the most informative words in the Hebrew Bible, because it is a DUAL: not 'wheel' but the dual of even, 'stone'. The word is a photograph of the machine — a lower stone turned by hand or foot driving an upper stone on a pivot and socket, with the clay riding on top — and the older versions still hear the number (KJV and ASV both have 'the wheels', plural, at Jeremiah 18:3; modern versions flatten it to one wheel). ⚠ It occurs only TWICE in the Bible, and the other place is startling: Exodus 1:16, where it is the BIRTH-STOOL the Hebrew mothers crouch on and Pharaoh tells the midwives to watch. One dual word for the potter's twin stones and for the two stones of childbirth — both of them the place where a life is given its shape. See the encyclopedia entry on the potter for how the craft was actually done.", ('Jeremiah', 18, 3)),
     ('chomer', 'chomer', 'חֹמֶר', 'chomer', "CLAY — wet, workable potter's clay, and by extension mud or mortar (it is the stuff of the Egyptian brick-quota in Exodus 1:14). ⚠ The whole force of the image in Jeremiah 18 depends on one physical fact about chomer that a reader today may not carry: WET clay can be collapsed and thrown again as often as you like, while FIRED clay can never be reworked, only smashed. That is why chapter 18's marred vessel is reshaped on the wheel and chapter 19's baked flask is broken 'so that it can never be mended again' (19:11) — two sign-acts, back to back, and the difference between them is the kiln. Isaiah turns the same noun into a prayer: 'we are the chomer, and you our potter' (64:8). Job grants the premise from the other side: 'I too was nipped off from the chomer' (33:6).", ('Jeremiah', 18, 4)),
     ('noash', "no'ash", 'נוֹאָשׁ', "no'ash", 'HOPELESS, desperate, given up — a rare word, and in Jeremiah 18:12 it is the people\'s ENTIRE answer to God, one flat syllable of a reply. The shelf spreads out over how to say it: KJV \'There is no hope\'; ASV \'It is in vain\'; NIV "It\'s no use"; NWT \'It is hopeless!\' ⚠ Note precisely what is being called hopeless. God has just said, in the same breath, that the outcome is NOT fixed — \'if that nation turns back from its evil, then I relent\' (18:8) — and has named the way out: \'turn back, each of you, from his evil way\' (18:11). So no\'ash is not a report on their circumstances. It is a verdict on the offer, and the chapter presents it as false. The same root turns up as plain resignation elsewhere (1 Samuel 27:1, Saul giving up the chase), which is what makes its use here so bleak: the word for abandoning a search is used for abandoning repentance.', ('Jeremiah', 18, 12)),
-    ("lepros", "lepros", "λεπρός", "lepros", "A LEPER — and the ancient category is wider than the modern disease. Greek lepros and the Hebrew tsara'at behind it cover a range of scaling, flaking skin conditions (and, in Leviticus, mould in cloth and walls too); Hansen's disease is only one candidate. ⚠ What made it devastating was less the pathology than the STATUS: Leviticus 13:45-46 puts the affected person outside the camp with torn clothes, calling out 'unclean', and contact transmits the uncleanness to whoever touches him (Leviticus 5:3). So when Matthew 8:3 says Jesus 'stretched out his hand and touched him', the sentence is deliberately shocking, and Matthew reports no defilement travelling the usual direction. The cleansed man is still sent to the priest with the offering of Leviticus 14 — certified by the ordinary machinery of the Law, not exempted from it.", ("Matthew", 8, 2)),
+    ("lepros", "lepros", "λεπρός", "lepros", "A LEPER — and the ancient category is wider than the modern disease. Greek lepros and the Hebrew tsara'at behind it (see the fuller entry, <a href=\"dictionary.html#tzaraat\">tzaraat</a>) cover a range of scaling, flaking skin conditions (and, in Leviticus, mould in cloth and walls too); Hansen's disease is only one candidate. ⚠ What made it devastating was less the pathology than the STATUS: <a href=\"leviticus-13.html#v13-45\">Leviticus 13:45-46</a> (now on these pages) puts the affected person outside the camp with torn clothes, calling out 'unclean', and contact transmits the uncleanness to whoever touches him (Leviticus 5:3). So when Matthew 8:3 says Jesus 'stretched out his hand and touched him', the sentence is deliberately shocking, and Matthew reports no defilement travelling the usual direction. The cleansed man is still sent to the priest with the offering of Leviticus 14 — certified by the ordinary machinery of the Law, not exempted from it.", ("Matthew", 8, 2)),
     ("basanizo", "basanizō", "βασανίζω", "basanizō", "To TORMENT — originally to test metal on a touchstone (basanos), then to examine under torture, then simply to torture or torment. ⚠ Matthew 8 uses it twice, at both ends of the chapter and of the social order: the centurion's boy lies 'terribly TORMENTED' (8:6), and the demons across the lake ask whether Jesus has come 'before the time to TORMENT us' (8:29). A servant's suffering and a demon's dread are named with one word, and nothing in between explains the coincidence. It returns a third time at 14:24, where it is no longer a person or a spirit but the disciples' own BOAT that is 'battered' by the waves — suffering, dread, and now plain physical distress, all inside one verb Matthew keeps reaching for. The identical demon's plea appears again at Mark 5:7, “do not torment me” — the Gerasene spirit using Matthew's exact word for what it fears from Jesus.", ("Matthew", 8, 6)),
     ("huios-tou-anthropou", "ho huios tou anthrōpou", "ὁ υἱὸς τοῦ ἀνθρώπου", "ho huios tou anthrōpou", "THE SON OF MAN — Jesus' own name for himself, used about thirty times in Matthew and almost never by anyone else. ⚠ Two backgrounds, both genuine, pulling opposite ways. In EZEKIEL 'son of man' is simply how God addresses the prophet: mortal, a human being, nothing more. In DANIEL 7:13 — which is Aramaic, kevar enash — 'one like a son of man' comes with the clouds of heaven to the Ancient of Days and receives dominion and a kingdom that will not pass away. So the phrase can mean 'just a man' or 'the figure who is given the kingdom', and Jesus uses it in both directions: at its first appearance (Matthew 8:20) it belongs to a man with nowhere to sleep, and at 24:30 to one coming on the clouds. That double edge is much of its usefulness — it says something without settling it, which is why the objectors in the Gospels never quite have a charge to bring until he answers under oath.", ("Matthew", 8, 20)),
     ("oligopistos", "oligopistos", "ὀλιγόπιστος", "oligopistos", "LITTLE-FAITH — one Greek word, oligos ('little') + pistis ('faith'), and as far as we can tell Matthew's own coinage; it appears in the New Testament essentially only on Jesus' lips. ⚠ It is NOT unbelief. The disciples in the boat woke him, which is a kind of faith; what he objects to is its SIZE (Matthew 8:26). He uses it again to Peter sinking on the water (14:31), to all of them over the bread (16:8), and at 6:30 of people who worry about clothes. The word is a rebuke and a diagnosis rather than a dismissal — the same people are still in the boat, and still called disciples, at the end of the sentence.", ("Matthew", 8, 26)),
@@ -1005,7 +1005,7 @@ DICTIONARY = [
     ("kaved", "kaved", "כָּבֵד", "kaved",
      "HEAVY, weighty — and of a heart, dull and unresponsive. It is one of THREE verbs Exodus uses for Pharaoh's refusal: KAVED ('made heavy,' 8:11, 28; 9:34), CHAZAQ ('made strong, firm,' 7:13; 8:15), and QASHAH ('made stubborn,' 7:3). ⚠️ Most English versions flatten all three into 'hardened,' which hides that Exodus is describing the same refusal from different angles — a heart weighed down like a stone, braced like a wall, stiffened like a neck — and that the same book says both that PHARAOH did it and that GOD did it, without ever reconciling them. The root also gives kavod, 'glory' — literally 'weight.'", ("Exodus", 8, 11)),
     ("shechin", "shechin", "שְׁחִין", "shechin",
-     "A BOIL, an inflamed ulcerating sore — the sixth plague, 'a SHECHIN breaking out in blisters on man and on beast' (Exodus 9:9-11), severe enough that Egypt's magicians could not stand up under it. The word runs through the rest of the Bible as the mark of affliction: the sores Leviticus 13 teaches the priest to examine; the boil Hezekiah is healed of by a cake of figs (2 Kings 20:7); and the sores that cover Job from the sole of his foot to his crown (Job 2:7). ⚠️ Most pointedly, Deuteronomy 28:27 threatens a disobedient Israel with 'the SHECHIN OF EGYPT' — the plague they watched fall on their oppressors, named as a covenant curse against themselves.", ("Exodus", 9, 9)),
+     "A BOIL, an inflamed ulcerating sore — the sixth plague, 'a SHECHIN breaking out in blisters on man and on beast' (Exodus 9:9-11), severe enough that Egypt's magicians could not stand up under it. The word runs through the rest of the Bible as the mark of affliction: the accidental scar <a href=\"leviticus-13.html#v13-18\">Leviticus 13:18-23</a> (now on these pages) teaches the priest to distinguish from a fresh affliction breaking out inside it; the boil Hezekiah is healed of by a cake of figs (2 Kings 20:7); and the sores that cover Job from the sole of his foot to his crown (Job 2:7). ⚠️ Most pointedly, Deuteronomy 28:27 threatens a disobedient Israel with 'the SHECHIN OF EGYPT' — the plague they watched fall on their oppressors, named as a covenant curse against themselves.", ("Exodus", 9, 9)),
     ("barad", "barad", "בָּרָד", "barad",
      "HAIL — the seventh plague, and in the Bible a weapon rather than weather. Exodus 9 describes it with fire flashing inside it, shattering trees and killing whatever was left in the open. Joshua 10:11 records that in the battle at Beth-horon 'more died from the HAILSTONES than the sons of Israel killed with the sword,' and Job is asked whether he has seen 'the storehouses of the HAIL, which I have reserved for the time of trouble, for the day of battle and war' (38:22-23). Hail falls again as the last plague of Revelation 16:21 — the plague cycle of Exodus is the pattern the last book of the Bible reaches for.", ("Exodus", 9, 18)),
     ("tzaddiq", "tzaddiq", "צַדִּיק", "tzaddiq",
@@ -1955,6 +1955,18 @@ DICTIONARY = [
     ("zara", "zara", "\u05d6\u05b8\u05e8\u05b7\u05e2", "zara",
      "TO SOW \u2014 the ordinary farmer's verb, and the root behind <em>zera</em>, seed or offspring. It runs through the third day of creation, where the earth brings forth \u2018plants bearing seed\u2019 (<a href=\"genesis-1.html#v11\">Genesis 1:11</a>, already on these pages), and through the sowing-seed exemption in the purity laws (<a href=\"leviticus-11.html#v11-37\">Leviticus 11:37</a>). \u26a0 Its strangest use gives a whole Torah portion its name: <em>tazria</em>, a causative form, opens <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages) of a WOMAN \u2014 literally \u2018when a woman produces seed and bears a male.\u2019 KJV and ASV keep it (\u2018conceived seed\u2019); NIV and NWT smooth it to \u2018becomes pregnant\u2019, and on the Spanish shelf only TNM footnotes the literal sense. Keeping it puts the woman grammatically where Genesis 1 puts the earth.",
      ("Leviticus", 12, 2)),
+    ("tzaraat", "tzaraat", "צָרַע֪ת", "tzaraat",
+     "A SCALY DISEASE — traditionally ‘leprosy’, and the tradition is where the trouble starts. Around the 2nd century BC the Septuagint rendered tzaraat with Greek <em>lepros</em>, ‘scaly’ — an honest choice for its day, since true Hansen’s disease (<em>Mycobacterium leprae</em>) went by a wholly different Greek name, <em>elephantiasis</em>; ancient medicine kept the two apart. The narrowing happened later, in Latin and then in English, as ‘leprosy’ hardened into the name of one specific disease and no other — so a modern reader meets the King James’s word and imports a diagnosis the Hebrew never makes. ⚠ <a href=\"leviticus-13.html\">Leviticus 13</a> diagnoses tzaraat by depth, spreading and hair colour, and legislates the identical word for wool, leather, and (Leviticus 14, not yet on these pages) a house wall — none of which a bacterial skin infection can do. This translation reads ‘a scaly disease’ throughout rather than ‘leprosy’, following <span class=\"tag t-niv\">NIV</span>’s ‘defiling skin disease’ and Spanish <span class=\"tag t-nvi\">NVI</span>’s ‘infección’ off the traditional word; <span class=\"tag t-nwt\">NWT</span> keeps ‘the disease of leprosy’ even here — one of the rare places this shelf’s most exacting version does not correct the tradition. See also the Greek-side entry <a href=\"dictionary.html#lepros\">lepros</a>, written when Matthew 8 first met the word.",
+     ("Leviticus", 13, 2)),
+    ("nega", "nega", "נֶגַע", "nega",
+     "AN AFFLICTION, a mark, a blow — the general word Leviticus 13 uses for whatever the priest is examining, BEFORE a diagnosis decides what it is. A nega is not yet <a href=\"dictionary.html#tzaraat\">tzaraat</a>; it becomes tzaraat, or it does not, only after the priest looks. ⚠ The same root (<em>naga</em>, ‘to touch, to strike’) is the ordinary Hebrew verb for a plague sent by God — Pharaoh’s household is struck ‘with great NEGA’IM’ over Sarai (<a href=\"genesis-12.html#v12-17\">Genesis 12:17</a>, already on these pages), the identical noun — so the chapter’s whole vocabulary quietly carries the idea that whatever is on the skin counts, grammatically, as a small-scale visitation: the same word used of the plagues on a household, shrunk down to the size of one person’s arm. This translation keeps ‘the affliction’ as the running English handle through the chapter’s repeating diagnostic formula, reserving ‘a scaly disease’ for the moments the text itself commits to that verdict.",
+     ("Leviticus", 13, 2)),
+    ("netek", "netek", "נֶתֶק", "netek",
+     "A SCALE — tzaraat's own subtype for the scalp and the beard, diagnosed by a different tell than the rest of the chapter: not white hair but hair that has turned THIN and YELLOW (13:30). Some dermatologists have proposed favus, a fungal scalp infection that does exactly this, though the identification (like most in this chapter) cannot be checked against a physical specimen. ⚠ KJV keeps the old English word for it, ‘scall’ (related to ‘scale’ and ‘scalp’, now otherwise dead in the language); this translation reads the plainer ‘a scale’ instead, on the reader test — an obsolete word believed to be understood is worse than a live one that sends the reader to this entry. The text itself treats netek as a named subclass of tzaraat rather than a different disease: v30 calls it, in one breath, both ‘a scale’ and ‘scaly disease of the head or the beard.’",
+     ("Leviticus", 13, 30)),
+    ("bohaq", "bohaq", "בֹּהַק", "bohaq",
+     "A true HAPAX LEGOMENON — <em>bohaq</em> occurs exactly once in the entire Hebrew Bible, at 13:39, and nowhere else, so there is no second occurrence anywhere in Scripture to check a meaning against. The verse itself supplies the only evidence: a faded white eruption on the skin that the priest is to declare clean outright, no quarantine, no reassessment — probably what modern dermatology calls vitiligo or leukoderma, a harmless loss of pigment. ⚠ Printed untranslated here, matching this project’s own rule for a true hapax (see <a href=\"leviticus-11.html\">Leviticus 11</a>’s solam and hargol, already on these pages): a confident-sounding English gloss for a word attested once would claim more certainty than the evidence supports. The King James guesses ‘freckled spot’; ASV, older and more cautious, transliterates it ‘tetter’ (an archaic word for a skin eruption, not a translation of the Hebrew); NIV and NWT both land on ‘a harmless rash’, independently converging on the one thing the verse is actually sure of.",
+     ("Leviticus", 13, 39)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5699,6 +5711,12 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 13 ----
+    (("Leviticus", 13, 2), ("Matthew", 8, 4), "the chapter's own opening instruction — 'he shall be brought to the priest' — closed centuries later by the healed man's own closing instruction: 'go, show yourself to the priest'"),
+    (("Leviticus", 13, 18), ("Exodus", 9, 9), "shechin, 'a boil' — the sixth plague on Egypt's own skin, and the accidental scar Leviticus 13 teaches the priest to distinguish from a fresh affliction breaking out inside it"),
+    (("Leviticus", 13, 46), ("Matthew", 8, 3), "'outside the camp,' 'his dwelling shall be' — reversed centuries later by a hand that reaches out and touches him anyway"),
+    (("Leviticus", 13, 46), ("Mark", 1, 41), "'his dwelling shall be outside the camp' — the isolation this chapter legislates, undone by a hand stretched out in anger at what the disease had done to him, not at him"),
+    (("Genesis", 12, 17), ("Leviticus", 13, 2), "the root naga, 'to strike' — Pharaoh's household struck with negaim gedolim, 'great blows', the same noun this chapter uses for whatever mark the priest examines on a person's own skin"),
     # ---- Leviticus 12 ----
     (("Leviticus", 12, 8), ("Luke", 2, 24), "the concession for a mother who cannot afford a lamb \u2014 quoted, without comment, to report what the family of the Messiah actually brought to the temple"),
     (("Genesis", 17, 12), ("Leviticus", 12, 3), "circumcision on the eighth day \u2014 commanded to Abraham centuries earlier, and dropped here as a single verse into the middle of a law about the mother, so that her uncleanness never delays the child's rite"),
@@ -8086,6 +8104,9 @@ CHRON_CHAPTERS = {
     "lev12": dict(era="exodus",
                   when="The law for a woman who has given birth: seven days unclean and thirty-three more in the blood of her purity for a son, doubled for a daughter, with the boy's circumcision on the eighth day dropped in as a single verse. At the end she brings a lamb and a bird to the tent of meeting \u2014 or, if she cannot afford the lamb, two birds, the concession Luke reports Mary and Joseph using.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus, and joined to what precedes it by subject rather than by any time marker: it applies the clean/unclean vocabulary of Leviticus 11 to a person instead of an animal. Still inside the Sinai window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages). The circumcision commandment it restates is far older, given to Abraham at Genesis 17:12 (already on these pages)."),
+    "lev13": dict(era="exodus",
+                  when="Fifty-nine verses of priestly diagnostic law for a scaly skin affliction — traditionally 'leprosy', a word this translation retires — sorting swelling from scab from bright spot by depth, spreading and hair colour, then following the identical affliction into wool, linen and leather. It closes on the afflicted person's own public cry, 'Unclean! Unclean!', and a life lived outside the camp until the affliction lifts.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus, and — like Leviticus 11 — addressed to Moses AND Aaron together, since the priesthood executes this law in person. Still inside the same Sinai window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14054,6 +14075,59 @@ DICTIONARY_ES = {
         "p&aacute;ginas) hablando de una MUJER &mdash;literalmente &laquo;cuando una mujer produce simiente y "
         "da a luz un var&oacute;n&raquo;. RV60 y NVI imprimen ambas &laquo;conciba&raquo;; solo TNM anota el "
         "sentido literal. Conservarlo pone a la mujer, gramaticalmente, donde G&eacute;nesis 1 pone a la tierra."),
+    "tzaraat": ("tzaraat",
+        "UNA ENFERMEDAD ESCAMOSA &mdash;tradicionalmente &laquo;lepra&raquo;, y la tradici&oacute;n es donde "
+        "empieza el problema. Hacia el siglo II a.C. la Septuaginta tradujo <em>tzaraat</em> con el griego "
+        "<em>lepros</em>, &laquo;escamoso&raquo; &mdash;una elecci&oacute;n honesta para su &eacute;poca, "
+        "porque la verdadera enfermedad de Hansen (<em>Mycobacterium leprae</em>) ten&iacute;a un nombre "
+        "griego totalmente distinto, <em>elefant&iacute;asis</em>; la medicina antigua manten&iacute;a ambas "
+        "separadas. El estrechamiento ocurri&oacute; despu&eacute;s, en lat&iacute;n y luego en las lenguas "
+        "modernas, cuando &laquo;lepra&raquo; se endureci&oacute; hasta nombrar una sola enfermedad y ninguna "
+        "otra &mdash;as&iacute; que un lector actual se encuentra con la palabra tradicional e importa un "
+        "diagn&oacute;stico que el hebreo nunca hace. &#9888; <a href=\"leviticus-13.es.html\">Lev&iacute;tico "
+        "13</a> diagnostica <em>tzaraat</em> por profundidad, propagaci&oacute;n y color del pelo, y legisla "
+        "la misma palabra para la lana, el cuero y (Lev&iacute;tico 14, todav&iacute;a no en estas p&aacute;ginas) "
+        "la pared de una casa &mdash;nada de lo cual puede hacer una infecci&oacute;n bacteriana de la piel. "
+        "Esta traducci&oacute;n usa &laquo;una enfermedad escamosa&raquo; en todo el cap&iacute;tulo en lugar "
+        "de &laquo;lepra&raquo;: <span class=\"tag t-nvi\">NVI</span> ya se aparta de la palabra tradicional "
+        "con &laquo;infecci&oacute;n&raquo; en el v2, y RV60 la conserva con &laquo;llaga de lepra&raquo;; TNM "
+        "mantiene &laquo;la enfermedad de la lepra&raquo; incluso aqu&iacute;, uno de los pocos lugares donde "
+        "la versi&oacute;n m&aacute;s exacta de este estante no corrige la tradici&oacute;n."),
+    "nega": ("nega",
+        "UNA AFECCI&Oacute;N, una marca, un golpe &mdash;la palabra general que Lev&iacute;tico 13 usa para "
+        "lo que el sacerdote est&aacute; examinando, ANTES de que un diagn&oacute;stico decida qu&eacute; es. "
+        "Un <em>nega</em> todav&iacute;a no es <a href=\"diccionario.html#tzaraat\">tzaraat</a>; se convierte "
+        "en <em>tzaraat</em>, o no, solo despu&eacute;s de que el sacerdote mira. &#9888; La misma ra&iacute;z "
+        "(<em>naga</em>, &laquo;tocar, golpear&raquo;) es el verbo hebreo corriente para una plaga enviada "
+        "por Dios &mdash;la casa de Fara&oacute;n es golpeada &laquo;con grandes NEGA&rsquo;IM&raquo; por causa "
+        "de Sarai (G&eacute;nesis 12:17, todav&iacute;a no en estas p&aacute;ginas en espa&ntilde;ol), el mismo "
+        "sustantivo&mdash;, de modo que todo el vocabulario del cap&iacute;tulo lleva, en silencio, la idea de "
+        "que lo que hay en la piel cuenta, gramaticalmente, como una peque&ntilde;a visitaci&oacute;n: la misma "
+        "palabra usada de las plagas sobre una casa, reducida al tama&ntilde;o del brazo de una persona."),
+    "netek": ("netek",
+        "UNA ESCAMA &mdash;el subtipo propio de <em>tzaraat</em> para el cuero cabelludo y la barba, "
+        "diagnosticado por una se&ntilde;al distinta del resto del cap&iacute;tulo: no pelo blanco sino pelo "
+        "que se ha vuelto FINO y AMARILLO (13:30). Algunos dermat&oacute;logos han propuesto el favus, una "
+        "infecci&oacute;n f&uacute;ngica del cuero cabelludo que hace exactamente eso, aunque la "
+        "identificaci&oacute;n (como casi todas las de este cap&iacute;tulo) no puede comprobarse contra un "
+        "esp&eacute;cimen f&iacute;sico. &#9888; El propio texto trata <em>netek</em> como una subclase con "
+        "nombre de <em>tzaraat</em> y no como una enfermedad distinta: el v30 lo llama, en un mismo aliento, "
+        "tanto &laquo;una escama&raquo; como &laquo;enfermedad escamosa de la cabeza o de la barba&raquo;."),
+    "bohaq": ("bohaq",
+        "UN VERDADERO HAPAX LEGOMENON &mdash;<em>bohaq</em> aparece exactamente una vez en toda la Biblia "
+        "hebrea, en 13:39, y en ning&uacute;n otro lugar, as&iacute; que no hay una segunda ocurrencia en toda "
+        "la Escritura contra la cual comprobar un significado. El propio vers&iacute;culo aporta la &uacute;nica "
+        "evidencia: una erupci&oacute;n blanca desva&iacute;da en la piel que el sacerdote debe declarar pura "
+        "de inmediato, sin cuarentena, sin reevaluaci&oacute;n &mdash;probablemente lo que la dermatolog&iacute;a "
+        "moderna llama vit&iacute;ligo o leucodermia, una p&eacute;rdida inofensiva de pigmento. &#9888; Se "
+        "imprime aqu&iacute; sin traducir, siguiendo la propia regla de este proyecto para un verdadero hapax "
+        "(v&eacute;anse <em>solam</em> y <em>hargol</em> en <a href=\"leviticus-11.es.html\">Lev&iacute;tico "
+        "11</a>, ya en estas p&aacute;ginas): una traducci&oacute;n al espa&ntilde;ol que sonara segura para "
+        "una palabra atestiguada una sola vez reclamar&iacute;a m&aacute;s certeza de la que hay evidencia. "
+        "RV60 y NVI convergen, cada una por su lado, en &laquo;una erupci&oacute;n cut&aacute;nea&raquo;/&laquo;"
+        "manchas blancas algo oscurecidas&raquo;; TNM traduce &laquo;una erupci&oacute;n inofensiva&raquo;, "
+        "coincidiendo con NIV en ingl&eacute;s en lo &uacute;nico de lo que el vers&iacute;culo est&aacute; "
+        "realmente seguro."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -14871,6 +14945,44 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev13": [dict(
+        file="tissot-healing-ten-lepers.jpg",
+        title="The Healing of the Ten Lepers",
+        title_es="La curación de los diez leprosos",
+        artist="James Tissot",
+        year="between 1886 and 1894",
+        location="Brooklyn Museum",
+        location_es="Museo de Brooklyn",
+        alt="A hillside above a hilltop town and olive groves. At left, Christ in a white robe stands with "
+            "both hands raised. Ten ragged figures kneel and crouch on the bare rock before him, arms "
+            "outstretched toward him, several with their hands, feet or legs wrapped in white cloth "
+            "bandages. One figure in a gold robe walks away up the path at the far left.",
+        note="Not this chapter's own narrative &mdash; Leviticus 13 has none, only law &mdash; but the "
+             "people this law governed, painted at the moment its authority over them lifts. Tissot's ten "
+             "kneel on bare rock with hands, feet and shins wrapped in white cloth, the visible mark of "
+             "exactly the affliction fifty-nine verses of this chapter exist to diagnose; Christ stands "
+             "apart from them at the distance this chapter's own v46 requires, both hands raised rather "
+             "than reaching to touch, since in Luke's account (17:11-19, not yet on these pages) the ten "
+             "are healed at a word, from a distance, and only one &mdash; a Samaritan &mdash; turns back "
+             "before reaching the priest. &#9888; The gold-robed figure walking off at the left edge is "
+             "probably one of the nine, already on his way to ‘show himself to the priest’ exactly "
+             "as this law and Leviticus 14 (not yet on these pages) require &mdash; obedience to Leviticus "
+             "13 painted as a man leaving the frame.",
+        note_es="No es la propia escena de este capítulo &mdash;Levítico 13 no tiene ninguna, solo ley&mdash;, "
+                "sino la gente a quien gobernaba esta ley, pintada en el momento en que su autoridad sobre "
+                "ellos se levanta. Los diez de Tissot se arrodillan sobre roca desnuda con las manos, los "
+                "pies y las espinillas envueltos en tela blanca, la marca visible de la misma afección que "
+                "cincuenta y nueve versículos de este capítulo existen para diagnosticar; Cristo permanece "
+                "aparte de ellos, a la distancia que exige el propio v46 de este capítulo, con ambas manos "
+                "alzadas en vez de extendidas para tocar, ya que en el relato de Lucas (17:11-19, todavía no "
+                "en estas páginas) los diez son sanados a distancia, con una palabra, y solo uno &mdash;un "
+                "samaritano&mdash; regresa antes de llegar al sacerdote. &#9888; La figura de manto dorado "
+                "que se aleja en el borde izquierdo es probablemente uno de los nueve, ya de camino a "
+                "&laquo;mostrarse al sacerdote&raquo; tal como exige esta ley y Levítico 14 (todavía no en "
+                "estas páginas) &mdash;la obediencia a Levítico 13 pintada como un hombre que sale del cuadro.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Healing_of_Ten_Lepers_(Gu%C3%A9rison_de_dix_l%C3%A9preux)_-_James_Tissot_-_overall.jpg",
+    )],
     "lev12": [dict(
         file="lorenzetti-presentation-temple.jpg",
         title="The Presentation in the Temple",
