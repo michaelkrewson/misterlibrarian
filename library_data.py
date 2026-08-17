@@ -1213,7 +1213,7 @@ DICTIONARY = [
     ("etnan", "etnan", "אֶתְנַן", "etnan",
      "A HARLOT'S WAGE — the specific fee paid to a prostitute, a word the law singles out: 'you shall not bring the wage of a harlot (etnan) or the price of a dog into the house of Jehovah' (Deuteronomy 23:18), because it is 'an abomination.' ⚠ Micah 1:7 turns it double-edged on Samaria: the prophets routinely call idolatry 'whoring' after other gods, so the city's idols ARE a harlot's wages; and the gold that gilded them had been gathered from cult offerings and tribute — so 'from a harlot's wage she gathered them, and to a harlot's wage they will return' (the plundered idol-gold ends up back in the temples of Assyria, where such money circulates). Idolatry described as prostitution, with the economics to match.", ("Micah", 1, 7)),
     ("qorchah", "qorchah", "קָרְחָה", "qorchah",
-     "BALDNESS — specifically a bald patch made by SHAVING the head as a mourning rite. Deuteronomy 14:1 forbids it ('you shall not make any baldness between your eyes for the dead') and Leviticus 21:5 forbids it to priests — yet the prophets keep commanding it as the fitting response to catastrophe (Isaiah 22:12; Jeremiah 16:6; Amos 8:10; Ezekiel 7:18). ⚠ Micah 1:16 turns it on the land as a bereaved mother: 'make yourself BALD… make your baldness wide as the vulture's, for your children have gone into exile' — shave your whole head bare, like the griffon-vulture's naked scalp, because your people are being deported.", ("Micah", 1, 16)),
+     "BALDNESS — specifically a bald patch made by SHAVING the head as a mourning rite. Deuteronomy 14:1 forbids it ('you shall not make any baldness between your eyes for the dead') and <a href=\"leviticus-21.html#v21-5\">Leviticus 21:5</a> forbids it to priests — yet the prophets keep commanding it as the fitting response to catastrophe (Isaiah 22:12; Jeremiah 16:6; Amos 8:10; Ezekiel 7:18). ⚠ Micah 1:16 turns it on the land as a bereaved mother: 'make yourself BALD… make your baldness wide as the vulture's, for your children have gone into exile' — shave your whole head bare, like the griffon-vulture's naked scalp, because your people are being deported.", ("Micah", 1, 16)),
     ("nesher", "nesher", "נֶשֶׁר", "nesher",
      "The great EAGLE or griffon-VULTURE — the huge soaring bird of the crags, and the same Hebrew word for both (they are hard to tell apart at altitude, and the biblical writers do not try). ⚠ It carries opposite senses by context: SWIFTNESS and height (God bears Israel 'on eagles' wings,' Exodus 19:4; the enemy 'swoops like an eagle,' Deuteronomy 28:49; Obadiah 4, 'though you set your nest among the stars'); and, as a carrion-VULTURE, DEATH and mourning — Micah 1:16, 'make your baldness wide as the NESHER's,' because the griffon-vulture has a bare, down-covered head that looks shaved. The context, not the word, tells you which bird: the eagle that lifts, or the vulture that waits.", ("Micah", 1, 16)),
     ("beliyaal", "beliyaal", "בְּלִיַּעַל", "beliyaal",
@@ -2000,6 +2000,15 @@ DICTIONARY = [
     ("tevel", "tevel", "תֶּבֶל", "tevel",
      "PERVERSION — a rare word (Leviticus 18:23; <a href=\"leviticus-20.html#v20-12\">20:12</a>, both already on these pages), from a root meaning 'to mix, confuse.' Where to'evah names something detestable and zimah names calculated wrongdoing, tevel names a violation of natural category itself — a boundary between kinds crossed rather than a rule broken. The three words sit near each other in this chapter's own vocabulary without ever being used interchangeably; this translation keeps them as three distinct English words rather than flattening them into one repeated 'abomination.'",
      ("Leviticus", 18, 23)),
+    ("chalalah", "chalalah", "חֲלָלָה", "chalalah",
+     "A PROFANED WOMAN — from chalal, 'to profane, pierce, defile,' the same root behind chillel, 'to profane' (a name, the sabbath, God's own holiness) throughout Leviticus. A priest may not marry one (21:7), and the high priest may not marry one even in addition to being unable to marry a widow (21:14) — the term names a woman disqualified by a prior sexual history or (per later rabbinic reading) born of a union the priesthood itself forbids, not a moral judgment on the woman herself so much as a status that would compromise the priestly line's own required purity. The identical root gives this chapter its other central case: a priest's daughter who 'profanes herself' by prostitution 'profanes her father' (21:9) — the same verb running from a woman's own status to the man whose office her conduct compromises.",
+     ("Leviticus", 21, 7)),
+    ("mum", "mum", "מוּם", "mum",
+     "A BLEMISH — the chapter's own technical umbrella term for any physical condition disqualifying a priest from altar service (21:17-23): blindness, lameness, a mutilated face, a limb too long or broken, a hunchback, dwarfism, eye disease, skin disease, crushed testicles. ⚠ The same word governs sacrificial animals two chapters later (Leviticus 22:20-25, not yet on these pages) — the identical standard of physical wholeness applied to both the offering and the one who offers it. Critically, mum disqualifies a priest from APPROACHING the altar specifically (21:23) while explicitly leaving intact his standing as a priest and his right to eat the holy bread (21:22) — a distinction the text itself insists on, not a modern gloss added to soften it.",
+     ("Leviticus", 21, 17)),
+    ("baal-beamav", "ba'al be'amav", "בַּעַל בְּעַמָּיו", "ba'al be'amav",
+     "A genuinely uncertain phrase (21:4). <em>Ba'al</em> ordinarily means either 'lord, master, chief' or, in a marital sense, 'husband' — and the two readings send this clause in different directions. <span class=\"tag t-kjv\">KJV</span> and <span class=\"tag t-asv\">ASV</span> both take the 'chief man' sense: a priest may not defile himself for the dead even as a person of standing among his people. Others read <em>ba'al</em> literally as 'husband,' restricting the verse to in-laws gained through marriage rather than blood relatives — consistent with vv2-3's own list running strictly by blood. Both readings are defended in the literature; this translation does not choose.",
+     ("Leviticus", 21, 4)),
 ]
 
 ENCYCLOPEDIA = [
@@ -2274,7 +2283,7 @@ ENCYCLOPEDIA = [
               "archaeological attestation: an ossuary found in a burial cave in the Peace Forest south of "
               "Jerusalem in 1990 is inscribed \u2018Yehosef bar Qayafa\u2019, Joseph son of Caiaphas, and is "
               "widely though not universally accepted as his. Matthew has him preside over a night hearing, "
-              "put Jesus under oath, and tear his garments at the answer &mdash; the one gesture Leviticus 21:10 "
+              "put Jesus under oath, and tear his garments at the answer &mdash; the one gesture <a href=\"leviticus-21.html#v21-10\">Leviticus 21:10</a> "
               "forbids his office, though later Jewish tradition distinguished a judicial tearing on hearing "
               "blasphemy from the mourning-tear the Law prohibits."),
     dict(slug="sanhedrin", name="Sanhedrin", kind="people",
@@ -5744,6 +5753,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 21 ----
+    (("Leviticus", 21, 5), ("Leviticus", 19, 27), "the identical mourning-practice ban — no bald spot, no trimmed beard corners, no cuts in the flesh — first given to all Israel, now restated word for word for priests specifically"),
+    (("Leviticus", 21, 9), ("Leviticus", 19, 29), "chalal, 'to profane' — the general warning against profaning a daughter through prostitution, now given its specific priestly penalty"),
+    (("Leviticus", 21, 10), ("Mark", 14, 63), "the high priest's own ban on tearing his clothes — the exact gesture Caiaphas performs at Jesus's trial, breaking a law written for his office specifically"),
+    (("Leviticus", 21, 23), ("Leviticus", 11, 44), "the standing distinction this book keeps between approach and worth — a blemished priest barred from the altar, not from the priesthood or from provision"),
     # ---- Leviticus 20 ----
     (("Leviticus", 20, 17), ("Genesis", 19, 19), "chesed — the covenant-kindness word Lot himself first speaks in the whole Bible, begging the angels for it at Sodom's gate, turned here against the exact crime his own daughters and their father commit before that chapter ends"),
     (("Leviticus", 20, 9), ("Exodus", 21, 17), "cursing father or mother — the identical clause, word for word, standing in two different law codes"),
@@ -8189,6 +8203,9 @@ CHRON_CHAPTERS = {
     "lev20": dict(era="exodus",
                   when="Leviticus 18's own catalog, restated with penalties attached: death by stoning for giving a child to Molech (with a backstop clause if the community itself looks away), death for cursing a parent, adultery, the same list of forbidden kinships as chapter 18, and bestiality — most closed with 'their blood is upon them.' Sibling incest and menstrual intercourse close differently, on 'bearing iniquity'; the uncle's-wife and brother's-wife cases close differently still, on dying childless. It closes where it opened, on mediums and spiritists, framing the whole chapter around the single stated reason for it all: 'you shall be holy, for I am holy.'",
                   clock="⚠ Undated within the chapter, like Leviticus 16 and 17 before it — a single unbroken Masoretic unit with no internal paragraph break. Follows directly on Leviticus 18's own catalog, now given prescribed penalties. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev21": dict(era="exodus",
+                  when="Priestly holiness law in two tiers. Ordinary priests may defile themselves for corpse contact only for their five closest relatives, may not follow ordinary mourning practices, and may not marry a prostitute, a profaned woman, or a divorced woman. The high priest's own rules are stricter still — no torn clothes, no corpse contact even for his own parents, no leaving the sanctuary, and marriage restricted to a virgin of his own people. The chapter closes with a long list of physical blemishes barring a priest from altar service specifically, while explicitly preserving his standing as a priest and his right to eat the holy bread.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. Its mourning-practice law (v5) restates, word for word, a rule already given to all Israel at Leviticus 19:27-28 (already on these pages). Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14367,6 +14384,39 @@ DICTIONARY_ES = {
         "unas de otras en el propio vocabulario de este cap&iacute;tulo sin usarse jam&aacute;s de "
         "forma intercambiable; esta traducci&oacute;n las conserva como tres palabras espa&ntilde;olas "
         "distintas en vez de aplanarlas en una sola «abominaci&oacute;n» repetida."),
+    "chalalah": ("chalalah",
+        "UNA MUJER PROFANADA &mdash;de chalal, «profanar, traspasar, contaminar», la misma ra&iacute;z "
+        "detr&aacute;s de chillel, «profanar» (un nombre, el s&aacute;bado, la santidad misma de Dios) "
+        "en todo Lev&iacute;tico. Un sacerdote no puede casarse con una (21:7), y el sumo sacerdote no "
+        "puede casarse con una ni siquiera adem&aacute;s de no poder casarse con una viuda (21:14) "
+        "&mdash;el t&eacute;rmino nombra a una mujer descalificada por un historial sexual previo o "
+        "(seg&uacute;n la lectura rab&iacute;nica posterior) nacida de una uni&oacute;n que el propio "
+        "sacerdocio proh&iacute;be, no tanto un juicio moral sobre la mujer misma como un estatus que "
+        "comprometer&iacute;a la pureza exigida a la l&iacute;nea sacerdotal. La misma ra&iacute;z le da "
+        "a este cap&iacute;tulo su otro caso central: una hija de sacerdote que «se profana» por "
+        "prostituirse «profana a su padre» (21:9) &mdash;el mismo verbo corriendo del estatus de una "
+        "mujer al hombre cuyo cargo compromete su conducta."),
+    "mum": ("mum",
+        "UNA TACHA &mdash;el propio t&eacute;rmino t&eacute;cnico general del cap&iacute;tulo para "
+        "cualquier condici&oacute;n f&iacute;sica que descalifique a un sacerdote del servicio en el "
+        "altar (21:17&ndash;23): ceguera, cojera, un rostro mutilado, un miembro demasiado largo o "
+        "roto, joroba, enanismo, enfermedad ocular, enfermedad de la piel, test&iacute;culos "
+        "aplastados. &#9888; La misma palabra rige a los animales sacrificiales dos cap&iacute;tulos "
+        "despu&eacute;s (Lev&iacute;tico 22:20&ndash;25, todav&iacute;a no en estas p&aacute;ginas) "
+        "&mdash;el mismo est&aacute;ndar de integridad f&iacute;sica aplicado tanto a la ofrenda como "
+        "a quien la ofrece. Cr&iacute;ticamente, mum descalifica a un sacerdote de ACERCARSE al altar "
+        "espec&iacute;ficamente (21:23) mientras deja expl&iacute;citamente intacta su condici&oacute;n "
+        "de sacerdote y su derecho a comer el pan sagrado (21:22) &mdash;una distinci&oacute;n que el "
+        "propio texto exige, no un matiz moderno a&ntilde;adido para suavizarlo."),
+    "baal-beamav": ("ba'al be'amav",
+        "Una frase genuinamente incierta (21:4). <em>Ba'al</em> significa ordinariamente «se&ntilde;or, "
+        "jefe» o, en sentido matrimonial, «esposo» &mdash;y las dos lecturas llevan esta cl&aacute;usula "
+        "en direcciones distintas. KJV y ASV toman ambas el sentido de «hombre principal»: un sacerdote "
+        "no puede contaminarse por un muerto ni siquiera como persona de rango entre su pueblo. Otros "
+        "leen <em>ba'al</em> literalmente como «esposo», restringiendo el vers&iacute;culo a "
+        "parientes pol&iacute;ticos adquiridos por matrimonio en vez de parientes de sangre "
+        "&mdash;coherente con la propia lista de los vv2&ndash;3, que corre estrictamente por "
+        "sangre. Ambas lecturas se defienden en la literatura; esta traducci&oacute;n no elige."),
 }
 
 ENCYCLOPEDIA_ES = {
