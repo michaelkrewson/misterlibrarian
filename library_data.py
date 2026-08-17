@@ -1976,6 +1976,15 @@ DICTIONARY = [
     ("zav", "zav", "זָב", "zav",
      "A DISCHARGE — and the Hebrew that names it is itself a euphemism. <em>Zav mibsaro</em> literally reads &lsquo;flows from his flesh&rsquo; or &lsquo;from his body&rsquo;; it never states what discharges, or from where. <span class=\"tag t-nwt\">NWT</span> resolves the gap &mdash; &lsquo;a discharge from his genital organ&rsquo; &mdash; almost certainly the correct referent, since the chapter&rsquo;s own structure (an abnormal case in vv1&ndash;15, contrasted with an ordinary emission of semen in vv16&ndash;18) makes plain what is meant. This translation keeps the indirection instead, on the reader test: the Hebrew itself chose not to be explicit, and a translation more specific than its source is making a decision, not just clarifying one. ⚠ The Spanish shelf splits on exactly this point, and in opposite directions from each other: <span class=\"tag t-rv60\">RV60</span> reads v2 as &lsquo;flujo de semen&rsquo; from the first verse, assuming the specific case the chapter has not yet reached; <span class=\"tag t-nvi\">NVI</span>&rsquo;s &lsquo;flujo inusual&rsquo; keeps the ambiguity the Hebrew keeps.",
      ("Leviticus", 15, 2)),
+    ("azazel", "Azazel", "עֲזָאזֵל", "Azazel",
+     "The recipient of the second goat's lot (16:8, 10, 26) — kept transliterated here, matching <span class=\"tag t-niv\">NIV</span>, <span class=\"tag t-nasb\">NASB</span>, and <span class=\"tag t-nwt\">NWT</span>, since no single English word covers what the name might mean. Three readings hold real scholarly ground and this translation votes for none of them. (1) A PLACE: the Mishnah (Yoma 6:6) names Azazel a specific rugged cliff roughly twelve miles from Jerusalem, where later practice had the goat driven off a precipice rather than simply released. (2) A FOLK ETYMOLOGY: <em>ez</em> (goat) + <em>azal</em> (departs) — 'the goat that goes away' — the reading behind William Tyndale's 1530 coinage 'scapegoat' (<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-geneva\">Geneva</span>) and the Vulgate's <em>caper emissarius</em>, 'the emissary goat' (<span class=\"tag t-douay\">Douay-Rheims</span>'s 'the emissary goat'). Both are translations of a GUESSED etymology, not of the word itself. (3) A BEING: Second Temple literature (1 Enoch 8, 10) and later rabbinic demonology take Azazel as the proper name of a wilderness demon or fallen angel — a reading the grammar itself supports, since 'one lot for Jehovah, one lot for Azazel' (16:8) sets two proper names in parallel, and Leviticus elsewhere legislates against sacrificing to goat-demons, se'irim (17:7, not yet on these pages). The text does not adjudicate between a place, a folk-etymology, and a being; neither does this translation.",
+     ("Leviticus", 16, 8)),
+    ("ish-itti", "ish itti", "אִישׁ עִתִּי", "ish itti",
+     "A genuinely uncertain phrase (16:21) for the man who leads the live goat into the wilderness. <em>Itti</em> shares its root with <em>et</em>, 'time, season' — suggesting 'a man for the occasion' or 'a man appointed in advance,' the reading behind rabbinic tradition's insistence that this man be designated ahead of the day itself. <span class=\"tag t-kjv\">KJV</span> and <span class=\"tag t-douay\">Douay-Rheims</span> both read 'a fit man,' importing a physical qualification (able to make the round trip) the word itself does not obviously state; <span class=\"tag t-asv\">ASV</span>'s 'a man that is in readiness' stays closer to the time-root. This translation reads 'a man kept ready for it' — literal to the root, without committing to KJV's inference about fitness.",
+     ("Leviticus", 16, 21)),
+    ("inuy-nefesh", "inuy nefesh", "עִנּוּי נֶפֶשׁ", "inuy nefesh",
+     "AFFLICT YOUR SOULS — the command (16:29, 31) behind the fast still kept on Yom Kippur, and an idiom broader than the practice it produced. The verse never uses <em>tzum</em>, Hebrew's ordinary word for fasting; <em>inuy nefesh</em> is closer to 'self-denial' in general, later crystallized by rabbinic tradition (Mishnah Yoma 8:1) into five specific deprivations — food, drink, washing, anointing, and sandals — of which going without food is only the first. <span class=\"tag t-kjv\">KJV</span>/<span class=\"tag t-asv\">ASV</span> keep the literal 'afflict your souls'; <span class=\"tag t-niv\">NIV</span> smooths to 'deny yourselves'; <span class=\"tag t-tlb\">The Living Bible</span> paraphrases the later practice outright — 'you must go without food.' The same phrase recurs at Isaiah 58:3, 5 and Psalm 35:13 (neither yet on these pages), where fasting is explicitly in view — the strongest evidence for how this idiom came to mean what it now means.",
+     ("Leviticus", 16, 29)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5720,6 +5729,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 16 ----
+    (("Leviticus", 16, 1), ("Leviticus", 10, 2), "the reason this whole chapter exists, named outright in its own opening clause — Nadab and Abihu's deaths for approaching wrongly, answered here by a law for approaching exactly right, exactly once a year"),
+    (("Leviticus", 16, 2), ("Exodus", 25, 22), "'I appear in the cloud upon the cover' — the meeting promised when the ark's cover was first built now becomes a law of restricted access: the same place, but entered only once a year"),
+    (("Leviticus", 16, 22), ("Leviticus", 14, 7), "a living creature carrying uncleanness away — the second bird released alive over open country, and the goat sent to a land cut off, the identical disposal logic at two different scales"),
+    (("Leviticus", 16, 31), ("Exodus", 35, 2), "'a sabbath of solemn rest' — the identical phrase, first fixed for the ordinary weekly seventh day, now reused for this one annual Day of Atonement"),
     # ---- Leviticus 15 ----
     (("Leviticus", 15, 13), ("Leviticus", 14, 5), "mayim chayim, 'living water' — the third consecutive chapter's purification named with the same literal phrase every other version smooths to 'running' or 'fresh' water"),
     (("Leviticus", 12, 2), ("Leviticus", 15, 19), "niddah — the comparison Leviticus 12 leaned on twice without explaining, because this is the law it was assuming the reader already knew"),
@@ -8133,6 +8147,9 @@ CHRON_CHAPTERS = {
     "lev15": dict(era="exodus",
                   when="The law of bodily discharges, closing the whole clean/unclean block that opened at Leviticus 11: an abnormal male discharge and its elaborate contact rules, an ordinary emission of semen, ordinary marital intercourse, ordinary menstruation, and an irregular or prolonged female discharge treated exactly like the man's own case. It closes on one blunt statement of stakes — die in your uncleanness by defiling the tabernacle in your midst — the reason the whole apparatus exists.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus, and — like Leviticus 11 and 13 — addressed to Moses AND Aaron together. This is the law Leviticus 12 (already on these pages) twice assumed its reader already knew, comparing a new mother's uncleanness to 'the days of her niddah' without ever explaining the term. Still inside the same Sinai window as the rest of this block."),
+    "lev16": dict(era="exodus",
+                  when="The Day of Atonement — the book's own center, told in a single unbroken paragraph with no internal pause. Aaron, dressed in plain linen instead of his ordination splendor, sacrifices a bull for himself and casts lots over two goats: one slaughtered as a sin-offering, its blood carried past the veil and sprinkled on the ark's cover; the other, alive, receiving the people's confessed sins by the laying on of hands before being led into the wilderness to Azazel. A perpetual statute follows: once a year, on the tenth day of the seventh month, all Israel is to afflict their souls and do no work — the law that becomes Yom Kippur.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus, though it opens by naming its own occasion — 'after the death of the two sons of Aaron' (Leviticus 10:1-2, already on these pages), placing it, narratively, sometime after the eighth day but still inside the same Sinai window between the tabernacle's completion (Exodus 40:17, already on these pages) and the census that opens Numbers (Numbers 1:1, already on these pages). The annual observance it institutes (vv29-34) is the one piece of this chapter with no fixed date of its own — a recurring law rather than a dated event."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14189,6 +14206,49 @@ DICTIONARY_ES = {
         "lee el v2 como &laquo;flujo de semen&raquo; desde el primer vers&iacute;culo, asumiendo el caso "
         "espec&iacute;fico que el cap&iacute;tulo a&uacute;n no ha alcanzado; <span class=\"tag t-nvi\">NVI</span> "
         "con &laquo;flujo inusual&raquo; conserva la ambig&uuml;edad que conserva el hebreo."),
+    "azazel": ("Azazel",
+        "EL DESTINATARIO de la segunda suerte (16:8, 10, 26) &mdash;conservado en transliteraci&oacute;n "
+        "aqu&iacute;, igual que NIV, NASB y TNM, porque ninguna palabra espa&ntilde;ola cubre lo que el "
+        "nombre pueda significar. Tres lecturas tienen respaldo acad&eacute;mico real, y esta "
+        "traducci&oacute;n no vota por ninguna. (1) UN LUGAR: la Mishn&aacute; (Yom&aacute; 6:6) nombra "
+        "Azazel un risco espec&iacute;fico a unos veinte kil&oacute;metros de Jerusal&eacute;n, donde la "
+        "pr&aacute;ctica posterior hac&iacute;a caer al chivo desde un precipicio en vez de simplemente "
+        "soltarlo. (2) UNA ETIMOLOG&Iacute;A POPULAR: <em>ez</em> (cabra) m&aacute;s <em>azal</em> (se va) "
+        "&mdash;«el chivo que se va»&mdash;, la lectura detr&aacute;s del acu&ntilde;amiento de "
+        "Tyndale en 1530, «scapegoat» (KJV, Geneva), y de la Vulgata latina <em>caper "
+        "emissarius</em>, «el chivo emisario» (Douay-Rheims). Ambas son traducciones de una "
+        "etimolog&iacute;a SUPUESTA, no de la palabra misma. (3) UN SER: la literatura del Segundo "
+        "Templo (1 Enoc 8, 10) y la demonolog&iacute;a rab&iacute;nica posterior toman Azazel como el "
+        "nombre propio de un dem&oacute;nio o &aacute;ngel ca&iacute;do del desierto &mdash;una lectura "
+        "que la propia gram&aacute;tica respalda, ya que «una suerte para Jehov&aacute;, una suerte "
+        "para Azazel» (16:8) coloca dos nombres propios en paralelo, y Lev&iacute;tico legisla en "
+        "otro lugar contra sacrificar a demonios-cabra, los se'irim (17:7, todav&iacute;a no en estas "
+        "p&aacute;ginas). El texto no arbitra entre un lugar, una etimolog&iacute;a popular y un ser; "
+        "tampoco esta traducci&oacute;n."),
+    "ish-itti": ("ish itti",
+        "Una frase genuinamente incierta (16:21) para el hombre que conduce el chivo vivo al "
+        "desierto. <em>Itti</em> comparte ra&iacute;z con <em>et</em>, «tiempo, ocasi&oacute;n» "
+        "&mdash;lo que sugiere «un hombre para la ocasi&oacute;n» o «un hombre designado "
+        "de antemano», la lectura detr&aacute;s de la insistencia de la tradici&oacute;n rab&iacute;nica "
+        "en que este hombre fuera designado antes del d&iacute;a mismo. KJV y Douay-Rheims leen ambos "
+        "«un hombre apto», importando una cualificaci&oacute;n f&iacute;sica que la palabra misma "
+        "no establece con claridad; ASV, con «un hombre que est&aacute; preparado», se mantiene "
+        "m&aacute;s cerca de la ra&iacute;z temporal. Esta traducci&oacute;n lee «un hombre mantenido "
+        "listo para ello» &mdash;literal a la ra&iacute;z, sin comprometerse con la inferencia de KJV "
+        "sobre la aptitud."),
+    "inuy-nefesh": ("inuy nefesh",
+        "AFLIGIR VUESTRAS ALMAS &mdash;la orden (16:29, 31) detr&aacute;s del ayuno que a&uacute;n se "
+        "guarda en Yom Kipur, y un modismo m&aacute;s amplio que la pr&aacute;ctica que produjo. El "
+        "vers&iacute;culo nunca usa <em>tzum</em>, el verbo hebreo ordinario para ayunar; <em>inuy "
+        "nefesh</em> se acerca m&aacute;s a «autonegaci&oacute;n» en general, cristalizado "
+        "despu&eacute;s por la tradici&oacute;n rab&iacute;nica (Mishn&aacute; Yom&aacute; 8:1) en cinco "
+        "privaciones espec&iacute;ficas &mdash;comida, bebida, lavarse, ungirse y sandalias&mdash;, de las "
+        "cuales prescindir de comida es solo la primera. KJV/ASV conservan lo literal, «afligid "
+        "vuestras almas»; NIV lo suaviza a «negaos a vosotros mismos»; The Living Bible "
+        "parafrasea directamente la pr&aacute;ctica posterior &mdash;«deben pasar sin comer». La "
+        "misma frase reaparece en Isa&iacute;as 58:3, 5 y Salmo 35:13 (ninguno todav&iacute;a en estas "
+        "p&aacute;ginas), donde el ayuno est&aacute; expl&iacute;citamente a la vista &mdash;la mejor "
+        "evidencia de c&oacute;mo este modismo lleg&oacute; a significar lo que hoy significa."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15006,6 +15066,36 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev16": [dict(
+        file="holman-hunt-the-scapegoat.jpg",
+        title="The Scapegoat",
+        title_es="El chivo expiatorio",
+        artist="William Holman Hunt",
+        year="1854",
+        location="Lady Lever Art Gallery, Port Sunlight, England",
+        location_es="Lady Lever Art Gallery, Port Sunlight, Inglaterra",
+        alt="A solitary white and tan goat stands on the salt-crusted, bone-littered shore of the Dead "
+            "Sea at sunset, a band of scarlet wool tied around its horns. Skeletal remains lie half-buried "
+            "in the salt around its feet. Behind it, the flat, discolored water stretches to a ring of "
+            "bare purple mountains under a streaked orange and grey sky.",
+        note="Painted on location at the Dead Sea's Oosdoom (Sodom) shore in 1854 — the Pre-Raphaelite "
+             "William Holman Hunt camped there for weeks to get the exact light and salt-crust right. The "
+             "scarlet wool on the goat's horns is not this translation's own invention: later rabbinic "
+             "practice (Mishnah Yoma 6:6) tied a strip of scarlet wool to the goat sent to Azazel, and "
+             "watched to see whether it turned white — a folk sign, unconnected to Leviticus 16 itself, "
+             "of whether the day's atonement had been accepted. Hunt's goat carries the sign but not the "
+             "verdict; the painting leaves it standing, still red, still watched.",
+        note_es="Pintado en el propio lugar, en la orilla de Oosdoom (Sodoma) del mar Muerto, en 1854 "
+                "—el prerrafaelita William Holman Hunt acampó semanas allí para lograr exactamente esa luz "
+                "y esa costra de sal. La lana escarlata en los cuernos del chivo no es invención de esta "
+                "traducción: la práctica rabínica posterior (Mishná Yomá 6:6) ataba una tira de lana "
+                "escarlata al chivo enviado a Azazel, y observaba si se volvía blanca —una señal popular, "
+                "sin conexión con el propio Levítico 16, de si la expiación del día había sido aceptada. "
+                "El chivo de Hunt lleva la señal, pero no el veredicto; el cuadro lo deja de pie, todavía "
+                "rojo, todavía observado.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:William_Holman_Hunt_-_The_Scapegoat.jpg",
+    )],
     "lev15": [dict(
         file="toros-roslin-woman-issue-of-blood.jpg",
         title="Healing of the Woman with the Issue of Blood",
