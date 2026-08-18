@@ -808,6 +808,9 @@ DICTIONARY = [
     # ---- Numbers 2 (Hebrew) ----
     ("degel", "degel", "דֶּגֶל", "diglo",
      "A STANDARD — the banner each of the four camp-divisions marches and camps under (2:2-34), one per compass direction, visible from a distance before a single tent goes up. The word itself specifies no color or emblem; Numbers names each standard only by its tribe (Judah's standard, Reuben's standard), never by any image on it. Later rabbinic tradition (Numbers Rabbah 2:10, well outside this book) filled that silence in, assigning each of the four a symbolic creature — a tradition some readers connect to the four living creatures of Ezekiel 1 and Revelation 4, though neither text ever states the link itself. KJV/ASV both keep 'standard'; NWT 'banner.'", ("Numbers", 2, 2)),
+    # ---- Numbers 3 (Hebrew) ----
+    ("mishmeret", "mishmeret", "מִשְׁמֶרֶת", "mishmeret",
+     "A CHARGE — a duty kept, a post guarded, from shamar, 'to watch, keep, guard.' Chapter 3 repeats it more than any other word: the Levites keep Aaron's mishmeret and the whole congregation's (3:7-8), each clan keeps its own assigned mishmeret of specific tabernacle furnishings (3:25, 31, 36), and the priests themselves keep 'the charge of the sanctuary' (3:38) on pain of death for any outsider who tries to take it up instead. The word covers both the DUTY and the THING guarded — a mishmeret is at once an assignment and an object placed in someone's trust. KJV 'charge'; NWT mostly agrees.", ("Numbers", 3, 7)),
     ("el-olam", "El Olam", "אֵל עוֹלָם", "El Olam",
      "'The Everlasting God' — the fourth El-name collected at a landmark: El Elyon at Salem (14:18), El Roi at Hagar's well (16:13), El Shaddai at the covenant (17:1), and El Olam at a tamarisk beside a sworn well (21:33). NWT, keeping its clock, 'the indefinitely lasting God.'", (21, 33)),
     ("eshel", "eshel", "אֵשֶׁל", "eshel",
@@ -5783,6 +5786,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Numbers 3 ----
+    (("Numbers", 3, 4), ("Leviticus", 10, 1), "Nadab and Abihu's death by strange fire, told in full there and summarized here in a single relative clause — 'they had no children'"),
+    (("Numbers", 3, 12), ("Exodus", 13, 2), "the consecration of every Israelite firstborn to Jehovah, first declared the night of the Passover, finally settled here by substitution — one whole tribe standing in for every firstborn son"),
+    (("Numbers", 3, 39), ("Numbers", 1, 46), "the eleph ambiguity already flagged in the first census, now compounded by a genuine 300-person gap between this chapter's own clan totals and its stated sum"),
+    (("Numbers", 3, 47), ("Numbers", 1, 2), "gulgolet, 'skull' — the identical head-by-head counting word already tied to Golgotha, now pricing 273 firstborn sons at five shekels a head"),
     # ---- Numbers 2 ----
     (("Numbers", 2, 3), ("Genesis", 29, 35), "Judah named 'praise' at birth, now leading the whole camp's march — the name given a generation earlier already pointing here"),
     (("Numbers", 2, 10), ("Genesis", 29, 32), "Reuben the firstborn, still heading the census list and the camp's second standard even after losing the leading blessing"),
@@ -8298,6 +8306,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num3": dict(era="exodus",
+                 when="The Levites' own census and assignment. Aaron's line is narrowed to two sons — Nadab and Abihu already dead for offering strange fire, leaving Eleazar and Ithamar to carry the priesthood forward. The tribe of Levi is formally taken in place of Israel's firstborn, then counted by clan from a single month old: Gershon (7,500, camped west, charged with the tabernacle's coverings and curtains), Kohath (8,600, camped south, charged with the ark, table, lampstand, and altars — the holiest furniture, under Eleazar's own direct oversight), and Merari (6,200, camped north, charged with the structural frames, bars, and pillars), with Moses, Aaron, and his sons camped east before the entrance itself. The chapter closes on an exact transaction: 22,273 firstborn Israelites against 22,000 Levites, the 273-person shortfall redeemed at five shekels a head, 1,365 shekels paid to Aaron's sons.",
+                 clock="⚠ Undated within the chapter, like the census and camp arrangement around it. Still inside the same Sinai window as Numbers 1 and 2 (already on these pages)."),
     "num2": dict(era="exodus",
                  when="The same census, now given a floor plan: the twelve tribes grouped into four camps of three, one under each compass standard — Judah's group east and marching first, Reuben's south and second, Ephraim's west and third, Dan's north and last — with the Levites and the tent of meeting fixed at the exact center, whether the camp is standing still or on the march.",
                  clock="Still c. 1445 BC, the same brief window as Numbers 1 — the census and the camp arrangement belong to the same short stretch of days at Sinai, before the cloud lifts (Numbers 10:11, not yet on these pages)."),
@@ -14693,6 +14704,29 @@ DICTIONARY_ES = {
         "simb&oacute;lica &mdash;una tradici&oacute;n que algunos lectores conectan con los cuatro seres "
         "vivientes de Ezequiel 1 y Apocalipsis 4, aunque ninguno de esos textos declara jam&aacute;s el "
         "v&iacute;nculo. RV60/NVI mantienen «estandarte»."),
+    "mishmeret": ("mishmeret",
+        "UN ENCARGO &mdash;un deber guardado, un puesto vigilado, de <em>shamar</em>, «vigilar, guardar». El "
+        "cap&iacute;tulo 3 la repite m&aacute;s que ninguna otra palabra: los levitas guardan el encargo de "
+        "Aar&oacute;n y el de toda la congregaci&oacute;n (3:7-8), cada clan guarda su propio encargo asignado "
+        "de mobiliario espec&iacute;fico del tabern&aacute;culo (3:25, 31, 36), y los propios sacerdotes "
+        "guardan «el encargo del santuario» (3:38) bajo pena de muerte para cualquier extra&ntilde;o que "
+        "intente asumirlo en su lugar. La palabra cubre a la vez el DEBER y la COSA vigilada &mdash;un "
+        "<em>mishmeret</em> es a la vez una asignaci&oacute;n y un objeto puesto bajo la confianza de "
+        "alguien. RV60 «cargo»; NVI en su mayor&iacute;a coincide."),
+    "eda": ("eda",
+        "La congregaci&oacute;n, comunidad, asamblea &mdash;todo el pueblo reunido de Israel (N&uacute;meros "
+        "1:2), de la ra&iacute;z <em>ya'ad</em>, «citar, reunirse por cita» (la misma familia que "
+        "<em>mo'ed</em>, el «tiempo se&ntilde;alado» y la «tienda de REUNI&Oacute;N»). No una multitud al "
+        "azar sino la asamblea convocada; sus jefes son literalmente «los LLAMADOS de la <em>eda</em>» "
+        "(1:16). RV60 «congregaci&oacute;n»; NVI «comunidad»."),
+    "gulgolet": ("gulgolet",
+        "Una calavera, una cabeza &mdash;el censo cuenta «por sus <em>gulgolot</em>», de cabeza en cabeza, "
+        "cada persona contada individualmente (N&uacute;meros 1:2, 18; KJV «by their polls»). La palabra "
+        "para una calavera redondeada da, a trav&eacute;s del arameo <em>Gulgalta</em> y el lat&iacute;n "
+        "<em>Calvaria</em>, los dos nombres de una misma colina: G&Oacute;LGOTA, «el lugar de la calavera» "
+        "(Mateo 27:33). Cada cabeza est&aacute; numerada y conocida &mdash;la misma palabra que cuenta un "
+        "ej&eacute;rcito nombrar&aacute; un d&iacute;a un lugar de ejecuci&oacute;n en las afueras de "
+        "Jerusal&eacute;n."),
 }
 
 ENCYCLOPEDIA_ES = {
