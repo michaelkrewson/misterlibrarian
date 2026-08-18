@@ -2027,6 +2027,12 @@ DICTIONARY = [
     ("neshekh", "neshekh / tarbit", "נֶשֶׁךְ / תַּרְבִּית", "neshekh ve-tarbit",
      "Two Hebrew words for INTEREST, always paired in the law (25:36-37; Exodus 22:25, already on these pages; Deuteronomy 23:19-20, not yet on these pages) and never clearly distinguished by the text itself. Later interpreters read neshekh (from a root meaning 'to bite') as interest deducted in advance from the loan, and tarbit ('increase') as interest added on at repayment — two mechanisms, one prohibition. The ban targets profiting specifically from a fellow Israelite's poverty (25:35), not lending as such; nothing here forbids charging a foreigner interest (Deuteronomy 23:20).",
      ("Leviticus", 25, 36)),
+    ("keri", "keri", "קֶרִי", "be-keri",
+     "A genuine translation crux — occurring nowhere else in the Hebrew Bible in this sense, seven times, only in this chapter (26:21, 23, 24, 27, 28, 40, 41), always in the phrase 'walk with me/against me in KERI.' The root is disputed. Most translations, following an old reading connecting it to a verb for chance or happenstance, render it 'contrary' (KJV/ASV 'walk contrary unto me') — the sense that treating Jehovah as mere chance, unpredictable and irrelevant, is answered by Jehovah treating Israel the same way. Others connect it to a root for hostile encounter, 'walk in hostility.' The word's isolation to this one chapter, repeated seven times, is itself a structural echo of the chapter's own fourfold 'seven times more' punishment formula.",
+     ("Leviticus", 26, 21)),
+    ("qomemiyut", "qomemiyut", "קוֹמְמִיּוּת", "qomemiyut",
+     "UPRIGHT, erect — a rare word occurring only once in the Hebrew Bible, at 26:13: 'I broke the bars of your yoke, and made you walk qomemiyut.' Built on a root for standing tall, it names more than freedom from slavery — a former slave's body itself, no longer bent under a yoke, able to stand at full height. KJV 'upright'; the image is physical before it is anything else.",
+     ("Leviticus", 26, 13)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5771,6 +5777,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 26 ----
+    (("Leviticus", 26, 12), ("Genesis", 3, 8), "God 'walking' among people — the identical verb for God walking in Eden, reused here as a covenant blessing offered back to a redeemed nation"),
+    (("Leviticus", 26, 29), ("Lamentations", 2, 20), "the child-cannibalism curse — the covenant's own stated penalty for abandoning it, remembered as literally fulfilled at Jerusalem's fall"),
+    (("Leviticus", 26, 34), ("Leviticus", 25, 4), "the land's sabbath — the exile revealed as the very mechanism that finally makes the sabbatical-year law enforceable, not a legal ideal Israel could quietly ignore"),
+    (("Leviticus", 26, 41), ("Genesis", 17, 11), "the covenant sign of circumcision — applied here for the first time to the heart, not the flesh"),
     # ---- Leviticus 25 ----
     (("Leviticus", 25, 4), ("Exodus", 23, 10), "the sabbatical year for the land — first stated in a single sentence with no mechanism attached, now given its full ritual, its enforcement, and forty-four more verses"),
     (("Leviticus", 25, 10), ("Leviticus", 16, 29), "the jubilee's own trumpet sounds on the Day of Atonement — liberty proclaimed on the one day of the year the nation has just been declared clean"),
@@ -8250,6 +8261,9 @@ CHRON_CHAPTERS = {
     "lev23": dict(era="exodus",
                   when="The Torah's full festival calendar, seven appointed times in one chapter: the weekly Sabbath; Passover and the seven-day Feast of Unleavened Bread in the first month; the firstfruits sheaf and the fifty-day count to the wheat-harvest offering (with the poor-and-foreigner gleaning law dropped into the middle of it); the Feast of Trumpets and the Day of Atonement in the seventh month; and the seven-day Feast of Booths closing the agricultural year. Each festival gets its own date, its own required rest, and its own offering — the same calendar still kept, in outline, by religious Jews today.",
                   clock="⚠ Undated within the chapter itself beyond the festival dates it fixes for every future year — the one chapter in Leviticus that is, by its own content, permanently forward-looking rather than tied to a single moment in the wilderness. Still spoken at Sinai in the same window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev26": dict(era="exodus",
+                  when="The book's own covenant conclusion: obedience blessed, defiance cursed, laid out in careful proportion — ten verses of blessing (rain, harvest, peace, victory, God's own presence walking among the people) against thirty-two verses of curse that escalate in four distinct waves, each one triggered specifically by Israel's continued refusal to respond to the wave before it, each opened by the identical formula 'seven times more for your sins.' The curses run from disease and military defeat, through crop failure and wild animals, through siege and a famine so total that ten women bake in one oven, to the worst line in the book — parents eating their own children — and finally exile, the land left empty enough to enjoy the sabbaths Israel denied it. It closes on hope rather than despair: confession, a humbled heart, and Jehovah remembering his covenant with Jacob, then Isaac, then Abraham, even at the furthest point of exile.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. V46's own closing colophon — 'these are the statutes and the ordinances and the laws' — reads like the intended close of the whole Sinai law code beginning at Exodus 19, with Leviticus 27 arriving afterward as its own appendix. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev25": dict(era="exodus",
                   when="Two calendars of release nested inside each other. Every seventh year the land itself keeps a sabbath — no sowing, no pruning, whatever grows on its own free for owner, servant, sojourner, and wild animal alike. After seven such cycles, the fiftieth year is proclaimed a jubilee with a trumpet blast on the Day of Atonement: every sold field returns to its original family, every Israelite sold into service goes free. The chapter then works out the legal mechanics in detail — fair pricing keyed to years-until-jubilee, a kinsman's right to redeem sold land, a special exception for houses in walled cities, a ban on interest against a poor brother, and the difference between an Israelite servant (never a slave, freed at the jubilee) and a foreign-born slave (permanent property) — closing on the principle underneath all of it: the land is Jehovah's, and so are Israel's people, on the strength of the Exodus itself.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. Its sabbatical-year law (vv1-7) restates Exodus 23:10-11's own one-sentence version at full length; its ban on ruling a fellow Israelite 'with harshness' (vv43, 46, 53) reuses the identical rare word this project's own Exodus 1:13 entry used for Pharaoh's cruelty to enslaved Israel. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
@@ -14574,6 +14588,25 @@ DICTIONARY_ES = {
         "t&eacute;rmino que Dios us&oacute; para la tierra prometida misma, «toda la tierra de "
         "Cana&aacute;n como posesi&oacute;n perpetua» (17:8). En vida de Abraham, la posesi&oacute;n "
         "perpetua se reduce a un solo campo con una tumba dentro."),
+    "keri": ("keri",
+        "Una verdadera dificultad de traducci&oacute;n &mdash;no aparece en ning&uacute;n otro lugar de "
+        "la Biblia hebrea con este sentido, siete veces, solo en este cap&iacute;tulo (26:21, 23, 24, "
+        "27, 28, 40, 41), siempre en la frase «caminar conmigo/contra m&iacute; en KERI». La ra&iacute;z "
+        "es disputada. La mayor&iacute;a de las traducciones, siguiendo una lectura antigua que la "
+        "conecta con un verbo de azar o casualidad, la vierten «con hostilidad» o «en oposici&oacute;n» "
+        "(RV60 «anduviereis conmigo en oposici&oacute;n») &mdash;el sentido de que tratar a Jehov&aacute; "
+        "como mero azar, impredecible e irrelevante, se responde con Jehov&aacute; tratando a Israel de "
+        "la misma manera. Otros la conectan con una ra&iacute;z de encuentro hostil, «caminar con "
+        "hostilidad». El aislamiento de la palabra a este &uacute;nico cap&iacute;tulo, repetida siete "
+        "veces, es en s&iacute; mismo un eco estructural de la propia f&oacute;rmula de castigo "
+        "cu&aacute;druple «siete veces m&aacute;s» del cap&iacute;tulo."),
+    "qomemiyut": ("qomemiyut",
+        "ERGUIDOS &mdash;una palabra rara que aparece una sola vez en toda la Biblia hebrea, en 26:13: "
+        "«romp&iacute; las coyundas de vuestro yugo, y os hice caminar qomemiyut». Construida sobre una "
+        "ra&iacute;z de mantenerse en pie con altura, nombra algo m&aacute;s que la libertad de la "
+        "esclavitud &mdash;el propio cuerpo de un antiguo esclavo, ya no doblado bajo un yugo, capaz de "
+        "mantenerse en toda su estatura. KJV «upright»; la imagen es f&iacute;sica antes que cualquier "
+        "otra cosa."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15404,6 +15437,37 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev26": [dict(
+        file="bendemann-jews-mourning-exile-1832.jpg",
+        title="Jews Mourning in Exile",
+        title_es="Judíos llorando en el exilio",
+        artist="Eduard Bendemann",
+        year="1832",
+        location="Wallraf-Richartz-Museum, Cologne",
+        location_es="Museo Wallraf-Richartz, Colonia",
+        alt="A fan-shaped painting of four figures seated by a riverbank under a tree, a distant walled "
+            "city visible across the water. An old bearded man in a red robe rests one hand on a harp "
+            "propped against a rock, a broken chain lying at its foot. A woman nurses an infant on one "
+            "side; a young woman with her head bowed in her hand sits on the other, another harp in her "
+            "lap. All four look downward or away, in postures of grief.",
+        note="Painted in 1832 by the German Romantic Eduard Bendemann, this half-moon canvas (originally "
+             "designed for a lunette) shows exile as this chapter's own curses describe it &mdash; not "
+             "battle, but aftermath: harps set down, a chain broken but freedom not yet restored, a "
+             "walled city visible across the water but out of reach. The scene has no single verse behind "
+             "it; it reads instead as this chapter's vv33-39 and Psalm 137's 'by the rivers of Babylon, "
+             "there we sat down and wept' (not yet on these pages) painted as the same moment.",
+        note_es="Pintado en 1832 por el rom&aacute;ntico alem&aacute;n Eduard Bendemann, este lienzo en "
+                "forma de medialuna (dise&ntilde;ado originalmente para una lunéta) muestra el exilio "
+                "tal como lo describen las propias maldiciones de este cap&iacute;tulo &mdash;no la "
+                "batalla, sino su secuela: arpas depuestas, una cadena rota pero la libertad todav&iacute;a "
+                "sin restaurar, una ciudad amurallada visible al otro lado del agua pero fuera de alcance. "
+                "La escena no tiene un solo vers&iacute;culo detr&aacute;s; se lee en cambio como los vv33-39 "
+                "de este cap&iacute;tulo y el Salmo 137, 'junto a los r&iacute;os de Babilonia, all&iacute; "
+                "nos sent&aacute;bamos y llor&aacute;bamos' (todav&iacute;a no en estas p&aacute;ginas), "
+                "pintados como el mismo instante.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Jews_Mourning_in_Exile_-_Eduard_Bendemann_-_Wallraf-Richartz-Museum_%26_Fondation_Corboud-6071_(without_frame).jpg",
+    )],
     "lev25": [dict(
         file="liberty-bell-2019.jpg",
         title="The Liberty Bell",
