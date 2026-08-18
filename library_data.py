@@ -14567,6 +14567,13 @@ DICTIONARY_ES = {
         "la naci&oacute;n que un d&iacute;a repartir&aacute; esta tierra la posee en los mismos "
         "t&eacute;rminos en que Abraham pose&iacute;a Cana&aacute;n &mdash;como ger y toshav, no "
         "como due&ntilde;o."),
+    "achuzzah": ("achuzzah",
+        "UNA POSESI&Oacute;N &mdash;una tenencia de tierra permanente y heredable, de <em>achaz</em>, "
+        "«asir, aferrar» (KJV «possession»). La palabra cargada de G&eacute;nesis 23: Abraham busca "
+        "una <em>achuzzat-qever</em>, una «posesi&oacute;n para sepultura» &mdash;y es el mismo "
+        "t&eacute;rmino que Dios us&oacute; para la tierra prometida misma, «toda la tierra de "
+        "Cana&aacute;n como posesi&oacute;n perpetua» (17:8). En vida de Abraham, la posesi&oacute;n "
+        "perpetua se reduce a un solo campo con una tumba dentro."),
 }
 
 ENCYCLOPEDIA_ES = {
