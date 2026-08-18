@@ -439,7 +439,7 @@ DICTIONARY = [
      "STIFFNECKED — literally 'hard of neck,' the image of a stubborn ox refusing the yoke or the goad. Jehovah uses the phrase of Israel three times running (32:9; <a href=\"exodus-33.html#v33-3\">33:3</a>, <a href=\"exodus-33.html#v33-5\">5</a>, already on these pages) before Moses himself takes the word up as his own plea for pardon, the fourth and final use — 'it is a stiffnecked people; and pardon our iniquity' (<a href=\"exodus-34.html#v34-9\">34:9</a>, already on these pages). Moses repeats it once more to the next generation in Deuteronomy (9:6, 13, not yet on these pages). It survives into Greek almost unchanged: the only New Testament use of sklerotrachēloi (Strong's 4644) is Stephen's, at the climax of a speech that has just retold this exact scene, nearly verbatim — 'you stiffnecked people... you always resist the Holy Spirit, just as your fathers did' (Acts 7:51).", ("Exodus", 32, 9)),
     # ---- Exodus 33 (Hebrew) ----
     ("panim", "panim", "פָּנִים", "panim",
-     "FACE — grammatically plural in form even for one face (like 'waters,' mayim), and one word doing three different jobs inside a single chapter. It names an intimate CONVERSATION at 'Jehovah spoke to Moses face to face, as a man speaks to his friend' (33:11) — the identical idiom Jacob uses of his own night at the Jabbok, 'I have seen God face to face' (<a href=\"genesis-32.html#v32-30\">Genesis 32:30</a>, already on these pages), and one Paul still reaches for centuries later, 'now we see through a glass, darkly, but then face to face' (<a href=\"1-corinthians-13.html#v13-12\">1 Corinthians 13:12</a>, already on these pages). Three verses later the same word means PRESENCE — 'my panim will go with you' (33:14), rendered idiomatically rather than literally — and by the chapter's end it means the plain, physical impossibility it started by not meaning at all: 'you cannot see my panim, for man shall not see me and live' (33:20, 23). One noun, three escalating jobs, in twelve verses. ⚠ The word gets a fourth job one chapter later, and it is the strangest of all: Moses comes down from the mountain and 'the skin of his panim shone' (<a href=\"exodus-34.html#v34-29\">Exodus 34:29</a>, already on these pages) — the very face no one may look at directly now radiates a borrowed version of that glory onto Moses' own, bright enough that Israel is afraid to come near him.", ("Exodus", 33, 11)),
+     "FACE — grammatically plural in form even for one face (like 'waters,' mayim), and one word doing three different jobs inside a single chapter. It names an intimate CONVERSATION at 'Jehovah spoke to Moses face to face, as a man speaks to his friend' (33:11) — the identical idiom Jacob uses of his own night at the Jabbok, 'I have seen God face to face' (<a href=\"genesis-32.html#v32-30\">Genesis 32:30</a>, already on these pages), and one Paul still reaches for centuries later, 'now we see through a glass, darkly, but then face to face' (<a href=\"1-corinthians-13.html#v13-12\">1 Corinthians 13:12</a>, already on these pages). Three verses later the same word means PRESENCE — 'my panim will go with you' (33:14), rendered idiomatically rather than literally — and by the chapter's end it means the plain, physical impossibility it started by not meaning at all: 'you cannot see my panim, for man shall not see me and live' (33:20, 23). One noun, three escalating jobs, in twelve verses. ⚠ The word gets a fourth job one chapter later, and it is the strangest of all: Moses comes down from the mountain and 'the skin of his panim shone' (<a href=\"exodus-34.html#v34-29\">Exodus 34:29</a>, already on these pages) — the very face no one may look at directly now radiates a borrowed version of that glory onto Moses' own, bright enough that Israel is afraid to come near him. The word takes on a fifth job not long after, turned toward the whole nation rather than one man: the priestly blessing asks that Jehovah's own panim shine on the worshiper and then be lifted TOWARD them (<a href=\"numbers-6.html#n6-24\">Numbers 6:25-26</a>, already on these pages) — the same face that could not be looked at directly in this very chapter, now the thing the blessing itself asks to be turned, not away, but toward.", ("Exodus", 33, 11)),
     # ---- Exodus 34 (Hebrew) ----
     ("karan", "qaran", "קָרַן", "qaran",
      "SHONE, sent forth beams — 'the skin of his face qaran' (34:29), and the verb shares its root with keren, the ordinary Hebrew word for a literal animal HORN. That shared root produced one of the most consequential mistranslations in Western art. Jerome's Vulgate rendered the verb almost literally, cornuta esset facies sua, 'his face was HORNED' — a defensible reading of the bare consonants, but one no other detail in the passage supports. The Douay-Rheims, translating the Vulgate, keeps it: 'his face was horned from the conversation of the Lord.' Michelangelo, working thirteen centuries later from that same Latin tradition, carved Moses with two small horns rising from his head for the tomb of Pope Julius II — a sculpture now visited by millions who often assume the horns are simply what a fierce lawgiver looks like, not the fossil of a translator's word-choice. Every major English version corrects the reading to 'shone' or 'radiant'; the horns survive only in stone.", ("Exodus", 34, 29)),
@@ -558,7 +558,7 @@ DICTIONARY = [
     ("toevah", "to'evah", "תּוֹעֵבָה", "to'evah",
      "An ABOMINATION — something detestable, ritually or socially intolerable to a particular group. Genesis uses it of EGYPTIAN sensibilities, not Israelite ones: 'the Egyptians cannot eat bread with the Hebrews, for that is an abomination to Egypt' (43:32), and later that shepherds are an abomination to them (46:34). The narrator reports the custom flatly, without mockery — and it quietly settles a clause left open at 39:6, where Potiphar 'knew nothing of what he had except the bread he ate.' It also leaves Joseph seated at neither table: not with the Egyptians, not with the Hebrews, eating alone between two peoples. ⚠ At <a href=\"leviticus-18.html\">Leviticus 18</a> (already on these pages) the word becomes a legal umbrella term rather than a report of foreign custom: incest, adultery, child sacrifice, and bestiality are all named to'evah together (18:26-30), the same single word covering the chapter's entire catalog rather than singling any one item out with harsher vocabulary.", (43, 32)),
     ("chanan", "chanan", "חָנַן", "yechonkha",
-     "To BE GRACIOUS, show favour freely — the root behind chen ('favour') and behind the names Hannah, Hanan, and (through Hebrew Yochanan) JOHN, 'Jehovah has been gracious.' Joseph uses it as a blessing over the little brother he has not seen in twenty-two years and cannot yet claim: 'God be gracious to you, my son' (43:29). It is the last thing he manages to say before his compassion overwhelms him and he leaves the room.", (43, 29)),
+     "To BE GRACIOUS, show favour freely — the root behind chen ('favour') and behind the names Hannah, Hanan, and (through Hebrew Yochanan) JOHN, 'Jehovah has been gracious.' Joseph uses it as a blessing over the little brother he has not seen in twenty-two years and cannot yet claim: 'God be gracious to you, my son' (43:29). It is the last thing he manages to say before his compassion overwhelms him and he leaves the room. ⚠ The same verb form this entry's own transliteration already anticipated, yechonkha, does its most famous work in the priestly blessing — 'Jehovah make his face shine on you, and be gracious to you' (<a href=\"numbers-6.html#n6-24\">Numbers 6:25</a>, already on these pages) — the single verse most English speakers who have never opened a Hebrew Bible could still recognize by sound.", (43, 29)),
     ("melits", "melits", "מֵלִיץ", "melits",
      "An INTERPRETER, go-between, spokesman — from lits, to mediate. It appears in Genesis exactly once, in the quietest and most devastating line of chapter 42: the brothers speak freely in Hebrew in front of the Egyptian governor, confessing to each other that they are guilty of what they did to their brother, 'and they did not know that Joseph was listening, FOR THE INTERPRETER WAS BETWEEN THEM' (42:23). The translator is the disguise. It also tells you what Joseph has been doing for the whole scene: speaking Egyptian, through a third party, to his own family. Elsewhere the word can mean an envoy (2 Chronicles 32:31) or an advocate who speaks for a man before God (Job 33:23).", (42, 23)),
     ("ashem", "ashem", "אָשֵׁם", "ashemim",
@@ -983,7 +983,7 @@ DICTIONARY = [
     ("neder", "neder", "נֶדֶר", "neder",
      "A VOW — a binding promise made to God, often conditional ('if you will… then I will'). Hannah 'vowed a vow' (nadrah neder, 1:11): if Jehovah gives her a son she will give him back for life. The Law treats a vow with the utmost seriousness — 'when you make a vow to God, do not delay to fulfill it' (Deuteronomy 23:21; Ecclesiastes 5:4) — and Hannah keeps hers to the letter, carrying the weaned child to Shiloh and leaving him there.", ("1 Samuel", 1, 11)),
     ("nazir", "nazir", "נָזִיר", "nazir",
-     "A NAZIRITE — one 'separated,' set apart to God by a vow, marked by abstaining from wine, avoiding corpse-defilement, and above all letting the hair grow uncut: 'no razor shall touch his head' (the sign Hannah pledges for Samuel, 1:11, and the mark of Samson, Judges 13). The full law is in Numbers 6. Usually a temporary vow, it is here a LIFELONG dedication from before birth — Samuel, like Samson, is given to God for the whole of his life.", ("1 Samuel", 1, 11)),
+     "A NAZIRITE — one 'separated,' set apart to God by a vow, marked by abstaining from wine, avoiding corpse-defilement, and above all letting the hair grow uncut: 'no razor shall touch his head' (the sign Hannah pledges for Samuel, 1:11, and the mark of Samson, Judges 13). The full law is in <a href=\"numbers-6.html#n6-1\">Numbers 6</a> (already on these pages), where the vow is ordinarily temporary — Samuel's own lifelong version, like Samson's and John the Baptist's, is the exception the chapter's law does not itself require. Usually a temporary vow, it is here a LIFELONG dedication from before birth — Samuel, like Samson, is given to God for the whole of his life.", ("1 Samuel", 1, 11)),
     ("ot", "ot / otot", "אוֹת / אֹתוֹת", "ot / otot",
      "A SIGN — a mark, token, or wonder that points beyond itself to authenticate a word or a promise. The word covers two distinct kinds of sign in this translation. The first is the AUTHENTICATING WONDER: God gives Moses three OTOT to make Israel believe (Exodus 4:8-9) — the staff-serpent, the leprous hand, the water-to-blood — and the same word later names the plagues themselves, the great 'signs and wonders' of the Exodus. The second is the COVENANT MARKER, a standing mark that seals a relationship rather than proving a message: the rainbow, 'set between me and the earth' after the flood, binding God to every living thing (Genesis 9:12-13); circumcision, cut into Abraham's own flesh, binding one family line (Genesis 17:11); and the sabbath, kept on the calendar itself, binding the nation redeemed from Egypt — 'a sign between me and you throughout your generations' (<a href=\"exodus-31.html#v31-13\">Exodus 31:13</a>, already on these pages). A sky-mark, a body-mark, a time-mark, one for each covenant's scale. Either way, a sign is not the point; it is a finger pointing at the one who gives it.", ("Exodus", 4, 8)),
     ("chazak", "chazaq", "חָזַק", "chazaq",
@@ -3546,6 +3546,16 @@ ENCYCLOPEDIA = [
               "Ithamar's own descendants later produce the priestly line of Eli (1 Samuel, not yet on these "
               "pages), a line that in turn loses the high priesthood back to Eleazar's own line under Solomon.",
          refs=[("Numbers", 4, 28), ("Numbers", 4, 33)], videos=[]),
+    dict(slug="ketef-hinnom", name="Ketef Hinnom", kind="place", aliases=["Ketef Hinnom"],
+         desc="A burial site on the western slope of the Hinnom Valley, just southwest of Jerusalem's Old City "
+              "walls. In 1979, in a tomb excavated by archaeologist Gabriel Barkay, a team found two tiny rolled "
+              "silver scrolls inscribed with the priestly blessing (Numbers 6:24-26, already on these pages) and "
+              "dated to roughly 600 BC — before the Babylonian exile, the oldest known fragment of biblical text "
+              "in existence, centuries older than the Dead Sea Scrolls. Unrolling them without destroying the "
+              "brittle silver took three years of conservation work; they were almost certainly worn as amulets "
+              "rather than read as scripture, and now sit in the Israel Museum.",
+         refs=[("Numbers", 6, 24)], coords=(31.771, 35.227, 0.3), approx=True,
+         modern="the Hinnom Valley slope near St. Andrew's Church, Jerusalem", videos=[]),
     dict(slug="kohath", name="Kohath", kind="person", aliases=["Kohath", "Kohathites"],
          desc="The second of Levi's three sons, and ancestor of the Kohathites — the Levite clan assigned the "
               "single most dangerous duty in the wilderness camp: carrying the ark, the table, the lampstand, "
@@ -5840,6 +5850,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Numbers 6 ----
+    (("Numbers", 6, 5), ("1 Samuel", 1, 11), "the lifelong Nazirite vow Hannah pledges for Samuel before he is even conceived, made from the ordinarily temporary vow this chapter itself lays out"),
+    (("Numbers", 6, 18), ("Genesis", 43, 29), "chanan, 'be gracious' — Joseph's own blessing over Benjamin, doing its most famous work here in the priestly benediction"),
+    (("Numbers", 6, 25), ("Exodus", 33, 20), "panim, 'face' — the same face no one may see and live, now the thing the blessing itself asks to be turned toward the worshiper"),
+    (("Numbers", 6, 27), ("Exodus", 34, 29), "the fifth job this project's own panim entry tracks for the word, following the face that shone on Moses alone now asked to shine on the whole nation"),
     # ---- Numbers 5 ----
     (("Numbers", 5, 7), ("Leviticus", 5, 16), "the restitution-plus-a-fifth formula, promised back in Leviticus's own guilt-offering law and repeated here almost verbatim"),
     (("Numbers", 5, 8), ("Genesis", 48, 16), "go'el, 'kinsman-redeemer' — the word's first appearance in a family blessing, now doing its ordinary legal work when no kinsman is left to redeem a debt"),
@@ -8370,6 +8385,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num6": dict(era="exodus",
+                 when="The Nazirite vow — a voluntary, ordinarily temporary separation to Jehovah marked by no wine or grape products, no haircut, no contact with the dead — followed by the priestly blessing, the three-line benediction Aaron and his sons are told to speak over Israel, closing on Jehovah's own claim: 'they shall put my name on the children of Israel, and I will bless them.'",
+                 clock="⚠ Undated within the chapter, like the census and camp law around it. Still inside the same Sinai window as Numbers 1&ndash;5 (already on these pages)."),
     "num5": dict(era="exodus",
                  when="Three unrelated laws about what defiles a camp Jehovah lives in: expel everyone with a scaly disease, a discharge, or corpse-uncleanness; repay a wronged neighbor in full plus a fifth before any offering is made, with the payment going to the priest if the wronged party has died with no kinsman left to receive it; and, for a wife suspected of unfaithfulness with no witness and no proof either way, an ordeal of dust, water, and a self-cursing oath that resolves the suspicion without ever assuming guilt in advance.",
                  clock="⚠ Undated within the chapter, like the census and camp law around it. Still inside the same Sinai window as Numbers 1&ndash;4 (already on these pages)."),
@@ -12117,6 +12135,47 @@ DICTIONARY_ES = {
         "Moisés y Dios CINCO veces separadas en seis versículos junto a la tienda de reunión, una "
         "volea que convierte el propio elogio de Dios en la moneda de un argumento "
         "(<a href=\"exodus-33.es.html#v33-12\">Éxodo 33:12</a>–17, ya en estas páginas)."),
+    "shalom": ("shalom",
+        "PAZ &mdash;pero mucho m&aacute;s amplio que la ausencia de conflicto: plenitud, solidez, bienestar, "
+        "todo estando como debe estar. Se pregunta por el <em>shalom</em> de una persona igual que el "
+        "espa&ntilde;ol pregunta «&iquest;c&oacute;mo est&aacute;s?». Recorre la historia de Jos&eacute; como "
+        "un hilo de retenci&oacute;n y devoluci&oacute;n: los hermanos «no pod&iacute;an hablarle en "
+        "<em>shalom</em>» (37:4, todav&iacute;a no en estas p&aacute;ginas en espa&ntilde;ol); su padre "
+        "despu&eacute;s lo env&iacute;a al mandado que termina en su venta &mdash;«ve, mira si tus hermanos "
+        "est&aacute;n en <em>shalom</em>» (37:14). La palabra desaparece luego durante seis cap&iacute;tulos, "
+        "hasta que Jos&eacute; le promete al Fara&oacute;n «Dios responder&aacute; por el <em>shalom</em> del "
+        "Fara&oacute;n» (41:16) &mdash;y regresa con fuerza en el cap&iacute;tulo 43, donde un mayordomo "
+        "egipcio saluda a los hermanos aterrados con «<em>shalom</em> a vosotros, no tem&aacute;is» (43:23) "
+        "y Jos&eacute; pregunta tres veces por el <em>shalom</em> de su padre (43:27-28). A los hombres que "
+        "no pod&iacute;an decir la palabra se la preguntan, en Egipto, el hermano al que vendieron."),
+    "neder": ("neder",
+        "UN VOTO &mdash;una promesa vinculante hecha a Dios, a menudo condicional («si t&uacute; haces... "
+        "entonces yo har&eacute;»). Ana «hizo voto de un voto» (<em>nadrah neder</em>, 1 Samuel 1:11, ya en "
+        "estas p&aacute;ginas): si Jehov&aacute; le da un hijo, lo devolver&aacute; de por vida. La ley trata "
+        "un voto con la m&aacute;xima seriedad &mdash;«cuando hagas un voto a Dios, no tardes en cumplirlo» "
+        "(Eclesiast&eacute;s 5:4, todav&iacute;a no en estas p&aacute;ginas)&mdash;, y Ana cumple el suyo al "
+        "pie de la letra, llevando al ni&ntilde;o ya destetado a Silo y dej&aacute;ndolo all&iacute;."),
+    "nazir": ("nazir",
+        "NAZAREO &mdash;uno «separado», apartado para Dios por un voto, marcado por abstenerse del vino, "
+        "evitar el contacto con cad&aacute;veres y, sobre todo, dejar crecer el cabello sin cortar: "
+        "«ninguna navaja pasar&aacute; sobre su cabeza» (la se&ntilde;al que promete Ana para Samuel, 1 "
+        "Samuel 1:11, ya en estas p&aacute;ginas, y la marca de Sans&oacute;n, Jueces 13, todav&iacute;a "
+        "no en estas p&aacute;ginas). La ley completa est&aacute; en <a href=\"numbers-6.es.html#n6-1\">N&uacute;meros "
+        "6</a> (ya en estas p&aacute;ginas), donde el voto es normalmente temporal &mdash;la versi&oacute;n "
+        "de por vida de Samuel, como la de Sans&oacute;n y la de Juan el Bautista, es la excepci&oacute;n "
+        "que la propia ley del cap&iacute;tulo no exige."),
+    "chanan": ("yejonk&aacute;",
+        "SER COMPASIVO, mostrar favor libremente &mdash;la ra&iacute;z detr&aacute;s de <em>jen</em> "
+        "(«favor») y detr&aacute;s de los nombres Ana, Han&aacute;n y (a trav&eacute;s del hebreo "
+        "Yojan&aacute;n) JUAN, «Jehov&aacute; ha sido compasivo». Jos&eacute; la usa como bendici&oacute;n "
+        "sobre el hermano peque&ntilde;o al que no ha visto en veintid&oacute;s a&ntilde;os y que "
+        "todav&iacute;a no puede reclamar: «Dios tenga compasi&oacute;n de ti, hijo m&iacute;o» (G&eacute;nesis "
+        "43:29, ya en estas p&aacute;ginas). &#9888; La misma forma verbal que este mismo nombre ya "
+        "anticipaba, <em>yejonk&aacute;</em>, hace su trabajo m&aacute;s famoso en la bendici&oacute;n "
+        "sacerdotal &mdash;«Jehov&aacute; haga resplandecer su rostro sobre ti, y tenga de ti "
+        "compasi&oacute;n» (<a href=\"numbers-6.es.html#n6-24\">N&uacute;meros 6:25</a>, ya en estas "
+        "p&aacute;ginas)&mdash; el vers&iacute;culo &uacute;nico que m&aacute;s hablantes reconocer&iacute;an "
+        "de o&iacute;do aunque nunca hayan abierto una Biblia hebrea."),
     "panim": ("panim",
         "ROSTRO —gramaticalmente plural en su forma incluso para un solo rostro (como 'aguas', mayim), "
         "y una palabra que hace tres trabajos distintos dentro de un mismo capítulo. Nombra una "
@@ -12134,7 +12193,13 @@ DICTIONARY_ES = {
         "'la piel de sus panim resplandecía' (<a href=\"exodus-34.es.html#v34-29\">Éxodo 34:29</a>, "
         "ya en estas páginas) —el mismo rostro que nadie puede mirar directamente ahora irradia una "
         "versión prestada de esa gloria sobre el propio rostro de Moisés, lo bastante brillante como "
-        "para que Israel tema acercarse a él."),
+        "para que Israel tema acercarse a él. La palabra asume un quinto trabajo no mucho después, "
+        "dirigido ahora a toda la naci&oacute;n y no a un solo hombre: la bendici&oacute;n sacerdotal "
+        "pide que el propio rostro de Jehov&aacute; resplandezca sobre el adorador y luego se alce "
+        "HACIA &eacute;l (<a href=\"numbers-6.es.html#n6-24\">N&uacute;meros 6:25-26</a>, ya en estas "
+        "p&aacute;ginas) &mdash;el mismo rostro que no pod&iacute;a mirarse directamente en este mismo "
+        "cap&iacute;tulo, ahora lo que la bendici&oacute;n misma pide que se vuelva, no en contra, sino "
+        "hacia el adorador."),
     "karan": ("qaran",
         "RESPLANDECÍA, emitía rayos —'la piel de su rostro qaran' (34:29), y el verbo comparte su raíz "
         "con keren, la palabra hebrea corriente para un CUERNO animal literal. Esa raíz compartida "
@@ -14866,6 +14931,16 @@ ENCYCLOPEDIA_ES = {
         "supervisarla. Los propios descendientes de Itamar producen despu&eacute;s la l&iacute;nea sacerdotal de "
         "El&iacute; (1 Samuel, todav&iacute;a no en estas p&aacute;ginas), l&iacute;nea que a su vez pierde el "
         "sumo sacerdocio de vuelta a la propia l&iacute;nea de Eleazar bajo Salom&oacute;n."),
+    "ketef-hinnom": ("Ketef Hinnom",
+        "Un sitio funerario en la ladera occidental del valle de Hinom, justo al suroeste de las murallas de la "
+        "Ciudad Vieja de Jerusal&eacute;n. En 1979, en una tumba excavada por el arque&oacute;logo Gabriel "
+        "Barkay, un equipo encontr&oacute; dos peque&ntilde;os pergaminos de plata enrollados, inscritos con la "
+        "bendici&oacute;n sacerdotal (N&uacute;meros 6:24-26, ya en estas p&aacute;ginas) y datados hacia el "
+        "600 a.C. &mdash;antes del exilio babil&oacute;nico, el fragmento m&aacute;s antiguo conocido de texto "
+        "b&iacute;blico que existe, siglos anterior a los Rollos del Mar Muerto. Desenrollarlos sin destruir la "
+        "plata quebradiza tom&oacute; tres a&ntilde;os de trabajo de conservaci&oacute;n; casi con toda "
+        "seguridad se llevaban como amuletos, no se le&iacute;an como escritura, y ahora se encuentran en el "
+        "Museo de Israel."),
     "kohath": ("Coat",
         "El segundo de los tres hijos de Lev&iacute;, y antepasado de los coatitas &mdash;el clan levita "
         "asignado al deber m&aacute;s peligroso del campamento en el desierto: cargar el arca, la mesa, el "
