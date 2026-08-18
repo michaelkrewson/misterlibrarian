@@ -3524,11 +3524,24 @@ ENCYCLOPEDIA = [
               "Numbers 3:4, both already on these pages), leaving Eleazar and his younger brother Ithamar to "
               "carry the priesthood forward. Numbers 3:32 gives him a title found nowhere else among the "
               "chapters translated so far — 'chieftain over the chieftains of Levi' — placing him in direct "
-              "charge of the Kohathites, the clan responsible for the sanctuary's holiest furniture. He "
+              "charge of the Kohathites, the clan responsible for the sanctuary's holiest furniture. Numbers "
+              "4:16 hands him a second, separate charge that has nothing to do with carrying furniture at all: "
+              "the oil for the light, the fragrant incense, the regular grain offering, and the anointing oil — "
+              "the ongoing supplies that keep the tabernacle's daily worship running. He "
               "succeeds Aaron as high priest at Aaron's death on Mount Hor (Numbers 20:28, not yet on these "
               "pages), and his own line, not Ithamar's, eventually produces Zadok and the priesthood that "
               "serves at Solomon's temple.",
-         refs=[("Numbers", 3, 2), ("Numbers", 3, 32)], videos=[]),
+         refs=[("Numbers", 3, 2), ("Numbers", 3, 32), ("Numbers", 4, 16)], videos=[]),
+    dict(slug="ithamar", name="Ithamar", kind="person", aliases=["Ithamar"],
+         desc="Aaron's fourth and youngest son, and Eleazar's brother — the two who survived Nadab and Abihu's "
+              "death by strange fire (Leviticus 10:1-2; Numbers 3:4, both already on these pages). Where Eleazar "
+              "is set over the Kohathites and their lethal cargo of holiest furniture, Ithamar supervises the two "
+              "Levite clans whose work carries no such danger: Gershon's curtains and coverings, and Merari's "
+              "frames and pillars (Numbers 4:28, 33). The division is a quiet demonstration of how this chapter "
+              "organizes risk — the more dangerous the cargo, the more senior the priest assigned to oversee it. "
+              "Ithamar's own descendants later produce the priestly line of Eli (1 Samuel, not yet on these "
+              "pages), a line that in turn loses the high priesthood back to Eleazar's own line under Solomon.",
+         refs=[("Numbers", 4, 28), ("Numbers", 4, 33)], videos=[]),
     dict(slug="kohath", name="Kohath", kind="person", aliases=["Kohath", "Kohathites"],
          desc="The second of Levi's three sons, and ancestor of the Kohathites — the Levite clan assigned the "
               "single most dangerous duty in the wilderness camp: carrying the ark, the table, the lampstand, "
@@ -5823,6 +5836,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Numbers 4 ----
+    (("Numbers", 4, 6), ("Exodus", 25, 5), "tachash skins covering the ark itself, the same genuinely uncertain material this project first flagged for the tabernacle's outer covering"),
+    (("Numbers", 4, 15), ("Numbers", 1, 51), "the outsider death penalty already stated for the tabernacle in general, now applied specifically to touching the uncovered holy things"),
+    (("Numbers", 4, 28), ("Numbers", 3, 25), "Gershon's curtains-and-coverings duty, first assigned in general terms, now placed under Ithamar's direct supervision"),
+    (("Numbers", 4, 48), ("Numbers", 3, 39), "8,580 men aged thirty to fifty, an exact total — set against chapter 3's own 22,000 that didn't quite add up"),
     # ---- Numbers 3 ----
     (("Numbers", 3, 4), ("Leviticus", 10, 1), "Nadab and Abihu's death by strange fire, told in full there and summarized here in a single relative clause — 'they had no children'"),
     (("Numbers", 3, 12), ("Exodus", 13, 2), "the consecration of every Israelite firstborn to Jehovah, first declared the night of the Passover, finally settled here by substitution — one whole tribe standing in for every firstborn son"),
@@ -8343,6 +8361,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num4": dict(era="exodus",
+                 when="The Levites' second census, narrower than the first: only men thirty to fifty, the years of full working strength, mustered by service rather than by dedication. Aaron and his sons wrap the ark, table, lampstand, and altars in colored cloth and tachash skins before the Kohathites are ever allowed to approach them, on pain of death for touching or even looking at the uncovered holy things; Eleazar keeps a separate charge over the oil, incense, and grain offering; Gershon and Merari, whose cargo carries no such danger, serve under Ithamar. The count: 2,750 Kohathites, 2,630 Gershonites, 3,200 Merarites — 8,580 total, exactly.",
+                 clock="⚠ Undated within the chapter, like the census around it. Still inside the same Sinai window as Numbers 1, 2, and 3 (already on these pages)."),
     "num3": dict(era="exodus",
                  when="The Levites' own census and assignment. Aaron's line is narrowed to two sons — Nadab and Abihu already dead for offering strange fire, leaving Eleazar and Ithamar to carry the priesthood forward. The tribe of Levi is formally taken in place of Israel's firstborn, then counted by clan from a single month old: Gershon (7,500, camped west, charged with the tabernacle's coverings and curtains), Kohath (8,600, camped south, charged with the ark, table, lampstand, and altars — the holiest furniture, under Eleazar's own direct oversight), and Merari (6,200, camped north, charged with the structural frames, bars, and pillars), with Moses, Aaron, and his sons camped east before the entrance itself. The chapter closes on an exact transaction: 22,273 firstborn Israelites against 22,000 Levites, the 273-person shortfall redeemed at five shekels a head, 1,365 shekels paid to Aaron's sons.",
                  clock="⚠ Undated within the chapter, like the census and camp arrangement around it. Still inside the same Sinai window as Numbers 1 and 2 (already on these pages)."),
@@ -14792,10 +14813,25 @@ ENCYCLOPEDIA_ES = {
         "a su hermano menor Itamar para llevar adelante el sacerdocio. N&uacute;meros 3:32 le da un t&iacute;tulo "
         "que no aparece en ning&uacute;n otro lugar entre los cap&iacute;tulos traducidos hasta ahora "
         "&mdash;«jefe sobre los jefes de Lev&iacute;»&mdash;, poni&eacute;ndolo a cargo directo de los "
-        "coatitas, el clan responsable del mobiliario m&aacute;s sagrado del santuario. Sucede a Aar&oacute;n "
+        "coatitas, el clan responsable del mobiliario m&aacute;s sagrado del santuario. N&uacute;meros 4:16 le "
+        "encarga adem&aacute;s una segunda responsabilidad, aparte, que nada tiene que ver con cargar mobiliario: "
+        "el aceite para la l&aacute;mpara, el incienso arom&aacute;tico, la ofrenda de grano regular y el aceite "
+        "de unci&oacute;n &mdash;los suministros continuos que mantienen en marcha el culto diario del "
+        "tabern&aacute;culo. Sucede a Aar&oacute;n "
         "como sumo sacerdote a la muerte de este en el monte Hor (N&uacute;meros 20:28, todav&iacute;a no en "
         "estas p&aacute;ginas), y su propia l&iacute;nea, no la de Itamar, produce eventualmente a Sadoc y el "
         "sacerdocio que sirve en el templo de Salom&oacute;n."),
+    "ithamar": ("Itamar",
+        "El cuarto y menor hijo de Aar&oacute;n, y hermano de Eleazar &mdash;los dos que sobrevivieron a la "
+        "muerte de Nadab y Ab&iacute;u por ofrecer «fuego extra&ntilde;o» (Lev&iacute;tico 10:1-2; N&uacute;meros "
+        "3:4, ambos ya en estas p&aacute;ginas). Donde Eleazar queda a cargo de los coatitas y su carga letal de "
+        "mobiliario sagrad&iacute;simo, Itamar supervisa a los dos clanes levitas cuyo trabajo no conlleva ese "
+        "peligro: las cortinas y cubiertas de Gers&oacute;n, y los marcos y postes de Merari (N&uacute;meros "
+        "4:28, 33). La divisi&oacute;n demuestra en silencio c&oacute;mo organiza este cap&iacute;tulo el riesgo "
+        "&mdash;cuanto m&aacute;s peligrosa la carga, m&aacute;s alto el rango del sacerdote encargado de "
+        "supervisarla. Los propios descendientes de Itamar producen despu&eacute;s la l&iacute;nea sacerdotal de "
+        "El&iacute; (1 Samuel, todav&iacute;a no en estas p&aacute;ginas), l&iacute;nea que a su vez pierde el "
+        "sumo sacerdocio de vuelta a la propia l&iacute;nea de Eleazar bajo Salom&oacute;n."),
     "kohath": ("Coat",
         "El segundo de los tres hijos de Lev&iacute;, y antepasado de los coatitas &mdash;el clan levita "
         "asignado al deber m&aacute;s peligroso del campamento en el desierto: cargar el arca, la mesa, el "
