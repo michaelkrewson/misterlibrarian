@@ -363,7 +363,7 @@ DICTIONARY = [
     ("qoneh", "qoneh", "קֹנֵה", "qoneh",
      "'Maker, creator, possessor' (from qanah) — 'Maker of heaven and earth' (14:19); the same root Eve punned on at Cain's birth, 'I have gotten/made a man' (4:1).", (14, 19)),
     ("maaser", "ma'aser", "מַעֲשֵׂר", "ma'aser",
-     "A tenth, a tithe — the Bible's first, given by Abram to Melchizedek (14:20).", (14, 20)),
+     "A tenth, a tithe — the Bible's first, given by Abram to Melchizedek (14:20). Leviticus 27:30-33 (already on these pages) later legislates two distinct tithes: land's produce, redeemable at valuation plus a fifth like everything else in that chapter, and livestock's tithe, which is not appraised at all — every tenth animal that 'passes under the shepherd's staff' is fixed by the count itself, with the herder forbidden even to inspect which one it will be.", (14, 20)),
     # ---- Genesis 15 (Hebrew) ----
     ("aman", "he'emin / aman", "הֶאֱמִן / אָמַן", "he'emin / aman",
      "To trust, to lean one's weight on — the root behind 'amen.' 'Abram believed Jehovah, and he counted it to him as righteousness' (15:6), the verse Paul and James both build on.", (15, 6)),
@@ -480,7 +480,7 @@ DICTIONARY = [
     ("nachash", "nachash", "נָחַשׁ", "nachesh yenachesh",
      "To PRACTISE DIVINATION — to read omens. Joseph's steward says of the silver cup that his master 'indeed divines by it' (44:5), and Joseph repeats the claim to the brothers' faces (44:15). The practice is real and Egyptian: LECANOMANCY, reading the shapes made by oil dropped into water in a bowl, is attested across the ancient Near East. ⚠️ It is also flatly prohibited by the Torah later (Leviticus 19:26; Deuteronomy 18:10), which leaves an honest question the text never answers: is Joseph describing what he does, or maintaining an Egyptian persona that includes a magician's reputation? This is the man who told Pharaoh 'not I — God will answer' (41:16), so the second is at least as likely. Genesis reports the claim and declines to comment; the versions all keep it plain (KJV 'whereby indeed he divineth').", (44, 5)),
     ("cherem", "cherem", "חֵרֶם", "vayacharimu",
-     "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood. ⚠️ Jeremiah 25:9 turns the word outward: 'I will devote them to destruction' (vahacharamtim) is Jehovah applying the identical ban, generations later, not to a Canaanite city but to the surrounding nations -- Judah included -- through Nebuchadrezzar's own army. A category this book had until then reserved for conquest becomes, in the mouth of the same God, a sentence on his own covenant people.", ("Judges", 1, 17)),
+     "The BAN — a thing DEVOTED to God by being placed utterly beyond human use, which in war meant destroyed rather than plundered. From CHARAM, to shut off, seal away, consecrate irreversibly (the same root gives Arabic HARAM, 'forbidden/sacred'). Leviticus 27:28-29 (already on these pages) is the word's actual source law, before any conquest narrative puts it into practice: no devoted thing, whether property, animal, or person, may be sold or redeemed, ever — and a person placed under the ban is not ransomable, full stop, but put to death. It is the hardest concept in the conquest narratives: certain enemy cities are put under the CHEREM, their goods and often their people not taken as spoil but wiped out as an offering God alone owns. Judges 1:17 has Judah and Simeon 'put Zephath to the ban' and rename it HORMAH — 'Destruction,' the same root — freezing the act into the map. \u26a0\ufe0f This translation neither softens the word nor explains it away: it renders it as what it is and leaves the moral weight of it in the note, the same posture it takes on the numbers of the exodus and the flood. ⚠️ Jeremiah 25:9 turns the word outward: 'I will devote them to destruction' (vahacharamtim) is Jehovah applying the identical ban, generations later, not to a Canaanite city but to the surrounding nations -- Judah included -- through Nebuchadrezzar's own army. A category this book had until then reserved for conquest becomes, in the mouth of the same God, a sentence on his own covenant people.", ("Judges", 1, 17)),
     ("sukkah", "sukkah (pl. sukkot)", "סֻכָּה", "sukkah",
      "A BOOTH — a light, temporary shelter woven from branches, as opposed to an OHEL (tent, sturdier and portable) or a permanent house. It is the word behind SUKKOT, the autumn Feast of Booths, when Israel is commanded to live for seven days in shelters like these on purpose, 'so that your generations may know that I made the people of Israel dwell in booths when I brought them out of the land of Egypt' (Leviticus 23:42-43). ⚠ Psalm 27:5 uses it of God himself as shelter — 'he will hide me in his sukkah in the day of trouble' — the most fragile-sounding structure in the Hebrew vocabulary of shelter, given to the one hiding-place the psalm treats as reliable. Jacob names a place SUKKOT after building shelters there for his livestock (Genesis 33:17), and Jonah builds one to sit under and watch Nineveh (Jonah 4:5).", ("Psalms", 27, 5)),
     ("ma-alot", "shir la-ma'alot", "שִׁיר לַמַּעֲלוֹת", "shir la-ma'alot",
@@ -2033,6 +2033,9 @@ DICTIONARY = [
     ("qomemiyut", "qomemiyut", "קוֹמְמִיּוּת", "qomemiyut",
      "UPRIGHT, erect — a rare word occurring only once in the Hebrew Bible, at 26:13: 'I broke the bars of your yoke, and made you walk qomemiyut.' Built on a root for standing tall, it names more than freedom from slavery — a former slave's body itself, no longer bent under a yoke, able to stand at full height. KJV 'upright'; the image is physical before it is anything else.",
      ("Leviticus", 26, 13)),
+    ("erekh", "erekh", "עֶרֶךְ", "erkekha",
+     "A FIXED VALUATION — not a market price but a flat tariff, scaled only by age and sex, that a person's vowed value to the sanctuary is converted into (27:2-8): fifty shekels for a man in his prime, thirty for a woman, sliding down for children and the elderly, with an explicit provision for the poor to have the priest set a lower figure they can actually pay. The word is grammatically addressed to Moses himself — erkekha, 'YOUR valuation' — even though every verse then hands the actual assessment to 'the priest'; the law speaks as if Moses personally fixed the tariff once, for good. Genesis 37:28 (already on these pages) already put this exact number to use: Joseph, seventeen years old, is sold for twenty pieces of silver — precisely this chapter's own fixed valuation for a male between five and twenty. Genesis makes nothing of the coincidence; the price is simply, horribly, correct.",
+     ("Leviticus", 27, 2)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5777,6 +5780,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 27 ----
+    (("Leviticus", 27, 5), ("Genesis", 37, 28), "the fixed valuation for a boy five to twenty years old, twenty shekels — the exact price Joseph is sold for, before this chapter's own tariff even exists in the story's own timeline"),
+    (("Leviticus", 27, 16), ("Leviticus", 25, 15), "field pricing tied to years-until-jubilee — the identical logic already used for selling land, now reused for dedicating it"),
+    (("Leviticus", 27, 26), ("Exodus", 13, 2), "the firstborn already consecrated to Jehovah before Israel even left Egypt — the reason a firstborn animal cannot also be vowed here"),
+    (("Leviticus", 27, 33), ("Psalms", 27, 4), "levaqer, 'inspect' — the identical verb for a priest checking a tithe animal, reused by the psalmist asking to be gone over by God the same way"),
     # ---- Leviticus 26 ----
     (("Leviticus", 26, 12), ("Genesis", 3, 8), "God 'walking' among people — the identical verb for God walking in Eden, reused here as a covenant blessing offered back to a redeemed nation"),
     (("Leviticus", 26, 29), ("Lamentations", 2, 20), "the child-cannibalism curse — the covenant's own stated penalty for abandoning it, remembered as literally fulfilled at Jerusalem's fall"),
@@ -8261,6 +8269,9 @@ CHRON_CHAPTERS = {
     "lev23": dict(era="exodus",
                   when="The Torah's full festival calendar, seven appointed times in one chapter: the weekly Sabbath; Passover and the seven-day Feast of Unleavened Bread in the first month; the firstfruits sheaf and the fifty-day count to the wheat-harvest offering (with the poor-and-foreigner gleaning law dropped into the middle of it); the Feast of Trumpets and the Day of Atonement in the seventh month; and the seven-day Feast of Booths closing the agricultural year. Each festival gets its own date, its own required rest, and its own offering — the same calendar still kept, in outline, by religious Jews today.",
                   clock="⚠ Undated within the chapter itself beyond the festival dates it fixes for every future year — the one chapter in Leviticus that is, by its own content, permanently forward-looking rather than tied to a single moment in the wilderness. Still spoken at Sinai in the same window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev27": dict(era="exodus",
+                  when="The book's own appendix, closing on the price list rather than the law itself: fixed valuations for a person vowed to Jehovah (a flat tariff by age and sex, with a built-in exception for the poor), for animals, houses, and fields dedicated to him, and for tithes of land and livestock. A dedicated ancestral field prices out against the jubilee cycle exactly as a sold one already did in Leviticus 25; a firstborn animal cannot also be vowed, since it already belongs to Jehovah by right. The chapter's hardest material comes late: cherem, the devoted thing that can never be sold or redeemed at any price — including, starkly, a person placed under the ban, who cannot be ransomed at all. It closes on the tithe of the herd, fixed by an actual count rather than a priest's appraisal, and then on the book's own final verse: 'these are the commandments which Jehovah commanded Moses for the children of Israel at Mount Sinai.'",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. V34's own colophon, identical in form to Leviticus 26:46's closing formula, marks the end of the entire book — the Masoretic text itself sets this verse apart with a distinct scribal mark, not the ordinary paragraph breaks used everywhere else in Leviticus. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages) — Numbers picks up one month later, at the same mountain."),
     "lev26": dict(era="exodus",
                   when="The book's own covenant conclusion: obedience blessed, defiance cursed, laid out in careful proportion — ten verses of blessing (rain, harvest, peace, victory, God's own presence walking among the people) against thirty-two verses of curse that escalate in four distinct waves, each one triggered specifically by Israel's continued refusal to respond to the wave before it, each opened by the identical formula 'seven times more for your sins.' The curses run from disease and military defeat, through crop failure and wild animals, through siege and a famine so total that ten women bake in one oven, to the worst line in the book — parents eating their own children — and finally exile, the land left empty enough to enjoy the sabbaths Israel denied it. It closes on hope rather than despair: confession, a humbled heart, and Jehovah remembering his covenant with Jacob, then Isaac, then Abraham, even at the furthest point of exile.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. V46's own closing colophon — 'these are the statutes and the ordinances and the laws' — reads like the intended close of the whole Sinai law code beginning at Exodus 19, with Leviticus 27 arriving afterward as its own appendix. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
@@ -12329,7 +12340,11 @@ DICTIONARY_ES = {
         "EL ANATEMA — algo CONSAGRADO a Dios al colocarlo completamente fuera del uso humano, "
         "lo que en la guerra significaba destruido en vez de saqueado. De CHARAM, cerrar, "
         "sellar, consagrar de forma irreversible (la misma raíz da el árabe HARAM, "
-        "«prohibido/sagrado»). Es el concepto más difícil de los relatos de conquista: ciertas "
+        "«prohibido/sagrado»). Levítico 27:28-29 (ya en estas páginas) es la propia ley de "
+        "origen de la palabra, antes de que ningún relato de conquista la ponga en práctica: "
+        "ninguna cosa consagrada, sea propiedad, animal o persona, puede venderse ni rescatarse, "
+        "jamás —y una persona puesta bajo el anatema no es rescatable en absoluto, sino que debe "
+        "morir. Es el concepto más difícil de los relatos de conquista: ciertas "
         "ciudades enemigas se ponen bajo el CHEREM, y sus bienes y a menudo su gente no se toman "
         "como botín sino que se exterminan como ofrenda que solo Dios posee. Jueces 1:17 (aún no "
         "en esta estantería) tiene a Judá y Simeón «poniendo a Sefat bajo anatema» y "
@@ -14607,6 +14622,27 @@ DICTIONARY_ES = {
         "esclavitud &mdash;el propio cuerpo de un antiguo esclavo, ya no doblado bajo un yugo, capaz de "
         "mantenerse en toda su estatura. KJV «upright»; la imagen es f&iacute;sica antes que cualquier "
         "otra cosa."),
+    "erekh": ("erekh",
+        "UNA TASACI&Oacute;N FIJA &mdash;no un precio de mercado sino un arancel fijo, escalonado solo "
+        "por edad y sexo, al que se convierte el valor votado de una persona al santuario (27:2-8): "
+        "cincuenta siclos por un hombre en su plenitud, treinta por una mujer, descendiendo para ni&ntilde;os "
+        "y ancianos, con una previsi&oacute;n expl&iacute;cita (v8) para que el pobre reciba del sacerdote "
+        "una cifra que realmente pueda pagar. La palabra se dirige gramaticalmente a Mois&eacute;s mismo "
+        "&mdash;<em>erkekha</em>, «TU tasaci&oacute;n»&mdash; aunque cada vers&iacute;culo despu&eacute;s "
+        "entrega la evaluaci&oacute;n real al «sacerdote»; la ley habla como si Mois&eacute;s hubiera "
+        "fijado el arancel personalmente, de una vez para siempre. G&eacute;nesis 37:28 (ya en estas "
+        "p&aacute;ginas) ya puso en uso esta cifra exacta: Jos&eacute;, de diecisiete a&ntilde;os, es "
+        "vendido por veinte piezas de plata &mdash;precisamente la tasaci&oacute;n fija de este "
+        "cap&iacute;tulo para un var&oacute;n entre cinco y veinte a&ntilde;os. G&eacute;nesis no hace nada "
+        "de la coincidencia; el precio es sencillamente, terriblemente, correcto."),
+    "maaser": ("ma'aser",
+        "Un diezmo &mdash;el primero de la Biblia, dado por Abram a Melquisedec (G&eacute;nesis 14:20, ya "
+        "en estas p&aacute;ginas). Lev&iacute;tico 27:30-33 (ya en estas p&aacute;ginas) legisla despu&eacute;s "
+        "dos diezmos distintos: el del producto de la tierra, rescatable a su tasaci&oacute;n m&aacute;s "
+        "una quinta parte como todo lo dem&aacute;s en ese cap&iacute;tulo, y el del ganado, que no se "
+        "tasa en absoluto &mdash;cada d&eacute;cimo animal que «pasa bajo el cayado del pastor» queda "
+        "fijado por el propio conteo, y al pastor se le proh&iacute;be incluso examinar cu&aacute;l "
+        "ser&aacute;."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15437,6 +15473,38 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev27": [dict(
+        file="monaco-joseph-sold-dividing-coins-1730.jpg",
+        title="Joseph Sold by His Brothers",
+        title_es="José vendido por sus hermanos",
+        artist="Pietro Monaco, after Silvestro Manaigo",
+        year="1730&ndash;39",
+        location="Engraving, The Metropolitan Museum of Art, New York",
+        location_es="Grabado, Museo Metropolitano de Arte, Nueva York",
+        alt="An 18th-century engraving of Joseph's brothers around a stone well, one man counting coins "
+            "into another's hand at left while a shirtless Joseph sits bound and despondent at center, "
+            "his brothers hauling him up from the cistern behind him. A caravan of camels departs toward "
+            "a distant city on the right. A Latin caption below quotes Genesis 37:28, naming the price: "
+            "twenty pieces of silver.",
+        note="An 18th-century Venetian engraving after a painting by Silvestro Manaigo, its own printed "
+             "caption quoting Genesis 37:28 in Latin by chapter and verse: Joseph sold to the Ishmaelites "
+             "for twenty pieces of silver. This chapter's own dictionary entry on <em>erekh</em> (already "
+             "on these pages) names the coincidence the engraving does not know it is illustrating: "
+             "twenty shekels is exactly Leviticus 27:5's own fixed valuation for a male between five and "
+             "twenty years old. Joseph, seventeen, is not shortchanged by his brothers &mdash; he is sold "
+             "at the going institutional rate, a detail Genesis itself never remarks on.",
+        note_es="Un grabado veneciano del siglo XVIII sobre una pintura de Silvestro Manaigo, cuya propia "
+                "leyenda impresa cita G&eacute;nesis 37:28 en lat&iacute;n, cap&iacute;tulo y "
+                "vers&iacute;culo: Jos&eacute; vendido a los ismaelitas por veinte piezas de plata. La "
+                "propia entrada de diccionario de este cap&iacute;tulo sobre <em>erekh</em> (ya en estas "
+                "p&aacute;ginas) nombra la coincidencia que el grabado ilustra sin saberlo: veinte siclos "
+                "es exactamente la tasaci&oacute;n fija de Lev&iacute;tico 27:5 para un var&oacute;n entre "
+                "cinco y veinte a&ntilde;os. A Jos&eacute;, de diecisiete, sus hermanos no lo estafan "
+                "&mdash;lo venden a la tarifa institucional vigente, un detalle que el propio G&eacute;nesis "
+                "nunca comenta.",
+        license="CC0",
+        source_url="https://commons.wikimedia.org/wiki/File:Joseph_being_sold_into_slavery_by_his_brothers,_who_sit_around_a_well_dividing_up_the_coins_MET_DP883478.jpg",
+    )],
     "lev26": [dict(
         file="bendemann-jews-mourning-exile-1832.jpg",
         title="Jews Mourning in Exile",
