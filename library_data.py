@@ -3518,6 +3518,43 @@ ENCYCLOPEDIA = [
               "the Talmud at Sotah 37a) honors Nahshon as the first Israelite to step into the Red Sea, before "
               "it parted — faith walking in before the water opened.",
          refs=[("Numbers", 1, 7)], videos=[]),
+    dict(slug="eleazar", name="Eleazar", kind="person", aliases=["Eleazar"],
+         desc="Aaron's third son, and the one through whom the high priesthood actually descends. His two "
+              "older brothers, Nadab and Abihu, died childless for offering 'strange fire' (Leviticus 10:1-2; "
+              "Numbers 3:4, both already on these pages), leaving Eleazar and his younger brother Ithamar to "
+              "carry the priesthood forward. Numbers 3:32 gives him a title found nowhere else among the "
+              "chapters translated so far — 'chieftain over the chieftains of Levi' — placing him in direct "
+              "charge of the Kohathites, the clan responsible for the sanctuary's holiest furniture. He "
+              "succeeds Aaron as high priest at Aaron's death on Mount Hor (Numbers 20:28, not yet on these "
+              "pages), and his own line, not Ithamar's, eventually produces Zadok and the priesthood that "
+              "serves at Solomon's temple.",
+         refs=[("Numbers", 3, 2), ("Numbers", 3, 32)], videos=[]),
+    dict(slug="kohath", name="Kohath", kind="person", aliases=["Kohath", "Kohathites"],
+         desc="The second of Levi's three sons, and ancestor of the Kohathites — the Levite clan assigned the "
+              "single most dangerous duty in the wilderness camp: carrying the ark, the table, the lampstand, "
+              "and the altars, the actual furniture that stood closest to the presence itself (Numbers 3:27-31, "
+              "already on these pages). Their camp stood on the tabernacle's south side, under a supervisor "
+              "ranked above the other two Levite clan-chiefs (Eleazar, Numbers 3:32). Kohath is also, through "
+              "his son Amram, the grandfather of Moses, Aaron, and Miriam (Exodus 6:18-20, not yet on these "
+              "pages) — the priesthood and its most demanding transport duty both running through the same "
+              "family line.",
+         refs=[("Numbers", 3, 19), ("Numbers", 3, 27)], videos=[]),
+    dict(slug="gershon", name="Gershon", kind="person", aliases=["Gershon", "Gershonites"],
+         desc="The eldest of Levi's three sons, and ancestor of the Gershonites — the Levite clan charged with "
+              "the tabernacle's soft architecture: its coverings, curtains, and screens, the fabric that gave "
+              "the tent its actual shape (Numbers 3:25-26, already on these pages). Despite Gershon's own "
+              "seniority among Levi's sons, his clan's duty is lighter than Kohath's — the coverings, not the "
+              "holiest vessels — and his clan camped on the tabernacle's west side, the 'seaward' direction "
+              "this project has already tracked from Numbers 2's own camp standards.",
+         refs=[("Numbers", 3, 18), ("Numbers", 3, 21)], videos=[]),
+    dict(slug="merari", name="Merari", kind="person", aliases=["Merari", "Merarites"],
+         desc="The youngest of Levi's three sons, and ancestor of the Merarites — the Levite clan charged with "
+              "the tabernacle's heavy structural framework: its frames, bars, pillars, and sockets, the weight "
+              "nobody sees once the fabric goes up (Numbers 3:36-37, already on these pages). His clan camped "
+              "on the tabernacle's north side, completing the ring of Levite clans that closed around the tent "
+              "on every side except the east, where Moses, Aaron, and Aaron's own sons camped directly before "
+              "the entrance.",
+         refs=[("Numbers", 3, 20), ("Numbers", 3, 33)], videos=[]),
     dict(slug="judah", name="Judah", kind="person",
          aliases=["Judah", "the tribe of Judah"],
          desc="Jacob's fourth son by Leah, and the tribe descended from him — the ROYAL and messianic line. "
@@ -14748,6 +14785,42 @@ ENCYCLOPEDIA_ES = {
         "nombre que suena como el propio dios patrón del imperio es una pulla cifrada: el "
         "protector desenmascarado como destructor. El texto nunca lo dice abiertamente — "
         "entrega el nombre a quien pueda captarlo."),
+    "eleazar": ("Eleazar",
+        "El tercer hijo de Aar&oacute;n, y aquel por quien realmente desciende el sumo sacerdocio. Sus dos "
+        "hermanos mayores, Nadab y Ab&iacute;u, murieron sin hijos por ofrecer «fuego extra&ntilde;o» "
+        "(Lev&iacute;tico 10:1-2; N&uacute;meros 3:4, ambos ya en estas p&aacute;ginas), dejando a Eleazar y "
+        "a su hermano menor Itamar para llevar adelante el sacerdocio. N&uacute;meros 3:32 le da un t&iacute;tulo "
+        "que no aparece en ning&uacute;n otro lugar entre los cap&iacute;tulos traducidos hasta ahora "
+        "&mdash;«jefe sobre los jefes de Lev&iacute;»&mdash;, poni&eacute;ndolo a cargo directo de los "
+        "coatitas, el clan responsable del mobiliario m&aacute;s sagrado del santuario. Sucede a Aar&oacute;n "
+        "como sumo sacerdote a la muerte de este en el monte Hor (N&uacute;meros 20:28, todav&iacute;a no en "
+        "estas p&aacute;ginas), y su propia l&iacute;nea, no la de Itamar, produce eventualmente a Sadoc y el "
+        "sacerdocio que sirve en el templo de Salom&oacute;n."),
+    "kohath": ("Coat",
+        "El segundo de los tres hijos de Lev&iacute;, y antepasado de los coatitas &mdash;el clan levita "
+        "asignado al deber m&aacute;s peligroso del campamento en el desierto: cargar el arca, la mesa, el "
+        "candelabro y los altares, el mobiliario real que se manten&iacute;a m&aacute;s cerca de la presencia "
+        "misma (N&uacute;meros 3:27-31, ya en estas p&aacute;ginas). Su campamento se ubicaba al lado sur del "
+        "tabern&aacute;culo, bajo un supervisor clasificado por encima de los otros dos jefes de clan levitas "
+        "(Eleazar, N&uacute;meros 3:32). Coat es tambi&eacute;n, a trav&eacute;s de su hijo Amram, abuelo de "
+        "Mois&eacute;s, Aar&oacute;n y Miriam (&Eacute;xodo 6:18-20, todav&iacute;a no en estas p&aacute;ginas) "
+        "&mdash;el sacerdocio y su deber de transporte m&aacute;s exigente corriendo ambos por la misma "
+        "l&iacute;nea familiar."),
+    "gershon": ("Gers&oacute;n",
+        "El mayor de los tres hijos de Lev&iacute;, y antepasado de los gersonitas &mdash;el clan levita "
+        "encargado de la arquitectura blanda del tabern&aacute;culo: sus cubiertas, cortinas y velos, la tela "
+        "que le daba a la tienda su forma real (N&uacute;meros 3:25-26, ya en estas p&aacute;ginas). Pese a la "
+        "propia condici&oacute;n de mayor de Gers&oacute;n entre los hijos de Lev&iacute;, el deber de su clan "
+        "es m&aacute;s ligero que el de Coat &mdash;las cubiertas, no los objetos m&aacute;s sagrados&mdash;, "
+        "y su clan acampaba en el lado occidental del tabern&aacute;culo, la direcci&oacute;n «hacia el mar» "
+        "que este proyecto ya ha rastreado desde los propios estandartes de campamento de N&uacute;meros 2."),
+    "merari": ("Merari",
+        "El menor de los tres hijos de Lev&iacute;, y antepasado de los meraritas &mdash;el clan levita "
+        "encargado del armaz&oacute;n estructural pesado del tabern&aacute;culo: sus marcos, barras, postes y "
+        "basas, el peso que nadie ve una vez levantada la tela (N&uacute;meros 3:36-37, ya en estas "
+        "p&aacute;ginas). Su clan acampaba en el lado norte del tabern&aacute;culo, cerrando el anillo de "
+        "clanes levitas que rodeaba la tienda por todos lados excepto el oriente, donde acampaban Mois&eacute;s, "
+        "Aar&oacute;n y los propios hijos de Aar&oacute;n directamente frente a la entrada."),
     "first-temple": ("El Primer Templo",
         "La casa que SALOMÓN construyó en la era que David compró, en el monte que "
         "Génesis 22 llama MORIA — comenzada en su cuarto año (1 Reyes 6:1) y en pie, "
