@@ -805,6 +805,9 @@ DICTIONARY = [
      "An army — massed ranks for war (Numbers 1:3, 'all who go out to the tsava'). The census is a military muster: everyone counted is a soldier. The same word makes the divine title 'Jehovah of ARMIES' (traditionally 'of hosts' — see the fuller discussion at tzeva'ot), and names the 'army of heaven' — sun, moon, and stars arrayed like troops. For the Levites the tsava is redefined: their 'service/warfare' is the tabernacle, not the battlefield (Numbers 4:23).", ("Numbers", 1, 3)),
     ("gulgolet", "gulgolet", "גֻּלְגֹּלֶת", "gulgolet",
      "A skull, a head — the census counts 'by their gulgolot,' head by head, each person reckoned singly (Numbers 1:2, 18; KJV 'by their polls'). The word for a rounded skull gives us, through Aramaic Gulgalta and Latin Calvaria, the two names of one hill: GOLGOTHA, 'the place of the skull' (Matthew 27:33). Every head is numbered and known — the same word that tallies an army will one day name a place of execution outside Jerusalem.", ("Numbers", 1, 2)),
+    # ---- Numbers 2 (Hebrew) ----
+    ("degel", "degel", "דֶּגֶל", "diglo",
+     "A STANDARD — the banner each of the four camp-divisions marches and camps under (2:2-34), one per compass direction, visible from a distance before a single tent goes up. The word itself specifies no color or emblem; Numbers names each standard only by its tribe (Judah's standard, Reuben's standard), never by any image on it. Later rabbinic tradition (Numbers Rabbah 2:10, well outside this book) filled that silence in, assigning each of the four a symbolic creature — a tradition some readers connect to the four living creatures of Ezekiel 1 and Revelation 4, though neither text ever states the link itself. KJV/ASV both keep 'standard'; NWT 'banner.'", ("Numbers", 2, 2)),
     ("el-olam", "El Olam", "אֵל עוֹלָם", "El Olam",
      "'The Everlasting God' — the fourth El-name collected at a landmark: El Elyon at Salem (14:18), El Roi at Hagar's well (16:13), El Shaddai at the covenant (17:1), and El Olam at a tamarisk beside a sworn well (21:33). NWT, keeping its clock, 'the indefinitely lasting God.'", (21, 33)),
     ("eshel", "eshel", "אֵשֶׁל", "eshel",
@@ -5780,6 +5783,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Numbers 2 ----
+    (("Numbers", 2, 3), ("Genesis", 29, 35), "Judah named 'praise' at birth, now leading the whole camp's march — the name given a generation earlier already pointing here"),
+    (("Numbers", 2, 10), ("Genesis", 29, 32), "Reuben the firstborn, still heading the census list and the camp's second standard even after losing the leading blessing"),
+    (("Numbers", 2, 17), ("Numbers", 1, 50), "the Levites and the tent fixed at the camp's exact center — the geometry Numbers 1 already described in words, now confirmed as marching order too"),
+    (("Numbers", 2, 18), ("Genesis", 48, 20), "Ephraim named before his older brother Manasseh — the same reversal Jacob's crossed hands performed, still holding a generation later in the camp order"),
     # ---- Leviticus 27 ----
     (("Leviticus", 27, 5), ("Genesis", 37, 28), "the fixed valuation for a boy five to twenty years old, twenty shekels — the exact price Joseph is sold for, before this chapter's own tariff even exists in the story's own timeline"),
     (("Leviticus", 27, 16), ("Leviticus", 25, 15), "field pricing tied to years-until-jubilee — the identical logic already used for selling land, now reused for dedicating it"),
@@ -8290,6 +8298,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num2": dict(era="exodus",
+                 when="The same census, now given a floor plan: the twelve tribes grouped into four camps of three, one under each compass standard — Judah's group east and marching first, Reuben's south and second, Ephraim's west and third, Dan's north and last — with the Levites and the tent of meeting fixed at the exact center, whether the camp is standing still or on the march.",
+                 clock="Still c. 1445 BC, the same brief window as Numbers 1 — the census and the camp arrangement belong to the same short stretch of days at Sinai, before the cloud lifts (Numbers 10:11, not yet on these pages)."),
     "gen23": dict(era="patriarchs",
                   when="Sarah dies at Hebron; Abraham buys the cave of Machpelah — the first parcel of the Promised Land is a grave.",
                   clock="AM 2085 · c. 1859 BC traditional — Sarah dies at 127, thirty-seven years after Isaac's birth (Isaac is now 37). The purchase gives the patriarchs their one indisputable foothold in Canaan; the tomb at Hebron is venerated to this day."),
@@ -14643,6 +14654,45 @@ DICTIONARY_ES = {
         "tasa en absoluto &mdash;cada d&eacute;cimo animal que «pasa bajo el cayado del pastor» queda "
         "fijado por el propio conteo, y al pastor se le proh&iacute;be incluso examinar cu&aacute;l "
         "ser&aacute;."),
+    "paqad": ("paqad",
+        "Visitar, atender &mdash;para bien o para mal: «Jehov&aacute; VISIT&Oacute; a Sara» con un hijo "
+        "(G&eacute;nesis 21:1, todav&iacute;a no en estas p&aacute;ginas en espa&ntilde;ol), y el mismo verbo "
+        "«visita» las obras de Jerusal&eacute;n sobre ella en juicio. En N&uacute;meros el mismo verbo dirige "
+        "el censo: <em>paqad</em> es RECLUTAR, contar un ej&eacute;rcito (N&uacute;meros 1:3, 19); los "
+        "<em>pequdim</em> son «los reclutados». Y en un solo cap&iacute;tulo gira tres veces &mdash;las "
+        "tribus guerreras son reclutadas, los levitas NO son contados (1:47) sino DESIGNADOS sobre el "
+        "tabern&aacute;culo (1:50). Una sola ra&iacute;z: dirigir la atenci&oacute;n hacia alguien, ya sea "
+        "para contar, encargar o visitar."),
+    "tsava": ("tsava",
+        "Un ej&eacute;rcito &mdash;filas reunidas para la guerra (N&uacute;meros 1:3, «todos los que salen "
+        "al <em>tsava</em>»). El censo es una recluta militar: todo el que se cuenta es un soldado. La "
+        "misma palabra forma el t&iacute;tulo divino «Jehov&aacute; de los EJ&Eacute;RCITOS» (tradicionalmente "
+        "«de los ej&eacute;rcitos celestiales»), y nombra el «ej&eacute;rcito del cielo» &mdash;sol, luna y "
+        "estrellas dispuestos como tropas. Para los levitas el <em>tsava</em> se redefine: su «servicio» es "
+        "el tabern&aacute;culo, no el campo de batalla (N&uacute;meros 4:23, todav&iacute;a no en estas "
+        "p&aacute;ginas)."),
+    "matteh": ("matteh",
+        "Una tribu &mdash;pero el sentido llano de la palabra es un BAST&Oacute;N, una vara, una rama (de "
+        "<em>natah</em>, «extender»). Las tribus de Israel son «bastones»: brotes de un mismo tronco, el de "
+        "Jacob, cada una una rama del &aacute;rbol familiar, cada una dirigida por un hombre que sostiene el "
+        "bast&oacute;n de un jefe. N&uacute;meros prefiere <em>matteh</em> donde G&eacute;nesis a menudo "
+        "usaba <em>shevet</em> (tambi&eacute;n «vara/tribu»); la imagen es la misma &mdash;un pueblo que es "
+        "un solo &aacute;rbol con doce ramas."),
+    "nasi": ("nasi",
+        "Un pr&iacute;ncipe, un jefe &mdash;«uno alzado» (de <em>nasa</em>, «alzar, llevar»). En N&uacute;meros "
+        "el plural <em>nesi'im</em> titula a los doce jefes tribales que est&aacute;n con Mois&eacute;s en el "
+        "censo (N&uacute;meros 1:16, 44, todav&iacute;a no en estas p&aacute;ginas en espa&ntilde;ol) &mdash;una "
+        "cabeza alzada por tribu; y m&aacute;s tarde titula al gobernante venidero de Ezequiel."),
+    "degel": ("degel",
+        "UN ESTANDARTE &mdash;la bandera bajo la que marcha y acampa cada una de las cuatro divisiones del "
+        "campamento (2:2-34), una por punto cardinal, visible a la distancia antes de levantar una sola "
+        "tienda. La palabra misma no especifica color ni emblema; N&uacute;meros nombra cada estandarte solo "
+        "por su tribu (el estandarte de Jud&aacute;, el estandarte de Rub&eacute;n), nunca por ninguna imagen "
+        "sobre &eacute;l. La tradici&oacute;n rab&iacute;nica posterior (N&uacute;meros Rab&aacute; 2:10, muy "
+        "fuera de este libro) llen&oacute; ese silencio, asignando a cada uno de los cuatro una criatura "
+        "simb&oacute;lica &mdash;una tradici&oacute;n que algunos lectores conectan con los cuatro seres "
+        "vivientes de Ezequiel 1 y Apocalipsis 4, aunque ninguno de esos textos declara jam&aacute;s el "
+        "v&iacute;nculo. RV60/NVI mantienen «estandarte»."),
 }
 
 ENCYCLOPEDIA_ES = {
