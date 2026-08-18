@@ -56,6 +56,10 @@ translation text itself at build time (see build.py).
 """
 
 DICTIONARY = [
+    ('qinah-jealousy', 'qin\'ah', 'קִנְאָה', 'qin\'ah',
+     "JEALOUSY — and, depending on who feels it, also zeal or envy; one Hebrew noun covers a jealous husband, a zealous reformer, and an envious rival. ⚠ Not to be confused with the identically-transliterated but differently-voweled <a href=\"dictionary.html#qinah\">qinah</a>, 'lament' — two unrelated Hebrew words that happen to romanize the same way. Qin'ah's first sustained legal use is a husband's suspicion with no evidence behind it, a 'spirit of jealousy' that triggers the ordeal of <a href=\"numbers-5.html#n5-11\">Numbers 5:14</a>, stated twice — once of a guilty wife, once of an innocent one — because the word names the husband's own state of mind, not a fact about her. The same root describes God himself: 'Jehovah, whose name is Jealous, is a jealous God' (<a href=\"exodus-34.html#v34-14\">Exodus 34:14</a>, already on these pages) — the identical word this chapter uses for a suspicious husband, applied to a covenant God who will tolerate no rival.", ('Numbers', 5, 14)),
+    ('satah', 'satah', 'שָׂטָה', 'satah',
+     "TO GO ASTRAY, to turn aside — the verb behind the whole ordinance of Numbers 5:11-31, though the word most readers know for it, 'sotah,' never actually occurs in the Bible itself; it is the later rabbinic name (the Mishnah devotes an entire tractate to it) built on this same root. ⚠ Satah is a verb of DIRECTION before it is a verb of morality — the ordinary sense is simply to turn off a path — and the law built on it treats the accusation the same way: not a settled fact but a suspected turning, to be tested rather than assumed. The noun form of the same root, mastteh, elsewhere names something that literally causes deviation; here the deviation itself is what is on trial.", ('Numbers', 5, 12)),
     ('havdil', 'hivdil', 'הִבְדִּיל', 'hivdil',
      "TO SEPARATE, divide, distinguish — root <em>badal</em>, one of the structural verbs of creation itself: God makes largely by separating (light from darkness, waters above from waters below, day from night, <a href=\"genesis-1.html#v4\">Genesis 1:4</a>, already on this shelf, and repeated at vv 6, 7, 14, 18). ⚠ The identical verb resurfaces, generations later, as the priesthood's own job description: Aaron is charged 'to distinguish between the holy and the common, and between the unclean and the clean' (<a href=\"leviticus-10.html#v10-10\">Leviticus 10:10</a>, already on these pages) — the same root that first ordered light from dark now ordering a nation's whole ritual life. Creation's first verb becomes the priesthood's daily one. \u26a0 One chapter further on it is named as the stated PURPOSE of an entire law: <a href=\"leviticus-11.html#v11-47\">Leviticus 11:47</a> (already on these pages) closes the whole clean-and-unclean code with this infinitive and nothing else \u2014 'to distinguish between the unclean and the clean.' The same act runs from the first day of the world to a rule about which pot to smash.", (1, 4)),
     ('zarah', 'zarah', 'זָרָה', 'zarah',
@@ -1059,7 +1063,7 @@ DICTIONARY = [
     ("mashiach", "mashiach", "מָשִׁיחַ", "mashiach",
      "ANOINTED — one smeared with oil at his installation, so that the office belongs to God and not to the man holding it. It is the settled principle of David's exile: twice he had Saul at his mercy and refused, 'Jehovah forbid that I should stretch out my hand against JEHOVAH'S ANOINTED' (1 Samuel 24:6; 26:9), and he executes a man for claiming to have done it (2 Samuel 1:14-16). ⚠️ Kings, priests and occasionally prophets are anointed; strikingly, so is the Persian CYRUS, called 'his MASHIACH' (Isaiah 45:1) — a foreign emperor. Through Greek the word becomes MESSIAH and, translated rather than transliterated, CHRIST. The larger sense grows out of this smaller one; do not read the later meaning back into every occurrence. ⚠️ Note the bitter pun in the lament: Saul is Jehovah's MASHIACH, and his shield lies on Gilboa 'not MASHIACH with oil' (1:21) — a shield was oiled to keep the leather supple.", ("2 Samuel", 1, 14)),
     ("qinah", "qinah", "קִינָה", "qinah",
-     "A LAMENT, a formal dirge — both the poem and the act of chanting it ('David chanted this QINAH,' 2 Samuel 1:17). It is a recognized genre with its own limping rhythm, and its signature is a repeated cry: here 'How the mighty have fallen,' three times (vv19, 25, 27). ⚠️ A lament is not a balanced obituary — David's says nothing of Saul's madness, the spear thrown at him, or the years of pursuit. Its whole business is to praise and to grieve. The book of LAMENTATIONS is named from this word in Hebrew tradition (Eikhah, 'How…', is its opening cry), and Amos parodies the form to devastating effect (5:1-2).", ("2 Samuel", 1, 17)),
+     "A LAMENT, a formal dirge — both the poem and the act of chanting it ('David chanted this QINAH,' 2 Samuel 1:17). It is a recognized genre with its own limping rhythm, and its signature is a repeated cry: here 'How the mighty have fallen,' three times (vv19, 25, 27). ⚠️ Not to be confused with the identically-transliterated but differently-voweled <a href=\"dictionary.html#qinah-jealousy\">qin'ah</a>, 'jealousy' — two unrelated Hebrew words that happen to romanize the same way. A lament is not a balanced obituary — David's says nothing of Saul's madness, the spear thrown at him, or the years of pursuit. Its whole business is to praise and to grieve. The book of LAMENTATIONS is named from this word in Hebrew tradition (Eikhah, 'How…', is its opening cry), and Amos parodies the form to devastating effect (5:1-2).", ("2 Samuel", 1, 17)),
     ("tzvi", "tzvi", "צְבִי", "tzvi",
      "BEAUTY, glory, ornament — and also GAZELLE, and the Bible plays on both. The lament opens 'the TZVI, O Israel, lies slain on your high places' (2 Samuel 1:19) and the versions split: KJV 'the beauty of Israel,' ESV 'your glory, O Israel,' NIV 'a gazelle lies slain on your heights.' ⚠️ The ambiguity may well be deliberate — a lament for something swift and lovely brought down on a hill suits either sense, and verse 23 goes on to call the dead 'swifter than eagles.' In the other direction the word names the promised land itself, 'the GLORY of all lands' (Ezekiel 20:6, 15) and Daniel's 'beautiful land' (11:16, 41).", ("2 Samuel", 1, 19)),
     ("sefer-hayashar", "sefer ha-yashar", "סֵפֶר הַיָּשָׁר", "sefer ha-yashar",
@@ -5836,6 +5840,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Numbers 5 ----
+    (("Numbers", 5, 7), ("Leviticus", 5, 16), "the restitution-plus-a-fifth formula, promised back in Leviticus's own guilt-offering law and repeated here almost verbatim"),
+    (("Numbers", 5, 8), ("Genesis", 48, 16), "go'el, 'kinsman-redeemer' — the word's first appearance in a family blessing, now doing its ordinary legal work when no kinsman is left to redeem a debt"),
+    (("Numbers", 5, 14), ("Exodus", 34, 14), "qinah, 'jealousy' — the identical word used of a suspicious husband here and of Jehovah's own name, 'the Jealous One,' there"),
+    (("Numbers", 5, 18), ("Leviticus", 13, 45), "unbinding a woman's hair — the same gesture Leviticus 13 uses for the leprous person's own mark of mourning, reused here for a defendant rather than a diagnosis"),
     # ---- Numbers 4 ----
     (("Numbers", 4, 6), ("Exodus", 25, 5), "tachash skins covering the ark itself, the same genuinely uncertain material this project first flagged for the tabernacle's outer covering"),
     (("Numbers", 4, 15), ("Numbers", 1, 51), "the outsider death penalty already stated for the tabernacle in general, now applied specifically to touching the uncovered holy things"),
@@ -8361,6 +8370,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num5": dict(era="exodus",
+                 when="Three unrelated laws about what defiles a camp Jehovah lives in: expel everyone with a scaly disease, a discharge, or corpse-uncleanness; repay a wronged neighbor in full plus a fifth before any offering is made, with the payment going to the priest if the wronged party has died with no kinsman left to receive it; and, for a wife suspected of unfaithfulness with no witness and no proof either way, an ordeal of dust, water, and a self-cursing oath that resolves the suspicion without ever assuming guilt in advance.",
+                 clock="⚠ Undated within the chapter, like the census and camp law around it. Still inside the same Sinai window as Numbers 1&ndash;4 (already on these pages)."),
     "num4": dict(era="exodus",
                  when="The Levites' second census, narrower than the first: only men thirty to fifty, the years of full working strength, mustered by service rather than by dedication. Aaron and his sons wrap the ark, table, lampstand, and altars in colored cloth and tachash skins before the Kohathites are ever allowed to approach them, on pain of death for touching or even looking at the uncovered holy things; Eleazar keeps a separate charge over the oil, incense, and grain offering; Gershon and Merari, whose cargo carries no such danger, serve under Ithamar. The count: 2,750 Kohathites, 2,630 Gershonites, 3,200 Merarites — 8,580 total, exactly.",
                  clock="⚠ Undated within the chapter, like the census around it. Still inside the same Sinai window as Numbers 1, 2, and 3 (already on these pages)."),
@@ -14656,6 +14668,28 @@ DICTIONARY_ES = {
         "&aacute;ngel que me ha redimido de todo mal» (G&eacute;nesis 48:16, ya en estas "
         "p&aacute;ginas). La palabra sigue llevando al Booz de Rut, las leyes del jubileo, y buena "
         "parte de Isa&iacute;as."),
+    "qinah-jealousy": ("qin'ah",
+        "CELOS &mdash;y, seg&uacute;n qui&eacute;n lo sienta, tambi&eacute;n celo o envidia; un solo "
+        "sustantivo hebreo cubre a un marido celoso, a un reformador celoso y a un rival envidioso. "
+        "&#9888; No debe confundirse con <em>qinah</em>, «lamento», una palabra hebrea distinta que por "
+        "casualidad se transliteran igual. "
+        "Su primer uso legal sostenido es la sospecha de un marido sin ninguna prueba detr&aacute;s, "
+        "un «esp&iacute;ritu de celos» que activa la ordal&iacute;a de <a href=\"numbers-5.html#n5-11\">N&uacute;meros "
+        "5:14</a>, mencionado dos veces &mdash;una para una esposa culpable, otra para una inocente&mdash;, "
+        "porque la palabra nombra el propio estado mental del marido, no un hecho sobre ella. &#9888; La "
+        "misma ra&iacute;z describe a Dios mismo: «Jehov&aacute;, cuyo nombre es Celoso, es un Dios celoso» "
+        "(&Eacute;xodo 34:14, ya en estas p&aacute;ginas) &mdash;la misma palabra que este cap&iacute;tulo "
+        "usa para un marido receloso, aplicada a un Dios de pacto que no tolerar&aacute; ning&uacute;n "
+        "rival."),
+    "satah": ("satah",
+        "DESVIARSE, apartarse del camino &mdash;el verbo detr&aacute;s de toda la ordenanza de "
+        "N&uacute;meros 5:11-31, aunque la palabra que la mayor&iacute;a de los lectores conoce para "
+        "ella, «sotah», nunca aparece en la Biblia misma; es el nombre rab&iacute;nico posterior (la "
+        "Mishn&aacute; le dedica un tratado entero) construido sobre esta misma ra&iacute;z. &#9888; "
+        "Satah es un verbo de DIRECCI&Oacute;N antes que un verbo de moralidad &mdash;el sentido "
+        "ordinario es simplemente girar fuera de un camino&mdash;, y la ley construida sobre &eacute;l "
+        "trata la acusaci&oacute;n de la misma manera: no un hecho consumado sino un desv&iacute;o "
+        "sospechado, que debe probarse y no darse por sentado."),
     "perekh": ("perekh",
         "Dureza aplastante &mdash;trabajo despiadado, quebrantador (&Eacute;xodo 1:13-14, ya en "
         "estas p&aacute;ginas). Una palabra rara y pesada que regresa tres veces en Lev&iacute;tico "
