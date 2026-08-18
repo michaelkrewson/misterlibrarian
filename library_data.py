@@ -388,7 +388,7 @@ DICTIONARY = [
      "TO PRACTICE SORCERY — and its feminine participle, 'a sorceress.' The law's one word for it here is deliberately gendered: 'you shall not let a mekhashefah live' (Exodus 22:18) uses only the FEMININE form, though Deuteronomy 18:10-11 (not yet on these pages) lists the same practice under a broader, ungendered vocabulary alongside diviners and mediums. ⚠ In the King James Version's wording — 'thou shalt not suffer a witch to live' — this exact verse was directly invoked for centuries to justify the European and American witch trials, a use of the text far removed from its own setting: three capital sentences (sorcery, bestiality, sacrificing to other gods) stated back to back with no reason given for any of them.", ("Exodus", 22, 18)),
     # ---- Exodus 23 (Hebrew) ----
     ("regalim", "regalim / chag", "רְגָלִים / חַג", "regalim / chag",
-     "PILGRIMAGE FESTIVALS — literally 'foot-festivals,' from regel, 'foot': the three annual occasions requiring every Israelite male to appear before Jehovah in person (Exodus 23:14-17), the Torah's first calendar. Unleavened Bread (tied to the Exodus itself), Harvest (firstfruits of the grain, later called Shavuot/Pentecost), and Ingathering (at the year's end, later Sukkot/Tabernacles) — named here in outline, with the full ritual detail supplied only much later, at Leviticus 23 (not yet on these pages). The related noun chag, 'festival,' shares a root with the verb chagag, to circle or process — a pilgrimage word before it is a calendar word.", ("Exodus", 23, 14)),
+     "PILGRIMAGE FESTIVALS — literally 'foot-festivals,' from regel, 'foot': the three annual occasions requiring every Israelite male to appear before Jehovah in person (Exodus 23:14-17), the Torah's first calendar. Unleavened Bread (tied to the Exodus itself), Harvest (firstfruits of the grain, later called Shavuot/Pentecost), and Ingathering (at the year's end, later Sukkot/Tabernacles) — named here in outline, with the full ritual detail supplied only much later, at <a href=\"leviticus-23.html\">Leviticus 23</a> (already on these pages). The related noun chag, 'festival,' shares a root with the verb chagag, to circle or process — a pilgrimage word before it is a calendar word.", ("Exodus", 23, 14)),
     # ---- Exodus 24 (Hebrew) ----
     ("sefer", "sefer", "סֵפֶר", "sefer",
      "BOOK, scroll — from a root meaning to count or recount. Its first use naming a portion of the Torah itself is here: Moses writes and reads aloud the 'sefer ha-brit,' the BOOK OF THE COVENANT (24:4, 7), before a single stone tablet has even been carved. The same word will later name the whole Torah as a single scroll (Deuteronomy 31:26) and, further on still, the prophetic scroll Ezekiel is made to eat (Ezekiel 2:9) — both not yet on these pages. From this verse forward, a written record is something the text can point to, read aloud, and hand over.", ("Exodus", 24, 7)),
@@ -2012,6 +2012,9 @@ DICTIONARY = [
     ("zar", "zar", "זָר", "zar",
      "AN OUTSIDER — anyone outside the priestly household, without regard to origin or citizenship. The word names a different category than <em>ger</em>, the resident foreigner this book protects at length (Leviticus 19:33-34, already on these pages); a native-born Israelite is a zar with respect to the priesthood's own holy food (22:10) exactly as a foreigner would be. Even a priest's own hired worker, paid wages, counts as zar and may not eat the holy portions (22:10) — while a slave the priest has bought with his own money may (22:11), household membership drawing the line where employment does not.",
      ("Leviticus", 22, 10)),
+    ("melechet-avodah", "melechet avodah", "מְלֶאכֶת עֲבֹדָה", "melechet avodah",
+     "LABORIOUS WORK — the work-category this chapter bans on ordinary festival days (23:7-8 and elsewhere), narrower than the Sabbath's own blanket 'work at all' (<em>kol melachah</em>, 23:3, and again for the Day of Atonement, 23:28). The chapter never explains the difference in so many words, but later practice built an entire legal category on it: food may be prepared on a festival day in a way it may not be on the Sabbath or Yom Kippur. The distinction the rabbis would later call yom tov versus Shabbat starts here, in this chapter's own choice of which of two Hebrew phrases to use for which day.",
+     ("Leviticus", 23, 7)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5756,6 +5759,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 23 ----
+    (("Leviticus", 23, 5), ("Exodus", 12, 6), "the Passover, dated here to the calendar in one verse — the same fourteenth-of-the-month date Exodus already fixed for the rite's own full ritual"),
+    (("Leviticus", 23, 22), ("Leviticus", 19, 9), "the gleaning law for the poor and the foreigner, restated almost word for word — dropped into a festival calendar at the one moment of the year a harvest and a hungry family's next meal occupy the same field"),
+    (("Leviticus", 23, 27), ("Leviticus", 16, 29), "the Day of Atonement's own 'afflict your souls' — the ritual given at length in one chapter, now dated on the calendar and given a stated penalty in another"),
+    (("Leviticus", 23, 16), ("Acts", 2, 1), "the fifty-day count from the wave-sheaf — the same count that lands, centuries later, on the day a crowd 'from every nation under heaven' fills Jerusalem for the festival's own pilgrimage requirement"),
     # ---- Leviticus 22 ----
     (("Leviticus", 22, 20), ("Leviticus", 21, 18), "mum, 'a blemish' — the identical standard of physical wholeness, first disqualifying a priest from the altar, now disqualifying the animal he offers on it"),
     (("Leviticus", 22, 19), ("Leviticus", 1, 3), "tamim, 'without blemish' — the standard fixed from this book's own opening chapter, finally given its full legal content twenty-one chapters later"),
@@ -8217,6 +8225,9 @@ CHRON_CHAPTERS = {
     "lev22": dict(era="exodus",
                   when="Two related holiness laws. First, who may eat the priestly portions of Israel's offerings: a priest in any state of ritual uncleanness is barred until purified, an outsider or hired worker may never eat them, but a slave bought with the priest's own money and a widowed or divorced, childless priest's daughter returned to her father's house both may. Second, what animal qualifies as an offering at all: tamim, without blemish, spelled out for the first time in the same physical detail chapter 21 already used to disqualify a priest from the altar. A newborn animal waits eight days before it is eligible; a mother and her young may not be slaughtered on the same day.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. Its restitution formula (v14) restates Leviticus 5:16's rule verbatim; its blemish list (vv17-25) finally gives full legal content to tamim, the standard fixed at Leviticus 1:3, and closely parallels Leviticus 21's own mum list disqualifying a priest. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev23": dict(era="exodus",
+                  when="The Torah's full festival calendar, seven appointed times in one chapter: the weekly Sabbath; Passover and the seven-day Feast of Unleavened Bread in the first month; the firstfruits sheaf and the fifty-day count to the wheat-harvest offering (with the poor-and-foreigner gleaning law dropped into the middle of it); the Feast of Trumpets and the Day of Atonement in the seventh month; and the seven-day Feast of Booths closing the agricultural year. Each festival gets its own date, its own required rest, and its own offering — the same calendar still kept, in outline, by religious Jews today.",
+                  clock="⚠ Undated within the chapter itself beyond the festival dates it fixes for every future year — the one chapter in Leviticus that is, by its own content, permanently forward-looking rather than tied to a single moment in the wilderness. Still spoken at Sinai in the same window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -12255,7 +12266,7 @@ DICTIONARY_ES = {
         "(ligada al propio Éxodo), la Cosecha (primicias del grano, más tarde llamada Shavuot "
         "o Pentecostés), y la Recolección (al final del año, más tarde Sucot o Tabernáculos) "
         "— nombradas aquí en esquema, con el detalle ritual completo entregado solo mucho "
-        "después, en Levítico 23 (todavía no en estas páginas). El sustantivo emparentado jag, "
+        "después, en <a href=\"leviticus-23.es.html\">Levítico 23</a> (ya en estas páginas). El sustantivo emparentado jag, "
         "«fiesta», comparte raíz con el verbo jagag, rodear o procesionar — una palabra de "
         "peregrinación antes que una palabra de calendario."),
     "nakar": ("nakar",
@@ -14438,6 +14449,17 @@ DICTIONARY_ES = {
         "zar y no puede comer las porciones sagradas (22:10) &mdash;mientras que un esclavo que el "
         "sacerdote haya comprado con su propio dinero s&iacute; puede (22:11), la pertenencia al "
         "hogar trazando la l&iacute;nea donde el empleo no lo hace."),
+    "melechet-avodah": ("melechet avodah",
+        "TRABAJO LABORIOSO &mdash;la categor&iacute;a de trabajo que este cap&iacute;tulo proh&iacute;be "
+        "en los d&iacute;as festivos ordinarios (23:7&ndash;8 y otros lugares), m&aacute;s estrecha "
+        "que el «todo trabajo» general del s&aacute;bado (<em>kol melachah</em>, 23:3, y de nuevo "
+        "para el D&iacute;a de la Expiaci&oacute;n, 23:28). El cap&iacute;tulo nunca explica la "
+        "diferencia con todas sus palabras, pero la pr&aacute;ctica posterior construy&oacute; toda "
+        "una categor&iacute;a legal sobre ella: la comida puede prepararse en un d&iacute;a festivo "
+        "de una manera que no puede prepararse en s&aacute;bado ni en Yom Kipur. La distinci&oacute;n "
+        "que los rabinos llamar&iacute;an despu&eacute;s yom tov frente a Shabat comienza aqu&iacute;, "
+        "en la propia elecci&oacute;n de este cap&iacute;tulo de cu&aacute;l de dos frases hebreas usar "
+        "para cu&aacute;l d&iacute;a."),
 }
 
 ENCYCLOPEDIA_ES = {
