@@ -9467,7 +9467,7 @@ BOOK_INTROS = {
             "INTERCESSION — Moses standing again and again in the breach, pleading for the people who have "
             "just risen against him (14:13–19).",
         ],
-        key_words=["paqad", "eda", "matteh", "tsava", "gulgolet", "nasi", "moed"],
+        key_words=["paqad", "eda", "matteh", "tsava", "gulgolet", "nasi", "moed", "degel"],
         key_people=["moses", "aaron", "nahshon", "judah", "mount-sinai"],
         source_text="Translated from the Hebrew MASORETIC TEXT — the digital Hebrew of Mechon-Mamre "
                     "(the Leningrad/Aleppo tradition), consonants with the Masoretes' vowel-points and "
