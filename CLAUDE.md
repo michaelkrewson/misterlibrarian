@@ -158,7 +158,32 @@ another.
    per-entry check, not a per-book intention — skipping it for a whole book has happened and
    left a queued video unplaced past the chapter it was meant for.
 7. Register the chapter: one line in `CHAPTERS` in `build.py`, bump `NEXT_UP`.
-8. `python3 build.py` → commit → push. GitHub Pages rebuilds in ~30–90s; poll the live URL
+8. **Run a CLAIMS PASS — separate from, and after, every check above.** ⚠ Paid for twice in
+   one night (Numbers 7 and Numbers 8, 2026-08-18): every structural check passed, the build
+   was green, and both chapters still shipped false statements — because the build validates
+   *structure*, never *assertions*. `check_local_anchors()` proves a link resolves;
+   `check_forward_claims()` proves a chapter exists. **Neither one reads what you said about
+   it.** Numbers 8's headline claim ("the first time the lampstand is lit") was refuted by
+   Exodus 40:25 — already shipped, and linked from a note *in that same chapter* — and it
+   had propagated to six places including a brand-new dictionary entry. Re-read every
+   asserting sentence and check:
+   - **Absolutes are guilty until proven** — "first / only / never / every / the one place."
+     Grep the shipped source for the counter-example *before* keeping the word. Both of
+     Numbers 8's worst errors were absolutes ("first time it is lit"; "every other *tenufah*
+     waves a piece of an animal" — Leviticus 23:20, already on these pages, waves two LIVE
+     lambs).
+   - **Recompute every number.** If a sentence says "two breaks" and then lists three, that
+     is a shipped contradiction (it was). If it states a ratio, do the division (Numbers 7
+     claimed 5× where the real figure was ~4.25×).
+   - **Open every chapter you cite** — its actual shipped text, not just proof the file
+     exists. Cross-reference *existence* and cross-reference *substance* are different checks
+     and only the first one is automated.
+   - **Diff the bookkeeping.** A chnote saying "X and Y extended, N new entries" must match
+     `git diff library_data.py`. Numbers 8 claimed two entries extended when only one was.
+   - When a claim fails, prefer the one that survives — it is usually the better note anyway
+     (Moses handing the lamps to Aaron beat the false "first lit"; the
+     object → piece → live-animal → living-people escalation beat the false "every other").
+9. `python3 build.py` → commit → push. GitHub Pages rebuilds in ~30–90s; poll the live URL
    to confirm.
 
 ## Library architecture
