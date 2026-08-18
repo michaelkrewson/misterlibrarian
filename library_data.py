@@ -2004,11 +2004,14 @@ DICTIONARY = [
      "A PROFANED WOMAN — from chalal, 'to profane, pierce, defile,' the same root behind chillel, 'to profane' (a name, the sabbath, God's own holiness) throughout Leviticus. A priest may not marry one (21:7), and the high priest may not marry one even in addition to being unable to marry a widow (21:14) — the term names a woman disqualified by a prior sexual history or (per later rabbinic reading) born of a union the priesthood itself forbids, not a moral judgment on the woman herself so much as a status that would compromise the priestly line's own required purity. The identical root gives this chapter its other central case: a priest's daughter who 'profanes herself' by prostitution 'profanes her father' (21:9) — the same verb running from a woman's own status to the man whose office her conduct compromises.",
      ("Leviticus", 21, 7)),
     ("mum", "mum", "מוּם", "mum",
-     "A BLEMISH — the chapter's own technical umbrella term for any physical condition disqualifying a priest from altar service (21:17-23): blindness, lameness, a mutilated face, a limb too long or broken, a hunchback, dwarfism, eye disease, skin disease, crushed testicles. ⚠ The same word governs sacrificial animals two chapters later (Leviticus 22:20-25, not yet on these pages) — the identical standard of physical wholeness applied to both the offering and the one who offers it. Critically, mum disqualifies a priest from APPROACHING the altar specifically (21:23) while explicitly leaving intact his standing as a priest and his right to eat the holy bread (21:22) — a distinction the text itself insists on, not a modern gloss added to soften it.",
+     "A BLEMISH — the chapter's own technical umbrella term for any physical condition disqualifying a priest from altar service (21:17-23): blindness, lameness, a mutilated face, a limb too long or broken, a hunchback, dwarfism, eye disease, skin disease, crushed testicles. ⚠ The same word governs sacrificial animals two chapters later (<a href=\"leviticus-22.html#v22-20\">Leviticus 22:20-25</a>, already on these pages) — the identical standard of physical wholeness applied to both the offering and the one who offers it. Critically, mum disqualifies a priest from APPROACHING the altar specifically (21:23) while explicitly leaving intact his standing as a priest and his right to eat the holy bread (21:22) — a distinction the text itself insists on, not a modern gloss added to soften it.",
      ("Leviticus", 21, 17)),
     ("baal-beamav", "ba'al be'amav", "בַּעַל בְּעַמָּיו", "ba'al be'amav",
      "A genuinely uncertain phrase (21:4). <em>Ba'al</em> ordinarily means either 'lord, master, chief' or, in a marital sense, 'husband' — and the two readings send this clause in different directions. <span class=\"tag t-kjv\">KJV</span> and <span class=\"tag t-asv\">ASV</span> both take the 'chief man' sense: a priest may not defile himself for the dead even as a person of standing among his people. Others read <em>ba'al</em> literally as 'husband,' restricting the verse to in-laws gained through marriage rather than blood relatives — consistent with vv2-3's own list running strictly by blood. Both readings are defended in the literature; this translation does not choose.",
      ("Leviticus", 21, 4)),
+    ("zar", "zar", "זָר", "zar",
+     "AN OUTSIDER — anyone outside the priestly household, without regard to origin or citizenship. The word names a different category than <em>ger</em>, the resident foreigner this book protects at length (Leviticus 19:33-34, already on these pages); a native-born Israelite is a zar with respect to the priesthood's own holy food (22:10) exactly as a foreigner would be. Even a priest's own hired worker, paid wages, counts as zar and may not eat the holy portions (22:10) — while a slave the priest has bought with his own money may (22:11), household membership drawing the line where employment does not.",
+     ("Leviticus", 22, 10)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5753,6 +5756,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 22 ----
+    (("Leviticus", 22, 20), ("Leviticus", 21, 18), "mum, 'a blemish' — the identical standard of physical wholeness, first disqualifying a priest from the altar, now disqualifying the animal he offers on it"),
+    (("Leviticus", 22, 19), ("Leviticus", 1, 3), "tamim, 'without blemish' — the standard fixed from this book's own opening chapter, finally given its full legal content twenty-one chapters later"),
+    (("Leviticus", 22, 14), ("Leviticus", 5, 16), "the identical restitution formula — the value of the holy thing plus a fifth — first fixed for sinning against a holy thing through error, reapplied here verbatim"),
+    (("Leviticus", 22, 27), ("Genesis", 17, 12), "the eighth day — Abraham's own covenant sign falls there, and now so does a newborn animal's first eligibility for the altar"),
     # ---- Leviticus 21 ----
     (("Leviticus", 21, 5), ("Leviticus", 19, 27), "the identical mourning-practice ban — no bald spot, no trimmed beard corners, no cuts in the flesh — first given to all Israel, now restated word for word for priests specifically"),
     (("Leviticus", 21, 9), ("Leviticus", 19, 29), "chalal, 'to profane' — the general warning against profaning a daughter through prostitution, now given its specific priestly penalty"),
@@ -8206,6 +8214,9 @@ CHRON_CHAPTERS = {
     "lev21": dict(era="exodus",
                   when="Priestly holiness law in two tiers. Ordinary priests may defile themselves for corpse contact only for their five closest relatives, may not follow ordinary mourning practices, and may not marry a prostitute, a profaned woman, or a divorced woman. The high priest's own rules are stricter still — no torn clothes, no corpse contact even for his own parents, no leaving the sanctuary, and marriage restricted to a virgin of his own people. The chapter closes with a long list of physical blemishes barring a priest from altar service specifically, while explicitly preserving his standing as a priest and his right to eat the holy bread.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. Its mourning-practice law (v5) restates, word for word, a rule already given to all Israel at Leviticus 19:27-28 (already on these pages). Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev22": dict(era="exodus",
+                  when="Two related holiness laws. First, who may eat the priestly portions of Israel's offerings: a priest in any state of ritual uncleanness is barred until purified, an outsider or hired worker may never eat them, but a slave bought with the priest's own money and a widowed or divorced, childless priest's daughter returned to her father's house both may. Second, what animal qualifies as an offering at all: tamim, without blemish, spelled out for the first time in the same physical detail chapter 21 already used to disqualify a priest from the altar. A newborn animal waits eight days before it is eligible; a mother and her young may not be slaughtered on the same day.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. Its restitution formula (v14) restates Leviticus 5:16's rule verbatim; its blemish list (vv17-25) finally gives full legal content to tamim, the standard fixed at Leviticus 1:3, and closely parallels Leviticus 21's own mum list disqualifying a priest. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14402,7 +14413,7 @@ DICTIONARY_ES = {
         "altar (21:17&ndash;23): ceguera, cojera, un rostro mutilado, un miembro demasiado largo o "
         "roto, joroba, enanismo, enfermedad ocular, enfermedad de la piel, test&iacute;culos "
         "aplastados. &#9888; La misma palabra rige a los animales sacrificiales dos cap&iacute;tulos "
-        "despu&eacute;s (Lev&iacute;tico 22:20&ndash;25, todav&iacute;a no en estas p&aacute;ginas) "
+        "despu&eacute;s (<a href=\"leviticus-22.es.html#v22-20\">Lev&iacute;tico 22:20&ndash;25</a>, ya en estas p&aacute;ginas) "
         "&mdash;el mismo est&aacute;ndar de integridad f&iacute;sica aplicado tanto a la ofrenda como "
         "a quien la ofrece. Cr&iacute;ticamente, mum descalifica a un sacerdote de ACERCARSE al altar "
         "espec&iacute;ficamente (21:23) mientras deja expl&iacute;citamente intacta su condici&oacute;n "
@@ -14417,6 +14428,16 @@ DICTIONARY_ES = {
         "parientes pol&iacute;ticos adquiridos por matrimonio en vez de parientes de sangre "
         "&mdash;coherente con la propia lista de los vv2&ndash;3, que corre estrictamente por "
         "sangre. Ambas lecturas se defienden en la literatura; esta traducci&oacute;n no elige."),
+    "zar": ("zar",
+        "UN EXTRA&Ntilde;O &mdash;cualquiera fuera de la casa sacerdotal, sin importar origen ni "
+        "ciudadan&iacute;a. La palabra nombra una categor&iacute;a distinta de <em>ger</em>, el "
+        "extranjero residente que este libro protege extensamente (Lev&iacute;tico 19:33&ndash;34, "
+        "ya en estas p&aacute;ginas); un israelita de nacimiento es un zar respecto al alimento "
+        "sagrado del propio sacerdocio (22:10), exactamente igual que lo ser&iacute;a un extranjero. "
+        "Incluso el propio trabajador contratado de un sacerdote, pagado con salario, cuenta como "
+        "zar y no puede comer las porciones sagradas (22:10) &mdash;mientras que un esclavo que el "
+        "sacerdote haya comprado con su propio dinero s&iacute; puede (22:11), la pertenencia al "
+        "hogar trazando la l&iacute;nea donde el empleo no lo hace."),
 }
 
 ENCYCLOPEDIA_ES = {
