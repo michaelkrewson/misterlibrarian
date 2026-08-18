@@ -1288,7 +1288,7 @@ DICTIONARY = [
     ("krabattos", "krabattos", "κράβαττος", "krabattos",
      "A MAT, a straw pallet &mdash; the bedding of somebody who owns one blanket. It is a Latin loanword (grabatus) wearing Greek endings, it is low-register, and Mark uses it without embarrassment (2:4, 2:9, 2:11, 2:12, and again at 6:55). &#9888; The interesting fact is what the other two do with it: at the same scene Matthew (9:2) and Luke (5:18) both replace it with klinē, an ordinary bed, and Luke also swaps Mark's dug-through mud roof for TILES (5:19). That pair of changes is the clearest small window in the Gospels onto Mark's Greek &mdash; the roughest in the New Testament, and roughest precisely where the others smooth. This translation reads 'mat' and does not upgrade it.", ("Mark", 2, 4)),
     ("prothesis", "prothesis", "πρόθεσις", "prothesis",
-     "A SETTING-OUT, a placing before &mdash; and in the phrase artoi tēs protheseōs, the loaves of the PRESENCE: twelve loaves kept on a table in the sanctuary, renewed weekly and then eaten by the priests (Leviticus 24:5-9). Hebrew calls it lechem ha-panim, 'bread of the face', bread set before God. &#9888; Its New Testament fame is a precedent: David, on the run and hungry, ate it (1 Samuel 21), and Jesus cites the episode against a sabbath charge at Mark 2:26. Note the shape of that argument &mdash; he does not say the Law permitted what David did. He says David did it. The precedent is an admitted irregularity, which is harder to answer than a loophole. The same noun means 'purpose' elsewhere (Romans 8:28), from the sense of a thing set out in advance.", ("Mark", 2, 26)),
+     "A SETTING-OUT, a placing before &mdash; and in the phrase artoi tēs protheseōs, the loaves of the PRESENCE: twelve loaves kept on a table in the sanctuary, renewed weekly and then eaten by the priests (<a href=\"leviticus-24.html#v24-5\">Leviticus 24:5-9</a>, already on these pages). Hebrew calls it lechem ha-panim, 'bread of the face', bread set before God. &#9888; Its New Testament fame is a precedent: David, on the run and hungry, ate it (1 Samuel 21), and Jesus cites the episode against a sabbath charge at Mark 2:26. Note the shape of that argument &mdash; he does not say the Law permitted what David did. He says David did it. The precedent is an admitted irregularity, which is harder to answer than a loophole. The same noun means 'purpose' elsewhere (Romans 8:28), from the sense of a thing set out in advance.", ("Mark", 2, 26)),
     ("sabbaton", "sabbaton", "σάββατον", "sabbaton",
      "THE SABBATH &mdash; a Greek spelling of Hebrew shabbat, from a root meaning to CEASE. &#9888; Mark 2:27 carries the sentence no other Gospel has: 'the sabbath came into being for the human being, and not the human being for the sabbath.' Matthew (12:8) and Luke (6:5) both retell this whole scene and both go straight to 'the Son of Man is lord of the sabbath' with that line missing &mdash; so the most radical sentence in the paragraph survives in one Gospel only. And the Greek egeneto, 'came into being', is the verb of Genesis 1: the sabbath is spoken of as something MADE, with a purpose. &#9888; The word is often plural in form (ta sabbata) with singular sense, which is why versions vary between 'sabbath' and 'sabbaths' with no difference of meaning; it also came to mean simply a WEEK, which is why 'the first of the sabbaton' at Matthew 28:1 means the first day of the week.", ("Mark", 2, 27)),
     ("telones", "telōnēs", "τελώνης", "telōnēs",
@@ -2015,6 +2015,9 @@ DICTIONARY = [
     ("melechet-avodah", "melechet avodah", "מְלֶאכֶת עֲבֹדָה", "melechet avodah",
      "LABORIOUS WORK — the work-category this chapter bans on ordinary festival days (23:7-8 and elsewhere), narrower than the Sabbath's own blanket 'work at all' (<em>kol melachah</em>, 23:3, and again for the Day of Atonement, 23:28). The chapter never explains the difference in so many words, but later practice built an entire legal category on it: food may be prepared on a festival day in a way it may not be on the Sabbath or Yom Kippur. The distinction the rabbis would later call yom tov versus Shabbat starts here, in this chapter's own choice of which of two Hebrew phrases to use for which day.",
      ("Leviticus", 23, 7)),
+    ("naqav-hashem", "naqav ha-Shem", "נָקַב הַשֵּׁם", "naqav ha-Shem",
+     "PIERCED THE NAME — the startling verb behind 'blasphemed' (24:11). Naqav ordinarily means 'to pierce, bore through' and, by extension, 'to specify precisely, to name outright' (the same root gives Hebrew its word for a dot or point). The offender's crime was not vague irreverence; the text's own verb says he spoke the divine Name itself, aloud, as a curse. This is very likely the seed of a far later practice: rabbinic Judaism's refusal to pronounce YHVH at all, substituting <em>HaShem</em>, 'the Name' — the identical word this verse already uses in place of pronouncing it. A euphemism the tradition would later build into law may already be modeled in this chapter's own choice of words.",
+     ("Leviticus", 24, 11)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5759,6 +5762,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 24 ----
+    (("Leviticus", 24, 2), ("Exodus", 27, 20), "the eternal lamp, restated almost word for word — the same command, the same closing formula, 'a statute forever throughout your generations'"),
+    (("Leviticus", 24, 9), ("Exodus", 25, 30), "the bread of the presence, first only named 'before me always,' here finally given the full weekly ritual that chapter's own note promised was still to come"),
+    (("Leviticus", 24, 14), ("Leviticus", 16, 21), "laying hands on a head before sending judgment — Aaron's own gesture over the scapegoat, here turned back onto the very man whose words caused the harm"),
+    (("Leviticus", 24, 20), ("Exodus", 21, 24), "eye for eye, tooth for tooth — the identical formula, first given as an abstract case-ruling, now attached to an actual story with a name and a tribe"),
     # ---- Leviticus 23 ----
     (("Leviticus", 23, 5), ("Exodus", 12, 6), "the Passover, dated here to the calendar in one verse — the same fourteenth-of-the-month date Exodus already fixed for the rite's own full ritual"),
     (("Leviticus", 23, 22), ("Leviticus", 19, 9), "the gleaning law for the poor and the foreigner, restated almost word for word — dropped into a festival calendar at the one moment of the year a harvest and a hungry family's next meal occupy the same field"),
@@ -8228,6 +8236,9 @@ CHRON_CHAPTERS = {
     "lev23": dict(era="exodus",
                   when="The Torah's full festival calendar, seven appointed times in one chapter: the weekly Sabbath; Passover and the seven-day Feast of Unleavened Bread in the first month; the firstfruits sheaf and the fifty-day count to the wheat-harvest offering (with the poor-and-foreigner gleaning law dropped into the middle of it); the Feast of Trumpets and the Day of Atonement in the seventh month; and the seven-day Feast of Booths closing the agricultural year. Each festival gets its own date, its own required rest, and its own offering — the same calendar still kept, in outline, by religious Jews today.",
                   clock="⚠ Undated within the chapter itself beyond the festival dates it fixes for every future year — the one chapter in Leviticus that is, by its own content, permanently forward-looking rather than tied to a single moment in the wilderness. Still spoken at Sinai in the same window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev24": dict(era="exodus",
+                  when="Three unrelated pieces sharing one chapter. The eternal lamp and the weekly bread of the presence, both restating instructions from Exodus almost word for word. Then a narrative interruption: the son of an Israelite woman and an Egyptian father blasphemes God's own name during a camp fight, is held in custody pending a direct ruling from Jehovah, and the ruling arrives as a general law of capital and personal-injury justice — the death penalty for blasphemy, life for life, eye for eye, tooth for tooth, one law for foreigner and native alike — before the man himself is taken outside the camp and stoned.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. Its lamp and bread laws (vv1-9) restate Exodus 27:20-21 and Exodus 25:30 almost verbatim; its narrative section (vv10-23) is the one piece of case law generated by an actual incident in the wilderness camp, rather than delivered as abstract instruction. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev19": dict(era="exodus",
                   when="“You shall be holy” unpacked into daily law — gleaning left for the poor, honest wages, no partiality in court, love your neighbor as yourself, and its exact echo for the stranger sixteen verses later.",
                   clock="Same setting as ch. 1 — spoken at Sinai in the same roughly one-month window before Israel breaks camp (Numbers 10:11). The Holiness Code (Leviticus 17–26, of which this chapter is usually read as the center) is not separately dated from the rest of the book by the text itself."),
@@ -14460,6 +14471,19 @@ DICTIONARY_ES = {
         "que los rabinos llamar&iacute;an despu&eacute;s yom tov frente a Shabat comienza aqu&iacute;, "
         "en la propia elecci&oacute;n de este cap&iacute;tulo de cu&aacute;l de dos frases hebreas usar "
         "para cu&aacute;l d&iacute;a."),
+    "naqav-hashem": ("naqav ha-Shem",
+        "TRASPAS&Oacute; EL NOMBRE &mdash;el verbo sorprendente detr&aacute;s de «blasfem&oacute;» "
+        "(24:11). <em>Naqav</em> significa ordinariamente «perforar, atravesar» y, por "
+        "extensi&oacute;n, «especificar con precisi&oacute;n, nombrar abiertamente» (la misma "
+        "ra&iacute;z da al hebreo su palabra para un punto). El crimen del hombre no fue una "
+        "irreverencia vaga; el propio verbo del texto dice que pronunci&oacute; el Nombre divino "
+        "mismo, en voz alta, como maldici&oacute;n. Esta es muy probablemente la semilla de una "
+        "pr&aacute;ctica mucho m&aacute;s tard&iacute;a: la negativa del juda&iacute;smo "
+        "rab&iacute;nico a pronunciar YHVH en absoluto, sustituy&eacute;ndolo por <em>HaShem</em>, "
+        "«el Nombre» &mdash;la misma palabra que este vers&iacute;culo ya usa en lugar de "
+        "pronunciarlo. Un eufemismo que la tradici&oacute;n construir&iacute;a despu&eacute;s en "
+        "ley puede que ya est&eacute; modelado en la propia elecci&oacute;n de palabras de este "
+        "cap&iacute;tulo."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15290,6 +15314,34 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev24": [dict(
+        file="foster-stoning-blasphemer-1873.jpg",
+        title="The Stoning of the Blasphemer",
+        title_es="La lapidación del blasfemo",
+        artist="Charles Foster",
+        year="1873",
+        location="Wood engraving, from The Story of the Bible from Genesis to Revelation, Hartford, Connecticut",
+        location_es="Grabado en madera, de The Story of the Bible from Genesis to Revelation, Hartford, Connecticut",
+        alt="A wood engraving of a man kneeling with his arms raised over his bowed head, about to be "
+            "struck by a large stone held overhead by a bearded man standing over him. A crowd looks on "
+            "from behind, and in the background Moses, arms raised, addresses a smaller group beside the "
+            "tents of the camp.",
+        note="A wood engraving from an 1873 illustrated Bible — the two witnesses who first heard the "
+             "blasphemy are shown doing exactly what v14 requires of them: laying hands on the offender's "
+             "head before the stones fall, the same gesture this project's own note on this chapter traces "
+             "back to the scapegoat's head at Leviticus 16:21 (now on these pages). Moses, in the "
+             "background, is drawn mid-address, delivering the ruling 'by the mouth of Jehovah' (v12) that "
+             "the narrative pauses the whole camp to wait for.",
+        note_es="Un grabado en madera de una Biblia ilustrada de 1873 —los dos testigos que primero "
+                "oyeron la blasfemia se muestran haciendo exactamente lo que exige el v14: imponer las "
+                "manos sobre la cabeza del ofensor antes de que caigan las piedras, el mismo gesto que la "
+                "propia nota de este proyecto sobre este capítulo remonta hasta la cabeza del chivo "
+                "expiatorio en Levítico 16:21 (ya en estas páginas). Moisés, al fondo, aparece dibujado en "
+                "pleno discurso, entregando el fallo 'por boca de Jehová' (v12) que la narración detiene a "
+                "todo el campamento para esperar.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:The_stoning_of_the_blasphemer.jpg",
+    )],
     "lev16": [dict(
         file="holman-hunt-the-scapegoat.jpg",
         title="The Scapegoat",
