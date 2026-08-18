@@ -696,7 +696,9 @@ DICTIONARY = [
     ("achuzzah", "achuzzah", "אֲחֻזָּה", "achuzzah",
      "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
     ("nasi", "nasi", "נָשִׂיא", "nasi",
-     "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. In Numbers the plural nesi'im titles the twelve tribal CHIEFTAINS who stand with Moses at the census (Numbers 1:16, 44) — one lifted-up head per tribe; and it later titles Ezekiel's coming ruler. Leviticus 4:22 (already on these pages) puts the same title under the same law as everyone else: a nasi's unintentional sin gets its own graduated sacrifice, distinct from a commoner's only in which animal he brings, never in whether he needs one.", (23, 6)),
+     "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. In Numbers the plural nesi'im titles the twelve tribal CHIEFTAINS who stand with Moses at the census (Numbers 1:16, 44) — one lifted-up head per tribe; and it later titles Ezekiel's coming ruler. Leviticus 4:22 (already on these pages) puts the same title under the same law as everyone else: a nasi's unintentional sin gets its own graduated sacrifice, distinct from a commoner's only in which animal he brings, never in whether he needs one. The word gets its longest single workout in <a href=\"numbers-7.html\">Numbers 7</a> (already on these pages), where all twelve chieftains bring an identical dedication-offering, one per day, in Numbers 2's own marching order.", (23, 6)),
+    ("sheqel", "sheqel", "שֶׁקֶל", "sheqel",
+     "A WEIGHT — not yet, at this point in the story, a coin: Israel would strike no currency of its own for another thousand years, so every 'shekel' named across the Torah is a unit of WEIGHED silver or gold, never a stamped piece of metal. The root is shaqal, 'to weigh' — the word names the ACT before it ever names the object. Abraham 'weighed out' four hundred shekels of silver for the cave of Machpelah (23:16) — a transaction reported as an act of weighing, not paying. The priestly law later fixes one controlled standard against every local custom, the 'shekel of the sanctuary' at twenty gerahs (<a href=\"exodus-30.html#v30-13\">Exodus 30:13</a>, already on these pages) — and <a href=\"numbers-7.html\">Numbers 7</a> (already on these pages) is where that standard gets its longest workout: twelve identical gifts, weighed and summed twelve times over, converging on an exact total — two thousand four hundred shekels of silver, a hundred twenty of gold — down to the last unit of weight.", (23, 16)),
     # ---- Genesis 24 (Hebrew) ----
     ("yarekh", "yarekh", "יָרֵךְ", "yarekh",
      "The THIGH / loins — under which the servant puts his hand to swear (24:2, 9). Not an idle gesture: the yarekh is the seat of procreation, the region of the covenant-of-circumcision sign (17:11), and 'those who came out of the yarekh' is the Hebrew for a man's own offspring (46:26; Exodus 1:5). To swear by it is to swear by the seed the whole promise runs through — fitting for an oath about the son who will carry the line. The Bible knows this gesture only twice, both about the promised posterity: here, and Jacob making Joseph swear to bury him in the land (47:29).", (24, 2)),
@@ -821,6 +823,9 @@ DICTIONARY = [
      "The tamarisk — a desert tree that lives for centuries; planting one at a well (Genesis 21:33) is filing a claim on the future in slow motion. KJV, following an older guess, 'planted a GROVE'; ASV 'a tamarisk tree.'", (21, 33)),
     ("sheva", "sheva / nishba", "שֶׁבַע / נִשְׁבַּע", "sheva / nishba",
      "Seven — and the oath: Hebrew's verb 'to swear' (nishba) is literally 'to SEVEN oneself.' So Be'er Sheva (Genesis 21:31) reads two ways that are one — 'well of the seven' (the ewe-lambs, v30) and 'well of the oath' (v31): one word wearing both faces, and the text offers both etymologies on purpose.", (21, 31)),
+    # ---- Numbers 7 (Hebrew) ----
+    ("chanukkah", "chanukkah / chanak", "חֲנֻכָּה / חָנַךְ", "chanukkah / chanak",
+     "DEDICATION — from chanak, 'to train up, dedicate, initiate into use.' Its most familiar English appearance is nowhere on these pages yet: a child 'trained up' in the way he should go (Proverbs 22:6, not yet on these pages) uses the same root, dedicating a young life to a path the way this chapter dedicates an altar to a use. Numbers 7 names the whole twelve-day ceremony chanukkat ha-mizbe'ach, 'the dedication of the altar' (vv10, 11, 84, 88, already on these pages) — the word's first appearance in the Bible, and the direct ancestor of the festival name HANUKKAH, which centuries later would commemorate a very different altar's re-dedication after its desecration by the Seleucids (1 Maccabees 4, outside this project's translated canon). A new house gets the same word (Deuteronomy 20:5, not yet on these pages); so does Solomon's temple (1 Kings 8, not yet on these pages) and Psalm 30's own superscription, 'a song at the dedication of the house.' One root, spanning a boy's education, a family's new home, and a nation's holiest building.", ("Numbers", 7, 10)),
     # ---- Jeremiah 20 (Hebrew) ----
     ("magor-missaviv", "Magor-Missaviv", "מָגוֹר מִסָּבִיב", "magor missaviv",
      "'Terror all around' — magor (dread) + missaviv (from every side): the name Jeremiah gives his jailer Pashhur after a night in the stocks (20:3), and the prophet's own signature phrase of dread (6:25; 46:5; 49:29; Psalm 31:13 borrows it). By 20:10 the street is chanting it back at him as a taunt. KJV runs it together as one grim word: 'Magormissabib.'", ("Jeremiah", 20, 3)),
@@ -3520,7 +3525,10 @@ ENCYCLOPEDIA = [
               "genealogies (Matthew 1:4; Luke 3:32). It is fitting that Judah's chieftain heads the muster and "
               "camps first, on the east, leading the march (Numbers 2:3, 9). Jewish tradition (Midrash, and "
               "the Talmud at Sotah 37a) honors Nahshon as the first Israelite to step into the Red Sea, before "
-              "it parted — faith walking in before the water opened.",
+              "it parted — faith walking in before the water opened. Fittingly, he is also first at the "
+              "altar: when the tabernacle's dedication runs one chieftain per day, Judah's own chieftain "
+              "brings the first offering (Numbers 7:12–17) — first to lead the march, first to lead the "
+              "twelve-day dedication.",
          refs=[("Numbers", 1, 7)], videos=[]),
     dict(slug="eleazar", name="Eleazar", kind="person", aliases=["Eleazar"],
          desc="Aaron's third son, and the one through whom the high priesthood actually descends. His two "
@@ -8385,6 +8393,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num7": dict(era="exodus",
+                 when="The tabernacle's twelve-day dedication. Chieftains donate six wagons and twelve oxen for the Levites to move the structure — Kohath, entrusted with the ark itself, gets none, since that cargo travels only on the shoulder — and then, one chieftain a day for twelve days, an identical dedication-offering reaches the newly anointed altar, written out in full every single time rather than summarized after the first. The chapter totals its own arithmetic twice over — 2,400 shekels of silver, 120 of gold, animals by the dozen — and closes on the first time Moses hears the voice answer him from between the cherubim, exactly as promised back at Exodus 25:22.",
+                 clock="⚠ Undated within the chapter itself, but its opening line ties it to the day the tabernacle was 'finished' — the same completion Exodus 40:17 dates to the first day of the FIRST month of the second year — so the twelve-day dedication that follows likely runs across the first half of that month, shortly before Numbers 1's census on the first day of the SECOND month (already on these pages)."),
     "num6": dict(era="exodus",
                  when="The Nazirite vow — a voluntary, ordinarily temporary separation to Jehovah marked by no wine or grape products, no haircut, no contact with the dead — followed by the priestly blessing, the three-line benediction Aaron and his sons are told to speak over Israel, closing on Jehovah's own claim: 'they shall put my name on the children of Israel, and I will bless them.'",
                  clock="⚠ Undated within the chapter, like the census and camp law around it. Still inside the same Sinai window as Numbers 1&ndash;5 (already on these pages)."),
@@ -14850,7 +14861,36 @@ DICTIONARY_ES = {
         "Un pr&iacute;ncipe, un jefe &mdash;«uno alzado» (de <em>nasa</em>, «alzar, llevar»). En N&uacute;meros "
         "el plural <em>nesi'im</em> titula a los doce jefes tribales que est&aacute;n con Mois&eacute;s en el "
         "censo (N&uacute;meros 1:16, 44, todav&iacute;a no en estas p&aacute;ginas en espa&ntilde;ol) &mdash;una "
-        "cabeza alzada por tribu; y m&aacute;s tarde titula al gobernante venidero de Ezequiel."),
+        "cabeza alzada por tribu; y m&aacute;s tarde titula al gobernante venidero de Ezequiel. La palabra recibe "
+        "su ejercicio m&aacute;s largo en <a href=\"numbers-7.es.html\">N&uacute;meros 7</a> (ya en estas "
+        "p&aacute;ginas), donde los doce jefes traen una ofrenda de dedicaci&oacute;n id&eacute;ntica, uno por "
+        "d&iacute;a, en el propio orden de marcha de N&uacute;meros 2."),
+    "sheqel": ("sheqel",
+        "UN PESO &mdash;todav&iacute;a no, en este punto de la historia, una moneda: Israel no acu&ntilde;ar&iacute;a "
+        "su propia moneda sino mil a&ntilde;os despu&eacute;s, as&iacute; que cada «siclo» nombrado en la Tor&aacute; "
+        "es una unidad de plata u oro PESADO, nunca una pieza acu&ntilde;ada. La ra&iacute;z es <em>shaqal</em>, "
+        "«pesar» &mdash;la palabra nombra el ACTO antes de nombrar el objeto. Abraham «pes&oacute;» cuatrocientos "
+        "siclos de plata por la cueva de Macpela (23:16) &mdash;una transacci&oacute;n reportada como un acto de "
+        "pesar, no de pagar. La ley sacerdotal fija despu&eacute;s un &uacute;nico est&aacute;ndar controlado "
+        "frente a cualquier costumbre local, el «siclo del santuario» a veinte geras (&Eacute;xodo 30:13, ya en "
+        "estas p&aacute;ginas) &mdash;y <a href=\"numbers-7.es.html\">N&uacute;meros 7</a> (ya en estas "
+        "p&aacute;ginas) es donde ese est&aacute;ndar recibe su ejercicio m&aacute;s largo: doce regalos "
+        "id&eacute;nticos, pesados y sumados doce veces, convergiendo en un total exacto &mdash;dos mil "
+        "cuatrocientos siclos de plata y ciento veinte de oro&mdash;, hasta la &uacute;ltima unidad de peso."),
+    "chanukkah": ("chanukkah / chanak",
+        "DEDICACI&Oacute;N &mdash;de <em>chanak</em>, «entrenar, dedicar, iniciar en el uso». Su aparici&oacute;n "
+        "m&aacute;s conocida en espa&ntilde;ol todav&iacute;a no est&aacute; en estas p&aacute;ginas: un ni&ntilde;o "
+        "«instruido» en el camino que debe seguir (Proverbios 22:6) usa la misma ra&iacute;z, dedicando una vida "
+        "joven a un camino de la misma forma en que este cap&iacute;tulo dedica un altar a un uso. N&uacute;meros 7 "
+        "nombra toda la ceremonia de doce d&iacute;as <em>chanukkat ha-mizbe'aj</em>, «la dedicaci&oacute;n del "
+        "altar» (vv10, 11, 84, 88, ya en estas p&aacute;ginas) &mdash;la primera aparici&oacute;n b&iacute;blica de "
+        "la palabra, y la antecesora directa del nombre de la fiesta JANUC&Aacute;, que siglos despu&eacute;s "
+        "conmemorar&iacute;a la nueva dedicaci&oacute;n de un altar muy distinto tras su profanaci&oacute;n por los "
+        "se&leacute;ucidas (1 Macabeos 4, fuera del canon traducido de este proyecto). Una casa nueva recibe la "
+        "misma palabra (Deuteronomio 20:5); tambi&eacute;n el templo de Salom&oacute;n (1 Reyes 8) y el propio "
+        "encabezado del Salmo 30, «c&aacute;ntico para la dedicaci&oacute;n de la casa». Una sola ra&iacute;z, que "
+        "abarca la educaci&oacute;n de un ni&ntilde;o, la casa nueva de una familia, y el edificio m&aacute;s santo "
+        "de una naci&oacute;n."),
     "degel": ("degel",
         "UN ESTANDARTE &mdash;la bandera bajo la que marcha y acampa cada una de las cuatro divisiones del "
         "campamento (2:2-34), una por punto cardinal, visible a la distancia antes de levantar una sola "
@@ -15746,6 +15786,21 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
     "En hebreo, Mizraim — también el «hijo» de Cam cuyo nombre ES el país (10:6, 13). Abram "
     "baja allí por el hambre (12:10) y su estancia recorre en miniatura el patrón del Éxodo: "
     "peligro, plagas, «déjalos ir», riqueza que sale con ellos.")
+
+ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
+    "Hijo de Aminadab, JEFE de la tribu de Judá en el censo del desierto (Números 1:7; 2:3; "
+    "7:12) — uno de los nombres más discretamente importantes de las genealogías bíblicas. "
+    "Su hermana Elisabet se casó con Aarón (Éxodo 6:23), así que es cuñado del sumo "
+    "sacerdote; y la línea corre directa desde él hasta el trono y más allá: Naasón → "
+    "Salmón → Booz (que se casa con Rut) → Obed → Isaí → el rey DAVID (Rut 4:20-22), y "
+    "hasta el Mesías en las dos genealogías de los Evangelios (Mateo 1:4; Lucas 3:32). Es "
+    "apropiado que el jefe de Judá encabece la recluta y acampe primero, al oriente, "
+    "liderando la marcha (Números 2:3, 9). La tradición judía (el Midrás, y el Talmud en "
+    "Sotá 37a) honra a Naasón como el primer israelita en entrar al Mar Rojo, antes de que "
+    "se abriera —la fe caminando dentro antes de que el agua se abriera. Es apropiado "
+    "también que sea el primero en el altar: cuando la dedicación del tabernáculo corre un "
+    "jefe por día, el propio jefe de Judá trae la primera ofrenda (Números 7:12-17) "
+    "—primero en encabezar la marcha, primero en encabezar la dedicación de doce días.")
 
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
