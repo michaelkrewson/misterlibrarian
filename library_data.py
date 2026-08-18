@@ -524,7 +524,7 @@ DICTIONARY = [
     ("shiloh", "shiloh", "שִׁילֹה", "ad ki yavo shiloh",
      "The most disputed word in Genesis. 'The sceptre shall not depart from Judah… AD KI YAVO SHILOH' (49:10). Four serious readings: (1) a NAME — 'until Shiloh comes,' which is what the Masoretic vowels give and the least self-explanatory, since the referent is undefined; (2) a PLACE — 'until he comes to Shiloh,' the town in Ephraim where the tabernacle stood; (3) reading the consonants as SHELLO, 'until that which is his comes' / 'until he comes to whom it belongs' — the understanding behind the Septuagint and Syriac, and apparently alluded to at Ezekiel 21:27, 'until he comes whose right it is'; (4) SHAI LO, 'until tribute comes to him.' \u26a0\ufe0f The verse has been read messianically in BOTH traditions for a very long time — the Jewish Targums render it 'until Messiah comes,' and Christian readers apply it to Jesus — but that reading rests on options (1) or (3), not on anything the consonants settle by themselves. Modern versions genuinely disagree: KJV/NWT 'until Shiloh come'; ASV with a margin note; ESV 'until tribute comes to him.' This project gives the readings with their pedigrees and does not vote.", (49, 10)),
     ("goel", "go'el", "גֹּאֵל", "ha-go'el",
-     "REDEEMER — one who BUYS BACK. GA'AL is not a religious abstraction but a family obligation in Israelite law: the go'el is the nearest kinsman with both the standing and the duty to recover what a relative has lost — to buy back sold land, to ransom a relative sold into servitude, to marry a childless widow, to avenge a killing (Leviticus 25:25-55; Numbers 35). Its FIRST occurrence in the Bible is here, in a blessing over two boys: 'the angel who has REDEEMED me from all evil' (48:16). Jacob places it in apposition with 'the God who has shepherded me' — whether identifying the angel WITH God or distinguishing him from God is grammatically open, and readers have gone both ways for two thousand years. The word goes on to carry Boaz in Ruth, the jubilee laws, and a great deal of Isaiah. KJV 'the Angel which redeemed me from all evil.'", (48, 16)),
+     "REDEEMER — one who BUYS BACK. GA'AL is not a religious abstraction but a family obligation in Israelite law: the go'el is the nearest kinsman with both the standing and the duty to recover what a relative has lost — to buy back sold land, to ransom a relative sold into servitude, to marry a childless widow, to avenge a killing (Leviticus 25:25-55, already on these pages; Numbers 35, not yet on these pages). Its FIRST occurrence in the Bible is here, in a blessing over two boys: 'the angel who has REDEEMED me from all evil' (48:16). Jacob places it in apposition with 'the God who has shepherded me' — whether identifying the angel WITH God or distinguishing him from God is grammatically open, and readers have gone both ways for two thousand years. The word goes on to carry Boaz in Ruth, the jubilee laws, and a great deal of Isaiah. KJV 'the Angel which redeemed me from all evil.'", (48, 16)),
     ("sikkel", "sikkel", "שִׂכֵּל", "sikkel et yadav",
      "He CROSSED his hands — KNOWINGLY. The word every translation renders 'crossed' is the piel of SAKAL, whose entire family of meanings is about insight, prudence and acting with understanding; it is not the ordinary Hebrew word for crossing anything. At the exact moment Jacob's arms go over each other to put his right hand on the younger boy's head, the narrator chooses a verb meaning TO DO A THING ADVISEDLY (48:14) — so the crossing and the knowing are one act in one word, and you are told the answer before Joseph objects. The KJV caught it and has never been bettered: 'guiding his hands wittingly'; ASV the same. Modern versions (ESV 'crossing his hands,' NIV 'crossing his arms') are accurate about the gesture and lose the deliberateness entirely. Three verses later Jacob says it in plain words: 'I know, my son, I know.'", (48, 14)),
     ("megurim", "megurim", "מְגוּרִים", "megurai",
@@ -666,7 +666,7 @@ DICTIONARY = [
     ("sharats", "sharats", "שָׁרַץ", "sharats",
      "To SWARM, teem — the creation-word for life multiplying (Genesis 1:20, the waters 'swarm with swarms'; 9:7, Noah told to 'swarm'). Exodus 1:7 stacks it into the five-verb increase — Israel 'were fruitful, and SWARMED, and multiplied, and grew mighty' — so the opening of the bondage is the CREATION BLESSING still at full volume on a slave people. KJV flattens it to 'increased abundantly.'", (1, 7)),
     ("perekh", "perekh", "פֶּרֶךְ", "perekh",
-     "Crushing harshness — pitiless, breaking labor (Exodus 1:13, 14). KJV 'with rigour'; NWT 'under tyranny.' A rare, heavy word (also Leviticus 25's law against ruling a fellow Israelite be-farekh, 'with harshness') — the opposite of the discipline a father gives; this is cruelty made a system.", (1, 13)),
+     "Crushing harshness — pitiless, breaking labor (Exodus 1:13, 14). KJV 'with rigour'; NWT 'under tyranny.' A rare, heavy word that returns three times at Leviticus 25:43, 46, 53 (already on these pages), forbidding an Israelite master from ruling a fellow Israelite be-farekh, 'with harshness' — the identical word for what Egypt had done to Israel, now named as the one thing Israel may not become to its own. The opposite of the discipline a father gives; this is cruelty made a system.", (1, 13)),
     ("avodah", "avodah", "עֲבֹדָה", "avodah",
      "Service, labor — and, in the same breath, SLAVERY (from eved, 'servant/slave,' the root the exodus turns on: Israel serves Pharaoh, then is freed to SERVE God — same verb). Exodus 1:14's avodah kashah, 'hard service,' the mortar and the bricks. The word will pivot: the goal of the exodus is not idleness but a change of masters — 'let my people go, that they may serve me.'", (1, 14)),
     ("yeor", "ye'or", "יְאוֹר", "ye'or",
@@ -688,7 +688,7 @@ DICTIONARY = [
      "A root that runs both ways in this chapter — TO RESCUE, snatch away (hifil, hitsil): 'I have come down to RESCUE them from the hand of Egypt' (3:8) — and TO STRIP, plunder, despoil (piel, nitsel): 'you will STRIP Egypt bare' (3:22). One verb for the deliverance and for the spoil: Israel is snatched out of Egypt's hand, and carries Egypt's silver out in the same motion — the wages of four centuries, and the down payment on Genesis 15:14's 'great possessions.' KJV 'spoil'; the pun on 'deliver' is only visible in the Hebrew.", ("Exodus", 3, 22)),
     # ---- Genesis 23 (Hebrew) ----
     ("ger", "ger / toshav", "גֵּר / תּוֹשָׁב", "ger / toshav",
-     "Two distinct legal statuses the shelf often merges (KJV 'a stranger and a sojourner,' Genesis 23:4; NWT keeps them, 'an alien resident and a settler'). A GER is a resident foreigner — living among a people, protected by law, but WITHOUT citizenship or the right to own land (Torah's great charge: 'love the ger, for you were gerim in Egypt'). A TOSHAV is a settled outsider, more rooted but still landless. Abraham names himself both — the man promised the whole land cannot legally buy a grave in it.", (23, 4)),
+     "Two distinct legal statuses the shelf often merges (KJV 'a stranger and a sojourner,' Genesis 23:4; NWT keeps them, 'an alien resident and a settler'). A GER is a resident foreigner — living among a people, protected by law, but WITHOUT citizenship or the right to own land (Torah's great charge: 'love the ger, for you were gerim in Egypt'). A TOSHAV is a settled outsider, more rooted but still landless. Abraham names himself both — the man promised the whole land cannot legally buy a grave in it. Leviticus 25:23 (already on these pages) turns the pair back on Israel itself: before Jehovah, the nation that will one day parcel out this land holds it on the identical terms Abraham held Canaan — as ger and toshav, not as owner.", (23, 4)),
     ("achuzzah", "achuzzah", "אֲחֻזָּה", "achuzzah",
      "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
     ("nasi", "nasi", "נָשִׂיא", "nasi",
@@ -2018,6 +2018,15 @@ DICTIONARY = [
     ("naqav-hashem", "naqav ha-Shem", "נָקַב הַשֵּׁם", "naqav ha-Shem",
      "PIERCED THE NAME — the startling verb behind 'blasphemed' (24:11). Naqav ordinarily means 'to pierce, bore through' and, by extension, 'to specify precisely, to name outright' (the same root gives Hebrew its word for a dot or point). The offender's crime was not vague irreverence; the text's own verb says he spoke the divine Name itself, aloud, as a curse. This is very likely the seed of a far later practice: rabbinic Judaism's refusal to pronounce YHVH at all, substituting <em>HaShem</em>, 'the Name' — the identical word this verse already uses in place of pronouncing it. A euphemism the tradition would later build into law may already be modeled in this chapter's own choice of words.",
      ("Leviticus", 24, 11)),
+    ("yovel", "yovel", "יוֹבֵל", "yovel",
+     "JUBILEE — the fiftieth year, proclaimed after seven cycles of seven sabbatical years (25:8-10). The word may originally have named the ram's horn blown to announce it rather than the year itself — 'yovel' meaning 'ram' in some cognate usage — so 'jubilee' may literally mean nothing more than 'the trumpet-year.' Every sold field returns to its original family, every Israelite sold into service goes free (25:10, 13, 40-41). No other ancient Near Eastern law code known to archaeology legislates a periodic, universal reset of this kind at fixed, calendared intervals; individual kings occasionally proclaimed one-time debt amnesties (the Old Babylonian <em>mīšarum</em> edicts), but Leviticus 25 builds the reset into the calendar itself, due every fifty years whether or not any king wills it.",
+     ("Leviticus", 25, 10)),
+    ("deror", "deror", "דְּרוֹר", "deror",
+     "LIBERTY, release — 'you shall proclaim DEROR throughout the land to all its inhabitants' (25:10), the phrase cast in 1752 onto Pennsylvania's State House bell, now the Liberty Bell, in the King James Version's own wording. Elsewhere the word names a swallow or sparrow (Psalm 84:3, not yet on these pages) — a small bird free to come and go — and some readers connect the two senses, liberty as a kind of unhindered flight. Isaiah 61:1 borrows this exact word for a far larger deliverance, 'to proclaim DEROR to captives' (not yet on these pages), the verse Luke 4:18 puts in Jesus's own mouth at Nazareth.",
+     ("Leviticus", 25, 10)),
+    ("neshekh", "neshekh / tarbit", "נֶשֶׁךְ / תַּרְבִּית", "neshekh ve-tarbit",
+     "Two Hebrew words for INTEREST, always paired in the law (25:36-37; Exodus 22:25, already on these pages; Deuteronomy 23:19-20, not yet on these pages) and never clearly distinguished by the text itself. Later interpreters read neshekh (from a root meaning 'to bite') as interest deducted in advance from the loan, and tarbit ('increase') as interest added on at repayment — two mechanisms, one prohibition. The ban targets profiting specifically from a fellow Israelite's poverty (25:35), not lending as such; nothing here forbids charging a foreigner interest (Deuteronomy 23:20).",
+     ("Leviticus", 25, 36)),
 ]
 
 ENCYCLOPEDIA = [
@@ -5762,6 +5771,11 @@ LINK_OVERRIDES = [
 ]
 
 XREFS = [
+    # ---- Leviticus 25 ----
+    (("Leviticus", 25, 4), ("Exodus", 23, 10), "the sabbatical year for the land — first stated in a single sentence with no mechanism attached, now given its full ritual, its enforcement, and forty-four more verses"),
+    (("Leviticus", 25, 10), ("Leviticus", 16, 29), "the jubilee's own trumpet sounds on the Day of Atonement — liberty proclaimed on the one day of the year the nation has just been declared clean"),
+    (("Leviticus", 25, 25), ("Genesis", 48, 16), "go'el, 'kinsman-redeemer' — the word this project's own dictionary entry already named this exact chapter for, now finally given its full legal mechanism"),
+    (("Leviticus", 25, 43), ("Exodus", 1, 13), "perekh, 'harshness' — the identical rare word for Egypt's own cruelty to enslaved Israel, now forbidden between one Israelite and another by name"),
     # ---- Leviticus 24 ----
     (("Leviticus", 24, 2), ("Exodus", 27, 20), "the eternal lamp, restated almost word for word — the same command, the same closing formula, 'a statute forever throughout your generations'"),
     (("Leviticus", 24, 9), ("Exodus", 25, 30), "the bread of the presence, first only named 'before me always,' here finally given the full weekly ritual that chapter's own note promised was still to come"),
@@ -8236,6 +8250,9 @@ CHRON_CHAPTERS = {
     "lev23": dict(era="exodus",
                   when="The Torah's full festival calendar, seven appointed times in one chapter: the weekly Sabbath; Passover and the seven-day Feast of Unleavened Bread in the first month; the firstfruits sheaf and the fifty-day count to the wheat-harvest offering (with the poor-and-foreigner gleaning law dropped into the middle of it); the Feast of Trumpets and the Day of Atonement in the seventh month; and the seven-day Feast of Booths closing the agricultural year. Each festival gets its own date, its own required rest, and its own offering — the same calendar still kept, in outline, by religious Jews today.",
                   clock="⚠ Undated within the chapter itself beyond the festival dates it fixes for every future year — the one chapter in Leviticus that is, by its own content, permanently forward-looking rather than tied to a single moment in the wilderness. Still spoken at Sinai in the same window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
+    "lev25": dict(era="exodus",
+                  when="Two calendars of release nested inside each other. Every seventh year the land itself keeps a sabbath — no sowing, no pruning, whatever grows on its own free for owner, servant, sojourner, and wild animal alike. After seven such cycles, the fiftieth year is proclaimed a jubilee with a trumpet blast on the Day of Atonement: every sold field returns to its original family, every Israelite sold into service goes free. The chapter then works out the legal mechanics in detail — fair pricing keyed to years-until-jubilee, a kinsman's right to redeem sold land, a special exception for houses in walled cities, a ban on interest against a poor brother, and the difference between an Israelite servant (never a slave, freed at the jubilee) and a foreign-born slave (permanent property) — closing on the principle underneath all of it: the land is Jehovah's, and so are Israel's people, on the strength of the Exodus itself.",
+                  clock="⚠ Undated within the chapter, like the rest of Leviticus. Its sabbatical-year law (vv1-7) restates Exodus 23:10-11's own one-sentence version at full length; its ban on ruling a fellow Israelite 'with harshness' (vv43, 46, 53) reuses the identical rare word this project's own Exodus 1:13 entry used for Pharaoh's cruelty to enslaved Israel. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
     "lev24": dict(era="exodus",
                   when="Three unrelated pieces sharing one chapter. The eternal lamp and the weekly bread of the presence, both restating instructions from Exodus almost word for word. Then a narrative interruption: the son of an Israelite woman and an Egyptian father blasphemes God's own name during a camp fight, is held in custody pending a direct ruling from Jehovah, and the ruling arrives as a general law of capital and personal-injury justice — the death penalty for blasphemy, life for life, eye for eye, tooth for tooth, one law for foreigner and native alike — before the man himself is taken outside the camp and stoned.",
                   clock="⚠ Undated within the chapter, like the rest of Leviticus. Its lamp and bread laws (vv1-9) restate Exodus 27:20-21 and Exodus 25:30 almost verbatim; its narrative section (vv10-23) is the one piece of case law generated by an actual incident in the wilderness camp, rather than delivered as abstract instruction. Still inside the same Sinai window as the rest of this block (Exodus 40:17 / Numbers 1:1, already on these pages)."),
@@ -14484,6 +14501,72 @@ DICTIONARY_ES = {
         "pronunciarlo. Un eufemismo que la tradici&oacute;n construir&iacute;a despu&eacute;s en "
         "ley puede que ya est&eacute; modelado en la propia elecci&oacute;n de palabras de este "
         "cap&iacute;tulo."),
+    "yovel": ("yovel",
+        "JUBILEO &mdash;el a&ntilde;o cincuenta, proclamado tras siete ciclos de siete a&ntilde;os "
+        "sab&aacute;ticos (25:8-10). La palabra pudo nombrar originalmente el cuerno de carnero que "
+        "lo anunciaba, no el a&ntilde;o mismo &mdash;«yovel» significa «carnero» en algunos usos "
+        "afines&mdash;, de modo que «jubileo» tal vez no signifique m&aacute;s que «el a&ntilde;o "
+        "de la trompeta». Todo campo vendido regresa a su familia original, todo israelita vendido "
+        "a servidumbre queda libre (25:10, 13, 40-41). Ning&uacute;n otro c&oacute;digo legal del "
+        "antiguo Cercano Oriente conocido por la arqueolog&iacute;a legisla un reinicio "
+        "peri&oacute;dico y universal de este tipo a intervalos fijos y calendarizados; reyes "
+        "individuales proclamaban ocasionalmente amnist&iacute;as de deuda &uacute;nicas (los "
+        "edictos <em>m&imacr;&scaron;arum</em> del antiguo Babilonia), pero Lev&iacute;tico 25 "
+        "incorpora el reinicio al propio calendario, debido cada cincuenta a&ntilde;os sin importar "
+        "la voluntad de ning&uacute;n rey."),
+    "deror": ("deror",
+        "LIBERTAD, liberaci&oacute;n &mdash;«proclamar&eacute;is DEROR en la tierra para todos sus "
+        "habitantes» (25:10), la frase fundida en 1752 en la campana de la Casa Estatal de "
+        "Pensilvania, hoy la Campana de la Libertad, con la redacci&oacute;n de la versi&oacute;n "
+        "inglesa King James. En otros lugares la palabra nombra una golondrina o un gorri&oacute;n "
+        "(Salmo 84:3, todav&iacute;a no en estas p&aacute;ginas) &mdash;un ave peque&ntilde;a libre "
+        "de ir y venir&mdash;, y algunos lectores conectan los dos sentidos, la libertad como una "
+        "especie de vuelo sin obst&aacute;culos. Isa&iacute;as 61:1 toma prestada esta misma "
+        "palabra para una liberaci&oacute;n mucho mayor, «proclamar DEROR a los cautivos» "
+        "(todav&iacute;a no en estas p&aacute;ginas), el vers&iacute;culo que Lucas 4:18 pone en "
+        "boca de Jes&uacute;s mismo en Nazaret."),
+    "neshekh": ("neshekh / tarbit",
+        "Dos palabras hebreas para el INTER&Eacute;S, siempre emparejadas en la ley (25:36-37; "
+        "&Eacute;xodo 22:25, ya en estas p&aacute;ginas; Deuteronomio 23:19-20, todav&iacute;a no "
+        "en estas p&aacute;ginas) y nunca claramente distinguidas por el propio texto. "
+        "Int&eacute;rpretes posteriores leyeron <em>neshekh</em> (de una ra&iacute;z que significa "
+        "«morder») como el inter&eacute;s descontado por adelantado del pr&eacute;stamo, y "
+        "<em>tarbit</em> («aumento») como el inter&eacute;s a&ntilde;adido al reembolso &mdash;dos "
+        "mecanismos, una sola prohibici&oacute;n. La ley apunta espec&iacute;ficamente a lucrarse "
+        "de la pobreza de un compa&ntilde;ero israelita (25:35), no del pr&eacute;stamo como tal; "
+        "nada aqu&iacute; proh&iacute;be cobrar inter&eacute;s a un extranjero (Deuteronomio "
+        "23:20)."),
+    "goel": ("go'el",
+        "REDENTOR &mdash;el que RESCATA. <em>Ga'al</em> no es una abstracci&oacute;n religiosa "
+        "sino una obligaci&oacute;n familiar en la ley israelita: el <em>go'el</em> es el pariente "
+        "m&aacute;s cercano con la posici&oacute;n y el deber de recuperar lo que un familiar ha "
+        "perdido &mdash;recomprar tierra vendida, rescatar a un pariente vendido a servidumbre, "
+        "casarse con una viuda sin hijos, vengar una muerte (Lev&iacute;tico 25:25-55, ya en estas "
+        "p&aacute;ginas; N&uacute;meros 35, todav&iacute;a no en estas p&aacute;ginas). Su primera "
+        "aparici&oacute;n en la Biblia es en una bendici&oacute;n sobre dos ni&ntilde;os: «el "
+        "&aacute;ngel que me ha redimido de todo mal» (G&eacute;nesis 48:16, ya en estas "
+        "p&aacute;ginas). La palabra sigue llevando al Booz de Rut, las leyes del jubileo, y buena "
+        "parte de Isa&iacute;as."),
+    "perekh": ("perekh",
+        "Dureza aplastante &mdash;trabajo despiadado, quebrantador (&Eacute;xodo 1:13-14, ya en "
+        "estas p&aacute;ginas). Una palabra rara y pesada que regresa tres veces en Lev&iacute;tico "
+        "25:43, 46, 53 &mdash;prohibiendo a un amo israelita gobernar a un compa&ntilde;ero "
+        "israelita <em>be-farekh</em>, «con dureza»&mdash; la misma palabra usada para lo que "
+        "Egipto le hab&iacute;a hecho a Israel, ahora nombrada como lo &uacute;nico que Israel no "
+        "puede llegar a ser con los suyos. Lo opuesto a la disciplina que da un padre; esto es la "
+        "crueldad convertida en sistema."),
+    "ger": ("ger / toshav",
+        "Dos estatus legales distintos que el estante a menudo funde en uno. Un <em>ger</em> es un "
+        "extranjero residente &mdash;que vive entre un pueblo, protegido por la ley, pero SIN "
+        "ciudadan&iacute;a ni derecho a poseer tierra (el gran mandato de la Torá: «ama al ger, "
+        "porque fuisteis gerim en Egipto»). Un <em>toshav</em> es un forastero establecido, "
+        "m&aacute;s arraigado pero todav&iacute;a sin tierra. Abraham se llama a s&iacute; mismo "
+        "ambas cosas (G&eacute;nesis 23:4, ya en estas p&aacute;ginas): el hombre al que se le "
+        "promete toda la tierra no puede comprar legalmente ni una tumba en ella. Lev&iacute;tico "
+        "25:23 (ya en estas p&aacute;ginas) devuelve el par sobre Israel mismo: ante Jehov&aacute;, "
+        "la naci&oacute;n que un d&iacute;a repartir&aacute; esta tierra la posee en los mismos "
+        "t&eacute;rminos en que Abraham pose&iacute;a Cana&aacute;n &mdash;como ger y toshav, no "
+        "como due&ntilde;o."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -15314,6 +15397,36 @@ ENCYCLOPEDIA_ES["egypt"] = ("Egipto (Mizraim)",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "lev25": [dict(
+        file="liberty-bell-2019.jpg",
+        title="The Liberty Bell",
+        title_es="La Campana de la Libertad",
+        artist="Photograph by Mys 721tx",
+        year="2019",
+        location="Liberty Bell Center, Independence National Historical Park, Philadelphia",
+        location_es="Centro de la Campana de la Libertad, Parque Histórico Nacional de la Independencia, Filadelfia",
+        alt="The cracked Liberty Bell hangs in its glass pavilion, its famous fracture running up through "
+            "the visible cast inscription. Independence Hall's clock tower is framed behind it through "
+            "the glass, with a garden of red and yellow flowers in front.",
+        note="Cast in 1752 for Pennsylvania's State House, this bell carries Leviticus 25:10 word for "
+             "word around its crown: 'Proclaim Liberty Throughout all the Land unto all the Inhabitants "
+             "thereof' &mdash; the King James Version's own rendering of a law written for debt-release "
+             "and land-return in a Bronze Age agricultural society, chosen three and a half centuries "
+             "later to open a bell meant to summon a colonial assembly. The bell cracked, famously, and "
+             "was never successfully repaired; it has not been rung since 1846, and today the crack runs "
+             "directly through the cast words it carries.",
+        note_es="Fundida en 1752 para la Casa Estatal de Pensilvania, esta campana lleva Lev&iacute;tico "
+                "25:10 palabra por palabra alrededor de su corona: 'Proclamad libertad en toda la tierra "
+                "a todos sus habitantes' &mdash;la propia traducci&oacute;n de la versi&oacute;n inglesa "
+                "King James de una ley escrita para la liberaci&oacute;n de deudas y la devoluci&oacute;n "
+                "de tierras en una sociedad agr&iacute;cola de la Edad del Bronce, elegida tres siglos y "
+                "medio despu&eacute;s para abrir una campana pensada para convocar a una asamblea "
+                "colonial. La campana se agriet&oacute;, famosamente, y nunca fue reparada con &eacute;xito; "
+                "no ha sonado desde 1846, y hoy la grieta atraviesa directamente las palabras fundidas "
+                "que lleva.",
+        license="CC BY-SA 3.0",
+        source_url="https://commons.wikimedia.org/wiki/File:Liberty_Bell,_Aug_2019.jpg",
+    )],
     "lev24": [dict(
         file="foster-stoning-blasphemer-1873.jpg",
         title="The Stoning of the Blasphemer",
