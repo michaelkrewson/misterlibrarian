@@ -127,7 +127,18 @@ another.
 
 ## Per-chapter checklist
 
-1. Fetch the source chapter (browser UA for Mechon-Mamre); verify verse count.
+1. **Get the source chapter FROM OUR OWN ARCHIVE — never curl the supplier.**
+   `python3 tools/source_text.py <Book> <Chapter>` (add `--raw` for the archived
+   file itself). All 1,189 chapters of Hebrew and Greek were mirrored to
+   `source/originals/` and to private S3 months ago; hitting Mechon-Mamre or
+   helloao live for a file we already own is slower, ruder, and breaks the day
+   they do. Resolution is local → S3 → (only with `--allow-live`) upstream, and
+   the local copy is checked against `MANIFEST.json`'s sha256 so a corrupted
+   scroll is caught instead of translated. ⚠️ `source/originals/` is gitignored,
+   so it exists **only in the main checkout** — the tool resolves the archive
+   root via `git rev-parse --git-common-dir` for exactly that reason; don't
+   "fix" it to a repo-relative path or every worktree silently re-pulls from S3.
+   Then verify the verse count.
 2. Add the chapter to `source/mister_translation.html` (the project's single content
    source, in *this* repo — not a second working copy anywhere else).
 3. Validate: div balance, anchor resolution, verse counts, shelf density (the build enforces
@@ -314,6 +325,13 @@ the Bible project) — check the builder's own docstring and `tools/fetch_asset_
 before assuming its conventions match the other two sites.
 
 ## Source archive
+
+**Read from it. That is the whole point of it.** ⚠️ Paid for 2026-08-18: the
+archive had existed since July and *every* chapter since was still started with a
+live `curl` to Mechon-Mamre, because the checklist said "fetch the source chapter"
+and nothing pointed at the copy we already had. `tools/source_text.py` now exists
+so the archive is the path of least resistance (see checklist step 1) — use it,
+and if it ever misses, repair the archive rather than reaching past it.
 
 The translation's upstream suppliers (Mechon-Mamre Hebrew, the SBLGNT Greek via
 bible.helloao.org) could vanish; shipped chapters embed their own source text, but
