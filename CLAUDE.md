@@ -187,6 +187,20 @@ another.
      preceding chapters got this right *by habit*, which is precisely why it failed the
      moment attention was elsewhere: an unwritten rule is not a rule. Fetch the parallel
      page, paste the wording, and only then say what the shelf is doing.
+   - **Run the shelf rule on BOTH shelves, and re-run it on every version's own
+     REVISION.** ⚠ Added after Numbers 12 (2026-08-18), where the rule directly above
+     was obeyed for the English shelf and skipped entirely for the Spanish one — six wrong
+     claims in one chapter, all written from memory. The worst inverted the chapter's central
+     note: it told a Spanish reader the RV60 "conserva «boca a boca»" when the RV60 reads
+     "Cara a cara." Two specific traps this class keeps setting. (a) **The Reina-Valera is not
+     one version.** The doctrine above calls RV antigua (1909) and RV60/NVI a *spectrum*; both
+     Spanish errors that mattered came from attributing the antigua's archaic reading to the
+     RV60, which had revised it away. Fetch the edition you are naming. (b) **A version's own
+     revision is a different witness.** NWT 1984 "Mouth to mouth" → 2013 "Face-to-face";
+     RV antigua "Boca á boca" → RV60 "Cara a cara"; TNM 2019 "cara a cara". Naming the wrong
+     edition is the same error as naming the wrong version — and checking both editions is
+     usually where the better note is hiding, since a shelf that moves across four centuries
+     says more than a shelf frozen at one date.
    - **Check what you assert ABOUT a list, not just the list.** The members and the count can
      all be right while the predicate binding them is wrong — Numbers 9 called four cases
      "a law made in response to a complaint" when two were prosecutions, and Numbers 10
