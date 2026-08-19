@@ -8395,6 +8395,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num9": dict(era="exodus",
+                 when="Israel keeps the second Passover ever observed — the first since the night of the exodus itself, one year earlier. Men made unclean by a corpse are barred from it and object: 'why should we be kept back?' Moses cannot decide the case and defers to Jehovah, and the answer is a new permanent law — a makeup Passover on the fourteenth of the SECOND month for anyone unclean or far away, extended in the same breath to the resident foreigner, with being cut off from the people as the penalty for simply skipping it. The chapter closes on the cloud over the tabernacle, fire by night, and Israel moving or staying only when it lifts or settles — 'at the command of Jehovah' seven times in six verses.",
+                 clock="⚠ Dated to the FIRST month of the second year after the exodus (v1) — about a month EARLIER than Numbers 1:1's own census, which is dated to the first day of the SECOND month of that same year (already on these pages). The book is not arranged chronologically here, and says nothing about it."),
     "num8": dict(era="exodus",
                  when="Aaron lights the lampstand for the first time, exactly as shown Moses on the mountain. Then the Levites are formally set apart: sprinkled with the water of purification, shaved head to foot, clothes washed, hands laid on them by the whole congregation of Israel, and waved by Aaron as a wave-offering — the only place in the Torah the gesture is performed on living people rather than a piece of meat. Two bulls make atonement for them, one sin-offering and one burnt-offering, and Jehovah names the reason in his own voice: the Levites stand in for every firstborn Israelite claimed the night of the Passover. The chapter closes on the Levites' working age — twenty-five to fifty — five years earlier than Numbers 4's own thirty, a discrepancy the text never explains.",
                  clock="⚠ Undated within the chapter itself, like the census and camp law around it. Still inside the same Sinai window as Numbers 1–7 (already on these pages)."),
@@ -12311,6 +12314,28 @@ DICTIONARY_ES = {
         "32:6</a>, ya en estas páginas), esta forma intensiva nunca ha descrito juego inocente en un "
         "adulto ni una sola vez —la palabra misma es una advertencia que la fiesta rara vez recibe "
         "como tal."),
+    "pesach": ("pesach / pasach",
+        "PASCUA —el nombre de la noche, del rito y del cordero. ⚠️ El sentido del verbo es "
+        "genuinamente incierto y hay tres lecturas antiguas: (1) PASAR POR ALTO, saltarse, "
+        "perdonar —la interpretación tradicional y la del Antiguo Testamento griego; (2) PROTEGER "
+        "o cubrir defensivamente, apoyada en Isaías 31:5, donde Jehová «protege y libra, PASA POR "
+        "ENCIMA y rescata» a Jerusalén como un ave sobre su nido; (3) COJEAR o saltar, el sentido "
+        "llano del verbo en otros lugares (1 Reyes 18:21, 26 —los profetas «cojeando» junto a su "
+        "altar). La diferencia no es trivial: una lectura tiene a Dios pasando de largo ante una "
+        "puerta, otra lo tiene de pie sobre ella. El Nuevo Testamento hace la identificación "
+        "directamente: «Cristo, nuestra PASCUA, ha sido sacrificado» (1 Corintios 5:7). ⚠ Números "
+        "9 (ya en estas páginas) registra apenas la SEGUNDA Pascua jamás celebrada —un año después "
+        "de la del éxodo— y crea, en respuesta a una queja, una Pascua de recuperación un mes "
+        "más tarde para quien estuviera impuro o de viaje."),
+    "moed": ("mo'ed",
+        "TIEMPO SEÑALADO —la palabra de Génesis 1:14: las lumbreras se cuelgan «para tiempos "
+        "señalados» (mo'adim), la interpretación fija de esta traducción. En Daniel 12:7 el tiempo "
+        "mismo se mide en ellos: «un tiempo señalado, tiempos señalados, y la mitad» —el siete "
+        "roto, tres y medio, jurado por Aquel que vive para siempre. Más adelante la palabra nombra "
+        "también la tienda de REUNIÓN (ohel mo'ed): tiempo señalado, lugar señalado. ⚠ Números 9 "
+        "(ya en estas páginas) hace de la frase bemo'ado, «a su tiempo señalado», la bisagra de "
+        "todo un capítulo: se repite cuatro veces en catorce versículos, y es precisamente lo que "
+        "unos hombres impuros temen perder cuando preguntan «¿por qué hemos de ser excluidos?»."),
     "mishkan": ("mishkan",
         "TABERNÁCULO —literalmente LUGAR DE MORADA, de shakhan, 'habitar, morar'. La palabra nombra "
         "todo el santuario portátil cuyo 'patrón' se le muestra a Moisés en su primera aparición "
