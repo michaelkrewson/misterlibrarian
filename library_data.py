@@ -1204,7 +1204,9 @@ DICTIONARY = [
     ("taraf", "taraf", "טָרַף", "taraf",
      "TO TEAR, rend — what a predator does to a carcass. The noun terefah is the torn animal that a shepherd had to account for (Genesis 31:39; Exodus 22:13) and that Israelites were forbidden to eat (Exodus 22:31), and Jacob's own sons use the verb when they present the bloodied coat: 'a wild beast has TORN him' (Genesis 37:33). ⚠ Amos gives it to a temper: 'his anger TORE without ceasing' (1:11), the animal register of the book's opening roar handed to a man's grudge. Edom's rage is described as a beast eating.", ("Amos", 1, 11)),
     ("teruah", "teru'ah", "תְּרוּעָה", "teru'ah",
-     "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire. Psalm 27:6 turns the same word toward worship — 'sacrifices with a teru'ah' — the identical noise that felled a wall now offered at an altar.", ("Amos", 1, 14)),
+     "A SHOUT or BLAST — the loud collective noise made by a crowd or by a ram's horn. It is the war-cry of an army (Joshua 6:5, 20, at the walls of Jericho), the acclamation that greeted the ark (1 Samuel 4:5), and the sound that names a festival: Leviticus 23:24 calls the first day of the seventh month a 'memorial of teru'ah', which is why the Jewish new year is a day of shofar blasts. ⚠ Amos uses it as the noise inside a burning city (1:14) — the only oracle of the eight that accelerates into sound, war-cry and whirlwind on top of the fire. Psalm 27:6 turns the same word toward worship — 'sacrifices with a teru'ah' — the identical noise that felled a wall now offered at an altar. ⚠ Numbers 10:5-7 (already on these pages) gives it a job none of those passages needed: a TECHNICAL SIGNAL. There, a teru'ah on the silver trumpets means 'break camp and march,' and a plain sustained blast on the same instruments means 'assemble' — 'you shall blow, but you shall not sound a teru'ah' (10:7). The difference between two national-scale orders is carried entirely by the shape of the note.", ("Amos", 1, 14)),
+    ("chatzotzrah", "chatzotzrah", "חֲצוֹצְרָה", "chatzotzrot",
+     "A TRUMPET — and specifically NOT the shofar, the curved ram's horn most readers picture. A chatzotzrah is a straight metal instrument; Numbers 10:2 (already on these pages) has Moses make two of them from silver, of miqshah, HAMMERED work — the identical term used for the gold lampstand (Exodus 25:31; Numbers 8:4, both already on these pages), so trumpet and lampstand are made by the same technique out of different metals. The two words are kept distinct throughout this translation because the Hebrew keeps them distinct: the shofar sounds at Sinai and at the jubilee, while the chatzotzrot are priestly instruments belonging to the tabernacle's own routine, blown only by Aaron's sons (10:8). ⚠ Their most famous depiction is not Jewish but Roman: the Arch of Titus in Rome carves the temple trumpets among the spoils carried out of Jerusalem in AD 70, straight-tubed, exactly as the name implies.", ("Numbers", 10, 2)),
     ("zadon", "zadon", "זָדוֹן", "zadon",
      "INSOLENCE, presumptuous arrogance — not ordinary pride but the overreaching kind that thinks itself untouchable. From the root zid, 'to boil up, act presumptuously' — the same root behind the 'high-handed' (bezadon) deliberate sin that has no sacrifice (Numbers 15:30) and the 'proud/raging' waters that would have swept the psalmist away (Psalm 124:5). ⚠ It is Edom's one named sin in the FIRST half of Obadiah: 'the ZADON of your heart has deceived you' (1:3) — a security so complete, up in the rock, that it has curdled into contempt. Distinct from the ordinary word for pride (ga'avah); the shelf mostly levels it to 'pride' (KJV/NIV), but the word is sharper.", ("Obadiah", 1, 3)),
     ("gemul", "gemul", "גְּמוּל", "gemul",
@@ -8395,6 +8397,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num10": dict(era="exodus",
+                 when="Two silver trumpets are made, with a signal code attached: both together summon the whole congregation, one summons the chieftains, and a teru'ah blast breaks camp. Then the cloud lifts from the tabernacle and Israel leaves Sinai for the first time in nearly a year, marching in the exact four-standard order Numbers 2 laid out. Moses asks his Midianite kinsman Hobab to come as a guide — 'you shall be for us as eyes' — and Hobab refuses, with no answer recorded to the second asking. The chapter closes on the ark going out three days ahead, and on two verses the scribes bracketed with inverted nun letters: 'Rise up, Jehovah, and let your enemies be scattered.'",
+                 clock="c. 1445 BC — dated precisely to the twentieth day of the SECOND month of the second year after the exodus (v11), nineteen days after Numbers 1's census and about eleven months after Israel first reached Sinai in the third month of the previous year (Exodus 19:1, already on these pages). This is the departure the whole Sinai section has been building toward."),
     "num9": dict(era="exodus",
                  when="Israel keeps the second Passover ever observed — the first since the night of the exodus itself, one year earlier. Men made unclean by a corpse are barred from it and object: 'why should we be kept back?' Moses cannot decide the case and defers to Jehovah, and the answer is a new permanent law — a makeup Passover on the fourteenth of the SECOND month for anyone unclean or far away, extended in the same breath to the resident foreigner, with being cut off from the people as the penalty for simply skipping it. The chapter closes on the cloud over the tabernacle, fire by night, and Israel moving or staying only when it lifts or settles — 'at the command of Jehovah' seven times in six verses.",
                  clock="⚠ Dated to the FIRST month of the second year after the exodus (v1) — about a month EARLIER than Numbers 1:1's own census, which is dated to the first day of the SECOND month of that same year (already on these pages). The book is not arranged chronologically here, and says nothing about it."),
@@ -12582,7 +12587,28 @@ DICTIONARY_ES = {
         "or&aacute;culo de los ocho que se acelera hasta el sonido, el grito de guerra y el "
         "torbellino sobre el fuego. El Salmo 27:6 vuelve la misma palabra hacia la "
         "adoraci&oacute;n &mdash; &laquo;sacrificios con un teru'ah&raquo; &mdash; el mismo "
-        "ruido que derrib&oacute; un muro, ahora ofrecido en un altar."),
+        "ruido que derrib&oacute; un muro, ahora ofrecido en un altar. ⚠ N&uacute;meros 10:5-7 "
+        "(ya en estas p&aacute;ginas) le da un trabajo que ninguno de esos pasajes "
+        "necesitaba: una SE&Ntilde;AL T&Eacute;CNICA. All&iacute;, un teru'ah en las trompetas "
+        "de plata significa &laquo;levantad el campamento y marchad&raquo;, y un toque llano y "
+        "sostenido en los mismos instrumentos significa &laquo;reuníos&raquo; &mdash; "
+        "&laquo;tocar&eacute;is, pero no sonar&eacute;is teru'ah&raquo; (10:7). La diferencia "
+        "entre dos &oacute;rdenes a escala nacional la carga enteramente la forma de la nota."),
+    "chatzotzrah": ("chatzotzrah",
+        "UNA TROMPETA &mdash;y espec&iacute;ficamente NO el shofar, el cuerno curvo de carnero "
+        "que la mayor&iacute;a de los lectores imagina. Una <em>chatzotzrah</em> es un "
+        "instrumento recto de metal; N&uacute;meros 10:2 (ya en estas p&aacute;ginas) hace que "
+        "Mois&eacute;s fabrique dos de plata, de <em>miqshah</em>, obra LABRADA A MARTILLO "
+        "&mdash;el t&eacute;rmino id&eacute;ntico usado para el candelabro de oro (&Eacute;xodo "
+        "25:31; N&uacute;meros 8:4, ambos ya en estas p&aacute;ginas)&mdash;, de modo que "
+        "trompeta y candelabro se hacen con la misma t&eacute;cnica en metales distintos. Las dos "
+        "palabras se mantienen separadas en toda esta traducci&oacute;n porque el hebreo las "
+        "mantiene separadas: el shofar suena en el Sina&iacute; y en el jubileo, mientras que las "
+        "<em>chatzotzrot</em> son instrumentos sacerdotales que pertenecen a la rutina propia del "
+        "tabern&aacute;culo, tocados solo por los hijos de Aar&oacute;n (10:8). ⚠ Su "
+        "representaci&oacute;n m&aacute;s famosa no es jud&iacute;a sino romana: el Arco de Tito, "
+        "en Roma, talla las trompetas del templo entre los despojos sacados de Jerusal&eacute;n en "
+        "el a&ntilde;o 70, de tubo recto, exactamente como implica el nombre."),
     "yasha": ("yasha",
         "SALVAR, librar, sacar a un lugar amplio (lo opuesto de tsar, &laquo;estrecho, "
         "acorralado&raquo;). Es la ra&iacute;z detr&aacute;s del propio nombre de OSEAS "
