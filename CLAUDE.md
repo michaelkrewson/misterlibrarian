@@ -206,6 +206,24 @@ another.
      "a law made in response to a complaint" when two were prosecutions, and Numbers 10
      titled a note "the same blast for war and for festival" when the Hebrew uses *heria*
      in one verse and *taqa* in the other, inverting the chapter's own point.
+   - **DIFF THE TWINS, mechanically, verse by verse.** The doctrine section above already
+     says a divergence between the English and Spanish is a signal one of them is off &mdash;
+     but saying it is not doing it, and Numbers 13 (2026-08-18) shipped with three, none of
+     which any other check could see. v21 had the English printing the place-name
+     `Lebo-hamath` while the Spanish translated the phrase (`a la entrada de Hamat`), so the
+     two twins were taking opposite sides of a live scholarly question; v20's `fat or lean`
+     became `f&eacute;rtil o magra`, breaking the very pair the note points at; and vv22/28
+     kept the Hebrew's definite article in English (`the offspring of THE Anak`) and dropped
+     it in Spanish. Print the two verse texts side by side and read them &mdash; it takes one
+     throwaway script and finds what nothing else does. Two useful corollaries it surfaced:
+     a divergence usually means **neither** side has a note (v21's strange English word
+     appeared twice with nowhere to send the reader), and the fix is often to make both sides
+     strange and explain it once, not to smooth one of them.
+   - **A fix written during the review is not exempt from the review.** ⚠ The Lebo-hamath
+     note added while FIXING the above put the NWT 1984 on the wrong side of the shelf split
+     (it reads &lsquo;to the entering in of Ha&rsquo;math&rsquo;, the phrase reading, not the
+     name). New prose written in an audit feels like a correction and therefore trustworthy;
+     it is just prose, and needs the same fetch-and-check as the prose it replaces.
    - **Diff the bookkeeping.** A chnote saying "X and Y extended, N new entries" must match
      `git diff library_data.py`. Numbers 8 claimed two entries extended when only one was.
    - When a claim fails, prefer the one that survives — it is usually the better note anyway
