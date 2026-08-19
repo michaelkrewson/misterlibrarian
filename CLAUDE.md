@@ -406,11 +406,43 @@ the script (idempotent — only fetches what's missing).
 - Search Console ownership is verified via `google3b2c8b57143d235a.html` at the repo root
   (a single verification line). **Never delete it** — Google re-checks it periodically.
 
+## Front-end JS — the Spanish edition is a page, not a locale flag
+
+`reader-notes.js`, `share.js` and `audio-reader.js` run on **both** editions off one file,
+so anything they render or read has to branch. Two things must; one must not.
+
+- **Language** is `(document.documentElement.lang || "").toLowerCase().indexOf("es") === 0`
+  — that single line is the whole detection, identical in `share.js` and `reader-notes.js`.
+  Don't sniff the `.es` filename for it (the stem gets stripped for URL-building and would
+  lie), and don't leave a reader-visible string outside the string table.
+- **The verse line** is `.eng` on the English page and **`.esp` on the Spanish one**. This
+  is the trap: a selector written as `.eng` alone still *works* — no error, no blank page —
+  it just silently reads nothing on every Spanish chapter. `reader-notes.js` shipped that
+  way, so on the whole Spanish site "Copiar el versículo" copied a reference with no verse
+  attached and "Compartir como imagen" produced a card with a reference, a divider, and
+  empty space where the verse belongs (fixed 2026-08-19; `audio-reader.js` still assumes
+  `.eng`, harmless only because Spanish pages carry no Listen button — fix it there before
+  giving the Spanish edition audio).
+- **What must NOT branch:** localStorage keys, the `/v/` stub URLs, download filenames.
+  Those are identities, language-neutral by design — `baseStem()` strips `.es` precisely so
+  the two editions can never disagree about which verse a note belongs to.
+
+The Spanish book name is **not** duplicated in JS. `reader-notes.js` takes the reference a
+reader sees from the page's own `<title>` ("Números 14 — La Traducción Mister"), falling
+back to the slug only if that head doesn't end in the chapter's number — so `build.py`'s
+`ES_BOOK` stays the single source and no JS copy can drift from it.
+
+⚠ **`?v=` is a content hash** (`_asset_ver`), baked into all 2,772 pages at build time.
+Editing any of these `.js` files does **nothing** for a real reader until you re-run
+`build.py`; the browser keeps serving the cached old file under the old stamp.
+
 ## Known gaps — not yet documented here
 
 `gen_audio.py`, `audio-reader.js`, `player-clips.js`, `reader-notes.js`, `reading.js`, and
 `share.js` all exist in this repo but haven't been reverse-engineered into this file yet —
 read them directly before touching that surface rather than assuming this doc covers it.
+The section above covers only their **language** contract, which is the part that has
+actually drawn blood; everything else about them is still undocumented.
 
 ## Deep history
 
