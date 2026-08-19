@@ -17,3 +17,8 @@ __pycache__/
 *_STATE.md
 *_greek.json
 *_heb.json
+
+# Cached shelf-version chapters from wol.jw.org (tools/shelf_text.py).
+# Third-party copyrighted translations, fetched on demand and quoted in short
+# phrases only -- never committed, never redistributed.
+source/shelf/
