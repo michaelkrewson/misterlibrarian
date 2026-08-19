@@ -237,6 +237,20 @@ another.
      a divergence usually means **neither** side has a note (v21's strange English word
      appeared twice with nowhere to send the reader), and the fix is often to make both sides
      strange and explain it once, not to smooth one of them.
+   - **AND DIFF THE NOTES, not just the verses.** ⚠ Added after Numbers 14 (2026-08-18), where
+     the verse twin-diff was run exactly as written above, came back clean, and missed
+     everything — because the rule said *verse by verse* and the notes are where the claims
+     actually live. A post-ship read found **nine chapters cited as live links in English and
+     as dead prose in Spanish** (Nehemiah, Exodus 14/17/32/34, Genesis 15/37, Numbers 1,
+     Deuteronomy 1): the Spanish reader was being told *ya en estas páginas* with no way to get
+     there. Diff per note id — paragraph count, shelf tags, digits, and the set of outbound
+     links — and treat a link present on one side only as a defect until proven otherwise.
+     Two legitimate exceptions exist and should be *flagged rather than linked*: a chapter with
+     no Spanish edition takes `numbers-13.es.html`'s wording, "ya en estas páginas, todavía no
+     en español". ⚠ And check that a citation's link actually points at the chapter it names —
+     "Nehemiah 9:17" linked to `nehemiah-1.html` survived this chapter's own composition-time
+     fix of the identical bug on Galatians 3:11, because the fix was applied to the instance
+     that was noticed and not swept for its parallels.
    - **A fix written during the review is not exempt from the review.** ⚠ The Lebo-hamath
      note added while FIXING the above put the NWT 1984 on the wrong side of the shelf split
      (it reads &lsquo;to the entering in of Ha&rsquo;math&rsquo;, the phrase reading, not the
