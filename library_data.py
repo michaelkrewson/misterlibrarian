@@ -370,7 +370,7 @@ DICTIONARY = [
      "A tenth, a tithe — the Bible's first, given by Abram to Melchizedek (14:20). Leviticus 27:30-33 (already on these pages) later legislates two distinct tithes: land's produce, redeemable at valuation plus a fifth like everything else in that chapter, and livestock's tithe, which is not appraised at all — every tenth animal that 'passes under the shepherd's staff' is fixed by the count itself, with the herder forbidden even to inspect which one it will be.", (14, 20)),
     # ---- Genesis 15 (Hebrew) ----
     ("aman", "he'emin / aman", "הֶאֱמִן / אָמַן", "he'emin / aman",
-     "To trust, to lean one's weight on — the root behind 'amen.' 'Abram believed Jehovah, and he counted it to him as righteousness' (15:6), the verse Paul and James both build on. \u26a0 The passive participle <em>ne'eman</em> is what God calls Moses at <a href=\"numbers-12.html#n12-6\">Numbers 12:7</a> (already on these pages) — 'in all my house he is TRUSTED' — and the passive is the point: it is a fact about how God treats him, not a virtue he displays. KJV and ASV read 'faithful', which quietly turns it active; NWT keeps the passive with 'He is being entrusted with all my house.' The verse is quoted twice in Hebrews 3 (not yet on these pages).", (15, 6)),
+     "To trust, to lean one's weight on — the root behind 'amen.' 'Abram believed Jehovah, and he counted it to him as righteousness' (15:6), the verse Paul and James both build on. \u26a0 The passive participle <em>ne'eman</em> is what God calls Moses at <a href=\"numbers-12.html#n12-6\">Numbers 12:7</a> (already on these pages) — 'in all my house he is TRUSTED' — and the passive is the point: it is a fact about how God treats him, not a virtue he displays. KJV and ASV read 'faithful', which quietly turns it active; NWT keeps the passive with 'He is being entrusted with all my house.' The verse is quoted twice in Hebrews 3 (not yet on these pages). \u26a0 One chapter after God calls Moses <em>ne'eman</em>, <a href=\"numbers-14.html#n14-11\">Numbers 14:11</a> asks 'how long will they not <em>ya'aminu</em> in me?' \u2014 the same root negated, of the same people who DID believe at the sea (Exodus 14:31, already on these pages). And Habakkuk 2:4 sets the noun <em>emunah</em> against <em><a href=\"dictionary.html#aphal\">upplah</a></em>, the swollen soul \u2014 which is the verb of Numbers 14:44, so both halves of that chapter's failure are named by the two roots Habakkuk opposes.", (15, 6)),
     ("tzedaqah", "tzedaqah", "צְדָקָה", "tzedaqah",
      "Righteousness, right standing — reckoned to Abram on account of his trust (15:6), granted rather than earned.", (15, 6)),
     ("magen", "magen", "מָגֵן", "magen",
@@ -550,7 +550,7 @@ DICTIONARY = [
     ("ragaz", "ragaz", "רָגַז", "al tirgezu",
      "To TREMBLE, be stirred up, be agitated — and, by an easy extension, to QUARREL. Joseph's last words to his brothers as they leave for Canaan: 'AL TIRGEZU BA-DEREKH — do not be agitated on the way' (45:24). The range is the whole interest. Read one way it is reassurance: don't be afraid, nothing will happen to you. Read the other it is a warning he has good reason to give — don't spend the entire journey arguing about whose idea the pit was; the old Jewish reading, and the one behind KJV's 'see that ye fall not out by the way.' NIV and ESV both choose 'quarrel'; NWT 'do not get upset.' This translation keeps AGITATED, which is where the Hebrew sits, and leaves the reader holding both.", (45, 24)),
     ("avon", "avon", "עָוֺן", "avon",
-     "GUILT, iniquity — from a root meaning to bend or twist; the heaviest of the Hebrew words for wrongdoing, naming not a single act but the crookedness a person carries, and the liability that comes with it. It is the word in Judah's extraordinary answer when the cup is found in Benjamin's bag: 'God has found out the AVON of your servants' (44:16). They are innocent of the theft and Judah knows it — he is confessing something else entirely, twenty-two years old, to the one man in the room who knows exactly what he means. KJV 'God hath found out the iniquity of thy servants.'", (44, 16)),
+     "GUILT, iniquity — from a root meaning to bend or twist; the heaviest of the Hebrew words for wrongdoing, naming not a single act but the crookedness a person carries, and the liability that comes with it. It is the word in Judah's extraordinary answer when the cup is found in Benjamin's bag: 'God has found out the AVON of your servants' (44:16). They are innocent of the theft and Judah knows it — he is confessing something else entirely, twenty-two years old, to the one man in the room who knows exactly what he means. KJV 'God hath found out the iniquity of thy servants.' \u26a0 In <a href=\"numbers-14.html#n14-13\">Numbers 14</a> it appears three times in two verses (vv18-19) and again at v34, and the verb attached to it is always <em>nasa</em>, to lift or carry: God 'bears' <em>avon</em>, which is how Hebrew says forgive \u2014 and then at v34 the same verb turns around and the people 'bear' their own. Forgiving and punishing are one verb.", (44, 16)),
     ("arav", "arav", "עָרַב", "e'ervennu",
      "To STAND SURETY, go guarantor — a commercial word: to pledge yourself against another's debt, so that if the thing is lost, YOU pay. It is what makes Judah's offer the hinge of the Joseph story. Reuben had said 'you may put my two sons to death if I do not bring him back' (42:37) — a man offering his own children as collateral, which is monstrous and costs him nothing he has to feel; Jacob refused flatly. Judah says 'I MYSELF will be surety for him — from my hand you shall require him' (43:9), putting up himself, and his father says yes. He then makes it good in ch. 44, offering to stay a slave in Benjamin's place — the moment Joseph stops being able to hold himself in. KJV 'I will be surety for him; of my hand shalt thou require him.'", (43, 9)),
     ("rachamim", "rachamim", "רַחֲמִים", "rachamim",
@@ -633,7 +633,7 @@ DICTIONARY = [
     ("gophrit", "gophrit", "גָּפְרִית", "gophrit",
      "Sulfur — the old Bibles' 'brimstone' — rained with fire on the cities (19:24); afterwards the fixed image of scorched judgment (Deuteronomy 29:23; Job 18:15; Revelation keeps it to the end).", (19, 24)),
     ("chesed", "chesed", "חֶסֶד", "chesed",
-     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels. ⚠ Psalm 23:6 pairs it with tov and hands both to radaph, the hunting verb: goodness and chesed do not follow the psalmist, they pursue him. ⚠ <a href=\"leviticus-20.html#v20-17\">Leviticus 20:17</a> (already on these pages) turns the very same word against brother-sister incest — 'it is a chesed,' rendered 'a disgrace' — in the identical book that opened with Lot begging for chesed at Sodom's gate, before his own daughters and their father became exactly this law's own case. Two real explanations exist and this translation does not choose: a second, homonymous root (cognate with Aramaic/Arabic words for shame) that only looks identical to the covenant-kindness word, or the same root turned bitterly ironic. <span class=\"tag t-kjv\">KJV</span> reads 'a wicked thing' here; <span class=\"tag t-asv\">ASV</span> 'a shameful thing'; <span class=\"tag t-niv\">NIV</span> 'a disgrace.'", (19, 19)),
+     "Steadfast love, covenant kindness — one of the Bible's great untranslatables, first here on Lot's lips (19:19). The word behind the Psalms' 'mercy,' and — paired with 'truth' (chesed ve-emet, see emet) — behind John's 'grace and truth' (see charis). It saturates Genesis 24, where the servant asks God to 'do chesed' with Abraham (24:12) and designs a sign that tests it — not the girl's beauty but her spontaneous kindness to a stranger and his ten thirsty camels. ⚠ Psalm 23:6 pairs it with tov and hands both to radaph, the hunting verb: goodness and chesed do not follow the psalmist, they pursue him. ⚠ <a href=\"leviticus-20.html#v20-17\">Leviticus 20:17</a> (already on these pages) turns the very same word against brother-sister incest — 'it is a chesed,' rendered 'a disgrace' — in the identical book that opened with Lot begging for chesed at Sodom's gate, before his own daughters and their father became exactly this law's own case. Two real explanations exist and this translation does not choose: a second, homonymous root (cognate with Aramaic/Arabic words for shame) that only looks identical to the covenant-kindness word, or the same root turned bitterly ironic. <span class=\"tag t-kjv\">KJV</span> reads 'a wicked thing' here; <span class=\"tag t-asv\">ASV</span> 'a shameful thing'; <span class=\"tag t-niv\">NIV</span> 'a disgrace.' \u26a0 It is the attribute Moses leans on hardest at <a href=\"numbers-14.html#n14-13\">Numbers 14:18-19</a>, quoting the Sinai formula back to God and keeping only 'slow to anger and abundant in <em>chesed</em>' out of the whole merciful half \u2014 the two attributes that buy time and loyalty rather than acquittal.", (19, 19)),
     ("chemlah", "chemlah", "חֶמְלָה", "chemlah",
      "Compassion, pity — 'in the compassion of Jehovah on him' (19:16): the only reason Lot's lingering doesn't kill him; four people dragged out by the hand.", (19, 16)),
     ("shalshelet", "shalshelet", "שַׁלְשֶׁלֶת", "shalshelet",
@@ -1200,7 +1200,7 @@ DICTIONARY = [
     ("noqed", "noqed", "נֹקֵד", "noqed",
      "A SHEEP-BREEDER — and one of the most argued-over words in the prophets, because it occurs exactly TWICE in the Hebrew Bible. Amos 1:1 calls Amos one of the noqedim of Tekoa; 2 Kings 3:4 calls MESHA KING OF MOAB a noqed, who paid Israel a tribute of a hundred thousand lambs and the wool of a hundred thousand rams. It is therefore not the ordinary word for shepherd (ro'eh) but something closer to a stock-breeder or flock-manager; the Arabic cognate naqad names a small, fine-fleeced breed. ⚠ So the familiar picture of Amos as a barefoot peasant is a picture the vocabulary does not require — but do not over-read it either: at Amos 7:14 he calls himself a boqer (a cattleman, a different word again) and a dresser of sycamore figs, which is hired work. The rare word points one way and the day-labour points the other, and the honest position is that both are in the text. The shelf mostly levels it to 'herdmen' (KJV) or 'shepherds' (NIV); only the NWT keeps the technical sense, 'sheep raisers.'", ("Amos", 1, 1)),
     ("pesha", "pesha", "פֶּשַׁע", "pesha",
-     "REVOLT, rebellion — usually flattened in English to 'transgression', which loses the courtroom. Its plain sense is a vassal's political REBELLION against his overlord: 'Moab REBELLED against Israel' (2 Kings 1:1), 'Israel REBELLED against the house of David' (1 Kings 12:19). ⚠ That is why it matters in Amos 1-2, where the formula 'for three PESHA'IM of Damascus, and for four' is repeated eight times: the prophet is convening a court in which foreign nations stand charged as REBELS, which quietly presumes a sovereign whose authority they had never acknowledged. The word is distinct from chet (a miss, a fault) and avon (crookedness, guilt) — Hebrew keeps three ideas apart where English tends to use one. KJV/ASV 'transgressions'; NIV 'sins'; Douay-Rheims 'crimes'; NWT alone renders 'revolts', and on the merits it is the more exact word.", ("Amos", 1, 3)),
+     "REVOLT, rebellion — usually flattened in English to 'transgression', which loses the courtroom. Its plain sense is a vassal's political REBELLION against his overlord: 'Moab REBELLED against Israel' (2 Kings 1:1), 'Israel REBELLED against the house of David' (1 Kings 12:19). ⚠ That is why it matters in Amos 1-2, where the formula 'for three PESHA'IM of Damascus, and for four' is repeated eight times: the prophet is convening a court in which foreign nations stand charged as REBELS, which quietly presumes a sovereign whose authority they had never acknowledged. The word is distinct from chet (a miss, a fault) and avon (crookedness, guilt) — Hebrew keeps three ideas apart where English tends to use one. KJV/ASV 'transgressions'; NIV 'sins'; Douay-Rheims 'crimes'; NWT alone renders 'revolts', and on the merits it is the more exact word. \u26a0 It is paired with <em><a href=\"dictionary.html#avon\">avon</a></em> in the Exodus 34:7 formula that Moses quotes back to God at <a href=\"numbers-14.html#n14-13\">Numbers 14:18</a> \u2014 and his quotation is shorter than the original, dropping the third term 'and sin' along with almost every merciful clause, while keeping the punishing one entire.", ("Amos", 1, 3)),
     ("armon", "armon", "אַרְמוֹן", "armon (pl. armenot)",
      "A CITADEL — the fortified keep or stronghold-palace inside a walled city, the residence of whoever rules it. Usually rendered 'palace' (KJV/ASV), 'fortress' (NIV) or 'dwelling tower' (NWT); 'citadel' keeps both halves, the luxury and the defences. ⚠ It is one of Amos's signature words. It appears in every one of the eight oracles of chapters 1-2 — the fire always devours the ARMENOT, never simply 'the city' — and it keeps returning (3:9-11; 6:8), until the ruling class inside those buildings is the entire subject of the book. Amos's quarrel is not with a country but with an address.", ("Amos", 1, 4)),
     ("shaag", "sha'ag", "שָׁאַג", "sha'ag",
@@ -1423,7 +1423,7 @@ DICTIONARY = [
     ("gullah", "gullah", "גֻּלָּה", "gullah",
      "A BOWL — specifically the reservoir bowl set atop Zechariah's vision-lampstand, feeding oil down through pipes to its seven lamps (4:2-3) — a gravity-fed design with no human hand shown refilling it, unlike the tabernacle menorah of Exodus 25 (not yet on these pages), which the priests topped up by hand every evening. The same root elsewhere names a natural spring or basin (Achsah's request for gullot mayim, 'springs of water,' Joshua 15:19) — the image throughout is a self-replenishing source, not a static container.", ("Zechariah", 4, 2)),
     ("koach", "koach", "כֹּחַ", "koach",
-     "POWER, strength, capacity — the general word, paired at Zechariah 4:6 with the sharper-edged chayil ('not by chayil, and not by koach, but by my spirit'). Where chayil leans military — an army, a force fielded — koach is ability itself: the power to act, to stand, to accomplish, with no particular weapon implied. Samson's koach is in his hair (Judges 16:5, not yet on these pages); a sick man's koach fails him (Psalm 71:9). Pairing the two words at Zechariah 4:6 covers the whole field of human capability, military and otherwise, and denies Zerubbabel both at once.", ("Zechariah", 4, 6)),
+     "POWER, strength, capacity — the general word, paired at Zechariah 4:6 with the sharper-edged chayil ('not by chayil, and not by koach, but by my spirit'). Where chayil leans military — an army, a force fielded — koach is ability itself: the power to act, to stand, to accomplish, with no particular weapon implied. Samson's koach is in his hair (Judges 16:5, not yet on these pages); a sick man's koach fails him (Psalm 71:9). Pairing the two words at Zechariah 4:6 covers the whole field of human capability, military and otherwise, and denies Zerubbabel both at once. \u26a0 <a href=\"numbers-14.html#n14-13\">Numbers 14:17</a> does something unusual with it: Moses asks that the <em>koach</em> of the Lord be GREAT, and then defines greatness of power entirely by forgiveness. He has just used the same word for the exodus itself (v13), which nobody disputes; the harder power, he proposes, is not destroying them.", ("Zechariah", 4, 6)),
     ("shibbolet", "shibbolet", "שִׁבֹּלֶת", "shibbolet",
      "An EAR of grain — the head of a stalk of wheat or barley, and, by the same root, a flowing stream. Judges 12:6 turns the word into history's most famous shibboleth: fleeing Ephraimites, unable to produce the sh- sound, said sibboleth instead and were killed at the fords of the Jordan for the accent alone (not yet on these pages). Zechariah 4:12 stretches the same grain-word onto an OLIVE tree by analogy — shibbelei ha-zeitim, 'ears of the olives' — rendered 'olive branches' or 'twigs' in translation, since English has no botanical word that crosses grain and fruit-tree the way Hebrew's does here.", ("Zechariah", 4, 12)),
     ("yitzhar", "yitzhar", "יִצְהָר", "yitzhar",
@@ -1990,6 +1990,69 @@ DICTIONARY = [
     ("chidah", "chidah", "חִידָה", "chidah",
      "A RIDDLE — something deliberately stated in a form that has to be worked out, not something merely obscure. In <a href=\"numbers-12.html#n12-6\">Numbers 12:8</a> (already on these pages) it names what Moses does NOT get: God speaks with him mouth to mouth and in plain sight, ‘and not in <em>chidot</em>’ — riddles being the ordinary channel, and directness the exception granted to one man. \u26a0 The Greek Old Testament renders it <em>ainigma</em>, the word English took as ‘enigma’, and that is the word Paul reaches for at <a href=\"1-corinthians-13.html\">1 Corinthians 13:12</a> (already on these pages) — we see now ‘in a riddle’. What Numbers holds up as the mark of Moses’ exceptional access, Paul restores as everyone else’s ordinary condition. See the Greek-side entry <a href=\"dictionary.html#ainigma\">ainigma</a>. The same noun elsewhere names Samson’s wedding puzzle and the Queen of Sheba’s hard questions (neither yet on these pages) — in ordinary use it is a contest word, not a mystical one.",
      ("Numbers", 12, 8)),
+    ("tsel", "tsel", "צֵל", "tsel",
+     "SHADE, shadow — and in this climate, protection. To stand in someone's <em>tsel</em> is to be under their "
+     "cover; Lot pleads for his guests because they have come 'under the <em>tsel</em> of my roof' (Genesis 19:8, "
+     "already on these pages). \u26a0 The metaphor is not decorative. In a desert the shade is the thing between a "
+     "body and the sun, so to say of a people that 'their <em>tsel</em> has turned aside from over them' "
+     "(<a href=\"numbers-14.html#n14-5\">Numbers 14:9</a>) is to say the one thing keeping them alive has stepped "
+     "away. Every version checked on both the English and the Spanish shelf resolves the image into an abstraction "
+     "— defence, shield, protection, <em>amparo</em> — so the sun disappears from the sentence. The word is also "
+     "how the Psalms describe God ('the shade at your right hand', Psalm 121:5, already on these pages), which is "
+     "the same picture turned the other way up.",
+     ("Numbers", 14, 9)),
+    ("peger", "peger", "פֶּגֶר", "peger",
+     "A CARCASS — the word for a dead body when the point is that it is meat, not a person. It is used of animals "
+     "and of corpses left unburied, and it is chosen deliberately in "
+     "<a href=\"numbers-14.html#n14-26\">Numbers 14:29-33</a>, where it falls three times in five verses over the "
+     "generation sentenced to die in the wilderness: 'your carcasses will fall in this wilderness.' \u26a0 The shelf "
+     "splits on whether to keep the harshness: KJV, Geneva and Douay-Rheims print 'carcases', while the ASV softens "
+     "to 'dead bodies' and the NIV to 'bodies'. Ezekiel later uses it for the corpses of kings defiling the "
+     "sanctuary (Ezekiel 43:7, 9, not yet on these pages).",
+     ("Numbers", 14, 29)),
+    ("zenut", "zenut", "זְנוּת", "zenut",
+     "WHOREDOM, faithlessness — the noun, as distinct from the common verb 'to prostitute oneself'. \u26a0 Checked "
+     "against the Hebrew of all five books: the NOUN occurs in the Torah exactly once, at "
+     "<a href=\"numbers-14.html#n14-26\">Numbers 14:33</a>, where the sons must 'bear your <em>zenut</em>'. "
+     "Everywhere else in the Torah the root appears as a verb. It is otherwise a prophets' word — Jeremiah, "
+     "Ezekiel and Hosea build the whole picture of Israel as an unfaithful wife out of it (Jeremiah 3:2, 9; "
+     "Ezekiel 23:27; Hosea 4:11, 6:10, none yet on these pages) — so its single early appearance here, in a "
+     "sentence about the wilderness generation, is the metaphor arriving centuries before the prophets who made "
+     "it famous.",
+     ("Numbers", 14, 33)),
+    ("salach", "salach", "סָלַח", "salach",
+     "TO FORGIVE, pardon — and in the Hebrew Bible it has only ever had one subject. People forgive one another "
+     "with other verbs (<em>nasa</em>, to lift; <em>kipper</em>, to cover); <em>salach</em> is what God does. Its "
+     "great moment is <a href=\"numbers-14.html#n14-20\">Numbers 14:20</a>, two words long — <em>salachti "
+     "kidvarekha</em>, 'I have forgiven, according to your word' — answering Moses' <em>selach-na</em> of v19 with "
+     "the perfect tense rather than a promise. \u26a0 And the very next word is <em>ve-ulam</em>, 'but': the "
+     "sentence on the generation follows in the same speech. Whatever the verb grants, it did not cancel the "
+     "consequence. The noun <em>selichot</em>, 'forgivenesses', gives its name to the Jewish penitential prayers, "
+     "and Nehemiah 9:17 (not yet on these pages) calls God 'a God of <em>selichot</em>' in the middle of a prayer "
+     "retelling this very chapter.",
+     ("Numbers", 14, 20)),
+    ("tenuah", "tenu'ah", "תְּנוּאָה", "tenu'ah",
+     "OPPOSITION, refusal — one of the rarest nouns in the Hebrew Bible, occurring in exactly two verses: "
+     "<a href=\"numbers-14.html#n14-26\">Numbers 14:34</a>, 'you will know my <em>tenu'ah</em>', and Job 33:10 "
+     "(not yet on these pages), where Job says God 'finds <em>tenu'ot</em> against me; he counts me as an ENEMY to "
+     "him.' The root is <em>nu</em>, to restrain or override — the verb used later in this same book when a father "
+     "annuls his daughter's vow (Numbers 30:6, not yet on these pages, where it stands one clause from "
+     "<em>salach</em>). \u26a0 With only one comparison available the shelf scatters: KJV and Geneva 'my breach of "
+     "promise', ASV 'my alienation', Douay-Rheims 'my revenge', NIV 'what it is like to have me against you'; the "
+     "Spanish RV60 and the antigua both 'mi castigo', the NVI 'tenerme por enemigo'. The two modern versions that "
+     "reached 'enemy' independently, in two languages, are the ones closest to the parallel line in Job.",
+     ("Numbers", 14, 34)),
+    ("aphal", "aphal / vaya'pilu", "עָפַל / וַיַּעְפִּלוּ", "aphal",
+     "TO SWELL, be puffed up — hence to push on presumptuously. \u26a0 The consonants turn up sixteen times in the "
+     "Hebrew Bible, but fourteen of those are two unrelated nouns: the Ophel, the citadel-mound in Jerusalem, and "
+     "the tumours that afflict the Philistines in 1 Samuel. As a VERB it occurs in exactly two verses — "
+     "<a href=\"numbers-14.html#n14-39\">Numbers 14:44</a>, where Israel pushes up the hill to fight without the "
+     "ark, and Habakkuk 2:4 (not yet on these pages): 'Look — puffed up, not upright, is his soul within him; but "
+     "the righteous shall live by his <em>emunah</em>.' \u26a0 That makes Habakkuk's antithesis the two halves of "
+     "Numbers 14's failure, named in its own two roots — the people will not <em>ya'aminu</em> (v11) and then they "
+     "<em>ya'pilu</em> (v44). Deuteronomy 1:43, retelling the same scene, replaces it with the ordinary "
+     "<em>vattazidu</em>, from <em>zid</em>.",
+     ("Numbers", 14, 44)),
     ("tur", "tur", "תּוּר", "tur",
      "TO SCOUT OUT, explore, reconnoitre — the governing verb of <a href=\"numbers-13.html#n13-1\">Numbers 13</a> (already on these pages), where it occurs seven times in one chapter (vv2, 16, 17, 21, 25, and twice in v32). \u26a0 It is NOT the ordinary Hebrew word for spying. That is <em>ragal</em>, literally to go about on foot, the word used of the men Joshua sends to Jericho; and Deuteronomy uses a third, <em>chafar</em>, to DIG or search out. All three describe the same mission, and the difference is visible on these pages: <a href=\"deuteronomy-1.html\">Deuteronomy 1:22</a> has the people asking Moses to <em>chafar</em> the land — dig it out, survey it — and v24 reports that what they actually did was <em>ragal</em> it, spy it. Numbers uses neither, only <em>tur</em>, which elsewhere carries the sense of exploring or seeking something out. The modern Hebrew word for a tourist descends from it. This translation reads 'scout out' throughout so the one Hebrew verb stays visible as one word; most of the shelf alternates 'spy out' and 'search' within the same chapter.",
      ("Numbers", 13, 2)),
@@ -3330,6 +3393,25 @@ ENCYCLOPEDIA = [
               "town he is eventually granted (Joshua 14, not yet on these pages).",
          refs=[("Numbers", 13, 6), ("Numbers", 13, 30)], videos=[]),
 
+    dict(slug="hormah", name="Hormah", kind="place", aliases=["Hormah", "Zephath"],
+         desc=("The place the survivors are chased to after Israel attacks the hill country without the ark "
+               "&mdash; 'they struck them and beat them down, as far as Hormah' "
+               "(<a href=\"numbers-14.html#n14-39\">Numbers 14:45</a>). \u26a0 The name is a pun and an epitaph: "
+               "<em>Chormah</em> is built on <em>cherem</em>, the root for something devoted to destruction, so the "
+               "place where they are destroyed is called Destruction. The naming gets its own story later, and a "
+               "happier one &mdash; at Numbers 21:3 (not yet on these pages) Israel finally wins there and devotes "
+               "the towns, and the etymology is supplied at that point rather than this one; Judges 1:17 says the "
+               "town had been called Zephath before. \u26a0 <strong>Where it was is genuinely disputed.</strong> "
+               "Yohanan Aharoni identified it with Tel Masos in the northern Negev, about 15 km south-east of "
+               "Beersheba; Benjamin Mazar preferred Tel Malhata (Tell el-Milh), roughly 12 km south-west of Arad; "
+               "Tel Ira has also been proposed, and Israel Finkelstein rejects the Tel Masos identification "
+               "altogether, reading the site as Amalekite rather than Israelite. The argument turns on occupation "
+               "dates rather than on the text. The atlas marks it approximate for that reason: the candidates sit "
+               "within about ten kilometres of one another in the Beersheba valley, which is as much as can be "
+               "honestly claimed."),
+         refs=[("Numbers", 14, 45)],
+         coords=(31.2131, 34.9667, 0.3), approx=True,
+         modern="Disputed \u2014 Tel Masos, Tel Malhata or Tel Ira, eastern Negev, Israel"),
     dict(slug="anakim", name="The Anakim (the sons of Anak)", kind="people", aliases=["Anak", "Anakim"],
          desc="The people of unusual height living around Hebron when the scouts arrive — Ahiman, Sheshai and "
               "Talmai are named (Numbers 13:22). The name is built on <em>anaq</em>, a NECK or a necklace, which "
@@ -8491,6 +8573,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num14": dict(era="exodus",
+                 when="The scouts&rsquo; report breaks the nation. Israel weeps all night, wishes itself dead in Egypt, and proposes electing a leader to take it back there. Joshua and Caleb tear their clothes and are nearly stoned for it. God offers to destroy the people and start the nation over from Moses &mdash; the same offer he made at the golden calf, now with &lsquo;and mightier than they&rsquo; added &mdash; and Moses answers by quoting God&rsquo;s own words at Sinai back to him and asking that the power of the Lord be shown in forgiving. The pardon is granted in two words and the sentence follows in the same breath: this generation, the whole war-roll of Numbers 1 from twenty years old and upward, will die in the wilderness, a year for each of the forty days they scouted. The ten scouts die at once of plague; the people mourn, then attack the hill country the next morning without the ark and are beaten as far as Hormah.",
+                 clock="⚠ Undated within the chapter, but continuous with Numbers 13 &mdash; the scouts return after forty days and this is the same night. So: still the second year out of Egypt, at Kadesh in the wilderness of Paran, late summer. This is the hinge of the whole wilderness chronology: the forty years are imposed here, in v34, and everything from Numbers 15 to Deuteronomy is dated on the far side of the sentence passed in this chapter."),
     "num13": dict(era="exodus",
                  when="From the wilderness of Paran, twelve chieftains &mdash; one per tribe &mdash; are sent to scout Canaan, and Moses renames one of them Joshua before they go. They travel the length of the land in forty days and come back carrying a single cluster of grapes on a pole between two men. Their report begins true: the land flows with milk and honey, and here is the fruit. Then one word, <em>efes</em>, turns it &mdash; the people are fierce, the cities fortified, the Anakim are there. Caleb hushes the crowd and says go up; the other ten say the inhabitants are stronger than we are, and put out a bad report of a land that eats its inhabitants, where they saw the Nephilim and felt like grasshoppers.",
                  clock="\u26a0 Undated within the chapter, but placed immediately after Numbers 12 at Paran, so within weeks of the twentieth of the second month of the second year. The season IS given, and it dates the mission: the days of the first ripe grapes, roughly midsummer. The forty days of scouting are about to become the forty years of Numbers 14.")
@@ -14157,6 +14242,82 @@ DICTIONARY_ES = {
         "UN ENIGMA, un acertijo —algo dicho deliberadamente en una forma que hay que descifrar, no algo simplemente oscuro. En <a href=\"numbers-12.es.html#n12-6\">Números 12:8</a> (ya en estas páginas) nombra lo que Moisés NO recibe: Dios le habla boca a boca y a la vista, «y no por <em>jidot</em>» —los enigmas son el canal ordinario, y la franqueza la excepción concedida a un solo hombre. \u26a0 El Antiguo Testamento griego lo vierte <em>ainigma</em>, la palabra que el castellano tomó como «enigma», y esa es la palabra que Pablo escoge en <a href=\"1-corinthians-13.es.html\">1 Corintios 13:12</a> (ya en estas páginas): ahora vemos «en enigma». Lo que Números presenta como la marca del acceso excepcional de Moisés, Pablo lo devuelve como la condición ordinaria de todos los demás. El mismo sustantivo nombra en otros lugares el acertijo de bodas de Sansón y las preguntas difíciles de la reina de Sabá (ninguno todavía en estas páginas): en su uso corriente es una palabra de competición, no de misticismo."),
     "aman": ("he'emin / aman",
         "CONFIAR, apoyar el propio peso en algo —la raíz de la que viene «amén». «Y Abram confió en Jehová, y se lo contó por justicia» (Génesis 15:6), el versículo sobre el que construyen tanto Pablo como Santiago. \u26a0 El participio pasivo <em>ne'eman</em> es lo que Dios llama a Moisés en <a href=\"numbers-12.es.html#n12-6\">Números 12:7</a> (ya en estas páginas): «en toda mi casa él es de CONFIANZA» —y la voz pasiva es lo decisivo: es un hecho sobre cómo Dios lo trata, no una virtud que él exhiba. La RV60 dice «fiel», que vuelve activo lo que el hebreo deja pasivo; la TNM conserva la pasiva con «se le confía toda mi casa». El versículo se cita dos veces en Hebreos 3 (todavía no en estas páginas)."),
+    "tsel": ("tsel",
+        "SOMBRA — y en este clima, protección. Estar bajo la <em>tsel</em> de alguien es estar bajo su amparo; Lot "
+        "suplica por sus huéspedes porque han venido 'bajo la <em>tsel</em> de mi techo' (Génesis 19:8, ya en estas "
+        "páginas). ⚠ La metáfora no es decorativa. En el desierto la sombra es lo que se interpone entre un cuerpo "
+        "y el sol, de modo que decir de un pueblo que 'su <em>tsel</em> se ha apartado de sobre ellos' "
+        "(<a href=\"numbers-14.es.html#n14-5\">Números 14:9</a>) es decir que lo único que los mantenía vivos se "
+        "ha hecho a un lado. Todas las versiones revisadas en ambos estantes convierten la imagen en una "
+        "abstracción —defensa, escudo, protección, <em>amparo</em>—, y el sol desaparece de la frase. La palabra es "
+        "también como los Salmos describen a Dios ('la sombra a tu mano derecha', Salmo 121:5, ya en estas "
+        "páginas), que es el mismo cuadro al revés."),
+    "peger": ("peger",
+        "CADÁVER — la palabra para un cuerpo muerto cuando lo que importa es que es carne, no una persona. Se usa "
+        "de animales y de cadáveres insepultos, y está escogida deliberadamente en "
+        "<a href=\"numbers-14.es.html#n14-26\">Números 14:29-33</a>, donde cae tres veces en cinco versículos sobre "
+        "la generación condenada a morir en el desierto: 'vuestros cadáveres caerán en este desierto'. ⚠ El estante "
+        "se divide sobre si conservar la dureza: la KJV, la Ginebra y la Douay-Rheims imprimen 'carcases', mientras "
+        "que la ASV la suaviza a 'dead bodies' y la NIV a 'bodies'. Ezequiel la usará después para los cadáveres de "
+        "los reyes que profanan el santuario (Ezequiel 43:7, 9, todavía no en estas páginas)."),
+    "zenut": ("zenut",
+        "FORNICACIÓN, infidelidad —el sustantivo, a diferencia del verbo corriente 'prostituirse'—. ⚠ Verificado "
+        "contra el hebreo de los cinco libros: el SUSTANTIVO aparece en la Torá exactamente una vez, en "
+        "<a href=\"numbers-14.es.html#n14-26\">Números 14:33</a>, donde los hijos han de llevar 'vuestra "
+        "<em>zenut</em>'. En todo el resto de la Torá la raíz aparece como verbo. Por lo demás es palabra de los "
+        "profetas —Jeremías, Ezequiel y Oseas construyen con ella toda la figura de Israel como esposa infiel "
+        "(Jeremías 3:2, 9; Ezequiel 23:27; Oseas 4:11, 6:10, ninguno todavía en estas páginas)—, de modo que su "
+        "única aparición temprana aquí, en una frase sobre la generación del desierto, es la metáfora llegando "
+        "siglos antes que los profetas que la hicieron famosa."),
+    "salach": ("salach",
+        "PERDONAR —y en la Biblia hebrea nunca ha tenido más que un sujeto—. Las personas se perdonan unas a otras "
+        "con otros verbos (<em>nasa</em>, levantar; <em>kipper</em>, cubrir); <em>salach</em> es lo que hace Dios. "
+        "Su gran momento es <a href=\"numbers-14.es.html#n14-20\">Números 14:20</a>, de dos palabras "
+        "—<em>salachti kidvarekha</em>, 'he perdonado, conforme a tu palabra'—, que responde al <em>selach-na</em> "
+        "de Moisés del v19 con un perfecto y no con una promesa. ⚠ Y la palabra siguiente es <em>ve-ulam</em>, "
+        "'pero': la sentencia sobre la generación llega en el mismo discurso. Lo que el verbo concede no canceló la "
+        "consecuencia. El sustantivo <em>selichot</em>, 'perdones', da nombre a las oraciones penitenciales judías, "
+        "y Nehemías 9:17 (todavía no en estas páginas) llama a Dios 'Dios de <em>selichot</em>' en medio de una "
+        "oración que recuenta este mismo capítulo."),
+    "tenuah": ("tenuah",
+        "OPOSICIÓN, negativa —uno de los sustantivos más raros de la Biblia hebrea, presente en exactamente dos "
+        "versículos: <a href=\"numbers-14.es.html#n14-26\">Números 14:34</a>, 'y conoceréis mi <em>tenu'ah</em>', "
+        "y Job 33:10 (todavía no en estas páginas), donde Job dice que Dios 'halla <em>tenu'ot</em> contra mí; me "
+        "cuenta por ENEMIGO suyo'. La raíz es <em>nu</em>, refrenar o anular —el verbo que se usa más adelante en "
+        "este mismo libro cuando un padre anula el voto de su hija (Números 30:6, todavía no en estas páginas, "
+        "donde está a una cláusula de <em>salach</em>)—. ⚠ Con una sola comparación disponible, el estante se "
+        "dispersa: la KJV y la Ginebra 'my breach of promise', la ASV 'my alienation', la Douay-Rheims 'my "
+        "revenge', la NIV 'what it is like to have me against you'; en español la RV60 y la antigua 'mi castigo', "
+        "y la NVI 'tenerme por enemigo'. Las dos versiones modernas que llegaron a 'enemigo' de forma "
+        "independiente, en dos idiomas, son las más cercanas a la línea paralela de Job."),
+    "aphal": ("aphal",
+        "HINCHARSE, envanecerse —de ahí, lanzarse con presunción—. ⚠ Las consonantes aparecen dieciséis veces en la "
+        "Biblia hebrea, pero catorce de ellas son dos sustantivos sin relación: el Ofel, la ciudadela amurallada de "
+        "Jerusalén, y los tumores que afligen a los filisteos en 1 Samuel. Como VERBO aparece en exactamente dos "
+        "versículos: <a href=\"numbers-14.es.html#n14-39\">Números 14:44</a>, donde Israel sube al monte a pelear "
+        "sin el arca, y Habacuc 2:4 (todavía no en estas páginas): 'Mira —hinchada, no recta, está su alma dentro "
+        "de él; mas el justo por su <em>emunah</em> vivirá.' ⚠ Eso hace de la antítesis de Habacuc las dos mitades "
+        "del fracaso de Números 14, nombradas con sus propias dos raíces: el pueblo no <em>ya'aminu</em> (v11) y "
+        "después <em>ya'pilu</em> (v44). Deuteronomio 1:43, al recontar la misma escena, la sustituye por el "
+        "corriente <em>vattazidu</em>, de <em>zid</em>."),
+    "avon": ("avon",
+        "CULPA, iniquidad —de una raíz que significa torcer o doblar; la más pesada de las palabras hebreas para el "
+        "mal obrar, que no nombra un acto suelto sino la torcedura que una persona carga, y la responsabilidad que "
+        "viene con ella—. Es la palabra de la extraordinaria respuesta de Judá cuando la copa aparece en el saco de "
+        "Benjamín: 'Dios ha hallado el <em>avon</em> de tus siervos' (Génesis 44:16, ya en estas páginas). ⚠ En "
+        "<a href=\"numbers-14.es.html#n14-13\">Números 14:18-19</a> aparece tres veces en dos versículos, y el "
+        "verbo que la acompaña es siempre <em>nasa</em>, levantar o cargar: Dios 'lleva' el <em>avon</em>, que es "
+        "como el hebreo dice perdonar. En el v34 el mismo verbo se vuelve del otro lado —'llevaréis vuestras "
+        "iniquidades cuarenta años'—, de modo que perdonar y castigar son, en hebreo, el mismo verbo: algo se "
+        "levanta y alguien lo carga."),
+    "pesha": ("pesha",
+        "REVUELTA, rebelión —normalmente aplanada en español a 'transgresión', lo que hace perder el tribunal—. Su "
+        "sentido llano es la REBELIÓN política de un vasallo contra su señor: 'Moab se rebeló contra Israel' "
+        "(2 Reyes 1:1), 'Israel se rebeló contra la casa de David' (1 Reyes 12:19). ⚠ Va emparejada con "
+        "<em>avon</em> en la fórmula de Éxodo 34:7 que Moisés cita de vuelta a Dios en "
+        "<a href=\"numbers-14.es.html#n14-13\">Números 14:18</a> —'que lleva iniquidad y transgresión'—, y la "
+        "cita de Moisés es más corta que el original: deja fuera 'y pecado', la tercera palabra, junto con casi "
+        "todas las cláusulas misericordiosas, y conserva entera la que castiga."),
     "tur": ("tur",
         "EXPLORAR, reconocer, hacer un reconocimiento —el verbo rector de <a href=\"numbers-13.es.html#n13-1\">Números 13</a> (ya en estas páginas), donde aparece siete veces en un solo capítulo (vv2, 16, 17, 21, 25 y dos veces en el v32). \u26a0 NO es la palabra hebrea corriente para espiar. Esa es <em>ragal</em>, literalmente andar a pie, la que se usa de los hombres que Josué envía a Jericó; y Deuteronomio emplea una tercera, <em>jafar</em>, CAVAR o escudriñar. Las tres describen la misma misión, y la diferencia se ve en estas páginas: <a href=\"deuteronomy-1.es.html\">Deuteronomio 1:22</a> tiene al pueblo pidiéndole a Moisés que <em>jafar</em> la tierra —que la excave, que la sondee— y el v24 informa de que lo que en realidad hicieron fue <em>ragal</em>, espiarla. Números no usa ninguna de las dos, solo <em>tur</em>, que en otros lugares significa explorar o buscar algo. La palabra hebrea moderna para «turista» desciende de ella. Esta traducción lee «reconocer» de forma constante para que el único verbo hebreo se vea como una sola palabra."),
     "chagav": ("chagav",
@@ -15410,6 +15571,7 @@ ENCYCLOPEDIA_ES = {
     "macedonia": ("Macedonia", "Provincia romana al norte de Grecia, patria de Filipo y de Alejandro, y la primera regi\u00f3n de Europa a la que Pablo llev\u00f3 el mensaje tras la visi\u00f3n del 'var\u00f3n macedonio' de Hechos 16:9. Filipos y Tesal\u00f3nica estaban en ella, y Filipenses 4:15 recuerda que al salir de Macedonia ninguna congregaci\u00f3n mantuvo con \u00e9l 'una cuenta de dar y recibir' salvo la de Filipos."),
     "thessalonica": ("Tesal\u00f3nica", "Ciudad portuaria de Macedonia y capital de la provincia, en la V\u00eda Egnatia. Pablo fund\u00f3 all\u00ed una congregaci\u00f3n (Hechos 17) y le escribi\u00f3 dos cartas. Filipenses 4:16 la menciona de paso y con una precisi\u00f3n contable caracter\u00edstica: 'incluso en Tesal\u00f3nica enviaron para mi necesidad, una y dos veces'."),
     "caleb": ("Caleb hijo de Jefone", "El explorador de Jud&aacute; que disiente. Cuando los doce vuelven de Cana&aacute;n y la asamblea empieza a gritar, Caleb la HACE CALLAR y dice que la tierra puede tomarse (N&uacute;meros 13:30) &mdash;y no discute ni uno de los datos del informe, solo su conclusi&oacute;n. &Eacute;l y Josu&eacute; son los dos &uacute;nicos de los doce que viven para entrar en la tierra, cuarenta a&ntilde;os despu&eacute;s. \u26a0 En otros lugares se le llama repetidamente &laquo;el cenezeo&raquo;, y Cenaz figura en G&eacute;nesis 36 entre los jefes de EDOM &mdash;de modo que el leal m&aacute;s famoso de la generaci&oacute;n del desierto podr&iacute;a muy bien ser, por linaje, un extranjero absorbido por Jud&aacute;. La Biblia nunca lo comenta. Hebr&oacute;n, la ciudad a la que llega en este cap&iacute;tulo y donde viven los anaquitas, es la ciudad que con el tiempo se le concede (Josu&eacute; 14, todav&iacute;a no en estas p&aacute;ginas)."),
+    "hormah": ("Horma", "El lugar hasta donde se persigue a los supervivientes despu&eacute;s de que Israel ataca la serran&iacute;a sin el arca &mdash;&laquo;los hirieron y los destrozaron, hasta Horma&raquo; (<a href=\"numbers-14.es.html#n14-39\">N&uacute;meros 14:45</a>)&mdash;. \u26a0 El nombre es un juego de palabras y un epitafio: <em>Chormah</em> se construye sobre <em>cherem</em>, la ra&iacute;z de lo consagrado a la destrucci&oacute;n, de modo que el lugar donde son destruidos se llama Destrucci&oacute;n. La imposici&oacute;n del nombre tiene despu&eacute;s su propia historia, y m&aacute;s feliz: en N&uacute;meros 21:3 (todav&iacute;a no en estas p&aacute;ginas) Israel vence por fin all&iacute;, y la etimolog&iacute;a se da en ese punto y no en este; Jueces 1:17 dice que antes la ciudad se llamaba Sefat. \u26a0 <strong>D&oacute;nde estuvo es objeto de disputa real.</strong> Yohanan Aharoni la identific&oacute; con Tel Masos, en el N&eacute;guev septentrional, a unos 15 km al sureste de Beerseba; Benjamin Mazar prefiri&oacute; Tel Malhata (Tell el-Milh), a unos 12 km al suroeste de Arad; tambi&eacute;n se ha propuesto Tel Ira, e Israel Finkelstein rechaza del todo la identificaci&oacute;n con Tel Masos y lee el yacimiento como amalecita y no israelita. La discusi&oacute;n se decide por las fechas de ocupaci&oacute;n, no por el texto. El atlas la marca como aproximada por esa raz&oacute;n: los candidatos est&aacute;n a unos diez kil&oacute;metros unos de otros en el valle de Beerseba, y eso es todo lo que puede afirmarse honradamente."),
     "anakim": ("Los anaquitas (los hijos de Anac)", "El pueblo de estatura inusual que viv&iacute;a en torno a Hebr&oacute;n cuando llegan los exploradores &mdash;se nombra a Ahim&aacute;n, Sesai y Talmai (N&uacute;meros 13:22). El nombre se construye sobre <em>anaq</em>, CUELLO o collar, lo que ha producido dos explicaciones: que eran de cuello largo, y una rab&iacute;nica seg&uacute;n la cual el sol parec&iacute;a envolverles el cuello por su altura (Sot&aacute; 34b). \u26a0 Los exploradores los enlazan con los <a href=\"enciclopedia.html#nephilim-entry\">nefilim</a> &mdash;&laquo;los hijos de Anac, que vienen de los nefilim&raquo; (13:33)&mdash;, el &uacute;nico lugar de la Biblia donde se conectan ambos, y la frase que los conecta la dicen los hombres que traen un mal informe, no el narrador. El otro nombre de Hebr&oacute;n, Quiriat-arba, significa &laquo;ciudad de Arba&raquo;, y a Arba se le recuerda como uno de ellos."),
     "eshcol": ("El arroyo de Escol", "El cauce cercano a Hebr&oacute;n donde los exploradores cortaron un solo racimo de uvas tan grande que lo llevaron en un palo entre dos hombres, y tomaron adem&aacute;s granadas e higos (N&uacute;meros 13:23). El lugar toma su nombre del fruto: <em>eshkol</em> es &laquo;racimo&raquo; en hebreo, de modo que es el Arroyo del Racimo &mdash;uno de los muchos top&oacute;nimos de la Tor&aacute; que se explican solos en la misma frase. \u26a0 Su ubicaci&oacute;n se desconoce; la identificaci&oacute;n tradicional es un valle justo al norte de Hebr&oacute;n, pero descansa en el relato y no en pruebas, y las coordenadas se&ntilde;alan una regi&oacute;n, no un sitio."),
     "zoan": ("Zoan (Tanis)", "Una ciudad del delta oriental del Nilo, la TANIS griega, que la Tor&aacute; usa como vara cronol&oacute;gica: &laquo;Hebr&oacute;n fue edificada siete a&ntilde;os antes que Zoan en Egipto&raquo; (N&uacute;meros 13:22). \u26a0 El par&eacute;ntesis es uno de esos peque&ntilde;os anclajes sin explicar de la Tor&aacute;, y dice mucho de su p&uacute;blico: fecha una ciudad cananea contra una egipcia, dando por supuesto que el lector conoce mejor Egipto. Zoan aparece luego en los profetas como abreviatura del poder y de la necedad de Egipto. Sus ruinas en San el-Hagar fueron un yacimiento importante; las tumbas reales halladas all&iacute; est&aacute;n entre los pocos enterramientos reales egipcios recuperados casi intactos."),
