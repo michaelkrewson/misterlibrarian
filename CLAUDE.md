@@ -178,6 +178,20 @@ another.
    - **Open every chapter you cite** — its actual shipped text, not just proof the file
      exists. Cross-reference *existence* and cross-reference *substance* are different checks
      and only the first one is automated.
+   - **FETCH every shelf quote you print. Never write one from memory.** ⚠ Added after
+     Numbers 10 (2026-08-18) printed four renderings of 10:36 unfetched: ASV came out
+     misquoted ("the ten thousand thousands" for its actual "the ten thousands of the
+     thousands"), and worse, the sentence claimed the shelf split along the *eleph*
+     thousand/clan seam when **not one of the five versions reads "clan" there** — a false
+     causal claim resting on quotes that were never checked. The tell is that the three
+     preceding chapters got this right *by habit*, which is precisely why it failed the
+     moment attention was elsewhere: an unwritten rule is not a rule. Fetch the parallel
+     page, paste the wording, and only then say what the shelf is doing.
+   - **Check what you assert ABOUT a list, not just the list.** The members and the count can
+     all be right while the predicate binding them is wrong — Numbers 9 called four cases
+     "a law made in response to a complaint" when two were prosecutions, and Numbers 10
+     titled a note "the same blast for war and for festival" when the Hebrew uses *heria*
+     in one verse and *taqa* in the other, inverting the chapter's own point.
    - **Diff the bookkeeping.** A chnote saying "X and Y extended, N new entries" must match
      `git diff library_data.py`. Numbers 8 claimed two entries extended when only one was.
    - When a claim fails, prefer the one that survives — it is usually the better note anyway
