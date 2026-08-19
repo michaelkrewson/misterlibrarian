@@ -89,6 +89,26 @@ another.
 - **The seven-version shelf (fixed):** NIV 2011, KJV, Douay-Rheims (translates the Vulgate — its
   divergences usually trace to Latin, not Hebrew/Greek), The Living Bible, Geneva 1599, ASV, NWT
   1984. Quote the copyrighted ones (NIV/TLB/NWT) only in short phrases.
+- **Where the shelf text comes from — `tools/shelf_text.py`, not memory and not a search snippet.**
+  ⚠ Added 2026-08-19 after Numbers 14 shipped with **no NWT comparison at all**: `wol.jw.org`
+  returns an empty shell to WebFetch, so the NWT was the one shelf version with no fetch path, and
+  the search snippet that surfaced instead was almost certainly the 2013 revision wearing the
+  1984's name. The page is in fact plain server-rendered HTML — **WebFetch was the problem, not the
+  supplier** — and a browser User-Agent gets the whole chapter. WOL serves the **NWT 1984**
+  (`Rbi8`), the **NWT 2013**, the **TNM 1987** and **TNM 2019**, and also the **ASV** and **KJV**,
+  so one command covers most of both shelves:
+
+      python3 tools/shelf_text.py Numbers 14                  # NWT 1984 (the default)
+      python3 tools/shelf_text.py Numbers 12 --all --verses 8 # the whole shelf, both languages
+      python3 tools/shelf_text.py Numbers 12 --version tnm2019
+
+  It is **archive-first** like [[tools/source_text.py]] — local `source/shelf/` → private S3
+  (`blobs/bible_shelf/`) → live — so a chapter is pulled from the supplier at most once, and WOL
+  going away or changing its markup can no longer cost us a witness. **The edition guard is the
+  point:** every WOL page names its own publication in the `<article>` class, and the tool asserts
+  that against what you asked for and *refuses to print* on a mismatch — so quoting the 2013
+  revision as the 1984 cannot happen silently, which is exactly the error the revision rule below
+  names. The DRB / Geneva / NIV / TLB are not on WOL and still need their own fetch.
 - **⚠ Always compare the NWT's exactness — don't default to the familiar rendering.** The NWT 1984
   and the ASV are usually the two *most literal* witnesses on the shelf, despite the NWT's doctrinal
   reputation. For every verse, check what they do; where either is tighter to the source than the
@@ -204,7 +224,10 @@ another.
      causal claim resting on quotes that were never checked. The tell is that the three
      preceding chapters got this right *by habit*, which is precisely why it failed the
      moment attention was elsewhere: an unwritten rule is not a rule. Fetch the parallel
-     page, paste the wording, and only then say what the shelf is doing.
+     page, paste the wording, and only then say what the shelf is doing. **For the NWT/TNM,
+     ASV and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`** (see the
+     shelf-source rule in the doctrine section) — "I could not fetch the NWT" stopped being a
+     reason to ship a chapter without it on 2026-08-19.
    - **Run the shelf rule on BOTH shelves, and re-run it on every version's own
      REVISION.** ⚠ Added after Numbers 12 (2026-08-18), where the rule directly above
      was obeyed for the English shelf and skipped entirely for the Spanish one — six wrong
