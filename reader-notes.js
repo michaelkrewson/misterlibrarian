@@ -12,6 +12,8 @@
 //
 // It speaks whichever language the page is in: `<html lang="es">` swaps the whole
 // string table (see T) AND the verse-line selector (`.esp` rather than `.eng`).
+// A verse is one verse in both editions, so a note taken on either side of the
+// 🌐 toggle is the same note (see KEY_PATH).
 //
 // All storage goes through the tiny load/save/get/set interface below, so a future
 // cross-device sync (e.g. a Supabase-backed account) is a drop-in swap of those
@@ -26,6 +28,13 @@
   var STORE_KEY = "ml-annotations-v1";
   var PATH = location.pathname; // e.g. "/genesis-1.html" — portable, matches the share URL
 
+  // ⚠ PATH is the page; KEY_PATH is the VERSE. Sharing must link to the edition
+  // you are actually reading, but a note belongs to the verse, not to the
+  // language you happened to read it in — so storage drops the ".es". Until
+  // 2026-08-19 the key was PATH itself, which gave the same verse two separate
+  // notebooks and made the 🌐 toggle look like it had wiped the reader's margin.
+  var KEY_PATH = PATH.replace(/\.es\.html$/, ".html");
+
   function loadAll() {
     try { return JSON.parse(localStorage.getItem(STORE_KEY)) || {}; }
     catch (e) { return {}; }
@@ -36,7 +45,7 @@
   }
   var data = loadAll();
 
-  function keyFor(verseId) { return PATH + "#" + verseId; }
+  function keyFor(verseId) { return KEY_PATH + "#" + verseId; }
   function get(verseId) { return data[keyFor(verseId)] || null; }
   function set(verseId, patch) {
     var k = keyFor(verseId);
@@ -47,6 +56,34 @@
     else data[k] = next;
     saveAll(data);
   }
+  // ---- one-time migration: two per-edition notebooks -> one per verse -------
+  // LOSSLESS BY CONSTRUCTION. Where only one edition holds a row it simply moves
+  // across. Where BOTH do, the newer one leads and the older is kept underneath
+  // it rather than dropped — a reader must never lose words they wrote to a
+  // migration they did not ask for. Nothing is deleted from the merged store, so
+  // reverting this commit only hides the Spanish rows behind the English key
+  // again; it cannot destroy them.
+  function mergeRows(a, b) {
+    var newer = (a.updated || 0) >= (b.updated || 0) ? a : b;
+    var older = newer === a ? b : a;
+    var out = Object.assign({}, older, newer);   // newer wins field by field
+    if (older.note && newer.note && older.note !== newer.note) {
+      out.note = newer.note + "\n\n" + older.note;
+    }
+    return out;
+  }
+  (function migrateEditionKeys() {
+    var legacy = Object.keys(data).filter(function (k) { return k.indexOf(".es.html#") > -1; });
+    if (!legacy.length) return;
+    legacy.forEach(function (k) {
+      var to = k.replace(".es.html#", ".html#");
+      var row = data[k];
+      data[to] = data[to] ? mergeRows(row, data[to]) : row;
+      delete data[k];
+    });
+    saveAll(data);   // a failed write (quota / private mode) just retries next load
+  })();
+
   var CHAPTER_ID = "chapter";
   function getChapter() { return (data[keyFor(CHAPTER_ID)] || {}).note || ""; }
 
@@ -641,7 +678,7 @@
 
     function updateCount() {
       var hl = 0, notes = 0;
-      var prefix = PATH + "#";
+      var prefix = KEY_PATH + "#";
       Object.keys(data).forEach(function (k) {
         if (k.indexOf(prefix) !== 0) return;
         if (k === keyFor(CHAPTER_ID)) return;

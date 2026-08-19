@@ -420,12 +420,30 @@ so anything they render or read has to branch. Two things must; one must not.
   it just silently reads nothing on every Spanish chapter. `reader-notes.js` shipped that
   way, so on the whole Spanish site "Copiar el versículo" copied a reference with no verse
   attached and "Compartir como imagen" produced a card with a reference, a divider, and
-  empty space where the verse belongs (fixed 2026-08-19; `audio-reader.js` still assumes
-  `.eng`, harmless only because Spanish pages carry no Listen button — fix it there before
-  giving the Spanish edition audio).
-- **What must NOT branch:** localStorage keys, the `/v/` stub URLs, download filenames.
-  Those are identities, language-neutral by design — `baseStem()` strips `.es` precisely so
-  the two editions can never disagree about which verse a note belongs to.
+  empty space where the verse belongs. Both `reader-notes.js` and `audio-reader.js` were
+  fixed on 2026-08-19 — the latter pre-emptively, since Spanish pages still ship no Listen
+  button, so that adding the button is the only step left rather than the day it is added
+  being the day this is found broken. ⚠ Whatever reads a verse must also strip the widget
+  chrome reader-notes.js appends *inside* that same line (`.v-tools`, `.v-note`,
+  `.v-editor`, `.notelink`, `.xrefs`, `.vclip`) — audio-reader stripped only `.notelink`
+  and was therefore reading the "⋯" button glyph aloud after every verse, and would have
+  read a reader's own saved note out loud.
+- **What must NOT branch:** storage keys, the `/v/` stub URLs, download filenames. Those
+  name a *verse*, not a page, so they are language-neutral — `baseStem()` strips `.es`
+  precisely so the two editions can never disagree about which verse is which. ⚠ An earlier
+  version of this section claimed the localStorage keys were already neutral. They were
+  not: until 2026-08-19 the key was `location.pathname`, so one verse held two separate
+  notebooks and the 🌐 toggle looked like it had wiped the reader's margin. `KEY_PATH` now
+  drops the `.es`, and a one-time migration folds the legacy rows in — **losslessly**: where
+  both editions held a note the newer leads and the older is kept beneath it rather than
+  dropped. `PATH` itself is still the right thing for the chapter share URL, which must link
+  to the edition actually being read; only the *keys* are neutral.
+
+⚠ **The one place the Spanish edition still hands you English**: the per-verse 🔗 share
+link. `/v/` stubs are language-neutral by design, so `/v/numbers-14-1.html` carries the
+English verse in its Open Graph card and redirects to `numbers-14.html`. A Spanish reader
+sharing a Spanish verse therefore shares an English one. Fixing it means Spanish stubs
+(~3,800 more pages) — a build-scope decision, deliberately open, on the to-do list.
 
 The Spanish book name is **not** duplicated in JS. `reader-notes.js` takes the reference a
 reader sees from the page's own `<title>` ("Números 14 — La Traducción Mister"), falling

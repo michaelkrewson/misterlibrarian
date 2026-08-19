@@ -5800,6 +5800,21 @@ def build_sitemap():
       file, so mtime would stamp today's date on all 320 pages every time — and a
       lastmod that is always "today" is one search engines learn to ignore. One
       `git log` pass gives the real date each page last changed.
+      ⚠ WHOLE-SITE COMMITS DO NOT DATE A PAGE (`_WHOLE_SITE_SHARE`). Bumping a
+      shared asset re-stamps its `?v=` cache-buster in every page, so ONE
+      mechanical commit touches every one of them — and without this guard the
+      next build reads that as "all 2,700 pages changed today" and collapses the
+      sitemap to a single date, re-creating through git the very always-today
+      signal this design chose git to avoid. Measured 2026-08-19: a
+      reader-notes.js bump did exactly that to 2,770 URLs at once, and the
+      flattening is PERMANENT — each page keeps the bogus date until it is next
+      genuinely edited.
+      The rule is deliberately a SHARE of the site, not a file count: a commit
+      that touches essentially every page cannot be a per-page content edit,
+      whereas a large-but-partial one usually is. 89e82abe ("Fix the search
+      snippets on the pages that actually rank") rewrote the meta description of
+      1,712 of ~2,772 pages — real content, and it must keep dating them; a flat
+      threshold in the hundreds would have thrown it away too.
     * No `priority` or `changefreq`. Google ignores both; emitting them is noise.
 
     Spanish pages are paired with their English twin via hreflang alternates, so a
@@ -5807,6 +5822,10 @@ def build_sitemap():
     as a duplicate of the other.
     """
     import subprocess
+    # A commit touching at least this share of the indexable pages is mechanical
+    # (see the note above). Set high on purpose: only "literally the whole site"
+    # qualifies, so a broad-but-partial content pass still dates its pages.
+    _WHOLE_SITE_SHARE = 0.95
     pages = sorted(f for f in os.listdir(OUT)
                    if f.endswith(".html") and os.path.isfile(os.path.join(OUT, f)))
     # ency/ and dict/ hold real, indexable per-entry pages (unlike /v/'s noindex
@@ -5826,12 +5845,29 @@ def build_sitemap():
         log = subprocess.run(
             ["git", "-C", OUT, "log", "--format=%cI", "--name-only", "-n", "600"],
             capture_output=True, text=True, timeout=45).stdout
-        cur = None
+        # Walk newest-first, buffering each commit's file list so a bulk commit
+        # can be discarded whole rather than dated file by file.
+        cur, batch = None, []
+
+        page_set = set(pages)
+        bulk_at = max(1, int(len(page_set) * _WHOLE_SITE_SHARE))
+
+        def _flush(date, files):
+            if not date or not files:
+                return
+            touched = page_set.intersection(files)   # ignore .py/.js/.json noise
+            if len(touched) >= bulk_at:
+                return                      # whole-site bump — dates nothing
+            for f in touched:
+                dates.setdefault(f, date)   # newest genuine commit wins
+
         for line in log.splitlines():
             if line[:2] == "20" and "T" in line:
-                cur = line[:10]
+                _flush(cur, batch)
+                cur, batch = line[:10], []
             elif line.strip() and cur:
-                dates.setdefault(line.strip(), cur)
+                batch.append(line.strip())
+        _flush(cur, batch)
     except Exception:
         pass                      # a sitemap without lastmod is still a fine sitemap
 
