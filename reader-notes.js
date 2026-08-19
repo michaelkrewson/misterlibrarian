@@ -10,6 +10,9 @@
 // It runs on every page but no-ops instantly unless the page actually has verses
 // (`.vrs[id]`), so the Library/Encyclopedia/About pages are untouched.
 //
+// It speaks whichever language the page is in: `<html lang="es">` swaps the whole
+// string table (see T) AND the verse-line selector (`.esp` rather than `.eng`).
+//
 // All storage goes through the tiny load/save/get/set interface below, so a future
 // cross-device sync (e.g. a Supabase-backed account) is a drop-in swap of those
 // four functions — the UI never touches localStorage directly.
@@ -47,14 +50,116 @@
   var CHAPTER_ID = "chapter";
   function getChapter() { return (data[keyFor(CHAPTER_ID)] || {}).note || ""; }
 
+  // ------------------------------------------------------------------ i18n ---
+  // The Spanish edition sets <html lang="es">; every other page on either site
+  // is lang="en" (share.js branches on this same one line). The Spanish site is
+  // a first-class page, not a courtesy translation, so EVERYTHING a reader can
+  // see here is in T — labels, toasts, aria-labels, the shared text and the image
+  // card's wordmark. What deliberately does NOT branch: the localStorage keys,
+  // the /v/ stub URLs and the download filenames, which stay language-neutral so
+  // the two editions can never disagree about an identity.
+  var ES = (document.documentElement.lang || "").toLowerCase().indexOf("es") === 0;
+
+  var STRINGS = {
+    en: {
+      brand: "Mister Translation",
+      markA: "MiSTeR ", markB: "Translation",
+      colors: [
+        { id: "amber",  label: "Gold" },
+        { id: "green",  label: "Green" },
+        { id: "blue",   label: "Blue" },
+        { id: "rose",   label: "Rose" },
+        { id: "purple", label: "Violet" }
+      ],
+      highlightAs: function (c) { return "Highlight " + c; },
+      noHighlight: "No highlight",
+      removeHighlight: "Remove highlight",
+      toolsFor: function (r) { return "Notes & sharing for " + r; },
+      edit: "edit",
+      noteOn: function (r) { return "Your note on " + r + "…"; },
+      save: "Save", del: "Delete", cancel: "Cancel",
+      noteSaved: "Note saved", noteDeleted: "Note deleted",
+      addNote: "Add note", editNote: "Edit note",
+      share: "🔗 Share",
+      shareImage: "🖼 Share as image",
+      copyVerse: "📋 Copy verse",
+      highlighted: "Highlighted", highlightCleared: "Highlight removed",
+      copied: "Copied", verseCopied: "Verse copied", linkCopied: "Link copied",
+      chapterLinkCopied: "Chapter link copied",
+      cardAlt: function (r) { return r + " — shareable card"; },
+      cardCap: function (r) { return r + " · save or share this card"; },
+      shareBtn: "Share", download: "Download", close: "Close",
+      imageDownloaded: "Image downloaded",
+      myNotesFor: function (r) { return "My notes for " + r; },
+      chapterThought: "A thought on the whole chapter…",
+      saved: "Saved",
+      shareChapter: "🔗 Share chapter",
+      localOnly: "Your notes &amp; highlights live only in this browser. ",
+      exportBackup: "Export a backup", importBackup: "Import",
+      nHighlights: function (n) { return n + " highlight" + (n > 1 ? "s" : ""); },
+      nNotes: function (n) { return n + " note" + (n > 1 ? "s" : ""); },
+      chapterNote: "chapter note",
+      backupDownloaded: "Backup downloaded",
+      imported: function (n) { return "Imported " + n + " item" + (n === 1 ? "" : "s"); },
+      unreadable: "That file couldn't be read"
+    },
+    es: {
+      brand: "La Traducción Mister",
+      markA: "La Traducción ", markB: "Mister",
+      colors: [
+        { id: "amber",  label: "Oro" },
+        { id: "green",  label: "Verde" },
+        { id: "blue",   label: "Azul" },
+        { id: "rose",   label: "Rosa" },
+        { id: "purple", label: "Violeta" }
+      ],
+      highlightAs: function (c) { return "Resaltar en " + c.toLowerCase(); },
+      noHighlight: "Sin resaltado",
+      removeHighlight: "Quitar el resaltado",
+      toolsFor: function (r) { return "Notas y compartir: " + r; },
+      edit: "editar",
+      noteOn: function (r) { return "Tu nota sobre " + r + "…"; },
+      save: "Guardar", del: "Borrar", cancel: "Cancelar",
+      noteSaved: "Nota guardada", noteDeleted: "Nota borrada",
+      addNote: "Añadir una nota", editNote: "Editar la nota",
+      share: "🔗 Compartir",
+      shareImage: "🖼 Compartir como imagen",
+      copyVerse: "📋 Copiar el versículo",
+      highlighted: "Resaltado", highlightCleared: "Resaltado quitado",
+      copied: "Copiado", verseCopied: "Versículo copiado",
+      linkCopied: "Enlace copiado",
+      chapterLinkCopied: "Enlace del capítulo copiado",
+      cardAlt: function (r) { return r + " — tarjeta para compartir"; },
+      cardCap: function (r) { return r + " · guarda o comparte esta tarjeta"; },
+      shareBtn: "Compartir", download: "Descargar", close: "Cerrar",
+      imageDownloaded: "Imagen descargada",
+      myNotesFor: function (r) { return "Mis notas de " + r; },
+      chapterThought: "Una idea sobre todo el capítulo…",
+      saved: "Guardado",
+      shareChapter: "🔗 Compartir el capítulo",
+      localOnly: "Tus notas y resaltados viven solo en este navegador. ",
+      exportBackup: "Exportar una copia", importBackup: "Importar",
+      nHighlights: function (n) { return n + (n > 1 ? " resaltados" : " resaltado"); },
+      nNotes: function (n) { return n + (n > 1 ? " notas" : " nota"); },
+      chapterNote: "nota del capítulo",
+      backupDownloaded: "Copia de seguridad descargada",
+      imported: function (n) { return n + (n === 1 ? " elemento importado" : " elementos importados"); },
+      unreadable: "No se pudo leer ese archivo"
+    }
+  };
+  var T = ES ? STRINGS.es : STRINGS.en;
+
+  // The verse line: ".eng" on the English edition, ".esp" on the Spanish one.
+  // Before this existed the widget looked only for ".eng", so on EVERY Spanish
+  // page "Copy verse" copied a reference with no verse attached to it and
+  // "Share as image" rendered an empty card (found 2026-08-19).
+  var LINE_SEL = ES ? ".esp" : ".eng";
+  function verseLine(vrs) {
+    return vrs.querySelector(LINE_SEL) || vrs.querySelector(".eng, .esp");
+  }
+
   // ------------------------------------------------------------- references ---
-  var COLORS = [
-    { id: "amber",  label: "Gold" },
-    { id: "green",  label: "Green" },
-    { id: "blue",   label: "Blue" },
-    { id: "rose",   label: "Rose" },
-    { id: "purple", label: "Violet" }
-  ];
+  var COLORS = T.colors;
 
   // "/genesis-1.html" -> { book:"Genesis", ch:1 }; the verse number comes from the id.
   // The Spanish twin of a chapter is served as "<stem>.es.html", so the raw
@@ -77,13 +182,26 @@
     return { book: book, ch: ch };
   }
   var BC = bookChapter();
+  // The reference a reader SEES. The Spanish page's own <title> already carries
+  // the localized book name ("Números 14 — La Traducción Mister"), so read it from
+  // there rather than duplicating build.py's 66-entry ES_BOOK map in JS, where a
+  // copy could silently drift. BC stays the source of truth for URLs and storage
+  // keys. Falls back to BC unless the title's head really does end in this
+  // chapter's number — which also quietly fixes the English side's slug-derived
+  // "Song Of Solomon" to the title's own "Song of Solomon".
+  var REF = (function () {
+    var fallback = BC.book + " " + BC.ch;
+    var head = (document.title || "").split("—")[0].trim();
+    if (!head || !/^\d+$/.test(BC.ch)) return fallback;
+    return new RegExp("(^|\\s)" + BC.ch + "$").test(head) ? head : fallback;
+  })();
   function verseNum(verseId) {
     var m = /(\d+)$/.exec(verseId); // "v3" -> 3, "v11-5" -> 5
     return m ? m[1] : "";
   }
   function refOf(verseId) {
     var v = verseNum(verseId);
-    return BC.book + " " + BC.ch + (v ? ":" + v : "");
+    return REF + (v ? ":" + v : "");
   }
   // Share the /v/ stub, not the raw #fragment: the stub carries this verse's own
   // Open Graph tags so the link unfurls with the verse text, then redirects a human
@@ -93,12 +211,13 @@
     return location.origin + "/" + "v/" + STEM + "-" + verseNum(verseId) + ".html";
   }
 
-  // Clean English text of a verse — drops the "note" link and any cross-ref chips,
-  // keeps the words (including linked entity words), collapses whitespace.
+  // Clean text of a verse, in whichever language this edition is — drops the
+  // "note" link and any cross-ref chips, keeps the words (including linked
+  // entity words), collapses whitespace.
   function verseText(vrs) {
-    var eng = vrs.querySelector(".eng");
-    if (!eng) return "";
-    var clone = eng.cloneNode(true);
+    var line = verseLine(vrs);
+    if (!line) return "";
+    var clone = line.cloneNode(true);
     clone.querySelectorAll(".notelink, .xrefs, .vclip, .v-tools, .v-note, .v-editor")
       .forEach(function (n) { n.remove(); });
     return (clone.textContent || "").replace(/\s+/g, " ").trim();
@@ -118,7 +237,7 @@
     toastTimer = setTimeout(function () { toastEl.classList.remove("show"); }, 1700);
   }
   function copyText(text, okMsg) {
-    var done = function () { toast(okMsg || "Copied"); };
+    var done = function () { toast(okMsg || T.copied); };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(done, function () { legacyCopy(text, done); });
     } else { legacyCopy(text, done); }
@@ -151,7 +270,7 @@
       body.appendChild(existing);
     }
     existing.innerHTML = '<span class="v-note-ic">📝</span><span class="v-note-tx"></span>' +
-      '<span class="v-note-edit">edit</span>';
+      '<span class="v-note-edit">' + T.edit + "</span>";
     existing.querySelector(".v-note-tx").textContent = noteText;
     refreshTrigger(vrs, verseId);
   }
@@ -165,7 +284,7 @@
     t.classList.toggle("has-hl", !!(rec && rec.color));
   }
 
-  // The inline note editor (textarea + Save / Delete).
+  // The inline note editor (textarea + save / delete).
   function openEditor(vrs, verseId) {
     closeMenu();
     var body = vrs.querySelector(".vbody") || vrs;
@@ -174,12 +293,12 @@
     var wrap = document.createElement("div");
     wrap.className = "v-editor";
     wrap.innerHTML =
-      '<textarea class="v-ta" rows="3" placeholder="Your note on ' +
-        refOf(verseId).replace(/"/g, "&quot;") + '…"></textarea>' +
+      '<textarea class="v-ta" rows="3" placeholder="' +
+        T.noteOn(refOf(verseId)).replace(/"/g, "&quot;") + '"></textarea>' +
       '<div class="v-ed-row">' +
-        '<button class="v-btn v-save">Save</button>' +
-        '<button class="v-btn v-del">Delete</button>' +
-        '<button class="v-btn v-cancel">Cancel</button>' +
+        '<button class="v-btn v-save">' + T.save + "</button>" +
+        '<button class="v-btn v-del">' + T.del + "</button>" +
+        '<button class="v-btn v-cancel">' + T.cancel + "</button>" +
       "</div>";
     body.appendChild(wrap);
     var ta = wrap.querySelector(".v-ta");
@@ -188,11 +307,11 @@
     ta.setSelectionRange(ta.value.length, ta.value.length);
     wrap.querySelector(".v-save").addEventListener("click", function () {
       set(verseId, { note: ta.value.trim() });
-      wrap.remove(); renderNote(vrs, verseId); toast("Note saved");
+      wrap.remove(); renderNote(vrs, verseId); toast(T.noteSaved);
     });
     wrap.querySelector(".v-del").addEventListener("click", function () {
       set(verseId, { note: "" });
-      wrap.remove(); renderNote(vrs, verseId); toast("Note deleted");
+      wrap.remove(); renderNote(vrs, verseId); toast(T.noteDeleted);
     });
     wrap.querySelector(".v-cancel").addEventListener("click", function () { wrap.remove(); });
     ta.addEventListener("keydown", function (e) {
@@ -221,19 +340,20 @@
     var swatches = COLORS.map(function (c) {
       var on = rec.color === c.id ? " on" : "";
       return '<button class="v-sw v-sw-' + c.id + on + '" data-color="' + c.id +
-        '" title="' + c.label + '" aria-label="Highlight ' + c.label + '"></button>';
+        '" title="' + c.label + '" aria-label="' + T.highlightAs(c.label) + '"></button>';
     }).join("");
     var clearOn = rec.color ? "" : " v-sw-off";
-    swatches += '<button class="v-sw v-sw-clear' + clearOn + '" data-color="" title="No highlight" aria-label="Remove highlight">✕</button>';
+    swatches += '<button class="v-sw v-sw-clear' + clearOn + '" data-color="" title="' +
+      T.noHighlight + '" aria-label="' + T.removeHighlight + '">✕</button>';
 
     menu.innerHTML =
       '<div class="v-menu-ref">' + refOf(verseId).replace(/</g, "&lt;") + "</div>" +
       '<div class="v-sw-row">' + swatches + "</div>" +
       '<div class="v-menu-acts">' +
-        '<button class="v-mi" data-act="note">📝 ' + (rec.note ? "Edit note" : "Add note") + "</button>" +
-        '<button class="v-mi" data-act="share">🔗 Share</button>' +
-        '<button class="v-mi" data-act="image">🖼 Share as image</button>' +
-        '<button class="v-mi" data-act="copytext">📋 Copy verse</button>' +
+        '<button class="v-mi" data-act="note">📝 ' + (rec.note ? T.editNote : T.addNote) + "</button>" +
+        '<button class="v-mi" data-act="share">' + T.share + "</button>" +
+        '<button class="v-mi" data-act="image">' + T.shareImage + "</button>" +
+        '<button class="v-mi" data-act="copytext">' + T.copyVerse + "</button>" +
       "</div>";
 
     document.body.appendChild(menu);
@@ -245,7 +365,7 @@
         set(verseId, { color: color });
         applyColor(vrs, color); refreshTrigger(vrs, verseId);
         closeMenu();
-        toast(color ? "Highlighted" : "Highlight removed");
+        toast(color ? T.highlighted : T.highlightCleared);
       });
     });
     menu.querySelectorAll(".v-mi").forEach(function (b) {
@@ -256,8 +376,8 @@
         else if (act === "share") shareVerse(vrs, verseId);
         else if (act === "image") shareImage(vrs, verseId);
         else if (act === "copytext") {
-          copyText(verseText(vrs) + "\n— " + refOf(verseId) + ", Mister Translation\n" + urlFor(verseId),
-            "Verse copied");
+          copyText(verseText(vrs) + "\n— " + refOf(verseId) + ", " + T.brand + "\n" + urlFor(verseId),
+            T.verseCopied);
         }
       });
     });
@@ -290,12 +410,12 @@
     var txt = verseText(vrs);
     if (navigator.share) {
       navigator.share({
-        title: ref + " — Mister Translation",
+        title: ref + " — " + T.brand,
         text: txt + "\n— " + ref,
         url: url
       }).catch(function () {}); // user cancelled — ignore
     } else {
-      copyText(url, "Link copied");
+      copyText(url, T.linkCopied);
     }
   }
 
@@ -321,7 +441,7 @@
   }
 
   // Draw the verse + reference onto a themed canvas card (dark bg, gold accent,
-  // the Mister Translation wordmark + domain) sized to the verse's length.
+  // this edition's own wordmark + the shared domain) sized to the verse's length.
   function renderCard(text, ref) {
     var S = 2, W = 1080, pad = 96, cw = W - pad * 2;
     var len = text.length;
@@ -377,7 +497,7 @@
     var domainTop = H - bottomPad - domainH;
     var brandTop = domainTop - afterBrand - brandH;
     ctx.font = '700 34px Georgia, "Times New Roman", serif';
-    var p1 = "MiSTeR ", p2 = "Translation";
+    var p1 = T.markA, p2 = T.markB;
     var w1 = ctx.measureText(p1).width, w2 = ctx.measureText(p2).width;
     var startX = W / 2 - (w1 + w2) / 2;
     ctx.textAlign = "left"; ctx.textBaseline = "top";
@@ -394,25 +514,28 @@
   function shareImage(vrs, verseId) {
     var ref = refOf(verseId);
     var canvas = renderCard(verseText(vrs), ref);
-    showImageModal(canvas, ref);
+    // Name the download off the language-neutral stem, not the visible
+    // reference: byte-identical to the old English filenames
+    // ("genesis-1-1.png"), and it stops a Spanish card saving as
+    // "n-meros-14-1.png" once the accents are stripped.
+    showImageModal(canvas, ref, STEM + "-" + verseNum(verseId) + ".png");
   }
 
-  // A small preview overlay: shows the rendered card with Share / Download / Close.
-  function showImageModal(canvas, ref) {
+  // A small preview overlay: shows the rendered card with share / download / close.
+  function showImageModal(canvas, ref, fname) {
     var overlay = document.createElement("div");
     overlay.className = "ml-modal";
     var box = document.createElement("div");
     box.className = "ml-modal-box";
     var img = document.createElement("img");
     img.className = "ml-modal-img";
-    img.alt = ref + " — shareable card";
+    img.alt = T.cardAlt(ref);
     img.src = canvas.toDataURL("image/png");
     var cap = document.createElement("div");
     cap.className = "ml-modal-cap";
-    cap.textContent = ref + " · save or share this card";
+    cap.textContent = T.cardCap(ref);
     var row = document.createElement("div");
     row.className = "ml-modal-row";
-    var fname = ref.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") + ".png";
     function withBlob(cb) { canvas.toBlob(function (b) { if (b) cb(b); }, "image/png"); }
 
     var canShareFiles = false;
@@ -422,29 +545,29 @@
     } catch (e) {}
     if (canShareFiles) {
       var shareBtn = document.createElement("button");
-      shareBtn.className = "v-btn"; shareBtn.textContent = "Share";
+      shareBtn.className = "v-btn"; shareBtn.textContent = T.shareBtn;
       shareBtn.addEventListener("click", function () {
         withBlob(function (b) {
           navigator.share({ files: [new File([b], fname, { type: "image/png" })],
-            title: ref + " — Mister Translation" }).catch(function () {});
+            title: ref + " — " + T.brand }).catch(function () {});
         });
       });
       row.appendChild(shareBtn);
     }
     var dl = document.createElement("button");
-    dl.className = "v-btn"; dl.textContent = "Download";
+    dl.className = "v-btn"; dl.textContent = T.download;
     dl.addEventListener("click", function () {
       withBlob(function (b) {
         var a = document.createElement("a");
         a.href = URL.createObjectURL(b); a.download = fname;
         document.body.appendChild(a); a.click(); a.remove();
         setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-        toast("Image downloaded");
+        toast(T.imageDownloaded);
       });
     });
     row.appendChild(dl);
     var close = document.createElement("button");
-    close.className = "v-btn v-cancel"; close.textContent = "Close";
+    close.className = "v-btn v-cancel"; close.textContent = T.close;
     close.addEventListener("click", function () { teardown(); });
     row.appendChild(close);
 
@@ -460,13 +583,13 @@
   // -------------------------------------------------- build per-verse tools --
   verses.forEach(function (vrs) {
     var verseId = vrs.id;
-    // The opener flows INLINE at the end of the English line (after any "note"
+    // The opener flows INLINE at the end of the verse line (after any "note"
     // link) so it never overlaps the right-aligned Hebrew above it.
-    var anchor = vrs.querySelector(".eng") || vrs.querySelector(".vbody") || vrs;
+    var anchor = verseLine(vrs) || vrs.querySelector(".vbody") || vrs;
     var t = document.createElement("button");
     t.className = "v-tools";
     t.type = "button";
-    t.setAttribute("aria-label", "Notes & sharing for " + refOf(verseId));
+    t.setAttribute("aria-label", T.toolsFor(refOf(verseId)));
     t.innerHTML = "⋯";
     t.addEventListener("click", function (e) {
       e.stopPropagation();
@@ -490,21 +613,21 @@
     box.className = "chap-notes";
     box.innerHTML =
       '<button class="cn-toggle" type="button">' +
-        '<span class="cn-ic">📓</span> My notes for ' + BC.book + " " + BC.ch +
+        '<span class="cn-ic">📓</span> ' + T.myNotesFor(REF) +
         '<span class="cn-count"></span><span class="cn-caret">›</span>' +
       "</button>" +
       '<div class="cn-body" hidden>' +
-        '<textarea class="cn-ta" rows="4" placeholder="A thought on the whole chapter…"></textarea>' +
+        '<textarea class="cn-ta" rows="4" placeholder="' + T.chapterThought + '"></textarea>' +
         '<div class="cn-row">' +
-          '<button class="v-btn cn-save">Save</button>' +
+          '<button class="v-btn cn-save">' + T.save + "</button>" +
           '<span class="cn-saved"></span>' +
           '<span class="cn-spacer"></span>' +
-          '<button class="v-btn cn-share">🔗 Share chapter</button>' +
+          '<button class="v-btn cn-share">' + T.shareChapter + "</button>" +
         "</div>" +
         '<div class="cn-backup">' +
-          "Your notes &amp; highlights live only in this browser. " +
-          '<button class="cn-link cn-export">Export a backup</button> · ' +
-          '<button class="cn-link cn-import">Import</button>' +
+          T.localOnly +
+          '<button class="cn-link cn-export">' + T.exportBackup + "</button> · " +
+          '<button class="cn-link cn-import">' + T.importBackup + "</button>" +
           '<input type="file" class="cn-file" accept="application/json,.json" hidden>' +
         "</div>" +
       "</div>";
@@ -527,9 +650,9 @@
         if (r.note) notes++;
       });
       var parts = [];
-      if (hl) parts.push(hl + " highlight" + (hl > 1 ? "s" : ""));
-      if (notes) parts.push(notes + " note" + (notes > 1 ? "s" : ""));
-      if (getChapter()) parts.push("chapter note");
+      if (hl) parts.push(T.nHighlights(hl));
+      if (notes) parts.push(T.nNotes(notes));
+      if (getChapter()) parts.push(T.chapterNote);
       var c = box.querySelector(".cn-count");
       c.textContent = parts.length ? "  ·  " + parts.join(", ") : "";
     }
@@ -542,14 +665,14 @@
     });
     box.querySelector(".cn-save").addEventListener("click", function () {
       set(CHAPTER_ID, { note: ta.value.trim() });
-      savedEl.textContent = "Saved"; setTimeout(function () { savedEl.textContent = ""; }, 1500);
+      savedEl.textContent = T.saved; setTimeout(function () { savedEl.textContent = ""; }, 1500);
       updateCount();
     });
     box.querySelector(".cn-share").addEventListener("click", function () {
       var url = location.origin + PATH;
-      var title = BC.book + " " + BC.ch + " — Mister Translation";
+      var title = REF + " — " + T.brand;
       if (navigator.share) navigator.share({ title: title, url: url }).catch(function () {});
-      else copyText(url, "Chapter link copied");
+      else copyText(url, T.chapterLinkCopied);
     });
 
     // ---- export / import (whole-site backup) ----
@@ -560,7 +683,7 @@
       a.download = "mister-translation-notes.json";
       document.body.appendChild(a); a.click(); a.remove();
       setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-      toast("Backup downloaded");
+      toast(T.backupDownloaded);
     });
     var fileInput = box.querySelector(".cn-file");
     box.querySelector(".cn-import").addEventListener("click", function () { fileInput.click(); });
@@ -579,9 +702,9 @@
             if (!cur || (inc.updated || 0) >= (cur.updated || 0)) { data[k] = inc; added++; }
           });
           saveAll(data);
-          toast("Imported " + added + " item" + (added === 1 ? "" : "s"));
+          toast(T.imported(added));
           setTimeout(function () { location.reload(); }, 700); // re-render with merged notes
-        } catch (e) { toast("That file couldn't be read"); }
+        } catch (e) { toast(T.unreadable); }
       };
       reader.readAsText(f);
       fileInput.value = "";
