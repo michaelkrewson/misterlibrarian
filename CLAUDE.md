@@ -179,7 +179,14 @@ another.
    had propagated to six places including a brand-new dictionary entry. Re-read every
    asserting sentence and check:
    - **Absolutes are guilty until proven** — "first / only / never / every / the one place."
-     Grep the shipped source for the counter-example *before* keeping the word. Both of
+     Grep the shipped source for the counter-example *before* keeping the word. ⚠️ For a claim
+     about the HEBREW ("occurs once", "the first time in the Bible"), grep the actual text, not
+     a memory or a web search: `python3 tools/heb_search.py <hebrew>` searches all 929 archived
+     OT chapters consonantally (`--book X`, `--count`). It matches **letters, not lemmas**, so
+     read the hits rather than quoting the tally — the calibration case is Nephilim, where the
+     defective spelling returns 20 verses of which only 2 are the word. Numbers 14's four best
+     notes were all found this way, and the same pass killed a false "first time Israel proposes
+     killing its own leaders" that Exodus 17:4 — already on these pages — refutes. Both of
      Numbers 8's worst errors were absolutes ("first time it is lit"; "every other *tenufah*
      waves a piece of an animal" — Leviticus 23:20, already on these pages, waves two LIVE
      lambs).
