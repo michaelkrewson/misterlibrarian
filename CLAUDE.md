@@ -448,19 +448,35 @@ recipient the ENGLISH verse and dropped them on the English page — the most pu
 the site switched languages on its own readers, since a share link is what a Spanish
 reader sends to other Spanish readers.
 
-⚠ **`ES_VERSE_CARDS` is OFF, and the reason is a wall, not a preference.** Per-verse
-og:image cards are ~38 KB each and scale with VERSES, and **GitHub Pages hard-caps a
-published site at 1 GB** (that one is a limit, not a warning; the repo-size figures are
-merely advisory). Measured 2026-08-19: the site is 496 MB without Spanish cards and would
-be **757 MB** with them — 74% of the cap spent at 291 of the Bible's 1,189 chapters.
-English alone at full coverage is already ~1.1 GB, so the card strategy runs out of room
-regardless of Spanish, and 32-colour cards only postpone it (~1.1 GB for both editions).
-Until that is solved the way `CARD_BUDGET_WARN_MB`'s own message says — smaller/JPEG
-cards, per-chapter cards, or a separate image host — Spanish stubs fall back to a
-**Spanish default card** (`img/og-default.es.png`). ⚠ That file is load-bearing, not a
-nicety: the English default is an English *image*, wordmark and tagline both, so falling
-back to it would have put English straight back into the most visible part of a Spanish
-share. Flip `ES_VERSE_CARDS` to True and nothing else needs to change.
+**Verse cards live in a PUBLIC S3 BUCKET, not in this repo** (moved 2026-08-19).
+`mistertranslation-public` / `us-east-1` / prefix `public/verse-cards/`, served from the
+plain bucket URL — **no CloudFront, deliberately** (Michael: "less future maintenance and
+dependencies"; the bonus is that with no CDN there is no cache to invalidate, so a
+re-rendered card is live immediately). Credentials: `~/.mstr-trader/cards.env`, mode 600,
+a **different key from `backup.env`** — that one writes the private archive bucket holding
+the bank/tax/medical records, and the two must never be shared. The key has PutObject +
+ListBucket and deliberately **not** DeleteObject.
+
+⚠ **Why they moved, so nobody moves them back:** cards are ~38 KB each and scale with
+VERSES, and **GitHub Pages hard-caps a published site at 1 GB** — a limit, not a warning,
+unlike the repo-size numbers usually quoted. At 291 of 1,189 chapters the site was 507 MB;
+English alone at full coverage is ~1.1 GB, over the cap by itself. Moving the cards out
+took the site to **~174 MB** and, far more importantly, stopped it growing.
+
+⚠ **`img/v/.cards.json` is TRACKED, and that is load-bearing.** It is the record of which
+cards are published, and `_ensure_verse_card` consults it BEFORE the network — a matching
+hash returns the URL with no S3 call. That is what lets a build on a machine with no
+credentials still emit correct `og:image` tags for every published card. Without it, one
+credential-less build would silently strip the verse art off every share on the site. Only
+a NEW or CHANGED card touches S3, and if that upload fails only that ONE card falls back to
+the default.
+
+`ES_VERSE_CARDS` is now **True** — turned on the same day, because it was only ever OFF for
+as long as the cards lived in the repo. The bucket has no cap, so there is no reason left to
+give the Spanish edition worse art. The **Spanish default card** (`img/og-default.es.png`)
+stays as the fallback and is still load-bearing: the English default is an English *image*,
+wordmark and tagline both, so falling back to it would put English straight back into the
+most visible part of a Spanish share.
 
 The Spanish book name is **not** duplicated in JS. `reader-notes.js` takes the reference a
 reader sees from the page's own `<title>` ("Números 14 — La Traducción Mister"), falling
