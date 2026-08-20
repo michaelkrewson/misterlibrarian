@@ -50,6 +50,7 @@ SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
 SITE_URL = "https://mistertranslation.com"
 OG_IMAGE = f"{SITE_URL}/img/og-default.png"   # branded default link-preview image
+OG_IMAGE_ES = f"{SITE_URL}/img/og-default.es.png"   # …and its Spanish twin
 
 # FormSubmit endpoint for the Ask-a-Question form. This is the activated form's
 # random alias (delivers to the librarian's gmail without exposing the address in
@@ -2591,8 +2592,16 @@ def chrono_strip(slug):
 
 
 VERSE_DIR = "v"   # per-verse share stubs live under /v/
-_VERSE_STUB_RE = re.compile(
-    r'id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">(.*?)</div>', re.S)
+def _verse_stub_re(lang="en"):
+    """Pull (verse id, verse line) pairs out of a built chapter. The line is
+    `.eng` on the English edition and `.esp` on the Spanish one — the same split
+    reader-notes.js and audio-reader.js branch on."""
+    return re.compile(
+        r'id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="%s">(.*?)</div>'
+        % ("esp" if lang == "es" else "eng"), re.S)
+
+
+_VERSE_STUB_RE = _verse_stub_re("en")
 
 
 def _trim_desc(t, limit=158):
@@ -2707,15 +2716,26 @@ def _plain(s):
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
 
-def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image):
+def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image, lang="en"):
     """A tiny share-stub page: crawlers read this verse's own OG tags; humans are
     redirected instantly to the real chapter at the verse anchor. `noindex,follow`
-    keeps these thin pages out of search while the canonical points at the chapter."""
-    title = html.escape(f"{ref} · Mister Translation", quote=True)
+    keeps these thin pages out of search while the canonical points at the chapter.
+
+    ⚠ The Spanish edition gets its OWN stubs (`<stem>-<v>.es.html`). Until
+    2026-08-19 there was one language-neutral stub per verse, so a Spanish reader
+    who shared Números 14:1 handed the recipient a card with the ENGLISH verse on
+    it that then redirected to the ENGLISH chapter — the last place the Spanish
+    site silently switched languages on its own readers, and the most public one,
+    since a share link is what a Spanish reader sends to other Spanish readers."""
+    es = lang == "es"
+    brand = "La Traducción Mister" if es else "Mister Translation"
+    opening = "Abriendo" if es else "Opening"
+    tail = "en La Traducción Mister…" if es else "in the Mister Translation…"
+    title = html.escape(f"{ref} · {brand}", quote=True)
     de = html.escape(desc, quote=True)
     tgt = html.escape(target, quote=True)   # e.g. /genesis-1.html#v3 (root-relative)
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -2724,7 +2744,7 @@ def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image):
 <link rel="canonical" href="{SITE_URL}/{chfile}"/>
 <link rel="icon" href="{FAVICON}"/>
 <meta name="description" content="{de}"/>
-<meta property="og:site_name" content="Mister Translation"/>
+{'<meta property="og:locale" content="es_ES"/>' + chr(10) if es else ""}<meta property="og:site_name" content="{brand}"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="{title}"/>
 <meta property="og:description" content="{de}"/>
@@ -2739,7 +2759,7 @@ def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image):
 <style>body{{background:#060b14;color:#94a3b8;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;text-align:center;padding:80px 20px}}a{{color:#e8c968}}</style>
 </head>
 <body>
-<p>Opening <a href="{tgt}">{html.escape(ref)}</a> in the Mister Translation…</p>
+<p>{opening} <a href="{tgt}">{html.escape(ref)}</a> {tail}</p>
 </body>
 </html>
 """
@@ -2775,7 +2795,7 @@ def _card_wrap(draw, text, font, maxw):
     return lines
 
 
-def _render_verse_card(book, num, v, text, path):
+def _render_verse_card(book, num, v, text, path, lang="en"):
     """Render a 1200x630 og:image verse card (dark gradient + gold frame, the
     verse centred, its reference, and the wordmark) as a quantized PNG (~30KB).
     Returns True, or False if Pillow / the fonts aren't available — the caller
@@ -2817,7 +2837,7 @@ def _render_verse_card(book, num, v, text, path):
             lines[-1] = lines[-1].rstrip(".,;:") + " …"
     verseH = len(lines) * lh
 
-    ref = f"{book} {num}:{v}".upper()
+    ref = f"{ES_BOOK.get(book, book) if lang == 'es' else book} {num}:{v}".upper()
     rf = _card_font("sans_b", 30); refH = 38; divH = 4; gap1 = 30; gap2 = 26
     blockH = verseH + gap1 + divH + gap2 + refH
     top_zone, bot_zone = 92, H - 135
@@ -2833,7 +2853,10 @@ def _render_verse_card(book, num, v, text, path):
         d.text((cx, y), c, font=rf, fill=(232, 201, 104), anchor="la")
         cx += d.textlength(c, font=rf) + track
 
-    wf = _card_font("serif_b", 34); p1, p2 = "Mister ", "Translation"
+    # Each edition signs its own card with its own wordmark, gold on the second
+    # half, exactly as the site header and reader-notes.js's share card do.
+    wf = _card_font("serif_b", 34)
+    p1, p2 = ("La Traducción ", "Mister") if lang == "es" else ("Mister ", "Translation")
     w1 = d.textlength(p1, font=wf); w2 = d.textlength(p2, font=wf); sx = W / 2 - (w1 + w2) / 2
     d.text((sx, H - 100), p1, font=wf, fill=(247, 242, 226), anchor="la")
     d.text((sx + w1, H - 100), p2, font=wf, fill=(232, 201, 104), anchor="la")
@@ -2844,11 +2867,18 @@ def _render_verse_card(book, num, v, text, path):
     return True
 
 
-def _render_default_card(path):
-    """Render the branded default og:image (img/og-default.png) — the same dark
-    gradient + gold frame as the verse cards, with the wordmark, a divider, the
-    two-line tagline, and the domain. Regenerated by the build so the asset stays
-    in sync with the code (returns False if Pillow / the fonts aren't available)."""
+def _render_default_card(path, lang="en"):
+    """Render the branded default og:image (img/og-default.png, and its Spanish
+    twin og-default.es.png) — the same dark gradient + gold frame as the verse
+    cards, with the wordmark, a divider, the two-line tagline, and the domain.
+    Regenerated by the build so the asset stays in sync with the code (returns
+    False if Pillow / the fonts aren't available).
+
+    ⚠ The Spanish one is not a nicety. Spanish verse stubs fall back to the
+    default card (ES_VERSE_CARDS is off), and the English default is an English
+    IMAGE — wordmark and tagline both — so falling back to it would put English
+    right back into the most visible part of a Spanish share, which is the whole
+    thing the Spanish stubs exist to fix. One file, ~35 KB."""
     try:
         from PIL import Image, ImageDraw, ImageFilter
     except Exception:
@@ -2872,8 +2902,13 @@ def _render_default_card(path):
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([34, 34, W - 34, H - 34], radius=26, outline=(92, 84, 54), width=2)
 
+    es = lang == "es"
     # wordmark: two-tone, centred, ~upper third
-    wf = _card_font("serif_b", 74); p1, p2 = "Mister ", "Translation"
+    wf = _card_font("serif_b", 74)
+    p1, p2 = ("La Traducción ", "Mister") if es else ("Mister ", "Translation")
+    if es:                       # the longer Spanish wordmark needs to fit 1200px
+        while d.textlength(p1 + p2, font=wf) > W - 150 and wf.size > 44:
+            wf = _card_font("serif_b", wf.size - 4)
     w1 = d.textlength(p1, font=wf); w2 = d.textlength(p2, font=wf); sx = W / 2 - (w1 + w2) / 2
     d.text((sx, 205), p1, font=wf, fill=(247, 242, 226), anchor="lm")
     d.text((sx + w1, 205), p2, font=wf, fill=(232, 201, 104), anchor="lm")
@@ -2881,10 +2916,13 @@ def _render_default_card(path):
     d.rectangle([W / 2 - 48, 278, W / 2 + 48, 282], fill=(232, 201, 104))   # divider
 
     sf = _card_font("sans", 30)                        # two-line tagline
-    d.text((W / 2, 332), "A fresh translation of the Bible —",
-           font=sf, fill=(200, 206, 214), anchor="mm")
-    d.text((W / 2, 380), "from the Hebrew and Greek, verse by verse.",
-           font=sf, fill=(200, 206, 214), anchor="mm")
+    l1, l2 = (("Una traducción nueva de la Biblia —",
+               "desde el hebreo y el griego, versículo por versículo.")
+              if es else
+              ("A fresh translation of the Bible —",
+               "from the Hebrew and Greek, verse by verse."))
+    d.text((W / 2, 332), l1, font=sf, fill=(200, 206, 214), anchor="mm")
+    d.text((W / 2, 380), l2, font=sf, fill=(200, 206, 214), anchor="mm")
 
     d.text((W / 2, 452), "mistertranslation.com",
            font=_card_font("sans", 21), fill=(133, 147, 166), anchor="mm")
@@ -2901,6 +2939,29 @@ def _render_default_card(path):
 # trusted and seeded, so this ships without re-rendering the ~1,200 existing cards.
 CARD_TEMPLATE_VERSION = "1"   # bump to force-regenerate EVERY verse card after a card-design change
 CARD_BUDGET_WARN_MB = 700     # GitHub Pages publishes ~1 GB max; warn before the cards get there
+
+# Does the SPANISH edition get its own per-verse og:image cards?
+#
+# Its share stubs always exist and are always Spanish — right verse text in the
+# preview, right chapter at the other end. This switch is only about the PICTURE.
+#
+# OFF, and measured (2026-08-19), because the numbers say the card strategy is
+# already near its ceiling and Spanish is not where the remaining room should go:
+#   · published site today, no Spanish cards ......  496 MB
+#   · with Spanish cards (7,018 × ~38 KB) .........  757 MB
+#   · GitHub Pages HARD limit .....................  1 GB, not a warning
+# That is 74% of the cap spent at 291 of the Bible's 1,189 chapters. The cards
+# scale with VERSES, so English alone at full coverage is ~31,100 × 38 KB ≈ 1.1 GB
+# — over the cap by itself, before Spanish doubles it. Dropping to 32 colours
+# (~19 KB) only postpones it: ~1.1 GB for both editions at full coverage.
+# So the real fix is the one CARD_BUDGET_WARN_MB's own message already names —
+# smaller/JPEG cards, per-chapter cards, or a separate image host — and until
+# that happens, spending 261 MB to give Spanish the same art buys nothing the
+# stub does not already deliver. With this OFF a shared Spanish verse falls back
+# to the branded default card; the title and description are still that Spanish
+# verse, which is the part that was actually broken.
+# Flip to True to render them; nothing else needs to change.
+ES_VERSE_CARDS = False
 _CARD_MANIFEST = None
 _CARD_MANIFEST_DIRTY = False
 
@@ -2929,13 +2990,13 @@ def _set_card_hash(key, h):
     _CARD_MANIFEST_DIRTY = True
 
 
-def _ensure_verse_card(book, num, v, stem, text, card_rel):
+def _ensure_verse_card(book, num, v, stem, text, card_rel, lang="en"):
     """(Re)render the verse's og:image card only when needed. A hash MISMATCH (verse
     text or CARD_TEMPLATE_VERSION changed) forces a re-render; an existing card with no
     manifest entry is trusted and seeded. Returns card_rel, or None if Pillow/fonts are
     unavailable (the caller then falls back to the branded default og:image)."""
     card_path = os.path.join(OUT, card_rel)
-    key = f"{stem}-{v}"
+    key = f"{stem}-{v}" + (".es" if lang == "es" else "")
     want = _card_hash(text)
     have = _card_manifest().get(key)
     if os.path.exists(card_path):
@@ -2944,7 +3005,7 @@ def _ensure_verse_card(book, num, v, stem, text, card_rel):
         if have is None:                 # pre-existing card from before the manifest — trust + seed
             _set_card_hash(key, want)
             return card_rel
-    if _render_verse_card(book, num, v, text, card_path):
+    if _render_verse_card(book, num, v, text, card_path, lang):
         _set_card_hash(key, want)
         return card_rel
     return None
@@ -2970,34 +3031,46 @@ def report_card_budget():
     print(msg)
 
 
-def build_verse_stubs(book, num, content):
+def build_verse_stubs(book, num, content, lang="en"):
     """Emit one /v/<book>-<ch>-<v>.html share-stub per verse in this chapter, so a
-    shared verse link unfurls with THAT verse's text (crawlers ignore #fragments)."""
+    shared verse link unfurls with THAT verse's text (crawlers ignore #fragments).
+
+    The Spanish edition emits its own `<stem>-<v>.es.html` alongside, carrying the
+    Spanish verse and redirecting to the Spanish chapter — see _verse_stub_html.
+    The STEM stays language-neutral either way, so the two stubs sit next to each
+    other and a chapter is still one identity."""
+    es = lang == "es"
     chfile = chapter_filename(book, num)   # e.g. genesis-1.html
     stem = chfile[:-5]                       # genesis-1  (matches reader-notes.js)
+    if es:
+        chfile = stem + ".es.html"
+    sfx = ".es" if es else ""
     vdir = os.path.join(OUT, VERSE_DIR)
     cdir = os.path.join(OUT, "img", VERSE_DIR)
     os.makedirs(vdir, exist_ok=True)
     os.makedirs(cdir, exist_ok=True)
-    for m in _VERSE_STUB_RE.finditer(content):
+    for m in _verse_stub_re(lang).finditer(content):
         vid = m.group(1)
         v = vid.rsplit("-", 1)[-1] if "-" in vid else vid[1:]
         eng = re.sub(r'<a class="notelink".*?</a>', "", m.group(2), flags=re.S)
         text = _plain(eng)
         if not text:
             continue
-        ref = f"{book} {num}:{v}"
+        ref = f"{ES_BOOK.get(book, book) if es else book} {num}:{v}"
         desc = text if len(text) <= 200 else text[:197].rsplit(" ", 1)[0] + "…"
         target = f"/{chfile}#{vid}"
-        stub_url = f"{SITE_URL}/{VERSE_DIR}/{stem}-{v}.html"
+        stub_url = f"{SITE_URL}/{VERSE_DIR}/{stem}-{v}{sfx}.html"
         # per-verse og:image card — reused across builds, but re-rendered when the verse
         # text changed (see _ensure_verse_card); falls back to the branded default if
         # Pillow/fonts are absent.
-        card_rel = _ensure_verse_card(book, num, v, stem, text,
-                                      f"img/{VERSE_DIR}/{stem}-{v}.png")
-        og_image = f"{SITE_URL}/{card_rel}" if card_rel else OG_IMAGE
-        out = _verse_stub_html(ref, desc, target, chfile, stub_url, og_image)
-        open(os.path.join(vdir, f"{stem}-{v}.html"), "w", encoding="utf-8").write(out)
+        card_rel = (_ensure_verse_card(book, num, v, stem, text,
+                                       f"img/{VERSE_DIR}/{stem}-{v}{sfx}.png", lang)
+                    if (ES_VERSE_CARDS or not es) else None)
+        og_image = (f"{SITE_URL}/{card_rel}" if card_rel
+                    else (OG_IMAGE_ES if es else OG_IMAGE))
+        out = _verse_stub_html(ref, desc, target, chfile, stub_url, og_image, lang)
+        open(os.path.join(vdir, f"{stem}-{v}{sfx}.html"), "w",
+             encoding="utf-8").write(out)
 
 
 
@@ -4770,6 +4843,7 @@ function toggleHeb(){{
         out = out.replace("</head>", _chapter_jsonld(book, num, _es_desc, es_file,
                                                      lang="es", label=es_title) + "\n</head>", 1)
         open(os.path.join(OUT, es_file), "w", encoding="utf-8").write(out)
+        build_verse_stubs(book, num, content, "es")
         built.append((slug, book, num, es_title))
 
     # Spanish home / índice
@@ -6076,6 +6150,7 @@ def main():
     check_chron_coverage(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
+    _render_default_card(os.path.join(OUT, "img", "og-default.es.png"), "es")
     build_chapter_pages(chapters)
     build_toc()
     build_reading()

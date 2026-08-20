@@ -439,11 +439,28 @@ so anything they render or read has to branch. Two things must; one must not.
   dropped. `PATH` itself is still the right thing for the chapter share URL, which must link
   to the edition actually being read; only the *keys* are neutral.
 
-⚠ **The one place the Spanish edition still hands you English**: the per-verse 🔗 share
-link. `/v/` stubs are language-neutral by design, so `/v/numbers-14-1.html` carries the
-English verse in its Open Graph card and redirects to `numbers-14.html`. A Spanish reader
-sharing a Spanish verse therefore shares an English one. Fixing it means Spanish stubs
-(~3,800 more pages) — a build-scope decision, deliberately open, on the to-do list.
+**Each edition has its OWN `/v/` share stub** (`numbers-14-1.html` /
+`numbers-14-1.es.html`, fixed 2026-08-19). The STEM stays neutral so the pair sits
+together, but the stub is not: it carries that edition's verse in its Open Graph card,
+its own `lang`/`og:locale`/site name, and redirects to that edition's chapter. Before
+this there was one neutral stub, so a Spanish reader sharing Números 14:1 handed the
+recipient the ENGLISH verse and dropped them on the English page — the most public place
+the site switched languages on its own readers, since a share link is what a Spanish
+reader sends to other Spanish readers.
+
+⚠ **`ES_VERSE_CARDS` is OFF, and the reason is a wall, not a preference.** Per-verse
+og:image cards are ~38 KB each and scale with VERSES, and **GitHub Pages hard-caps a
+published site at 1 GB** (that one is a limit, not a warning; the repo-size figures are
+merely advisory). Measured 2026-08-19: the site is 496 MB without Spanish cards and would
+be **757 MB** with them — 74% of the cap spent at 291 of the Bible's 1,189 chapters.
+English alone at full coverage is already ~1.1 GB, so the card strategy runs out of room
+regardless of Spanish, and 32-colour cards only postpone it (~1.1 GB for both editions).
+Until that is solved the way `CARD_BUDGET_WARN_MB`'s own message says — smaller/JPEG
+cards, per-chapter cards, or a separate image host — Spanish stubs fall back to a
+**Spanish default card** (`img/og-default.es.png`). ⚠ That file is load-bearing, not a
+nicety: the English default is an English *image*, wordmark and tagline both, so falling
+back to it would have put English straight back into the most visible part of a Spanish
+share. Flip `ES_VERSE_CARDS` to True and nothing else needs to change.
 
 The Spanish book name is **not** duplicated in JS. `reader-notes.js` takes the reference a
 reader sees from the page's own `<title>` ("Números 14 — La Traducción Mister"), falling

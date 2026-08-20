@@ -244,8 +244,14 @@
   // Open Graph tags so the link unfurls with the verse text, then redirects a human
   // straight to the chapter anchor. STEM matches build.py's chapter_filename stem.
   var STEM = baseStem();                                       // "genesis-1"
+  // ⚠ The STEM is language-neutral, but the STUB is not. Each edition has its own
+  // (`numbers-14-1.html` / `numbers-14-1.es.html`) carrying that edition's verse in
+  // its Open Graph card and redirecting to that edition's chapter. Sharing the
+  // neutral one from a Spanish page — which is what happened until 2026-08-19 —
+  // handed the recipient the English verse and dropped them on the English page.
+  var STUB_SFX = ES ? ".es" : "";
   function urlFor(verseId) {
-    return location.origin + "/" + "v/" + STEM + "-" + verseNum(verseId) + ".html";
+    return location.origin + "/v/" + STEM + "-" + verseNum(verseId) + STUB_SFX + ".html";
   }
 
   // Clean text of a verse, in whichever language this edition is — drops the
@@ -555,7 +561,7 @@
     // reference: byte-identical to the old English filenames
     // ("genesis-1-1.png"), and it stops a Spanish card saving as
     // "n-meros-14-1.png" once the accents are stripped.
-    showImageModal(canvas, ref, STEM + "-" + verseNum(verseId) + ".png");
+    showImageModal(canvas, ref, STEM + "-" + verseNum(verseId) + STUB_SFX + ".png");
   }
 
   // A small preview overlay: shows the rendered card with share / download / close.
