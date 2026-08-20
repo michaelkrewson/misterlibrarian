@@ -93,7 +93,7 @@ DICTIONARY = [
     ("magoi", "magoi", "μάγοι", "magoi", "MAGI — a hereditary PRIESTLY CASTE of the Medes and Persians: keepers of ritual, interpreters of dreams, and readers of the sky. The Greek translations of Daniel use the word for one of the classes of Babylonian diviners a king summons, the guild over which Daniel himself was set (Daniel 2:48). By the first century it had also loosened into plain 'sorcerer' (so Acts, of Bar-Jesus), which is where English 'magic' comes from. ⚠ So the men of Matthew 2 are neither philosophers nor monarchs but foreign astrologer-priests, and Matthew never says how many there were: three GIFTS became three givers, and Psalm 72:10-11 with Isaiah 60:3-6 made the givers kings. KJV/Geneva/Douay 'wise men'; ASV 'Wise-men'; NIV 'Magi'; NWT 'astrologers' — the bluntest about the trade, though it also passes a judgment the Greek does not.", ("Matthew", 2, 1)),
     ("proskyneo", "proskyneō", "προσκυνέω", "proskyneō", "To BOW DOWN, to prostrate oneself, to do homage — a body-word before it is a theological one. Greek used it of gods and of kings alike, and Matthew uses it both ways: of a slave on his face before his master (18:26) and of the disciples in the boat saying 'truly you are the Son of God' (14:33). ⚠ The shelf divides on it and the division is doctrinal. KJV/ASV/NIV read 'worship' — defensible, but note that the KJV also has the slave 'worship' his lord in 18:26, because in 1611 the English word still covered homage to a human superior, which it no longer does. NWT reads 'do obeisance', lexically available and closer to the gesture, but applies it to Jesus while keeping 'worship' for God — a distinction the Greek word does not itself make. This translation prints the gesture in every mouth that uses it, Herod's included (2:8), and leaves what the gesture means to the reader.", ("Matthew", 2, 2)),
     ("tharseo", "tharsei", "θάρσει", "tharsei", "TAKE HEART, take courage — the imperative Jesus uses to both the paralyzed man and the bleeding woman in the same chapter (Matthew 9:2, 22), the one word linking two otherwise very different healings. It is not mere comfort; in both places it opens a sentence that immediately follows with the reason for courage — forgiveness, or healed faith. KJV renders it 'be of good cheer' both times, which keeps the echo but softens the command; NWT 'take courage.' The same word meets the disciples again on the water, from Jesus himself this time: 'take heart, it is I' (14:27) — panic met with the identical command, whichever side of the boat it comes from.", ("Matthew", 9, 2)),
-    ("kraspedon", "kraspedon", "κράσπεδον", "kraspedon", "FRINGE, tassel — the word the Greek Old Testament uses for the TASSELS the Law commands on the four corners of a garment (Numbers 15:38-39; Deuteronomy 22:12, neither yet on these pages), which means Matthew 9:20 is quietly showing Jesus wearing them: the bleeding woman touches his kraspedon, not merely 'his robe.' ⚠ The word returns twice more in this Gospel — crowds beg only to touch it at 14:36, and Jesus criticizes Pharisees for lengthening theirs for show at 23:5 — three appearances, three different lights on the same detail of dress.", ("Matthew", 9, 20)),
+    ("kraspedon", "kraspedon", "κράσπεδον", "kraspedon", "FRINGE, tassel — the word the Greek Old Testament uses for the TASSELS the Law commands on the four corners of a garment (<a href=\"numbers-15.html#n15-37\">Numbers 15:38-39</a>, already on these pages; Deuteronomy 22:12, not yet), which means Matthew 9:20 is quietly showing Jesus wearing them: the bleeding woman touches his kraspedon, not merely 'his robe.' ⚠ The word returns twice more in this Gospel — crowds beg only to touch it at 14:36, and Jesus criticizes Pharisees for lengthening theirs for show at 23:5 — three appearances, three different lights on the same detail of dress.", ("Matthew", 9, 20)),
     ("splanchnizomai", "splanchnizomai", "σπλαγχνίζομαι", "splanchnizomai", "TO HAVE COMPASSION, at the gut — built on splanchna, the inward organs (English 'splanchnic' descends from it), so the verb is not sympathy observed from a distance but something felt in the body. Matthew 9:36 is its first use in this Gospel: Jesus sees the crowds, 'harassed and thrown down like sheep without a shepherd,' and is moved AT THE INSIDES. ⚠ It recurs at moments of real need — before feeding the five thousand (14:14) and the four thousand (15:32), for two blind men (20:34), never as a mere narrative aside.", ("Matthew", 9, 36)),
     ("sozo", "sōzō", "σῴζω", "sōzō", "TO SAVE — and, in the same breath, TO HEAL; Greek does not force a choice between the two senses the way English does. It is the verb of Jesus' own name, unfolded at his naming: 'you shall call his name Jesus, for he will SAVE (sōsei) his people from their sins' (Matthew 1:21). Matthew 9 puts the same verb in three mouths in three verses over the bleeding woman — her own hope ('I will be sozō,' 9:21), Jesus' verdict ('your faith has sesōken you,' 9:22), and the narrator's confirmation ('the woman was esōthē,' 9:22) — so a chapter about physical healing keeps sounding, in its own vocabulary, exactly like the larger promise the name itself made.", ("Matthew", 9, 21)),
     ("eirene", "eirēnē", "εἰρήνη", "eirēnē", "PEACE — and, in Matthew 10, something almost sent by hand: a disciple's spoken peace 'comes upon' a worthy house or, finding none, 'returns' to the one who spoke it (10:13), as if the blessing were a physical thing that cannot simply vanish unclaimed. ⚠ The same chapter turns the word inside out twenty-one verses later — 'I did not come to bring peace, but a sword' (10:34) — and this translation prints both without smoothing the collision: a household's peace can be given and returned like a possession, and the peace of the whole earth is, in the same breath, what Jesus says he did not come to bring.", ("Matthew", 10, 13)),
@@ -288,7 +288,7 @@ DICTIONARY = [
      "FAT — specifically the hard SUET packed around the internal organs (kidneys, liver, entrails), not the marbled fat within meat itself, and a distinct word from shemen, the pourable OIL of Leviticus 2's grain offerings. Leviticus 1 already burned an animal's fat as part of the whole burnt-offering without pausing to name it; here, in the peace-offering, chelev becomes the WHOLE of what reaches the altar (Leviticus 3:3-4, 9-10, 14-16) — everything else is eaten — and the chapter closes by making that boundary permanent: 'you shall eat neither fat nor blood' (3:17), a perpetual statute restated with a real penalty attached later in the book (Leviticus 7:23, 25, not yet on these pages).", ("Leviticus", 3, 3)),
     # ---- Leviticus 4 (Hebrew) ----
     ("shegagah", "shegagah", "שְׁגָגָה", "shegagah",
-     "THROUGH ERROR, unintentionally — the word that bounds the whole sin-offering system (Leviticus 4:2, 22, 27): every case this chapter legislates is a genuine mistake, not defiance. A different, harsher category exists for sinning 'with a high hand' — deliberately, in open rebellion — which this system does not cover at all: 'that person shall be utterly cut off' (Numbers 15:30-31, not yet on these pages), no offering, no atonement offered. The whole architecture of Leviticus 4 rests on this one distinction: error can be brought to the altar; defiance cannot.", ("Leviticus", 4, 2)),
+     "THROUGH ERROR, unintentionally — the word that bounds the whole sin-offering system (Leviticus 4:2, 22, 27): every case this chapter legislates is a genuine mistake, not defiance. A different, harsher category exists for sinning 'with a high hand' — deliberately, in open rebellion — which this system does not cover at all: 'that person shall be utterly cut off' (<a href=\"numbers-15.html#n15-30\">Numbers 15:30-31</a>, now on these pages), no offering, no atonement offered. The whole architecture of Leviticus 4 rests on this one distinction: error can be brought to the altar; defiance cannot.", ("Leviticus", 4, 2)),
     ("parad", "parad", "פָּרַד", "parad",
      "To separate — Genesis 13's hinge verb: Abram proposes it (13:9), Lot enacts it (13:11), and the renewed land promise arrives precisely 'after' it happens (13:14).", (13, 9)),
     ("qadash", "qadash", "קָדַשׁ", "qadash",
@@ -1212,7 +1212,7 @@ DICTIONARY = [
     ("chatzotzrah", "chatzotzrah", "חֲצוֹצְרָה", "chatzotzrot",
      "A TRUMPET — and specifically NOT the shofar, the curved ram's horn most readers picture. A chatzotzrah is a straight metal instrument; Numbers 10:2 (already on these pages) has Moses make two of them from silver, of miqshah, HAMMERED work — the identical term used for the gold lampstand (Exodus 25:31; Numbers 8:4, both already on these pages), so trumpet and lampstand are made by the same technique out of different metals. The two words are kept distinct throughout this translation because the Hebrew keeps them distinct: the shofar sounds at Sinai and at the jubilee, while the chatzotzrot are priestly instruments belonging to the tabernacle's own routine, blown only by Aaron's sons (10:8). ⚠ Their most famous depiction is not Jewish but Roman: the Arch of Titus in Rome carves the temple trumpets among the spoils carried out of Jerusalem in AD 70, straight-tubed, exactly as the name implies.", ("Numbers", 10, 2)),
     ("zadon", "zadon", "זָדוֹן", "zadon",
-     "INSOLENCE, presumptuous arrogance — not ordinary pride but the overreaching kind that thinks itself untouchable. From the root zid, 'to boil up, act presumptuously' — the same root behind the 'high-handed' (bezadon) deliberate sin that has no sacrifice (Numbers 15:30) and the 'proud/raging' waters that would have swept the psalmist away (Psalm 124:5). ⚠ It is Edom's one named sin in the FIRST half of Obadiah: 'the ZADON of your heart has deceived you' (1:3) — a security so complete, up in the rock, that it has curdled into contempt. Distinct from the ordinary word for pride (ga'avah); the shelf mostly levels it to 'pride' (KJV/NIV), but the word is sharper.", ("Obadiah", 1, 3)),
+     "INSOLENCE, presumptuous arrogance — not ordinary pride but the overreaching kind that thinks itself untouchable. From the root zid, 'to boil up, act presumptuously' — the same root behind the 'high-handed' (bezadon) deliberate sin that has no sacrifice (<a href=\"numbers-15.html#n15-30\">Numbers 15:30</a>, already on these pages) and the 'proud/raging' waters that would have swept the psalmist away (Psalm 124:5). ⚠ It is Edom's one named sin in the FIRST half of Obadiah: 'the ZADON of your heart has deceived you' (1:3) — a security so complete, up in the rock, that it has curdled into contempt. Distinct from the ordinary word for pride (ga'avah); the shelf mostly levels it to 'pride' (KJV/NIV), but the word is sharper.", ("Obadiah", 1, 3)),
     ("gemul", "gemul", "גְּמוּל", "gemul",
      "A DEALING that comes back — a recompense, what one has done returning onto one's own head. From gamal, 'to deal out, requite' (also 'to wean, ripen' — to bring a thing to its completion). ⚠ It is the hinge of Obadiah: 'as you have done, it will be done to you; your GEMUL will return upon your own head' (1:15) — the boomerang of exact, measure-for-measure justice, the deed circling back to its doer. The same principle the Sermon on the Mount restates ('the measure you give will be the measure you get,' Matthew 7:2). KJV 'thy reward shall return'; NIV 'your deeds will return.'", ("Obadiah", 1, 15)),
     ("moshia", "moshia (pl. moshi'im)", "מוֹשִׁיעַ", "moshia",
@@ -2054,8 +2054,23 @@ DICTIONARY = [
      "<em>vattazidu</em>, from <em>zid</em>.",
      ("Numbers", 14, 44)),
     ("tur", "tur", "תּוּר", "tur",
-     "TO SCOUT OUT, explore, reconnoitre — the governing verb of <a href=\"numbers-13.html#n13-1\">Numbers 13</a> (already on these pages), where it occurs seven times in one chapter (vv2, 16, 17, 21, 25, and twice in v32). \u26a0 It is NOT the ordinary Hebrew word for spying. That is <em>ragal</em>, literally to go about on foot, the word used of the men Joshua sends to Jericho; and Deuteronomy uses a third, <em>chafar</em>, to DIG or search out. All three describe the same mission, and the difference is visible on these pages: <a href=\"deuteronomy-1.html\">Deuteronomy 1:22</a> has the people asking Moses to <em>chafar</em> the land — dig it out, survey it — and v24 reports that what they actually did was <em>ragal</em> it, spy it. Numbers uses neither, only <em>tur</em>, which elsewhere carries the sense of exploring or seeking something out. The modern Hebrew word for a tourist descends from it. This translation reads 'scout out' throughout so the one Hebrew verb stays visible as one word; most of the shelf alternates 'spy out' and 'search' within the same chapter.",
+     "TO SCOUT OUT, explore, reconnoitre — the governing verb of <a href=\"numbers-13.html#n13-1\">Numbers 13</a> (already on these pages), where it occurs seven times in one chapter (vv2, 16, 17, 21, 25, and twice in v32). \u26a0 It is NOT the ordinary Hebrew word for spying. That is <em>ragal</em>, literally to go about on foot, the word used of the men Joshua sends to Jericho; and Deuteronomy uses a third, <em>chafar</em>, to DIG or search out. All three describe the same mission, and the difference is visible on these pages: <a href=\"deuteronomy-1.html\">Deuteronomy 1:22</a> has the people asking Moses to <em>chafar</em> the land — dig it out, survey it — and v24 reports that what they actually did was <em>ragal</em> it, spy it. Numbers uses neither, only <em>tur</em>, which elsewhere carries the sense of exploring or seeking something out. The modern Hebrew word for a tourist descends from it. This translation reads 'scout out' throughout so the one Hebrew verb stays visible as one word; most of the shelf alternates 'spy out' and 'search' within the same chapter. ⚠ <strong>And it has one more appearance, two chapters later, which is the reason the policy matters.</strong> After seven occurrences in Numbers 13 and five in <a href=\"numbers-14.html#v14-34\">Numbers 14</a> — twelve in two chapters, every one about the men sent to look at Canaan — the verb turns up once more at <a href=\"numbers-15.html#n15-37\">Numbers 15:39</a>, negated, and no longer about a country: <em>v'lo taturu acharei levavkhem v'acharei eineikhem</em>, 'and you shall not go SCOUTING after your own heart and after your own eyes.' The tassels are commanded against the same verb that destroyed the generation. Not one version on either shelf prints it — KJV and Geneva 'seek not after', ASV 'follow not after', NIV 'chasing after the lusts of', NWT 1984 'go about following', RV60 'no miréis en pos de', TNM 'andar siguiendo' — so the connection is invisible in every English and Spanish Bible checked here, and visible in the Hebrew at a glance.",
      ("Numbers", 13, 2)),
+    ("tsitsit", "tsitsit", "צִיצִת", "tsitsit",
+     "A TASSEL — the twisted fringe commanded at the four corners of a garment (<a href=\"numbers-15.html#n15-37\">Numbers 15:38-39</a>), and repeated, without the blue, at Deuteronomy 22:12 (not yet on these pages). The noun is used elsewhere of a LOCK of hair — Ezekiel 8:3 has a hand taking the prophet by a <em>tsitsit</em> of his head — so the picture is of something hanging and hair-like rather than a woven border. It is tied at the <em>kanaf</em>, the corner, which is also the ordinary Hebrew for a bird's WING: the same word Ruth uses asking Boaz to spread his <em>kanaf</em> over her (Ruth 3:9, not yet on these pages), where a cloak-corner and a wing of protection are one gesture. ⚠ The Greek Old Testament renders it <em><a href=\"dictionary.html#kraspedon\">kraspedon</a></em>, which is why three scenes in Matthew — the bleeding woman at 9:20, the crowds at 14:36, and the Pharisees criticised at 23:5 for lengthening theirs — are all quietly describing this commandment. Numbers 15:39 gives its whole purpose in two verbs: you shall SEE it and REMEMBER.",
+     ("Numbers", 15, 38)),
+    ("tekhelet", "tekhelet", "תְּכֵלֶת", "tekhelet",
+     "BLUE — specifically a blue-violet dyed wool, and one of the three coloured yarns of the tabernacle (with purple and scarlet). It is the colour of the curtains, of the high priest's robe, and of the single cord tied into each <em><a href=\"dictionary.html#tsitsit\">tsitsit</a></em> at <a href=\"numbers-15.html#n15-37\">Numbers 15:38</a> — so one thread of the sanctuary's own colour is worn by every ordinary person. ⚠ The dye is traditionally identified with a secretion of a Mediterranean sea snail, and the identification is a modern RECONSTRUCTION, not continuous knowledge: the source was lost for centuries, and the case for the snail was argued back on chemical and rabbinic evidence together rather than handed down. Worth stating plainly, because the tassels themselves were kept without interruption while the blue in them was not. The shelf renders the cord variously — KJV 'a ribband of blue', ASV 'a cord of blue', NIV 'a blue cord', NWT 1984 'a blue string'.",
+     ("Numbers", 15, 38)),
+    ("challah", "challah", "חַלָּה", "challah",
+     "A LOAF — the round baked loaf a portion of which is lifted out and given away before the rest is eaten (<a href=\"numbers-15.html#n15-17\">Numbers 15:20</a>). ⚠ The word has outlived the law that uses it: the plaited bread on a Jewish Sabbath table is called <em>challah</em> not for its shape but for this verse, because it is made from dough from which a <em>challah</em> has been separated — a practice still kept, with the portion burned since there is no priest to receive it. The etymology is less settled than the afterlife: it is often derived from <em>chalal</em>, to pierce or bore, which would make it a perforated or ring-shaped cake, and that is the reading behind NWT 1984 'ring-shaped cakes' and TNM 2019 'roscas de pan'. It is a real proposal, not a certainty; KJV, ASV and Geneva print 'cake' and NIV 'loaf'. The dough itself is <em>arisah</em>, a genuinely rare noun occurring in only four verses in the whole Hebrew Bible — Numbers 15:20 and 21, and then Nehemiah 10:38 and Ezekiel 44:30, both of which are this same law being quoted back centuries later.",
+     ("Numbers", 15, 20)),
+    ("ezrach", "ezrach", "אֶזְרָח", "ezrach",
+     "A NATIVE, home-born — the legal counterpart of the <em><a href=\"dictionary.html#ger\">ger</a></em>, and almost always paired with it. The root is the one behind a tree that is native to its soil (Psalm 37:35 uses it of a green tree in its own ground), so the image is of somebody rooted where they grew rather than of a status conferred. ⚠ The word matters because of the company it keeps: the Torah reaches for it precisely when it is about to say that the distinction makes no difference — 'one law for the <em>ezrach</em> and for the <em>ger</em>' (<a href=\"exodus-12.html#v12-49\">Exodus 12:49</a>), 'as the <em>ezrach</em> among you' (<a href=\"leviticus-19.html\">Leviticus 19:34</a>), and five times over in <a href=\"numbers-15.html#n15-13\">Numbers 15:13-30</a>, where native and sojourner get the same offering, the same atonement for error, and the same sentence for defiance. It is a term that exists in these texts mainly in order to be levelled.",
+     ("Numbers", 15, 13)),
+    ("yad_ramah", "yad ramah", "יָד רָמָה", "yad ramah",
+     "A HIGH HAND — the raised arm, the gesture of somebody doing a thing openly and meaning it. ⚠ The phrase is the same in both of its famous uses, and they point opposite ways. At <a href=\"exodus-14.html#v14-8\">Exodus 14:8</a> and again at Numbers 33:3 (not yet on these pages), Israel walks out of Egypt <em>b'yad ramah</em> — head up, in the sight of all Egypt, and it is glorious. At <a href=\"numbers-15.html#n15-30\">Numbers 15:30</a> a person acts <em>b'yad ramah</em> and is said to be REVILING Jehovah, with no offering available: the whole sacrificial system of that chapter covers only what is done <em><a href=\"dictionary.html#shegagah\">through error</a></em>, and this is where it stops. Identical two words; the difference is entirely who the hand is raised against. ⚠ Only two versions checked here keep the picture — ASV 'with a high hand' and the 1909 Reina-Valera 'con altiva mano', the oldest-register witness on each shelf — while KJV and Geneva read 'presumptuously', NIV 'defiantly', NWT 1984 'deliberately', Douay-Rheims 'through pride', RV60 'con soberbia'. Every modern version gives the reader the meaning and takes away the link to the Exodus.",
+     ("Numbers", 15, 30)),
     ("chagav", "chagav", "חָגָב", "chagav",
      "A GRASSHOPPER, or locust — the insect the ten scouts compare themselves to: 'in our own eyes we were like <em>chagavim</em>' (<a href=\"numbers-13.html#n13-32\">Numbers 13:33</a>, already on these pages). \u26a0 It is one of the winged swarming creatures <a href=\"leviticus-11.html\">Leviticus 11:22</a> (already on these pages) explicitly PERMITS Israel to eat, which puts a quiet edge on the comparison: men who have just described a land that eats its inhabitants liken themselves to something on the menu. The Spanish shelf reads <em>langostas</em>, locusts, and the English 'grasshoppers'; they are the same insect family, and the distinction is one English happens to make and Hebrew does not. Nothing in the noun implies smallness on its own — the sense of being dwarfed comes from the sentence.",
      ("Numbers", 13, 33)),
@@ -6404,6 +6419,12 @@ XREFS = [
     (("Matthew", 9, 9), ("Matthew", 4, 19), "akolouthei moi, 'follow me' — the same bare call and the same instant obedience that pulled two fishermen off their nets; a tax collector rises from a booth on the identical two words"),
     (("Matthew", 9, 18), ("Matthew", 8, 2), "proskyneō, a fifth time — the magi, Herod, the devil, a leper, and now an unnamed synagogue ruler; every step widens who bows, and none yet settles what the gesture means"),
     (("Matthew", 9, 20), ("Numbers", 15, 38), "kraspedon — the same word the Greek Old Testament uses for the tassels the Law commands, which means the text is quietly showing Jesus wearing them when the bleeding woman touches his fringe"),
+    (("Numbers", 15, 39), ("Numbers", 13, 2), "tur, to scout — the governing verb of the scouting mission, used twelve times across Numbers 13-14 and then once more here, negated: 'you shall not go SCOUTING after your own heart and your own eyes.' No version on either shelf keeps it"),
+    (("Numbers", 15, 30), ("Exodus", 14, 8), "b'yad ramah, 'with a high hand' — the identical two words, used of Israel marching out of Egypt with its head up, and here of the one sin the sacrificial system will not cover"),
+    (("Numbers", 15, 16), ("Exodus", 12, 49), "'one law for the native and for the sojourner' — the same formula, stated at the Passover and repeated here, where the chapter piles it up five times in fifteen verses"),
+    (("Numbers", 15, 24), ("Leviticus", 4, 13), "the error 'hidden from the eyes' of the community — the same idiom, with the nouns swapped: Leviticus hides it from the eyes of the qahal, Numbers from the eyes of the edah"),
+    (("Numbers", 15, 34), ("Leviticus", 24, 12), "the same custody formula, nearly word for word — vayyannichu ... ba-mishmar, and the root parash for the ruling that has not yet come; both carry a scribal paragraph break at exactly that point"),
+    (("Numbers", 15, 32), ("Numbers", 9, 8), "the third of the Torah's four cases where a law is made in answer to a question — and, like the other three, marked by a scribal paragraph break the instant the question hangs unanswered"),
     (("Matthew", 9, 22), ("Matthew", 1, 21), "sōzō, 'save/heal' — the identical verb as Jesus' own name unfolded at his naming ('he will SAVE his people from their sins'), now the word of an actual healing, three times in one verse"),
     (("Matthew", 9, 24), ("Daniel", 12, 2), "sleep as a euphemism for death — 'those who sleep in the dust of the earth' — though the crowd's laughter argues Matthew means it as more than a euphemism here"),
     (("Matthew", 9, 35), ("Matthew", 4, 23), "the three-part summary — teaching, proclaiming, healing — repeated word for word; the frame this site's own note on 4:23 promised would close five chapters later"),
@@ -8573,6 +8594,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num15": dict(era="exodus",
+                 when="Legislation, not narrative, and placed where it is hardest to place: immediately after the generation is sentenced to die in the wilderness, God gives laws for &lsquo;when you come into the land.&rsquo; Grain and drink offerings become a fixed, scaled accompaniment to every animal offering; the sojourner is granted the same statute, the same law and the same atonement as the native, five times over; a loaf is lifted out of the first dough of every household. Then the line the whole sacrificial system runs along &mdash; everything here covers sin done in error, and nothing covers the sin done &lsquo;with a high hand.&rsquo; A man gathering sticks on the sabbath is held in custody until a ruling comes, and executed. The chapter ends on tassels and a cord of blue, tied to the corners of a garment so that the eyes have something to catch on.",
+                 clock="&#9888; Undated within the chapter, and deliberately so &mdash; it is the first block of law on the far side of the forty-year sentence passed in <a href=\"numbers-14.html\">Numbers 14</a>, and the narrative clock does not restart until Numbers 20. The setting is still Kadesh in the wilderness of Paran, in or shortly after the second year out of Egypt; on the early-date chronology this project foregrounds, c. 1444 BC. The sabbath episode of vv32&ndash;36 is the only dated-by-context event in it, and it is dated only by &lsquo;while the children of Israel were in the wilderness&rsquo; &mdash; which is the whole of the intervening thirty-eight years."),
     "num14": dict(era="exodus",
                  when="The scouts&rsquo; report breaks the nation. Israel weeps all night, wishes itself dead in Egypt, and proposes electing a leader to take it back there. Joshua and Caleb tear their clothes and are nearly stoned for it. God offers to destroy the people and start the nation over from Moses &mdash; the same offer he made at the golden calf, now with &lsquo;and mightier than they&rsquo; added &mdash; and Moses answers by quoting God&rsquo;s own words at Sinai back to him and asking that the power of the Lord be shown in forgiving. The pardon is granted in two words and the sentence follows in the same breath: this generation, the whole war-roll of Numbers 1 from twenty years old and upward, will die in the wilderness, a year for each of the forty days they scouted. The ten scouts die at once of plague; the people mourn, then attack the hill country the next morning without the ark and are beaten as far as Hormah.",
                  clock="⚠ Undated within the chapter, but continuous with Numbers 13 &mdash; the scouts return after forty days and this is the same night. So: still the second year out of Egypt, at Kadesh in the wilderness of Paran, late summer. This is the hinge of the whole wilderness chronology: the forty years are imposed here, in v34, and everything from Numbers 15 to Deuteronomy is dated on the far side of the sentence passed in this chapter."),
@@ -13088,7 +13112,7 @@ DICTIONARY_ES = {
         "«tened ánimo, soy yo» (14:27, todavía no en estas páginas)."),
     "kraspedon": ("fleco",
         "FLECO, borla — la palabra que la Biblia griega usa para las BORLAS que la Ley manda en las cuatro "
-        "puntas de un manto (Números 15:38-39; Deuteronomio 22:12, ninguno todavía en estas páginas), lo "
+        "puntas de un manto (<a href=\"numbers-15.es.html#n15-37\">Números 15:38-39</a>, ya en estas páginas; Deuteronomio 22:12, todavía no), lo "
         "que significa que Mateo 9:20 muestra, sin decirlo, a Jesús llevándolas puestas: la mujer que "
         "sangraba toca su <em>kraspedon</em>, no simplemente «su manto». ⚠ La palabra vuelve dos veces "
         "más en este Evangelio — las multitudes solo piden tocarlo en 14:36, y Jesús critica a los "
@@ -14319,7 +14343,92 @@ DICTIONARY_ES = {
         "cita de Moisés es más corta que el original: deja fuera 'y pecado', la tercera palabra, junto con casi "
         "todas las cláusulas misericordiosas, y conserva entera la que castiga."),
     "tur": ("tur",
-        "EXPLORAR, reconocer, hacer un reconocimiento —el verbo rector de <a href=\"numbers-13.es.html#n13-1\">Números 13</a> (ya en estas páginas), donde aparece siete veces en un solo capítulo (vv2, 16, 17, 21, 25 y dos veces en el v32). \u26a0 NO es la palabra hebrea corriente para espiar. Esa es <em>ragal</em>, literalmente andar a pie, la que se usa de los hombres que Josué envía a Jericó; y Deuteronomio emplea una tercera, <em>jafar</em>, CAVAR o escudriñar. Las tres describen la misma misión, y la diferencia se ve en estas páginas: <a href=\"deuteronomy-1.es.html\">Deuteronomio 1:22</a> tiene al pueblo pidiéndole a Moisés que <em>jafar</em> la tierra —que la excave, que la sondee— y el v24 informa de que lo que en realidad hicieron fue <em>ragal</em>, espiarla. Números no usa ninguna de las dos, solo <em>tur</em>, que en otros lugares significa explorar o buscar algo. La palabra hebrea moderna para «turista» desciende de ella. Esta traducción lee «reconocer» de forma constante para que el único verbo hebreo se vea como una sola palabra."),
+        "EXPLORAR, reconocer, hacer un reconocimiento —el verbo rector de <a href=\"numbers-13.es.html#n13-1\">Números 13</a> (ya en estas páginas), donde aparece siete veces en un solo capítulo (vv2, 16, 17, 21, 25 y dos veces en el v32). \u26a0 NO es la palabra hebrea corriente para espiar. Esa es <em>ragal</em>, literalmente andar a pie, la que se usa de los hombres que Josué envía a Jericó; y Deuteronomio emplea una tercera, <em>jafar</em>, CAVAR o escudriñar. Las tres describen la misma misión, y la diferencia se ve en estas páginas: <a href=\"deuteronomy-1.es.html\">Deuteronomio 1:22</a> tiene al pueblo pidiéndole a Moisés que <em>jafar</em> la tierra —que la excave, que la sondee— y el v24 informa de que lo que en realidad hicieron fue <em>ragal</em>, espiarla. Números no usa ninguna de las dos, solo <em>tur</em>, que en otros lugares significa explorar o buscar algo. La palabra hebrea moderna para «turista» desciende de ella. Esta traducción lee «reconocer» de forma constante para que el único verbo hebreo se vea como una sola palabra. ⚠ <strong>Y tiene una aparición más, dos capítulos después, que es la razón por la que esa política importa.</strong> Tras siete apariciones en Números 13 y cinco en <a href=\"numbers-14.es.html#v14-34\">Números 14</a> —doce en dos capítulos, todas sobre los hombres enviados a mirar Canaán—, el verbo reaparece una sola vez en <a href=\"numbers-15.es.html#n15-37\">Números 15:39</a>, negado, y ya no sobre un país: <em>v'lo taturu acharei levavjem v'acharei eineijem</em>, «y no andéis RECONOCIENDO tras vuestro corazón y tras vuestros ojos». Las borlas se mandan contra el mismo verbo que destruyó a aquella generación. Ninguna versión de ninguno de los dos estantes lo imprime —RV60 y la antigua «no miréis en pos de», la NVI «dejarse llevar por los impulsos», la TNM «andar siguiendo», la KJV 'seek not after', la ASV 'follow not after'—, de modo que la conexión es invisible en toda Biblia inglesa o española comprobada aquí, y visible en el hebreo de un vistazo."),
+    "moadim": ("moadim",
+        "TIEMPOS SEÑALADOS —la palabra del calendario de fiestas; lo que el sol y la luna quedan instalados para "
+        "marcar (Génesis 1:14, ya en estas páginas). No significa «temporada» en el sentido climático: un "
+        "<em>moed</em> es una cita, un momento fijado de antemano por alguien. <a href=\"leviticus-23.es.html#v23-2\">"
+        "Levítico 23:2</a> (ya en estas páginas) abre el calendario entero con ella dos veces en un versículo, y "
+        "<a href=\"numbers-15.es.html#n15-1\">Números 15:3</a> la usa para situar las ofrendas voluntarias dentro "
+        "de ese mismo calendario. La misma raíz da la «tienda de reunión», <em>ohel moed</em> —el lugar de la cita."),
+    "nesekh": ("nésej",
+        "UNA LIBACIÓN —vino derramado junto a un sacrificio, de <em>nasaj</em>, verter. Junto con la "
+        "<em><a href=\"diccionario.html#minchah\">minjá</a></em> (la ofrenda de grano) componía el servicio DIARIO, "
+        "presentado cada mañana y cada tarde con el cordero (<a href=\"exodus-29.es.html#v29-40\">Éxodo 29:38-42</a>, "
+        "ya en estas páginas). ⚠ <a href=\"numbers-15.es.html#n15-4\">Números 15:4-10</a> es donde deja de ser cosa "
+        "del servicio diario y se vuelve obligatoria para toda ofrenda animal voluntaria, en una escala fija que "
+        "sube con el animal: un cuarto de hin por un cordero, un tercio por un carnero, medio por un novillo. Y por "
+        "eso Joel 1:9 es el centro teológico de su primer capítulo: cuando falla la cosecha no hay harina ni vino, "
+        "y la ofrenda diaria sencillamente no puede hacerse."),
+    "pala": ("pala",
+        "MARAVILLA —lo que solo Dios hace. «¿Hay algo demasiado maravilloso para Jehová?» (Génesis 18:14, ya en "
+        "estas páginas); el «demasiado difícil» del estante lo aplana, y Jeremías devuelve la pregunta casi palabra "
+        "por palabra (Jeremías 32:17, 27). ⚠ La misma raíz hace un trabajo distinto en la ley de los votos: en "
+        "<a href=\"numbers-6.es.html#v6-2\">Números 6:2</a> y <a href=\"numbers-15.es.html#n15-1\">Números 15:3</a> "
+        "(ambos ya en estas páginas) el verbo significa APARTAR algo, hacerlo explícito en lugar de corriente —un "
+        "voto «especial», dicho y singularizado, no simplemente sentido. El asombro y la separación son, en hebreo, "
+        "la misma raíz: lo que se aparta de lo ordinario y lo que asombra por serlo."),
+    "tsitsit": ("tsitsit",
+        "UNA BORLA, un fleco —el cordón trenzado que se manda poner en las cuatro esquinas del manto "
+        "(<a href=\"numbers-15.es.html#n15-37\">Números 15:38-39</a>), y que se repite, sin el azul, en "
+        "Deuteronomio 22:12 (todavía no en estas páginas). El sustantivo se usa en otros lugares para un MECHÓN "
+        "de pelo —en Ezequiel 8:3 una mano toma al profeta por un <em>tsitsit</em> de su cabeza—, de modo que la "
+        "imagen es la de algo que cuelga, más parecido al cabello que a un ribete tejido. Va atado al "
+        "<em>kanaf</em>, la esquina, que es también la palabra hebrea corriente para el ALA de un pájaro: la misma "
+        "que usa Rut al pedirle a Booz que extienda su <em>kanaf</em> sobre ella (Rut 3:9, todavía no en estas "
+        "páginas), donde la esquina de un manto y un ala protectora son un solo gesto. ⚠ La Biblia griega lo "
+        "vierte <em><a href=\"diccionario.html#kraspedon\">kraspedon</a></em>, y por eso tres escenas de Mateo "
+        "—la mujer con hemorragia en 9:20, las multitudes en 14:36 y los fariseos criticados en 23:5 por "
+        "alargar los suyos— están describiendo, sin nombrarlo, este mandamiento. Números 15:39 da su propósito "
+        "entero en dos verbos: la VERÉIS y os ACORDARÉIS."),
+    "tekhelet": ("tejélet",
+        "AZUL —en concreto una lana teñida de azul violáceo, y uno de los tres hilos de color del tabernáculo "
+        "(con la púrpura y la grana). Es el color de las cortinas, del manto del sumo sacerdote, y del único "
+        "cordón que se ata en cada <em><a href=\"diccionario.html#tsitsit\">tsitsit</a></em> en "
+        "<a href=\"numbers-15.es.html#n15-37\">Números 15:38</a> —de modo que un hilo del color del santuario "
+        "lo lleva encima cualquier persona corriente. ⚠ El tinte se identifica tradicionalmente con la secreción "
+        "de un caracol marino del Mediterráneo, y la identificación es una RECONSTRUCCIÓN moderna, no un saber "
+        "transmitido sin interrupción: la fuente se perdió durante siglos, y el argumento a favor del caracol se "
+        "rehízo con evidencia química y descripción rabínica a la vez. Conviene decirlo, porque las borlas sí se "
+        "siguieron guardando mientras el azul de ellas no. El estante vierte el cordón de varias maneras: KJV "
+        "'a ribband of blue', ASV 'a cord of blue', NVI «hilo de color azul»."),
+    "challah": ("jalá",
+        "UN PAN redondo —del cual se levanta una porción y se entrega antes de comer el resto "
+        "(<a href=\"numbers-15.es.html#n15-17\">Números 15:20</a>). ⚠ La palabra ha sobrevivido a la ley que la "
+        "usa: el pan trenzado de la mesa del sábado judío se llama <em>jalá</em> no por su forma sino por este "
+        "versículo, porque está hecho de una masa de la que se ha separado una <em>jalá</em> —una práctica que "
+        "todavía se guarda, quemándose la porción, ya que no hay sacerdote que la reciba. La etimología está "
+        "menos asentada que su vida posterior: suele derivarse de <em>jalal</em>, perforar o taladrar, lo que la "
+        "haría una torta perforada o en forma de anillo, y esa es la lectura tras la TNM 'ring-shaped cakes' y "
+        "«roscas de pan» en la revisión de 2019. Es una propuesta real, no una certeza; RV60 y RVA imprimen "
+        "«torta» y la NVI «torta de harina». La masa misma es <em>arisá</em>, un sustantivo genuinamente raro "
+        "que aparece en solo cuatro versículos de toda la Biblia hebrea —Números 15:20 y 21, y luego Nehemías "
+        "10:38 y Ezequiel 44:30, que son esta misma ley citada de vuelta siglos después."),
+    "ezrach": ("ezraj",
+        "EL NATURAL, el nacido en la tierra —la contraparte legal del <em><a href=\"diccionario.html#ger\">guer</a></em>, "
+        "y casi siempre emparejado con él. La raíz es la de un árbol que es propio de su suelo (el Salmo 37:35 la "
+        "usa de un árbol verde en su propia tierra), así que la imagen es la de alguien arraigado donde creció, no "
+        "la de un estatuto concedido. ⚠ La palabra importa por la compañía que tiene: la Torá echa mano de ella "
+        "justo cuando va a decir que la distinción no cambia nada —«una misma ley para el <em>ezraj</em> y para el "
+        "<em>guer</em>» (<a href=\"exodus-12.es.html#v12-49\">Éxodo 12:49</a>), «como el <em>ezraj</em> entre "
+        "vosotros» (<a href=\"leviticus-19.es.html\">Levítico 19:34</a>), y cinco veces seguidas en "
+        "<a href=\"numbers-15.es.html#n15-13\">Números 15:13-30</a>, donde el natural y el forastero reciben la "
+        "misma ofrenda, la misma expiación por error y la misma sentencia por desafío. Es un término que en estos "
+        "textos existe sobre todo para ser nivelado."),
+    "yad_ramah": ("yad ramá",
+        "MANO ALZADA —el brazo en alto, el gesto de quien hace algo a la vista y a propósito. ⚠ La expresión es la "
+        "misma en sus dos usos célebres, y apuntan en direcciones opuestas. En "
+        "<a href=\"exodus-14.es.html#v14-8\">Éxodo 14:8</a> y otra vez en Números 33:3 (todavía no en estas "
+        "páginas), Israel sale de Egipto <em>b'yad ramá</em> —con la cabeza alta, a la vista de todo Egipto—, y es "
+        "glorioso. En <a href=\"numbers-15.es.html#n15-30\">Números 15:30</a> una persona obra <em>b'yad ramá</em> "
+        "y se dice que está ULTRAJANDO a Jehová, sin ofrenda posible: todo el sistema sacrificial de ese capítulo "
+        "cubre solo lo hecho <em><a href=\"diccionario.html#shegagah\">por error</a></em>, y aquí es donde se "
+        "detiene. Dos palabras idénticas; la diferencia está entera en contra de quién se alza la mano. ⚠ Solo dos "
+        "versiones de las comprobadas aquí conservan la imagen —la ASV 'with a high hand' y la Reina-Valera "
+        "antigua de 1909 «con altiva mano», el testigo de registro más antiguo de cada estante—, mientras que KJV "
+        "y Ginebra leen 'presumptuously', la NIV 'defiantly', la NWT 1984 'deliberately', la Douay-Rheims 'through "
+        "pride', la RV60 «con soberbia» y la NVI y la TNM «deliberadamente». Toda versión moderna le da al lector "
+        "el significado y le quita el vínculo con el Éxodo."),
     "chagav": ("chagav",
         "UN SALTAMONTES, o langosta —el insecto con que se comparan los diez exploradores: «a nuestro parecer éramos como <em>jagavim</em>» (<a href=\"numbers-13.es.html#n13-32\">Números 13:33</a>, ya en estas páginas). \u26a0 Es una de las criaturas aladas que <a href=\"leviticus-11.es.html\">Levítico 11:22</a> (ya en estas páginas) permite EXPRESAMENTE comer a Israel, lo que le pone un filo callado a la comparación: unos hombres que acaban de describir una tierra que devora a sus habitantes se comparan con algo comestible. El estante español lee «langostas» y el inglés «grasshoppers»; son la misma familia de insectos, y la distinción es una que el inglés hace y el hebreo no. Nada en el sustantivo implica pequeñez por sí mismo: la sensación de quedar empequeñecido viene de la frase."),
     "dibbah": ("dib&aacute;",
@@ -14659,8 +14768,8 @@ DICTIONARY_ES = {
         "el pecado (Levítico 4:2, 22, 27): cada caso que legisla este capítulo es un error "
         "genuino, no un desafío. Existe una categoría distinta y más severa para pecar 'con "
         "mano alzada' —deliberadamente, en abierta rebeldía— que este sistema no cubre en "
-        "absoluto: 'esa persona será completamente cortada' (Números 15:30-31, todavía "
-        "no en estas páginas), sin ofrenda, sin expiación ofrecida. Toda la arquitectura de "
+        "absoluto: 'esa persona será completamente cortada' (<a href=\"numbers-15.es.html#n15-30\">Números 15:30-31</a>, "
+        "ahora en estas páginas), sin ofrenda, sin expiación ofrecida. Toda la arquitectura de "
         "Levítico 4 descansa sobre esta única distinción: el error puede traerse al altar; el "
         "desafío no."),
     # ---- Levítico 10 ----
@@ -16246,6 +16355,39 @@ ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "num15": [dict(
+        file="num15-samarkand-tallit-tzitzit.jpg",
+        title="A Jewish Man in Samarkand, Wearing a Prayer Shawl, Prepared for Prayer",
+        title_es="Un judío de Samarcanda, con el manto de oración, dispuesto para la oración",
+        artist="Aleksandr L. Kun, from the Turkestan Album",
+        artist_es="Aleksandr L. Kun, del Álbum de Turkestán",
+        year="between 1865 and 1872",
+        location="Turkestan Album, ethnographical part; Library of Congress",
+        location_es="Álbum de Turkestán, parte etnográfica; Biblioteca del Congreso",
+        alt="A sepia photograph of a bearded man standing against a bare plastered wall. A striped "
+            "prayer shawl is draped over his head and shoulders; long twisted fringes hang in heavy "
+            "bundles at each hip. His left arm is wrapped in the leather straps of a phylactery and "
+            "his head is bowed. He stands on a small rug beside a low wooden stand holding books.",
+        note="&#9888; Not a scene from this chapter, and not ancient &mdash; a photograph taken in "
+             "Samarkand between 1865 and 1872 for the ethnographical part of the <em>Turkestan "
+             "Album</em>, a Russian imperial survey of Central Asia. It is here because it shows "
+             "v38 being kept. The fringes hanging at both hips are <em>tsitsit</em>, tied to the "
+             "corners of the garment exactly as this chapter commands, on a Bukharan Jew roughly "
+             "three thousand years and three thousand miles from the wilderness where the "
+             "commandment was given. The chapter ends by asking for something a person will see "
+             "every day and remember; this is what that has actually looked like.",
+        note_es="&#9888; No es una escena de este capítulo, ni es antigua &mdash;una fotografía "
+                "tomada en Samarcanda entre 1865 y 1872 para la parte etnográfica del <em>Álbum "
+                "de Turkestán</em>, un estudio imperial ruso de Asia Central&mdash;. Está aquí "
+                "porque muestra el v38 cumplido. Los flecos que cuelgan en ambas caderas son "
+                "<em>tsitsit</em>, atados a las esquinas de la prenda exactamente como este "
+                "capítulo lo manda, sobre un judío bujarí a unos tres mil años y tres mil "
+                "kilómetros del desierto donde se dio el mandamiento. El capítulo termina pidiendo "
+                "algo que una persona vea cada día y recuerde; así es como eso ha sido en la "
+                "práctica.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Zeravshan_Okrug._Samarkand._A_Jewish_Man,_Wearing_a_Prayer_Shawl,_Wrapping_His_Arm_in_Phylactery,_in_Preparation_for_Prayer_WDL11152.png",
+    )],
     "lev27": [dict(
         file="monaco-joseph-sold-dividing-coins-1730.jpg",
         title="Joseph Sold by His Brothers",
