@@ -15,6 +15,7 @@ After adding a new chapter to the source file, re-run this and push.
 import argparse
 import hashlib
 import html
+import io
 import json
 import math
 import os
@@ -2711,9 +2712,28 @@ def check_entry_seo():
 
 
 def _plain(s):
-    """HTML fragment -> clean single-line text (for an og:description)."""
+    """HTML fragment -> clean single-line text (for an og:description or a verse card).
+
+    ⚠ A tag run sitting between clause punctuation and a word is a JOIN, and deleting it
+    outright FUSES the two: a psalm superscription came out as "A psalm of David.Jehovah
+    is my shepherd" / "Salmo de David.Jehová es mi pastor", in the meta description, the
+    copied verse text AND the og:image card — visible only in a shared link, never on the
+    page, so no reader would ever report it (fixed 2026-08-19).
+
+    The narrowness is the point, and it was measured over all 22,649 verses rather than
+    reasoned about. Blanket tag->space "fixes" 16,370 verses and wrecks them: it makes
+    "Abram's" into "Abram 's" and pushes commas off their word. Restricting it to
+    punctuation-then-letter leaves exactly 289 changes, every one real.
+    Unescaping comes FIRST because an entity's own terminating ';' otherwise reads as a
+    semicolon and puts a space inside every «opening quote»; &lt;/&gt; are held back so
+    the tag-stripper below cannot mistake decoded text for markup.
+    """
+    s = s.replace("&lt;", "\x00LT\x00").replace("&gt;", "\x00GT\x00")
+    s = html.unescape(s)
+    s = re.sub(r"(?<=[.,;:!?—])(?:<[^>]+>)+(?=[^\W\d_])", " ", s)
     s = re.sub(r"<[^>]+>", "", s)
-    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+    s = s.replace("\x00LT\x00", "<").replace("\x00GT\x00", ">")
+    return re.sub(r"\s+", " ", s).strip()
 
 
 def _verse_stub_html(ref, desc, target, chfile, stub_url, og_image, lang="en"):
@@ -2863,7 +2883,12 @@ def _render_verse_card(book, num, v, text, path, lang="en"):
     d.text((W / 2, H - 54), "mistertranslation.com",
            font=_card_font("sans", 21), fill=(133, 147, 166), anchor="ma")
 
-    img.quantize(colors=128, dither=Image.FLOYDSTEINBERG).save(path, "PNG", optimize=True)
+    buf = io.BytesIO()
+    img.quantize(colors=128, dither=Image.FLOYDSTEINBERG).save(buf, "PNG", optimize=True)
+    if path is None:                 # verse cards go to S3; nothing lands in the repo
+        return buf.getvalue()
+    with open(path, "wb") as f:      # (the default cards still ship in the tree)
+        f.write(buf.getvalue())
     return True
 
 
@@ -2931,37 +2956,113 @@ def _render_default_card(path, lang="en"):
     return True
 
 
-# --- verse-card staleness + size budget -------------------------------------------
+# --- the card store (S3) ----------------------------------------------------------
+# Cards live in a PUBLIC S3 bucket, not in this repo. They are ~38 KB each and scale
+# with VERSES, so carrying them here was going to end the shelf at roughly half the
+# Bible: GitHub Pages hard-caps a PUBLISHED SITE at 1 GB, and English alone at full
+# coverage is ~31,100 verses x 38 KB = ~1.1 GB before Spanish doubles it. Moving them
+# out took the site from 507 MB to ~174 MB and, more to the point, stopped it growing.
+#
+# ⚠ THE MANIFEST IS THE SOURCE OF TRUTH FOR "THIS CARD IS PUBLISHED", AND IT IS TRACKED
+# IN GIT ON PURPOSE. A build with no S3 credentials must still emit the right og:image
+# for every already-published card — if it fell back to the default for all of them, one
+# credential-less build would silently strip the verse art off every share on the site.
+# So the manifest is consulted FIRST and no S3 call is made for a card whose hash already
+# matches. Only a NEW or CHANGED card needs the network, and if that upload cannot happen
+# only that ONE card falls back to the branded default, which is the right blast radius.
+#
+# Credentials: ~/.mstr-trader/cards.env (mode 600), a DIFFERENT key from backup.env —
+# that one writes the private archive bucket (bank/tax/medical) and the two must never be
+# shared. The key has PutObject + ListBucket and deliberately NOT DeleteObject: a
+# re-render overwrites in place, so nothing needs deleting and the key cannot destroy
+# what it has published.
+CARDS_ENV = os.path.expanduser("~/.mstr-trader/cards.env")
+_CARD_S3 = None            # None = not tried yet; False = unavailable; else (client, cfg)
+
+
+def _cards_cfg():
+    cfg = {}
+    try:
+        with open(CARDS_ENV, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    cfg[k.strip()] = v.strip()
+    except OSError:
+        return None
+    need = ("CARDS_BUCKET", "CARDS_REGION", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY")
+    return cfg if all(cfg.get(k) for k in need) else None
+
+
+def _card_store():
+    """(client, cfg) once available, else False. Never raises — building on a machine
+    with no credentials is a normal thing, not an error."""
+    global _CARD_S3
+    if _CARD_S3 is not None:
+        return _CARD_S3
+    cfg = _cards_cfg()
+    if not cfg:
+        _CARD_S3 = False
+        return _CARD_S3
+    try:
+        import boto3
+        client = boto3.client("s3", region_name=cfg["CARDS_REGION"],
+                              aws_access_key_id=cfg["AWS_ACCESS_KEY_ID"],
+                              aws_secret_access_key=cfg["AWS_SECRET_ACCESS_KEY"])
+        _CARD_S3 = (client, cfg)
+    except Exception as exc:
+        print(f"   ⚠ card store unavailable ({type(exc).__name__}) — new cards will fall "
+              f"back to the default og:image")
+        _CARD_S3 = False
+    return _CARD_S3
+
+
+def card_key(name):
+    """public/verse-cards/genesis-1-1.png — the S3 key AND the tail of the public URL."""
+    return f"{(_cards_cfg() or {}).get('CARDS_PREFIX', 'public/')}verse-cards/{name}"
+
+
+def card_url(name):
+    cfg = _cards_cfg() or {}
+    bucket = cfg.get("CARDS_BUCKET", "mistertranslation-public")
+    region = cfg.get("CARDS_REGION", "us-east-1")
+    return f"https://{bucket}.s3.{region}.amazonaws.com/{card_key(name)}"
+
+
+def upload_card(name, data):
+    """Publish one card. True, or False if the store is unavailable."""
+    st = _card_store()
+    if not st:
+        return False
+    client, cfg = st
+    try:
+        client.put_object(Bucket=cfg["CARDS_BUCKET"], Key=card_key(name), Body=data,
+                          ContentType="image/png",
+                          CacheControl="public, max-age=31536000, immutable")
+        return True
+    except Exception as exc:
+        print(f"   ⚠ card upload failed for {name}: {type(exc).__name__}")
+        return False
+
+
+# --- verse-card staleness ---------------------------------------------------------
 # Cards are expensive to render, so they are reused across builds. But "reuse if the
 # file exists" strands the old image when a later exactness pass rewords the verse.
 # A tiny content-hash manifest (img/v/.cards.json) fixes that: a card is re-rendered
-# only when the verse text (or CARD_TEMPLATE_VERSION) changed. A pre-manifest card is
-# trusted and seeded, so this ships without re-rendering the ~1,200 existing cards.
+# only when the verse text (or CARD_TEMPLATE_VERSION) changed. Since the move to S3 the
+# manifest does double duty as the record of what has been PUBLISHED — see _card_store.
 CARD_TEMPLATE_VERSION = "1"   # bump to force-regenerate EVERY verse card after a card-design change
-CARD_BUDGET_WARN_MB = 700     # GitHub Pages publishes ~1 GB max; warn before the cards get there
 
-# Does the SPANISH edition get its own per-verse og:image cards?
-#
-# Its share stubs always exist and are always Spanish — right verse text in the
-# preview, right chapter at the other end. This switch is only about the PICTURE.
-#
-# OFF, and measured (2026-08-19), because the numbers say the card strategy is
-# already near its ceiling and Spanish is not where the remaining room should go:
-#   · published site today, no Spanish cards ......  496 MB
-#   · with Spanish cards (7,018 × ~38 KB) .........  757 MB
-#   · GitHub Pages HARD limit .....................  1 GB, not a warning
-# That is 74% of the cap spent at 291 of the Bible's 1,189 chapters. The cards
-# scale with VERSES, so English alone at full coverage is ~31,100 × 38 KB ≈ 1.1 GB
-# — over the cap by itself, before Spanish doubles it. Dropping to 32 colours
-# (~19 KB) only postpones it: ~1.1 GB for both editions at full coverage.
-# So the real fix is the one CARD_BUDGET_WARN_MB's own message already names —
-# smaller/JPEG cards, per-chapter cards, or a separate image host — and until
-# that happens, spending 261 MB to give Spanish the same art buys nothing the
-# stub does not already deliver. With this OFF a shared Spanish verse falls back
-# to the branded default card; the title and description are still that Spanish
-# verse, which is the part that was actually broken.
-# Flip to True to render them; nothing else needs to change.
-ES_VERSE_CARDS = False
+# The SPANISH edition gets its own per-verse cards. ON since 2026-08-19, the same day the
+# cards moved to S3 — and the two are one decision, not two. This was OFF for exactly as
+# long as the cards lived in the repo, because 7,018 Spanish PNGs would have taken the
+# published site to 757 MB against a 1 GB HARD Pages cap, at 24% of the Bible. Once the
+# cards left the repo that arithmetic stopped existing: the bucket has no cap, so there
+# is no longer a reason to give the Spanish edition worse art than the English one.
+# ⚠ Do not flip this back OFF to save space — it would save none. It only controls
+# whether a shared Spanish verse shows its own verse card or the branded default.
+ES_VERSE_CARDS = True
 _CARD_MANIFEST = None
 _CARD_MANIFEST_DIRTY = False
 
@@ -2990,25 +3091,25 @@ def _set_card_hash(key, h):
     _CARD_MANIFEST_DIRTY = True
 
 
-def _ensure_verse_card(book, num, v, stem, text, card_rel, lang="en"):
-    """(Re)render the verse's og:image card only when needed. A hash MISMATCH (verse
-    text or CARD_TEMPLATE_VERSION changed) forces a re-render; an existing card with no
-    manifest entry is trusted and seeded. Returns card_rel, or None if Pillow/fonts are
-    unavailable (the caller then falls back to the branded default og:image)."""
-    card_path = os.path.join(OUT, card_rel)
+def _ensure_verse_card(book, num, v, stem, text, lang="en"):
+    """The card's public URL, publishing it first if it is new or its verse changed.
+
+    ⚠ MANIFEST FIRST, NETWORK SECOND. A matching hash means the card is already in the
+    bucket, so the URL comes back without touching S3 — that is what lets a build with no
+    credentials still emit correct og:image tags for every published card rather than
+    silently stripping the art off the whole site. Returns None only when this ONE card
+    could not be published (no Pillow, no fonts, or no store), and the caller falls back
+    to the branded default for it alone."""
     key = f"{stem}-{v}" + (".es" if lang == "es" else "")
+    name = key + ".png"
     want = _card_hash(text)
-    have = _card_manifest().get(key)
-    if os.path.exists(card_path):
-        if have == want:
-            return card_rel
-        if have is None:                 # pre-existing card from before the manifest — trust + seed
-            _set_card_hash(key, want)
-            return card_rel
-    if _render_verse_card(book, num, v, text, card_path, lang):
-        _set_card_hash(key, want)
-        return card_rel
-    return None
+    if _card_manifest().get(key) == want:
+        return card_url(name)                       # already published, unchanged
+    data = _render_verse_card(book, num, v, text, None, lang)
+    if not data or not upload_card(name, data):
+        return None
+    _set_card_hash(key, want)
+    return card_url(name)
 
 
 def save_card_manifest():
@@ -3018,16 +3119,20 @@ def save_card_manifest():
 
 
 def report_card_budget():
+    """Reports what is PUBLISHED now that cards live in S3, rather than what is in the
+    tree. The old size warning retired with the problem it warned about — the bucket has
+    no 1 GB cap. What it still watches for is a PNG left behind in img/v/, because that
+    is 38 KB of Pages payload back in the repo, which is the whole thing this move
+    removed. Anything it finds there is a regression, not a leftover to shrug at."""
+    published = len(_card_manifest())
+    msg = f"   verse cards: {published:,} published to S3"
     cdir = os.path.join(OUT, "img", VERSE_DIR)
-    if not os.path.isdir(cdir):
-        return
-    pngs = [f for f in os.listdir(cdir) if f.endswith(".png")]
-    mb = sum(os.path.getsize(os.path.join(cdir, f)) for f in pngs) / (1024 * 1024)
-    over = mb >= CARD_BUDGET_WARN_MB
-    msg = f"{'⚠  ' if over else '   '}verse cards: {len(pngs)} PNGs, {mb:.0f} MB"
-    if over:
-        msg += (" — approaching the ~1 GB GitHub Pages publish cap; plan smaller/JPEG "
-                "cards, per-chapter cards, or a separate image host before broad coverage")
+    stray = [f for f in os.listdir(cdir) if f.endswith(".png")] if os.path.isdir(cdir) else []
+    if stray:
+        mb = sum(os.path.getsize(os.path.join(cdir, f)) for f in stray) / (1024 * 1024)
+        msg = (f"⚠  verse cards: {published:,} published to S3, but {len(stray):,} PNG(s) "
+               f"({mb:.0f} MB) are still in img/{VERSE_DIR}/ — repo weight the S3 move exists "
+               f"to remove")
     print(msg)
 
 
@@ -3063,11 +3168,9 @@ def build_verse_stubs(book, num, content, lang="en"):
         # per-verse og:image card — reused across builds, but re-rendered when the verse
         # text changed (see _ensure_verse_card); falls back to the branded default if
         # Pillow/fonts are absent.
-        card_rel = (_ensure_verse_card(book, num, v, stem, text,
-                                       f"img/{VERSE_DIR}/{stem}-{v}{sfx}.png", lang)
-                    if (ES_VERSE_CARDS or not es) else None)
-        og_image = (f"{SITE_URL}/{card_rel}" if card_rel
-                    else (OG_IMAGE_ES if es else OG_IMAGE))
+        card = (_ensure_verse_card(book, num, v, stem, text, lang)
+                if (ES_VERSE_CARDS or not es) else None)
+        og_image = card or (OG_IMAGE_ES if es else OG_IMAGE)
         out = _verse_stub_html(ref, desc, target, chfile, stub_url, og_image, lang)
         open(os.path.join(vdir, f"{stem}-{v}{sfx}.html"), "w",
              encoding="utf-8").write(out)
