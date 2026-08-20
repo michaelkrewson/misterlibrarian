@@ -225,7 +225,7 @@ DICTIONARY = [
     ("arum", "arum / arummim", "עָרוּם / עֲרוּמִּים", "arum / arummim",
      "'Crafty' and 'naked' — nearly identical Hebrew words; the pun straddles the Genesis 2/3 chapter break.", (3, 1)),
     ("bara", "bara", "בָּרָא", "bara",
-     "'Create' — a verb reserved for God alone in the Bible; marks the thresholds: cosmos (1:1), animal life (1:21), humanity (1:27). ⚠ Psalm 51:12 (English 51:10) is where that restriction does its sharpest work: 'a clean heart — CREATE one for me, God'. Because no human being ever baras anything, and because bara is not the ordinary word for making or shaping (asah, yatsar), the request is not to be improved but for the act of Genesis 1:1 performed on a heart. The whole shelf keeps the verb — KJV 'Create in me a clean heart', RV 'Crea en mi', NWT 'Create in me even a pure heart' — and its force depends entirely on knowing how restricted the word is.", (1, 21)),
+     "'Create' — a verb reserved for God alone in the Bible; marks the thresholds: cosmos (1:1), animal life (1:21), humanity (1:27). ⚠ Psalm 51:12 (English 51:10) is where that restriction does its sharpest work: 'a clean heart — CREATE one for me, God'. Because no human being ever baras anything, and because bara is not the ordinary word for making or shaping (asah, yatsar), the request is not to be improved but for the act of Genesis 1:1 performed on a heart. The whole shelf keeps the verb — KJV 'Create in me a clean heart', RV 'Crea en mi', NWT 'Create in me even a pure heart' — and its force depends entirely on knowing how restricted the word is. \u26a0 <a href=\"numbers-16.html#n16-25\">Numbers 16:30</a> (already on these pages) is the other place the restriction is doing argumentative work: Moses stakes his commission on whether Jehovah will <em>b'riah yivra</em>, 'create a creation' \u2014 a cognate accusative pairing the noun with the verb \u2014 and only two versions checked here keep the doubling (NWT 1984, TNM 1987); the rest read 'make a new thing'.", (1, 21)),
     ("brit", "brit", "בְּרִית", "brit",
      "Covenant. First promised at 6:18, first enacted (with all flesh, unconditionally) in Genesis 9 — the word that structures the rest of the Bible.", (6, 18)),
     ("chen", "chen", "חֵן", "chen",
@@ -596,7 +596,7 @@ DICTIONARY = [
     ("tsadaq", "tsadaq", "צָדַק", "tsadqah",
      "To BE IN THE RIGHT, be righteous — the root of tsedaqah, 'righteousness,' the noun 'counted' to Abram when he believed (15:6). Its most startling appearance is Judah's confession: tsadqah mimmenni, 'she is more righteous than I' (38:26) — the comparative form, spoken in public by a patriarch about the Canaanite widow who tricked him, and the first honest sentence he speaks in the Bible. The same root gives Noah his description ('a righteous man,' 6:9) and Abraham his argument at Sodom ('will you sweep away the righteous with the wicked?', 18:23).", (38, 26)),
     ("bala", "bala", "בָּלַע", "bala",
-     "To SWALLOW UP — a verb of complete, physical consumption: the ground that swallows Korah's company alive (Numbers 16:32), the great fish that swallows Jonah (Jonah 2:1), Pharaoh's lean cows swallowing the fat ones in a dream that turns out to mean famine (Genesis 41:4). Lamentations 2 uses it four times in sixteen verses (vv2, 5 twice, 16) for the destruction of Jerusalem — 'the Lord has swallowed up without mercy' — and then, in a single cruel turn, hands the identical verb to the ENEMY's own gloating mouth: 'we have swallowed her up!' (v16). The same act of consumption, first attributed to God, then repeated by the people who carried it out, as if both were true at once.", ("Lamentations", 2, 2)),
+     "To SWALLOW UP — a verb of complete, physical consumption: the ground that swallows Korah's company alive (<a href=\"numbers-16.html#n16-31\">Numbers 16:32</a>, already on these pages), paired there with <em>patzah</em>, the mouth that opens before it closes, the great fish that swallows Jonah (Jonah 2:1), Pharaoh's lean cows swallowing the fat ones in a dream that turns out to mean famine (Genesis 41:4). Lamentations 2 uses it four times in sixteen verses (vv2, 5 twice, 16) for the destruction of Jerusalem — 'the Lord has swallowed up without mercy' — and then, in a single cruel turn, hands the identical verb to the ENEMY's own gloating mouth: 'we have swallowed her up!' (v16). The same act of consumption, first attributed to God, then repeated by the people who carried it out, as if both were true at once.", ("Lamentations", 2, 2)),
     ("perets", "perets", "פֶּרֶץ", "perets",
      "A BREACH — a gap burst through a wall; from parats, to break out. The midwife's cry at the birth of Judah's twin is a pun on the name she is giving him: 'How you have BROKEN OUT (paratsta) — a breach (perets) upon you!' (38:29). It sounds like dismay and is kept as a name. Perez matters far past this chapter: Ruth closes by tracing 'the generations of Perez' ten names down to DAVID (Ruth 4:18-22), and Matthew opens the New Testament with the same line, naming 'Perez and Zerah by Tamar' (Matthew 1:3). KJV spells him Pharez, Douay (through the Greek) Phares.", (38, 29)),
     ("malakh", "mal'akh", "מַלְאָךְ", "mal'akh",
@@ -703,6 +703,21 @@ DICTIONARY = [
      "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
     ("nasi", "nasi", "נָשִׂיא", "nasi",
      "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. In Numbers the plural nesi'im titles the twelve tribal CHIEFTAINS who stand with Moses at the census (Numbers 1:16, 44) — one lifted-up head per tribe; and it later titles Ezekiel's coming ruler. Leviticus 4:22 (already on these pages) puts the same title under the same law as everyone else: a nasi's unintentional sin gets its own graduated sacrifice, distinct from a commoner's only in which animal he brings, never in whether he needs one. The word gets its longest single workout in <a href=\"numbers-7.html\">Numbers 7</a> (already on these pages), where all twelve chieftains bring an identical dedication-offering, one per day, in Numbers 2's own marching order.", (23, 6)),
+    ("machtah", "machtah", "מַחְתָּה", "machtah",
+     "A CENSER — a fire-pan for carrying live coals with incense on them. The same object, and the same three actions, appear in the two places the Bible uses it to kill: <a href=\"leviticus-10.html#v10-1\">Leviticus 10:1</a> has Nadab and Abihu 'each take his censer, put fire in it, and place incense on the fire' and offer strange fire, and the next verse has fire come out and consume them; <a href=\"numbers-16.html#n16-16\">Numbers 16:18</a> has two hundred and fifty men do exactly that and stand at the entrance of the tent, and <a href=\"numbers-16.html#n16-34\">16:35</a> ends the same way. ⚠ The word is neutral in itself — the tabernacle's own bronze fire-pans are <em>machtot</em> (<a href=\"exodus-27.html#v27-3\">Exodus 27:3</a>, rendered 'firepans' there for the altar-tool) and the high priest carries one legitimately into the Most Holy on the Day of Atonement (<a href=\"leviticus-16.html#v16-12\">Leviticus 16:12</a>). What kills is not the pan but who is holding it.",
+     ("Numbers", 16, 6)),
+    ("patzah", "patzah", "פָּצָה", "patzah",
+     "TO OPEN WIDE — used of a mouth, and in the narrative books almost only of the ground. ⚠ The form <em>patzetah</em>, 'she opened wide', occurs in exactly THREE verses in the whole Hebrew Bible, and the list is the whole point: <a href=\"genesis-4.html#v4-11\">Genesis 4:11</a>, where Cain is cursed 'from the ground, which has opened its mouth to receive your brother's blood from your hand'; <a href=\"numbers-16.html#n16-31\">Numbers 16:30, 32</a>, where the ground opens its mouth and takes Korah's company down alive; and Deuteronomy 11:6 (not yet on these pages), which retells that same day. So the earth opens its mouth twice in the story of the Hebrew Bible — once to receive a murdered brother's blood, once to receive living men — and the second time is written in the words of the first. This translation prints both identically so the echo can be seen. Elsewhere the verb is ordinary: Jephthah 'opened his mouth' in a vow (Judges 11:35-36), and the psalms use it of enemies gaping.",
+     ("Numbers", 16, 30)),
+    ("qahal", "qahal", "קָהָל", "qahal",
+     "THE ASSEMBLY — a body summoned and standing together, from a root meaning to convoke. Distinguish it from <em><a href=\"dictionary.html#edah\">edah</a></em>, the congregation: an <em>edah</em> is the community as a standing fact, an <em>qahal</em> is that community CALLED and gathered. The Greek Old Testament renders <em>qahal</em> with <em><a href=\"dictionary.html#ekklesia\">ekklēsia</a></em>, which is why 'congregation' rather than 'church' is this project's fixed New Testament rendering. ⚠ <a href=\"numbers-16.html#n16-16\">Numbers 16</a> runs the root through a whole argument: the rebels <em>assemble</em> against Moses (v3), Korah <em>assembles</em> the whole congregation against him (v19, a causative — one man convening a nation), and the men who were swallowed 'perished from the midst of the <em>qahal</em>' (v33). The thing Korah invoked as his warrant — 'the assembly of Jehovah' — is what he is finally cut out of.",
+     ("Numbers", 16, 3)),
+    ("edah", "edah", "עֵדָה", "edah",
+     "THE CONGREGATION — the community of Israel as a body, from a root meaning to appoint or meet by arrangement (the same root as <em><a href=\"dictionary.html#moadim\">mo'ed</a></em>, an appointed time, and <em>ohel mo'ed</em>, the tent of meeting). Distinct from <em><a href=\"dictionary.html#qahal\">qahal</a></em>, the assembly actually convened; this translation keeps the two apart everywhere, so <a href=\"leviticus-4.html#v4-13\">Leviticus 4:13</a> can hide a matter 'from the eyes of the assembly' while <a href=\"numbers-15.html#n15-22\">Numbers 15:24</a> hides it 'from the eyes of the congregation' — the same idiom with the nouns swapped, which is invisible if both are levelled to 'community'. ⚠ It is also the word Korah weaponises: 'the whole <em>edah</em>, all of them, are holy' (<a href=\"numbers-16.html#n16-5\">Numbers 16:3</a>) is a quotation of <a href=\"leviticus-19.html#v19-2\">Leviticus 19:2</a>, addressed to the same body — the rebellion argues from the law rather than against it.",
+     ("Numbers", 16, 3)),
+    ("rav_lakhem", "rav lakhem", "רַב-לָכֶם", "rav lakhem",
+     "'YOU HAVE TOO MUCH' — two words, an idiom of enough-already: you have taken more than your share, you have gone far enough. ⚠ In <a href=\"numbers-16.html#n16-5\">Numbers 16</a> it is said twice, in opposite directions, four verses apart: Korah says it to Moses and Aaron (v3) and Moses hands it straight back to Korah (v7, 'you have too much, sons of Levi'). The chapter never remarks on the repetition, and it only reads as a boomerang if a translation returns it in the same words — KJV, Geneva, ASV and NIV all do; NWT 1984 and TNM 1987 do; and both of their own later revisions split it into two different idioms and lose it. The same chapter does the identical trick with <em>ha-me'at</em>, 'is it a small thing' (vv9 and 13). Moses uses the phrase once more, of himself, at Deuteronomy 3:26 (not yet on these pages), where God tells him <em>rav lakh</em> — enough from you — and refuses to discuss the land again.",
+     ("Numbers", 16, 3)),
     ("sheqel", "sheqel", "שֶׁקֶל", "sheqel",
      "A WEIGHT — not yet, at this point in the story, a coin: Israel would strike no currency of its own for well over a thousand years yet, so every 'shekel' named across the Torah is a unit of WEIGHED silver or gold, never a stamped piece of metal. The root is shaqal, 'to weigh' — the word names the ACT before it ever names the object. Abraham 'weighed out' four hundred shekels of silver for the cave of Machpelah (23:16) — a transaction reported as an act of weighing, not paying. The priestly law later fixes one controlled standard against every local custom, the 'shekel of the sanctuary' at twenty gerahs (<a href=\"exodus-30.html#v30-13\">Exodus 30:13</a>, already on these pages) — and <a href=\"numbers-7.html\">Numbers 7</a> (already on these pages) is where that standard gets its longest workout: twelve identical gifts, weighed and summed twelve times over, converging on an exact total — two thousand four hundred shekels of silver, a hundred twenty of gold — down to the last unit of weight.", (23, 16)),
     # ---- Genesis 24 (Hebrew) ----
@@ -4733,13 +4748,26 @@ ENCYCLOPEDIA = [
               "condemns those who 'for pay abandoned themselves to the error of Balaam' (1:11), and 2 Peter 2:15 and "
               "Revelation 2:14 use him the same way. Greed dressed up as prophecy.",
          refs=[("Jude", 1, 11)], videos=[]),
+    dict(slug="dathan-abiram", name="Dathan and Abiram", kind="person",
+         aliases=["Dathan and Abiram", "Dathan", "Abiram"],
+         desc="Reubenites, sons of Eliab, who join Korah's revolt in "
+              "<a href=\"numbers-16.html#n16-1\">Numbers 16</a> and whose grievance is a different one from "
+              "his. Korah is a Levite and wants the priesthood; Dathan and Abiram never mention priesthood "
+              "at all. Their complaint (16:12-14) is about land and leadership — and it contains the most "
+              "startling sentence in the chapter, in which they call EGYPT 'a land flowing with milk and "
+              "honey', the Torah's own formula for Canaan, and accuse Moses of bringing them out of it to "
+              "kill them. They refuse a summons twice with the same three words, 'we will not come up', and "
+              "die standing in the doors of their own tents when the ground opens. ⚠ Deuteronomy 11:6 (not "
+              "yet on these pages) retells the day naming only these two and not Korah at all — one of "
+              "three witnesses to the event that do not agree about who died how.",
+         refs=[("Numbers", 16, 12)], videos=[]),
     dict(slug="korah", name="Korah", kind="person", aliases=["Korah"],
          desc="A Levite who led a revolt against the authority of Moses and Aaron in the wilderness, claiming the "
-              "whole congregation was holy and needed no mediators; the earth opened and swallowed him and his "
-              "company (Numbers 16). Jude makes him the type of rebellion against God-given leadership: the false "
+              "whole congregation was holy and needed no mediators; the earth opened and swallowed his company alive, and fire consumed the two hundred and fifty men "
+              "holding censers (<a href=\"numbers-16.html#n16-31\">Numbers 16</a>). \u26a0 What happened to Korah HIMSELF is not stated by that chapter: v32 says the earth took \"every human being who belonged to Korah\", and he was among the censer-bearers of v18. Numbers 26:10 says the earth took him too, and adds that his sons did not die \u2014 which is why the Psalter has a collection attributed to them; Deuteronomy 11:6 retells the day without him. Jude makes him the type of rebellion against God-given leadership: the false "
               "teachers 'perished in the rebellion (antilogia) of Korah' (1:11) — the third of his three named "
               "ruins, after Cain's murder and Balaam's greed.",
-         refs=[("Jude", 1, 11), ("Exodus", 6, 21)], videos=[]),
+         refs=[("Numbers", 16, 1), ("Jude", 1, 11), ("Exodus", 6, 21)], videos=[]),
     dict(slug="sodom", name="Sodom (and Gomorrah)", kind="place", aliases=["Sodom", "Gomorrah"],
          desc="The chief of the cities of the plain by the Dead Sea, a byword for wickedness, destroyed by fire and "
               "sulphur from Jehovah in the days of Abraham and Lot (Genesis 18-19). LOT escapes; his wife looks back "
@@ -6419,6 +6447,12 @@ XREFS = [
     (("Matthew", 9, 9), ("Matthew", 4, 19), "akolouthei moi, 'follow me' — the same bare call and the same instant obedience that pulled two fishermen off their nets; a tax collector rises from a booth on the identical two words"),
     (("Matthew", 9, 18), ("Matthew", 8, 2), "proskyneō, a fifth time — the magi, Herod, the devil, a leper, and now an unnamed synagogue ruler; every step widens who bows, and none yet settles what the gesture means"),
     (("Matthew", 9, 20), ("Numbers", 15, 38), "kraspedon — the same word the Greek Old Testament uses for the tassels the Law commands, which means the text is quietly showing Jesus wearing them when the bleeding woman touches his fringe"),
+    (("Numbers", 16, 30), ("Genesis", 4, 11), "patzetah — 'she opened her mouth', of the ground. The form occurs in only three verses in the Hebrew Bible: there it opens to receive a murdered brother's blood, here to receive living men"),
+    (("Numbers", 16, 3), ("Leviticus", 19, 2), "'the whole congregation, all of them, are holy' — Korah's premise is a quotation of this verse, addressed to the same body; the rebellion argues FROM the law, not against it"),
+    (("Numbers", 16, 18), ("Leviticus", 10, 1), "each man takes his censer, puts fire in it and lays incense on it — the identical three actions that killed Nadab and Abihu, and the same ending two verses later"),
+    (("Numbers", 16, 2), ("Genesis", 6, 4), "anshei shem, 'men of renown' — the phrase occurs in exactly two verses in the Hebrew Bible, and the other one describes the generation before the flood"),
+    (("Numbers", 16, 30), ("Genesis", 1, 1), "bara, to create — Moses asks Jehovah to 'create a creation', a cognate accusative on the verb of Genesis 1, which in the Hebrew Bible never has any subject but God"),
+    (("Numbers", 16, 1), ("Exodus", 6, 21), "Korah listed among the Kohathites without comment, in the genealogy that certifies Moses and Aaron — the same family tree that produces the challenge to them"),
     (("Numbers", 15, 39), ("Numbers", 13, 2), "tur, to scout — the governing verb of the scouting mission, used twelve times across Numbers 13-14 and then once more here, negated: 'you shall not go SCOUTING after your own heart and your own eyes.' No version on either shelf keeps it"),
     (("Numbers", 15, 30), ("Exodus", 14, 8), "b'yad ramah, 'with a high hand' — the identical two words, used of Israel marching out of Egypt with its head up, and here of the one sin the sacrificial system will not cover"),
     (("Numbers", 15, 16), ("Exodus", 12, 49), "'one law for the native and for the sojourner' — the same formula, stated at the Passover and repeated here, where the chapter piles it up five times in fifteen verses"),
@@ -8594,6 +8628,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num16": dict(era="exodus",
+                 when="Korah, a Levite and first cousin to Moses and Aaron, joins with three Reubenites &mdash; Dathan, Abiram and On &mdash; and two hundred and fifty chieftains of the congregation, and challenges the whole arrangement of authority: the entire congregation is holy, so why do you lift yourselves above it? Moses proposes a test with censers and incense. Dathan and Abiram refuse a summons twice, call Egypt a land flowing with milk and honey, and accuse Moses of setting himself up as a prince. The ground splits open under the tents and takes them down alive, and fire comes out from Jehovah and consumes the two hundred and fifty men holding censers.",
+                 clock="&#9888; Undated within the chapter, and the wilderness narrative gives no fixed point again until Numbers 20. It falls somewhere inside the thirty-eight years imposed at <a href=\"numbers-14.html\">Numbers 14</a> &mdash; after the sentence, before the arrival at Kadesh in the fortieth year &mdash; so on the early-date chronology this project foregrounds, some time between c. 1444 and c. 1407 BC. The chapter's own division is worth noting alongside the date: the Hebrew ends at v35, where every English Bible runs to v50, because their 16:36&ndash;50 is Numbers 17:1&ndash;15 in the Masoretic text."),
     "num15": dict(era="exodus",
                  when="Legislation, not narrative, and placed where it is hardest to place: immediately after the generation is sentenced to die in the wilderness, God gives laws for &lsquo;when you come into the land.&rsquo; Grain and drink offerings become a fixed, scaled accompaniment to every animal offering; the sojourner is granted the same statute, the same law and the same atonement as the native, five times over; a loaf is lifted out of the first dough of every household. Then the line the whole sacrificial system runs along &mdash; everything here covers sin done in error, and nothing covers the sin done &lsquo;with a high hand.&rsquo; A man gathering sticks on the sabbath is held in custody until a ruling comes, and executed. The chapter ends on tassels and a cord of blue, tied to the corners of a garment so that the eyes have something to catch on.",
                  clock="&#9888; Undated within the chapter, and deliberately so &mdash; it is the first block of law on the far side of the forty-year sentence passed in <a href=\"numbers-14.html\">Numbers 14</a>, and the narrative clock does not restart until Numbers 20. The setting is still Kadesh in the wilderness of Paran, in or shortly after the second year out of Egypt; on the early-date chronology this project foregrounds, c. 1444 BC. The sabbath episode of vv32&ndash;36 is the only dated-by-context event in it, and it is dated only by &lsquo;while the children of Israel were in the wilderness&rsquo; &mdash; which is the whole of the intervening thirty-eight years."),
@@ -12177,6 +12214,78 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    # ---- Números 16 ----
+    "machtah": ("majtá",
+        "UN INCENSARIO —una badila para llevar brasas vivas con incienso encima. El mismo objeto, y las "
+        "mismas tres acciones, aparecen en los dos lugares en que la Biblia lo usa para matar: "
+        "<a href=\"leviticus-10.es.html#v10-1\">Levítico 10:1</a> tiene a Nadab y Abihú «tomando cada uno "
+        "su incensario, poniendo fuego en él y colocando incienso sobre el fuego», y el versículo "
+        "siguiente hace salir fuego y consumirlos; <a href=\"numbers-16.es.html#n16-16\">Números 16:18</a> "
+        "tiene a doscientos cincuenta hombres haciendo exactamente eso, y el 16:35 termina igual. ⚠ La "
+        "palabra es neutra en sí misma: las badilas de bronce del propio tabernáculo son <em>majtot</em> "
+        "(<a href=\"exodus-27.es.html#v27-3\">Éxodo 27:3</a>) y el sumo sacerdote lleva una legítimamente "
+        "al Lugar Santísimo el Día de la Expiación (<a href=\"leviticus-16.es.html#v16-12\">Levítico "
+        "16:12</a>). Lo que mata no es la badila, sino quién la sostiene."),
+    "patzah": ("patzá",
+        "ABRIR DE PAR EN PAR —de una boca, y en los libros narrativos casi solo de la tierra. ⚠ La forma "
+        "<em>patzetá</em>, «ella abrió», aparece en exactamente TRES versículos de toda la Biblia hebrea, "
+        "y la lista es lo interesante: <a href=\"genesis-4.es.html#v4-11\">Génesis 4:11</a>, donde Caín es "
+        "maldito «de la tierra, que abrió su boca para recibir de tu mano la sangre de tu hermano»; "
+        "<a href=\"numbers-16.es.html#n16-31\">Números 16:30, 32</a>, donde la tierra abre su boca y se "
+        "lleva viva a la compañía de Coré; y Deuteronomio 11:6 (todavía no en estas páginas), que recuenta "
+        "ese mismo día. Así que la tierra abre su boca dos veces en la narrativa de la Biblia hebrea "
+        "—una para recibir la sangre de un hermano asesinado, otra para recibir hombres vivos— y la "
+        "segunda está escrita con las palabras de la primera."),
+    "qahal": ("qahal",
+        "LA ASAMBLEA —un cuerpo convocado y reunido, de una raíz que significa convocar. Distíngase de "
+        "<em><a href=\"diccionario.html#edah\">edá</a></em>, la congregación: una <em>edá</em> es la "
+        "comunidad como hecho permanente; un <em>qahal</em> es esa comunidad LLAMADA y reunida. La Biblia "
+        "griega vierte <em>qahal</em> con <em>ekklēsía</em>, razón por la cual «congregación» y no "
+        "«iglesia» es la traducción fija de este proyecto en el Nuevo Testamento. ⚠ "
+        "<a href=\"numbers-16.es.html#n16-16\">Números 16</a> hace correr la raíz por todo un argumento: "
+        "los rebeldes se <em>reúnen</em> contra Moisés (v3), Coré <em>reúne</em> contra él a toda la "
+        "congregación (v19, un causativo: un hombre convocando a una nación), y los tragados «perecieron "
+        "de en medio del <em>qahal</em>» (v33). Aquello que Coré invocó como su título —la asamblea de "
+        "Jehová— es de lo que finalmente queda cortado."),
+    "edah": ("edá",
+        "LA CONGREGACIÓN —la comunidad de Israel como cuerpo, de una raíz que significa señalar o citarse "
+        "(la misma de <em><a href=\"diccionario.html#moadim\">moed</a></em>, tiempo señalado, y de "
+        "<em>ohel moed</em>, la tienda de reunión). Distinta de <em><a href=\"diccionario.html#qahal\">"
+        "qahal</a></em>, la asamblea efectivamente convocada; esta traducción las mantiene separadas "
+        "siempre, de modo que <a href=\"leviticus-4.es.html#v4-13\">Levítico 4:13</a> puede ocultar algo "
+        "«a los ojos de la asamblea» mientras <a href=\"numbers-15.es.html#n15-22\">Números 15:24</a> lo "
+        "oculta «a los ojos de la congregación» —el mismo modismo con los sustantivos cambiados, algo "
+        "invisible si ambos se aplanan a «comunidad». ⚠ Es también la palabra que Coré convierte en arma: "
+        "«toda la <em>edá</em>, todos ellos, son santos» (<a href=\"numbers-16.es.html#n16-5\">Números "
+        "16:3</a>) es una cita de <a href=\"leviticus-19.es.html#v19-2\">Levítico 19:2</a>, dirigida al "
+        "mismo cuerpo: la rebelión argumenta DESDE la ley, no contra ella."),
+    "rav_lakhem": ("rav lajem",
+        "«OS BASTA YA» —dos palabras, un modismo de ya-está-bien: os habéis tomado más de la cuenta, "
+        "habéis ido bastante lejos. ⚠ En <a href=\"numbers-16.es.html#n16-5\">Números 16</a> se dice dos "
+        "veces, en direcciones opuestas y con cuatro versículos de diferencia: Coré se lo dice a Moisés y "
+        "a Aarón (v3) y Moisés se lo devuelve a Coré (v7, «os basta ya, hijos de Leví»). El capítulo nunca "
+        "comenta la repetición, y solo se lee como búmeran si la traducción la devuelve con las mismas "
+        "palabras: RV60, RV 1909 y NVI lo hacen; NWT 1984 y TNM 1987 lo hacen; y las revisiones "
+        "posteriores de estas dos la parten en dos expresiones distintas y la pierden. El mismo capítulo "
+        "hace idéntico truco con <em>ha-me'at</em>, «¿es poco?» (vv9 y 13)."),
+    "sheol": ("Seol",
+        "EL SEOL —el lugar de los muertos en hebreo. No es un lugar de castigo ni un infierno: es adonde "
+        "van los muertos, buenos y malos, y el hebreo no lo describe como un tribunal. ⚠ La distinción "
+        "importa en <a href=\"numbers-16.es.html#n16-25\">Números 16:30, 33</a>, donde la compañía de Coré "
+        "baja allí <strong>viva</strong> —lo excepcional no es el destino sino el estado en que llegan. "
+        "El estante se reparte: la ASV y la NWT 1984 transliteran «Sheol», la RV60 «el Seol», la RV 1909 "
+        "«el abismo», la KJV 'the pit', la NVI «los dominios de la muerte»; ⚠ y la Douay-Rheims lee "
+        "«hell», siguiendo el <em>infernum</em> de la Vulgata —una lectura con siglos de consecuencias "
+        "detrás y que el hebreo no sostiene."),
+    "bara": ("bará",
+        "«CREAR» —un verbo reservado a Dios en la Biblia; marca los umbrales: el cosmos (Génesis 1:1), la "
+        "vida animal (1:21), la humanidad (1:27). ⚠ El Salmo 51:12 es donde esa restricción hace su "
+        "trabajo más afilado: «un corazón limpio —CRÉAME uno, oh Dios»; como ningún ser humano <em>bará</em> "
+        "nada nunca, la petición no es de mejora sino del acto de Génesis 1:1 aplicado a un corazón. ⚠ "
+        "<a href=\"numbers-16.es.html#n16-25\">Números 16:30</a> es el otro lugar donde la restricción "
+        "argumenta: Moisés apuesta su comisión a si Jehová hará <em>b'riá yivrá</em>, «crear una creación» "
+        "—un acusativo cognado que empareja el sustantivo con el verbo— y solo dos versiones comprobadas "
+        "aquí conservan la duplicación (NWT 1984 y TNM 1987); el resto lee «hiciere algo nuevo»."),
     # ---- Éxodo 24 ----
     "sefer": ("sefer",
         "LIBRO, rollo — de una raíz que significa contar o relatar. Su primer uso nombrando una "
@@ -14654,7 +14763,7 @@ DICTIONARY_ES = {
         "que hubo nación». Ambas prometen rescate al otro lado de la frase idéntica, la "
         "crisis de una sola familia convertida, en un libro posterior, en la de todos."),
     "bala": ("bala", "DEVORAR, TRAGAR — un verbo de consumo completo y físico: la tierra "
-        "que devora viva a la compañía de Coré (Números 16:32), el gran pez que devora a "
+        "que devora viva a la compañía de Coré (<a href=\"numbers-16.es.html#n16-31\">Números 16:32</a>, ya en estas páginas), el gran pez que devora a "
         "Jonás (Jonás 2:1), las vacas flacas de Faraón que devoran a las gordas en un "
         "sueño que resulta significar hambre (Génesis 41:4). Lamentaciones 2 lo usa "
         "cuatro veces en dieciséis versículos (vv. 2, 5 dos veces, 16) para la "
@@ -15405,6 +15514,28 @@ DICTIONARY_ES = {
 }
 
 ENCYCLOPEDIA_ES = {
+    "korah": ("Coré",
+        "Un levita que encabezó una revuelta contra la autoridad de Moisés y Aarón en el desierto, "
+        "sosteniendo que la congregación entera era santa y no necesitaba mediadores. La tierra abrió su "
+        "boca y se tragó viva a su compañía, y el fuego consumió a los doscientos cincuenta hombres que "
+        "sostenían incensarios (<a href=\"numbers-16.es.html#n16-31\">Números 16</a>). ⚠ Lo que fue de "
+        "Coré MISMO no lo dice ese capítulo: el v32 dice que la tierra se llevó «a todo ser humano que "
+        "pertenecía a Coré», y él estaba entre los portadores de incensario del v18. Números 26:10 dice "
+        "que la tierra se lo llevó también, y añade que sus hijos no murieron —razón por la cual el "
+        "Salterio tiene una colección atribuida a ellos—; Deuteronomio 11:6 recuenta el día sin él. Judas "
+        "lo convierte en el tipo de la rebelión contra el liderazgo dado por Dios: los falsos maestros "
+        "«perecieron en la rebelión de Coré» (1:11), la tercera de sus tres ruinas nombradas, tras el "
+        "asesinato de Caín y la codicia de Balaam."),
+    "dathan-abiram": ("Datán y Abiram",
+        "Rubenitas, hijos de Eliab, que se suman a la revuelta de Coré en "
+        "<a href=\"numbers-16.es.html#n16-1\">Números 16</a> y cuyo agravio es distinto del suyo. Coré es "
+        "levita y quiere el sacerdocio; Datán y Abiram no mencionan el sacerdocio en absoluto. Su queja "
+        "(16:12-14) va de tierra y de mando —y contiene la frase más asombrosa del capítulo, en la que "
+        "llaman a EGIPTO «una tierra que mana leche y miel», la fórmula que la Torá reserva para Canaán, "
+        "y acusan a Moisés de haberlos sacado de allí para matarlos. Rechazan una citación dos veces con "
+        "las mismas tres palabras, «no subiremos», y mueren de pie a la puerta de sus propias tiendas "
+        "cuando la tierra se abre. ⚠ Deuteronomio 11:6 (todavía no en estas páginas) recuenta el día "
+        "nombrando solo a estos dos y no a Coré."),
     "abaddon-apollyon": ("Abadón / Apolión",
         "El rey de las langostas liberadas del abismo, nombrado dos veces en un mismo "
         "aliento — una en hebreo, otra en griego (Apocalipsis 9:11). <em>Abadón</em> "
@@ -16355,6 +16486,45 @@ ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "num16": [dict(
+        file="num16-botticelli-punishment-of-korah.jpg",
+        title="The Punishment of Korah",
+        title_es="El castigo de Coré",
+        artist="Sandro Botticelli",
+        year="1481–82",
+        location="Fresco, the Sistine Chapel, Vatican City",
+        location_es="Fresco, Capilla Sixtina, Ciudad del Vaticano",
+        alt="A wide Renaissance fresco. In the centre, men in bright robes stagger back from a stone "
+            "altar, dropping golden censers; one figure with rays of light from his head raises a rod "
+            "toward them, and a bearded man in a tall blue-and-gold mitre swings a censer calmly amid "
+            "the confusion. At the left, figures fall into broken ground. At the right, a crowd stoops "
+            "to pick up stones. Behind everything stands a Roman triumphal arch carrying a Latin "
+            "inscription, with sea and hills beyond.",
+        note="Painted on the wall of the Sistine Chapel for Pope Sixtus IV, and composed as three "
+             "episodes read right to left: the crowd taking up stones, the censer test at the altar, "
+             "and the ground opening. Aaron, calmly swinging his censer in the middle of it, is painted "
+             "in a papal mitre. &#9888; The detail worth walking closer for is the arch &mdash; a "
+             "reproduction of the Arch of Constantine in Rome, carrying an inscription that is not from "
+             "Numbers at all: <em>NEMO SIBI ASSVMAT HONOREM NISI VOCATVS A DEO TANQVAM ARON</em>, "
+             "&lsquo;let no one take honour to himself unless he is called by God, as Aaron was&rsquo; "
+             "&mdash; Hebrews 5:4 (not yet on these pages). A fresco about a challenge to priestly "
+             "authority, in the pope&rsquo;s own chapel, with the answer written across the middle of it "
+             "in Latin. Whatever else this is, it is not a neutral illustration, and it is a great deal "
+             "more interesting for not being one.",
+        note_es="Pintado en el muro de la Capilla Sixtina para el papa Sixto IV, y compuesto como tres "
+                "episodios que se leen de derecha a izquierda: la multitud recogiendo piedras, la prueba "
+                "de los incensarios ante el altar, y la tierra abriéndose. Aarón, que agita su incensario "
+                "con calma en medio de todo, está pintado con mitra papal. &#9888; El detalle que merece "
+                "acercarse es el arco &mdash;una reproducción del Arco de Constantino de Roma&mdash; con "
+                "una inscripción que no procede de Números: <em>NEMO SIBI ASSVMAT HONOREM NISI VOCATVS A "
+                "DEO TANQVAM ARON</em>, «que nadie se tome para sí la honra si no es llamado por Dios, "
+                "como lo fue Aarón» &mdash;Hebreos 5:4 (todavía no en estas páginas). Un fresco sobre un "
+                "desafío a la autoridad sacerdotal, en la capilla del propio papa, con la respuesta "
+                "escrita en latín a través del centro. Sea lo que sea, no es una ilustración neutral, y "
+                "es bastante más interesante por no serlo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Botticcelli,_Sandro_-_The_Punishment_of_Korah_and_the_Stoning_of_Moses_and_Aaron_-_1481-82.jpg",
+    )],
     "num15": [dict(
         file="num15-samarkand-tallit-tzitzit.jpg",
         title="A Jewish Man in Samarkand, Wearing a Prayer Shawl, Prepared for Prayer",
@@ -16393,7 +16563,7 @@ CHAPTER_ART = {
         title="Joseph Sold by His Brothers",
         title_es="José vendido por sus hermanos",
         artist="Pietro Monaco, after Silvestro Manaigo",
-        year="1730&ndash;39",
+        year="1730–39",
         location="Engraving, The Metropolitan Museum of Art, New York",
         location_es="Grabado, Museo Metropolitano de Arte, Nueva York",
         alt="An 18th-century engraving of Joseph's brothers around a stone well, one man counting coins "
@@ -17002,7 +17172,7 @@ CHAPTER_ART = {
         artist_es="James Tissot",
         year="c. 1896–1902",
         location="The Jewish Museum, New York",
-        location_es="El Museo Jud&iacute;o, Nueva York",
+        location_es="El Museo Judío, Nueva York",
         alt="A gouache painting of a bearded craftsman inside a tent workshop, "
             "wearing a pointed cap, a blue striped tunic, and a heavy tan "
             "leather apron or hide draped and gathered over one arm. He "
@@ -17059,7 +17229,7 @@ CHAPTER_ART = {
         artist_es="James Tissot",
         year="circa 1896",
         location="The Jewish Museum, New York",
-        location_es="El Museo Jud&iacute;o, Nueva York",
+        location_es="El Museo Judío, Nueva York",
         alt="A gouache painting of an elderly bearded man in a pointed hood "
             "and striped robe, seated cross-legged on a woven mat, cutting "
             "a large piece of pale rose-colored cloth with scissors. He "
@@ -17114,7 +17284,7 @@ CHAPTER_ART = {
         artist_es="James Tissot",
         year="circa 1896",
         location="The Jewish Museum, New York",
-        location_es="El Museo Jud&iacute;o, Nueva York",
+        location_es="El Museo Judío, Nueva York",
         alt="A black-and-white line engraving of a rectangular wooden chest "
             "with a lattice-patterned exterior, resting on four short legs. "
             "Two long poles run through rings on its sides. On top, two "
@@ -17160,10 +17330,10 @@ CHAPTER_ART = {
         title="The Altar and the Laver",
         title_es="El altar y la fuente",
         artist="After Mortier, engraved for an 18th-century illustrated Bible",
-        artist_es="Seg&uacute;n Mortier, grabado para una Biblia ilustrada del siglo XVIII",
+        artist_es="Según Mortier, grabado para una Biblia ilustrada del siglo XVIII",
         year="18th century",
         location="The Phillip Medhurst Collection, St. George's Court, Kidderminster, England",
-        location_es="La Colecci&oacute;n Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
+        location_es="La Colección Phillip Medhurst, St. George's Court, Kidderminster, Inglaterra",
         alt="A black-and-white split engraving in two panels. On the left, "
             "under a heavy column and drapery, priests tend a rectangular "
             "wooden altar with a horned animal head laid on top, smoke "
@@ -18004,7 +18174,7 @@ CHAPTER_ART = {
         title_es="San Pablo predicando en Atenas",
         artist="Raphael",
         artist_es="Rafael",
-        year="c. 1515&ndash;1516",
+        year="c. 1515–1516",
         location="Royal Collection, on long-term loan to the Victoria and Albert Museum, London",
         location_es="Royal Collection, en préstamo permanente al Museo Victoria y Alberto, Londres",
         alt="A large tapestry-cartoon painting. A bearded man in a green tunic and orange-red "
@@ -18394,7 +18564,7 @@ CHAPTER_ART = {
         title_es="Curación del paralítico en la piscina de Betesda",
         artist="Bartolomé Esteban Murillo",
         artist_es="Bartolomé Esteban Murillo",
-        year="1667&ndash;1670",
+        year="1667–1670",
         location="National Gallery, London",
         location_es="National Gallery, Londres",
         alt="A large oil painting. At center, Christ in a lilac tunic and dark cloak stands and "
@@ -18490,7 +18660,7 @@ CHAPTER_ART = {
         title_es="La adoraci\u00f3n del Cordero m\u00edstico, panel central del Retablo de Gante",
         artist="Jan van Eyck",
         artist_es="Jan van Eyck",
-        year="c. 1430&ndash;1432",
+        year="c. 1430–1432",
         location="Saint Bavo Cathedral, Ghent",
         location_es="Catedral de San Bavón, Gante",
         alt="A detailed oil painting of a green meadow landscape. At the center, a white lamb "
@@ -18691,7 +18861,7 @@ CHAPTER_ART = {
         title_es="Los dos testigos, del Apocalipsis de Bamberg",
         artist="Unknown illuminator",
         artist_es="Iluminador desconocido",
-        year="c. 1000&ndash;1020",
+        year="c. 1000–1020",
         location="Bamberg State Library, Bamberg, Germany (MS A. II. 42)",
         location_es="Biblioteca Estatal de Bamberg, Bamberg, Alemania (MS A. II. 42)",
         alt="A page from an eleventh-century illuminated manuscript on cream parchment, divided "
@@ -18803,9 +18973,9 @@ CHAPTER_ART = {
         artist="Unknown illuminator",
         artist_es="Iluminador desconocido",
         year="late 13th century",
-        location="Formerly Burckhardt&ndash;Wildt and Alan Thomas collections; sold at Christie's, "
+        location="Formerly Burckhardt–Wildt and Alan Thomas collections; sold at Christie's, "
                  "present location unrecorded",
-        location_es="Antes en las colecciones Burckhardt&ndash;Wildt y Alan Thomas; vendido en "
+        location_es="Antes en las colecciones Burckhardt–Wildt y Alan Thomas; vendido en "
                     "Christie's, ubicación actual sin registrar",
         alt="An illuminated manuscript page on vellum. At the center, inside a red quatrefoil frame, "
             "a white horned lamb stands beside a tall staff topped with a cross. In the four lobes "
@@ -18865,7 +19035,7 @@ CHAPTER_ART = {
         title_es="Los veinticuatro ancianos echando sus coronas ante el trono divino",
         artist="William Blake",
         artist_es="William Blake",
-        year="circa 1803&ndash;1805",
+        year="circa 1803–1805",
         location="Tate Gallery, London",
         location_es="Tate Gallery, Londres",
         alt="A watercolour and pencil drawing. An old, bearded, white-robed figure sits "
@@ -18928,7 +19098,7 @@ CHAPTER_ART = {
         title_es="La luz del mundo",
         artist="William Holman Hunt",
         artist_es="William Holman Hunt",
-        year="1851&ndash;1853",
+        year="1851–1853",
         location="Keble College, Oxford",
         location_es="Keble College, Oxford",
         alt="A dark, nocturnal oil painting. Christ, robed and haloed with a crown of thorns, "
