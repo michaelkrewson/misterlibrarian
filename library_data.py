@@ -221,7 +221,7 @@ DICTIONARY = [
     ("adamah", "adamah", "אֲדָמָה", "adamah",
      "The ground, soil, arable earth — the stuff the human is formed from, cursed in Eden, and blessed through Abram.", (2, 7)),
     ("afar", "afar", "עָפָר", "afar",
-     "Dust — the stuff humanity is formed from and returns to (2:7, 3:19); the same humble material later measures Abram's uncountable offspring (13:16).", (2, 7)),
+     "Dust — the stuff humanity is formed from and returns to (2:7, 3:19); the same humble material later measures Abram's uncountable offspring (13:16). \u26a0 <a href=\"numbers-19.html#n19-17\">Numbers 19:17</a> is where it matters most and is most often missed: the remedy for touching a corpse is made from <em>afar srefat ha-chattat</em>, the DUST of the burning \u2014 not the <em><a href=\"dictionary.html#efer\">efer</a></em>, the ashes, that v9 gathered eight verses earlier. Two different nouns, and of the eight versions checked on both shelves only the NWT 1984 prints the difference. What cures a man defiled by a human body is the substance a human body is.", (2, 7)),
     ("arum", "arum / arummim", "עָרוּם / עֲרוּמִּים", "arum / arummim",
      "'Crafty' and 'naked' — nearly identical Hebrew words; the pun straddles the Genesis 2/3 chapter break.", (3, 1)),
     ("bara", "bara", "בָּרָא", "bara",
@@ -261,7 +261,7 @@ DICTIONARY = [
     ("nasa", "nasa", "נָשָׂא", "nasa",
      "To carry, bear, lift — one root doing three jobs in Genesis 13: the land 'could not bear' Abram and Lot together (13:6), then each of them 'lifts up' his eyes (13:10, 13:14) to opposite ends. \u26a0 It is also the verb of the third commandment: Exodus 20:6 is lo tissa, 'you shall not LIFT UP the name of Jehovah your God la-shav' \u2014 not a verb of speaking. That is why 'taking the name in vain' is probably not a rule about profanity: the idiom is closer to BEARING the name, carrying it as one who belongs to it, and doing so emptily.", (13, 6)),
     ("nefesh", "nefesh chayah", "נֶפֶשׁ חַיָּה", "nefesh chayah",
-     "A living creature/being — fish, birds, animals, and humans alike; not an immaterial 'soul' inside a body. ⚠ Psalm 23:3 is where that matters most to an English reader: nafshi yeshovev is not 'he restoreth my soul' but 'he brings my LIFE back' — shuv, to turn back, applied to the whole living self. Put 'soul' beside 'restore' and English manufactures a Platonic sentence the Hebrew does not contain. The two shelves split on it: the English NWT 1984 keeps 'My soul he refreshes' while the Spanish TNM reads 'Renueva mis fuerzas,' renews my strength.", (1, 20)),
+     "A living creature/being — fish, birds, animals, and humans alike; not an immaterial 'soul' inside a body. ⚠ Psalm 23:3 is where that matters most to an English reader: nafshi yeshovev is not 'he restoreth my soul' but 'he brings my LIFE back' — shuv, to turn back, applied to the whole living self. Put 'soul' beside 'restore' and English manufactures a Platonic sentence the Hebrew does not contain. The two shelves split on it: the English NWT 1984 keeps 'My soul he refreshes' while the Spanish TNM reads 'Renueva mis fuerzas,' renews my strength. ⚠ <a href=\"numbers-19.html#n19-11\">Numbers 19</a> is the clearest place to see the range, because the word does three unrelated jobs there in six occurrences: a CORPSE (vv11, 13), LIVING PEOPLE (vv18, 22), and the subject of the <em><a href=\"dictionary.html#karet\">karet</a></em> sentence, 'that SOUL shall be cut off' (vv13, 20) — and v13 does two of the three in one sentence. This translation renders all three differently; the NWT 1984, alone on that shelf, keeps one English word for all three and lets the reader see it.", (1, 20)),
     ("nephilim", "Nephilim", "נְפִלִים", "Nefilim",
      "Beings 'on the earth in those days' (6:4); meaning unknown (possibly 'fallen ones', from <em>naphal</em>, to fall); LXX rendered <em>gigantes</em>, giants, and every later giant in Western literature descends from that choice. \u26a0 Genesis 6:4 and <a href=\"numbers-13.html#n13-32\">Numbers 13:33</a> (now on these pages) are the whole record of the word in the Hebrew Bible — and it appears TWICE in the Numbers verse, so two verses hold all three occurrences. This translation transliterates in both places so a reader can see it is one word; KJV and Geneva print 'giants' in Numbers, and the Spanish shelf follows the Greek without exception.", (6, 4)),
     ("olah", "olah", "עֹלָה", "olah",
@@ -728,6 +728,16 @@ DICTIONARY = [
     ("sakhar", "sakhar", "שָׂכָר", "sakhar",
      "WAGES — the ordinary commercial word for a hired man's pay, from <em>sakhar</em>, to hire. Not a reward, not a blessing, not a gift: the sum owed for work done, which is why Deuteronomy and the prophets keep insisting it be paid the same day. ⚠ <a href=\"numbers-18.html#n18-25\">Numbers 18:31</a> applies it to the tithe — <em>it is your WAGES in exchange for your service in the tent of meeting</em> — which settles what the tithe is for: payroll for a tribe that owns no land, not charity, and not an offering the giver gets credit for. The shelf divides on register. Geneva, NWT 1984 and NIV all say 'wages'; KJV, ASV and the Douay-Rheims prefer 'reward', which in modern English drifts toward a prize. Jacob uses the same word of the flocks Laban owes him (Genesis 30:28, already on these pages) — twenty years of arguing about <em>sakhar</em>.",
      ("Numbers", 18, 31)),
+    # ---- Numbers 19 ----
+    ("parah", "parah", "פָּרָה", "parah",
+     "A COW — a mature female of the herd. Hebrew keeps it distinct from <em>eglah</em>, a HEIFER, the young animal Abram cuts in half at Genesis 15:9; the two are different words and this project renders them differently. ⚠ Which is why <a href=\"numbers-19.html#n19-1\">Numbers 19:2</a> prints 'a red COW' rather than the famous 'red heifer'. The phrase <em>parah adumah</em> occurs in exactly one verse in the Hebrew Bible, and the English name that everyone knows is a minority reading: only the KJV, ASV and NIV say heifer, while Geneva, the NWT 1984 and the Douay-Rheims all say cow — the Douay adding 'of full age' to rule the young animal out — and the whole Spanish shelf says <em>vaca</em>. The same word gives Pharaoh's seven fat and seven lean COWS in Genesis 41 and the milk-cows that pull the ark home in 1 Samuel 6.",
+     ("Numbers", 19, 2)),
+    ("chuqqah", "chuqqah / choq", "חֻקָּה / חֹק", "chuqqat",
+     "A STATUTE — and specifically the kind of law given without a reason attached. The root is <em>chaqaq</em>, to CUT or engrave, so a <em>choq</em> is something inscribed rather than argued: it stands because it was cut, not because it persuades. Torah law is traditionally sorted into <em>mishpatim</em>, rulings whose sense is evident (do not steal), and <em>chuqqim</em>, decrees whose sense is not — and the red cow of <a href=\"numbers-19.html#n19-7\">Numbers 19</a> is the standing example of the second kind, opening with <em>zot chuqqat ha-torah</em>, 'this is the statute of the law', a phrase that occurs in only two verses in the Bible (the other is Numbers 31:21). ⚠ <em>Numbers Rabbah</em> 19:3 reads Ecclesiastes 7:23 — 'I said I will be wise, but it was far from me' — as Solomon confessing that this one chapter defeated him. The same noun in the phrase <em>chuqqat olam</em>, a perpetual statute, closes many of the priestly laws, including this chapter's own vv10 and 21.",
+     ("Numbers", 19, 2)),
+    ("efer", "efer", "אֵפֶר", "efer",
+     "ASHES — what is left when something has been burned completely, and the standard material of mourning: Job sits in it, Abraham calls himself 'dust and ashes' (Genesis 18:27, already on these pages), and cities repent in sackcloth and <em>efer</em>. ⚠ At <a href=\"numbers-19.html#n19-7\">Numbers 19:9-10</a> it is gathered and stored as the working stock of the purification rite, the one substance in Israel that removes corpse-uncleanness. Not to be confused with <em><a href=\"dictionary.html#afar\">afar</a></em>, dust — a different noun that this same chapter uses eight verses later, and that almost every version on both shelves flattens into 'ashes' too.",
+     ("Numbers", 19, 9)),
     ("machtah", "machtah", "מַחְתָּה", "machtah",
      "A CENSER — a fire-pan for carrying live coals with incense on them. The same object, and the same three actions, appear in the two places the Bible uses it to kill: <a href=\"leviticus-10.html#v10-1\">Leviticus 10:1</a> has Nadab and Abihu 'each take his censer, put fire in it, and place incense on the fire' and offer strange fire, and the next verse has fire come out and consume them; <a href=\"numbers-16.html#n16-16\">Numbers 16:18</a> has two hundred and fifty men do exactly that and stand at the entrance of the tent, and <a href=\"numbers-16.html#n16-34\">16:35</a> ends the same way. ⚠ The word is neutral in itself — the tabernacle's own bronze fire-pans are <em>machtot</em> (<a href=\"exodus-27.html#v27-3\">Exodus 27:3</a>, rendered 'firepans' there for the altar-tool) and the high priest carries one legitimately into the Most Holy on the Day of Atonement (<a href=\"leviticus-16.html#v16-12\">Leviticus 16:12</a>). What kills is not the pan but who is holding it.",
      ("Numbers", 16, 6)),
@@ -1212,7 +1222,7 @@ DICTIONARY = [
     ("metzarim", "metzarim", "מְצָרִים", "metzarim",
      "NARROW PLACES, straits — from tsar, narrow or tight; the same root gives tsarah, 'distress,' and tsar, 'foe.' Lamentations 1:3 has Judah's pursuers overtake her 'bein ha-metzarim,' between the straits: cornered where there is no room to turn. ⚠ In later Judaism the phrase became the NAME of the three weeks of mourning between the 17th of Tammuz and the 9th of Av — the period that ends on the day this book is read aloud.", ("Lamentations", 1, 3)),
     ("niddah", "niddah / nidah", "נִדָּה", "niddah",
-     "RITUAL IMPURITY, specifically menstrual (<a href=\"leviticus-15.html#v15-19\">Leviticus 15:19-24</a>, now on these pages) — and by extension anything that must be kept at a distance. ⚠ The word's plainest legal use is at <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages), which twice defines a new mother's first days by comparison to it — unclean 'as in the days of her niddah' — without ever explaining the comparison, because the law it points at (Leviticus 15) is assumed known. Read there rather than in the prophets, it is what <a href=\"dictionary.html#tame\">tame</a> always is: a temporary bar on approaching the sanctuary, not a fault and not a verdict. ⚠ Lamentations then plays on it: verse 8 says Jerusalem became a nidah (from a root meaning to shake the head, so 'an object of head-shaking') and verse 17 says she became a niddah among the nations. The two words are near-identical and the poem almost certainly means both at once. The versions split badly there — KJV 'removed' at v8 and 'a menstruous woman' at v17; ASV 'an unclean thing'; NWT 'an object of disgust' — which is why this translation renders each verse as it stands and notes the play. The distance between that metaphor and the purity rule is exactly the distance this dictionary exists to show.", ("Lamentations", 1, 8)),
+     "RITUAL IMPURITY, specifically menstrual (<a href=\"leviticus-15.html#v15-19\">Leviticus 15:19-24</a>, now on these pages) — and by extension anything that must be kept at a distance. ⚠ The word's plainest legal use is at <a href=\"leviticus-12.html#v12-2\">Leviticus 12</a> (already on these pages), which twice defines a new mother's first days by comparison to it — unclean 'as in the days of her niddah' — without ever explaining the comparison, because the law it points at (Leviticus 15) is assumed known. Read there rather than in the prophets, it is what <a href=\"dictionary.html#tame\">tame</a> always is: a temporary bar on approaching the sanctuary, not a fault and not a verdict. ⚠ Lamentations then plays on it: verse 8 says Jerusalem became a nidah (from a root meaning to shake the head, so 'an object of head-shaking') and verse 17 says she became a niddah among the nations. The two words are near-identical and the poem almost certainly means both at once. The versions split badly there — KJV 'removed' at v8 and 'a menstruous woman' at v17; ASV 'an unclean thing'; NWT 'an object of disgust' — which is why this translation renders each verse as it stands and notes the play. The distance between that metaphor and the purity rule is exactly the distance this dictionary exists to show. ⚠ <a href=\"numbers-19.html#n19-7\">Numbers 19</a> makes the word do something startling: the purification water itself is called <em>me niddah</em>, 'water of NIDDAH' — the stuff that removes impurity named after impurity. The shelf scatters (KJV 'water of separation', ASV 'water for impurity', NIV and NWT 'water of/for cleansing', Geneva 'sprinkling water'), and the two Reina-Valeras take opposite sides, RV60 «agua de purificación» against RV 1909 «agua de separación». The Douay-Rheims renders the same two words three different ways inside that one chapter.", ("Lamentations", 1, 8)),
     ("makhov", "makh'ov", "מַכְאוֹב", "makh'ov",
      "PAIN — a body's ache, the hurt of a wound, not sadness in the abstract; from ka'av, to be in pain. It is the noun in Ecclesiastes' 'whoever adds knowledge adds pain' (1:18), the cry of Lamentations 1:12 ('is there any pain like my pain?'), and — in the plural — the phrase behind Isaiah 53:3, ish makh'ovot, 'a man of sorrows.' English versions vary it ('sorrow,' 'grief,' 'suffering'); the Hebrew is one concrete word.", ("Lamentations", 1, 12)),
     ("zenunim", "zenunim", "זְנוּנִים", "zenunim",
@@ -2004,7 +2014,7 @@ DICTIONARY = [
      "everyone's.",
      ("Jeremiah", 30, 7)),
     ("tame", "tame", "\u05d8\u05b8\u05de\u05b5\u05d0", "tame",
-     "UNCLEAN \u2014 and almost everything an English reader hears in that word is wrong. It is not dirt, not sin, and not a judgement on anyone's character. It is a RITUAL STATUS: a temporary condition that bars a person from the sanctuary and then expires, usually at sundown, usually after washing. Ordinary unavoidable life produces it \u2014 touching a dead animal, burying a relative, childbirth \u2014 and none of those are wrong to do. \u26a0 <a href=\"leviticus-11.html\">Leviticus 11</a> (already on these pages) is where the word does its heaviest work, sorting every animal a person might eat or touch, and the chapter's own closing verse states the point of the whole exercise as the ability to <a href=\"dictionary.html#havdil\">distinguish</a> tame from tahor. The pair is a boundary system, not a moral scale: its opposite is not 'good' but <a href=\"dictionary.html#tahor\">tahor</a>, and its remedy is not repentance but time and water.",
+     "UNCLEAN \u2014 and almost everything an English reader hears in that word is wrong. It is not dirt, not sin, and not a judgement on anyone's character. It is a RITUAL STATUS: a temporary condition that bars a person from the sanctuary and then expires, usually at sundown, usually after washing. Ordinary unavoidable life produces it \u2014 touching a dead animal, burying a relative, childbirth \u2014 and none of those are wrong to do. \u26a0 <a href=\"leviticus-11.html\">Leviticus 11</a> (already on these pages) is where the word does its heaviest work, sorting every animal a person might eat or touch, and the chapter's own closing verse states the point of the whole exercise as the ability to <a href=\"dictionary.html#havdil\">distinguish</a> tame from tahor. The pair is a boundary system, not a moral scale: its opposite is not 'good' but <a href=\"dictionary.html#tahor\">tahor</a>, and its remedy is not repentance but time and water. ⚠ <a href=\"numbers-19.html#n19-11\">Numbers 19</a> is the word's densest chapter: <em>tame</em> nineteen times against <em><a href=\"dictionary.html#tahor\">tahor</a></em> seven, and corpse-uncleanness is the strongest form of it in the system — seven days fixed, spread by an enclosing roof, by an unlidded vessel, or by touch in the open field.",
      ("Leviticus", 11, 4)),
     ("tahor", "tahor", "\u05d8\u05b8\u05d4\u05d5\u05b9\u05e8", "tahor",
      "CLEAN, pure \u2014 the opposite of <a href=\"dictionary.html#tame\">tame</a>, and the DEFAULT state rather than an achievement. Nothing has to be done to a person to make them tahor; it is simply what they are when nothing has made them otherwise. The word is also the ordinary adjective for unalloyed metal \u2014 the tabernacle's lampstand is beaten from 'pure gold' (Exodus 25:31, already on these pages) \u2014 which is the sense underneath the ritual one: not washed, but unmixed. \u26a0 <a href=\"leviticus-11.html#v11-36\">Leviticus 11:36</a> (already on these pages) gives the pair its most surprising line: a spring or a cistern stays tahor no matter what falls into it, the one thing in that whole chapter uncleanness cannot touch.",
@@ -6472,6 +6482,12 @@ XREFS = [
     (("Matthew", 9, 9), ("Matthew", 4, 19), "akolouthei moi, 'follow me' — the same bare call and the same instant obedience that pulled two fishermen off their nets; a tax collector rises from a booth on the identical two words"),
     (("Matthew", 9, 18), ("Matthew", 8, 2), "proskyneō, a fifth time — the magi, Herod, the devil, a leper, and now an unnamed synagogue ruler; every step widens who bows, and none yet settles what the gesture means"),
     (("Matthew", 9, 20), ("Numbers", 15, 38), "kraspedon — the same word the Greek Old Testament uses for the tassels the Law commands, which means the text is quietly showing Jesus wearing them when the bleeding woman touches his fringe"),
+    (("Numbers", 19, 2), ("Genesis", 15, 9), "parah against eglah — the cow of the purification rite and the HEIFER Abram cuts in half are different Hebrew animals, which is why this translation refuses the famous 'red heifer'"),
+    (("Numbers", 19, 6), ("Leviticus", 14, 4), "cedar, hyssop and scarlet — the identical three items, dipped in blood and sprinkled to cleanse a healed skin-disease; here they are thrown in the fire and destroyed"),
+    (("Numbers", 19, 9), ("Leviticus", 15, 19), "me niddah, 'water of NIDDAH' — the purification water is named with the word for menstrual impurity: the thing that removes impurity named after impurity"),
+    (("Numbers", 19, 13), ("Numbers", 15, 30), "the karet formula again — 'that soul shall be cut off', with nefesh naming the subject of a penalty, exactly as Numbers 15 said it would wherever the word does that job"),
+    (("Numbers", 19, 17), ("Genesis", 3, 19), "afar, DUST — not the efer, ashes, of v9 eight verses earlier. What cures a man defiled by a corpse is the substance Genesis says a man is, and returns to"),
+    (("Numbers", 19, 1), ("Numbers", 18, 1), "back to the ordinary formula: Numbers 18 was addressed to Aaron alone, three of only five such verses in the Bible; this chapter opens 'to Moses AND to Aaron' again"),
     (("Numbers", 18, 1), ("Numbers", 17, 28), "the answer to the congregation's panic — they cried that everyone who draws near dies, and the reply is not a reassurance but a job description: the priests will bear the guilt of the sanctuary"),
     (("Numbers", 18, 1), ("Numbers", 14, 18), "nasa avon, to BEAR guilt — there it is how Hebrew says God forgives; here the same verb makes a priest carry the sanctuary's liability for everyone else"),
     (("Numbers", 18, 2), ("Numbers", 17, 17), "matteh — the word that meant a rod for a whole chapter now stands beside shevet, the other rod-and-tribe word, both of them naming Levi in one phrase"),
@@ -8664,6 +8680,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num19": dict(era="exodus",
+                 when="The law of the red cow, the Torah's standing example of a decree given without a reason. An unblemished red cow that has never worn a yoke is handed to Eleazar, taken outside the camp and burned whole &mdash; hide, flesh, blood and dung &mdash; with cedar, hyssop and scarlet thrown into the fire. Her ashes are stored and mixed with living water to make the &lsquo;water for impurity&rsquo;, the only remedy for the uncleanness contracted by touching a human corpse. ⚠ And the rite runs both ways: every clean man who handles it &mdash; the priest, the burner, the gatherer, and later the sprinkler &mdash; is himself unclean until evening.",
+                 clock="&#9888; Undated, and the chapter gives no narrative hook at all; it is pure legislation dropped between the aftermath of Korah's revolt and the death of Miriam. It stands somewhere inside the thirty-eight years imposed at <a href=\"numbers-14.html\">Numbers 14</a> &mdash; on the early-date chronology this project foregrounds, some time between c. 1444 and c. 1407 BC. The Hebrew and English versification agree: 22 verses on both sides. In the synagogue reading cycle this verse begins the portion <em>Chuqat</em>, which is named from its own first line."),
     "num18": dict(era="exodus",
                  when="The answer to the congregation's panic at the end of the previous chapter, given &mdash; unusually &mdash; directly to Aaron. The priests and Levites will bear the guilt of the sanctuary so that no one else has to come near it and die; in exchange for a service nobody else may perform, they are given the contributions, the firstfruits, the devoted things and the firstborn to live on. Aaron is told he will have no landholding at all in the country Israel is about to divide: <em>I am your portion and your inheritance</em>. The Levites receive every tithe in Israel as wages, and must themselves lift a tithe out of it for Aaron.",
                  clock="&#9888; Undated, and continuous with <a href=\"numbers-17.html\">Numbers 17</a> &mdash; it answers that chapter's closing question and presupposes its plague. So it falls inside the thirty-eight years imposed at <a href=\"numbers-14.html\">Numbers 14</a>, before the arrival at Kadesh in the fortieth year; on the early-date chronology this project foregrounds, some time between c. 1444 and c. 1407 BC. Unlike the chapter before it, the Hebrew and English versification agree here: 32 verses on both sides."),
@@ -12256,6 +12275,63 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    # ---- Números 19 ----
+    "parah": ("pará",
+        "UNA VACA —una hembra adulta de la vacada. El hebreo la mantiene distinta de <em>eglá</em>, una "
+        "NOVILLA, el animal que Abram parte por la mitad en Génesis 15:9; son dos palabras distintas y este "
+        "proyecto las traduce distinto. ⚠ Por eso <a href=\"numbers-19.es.html#n19-1\">Números 19:2</a> imprime "
+        "«una vaca roja» y no la famosa «vaca alazana» ni el inglés «red heifer», novilla. La expresión "
+        "<em>pará adumá</em> sale en exactamente un versículo de la Biblia hebrea. ⚠ Y aquí el español lleva "
+        "ventaja sobre el inglés: todo el estante español dice VACA —<span>RV60</span> «vaca alazana», "
+        "<span>RV 1909</span> «vaca bermeja», <span>NVI</span> «vaca de piel rojiza»— mientras que en inglés "
+        "la KJV, la ASV y la NIV dicen «heifer», novilla. La misma palabra da las siete vacas gordas y las "
+        "siete flacas del sueño del faraón en Génesis 41."),
+    "chuqqah": ("juqá / joq",
+        "UN ESTATUTO —y en concreto la clase de ley que se da sin razón adjunta. La raíz es <em>jaqaq</em>, "
+        "GRABAR o tallar, así que un <em>joq</em> es algo inscrito y no argumentado: se sostiene porque fue "
+        "tallado, no porque convenza. La ley de la Torá se clasifica tradicionalmente en <em>mishpatim</em>, "
+        "sentencias cuyo sentido se ve (no robarás), y <em>juqim</em>, decretos cuyo sentido no se ve —y la "
+        "vaca roja de <a href=\"numbers-19.es.html#n19-7\">Números 19</a> es el ejemplo señero del segundo "
+        "tipo, que abre con <em>zot juqat ha-torá</em>, «esta es la ordenanza de la ley», expresión que sale "
+        "en solo dos versículos de la Biblia (el otro es Números 31:21). ⚠ <em>Números Rabá</em> 19:3 lee "
+        "Eclesiastés 7:23 —«dije: seré sabio, pero ello estaba lejos de mí»— como la confesión de Salomón de "
+        "que este capítulo lo derrotó."),
+    "efer": ("éfer",
+        "CENIZAS —lo que queda cuando algo se ha quemado del todo, y el material corriente del duelo: Job se "
+        "sienta en ellas, Abraham se llama a sí mismo «polvo y ceniza» (Génesis 18:27, ya en estas páginas), y "
+        "las ciudades se arrepienten en cilicio y <em>éfer</em>. ⚠ En "
+        "<a href=\"numbers-19.es.html#n19-7\">Números 19:9-10</a> se recogen y se guardan como la reserva de "
+        "trabajo del rito de purificación, lo único en Israel que quita la impureza de un cadáver. No "
+        "confundir con <em><a href=\"diccionario.html#afar\">afar</a></em>, polvo: otro sustantivo que este "
+        "mismo capítulo usa ocho versículos después, y que casi todas las versiones de los dos estantes "
+        "aplanan también en «ceniza»."),
+    "afar": ("afar",
+        "POLVO, tierra seca, suelo suelto —aquello de lo que está hecho un ser humano y a lo que vuelve: "
+        "«Jehová Dios formó al humano de POLVO de la tierra» (Génesis 2:7, ya en estas páginas) y «polvo eres, "
+        "y al polvo volverás» (Génesis 3:19). Es también la imagen de una multitud incontable —la "
+        "descendencia de Abraham «como el polvo de la tierra»— y la de la humillación, porque lamer el polvo "
+        "o sentarse en él es estar todo lo bajo que se puede estar. ⚠ "
+        "<a href=\"numbers-19.es.html#n19-17\">Números 19:17</a> es donde más importa y donde más se pasa por "
+        "alto: el remedio para haber tocado un cadáver se hace con <em>afar srefat ha-jatat</em>, el POLVO de "
+        "la quema —no con el <em><a href=\"diccionario.html#efer\">éfer</a></em>, las cenizas, que el v9 "
+        "recogió ocho versículos antes. Dos sustantivos distintos, y de las ocho versiones comprobadas en los "
+        "dos estantes solo la NWT 1984 imprime la diferencia. Lo que cura a un hombre contaminado por un "
+        "cuerpo humano es la sustancia que un cuerpo humano es."),
+    "ezov": ("hisopo",
+        "HISOPO —una planta pequeña y tupida, probablemente una especie de mejorana o de orégano sirio, usada "
+        "como brocha: el manojo con que se aplica un líquido. ⚠ Es el instrumento de la primera Pascua "
+        "(<a href=\"exodus-12.es.html#v12-22\">Éxodo 12:22</a>), de la limpieza del que ha sanado de una "
+        "enfermedad de la piel (<a href=\"leviticus-14.es.html#v14-4\">Levítico 14</a>), y de "
+        "<a href=\"numbers-19.es.html#n19-17\">Números 19:18</a>, donde un hombre limpio lo moja en el agua "
+        "para la impureza y rocía la tienda, los utensilios y la gente. El Salmo 51 lo convierte en metáfora: "
+        "«purifícame con hisopo, y seré limpio»."),
+    "shani": ("carmesí",
+        "ESCARLATA, carmesí —el tinte rojo intenso que se saca de la cochinilla <em>Kermes</em>, un insecto "
+        "que vive en la encina; de ahí que el hebreo lo llame a menudo <em>tolaat shani</em>, «carmesí de "
+        "gusano». Es uno de los tres colores del tabernáculo, con el azul y la púrpura. ⚠ En "
+        "<a href=\"numbers-19.es.html#n19-1\">Números 19:6</a> aparece con la madera de cedro y el hisopo, el "
+        "mismo trío que limpia al sanado de <a href=\"leviticus-14.es.html#v14-4\">Levítico 14</a>; allí se "
+        "moja en sangre y se rocía, y aquí se echa al fuego y se destruye. El mismo equipo, usado al revés."),
     # ---- Números 18 ----
     "qodesh": ("qódesh",
         "SANTO, santidad —el sentido de la raíz es «apartado, cortado de lo común». «El lugar en que estás "
@@ -16658,6 +16734,20 @@ ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "num19": [dict(
+        file="num19-hammelburg-parah-adumah.jpg",
+        title="The red cow, illuminated in a German prayer book",
+        title_es="La vaca roja, iluminada en un devocionario alemán",
+        artist="Unknown illuminator",
+        year="1347–48",
+        location="The Hammelburg Mahzor, Hammelburg, Germany — Universitäts- und Landesbibliothek Darmstadt, Cod. Or. 13, f. 55r",
+        location_es="El Majzor de Hammelburg, Hammelburg, Alemania — Universitäts- und Landesbibliothek Darmstadt, Cod. Or. 13, f. 55r",
+        alt="A detail from a medieval parchment manuscript. At the left stands a bright vermilion-red cow in profile, drawn in a flat outline style with curved horns, a dark eye and an oddly long tail. To its right, filling most of the panel, are large ornamented Hebrew letters outlined in ink and filled with dark wash, with small decorative flourishes at their tips. Lines of smaller Hebrew script run above, below and to the right, and the parchment is stained and worn at the edges.",
+        note="&#9888; The chapter's own animal, painted by someone who read it as scripture rather than as history: a <em>mahzor</em> is a Jewish festival prayer book, and this leaf opens the reading of Numbers 19 for <em>Shabbat Parah</em>, the Sabbath of the Cow &mdash; one of four special Sabbaths kept before Passover, when this chapter is read publicly. ⚠ Two things worth seeing. The illuminator has made her unmistakably RED, which is the detail <a href=\"numbers-19.html#n19-1\">v2</a> turns on and the one an English reader is likeliest to skate past. And she is a COW, full-grown and heavy-bodied, not the young heifer the familiar English name promises &mdash; drawn that way in 1348 by a community reading the Hebrew word <em>parah</em>, several centuries before the King James Version fixed 'heifer' in the language.",
+        note_es="&#9888; El animal del propio capítulo, pintado por alguien que lo leía como Escritura y no como historia: un <em>majzor</em> es un devocionario judío de fiestas, y esta hoja abre la lectura de Números 19 para el <em>Shabat Pará</em>, el sábado de la Vaca &mdash;uno de los cuatro sábados especiales que se guardan antes de la Pascua, cuando este capítulo se lee en público. ⚠ Dos cosas que vale la pena ver. El iluminador la ha hecho inconfundiblemente ROJA, que es el detalle sobre el que gira <a href=\"numbers-19.es.html#n19-1\">el v2</a> y el que más fácilmente se le pasa por alto a un lector. Y es una VACA, adulta y de cuerpo pesado, no la novilla joven que promete el nombre inglés &mdash;dibujada así en 1348 por una comunidad que leía la palabra hebrea <em>pará</em>, varios siglos antes de que la King James fijara «heifer» en su idioma.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:The_Parah_Adumah,_The_Hammelburg_Mahzor.jpg",
+    )],
     "num18": [dict(
         file="num18-judaean-weights.jpg",
         title="Judaean stone weights: shekels and gerahs",
