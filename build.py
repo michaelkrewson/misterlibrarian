@@ -1331,6 +1331,24 @@ _VERSE_ENG_BLOCK = re.compile(
     r'(id="(v(?:\d+-)?\d+)"[^>]*>.*?<div class="eng">)(.*?)(</div>)', re.S)
 
 
+_ANCHOR_SPAN = re.compile(r'<a\b[^>]*>.*?</a>', re.S)
+
+
+def _sub_outside_anchors(pattern, repl, html_str):
+    """Run pattern.sub only on the parts of `html_str` that are NOT already
+    inside an <a>...</a>. A chapter's verse text often hand-links a place or
+    person; without this the injector wraps that anchor in a second one and
+    emits <a ...><a ...>Word</a></a>, which is invalid HTML. Found live on 9
+    pages (32 nested anchors) in the Numbers 22 review."""
+    out, last = [], 0
+    for m in _ANCHOR_SPAN.finditer(html_str):
+        out.append(pattern.sub(repl, html_str[last:m.start()]))
+        out.append(m.group(0))          # leave existing anchors untouched
+        last = m.end()
+    out.append(pattern.sub(repl, html_str[last:]))
+    return "".join(out)
+
+
 def inject_encyclopedia_links(content, book, ch):
     """Turn the first mention per chapter of each ENCYCLOPEDIA entry (by its
     `name` or any `aliases`) into a link to its encyclopedia.html entry.
@@ -1348,7 +1366,10 @@ def inject_encyclopedia_links(content, book, ch):
     first sighting of "Eden" carries the link and the page isn't peppered
     with repeats of the same one.
     """
-    linked_slugs = set()
+    # A slug the chapter ALREADY hand-links in its own text has spent its
+    # once-per-chapter budget; without this the injector would add a second,
+    # separate link to the same entry a few verses later.
+    linked_slugs = set(re.findall(r'href="(?:encyclopedia\.html#|atlas/)([a-z0-9\-]+)', content))
 
     def verse_block(m):
         prefix, vid, eng_html, suffix = m.group(1), m.group(2), m.group(3), m.group(4)
@@ -1397,7 +1418,7 @@ def inject_encyclopedia_links(content, book, ch):
             return (f'<a class="eterm" href="encyclopedia.html#{slug}" '
                     f'title="{name} — see the Encyclopedia">{word}</a>')
 
-        return prefix + _ALIAS_PATTERN.sub(word_match, eng_html) + suffix
+        return prefix + _sub_outside_anchors(_ALIAS_PATTERN, word_match, eng_html) + suffix
 
     return _VERSE_ENG_BLOCK.sub(verse_block, content)
 
