@@ -12257,6 +12257,16 @@ BOOK_INTROS = {
 
 DICTIONARY_ES = {
     # ---- Números 18 ----
+    "qodesh": ("qódesh",
+        "SANTO, santidad —el sentido de la raíz es «apartado, cortado de lo común». «El lugar en que estás "
+        "es tierra santa» (<em>admat-qódesh</em>, Éxodo 3:5) es el primer trozo de SUELO que la Biblia llama "
+        "santo —y el suelo es <em>adamá</em>, la tierra propia de Adán, hecha santa por nada más que la "
+        "Presencia que está de pie sobre ella. (El séptimo día fue «santificado» antes, Génesis 2:3: la "
+        "santidad empieza en el TIEMPO, luego toca un LUGAR aquí, y llenará el tabernáculo al final del "
+        "libro.) No es una cualidad de la tierra, sino de Quién está allí. ⚠ En "
+        "<a href=\"numbers-18.es.html#n18-8\">Números 18</a> la raíz sale dieciséis veces, empatada con "
+        "<em><a href=\"diccionario.html#terumah\">terumá</a></em> como la más densa del capítulo: un pasaje "
+        "sobre quién cobra usa el vocabulario de la santidad exactamente al mismo ritmo que el del dinero."),
     "avodah": ("avodá",
         "SERVICIO, trabajo —y, en el mismo aliento, ESCLAVITUD (de <em>éved</em>, siervo/esclavo, la raíz sobre la "
         "que gira el éxodo: Israel sirve al faraón y luego queda libre para SERVIR a Dios, con el mismo verbo). La "
