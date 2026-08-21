@@ -171,28 +171,7 @@ RATING_LABELS = {
 # link (the place's own site, optional), added (the date it went on the list),
 # and an optional photos list of {img, alt} dicts (img is a filename already
 # processed into travel/img/ — same convention as a post's figures).
-BOOKMARKED = [
-    {
-        "name": "Chuckie Pies",
-        "place": "370 First Street, Lake Oswego, Oregon",
-        "why": ("Neapolitan-style pies, walked past midday on a Sunday food crawl — "
-                 "it doesn't open until 4pm, so that was that. The window had two "
-                 "things taped to it worth remembering: The Oregonian's 2026 Reader's "
-                 "Choice, voted a top-3 pizza spot in Portland, and a local ribbon for "
-                 "Best Pizza from the Lake Oswego Review. Going back on purpose, at "
-                 "the right hour this time."),
-        "link": "https://chuckiepies.com",
-        "added": dt.date(2026, 7, 26),
-        "photos": [
-            {"img": "chuckie-pies-sign.jpg",
-             "alt": "The Chuckie Pies hanging sign, a gold C-and-fork mark beside the name in gold letters on a black background"},
-            {"img": "chuckie-pies-interior.jpg",
-             "alt": "The dark wood, herringbone-floor dining room at Chuckie Pies, empty tables set for dinner, a please-wait-to-be-seated sign on the host stand"},
-            {"img": "chuckie-pies-awards.jpg",
-             "alt": "A yellow poster on the door reading Chuckie Pies, Voted Best Pizza, beside two award ribbons"},
-        ],
-    },
-]
+BOOKMARKED = []
 
 
 def _maps_link(address):
