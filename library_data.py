@@ -738,6 +738,19 @@ DICTIONARY = [
     ("efer", "efer", "אֵפֶר", "efer",
      "ASHES — what is left when something has been burned completely, and the standard material of mourning: Job sits in it, Abraham calls himself 'dust and ashes' (Genesis 18:27, already on these pages), and cities repent in sackcloth and <em>efer</em>. ⚠ At <a href=\"numbers-19.html#n19-7\">Numbers 19:9-10</a> it is gathered and stored as the working stock of the purification rite, the one substance in Israel that removes corpse-uncleanness. Not to be confused with <em><a href=\"dictionary.html#afar\">afar</a></em>, dust — a different noun that this same chapter uses eight verses later, and that almost every version on both shelves flattens into 'ashes' too.",
      ("Numbers", 19, 9)),
+    # ---- Numbers 20 ----
+    ("sela", "sela", "סֶלַע", "sela",
+     "A CRAG — a rock-face, a cliff, a stone outcrop you could stand on or hide in; distinct from <em><a href=\"dictionary.html#tzur\">tzur</a></em>, the boulder-like rock that Hebrew turns into a divine title. ⚠ The distinction decides how to read <a href=\"numbers-20.html#n20-7\">Numbers 20</a>. Israel's first water-from-rock was at a <em>tzur</em>, and God said STRIKE it (<a href=\"exodus-17.html#v17-6\">Exodus 17:6</a>, already on these pages). The second is at a <em>sela</em>, and God says SPEAK to it — and Moses strikes. Different noun, opposite instruction, thirty-eight years apart, and of ten versions checked on both shelves only the NWT 1984 renders the two words differently ('crag' here, 'rock' there). This translation prints 'crag' for exactly that reason. The same word later names the Edomite stronghold Sela, the site Greek would call Petra, 'the rock'.",
+     ("Numbers", 20, 8)),
+    ("marah", "marah", "מָרָה", "morim",
+     "TO REBEL, to be defiant — to refuse an order rather than merely to complain. ⚠ It supplies the two words that turn <a href=\"numbers-20.html#n20-1\">Numbers 20</a>: at v10 Moses shouts <em>shim'u na ha-MORIM</em>, hear now, you REBELS, and at v24 God uses the same root back at him and Aaron — <em>al asher MERITEM et pi</em>, because you REBELLED against my mouth. The man who names the rebels is named one. ⚠ And a coincidence of spelling worth knowing about: the participle <em>ha-morim</em> is, letter for letter, the name <em>Miryam</em> with the definite article in front — and Miriam has just been buried in v1. The vowels differ and the roots are almost certainly unrelated (Miriam's name may not be Hebrew at all), but the four letters are the same and nine verses apart. Not to be confused with <em>marah</em> spelled with a he meaning BITTER, the water at Exodus 15:23.",
+     ("Numbers", 20, 10)),
+    ("rib", "rib / merivah", "רִיב / מְרִיבָה", "vayyarev",
+     "TO QUARREL, to bring a case — a legal-flavoured word: a <em>rib</em> is a dispute, and in the prophets it is God's LAWSUIT against his people. The noun <em>merivah</em> is the quarrel itself, and it becomes a place-name twice over. ⚠ <a href=\"exodus-17.html#v17-7\">Exodus 17:7</a> (already on these pages) names a Massah-and-Meribah at the first rock; <a href=\"numbers-20.html#n20-7\">Numbers 20:13</a> names a second Meribah at the second, which is why later books call this one Meribath-Kadesh to tell them apart. Three versions translate the name rather than keep it — the Douay-Rheims 'the Water of contradiction', RV60 and RV 1909 «las aguas de la rencilla» — and the Living Bible keeps it and glosses it wrongly as 'Rebel Waters', which is <em><a href=\"dictionary.html#marah\">marah</a></em>, a different root that this chapter does also happen to use.",
+     ("Numbers", 20, 13)),
+    ("asaf", "ne'esaf el amav", "נֶאֱסַף אֶל-עַמָּיו", "ye'asef",
+     "TO BE GATHERED TO ONE'S PEOPLE — the Torah's own idiom for dying, from <em>asaf</em>, to gather in, the verb used of bringing a harvest under cover. ⚠ It is stated SEPARATELY from burial every time, which is why it cannot simply mean interment: Abraham is gathered to his people and then buried (Genesis 25:8-9), and so are Ishmael, Isaac and Jacob. At <a href=\"numbers-20.html#n20-22\">Numbers 20:24, 26</a> Aaron is gathered to his people on a mountaintop and the text never mentions a grave at all — the reverse of Miriam in v1, where the burial is the only thing recorded. Whether the phrase implies anything beyond death is exactly the sort of question this project leaves where the Hebrew leaves it.",
+     ("Numbers", 20, 24)),
     ("machtah", "machtah", "מַחְתָּה", "machtah",
      "A CENSER — a fire-pan for carrying live coals with incense on them. The same object, and the same three actions, appear in the two places the Bible uses it to kill: <a href=\"leviticus-10.html#v10-1\">Leviticus 10:1</a> has Nadab and Abihu 'each take his censer, put fire in it, and place incense on the fire' and offer strange fire, and the next verse has fire come out and consume them; <a href=\"numbers-16.html#n16-16\">Numbers 16:18</a> has two hundred and fifty men do exactly that and stand at the entrance of the tent, and <a href=\"numbers-16.html#n16-34\">16:35</a> ends the same way. ⚠ The word is neutral in itself — the tabernacle's own bronze fire-pans are <em>machtot</em> (<a href=\"exodus-27.html#v27-3\">Exodus 27:3</a>, rendered 'firepans' there for the altar-tool) and the high priest carries one legitimately into the Most Holy on the Day of Atonement (<a href=\"leviticus-16.html#v16-12\">Leviticus 16:12</a>). What kills is not the pan but who is holding it.",
      ("Numbers", 16, 6)),
@@ -862,7 +875,7 @@ DICTIONARY = [
     ("eda", "eda", "עֵדָה", "edah",
      "The congregation, community, assembly — the whole gathered people of Israel (Numbers 1:2), from the root ya'ad, 'to appoint, to meet by appointment' (the same family as mo'ed, the 'appointed time' and the 'tent of MEETING'). Not a random crowd but the summoned assembly; its chieftains are literally 'the CALLED ones of the eda' (1:16). KJV 'congregation,' NWT 'assembly.'", ("Numbers", 1, 2)),
     ("matteh", "matteh", "מַטֶּה", "matteh",
-     "A tribe — but the word's plain meaning is a STAFF, a rod, a branch (from natah, 'to stretch out, extend'). Israel's tribes are 'staffs': shoots off the one stock of Jacob, each a branch of the family tree, and each led by a man holding a chief's staff. Numbers prefers matteh where Genesis often used <em><a href=\"dictionary.html#shevet\">shevet</a></em> (also 'rod/tribe'); the picture is the same — a people that is one tree with twelve branches. ⚠ <a href=\"numbers-17.html#n17-16\">Numbers 17</a> (already on these pages) turns the double meaning into a whole chapter: twelve mattot are laid up overnight, one per tribe with its chieftain's name on it, and the one that buds settles which matteh may approach — the object in each man's hand IS his tribe. The word occurs seventeen times there. Then <a href=\"numbers-18.html#n18-1\">Numbers 18:2</a> sets the two synonyms side by side in one phrase, <em>matteh Levi shevet avicha</em>, the only verse in the Bible that does so of a single tribe.", ("Numbers", 1, 4)),
+     "A tribe — but the word's plain meaning is a STAFF, a rod, a branch (from natah, 'to stretch out, extend'). Israel's tribes are 'staffs': shoots off the one stock of Jacob, each a branch of the family tree, and each led by a man holding a chief's staff. Numbers prefers matteh where Genesis often used <em><a href=\"dictionary.html#shevet\">shevet</a></em> (also 'rod/tribe'); the picture is the same — a people that is one tree with twelve branches. ⚠ <a href=\"numbers-17.html#n17-16\">Numbers 17</a> (already on these pages) turns the double meaning into a whole chapter: twelve mattot are laid up overnight, one per tribe with its chieftain's name on it, and the one that buds settles which matteh may approach — the object in each man's hand IS his tribe. The word occurs seventeen times there. Then <a href=\"numbers-18.html#n18-1\">Numbers 18:2</a> sets the two synonyms side by side in one phrase, <em>matteh Levi shevet avicha</em>, the only verse in the Bible that does so of a single tribe. \u26a0 The rod's last appearance is the saddest: at <a href=\"numbers-20.html#n20-7\">Numbers 20:9</a> Moses takes 'the rod from before Jehovah' — the place <a href=\"numbers-17.html#n17-25\">Numbers 17:25</a> stored Aaron's budded staff as a sign — and uses it to hit a crag twice, after being told to speak to it. The staff that settled the priesthood by producing life is last seen being swung.", ("Numbers", 1, 4)),
     ("tsava", "tsava", "צָבָא", "tsava",
      "An army — massed ranks for war (Numbers 1:3, 'all who go out to the tsava'). The census is a military muster: everyone counted is a soldier. The same word makes the divine title 'Jehovah of ARMIES' (traditionally 'of hosts' — see the fuller discussion at tzeva'ot), and names the 'army of heaven' — sun, moon, and stars arrayed like troops. For the Levites the tsava is redefined: their 'service/warfare' is the tabernacle, not the battlefield (Numbers 4:23).", ("Numbers", 1, 3)),
     ("gulgolet", "gulgolet", "גֻּלְגֹּלֶת", "gulgolet",
@@ -1294,7 +1307,7 @@ DICTIONARY = [
     ("mevasser", "mevasser", "מְבַשֵּׂר", "mevasser",
      "ONE WHO BRINGS GOOD NEWS, a herald of good tidings — from basar, 'to announce good news' (the runner who brings word of a victory, 2 Samuel 18:19-27). ⚠ It is the key word of two of the Bible's most quoted lines: Nahum 2:1 (English 1:15), 'behold, on the mountains the feet of the MEVASSER, who publishes peace,' announcing Nineveh's fall; and its twin Isaiah 52:7, 'how beautiful on the mountains are the feet of the MEVASSER of good news.' The Greek that translates basar is euangelizomai, and its noun euangelion is the word we render GOSPEL — so the herald running over the mountains with news of a fallen tyrant is, etymologically, the first 'evangelist.' Paul quotes the line at Romans 10:15 of the preachers of Christ.", ("Nahum", 1, 14)),
     ("tzur", "tzur", "צוּר", "tzur",
-     "ROCK — one of the oldest divine titles, the immovable crag you shelter behind or stand on. Distinct from sela ('rock, cliff' as terrain, Obadiah 3): tzur is the STRENGTH-rock, the boulder, and as a name for God it means reliability itself. It saturates the Song of Moses ('the Rock, his work is perfect,' Deuteronomy 32:4, 15, 18, 30-31), Hannah's song ('there is no rock like our God,' 1 Samuel 2:2), and the Psalms ('Jehovah is my rock and my fortress,' Psalm 18:2). ⚠ Habakkuk 1:12 reaches for it at the hinge of his complaint: 'Rock, you established him to rebuke' — he holds onto God as the immovable thing even while accusing him of using a wicked empire. The New Testament applies the title to Christ (1 Corinthians 10:4, 'that rock was Christ').", ("Habakkuk", 1, 12)),
+     "ROCK — one of the oldest divine titles, the immovable crag you shelter behind or stand on. Distinct from sela ('rock, cliff' as terrain, Obadiah 3): tzur is the STRENGTH-rock, the boulder, and as a name for God it means reliability itself. It saturates the Song of Moses ('the Rock, his work is perfect,' Deuteronomy 32:4, 15, 18, 30-31), Hannah's song ('there is no rock like our God,' 1 Samuel 2:2), and the Psalms ('Jehovah is my rock and my fortress,' Psalm 18:2). ⚠ Habakkuk 1:12 reaches for it at the hinge of his complaint: 'Rock, you established him to rebuke' — he holds onto God as the immovable thing even while accusing him of using a wicked empire. The New Testament applies the title to Christ (1 Corinthians 10:4, 'that rock was Christ'). \u26a0 <a href=\"numbers-20.html#n20-7\">Numbers 20</a> makes the word's edges matter: the SECOND water-from-rock is not at a <em>tzur</em> at all but at a <em><a href=\"dictionary.html#sela\">sela</a></em>, a crag — and where Exodus 17 told Moses to STRIKE the tzur, Numbers 20 tells him to SPEAK to the sela. He strikes. Only the NWT 1984, of ten versions checked on both shelves, keeps the two nouns apart in English.", ("Habakkuk", 1, 12)),
     ("kemarim", "kemarim", "כְּמָרִים", "kemarim",
      "IDOL-PRIESTS — a scornful word for PAGAN clergy, always used with disapproval and kept carefully distinct from kohanim, the legitimate priests of Jehovah. It occurs only three times: of the priests Josiah abolished at the high places (2 Kings 23:5), of the calf-cult priests of Bethel (Hosea 10:5), and here. ⚠ Zephaniah 1:4 cuts off 'the name of the KEMARIM along with the priests (kohanim)' — the false clergy and, tarred with them, the true, since the real priesthood had let the idol-priests operate alongside it. Probably from a root meaning 'to be black' (their dark vestments) or 'to be zealous/gloomy.' English versions transliterate it as 'the Chemarim' (KJV/ASV) rather than translate, marking it as a technical term of contempt.", ("Zephaniah", 1, 4)),
     ("zevach", "zevach", "זֶבַח", "zevach",
@@ -2205,6 +2218,14 @@ DICTIONARY = [
 ]
 
 ENCYCLOPEDIA = [
+    dict(slug="hor", name="Mount Hor", kind="place",
+         desc="The mountain on the border of Edom where Aaron died, was stripped of the high-priestly garments in front of his son, and was &lsquo;gathered to his people&rsquo; (<a href=\"numbers-20.html#n20-22\">Numbers 20:22-29</a>). &#9888; It is not securely identified. The long-standing traditional site is Jebel Nebi Harun (&lsquo;mountain of the prophet Aaron&rsquo;) above Petra, which carries a white-domed Muslim shrine to Aaron and has been shown to pilgrims for centuries &mdash; but it sits well inside Edom rather than on its border, which is where Numbers puts it, and many scholars prefer Jebel Madurah on the Edom&ndash;Negev frontier north-west of Petra. The coordinates given here are the traditional site and are marked approximate. Numbers 33:38 supplies the only date in the wilderness itinerary tied to a death: the first day of the fifth month of the fortieth year.",
+         refs=[(20, 22), (20, 25)], coords=(30.3181, 35.4075, 0.5), approx=True,
+         modern="Jebel Nebi Harun, above Petra, Jordan (traditional; disputed)"),
+    dict(slug="zin", name="Wilderness of Zin", kind="place",
+         desc="The dry region south of Judah in which Kadesh lay, and the stage for this chapter: <em>the children of Israel, the whole congregation, came into the wilderness of Zin in the first month</em> (<a href=\"numbers-20.html#n20-1\">Numbers 20:1</a>). &#9888; Not to be confused with the wilderness of SIN, a different place with a similar English spelling &mdash; Hebrew keeps them apart as <em>Tzin</em> and <em>Sin</em>, and the Douay-Rheims, following the Vulgate, prints &lsquo;the desert of Sin&rsquo; here and so merges the two for its readers. Zin marks Israel's southern boundary in <a href=\"numbers-13.html\">Numbers 13:21</a> and again in the land-borders of Numbers 34. The coordinates point at the Kadesh oasis within it and are approximate; the region has no surveyed edges.",
+         refs=[(20, 1)], coords=(30.6486, 34.4214, 0.6), approx=True,
+         modern="The northern Negev / Wadi Zin area, Israel"),
     dict(slug="abaddon-apollyon", name="Abaddon / Apollyon", kind="person",
          aliases=["Abaddon", "Apollyon"],
          desc="The king of the locusts loosed from the Abyss, named twice in one breath — "
@@ -6482,6 +6503,11 @@ XREFS = [
     (("Matthew", 9, 9), ("Matthew", 4, 19), "akolouthei moi, 'follow me' — the same bare call and the same instant obedience that pulled two fishermen off their nets; a tax collector rises from a booth on the identical two words"),
     (("Matthew", 9, 18), ("Matthew", 8, 2), "proskyneō, a fifth time — the magi, Herod, the devil, a leper, and now an unnamed synagogue ruler; every step widens who bows, and none yet settles what the gesture means"),
     (("Matthew", 9, 20), ("Numbers", 15, 38), "kraspedon — the same word the Greek Old Testament uses for the tassels the Law commands, which means the text is quietly showing Jesus wearing them when the bleeding woman touches his fringe"),
+    (("Numbers", 20, 8), ("Exodus", 17, 6), "sela against tzur — the first water-from-rock was at a TZUR and God said STRIKE it; this one is at a SELA and God says SPEAK to it. Different noun, opposite instruction, and Moses does the first thing at the second rock"),
+    (("Numbers", 20, 9), ("Numbers", 17, 25), "'the rod from before Jehovah' — the place Aaron's budded staff was stored as a sign; the rod that proved the priesthood by producing life is taken out and used to hit a crag"),
+    (("Numbers", 20, 13), ("Exodus", 17, 7), "the SECOND Meribah — Exodus already named a Massah-and-Meribah at the first rock, which is why later books call this one Meribath-Kadesh"),
+    (("Numbers", 20, 3), ("Numbers", 17, 27), "gava, to perish — the congregation wished it on themselves three chapters ago; here they wish it again, and v29 spends the word on Aaron"),
+    (("Numbers", 20, 2), ("Numbers", 16, 19), "qahal — the assembling-verb Korah used against Moses and Aaron, used a third time; God then turns it into an instruction at v8"),
     (("Numbers", 19, 2), ("Genesis", 15, 9), "parah against eglah — the cow of the purification rite and the HEIFER Abram cuts in half are different Hebrew animals, which is why this translation refuses the famous 'red heifer'"),
     (("Numbers", 19, 6), ("Leviticus", 14, 4), "cedar, hyssop and scarlet — the identical three items, dipped in blood and sprinkled to cleanse a healed skin-disease; here they are thrown in the fire and destroyed"),
     (("Numbers", 19, 9), ("Leviticus", 15, 19), "me niddah, 'water of NIDDAH' — the purification water is named with the word for menstrual impurity: the thing that removes impurity named after impurity"),
@@ -8680,6 +8706,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num20": dict(era="exodus",
+                 when="The wilderness generation runs out. Israel reaches Kadesh in the wilderness of Zin; Miriam dies and is buried in a single clause. There is no water, the people quarrel, and God tells Moses to take the rod and SPEAK to the crag &mdash; and Moses calls the people rebels, asks whether &lsquo;we&rsquo; can bring them water, and strikes it twice instead. Water comes; so does the sentence: neither he nor Aaron will bring the assembly into the land. Edom then refuses passage along the king's road, and Israel turns away rather than fight. At Mount Hor, Aaron is stripped of the high-priestly garments in front of his son, Eleazar is dressed in them, and Aaron dies on the summit. Israel weeps thirty days.",
+                 clock="&#9888; &lsquo;The first month&rsquo; of an unnamed year &mdash; but Numbers 33:38 dates Aaron's death on Mount Hor to the first day of the fifth month of the FORTIETH year after the exodus, which fixes this chapter at the very end of the wilderness period, c. 1407 BC on the early-date chronology this project foregrounds. The thirty-eight years of <a href=\"numbers-14.html\">Numbers 14</a>'s sentence have passed in the white space between <a href=\"numbers-19.html\">Numbers 19</a> and v1 of this chapter, unremarked. Hebrew and English versification agree: 29 verses."),
     "num19": dict(era="exodus",
                  when="The law of the red cow, the Torah's standing example of a decree given without a reason. An unblemished red cow that has never worn a yoke is handed to Eleazar, taken outside the camp and burned whole &mdash; hide, flesh, blood and dung &mdash; with cedar, hyssop and scarlet thrown into the fire. Her ashes are stored and mixed with living water to make the &lsquo;water for impurity&rsquo;, the only remedy for the uncleanness contracted by touching a human corpse. ⚠ And the rite runs both ways: every clean man who handles it &mdash; the priest, the burner, the gatherer, and later the sprinkler &mdash; is himself unclean until evening.",
                  clock="&#9888; Undated, and the chapter gives no narrative hook at all; it is pure legislation dropped between the aftermath of Korah's revolt and the death of Miriam. It stands somewhere inside the thirty-eight years imposed at <a href=\"numbers-14.html\">Numbers 14</a> &mdash; on the early-date chronology this project foregrounds, some time between c. 1444 and c. 1407 BC. The Hebrew and English versification agree: 22 verses on both sides. In the synagogue reading cycle this verse begins the portion <em>Chuqat</em>, which is named from its own first line."),
@@ -12275,6 +12304,62 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    # ---- Números 20 ----
+    "qadash": ("qadash",
+        "HACER SANTO, apartar —su primer objeto en la Biblia es un día, el sábado. La raíz no significa "
+        "«bueno» ni «puro»: significa SEPARADO del uso común, reservado. ⚠ En "
+        "<a href=\"numbers-20.es.html#n20-7\">Números 20</a> la raíz sale seis veces y sostiene el juego "
+        "central del capítulo: cuatro de ellas son el topónimo <strong>Cades</strong> (<em>Qadesh</em>, vv1, "
+        "14, 16, 22) y dos son el verbo &mdash;<em>l'haqdisheni</em>, «para santificarme» (v12), que es "
+        "justamente lo que Moisés y Aarón no hicieron, y <em>vayyiqqadesh</em>, «y fue santificado» (v13), que "
+        "es lo que Dios obtiene de todos modos, juzgando. Falla la santidad en el pueblo llamado Santidad. "
+        "Ninguna versión puede llevarlo, porque «Cades» es un nombre y «santificar» un verbo."),
+    "sela": ("sela",
+        "UN PEÑASCO —una pared de roca, un risco, un saliente de piedra sobre el que uno podría subirse o "
+        "en el que podría esconderse; distinto de <em><a href=\"diccionario.html#tzur\">tzur</a></em>, la roca "
+        "maciza que el hebreo convierte en título divino. ⚠ La distinción decide cómo se lee "
+        "<a href=\"numbers-20.es.html#n20-7\">Números 20</a>. La primera agua-de-la-roca de Israel fue en un "
+        "<em>tzur</em>, y Dios dijo GOLPÉALA (<a href=\"exodus-17.es.html#v17-6\">Éxodo 17:6</a>, ya en estas "
+        "páginas). La segunda es en un <em>sela</em>, y Dios dice HÁBLALE —y Moisés la golpea. Otro sustantivo, "
+        "instrucción contraria, treinta y ocho años después, y de diez versiones comprobadas en los dos "
+        "estantes solo la NWT 1984 traduce las dos palabras de forma distinta. La misma palabra nombra después "
+        "la fortaleza edomita de Sela, el sitio que el griego llamaría Petra, «la roca»."),
+    "marah": ("mará",
+        "REBELARSE, ser rebelde —negarse a una orden, no simplemente quejarse. ⚠ Suministra las dos palabras "
+        "sobre las que gira <a href=\"numbers-20.es.html#n20-1\">Números 20</a>: en el v10 Moisés grita "
+        "<em>shim'u na ha-MORIM</em>, oíd ahora, REBELDES, y en el v24 Dios le devuelve la misma raíz a él y a "
+        "Aarón —<em>al asher MERITEM et pi</em>, por cuanto os REBELASTEIS contra mi boca. El que nombra a los "
+        "rebeldes queda nombrado uno. ⚠ Y una coincidencia de escritura que conviene conocer: el participio "
+        "<em>ha-morim</em> es, letra por letra, el nombre <em>Miryam</em> con el artículo delante —y a Miriam "
+        "acaban de enterrarla en el v1. Las vocales difieren y las raíces casi seguro no tienen relación (el "
+        "nombre de Miriam puede que ni siquiera sea hebreo), pero las cuatro letras son las mismas y median "
+        "nueve versículos."),
+    "rib": ("rib / merivá",
+        "PLEITEAR, querellarse —una palabra de sabor jurídico: un <em>rib</em> es un litigio, y en los profetas "
+        "es el PLEITO de Dios contra su pueblo. El sustantivo <em>merivá</em> es la querella misma, y se vuelve "
+        "topónimo dos veces. ⚠ <a href=\"exodus-17.es.html#v17-7\">Éxodo 17:7</a> (ya en estas páginas) nombra "
+        "un Masá-y-Meribá en la primera roca; <a href=\"numbers-20.es.html#n20-7\">Números 20:13</a> nombra una "
+        "segunda Meribá en la segunda, y por eso los libros posteriores llaman a esta Meribá-Cades para "
+        "distinguirlas. Tres versiones traducen el nombre en vez de conservarlo —la Douay-Rheims «the Water of "
+        "contradiction», y RV60 y RV 1909 «las aguas de la rencilla»— y la Living Bible lo conserva y lo glosa "
+        "mal como «Rebel Waters», aguas de rebelión, que es <em><a href=\"diccionario.html#marah\">mará</a></em>, "
+        "otra raíz distinta que este capítulo, eso sí, también usa."),
+    "asaf": ("ne'esaf el amav",
+        "SER RECOGIDO CON SU PUEBLO —el modismo propio de la Torá para morir, de <em>asaf</em>, recoger, el "
+        "verbo que se usa de meter bajo techo una cosecha. ⚠ Se enuncia SEPARADO de la sepultura todas las "
+        "veces, y por eso no puede significar sin más el entierro: a Abraham lo recogen con su pueblo y luego "
+        "lo sepultan (Génesis 25:8-9), y lo mismo con Ismael, Isaac y Jacob. En "
+        "<a href=\"numbers-20.es.html#n20-22\">Números 20:24, 26</a> Aarón es recogido con su pueblo en la cima "
+        "de un monte y el texto no menciona sepultura ninguna —lo contrario de Miriam en el v1, donde la "
+        "sepultura es lo único que se registra."),
+    "tzur": ("tzur",
+        "UNA ROCA —una masa de piedra, un peñasco; y, en el lenguaje poético, uno de los títulos más "
+        "característicos de Dios: «la Roca, perfecta es su obra» (Deuteronomio 32:4). ⚠ Distinto de "
+        "<em><a href=\"diccionario.html#sela\">sela</a></em>, el peñasco o risco. La diferencia importa en "
+        "<a href=\"numbers-20.es.html#n20-7\">Números 20</a>: donde <a href=\"exodus-17.es.html#v17-6\">Éxodo "
+        "17:6</a> mandó GOLPEAR el <em>tzur</em>, Números 20 manda HABLARLE al <em>sela</em> —y Moisés lo "
+        "golpea. De diez versiones comprobadas en los dos estantes, solo la NWT 1984 mantiene los dos "
+        "sustantivos distintos en su idioma."),
     # ---- Números 19 ----
     "parah": ("pará",
         "UNA VACA —una hembra adulta de la vacada. El hebreo la mantiene distinta de <em>eglá</em>, una "
@@ -15762,6 +15847,43 @@ DICTIONARY_ES = {
 }
 
 ENCYCLOPEDIA_ES = {
+    "edom": ("Edom (Seír)",
+        "La nación y la tierra descendientes de <a href=\"enciclopedia.html#esau\">ESAÚ</a> &mdash;las "
+        "escarpadas serranías de arenisca roja al sureste del mar Muerto, llamadas también SEIR («peludo», "
+        "que resuena con Esaú). El nombre Edom («rojo») se acuña del guiso rojo por el que Esaú vendió su "
+        "primogenitura, y le cuadra a la arenisca nubia roja de la región, en la que está tallada su capital "
+        "posterior, Petra. ⚠ En <a href=\"numbers-20.es.html#n20-14\">Números 20:14-21</a> Moisés le pide paso "
+        "por el camino real dirigiéndose a su rey como «tu hermano Israel», y Edom se lo niega dos veces y sale "
+        "con un ejército. Israel se aparta sin pelear. Deuteronomio mandará después no aborrecer al edomita "
+        "«porque es tu hermano», y los profetas volverán durante siglos a esta puerta cerrada."),
+    "esau": ("Esaú (Edom)",
+        "El primero de los mellizos de Isaac y Rebeca &mdash;nacido «rojizo (<em>admoní</em>), todo él como un "
+        "manto velludo», por lo que lo llamaron ESAÚ; y por haber cambiado su primogenitura por un plato de "
+        "guiso ROJO (<em>adom</em>) se ganó el segundo nombre, EDOM. Hombre del campo abierto, cazador, el "
+        "preferido de su padre por la caza que traía a casa. ⚠ Su descendencia es la nación que en "
+        "<a href=\"numbers-20.es.html#n20-14\">Números 20</a> le cierra la frontera a Israel &mdash;razón por la "
+        "cual aquella negativa no es una decisión fronteriza sino familiar, y el texto la plantea así al hacer "
+        "que Moisés diga «tu hermano Israel»."),
+    "hor": ("Monte Hor",
+        "El monte en la frontera de Edom donde murió Aarón, fue despojado de las vestiduras del sumo "
+        "sacerdocio delante de su hijo y fue «recogido con su pueblo» "
+        "(<a href=\"numbers-20.es.html#n20-22\">Números 20:22-29</a>). ⚠ No está identificado con seguridad. "
+        "El sitio tradicional de siempre es el Jebel Nebi Harún («monte del profeta Aarón») sobre Petra, que "
+        "lleva un santuario musulmán de cúpula blanca dedicado a Aarón y que se enseña a los peregrinos desde "
+        "hace siglos —pero queda bien adentro de Edom y no en su frontera, que es donde lo pone Números, y "
+        "muchos especialistas prefieren el Jebel Madurah, en el límite entre Edom y el Néguev. Las coordenadas "
+        "que se dan aquí son las del sitio tradicional y están marcadas como aproximadas. Números 33:38 aporta "
+        "la única fecha del itinerario del desierto atada a una muerte: el primer día del quinto mes del año "
+        "cuarenta."),
+    "zin": ("Desierto de Zin",
+        "La región seca al sur de Judá en la que estaba Cades, y el escenario de este capítulo: <em>llegaron "
+        "los hijos de Israel, toda la congregación, al desierto de Zin en el mes primero</em> "
+        "(<a href=\"numbers-20.es.html#n20-1\">Números 20:1</a>). ⚠ No confundir con el desierto de SIN, otro "
+        "lugar distinto —el hebreo los mantiene separados como <em>Tzin</em> y <em>Sin</em>, y la "
+        "Douay-Rheims, siguiendo a la Vulgata, imprime aquí «the desert of Sin» y así los funde para sus "
+        "lectores. Zin marca el límite meridional de Israel en <a href=\"numbers-13.es.html\">Números 13:21</a> "
+        "y otra vez en las fronteras de la tierra de Números 34. Las coordenadas apuntan al oasis de Cades "
+        "dentro de él y son aproximadas; la región no tiene bordes medidos."),
     "korah": ("Coré",
         "Un levita que encabezó una revuelta contra la autoridad de Moisés y Aarón en el desierto, "
         "sosteniendo que la congregación entera era santa y no necesitaba mediadores. La tierra abrió su "
@@ -16734,6 +16856,20 @@ ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "num20": [dict(
+        file="num20-roberts-tomb-of-aaron.jpg",
+        title="The traditional tomb of Aaron, drawn on the spot in 1839",
+        title_es="La tumba tradicional de Aarón, dibujada in situ en 1839",
+        artist="David Roberts, lithographed by Louis Haghe",
+        year="1839",
+        location="Cleveland Museum of Art, 1927.93",
+        location_es="Museo de Arte de Cleveland, 1927.93",
+        alt="A hand-coloured lithograph. A caravan has halted on stony ground in the foreground: robed men in striped and blue cloaks stand talking, camels kneel among bundles and tent-poles, and at the right a bearded man in a dark red robe leans on a staff beside a loaded animal. Behind them the ground rises through brown foothills to a pale, near-white massif of banded rock with a flat-topped, cliff-walled summit, hazy against a blank sky.",
+        note="&#9888; The mountain the chapter ends on &mdash; or the one pilgrims have been shown for centuries, which is not the same claim. Roberts drew this on his 1839 tour, and the summit in the distance carries the white-domed Muslim shrine to <a href=\"encyclopedia.html#hor\">Aaron</a>, Jebel Nebi Harun, above Petra. ⚠ Two honest cautions. The Cleveland Museum catalogues the plate as &lsquo;Summit of Mount HOREB&rsquo;, and Horeb is the other name for Sinai &mdash; a different mountain entirely from Mount Hor, and a good illustration of how easily these names slide together. And the identification itself is disputed: Numbers puts Mount Hor <em>on the border</em> of Edom, while this peak sits well inside it, which is why many scholars prefer a site on the Edom&ndash;Negev frontier instead. What the picture reliably shows is the country &mdash; bare banded sandstone, no water, and a caravan that has to stop where the ground lets it.",
+        note_es="&#9888; El monte con el que termina el capítulo &mdash;o el que se les enseña a los peregrinos desde hace siglos, que no es la misma afirmación. Roberts lo dibujó en su viaje de 1839, y la cumbre del fondo lleva el santuario musulmán de cúpula blanca dedicado a <a href=\"enciclopedia.html#hor\">Aarón</a>, el Jebel Nebi Harún, sobre Petra. ⚠ Dos cautelas honradas. El Museo de Cleveland cataloga la lámina como «Summit of Mount HOREB», y Horeb es el otro nombre del Sinaí &mdash;un monte completamente distinto del monte Hor, y una buena muestra de lo fácil que es que estos nombres se confundan. Y la identificación misma está discutida: Números sitúa el monte Hor <em>en la frontera</em> de Edom, mientras que este pico queda bien adentro, y por eso muchos especialistas prefieren un sitio en el límite entre Edom y el Néguev. Lo que la imagen sí muestra con fiabilidad es el país: arenisca desnuda y estratificada, nada de agua, y una caravana que ha de detenerse donde el terreno la deja.",
+        license="CC0 (Cleveland Museum of Art, open access)",
+        source_url="https://commons.wikimedia.org/wiki/File:David_Roberts_-_Tomb_of_Aaron,_Summit_of_Mount_Horeb_-_1927.93_-_Cleveland_Museum_of_Art.jpg",
+    )],
     "num19": [dict(
         file="num19-hammelburg-parah-adumah.jpg",
         title="The red cow, illuminated in a German prayer book",
