@@ -703,6 +703,18 @@ DICTIONARY = [
      "A HOLDING — a permanent, inheritable land-possession, from achaz, 'to grasp, hold fast' (KJV 'possession'). The loaded word of Genesis 23: Abraham seeks an achuzzat-qever, a 'burial holding' — and it is the very term God used for the promised land itself, 'all the land of Canaan for an everlasting HOLDING' (17:8). In his lifetime the everlasting holding comes down to one field with a grave in it.", (23, 4)),
     ("nasi", "nasi", "נָשִׂיא", "nasi",
      "A prince, chief — 'one lifted up' (from nasa, 'to lift, carry'). The Hittites call Abraham nesi Elohim, 'a prince of GOD' (23:6): NWT 'a chieftain of God'; KJV reads Elohim as a superlative, 'a mighty prince.' Both live in the phrase — a prince who belongs to God, and a godlike-great prince — and this translation keeps the divine name the Hittites actually spoke. In Numbers the plural nesi'im titles the twelve tribal CHIEFTAINS who stand with Moses at the census (Numbers 1:16, 44) — one lifted-up head per tribe; and it later titles Ezekiel's coming ruler. Leviticus 4:22 (already on these pages) puts the same title under the same law as everyone else: a nasi's unintentional sin gets its own graduated sacrifice, distinct from a commoner's only in which animal he brings, never in whether he needs one. The word gets its longest single workout in <a href=\"numbers-7.html\">Numbers 7</a> (already on these pages), where all twelve chieftains bring an identical dedication-offering, one per day, in Numbers 2's own marching order.", (23, 6)),
+    ("qarav", "qarav", "קָרַב", "qarav",
+     "TO COME NEAR, draw near — and in the causative, to BRING near, which is the ordinary verb for presenting an offering (a <em>qorban</em> is literally a thing-brought-near). ⚠ It is the spine of the revolt in <a href=\"numbers-16.html#n16-1\">Numbers 16&ndash;17</a>, where it occurs eleven times and traces the whole argument from one end to the other. It opens with Moses saying Jehovah 'will bring near the one he chooses, he will bring him near' (16:5) and pressing Korah with 'is it a small thing that he separated you to bring you near — and he brought you near — and you seek the priesthood also?' (16:9-10). It runs through the men 'bringing the incense near' who are consumed (16:35), the censers that became holy 'because they were brought near before Jehovah' (17:3-4), and the memorial that no outsider 'draw near' to burn incense (17:5). And it is the last thing anyone says: <em>kol ha-qarev ha-qarev</em>, 'everyone who draws near, who draws near, dies' (<a href=\"numbers-17.html#n17-27\">17:28</a>) — the participle doubled, which only the ASV and the two Reina-Valeras keep. Korah's complaint was that access was restricted; the congregation ends by complaining that access is lethal.",
+     ("Numbers", 16, 5)),
+    ("tzitz", "tzitz", "צִיץ", "tzitz",
+     "A BLOSSOM — and, in the sanctuary, a PLATE of gold. The same noun does both jobs, and the overlap is not a coincidence of spelling: it names a thing that shines out or protrudes. ⚠ <a href=\"exodus-28.html#v28-36\">Exodus 28:36</a> (already on these pages) has Moses make a <em>tzitz</em> of pure gold engraved HOLY TO JEHOVAH and tie it to the front of the high priest's turban; it is made at Exodus 39:30 and set on Aaron's head at <a href=\"leviticus-8.html#v8-9\">Leviticus 8:9</a>. Then at <a href=\"numbers-17.html#n17-21\">Numbers 17:23</a>, to settle whether Aaron is the priest at all, his dead staff <em>vayyatzetz tzitz</em> — blossomed a blossom — producing overnight the same word that was already pinned to his forehead. The verb form there occurs in exactly one verse in the Hebrew Bible. ⚠ Not to be confused with, though plainly related to, <em><a href=\"dictionary.html#tsitsit\">tsitsit</a></em>, the tassel of <a href=\"numbers-15.html#n15-37\">Numbers 15:38</a> — the same family of sprouting-out words, two chapters apart, on the same priestly stretch of the book.",
+     ("Numbers", 17, 23)),
+    ("maggefah", "maggefah", "מַגֵּפָה", "maggefah",
+     "A STRIKING-BLOW, plague — from <em>nagaf</em>, to strike or smite, so the picture is of a blow landing rather than of a disease spreading. Distinct from <em>dever</em>, pestilence, which is the word threatened at <a href=\"numbers-14.html#n14-11\">Numbers 14:12</a>; <em>maggefah</em> is what actually falls, at <a href=\"numbers-14.html\">14:37</a> on the ten scouts and at <a href=\"numbers-17.html#n17-9\">Numbers 17:11-15</a> on the congregation, where it kills fourteen thousand seven hundred and is stopped by a man standing still with a censer. ⚠ The verb of stopping is <em>atsar</em>, to restrain or hold back — the plague is not cured, it is CHECKED, which is why the same root can be used of shutting up the heavens so it does not rain.",
+     ("Numbers", 17, 11)),
+    ("edut", "edut", "עֵדוּת", "edut",
+     "THE TESTIMONY — the tablets, and by extension the ark that holds them and the tent that houses it. From the same root as <em><a href=\"dictionary.html#edah\">edah</a></em>, the congregation: both come from a root about appointing and bearing witness, so the community and the document are named by the same idea. ⚠ It is the technical term for where a thing is stored when it is stored as EVIDENCE: <a href=\"numbers-17.html#n17-25\">Numbers 17:19, 25</a> lays the twelve rods 'before the testimony', and afterwards Aaron's rod alone is put back there and kept — <em>l'mishmeret l'ot</em>, as a keeping, for a sign. Hebrews 9:4 (not yet on these pages) remembers it as one of three objects inside the ark, with the jar of manna and the tablets: a piece of food, a piece of writing, and a stick that flowered.",
+     ("Numbers", 17, 19)),
     ("machtah", "machtah", "מַחְתָּה", "machtah",
      "A CENSER — a fire-pan for carrying live coals with incense on them. The same object, and the same three actions, appear in the two places the Bible uses it to kill: <a href=\"leviticus-10.html#v10-1\">Leviticus 10:1</a> has Nadab and Abihu 'each take his censer, put fire in it, and place incense on the fire' and offer strange fire, and the next verse has fire come out and consume them; <a href=\"numbers-16.html#n16-16\">Numbers 16:18</a> has two hundred and fifty men do exactly that and stand at the entrance of the tent, and <a href=\"numbers-16.html#n16-34\">16:35</a> ends the same way. ⚠ The word is neutral in itself — the tabernacle's own bronze fire-pans are <em>machtot</em> (<a href=\"exodus-27.html#v27-3\">Exodus 27:3</a>, rendered 'firepans' there for the altar-tool) and the high priest carries one legitimately into the Most Holy on the Day of Atonement (<a href=\"leviticus-16.html#v16-12\">Leviticus 16:12</a>). What kills is not the pan but who is holding it.",
      ("Numbers", 16, 6)),
@@ -6447,6 +6459,11 @@ XREFS = [
     (("Matthew", 9, 9), ("Matthew", 4, 19), "akolouthei moi, 'follow me' — the same bare call and the same instant obedience that pulled two fishermen off their nets; a tax collector rises from a booth on the identical two words"),
     (("Matthew", 9, 18), ("Matthew", 8, 2), "proskyneō, a fifth time — the magi, Herod, the devil, a leper, and now an unnamed synagogue ruler; every step widens who bows, and none yet settles what the gesture means"),
     (("Matthew", 9, 20), ("Numbers", 15, 38), "kraspedon — the same word the Greek Old Testament uses for the tassels the Law commands, which means the text is quietly showing Jesus wearing them when the bleeding woman touches his fringe"),
+    (("Numbers", 17, 11), ("Leviticus", 10, 1), "the censer again — the same object and the same three actions that killed Nadab and Abihu and the 250, now carried out to stop a plague; what changes is who holds it and where the fire came from"),
+    (("Numbers", 17, 23), ("Exodus", 28, 36), "tzitz — the word for the blossom Aaron's rod produces overnight is the word for the golden plate already tied to Aaron's forehead"),
+    (("Numbers", 17, 23), ("Exodus", 25, 33), "almond-blossom — the rod produces the sanctuary's own decorative motif, the shape already carved into the lampstand's cups"),
+    (("Numbers", 17, 10), ("Numbers", 16, 21), "the offer to consume the congregation 'in a moment', repeated almost word for word one chapter later — and this time Moses and Aaron fall on their faces and say nothing"),
+    (("Numbers", 17, 3), ("Numbers", 16, 35), "the censers of the two hundred and fifty: the fire that consumed the men is the reason their equipment is holy"),
     (("Numbers", 16, 30), ("Genesis", 4, 11), "patzetah — 'she opened her mouth', of the ground. The form occurs in only three verses in the Hebrew Bible: there it opens to receive a murdered brother's blood, here to receive living men"),
     (("Numbers", 16, 3), ("Leviticus", 19, 2), "'the whole congregation, all of them, are holy' — Korah's premise is a quotation of this verse, addressed to the same body; the rebellion argues FROM the law, not against it"),
     (("Numbers", 16, 18), ("Leviticus", 10, 1), "each man takes his censer, puts fire in it and lays incense on it — the identical three actions that killed Nadab and Abihu, and the same ending two verses later"),
@@ -8628,6 +8645,9 @@ CHRON_CHAPTERS = {
     "num1": dict(era="exodus",
                  when="In the wilderness of Sinai the redeemed people are counted and arrayed as an army — twelve tribes, twelve chieftains, 603,550 fighting men; and Levi is set apart to carry and guard the tent at the camp's center.",
                  clock="c. 1445 BC — the first day of the SECOND month of the second year, one month after Leviticus and about three weeks before the cloud lifts and Israel marches (Numbers 10:11). Thirteen months out of Egypt, the nation is mustered for the conquest it will not, for lack of faith, actually attempt for another thirty-eight years."),
+    "num17": dict(era="exodus",
+                 when="The aftermath of Korah's revolt, and a second sign. Eleazar lifts the dead men's censers out of the burning &mdash; they have become holy, and are beaten into plating for the altar as a memorial that no outsider should approach to burn incense. The next morning the whole congregation accuses Moses and Aaron of having killed the people of Jehovah; a plague breaks out, and Aaron runs into the middle of it with a censer and stands between the dead and the living until it is checked, at fourteen thousand seven hundred. Then twelve rods, one per tribe, are laid up overnight before the testimony, and Aaron's alone buds, blossoms and bears ripe almonds. It is kept there as a sign, and the people end in panic: everyone who draws near to the dwelling of Jehovah dies.",
+                 clock="&#9888; Undated within the chapter, and continuous with <a href=\"numbers-16.html\">Numbers 16</a> &mdash; v6 is explicitly &lsquo;on the next day&rsquo; and v23 &lsquo;on the next day&rsquo; again, so the whole chapter covers about forty-eight hours. That places it somewhere inside the thirty-eight years imposed at <a href=\"numbers-14.html\">Numbers 14</a>, before the arrival at Kadesh in the fortieth year; on the early-date chronology this project foregrounds, some time between c. 1444 and c. 1407 BC. ⚠ Note the numbering when checking any reference: the Hebrew chapter's vv1&ndash;15 are Numbers 16:36&ndash;50 in English Bibles, and its vv16&ndash;28 are their Numbers 17:1&ndash;13."),
     "num16": dict(era="exodus",
                  when="Korah, a Levite and first cousin to Moses and Aaron, joins with three Reubenites &mdash; Dathan, Abiram and On &mdash; and two hundred and fifty chieftains of the congregation, and challenges the whole arrangement of authority: the entire congregation is holy, so why do you lift yourselves above it? Moses proposes a test with censers and incense. Dathan and Abiram refuse a summons twice, call Egypt a land flowing with milk and honey, and accuse Moses of setting himself up as a prince. The ground splits open under the tents and takes them down alive, and fire comes out from Jehovah and consumes the two hundred and fifty men holding censers.",
                  clock="&#9888; Undated within the chapter, and the wilderness narrative gives no fixed point again until Numbers 20. It falls somewhere inside the thirty-eight years imposed at <a href=\"numbers-14.html\">Numbers 14</a> &mdash; after the sentence, before the arrival at Kadesh in the fortieth year &mdash; so on the early-date chronology this project foregrounds, some time between c. 1444 and c. 1407 BC. The chapter's own division is worth noting alongside the date: the Hebrew ends at v35, where every English Bible runs to v50, because their 16:36&ndash;50 is Numbers 17:1&ndash;15 in the Masoretic text."),
@@ -12214,6 +12234,61 @@ BOOK_INTROS = {
 # ---------------------------------------------------------------------------
 
 DICTIONARY_ES = {
+    # ---- Números 17 ----
+    "qarav": ("qarav",
+        "ACERCARSE —y, en causativo, ACERCAR o presentar, que es el verbo corriente para presentar una "
+        "ofrenda (un <em>qorbán</em> es literalmente una cosa-acercada). ⚠ Es la espina dorsal de la "
+        "revuelta en <a href=\"numbers-16.es.html#n16-1\">Números 16&ndash;17</a>, donde sale once veces y "
+        "traza el argumento entero de punta a punta. Abre con Moisés diciendo que Jehová «acercará al que "
+        "escoja, lo acercará a sí» (16:5) y apretando a Coré con «¿os es poco que os haya apartado para "
+        "acercaros —y os acercó— y buscáis también el sacerdocio?» (16:9-10). Recorre a los hombres que "
+        "«presentaban» el incienso y son consumidos (16:35), los incensarios que se volvieron santos "
+        "«porque los presentaron delante de Jehová» (17:3-4), y el memorial de que ningún extraño «se "
+        "acerque» a quemar incienso (17:5). Y es lo último que dice nadie: <em>kol ha-qarev ha-qarev</em>, "
+        "«todo el que se acerca, el que se acerca, muere» (<a href=\"numbers-17.es.html#n17-27\">17:28</a>) "
+        "—el participio duplicado, que solo conservan la ASV y las dos Reina-Valera. La queja de Coré era "
+        "que el acceso estaba restringido; la congregación termina quejándose de que el acceso es letal."),
+    "tzitz": ("tzitz",
+        "UNA FLOR —y, en el santuario, una LÁMINA de oro. El mismo sustantivo hace los dos trabajos, y el "
+        "solapamiento no es casualidad ortográfica: nombra algo que brota o sobresale. ⚠ "
+        "<a href=\"exodus-28.es.html#v28-36\">Éxodo 28:36</a> (ya en estas páginas) manda hacer un "
+        "<em>tzitz</em> de oro puro grabado SANTIDAD A JEHOVÁ y atarlo al frente de la mitra del sumo "
+        "sacerdote; se hace en Éxodo 39:30 y se pone sobre la cabeza de Aarón en "
+        "<a href=\"leviticus-8.es.html#v8-9\">Levítico 8:9</a>. Y en "
+        "<a href=\"numbers-17.es.html#n17-21\">Números 17:23</a>, para decidir si Aarón es el sacerdote, su "
+        "vara muerta <em>vayyatzetz tzitz</em> —floreció una flor—, produciendo de noche la misma palabra "
+        "que ya llevaba prendida en la frente. La forma verbal de allí aparece en un solo versículo de toda "
+        "la Biblia hebrea. ⚠ No confundir con —aunque está emparentada con— <em>tsitsit</em>, la borla de "
+        "<a href=\"numbers-15.es.html#n15-37\">Números 15:38</a>."),
+    "maggefah": ("maguefá",
+        "UN GOLPE, plaga —de <em>nagaf</em>, herir o golpear, de modo que la imagen es la de un golpe que "
+        "cae y no la de una enfermedad que se extiende. Distinta de <em>déver</em>, pestilencia, que es la "
+        "palabra amenazada en <a href=\"numbers-14.es.html#n14-11\">Números 14:12</a>; la <em>maguefá</em> "
+        "es lo que efectivamente cae, en 14:37 sobre los diez exploradores y en "
+        "<a href=\"numbers-17.es.html#n17-9\">Números 17:11-15</a> sobre la congregación, donde mata a "
+        "catorce mil setecientos y la detiene un hombre quieto con un incensario. ⚠ El verbo de detenerla "
+        "es <em>atsar</em>, refrenar o contener: la plaga no se cura, se CONTIENE."),
+    "edut": ("edut",
+        "EL TESTIMONIO —las tablas, y por extensión el arca que las guarda y la tienda que la aloja. De la "
+        "misma raíz que <em><a href=\"diccionario.html#edah\">edá</a></em>, la congregación: las dos vienen "
+        "de una raíz que tiene que ver con señalar y atestiguar, así que la comunidad y el documento se "
+        "nombran con la misma idea. ⚠ Es el término técnico para donde se guarda algo cuando se guarda como "
+        "PRUEBA: <a href=\"numbers-17.es.html#n17-25\">Números 17:19, 25</a> pone las doce varas «delante "
+        "del testimonio», y después la de Aarón sola vuelve allí y se queda —<em>l'mishmeret l'ot</em>, "
+        "para ser guardada, como señal. Hebreos 9:4 (todavía no en estas páginas) lo recuerda como uno de "
+        "los tres objetos dentro del arca, con el vaso de maná y las tablas: algo de comer, algo escrito, y "
+        "un palo que floreció."),
+    "shaqed": ("shaqed",
+        "EL ALMENDRO, la almendra —y el verbo <em>shaqad</em>, vigilar o estar despierto, con el que juega. "
+        "El almendro es el primer árbol que despierta en el Levante: florece a finales del invierno, antes "
+        "que ningún otro, y por eso es el árbol vigilante. ⚠ El juego se hace explícito en "
+        "<a href=\"jeremiah-1.es.html\">Jeremías 1:11-12</a> (ya en estas páginas): «veo una vara de "
+        "almendro» —<em>maqqel shaqed</em>— y la respuesta es «bien has visto, porque yo VIGILO "
+        "(<em>shoqed</em>) sobre mi palabra para ponerla por obra». Y la almendra está tallada por todo el "
+        "santuario: <a href=\"exodus-25.es.html#v25-33\">Éxodo 25:33-34</a> da a las copas del candelabro "
+        "forma de flor de almendro. Cuando la vara de Aarón madura almendras en "
+        "<a href=\"numbers-17.es.html#n17-21\">Números 17:23</a>, no produce un milagro genérico: produce "
+        "el motivo decorativo del propio santuario, dentro del santuario, en una noche."),
     # ---- Números 16 ----
     "machtah": ("majtá",
         "UN INCENSARIO —una badila para llevar brasas vivas con incienso encima. El mismo objeto, y las "
@@ -16486,6 +16561,39 @@ ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
 # `python3 tools/find_art.py <search terms>` does the searching and prints the
 # licence for each candidate.
 CHAPTER_ART = {
+    "num17": [dict(
+        file="num17-schnorr-aarons-rod.jpg",
+        title="Aaron's Rod Budded and Blossomed",
+        title_es="La vara de Aarón brotó y floreció",
+        artist="Julius Schnorr von Carolsfeld",
+        year="1851–60",
+        location="Woodcut, from Die Bibel in Bildern; reprinted in Bible Pictures and What They Teach Us, 1897",
+        location_es="Xilografía, de Die Bibel in Bildern; reimpresa en Bible Pictures and What They Teach Us, 1897",
+        alt="A black-and-white woodcut. A group of bearded men in robes stand holding plain straight "
+            "staffs. At the right, a figure with rays of light rising from his head holds a bundle of "
+            "more staffs and hands them out. In the centre, a man in a tall priestly mitre raises one "
+            "staff above the others — and it alone has sprouted, its top breaking into leaves and "
+            "blossom. Curtains and columns stand behind them.",
+        note="The moment of v24: Moses brings all twelve rods back out from before Jehovah and each "
+             "man takes his own. Moses is the rayed figure at the right with the bundle; the man in "
+             "the mitre holding up the one rod that has broken into leaf is Aaron. Every other staff "
+             "in the picture is straight and dead, which is the whole argument of the chapter drawn "
+             "in one gesture. ⚠ Two honest departures from the text: the engraver stops at blossom "
+             "and gives the rod no <em>almonds</em>, though v23 insists on all four stages including "
+             "ripe fruit; and he sets the scene among stone columns rather than in a tent, which is "
+             "the 19th century imagining a sanctuary rather than the one Exodus describes.",
+        note_es="El momento del v24: Moisés saca las doce varas de delante de Jehová y cada uno toma "
+                "la suya. Moisés es la figura con rayos de luz a la derecha, con el haz de varas; el "
+                "hombre de la mitra que levanta la única vara que ha echado hojas es Aarón. Todas las "
+                "demás varas del grabado están rectas y muertas, que es el argumento entero del "
+                "capítulo dibujado en un solo gesto. ⚠ Dos desviaciones honestas respecto del texto: "
+                "el grabador se detiene en la flor y no le da <em>almendras</em> a la vara, aunque el "
+                "v23 insiste en las cuatro etapas incluido el fruto maduro; y sitúa la escena entre "
+                "columnas de piedra y no en una tienda, que es el siglo XIX imaginando un santuario "
+                "en lugar del que describe Éxodo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Foster_Bible_Pictures_0078-1_Aaron%27s_Rod_Budded_and_Blossomed.jpg",
+    )],
     "num16": [dict(
         file="num16-botticelli-punishment-of-korah.jpg",
         title="The Punishment of Korah",
