@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-22 17:26 UTC",
+ "generated": "2026-08-22 18:38 UTC",
  "assets": [
   {
    "name": "Gold",
@@ -448,9 +448,9 @@
    "country": "🌐",
    "emoji": "₿",
    "domain": null,
-   "market_cap": 1551198849442.871,
-   "price": 77275.0390625,
-   "change_pct": -1.34,
+   "market_cap": 1551102065025.5146,
+   "price": 77270.109375,
+   "change_pct": -1.35,
    "spark": [
     64098.4961,
     64311.8125,
@@ -481,7 +481,7 @@
     69266.1875,
     73032.7578,
     78335.1875,
-    77275.0391
+    77270.1094
    ],
    "rank": 11
   },
@@ -799,7 +799,7 @@
  "constants": {
   "gold_tonnes": 216265,
   "silver_tonnes": 1750000,
-  "btc_circulating": 20073737.5,
-  "btc_block_height": 963611
+  "btc_circulating": 20073765.62,
+  "btc_block_height": 963620
  }
 }
