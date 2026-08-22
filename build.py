@@ -4380,6 +4380,39 @@ ES_BOOK = {"Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico",
            "3 John": "3 Juan", "Amos": "Amós", "Obadiah": "Abdías", "Jonah": "Jonás", "Micah": "Miqueas", "Nahum": "Nahúm", "Habakkuk": "Habacuc", "Zephaniah": "Sofonías", "Haggai": "Hageo", "Zechariah": "Zacarías", "Psalms": "Salmos", "Jude": "Judas", "Revelation": "Apocalipsis"}
 
 
+def _es_atlas_retarget(content):
+    """Retarget a hand-authored Spanish PLACE link from the encyclopedia index
+    (enciclopedia.html#slug) to the place's own Spanish atlas page
+    (atlas/<slug>.es.html) — the same decision the English side has always made
+    in inject_encyclopedia_links(): a reader mid-chapter who clicks «Hesbón»
+    wants to see WHERE that is, not a one-line index row. Before this, every
+    built .es.html chapter carried zero atlas links while its English twin
+    carried them throughout (the Numbers 21 twin-diff finding).
+
+    Applied at the single Spanish choke point (_es_panels), so the standalone
+    .es.html chapters AND the 'Mostrar español' verse lines threaded into
+    English pages both inherit it — the hand-authored source/es/ files keep
+    authoring to enciclopedia.html#slug (tools/validate_chapter.py keeps
+    validating that form), and the build decides the destination, exactly as
+    the English injector does.
+
+    Only a slug that is a PLACE *and* has an ENCYCLOPEDIA_ES entry is rewritten
+    — that is precisely the set atlas/<slug>.es.html pages are built for
+    (build_atlas_entry_pages_es), so a rewritten link can never dangle. People,
+    nations and crafts keep their encyclopedia links; an untranslated place
+    keeps its (Spanish-encyclopedia) link until its ES entry lands, at which
+    point the next build upgrades it with no source edit."""
+    atlas_es = {e["slug"] for e in ENCYCLOPEDIA
+                if e["kind"] == "place" and e["slug"] in ENCYCLOPEDIA_ES}
+
+    def sub(m):
+        slug = m.group(1)
+        if slug in atlas_es:
+            return f'href="atlas/{slug}.es.html"'
+        return m.group(0)
+    return re.sub(r'href="enciclopedia\.html#([a-z0-9\-]+)"', sub, content)
+
+
 def _es_panels():
     """Read source/es/*.html -> {slug: inner_content}. The single source of Spanish
     truth: the Spanish page build AND the English-page 'Mostrar español' toggle both
@@ -4394,7 +4427,7 @@ def _es_panels():
         raw = open(os.path.join(es_dir, fn), encoding="utf-8").read()
         m = re.search(r'id="chapter-([a-z0-9]+)">(.*?)</div><!-- /chapter-\1 -->', raw, re.S)
         if m:
-            out[m.group(1)] = m.group(2).strip()
+            out[m.group(1)] = _es_atlas_retarget(m.group(2).strip())
     return out
 
 
