@@ -246,6 +246,24 @@ another.
      ASV and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`** (see the
      shelf-source rule in the doctrine section) — "I could not fetch the NWT" stopped being a
      reason to ship a chapter without it on 2026-08-19.
+   - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
+     <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
+     ⚠ Added 2026-08-22, and the reason matters more than the command. Numbers 27's review
+     found two wrong shelf attributions **whose correct text was already fetched and sitting
+     in the working directory** — I ran the fetch and never opened the file. So this was not
+     a diligence failure that a firmer rule could fix; it was attention going to the newest
+     written rule and off an older one. Written rules compete for attention and lose.
+     Scripts do not, which is exactly why `validate_chapter.py` exists. Same remedy here:
+     the script extracts every `tag t-*` claim with its adjacent quoted phrase and fails
+     when that phrase is not in that version's fetched text for those verses.
+     Mutation-tested against the three real defects that motivated it — a version quoted
+     as something it does not say and a version cited but never fetched both FAIL the run;
+     a version merely *named* in a list where it does not belong is reported as PARTIAL,
+     a warning, so **read the PARTIAL lines rather than trusting "clean."** It also cannot
+     see an untagged citation — which is itself worth knowing, because running it over the
+     five shipped chapters found exactly that in Numbers 23 and 27 ("both Reina-Valeras"
+     as bare prose, two shelf citations uncounted, their quote drifting onto the English
+     versions). PARAPHRASES are counted and NOT checked; they are still yours to read.
    - **Run the shelf rule on BOTH shelves, and re-run it on every version's own
      REVISION.** ⚠ Added after Numbers 12 (2026-08-18), where the rule directly above
      was obeyed for the English shelf and skipped entirely for the Spanish one — six wrong
