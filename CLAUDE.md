@@ -293,6 +293,16 @@ another.
   ("vault," not "firmament") at build time. Never hand-edit it.
 - **Dictionary / Encyclopedia / XREFS are curated** in `library_data.py`, grown per chapter
   per the checklist above.
+- **A PLACE link goes to the atlas, and the BUILD decides that — in both languages.**
+  English chapters get it from `inject_encyclopedia_links()` (places → `atlas/<slug>.html`,
+  people/crafts → the encyclopedia). Spanish chapters get the same decision from
+  `_es_atlas_retarget()` at the `_es_panels()` choke point: keep hand-authoring ES links as
+  `enciclopedia.html#slug` (what `tools/validate_chapter.py` validates), and the build
+  retargets any slug that is a place **with** an `ENCYCLOPEDIA_ES` entry to
+  `atlas/<slug>.es.html` — the exact set the Spanish atlas pages are built for, so a
+  rewritten link can never dangle, and an untranslated place upgrades itself on the build
+  after its ES entry lands. (Before 2026-08-21, 152 built EN pages carried atlas links and
+  exactly 0 ES pages did — the Numbers 21 twin-diff finding.)
 - **Routes and Regions are hand-drawn inline SVG maps** (`ROUTES` / `REGIONS` in
   `library_data.py`), deliberately no external map library — real lat/lon math, a
   cos-lat-equirectangular projection, numbered stops or boundary polygons over a basemap of
