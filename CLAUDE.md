@@ -216,6 +216,24 @@ another.
    - **Open every chapter you cite** — its actual shipped text, not just proof the file
      exists. Cross-reference *existence* and cross-reference *substance* are different checks
      and only the first one is automated.
+   - **ENUMERATE every sentence that asserts something about a text OUTSIDE this chapter,
+     and fetch each one.** ⚠ Added 2026-08-22 after this failed in three consecutive
+     chapters, each time in a different disguise, and each time it was the chapter REVIEW
+     rather than the pre-ship pass that caught it. Numbers 23 shipped a false "the one other
+     place" absolute; Numbers 24 shipped a v13-repeats-22:18 comparison and a "nothing to
+     arbitrate" claim, both written from memory; Numbers 25 shipped "Micah 6:5 names
+     Baal-peor" (it names Balak and Balaam), a loose quotation of Hosea 9:10, and called a
+     harmonisation a "guess" when the Greek says it outright. ⭐ **The pattern is the
+     lesson: patching the specific category that was last criticised does not work.** After
+     Numbers 24's review I tightened the shelf-comparison check and it demonstrably worked —
+     Numbers 25's own pre-ship pass caught my false unanimity before it shipped — and the
+     identical laxity simply reappeared one category over, in cross-references to other
+     biblical books. Treat "X says Y" about ANY text you are not currently translating as
+     the same class of claim as an absolute: it is guilty until fetched. That includes
+     other biblical books, the New Testament (`tools/source_text.py` covers all 1,189
+     chapters, Greek included), and named non-biblical sources — if you cite a tractate, a
+     Maccabees verse or a scribal tradition and cannot produce it, say in the note that it
+     is reported rather than verified, or cut it.
    - **FETCH every shelf quote you print. Never write one from memory.** ⚠ Added after
      Numbers 10 (2026-08-18) printed four renderings of 10:36 unfetched: ASV came out
      misquoted ("the ten thousand thousands" for its actual "the ten thousands of the
