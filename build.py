@@ -1254,27 +1254,33 @@ def _atlas_zoom(span):
     return max(3, min(17, z))
 
 
-def osm_embed(lat, lon, span, label, caption=None):
+def osm_embed(lat, lon, span, label, caption=None, lang="en"):
     """A key-less, officially-supported OpenStreetMap embed (no Google API/billing
     needed for a static site) centered on (lat, lon), with a bbox span_degrees wide.
 
     `caption` (already-escaped HTML) renders directly under the map frame, above the
     "view larger" link — the readable-English fix for OSM's Middle East labels, which
     are mostly Arabic-script only with no `name:en` fallback for anything but a
-    handful of major cities."""
+    handful of major cities.
+
+    `lang="es"` swaps the one line of chrome this function writes itself (the "view
+    larger" link) to Spanish -- OSM's own embed UI (its zoom controls, its own
+    footer) stays whatever OSM serves regardless of this flag, but our own text
+    shouldn't be the lone English string left on an otherwise-Spanish atlas page."""
     half = span / 2.0
     bbox = f"{lon - half:.4f},{lat - half:.4f},{lon + half:.4f},{lat + half:.4f}"
     marker = f"{lat:.4f},{lon:.4f}"
     zoom = _atlas_zoom(span)
     view_url = f"https://www.openstreetmap.org/?mlat={lat:.4f}&mlon={lon:.4f}#map={zoom}/{lat:.4f}/{lon:.4f}"
     cap_html = f'<div class="atlas-caption">{caption}</div>' if caption else ""
+    link_text = "Ver mapa más grande en OpenStreetMap →" if lang == "es" else "View larger map on OpenStreetMap →"
     return f"""<div class="mapembed">
   <div class="mapembed-frame">
     <iframe src="https://www.openstreetmap.org/export/embed.html?bbox={bbox}&layer=mapnik&marker={marker}"
       title="{html.escape(label, quote=True)}" loading="lazy"></iframe>
   </div>
   {cap_html}
-  <div class="mapembed-link"><a href="{view_url}" rel="noopener">View larger map on OpenStreetMap →</a></div>
+  <div class="mapembed-link"><a href="{view_url}" rel="noopener">{link_text}</a></div>
 </div>"""
 
 
@@ -4797,7 +4803,7 @@ def _atlas_card_es(slug, name_es, desc_es, e, es_slugs, permalink=True):
         caption = f'\U0001F4CD <strong>{html.escape(name_es)}</strong>'
         if e.get("modern"):
             caption += f' — hoy {html.escape(e["modern"])}'
-        map_html = osm_embed(lat, lon, span, name_es, caption=caption)
+        map_html = osm_embed(lat, lon, span, name_es, caption=caption, lang="es")
     else:
         badge = ""
         map_html = ('<div class="atlas-nomap">\U0001F4CD Sin punto fijo: la ubicación está '
