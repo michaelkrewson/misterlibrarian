@@ -5096,6 +5096,10 @@ exactly how this series grows.</p>
   <div class="card-d">The scientist wrote more on Scripture than on physics — his Daniel &amp; Revelation, his
   textual criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled
   honestly.</div></a>
+  <a class="card" href="ask-cain-seth.html"><div class="card-t">Could anyone alive today be descended from Cain?</div>
+  <div class="card-d">Cain's line simply stops in Genesis 4; Seth's runs to Noah; and Genesis 9:19 says the
+  whole earth was peopled from Noah's sons. What that adds up to — and the two questions it depends
+  on.</div></a>
 </div>"""
     out = page(f"Dear Mr. Librarian — {SITE_NAME}", body, active="ask",
                desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
@@ -5616,6 +5620,104 @@ def build_ask_creation_days():
                     "and left for you to weigh.",
                url="ask-creation-days.html")
     open(os.path.join(OUT, "ask-creation-days.html"), "w", encoding="utf-8").write(out)
+
+
+def build_ask_cain_seth():
+    """Dear Mr. Librarian post: is anyone alive today descended from Cain, or
+    is everyone descended from Seth (via Noah)? Walks Genesis 4:17-22 (Cain's
+    line, which simply stops at Lamech's children), Genesis 5's toledot
+    formula for Seth's line to Noah, and Genesis 9:19's flat claim that "from
+    them the whole earth was peopled." Neutrality habit: the flood-universality
+    and pre-flood-intermarriage questions are laid out, not settled."""
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
+<h1 class="pagetitle">Could anyone alive today be descended from Cain?</h1>
+
+<div class="qbox">
+  <div class="qlabel">A reader asked</div>
+  <p>&ldquo;After Cain killed Abel, is there any way to know today whether someone is descended from Cain,
+  or from Seth? Or is that just lost to history?&rdquo;</p>
+</div>
+
+<div class="panel prose">
+  <p><strong>The short answer.</strong> On the text&rsquo;s own terms, this isn&rsquo;t actually the open
+  question it sounds like &mdash; and the answer it gives is the opposite of what you&rsquo;d expect. Cain&rsquo;s
+  line is recorded, and then it simply stops. Seth&rsquo;s line is recorded all the way to Noah. And Genesis
+  says flatly that everyone alive after the flood came through Noah. Put those three together and Genesis is
+  telling you that everyone today would be descended from Seth &mdash; and nobody would be descended from Cain
+  at all.</p>
+</div>
+
+<h2>What Genesis actually records about Cain&rsquo;s line</h2>
+<div class="panel prose">
+  <p>Cain is marked, exiled to the land of Nod, and builds a city (<a href="genesis-4.html#v4-16">Genesis
+  4:16&ndash;17</a>). His descendants are then named in one short, flat list: Enoch (a different man from the
+  Enoch of chapter 5), Irad, Mehujael, Methushael, Lamech &mdash; and Lamech&rsquo;s children, Jabal, Jubal,
+  Tubal-cain, and their sister Naamah (<a href="genesis-4.html#v4-18">4:18&ndash;22</a>). And that&rsquo;s it.
+  The text never mentions them again. No further generation, no marriage into anyone else&rsquo;s line, no
+  connection forward to Noah &mdash; the record just ends, four generations past Cain&rsquo;s own son.</p>
+  <p>Compare that to how chapter 5 opens: &ldquo;This is the record of the generations (<em>toledot</em>) of
+  Adam&rdquo; (<a href="genesis-5.html#v5-1">5:1</a>) &mdash; a formal heading the Cain list never gets &mdash;
+  introducing the line through <a href="ency/seth.html">Seth</a>, born when Adam was 130
+  (<a href="genesis-5.html#v5-3">5:3</a>), that runs generation by generation to Noah. It&rsquo;s the same
+  <em>toledot</em> formula that structures the rest of Genesis. The book itself is marking one branch as the
+  line the story keeps following, and the other as a branch it lets drop.</p>
+</div>
+
+<h2>What the flood does to the question</h2>
+<div class="panel prose">
+  <p>Noah is Seth&rsquo;s descendant &mdash; Seth, Enosh, Kenan, Mahalalel, Jared, Enoch, Methuselah, Lamech
+  (a different Lamech from Cain&rsquo;s), Noah, all named in that same chapter 5 list. And after the flood,
+  Genesis says this about where every living person came from: &ldquo;These three were Noah&rsquo;s sons, and
+  from them the whole earth was peopled&rdquo; (<a href="genesis-9.html#v9-19">Genesis 9:19</a>).</p>
+  <p>Cain&rsquo;s line is never said to have boarded the ark, and the text gives no reason to think it did
+  &mdash; it had already gone silent five chapters earlier. So if you read Genesis 9:19 as covering literally
+  everyone, the conclusion follows on the page: every person alive today, by this text&rsquo;s own account,
+  descends from Seth through Noah, and Cain&rsquo;s branch ended with the flood.</p>
+</div>
+
+<h2>Two honest complications</h2>
+<div class="panel prose">
+  <p>That conclusion leans on two things this project doesn&rsquo;t settle for you.</p>
+  <p><strong>The lines may already have blurred before the flood.</strong> The four strangest verses in
+  Genesis &mdash; the &ldquo;sons of God&rdquo; marrying &ldquo;the daughters of men&rdquo;
+  (<a href="genesis-6.html#n6-1">Genesis 6:1&ndash;4</a>) &mdash; have three serious readings, and one of the
+  oldest alternatives to the &ldquo;divine beings&rdquo; reading is exactly this: the line of Seth
+  intermarrying with the line of Cain. If that&rsquo;s the right reading, the two bloodlines were already
+  mixing well before Noah, and a clean &ldquo;Sethite, not Cainite&rdquo; label stops meaning much even on the
+  text&rsquo;s own terms. This project renders the phrase literally and leaves the identification open, the
+  same way that note does.</p>
+  <p><strong>&ldquo;The whole earth&rdquo; is doing a lot of work.</strong> Whether Genesis 9:19 and the flood
+  narrative around it describe every human being on the planet, or use the same kind of sweeping,
+  everyone&rsquo;s-affected language the Bible uses elsewhere for events that weren&rsquo;t literally universal,
+  is a genuinely disputed question this post doesn&rsquo;t take a side on. The Seth-not-Cain answer above is
+  what the text says <em>if</em> you read that language at full strength &mdash; not a claim independent of how
+  you read it.</p>
+</div>
+
+<h2>So, is it a true statement?</h2>
+<div class="panel prose">
+  <p>It depends which kind of &ldquo;know&rdquo; the question means. In the sense of an actual, documented
+  family tree reaching back six thousand years to a named ancestor &mdash; no one has that, for Cain, Seth, or
+  anyone else that far back. Nobody&rsquo;s paper trail goes anywhere near that deep. So if the question is
+  &ldquo;can you prove your descent,&rdquo; the honest answer is always no, and it was never really about which
+  brother.</p>
+  <p>But in the sense of &ldquo;what does the story itself say happened&rdquo; &mdash; Genesis isn&rsquo;t
+  actually silent. Read at face value, it answers a narrower, sharper question than the one usually asked: not
+  <em>which</em> line you&rsquo;re from, but that there&rsquo;s only one candidate left standing after the flood
+  &mdash; and it isn&rsquo;t Cain&rsquo;s.</p>
+</div>
+
+<div class="panel" style="margin-top:14px">
+  <p class="muted" style="margin:0 0 12px">Have a question about the project, a translation choice, or
+  what's coming next? Reader questions are exactly how this series grows — the next one could be yours.</p>
+  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
+</div>"""
+    out = page(f"Could anyone alive today be descended from Cain? — {SITE_NAME}", body, active="ask",
+               desc="After Cain killed Abel, is anyone alive today descended from him, or from Seth? "
+                    "Genesis 4's line that simply stops, Genesis 5's formal line to Noah, and Genesis "
+                    "9:19's claim that the whole earth was peopled from Noah's sons.",
+               url="ask-cain-seth.html")
+    open(os.path.join(OUT, "ask-cain-seth.html"), "w", encoding="utf-8").write(out)
 
 
 def build_contact():
@@ -6359,6 +6461,7 @@ def main():
     build_ask_jehovah()
     build_ask_creation_days()
     build_ask_newton()
+    build_ask_cain_seth()
     build_es()
     build_contact()
     build_thanks()
