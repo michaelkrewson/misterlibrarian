@@ -54,7 +54,7 @@
   <url><loc>https://mistertranslation.com/ask.html</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://mistertranslation.com/atlas-es.html</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://mistertranslation.com/atlas.html</loc><lastmod>2026-08-22</lastmod></url>
-  <url><loc>https://mistertranslation.com/biblioteca.html</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://mistertranslation.com/biblioteca.html</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://mistertranslation.com/book-1-chronicles.html</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://mistertranslation.com/book-1-corinthians.html</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://mistertranslation.com/book-1-john.html</loc><lastmod>2026-08-19</lastmod></url>
@@ -121,7 +121,7 @@
   <url><loc>https://mistertranslation.com/book-titus.html</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://mistertranslation.com/book-zechariah.html</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://mistertranslation.com/book-zephaniah.html</loc><lastmod>2026-08-19</lastmod></url>
-  <url><loc>https://mistertranslation.com/chronology.html</loc><lastmod>2026-08-19</lastmod></url>
+  <url><loc>https://mistertranslation.com/chronology.html</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://mistertranslation.com/colossians-1.es.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/colossians-1.es.html"/><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/colossians-1.html"/></url>
   <url><loc>https://mistertranslation.com/colossians-1.html</loc><lastmod>2026-08-21</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/colossians-1.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/colossians-1.es.html"/></url>
   <url><loc>https://mistertranslation.com/concordance.html</loc><lastmod>2026-08-22</lastmod></url>
@@ -143,7 +143,7 @@
   <url><loc>https://mistertranslation.com/ecclesiastes-1.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ecclesiastes-1.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ecclesiastes-1.es.html"/></url>
   <url><loc>https://mistertranslation.com/ecclesiastes-3.es.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ecclesiastes-3.es.html"/><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ecclesiastes-3.html"/></url>
   <url><loc>https://mistertranslation.com/ecclesiastes-3.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ecclesiastes-3.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ecclesiastes-3.es.html"/></url>
-  <url><loc>https://mistertranslation.com/enciclopedia.html</loc><lastmod>2026-08-22</lastmod></url>
+  <url><loc>https://mistertranslation.com/enciclopedia.html</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://mistertranslation.com/encyclopedia.html</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://mistertranslation.com/ephesians-1.es.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ephesians-1.es.html"/><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ephesians-1.html"/></url>
   <url><loc>https://mistertranslation.com/ephesians-1.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ephesians-1.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ephesians-1.es.html"/></url>
@@ -746,7 +746,8 @@
   <url><loc>https://mistertranslation.com/ency/caesarea-philippi.es.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ency/caesarea-philippi.es.html"/><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ency/caesarea-philippi.html"/></url>
   <url><loc>https://mistertranslation.com/ency/caesarea-philippi.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ency/caesarea-philippi.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ency/caesarea-philippi.es.html"/></url>
   <url><loc>https://mistertranslation.com/ency/caiaphas.html</loc><lastmod>2026-08-19</lastmod></url>
-  <url><loc>https://mistertranslation.com/ency/cain.html</loc><lastmod>2026-08-19</lastmod></url>
+  <url><loc>https://mistertranslation.com/ency/cain.es.html</loc><lastmod>2026-08-23</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ency/cain.es.html"/><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ency/cain.html"/></url>
+  <url><loc>https://mistertranslation.com/ency/cain.html</loc><lastmod>2026-08-19</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ency/cain.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ency/cain.es.html"/></url>
   <url><loc>https://mistertranslation.com/ency/calah.html</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://mistertranslation.com/ency/caleb.es.html</loc><lastmod>2026-08-22</lastmod><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ency/caleb.es.html"/><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ency/caleb.html"/></url>
   <url><loc>https://mistertranslation.com/ency/caleb.html</loc><lastmod>2026-08-22</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/ency/caleb.html"/><xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/ency/caleb.es.html"/></url>
