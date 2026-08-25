@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-25 07:52 UTC",
+ "generated": "2026-08-25 08:50 UTC",
  "assets": [
   {
    "name": "Gold",
@@ -8,9 +8,9 @@
    "country": "🌐",
    "emoji": "🥇",
    "domain": null,
-   "market_cap": 32631506121849.336,
-   "price": 4693.10009765625,
-   "change_pct": 0.1,
+   "market_cap": 32579358012748.47,
+   "price": 4685.60009765625,
+   "change_pct": -0.06,
    "spark": [
     4044.0,
     3985.6001,
@@ -41,7 +41,7 @@
     4516.2998,
     4624.1001,
     4640.7998,
-    4693.1001
+    4685.6001
    ],
    "rank": 1
   },
@@ -52,9 +52,9 @@
    "country": "🇸🇦",
    "emoji": null,
    "domain": "aramco.com",
-   "market_cap": 6400869582527.16,
-   "price": 26.459999084472656,
-   "change_pct": -0.23,
+   "market_cap": 6396031785192.489,
+   "price": 26.440000534057617,
+   "change_pct": -0.3,
    "spark": [
     26.5179,
     26.3007,
@@ -85,7 +85,7 @@
     26.3007,
     26.4,
     26.4,
-    26.46
+    26.44
    ],
    "rank": 2
   },
@@ -98,7 +98,7 @@
    "domain": "nvidia.com",
    "market_cap": 5049593976516.724,
    "price": 208.47999572753906,
-   "change_pct": -3.2,
+   "change_pct": -0.15,
    "spark": [
     211.8,
     212.5,
@@ -142,7 +142,7 @@
    "domain": "apple.com",
    "market_cap": 4529157767754.517,
    "price": 310.3399963378906,
-   "change_pct": 0.21,
+   "change_pct": -0.1,
    "spark": [
     314.5887,
     327.2178,
@@ -186,7 +186,7 @@
    "domain": "abc.xyz",
    "market_cap": 4256751087419.6206,
    "price": 348.05999755859375,
-   "change_pct": 0.86,
+   "change_pct": 0.03,
    "spark": [
     359.51,
     370.92,
@@ -228,9 +228,9 @@
    "country": "🌐",
    "emoji": "🥈",
    "domain": null,
-   "market_cap": 3834378502234.2554,
-   "price": 68.1500015258789,
-   "change_pct": 0.32,
+   "market_cap": 3816655265808.1963,
+   "price": 67.83499908447266,
+   "change_pct": -0.14,
    "spark": [
     57.11,
     55.898,
@@ -261,7 +261,7 @@
     68.026,
     69.466,
     68.541,
-    68.15
+    67.825
    ],
    "rank": 6
   },
@@ -274,7 +274,7 @@
    "domain": "microsoft.com",
    "market_cap": 3618542555090.437,
    "price": 487.30999755859375,
-   "change_pct": 0.77,
+   "change_pct": 0.01,
    "spark": [
     384.2067,
     394.8866,
@@ -318,7 +318,7 @@
    "domain": "amazon.com",
    "market_cap": 2826769276815.3604,
    "price": 262.07000732421875,
-   "change_pct": 0.97,
+   "change_pct": -0.2,
    "spark": [
     247.49,
     254.96,
@@ -362,7 +362,7 @@
    "domain": "tsmc.com",
    "market_cap": 2127076696886.98,
    "price": 410.1199951171875,
-   "change_pct": -2.25,
+   "change_pct": 0.16,
    "spark": [
     420.39,
     419.48,
@@ -406,7 +406,7 @@
    "domain": "broadcom.com",
    "market_cap": 1706829518295.224,
    "price": 358.760009765625,
-   "change_pct": -2.77,
+   "change_pct": 0.04,
    "spark": [
     389.11,
     394.28,
@@ -448,9 +448,9 @@
    "country": "🌐",
    "emoji": "₿",
    "domain": null,
-   "market_cap": 1596445938763.2324,
-   "price": 79524.6015625,
-   "change_pct": 0.68,
+   "market_cap": 1604105064967.3284,
+   "price": 79906.1171875,
+   "change_pct": 1.16,
    "spark": [
     63724.8984,
     63871.3633,
@@ -481,7 +481,7 @@
     77083.4141,
     77755.2656,
     78964.4844,
-    79524.6016
+    79906.1172
    ],
    "rank": 11
   },
@@ -494,7 +494,7 @@
    "domain": "meta.com",
    "market_cap": 1424106979655.481,
    "price": 559.02001953125,
-   "change_pct": 1.1,
+   "change_pct": -0.21,
    "spark": [
     661.04,
     681.31,
@@ -538,7 +538,7 @@
    "domain": "tesla.com",
    "market_cap": 1378194611348.5483,
    "price": 348.95001220703125,
-   "change_pct": -4.12,
+   "change_pct": -0.11,
    "spark": [
     396.18,
     394.46,
@@ -582,7 +582,7 @@
    "domain": "lilly.com",
    "market_cap": 1111939159279.847,
    "price": 1246.9300537109375,
-   "change_pct": -0.58,
+   "change_pct": -0.17,
    "spark": [
     1150.8909,
     1154.975,
@@ -626,7 +626,7 @@
    "domain": "berkshirehathaway.com",
    "market_cap": 1079602778989.1068,
    "price": 504.32000732421875,
-   "change_pct": 1.62,
+   "change_pct": 0.02,
    "spark": [
     491.09,
     488.35,
@@ -670,7 +670,7 @@
    "domain": "jpmorganchase.com",
    "market_cap": 947351016974.3243,
    "price": 356.3900146484375,
-   "change_pct": 1.25,
+   "change_pct": -0.03,
    "spark": [
     342.89,
     346.91,
@@ -714,7 +714,7 @@
    "domain": "walmart.com",
    "market_cap": 847455832215.6588,
    "price": 106.48999786376953,
-   "change_pct": 2.72,
+   "change_pct": 0.23,
    "spark": [
     113.4284,
     112.2612,
@@ -758,7 +758,7 @@
    "domain": "visa.com",
    "market_cap": 713977549151.5212,
    "price": 382.4100036621094,
-   "change_pct": 3.01,
+   "change_pct": -0.32,
    "spark": [
     355.3598,
     354.4815,
@@ -799,7 +799,7 @@
  "constants": {
   "gold_tonnes": 216265,
   "silver_tonnes": 1750000,
-  "btc_circulating": 20074868.75,
-  "btc_block_height": 963973
+  "btc_circulating": 20074871.88,
+  "btc_block_height": 963974
  }
 }
