@@ -172,6 +172,72 @@ def _quote_before(body, pos, used_end=0, window=30):
         return None, None
     return next(g for g in last.groups() if g), len(gap)
 
+
+# ---------------------------------------------------------------------------
+# UNIVERSAL SHELF CLAIMS ("the whole shelf keeps this", "nobody trims it").
+#
+# Added 2026-08-27 after Numbers 35 shipped FOUR false ones in a single chapter.
+# Every one was invisible to the quote checker above, and for two different
+# reasons -- which is why this is a separate pass and not a tweak to that one:
+#
+#   v24  "even the Living Bible keeps a version of it"  -- a PARAPHRASE (a tag
+#        with no quoted phrase). The tool counted it under PARAPHRASES and
+#        printed "read these yourself". It was not read. The TLB is in fact the
+#        single version that DROPS the preposition, so the one version named as
+#        the example was the counter-example.
+#   v15  "The whole shelf keeps this; nobody softens it"      -- NO TAG AT ALL.
+#   v34  "the whole shelf keeps the repetition, nobody trims" -- NO TAG AT ALL.
+#        Three of thirteen soften v15; the TLB trims v34. A tag-driven checker
+#        can never see these, because there is nothing for it to key on.
+#
+# The rule that WOULD have caught all four, and the one enforced here: a
+# universal claim about the shelf must carry a COUNT. "The whole shelf keeps
+# it" fails; "Twelve of the thirteen keep it" passes. This is not pedantry
+# about wording -- you cannot write the count without doing the tally, and
+# doing the tally is the step that was skipped. It is also strictly better
+# prose: every one of the four corrections became a sharper note once it had
+# to name how many and which.
+#
+# Scoped to the PARAGRAPH, not the sentence, so a legitimate pattern that
+# states its count in the next breath still passes ("Not one version on either
+# shelf repeats the word. Every one of the thirteen breaks the pair.").
+UNIVERSAL = re.compile(
+    r"the whole shelf|the entire shelf|the shelf is unanimous|unanimous"
+    # "no version" must tolerate an adjective -- the Spanish "ninguna versión" was
+    # caught while the English twin\'s "no ENGLISH version" slipped straight through.
+    r"|no(?:t one)?(?: \w+)? version|every version|all (?:of )?the (?:versions|thirteen)"
+    r"|none of the (?:versions|thirteen)|nobody |no one "
+    r"|todo el estante|el estante entero|un[aá]nime"
+    r"|ni una sola versión|ninguna versión|todas las versiones|nadie ",
+    re.I)
+# The count must be a count OF THE SHELF, not any number in the paragraph. The
+# first cut accepted any numeral and passed every mutation, because the false
+# v34 claim sits in a paragraph that legitimately says "repeated TWICE in ONE
+# verse" -- counts about the text, not about the versions. Requiring the
+# shelf-size word itself ("thirteen" / "trece") is what forces the tally: you
+# cannot write it without having counted the versions.
+SHELF_COUNT = re.compile(r"\bthirteen\b|\btrece\b|\b13\b", re.I)
+SHELF_CONTEXT = re.compile(r"shel(?:f|ves)|versions?|estante|versi[oó]n(?:es)?", re.I)
+
+def universal_claims(body):
+    """Paragraphs making a universal claim about the shelf with no count in them."""
+    out = []
+    for para_html in re.findall(r"<p>(.*?)</p>", body, re.S):
+        text = norm_prose(para_html)
+        # Only paragraphs actually ABOUT the shelf. Without this, "let no one go
+        # out of his place on the seventh day" -- a quotation of Exodus 16:29 --
+        # is flagged as an unchecked claim about the versions.
+        if not (SHELF_CONTEXT.search(text) or 'tag t-' in para_html):
+            continue
+        m = UNIVERSAL.search(text)
+        if m and not SHELF_COUNT.search(text):
+            out.append((m.group(0).strip(), re.sub(r"\s+", " ", text)[:150]))
+    return out
+
+def norm_prose(h):
+    return html.unescape(re.sub(r"<[^>]+>", " ", h))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("fragment")
@@ -194,7 +260,10 @@ def main():
         print("no notes found in fragment -- is this a chapter panel?"); return 2
 
     cache, miss, nodata, ok, para, short, partial = {}, [], [], 0, 0, 0, []
+    universal = []
     for nid, body in notes:
+        for phrase, ctx in universal_claims(body):
+            universal.append((nid, phrase, ctx))
         verses = sorted(v2n.get(nid, set()), key=int)
         # Collect tags, then group any run of tags that SHARE one following quote:
         # "the NWT 1984 and TNM 1987 keep it indefinite ('...')" is one claim about two
@@ -304,7 +373,11 @@ def main():
     for nid, tag, part, verses in miss:
         print("  ✗ MISS     %-8s %-6s %r  not found in vv%s" %
               (nid, tag, part[:60], ",".join(verses) if verses else "?"))
-    bad = len(miss) + len(nodata)
+    for nid, phrase, ctx in universal:
+        print("  \u2717 UNIVERSAL %-8s %r has no count -- tally all 13 and say how many"
+              % (nid, phrase))
+        print("             %s\u2026" % ctx)
+    bad = len(miss) + len(nodata) + len(universal)
     print("clean." if not bad else "%d PROBLEM(S) -- fix before splicing." % bad)
     return 1 if bad else 0
 
