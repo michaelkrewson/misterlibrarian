@@ -1032,7 +1032,7 @@ DICTIONARY = [
     ("qets", "qets", "קֵץ", "qets",
      "'End' — from a root meaning CUT OFF: the drumbeat of Daniel 12. 'The time of the end' (et qets, 12:4, 9), 'the end of the wonders' (12:6), and the book's last breath — 'go on to the end... at the end of the days' (12:13). Genesis 6:13 uses it first: 'the end of all flesh has come before me.'", ("Daniel", 12, 4)),
     ("goral", "goral", "גּוֹרָל", "goral",
-     "A LOT — a marked stone or token drawn or cast to decide a question thought to be in God's hands (the 'let God point' procedure): 'the LOT is cast into the lap, but its every decision is from Jehovah' (Proverbs 16:33). Casting lots divides the promised land among the tribes (Numbers 26:55 — Joshua's tribal allotments are goral country), exposes Achan (Joshua 7:14-18), nearly condemns Jonathan (1 Samuel 14:41-42), and chooses Saul as king (1 Samuel 10:20-21). ⚠ In Jonah 1:7 pagan sailors cast lots to find whose guilt has raised the storm, and it falls on Jonah — the same procedure Edom had just thrown OVER Jerusalem as it fell (Obadiah 11). Its last appearances frame the Gospels: soldiers cast lots for Jesus' clothing (Matthew 27:35, fulfilling Psalm 22:18) and the eleven cast lots to replace Judas with Matthias (Acts 1:26) — the last time in Scripture, just before the Spirit comes and it is never used again. By extension goral means one's allotted PORTION or destiny — Daniel's last word of hope: 'you shall stand up to your LOT at the end of the days' (Daniel 12:13), a share with your name on it, not a game of chance. \u2b50 <a href=\"numbers-26.html#v26-55\">Numbers 26:55-56</a> sets the lot against arithmetic and keeps both: the land is apportioned by head-count (v54) and by lot (v55), and v56 puts them in one sentence &mdash; <em>al-pi ha-goral</em>, by the MOUTH of the lot. The usual reconstruction is that the lot fixed where each tribe landed and the numbers fixed how much.", ("Jonah", 1, 7)),
+     "A LOT — a marked stone or token drawn or cast to decide a question thought to be in God's hands (the 'let God point' procedure): 'the LOT is cast into the lap, but its every decision is from Jehovah' (Proverbs 16:33). Casting lots divides the promised land among the tribes (Numbers 26:55 — Joshua's tribal allotments are goral country), exposes Achan (Joshua 7:14-18), nearly condemns Jonathan (1 Samuel 14:41-42), and chooses Saul as king (1 Samuel 10:20-21). ⚠ In Jonah 1:7 pagan sailors cast lots to find whose guilt has raised the storm, and it falls on Jonah — the same procedure Edom had just thrown OVER Jerusalem as it fell (Obadiah 11). Its last appearances frame the Gospels: soldiers cast lots for Jesus' clothing (Matthew 27:35, fulfilling Psalm 22:18) and the eleven cast lots to replace Judas with Matthias (Acts 1:26) — the last time in Scripture, just before the Spirit comes and it is never used again. By extension goral means one's allotted PORTION or destiny — Daniel's last word of hope: 'you shall stand up to your LOT at the end of the days' (Daniel 12:13), a share with your name on it, not a game of chance. \u2b50 <a href=\"numbers-26.html#v26-55\">Numbers 26:55-56</a> sets the lot against arithmetic and keeps both: the land is apportioned by head-count (v54) and by lot (v55), and v56 puts them in one sentence &mdash; <em>al-pi ha-goral</em>, by the MOUTH of the lot. The usual reconstruction is that the lot fixed where each tribe landed and the numbers fixed how much. <a href=\"numbers-33.html#n33-54\">Numbers 33:54</a> restates the same law almost word for word on the plains of Moab, changing one letter's worth of grammar &mdash; the first verb turns from singular to plural mid-verse, a shift only the ASV tries to carry into English.", ("Jonah", 1, 7)),
     ("moed", "mo'ed", "מוֹעֵד", "mo'ed",
      "'Appointed time' — Genesis 1:14's word: the lights are hung 'for appointed times' (mo'adim), this translation's fixed rendering. In Daniel 12:7 time itself is measured in them — 'an appointed time, appointed times, and a half': the broken seven, three and a half, sworn by the One who lives forever. Later the word also names the tent of MEETING (ohel mo'ed) — appointed time, appointed place. The same root turns up as a bare participle in Jeremiah 24:1 — two baskets of figs 'set' (mu'adim) before the temple, ordinary produce given the same verb that elsewhere marks a sacred appointment, though the text never says the baskets were placed there for any cultic reason.", (1, 14)),
     # ---- Matthew 5 (Greek) ----
@@ -1297,7 +1297,7 @@ DICTIONARY = [
     ("madda", "madda", "מַדָּע", "madda",
      "KNOWLEDGE, understanding — from yada, 'to know.' ⚠ A LATE word: it occurs only a handful of times in the Hebrew Bible, and all of them (Chronicles, Ecclesiastes, Daniel) are books whose Hebrew belongs to the Persian period or after — one of the small pieces of evidence for dating Chronicles late. At 2 Chronicles 1:10 Solomon asks for chokhmah u-madda, 'wisdom and knowledge,' where the parallel at 1 Kings 3:9 has him ask for a LISTENING HEART to discern good and evil: moral discernment in one book, administrative competence in the other. In modern Hebrew madda is the ordinary word for SCIENCE.", ("2 Chronicles", 1, 10)),
     ("bamah", "bamah", "בָּמָה", "bamah",
-     "HIGH PLACE — a raised open-air sanctuary, the ordinary form of worship in Canaan and in Israel before the temple. The book of Kings condemns them relentlessly and judges nearly every king by whether he removed them. ⚠ 2 Chronicles 1:3 handles the awkward fact that Solomon sacrificed at the high place at GIBEON by explaining what Kings never does: the tent of meeting Moses made was there, with Bezalel's bronze altar in front of it. Whether that is older information or the Chronicler's defence of a beloved king is a real question; the library does not vote.", ("2 Chronicles", 1, 3)),
+     "HIGH PLACE — a raised open-air sanctuary, the ordinary form of worship in Canaan and in Israel before the temple. The book of Kings condemns them relentlessly and judges nearly every king by whether he removed them. ⚠ 2 Chronicles 1:3 handles the awkward fact that Solomon sacrificed at the high place at GIBEON by explaining what Kings never does: the tent of meeting Moses made was there, with Bezalel's bronze altar in front of it. Whether that is older information or the Chronicler's defence of a beloved king is a real question; the library does not vote. <a href=\"numbers-33.html#n33-50\">Numbers 33:52</a> names bamah third of three things Israel must destroy in Canaan, alongside figured stones and molten images.", ("2 Chronicles", 1, 3)),
     ("alah", "alah (go up)", "עָלָה", "alah",
      "To GO UP — and in the books of the return it is the technical word for making the journey from Babylonia to Jerusalem, which is uphill in every sense (the road climbs, and one 'goes up' to a sanctuary). ⚠ It carries extraordinary weight: 'let him GO UP' (ve-ya'al) is the LAST WORD OF THE HEBREW BIBLE, since Chronicles closes the canon and breaks off mid-sentence on Cyrus's decree — the sentence Ezra 1:3 then finishes. It is also the last clause of Ezra 1 ('Sheshbazzar brought up… when the exiles were brought up'), and it survives in modern Hebrew as ALIYAH, immigration to Israel. Unrelated to the alah spelled with an alef, 'curse,' met at Zechariah 5:3 — same English transliteration, different root entirely.", ("Ezra", 1, 3)),
     ("kelim", "kelim", "כֵּלִים", "kelim",
@@ -2324,6 +2324,19 @@ DICTIONARY = [
     ("erekh", "erekh", "עֶרֶךְ", "erkekha",
      "A FIXED VALUATION — not a market price but a flat tariff, scaled only by age and sex, that a person's vowed value to the sanctuary is converted into (27:2-8): fifty shekels for a man in his prime, thirty for a woman, sliding down for children and the elderly, with an explicit provision for the poor to have the priest set a lower figure they can actually pay. The word is grammatically addressed to Moses himself — erkekha, 'YOUR valuation' — even though every verse then hands the actual assessment to 'the priest'; the law speaks as if Moses personally fixed the tariff once, for good. Genesis 37:28 (already on these pages) already put this exact number to use: Joseph, seventeen years old, is sold for twenty pieces of silver — precisely this chapter's own fixed valuation for a male between five and twenty. Genesis makes nothing of the coincidence; the price is simply, horribly, correct.",
      ("Leviticus", 27, 2)),
+    # ---- Numbers 33 ----
+    ("masa", "masa", "מַסָּע", "masa",
+     "A STAGE, a leg of a journey — from nasa, 'to pull up (a tent peg), to set out.' It is the chapter's own title-word: Numbers 33:1-2 opens 'these are the masei (stages) of the children of Israel... Moses wrote their departures according to their masa'eihem' — the identical root behind vayis'u, 'and they journeyed,' repeated at the head of forty-two of that chapter's fifty-six verses. ⚠ Not related to nasa (נשא), 'to lift, to carry, to bear guilt' — a different root spelled with a different final letter, despite the near-identical English transliteration.",
+     ("Numbers", 33, 1)),
+    ("shephatim", "shephatim", "שְׁפָטִים", "shephatim",
+     "JUDGMENTS — from shaphat, 'to judge,' and here specifically the fixed phrase asah shephatim, 'to EXECUTE judgments,' used of a decisive, punitive act rather than a courtroom verdict. Exodus 12:12 (already on these pages) has Jehovah say, on the night of the tenth plague, 'against all the gods of Egypt I WILL execute judgments' (e'eseh shephatim, future tense); Numbers 33:4 reports the same two Hebrew words in the perfect — 'upon their gods Jehovah executed judgments' (asah shephatim) — forty years later, in the itinerary's own opening line. Searched consonantally, this exact collocation, Egypt's gods paired with this verb, occurs in exactly these two verses and nowhere else in the Hebrew Bible: a promise made in the future tense, collected in the perfect.",
+     ("Exodus", 12, 12)),
+    ("maskit", "maskit", "מַשְׂכִּית", "maskit",
+     "A FIGURED STONE — from a root for seeing or picturing, an object carved or set with an image meant to be gazed at. It is a rare word: searched consonantally, it occurs in exactly three verses of the whole Hebrew Bible. Numbers 33:52 lists it as the first of three things Israel must destroy in Canaan — figured stones, molten images (massekah — already this project's own word for the golden calf, Exodus 32:4), and high places (bamah) — three objects, three verbs, kept apart rather than flattened into one English word. Leviticus 26:1 (already on these pages) forbids setting one up 'to bow down upon it'; Ezekiel 8:12 (not yet on these pages) has the elders of Israel worship idols in a private 'chamber of his maskit,' in the dark, convinced 'Jehovah does not see us.'",
+     ("Numbers", 33, 52)),
+    ("sikkim", "sikkim", "שִׂכִּים", "sikkim",
+     "BARBS, thorns — paired at Numbers 33:55 with the near-synonym tzeninim: 'those you leave remaining of them will be as sikkim in your eyes, and as tzeninim in your sides.' Both nouns are true hapax legomena — searched consonantally, neither occurs anywhere else in the whole Hebrew Bible (the other hits for sikkim's own root all belong to an unrelated verb, 'to rise early,' or to the word for darkness). ⚠ The shelf agrees almost universally that whichever word is 'thorns' belongs in the sides and the sharper one in the eyes, but reaches for a different specific English or Spanish word nearly every time — pricks, barbs, irritants, aguijones, púas, astillas — while the Douay-Rheims, working from the Vulgate, breaks the pattern completely: 'nails in your eyes, and spears in your sides.' Joshua 23:13 (not yet on these pages) reuses tzeninim, and reassigns it to the EYES instead of the sides, paired with a snare and a trap this chapter does not have.",
+     ("Numbers", 33, 55)),
 ]
 
 ENCYCLOPEDIA = [
@@ -6339,6 +6352,28 @@ ENCYCLOPEDIA = [
               "confused with Abraham's servant Eliezer of Damascus (Genesis 15:2) or the many other Eliezers "
               "scattered through later genealogies — a common name built on a common root.",
          refs=[("Exodus", 18, 4)], videos=[]),
+    dict(slug="rameses", name="Rameses", kind="place", coords=(30.80, 31.83, 0.6), approx=True,
+         modern="Qantir / Tell el-Dab\'a, Nile Delta, Egypt (the traditional Ramesside capital Pi-Ramesses)",
+         refs=[("Exodus", 12, 37), ("Numbers", 33, 3), ("Numbers", 33, 5)],
+         desc="The city Israel departs FROM &mdash; &lsquo;they journeyed from Rameses in the first month, on the fifteenth day&rsquo; (<a href=\"numbers-33.html#n33-1\">Numbers 33:3</a>). Exodus 1:11 (already on these pages) already names it as one of the two store-cities built by forced labor; Numbers 33 is where it becomes the fixed point every other station in the wilderness itinerary is measured against. ⚠ The identification with Pi-Ramesses (Qantir/Tell el-Dab\'a) is widely held but not certain &mdash; the name could describe the wider region rather than one specific city, and the Egyptian royal name Ramesses covers eleven pharaohs across three centuries, which is part of why this project&rsquo;s own dating discussion elsewhere treats the Exodus pharaoh&rsquo;s identity as an open question rather than a name this text supplies directly."),
+    dict(slug="ezion-geber", name="Ezion-geber", kind="place", coords=(29.53, 34.97, 0.5), approx=True,
+         modern="Near modern Aqaba/Eilat, at the head of the Gulf of Aqaba; often identified with Tell el-Kheleifeh",
+         refs=[("Numbers", 33, 35), ("Numbers", 33, 36), ("1 Kings", 9, 26)],
+         desc="A wilderness camp named in this project&rsquo;s own itinerary chapter (<a href=\"numbers-33.html#n33-16\">Numbers 33:35-36</a>), the last stop before Kadesh &mdash; and, centuries later, Solomon&rsquo;s own Red Sea port, from which his ships sail to Ophir for gold (1 Kings 9:26-28, not yet on these pages). The exact tell is debated (Tell el-Kheleifeh is the traditional candidate, though later surveys have questioned whether it alone can carry the whole port&rsquo;s history), but the site&rsquo;s general location, at the head of the gulf, is not in serious dispute."),
+    dict(slug="kibroth-hattaavah", name="Kibroth-hattaavah", kind="place", coords=(28.6, 33.9, 1.2), approx=True,
+         modern="Not securely located; a traditional candidate is Erweis el-Ebeirig, northeast of Jebel Musa in the southern Sinai",
+         refs=[("Numbers", 11, 34), ("Numbers", 11, 35), ("Numbers", 33, 16)],
+         desc="&lsquo;The Graves of Craving&rsquo; &mdash; the burial ground <a href=\"numbers-11.html#n11-31\">Numbers 11</a> (already on these pages) names for the people who died craving meat, a name built on a double pun the chapter itself spells out (<em>qivrot</em>/<em>qavru</em>, graves/they-buried; <em>ta&rsquo;avah</em>/<em>ha-mit&rsquo;avvim</em>, the craving/the ones-who-craved). This chapter names the man himself, so to speak, only in passing; Numbers 33:16 is where it is formally entered as one station among many in the master itinerary. ⚠ Its location is genuinely unrecovered &mdash; no archaeological find confirms any proposal, and the traditional candidate rests entirely on its position along the reconstructed route rather than on any surviving trace of the name."),
+    dict(slug="punon", name="Punon", kind="place", coords=(30.66, 35.47, 0.4), approx=True,
+         modern="Widely identified with Feinan (Wadi Faynan), southern Jordan",
+         refs=[("Numbers", 33, 42), ("Numbers", 33, 43)],
+         desc="A wilderness camp (<a href=\"numbers-33.html#n33-41\">Numbers 33:42</a>), the second stop after Mount Hor. Feinan, its usual identification, is one of the largest ancient copper-smelting districts in the whole southern Levant, worked from the Chalcolithic period through Roman times &mdash; tens of thousands of tons of slag have been surveyed there. The text itself says nothing about mining, but three chapters earlier on these pages (<a href=\"numbers-21.html#n21-8\">Numbers 21:8-9</a>), on this same stretch of the Edomite frontier, Moses makes a serpent OF BRONZE at Jehovah&rsquo;s word &mdash; the itinerary is naming, without comment, the district where that metal actually came out of the ground."),
+    dict(slug="dibon", name="Dibon", aliases=["Dibon-gad"], kind="place",
+         coords=(31.49, 35.79, 0.4),
+         modern="Dhiban, Jordan &mdash; also the findspot of the Mesha Stele",
+         refs=[("Numbers", 21, 30), ("Numbers", 32, 3), ("Numbers", 32, 34), ("Numbers", 33, 45)],
+         desc="An Amorite town taken from Sihon (<a href=\"numbers-21.html#n21-21\">Numbers 21:30</a>, already on these pages) and rebuilt by the tribe of Gad (<a href=\"numbers-32.html#n32-33\">Numbers 32:3, 34</a>). ⚠ <a href=\"numbers-33.html#n33-41\">Numbers 33:45</a> is the only verse that calls it &lsquo;Dibon OF GAD&rsquo; &mdash; the master itinerary tagging the camp with a tribal ownership Numbers 32 records in prose but never itself attaches to the name."),
+
 ]
 
 # ((from_ch, from_v), (to_ch, to_v), reason) — rendered on BOTH pages.
@@ -8758,6 +8793,9 @@ CHRON_ERAS = [
 ]
 
 CHRON_CHAPTERS = {
+    "num33": dict(era="exodus",
+        when="Moses writes down the whole forty-year itinerary, stage by stage, from Rameses to the plains of Moab \u2014 forty-two named camps, most of them attested nowhere else in the Bible. Aaron's death at Mount Hor is dated exactly (year 40, month 5, day 1) and his age given (123), the fullest dating this book gives any single event. Jehovah then commands Israel to drive out every inhabitant of Canaan, destroy every carved image and high place, and divide the land by lot \u2014 warning that whoever is left will become thorns in Israel's own eyes.",
+        clock="\u2b50 The one PRECISELY dated event in this chapter \u2014 year 40, month 5, day 1 after the exodus, Aaron's death at Mount Hor (v38) \u2014 sits inside an itinerary that otherwise names no dates at all, compressing the better part of thirty-eight years of wandering into a bare list of camps. c. 1407 BC on the early-date chronology this project foregrounds. Hebrew and English versification agree: 56 verses on both sides. \u2b50 Three Masoretic paragraph breaks (after v39, v49, and the chapter's own close at v56), sitting exactly at the seams between the chapter's three movements: Egypt to Aaron's death, the rest of the itinerary, and the legal charge."),
     "num32": dict(era="exodus",
         when="Reuben and Gad, rich in cattle, ask to settle east of the Jordan instead of crossing into Canaan. Moses retells Numbers 13-14 to them almost verbatim, then strikes a covenant with no divine speech in it: every armed man crosses first, or the land is forfeit and 'your sin will find you out'. The deal is formalized before Eleazar, Joshua, and the tribal heads, and Manasseh's half tribe is added to the grant once Machir, Jair, and Nobah are found to have already been conquering Gilead on their own.",
         clock="&#9888; Undated within the chapter, continuous with the war-tax and purification of Numbers 31 just given, still on the plains of Moab at the end of the fortieth year after the exodus &mdash; c. 1407 BC on the early-date chronology this project foregrounds. Hebrew and English versification agree: 42 verses on both sides. \u2b50 Four Masoretic paragraph breaks (after vv4, 15, 19, and the chapter's own close), with everything from v20 onward running as one unbroken scribal unit."),
@@ -16219,6 +16257,40 @@ DICTIONARY_ES = {
         "(Mateo 27:33). Cada cabeza est&aacute; numerada y conocida &mdash;la misma palabra que cuenta un "
         "ej&eacute;rcito nombrar&aacute; un d&iacute;a un lugar de ejecuci&oacute;n en las afueras de "
         "Jerusal&eacute;n."),
+    "masa": ("etapa, jornada",
+        "Una etapa, un tramo de un viaje &mdash;de <em>nasa</em>, \u00abarrancar (una estaca de tienda), "
+        "partir\u00bb. Es la palabra-t\u00edtulo del cap\u00edtulo: N\u00fameros 33:1-2 abre \u00abestas "
+        "son las <em>masei</em> (etapas) de los hijos de Israel&hellip; Mois&eacute;s escribi\u00f3 sus "
+        "salidas seg\u00fan sus <em>masa'eihem</em>\u00bb &mdash;la ra\u00edz id\u00e9ntica detr\u00e1s "
+        "de <em>vayis'u</em>, \u00aby partieron\u00bb, que abre cuarenta y dos de los cincuenta y seis "
+        "vers\u00edculos de ese cap\u00edtulo."),
+    "shephatim": ("juicios",
+        "JUICIOS &mdash;de <em>shaphat</em>, \u00abjuzgar\u00bb, y aqu\u00ed espec\u00edficamente la "
+        "frase fija <em>asah shephatim</em>, \u00abejecutar juicios\u00bb. \u00c9xodo 12:12 (ya en estas "
+        "p\u00e1ginas) tiene a Jehov\u00e1 decir, la noche de la d\u00e9cima plaga, \u00absobre todos los "
+        "dioses de Egipto EJECUTAR\u00c9 juicios\u00bb (futuro); N\u00fameros 33:4 reporta las mismas dos "
+        "palabras hebreas en perfecto &mdash;\u00absobre sus dioses Jehov\u00e1 EJECUT\u00d3 "
+        "juicios\u00bb&mdash; cuarenta a\u00f1os despu\u00e9s, en la propia l\u00ednea de apertura del "
+        "itinerario. Buscada consonantalmente, esta colocaci\u00f3n exacta no ocurre en ning\u00fan otro "
+        "lugar de la Biblia hebrea."),
+    "maskit": ("piedra grabada",
+        "UNA PIEDRA GRABADA &mdash;de una ra\u00edz para ver o figurar, un objeto tallado o incrustado con "
+        "una imagen destinada a ser mirada. Es una palabra rara: buscada consonantalmente, ocurre en "
+        "exactamente tres vers\u00edculos de toda la Biblia hebrea. N\u00fameros 33:52 la enumera como la "
+        "primera de tres cosas que Israel debe destruir en Cana\u00e1n &mdash;piedras grabadas, "
+        "im\u00e1genes de fundici\u00f3n (<em>massekah</em>, ya la palabra de este proyecto para el "
+        "becerro de fundici\u00f3n), y lugares altos (<em>bamah</em>)&mdash;, tres objetos, tres verbos, "
+        "mantenidos separados en vez de aplanados en uno solo."),
+    "sikkim": ("aguijones",
+        "AGUIJONES, espinas &mdash;emparejada en N\u00fameros 33:55 con el casi-sin\u00f3nimo "
+        "<em>tzeninim</em>: \u00ablos que dej\u00e9is de ellos ser\u00e1n como <em>sikkim</em> en vuestros "
+        "ojos, y como <em>tzeninim</em> en vuestros costados\u00bb. Ambos sustantivos son hapax legomena "
+        "aut\u00e9nticos &mdash;buscados consonantalmente, ninguno de los dos aparece en ning\u00fan otro "
+        "lugar de toda la Biblia hebrea. \u26a0 El estante coincide casi por unanimidad en que la palabra "
+        "que significa \u00abespinas\u00bb va en los costados y la m\u00e1s puntiaguda en los ojos, pero "
+        "busca una palabra espec\u00edfica distinta casi cada vez &mdash;pinchos, p\u00faas, "
+        "irritantes, aguijones, astillas&mdash;, mientras el Douay-Rheims, desde la Vulgata, rompe el "
+        "patr\u00f3n por completo: \u00abclavos en vuestros ojos, y lanzas en vuestros costados\u00bb."),
 }
 
 ENCYCLOPEDIA_ES = {
@@ -17244,6 +17316,74 @@ ENCYCLOPEDIA_ES["nahshon"] = ("Naasón",
     "también que sea el primero en el altar: cuando la dedicación del tabernáculo corre un "
     "jefe por día, el propio jefe de Judá trae la primera ofrenda (Números 7:12-17) "
     "—primero en encabezar la marcha, primero en encabezar la dedicación de doce días.")
+
+ENCYCLOPEDIA_ES["aaron"] = ("Aar\u00f3n",
+    "El hermano mayor de Mois\u00e9s (por tres a\u00f1os, \u00c9xodo 7:7), el primer SUMO SACERDOTE de "
+    "Israel y cabeza de la l\u00ednea sacerdotal &mdash;la familia levita por la que correr\u00e1 todo "
+    "sacrificio l\u00e9gitimo. En \u00c9xodo es el portavoz de Mois\u00e9s ante el fara\u00f3n "
+    "(\u00c9xodo 4:16), sostiene los brazos de Mois\u00e9s en la batalla contra Amalec, y hace el "
+    "<a href=\"exodus-32.es.html#v32-4\">becerro de fundici\u00f3n</a> &mdash;el \u00fanico fallo grave "
+    "que el texto nunca oculta. En Lev\u00edtico entra en su oficio, y los cap\u00edtulos 8-10 lo ordenan a "
+    "\u00e9l y a sus hijos, y luego fulminan a dos de ellos (Nadab y Ab\u00edu) por &laquo;fuego "
+    "extra\u00f1o&raquo;. Muere en el monte Hor (<a href=\"numbers-33.es.html#n33-37\">N\u00fameros "
+    "33:38-39</a>, a los ciento veintitr\u00e9s a\u00f1os, en el a\u00f1o cuarenta, mes quinto, primer "
+    "d\u00eda), y su sacerdocio pasa a su hijo Eleazar.")
+
+ENCYCLOPEDIA_ES["yam-suph"] = ("el mar de los Juncos (mar Rojo)",
+    "El agua que Israel cruza (\u00c9xodo 14), y uno de los lugares m\u00e1s discutidos de la Biblia. "
+    "\u26a0 El hebreo es YAM SUPH, &laquo;mar de JUNCOS&raquo; &mdash;<em>suph</em> es la vegetaci\u00f3n "
+    "pantanosa de la orilla del Nilo, la misma palabra usada de los juncos donde escondieron al Mois\u00e9s "
+    "beb\u00e9 (2:3). El griego lo tradujo &laquo;mar Rojo&raquo;, y por el lat\u00edn y el ingl\u00e9s as\u00ed "
+    "lo hered\u00f3 el ingl\u00e9s. \u26a0 Tres zonas candidatas, cada una con un caso real: los lagos del "
+    "norte (Lago Timsah o los Lagos Amargos), el golfo de Suez (la identificaci\u00f3n tradicional), y el "
+    "golfo de \u00c1caba (defendida por quienes ubican el monte Sina\u00ed en Arabia). Complica todo esto "
+    "que <em>yam suph</em> en otros lugares significa claramente el golfo de \u00c1caba (1 Reyes 9:26, donde "
+    "la flota de Salom\u00f3n se construye en <a href=\"enciclopedia.html#ezion-geber\">Ezi\u00f3n-g\u00e9ber</a>) "
+    "&mdash;as\u00ed que la frase no nombra un solo cuerpo de agua fijo. El mapa marca la zona tradicional "
+    "de forma aproximada.")
+
+ENCYCLOPEDIA_ES["rameses"] = ("Ramsesés",
+    "La ciudad de la que Israel sale &mdash;\u00abpartieron de Ramsesés en el mes primero, a los quince "
+    "días\u00bb (<a href=\"numbers-33.es.html#n33-1\">Números 33:3</a>). Éxodo 1:11 (ya en estas páginas) "
+    "ya la nombra como una de las dos ciudades de almacenaje construidas con trabajo forzado; Números 33 "
+    "es donde se convierte en el punto fijo contra el que se mide cada otra estación del itinerario del "
+    "desierto. ⚠ La identificación con Pi-Ramsés (Qantir/Tell el-Dab'a) es muy sostenida pero no cierta "
+    "&mdash;el nombre podría describir la región más amplia en vez de una sola ciudad, y el nombre real "
+    "egipcio Ramsés cubre a once faraones a lo largo de tres siglos.")
+
+ENCYCLOPEDIA_ES["ezion-geber"] = ("Ezión-géber",
+    "Un campamento del desierto nombrado en el propio capítulo del itinerario de este proyecto "
+    "(<a href=\"numbers-33.es.html#n33-16\">Números 33:35-36</a>), la última parada antes de Cades &mdash;"
+    "y, siglos después, el propio puerto de Salomón en el mar Rojo, desde el cual sus barcos navegan a "
+    "Ofir por oro (1 Reyes 9:26-28, todavía no en estas páginas). El sitio exacto se debate (Tell "
+    "el-Jeleife es el candidato tradicional, aunque estudios posteriores han cuestionado si por sí solo "
+    "puede llevar toda la historia del puerto), pero la ubicación general del sitio, en la cabecera del "
+    "golfo, no está en disputa seria.")
+
+ENCYCLOPEDIA_ES["kibroth-hattaavah"] = ("Kibrot-hataavá",
+    "\u00abLas tumbas del ansia\u00bb &mdash;el cementerio que Números 11 (ya en estas páginas) nombra por "
+    "la gente que murió ansiando carne, un nombre construido sobre un doble juego de palabras que el "
+    "propio capítulo deletrea (<em>qivrot</em>/<em>qavru</em>, tumbas/enterraron; <em>ta'avah</em>/"
+    "<em>ha-mit'avvim</em>, el ansia/los que ansiaron). Este capítulo lo nombra, por así decirlo, solo de "
+    "pasada; Números 33:16 es donde se registra formalmente como una estación más en el itinerario "
+    "maestro. ⚠ Su ubicación está genuinamente sin recuperar &mdash;ningún hallazgo arqueológico confirma "
+    "propuesta alguna, y el candidato tradicional descansa enteramente en su posición a lo largo de la "
+    "ruta reconstruida y no en ningún rastro superviviente del nombre.")
+
+ENCYCLOPEDIA_ES["punon"] = ("Punón",
+    "Un campamento del desierto (<a href=\"numbers-33.es.html#n33-41\">Números 33:42</a>), la segunda "
+    "parada tras el monte Hor. Feinán, su identificación habitual, es uno de los mayores distritos "
+    "antiguos de fundición de cobre de todo el Levante meridional, trabajado desde el periodo calcolítico "
+    "hasta la época romana. El texto mismo no dice nada de las minas, pero tres capítulos antes en estas "
+    "páginas (<a href=\"numbers-21.es.html#n21-8\">Números 21:8-9</a>), en este mismo tramo de la frontera "
+    "edomita, Moisés hace una serpiente DE BRONCE por orden de Jehová &mdash;el itinerario nombra ahora, "
+    "sin comentario, el distrito de donde ese metal realmente se extraía.")
+
+ENCYCLOPEDIA_ES["dibon"] = ("Dibón",
+    "Una ciudad amorrea tomada de Sehón (Números 21:30, ya en estas páginas) y reconstruida por la tribu "
+    "de Gad (Números 32:3, 34). ⚠ <a href=\"numbers-33.es.html#n33-41\">Números 33:45</a> es el único "
+    "versículo que la llama \u00abDibón DE GAD\u00bb &mdash;el itinerario maestro marcando el campamento "
+    "con una propiedad tribal que Números 32 registra en prosa pero nunca le pega al nombre.")
 
 # ---------------------------------------------------------------------------
 # CHAPTER ART (2026-07-25) — Michael: "there are a lot of historical way out of
@@ -21876,5 +22016,51 @@ CHAPTER_ART = {
                 "pueblo cree por su testimonio, la mano que hizo el cuadro forma parte de la nota.",
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:Lavinia_Fontana_-_Cristo_e_la_Samaritana_al_pozzo_-_Museo_Nazionale_di_Capodimonte.jpeg",
+    )],
+    "num33": [dict(
+        file="ortelius-exodus-route-1624.jpg",
+        title="Map of the Exodus route", title_es="Mapa de la ruta del \u00c9xodo",
+        artist="Abraham Ortelius (design); 1624 printing",
+        year="1624",
+        location="Barry Lawrence Ruderman Antique Maps Inc. (private collection)",
+        location_es="Barry Lawrence Ruderman Antique Maps Inc. (colecci\u00f3n privada)",
+        alt="A hand-colored 1624 engraved map showing the Nile delta, the Sinai peninsula, and southern "
+            "Canaan, with a dotted line tracing the Israelite route from Rameses through Etham, Mount "
+            "Sinai, and Ezion-geber to Kadesh-barnea, then north toward Jericho and Jerusalem.",
+        alt_es="Un mapa grabado e iluminado a mano de 1624 que muestra el delta del Nilo, la pen\u00ednsula "
+               "del Sina\u00ed, y el sur de Cana\u00e1n, con una l\u00ednea de puntos que traza la ruta "
+               "israelita desde Ramses\u00e9s por Etam, el monte Sina\u00ed, y Ezi\u00f3n-g\u00e9ber hasta "
+               "Cades-barnea, y luego al norte hacia Jeric\u00f3 y Jerusal\u00e9n.",
+        note="Abraham Ortelius (1527-1598), the Antwerp cartographer usually credited with the first modern "
+             "atlas, designed this map of the Exodus route decades before his death; this particular sheet "
+             "is a 1624 printing, so it postdates him &mdash; a common situation for a popular map plate "
+             "reprinted across several editions. It labels the stations this very chapter names &mdash; "
+             "&lsquo;Rameffe&rsquo; (Rameses) and &lsquo;Etha&rsquo; (Etham) in the Nile delta, &lsquo;Mara&rsquo; "
+             "and &lsquo;Sinai&rsquo; in the peninsula, &lsquo;Aziogaber&rsquo; (Ezion-geber) on the Red Sea, "
+             "&lsquo;Cadefbarne&rsquo; (Kadesh-barnea) at the frontier, then &lsquo;Ierichu&rsquo; and "
+             "&lsquo;Ierufalem&rsquo; in Canaan &mdash; strung together by the same dotted line this chapter "
+             "spends fifty-six verses describing in prose. ⚠ Read the map's own historical layer honestly: "
+             "labels like &lsquo;Ismaelite,&rsquo; &lsquo;Amalecitae,&rsquo; and &lsquo;Arabia petraea et "
+             "desertae&rsquo; reflect Ortelius's own 16th-century classical-geography framework, not a modern "
+             "archaeological survey &mdash; a period lens on the same terrain, worth noticing rather than "
+             "mistaking for documentary precision.",
+        note_es="Abraham Ortelius (1527-1598), el cart\u00f3grafo de Amberes al que suele atribuirse el "
+                "primer atlas moderno, dise\u00f1\u00f3 este mapa de la ruta del \u00c9xodo d\u00e9cadas "
+                "antes de su muerte; esta plancha en concreto es una impresi\u00f3n de 1624, as\u00ed que es "
+                "posterior a \u00e9l &mdash;una situaci\u00f3n habitual para una plancha popular reimpresa "
+                "en varias ediciones. Etiqueta las estaciones que este mismo cap\u00edtulo nombra &mdash;"
+                "\u00abRameffe\u00bb (Ramses\u00e9s) y \u00abEtha\u00bb (Etam) en el delta del Nilo, "
+                "\u00abMara\u00bb y \u00abSinai\u00bb en la pen\u00ednsula, \u00abAziogaber\u00bb "
+                "(Ezi\u00f3n-g\u00e9ber) en el mar Rojo, \u00abCadefbarne\u00bb (Cades-barnea) en la "
+                "frontera, luego \u00abIerichu\u00bb y \u00abIerufalem\u00bb en Cana\u00e1n &mdash;"
+                "enlazadas por la misma l\u00ednea de puntos que este cap\u00edtulo dedica cincuenta y seis "
+                "vers\u00edculos a describir en prosa. ⚠ Ley\u00e9ndose honestamente la propia capa "
+                "hist\u00f3rica del mapa: etiquetas como \u00abIsmaelite\u00bb, \u00abAmalecitae\u00bb, y "
+                "\u00abArabia petraea et desertae\u00bb reflejan el propio marco de geograf\u00eda cl\u00e1sica "
+                "de Ortelius en el siglo XVI, no un levantamiento arqueol\u00f3gico moderno &mdash;una mirada "
+                "de \u00e9poca sobre el mismo terreno, que conviene notar en vez de confundir con precisi\u00f3n "
+                "documental.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:1624_map_of_the_Exodus_route_by_Abraham_Ortelius.jpg",
     )],
 }
