@@ -778,7 +778,7 @@ DICTIONARY = [
     ("moshe", "Mosheh (Moses)", "מֹשֶׁה", "Mosheh",
      "The NAME — given a Hebrew reason, 'because I DREW HIM OUT (meshitihu) of the water' (2:10), from mashah, 'to draw out.' But the form Mosheh is ACTIVE ('the one who draws out'), not the passive mashuy ('drawn out') the reason would need — the tell of a Hebrew pun laid over a genuinely EGYPTIAN name: mose / mes, 'born of, son,' the element in Thut-mose, Ah-mose, Ra-messes. The full case (and why the Egyptian name argues the story is authentic) is in the encyclopedia's <a href=\"encyclopedia.html#moses\">Moses</a> entry.", ("Exodus", 2, 10)),
     ("suph", "suph", "סוּף", "suph",
-     "REEDS — the papyrus-marsh growth of the Nile's edge, where the baby's ark is set (2:3, 5). The same word names the sea Israel crosses: the YAM SUPH, 'Sea of Reeds' (Exodus 13:18; 15:4), which the KJV and most versions render 'Red Sea' (following the Greek Septuagint's eruthra thalassa). So the deliverer is drawn from the reeds before the nation is drawn through the reed-sea — the book plants its rescue in its opening scene. NWT keeps 'Red Sea' by convention but footnotes 'Reed Sea.'", ("Exodus", 2, 3)),
+     "REEDS — the papyrus-marsh growth of the Nile's edge, where the baby's ark is set (2:3, 5). The same word names the sea Israel crosses: the YAM SUPH, literally 'sea of REEDS' (Exodus 13:18; 15:4). The Greek Septuagint rendered it eruthra thalassa, 'Red Sea', and through the Latin and the KJV that is how English inherited it — these pages print the traditional 'Red Sea' in the verse and keep the literal sense here. So the deliverer is drawn from the reeds before the nation is drawn through the reed-sea — the book plants its rescue in its opening scene. NWT does the same, keeping 'Red Sea' by convention and footnoting 'Reed Sea.'", ("Exodus", 2, 3)),
     # ---- Exodus 3 (Hebrew) ----
     ("ehyeh", "ehyeh", "אֶהְיֶה", "ehyeh",
      "'I WILL BE / I AM' — God's answer at the bush, 'ehyeh asher ehyeh' (3:14), from hayah, 'to be,' in the Hebrew IMPERFECT: a form that spans I am / I will be / I will prove to be, so the shelf splits (KJV 'I AM THAT I AM'; ASV footnotes 'I WILL BE'; NWT 'I Will Become What I Choose to Become'; the Greek 'ho ōn,' 'the One who is,' handed to Revelation 1:8). This translation keeps it 'I WILL BE' to match v12's ehyeh immakh, 'I WILL BE with you' — the Presence promised to Moses IS the Name given to Israel. And ehyeh (first person, 'I will be') is the verb the third-person Name YHWH is built on ('He will be'): God names himself, Israel names him. See the <a href=\"encyclopedia.html#jehovah\">Jehovah</a> entry.", ("Exodus", 3, 14)),
@@ -5281,12 +5281,14 @@ ENCYCLOPEDIA = [
               "prophets return to it repeatedly in their oracles against Philistia (Amos 1:8; Zephaniah 2:4-7; "
               "Jeremiah 47:5-7).",
          refs=[("2 Samuel", 1, 20)], videos=[]),
-    dict(slug="yam-suph", name="the Sea of Reeds (Red Sea)", kind="place", aliases=["Sea of Reeds", "Red Sea"],
+    dict(slug="yam-suph", name="the Red Sea (Sea of Reeds)", kind="place", aliases=["Red Sea", "Sea of Reeds"],
          coords=(29.9, 32.55, 1.6), approx=True,
          desc="The water Israel crosses (Exodus 14), and one of the most argued-over locations in the Bible. "
               "⚠️ The Hebrew is YAM SUPH, 'sea of REEDS' — suph is the marsh growth of the Nile's edge, the same "
               "word used of the reeds among which the infant Moses was hidden (2:3). The Greek Old Testament "
-              "rendered it 'Red Sea,' and through the Latin and the KJV that is how English inherited it. "
+              "rendered it 'Red Sea,' and through the Latin and the KJV that is how English inherited it "
+              "— and these pages print that traditional name in the verse, keeping the "
+              "literal sense in the notes. "
               "⚠️ Three candidate zones, each with a real case: (1) the NORTHERN LAKES — Lake Timsah or the Bitter "
               "Lakes in the isthmus of Suez, which suits the literal 'sea of reeds' (papyrus grows in fresh and "
               "brackish marsh, not in the salt Red Sea) and the short march from Goshen; (2) the GULF OF SUEZ, the "
@@ -9277,7 +9279,7 @@ CHRON_CHAPTERS = {
                   when="Plagues five, six, and seven: the pestilence on Egypt's herds, the boils that drive the magicians from the court, and the hail with fire in it — the first plague announced a day ahead with instructions for surviving it, and the first that some Egyptians believe.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds. The ripening barley of 9:31 places the hail in roughly late January or early February — about two months before the Passover in the month of the ear."),
     "exod10": dict(era="exodus",
-                  when="Plagues eight and nine: locusts brought in on an east wind and swept into the Sea of Reeds by a west wind, and three days of darkness that can be felt. Pharaoh's own officials break first — 'do you not yet know that Egypt is destroyed?' — and the bargaining ends with Moses refusing to leave a hoof behind.",
+                  when="Plagues eight and nine: locusts brought in on an east wind and swept into the Red Sea by a west wind, and three days of darkness that can be felt. Pharaoh's own officials break first — 'do you not yet know that Egypt is destroyed?' — and the bargaining ends with Moses refusing to leave a hoof behind.",
                   clock="c. 1446 BC on the early-date chronology this project foregrounds. The locusts finish the late wheat and spelt the hail spared, so this falls weeks after chapter 9 and shortly before the Passover in the month of the ear."),
     "exod11": dict(era="exodus",
                   when="The tenth blow announced: at midnight every firstborn in Egypt, from the throne to the millstones. Moses is told to have the people ask their neighbors for silver and gold, and leaves Pharaoh in burning anger — the last words of the last audience.",
@@ -11041,7 +11043,7 @@ BOOK_INTROS = {
         canon="The SECOND book of the Bible and of the Torah/Pentateuch in every tradition. It follows Genesis (which ended with Jacob's family going down into Egypt and Joseph's coffin waiting there) and sets up the whole rest of the Torah.",
         author="Traditionally MOSES — the Torah is 'the five books of Moses,' and Exodus itself records Moses writing ('Moses wrote all the words of Jehovah,' 24:4; cf 34:27). Critical scholarship sees the Pentateuch as woven from earlier sources over centuries (the Documentary Hypothesis and its successors), reaching final form after the exile — while widely granting the antiquity of much of the material and the memory of a real deliverance behind it.",
         date="⚠️ Two chronologies. On the EARLY date this project foregrounds — from 1 Kings 6:1's '480 years' before Solomon's temple — the Exodus falls in 1446 BC, under Amenhotep II, with Thutmose III as the pharaoh of the oppression (the reading argued by Associates for Biblical Research / Joel Kramer). The mainstream academic view is the LATE date, ~1250 BC under Ramesses II, resting largely on the store-city name 'Raamses' (1:11). Both are laid out in the chapter notes and the exodus-pharaoh entry; the composition date of the book is a separate and equally debated question.",
-        place="EGYPT and the SINAI wilderness — from the delta where Israel was enslaved, out through the Sea of Reeds, to the mountain (Sinai/Horeb) where the covenant is cut and the tabernacle raised.",
+        place="EGYPT and the SINAI wilderness — from the delta where Israel was enslaved, out through the Red Sea, to the mountain (Sinai/Horeb) where the covenant is cut and the tabernacle raised.",
         audience="Israel — a people constituted by this story. Exodus is what Israel tells about who it is: a nation of slaves that Jehovah redeemed 'with a mighty hand and an outstretched arm,' bound to him by covenant and given his presence in its midst. It became the paradigm of redemption for the whole Bible, and for every people since who have read their own bondage into it.",
         structure=[
             ["1-2", "Bondage — a family become a nation, a new king who did not know Joseph, and the birth, flight, and exile of Moses."],
@@ -17329,7 +17331,7 @@ ENCYCLOPEDIA_ES["aaron"] = ("Aar\u00f3n",
     "33:38-39</a>, a los ciento veintitr\u00e9s a\u00f1os, en el a\u00f1o cuarenta, mes quinto, primer "
     "d\u00eda), y su sacerdocio pasa a su hijo Eleazar.")
 
-ENCYCLOPEDIA_ES["yam-suph"] = ("el mar de los Juncos (mar Rojo)",
+ENCYCLOPEDIA_ES["yam-suph"] = ("el mar Rojo (mar de los Juncos)",
     "El agua que Israel cruza (\u00c9xodo 14), y uno de los lugares m\u00e1s discutidos de la Biblia. "
     "\u26a0 El hebreo es YAM SUPH, &laquo;mar de JUNCOS&raquo; &mdash;<em>suph</em> es la vegetaci\u00f3n "
     "pantanosa de la orilla del Nilo, la misma palabra usada de los juncos donde escondieron al Mois\u00e9s "
