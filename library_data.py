@@ -17344,8 +17344,8 @@ ENCYCLOPEDIA_ES["yam-suph"] = ("el mar Rojo (mar de los Juncos)",
     "&mdash;as\u00ed que la frase no nombra un solo cuerpo de agua fijo. El mapa marca la zona tradicional "
     "de forma aproximada.")
 
-ENCYCLOPEDIA_ES["rameses"] = ("Ramsesés",
-    "La ciudad de la que Israel sale &mdash;\u00abpartieron de Ramsesés en el mes primero, a los quince "
+ENCYCLOPEDIA_ES["rameses"] = ("Ramsés",
+    "La ciudad de la que Israel sale &mdash;\u00abpartieron de Ramsés en el mes primero, a los quince "
     "días\u00bb (<a href=\"numbers-33.es.html#n33-1\">Números 33:3</a>). Éxodo 1:11 (ya en estas páginas) "
     "ya la nombra como una de las dos ciudades de almacenaje construidas con trabajo forzado; Números 33 "
     "es donde se convierte en el punto fijo contra el que se mide cada otra estación del itinerario del "
@@ -22031,7 +22031,7 @@ CHAPTER_ART = {
             "Sinai, and Ezion-geber to Kadesh-barnea, then north toward Jericho and Jerusalem.",
         alt_es="Un mapa grabado e iluminado a mano de 1624 que muestra el delta del Nilo, la pen\u00ednsula "
                "del Sina\u00ed, y el sur de Cana\u00e1n, con una l\u00ednea de puntos que traza la ruta "
-               "israelita desde Ramses\u00e9s por Etam, el monte Sina\u00ed, y Ezi\u00f3n-g\u00e9ber hasta "
+               "israelita desde Rams\u00e9s por Etam, el monte Sina\u00ed, y Ezi\u00f3n-g\u00e9ber hasta "
                "Cades-barnea, y luego al norte hacia Jeric\u00f3 y Jerusal\u00e9n.",
         note="Abraham Ortelius (1527-1598), the Antwerp cartographer usually credited with the first modern "
              "atlas, designed this map of the Exodus route decades before his death; this particular sheet "
@@ -22051,7 +22051,7 @@ CHAPTER_ART = {
                 "antes de su muerte; esta plancha en concreto es una impresi\u00f3n de 1624, as\u00ed que es "
                 "posterior a \u00e9l &mdash;una situaci\u00f3n habitual para una plancha popular reimpresa "
                 "en varias ediciones. Etiqueta las estaciones que este mismo cap\u00edtulo nombra &mdash;"
-                "\u00abRameffe\u00bb (Ramses\u00e9s) y \u00abEtha\u00bb (Etam) en el delta del Nilo, "
+                "\u00abRameffe\u00bb (Rams\u00e9s) y \u00abEtha\u00bb (Etam) en el delta del Nilo, "
                 "\u00abMara\u00bb y \u00abSinai\u00bb en la pen\u00ednsula, \u00abAziogaber\u00bb "
                 "(Ezi\u00f3n-g\u00e9ber) en el mar Rojo, \u00abCadefbarne\u00bb (Cades-barnea) en la "
                 "frontera, luego \u00abIerichu\u00bb y \u00abIerufalem\u00bb en Cana\u00e1n &mdash;"
