@@ -1557,6 +1557,93 @@ def inject_encyclopedia_links(content, book, ch):
     return _VERSE_ENG_BLOCK.sub(verse_block, content)
 
 
+# --- verse-line link chrome -------------------------------------------------
+# Display names for the tooltip, one lookup per registry per language.
+_ENCY_NAME = {e["slug"]: e["name"] for e in ENCYCLOPEDIA}
+_DICT_TERM = {slug: term for slug, term, _o, _t, _g, _r in DICTIONARY}
+
+# NB the `_` in the slug class: two DICTIONARY slugs (rav_lakhem, yad_ramah)
+# use an underscore. No ENCYCLOPEDIA slug does, which is why the narrower
+# [a-z0-9-] in the atlas-retarget regexes above is correct there and here is not
+# -- without the underscore those two words stayed loud inside a verse line.
+_LIB_HREF = re.compile(
+    r'^(?:atlas/([a-z0-9_\-]+)\.(?:es\.)?html'
+    r'|(?:encyclopedia|enciclopedia)\.html#([a-z0-9_\-]+)'
+    r'|(?:dictionary|diccionario)\.html#([a-z0-9_\-]+))$')
+_A_TAG = re.compile(r'<a\s+([^>]*)>')
+_VERSE_LINE = {
+    "eng": re.compile(r'(<div class="eng">)(.*?)(</div>)', re.S),
+    "esp": re.compile(r'(<div class="esp">)(.*?)(</div>)', re.S),
+}
+_CHROME_LABEL = {
+    "en": ("\u2014 see the Atlas", "\u2014 see the Encyclopedia", "\u2014 see the Dictionary"),
+    "es": ("\u2014 ver en el Atlas", "\u2014 ver en la Enciclopedia", "\u2014 ver en el Diccionario"),
+}
+
+
+def _verse_link_chrome(content, cls, lang):
+    """Give every library link INSIDE a verse line the same quiet treatment
+    inject_encyclopedia_links() already gives the ones it adds itself:
+    class="eterm" (body colour + a faint dotted underline) and a "Name -- see
+    the Atlas" tooltip.
+
+    Same root cause as _eng_atlas_retarget(), and the other half of it. A
+    hand-authored link bypasses the injector entirely (_sub_outside_anchors
+    leaves an existing anchor alone), so it missed the injector's DESTINATION
+    rule -- fixed there -- and its TYPOGRAPHY rule, fixed here. The result was
+    two looks for one thing on one line: of the 2,002 library links inside
+    English verse lines, 1,316 were the injector's quiet dotted grey and 686
+    were loud cyan, purely according to who had linked the word. A reader
+    cannot see that distinction and has no use for it.
+
+    Verse lines only, deliberately. Outside them the loud cyan link is already
+    uniform (1,933 links in notes and colophons, not one of them eterm) and it
+    is right there: an apparatus is a place to navigate from, so a link should
+    announce itself. Scripture is a place to read, so it should not. That is
+    the rule this makes true in both directions -- inside a verse every library
+    link whispers, outside it every one of them speaks up.
+
+    Applied to `.eng` (build_chapter_pages, after the injector so its own links
+    already carry the class and are skipped by the `class=` guard) and to
+    `.esp` (_es_panels, so the standalone Spanish page and the "Mostrar
+    español" lines threaded into English pages both inherit it -- otherwise
+    the two languages would sit on adjacent lines in two different styles,
+    which is the mismatch this whole pass exists to remove).
+
+    Anything already carrying a class is left alone -- the injector's own
+    links, and `notelink`, whose small superscript "note" must keep its own
+    look. A chapter-to-chapter or external link is not a library link and is
+    untouched. A tooltip is only written when the registry actually knows the
+    name; an unknown slug still gets the class, never an invented label."""
+    atlas_lbl, ency_lbl, dict_lbl = _CHROME_LABEL[lang]
+    names = _ENCY_NAME if lang == "en" else {k: v[0] for k, v in ENCYCLOPEDIA_ES.items()}
+    terms = _DICT_TERM if lang == "en" else {k: v[0] for k, v in DICTIONARY_ES.items()}
+
+    def fix_tag(m):
+        attrs = m.group(1)
+        if "class=" in attrs:
+            return m.group(0)           # injector-styled, notelink, etc.
+        href = re.search(r'href="([^"]+)"', attrs)
+        if not href:
+            return m.group(0)
+        d = _LIB_HREF.match(href.group(1))
+        if not d:
+            return m.group(0)           # a chapter link or an outbound one
+        atlas_s, ency_s, dict_s = d.groups()
+        if atlas_s is not None:
+            name, label = names.get(atlas_s), atlas_lbl
+        elif ency_s is not None:
+            name, label = names.get(ency_s), ency_lbl
+        else:
+            name, label = terms.get(dict_s), dict_lbl
+        title = (f' title="{html.escape(name, quote=True)} {label}"') if name else ""
+        return f'<a class="eterm" {attrs}{title}>'
+
+    def line(m):
+        return m.group(1) + _A_TAG.sub(fix_tag, m.group(2)) + m.group(3)
+    return _VERSE_LINE[cls].sub(line, content)
+
+
 def inject_xrefs(content, book, ch):
     """Append ⤷ cross-reference chips inside each verse block this (book, ch) owns.
     Same-book targets show a bare `12:2` chip (unchanged from the Genesis-only era);
@@ -3423,6 +3510,7 @@ def build_chapter_pages(chapters):
         content = inject_chapter_art(content, slug)
         content = _eng_atlas_retarget(content)
         content = inject_encyclopedia_links(content, book, num)
+        content = _verse_link_chrome(content, "eng", "en")
         content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
         content = render_film_clips(content)
@@ -4567,7 +4655,8 @@ def _es_panels():
         raw = open(os.path.join(es_dir, fn), encoding="utf-8").read()
         m = re.search(r'id="chapter-([a-z0-9]+)">(.*?)</div><!-- /chapter-\1 -->', raw, re.S)
         if m:
-            out[m.group(1)] = _es_atlas_retarget(m.group(2).strip())
+            panel = _es_atlas_retarget(m.group(2).strip())
+            out[m.group(1)] = _verse_link_chrome(panel, "esp", "es")
     return out
 
 
