@@ -1383,6 +1383,63 @@ def _sub_outside_anchors(pattern, repl, html_str):
     return "".join(out)
 
 
+def _eng_atlas_retarget(content):
+    """Retarget a hand-authored ENGLISH place link from the Encyclopedia index
+    (encyclopedia.html#slug) to that place's own atlas page (atlas/<slug>.html).
+    The exact English twin of _es_atlas_retarget(), and the same decision
+    inject_encyclopedia_links() already makes for every place it links ITSELF.
+
+    Both halves of that sentence are the bug this closes. The injector
+    deliberately leaves an already-authored anchor alone (_sub_outside_anchors,
+    the Numbers 22 nested-anchor fix), so a place the chapter hand-links was
+    the one place that never got the upgrade -- while the Spanish side has
+    retargeted every place link at its own choke point since Numbers 21. Net
+    effect across numbers-22/33/34/35 as built: 0-2 atlas links in the English
+    verse lines against 4-18 in the Spanish ones threaded into the same page.
+    Clicking "Moab" in English opened a one-line index row; clicking «Moab» on
+    the line directly below it opened the map.
+
+    Only a PLACE is rewritten -- people, nations and crafts keep their
+    Encyclopedia links. build_atlas_entry_pages() emits atlas/<slug>.html for
+    every kind == "place" entry unconditionally (a site with undetermined
+    coordinates still gets its note + refs), so a rewritten link can never
+    dangle; that is also why this is unconditional on kind rather than on
+    e.get("coords"), matching the injector. The Spanish twin additionally
+    requires an ENCYCLOPEDIA_ES entry only because atlas/<slug>.es.html is
+    built from ENCYCLOPEDIA_ES -- there is no English equivalent of that gate.
+
+    Applied in build_chapter_pages() between inject_chapter_art() and
+    inject_encyclopedia_links(), which fixes the scope on both sides. Running
+    AFTER the art injection means a place named in a painting's caption is
+    retargeted too (numbers-20's shrine note is the one live case: the word
+    "Aaron" linked to Mount Hor now opens the mountain's map). Running BEFORE
+    the injector means its own already-linked-slug scan reads the atlas/ form
+    as well as the encyclopedia.html# one, so a hand-linked place still spends
+    its once-per-chapter budget exactly as before -- retargeting cannot make
+    the injector add a second link to the same entry. Everything upstream
+    (check_local_anchors, check_seo, tools/validate_chapter.py) still sees the
+    authored encyclopedia.html#slug form: the source keeps authoring the index
+    link and the build decides the destination, the same contract the Spanish
+    side has.
+
+    Scope note, deliberately matching _es_atlas_retarget(): this rewrites every
+    place link in the panel, not just the ones in verse lines -- chapter notes
+    included. That also catches the ~29 links in the "entries added to the
+    library" colophons, whose prose says "new encyclopedia entries" while the
+    link now lands on the atlas page. Left as-is because the Spanish side has
+    shipped exactly that since Numbers 21 and an atlas page is a superset of
+    the index row for a place (description + refs + the live map); scoping only
+    one language to verse lines would trade the bug for a subtler one."""
+    atlas_slugs = {e["slug"] for e in ENCYCLOPEDIA if e["kind"] == "place"}
+
+    def sub(m):
+        slug = m.group(1)
+        if slug in atlas_slugs:
+            return f'href="atlas/{slug}.html"'
+        return m.group(0)
+    return re.sub(r'href="encyclopedia\.html#([a-z0-9\-]+)"', sub, content)
+
+
 def inject_encyclopedia_links(content, book, ch):
     """Turn the first mention per chapter of each ENCYCLOPEDIA entry (by its
     `name` or any `aliases`) into a link to its encyclopedia.html entry.
@@ -3321,6 +3378,7 @@ def build_chapter_pages(chapters):
     for slug, book, num, teaser in CHAPTERS:
         content = clean_chapter(chapters[slug])
         content = inject_chapter_art(content, slug)
+        content = _eng_atlas_retarget(content)
         content = inject_encyclopedia_links(content, book, num)
         content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
