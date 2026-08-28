@@ -62,9 +62,11 @@ KNOWN LIMITS, stated rather than implied:
   * a very short quote can match by accident (--min-words guards the shortest);
   * it verifies that a phrase EXISTS in a version, never that the sentence built
     around it draws the right conclusion;
-  * a tag with NO span markup is invisible to it -- which is itself worth catching,
-    since untagged shelf citations went uncounted in both Numbers 23 and 27 and were
-    found only because their quote then drifted onto the neighbouring versions.
+  * a version named in prose with NO tag span is still not quote-checked -- but it is
+    no longer invisible. As of 2026-08-27 every such name is reported as UNTAGGED (see
+    the block above `untagged_citations`), because that class went uncounted in
+    Numbers 23, 27 and 36. The warning cannot tell an untagged citation from a
+    legitimate discursive mention; it tells you where to look.
 """
 import argparse, html, json, os, re, subprocess, sys, unicodedata
 
@@ -238,6 +240,52 @@ def norm_prose(h):
     return html.unescape(re.sub(r"<[^>]+>", " ", h))
 
 
+# ---------------------------------------------------------------------------
+# UNTAGGED SHELF CITATIONS -- a version named in bare prose, with no tag span.
+#
+# Added 2026-08-27. The KNOWN LIMITS block at the top of this file has said since
+# the tool was written that "a tag with NO span markup is invisible to it -- which
+# is itself worth catching," and then did not catch it. That class has now recurred
+# three times:
+#
+#   Numbers 23  "the 1909 Reina-Valera keeps the name and its own 1960 revision
+#               replaces it" -- two shelf citations in bare prose, uncounted.
+#   Numbers 27  "and both Reina-Valeras the same" -- same shape, and its quote then
+#               drifted onto the neighbouring English versions, which is how it was
+#               eventually noticed at all.
+#   Numbers 36  the Douay named twice in prose in n36-5, the NWT's 2013 revision
+#               named in prose, and the Geneva named in prose.
+#
+# The audit is two lines and it was always available: strip every tag span, then
+# look for a version name in what is left. It is a WARNING and not a failure, and
+# deliberately so -- it CANNOT distinguish an untagged citation from a legitimate
+# discursive mention ("the Geneva-to-King-James line showing itself", "the one
+# translation family that does it is the New World Translation"). Both are worth a
+# human glance; only one is a defect.
+#
+# BURDEN, measured over 63 shipped chapters before shipping this: 106 hits, mean
+# 1.7 per chapter, 39 of the 63 chapters completely clean, worst case 13. That is
+# a readable warning rather than the wall of noise that would train you to skip it.
+# Re-measure if the rate climbs -- a warning nobody reads is worse than none.
+VERSION_NAMES = re.compile(
+    r"King James|\bKJV\b|American Standard|\bASV\b"
+    r"|New World Translation|\bNWT\b|\bTNM\b|Traducci[oó]n del Nuevo Mundo"
+    r"|Geneva|Ginebra|Douay|Rheims|Reims"
+    r"|\bNIV\b|\bNVI\b|Living Bible|Biblia al D[ií]a"
+    r"|Reina[- ]Valera|\bRV\s?60\b|\bRVR\b|\bRV\b", re.I)
+TAG_SPAN = re.compile(r'<span class="tag t-[a-z0-9]+"[^>]*>.*?</span>', re.S)
+
+
+def untagged_citations(body):
+    """Version names in prose with every tag span removed. Returns (name, context)."""
+    text = re.sub(r"\s+", " ", norm_prose(TAG_SPAN.sub(" ", body))).strip()
+    out = []
+    for m in VERSION_NAMES.finditer(text):
+        a, b = max(0, m.start() - 60), m.end() + 60
+        out.append((m.group(0), text[a:b]))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("fragment")
@@ -260,10 +308,12 @@ def main():
         print("no notes found in fragment -- is this a chapter panel?"); return 2
 
     cache, miss, nodata, ok, para, short, partial = {}, [], [], 0, 0, 0, []
-    universal = []
+    universal, untagged = [], []
     for nid, body in notes:
         for phrase, ctx in universal_claims(body):
             universal.append((nid, phrase, ctx))
+        for name, ctx in untagged_citations(body):
+            untagged.append((nid, name, ctx))
         verses = sorted(v2n.get(nid, set()), key=int)
         # Collect tags, then group any run of tags that SHARE one following quote:
         # "the NWT 1984 and TNM 1987 keep it indefinite ('...')" is one claim about two
@@ -366,6 +416,8 @@ def main():
     if short: print("  too short      : %d (under --min-words, not failed)" % short)
     print("  PARAPHRASES    : %d tags with no quoted phrase -- NOT CHECKED, read these yourself" % para)
     if partial: print("  PARTIAL GROUPS : %d -- a listed version does not contain the shared quote" % len(partial))
+    if untagged: print("  UNTAGGED NAMES : %d version name(s) in prose with no tag span -- "
+                       "a citation here is UNCHECKED; a discursive mention is fine" % len(untagged))
     for nid, tag, part, why in nodata:
         print("  ⚠ NO DATA  %-8s %-6s %r  (%s)" % (nid, tag, part[:60], why))
     for nid, good, bad_, part, verses in partial:
@@ -373,6 +425,8 @@ def main():
     for nid, tag, part, verses in miss:
         print("  ✗ MISS     %-8s %-6s %r  not found in vv%s" %
               (nid, tag, part[:60], ",".join(verses) if verses else "?"))
+    for nid, name, ctx in untagged:
+        print("  ? UNTAGGED %-8s %-14r ...%s..." % (nid, name, ctx))
     for nid, phrase, ctx in universal:
         print("  \u2717 UNIVERSAL %-8s %r has no count -- tally all 13 and say how many"
               % (nid, phrase))

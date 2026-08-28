@@ -259,11 +259,18 @@ another.
      Mutation-tested against the three real defects that motivated it — a version quoted
      as something it does not say and a version cited but never fetched both FAIL the run;
      a version merely *named* in a list where it does not belong is reported as PARTIAL,
-     a warning, so **read the PARTIAL lines rather than trusting "clean."** It also cannot
-     see an untagged citation — which is itself worth knowing, because running it over the
-     five shipped chapters found exactly that in Numbers 23 and 27 ("both Reina-Valeras"
-     as bare prose, two shelf citations uncounted, their quote drifting onto the English
-     versions). PARAPHRASES are counted and NOT checked; they are still yours to read.
+     a warning, so **read the PARTIAL lines rather than trusting "clean."**
+     PARAPHRASES are counted and NOT checked; they are still yours to read. ⚠ **It now also
+     reports UNTAGGED version names** (2026-08-27) — a version named in bare prose with no
+     `tag t-*` span, which the quote checker is structurally blind to. That class had by then
+     recurred three times (Numbers 23's "the 1909 Reina-Valera keeps the name", Numbers 27's
+     "both Reina-Valeras", and three of them in Numbers 36), and the audit was always two
+     lines: strip the tag spans, look for a version name in what is left. It is a WARNING and
+     stays out of the exit code, deliberately — it **cannot** tell an untagged citation from a
+     legitimate discursive mention ("the Geneva-to-King-James line showing itself"), only
+     where to look. Burden was measured before shipping it: 106 hits over 63 chapters, mean
+     1.7, 39 of the 63 completely clean — readable rather than the wall of noise that would
+     train you to skip it. Re-measure if that rate climbs.
    - **Run the shelf rule on BOTH shelves, and re-run it on every version's own
      REVISION.** ⚠ Added after Numbers 12 (2026-08-18), where the rule directly above
      was obeyed for the English shelf and skipped entirely for the Spanish one — six wrong
@@ -296,6 +303,29 @@ another.
      a divergence usually means **neither** side has a note (v21's strange English word
      appeared twice with nowhere to send the reader), and the fix is often to make both sides
      strange and explain it once, not to smooth one of them.
+   - **AND RUN IT, do not re-derive it: `python3 tools/twin_diff.py &lt;slug&gt; --prose --all`**
+     (or two file paths for a pre-splice fragment). ⚠ Added 2026-08-27 after Numbers 36, and
+     the reason is the one this file keeps rediscovering: the rule above has been written
+     three times and the diff was a *throwaway script* every time, so it was slightly
+     different every time. Same remedy as `validate_chapter.py` and `shelf_check.py` &mdash;
+     it stopped being a rule and became a script. **SHAPE** (default) is the mechanical
+     version of this bullet and the one below it &mdash; per note id: paragraph count, digits,
+     and the outbound-link set &mdash; and it FAILS the run. **PROSE** (`--prose`) is the new
+     half, and it exists because Numbers 36 shipped a garbled opening sentence, "the
+     appellants open with the same word the verse it opens with," which the Spanish twin had
+     right and which **no structural check could see**. ⭐ Be honest about what it does: the
+     arithmetic does NOT detect that garble (EN 121 chars / ES 139, a ratio of 1.149 against a
+     corpus p95 of 1.14; its whole note sat at the p25). The counts are TRIAGE; the
+     **side-by-side print is the check**, and a human reads across it. Which is why `--all` is
+     the mode for a chapter you are about to ship: a garble inside an otherwise perfectly
+     matched note prints only if you ask. ⚠ Thresholds and severity tiers are measured, not
+     chosen (`--calibrate` re-derives them from all 261 twin pairs), and the shelf-tag
+     multiset the bullet below asks for was **deliberately not built** &mdash; the two
+     languages cite two different shelves (EN leads KJV 803 / ASV 585, ES leads RV60 551 /
+     NVI 433), so comparing them fails 800 of 1,514 clean notes and measures nothing. What
+     survives of it is an asymmetry warning: one side cites the shelf, the other is silent.
+     It found three live defects on its first run &mdash; a dropped `27:11` clause in Numbers
+     36's own n36-13, and one-sided links still shipped in Numbers 31 and 32.
    - **AND DIFF THE NOTES, not just the verses.** ⚠ Added after Numbers 14 (2026-08-18), where
      the verse twin-diff was run exactly as written above, came back clean, and missed
      everything — because the rule said *verse by verse* and the notes are where the claims
