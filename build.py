@@ -1383,6 +1383,46 @@ def _sub_outside_anchors(pattern, repl, html_str):
     return "".join(out)
 
 
+# The chapter's own audit line for what it added to the registries:
+# "<strong>Library.</strong> Seven new encyclopedia entries ...". Authored in
+# every chapter that adds to the library (16 in each language as of Numbers 36).
+_COLOPHON_P = {
+    "en": re.compile(r'<p><strong>Library\.</strong>.*?</p>', re.S),
+    "es": re.compile(r'<p><strong>Biblioteca\.</strong>.*?</p>', re.S),
+}
+
+
+def _sub_outside_colophon(fn, html_str, lang):
+    """Run `fn` on every part of `html_str` EXCEPT the Library colophon
+    paragraph, which is left byte-for-byte alone. Same shape as
+    _sub_outside_anchors() above, for the same reason: one region of the
+    chapter plays by different rules than the rest.
+
+    The rule it protects: a link in the READING SURFACE (verse lines, notes)
+    answers "what is this?", so a place goes to the map. A link in the colophon
+    is a REGISTRY AUDIT -- the sentence around it literally says "Seven new
+    encyclopedia entries" / "Existing entries extended" -- so it must land on
+    the encyclopedia entry the sentence is claiming credit for. Retargeting
+    those made the prose contradict its own link: 44 links in English and 41 in
+    Spanish, across the 16 chapters that carry a colophon.
+
+    ⚠️ This is the SECOND half of a two-sided fix, and the Spanish half is a
+    correction, not a port: _es_atlas_retarget() has been retargeting Spanish
+    colophon links since Numbers 21, so «Siete entradas nuevas de enciclopedia»
+    has been pointing at the atlas ever since. Found while making the English
+    side match the Spanish one -- the twin-diff cut both ways."""
+    pat = _COLOPHON_P.get(lang)
+    if pat is None:
+        return fn(html_str)
+    out, last = [], 0
+    for m in pat.finditer(html_str):
+        out.append(fn(html_str[last:m.start()]))
+        out.append(m.group(0))          # the audit line keeps its index links
+        last = m.end()
+    out.append(fn(html_str[last:]))
+    return "".join(out)
+
+
 def _eng_atlas_retarget(content):
     """Retarget a hand-authored ENGLISH place link from the Encyclopedia index
     (encyclopedia.html#slug) to that place's own atlas page (atlas/<slug>.html).
@@ -1437,7 +1477,10 @@ def _eng_atlas_retarget(content):
         if slug in atlas_slugs:
             return f'href="atlas/{slug}.html"'
         return m.group(0)
-    return re.sub(r'href="encyclopedia\.html#([a-z0-9\-]+)"', sub, content)
+
+    def retarget(chunk):
+        return re.sub(r'href="encyclopedia\.html#([a-z0-9\-]+)"', sub, chunk)
+    return _sub_outside_colophon(retarget, content, "en")
 
 
 def inject_encyclopedia_links(content, book, ch):
@@ -1512,6 +1555,93 @@ def inject_encyclopedia_links(content, book, ch):
         return prefix + _sub_outside_anchors(_ALIAS_PATTERN, word_match, eng_html) + suffix
 
     return _VERSE_ENG_BLOCK.sub(verse_block, content)
+
+
+# --- verse-line link chrome -------------------------------------------------
+# Display names for the tooltip, one lookup per registry per language.
+_ENCY_NAME = {e["slug"]: e["name"] for e in ENCYCLOPEDIA}
+_DICT_TERM = {slug: term for slug, term, _o, _t, _g, _r in DICTIONARY}
+
+# NB the `_` in the slug class: two DICTIONARY slugs (rav_lakhem, yad_ramah)
+# use an underscore. No ENCYCLOPEDIA slug does, which is why the narrower
+# [a-z0-9-] in the atlas-retarget regexes above is correct there and here is not
+# -- without the underscore those two words stayed loud inside a verse line.
+_LIB_HREF = re.compile(
+    r'^(?:atlas/([a-z0-9_\-]+)\.(?:es\.)?html'
+    r'|(?:encyclopedia|enciclopedia)\.html#([a-z0-9_\-]+)'
+    r'|(?:dictionary|diccionario)\.html#([a-z0-9_\-]+))$')
+_A_TAG = re.compile(r'<a\s+([^>]*)>')
+_VERSE_LINE = {
+    "eng": re.compile(r'(<div class="eng">)(.*?)(</div>)', re.S),
+    "esp": re.compile(r'(<div class="esp">)(.*?)(</div>)', re.S),
+}
+_CHROME_LABEL = {
+    "en": ("\u2014 see the Atlas", "\u2014 see the Encyclopedia", "\u2014 see the Dictionary"),
+    "es": ("\u2014 ver en el Atlas", "\u2014 ver en la Enciclopedia", "\u2014 ver en el Diccionario"),
+}
+
+
+def _verse_link_chrome(content, cls, lang):
+    """Give every library link INSIDE a verse line the same quiet treatment
+    inject_encyclopedia_links() already gives the ones it adds itself:
+    class="eterm" (body colour + a faint dotted underline) and a "Name -- see
+    the Atlas" tooltip.
+
+    Same root cause as _eng_atlas_retarget(), and the other half of it. A
+    hand-authored link bypasses the injector entirely (_sub_outside_anchors
+    leaves an existing anchor alone), so it missed the injector's DESTINATION
+    rule -- fixed there -- and its TYPOGRAPHY rule, fixed here. The result was
+    two looks for one thing on one line: of the 2,002 library links inside
+    English verse lines, 1,316 were the injector's quiet dotted grey and 686
+    were loud cyan, purely according to who had linked the word. A reader
+    cannot see that distinction and has no use for it.
+
+    Verse lines only, deliberately. Outside them the loud cyan link is already
+    uniform (1,933 links in notes and colophons, not one of them eterm) and it
+    is right there: an apparatus is a place to navigate from, so a link should
+    announce itself. Scripture is a place to read, so it should not. That is
+    the rule this makes true in both directions -- inside a verse every library
+    link whispers, outside it every one of them speaks up.
+
+    Applied to `.eng` (build_chapter_pages, after the injector so its own links
+    already carry the class and are skipped by the `class=` guard) and to
+    `.esp` (_es_panels, so the standalone Spanish page and the "Mostrar
+    español" lines threaded into English pages both inherit it -- otherwise
+    the two languages would sit on adjacent lines in two different styles,
+    which is the mismatch this whole pass exists to remove).
+
+    Anything already carrying a class is left alone -- the injector's own
+    links, and `notelink`, whose small superscript "note" must keep its own
+    look. A chapter-to-chapter or external link is not a library link and is
+    untouched. A tooltip is only written when the registry actually knows the
+    name; an unknown slug still gets the class, never an invented label."""
+    atlas_lbl, ency_lbl, dict_lbl = _CHROME_LABEL[lang]
+    names = _ENCY_NAME if lang == "en" else {k: v[0] for k, v in ENCYCLOPEDIA_ES.items()}
+    terms = _DICT_TERM if lang == "en" else {k: v[0] for k, v in DICTIONARY_ES.items()}
+
+    def fix_tag(m):
+        attrs = m.group(1)
+        if "class=" in attrs:
+            return m.group(0)           # injector-styled, notelink, etc.
+        href = re.search(r'href="([^"]+)"', attrs)
+        if not href:
+            return m.group(0)
+        d = _LIB_HREF.match(href.group(1))
+        if not d:
+            return m.group(0)           # a chapter link or an outbound one
+        atlas_s, ency_s, dict_s = d.groups()
+        if atlas_s is not None:
+            name, label = names.get(atlas_s), atlas_lbl
+        elif ency_s is not None:
+            name, label = names.get(ency_s), ency_lbl
+        else:
+            name, label = terms.get(dict_s), dict_lbl
+        title = (f' title="{html.escape(name, quote=True)} {label}"') if name else ""
+        return f'<a class="eterm" {attrs}{title}>'
+
+    def line(m):
+        return m.group(1) + _A_TAG.sub(fix_tag, m.group(2)) + m.group(3)
+    return _VERSE_LINE[cls].sub(line, content)
 
 
 def inject_xrefs(content, book, ch):
@@ -3380,6 +3510,7 @@ def build_chapter_pages(chapters):
         content = inject_chapter_art(content, slug)
         content = _eng_atlas_retarget(content)
         content = inject_encyclopedia_links(content, book, num)
+        content = _verse_link_chrome(content, "eng", "en")
         content = inject_xrefs(content, book, num)
         content = move_clips_into_verses(content)
         content = render_film_clips(content)
@@ -4502,7 +4633,12 @@ def _es_atlas_retarget(content):
         if slug in atlas_es:
             return f'href="atlas/{slug}.es.html"'
         return m.group(0)
-    return re.sub(r'href="enciclopedia\.html#([a-z0-9\-]+)"', sub, content)
+
+    def retarget(chunk):
+        return re.sub(r'href="enciclopedia\.html#([a-z0-9\-]+)"', sub, chunk)
+    # The «Biblioteca.» colophon is an audit of what this chapter added to the
+    # ENCYCLOPEDIA, so its links stay on the index -- see _sub_outside_colophon.
+    return _sub_outside_colophon(retarget, content, "es")
 
 
 def _es_panels():
@@ -4519,7 +4655,8 @@ def _es_panels():
         raw = open(os.path.join(es_dir, fn), encoding="utf-8").read()
         m = re.search(r'id="chapter-([a-z0-9]+)">(.*?)</div><!-- /chapter-\1 -->', raw, re.S)
         if m:
-            out[m.group(1)] = _es_atlas_retarget(m.group(2).strip())
+            panel = _es_atlas_retarget(m.group(2).strip())
+            out[m.group(1)] = _verse_link_chrome(panel, "esp", "es")
     return out
 
 
