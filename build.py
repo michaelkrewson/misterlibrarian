@@ -1383,6 +1383,46 @@ def _sub_outside_anchors(pattern, repl, html_str):
     return "".join(out)
 
 
+# The chapter's own audit line for what it added to the registries:
+# "<strong>Library.</strong> Seven new encyclopedia entries ...". Authored in
+# every chapter that adds to the library (16 in each language as of Numbers 36).
+_COLOPHON_P = {
+    "en": re.compile(r'<p><strong>Library\.</strong>.*?</p>', re.S),
+    "es": re.compile(r'<p><strong>Biblioteca\.</strong>.*?</p>', re.S),
+}
+
+
+def _sub_outside_colophon(fn, html_str, lang):
+    """Run `fn` on every part of `html_str` EXCEPT the Library colophon
+    paragraph, which is left byte-for-byte alone. Same shape as
+    _sub_outside_anchors() above, for the same reason: one region of the
+    chapter plays by different rules than the rest.
+
+    The rule it protects: a link in the READING SURFACE (verse lines, notes)
+    answers "what is this?", so a place goes to the map. A link in the colophon
+    is a REGISTRY AUDIT -- the sentence around it literally says "Seven new
+    encyclopedia entries" / "Existing entries extended" -- so it must land on
+    the encyclopedia entry the sentence is claiming credit for. Retargeting
+    those made the prose contradict its own link: 44 links in English and 41 in
+    Spanish, across the 16 chapters that carry a colophon.
+
+    ⚠️ This is the SECOND half of a two-sided fix, and the Spanish half is a
+    correction, not a port: _es_atlas_retarget() has been retargeting Spanish
+    colophon links since Numbers 21, so «Siete entradas nuevas de enciclopedia»
+    has been pointing at the atlas ever since. Found while making the English
+    side match the Spanish one -- the twin-diff cut both ways."""
+    pat = _COLOPHON_P.get(lang)
+    if pat is None:
+        return fn(html_str)
+    out, last = [], 0
+    for m in pat.finditer(html_str):
+        out.append(fn(html_str[last:m.start()]))
+        out.append(m.group(0))          # the audit line keeps its index links
+        last = m.end()
+    out.append(fn(html_str[last:]))
+    return "".join(out)
+
+
 def _eng_atlas_retarget(content):
     """Retarget a hand-authored ENGLISH place link from the Encyclopedia index
     (encyclopedia.html#slug) to that place's own atlas page (atlas/<slug>.html).
@@ -1437,7 +1477,10 @@ def _eng_atlas_retarget(content):
         if slug in atlas_slugs:
             return f'href="atlas/{slug}.html"'
         return m.group(0)
-    return re.sub(r'href="encyclopedia\.html#([a-z0-9\-]+)"', sub, content)
+
+    def retarget(chunk):
+        return re.sub(r'href="encyclopedia\.html#([a-z0-9\-]+)"', sub, chunk)
+    return _sub_outside_colophon(retarget, content, "en")
 
 
 def inject_encyclopedia_links(content, book, ch):
@@ -4502,7 +4545,12 @@ def _es_atlas_retarget(content):
         if slug in atlas_es:
             return f'href="atlas/{slug}.es.html"'
         return m.group(0)
-    return re.sub(r'href="enciclopedia\.html#([a-z0-9\-]+)"', sub, content)
+
+    def retarget(chunk):
+        return re.sub(r'href="enciclopedia\.html#([a-z0-9\-]+)"', sub, chunk)
+    # The «Biblioteca.» colophon is an audit of what this chapter added to the
+    # ENCYCLOPEDIA, so its links stay on the index -- see _sub_outside_colophon.
+    return _sub_outside_colophon(retarget, content, "es")
 
 
 def _es_panels():
