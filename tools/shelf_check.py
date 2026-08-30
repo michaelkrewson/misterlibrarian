@@ -101,12 +101,20 @@ SOURCES = {
     # notes that cite the 2019 revision as its own distinct witness (this
     # project's doctrine: "a version's own revision is a different witness").
     "tnm2019": ("wol", "tnm2019"),
+    # ...and the identical split on the ENGLISH shelf. There is no `t-nwt2013`
+    # class either (checked against every shipped `class="tag t-nwt*"` span), so
+    # a note citing the 2013 revision as its own witness had the same blind spot
+    # the TNM one did -- found 2026-08-30 on Deuteronomy 6, where a correct
+    # NWT-2013 quote read MISS because only nwt1984 was ever fetched for `t-nwt`.
+    "nwt2013": ("wol", "nwt2013"),
     "gnv":   ("bg", "GNV"),         "geneva": ("bg", "GNV"),
     "drb":   ("bg", "DRA"),         "douay": ("bg", "DRA"),  "dou": ("bg", "DRA"),
     "niv":   ("bg", "NIV"),         "tlb":  ("bg", "TLB"),
     "rv":    ("bg", "RVA"),         "rv60": ("bg", "RVR1960"), "nvi": ("bg", "NVI"),
 }
-NEAR_TNM_YEAR = re.compile(r"\b(2019|1987|1984)\b")
+NEAR_TNM_YEAR = re.compile(r"\b(2019|2013|1987|1984)\b")
+# Which revision-year, for each family, means "not the default edition".
+_REVISION_YEAR = {"tnm": ("2019", "tnm2019"), "nwt": ("2013", "nwt2013")}
 
 
 def _tnm_source_tag(tag, label, after):
@@ -147,12 +155,14 @@ def _tnm_source_tag(tag, label, after):
     1987 citation that happens to sit near an unrelated "2019" elsewhere in
     the same note -- worse than the status quo. Left as a documented gap.
     """
-    if tag != "tnm":
+    spec = _REVISION_YEAR.get(tag)
+    if not spec:
         return tag
+    year, revision_key = spec
     m = NEAR_TNM_YEAR.search(label)
     if not m:
         m = NEAR_TNM_YEAR.search(after[:NEAR])
-    return "tnm2019" if (m and m.group(1) == "2019") else tag
+    return revision_key if (m and m.group(1) == year) else tag
 NEAR = 40   # a quote further than this from its tag is someone else's
 FAR  = 120  # ...and past this it is nobody's -- the tag is a paraphrase
 SKIP = {"mine"}          # this translation -- nothing to check it against
