@@ -37,7 +37,20 @@ from source_text import ORIGINALS, fetch, resolve, verses  # noqa: E402
 # Hebrew points + cantillation. U+05BE (maqaf) and U+05C0/05C3 (paseq/sof pasuq)
 # are separators, not marks, so they are handled apart from this class.
 _MARKS = re.compile(r"[֑-ֽֿׁׂׄ-ׇ]")
-_SEPS = re.compile(r"[־׀׃\-]+")
+# ⚠ Mechon-Mamre punctuates its Hebrew with ORDINARY LATIN marks -- comma, period,
+# semicolon, colon -- and until 2026-08-30 none of them counted as a word separator,
+# so any multi-word query whose words happened to be split by one silently MISSED.
+# Measured across all 929 archived chapters at the time of the fix: 63,556 commas,
+# 22,634 periods, 14,335 semicolons and 4,529 colons survived into bare() output.
+# The calibration case is the most famous two-word phrase in the Hebrew Bible:
+# Deuteronomy 6:4 is printed "שְׁמַע, יִשְׂרָאֵל:" -- with a comma between the two words --
+# so a search for the Shema's own opening returned 4 verses and quietly omitted the
+# Shema itself. NBSP occurs in the same texts and is likewise whitespace.
+_SEPS = re.compile(r"[־׀׃,.;:!?()\[\] \-]+")
+# Mechon prints the paragraph/section markers {פ} {ס} {ר} INSIDE the verse line.
+# Stripping only the braces would splice their Hebrew letter onto a neighbouring
+# word, so the whole marker goes.
+_SECTION = re.compile(r"\{[^}]*\}")
 _HEB_VERSE = re.compile(r"^([א-ת]{1,4})\s+(.*)$")
 
 
@@ -45,6 +58,7 @@ def bare(s: str) -> str:
     """Consonants only, separators normalised to single spaces."""
     s = unicodedata.normalize("NFD", s)
     s = _MARKS.sub("", s)
+    s = _SECTION.sub(" ", s)
     s = _SEPS.sub(" ", s)
     return re.sub(r"\s+", " ", s).strip()
 
