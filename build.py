@@ -3938,25 +3938,9 @@ def build_index(chapters):
     # "Newest" = most-recently-published = the LAST panel in the source file
     # (PUBLISH_ORDER), NOT CHAPTERS[-1]: CHAPTERS is in canonical order, so its tail is
     # the canonically-last chapter (currently Exodus), not the one shipped most recently.
-    # Both the button and the card grid (newest-first) follow publish order so they agree.
     _by_slug = {slug: (slug, book, num, teaser) for slug, book, num, teaser in CHAPTERS}
     pub = [_by_slug[s] for s in PUBLISH_ORDER if s in _by_slug] or list(CHAPTERS)
     latest = pub[-1]
-    # This card grid used to render EVERY published chapter (fine back when it was
-    # Genesis 1-7 — the whole book list WAS the homepage). It never got a cap as the
-    # project grew, so by 314 chapters it had become a ~325KB, two-thirds-of-the-page
-    # wall of full teaser paragraphs with no narrative order (Numbers 36, then
-    # Jeremiah 28, then Revelation 12...) — and every one of those chapters already
-    # has a proper, book-grouped home: Table of Contents -> book-<name>.html's own
-    # "Chapter by chapter" list, which renders this exact same teaser text. Capping
-    # to the NEWEST_N most recent keeps the homepage's "what just shipped" purpose
-    # without re-growing into a second, unbounded Table of Contents every chapter.
-    NEWEST_N = 8
-    newest = list(reversed(pub))[:NEWEST_N]
-    cards = "".join(
-        f'<a class="card" href="{chapter_filename(book, num)}"><div class="card-t">{book} {num}</div>'
-        f'<div class="card-d">{teaser}</div></a>'
-        for _, book, num, teaser in newest)
     votd_json = json.dumps(votd_entries(chapters), ensure_ascii=False).replace("</", "<\\/")
     ch_json = json.dumps(
         [{"slug": slug, "label": f"{book} {num}", "href": chapter_filename(book, num)}
@@ -4004,13 +3988,6 @@ def build_index(chapters):
 </div>
 
 <div class="panel" id="continueBox" style="display:none;margin-top:14px"></div>
-
-<h2>Chapters — newest first</h2>
-<div class="cardgrid">
-{cards}
-</div>
-<p class="muted" style="margin:10px 0 0">Showing the {len(newest)} most recent of {len(pub)} published
-chapters. <a href="toc.html">See the full Table of Contents →</a></p>
 
 <h2>From the desk</h2>
 <div class="cardgrid">
