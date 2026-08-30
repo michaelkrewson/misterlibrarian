@@ -67,6 +67,26 @@ KNOWN LIMITS, stated rather than implied:
     the block above `untagged_citations`), because that class went uncounted in
     Numbers 23, 27 and 36. The warning cannot tell an untagged citation from a
     legitimate discursive mention; it tells you where to look.
+  * TNM 1987 vs TNM 2019 (2026-08-29): there is only ONE markup class for both
+    editions (`class="tag t-tnm"` -- no `t-tnm2019` exists anywhere on the site),
+    so a note correctly citing the 2019 revision as its own distinct witness
+    (this project's doctrine: "a version's own revision is a different witness")
+    could not be auto-verified before -- `SOURCES["tnm"]` always fetched 1987,
+    so a 2019 citation either read NO DATA or, worse, silently checked against
+    the WRONG edition's text. FIXED for the two cases the real markup actually
+    uses: the tag's own visible label already naming the year ("TNM&nbsp;2019",
+    "TNM 1987", bare "2019"/"1987"), and a bare "TNM" label with the year named
+    in the few words of prose immediately after the tag (within this file's
+    own NEAR=40-char attribution window -- see `_tnm_source_tag`). NOT fixed,
+    and deliberately left as a gap rather than forced: a bare "TNM" whose
+    edition is disambiguated only by prose FURTHER than NEAR chars away --
+    that is prose-comprehension (which of several nearby sentences does this
+    tag belong to?), not proximity, and a wider heuristic risks silently
+    mis-routing an ordinary 1987 citation near an unrelated "2019" elsewhere
+    in the same note. A citation like that still defaults to tnm1987, exactly
+    as every citation did before this fix -- so re-verify it by hand
+    (`python3 tools/shelf_text.py <Book> <Ch> --version tnm2019`) rather than
+    trusting a clean run to have covered it.
 """
 import argparse, html, json, os, re, subprocess, sys, unicodedata
 
@@ -75,11 +95,64 @@ import argparse, html, json, os, re, subprocess, sys, unicodedata
 SOURCES = {
     "kjv":   ("wol", "kjv"),        "asv":  ("wol", "asv"),
     "nwt":   ("wol", "nwt1984"),    "tnm":  ("wol", "tnm1987"),
+    # "tnm" is the DEFAULT/1987 key above -- kept exactly as it always was, so
+    # every already-verified TNM 1987 citation is untouched. "tnm2019" is a
+    # SEPARATE key (see _tnm_source_tag below) for the small, growing set of
+    # notes that cite the 2019 revision as its own distinct witness (this
+    # project's doctrine: "a version's own revision is a different witness").
+    "tnm2019": ("wol", "tnm2019"),
     "gnv":   ("bg", "GNV"),         "geneva": ("bg", "GNV"),
     "drb":   ("bg", "DRA"),         "douay": ("bg", "DRA"),  "dou": ("bg", "DRA"),
     "niv":   ("bg", "NIV"),         "tlb":  ("bg", "TLB"),
     "rv":    ("bg", "RVA"),         "rv60": ("bg", "RVR1960"), "nvi": ("bg", "NVI"),
 }
+NEAR_TNM_YEAR = re.compile(r"\b(2019|1987|1984)\b")
+
+
+def _tnm_source_tag(tag, label, after):
+    """Which TNM edition a `t-tnm` occurrence actually cites -- resolves the
+    "can't distinguish TNM 1987 from TNM 2019" gap this tool has always had
+    (only tnm1987 was ever fetched for the generic `t-tnm` tag).
+
+    There is exactly ONE tag class for both editions on this site -- markup
+    never distinguishes them (checked directly against every shipped
+    `class="tag t-tnm*"` span; there is no `t-tnm2019`), so the only signal
+    available is the TEXT. In practice that text takes two shapes, checked
+    against real shipped notes:
+      1. the tag's own visible label already names the year explicitly --
+         `<span class="tag t-tnm">TNM&nbsp;2019</span>` (or plain "2019",
+         or "TNM 1987") -- unambiguous, no guessing.
+      2. the label is bare "TNM" and the year is named in the few words of
+         PROSE immediately after the tag instead -- e.g. "...the
+         <span class="tag t-tnm">TNM</span>'s own 2019 revision moves to
+         '...'" (Deuteronomy 4's n44, the real case that prompted this fix).
+         Reusing this file's own NEAR=40-char attribution-locality convention
+         (see _quote_before / the forward-quote check above) rather than
+         inventing a new threshold: if "2019"/"1987"/"1984" appears within
+         that many characters of the tag, trust it; a bare "TNM" further
+         away than that is genuinely ambiguous, not a case this can resolve.
+
+    Falls back to the pre-existing default ("tnm" -> tnm1987) whenever
+    neither signal fires -- i.e. every already-shipped, already-verified
+    bare-"TNM"/"TNM 1987" citation is checked EXACTLY as it always was; this
+    can only ever additionally route a genuinely-2019-labeled citation to
+    the right edition, never change what a 1987 one resolves to.
+
+    KNOWN LIMIT, stated rather than silently missed: if the year is named
+    further than NEAR chars away -- a whole sentence or more downstream of
+    the tag -- this still defaults to 1987 and cannot tell. That is a
+    genuinely different, harder problem (deciding which of several nearby
+    sentences a bare tag belongs to is prose-comprehension, not proximity),
+    and forcing a wider heuristic risks silently mis-routing an ordinary
+    1987 citation that happens to sit near an unrelated "2019" elsewhere in
+    the same note -- worse than the status quo. Left as a documented gap.
+    """
+    if tag != "tnm":
+        return tag
+    m = NEAR_TNM_YEAR.search(label)
+    if not m:
+        m = NEAR_TNM_YEAR.search(after[:NEAR])
+    return "tnm2019" if (m and m.group(1) == "2019") else tag
 NEAR = 40   # a quote further than this from its tag is someone else's
 FAR  = 120  # ...and past this it is nobody's -- the tag is a paraphrase
 SKIP = {"mine"}          # this translation -- nothing to check it against
@@ -319,15 +392,18 @@ def main():
         # "the NWT 1984 and TNM 1987 keep it indefinite ('...')" is one claim about two
         # versions, and the quote may be either one's wording. Attributing it to the last
         # tag alone produces false misses -- checked against Numbers 27, where it did.
-        hits = [(m.start(), m.end(), m.group(1), body[m.end():m.end()+260])
+        hits = [(m.start(), m.end(), m.group(1), body[m.end():m.end()+260], m.group(2))
                 for m in re.finditer(r'class="tag t-([a-z0-9]+)"[^>]*>(.*?)</span>', body, re.S)]
         groups, cur, run_at, used_end = [], [], None, 0
-        for pos, end, tag, after in hits:
+        for pos, end, tag, after, label in hits:
             if tag in SKIP:
                 continue
             if not cur:
                 run_at = pos
-            cur.append(tag)
+            # Resolve which TNM edition this specific occurrence cites (a
+            # no-op for every non-"tnm" tag, and for a "tnm" tag with no
+            # nearby year -- see _tnm_source_tag's own docstring).
+            cur.append(_tnm_source_tag(tag, label, after))
             q = QUOTE.search(after)
             # a quote belongs to this run only if no further tag intervenes before it
             nxt = re.search(r'class="tag t-[a-z0-9]+"', after)
