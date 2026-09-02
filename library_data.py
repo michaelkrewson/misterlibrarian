@@ -2741,7 +2741,7 @@ ENCYCLOPEDIA = [
          coords=(32.2137, 35.2853, 0.3), approx=True,
          modern="Near Nablus, West Bank"),
     dict(slug="gilgal", name="Gilgal", kind="place", aliases=["Gilgal"],
-         desc="The camp Israel makes after crossing the Jordan, where the twelve stones from the riverbed are set up (Joshua 4, not yet on these pages); the name is linked there to a rolling away of reproach, from <em>galal</em>, to roll. &#9888;&#9888; <strong>The Gilgal of <a href=\"deuteronomy-11.html#v11-30\">Deuteronomy 11:30</a> is a genuine problem.</strong> That verse locates Gerizim and Ebal 'opposite Gilgal' &mdash; but the Jordan-crossing Gilgal lies near Jericho, some fifty kilometres south of Shechem, and no mountain near Shechem is visible from it. Two explanations stand and neither is provable: a SECOND Gilgal nearer Shechem (the name is a common noun and more than one place carries it in the Hebrew Bible), or a writer orienting a distant reader by the best-known landmark rather than the nearest one. This entry sets out both. Coordinates point at the Jericho-area Gilgal and are marked approximate, since even that site is inferred from the biblical itinerary rather than identified on the ground.",
+         desc="The camp Israel makes after crossing the Jordan, where the twelve stones from the riverbed are set up (Joshua 4, not yet on these pages); the name is linked there to a rolling away of reproach, from <em>galal</em>, to roll. &#9888;&#9888; <strong>The Gilgal of <a href=\"deuteronomy-11.html#v11-30\">Deuteronomy 11:30</a> is a genuine problem.</strong> That verse locates Gerizim and Ebal 'opposite Gilgal' &mdash; but the Jordan-crossing Gilgal lies near Jericho, some forty kilometres south of Shechem, and no mountain near Shechem is visible from it. Two explanations stand and neither is provable: a SECOND Gilgal nearer Shechem (the name is a common noun and more than one place carries it in the Hebrew Bible), or a writer orienting a distant reader by the best-known landmark rather than the nearest one. This entry sets out both. Coordinates point at the Jericho-area Gilgal and are marked approximate, since even that site is inferred from the biblical itinerary rather than identified on the ground.",
          refs=[("Deuteronomy", 11, 30)], videos=[],
          coords=(31.8700, 35.5000, 0.5), approx=True,
          modern="Jordan valley near Jericho (site not identified)"),
@@ -22917,7 +22917,7 @@ ENCYCLOPEDIA_ES["gilgal"] = ("Gilgal",
     "quita el oprobio, de <em>galal</em>, rodar. &#9888;&#9888; <strong>El Gilgal de "
     "<a href=\"deuteronomy-11.es.html#v11-30\">Deuteronomio 11:30</a> es un problema de verdad.</strong> Ese "
     "versículo sitúa Gerizim y Ebal ‘frente a Gilgal’, pero el Gilgal del cruce del Jordán "
-    "está junto a Jericó, unos cincuenta kilómetros al sur de Siquem, y desde allí no se ve "
+    "está junto a Jericó, unos cuarenta kilómetros al sur de Siquem, y desde allí no se ve "
     "ningún monte cercano a Siquem. Se sostienen dos explicaciones y ninguna es demostrable: un SEGUNDO Gilgal "
     "más cerca de Siquem (el nombre es un sustantivo común y más de un lugar lo lleva en la Biblia "
     "hebrea), o un escritor orientando a un lector lejano por el hito más conocido y no por el más cercano. "
