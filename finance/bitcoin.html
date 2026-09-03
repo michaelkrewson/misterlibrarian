@@ -210,6 +210,21 @@ a{color:#f7931a}
    Appended to that one page only (see _shell's extra_css), because every page
    here inlines its whole stylesheet and thirty pages should not carry a grid
    none of them draws. Namespaced .bb* so it can never reach the asset table. */
+/* The coin, and the glow behind it. The glow is a separate blurred layer
+   rather than a shadow on the SVG so it can breathe on its own timing without
+   the coin itself moving — a title that pulses is a title that is hard to
+   read. Sized in em, so it tracks the heading at every breakpoint. */
+.bbmark{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:1.16em;height:1.16em;margin-right:.34em;vertical-align:-.17em}
+.bbmark::before{content:"";position:absolute;inset:-58%;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,147,26,.60) 0%,rgba(247,147,26,.34) 32%,
+    rgba(247,147,26,.10) 55%,rgba(247,147,26,0) 72%);
+  animation:bbglow 4.2s ease-in-out infinite}
+.bbmark svg{position:relative;width:100%;height:100%;display:block;
+  filter:drop-shadow(0 1px 7px rgba(247,147,26,.60))}
+@keyframes bbglow{0%,100%{opacity:.6;transform:scale(.92)}
+  50%{opacity:1;transform:scale(1.08)}}
+
 .bblede{margin:10px 0 0;color:#b9c6d8;font-size:16.5px;max-width:780px}
 .bbstamp{margin:15px 0 0;color:#7f8fa6;font-size:13.5px;display:flex;
   align-items:center;gap:9px;flex-wrap:wrap;
@@ -276,6 +291,18 @@ a{color:#f7931a}
   .bbh-v{font-size:26px}
   .bbgrid{grid-template-columns:1fr}
 }
+
+/* Two things here animate forever — the title's glow and the live dot. Both are
+   decoration on a number, so both stop for a reader who has asked the system to
+   stop moving things.
+   ⚠️ This block must stay LAST. Everything in it matches with the same
+   specificity as the rule it is overriding, so placed higher up it loses to the
+   later declaration and silently does nothing — which is exactly what it did on
+   the first attempt (the glow obeyed, the dot kept pulsing). */
+@media (prefers-reduced-motion:reduce){
+  .bbmark::before{animation:none;opacity:.8}
+  .bbdot{animation:none}
+}
 </style>
 </head>
 <body>
@@ -286,12 +313,44 @@ a{color:#f7931a}
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html" class="on">Bitcoin Board</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
-  <h1 class="btitle">The Bitcoin Board</h1>
+  <h1 class="btitle"><span class="bbmark" aria-hidden="true"><svg viewBox="0 0 44 44">
+  <defs>
+    <linearGradient id="bbCoinFace" x1="0.15" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ffd694"/>
+      <stop offset="46%" stop-color="#f7931a"/>
+      <stop offset="100%" stop-color="#a85c07"/>
+    </linearGradient>
+    <linearGradient id="bbCoinRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe3b4"/>
+      <stop offset="100%" stop-color="#7d4304"/>
+    </linearGradient>
+  </defs>
+  <circle cx="22" cy="22" r="21" fill="url(#bbCoinRim)"/>
+  <circle cx="22" cy="22" r="18.4" fill="url(#bbCoinFace)"/>
+  <g stroke="#fffaf0" fill="none">
+    <!-- The prongs run UNDER the letter and are drawn first, so the bowls'
+         bars cap them cleanly. Round ends; the letter's own strokes are butt
+         ended, because a round cap on the stem overshoots the top bar and
+         leaves a bump on the left shoulder. -->
+    <g stroke-width="2.2" stroke-linecap="round">
+      <path d="M16.9 8.7v5.4M23.4 8.7v5.4M16.9 29.9v5.4M23.4 29.9v5.4"/>
+    </g>
+    <g stroke-width="3.4" stroke-linecap="butt" stroke-linejoin="round">
+      <path d="M16.9 13.6v16.8"/>
+      <!-- The bars start at the stem's OUTER edge (16.9 − 3.4/2 = 15.2), not at
+           its centre line: starting at the centre leaves the letter's top edge
+           1.7 higher to the right of x=16.9 than to the left of it, which reads
+           as a shelf cut out of the left shoulder. -->
+      <path d="M15.2 13.6h7a4.05 4.05 0 010 8.1H15.2"/>
+      <path d="M15.2 21.7h7.8a4.35 4.35 0 010 8.7H15.2"/>
+    </g>
+  </g>
+</svg></span>The Bitcoin Board</h1>
   <p class="bblede">Everything Bitcoin publishes about itself, on one page: how many coins exist, how hard they are to mine, what is waiting to be confirmed, and how long until the next halving. The network is the only source — nobody is asked to take a figure on faith.</p>
   <p class="bbstamp"><span class="bbdot" id="bbDot"></span><span id="bbLive">live</span><span><span class="bbsep">·</span> snapshot taken 2026-09-03 19:52 UTC</span></p>
   <div class="bbhero">
     <div class="bbh"><div class="bbh-l">Price</div><div class="bbh-v am" id="bbPrice">$81,262</div><div class="bbh-s"><span id="bbSats">1,231 satoshis to the dollar</span></div></div>
-    <div class="bbh"><div class="bbh-l">Block height</div><div class="bbh-v am" id="bbBlock">965,361</div><div class="bbh-s">last block <span id="bbSince">18m 53s ago</span></div></div>
+    <div class="bbh"><div class="bbh-l">Block height</div><div class="bbh-v am" id="bbBlock">965,361</div><div class="bbh-s">last block <span id="bbSince">53m 58s ago</span></div></div>
     <div class="bbh"><div class="bbh-l">Bitcoin issued</div><div class="bbh-v am" id="bbIssued">20,079,206</div><div class="bbh-s">BTC <span class="bbsep">·</span> <span id="bbIssuedPct">95.62%</span> of every coin there will ever be</div></div>
     <div class="bbh"><div class="bbh-l">Next halving</div><div class="bbh-v am" id="bbHalving">587d 18:30:00</div><div class="bbh-s">at block 1,050,000 <span class="bbsep">·</span> ≈April 17, 2028</div></div>
   </div>
@@ -331,7 +390,7 @@ a{color:#f7931a}
     <div class="bbrow"><span class="bbk">Difficulty</span><span class="bbv" id="dDiff">125.8 T</span></div>
     <div class="bbrow"><span class="bbk">Blocks to the next retarget</span><span class="bbv" id="dLeft">303 blocks</span></div>
     <div class="bbrow"><span class="bbk">Expected change</span><span class="bbv" id="dChange">+0.92%</span></div>
-    <div class="bbrow"><span class="bbk">Retarget in</span><span class="bbv" id="dRetarget">2d 01:47:16</span></div>
+    <div class="bbrow"><span class="bbk">Retarget in</span><span class="bbv" id="dRetarget">2d 01:12:11</span></div>
     <div class="bbrow"><span class="bbk">Average block, this epoch<span class="bbn">the target is ten</span></span><span class="bbv" id="dBlockTime">9.9 min</span></div>
     <div class="bbrow"><span class="bbk">Paid to miners, last 24 hours</span><span class="bbv">$36,817,669</span></div>
     <div class="bbrow"><span class="bbk">Of which was fees<span class="bbn">the rest is newly minted coin</span></span><span class="bbv">0.68%</span></div><div class="bbbar"><i id="dProg" style="width:85.0%"></i></div><div class="bbbarl"><span id="dProgTxt">85.0% through this epoch</span><span>2,016 blocks</span></div><svg class="bbchart" viewBox="0 0 320 62" preserveAspectRatio="none" aria-hidden="true" focusable="false"><polygon points="0,62 0.0,44.8 2.7,36.9 5.4,17.8 8.1,51.1 10.8,20.0 13.4,21.3 16.1,14.5 18.8,21.9 21.5,21.4 24.2,21.3 26.9,31.4 29.6,25.3 32.3,33.0 35.0,15.8 37.6,17.2 40.3,30.2 43.0,17.1 45.7,12.7 48.4,10.2 51.1,21.4 53.8,19.3 56.5,20.8 59.2,21.5 61.8,21.3 64.5,24.4 67.2,29.4 69.9,22.4 72.6,44.9 75.3,18.4 78.0,32.7 80.7,33.6 83.4,12.2 86.1,14.8 88.7,25.7 91.4,21.0 94.1,23.5 96.8,28.0 99.5,29.1 102.2,14.4 104.9,33.5 107.6,15.6 110.3,36.3 112.9,26.2 115.6,33.3 118.3,37.9 121.0,21.9 123.7,13.3 126.4,58.0 129.1,56.7 131.8,34.8 134.5,40.0 137.1,29.7 139.8,28.0 142.5,20.1 145.2,4.0 147.9,35.8 150.6,47.9 153.3,11.5 156.0,28.9 158.7,33.7 161.3,25.4 164.0,31.6 166.7,38.2 169.4,41.8 172.1,30.3 174.8,39.8 177.5,47.7 180.2,28.0 182.9,41.8 185.5,35.2 188.2,19.0 190.9,28.7 193.6,49.6 196.3,16.6 199.0,35.6 201.7,45.2 204.4,51.7 207.1,39.3 209.7,37.8 212.4,30.2 215.1,38.2 217.8,19.4 220.5,46.2 223.2,34.6 225.9,38.2 228.6,47.5 231.3,43.8 233.9,36.8 236.6,33.7 239.3,58.0 242.0,39.3 244.7,42.5 247.4,38.7 250.1,40.8 252.8,28.9 255.5,50.5 258.2,35.2 260.8,19.9 263.5,33.5 266.2,30.7 268.9,56.2 271.6,51.3 274.3,40.6 277.0,47.7 279.7,27.0 282.4,46.0 285.0,34.1 287.7,44.6 290.4,35.7 293.1,41.7 295.8,42.4 298.5,42.6 301.2,43.5 303.9,40.2 306.6,37.7 309.2,46.4 311.9,44.5 314.6,42.9 317.3,25.2 320.0,47.5 320,62" fill="#f7931a" opacity=".14"/><polyline points="0.0,44.8 2.7,36.9 5.4,17.8 8.1,51.1 10.8,20.0 13.4,21.3 16.1,14.5 18.8,21.9 21.5,21.4 24.2,21.3 26.9,31.4 29.6,25.3 32.3,33.0 35.0,15.8 37.6,17.2 40.3,30.2 43.0,17.1 45.7,12.7 48.4,10.2 51.1,21.4 53.8,19.3 56.5,20.8 59.2,21.5 61.8,21.3 64.5,24.4 67.2,29.4 69.9,22.4 72.6,44.9 75.3,18.4 78.0,32.7 80.7,33.6 83.4,12.2 86.1,14.8 88.7,25.7 91.4,21.0 94.1,23.5 96.8,28.0 99.5,29.1 102.2,14.4 104.9,33.5 107.6,15.6 110.3,36.3 112.9,26.2 115.6,33.3 118.3,37.9 121.0,21.9 123.7,13.3 126.4,58.0 129.1,56.7 131.8,34.8 134.5,40.0 137.1,29.7 139.8,28.0 142.5,20.1 145.2,4.0 147.9,35.8 150.6,47.9 153.3,11.5 156.0,28.9 158.7,33.7 161.3,25.4 164.0,31.6 166.7,38.2 169.4,41.8 172.1,30.3 174.8,39.8 177.5,47.7 180.2,28.0 182.9,41.8 185.5,35.2 188.2,19.0 190.9,28.7 193.6,49.6 196.3,16.6 199.0,35.6 201.7,45.2 204.4,51.7 207.1,39.3 209.7,37.8 212.4,30.2 215.1,38.2 217.8,19.4 220.5,46.2 223.2,34.6 225.9,38.2 228.6,47.5 231.3,43.8 233.9,36.8 236.6,33.7 239.3,58.0 242.0,39.3 244.7,42.5 247.4,38.7 250.1,40.8 252.8,28.9 255.5,50.5 258.2,35.2 260.8,19.9 263.5,33.5 266.2,30.7 268.9,56.2 271.6,51.3 274.3,40.6 277.0,47.7 279.7,27.0 282.4,46.0 285.0,34.1 287.7,44.6 290.4,35.7 293.1,41.7 295.8,42.4 298.5,42.6 301.2,43.5 303.9,40.2 306.6,37.7 309.2,46.4 311.9,44.5 314.6,42.9 317.3,25.2 320.0,47.5" fill="none" stroke="#f7931a" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg><p class="bbasof">A year of hash rate.</p>
