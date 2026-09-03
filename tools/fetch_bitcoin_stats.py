@@ -113,30 +113,56 @@ def _downsample(points, n=CHART_POINTS):
     return out
 
 
-def _price_history():
-    """(spot, all-time high, downsampled year) from mempool's own price series.
+def _bucket_last(points, seconds):
+    """One point per bucket of `seconds`, keeping the LAST in each — a close,
+    not an average. Averaging would smooth away the highs and lows the chart
+    exists to show, and would put the final point somewhere the price never
+    actually traded."""
+    out, seen = [], {}
+    for ts, px in points:
+        seen[ts // seconds] = [ts, px]
+    for key in sorted(seen):
+        out.append(seen[key])
+    return out
 
-    The series is newest-first and daily, so the "all-time high" here is the
-    highest DAILY point in that feed — an intraday wick a few hundred dollars
-    higher will not appear in it. The page says so rather than implying this is
-    the last word on the number.
+
+def _price_history():
+    """(spot, all-time high, weekly series, daily series) from mempool's own feed.
+
+    ONE request answers all of it, because that endpoint's own resolution is
+    already tiered — measured 2026-09-03 over 25,193 points: hourly for the last
+    ~2.8 years, daily for a middle era, weekly back to 2010-07-19. So the whole
+    history is there, and the only work here is thinning it to something worth
+    committing every hour.
+
+    WHAT THE TWO SERIES ARE FOR
+      weekly  the entire history (~845 points). Drives the 3Y/10Y/ALL ranges AND
+              every moving average — the 50/100/200-WEEK averages are a rolling
+              mean over 50/100/200 of these points, computed in the browser so
+              there is exactly one implementation of them.
+      daily   the last two years (~730 points). Drives 1M through 1Y.
+    Ranges shorter than a month are fetched live from Coinbase by the page, so
+    intraday resolution costs this file nothing.
+
+    The all-time high is the highest point in the feed. That is a close, so an
+    intraday wick a few hundred dollars higher will not appear in it, and the
+    page says so rather than implying this is the last word on the number.
     """
     d = _get("%s/v1/historical-price?currency=USD" % MEMPOOL)
     prices = (d or {}).get("prices")
     if not isinstance(prices, list) or not prices:
-        return None, None, None
-    clean = [p for p in prices
-             if isinstance(p.get("time"), int) and isinstance(p.get("USD"), (int, float))
-             and p["USD"] > 0]
+        return None, None, None, None
+    clean = sorted(([p["time"], p["USD"]] for p in prices
+                    if isinstance(p.get("time"), int)
+                    and isinstance(p.get("USD"), (int, float)) and p["USD"] > 0),
+                   key=lambda p: p[0])
     if not clean:
-        return None, None, None
-    clean.sort(key=lambda p: p["time"])           # oldest first
-    top = max(clean, key=lambda p: p["USD"])
-    year_ago = clean[-1]["time"] - 365 * 86400
-    year = [[p["time"], p["USD"]] for p in clean if p["time"] >= year_ago]
-    return (clean[-1]["USD"],
-            {"usd": top["USD"], "ts": top["time"]},
-            _downsample(year))
+        return None, None, None, None
+    top = max(clean, key=lambda p: p[1])
+    now = clean[-1][0]
+    weekly = _bucket_last(clean, 7 * 86400)
+    daily = _bucket_last([p for p in clean if p[0] >= now - 730 * 86400], 86400)
+    return clean[-1][1], {"usd": top[1], "ts": top[0]}, weekly, daily
 
 
 def _hashrate():
@@ -230,7 +256,7 @@ def compute():
         return None
 
     height = tip["height"]
-    spot, ath, price_year = _price_history()
+    spot, ath, weekly, daily = _price_history()
     supply_sats = _btc_supply_sats(height)
 
     out = {
@@ -245,8 +271,10 @@ def compute():
         out["price_usd"] = spot
     if ath:
         out["ath"] = ath
-    if price_year:
-        out["price_1y"] = price_year
+    if weekly:
+        out["price_weekly"] = weekly
+    if daily:
+        out["price_daily"] = daily
 
     adj = _get("%s/v1/difficulty-adjustment" % MEMPOOL)
     if isinstance(adj, dict) and adj.get("remainingBlocks") is not None:
@@ -367,10 +395,15 @@ def main():
         return 0
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    # Compact, not indented. The price history is ~1,600 points, and one line
+    # per number would turn a 35KB file into a 250KB one that is rewritten
+    # every time this runs. It is generated data, not something anyone edits —
+    # `python3 -m json.tool` renders it for a human in one command.
     with open(OUT, "w", encoding="utf-8") as fh:
-        json.dump(stats, fh, indent=1, ensure_ascii=False)
+        json.dump(stats, fh, separators=(",", ":"), ensure_ascii=False)
         fh.write("\n")
-    print("wrote %s" % os.path.relpath(OUT, ROOT))
+    print("wrote %s (%.1f KB)"
+          % (os.path.relpath(OUT, ROOT), os.path.getsize(OUT) / 1024))
     return 0
 
 

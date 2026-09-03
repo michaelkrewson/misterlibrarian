@@ -713,7 +713,12 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 """ % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
        "site": esc(SITE_NAME), "ogt": og_type,
        "css": (CSS + extra_css).replace("__ACCENT__", ACCENT),
-       "js": ("<script>\n%s\n</script>\n" % extra_js) if extra_js else "",
+       # The accent is substituted in the SCRIPT too, not just the stylesheet.
+       # Page JavaScript that builds SVG has to name the colour somewhere, and
+       # a sentinel left in reaches the browser as a colour it cannot parse —
+       # which silently paints the thing black rather than erroring.
+       "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
+              if extra_js else ""),
        "chrome": _chrome(active), "body": body, "foot": _foot()}
 
 
@@ -1459,6 +1464,46 @@ BB_CSS = """
 .bbbarl{display:flex;justify-content:space-between;gap:12px;color:#6e7d92;
   font-size:12px;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .bbchart{margin:12px 0 2px;display:block;width:100%;height:62px}
+
+/* ── the full-width market card ──────────────────────────────────────────── */
+.bbwide{grid-column:1/-1}
+.bbctl{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;
+  justify-content:space-between;margin:4px 0 2px}
+.bbbtns{display:flex;flex-wrap:wrap;gap:5px}
+.bbb{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:11.5px;
+  letter-spacing:.05em;color:#8b9ab0;background:#0d1521;border:1px solid #1e2938;
+  border-radius:7px;padding:5px 9px;cursor:pointer;
+  transition:color .14s,border-color .14s,background .14s}
+.bbb:hover{color:#e8eef7;border-color:#3a4f66}
+.bbb.on{color:#0a111c;font-weight:700;background:__ACCENT__;border-color:__ACCENT__}
+/* Each average keeps its own colour on its own button, so the legend IS the
+   control — there is no separate key to read against the lines. */
+.bbb.m50.on{background:#5eb3d6;border-color:#5eb3d6}
+.bbb.m100.on{background:#a78bfa;border-color:#a78bfa}
+.bbb.m200.on{background:#e8dfd2;border-color:#e8dfd2}
+.bbb.lg.on{background:#4b5f77;border-color:#4b5f77;color:#eef4fb}
+.bbchartwrap{position:relative;margin:8px 0 0}
+.bbchartwrap svg{display:block;width:100%;height:310px;touch-action:pan-y}
+.bbax{fill:#6e7d92;font-size:11px;font-family:ui-sans-serif,system-ui,sans-serif}
+.bbgrid-l{stroke:#131b27;stroke-width:1}
+.bbcross{stroke:#3f4c5f;stroke-width:1;stroke-dasharray:3 3}
+.bbread{position:absolute;top:4px;pointer-events:none;white-space:nowrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:12.5px;
+  color:#93a4bd;background:rgba(8,14,24,.92);border:1px solid #24303f;
+  border-radius:9px;padding:7px 11px;display:none;line-height:1.55}
+.bbread b{color:#e8eef7;font-variant-numeric:tabular-nums}
+.bbread i{font-style:normal}
+.bbnote{margin:8px 0 0;color:#6e7d92;font-size:12.5px;font-style:italic}
+.bbstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(166px,1fr));
+  gap:4px 20px;margin:12px 0 0;border-top:1px solid #131b27;padding-top:13px}
+.bbst{padding:5px 0}
+.bbst-l{color:#93a4bd;font-size:13px;line-height:1.35}
+.bbst-n{color:#5a6b80;font-size:11.5px;font-style:italic}
+.bbst-v{margin-top:3px;color:#e8eef7;font-size:16.5px;font-weight:600;
+  font-variant-numeric:tabular-nums;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbst-v.am{color:__ACCENT__}
+@media (max-width:640px){.bbchartwrap svg{height:240px}}
 .bbchips{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0 2px}
 .bbchip{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:12px;
   color:#8b9ab0;border:1px solid #1e2938;border-radius:999px;padding:5px 11px;
@@ -1676,6 +1721,7 @@ BB_JS = """
       if (r[3] && r[3].USD) { S.price = r[3].USD; ok = true; }
       if (ok) { fails = 0; lastOk = Date.now(); } else { fails++; }
       render(); tick();
+      if (ok) chartFollowLive();
     });
   }
 
@@ -1700,11 +1746,393 @@ BB_JS = """
     return n(v) + " H/s";
   }
 
+  // ── the price chart ──────────────────────────────────────────────────────
+  //
+  // Three sources feed one chart, chosen by how far back the range reaches:
+  //   weekly  the whole history, baked into this page. Also the ONLY input to
+  //           the moving averages — they are 50/100/200-WEEK averages, so they
+  //           are a rolling mean over 50/100/200 of these points, full stop.
+  //   daily   two years, baked in. Anything from a month to a year.
+  //   cb      Coinbase candles, fetched only if a reader asks for 1H/1D/1W.
+  //           Baking minute resolution would be pointless — it is stale the
+  //           moment it is committed — so those three ranges are live or they
+  //           say they are unavailable. They never quietly show daily data
+  //           relabelled as an hour.
+  var RANGES = {
+    "1H":  {span: 3600,         src: "cb", gran: 60},
+    "1D":  {span: 86400,        src: "cb", gran: 300},
+    "1W":  {span: 7 * 86400,    src: "cb", gran: 3600},
+    "1M":  {span: 30 * 86400,   src: "daily"},
+    "3M":  {span: 91 * 86400,   src: "daily"},
+    "6M":  {span: 182 * 86400,  src: "daily"},
+    "YTD": {span: null,         src: "daily"},
+    "1Y":  {span: 365 * 86400,  src: "daily"},
+    "3Y":  {span: 1095 * 86400, src: "weekly"},
+    "10Y": {span: 3652 * 86400, src: "weekly"},
+    "ALL": {span: null,         src: "weekly"}
+  };
+  var MACOL = {50: "#5eb3d6", 100: "#a78bfa", 200: "#e8dfd2"};
+  var MON = ["Jan","Feb","Mar","Apr","May","Jun",
+             "Jul","Aug","Sep","Oct","Nov","Dec"];
+  var CH = {range: "1Y", ma: {}, log: false, logPinned: false, intraday: {},
+            pending: {}, note: "", draw: null};
+  var maCache = {};
+
+  function maSeries(p) {
+    if (maCache[p]) return maCache[p];
+    var w = S.weekly || [], out = [], sum = 0;
+    for (var i = 0; i < w.length; i++) {
+      sum += w[i][1];
+      if (i >= p) sum -= w[i - p][1];
+      if (i >= p - 1) out.push([w[i][0], sum / p]);
+    }
+    maCache[p] = out;
+    return out;
+  }
+
+  function crop(s, from, to) {
+    var out = [];
+    for (var i = 0; i < s.length; i++) {
+      if (s[i][0] >= from && s[i][0] <= to) out.push(s[i]);
+    }
+    return out;
+  }
+
+  // Linear interpolation, so a moving average still draws across a window too
+  // short to contain one of its weekly points. On a one-hour view the 200-week
+  // average is a flat line — which is exactly what it is, to within a week.
+  function sampleAt(s, ts) {
+    if (!s.length) return null;
+    if (ts <= s[0][0]) return s[0][1];
+    if (ts >= s[s.length - 1][0]) return s[s.length - 1][1];
+    var lo = 0, hi = s.length - 1;
+    while (hi - lo > 1) {
+      var m = (lo + hi) >> 1;
+      if (s[m][0] <= ts) lo = m; else hi = m;
+    }
+    var a = s[lo], b = s[hi];
+    return a[1] + (b[1] - a[1]) * ((ts - a[0]) / (b[0] - a[0] || 1));
+  }
+
+  function coinbase(key, gran) {
+    if (CH.pending[key]) return;
+    CH.pending[key] = 1;
+    fetch("https://api.exchange.coinbase.com/products/BTC-USD/candles" +
+          "?granularity=" + gran, {cache: "no-store"})
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (rows) {
+        // [time, low, high, open, close, volume], newest first.
+        CH.intraday[key] = rows.map(function (c) { return [c[0], c[4]]; })
+          .sort(function (a, b) { return a[0] - b[0]; });
+      })
+      .catch(function () { CH.intraday[key] = []; })
+      .then(function () { CH.pending[key] = 0; drawChart(); });
+  }
+
+  function niceStep(raw) {
+    var mag = Math.pow(10, Math.floor(Math.log10(raw))), n = raw / mag;
+    return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10) * mag;
+  }
+
+  // `step` is the gap between neighbouring ticks, and it decides the precision:
+  // rounding $81,200 and $81,900 both to "$81k" prints the same label twice and
+  // makes the axis unreadable, which is what a one-hour view did at first.
+  // Below $1 the trailing zeros are stripped so the axis does not mix "$0.050"
+  // with "$1.0" in the same column.
+  function axisPx(v, step) {
+    if (v >= 1e6) return "$" + n(v / 1e6, v >= 1e7 ? 0 : 1) + "M";
+    if (v >= 1e3) {
+      var dp = !step ? 0 : step < 100 ? 2 : step < 500 ? 1 : 0;
+      return "$" + n(v / 1e3, dp) + "k";
+    }
+    if (v >= 10) return "$" + n(Math.round(v));
+    return "$" + String(+v.toFixed(v >= 1 ? 2 : 4));
+  }
+
+  function p2(x) { return (x < 10 ? "0" : "") + x; }
+
+  function axisDate(ts, span) {
+    var d = new Date(ts * 1000);
+    if (span <= 2 * 86400) return p2(d.getHours()) + ":" + p2(d.getMinutes());
+    if (span <= 120 * 86400) return d.getDate() + " " + MON[d.getMonth()];
+    if (span <= 1200 * 86400) return MON[d.getMonth()] + " " + d.getFullYear();
+    return "" + d.getFullYear();
+  }
+
+  function fullDate(ts, span) {
+    var d = new Date(ts * 1000);
+    var day = d.getDate() + " " + MON[d.getMonth()] + " " + d.getFullYear();
+    return span <= 2 * 86400
+      ? day + ", " + p2(d.getHours()) + ":" + p2(d.getMinutes())
+      : day;
+  }
+
+  function esc2(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+
+  function drawChart() {
+    var svg = $("bbChart"), wrap = $("bbChartWrap"), note = $("bbChartNote");
+    if (!svg || !wrap) return;
+    var key = CH.range, r = RANGES[key];
+    var W = Math.max(320, wrap.clientWidth || 900);
+    var H = svg.clientHeight || 310;
+    // Both of these are width-dependent because a phone cannot hold a desktop
+    // axis: five "Mon YYYY" labels across 358px overlap into gibberish, which
+    // is what this drew at 390px before the divisor moved with the width.
+    var L = W < 480 ? 46 : 62, R = 14, T = 12, B = 26;
+    var nx = W < 420 ? 2 : W < 700 ? 3 : 4;
+
+    var pts;
+    if (r.src === "cb") {
+      pts = CH.intraday[key];
+      if (!pts) { coinbase(key, r.gran); pts = null; }
+    } else {
+      pts = (r.src === "weekly" ? S.weekly : S.daily) || [];
+    }
+
+    if (!pts || pts.length < 2) {
+      svg.innerHTML = '<text class="bbax" x="' + L + '" y="' + (H / 2) +
+        '">' + (pts ? "That range is not available right now."
+                    : "Loading\\u2026") + '</text>';
+      if (note) note.textContent = pts
+        ? "Coinbase did not answer, so the intraday view is empty. " +
+          "Every other range is drawn from data already in this page."
+        : "";
+      CH.draw = null;
+      return;
+    }
+
+    var last = pts[pts.length - 1][0];
+    var from;
+    if (key === "ALL") from = pts[0][0];
+    else if (key === "YTD") {
+      var d0 = new Date(last * 1000);
+      from = new Date(d0.getFullYear(), 0, 1).getTime() / 1000;
+    } else from = last - r.span;
+    var win = crop(pts, from, last + 1);
+    if (win.length < 2) win = pts.slice(-2);
+
+    var x0 = win[0][0], x1 = win[win.length - 1][0];
+    var span = x1 - x0 || 1;
+
+    var mas = [];
+    [50, 100, 200].forEach(function (p) {
+      if (!CH.ma[p]) return;
+      var s = maSeries(p);
+      if (!s.length) return;
+      var body = crop(s, x0, x1), line = body.slice();
+      // Meet the window edges ONLY where the average actually exists.
+      // Extending it RIGHT is honest — the newest value is the average now, and
+      // a weekly series can trail the present by up to a week. Extending it
+      // LEFT is not: before its first point there were fewer than 50 (or 100,
+      // or 200) weeks of Bitcoin to average, and a flat line reaching back to
+      // 2010 claims an average that had nothing behind it. That is what the
+      // first cut of this drew.
+      var end = s[s.length - 1];
+      if (x0 > s[0][0]) line.unshift([x0, sampleAt(s, x0)]);
+      if (x1 > end[0]) line.push([x1, end[1]]);
+      else if (body.length && x1 > body[body.length - 1][0]) {
+        line.push([x1, sampleAt(s, x1)]);
+      }
+      if (line.length > 1) mas.push({p: p, pts: line, col: MACOL[p]});
+    });
+
+    var lo = Infinity, hi = -Infinity;
+    win.forEach(function (p) { if (p[1] < lo) lo = p[1]; if (p[1] > hi) hi = p[1]; });
+    mas.forEach(function (m) {
+      m.pts.forEach(function (p) { if (p[1] < lo) lo = p[1]; if (p[1] > hi) hi = p[1]; });
+    });
+
+    var useLog = CH.log && lo > 0;
+    if (useLog) { lo /= 1.12; hi *= 1.12; }
+    else { var pad = (hi - lo) * 0.06 || hi * 0.02 || 1; lo -= pad; hi += pad;
+           if (lo < 0) lo = 0; }
+    var t = function (v) { return useLog ? Math.log10(Math.max(v, 1e-9)) : v; };
+    var ty0 = t(lo), ty1 = t(hi), tspan = (ty1 - ty0) || 1;
+    var X = function (ts) { return L + (W - L - R) * (ts - x0) / span; };
+    var Y = function (v) { return T + (H - T - B) * (1 - (t(v) - ty0) / tspan); };
+
+    var yticks = [], st = null;
+    if (useLog) {
+      var d1 = Math.floor(Math.log10(lo)), d2 = Math.ceil(Math.log10(hi));
+      for (var dd = d1; dd <= d2; dd++) {
+        [1, 2, 5].forEach(function (m) {
+          var v = m * Math.pow(10, dd);
+          if (v >= lo && v <= hi) yticks.push(v);
+        });
+      }
+      while (yticks.length > 7) {
+        yticks = yticks.filter(function (v, i) { return i % 2 === 0; });
+      }
+    } else {
+      st = niceStep((hi - lo) / 4);
+      for (var v0 = Math.ceil(lo / st) * st; v0 <= hi; v0 += st) yticks.push(v0);
+    }
+
+    var parts = [];
+    yticks.forEach(function (v) {
+      var y = Y(v).toFixed(1);
+      parts.push('<line class="bbgrid-l" x1="' + L + '" y1="' + y +
+                 '" x2="' + (W - R) + '" y2="' + y + '"/>');
+      parts.push('<text class="bbax" x="' + (L - 8) + '" y="' + (+y + 3.5) +
+                 '" text-anchor="end">' + axisPx(v, st) + '</text>');
+    });
+    for (var i = 0; i <= nx; i++) {
+      var ts = x0 + span * i / nx, x = X(ts).toFixed(1);
+      parts.push('<text class="bbax" x="' + x + '" y="' + (H - 8) +
+                 '" text-anchor="' +
+                 (i === 0 ? "start" : i === nx ? "end" : "middle") + '">' +
+                 axisDate(ts, span) + '</text>');
+    }
+
+    var line = win.map(function (p) {
+      return X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1);
+    }).join(" ");
+    parts.push('<polygon points="' + X(x0).toFixed(1) + "," + (H - B) + " " +
+               line + " " + X(x1).toFixed(1) + "," + (H - B) +
+               '" fill="__ACCENT__" opacity=".10"/>');
+    mas.forEach(function (m) {
+      parts.push('<polyline points="' + m.pts.map(function (p) {
+        return X(p[0]).toFixed(1) + "," + Y(p[1]).toFixed(1);
+      }).join(" ") + '" fill="none" stroke="' + m.col +
+        '" stroke-width="1.4" stroke-linejoin="round" opacity=".85"/>');
+    });
+    parts.push('<polyline points="' + line + '" fill="none" stroke="__ACCENT__" ' +
+               'stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round"/>');
+    parts.push('<g id="bbHover"></g>');
+
+    svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+    svg.innerHTML = parts.join("");
+    CH.draw = {win: win, mas: mas, X: X, Y: Y, x0: x0, x1: x1, span: span,
+               W: W, H: H, L: L, R: R, T: T, B: B};
+
+    if (note) {
+      note.textContent =
+        (r.src === "cb" ? "Live candles from Coinbase, refreshed with the rest of "
+                          + "the page."
+         : r.src === "daily" ? "Daily closes."
+         : "Weekly closes, back to July 2010.") +
+        (mas.length ? "  The averages are weekly, so on a short range they are "
+                      + "nearly flat \\u2014 which is what a 200-week average is."
+                    : "") +
+        (useLog ? "  Logarithmic axis." : "");
+    }
+  }
+
+  function onHover(ev) {
+    var d = CH.draw, g = $("bbHover"), read = $("bbRead"), svg = $("bbChart");
+    if (!d || !g || !read || !svg) return;
+    var box = svg.getBoundingClientRect();
+    var px = (ev.clientX - box.left) * (d.W / box.width);
+    if (px < d.L || px > d.W - d.R) { onLeave(); return; }
+    var ts = d.x0 + (px - d.L) / (d.W - d.L - d.R) * d.span;
+    var best = d.win[0], bd = Infinity;
+    for (var i = 0; i < d.win.length; i++) {
+      var dist = Math.abs(d.win[i][0] - ts);
+      if (dist < bd) { bd = dist; best = d.win[i]; }
+    }
+    var hx = d.X(best[0]), hy = d.Y(best[1]);
+    g.innerHTML = '<line class="bbcross" x1="' + hx.toFixed(1) + '" y1="' + d.T +
+      '" x2="' + hx.toFixed(1) + '" y2="' + (d.H - d.B) + '"/>' +
+      '<circle cx="' + hx.toFixed(1) + '" cy="' + hy.toFixed(1) +
+      '" r="3.4" fill="__ACCENT__" stroke="#0a111c" stroke-width="1.4"/>';
+    var html = '<i>' + esc2(fullDate(best[0], d.span)) + '</i><br><b>' +
+      usd(Math.round(best[1] * 100) / 100, best[1] < 10 ? 2 : 0) + '</b>';
+    d.mas.forEach(function (m) {
+      var v = sampleAt(m.pts, best[0]);
+      if (v == null) return;
+      html += '<br><span style="color:' + m.col + '">' + m.p + 'W</span> ' +
+              usd(Math.round(v), 0);
+    });
+    read.innerHTML = html;
+    read.style.display = "block";
+    var w = read.offsetWidth || 120;
+    var leftPx = (hx / d.W) * box.width + 14;
+    if (leftPx + w > box.width - 4) leftPx = (hx / d.W) * box.width - w - 14;
+    read.style.left = Math.max(2, leftPx) + "px";
+  }
+
+  function onLeave() {
+    var g = $("bbHover"), read = $("bbRead");
+    if (g) g.innerHTML = "";
+    if (read) read.style.display = "none";
+  }
+
+  function syncChartButtons() {
+    var rs = document.querySelectorAll("#bbRanges .bbb");
+    for (var i = 0; i < rs.length; i++) {
+      rs[i].classList.toggle("on", rs[i].getAttribute("data-r") === CH.range);
+    }
+    [50, 100, 200].forEach(function (p) {
+      var b = document.querySelector('.bbb[data-ma="' + p + '"]');
+      if (b) b.classList.toggle("on", !!CH.ma[p]);
+    });
+    var lg = $("bbLog");
+    if (lg) lg.classList.toggle("on", CH.log);
+  }
+
+  function setRange(k) {
+    CH.range = k;
+    // Log is chosen for you on the ranges where a linear axis is useless — a
+    // sixteen-year Bitcoin chart on a linear scale is a flat line with a spike
+    // on the end — and left alone once you have said what you want.
+    if (!CH.logPinned) CH.log = (k === "3Y" || k === "10Y" || k === "ALL");
+    syncChartButtons();
+    drawChart();
+  }
+
+  function wireChart() {
+    var rs = document.querySelectorAll("#bbRanges .bbb");
+    for (var i = 0; i < rs.length; i++) {
+      rs[i].addEventListener("click", function () {
+        setRange(this.getAttribute("data-r"));
+      });
+    }
+    [50, 100, 200].forEach(function (p) {
+      var b = document.querySelector('.bbb[data-ma="' + p + '"]');
+      if (!b) return;
+      b.addEventListener("click", function () {
+        CH.ma[p] = !CH.ma[p];
+        syncChartButtons();
+        drawChart();
+      });
+    });
+    var lg = $("bbLog");
+    if (lg) lg.addEventListener("click", function () {
+      CH.log = !CH.log; CH.logPinned = true;
+      syncChartButtons(); drawChart();
+    });
+    var svg = $("bbChart");
+    if (svg) {
+      svg.addEventListener("mousemove", onHover);
+      svg.addEventListener("mouseleave", onLeave);
+    }
+    var t;
+    window.addEventListener("resize", function () {
+      clearTimeout(t); t = setTimeout(drawChart, 140);
+    });
+    setRange(CH.range);
+  }
+
+  // The newest point in a baked series is "the close so far" for that day or
+  // week, so moving it to the live price is what those series MEAN — not a
+  // fabricated extra point. Anything older is history and is never touched.
+  function chartFollowLive() {
+    if (!S.price) return;
+    [S.daily, S.weekly].forEach(function (s) {
+      if (s && s.length) s[s.length - 1][1] = S.price;
+    });
+    maCache = {};
+    var r = RANGES[CH.range];
+    if (r && r.src === "cb") { CH.intraday[CH.range] = null; }
+    drawChart();
+  }
+
   tick();
   setInterval(tick, 1000);
   setInterval(fast, 60000);
   setInterval(slow, 300000);
   fast(); slow();
+  wireChart();
   document.addEventListener("visibilitychange", function () {
     if (!document.hidden) { fast(); slow(); }
   });
@@ -1773,27 +2201,59 @@ def build_bitcoin_board(stats, board):
     # ── cards ─────────────────────────────────────────────────────────────
     cards = []
 
-    cards.append(_bb_card("The market", [
-        _bb_row("Price", _usd(price), "mPrice"),
-        _bb_row("Market capitalisation", money_cap(cap) if cap else "—", "mCap"),
-        _bb_row("Satoshis to the dollar", _n(round(SATS / price)) if price else "—",
-                "mSatsD"),
-        _bb_row("All-time high", _usd(ath_usd), None,
-                blogkit.pretty_date(
-                    datetime.fromtimestamp(ath_ts, timezone.utc).date())
-                if ath_ts else None),
-        _bb_row("Down from that high",
-                "%.1f%%" % ((price - ath_usd) / ath_usd * 100)
-                if price and ath_usd else "—", "mAthDown"),
-        _bb_row("Days since that high",
-                _n((now - ath_ts) // 86400) + " days" if ath_ts else "—", "mAthDays"),
-        _bb_row("One bitcoin, priced in gold",
-                _n(price / gold_px, 1) + " oz" if price and gold_px else "—", "mGoldOz"),
-        _bb_row("Bitcoin against all the gold ever mined",
-                "%.2f%%" % (cap / gold_cap * 100) if cap and gold_cap else "—",
-                "mGoldPct"),
-    ], _bb_chart(stats.get("price_1y")) +
-        '<p class="bbasof">A year of price, drawn between its own high and low.</p>'))
+    stat_blocks = [
+        ("Price", None, _usd(price), "mPrice", "am"),
+        ("Market capitalisation", None, money_cap(cap) if cap else "—", "mCap", ""),
+        ("Satoshis to the dollar", None,
+         _n(round(SATS / price)) if price else "—", "mSatsD", ""),
+        ("All-time high",
+         blogkit.pretty_date(datetime.fromtimestamp(ath_ts, timezone.utc).date())
+         if ath_ts else None, _usd(ath_usd), None, ""),
+        ("Down from that high", None,
+         "%.1f%%" % ((price - ath_usd) / ath_usd * 100)
+         if price and ath_usd else "—", "mAthDown", ""),
+        ("Days since that high", None,
+         _n((now - ath_ts) // 86400) + " days" if ath_ts else "—", "mAthDays", ""),
+        ("One bitcoin, priced in gold", None,
+         _n(price / gold_px, 1) + " oz" if price and gold_px else "—", "mGoldOz", ""),
+        ("Against all the gold ever mined", None,
+         "%.2f%%" % (cap / gold_cap * 100) if cap and gold_cap else "—",
+         "mGoldPct", ""),
+    ]
+    stats_html = "".join(
+        '<div class="bbst"><div class="bbst-l">%s%s</div>'
+        '<div class="bbst-v%s"%s>%s</div></div>'
+        % (esc(label), '<span class="bbst-n"> · %s</span>' % esc(note) if note else "",
+           (" " + cls) if cls else "", ' id="%s"' % vid if vid else "", value)
+        for label, note, value, vid, cls in stat_blocks)
+
+    ranges = ["1H", "1D", "1W", "1M", "3M", "6M", "YTD", "1Y", "3Y", "10Y", "ALL"]
+    range_btns = "".join(
+        '<button type="button" class="bbb r%s" data-r="%s">%s</button>'
+        % (r, r, r) for r in ranges)
+    ma_btns = "".join(
+        '<button type="button" class="bbb m%d" data-ma="%d">%dW</button>' % (p, p, p)
+        for p in (50, 100, 200))
+
+    cards.append(
+        '  <section class="bbc bbwide">\n'
+        '    <h2>The market</h2>\n'
+        '    <div class="bbctl">\n'
+        '      <div class="bbbtns" id="bbRanges">' + range_btns + '</div>\n'
+        '      <div class="bbbtns">' + ma_btns +
+        '<button type="button" class="bbb lg" id="bbLog" '
+        'title="Logarithmic price axis — the only way a sixteen-year Bitcoin '
+        'chart shows anything before 2017">LOG</button></div>\n'
+        '    </div>\n'
+        '    <div class="bbchartwrap" id="bbChartWrap">\n'
+        '      <svg id="bbChart" role="img" aria-label="Bitcoin price over the '
+        'selected period, with optional 50, 100 and 200 week moving averages">'
+        '</svg>\n'
+        '      <div class="bbread" id="bbRead"></div>\n'
+        '    </div>\n'
+        '    <p class="bbnote" id="bbChartNote"></p>\n'
+        '    <div class="bbstats">' + stats_html + '</div>\n'
+        '  </section>')
 
     cards.append(_bb_card("The supply", [
         _bb_row("Issued so far", _n(supply) + " BTC", "sIssued"),
@@ -1953,19 +2413,28 @@ def build_bitcoin_board(stats, board):
       <li><b>Polled, and live.</b> Price, block height, the mempool and the fee
       estimates are refreshed from <a href="https://mempool.space/">mempool.space</a>
       every minute while this page is open; difficulty and hash rate every five,
-      because they cannot move faster than that. If those requests fail the page
-      keeps the last good reading and says so beside the dot at the top.</li>
-      <li><b>Snapshots, taken through the day.</b> The all-time high, both charts, the
-      chain's size and its all-time totals. Lightning is the exception worth
-      knowing about: its upstream statistics are rebuilt on someone else's
-      schedule, so that panel carries its own date.</li>
+      because they cannot move faster than that. The chart's hour, day and week
+      views are candles from <a href="https://www.coinbase.com/">Coinbase</a>,
+      fetched only if you ask for them — baking minute resolution into this page
+      would mean serving you a snapshot of an hour that ended before you
+      arrived. If any of it fails the page keeps the last good reading and says
+      so beside the dot at the top.</li>
+      <li><b>Snapshots, taken through the day.</b> The all-time high, the chain's
+      size and its all-time totals, the year of hash rate, and the price history
+      behind the chart — weekly closes back to July 2010, daily for the last two
+      years. The moving averages are worked out from those weekly closes in your
+      own browser, which is why they are exactly 50, 100 and 200 weeks rather
+      than an approximation of them. Lightning is the exception worth knowing
+      about: its upstream statistics are rebuilt on someone else's schedule, so
+      that panel carries its own date.</li>
     </ul>
     <p>The clocks — time since the last block, and the two countdowns — tick
     without asking anything, because they are arithmetic on a timestamp. The
     halving countdown assumes Bitcoin's ten-minute target, so it is an estimate
     that jumps a little each time a block actually lands.</p>
-    <p>Sources: <a href="https://mempool.space/">mempool.space</a> and
-    <a href="https://blockchair.com/">Blockchair</a>, both public and neither
+    <p>Sources: <a href="https://mempool.space/">mempool.space</a>,
+    <a href="https://blockchair.com/">Blockchair</a> and
+    <a href="https://www.coinbase.com/">Coinbase</a> — all public, none of them
     requiring an account. Nothing here is investment advice, and nothing here is
     for sale.</p>
   </div>
@@ -1976,6 +2445,11 @@ def build_bitcoin_board(stats, board):
         "tipTs": tip.get("timestamp"),
         "price": price,
         "maxSupply": BTC_TRUE_MAX,
+        # The chart's own data. It rides in the page rather than being fetched,
+        # because it is the same JSON this page was built from — fetching it
+        # again at view time would download a second copy of what is already here.
+        "weekly": stats.get("price_weekly") or [],
+        "daily": stats.get("price_daily") or [],
         "halvingBlock": halving_block,
         "athUsd": ath_usd,
         "athTs": ath_ts,

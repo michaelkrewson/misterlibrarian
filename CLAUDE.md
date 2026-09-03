@@ -466,7 +466,20 @@ not with the Bible project (the relationship rule above).
 | Page | What it counts | Data |
 |------|----------------|------|
 | **The Asset Board** (`board.html`) | The world's largest assets by market cap — gold, silver, the mega-caps, Bitcoin | `tools/fetch_asset_board.py` (yfinance) → `source/finance/asset_board.json` |
-| **The Bitcoin Board** (`bitcoin.html`) | The Bitcoin network's own numbers — supply, difficulty, mempool, fees, halvings, Lightning | `tools/fetch_bitcoin_stats.py` (**stdlib only**) → `source/finance/bitcoin_stats.json` |
+| **The Bitcoin Board** (`bitcoin.html`) | The Bitcoin network's own numbers — price, supply, difficulty, mempool, fees, halvings, Lightning | `tools/fetch_bitcoin_stats.py` (**stdlib only**) → `source/finance/bitcoin_stats.json` |
+
+**The price chart** (full-width market card) draws from three places, picked by range:
+`price_weekly` (all history back to July 2010, ~845 points) for 3Y/10Y/ALL **and for
+every moving average**; `price_daily` (two years) for 1M–1Y; and live Coinbase candles,
+fetched only on demand, for 1H/1D/1W. Minute resolution is deliberately never baked — it
+would be stale before the commit landed. The 50/100/200-**week** averages are a rolling
+mean over the weekly series computed in the browser, so there is exactly one
+implementation. ⚠️ Two things that were wrong on the first cut and should stay fixed: a
+moving average must **not** be interpolated backwards past its own first point (that draws
+a 200-week average over weeks 1–199, a line with nothing behind it — extending it
+*forward* to the present is fine), and axis labels take the tick **step**, not just the
+value, or a one-hour view prints "$81k" four times. The log toggle auto-arms on 3Y/10Y/ALL
+because a sixteen-year linear Bitcoin chart is a flat line with a spike on the end.
 
 `board.html` keeps its URL — only its display name changed, so nothing indexed broke. Its
 `<title>` still carries "the biggest assets in the world", which is the phrase people search
