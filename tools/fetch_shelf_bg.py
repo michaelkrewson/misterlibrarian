@@ -65,9 +65,18 @@ def _verse_spans(seg, abbr, chapter):
     # BG writes most verse spans as <span id="en-NIV-5293" class="text Deut-14-2">,
     # so the class cannot be assumed to be the first attribute -- requiring that
     # matched 3 of this chapter's 29 verses and silently dropped the rest.
-    opener = re.compile(r'<span[^>]*class="text %s-%d-(\d+)"' % (re.escape(abbr), chapter))
+    # A version that MERGES verses (The Living Bible does it constantly) is tagged
+    # with a RANGE class -- <span class="text Deut-15-4-Deut-15-5"> -- so a pattern
+    # ending at (\d+)" matches neither number and the whole block vanishes. That
+    # cost a real MISS on Deuteronomy 15:4, where the phrase was on the fetched page
+    # and absent from the parsed index of it. The merged text is stored under EVERY
+    # verse in the run, which is what the version itself claims: it prints one block
+    # for both and does not say which half is which.
+    opener = re.compile(r'<span[^>]*class="text %s-%d-(\d+)(?:-%s-%d-(\d+))?"'
+                        % (re.escape(abbr), chapter, re.escape(abbr), chapter))
     for mm in opener.finditer(seg):
         v = mm.group(1)
+        span_to = int(mm.group(2)) if mm.group(2) else None
         start = seg.find(">", mm.end()) + 1
         depth, i = 1, start
         while i < len(seg) and depth > 0:
@@ -81,7 +90,12 @@ def _verse_spans(seg, abbr, chapter):
             else:
                 depth -= 1
                 i = nxt_close + 6
-        verses.setdefault(v, []).append(seg[start:max(start, i - 6)])
+        chunk = seg[start:max(start, i - 6)]
+        if span_to is None:
+            verses.setdefault(v, []).append(chunk)
+        else:
+            for n in range(int(v), span_to + 1):
+                verses.setdefault(str(n), []).append(chunk)
     return verses
 
 
