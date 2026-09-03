@@ -457,11 +457,56 @@ another.
 ## The finance board (`/finance/`)
 
 Standard-library-only build (`build_finance.py`), deliberately no network dependency in the
-build itself — a separate fetcher (`tools/fetch_asset_board.py`) writes the data snapshot;
-the builder only reads it. Newer addition than the other two publications and not yet
-deeply documented here beyond the relationship rule above (links with `/travel/`, not with
-the Bible project) — check the builder's own docstring and `tools/fetch_asset_board.py`
-before assuming its conventions match the other two sites.
+build itself — separate fetchers write the data snapshots; the builder only reads them. So a
+provider having a bad night can never fail a build or blank a page. Links with `/travel/`,
+not with the Bible project (the relationship rule above).
+
+**Two standing boards, renamed 2026-09-03 so they can be told apart:**
+
+| Page | What it counts | Data |
+|------|----------------|------|
+| **The Asset Board** (`board.html`) | The world's largest assets by market cap — gold, silver, the mega-caps, Bitcoin | `tools/fetch_asset_board.py` (yfinance) → `source/finance/asset_board.json` |
+| **The Bitcoin Board** (`bitcoin.html`) | The Bitcoin network's own numbers — supply, difficulty, mempool, fees, halvings, Lightning | `tools/fetch_bitcoin_stats.py` (**stdlib only**) → `source/finance/bitcoin_stats.json` |
+
+`board.html` keeps its URL — only its display name changed, so nothing indexed broke. Its
+`<title>` still carries "the biggest assets in the world", which is the phrase people search
+for; the H1 carries the house name.
+
+**The Bitcoin Board mixes three kinds of number and says so on its own face.** This is the
+thing to preserve if it is ever extended — a dashboard that sets an hourly snapshot, a live
+poll and a deterministic clock in identical type is quietly lying about two of them:
+
+1. **Computed, exact.** Supply, halvings, milestones — the consensus subsidy schedule summed
+   in whole satoshis from the live height. Not an estimate, and it recomputes *in the browser*
+   as blocks land, so it stays exact between builds.
+2. **Polled, live.** Price, height, mempool, fees (60s) and difficulty, hash rate (5min),
+   fetched from mempool.space by the page itself. Skipped while the tab is hidden. On failure
+   it keeps the last good reading and says so beside the dot in the header.
+3. **Snapshot, hourly.** Charts, the all-time high, chain size and totals. Lightning is the
+   exception worth remembering: its upstream statistics are rebuilt on mempool's own schedule
+   and have been observed days behind, so that panel prints its own date.
+
+⚠️ **The same subsidy arithmetic now exists three times** — `tools/fetch_asset_board.py`,
+`tools/fetch_bitcoin_stats.py` and the page's own JavaScript. That is deliberate (importing
+across would drag yfinance into a script whose whole point is needing nothing installed, and
+the browser obviously cannot import Python) and it is guarded:
+`python3 tools/fetch_bitcoin_stats.py --selftest` checks the Python copy against the halving
+boundaries, which are fixed facts rather than anything we decide. **If you touch any of the
+three, run that and re-check the others.** The JavaScript copy uses
+`Math.floor(5e9 / 2**e)` rather than a shift on purpose: `>>` is 32-bit in JavaScript and
+would silently wrap 5,000,000,000.
+
+**Deliberately absent, and it should stay that way:** UTXO set size, chain work, output-type
+breakdowns, coinjoin activity, corporate treasury holdings. Those need a full node with an
+address index or a hand-kept list. The page says why rather than filling the space with a
+number nobody can check.
+
+Both boards refresh from one hourly GitHub Action
+(`.github/workflows/refresh-asset-board.yml` — the file name is unchanged on purpose, since
+GitHub keys a workflow's schedule and history to its path). Sub-hourly was considered and
+rejected: GitHub delays or skips sub-hourly crons under load, and it would cost 144 commits
+and 144 Pages deploys a day to refresh a page that already refreshes itself in the reader's
+browser.
 
 ## Source archive
 

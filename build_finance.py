@@ -91,11 +91,19 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "source", "finance", "asset_board.json")
+BTC_SRC = os.path.join(ROOT, "source", "finance", "bitcoin_stats.json")
 OUT = os.path.join(ROOT, "finance")
 ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 
-ACCENT = "#5eb3d6"   # steel cyan — deliberately NOT green or red, which the table
-                     # uses semantically for up and down.
+# Bitcoin amber (2026-09-03, Michael's call — was steel cyan #5eb3d6). Still
+# deliberately NOT green or red: the table uses those semantically for up and down,
+# and an accent that collides with them makes a rising row unreadable.
+#
+# ⚠️ The one thing to preserve if this ever changes again: this publication and
+# The Librarian Abroad share a nav, and the sibling link renders in that blog's own
+# accent (#e8865c, a soft terracotta). Amber and terracotta are far enough apart to
+# stay legible side by side — a softer orange here would not be.
+ACCENT = "#f7931a"
 
 # Monogram colours for anything with no cached logo. Picked by name hash so a given
 # company always gets the same one.
@@ -365,7 +373,10 @@ def _btc_halving_staircase_svg(stats):
         is_current = era == stats["epoch"]
         reward_s = "{:g}".format(reward)
         fill_op = "0.95" if is_current else "0.85"
-        stroke = ' stroke="#5eb3d6" stroke-width="2.5"' if is_current else ""
+        # Cream, not the site accent: the bars are already bitcoin-orange, so
+        # since the accent went amber (2026-09-03) an accent-coloured marker
+        # would be invisible against the very bar it is meant to single out.
+        stroke = ' stroke="#e8dfd2" stroke-width="2.5"' if is_current else ""
         bars.append(
             '<rect x="%.1f" y="%.2f" width="70" height="%.2f" rx="3" '
             'fill="#f7931a" opacity="%s"%s/>' % (x, y, h, fill_op, stroke))
@@ -387,11 +398,11 @@ def _btc_halving_staircase_svg(stats):
             'fill="#6e7d92">%s</text>' % (x + 35, label))
         if is_current:
             bars.append(
-                '<line x1="%.1f" y1="285" x2="%.1f" y2="%.2f" stroke="#5eb3d6" '
+                '<line x1="%.1f" y1="285" x2="%.1f" y2="%.2f" stroke="#e8dfd2" '
                 'stroke-width="1.6"/>'
                 '<text x="%.1f" y="255" text-anchor="middle" '
                 'font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5" '
-                'font-weight="bold" letter-spacing="0.08em" fill="#5eb3d6">WE ARE '
+                'font-weight="bold" letter-spacing="0.08em" fill="#e8dfd2">WE ARE '
                 'HERE</text>'
                 '<text x="%.1f" y="273" text-anchor="middle" font-family="Georgia, serif" '
                 'font-size="13.5" fill="#e8dfd2">%s BTC / block</text>'
@@ -535,12 +546,13 @@ def _nav(active=""):
         return ' class="on"' if k == active else ""
     return ('<nav class="nav">'
             '<a href="index.html"%s>Writing</a>'
-            '<a href="board.html"%s>The Board</a>'
+            '<a href="board.html"%s>Asset Board</a>'
+            '<a href="bitcoin.html"%s>Bitcoin Board</a>'
             '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
             '<a class="sib" href="%s" title="%s">%s →</a>'
-            '</nav>' % (cls("home"), cls("board"), cls("ask"), SIBLING_URL,
-                        esc(SIBLING_BLURB), esc(SIBLING_NAME)))
+            '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("ask"),
+                        SIBLING_URL, esc(SIBLING_BLURB), esc(SIBLING_NAME)))
 
 
 def _chrome(active=""):
@@ -552,7 +564,8 @@ def _chrome(active=""):
 
 
 def _foot():
-    return ('<footer>%s · <a href="board.html">The Board</a> · '
+    return ('<footer>%s · <a href="board.html">The Asset Board</a> · '
+            '<a href="bitcoin.html">The Bitcoin Board</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
             'nothing here is investment advice</footer>'
@@ -665,7 +678,12 @@ def _entry_card(e):
                           esc(e["title"]), esc(e["summary"])))
 
 
-def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website"):
+def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website",
+           extra_css="", extra_js=""):
+    """`extra_css`/`extra_js` exist so one page's chrome does not become every
+    page's weight. Every page inlines its whole stylesheet (no external CSS file
+    to fetch), so a Bitcoin-board-only grid appended to the shared CSS would ride
+    along on all thirty pages that never use a line of it."""
     robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
     return """<!doctype html>
 <html lang="en">
@@ -690,11 +708,12 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 %(body)s
   %(foot)s
 </div>
-</body>
+%(js)s</body>
 </html>
 """ % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
        "site": esc(SITE_NAME), "ogt": og_type,
-       "css": CSS.replace("__ACCENT__", ACCENT),
+       "css": (CSS + extra_css).replace("__ACCENT__", ACCENT),
+       "js": ("<script>\n%s\n</script>\n" % extra_js) if extra_js else "",
        "chrome": _chrome(active), "body": body, "foot": _foot()}
 
 
@@ -797,7 +816,7 @@ def build_thanks():
                   url="%sthanks.html" % BASE_URL, body=body, noindex=True)
 
 
-def build_front(entries, board):
+def build_front(entries, board, stats=None):
     """The publication's front page: what has been written, newest first.
 
     The board used to live here and has moved to its own page. It is a standing
@@ -812,9 +831,22 @@ def build_front(entries, board):
         board_line += " — Bitcoin currently sits at #%d" % btc
     board_card = """    <a class="ecard board-card" href="board.html">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">The Biggest Assets in the World</span>
+      <span class="ec-t">The Asset Board</span>
       <span class="ec-s">%s.</span>
     </a>""" % esc(board_line)
+
+    # The Bitcoin board's card only appears once there is a board to link to. A
+    # card promising a live page, pointing at a file the build never wrote
+    # because the network was down, is worse than no card.
+    if stats and stats.get("tip", {}).get("height"):
+        btc_line = ("Block height, supply, difficulty, the mempool and the next "
+                    "halving — the network's own numbers, live while you watch")
+        board_card += """
+    <a class="ecard board-card" href="bitcoin.html">
+      <span class="ec-d">STANDING PAGE · LIVE</span>
+      <span class="ec-t">The Bitcoin Board</span>
+      <span class="ec-s">%s.</span>
+    </a>""" % esc(btc_line)
 
     cards = "\n".join(_entry_card(e) for e in entries)
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
@@ -924,6 +956,10 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
   background:#0a111c}
 .panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
 .panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
 .panel p:last-child{margin-bottom:0}
 .panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
@@ -1140,7 +1176,7 @@ def build_board(board):
             "the biggest public companies and Bitcoin"
             + (", where Bitcoin currently ranks #%d" % btc_rank if btc_rank else "") + ".")
 
-    body = """  <h1 class="btitle">The Biggest Assets in the World</h1>
+    body = """  <h1 class="btitle">The Asset Board</h1>
   <p class="lede">%(blurb)s</p>
   <p class="stamp">Updated %(gen)s%(btc)s</p>
 %(table)s
@@ -1152,8 +1188,776 @@ def build_board(board):
                                                         "btch": ("{:,}".format(btc_h)
                                                                  if btc_h else "the current block")}}
 
-    return _shell(title="The Biggest Assets in the World — %s" % SITE_NAME,
+    # The <title> keeps the descriptive phrase the H1 used to carry. "The Asset
+    # Board" is what it is CALLED (and now has a sibling it must be told apart
+    # from); "the biggest assets in the world" is what anyone actually searches
+    # for, and dropping it from the title to match the shorter H1 would trade a
+    # real search term for a house name nobody is looking up yet.
+    return _shell(title="The Asset Board — the biggest assets in the world",
                   desc=desc, url="%sboard.html" % BASE_URL, active="board", body=body)
+
+
+# ───────────────────────────────────────────────────────── the Bitcoin board ──
+#
+# A standing page for the network's own numbers, the way board.html is a standing
+# page for the world's assets. Rendered from source/finance/bitcoin_stats.json
+# (tools/fetch_bitcoin_stats.py) plus asset_board.json for the gold comparison.
+#
+# THREE KINDS OF NUMBER LIVE ON THIS PAGE AND THEY ARE NOT THE SAME KIND OF TRUE.
+# The page says which is which, in its own methods panel, because a dashboard that
+# presents an hourly snapshot, a live poll and a deterministic clock in identical
+# type is quietly lying about two of them:
+#   1. COMPUTED — supply, halvings, milestones. Bitcoin's issuance is a public rule;
+#      these are arithmetic on the live block height and are exact.
+#   2. POLLED   — price, height, mempool, fees, difficulty, hash rate. Baked at
+#      build time and then refreshed in the reader's browser (see BB_JS).
+#   3. SNAPSHOT — chain size, all-time totals, Lightning. Hourly at best, and
+#      Lightning's own upstream snapshot can be days old, so it carries its date.
+
+SATS = 100_000_000
+TYPICAL_TX_VBYTES = 141    # 1 input, 2 outputs, native segwit — the ordinary case
+
+
+def _n(v, dp=0):
+    """Comma-grouped, or an em dash when the source did not answer. Never 0:
+    a zero that means "we don't know" is the most expensive kind of wrong on a
+    page like this."""
+    return "—" if v is None else f"{v:,.{dp}f}"
+
+
+def _usd(v, dp=0):
+    return "—" if v is None else f"${v:,.{dp}f}"
+
+
+def _hashrate_fmt(v):
+    """907647359369144800000 -> '907.6 EH/s'."""
+    if not v:
+        return "—"
+    for unit, size in (("ZH/s", 1e21), ("EH/s", 1e18), ("PH/s", 1e15), ("TH/s", 1e12)):
+        if v >= size:
+            return f"{v / size:,.1f} {unit}"
+    return f"{v:,.0f} H/s"
+
+
+def _bytes_fmt(v):
+    if not v:
+        return "—"
+    for unit, size in (("TB", 1e12), ("GB", 1e9), ("MB", 1e6)):
+        if v >= size:
+            return f"{v / size:,.1f} {unit}"
+    return f"{v:,.0f} B"
+
+
+def _clock(seconds):
+    """'588d 04:11:22'. The pre-JavaScript paint of every countdown on the page,
+    so the numbers are right for a reader with scripting off — they simply do
+    not tick."""
+    if seconds is None or seconds < 0:
+        return "—"
+    d, rem = divmod(int(seconds), 86400)
+    h, rem = divmod(rem, 3600)
+    m, s = divmod(rem, 60)
+    return ("%sd " % f"{d:,}" if d else "") + "%02d:%02d:%02d" % (h, m, s)
+
+
+def _ago(seconds):
+    if seconds is None or seconds < 0:
+        return "—"
+    seconds = int(seconds)
+    if seconds < 60:
+        return "%ds ago" % seconds
+    if seconds < 3600:
+        return "%dm %ds ago" % (seconds // 60, seconds % 60)
+    return "%dh %dm ago" % (seconds // 3600, seconds % 3600 // 60)
+
+
+def _btc_height_at_supply(target_btc):
+    """The first block at which cumulative issuance reaches `target_btc`.
+
+    The inverse of the subsidy sum, and the only way to date a supply
+    milestone: "when was 95% of all bitcoin issued" is a question about a block
+    height, which _btc_era_date() can then turn into a date.
+    """
+    target = int(round(target_btc * SATS))
+    total = 0
+    for epoch in range(64):
+        subsidy = (50 * SATS) >> epoch
+        if subsidy == 0:
+            return None
+        lo = max(1, epoch * BTC_HALVING_INTERVAL)
+        hi = epoch * BTC_HALVING_INTERVAL + BTC_HALVING_INTERVAL - 1
+        blocks = hi - lo + 1
+        if total + blocks * subsidy >= target:
+            return lo + -(-(target - total) // subsidy) - 1
+        total += blocks * subsidy
+    return None
+
+
+def _bb_milestone(fraction):
+    """'≈March 12, 2035' — the ≈ is load-bearing. Every date past the last real
+    halving is extrapolated at Bitcoin's 10-minute target, and real blocks do
+    not keep to it."""
+    h = _btc_height_at_supply(BTC_TRUE_MAX * fraction)
+    if h is None:
+        return "—"
+    d, exact = _btc_era_date(h)
+    return ("" if exact else "≈") + blogkit.pretty_date(d)
+
+
+def _bb_chart(points, w=320, h=62, cls="bbchart"):
+    """A wide area chart from [[timestamp, value], …], scaled to its own range.
+
+    Same honesty caveat as the board's sparklines: this is a SHAPE, not a scale.
+    It carries no axis because it is drawn between its own high and low, so two
+    of these cannot be compared against each other.
+    """
+    vals = [p[1] for p in (points or [])
+            if isinstance(p, list) and len(p) == 2 and isinstance(p[1], (int, float))]
+    if len(vals) < 3:
+        return ""
+    lo, hi = min(vals), max(vals)
+    span = (hi - lo) or 1.0
+    step = w / (len(vals) - 1)
+    pts = " ".join("%.1f,%.1f" % (i * step, h - 4 - (v - lo) / span * (h - 8))
+                   for i, v in enumerate(vals))
+    # ACCENT, not the __ACCENT__ sentinel: _shell only substitutes that inside the
+    # stylesheet, so a placeholder left in the body reaches the browser as a colour
+    # it cannot parse and the chart paints itself black. (Which it did, once.)
+    return ('<svg class="%s" viewBox="0 0 %d %d" preserveAspectRatio="none" '
+            'aria-hidden="true" focusable="false">'
+            '<polygon points="0,%d %s %d,%d" fill="%s" opacity=".14"/>'
+            '<polyline points="%s" fill="none" stroke="%s" stroke-width="1.7" '
+            'stroke-linejoin="round" stroke-linecap="round" '
+            'vector-effect="non-scaling-stroke"/></svg>'
+            % (cls, w, h, h, pts, w, h, ACCENT, pts, ACCENT))
+
+
+def _bb_row(label, value, vid=None, note=None, cls=""):
+    """One label/value line. `vid` is the id the live layer writes into — a row
+    without one is a number that genuinely cannot change between builds."""
+    return ('<div class="bbrow"><span class="bbk">%s%s</span>'
+            '<span class="bbv%s"%s>%s</span></div>'
+            % (esc(label),
+               '<span class="bbn">%s</span>' % esc(note) if note else "",
+               (" " + cls) if cls else "",
+               ' id="%s"' % vid if vid else "", value))
+
+
+def _bb_card(title, rows, extra=""):
+    return ('  <section class="bbc">\n    <h2>%s</h2>\n%s%s\n  </section>'
+            % (esc(title), "\n".join("    " + r for r in rows if r), extra))
+
+
+BB_CSS = """
+/* ── The Bitcoin Board ────────────────────────────────────────────────────────
+   Appended to that one page only (see _shell's extra_css), because every page
+   here inlines its whole stylesheet and thirty pages should not carry a grid
+   none of them draws. Namespaced .bb* so it can never reach the asset table. */
+.bblede{margin:10px 0 0;color:#b9c6d8;font-size:16.5px;max-width:780px}
+.bbstamp{margin:15px 0 0;color:#7f8fa6;font-size:13.5px;display:flex;
+  align-items:center;gap:9px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbdot{width:8px;height:8px;border-radius:50%;background:#4ade80;flex:0 0 8px;
+  animation:bbpulse 2.6s ease-out infinite}
+.bbdot.off{background:#6e7d92;animation:none}
+@keyframes bbpulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}
+  70%{box-shadow:0 0 0 7px rgba(74,222,128,0)}
+  100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.bbsep{color:#3f4c5f}
+
+.bbhero{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0 0}
+.bbh{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
+.bbh-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbh-v{margin-top:8px;font-size:28px;line-height:1.1;color:#e8eef7;
+  letter-spacing:-.01em;font-variant-numeric:tabular-nums;white-space:nowrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbh-v.am{color:__ACCENT__}
+.bbh-s{margin-top:8px;font-size:13px;color:#93a4bd;line-height:1.45}
+
+.bbgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(298px,1fr));
+  gap:16px;margin:16px 0 0;align-items:start}
+.bbc{border:1px solid #1b2534;border-radius:13px;background:#0a111c;padding:16px 19px}
+.bbc h2{margin:0 0 8px;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:500;color:__ACCENT__;border:0;padding:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbrow{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:8px 0;border-bottom:1px solid #131b27}
+.bbrow:last-child{border-bottom:0}
+.bbk{color:#93a4bd;font-size:14.5px;line-height:1.35}
+.bbn{display:block;color:#5a6b80;font-size:12px;font-style:italic}
+.bbv{color:#e8eef7;font-size:15px;font-weight:600;white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbv.am{color:__ACCENT__}.bbv.up{color:#4ade80}.bbv.down{color:#f87171}
+/* The flash is the whole "it is alive" signal, so it is deliberately a
+   background wash and not a colour change: recolouring the digits makes a
+   number that merely refreshed look like a number that moved. */
+.bbflash{animation:bbflash 1.4s ease-out}
+@keyframes bbflash{0%{background:rgba(247,147,26,.30)}100%{background:transparent}}
+
+.bbbar{margin:13px 0 5px;height:9px;border-radius:999px;background:#151f2c;
+  overflow:hidden}
+.bbbar i{display:block;height:100%;border-radius:999px;background:__ACCENT__;
+  transition:width .6s ease}
+.bbbarl{display:flex;justify-content:space-between;gap:12px;color:#6e7d92;
+  font-size:12px;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.bbchart{margin:12px 0 2px;display:block;width:100%;height:62px}
+.bbchips{display:flex;flex-wrap:wrap;gap:7px;margin:11px 0 2px}
+.bbchip{font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:12px;
+  color:#8b9ab0;border:1px solid #1e2938;border-radius:999px;padding:5px 11px;
+  background:#0d1521}
+.bbchip b{color:#e8eef7;font-variant-numeric:tabular-nums;font-weight:600}
+.bbmore{margin:12px 0 0;font-size:13.5px}
+.bbasof{margin:11px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;
+  line-height:1.5}
+
+@media (max-width:900px){.bbhero{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){
+  .bbhero{grid-template-columns:1fr}
+  .bbh-v{font-size:26px}
+  .bbgrid{grid-template-columns:1fr}
+}
+"""
+
+
+BB_JS = """
+// The Bitcoin Board's live layer.
+//
+// The page ships complete: every number below is already rendered server-side
+// from the hourly snapshot, and this only ever OVERWRITES a value with a fresher
+// one. So a reader with JavaScript off, or a mempool.space that is down, gets a
+// correct page with an honest "as of" stamp rather than a grid of dashes.
+//
+// Two clocks, deliberately:
+//   fast (60s)  price, chain tip, mempool, fee estimates — things that move
+//   slow (5min) difficulty and hash rate — things that cannot move faster
+// Both are skipped while the tab is hidden, which is both polite to a free
+// public API and pointless to do otherwise.
+(function () {
+  "use strict";
+  var API = "https://mempool.space/api";
+  var S = __SEED__;
+  var fails = 0, lastOk = Date.now();
+
+  function $(id) { return document.getElementById(id); }
+
+  function set(id, txt, flash) {
+    var el = $(id);
+    if (!el || txt == null || el.textContent === txt) return;
+    el.textContent = txt;
+    if (flash) {
+      el.classList.remove("bbflash");
+      void el.offsetWidth;               // restart the animation, not queue it
+      el.classList.add("bbflash");
+    }
+  }
+
+  function n(v, dp) {
+    if (v == null || !isFinite(v)) return "\\u2014";
+    dp = dp || 0;
+    return v.toLocaleString("en-US",
+      { minimumFractionDigits: dp, maximumFractionDigits: dp });
+  }
+  function usd(v, dp) { return v == null ? "\\u2014" : "$" + n(v, dp); }
+
+  function clock(sec) {
+    if (sec == null || sec < 0) return "\\u2014";
+    sec = Math.floor(sec);
+    var d = Math.floor(sec / 86400), h = Math.floor((sec % 86400) / 3600),
+        m = Math.floor((sec % 3600) / 60), s = sec % 60;
+    var p = function (x) { return (x < 10 ? "0" : "") + x; };
+    return (d ? n(d) + "d " : "") + p(h) + ":" + p(m) + ":" + p(s);
+  }
+
+  function ago(sec) {
+    if (sec == null || sec < 0) return "\\u2014";
+    sec = Math.floor(sec);
+    if (sec < 60) return sec + "s ago";
+    if (sec < 3600) return Math.floor(sec / 60) + "m " + (sec % 60) + "s ago";
+    return Math.floor(sec / 3600) + "h " + Math.floor((sec % 3600) / 60) + "m ago";
+  }
+
+  // Bitcoin Core's consensus subsidy rule, summed in whole satoshis — the same
+  // arithmetic tools/fetch_bitcoin_stats.py runs server-side, so the supply on
+  // screen stays exact between builds instead of freezing at the last one.
+  // Note Math.floor(50e8 / 2^e) rather than a shift: 5,000,000,000 overflows
+  // JavaScript's 32-bit bitwise operators, and >> would silently wrap it.
+  // The total (~2.1e15) is comfortably inside the 2^53 a Number holds exactly.
+  function supplyBtc(height) {
+    var total = 0;
+    for (var e = 0; e < 34; e++) {
+      var subsidy = Math.floor(5000000000 / Math.pow(2, e));
+      if (subsidy <= 0) break;
+      var lo = Math.max(1, e * 210000);
+      var hi = Math.min(height, e * 210000 + 209999);
+      if (hi >= lo) total += (hi - lo + 1) * subsidy;
+    }
+    return total / 1e8;
+  }
+
+  function render() {
+    var price = S.price, h = S.height;
+    var supply = supplyBtc(h);
+    var cap = price ? supply * price : null;
+    var epoch = Math.floor(h / 210000);
+    var subsidy = 50 / Math.pow(2, epoch);
+
+    set("bbPrice", usd(price), true);
+    set("bbBlock", n(h), true);
+    set("bbIssued", n(supply));
+    set("bbIssuedPct", (supply / S.maxSupply * 100).toFixed(2) + "%");
+    if (price) set("bbSats", n(Math.round(1e8 / price)) + " satoshis to the dollar");
+
+    set("mPrice", usd(price), true);
+    set("mCap", cap ? "$" + n(cap / 1e12, 3) + " T" : "\\u2014", true);
+    set("mSatsD", price ? n(Math.round(1e8 / price)) : "\\u2014");
+    if (price && S.athUsd) {
+      set("mAthDown", ((price - S.athUsd) / S.athUsd * 100).toFixed(1) + "%");
+      set("mAthDays", n(Math.floor((Date.now() / 1000 - S.athTs) / 86400)) + " days");
+    }
+    if (price && S.goldPx) set("mGoldOz", n(price / S.goldPx, 1) + " oz");
+    if (cap && S.goldCap) set("mGoldPct", (cap / S.goldCap * 100).toFixed(2) + "%");
+
+    set("sIssued", n(supply) + " BTC");
+    set("sPct", (supply / S.maxSupply * 100).toFixed(2) + "%");
+    set("sLeft", n(S.maxSupply - supply) + " BTC");
+    var bar = $("sBar");
+    if (bar) bar.style.width = (supply / S.maxSupply * 100).toFixed(2) + "%";
+    set("hEpoch", "no. " + (epoch + 1));
+    set("hSubsidy", n(subsidy, 3) + " BTC");
+    set("hBlocks", n(S.halvingBlock - h) + " blocks");
+    set("sPerDay", n(subsidy * 144, 1) + " BTC");
+
+    if (S.hashrate) set("dHash", S.hashrate);
+    if (S.difficulty) set("dDiff", n(S.difficulty / 1e12, 1) + " T");
+    if (S.retarget) {
+      var r = S.retarget;
+      var prog = $("dProg");
+      if (prog && r.progressPercent != null) {
+        prog.style.width = r.progressPercent.toFixed(1) + "%";
+      }
+      if (r.progressPercent != null) {
+        set("dProgTxt", r.progressPercent.toFixed(1) + "% through this epoch");
+      }
+      if (r.remainingBlocks != null) set("dLeft", n(r.remainingBlocks) + " blocks");
+      if (r.difficultyChange != null) {
+        set("dChange", (r.difficultyChange >= 0 ? "+" : "") +
+            r.difficultyChange.toFixed(2) + "%");
+      }
+      if (r.timeAvg) set("dBlockTime", (r.timeAvg / 60000).toFixed(1) + " min");
+    }
+
+    if (S.mempool) {
+      set("pCount", n(S.mempool.count), true);
+      set("pVsize", n(S.mempool.vsize / 1e6, 1) + " MvB");
+      set("pBlocks", n(Math.ceil(S.mempool.vsize / 1e6)) + " blocks");
+      if (price && S.mempool.total_fee != null) {
+        set("pFees", usd(S.mempool.total_fee / 1e8 * price));
+      }
+    }
+    if (S.fees) {
+      set("fFast", n(S.fees.fastestFee));
+      set("fHalf", n(S.fees.halfHourFee));
+      set("fHour", n(S.fees.hourFee));
+      set("fEcon", n(S.fees.economyFee));
+      set("fMin", n(S.fees.minimumFee));
+      if (price) {
+        set("pTypical", "$" + (S.fees.halfHourFee * """ + str(TYPICAL_TX_VBYTES) + """
+          / 1e8 * price).toFixed(2));
+      }
+    }
+    set("cHeight", n(h));
+  }
+
+  function tick() {
+    var now = Date.now() / 1000;
+    if (S.tipTs) set("bbSince", ago(now - S.tipTs));
+    // Counted from the LAST BLOCK, not from page load, so the clock re-bases
+    // itself every time a block lands instead of drifting all afternoon.
+    var base = S.tipTs || now;
+    set("bbHalving", clock(base + (S.halvingBlock - S.height) * 600 - now));
+    if (S.retarget && S.retarget.estimatedRetargetDate) {
+      set("dRetarget", clock(S.retarget.estimatedRetargetDate / 1000 - now));
+    }
+    var stale = fails > 2;
+    set("bbLive", stale
+      ? "live updates paused \\u2014 showing the last good reading"
+      : "live \\u00b7 refreshed " + ago((Date.now() - lastOk) / 1000));
+    var dot = $("bbDot");
+    if (dot) dot.className = stale ? "bbdot off" : "bbdot";
+  }
+
+  function j(path) {
+    return fetch(API + path, { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).catch(function () { return null; });
+  }
+
+  function fast() {
+    if (document.hidden) return;
+    Promise.all([j("/v1/blocks"), j("/mempool"),
+                 j("/v1/fees/recommended"), j("/v1/prices")]).then(function (r) {
+      var ok = false;
+      if (r[0] && r[0][0] && r[0][0].height) {
+        S.height = r[0][0].height; S.tipTs = r[0][0].timestamp; ok = true;
+      }
+      if (r[1] && r[1].count != null) { S.mempool = r[1]; ok = true; }
+      if (r[2] && r[2].minimumFee != null) { S.fees = r[2]; ok = true; }
+      if (r[3] && r[3].USD) { S.price = r[3].USD; ok = true; }
+      if (ok) { fails = 0; lastOk = Date.now(); } else { fails++; }
+      render(); tick();
+    });
+  }
+
+  function slow() {
+    if (document.hidden) return;
+    Promise.all([j("/v1/difficulty-adjustment"),
+                 j("/v1/mining/hashrate/3d")]).then(function (r) {
+      if (r[0] && r[0].remainingBlocks != null) S.retarget = r[0];
+      if (r[1] && r[1].currentHashrate) {
+        S.hashrate = fmtHash(r[1].currentHashrate);
+        S.difficulty = r[1].currentDifficulty;
+      }
+      render();
+    });
+  }
+
+  function fmtHash(v) {
+    var units = [["ZH/s", 1e21], ["EH/s", 1e18], ["PH/s", 1e15], ["TH/s", 1e12]];
+    for (var i = 0; i < units.length; i++) {
+      if (v >= units[i][1]) return n(v / units[i][1], 1) + " " + units[i][0];
+    }
+    return n(v) + " H/s";
+  }
+
+  tick();
+  setInterval(tick, 1000);
+  setInterval(fast, 60000);
+  setInterval(slow, 300000);
+  fast(); slow();
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) { fast(); slow(); }
+  });
+})();
+"""
+
+
+def build_bitcoin_board(stats, board):
+    """The Bitcoin Board. Returns None when there is no live block height —
+    same contract as build_entry_page's live entry: leave the last good page
+    on disk rather than publish one full of dashes."""
+    tip = (stats or {}).get("tip") or {}
+    height = tip.get("height")
+    if not height:
+        return None
+
+    now = datetime.now(timezone.utc).timestamp()
+    price = stats.get("price_usd")
+    supply = stats["supply_sats"] / SATS
+    cap = supply * price if price else None
+    epoch = height // BTC_HALVING_INTERVAL
+    subsidy = BTC_INITIAL_SUBSIDY / (2 ** epoch)
+    halving_block = (epoch + 1) * BTC_HALVING_INTERVAL
+    blocks_to_halving = halving_block - height
+    halving_date, _ = _btc_era_date(halving_block)
+    issued_pct = supply / BTC_TRUE_MAX * 100
+    per_day = subsidy * 144
+    annual_pct = per_day * 365 / supply * 100 if supply else None
+    s2f = supply / (per_day * 365) if per_day else None
+
+    ath = stats.get("ath") or {}
+    ath_usd, ath_ts = ath.get("usd"), ath.get("ts")
+    gold = next((a for a in board.get("assets", []) if a.get("symbol") == "GOLD"), {})
+    gold_px, gold_cap = gold.get("price"), gold.get("market_cap")
+
+    rt = stats.get("retarget") or {}
+    hr = stats.get("hashrate") or {}
+    mp = stats.get("mempool") or {}
+    fees = stats.get("fees") or {}
+    rw = stats.get("reward_144") or {}
+    ln = stats.get("lightning") or {}
+    ch = stats.get("chain") or {}
+
+    # ── hero ──────────────────────────────────────────────────────────────
+    hero = [
+        ("Price", _usd(price), "bbPrice",
+         '<span id="bbSats">%s</span>'
+         % (_n(round(SATS / price)) + " satoshis to the dollar" if price else "—")),
+        ("Block height", _n(height), "bbBlock",
+         'last block <span id="bbSince">%s</span>'
+         % _ago(now - tip["timestamp"] if tip.get("timestamp") else None)),
+        # The unit lives in the sub-line, not the value: "20,079,200 BTC" is wide
+        # enough to wrap this tile onto two lines and strand the "BTC" on its own.
+        ("Bitcoin issued", _n(supply), "bbIssued",
+         'BTC <span class="bbsep">·</span> <span id="bbIssuedPct">%.2f%%</span> of '
+         'every coin there will ever be' % issued_pct),
+        ("Next halving", _clock(blocks_to_halving * 600), "bbHalving",
+         'at block %s <span class="bbsep">·</span> ≈%s'
+         % (_n(halving_block), blogkit.pretty_date(halving_date))),
+    ]
+    hero_html = "\n".join(
+        '    <div class="bbh"><div class="bbh-l">%s</div>'
+        '<div class="bbh-v am" id="%s">%s</div><div class="bbh-s">%s</div></div>'
+        % (esc(label), vid, value, sub) for label, value, vid, sub in hero)
+
+    # ── cards ─────────────────────────────────────────────────────────────
+    cards = []
+
+    cards.append(_bb_card("The market", [
+        _bb_row("Price", _usd(price), "mPrice"),
+        _bb_row("Market capitalisation", money_cap(cap) if cap else "—", "mCap"),
+        _bb_row("Satoshis to the dollar", _n(round(SATS / price)) if price else "—",
+                "mSatsD"),
+        _bb_row("All-time high", _usd(ath_usd), None,
+                blogkit.pretty_date(
+                    datetime.fromtimestamp(ath_ts, timezone.utc).date())
+                if ath_ts else None),
+        _bb_row("Down from that high",
+                "%.1f%%" % ((price - ath_usd) / ath_usd * 100)
+                if price and ath_usd else "—", "mAthDown"),
+        _bb_row("Days since that high",
+                _n((now - ath_ts) // 86400) + " days" if ath_ts else "—", "mAthDays"),
+        _bb_row("One bitcoin, priced in gold",
+                _n(price / gold_px, 1) + " oz" if price and gold_px else "—", "mGoldOz"),
+        _bb_row("Bitcoin against all the gold ever mined",
+                "%.2f%%" % (cap / gold_cap * 100) if cap and gold_cap else "—",
+                "mGoldPct"),
+    ], _bb_chart(stats.get("price_1y")) +
+        '<p class="bbasof">A year of price, drawn between its own high and low.</p>'))
+
+    cards.append(_bb_card("The supply", [
+        _bb_row("Issued so far", _n(supply) + " BTC", "sIssued"),
+        _bb_row("Of the 21 million", "%.2f%%" % issued_pct, "sPct", cls="am"),
+        _bb_row("Still to be mined", _n(BTC_TRUE_MAX - supply) + " BTC", "sLeft"),
+        _bb_row("New coins a day", _n(per_day, 1) + " BTC", "sPerDay"),
+        _bb_row("Annual issuance", "%.2f%%" % annual_pct if annual_pct else "—", None,
+                "as a share of the coins that already exist"),
+        _bb_row("Years of issuance held in the stock",
+                _n(s2f, 0) if s2f else "—", None,
+                "the stock-to-flow ratio, as a fact rather than a forecast"),
+    ], ('<div class="bbbar"><i id="sBar" style="width:%.2f%%"></i></div>'
+        '<div class="bbbarl"><span>0</span><span>21,000,000</span></div>'
+        '<p class="bbmore"><a href="how-many-bitcoins-are-there.html">'
+        'How that number is worked out, exactly →</a></p>') % issued_pct))
+
+    cards.append(_bb_card("Halvings", [
+        _bb_row("Reward era", "no. %d" % (epoch + 1), "hEpoch",
+                "each one is 210,000 blocks, about four years"),
+        _bb_row("Reward per block now", _n(subsidy, 3) + " BTC", "hSubsidy"),
+        _bb_row("After the next halving", _n(subsidy / 2, 4) + " BTC"),
+        _bb_row("Blocks to go", _n(blocks_to_halving) + " blocks", "hBlocks"),
+        _bb_row("Expected date", "≈" + blogkit.pretty_date(halving_date), None,
+                "at Bitcoin's ten-minute target; real blocks vary"),
+        _bb_row("The last one that pays anything", "≈%d" % _btc_era_date(
+            BTC_ZERO_REWARD_BLOCK)[0].year, None, "block 6,930,000"),
+    ]))
+
+    fee_share = (rw.get("fee_sats") / rw["reward_sats"] * 100
+                 if rw.get("reward_sats") else None)
+    cards.append(_bb_card("Difficulty and mining", [
+        _bb_row("Hash rate", _hashrate_fmt(hr.get("current")), "dHash", cls="am"),
+        _bb_row("Difficulty",
+                _n(hr.get("difficulty") / 1e12, 1) + " T" if hr.get("difficulty")
+                else "—", "dDiff"),
+        _bb_row("Blocks to the next retarget",
+                _n(rt.get("remaining_blocks")) + " blocks"
+                if rt.get("remaining_blocks") is not None else "—", "dLeft"),
+        _bb_row("Expected change",
+                ("%+.2f%%" % rt["estimated_change_pct"])
+                if rt.get("estimated_change_pct") is not None else "—", "dChange"),
+        _bb_row("Retarget in",
+                _clock(rt["estimated_ts"] - now) if rt.get("estimated_ts") else "—",
+                "dRetarget"),
+        _bb_row("Average block, this epoch",
+                _n(rt["block_time_s"] / 60, 1) + " min" if rt.get("block_time_s")
+                else "—", "dBlockTime", "the target is ten"),
+        _bb_row("Paid to miners, last 24 hours",
+                _usd(rw["reward_sats"] / SATS * price, 0)
+                if rw.get("reward_sats") and price else "—"),
+        _bb_row("Of which was fees",
+                "%.2f%%" % fee_share if fee_share is not None else "—", None,
+                "the rest is newly minted coin"),
+    ], ('<div class="bbbar"><i id="dProg" style="width:%.1f%%"></i></div>'
+        '<div class="bbbarl"><span id="dProgTxt">%.1f%% through this epoch</span>'
+        '<span>2,016 blocks</span></div>'
+        % (rt.get("progress_pct") or 0, rt.get("progress_pct") or 0))
+        + _bb_chart(hr.get("series"))
+        + '<p class="bbasof">A year of hash rate.</p>'))
+
+    fee_chips = ""
+    if fees:
+        fee_chips = ('<div class="bbchips">'
+                     + "".join('<span class="bbchip">%s <b id="%s">%s</b></span>'
+                               % (lbl, vid, _n(fees.get(key)))
+                               for lbl, key, vid in
+                               (("Next block", "fastest", "fFast"),
+                                ("Half hour", "half_hour", "fHalf"),
+                                ("An hour", "hour", "fHour"),
+                                ("Economy", "economy", "fEcon"),
+                                ("Minimum", "minimum", "fMin")))
+                     + '</div><p class="bbasof">Satoshis per virtual byte — what it '
+                       'costs to be included that quickly.</p>')
+    typical = (fees.get("half_hour", 0) * TYPICAL_TX_VBYTES / SATS * price
+               if fees.get("half_hour") and price else None)
+    cards.append(_bb_card("The mempool", [
+        _bb_row("Transactions waiting", _n(mp.get("count")), "pCount"),
+        _bb_row("Weight waiting",
+                _n(mp["vsize"] / 1e6, 1) + " MvB" if mp.get("vsize") else "—",
+                "pVsize", "a block holds about one"),
+        _bb_row("Blocks to clear it",
+                _n(-(-mp["vsize"] // 1000000)) + " blocks" if mp.get("vsize") else "—",
+                "pBlocks"),
+        _bb_row("Fees waiting to be collected",
+                _usd(mp["total_fee_sats"] / SATS * price, 0)
+                if mp.get("total_fee_sats") and price else "—", "pFees"),
+        _bb_row("An ordinary payment, right now",
+                _usd(typical, 2) if typical else "—", "pTypical",
+                "one input, two outputs, confirmed within the half hour"),
+    ], fee_chips))
+
+    cards.append(_bb_card("The chain", [
+        _bb_row("Block height", _n(height), "cHeight"),
+        _bb_row("Size on disk", _bytes_fmt(ch.get("size_bytes")), None,
+                "what a full node stores"),
+        _bb_row("Transactions, all time", _n(ch.get("tx_total"))),
+        _bb_row("Outputs, all time", _n(ch.get("outputs_total"))),
+        _bb_row("Transactions a second",
+                _n(ch["tx_24h"] / 86400, 1) if ch.get("tx_24h") else "—", None,
+                "averaged over the last day"),
+        _bb_row("In the last block",
+                "%s txs" % _n(tip.get("tx_count")) if tip.get("tx_count") else "—",
+                None, ("%s of data" % _bytes_fmt(tip["size"])) if tip.get("size")
+                else None),
+    ]))
+
+    if ln:
+        ln_cap = ln["capacity_sats"] / SATS
+        cards.append(_bb_card("Lightning", [
+            _bb_row("Public capacity", _n(ln_cap, 1) + " BTC"),
+            _bb_row("That, in dollars",
+                    money_cap(ln_cap * price) if price else "—"),
+            _bb_row("Nodes", _n(ln.get("nodes"))),
+            _bb_row("Channels", _n(ln.get("channels"))),
+            _bb_row("Average channel",
+                    _n(ln["avg_capacity_sats"] / SATS, 3) + " BTC"
+                    if ln.get("avg_capacity_sats") else "—"),
+            # NOT "only over Tor": mempool's tor_nodes counts every node with an
+            # onion address, including the ones that also advertise a clearnet one.
+            _bb_row("Reachable over Tor",
+                    "%.0f%%" % (ln["tor_nodes"] / ln["nodes"] * 100)
+                    if ln.get("tor_nodes") and ln.get("nodes") else "—", None,
+                    "of the nodes that announce themselves"),
+        ], '<p class="bbasof">Only the public network is countable, and a great '
+           'deal of Lightning is deliberately private. This snapshot is dated '
+           '%s — it is the one panel here that is not refreshed hourly.</p>'
+           % esc(ln.get("as_of") or "unknown")))
+
+    cards.append(_bb_card("Further out", [
+        _bb_row("90% of all bitcoin issued", _bb_milestone(0.90)),
+        _bb_row("95%", _bb_milestone(0.95)),
+        _bb_row("99%", _bb_milestone(0.99)),
+        _bb_row("99.9%", _bb_milestone(0.999)),
+        _bb_row("The last whole coin",
+                _bb_milestone((BTC_TRUE_MAX - 1) / BTC_TRUE_MAX)),
+        _bb_row("The reward reaches zero",
+                "≈%d" % _btc_era_date(BTC_ZERO_REWARD_BLOCK)[0].year, None,
+                "after which miners are paid in fees alone"),
+    ], '<p class="bbasof">Every date past the last halving is extrapolated at '
+       'ten minutes a block, which is a target rather than a promise. Read them '
+       'as years, not appointments.</p>'))
+
+    # ── the methods panel ─────────────────────────────────────────────────
+    methods = """
+  <div class="panel">
+    <h2>How these numbers are made</h2>
+    <p>Three different kinds of number sit on this page, and they are not equally
+    true. Rather than set them all in the same type and let you assume, here is
+    which is which.</p>
+    <ul>
+      <li><b>Computed, and exact.</b> Everything about supply and halvings.
+      Bitcoin's issuance is a published rule — 50 coins a block, halved every
+      210,000 blocks — so the number of coins in existence is not an estimate
+      anyone has to make. It is that schedule added up in whole satoshis from
+      the block height above, and the working is
+      <a href="how-many-bitcoins-are-there.html">set out here</a>.</li>
+      <li><b>Polled, and live.</b> Price, block height, the mempool and the fee
+      estimates are refreshed from <a href="https://mempool.space/">mempool.space</a>
+      every minute while this page is open; difficulty and hash rate every five,
+      because they cannot move faster than that. If those requests fail the page
+      keeps the last good reading and says so beside the dot at the top.</li>
+      <li><b>Snapshots, taken hourly.</b> The all-time high, both charts, the
+      chain's size and its all-time totals. Lightning is the exception worth
+      knowing about: its upstream statistics are rebuilt on someone else's
+      schedule, so that panel carries its own date.</li>
+    </ul>
+    <p>The clocks — time since the last block, and the two countdowns — tick
+    without asking anything, because they are arithmetic on a timestamp. The
+    halving countdown assumes Bitcoin's ten-minute target, so it is an estimate
+    that jumps a little each time a block actually lands.</p>
+    <p>Some things a board like this usually shows are missing on purpose: the
+    size of the UTXO set, accumulated chain work, the breakdown of output types,
+    coinjoin activity, how much bitcoin sits on company balance sheets. Those
+    need a full node with an address index, or a list somebody keeps by hand.
+    A number invented to fill a gap is worse than the gap.</p>
+    <p>Sources: <a href="https://mempool.space/">mempool.space</a> and
+    <a href="https://blockchair.com/">Blockchair</a>, both public and neither
+    requiring an account. Nothing here is investment advice, and nothing here is
+    for sale.</p>
+  </div>
+"""
+
+    seed = json.dumps({
+        "height": height,
+        "tipTs": tip.get("timestamp"),
+        "price": price,
+        "maxSupply": BTC_TRUE_MAX,
+        "halvingBlock": halving_block,
+        "athUsd": ath_usd,
+        "athTs": ath_ts,
+        "goldPx": gold_px,
+        "goldCap": gold_cap,
+        "hashrate": _hashrate_fmt(hr.get("current")),
+        "difficulty": hr.get("difficulty"),
+        "mempool": {"count": mp.get("count"), "vsize": mp.get("vsize"),
+                    "total_fee": mp.get("total_fee_sats")},
+        "fees": {"fastestFee": fees.get("fastest"),
+                 "halfHourFee": fees.get("half_hour"),
+                 "hourFee": fees.get("hour"),
+                 "economyFee": fees.get("economy"),
+                 "minimumFee": fees.get("minimum")},
+        "retarget": {"progressPercent": rt.get("progress_pct"),
+                     "remainingBlocks": rt.get("remaining_blocks"),
+                     "difficultyChange": rt.get("estimated_change_pct"),
+                     "estimatedRetargetDate": (rt["estimated_ts"] * 1000
+                                               if rt.get("estimated_ts") else None),
+                     "timeAvg": (rt["block_time_s"] * 1000
+                                 if rt.get("block_time_s") else None)},
+    }, separators=(",", ":"))
+
+    body = ('  <h1 class="btitle">The Bitcoin Board</h1>\n'
+            '  <p class="bblede">Everything Bitcoin publishes about itself, on one '
+            'page: how many coins exist, how hard they are to mine, what is waiting '
+            'to be confirmed, and how long until the next halving. The network is '
+            'the only source — nobody is asked to take a figure on faith.</p>\n'
+            # The separator is inside the span it belongs to, so a narrow screen
+            # cannot wrap the line and leave a dangling "·" at the end of it.
+            '  <p class="bbstamp"><span class="bbdot" id="bbDot"></span>'
+            '<span id="bbLive">live</span>'
+            '<span><span class="bbsep">·</span> snapshot taken %s</span></p>\n'
+            '  <div class="bbhero">\n%s\n  </div>\n'
+            '  <div class="bbgrid">\n%s\n  </div>\n%s'
+            % (esc(stats.get("generated", "—")), hero_html,
+               "\n".join(cards), methods))
+
+    return _shell(
+        title="The Bitcoin Board — Bitcoin by the numbers, live",
+        desc="Bitcoin's own numbers on one page: block height, coins issued, "
+             "difficulty, hash rate, the mempool, fees and the next halving.",
+        url="%sbitcoin.html" % BASE_URL, active="bitcoin", body=body,
+        extra_css=BB_CSS, extra_js=BB_JS.replace("__SEED__", seed))
 
 
 def build_sitemap(entries, tags):
@@ -1166,7 +1970,7 @@ def build_sitemap(entries, tags):
     """
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today),
-            ("%sask.html" % BASE_URL, today)]
+            ("%sbitcoin.html" % BASE_URL, today), ("%sask.html" % BASE_URL, today)]
     for e in entries:
         urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
     for tag, es in sorted(tags.items()):
@@ -1191,6 +1995,19 @@ def main():
     if not (board.get("assets") or []):
         sys.exit("asset_board.json has no assets — refusing to build an empty board")
 
+    # The Bitcoin board is optional by design. A missing or unreadable stats file
+    # costs exactly one page and leaves the rest of the publication building —
+    # the alternative, failing the whole build because mempool.space had a bad
+    # night, would take the writing offline over a dashboard.
+    stats = None
+    if os.path.exists(BTC_SRC):
+        try:
+            with open(BTC_SRC, encoding="utf-8") as fh:
+                stats = json.load(fh)
+        except (ValueError, OSError) as exc:
+            print("  ! bitcoin_stats.json unreadable (%s) — skipping the Bitcoin "
+                  "board" % exc, file=sys.stderr)
+
     entries = load_entries(include_drafts=include_drafts)
     live = [e for e in entries if not e["draft"]]
     check_entries(entries)
@@ -1202,10 +2019,16 @@ def main():
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
             fh.write(text)
 
-    write("index.html", build_front(live, board))
+    write("index.html", build_front(live, board, stats))
     write("ask.html", build_ask())
     write("thanks.html", build_thanks())
     write("board.html", build_board(board))
+    btc_page = build_bitcoin_board(stats, board) if stats else None
+    if btc_page:
+        write("bitcoin.html", btc_page)
+    else:
+        print("  ! no live block height — leaving the last Bitcoin board in place",
+              file=sys.stderr)
     for e in entries:
         page = build_entry_page(e, board)
         if page is None:

@@ -26,11 +26,11 @@ header{padding:46px 0 8px;text-align:center}
 .brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
 .bmark{width:46px;height:46px;flex:0 0 46px}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
-h1 .em{color:#5eb3d6;font-style:italic}
+h1 .em{color:#f7931a;font-style:italic}
 .tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
 .lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
 .lede b{color:#e8eef7;font-weight:400}
-.hl{color:#5eb3d6}
+.hl{color:#f7931a}
 .stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .stamp .dot{color:#3f4c5f;margin:0 8px}
@@ -67,10 +67,14 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
   background:#0a111c}
 .panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
 .panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
 .panel p:last-child{margin-bottom:0}
 .panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
-  color:#5eb3d6;background:#0e1724;padding:1px 6px;border-radius:4px}
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
 .panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
 .panel li{margin:0 0 6px}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
@@ -83,14 +87,14 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 .askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .askform .opt{color:#6e7d92;font-size:13px}
-.askform .req{color:#5eb3d6;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
 .askform input[type=text],.askform input[type=email],.askform textarea{
   width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
   background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
-.askform input:focus,.askform textarea:focus{outline:none;border-color:#5eb3d6}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
 .askform textarea{resize:vertical;min-height:130px}
 .askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
-  background:#5eb3d6;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
   cursor:pointer}
 .askform .btn:hover{filter:brightness(1.1)}
 .formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
@@ -112,17 +116,17 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
 .nav a{color:#93a4bd;text-decoration:none}
 .nav a:hover{color:#e8eef7}
-.nav a.on{color:#5eb3d6}
+.nav a.on{color:#f7931a}
 .nav a.sib{color:#7f8fa6;padding-left:20px;border-left:1px solid #1e2938;font-style:italic}
 .nav a.sib:hover{color:#e8865c}          /* the other publication's own accent */
 
 .btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
 .board-card{border-color:#22384a}
-.board-card .ec-d{color:#5eb3d6}
+.board-card .ec-d{color:#f7931a}
 
 /* ── tags ────────────────────────────────────────────────────────────────── */
 a.tg{text-decoration:none;transition:border-color .15s,color .15s}
-a.tg:hover{border-color:#5eb3d6;color:#e8eef7}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
 .taglist{gap:9px}
 .taglist .tg{font-size:13.5px;padding:6px 13px}
 .tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
@@ -132,8 +136,8 @@ header.hsm{padding:30px 0 6px;text-align:left}
 header.hsm .brand{gap:11px}
 header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
 .wm{font-size:20px;letter-spacing:.01em}
-.wm .em{color:#5eb3d6;font-style:italic}
-a{color:#5eb3d6}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
 .draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
   background:#1a1408;color:#e2c489;font-size:14.5px;
   font-family:ui-sans-serif,system-ui,sans-serif}
@@ -155,7 +159,7 @@ a{color:#5eb3d6}
 .entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
 .entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
   line-height:1.55}
-.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #5eb3d6;
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
   color:#d6e0ee;font-size:18.5px;font-style:italic}
 .entry blockquote p{color:inherit;font-size:inherit;margin:0}
 .entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
@@ -207,10 +211,10 @@ a{color:#5eb3d6}
 <div class="wrap">
   <header class="hsm">
     <a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
-  <circle cx="23" cy="23" r="21" stroke="#5eb3d6" stroke-width="1.5" opacity=".55"/>
-  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#5eb3d6" opacity=".55"/>
-  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#5eb3d6" opacity=".8"/>
-  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#5eb3d6"/>
+  <circle cx="23" cy="23" r="21" stroke="#f7931a" stroke-width="1.5" opacity=".55"/>
+  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
+  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
+  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a>
   </header>
   
@@ -321,10 +325,10 @@ shows up almost everywhere this gets quoted.</p>
   <rect x="355.0" y="311.25" width="70" height="28.75" rx="3" fill="#f7931a" opacity="0.85"/>
   <text x="390.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">6.25</text>
   <text x="390.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2020–2024</text>
-  <rect x="450.0" y="325.62" width="70" height="14.38" rx="3" fill="#f7931a" opacity="0.95" stroke="#5eb3d6" stroke-width="2.5"/>
+  <rect x="450.0" y="325.62" width="70" height="14.38" rx="3" fill="#f7931a" opacity="0.95" stroke="#e8dfd2" stroke-width="2.5"/>
   <text x="485.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">3.125</text>
   <text x="485.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">2024–~2028</text>
-  <line x1="485.0" y1="285" x2="485.0" y2="310.62" stroke="#5eb3d6" stroke-width="1.6"/><text x="485.0" y="255" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="bold" letter-spacing="0.08em" fill="#5eb3d6">WE ARE HERE</text><text x="485.0" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">3.125 BTC / block</text>
+  <line x1="485.0" y1="285" x2="485.0" y2="310.62" stroke="#e8dfd2" stroke-width="1.6"/><text x="485.0" y="255" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12.5" font-weight="bold" letter-spacing="0.08em" fill="#e8dfd2">WE ARE HERE</text><text x="485.0" y="273" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">3.125 BTC / block</text>
   <rect x="545.0" y="332.81" width="70" height="7.19" rx="3" fill="#f7931a" opacity="0.85"/>
   <text x="580.0" y="357" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">1.5625</text>
   <text x="580.0" y="373" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="10.5" fill="#6e7d92">~2028–~2032</text>
