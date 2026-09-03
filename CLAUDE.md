@@ -501,12 +501,17 @@ breakdowns, coinjoin activity, corporate treasury holdings. Those need a full no
 address index or a hand-kept list. The page says why rather than filling the space with a
 number nobody can check.
 
-Both boards refresh from one hourly GitHub Action
-(`.github/workflows/refresh-asset-board.yml` — the file name is unchanged on purpose, since
-GitHub keys a workflow's schedule and history to its path). Sub-hourly was considered and
-rejected: GitHub delays or skips sub-hourly crons under load, and it would cost 144 commits
-and 144 Pages deploys a day to refresh a page that already refreshes itself in the reader's
-browser.
+Both boards refresh from one GitHub Action (`.github/workflows/refresh-asset-board.yml` —
+the file name is unchanged on purpose, since GitHub keys a workflow's schedule and history
+to its path).
+
+⚠️ **It says `cron: "0 * * * *"` but it does not run hourly.** Measured 2026-09-03 across
+thirteen consecutive scheduled runs: they land at roughly 17:45, 13:28, 08:45, 03:58, 23:12,
+20:52 — **about six times a day, 2.5 to 5 hours apart**. GitHub drops the rest under load on
+a public repo, and asking for more would get fewer (sub-hourly schedules are dropped harder
+still). **So do not reason about this publication's freshness from the cron line.** It is
+also why the Bitcoin board's live layer is load-bearing rather than decorative: without it
+that page would sit up to five hours stale.
 
 ## Source archive
 
