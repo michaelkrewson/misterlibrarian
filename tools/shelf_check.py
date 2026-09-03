@@ -37,6 +37,28 @@ counted and reported as unchecked. Paraphrases are where the remaining risk live
 VERSE SCOPING comes from the panel itself -- each verse links to its own note, so
 the note's verse range is read off the fragment rather than guessed.
 
+    --verse-offset N   for a chapter whose Masoretic versification runs AHEAD of
+                       the shelf's. Our verse V is then the shelf's V-N, and any
+                       verse that maps to 0 or below lives at the END of the
+                       PREVIOUS chapter, which is fetched too.
+
+That flag exists because Deuteronomy 13 numbers NINETEEN verses where all thirteen
+shelf versions number eighteen (the Hebrew's 13:1 is their 12:32). Without it every
+lookup was one verse off and the tool reported SEVENTEEN MISSes on quotes that had
+been fetched from those very versions minutes earlier -- indistinguishable, in the
+output, from real misquotations. A checker whose failures are usually spurious stops
+being read, which is the cry-wolf failure this project has already fixed twice
+elsewhere. Other offset chapters are coming: Joel, Malachi, several Psalms whose
+superscription is counted as a verse.
+
+It also WARNS on its own when the fragment has more verses than the shelf version
+does and no offset was given, so the next offset chapter is told rather than
+silently mis-checked. For BG-sourced versions the previous chapter is read from
+`<NAME>_prev.json` in --shelf-dir if present; when it is absent the affected verse
+simply contributes nothing, so the outcome is NO DATA ("could not check") and never
+a MISS ("this is wrong") -- an unsubstantiated MISS is the one failure this tool
+must not produce.
+
 PARTIAL is a WARNING, not a failure. When several versions share one quote ("the
 NWT 1984 and TNM 1987 keep it indefinite ('<English phrase>')") the group passes if
 ANY member has it, because the quote can only be one of their wordings. But the
@@ -172,7 +194,14 @@ QUOTE = re.compile(r'&lsquo;(.+?)&rsquo;|&laquo;(.+?)&raquo;|‘(.+?)’|«(.+?)
 def norm(s):
     """Fold to a comparable form: entities, curly quotes, accents, case, spacing."""
     s = html.unescape(s)
-    s = re.sub(r'<[^>]+>', ' ', s)
+    # An INLINE tag is deleted, not spaced out: emphasis routinely sits inside a
+    # word ("Cuidar<strong>as</strong>"), and turning it into a space splits that
+    # into "cuidar as" and reports a verbatim-correct quote as MISS. Where a tag
+    # separates two words there is already a space in the text, so this changes
+    # nothing there. Block-level tags DO become a space, since they can butt two
+    # words together with no whitespace between them.
+    s = re.sub(r'</?(?:p|div|br|li|tr|td|th|h[1-6]|blockquote)\b[^>]*>', ' ', s)
+    s = re.sub(r'<[^>]+>', '', s)
     s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     s = s.replace("ʼ", "'").replace("\u00ad", "")
     # WOL prints pronunciation marks inside names -- Mo'ab, Je-ho'vah. Delete them
@@ -196,6 +225,32 @@ def wol_text(book, chapter, version):
             d[m.group(1)] = m.group(2)
     return d or None
 
+def shelf_pool(verses, offset, text, prev_text):
+    """Collect the shelf text for OUR verse numbers, shifted by `offset`.
+
+    Our verse V is the shelf's V-offset. A verse that maps to 0 or below lives at
+    the end of the PREVIOUS chapter (our Deuteronomy 13:1 is their 12:32), counting
+    back from its last verse: 0 -> last, -1 -> second-to-last.
+
+    Returns "" when nothing could be collected, which the caller reports as NO DATA
+    rather than MISS -- refusing to call a quote wrong on text we never looked at.
+    """
+    parts = []
+    for v in verses:
+        n = int(v) - offset
+        if n >= 1:
+            t = text.get(str(n), "")
+        elif prev_text:
+            keys = sorted((int(k) for k in prev_text), reverse=True)
+            idx = -n
+            t = prev_text.get(str(keys[idx]), "") if idx < len(keys) else ""
+        else:
+            t = ""
+        if t.strip():
+            parts.append(norm(t))
+    return " ".join(parts)
+
+
 def _expand_ranges(d):
     """The Living Bible merges verses, so its keys are ranges ('3-9', '15-19').
 
@@ -213,7 +268,7 @@ def _expand_ranges(d):
             out.setdefault(str(k).strip(), v)
     return out
 
-def bg_text(shelf_dir, name):
+def bg_text(shelf_dir, name, prev=False):
     """Load a fetched BibleGateway version, MERGING every file we have for it.
 
     A merged-verse version yields two files -- NAME.json with blank per-verse entries
@@ -223,8 +278,13 @@ def bg_text(shelf_dir, name):
     """
     if not shelf_dir:
         return None
+    # An offset chapter needs the tail of the PREVIOUS chapter too. The shelf-dir
+    # holds one chapter's dumps, so the previous one is read from <NAME>_prev.json
+    # when it has been provided; when it has not, the caller gets None and reports
+    # NO DATA rather than inventing a MISS.
+    suffix = "_prev" if prev else ""
     out, seen = {}, False
-    for fn in (name + ".json", name + "_ranges.json"):
+    for fn in (name + suffix + ".json", name + suffix + "_ranges.json"):
         p = os.path.join(shelf_dir, fn)
         if not os.path.exists(p):
             continue
@@ -377,6 +437,9 @@ def main():
     ap.add_argument("--shelf-dir", default=None)
     ap.add_argument("--min-words", type=int, default=2,
                     help="quotes shorter than this are reported but not failed (too short to be evidence)")
+    ap.add_argument("--verse-offset", type=int, default=0,
+                    help="our verse V is the shelf's V-N (Deuteronomy 13 needs 1). "
+                         "A verse mapping to 0 or below is taken from the previous chapter.")
     a = ap.parse_args()
 
     frag = open(a.fragment, encoding="utf-8").read()
@@ -392,6 +455,10 @@ def main():
 
     cache, miss, nodata, ok, para, short, partial = {}, [], [], 0, 0, 0, []
     universal, untagged = [], []
+    prev_cache, offset_warn = {}, []
+    # The fragment's own highest verse number, for the did-you-mean-an-offset check.
+    frag_max = max((int(m.group(1)) for m in re.finditer(r'id="v\d+-(\d+)"', frag)),
+                   default=0)
     for nid, body in notes:
         for phrase, ctx in universal_claims(body):
             universal.append((nid, phrase, ctx))
@@ -470,11 +537,32 @@ def main():
                     text = cache[src]
                     if not text:
                         missing_data.append("%s never fetched" % src); continue
+                    # Tell the next offset chapter rather than mis-checking it silently.
+                    if a.verse_offset == 0 and frag_max:
+                        shelf_max = max((int(k) for k in text if str(k).isdigit()), default=0)
+                        if shelf_max and frag_max > shelf_max and src not in offset_warn:
+                            offset_warn.append(src)
+                    # An offset chapter's opening verses live in the previous chapter.
+                    prev_text = None
+                    if a.verse_offset and any(int(v) - a.verse_offset < 1 for v in verses):
+                        if src not in prev_cache:
+                            raw = wol_text(a.book, str(int(a.chapter) - 1), src) \
+                                if kind == "wol" else bg_text(a.shelf_dir, src, prev=True)
+                            prev_cache[src] = _expand_ranges(raw) if raw else None
+                        prev_text = prev_cache[src]
+                        if not prev_text:
+                            # The quote may legitimately live in the previous chapter and
+                            # we have not got it. Falling through to the whole-chapter
+                            # fallback here would search the WRONG chapter and report a
+                            # MISS on text never looked at -- say NO DATA instead.
+                            missing_data.append(
+                                "%s: needs %s %d for the offset, not fetched"
+                                % (src, a.book, int(a.chapter) - 1))
+                            continue
                     # A verse present but EMPTY is missing data, not a failed match --
                     # The Living Bible merges verses into ranges, so single verses come
                     # back blank and were being reported as MISS (Numbers 24:3).
-                    pool = " ".join(norm(text[v]) for v in verses
-                                    if text.get(v, "").strip()) or \
+                    pool = shelf_pool(verses, a.verse_offset, text, prev_text) or \
                            " ".join(norm(t) for t in text.values() if t.strip())
                     if not pool:
                         missing_data.append("%s: no text for vv%s" %
@@ -508,6 +596,10 @@ def main():
         print("  ⚠ NO DATA  %-8s %-6s %r  (%s)" % (nid, tag, part[:60], why))
     for nid, good, bad_, part, verses in partial:
         print("  ? PARTIAL  %-8s quote matches %s but NOT %s: %r" % (nid, good, bad_, part[:52]))
+    if offset_warn:
+        print("  ⚠ VERSIFICATION: this fragment has %d verses but %s has fewer -- if this "
+              "chapter's numbering runs ahead of the shelf's, EVERY lookup below is off by "
+              "that much. Re-run with --verse-offset." % (frag_max, "/".join(offset_warn[:3])))
     for nid, tag, part, verses in miss:
         print("  ✗ MISS     %-8s %-6s %r  not found in vv%s" %
               (nid, tag, part[:60], ",".join(verses) if verses else "?"))
