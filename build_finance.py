@@ -1068,7 +1068,8 @@ MARK_SVG = """<svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="tr
 </svg>"""
 
 
-BOARD_BODY_TEMPLATE = """  <table class="board">
+BOARD_BODY_TEMPLATE = """  <div class="tw">
+  <table class="board">
     <thead>
       <tr>
         <th class="rk">#</th>
