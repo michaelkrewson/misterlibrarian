@@ -498,8 +498,9 @@ would silently wrap 5,000,000,000.
 
 **Deliberately absent, and it should stay that way:** UTXO set size, chain work, output-type
 breakdowns, coinjoin activity, corporate treasury holdings. Those need a full node with an
-address index or a hand-kept list. The page says why rather than filling the space with a
-number nobody can check.
+address index or a hand-kept list — don't add one from a guess. The page used to spell this
+out in its methods panel; that paragraph was cut 2026-09-03 (Michael's call) because a
+reader does not need a list of what isn't there. The rule stands, it just isn't advertised.
 
 Both boards refresh from one GitHub Action (`.github/workflows/refresh-asset-board.yml` —
 the file name is unchanged on purpose, since GitHub keys a workflow's schedule and history

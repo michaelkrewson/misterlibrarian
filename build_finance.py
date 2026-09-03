@@ -1888,7 +1888,7 @@ def build_bitcoin_board(stats, board):
       every minute while this page is open; difficulty and hash rate every five,
       because they cannot move faster than that. If those requests fail the page
       keeps the last good reading and says so beside the dot at the top.</li>
-      <li><b>Snapshots, taken hourly.</b> The all-time high, both charts, the
+      <li><b>Snapshots, taken through the day.</b> The all-time high, both charts, the
       chain's size and its all-time totals. Lightning is the exception worth
       knowing about: its upstream statistics are rebuilt on someone else's
       schedule, so that panel carries its own date.</li>
@@ -1897,11 +1897,6 @@ def build_bitcoin_board(stats, board):
     without asking anything, because they are arithmetic on a timestamp. The
     halving countdown assumes Bitcoin's ten-minute target, so it is an estimate
     that jumps a little each time a block actually lands.</p>
-    <p>Some things a board like this usually shows are missing on purpose: the
-    size of the UTXO set, accumulated chain work, the breakdown of output types,
-    coinjoin activity, how much bitcoin sits on company balance sheets. Those
-    need a full node with an address index, or a list somebody keeps by hand.
-    A number invented to fill a gap is worse than the gap.</p>
     <p>Sources: <a href="https://mempool.space/">mempool.space</a> and
     <a href="https://blockchair.com/">Blockchair</a>, both public and neither
     requiring an account. Nothing here is investment advice, and nothing here is
