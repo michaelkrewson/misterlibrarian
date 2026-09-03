@@ -1348,11 +1348,66 @@ def _bb_card(title, rows, extra=""):
             % (esc(title), "\n".join("    " + r for r in rows if r), extra))
 
 
+# The coin in the page title. Drawn as geometry rather than set as the ₿
+# character (U+20BF) on purpose: that codepoint arrived in Unicode 10 and is
+# still missing from plenty of installed fonts, including some builds of the
+# Georgia this publication sets its headings in. A tofu box in an <h1> is worse
+# than no icon at all, and a path renders identically everywhere.
+BB_COIN_SVG = """<span class="bbmark" aria-hidden="true"><svg viewBox="0 0 44 44">
+  <defs>
+    <linearGradient id="bbCoinFace" x1="0.15" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ffd694"/>
+      <stop offset="46%" stop-color="__ACCENT__"/>
+      <stop offset="100%" stop-color="#a85c07"/>
+    </linearGradient>
+    <linearGradient id="bbCoinRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe3b4"/>
+      <stop offset="100%" stop-color="#7d4304"/>
+    </linearGradient>
+  </defs>
+  <circle cx="22" cy="22" r="21" fill="url(#bbCoinRim)"/>
+  <circle cx="22" cy="22" r="18.4" fill="url(#bbCoinFace)"/>
+  <g stroke="#fffaf0" fill="none">
+    <!-- The prongs run UNDER the letter and are drawn first, so the bowls'
+         bars cap them cleanly. Round ends; the letter's own strokes are butt
+         ended, because a round cap on the stem overshoots the top bar and
+         leaves a bump on the left shoulder. -->
+    <g stroke-width="2.2" stroke-linecap="round">
+      <path d="M16.9 8.7v5.4M23.4 8.7v5.4M16.9 29.9v5.4M23.4 29.9v5.4"/>
+    </g>
+    <g stroke-width="3.4" stroke-linecap="butt" stroke-linejoin="round">
+      <path d="M16.9 13.6v16.8"/>
+      <!-- The bars start at the stem's OUTER edge (16.9 − 3.4/2 = 15.2), not at
+           its centre line: starting at the centre leaves the letter's top edge
+           1.7 higher to the right of x=16.9 than to the left of it, which reads
+           as a shelf cut out of the left shoulder. -->
+      <path d="M15.2 13.6h7a4.05 4.05 0 010 8.1H15.2"/>
+      <path d="M15.2 21.7h7.8a4.35 4.35 0 010 8.7H15.2"/>
+    </g>
+  </g>
+</svg></span>"""
+
+
 BB_CSS = """
 /* ── The Bitcoin Board ────────────────────────────────────────────────────────
    Appended to that one page only (see _shell's extra_css), because every page
    here inlines its whole stylesheet and thirty pages should not carry a grid
    none of them draws. Namespaced .bb* so it can never reach the asset table. */
+/* The coin, and the glow behind it. The glow is a separate blurred layer
+   rather than a shadow on the SVG so it can breathe on its own timing without
+   the coin itself moving — a title that pulses is a title that is hard to
+   read. Sized in em, so it tracks the heading at every breakpoint. */
+.bbmark{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:1.16em;height:1.16em;margin-right:.34em;vertical-align:-.17em}
+.bbmark::before{content:"";position:absolute;inset:-58%;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,147,26,.60) 0%,rgba(247,147,26,.34) 32%,
+    rgba(247,147,26,.10) 55%,rgba(247,147,26,0) 72%);
+  animation:bbglow 4.2s ease-in-out infinite}
+.bbmark svg{position:relative;width:100%;height:100%;display:block;
+  filter:drop-shadow(0 1px 7px rgba(247,147,26,.60))}
+@keyframes bbglow{0%,100%{opacity:.6;transform:scale(.92)}
+  50%{opacity:1;transform:scale(1.08)}}
+
 .bblede{margin:10px 0 0;color:#b9c6d8;font-size:16.5px;max-width:780px}
 .bbstamp{margin:15px 0 0;color:#7f8fa6;font-size:13.5px;display:flex;
   align-items:center;gap:9px;flex-wrap:wrap;
@@ -1418,6 +1473,18 @@ BB_CSS = """
   .bbhero{grid-template-columns:1fr}
   .bbh-v{font-size:26px}
   .bbgrid{grid-template-columns:1fr}
+}
+
+/* Two things here animate forever — the title's glow and the live dot. Both are
+   decoration on a number, so both stop for a reader who has asked the system to
+   stop moving things.
+   ⚠️ This block must stay LAST. Everything in it matches with the same
+   specificity as the rule it is overriding, so placed higher up it loses to the
+   later declaration and silently does nothing — which is exactly what it did on
+   the first attempt (the glow obeyed, the dot kept pulsing). */
+@media (prefers-reduced-motion:reduce){
+  .bbmark::before{animation:none;opacity:.8}
+  .bbdot{animation:none}
 }
 """
 
@@ -1932,7 +1999,8 @@ def build_bitcoin_board(stats, board):
                                  if rt.get("block_time_s") else None)},
     }, separators=(",", ":"))
 
-    body = ('  <h1 class="btitle">The Bitcoin Board</h1>\n'
+    body = ('  <h1 class="btitle">%s'
+            'The Bitcoin Board</h1>\n' % BB_COIN_SVG.replace("__ACCENT__", ACCENT) +
             '  <p class="bblede">Everything Bitcoin publishes about itself, on one '
             'page: how many coins exist, how hard they are to mine, what is waiting '
             'to be confirmed, and how long until the next halving. The network is '
