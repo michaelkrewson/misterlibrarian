@@ -287,17 +287,50 @@ def verse_count(needle: str, books) -> int | None:
     return total
 
 
+def _book_hint(frag: str, path: str) -> str | None:
+    """Which book "in this book" means, for the page being checked.
+
+    The compose-time source of truth is the fragment's own wrapper id
+    (`id="chapter-deut19"`), and that stays first because it is unambiguous.
+
+    ⚠ THE FALLBACK IS THE POINT. `build.py` does not carry that id onto the
+    BUILT page, so on `deuteronomy-19.html` the hint was None, `_books_for`
+    returned an EMPTY book list, and every "stands in N verses ... all in this
+    book" claim was counted against nothing and reported as `claims 9, archive
+    says 0` -- a FALSE MISMATCH on a claim that is correct. That is worse than
+    the named-book blind spot the Deuteronomy 17 review fixed: a silent skip
+    merely fails to check, while a spurious failure trains you to stop reading
+    the output, which is the cry-wolf mode this project has already had to fix
+    twice elsewhere. A post-ship review runs on built pages, so the tool has to
+    work there.
+
+    So: fall back to the FILENAME (`deuteronomy-19.html`, `numbers-35.es.html`),
+    resolved through the same `_BOOK_LOOKUP` the named-book scope uses, which
+    means it understands the Spanish stems too. Hyphens become spaces so
+    "song-of-solomon" and "1-kings" resolve.
+
+    Returns None when nothing resolves, which restores exactly the old
+    behaviour -- an unresolvable "this book" is reported UNVERIFIED rather than
+    counted against a guess.
+    """
+    m = re.search(r'id="chapter-([a-z]+)\d+"', frag)
+    if m:
+        byid = {"deut": "Deuteronomy", "gen": "Genesis", "exod": "Exodus",
+                "lev": "Leviticus", "num": "Numbers"}.get(m.group(1))
+        if byid:
+            return byid
+    stem = os.path.basename(path).split(".")[0]
+    stem = re.sub(r"-\d+$", "", stem).replace("-", " ").strip()
+    return _BOOK_LOOKUP.get(_deaccent(stem).lower())
+
+
 def main() -> int:
     if len(sys.argv) < 2:
         print(__doc__.strip().split("\n\n")[1])
         return 2
     path = sys.argv[1]
     frag = open(path, encoding="utf-8").read()
-    book_hint = None
-    m = re.search(r'id="chapter-([a-z]+)\d+"', frag)
-    if m:
-        book_hint = {"deut": "Deuteronomy", "gen": "Genesis", "exod": "Exodus",
-                     "lev": "Leviticus", "num": "Numbers"}.get(m.group(1))
+    book_hint = _book_hint(frag, path)
 
     checked = unverified = failed = narrower = byhand = 0
     lines = []
