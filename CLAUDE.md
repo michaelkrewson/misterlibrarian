@@ -210,6 +210,36 @@ another.
      Numbers 8's worst errors were absolutes ("first time it is lit"; "every other *tenufah*
      waves a piece of an animal" — Leviticus 23:20, already on these pages, waves two LIVE
      lambs).
+   - **AND RUN THE COUNT CHECKER, do not re-run your own search:
+     `python3 tools/count_check.py <fragment.html>`.** ⚠ Added 2026-09-03, after the
+     Deuteronomy 15 review found the class had shipped four times and after the
+     Deuteronomy 14 review had already written the rule down in prose. A claim like
+     "the word stands in five verses of the Hebrew Bible" is invisible to
+     `shelf_check.py` (which reads quoted phrases), to `validate_chapter.py` (links)
+     and to `twin_diff.py` (the two languages) — nothing in this project read a
+     number until now. **Every corpus-count claim must carry the Hebrew it counted,
+     in a `data-heb` attribute inside the same sentence** — invisible to the reader,
+     and it cannot drift from the claim the way a sidecar file would:
+     `the root <em data-heb="שמט">shamat</em> stands in <strong>eleven verses</strong>`.
+     ⭐ **The pass that matters is NARROWER, not the re-run.** Re-running the author's
+     own query reproduces the author's own number, which is why a naive checker would
+     have missed the real defect: `תחוס עינך` genuinely stands in five verses, all
+     Deuteronomy, while the head word `תחוס` stands in eleven — five of them Ezekiel
+     saying the identical thing of GOD's eye. So when the query is more than one word
+     the tool runs the head word too and prints both counts. A claim resting on a
+     phrase while the prose talks about "the word" or "the formula" is the failure.
+     ⚠ Two escape hatches, both honest rather than convenient: `a|b` unions two
+     spellings (a word written defectively and plene is one claim and two searches),
+     and **`data-heb-read=` declares a count reached by READING the hits rather than
+     by matching** — Numbers 23's *shephi* is nine verses while the bare consonants
+     match fifty-five, so string-matching cannot check it and the tool says so instead
+     of failing it. ⚠ It deliberately does NOT check a tally of versions against an
+     enumeration ("Nine pluralise it (…eight named…)"): that was built, measured, and
+     dropped — English enumerates versions in too many shapes, and the sentence-scoped
+     version produced two false positives and no true ones on a chapter that had the
+     defect. Counting an enumeration stays yours.
+     **Burden, measured before wiring it in:** 53 such claims across all 327 shipped
+     chapters, in 22 of them, mean 2.4 in a chapter that has any.
    - **Recompute every number.** If a sentence says "two breaks" and then lists three, that
      is a shipped contradiction (it was). If it states a ratio, do the division (Numbers 7
      claimed 5× where the real figure was ~4.25×).
