@@ -6238,6 +6238,82 @@ def check_library_parity():
     return len(dict_gap), len(ency_gap)
 
 
+def check_library_dupes():
+    """A duplicate slug in a library structure must not be able to ship silently.
+
+    ⚠ THIS MUST READ THE SOURCE, NOT THE IMPORTED OBJECT, and that is the whole
+    subtlety. Python collapses a duplicate key while BUILDING the dict literal —
+    no error, no warning, the later entry simply wins — so by the time
+    `DICTIONARY_ES` exists as an object the duplicate is already gone and
+    `Counter(DICTIONARY_ES.keys())` is guaranteed to find nothing. The first cut
+    of this check did exactly that and passed a deliberately re-introduced
+    duplicate. Only the AST of `library_data.py` still holds both keys.
+
+    The defect it catches is silent CONTENT LOSS: DICTIONARY_ES defined `shuv`
+    twice — a Zechariah 1 entry and a Psalm 23 entry, each saying something the
+    other did not — and the Zechariah one had been dead text since the day the
+    second landed. `dabaq`/`davaq` was the same failure wearing two spellings.
+
+    A FAILURE, not a warning, unlike `check_library_parity` above: parity has a
+    large legacy backlog nobody can clear in one sitting, but a duplicate slug is
+    always a fresh mistake and always fixable on the spot.
+
+    `DICTIONARY` and `ENCYCLOPEDIA` are LISTS, where a duplicate renders TWICE
+    instead of silently winning — a different symptom of the same defect, and
+    caught on the same pass.
+    """
+    import ast as _ast
+    import collections as _collections
+
+    src_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "library_data.py")
+    try:
+        tree = _ast.parse(open(src_path, encoding="utf-8").read())
+    except Exception as exc:                      # never let the guard break the build
+        print(f"   \u26a0 duplicate-slug check skipped ({exc})")
+        return 0
+
+    WATCHED = {"DICTIONARY", "DICTIONARY_ES", "ENCYCLOPEDIA", "ENCYCLOPEDIA_ES"}
+    problems = []
+    for node in tree.body:
+        if not isinstance(node, _ast.Assign) or not node.targets:
+            continue
+        name = getattr(node.targets[0], "id", None)
+        if name not in WATCHED:
+            continue
+        val = node.value
+        if isinstance(val, _ast.Dict):
+            keys = [(k.value, k.lineno) for k in val.keys
+                    if isinstance(k, _ast.Constant) and isinstance(k.value, str)]
+        elif isinstance(val, _ast.List):
+            keys = []
+            for el in val.elts:
+                if isinstance(el, _ast.Tuple) and el.elts and isinstance(el.elts[0], _ast.Constant):
+                    keys.append((el.elts[0].value, el.lineno))
+                elif isinstance(el, _ast.Dict):
+                    for k, v in zip(el.keys, el.values):
+                        if (isinstance(k, _ast.Constant) and k.value == "slug"
+                                and isinstance(v, _ast.Constant)):
+                            keys.append((v.value, el.lineno))
+        else:
+            continue
+        counts = _collections.Counter(k for k, _ in keys)
+        dupes = sorted(k for k, n in counts.items() if n > 1)
+        if dupes:
+            lines = {k: [ln for kk, ln in keys if kk == k] for k in dupes}
+            problems.append((name, lines))
+
+    if problems:
+        for name, lines in problems:
+            for slug, lns in sorted(lines.items()):
+                print(f"   \u2717 {name}: DUPLICATE slug {slug!r} at "
+                      f"library_data.py lines {', '.join(str(x) for x in lns)}")
+        print("     A duplicate dict key wins silently and the earlier entry becomes "
+              "dead text. Merge them: read the loser for what only IT says, and let "
+              "the survivor keep the EARLIER first-discussed reference.")
+        raise SystemExit(1)
+    return 0
+
+
 def check_canonicals():
     """Every URL in the sitemap must match the canonical its page declares.
 
@@ -6663,6 +6739,7 @@ def main():
     args = ap.parse_args()
     chapters = extract_source(args.source)
     check_shelf_density(chapters)
+    check_library_dupes()
     check_library_parity()
     check_seo(chapters)
     check_entry_seo()

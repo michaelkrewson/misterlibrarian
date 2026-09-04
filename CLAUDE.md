@@ -176,6 +176,20 @@ another.
    - Atlas coords for every new `kind: "place"` entry (mark a guess `approx: True`)
    `build.py`'s `check_library_parity()` prints the running English/Spanish gap on every
    build — watch that the number doesn't grow on a chapter you just shipped.
+   **`check_library_dupes()` FAILS the build on a duplicate slug** in any of the four
+   structures (added 2026-09-03, after `DICTIONARY_ES` was found defining `shuv` twice —
+   a Zechariah 1 entry and a Psalm 23 entry, each saying something the other did not, with
+   the Zechariah one dead text since the day the second landed; `dabaq`/`davaq` was the
+   same failure wearing two spellings). ⚠ **It reads the AST of `library_data.py`, never
+   the imported object, and that is the whole point:** Python collapses a duplicate key
+   while BUILDING the dict literal — no error, no warning, later entry wins — so
+   `Counter(DICTIONARY_ES.keys())` is *guaranteed* to find nothing. The first cut of the
+   check did exactly that and passed a deliberately re-introduced duplicate; only the
+   source still holds both keys. A failure rather than a warning (unlike parity, which has
+   a legacy backlog) because a duplicate slug is always a fresh mistake and always fixable
+   on the spot. **To fix one: read the LOSER for what only it says, merge both into the
+   entry at the EARLIER position, and let the survivor keep the earlier first-discussed
+   reference.**
 5. **Write the note headings SEO-first.** The meta description and JSON-LD are automatic
    from the chapter's teaser (`check_seo()` guards them) — the one manual step per chapter is
    writing `<h3>` note headings that *lead* with the term someone would actually search for,

@@ -1571,7 +1571,7 @@ DICTIONARY = [
     ("pechah", "pechah", "פֶּחָה", "pechah",
      "GOVERNOR — a loan-word (Akkadian pihatu, later Persian) for the imperial official set over a province, NOT a native king. It is the office Zerubbabel holds over Judah under Darius (Haggai 1:1, 14), and the same title Nehemiah will hold and pointedly refuse to profit from (Nehemiah 5:14-18). Its ordinariness is the point: the house of David now governs as a mid-level administrator of Persia, and even that only by imperial appointment.", ("Haggai", 1, 1)),
     ("shuv", "shuv", "שׁוּב", "shuv",
-     "To RETURN, turn back, repent — the central verb of the prophets, and the engine of Zechariah 1. 'Return (shuvu) to me, and I will return (ashuvah) to you' (1:3) makes repentance reciprocal ⚠ In Psalm 23 the same root frames the psalm's second half: at v3 he 'brings my life BACK' (yeshovev, polel) and at v6 'I shall come BACK to the house of Jehovah' (ve-shavti) — if the Masoretic pointing stands, since those consonants can also be read as yashav, 'dwell,' which is what nearly every version prints, erasing the frame.: not a work that earns God's favor but a turning that God both initiates and answers (Malachi 3:7 quotes the same line). The word threads the chapter — the fathers who would not turn (1:4), the fathers who finally turned back and confessed (1:6), and God himself who has 'returned to Jerusalem with compassion' (1:16). Its noun teshuvah is the Hebrew word for repentance to this day. Jeremiah 29:14 stacks it on itself \u2014 ve-shavti et-shevutkhem, 'I will turn back your turning' \u2014 a doubling every English version flattens to 'restore your fortunes' or 'bring you back from captivity'.", ("Zechariah", 1, 3)),
+     "To RETURN, turn back, repent — the central verb of the prophets, and the engine of Zechariah 1. 'Return (shuvu) to me, and I will return (ashuvah) to you' (1:3) makes repentance reciprocal: not a work that earns God's favor but a turning that God both initiates and answers (Malachi 3:7 quotes the same line). The word threads the chapter — the fathers who would not turn (1:4), the fathers who finally turned back and confessed (1:6), and God himself who has 'returned to Jerusalem with compassion' (1:16). Its noun teshuvah is the Hebrew word for repentance to this day. Jeremiah 29:14 stacks it on itself \u2014 ve-shavti et-shevutkhem, 'I will turn back your turning' \u2014 a doubling every English version flattens to 'restore your fortunes' or 'bring you back from captivity'. ⚠ In Psalm 23 the same root frames the psalm's second half: at v3 he 'brings my life BACK' (yeshovev, polel) and at v6 'I shall come BACK to the house of Jehovah' (ve-shavti) — if the Masoretic pointing stands, since those consonants can also be read as yashav, 'dwell,' which is what nearly every version prints, erasing the frame. ⚠ In Jeremiah 18 the chapter's FIRST turning is not the nation's: it is the potter's, who 'turned' and remade the vessel (18:4), before anyone is asked to turn (18:8, 11).", ("Zechariah", 1, 3)),
     ("hadas", "hadas", "הֲדַס", "hadas",
      "The MYRTLE — a low, fragrant, evergreen shrub. Its branches are among the 'boughs of leafy trees' waved at the Feast of Booths (Nehemiah 8:15), and it is the plant behind a famous name: Esther's Hebrew name is HADASSAH, 'myrtle.' In Zechariah's first vision the divine horseman-patrol stands 'among the myrtle trees that were in the ravine' (1:8) — Israel pictured as something small, sweet-smelling, and in the shade, with heaven's cavalry planted right in its midst. Isaiah makes the myrtle a sign of the reversed curse: 'instead of the brier, the myrtle' (55:13).", ("Zechariah", 1, 8)),
     ("nicham", "nacham", "נָחַם", "nacham",
@@ -14687,10 +14687,19 @@ DICTIONARY_ES = {
         "el pueblo prefiere (18:12); y por fin «pensemos DESIGNIOS contra Jeremías» (18:18). Dios piensa, el "
         "pueblo contrapiensa, y luego apuntan uno contra el hombre que se lo dijo."),
     "shuv": ("volver / arrepentirse",
-        "VOLVER, volverse atrás, arrepentirse — el verbo central de los profetas. «Volveos (<em>shuvu</em>) "
-        "a mí, y yo me volveré (<em>ashuvah</em>) a vosotros» (Zacarías 1:3) hace del arrepentimiento algo "
-        "recíproco: no una obra que gana el favor de Dios, sino un volverse que Dios mismo inicia y "
-        "responde. Su sustantivo <em>teshuvah</em> es la palabra hebrea para arrepentimiento hasta hoy. "
+        "VOLVER, volverse atrás, arrepentirse — el verbo central de los profetas, y el motor de Zacarías 1. "
+        "«Volveos (<em>shuvu</em>) a mí, y yo me volveré (<em>ashuvah</em>) a vosotros» (Zacarías 1:3) hace "
+        "del arrepentimiento algo recíproco: no una obra que gana el favor de Dios, sino un volverse que "
+        "Dios mismo inicia y responde (Malaquías 3:7 cita la misma línea). La palabra recorre el capítulo "
+        "— los padres que no quisieron volverse (1:4), los padres que al fin se volvieron y confesaron "
+        "(1:6), y Dios mismo, que «ha vuelto a Jerusalén con compasión» (1:16). Su sustantivo "
+        "<em>teshuvah</em> es la palabra hebrea para arrepentimiento hasta hoy. Jeremías 29:14 la apila "
+        "sobre sí misma — <em>ve-shavti et-shevutjem</em>, «haré volver vuestro volver» — un doblete que "
+        "toda versión aplana a «restauraré vuestra suerte» o «os haré volver del cautiverio». "
+        "⚠ En el Salmo 23 la misma raíz enmarca la segunda mitad del poema: en v3 él «me hace VOLVER la "
+        "vida» (<em>yeshovev</em>) y en v6 «VOLVERÉ a la casa de Jehová» (<em>ve-shavti</em>) — si se "
+        "sostiene la vocalización masorética, porque esas consonantes también admiten <em>yashav</em>, "
+        "«habitar», que es lo que casi toda versión imprime, borrando el marco. "
         "⚠ En Jeremías 18 el PRIMER volverse del capítulo no es el de la nación: es el del alfarero, que "
         "«volvió» y rehizo la vasija (18:4), antes de que se le pida a nadie volverse (18:8, 11)."),
     "tharseo": ("ánimo",
@@ -15569,12 +15578,6 @@ DICTIONARY_ES = {
         "NOMBRE — lo que Babel intenta agarrar («hagámonos un nombre», Génesis 11:4) y lo que Dios regala "
         "(«engrandeceré tu nombre», 12:2). En el Salmo 23:3 es la razón misma por la que el pastor actúa: "
         "lema'an shemo, «por causa de su nombre»."),
-    "shuv": ("volver",
-        "VOLVER, tornarse, arrepentirse — el verbo central de los profetas. ⚠ En el Salmo 23 la misma raíz "
-        "enmarca la segunda mitad del poema: en v3 él «me hace VOLVER la vida» (yeshovev) y en v6 "
-        "«VOLVERÉ a la casa de Jehová» (ve-shavti) — si se sostiene la vocalización masorética, porque esas "
-        "consonantes también admiten yashav, «habitar», que es lo que casi toda versión imprime, borrando el "
-        "marco."),
     "elyon": ("Altísimo",
         "EL ALTÍSIMO — el nombre que usa Melquisedec al bendecir a Abram (Génesis 14:18). El Salmo 91 lo abre "
         "apilando otros tres nombres en dos versos —Elyon, Shaddai, YHVH, «mi Dios»—, moviéndose del título más "
