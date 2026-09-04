@@ -110,6 +110,53 @@ def as_number(tok: str):
 
 TORAH = ["Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy"]
 
+# Spanish book names, so the TWIN's claims are checked too. The Spanish page says
+# "de Deuteronomio" where the English says "of Deuteronomy", and a checker that
+# reads only English leaves half of every chapter unchecked.
+ES_BOOKS = {
+    "Genesis": "Genesis", "Exodo": "Exodus", "Levitico": "Leviticus",
+    "Numeros": "Numbers", "Deuteronomio": "Deuteronomy", "Josue": "Joshua",
+    "Jueces": "Judges", "1 Samuel": "1 Samuel", "2 Samuel": "2 Samuel",
+    "1 Reyes": "1 Kings", "2 Reyes": "2 Kings", "Isaias": "Isaiah",
+    "Jeremias": "Jeremiah", "Ezequiel": "Ezekiel", "Oseas": "Hosea",
+    "Joel": "Joel", "Amos": "Amos", "Abdias": "Obadiah", "Jonas": "Jonah",
+    "Miqueas": "Micah", "Nahum": "Nahum", "Habacuc": "Habakkuk",
+    "Sofonias": "Zephaniah", "Hageo": "Haggai", "Zacarias": "Zechariah",
+    "Malaquias": "Malachi", "1 Cronicas": "1 Chronicles",
+    "2 Cronicas": "2 Chronicles", "Salmos": "Psalms", "Job": "Job",
+    "Proverbios": "Proverbs", "Rut": "Ruth",
+    "Cantar de los Cantares": "Song of Solomon", "Eclesiastes": "Ecclesiastes",
+    "Lamentaciones": "Lamentations", "Ester": "Esther", "Daniel": "Daniel",
+    "Esdras": "Ezra", "Nehemias": "Nehemiah",
+}
+
+
+def _deaccent(t: str) -> str:
+    return "".join(c for c in unicodedata.normalize("NFD", t)
+                   if unicodedata.category(c) != "Mn")
+
+
+def _book_alternation() -> str:
+    """Every archived book name, English and Spanish, LONGEST FIRST.
+
+    Longest-first is load-bearing: without it a future bare "Samuel" would
+    shadow "1 Samuel", and "Cantar de los Cantares" would be cut at "Cantar".
+    """
+    names = [nm for _c, (nm, _ch) in HS.MECHON_BOOKS.items()] + list(ES_BOOKS)
+    return "|".join(re.escape(x) for x in sorted(set(names), key=len, reverse=True))
+
+
+BOOK_RE = _book_alternation()
+
+# Normalised lookup: accent- and case-insensitive, either language -> the English
+# name the archive indexes by. A .title() pass was tried first and mangled both
+# "Song of Solomon" and "Cantar de los Cantares"; a dict cannot.
+_BOOK_LOOKUP = {}
+for _nm in [nm for _c, (nm, _ch) in HS.MECHON_BOOKS.items()]:
+    _BOOK_LOOKUP[_deaccent(_nm).lower()] = _nm
+for _es, _en in ES_BOOKS.items():
+    _BOOK_LOOKUP[_deaccent(_es).lower()] = _en
+
 # The trigger. A corpus-count claim names a SCOPE -- that is what makes it a
 # claim about the whole text rather than about this chapter.
 SCOPE_PATTERNS = [
@@ -117,6 +164,14 @@ SCOPE_PATTERNS = [
      r"|across the whole text|de la Biblia hebrea|en toda la Biblia", "bible"),
     (r"in the Torah|(?:across|in) the whole Torah|en (?:toda )?la Tor[aá]", "torah"),
     (r"in this book|en este libro", "book"),
+    # A NAMED book: "stands in seventeen verses OF DEUTERONOMY". Deliberately
+    # LAST -- a sentence reading "nine verses of the Hebrew Bible, all nine in
+    # Deuteronomy" is a claim about the BIBLE, and the wider scope must win.
+    # The negative lookahead is what makes this safe rather than noisy: "of
+    # Deuteronomy," is a SCOPE, "at Deuteronomy 19:15" is a CITATION, and only a
+    # following digit tells them apart.
+    (r"(?:of|in|de|en)\s+(?:the\s+book\s+of\s+)?(?P<book>" + BOOK_RE
+     + r")\b(?!\s*\d)", "named"),
 ]
 COUNTING = (r"stands? in|occurs? in|appears? in|est[aá]n? en|aparecen? en"
             r"|nowhere else|ning[uú]n otro|the only|la [uú]nica|el [uú]nico")
@@ -175,10 +230,21 @@ def sentence_bounds(text: str, at: int):
 
 
 def scope_of(text: str):
-    """Which corpus the claim is about -- the scope phrase is the trigger."""
+    """Which corpus the claim is about -- the scope phrase is the trigger.
+
+    A named book comes back as "named:<English book>", so the caller needs no
+    second return value and the scope prints itself in the report.
+    """
     for pat, name in SCOPE_PATTERNS:
-        if re.search(pat, text, re.I):
+        m = re.search(pat, text, re.I)
+        if not m:
+            continue
+        if name != "named":
             return name
+        en = _BOOK_LOOKUP.get(_deaccent(m.group("book")).lower())
+        if not en:
+            return None
+        return "named:" + en
     return None
 
 
@@ -186,6 +252,8 @@ _CORPUS: dict = {}
 
 
 def _books_for(scope: str, book_hint: str | None):
+    if scope.startswith("named:"):
+        return [scope.split(":", 1)[1]]
     if scope == "torah":
         return TORAH
     if scope == "book":
@@ -254,11 +322,15 @@ def main() -> int:
                 # Declared as counted by READING the hits, because the consonants
                 # also spell unrelated words (shephi returns 55 verses; nine are
                 # the word). Report the gap; never fail on it.
+                # ⚠ This whole block used to sit one indent level out, so it ran
+                # for EVERY claim and reached read[0] with `read` empty -- an
+                # IndexError that killed the checker mid-file on 11 of 604
+                # shipped pages, whose claims were therefore never checked.
                 stated = None
-            for cand in COUNT_NEAR.finditer(sent):
-                stated = as_number(cand.group(1))
-                if stated is not None:
-                    break
+                for cand in COUNT_NEAR.finditer(sent):
+                    stated = as_number(cand.group(1))
+                    if stated is not None:
+                        break
                 got = verse_count(read[0], _books_for(scope, book_hint))
                 byhand += 1
                 lines.append("  ~ BY HAND     claims %s; the bare string %r matches %s "
