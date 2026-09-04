@@ -292,6 +292,13 @@ another.
      reason to ship a chapter without it on 2026-08-19.
    - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
      <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
+     ⚠ **In a NEW worktree the shelf dir is not there.** `source/shelf/` is gitignored, so a
+     review worktree cut from `main` has none of the chapter's BG fetches, and every version
+     reads NO DATA — which shelf_check reports as MISS. Deuteronomy 18's review saw **28
+     "PROBLEM(S)" and 18 quotes checked instead of 46**, all of it an artifact of the empty
+     directory rather than a defect in the text. `cp -R` the dir from the chapter's own
+     worktree (or re-fetch) BEFORE believing a single MISS, and treat a sudden collapse in
+     the "checked quotes" count as the tell.
      ⚠ Added 2026-08-22, and the reason matters more than the command. Numbers 27's review
      found two wrong shelf attributions **whose correct text was already fetched and sitting
      in the working directory** — I ran the fetch and never opened the file. So this was not
