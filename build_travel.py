@@ -754,10 +754,12 @@ def build_index(posts):
                '<button class="sortbtn on" data-sort="date">Newest</button>'
                '<button class="sortbtn" data-sort="stars">Highest rated</button></div>')
 
+    # Shown at the bottom of the page, not up under the blurb — page metadata
+    # belongs near the footer, not competing with the intro for attention.
     index_hits = _hits_widget(f"{BASE}/index.html", " visits to this page")
-    index_hits_html = f'\n  <p class="pagehits">{index_hits}</p>' if index_hits else ""
+    index_hits_html = f'\n<p class="pagehits">{index_hits}</p>' if index_hits else ""
     body = f"""<section class="lede lede-home">
-  <p>{html.escape(BLURB)}</p>{index_hits_html}
+  <p>{html.escape(BLURB)}</p>
 </section>
 {_half_defs(17)}{_half_defs(14)}
 {search}
@@ -767,7 +769,7 @@ def build_index(posts):
 {cards}
 </div>
 <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
-{archive}
+{archive}{index_hits_html}
 <script>
 // Search box (in the header, reachable from every page — see header() in
 // build_travel.py) + tag filter, combined. Both narrow the SAME card list, so
@@ -957,7 +959,7 @@ def _post_article(p, extra=""):
     return f"""{extra}<article class="post">{ld}
   {_half_defs()}
   <h1>{html.escape(p['title'])}</h1>
-  {_meta_line(p, show_hits=True)}
+  {_meta_line(p)}
   {_rating_block(p)}
   {_hero_img(p, eager=True)}
   <div class="postbody">
@@ -990,8 +992,16 @@ def build_post_pages(posts):
             nav.append(f'<a class="next" href="{newer["file"]}">{html.escape(newer["title"])} →</a>')
         navbar = f'<nav class="postnav">{"".join(nav)}</nav>' if nav else ""
 
+        # Shown at the bottom of the page, not up by the title — page
+        # metadata, not something competing with the headline for attention.
+        # Skipped on a draft: an unlisted preview, not a real page a visitor
+        # lands on, so a view count there would be nearly meaningless noise.
+        hits = _hits_widget(f"{BASE}/{p['file']}", " views") if not p["draft"] else ""
+        hits_html = f'<p class="pagehits">{hits}</p>' if hits else ""
+
         body = f"""{_post_article(p)}
 {_respond_nudge(p)}
+{hits_html}
 {navbar}
 <p class="backlink"><a href="index.html">← All entries</a></p>"""
 

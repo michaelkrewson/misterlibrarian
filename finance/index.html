@@ -80,7 +80,7 @@ tr.metal{background:rgba(255,255,255,.018)}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
-.pagehits{margin:2px 0 26px;color:#6e7d92;font-size:12.5px;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
 /* ── ask form ────────────────────────────────────────────────────────────── */
 .asklede{margin:30px 0 22px}
@@ -147,7 +147,6 @@ a{color:#f7931a}
 .edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
-.edate-hits{letter-spacing:normal}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
@@ -219,21 +218,6 @@ a{color:#f7931a}
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Treasuries</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
   <p class="tag ftag">What the world&#x27;s money is actually in</p>
-  <p class="pagehits"><span class="hits" id="hits-finance-index-html">👁 <span id="hits-finance-index-html-n">—</span> visits to this page</span>
-<script>
-(function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Findex.html.json")
-    .then(function(r){ return r.json(); })
-    .then(function(d){
-      var n = document.getElementById("hits-finance-index-html-n");
-      if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-finance-index-html"); if (el) el.style.display = "none"; }
-    })
-    .catch(function(){
-      var el = document.getElementById("hits-finance-index-html"); if (el) el.style.display = "none";
-    });
-})();
-</script></p>
   <section class="writing">
     <a class="ecard board-card" href="board.html">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
@@ -266,6 +250,21 @@ a{color:#f7931a}
       <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
     </a>
   </section>
+  <p class="pagehits"><span class="hits" id="hits-finance-index-html">👁 <span id="hits-finance-index-html-n">—</span> visits to this page</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Findex.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-finance-index-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-finance-index-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-finance-index-html"); if (el) el.style.display = "none";
+    });
+})();
+</script></p>
 
   <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Treasuries</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice</footer>
 </div>

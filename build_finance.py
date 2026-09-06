@@ -619,10 +619,13 @@ def build_entry_page(e, board=None):
 
     # Hits are skipped on a draft: it's an unlisted preview, not a real page a
     # visitor lands on, so a view count there would be nearly meaningless noise.
+    # Shown in the footer rather than up by the date — page metadata, not
+    # something competing with the title and date for a reader's attention.
+    hits_foot = ""
     if not e["draft"]:
         hits = _hits_widget("%s/%s" % (BASE, e["file"]), " views")
         if hits:
-            date_line += ' · <span class="edate-hits">%s</span>' % hits
+            hits_foot = " · %s" % hits
 
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
@@ -663,7 +666,7 @@ def build_entry_page(e, board=None):
   %(nudge)s
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
   <footer>
-    %(site)s · <a href="feed.xml">RSS</a> · nothing here is investment advice
+    %(site)s · <a href="feed.xml">RSS</a> · nothing here is investment advice%(hits_foot)s
   </footer>
 </div>
 </body>
@@ -683,6 +686,7 @@ def build_entry_page(e, board=None):
         "body": body,
         "tags": _tag_chips(e),
         "nudge": _ask_nudge(e),
+        "hits_foot": hits_foot,
     }
 
 
@@ -929,17 +933,20 @@ def build_front(entries, board, stats=None, treasuries=None):
     </a>""" % esc(trs_line)
 
     cards = "\n".join(_entry_card(e) for e in entries)
+    # Shown at the bottom of the page, not up under the tagline — page
+    # metadata belongs near the footer, not competing with the intro for a
+    # reader's first-glance attention.
     index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
-    intro = '  <p class="tag ftag">%s</p>%s\n' % (esc(TAGLINE), index_hits_html)
+    intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=BLURB, url=BASE_URL, active="home",
         body="""%s  <section class="writing">
 %s
 %s
-  </section>
-""" % (intro, board_card, cards))
+  </section>%s
+""" % (intro, board_card, cards, index_hits_html))
 
 
 def build_tag_page(tag, entries, indexable):
@@ -1051,7 +1058,7 @@ tr.metal{background:rgba(255,255,255,.018)}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
-.pagehits{margin:2px 0 26px;color:#6e7d92;font-size:12.5px;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
 /* ── ask form ────────────────────────────────────────────────────────────── */
 .asklede{margin:30px 0 22px}
@@ -1118,7 +1125,6 @@ a{color:__ACCENT__}
 .edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
-.edate-hits{letter-spacing:normal}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
