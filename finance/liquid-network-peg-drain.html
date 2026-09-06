@@ -110,6 +110,19 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .respond strong{color:#e8eef7}
 
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
 /* ── nav + cross-publication link ────────────────────────────────────────── */
 header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
   flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
@@ -335,7 +348,39 @@ did their actual job correctly and still couldn't have caught it. Multisig prote
 a dishonest signer. It has never once claimed to protect you from an honest signer looking at
 a lie.</p>
 
-    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-liquid-network.html">liquid network</a><a class="tg" href="tag-sidechain.html">sidechain</a><a class="tg" href="tag-confidential-transactions.html">confidential transactions</a><a class="tg" href="tag-security.html">security</a><a class="tg" href="tag-self-custody.html">self custody</a><a class="tg" href="tag-multisig.html">multisig</a><a class="tg" href="tag-blockstream.html">blockstream</a><a class="tg" href="tag-notes.html">notes</a></div>
+<h2>Update, September 6th: Would Covenants Have Fixed This?</h2>
+
+<p>Someone raised this with me directly the same day I posted the above, and it's a fair
+enough question that it deserves a real answer rather than a reply buried in a thread
+somewhere: would Bitcoin covenants — the general term for script that constrains what a
+future transaction spending a given output is allowed to do, the mechanism behind proposals
+like OP_CTV and the more ambitious designs people build on top of OP_CAT — have prevented
+this. Mostly, no, and I think it's worth being precise about why, because the honest answer
+splits into two different problems wearing the same name.</p>
+
+<p>A covenant restricts <em>where a coin can go next</em>. It has nothing to say about
+<em>whether the amount attached to it was ever honest in the first place</em>. The working
+theory here is a broken range proof — the specific piece of math that's supposed to prove,
+without revealing the real numbers, that Liquid's hidden inputs still equal its hidden
+outputs. A covenant doesn't re-run that proof. It doesn't touch confidential-transaction
+soundness at all. It's a different primitive, doing a different job, and no amount of
+constraining a spend's destination catches an amount that was fraudulent before the covenant
+ever gets to look at it.</p>
+
+<p>Where the instinct isn't wrong is a step to the side of the actual bug: covenants are the
+building block behind bridge designs — drivechains, and the newer BitVM-style constructions —
+that let a withdrawal be validated by a math-and-economics challenge game instead of by
+fifteen companies' signatures. That really would remove the specific failure this week
+demonstrated, an honest federation correctly approving a transaction it had no way to know
+was built on a lie. I'd take that trade. But it doesn't fully get you out of the woods either:
+a covenant-secured bridge still has to correctly interpret whatever the sidechain's own
+internal accounting says happened, and if that accounting is the thing that's broken — which
+is exactly what's alleged here — the bridge needs its own independent proof that the
+sidechain's state is real, not just a script confirming a withdrawal matches what it was
+told. Building that correctly is the genuinely unsolved part of this whole line of research.
+Covenants are necessary plumbing for a better answer. They are not, on their own, the fix.</p>
+
+    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-liquid-network.html">liquid network</a><a class="tg" href="tag-sidechain.html">sidechain</a><a class="tg" href="tag-confidential-transactions.html">confidential transactions</a><a class="tg" href="tag-security.html">security</a><a class="tg" href="tag-self-custody.html">self custody</a><a class="tg" href="tag-multisig.html">multisig</a><a class="tg" href="tag-blockstream.html">blockstream</a><a class="tg" href="tag-covenants.html">covenants</a><a class="tg" href="tag-notes.html">notes</a></div>
   </article>
   <div class="respond"><p><strong>Got a question?</strong> Something here you want pushed on, or think I have wrong? <a href="ask.html?re=Nearly%20Four%20Thousand%20Bitcoin%2C%20and%20Why%20I%20Uninstalled%20Aqua">Ask Mr. Librarian</a> — it goes straight to my desk.</p></div>
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>

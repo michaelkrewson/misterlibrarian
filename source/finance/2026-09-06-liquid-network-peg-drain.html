@@ -1,6 +1,6 @@
 title: Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua
 date: 2026-09-06
-tags: bitcoin, liquid network, sidechain, confidential transactions, security, self custody, multisig, blockstream, notes
+tags: bitcoin, liquid network, sidechain, confidential transactions, security, self custody, multisig, blockstream, covenants, notes
 summary: A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid's confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.
 hero: aqua-wallet-icon.png
 hero_alt: The Aqua Wallet app icon — a dark blue teardrop inside an upside-down diamond, on a bright sky-blue rounded square
@@ -118,3 +118,35 @@ specialists can really check, and a group of otherwise careful, well-intentioned
 did their actual job correctly and still couldn't have caught it. Multisig protects you from
 a dishonest signer. It has never once claimed to protect you from an honest signer looking at
 a lie.</p>
+
+<h2>Update, September 6th: Would Covenants Have Fixed This?</h2>
+
+<p>Someone raised this with me directly the same day I posted the above, and it's a fair
+enough question that it deserves a real answer rather than a reply buried in a thread
+somewhere: would Bitcoin covenants — the general term for script that constrains what a
+future transaction spending a given output is allowed to do, the mechanism behind proposals
+like OP_CTV and the more ambitious designs people build on top of OP_CAT — have prevented
+this. Mostly, no, and I think it's worth being precise about why, because the honest answer
+splits into two different problems wearing the same name.</p>
+
+<p>A covenant restricts <em>where a coin can go next</em>. It has nothing to say about
+<em>whether the amount attached to it was ever honest in the first place</em>. The working
+theory here is a broken range proof — the specific piece of math that's supposed to prove,
+without revealing the real numbers, that Liquid's hidden inputs still equal its hidden
+outputs. A covenant doesn't re-run that proof. It doesn't touch confidential-transaction
+soundness at all. It's a different primitive, doing a different job, and no amount of
+constraining a spend's destination catches an amount that was fraudulent before the covenant
+ever gets to look at it.</p>
+
+<p>Where the instinct isn't wrong is a step to the side of the actual bug: covenants are the
+building block behind bridge designs — drivechains, and the newer BitVM-style constructions —
+that let a withdrawal be validated by a math-and-economics challenge game instead of by
+fifteen companies' signatures. That really would remove the specific failure this week
+demonstrated, an honest federation correctly approving a transaction it had no way to know
+was built on a lie. I'd take that trade. But it doesn't fully get you out of the woods either:
+a covenant-secured bridge still has to correctly interpret whatever the sidechain's own
+internal accounting says happened, and if that accounting is the thing that's broken — which
+is exactly what's alleged here — the bridge needs its own independent proof that the
+sidechain's state is real, not just a script confirming a withdrawal matches what it was
+told. Building that correctly is the genuinely unsolved part of this whole line of research.
+Covenants are necessary plumbing for a better answer. They are not, on their own, the fix.</p>

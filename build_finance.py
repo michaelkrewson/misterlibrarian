@@ -581,6 +581,31 @@ def _foot():
             % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME)))
 
 
+FRONT_HERO_IMG = "us-bullion-depository.jpg"
+FRONT_HERO_ALT = ("The United States Bullion Depository at Fort Knox, Kentucky — a squat "
+                   "granite vault behind a chain-link perimeter fence, guard towers at its "
+                   "corners, floodlit windows barred")
+FRONT_HERO_CREDIT = (
+    'The United States Bullion Depository, Fort Knox — half the gold on the board below is '
+    'kept behind that granite. Photo: Cliff, via '
+    '<a href="https://commons.wikimedia.org/wiki/File:U.S._Bullion_Depository-adjust2.jpg" '
+    'rel="noopener" target="_blank">Wikimedia Commons</a>, licensed '
+    '<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" '
+    'target="_blank">CC BY-SA 4.0</a> (cropped).')
+
+
+def _front_hero():
+    """The publication's one page-wide photo, front and center on the index.
+
+    Not an entry hero (see _entry_hero) — this is the front page's own fixed
+    banner, so it has no per-entry credit/alt plumbing to reuse.
+    """
+    dims = blogkit.dim_attrs(os.path.join(OUT, "img"), FRONT_HERO_IMG)
+    return ('<div class="fronthero"><figure><img src="img/%s" alt="%s"%s loading="eager"/>'
+            '<figcaption>%s</figcaption></figure></div>'
+            % (FRONT_HERO_IMG, esc(FRONT_HERO_ALT), dims, FRONT_HERO_CREDIT))
+
+
 def _entry_hero(e):
     if not e["hero"]:
         return ""
@@ -942,11 +967,11 @@ def build_front(entries, board, stats=None, treasuries=None):
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=BLURB, url=BASE_URL, active="home",
-        body="""%s  <section class="writing">
+        body="""%s%s  <section class="writing">
 %s
 %s
   </section>%s
-""" % (intro, board_card, cards, index_hits_html))
+""" % (_front_hero(), intro, board_card, cards, index_hits_html))
 
 
 def build_tag_page(tag, entries, indexable):
@@ -1087,6 +1112,19 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 .respond p{margin:0;color:#a9b7c9;font-size:15px;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .respond strong{color:#e8eef7}
+
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
 
 /* ── nav + cross-publication link ────────────────────────────────────────── */
 header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
