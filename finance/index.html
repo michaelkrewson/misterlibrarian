@@ -200,6 +200,33 @@ a{color:#f7931a}
 .ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
 .ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
 
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── the archive list — whatever rotated out of the tile grid ────────────── */
+.panel ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
 @media (max-width:720px){
   .etitle{font-size:26px}
   .entry p,.entry ul,.entry ol{font-size:16px}
@@ -232,36 +259,38 @@ a{color:#f7931a}
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Treasuries</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
 <div class="fronthero"><figure><img src="img/us-bullion-depository.jpg" alt="The United States Bullion Depository at Fort Knox, Kentucky — a squat granite vault behind a chain-link perimeter fence, guard towers at its corners, floodlit windows barred" width="1200" height="444" loading="eager"/><figcaption>The United States Bullion Depository, Fort Knox — half the gold on the board below is kept behind that granite. Photo: Cliff, via <a href="https://commons.wikimedia.org/wiki/File:U.S._Bullion_Depository-adjust2.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption></figure></div>  <p class="tag ftag">What the world&#x27;s money is actually in</p>
   <section class="writing">
-    <a class="ecard board-card" href="board.html">
+    <div class="tilegrid">
+    <a class="tile board-card" href="board.html">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">The Asset Board</span>
       <span class="ec-s">Gold, silver, the biggest public companies and Bitcoin, ranked by what the market says they are worth — Bitcoin currently sits at #11.</span>
     </a>
-    <a class="ecard board-card" href="bitcoin.html">
+    <a class="tile board-card" href="bitcoin.html">
       <span class="ec-d">STANDING PAGE · LIVE</span>
       <span class="ec-t">The Bitcoin Board</span>
       <span class="ec-s">Block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.</span>
     </a>
-    <a class="ecard board-card" href="treasuries.html">
+    <a class="tile board-card" href="treasuries.html">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">Treasuries</span>
       <span class="ec-s">Public companies, miners, ETFs, countries, private companies and DeFi protocols — 3,441,861 BTC, ranked by who holds it.</span>
     </a>
-    <a class="ecard" href="liquid-network-peg-drain.html">
+    <a class="tile" href="liquid-network-peg-drain.html">
       <span class="ec-d">SEPTEMBER 6, 2026</span>
       <span class="ec-t">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</span>
       <span class="ec-s">A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</span>
     </a>
-    <a class="ecard" href="how-many-bitcoins-are-there.html">
+    <a class="tile" href="how-many-bitcoins-are-there.html">
       <span class="ec-d">AUGUST 8, 2026</span>
       <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
       <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. Here&#x27;s the arithmetic, and the two things about it that actually surprised me.</span>
     </a>
-    <a class="ecard" href="coldcard-bitkey-security.html">
+    <a class="tile" href="coldcard-bitkey-security.html">
       <span class="ec-d">AUGUST 4, 2026</span>
       <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
       <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
     </a>
+    </div>
   </section>
   <p class="pagehits"><span class="hits" id="hits-finance-index-html">👁 <span id="hits-finance-index-html-n">—</span> visits to this page</span>
 <script>

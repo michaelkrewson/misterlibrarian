@@ -76,6 +76,18 @@ META_DESC_MIN = 70
 # until enough entries share the tag to make the page its own answer.
 TAG_INDEX_MIN = 2
 
+# How many tiles show on the front page before older ones rotate into the
+# Archive list below — the standing pages (Asset Board, Bitcoin Board,
+# Treasuries) count against this limit too, not just entries, so the front
+# page never grows without bound just because one more thing exists on the
+# site. The standing pages are listed first (see build_front), so in
+# practice they hold their spots until FRONT_TILE_LIMIT drops below 3 or
+# there simply isn't room left after them — they are not hard-pinned, just
+# first in line. Nothing is ever lost: a tile that rotates out moves to the
+# Archive list, one click further down, same as it would on the travel
+# blog's own index.
+FRONT_TILE_LIMIT = 6
+
 # The sibling publication. The Bible project at the root is deliberately NOT
 # linked from here and must not be — see the README. These two are.
 SIBLING_NAME = "The Librarian Abroad"
@@ -724,6 +736,38 @@ def _entry_card(e):
                           esc(e["title"]), esc(e["summary"])))
 
 
+def _front_item(*, href, label, title, desc, board=False):
+    """One thing eligible to appear on the front page — an entry or a
+    standing page — in the single shape both `_tile` and `_archive_row`
+    render from. Keeping entries and standing pages in the same shape is
+    what lets them share one rotation pool instead of two separate lists
+    that each need their own cutoff logic."""
+    return {"href": href, "label": label, "title": title, "desc": desc, "board": board}
+
+
+def _tile(item):
+    """A boxed grid tile — the front page's equivalent of the travel blog's
+    `.card`. Reuses the .ec-d/.ec-t/.ec-s text styles from `_entry_card`
+    (those only style the spans, not the container), so the two only differ
+    in the outer box, not the typography."""
+    cls = "tile board-card" if item["board"] else "tile"
+    return ('    <a class="%s" href="%s">\n'
+            '      <span class="ec-d">%s</span>\n'
+            '      <span class="ec-t">%s</span>\n'
+            '      <span class="ec-s">%s</span>\n'
+            '    </a>' % (cls, esc(item["href"]), esc(item["label"]),
+                          esc(item["title"]), esc(item["desc"])))
+
+
+def _archive_row(item):
+    """A compact one-line fallback for whatever doesn't fit in
+    FRONT_TILE_LIMIT tiles — same information as a tile, no box, no
+    description, just enough to find it again. Mirrors the travel blog's
+    own `<ul class="archive">` pattern."""
+    return ('    <li><span class="ec-d">%s</span><a href="%s">%s</a></li>'
+            % (esc(item["label"]), esc(item["href"]), esc(item["title"])))
+
+
 def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
@@ -914,50 +958,65 @@ def build_thanks():
 
 
 def build_front(entries, board, stats=None, treasuries=None):
-    """The publication's front page: what has been written, newest first.
+    """The publication's front page: what has been written, newest first —
+    as a bounded grid of tiles, not a list that grows forever.
 
     The board used to live here and has moved to its own page. It is a standing
     reference that rewrites itself every few hours, not a piece of writing, and
     keeping it at the top pushed the actual entries below the fold on a laptop —
     which is a strange thing for a publication to do to its own writing.
+
+    Everything eligible for the front page — the standing pages AND every
+    entry — goes into one pool (`_front_item` gives both the same shape), the
+    first FRONT_TILE_LIMIT of it renders as tiles, and whatever's left over
+    renders as compact rows in an Archive list below (see `_tile`,
+    `_archive_row`). Standing pages are listed first, so they hold their
+    spots for as long as there's room after them — not because they're
+    hard-pinned, just because there are only three of them and the limit
+    is bigger than three. Nothing on the list is ever exempt from rotating
+    out; there just isn't yet enough on this site for it to happen.
     """
     btc = board.get("btc_rank")
     board_line = ("Gold, silver, the biggest public companies and Bitcoin, ranked by "
                   "what the market says they are worth")
     if btc:
         board_line += " — Bitcoin currently sits at #%d" % btc
-    board_card = """    <a class="ecard board-card" href="board.html">
-      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">The Asset Board</span>
-      <span class="ec-s">%s.</span>
-    </a>""" % esc(board_line)
+    pool = [_front_item(href="board.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
+                        title="The Asset Board", desc=board_line + ".", board=True)]
 
-    # The Bitcoin board's card only appears once there is a board to link to. A
-    # card promising a live page, pointing at a file the build never wrote
-    # because the network was down, is worse than no card.
+    # The Bitcoin board's tile only appears once there is a board to link to. A
+    # tile promising a live page, pointing at a file the build never wrote
+    # because the network was down, is worse than no tile.
     if stats and stats.get("tip", {}).get("height"):
         btc_line = ("Block height, supply, difficulty, the mempool and the next "
                     "halving — the network's own numbers, live while you watch")
-        board_card += """
-    <a class="ecard board-card" href="bitcoin.html">
-      <span class="ec-d">STANDING PAGE · LIVE</span>
-      <span class="ec-t">The Bitcoin Board</span>
-      <span class="ec-s">%s.</span>
-    </a>""" % esc(btc_line)
+        pool.append(_front_item(href="bitcoin.html", label="STANDING PAGE · LIVE",
+                                title="The Bitcoin Board", desc=btc_line + ".", board=True))
 
-    # Same "don't link to a page the build didn't write" rule as the Bitcoin card.
+    # Same "don't link to a page the build didn't write" rule as the Bitcoin tile.
     if treasuries and treasuries.get("rows"):
         trs_line = ("Public companies, miners, ETFs, countries, private companies "
                     "and DeFi protocols — %s BTC, ranked by who holds it"
                     % _btc_amt(treasuries.get("grand_total_btc", 0)))
-        board_card += """
-    <a class="ecard board-card" href="treasuries.html">
-      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">Treasuries</span>
-      <span class="ec-s">%s.</span>
-    </a>""" % esc(trs_line)
+        pool.append(_front_item(href="treasuries.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
+                                title="Treasuries", desc=trs_line + ".", board=True))
 
-    cards = "\n".join(_entry_card(e) for e in entries)
+    pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
+                         title=e["title"], desc=e["summary"]) for e in entries]
+
+    tiles = "\n".join(_tile(it) for it in pool[:FRONT_TILE_LIMIT])
+    overflow = pool[FRONT_TILE_LIMIT:]
+    archive_html = ""
+    if overflow:
+        rows = "\n".join(_archive_row(it) for it in overflow)
+        archive_html = """
+  <section class="panel" id="archive">
+    <h2>Archive</h2>
+    <ul class="archive">
+%s
+    </ul>
+  </section>""" % rows
+
     # Shown at the bottom of the page, not up under the tagline — page
     # metadata belongs near the footer, not competing with the intro for a
     # reader's first-glance attention.
@@ -968,10 +1027,11 @@ def build_front(entries, board, stats=None, treasuries=None):
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=BLURB, url=BASE_URL, active="home",
         body="""%s%s  <section class="writing">
+    <div class="tilegrid">
 %s
-%s
-  </section>%s
-""" % (_front_hero(), intro, board_card, cards, index_hits_html))
+    </div>
+  </section>%s%s
+""" % (_front_hero(), intro, tiles, archive_html, index_hits_html))
 
 
 def build_tag_page(tag, entries, indexable):
@@ -1202,6 +1262,33 @@ a{color:__ACCENT__}
   font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
 .ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
 .ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── the archive list — whatever rotated out of the tile grid ────────────── */
+.panel ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
 
 @media (max-width:720px){
   .etitle{font-size:26px}
