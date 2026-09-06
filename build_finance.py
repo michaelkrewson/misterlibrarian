@@ -78,12 +78,11 @@ TAG_INDEX_MIN = 2
 
 # How many tiles show on the front page before older ones rotate into the
 # Archive list below — the standing pages (Asset Board, Bitcoin Board,
-# Treasuries) count against this limit too, not just entries, so the front
-# page never grows without bound just because one more thing exists on the
-# site. The standing pages are listed first (see build_front), so in
-# practice they hold their spots until FRONT_TILE_LIMIT drops below 3 or
-# there simply isn't room left after them — they are not hard-pinned, just
-# first in line. Nothing is ever lost: a tile that rotates out moves to the
+# Treasuries) count against this limit exactly like entries do, sorted into
+# the same pool by the same date (see build_front / _parse_generated_date).
+# No special-casing: a standing page whose fetcher stalls and stops
+# refreshing genuinely ages and can rotate out, same as an old entry would.
+# Nothing is ever lost either way — a tile that rotates out moves to the
 # Archive list, one click further down, same as it would on the travel
 # blog's own index.
 FRONT_TILE_LIMIT = 6
@@ -736,13 +735,29 @@ def _entry_card(e):
                           esc(e["title"]), esc(e["summary"])))
 
 
-def _front_item(*, href, label, title, desc, board=False):
+def _front_item(*, href, label, title, desc, date, board=False):
     """One thing eligible to appear on the front page — an entry or a
     standing page — in the single shape both `_tile` and `_archive_row`
-    render from. Keeping entries and standing pages in the same shape is
-    what lets them share one rotation pool instead of two separate lists
-    that each need their own cutoff logic."""
-    return {"href": href, "label": label, "title": title, "desc": desc, "board": board}
+    render from. Keeping entries and standing pages in the same shape,
+    each carrying a real `date` to sort by, is what lets them share one
+    rotation pool instead of two separate lists that each need their own
+    cutoff logic — or worse, a hardcoded "boards always come first" order
+    that never actually rotates them."""
+    return {"href": href, "label": label, "title": title, "desc": desc,
+            "board": board, "date": date}
+
+
+def _parse_generated_date(s):
+    """A standing page's last-refresh date, pulled from its own JSON's
+    `generated` field (e.g. "2026-09-06 21:14 UTC") — for sorting it
+    alongside dated entries on the front page. Fails toward `dt.date.min`,
+    the oldest possible date, never toward looking artificially fresh: a
+    board whose fetcher has stalled should sink in the rotation on its own,
+    not jump the queue because its timestamp failed to parse."""
+    try:
+        return dt.date.fromisoformat((s or "")[:10])
+    except ValueError:
+        return dt.date.min
 
 
 def _tile(item):
@@ -967,14 +982,16 @@ def build_front(entries, board, stats=None, treasuries=None):
     which is a strange thing for a publication to do to its own writing.
 
     Everything eligible for the front page — the standing pages AND every
-    entry — goes into one pool (`_front_item` gives both the same shape), the
-    first FRONT_TILE_LIMIT of it renders as tiles, and whatever's left over
-    renders as compact rows in an Archive list below (see `_tile`,
-    `_archive_row`). Standing pages are listed first, so they hold their
-    spots for as long as there's room after them — not because they're
-    hard-pinned, just because there are only three of them and the limit
-    is bigger than three. Nothing on the list is ever exempt from rotating
-    out; there just isn't yet enough on this site for it to happen.
+    entry — goes into one pool (`_front_item` gives both the same shape,
+    each carrying a real `date`), sorted newest-first, and the first
+    FRONT_TILE_LIMIT of THAT renders as tiles; whatever's left over renders
+    as compact rows in an Archive list below (see `_tile`, `_archive_row`).
+    No special-casing: a standing page's date is when its own JSON was last
+    generated (`_parse_generated_date`), so it competes on exactly the same
+    footing as an entry's publish date and rotates out the same way — it
+    just usually won't, because these refresh often enough to stay recent.
+    On a tied date, an entry sorts ahead of a standing page: publishing
+    something new is the more significant event of the two.
     """
     btc = board.get("btc_rank")
     board_line = ("Gold, silver, the biggest public companies and Bitcoin, ranked by "
@@ -982,7 +999,8 @@ def build_front(entries, board, stats=None, treasuries=None):
     if btc:
         board_line += " — Bitcoin currently sits at #%d" % btc
     pool = [_front_item(href="board.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
-                        title="The Asset Board", desc=board_line + ".", board=True)]
+                        title="The Asset Board", desc=board_line + ".", board=True,
+                        date=_parse_generated_date(board.get("generated")))]
 
     # The Bitcoin board's tile only appears once there is a board to link to. A
     # tile promising a live page, pointing at a file the build never wrote
@@ -991,7 +1009,8 @@ def build_front(entries, board, stats=None, treasuries=None):
         btc_line = ("Block height, supply, difficulty, the mempool and the next "
                     "halving — the network's own numbers, live while you watch")
         pool.append(_front_item(href="bitcoin.html", label="STANDING PAGE · LIVE",
-                                title="The Bitcoin Board", desc=btc_line + ".", board=True))
+                                title="The Bitcoin Board", desc=btc_line + ".", board=True,
+                                date=_parse_generated_date(stats.get("generated"))))
 
     # Same "don't link to a page the build didn't write" rule as the Bitcoin tile.
     if treasuries and treasuries.get("rows"):
@@ -999,10 +1018,16 @@ def build_front(entries, board, stats=None, treasuries=None):
                     "and DeFi protocols — %s BTC, ranked by who holds it"
                     % _btc_amt(treasuries.get("grand_total_btc", 0)))
         pool.append(_front_item(href="treasuries.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
-                                title="Treasuries", desc=trs_line + ".", board=True))
+                                title="Treasuries", desc=trs_line + ".", board=True,
+                                date=_parse_generated_date(treasuries.get("generated"))))
 
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
-                         title=e["title"], desc=e["summary"]) for e in entries]
+                         title=e["title"], desc=e["summary"], date=e["date"]) for e in entries]
+
+    # Ascending on this transformed key == newest date first, entry-before-
+    # board on a tie (see docstring) — no reverse=True, which would also
+    # flip the tie-break the wrong way round.
+    pool.sort(key=lambda it: (-it["date"].toordinal(), it["board"]))
 
     tiles = "\n".join(_tile(it) for it in pool[:FRONT_TILE_LIMIT])
     overflow = pool[FRONT_TILE_LIMIT:]
