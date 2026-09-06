@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" role="img"
+     aria-label="Diagram: real BTC locked with a federation multisig on one side, confidential L-BTC on the sidechain on the other, a break in the confidential-amount check letting extra L-BTC appear, and the federation signing a peg-out for it because the burn transaction still looked well-formed">
+  <rect width="900" height="640" fill="#0a0f1a"/>
+
+  <text x="450" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">The peg only checks the shape of a transaction — not what's inside it</text>
+
+  <!-- Left: real BTC locked -->
+  <g transform="translate(150,190)">
+    <circle r="62" fill="#0d1520" stroke="#e8c968" stroke-width="2.5"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#e8c968">₿</text>
+    <text x="0" y="98" text-anchor="middle" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">Real BTC</text>
+    <text x="0" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8" font-style="italic">held by an 11-of-15 functionary multisig</text>
+  </g>
+
+  <!-- Right: L-BTC on sidechain, confidential -->
+  <g transform="translate(750,190)">
+    <circle r="62" fill="#0d1520" stroke="#a3b378" stroke-width="2.5"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#a3b378">L-₿</text>
+    <text x="0" y="98" text-anchor="middle" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">L-BTC</text>
+    <text x="0" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8" font-style="italic">amount hidden by confidential transactions</text>
+  </g>
+
+  <!-- peg-in arrow -->
+  <line x1="222" y1="190" x2="678" y2="190" stroke="rgba(232,201,104,.35)" stroke-width="2" marker-end="url(#arrow1)"/>
+  <text x="450" y="175" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">peg-in: lock 1 BTC, mint 1 L-BTC</text>
+
+  <!-- the break -->
+  <g transform="translate(450,300)">
+    <rect x="-150" y="-34" width="300" height="68" rx="10" fill="#1a0f12" stroke="#e8865c" stroke-width="2"/>
+    <text x="0" y="-6" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#e8865c">a range-proof check on the</text>
+    <text x="0" y="16" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#e8865c">blinded amounts failed to hold</text>
+  </g>
+  <line x1="450" y1="252" x2="450" y2="266" stroke="#e8865c" stroke-width="2"/>
+  <text x="450" y="345" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8" font-style="italic">
+    inputs no longer had to equal outputs — L-BTC could be minted with no BTC behind it
+  </text>
+
+  <!-- peg-out arrow back -->
+  <line x1="678" y1="410" x2="222" y2="410" stroke="rgba(232,134,92,.55)" stroke-width="2.5" marker-end="url(#arrow2)"/>
+  <text x="450" y="398" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">peg-out: burn L-BTC, release real BTC</text>
+
+  <!-- functionaries -->
+  <g transform="translate(450,480)">
+    <rect x="-190" y="-40" width="380" height="80" rx="10" fill="#0d1520" stroke="#e8c968" stroke-width="1.5"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8dfd2">11 of 15 functionaries sign</text>
+    <text x="0" y="14" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8" font-style="italic">the burn was well-formed, so they had no reason to refuse it</text>
+  </g>
+
+  <text x="450" y="600" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#94a3b8">
+    Confidentiality hid the one thing the federation would have needed to see: that the amount was fake.
+  </text>
+
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="rgba(232,201,104,.6)"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e8865c"/>
+    </marker>
+  </defs>
+</svg>

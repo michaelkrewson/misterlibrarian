@@ -7,6 +7,22 @@
   <description>A standing count of the largest assets on earth — gold, silver, the biggest public companies, and Bitcoin — ranked by what the market says they are worth, and refreshed through the day.</description>
   <language>en</language>
   <item>
+    <title>Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</title>
+    <link>https://mistertranslation.com/finance/liquid-network-peg-drain.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/liquid-network-peg-drain.html</guid>
+    <pubDate>Sun, 06 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid's confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</description>
+    <category>bitcoin</category>
+    <category>liquid network</category>
+    <category>sidechain</category>
+    <category>confidential transactions</category>
+    <category>security</category>
+    <category>self custody</category>
+    <category>multisig</category>
+    <category>blockstream</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>How Many Bitcoins Are There, Exactly?</title>
     <link>https://mistertranslation.com/finance/how-many-bitcoins-are-there.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/how-many-bitcoins-are-there.html</guid>
