@@ -48,6 +48,12 @@ BASE_URL = "https://mistertranslation.com/finance/"
 SITE_URL = "https://mistertranslation.com"
 BASE = "/finance"
 
+# Cookie-less, no-consent-banner analytics, same account as the Bible site and
+# The Librarian Abroad so there's one dashboard for all three (see
+# build.py / build_travel.py — same code, same rationale). Set to None to
+# disable entirely.
+GOATCOUNTER_CODE = "mistertranslation"
+
 # The Ledger's front-matter vocabulary. Deliberately NOT the travel blog's: an
 # entry here has no stars, no subject and no place, because it is writing about
 # money rather than a review of somewhere you can go.
@@ -608,6 +614,13 @@ def build_entry_page(e, board=None):
         date_line += (' <span class="live-stamp">· numbers refreshed %s, straight from '
                       'the chain</span>' % esc(stats["stamp"]))
 
+    # Hits are skipped on a draft: it's an unlisted preview, not a real page a
+    # visitor lands on, so a view count there would be nearly meaningless noise.
+    if not e["draft"]:
+        hits = _hits_widget("%s/%s" % (BASE, e["file"]), " views")
+        if hits:
+            date_line += ' · <span class="edate-hits">%s</span>' % hits
+
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
     banner = ('<div class="draftban">🔒 <b>Draft preview</b> — not published. This page '
@@ -629,7 +642,7 @@ def build_entry_page(e, board=None):
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
 <meta name="twitter:card" content="summary"/>
-<style>%(css)s</style>
+<style>%(css)s</style>%(goat)s
 </head>
 <body>
 <div class="wrap">
@@ -659,6 +672,7 @@ def build_entry_page(e, board=None):
         "noindex": noindex,
         "url": url,
         "css": CSS.replace("__ACCENT__", ACCENT),
+        "goat": _goatcounter(),
         "mark": MARK_SVG.replace("__ACCENT__", ACCENT),
         "banner": banner,
         "date": date_line,
@@ -676,6 +690,52 @@ def _entry_card(e):
             '      <span class="ec-s">%s</span>\n'
             '    </a>' % (esc(e["file"]), blogkit.pretty_date(e["date"]).upper(),
                           esc(e["title"]), esc(e["summary"])))
+
+
+def _goatcounter():
+    if not GOATCOUNTER_CODE:
+        return ""
+    return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
+            f'async src="//gc.zgo.at/count.js"></script>')
+
+
+def _hits_id(path):
+    return "hits-" + re.sub(r"[^a-z0-9]+", "-", path.lower()).strip("-")
+
+
+def _hits_widget(path, suffix=""):
+    """A small, inline view-count chip — GoatCounter's public PER-PATH counter
+    (same account as the other two sites, so this rides the one
+    already-configured dashboard), fetched client-side. `path` is the page's
+    own path from the domain root, e.g. "/finance/board.html" — NOT the bare
+    filename, since GoatCounter records whatever `location.pathname` actually
+    was for a visit, and every internal link here is relative (so index.html
+    always resolves to the full /finance/index.html path, never the bare
+    "/finance/"). Same pattern as build_travel.py's _hits_widget.
+
+    Fails SILENT (hides the chip) on any error or a zero-hit path, rather than
+    leave a stuck "—" behind — GoatCounter 404s a thin/zero-data path even
+    though the JSON body is still valid, so this doesn't gate on response.ok.
+    """
+    if not GOATCOUNTER_CODE:
+        return ""
+    hid = _hits_id(path)
+    encoded = urllib.parse.quote(path, safe="")
+    return f"""<span class="hits" id="{hid}">\U0001f441 <span id="{hid}-n">—</span>{html.escape(suffix)}</span>
+<script>
+(function(){{
+  fetch("https://{GOATCOUNTER_CODE}.goatcounter.com/counter/{encoded}.json")
+    .then(function(r){{ return r.json(); }})
+    .then(function(d){{
+      var n = document.getElementById("{hid}-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else {{ var el = document.getElementById("{hid}"); if (el) el.style.display = "none"; }}
+    }})
+    .catch(function(){{
+      var el = document.getElementById("{hid}"); if (el) el.style.display = "none";
+    }});
+}})();
+</script>"""
 
 
 def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website",
@@ -700,7 +760,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
 <meta name="twitter:card" content="summary"/>
-<style>%(css)s</style>
+<style>%(css)s</style>%(goat)s
 </head>
 <body>
 <div class="wrap">
@@ -719,7 +779,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        # which silently paints the thing black rather than erroring.
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "body": body, "foot": _foot()}
+       "chrome": _chrome(active), "body": body, "foot": _foot(), "goat": _goatcounter()}
 
 
 
@@ -854,7 +914,9 @@ def build_front(entries, board, stats=None):
     </a>""" % esc(btc_line)
 
     cards = "\n".join(_entry_card(e) for e in entries)
-    intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
+    index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
+    index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
+    intro = '  <p class="tag ftag">%s</p>%s\n' % (esc(TAGLINE), index_hits_html)
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=BLURB, url=BASE_URL, active="home",
@@ -974,6 +1036,7 @@ tr.metal{background:rgba(255,255,255,.018)}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:2px 0 26px;color:#6e7d92;font-size:12.5px;text-align:center}
 
 /* ── ask form ────────────────────────────────────────────────────────────── */
 .asklede{margin:30px 0 22px}
@@ -1040,6 +1103,7 @@ a{color:__ACCENT__}
 .edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
+.edate-hits{letter-spacing:normal}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
