@@ -98,6 +98,7 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "source", "finance", "asset_board.json")
 BTC_SRC = os.path.join(ROOT, "source", "finance", "bitcoin_stats.json")
+TREASURIES_SRC = os.path.join(ROOT, "source", "finance", "treasuries.json")
 OUT = os.path.join(ROOT, "finance")
 ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 
@@ -554,11 +555,12 @@ def _nav(active=""):
             '<a href="index.html"%s>Writing</a>'
             '<a href="board.html"%s>Asset Board</a>'
             '<a href="bitcoin.html"%s>Bitcoin Board</a>'
+            '<a href="treasuries.html"%s>Treasuries</a>'
             '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
             '<a class="sib" href="%s" title="%s">%s →</a>'
-            '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("ask"),
-                        SIBLING_URL, esc(SIBLING_BLURB), esc(SIBLING_NAME)))
+            '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
+                        cls("ask"), SIBLING_URL, esc(SIBLING_BLURB), esc(SIBLING_NAME)))
 
 
 def _chrome(active=""):
@@ -572,6 +574,7 @@ def _chrome(active=""):
 def _foot():
     return ('<footer>%s · <a href="board.html">The Asset Board</a> · '
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
+            '<a href="treasuries.html">Treasuries</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
             'nothing here is investment advice</footer>'
@@ -881,7 +884,7 @@ def build_thanks():
                   url="%sthanks.html" % BASE_URL, body=body, noindex=True)
 
 
-def build_front(entries, board, stats=None):
+def build_front(entries, board, stats=None, treasuries=None):
     """The publication's front page: what has been written, newest first.
 
     The board used to live here and has moved to its own page. It is a standing
@@ -912,6 +915,18 @@ def build_front(entries, board, stats=None):
       <span class="ec-t">The Bitcoin Board</span>
       <span class="ec-s">%s.</span>
     </a>""" % esc(btc_line)
+
+    # Same "don't link to a page the build didn't write" rule as the Bitcoin card.
+    if treasuries and treasuries.get("rows"):
+        trs_line = ("Public companies, miners, ETFs, countries, private companies "
+                    "and DeFi protocols — %s BTC, ranked by who holds it"
+                    % _btc_amt(treasuries.get("grand_total_btc", 0)))
+        board_card += """
+    <a class="ecard board-card" href="treasuries.html">
+      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
+      <span class="ec-t">Treasuries</span>
+      <span class="ec-s">%s.</span>
+    </a>""" % esc(trs_line)
 
     cards = "\n".join(_entry_card(e) for e in entries)
     index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
@@ -1264,6 +1279,222 @@ def build_board(board):
     # real search term for a house name nobody is looking up yet.
     return _shell(title="The Asset Board — the biggest assets in the world",
                   desc=desc, url="%sboard.html" % BASE_URL, active="board", body=body)
+
+
+# ─────────────────────────────────────────────────────────── the Treasuries board ──
+#
+# Our own version of bitbo.io/treasuries: who holds the world's Bitcoin, across six
+# kinds of holder. That page is one very long scroll; this one is split the same
+# way The Asset Board and The Bitcoin Board already split off their own standing
+# pages — a hub with the totals + a compact overall leaderboard, and one full page
+# per category. Rendered from source/finance/treasuries.json
+# (tools/fetch_treasuries.py), which is itself just a curated BTC-holdings count
+# (source/finance/treasuries_seed.json) times one live BTC/USD price — see that
+# script's own docstring for why this board ranks by coins held rather than market
+# cap the way The Asset Board does.
+
+TREASURY_CATEGORIES = {
+    "public":  {"title": "Public Companies", "file": "treasuries-public.html",
+                "icon": "🏢",
+                "blurb": "Publicly traded companies holding Bitcoin on their own "
+                         "balance sheet, disclosed in their own SEC/regulatory filings."},
+    "mining":  {"title": "Mining Companies", "file": "treasuries-mining.html",
+                "icon": "⛏️",
+                "blurb": "Bitcoin miners that keep some or all of what they mine "
+                         "instead of selling it immediately."},
+    "etf":     {"title": "ETFs", "file": "treasuries-etf.html", "icon": "📈",
+                "blurb": "Exchange-traded funds holding spot Bitcoin directly on "
+                         "behalf of their shareholders."},
+    "country": {"title": "Countries", "file": "treasuries-countries.html",
+                "icon": "🏛️",
+                "blurb": "Sovereign and government holdings — mostly assets seized "
+                         "in criminal cases, which is what makes these the most "
+                         "contested figures on this whole board."},
+    "private": {"title": "Private Companies", "file": "treasuries-private.html",
+                "icon": "🔒",
+                "blurb": "Privately held companies known or publicly reported to "
+                         "hold Bitcoin. The softest numbers here: none of these "
+                         "file the disclosures a public company has to."},
+    "defi":    {"title": "DeFi", "file": "treasuries-defi.html", "icon": "🔗",
+                "blurb": "Bitcoin custodied to back a tokenized, on-chain "
+                         "representation of itself — wrapped or bridged BTC."},
+}
+TREASURY_CATEGORY_ORDER = ("public", "etf", "country", "mining", "private", "defi")
+
+
+def _btc_amt(v):
+    """847363 -> '847,363'; 11.69 -> '11.69' — a sub-1,000 holding keeps its
+    decimals (otherwise a company holding a fraction of a coin reads as zero)."""
+    return f"{v:,.0f}" if v >= 1000 else f"{v:,.2f}"
+
+
+def treasury_mark(r):
+    """Like mark(): a flag for a country row (the sovereign IS the icon), a
+    coloured monogram for everything else — there are no cached logos for most
+    of these tickers, and a flag standing in for a mining company would be a
+    domicile claim this board cannot actually verify."""
+    if r["category"] == "country" and r.get("country"):
+        return f'<span class="mk mk-e" aria-hidden="true">{esc(r["country"])}</span>'
+    name = r.get("name", "?")
+    colour = MONO[sum(ord(c) for c in name) % len(MONO)]
+    return (f'<span class="mk mk-m" aria-hidden="true" '
+            f'style="background:{colour}22;color:{colour};border-color:{colour}55">'
+            f'{esc(name[0].upper())}</span>')
+
+
+def treasury_row(r, rank, show_category=False):
+    sub = esc(r.get("ticker") or TREASURY_CATEGORIES[r["category"]]["title"])
+    cat_chip = (f'<span class="trscat">{TREASURY_CATEGORIES[r["category"]]["icon"]} '
+                f'{esc(TREASURY_CATEGORIES[r["category"]]["title"])}</span>'
+                if show_category else "")
+    where = esc(r.get("country") or "") if r["category"] != "country" else ""
+    return f"""      <tr>
+        <td class="rk">{rank}</td>
+        <td class="as"><span class="asw">{treasury_mark(r)}<span class="nm">
+          <span class="n1">{esc(r['name'])}</span><span class="n2">{sub}</span></span></span>{cat_chip}</td>
+        <td class="mc">{_btc_amt(r['btc_holdings'])} BTC</td>
+        <td class="px">{money_cap(r['value_usd'])}</td>
+        <td class="pc">{r['pct_of_21m']:.3f}%</td>
+        <td class="wh">{where}</td>
+      </tr>"""
+
+
+TREASURY_CSS = """
+/* ── The Treasuries board ─────────────────────────────────────────────────────
+   Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
+   so it can never collide with the asset table's .board/.mc/.px it also reuses. */
+.trshero{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
+.trsh{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
+.trsh-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trsh-v{margin-top:8px;font-size:24px;line-height:1.15;color:__ACCENT__;
+  letter-spacing:-.01em;font-variant-numeric:tabular-nums;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trsh-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
+.trscards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;margin:28px 0 0}
+.trscard{display:block;padding:18px 20px;border:1px solid #1b2534;border-radius:13px;
+  background:#0a111c;text-decoration:none;color:inherit;transition:border-color .15s}
+.trscard:hover{border-color:__ACCENT__}
+.trscard .tc-i{font-size:22px}
+.trscard .tc-t{display:block;margin-top:9px;font-size:16.5px;color:#e8eef7;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trscard .tc-s{display:block;margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.45}
+.pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
+.trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
+@media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trshero{grid-template-columns:1fr}}
+"""
+
+
+def _treasury_table(rows, show_category=False):
+    body = "\n".join(
+        treasury_row(r, (r["rank_category"] if not show_category else r["rank_overall"]),
+                     show_category=show_category)
+        for r in rows)
+    return f"""  <div class="tw">
+  <table class="board">
+    <thead>
+      <tr>
+        <th class="rk">#</th>
+        <th class="as">Holder</th>
+        <th class="mc">BTC held</th>
+        <th class="px">Value</th>
+        <th class="pc">% of 21M</th>
+        <th class="wh">Where</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+  </table>
+  </div>"""
+
+
+def _treasury_methods_panel():
+    return """  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p>Every row here is a count of coins, not a stock price: <code>value = BTC held ×
+    the current BTC/USD price</code>. That is simpler than The Asset Board's market-cap
+    arithmetic and it is also more honest about what most of these holders actually
+    are — a country or a DeFi protocol has no shares outstanding to price.</p>
+    <p>This is a <b>curated top-holders list, not an exhaustive registry</b>. bitbo.io's
+    own treasuries page tracks around 255 entities; this one tracks the largest and
+    best-documented holder in each category. Public companies and mining companies come
+    from their own SEC/regulatory filings; ETF holdings are approximate and move with
+    daily fund flows; private companies, countries, and DeFi protocols have no filings
+    to check at all; and government figures in particular are frequently disputed,
+    partly unconfirmed, and subject to ongoing legal disposal. Every figure is dated and
+    will be refreshed periodically, not continuously — treat the ranking as directionally
+    right, not as an audited count. Nothing here is investment advice.</p>
+  </div>
+"""
+
+
+def build_treasuries_hub(board):
+    """The top of the tree: category totals, a compact overall leaderboard, and a
+    card linking into each category's own full page."""
+    totals = board.get("totals", {})
+    tiles = "\n".join(
+        f'    <div class="trsh"><div class="trsh-l">{TREASURY_CATEGORIES[c]["icon"]} '
+        f'{esc(TREASURY_CATEGORIES[c]["title"])}</div>'
+        f'<div class="trsh-v">{_btc_amt(totals.get(c, {}).get("btc", 0))} BTC</div>'
+        f'<div class="trsh-s">{money_cap(totals.get(c, {}).get("value_usd", 0))} · '
+        f'{totals.get(c, {}).get("count", 0)} holders</div></div>'
+        for c in TREASURY_CATEGORY_ORDER)
+    cards = "\n".join(
+        f'    <a class="trscard" href="{TREASURY_CATEGORIES[c]["file"]}">'
+        f'<span class="tc-i">{TREASURY_CATEGORIES[c]["icon"]}</span>'
+        f'<span class="tc-t">{esc(TREASURY_CATEGORIES[c]["title"])} →</span>'
+        f'<span class="tc-s">{esc(TREASURY_CATEGORIES[c]["blurb"])}</span></a>'
+        for c in TREASURY_CATEGORY_ORDER)
+
+    top_rows = sorted(board.get("rows", []), key=lambda r: r["btc_holdings"], reverse=True)[:20]
+    table = _treasury_table(top_rows, show_category=True)
+
+    desc = (f"Who holds the world's Bitcoin — {_btc_amt(board.get('grand_total_btc', 0))} BTC "
+            f"across {board.get('count', 0)} public companies, miners, ETFs, "
+            "countries, private companies and DeFi protocols, ranked by coins held.")
+    body = f"""  <h1 class="btitle">Treasuries</h1>
+  <p class="lede">{esc(desc)}</p>
+  <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}</p>
+  <div class="trshero">
+{tiles}
+  </div>
+  <div class="trscards">
+{cards}
+  </div>
+  <h2 style="margin:34px 0 4px;font-weight:400;font-size:19px">The top 20, across every category</h2>
+{table}
+{_treasury_methods_panel()}
+"""
+    return _shell(title="Treasuries — who holds the world's Bitcoin",
+                  desc=desc, url="%streasuries.html" % BASE_URL, active="treasuries",
+                  body=body, extra_css=TREASURY_CSS)
+
+
+def build_treasuries_category(board, category):
+    meta = TREASURY_CATEGORIES[category]
+    rows = sorted((r for r in board.get("rows", []) if r["category"] == category),
+                  key=lambda r: r["btc_holdings"], reverse=True)
+    total = board.get("totals", {}).get(category, {})
+    desc = (f"{meta['title']} holding Bitcoin, ranked by coins held — "
+            f"{_btc_amt(total.get('btc', 0))} BTC across {total.get('count', 0)} "
+            f"holders. {meta['blurb']}")
+    table = _treasury_table(rows, show_category=False)
+    body = f"""  <h1 class="btitle">{meta['icon']} {esc(meta['title'])}</h1>
+  <p class="lede">{esc(meta['blurb'])}</p>
+  <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}
+    <span class="dot">·</span><span class="hl">{_btc_amt(total.get('btc', 0))} BTC
+    ({money_cap(total.get('value_usd', 0))}) across {total.get('count', 0)} holders</span></p>
+{table}
+{_treasury_methods_panel()}
+  <p class="backlink"><a href="treasuries.html">← All Treasuries categories</a></p>
+"""
+    return _shell(title=f"{meta['title']} — Treasuries — {SITE_NAME}",
+                  desc=desc, url="%s%s" % (BASE_URL, meta["file"]), active="treasuries",
+                  body=body, extra_css=TREASURY_CSS)
 
 
 # ───────────────────────────────────────────────────────── the Bitcoin board ──
@@ -2571,7 +2802,10 @@ def build_sitemap(entries, tags):
     """
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today),
-            ("%sbitcoin.html" % BASE_URL, today), ("%sask.html" % BASE_URL, today)]
+            ("%sbitcoin.html" % BASE_URL, today), ("%streasuries.html" % BASE_URL, today),
+            ("%sask.html" % BASE_URL, today)]
+    urls += [("%s%s" % (BASE_URL, meta["file"]), today)
+             for meta in TREASURY_CATEGORIES.values()]
     for e in entries:
         urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
     for tag, es in sorted(tags.items()):
@@ -2613,6 +2847,18 @@ def main():
     live = [e for e in entries if not e["draft"]]
     check_entries(entries)
 
+    # The Treasuries board is optional by the same contract as the Bitcoin board:
+    # missing or unreadable JSON costs exactly its own pages, never the rest of
+    # the publication. Loaded before the front page so its card can appear there.
+    treasuries = None
+    if os.path.exists(TREASURIES_SRC):
+        try:
+            with open(TREASURIES_SRC, encoding="utf-8") as fh:
+                treasuries = json.load(fh)
+        except (ValueError, OSError) as exc:
+            print("  ! treasuries.json unreadable (%s) — skipping the Treasuries "
+                  "board" % exc, file=sys.stderr)
+
     tags = tag_index(live)
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
 
@@ -2620,10 +2866,20 @@ def main():
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
             fh.write(text)
 
-    write("index.html", build_front(live, board, stats))
+    write("index.html", build_front(live, board, stats, treasuries))
     write("ask.html", build_ask())
     write("thanks.html", build_thanks())
     write("board.html", build_board(board))
+
+    if treasuries and treasuries.get("rows"):
+        write("treasuries.html", build_treasuries_hub(treasuries))
+        for category in TREASURY_CATEGORIES:
+            write(TREASURY_CATEGORIES[category]["file"],
+                  build_treasuries_category(treasuries, category))
+    else:
+        print("  ! no treasuries board — leaving the last Treasuries pages in place",
+              file=sys.stderr)
+
     btc_page = build_bitcoin_board(stats, board) if stats else None
     if btc_page:
         write("bitcoin.html", btc_page)

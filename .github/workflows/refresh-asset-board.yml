@@ -2,8 +2,9 @@
 #
 #     tools/fetch_asset_board.py    public quotes    -> source/finance/asset_board.json
 #     tools/fetch_bitcoin_stats.py  the network      -> source/finance/bitcoin_stats.json
+#     tools/fetch_treasuries.py     stdlib + a price -> source/finance/treasuries.json
 #     tools/finance_logos.py        fetches any logo we don't already have cached
-#     build_finance.py              renders both boards from that JSON (stdlib only)
+#     build_finance.py              renders all three boards from that JSON (stdlib only)
 #     commit + push to main         GitHub Pages redeploys (source: main /)
 #
 # HOURLY IS THE FLOOR HERE, NOT THE CEILING
@@ -95,6 +96,13 @@ jobs:
       # chained together. Needs no pip install; it is standard library only.
       - name: Fetch the Bitcoin board
         run: python3 tools/fetch_bitcoin_stats.py
+
+      # Also its own step, for the same reason: the Treasuries board's own curated
+      # seed file failing to parse must not cost the other two boards their
+      # refresh. Needs no pip install — it reads the price the asset-board step
+      # above already fetched, with a keyless fallback of its own.
+      - name: Compute the Treasuries board
+        run: python3 tools/fetch_treasuries.py
 
       - name: Cache any missing logos
         run: python3 tools/finance_logos.py

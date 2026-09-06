@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Public Companies — Treasuries — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Public Companies holding Bitcoin, ranked by coins held — 1,043,343 BTC across 16 holders. Publicly traded companies holding Bitcoin on their own balance sheet, disclosed in their own SEC/regulatory filings."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/treasuries-public.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="Public Companies — Treasuries — The Librarian&#x27;s Ledger"/>
+<meta property="og:description" content="Public Companies holding Bitcoin, ranked by coins held — 1,043,343 BTC across 16 holders. Publicly traded companies holding Bitcoin on their own balance sheet, disclosed in their own SEC/regulatory filings."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/treasuries-public.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:46px;height:46px;flex:0 0 46px}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+h1 .em{color:#f7931a;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#f7931a}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:2px 0 26px;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#f7931a}
+.nav a.sib{color:#7f8fa6;padding-left:20px;border-left:1px solid #1e2938;font-style:italic}
+.nav a.sib:hover{color:#e8865c}          /* the other publication's own accent */
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#f7931a}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
+.wm{font-size:20px;letter-spacing:.01em}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
+.edate-hits{letter-spacing:normal}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+
+/* ── The Treasuries board ─────────────────────────────────────────────────────
+   Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
+   so it can never collide with the asset table's .board/.mc/.px it also reuses. */
+.trshero{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
+.trsh{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
+.trsh-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trsh-v{margin-top:8px;font-size:24px;line-height:1.15;color:#f7931a;
+  letter-spacing:-.01em;font-variant-numeric:tabular-nums;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trsh-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
+.trscards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;margin:28px 0 0}
+.trscard{display:block;padding:18px 20px;border:1px solid #1b2534;border-radius:13px;
+  background:#0a111c;text-decoration:none;color:inherit;transition:border-color .15s}
+.trscard:hover{border-color:#f7931a}
+.trscard .tc-i{font-size:22px}
+.trscard .tc-t{display:block;margin-top:9px;font-size:16.5px;color:#e8eef7;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trscard .tc-s{display:block;margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.45}
+.pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
+.trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
+@media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trshero{grid-template-columns:1fr}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+  <circle cx="23" cy="23" r="21" stroke="#f7931a" stroke-width="1.5" opacity=".55"/>
+  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
+  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
+  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html" class="on">Treasuries</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
+  <h1 class="btitle">🏢 Public Companies</h1>
+  <p class="lede">Publicly traded companies holding Bitcoin on their own balance sheet, disclosed in their own SEC/regulatory filings.</p>
+  <p class="stamp">Updated 2026-09-06 20:52 UTC · BTC $79,953
+    <span class="dot">·</span><span class="hl">1,043,343 BTC
+    ($83.4 B) across 16 holders</span></p>
+  <div class="tw">
+  <table class="board">
+    <thead>
+      <tr>
+        <th class="rk">#</th>
+        <th class="as">Holder</th>
+        <th class="mc">BTC held</th>
+        <th class="px">Value</th>
+        <th class="pc">% of 21M</th>
+        <th class="wh">Where</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rk">1</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">S</span><span class="nm">
+          <span class="n1">Strategy (MicroStrategy)</span><span class="n2">MSTR</span></span></span></td>
+        <td class="mc">847,363 BTC</td>
+        <td class="px">$67.7 B</td>
+        <td class="pc">4.035%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">2</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">T</span><span class="nm">
+          <span class="n1">Twenty One Capital</span><span class="n2">XXI</span></span></span></td>
+        <td class="mc">43,514 BTC</td>
+        <td class="px">$3.5 B</td>
+        <td class="pc">0.207%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">3</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">B</span><span class="nm">
+          <span class="n1">Bitcoin Standard Treasury</span><span class="n2">BSTR</span></span></span></td>
+        <td class="mc">30,021 BTC</td>
+        <td class="px">$2.4 B</td>
+        <td class="pc">0.143%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">4</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">B</span><span class="nm">
+          <span class="n1">Bullish</span><span class="n2">BLSH</span></span></span></td>
+        <td class="mc">24,400 BTC</td>
+        <td class="px">$2.0 B</td>
+        <td class="pc">0.116%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">5</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">M</span><span class="nm">
+          <span class="n1">Metaplanet</span><span class="n2">3350.T</span></span></span></td>
+        <td class="mc">20,000 BTC</td>
+        <td class="px">$1.6 B</td>
+        <td class="pc">0.095%</td>
+        <td class="wh">🇯🇵</td>
+      </tr>
+      <tr>
+        <td class="rk">6</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">S</span><span class="nm">
+          <span class="n1">Strive Asset Management</span><span class="n2">ASST</span></span></span></td>
+        <td class="mc">19,032 BTC</td>
+        <td class="px">$1.5 B</td>
+        <td class="pc">0.091%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">7</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">C</span><span class="nm">
+          <span class="n1">Coinbase Global</span><span class="n2">COIN</span></span></span></td>
+        <td class="mc">15,389 BTC</td>
+        <td class="px">$1.2 B</td>
+        <td class="pc">0.073%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">8</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">T</span><span class="nm">
+          <span class="n1">Tesla</span><span class="n2">TSLA</span></span></span></td>
+        <td class="mc">11,509 BTC</td>
+        <td class="px">$920 M</td>
+        <td class="pc">0.055%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">9</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">T</span><span class="nm">
+          <span class="n1">Trump Media &amp; Technology</span><span class="n2">DJT</span></span></span></td>
+        <td class="mc">9,542 BTC</td>
+        <td class="px">$763 M</td>
+        <td class="pc">0.045%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">10</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">B</span><span class="nm">
+          <span class="n1">Block Inc</span><span class="n2">XYZ</span></span></span></td>
+        <td class="mc">9,032 BTC</td>
+        <td class="px">$722 M</td>
+        <td class="pc">0.043%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">11</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">S</span><span class="nm">
+          <span class="n1">Semler Scientific</span><span class="n2">SMLR</span></span></span></td>
+        <td class="mc">5,000 BTC</td>
+        <td class="px">$400 M</td>
+        <td class="pc">0.024%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">12</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">G</span><span class="nm">
+          <span class="n1">GameStop</span><span class="n2">GME</span></span></span></td>
+        <td class="mc">4,700 BTC</td>
+        <td class="px">$376 M</td>
+        <td class="pc">0.022%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">13</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">T</span><span class="nm">
+          <span class="n1">The Blockchain Group</span><span class="n2">ALTBG.PA</span></span></span></td>
+        <td class="mc">1,700 BTC</td>
+        <td class="px">$136 M</td>
+        <td class="pc">0.008%</td>
+        <td class="wh">🇫🇷</td>
+      </tr>
+      <tr>
+        <td class="rk">14</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">K</span><span class="nm">
+          <span class="n1">KULR Technology</span><span class="n2">KULR</span></span></span></td>
+        <td class="mc">1,083 BTC</td>
+        <td class="px">$87 M</td>
+        <td class="pc">0.005%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">15</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">Z</span><span class="nm">
+          <span class="n1">ZOOZ Strategy</span><span class="n2">ZOOZ</span></span></span></td>
+        <td class="mc">1,046 BTC</td>
+        <td class="px">$84 M</td>
+        <td class="pc">0.005%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+      <tr>
+        <td class="rk">16</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">V</span><span class="nm">
+          <span class="n1">Vida Global</span><span class="n2">VIDA</span></span></span></td>
+        <td class="mc">11.69 BTC</td>
+        <td class="px">$1 M</td>
+        <td class="pc">0.000%</td>
+        <td class="wh">🇺🇸</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p>Every row here is a count of coins, not a stock price: <code>value = BTC held ×
+    the current BTC/USD price</code>. That is simpler than The Asset Board's market-cap
+    arithmetic and it is also more honest about what most of these holders actually
+    are — a country or a DeFi protocol has no shares outstanding to price.</p>
+    <p>This is a <b>curated top-holders list, not an exhaustive registry</b>. bitbo.io's
+    own treasuries page tracks around 255 entities; this one tracks the largest and
+    best-documented holder in each category. Public companies and mining companies come
+    from their own SEC/regulatory filings; ETF holdings are approximate and move with
+    daily fund flows; private companies, countries, and DeFi protocols have no filings
+    to check at all; and government figures in particular are frequently disputed,
+    partly unconfirmed, and subject to ongoing legal disposal. Every figure is dated and
+    will be refreshed periodically, not continuously — treat the ranking as directionally
+    right, not as an audited count. Nothing here is investment advice.</p>
+  </div>
+
+  <p class="backlink"><a href="treasuries.html">← All Treasuries categories</a></p>
+
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Treasuries</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice</footer>
+</div>
+</body>
+</html>
