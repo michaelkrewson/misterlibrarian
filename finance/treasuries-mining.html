@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Mining Companies — Treasuries — The Librarian&#x27;s Ledger</title>
+<title>Mining Companies — Bitcoin Treasuries — The Librarian&#x27;s Ledger</title>
 <meta name="description" content="Mining Companies holding Bitcoin, ranked by coins held — 97,118 BTC across 17 holders. Bitcoin miners that keep some or all of what they mine instead of selling it immediately."/>
 <link rel="canonical" href="https://mistertranslation.com/finance/treasuries-mining.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
-<meta property="og:title" content="Mining Companies — Treasuries — The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="Mining Companies — Bitcoin Treasuries — The Librarian&#x27;s Ledger"/>
 <meta property="og:description" content="Mining Companies holding Bitcoin, ranked by coins held — 97,118 BTC across 17 holders. Bitcoin miners that keep some or all of what they mine instead of selling it immediately."/>
 <meta property="og:url" content="https://mistertranslation.com/finance/treasuries-mining.html"/>
 <meta name="twitter:card" content="summary"/>
@@ -79,6 +79,8 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel li{margin:0 0 6px}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
 .pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
@@ -273,8 +275,41 @@ a{color:#f7931a}
 .ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
 .ao.v{color:#7f8fa6}
 .trsfresh{margin:8px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+.board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
+  font-weight:700;color:#e8eef7}
+.board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:#f7931a}
+.trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 @media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.trshero{grid-template-columns:1fr}}
+
+/* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
+   the H1 on every Treasuries page literally carries the same Bitcoin logo —
+   just this one component out of BB_CSS, not the whole stylesheet, since
+   these pages don't draw the rest of that page's chart/grid. Keep both in
+   sync if the coin mark itself ever changes. */
+.bbmark{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:1.16em;height:1.16em;margin-right:.34em;vertical-align:-.17em}
+.bbmark::before{content:"";position:absolute;inset:-58%;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,147,26,.60) 0%,rgba(247,147,26,.34) 32%,
+    rgba(247,147,26,.10) 55%,rgba(247,147,26,0) 72%);
+  animation:bbglow 4.2s ease-in-out infinite}
+.bbmark svg{position:relative;width:100%;height:100%;display:block;
+  filter:drop-shadow(0 1px 7px rgba(247,147,26,.60))}
+@keyframes bbglow{0%,100%{opacity:.6;transform:scale(.92)}
+  50%{opacity:1;transform:scale(1.08)}}
+
+.trskicker{margin:0 0 10px}
+.trskicker a{display:inline-flex;align-items:center;font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;color:#7f8fa6;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trskicker a:hover{color:#f7931a}
+.trskicker .bbmark{width:1em;height:1em}
+
+/* ⚠️ Must stay LAST — see BB_CSS's own note on why a rule of equal
+   specificity placed earlier silently loses to this one. */
+@media (prefers-reduced-motion:reduce){
+  .bbmark::before{animation:none;opacity:.8}
+}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -285,13 +320,46 @@ a{color:#f7931a}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html" class="on">Treasuries</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html" class="on">Bitcoin Treasuries</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a><a class="sib" href="https://mistertranslation.com/travel/" title="Travels, meals, and musings">The Librarian Abroad →</a></nav></header>
+  <p class="trskicker"><a href="treasuries.html"><span class="bbmark" aria-hidden="true"><svg viewBox="0 0 44 44">
+  <defs>
+    <linearGradient id="bbCoinFace" x1="0.15" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ffd694"/>
+      <stop offset="46%" stop-color="#f7931a"/>
+      <stop offset="100%" stop-color="#a85c07"/>
+    </linearGradient>
+    <linearGradient id="bbCoinRim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe3b4"/>
+      <stop offset="100%" stop-color="#7d4304"/>
+    </linearGradient>
+  </defs>
+  <circle cx="22" cy="22" r="21" fill="url(#bbCoinRim)"/>
+  <circle cx="22" cy="22" r="18.4" fill="url(#bbCoinFace)"/>
+  <g stroke="#fffaf0" fill="none">
+    <!-- The prongs run UNDER the letter and are drawn first, so the bowls'
+         bars cap them cleanly. Round ends; the letter's own strokes are butt
+         ended, because a round cap on the stem overshoots the top bar and
+         leaves a bump on the left shoulder. -->
+    <g stroke-width="2.2" stroke-linecap="round">
+      <path d="M16.9 8.7v5.4M23.4 8.7v5.4M16.9 29.9v5.4M23.4 29.9v5.4"/>
+    </g>
+    <g stroke-width="3.4" stroke-linecap="butt" stroke-linejoin="round">
+      <path d="M16.9 13.6v16.8"/>
+      <!-- The bars start at the stem's OUTER edge (16.9 − 3.4/2 = 15.2), not at
+           its centre line: starting at the centre leaves the letter's top edge
+           1.7 higher to the right of x=16.9 than to the left of it, which reads
+           as a shelf cut out of the left shoulder. -->
+      <path d="M15.2 13.6h7a4.05 4.05 0 010 8.1H15.2"/>
+      <path d="M15.2 21.7h7.8a4.35 4.35 0 010 8.7H15.2"/>
+    </g>
+  </g>
+</svg></span>Bitcoin Treasuries</a></p>
   <h1 class="btitle">⛏️ Mining Companies</h1>
   <p class="lede">Bitcoin miners that keep some or all of what they mine instead of selling it immediately.</p>
-  <p class="stamp">Updated 2026-09-07 00:27 UTC · BTC $80,359
+  <p class="stamp">Updated 2026-09-07 00:49 UTC · BTC $80,359
     <span class="dot">·</span><span class="hl">97,118 BTC
     ($7.8 B) across 17 holders</span></p>
-  <p class="trsfresh">Bitcoin price refreshed 2026-09-07 00:27 UTC ($80,359/BTC) — holdings figures are dated individually per row below (a plain date is verified against a real source, "~" is an estimate); this file was last reviewed 2026-09-06.</p>
+  <p class="trsfresh">Bitcoin price refreshed 2026-09-07 00:49 UTC ($80,359/BTC) — holdings figures are dated individually per row below (a plain date is verified against a real source, "~" is an estimate); this file was last reviewed 2026-09-06.</p>
   <div class="tw">
   <table class="board">
     <thead>
@@ -308,7 +376,7 @@ a{color:#f7931a}
     <tbody>
       <tr>
         <td class="rk">1</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">M</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/mara.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">MARA Holdings</span><span class="n2">MARA</span></span></span></td>
         <td class="mc">36,303 BTC</td>
         <td class="px">$2.9 B</td>
@@ -318,7 +386,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">2</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">R</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/riotplatforms.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Riot Platforms</span><span class="n2">RIOT</span></span></span></td>
         <td class="mc">15,680 BTC</td>
         <td class="px">$1.3 B</td>
@@ -328,7 +396,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">3</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">C</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/cleanspark.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">CleanSpark</span><span class="n2">CLSK</span></span></span></td>
         <td class="mc">13,470 BTC</td>
         <td class="px">$1.1 B</td>
@@ -338,7 +406,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">4</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">H</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/hut8.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Hut 8</span><span class="n2">HUT</span></span></span></td>
         <td class="mc">10,278 BTC</td>
         <td class="px">$826 M</td>
@@ -358,7 +426,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">6</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">H</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/hivedigitaltechnologies.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Hive Digital Technologies</span><span class="n2">HIVE</span></span></span></td>
         <td class="mc">2,500 BTC</td>
         <td class="px">$201 M</td>
@@ -368,7 +436,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">7</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">C</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/canaan-creative.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Canaan Inc</span><span class="n2">CAN</span></span></span></td>
         <td class="mc">1,867 BTC</td>
         <td class="px">$150 M</td>
@@ -398,7 +466,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">10</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">B</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/bitdeer.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Bitdeer Technologies</span><span class="n2">BTDR</span></span></span></td>
         <td class="mc">1,300 BTC</td>
         <td class="px">$104 M</td>
@@ -418,7 +486,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">12</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">C</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/corescientific.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Core Scientific</span><span class="n2">CORZ</span></span></span></td>
         <td class="mc">1,000 BTC</td>
         <td class="px">$80 M</td>
@@ -428,7 +496,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">13</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">B</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/bitfarms.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Bitfarms</span><span class="n2">BITF</span></span></span></td>
         <td class="mc">1,000 BTC</td>
         <td class="px">$80 M</td>
@@ -438,7 +506,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">14</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">I</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/irisenergy.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Iris Energy</span><span class="n2">IREN</span></span></span></td>
         <td class="mc">800.00 BTC</td>
         <td class="px">$64 M</td>
@@ -448,7 +516,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">15</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">T</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/terawulf.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">TeraWulf</span><span class="n2">WULF</span></span></span></td>
         <td class="mc">500.00 BTC</td>
         <td class="px">$40 M</td>
@@ -468,7 +536,7 @@ a{color:#f7931a}
       </tr>
       <tr>
         <td class="rk">17</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">A</span><span class="nm">
+        <td class="as"><span class="asw"><img class="mk" src="img/argoblockchain.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">Argo Blockchain</span><span class="n2">ARBK</span></span></span></td>
         <td class="mc">300.00 BTC</td>
         <td class="px">$24 M</td>
@@ -477,6 +545,17 @@ a{color:#f7931a}
         <td class="wh">🇬🇧</td>
       </tr>
     </tbody>
+    <tfoot>
+      <tr>
+        <td class="rk"></td>
+        <td class="as trstot-l">Total — 17 holders</td>
+        <td class="mc">97,118 BTC</td>
+        <td class="px">$7.8 B</td>
+        <td class="pc">0.462%</td>
+        <td class="ao"></td>
+        <td class="wh"></td>
+      </tr>
+    </tfoot>
   </table>
   </div>
   <div class="panel">
@@ -496,9 +575,9 @@ a{color:#f7931a}
   </div>
 
 <div class="respond"><p><strong>Know a holder we're missing, or think a figure here is wrong?</strong> This board only gets closer to exhaustive with help — include a source if you have one, and it gets checked into the next update. <a href="ask.html?re=Treasuries%20%E2%80%94%20Mining%20Companies">Tell Mr. Librarian →</a></p></div>
-  <p class="backlink"><a href="treasuries.html">← All Treasuries categories</a></p>
+  <p class="backlink"><a href="treasuries.html">← All Bitcoin Treasuries categories</a></p>
 
-  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Treasuries</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice</footer>
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice<p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>
 </div>
 </body>
 </html>

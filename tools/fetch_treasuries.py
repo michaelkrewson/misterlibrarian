@@ -139,6 +139,7 @@ def compute():
             "category": cat,
             "ticker": e.get("ticker"),
             "country": e.get("country"),
+            "domain": e.get("domain"),
             "btc_holdings": float(btc),
             "value_usd": float(btc) * price,
             "pct_of_21m": float(btc) / BTC_TRUE_MAX * 100.0,

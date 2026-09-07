@@ -153,6 +153,27 @@ def _logo_slug(domain):
     return domain.split(".")[0].lower()
 
 
+# tools/finance_logos.py's two sources return different formats: Google's s2
+# service is a real PNG, DuckDuckGo's icon service is an actual .ico despite
+# the URL ending in one image extension either way. Checked in this order —
+# whichever the fetcher actually saved is the one on disk.
+_LOGO_EXTS = ("png", "ico")
+
+
+def _cached_logo_img(domain):
+    """The <img> tag for a cached logo, or None if nothing's cached for this
+    domain under either extension. Centralised so mark() and treasury_mark()
+    can't drift on which extensions they know to look for."""
+    if not domain:
+        return None
+    slug = _logo_slug(domain)
+    for ext in _LOGO_EXTS:
+        if os.path.exists(os.path.join(OUT, "img", f"{slug}.{ext}")):
+            return (f'<img class="mk" src="img/{esc(slug)}.{ext}" alt="" '
+                    f'width="28" height="28" loading="lazy"/>')
+    return None
+
+
 def esc(s):
     return html.escape(str(s), quote=True)
 
@@ -185,12 +206,9 @@ def sparkline(vals, width=132, height=30):
 
 def mark(a):
     """Logo, emoji, or a coloured monogram — in that order of preference."""
-    domain = a.get("domain")
-    if domain:
-        slug = _logo_slug(domain)
-        if os.path.exists(os.path.join(OUT, "img", f"{slug}.png")):
-            return (f'<img class="mk" src="img/{esc(slug)}.png" alt="" '
-                    f'width="28" height="28" loading="lazy"/>')
+    img = _cached_logo_img(a.get("domain"))
+    if img:
+        return img
     if a.get("emoji"):
         return f'<span class="mk mk-e" aria-hidden="true">{esc(a["emoji"])}</span>'
     name = a.get("name", "?")
@@ -566,7 +584,7 @@ def _nav(active=""):
             '<a href="index.html"%s>Writing</a>'
             '<a href="board.html"%s>Asset Board</a>'
             '<a href="bitcoin.html"%s>Bitcoin Board</a>'
-            '<a href="treasuries.html"%s>Treasuries</a>'
+            '<a href="treasuries.html"%s>Bitcoin Treasuries</a>'
             '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
             '<a class="sib" href="%s" title="%s">%s →</a>'
@@ -582,14 +600,29 @@ def _chrome(active=""):
             '%s</header>' % (MARK_SVG.replace("__ACCENT__", ACCENT), _nav(active)))
 
 
+def _legal():
+    """The small print, deliberately smaller and dimmer than everything else
+    in the footer — legalese, not navigation. No personal name anywhere on
+    this site: the byline throughout is "Mr. Librarian," and this paragraph
+    keeps that same posture rather than becoming the one place a real name
+    would otherwise naturally go (a copyright line)."""
+    return ('<p class="legal">© %d %s. Nothing on this site is financial, legal, or '
+            'investment advice, and no reply from Mr. Librarian is either. Figures are '
+            'drawn from public sources, are not audited, and are not warranted to be '
+            'accurate or complete — do your own research before relying on anything '
+            'here. No company, fund, or government named on this site has endorsed it '
+            'or is affiliated with it.</p>'
+            % (datetime.now(timezone.utc).year, esc(SITE_NAME)))
+
+
 def _foot():
     return ('<footer>%s · <a href="board.html">The Asset Board</a> · '
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
-            '<a href="treasuries.html">Treasuries</a> · '
+            '<a href="treasuries.html">Bitcoin Treasuries</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
-            'nothing here is investment advice</footer>'
-            % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME)))
+            'nothing here is investment advice%s</footer>'
+            % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME), _legal()))
 
 
 FRONT_HERO_IMG = "us-bullion-depository.jpg"
@@ -717,6 +750,7 @@ def build_entry_page(e, board=None):
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
   <footer>
     %(site)s · <a href="feed.xml">RSS</a> · nothing here is investment advice%(hits_foot)s
+    %(legal)s
   </footer>
 </div>
 </body>
@@ -737,6 +771,7 @@ def build_entry_page(e, board=None):
         "tags": _tag_chips(e),
         "nudge": _ask_nudge(e),
         "hits_foot": hits_foot,
+        "legal": _legal(),
     }
 
 
@@ -1033,7 +1068,7 @@ def build_front(entries, board, stats=None, treasuries=None):
                     "and DeFi protocols — %s BTC, ranked by who holds it"
                     % _btc_amt(treasuries.get("grand_total_btc", 0)))
         pool.append(_front_item(href="treasuries.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
-                                title="Treasuries", desc=trs_line + ".", board=True,
+                                title="Bitcoin Treasuries", desc=trs_line + ".", board=True,
                                 date=_parse_generated_date(treasuries.get("generated"))))
 
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
@@ -1182,6 +1217,8 @@ tr.metal{background:rgba(255,255,255,.018)}
 .panel li{margin:0 0 6px}
 footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
 .pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
@@ -1500,10 +1537,16 @@ def _btc_amt(v):
 
 
 def treasury_mark(r):
-    """Like mark(): a flag for a country row (the sovereign IS the icon), a
-    coloured monogram for everything else — there are no cached logos for most
-    of these tickers, and a flag standing in for a mining company would be a
-    domicile claim this board cannot actually verify."""
+    """A real logo when one is cached (see treasuries_seed.json's `domain`
+    field + tools/finance_logos.py), else a flag for a country row (the
+    sovereign IS the icon — no logo lookup would ever beat that), else a
+    coloured monogram. Same fallback order as mark(), just with a country
+    flag standing in for `emoji` — a flag on a MINING company would be a
+    domicile claim this board cannot actually verify, so that substitution
+    only fires for the country category itself."""
+    img = _cached_logo_img(r.get("domain"))
+    if img:
+        return img
     if r["category"] == "country" and r.get("country"):
         return f'<span class="mk mk-e" aria-hidden="true">{esc(r["country"])}</span>'
     name = r.get("name", "?")
@@ -1564,8 +1607,41 @@ TREASURY_CSS = """
 .ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
 .ao.v{color:#7f8fa6}
 .trsfresh{margin:8px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+.board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
+  font-weight:700;color:#e8eef7}
+.board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:__ACCENT__}
+.trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 @media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.trshero{grid-template-columns:1fr}}
+
+/* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
+   the H1 on every Treasuries page literally carries the same Bitcoin logo —
+   just this one component out of BB_CSS, not the whole stylesheet, since
+   these pages don't draw the rest of that page's chart/grid. Keep both in
+   sync if the coin mark itself ever changes. */
+.bbmark{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:1.16em;height:1.16em;margin-right:.34em;vertical-align:-.17em}
+.bbmark::before{content:"";position:absolute;inset:-58%;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,147,26,.60) 0%,rgba(247,147,26,.34) 32%,
+    rgba(247,147,26,.10) 55%,rgba(247,147,26,0) 72%);
+  animation:bbglow 4.2s ease-in-out infinite}
+.bbmark svg{position:relative;width:100%;height:100%;display:block;
+  filter:drop-shadow(0 1px 7px rgba(247,147,26,.60))}
+@keyframes bbglow{0%,100%{opacity:.6;transform:scale(.92)}
+  50%{opacity:1;transform:scale(1.08)}}
+
+.trskicker{margin:0 0 10px}
+.trskicker a{display:inline-flex;align-items:center;font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;color:#7f8fa6;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trskicker a:hover{color:__ACCENT__}
+.trskicker .bbmark{width:1em;height:1em}
+
+/* ⚠️ Must stay LAST — see BB_CSS's own note on why a rule of equal
+   specificity placed earlier silently loses to this one. */
+@media (prefers-reduced-motion:reduce){
+  .bbmark::before{animation:none;opacity:.8}
+}
 """
 
 
@@ -1574,6 +1650,13 @@ def _treasury_table(rows, show_category=False):
         treasury_row(r, (r["rank_category"] if not show_category else r["rank_overall"]),
                      show_category=show_category)
         for r in rows)
+    # A footer total for exactly the rows in THIS table — the hub's top-20
+    # slice totals the top 20, a category page totals that whole category.
+    # Labelled by count rather than assumed, so it's honest either way.
+    n = len(rows)
+    tot_btc = sum(r["btc_holdings"] for r in rows)
+    tot_usd = sum(r["value_usd"] for r in rows)
+    tot_pct = sum(r["pct_of_21m"] for r in rows)
     return f"""  <div class="tw">
   <table class="board">
     <thead>
@@ -1590,6 +1673,17 @@ def _treasury_table(rows, show_category=False):
     <tbody>
 {body}
     </tbody>
+    <tfoot>
+      <tr>
+        <td class="rk"></td>
+        <td class="as trstot-l">Total — {n} holder{'' if n == 1 else 's'}</td>
+        <td class="mc">{_btc_amt(tot_btc)} BTC</td>
+        <td class="px">{money_cap(tot_usd)}</td>
+        <td class="pc">{tot_pct:.3f}%</td>
+        <td class="ao"></td>
+        <td class="wh"></td>
+      </tr>
+    </tfoot>
   </table>
   </div>"""
 
@@ -1651,7 +1745,7 @@ def build_treasuries_hub(board):
     desc = (f"Who holds the world's Bitcoin — {_btc_amt(board.get('grand_total_btc', 0))} BTC "
             f"across {board.get('count', 0)} public companies, miners, ETFs, "
             "countries, private companies and DeFi protocols, ranked by coins held.")
-    body = f"""  <h1 class="btitle">Treasuries</h1>
+    body = f"""  <h1 class="btitle">{BB_COIN_SVG.replace("__ACCENT__", ACCENT)}Bitcoin Treasuries</h1>
   <p class="lede">{esc(desc)}</p>
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}</p>
   {_treasury_freshness_line(board)}
@@ -1666,7 +1760,7 @@ def build_treasuries_hub(board):
 {_treasury_methods_panel()}
 {_treasury_nudge("Treasuries board")}
 """
-    return _shell(title="Treasuries — who holds the world's Bitcoin",
+    return _shell(title="Bitcoin Treasuries — who holds the world's Bitcoin",
                   desc=desc, url="%streasuries.html" % BASE_URL, active="treasuries",
                   body=body, extra_css=TREASURY_CSS)
 
@@ -1680,7 +1774,10 @@ def build_treasuries_category(board, category):
             f"{_btc_amt(total.get('btc', 0))} BTC across {total.get('count', 0)} "
             f"holders. {meta['blurb']}")
     table = _treasury_table(rows, show_category=False)
-    body = f"""  <h1 class="btitle">{meta['icon']} {esc(meta['title'])}</h1>
+    kicker = (f'  <p class="trskicker"><a href="treasuries.html">'
+              f'{BB_COIN_SVG.replace("__ACCENT__", ACCENT)}Bitcoin Treasuries</a></p>')
+    body = f"""{kicker}
+  <h1 class="btitle">{meta['icon']} {esc(meta['title'])}</h1>
   <p class="lede">{esc(meta['blurb'])}</p>
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}
     <span class="dot">·</span><span class="hl">{_btc_amt(total.get('btc', 0))} BTC
@@ -1689,9 +1786,9 @@ def build_treasuries_category(board, category):
 {table}
 {_treasury_methods_panel()}
 {_treasury_nudge("Treasuries — " + meta["title"])}
-  <p class="backlink"><a href="treasuries.html">← All Treasuries categories</a></p>
+  <p class="backlink"><a href="treasuries.html">← All Bitcoin Treasuries categories</a></p>
 """
-    return _shell(title=f"{meta['title']} — Treasuries — {SITE_NAME}",
+    return _shell(title=f"{meta['title']} — Bitcoin Treasuries — {SITE_NAME}",
                   desc=desc, url="%s%s" % (BASE_URL, meta["file"]), active="treasuries",
                   body=body, extra_css=TREASURY_CSS)
 

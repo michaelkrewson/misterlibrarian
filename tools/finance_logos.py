@@ -28,14 +28,24 @@ import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOARD = os.path.join(ROOT, "source", "finance", "asset_board.json")
+TREASURIES_SEED = os.path.join(ROOT, "source", "finance", "treasuries_seed.json")
 IMGDIR = os.path.join(ROOT, "finance", "img")
 
 # Two sources, tried in order. Neither covers everything: Google 404s on
 # berkshirehathaway.com, and returns a generic placeholder for tsmc.com and visa.com
 # that DuckDuckGo serves properly. Whatever both miss falls through to a monogram.
+#
+# ⚠️ The two return DIFFERENT formats despite both URLs ending in an image
+# extension: Google's s2 service answers with a real PNG, DuckDuckGo's icon
+# service answers with an actual .ico. (Paid for 2026-09-06 — this saved
+# every DDG-sourced file as `<slug>.png` regardless, so tsmc.png and visa.png
+# have been mislabeled .ico files since the day they were fetched; a browser
+# asked to decode PNG bytes that are actually ICO renders nothing.) The
+# extension here MUST match what the source actually returns — `ext` is
+# the file this logo is saved and served as, not just a URL-matching detail.
 SOURCES = [
-    ("google", "https://www.google.com/s2/favicons?domain={domain}&sz=128"),
-    ("ddg",    "https://icons.duckduckgo.com/ip3/{domain}.ico"),
+    ("google", "https://www.google.com/s2/favicons?domain={domain}&sz=128", "png"),
+    ("ddg",    "https://icons.duckduckgo.com/ip3/{domain}.ico", "ico"),
 ]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " \
      "(KHTML, like Gecko) Chrome/122.0 Safari/537.36"
@@ -63,16 +73,29 @@ def _try(url):
     return blob if len(blob) >= MIN_BYTES else None
 
 
-def fetch(domain, dest, force=False):
-    if os.path.exists(dest) and not force:
-        return "kept"
-    for label, tmpl in SOURCES:
+def fetch(domain, imgdir, force=False):
+    """Fetch one domain's logo into imgdir, under whichever extension the
+    source that actually answered uses. Checks/cleans BOTH extensions so a
+    domain that used to resolve via one source and now resolves via the
+    other never leaves a stale file of the wrong format sitting alongside
+    the fresh one."""
+    base = slug(domain)
+    paths = {ext: os.path.join(imgdir, f"{base}.{ext}") for _, _, ext in SOURCES}
+    if not force:
+        for ext, path in paths.items():
+            if os.path.exists(path):
+                return "kept"
+    for label, tmpl, ext in SOURCES:
         blob = _try(tmpl.format(domain=domain))
         if blob:
+            dest = paths[ext]
             tmp = dest + ".tmp"
             with open(tmp, "wb") as fh:
                 fh.write(blob)
             os.replace(tmp, dest)
+            for other_ext, other_path in paths.items():
+                if other_ext != ext and os.path.exists(other_path):
+                    os.remove(other_path)
             return f"{len(blob)//1024 or 1} KB ({label})"
     print(f"  ! {domain}: no source had it — monogram fallback", file=sys.stderr)
     return "monogram"
@@ -88,13 +111,22 @@ def main():
 
     with open(BOARD, encoding="utf-8") as fh:
         board = json.load(fh)
+    domains = {a["domain"] for a in board.get("assets", []) if a.get("domain")}
+
+    # The Treasuries board's own entities (companies, ETF issuers, DeFi
+    # protocols) — a SOURCE file, not a computed one, so this needs no prior
+    # fetch step to have run. Missing entirely is fine (an older checkout, or
+    # the Treasuries board not built yet): this tool just fetches fewer logos.
+    if os.path.exists(TREASURIES_SEED):
+        with open(TREASURIES_SEED, encoding="utf-8") as fh:
+            seed = json.load(fh)
+        domains |= {e["domain"] for e in seed.get("entities", []) if e.get("domain")}
 
     os.makedirs(IMGDIR, exist_ok=True)
-    domains = sorted({a["domain"] for a in board.get("assets", []) if a.get("domain")})
+    domains = sorted(domains)
     print(f"{len(domains)} logo(s) -> finance/img/")
     for d in domains:
-        dest = os.path.join(IMGDIR, f"{slug(d)}.png")
-        print(f"  {slug(d):<20} {fetch(d, dest, args.force)}")
+        print(f"  {slug(d):<20} {fetch(d, IMGDIR, args.force)}")
     return 0
 
 
