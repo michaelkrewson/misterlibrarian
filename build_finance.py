@@ -1919,6 +1919,43 @@ def _cbe_pct_cell(v):
     return f'<span class="{cls}">{v:.1f}%</span>'
 
 
+_COVERAGE_REASON_TXT = {
+    "no_preferred": "No preferred stock outstanding — nothing to cover",
+    "ocf_undisclosed": "Real preferred stock exists, but this company's operating "
+                        "cash flow isn't disclosed at a comparable (core-business-"
+                        "only) level — showing a number here would mean forcing "
+                        "one, not reporting one",
+    "rate_unknown": "Preferred stock exists but its dividend rate is not yet curated",
+}
+
+
+def _cbe_coverage_cell(r):
+    ratio = r.get("coverage_ratio")
+    if ratio is None:
+        reason = r.get("coverage_reason")
+        label = "—" if reason == "no_preferred" else "n/a"
+        return (f'<span class="cbe-sub" title="{esc(_COVERAGE_REASON_TXT.get(reason, "Not available"))}">'
+                f'{label}</span>')
+    cls = "cbe-g" if ratio >= 1 else ("cbe-r" if ratio < 0 else "")
+    tip = esc(f"Operating cash flow {money_cap(r['operating_cf_usd'])} ÷ annual preferred "
+              f"dividend obligation {money_cap(r['annual_div_obligation'])} "
+              f"(blended rate {r['preferred_div_rate_pct']:.2f}%) — can the core "
+              f"business's own cash flow service the dividend bill?")
+    return f'<span class="{cls}" title="{tip}">{ratio:.3f}×</span>'
+
+
+def _cbe_stress_cell(r):
+    s20, s50, base = r.get("stress_sats_per_100_20"), r.get("stress_sats_per_100_50"), r.get("cebe_sats_per_100")
+    if s20 is None and s50 is None:
+        return '<span class="cbe-sub">—</span>'
+    cls50 = "cbe-r" if (s50 is not None and s50 < 0) else ""
+    tip = esc(f"At today's price this reads {_cbe_int(base)} sats/$100. Holding the stock "
+              f"price and all claims fixed: at BTC −20% it would read {_cbe_int(s20)}; "
+              f"at BTC −50% it would read {_cbe_int(s50)}. Not a forecast — a sensitivity test.")
+    return (f'<span title="{tip}"><span class="cbe-sub">{_cbe_int(s20)}</span> / '
+            f'<span class="{cls50}">{_cbe_int(s50)}</span></span>')
+
+
 def cebe_row(r):
     kind_label = {"miner": "Miner", "exchange": "Exchange"}.get(r["kind"], "Treasury")
     where = esc(r.get("country") or "")
@@ -1939,6 +1976,8 @@ def cebe_row(r):
         "cebebtc": r["cebe_btc"], "sats100": r["cebe_sats_per_100"],
         "satsshare": r["cebe_sats_per_share"], "btc": r["btc_holdings"],
         "claimsusd": r["claims_usd"],
+        "coverage": r["coverage_ratio"] if r["coverage_ratio"] is not None else "",
+        "stress50": r["stress_sats_per_100_50"] if r["stress_sats_per_100_50"] is not None else "",
     }
     ds_attrs = " ".join(f'data-{k}="{v}"' for k, v in ds.items())
     return f"""      <tr {ds_attrs}>
@@ -1955,6 +1994,8 @@ def cebe_row(r):
         <td>{_cbe_int(r['cebe_sats_per_share'])}</td>
         <td>{_btc_amt(r['btc_holdings'])}</td>
         <td title="{claims_tip}" class="{claims_cls}">{money_cap(r['claims_usd']) if r['claims_usd'] >= 0 else '-' + money_cap(-r['claims_usd'])}</td>
+        <td>{_cbe_coverage_cell(r)}</td>
+        <td>{_cbe_stress_cell(r)}</td>
       </tr>"""
 
 
@@ -1974,6 +2015,8 @@ def _cebe_table(rows):
         <th data-sort="satsshare" title="CEBE expressed as sats behind each common share">CEBE sats/sh</th>
         <th data-sort="btc" title="Total BTC held">BTC held</th>
         <th data-sort="claimsusd" title="Net senior claims (debt + preferred − cash) — hover a row for the breakdown and break-even price">Claims $</th>
+        <th data-sort="coverage" title="Operating cash flow (core business, TTM) ÷ annual preferred dividend obligation — a going-concern check, not a liquidation one. — for names with no preferred stock">Pref coverage</th>
+        <th data-sort="stress50" title="Sats/$100 if BTC fell 20% / 50% from today, holding the stock price and all claims fixed. Not a forecast.">BTC stress (−20%/−50%)</th>
       </tr>
     </thead>
     <tbody id="cbe-tbody">
@@ -2000,15 +2043,51 @@ def _cebe_methods_panel(board):
     services its preferred dividends and debt coupons as a going concern and
     the BTC just compounds; low CEBE coverage is a solvency-stress signal, not
     evidence the stock is mispriced right now. Debt, preferred, and cash
-    figures are curated approximations refreshed periodically from filings —
-    see <a href="https://github.com/michaelkrewson/mstr-trader" rel="nofollow">
-    mstr-trader's own research</a> for the full per-company sourcing.
+    figures are curated approximations refreshed periodically from filings.
     {f"{excluded} compan{'y' if excluded == 1 else 'ies'} from the same curated list "
       "were checked and left off this run because yfinance could not price "
       f"{'it' if excluded == 1 else 'them'}, or the most recent quote was too old to "
       "trust — a company disappearing from here is a data gap, not a claim it stopped "
       "holding Bitcoin." if excluded else ''}
     Nothing here is investment advice.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Pref coverage — a going-concern check, not a liquidation one</h2>
+    <p>Everything above this point is a liquidation snapshot — what would be left if
+    every claim were paid off TODAY. That's the wrong lens for a question that
+    actually matters day to day: <i>can the company keep paying its preferred
+    dividend out of its own business, or is it funding that dividend some other
+    way?</i> <b>Annual dividend obligation</b> = preferred liquidation preference ×
+    blended dividend rate. <b>Coverage</b> = operating cash flow (core business,
+    trailing twelve months) ÷ that obligation. Above 1× means operations cover the
+    bill; below 1× — and especially negative, like MSTR today — means the dividend
+    is being funded some other way entirely: a capital raise, asset sales, a
+    dedicated cash reserve, not the business itself.</p>
+    <p>A blank here means one of two different things, kept separate on purpose: a
+    dash (—) means the company has no preferred stock at all, so there's nothing to
+    cover. "n/a" means real preferred stock exists but the company's own disclosures
+    don't isolate core-business cash flow cleanly enough to compute this honestly
+    (Metaplanet today, whose consolidated cash flow is swamped by its Bitcoin
+    Income Business) — that's a data gap, not a zero, and we'd rather show the gap
+    than force a number into it.</p>
+  </div>
+
+  <div class="panel">
+    <h2>BTC stress — a sensitivity test, not a forecast</h2>
+    <p>Shows what Sats/$100 would read if BTC fell 20% or 50% from today, holding
+    the stock price and every claim (debt, preferred, cash) exactly where they are.
+    It deliberately does NOT also drop the stock price in proportion — if it did, a
+    company whose whole balance sheet is BTC would show an artificially stable
+    ratio (both sides of the fraction shrinking together), which would hide the
+    exact risk this exists to expose: fixed-dollar claims eating a growing share of
+    a shrinking BTC pile. This is why a heavily preferred- or debt-funded name's
+    stress numbers fall off faster than a debt-free one's — the claims don't shrink
+    when BTC does, so they consume a bigger bite of a smaller pie. A negative −50%
+    reading is a real signal: common's claimed BTC backing would be gone at that
+    price, even though the company still legally owns every coin. Not a prediction
+    of what BTC will do, and not a claim the stock price would actually hold
+    still — a pure "how much of the cushion is claims-related" isolation test.</p>
   </div>
 """
 

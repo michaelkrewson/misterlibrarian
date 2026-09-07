@@ -28,6 +28,38 @@ not an independently-derived one:
     Claims %            = Net Senior Claims / (BTC held × BTC price) × 100
     Break-even BTC price = Net Senior Claims / BTC held
 
+TWO MORE METRICS (added 2026-09-07), neither from cebetracker.io — a genuine
+extension past matching their spec, prompted by the question "is netting cash
+against a PERPETUAL preferred's principal even realistic, when a company
+services that stock with dividends forever rather than retiring it?":
+
+    Preferred-dividend COVERAGE (a GOING-CONCERN check, not a liquidation one —
+    every metric above assumes claims are paid off TODAY; this asks whether the
+    core business can actually afford the yearly dividend BILL):
+        Annual dividend obligation = Preferred liq. pref. × blended dividend rate
+        Coverage = Operating cash flow (core business, TTM) / annual obligation
+    `preferred_div_rate_pct` and `operating_cf_usd` are curated, seed-file
+    fields (like debt_usd/preferred_liq_usd) — populated only for companies
+    that actually carry preferred stock (today: MSTR, MTPLF). `coverage_reason`
+    distinguishes three different kinds of blank: `no_preferred` (nothing to
+    cover), `ocf_undisclosed` (real preferred, but the company's own filings
+    don't isolate core-business cash flow cleanly enough to compute this
+    honestly — MTPLF today), `rate_unknown` (preferred exists, dividend rate
+    not yet curated). Never force a number into a reason slot — a real "not
+    disclosed" beats a fabricated ratio.
+
+    BTC-price STRESS (a sensitivity test, explicitly NOT a forecast — same
+    posture as this board declining to build cebetracker.io's 5-year
+    projections): Sats/$100 recomputed at BTC −20% and −50% from today,
+    holding the STOCK price and every claim fixed. Deliberately does not scale
+    the stock price down too — doing so would make a BTC-pure-play's ratio
+    look artificially stable (both sides of the fraction shrinking together),
+    hiding the exact mechanism this exists to expose: fixed-dollar debt and
+    preferred claims eating a growing share of a shrinking BTC pile. A −50%
+    reading below zero is a real signal — common's claimed BTC backing would
+    be gone at that price, even though the company still legally owns every
+    coin.
+
 ONLY TICKERS THAT PASS A REAL FRESHNESS CHECK ARE INCLUDED
 A company is dropped from the OUTPUT (not from the seed file) if yfinance can't
 price it at all, or if its most recent daily close is more than STALE_DAYS old —
@@ -212,6 +244,34 @@ def compute():
         sats_per_100 = cebe_sats_per_share * 100 / price
         breakeven = (claims / btc) if (btc and claims > 0) else None
 
+        # Preferred-dividend COVERAGE — a going-concern companion to everything
+        # above (which is all a liquidation snapshot). Three distinct "can't
+        # answer this" reasons, kept separate rather than collapsed into one
+        # blank — see the module docstring's formula section.
+        div_rate = float(c.get("preferred_div_rate_pct") or 0)
+        ocf_raw = c.get("operating_cf_usd")
+        ocf = float(ocf_raw) if ocf_raw is not None else None
+        annual_div_obligation = (preferred * div_rate / 100) if (preferred and div_rate) else None
+        if not preferred:
+            coverage_ratio, coverage_reason = None, "no_preferred"
+        elif ocf is None:
+            coverage_ratio, coverage_reason = None, "ocf_undisclosed"
+        elif annual_div_obligation:
+            coverage_ratio, coverage_reason = round(ocf / annual_div_obligation, 3), None
+        else:
+            coverage_ratio, coverage_reason = None, "rate_unknown"
+
+        # BTC-price STRESS — Sats/$100 at BTC -20%/-50%, stock price and claims
+        # held fixed. Not a forecast — see the module docstring.
+        def _stress(factor):
+            stressed_btc_price = btc_price * factor
+            stressed_nav = btc * stressed_btc_price
+            stressed_cebe_btc = (stressed_nav - claims) / stressed_btc_price
+            stressed_sats_share = stressed_cebe_btc / shares * 1e8
+            return round(stressed_sats_share * 100 / price)
+        stress_20 = _stress(0.8)
+        stress_50 = _stress(0.5)
+
         rows.append({
             "ticker": ticker,
             "name": c.get("name", ticker),
@@ -237,6 +297,14 @@ def compute():
             "cebe_sats_per_share": round(cebe_sats_per_share),
             "cebe_sats_per_100": round(sats_per_100),
             "breakeven_btc_price": round(breakeven, 2) if breakeven is not None else None,
+            "preferred_div_rate_pct": div_rate or None,
+            "operating_cf_usd": ocf,
+            "annual_div_obligation": (round(annual_div_obligation)
+                                      if annual_div_obligation else None),
+            "coverage_ratio": coverage_ratio,
+            "coverage_reason": coverage_reason,
+            "stress_sats_per_100_20": stress_20,
+            "stress_sats_per_100_50": stress_50,
             "as_of": c.get("as_of") or seed.get("as_of"),
         })
 
