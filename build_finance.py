@@ -109,6 +109,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(ROOT, "source", "finance", "asset_board.json")
 BTC_SRC = os.path.join(ROOT, "source", "finance", "bitcoin_stats.json")
 TREASURIES_SRC = os.path.join(ROOT, "source", "finance", "treasuries.json")
+CEBE_SRC = os.path.join(ROOT, "source", "finance", "cebe.json")
 OUT = os.path.join(ROOT, "finance")
 ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 
@@ -1715,10 +1716,13 @@ def _treasury_methods_panel():
 """
 
 
-def build_treasuries_hub(board):
+def build_treasuries_hub(board, cebe=None):
     """The top of the tree: one combined stat+description card per category
     (linking into that category's own full page), plus a compact overall
-    leaderboard."""
+    leaderboard. `cebe` is the optional companion board (see build_cebe) —
+    when present it gets its own featured card, set apart from the six
+    holder-category boxes above it since it isn't a seventh category, it's a
+    different LENS on the public-company rows already counted above."""
     totals = board.get("totals", {})
     boxes = "\n".join(
         f'    <a class="trsbox" href="{TREASURY_CATEGORIES[c]["file"]}">'
@@ -1729,6 +1733,23 @@ def build_treasuries_hub(board):
         f'{totals.get(c, {}).get("count", 0)} holders</div>'
         f'<p class="tb-d">{esc(TREASURY_CATEGORIES[c]["blurb"])}</p></a>'
         for c in TREASURY_CATEGORY_ORDER)
+
+    cebe_card = ""
+    if cebe and cebe.get("rows"):
+        n = len(cebe["rows"])
+        top = cebe["rows"][0]
+        cebe_card = f"""
+  <div class="trsboxes" style="grid-template-columns:1fr;margin-top:14px">
+    <a class="trsbox" href="cebe.html">
+      <div class="tb-top"><span class="tb-i">🧮</span>
+        <span class="tb-t">CEBE — Common Equity Bitcoin Exposure →</span></div>
+      <div class="tb-v">{n} companies, sortable</div>
+      <div class="tb-s">Leader right now: {esc(top['ticker'])} at {_cbe_int(top['cebe_sats_per_100'])} sats/$100</div>
+      <p class="tb-d">A sharper companion board: not how much BTC a company holds, but how
+      much of it actually belongs to a COMMON shareholder once debt and preferred stock
+      are paid first. Click any column to sort.</p>
+    </a>
+  </div>"""
 
     top_rows = sorted(board.get("rows", []), key=lambda r: r["btc_holdings"], reverse=True)[:20]
     table = _treasury_table(top_rows, show_category=True)
@@ -1749,7 +1770,7 @@ def build_treasuries_hub(board):
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}</p>
   <div class="trsboxes">
 {boxes}
-  </div>
+  </div>{cebe_card}
   {_treasury_freshness_line(board)}
   <h2 style="margin:34px 0 4px;font-weight:400;font-size:19px">The top 20, across every category</h2>
 {table}
@@ -1787,6 +1808,236 @@ def build_treasuries_category(board, category):
     return _shell(title=f"{meta['title']} — Bitcoin Treasuries — {SITE_NAME}",
                   desc=desc, url="%s%s" % (BASE_URL, meta["file"]), active="treasuries",
                   body=body, extra_css=TREASURY_CSS)
+
+
+# ──────────────────────────────────────────────────────────────── the CEBE board ──
+#
+# A sharper companion to the plain Treasuries board above: not "how much BTC does
+# this company hold" but "how much of that BTC actually belongs to a COMMON
+# shareholder once every senior claim ahead of them is paid." Ported 2026-09-06
+# from mstr-trader's own MiSTeRCEBE tracker — same formula (verified against
+# cebetracker.io's own published spec), same curated companies, same measured
+# inclusion/exclusion discipline. See tools/fetch_cebe.py's docstring for the
+# full math and source/finance/cebe_seed.json's note for provenance.
+#
+# THE ONE REAL DIFFERENCE FROM EVERY OTHER BOARD ON THIS SITE: it needs a live
+# per-company STOCK price, not just one BTC price — see fetch_cebe.py. And it is
+# the only page in /finance/ with genuine client-side interactivity beyond the
+# Bitcoin board's chart: a click-to-sort table (CEBE_JS below), because ranking
+# by a single fixed column (the way the Treasuries board ranks by BTC held) would
+# hide the point of a board whose whole thesis is "the headline number isn't the
+# only one that matters here."
+
+CEBE_CSS = """
+/* ── The CEBE board ───────────────────────────────────────────────────────────
+   Namespaced .cbe* so it can never collide with .board/.trs* it also reuses. */
+.cbe-g{color:#4ade80}
+.cbe-r{color:#f87171}
+.cbe-hl{color:__ACCENT__;font-variant-numeric:tabular-nums}
+table.cbe th[data-sort]{cursor:pointer;user-select:none;white-space:nowrap}
+table.cbe th[data-sort]:hover{color:#e8eef7}
+table.cbe td{font-variant-numeric:tabular-nums;white-space:nowrap}
+table.cbe td.cbe-nm{white-space:normal;max-width:220px}
+.cbe-sub{display:block;margin-top:1px;font-size:11px;color:#6e7d92}
+.cbenote{margin:20px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+"""
+
+# Vanilla JS click-to-sort — reads numeric sort keys off each <tr>'s own
+# data-* attributes (baked in at build time, see cebe_row below) and reorders
+# the DOM directly. No fetch, no framework: the data never changes without a
+# rebuild, so there is nothing to poll. Same interaction pattern as
+# mstr-trader's own cebe_tracker.html (click a header to sort desc, click
+# again to toggle asc) so the two boards feel like the same tool.
+CEBE_JS = """
+(function(){
+  var tbody = document.getElementById('cbe-tbody');
+  if(!tbody) return;
+  var ths = document.querySelectorAll('table.cbe th[data-sort]');
+  var curKey = null, asc = false;
+  function apply(key, toggling){
+    var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+    rows.sort(function(a, b){
+      var av = parseFloat(a.dataset[key]);
+      var bv = parseFloat(b.dataset[key]);
+      if(isNaN(av)) av = asc ? Infinity : -Infinity;
+      if(isNaN(bv)) bv = asc ? Infinity : -Infinity;
+      return asc ? (av - bv) : (bv - av);
+    });
+    rows.forEach(function(r, i){
+      tbody.appendChild(r);
+      var rk = r.querySelector('.rk');
+      if(rk) rk.textContent = i + 1;
+    });
+    ths.forEach(function(h){
+      h.textContent = h.textContent.replace(/[\\u25B2\\u25BC]/g, '').trim();
+    });
+    var active = document.querySelector('table.cbe th[data-sort="' + key + '"]');
+    if(active) active.textContent += asc ? ' \\u25B2' : ' \\u25BC';
+  }
+  ths.forEach(function(th){
+    th.addEventListener('click', function(){
+      var key = th.dataset.sort;
+      asc = (curKey === key) ? !asc : false;
+      curKey = key;
+      apply(key);
+    });
+  });
+})();
+"""
+
+
+def cebe_mark(r):
+    """Same fallback tail as treasury_mark() (real logo, else a coloured
+    monogram) — the country-flag branch doesn't apply here since every CEBE
+    row is a public company, never a country."""
+    img = _cached_logo_img(r.get("domain"))
+    if img:
+        return img
+    name = r.get("name", "?")
+    colour = MONO[sum(ord(c) for c in name) % len(MONO)]
+    return (f'<span class="mk mk-m" aria-hidden="true" '
+            f'style="background:{colour}22;color:{colour};border-color:{colour}55">'
+            f'{esc(name[0].upper())}</span>')
+
+
+def _cbe_int(v):
+    return "—" if v is None else f"{v:,.0f}"
+
+
+def _cbe_mnav_cell(m):
+    if m is None:
+        return '<span class="cbe-sub">—</span>'
+    cls = "cbe-g" if m < 1 else ("cbe-r" if m >= 3 else "")
+    disc = " ◆" if m < 1 else ""
+    return f'<span class="{cls}">{m:.2f}×{disc}</span>'
+
+
+def _cbe_pct_cell(v):
+    if v is None:
+        return '<span class="cbe-sub">—</span>'
+    cls = "cbe-g" if v < 10 else ("cbe-r" if v >= 30 else "")
+    return f'<span class="{cls}">{v:.1f}%</span>'
+
+
+def cebe_row(r):
+    kind_label = {"miner": "Miner", "exchange": "Exchange"}.get(r["kind"], "Treasury")
+    where = esc(r.get("country") or "")
+    primary = r.get("primary_ticker")
+    sub = esc(primary) if primary else ""
+    debt_s = money_cap(r["debt_usd"]) if r["debt_usd"] else "$0"
+    pref_s = money_cap(r["preferred_usd"]) if r["preferred_usd"] else "$0"
+    tip_parts = [f"Debt {debt_s}", f"Preferred {pref_s}"]
+    if r.get("cash_usd"):
+        tip_parts.append(f"minus Cash {money_cap(r['cash_usd'])}")
+    if r.get("breakeven_btc_price") is not None:
+        tip_parts.append(f"break-even BTC price ~${r['breakeven_btc_price']:,.0f}")
+    claims_tip = esc(" · ".join(tip_parts))
+    claims_cls = "cbe-g" if r["claims_usd"] < 0 else ""
+    ds = {
+        "price": r["price"], "mnav": r["mnav"] if r["mnav"] is not None else "",
+        "claimspct": r["claims_pct"] if r["claims_pct"] is not None else "",
+        "cebebtc": r["cebe_btc"], "sats100": r["cebe_sats_per_100"],
+        "satsshare": r["cebe_sats_per_share"], "btc": r["btc_holdings"],
+        "claimsusd": r["claims_usd"],
+    }
+    ds_attrs = " ".join(f'data-{k}="{v}"' for k, v in ds.items())
+    return f"""      <tr {ds_attrs}>
+        <td class="rk">{r['rank']}</td>
+        <td class="cbe-nm"><span class="asw">{cebe_mark(r)}<span class="nm">
+          <span class="n1">{esc(r['ticker'])}</span>
+          <span class="cbe-sub">{esc(r['name'])}{(' · ' + sub) if sub else ''} · {where}</span>
+        </span></span></td>
+        <td>{money_px(r['price'])}</td>
+        <td>{_cbe_mnav_cell(r['mnav'])}</td>
+        <td>{_cbe_pct_cell(r['claims_pct'])}</td>
+        <td class="{claims_cls}">{_cbe_int(r['cebe_btc'])} BTC</td>
+        <td class="cbe-hl" style="font-weight:700">{_cbe_int(r['cebe_sats_per_100'])}</td>
+        <td>{_cbe_int(r['cebe_sats_per_share'])}</td>
+        <td>{_btc_amt(r['btc_holdings'])}</td>
+        <td title="{claims_tip}" class="{claims_cls}">{money_cap(r['claims_usd']) if r['claims_usd'] >= 0 else '-' + money_cap(-r['claims_usd'])}</td>
+      </tr>"""
+
+
+def _cebe_table(rows):
+    body = "\n".join(cebe_row(r) for r in rows)
+    return f"""  <div class="tw">
+  <table class="board cbe">
+    <thead>
+      <tr>
+        <th class="rk">#</th>
+        <th>Company</th>
+        <th data-sort="price" title="Live last-trade price">Price</th>
+        <th data-sort="mnav" title="Market cap ÷ gross BTC NAV — reference only, ignores the claims waterfall. Below 1× (◆) = trading under its own gross BTC">mNAV</th>
+        <th data-sort="claimspct" title="Net (Debt + Preferred − Cash) as % of BTC NAV">Claims %</th>
+        <th data-sort="cebebtc" title="BTC NAV minus net senior claims — what's left for common">CEBE (BTC)</th>
+        <th data-sort="sats100" title="CEBE sats/share × 100 ÷ stock price — the number to actually compare across tickers. ▼ default sort">Sats/$100 ▼</th>
+        <th data-sort="satsshare" title="CEBE expressed as sats behind each common share">CEBE sats/sh</th>
+        <th data-sort="btc" title="Total BTC held">BTC held</th>
+        <th data-sort="claimsusd" title="Net senior claims (debt + preferred − cash) — hover a row for the breakdown and break-even price">Claims $</th>
+      </tr>
+    </thead>
+    <tbody id="cbe-tbody">
+{body}
+    </tbody>
+  </table>
+  </div>"""
+
+
+def _cebe_methods_panel(board):
+    excluded = board.get("excluded_count", 0)
+    return f"""  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p><b>Claims</b> = Debt + Preferred stock liquidation preference − Cash on hand
+    (cash can pay those claims down before the BTC is ever touched, so it nets
+    against them — matches cebetracker.io's own published formula).
+    <b>CEBE (BTC)</b> = (BTC held × BTC price − Claims) ÷ BTC price — what's
+    actually left for a COMMON shareholder once debt and preferred stock are
+    paid. <b>Sats/$100</b> is the number to actually compare across tickers:
+    sats of real common-equity BTC exposure per $100 spent on the STOCK, after
+    every senior claim is netted out.</p>
+    <p>This is a <b>liquidation-waterfall stress test, not a going-concern
+    figure</b> — it assumes every claim is paid TODAY. In practice a company
+    services its preferred dividends and debt coupons as a going concern and
+    the BTC just compounds; low CEBE coverage is a solvency-stress signal, not
+    evidence the stock is mispriced right now. Debt, preferred, and cash
+    figures are curated approximations refreshed periodically from filings —
+    see <a href="https://github.com/michaelkrewson/mstr-trader" rel="nofollow">
+    mstr-trader's own research</a> for the full per-company sourcing.
+    {f"{excluded} compan{'y' if excluded == 1 else 'ies'} from the same curated list "
+      "were checked and left off this run because yfinance could not price "
+      f"{'it' if excluded == 1 else 'them'}, or the most recent quote was too old to "
+      "trust — a company disappearing from here is a data gap, not a claim it stopped "
+      "holding Bitcoin." if excluded else ''}
+    Nothing here is investment advice.</p>
+  </div>
+"""
+
+
+def build_cebe(board):
+    rows = board.get("rows", [])
+    kicker = (f'  <p class="trskicker"><a href="treasuries.html">'
+              f'{BB_COIN_SVG.replace("__ACCENT__", ACCENT)}Bitcoin Treasuries</a></p>')
+    desc = ("Common Equity Bitcoin Exposure — what's left of a treasury company's "
+            "Bitcoin for COMMON shareholders after every senior claim (debt, "
+            "preferred stock) is paid, ranked by sats of real exposure per $100. "
+            f"{len(rows)} companies, sortable.")
+    table = _cebe_table(rows)
+    body = f"""{kicker}
+  <h1 class="btitle">{BB_COIN_SVG.replace("__ACCENT__", ACCENT)}CEBE — Common Equity Bitcoin Exposure</h1>
+  <p class="lede">Plain "BTC per share" counts every coin a company holds as if it
+  all belonged to you. It doesn't — debt and preferred stock sit ahead of common
+  stock in line. <span class="cbe-hl">CEBE</span> answers the sharper question:
+  what's actually left once they're paid? Click any column to sort.</p>
+  <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}
+    <span class="dot">·</span><span class="hl">{len(rows)} companies priced</span></p>
+{table}
+{_cebe_methods_panel(board)}
+{_treasury_nudge("CEBE board")}
+  <p class="backlink"><a href="treasuries.html">← All Bitcoin Treasuries categories</a></p>
+"""
+    return _shell(title="CEBE — Common Equity Bitcoin Exposure — Bitcoin Treasuries — %s" % SITE_NAME,
+                  desc=desc, url="%scebe.html" % BASE_URL, active="treasuries",
+                  body=body, extra_css=TREASURY_CSS + CEBE_CSS, extra_js=CEBE_JS)
 
 
 # ───────────────────────────────────────────────────────── the Bitcoin board ──
@@ -3163,14 +3414,32 @@ def main():
     write("thanks.html", build_thanks())
     write("board.html", build_board(board))
 
+    # The CEBE board is optional by the same contract as the other boards:
+    # missing/unreadable JSON costs exactly its own page. Loaded before the
+    # treasuries hub so its card can appear there (build_treasuries_hub takes
+    # it as an optional arg).
+    cebe = None
+    if os.path.exists(CEBE_SRC):
+        try:
+            with open(CEBE_SRC, encoding="utf-8") as fh:
+                cebe = json.load(fh)
+        except (ValueError, OSError) as exc:
+            print("  ! cebe.json unreadable (%s) — skipping the CEBE board" % exc,
+                  file=sys.stderr)
+
     if treasuries and treasuries.get("rows"):
-        write("treasuries.html", build_treasuries_hub(treasuries))
+        write("treasuries.html", build_treasuries_hub(treasuries, cebe))
         for category in TREASURY_CATEGORIES:
             write(TREASURY_CATEGORIES[category]["file"],
                   build_treasuries_category(treasuries, category))
     else:
         print("  ! no treasuries board — leaving the last Treasuries pages in place",
               file=sys.stderr)
+
+    if cebe and cebe.get("rows"):
+        write("cebe.html", build_cebe(cebe))
+    else:
+        print("  ! no CEBE board — leaving the last CEBE page in place", file=sys.stderr)
 
     btc_page = build_bitcoin_board(stats, board) if stats else None
     if btc_page:

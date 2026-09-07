@@ -3,8 +3,9 @@
 #     tools/fetch_asset_board.py    public quotes    -> source/finance/asset_board.json
 #     tools/fetch_bitcoin_stats.py  the network      -> source/finance/bitcoin_stats.json
 #     tools/fetch_treasuries.py     stdlib + a price -> source/finance/treasuries.json
+#     tools/fetch_cebe.py           yfinance + a price -> source/finance/cebe.json
 #     tools/finance_logos.py        fetches any logo we don't already have cached
-#     build_finance.py              renders all three boards from that JSON (stdlib only)
+#     build_finance.py              renders all four boards from that JSON (stdlib only)
 #     commit + push to main         GitHub Pages redeploys (source: main /)
 #
 # HOURLY IS THE FLOOR HERE, NOT THE CEILING
@@ -103,6 +104,16 @@ jobs:
       # above already fetched, with a keyless fallback of its own.
       - name: Compute the Treasuries board
         run: python3 tools/fetch_treasuries.py
+
+      # Also its own step, same contract as the Treasuries step above — a
+      # yfinance rate-limit or a malformed cebe_seed.json costs only this
+      # board its refresh, never the other three. Unlike Treasuries this one
+      # DOES need yfinance (a live per-company stock price, not just one BTC
+      # price), so it shares that dependency with the asset-board step but
+      # runs as its own call in case Yahoo blocks it specifically for a
+      # ticker the asset board never touches (e.g. a thin OTC-pink quote).
+      - name: Compute the CEBE board
+        run: python3 tools/fetch_cebe.py
 
       - name: Cache any missing logos
         run: python3 tools/finance_logos.py

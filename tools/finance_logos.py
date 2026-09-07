@@ -29,6 +29,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOARD = os.path.join(ROOT, "source", "finance", "asset_board.json")
 TREASURIES_SEED = os.path.join(ROOT, "source", "finance", "treasuries_seed.json")
+CEBE_SEED = os.path.join(ROOT, "source", "finance", "cebe_seed.json")
 IMGDIR = os.path.join(ROOT, "finance", "img")
 
 # Two sources, tried in order. Neither covers everything: Google 404s on
@@ -121,6 +122,13 @@ def main():
         with open(TREASURIES_SEED, encoding="utf-8") as fh:
             seed = json.load(fh)
         domains |= {e["domain"] for e in seed.get("entities", []) if e.get("domain")}
+
+    # The CEBE board's own curated companies (2026-09-06) — same "source file,
+    # no prior fetch needed" contract as the Treasuries seed above.
+    if os.path.exists(CEBE_SEED):
+        with open(CEBE_SEED, encoding="utf-8") as fh:
+            cebe_seed = json.load(fh)
+        domains |= {c["domain"] for c in cebe_seed.get("companies", []) if c.get("domain")}
 
     os.makedirs(IMGDIR, exist_ok=True)
     domains = sorted(domains)

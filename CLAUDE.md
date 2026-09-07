@@ -512,12 +512,17 @@ build itself — separate fetchers write the data snapshots; the builder only re
 provider having a bad night can never fail a build or blank a page. Links with `/travel/`,
 not with the Bible project (the relationship rule above).
 
-**Two standing boards, renamed 2026-09-03 so they can be told apart:**
+**Four standing boards** (the first two renamed 2026-09-03 so they could be told apart;
+Bitcoin Treasuries and CEBE joined 2026-09-06 and were never documented here until now —
+this table itself had gone stale, the exact failure mode every dated-note convention in
+this file exists to catch):
 
 | Page | What it counts | Data |
 |------|----------------|------|
 | **The Asset Board** (`board.html`) | The world's largest assets by market cap — gold, silver, the mega-caps, Bitcoin | `tools/fetch_asset_board.py` (yfinance) → `source/finance/asset_board.json` |
 | **The Bitcoin Board** (`bitcoin.html`) | The Bitcoin network's own numbers — price, supply, difficulty, mempool, fees, halvings, Lightning | `tools/fetch_bitcoin_stats.py` (**stdlib only**) → `source/finance/bitcoin_stats.json` |
+| **Bitcoin Treasuries** (`treasuries.html` + 6 category pages) | Who holds the world's Bitcoin — public companies, miners, ETFs, countries, private companies, DeFi — ranked by coins held, not market cap (most holders have no shares to price) | `tools/fetch_treasuries.py` (**stdlib** — one BTC price, everything else a curated holdings count) → `source/finance/treasuries.json`, from the curated `source/finance/treasuries_seed.json` |
+| **CEBE — Common Equity Bitcoin Exposure** (`cebe.html`) | A sharper companion to Bitcoin Treasuries' public-company rows: not how much BTC a company holds, but how much of it actually belongs to a COMMON shareholder once debt AND preferred-stock liquidation preference (net of cash) are paid first. Sortable — the only board on this site with real client-side interactivity beyond the Bitcoin Board's chart. Ported 2026-09-06 from mstr-trader's own MiSTeRCEBE tracker — same formula (verified against cebetracker.io's own published spec), same curated companies. Cards into `treasuries.html` as a featured 7th box, set apart from the six category boxes since it's a different LENS on the same public-company rows, not a seventh holder category | `tools/fetch_cebe.py` (yfinance, needs a live per-company STOCK price unlike every other board here) → `source/finance/cebe.json`, from the curated `source/finance/cebe_seed.json` (ported from mstr-trader's `btc_treasuries.json`). A ticker is DROPPED from the output (not the seed) if yfinance can't price it or its last bar is >4 days stale — see the script's own docstring |
 
 **The price chart** (full-width market card) draws from three places, picked by range:
 `price_weekly` (all history back to July 2010, ~845 points) for 3Y/10Y/ALL **and for
