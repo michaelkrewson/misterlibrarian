@@ -636,6 +636,20 @@ def _ask_nudge(e):
             % urllib.parse.quote(e["title"]))
 
 
+def _treasury_nudge(subject):
+    """The Treasuries board's own version of _ask_nudge() — same form, same
+    no-backend reasoning, different pitch: this board is explicitly a curated
+    top-holders list that is meant to GROW, and the fastest way it grows is a
+    reader who knows of a holder it's missing or a figure it has wrong. Every
+    tip funnels through the one form the whole publication already has."""
+    return ('<div class="respond">'
+            '<p><strong>Know a holder we\'re missing, or think a figure here is '
+            'wrong?</strong> This board only gets closer to exhaustive with help — '
+            'include a source if you have one, and it gets checked into the next '
+            'update. <a href="ask.html?re=%s">Tell Mr. Librarian →</a></p></div>'
+            % urllib.parse.quote(subject))
+
+
 def build_entry_page(e, board=None):
     """Render one entry. Returns None for a `live: true` entry when board
     data can't supply a live block height (see _btc_live_stats) — the
@@ -927,8 +941,9 @@ def build_ask():
   <div class="panel expect">
     <h2>What I can and can't answer</h2>
     <p><b>Ask me</b> how a number on the board is worked out, why I think an estimate is
-    soft, what I actually do about something and why, or to tell me I have got a fact
-    wrong — that last one is the most useful message anyone sends.</p>
+    soft, what I actually do about something and why, to tell me I have got a fact
+    wrong, or to point me at a Treasuries holder I've missed entirely — those last two
+    are the most useful messages anyone sends.</p>
     <p><b>Don't ask me</b> what to buy, when to buy it, or what to do with your money.
     I am not going to answer that, and you should be wary of anyone who would: they do
     not know your circumstances, your taxes, or what would keep you up at night. Nothing
@@ -1623,6 +1638,7 @@ def build_treasuries_hub(board):
   <h2 style="margin:34px 0 4px;font-weight:400;font-size:19px">The top 20, across every category</h2>
 {table}
 {_treasury_methods_panel()}
+{_treasury_nudge("Treasuries board")}
 """
     return _shell(title="Treasuries — who holds the world's Bitcoin",
                   desc=desc, url="%streasuries.html" % BASE_URL, active="treasuries",
@@ -1645,6 +1661,7 @@ def build_treasuries_category(board, category):
     ({money_cap(total.get('value_usd', 0))}) across {total.get('count', 0)} holders</span></p>
 {table}
 {_treasury_methods_panel()}
+{_treasury_nudge("Treasuries — " + meta["title"])}
   <p class="backlink"><a href="treasuries.html">← All Treasuries categories</a></p>
 """
     return _shell(title=f"{meta['title']} — Treasuries — {SITE_NAME}",
