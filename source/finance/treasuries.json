@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07 00:20 UTC",
+ "generated": "2026-09-07 00:27 UTC",
  "btc_price": 80359.2109375,
  "btc_price_source": "asset_board.json",
  "btc_price_as_of": "2026-09-06 23:40 UTC",
@@ -10,11 +10,12 @@
    "category": "public",
    "ticker": "MSTR",
    "country": "🇺🇸",
-   "btc_holdings": 847363.0,
-   "value_usd": 68093422057.63281,
-   "pct_of_21m": 4.035071516513618,
-   "source_note": "10-Q/8-K disclosures",
-   "as_of": "2026-09-06",
+   "btc_holdings": 845050.0,
+   "value_usd": 67907551202.734375,
+   "pct_of_21m": 4.024057204562665,
+   "source_note": "verified via bitbo.io + The Block treasury trackers, cross-checked against 8-K disclosures",
+   "as_of": "2026-08-31",
+   "verified": true,
    "rank_overall": 1,
    "rank_category": 1
   },
@@ -23,26 +24,14 @@
    "category": "etf",
    "ticker": "IBIT",
    "country": "🇺🇸",
-   "btc_holdings": 750000.0,
-   "value_usd": 60269408203.125,
-   "pct_of_21m": 3.5714370787787684,
-   "source_note": "BlackRock spot ETF; approximate, moves with daily flows",
-   "as_of": "2026-09-06",
+   "btc_holdings": 779840.0,
+   "value_usd": 62667327057.5,
+   "pct_of_21m": 3.7135326553531125,
+   "source_note": "verified via bitcointreasuries.net; BlackRock spot ETF, moves with daily flows",
+   "as_of": "2026-09-01",
+   "verified": true,
    "rank_overall": 2,
    "rank_category": 1
-  },
-  {
-   "name": "Fidelity Wise Origin Bitcoin Fund",
-   "category": "etf",
-   "ticker": "FBTC",
-   "country": "🇺🇸",
-   "btc_holdings": 200000.0,
-   "value_usd": 16071842187.5,
-   "pct_of_21m": 0.9523832210076716,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
-   "rank_overall": 3,
-   "rank_category": 2
   },
   {
    "name": "United States",
@@ -54,7 +43,8 @@
    "pct_of_21m": 0.9523832210076716,
    "source_note": "seized-asset holdings (DOJ/US Marshals, multiple cases) — disputed/partial, subject to disposal",
    "as_of": "2026-09-06",
-   "rank_overall": 4,
+   "verified": false,
+   "rank_overall": 3,
    "rank_category": 1
   },
   {
@@ -67,21 +57,23 @@
    "pct_of_21m": 0.904764059957288,
    "source_note": "alleged seized holdings (PlusToken case); never officially confirmed by Beijing",
    "as_of": "2026-09-06",
-   "rank_overall": 5,
+   "verified": false,
+   "rank_overall": 4,
    "rank_category": 2
   },
   {
-   "name": "Grayscale Bitcoin Trust",
+   "name": "Fidelity Wise Origin Bitcoin Fund",
    "category": "etf",
-   "ticker": "GBTC",
+   "ticker": "FBTC",
    "country": "🇺🇸",
-   "btc_holdings": 185000.0,
-   "value_usd": 14866454023.4375,
-   "pct_of_21m": 0.8809544794320963,
-   "source_note": "converted from the legacy closed-end trust; approximate",
-   "as_of": "2026-09-06",
-   "rank_overall": 6,
-   "rank_category": 3
+   "btc_holdings": 173308.0,
+   "value_usd": 13926894129.15625,
+   "pct_of_21m": 0.8252781563319878,
+   "source_note": "verified via bitcointreasuries.net; moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 5,
+   "rank_category": 2
   },
   {
    "name": "Wrapped Bitcoin (WBTC) reserve",
@@ -93,7 +85,8 @@
    "pct_of_21m": 0.7142874157557537,
    "source_note": "custodied 1:1 backing for the WBTC token supply (BitGo/BiT Global); moves with token supply",
    "as_of": "2026-09-06",
-   "rank_overall": 7,
+   "verified": false,
+   "rank_overall": 6,
    "rank_category": 1
   },
   {
@@ -106,8 +99,23 @@
    "pct_of_21m": 0.6666682547053702,
    "source_note": "2021 treasury-diversification announcement; unconfirmed since",
    "as_of": "2026-09-06",
-   "rank_overall": 8,
+   "verified": false,
+   "rank_overall": 7,
    "rank_category": 1
+  },
+  {
+   "name": "Grayscale Bitcoin Trust",
+   "category": "etf",
+   "ticker": "GBTC",
+   "country": "🇺🇸",
+   "btc_holdings": 131528.0,
+   "value_usd": 10569486296.1875,
+   "pct_of_21m": 0.6263253014634851,
+   "source_note": "verified via bitcointreasuries.net; converted from the legacy closed-end trust, still shrinking to outflows",
+   "as_of": "2026-08-21",
+   "verified": true,
+   "rank_overall": 8,
+   "rank_category": 3
   },
   {
    "name": "Tether Holdings",
@@ -119,6 +127,7 @@
    "pct_of_21m": 0.4761916105038358,
    "source_note": "reserve attestations; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 9,
    "rank_category": 2
   },
@@ -132,8 +141,23 @@
    "pct_of_21m": 0.2904768824073398,
    "source_note": "seized-asset holdings (2018 fraud case, Metropolitan Police); disposal proceedings ongoing",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 10,
    "rank_category": 3
+  },
+  {
+   "name": "Grayscale Bitcoin Mini Trust",
+   "category": "etf",
+   "ticker": "BTC",
+   "country": "🇺🇸",
+   "btc_holdings": 60555.0,
+   "value_usd": 4866152018.3203125,
+   "pct_of_21m": 0.28835782974059776,
+   "source_note": "verified via bitcointreasuries.net; moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 11,
+   "rank_category": 4
   },
   {
    "name": "Coinbase custody (cbBTC) reserve",
@@ -145,7 +169,8 @@
    "pct_of_21m": 0.2380958052519179,
    "source_note": "custodied backing for the cbBTC token; moves with token supply",
    "as_of": "2026-09-06",
-   "rank_overall": 11,
+   "verified": false,
+   "rank_overall": 12,
    "rank_category": 2
   },
   {
@@ -158,7 +183,8 @@
    "pct_of_21m": 0.21904814083176447,
    "source_note": "public + private wartime holdings; a contested figure",
    "as_of": "2026-09-06",
-   "rank_overall": 12,
+   "verified": false,
+   "rank_overall": 13,
    "rank_category": 4
   },
   {
@@ -166,13 +192,14 @@
    "category": "etf",
    "ticker": "ARKB",
    "country": "🇺🇸",
-   "btc_holdings": 45000.0,
-   "value_usd": 3616164492.1875,
-   "pct_of_21m": 0.2142862247267261,
-   "source_note": "approximate, moves with daily flows",
+   "btc_holdings": 44900.0,
+   "value_usd": 3608128571.09375,
+   "pct_of_21m": 0.21381003311622226,
+   "source_note": "derived from ~$3.6B AUM ÷ spot price (btcetfcalc.com); moves with daily flows",
    "as_of": "2026-09-06",
-   "rank_overall": 13,
-   "rank_category": 4
+   "verified": true,
+   "rank_overall": 14,
+   "rank_category": 5
   },
   {
    "name": "Twenty One Capital",
@@ -184,7 +211,8 @@
    "pct_of_21m": 0.2072100173946391,
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 14,
+   "verified": false,
+   "rank_overall": 15,
    "rank_category": 2
   },
   {
@@ -192,13 +220,14 @@
    "category": "etf",
    "ticker": "BITB",
    "country": "🇺🇸",
-   "btc_holdings": 40000.0,
-   "value_usd": 3214368437.5,
-   "pct_of_21m": 0.19047664420153432,
-   "source_note": "approximate, moves with daily flows",
+   "btc_holdings": 38900.0,
+   "value_usd": 3125973305.46875,
+   "pct_of_21m": 0.18523853648599212,
+   "source_note": "verified via Bitwise's own public proof-of-reserves page (bitcoinetf.directory)",
    "as_of": "2026-09-06",
-   "rank_overall": 15,
-   "rank_category": 5
+   "verified": true,
+   "rank_overall": 16,
+   "rank_category": 6
   },
   {
    "name": "MARA Holdings",
@@ -210,21 +239,9 @@
    "pct_of_21m": 0.1728718403612075,
    "source_note": "10-Q/8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 16,
-   "rank_category": 1
-  },
-  {
-   "name": "Grayscale Bitcoin Mini Trust",
-   "category": "etf",
-   "ticker": "BTC",
-   "country": "🇺🇸",
-   "btc_holdings": 35000.0,
-   "value_usd": 2812572382.8125,
-   "pct_of_21m": 0.16666706367634254,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 17,
-   "rank_category": 6
+   "rank_category": 1
   },
   {
    "name": "Bitcoin Standard Treasury",
@@ -236,6 +253,7 @@
    "pct_of_21m": 0.14295748338935654,
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 18,
    "rank_category": 3
   },
@@ -249,6 +267,7 @@
    "pct_of_21m": 0.14285748315115074,
    "source_note": "founders' holdings; widely cited but never audited",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 19,
    "rank_category": 3
   },
@@ -262,6 +281,7 @@
    "pct_of_21m": 0.11619075296293592,
    "source_note": "crypto exchange holding corporate BTC on balance sheet",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 20,
    "rank_category": 4
   },
@@ -275,6 +295,7 @@
    "pct_of_21m": 0.09523832210076716,
    "source_note": "approximate; JPY-listed, figures translated from company disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 21,
    "rank_category": 5
   },
@@ -288,6 +309,7 @@
    "pct_of_21m": 0.09523832210076716,
    "source_note": "estimate; DCG does not publish a balance-sheet BTC figure",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 22,
    "rank_category": 4
   },
@@ -301,8 +323,23 @@
    "pct_of_21m": 0.09523832210076716,
    "source_note": "cross-chain BTC yield protocol; custodied/bridged backing, approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 23,
    "rank_category": 3
+  },
+  {
+   "name": "WisdomTree Bitcoin Fund",
+   "category": "etf",
+   "ticker": "BTCW",
+   "country": "🇺🇸",
+   "btc_holdings": 19260.0,
+   "value_usd": 1547718402.65625,
+   "pct_of_21m": 0.09171450418303878,
+   "source_note": "verified via bitcointreasuries.net (revised up sharply from an earlier rough guess); moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 24,
+   "rank_category": 7
   },
   {
    "name": "Strive Asset Management",
@@ -314,7 +351,8 @@
    "pct_of_21m": 0.09062878731109003,
    "source_note": "10-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 24,
+   "verified": false,
+   "rank_overall": 25,
    "rank_category": 6
   },
   {
@@ -327,8 +365,23 @@
    "pct_of_21m": 0.07466684452700145,
    "source_note": "10-Q/8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 25,
+   "verified": false,
+   "rank_overall": 26,
    "rank_category": 2
+  },
+  {
+   "name": "VanEck Bitcoin Trust",
+   "category": "etf",
+   "ticker": "HODL",
+   "country": "🇺🇸",
+   "btc_holdings": 15400.0,
+   "value_usd": 1237531848.4375,
+   "pct_of_21m": 0.07333350801759071,
+   "source_note": "verified via bitcointreasuries.net; moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 27,
+   "rank_category": 8
   },
   {
    "name": "Coinbase Global",
@@ -340,20 +393,8 @@
    "pct_of_21m": 0.07328112694043529,
    "source_note": "corporate treasury holding, separate from its cbBTC custody book",
    "as_of": "2026-09-06",
-   "rank_overall": 26,
-   "rank_category": 7
-  },
-  {
-   "name": "VanEck Bitcoin Trust",
-   "category": "etf",
-   "ticker": "HODL",
-   "country": "🇺🇸",
-   "btc_holdings": 15000.0,
-   "value_usd": 1205388164.0625,
-   "pct_of_21m": 0.07142874157557537,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
-   "rank_overall": 27,
+   "verified": false,
+   "rank_overall": 28,
    "rank_category": 7
   },
   {
@@ -366,7 +407,8 @@
    "pct_of_21m": 0.07142874157557537,
    "source_note": "TSX/Nasdaq-listed; balance sheet + fund holdings, approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 28,
+   "verified": false,
+   "rank_overall": 29,
    "rank_category": 8
   },
   {
@@ -379,8 +421,9 @@
    "pct_of_21m": 0.07142874157557537,
    "source_note": "the first spot Bitcoin ETF, launched 2021; approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 29,
-   "rank_category": 8
+   "verified": false,
+   "rank_overall": 30,
+   "rank_category": 9
   },
   {
    "name": "CoinShares Physical Bitcoin",
@@ -392,8 +435,9 @@
    "pct_of_21m": 0.07142874157557537,
    "source_note": "approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 30,
-   "rank_category": 9
+   "verified": false,
+   "rank_overall": 31,
+   "rank_category": 10
   },
   {
    "name": "CleanSpark",
@@ -405,7 +449,8 @@
    "pct_of_21m": 0.06414300993486668,
    "source_note": "10-Q/8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 31,
+   "verified": false,
+   "rank_overall": 32,
    "rank_category": 3
   },
   {
@@ -418,7 +463,8 @@
    "pct_of_21m": 0.06190490936549865,
    "source_note": "state-mined via Druk Holding & Investments; approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 32,
+   "verified": false,
+   "rank_overall": 33,
    "rank_category": 5
   },
   {
@@ -431,7 +477,8 @@
    "pct_of_21m": 0.05480489245288646,
    "source_note": "10-Q disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 33,
+   "verified": false,
+   "rank_overall": 34,
    "rank_category": 9
   },
   {
@@ -444,34 +491,9 @@
    "pct_of_21m": 0.04894297372758424,
    "source_note": "10-Q/8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 34,
-   "rank_category": 4
-  },
-  {
-   "name": "Valkyrie Bitcoin Fund",
-   "category": "etf",
-   "ticker": "BRRR",
-   "country": "🇺🇸",
-   "btc_holdings": 10000.0,
-   "value_usd": 803592109.375,
-   "pct_of_21m": 0.04761916105038358,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 35,
-   "rank_category": 10
-  },
-  {
-   "name": "Franklin Bitcoin ETF",
-   "category": "etf",
-   "ticker": "EZBC",
-   "country": "🇺🇸",
-   "btc_holdings": 10000.0,
-   "value_usd": 803592109.375,
-   "pct_of_21m": 0.04761916105038358,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
-   "rank_overall": 36,
-   "rank_category": 11
+   "rank_category": 4
   },
   {
    "name": "Trump Media & Technology",
@@ -483,7 +505,8 @@
    "pct_of_21m": 0.04543820347427601,
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 37,
+   "verified": false,
+   "rank_overall": 36,
    "rank_category": 10
   },
   {
@@ -496,21 +519,9 @@
    "pct_of_21m": 0.04300962626070645,
    "source_note": "10-Q disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 38,
+   "verified": false,
+   "rank_overall": 37,
    "rank_category": 11
-  },
-  {
-   "name": "Invesco Galaxy Bitcoin ETF",
-   "category": "etf",
-   "ticker": "BTCO",
-   "country": "🇺🇸",
-   "btc_holdings": 8000.0,
-   "value_usd": 642873687.5,
-   "pct_of_21m": 0.038095328840306864,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
-   "rank_overall": 39,
-   "rank_category": 12
   },
   {
    "name": "21Shares Bitcoin ETP",
@@ -522,8 +533,9 @@
    "pct_of_21m": 0.038095328840306864,
    "source_note": "approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 40,
-   "rank_category": 13
+   "verified": false,
+   "rank_overall": 38,
+   "rank_category": 11
   },
   {
    "name": "American Bitcoin",
@@ -535,8 +547,37 @@
    "pct_of_21m": 0.03476198756678001,
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
-   "rank_overall": 41,
+   "verified": false,
+   "rank_overall": 39,
    "rank_category": 5
+  },
+  {
+   "name": "Valkyrie Bitcoin Fund",
+   "category": "etf",
+   "ticker": "BRRR",
+   "country": "🇺🇸",
+   "btc_holdings": 6410.0,
+   "value_usd": 515102542.109375,
+   "pct_of_21m": 0.03052388223329587,
+   "source_note": "verified via bitcointreasuries.net; moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 40,
+   "rank_category": 12
+  },
+  {
+   "name": "Franklin Bitcoin ETF",
+   "category": "etf",
+   "ticker": "EZBC",
+   "country": "🇺🇸",
+   "btc_holdings": 6331.0,
+   "value_usd": 508754164.4453125,
+   "pct_of_21m": 0.030147690860997844,
+   "source_note": "verified via bitcointreasuries.net; moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 41,
+   "rank_category": 13
   },
   {
    "name": "El Salvador",
@@ -548,6 +589,7 @@
    "pct_of_21m": 0.02952387985123782,
    "source_note": "national reserve, publicly tracked via the government's own dashboard",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 42,
    "rank_category": 6
   },
@@ -561,8 +603,23 @@
    "pct_of_21m": 0.02714292179871864,
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 43,
    "rank_category": 12
+  },
+  {
+   "name": "Invesco Galaxy Bitcoin ETF",
+   "category": "etf",
+   "ticker": "BTCO",
+   "country": "🇺🇸",
+   "btc_holdings": 5113.0,
+   "value_usd": 410876645.5234375,
+   "pct_of_21m": 0.024347677045061123,
+   "source_note": "verified via bitcointreasuries.net; moves with daily flows",
+   "as_of": "2026-09-04",
+   "verified": true,
+   "rank_overall": 44,
+   "rank_category": 14
   },
   {
    "name": "Semler Scientific",
@@ -574,7 +631,8 @@
    "pct_of_21m": 0.02380958052519179,
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 44,
+   "verified": false,
+   "rank_overall": 45,
    "rank_category": 13
   },
   {
@@ -587,8 +645,9 @@
    "pct_of_21m": 0.02380958052519179,
    "source_note": "approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 45,
-   "rank_category": 14
+   "verified": false,
+   "rank_overall": 46,
+   "rank_category": 15
   },
   {
    "name": "WisdomTree Physical Bitcoin (Europe)",
@@ -600,8 +659,9 @@
    "pct_of_21m": 0.02380958052519179,
    "source_note": "separate listing from the US WisdomTree Bitcoin Fund above; approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 46,
-   "rank_category": 15
+   "verified": false,
+   "rank_overall": 47,
+   "rank_category": 16
   },
   {
    "name": "Kraken",
@@ -613,7 +673,8 @@
    "pct_of_21m": 0.02380958052519179,
    "source_note": "corporate treasury estimate — distinct from customer custodial holdings",
    "as_of": "2026-09-06",
-   "rank_overall": 47,
+   "verified": false,
+   "rank_overall": 48,
    "rank_category": 5
   },
   {
@@ -626,7 +687,8 @@
    "pct_of_21m": 0.023333388914687954,
    "source_note": "announced treasury strategy; approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 48,
+   "verified": false,
+   "rank_overall": 49,
    "rank_category": 14
   },
   {
@@ -639,21 +701,9 @@
    "pct_of_21m": 0.022381005693680282,
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
-   "rank_overall": 49,
-   "rank_category": 15
-  },
-  {
-   "name": "WisdomTree Bitcoin Fund",
-   "category": "etf",
-   "ticker": "BTCW",
-   "country": "🇺🇸",
-   "btc_holdings": 4000.0,
-   "value_usd": 321436843.75,
-   "pct_of_21m": 0.019047664420153432,
-   "source_note": "approximate, moves with daily flows",
-   "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 50,
-   "rank_category": 16
+   "rank_category": 15
   },
   {
    "name": "3iQ CoinShares Bitcoin ETF",
@@ -665,6 +715,7 @@
    "pct_of_21m": 0.019047664420153432,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 51,
    "rank_category": 17
   },
@@ -678,6 +729,7 @@
    "pct_of_21m": 0.01571432314662658,
    "source_note": "Hong Kong-listed; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 52,
    "rank_category": 16
   },
@@ -691,6 +743,7 @@
    "pct_of_21m": 0.011904790262595895,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 53,
    "rank_category": 6
   },
@@ -704,6 +757,7 @@
    "pct_of_21m": 0.009523832210076716,
    "source_note": "AIM-listed; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 54,
    "rank_category": 17
   },
@@ -717,6 +771,7 @@
    "pct_of_21m": 0.009523832210076716,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 55,
    "rank_category": 18
   },
@@ -730,6 +785,7 @@
    "pct_of_21m": 0.009523832210076716,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 56,
    "rank_category": 19
   },
@@ -743,6 +799,7 @@
    "pct_of_21m": 0.009523832210076716,
    "source_note": "custodied backing for RSK's bridged BTC (via Sovryn and others); approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 57,
    "rank_category": 4
   },
@@ -756,6 +813,7 @@
    "pct_of_21m": 0.008890497368106614,
    "source_note": "20-F disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 58,
    "rank_category": 7
   },
@@ -769,6 +827,7 @@
    "pct_of_21m": 0.008833354374846154,
    "source_note": "20-F disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 59,
    "rank_category": 8
   },
@@ -782,6 +841,7 @@
    "pct_of_21m": 0.008095257378565208,
    "source_note": "Euronext Paris-listed; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 60,
    "rank_category": 18
   },
@@ -795,6 +855,7 @@
    "pct_of_21m": 0.007142874157557537,
    "source_note": "10-Q/8-K disclosures; transitioning toward data centers",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 61,
    "rank_category": 9
   },
@@ -808,6 +869,7 @@
    "pct_of_21m": 0.007142874157557537,
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 62,
    "rank_category": 19
   },
@@ -821,6 +883,7 @@
    "pct_of_21m": 0.007142874157557537,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 63,
    "rank_category": 20
   },
@@ -834,6 +897,7 @@
    "pct_of_21m": 0.006190490936549865,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 64,
    "rank_category": 10
   },
@@ -847,6 +911,7 @@
    "pct_of_21m": 0.0051571551417565415,
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 65,
    "rank_category": 20
   },
@@ -860,6 +925,7 @@
    "pct_of_21m": 0.00507144065186585,
    "source_note": "20-F disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 66,
    "rank_category": 11
   },
@@ -873,6 +939,7 @@
    "pct_of_21m": 0.004980964245870122,
    "source_note": "8-K disclosures; post 1-for-20 reverse split",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 67,
    "rank_category": 21
   },
@@ -886,6 +953,7 @@
    "pct_of_21m": 0.004761916105038358,
    "source_note": "custodied backing for the tBTC token; small relative to WBTC/cbBTC",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 68,
    "rank_category": 5
   },
@@ -899,6 +967,7 @@
    "pct_of_21m": 0.004761916105038358,
    "source_note": "sells most of what it mines; modest retained treasury, approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 69,
    "rank_category": 12
   },
@@ -912,6 +981,7 @@
    "pct_of_21m": 0.004761916105038358,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 70,
    "rank_category": 13
   },
@@ -925,6 +995,7 @@
    "pct_of_21m": 0.004761916105038358,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 71,
    "rank_category": 21
   },
@@ -938,6 +1009,7 @@
    "pct_of_21m": 0.003809532884030686,
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 72,
    "rank_category": 22
   },
@@ -951,6 +1023,7 @@
    "pct_of_21m": 0.003809532884030686,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 73,
    "rank_category": 14
   },
@@ -964,6 +1037,7 @@
    "pct_of_21m": 0.00333334127352685,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 74,
    "rank_category": 23
   },
@@ -977,6 +1051,7 @@
    "pct_of_21m": 0.00333334127352685,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 75,
    "rank_category": 22
   },
@@ -990,6 +1065,7 @@
    "pct_of_21m": 0.002380958052519179,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 76,
    "rank_category": 15
   },
@@ -1003,6 +1079,7 @@
    "pct_of_21m": 0.002142862247267261,
    "source_note": "seized-asset holdings across multiple cases; disputed/partial",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 77,
    "rank_category": 7
   },
@@ -1016,6 +1093,7 @@
    "pct_of_21m": 0.001904766442015343,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 78,
    "rank_category": 16
   },
@@ -1029,6 +1107,7 @@
    "pct_of_21m": 0.0014285748315115074,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 79,
    "rank_category": 17
   },
@@ -1042,6 +1121,7 @@
    "pct_of_21m": 0.0011904790262595895,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 80,
    "rank_category": 24
   },
@@ -1055,6 +1135,7 @@
    "pct_of_21m": 0.0009523832210076715,
    "source_note": "approximate",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 81,
    "rank_category": 25
   },
@@ -1068,14 +1149,15 @@
    "pct_of_21m": 5.56667992678984e-05,
    "source_note": "10-K disclosures",
    "as_of": "2026-09-06",
+   "verified": false,
    "rank_overall": 82,
    "rank_category": 26
   }
  ],
  "totals": {
   "public": {
-   "btc": 1077692.69,
-   "value_usd": 86602534201.5118,
+   "btc": 1075379.69,
+   "value_usd": 86416663346.61336,
    "count": 26
   },
   "mining": {
@@ -1089,8 +1171,8 @@
    "count": 5
   },
   "etf": {
-   "btc": 1361200.0,
-   "value_usd": 109384957928.125,
+   "btc": 1340745.0,
+   "value_usd": 107741210268.39844,
    "count": 22
   },
   "country": {
@@ -1104,8 +1186,8 @@
    "count": 5
   }
  },
- "grand_total_btc": 3570660.69,
- "grand_total_value_usd": 286935475573.9493,
- "grand_total_pct_of_21m": 17.003186645338374,
+ "grand_total_btc": 3547892.69,
+ "grand_total_value_usd": 285105857059.3243,
+ "grand_total_pct_of_21m": 16.89476733945886,
  "count": 82
 }

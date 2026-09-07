@@ -1519,6 +1519,12 @@ def treasury_row(r, rank, show_category=False):
                 f'{esc(TREASURY_CATEGORIES[r["category"]]["title"])}</span>'
                 if show_category else "")
     where = esc(r.get("country") or "") if r["category"] != "country" else ""
+    # A row's own `as_of` means it was individually checked against a real
+    # source (see its source_note); one that only inherited the seed file's
+    # top-level date is a rougher estimate — the "~" says so at a glance,
+    # without needing the reader to open source_note to find out.
+    as_of = esc(r.get("as_of") or "—")
+    verified = bool(r.get("verified"))
     return f"""      <tr>
         <td class="rk">{rank}</td>
         <td class="as"><span class="asw">{treasury_mark(r)}<span class="nm">
@@ -1526,6 +1532,7 @@ def treasury_row(r, rank, show_category=False):
         <td class="mc">{_btc_amt(r['btc_holdings'])} BTC</td>
         <td class="px">{money_cap(r['value_usd'])}</td>
         <td class="pc">{r['pct_of_21m']:.3f}%</td>
+        <td class="ao{' v' if verified else ''}" title="{'Individually verified against a real source' if verified else 'Estimate — not yet individually sourced'}">{'' if verified else '~'}{as_of}</td>
         <td class="wh">{where}</td>
       </tr>"""
 
@@ -1554,6 +1561,9 @@ TREASURY_CSS = """
 .trscard .tc-s{display:block;margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.45}
 .pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
 .trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
+.ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
+.ao.v{color:#7f8fa6}
+.trsfresh{margin:8px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
 @media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:520px){.trshero{grid-template-columns:1fr}}
 """
@@ -1573,6 +1583,7 @@ def _treasury_table(rows, show_category=False):
         <th class="mc">BTC held</th>
         <th class="px">Value</th>
         <th class="pc">% of 21M</th>
+        <th class="ao" title="~ = estimate; a plain date = individually verified against a real source">As of</th>
         <th class="wh">Where</th>
       </tr>
     </thead>
@@ -1581,6 +1592,20 @@ def _treasury_table(rows, show_category=False):
     </tbody>
   </table>
   </div>"""
+
+
+def _treasury_freshness_line(board):
+    """The price and the holdings figures it's multiplied against are not the
+    same kind of fresh — the price refreshes hourly with everything else on
+    this site, but a holdings count is only as current as the last time
+    someone actually checked it (see each row's own "As of" column). Saying
+    both, separately, is the same discipline the Bitcoin board already
+    applies to its own COMPUTED/POLLED/SNAPSHOT numbers."""
+    return (f'<p class="trsfresh">Bitcoin price refreshed {esc(board.get("generated", "—"))} '
+            f'(${_n(board.get("btc_price"))}/BTC) — holdings figures are dated '
+            f'individually per row below (a plain date is verified against a real '
+            f'source, "~" is an estimate); this file was last reviewed '
+            f'{esc(board.get("seed_as_of", "—"))}.</p>')
 
 
 def _treasury_methods_panel():
@@ -1629,6 +1654,7 @@ def build_treasuries_hub(board):
     body = f"""  <h1 class="btitle">Treasuries</h1>
   <p class="lede">{esc(desc)}</p>
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}</p>
+  {_treasury_freshness_line(board)}
   <div class="trshero">
 {tiles}
   </div>
@@ -1659,6 +1685,7 @@ def build_treasuries_category(board, category):
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}
     <span class="dot">·</span><span class="hl">{_btc_amt(total.get('btc', 0))} BTC
     ({money_cap(total.get('value_usd', 0))}) across {total.get('count', 0)} holders</span></p>
+  {_treasury_freshness_line(board)}
 {table}
 {_treasury_methods_panel()}
 {_treasury_nudge("Treasuries — " + meta["title"])}

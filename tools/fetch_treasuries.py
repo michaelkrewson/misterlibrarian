@@ -143,7 +143,11 @@ def compute():
             "value_usd": float(btc) * price,
             "pct_of_21m": float(btc) / BTC_TRUE_MAX * 100.0,
             "source_note": e.get("source_note"),
+            # A row's OWN as_of means it was individually checked against a
+            # real source (see source_note) — one that only inherits the
+            # seed file's top-level date is a rougher, unverified estimate.
             "as_of": e.get("as_of") or seed.get("as_of"),
+            "verified": bool(e.get("as_of")),
         })
     if not rows:
         return None
