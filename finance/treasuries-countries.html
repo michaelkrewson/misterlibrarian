@@ -252,35 +252,33 @@ a{color:#f7931a}
 /* ── The Treasuries board ─────────────────────────────────────────────────────
    Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
    so it can never collide with the asset table's .board/.mc/.px it also reuses. */
-.trshero{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
-.trsh{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
-  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
-.trsh-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+.trs-hl{color:#f7931a;font-variant-numeric:tabular-nums}
+.trsboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
+.trsbox{display:block;padding:18px 20px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%);
+  text-decoration:none;color:inherit;transition:border-color .15s}
+.trsbox:hover{border-color:#f7931a}
+.trsbox .tb-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.trsbox .tb-i{font-size:20px}
+.trsbox .tb-t{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#93a4bd;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsh-v{margin-top:8px;font-size:24px;line-height:1.15;color:#f7931a;
+.trsbox .tb-v{margin-top:9px;font-size:24px;line-height:1.15;color:#f7931a;
   letter-spacing:-.01em;font-variant-numeric:tabular-nums;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsh-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
-.trscards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:14px;margin:28px 0 0}
-.trscard{display:block;padding:18px 20px;border:1px solid #1b2534;border-radius:13px;
-  background:#0a111c;text-decoration:none;color:inherit;transition:border-color .15s}
-.trscard:hover{border-color:#f7931a}
-.trscard .tc-i{font-size:22px}
-.trscard .tc-t{display:block;margin-top:9px;font-size:16.5px;color:#e8eef7;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trscard .tc-s{display:block;margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.45}
+.trsbox .tb-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
+.trsbox .tb-d{margin:12px 0 0;padding-top:12px;border-top:1px solid #1b2534;
+  font-size:13px;color:#93a4bd;line-height:1.45}
 .pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
 .trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
 .ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
 .ao.v{color:#7f8fa6}
-.trsfresh{margin:8px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+.trsfresh{margin:20px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
 .board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
   font-weight:700;color:#e8eef7}
 .board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:#f7931a}
 .trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-@media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.trshero{grid-template-columns:1fr}}
+@media (max-width:900px){.trsboxes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trsboxes{grid-template-columns:1fr}}
 
 /* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
    the H1 on every Treasuries page literally carries the same Bitcoin logo —

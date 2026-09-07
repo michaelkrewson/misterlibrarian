@@ -1584,35 +1584,33 @@ TREASURY_CSS = """
 /* ── The Treasuries board ─────────────────────────────────────────────────────
    Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
    so it can never collide with the asset table's .board/.mc/.px it also reuses. */
-.trshero{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
-.trsh{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
-  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
-.trsh-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+.trs-hl{color:__ACCENT__;font-variant-numeric:tabular-nums}
+.trsboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
+.trsbox{display:block;padding:18px 20px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%);
+  text-decoration:none;color:inherit;transition:border-color .15s}
+.trsbox:hover{border-color:__ACCENT__}
+.trsbox .tb-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.trsbox .tb-i{font-size:20px}
+.trsbox .tb-t{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#93a4bd;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsh-v{margin-top:8px;font-size:24px;line-height:1.15;color:__ACCENT__;
+.trsbox .tb-v{margin-top:9px;font-size:24px;line-height:1.15;color:__ACCENT__;
   letter-spacing:-.01em;font-variant-numeric:tabular-nums;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsh-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
-.trscards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:14px;margin:28px 0 0}
-.trscard{display:block;padding:18px 20px;border:1px solid #1b2534;border-radius:13px;
-  background:#0a111c;text-decoration:none;color:inherit;transition:border-color .15s}
-.trscard:hover{border-color:__ACCENT__}
-.trscard .tc-i{font-size:22px}
-.trscard .tc-t{display:block;margin-top:9px;font-size:16.5px;color:#e8eef7;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trscard .tc-s{display:block;margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.45}
+.trsbox .tb-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
+.trsbox .tb-d{margin:12px 0 0;padding-top:12px;border-top:1px solid #1b2534;
+  font-size:13px;color:#93a4bd;line-height:1.45}
 .pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
 .trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
 .ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
 .ao.v{color:#7f8fa6}
-.trsfresh{margin:8px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+.trsfresh{margin:20px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
 .board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
   font-weight:700;color:#e8eef7}
 .board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:__ACCENT__}
 .trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-@media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.trshero{grid-template-columns:1fr}}
+@media (max-width:900px){.trsboxes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trsboxes{grid-template-columns:1fr}}
 
 /* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
    the H1 on every Treasuries page literally carries the same Bitcoin logo —
@@ -1722,39 +1720,41 @@ def _treasury_methods_panel():
 
 
 def build_treasuries_hub(board):
-    """The top of the tree: category totals, a compact overall leaderboard, and a
-    card linking into each category's own full page."""
+    """The top of the tree: one combined stat+description card per category
+    (linking into that category's own full page), plus a compact overall
+    leaderboard."""
     totals = board.get("totals", {})
-    tiles = "\n".join(
-        f'    <div class="trsh"><div class="trsh-l">{TREASURY_CATEGORIES[c]["icon"]} '
-        f'{esc(TREASURY_CATEGORIES[c]["title"])}</div>'
-        f'<div class="trsh-v">{_btc_amt(totals.get(c, {}).get("btc", 0))} BTC</div>'
-        f'<div class="trsh-s">{money_cap(totals.get(c, {}).get("value_usd", 0))} · '
-        f'{totals.get(c, {}).get("count", 0)} holders</div></div>'
-        for c in TREASURY_CATEGORY_ORDER)
-    cards = "\n".join(
-        f'    <a class="trscard" href="{TREASURY_CATEGORIES[c]["file"]}">'
-        f'<span class="tc-i">{TREASURY_CATEGORIES[c]["icon"]}</span>'
-        f'<span class="tc-t">{esc(TREASURY_CATEGORIES[c]["title"])} →</span>'
-        f'<span class="tc-s">{esc(TREASURY_CATEGORIES[c]["blurb"])}</span></a>'
+    boxes = "\n".join(
+        f'    <a class="trsbox" href="{TREASURY_CATEGORIES[c]["file"]}">'
+        f'<div class="tb-top"><span class="tb-i">{TREASURY_CATEGORIES[c]["icon"]}</span>'
+        f'<span class="tb-t">{esc(TREASURY_CATEGORIES[c]["title"])} →</span></div>'
+        f'<div class="tb-v">{_btc_amt(totals.get(c, {}).get("btc", 0))} BTC</div>'
+        f'<div class="tb-s">{money_cap(totals.get(c, {}).get("value_usd", 0))} · '
+        f'{totals.get(c, {}).get("count", 0)} holders</div>'
+        f'<p class="tb-d">{esc(TREASURY_CATEGORIES[c]["blurb"])}</p></a>'
         for c in TREASURY_CATEGORY_ORDER)
 
     top_rows = sorted(board.get("rows", []), key=lambda r: r["btc_holdings"], reverse=True)[:20]
     table = _treasury_table(top_rows, show_category=True)
 
-    desc = (f"Who holds the world's Bitcoin — {_btc_amt(board.get('grand_total_btc', 0))} BTC "
+    grand_total = _btc_amt(board.get("grand_total_btc", 0))
+    desc = (f"Who holds the world's Bitcoin — {grand_total} BTC "
             f"across {board.get('count', 0)} public companies, miners, ETFs, "
             "countries, private companies and DeFi protocols, ranked by coins held.")
+    # The grand total gets its own highlight in the on-page lede (not in the
+    # plain-text meta/OG descriptions, which can't carry markup) — the one
+    # number on the page meant to read as the headline figure.
+    lede_html = (f"Who holds the world&#x27;s Bitcoin — "
+                 f'<span class="trs-hl">{grand_total} BTC</span> '
+                 f"across {board.get('count', 0)} public companies, miners, ETFs, "
+                 "countries, private companies and DeFi protocols, ranked by coins held.")
     body = f"""  <h1 class="btitle">{BB_COIN_SVG.replace("__ACCENT__", ACCENT)}Bitcoin Treasuries</h1>
-  <p class="lede">{esc(desc)}</p>
+  <p class="lede">{lede_html}</p>
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · BTC ${_n(board.get('btc_price'))}</p>
+  <div class="trsboxes">
+{boxes}
+  </div>
   {_treasury_freshness_line(board)}
-  <div class="trshero">
-{tiles}
-  </div>
-  <div class="trscards">
-{cards}
-  </div>
   <h2 style="margin:34px 0 4px;font-weight:400;font-size:19px">The top 20, across every category</h2>
 {table}
 {_treasury_methods_panel()}

@@ -252,35 +252,33 @@ a{color:#f7931a}
 /* ── The Treasuries board ─────────────────────────────────────────────────────
    Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
    so it can never collide with the asset table's .board/.mc/.px it also reuses. */
-.trshero{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
-.trsh{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
-  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
-.trsh-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+.trs-hl{color:#f7931a;font-variant-numeric:tabular-nums}
+.trsboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
+.trsbox{display:block;padding:18px 20px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%);
+  text-decoration:none;color:inherit;transition:border-color .15s}
+.trsbox:hover{border-color:#f7931a}
+.trsbox .tb-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.trsbox .tb-i{font-size:20px}
+.trsbox .tb-t{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#93a4bd;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsh-v{margin-top:8px;font-size:24px;line-height:1.15;color:#f7931a;
+.trsbox .tb-v{margin-top:9px;font-size:24px;line-height:1.15;color:#f7931a;
   letter-spacing:-.01em;font-variant-numeric:tabular-nums;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsh-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
-.trscards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:14px;margin:28px 0 0}
-.trscard{display:block;padding:18px 20px;border:1px solid #1b2534;border-radius:13px;
-  background:#0a111c;text-decoration:none;color:inherit;transition:border-color .15s}
-.trscard:hover{border-color:#f7931a}
-.trscard .tc-i{font-size:22px}
-.trscard .tc-t{display:block;margin-top:9px;font-size:16.5px;color:#e8eef7;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trscard .tc-s{display:block;margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.45}
+.trsbox .tb-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
+.trsbox .tb-d{margin:12px 0 0;padding-top:12px;border-top:1px solid #1b2534;
+  font-size:13px;color:#93a4bd;line-height:1.45}
 .pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
 .trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
 .ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
 .ao.v{color:#7f8fa6}
-.trsfresh{margin:8px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+.trsfresh{margin:20px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
 .board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
   font-weight:700;color:#e8eef7}
 .board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:#f7931a}
 .trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-@media (max-width:900px){.trshero{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.trshero{grid-template-columns:1fr}}
+@media (max-width:900px){.trsboxes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trsboxes{grid-template-columns:1fr}}
 
 /* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
    the H1 on every Treasuries page literally carries the same Bitcoin logo —
@@ -354,25 +352,17 @@ a{color:#f7931a}
     </g>
   </g>
 </svg></span>Bitcoin Treasuries</h1>
-  <p class="lede">Who holds the world&#x27;s Bitcoin — 3,547,893 BTC across 82 public companies, miners, ETFs, countries, private companies and DeFi protocols, ranked by coins held.</p>
+  <p class="lede">Who holds the world&#x27;s Bitcoin — <span class="trs-hl">3,547,893 BTC</span> across 82 public companies, miners, ETFs, countries, private companies and DeFi protocols, ranked by coins held.</p>
   <p class="stamp">Updated 2026-09-07 00:49 UTC · BTC $80,359</p>
+  <div class="trsboxes">
+    <a class="trsbox" href="treasuries-public.html"><div class="tb-top"><span class="tb-i">🏢</span><span class="tb-t">Public Companies →</span></div><div class="tb-v">1,075,380 BTC</div><div class="tb-s">$86.4 B · 26 holders</div><p class="tb-d">Publicly traded companies holding Bitcoin on their own balance sheet, disclosed in their own SEC/regulatory filings.</p></a>
+    <a class="trsbox" href="treasuries-etf.html"><div class="tb-top"><span class="tb-i">📈</span><span class="tb-t">ETFs →</span></div><div class="tb-v">1,340,745 BTC</div><div class="tb-s">$107.7 B · 22 holders</div><p class="tb-d">Exchange-traded funds holding spot Bitcoin directly on behalf of their shareholders.</p></a>
+    <a class="trsbox" href="treasuries-countries.html"><div class="tb-top"><span class="tb-i">🏛️</span><span class="tb-t">Countries →</span></div><div class="tb-v">516,650 BTC</div><div class="tb-s">$41.5 B · 7 holders</div><p class="tb-d">Sovereign and government holdings — mostly assets seized in criminal cases, which is what makes these the most contested figures on this whole board.</p></a>
+    <a class="trsbox" href="treasuries-mining.html"><div class="tb-top"><span class="tb-i">⛏️</span><span class="tb-t">Mining Companies →</span></div><div class="tb-v">97,118 BTC</div><div class="tb-s">$7.8 B · 17 holders</div><p class="tb-d">Bitcoin miners that keep some or all of what they mine instead of selling it immediately.</p></a>
+    <a class="trsbox" href="treasuries-private.html"><div class="tb-top"><span class="tb-i">🔒</span><span class="tb-t">Private Companies →</span></div><div class="tb-v">295,000 BTC</div><div class="tb-s">$23.7 B · 5 holders</div><p class="tb-d">Privately held companies known or publicly reported to hold Bitcoin. The softest numbers here: none of these file the disclosures a public company has to.</p></a>
+    <a class="trsbox" href="treasuries-defi.html"><div class="tb-top"><span class="tb-i">🔗</span><span class="tb-t">DeFi →</span></div><div class="tb-v">223,000 BTC</div><div class="tb-s">$17.9 B · 5 holders</div><p class="tb-d">Bitcoin custodied to back a tokenized, on-chain representation of itself — wrapped or bridged BTC.</p></a>
+  </div>
   <p class="trsfresh">Bitcoin price refreshed 2026-09-07 00:49 UTC ($80,359/BTC) — holdings figures are dated individually per row below (a plain date is verified against a real source, "~" is an estimate); this file was last reviewed 2026-09-06.</p>
-  <div class="trshero">
-    <div class="trsh"><div class="trsh-l">🏢 Public Companies</div><div class="trsh-v">1,075,380 BTC</div><div class="trsh-s">$86.4 B · 26 holders</div></div>
-    <div class="trsh"><div class="trsh-l">📈 ETFs</div><div class="trsh-v">1,340,745 BTC</div><div class="trsh-s">$107.7 B · 22 holders</div></div>
-    <div class="trsh"><div class="trsh-l">🏛️ Countries</div><div class="trsh-v">516,650 BTC</div><div class="trsh-s">$41.5 B · 7 holders</div></div>
-    <div class="trsh"><div class="trsh-l">⛏️ Mining Companies</div><div class="trsh-v">97,118 BTC</div><div class="trsh-s">$7.8 B · 17 holders</div></div>
-    <div class="trsh"><div class="trsh-l">🔒 Private Companies</div><div class="trsh-v">295,000 BTC</div><div class="trsh-s">$23.7 B · 5 holders</div></div>
-    <div class="trsh"><div class="trsh-l">🔗 DeFi</div><div class="trsh-v">223,000 BTC</div><div class="trsh-s">$17.9 B · 5 holders</div></div>
-  </div>
-  <div class="trscards">
-    <a class="trscard" href="treasuries-public.html"><span class="tc-i">🏢</span><span class="tc-t">Public Companies →</span><span class="tc-s">Publicly traded companies holding Bitcoin on their own balance sheet, disclosed in their own SEC/regulatory filings.</span></a>
-    <a class="trscard" href="treasuries-etf.html"><span class="tc-i">📈</span><span class="tc-t">ETFs →</span><span class="tc-s">Exchange-traded funds holding spot Bitcoin directly on behalf of their shareholders.</span></a>
-    <a class="trscard" href="treasuries-countries.html"><span class="tc-i">🏛️</span><span class="tc-t">Countries →</span><span class="tc-s">Sovereign and government holdings — mostly assets seized in criminal cases, which is what makes these the most contested figures on this whole board.</span></a>
-    <a class="trscard" href="treasuries-mining.html"><span class="tc-i">⛏️</span><span class="tc-t">Mining Companies →</span><span class="tc-s">Bitcoin miners that keep some or all of what they mine instead of selling it immediately.</span></a>
-    <a class="trscard" href="treasuries-private.html"><span class="tc-i">🔒</span><span class="tc-t">Private Companies →</span><span class="tc-s">Privately held companies known or publicly reported to hold Bitcoin. The softest numbers here: none of these file the disclosures a public company has to.</span></a>
-    <a class="trscard" href="treasuries-defi.html"><span class="tc-i">🔗</span><span class="tc-t">DeFi →</span><span class="tc-s">Bitcoin custodied to back a tokenized, on-chain representation of itself — wrapped or bridged BTC.</span></a>
-  </div>
   <h2 style="margin:34px 0 4px;font-weight:400;font-size:19px">The top 20, across every category</h2>
   <div class="tw">
   <table class="board">
