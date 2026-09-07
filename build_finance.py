@@ -606,11 +606,12 @@ def _legal():
     keeps that same posture rather than becoming the one place a real name
     would otherwise naturally go (a copyright line)."""
     return ('<p class="legal">© %d %s. Nothing on this site is financial, legal, or '
-            'investment advice, and no reply from Mr. Librarian is either. Figures are '
-            'drawn from public sources, are not audited, and are not warranted to be '
-            'accurate or complete — do your own research before relying on anything '
-            'here. No company, fund, or government named on this site has endorsed it '
-            'or is affiliated with it.</p>'
+            'investment advice, and no reply from Mr. Librarian is either. This site is '
+            'measurement, not a recommendation — nothing here is a recommendation to buy '
+            'or sell any security. Figures are drawn from public sources, are not '
+            'audited, and are not warranted to be accurate or complete — do your own '
+            'research before relying on anything here. No company, fund, or government '
+            'named on this site has endorsed it or is affiliated with it.</p>'
             % (datetime.now(timezone.utc).year, esc(SITE_NAME)))
 
 
