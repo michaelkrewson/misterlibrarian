@@ -1,9 +1,9 @@
 {
- "generated": "2026-09-07 20:25 UTC",
+ "generated": "2026-09-07 20:57 UTC",
  "btc_price": 79195.1015625,
  "btc_price_source": "asset_board.json",
  "btc_price_as_of": "2026-09-07 20:25 UTC",
- "seed_as_of": "2026-09-06",
+ "seed_as_of": "2026-09-07",
  "rows": [
   {
    "ticker": "DDC",
@@ -14,30 +14,30 @@
    "primary_ticker": null,
    "price": 0.319,
    "price_date": "2026-09-04",
-   "market_cap": 15120600,
+   "market_cap": 18690210,
    "btc_holdings": 2899,
    "btc_nav": 229586599,
-   "mnav": 0.066,
-   "shares_out": 47400000,
+   "mnav": 0.081,
+   "shares_out": 58590000,
    "cost_basis": 79496,
-   "debt_usd": 0,
+   "debt_usd": 24373210,
    "preferred_usd": 0,
    "cash_usd": null,
-   "claims_usd": 0,
-   "claims_pct": 0.0,
-   "cebe_usd": 229586599,
-   "cebe_btc": 2899.0,
-   "cebe_sats_per_share": 6116,
-   "cebe_sats_per_100": 1917252,
-   "breakeven_btc_price": null,
+   "claims_usd": 24373210,
+   "claims_pct": 10.6,
+   "cebe_usd": 205213389,
+   "cebe_btc": 2591.24,
+   "cebe_sats_per_share": 4423,
+   "cebe_sats_per_100": 1386415,
+   "breakeven_btc_price": 8407.45,
    "preferred_div_rate_pct": null,
    "operating_cf_usd": null,
    "annual_div_obligation": null,
    "coverage_ratio": null,
    "coverage_reason": "no_preferred",
-   "stress_sats_per_100_20": 1917252,
-   "stress_sats_per_100_50": 1917252,
-   "as_of": "2026-09-06",
+   "stress_sats_per_100_20": 1345249,
+   "stress_sats_per_100_50": 1221750,
+   "as_of": "2026-09-07",
    "rank": 1
   },
   {
@@ -72,7 +72,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 562965,
    "stress_sats_per_100_50": 523955,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 2
   },
   {
@@ -107,7 +107,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 518611,
    "stress_sats_per_100_50": 518611,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 3
   },
   {
@@ -142,7 +142,7 @@
    "coverage_reason": "ocf_undisclosed",
    "stress_sats_per_100_20": 175786,
    "stress_sats_per_100_50": 169588,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 4
   },
   {
@@ -177,7 +177,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 169390,
    "stress_sats_per_100_50": 147612,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 5
   },
   {
@@ -212,7 +212,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 168607,
    "stress_sats_per_100_50": 168607,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 6
   },
   {
@@ -247,7 +247,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 166819,
    "stress_sats_per_100_50": 166819,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 7
   },
   {
@@ -282,7 +282,7 @@
    "coverage_reason": null,
    "stress_sats_per_100_20": 85393,
    "stress_sats_per_100_50": 45013,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 8
   },
   {
@@ -317,7 +317,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 91771,
    "stress_sats_per_100_50": 91771,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 9
   },
   {
@@ -352,7 +352,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 84530,
    "stress_sats_per_100_50": 84530,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 10
   },
   {
@@ -387,7 +387,7 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 50515,
    "stress_sats_per_100_50": 50515,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 11
   },
   {
@@ -422,78 +422,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 42044,
    "stress_sats_per_100_50": 42044,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
    "rank": 12
-  },
-  {
-   "ticker": "DJT",
-   "name": "Trump Media & Technology",
-   "kind": "treasury",
-   "country": "🇺🇸",
-   "domain": null,
-   "primary_ticker": null,
-   "price": 9.02,
-   "price_date": "2026-09-04",
-   "market_cap": 2498540127,
-   "btc_holdings": 9542,
-   "btc_nav": 755679659,
-   "mnav": 3.306,
-   "shares_out": 277000000,
-   "cost_basis": 90000,
-   "debt_usd": 0,
-   "preferred_usd": 0,
-   "cash_usd": null,
-   "claims_usd": 0,
-   "claims_pct": 0.0,
-   "cebe_usd": 755679659,
-   "cebe_btc": 9542.0,
-   "cebe_sats_per_share": 3445,
-   "cebe_sats_per_100": 38190,
-   "breakeven_btc_price": null,
-   "preferred_div_rate_pct": null,
-   "operating_cf_usd": null,
-   "annual_div_obligation": null,
-   "coverage_ratio": null,
-   "coverage_reason": "no_preferred",
-   "stress_sats_per_100_20": 38190,
-   "stress_sats_per_100_50": 38190,
-   "as_of": "2026-09-06",
-   "rank": 13
-  },
-  {
-   "ticker": "CANG",
-   "name": "Cango Inc",
-   "kind": "miner",
-   "country": "🇨🇳",
-   "domain": null,
-   "primary_ticker": null,
-   "price": 2.19,
-   "price_date": "2026-09-04",
-   "market_cap": 429240011,
-   "btc_holdings": 1065,
-   "btc_nav": 84342783,
-   "mnav": 5.089,
-   "shares_out": 196000000,
-   "cost_basis": 50000,
-   "debt_usd": 0,
-   "preferred_usd": 0,
-   "cash_usd": null,
-   "claims_usd": 0,
-   "claims_pct": 0.0,
-   "cebe_usd": 84342783,
-   "cebe_btc": 1065.0,
-   "cebe_sats_per_share": 543,
-   "cebe_sats_per_100": 24811,
-   "breakeven_btc_price": null,
-   "preferred_div_rate_pct": null,
-   "operating_cf_usd": null,
-   "annual_div_obligation": null,
-   "coverage_ratio": null,
-   "coverage_reason": "no_preferred",
-   "stress_sats_per_100_20": 24811,
-   "stress_sats_per_100_50": 24811,
-   "as_of": "2026-09-06",
-   "rank": 14
   },
   {
    "ticker": "CPTLF",
@@ -527,8 +457,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 18593,
    "stress_sats_per_100_50": 18593,
-   "as_of": "2026-09-06",
-   "rank": 15
+   "as_of": "2026-09-07",
+   "rank": 13
   },
   {
    "ticker": "CLSK",
@@ -562,8 +492,43 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 8724,
    "stress_sats_per_100_50": -8003,
-   "as_of": "2026-09-06",
-   "rank": 16
+   "as_of": "2026-09-07",
+   "rank": 14
+  },
+  {
+   "ticker": "CANG",
+   "name": "Cango Inc",
+   "kind": "miner",
+   "country": "🇨🇳",
+   "domain": null,
+   "primary_ticker": null,
+   "price": 2.19,
+   "price_date": "2026-09-04",
+   "market_cap": 429240011,
+   "btc_holdings": 1065,
+   "btc_nav": 84342783,
+   "mnav": 5.089,
+   "shares_out": 196000000,
+   "cost_basis": 50000,
+   "debt_usd": 39260615,
+   "preferred_usd": 0,
+   "cash_usd": null,
+   "claims_usd": 39260615,
+   "claims_pct": 46.5,
+   "cebe_usd": 45082168,
+   "cebe_btc": 569.25,
+   "cebe_sats_per_share": 290,
+   "cebe_sats_per_100": 13262,
+   "breakeven_btc_price": 36864.43,
+   "preferred_div_rate_pct": null,
+   "operating_cf_usd": null,
+   "annual_div_obligation": null,
+   "coverage_ratio": null,
+   "coverage_reason": "no_preferred",
+   "stress_sats_per_100_20": 10375,
+   "stress_sats_per_100_50": 1713,
+   "as_of": "2026-09-07",
+   "rank": 15
   },
   {
    "ticker": "MARA",
@@ -597,8 +562,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": -7974,
    "stress_sats_per_100_50": -67784,
-   "as_of": "2026-09-06",
-   "rank": 17
+   "as_of": "2026-09-07",
+   "rank": 16
   },
   {
    "ticker": "RIOT",
@@ -632,8 +597,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 7912,
    "stress_sats_per_100_50": 672,
-   "as_of": "2026-09-06",
-   "rank": 18
+   "as_of": "2026-09-07",
+   "rank": 17
   },
   {
    "ticker": "ABTC",
@@ -667,8 +632,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 8595,
    "stress_sats_per_100_50": 8595,
-   "as_of": "2026-09-06",
-   "rank": 19
+   "as_of": "2026-09-07",
+   "rank": 18
   },
   {
    "ticker": "HUT",
@@ -702,8 +667,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 5387,
    "stress_sats_per_100_50": 2626,
-   "as_of": "2026-09-06",
-   "rank": 20
+   "as_of": "2026-09-07",
+   "rank": 19
   },
   {
    "ticker": "VIDA",
@@ -737,8 +702,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 4096,
    "stress_sats_per_100_50": 4096,
-   "as_of": "2026-09-06",
-   "rank": 21
+   "as_of": "2026-09-07",
+   "rank": 20
   },
   {
    "ticker": "COIN",
@@ -772,8 +737,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 3171,
    "stress_sats_per_100_50": 3171,
-   "as_of": "2026-09-06",
-   "rank": 22
+   "as_of": "2026-09-07",
+   "rank": 21
   },
   {
    "ticker": "CIFR",
@@ -807,8 +772,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 2067,
    "stress_sats_per_100_50": 2067,
-   "as_of": "2026-09-06",
-   "rank": 23
+   "as_of": "2026-09-07",
+   "rank": 22
   },
   {
    "ticker": "XYZ",
@@ -842,8 +807,8 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 1834,
    "stress_sats_per_100_50": 1834,
-   "as_of": "2026-09-06",
-   "rank": 24
+   "as_of": "2026-09-07",
+   "rank": 23
   },
   {
    "ticker": "TSLA",
@@ -877,7 +842,42 @@
    "coverage_reason": "no_preferred",
    "stress_sats_per_100_20": 101,
    "stress_sats_per_100_50": 101,
-   "as_of": "2026-09-06",
+   "as_of": "2026-09-07",
+   "rank": 24
+  },
+  {
+   "ticker": "DJT",
+   "name": "Trump Media & Technology",
+   "kind": "treasury",
+   "country": "🇺🇸",
+   "domain": null,
+   "primary_ticker": null,
+   "price": 9.02,
+   "price_date": "2026-09-04",
+   "market_cap": 2498540127,
+   "btc_holdings": 9542,
+   "btc_nav": 755679659,
+   "mnav": 3.306,
+   "shares_out": 277000000,
+   "cost_basis": 90000,
+   "debt_usd": 970000000,
+   "preferred_usd": 0,
+   "cash_usd": null,
+   "claims_usd": 970000000,
+   "claims_pct": 128.4,
+   "cebe_usd": -214320341,
+   "cebe_btc": -2706.23,
+   "cebe_sats_per_share": -977,
+   "cebe_sats_per_100": -10831,
+   "breakeven_btc_price": 101655.84,
+   "preferred_div_rate_pct": null,
+   "operating_cf_usd": null,
+   "annual_div_obligation": null,
+   "coverage_ratio": null,
+   "coverage_reason": "no_preferred",
+   "stress_sats_per_100_20": -23087,
+   "stress_sats_per_100_50": -59853,
+   "as_of": "2026-09-07",
    "rank": 25
   }
  ],
