@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-07 00:49 UTC",
+ "generated": "2026-09-07 02:21 UTC",
  "btc_price": 80359.2109375,
  "btc_price_source": "asset_board.json",
  "btc_price_as_of": "2026-09-06 23:40 UTC",
@@ -231,6 +231,21 @@
    "rank_category": 2
   },
   {
+   "name": "Metaplanet",
+   "category": "public",
+   "ticker": "3350.T",
+   "country": "🇯🇵",
+   "domain": "metaplanet.jp",
+   "btc_holdings": 43000.0,
+   "value_usd": 3455446070.3125,
+   "pct_of_21m": 0.2047623925166494,
+   "source_note": "JPY-listed on the Tokyo Stock Exchange; also trades OTC in the US as MTPLF. Verified against company disclosures via Claude's own research 2026-09-06 (revised up sharply from a stale earlier estimate)",
+   "as_of": "2026-07-02",
+   "verified": true,
+   "rank_overall": 16,
+   "rank_category": 3
+  },
+  {
    "name": "Bitwise Bitcoin ETF",
    "category": "etf",
    "ticker": "BITB",
@@ -242,7 +257,7 @@
    "source_note": "verified via Bitwise's own public proof-of-reserves page (bitcoinetf.directory)",
    "as_of": "2026-09-06",
    "verified": true,
-   "rank_overall": 16,
+   "rank_overall": 17,
    "rank_category": 6
   },
   {
@@ -257,7 +272,7 @@
    "source_note": "10-Q/8-K disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 17,
+   "rank_overall": 18,
    "rank_category": 1
   },
   {
@@ -272,8 +287,8 @@
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 18,
-   "rank_category": 3
+   "rank_overall": 19,
+   "rank_category": 4
   },
   {
    "name": "BitMEX (100x Group)",
@@ -287,7 +302,7 @@
    "source_note": "founders' holdings; widely cited but never audited",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 19,
+   "rank_overall": 20,
    "rank_category": 3
   },
   {
@@ -300,21 +315,6 @@
    "value_usd": 1960764746.875,
    "pct_of_21m": 0.11619075296293592,
    "source_note": "crypto exchange holding corporate BTC on balance sheet",
-   "as_of": "2026-09-06",
-   "verified": false,
-   "rank_overall": 20,
-   "rank_category": 4
-  },
-  {
-   "name": "Metaplanet",
-   "category": "public",
-   "ticker": "3350.T",
-   "country": "🇯🇵",
-   "domain": "metaplanet.jp",
-   "btc_holdings": 20000.0,
-   "value_usd": 1607184218.75,
-   "pct_of_21m": 0.09523832210076716,
-   "source_note": "approximate; JPY-listed, figures translated from company disclosures",
    "as_of": "2026-09-06",
    "verified": false,
    "rank_overall": 21,
@@ -728,13 +728,13 @@
   {
    "name": "ProCap Financial",
    "category": "public",
-   "ticker": "PCAP",
+   "ticker": "BRR",
    "country": "🇺🇸",
    "domain": null,
    "btc_holdings": 4900.0,
    "value_usd": 393760133.59375,
    "pct_of_21m": 0.023333388914687954,
-   "source_note": "announced treasury strategy; approximate",
+   "source_note": "Delaware corp formed via SPAC merger (ProCap BTC LLC + Columbus Circle Capital Corp I), Nasdaq Global Market since 2025-12-08 under BRR — ticker corrected 2026-09-06, was previously miscited as PCAP; BTC figure itself still approximate",
    "as_of": "2026-09-06",
    "verified": false,
    "rank_overall": 49,
@@ -771,6 +771,36 @@
    "rank_category": 17
   },
   {
+   "name": "OranjeBTC",
+   "category": "public",
+   "ticker": "OBTC3.SA",
+   "country": "🇧🇷",
+   "domain": null,
+   "btc_holdings": 3950.0,
+   "value_usd": 317418883.203125,
+   "pct_of_21m": 0.018809568614901514,
+   "source_note": "B3 (Brazil)-listed; has an SEC-registered F-6 ADR (ORNJY, BNY Mellon depositary) but it trades too thin/stale to price live. Verified via company disclosures, Claude's own research 2026-09-06",
+   "as_of": "2026-08-10",
+   "verified": true,
+   "rank_overall": 52,
+   "rank_category": 16
+  },
+  {
+   "name": "H100 Group",
+   "category": "public",
+   "ticker": "H100.ST",
+   "country": "🇸🇪",
+   "domain": null,
+   "btc_holdings": 3506.4,
+   "value_usd": 281771537.23125,
+   "pct_of_21m": 0.0166971826307065,
+   "source_note": "Nasdaq First North Growth Market Stockholm-listed; also trades OTC in the US as HOGPF. Verified via company disclosures, Claude's own research 2026-09-06",
+   "as_of": "2026-08-10",
+   "verified": true,
+   "rank_overall": 53,
+   "rank_category": 17
+  },
+  {
    "name": "Boyaa Interactive",
    "category": "public",
    "ticker": "0434.HK",
@@ -782,8 +812,53 @@
    "source_note": "Hong Kong-listed; approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 52,
-   "rank_category": 16
+   "rank_overall": 54,
+   "rank_category": 18
+  },
+  {
+   "name": "Capital B (fmr. The Blockchain Group)",
+   "category": "public",
+   "ticker": "ALCPB.PA",
+   "country": "🇫🇷",
+   "domain": null,
+   "btc_holdings": 3145.0,
+   "value_usd": 252729718.3984375,
+   "pct_of_21m": 0.014976226150345634,
+   "source_note": "rebranded from The Blockchain Group; Euronext Growth Paris-listed, also trades OTC in the US as CPTLF. ⚠ mid a 10:1 reverse split effective 2026-09-08 — this figure predates it, unaffected (a share split doesn't change BTC holdings, only share count)",
+   "as_of": "2026-08-17",
+   "verified": true,
+   "rank_overall": 55,
+   "rank_category": 19
+  },
+  {
+   "name": "DDC Enterprise",
+   "category": "public",
+   "ticker": "DDC",
+   "country": "🇺🇸",
+   "domain": "ddc.com",
+   "btc_holdings": 2899.0,
+   "value_usd": 232961352.5078125,
+   "pct_of_21m": 0.0138047947885062,
+   "source_note": "Cayman holding company, HK operations, but its ADS trades natively on NYSE American under DDC (not an OTC/ADR workaround). Verified via company disclosures, Claude's own research 2026-09-06",
+   "as_of": "2026-09-02",
+   "verified": true,
+   "rank_overall": 56,
+   "rank_category": 20
+  },
+  {
+   "name": "The Smarter Web Company",
+   "category": "public",
+   "ticker": "SWC.L",
+   "country": "🇬🇧",
+   "domain": null,
+   "btc_holdings": 2747.0,
+   "value_usd": 220746752.4453125,
+   "pct_of_21m": 0.01308098354054037,
+   "source_note": "moved from Aquis to the London Stock Exchange Main Market 2026-02-03; also trades OTC in the US as TSWCF. Verified via company disclosures, Claude's own research 2026-09-06",
+   "as_of": "2026-09-02",
+   "verified": true,
+   "rank_overall": 57,
+   "rank_category": 21
   },
   {
    "name": "Hive Digital Technologies",
@@ -797,23 +872,8 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 53,
+   "rank_overall": 58,
    "rank_category": 6
-  },
-  {
-   "name": "The Smarter Web Company",
-   "category": "public",
-   "ticker": "SWC.L",
-   "country": "🇬🇧",
-   "domain": null,
-   "btc_holdings": 2000.0,
-   "value_usd": 160718421.875,
-   "pct_of_21m": 0.009523832210076716,
-   "source_note": "AIM-listed; approximate",
-   "as_of": "2026-09-06",
-   "verified": false,
-   "rank_overall": 54,
-   "rank_category": 17
   },
   {
    "name": "Bosera HashKey Bitcoin ETF",
@@ -827,7 +887,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 55,
+   "rank_overall": 59,
    "rank_category": 18
   },
   {
@@ -842,7 +902,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 56,
+   "rank_overall": 60,
    "rank_category": 19
   },
   {
@@ -857,7 +917,7 @@
    "source_note": "custodied backing for RSK's bridged BTC (via Sovryn and others); approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 57,
+   "rank_overall": 61,
    "rank_category": 4
   },
   {
@@ -872,7 +932,7 @@
    "source_note": "20-F disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 58,
+   "rank_overall": 62,
    "rank_category": 7
   },
   {
@@ -887,23 +947,8 @@
    "source_note": "20-F disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 59,
+   "rank_overall": 63,
    "rank_category": 8
-  },
-  {
-   "name": "The Blockchain Group",
-   "category": "public",
-   "ticker": "ALTBG.PA",
-   "country": "🇫🇷",
-   "domain": null,
-   "btc_holdings": 1700.0,
-   "value_usd": 136610658.59375,
-   "pct_of_21m": 0.008095257378565208,
-   "source_note": "Euronext Paris-listed; approximate",
-   "as_of": "2026-09-06",
-   "verified": false,
-   "rank_overall": 60,
-   "rank_category": 18
   },
   {
    "name": "Cipher Digital",
@@ -917,7 +962,7 @@
    "source_note": "10-Q/8-K disclosures; transitioning toward data centers",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 61,
+   "rank_overall": 64,
    "rank_category": 9
   },
   {
@@ -932,8 +977,8 @@
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 62,
-   "rank_category": 19
+   "rank_overall": 65,
+   "rank_category": 22
   },
   {
    "name": "ChinaAMC Bitcoin ETF",
@@ -947,7 +992,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 63,
+   "rank_overall": 66,
    "rank_category": 20
   },
   {
@@ -962,7 +1007,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 64,
+   "rank_overall": 67,
    "rank_category": 10
   },
   {
@@ -977,8 +1022,8 @@
    "source_note": "8-K disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 65,
-   "rank_category": 20
+   "rank_overall": 68,
+   "rank_category": 23
   },
   {
    "name": "Cango Inc",
@@ -992,7 +1037,7 @@
    "source_note": "20-F disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 66,
+   "rank_overall": 69,
    "rank_category": 11
   },
   {
@@ -1007,8 +1052,8 @@
    "source_note": "8-K disclosures; post 1-for-20 reverse split",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 67,
-   "rank_category": 21
+   "rank_overall": 70,
+   "rank_category": 24
   },
   {
    "name": "Threshold Network (tBTC)",
@@ -1022,7 +1067,7 @@
    "source_note": "custodied backing for the tBTC token; small relative to WBTC/cbBTC",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 68,
+   "rank_overall": 71,
    "rank_category": 5
   },
   {
@@ -1037,7 +1082,7 @@
    "source_note": "sells most of what it mines; modest retained treasury, approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 69,
+   "rank_overall": 72,
    "rank_category": 12
   },
   {
@@ -1052,7 +1097,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 70,
+   "rank_overall": 73,
    "rank_category": 13
   },
   {
@@ -1067,7 +1112,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 71,
+   "rank_overall": 74,
    "rank_category": 21
   },
   {
@@ -1082,8 +1127,8 @@
    "source_note": "8-K disclosures; approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 72,
-   "rank_category": 22
+   "rank_overall": 75,
+   "rank_category": 25
   },
   {
    "name": "Iris Energy",
@@ -1097,7 +1142,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 73,
+   "rank_overall": 76,
    "rank_category": 14
   },
   {
@@ -1112,8 +1157,8 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 74,
-   "rank_category": 23
+   "rank_overall": 77,
+   "rank_category": 26
   },
   {
    "name": "Monochrome Bitcoin ETF",
@@ -1127,8 +1172,23 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 75,
+   "rank_overall": 78,
    "rank_category": 22
+  },
+  {
+   "name": "Méliuz",
+   "category": "public",
+   "ticker": "CASH3.SA",
+   "country": "🇧🇷",
+   "domain": null,
+   "btc_holdings": 605.0,
+   "value_usd": 48617322.6171875,
+   "pct_of_21m": 0.0028809592435482066,
+   "source_note": "B3 (Brazil)-listed; also has a sponsored US ADR (MLIZY, OTCQX, 1 ADR = 2 ordinary shares). ⚠ this figure is its last CLEANLY confirmed disclosure — its current 2026 holdings were not cleanly reconfirmed during 2026-09-06 research, treat as stale/a floor, not current",
+   "as_of": "2026-09-06",
+   "verified": false,
+   "rank_overall": 79,
+   "rank_category": 27
   },
   {
    "name": "TeraWulf",
@@ -1142,7 +1202,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 76,
+   "rank_overall": 80,
    "rank_category": 15
   },
   {
@@ -1157,7 +1217,7 @@
    "source_note": "seized-asset holdings across multiple cases; disputed/partial",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 77,
+   "rank_overall": 81,
    "rank_category": 7
   },
   {
@@ -1172,7 +1232,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 78,
+   "rank_overall": 82,
    "rank_category": 16
   },
   {
@@ -1187,7 +1247,7 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 79,
+   "rank_overall": 83,
    "rank_category": 17
   },
   {
@@ -1202,8 +1262,8 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 80,
-   "rank_category": 24
+   "rank_overall": 84,
+   "rank_category": 28
   },
   {
    "name": "Cathedra Bitcoin",
@@ -1217,8 +1277,8 @@
    "source_note": "approximate",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 81,
-   "rank_category": 25
+   "rank_overall": 85,
+   "rank_category": 29
   },
   {
    "name": "Vida Global",
@@ -1232,15 +1292,15 @@
    "source_note": "10-K disclosures",
    "as_of": "2026-09-06",
    "verified": false,
-   "rank_overall": 82,
-   "rank_category": 26
+   "rank_overall": 86,
+   "rank_category": 30
   }
  ],
  "totals": {
   "public": {
-   "btc": 1075379.69,
-   "value_usd": 86416663346.61336,
-   "count": 26
+   "btc": 1111532.0899999999,
+   "value_usd": 89321841684.11023,
+   "count": 30
   },
   "mining": {
    "btc": 97118.0,
@@ -1268,8 +1328,8 @@
    "count": 5
   }
  },
- "grand_total_btc": 3547892.69,
- "grand_total_value_usd": 285105857059.3243,
- "grand_total_pct_of_21m": 16.89476733945886,
- "count": 82
+ "grand_total_btc": 3584045.09,
+ "grand_total_value_usd": 288011035396.82117,
+ "grand_total_pct_of_21m": 17.06692203525465,
+ "count": 86
 }
