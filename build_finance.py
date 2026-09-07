@@ -30,6 +30,7 @@ from __future__ import annotations
 import datetime as dt
 import html
 import json
+import math
 import os
 import re
 import sys
@@ -110,6 +111,7 @@ SRC = os.path.join(ROOT, "source", "finance", "asset_board.json")
 BTC_SRC = os.path.join(ROOT, "source", "finance", "bitcoin_stats.json")
 TREASURIES_SRC = os.path.join(ROOT, "source", "finance", "treasuries.json")
 CEBE_SRC = os.path.join(ROOT, "source", "finance", "cebe.json")
+CRYPTO_SRC = os.path.join(ROOT, "source", "finance", "crypto_heatmap.json")
 OUT = os.path.join(ROOT, "finance")
 ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 
@@ -142,6 +144,23 @@ def money_cap(v):
 def money_px(v):
     """Prices: comma-grouped whole dollars once they are large enough not to need cents."""
     return f"${v:,.0f}" if v >= 1000 else f"${v:,.2f}"
+
+
+def crypto_px(v):
+    """Same idea as money_px, but for the Crypto Heat Map, where a fixed two
+    decimals would print PEPE and SHIB as "$0.00" — indistinguishable from
+    genuinely worthless. Below $1, show ~4 significant figures instead of a
+    fixed decimal count, so a $0.0000036 coin reads as that, not as zero."""
+    if v is None:
+        return "—"
+    if v >= 1000:
+        return f"${v:,.0f}"
+    if v >= 1:
+        return f"${v:,.2f}"
+    if v <= 0:
+        return "$0"
+    decimals = 3 - math.floor(math.log10(v))
+    return f"${v:.{decimals}f}"
 
 
 def pct(v):
@@ -585,10 +604,11 @@ def _nav(active=""):
             '<a href="board.html"%s>Asset Board</a>'
             '<a href="bitcoin.html"%s>Bitcoin Board</a>'
             '<a href="treasuries.html"%s>Bitcoin Treasuries</a>'
+            '<a href="crypto.html"%s>Crypto Heat Map</a>'
             '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
-                        cls("ask")))
+                        cls("crypto"), cls("ask")))
 
 
 def _chrome(active=""):
@@ -619,6 +639,7 @@ def _foot():
     return ('<footer>%s · <a href="board.html">The Asset Board</a> · '
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
             '<a href="treasuries.html">Bitcoin Treasuries</a> · '
+            '<a href="crypto.html">The Crypto Heat Map</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
             'nothing here is investment advice%s</footer>'
@@ -1022,7 +1043,7 @@ def build_thanks():
                   url="%sthanks.html" % BASE_URL, body=body, noindex=True)
 
 
-def build_front(entries, board, stats=None, treasuries=None):
+def build_front(entries, board, stats=None, treasuries=None, crypto=None):
     """The publication's front page: what has been written, newest first —
     as a bounded grid of tiles, not a list that grows forever.
 
@@ -1070,6 +1091,18 @@ def build_front(entries, board, stats=None, treasuries=None):
         pool.append(_front_item(href="treasuries.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
                                 title="Bitcoin Treasuries", desc=trs_line + ".", board=True,
                                 date=_parse_generated_date(treasuries.get("generated"))))
+
+    # Same "don't link to a page the build didn't write" rule as the other tiles.
+    if crypto and crypto.get("rows"):
+        dom = crypto.get("btc_dominance_pct")
+        cry_line = ("The top %d coins by market cap, grouped into Bitcoin & "
+                    "Derivatives, Infrastructure & Platform, and Others, colour-graded "
+                    "by how much each has moved" % len(crypto["rows"]))
+        if dom:
+            cry_line += " — Bitcoin currently holds %.0f%% of it" % dom
+        pool.append(_front_item(href="crypto.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
+                                title="The Crypto Heat Map", desc=cry_line + ".", board=True,
+                                date=_parse_generated_date(crypto.get("generated"))))
 
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
                          title=e["title"], desc=e["summary"], date=e["date"]) for e in entries]
@@ -1485,6 +1518,208 @@ def build_board(board):
     # real search term for a house name nobody is looking up yet.
     return _shell(title="The Asset Board — the biggest assets in the world",
                   desc=desc, url="%sboard.html" % BASE_URL, active="board", body=body)
+
+
+# ─────────────────────────────────────────────────────────── the Crypto Heat Map ──
+#
+# The top 100 coins by market cap, grouped into three sections and colour-graded
+# like a heat map. Rendered from source/finance/crypto_heatmap.json
+# (tools/fetch_crypto_heatmap.py). See that script's own docstring for the two
+# things worth knowing before touching this: (1) categorisation is two curated,
+# positive lists (Bitcoin & Derivatives, Infrastructure & Platform) with
+# everything else falling to "Others" by default, and (2) 3M/6M/YTD are filled
+# in gradually by a paced background crawl (CoinGecko has no bulk endpoint for
+# those periods at any price, and the free anonymous tier throttles hard) — a
+# coin not yet reached by the crawl reads "—" for those three buttons rather
+# than a guess or a mislabeled stand-in.
+
+CRYPTO_CATEGORY_ORDER = ("Bitcoin & Derivatives", "Infrastructure & Platform", "Others")
+CRYPTO_CATEGORY_BLURB = {
+    "Bitcoin & Derivatives": "Bitcoin itself, coins forked from its codebase, and "
+        "tokenized or wrapped representations of BTC.",
+    "Infrastructure & Platform": "Base-layer blockchains, scaling layers, oracles "
+        "and interoperability protocols — the networks everything else is built on.",
+    "Others": "Stablecoins, tokenized funds, DeFi applications, exchange tokens, "
+        "meme coins — everything that isn't Bitcoin's own family or a base network.",
+}
+CRYPTO_PERIODS = ("1H", "1D", "7D", "1M", "3M", "6M", "YTD", "1Y")
+
+
+def _crypto_chg_attrs(r):
+    fields = {"1h": "chg_1h", "1d": "chg_1d", "7d": "chg_7d", "1m": "chg_1m",
+              "3m": "chg_3m", "6m": "chg_6m", "ytd": "chg_ytd", "1y": "chg_1y"}
+    return " ".join(
+        'data-chg-%s="%s"' % (key, "" if r.get(field) is None else "%.4f" % r[field])
+        for key, field in fields.items())
+
+
+def crypto_mark(r):
+    """No cached logo for a coin (this board has none — see the module docstring
+    on why fetching 100 crypto icons wasn't worth the added moving part), so
+    every row is either its symbol's first letter as a monogram."""
+    name = r.get("name", "?")
+    colour = MONO[sum(ord(c) for c in name) % len(MONO)]
+    return (f'<span class="mk mk-m" aria-hidden="true" '
+            f'style="background:{colour}22;color:{colour};border-color:{colour}55">'
+            f'{esc(r.get("symbol", "?")[:1])}</span>')
+
+
+def crypto_row(r):
+    ch = r.get("chg_1d")
+    ch_cls = "flat" if ch is None else ("up" if ch >= 0 else "down")
+    return f"""      <tr>
+        <td class="rk">{r['rank']}</td>
+        <td class="as"><span class="asw">{crypto_mark(r)}<span class="nm">
+          <span class="n1">{esc(r['symbol'])}</span>
+          <span class="n2">{esc(r['name'])}</span>
+        </span></span></td>
+        <td class="px">{crypto_px(r.get('price'))}</td>
+        <td class="mc">{money_cap(r['market_cap']) if r.get('market_cap') is not None else '—'}</td>
+        <td class="ch chp {ch_cls}" {_crypto_chg_attrs(r)}>{pct(ch)}</td>
+      </tr>"""
+
+
+def _crypto_table(rows):
+    body = "\n".join(crypto_row(r) for r in rows)
+    return f"""  <div class="tw">
+  <table class="board crypto">
+    <thead>
+      <tr>
+        <th class="rk">#</th>
+        <th class="as">Coin</th>
+        <th class="px">Price</th>
+        <th class="mc">Market cap</th>
+        <th class="ch">Change</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+  </table>
+  </div>"""
+
+
+# Vanilla JS — reads the eight data-chg-* values already baked into each row at
+# build time (see _crypto_chg_attrs) and repaints the one Change column when a
+# period button is clicked. No fetch, no framework, nothing re-computed: every
+# number for every period already exists in the page, this just decides which
+# one is showing. Same "click swaps a baked-in value" posture as the Bitcoin
+# Board's own range buttons (.bbb), reused here rather than invented twice.
+CRYPTO_JS = """
+(function(){
+  var tabs = document.getElementById('cryptoTabs');
+  if(!tabs) return;
+  var cells = document.querySelectorAll('table.crypto td.chp');
+  function paint(period){
+    cells.forEach(function(td){
+      var raw = td.getAttribute('data-chg-' + period);
+      var v = raw === '' ? null : parseFloat(raw);
+      td.classList.remove('up', 'down', 'flat');
+      if(v === null || isNaN(v)){
+        td.textContent = '\\u2014';
+        td.classList.add('flat');
+        td.style.background = 'none';
+        td.title = (period === '3m' || period === '6m' || period === 'ytd')
+          ? 'Not computed yet for this coin \\u2014 3M/6M/YTD fill in gradually in the background.'
+          : '';
+        return;
+      }
+      td.textContent = (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+      td.classList.add(v >= 0 ? 'up' : 'down');
+      td.title = '';
+      var alpha = Math.min(Math.abs(v) / 15, 1) * 0.35;
+      td.style.background = v >= 0
+        ? 'rgba(74,222,128,' + alpha.toFixed(2) + ')'
+        : 'rgba(248,113,113,' + alpha.toFixed(2) + ')';
+    });
+  }
+  tabs.querySelectorAll('.bbb').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.querySelectorAll('.bbb').forEach(function(b){ b.classList.remove('on'); });
+      btn.classList.add('on');
+      paint(btn.getAttribute('data-period'));
+    });
+  });
+  paint('1d');
+})();
+"""
+
+CRYPTO_CSS = """
+/* ── The Crypto Heat Map ─────────────────────────────────────────────────── */
+.cryh{margin:38px 0 4px;font-size:20px;font-weight:500;color:#e8eef7}
+.crycount{margin-left:8px;font-size:12.5px;font-weight:400;color:#6e7d92}
+.crysub{margin:0 0 14px;color:#8b9ab0;font-size:13.5px;max-width:640px}
+.chtabs{display:flex;flex-wrap:wrap;gap:5px;margin:20px 0 10px}
+.crynote{margin:0 0 8px;color:#6e7d92;font-size:12.5px;font-style:italic}
+table.crypto td.ch{transition:background .15s;border-radius:4px}
+"""
+
+
+def build_crypto_heatmap(board):
+    rows = board.get("rows", [])
+    known = set(CRYPTO_CATEGORY_ORDER)
+    by_cat = {c: [] for c in CRYPTO_CATEGORY_ORDER}
+    for r in rows:
+        by_cat.get(r.get("category") if r.get("category") in known else "Others",
+                   by_cat["Others"]).append(r)
+
+    sections = "\n".join(
+        '  <h2 class="cryh">%s<span class="crycount">%d coin%s</span></h2>\n'
+        '  <p class="crysub">%s</p>\n%s'
+        % (esc(cat), len(by_cat[cat]), "" if len(by_cat[cat]) == 1 else "s",
+           esc(CRYPTO_CATEGORY_BLURB[cat]), _crypto_table(by_cat[cat]))
+        for cat in CRYPTO_CATEGORY_ORDER if by_cat[cat])
+
+    crawl = board.get("crawl", {})
+    covered, total = crawl.get("covered", 0), crawl.get("total", len(rows))
+    dom = board.get("btc_dominance_pct")
+    period_btns = "".join(
+        '<button type="button" class="bbb%s" data-period="%s">%s</button>'
+        % (" on" if p == "1D" else "", p.lower(), p) for p in CRYPTO_PERIODS)
+
+    desc = ("The top %d cryptocurrencies by market cap, grouped into Bitcoin & "
+            "Derivatives, Infrastructure & Platform, and Others, colour-graded by "
+            "how much each has moved — with 1H, 1D, 7D, 1M, 3M, 6M, YTD and 1Y "
+            "toggle buttons." % len(rows))
+
+    body = f"""  <h1 class="btitle">The Crypto Heat Map</h1>
+  <p class="lede">The top {len(rows)} coins by market cap, grouped into three
+  kinds and colour-graded green-to-red by how much each has moved. Pick a
+  period below — every column updates at once, nothing reloads.</p>
+  <p class="stamp">Updated {esc(board.get('generated', '—'))}
+    <span class="dot">·</span><span class="hl">{len(rows)} coins</span>
+    {f'<span class="dot">·</span>BTC dominance {dom:.1f}%' if dom is not None else ''}</p>
+  <div class="chtabs" id="cryptoTabs">{period_btns}</div>
+  <p class="crynote">{covered} of {total} coins have real 3M/6M/YTD figures so
+  far — CoinGecko has no bulk endpoint for those periods, so they fill in a
+  few coins at a time in the background (see the note below). Until a coin
+  is reached, those three buttons read "—" for it rather than a guess.</p>
+{sections}
+  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p>Price, market cap, and the 1H/1D/7D/1M/1Y change are pulled in one call
+    from CoinGecko's public market data and are exact as of the "Updated"
+    timestamp above. <b>3M, 6M and YTD are different</b>: CoinGecko has no bulk
+    field for those periods at any price, so each one is computed from that
+    coin's own daily price history, fetched a handful of coins at a time on a
+    schedule — the same paced-crawl approach this site's Ledger uses for slow
+    background jobs elsewhere. A coin's 3M/6M/YTD is real once it appears,
+    never an approximation of a different window standing in for it.</p>
+    <p><b>Categories</b> are a deliberately short, curated list rather than an
+    exhaustive taxonomy: Bitcoin & Derivatives is Bitcoin itself, coins forked
+    from its codebase, and tokenized BTC; Infrastructure & Platform is base
+    chains, scaling layers, oracles and interoperability protocols; Others is
+    everything else, including every stablecoin and tokenized fund now sitting
+    in the top 100. A brand-new coin entering the top 100 renders under
+    Others until it's worth curating into one of the first two.</p>
+    <p>This is a snapshot of the market, not a recommendation. Nothing here is
+    investment advice, and a coin's presence in the top 100 is not an
+    endorsement of it.</p>
+  </div>
+"""
+    return _shell(title="The Crypto Heat Map — top 100 cryptocurrencies — %s" % SITE_NAME,
+                  desc=desc, url="%scrypto.html" % BASE_URL, active="crypto",
+                  body=body, extra_css=CRYPTO_CSS, extra_js=CRYPTO_JS)
 
 
 # ─────────────────────────────────────────────────────────── the Treasuries board ──
@@ -3426,7 +3661,7 @@ def build_sitemap(entries, tags):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today),
             ("%sbitcoin.html" % BASE_URL, today), ("%streasuries.html" % BASE_URL, today),
-            ("%sask.html" % BASE_URL, today)]
+            ("%scrypto.html" % BASE_URL, today), ("%sask.html" % BASE_URL, today)]
     urls += [("%s%s" % (BASE_URL, meta["file"]), today)
              for meta in TREASURY_CATEGORIES.values()]
     for e in entries:
@@ -3482,6 +3717,17 @@ def main():
             print("  ! treasuries.json unreadable (%s) — skipping the Treasuries "
                   "board" % exc, file=sys.stderr)
 
+    # The Crypto Heat Map is optional by the same contract as the other boards.
+    # Loaded before the front page so its card can appear there, same as Treasuries.
+    crypto = None
+    if os.path.exists(CRYPTO_SRC):
+        try:
+            with open(CRYPTO_SRC, encoding="utf-8") as fh:
+                crypto = json.load(fh)
+        except (ValueError, OSError) as exc:
+            print("  ! crypto_heatmap.json unreadable (%s) — skipping the Crypto "
+                  "Heat Map" % exc, file=sys.stderr)
+
     tags = tag_index(live)
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
 
@@ -3489,7 +3735,7 @@ def main():
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
             fh.write(text)
 
-    write("index.html", build_front(live, board, stats, treasuries))
+    write("index.html", build_front(live, board, stats, treasuries, crypto))
     write("ask.html", build_ask())
     write("thanks.html", build_thanks())
     write("board.html", build_board(board))
@@ -3520,6 +3766,12 @@ def main():
         write("cebe.html", build_cebe(cebe))
     else:
         print("  ! no CEBE board — leaving the last CEBE page in place", file=sys.stderr)
+
+    if crypto and crypto.get("rows"):
+        write("crypto.html", build_crypto_heatmap(crypto))
+    else:
+        print("  ! no crypto heat map — leaving the last Crypto Heat Map page in place",
+              file=sys.stderr)
 
     btc_page = build_bitcoin_board(stats, board) if stats else None
     if btc_page:
