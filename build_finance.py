@@ -91,7 +91,6 @@ FRONT_TILE_LIMIT = 6
 # linked from here and must not be — see the README. These two are.
 SIBLING_NAME = "The Librarian Abroad"
 SIBLING_URL = "https://mistertranslation.com/travel/"
-SIBLING_BLURB = "Travels, meals, and musings"
 
 # The same FormSubmit endpoint the travel blog posts to, so both publications
 # land in one inbox; `_subject` is what tells them apart. Reusing it is safe on
@@ -587,9 +586,8 @@ def _nav(active=""):
             '<a href="treasuries.html"%s>Bitcoin Treasuries</a>'
             '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
-            '<a class="sib" href="%s" title="%s">%s →</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
-                        cls("ask"), SIBLING_URL, esc(SIBLING_BLURB), esc(SIBLING_NAME)))
+                        cls("ask")))
 
 
 def _chrome(active=""):
@@ -1271,8 +1269,6 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a{color:#93a4bd;text-decoration:none}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__}
-.nav a.sib{color:#7f8fa6;padding-left:20px;border-left:1px solid #1e2938;font-style:italic}
-.nav a.sib:hover{color:#e8865c}          /* the other publication's own accent */
 
 .btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
 .board-card{border-color:#22384a}
