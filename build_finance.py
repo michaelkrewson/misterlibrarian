@@ -743,7 +743,16 @@ def _legal():
             % (datetime.now(timezone.utc).year, esc(SITE_NAME)))
 
 
-def _foot():
+def _foot(hits_path=None):
+    """`hits_path` (e.g. "/finance/board.html") gets its own live-fetched view
+    count appended, same per-path GoatCounter counter every board already uses
+    via `_hits_widget` — just placed here instead of only on entries and the
+    index page, so every board/page carries one, not just those two. `None`
+    (the index page, which shows its own separate "N visits to this page" line
+    in-body instead) or a zero-hit path just renders nothing, same fail-silent
+    posture as every other `_hits_widget` call site."""
+    hits = _hits_widget(hits_path, " views") if hits_path else ""
+    hits_bit = " · %s" % hits if hits else ""
     return ('<footer>%s · <a href="board.html">The Asset Board</a> · '
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
             '<a href="treasuries.html">Bitcoin Treasuries</a> · '
@@ -752,8 +761,19 @@ def _foot():
             '<a href="money-worldwide.html">Money Worldwide</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
-            'nothing here is investment advice%s</footer>'
-            % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME), _legal()))
+            'nothing here is investment advice%s%s</footer>'
+            % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME), hits_bit, _legal()))
+
+
+def _shell_hits_path(url):
+    """Best-effort "/finance/<file>.html" for `_foot`'s view-count widget,
+    derived from the same absolute `url` every `_shell` caller already passes
+    (always `BASE_URL + "<file>.html"` here) — no second field to keep in
+    sync. Returns None for a url with no filename (the index page's bare
+    BASE_URL, which already shows its own "visits to this page" line
+    in-body) rather than guessing."""
+    name = url.rstrip("/").rsplit("/", 1)[-1]
+    return "%s/%s" % (BASE, name) if "." in name else None
 
 
 FRONT_HERO_IMG = "us-bullion-depository.jpg"
@@ -1059,7 +1079,8 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        # which silently paints the thing black rather than erroring.
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "body": body, "foot": _foot(), "goat": _goatcounter()}
+       "chrome": _chrome(active), "body": body,
+       "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
 
