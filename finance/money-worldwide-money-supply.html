@@ -134,6 +134,16 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
+   brand and search in header.hsm's flex row (space-between puts it directly
+   left of the search box). Same colors/behavior as a .nav link, just outside
+   the collapsible menu so it's always visible, never hidden behind the
+   hamburger. */
+.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
+  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
+.headerask:hover{color:#e8eef7}
+.headerask.on{color:#f7931a}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -415,6 +425,15 @@ table.mw-sort td.mw-nm{white-space:normal}
   transition:width .2s}
 .mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
 @media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+/* Bigger, glowing icons — Michael's call, 2026-09-08. Scoped to THIS board only:
+   .trsbox .tb-i repeats the Treasuries board's own selector at equal specificity,
+   so it overrides that 20px rule here (MW_CSS loads after TREASURY_CSS) without
+   touching Treasuries' own cards, which never load this stylesheet at all.
+   .mw-page-icon is a brand-new class with nothing to collide with. */
+.trsbox .tb-i{font-size:34px;line-height:1;display:inline-block;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
+.mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -425,9 +444,9 @@ table.mw-sort td.mw-nm{white-space:normal}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a><a href="ask.html">Ask</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>
-  <h1 class="btitle">🏦 Money Supply</h1>
+  <h1 class="btitle"><span class="mw-page-icon">🏦</span> Money Supply</h1>
   <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. Click any column to sort.</p>
   <p class="stamp">Updated 2026-09-08 19:58 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
@@ -447,9 +466,9 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
           <span class="nm"><span class="n1">United States</span>
           <span class="mw-sub">Federal Reserve H.6 (via FRED, billions of dollars)</span></span></span></td>
-        <td title="2026-07-01">$5,523.9 B</td>
-        <td title="2026-07-01">$19,886.4 B</td>
-        <td title="2026-07-01">$23,218.0 B</td>
+        <td title="2026-07-01">$5,523,900,000,000</td>
+        <td title="2026-07-01">$19,886,400,000,000</td>
+        <td title="2026-07-01">$23,218,000,000,000</td>
         <td class="mw-sub">—</td>
       </tr>
       <tr data-m1="13150.533808531665" data-m2="19113.36314825581" data-m3="20484.441027229692">
@@ -457,18 +476,18 @@ table.mw-sort td.mw-nm{white-space:normal}
           <span class="nm"><span class="n1">Euro area</span>
           <span class="mw-sub">European Central Bank BSI dataset (billions of euro → USD at today&#x27;s rate)</span></span></span></td>
         <td class="mw-sub">—</td>
-        <td title="11,323.0 EURB as of 2026-07">$13,150.5 B</td>
-        <td title="16,457.2 EURB as of 2026-07">$19,113.4 B</td>
-        <td title="17,637.7 EURB as of 2026-07">$20,484.4 B</td>
+        <td title="11,323.0 EURB as of 2026-07">$13,150,533,808,532</td>
+        <td title="16,457.2 EURB as of 2026-07">$19,113,363,148,256</td>
+        <td title="17,637.7 EURB as of 2026-07">$20,484,441,027,230</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td class="mw-nm trstot-l">Total (billions of dollars, at today's exchange rate)</td>
-        <td>$5523.9 B</td>
-        <td>$33036.9 B</td>
-        <td>$42331.4 B</td>
-        <td>$20484.4 B</td>
+        <td class="mw-nm trstot-l">Total (at today's exchange rate)</td>
+        <td>$5,523,900,000,000</td>
+        <td>$33,036,933,808,532</td>
+        <td>$42,331,363,148,256</td>
+        <td>$20,484,441,027,230</td>
       </tr>
     </tfoot>
   </table>

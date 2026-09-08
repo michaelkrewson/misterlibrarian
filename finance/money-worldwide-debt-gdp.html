@@ -134,6 +134,16 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
+   brand and search in header.hsm's flex row (space-between puts it directly
+   left of the search box). Same colors/behavior as a .nav link, just outside
+   the collapsible menu so it's always visible, never hidden behind the
+   hamburger. */
+.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
+  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
+.headerask:hover{color:#e8eef7}
+.headerask.on{color:#f7931a}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -415,6 +425,15 @@ table.mw-sort td.mw-nm{white-space:normal}
   transition:width .2s}
 .mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
 @media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+/* Bigger, glowing icons — Michael's call, 2026-09-08. Scoped to THIS board only:
+   .trsbox .tb-i repeats the Treasuries board's own selector at equal specificity,
+   so it overrides that 20px rule here (MW_CSS loads after TREASURY_CSS) without
+   touching Treasuries' own cards, which never load this stylesheet at all.
+   .mw-page-icon is a brand-new class with nothing to collide with. */
+.trsbox .tb-i{font-size:34px;line-height:1;display:inline-block;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
+.mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -425,9 +444,9 @@ table.mw-sort td.mw-nm{white-space:normal}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a><a href="ask.html">Ask</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>
-  <h1 class="btitle">🌍 Global Debt &amp; GDP</h1>
+  <h1 class="btitle"><span class="mw-page-icon">🌍</span> Global Debt &amp; GDP</h1>
   <p class="mwsub">The top 30 economies by GDP, out of 195 the IMF covers — with each one's general government gross debt as a share of its own GDP. Click any column to sort.</p>
   <p class="stamp">Updated 2026-09-08 19:58 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
@@ -445,255 +464,255 @@ table.mw-sort td.mw-nm{white-space:normal}
       <tr data-gdp="32383.92" data-pct="125.8" data-debt="40738.971359999996">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
           <span class="nm"><span class="n1">United States</span></span></span></td>
-        <td>$32.384 T</td>
+        <td>$32,383,920,000,000</td>
         <td class="mw-r">
           125.8%</td>
-        <td>$40.739 T</td>
+        <td>$40,738,971,360,000</td>
       </tr>
       <tr data-gdp="20851.593" data-pct="106.9" data-debt="22290.352917000004">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
           <span class="nm"><span class="n1">China</span></span></span></td>
-        <td>$20.852 T</td>
+        <td>$20,851,593,000,000</td>
         <td class="mw-r">
           106.9%</td>
-        <td>$22.290 T</td>
+        <td>$22,290,352,917,000</td>
       </tr>
       <tr data-gdp="5452.858" data-pct="64.6" data-debt="3522.5462679999996">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
           <span class="nm"><span class="n1">Germany</span></span></span></td>
-        <td>$5.453 T</td>
+        <td>$5,452,858,000,000</td>
         <td class="">
           64.6%</td>
-        <td>$3.523 T</td>
+        <td>$3,522,546,268,000</td>
       </tr>
       <tr data-gdp="4379.253" data-pct="204.4" data-debt="8951.193132">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
           <span class="nm"><span class="n1">Japan</span></span></span></td>
-        <td>$4.379 T</td>
+        <td>$4,379,253,000,000</td>
         <td class="mw-r">
           204.4%</td>
-        <td>$8.951 T</td>
+        <td>$8,951,193,132,000</td>
       </tr>
       <tr data-gdp="4264.794" data-pct="103.6" data-debt="4418.3265839999995">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇬🇧</span>
           <span class="nm"><span class="n1">United Kingdom</span></span></span></td>
-        <td>$4.265 T</td>
+        <td>$4,264,794,000,000</td>
         <td class="mw-r">
           103.6%</td>
-        <td>$4.418 T</td>
+        <td>$4,418,326,584,000</td>
       </tr>
       <tr data-gdp="4153.191" data-pct="83.4" data-debt="3463.7612940000004">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
           <span class="nm"><span class="n1">India</span></span></span></td>
-        <td>$4.153 T</td>
+        <td>$4,153,191,000,000</td>
         <td class="">
           83.4%</td>
-        <td>$3.464 T</td>
+        <td>$3,463,761,294,000</td>
       </tr>
       <tr data-gdp="3596.094" data-pct="118.4" data-debt="4257.775296">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
           <span class="nm"><span class="n1">France</span></span></span></td>
-        <td>$3.596 T</td>
+        <td>$3,596,094,000,000</td>
         <td class="mw-r">
           118.4%</td>
-        <td>$4.258 T</td>
+        <td>$4,257,775,296,000</td>
       </tr>
       <tr data-gdp="2738.164" data-pct="138.4" data-debt="3789.618976">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
           <span class="nm"><span class="n1">Italy</span></span></span></td>
-        <td>$2.738 T</td>
+        <td>$2,738,164,000,000</td>
         <td class="mw-r">
           138.4%</td>
-        <td>$3.790 T</td>
+        <td>$3,789,618,976,000</td>
       </tr>
       <tr data-gdp="2656.452" data-pct="19.1" data-debt="507.3823320000001">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
           <span class="nm"><span class="n1">Russia</span></span></span></td>
-        <td>$2.656 T</td>
+        <td>$2,656,452,000,000</td>
         <td class="">
           19.1%</td>
-        <td>$507.4 B</td>
+        <td>$507,382,332,000</td>
       </tr>
       <tr data-gdp="2635.912" data-pct="96.5" data-debt="2543.6550799999995">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇷</span>
           <span class="nm"><span class="n1">Brazil</span></span></span></td>
-        <td>$2.636 T</td>
+        <td>$2,635,912,000,000</td>
         <td class="">
           96.5%</td>
-        <td>$2.544 T</td>
+        <td>$2,543,655,080,000</td>
       </tr>
       <tr data-gdp="2507.34" data-pct="110.7" data-debt="2775.62538">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇦</span>
           <span class="nm"><span class="n1">Canada</span></span></span></td>
-        <td>$2.507 T</td>
+        <td>$2,507,340,000,000</td>
         <td class="mw-r">
           110.7%</td>
-        <td>$2.776 T</td>
+        <td>$2,775,625,380,000</td>
       </tr>
       <tr data-gdp="2123.963" data-pct="50.6" data-debt="1074.7252780000001">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
           <span class="nm"><span class="n1">Australia</span></span></span></td>
-        <td>$2.124 T</td>
+        <td>$2,123,963,000,000</td>
         <td class="">
           50.6%</td>
-        <td>$1.075 T</td>
+        <td>$1,074,725,278,000</td>
       </tr>
       <tr data-gdp="2120.855" data-pct="62.7" data-debt="1329.776085">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇽</span>
           <span class="nm"><span class="n1">Mexico</span></span></span></td>
-        <td>$2.121 T</td>
+        <td>$2,120,855,000,000</td>
         <td class="">
           62.7%</td>
-        <td>$1.330 T</td>
+        <td>$1,329,776,085,000</td>
       </tr>
       <tr data-gdp="2091.222" data-pct="98.2" data-debt="2053.5800040000004">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇸</span>
           <span class="nm"><span class="n1">Spain</span></span></span></td>
-        <td>$2.091 T</td>
+        <td>$2,091,222,000,000</td>
         <td class="">
           98.2%</td>
-        <td>$2.054 T</td>
+        <td>$2,053,580,004,000</td>
       </tr>
       <tr data-gdp="1931.008" data-pct="54.4" data-debt="1050.468352">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
           <span class="nm"><span class="n1">South Korea</span></span></span></td>
-        <td>$1.931 T</td>
+        <td>$1,931,008,000,000</td>
         <td class="">
           54.4%</td>
-        <td>$1.050 T</td>
+        <td>$1,050,468,352,000</td>
       </tr>
       <tr data-gdp="1640.223" data-pct="25.5" data-debt="418.25686499999995">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
           <span class="nm"><span class="n1">Turkey</span></span></span></td>
-        <td>$1.640 T</td>
+        <td>$1,640,223,000,000</td>
         <td class="">
           25.5%</td>
-        <td>$418.3 B</td>
+        <td>$418,256,865,000</td>
       </tr>
       <tr data-gdp="1539.872" data-pct="41.5" data-debt="639.04688">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇩</span>
           <span class="nm"><span class="n1">Indonesia</span></span></span></td>
-        <td>$1.540 T</td>
+        <td>$1,539,872,000,000</td>
         <td class="">
           41.5%</td>
-        <td>$639.0 B</td>
+        <td>$639,046,880,000</td>
       </tr>
       <tr data-gdp="1449.704" data-pct="44.1" data-debt="639.319464">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
           <span class="nm"><span class="n1">Netherlands</span></span></span></td>
-        <td>$1.450 T</td>
+        <td>$1,449,704,000,000</td>
         <td class="">
           44.1%</td>
-        <td>$639.3 B</td>
+        <td>$639,319,464,000</td>
       </tr>
       <tr data-gdp="1388.676" data-pct="32.1" data-debt="445.76499600000005">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇦</span>
           <span class="nm"><span class="n1">Saudi Arabia</span></span></span></td>
-        <td>$1.389 T</td>
+        <td>$1,388,676,000,000</td>
         <td class="">
           32.1%</td>
-        <td>$445.8 B</td>
+        <td>$445,764,996,000</td>
       </tr>
       <tr data-gdp="1146.911" data-pct="38.5" data-debt="441.56073499999997">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
           <span class="nm"><span class="n1">Switzerland</span></span></span></td>
-        <td>$1.147 T</td>
+        <td>$1,146,911,000,000</td>
         <td class="">
           38.5%</td>
-        <td>$441.6 B</td>
+        <td>$441,560,735,000</td>
       </tr>
       <tr data-gdp="1134.248" data-pct="65.7" data-debt="745.2009360000001">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
           <span class="nm"><span class="n1">Poland</span></span></span></td>
-        <td>$1.134 T</td>
+        <td>$1,134,248,000,000</td>
         <td class="">
           65.7%</td>
-        <td>$745.2 B</td>
+        <td>$745,200,936,000</td>
       </tr>
       <tr data-gdp="976.719" data-pct="27.6" data-debt="269.574444">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
           <span class="nm"><span class="n1">Taiwan</span></span></span></td>
-        <td>$976.7 B</td>
+        <td>$976,719,000,000</td>
         <td class="">
           27.6%</td>
-        <td>$269.6 B</td>
+        <td>$269,574,444,000</td>
       </tr>
       <tr data-gdp="779.381" data-pct="31.6" data-debt="246.28439600000002">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇪</span>
           <span class="nm"><span class="n1">Ireland</span></span></span></td>
-        <td>$779.4 B</td>
+        <td>$779,381,000,000</td>
         <td class="">
           31.6%</td>
-        <td>$246.3 B</td>
+        <td>$246,284,396,000</td>
       </tr>
       <tr data-gdp="776.73" data-pct="109.2" data-debt="848.18916">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇪</span>
           <span class="nm"><span class="n1">Belgium</span></span></span></td>
-        <td>$776.7 B</td>
+        <td>$776,730,000,000</td>
         <td class="mw-r">
           109.2%</td>
-        <td>$848.2 B</td>
+        <td>$848,189,160,000</td>
       </tr>
       <tr data-gdp="760.481" data-pct="36.7" data-debt="279.09652700000004">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇪</span>
           <span class="nm"><span class="n1">Sweden</span></span></span></td>
-        <td>$760.5 B</td>
+        <td>$760,481,000,000</td>
         <td class="">
           36.7%</td>
-        <td>$279.1 B</td>
+        <td>$279,096,527,000</td>
       </tr>
       <tr data-gdp="719.848" data-pct="69.8" data-debt="502.45390399999997">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇱</span>
           <span class="nm"><span class="n1">Israel</span></span></span></td>
-        <td>$719.8 B</td>
+        <td>$719,848,000,000</td>
         <td class="">
           69.8%</td>
-        <td>$502.5 B</td>
+        <td>$502,453,904,000</td>
       </tr>
       <tr data-gdp="688.378" data-pct="70.4" data-debt="484.61811200000005">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇷</span>
           <span class="nm"><span class="n1">Argentina</span></span></span></td>
-        <td>$688.4 B</td>
+        <td>$688,378,000,000</td>
         <td class="">
           70.4%</td>
-        <td>$484.6 B</td>
+        <td>$484,618,112,000</td>
       </tr>
       <tr data-gdp="659.572" data-pct="171.9" data-debt="1133.804268">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇬</span>
           <span class="nm"><span class="n1">Singapore</span></span></span></td>
-        <td>$659.6 B</td>
+        <td>$659,572,000,000</td>
         <td class="mw-r">
           171.9%</td>
-        <td>$1.134 T</td>
+        <td>$1,133,804,268,000</td>
       </tr>
       <tr data-gdp="623.719" data-pct="82.1" data-debt="512.073299">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇹</span>
           <span class="nm"><span class="n1">Austria</span></span></span></td>
-        <td>$623.7 B</td>
+        <td>$623,719,000,000</td>
         <td class="">
           82.1%</td>
-        <td>$512.1 B</td>
+        <td>$512,073,299,000</td>
       </tr>
       <tr data-gdp="621.546" data-pct="31.4" data-debt="195.16544399999998">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇪</span>
           <span class="nm"><span class="n1">United Arab Emirates</span></span></span></td>
-        <td>$621.5 B</td>
+        <td>$621,546,000,000</td>
         <td class="">
           31.4%</td>
-        <td>$195.2 B</td>
+        <td>$195,165,444,000</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — top 30 of 195 economies IMF covers</td>
-        <td>$108.793 T</td>
+        <td>$108,792,627,000,000</td>
         <td>101.6% (weighted avg.)</td>
-        <td>$110.568 T</td>
+        <td>$110,568,167,768,000</td>
       </tr>
     </tfoot>
   </table>
   </div>
-  <p class="mwbarnote">World totals below (GDP $126.295 T,
+  <p class="mwbarnote">World totals below (GDP $126,295,331,000,000,
   debt-to-GDP 95.1%)
   are computed across the FULL 195-economy IMF set, not
   just the top 30 shown in this table.</p>

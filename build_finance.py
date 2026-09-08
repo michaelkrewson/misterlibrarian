@@ -142,6 +142,18 @@ def money_cap(v):
     return f"${v / 1e6:,.0f} M"
 
 
+def money_full(v):
+    """29895000000000.0 -> '$29,895,000,000,000' — the un-abbreviated sibling of
+    money_cap(), for the Money Worldwide board only (Michael's call, 2026-09-08:
+    "better to see the big number than just the T"). Rounds to the nearest whole
+    dollar (real trailing digits from the source, not manufactured zeros) rather
+    than truncating to a 3-sig-fig "T"/"B" notation. Deliberately not used by
+    money_cap()'s other callers (Treasuries/CEBE/the Asset Board/etc.) — those
+    boards were built around the abbreviated form and this isn't meant to
+    change them."""
+    return f"${v:,.0f}"
+
+
 def money_px(v):
     """Prices: comma-grouped whole dollars once they are large enough not to need cents."""
     return f"${v:,.0f}" if v >= 1000 else f"${v:,.2f}"
@@ -640,6 +652,9 @@ def tag_index(entries):
 def _nav(active=""):
     def cls(k):
         return ' class="on"' if k == active else ""
+    # "Ask" moved OUT of this list 2026-09-08 (Michael's call) — it now lives in
+    # the header's top row, immediately left of the search box (see _chrome's
+    # headerask link), not buried at the end of this 8-link menu.
     return ('<nav class="nav">'
             '<a href="index.html"%s>Writing</a>'
             '<a href="board.html"%s>Asset Board</a>'
@@ -648,9 +663,8 @@ def _nav(active=""):
             '<a href="crypto.html"%s>Crypto Heat Map</a>'
             '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
             '<a href="money-worldwide.html"%s>Money Worldwide</a>'
-            '<a href="ask.html"%s>Ask</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
-                        cls("crypto"), cls("humanity"), cls("money-worldwide"), cls("ask")))
+                        cls("crypto"), cls("humanity"), cls("money-worldwide")))
 
 
 def _chrome(active=""):
@@ -676,28 +690,36 @@ def _chrome(active=""):
     filters live as you type, and reads a ?q= it was handed on arrival.
 
     The search box sits directly beside the brand, on its own line, rather
-    than bundled into .hgroup with the nav — the full nav (8 links) is wide
+    than bundled into .hgroup with the nav — the full nav (7 links) is wide
     enough that it always wraps to its own row under the .wrap's 1000px cap,
     so keeping search a separate flex child (in DOM order right after brand)
     means the header's FIRST row reliably reads "brand left, search right"
     with nothing else competing for that row's space.
+
+    "Ask" sits between brand and search on that same first row (moved out of
+    the nav menu 2026-09-08, Michael's call: "the ask link... up to the left
+    hand side of the search entries box") — header.hsm is `justify-content:
+    space-between`, so inserting it as its own flex child here, right before
+    `search` in DOM order, puts it immediately to search's left with no
+    layout changes needed beyond the one new element + its CSS (.headerask).
     """
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
                  '<rect y="6" width="20" height="2" rx="1"/>'
                  '<rect y="12" width="20" height="2" rx="1"/></svg>')
+    ask = '<a class="headerask%s" href="ask.html">Ask</a>' % (' on' if active == "ask" else "")
     search = ('<form class="headersearch" action="index.html" method="get" role="search">'
               '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
               'aria-label="Search past entries"/></form>')
     return ('<header class="hsm">'
             '<a class="brand" href="index.html">%s'
             '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
-            '%s'
+            '%s%s'
             '<div class="hgroup">'
             '<input type="checkbox" class="navcb" id="navcb"/>'
             '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
             '%s</div></header>'
-            % (MARK_SVG.replace("__ACCENT__", ACCENT), search, hamburger, _nav(active)))
+            % (MARK_SVG.replace("__ACCENT__", ACCENT), ask, search, hamburger, _nav(active)))
 
 
 def _legal():
@@ -1523,6 +1545,16 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a{color:#93a4bd;text-decoration:none}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__}
+
+/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
+   brand and search in header.hsm's flex row (space-between puts it directly
+   left of the search box). Same colors/behavior as a .nav link, just outside
+   the collapsible menu so it's always visible, never hidden behind the
+   hamburger. */
+.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
+  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
+.headerask:hover{color:#e8eef7}
+.headerask.on{color:__ACCENT__}
 
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
@@ -5212,6 +5244,15 @@ table.mw-sort td.mw-nm{white-space:normal}
   transition:width .2s}
 .mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
 @media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+/* Bigger, glowing icons — Michael's call, 2026-09-08. Scoped to THIS board only:
+   .trsbox .tb-i repeats the Treasuries board's own selector at equal specificity,
+   so it overrides that 20px rule here (MW_CSS loads after TREASURY_CSS) without
+   touching Treasuries' own cards, which never load this stylesheet at all.
+   .mw-page-icon is a brand-new class with nothing to collide with. */
+.trsbox .tb-i{font-size:34px;line-height:1;display:inline-block;
+  filter:drop-shadow(0 0 6px __ACCENT__) drop-shadow(0 0 16px __ACCENT__)}
+.mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
+  filter:drop-shadow(0 0 6px __ACCENT__) drop-shadow(0 0 16px __ACCENT__)}
 """
 
 # Generalised version of CEBE_JS's click-to-sort — that one only ever drove a
@@ -5304,7 +5345,7 @@ def _mw_money_supply_table(ms):
                 return "<td class=\"mw-sub\">—</td>"
             native_s = (f"{native_b:,.1f} {native_ccy}B as of {esc(date)}"
                         if native_ccy != "USD" and native_b is not None else esc(date or ""))
-            return f'<td title="{native_s}">${usd_b:,.1f} B</td>'
+            return f'<td title="{native_s}">{money_full(usd_b * 1e9)}</td>'
         c0 = cell(r.get("usd_m0"), r.get("m0"), r["currency"], r.get("m0_date"))
         c1 = cell(r.get("usd_m1"), r.get("m1"), r["currency"], r.get("m1_date"))
         c2 = cell(r.get("usd_m2"), r.get("m2"), r["currency"], r.get("m2_date"))
@@ -5345,11 +5386,11 @@ def _mw_money_supply_table(ms):
     </tbody>
     <tfoot>
       <tr>
-        <td class="mw-nm trstot-l">Total (billions of dollars, at today's exchange rate)</td>
-        <td>{('$%.1f B' % tot0) if tot0 else '—'}</td>
-        <td>{('$%.1f B' % tot1) if tot1 else '—'}</td>
-        <td>{('$%.1f B' % tot2) if tot2 else '—'}</td>
-        <td>{('$%.1f B' % tot3) if tot3 else '—'}</td>
+        <td class="mw-nm trstot-l">Total (at today's exchange rate)</td>
+        <td>{money_full(tot0 * 1e9) if tot0 else '—'}</td>
+        <td>{money_full(tot1 * 1e9) if tot1 else '—'}</td>
+        <td>{money_full(tot2 * 1e9) if tot2 else '—'}</td>
+        <td>{money_full(tot3 * 1e9) if tot3 else '—'}</td>
       </tr>
     </tfoot>
   </table>
@@ -5364,11 +5405,10 @@ def _mw_reserves_fx_table(reserves_fx):
         rows.append(f"""      <tr data-usd="{usd_b}" data-date="{date_key}">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(r['flag'])}</span>
           <span class="nm"><span class="n1">{esc(r['area'])}</span></span></span></td>
-        <td>${usd_b:,.1f} B</td>
+        <td>{money_full(r['usd_m'] * 1e6)}</td>
         <td class="ao">{esc(r.get('as_of') or '—')}</td>
       </tr>""")
     body = "\n".join(rows)
-    tot_b = reserves_fx["total_usd_m"] / 1000.0
     n = len(reserves_fx["rows"])
     return f"""  <div class="tw">
   <table class="board mw-sort">
@@ -5385,7 +5425,7 @@ def _mw_reserves_fx_table(reserves_fx):
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — {n} economies</td>
-        <td>${tot_b:,.1f} B</td>
+        <td>{money_full(reserves_fx["total_usd_m"] * 1e6)}</td>
         <td></td>
       </tr>
     </tfoot>
@@ -5399,8 +5439,8 @@ def _mw_gold_table(gold):
         rows.append(f"""      <tr data-tonnes="{r['tonnes']}" data-usd="{r['usd']}">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(r['flag'])}</span>
           <span class="nm"><span class="n1">{esc(r['country'])}</span></span></span></td>
-        <td>{r['tonnes']:,} t</td>
-        <td>{money_cap(r['usd'])}</td>
+        <td>{r['tonnes']:,} tons</td>
+        <td>{money_full(r['usd'])}</td>
       </tr>""")
     body = "\n".join(rows)
     n = len(gold["rows"])
@@ -5409,8 +5449,8 @@ def _mw_gold_table(gold):
     <thead>
       <tr>
         <th>Country</th>
-        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tonnes">Gold reserves</th>
-        <th data-sort="usd" title="Tonnes × troy ounces per tonne × today's gold price">Value, today's price</th>
+        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tons">Gold reserves</th>
+        <th data-sort="usd" title="Tons × troy ounces per ton × today's gold price">Value, today's price</th>
       </tr>
     </thead>
     <tbody>
@@ -5419,16 +5459,16 @@ def _mw_gold_table(gold):
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — {n} countries shown</td>
-        <td>{gold['total_tonnes']:,} t</td>
-        <td>{money_cap(gold['total_usd'])}</td>
+        <td>{gold['total_tonnes']:,} tons</td>
+        <td>{money_full(gold['total_usd'])}</td>
       </tr>
     </tfoot>
   </table>
   </div>
   <p class="mwbarnote">These {n} are a curated top slice, not every reporting
   country — the World Gold Council's own estimate for ALL central banks and
-  the IMF together is ≈{gold.get('world_official_tonnes_estimate', 0):,} tonnes,
-  well above the {gold['total_tonnes']:,} t summed here.</p>"""
+  the IMF together is ≈{gold.get('world_official_tonnes_estimate', 0):,} tons,
+  well above the {gold['total_tonnes']:,} tons summed here.</p>"""
 
 
 def _mw_debt_gdp_table(dg):
@@ -5446,10 +5486,10 @@ def _mw_debt_gdp_table(dg):
         rows.append(f"""      <tr {ds_attrs}>
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(flag)}</span>
           <span class="nm"><span class="n1">{esc(name)}</span></span></span></td>
-        <td>{money_cap(r['gdp_usd_b'] * 1e9)}</td>
+        <td>{money_full(r['gdp_usd_b'] * 1e9)}</td>
         <td class="{'mw-r' if (debt_pct or 0) >= 100 else ''}">
           {('%.1f%%' % debt_pct) if debt_pct is not None else '—'}</td>
-        <td>{money_cap(debt_b * 1e9) if debt_b is not None else '—'}</td>
+        <td>{money_full(debt_b * 1e9) if debt_b is not None else '—'}</td>
       </tr>""")
     body = "\n".join(rows)
     tot_gdp = sum(r["gdp_usd_b"] for r in dg["rows"])
@@ -5471,14 +5511,14 @@ def _mw_debt_gdp_table(dg):
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — top {len(dg['rows'])} of {dg['n_countries_total']} economies IMF covers</td>
-        <td>{money_cap(tot_gdp * 1e9)}</td>
+        <td>{money_full(tot_gdp * 1e9)}</td>
         <td>{('%.1f%% (weighted avg.)' % weighted_pct) if weighted_pct is not None else '—'}</td>
-        <td>{money_cap(tot_debt * 1e9)}</td>
+        <td>{money_full(tot_debt * 1e9)}</td>
       </tr>
     </tfoot>
   </table>
   </div>
-  <p class="mwbarnote">World totals below (GDP {money_cap(dg['world_gdp_usd_b'] * 1e9)},
+  <p class="mwbarnote">World totals below (GDP {money_full(dg['world_gdp_usd_b'] * 1e9)},
   debt-to-GDP {('%.1f%%' % dg['world_debt_pct_gdp']) if dg.get('world_debt_pct_gdp') else '—'})
   are computed across the FULL {dg['n_countries_total']}-economy IMF set, not
   just the top {len(dg['rows'])} shown in this table.</p>"""
@@ -5489,7 +5529,7 @@ def _mw_scarcity_bar(item, max_usd, colour):
     return f"""    <div class="mwbarrow">
       <div class="mwbl">{esc(item['label'])}</div>
       <div class="mwbartrack"><div class="mwbarfill" style="width:{width_pct:.2f}%;background:{colour}"></div></div>
-      <div class="mwbv">{money_cap(item['usd'])}</div>
+      <div class="mwbv">{money_full(item['usd'])}</div>
       <div class="mwbarnote">{esc(item['note'])}</div>
     </div>"""
 
@@ -5612,20 +5652,20 @@ def _mw_hub_cards(board):
             f'vs. US dollar · {esc(fx.get("date") or "today")}'))
     if ms:
         cards.append(_mw_hub_card(
-            "money-supply", money_cap(_mw_broad_money_usd(ms)),
+            "money-supply", money_full(_mw_broad_money_usd(ms)),
             f'{len(ms["rows"])} economies · combined broad money'))
     if reserves_fx:
         cards.append(_mw_hub_card(
-            "reserves", money_cap(reserves_fx["total_usd_m"] * 1e6),
+            "reserves", money_full(reserves_fx["total_usd_m"] * 1e6),
             f'{len(reserves_fx["rows"])} economies'))
     if gold:
         cards.append(_mw_hub_card(
-            "gold", money_cap(gold["total_usd"]),
-            f'{gold["total_tonnes"]:,} t across {len(gold["rows"])} countries'))
+            "gold", money_full(gold["total_usd"]),
+            f'{gold["total_tonnes"]:,} tons across {len(gold["rows"])} countries'))
     if debt_gdp:
         world_pct = debt_gdp.get("world_debt_pct_gdp")
         cards.append(_mw_hub_card(
-            "debt-gdp", money_cap(debt_gdp["world_gdp_usd_b"] * 1e9),
+            "debt-gdp", money_full(debt_gdp["world_gdp_usd_b"] * 1e9),
             f'world debt-to-GDP {("%.1f%%" % world_pct) if world_pct is not None else "—"} '
             f'· top {len(debt_gdp["rows"])} of {debt_gdp["n_countries_total"]} shown'))
     return "\n".join(cards)
@@ -5654,7 +5694,7 @@ def build_money_worldwide_hub(board):
     btc_line = ""
     if bitcoin and bitcoin.get("market_cap_usd"):
         btc_line = (f' Bitcoin\'s own market cap today is '
-                     f'<span class="mwlede-hl">{money_cap(bitcoin["market_cap_usd"])}</span>'
+                     f'<span class="mwlede-hl">{money_full(bitcoin["market_cap_usd"])}</span>'
                      f' — currently #{bitcoin.get("btc_rank", "?")} on '
                      f'<a href="board.html">the Asset Board</a>.')
 
@@ -5724,7 +5764,7 @@ def build_money_worldwide_section(board, key):
     desc = f"{meta['title']} — {meta['blurb']} Part of the Money Worldwide board."
     kicker = '  <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>'
     body = f"""{kicker}
-  <h1 class="btitle">{meta['icon']} {esc(meta['title'])}</h1>
+  <h1 class="btitle"><span class="mw-page-icon">{meta['icon']}</span> {esc(meta['title'])}</h1>
 {intro}
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
