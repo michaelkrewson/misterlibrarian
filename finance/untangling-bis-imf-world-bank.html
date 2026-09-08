@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Older Than the United Nations, and Never Asked to Join — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…"/>
+<link rel="canonical" href="https://mistertranslation.com/finance/untangling-bis-imf-world-bank.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="Older Than the United Nations, and Never Asked to Join"/>
+<meta property="og:description" content="Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…"/>
+<meta property="og:url" content="https://mistertranslation.com/finance/untangling-bis-imf-world-bank.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:46px;height:46px;flex:0 0 46px}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+h1 .em{color:#f7931a;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#f7931a}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#f7931a}
+
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#f7931a}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #f7931a;outline-offset:1px}
+
+/* Groups the nav toggle with the nav itself so the two move together as one
+   unit, and — via margin-left:auto — always hugs the right edge of
+   whichever row it lands on: the same row as the brand+search on a screen
+   wide enough to fit the full nav there too, or its own full row underneath
+   once the nav (8 links) is too wide to share one with them. Also the
+   positioning context the mobile dropdown below anchors against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end;margin-left:auto}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#f7931a;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — .hgroup (order 1, its own margin-left:auto
+   already pins it to the row's right edge) stays pinned next to the brand,
+   and the search box (order 2) drops to its own full-width row underneath,
+   the same "give up the single row" fallback the travel blog's own
+   absolutely-positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{order:1;flex-wrap:wrap}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#f7931a}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
+.wm{font-size:20px;letter-spacing:.01em}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm">
+    <a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+  <circle cx="23" cy="23" r="21" stroke="#f7931a" stroke-width="1.5" opacity=".55"/>
+  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
+  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
+  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a>
+  </header>
+  
+  <article class="entry">
+    <h1 class="etitle">Older Than the United Nations, and Never Asked to Join</h1>
+    <p class="edate">SEPTEMBER 8, 2026</p>
+    
+<p>I get these three mixed up more often than I'd like to admit, and the specific place I trip is
+always the same one: I know the IMF has something to do with a reserve asset called the Special
+Drawing Right, and I know the BIS is also some kind of central-bank clearinghouse in Switzerland,
+and for years I could not have told you with any confidence which of the two actually sets the
+SDR's daily rate. (It's the IMF. Write that down now, because the rest of this entry is basically
+the long version of that one fact.) Add the World Bank into the mix — three institutions, three
+Bretton-Woods-adjacent-sounding names, three headquarters full of economists — and the whole
+cluster blurs into "the people who run the world's money," which is both close enough to get you
+through a dinner-party sentence and wrong enough to matter if you're actually trying to understand
+how any of it works. So I sat down and untangled it properly. The most interesting thing I found
+wasn't a job description — it was that one of these three is old enough to have never been asked to
+join the United Nations in the first place, because when it was founded, the United Nations did not
+exist yet.</p>
+
+<h2>Three Buildings, Three Owners</h2>
+
+<p>Start with the shape of each institution, because the shape tells you almost everything about
+the job. The <a href="https://www.bis.org" rel="noopener" target="_blank">Bank for International
+Settlements</a> is, structurally, a bank — a real one, with a balance sheet, deposits, and
+shareholders. Its shareholders are central banks: 63 of them today, from the Federal Reserve to the
+Bank of Japan to the Swiss National Bank, each holding shares the way a commercial bank's
+shareholders hold shares. It is headquartered in a distinctive round tower in Basel, Switzerland,
+nicknamed locally the "Tower of Basel," standing just under 70 meters over the city's main train
+station.</p>
+
+<figure>
+  <img src="img/bis-tower-basel.jpg" alt="The circular BIS Tower in Basel, Switzerland, rising above the city's rooftops in late-afternoon light" loading="lazy"/>
+  <figcaption>The Bank for International Settlements' headquarters in Basel — a bank owned by
+  central banks, for central banks. Photo: Michal Pleskowicz, via
+  <a href="https://commons.wikimedia.org/wiki/File:Bank_for_International_Settlements_in_the_late_afternoon.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>,
+  licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption>
+</figure>
+
+<p>The <a href="https://www.imf.org" rel="noopener" target="_blank">International Monetary Fund</a>
+and the <a href="https://www.worldbank.org" rel="noopener" target="_blank">World Bank</a> are a
+different shape entirely: they are membership organizations of national governments, not banks
+owned by banks. Every country that joins subscribes a "quota" — effectively a capital contribution
+sized to that country's economic weight — and that quota buys both borrowing capacity and voting
+power. Both are headquartered a few blocks apart in Washington, D.C.'s Foggy Bottom neighborhood,
+close enough that their staffs walk to joint meetings.</p>
+
+<p>Three different shapes already tell you three different things: a bank owned by 63 central
+banks answers to those central banks alone; a membership organization of 190 governments answers,
+in principle, to a much wider and more political constituency; and being headquartered in
+Washington versus Basel isn't just geography, it's a hint about which one grew up inside the
+post-1945 order the United States helped build, and which one didn't.</p>
+
+<h2>Basel Came First — Fourteen Years Before the Others, and Not From the Same Root</h2>
+
+<p>The BIS is the oldest of the three by a wide margin, and it wasn't built for anything resembling
+today's job. It was created under the <a
+href="https://en.wikipedia.org/wiki/The_Hague_conference_on_reparations" rel="noopener"
+target="_blank">Hague Agreements of January 1930</a>, as the administrative machinery for the <a
+href="https://en.wikipedia.org/wiki/Young_Plan" rel="noopener" target="_blank">Young Plan</a> — the
+scheme for collecting and distributing Germany's World War I reparations payments under the Treaty
+of Versailles. It opened for business on May 17, 1930, with the narrow job of collecting reparation
+annuities and passing them along to the receiving governments. That mission barely outlived the
+decade: reparations collapsed in the early 1930s Depression and were suspended for good in 1932. But
+the bank didn't close. The central banks that had set it up as a reparations clearinghouse kept it
+running as something more useful — a place for their own governors to meet, settle balances with
+each other, and coordinate, which is the job it has done ever since (see the <a
+href="https://www.bis.org/about/history/overview" rel="noopener" target="_blank">BIS's own account
+of its founding</a>).</p>
+
+<p>Here's the detail that actually surprised me once I checked the dates against each other rather
+than trusting the vague sense that "these are all the same era of institution": the United Nations
+was founded in 1945. The BIS opened its doors in 1930 — fifteen years earlier, under the League of
+Nations era, in a world that had no UN to be a specialized agency of. It was never offered UN
+membership, never negotiated a relationship agreement with the UN the way the IMF and World Bank
+did, and today reports to nobody but its own member central banks and its own Basel-based board.
+It isn't a rebel or a holdout from that system — it simply predates the system by a decade and a
+half, and nothing has ever folded it in since.</p>
+
+<h2>Bretton Woods, and the Two Institutions Born as a Pair</h2>
+
+<p>The IMF and the World Bank, by contrast, were born together, in the same room, three weeks
+before the United Nations itself existed as anything more than a wartime alliance's plan. Delegates
+from 44 Allied nations met at the Mount Washington Hotel in Bretton Woods, New Hampshire, from
+July 1 to 22, 1944 — the United Nations Monetary and Financial Conference, the event everyone now
+just calls "Bretton Woods" — to design the postwar monetary order before the war had even ended.
+Out of that conference came two new institutions with deliberately complementary jobs (see the <a
+href="https://guides.loc.gov/this-month-in-business-history/july/bretton-woods-conference"
+rel="noopener" target="_blank">Library of Congress's account of the conference</a>): the IMF was
+built to keep currencies stable and help countries through short-term balance-of-payments trouble,
+while what's now called the World Bank — originally just the International Bank for Reconstruction
+and Development, or IBRD — was built to fund long-term reconstruction and development, starting
+with a continent in ruins.</p>
+
+<figure>
+  <img src="img/imf-headquarters-washington.jpg" alt="The International Monetary Fund's headquarters building at 700 19th Street NW in Washington, D.C." loading="lazy"/>
+  <figcaption>The IMF's headquarters at 700 19th Street NW, Washington, D.C. Photo: Tony Webster,
+  via <a href="https://commons.wikimedia.org/wiki/File:International_Monetary_Fund_(IMF)_Building_-_700_19th_St_NW_-_Washington_D.C..jpg" rel="noopener" target="_blank">Wikimedia Commons</a>,
+  licensed <a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener" target="_blank">CC BY 2.0</a> (cropped).</figcaption>
+</figure>
+
+<p>The World Bank didn't wait long to prove which job it had signed up for. Before it had even
+formally opened its doors on June 25, 1946, France had already sent a one-page letter asking for
+$500 million to start rebuilding. The Bank's first-ever loan — $250 million, signed May 9, 1947 — went
+to France's Crédit National for exactly that (see the <a
+href="https://www.worldbank.org/en/archive/history/exhibits/Digitized-Records-World-Bank-First-Loan"
+rel="noopener" target="_blank">World Bank's own digitized records of that first loan</a>). The IMF,
+meanwhile, spent its early years doing what its charter actually described: monitoring exchange
+rates under the Bretton Woods fixed-rate system and standing ready to lend reserves to a member
+running short. Same conference, same three weeks, two institutions built to do two different halves
+of one postwar job.</p>
+
+<h2>"Specialized Agency of the UN" Sounds Like Control. In Practice, It Mostly Isn't.</h2>
+
+<p>This is the part I had backwards for longest: I assumed that because the IMF and World Bank are
+routinely described as "specialized agencies of the United Nations," the UN General Assembly must
+have some real say over what they do. It doesn't, really — and the 1947 negotiation that created
+that relationship is itself the evidence. The UN's Economic and Social Council approved a
+relationship agreement with the World Bank in 1947, and the UN General Assembly ratified it that
+November, formally making the Bank a UN specialized agency. But the Bank had insisted, at its own
+request, on language preserving its status as an "independent international organization" — and got
+it. The IMF's relationship agreement, negotiated the same year, carries the same shape. Both
+institutions send reports to the UN's Economic and Social Council, both get invited to the same
+diplomatic circuit, and neither takes instructions from it. Their real governing bodies are their
+own boards, elected and weighted by the quota system, not the UN's one-country-one-vote General
+Assembly.</p>
+
+<p>That quota-weighted voting is worth sitting with for a second, because it's a genuinely different
+governance model from the UN's own. At the IMF, the United States holds roughly 17% of the vote —
+not a majority, but enough to matter, because the Fund's Articles of Agreement require an 85%
+supermajority for the most consequential decisions (changing quotas, amending the Articles
+themselves). Seventeen percent is exactly enough to block anything that needs 85% to pass. That's
+not an accident of arithmetic; it's a deliberate design feature of the postwar order, and it's the
+kind of structural fact you'd never guess from the phrase "specialized agency of the United
+Nations."</p>
+
+<figure>
+  <img src="img/world-bank-headquarters-washington.jpg" alt="The World Bank Group's headquarters building in Washington, D.C., a modern glass and stone structure" loading="lazy"/>
+  <figcaption>The World Bank Group's headquarters in Washington, D.C. Photo: Ifly6, via
+  <a href="https://commons.wikimedia.org/wiki/File:World_Bank_Group_headquarters.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>,
+  licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption>
+</figure>
+
+<p>The BIS skips this whole conversation, because it was never invited to have it. It has no UN
+relationship agreement of any kind — not a looser one, not an unusual one, none. It operates under
+its own headquarters agreement with Switzerland, which grants it certain legal immunities similar in
+spirit to what a UN agency gets, but that immunity comes from a bilateral deal with the Swiss
+government, not from any UN instrument. Its governing board is drawn entirely from its member
+central banks' own governors. If you're looking for the single cleanest way to keep these three
+straight: the IMF and the World Bank are UN-adjacent membership organizations of <em>governments</em>,
+built at the same conference for two complementary jobs; the BIS is a private-law bank owned by
+<em>central banks</em>, built fifteen years earlier for an entirely different, now-defunct reason,
+and never brought into the UN system at all.</p>
+
+<h2>What Each One Actually Does, Day to Day</h2>
+
+<p>With the org chart sorted, the jobs are easier to hold onto:</p>
+
+<p><strong>The BIS</strong> is, first, literally a bank for central banks — it takes deposits from
+them, conducts gold and foreign-exchange transactions on their behalf, and gives them a place to
+settle balances with each other. Second, and probably more consequentially for anyone outside a
+central bank, it's the landlord and host for the committees that actually write global banking
+regulation. The <a href="https://www.bis.org/bcbs/index.htm" rel="noopener" target="_blank">Basel
+Committee on Banking Supervision</a> — the body behind "Basel III," the capital and liquidity rules
+that shape how much cushion your own bank has to hold — has its secretariat inside the BIS building,
+even though the Committee is technically a separate body the BIS merely hosts. Since 2009 the BIS
+has also hosted the <a href="https://www.fsb.org" rel="noopener" target="_blank">Financial
+Stability Board</a>, the G20's coordinating body for global financial regulation. None of that
+regulatory output is binding law on its own — Basel III becomes real only when individual countries
+write it into their own statutes — but it's the closest thing the world has to a single table where
+that rulebook gets drafted.</p>
+
+<p><strong>The IMF</strong> does three things, none of which is "writing bank capital rules."
+It watches: under "Article IV consultations," it reviews every member's economy roughly once a
+year and publishes an assessment, a soft-power surveillance function most people never hear about
+because it rarely makes news on its own. It lends: when a member runs short of foreign reserves, the
+IMF can extend credit, historically attached to policy conditions the borrowing government has to
+accept — the "IMF austerity" headlines usually trace back to this function. And it administers the
+Special Drawing Right, which gets its own section below, because it's the piece that actually started
+this whole entry.</p>
+
+<p><strong>The World Bank</strong> is really a group of five affiliated institutions now, not one
+bank, each aimed at a different slice of development finance: the original IBRD lends to
+middle-income and creditworthy poorer governments; the International Development Association (IDA)
+gives interest-free credit and outright grants to the very poorest countries; the International
+Finance Corporation (IFC) invests directly in private companies in developing economies; the
+Multilateral Investment Guarantee Agency (MIGA) sells political-risk insurance to investors going
+into unstable markets; and the International Centre for Settlement of Investment Disputes (ICSID)
+arbitrates disputes between foreign investors and host governments. The common thread across all
+five is time horizon and purpose: long-term project and development finance, not the IMF's
+short-term balance-of-payments rescue lending.</p>
+
+<h2>The SDR, Untangled</h2>
+
+<p>Now the piece that started this. A Special Drawing Right is not a currency. You cannot walk into
+a shop anywhere on earth and pay in SDRs, and the IMF is explicit about this: it describes the SDR
+as "potentially a claim on the freely usable currencies of IMF members," not a currency and not a
+claim on the IMF itself (see the <a href="https://www.imf.org/en/about/faq/special-drawing-right"
+rel="noopener" target="_blank">IMF's own SDR FAQ</a>). Think of it less as money and more as a
+standardized IOU that only central banks and a short list of international institutions are allowed
+to hold, created in 1969 to supplement the world's official reserves when gold and dollars alone
+weren't stretching far enough to cover growing global trade.</p>
+
+<p>Its value is defined by a basket of five currencies, reweighted every five years by the IMF's
+Executive Board. The most recent review, completed in May 2022 and effective that August, set the
+weights at 43.38% U.S. dollar, 29.31% euro, 12.28% Chinese renminbi, 7.59% Japanese yen, and 7.44%
+British pound (see the <a
+href="https://www.imf.org/en/news/articles/2022/05/14/pr22153-imf-board-concludes-sdr-valuation-review"
+rel="noopener" target="_blank">IMF's press release on the 2022 valuation review</a>). The IMF
+publishes a fresh SDR-to-dollar exchange rate every single business day, computed straight off that
+basket against live market rates. That daily computation is entirely an IMF function. The BIS has no
+role in it whatsoever — it doesn't sit on the valuation review, doesn't publish the rate, and isn't
+consulted on the basket weights. If you take away exactly one fact from this entry, this is the one
+I came here to nail down: <strong>the IMF sets the SDR; the BIS regulates something else
+entirely.</strong></p>
+
+<p>Who can actually hold and use one is narrower than most people assume. SDRs are allocated only to
+IMF member countries that opt into the Fund's SDR Department (nearly all 190 do), in proportion to
+each member's quota — the same quota figure that sets voting power also sets how many SDRs a
+country receives when a new general allocation happens, like the roughly $650 billion equivalent
+allocation in 2021 in response to the pandemic. A short additional list of "prescribed holders" — a
+small set of multilateral institutions, the BIS itself among them — is also permitted to hold and
+trade SDRs, but private companies, banks that aren't central banks, and individuals never can.
+When a country actually needs to use its SDRs — say, to cover a balance-of-payments shortfall — it
+doesn't spend them directly; it exchanges them, either through a voluntary arrangement with another
+member willing to provide hard currency, or through an IMF-arranged "designation" that obliges a
+stronger-reserve member to take the SDRs off its hands in return for real dollars, euros, or yen.
+The asset only becomes spendable at that exchange step — which is exactly why "a claim on other
+members' currencies" is a more accurate description than "a form of money."</p>
+
+<h2>Three Jobs, Three Owners, One Habit of Getting Conflated</h2>
+
+<p>Laid out side by side, the confusion I started with makes a certain kind of sense: all three
+institutions sit in the same general neighborhood of "big, technical, international, and full of
+economists," and two of the three even share a founding conference. But the actual shape underneath
+is three genuinely distinct things — a central-bank-owned bank fifteen years older than the UN and
+never part of its system, writing the regulatory rulebook commercial banks eventually have to follow;
+a government-membership fund born at Bretton Woods to watch exchange rates, lend against short-term
+trouble, and set the daily value of a reserve asset almost nobody outside a central bank ever
+touches; and a five-part development lender, born at the same conference for the opposite time
+horizon, financing decades-long projects rather than balance-of-payments emergencies. None of the
+three runs the world's money in any single-headed sense the phrase implies. They run three different
+pieces of it, report to three different constituencies, and — apart from the SDR basket the IMF
+alone sets the rate on — mostly don't overlap at all.</p>
+
+    <div class="tags"><a class="tg" href="tag-bis.html">bis</a><a class="tg" href="tag-imf.html">imf</a><a class="tg" href="tag-world-bank.html">world bank</a><a class="tg" href="tag-bretton-woods.html">bretton woods</a><a class="tg" href="tag-sdr.html">sdr</a><a class="tg" href="tag-central-banks.html">central banks</a><a class="tg" href="tag-united-nations.html">united nations</a><a class="tg" href="tag-monetary-policy.html">monetary policy</a><a class="tg" href="tag-notes.html">notes</a></div>
+  </article>
+  <div class="respond"><p><strong>Got a question?</strong> Something here you want pushed on, or think I have wrong? <a href="ask.html?re=Older%20Than%20the%20United%20Nations%2C%20and%20Never%20Asked%20to%20Join">Ask Mr. Librarian</a> — it goes straight to my desk.</p></div>
+  <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
+  <footer>
+    The Librarian&#x27;s Ledger · <a href="feed.xml">RSS</a> · nothing here is investment advice · <span class="hits" id="hits-finance-untangling-bis-imf-world-bank-html">👁 <span id="hits-finance-untangling-bis-imf-world-bank-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Funtangling-bis-imf-world-bank.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-finance-untangling-bis-imf-world-bank-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-finance-untangling-bis-imf-world-bank-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-finance-untangling-bis-imf-world-bank-html"); if (el) el.style.display = "none";
+    });
+})();
+</script>
+    <p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p>
+  </footer>
+</div>
+</body>
+</html>
