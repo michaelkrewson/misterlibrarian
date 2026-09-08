@@ -621,10 +621,11 @@ def _nav(active=""):
             '<a href="bitcoin.html"%s>Bitcoin Board</a>'
             '<a href="treasuries.html"%s>Bitcoin Treasuries</a>'
             '<a href="crypto.html"%s>Crypto Heat Map</a>'
+            '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
             '<a href="ask.html"%s>Ask</a>'
             '<a href="feed.xml">RSS</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
-                        cls("crypto"), cls("ask")))
+                        cls("crypto"), cls("humanity"), cls("ask")))
 
 
 def _chrome(active=""):
@@ -656,6 +657,7 @@ def _foot():
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
             '<a href="treasuries.html">Bitcoin Treasuries</a> · '
             '<a href="crypto.html">The Crypto Heat Map</a> · '
+            '<a href="humanity.html">Bitcoin vs. Humanity</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
             'nothing here is investment advice%s</footer>'
@@ -4293,6 +4295,583 @@ def build_bitcoin_board(stats, board):
         extra_css=BB_CSS, extra_js=BB_JS.replace("__SEED__", seed))
 
 
+# ── Bitcoin vs. Humanity ─────────────────────────────────────────────────────
+# Every person alive, set against Bitcoin's fixed supply. Reuses the same
+# bitcoin_stats.json this file already loads for the Bitcoin Board — no new
+# fetcher (see tools/fetch_bitcoin_stats.py) — for the one thing that needs a
+# network call: the live block height. Everything else here is either the
+# halving schedule (exact, same BTC_TRUE_MAX above) or a slow-moving human
+# constant refreshed by hand roughly once a year, because no public API
+# answers "how many people are alive" or "how much is everyone worth" live.
+
+# World population: a straight-line extrapolation from the UN World
+# Population Prospects 2024 (medium variant) net growth rate, anchored at a
+# point-in-time estimate. A MODEL, not a census — no source updates this
+# figure live — so the honest thing is a deterministic clock that says what
+# it is (see the page's own methods panel). Refresh the anchor ~yearly.
+POP_ANCHOR_TS = datetime(2026, 6, 25, tzinfo=timezone.utc).timestamp()
+WORLD_POP_ANCHOR = 8_231_600_000     # UN WPP 2024 medium variant, mid-2026
+WORLD_POP_RATE = 2.18                # net persons/second (~68.7M/yr)
+
+# Total global household wealth and the world's population of USD
+# millionaires — UBS Global Wealth Report 2025, year-end 2024. Same
+# refresh-by-hand discipline as the population anchor.
+WORLD_WEALTH_USD = 471e12
+WORLD_WEALTH_SRC = "UBS Global Wealth Report 2025 · year-end 2024"
+WORLD_MILLIONAIRES = 60_000_000
+
+GENESIS_TS = datetime(2009, 1, 3, tzinfo=timezone.utc).timestamp()
+
+
+def _hb_world_pop(ts):
+    return WORLD_POP_ANCHOR + WORLD_POP_RATE * (ts - POP_ANCHOR_TS)
+
+
+def _hb_issued_sats(height):
+    """Whole-satoshi issued supply through `height`, from the halving
+    schedule alone — the forward twin of _btc_height_at_supply() above,
+    built the same way (genesis's own reward excluded, matching
+    BTC_TRUE_MAX). Used only for the chart's synthetic historical points;
+    every LIVE figure on this page uses the real fetched supply_sats
+    instead — the same 'computed' vs 'polled, live' split the Bitcoin
+    Board draws elsewhere on this page."""
+    total = 0
+    for epoch in range(64):
+        subsidy = (50 * SATS) >> epoch
+        if subsidy == 0:
+            break
+        lo = max(1, epoch * BTC_HALVING_INTERVAL)
+        hi = epoch * BTC_HALVING_INTERVAL + BTC_HALVING_INTERVAL - 1
+        if lo > height:
+            break
+        total += (min(height, hi) - lo + 1) * subsidy
+    return total
+
+
+def _hb_spp_at(ts):
+    h = max(0, int((ts - GENESIS_TS) // 600))
+    return _hb_issued_sats(h) / _hb_world_pop(ts)
+
+
+def _hb_btc(sats):
+    return f"{sats / SATS:,.4f} BTC"
+
+
+def _hb_box(label, value, vid, color, sub=""):
+    return ('<div class="hbbox"><div class="hbbox-l">%s</div>'
+            '<div class="hbbox-v" id="%s" style="color:%s">%s</div>'
+            '%s</div>'
+            % (esc(label), vid, color, value,
+               '<div class="hbbox-s">%s</div>' % sub if sub else ""))
+
+
+def _hb_spp_chart(height, supply_sats):
+    """('<svg>…', '<div>…strip…</div>') for the sats-per-person-over-time
+    chart, or ('', '') if there isn't enough history to draw a line yet.
+    Monthly points on Bitcoin's theoretical ten-minutes-a-block schedule
+    (same deliberate simplification the Bitcoin Board's own weekly price
+    closes make — a clean, reproducible line rather than one that quietly
+    depends on when the build happened to run); the final point is the real
+    live issued supply.
+    """
+    pts = []
+    cur = datetime(2020, 1, 1, tzinfo=timezone.utc)
+    now = datetime.now(timezone.utc)
+    while cur <= now:
+        ts = cur.timestamp()
+        h = max(0, int((ts - GENESIS_TS) // 600))
+        pts.append({"ts": ts, "spp": _hb_issued_sats(h) / _hb_world_pop(ts)})
+        y, m = cur.year, cur.month
+        cur = datetime(y + 1, 1, 1, tzinfo=timezone.utc) if m == 12 \
+            else datetime(y, m + 1, 1, tzinfo=timezone.utc)
+    if len(pts) < 2:
+        return "", ""
+
+    now_ts = now.timestamp()
+    live_spp = supply_sats / _hb_world_pop(now_ts)
+    last = pts[-1]
+    if datetime.fromtimestamp(last["ts"], timezone.utc).strftime("%Y-%m") == \
+            now.strftime("%Y-%m"):
+        last["ts"], last["spp"] = now_ts, live_spp
+    else:
+        pts.append({"ts": now_ts, "spp": live_spp})
+
+    W, H, pL, pR, pT, pB = 600, 150, 56, 16, 12, 32
+    x0 = pts[0]["ts"]
+    xr = (pts[-1]["ts"] - x0) or 1
+    ys = [p["spp"] for p in pts]
+    ymin, ymax = min(ys), max(ys)
+    pad = (ymax - ymin) * 0.18 or 300
+    ymin, ymax = max(0, ymin - pad), ymax + pad
+    yrange = (ymax - ymin) or 1
+
+    def px(ts):
+        return pL + (ts - x0) / xr * (W - pL - pR)
+
+    def py(v):
+        return pT + (1 - (v - ymin) / yrange) * (H - pT - pB)
+
+    grid = []
+    step = math.ceil((ymax - ymin) / 4 / 500) * 500 or 1000
+    tv = math.ceil(ymin / step) * step
+    while tv <= ymax + step * 0.1:
+        yy = py(tv)
+        grid.append(
+            '<line x1="%d" y1="%.1f" x2="%d" y2="%.1f" stroke="#fff" '
+            'stroke-opacity=".05"/><text x="%d" y="%.1f" text-anchor="end" '
+            'font-size="8" fill="#475569">%s</text>'
+            % (pL, yy, W - pR, yy, pL - 4, yy + 3.5, _n(round(tv))))
+        tv += step
+
+    hv = []
+    for ds, label in (("2020-05-11", "3rd halving"), ("2024-04-20", "4th halving")):
+        hts = datetime.strptime(ds, "%Y-%m-%d").replace(tzinfo=timezone.utc).timestamp()
+        if x0 <= hts <= pts[-1]["ts"]:
+            x = px(hts)
+            # The label sits just inside the TOP of the plot, not down beside
+            # the year axis — the 2020 and 2024 halvings land close enough to
+            # their own year tick that a shared row reads as one merged word
+            # ("2020ard halving").
+            hv.append(
+                '<line x1="%.1f" y1="%d" x2="%.1f" y2="%d" stroke="#f7931a" '
+                'stroke-opacity=".4" stroke-dasharray="3,3"/>'
+                '<text x="%.1f" y="%d" text-anchor="middle" font-size="7.5" '
+                'fill="rgba(247,147,26,.7)">%s</text>'
+                % (x, pT, x, H - pB, x, pT + 9, label))
+
+    line = ('<polyline points="%s" fill="none" stroke="#22d3ee" stroke-width="2" '
+            'stroke-linejoin="round" stroke-linecap="round"/>'
+            % " ".join("%.1f,%.1f" % (px(p["ts"]), py(p["spp"])) for p in pts))
+
+    lp = pts[-1]
+    dot = ('<circle cx="%.1f" cy="%.1f" r="3.5" fill="#22d3ee"/>'
+           '<text x="%.1f" y="%.1f" text-anchor="end" font-size="9" '
+           'fill="#22d3ee" font-weight="700">%s</text>'
+           % (px(lp["ts"]), py(lp["spp"]), px(lp["ts"]) - 7, py(lp["spp"]) - 6,
+              _n(round(lp["spp"]))))
+
+    h4ts = datetime(2024, 4, 20, tzinfo=timezone.utc).timestamp()
+    peak = min(pts, key=lambda p: abs(p["ts"] - h4ts))
+    pk = ('<circle cx="%.1f" cy="%.1f" r="2.5" fill="none" stroke="#f7931a" '
+          'stroke-width="1.5"/><text x="%.1f" y="%.1f" font-size="7.5" '
+          'fill="rgba(247,147,26,.75)">peak %s</text>'
+          % (px(peak["ts"]), py(peak["spp"]), px(peak["ts"]) + 5,
+             py(peak["spp"]) + 3, _n(round(peak["spp"]))))
+
+    xl = []
+    for yr_label in range(2020, now.year + 1):
+        yts = datetime(yr_label, 1, 1, tzinfo=timezone.utc).timestamp()
+        if x0 <= yts <= pts[-1]["ts"] + 32 * 86400:
+            x = px(yts)
+            xl.append('<text x="%.1f" y="%d" text-anchor="middle" font-size="8" '
+                       'fill="#475569">%d</text>' % (x, H - pB + 13, yr_label))
+
+    svg = ('<svg viewBox="0 0 %d %d" style="width:100%%;height:auto;display:block" '
+           'role="img" aria-label="Satoshis issued per person on Earth, 2020 to '
+           'present">%s%s%s%s%s%s</svg>'
+           % (W, H, "".join(grid), "".join(hv), line, dot, pk, "".join(xl)))
+
+    strip = []
+    for label, secs in (("1D", 86400), ("1M", 30 * 86400), ("1Y", 365 * 86400),
+                        ("3Y", 3 * 365 * 86400), ("5Y", 5 * 365 * 86400)):
+        ref_ts = now_ts - secs
+        if ref_ts < GENESIS_TS + 365 * 86400:
+            strip.append('<div class="hbchip"><div class="hbchip-l">%s</div>'
+                          '<div class="hbchip-v off">—</div></div>' % label)
+            continue
+        delta = live_spp - _hb_spp_at(ref_ts)
+        col = "#22d3ee" if delta >= 0 else "#f87171"
+        mag = abs(delta)
+        val = ("%.2f" % mag if mag < 1 else "%.1f" % mag if mag < 10
+               else _n(round(mag)))
+        strip.append('<div class="hbchip"><div class="hbchip-l">%s</div>'
+                      '<div class="hbchip-v" style="color:%s">%s%s</div></div>'
+                      % (label, col, "+" if delta >= 0 else "−", val))
+
+    return svg, '<div class="hbstrip">%s</div>' % "".join(strip)
+
+
+HB_CSS = """
+/* ── Bitcoin vs. Humanity ─────────────────────────────────────────────────────
+   Its own self-contained namespace (.hb*), sized to what this one page draws
+   — a hero row of three counters, a chart and a couple of feature cards —
+   rather than reusing the much larger Bitcoin Board stylesheet wholesale
+   (see that board's own note on why extra_css is per-page). Palette matches
+   it on purpose: cyan for population/derived counts, the shared accent for
+   anything that is fundamentally a Bitcoin quantity, so the pages read as
+   siblings without literally sharing a stylesheet. */
+.hblede{margin:10px 0 0;color:#b9c6d8;font-size:16.5px;max-width:780px}
+.hbquote{margin:20px 0 0;padding:15px 21px;border-left:3px solid __ACCENT__;
+  background:rgba(247,147,26,.05);border-radius:0 10px 10px 0;
+  font-family:Georgia,'Times New Roman',serif;font-style:italic;
+  font-size:16px;color:#d7c9ad;line-height:1.6}
+.hbquote cite{display:block;margin-top:8px;font-style:normal;font-size:12.5px;
+  color:#8b9ab0;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbstamp{margin:15px 0 0;color:#7f8fa6;font-size:13.5px;display:flex;
+  align-items:center;gap:9px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbdot{width:8px;height:8px;border-radius:50%;background:#4ade80;flex:0 0 8px;
+  animation:hbpulse 2.6s ease-out infinite}
+.hbdot.off{background:#6e7d92;animation:none}
+@keyframes hbpulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}
+  70%{box-shadow:0 0 0 7px rgba(74,222,128,0)}
+  100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.hbsep{color:#3f4c5f}
+
+.hbherogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 0}
+.hbbox{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
+.hbbox-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbbox-v{margin-top:8px;font-size:26px;line-height:1.15;letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbbox-s{margin-top:8px;font-size:12.5px;color:#93a4bd;line-height:1.4}
+.hbmuted{font-size:.62em;font-weight:400;color:#5a6b80}
+
+.hbaside{margin:14px 0 0;color:#93a4bd;font-size:13px;font-style:italic;line-height:1.6}
+.hbaside a{color:__ACCENT__}
+
+.hbc{border:1px solid #1b2534;border-radius:13px;background:#0a111c;
+  padding:18px 21px;margin:16px 0 0}
+.hbc h2{margin:0 0 8px;font-size:17px;font-weight:400;
+  font-family:Georgia,'Times New Roman',serif;color:#e8dfd2;border:0;padding:0}
+.hbfeature h2{color:__ACCENT__}
+.hbnote{margin:0 0 12px;color:#93a4bd;font-size:13.5px;line-height:1.55}
+.hbboxrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.hbboxrow .hbbox-v{font-size:19px}
+.hbline{margin:14px 0 0;padding-top:12px;border-top:1px dashed #24303f;
+  color:#b9c6d8;font-size:13.5px;line-height:1.65}
+
+.hbflash{animation:hbflash 1.4s ease-out}
+@keyframes hbflash{0%{background:rgba(247,147,26,.30)}100%{background:transparent}}
+
+.hbstrip{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0}
+.hbchip{flex:1;min-width:64px;text-align:center;padding:7px 6px;
+  background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:7px}
+.hbchip-l{font-size:9px;letter-spacing:.08em;color:#6e7d92;margin-bottom:2px;
+  text-transform:uppercase}
+.hbchip-v{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.hbchip-v.off{color:#475569;font-weight:400}
+
+@media (max-width:900px){.hbherogrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.hbherogrid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.hbdot{animation:none}}
+"""
+
+# Bitcoin vs. Humanity's live layer.
+#
+# The page ships complete from the last build; this only ever overwrites a
+# number with a fresher one. Population ticks every second from the pure
+# formula above (no API answers "how many people are alive right now"); the
+# block height is polled from mempool.space about once a minute, the same
+# cadence and the same honesty rule as the Bitcoin Board's own live layer.
+HB_JS = """
+(function () {
+  "use strict";
+  var API = "https://mempool.space/api";
+  var S = __SEED__;
+  var fails = 0, lastOk = Date.now();
+
+  function $(id) { return document.getElementById(id); }
+  function set(id, txt, flash) {
+    var el = $(id);
+    if (!el || txt == null || el.textContent === txt) return;
+    el.textContent = txt;
+    if (flash) {
+      el.classList.remove("hbflash");
+      void el.offsetWidth;
+      el.classList.add("hbflash");
+    }
+  }
+  function n(v, dp) {
+    if (v == null || !isFinite(v)) return "\\u2014";
+    dp = dp || 0;
+    return v.toLocaleString("en-US",
+      { minimumFractionDigits: dp, maximumFractionDigits: dp });
+  }
+  function usdBig(v) {
+    if (!(v > 0)) return "\\u2014";
+    if (v >= 1e12) return "$" + (v / 1e12).toFixed(3) + " T";
+    if (v >= 1e9) return "$" + (v / 1e9).toFixed(1) + " B";
+    return "$" + n(v / 1e6, 0) + " M";
+  }
+  function usd(v, dp) { return (v > 0) ? "$" + n(v, dp) : "\\u2014"; }
+  function btcEach(sats) { return n(sats / 1e8, 4) + " BTC"; }
+  function ago(sec) {
+    if (sec == null || sec < 0) return "\\u2014";
+    sec = Math.floor(sec);
+    if (sec < 60) return sec + "s ago";
+    if (sec < 3600) return Math.floor(sec / 60) + "m " + (sec % 60) + "s ago";
+    return Math.floor(sec / 3600) + "h " + Math.floor((sec % 3600) / 60) + "m ago";
+  }
+
+  // Same consensus subsidy sum as the Bitcoin Board's own live layer (see
+  // its BB_JS supplyBtc()) — kept in whole satoshis here rather than BTC,
+  // since sats-per-person needs that precision.
+  function issuedSats(height) {
+    var total = 0;
+    for (var e = 0; e < 34; e++) {
+      var subsidy = Math.floor(5000000000 / Math.pow(2, e));
+      if (subsidy <= 0) break;
+      var lo = Math.max(1, e * 210000);
+      var hi = Math.min(height, e * 210000 + 209999);
+      if (hi >= lo) total += (hi - lo + 1) * subsidy;
+    }
+    return total;
+  }
+
+  function render() {
+    var pop = S.popAnchor + S.popRate * ((Date.now() / 1000) - S.popAnchorTs);
+    var issued = S.supplySats;
+    var spp = issued / pop;
+
+    set("hbPop", n(Math.round(pop)));
+    set("hbSpp", n(Math.round(spp)));
+    if (S.price) set("hbSppUsd", "(" + usd(spp / 1e8 * S.price, 2) + ")", true);
+    set("hbIssued", n(issued / 1e8, 0) + " BTC", true);
+
+    var perCoinCap = S.wealthUsd / (S.maxSupplySats / 1e8);
+    var perCoinIssued = S.wealthUsd / (issued / 1e8);
+    var perSatCap = perCoinCap / 1e8;
+    set("hbPerCoinCap", usdBig(perCoinCap), true);
+    set("hbPerCoinIssued", usdBig(perCoinIssued), true);
+    set("hbPerSat", perSatCap >= 0.01 ? "$" + perSatCap.toFixed(2)
+                                       : "$" + perSatCap.toFixed(4), true);
+    set("hbBtcEachCap", btcEach(S.maxSupplySats / S.millionaires), true);
+    set("hbBtcEachIssued", btcEach(issued / S.millionaires), true);
+
+    var stale = fails > 2;
+    set("hbLive", stale
+      ? "live updates paused \\u2014 showing the last good reading"
+      : "live \\u00b7 refreshed " + ago((Date.now() - lastOk) / 1000));
+    var dot = $("hbDot");
+    if (dot) dot.className = stale ? "hbdot off" : "hbdot";
+  }
+
+  function j(path) {
+    return fetch(API + path, { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).catch(function () { return null; });
+  }
+
+  function poll() {
+    if (document.hidden) return;
+    Promise.all([
+      fetch(API + "/blocks/tip/height?v=" + Math.floor(Date.now() / 60000),
+            { cache: "no-store" }).then(function (r) {
+        return r.ok ? r.text() : Promise.reject();
+      }),
+      j("/v1/prices")
+    ]).then(function (r) {
+      var h = parseInt(r[0], 10);
+      if (!(h > 0)) return Promise.reject();
+      if (h !== S.height) { S.height = h; S.supplySats = issuedSats(h); }
+      if (r[1] && r[1].USD) S.price = r[1].USD;
+      fails = 0; lastOk = Date.now();
+      render();
+    }).catch(function () { fails++; render(); });
+  }
+
+  render();
+  setInterval(render, 1000);
+  poll();
+  setInterval(poll, 60000);
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) poll();
+  });
+})();
+"""
+
+
+def build_humanity_board(stats):
+    """The Bitcoin vs. Humanity board. Same optional-page contract as
+    build_bitcoin_board: returns None (leave the last good page on disk)
+    when the live supply isn't available, since every number here
+    ultimately depends on it.
+    """
+    tip = (stats or {}).get("tip") or {}
+    height = tip.get("height")
+    supply_sats = stats.get("supply_sats")
+    if not height or not supply_sats:
+        return None
+
+    now = datetime.now(timezone.utc)
+    world_pop = _hb_world_pop(now.timestamp())
+    issued_btc = supply_sats / SATS
+    spp = supply_sats / world_pop
+    cap_sats = BTC_TRUE_MAX * SATS
+    price = stats.get("price_usd")
+    spp_usd = (spp / SATS) * price if price else None
+
+    # Custom markup rather than _hb_box: the dollar figure needs its own id
+    # (and its own muted colour) sitting inline next to — not replacing — the
+    # satoshi count, so the live layer can refresh the two independently.
+    spp_box = (
+        '<div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div>'
+        '<div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">%s</span>%s</div>'
+        '<div class="hbbox-s">issued supply ÷ world population, live</div></div>'
+        % (_n(round(spp)),
+           ' <span class="hbmuted" id="hbSppUsd">(%s)</span>' % _usd(spp_usd, 2)
+           if spp_usd else ""))
+
+    hero = (
+        _hb_box("World population", _n(round(world_pop)), "hbPop", "#22d3ee",
+                "extrapolated · +%s/sec" % WORLD_POP_RATE)
+        + _hb_box("Bitcoin issued", _n(issued_btc, 0) + " BTC", "hbIssued", ACCENT,
+                  "%.2f%% of the 21 million cap" % (issued_btc / BTC_TRUE_MAX * 100))
+        + spp_box
+    )
+
+    aside = (
+        '  <p class="hbaside">Even that "issued" figure overstates what can ever be '
+        'spent: <a href="https://blockchair.com/bitcoin/block/501726" rel="noopener" '
+        'target="_blank">block 501,726</a>, mined December 30, 2017, has a coinbase '
+        'transaction that claims 0 BTC instead of the 12.5 BTC subsidy then in effect '
+        '— an entirely empty block, its reward destroyed by whatever mining bug '
+        'produced it. That satoshi will never exist. The 21 million cap this page '
+        'computes from the halving schedule is Bitcoin’s theoretical ceiling; the '
+        'real one is smaller still, and no one can ever put it back.</p>\n'
+    )
+
+    chart_svg, chart_strip = _hb_spp_chart(height, supply_sats)
+    chart_card = (
+        '  <section class="hbc hbwide">\n'
+        '    <h2>Satoshis per person on Earth — over time</h2>\n'
+        '    <p class="hbnote">Computed from Bitcoin’s halving schedule and the '
+        'population model above, month by month since 2020. Halvings marked; the '
+        'last point is today’s real issued supply.</p>\n'
+        '    ' + chart_svg + "\n"
+        + chart_strip + "\n"
+        '  </section>'
+    ) if chart_svg else ""
+
+    per_coin_cap = WORLD_WEALTH_USD / BTC_TRUE_MAX
+    per_coin_issued = WORLD_WEALTH_USD / issued_btc
+    per_sat_cap = per_coin_cap / SATS
+    wealth_card = (
+        '  <section class="hbc hbwide hbfeature">\n'
+        '    <h2>If all the world’s wealth were Bitcoin</h2>\n'
+        '    <p class="hbnote">%s of global household wealth, divided by a fixed '
+        'supply of 21 million coins — %s.</p>\n'
+        '    <div class="hbboxrow">%s</div>\n'
+        '  </section>'
+        % (money_cap(WORLD_WEALTH_USD), WORLD_WEALTH_SRC,
+           _hb_box("Per bitcoin (÷ 21M cap)", money_cap(per_coin_cap),
+                   "hbPerCoinCap", ACCENT, "every coin that will ever exist")
+           + _hb_box("Per bitcoin (÷ mined so far)", money_cap(per_coin_issued),
+                     "hbPerCoinIssued", "#facc15",
+                     "only %s BTC exist today" % _n(issued_btc, 0))
+           + _hb_box("Per satoshi",
+                     _usd(per_sat_cap, 2 if per_sat_cap >= 0.01 else 4),
+                     "hbPerSat", "#22d3ee", "1 BTC = 100,000,000 sats"))
+    )
+
+    per_millionaire_cap = cap_sats / WORLD_MILLIONAIRES
+    per_millionaire_issued = supply_sats / WORLD_MILLIONAIRES
+    millionaire_card = (
+        '  <section class="hbc hbwide hbfeature">\n'
+        '    <h2>If every millionaire wanted one</h2>\n'
+        '    <p class="hbnote">21 million bitcoin will ever exist, split among the '
+        'world’s millionaires — %s.</p>\n'
+        '    <div class="hbboxrow">%s</div>\n'
+        '    <p class="hbline">There are <b style="color:#22d3ee">%s</b> USD '
+        'millionaires alive and only <b style="color:%s">%s</b> bitcoin will ever '
+        'exist — so if every one of them wanted in, each would get just '
+        '<b style="color:%s">%s</b>.</p>\n'
+        '  </section>'
+        % (WORLD_WEALTH_SRC,
+           _hb_box("Millionaires (world)", _n(WORLD_MILLIONAIRES), "hbMillionaires",
+                   "#22d3ee", "USD millionaires")
+           + _hb_box("BTC per millionaire (÷ 21M cap)",
+                     _hb_btc(per_millionaire_cap), "hbBtcEachCap", ACCENT,
+                     "if the whole future supply split evenly")
+           + _hb_box("BTC per millionaire (÷ mined so far)",
+                     _hb_btc(per_millionaire_issued), "hbBtcEachIssued", "#facc15",
+                     "of today’s supply"),
+           _n(WORLD_MILLIONAIRES), ACCENT, _n(BTC_TRUE_MAX, 0), ACCENT,
+           _hb_btc(per_millionaire_cap))
+    )
+
+    methods = """
+  <div class="panel">
+    <h2>How these numbers are made</h2>
+    <p>Four different kinds of number sit on this page, and they are not equally
+    true.</p>
+    <ul>
+      <li><b>Computed, and exact.</b> Bitcoin issued and the 21 million cap — the
+      published halving schedule, summed in whole satoshis from the live block
+      height, exactly like <a href="bitcoin.html">the Bitcoin Board</a> and
+      <a href="how-many-bitcoins-are-there.html">its own working</a>.</li>
+      <li><b>Polled, and live.</b> That block height itself, refreshed from
+      <a href="https://mempool.space/">mempool.space</a> about once a minute
+      while this page is open.</li>
+      <li><b>Extrapolated, continuously.</b> World population. No public source
+      publishes a live headcount — there is no census running in real time — so
+      this is a straight line drawn from the United Nations World Population
+      Prospects 2024 (medium variant) net growth rate, ticking forward in your
+      browser every second. It is a model, not a measurement, refreshed by hand
+      roughly once a year from the next UN revision.</li>
+      <li><b>Fixed, and refreshed by hand.</b> Global household wealth and the
+      world's count of USD millionaires, both from the UBS Global Wealth Report
+      2025 (year-end 2024) — there is no live feed for either, so these are
+      updated roughly once a year as new editions of that report appear.</li>
+    </ul>
+    <p>The chart's historical points use the theoretical ten-minutes-a-block
+    schedule rather than real block timestamps — real blocks land a little
+    faster than that on average, which is why the live point sits a hair off
+    the theoretical line. Sources: the
+    <a href="https://population.un.org/wpp/">UN World Population Prospects</a>,
+    the <a href="https://www.ubs.com/global/en/family-office-uhnw/reports/global-wealth-report-2025.html">UBS
+    Global Wealth Report</a>, and <a href="https://mempool.space/">mempool.space</a>
+    — all public. Nothing here is investment advice, and nothing here is for
+    sale.</p>
+  </div>
+"""
+
+    seed = json.dumps({
+        "height": height, "supplySats": supply_sats,
+        "popAnchorTs": POP_ANCHOR_TS, "popAnchor": WORLD_POP_ANCHOR,
+        "popRate": WORLD_POP_RATE, "maxSupplySats": cap_sats,
+        "wealthUsd": WORLD_WEALTH_USD, "millionaires": WORLD_MILLIONAIRES,
+    }, separators=(",", ":"))
+
+    body = (
+        '  <h1 class="btitle">Bitcoin vs. Humanity</h1>\n'
+        '  <p class="bblede hblede">Every person alive, set against a currency that '
+        'cannot print more of itself. The world’s population keeps growing; '
+        'Bitcoin’s supply is capped at 21 million coins and most of it is already '
+        'mined — so every birth divides a fixed pie a little thinner. Here is what '
+        'that looks like in the actual numbers.</p>\n'
+        '  <blockquote class="hbquote">“It might make sense just to get some in '
+        'case it catches on. If enough people think the same way, that becomes a self '
+        'fulfilling prophecy.”<cite>— Satoshi Nakamoto, January 2009, days '
+        'after the first bitcoin transaction</cite></blockquote>\n'
+        '  <p class="hbstamp"><span class="hbdot" id="hbDot"></span>'
+        '<span id="hbLive">live</span>'
+        '<span><span class="hbsep">·</span> block %s <span class="hbsep">·'
+        '</span> population model anchored %s</span></p>\n'
+        '  <div class="hbherogrid">%s</div>\n'
+        '%s'
+        '%s'
+        '%s'
+        '%s'
+        '%s'
+        % (_n(height),
+           esc(blogkit.pretty_date(datetime.fromtimestamp(POP_ANCHOR_TS, timezone.utc).date())),
+           hero, aside, chart_card, wealth_card, millionaire_card, methods)
+    )
+
+    return _shell(
+        title="Bitcoin vs. Humanity — 8 billion people, 21 million coins",
+        desc="How many satoshis exist per person on Earth, and what happens if "
+             "all the world's wealth — or every millionaire — wanted a piece "
+             "of Bitcoin's fixed 21 million coin supply.",
+        url="%shumanity.html" % BASE_URL, active="humanity", body=body,
+        extra_css=HB_CSS, extra_js=HB_JS.replace("__SEED__", seed))
+
+
 def build_sitemap(entries, tags):
     """A sitemap is not optional here — it IS the discovery plan.
 
@@ -4422,6 +5001,16 @@ def main():
     else:
         print("  ! no live block height — leaving the last Bitcoin board in place",
               file=sys.stderr)
+
+    # Bitcoin vs. Humanity is optional by the same contract as the Bitcoin
+    # Board it shares bitcoin_stats.json with — missing/unreadable stats
+    # costs exactly this one page.
+    humanity_page = build_humanity_board(stats) if stats else None
+    if humanity_page:
+        write("humanity.html", humanity_page)
+    else:
+        print("  ! no live supply figure — leaving the last Bitcoin vs. "
+              "Humanity board in place", file=sys.stderr)
     for e in entries:
         page = build_entry_page(e, board)
         if page is None:

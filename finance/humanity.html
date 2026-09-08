@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Bitcoin vs. Humanity — 8 billion people, 21 million coins</title>
+<meta name="description" content="How many satoshis exist per person on Earth, and what happens if all the world&#x27;s wealth — or every millionaire — wanted a piece of Bitcoin&#x27;s fixed 21 million coin supply."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/humanity.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="Bitcoin vs. Humanity — 8 billion people, 21 million coins"/>
+<meta property="og:description" content="How many satoshis exist per person on Earth, and what happens if all the world&#x27;s wealth — or every millionaire — wanted a piece of Bitcoin&#x27;s fixed 21 million coin supply."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/humanity.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:46px;height:46px;flex:0 0 46px}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+h1 .em{color:#f7931a;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#f7931a}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#f7931a}
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#f7931a}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
+.wm{font-size:20px;letter-spacing:.01em}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+
+/* ── Bitcoin vs. Humanity ─────────────────────────────────────────────────────
+   Its own self-contained namespace (.hb*), sized to what this one page draws
+   — a hero row of three counters, a chart and a couple of feature cards —
+   rather than reusing the much larger Bitcoin Board stylesheet wholesale
+   (see that board's own note on why extra_css is per-page). Palette matches
+   it on purpose: cyan for population/derived counts, the shared accent for
+   anything that is fundamentally a Bitcoin quantity, so the pages read as
+   siblings without literally sharing a stylesheet. */
+.hblede{margin:10px 0 0;color:#b9c6d8;font-size:16.5px;max-width:780px}
+.hbquote{margin:20px 0 0;padding:15px 21px;border-left:3px solid #f7931a;
+  background:rgba(247,147,26,.05);border-radius:0 10px 10px 0;
+  font-family:Georgia,'Times New Roman',serif;font-style:italic;
+  font-size:16px;color:#d7c9ad;line-height:1.6}
+.hbquote cite{display:block;margin-top:8px;font-style:normal;font-size:12.5px;
+  color:#8b9ab0;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbstamp{margin:15px 0 0;color:#7f8fa6;font-size:13.5px;display:flex;
+  align-items:center;gap:9px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbdot{width:8px;height:8px;border-radius:50%;background:#4ade80;flex:0 0 8px;
+  animation:hbpulse 2.6s ease-out infinite}
+.hbdot.off{background:#6e7d92;animation:none}
+@keyframes hbpulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}
+  70%{box-shadow:0 0 0 7px rgba(74,222,128,0)}
+  100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.hbsep{color:#3f4c5f}
+
+.hbherogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 0}
+.hbbox{padding:17px 19px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%)}
+.hbbox-l{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#7f8fa6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbbox-v{margin-top:8px;font-size:26px;line-height:1.15;letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.hbbox-s{margin-top:8px;font-size:12.5px;color:#93a4bd;line-height:1.4}
+.hbmuted{font-size:.62em;font-weight:400;color:#5a6b80}
+
+.hbaside{margin:14px 0 0;color:#93a4bd;font-size:13px;font-style:italic;line-height:1.6}
+.hbaside a{color:#f7931a}
+
+.hbc{border:1px solid #1b2534;border-radius:13px;background:#0a111c;
+  padding:18px 21px;margin:16px 0 0}
+.hbc h2{margin:0 0 8px;font-size:17px;font-weight:400;
+  font-family:Georgia,'Times New Roman',serif;color:#e8dfd2;border:0;padding:0}
+.hbfeature h2{color:#f7931a}
+.hbnote{margin:0 0 12px;color:#93a4bd;font-size:13.5px;line-height:1.55}
+.hbboxrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.hbboxrow .hbbox-v{font-size:19px}
+.hbline{margin:14px 0 0;padding-top:12px;border-top:1px dashed #24303f;
+  color:#b9c6d8;font-size:13.5px;line-height:1.65}
+
+.hbflash{animation:hbflash 1.4s ease-out}
+@keyframes hbflash{0%{background:rgba(247,147,26,.30)}100%{background:transparent}}
+
+.hbstrip{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0}
+.hbchip{flex:1;min-width:64px;text-align:center;padding:7px 6px;
+  background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:7px}
+.hbchip-l{font-size:9px;letter-spacing:.08em;color:#6e7d92;margin-bottom:2px;
+  text-transform:uppercase}
+.hbchip-v{font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.hbchip-v.off{color:#475569;font-weight:400}
+
+@media (max-width:900px){.hbherogrid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.hbherogrid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.hbdot{animation:none}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+  <circle cx="23" cy="23" r="21" stroke="#f7931a" stroke-width="1.5" opacity=".55"/>
+  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
+  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
+  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html" class="on">Bitcoin vs. Humanity</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a></nav></header>
+  <h1 class="btitle">Bitcoin vs. Humanity</h1>
+  <p class="bblede hblede">Every person alive, set against a currency that cannot print more of itself. The world’s population keeps growing; Bitcoin’s supply is capped at 21 million coins and most of it is already mined — so every birth divides a fixed pie a little thinner. Here is what that looks like in the actual numbers.</p>
+  <blockquote class="hbquote">“It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy.”<cite>— Satoshi Nakamoto, January 2009, days after the first bitcoin transaction</cite></blockquote>
+  <p class="hbstamp"><span class="hbdot" id="hbDot"></span><span id="hbLive">live</span><span><span class="hbsep">·</span> block 965,986 <span class="hbsep">·</span> population model anchored June 25, 2026</span></p>
+  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,245,742,297</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,081,159 BTC</div><div class="hbbox-s">95.62% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,534</span> <span class="hbmuted" id="hbSppUsd">($192.25)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
+  <p class="hbaside">Even that "issued" figure overstates what can ever be spent: <a href="https://blockchair.com/bitcoin/block/501726" rel="noopener" target="_blank">block 501,726</a>, mined December 30, 2017, has a coinbase transaction that claims 0 BTC instead of the 12.5 BTC subsidy then in effect — an entirely empty block, its reward destroyed by whatever mining bug produced it. That satoshi will never exist. The 21 million cap this page computes from the halving schedule is Bitcoin’s theoretical ceiling; the real one is smaller still, and no one can ever put it back.</p>
+  <section class="hbc hbwide">
+    <h2>Satoshis per person on Earth — over time</h2>
+    <p class="hbnote">Computed from Bitcoin’s halving schedule and the population model above, month by month since 2020. Halvings marked; the last point is today’s real issued supply.</p>
+    <svg viewBox="0 0 600 150" style="width:100%;height:auto;display:block" role="img" aria-label="Satoshis issued per person on Earth, 2020 to present"><line x1="56" y1="114.7" x2="584" y2="114.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="118.2" text-anchor="end" font-size="8" fill="#475569">225,500</text><line x1="56" y1="87.7" x2="584" y2="87.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="91.2" text-anchor="end" font-size="8" fill="#475569">231,000</text><line x1="56" y1="60.6" x2="584" y2="60.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="64.1" text-anchor="end" font-size="8" fill="#475569">236,500</text><line x1="56" y1="33.6" x2="584" y2="33.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="37.1" text-anchor="end" font-size="8" fill="#475569">242,000</text><line x1="84.3" y1="12" x2="84.3" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="84.3" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">3rd halving</text><line x1="395.7" y1="12" x2="395.7" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="395.7" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">4th halving</text><polyline points="56.0,104.0 62.7,101.3 69.0,98.8 75.7,96.1 82.2,93.5 88.9,90.9 95.3,88.3 102.1,85.6 108.8,83.0 115.2,80.4 121.9,77.8 128.4,75.2 135.1,72.9 141.8,72.0 147.9,71.2 154.6,70.3 161.1,69.5 167.8,68.6 174.3,67.7 181.0,66.8 187.7,65.9 194.2,65.1 200.9,64.2 207.3,63.4 214.0,62.5 220.8,61.6 226.8,60.8 233.5,59.9 240.0,59.1 246.7,58.2 253.2,57.4 259.9,56.5 266.6,55.7 273.1,54.8 279.8,54.0 286.3,53.1 293.0,52.3 299.7,51.4 305.7,50.6 312.4,49.8 318.9,48.9 325.6,48.1 332.1,47.3 338.8,46.4 345.5,45.6 352.0,44.7 358.7,43.9 365.2,43.1 371.9,42.2 378.6,41.4 384.9,40.6 391.6,39.7 398.0,38.9 404.7,38.1 411.2,37.3 417.9,36.4 424.6,35.6 431.1,34.8 437.8,33.9 444.3,33.1 451.0,32.5 457.7,32.6 463.8,32.6 470.5,32.6 477.0,32.6 483.7,32.6 490.1,32.6 496.8,32.6 503.6,32.6 510.0,32.6 516.7,32.7 523.2,32.7 529.9,32.7 536.6,32.7 542.7,32.7 549.4,32.7 555.9,32.7 562.6,32.7 569.1,32.7 575.8,32.8 584.0,26.0" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="584.0" cy="26.0" r="3.5" fill="#22d3ee"/><text x="577.0" y="20.0" text-anchor="end" font-size="9" fill="#22d3ee" font-weight="700">243,534</text><circle cx="398.0" cy="38.9" r="2.5" fill="none" stroke="#f7931a" stroke-width="1.5"/><text x="403.0" y="41.9" font-size="7.5" fill="rgba(247,147,26,.75)">peak 240,913</text><text x="56.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2020</text><text x="135.1" y="131" text-anchor="middle" font-size="8" fill="#475569">2021</text><text x="214.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2022</text><text x="293.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2023</text><text x="371.9" y="131" text-anchor="middle" font-size="8" fill="#475569">2024</text><text x="451.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2025</text><text x="529.9" y="131" text-anchor="middle" font-size="8" fill="#475569">2026</text></svg>
+<div class="hbstrip"><div class="hbchip"><div class="hbchip-l">1D</div><div class="hbchip-v" style="color:#22d3ee">+1,371</div></div><div class="hbchip"><div class="hbchip-l">1M</div><div class="hbchip-v" style="color:#22d3ee">+1,368</div></div><div class="hbchip"><div class="hbchip-l">1Y</div><div class="hbchip-v" style="color:#22d3ee">+1,343</div></div><div class="hbchip"><div class="hbchip-l">3Y</div><div class="hbchip-v" style="color:#22d3ee">+3,925</div></div><div class="hbchip"><div class="hbchip-l">5Y</div><div class="hbchip-v" style="color:#22d3ee">+8,070</div></div></div>
+  </section>  <section class="hbc hbwide hbfeature">
+    <h2>If all the world’s wealth were Bitcoin</h2>
+    <p class="hbnote">$471.000 T of global household wealth, divided by a fixed supply of 21 million coins — UBS Global Wealth Report 2025 · year-end 2024.</p>
+    <div class="hbboxrow"><div class="hbbox"><div class="hbbox-l">Per bitcoin (÷ 21M cap)</div><div class="hbbox-v" id="hbPerCoinCap" style="color:#f7931a">$22 M</div><div class="hbbox-s">every coin that will ever exist</div></div><div class="hbbox"><div class="hbbox-l">Per bitcoin (÷ mined so far)</div><div class="hbbox-v" id="hbPerCoinIssued" style="color:#facc15">$23 M</div><div class="hbbox-s">only 20,081,159 BTC exist today</div></div><div class="hbbox"><div class="hbbox-l">Per satoshi</div><div class="hbbox-v" id="hbPerSat" style="color:#22d3ee">$0.22</div><div class="hbbox-s">1 BTC = 100,000,000 sats</div></div></div>
+  </section>  <section class="hbc hbwide hbfeature">
+    <h2>If every millionaire wanted one</h2>
+    <p class="hbnote">21 million bitcoin will ever exist, split among the world’s millionaires — UBS Global Wealth Report 2025 · year-end 2024.</p>
+    <div class="hbboxrow"><div class="hbbox"><div class="hbbox-l">Millionaires (world)</div><div class="hbbox-v" id="hbMillionaires" style="color:#22d3ee">60,000,000</div><div class="hbbox-s">USD millionaires</div></div><div class="hbbox"><div class="hbbox-l">BTC per millionaire (÷ 21M cap)</div><div class="hbbox-v" id="hbBtcEachCap" style="color:#f7931a">0.3500 BTC</div><div class="hbbox-s">if the whole future supply split evenly</div></div><div class="hbbox"><div class="hbbox-l">BTC per millionaire (÷ mined so far)</div><div class="hbbox-v" id="hbBtcEachIssued" style="color:#facc15">0.3347 BTC</div><div class="hbbox-s">of today’s supply</div></div></div>
+    <p class="hbline">There are <b style="color:#22d3ee">60,000,000</b> USD millionaires alive and only <b style="color:#f7931a">20,999,950</b> bitcoin will ever exist — so if every one of them wanted in, each would get just <b style="color:#f7931a">0.3500 BTC</b>.</p>
+  </section>
+  <div class="panel">
+    <h2>How these numbers are made</h2>
+    <p>Four different kinds of number sit on this page, and they are not equally
+    true.</p>
+    <ul>
+      <li><b>Computed, and exact.</b> Bitcoin issued and the 21 million cap — the
+      published halving schedule, summed in whole satoshis from the live block
+      height, exactly like <a href="bitcoin.html">the Bitcoin Board</a> and
+      <a href="how-many-bitcoins-are-there.html">its own working</a>.</li>
+      <li><b>Polled, and live.</b> That block height itself, refreshed from
+      <a href="https://mempool.space/">mempool.space</a> about once a minute
+      while this page is open.</li>
+      <li><b>Extrapolated, continuously.</b> World population. No public source
+      publishes a live headcount — there is no census running in real time — so
+      this is a straight line drawn from the United Nations World Population
+      Prospects 2024 (medium variant) net growth rate, ticking forward in your
+      browser every second. It is a model, not a measurement, refreshed by hand
+      roughly once a year from the next UN revision.</li>
+      <li><b>Fixed, and refreshed by hand.</b> Global household wealth and the
+      world's count of USD millionaires, both from the UBS Global Wealth Report
+      2025 (year-end 2024) — there is no live feed for either, so these are
+      updated roughly once a year as new editions of that report appear.</li>
+    </ul>
+    <p>The chart's historical points use the theoretical ten-minutes-a-block
+    schedule rather than real block timestamps — real blocks land a little
+    faster than that on average, which is why the live point sits a hair off
+    the theoretical line. Sources: the
+    <a href="https://population.un.org/wpp/">UN World Population Prospects</a>,
+    the <a href="https://www.ubs.com/global/en/family-office-uhnw/reports/global-wealth-report-2025.html">UBS
+    Global Wealth Report</a>, and <a href="https://mempool.space/">mempool.space</a>
+    — all public. Nothing here is investment advice, and nothing here is for
+    sale.</p>
+  </div>
+
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice<p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>
+</div>
+<script>
+
+(function () {
+  "use strict";
+  var API = "https://mempool.space/api";
+  var S = {"height":965986,"supplySats":2008115937500000,"popAnchorTs":1782345600.0,"popAnchor":8231600000,"popRate":2.18,"maxSupplySats":2099994997690000.0,"wealthUsd":471000000000000.0,"millionaires":60000000};
+  var fails = 0, lastOk = Date.now();
+
+  function $(id) { return document.getElementById(id); }
+  function set(id, txt, flash) {
+    var el = $(id);
+    if (!el || txt == null || el.textContent === txt) return;
+    el.textContent = txt;
+    if (flash) {
+      el.classList.remove("hbflash");
+      void el.offsetWidth;
+      el.classList.add("hbflash");
+    }
+  }
+  function n(v, dp) {
+    if (v == null || !isFinite(v)) return "\u2014";
+    dp = dp || 0;
+    return v.toLocaleString("en-US",
+      { minimumFractionDigits: dp, maximumFractionDigits: dp });
+  }
+  function usdBig(v) {
+    if (!(v > 0)) return "\u2014";
+    if (v >= 1e12) return "$" + (v / 1e12).toFixed(3) + " T";
+    if (v >= 1e9) return "$" + (v / 1e9).toFixed(1) + " B";
+    return "$" + n(v / 1e6, 0) + " M";
+  }
+  function usd(v, dp) { return (v > 0) ? "$" + n(v, dp) : "\u2014"; }
+  function btcEach(sats) { return n(sats / 1e8, 4) + " BTC"; }
+  function ago(sec) {
+    if (sec == null || sec < 0) return "\u2014";
+    sec = Math.floor(sec);
+    if (sec < 60) return sec + "s ago";
+    if (sec < 3600) return Math.floor(sec / 60) + "m " + (sec % 60) + "s ago";
+    return Math.floor(sec / 3600) + "h " + Math.floor((sec % 3600) / 60) + "m ago";
+  }
+
+  // Same consensus subsidy sum as the Bitcoin Board's own live layer (see
+  // its BB_JS supplyBtc()) — kept in whole satoshis here rather than BTC,
+  // since sats-per-person needs that precision.
+  function issuedSats(height) {
+    var total = 0;
+    for (var e = 0; e < 34; e++) {
+      var subsidy = Math.floor(5000000000 / Math.pow(2, e));
+      if (subsidy <= 0) break;
+      var lo = Math.max(1, e * 210000);
+      var hi = Math.min(height, e * 210000 + 209999);
+      if (hi >= lo) total += (hi - lo + 1) * subsidy;
+    }
+    return total;
+  }
+
+  function render() {
+    var pop = S.popAnchor + S.popRate * ((Date.now() / 1000) - S.popAnchorTs);
+    var issued = S.supplySats;
+    var spp = issued / pop;
+
+    set("hbPop", n(Math.round(pop)));
+    set("hbSpp", n(Math.round(spp)));
+    if (S.price) set("hbSppUsd", "(" + usd(spp / 1e8 * S.price, 2) + ")", true);
+    set("hbIssued", n(issued / 1e8, 0) + " BTC", true);
+
+    var perCoinCap = S.wealthUsd / (S.maxSupplySats / 1e8);
+    var perCoinIssued = S.wealthUsd / (issued / 1e8);
+    var perSatCap = perCoinCap / 1e8;
+    set("hbPerCoinCap", usdBig(perCoinCap), true);
+    set("hbPerCoinIssued", usdBig(perCoinIssued), true);
+    set("hbPerSat", perSatCap >= 0.01 ? "$" + perSatCap.toFixed(2)
+                                       : "$" + perSatCap.toFixed(4), true);
+    set("hbBtcEachCap", btcEach(S.maxSupplySats / S.millionaires), true);
+    set("hbBtcEachIssued", btcEach(issued / S.millionaires), true);
+
+    var stale = fails > 2;
+    set("hbLive", stale
+      ? "live updates paused \u2014 showing the last good reading"
+      : "live \u00b7 refreshed " + ago((Date.now() - lastOk) / 1000));
+    var dot = $("hbDot");
+    if (dot) dot.className = stale ? "hbdot off" : "hbdot";
+  }
+
+  function j(path) {
+    return fetch(API + path, { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).catch(function () { return null; });
+  }
+
+  function poll() {
+    if (document.hidden) return;
+    Promise.all([
+      fetch(API + "/blocks/tip/height?v=" + Math.floor(Date.now() / 60000),
+            { cache: "no-store" }).then(function (r) {
+        return r.ok ? r.text() : Promise.reject();
+      }),
+      j("/v1/prices")
+    ]).then(function (r) {
+      var h = parseInt(r[0], 10);
+      if (!(h > 0)) return Promise.reject();
+      if (h !== S.height) { S.height = h; S.supplySats = issuedSats(h); }
+      if (r[1] && r[1].USD) S.price = r[1].USD;
+      fails = 0; lastOk = Date.now();
+      render();
+    }).catch(function () { fails++; render(); });
+  }
+
+  render();
+  setInterval(render, 1000);
+  poll();
+  setInterval(poll, 60000);
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) poll();
+  });
+})();
+
+</script>
+</body>
+</html>
