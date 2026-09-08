@@ -647,7 +647,6 @@ def _nav(active=""):
             '<a href="crypto.html"%s>Crypto Heat Map</a>'
             '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
             '<a href="ask.html"%s>Ask</a>'
-            '<a href="feed.xml">RSS</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
                         cls("crypto"), cls("humanity"), cls("ask")))
 

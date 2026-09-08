@@ -249,7 +249,6 @@ def header(active=""):
       <a href="bookmarked.html"{cls('bookmarked')}>📑 Bookmarked</a>
       <a href="write.html"{cls('write')}>✉️ Write</a>
       <a href="about.html"{cls('about')}>About</a>
-      <a href="feed.xml">RSS</a>
       <a class="sib" href="https://mistertranslation.com/finance/" title="What the world's money is actually in">The Librarian's Ledger →</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
@@ -261,7 +260,6 @@ def header(active=""):
     <a href="bookmarked.html"{cls('bookmarked')}>📑 Bookmarked</a>
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
-    <a href="feed.xml" title="Subscribe by RSS">RSS</a>
     <a class="sib" href="https://mistertranslation.com/finance/" title="What the world's money is actually in">The Librarian's Ledger →</a>
     <span class="share-widget"></span>
   </nav>
