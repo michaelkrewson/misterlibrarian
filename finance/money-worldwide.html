@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Money Worldwide — exchange rates, money supply, reserves, debt &amp; GDP — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Exchange rates, money supply, reserves and gold, and global debt &amp; GDP — with Bitcoin&#x27;s own market cap set against every one of them."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/money-worldwide.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="Money Worldwide — exchange rates, money supply, reserves, debt &amp; GDP — The Librarian&#x27;s Ledger"/>
+<meta property="og:description" content="Exchange rates, money supply, reserves and gold, and global debt &amp; GDP — with Bitcoin&#x27;s own market cap set against every one of them."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/money-worldwide.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:46px;height:46px;flex:0 0 46px}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+h1 .em{color:#f7931a;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#f7931a}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#f7931a}
+
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#f7931a}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #f7931a;outline-offset:1px}
+
+/* Groups the nav toggle with the nav itself so the two move together as one
+   unit, and — via margin-left:auto — always hugs the right edge of
+   whichever row it lands on: the same row as the brand+search on a screen
+   wide enough to fit the full nav there too, or its own full row underneath
+   once the nav (8 links) is too wide to share one with them. Also the
+   positioning context the mobile dropdown below anchors against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end;margin-left:auto}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#f7931a;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — .hgroup (order 1, its own margin-left:auto
+   already pins it to the row's right edge) stays pinned next to the brand,
+   and the search box (order 2) drops to its own full-width row underneath,
+   the same "give up the single row" fallback the travel blog's own
+   absolutely-positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{order:1;flex-wrap:wrap}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#f7931a}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
+.wm{font-size:20px;letter-spacing:.01em}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+
+/* ── The Treasuries board ─────────────────────────────────────────────────────
+   Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
+   so it can never collide with the asset table's .board/.mc/.px it also reuses. */
+.trs-hl{color:#f7931a;font-variant-numeric:tabular-nums}
+.trsboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
+.trsbox{display:block;padding:18px 20px;border:1px solid #24303f;border-radius:13px;
+  background:linear-gradient(158deg,#111927 0%,#0a111c 64%);
+  text-decoration:none;color:inherit;transition:border-color .15s}
+.trsbox:hover{border-color:#f7931a}
+.trsbox .tb-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.trsbox .tb-i{font-size:20px}
+.trsbox .tb-t{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#93a4bd;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trsbox .tb-v{margin-top:9px;font-size:24px;line-height:1.15;color:#f7931a;
+  letter-spacing:-.01em;font-variant-numeric:tabular-nums;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trsbox .tb-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
+.trsbox .tb-d{margin:12px 0 0;padding-top:12px;border-top:1px solid #1b2534;
+  font-size:13px;color:#93a4bd;line-height:1.45}
+.pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
+.trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
+.ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
+.ao.v{color:#7f8fa6}
+.trsfresh{margin:20px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
+.board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
+  font-weight:700;color:#e8eef7}
+.board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:#f7931a}
+.trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+@media (max-width:900px){.trsboxes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.trsboxes{grid-template-columns:1fr}}
+
+/* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
+   the H1 on every Treasuries page literally carries the same Bitcoin logo —
+   just this one component out of BB_CSS, not the whole stylesheet, since
+   these pages don't draw the rest of that page's chart/grid. Keep both in
+   sync if the coin mark itself ever changes. */
+.bbmark{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:1.16em;height:1.16em;margin-right:.34em;vertical-align:-.17em}
+.bbmark::before{content:"";position:absolute;inset:-58%;border-radius:50%;
+  background:radial-gradient(circle,rgba(247,147,26,.60) 0%,rgba(247,147,26,.34) 32%,
+    rgba(247,147,26,.10) 55%,rgba(247,147,26,0) 72%);
+  animation:bbglow 4.2s ease-in-out infinite}
+.bbmark svg{position:relative;width:100%;height:100%;display:block;
+  filter:drop-shadow(0 1px 7px rgba(247,147,26,.60))}
+@keyframes bbglow{0%,100%{opacity:.6;transform:scale(.92)}
+  50%{opacity:1;transform:scale(1.08)}}
+
+.trskicker{margin:0 0 10px}
+.trskicker a{display:inline-flex;align-items:center;font-size:12px;letter-spacing:.1em;
+  text-transform:uppercase;color:#7f8fa6;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.trskicker a:hover{color:#f7931a}
+.trskicker .bbmark{width:1em;height:1em}
+
+/* ⚠️ Must stay LAST — see BB_CSS's own note on why a rule of equal
+   specificity placed earlier silently loses to this one. */
+@media (prefers-reduced-motion:reduce){
+  .bbmark::before{animation:none;opacity:.8}
+}
+
+/* ── The Money Worldwide board ────────────────────────────────────────────────
+   Namespaced .mw* so it can never collide with .board/.trs*/.cbe* it also
+   reuses for its tables. */
+.mwlede-hl{color:#f7931a;font-variant-numeric:tabular-nums}
+table.mw-sort th[data-sort]{cursor:pointer;user-select:none;white-space:nowrap}
+table.mw-sort th[data-sort]:hover{color:#e8eef7}
+table.mw-sort td{font-variant-numeric:tabular-nums;white-space:nowrap}
+table.mw-sort td.mw-nm{white-space:normal}
+.mw-sub{display:block;margin-top:1px;font-size:11px;color:#6e7d92}
+.mw-r{color:#f87171}
+.mwh2{margin:34px 0 4px;font-weight:400;font-size:19px}
+.mwsub{margin:0 0 14px;color:#93a4bd;font-size:14px;line-height:1.55}
+.mwcaveat{margin:10px 0 0;padding:11px 14px;border-left:3px solid #f7931a;
+  background:#111927;border-radius:0 8px 8px 0;color:#a9b7c9;font-size:13px;
+  line-height:1.55}
+.mwscarcity{margin:22px 0 0;display:flex;flex-direction:column;gap:14px}
+.mwbarrow{display:grid;grid-template-columns:230px 1fr auto;align-items:center;gap:12px}
+.mwbarrow .mwbl{font-size:13px;color:#c7d2e0}
+.mwbarrow .mwbv{font-variant-numeric:tabular-nums;color:#f7931a;font-weight:600;
+  white-space:nowrap;text-align:right;font-size:14.5px}
+.mwbartrack{position:relative;height:22px;background:#0a111c;border:1px solid #1b2534;
+  border-radius:6px;overflow:hidden}
+.mwbarfill{position:absolute;left:0;top:0;bottom:0;border-radius:5px 0 0 5px;
+  transition:width .2s}
+.mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
+@media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+  <circle cx="23" cy="23" r="21" stroke="#f7931a" stroke-width="1.5" opacity=".55"/>
+  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
+  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
+  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a><a href="ask.html">Ask</a></nav></div></header>
+  <p class="trskicker"><a href="untangling-bis-imf-world-bank.html">See also: Untangling
+    the BIS, the IMF, and the World Bank →</a></p>
+  <h1 class="btitle">Money Worldwide</h1>
+  <p class="lede">Four numbers that don't normally sit on the same page: what a dollar buys
+  elsewhere, how much money actually exists, who holds the world's reserves, and how big the
+  world's economy and its government debt actually are. Bitcoin's own market cap today is <span class="mwlede-hl">$1.571 T</span> — currently #12 on <a href="board.html">the Asset Board</a>.</p>
+  <p class="stamp">Updated 2026-09-08 19:58 UTC</p>
+  <h2 class="mwh2">Exchange rates</h2>
+  <p class="mwsub">29 currencies against the US dollar, 2026-09-08 — European Central Bank reference rates. Click any column to sort.</p>
+  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Currency</th>
+        <th data-sort="rate" title="How many units of this currency one US dollar buys, today">Per $1</th>
+        <th data-sort="perusd" title="How many US dollars one unit of this currency buys, today">$ per unit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-rate="0.73825" data-perusd="1.3545546901456147">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇬🇧</span>
+          <span class="nm"><span class="n1">GBP</span></span></span></td>
+        <td>0.7382</td>
+        <td>1.3546</td>
+      </tr>
+      <tr data-rate="0.81152" data-perusd="1.2322555205047319">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
+          <span class="nm"><span class="n1">CHF</span></span></span></td>
+        <td>0.8115</td>
+        <td>1.2323</td>
+      </tr>
+      <tr data-rate="0.86103" data-perusd="1.1613997189412681">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇺</span>
+          <span class="nm"><span class="n1">EUR</span></span></span></td>
+        <td>0.8610</td>
+        <td>1.1614</td>
+      </tr>
+      <tr data-rate="1.2658" data-perusd="0.7900142202559646">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇬</span>
+          <span class="nm"><span class="n1">SGD</span></span></span></td>
+        <td>1.2658</td>
+        <td>0.7900</td>
+      </tr>
+      <tr data-rate="1.3805" data-perusd="0.7243752263672583">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇦</span>
+          <span class="nm"><span class="n1">CAD</span></span></span></td>
+        <td>1.3805</td>
+        <td>0.7244</td>
+      </tr>
+      <tr data-rate="1.3861" data-perusd="0.7214486689272058">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
+          <span class="nm"><span class="n1">AUD</span></span></span></td>
+        <td>1.3861</td>
+        <td>0.7214</td>
+      </tr>
+      <tr data-rate="1.7115" data-perusd="0.5842827928717499">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇿</span>
+          <span class="nm"><span class="n1">NZD</span></span></span></td>
+        <td>1.7115</td>
+        <td>0.5843</td>
+      </tr>
+      <tr data-rate="3.0118" data-perusd="0.3320273590543861">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇱</span>
+          <span class="nm"><span class="n1">ILS</span></span></span></td>
+        <td>3.0118</td>
+        <td>0.3320</td>
+      </tr>
+      <tr data-rate="3.7178" data-perusd="0.268976276292431">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
+          <span class="nm"><span class="n1">PLN</span></span></span></td>
+        <td>3.7178</td>
+        <td>0.2690</td>
+      </tr>
+      <tr data-rate="4.0615" data-perusd="0.2462144527883787">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇾</span>
+          <span class="nm"><span class="n1">MYR</span></span></span></td>
+        <td>4.0615</td>
+        <td>0.2462</td>
+      </tr>
+      <tr data-rate="4.5204" data-perusd="0.22121936111848506">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇴</span>
+          <span class="nm"><span class="n1">RON</span></span></span></td>
+        <td>4.5204</td>
+        <td>0.2212</td>
+      </tr>
+      <tr data-rate="5.1111" data-perusd="0.19565259924478096">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇷</span>
+          <span class="nm"><span class="n1">BRL</span></span></span></td>
+        <td>5.1111</td>
+        <td>0.1957</td>
+      </tr>
+      <tr data-rate="6.436" data-perusd="0.15537600994406464">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇰</span>
+          <span class="nm"><span class="n1">DKK</span></span></span></td>
+        <td>6.4360</td>
+        <td>0.1554</td>
+      </tr>
+      <tr data-rate="6.7105" data-perusd="0.14902019223604798">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
+          <span class="nm"><span class="n1">CNY</span></span></span></td>
+        <td>6.7105</td>
+        <td>0.1490</td>
+      </tr>
+      <tr data-rate="7.8412" data-perusd="0.1275315002805693">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇭🇰</span>
+          <span class="nm"><span class="n1">HKD</span></span></span></td>
+        <td>7.8412</td>
+        <td>0.1275</td>
+      </tr>
+      <tr data-rate="9.2518" data-perusd="0.10808707494757777">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇴</span>
+          <span class="nm"><span class="n1">NOK</span></span></span></td>
+        <td>9.2518</td>
+        <td>0.1081</td>
+      </tr>
+      <tr data-rate="9.6022" data-perusd="0.10414280060819396">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇪</span>
+          <span class="nm"><span class="n1">SEK</span></span></span></td>
+        <td>9.6022</td>
+        <td>0.1041</td>
+      </tr>
+      <tr data-rate="16.024" data-perusd="0.062406390414378426">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇿🇦</span>
+          <span class="nm"><span class="n1">ZAR</span></span></span></td>
+        <td>16.0240</td>
+        <td>0.0624</td>
+      </tr>
+      <tr data-rate="16.951" data-perusd="0.0589935697009026">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇽</span>
+          <span class="nm"><span class="n1">MXN</span></span></span></td>
+        <td>16.9510</td>
+        <td>0.0590</td>
+      </tr>
+      <tr data-rate="20.825" data-perusd="0.04801920768307323">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇿</span>
+          <span class="nm"><span class="n1">CZK</span></span></span></td>
+        <td>20.8250</td>
+        <td>0.0480</td>
+      </tr>
+      <tr data-rate="32.915" data-perusd="0.03038128512836093">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇭</span>
+          <span class="nm"><span class="n1">THB</span></span></span></td>
+        <td>32.9150</td>
+        <td>0.0304</td>
+      </tr>
+      <tr data-rate="48.46" data-perusd="0.020635575732562937">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
+          <span class="nm"><span class="n1">TRY</span></span></span></td>
+        <td>48.4600</td>
+        <td>0.0206</td>
+      </tr>
+      <tr data-rate="62.508" data-perusd="0.01599795226211045">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇭</span>
+          <span class="nm"><span class="n1">PHP</span></span></span></td>
+        <td>62.5080</td>
+        <td>0.0160</td>
+      </tr>
+      <tr data-rate="94.83" data-perusd="0.010545186122535063">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
+          <span class="nm"><span class="n1">INR</span></span></span></td>
+        <td>94.8300</td>
+        <td>0.0105</td>
+      </tr>
+      <tr data-rate="120.89" data-perusd="0.008271982794275788">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇸</span>
+          <span class="nm"><span class="n1">ISK</span></span></span></td>
+        <td>120.8900</td>
+        <td>0.0083</td>
+      </tr>
+      <tr data-rate="154.3" data-perusd="0.006480881399870382">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
+          <span class="nm"><span class="n1">JPY</span></span></span></td>
+        <td>154.3000</td>
+        <td>0.0065</td>
+      </tr>
+      <tr data-rate="313.37" data-perusd="0.0031911159332418545">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇭🇺</span>
+          <span class="nm"><span class="n1">HUF</span></span></span></td>
+        <td>313.3700</td>
+        <td>0.0032</td>
+      </tr>
+      <tr data-rate="1341.67" data-perusd="0.0007453397631310232">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
+          <span class="nm"><span class="n1">KRW</span></span></span></td>
+        <td>1,341.6700</td>
+        <td>0.0007</td>
+      </tr>
+      <tr data-rate="17597" data-perusd="5.6827868386656816e-05">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇩</span>
+          <span class="nm"><span class="n1">IDR</span></span></span></td>
+        <td>17,597.0000</td>
+        <td>0.0001</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="mwbarnote">No totals row here on purpose — summing exchange rates
+  across currencies has no meaningful unit; unlike every other table on this
+  page, this one has nothing sensible to add up.</p>
+  <h2 class="mwh2">Money supply</h2>
+  <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. Click any column to sort.</p>
+  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Economy</th>
+        <th data-sort="m0" title="Physical currency + bank reserves at the central bank — the narrowest aggregate, an M0-class figure">Monetary base (M0-class)</th>
+        <th data-sort="m1" title="Currency in circulation + demand deposits">M1</th>
+        <th data-sort="m2" title="M1 + savings/small time deposits (US) — the Euro area's M2 is not published as a standalone headline figure the way the US's is">M2</th>
+        <th data-sort="m3" title="The Euro area's own headline broad-money aggregate; the US does not publish a distinct M3">M3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-m0="5523.9" data-m1="19886.4" data-m2="23218.0">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
+          <span class="nm"><span class="n1">United States</span>
+          <span class="mw-sub">Federal Reserve H.6 (via FRED, billions of dollars)</span></span></span></td>
+        <td title="2026-07-01">$5,523.9 B</td>
+        <td title="2026-07-01">$19,886.4 B</td>
+        <td title="2026-07-01">$23,218.0 B</td>
+        <td class="mw-sub">—</td>
+      </tr>
+      <tr data-m1="13150.533808531665" data-m2="19113.36314825581" data-m3="20484.441027229692">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇺</span>
+          <span class="nm"><span class="n1">Euro area</span>
+          <span class="mw-sub">European Central Bank BSI dataset (billions of euro → USD at today&#x27;s rate)</span></span></span></td>
+        <td class="mw-sub">—</td>
+        <td title="11,323.0 EURB as of 2026-07">$13,150.5 B</td>
+        <td title="16,457.2 EURB as of 2026-07">$19,113.4 B</td>
+        <td title="17,637.7 EURB as of 2026-07">$20,484.4 B</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total (billions of dollars, at today's exchange rate)</td>
+        <td>$5523.9 B</td>
+        <td>$33036.9 B</td>
+        <td>$42331.4 B</td>
+        <td>$20484.4 B</td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+  <h2 class="mwh2">Reserves — foreign exchange and gold</h2>
+  <p class="mwsub">Non-gold reserves (foreign exchange + SDRs + IMF reserve position) by economy, and official gold reserves by country — shown separately on purpose, since summing them would obscure how much of a reserve stockpile is a hard asset versus other currencies. Click any column to sort.</p>
+  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Economy</th>
+        <th data-sort="usd" title="Foreign exchange + SDRs + IMF reserve position — excludes gold, shown separately below">Reserves, excl. gold</th>
+        <th data-sort="date" title="The most recent month this economy's own reporting covers">As of</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-usd="3482.3856201134518" data-date="20260601">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
+          <span class="nm"><span class="n1">China</span></span></span></td>
+        <td>$3,482.4 B</td>
+        <td class="ao">2026-06-01</td>
+      </tr>
+      <tr data-usd="1177.971006308592" data-date="20260601">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
+          <span class="nm"><span class="n1">Japan</span></span></span></td>
+        <td>$1,178.0 B</td>
+        <td class="ao">2026-06-01</td>
+      </tr>
+      <tr data-usd="588.0328183374717" data-date="20260701">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
+          <span class="nm"><span class="n1">India</span></span></span></td>
+        <td>$588.0 B</td>
+        <td class="ao">2026-07-01</td>
+      </tr>
+      <tr data-usd="488.1138979393323" data-date="20260701">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇦</span>
+          <span class="nm"><span class="n1">Saudi Arabia</span></span></span></td>
+        <td>$488.1 B</td>
+        <td class="ao">2026-07-01</td>
+      </tr>
+      <tr data-usd="423.20972670669914" data-date="20251101">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
+          <span class="nm"><span class="n1">Russia</span></span></span></td>
+        <td>$423.2 B</td>
+        <td class="ao">2025-11-01</td>
+      </tr>
+      <tr data-usd="421.8639658648955" data-date="20260701">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
+          <span class="nm"><span class="n1">South Korea</span></span></span></td>
+        <td>$421.9 B</td>
+        <td class="ao">2026-07-01</td>
+      </tr>
+      <tr data-usd="345.22264937898626" data-date="20260601">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇷</span>
+          <span class="nm"><span class="n1">Brazil</span></span></span></td>
+        <td>$345.2 B</td>
+        <td class="ao">2026-06-01</td>
+      </tr>
+      <tr data-usd="240.5124058950884" data-date="20260701">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
+          <span class="nm"><span class="n1">United States</span></span></span></td>
+        <td>$240.5 B</td>
+        <td class="ao">2026-07-01</td>
+      </tr>
+      <tr data-usd="168.63691447399628" data-date="20260701">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇬🇧</span>
+          <span class="nm"><span class="n1">United Kingdom</span></span></span></td>
+        <td>$168.6 B</td>
+        <td class="ao">2026-07-01</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total — 9 economies</td>
+        <td>$7,335.9 B</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tonnes">Gold reserves</th>
+        <th data-sort="usd" title="Tonnes × troy ounces per tonne × today's gold price">Value, today's price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-tonnes="8133" data-usd="1162026106202.623">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
+          <span class="nm"><span class="n1">United States</span></span></span></td>
+        <td>8,133 t</td>
+        <td>$1.162 T</td>
+      </tr>
+      <tr data-tonnes="3355" data-usd="479355414522.292">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
+          <span class="nm"><span class="n1">Germany</span></span></span></td>
+        <td>3,355 t</td>
+        <td>$479.4 B</td>
+      </tr>
+      <tr data-tonnes="2452" data-usd="350336654667.26074">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
+          <span class="nm"><span class="n1">Italy</span></span></span></td>
+        <td>2,452 t</td>
+        <td>$350.3 B</td>
+      </tr>
+      <tr data-tonnes="2437" data-usd="348193485898.9048">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
+          <span class="nm"><span class="n1">France</span></span></span></td>
+        <td>2,437 t</td>
+        <td>$348.2 B</td>
+      </tr>
+      <tr data-tonnes="2313" data-usd="330476624080.49524">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
+          <span class="nm"><span class="n1">China</span></span></span></td>
+        <td>2,313 t</td>
+        <td>$330.5 B</td>
+      </tr>
+      <tr data-tonnes="2299" data-usd="328476333230.02954">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
+          <span class="nm"><span class="n1">Russia</span></span></span></td>
+        <td>2,299 t</td>
+        <td>$328.5 B</td>
+      </tr>
+      <tr data-tonnes="1040" data-usd="148593034606.016">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
+          <span class="nm"><span class="n1">Switzerland</span></span></span></td>
+        <td>1,040 t</td>
+        <td>$148.6 B</td>
+      </tr>
+      <tr data-tonnes="880" data-usd="125732567743.55199">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
+          <span class="nm"><span class="n1">India</span></span></span></td>
+        <td>880 t</td>
+        <td>$125.7 B</td>
+      </tr>
+      <tr data-tonnes="846" data-usd="120874718535.2784">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
+          <span class="nm"><span class="n1">Japan</span></span></span></td>
+        <td>846 t</td>
+        <td>$120.9 B</td>
+      </tr>
+      <tr data-tonnes="635" data-usd="90727477860.40399">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
+          <span class="nm"><span class="n1">Turkey</span></span></span></td>
+        <td>635 t</td>
+        <td>$90.7 B</td>
+      </tr>
+      <tr data-tonnes="612" data-usd="87441285748.9248">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
+          <span class="nm"><span class="n1">Netherlands</span></span></span></td>
+        <td>612 t</td>
+        <td>$87.4 B</td>
+      </tr>
+      <tr data-tonnes="582" data-usd="83154948212.21278">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
+          <span class="nm"><span class="n1">Poland</span></span></span></td>
+        <td>582 t</td>
+        <td>$83.2 B</td>
+      </tr>
+      <tr data-tonnes="424" data-usd="60580237185.529594">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
+          <span class="nm"><span class="n1">Taiwan</span></span></span></td>
+        <td>424 t</td>
+        <td>$60.6 B</td>
+      </tr>
+      <tr data-tonnes="416" data-usd="59437213842.4064">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇿</span>
+          <span class="nm"><span class="n1">Uzbekistan</span></span></span></td>
+        <td>416 t</td>
+        <td>$59.4 B</td>
+      </tr>
+      <tr data-tonnes="383" data-usd="54722242552.02319">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇹</span>
+          <span class="nm"><span class="n1">Portugal</span></span></span></td>
+        <td>383 t</td>
+        <td>$54.7 B</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total — 15 countries shown</td>
+        <td>26,807 t</td>
+        <td>$3.830 T</td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+  <p class="mwbarnote">These 15 are a curated top slice, not every reporting
+  country — the World Gold Council's own estimate for ALL central banks and
+  the IMF together is ≈36,600 tonnes,
+  well above the 26,807 t summed here.</p>
+  <h2 class="mwh2">Global debt &amp; GDP</h2>
+  <p class="mwsub">The top 30 economies by GDP, out of 195 the IMF covers — with each one's general government gross debt as a share of its own GDP. Click any column to sort.</p>  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Economy</th>
+        <th data-sort="gdp" title="GDP, current prices — IMF World Economic Outlook, 2026 estimate">GDP</th>
+        <th data-sort="pct" title="General government gross debt, as a share of that economy's own GDP">Govt. debt (% of GDP)</th>
+        <th data-sort="debt" title="GDP × debt-to-GDP — an implied dollar figure, not separately published by the IMF">Govt. debt ($, implied)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-gdp="32383.92" data-pct="125.8" data-debt="40738.971359999996">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
+          <span class="nm"><span class="n1">United States</span></span></span></td>
+        <td>$32.384 T</td>
+        <td class="mw-r">
+          125.8%</td>
+        <td>$40.739 T</td>
+      </tr>
+      <tr data-gdp="20851.593" data-pct="106.9" data-debt="22290.352917000004">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
+          <span class="nm"><span class="n1">China</span></span></span></td>
+        <td>$20.852 T</td>
+        <td class="mw-r">
+          106.9%</td>
+        <td>$22.290 T</td>
+      </tr>
+      <tr data-gdp="5452.858" data-pct="64.6" data-debt="3522.5462679999996">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
+          <span class="nm"><span class="n1">Germany</span></span></span></td>
+        <td>$5.453 T</td>
+        <td class="">
+          64.6%</td>
+        <td>$3.523 T</td>
+      </tr>
+      <tr data-gdp="4379.253" data-pct="204.4" data-debt="8951.193132">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
+          <span class="nm"><span class="n1">Japan</span></span></span></td>
+        <td>$4.379 T</td>
+        <td class="mw-r">
+          204.4%</td>
+        <td>$8.951 T</td>
+      </tr>
+      <tr data-gdp="4264.794" data-pct="103.6" data-debt="4418.3265839999995">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇬🇧</span>
+          <span class="nm"><span class="n1">United Kingdom</span></span></span></td>
+        <td>$4.265 T</td>
+        <td class="mw-r">
+          103.6%</td>
+        <td>$4.418 T</td>
+      </tr>
+      <tr data-gdp="4153.191" data-pct="83.4" data-debt="3463.7612940000004">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
+          <span class="nm"><span class="n1">India</span></span></span></td>
+        <td>$4.153 T</td>
+        <td class="">
+          83.4%</td>
+        <td>$3.464 T</td>
+      </tr>
+      <tr data-gdp="3596.094" data-pct="118.4" data-debt="4257.775296">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
+          <span class="nm"><span class="n1">France</span></span></span></td>
+        <td>$3.596 T</td>
+        <td class="mw-r">
+          118.4%</td>
+        <td>$4.258 T</td>
+      </tr>
+      <tr data-gdp="2738.164" data-pct="138.4" data-debt="3789.618976">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
+          <span class="nm"><span class="n1">Italy</span></span></span></td>
+        <td>$2.738 T</td>
+        <td class="mw-r">
+          138.4%</td>
+        <td>$3.790 T</td>
+      </tr>
+      <tr data-gdp="2656.452" data-pct="19.1" data-debt="507.3823320000001">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
+          <span class="nm"><span class="n1">Russia</span></span></span></td>
+        <td>$2.656 T</td>
+        <td class="">
+          19.1%</td>
+        <td>$507.4 B</td>
+      </tr>
+      <tr data-gdp="2635.912" data-pct="96.5" data-debt="2543.6550799999995">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇷</span>
+          <span class="nm"><span class="n1">Brazil</span></span></span></td>
+        <td>$2.636 T</td>
+        <td class="">
+          96.5%</td>
+        <td>$2.544 T</td>
+      </tr>
+      <tr data-gdp="2507.34" data-pct="110.7" data-debt="2775.62538">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇦</span>
+          <span class="nm"><span class="n1">Canada</span></span></span></td>
+        <td>$2.507 T</td>
+        <td class="mw-r">
+          110.7%</td>
+        <td>$2.776 T</td>
+      </tr>
+      <tr data-gdp="2123.963" data-pct="50.6" data-debt="1074.7252780000001">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
+          <span class="nm"><span class="n1">Australia</span></span></span></td>
+        <td>$2.124 T</td>
+        <td class="">
+          50.6%</td>
+        <td>$1.075 T</td>
+      </tr>
+      <tr data-gdp="2120.855" data-pct="62.7" data-debt="1329.776085">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇽</span>
+          <span class="nm"><span class="n1">Mexico</span></span></span></td>
+        <td>$2.121 T</td>
+        <td class="">
+          62.7%</td>
+        <td>$1.330 T</td>
+      </tr>
+      <tr data-gdp="2091.222" data-pct="98.2" data-debt="2053.5800040000004">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇸</span>
+          <span class="nm"><span class="n1">Spain</span></span></span></td>
+        <td>$2.091 T</td>
+        <td class="">
+          98.2%</td>
+        <td>$2.054 T</td>
+      </tr>
+      <tr data-gdp="1931.008" data-pct="54.4" data-debt="1050.468352">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
+          <span class="nm"><span class="n1">South Korea</span></span></span></td>
+        <td>$1.931 T</td>
+        <td class="">
+          54.4%</td>
+        <td>$1.050 T</td>
+      </tr>
+      <tr data-gdp="1640.223" data-pct="25.5" data-debt="418.25686499999995">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
+          <span class="nm"><span class="n1">Turkey</span></span></span></td>
+        <td>$1.640 T</td>
+        <td class="">
+          25.5%</td>
+        <td>$418.3 B</td>
+      </tr>
+      <tr data-gdp="1539.872" data-pct="41.5" data-debt="639.04688">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇩</span>
+          <span class="nm"><span class="n1">Indonesia</span></span></span></td>
+        <td>$1.540 T</td>
+        <td class="">
+          41.5%</td>
+        <td>$639.0 B</td>
+      </tr>
+      <tr data-gdp="1449.704" data-pct="44.1" data-debt="639.319464">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
+          <span class="nm"><span class="n1">Netherlands</span></span></span></td>
+        <td>$1.450 T</td>
+        <td class="">
+          44.1%</td>
+        <td>$639.3 B</td>
+      </tr>
+      <tr data-gdp="1388.676" data-pct="32.1" data-debt="445.76499600000005">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇦</span>
+          <span class="nm"><span class="n1">Saudi Arabia</span></span></span></td>
+        <td>$1.389 T</td>
+        <td class="">
+          32.1%</td>
+        <td>$445.8 B</td>
+      </tr>
+      <tr data-gdp="1146.911" data-pct="38.5" data-debt="441.56073499999997">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
+          <span class="nm"><span class="n1">Switzerland</span></span></span></td>
+        <td>$1.147 T</td>
+        <td class="">
+          38.5%</td>
+        <td>$441.6 B</td>
+      </tr>
+      <tr data-gdp="1134.248" data-pct="65.7" data-debt="745.2009360000001">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
+          <span class="nm"><span class="n1">Poland</span></span></span></td>
+        <td>$1.134 T</td>
+        <td class="">
+          65.7%</td>
+        <td>$745.2 B</td>
+      </tr>
+      <tr data-gdp="976.719" data-pct="27.6" data-debt="269.574444">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
+          <span class="nm"><span class="n1">Taiwan</span></span></span></td>
+        <td>$976.7 B</td>
+        <td class="">
+          27.6%</td>
+        <td>$269.6 B</td>
+      </tr>
+      <tr data-gdp="779.381" data-pct="31.6" data-debt="246.28439600000002">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇪</span>
+          <span class="nm"><span class="n1">Ireland</span></span></span></td>
+        <td>$779.4 B</td>
+        <td class="">
+          31.6%</td>
+        <td>$246.3 B</td>
+      </tr>
+      <tr data-gdp="776.73" data-pct="109.2" data-debt="848.18916">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇪</span>
+          <span class="nm"><span class="n1">Belgium</span></span></span></td>
+        <td>$776.7 B</td>
+        <td class="mw-r">
+          109.2%</td>
+        <td>$848.2 B</td>
+      </tr>
+      <tr data-gdp="760.481" data-pct="36.7" data-debt="279.09652700000004">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇪</span>
+          <span class="nm"><span class="n1">Sweden</span></span></span></td>
+        <td>$760.5 B</td>
+        <td class="">
+          36.7%</td>
+        <td>$279.1 B</td>
+      </tr>
+      <tr data-gdp="719.848" data-pct="69.8" data-debt="502.45390399999997">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇱</span>
+          <span class="nm"><span class="n1">Israel</span></span></span></td>
+        <td>$719.8 B</td>
+        <td class="">
+          69.8%</td>
+        <td>$502.5 B</td>
+      </tr>
+      <tr data-gdp="688.378" data-pct="70.4" data-debt="484.61811200000005">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇷</span>
+          <span class="nm"><span class="n1">Argentina</span></span></span></td>
+        <td>$688.4 B</td>
+        <td class="">
+          70.4%</td>
+        <td>$484.6 B</td>
+      </tr>
+      <tr data-gdp="659.572" data-pct="171.9" data-debt="1133.804268">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇬</span>
+          <span class="nm"><span class="n1">Singapore</span></span></span></td>
+        <td>$659.6 B</td>
+        <td class="mw-r">
+          171.9%</td>
+        <td>$1.134 T</td>
+      </tr>
+      <tr data-gdp="623.719" data-pct="82.1" data-debt="512.073299">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇹</span>
+          <span class="nm"><span class="n1">Austria</span></span></span></td>
+        <td>$623.7 B</td>
+        <td class="">
+          82.1%</td>
+        <td>$512.1 B</td>
+      </tr>
+      <tr data-gdp="621.546" data-pct="31.4" data-debt="195.16544399999998">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇪</span>
+          <span class="nm"><span class="n1">United Arab Emirates</span></span></span></td>
+        <td>$621.5 B</td>
+        <td class="">
+          31.4%</td>
+        <td>$195.2 B</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total — top 30 of 195 economies IMF covers</td>
+        <td>$108.793 T</td>
+        <td>101.6% (weighted avg.)</td>
+        <td>$110.568 T</td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+  <p class="mwbarnote">World totals below (GDP $126.295 T,
+  debt-to-GDP 95.1%)
+  are computed across the FULL 195-economy IMF set, not
+  just the top 30 shown in this table.</p>
+  <h2 class="mwh2">The scarcity lineup</h2>
+  <p class="mwsub">Three figures, side by side, at the same scale — deliberately NOT summed
+  into one number, because the whole point is the CONTRAST between them. Fiat money supply can
+  be and regularly is expanded by policy choice. Gold's supply grows too, just slowly — new
+  mining adds roughly 1.5% to the above-ground stock in a typical year. Bitcoin's supply is
+  fixed by its own consensus rule at 21 million coins, full stop, growing toward that cap on a
+  published, unchangeable schedule and never past it. (World GDP appears elsewhere on this
+  page, not here — it measures a YEAR of economic output, not a stock of money or value, so
+  mixing it into this particular comparison would answer a different question than the one
+  this chart is asking.)</p>
+  <div class="mwscarcity">
+    <div class="mwbarrow">
+      <div class="mwbl">Broad money — U.S. + Euro area (M2 + M3)</div>
+      <div class="mwbartrack"><div class="mwbarfill" style="width:100.00%;background:#5eb3d6"></div></div>
+      <div class="mwbv">$43.702 T</div>
+      <div class="mwbarnote">The two largest, most transparently published economies — a genuine floor under the true global figure, not the whole world&#x27;s money supply.</div>
+    </div>
+    <div class="mwbarrow">
+      <div class="mwbl">Gold — all above-ground supply</div>
+      <div class="mwbartrack"><div class="mwbarfill" style="width:70.70%;background:#c9b45e"></div></div>
+      <div class="mwbv">$30.899 T</div>
+      <div class="mwbarnote">Every ounce ever mined, at today&#x27;s price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it.</div>
+    </div>
+    <div class="mwbarrow">
+      <div class="mwbl">Bitcoin — total market cap</div>
+      <div class="mwbartrack"><div class="mwbarfill" style="width:3.59%;background:#f7931a"></div></div>
+      <div class="mwbv">$1.571 T</div>
+      <div class="mwbarnote">21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against.</div>
+    </div>
+  </div>
+  <p class="mwcaveat">⚠️ The "Broad money" bar is a sum across different countries' own
+  currencies, converted to dollars at TODAY's exchange rate. That means it moves for two
+  completely different reasons that look identical on this chart: real growth in the money
+  supply, AND swings in the dollar's own exchange rate against the euro. A stronger dollar
+  alone would shrink this bar even if not one additional euro or dollar were ever printed —
+  don't read a change here as evidence of printing without checking the FX rate first.</p>
+  <div class="panel">
+    <h2>How this board is made, and what it deliberately is not</h2>
+    <p><b>Exchange rates</b> are the European Central Bank's own daily reference rates,
+    reached through a free keyless proxy (Frankfurter) rather than a third-party estimate —
+    the same rates the IMF itself references when it revalues the Special Drawing Right every
+    five years (see <a href="untangling-bis-imf-world-bank.html">the Ledger's own entry on
+    what the IMF, the BIS and the World Bank each actually do</a>).</p>
+    <p><b>Money supply</b> is curated to two economies — the United States (Federal Reserve
+    H.6 data) and the Euro area (European Central Bank) — not all ~190 IMF members. That is a
+    genuine limitation, not laziness: the IMF's own comparable cross-country money-supply
+    series turned out, on inspection, to cover only a curated set of IMF-program African
+    economies, not the world's major currencies, and no other keyless source publishes
+    current-month M0/M1/M2-class levels for every country the way these two do for
+    themselves. The US does not publish a distinct M3, and the Euro area does not publish a
+    distinct M0 or a standalone M2 headline the way the US does — those cells read "—" rather
+    than a guess.</p>
+    <p><b>Reserves (excl. gold)</b> are curated to the 9
+    largest holders that a real, live, keyless mirror of IMF's own International Financial
+    Statistics reserve series actually covers — several economies that would belong on this
+    list (the Euro area as a bloc, Switzerland, Hong Kong, Singapore) either have no matching
+    mirror or one that stopped updating years ago, and are left off rather than shown stale.</p>
+    <p><b>Gold reserves</b> are a curated, dated list of the 15 largest
+    official holders (World Gold Council, compiled from IMF reporting) — central banks report
+    this quarterly at best, so this is refreshed by hand periodically rather than pulled live
+    every build. It is priced at today's live gold quote (shared with <a href="board.html">the
+    Asset Board</a>).</p>
+    <p><b>Global debt &amp; GDP</b> is the one section pulled directly from an IMF system that
+    actually serves real data — the DataMapper API behind imf.org's own public data
+    visualizations — across essentially every economy the IMF's World Economic Outlook covers.
+    The dollar debt figures are IMPLIED (GDP × the IMF's own published debt-to-GDP ratio), not
+    a separately published dollar series.</p>
+    <p>Nothing here is investment advice, and none of the institutions named on this page have
+    endorsed it or are affiliated with it.</p>
+  </div>
+<div class="respond"><p><strong>Know a holder we're missing, or think a figure here is wrong?</strong> This board only gets closer to exhaustive with help — include a source if you have one, and it gets checked into the next update. <a href="ask.html?re=Money%20Worldwide%20board">Tell Mr. Librarian →</a></p></div>
+  <p class="backlink"><a href="index.html">← Back to the front page</a></p>
+
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice<p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>
+</div>
+<script>
+
+(function(){
+  function wire(table){
+    var tbody = table.querySelector('tbody');
+    if(!tbody) return;
+    var ths = table.querySelectorAll('th[data-sort]');
+    var curKey = null, asc = false;
+    function apply(key){
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+      rows.sort(function(a, b){
+        var av = parseFloat(a.dataset[key]);
+        var bv = parseFloat(b.dataset[key]);
+        if(isNaN(av)) av = asc ? Infinity : -Infinity;
+        if(isNaN(bv)) bv = asc ? Infinity : -Infinity;
+        return asc ? (av - bv) : (bv - av);
+      });
+      rows.forEach(function(r, i){
+        tbody.appendChild(r);
+        var rk = r.querySelector('.rk');
+        if(rk) rk.textContent = i + 1;
+      });
+      ths.forEach(function(h){
+        h.textContent = h.textContent.replace(/[\u25B2\u25BC]/g, '').trim();
+      });
+      var active = table.querySelector('th[data-sort="' + key + '"]');
+      if(active) active.textContent += asc ? ' \u25B2' : ' \u25BC';
+    }
+    ths.forEach(function(th){
+      th.addEventListener('click', function(){
+        var key = th.dataset.sort;
+        asc = (curKey === key) ? !asc : false;
+        curKey = key;
+        apply(key);
+      });
+    });
+  }
+  document.querySelectorAll('table.mw-sort').forEach(wire);
+})();
+
+</script>
+</body>
+</html>

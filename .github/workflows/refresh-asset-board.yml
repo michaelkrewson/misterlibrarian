@@ -5,8 +5,9 @@
 #     tools/fetch_treasuries.py     stdlib + a price -> source/finance/treasuries.json
 #     tools/fetch_cebe.py           yfinance + a price -> source/finance/cebe.json
 #     tools/fetch_crypto_heatmap.py stdlib + CoinGecko  -> source/finance/crypto_heatmap.json
+#     tools/fetch_money_worldwide.py ECB/FRED/IMF DataMapper -> source/finance/money_worldwide.json
 #     tools/finance_logos.py        fetches any logo we don't already have cached
-#     build_finance.py              renders all five boards from that JSON (stdlib only)
+#     build_finance.py              renders all six boards from that JSON (stdlib only)
 #     commit + push to main         GitHub Pages redeploys (source: main /)
 #
 # HOURLY IS THE FLOOR HERE, NOT THE CEILING
@@ -15,6 +16,18 @@
 # for someone with JavaScript off and how good the fallback is when that API is
 # down. That is why going sub-hourly was considered and rejected: it would buy
 # almost nothing a visitor could see, at 144 commits and 144 Pages deploys a day.
+#
+# MONEY WORLDWIDE RUNS ON THIS SAME HOURLY TRIGGER BUT NOT ON THIS SAME CADENCE
+# Exchange rates move daily; money supply, reserves and government debt/GDP move
+# monthly to quarterly in the real world — running fetch_money_worldwide.py on
+# every hourly tick here would just be 24x the git commits and Pages deploys for
+# data that provably has not changed. Rather than a second cron entry (which
+# would need its own concurrency group to avoid racing this one on the same
+# files), the SCRIPT self-throttles: it checks its own last "generated"
+# timestamp and does nothing at all (exit 0, no output changed) unless at least
+# 6 hours have passed. So it's safe to call on every run of this workflow —
+# most calls are a no-op, and the effective cadence is "up to 4x/day," which is
+# already far tighter than this data actually needs.
 #
 # WHY THIS NEEDS NO SECRET
 # Every input is a public market quote. There is no account, no key, and nothing
@@ -123,6 +136,14 @@ jobs:
       # docstring for why that's a background crawl rather than one big pull.
       - name: Compute the Crypto Heat Map
         run: python3 tools/fetch_crypto_heatmap.py
+
+      # Also its own step, same contract as the others — a source going down
+      # (ECB, FRED, or IMF DataMapper) costs only this board its refresh.
+      # Needs no pip install (stdlib urllib only). Self-throttled to ~every 6h
+      # regardless of how often this workflow itself runs — see the module
+      # docstring's own note above and the script's own docstring for why.
+      - name: Compute the Money Worldwide board
+        run: python3 tools/fetch_money_worldwide.py
 
       - name: Cache any missing logos
         run: python3 tools/finance_logos.py
