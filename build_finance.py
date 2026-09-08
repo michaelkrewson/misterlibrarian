@@ -1637,21 +1637,25 @@ def build_board(board):
 # The top 100 coins by market cap, grouped into three sections and colour-graded
 # like a heat map. Rendered from source/finance/crypto_heatmap.json
 # (tools/fetch_crypto_heatmap.py). See that script's own docstring for the two
-# things worth knowing before touching this: (1) categorisation is two curated,
-# positive lists (Bitcoin & Derivatives, Infrastructure & Platform) with
-# everything else falling to "Others" by default, and (2) 3M/6M/YTD are filled
-# in gradually by a paced background crawl (CoinGecko has no bulk endpoint for
-# those periods at any price, and the free anonymous tier throttles hard) — a
+# things worth knowing before touching this: (1) categorisation is one
+# deliberately-singleton category (Bitcoin — the coin itself, and nothing
+# else, not even its own chain forks or wrapped/custodied representations)
+# plus one curated positive list (Infrastructure & Platform), with
+# everything else — including Bitcoin's forks/wraps/codebase-cousins —
+# falling to "Others" by default, and (2) 3M/6M/YTD are filled in gradually
+# by a paced background crawl (CoinGecko has no bulk endpoint for those
+# periods at any price, and the free anonymous tier throttles hard) — a
 # coin not yet reached by the crawl reads "—" for those three buttons rather
 # than a guess or a mislabeled stand-in.
 
-CRYPTO_CATEGORY_ORDER = ("Bitcoin & Derivatives", "Infrastructure & Platform", "Others")
+CRYPTO_CATEGORY_ORDER = ("Bitcoin", "Infrastructure & Platform", "Others")
 CRYPTO_CATEGORY_BLURB = {
-    "Bitcoin & Derivatives": "Bitcoin itself, coins that literally forked its "
-        "chain (sharing its transaction history), and tokenized or wrapped "
-        "representations of BTC. Coins that only reused Bitcoin's original "
-        "code to launch their own separate chain (Litecoin, Zcash, Dash, ...) "
-        "are elsewhere — they don't share Bitcoin's ledger.",
+    "Bitcoin": "Bitcoin itself — nothing else. Not its own chain forks "
+        "(Bitcoin Cash, Bitcoin SV, Bitcoin Gold), not wrapped or custodied "
+        "representations of it (WBTC, cbBTC, ...), and not the independent "
+        "chains that only reused its original code (Litecoin, Zcash, Dash, "
+        "...). All of those are real coins with their own market caps, and "
+        "all of them are grouped under Others instead.",
     "Infrastructure & Platform": "Base-layer blockchains, scaling layers, oracles "
         "and interoperability protocols — the networks everything else is built on.",
     "Others": "Stablecoins, tokenized funds, DeFi applications, exchange tokens, "
@@ -1914,23 +1918,28 @@ def _crypto_tile(r, rect, dominance=None):
 # item plus a much smaller remainder ends up EXACTLY area-proportional — but
 # geometrically that forces the dominant item's "row" to span the cell's
 # full height (or width), and the remainder inherits whatever sliver-thin
-# strip is left over. Sizes don't help: it's the SHAPE. That's what turns
-# ZEC/BCH/LTC/DASH (roughly 2% of "Bitcoin & Derivatives", Bitcoin alone
-# being the other ~98%) into a full-height, ~11px-wide column no matter how
-# they're stacked inside it — a human can't judge "is that box a fifth the
-# size of that one" from a hairline (Michael, 2026-09-08: "something about
-# those vertical lines skews the ability to proportionally see the box
-# size"). _squarify_floor is the same algorithm with one deliberate,
-# disclosed compromise: once a single item exceeds MIN_LEFTOVER_FRAC's
-# complement of a cell's share, its row is capped so AT LEAST
-# MIN_LEFTOVER_FRAC of the cell's own shorter side is reserved for
+# strip is left over. Sizes don't help: it's the SHAPE. That's what turned
+# ZEC/BCH/LTC/DASH (roughly 2% of what "Bitcoin" used to include, Bitcoin
+# itself being the other ~98%) into a full-height, ~11px-wide column no
+# matter how they were stacked inside it — a human can't judge "is that box
+# a fifth the size of that one" from a hairline (Michael, 2026-09-08:
+# "something about those vertical lines skews the ability to proportionally
+# see the box size"). _squarify_floor is the same algorithm with one
+# deliberate, disclosed compromise: once a single item exceeds
+# MIN_LEFTOVER_FRAC's complement of a cell's share, its row is capped so AT
+# LEAST MIN_LEFTOVER_FRAC of the cell's own shorter side is reserved for
 # everything else — trading a small, bounded slice of the dominant item's
 # exact area (its own numbers are printed on the tile regardless, so nothing
 # about it is actually hidden or misstated) for giving the remainder real
 # width AND height to be tiled into, which is what actually reads as boxes
-# rather than lines. Below the threshold (the ordinary case — see
-# Infrastructure & Platform, Others, and the category-level split below,
-# none of which are ever this skewed) it's a byte-for-byte no-op.
+# rather than lines. ⭐ Narrowing BITCOIN_DERIVATIVES down to Bitcoin ALONE
+# (fetch_crypto_heatmap.py, same day) made this a no-op for Bitcoin's own
+# cell specifically — a single-item category has nothing left to be
+# dominant OVER — but the function stays: it's generic infrastructure for
+# whichever category next develops this shape, not a Bitcoin-specific
+# patch. Below the threshold (the ordinary case today — Infrastructure &
+# Platform, Others, and Bitcoin's own now-single-item cell) it's a
+# byte-for-byte no-op.
 MIN_LEFTOVER_FRAC = 0.12
 DOMINANT_SHARE_THRESHOLD = 0.85
 
@@ -2286,18 +2295,19 @@ def build_crypto_heatmap(board):
     coin's market cap, its COLOUR is the change for whichever period is
     selected, and the three black header bars are the same three categories as
     the tables below — sized by each category's own total market cap, which is
-    why Bitcoin & Derivatives (really just Bitcoin itself, at this kind of
-    market cap) tends to dominate the page. A coin small enough that its box
-    can't hold readable text still gets a colour and a hover tooltip; nothing
-    is dropped from the map. <b>One deliberate exception to strict area
-    accuracy:</b> when one coin so overwhelms the rest of its own category
-    (Bitcoin next to its own forks is the case on this board) that a purely
-    proportional split would squeeze the others into an unreadable hairline,
-    the dominant coin's box is trimmed by a small, bounded amount so the
-    others get real width and height to be tiled into — genuine boxes,
-    not lines. That coin's own numbers are printed on its tile regardless, so
-    nothing about its true size is hidden or misstated — only the drawn area
-    is nudged, and only when the alternative is a box nobody could read.</p>
+    why Bitcoin (literally just the one coin, at this kind of market cap)
+    tends to dominate the page. A coin small enough that its box can't hold
+    readable text still gets a colour and a hover tooltip; nothing is dropped
+    from the map. <b>One safeguard that exists but isn't active on today's
+    board:</b> if a single coin ever came to overwhelm the rest of its own
+    category so completely that a purely proportional split would squeeze
+    everything else into an unreadable hairline, that coin's box would be
+    trimmed by a small, bounded amount so the rest get real width and height
+    to be tiled into — genuine boxes, not lines — with that coin's own
+    numbers still printed on its tile regardless, so nothing about its true
+    size would be hidden or misstated. No category is skewed enough to
+    trigger it right now (Bitcoin's own category is just Bitcoin — nothing
+    to be dominant OVER).</p>
     <p><b>What Bitcoin's own market cap here actually is — and isn't:</b>
     {("Bitcoin's %s figure is exactly one thing: %s BTC currently in "
       "existence, times its own price. Nothing else." % (
@@ -2317,13 +2327,18 @@ def build_crypto_heatmap(board):
     price, nothing wrapped, staked, or held-in-trust on top of it — which is
     what makes comparing Bitcoin against the other 99 a fair comparison: each
     one is that network's own native asset, not a fund or a company built on
-    top of it. The other four coins in Bitcoin & Derivatives (Zcash, Bitcoin
-    Cash, Litecoin, Dash) are independent blockchains with their own separate
-    supply, not tokens backed by locked-up BTC, so there's no double-counting
-    inside this category today. If a wrapped-BTC token (like Wrapped Bitcoin)
-    ever enters the top 100, its market cap WOULD represent coins already
-    counted inside Bitcoin's own number too — that overlap will get called out
-    here the day it actually applies, rather than in advance of it mattering.</p>
+    top of it. <b>Bitcoin's own category holds Bitcoin alone</b> — not its
+    chain forks (Bitcoin Cash, Bitcoin SV, Bitcoin Gold), not wrapped or
+    custodied representations of it (Wrapped Bitcoin and the like), and not
+    the independent chains that only reused its original code (Litecoin,
+    Zcash, Dash) — all of those, when they chart in the top 100, are grouped
+    under Others instead, on their own separate supply and their own market
+    cap. The one double-counting risk worth naming: a wrapped-BTC token's
+    market cap represents coins already counted inside Bitcoin's own number,
+    so summing "Bitcoin" and "Others" together would count that BTC twice —
+    each category's own total stays correct on its own, only a combined
+    figure across both would need to net it back out, and none of this
+    board's totals do that today.</p>
     <p><b>3M, 6M and YTD are different</b> from every other column on this
     board: CoinGecko has no bulk field for those periods at any price, so each
     one is computed from that coin's own daily price history, fetched a
@@ -2332,12 +2347,14 @@ def build_crypto_heatmap(board):
     3M/6M/YTD is real once it appears, never an approximation of a different
     window standing in for it.</p>
     <p><b>Categories</b> are a deliberately short, curated list rather than an
-    exhaustive taxonomy: Bitcoin & Derivatives is Bitcoin itself, coins forked
-    from its codebase, and tokenized BTC; Infrastructure & Platform is base
-    chains, scaling layers, oracles and interoperability protocols; Others is
-    everything else, including every stablecoin and tokenized fund now sitting
-    in the top 100. A brand-new coin entering the top 100 renders under
-    Others until it's worth curating into one of the first two.</p>
+    exhaustive taxonomy: Bitcoin is the coin itself and only the coin itself;
+    Infrastructure & Platform is base chains, scaling layers, oracles and
+    interoperability protocols; Others is everything else, including every
+    stablecoin and tokenized fund now sitting in the top 100, plus Bitcoin's
+    own chain forks, wrapped/custodied representations, and the independent
+    chains that merely reused its original code. A brand-new coin entering
+    the top 100 renders under Others until it's worth curating into one of
+    the first two.</p>
     <p>This is a snapshot of the market, not a recommendation. Nothing here is
     investment advice, and a coin's presence in the top 100 is not an
     endorsement of it.</p>

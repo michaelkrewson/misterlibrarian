@@ -45,17 +45,19 @@ publish a blank or broken page. The slow-crawl half failing costs nothing
 but this run's small slice of 3M/6M/YTD progress; the fast five columns and
 the board itself still update normally.
 
-CATEGORIES — two curated, positive lists; everything else is "Others"
-The page groups every coin into one of three sections: Bitcoin & Derivatives
-(Bitcoin itself, coins forked from its codebase, and tokenized/wrapped BTC),
+CATEGORIES — one deliberately-empty singleton, one curated positive list;
+everything else is "Others"
+The page groups every coin into one of three sections: Bitcoin (Bitcoin
+itself and NOTHING else — see BITCOIN_DERIVATIVES below for why even its
+own chain forks and wrapped/custodied representations moved out),
 Infrastructure & Platform (base-layer chains, scaling layers, oracles,
 interoperability — anything that IS a network rather than something built on
 one), and Others (stablecoins, tokenized funds, DeFi apps, exchange tokens,
-meme coins — everything else). Deliberately NOT an exhaustive taxonomy: the
-two positive lists cover what a reader would actually look for grouped
-separately, and the "Others" fallback means a brand-new coin entering the
-top 100 tomorrow renders correctly (in Others) without this script needing
-an edit first.
+meme coins, Bitcoin's own forks/wraps/codebase-cousins — everything else).
+Deliberately NOT an exhaustive taxonomy: the positive list covers what a
+reader would actually look for grouped separately, and the "Others"
+fallback means a brand-new coin entering the top 100 tomorrow renders
+correctly (in Others) without this script needing an edit first.
 
 NOTHING HERE IS PERSONAL. Every input is a public market quote — no account,
 no key, nothing about anyone's holdings — which is what makes it safe to run
@@ -88,29 +90,28 @@ MAX_SLOW_ATTEMPTS = 12    # a safety ceiling; the first 429 stops the run well b
 SLOW_PACE_S = 3.5         # gap between per-coin historical calls, to be a polite anonymous caller
 SLOW_REFRESH_DAYS = 5     # how long a coin's 3M/6M/YTD is trusted before it's due again
 
-# ── categories — two positive, curated lists; everything unmapped is "Others" ──
+# ── categories — one deliberately-empty singleton, one curated list;
+# everything unmapped is "Others" ──
 #
-# BITCOIN_DERIVATIVES deliberately means "shares Bitcoin's own ledger, or IS
-# Bitcoin" — NOT "was inspired by Bitcoin's open-source code." Those are very
-# different claims: Bitcoin Cash/SV/Gold are literal CHAIN forks (they share
-# every pre-fork Bitcoin transaction, down to the same genesis block) and
-# WBTC/cbBTC/tBTC/renBTC/Liquid BTC are the same asset, custodied and
-# reissued on another chain — both groups are Bitcoin in a real sense.
-# Litecoin, Zcash and Dash are NOT: each copied Bitcoin's original codebase
-# but then launched its OWN independent genesis block/chain in 2011-2016,
-# sharing no transaction history with Bitcoin at all — closer kin to any
-# other independent L1 than to Bitcoin itself. (Michael, 2026-09-08, after
-# the earlier version lumped Dash in here: "I also noticed dash is not
-# included in the Bitcoin area" — right instinct, and it turns out Litecoin
-# and Zcash were misclassified by the exact same logic.) Narrowing this
-# also happens to be the direct, standard fix for the treemap's own
-# degenerate-sliver problem: Bitcoin no longer has to compete for space
-# against $20B+ combined codebase-cousins that were never really its family.
-BITCOIN_DERIVATIVES = {
-    "bitcoin", "bitcoin-cash", "bitcoin-sv", "bitcoin-gold",
-    "wrapped-bitcoin", "coinbase-wrapped-btc", "tbtc", "renbtc",
-    "blockstream-liquid-bitcoin",
-}
+# BITCOIN_DERIVATIVES holds exactly ONE id: "bitcoin". Two narrowings landed
+# the same week (2026-09-08) and the direction kept pointing the same way,
+# so this stopped halfway short of the honest endpoint: the FIRST pass split
+# out Litecoin/Zcash/Dash (codebase-cousins with their own independent
+# genesis block — never shared Bitcoin's ledger). That still left Bitcoin
+# Cash/SV/Gold (literal chain forks, sharing every pre-fork transaction) and
+# WBTC/cbBTC/tBTC/renBTC/Liquid BTC (the same asset, custodied and reissued
+# elsewhere) in here on the reasoning that both groups are "Bitcoin in a
+# real sense." Michael's direct follow-up rejected that reasoning outright:
+# on THIS board, "Bitcoin" means the one thing everyone actually means by
+# it — the coin itself — and every other one of those, real fork or real
+# wrap, goes to Others with everything else. A name kept as a SET rather
+# than inlined as a literal string so the intent ("this category is
+# Bitcoin, and only Bitcoin, on purpose") stays visible at the call site
+# rather than reading as an oversight. As a side effect this is also what
+# actually fixed the treemap's degenerate-sliver problem two commits
+# running: Bitcoin no longer shares a cell with ANYTHING, so there is
+# nothing left to squeeze into a hairline.
+BITCOIN_DERIVATIVES = {"bitcoin"}
 
 INFRASTRUCTURE_PLATFORM = {
     "ethereum", "binancecoin", "ripple", "solana", "tron", "cardano",
@@ -125,7 +126,7 @@ INFRASTRUCTURE_PLATFORM = {
     "rootstock-rsk", "stacks",
 }
 
-CATEGORY_BTC = "Bitcoin & Derivatives"
+CATEGORY_BTC = "Bitcoin"
 CATEGORY_INFRA = "Infrastructure & Platform"
 CATEGORY_OTHER = "Others"
 
