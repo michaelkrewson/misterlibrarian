@@ -543,6 +543,7 @@
   var loadMoreBtn = document.getElementById('loadMoreBtn');
   var viewCount = document.getElementById('viewCount');
   var originalCards = Array.prototype.slice.call(cardsWrap.children);
+  var originalRows = archiveList ? Array.prototype.slice.call(archiveList.children) : [];
 
   var activeTag = '';
   var query = '';
@@ -559,9 +560,9 @@
     return tagOk && textOk;
   }
 
-  // The list rows never reorder, but the cards do (see the stars-sort below,
-  // a DOM shuffle via appendChild) — so the card pool is read fresh off the
-  // live DOM order each render, never off a snapshot taken at page load.
+  // Both pools can reorder (see the stars-sort below, a DOM shuffle via
+  // appendChild) — so each is read fresh off its live DOM order every
+  // render, never off a snapshot taken at page load.
   function currentPool(){
     return activeView === 'list'
       ? Array.prototype.slice.call(archiveList.children)
@@ -592,7 +593,6 @@
     if (resetReveal !== false) revealCount = firstFor(view);
     cardsWrap.hidden = view !== 'cards';
     if (archiveList) archiveList.hidden = view !== 'list';
-    if (sortbar) sortbar.hidden = view !== 'cards';
     if (viewbar) {
       viewbar.querySelectorAll('.sortbtn').forEach(function(b){
         b.classList.toggle('on', b.dataset.view === view);
@@ -697,22 +697,31 @@
     }
   }
 
-  // Re-order the cards by rating. Pure DOM shuffle — no second page to keep in
-  // sync, and unrated entries (a notes post is not a review) always sink to
-  // the bottom. Only ever touches the cards pool — the list view stays in
-  // date order, same as the old archive section always did.
+  // Re-order by rating. Pure DOM shuffle — no second page to keep in sync,
+  // and unrated entries (a notes post is not a review) always sink to the
+  // bottom. The sort bar is visible in BOTH views and applies to both: cards
+  // and list rows are two independent DOM trees for the same posts, so each
+  // gets its own re-order from its own original (date-order) snapshot —
+  // otherwise switching view while "Highest rated" is active would silently
+  // drop back to date order in whichever pool never got touched.
+  function sortPool(wrap, original, byStars){
+    var list = original.slice();
+    if (byStars) {
+      list.sort(function(a, c){
+        return (parseFloat(c.dataset.stars) || -1) - (parseFloat(a.dataset.stars) || -1);
+      });
+    }
+    list.forEach(function(el){ wrap.appendChild(el); });
+  }
+
   if (sortbar) {
     sortbar.addEventListener('click', function(e){
       var b = e.target.closest('.sortbtn');
       if (!b) return;
       sortbar.querySelectorAll('.sortbtn').forEach(function(x){ x.classList.toggle('on', x === b); });
-      var list = originalCards.slice();
-      if (b.dataset.sort === 'stars') {
-        list.sort(function(a, c){
-          return (parseFloat(c.dataset.stars) || -1) - (parseFloat(a.dataset.stars) || -1);
-        });
-      }
-      list.forEach(function(el){ cardsWrap.appendChild(el); });
+      var byStars = b.dataset.sort === 'stars';
+      sortPool(cardsWrap, originalCards, byStars);
+      if (archiveList) sortPool(archiveList, originalRows, byStars);
       revealCount = firstFor(activeView);
       render();
     });
