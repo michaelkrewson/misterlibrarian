@@ -320,6 +320,48 @@ img { max-width: 100%; height: auto; display: block; }
   .cards .card:first-child .cardbody h2 { font-size: 27px; }
 }
 
+/* --------------------------------------------------- listing view + pages -- */
+/* The cards/list toggle + "show more" pagination on the index page. A whole
+   section (#cards, #archiveList, #sortbar, #loadMoreWrap) is shown/hidden via
+   the `hidden` attribute from JS — [hidden] on its own loses to a later class
+   rule of equal specificity (.cards{display:grid} would win), so each toggled
+   container gets an explicit override here rather than relying on the UA
+   default. Individual cards/rows still use inline style.display for the
+   filter, which already wins on specificity without any of this. */
+#cards[hidden], #archiveList[hidden], #sortbar[hidden], #loadMoreWrap[hidden] {
+  display: none !important;
+}
+
+.listcontrols {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 18px;
+  margin: 0 0 26px;
+}
+.listcontrols .sortbar { margin: 0; }
+
+#archiveList { margin-top: 4px; }
+
+.loadmorewrap { text-align: center; margin: 10px 0 0; }
+.loadmore {
+  font: 15px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--terra);
+  color: #0a0f1a;
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 28px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.loadmore:hover { background: var(--terra-dk); }
+.viewcount {
+  margin: 10px 0 0;
+  font: 12.5px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: var(--muted);
+}
+
 /* -------------------------------------------------------------- post metas -- */
 
 .postmeta {

@@ -218,14 +218,40 @@ a{color:#f7931a}
   .tilegrid{grid-template-columns:1fr 1fr 1fr}
 }
 
-/* ── the archive list — whatever rotated out of the tile grid ────────────── */
-.panel ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
   padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
 .archive li:last-child{border-bottom:0}
 .archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
 .archive a{color:#e8eef7;text-decoration:none}
 .archive a:hover{text-decoration:underline}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
 
 @media (max-width:720px){
   .etitle{font-size:26px}

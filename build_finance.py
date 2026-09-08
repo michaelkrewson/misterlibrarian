@@ -1128,18 +1128,85 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
     # flip the tie-break the wrong way round.
     pool.sort(key=lambda it: (-it["date"].toordinal(), it["board"]))
 
-    tiles = "\n".join(_tile(it) for it in pool[:FRONT_TILE_LIMIT])
-    overflow = pool[FRONT_TILE_LIMIT:]
-    archive_html = ""
-    if overflow:
-        rows = "\n".join(_archive_row(it) for it in overflow)
-        archive_html = """
-  <section class="panel" id="archive">
-    <h2>Archive</h2>
-    <ul class="archive">
-%s
-    </ul>
-  </section>""" % rows
+    # Every item renders BOTH ways — as a tile and as a compact row — same as
+    # the travel blog's cards/list toggle. Cards vs. list is a VIEW of the
+    # same pool, not a second section: the old Archive panel duplicated
+    # whatever rotated past FRONT_TILE_LIMIT with no cap of its own (the
+    # "can become endless" problem), and the tile grid itself never went past
+    # FRONT_TILE_LIMIT even when a reader wanted to see more. Both view's
+    # reveal is paginated client-side; see the script below.
+    tiles = "\n".join(_tile(it) for it in pool)
+    rows = "\n".join(_archive_row(it) for it in pool)
+    archive_html = '\n    <ul class="archive" id="archiveList" hidden>\n%s\n    </ul>' % rows
+
+    viewbar = ('<div class="viewbar" id="viewbar">View: '
+               '<button class="viewbtn on" data-view="cards" type="button">\U0001F5C2 Cards</button>'
+               '<button class="viewbtn" data-view="list" type="button">\U0001F4CB List</button></div>')
+    loadmore = ('<div class="loadmorewrap" id="loadMoreWrap" hidden>'
+                '<button class="loadmore" id="loadMoreBtn" type="button">Show more</button>'
+                '<div class="viewcount" id="viewCount"></div></div>')
+    pagination_js = ("""
+(function(){
+  var TILE_FIRST = %d, TILE_STEP = 12, LIST_FIRST = 20, LIST_STEP = 40;
+  var tilesWrap = document.getElementById('tiles');
+  if (!tilesWrap) return;
+  var archiveList = document.getElementById('archiveList');
+  var viewbar = document.getElementById('viewbar');
+  var loadMoreWrap = document.getElementById('loadMoreWrap');
+  var loadMoreBtn = document.getElementById('loadMoreBtn');
+  var viewCount = document.getElementById('viewCount');
+  var activeView = 'cards';
+  var revealCount = TILE_FIRST;
+
+  function firstFor(v){ return v === 'list' ? LIST_FIRST : TILE_FIRST; }
+  function stepFor(v){ return v === 'list' ? LIST_STEP : TILE_STEP; }
+  function pool(){
+    return activeView === 'list'
+      ? Array.prototype.slice.call(archiveList.children)
+      : Array.prototype.slice.call(tilesWrap.children);
+  }
+
+  function render(){
+    var items = pool();
+    var total = items.length;
+    var showN = Math.min(revealCount, total);
+    items.forEach(function(el, i){ el.style.display = i < showN ? '' : 'none'; });
+    var remaining = total - showN;
+    if (loadMoreWrap) loadMoreWrap.hidden = remaining <= 0;
+    if (loadMoreBtn) loadMoreBtn.textContent = 'Show ' + Math.min(stepFor(activeView), remaining) + ' more';
+    if (viewCount) viewCount.textContent = total ? ('Showing ' + showN + ' of ' + total) : '';
+  }
+
+  function setView(v){
+    activeView = v;
+    revealCount = firstFor(v);
+    tilesWrap.hidden = v !== 'cards';
+    if (archiveList) archiveList.hidden = v !== 'list';
+    if (viewbar) {
+      viewbar.querySelectorAll('.viewbtn').forEach(function(b){
+        b.classList.toggle('on', b.dataset.view === v);
+      });
+    }
+    render();
+  }
+
+  if (viewbar) {
+    viewbar.addEventListener('click', function(e){
+      var b = e.target.closest('[data-view]');
+      if (!b) return;
+      setView(b.dataset.view);
+    });
+  }
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function(){
+      revealCount += stepFor(activeView);
+      render();
+    });
+  }
+
+  setView('cards');
+})();
+""" % FRONT_TILE_LIMIT)
 
     # Shown at the bottom of the page, not up under the tagline — page
     # metadata belongs near the footer, not competing with the intro for a
@@ -1151,11 +1218,14 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=BLURB, url=BASE_URL, active="home",
         body="""%s%s  <section class="writing">
-    <div class="tilegrid">
+    %s
+    <div class="tilegrid" id="tiles">
 %s
-    </div>
-  </section>%s%s
-""" % (_front_hero(), intro, tiles, archive_html, index_hits_html))
+    </div>%s
+    %s
+  </section>%s
+""" % (_front_hero(), intro, viewbar, tiles, archive_html, loadmore, index_hits_html),
+        extra_js=pagination_js)
 
 
 def build_tag_page(tag, entries, indexable):
@@ -1405,14 +1475,40 @@ a{color:__ACCENT__}
   .tilegrid{grid-template-columns:1fr 1fr 1fr}
 }
 
-/* ── the archive list — whatever rotated out of the tile grid ────────────── */
-.panel ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
   padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
 .archive li:last-child{border-bottom:0}
 .archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
 .archive a{color:#e8eef7;text-decoration:none}
 .archive a:hover{text-decoration:underline}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:__ACCENT__;color:__ACCENT__}
+.viewbtn.on{background:__ACCENT__;border-color:__ACCENT__;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:__ACCENT__;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
 
 @media (max-width:720px){
   .etitle{font-size:26px}

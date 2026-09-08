@@ -218,14 +218,40 @@ a{color:#f7931a}
   .tilegrid{grid-template-columns:1fr 1fr 1fr}
 }
 
-/* ── the archive list — whatever rotated out of the tile grid ────────────── */
-.panel ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
   padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
 .archive li:last-child{border-bottom:0}
 .archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
 .archive a{color:#e8eef7;text-decoration:none}
 .archive a:hover{text-decoration:underline}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
 
 @media (max-width:720px){
   .etitle{font-size:26px}
@@ -259,7 +285,8 @@ a{color:#f7931a}
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a></nav></header>
 <div class="fronthero"><figure><img src="img/us-bullion-depository.jpg" alt="The United States Bullion Depository at Fort Knox, Kentucky — a squat granite vault behind a chain-link perimeter fence, guard towers at its corners, floodlit windows barred" width="1200" height="444" loading="eager"/><figcaption>The United States Bullion Depository, Fort Knox — half the gold on the board below is kept behind that granite. Photo: Cliff, via <a href="https://commons.wikimedia.org/wiki/File:U.S._Bullion_Depository-adjust2.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption></figure></div>  <p class="tag ftag">What the world&#x27;s money is actually in</p>
   <section class="writing">
-    <div class="tilegrid">
+    <div class="viewbar" id="viewbar">View: <button class="viewbtn on" data-view="cards" type="button">🗂 Cards</button><button class="viewbtn" data-view="list" type="button">📋 List</button></div>
+    <div class="tilegrid" id="tiles">
     <a class="tile board-card" href="crypto.html">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">The Crypto Heat Map</span>
@@ -290,13 +317,22 @@ a{color:#f7931a}
       <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
       <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. Here&#x27;s the arithmetic, and the two things about it that actually surprised me.</span>
     </a>
+    <a class="tile" href="coldcard-bitkey-security.html">
+      <span class="ec-d">AUGUST 4, 2026</span>
+      <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
+      <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
+    </a>
     </div>
-  </section>
-  <section class="panel" id="archive">
-    <h2>Archive</h2>
-    <ul class="archive">
+    <ul class="archive" id="archiveList" hidden>
+    <li><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="crypto.html">The Crypto Heat Map</a></li>
+    <li><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="board.html">The Asset Board</a></li>
+    <li><span class="ec-d">STANDING PAGE · LIVE</span><a href="bitcoin.html">The Bitcoin Board</a></li>
+    <li><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="treasuries.html">Bitcoin Treasuries</a></li>
+    <li><span class="ec-d">SEPTEMBER 6, 2026</span><a href="liquid-network-peg-drain.html">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</a></li>
+    <li><span class="ec-d">AUGUST 8, 2026</span><a href="how-many-bitcoins-are-there.html">How Many Bitcoins Are There, Exactly?</a></li>
     <li><span class="ec-d">AUGUST 4, 2026</span><a href="coldcard-bitkey-security.html">A Twenty-Five-Minute Window, and Why I Split the Key</a></li>
     </ul>
+    <div class="loadmorewrap" id="loadMoreWrap" hidden><button class="loadmore" id="loadMoreBtn" type="button">Show more</button><div class="viewcount" id="viewCount"></div></div>
   </section>
   <p class="pagehits"><span class="hits" id="hits-finance-index-html">👁 <span id="hits-finance-index-html-n">—</span> visits to this page</span>
 <script>
@@ -316,5 +352,69 @@ a{color:#f7931a}
 
   <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice<p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>
 </div>
+<script>
+
+(function(){
+  var TILE_FIRST = 6, TILE_STEP = 12, LIST_FIRST = 20, LIST_STEP = 40;
+  var tilesWrap = document.getElementById('tiles');
+  if (!tilesWrap) return;
+  var archiveList = document.getElementById('archiveList');
+  var viewbar = document.getElementById('viewbar');
+  var loadMoreWrap = document.getElementById('loadMoreWrap');
+  var loadMoreBtn = document.getElementById('loadMoreBtn');
+  var viewCount = document.getElementById('viewCount');
+  var activeView = 'cards';
+  var revealCount = TILE_FIRST;
+
+  function firstFor(v){ return v === 'list' ? LIST_FIRST : TILE_FIRST; }
+  function stepFor(v){ return v === 'list' ? LIST_STEP : TILE_STEP; }
+  function pool(){
+    return activeView === 'list'
+      ? Array.prototype.slice.call(archiveList.children)
+      : Array.prototype.slice.call(tilesWrap.children);
+  }
+
+  function render(){
+    var items = pool();
+    var total = items.length;
+    var showN = Math.min(revealCount, total);
+    items.forEach(function(el, i){ el.style.display = i < showN ? '' : 'none'; });
+    var remaining = total - showN;
+    if (loadMoreWrap) loadMoreWrap.hidden = remaining <= 0;
+    if (loadMoreBtn) loadMoreBtn.textContent = 'Show ' + Math.min(stepFor(activeView), remaining) + ' more';
+    if (viewCount) viewCount.textContent = total ? ('Showing ' + showN + ' of ' + total) : '';
+  }
+
+  function setView(v){
+    activeView = v;
+    revealCount = firstFor(v);
+    tilesWrap.hidden = v !== 'cards';
+    if (archiveList) archiveList.hidden = v !== 'list';
+    if (viewbar) {
+      viewbar.querySelectorAll('.viewbtn').forEach(function(b){
+        b.classList.toggle('on', b.dataset.view === v);
+      });
+    }
+    render();
+  }
+
+  if (viewbar) {
+    viewbar.addEventListener('click', function(e){
+      var b = e.target.closest('[data-view]');
+      if (!b) return;
+      setView(b.dataset.view);
+    });
+  }
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function(){
+      revealCount += stepFor(activeView);
+      render();
+    });
+  }
+
+  setView('cards');
+})();
+
+</script>
 </body>
 </html>

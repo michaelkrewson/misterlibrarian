@@ -674,6 +674,8 @@ def build_index(posts):
         chips = ""
         search = ""
         archive = ""
+        listcontrols = ""
+        loadmore = ""
     else:
         # Only the first card is eager: it is the index's LCP element. The rest
         # stay lazy, which is the whole point of having lazy loading.
@@ -733,26 +735,42 @@ def build_index(posts):
         # card's text is itself a problem, that's the point to switch to a
         # fetched JSON index — not before.
         search = '<div class="searchcount" id="searchCount"></div>'
+        # Each row carries the SAME data-tags/data-search/data-stars a card
+        # does, so the one tag/search filter below works identically whichever
+        # view is on screen — the old archive section had none of these and
+        # silently ignored both (found while adding the view toggle).
         rows = "\n".join(
-            f'<li><time datetime="{p["date"].isoformat()}">{p["date"].isoformat()}</time>'
+            f'<li data-tags="{html.escape(" ".join(_tag_slug(t) for t in p["tags"]), quote=True)}" '
+            f'data-stars="{p["stars"] if p["stars"] is not None else -1}" '
+            f'data-search="{html.escape(p["search"], quote=True)}">'
+            f'<time datetime="{p["date"].isoformat()}">{p["date"].isoformat()}</time>'
             f'<a href="{p["file"]}">{html.escape(p["title"])}</a>'
             + (f'<span class="place">{html.escape(p["place"])}</span>' if p["place"] else "")
             + (f'<span class="archstars">{_stars_svg(p["stars"], 14)}</span>'
                if p["stars"] is not None else "")
             + "</li>"
             for p in posts)
-        archive = f"""<section class="panel" id="archive">
-  <h2>Archive</h2>
-  <ul class="archive">
-{rows}
-  </ul>
-</section>"""
+        archive = f'<ul class="archive" id="archiveList" hidden>\n{rows}\n</ul>'
+
+        # Cards vs. list is a VIEW of the same entries, not a second section —
+        # the compact list used to live in its own panel further down the
+        # page, duplicating every post's markup a second time with no cap of
+        # its own (the "can become endless" problem). Now there is one
+        # listing, paginated either way it's rendered.
+        viewbar = ('<div class="sortbar" id="viewbar">View: '
+                   '<button class="sortbtn on" data-view="cards" type="button">\U0001F5C2 Cards</button>'
+                   '<button class="sortbtn" data-view="list" type="button">\U0001F4CB List</button></div>')
+        loadmore = ('<div class="loadmorewrap" id="loadMoreWrap" hidden>'
+                    '<button class="loadmore" id="loadMoreBtn" type="button">Show more</button>'
+                    '<div class="viewcount" id="viewCount"></div></div>')
 
     rated = [p for p in posts if p["stars"] is not None]
     sortbar = ("" if len(rated) < 2 else
                '<div class="sortbar" id="sortbar">Sort: '
                '<button class="sortbtn on" data-sort="date">Newest</button>'
                '<button class="sortbtn" data-sort="stars">Highest rated</button></div>')
+    listcontrols = (f'<div class="listcontrols">{viewbar}{sortbar}</div>'
+                     if posts else "")
 
     # Shown at the bottom of the page, not up under the blurb — page metadata
     # belongs near the footer, not competing with the intro for attention.
@@ -764,46 +782,118 @@ def build_index(posts):
 {_half_defs(17)}{_half_defs(14)}
 {search}
 {chips}
-{sortbar}
+<div class="listing" id="archive">
+{listcontrols}
 <div class="cards" id="cards">
 {cards}
 </div>
+{archive}
 <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
-{archive}{index_hits_html}
+{loadmore}
+</div>{index_hits_html}
 <script>
 // Search box (in the header, reachable from every page — see header() in
-// build_travel.py) + tag filter, combined. Both narrow the SAME card list, so
-// a query and a tag chip compose (AND, not OR): typing "ramen" while the
-// "oregon" chip is on shows only cards matching both. Pure client-side — no
-// per-tag or per-query pages to generate, keep in sync, or leave behind.
+// build_travel.py) + tag filter + cards/list VIEW toggle + pagination,
+// combined into one filter→paginate pipeline. A query and a tag chip compose
+// (AND, not OR): typing "ramen" while the "oregon" chip is on shows only
+// entries matching both, in whichever view is on screen — cards and list
+// rows carry the same data-tags/data-search/data-stars, so one predicate
+// drives both. Pure client-side — no per-tag, per-query or per-page files to
+// generate, keep in sync, or leave behind.
 (function(){{
-  var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
+  var CARD_FIRST = 6, CARD_STEP = 12;
+  var LIST_FIRST = 20, LIST_STEP = 40;
+
+  var cardsWrap = document.getElementById('cards');
+  if (!cardsWrap) return; // empty-blog page: nothing to wire up
+
+  var archiveList = document.getElementById('archiveList');
   var filterBar = document.getElementById('filters');
+  var sortbar = document.getElementById('sortbar');
+  var viewbar = document.getElementById('viewbar');
   var input = document.getElementById('headerSearch');
   var count = document.getElementById('searchCount');
   var empty = document.getElementById('searchEmpty');
+  var loadMoreWrap = document.getElementById('loadMoreWrap');
+  var loadMoreBtn = document.getElementById('loadMoreBtn');
+  var viewCount = document.getElementById('viewCount');
+  var originalCards = Array.prototype.slice.call(cardsWrap.children);
+
   var activeTag = '';
   var query = '';
+  var activeView = 'cards';
+  var revealCount = CARD_FIRST;
 
-  function apply(){{
-    var shown = 0;
-    cards.forEach(function(card){{
-      var tags = (card.dataset.tags || '').split(/\\s+/);
-      var tagOk = !activeTag || tags.indexOf(activeTag) !== -1;
-      var textOk = !query || (card.dataset.search || '').indexOf(query) !== -1;
-      var show = tagOk && textOk;
-      card.style.display = show ? '' : 'none';
-      if (show) shown++;
+  function firstFor(view){{ return view === 'list' ? LIST_FIRST : CARD_FIRST; }}
+  function stepFor(view){{ return view === 'list' ? LIST_STEP : CARD_STEP; }}
+
+  function matches(el){{
+    var tags = (el.dataset.tags || '').split(/\\s+/);
+    var tagOk = !activeTag || tags.indexOf(activeTag) !== -1;
+    var textOk = !query || (el.dataset.search || '').indexOf(query) !== -1;
+    return tagOk && textOk;
+  }}
+
+  // The list rows never reorder, but the cards do (see the stars-sort below,
+  // a DOM shuffle via appendChild) — so the card pool is read fresh off the
+  // live DOM order each render, never off a snapshot taken at page load.
+  function currentPool(){{
+    return activeView === 'list'
+      ? Array.prototype.slice.call(archiveList.children)
+      : Array.prototype.slice.call(cardsWrap.children);
+  }}
+
+  function render(){{
+    var pool = currentPool();
+    var matched = pool.filter(matches);
+    var total = matched.length;
+    var showN = Math.min(revealCount, total);
+    var shown = matched.slice(0, showN);
+    pool.forEach(function(el){{
+      el.style.display = shown.indexOf(el) !== -1 ? '' : 'none';
     }});
-    if (empty) empty.hidden = shown > 0;
+    if (empty) empty.hidden = total > 0;
     if (count) count.textContent = query
-      ? (shown + ' of ' + cards.length + (cards.length === 1 ? ' entry' : ' entries'))
+      ? (showN + ' of ' + total + (total === 1 ? ' entry' : ' entries'))
       : '';
+    var remaining = total - showN;
+    if (loadMoreWrap) loadMoreWrap.hidden = remaining <= 0;
+    if (loadMoreBtn) loadMoreBtn.textContent = 'Show ' + Math.min(stepFor(activeView), remaining) + ' more';
+    if (viewCount) viewCount.textContent = total ? ('Showing ' + showN + ' of ' + total) : '';
+  }}
+
+  function setView(view, resetReveal){{
+    activeView = view;
+    if (resetReveal !== false) revealCount = firstFor(view);
+    cardsWrap.hidden = view !== 'cards';
+    if (archiveList) archiveList.hidden = view !== 'list';
+    if (sortbar) sortbar.hidden = view !== 'cards';
+    if (viewbar) {{
+      viewbar.querySelectorAll('.sortbtn').forEach(function(b){{
+        b.classList.toggle('on', b.dataset.view === view);
+      }});
+    }}
+    render();
+  }}
+
+  if (viewbar) {{
+    viewbar.addEventListener('click', function(e){{
+      var b = e.target.closest('[data-view]');
+      if (!b) return;
+      setView(b.dataset.view);
+    }});
+  }}
+
+  if (loadMoreBtn) {{
+    loadMoreBtn.addEventListener('click', function(){{
+      revealCount += stepFor(activeView);
+      render();
+    }});
   }}
 
   // Unfold the long tail of tags. Kept separate from the filter handler below
   // because this button is a disclosure, not a filter — it must never become
-  // the active tag or it would blank the card list.
+  // the active tag or it would blank the listing.
   function openTags(){{
     if (!filterBar) return;
     var more = document.getElementById('tagMore');
@@ -830,7 +920,8 @@ def build_index(posts):
       }}
       activeTag = b.dataset.tag;
       filterBar.querySelectorAll('.chip').forEach(function(c){{ c.classList.toggle('on', c === b); }});
-      apply();
+      revealCount = firstFor(activeView);
+      render();
     }});
   }}
 
@@ -845,7 +936,8 @@ def build_index(posts):
 
     input.addEventListener('input', function(){{
       query = input.value.trim().toLowerCase();
-      apply();
+      revealCount = firstFor(activeView);
+      render();
       var url = new URL(location.href);
       if (query) url.searchParams.set('q', input.value); else url.searchParams.delete('q');
       history.replaceState(null, '', url.pathname + url.search + url.hash);
@@ -858,7 +950,6 @@ def build_index(posts):
     if (handed) {{
       input.value = handed;
       query = handed.trim().toLowerCase();
-      apply();
     }}
   }}
 
@@ -878,30 +969,34 @@ def build_index(posts):
       filterBar.querySelectorAll('.chip').forEach(function(c){{
         c.classList.toggle('on', c === match);
       }});
-      apply();
     }}
   }}
-}})();
 
-// Re-order the cards by rating. Pure DOM shuffle — no second page to keep in sync,
-// and unrated entries (a notes post is not a review) always sink to the bottom.
-(function(){{
-  var bar = document.getElementById('sortbar');
-  if (!bar) return;
-  var wrap = document.getElementById('cards');
-  var original = Array.prototype.slice.call(wrap.children);
-  bar.addEventListener('click', function(e){{
-    var b = e.target.closest('.sortbtn');
-    if (!b) return;
-    bar.querySelectorAll('.sortbtn').forEach(function(x){{ x.classList.toggle('on', x === b); }});
-    var list = original.slice();
-    if (b.dataset.sort === 'stars') {{
-      list.sort(function(a, c){{
-        return (parseFloat(c.dataset.stars) || -1) - (parseFloat(a.dataset.stars) || -1);
-      }});
-    }}
-    list.forEach(function(el){{ wrap.appendChild(el); }});
-  }});
+  // Re-order the cards by rating. Pure DOM shuffle — no second page to keep in
+  // sync, and unrated entries (a notes post is not a review) always sink to
+  // the bottom. Only ever touches the cards pool — the list view stays in
+  // date order, same as the old archive section always did.
+  if (sortbar) {{
+    sortbar.addEventListener('click', function(e){{
+      var b = e.target.closest('.sortbtn');
+      if (!b) return;
+      sortbar.querySelectorAll('.sortbtn').forEach(function(x){{ x.classList.toggle('on', x === b); }});
+      var list = originalCards.slice();
+      if (b.dataset.sort === 'stars') {{
+        list.sort(function(a, c){{
+          return (parseFloat(c.dataset.stars) || -1) - (parseFloat(a.dataset.stars) || -1);
+        }});
+      }}
+      list.forEach(function(el){{ cardsWrap.appendChild(el); }});
+      revealCount = firstFor(activeView);
+      render();
+    }});
+  }}
+
+  // The nav's "Archive" link points at index.html#archive — that used to
+  // scroll to a separate list section; now it lands on this same listing and
+  // switches it to List view, so the link still does what it always promised.
+  setView(location.hash === '#archive' ? 'list' : 'cards', true);
 }})();
 </script>"""
     return page(SITE_NAME, body, active="home", desc=BLURB, url="index.html")
