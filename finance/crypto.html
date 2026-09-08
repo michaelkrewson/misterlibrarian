@@ -300,6 +300,13 @@ table.crypto td.cs{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:n
 .ctpc{font-weight:600;line-height:1.15}
 .ctdom{opacity:.8;font-style:italic;line-height:1.15;margin-top:2px}
 .crytot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+/* The grand total's own double rule (accounting-style "this is the final
+   sum") — set apart from every per-category subtotal's plain single line.
+   Needs the same `tr:last-child` as the shared `.board tr:last-child td`
+   rule it's overriding (that rule zeroes the last row's border on every
+   plain data table); matching it is what wins the specificity tie instead
+   of reaching for !important. */
+table.crygrand tfoot tr:last-child td{border-bottom:3px double #3a4f66;padding-bottom:14px}
 /* The flash a table row gets when a treemap tile scrolls it into view —
    fades from the accent colour back to nothing so the reader's eye lands on
    the right row without a jarring permanent highlight. */
@@ -320,116 +327,116 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
   kinds. Box size is market cap, colour is how much each has moved. Pick a
   period below — the map and every table column update at once, nothing
   reloads.</p>
-  <p class="stamp">Updated 2026-09-08 00:13 UTC
+  <p class="stamp">Updated 2026-09-08 00:48 UTC
     <span class="dot">·</span><span class="hl">100 coins</span>
     <span class="dot">·</span>BTC dominance 58.3%</p>
   <div class="chtabs" id="cryptoTabs"><button type="button" class="bbb" data-period="1h">1H</button><button type="button" class="bbb on" data-period="1d">1D</button><button type="button" class="bbb" data-period="7d">7D</button><button type="button" class="bbb" data-period="1m">1M</button><button type="button" class="bbb" data-period="3m">3M</button><button type="button" class="bbb" data-period="6m">6M</button><button type="button" class="bbb" data-period="ytd">YTD</button><button type="button" class="bbb" data-period="1y">1Y</button></div>
   <div class="treemapwrap"><div class="treemap">
-    <div class="crycat-hdr" style="left:0.000%;top:0.000%;width:59.391%;height:3.077%">Bitcoin &amp; Derivatives</div>
-    <a class="crytile" href="#row-bitcoin" style="left:0.000%;top:3.077%;width:58.305%;height:96.923%;background:hsl(4,68%,59%)" data-chg-1h="0.3000" data-chg-1d="-1.6257" data-chg-7d="0.7000" data-chg-1m="21.9000" data-chg-3m="25.4005" data-chg-6m="15.5755" data-chg-ytd="-9.6900" data-chg-1y="-28.9000" title="Bitcoin (BTC) · $79,020 · -1.63% · 58.3% dominance"><span class="ctsym" style="font-size:clamp(6px,21.17cqw,50px)">BTC</span><span class="ctpx" style="font-size:clamp(6px,8.06cqw,16px)">$79,020</span><span class="ctpc" style="font-size:clamp(6px,8.06cqw,17px)">-1.63%</span><span class="ctdom" style="font-size:clamp(6px,6.48cqw,14px)">58.3% dominance</span></a>
-    <a class="crytile" href="#row-zcash" style="left:58.305%;top:3.077%;width:1.086%;height:63.115%;background:hsl(4,68%,48%)" data-chg-1h="1.0000" data-chg-1d="-7.1247" data-chg-7d="34.5000" data-chg-1m="125.2000" data-chg-3m="148.0493" data-chg-6m="432.9762" data-chg-ytd="122.5496" data-chg-1y="2268.9000" title="Zcash (ZEC) · $1,138 · -7.12%"><span class="ctsym" style="font-size:clamp(3.5px,0.60cqw,50px)">ZEC</span></a>
-    <a class="crytile" href="#row-bitcoin-cash" style="left:58.305%;top:66.192%;width:1.086%;height:17.076%;background:hsl(4,68%,61%)" data-chg-1h="0.9000" data-chg-1d="-0.6332" data-chg-7d="5.0000" data-chg-1m="20.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.1000" title="Bitcoin Cash (BCH) · $259.39 · -0.63%"><span class="ctsym" style="font-size:clamp(3.5px,0.60cqw,50px)">BCH</span></a>
-    <a class="crytile" href="#row-litecoin" style="left:58.305%;top:83.268%;width:1.086%;height:14.079%;background:hsl(142,68%,61%)" data-chg-1h="-0.1000" data-chg-1d="0.6711" data-chg-7d="13.8000" data-chg-1m="20.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000" title="Litecoin (LTC) · $55.34 · +0.67%"><span class="ctsym" style="font-size:clamp(3.5px,0.60cqw,50px)">LTC</span></a>
-    <a class="crytile" href="#row-dash" style="left:58.305%;top:97.347%;width:1.086%;height:2.653%;background:hsl(4,68%,42%)" data-chg-1h="-1.7000" data-chg-1d="-11.6445" data-chg-7d="40.6000" data-chg-1m="98.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="155.0000" title="Dash (DASH) · $62.99 · -11.64%"><span class="ctsym" style="font-size:clamp(3.5px,0.45cqw,50px)">DASH</span></a>
-    <div class="crycat-hdr" style="left:59.391%;top:0.000%;width:40.609%;height:3.077%">Infrastructure &amp; Platform</div>
-    <a class="crytile" href="#row-ethereum" style="left:59.391%;top:3.077%;width:18.158%;height:58.322%;background:hsl(4,68%,60%)" data-chg-1h="0.4000" data-chg-1d="-1.1759" data-chg-7d="0.9000" data-chg-1m="30.0000" data-chg-3m="47.2580" data-chg-6m="24.9078" data-chg-ytd="-16.1830" data-chg-1y="-42.3000" title="Ethereum (ETH) · $2,486 · -1.18%"><span class="ctsym" style="font-size:clamp(6px,10.09cqw,50px)">ETH</span><span class="ctpx" style="font-size:clamp(6px,5.04cqw,16px)">$2,486</span><span class="ctpc" style="font-size:clamp(6px,5.04cqw,17px)">-1.18%</span></a>
-    <a class="crytile" href="#row-binancecoin" style="left:77.549%;top:3.077%;width:11.879%;height:28.921%;background:hsl(4,68%,58%)" data-chg-1h="0.3000" data-chg-1d="-2.1510" data-chg-7d="7.1000" data-chg-1m="23.4000" data-chg-3m="22.9368" data-chg-6m="16.4812" data-chg-ytd="-14.2784" data-chg-1y="-15.5000" title="BNB (BNB) · $739.24 · -2.15%"><span class="ctsym" style="font-size:clamp(6px,6.60cqw,50px)">BNB</span><span class="ctpx" style="font-size:clamp(6px,2.83cqw,16px)">$739.24</span><span class="ctpc" style="font-size:clamp(6px,3.30cqw,17px)">-2.15%</span></a>
-    <a class="crytile" href="#row-ripple" style="left:89.428%;top:3.077%;width:10.572%;height:28.921%;background:hsl(4,68%,58%)" data-chg-1h="0.7000" data-chg-1d="-2.0343" data-chg-7d="1.3000" data-chg-1m="34.7000" data-chg-3m="19.8884" data-chg-6m="2.0492" data-chg-ytd="-23.9350" data-chg-1y="-51.4000" title="XRP (XRP) · $1.40 · -2.03%"><span class="ctsym" style="font-size:clamp(3.5px,5.87cqw,50px)">XRP</span></a>
-    <a class="crytile" href="#row-solana" style="left:77.549%;top:31.998%;width:10.983%;height:19.312%;background:hsl(4,68%,57%)" data-chg-1h="0.4000" data-chg-1d="-2.7207" data-chg-7d="0.7000" data-chg-1m="36.9000" data-chg-3m="55.3683" data-chg-6m="22.0758" data-chg-ytd="-16.6486" data-chg-1y="-49.9000" title="Solana (SOL) · $103.66 · -2.72%"><span class="ctsym" style="font-size:clamp(3.5px,6.10cqw,50px)">SOL</span></a>
-    <a class="crytile" href="#row-tron" style="left:77.549%;top:51.309%;width:10.983%;height:10.089%;background:hsl(4,68%,62%)" data-chg-1h="0.1000" data-chg-1d="-0.2438" data-chg-7d="0.5000" data-chg-1m="1.7000" data-chg-3m="2.4131" data-chg-6m="17.1368" data-chg-ytd="17.6317" data-chg-1y="1.3000" title="TRON (TRX) · $0.3345 · -0.24%"><span class="ctsym" style="font-size:clamp(3.5px,4.46cqw,50px)">TRX</span></a>
-    <a class="crytile" href="#row-hyperliquid" style="left:88.532%;top:31.998%;width:7.574%;height:8.724%;background:hsl(4,68%,55%)" data-chg-1h="0.2000" data-chg-1d="-3.3173" data-chg-7d="1.0000" data-chg-1m="54.9000" data-chg-3m="33.4098" data-chg-6m="145.4999" data-chg-ytd="234.4469" data-chg-1y="80.8000" title="Hyperliquid (HYPE) · $85.09 · -3.32%"><span class="ctsym" style="font-size:clamp(3.5px,3.16cqw,50px)">HYPE</span></a>
-    <a class="crytile" href="#row-monero" style="left:96.106%;top:31.998%;width:3.894%;height:8.724%;background:hsl(4,68%,54%)" data-chg-1h="1.4000" data-chg-1d="-4.0168" data-chg-7d="0.3000" data-chg-1m="37.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="91.3000" title="Monero (XMR) · $517.69 · -4.02%"><span class="ctsym" style="font-size:clamp(3.5px,2.16cqw,50px)">XMR</span></a>
-    <a class="crytile" href="#row-chainlink" style="left:88.532%;top:40.721%;width:4.144%;height:8.031%;background:hsl(4,68%,54%)" data-chg-1h="0.5000" data-chg-1d="-4.0882" data-chg-7d="12.7000" data-chg-1m="53.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-43.3000" title="Chainlink (LINK) · $12.75 · -4.09%"><span class="ctsym" style="font-size:clamp(3.5px,1.73cqw,50px)">LINK</span></a>
-    <a class="crytile" href="#row-cardano" style="left:88.532%;top:48.753%;width:4.144%;height:6.977%;background:hsl(4,68%,58%)" data-chg-1h="1.1000" data-chg-1d="-1.7848" data-chg-7d="11.2000" data-chg-1m="11.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000" title="Cardano (ADA) · $0.2209 · -1.78%"><span class="ctsym" style="font-size:clamp(3.5px,2.30cqw,50px)">ADA</span></a>
-    <a class="crytile" href="#row-stellar" style="left:88.532%;top:55.729%;width:4.144%;height:5.669%;background:hsl(142,68%,57%)" data-chg-1h="1.4000" data-chg-1d="2.4400" data-chg-7d="9.2000" data-chg-1m="17.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.3000" title="Stellar (XLM) · $0.1933 · +2.44%"><span class="ctsym" style="font-size:clamp(3.5px,2.30cqw,50px)">XLM</span></a>
-    <a class="crytile" href="#row-canton-network" style="left:92.677%;top:40.721%;width:2.644%;height:5.562%;background:hsl(4,68%,52%)" data-chg-1h="0.8000" data-chg-1d="-4.9985" data-chg-7d="-13.3000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Canton (CC) · $0.1065 · -5.00%"><span class="ctsym" style="font-size:clamp(3.5px,2.20cqw,50px)">CC</span></a>
-    <a class="crytile" href="#row-the-open-network" style="left:95.320%;top:40.721%;width:2.426%;height:5.562%;background:hsl(4,68%,56%)" data-chg-1h="0.2000" data-chg-1d="-3.1276" data-chg-7d="-1.0000" data-chg-1m="2.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.1000" title="Gram (prev. Toncoin) (GRAM) · $1.39 · -3.13%"><span class="ctsym" style="font-size:clamp(3.5px,1.01cqw,50px)">GRAM</span></a>
-    <a class="crytile" href="#row-hedera-hashgraph" style="left:97.747%;top:40.721%;width:2.253%;height:5.562%;background:hsl(142,68%,62%)" data-chg-1h="0.2000" data-chg-1d="0.1781" data-chg-7d="11.3000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.7000" title="Hedera (HBAR) · $0.08189 · +0.18%"><span class="ctsym" style="font-size:clamp(3.5px,0.94cqw,50px)">HBAR</span></a>
-    <a class="crytile" href="#row-avalanche-2" style="left:92.677%;top:46.283%;width:2.592%;height:4.696%;background:hsl(142,68%,59%)" data-chg-1h="0.3000" data-chg-1d="1.7044" data-chg-7d="11.9000" data-chg-1m="25.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-67.2000" title="Avalanche (AVAX) · $8.07 · +1.70%"><span class="ctsym" style="font-size:clamp(3.5px,1.08cqw,50px)">AVAX</span></a>
-    <a class="crytile" href="#row-sui" style="left:95.268%;top:46.283%;width:2.490%;height:4.696%;background:hsl(142,68%,62%)" data-chg-1h="0.9000" data-chg-1d="0.1657" data-chg-7d="13.0000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.9000" title="Sui (SUI) · $0.8176 · +0.17%"><span class="ctsym" style="font-size:clamp(3.5px,1.38cqw,50px)">SUI</span></a>
-    <a class="crytile" href="#row-near" style="left:97.759%;top:46.283%;width:2.241%;height:4.696%;background:hsl(4,68%,52%)" data-chg-1h="0.7000" data-chg-1d="-4.9710" data-chg-7d="20.9000" data-chg-1m="42.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-6.3000" title="NEAR Protocol (NEAR) · $2.31 · -4.97%"><span class="ctsym" style="font-size:clamp(3.5px,0.93cqw,50px)">NEAR</span></a>
-    <a class="crytile" href="#row-bittensor" style="left:92.677%;top:50.979%;width:2.124%;height:4.077%;background:hsl(4,68%,56%)" data-chg-1h="0.9000" data-chg-1d="-3.0895" data-chg-7d="13.2000" data-chg-1m="30.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.2000" title="Bittensor (TAO) · $258.29 · -3.09%"><span class="ctsym" style="font-size:clamp(3.5px,1.18cqw,50px)">TAO</span></a>
-    <a class="crytile" href="#row-mantle" style="left:92.677%;top:55.056%;width:2.124%;height:3.374%;background:hsl(142,68%,58%)" data-chg-1h="0.3000" data-chg-1d="2.1958" data-chg-7d="13.7000" data-chg-1m="44.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.4000" title="Mantle (MNT) · $0.6216 · +2.20%"><span class="ctsym" style="font-size:clamp(3.5px,1.18cqw,50px)">MNT</span></a>
-    <a class="crytile" href="#row-polkadot" style="left:92.677%;top:58.430%;width:2.124%;height:2.968%;background:hsl(142,68%,48%)" data-chg-1h="1.9000" data-chg-1d="7.0103" data-chg-7d="27.1000" data-chg-1m="30.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000" title="Polkadot (DOT) · $1.06 · +7.01%"><span class="ctsym" style="font-size:clamp(3.5px,1.18cqw,50px)">DOT</span></a>
-    <a class="crytile" href="#row-worldcoin-wld" style="left:94.800%;top:50.979%;width:1.947%;height:3.138%;background:hsl(142,68%,42%)" data-chg-1h="1.8000" data-chg-1d="12.3491" data-chg-7d="31.4000" data-chg-1m="57.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-53.7000" title="Worldcoin (WLD) · $0.4760 · +12.35%"><span class="ctsym" style="font-size:clamp(3.5px,1.08cqw,50px)">WLD</span></a>
-    <a class="crytile" href="#row-internet-computer" style="left:96.747%;top:50.979%;width:1.862%;height:3.138%;background:hsl(142,68%,42%)" data-chg-1h="0.6000" data-chg-1d="9.8449" data-chg-7d="24.8000" data-chg-1m="36.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.9000" title="Internet Computer (ICP) · $3.01 · +9.84%"><span class="ctsym" style="font-size:clamp(3.5px,1.03cqw,50px)">ICP</span></a>
-    <a class="crytile" href="#row-ethereum-classic" style="left:98.608%;top:50.979%;width:1.392%;height:3.138%;background:hsl(142,68%,61%)" data-chg-1h="0.9000" data-chg-1d="0.3296" data-chg-7d="8.3000" data-chg-1m="21.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-61.3000" title="Ethereum Classic (ETC) · $7.91 · +0.33%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">ETC</span></a>
-    <a class="crytile" href="#row-arbitrum" style="left:94.800%;top:54.117%;width:1.532%;height:2.573%;background:hsl(4,68%,42%)" data-chg-1h="0.5000" data-chg-1d="-10.8469" data-chg-7d="58.6000" data-chg-1m="116.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.8000" title="Arbitrum (ARB) · $0.1690 · -10.85%"><span class="ctsym" style="font-size:clamp(3.5px,0.85cqw,50px)">ARB</span></a>
-    <a class="crytile" href="#row-pi-network" style="left:94.800%;top:56.690%;width:1.532%;height:2.391%;background:hsl(4,68%,60%)" data-chg-1h="-0.1000" data-chg-1d="-0.7721" data-chg-7d="3.5000" data-chg-1m="2.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.7000" title="Pi Network (PI) · $0.09424 · -0.77%"><span class="ctsym" style="font-size:clamp(3.5px,1.06cqw,50px)">PI</span></a>
-    <a class="crytile" href="#row-polygon-ecosystem-token" style="left:94.800%;top:59.082%;width:1.532%;height:2.317%;background:hsl(4,68%,55%)" data-chg-1h="0.1000" data-chg-1d="-3.5536" data-chg-7d="5.3000" data-chg-1m="24.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.9000" title="POL (ex-MATIC) (POL) · $0.09498 · -3.55%"><span class="ctsym" style="font-size:clamp(3.5px,0.85cqw,50px)">POL</span></a>
-    <a class="crytile" href="#row-kaspa" style="left:96.333%;top:54.117%;width:1.291%;height:2.722%;background:hsl(142,68%,42%)" data-chg-1h="1.1000" data-chg-1d="12.9494" data-chg-7d="31.2000" data-chg-1m="36.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-54.4000" title="Kaspa (KAS) · $0.03635 · +12.95%"><span class="ctsym" style="font-size:clamp(3.5px,0.72cqw,50px)">KAS</span></a>
-    <a class="crytile" href="#row-quant-network" style="left:97.623%;top:54.117%;width:1.245%;height:2.722%;background:hsl(4,68%,61%)" data-chg-1h="1.1000" data-chg-1d="-0.5737" data-chg-7d="9.3000" data-chg-1m="12.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.8000" title="Quant (QNT) · $66.74 · -0.57%"><span class="ctsym" style="font-size:clamp(3.5px,0.69cqw,50px)">QNT</span></a>
-    <a class="crytile" href="#row-algorand" style="left:98.869%;top:54.117%;width:1.131%;height:2.722%;background:hsl(142,68%,60%)" data-chg-1h="1.8000" data-chg-1d="0.9632" data-chg-7d="13.9000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.9000" title="Algorand (ALGO) · $0.09761 · +0.96%"><span class="ctsym" style="font-size:clamp(3.5px,0.47cqw,50px)">ALGO</span></a>
-    <a class="crytile" href="#row-cosmos" style="left:96.333%;top:56.839%;width:1.276%;height:2.366%;background:hsl(142,68%,58%)" data-chg-1h="0.8000" data-chg-1d="2.2126" data-chg-7d="11.1000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.6000" title="Cosmos Hub (ATOM) · $1.63 · +2.21%"><span class="ctsym" style="font-size:clamp(3.5px,0.53cqw,50px)">ATOM</span></a>
-    <a class="crytile" href="#row-render-token" style="left:96.333%;top:59.205%;width:1.276%;height:2.193%;background:hsl(4,68%,59%)" data-chg-1h="0.6000" data-chg-1d="-1.2672" data-chg-7d="9.1000" data-chg-1m="17.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.6000" title="Render (RENDER) · $1.54 · -1.27%"><span class="ctsym" style="font-size:clamp(3.5px,0.35cqw,50px)">RENDER</span></a>
-    <a class="crytile" href="#row-filecoin" style="left:97.608%;top:56.839%;width:1.004%;height:2.406%;background:hsl(142,68%,56%)" data-chg-1h="0.9000" data-chg-1d="3.0217" data-chg-7d="23.3000" data-chg-1m="18.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.2000" title="Filecoin (FIL) · $0.8371 · +3.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.56cqw,50px)">FIL</span></a>
-    <a class="crytile" href="#row-vechain" style="left:97.608%;top:59.245%;width:1.004%;height:2.153%;background:hsl(142,68%,60%)" data-chg-1h="1.0000" data-chg-1d="1.1419" data-chg-7d="6.2000" data-chg-1m="52.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-69.5000" title="VeChain (VET) · $0.007204 · +1.14%"><span class="ctsym" style="font-size:clamp(3.5px,0.56cqw,50px)">VET</span></a>
-    <a class="crytile" href="#row-injective-protocol" style="left:98.613%;top:56.839%;width:1.387%;height:1.550%;background:hsl(142,68%,42%)" data-chg-1h="1.9000" data-chg-1d="14.4288" data-chg-7d="25.9000" data-chg-1m="40.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-52.7000" title="Injective (INJ) · $6.16 · +14.43%"><span class="ctsym" style="font-size:clamp(3.5px,0.68cqw,50px)">INJ</span></a>
-    <a class="crytile" href="#row-beldex" style="left:98.613%;top:58.389%;width:1.387%;height:1.542%;background:hsl(4,68%,60%)" data-chg-1h="0.0000" data-chg-1d="-1.1608" data-chg-7d="-1.8000" data-chg-1m="-15.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.1000" title="Beldex (BDX) · $0.07786 · -1.16%"><span class="ctsym" style="font-size:clamp(3.5px,0.68cqw,50px)">BDX</span></a>
-    <a class="crytile" href="#row-xdce-crowd-sale" style="left:98.613%;top:59.931%;width:1.387%;height:1.468%;background:hsl(142,68%,55%)" data-chg-1h="-0.1000" data-chg-1d="3.5312" data-chg-7d="6.0000" data-chg-1m="8.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.8000" title="XDC Network (XDC) · $0.02924 · +3.53%"><span class="ctsym" style="font-size:clamp(3.5px,0.65cqw,50px)">XDC</span></a>
-    <div class="crycat-hdr" style="left:59.391%;top:61.398%;width:40.609%;height:3.077%">Others</div>
-    <a class="crytile" href="#row-tether" style="left:59.391%;top:64.475%;width:17.457%;height:35.525%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0083" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="0.0156" data-chg-6m="-0.0233" data-chg-ytd="0.0942" data-chg-1y="0.0000" title="Tether (USDT) · $0.9999 · -0.01%"><span class="ctsym" style="font-size:clamp(6px,7.27cqw,50px)">USDT</span><span class="ctpx" style="font-size:clamp(6px,4.06cqw,16px)">$0.9999</span><span class="ctpc" style="font-size:clamp(6px,4.06cqw,17px)">-0.01%</span></a>
-    <a class="crytile" href="#row-usd-coin" style="left:76.848%;top:64.475%;width:9.319%;height:26.992%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="0.0076" data-chg-6m="-0.0004" data-chg-ytd="0.0554" data-chg-1y="0.0000" title="USDC (USDC) · $0.9999 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,3.88cqw,50px)">USDC</span></a>
-    <a class="crytile" href="#row-figure-heloc" style="left:76.848%;top:91.468%;width:9.319%;height:8.532%;background:#1b2534" data-chg-1h="" data-chg-1d="" data-chg-7d="5.5000" data-chg-1m="4.9000" data-chg-3m="2.6846" data-chg-6m="1.2981" data-chg-ytd="2.4838" data-chg-1y="1.4000" title="Figure Heloc (FIGR_HELOC) · $1.05 · —"><span class="ctsym" style="font-size:clamp(3.5px,1.55cqw,50px)">FIGR_HELOC</span></a>
-    <a class="crytile" href="#row-dogecoin" style="left:86.167%;top:64.475%;width:5.504%;height:8.690%;background:hsl(4,68%,61%)" data-chg-1h="0.6000" data-chg-1d="-0.3405" data-chg-7d="9.2000" data-chg-1m="28.6000" data-chg-3m="5.1748" data-chg-6m="-0.3702" data-chg-ytd="-22.7292" data-chg-1y="-60.2000" title="Dogecoin (DOGE) · $0.09077 · -0.34%"><span class="ctsym" style="font-size:clamp(3.5px,2.29cqw,50px)">DOGE</span></a>
-    <a class="crytile" href="#row-rain" style="left:91.672%;top:64.475%;width:4.493%;height:8.690%;background:hsl(4,68%,57%)" data-chg-1h="0.1000" data-chg-1d="-2.6207" data-chg-7d="-2.6000" data-chg-1m="28.5000" data-chg-3m="22.6264" data-chg-6m="81.4380" data-chg-ytd="103.0453" data-chg-1y="" title="Rain (RAIN) · $0.01628 · -2.62%"><span class="ctsym" style="font-size:clamp(3.5px,1.87cqw,50px)">RAIN</span></a>
-    <a class="crytile" href="#row-usds" style="left:96.164%;top:64.475%;width:3.836%;height:8.690%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0114" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="USDS (USDS) · $0.9998 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,1.60cqw,50px)">USDS</span></a>
-    <a class="crytile" href="#row-whitebit" style="left:86.167%;top:73.166%;width:4.716%;height:6.467%;background:hsl(142,68%,55%)" data-chg-1h="0.2000" data-chg-1d="3.3399" data-chg-7d="5.6000" data-chg-1m="36.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="80.9000" title="WhiteBIT Coin (WBT) · $76.46 · +3.34%"><span class="ctsym" style="font-size:clamp(3.5px,2.62cqw,50px)">WBT</span></a>
-    <a class="crytile" href="#row-leo-token" style="left:90.883%;top:73.166%;width:4.417%;height:6.467%;background:hsl(4,68%,58%)" data-chg-1h="0.0000" data-chg-1d="-1.7599" data-chg-7d="-4.0000" data-chg-1m="-5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-3.6000" title="LEO Token (LEO) · $9.19 · -1.76%"><span class="ctsym" style="font-size:clamp(3.5px,2.45cqw,50px)">LEO</span></a>
-    <a class="crytile" href="#row-dai" style="left:95.300%;top:73.166%;width:2.408%;height:6.467%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0090" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="Dai (DAI) · $0.9998 · +0.01%"><span class="ctsym" style="font-size:clamp(3.5px,1.34cqw,50px)">DAI</span></a>
-    <a class="crytile" href="#row-ethena-usde" style="left:97.708%;top:73.166%;width:2.292%;height:6.467%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0063" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000" title="Ethena USDe (USDE) · $0.9997 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,0.95cqw,50px)">USDE</span></a>
-    <a class="crytile" href="#row-uniswap" style="left:86.167%;top:79.632%;width:2.489%;height:5.805%;background:hsl(4,68%,51%)" data-chg-1h="0.6000" data-chg-1d="-5.4404" data-chg-7d="31.3000" data-chg-1m="71.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-27.0000" title="Uniswap (UNI) · $6.86 · -5.44%"><span class="ctsym" style="font-size:clamp(3.5px,1.38cqw,50px)">UNI</span></a>
-    <a class="crytile" href="#row-usd1-wlfi" style="left:86.167%;top:85.437%;width:2.489%;height:5.779%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0053" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="USD1 (USD1) · $0.9997 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,1.04cqw,50px)">USD1</span></a>
-    <a class="crytile" href="#row-global-dollar" style="left:86.167%;top:91.216%;width:2.489%;height:4.431%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0017" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="Global Dollar (USDG) · $1.00 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.04cqw,50px)">USDG</span></a>
-    <a class="crytile" href="#row-shiba-inu" style="left:86.167%;top:95.648%;width:2.489%;height:4.352%;background:hsl(4,68%,58%)" data-chg-1h="0.7000" data-chg-1d="-1.8398" data-chg-7d="7.2000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.4000" title="Shiba Inu (SHIB) · $0.000005440 · -1.84%"><span class="ctsym" style="font-size:clamp(3.5px,1.04cqw,50px)">SHIB</span></a>
-    <a class="crytile" href="#row-paypal-usd" style="left:88.657%;top:79.632%;width:2.297%;height:4.252%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0174" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="PayPal USD (PYUSD) · $0.9998 · -0.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">PYUSD</span></a>
-    <a class="crytile" href="#row-blackrock-usd-institutional-digital-liquidity-fund" style="left:88.657%;top:83.884%;width:2.297%;height:4.169%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="BlackRock USD Institutional Digital Liquidity Fund (BUIDL) · $1.00 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">BUIDL</span></a>
-    <a class="crytile" href="#row-crypto-com-chain" style="left:88.657%;top:88.053%;width:2.297%;height:4.074%;background:hsl(4,68%,59%)" data-chg-1h="0.9000" data-chg-1d="-1.2701" data-chg-7d="0.3000" data-chg-1m="15.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-78.2000" title="Cronos (CRO) · $0.05702 · -1.27%"><span class="ctsym" style="font-size:clamp(3.5px,1.28cqw,50px)">CRO</span></a>
-    <a class="crytile" href="#row-tether-gold" style="left:88.657%;top:92.127%;width:2.297%;height:3.983%;background:hsl(4,68%,62%)" data-chg-1h="0.3000" data-chg-1d="-0.0944" data-chg-7d="-0.4000" data-chg-1m="2.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.8000" title="Tether Gold (XAUT) · $4,416 · -0.09%"><span class="ctsym" style="font-size:clamp(3.5px,0.96cqw,50px)">XAUT</span></a>
-    <a class="crytile" href="#row-memecore" style="left:88.657%;top:96.109%;width:2.297%;height:3.891%;background:hsl(142,68%,56%)" data-chg-1h="0.4000" data-chg-1d="3.1728" data-chg-7d="5.7000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.7000" title="MemeCore (M) · $1.16 · +3.17%"><span class="ctsym" style="font-size:clamp(3.5px,1.72cqw,50px)">M</span></a>
-    <a class="crytile" href="#row-hashnote-usyc" style="left:90.954%;top:79.632%;width:2.447%;height:3.627%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.1000" data-chg-1m="0.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="3.4000" title="Circle USYC (USYC) · $1.14 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.02cqw,50px)">USYC</span></a>
-    <a class="crytile" href="#row-okb" style="left:93.400%;top:79.632%;width:2.276%;height:3.627%;background:hsl(142,68%,58%)" data-chg-1h="0.0000" data-chg-1d="1.8770" data-chg-7d="3.0000" data-chg-1m="23.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-40.7000" title="OKB (OKB) · $116.26 · +1.88%"><span class="ctsym" style="font-size:clamp(3.5px,1.26cqw,50px)">OKB</span></a>
-    <a class="crytile" href="#row-ripple-usd" style="left:95.676%;top:79.632%;width:2.267%;height:3.627%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0015" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="Ripple USD (RLUSD) · $1.00 · -0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.76cqw,50px)">RLUSD</span></a>
-    <a class="crytile" href="#row-ondo-us-dollar-yield" style="left:97.943%;top:79.632%;width:2.057%;height:3.627%;background:hsl(4,68%,61%)" data-chg-1h="0.3000" data-chg-1d="-0.3271" data-chg-7d="0.1000" data-chg-1m="0.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.8000" title="Ondo US Dollar Yield (USDY) · $1.15 · -0.33%"><span class="ctsym" style="font-size:clamp(3.5px,0.86cqw,50px)">USDY</span></a>
-    <a class="crytile" href="#row-aster-2" style="left:90.954%;top:83.259%;width:1.958%;height:3.600%;background:hsl(4,68%,58%)" data-chg-1h="0.4000" data-chg-1d="-2.2172" data-chg-7d="10.3000" data-chg-1m="28.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Aster (ASTER) · $0.7710 · -2.22%"><span class="ctsym" style="font-size:clamp(3.5px,0.65cqw,50px)">ASTER</span></a>
-    <a class="crytile" href="#row-aave" style="left:90.954%;top:86.859%;width:1.958%;height:3.519%;background:hsl(4,68%,56%)" data-chg-1h="0.8000" data-chg-1d="-3.2082" data-chg-7d="6.5000" data-chg-1m="44.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.3000" title="Aave (AAVE) · $132.06 · -3.21%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">AAVE</span></a>
-    <a class="crytile" href="#row-pax-gold" style="left:90.954%;top:90.378%;width:1.958%;height:3.302%;background:hsl(4,68%,62%)" data-chg-1h="0.3000" data-chg-1d="-0.0567" data-chg-7d="-0.5000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.7000" title="PAX Gold (PAXG) · $4,420 · -0.06%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">PAXG</span></a>
-    <a class="crytile" href="#row-ondo-finance" style="left:90.954%;top:93.680%;width:1.958%;height:3.221%;background:hsl(4,68%,59%)" data-chg-1h="1.0000" data-chg-1d="-1.4154" data-chg-7d="11.2000" data-chg-1m="9.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.8000" title="Ondo (ONDO) · $0.3828 · -1.42%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">ONDO</span></a>
-    <a class="crytile" href="#row-world-liberty-financial" style="left:90.954%;top:96.901%;width:1.958%;height:3.099%;background:hsl(4,68%,60%)" data-chg-1h="0.4000" data-chg-1d="-0.8340" data-chg-7d="-2.1000" data-chg-1m="9.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.2000" title="World Liberty Financial (WLFI) · $0.05647 · -0.83%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">WLFI</span></a>
-    <a class="crytile" href="#row-pump-fun" style="left:92.911%;top:83.259%;width:1.828%;height:3.193%;background:hsl(142,68%,44%)" data-chg-1h="-1.2000" data-chg-1d="9.0651" data-chg-7d="-1.8000" data-chg-1m="80.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-11.2000" title="Pump.fun (PUMP) · $0.004369 · +9.07%"><span class="ctsym" style="font-size:clamp(3.5px,0.76cqw,50px)">PUMP</span></a>
-    <a class="crytile" href="#row-morpho" style="left:94.740%;top:83.259%;width:1.797%;height:3.193%;background:hsl(4,68%,52%)" data-chg-1h="1.4000" data-chg-1d="-5.1418" data-chg-7d="-0.3000" data-chg-1m="28.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="25.3000" title="Morpho (MORPHO) · $2.46 · -5.14%"><span class="ctsym" style="font-size:clamp(3.5px,0.50cqw,50px)">MORPHO</span></a>
-    <a class="crytile" href="#row-ethena" style="left:96.537%;top:83.259%;width:1.754%;height:3.193%;background:hsl(4,68%,48%)" data-chg-1h="0.5000" data-chg-1d="-7.1588" data-chg-7d="9.2000" data-chg-1m="82.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-77.9000" title="Ethena (ENA) · $0.1640 · -7.16%"><span class="ctsym" style="font-size:clamp(3.5px,0.97cqw,50px)">ENA</span></a>
-    <a class="crytile" href="#row-sky" style="left:98.291%;top:83.259%;width:1.709%;height:3.193%;background:hsl(4,68%,59%)" data-chg-1h="0.6000" data-chg-1d="-1.5599" data-chg-7d="1.2000" data-chg-1m="27.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-2.3000" title="Sky (SKY) · $0.06888 · -1.56%"><span class="ctsym" style="font-size:clamp(3.5px,0.95cqw,50px)">SKY</span></a>
-    <a class="crytile" href="#row-pepe" style="left:92.911%;top:86.452%;width:1.469%;height:3.510%;background:hsl(4,68%,60%)" data-chg-1h="1.4000" data-chg-1d="-1.1910" data-chg-7d="1.7000" data-chg-1m="27.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.4000" title="Pepe (PEPE) · $0.000003620 · -1.19%"><span class="ctsym" style="font-size:clamp(3.5px,0.61cqw,50px)">PEPE</span></a>
-    <a class="crytile" href="#row-htx-dao" style="left:92.911%;top:89.961%;width:1.469%;height:3.456%;background:hsl(4,68%,61%)" data-chg-1h="0.1000" data-chg-1d="-0.7237" data-chg-7d="1.2000" data-chg-1m="-7.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.4000" title="HTX DAO (HTX) · $0.000001670 · -0.72%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">HTX</span></a>
-    <a class="crytile" href="#row-usdd" style="left:92.911%;top:93.417%;width:1.469%;height:3.369%;background:hsl(4,68%,62%)" data-chg-1h="0.0000" data-chg-1d="-0.0508" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="USDD (USDD) · $0.9992 · -0.05%"><span class="ctsym" style="font-size:clamp(3.5px,0.61cqw,50px)">USDD</span></a>
-    <a class="crytile" href="#row-bitget-token" style="left:92.911%;top:96.787%;width:1.469%;height:3.213%;background:hsl(4,68%,59%)" data-chg-1h="0.1000" data-chg-1d="-1.2624" data-chg-7d="2.8000" data-chg-1m="21.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-58.7000" title="Bitget Token (BGB) · $1.99 · -1.26%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">BGB</span></a>
-    <a class="crytile" href="#row-usdgo" style="left:94.381%;top:86.452%;width:1.445%;height:3.207%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0228" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="USDGO (USDGO) · $1.00 · +0.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.48cqw,50px)">USDGO</span></a>
-    <a class="crytile" href="#row-falcon-finance" style="left:95.826%;top:86.452%;width:1.412%;height:3.207%;background:hsl(210,10%,45%)" data-chg-1h="-0.4000" data-chg-1d="-0.0148" data-chg-7d="0.1000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.3000" title="Falcon USD (USDF) · $0.9965 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,0.59cqw,50px)">USDF</span></a>
-    <a class="crytile" href="#row-bfusd" style="left:97.238%;top:86.452%;width:1.391%;height:3.207%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0386" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.1000" title="BFUSD (BFUSD) · $0.9997 · +0.04%"><span class="ctsym" style="font-size:clamp(3.5px,0.46cqw,50px)">BFUSD</span></a>
-    <a class="crytile" href="#row-united-stables" style="left:98.629%;top:86.452%;width:1.371%;height:3.207%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0089" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="United Stables (U) · $0.9993 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,1.42cqw,50px)">U</span></a>
-    <a class="crytile" href="#row-spiko-amundi-overnight-swap-fund-eur" style="left:94.381%;top:89.659%;width:1.519%;height:2.774%;background:hsl(142,68%,62%)" data-chg-1h="0.0000" data-chg-1d="0.1403" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Spiko Amundi Overnight Swap Fund (EUR) (EURSAFO) · $1.18 · +0.14%"><span class="ctsym" style="font-size:clamp(3.5px,0.36cqw,50px)">EURSAFO</span></a>
-    <a class="crytile" href="#row-bitway" style="left:94.381%;top:92.432%;width:1.519%;height:2.710%;background:hsl(142,68%,60%)" data-chg-1h="0.8000" data-chg-1d="0.8283" data-chg-7d="10.7000" data-chg-1m="120.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Bitway (BTW) · $0.4495 · +0.83%"><span class="ctsym" style="font-size:clamp(3.5px,0.84cqw,50px)">BTW</span></a>
-    <a class="crytile" href="#row-lighter" style="left:94.381%;top:95.143%;width:1.519%;height:2.621%;background:hsl(142,68%,52%)" data-chg-1h="0.4000" data-chg-1d="4.8346" data-chg-7d="33.0000" data-chg-1m="106.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Lighter (LIT) · $4.71 · +4.83%"><span class="ctsym" style="font-size:clamp(3.5px,0.84cqw,50px)">LIT</span></a>
-    <a class="crytile" href="#row-gatechain-token" style="left:94.381%;top:97.764%;width:1.519%;height:2.236%;background:hsl(142,68%,56%)" data-chg-1h="1.9000" data-chg-1d="2.9612" data-chg-7d="17.2000" data-chg-1m="39.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-44.3000" title="Gate (GT) · $9.42 · +2.96%"><span class="ctsym" style="font-size:clamp(3.5px,0.99cqw,50px)">GT</span></a>
-    <a class="crytile" href="#row-blockchain-capital" style="left:95.900%;top:89.659%;width:1.402%;height:2.333%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="307.9000" title="Blockchain Capital (BCAP) · $106.22 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.58cqw,50px)">BCAP</span></a>
-    <a class="crytile" href="#row-kucoin-shares" style="left:97.302%;top:89.659%;width:1.393%;height:2.333%;background:hsl(4,68%,58%)" data-chg-1h="0.0000" data-chg-1d="-1.7904" data-chg-7d="-1.2000" data-chg-1m="5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.2000" title="KuCoin (KCS) · $7.01 · -1.79%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">KCS</span></a>
-    <a class="crytile" href="#row-eutbl" style="left:98.695%;top:89.659%;width:1.305%;height:2.333%;background:hsl(142,68%,62%)" data-chg-1h="0.0000" data-chg-1d="0.1290" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="1.2000" title="Spiko EU T-Bills Money Market Fund (EUTBL) · $1.23 · +0.13%"><span class="ctsym" style="font-size:clamp(3.5px,0.44cqw,50px)">EUTBL</span></a>
-    <a class="crytile" href="#row-venice-token" style="left:95.900%;top:91.992%;width:1.393%;height:2.139%;background:hsl(142,68%,45%)" data-chg-1h="0.1000" data-chg-1d="8.3439" data-chg-7d="9.9000" data-chg-1m="63.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="601.3000" title="Venice Token (VVV) · $18.43 · +8.34%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">VVV</span></a>
-    <a class="crytile" href="#row-just" style="left:97.293%;top:91.992%;width:1.381%;height:2.139%;background:hsl(4,68%,54%)" data-chg-1h="-0.6000" data-chg-1d="-3.8028" data-chg-7d="6.8000" data-chg-1m="6.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="216.7000" title="JUST (JST) · $0.1067 · -3.80%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">JST</span></a>
-    <a class="crytile" href="#row-jupiter-exchange-solana" style="left:98.674%;top:91.992%;width:1.326%;height:2.139%;background:hsl(4,68%,48%)" data-chg-1h="1.3000" data-chg-1d="-7.1542" data-chg-7d="12.8000" data-chg-1m="38.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-49.8000" title="Jupiter (JUP) · $0.2527 · -7.15%"><span class="ctsym" style="font-size:clamp(3.5px,0.74cqw,50px)">JUP</span></a>
-    <a class="crytile" href="#row-nexo" style="left:95.900%;top:94.132%;width:1.391%;height:2.035%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0197" data-chg-7d="-0.6000" data-chg-1m="13.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.0000" title="NEXO (NEXO) · $0.8368 · +0.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.58cqw,50px)">NEXO</span></a>
-    <a class="crytile" href="#row-janus-henderson-anemoy-treasury-fund" style="left:95.900%;top:96.167%;width:1.391%;height:1.944%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Janus Henderson Anemoy Treasury Fund (JTRSY) · $1.12 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.46cqw,50px)">JTRSY</span></a>
-    <a class="crytile" href="#row-superstate-short-duration-us-government-securities-fund-ustb" style="left:95.900%;top:98.111%;width:1.391%;height:1.889%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.1000" data-chg-1m="0.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="3.6000" title="Invesco Short Duration US Government Securities Fund (USTB) · $11.20 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.58cqw,50px)">USTB</span></a>
-    <a class="crytile" href="#row-stable-2" style="left:97.290%;top:94.132%;width:1.404%;height:1.845%;background:hsl(142,68%,54%)" data-chg-1h="0.2000" data-chg-1d="3.7794" data-chg-7d="4.0000" data-chg-1m="-11.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="​​Stable (STABLE) · $0.02933 · +3.78%"><span class="ctsym" style="font-size:clamp(3.5px,0.39cqw,50px)">STABLE</span></a>
-    <a class="crytile" href="#row-pancakeswap-token" style="left:98.694%;top:94.132%;width:1.306%;height:1.845%;background:hsl(4,68%,60%)" data-chg-1h="0.5000" data-chg-1d="-0.7858" data-chg-7d="19.5000" data-chg-1m="54.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-8.1000" title="PancakeSwap (CAKE) · $2.22 · -0.79%"><span class="ctsym" style="font-size:clamp(3.5px,0.54cqw,50px)">CAKE</span></a>
-    <a class="crytile" href="#row-janus-henderson-anemoy-aaa-clo-fund" style="left:97.290%;top:95.976%;width:1.184%;height:2.030%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.1000" data-chg-1m="0.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Janus Henderson Anemoy AAA CLO Fund (JAAA) · $1.05 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.49cqw,50px)">JAAA</span></a>
-    <a class="crytile" href="#row-gho" style="left:97.290%;top:98.007%;width:1.184%;height:1.993%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0162" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000" title="GHO (GHO) · $0.9988 · -0.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.66cqw,50px)">GHO</span></a>
-    <a class="crytile" href="#row-official-trump" style="left:98.474%;top:95.976%;width:0.771%;height:2.746%;background:hsl(4,68%,58%)" data-chg-1h="2.4000" data-chg-1d="-1.8341" data-chg-7d="-5.0000" data-chg-1m="55.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.8000" title="Official Trump (TRUMP) · $2.29 · -1.83%"><span class="ctsym" style="font-size:clamp(3.5px,0.26cqw,50px)">TRUMP</span></a>
-    <a class="crytile" href="#row-aerodrome-finance" style="left:99.246%;top:95.976%;width:0.754%;height:2.746%;background:hsl(142,68%,42%)" data-chg-1h="-0.6000" data-chg-1d="12.1204" data-chg-7d="30.4000" data-chg-1m="41.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-45.6000" title="Aerodrome Finance (AERO) · $0.6212 · +12.12%"><span class="ctsym" style="font-size:clamp(3.5px,0.31cqw,50px)">AERO</span></a>
-    <a class="crytile" href="#row-curve-dao-token" style="left:98.474%;top:98.723%;width:1.526%;height:1.277%;background:hsl(4,68%,56%)" data-chg-1h="0.7000" data-chg-1d="-3.1600" data-chg-7d="9.2000" data-chg-1m="62.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000" title="Curve DAO (CRV) · $0.3704 · -3.16%"><span class="ctsym" style="font-size:clamp(3.5px,0.56cqw,50px)">CRV</span></a>
+    <div class="crycat-hdr" style="left:0.000%;top:0.000%;width:59.419%;height:3.077%">Bitcoin &amp; Derivatives</div>
+    <a class="crytile" href="#row-bitcoin" style="left:0.000%;top:3.077%;width:58.334%;height:96.923%;background:hsl(4,68%,60%)" data-chg-1h="0.3000" data-chg-1d="-1.1401" data-chg-7d="0.7000" data-chg-1m="21.9000" data-chg-3m="25.4005" data-chg-6m="15.5755" data-chg-ytd="-9.6900" data-chg-1y="-28.9000" title="Bitcoin (BTC) · $79,198 · -1.14% · 58.3% dominance"><span class="ctsym" style="font-size:clamp(6px,21.17cqw,50px)">BTC</span><span class="ctpx" style="font-size:clamp(6px,8.06cqw,16px)">$79,198</span><span class="ctpc" style="font-size:clamp(6px,8.06cqw,17px)">-1.14%</span><span class="ctdom" style="font-size:clamp(6px,6.48cqw,14px)">58.3% dominance</span></a>
+    <a class="crytile" href="#row-zcash" style="left:58.334%;top:3.077%;width:1.084%;height:63.021%;background:hsl(4,68%,52%)" data-chg-1h="1.0000" data-chg-1d="-5.1864" data-chg-7d="34.5000" data-chg-1m="125.2000" data-chg-3m="148.0493" data-chg-6m="432.9762" data-chg-ytd="122.5496" data-chg-1y="2268.9000" title="Zcash (ZEC) · $1,136 · -5.19%"><span class="ctsym" style="font-size:clamp(3.5px,0.60cqw,50px)">ZEC</span></a>
+    <a class="crytile" href="#row-bitcoin-cash" style="left:58.334%;top:66.098%;width:1.084%;height:17.134%;background:hsl(4,68%,62%)" data-chg-1h="0.9000" data-chg-1d="-0.1650" data-chg-7d="5.0000" data-chg-1m="20.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.1000" title="Bitcoin Cash (BCH) · $260.19 · -0.17%"><span class="ctsym" style="font-size:clamp(3.5px,0.60cqw,50px)">BCH</span></a>
+    <a class="crytile" href="#row-litecoin" style="left:58.334%;top:83.233%;width:1.084%;height:14.126%;background:hsl(4,68%,60%)" data-chg-1h="-0.1000" data-chg-1d="-0.8087" data-chg-7d="13.8000" data-chg-1m="20.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000" title="Litecoin (LTC) · $55.54 · -0.81%"><span class="ctsym" style="font-size:clamp(3.5px,0.60cqw,50px)">LTC</span></a>
+    <a class="crytile" href="#row-dash" style="left:58.334%;top:97.359%;width:1.084%;height:2.641%;background:hsl(4,68%,42%)" data-chg-1h="-1.7000" data-chg-1d="-9.7663" data-chg-7d="40.6000" data-chg-1m="98.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="155.0000" title="Dash (DASH) · $62.79 · -9.77%"><span class="ctsym" style="font-size:clamp(3.5px,0.45cqw,50px)">DASH</span></a>
+    <div class="crycat-hdr" style="left:59.419%;top:0.000%;width:40.581%;height:3.077%">Infrastructure &amp; Platform</div>
+    <a class="crytile" href="#row-ethereum" style="left:59.419%;top:3.077%;width:18.147%;height:58.341%;background:hsl(4,68%,60%)" data-chg-1h="0.4000" data-chg-1d="-0.9262" data-chg-7d="0.9000" data-chg-1m="30.0000" data-chg-3m="47.2580" data-chg-6m="24.9078" data-chg-ytd="-16.1830" data-chg-1y="-42.3000" title="Ethereum (ETH) · $2,490 · -0.93%"><span class="ctsym" style="font-size:clamp(6px,10.08cqw,50px)">ETH</span><span class="ctpx" style="font-size:clamp(6px,5.04cqw,16px)">$2,490</span><span class="ctpc" style="font-size:clamp(6px,5.04cqw,17px)">-0.93%</span></a>
+    <a class="crytile" href="#row-binancecoin" style="left:77.565%;top:3.077%;width:11.871%;height:28.941%;background:hsl(4,68%,59%)" data-chg-1h="0.3000" data-chg-1d="-1.6078" data-chg-7d="7.1000" data-chg-1m="23.4000" data-chg-3m="22.9368" data-chg-6m="16.4812" data-chg-ytd="-14.2784" data-chg-1y="-15.5000" title="BNB (BNB) · $740.52 · -1.61%"><span class="ctsym" style="font-size:clamp(6px,6.60cqw,50px)">BNB</span><span class="ctpx" style="font-size:clamp(6px,2.83cqw,16px)">$740.52</span><span class="ctpc" style="font-size:clamp(6px,3.30cqw,17px)">-1.61%</span></a>
+    <a class="crytile" href="#row-ripple" style="left:89.437%;top:3.077%;width:10.563%;height:28.941%;background:hsl(4,68%,59%)" data-chg-1h="0.7000" data-chg-1d="-1.4805" data-chg-7d="1.3000" data-chg-1m="34.7000" data-chg-3m="19.8884" data-chg-6m="2.0492" data-chg-ytd="-23.9350" data-chg-1y="-51.4000" title="XRP (XRP) · $1.40 · -1.48%"><span class="ctsym" style="font-size:clamp(3.5px,5.87cqw,50px)">XRP</span></a>
+    <a class="crytile" href="#row-solana" style="left:77.565%;top:32.018%;width:10.972%;height:19.326%;background:hsl(4,68%,58%)" data-chg-1h="0.4000" data-chg-1d="-2.0341" data-chg-7d="0.7000" data-chg-1m="36.9000" data-chg-3m="55.3683" data-chg-6m="22.0758" data-chg-ytd="-16.6486" data-chg-1y="-49.9000" title="Solana (SOL) · $103.83 · -2.03%"><span class="ctsym" style="font-size:clamp(3.5px,6.10cqw,50px)">SOL</span></a>
+    <a class="crytile" href="#row-tron" style="left:77.565%;top:51.343%;width:10.972%;height:10.075%;background:hsl(4,68%,61%)" data-chg-1h="0.1000" data-chg-1d="-0.3025" data-chg-7d="0.5000" data-chg-1m="1.7000" data-chg-3m="2.4131" data-chg-6m="17.1368" data-chg-ytd="17.6317" data-chg-1y="1.3000" title="TRON (TRX) · $0.3342 · -0.30%"><span class="ctsym" style="font-size:clamp(3.5px,4.45cqw,50px)">TRX</span></a>
+    <a class="crytile" href="#row-hyperliquid" style="left:88.537%;top:32.018%;width:7.564%;height:8.697%;background:hsl(4,68%,55%)" data-chg-1h="0.2000" data-chg-1d="-3.2690" data-chg-7d="1.0000" data-chg-1m="54.9000" data-chg-3m="33.4098" data-chg-6m="145.4999" data-chg-ytd="234.4469" data-chg-1y="80.8000" title="Hyperliquid (HYPE) · $84.87 · -3.27%"><span class="ctsym" style="font-size:clamp(3.5px,3.15cqw,50px)">HYPE</span></a>
+    <a class="crytile" href="#row-monero" style="left:96.101%;top:32.018%;width:3.899%;height:8.697%;background:hsl(4,68%,54%)" data-chg-1h="1.4000" data-chg-1d="-3.9844" data-chg-7d="0.3000" data-chg-1m="37.3000" data-chg-3m="64.5505" data-chg-6m="53.5854" data-chg-ytd="19.4376" data-chg-1y="91.3000" title="Monero (XMR) · $517.62 · -3.98%"><span class="ctsym" style="font-size:clamp(3.5px,2.17cqw,50px)">XMR</span></a>
+    <a class="crytile" href="#row-chainlink" style="left:88.537%;top:40.714%;width:4.135%;height:8.043%;background:hsl(4,68%,55%)" data-chg-1h="0.5000" data-chg-1d="-3.6228" data-chg-7d="12.7000" data-chg-1m="53.7000" data-chg-3m="59.6363" data-chg-6m="32.6455" data-chg-ytd="4.5918" data-chg-1y="-43.3000" title="Chainlink (LINK) · $12.76 · -3.62%"><span class="ctsym" style="font-size:clamp(3.5px,1.72cqw,50px)">LINK</span></a>
+    <a class="crytile" href="#row-cardano" style="left:88.537%;top:48.758%;width:4.135%;height:6.991%;background:hsl(4,68%,58%)" data-chg-1h="1.1000" data-chg-1d="-1.8242" data-chg-7d="11.2000" data-chg-1m="11.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000" title="Cardano (ADA) · $0.2212 · -1.82%"><span class="ctsym" style="font-size:clamp(3.5px,2.30cqw,50px)">ADA</span></a>
+    <a class="crytile" href="#row-stellar" style="left:88.537%;top:55.749%;width:4.135%;height:5.669%;background:hsl(142,68%,57%)" data-chg-1h="1.4000" data-chg-1d="2.3184" data-chg-7d="9.2000" data-chg-1m="17.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.3000" title="Stellar (XLM) · $0.1933 · +2.32%"><span class="ctsym" style="font-size:clamp(3.5px,2.30cqw,50px)">XLM</span></a>
+    <a class="crytile" href="#row-canton-network" style="left:92.673%;top:40.714%;width:2.626%;height:5.535%;background:hsl(4,68%,52%)" data-chg-1h="0.8000" data-chg-1d="-5.0715" data-chg-7d="-13.3000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Canton (CC) · $0.1055 · -5.07%"><span class="ctsym" style="font-size:clamp(3.5px,2.19cqw,50px)">CC</span></a>
+    <a class="crytile" href="#row-the-open-network" style="left:95.298%;top:40.714%;width:2.432%;height:5.535%;background:hsl(4,68%,56%)" data-chg-1h="0.2000" data-chg-1d="-3.0967" data-chg-7d="-1.0000" data-chg-1m="2.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.1000" title="Gram (prev. Toncoin) (GRAM) · $1.39 · -3.10%"><span class="ctsym" style="font-size:clamp(3.5px,1.01cqw,50px)">GRAM</span></a>
+    <a class="crytile" href="#row-hedera-hashgraph" style="left:97.731%;top:40.714%;width:2.269%;height:5.535%;background:hsl(142,68%,62%)" data-chg-1h="0.2000" data-chg-1d="0.2198" data-chg-7d="11.3000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.7000" title="Hedera (HBAR) · $0.08225 · +0.22%"><span class="ctsym" style="font-size:clamp(3.5px,0.95cqw,50px)">HBAR</span></a>
+    <a class="crytile" href="#row-avalanche-2" style="left:92.673%;top:46.249%;width:2.578%;height:4.715%;background:hsl(142,68%,58%)" data-chg-1h="0.3000" data-chg-1d="2.0161" data-chg-7d="11.9000" data-chg-1m="25.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-67.2000" title="Avalanche (AVAX) · $8.08 · +2.02%"><span class="ctsym" style="font-size:clamp(3.5px,1.07cqw,50px)">AVAX</span></a>
+    <a class="crytile" href="#row-sui" style="left:95.251%;top:46.249%;width:2.502%;height:4.715%;background:hsl(142,68%,60%)" data-chg-1h="0.9000" data-chg-1d="1.1632" data-chg-7d="13.0000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.9000" title="Sui (SUI) · $0.8266 · +1.16%"><span class="ctsym" style="font-size:clamp(3.5px,1.39cqw,50px)">SUI</span></a>
+    <a class="crytile" href="#row-near" style="left:97.753%;top:46.249%;width:2.247%;height:4.715%;background:hsl(4,68%,55%)" data-chg-1h="0.7000" data-chg-1d="-3.5551" data-chg-7d="20.9000" data-chg-1m="42.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-6.3000" title="NEAR Protocol (NEAR) · $2.33 · -3.56%"><span class="ctsym" style="font-size:clamp(3.5px,0.94cqw,50px)">NEAR</span></a>
+    <a class="crytile" href="#row-bittensor" style="left:92.673%;top:50.965%;width:2.126%;height:4.087%;background:hsl(4,68%,58%)" data-chg-1h="0.9000" data-chg-1d="-2.0983" data-chg-7d="13.2000" data-chg-1m="30.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.2000" title="Bittensor (TAO) · $259.83 · -2.10%"><span class="ctsym" style="font-size:clamp(3.5px,1.18cqw,50px)">TAO</span></a>
+    <a class="crytile" href="#row-mantle" style="left:92.673%;top:55.052%;width:2.126%;height:3.393%;background:hsl(142,68%,56%)" data-chg-1h="0.3000" data-chg-1d="3.0007" data-chg-7d="13.7000" data-chg-1m="44.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.4000" title="Mantle (MNT) · $0.6269 · +3.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.18cqw,50px)">MNT</span></a>
+    <a class="crytile" href="#row-polkadot" style="left:92.673%;top:58.445%;width:2.126%;height:2.974%;background:hsl(142,68%,54%)" data-chg-1h="1.9000" data-chg-1d="4.1657" data-chg-7d="27.1000" data-chg-1m="30.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000" title="Polkadot (DOT) · $1.07 · +4.17%"><span class="ctsym" style="font-size:clamp(3.5px,1.18cqw,50px)">DOT</span></a>
+    <a class="crytile" href="#row-worldcoin-wld" style="left:94.799%;top:50.965%;width:1.950%;height:3.162%;background:hsl(142,68%,42%)" data-chg-1h="1.8000" data-chg-1d="14.3100" data-chg-7d="31.4000" data-chg-1m="57.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-53.7000" title="Worldcoin (WLD) · $0.4814 · +14.31%"><span class="ctsym" style="font-size:clamp(3.5px,1.08cqw,50px)">WLD</span></a>
+    <a class="crytile" href="#row-internet-computer" style="left:96.748%;top:50.965%;width:1.856%;height:3.162%;background:hsl(142,68%,42%)" data-chg-1h="0.6000" data-chg-1d="10.0699" data-chg-7d="24.8000" data-chg-1m="36.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.9000" title="Internet Computer (ICP) · $3.03 · +10.07%"><span class="ctsym" style="font-size:clamp(3.5px,1.03cqw,50px)">ICP</span></a>
+    <a class="crytile" href="#row-ethereum-classic" style="left:98.604%;top:50.965%;width:1.396%;height:3.162%;background:hsl(142,68%,60%)" data-chg-1h="0.9000" data-chg-1d="0.9582" data-chg-7d="8.3000" data-chg-1m="21.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-61.3000" title="Ethereum Classic (ETC) · $8.01 · +0.96%"><span class="ctsym" style="font-size:clamp(3.5px,0.78cqw,50px)">ETC</span></a>
+    <a class="crytile" href="#row-arbitrum" style="left:94.799%;top:54.127%;width:1.527%;height:2.562%;background:hsl(4,68%,42%)" data-chg-1h="0.5000" data-chg-1d="-11.5183" data-chg-7d="58.6000" data-chg-1m="116.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.8000" title="Arbitrum (ARB) · $0.1682 · -11.52%"><span class="ctsym" style="font-size:clamp(3.5px,0.85cqw,50px)">ARB</span></a>
+    <a class="crytile" href="#row-pi-network" style="left:94.799%;top:56.689%;width:1.527%;height:2.393%;background:hsl(4,68%,61%)" data-chg-1h="-0.1000" data-chg-1d="-0.6164" data-chg-7d="3.5000" data-chg-1m="2.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.7000" title="Pi Network (PI) · $0.09416 · -0.62%"><span class="ctsym" style="font-size:clamp(3.5px,1.06cqw,50px)">PI</span></a>
+    <a class="crytile" href="#row-kaspa" style="left:94.799%;top:59.082%;width:1.527%;height:2.336%;background:hsl(142,68%,42%)" data-chg-1h="1.1000" data-chg-1d="15.5110" data-chg-7d="31.2000" data-chg-1m="36.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-54.4000" title="Kaspa (KAS) · $0.03699 · +15.51%"><span class="ctsym" style="font-size:clamp(3.5px,0.85cqw,50px)">KAS</span></a>
+    <a class="crytile" href="#row-polygon-ecosystem-token" style="left:96.326%;top:54.127%;width:1.303%;height:2.722%;background:hsl(4,68%,56%)" data-chg-1h="0.1000" data-chg-1d="-3.0099" data-chg-7d="5.3000" data-chg-1m="24.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.9000" title="POL (ex-MATIC) (POL) · $0.09506 · -3.01%"><span class="ctsym" style="font-size:clamp(3.5px,0.72cqw,50px)">POL</span></a>
+    <a class="crytile" href="#row-quant-network" style="left:97.629%;top:54.127%;width:1.239%;height:2.722%;background:hsl(4,68%,61%)" data-chg-1h="1.1000" data-chg-1d="-0.7037" data-chg-7d="9.3000" data-chg-1m="12.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.8000" title="Quant (QNT) · $66.58 · -0.70%"><span class="ctsym" style="font-size:clamp(3.5px,0.69cqw,50px)">QNT</span></a>
+    <a class="crytile" href="#row-algorand" style="left:98.869%;top:54.127%;width:1.131%;height:2.722%;background:hsl(142,68%,60%)" data-chg-1h="1.8000" data-chg-1d="1.1759" data-chg-7d="13.9000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.9000" title="Algorand (ALGO) · $0.09780 · +1.18%"><span class="ctsym" style="font-size:clamp(3.5px,0.47cqw,50px)">ALGO</span></a>
+    <a class="crytile" href="#row-cosmos" style="left:96.326%;top:56.849%;width:1.274%;height:2.364%;background:hsl(142,68%,58%)" data-chg-1h="0.8000" data-chg-1d="1.9749" data-chg-7d="11.1000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.6000" title="Cosmos Hub (ATOM) · $1.63 · +1.97%"><span class="ctsym" style="font-size:clamp(3.5px,0.53cqw,50px)">ATOM</span></a>
+    <a class="crytile" href="#row-render-token" style="left:96.326%;top:59.213%;width:1.274%;height:2.205%;background:hsl(4,68%,62%)" data-chg-1h="0.6000" data-chg-1d="-0.2297" data-chg-7d="9.1000" data-chg-1m="17.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.6000" title="Render (RENDER) · $1.55 · -0.23%"><span class="ctsym" style="font-size:clamp(3.5px,0.35cqw,50px)">RENDER</span></a>
+    <a class="crytile" href="#row-filecoin" style="left:97.600%;top:56.849%;width:1.009%;height:2.403%;background:hsl(142,68%,56%)" data-chg-1h="0.9000" data-chg-1d="3.1574" data-chg-7d="23.3000" data-chg-1m="18.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.2000" title="Filecoin (FIL) · $0.8412 · +3.16%"><span class="ctsym" style="font-size:clamp(3.5px,0.56cqw,50px)">FIL</span></a>
+    <a class="crytile" href="#row-vechain" style="left:97.600%;top:59.252%;width:1.009%;height:2.166%;background:hsl(142,68%,58%)" data-chg-1h="1.0000" data-chg-1d="1.8876" data-chg-7d="6.2000" data-chg-1m="52.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-69.5000" title="VeChain (VET) · $0.007294 · +1.89%"><span class="ctsym" style="font-size:clamp(3.5px,0.56cqw,50px)">VET</span></a>
+    <a class="crytile" href="#row-injective-protocol" style="left:98.609%;top:56.849%;width:1.391%;height:1.566%;background:hsl(142,68%,42%)" data-chg-1h="1.9000" data-chg-1d="15.8784" data-chg-7d="25.9000" data-chg-1m="40.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-52.7000" title="Injective (INJ) · $6.25 · +15.88%"><span class="ctsym" style="font-size:clamp(3.5px,0.69cqw,50px)">INJ</span></a>
+    <a class="crytile" href="#row-beldex" style="left:98.609%;top:58.416%;width:1.391%;height:1.539%;background:hsl(4,68%,61%)" data-chg-1h="0.0000" data-chg-1d="-0.7066" data-chg-7d="-1.8000" data-chg-1m="-15.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.1000" title="Beldex (BDX) · $0.07806 · -0.71%"><span class="ctsym" style="font-size:clamp(3.5px,0.68cqw,50px)">BDX</span></a>
+    <a class="crytile" href="#row-xdce-crowd-sale" style="left:98.609%;top:59.954%;width:1.391%;height:1.464%;background:hsl(142,68%,55%)" data-chg-1h="-0.1000" data-chg-1d="3.7345" data-chg-7d="6.0000" data-chg-1m="8.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.8000" title="XDC Network (XDC) · $0.02930 · +3.73%"><span class="ctsym" style="font-size:clamp(3.5px,0.65cqw,50px)">XDC</span></a>
+    <div class="crycat-hdr" style="left:59.419%;top:61.418%;width:40.581%;height:3.077%">Others</div>
+    <a class="crytile" href="#row-tether" style="left:59.419%;top:64.495%;width:17.437%;height:35.505%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0088" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="0.0156" data-chg-6m="-0.0233" data-chg-ytd="0.0942" data-chg-1y="0.0000" title="Tether (USDT) · $0.9999 · -0.01%"><span class="ctsym" style="font-size:clamp(6px,7.27cqw,50px)">USDT</span><span class="ctpx" style="font-size:clamp(6px,4.06cqw,16px)">$0.9999</span><span class="ctpc" style="font-size:clamp(6px,4.06cqw,17px)">-0.01%</span></a>
+    <a class="crytile" href="#row-usd-coin" style="left:76.855%;top:64.495%;width:9.308%;height:26.978%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0008" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="0.0076" data-chg-6m="-0.0004" data-chg-ytd="0.0554" data-chg-1y="0.0000" title="USDC (USDC) · $0.9999 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,3.88cqw,50px)">USDC</span></a>
+    <a class="crytile" href="#row-figure-heloc" style="left:76.855%;top:91.473%;width:9.308%;height:8.527%;background:#1b2534" data-chg-1h="" data-chg-1d="" data-chg-7d="5.5000" data-chg-1m="4.9000" data-chg-3m="2.6846" data-chg-6m="1.2981" data-chg-ytd="2.4838" data-chg-1y="1.4000" title="Figure Heloc (FIGR_HELOC) · $1.05 · —"><span class="ctsym" style="font-size:clamp(3.5px,1.55cqw,50px)">FIGR_HELOC</span></a>
+    <a class="crytile" href="#row-dogecoin" style="left:86.164%;top:64.495%;width:5.524%;height:8.696%;background:hsl(142,68%,61%)" data-chg-1h="0.6000" data-chg-1d="0.4000" data-chg-7d="9.2000" data-chg-1m="28.6000" data-chg-3m="5.1748" data-chg-6m="-0.3702" data-chg-ytd="-22.7292" data-chg-1y="-60.2000" title="Dogecoin (DOGE) · $0.09133 · +0.40%"><span class="ctsym" style="font-size:clamp(3.5px,2.30cqw,50px)">DOGE</span></a>
+    <a class="crytile" href="#row-rain" style="left:91.688%;top:64.495%;width:4.485%;height:8.696%;background:hsl(4,68%,57%)" data-chg-1h="0.1000" data-chg-1d="-2.5648" data-chg-7d="-2.6000" data-chg-1m="28.5000" data-chg-3m="22.6264" data-chg-6m="81.4380" data-chg-ytd="103.0453" data-chg-1y="" title="Rain (RAIN) · $0.01629 · -2.56%"><span class="ctsym" style="font-size:clamp(3.5px,1.87cqw,50px)">RAIN</span></a>
+    <a class="crytile" href="#row-usds" style="left:96.173%;top:64.495%;width:3.827%;height:8.696%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0013" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="0.0153" data-chg-6m="-0.0176" data-chg-ytd="-0.0004" data-chg-1y="0.0000" title="USDS (USDS) · $0.9999 · -0.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.59cqw,50px)">USDS</span></a>
+    <a class="crytile" href="#row-whitebit" style="left:86.164%;top:73.191%;width:4.721%;height:6.464%;background:hsl(142,68%,54%)" data-chg-1h="0.2000" data-chg-1d="3.7802" data-chg-7d="5.6000" data-chg-1m="36.3000" data-chg-3m="71.0962" data-chg-6m="43.8364" data-chg-ytd="36.4858" data-chg-1y="80.9000" title="WhiteBIT Coin (WBT) · $76.65 · +3.78%"><span class="ctsym" style="font-size:clamp(3.5px,2.62cqw,50px)">WBT</span></a>
+    <a class="crytile" href="#row-leo-token" style="left:90.885%;top:73.191%;width:4.420%;height:6.464%;background:hsl(4,68%,58%)" data-chg-1h="0.0000" data-chg-1d="-2.1492" data-chg-7d="-4.0000" data-chg-1m="-5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-3.6000" title="LEO Token (LEO) · $9.20 · -2.15%"><span class="ctsym" style="font-size:clamp(3.5px,2.46cqw,50px)">LEO</span></a>
+    <a class="crytile" href="#row-dai" style="left:95.304%;top:73.191%;width:2.406%;height:6.464%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0193" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="Dai (DAI) · $0.9999 · -0.02%"><span class="ctsym" style="font-size:clamp(3.5px,1.34cqw,50px)">DAI</span></a>
+    <a class="crytile" href="#row-ethena-usde" style="left:97.710%;top:73.191%;width:2.290%;height:6.464%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0082" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000" title="Ethena USDe (USDE) · $0.9997 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,0.95cqw,50px)">USDE</span></a>
+    <a class="crytile" href="#row-uniswap" style="left:86.164%;top:79.655%;width:2.489%;height:5.793%;background:hsl(4,68%,53%)" data-chg-1h="0.6000" data-chg-1d="-4.6882" data-chg-7d="31.3000" data-chg-1m="71.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-27.0000" title="Uniswap (UNI) · $6.86 · -4.69%"><span class="ctsym" style="font-size:clamp(3.5px,1.38cqw,50px)">UNI</span></a>
+    <a class="crytile" href="#row-usd1-wlfi" style="left:86.164%;top:85.448%;width:2.489%;height:5.769%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0028" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="USD1 (USD1) · $0.9997 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.04cqw,50px)">USD1</span></a>
+    <a class="crytile" href="#row-global-dollar" style="left:86.164%;top:91.217%;width:2.489%;height:4.424%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0018" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="Global Dollar (USDG) · $1.00 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.04cqw,50px)">USDG</span></a>
+    <a class="crytile" href="#row-shiba-inu" style="left:86.164%;top:95.640%;width:2.489%;height:4.360%;background:hsl(4,68%,59%)" data-chg-1h="0.7000" data-chg-1d="-1.3404" data-chg-7d="7.2000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.4000" title="Shiba Inu (SHIB) · $0.000005460 · -1.34%"><span class="ctsym" style="font-size:clamp(3.5px,1.04cqw,50px)">SHIB</span></a>
+    <a class="crytile" href="#row-paypal-usd" style="left:88.653%;top:79.655%;width:2.296%;height:4.247%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0080" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="PayPal USD (PYUSD) · $0.9999 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">PYUSD</span></a>
+    <a class="crytile" href="#row-blackrock-usd-institutional-digital-liquidity-fund" style="left:88.653%;top:83.902%;width:2.296%;height:4.163%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="BlackRock USD Institutional Digital Liquidity Fund (BUIDL) · $1.00 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">BUIDL</span></a>
+    <a class="crytile" href="#row-crypto-com-chain" style="left:88.653%;top:88.065%;width:2.296%;height:4.078%;background:hsl(4,68%,60%)" data-chg-1h="0.9000" data-chg-1d="-1.1524" data-chg-7d="0.3000" data-chg-1m="15.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-78.2000" title="Cronos (CRO) · $0.05715 · -1.15%"><span class="ctsym" style="font-size:clamp(3.5px,1.28cqw,50px)">CRO</span></a>
+    <a class="crytile" href="#row-tether-gold" style="left:88.653%;top:92.142%;width:2.296%;height:3.979%;background:hsl(4,68%,62%)" data-chg-1h="0.3000" data-chg-1d="-0.0528" data-chg-7d="-0.4000" data-chg-1m="2.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.8000" title="Tether Gold (XAUT) · $4,417 · -0.05%"><span class="ctsym" style="font-size:clamp(3.5px,0.96cqw,50px)">XAUT</span></a>
+    <a class="crytile" href="#row-memecore" style="left:88.653%;top:96.121%;width:2.296%;height:3.879%;background:hsl(142,68%,55%)" data-chg-1h="0.4000" data-chg-1d="3.4335" data-chg-7d="5.7000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.7000" title="MemeCore (M) · $1.16 · +3.43%"><span class="ctsym" style="font-size:clamp(3.5px,1.71cqw,50px)">M</span></a>
+    <a class="crytile" href="#row-hashnote-usyc" style="left:90.950%;top:79.655%;width:2.443%;height:3.625%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.1000" data-chg-1m="0.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="3.4000" title="Circle USYC (USYC) · $1.14 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,1.02cqw,50px)">USYC</span></a>
+    <a class="crytile" href="#row-okb" style="left:93.393%;top:79.655%;width:2.291%;height:3.625%;background:hsl(142,68%,57%)" data-chg-1h="0.0000" data-chg-1d="2.7432" data-chg-7d="3.0000" data-chg-1m="23.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-40.7000" title="OKB (OKB) · $117.18 · +2.74%"><span class="ctsym" style="font-size:clamp(3.5px,1.27cqw,50px)">OKB</span></a>
+    <a class="crytile" href="#row-ripple-usd" style="left:95.684%;top:79.655%;width:2.264%;height:3.625%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0013" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="Ripple USD (RLUSD) · $1.00 · -0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.75cqw,50px)">RLUSD</span></a>
+    <a class="crytile" href="#row-ondo-us-dollar-yield" style="left:97.948%;top:79.655%;width:2.052%;height:3.625%;background:hsl(4,68%,62%)" data-chg-1h="0.3000" data-chg-1d="-0.1493" data-chg-7d="0.1000" data-chg-1m="0.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.8000" title="Ondo US Dollar Yield (USDY) · $1.14 · -0.15%"><span class="ctsym" style="font-size:clamp(3.5px,0.85cqw,50px)">USDY</span></a>
+    <a class="crytile" href="#row-aster-2" style="left:90.950%;top:83.281%;width:1.958%;height:3.590%;background:hsl(4,68%,58%)" data-chg-1h="0.4000" data-chg-1d="-1.8116" data-chg-7d="10.3000" data-chg-1m="28.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Aster (ASTER) · $0.7703 · -1.81%"><span class="ctsym" style="font-size:clamp(3.5px,0.65cqw,50px)">ASTER</span></a>
+    <a class="crytile" href="#row-aave" style="left:90.950%;top:86.871%;width:1.958%;height:3.519%;background:hsl(4,68%,57%)" data-chg-1h="0.8000" data-chg-1d="-2.4554" data-chg-7d="6.5000" data-chg-1m="44.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.3000" title="Aave (AAVE) · $132.33 · -2.46%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">AAVE</span></a>
+    <a class="crytile" href="#row-pax-gold" style="left:90.950%;top:90.390%;width:1.958%;height:3.296%;background:hsl(210,10%,45%)" data-chg-1h="0.3000" data-chg-1d="-0.0011" data-chg-7d="-0.5000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.7000" title="PAX Gold (PAXG) · $4,421 · -0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">PAXG</span></a>
+    <a class="crytile" href="#row-ondo-finance" style="left:90.950%;top:93.686%;width:1.958%;height:3.223%;background:hsl(4,68%,59%)" data-chg-1h="1.0000" data-chg-1d="-1.7400" data-chg-7d="11.2000" data-chg-1m="9.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.8000" title="Ondo (ONDO) · $0.3840 · -1.74%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">ONDO</span></a>
+    <a class="crytile" href="#row-world-liberty-financial" style="left:90.950%;top:96.909%;width:1.958%;height:3.091%;background:hsl(4,68%,61%)" data-chg-1h="0.4000" data-chg-1d="-0.6208" data-chg-7d="-2.1000" data-chg-1m="9.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.2000" title="World Liberty Financial (WLFI) · $0.05643 · -0.62%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">WLFI</span></a>
+    <a class="crytile" href="#row-pump-fun" style="left:92.908%;top:83.281%;width:1.813%;height:3.193%;background:hsl(142,68%,43%)" data-chg-1h="-1.2000" data-chg-1d="9.5855" data-chg-7d="-1.8000" data-chg-1m="80.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-11.2000" title="Pump.fun (PUMP) · $0.004341 · +9.59%"><span class="ctsym" style="font-size:clamp(3.5px,0.76cqw,50px)">PUMP</span></a>
+    <a class="crytile" href="#row-morpho" style="left:94.721%;top:83.281%;width:1.804%;height:3.193%;background:hsl(4,68%,54%)" data-chg-1h="1.4000" data-chg-1d="-4.0472" data-chg-7d="-0.3000" data-chg-1m="28.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="25.3000" title="Morpho (MORPHO) · $2.48 · -4.05%"><span class="ctsym" style="font-size:clamp(3.5px,0.50cqw,50px)">MORPHO</span></a>
+    <a class="crytile" href="#row-ethena" style="left:96.525%;top:83.281%;width:1.756%;height:3.193%;background:hsl(4,68%,50%)" data-chg-1h="0.5000" data-chg-1d="-6.1270" data-chg-7d="9.2000" data-chg-1m="82.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-77.9000" title="Ethena (ENA) · $0.1645 · -6.13%"><span class="ctsym" style="font-size:clamp(3.5px,0.98cqw,50px)">ENA</span></a>
+    <a class="crytile" href="#row-sky" style="left:98.281%;top:83.281%;width:1.719%;height:3.193%;background:hsl(4,68%,59%)" data-chg-1h="0.6000" data-chg-1d="-1.2702" data-chg-7d="1.2000" data-chg-1m="27.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-2.3000" title="Sky (SKY) · $0.06939 · -1.27%"><span class="ctsym" style="font-size:clamp(3.5px,0.95cqw,50px)">SKY</span></a>
+    <a class="crytile" href="#row-pepe" style="left:92.908%;top:86.473%;width:1.469%;height:3.512%;background:hsl(4,68%,61%)" data-chg-1h="1.4000" data-chg-1d="-0.6577" data-chg-7d="1.7000" data-chg-1m="27.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.4000" title="Pepe (PEPE) · $0.000003630 · -0.66%"><span class="ctsym" style="font-size:clamp(3.5px,0.61cqw,50px)">PEPE</span></a>
+    <a class="crytile" href="#row-htx-dao" style="left:92.908%;top:89.985%;width:1.469%;height:3.453%;background:hsl(4,68%,61%)" data-chg-1h="0.1000" data-chg-1d="-0.7252" data-chg-7d="1.2000" data-chg-1m="-7.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.4000" title="HTX DAO (HTX) · $0.000001670 · -0.73%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">HTX</span></a>
+    <a class="crytile" href="#row-usdd" style="left:92.908%;top:93.438%;width:1.469%;height:3.365%;background:hsl(4,68%,62%)" data-chg-1h="0.0000" data-chg-1d="-0.0506" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000" title="USDD (USDD) · $0.9993 · -0.05%"><span class="ctsym" style="font-size:clamp(3.5px,0.61cqw,50px)">USDD</span></a>
+    <a class="crytile" href="#row-bitget-token" style="left:92.908%;top:96.804%;width:1.469%;height:3.196%;background:hsl(4,68%,59%)" data-chg-1h="0.1000" data-chg-1d="-1.3935" data-chg-7d="2.8000" data-chg-1m="21.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-58.7000" title="Bitget Token (BGB) · $1.99 · -1.39%"><span class="ctsym" style="font-size:clamp(3.5px,0.82cqw,50px)">BGB</span></a>
+    <a class="crytile" href="#row-usdgo" style="left:94.377%;top:86.473%;width:1.446%;height:3.199%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0159" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="USDGO (USDGO) · $1.00 · +0.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.48cqw,50px)">USDGO</span></a>
+    <a class="crytile" href="#row-falcon-finance" style="left:95.823%;top:86.473%;width:1.413%;height:3.199%;background:hsl(210,10%,45%)" data-chg-1h="-0.4000" data-chg-1d="-0.0120" data-chg-7d="0.1000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.3000" title="Falcon USD (USDF) · $0.9964 · -0.01%"><span class="ctsym" style="font-size:clamp(3.5px,0.59cqw,50px)">USDF</span></a>
+    <a class="crytile" href="#row-bfusd" style="left:97.236%;top:86.473%;width:1.392%;height:3.199%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0293" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.1000" title="BFUSD (BFUSD) · $0.9997 · +0.03%"><span class="ctsym" style="font-size:clamp(3.5px,0.46cqw,50px)">BFUSD</span></a>
+    <a class="crytile" href="#row-united-stables" style="left:98.628%;top:86.473%;width:1.372%;height:3.199%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0161" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="United Stables (U) · $0.9992 · -0.02%"><span class="ctsym" style="font-size:clamp(3.5px,1.41cqw,50px)">U</span></a>
+    <a class="crytile" href="#row-spiko-amundi-overnight-swap-fund-eur" style="left:94.377%;top:89.673%;width:1.518%;height:2.770%;background:hsl(142,68%,62%)" data-chg-1h="0.0000" data-chg-1d="0.0898" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Spiko Amundi Overnight Swap Fund (EUR) (EURSAFO) · $1.18 · +0.09%"><span class="ctsym" style="font-size:clamp(3.5px,0.36cqw,50px)">EURSAFO</span></a>
+    <a class="crytile" href="#row-bitway" style="left:94.377%;top:92.442%;width:1.518%;height:2.708%;background:hsl(142,68%,60%)" data-chg-1h="0.8000" data-chg-1d="1.1529" data-chg-7d="10.7000" data-chg-1m="120.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Bitway (BTW) · $0.4498 · +1.15%"><span class="ctsym" style="font-size:clamp(3.5px,0.84cqw,50px)">BTW</span></a>
+    <a class="crytile" href="#row-lighter" style="left:94.377%;top:95.150%;width:1.518%;height:2.621%;background:hsl(142,68%,51%)" data-chg-1h="0.4000" data-chg-1d="5.6070" data-chg-7d="33.0000" data-chg-1m="106.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Lighter (LIT) · $4.72 · +5.61%"><span class="ctsym" style="font-size:clamp(3.5px,0.84cqw,50px)">LIT</span></a>
+    <a class="crytile" href="#row-gatechain-token" style="left:94.377%;top:97.771%;width:1.518%;height:2.229%;background:hsl(142,68%,57%)" data-chg-1h="1.9000" data-chg-1d="2.6353" data-chg-7d="17.2000" data-chg-1m="39.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-44.3000" title="Gate (GT) · $9.40 · +2.64%"><span class="ctsym" style="font-size:clamp(3.5px,0.99cqw,50px)">GT</span></a>
+    <a class="crytile" href="#row-blockchain-capital" style="left:95.895%;top:89.673%;width:1.404%;height:2.327%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="307.9000" title="Blockchain Capital (BCAP) · $106.22 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.58cqw,50px)">BCAP</span></a>
+    <a class="crytile" href="#row-kucoin-shares" style="left:97.299%;top:89.673%;width:1.394%;height:2.327%;background:hsl(4,68%,59%)" data-chg-1h="0.0000" data-chg-1d="-1.5173" data-chg-7d="-1.2000" data-chg-1m="5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.2000" title="KuCoin (KCS) · $7.01 · -1.52%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">KCS</span></a>
+    <a class="crytile" href="#row-eutbl" style="left:98.693%;top:89.673%;width:1.307%;height:2.327%;background:hsl(142,68%,62%)" data-chg-1h="0.0000" data-chg-1d="0.0785" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="1.2000" title="Spiko EU T-Bills Money Market Fund (EUTBL) · $1.23 · +0.08%"><span class="ctsym" style="font-size:clamp(3.5px,0.44cqw,50px)">EUTBL</span></a>
+    <a class="crytile" href="#row-venice-token" style="left:95.895%;top:92.000%;width:1.396%;height:2.138%;background:hsl(142,68%,44%)" data-chg-1h="0.1000" data-chg-1d="8.9129" data-chg-7d="9.9000" data-chg-1m="63.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="601.3000" title="Venice Token (VVV) · $18.50 · +8.91%"><span class="ctsym" style="font-size:clamp(3.5px,0.78cqw,50px)">VVV</span></a>
+    <a class="crytile" href="#row-just" style="left:97.291%;top:92.000%;width:1.380%;height:2.138%;background:hsl(4,68%,54%)" data-chg-1h="-0.6000" data-chg-1d="-4.0683" data-chg-7d="6.8000" data-chg-1m="6.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="216.7000" title="JUST (JST) · $0.1068 · -4.07%"><span class="ctsym" style="font-size:clamp(3.5px,0.77cqw,50px)">JST</span></a>
+    <a class="crytile" href="#row-jupiter-exchange-solana" style="left:98.671%;top:92.000%;width:1.329%;height:2.138%;background:hsl(4,68%,49%)" data-chg-1h="1.3000" data-chg-1d="-6.6970" data-chg-7d="12.8000" data-chg-1m="38.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-49.8000" title="Jupiter (JUP) · $0.2535 · -6.70%"><span class="ctsym" style="font-size:clamp(3.5px,0.74cqw,50px)">JUP</span></a>
+    <a class="crytile" href="#row-nexo" style="left:95.895%;top:94.138%;width:1.390%;height:2.032%;background:hsl(142,68%,61%)" data-chg-1h="0.0000" data-chg-1d="0.5213" data-chg-7d="-0.6000" data-chg-1m="13.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.0000" title="NEXO (NEXO) · $0.8367 · +0.52%"><span class="ctsym" style="font-size:clamp(3.5px,0.58cqw,50px)">NEXO</span></a>
+    <a class="crytile" href="#row-janus-henderson-anemoy-treasury-fund" style="left:95.895%;top:96.170%;width:1.390%;height:1.942%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Janus Henderson Anemoy Treasury Fund (JTRSY) · $1.12 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.46cqw,50px)">JTRSY</span></a>
+    <a class="crytile" href="#row-superstate-short-duration-us-government-securities-fund-ustb" style="left:95.895%;top:98.113%;width:1.390%;height:1.887%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.1000" data-chg-1m="0.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="3.6000" title="Invesco Short Duration US Government Securities Fund (USTB) · $11.20 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.58cqw,50px)">USTB</span></a>
+    <a class="crytile" href="#row-stable-2" style="left:97.284%;top:94.138%;width:1.403%;height:1.839%;background:hsl(142,68%,53%)" data-chg-1h="0.2000" data-chg-1d="4.3268" data-chg-7d="4.0000" data-chg-1m="-11.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="​​Stable (STABLE) · $0.02926 · +4.33%"><span class="ctsym" style="font-size:clamp(3.5px,0.39cqw,50px)">STABLE</span></a>
+    <a class="crytile" href="#row-pancakeswap-token" style="left:98.688%;top:94.138%;width:1.312%;height:1.839%;background:hsl(210,10%,45%)" data-chg-1h="0.5000" data-chg-1d="-0.0409" data-chg-7d="19.5000" data-chg-1m="54.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-8.1000" title="PancakeSwap (CAKE) · $2.23 · -0.04%"><span class="ctsym" style="font-size:clamp(3.5px,0.55cqw,50px)">CAKE</span></a>
+    <a class="crytile" href="#row-janus-henderson-anemoy-aaa-clo-fund" style="left:97.284%;top:95.976%;width:1.182%;height:2.030%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.1000" data-chg-1m="0.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="" title="Janus Henderson Anemoy AAA CLO Fund (JAAA) · $1.05 · +0.00%"><span class="ctsym" style="font-size:clamp(3.5px,0.49cqw,50px)">JAAA</span></a>
+    <a class="crytile" href="#row-gho" style="left:97.284%;top:98.006%;width:1.182%;height:1.994%;background:hsl(210,10%,45%)" data-chg-1h="0.0000" data-chg-1d="-0.0180" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000" title="GHO (GHO) · $0.9988 · -0.02%"><span class="ctsym" style="font-size:clamp(3.5px,0.66cqw,50px)">GHO</span></a>
+    <a class="crytile" href="#row-aerodrome-finance" style="left:98.467%;top:95.976%;width:0.771%;height:2.765%;background:hsl(142,68%,42%)" data-chg-1h="-0.6000" data-chg-1d="15.7744" data-chg-7d="30.4000" data-chg-1m="41.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-45.6000" title="Aerodrome Finance (AERO) · $0.6397 · +15.77%"><span class="ctsym" style="font-size:clamp(3.5px,0.32cqw,50px)">AERO</span></a>
+    <a class="crytile" href="#row-official-trump" style="left:99.237%;top:95.976%;width:0.763%;height:2.765%;background:hsl(4,68%,60%)" data-chg-1h="2.4000" data-chg-1d="-1.2192" data-chg-7d="-5.0000" data-chg-1m="55.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.8000" title="Official Trump (TRUMP) · $2.29 · -1.22%"><span class="ctsym" style="font-size:clamp(3.5px,0.25cqw,50px)">TRUMP</span></a>
+    <a class="crytile" href="#row-curve-dao-token" style="left:98.467%;top:98.741%;width:1.533%;height:1.259%;background:hsl(4,68%,57%)" data-chg-1h="0.7000" data-chg-1d="-2.6555" data-chg-7d="9.2000" data-chg-1m="62.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000" title="Curve DAO (CRV) · $0.3678 · -2.66%"><span class="ctsym" style="font-size:clamp(3.5px,0.56cqw,50px)">CRV</span></a>
   </div></div>
-  <p class="crynote">13 of 100 coins have real 3M/6M/YTD figures so
+  <p class="crynote">17 of 100 coins have real 3M/6M/YTD figures so
   far — CoinGecko has no bulk endpoint for those periods, so they fill in a
   few coins at a time in the background (see the note below). Until a coin
   is reached, those three buttons read "—" for it rather than a guess.</p>
@@ -455,11 +462,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">BTC</span>
           <span class="n2">Bitcoin</span>
         </span></span></td>
-        <td class="px">$79,020</td>
-        <td class="mc">$1.587 T</td>
+        <td class="px">$79,198</td>
+        <td class="mc">$1.590 T</td>
         <td class="cs">20.08M BTC</td>
         <td class="mc">$23.0 B</td>
-        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-1.6257" data-chg-7d="0.7000" data-chg-1m="21.9000" data-chg-3m="25.4005" data-chg-6m="15.5755" data-chg-ytd="-9.6900" data-chg-1y="-28.9000">-1.63%</td>
+        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-1.1401" data-chg-7d="0.7000" data-chg-1m="21.9000" data-chg-3m="25.4005" data-chg-6m="15.5755" data-chg-ytd="-9.6900" data-chg-1y="-28.9000">-1.14%</td>
       </tr>
       <tr id="row-zcash" class="cryrow">
         <td class="rk">10</td>
@@ -467,11 +474,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ZEC</span>
           <span class="n2">Zcash</span>
         </span></span></td>
-        <td class="px">$1,138</td>
-        <td class="mc">$19.3 B</td>
+        <td class="px">$1,136</td>
+        <td class="mc">$19.2 B</td>
         <td class="cs">16.92M ZEC</td>
-        <td class="mc">$930 M</td>
-        <td class="ch chp down" data-chg-1h="1.0000" data-chg-1d="-7.1247" data-chg-7d="34.5000" data-chg-1m="125.2000" data-chg-3m="148.0493" data-chg-6m="432.9762" data-chg-ytd="122.5496" data-chg-1y="2268.9000">-7.12%</td>
+        <td class="mc">$875 M</td>
+        <td class="ch chp down" data-chg-1h="1.0000" data-chg-1d="-5.1864" data-chg-7d="34.5000" data-chg-1m="125.2000" data-chg-3m="148.0493" data-chg-6m="432.9762" data-chg-ytd="122.5496" data-chg-1y="2268.9000">-5.19%</td>
       </tr>
       <tr id="row-bitcoin-cash" class="cryrow">
         <td class="rk">21</td>
@@ -479,11 +486,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">BCH</span>
           <span class="n2">Bitcoin Cash</span>
         </span></span></td>
-        <td class="px">$259.39</td>
+        <td class="px">$260.19</td>
         <td class="mc">$5.2 B</td>
         <td class="cs">20.09M BCH</td>
         <td class="mc">$188 M</td>
-        <td class="ch chp down" data-chg-1h="0.9000" data-chg-1d="-0.6332" data-chg-7d="5.0000" data-chg-1m="20.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.1000">-0.63%</td>
+        <td class="ch chp down" data-chg-1h="0.9000" data-chg-1d="-0.1650" data-chg-7d="5.0000" data-chg-1m="20.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.1000">-0.17%</td>
       </tr>
       <tr id="row-litecoin" class="cryrow">
         <td class="rk">24</td>
@@ -491,23 +498,23 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">LTC</span>
           <span class="n2">Litecoin</span>
         </span></span></td>
-        <td class="px">$55.34</td>
+        <td class="px">$55.54</td>
         <td class="mc">$4.3 B</td>
         <td class="cs">77.58M LTC</td>
-        <td class="mc">$496 M</td>
-        <td class="ch chp up" data-chg-1h="-0.1000" data-chg-1d="0.6711" data-chg-7d="13.8000" data-chg-1m="20.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000">+0.67%</td>
+        <td class="mc">$483 M</td>
+        <td class="ch chp down" data-chg-1h="-0.1000" data-chg-1d="-0.8087" data-chg-7d="13.8000" data-chg-1m="20.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000">-0.81%</td>
       </tr>
       <tr id="row-dash" class="cryrow">
-        <td class="rk">85</td>
+        <td class="rk">86</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">D</span><span class="nm">
           <span class="n1">DASH</span>
           <span class="n2">Dash</span>
         </span></span></td>
-        <td class="px">$62.99</td>
-        <td class="mc">$810 M</td>
+        <td class="px">$62.79</td>
+        <td class="mc">$806 M</td>
         <td class="cs">12.83M DASH</td>
-        <td class="mc">$209 M</td>
-        <td class="ch chp down" data-chg-1h="-1.7000" data-chg-1d="-11.6445" data-chg-7d="40.6000" data-chg-1m="98.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="155.0000">-11.64%</td>
+        <td class="mc">$207 M</td>
+        <td class="ch chp down" data-chg-1h="-1.7000" data-chg-1d="-9.7663" data-chg-7d="40.6000" data-chg-1m="98.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="155.0000">-9.77%</td>
       </tr>
     </tbody>
     <tfoot>
@@ -515,9 +522,9 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="rk"></td>
         <td class="as crytot-l">Subtotal — 5 coins</td>
         <td class="px"></td>
-        <td class="mc">$1.617 T</td>
+        <td class="mc">$1.620 T</td>
         <td class="cs"></td>
-        <td class="mc">$24.9 B</td>
+        <td class="mc">$24.8 B</td>
         <td class="ch"></td>
       </tr>
     </tfoot>
@@ -545,11 +552,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ETH</span>
           <span class="n2">Ethereum</span>
         </span></span></td>
-        <td class="px">$2,486</td>
-        <td class="mc">$303.4 B</td>
+        <td class="px">$2,490</td>
+        <td class="mc">$303.9 B</td>
         <td class="cs">122.03M ETH</td>
-        <td class="mc">$11.3 B</td>
-        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-1.1759" data-chg-7d="0.9000" data-chg-1m="30.0000" data-chg-3m="47.2580" data-chg-6m="24.9078" data-chg-ytd="-16.1830" data-chg-1y="-42.3000">-1.18%</td>
+        <td class="mc">$11.2 B</td>
+        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-0.9262" data-chg-7d="0.9000" data-chg-1m="30.0000" data-chg-3m="47.2580" data-chg-6m="24.9078" data-chg-ytd="-16.1830" data-chg-1y="-42.3000">-0.93%</td>
       </tr>
       <tr id="row-binancecoin" class="cryrow">
         <td class="rk">4</td>
@@ -557,11 +564,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">BNB</span>
           <span class="n2">BNB</span>
         </span></span></td>
-        <td class="px">$739.24</td>
-        <td class="mc">$98.4 B</td>
+        <td class="px">$740.52</td>
+        <td class="mc">$98.6 B</td>
         <td class="cs">133.16M BNB</td>
-        <td class="mc">$830 M</td>
-        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-2.1510" data-chg-7d="7.1000" data-chg-1m="23.4000" data-chg-3m="22.9368" data-chg-6m="16.4812" data-chg-ytd="-14.2784" data-chg-1y="-15.5000">-2.15%</td>
+        <td class="mc">$848 M</td>
+        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-1.6078" data-chg-7d="7.1000" data-chg-1m="23.4000" data-chg-3m="22.9368" data-chg-6m="16.4812" data-chg-ytd="-14.2784" data-chg-1y="-15.5000">-1.61%</td>
       </tr>
       <tr id="row-ripple" class="cryrow">
         <td class="rk">5</td>
@@ -570,10 +577,10 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n2">XRP</span>
         </span></span></td>
         <td class="px">$1.40</td>
-        <td class="mc">$87.6 B</td>
+        <td class="mc">$87.7 B</td>
         <td class="cs">62.74B XRP</td>
         <td class="mc">$2.1 B</td>
-        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-2.0343" data-chg-7d="1.3000" data-chg-1m="34.7000" data-chg-3m="19.8884" data-chg-6m="2.0492" data-chg-ytd="-23.9350" data-chg-1y="-51.4000">-2.03%</td>
+        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-1.4805" data-chg-7d="1.3000" data-chg-1m="34.7000" data-chg-3m="19.8884" data-chg-6m="2.0492" data-chg-ytd="-23.9350" data-chg-1y="-51.4000">-1.48%</td>
       </tr>
       <tr id="row-solana" class="cryrow">
         <td class="rk">7</td>
@@ -581,11 +588,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">SOL</span>
           <span class="n2">Solana</span>
         </span></span></td>
-        <td class="px">$103.66</td>
-        <td class="mc">$60.8 B</td>
+        <td class="px">$103.83</td>
+        <td class="mc">$60.9 B</td>
         <td class="cs">586.17M SOL</td>
-        <td class="mc">$3.2 B</td>
-        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-2.7207" data-chg-7d="0.7000" data-chg-1m="36.9000" data-chg-3m="55.3683" data-chg-6m="22.0758" data-chg-ytd="-16.6486" data-chg-1y="-49.9000">-2.72%</td>
+        <td class="mc">$3.1 B</td>
+        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-2.0341" data-chg-7d="0.7000" data-chg-1m="36.9000" data-chg-3m="55.3683" data-chg-6m="22.0758" data-chg-ytd="-16.6486" data-chg-1y="-49.9000">-2.03%</td>
       </tr>
       <tr id="row-tron" class="cryrow">
         <td class="rk">8</td>
@@ -593,11 +600,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">TRX</span>
           <span class="n2">TRON</span>
         </span></span></td>
-        <td class="px">$0.3345</td>
-        <td class="mc">$31.8 B</td>
+        <td class="px">$0.3342</td>
+        <td class="mc">$31.7 B</td>
         <td class="cs">94.94B TRX</td>
-        <td class="mc">$328 M</td>
-        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-0.2438" data-chg-7d="0.5000" data-chg-1m="1.7000" data-chg-3m="2.4131" data-chg-6m="17.1368" data-chg-ytd="17.6317" data-chg-1y="1.3000">-0.24%</td>
+        <td class="mc">$331 M</td>
+        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-0.3025" data-chg-7d="0.5000" data-chg-1m="1.7000" data-chg-3m="2.4131" data-chg-6m="17.1368" data-chg-ytd="17.6317" data-chg-1y="1.3000">-0.30%</td>
       </tr>
       <tr id="row-hyperliquid" class="cryrow">
         <td class="rk">11</td>
@@ -605,11 +612,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">HYPE</span>
           <span class="n2">Hyperliquid</span>
         </span></span></td>
-        <td class="px">$85.09</td>
+        <td class="px">$84.87</td>
         <td class="mc">$18.9 B</td>
         <td class="cs">222.45M HYPE</td>
         <td class="mc">$1.1 B</td>
-        <td class="ch chp down" data-chg-1h="0.2000" data-chg-1d="-3.3173" data-chg-7d="1.0000" data-chg-1m="54.9000" data-chg-3m="33.4098" data-chg-6m="145.4999" data-chg-ytd="234.4469" data-chg-1y="80.8000">-3.32%</td>
+        <td class="ch chp down" data-chg-1h="0.2000" data-chg-1d="-3.2690" data-chg-7d="1.0000" data-chg-1m="54.9000" data-chg-3m="33.4098" data-chg-6m="145.4999" data-chg-ytd="234.4469" data-chg-1y="80.8000">-3.27%</td>
       </tr>
       <tr id="row-monero" class="cryrow">
         <td class="rk">15</td>
@@ -617,11 +624,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">XMR</span>
           <span class="n2">Monero</span>
         </span></span></td>
-        <td class="px">$517.69</td>
+        <td class="px">$517.62</td>
         <td class="mc">$9.7 B</td>
         <td class="cs">18.80M XMR</td>
-        <td class="mc">$111 M</td>
-        <td class="ch chp down" data-chg-1h="1.4000" data-chg-1d="-4.0168" data-chg-7d="0.3000" data-chg-1m="37.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="91.3000">-4.02%</td>
+        <td class="mc">$109 M</td>
+        <td class="ch chp down" data-chg-1h="1.4000" data-chg-1d="-3.9844" data-chg-7d="0.3000" data-chg-1m="37.3000" data-chg-3m="64.5505" data-chg-6m="53.5854" data-chg-ytd="19.4376" data-chg-1y="91.3000">-3.98%</td>
       </tr>
       <tr id="row-chainlink" class="cryrow">
         <td class="rk">16</td>
@@ -629,11 +636,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">LINK</span>
           <span class="n2">Chainlink</span>
         </span></span></td>
-        <td class="px">$12.75</td>
+        <td class="px">$12.76</td>
         <td class="mc">$9.5 B</td>
         <td class="cs">748.10M LINK</td>
-        <td class="mc">$669 M</td>
-        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-4.0882" data-chg-7d="12.7000" data-chg-1m="53.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-43.3000">-4.09%</td>
+        <td class="mc">$663 M</td>
+        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-3.6228" data-chg-7d="12.7000" data-chg-1m="53.7000" data-chg-3m="59.6363" data-chg-6m="32.6455" data-chg-ytd="4.5918" data-chg-1y="-43.3000">-3.62%</td>
       </tr>
       <tr id="row-cardano" class="cryrow">
         <td class="rk">19</td>
@@ -641,11 +648,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ADA</span>
           <span class="n2">Cardano</span>
         </span></span></td>
-        <td class="px">$0.2209</td>
+        <td class="px">$0.2212</td>
         <td class="mc">$8.3 B</td>
         <td class="cs">37.51B ADA</td>
-        <td class="mc">$468 M</td>
-        <td class="ch chp down" data-chg-1h="1.1000" data-chg-1d="-1.7848" data-chg-7d="11.2000" data-chg-1m="11.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000">-1.78%</td>
+        <td class="mc">$461 M</td>
+        <td class="ch chp down" data-chg-1h="1.1000" data-chg-1d="-1.8242" data-chg-7d="11.2000" data-chg-1m="11.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000">-1.82%</td>
       </tr>
       <tr id="row-stellar" class="cryrow">
         <td class="rk">20</td>
@@ -657,7 +664,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$6.7 B</td>
         <td class="cs">34.80B XLM</td>
         <td class="mc">$257 M</td>
-        <td class="ch chp up" data-chg-1h="1.4000" data-chg-1d="2.4400" data-chg-7d="9.2000" data-chg-1m="17.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.3000">+2.44%</td>
+        <td class="ch chp up" data-chg-1h="1.4000" data-chg-1d="2.3184" data-chg-7d="9.2000" data-chg-1m="17.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.3000">+2.32%</td>
       </tr>
       <tr id="row-canton-network" class="cryrow">
         <td class="rk">27</td>
@@ -665,11 +672,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">CC</span>
           <span class="n2">Canton</span>
         </span></span></td>
-        <td class="px">$0.1065</td>
+        <td class="px">$0.1055</td>
         <td class="mc">$4.2 B</td>
         <td class="cs">39.55B CC</td>
         <td class="mc">$11 M</td>
-        <td class="ch chp down" data-chg-1h="0.8000" data-chg-1d="-4.9985" data-chg-7d="-13.3000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">-5.00%</td>
+        <td class="ch chp down" data-chg-1h="0.8000" data-chg-1d="-5.0715" data-chg-7d="-13.3000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">-5.07%</td>
       </tr>
       <tr id="row-the-open-network" class="cryrow">
         <td class="rk">28</td>
@@ -681,7 +688,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$3.9 B</td>
         <td class="cs">2.78B GRAM</td>
         <td class="mc">$39 M</td>
-        <td class="ch chp down" data-chg-1h="0.2000" data-chg-1d="-3.1276" data-chg-7d="-1.0000" data-chg-1m="2.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.1000">-3.13%</td>
+        <td class="ch chp down" data-chg-1h="0.2000" data-chg-1d="-3.0967" data-chg-7d="-1.0000" data-chg-1m="2.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.1000">-3.10%</td>
       </tr>
       <tr id="row-hedera-hashgraph" class="cryrow">
         <td class="rk">29</td>
@@ -689,11 +696,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">HBAR</span>
           <span class="n2">Hedera</span>
         </span></span></td>
-        <td class="px">$0.08189</td>
+        <td class="px">$0.08225</td>
         <td class="mc">$3.6 B</td>
         <td class="cs">43.83B HBAR</td>
-        <td class="mc">$89 M</td>
-        <td class="ch chp up" data-chg-1h="0.2000" data-chg-1d="0.1781" data-chg-7d="11.3000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.7000">+0.18%</td>
+        <td class="mc">$88 M</td>
+        <td class="ch chp up" data-chg-1h="0.2000" data-chg-1d="0.2198" data-chg-7d="11.3000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.7000">+0.22%</td>
       </tr>
       <tr id="row-avalanche-2" class="cryrow">
         <td class="rk">30</td>
@@ -701,11 +708,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">AVAX</span>
           <span class="n2">Avalanche</span>
         </span></span></td>
-        <td class="px">$8.07</td>
+        <td class="px">$8.08</td>
         <td class="mc">$3.5 B</td>
         <td class="cs">431.77M AVAX</td>
-        <td class="mc">$403 M</td>
-        <td class="ch chp up" data-chg-1h="0.3000" data-chg-1d="1.7044" data-chg-7d="11.9000" data-chg-1m="25.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-67.2000">+1.70%</td>
+        <td class="mc">$399 M</td>
+        <td class="ch chp up" data-chg-1h="0.3000" data-chg-1d="2.0161" data-chg-7d="11.9000" data-chg-1m="25.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-67.2000">+2.02%</td>
       </tr>
       <tr id="row-sui" class="cryrow">
         <td class="rk">31</td>
@@ -713,11 +720,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">SUI</span>
           <span class="n2">Sui</span>
         </span></span></td>
-        <td class="px">$0.8176</td>
+        <td class="px">$0.8266</td>
         <td class="mc">$3.4 B</td>
         <td class="cs">4.10B SUI</td>
-        <td class="mc">$778 M</td>
-        <td class="ch chp up" data-chg-1h="0.9000" data-chg-1d="0.1657" data-chg-7d="13.0000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.9000">+0.17%</td>
+        <td class="mc">$773 M</td>
+        <td class="ch chp up" data-chg-1h="0.9000" data-chg-1d="1.1632" data-chg-7d="13.0000" data-chg-1m="18.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.9000">+1.16%</td>
       </tr>
       <tr id="row-near" class="cryrow">
         <td class="rk">34</td>
@@ -725,11 +732,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">NEAR</span>
           <span class="n2">NEAR Protocol</span>
         </span></span></td>
-        <td class="px">$2.31</td>
+        <td class="px">$2.33</td>
         <td class="mc">$3.0 B</td>
         <td class="cs">1.31B NEAR</td>
         <td class="mc">$358 M</td>
-        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-4.9710" data-chg-7d="20.9000" data-chg-1m="42.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-6.3000">-4.97%</td>
+        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-3.5551" data-chg-7d="20.9000" data-chg-1m="42.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-6.3000">-3.56%</td>
       </tr>
       <tr id="row-bittensor" class="cryrow">
         <td class="rk">41</td>
@@ -737,11 +744,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">TAO</span>
           <span class="n2">Bittensor</span>
         </span></span></td>
-        <td class="px">$258.29</td>
+        <td class="px">$259.83</td>
         <td class="mc">$2.5 B</td>
         <td class="cs">9.60M TAO</td>
         <td class="mc">$284 M</td>
-        <td class="ch chp down" data-chg-1h="0.9000" data-chg-1d="-3.0895" data-chg-7d="13.2000" data-chg-1m="30.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.2000">-3.09%</td>
+        <td class="ch chp down" data-chg-1h="0.9000" data-chg-1d="-2.0983" data-chg-7d="13.2000" data-chg-1m="30.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.2000">-2.10%</td>
       </tr>
       <tr id="row-mantle" class="cryrow">
         <td class="rk">46</td>
@@ -749,11 +756,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">MNT</span>
           <span class="n2">Mantle</span>
         </span></span></td>
-        <td class="px">$0.6216</td>
+        <td class="px">$0.6269</td>
         <td class="mc">$2.1 B</td>
         <td class="cs">3.30B MNT</td>
-        <td class="mc">$46 M</td>
-        <td class="ch chp up" data-chg-1h="0.3000" data-chg-1d="2.1958" data-chg-7d="13.7000" data-chg-1m="44.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.4000">+2.20%</td>
+        <td class="mc">$47 M</td>
+        <td class="ch chp up" data-chg-1h="0.3000" data-chg-1d="3.0007" data-chg-7d="13.7000" data-chg-1m="44.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-46.4000">+3.00%</td>
       </tr>
       <tr id="row-polkadot" class="cryrow">
         <td class="rk">50</td>
@@ -761,11 +768,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">DOT</span>
           <span class="n2">Polkadot</span>
         </span></span></td>
-        <td class="px">$1.06</td>
+        <td class="px">$1.07</td>
         <td class="mc">$1.8 B</td>
         <td class="cs">1.70B DOT</td>
-        <td class="mc">$381 M</td>
-        <td class="ch chp up" data-chg-1h="1.9000" data-chg-1d="7.0103" data-chg-7d="27.1000" data-chg-1m="30.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000">+7.01%</td>
+        <td class="mc">$375 M</td>
+        <td class="ch chp up" data-chg-1h="1.9000" data-chg-1d="4.1657" data-chg-7d="27.1000" data-chg-1m="30.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-73.5000">+4.17%</td>
       </tr>
       <tr id="row-worldcoin-wld" class="cryrow">
         <td class="rk">52</td>
@@ -773,11 +780,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">WLD</span>
           <span class="n2">Worldcoin</span>
         </span></span></td>
-        <td class="px">$0.4760</td>
+        <td class="px">$0.4814</td>
         <td class="mc">$1.8 B</td>
         <td class="cs">3.68B WLD</td>
-        <td class="mc">$458 M</td>
-        <td class="ch chp up" data-chg-1h="1.8000" data-chg-1d="12.3491" data-chg-7d="31.4000" data-chg-1m="57.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-53.7000">+12.35%</td>
+        <td class="mc">$463 M</td>
+        <td class="ch chp up" data-chg-1h="1.8000" data-chg-1d="14.3100" data-chg-7d="31.4000" data-chg-1m="57.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-53.7000">+14.31%</td>
       </tr>
       <tr id="row-internet-computer" class="cryrow">
         <td class="rk">55</td>
@@ -785,11 +792,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ICP</span>
           <span class="n2">Internet Computer</span>
         </span></span></td>
-        <td class="px">$3.01</td>
+        <td class="px">$3.03</td>
         <td class="mc">$1.7 B</td>
         <td class="cs">556.24M ICP</td>
         <td class="mc">$157 M</td>
-        <td class="ch chp up" data-chg-1h="0.6000" data-chg-1d="9.8449" data-chg-7d="24.8000" data-chg-1m="36.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.9000">+9.84%</td>
+        <td class="ch chp up" data-chg-1h="0.6000" data-chg-1d="10.0699" data-chg-7d="24.8000" data-chg-1m="36.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.9000">+10.07%</td>
       </tr>
       <tr id="row-ethereum-classic" class="cryrow">
         <td class="rk">66</td>
@@ -797,11 +804,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ETC</span>
           <span class="n2">Ethereum Classic</span>
         </span></span></td>
-        <td class="px">$7.91</td>
+        <td class="px">$8.01</td>
         <td class="mc">$1.3 B</td>
         <td class="cs">158.10M ETC</td>
-        <td class="mc">$56 M</td>
-        <td class="ch chp up" data-chg-1h="0.9000" data-chg-1d="0.3296" data-chg-7d="8.3000" data-chg-1m="21.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-61.3000">+0.33%</td>
+        <td class="mc">$57 M</td>
+        <td class="ch chp up" data-chg-1h="0.9000" data-chg-1d="0.9582" data-chg-7d="8.3000" data-chg-1m="21.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-61.3000">+0.96%</td>
       </tr>
       <tr id="row-arbitrum" class="cryrow">
         <td class="rk">70</td>
@@ -809,11 +816,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ARB</span>
           <span class="n2">Arbitrum</span>
         </span></span></td>
-        <td class="px">$0.1690</td>
+        <td class="px">$0.1682</td>
         <td class="mc">$1.1 B</td>
         <td class="cs">6.68B ARB</td>
-        <td class="mc">$454 M</td>
-        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-10.8469" data-chg-7d="58.6000" data-chg-1m="116.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.8000">-10.85%</td>
+        <td class="mc">$450 M</td>
+        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-11.5183" data-chg-7d="58.6000" data-chg-1m="116.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.8000">-11.52%</td>
       </tr>
       <tr id="row-pi-network" class="cryrow">
         <td class="rk">71</td>
@@ -821,35 +828,35 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">PI</span>
           <span class="n2">Pi Network</span>
         </span></span></td>
-        <td class="px">$0.09424</td>
-        <td class="mc">$1.1 B</td>
+        <td class="px">$0.09416</td>
+        <td class="mc">$1.0 B</td>
         <td class="cs">11.14B PI</td>
         <td class="mc">$3 M</td>
-        <td class="ch chp down" data-chg-1h="-0.1000" data-chg-1d="-0.7721" data-chg-7d="3.5000" data-chg-1m="2.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.7000">-0.77%</td>
-      </tr>
-      <tr id="row-polygon-ecosystem-token" class="cryrow">
-        <td class="rk">72</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">P</span><span class="nm">
-          <span class="n1">POL</span>
-          <span class="n2">POL (ex-MATIC)</span>
-        </span></span></td>
-        <td class="px">$0.09498</td>
-        <td class="mc">$1.0 B</td>
-        <td class="cs">10.71B POL</td>
-        <td class="mc">$46 M</td>
-        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-3.5536" data-chg-7d="5.3000" data-chg-1m="24.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.9000">-3.55%</td>
+        <td class="ch chp down" data-chg-1h="-0.1000" data-chg-1d="-0.6164" data-chg-7d="3.5000" data-chg-1m="2.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.7000">-0.62%</td>
       </tr>
       <tr id="row-kaspa" class="cryrow">
-        <td class="rk">73</td>
+        <td class="rk">72</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">K</span><span class="nm">
           <span class="n1">KAS</span>
           <span class="n2">Kaspa</span>
         </span></span></td>
-        <td class="px">$0.03635</td>
+        <td class="px">$0.03699</td>
         <td class="mc">$1.0 B</td>
         <td class="cs">27.69B KAS</td>
-        <td class="mc">$45 M</td>
-        <td class="ch chp up" data-chg-1h="1.1000" data-chg-1d="12.9494" data-chg-7d="31.2000" data-chg-1m="36.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-54.4000">+12.95%</td>
+        <td class="mc">$50 M</td>
+        <td class="ch chp up" data-chg-1h="1.1000" data-chg-1d="15.5110" data-chg-7d="31.2000" data-chg-1m="36.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-54.4000">+15.51%</td>
+      </tr>
+      <tr id="row-polygon-ecosystem-token" class="cryrow">
+        <td class="rk">73</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">P</span><span class="nm">
+          <span class="n1">POL</span>
+          <span class="n2">POL (ex-MATIC)</span>
+        </span></span></td>
+        <td class="px">$0.09506</td>
+        <td class="mc">$1.0 B</td>
+        <td class="cs">10.71B POL</td>
+        <td class="mc">$46 M</td>
+        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-3.0099" data-chg-7d="5.3000" data-chg-1m="24.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.9000">-3.01%</td>
       </tr>
       <tr id="row-quant-network" class="cryrow">
         <td class="rk">75</td>
@@ -857,23 +864,23 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">QNT</span>
           <span class="n2">Quant</span>
         </span></span></td>
-        <td class="px">$66.74</td>
-        <td class="mc">$971 M</td>
+        <td class="px">$66.58</td>
+        <td class="mc">$968 M</td>
         <td class="cs">14.54M QNT</td>
-        <td class="mc">$17 M</td>
-        <td class="ch chp down" data-chg-1h="1.1000" data-chg-1d="-0.5737" data-chg-7d="9.3000" data-chg-1m="12.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.8000">-0.57%</td>
+        <td class="mc">$16 M</td>
+        <td class="ch chp down" data-chg-1h="1.1000" data-chg-1d="-0.7037" data-chg-7d="9.3000" data-chg-1m="12.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.8000">-0.70%</td>
       </tr>
       <tr id="row-algorand" class="cryrow">
-        <td class="rk">79</td>
+        <td class="rk">80</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">A</span><span class="nm">
           <span class="n1">ALGO</span>
           <span class="n2">Algorand</span>
         </span></span></td>
-        <td class="px">$0.09761</td>
-        <td class="mc">$883 M</td>
+        <td class="px">$0.09780</td>
+        <td class="mc">$884 M</td>
         <td class="cs">9.04B ALGO</td>
-        <td class="mc">$35 M</td>
-        <td class="ch chp up" data-chg-1h="1.8000" data-chg-1d="0.9632" data-chg-7d="13.9000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.9000">+0.96%</td>
+        <td class="mc">$37 M</td>
+        <td class="ch chp up" data-chg-1h="1.8000" data-chg-1d="1.1759" data-chg-7d="13.9000" data-chg-1m="11.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.9000">+1.18%</td>
       </tr>
       <tr id="row-cosmos" class="cryrow">
         <td class="rk">82</td>
@@ -882,22 +889,22 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n2">Cosmos Hub</span>
         </span></span></td>
         <td class="px">$1.63</td>
-        <td class="mc">$865 M</td>
+        <td class="mc">$864 M</td>
         <td class="cs">529.44M ATOM</td>
-        <td class="mc">$45 M</td>
-        <td class="ch chp up" data-chg-1h="0.8000" data-chg-1d="2.2126" data-chg-7d="11.1000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.6000">+2.21%</td>
+        <td class="mc">$44 M</td>
+        <td class="ch chp up" data-chg-1h="0.8000" data-chg-1d="1.9749" data-chg-7d="11.1000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.6000">+1.97%</td>
       </tr>
       <tr id="row-render-token" class="cryrow">
-        <td class="rk">86</td>
+        <td class="rk">85</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">R</span><span class="nm">
           <span class="n1">RENDER</span>
           <span class="n2">Render</span>
         </span></span></td>
-        <td class="px">$1.54</td>
-        <td class="mc">$802 M</td>
+        <td class="px">$1.55</td>
+        <td class="mc">$806 M</td>
         <td class="cs">518.77M RENDER</td>
         <td class="mc">$50 M</td>
-        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-1.2672" data-chg-7d="9.1000" data-chg-1m="17.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.6000">-1.27%</td>
+        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-0.2297" data-chg-7d="9.1000" data-chg-1m="17.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-55.6000">-0.23%</td>
       </tr>
       <tr id="row-filecoin" class="cryrow">
         <td class="rk">93</td>
@@ -905,11 +912,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">FIL</span>
           <span class="n2">Filecoin</span>
         </span></span></td>
-        <td class="px">$0.8371</td>
-        <td class="mc">$693 M</td>
+        <td class="px">$0.8412</td>
+        <td class="mc">$696 M</td>
         <td class="cs">827.00M FIL</td>
         <td class="mc">$141 M</td>
-        <td class="ch chp up" data-chg-1h="0.9000" data-chg-1d="3.0217" data-chg-7d="23.3000" data-chg-1m="18.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.2000">+3.02%</td>
+        <td class="ch chp up" data-chg-1h="0.9000" data-chg-1d="3.1574" data-chg-7d="23.3000" data-chg-1m="18.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-65.2000">+3.16%</td>
       </tr>
       <tr id="row-vechain" class="cryrow">
         <td class="rk">95</td>
@@ -917,11 +924,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">VET</span>
           <span class="n2">VeChain</span>
         </span></span></td>
-        <td class="px">$0.007204</td>
-        <td class="mc">$620 M</td>
+        <td class="px">$0.007294</td>
+        <td class="mc">$627 M</td>
         <td class="cs">85.99B VET</td>
         <td class="mc">$9 M</td>
-        <td class="ch chp up" data-chg-1h="1.0000" data-chg-1d="1.1419" data-chg-7d="6.2000" data-chg-1m="52.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-69.5000">+1.14%</td>
+        <td class="ch chp up" data-chg-1h="1.0000" data-chg-1d="1.8876" data-chg-7d="6.2000" data-chg-1m="52.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-69.5000">+1.89%</td>
       </tr>
       <tr id="row-injective-protocol" class="cryrow">
         <td class="rk">96</td>
@@ -929,23 +936,23 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">INJ</span>
           <span class="n2">Injective</span>
         </span></span></td>
-        <td class="px">$6.16</td>
-        <td class="mc">$616 M</td>
+        <td class="px">$6.25</td>
+        <td class="mc">$625 M</td>
         <td class="cs">100.00M INJ</td>
         <td class="mc">$212 M</td>
-        <td class="ch chp up" data-chg-1h="1.9000" data-chg-1d="14.4288" data-chg-7d="25.9000" data-chg-1m="40.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-52.7000">+14.43%</td>
+        <td class="ch chp up" data-chg-1h="1.9000" data-chg-1d="15.8784" data-chg-7d="25.9000" data-chg-1m="40.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-52.7000">+15.88%</td>
       </tr>
       <tr id="row-beldex" class="cryrow">
-        <td class="rk">97</td>
+        <td class="rk">98</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">B</span><span class="nm">
           <span class="n1">BDX</span>
           <span class="n2">Beldex</span>
         </span></span></td>
-        <td class="px">$0.07786</td>
-        <td class="mc">$613 M</td>
+        <td class="px">$0.07806</td>
+        <td class="mc">$614 M</td>
         <td class="cs">7.87B BDX</td>
-        <td class="mc">$11 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-1.1608" data-chg-7d="-1.8000" data-chg-1m="-15.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.1000">-1.16%</td>
+        <td class="mc">$10 M</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.7066" data-chg-7d="-1.8000" data-chg-1m="-15.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.1000">-0.71%</td>
       </tr>
       <tr id="row-xdce-crowd-sale" class="cryrow">
         <td class="rk">99</td>
@@ -953,11 +960,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">XDC</span>
           <span class="n2">XDC Network</span>
         </span></span></td>
-        <td class="px">$0.02924</td>
-        <td class="mc">$583 M</td>
+        <td class="px">$0.02930</td>
+        <td class="mc">$584 M</td>
         <td class="cs">19.95B XDC</td>
         <td class="mc">$8 M</td>
-        <td class="ch chp up" data-chg-1h="-0.1000" data-chg-1d="3.5312" data-chg-7d="6.0000" data-chg-1m="8.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.8000">+3.53%</td>
+        <td class="ch chp up" data-chg-1h="-0.1000" data-chg-1d="3.7345" data-chg-7d="6.0000" data-chg-1m="8.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-62.8000">+3.73%</td>
       </tr>
     </tbody>
     <tfoot>
@@ -965,7 +972,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="rk"></td>
         <td class="as crytot-l">Subtotal — 35 coins</td>
         <td class="px"></td>
-        <td class="mc">$678.6 B</td>
+        <td class="mc">$679.5 B</td>
         <td class="cs"></td>
         <td class="mc">$24.4 B</td>
         <td class="ch"></td>
@@ -999,7 +1006,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$183.4 B</td>
         <td class="cs">183.44B USDT</td>
         <td class="mc">$47.3 B</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0083" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="0.0156" data-chg-6m="-0.0233" data-chg-ytd="0.0942" data-chg-1y="0.0000">-0.01%</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0088" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="0.0156" data-chg-6m="-0.0233" data-chg-ytd="0.0942" data-chg-1y="0.0000">-0.01%</td>
       </tr>
       <tr id="row-usd-coin" class="cryrow">
         <td class="rk">6</td>
@@ -1011,7 +1018,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$74.4 B</td>
         <td class="cs">74.40B USDC</td>
         <td class="mc">$11.7 B</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0000" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="0.0076" data-chg-6m="-0.0004" data-chg-ytd="0.0554" data-chg-1y="0.0000">+0.00%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0008" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="0.0076" data-chg-6m="-0.0004" data-chg-ytd="0.0554" data-chg-1y="0.0000">+0.00%</td>
       </tr>
       <tr id="row-figure-heloc" class="cryrow">
         <td class="rk">9</td>
@@ -1031,11 +1038,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">DOGE</span>
           <span class="n2">Dogecoin</span>
         </span></span></td>
-        <td class="px">$0.09077</td>
-        <td class="mc">$14.1 B</td>
+        <td class="px">$0.09133</td>
+        <td class="mc">$14.2 B</td>
         <td class="cs">155.82B DOGE</td>
-        <td class="mc">$829 M</td>
-        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-0.3405" data-chg-7d="9.2000" data-chg-1m="28.6000" data-chg-3m="5.1748" data-chg-6m="-0.3702" data-chg-ytd="-22.7292" data-chg-1y="-60.2000">-0.34%</td>
+        <td class="mc">$847 M</td>
+        <td class="ch chp up" data-chg-1h="0.6000" data-chg-1d="0.4000" data-chg-7d="9.2000" data-chg-1m="28.6000" data-chg-3m="5.1748" data-chg-6m="-0.3702" data-chg-ytd="-22.7292" data-chg-1y="-60.2000">+0.40%</td>
       </tr>
       <tr id="row-rain" class="cryrow">
         <td class="rk">13</td>
@@ -1043,11 +1050,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">RAIN</span>
           <span class="n2">Rain</span>
         </span></span></td>
-        <td class="px">$0.01628</td>
-        <td class="mc">$11.5 B</td>
+        <td class="px">$0.01629</td>
+        <td class="mc">$11.6 B</td>
         <td class="cs">709.21B RAIN</td>
-        <td class="mc">$39 M</td>
-        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-2.6207" data-chg-7d="-2.6000" data-chg-1m="28.5000" data-chg-3m="22.6264" data-chg-6m="81.4380" data-chg-ytd="103.0453" data-chg-1y="">-2.62%</td>
+        <td class="mc">$35 M</td>
+        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-2.5648" data-chg-7d="-2.6000" data-chg-1m="28.5000" data-chg-3m="22.6264" data-chg-6m="81.4380" data-chg-ytd="103.0453" data-chg-1y="">-2.56%</td>
       </tr>
       <tr id="row-usds" class="cryrow">
         <td class="rk">14</td>
@@ -1055,11 +1062,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">USDS</span>
           <span class="n2">USDS</span>
         </span></span></td>
-        <td class="px">$0.9998</td>
+        <td class="px">$0.9999</td>
         <td class="mc">$9.9 B</td>
         <td class="cs">9.86B USDS</td>
-        <td class="mc">$129 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0114" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.01%</td>
+        <td class="mc">$125 M</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0013" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="0.0153" data-chg-6m="-0.0176" data-chg-ytd="-0.0004" data-chg-1y="0.0000">-0.00%</td>
       </tr>
       <tr id="row-whitebit" class="cryrow">
         <td class="rk">17</td>
@@ -1067,11 +1074,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">WBT</span>
           <span class="n2">WhiteBIT Coin</span>
         </span></span></td>
-        <td class="px">$76.46</td>
+        <td class="px">$76.65</td>
         <td class="mc">$9.0 B</td>
         <td class="cs">117.96M WBT</td>
         <td class="mc">$84 M</td>
-        <td class="ch chp up" data-chg-1h="0.2000" data-chg-1d="3.3399" data-chg-7d="5.6000" data-chg-1m="36.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="80.9000">+3.34%</td>
+        <td class="ch chp up" data-chg-1h="0.2000" data-chg-1d="3.7802" data-chg-7d="5.6000" data-chg-1m="36.3000" data-chg-3m="71.0962" data-chg-6m="43.8364" data-chg-ytd="36.4858" data-chg-1y="80.9000">+3.78%</td>
       </tr>
       <tr id="row-leo-token" class="cryrow">
         <td class="rk">18</td>
@@ -1079,11 +1086,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">LEO</span>
           <span class="n2">LEO Token</span>
         </span></span></td>
-        <td class="px">$9.19</td>
-        <td class="mc">$8.4 B</td>
+        <td class="px">$9.20</td>
+        <td class="mc">$8.5 B</td>
         <td class="cs">919.86M LEO</td>
         <td class="mc">$1 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-1.7599" data-chg-7d="-4.0000" data-chg-1m="-5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-3.6000">-1.76%</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-2.1492" data-chg-7d="-4.0000" data-chg-1m="-5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-3.6000">-2.15%</td>
       </tr>
       <tr id="row-dai" class="cryrow">
         <td class="rk">22</td>
@@ -1091,11 +1098,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">DAI</span>
           <span class="n2">Dai</span>
         </span></span></td>
-        <td class="px">$0.9998</td>
+        <td class="px">$0.9999</td>
         <td class="mc">$4.6 B</td>
         <td class="cs">4.61B DAI</td>
-        <td class="mc">$208 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0090" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">+0.01%</td>
+        <td class="mc">$209 M</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0193" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.02%</td>
       </tr>
       <tr id="row-ethena-usde" class="cryrow">
         <td class="rk">23</td>
@@ -1105,9 +1112,9 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         </span></span></td>
         <td class="px">$0.9997</td>
         <td class="mc">$4.4 B</td>
-        <td class="cs">4.38B USDE</td>
-        <td class="mc">$45 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0063" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000">-0.01%</td>
+        <td class="cs">4.39B USDE</td>
+        <td class="mc">$47 M</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0082" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000">-0.01%</td>
       </tr>
       <tr id="row-uniswap" class="cryrow">
         <td class="rk">25</td>
@@ -1118,8 +1125,8 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="px">$6.86</td>
         <td class="mc">$4.3 B</td>
         <td class="cs">623.21M UNI</td>
-        <td class="mc">$591 M</td>
-        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-5.4404" data-chg-7d="31.3000" data-chg-1m="71.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-27.0000">-5.44%</td>
+        <td class="mc">$592 M</td>
+        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-4.6882" data-chg-7d="31.3000" data-chg-1m="71.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-27.0000">-4.69%</td>
       </tr>
       <tr id="row-usd1-wlfi" class="cryrow">
         <td class="rk">26</td>
@@ -1130,8 +1137,8 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="px">$0.9997</td>
         <td class="mc">$4.3 B</td>
         <td class="cs">4.26B USD1</td>
-        <td class="mc">$881 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0053" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.01%</td>
+        <td class="mc">$879 M</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0028" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">+0.00%</td>
       </tr>
       <tr id="row-global-dollar" class="cryrow">
         <td class="rk">32</td>
@@ -1143,7 +1150,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$3.3 B</td>
         <td class="cs">3.26B USDG</td>
         <td class="mc">$1.2 B</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0017" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">+0.00%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0018" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">+0.00%</td>
       </tr>
       <tr id="row-shiba-inu" class="cryrow">
         <td class="rk">33</td>
@@ -1151,11 +1158,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">SHIB</span>
           <span class="n2">Shiba Inu</span>
         </span></span></td>
-        <td class="px">$0.000005440</td>
+        <td class="px">$0.000005460</td>
         <td class="mc">$3.2 B</td>
         <td class="cs">589.24T SHIB</td>
-        <td class="mc">$73 M</td>
-        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-1.8398" data-chg-7d="7.2000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.4000">-1.84%</td>
+        <td class="mc">$72 M</td>
+        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-1.3404" data-chg-7d="7.2000" data-chg-1m="17.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.4000">-1.34%</td>
       </tr>
       <tr id="row-paypal-usd" class="cryrow">
         <td class="rk">35</td>
@@ -1163,11 +1170,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">PYUSD</span>
           <span class="n2">PayPal USD</span>
         </span></span></td>
-        <td class="px">$0.9998</td>
+        <td class="px">$0.9999</td>
         <td class="mc">$2.9 B</td>
         <td class="cs">2.89B PYUSD</td>
-        <td class="mc">$72 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0174" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.02%</td>
+        <td class="mc">$73 M</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0080" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.01%</td>
       </tr>
       <tr id="row-blackrock-usd-institutional-digital-liquidity-fund" class="cryrow">
         <td class="rk">36</td>
@@ -1187,11 +1194,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">CRO</span>
           <span class="n2">Cronos</span>
         </span></span></td>
-        <td class="px">$0.05702</td>
+        <td class="px">$0.05715</td>
         <td class="mc">$2.8 B</td>
         <td class="cs">48.54B CRO</td>
         <td class="mc">$5 M</td>
-        <td class="ch chp down" data-chg-1h="0.9000" data-chg-1d="-1.2701" data-chg-7d="0.3000" data-chg-1m="15.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-78.2000">-1.27%</td>
+        <td class="ch chp down" data-chg-1h="0.9000" data-chg-1d="-1.1524" data-chg-7d="0.3000" data-chg-1m="15.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-78.2000">-1.15%</td>
       </tr>
       <tr id="row-tether-gold" class="cryrow">
         <td class="rk">38</td>
@@ -1199,11 +1206,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">XAUT</span>
           <span class="n2">Tether Gold</span>
         </span></span></td>
-        <td class="px">$4,416</td>
+        <td class="px">$4,417</td>
         <td class="mc">$2.7 B</td>
         <td class="cs">612.82K XAUT</td>
-        <td class="mc">$656 M</td>
-        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-0.0944" data-chg-7d="-0.4000" data-chg-1m="2.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.8000">-0.09%</td>
+        <td class="mc">$658 M</td>
+        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-0.0528" data-chg-7d="-0.4000" data-chg-1m="2.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.8000">-0.05%</td>
       </tr>
       <tr id="row-memecore" class="cryrow">
         <td class="rk">39</td>
@@ -1215,7 +1222,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$2.6 B</td>
         <td class="cs">2.27B M</td>
         <td class="mc">$2 M</td>
-        <td class="ch chp up" data-chg-1h="0.4000" data-chg-1d="3.1728" data-chg-7d="5.7000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.7000">+3.17%</td>
+        <td class="ch chp up" data-chg-1h="0.4000" data-chg-1d="3.4335" data-chg-7d="5.7000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-37.7000">+3.43%</td>
       </tr>
       <tr id="row-hashnote-usyc" class="cryrow">
         <td class="rk">40</td>
@@ -1235,11 +1242,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">OKB</span>
           <span class="n2">OKB</span>
         </span></span></td>
-        <td class="px">$116.26</td>
-        <td class="mc">$2.4 B</td>
+        <td class="px">$117.18</td>
+        <td class="mc">$2.5 B</td>
         <td class="cs">21.00M OKB</td>
-        <td class="mc">$34 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="1.8770" data-chg-7d="3.0000" data-chg-1m="23.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-40.7000">+1.88%</td>
+        <td class="mc">$36 M</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="2.7432" data-chg-7d="3.0000" data-chg-1m="23.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-40.7000">+2.74%</td>
       </tr>
       <tr id="row-ripple-usd" class="cryrow">
         <td class="rk">43</td>
@@ -1250,8 +1257,8 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="px">$1.00</td>
         <td class="mc">$2.4 B</td>
         <td class="cs">2.43B RLUSD</td>
-        <td class="mc">$107 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0015" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.00%</td>
+        <td class="mc">$108 M</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0013" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.00%</td>
       </tr>
       <tr id="row-ondo-us-dollar-yield" class="cryrow">
         <td class="rk">44</td>
@@ -1259,11 +1266,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">USDY</span>
           <span class="n2">Ondo US Dollar Yield</span>
         </span></span></td>
-        <td class="px">$1.15</td>
+        <td class="px">$1.14</td>
         <td class="mc">$2.2 B</td>
         <td class="cs">1.93B USDY</td>
-        <td class="mc">$1 M</td>
-        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-0.3271" data-chg-7d="0.1000" data-chg-1m="0.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.8000">-0.33%</td>
+        <td class="mc">$3 M</td>
+        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-0.1493" data-chg-7d="0.1000" data-chg-1m="0.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="5.8000">-0.15%</td>
       </tr>
       <tr id="row-aster-2" class="cryrow">
         <td class="rk">45</td>
@@ -1271,11 +1278,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ASTER</span>
           <span class="n2">Aster</span>
         </span></span></td>
-        <td class="px">$0.7710</td>
+        <td class="px">$0.7703</td>
         <td class="mc">$2.1 B</td>
         <td class="cs">2.70B ASTER</td>
-        <td class="mc">$224 M</td>
-        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-2.2172" data-chg-7d="10.3000" data-chg-1m="28.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">-2.22%</td>
+        <td class="mc">$227 M</td>
+        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-1.8116" data-chg-7d="10.3000" data-chg-1m="28.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">-1.81%</td>
       </tr>
       <tr id="row-aave" class="cryrow">
         <td class="rk">47</td>
@@ -1283,11 +1290,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">AAVE</span>
           <span class="n2">Aave</span>
         </span></span></td>
-        <td class="px">$132.06</td>
+        <td class="px">$132.33</td>
         <td class="mc">$2.0 B</td>
         <td class="cs">15.43M AAVE</td>
-        <td class="mc">$220 M</td>
-        <td class="ch chp down" data-chg-1h="0.8000" data-chg-1d="-3.2082" data-chg-7d="6.5000" data-chg-1m="44.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.3000">-3.21%</td>
+        <td class="mc">$219 M</td>
+        <td class="ch chp down" data-chg-1h="0.8000" data-chg-1d="-2.4554" data-chg-7d="6.5000" data-chg-1m="44.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-56.3000">-2.46%</td>
       </tr>
       <tr id="row-pax-gold" class="cryrow">
         <td class="rk">48</td>
@@ -1295,11 +1302,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">PAXG</span>
           <span class="n2">PAX Gold</span>
         </span></span></td>
-        <td class="px">$4,420</td>
+        <td class="px">$4,421</td>
         <td class="mc">$1.9 B</td>
         <td class="cs">432.50K PAXG</td>
         <td class="mc">$89 M</td>
-        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-0.0567" data-chg-7d="-0.5000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.7000">-0.06%</td>
+        <td class="ch chp down" data-chg-1h="0.3000" data-chg-1d="-0.0011" data-chg-7d="-0.5000" data-chg-1m="1.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="22.7000">-0.00%</td>
       </tr>
       <tr id="row-ondo-finance" class="cryrow">
         <td class="rk">49</td>
@@ -1307,11 +1314,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ONDO</span>
           <span class="n2">Ondo</span>
         </span></span></td>
-        <td class="px">$0.3828</td>
+        <td class="px">$0.3840</td>
         <td class="mc">$1.9 B</td>
         <td class="cs">4.87B ONDO</td>
-        <td class="mc">$149 M</td>
-        <td class="ch chp down" data-chg-1h="1.0000" data-chg-1d="-1.4154" data-chg-7d="11.2000" data-chg-1m="9.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.8000">-1.42%</td>
+        <td class="mc">$146 M</td>
+        <td class="ch chp down" data-chg-1h="1.0000" data-chg-1d="-1.7400" data-chg-7d="11.2000" data-chg-1m="9.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-57.8000">-1.74%</td>
       </tr>
       <tr id="row-world-liberty-financial" class="cryrow">
         <td class="rk">51</td>
@@ -1319,11 +1326,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">WLFI</span>
           <span class="n2">World Liberty Financial</span>
         </span></span></td>
-        <td class="px">$0.05647</td>
+        <td class="px">$0.05643</td>
         <td class="mc">$1.8 B</td>
         <td class="cs">31.78B WLFI</td>
-        <td class="mc">$30 M</td>
-        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-0.8340" data-chg-7d="-2.1000" data-chg-1m="9.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.2000">-0.83%</td>
+        <td class="mc">$28 M</td>
+        <td class="ch chp down" data-chg-1h="0.4000" data-chg-1d="-0.6208" data-chg-7d="-2.1000" data-chg-1m="9.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-75.2000">-0.62%</td>
       </tr>
       <tr id="row-pump-fun" class="cryrow">
         <td class="rk">53</td>
@@ -1331,11 +1338,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">PUMP</span>
           <span class="n2">Pump.fun</span>
         </span></span></td>
-        <td class="px">$0.004369</td>
+        <td class="px">$0.004341</td>
         <td class="mc">$1.7 B</td>
-        <td class="cs">395.08B PUMP</td>
+        <td class="cs">395.07B PUMP</td>
         <td class="mc">$326 M</td>
-        <td class="ch chp up" data-chg-1h="-1.2000" data-chg-1d="9.0651" data-chg-7d="-1.8000" data-chg-1m="80.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-11.2000">+9.07%</td>
+        <td class="ch chp up" data-chg-1h="-1.2000" data-chg-1d="9.5855" data-chg-7d="-1.8000" data-chg-1m="80.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-11.2000">+9.59%</td>
       </tr>
       <tr id="row-morpho" class="cryrow">
         <td class="rk">54</td>
@@ -1343,11 +1350,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">MORPHO</span>
           <span class="n2">Morpho</span>
         </span></span></td>
-        <td class="px">$2.46</td>
+        <td class="px">$2.48</td>
         <td class="mc">$1.7 B</td>
         <td class="cs">688.74M MORPHO</td>
         <td class="mc">$35 M</td>
-        <td class="ch chp down" data-chg-1h="1.4000" data-chg-1d="-5.1418" data-chg-7d="-0.3000" data-chg-1m="28.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="25.3000">-5.14%</td>
+        <td class="ch chp down" data-chg-1h="1.4000" data-chg-1d="-4.0472" data-chg-7d="-0.3000" data-chg-1m="28.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="25.3000">-4.05%</td>
       </tr>
       <tr id="row-ethena" class="cryrow">
         <td class="rk">56</td>
@@ -1355,11 +1362,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">ENA</span>
           <span class="n2">Ethena</span>
         </span></span></td>
-        <td class="px">$0.1640</td>
+        <td class="px">$0.1645</td>
         <td class="mc">$1.7 B</td>
         <td class="cs">10.10B ENA</td>
-        <td class="mc">$438 M</td>
-        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-7.1588" data-chg-7d="9.2000" data-chg-1m="82.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-77.9000">-7.16%</td>
+        <td class="mc">$435 M</td>
+        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-6.1270" data-chg-7d="9.2000" data-chg-1m="82.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-77.9000">-6.13%</td>
       </tr>
       <tr id="row-sky" class="cryrow">
         <td class="rk">57</td>
@@ -1367,11 +1374,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">SKY</span>
           <span class="n2">Sky</span>
         </span></span></td>
-        <td class="px">$0.06888</td>
+        <td class="px">$0.06939</td>
         <td class="mc">$1.6 B</td>
         <td class="cs">23.43B SKY</td>
         <td class="mc">$8 M</td>
-        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-1.5599" data-chg-7d="1.2000" data-chg-1m="27.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-2.3000">-1.56%</td>
+        <td class="ch chp down" data-chg-1h="0.6000" data-chg-1d="-1.2702" data-chg-7d="1.2000" data-chg-1m="27.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-2.3000">-1.27%</td>
       </tr>
       <tr id="row-pepe" class="cryrow">
         <td class="rk">58</td>
@@ -1379,11 +1386,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">PEPE</span>
           <span class="n2">Pepe</span>
         </span></span></td>
-        <td class="px">$0.000003620</td>
+        <td class="px">$0.000003630</td>
         <td class="mc">$1.5 B</td>
         <td class="cs">420.69T PEPE</td>
-        <td class="mc">$211 M</td>
-        <td class="ch chp down" data-chg-1h="1.4000" data-chg-1d="-1.1910" data-chg-7d="1.7000" data-chg-1m="27.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.4000">-1.19%</td>
+        <td class="mc">$210 M</td>
+        <td class="ch chp down" data-chg-1h="1.4000" data-chg-1d="-0.6577" data-chg-7d="1.7000" data-chg-1m="27.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-63.4000">-0.66%</td>
       </tr>
       <tr id="row-htx-dao" class="cryrow">
         <td class="rk">59</td>
@@ -1395,7 +1402,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$1.5 B</td>
         <td class="cs">898.23T HTX</td>
         <td class="mc">$26 M</td>
-        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-0.7237" data-chg-7d="1.2000" data-chg-1m="-7.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.4000">-0.72%</td>
+        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-0.7252" data-chg-7d="1.2000" data-chg-1m="-7.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-20.4000">-0.73%</td>
       </tr>
       <tr id="row-usdd" class="cryrow">
         <td class="rk">60</td>
@@ -1403,11 +1410,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">USDD</span>
           <span class="n2">USDD</span>
         </span></span></td>
-        <td class="px">$0.9992</td>
+        <td class="px">$0.9993</td>
         <td class="mc">$1.5 B</td>
         <td class="cs">1.47B USDD</td>
         <td class="mc">$3 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0508" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.05%</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0506" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.0000">-0.05%</td>
       </tr>
       <tr id="row-bitget-token" class="cryrow">
         <td class="rk">61</td>
@@ -1419,7 +1426,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$1.4 B</td>
         <td class="cs">699.99M BGB</td>
         <td class="mc">$11 M</td>
-        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-1.2624" data-chg-7d="2.8000" data-chg-1m="21.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-58.7000">-1.26%</td>
+        <td class="ch chp down" data-chg-1h="0.1000" data-chg-1d="-1.3935" data-chg-7d="2.8000" data-chg-1m="21.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-58.7000">-1.39%</td>
       </tr>
       <tr id="row-usdgo" class="cryrow">
         <td class="rk">62</td>
@@ -1431,7 +1438,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$1.4 B</td>
         <td class="cs">1.37B USDGO</td>
         <td class="mc">$51 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0228" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+0.02%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0159" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+0.02%</td>
       </tr>
       <tr id="row-falcon-finance" class="cryrow">
         <td class="rk">63</td>
@@ -1439,11 +1446,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">USDF</span>
           <span class="n2">Falcon USD</span>
         </span></span></td>
-        <td class="px">$0.9965</td>
+        <td class="px">$0.9964</td>
         <td class="mc">$1.3 B</td>
         <td class="cs">1.34B USDF</td>
         <td class="mc">$0 M</td>
-        <td class="ch chp down" data-chg-1h="-0.4000" data-chg-1d="-0.0148" data-chg-7d="0.1000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.3000">-0.01%</td>
+        <td class="ch chp down" data-chg-1h="-0.4000" data-chg-1d="-0.0120" data-chg-7d="0.1000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.3000">-0.01%</td>
       </tr>
       <tr id="row-bfusd" class="cryrow">
         <td class="rk">64</td>
@@ -1455,7 +1462,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$1.3 B</td>
         <td class="cs">1.32B BFUSD</td>
         <td class="mc">$2 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0386" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.1000">+0.04%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0293" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="0.1000">+0.03%</td>
       </tr>
       <tr id="row-united-stables" class="cryrow">
         <td class="rk">65</td>
@@ -1463,11 +1470,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">U</span>
           <span class="n2">United Stables</span>
         </span></span></td>
-        <td class="px">$0.9993</td>
+        <td class="px">$0.9992</td>
         <td class="mc">$1.3 B</td>
         <td class="cs">1.30B U</td>
         <td class="mc">$150 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0089" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">-0.01%</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0161" data-chg-7d="0.0000" data-chg-1m="0.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">-0.02%</td>
       </tr>
       <tr id="row-spiko-amundi-overnight-swap-fund-eur" class="cryrow">
         <td class="rk">67</td>
@@ -1479,7 +1486,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$1.2 B</td>
         <td class="cs">1.06B EURSAFO</td>
         <td class="mc">$0 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.1403" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+0.14%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0898" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+0.09%</td>
       </tr>
       <tr id="row-bitway" class="cryrow">
         <td class="rk">68</td>
@@ -1487,11 +1494,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">BTW</span>
           <span class="n2">Bitway</span>
         </span></span></td>
-        <td class="px">$0.4495</td>
+        <td class="px">$0.4498</td>
         <td class="mc">$1.2 B</td>
         <td class="cs">2.71B BTW</td>
         <td class="mc">$15 M</td>
-        <td class="ch chp up" data-chg-1h="0.8000" data-chg-1d="0.8283" data-chg-7d="10.7000" data-chg-1m="120.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+0.83%</td>
+        <td class="ch chp up" data-chg-1h="0.8000" data-chg-1d="1.1529" data-chg-7d="10.7000" data-chg-1m="120.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+1.15%</td>
       </tr>
       <tr id="row-lighter" class="cryrow">
         <td class="rk">69</td>
@@ -1499,11 +1506,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">LIT</span>
           <span class="n2">Lighter</span>
         </span></span></td>
-        <td class="px">$4.71</td>
+        <td class="px">$4.72</td>
         <td class="mc">$1.2 B</td>
         <td class="cs">250.00M LIT</td>
-        <td class="mc">$109 M</td>
-        <td class="ch chp up" data-chg-1h="0.4000" data-chg-1d="4.8346" data-chg-7d="33.0000" data-chg-1m="106.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+4.83%</td>
+        <td class="mc">$110 M</td>
+        <td class="ch chp up" data-chg-1h="0.4000" data-chg-1d="5.6070" data-chg-7d="33.0000" data-chg-1m="106.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+5.61%</td>
       </tr>
       <tr id="row-gatechain-token" class="cryrow">
         <td class="rk">74</td>
@@ -1511,11 +1518,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">GT</span>
           <span class="n2">Gate</span>
         </span></span></td>
-        <td class="px">$9.42</td>
+        <td class="px">$9.40</td>
         <td class="mc">$1.0 B</td>
         <td class="cs">106.62M GT</td>
-        <td class="mc">$3 M</td>
-        <td class="ch chp up" data-chg-1h="1.9000" data-chg-1d="2.9612" data-chg-7d="17.2000" data-chg-1m="39.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-44.3000">+2.96%</td>
+        <td class="mc">$2 M</td>
+        <td class="ch chp up" data-chg-1h="1.9000" data-chg-1d="2.6353" data-chg-7d="17.2000" data-chg-1m="39.5000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-44.3000">+2.64%</td>
       </tr>
       <tr id="row-blockchain-capital" class="cryrow">
         <td class="rk">76</td>
@@ -1539,7 +1546,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$961 M</td>
         <td class="cs">137.16M KCS</td>
         <td class="mc">$3 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-1.7904" data-chg-7d="-1.2000" data-chg-1m="5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.2000">-1.79%</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-1.5173" data-chg-7d="-1.2000" data-chg-1m="5.2000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.2000">-1.52%</td>
       </tr>
       <tr id="row-eutbl" class="cryrow">
         <td class="rk">78</td>
@@ -1551,19 +1558,19 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$901 M</td>
         <td class="cs">732.05M EUTBL</td>
         <td class="mc">$0 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.1290" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="1.2000">+0.13%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0785" data-chg-7d="0.2000" data-chg-1m="0.8000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="1.2000">+0.08%</td>
       </tr>
       <tr id="row-venice-token" class="cryrow">
-        <td class="rk">80</td>
+        <td class="rk">79</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">V</span><span class="nm">
           <span class="n1">VVV</span>
           <span class="n2">Venice Token</span>
         </span></span></td>
-        <td class="px">$18.43</td>
-        <td class="mc">$881 M</td>
+        <td class="px">$18.50</td>
+        <td class="mc">$884 M</td>
         <td class="cs">47.81M VVV</td>
         <td class="mc">$26 M</td>
-        <td class="ch chp up" data-chg-1h="0.1000" data-chg-1d="8.3439" data-chg-7d="9.9000" data-chg-1m="63.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="601.3000">+8.34%</td>
+        <td class="ch chp up" data-chg-1h="0.1000" data-chg-1d="8.9129" data-chg-7d="9.9000" data-chg-1m="63.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="601.3000">+8.91%</td>
       </tr>
       <tr id="row-just" class="cryrow">
         <td class="rk">81</td>
@@ -1571,11 +1578,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">JST</span>
           <span class="n2">JUST</span>
         </span></span></td>
-        <td class="px">$0.1067</td>
+        <td class="px">$0.1068</td>
         <td class="mc">$874 M</td>
         <td class="cs">8.19B JST</td>
-        <td class="mc">$40 M</td>
-        <td class="ch chp down" data-chg-1h="-0.6000" data-chg-1d="-3.8028" data-chg-7d="6.8000" data-chg-1m="6.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="216.7000">-3.80%</td>
+        <td class="mc">$39 M</td>
+        <td class="ch chp down" data-chg-1h="-0.6000" data-chg-1d="-4.0683" data-chg-7d="6.8000" data-chg-1m="6.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="216.7000">-4.07%</td>
       </tr>
       <tr id="row-jupiter-exchange-solana" class="cryrow">
         <td class="rk">83</td>
@@ -1583,11 +1590,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">JUP</span>
           <span class="n2">Jupiter</span>
         </span></span></td>
-        <td class="px">$0.2527</td>
-        <td class="mc">$839 M</td>
+        <td class="px">$0.2535</td>
+        <td class="mc">$842 M</td>
         <td class="cs">3.32B JUP</td>
-        <td class="mc">$93 M</td>
-        <td class="ch chp down" data-chg-1h="1.3000" data-chg-1d="-7.1542" data-chg-7d="12.8000" data-chg-1m="38.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-49.8000">-7.15%</td>
+        <td class="mc">$91 M</td>
+        <td class="ch chp down" data-chg-1h="1.3000" data-chg-1d="-6.6970" data-chg-7d="12.8000" data-chg-1m="38.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-49.8000">-6.70%</td>
       </tr>
       <tr id="row-nexo" class="cryrow">
         <td class="rk">84</td>
@@ -1595,11 +1602,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">NEXO</span>
           <span class="n2">NEXO</span>
         </span></span></td>
-        <td class="px">$0.8368</td>
+        <td class="px">$0.8367</td>
         <td class="mc">$837 M</td>
         <td class="cs">1.00B NEXO</td>
         <td class="mc">$3 M</td>
-        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.0197" data-chg-7d="-0.6000" data-chg-1m="13.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.0000">+0.02%</td>
+        <td class="ch chp up" data-chg-1h="0.0000" data-chg-1d="0.5213" data-chg-7d="-0.6000" data-chg-1m="13.0000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-34.0000">+0.52%</td>
       </tr>
       <tr id="row-janus-henderson-anemoy-treasury-fund" class="cryrow">
         <td class="rk">87</td>
@@ -1631,11 +1638,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">STABLE</span>
           <span class="n2">​​Stable</span>
         </span></span></td>
-        <td class="px">$0.02933</td>
-        <td class="mc">$766 M</td>
+        <td class="px">$0.02926</td>
+        <td class="mc">$764 M</td>
         <td class="cs">26.12B STABLE</td>
         <td class="mc">$9 M</td>
-        <td class="ch chp up" data-chg-1h="0.2000" data-chg-1d="3.7794" data-chg-7d="4.0000" data-chg-1m="-11.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+3.78%</td>
+        <td class="ch chp up" data-chg-1h="0.2000" data-chg-1d="4.3268" data-chg-7d="4.0000" data-chg-1m="-11.4000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="">+4.33%</td>
       </tr>
       <tr id="row-pancakeswap-token" class="cryrow">
         <td class="rk">90</td>
@@ -1643,11 +1650,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">CAKE</span>
           <span class="n2">PancakeSwap</span>
         </span></span></td>
-        <td class="px">$2.22</td>
-        <td class="mc">$712 M</td>
+        <td class="px">$2.23</td>
+        <td class="mc">$715 M</td>
         <td class="cs">320.18M CAKE</td>
-        <td class="mc">$93 M</td>
-        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-0.7858" data-chg-7d="19.5000" data-chg-1m="54.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-8.1000">-0.79%</td>
+        <td class="mc">$92 M</td>
+        <td class="ch chp down" data-chg-1h="0.5000" data-chg-1d="-0.0409" data-chg-7d="19.5000" data-chg-1m="54.6000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-8.1000">-0.04%</td>
       </tr>
       <tr id="row-janus-henderson-anemoy-aaa-clo-fund" class="cryrow">
         <td class="rk">91</td>
@@ -1671,31 +1678,31 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="mc">$698 M</td>
         <td class="cs">699.00M GHO</td>
         <td class="mc">$4 M</td>
-        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0162" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000">-0.02%</td>
+        <td class="ch chp down" data-chg-1h="0.0000" data-chg-1d="-0.0180" data-chg-7d="0.0000" data-chg-1m="0.1000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-0.1000">-0.02%</td>
+      </tr>
+      <tr id="row-aerodrome-finance" class="cryrow">
+        <td class="rk">94</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">A</span><span class="nm">
+          <span class="n1">AERO</span>
+          <span class="n2">Aerodrome Finance</span>
+        </span></span></td>
+        <td class="px">$0.6397</td>
+        <td class="mc">$631 M</td>
+        <td class="cs">986.66M AERO</td>
+        <td class="mc">$123 M</td>
+        <td class="ch chp up" data-chg-1h="-0.6000" data-chg-1d="15.7744" data-chg-7d="30.4000" data-chg-1m="41.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-45.6000">+15.77%</td>
       </tr>
       <tr id="row-official-trump" class="cryrow">
-        <td class="rk">94</td>
+        <td class="rk">97</td>
         <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">T</span><span class="nm">
           <span class="n1">TRUMP</span>
           <span class="n2">Official Trump</span>
         </span></span></td>
         <td class="px">$2.29</td>
-        <td class="mc">$626 M</td>
+        <td class="mc">$625 M</td>
         <td class="cs">273.14M TRUMP</td>
         <td class="mc">$204 M</td>
-        <td class="ch chp down" data-chg-1h="2.4000" data-chg-1d="-1.8341" data-chg-7d="-5.0000" data-chg-1m="55.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.8000">-1.83%</td>
-      </tr>
-      <tr id="row-aerodrome-finance" class="cryrow">
-        <td class="rk">98</td>
-        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">A</span><span class="nm">
-          <span class="n1">AERO</span>
-          <span class="n2">Aerodrome Finance</span>
-        </span></span></td>
-        <td class="px">$0.6212</td>
-        <td class="mc">$613 M</td>
-        <td class="cs">986.66M AERO</td>
-        <td class="mc">$119 M</td>
-        <td class="ch chp up" data-chg-1h="-0.6000" data-chg-1d="12.1204" data-chg-7d="30.4000" data-chg-1m="41.9000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-45.6000">+12.12%</td>
+        <td class="ch chp down" data-chg-1h="2.4000" data-chg-1d="-1.2192" data-chg-7d="-5.0000" data-chg-1m="55.3000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-72.8000">-1.22%</td>
       </tr>
       <tr id="row-curve-dao-token" class="cryrow">
         <td class="rk">100</td>
@@ -1703,11 +1710,11 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
           <span class="n1">CRV</span>
           <span class="n2">Curve DAO</span>
         </span></span></td>
-        <td class="px">$0.3704</td>
-        <td class="mc">$576 M</td>
+        <td class="px">$0.3678</td>
+        <td class="mc">$572 M</td>
         <td class="cs">1.55B CRV</td>
-        <td class="mc">$72 M</td>
-        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-3.1600" data-chg-7d="9.2000" data-chg-1m="62.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000">-3.16%</td>
+        <td class="mc">$71 M</td>
+        <td class="ch chp down" data-chg-1h="0.7000" data-chg-1d="-2.6555" data-chg-7d="9.2000" data-chg-1m="62.7000" data-chg-3m="" data-chg-6m="" data-chg-ytd="" data-chg-1y="-51.9000">-2.66%</td>
       </tr>
     </tbody>
     <tfoot>
@@ -1715,7 +1722,7 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="rk"></td>
         <td class="as crytot-l">Subtotal — 60 coins</td>
         <td class="px"></td>
-        <td class="mc">$426.7 B</td>
+        <td class="mc">$426.9 B</td>
         <td class="cs"></td>
         <td class="mc">$66.8 B</td>
         <td class="ch"></td>
@@ -1723,39 +1730,9 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
     </tfoot>
   </table>
   </div>
-  <div class="panel">
-    <h2>How this board is made, and what it is not</h2>
-    <p>Price, market cap, circulating supply, 24h volume, and the 1H/1D/7D/1M/1Y
-    change are pulled in one call from CoinGecko's public market data and are
-    exact as of the "Updated" timestamp above. <b>3M, 6M and YTD are
-    different</b>: CoinGecko has no bulk field for those periods at any price,
-    so each one is computed from that coin's own daily price history, fetched
-    a handful of coins at a time on a schedule — the same paced-crawl approach
-    this site's Ledger uses for slow background jobs elsewhere. A coin's
-    3M/6M/YTD is real once it appears, never an approximation of a different
-    window standing in for it.</p>
-    <p>The <b>map above</b> is a squarified treemap: every box's AREA is that
-    coin's market cap, its COLOUR is the change for whichever period is
-    selected, and the three black header bars are the same three categories as
-    the tables below — sized by each category's own total market cap, which is
-    why Bitcoin & Derivatives (really just Bitcoin itself, at this kind of
-    market cap) tends to dominate the page. A coin small enough that its box
-    can't hold readable text still gets a colour and a hover tooltip; nothing
-    is dropped from the map.</p>
-    <p><b>Categories</b> are a deliberately short, curated list rather than an
-    exhaustive taxonomy: Bitcoin & Derivatives is Bitcoin itself, coins forked
-    from its codebase, and tokenized BTC; Infrastructure & Platform is base
-    chains, scaling layers, oracles and interoperability protocols; Others is
-    everything else, including every stablecoin and tokenized fund now sitting
-    in the top 100. A brand-new coin entering the top 100 renders under
-    Others until it's worth curating into one of the first two.</p>
-    <p>This is a snapshot of the market, not a recommendation. Nothing here is
-    investment advice, and a coin's presence in the top 100 is not an
-    endorsement of it.</p>
-  </div>
   <h2 class="cryh">All coins</h2>
   <div class="tw">
-  <table class="board crypto">
+  <table class="board crypto crygrand">
     <thead>
       <tr>
         <th class="rk">#</th>
@@ -1772,13 +1749,63 @@ table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:backgroun
         <td class="rk"></td>
         <td class="as crytot-l">Total — 100 coins</td>
         <td class="px"></td>
-        <td class="mc">$2.722 T</td>
+        <td class="mc">$2.726 T</td>
         <td class="cs"></td>
-        <td class="mc">$116.1 B</td>
+        <td class="mc">$116.0 B</td>
         <td class="ch"></td>
       </tr>
     </tfoot>
   </table>
+  </div>
+  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p>The <b>map above</b> is a squarified treemap: every box's AREA is that
+    coin's market cap, its COLOUR is the change for whichever period is
+    selected, and the three black header bars are the same three categories as
+    the tables below — sized by each category's own total market cap, which is
+    why Bitcoin & Derivatives (really just Bitcoin itself, at this kind of
+    market cap) tends to dominate the page. A coin small enough that its box
+    can't hold readable text still gets a colour and a hover tooltip; nothing
+    is dropped from the map.</p>
+    <p><b>What Bitcoin's own market cap here actually is — and isn't:</b>
+    Bitcoin's $1.590 T figure is exactly one thing: 20.08M BTC currently in existence, times its own price. Nothing else.
+    It does <b>not</b> add anything for the Bitcoin ETFs (IBIT, FBTC, GBTC and the
+    rest) — those are separate securities with their own share price and share
+    count, roughly tracking the BTC they hold in trust, but never merged into
+    this number. It also does <b>not</b> add anything for the Bitcoin any
+    company holds — a company like Strategy buys existing coins on the open
+    market, so those coins are already counted inside the circulating-supply
+    figure above, not stacked on top of it a second time. That company's own
+    STOCK, meanwhile, has its own separate market cap (and often trades at a
+    premium to the BTC it holds) that never appears on this board at all.
+    <b>Every coin here is priced the same way</b> — circulating supply times
+    price, nothing wrapped, staked, or held-in-trust on top of it — which is
+    what makes comparing Bitcoin against the other 99 a fair comparison: each
+    one is that network's own native asset, not a fund or a company built on
+    top of it. The other four coins in Bitcoin & Derivatives (Zcash, Bitcoin
+    Cash, Litecoin, Dash) are independent blockchains with their own separate
+    supply, not tokens backed by locked-up BTC, so there's no double-counting
+    inside this category today. If a wrapped-BTC token (like Wrapped Bitcoin)
+    ever enters the top 100, its market cap WOULD represent coins already
+    counted inside Bitcoin's own number too — that overlap will get called out
+    here the day it actually applies, rather than in advance of it mattering.</p>
+    <p><b>3M, 6M and YTD are different</b> from every other column on this
+    board: CoinGecko has no bulk field for those periods at any price, so each
+    one is computed from that coin's own daily price history, fetched a
+    handful of coins at a time on a schedule — the same paced-crawl approach
+    this site's Ledger uses for slow background jobs elsewhere. A coin's
+    3M/6M/YTD is real once it appears, never an approximation of a different
+    window standing in for it.</p>
+    <p><b>Categories</b> are a deliberately short, curated list rather than an
+    exhaustive taxonomy: Bitcoin & Derivatives is Bitcoin itself, coins forked
+    from its codebase, and tokenized BTC; Infrastructure & Platform is base
+    chains, scaling layers, oracles and interoperability protocols; Others is
+    everything else, including every stablecoin and tokenized fund now sitting
+    in the top 100. A brand-new coin entering the top 100 renders under
+    Others until it's worth curating into one of the first two.</p>
+    <p>This is a snapshot of the market, not a recommendation. Nothing here is
+    investment advice, and a coin's presence in the top 100 is not an
+    endorsement of it.</p>
   </div>
 
   <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice<p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>

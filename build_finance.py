@@ -2053,6 +2053,13 @@ table.crypto td.cs{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:n
 .ctpc{font-weight:600;line-height:1.15}
 .ctdom{opacity:.8;font-style:italic;line-height:1.15;margin-top:2px}
 .crytot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+/* The grand total's own double rule (accounting-style "this is the final
+   sum") — set apart from every per-category subtotal's plain single line.
+   Needs the same `tr:last-child` as the shared `.board tr:last-child td`
+   rule it's overriding (that rule zeroes the last row's border on every
+   plain data table); matching it is what wins the specificity tie instead
+   of reaching for !important. */
+table.crygrand tfoot tr:last-child td{border-bottom:3px double #3a4f66;padding-bottom:14px}
 /* The flash a table row gets when a treemap tile scrolls it into view —
    fades from the accent colour back to nothing so the reader's eye lands on
    the right row without a jarring permanent highlight. */
@@ -2069,7 +2076,7 @@ def _crypto_grand_total(rows):
     tot_vol = sum(r["volume_24h"] or 0 for r in rows)
     return f"""  <h2 class="cryh">All coins</h2>
   <div class="tw">
-  <table class="board crypto">
+  <table class="board crypto crygrand">
     <thead>
       <tr>
         <th class="rk">#</th>
@@ -2114,6 +2121,7 @@ def build_crypto_heatmap(board):
     crawl = board.get("crawl", {})
     covered, total = crawl.get("covered", 0), crawl.get("total", len(rows))
     dom = board.get("btc_dominance_pct")
+    btc_row = next((r for r in rows if r["id"] == "bitcoin"), None)
     period_btns = "".join(
         '<button type="button" class="bbb%s" data-period="%s">%s</button>'
         % (" on" if p == "1D" else "", p.lower(), p) for p in CRYPTO_PERIODS)
@@ -2138,17 +2146,9 @@ def build_crypto_heatmap(board):
   few coins at a time in the background (see the note below). Until a coin
   is reached, those three buttons read "—" for it rather than a guess.</p>
 {sections}
+{_crypto_grand_total(rows)}
   <div class="panel">
     <h2>How this board is made, and what it is not</h2>
-    <p>Price, market cap, circulating supply, 24h volume, and the 1H/1D/7D/1M/1Y
-    change are pulled in one call from CoinGecko's public market data and are
-    exact as of the "Updated" timestamp above. <b>3M, 6M and YTD are
-    different</b>: CoinGecko has no bulk field for those periods at any price,
-    so each one is computed from that coin's own daily price history, fetched
-    a handful of coins at a time on a schedule — the same paced-crawl approach
-    this site's Ledger uses for slow background jobs elsewhere. A coin's
-    3M/6M/YTD is real once it appears, never an approximation of a different
-    window standing in for it.</p>
     <p>The <b>map above</b> is a squarified treemap: every box's AREA is that
     coin's market cap, its COLOUR is the change for whichever period is
     selected, and the three black header bars are the same three categories as
@@ -2157,6 +2157,39 @@ def build_crypto_heatmap(board):
     market cap) tends to dominate the page. A coin small enough that its box
     can't hold readable text still gets a colour and a hover tooltip; nothing
     is dropped from the map.</p>
+    <p><b>What Bitcoin's own market cap here actually is — and isn't:</b>
+    {("Bitcoin's %s figure is exactly one thing: %s BTC currently in "
+      "existence, times its own price. Nothing else." % (
+          money_cap(btc_row["market_cap"]), abbrev_num(btc_row["circulating_supply"]))
+      ) if btc_row and btc_row.get("market_cap") and btc_row.get("circulating_supply") else
+      "Bitcoin's market cap here is exactly one thing: the coins currently in existence, times its own price. Nothing else."}
+    It does <b>not</b> add anything for the Bitcoin ETFs (IBIT, FBTC, GBTC and the
+    rest) — those are separate securities with their own share price and share
+    count, roughly tracking the BTC they hold in trust, but never merged into
+    this number. It also does <b>not</b> add anything for the Bitcoin any
+    company holds — a company like Strategy buys existing coins on the open
+    market, so those coins are already counted inside the circulating-supply
+    figure above, not stacked on top of it a second time. That company's own
+    STOCK, meanwhile, has its own separate market cap (and often trades at a
+    premium to the BTC it holds) that never appears on this board at all.
+    <b>Every coin here is priced the same way</b> — circulating supply times
+    price, nothing wrapped, staked, or held-in-trust on top of it — which is
+    what makes comparing Bitcoin against the other 99 a fair comparison: each
+    one is that network's own native asset, not a fund or a company built on
+    top of it. The other four coins in Bitcoin & Derivatives (Zcash, Bitcoin
+    Cash, Litecoin, Dash) are independent blockchains with their own separate
+    supply, not tokens backed by locked-up BTC, so there's no double-counting
+    inside this category today. If a wrapped-BTC token (like Wrapped Bitcoin)
+    ever enters the top 100, its market cap WOULD represent coins already
+    counted inside Bitcoin's own number too — that overlap will get called out
+    here the day it actually applies, rather than in advance of it mattering.</p>
+    <p><b>3M, 6M and YTD are different</b> from every other column on this
+    board: CoinGecko has no bulk field for those periods at any price, so each
+    one is computed from that coin's own daily price history, fetched a
+    handful of coins at a time on a schedule — the same paced-crawl approach
+    this site's Ledger uses for slow background jobs elsewhere. A coin's
+    3M/6M/YTD is real once it appears, never an approximation of a different
+    window standing in for it.</p>
     <p><b>Categories</b> are a deliberately short, curated list rather than an
     exhaustive taxonomy: Bitcoin & Derivatives is Bitcoin itself, coins forked
     from its codebase, and tokenized BTC; Infrastructure & Platform is base
@@ -2168,7 +2201,6 @@ def build_crypto_heatmap(board):
     investment advice, and a coin's presence in the top 100 is not an
     endorsement of it.</p>
   </div>
-{_crypto_grand_total(rows)}
 """
     return _shell(title="The Crypto Heat Map — top 100 cryptocurrencies — %s" % SITE_NAME,
                   desc=desc, url="%scrypto.html" % BASE_URL, active="crypto",
