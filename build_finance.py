@@ -2139,6 +2139,8 @@ def build_crypto_heatmap(board):
   <p class="stamp">Updated {esc(board.get('generated', '—'))}
     <span class="dot">·</span><span class="hl">{len(rows)} coins</span>
     {f'<span class="dot">·</span>BTC dominance {dom:.1f}%' if dom is not None else ''}</p>
+  <p class="crynote">Data provided by <a href="https://www.coingecko.com" target="_blank"
+    rel="noopener">CoinGecko</a>.</p>
   <div class="chtabs" id="cryptoTabs">{period_btns}</div>
 {_crypto_treemap(rows, dominance=dom)}
   <p class="crynote">{covered} of {total} coins have real 3M/6M/YTD figures so
