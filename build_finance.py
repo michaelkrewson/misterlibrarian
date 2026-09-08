@@ -5147,6 +5147,44 @@ def _mw_flag_name(iso3):
     return MW_ISO3.get(iso3, (iso3, "🌐"))
 
 
+# Split 2026-09-08 (Michael's call — "too much data on that one page"): the
+# board used to be one long scroll of four sections. Now it's a hub (one card
+# per section, plus the scarcity chart and methodology panel that stay on the
+# hub itself — see build_money_worldwide_hub's own docstring for why those two
+# stay put) + one full page per section, same hub/sub-page split as the
+# Treasuries board (TREASURY_CATEGORIES above). Reserves and gold, which used
+# to share one <h2> on the long page, are now two separate cards/pages —
+# they were always two separate tables, just under one heading.
+MW_SECTIONS = {
+    "exchange-rates": {
+        "title": "Exchange Rates", "file": "money-worldwide-exchange-rates.html",
+        "icon": "💱",
+        "blurb": "What a US dollar buys in other currencies today — European "
+                 "Central Bank reference rates."},
+    "money-supply": {
+        "title": "Money Supply", "file": "money-worldwide-money-supply.html",
+        "icon": "🏦",
+        "blurb": "How much money actually exists, by aggregate — narrowest to "
+                 "broadest — for the two most transparently published economies."},
+    "reserves": {
+        "title": "Reserves (excl. gold)", "file": "money-worldwide-reserves.html",
+        "icon": "💵",
+        "blurb": "Foreign-exchange + SDR + IMF reserve-position holdings, by "
+                 "economy — gold is shown separately, on its own page."},
+    "gold": {
+        "title": "Gold Reserves", "file": "money-worldwide-gold.html",
+        "icon": "🪙",
+        "blurb": "Official-sector gold reserves by country, priced at today's "
+                 "live gold quote."},
+    "debt-gdp": {
+        "title": "Global Debt & GDP", "file": "money-worldwide-debt-gdp.html",
+        "icon": "🌍",
+        "blurb": "The world's largest economies by GDP, and each one's "
+                 "government debt as a share of its own GDP."},
+}
+MW_SECTION_ORDER = ("exchange-rates", "money-supply", "reserves", "gold", "debt-gdp")
+
+
 MW_CSS = """
 /* ── The Money Worldwide board ────────────────────────────────────────────────
    Namespaced .mw* so it can never collide with .board/.trs*/.cbe* it also
@@ -5498,7 +5536,7 @@ def _mw_scarcity_chart(bitcoin):
 
 def _mw_methods_panel(board):
     gold = board.get("gold") or {}
-    return f"""  <div class="panel">
+    return f"""  <div class="panel" id="how-this-board-is-made">
     <h2>How this board is made, and what it deliberately is not</h2>
     <p><b>Exchange rates</b> are the European Central Bank's own daily reference rates,
     reached through a free keyless proxy (Frankfurter) rather than a third-party estimate —
@@ -5534,51 +5572,84 @@ def _mw_methods_panel(board):
   </div>"""
 
 
-def build_money_worldwide(board):
-    fx, ms = board.get("fx"), board.get("money_supply")
-    reserves_fx, gold = board.get("reserves_fx"), board.get("gold")
-    debt_gdp, bitcoin = board.get("debt_gdp"), board.get("bitcoin")
+def _mw_load_currency_flags():
     seed_path = os.path.join(ROOT, "source", "finance", "money_worldwide_seed.json")
-    currency_flags = {}
     if os.path.exists(seed_path):
         try:
             with open(seed_path, encoding="utf-8") as fh:
-                currency_flags = (json.load(fh) or {}).get("currency_flags", {})
+                return (json.load(fh) or {}).get("currency_flags", {})
         except (ValueError, OSError):
             pass
+    return {}
 
-    sections = []
+
+def _mw_broad_money_usd(ms):
+    """Sum of each economy's own broadest published aggregate (`broad_usd`,
+    already in billions of dollars) — the same figure the scarcity chart's
+    "Broad money" bar uses, recomputed here so the hub card doesn't need
+    `bitcoin` to exist just to show a money-supply headline."""
+    return sum(r.get("broad_usd") or 0.0 for r in ms.get("rows", [])) * 1e9
+
+
+def _mw_hub_card(key, value_html, sub_html):
+    meta = MW_SECTIONS[key]
+    return (f'    <a class="trsbox" href="{meta["file"]}">'
+            f'<div class="tb-top"><span class="tb-i">{meta["icon"]}</span>'
+            f'<span class="tb-t">{esc(meta["title"])} →</span></div>'
+            f'<div class="tb-v">{value_html}</div>'
+            f'<div class="tb-s">{sub_html}</div>'
+            f'<p class="tb-d">{esc(meta["blurb"])}</p></a>')
+
+
+def _mw_hub_cards(board):
+    fx, ms = board.get("fx"), board.get("money_supply")
+    reserves_fx, gold = board.get("reserves_fx"), board.get("gold")
+    debt_gdp = board.get("debt_gdp")
+    cards = []
     if fx:
-        sections.append('  <h2 class="mwh2">Exchange rates</h2>\n'
-                         f'  <p class="mwsub">{len(fx["rates"])} currencies against the US '
-                         f'dollar, {esc(fx.get("date") or "today")} — European Central Bank '
-                         'reference rates. Click any column to sort.</p>\n'
-                         + _mw_fx_table(fx, currency_flags))
+        cards.append(_mw_hub_card(
+            "exchange-rates", f'{len(fx["rates"])} currencies',
+            f'vs. US dollar · {esc(fx.get("date") or "today")}'))
     if ms:
-        sections.append('  <h2 class="mwh2">Money supply</h2>\n'
-                         '  <p class="mwsub">How much money actually exists, by aggregate — '
-                         'narrowest (M0-class) to broadest each economy publishes. Click any '
-                         'column to sort.</p>\n' + _mw_money_supply_table(ms))
-    if reserves_fx or gold:
-        sections.append('  <h2 class="mwh2">Reserves — foreign exchange and gold</h2>\n'
-                         '  <p class="mwsub">Non-gold reserves (foreign exchange + SDRs + IMF '
-                         'reserve position) by economy, and official gold reserves by country — '
-                         'shown separately on purpose, since summing them would obscure how '
-                         'much of a reserve stockpile is a hard asset versus other currencies. '
-                         'Click any column to sort.</p>')
-        if reserves_fx:
-            sections.append(_mw_reserves_fx_table(reserves_fx))
-        if gold:
-            sections.append(_mw_gold_table(gold))
+        cards.append(_mw_hub_card(
+            "money-supply", money_cap(_mw_broad_money_usd(ms)),
+            f'{len(ms["rows"])} economies · combined broad money'))
+    if reserves_fx:
+        cards.append(_mw_hub_card(
+            "reserves", money_cap(reserves_fx["total_usd_m"] * 1e6),
+            f'{len(reserves_fx["rows"])} economies'))
+    if gold:
+        cards.append(_mw_hub_card(
+            "gold", money_cap(gold["total_usd"]),
+            f'{gold["total_tonnes"]:,} t across {len(gold["rows"])} countries'))
     if debt_gdp:
-        sections.append('  <h2 class="mwh2">Global debt &amp; GDP</h2>\n'
-                         f'  <p class="mwsub">The top {len(debt_gdp["rows"])} economies by GDP, '
-                         'out of {n} the IMF covers — with each one\'s general government '
-                         'gross debt as a share of its own GDP. Click any column to '
-                         'sort.</p>'.replace("{n}", str(debt_gdp["n_countries_total"]))
-                         + _mw_debt_gdp_table(debt_gdp))
-    if bitcoin:
-        sections.append(_mw_scarcity_chart(bitcoin))
+        world_pct = debt_gdp.get("world_debt_pct_gdp")
+        cards.append(_mw_hub_card(
+            "debt-gdp", money_cap(debt_gdp["world_gdp_usd_b"] * 1e9),
+            f'world debt-to-GDP {("%.1f%%" % world_pct) if world_pct is not None else "—"} '
+            f'· top {len(debt_gdp["rows"])} of {debt_gdp["n_countries_total"]} shown'))
+    return "\n".join(cards)
+
+
+def build_money_worldwide_hub(board):
+    """The top of the tree: one card per section (linking into that section's
+    own full page — see build_money_worldwide_section), plus the scarcity
+    lineup chart and the methodology panel — SPLIT 2026-09-08 (Michael's
+    call: "too much data on that one page"), same hub/sub-page pattern as
+    the Treasuries board (build_treasuries_hub).
+
+    The chart and the methods panel deliberately stay HERE rather than
+    moving onto any one section's page: the chart is a cross-section
+    synthesis (money supply, gold AND Bitcoin, side by side, on purpose —
+    see _mw_scarcity_chart) that doesn't belong to a single section, and the
+    methods panel documents every section's sourcing at once — splitting
+    either across five pages would mean repeating it five times or picking
+    one arbitrary page to own it. Each section page still gets its own
+    caveats inline (the fx table's "no totals row" note, the gold table's
+    world-estimate note, etc.) and a link back to this fuller methodology.
+    """
+    bitcoin = board.get("bitcoin")
+    cards = _mw_hub_cards(board)
 
     btc_line = ""
     if bitcoin and bitcoin.get("market_cap_usd"):
@@ -5586,6 +5657,8 @@ def build_money_worldwide(board):
                      f'<span class="mwlede-hl">{money_cap(bitcoin["market_cap_usd"])}</span>'
                      f' — currently #{bitcoin.get("btc_rank", "?")} on '
                      f'<a href="board.html">the Asset Board</a>.')
+
+    scarcity = _mw_scarcity_chart(bitcoin) if bitcoin else ""
 
     desc = ("Exchange rates, money supply, reserves and gold, and global debt & GDP — "
             "with Bitcoin's own market cap set against every one of them.")
@@ -5596,13 +5669,71 @@ def build_money_worldwide(board):
   elsewhere, how much money actually exists, who holds the world's reserves, and how big the
   world's economy and its government debt actually are.{btc_line}</p>
   <p class="stamp">Updated {esc(board.get('generated', '—'))}</p>
-{chr(10).join(sections)}
+  <div class="trsboxes">
+{cards}
+  </div>
+{scarcity}
 {_mw_methods_panel(board)}
 {_treasury_nudge("Money Worldwide board")}
   <p class="backlink"><a href="index.html">← Back to the front page</a></p>
 """
     return _shell(title="Money Worldwide — exchange rates, money supply, reserves, debt & GDP — %s" % SITE_NAME,
                   desc=desc, url="%smoney-worldwide.html" % BASE_URL, active="money-worldwide",
+                  body=body, extra_css=TREASURY_CSS + MW_CSS, extra_js=MW_JS)
+
+
+def build_money_worldwide_section(board, key):
+    """One section's own full table, on its own page — the Money Worldwide
+    counterpart to build_treasuries_category. `key` is one of
+    MW_SECTION_ORDER. The board-wide methodology panel stays on the hub
+    (see build_money_worldwide_hub's docstring); this page links back to it
+    rather than repeating all five sections' sourcing notes here."""
+    meta = MW_SECTIONS[key]
+    fx, ms = board.get("fx"), board.get("money_supply")
+    reserves_fx, gold = board.get("reserves_fx"), board.get("gold")
+    debt_gdp = board.get("debt_gdp")
+
+    if key == "exchange-rates":
+        intro = (f'  <p class="mwsub">{len(fx["rates"])} currencies against the US '
+                  f'dollar, {esc(fx.get("date") or "today")} — European Central Bank '
+                  'reference rates. Click any column to sort.</p>')
+        table = _mw_fx_table(fx, _mw_load_currency_flags())
+    elif key == "money-supply":
+        intro = ('  <p class="mwsub">How much money actually exists, by aggregate — '
+                  'narrowest (M0-class) to broadest each economy publishes. Click any '
+                  'column to sort.</p>')
+        table = _mw_money_supply_table(ms)
+    elif key == "reserves":
+        intro = ('  <p class="mwsub">Foreign exchange + SDRs + IMF reserve position, by '
+                  'economy — shown separately from gold (its own page) so a reserve '
+                  'stockpile\'s hard-asset share never gets obscured by summing the two '
+                  'together. Click any column to sort.</p>')
+        table = _mw_reserves_fx_table(reserves_fx)
+    elif key == "gold":
+        intro = ('  <p class="mwsub">Official-sector gold reserves by country, priced at '
+                  'today\'s live gold quote — shown separately from foreign-exchange '
+                  'reserves (its own page). Click any column to sort.</p>')
+        table = _mw_gold_table(gold)
+    else:  # debt-gdp
+        intro = (f'  <p class="mwsub">The top {len(debt_gdp["rows"])} economies by GDP, '
+                  'out of {n} the IMF covers — with each one\'s general government '
+                  'gross debt as a share of its own GDP. Click any column to '
+                  'sort.</p>'.replace("{n}", str(debt_gdp["n_countries_total"])))
+        table = _mw_debt_gdp_table(debt_gdp)
+
+    desc = f"{meta['title']} — {meta['blurb']} Part of the Money Worldwide board."
+    kicker = '  <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>'
+    body = f"""{kicker}
+  <h1 class="btitle">{meta['icon']} {esc(meta['title'])}</h1>
+{intro}
+  <p class="stamp">Updated {esc(board.get('generated', '—'))} · see <a
+    href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
+{table}
+{_treasury_nudge("Money Worldwide — " + meta["title"])}
+  <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
+"""
+    return _shell(title=f"{meta['title']} — Money Worldwide — {SITE_NAME}",
+                  desc=desc, url="%s%s" % (BASE_URL, meta["file"]), active="money-worldwide",
                   body=body, extra_css=TREASURY_CSS + MW_CSS, extra_js=MW_JS)
 
 
@@ -5621,6 +5752,8 @@ def build_sitemap(entries, tags):
             ("%sask.html" % BASE_URL, today)]
     urls += [("%s%s" % (BASE_URL, meta["file"]), today)
              for meta in TREASURY_CATEGORIES.values()]
+    urls += [("%s%s" % (BASE_URL, meta["file"]), today)
+             for meta in MW_SECTIONS.values()]
     for e in entries:
         urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
     for tag, es in sorted(tags.items()):
@@ -5759,9 +5892,13 @@ def main():
               "Humanity board in place", file=sys.stderr)
 
     # Money Worldwide is optional by the same contract as every other board:
-    # missing/unreadable JSON costs exactly this one page.
+    # missing/unreadable JSON costs exactly its own pages (the hub, split
+    # 2026-09-08 into a hub + one page per section — see MW_SECTIONS).
     if money_worldwide:
-        write("money-worldwide.html", build_money_worldwide(money_worldwide))
+        write("money-worldwide.html", build_money_worldwide_hub(money_worldwide))
+        for key in MW_SECTION_ORDER:
+            write(MW_SECTIONS[key]["file"],
+                  build_money_worldwide_section(money_worldwide, key))
     else:
         print("  ! no money-worldwide board — leaving the last Money Worldwide "
               "board in place", file=sys.stderr)
