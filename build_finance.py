@@ -1775,6 +1775,30 @@ def _crypto_fit_font(text, width_cqw, height_cap_cqw):
     return min(width_cqw / (max(len(text), 1) * _CRYPTO_CHAR_W), height_cap_cqw)
 
 
+# The widest .treemapwrap itself can ever get — .wrap's own max-width (1060)
+# minus its 22px left+right padding. `clamp()`'s third argument used to be a
+# flat px number (50/16/17/14) picked without this in mind, which meant it
+# silently OVERRODE the whole width-proportional design at any ordinary
+# desktop width: BTC's computed ~21cqw is ~215px at this container width,
+# but the flat 50px ceiling clipped it down to the same 50px as ETH's
+# computed ~10cqw (also >50px, also clipped) and BNB's ~6.6cqw (~67px, also
+# clipped) — three coins with genuinely different box sizes rendering at the
+# identical font size (paid for 2026-09-08: reported as "ETH/BNB/XRP don't
+# look smaller than BTC" even though the underlying cqw values already were).
+# Deriving the ceiling from each tile's OWN computed value at this container
+# width keeps it a pure safety net (only bites if the container ever grows
+# past its CSS-enforced maximum) instead of a second, uncoordinated cap that
+# fights the first one.
+TREEMAP_CONTAINER_PX = 1016.0
+
+
+def _cqw_px_cap(cqw_value):
+    """The pixel size `cqw_value` cqw resolves to at the container's own
+    maximum width — i.e. a clamp() ceiling that is a no-op at every width the
+    container can actually reach, rather than an independent, smaller cap."""
+    return max(cqw_value / 100.0 * TREEMAP_CONTAINER_PX, 6.0)
+
+
 def _crypto_tile(r, rect, dominance=None):
     x, y, w, h = rect
     left, top = x / TREEMAP_W * 100, y / TREEMAP_H * 100
@@ -1798,14 +1822,16 @@ def _crypto_tile(r, rect, dominance=None):
         sub_share = 0.16 if dom_s else 0.22
         px_f = _crypto_fit_font(px_s, width, basis_h * sub_share)
         pc_f = _crypto_fit_font(pc_s, width, basis_h * sub_share)
-        lines = ('<span class="ctsym" style="font-size:clamp(6px,%.2fcqw,50px)">%s</span>'
-                  '<span class="ctpx" style="font-size:clamp(6px,%.2fcqw,16px)">%s</span>'
-                  '<span class="ctpc" style="font-size:clamp(6px,%.2fcqw,17px)">%s</span>'
-                  % (sym_full, esc(sym), px_f, px_s, pc_f, pc_s))
+        lines = ('<span class="ctsym" style="font-size:clamp(6px,%.2fcqw,%.1fpx)">%s</span>'
+                  '<span class="ctpx" style="font-size:clamp(6px,%.2fcqw,%.1fpx)">%s</span>'
+                  '<span class="ctpc" style="font-size:clamp(6px,%.2fcqw,%.1fpx)">%s</span>'
+                  % (sym_full, _cqw_px_cap(sym_full), esc(sym),
+                     px_f, _cqw_px_cap(px_f), px_s,
+                     pc_f, _cqw_px_cap(pc_f), pc_s))
         if dom_s:
             dom_f = _crypto_fit_font(dom_s, width, basis_h * sub_share)
-            lines += ('<span class="ctdom" style="font-size:clamp(6px,%.2fcqw,14px)">%s</span>'
-                      % (dom_f, dom_s))
+            lines += ('<span class="ctdom" style="font-size:clamp(6px,%.2fcqw,%.1fpx)">%s</span>'
+                      % (dom_f, _cqw_px_cap(dom_f), dom_s))
     else:
         # No blank tiles: even a box too small for the price/pct lines still
         # shows its symbol, sized as large as actually fits — down to a small
@@ -1813,8 +1839,8 @@ def _crypto_tile(r, rect, dominance=None):
         # "make the symbol relatively sized to the box" instead of a hard
         # cutoff that leaves a wall of unlabelled colour swatches).
         sym_solo = _crypto_fit_font(sym, width, basis_h * 0.85)
-        lines = ('<span class="ctsym" style="font-size:clamp(3.5px,%.2fcqw,50px)">%s</span>'
-                  % (sym_solo, esc(sym)))
+        lines = ('<span class="ctsym" style="font-size:clamp(3.5px,%.2fcqw,%.1fpx)">%s</span>'
+                  % (sym_solo, _cqw_px_cap(sym_solo), esc(sym)))
     tip = "%s (%s) · %s · %s" % (esc(r["name"]), esc(sym), px_s, pc_s)
     if dom_s:
         tip += " · " + dom_s
@@ -1822,6 +1848,51 @@ def _crypto_tile(r, rect, dominance=None):
             'height:%.3f%%;background:%s" %s title="%s">%s</a>'
             % (esc(r["id"]), left, top, width, height, _crypto_heat_color(ch),
                _crypto_chg_attrs(r), tip, lines))
+
+
+# Pure squarify is mathematically honest about a lopsided pair — a dominant
+# item plus a much smaller remainder ends up EXACTLY area-proportional — but
+# geometrically that forces the dominant item's "row" to span the cell's
+# full height (or width), and the remainder inherits whatever sliver-thin
+# strip is left over. Sizes don't help: it's the SHAPE. That's what turns
+# ZEC/BCH/LTC/DASH (roughly 2% of "Bitcoin & Derivatives", Bitcoin alone
+# being the other ~98%) into a full-height, ~11px-wide column no matter how
+# they're stacked inside it — a human can't judge "is that box a fifth the
+# size of that one" from a hairline (Michael, 2026-09-08: "something about
+# those vertical lines skews the ability to proportionally see the box
+# size"). _squarify_floor is the same algorithm with one deliberate,
+# disclosed compromise: once a single item exceeds MIN_LEFTOVER_FRAC's
+# complement of a cell's share, its row is capped so AT LEAST
+# MIN_LEFTOVER_FRAC of the cell's own shorter side is reserved for
+# everything else — trading a small, bounded slice of the dominant item's
+# exact area (its own numbers are printed on the tile regardless, so nothing
+# about it is actually hidden or misstated) for giving the remainder real
+# width AND height to be tiled into, which is what actually reads as boxes
+# rather than lines. Below the threshold (the ordinary case — see
+# Infrastructure & Platform, Others, and the category-level split below,
+# none of which are ever this skewed) it's a byte-for-byte no-op.
+MIN_LEFTOVER_FRAC = 0.12
+DOMINANT_SHARE_THRESHOLD = 0.85
+
+
+def _squarify_floor(sizes, x, y, dx, dy, min_leftover_frac=MIN_LEFTOVER_FRAC):
+    sizes = [s for s in sizes if s > 1e-9]
+    if len(sizes) <= 1 or dx <= 0 or dy <= 0:
+        return _squarify(sizes, x, y, dx, dy)
+    total = sum(sizes)
+    dominant, rest = sizes[0], sizes[1:]
+    if not rest or dominant / total < DOMINANT_SHARE_THRESHOLD:
+        return _squarify(sizes, x, y, dx, dy)
+    min_leftover = min(dx, dy) * min_leftover_frac
+    if dx >= dy:
+        w = min(dominant / dy, dx - min_leftover)
+        dom_rect = [(x, y, w, dy)]
+        rest_rects = _squarify_floor(rest, x + w, y, dx - w, dy, min_leftover_frac)
+    else:
+        h = min(dominant / dx, dy - min_leftover)
+        dom_rect = [(x, y, dx, h)]
+        rest_rects = _squarify_floor(rest, x, y + h, dx, dy - h, min_leftover_frac)
+    return dom_rect + rest_rects
 
 
 def _crypto_treemap(rows, dominance=None):
@@ -1852,7 +1923,7 @@ def _crypto_treemap(rows, dominance=None):
         if inner_h <= 0 or not coins:
             continue
         values = _treemap_areas([r["market_cap"] or 0 for r in coins], cw, inner_h)
-        rects = _squarify(values, cx, inner_y, cw, inner_h)
+        rects = _squarify_floor(values, cx, inner_y, cw, inner_h)
         parts += [_crypto_tile(r, rect, dominance=(dominance if r["id"] == "bitcoin" else None))
                   for r, rect in zip(coins, rects)]
 
@@ -2158,7 +2229,15 @@ def build_crypto_heatmap(board):
     why Bitcoin & Derivatives (really just Bitcoin itself, at this kind of
     market cap) tends to dominate the page. A coin small enough that its box
     can't hold readable text still gets a colour and a hover tooltip; nothing
-    is dropped from the map.</p>
+    is dropped from the map. <b>One deliberate exception to strict area
+    accuracy:</b> when one coin so overwhelms the rest of its own category
+    (Bitcoin next to its own forks is the case on this board) that a purely
+    proportional split would squeeze the others into an unreadable hairline,
+    the dominant coin's box is trimmed by a small, bounded amount so the
+    others get real width and height to be tiled into — genuine boxes,
+    not lines. That coin's own numbers are printed on its tile regardless, so
+    nothing about its true size is hidden or misstated — only the drawn area
+    is nudged, and only when the alternative is a box nobody could read.</p>
     <p><b>What Bitcoin's own market cap here actually is — and isn't:</b>
     {("Bitcoin's %s figure is exactly one thing: %s BTC currently in "
       "existence, times its own price. Nothing else." % (
