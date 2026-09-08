@@ -134,6 +134,16 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
+   brand and search in header.hsm's flex row (space-between puts it directly
+   left of the search box). Same colors/behavior as a .nav link, just outside
+   the collapsible menu so it's always visible, never hidden behind the
+   hamburger. */
+.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
+  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
+.headerask:hover{color:#e8eef7}
+.headerask.on{color:#f7931a}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -415,6 +425,15 @@ table.mw-sort td.mw-nm{white-space:normal}
   transition:width .2s}
 .mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
 @media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+/* Bigger, glowing icons — Michael's call, 2026-09-08. Scoped to THIS board only:
+   .trsbox .tb-i repeats the Treasuries board's own selector at equal specificity,
+   so it overrides that 20px rule here (MW_CSS loads after TREASURY_CSS) without
+   touching Treasuries' own cards, which never load this stylesheet at all.
+   .mw-page-icon is a brand-new class with nothing to collide with. */
+.trsbox .tb-i{font-size:34px;line-height:1;display:inline-block;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
+.mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -425,20 +444,20 @@ table.mw-sort td.mw-nm{white-space:normal}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a><a href="ask.html">Ask</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="untangling-bis-imf-world-bank.html">See also: Untangling
     the BIS, the IMF, and the World Bank →</a></p>
   <h1 class="btitle">Money Worldwide</h1>
   <p class="lede">Four numbers that don't normally sit on the same page: what a dollar buys
   elsewhere, how much money actually exists, who holds the world's reserves, and how big the
-  world's economy and its government debt actually are. Bitcoin's own market cap today is <span class="mwlede-hl">$1.571 T</span> — currently #12 on <a href="board.html">the Asset Board</a>.</p>
+  world's economy and its government debt actually are. Bitcoin's own market cap today is <span class="mwlede-hl">$1,570,511,583,418</span> — currently #12 on <a href="board.html">the Asset Board</a>.</p>
   <p class="stamp">Updated 2026-09-08 19:58 UTC</p>
   <div class="trsboxes">
     <a class="trsbox" href="money-worldwide-exchange-rates.html"><div class="tb-top"><span class="tb-i">💱</span><span class="tb-t">Exchange Rates →</span></div><div class="tb-v">29 currencies</div><div class="tb-s">vs. US dollar · 2026-09-08</div><p class="tb-d">What a US dollar buys in other currencies today — European Central Bank reference rates.</p></a>
-    <a class="trsbox" href="money-worldwide-money-supply.html"><div class="tb-top"><span class="tb-i">🏦</span><span class="tb-t">Money Supply →</span></div><div class="tb-v">$43.702 T</div><div class="tb-s">2 economies · combined broad money</div><p class="tb-d">How much money actually exists, by aggregate — narrowest to broadest — for the two most transparently published economies.</p></a>
-    <a class="trsbox" href="money-worldwide-reserves.html"><div class="tb-top"><span class="tb-i">💵</span><span class="tb-t">Reserves (excl. gold) →</span></div><div class="tb-v">$7.336 T</div><div class="tb-s">9 economies</div><p class="tb-d">Foreign-exchange + SDR + IMF reserve-position holdings, by economy — gold is shown separately, on its own page.</p></a>
-    <a class="trsbox" href="money-worldwide-gold.html"><div class="tb-top"><span class="tb-i">🪙</span><span class="tb-t">Gold Reserves →</span></div><div class="tb-v">$3.830 T</div><div class="tb-s">26,807 t across 15 countries</div><p class="tb-d">Official-sector gold reserves by country, priced at today&#x27;s live gold quote.</p></a>
-    <a class="trsbox" href="money-worldwide-debt-gdp.html"><div class="tb-top"><span class="tb-i">🌍</span><span class="tb-t">Global Debt &amp; GDP →</span></div><div class="tb-v">$126.295 T</div><div class="tb-s">world debt-to-GDP 95.1% · top 30 of 195 shown</div><p class="tb-d">The world&#x27;s largest economies by GDP, and each one&#x27;s government debt as a share of its own GDP.</p></a>
+    <a class="trsbox" href="money-worldwide-money-supply.html"><div class="tb-top"><span class="tb-i">🏦</span><span class="tb-t">Money Supply →</span></div><div class="tb-v">$43,702,441,027,230</div><div class="tb-s">2 economies · combined broad money</div><p class="tb-d">How much money actually exists, by aggregate — narrowest to broadest — for the two most transparently published economies.</p></a>
+    <a class="trsbox" href="money-worldwide-reserves.html"><div class="tb-top"><span class="tb-i">💵</span><span class="tb-t">Reserves (excl. gold) →</span></div><div class="tb-v">$7,335,949,005,019</div><div class="tb-s">9 economies</div><p class="tb-d">Foreign-exchange + SDR + IMF reserve-position holdings, by economy — gold is shown separately, on its own page.</p></a>
+    <a class="trsbox" href="money-worldwide-gold.html"><div class="tb-top"><span class="tb-i">🪙</span><span class="tb-t">Gold Reserves →</span></div><div class="tb-v">$3,830,128,344,888</div><div class="tb-s">26,807 tons across 15 countries</div><p class="tb-d">Official-sector gold reserves by country, priced at today&#x27;s live gold quote.</p></a>
+    <a class="trsbox" href="money-worldwide-debt-gdp.html"><div class="tb-top"><span class="tb-i">🌍</span><span class="tb-t">Global Debt &amp; GDP →</span></div><div class="tb-v">$126,295,331,000,000</div><div class="tb-s">world debt-to-GDP 95.1% · top 30 of 195 shown</div><p class="tb-d">The world&#x27;s largest economies by GDP, and each one&#x27;s government debt as a share of its own GDP.</p></a>
   </div>
   <h2 class="mwh2">The scarcity lineup</h2>
   <p class="mwsub">Three figures, side by side, at the same scale — deliberately NOT summed
@@ -454,19 +473,19 @@ table.mw-sort td.mw-nm{white-space:normal}
     <div class="mwbarrow">
       <div class="mwbl">Broad money — U.S. + Euro area (M2 + M3)</div>
       <div class="mwbartrack"><div class="mwbarfill" style="width:100.00%;background:#5eb3d6"></div></div>
-      <div class="mwbv">$43.702 T</div>
+      <div class="mwbv">$43,702,441,027,230</div>
       <div class="mwbarnote">The two largest, most transparently published economies — a genuine floor under the true global figure, not the whole world&#x27;s money supply.</div>
     </div>
     <div class="mwbarrow">
       <div class="mwbl">Gold — all above-ground supply</div>
       <div class="mwbartrack"><div class="mwbarfill" style="width:70.70%;background:#c9b45e"></div></div>
-      <div class="mwbv">$30.899 T</div>
+      <div class="mwbv">$30,899,492,912,567</div>
       <div class="mwbarnote">Every ounce ever mined, at today&#x27;s price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it.</div>
     </div>
     <div class="mwbarrow">
       <div class="mwbl">Bitcoin — total market cap</div>
       <div class="mwbartrack"><div class="mwbarfill" style="width:3.59%;background:#f7931a"></div></div>
-      <div class="mwbv">$1.571 T</div>
+      <div class="mwbv">$1,570,511,583,418</div>
       <div class="mwbarnote">21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against.</div>
     </div>
   </div>

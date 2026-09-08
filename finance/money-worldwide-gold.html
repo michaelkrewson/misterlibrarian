@@ -134,6 +134,16 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
+   brand and search in header.hsm's flex row (space-between puts it directly
+   left of the search box). Same colors/behavior as a .nav link, just outside
+   the collapsible menu so it's always visible, never hidden behind the
+   hamburger. */
+.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
+  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
+.headerask:hover{color:#e8eef7}
+.headerask.on{color:#f7931a}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -415,6 +425,15 @@ table.mw-sort td.mw-nm{white-space:normal}
   transition:width .2s}
 .mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
 @media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+/* Bigger, glowing icons — Michael's call, 2026-09-08. Scoped to THIS board only:
+   .trsbox .tb-i repeats the Treasuries board's own selector at equal specificity,
+   so it overrides that 20px rule here (MW_CSS loads after TREASURY_CSS) without
+   touching Treasuries' own cards, which never load this stylesheet at all.
+   .mw-page-icon is a brand-new class with nothing to collide with. */
+.trsbox .tb-i{font-size:34px;line-height:1;display:inline-block;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
+.mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
+  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -425,9 +444,9 @@ table.mw-sort td.mw-nm{white-space:normal}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a><a href="ask.html">Ask</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>
-  <h1 class="btitle">🪙 Gold Reserves</h1>
+  <h1 class="btitle"><span class="mw-page-icon">🪙</span> Gold Reserves</h1>
   <p class="mwsub">Official-sector gold reserves by country, priced at today's live gold quote — shown separately from foreign-exchange reserves (its own page). Click any column to sort.</p>
   <p class="stamp">Updated 2026-09-08 19:58 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
@@ -436,115 +455,115 @@ table.mw-sort td.mw-nm{white-space:normal}
     <thead>
       <tr>
         <th>Country</th>
-        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tonnes">Gold reserves</th>
-        <th data-sort="usd" title="Tonnes × troy ounces per tonne × today's gold price">Value, today's price</th>
+        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tons">Gold reserves</th>
+        <th data-sort="usd" title="Tons × troy ounces per ton × today's gold price">Value, today's price</th>
       </tr>
     </thead>
     <tbody>
       <tr data-tonnes="8133" data-usd="1162026106202.623">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
           <span class="nm"><span class="n1">United States</span></span></span></td>
-        <td>8,133 t</td>
-        <td>$1.162 T</td>
+        <td>8,133 tons</td>
+        <td>$1,162,026,106,203</td>
       </tr>
       <tr data-tonnes="3355" data-usd="479355414522.292">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
           <span class="nm"><span class="n1">Germany</span></span></span></td>
-        <td>3,355 t</td>
-        <td>$479.4 B</td>
+        <td>3,355 tons</td>
+        <td>$479,355,414,522</td>
       </tr>
       <tr data-tonnes="2452" data-usd="350336654667.26074">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
           <span class="nm"><span class="n1">Italy</span></span></span></td>
-        <td>2,452 t</td>
-        <td>$350.3 B</td>
+        <td>2,452 tons</td>
+        <td>$350,336,654,667</td>
       </tr>
       <tr data-tonnes="2437" data-usd="348193485898.9048">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
           <span class="nm"><span class="n1">France</span></span></span></td>
-        <td>2,437 t</td>
-        <td>$348.2 B</td>
+        <td>2,437 tons</td>
+        <td>$348,193,485,899</td>
       </tr>
       <tr data-tonnes="2313" data-usd="330476624080.49524">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
           <span class="nm"><span class="n1">China</span></span></span></td>
-        <td>2,313 t</td>
-        <td>$330.5 B</td>
+        <td>2,313 tons</td>
+        <td>$330,476,624,080</td>
       </tr>
       <tr data-tonnes="2299" data-usd="328476333230.02954">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
           <span class="nm"><span class="n1">Russia</span></span></span></td>
-        <td>2,299 t</td>
-        <td>$328.5 B</td>
+        <td>2,299 tons</td>
+        <td>$328,476,333,230</td>
       </tr>
       <tr data-tonnes="1040" data-usd="148593034606.016">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
           <span class="nm"><span class="n1">Switzerland</span></span></span></td>
-        <td>1,040 t</td>
-        <td>$148.6 B</td>
+        <td>1,040 tons</td>
+        <td>$148,593,034,606</td>
       </tr>
       <tr data-tonnes="880" data-usd="125732567743.55199">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
           <span class="nm"><span class="n1">India</span></span></span></td>
-        <td>880 t</td>
-        <td>$125.7 B</td>
+        <td>880 tons</td>
+        <td>$125,732,567,744</td>
       </tr>
       <tr data-tonnes="846" data-usd="120874718535.2784">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
           <span class="nm"><span class="n1">Japan</span></span></span></td>
-        <td>846 t</td>
-        <td>$120.9 B</td>
+        <td>846 tons</td>
+        <td>$120,874,718,535</td>
       </tr>
       <tr data-tonnes="635" data-usd="90727477860.40399">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
           <span class="nm"><span class="n1">Turkey</span></span></span></td>
-        <td>635 t</td>
-        <td>$90.7 B</td>
+        <td>635 tons</td>
+        <td>$90,727,477,860</td>
       </tr>
       <tr data-tonnes="612" data-usd="87441285748.9248">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
           <span class="nm"><span class="n1">Netherlands</span></span></span></td>
-        <td>612 t</td>
-        <td>$87.4 B</td>
+        <td>612 tons</td>
+        <td>$87,441,285,749</td>
       </tr>
       <tr data-tonnes="582" data-usd="83154948212.21278">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
           <span class="nm"><span class="n1">Poland</span></span></span></td>
-        <td>582 t</td>
-        <td>$83.2 B</td>
+        <td>582 tons</td>
+        <td>$83,154,948,212</td>
       </tr>
       <tr data-tonnes="424" data-usd="60580237185.529594">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
           <span class="nm"><span class="n1">Taiwan</span></span></span></td>
-        <td>424 t</td>
-        <td>$60.6 B</td>
+        <td>424 tons</td>
+        <td>$60,580,237,186</td>
       </tr>
       <tr data-tonnes="416" data-usd="59437213842.4064">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇿</span>
           <span class="nm"><span class="n1">Uzbekistan</span></span></span></td>
-        <td>416 t</td>
-        <td>$59.4 B</td>
+        <td>416 tons</td>
+        <td>$59,437,213,842</td>
       </tr>
       <tr data-tonnes="383" data-usd="54722242552.02319">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇹</span>
           <span class="nm"><span class="n1">Portugal</span></span></span></td>
-        <td>383 t</td>
-        <td>$54.7 B</td>
+        <td>383 tons</td>
+        <td>$54,722,242,552</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — 15 countries shown</td>
-        <td>26,807 t</td>
-        <td>$3.830 T</td>
+        <td>26,807 tons</td>
+        <td>$3,830,128,344,888</td>
       </tr>
     </tfoot>
   </table>
   </div>
   <p class="mwbarnote">These 15 are a curated top slice, not every reporting
   country — the World Gold Council's own estimate for ALL central banks and
-  the IMF together is ≈36,600 tonnes,
-  well above the 26,807 t summed here.</p>
+  the IMF together is ≈36,600 tons,
+  well above the 26,807 tons summed here.</p>
 <div class="respond"><p><strong>Know a holder we're missing, or think a figure here is wrong?</strong> This board only gets closer to exhaustive with help — include a source if you have one, and it gets checked into the next update. <a href="ask.html?re=Money%20Worldwide%20%E2%80%94%20Gold%20Reserves">Tell Mr. Librarian →</a></p></div>
   <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
 

@@ -134,6 +134,16 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
+   brand and search in header.hsm's flex row (space-between puts it directly
+   left of the search box). Same colors/behavior as a .nav link, just outside
+   the collapsible menu so it's always visible, never hidden behind the
+   hamburger. */
+.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
+  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
+.headerask:hover{color:#e8eef7}
+.headerask.on{color:#f7931a}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
