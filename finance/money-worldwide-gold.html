@@ -144,6 +144,12 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .headerask:hover{color:#e8eef7}
 .headerask.on{color:#f7931a}
 
+/* Ask + search share this one flex child of header.hsm so `justify-content:
+   space-between` only ever spaces THREE things (brand / this group / hgroup)
+   instead of four — with Ask as its own top-level child, space-between put
+   it in its own gap, dead center of the row, instead of next to search. */
+.hsm-searchgroup{display:flex;align-items:center;gap:14px}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -188,13 +194,19 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search box (order 2) drops to its own full-width row underneath,
-   the same "give up the single row" fallback the travel blog's own
-   absolutely-positioned search box makes at its 640px. */
+   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
+   to its own full-width row underneath, the same "give up the single row"
+   fallback the travel blog's own absolutely-positioned search box makes at
+   its 640px. Ask+search moved from two direct header.hsm children to one
+   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
+   instead of hugging search under plain space-between); the order/flex-basis
+   that used to live on .headersearch now lives on the wrapper instead, since
+   .headersearch is one level deeper now.*/
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .headersearch{order:2;flex:1 1 100%}
+  .hsm-searchgroup{order:2;flex:1 1 100%}
+  .headersearch{flex:1 1 auto}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
@@ -434,6 +446,12 @@ table.mw-sort td.mw-nm{white-space:normal}
   filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
 .mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
   filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
+/* The breadcrumb icon sits inside 12px kicker text — a much smaller stage
+   than the card/H1 icons, so it gets a lighter glow at a gentler size bump
+   rather than the same blur radius, which would read as a fuzzy blob at
+   this scale instead of a glow. */
+.mw-kicker-icon{display:inline-block;font-size:1.5em;line-height:1;vertical-align:-0.2em;
+  filter:drop-shadow(0 0 3px #f7931a) drop-shadow(0 0 8px #f7931a)}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -444,11 +462,11 @@ table.mw-sort td.mw-nm{white-space:normal}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
-  <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
+  <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">🪙</span> Gold Reserves</h1>
   <p class="mwsub">Official-sector gold reserves by country, priced at today's live gold quote — shown separately from foreign-exchange reserves (its own page). Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-08 19:58 UTC · see <a
+  <p class="stamp">Updated 2026-09-08 21:23 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
   <table class="board mw-sort">
@@ -460,102 +478,102 @@ table.mw-sort td.mw-nm{white-space:normal}
       </tr>
     </thead>
     <tbody>
-      <tr data-tonnes="8133" data-usd="1162026106202.623">
+      <tr data-tonnes="8133" data-usd="1158496098904.3027">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
           <span class="nm"><span class="n1">United States</span></span></span></td>
         <td>8,133 tons</td>
-        <td>$1,162,026,106,203</td>
+        <td>$1,158,496,098,904</td>
       </tr>
-      <tr data-tonnes="3355" data-usd="479355414522.292">
+      <tr data-tonnes="3355" data-usd="477899226831.9115">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
           <span class="nm"><span class="n1">Germany</span></span></span></td>
         <td>3,355 tons</td>
-        <td>$479,355,414,522</td>
+        <td>$477,899,226,832</td>
       </tr>
-      <tr data-tonnes="2452" data-usd="350336654667.26074">
+      <tr data-tonnes="2452" data-usd="349272400653.30756">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
           <span class="nm"><span class="n1">Italy</span></span></span></td>
         <td>2,452 tons</td>
-        <td>$350,336,654,667</td>
+        <td>$349,272,400,653</td>
       </tr>
-      <tr data-tonnes="2437" data-usd="348193485898.9048">
+      <tr data-tonnes="2437" data-usd="347135742411.13806">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
           <span class="nm"><span class="n1">France</span></span></span></td>
         <td>2,437 tons</td>
-        <td>$348,193,485,899</td>
+        <td>$347,135,742,411</td>
       </tr>
-      <tr data-tonnes="2313" data-usd="330476624080.49524">
+      <tr data-tonnes="2313" data-usd="329472700942.5369">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
           <span class="nm"><span class="n1">China</span></span></span></td>
         <td>2,313 tons</td>
-        <td>$330,476,624,080</td>
+        <td>$329,472,700,943</td>
       </tr>
-      <tr data-tonnes="2299" data-usd="328476333230.02954">
+      <tr data-tonnes="2299" data-usd="327478486583.17865">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
           <span class="nm"><span class="n1">Russia</span></span></span></td>
         <td>2,299 tons</td>
-        <td>$328,476,333,230</td>
+        <td>$327,478,486,583</td>
       </tr>
-      <tr data-tonnes="1040" data-usd="148593034606.016">
+      <tr data-tonnes="1040" data-usd="148141638123.75198">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
           <span class="nm"><span class="n1">Switzerland</span></span></span></td>
         <td>1,040 tons</td>
-        <td>$148,593,034,606</td>
+        <td>$148,141,638,124</td>
       </tr>
-      <tr data-tonnes="880" data-usd="125732567743.55199">
+      <tr data-tonnes="880" data-usd="125350616873.94398">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
           <span class="nm"><span class="n1">India</span></span></span></td>
         <td>880 tons</td>
-        <td>$125,732,567,744</td>
+        <td>$125,350,616,874</td>
       </tr>
-      <tr data-tonnes="846" data-usd="120874718535.2784">
+      <tr data-tonnes="846" data-usd="120507524858.35979">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
           <span class="nm"><span class="n1">Japan</span></span></span></td>
         <td>846 tons</td>
-        <td>$120,874,718,535</td>
+        <td>$120,507,524,858</td>
       </tr>
-      <tr data-tonnes="635" data-usd="90727477860.40399">
+      <tr data-tonnes="635" data-usd="90451865585.17549">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
           <span class="nm"><span class="n1">Turkey</span></span></span></td>
         <td>635 tons</td>
-        <td>$90,727,477,860</td>
+        <td>$90,451,865,585</td>
       </tr>
-      <tr data-tonnes="612" data-usd="87441285748.9248">
+      <tr data-tonnes="612" data-usd="87175656280.5156">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
           <span class="nm"><span class="n1">Netherlands</span></span></span></td>
         <td>612 tons</td>
-        <td>$87,441,285,749</td>
+        <td>$87,175,656,281</td>
       </tr>
-      <tr data-tonnes="582" data-usd="83154948212.21278">
+      <tr data-tonnes="582" data-usd="82902339796.17659">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
           <span class="nm"><span class="n1">Poland</span></span></span></td>
         <td>582 tons</td>
-        <td>$83,154,948,212</td>
+        <td>$82,902,339,796</td>
       </tr>
-      <tr data-tonnes="424" data-usd="60580237185.529594">
+      <tr data-tonnes="424" data-usd="60396206311.991196">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
           <span class="nm"><span class="n1">Taiwan</span></span></span></td>
         <td>424 tons</td>
-        <td>$60,580,237,186</td>
+        <td>$60,396,206,312</td>
       </tr>
-      <tr data-tonnes="416" data-usd="59437213842.4064">
+      <tr data-tonnes="416" data-usd="59256655249.5008">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇿</span>
           <span class="nm"><span class="n1">Uzbekistan</span></span></span></td>
         <td>416 tons</td>
-        <td>$59,437,213,842</td>
+        <td>$59,256,655,250</td>
       </tr>
-      <tr data-tonnes="383" data-usd="54722242552.02319">
+      <tr data-tonnes="383" data-usd="54556007116.7279">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇹</span>
           <span class="nm"><span class="n1">Portugal</span></span></span></td>
         <td>383 tons</td>
-        <td>$54,722,242,552</td>
+        <td>$54,556,007,117</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — 15 countries shown</td>
         <td>26,807 tons</td>
-        <td>$3,830,128,344,888</td>
+        <td>$3,818,493,166,523</td>
       </tr>
     </tfoot>
   </table>

@@ -145,6 +145,12 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .headerask:hover{color:#e8eef7}
 .headerask.on{color:#f7931a}
 
+/* Ask + search share this one flex child of header.hsm so `justify-content:
+   space-between` only ever spaces THREE things (brand / this group / hgroup)
+   instead of four — with Ask as its own top-level child, space-between put
+   it in its own gap, dead center of the row, instead of next to search. */
+.hsm-searchgroup{display:flex;align-items:center;gap:14px}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -189,13 +195,19 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search box (order 2) drops to its own full-width row underneath,
-   the same "give up the single row" fallback the travel blog's own
-   absolutely-positioned search box makes at its 640px. */
+   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
+   to its own full-width row underneath, the same "give up the single row"
+   fallback the travel blog's own absolutely-positioned search box makes at
+   its 640px. Ask+search moved from two direct header.hsm children to one
+   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
+   instead of hugging search under plain space-between); the order/flex-basis
+   that used to live on .headersearch now lives on the wrapper instead, since
+   .headersearch is one level deeper now.*/
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .headersearch{order:2;flex:1 1 100%}
+  .hsm-searchgroup{order:2;flex:1 1 100%}
+  .headersearch{flex:1 1 auto}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
@@ -349,7 +361,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
   <section class="writing">
     <h1 class="wtitle">united nations</h1>
     <p class="wsub">1 entry tagged <b>united nations</b>. <a href="index.html">All writing</a>.</p>

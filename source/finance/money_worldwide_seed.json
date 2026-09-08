@@ -23,6 +23,11 @@
    {"country": "Portugal", "flag": "🇵🇹", "tonnes": 383}
   ]
  },
+ "eu_base_money": {
+  "eur_b": 3967.8,
+  "as_of": "2026-09-04",
+  "source_note": "The European Central Bank's own weekly \"Consolidated financial statement of the Eurosystem\" press release (ecb.europa.eu/press/annual-reports-financial-statements/wfs/) — a primary ECB source, hand-read periodically rather than pulled live. The underlying concept (\"Base money\", the ECB's own liability items 1 + 2.1 + 2.2 — banknotes in circulation plus minimum-reserve current accounts) lives in a different ECB dataset (Internal Liquidity Management) than the one used for M1/M2/M3 below (Balance Sheet Items), and a real attempt at a live keyless query against it — the exact item code (LT00001) plus roughly 155 real dimension-value combinations tried against the ECB's own SDMX API — found no working query. Refresh by re-reading the latest weekly statement's own commentary paragraph, which states the figure in plain English every week."
+ },
  "reserve_economies": [
   {"area": "United States", "flag": "🇺🇸", "fred_series": "TRESEGUSM052N"},
   {"area": "China", "flag": "🇨🇳", "fred_series": "TRESEGCNM052N"},
