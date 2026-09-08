@@ -247,11 +247,23 @@ def _ecb_bsi_latest(item_code):
         return None, None
 
 
-def fetch_money_supply(fx):
+def fetch_money_supply(fx, seed):
     """US (FRED, billions USD) + Euro area (ECB, millions EUR converted to
     USD via the live fx rate) rows. Two economies, not 190 — see the module
     docstring's IMF-research section for why a broader keyless pull of
-    comparable, CURRENT money-supply levels isn't achievable today."""
+    comparable, CURRENT money-supply levels isn't achievable today.
+
+    The Euro area's M0 ("Base money") is the one figure in this whole board
+    that is hand-curated rather than live-queried — not because the ECB
+    doesn't publish it (it does, weekly, in plain English in its own
+    Consolidated Financial Statement press release), but because that figure
+    lives in a different ECB dataset (Internal Liquidity Management) than
+    the one used for M1/M2/M3 here (Balance Sheet Items), and a real,
+    substantial attempt at a live keyless query against it found no working
+    combination — see money_worldwide_seed.json's own eu_base_money note for
+    the full trail. Its DOLLAR value still recomputes from today's live
+    EUR/USD rate on every build, same as M1/M2/M3 — only the underlying EUR
+    figure itself is periodically hand-refreshed."""
     rows = []
 
     us_m0_date, us_m0 = _fred_latest("BOGMBASE")     # monetary base, billions USD
@@ -275,6 +287,9 @@ def fetch_money_supply(fx):
     ea_m2_date, ea_m2 = _ecb_bsi_latest(ECB_ITEMS["m2"])
     ea_m3_date, ea_m3 = _ecb_bsi_latest(ECB_ITEMS["m3"])
     eur_usd = (fx or {}).get("rates", {}).get("EUR")
+    ea_base = (seed or {}).get("eu_base_money") or {}
+    ea_m0 = ea_base.get("eur_b")          # hand-curated, already in billions EUR
+    ea_m0_date = ea_base.get("as_of")
     if ea_m3 is not None and eur_usd:
         # FRED/ECB give millions of national currency; this board's US row is
         # in BILLIONS — convert both onto the same "billions of dollars"
@@ -282,11 +297,12 @@ def fetch_money_supply(fx):
         to_usd_b = lambda eur_m: (eur_m / 1000.0) / eur_usd if eur_m is not None else None
         rows.append({
             "area": "Euro area", "flag": "🇪🇺", "currency": "EUR",
-            "m0": None, "m0_label": None, "m0_date": None,
+            "m0": ea_m0, "m0_label": "Base money (ECB weekly statement, hand-curated)",
+            "m0_date": ea_m0_date,
             "m1": (ea_m1 / 1000.0) if ea_m1 is not None else None, "m1_date": ea_m1_date,
             "m2": (ea_m2 / 1000.0) if ea_m2 is not None else None, "m2_date": ea_m2_date,
             "m3": (ea_m3 / 1000.0), "m3_date": ea_m3_date,
-            "usd_m0": None,
+            "usd_m0": (ea_m0 / eur_usd) if ea_m0 is not None else None,
             "usd_m1": to_usd_b(ea_m1), "usd_m2": to_usd_b(ea_m2), "usd_m3": to_usd_b(ea_m3),
             "broad_usd": to_usd_b(ea_m3),   # M3 is the ECB's own headline "broad money"
             "source": "European Central Bank BSI dataset (billions of euro → USD "
@@ -483,7 +499,7 @@ def compute():
     asset_board = _load_json_file(ASSET_BOARD)
 
     fx = fetch_fx()
-    money_supply = fetch_money_supply(fx)
+    money_supply = fetch_money_supply(fx, seed)
     reserves_fx = fetch_reserves_fx(seed)
     gold = fetch_gold(seed, asset_board)
     debt_gdp = fetch_debt_gdp()

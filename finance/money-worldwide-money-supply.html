@@ -466,7 +466,7 @@ table.mw-sort td.mw-nm{white-space:normal}
   <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">🏦</span> Money Supply</h1>
   <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-08 19:58 UTC · see <a
+  <p class="stamp">Updated 2026-09-08 21:23 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
   <table class="board mw-sort">
@@ -475,7 +475,7 @@ table.mw-sort td.mw-nm{white-space:normal}
         <th>Economy</th>
         <th data-sort="m0" title="Physical currency + bank reserves at the central bank — the narrowest aggregate, an M0-class figure">Monetary base (M0-class)</th>
         <th data-sort="m1" title="Currency in circulation + demand deposits">M1</th>
-        <th data-sort="m2" title="M1 + savings/small time deposits (US) — the Euro area's M2 is not published as a standalone headline figure the way the US's is">M2</th>
+        <th data-sort="m2" title="M1 + savings/small time deposits">M2</th>
         <th data-sort="m3" title="The Euro area's own headline broad-money aggregate; the US does not publish a distinct M3">M3</th>
       </tr>
     </thead>
@@ -489,11 +489,11 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td title="2026-07-01">$23,218,000,000,000</td>
         <td class="mw-sub">—</td>
       </tr>
-      <tr data-m1="13150.533808531665" data-m2="19113.36314825581" data-m3="20484.441027229692">
+      <tr data-m0="4608.201804815164" data-m1="13150.533808531665" data-m2="19113.36314825581" data-m3="20484.441027229692">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇺</span>
           <span class="nm"><span class="n1">Euro area</span>
           <span class="mw-sub">European Central Bank BSI dataset (billions of euro → USD at today&#x27;s rate)</span></span></span></td>
-        <td class="mw-sub">—</td>
+        <td title="3,967.8 EURB as of 2026-09-04">$4,608,201,804,815</td>
         <td title="11,323.0 EURB as of 2026-07">$13,150,533,808,532</td>
         <td title="16,457.2 EURB as of 2026-07">$19,113,363,148,256</td>
         <td title="17,637.7 EURB as of 2026-07">$20,484,441,027,230</td>
@@ -502,7 +502,7 @@ table.mw-sort td.mw-nm{white-space:normal}
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total (at today's exchange rate)</td>
-        <td>$5,523,900,000,000</td>
+        <td>$10,132,101,804,815</td>
         <td>$33,036,933,808,532</td>
         <td>$42,331,363,148,256</td>
         <td>$20,484,441,027,230</td>
@@ -510,15 +510,20 @@ table.mw-sort td.mw-nm{white-space:normal}
     </tfoot>
   </table>
   </div>
-  <p class="mwbarnote">Euro area monetary base (M0) reads "—" on purpose, not by oversight.
-  The Eurosystem does publish this concept — its own data dictionary calls it "Base money,"
-  banknotes in circulation plus bank reserves at the ECB, the same idea as the Fed's monetary
-  base — but it lives in a completely different ECB dataset (Internal Liquidity Management,
-  the Eurosystem's own weekly financial statement) from the one used for M1/M2/M3 here
-  (Balance Sheet Items). Unlike the Fed's single well-known "BOGMBASE" series available
-  straight from FRED, there is no one clean, current, euro-area-wide aggregate in that other
-  dataset reachable the same keyless way this board pulls everything else — so this cell
-  stays blank rather than being filled with a guess.</p>
+  <p class="mwbarnote">Euro area monetary base (M0) is the one figure on this whole board that
+  is hand-curated rather than live-queried. The Eurosystem calls it "Base money" (banknotes in
+  circulation plus bank reserves at the ECB — the same idea as the Fed's monetary base) and
+  states it in plain English every week in its own Consolidated Financial Statement press
+  release — but the underlying series lives in a different ECB dataset (Internal Liquidity
+  Management, the Eurosystem's own weekly financial statement) from the one used for M1/M2/M3
+  here (Balance Sheet Items), and a real, substantial attempt at a live keyless query against
+  it — the exact item code plus roughly 155 real dimension-value combinations tried against
+  the ECB's own API — found no working query. So this figure is read by hand from that weekly
+  release (2026-09-04) and refreshed periodically rather than every build, the same
+  posture this board already takes with gold reserves — its DOLLAR value still recomputes
+  from today's live exchange rate like every other cell here, only the underlying euro figure
+  itself is periodic. The totals row above therefore blends one periodic figure into an
+  otherwise-live row.</p>
 <div class="respond"><p><strong>Know a holder we're missing, or think a figure here is wrong?</strong> This board only gets closer to exhaustive with help — include a source if you have one, and it gets checked into the next update. <a href="ask.html?re=Money%20Worldwide%20%E2%80%94%20Money%20Supply">Tell Mr. Librarian →</a></p></div>
   <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
 

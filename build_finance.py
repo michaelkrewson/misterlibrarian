@@ -5397,6 +5397,8 @@ def _mw_money_supply_table(ms):
     tot1 = sum(r["usd_m1"] for r in ms["rows"] if r.get("usd_m1") is not None)
     tot2 = sum(r["usd_m2"] for r in ms["rows"] if r.get("usd_m2") is not None)
     tot3 = sum(r["usd_m3"] for r in ms["rows"] if r.get("usd_m3") is not None)
+    eu_row = next((r for r in ms["rows"] if r["area"] == "Euro area"), {})
+    eu_m0_date = eu_row.get("m0_date") or "date unknown"
     return f"""  <div class="tw">
   <table class="board mw-sort">
     <thead>
@@ -5404,7 +5406,7 @@ def _mw_money_supply_table(ms):
         <th>Economy</th>
         <th data-sort="m0" title="Physical currency + bank reserves at the central bank — the narrowest aggregate, an M0-class figure">Monetary base (M0-class)</th>
         <th data-sort="m1" title="Currency in circulation + demand deposits">M1</th>
-        <th data-sort="m2" title="M1 + savings/small time deposits (US) — the Euro area's M2 is not published as a standalone headline figure the way the US's is">M2</th>
+        <th data-sort="m2" title="M1 + savings/small time deposits">M2</th>
         <th data-sort="m3" title="The Euro area's own headline broad-money aggregate; the US does not publish a distinct M3">M3</th>
       </tr>
     </thead>
@@ -5422,15 +5424,20 @@ def _mw_money_supply_table(ms):
     </tfoot>
   </table>
   </div>
-  <p class="mwbarnote">Euro area monetary base (M0) reads "—" on purpose, not by oversight.
-  The Eurosystem does publish this concept — its own data dictionary calls it "Base money,"
-  banknotes in circulation plus bank reserves at the ECB, the same idea as the Fed's monetary
-  base — but it lives in a completely different ECB dataset (Internal Liquidity Management,
-  the Eurosystem's own weekly financial statement) from the one used for M1/M2/M3 here
-  (Balance Sheet Items). Unlike the Fed's single well-known "BOGMBASE" series available
-  straight from FRED, there is no one clean, current, euro-area-wide aggregate in that other
-  dataset reachable the same keyless way this board pulls everything else — so this cell
-  stays blank rather than being filled with a guess.</p>"""
+  <p class="mwbarnote">Euro area monetary base (M0) is the one figure on this whole board that
+  is hand-curated rather than live-queried. The Eurosystem calls it "Base money" (banknotes in
+  circulation plus bank reserves at the ECB — the same idea as the Fed's monetary base) and
+  states it in plain English every week in its own Consolidated Financial Statement press
+  release — but the underlying series lives in a different ECB dataset (Internal Liquidity
+  Management, the Eurosystem's own weekly financial statement) from the one used for M1/M2/M3
+  here (Balance Sheet Items), and a real, substantial attempt at a live keyless query against
+  it — the exact item code plus roughly 155 real dimension-value combinations tried against
+  the ECB's own API — found no working query. So this figure is read by hand from that weekly
+  release ({esc(eu_m0_date)}) and refreshed periodically rather than every build, the same
+  posture this board already takes with gold reserves — its DOLLAR value still recomputes
+  from today's live exchange rate like every other cell here, only the underlying euro figure
+  itself is periodic. The totals row above therefore blends one periodic figure into an
+  otherwise-live row.</p>"""
 
 
 def _mw_reserves_fx_table(reserves_fx):
@@ -5625,12 +5632,13 @@ def _mw_methods_panel(board):
     series turned out, on inspection, to cover only a curated set of IMF-program African
     economies, not the world's major currencies, and no other keyless source publishes
     current-month M0/M1/M2-class levels for every country the way these two do for
-    themselves. The US does not publish a distinct M3, and the Euro area does not publish a
-    standalone M2 headline the way the US does. The Euro area's monetary base ("Base money" in
-    the ECB's own terminology) genuinely exists but lives in a different ECB dataset than the
-    one used for M1/M2/M3 here, with no single current euro-area-wide figure reachable the same
-    keyless way this board pulls everything else (see the Money Supply page's own note) — so
-    that cell, and the M2 one, read "—" rather than a guess.</p>
+    themselves. The US does not publish a distinct M3, so that cell reads "—" rather than a
+    guess. The Euro area's monetary base ("Base money" in the ECB's own terminology) is the one
+    figure on this whole board that is hand-curated rather than live-queried — it genuinely
+    exists and the ECB states it in plain English every week, but in a different ECB dataset
+    than the one used for its own M1/M2/M3 (which, unlike M0, ARE reachable the same live
+    keyless way as everything else here) — see the Money Supply page's own note for the full
+    trail.</p>
     <p><b>Reserves (excl. gold)</b> are curated to the {len(board.get('reserves_fx', {}).get('rows', []))}
     largest holders that a real, live, keyless mirror of IMF's own International Financial
     Statistics reserve series actually covers — several economies that would belong on this
