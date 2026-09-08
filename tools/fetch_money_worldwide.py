@@ -247,11 +247,248 @@ def _ecb_bsi_latest(item_code):
         return None, None
 
 
+## ── five more providers (2026-09-08) ──────────────────────────────────────
+# Each of these is a REAL central bank / national statistics office API,
+# individually verified by hand (see the module docstring's dated research
+# log). Unlike the reserve series above, there is no single templated source
+# that covers many countries' money supply at once — the obvious FRED/OECD-MEI
+# templated pattern (MANMM101<CC>M657S / MABMM301<CC>M189S) is real but every
+# country in that family stopped updating in 2018-2023 (verified directly,
+# not assumed) — so this board leans on five separate national sources
+# instead, dispatched generically from money_worldwide_seed.json's
+# money_supply_economies list (`_fetch_generic_money_row`) rather than one
+# hardcoded if-block per country. Adding another economy on one of these
+# SAME five providers is a one-line seed-file entry; a new provider needs a
+# new `_<name>_latest`/`_<name>_values` function below and a new dispatch
+# branch in `_fetch_generic_money_row`.
+
+BOC_VALET_URL = "https://www.bankofcanada.ca/valet/observations/%s/json?recent=1"
+SNB_CUBE_URL = "https://data.snb.ch/api/cube/%s/data/json/en?fromDate=%s"
+BCB_SGS_URL = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.%s/dados/ultimos/1?formato=json"
+BOE_IADB_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp"
+                "?csv.x=yes&Datefrom=01/Jan/%d&Dateto=now&SeriesCodes=%s"
+                "&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N")
+SSB_PXWEB_URL = "https://data.ssb.no/api/v0/en/table/%s"
+
+
+def _boc_valet_latest(series_name):
+    """(date_str "YYYY-MM-DD", float millions-CAD) for the Bank of Canada
+    Valet API's most recent observation of the given V-series, or
+    (None, None). Genuinely keyless — no registration, no token."""
+    d = _get_json(BOC_VALET_URL % series_name, send_ua=False)
+    if not isinstance(d, dict):
+        return None, None
+    obs = d.get("observations") or []
+    if not obs:
+        return None, None
+    row = obs[-1]
+    try:
+        val = (row.get(series_name) or {}).get("v")
+        return row.get("d"), float(val)
+    except (TypeError, ValueError):
+        return None, None
+
+
+def _snb_cube_values(cube_id, dims):
+    """{dim_code: (date_str "YYYY-MM", float millions-CHF)} for every
+    requested dimension in one SNB Data Portal "cube" — ONE http call
+    regardless of how many aggregates are requested, since the cube returns
+    every series in the cube at once. `fromDate` is a real filter the cube
+    API accepts; it's set a year back so the payload stays small without
+    risking missing the latest observation on a slow-reporting month."""
+    from_date = "%d-01-01" % (datetime.now(timezone.utc).year - 1)
+    d = _get_json(SNB_CUBE_URL % (cube_id, from_date), send_ua=False)
+    if not isinstance(d, dict):
+        return {}
+    out = {}
+    for ts in d.get("timeseries") or []:
+        header = ts.get("header") or []
+        # "Level" series only — this cube also carries a parallel
+        # "Change from the corresponding month of the previous year" set
+        # under the same dim codes, which would silently overwrite the
+        # real level if not filtered out here.
+        if not any(h.get("dimItem") == "Level" for h in header):
+            continue
+        dim_item = next((h.get("dimItem") for h in header if h.get("dim") != "Level/change"), None)
+        vals = ts.get("values") or []
+        if not vals:
+            continue
+        last = vals[-1]
+        for dim in dims:
+            # the cube labels dimensions by their human-readable text, not
+            # the short code seed.json uses (GM1/GM2/GM3) — map the codes
+            # this board cares about to the cube's own labels once here.
+            label = {"GM1": "Monetary aggregate M1", "GM2": "Monetary aggregate M2",
+                      "GM3": "Monetary aggregate M3"}.get(dim)
+            if label and dim_item == label:
+                try:
+                    out[dim] = (last.get("date"), float(last.get("value")))
+                except (TypeError, ValueError):
+                    pass
+    return out
+
+
+def _bcb_sgs_latest(series_code):
+    """(date_str "YYYY-MM-DD", float thousands-BRL) for Banco Central do
+    Brasil's SGS API's most recent observation of the given series code, or
+    (None, None). Genuinely keyless."""
+    d = _get_json(BCB_SGS_URL % series_code, send_ua=False)
+    if not isinstance(d, list) or not d:
+        return None, None
+    row = d[-1]
+    try:
+        dd, mm, yyyy = row["data"].split("/")
+        return "%s-%s-%s" % (yyyy, mm, dd), float(row["valor"])
+    except (KeyError, ValueError):
+        return None, None
+
+
+def _boe_iadb_latest(series_code):
+    """(date_str "YYYY-MM-DD", float millions-GBP) for the Bank of England
+    IADB's most recent observation of the given series code, or (None,
+    None). Keyless, but — confirmed by hand — 403s Python's own default
+    User-Agent string the way FRED/DataMapper do the OPPOSITE (see
+    `_UA_HEADER`'s note); this is the one new provider that needs a real UA."""
+    this_year = datetime.now(timezone.utc).year
+    text = _get_text(BOE_IADB_URL % (this_year - 1, series_code), send_ua=True)
+    if not text:
+        return None, None
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if len(lines) < 2:
+        return None, None
+    date_s, val_s = lines[-1].split(",")
+    try:
+        d = datetime.strptime(date_s, "%d %b %Y")
+        return d.strftime("%Y-%m-%d"), float(val_s)
+    except ValueError:
+        return None, None
+
+
+def _ssb_pxweb_latest(table_id, content_code):
+    """(date_str "YYYY-MM", float millions-native) for Statistics Norway's
+    PxWebAPI most recent observation of one content code in one table — two
+    calls (metadata to find the latest period, then a scoped data query),
+    since PxWebAPI has no simple "latest observation" shortcut the way
+    FRED's CSV export does. Genuinely keyless."""
+    meta = _get_json(SSB_PXWEB_URL % table_id, send_ua=False)
+    if not isinstance(meta, dict):
+        return None, None
+    tid = next((v for v in meta.get("variables", []) if v.get("code") == "Tid"), None)
+    if not tid or not tid.get("values"):
+        return None, None
+    latest_period = tid["values"][-1]
+    payload = {
+        "query": [
+            {"code": "ContentsCode", "selection": {"filter": "item", "values": [content_code]}},
+            {"code": "Tid", "selection": {"filter": "item", "values": [latest_period]}},
+        ],
+        "response": {"format": "json-stat2"},
+    }
+    d = _post_json(SSB_PXWEB_URL % table_id, payload, send_ua=False)
+    if not isinstance(d, dict):
+        return None, None
+    vals = d.get("value") or []
+    if not vals:
+        return None, None
+    try:
+        return latest_period, float(vals[0])
+    except (TypeError, ValueError):
+        return None, None
+
+
+def _fetch_generic_money_row(econ, fx):
+    """Build one money_supply row from a money_worldwide_seed.json
+    `money_supply_economies` entry, dispatching on its `provider`. Returns
+    None if literally nothing resolved for this economy (costs only its own
+    row — see the module's fail-soft-per-section contract)."""
+    rate = (fx or {}).get("rates", {}).get(econ["currency"])
+    if not rate:
+        print("  ! %s money supply skipped — no %s/USD rate" % (econ["area"], econ["currency"]),
+              file=sys.stderr)
+        return None
+
+    vals = {}   # "m0"/"m1"/"m2"/"m3" -> (native_billions, date_str)
+    provider = econ["provider"]
+    if provider == "boc_valet":
+        for key, series in econ.get("series", {}).items():
+            d, v = _boc_valet_latest(series)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "snb_cube":
+        cube_vals = _snb_cube_values(econ["cube"], list(econ.get("dims", {}).values()))
+        for key, dim in econ.get("dims", {}).items():
+            d, v = cube_vals.get(dim, (None, None))
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "bcb_sgs":
+        for key, series in econ.get("series", {}).items():
+            d, v = _bcb_sgs_latest(series)
+            if v is not None:
+                vals[key] = (v / 1e6, d)      # thousands -> billions
+    elif provider == "boe_iadb":
+        for key, series in econ.get("series", {}).items():
+            d, v = _boe_iadb_latest(series)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "ssb_pxweb":
+        if econ.get("table_m0") and econ.get("code_m0"):
+            d, v = _ssb_pxweb_latest(econ["table_m0"], econ["code_m0"])
+            if v is not None:
+                vals["m0"] = (v / 1000.0, d)  # millions -> billions
+        for key, code in econ.get("codes_m123", {}).items():
+            d, v = _ssb_pxweb_latest(econ["table_m123"], code)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    else:
+        print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
+              file=sys.stderr)
+        return None
+
+    if not vals:
+        print("  ! %s money supply unresolved (%s)" % (econ["area"], provider), file=sys.stderr)
+        return None
+
+    row = {"area": econ["area"], "flag": econ["flag"], "currency": econ["currency"],
+           "source": econ["source"]}
+    for key in ("m0", "m1", "m2", "m3"):
+        native_b, date_s = vals.get(key, (None, None))
+        row[key] = native_b
+        row["%s_date" % key] = date_s
+        row["usd_%s" % key] = (native_b / rate) if native_b is not None else None
+    # this economy's own broadest resolved aggregate, broadest-first —
+    # same "whatever this economy itself calls its headline figure" idea
+    # the US (M2) and Euro area (M3) rows already use.
+    row["broad_usd"] = next(
+        (row["usd_%s" % k] for k in ("m3", "m2", "m1", "m0") if row["usd_%s" % k] is not None),
+        None)
+    return row
+
+
+def _unresolved_money_row(entry):
+    """A blank-cells row for a genuinely-investigated economy with no
+    working live source yet (Michael's call, 2026-09-08: show the country
+    with dashes and an honest source-note rather than silently drop it —
+    the board's own reader-facing coverage list should be honest about
+    ambition vs. what actually resolved today)."""
+    row = {"area": entry["area"], "flag": entry["flag"], "currency": entry["currency"],
+           "source": entry["note"]}
+    for key in ("m0", "m1", "m2", "m3"):
+        row[key] = None
+        row["%s_date" % key] = None
+        row["usd_%s" % key] = None
+    row["broad_usd"] = None
+    return row
+
+
 def fetch_money_supply(fx, seed):
-    """US (FRED, billions USD) + Euro area (ECB, millions EUR converted to
-    USD via the live fx rate) rows. Two economies, not 190 — see the module
-    docstring's IMF-research section for why a broader keyless pull of
-    comparable, CURRENT money-supply levels isn't achievable today.
+    """US (FRED) + Euro area (ECB) + five more economies (Canada/Switzerland/
+    Brazil/UK/Norway, each its own real keyless API — see the dated research
+    log above `BOC_VALET_URL`) with resolved figures, PLUS a set of
+    genuinely-investigated economies shown with blank cells and an honest
+    source-note (`money_supply_unresolved` in the seed file) rather than
+    silently dropped — see the module docstring's dated 2026-09-08 entry for
+    the full research trail (what was tried for each, and why it either
+    worked or didn't).
 
     The Euro area's M0 ("Base money") is the one figure in this whole board
     that is hand-curated rather than live-queried — not because the ECB
