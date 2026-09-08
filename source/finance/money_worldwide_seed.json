@@ -1,0 +1,50 @@
+{
+ "note": "Curated inputs for the Money Worldwide board (tools/fetch_money_worldwide.py). Two kinds of entry live here: (1) a fixed, hand-checked list of gold-reserve tonnages that changes slowly enough (central banks report quarterly at best, most far less often) that pulling it live on every build would be pointless load for no informational gain — same posture as treasuries_seed.json's BTC holdings; (2) the fixed list of economies this board tracks for money supply and non-gold FX reserves, each pinned to the exact keyless series id it comes from, so extending coverage later is a one-line edit here rather than a code change. Neither list is exhaustive by intent — see the board's own methods panel for why a curated subset beats a fabricated 'full list'.",
+ "as_of": "2026-09-08",
+ "gold_reserves": {
+  "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely.",
+  "world_official_tonnes_estimate": 36600,
+  "world_official_tonnes_note": "Central banks and the IMF together, per WGC's own published estimate — not a sum of the rows below, which are a curated top slice, not the full ~100+ reporting countries.",
+  "rows": [
+   {"country": "United States", "flag": "🇺🇸", "tonnes": 8133},
+   {"country": "Germany", "flag": "🇩🇪", "tonnes": 3355},
+   {"country": "Italy", "flag": "🇮🇹", "tonnes": 2452},
+   {"country": "France", "flag": "🇫🇷", "tonnes": 2437},
+   {"country": "China", "flag": "🇨🇳", "tonnes": 2313},
+   {"country": "Russia", "flag": "🇷🇺", "tonnes": 2299},
+   {"country": "Switzerland", "flag": "🇨🇭", "tonnes": 1040},
+   {"country": "India", "flag": "🇮🇳", "tonnes": 880},
+   {"country": "Japan", "flag": "🇯🇵", "tonnes": 846},
+   {"country": "Turkey", "flag": "🇹🇷", "tonnes": 635},
+   {"country": "Netherlands", "flag": "🇳🇱", "tonnes": 612},
+   {"country": "Poland", "flag": "🇵🇱", "tonnes": 582},
+   {"country": "Taiwan", "flag": "🇹🇼", "tonnes": 424},
+   {"country": "Uzbekistan", "flag": "🇺🇿", "tonnes": 416},
+   {"country": "Portugal", "flag": "🇵🇹", "tonnes": 383}
+  ]
+ },
+ "reserve_economies": [
+  {"area": "United States", "flag": "🇺🇸", "fred_series": "TRESEGUSM052N"},
+  {"area": "China", "flag": "🇨🇳", "fred_series": "TRESEGCNM052N"},
+  {"area": "Japan", "flag": "🇯🇵", "fred_series": "TRESEGJPM052N"},
+  {"area": "India", "flag": "🇮🇳", "fred_series": "TRESEGINM052N"},
+  {"area": "Saudi Arabia", "flag": "🇸🇦", "fred_series": "TRESEGSAM052N"},
+  {"area": "United Kingdom", "flag": "🇬🇧", "fred_series": "TRESEGGBM052N"},
+  {"area": "South Korea", "flag": "🇰🇷", "fred_series": "TRESEGKRM052N"},
+  {"area": "Brazil", "flag": "🇧🇷", "fred_series": "TRESEGBRM052N"},
+  {"area": "Russia", "flag": "🇷🇺", "fred_series": "TRESEGRUM052N"}
+ ],
+ "reserve_economies_note": "Non-gold official reserve assets (foreign exchange + SDRs + IMF reserve position), mirrored from the IMF's own International Financial Statistics onto FRED's keyless CSV endpoint — the same series IMF publishes, reached through a source that doesn't 403 a datacenter IP the way imf.org's own legacy export does (see the fetcher's docstring). Curated to the largest reserve holders that FRED actually mirrors with a live series; several economies that would belong on this list (the Eurozone as a bloc, Switzerland, Hong Kong, Singapore) either have no matching FRED mirror or one that stopped updating years ago, and are left off rather than shown stale.",
+ "currency_flags": {
+  "USD": "🇺🇸", "EUR": "🇪🇺", "JPY": "🇯🇵",
+  "GBP": "🇬🇧", "CNY": "🇨🇳", "CHF": "🇨🇭",
+  "CAD": "🇨🇦", "AUD": "🇦🇺", "INR": "🇮🇳",
+  "BRL": "🇧🇷", "MXN": "🇲🇽", "ZAR": "🇿🇦",
+  "KRW": "🇰🇷", "SGD": "🇸🇬", "HKD": "🇭🇰",
+  "SEK": "🇸🇪", "NOK": "🇳🇴", "DKK": "🇩🇰",
+  "PLN": "🇵🇱", "TRY": "🇹🇷", "THB": "🇹🇭",
+  "IDR": "🇮🇩", "ILS": "🇮🇱", "CZK": "🇨🇿",
+  "HUF": "🇭🇺", "NZD": "🇳🇿", "MYR": "🇲🇾",
+  "PHP": "🇵🇭", "RON": "🇷🇴", "ISK": "🇮🇸"
+ }
+}

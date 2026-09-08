@@ -112,6 +112,7 @@ BTC_SRC = os.path.join(ROOT, "source", "finance", "bitcoin_stats.json")
 TREASURIES_SRC = os.path.join(ROOT, "source", "finance", "treasuries.json")
 CEBE_SRC = os.path.join(ROOT, "source", "finance", "cebe.json")
 CRYPTO_SRC = os.path.join(ROOT, "source", "finance", "crypto_heatmap.json")
+MONEY_WORLDWIDE_SRC = os.path.join(ROOT, "source", "finance", "money_worldwide.json")
 OUT = os.path.join(ROOT, "finance")
 ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 
@@ -646,9 +647,10 @@ def _nav(active=""):
             '<a href="treasuries.html"%s>Bitcoin Treasuries</a>'
             '<a href="crypto.html"%s>Crypto Heat Map</a>'
             '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
+            '<a href="money-worldwide.html"%s>Money Worldwide</a>'
             '<a href="ask.html"%s>Ask</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
-                        cls("crypto"), cls("humanity"), cls("ask")))
+                        cls("crypto"), cls("humanity"), cls("money-worldwide"), cls("ask")))
 
 
 def _chrome(active=""):
@@ -720,6 +722,7 @@ def _foot():
             '<a href="treasuries.html">Bitcoin Treasuries</a> · '
             '<a href="crypto.html">The Crypto Heat Map</a> · '
             '<a href="humanity.html">Bitcoin vs. Humanity</a> · '
+            '<a href="money-worldwide.html">Money Worldwide</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
             'nothing here is investment advice%s</footer>'
@@ -1132,7 +1135,7 @@ def build_thanks():
                   url="%sthanks.html" % BASE_URL, body=body, noindex=True)
 
 
-def build_front(entries, board, stats=None, treasuries=None, crypto=None):
+def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_worldwide=None):
     """The publication's front page: what has been written, newest first —
     as a bounded grid of tiles, not a list that grows forever.
 
@@ -1204,6 +1207,15 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
                  "of itself — satoshis per person on Earth, and what happens if all "
                  "the world's wealth wanted in.",
             board=True, date=_parse_generated_date(stats.get("generated"))))
+
+    # Same "don't link to a page the build didn't write" rule as every tile above.
+    if money_worldwide and (money_worldwide.get("fx") or money_worldwide.get("debt_gdp")):
+        mw_line = ("Exchange rates, money supply, reserves and gold, and global debt & "
+                   "GDP — with Bitcoin's own market cap set against every one of them")
+        pool.append(_front_item(
+            href="money-worldwide.html", label="STANDING PAGE · UPDATED THROUGH THE DAY",
+            title="Money Worldwide", desc=mw_line + ".", board=True,
+            date=_parse_generated_date(money_worldwide.get("generated"))))
 
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
                          title=e["title"], desc=e["summary"], date=e["date"]) for e in entries]
@@ -5069,6 +5081,531 @@ def build_humanity_board(stats):
         extra_css=HB_CSS, extra_js=HB_JS.replace("__SEED__", seed))
 
 
+# ───────────────────────────────────────────────────── the Money Worldwide board ──
+#
+# What a dollar buys elsewhere, how much money actually exists, who holds the
+# world's reserves (foreign exchange AND gold), how big the world's economy
+# and government debt actually are — and where Bitcoin's own market cap lands
+# against all four. Rendered from source/finance/money_worldwide.json
+# (tools/fetch_money_worldwide.py); see that script's own docstring for the
+# full research trail behind each section's source (short version: IMF's own
+# systems either don't resolve, require a login, or are a structure registry
+# that returns real metadata but flatly refuses actual data queries — verified
+# directly, not assumed — so three of the four sections lean on other real,
+# keyless, official sources instead: ECB reference rates, the Federal Reserve
+# + ECB's own SDMX APIs for money supply, and FRED's mirror of IMF's own
+# International Financial Statistics reserve series. Only the debt/GDP
+# section pulls straight from an IMF system that actually serves data —
+# DataMapper — but it does so for a genuinely broad ~195 economies, not a
+# curated handful).
+#
+# ADDED 2026-09-08. Sortable tables (MW_JS below) — the same click-a-header
+# pattern CEBE_JS already established on this site, generalised here to work
+# on every table on the page (CEBE's own version only ever drove one table).
+
+MW_ISO3 = {
+    # Name + flag for the ISO3 codes that actually appear in the debt/GDP
+    # table's top-30-by-GDP slice, plus enough of the next tier that a
+    # ranking reshuffle over time doesn't immediately fall back to a bare
+    # code. DataMapper itself gives no country names — only codes — so this
+    # lookup exists purely to make its table readable.
+    "USA": ("United States", "🇺🇸"), "CHN": ("China", "🇨🇳"),
+    "DEU": ("Germany", "🇩🇪"), "JPN": ("Japan", "🇯🇵"),
+    "GBR": ("United Kingdom", "🇬🇧"), "IND": ("India", "🇮🇳"),
+    "FRA": ("France", "🇫🇷"), "ITA": ("Italy", "🇮🇹"),
+    "RUS": ("Russia", "🇷🇺"), "BRA": ("Brazil", "🇧🇷"),
+    "CAN": ("Canada", "🇨🇦"), "AUS": ("Australia", "🇦🇺"),
+    "MEX": ("Mexico", "🇲🇽"), "ESP": ("Spain", "🇪🇸"),
+    "KOR": ("South Korea", "🇰🇷"), "TUR": ("Turkey", "🇹🇷"),
+    "IDN": ("Indonesia", "🇮🇩"), "NLD": ("Netherlands", "🇳🇱"),
+    "SAU": ("Saudi Arabia", "🇸🇦"), "CHE": ("Switzerland", "🇨🇭"),
+    "POL": ("Poland", "🇵🇱"), "TWN": ("Taiwan", "🇹🇼"),
+    "IRL": ("Ireland", "🇮🇪"), "BEL": ("Belgium", "🇧🇪"),
+    "SWE": ("Sweden", "🇸🇪"), "ISR": ("Israel", "🇮🇱"),
+    "ARG": ("Argentina", "🇦🇷"), "SGP": ("Singapore", "🇸🇬"),
+    "AUT": ("Austria", "🇦🇹"), "ARE": ("United Arab Emirates", "🇦🇪"),
+    # Next tier — kept as a buffer against a ranking reshuffle:
+    "THA": ("Thailand", "🇹🇭"), "NGA": ("Nigeria", "🇳🇬"),
+    "EGY": ("Egypt", "🇪🇬"), "ZAF": ("South Africa", "🇿🇦"),
+    "PHL": ("Philippines", "🇵🇭"), "BGD": ("Bangladesh", "🇧🇩"),
+    "VNM": ("Vietnam", "🇻🇳"), "MYS": ("Malaysia", "🇲🇾"),
+    "DNK": ("Denmark", "🇩🇰"), "COL": ("Colombia", "🇨🇴"),
+    "FIN": ("Finland", "🇫🇮"), "CHL": ("Chile", "🇨🇱"),
+    "ROU": ("Romania", "🇷🇴"), "CZE": ("Czechia", "🇨🇿"),
+    "PRT": ("Portugal", "🇵🇹"), "PER": ("Peru", "🇵🇪"),
+    "NZL": ("New Zealand", "🇳🇿"), "QAT": ("Qatar", "🇶🇦"),
+    "KAZ": ("Kazakhstan", "🇰🇿"), "HUN": ("Hungary", "🇭🇺"),
+    "UKR": ("Ukraine", "🇺🇦"), "IRQ": ("Iraq", "🇮🇶"),
+    "DZA": ("Algeria", "🇩🇿"), "KWT": ("Kuwait", "🇰🇼"),
+    "MAR": ("Morocco", "🇲🇦"), "ETH": ("Ethiopia", "🇪🇹"),
+    "SVK": ("Slovakia", "🇸🇰"), "PAK": ("Pakistan", "🇵🇰"),
+    "HKG": ("Hong Kong", "🇭🇰"), "NOR": ("Norway", "🇳🇴"),
+}
+
+
+def _mw_flag_name(iso3):
+    return MW_ISO3.get(iso3, (iso3, "🌐"))
+
+
+MW_CSS = """
+/* ── The Money Worldwide board ────────────────────────────────────────────────
+   Namespaced .mw* so it can never collide with .board/.trs*/.cbe* it also
+   reuses for its tables. */
+.mwlede-hl{color:__ACCENT__;font-variant-numeric:tabular-nums}
+table.mw-sort th[data-sort]{cursor:pointer;user-select:none;white-space:nowrap}
+table.mw-sort th[data-sort]:hover{color:#e8eef7}
+table.mw-sort td{font-variant-numeric:tabular-nums;white-space:nowrap}
+table.mw-sort td.mw-nm{white-space:normal}
+.mw-sub{display:block;margin-top:1px;font-size:11px;color:#6e7d92}
+.mw-r{color:#f87171}
+.mwh2{margin:34px 0 4px;font-weight:400;font-size:19px}
+.mwsub{margin:0 0 14px;color:#93a4bd;font-size:14px;line-height:1.55}
+.mwcaveat{margin:10px 0 0;padding:11px 14px;border-left:3px solid __ACCENT__;
+  background:#111927;border-radius:0 8px 8px 0;color:#a9b7c9;font-size:13px;
+  line-height:1.55}
+.mwscarcity{margin:22px 0 0;display:flex;flex-direction:column;gap:14px}
+.mwbarrow{display:grid;grid-template-columns:230px 1fr auto;align-items:center;gap:12px}
+.mwbarrow .mwbl{font-size:13px;color:#c7d2e0}
+.mwbarrow .mwbv{font-variant-numeric:tabular-nums;color:__ACCENT__;font-weight:600;
+  white-space:nowrap;text-align:right;font-size:14.5px}
+.mwbartrack{position:relative;height:22px;background:#0a111c;border:1px solid #1b2534;
+  border-radius:6px;overflow:hidden}
+.mwbarfill{position:absolute;left:0;top:0;bottom:0;border-radius:5px 0 0 5px;
+  transition:width .2s}
+.mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
+@media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
+"""
+
+# Generalised version of CEBE_JS's click-to-sort — that one only ever drove a
+# single fixed table id; this drives every `table.mw-sort` on the page
+# independently (each gets its own closure over which column/direction is
+# active), because this board renders four separate sortable tables, not one.
+MW_JS = """
+(function(){
+  function wire(table){
+    var tbody = table.querySelector('tbody');
+    if(!tbody) return;
+    var ths = table.querySelectorAll('th[data-sort]');
+    var curKey = null, asc = false;
+    function apply(key){
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+      rows.sort(function(a, b){
+        var av = parseFloat(a.dataset[key]);
+        var bv = parseFloat(b.dataset[key]);
+        if(isNaN(av)) av = asc ? Infinity : -Infinity;
+        if(isNaN(bv)) bv = asc ? Infinity : -Infinity;
+        return asc ? (av - bv) : (bv - av);
+      });
+      rows.forEach(function(r, i){
+        tbody.appendChild(r);
+        var rk = r.querySelector('.rk');
+        if(rk) rk.textContent = i + 1;
+      });
+      ths.forEach(function(h){
+        h.textContent = h.textContent.replace(/[\\u25B2\\u25BC]/g, '').trim();
+      });
+      var active = table.querySelector('th[data-sort="' + key + '"]');
+      if(active) active.textContent += asc ? ' \\u25B2' : ' \\u25BC';
+    }
+    ths.forEach(function(th){
+      th.addEventListener('click', function(){
+        var key = th.dataset.sort;
+        asc = (curKey === key) ? !asc : false;
+        curKey = key;
+        apply(key);
+      });
+    });
+  }
+  document.querySelectorAll('table.mw-sort').forEach(wire);
+})();
+"""
+
+
+def _mw_currency_mark(code, currency_flags):
+    flag = currency_flags.get(code, "🌐")
+    return f'<span class="mk mk-e" aria-hidden="true">{esc(flag)}</span>'
+
+
+def _mw_fx_table(fx, currency_flags):
+    rates = fx["rates"]
+    rows = []
+    for code in sorted(rates, key=lambda c: rates[c]):
+        rate = rates[code]
+        per_usd = (1.0 / rate) if rate else 0.0
+        rows.append(f"""      <tr data-rate="{rate}" data-perusd="{per_usd}">
+        <td class="mw-nm"><span class="asw">{_mw_currency_mark(code, currency_flags)}
+          <span class="nm"><span class="n1">{esc(code)}</span></span></span></td>
+        <td>{rate:,.4f}</td>
+        <td>{per_usd:,.4f}</td>
+      </tr>""")
+    body = "\n".join(rows)
+    return f"""  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Currency</th>
+        <th data-sort="rate" title="How many units of this currency one US dollar buys, today">Per $1</th>
+        <th data-sort="perusd" title="How many US dollars one unit of this currency buys, today">$ per unit</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+  </table>
+  </div>
+  <p class="mwbarnote">No totals row here on purpose — summing exchange rates
+  across currencies has no meaningful unit; unlike every other table on this
+  page, this one has nothing sensible to add up.</p>"""
+
+
+def _mw_money_supply_table(ms):
+    rows = []
+    for r in ms["rows"]:
+        def cell(usd_b, native_b, native_ccy, date):
+            if usd_b is None:
+                return "<td class=\"mw-sub\">—</td>"
+            native_s = (f"{native_b:,.1f} {native_ccy}B as of {esc(date)}"
+                        if native_ccy != "USD" and native_b is not None else esc(date or ""))
+            return f'<td title="{native_s}">${usd_b:,.1f} B</td>'
+        c0 = cell(r.get("usd_m0"), r.get("m0"), r["currency"], r.get("m0_date"))
+        c1 = cell(r.get("usd_m1"), r.get("m1"), r["currency"], r.get("m1_date"))
+        c2 = cell(r.get("usd_m2"), r.get("m2"), r["currency"], r.get("m2_date"))
+        c3 = cell(r.get("usd_m3"), r.get("m3"), r["currency"], r.get("m3_date"))
+        # Sort keys live on the <tr> itself (see MW_JS — it reads a.dataset[key]
+        # off each row), one attribute per sortable column, matching CEBE_JS's
+        # own established convention.
+        ds = {"m0": r.get("usd_m0"), "m1": r.get("usd_m1"),
+              "m2": r.get("usd_m2"), "m3": r.get("usd_m3")}
+        ds_attrs = " ".join(f'data-{k}="{v}"' for k, v in ds.items() if v is not None)
+        rows.append(f"""      <tr {ds_attrs}>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(r['flag'])}</span>
+          <span class="nm"><span class="n1">{esc(r['area'])}</span>
+          <span class="mw-sub">{esc(r['source'])}</span></span></span></td>
+        {c0}
+        {c1}
+        {c2}
+        {c3}
+      </tr>""")
+    body = "\n".join(rows)
+    tot0 = sum(r["usd_m0"] for r in ms["rows"] if r.get("usd_m0") is not None)
+    tot1 = sum(r["usd_m1"] for r in ms["rows"] if r.get("usd_m1") is not None)
+    tot2 = sum(r["usd_m2"] for r in ms["rows"] if r.get("usd_m2") is not None)
+    tot3 = sum(r["usd_m3"] for r in ms["rows"] if r.get("usd_m3") is not None)
+    return f"""  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Economy</th>
+        <th data-sort="m0" title="Physical currency + bank reserves at the central bank — the narrowest aggregate, an M0-class figure">Monetary base (M0-class)</th>
+        <th data-sort="m1" title="Currency in circulation + demand deposits">M1</th>
+        <th data-sort="m2" title="M1 + savings/small time deposits (US) — the Euro area's M2 is not published as a standalone headline figure the way the US's is">M2</th>
+        <th data-sort="m3" title="The Euro area's own headline broad-money aggregate; the US does not publish a distinct M3">M3</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total (billions of dollars, at today's exchange rate)</td>
+        <td>{('$%.1f B' % tot0) if tot0 else '—'}</td>
+        <td>{('$%.1f B' % tot1) if tot1 else '—'}</td>
+        <td>{('$%.1f B' % tot2) if tot2 else '—'}</td>
+        <td>{('$%.1f B' % tot3) if tot3 else '—'}</td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>"""
+
+
+def _mw_reserves_fx_table(reserves_fx):
+    rows = []
+    for r in reserves_fx["rows"]:
+        usd_b = r["usd_m"] / 1000.0
+        date_key = (r.get("as_of") or "").replace("-", "") or "0"
+        rows.append(f"""      <tr data-usd="{usd_b}" data-date="{date_key}">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(r['flag'])}</span>
+          <span class="nm"><span class="n1">{esc(r['area'])}</span></span></span></td>
+        <td>${usd_b:,.1f} B</td>
+        <td class="ao">{esc(r.get('as_of') or '—')}</td>
+      </tr>""")
+    body = "\n".join(rows)
+    tot_b = reserves_fx["total_usd_m"] / 1000.0
+    n = len(reserves_fx["rows"])
+    return f"""  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Economy</th>
+        <th data-sort="usd" title="Foreign exchange + SDRs + IMF reserve position — excludes gold, shown separately below">Reserves, excl. gold</th>
+        <th data-sort="date" title="The most recent month this economy's own reporting covers">As of</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total — {n} economies</td>
+        <td>${tot_b:,.1f} B</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>"""
+
+
+def _mw_gold_table(gold):
+    rows = []
+    for r in gold["rows"]:
+        rows.append(f"""      <tr data-tonnes="{r['tonnes']}" data-usd="{r['usd']}">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(r['flag'])}</span>
+          <span class="nm"><span class="n1">{esc(r['country'])}</span></span></span></td>
+        <td>{r['tonnes']:,} t</td>
+        <td>{money_cap(r['usd'])}</td>
+      </tr>""")
+    body = "\n".join(rows)
+    n = len(gold["rows"])
+    return f"""  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tonnes">Gold reserves</th>
+        <th data-sort="usd" title="Tonnes × troy ounces per tonne × today's gold price">Value, today's price</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total — {n} countries shown</td>
+        <td>{gold['total_tonnes']:,} t</td>
+        <td>{money_cap(gold['total_usd'])}</td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+  <p class="mwbarnote">These {n} are a curated top slice, not every reporting
+  country — the World Gold Council's own estimate for ALL central banks and
+  the IMF together is ≈{gold.get('world_official_tonnes_estimate', 0):,} tonnes,
+  well above the {gold['total_tonnes']:,} t summed here.</p>"""
+
+
+def _mw_debt_gdp_table(dg):
+    rows = []
+    for r in dg["rows"]:
+        name, flag = _mw_flag_name(r["area"])
+        debt_b = r.get("debt_usd_b")
+        debt_pct = r.get("debt_pct_gdp")
+        ds = {"gdp": r["gdp_usd_b"]}
+        if debt_pct is not None:
+            ds["pct"] = debt_pct
+        if debt_b is not None:
+            ds["debt"] = debt_b
+        ds_attrs = " ".join(f'data-{k}="{v}"' for k, v in ds.items())
+        rows.append(f"""      <tr {ds_attrs}>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(flag)}</span>
+          <span class="nm"><span class="n1">{esc(name)}</span></span></span></td>
+        <td>{money_cap(r['gdp_usd_b'] * 1e9)}</td>
+        <td class="{'mw-r' if (debt_pct or 0) >= 100 else ''}">
+          {('%.1f%%' % debt_pct) if debt_pct is not None else '—'}</td>
+        <td>{money_cap(debt_b * 1e9) if debt_b is not None else '—'}</td>
+      </tr>""")
+    body = "\n".join(rows)
+    tot_gdp = sum(r["gdp_usd_b"] for r in dg["rows"])
+    tot_debt = sum(r["debt_usd_b"] for r in dg["rows"] if r.get("debt_usd_b") is not None)
+    weighted_pct = (tot_debt / tot_gdp * 100.0) if tot_gdp else None
+    return f"""  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Economy</th>
+        <th data-sort="gdp" title="GDP, current prices — IMF World Economic Outlook, {esc(dg['rows'][0]['year']) if dg['rows'] else ''} estimate">GDP</th>
+        <th data-sort="pct" title="General government gross debt, as a share of that economy's own GDP">Govt. debt (% of GDP)</th>
+        <th data-sort="debt" title="GDP × debt-to-GDP — an implied dollar figure, not separately published by the IMF">Govt. debt ($, implied)</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+    <tfoot>
+      <tr>
+        <td class="mw-nm trstot-l">Total — top {len(dg['rows'])} of {dg['n_countries_total']} economies IMF covers</td>
+        <td>{money_cap(tot_gdp * 1e9)}</td>
+        <td>{('%.1f%% (weighted avg.)' % weighted_pct) if weighted_pct is not None else '—'}</td>
+        <td>{money_cap(tot_debt * 1e9)}</td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>
+  <p class="mwbarnote">World totals below (GDP {money_cap(dg['world_gdp_usd_b'] * 1e9)},
+  debt-to-GDP {('%.1f%%' % dg['world_debt_pct_gdp']) if dg.get('world_debt_pct_gdp') else '—'})
+  are computed across the FULL {dg['n_countries_total']}-economy IMF set, not
+  just the top {len(dg['rows'])} shown in this table.</p>"""
+
+
+def _mw_scarcity_bar(item, max_usd, colour):
+    width_pct = max(1.5, (item["usd"] / max_usd) * 100.0) if max_usd else 1.5
+    return f"""    <div class="mwbarrow">
+      <div class="mwbl">{esc(item['label'])}</div>
+      <div class="mwbartrack"><div class="mwbarfill" style="width:{width_pct:.2f}%;background:{colour}"></div></div>
+      <div class="mwbv">{money_cap(item['usd'])}</div>
+      <div class="mwbarnote">{esc(item['note'])}</div>
+    </div>"""
+
+
+# NOTE: this dict is built at import time when ACCENT is already a plain
+# string constant, not the "__ACCENT__" placeholder — that placeholder only
+# gets substituted inside CSS/JS blocks by _shell(), never inside body HTML,
+# so a bar drawn directly in the body must use the real value here.
+_MW_LINEUP_COLOURS = {
+    "Broad money — U.S. + Euro area (M2 + M3)": "#5eb3d6",
+    "Gold — all above-ground supply": "#c9b45e",
+    "Bitcoin — total market cap": ACCENT,
+}
+
+
+def _mw_scarcity_chart(bitcoin):
+    lineup = bitcoin.get("lineup") or []
+    if not lineup:
+        return ""
+    max_usd = max(item["usd"] for item in lineup)
+    bars = "\n".join(
+        _mw_scarcity_bar(item, max_usd, _MW_LINEUP_COLOURS.get(item["label"], "#8f8fd6"))
+        for item in lineup)
+    return f"""  <h2 class="mwh2">The scarcity lineup</h2>
+  <p class="mwsub">Three figures, side by side, at the same scale — deliberately NOT summed
+  into one number, because the whole point is the CONTRAST between them. Fiat money supply can
+  be and regularly is expanded by policy choice. Gold's supply grows too, just slowly — new
+  mining adds roughly 1.5% to the above-ground stock in a typical year. Bitcoin's supply is
+  fixed by its own consensus rule at 21 million coins, full stop, growing toward that cap on a
+  published, unchangeable schedule and never past it. (World GDP appears elsewhere on this
+  page, not here — it measures a YEAR of economic output, not a stock of money or value, so
+  mixing it into this particular comparison would answer a different question than the one
+  this chart is asking.)</p>
+  <div class="mwscarcity">
+{bars}
+  </div>
+  <p class="mwcaveat">⚠️ The "Broad money" bar is a sum across different countries' own
+  currencies, converted to dollars at TODAY's exchange rate. That means it moves for two
+  completely different reasons that look identical on this chart: real growth in the money
+  supply, AND swings in the dollar's own exchange rate against the euro. A stronger dollar
+  alone would shrink this bar even if not one additional euro or dollar were ever printed —
+  don't read a change here as evidence of printing without checking the FX rate first.</p>"""
+
+
+def _mw_methods_panel(board):
+    gold = board.get("gold") or {}
+    return f"""  <div class="panel">
+    <h2>How this board is made, and what it deliberately is not</h2>
+    <p><b>Exchange rates</b> are the European Central Bank's own daily reference rates,
+    reached through a free keyless proxy (Frankfurter) rather than a third-party estimate —
+    the same rates the IMF itself references when it revalues the Special Drawing Right every
+    five years (see <a href="untangling-bis-imf-world-bank.html">the Ledger's own entry on
+    what the IMF, the BIS and the World Bank each actually do</a>).</p>
+    <p><b>Money supply</b> is curated to two economies — the United States (Federal Reserve
+    H.6 data) and the Euro area (European Central Bank) — not all ~190 IMF members. That is a
+    genuine limitation, not laziness: the IMF's own comparable cross-country money-supply
+    series turned out, on inspection, to cover only a curated set of IMF-program African
+    economies, not the world's major currencies, and no other keyless source publishes
+    current-month M0/M1/M2-class levels for every country the way these two do for
+    themselves. The US does not publish a distinct M3, and the Euro area does not publish a
+    distinct M0 or a standalone M2 headline the way the US does — those cells read "—" rather
+    than a guess.</p>
+    <p><b>Reserves (excl. gold)</b> are curated to the {len(board.get('reserves_fx', {}).get('rows', []))}
+    largest holders that a real, live, keyless mirror of IMF's own International Financial
+    Statistics reserve series actually covers — several economies that would belong on this
+    list (the Euro area as a bloc, Switzerland, Hong Kong, Singapore) either have no matching
+    mirror or one that stopped updating years ago, and are left off rather than shown stale.</p>
+    <p><b>Gold reserves</b> are a curated, dated list of the {len(gold.get('rows', []))} largest
+    official holders (World Gold Council, compiled from IMF reporting) — central banks report
+    this quarterly at best, so this is refreshed by hand periodically rather than pulled live
+    every build. It is priced at today's live gold quote (shared with <a href="board.html">the
+    Asset Board</a>).</p>
+    <p><b>Global debt &amp; GDP</b> is the one section pulled directly from an IMF system that
+    actually serves real data — the DataMapper API behind imf.org's own public data
+    visualizations — across essentially every economy the IMF's World Economic Outlook covers.
+    The dollar debt figures are IMPLIED (GDP × the IMF's own published debt-to-GDP ratio), not
+    a separately published dollar series.</p>
+    <p>Nothing here is investment advice, and none of the institutions named on this page have
+    endorsed it or are affiliated with it.</p>
+  </div>"""
+
+
+def build_money_worldwide(board):
+    fx, ms = board.get("fx"), board.get("money_supply")
+    reserves_fx, gold = board.get("reserves_fx"), board.get("gold")
+    debt_gdp, bitcoin = board.get("debt_gdp"), board.get("bitcoin")
+    seed_path = os.path.join(ROOT, "source", "finance", "money_worldwide_seed.json")
+    currency_flags = {}
+    if os.path.exists(seed_path):
+        try:
+            with open(seed_path, encoding="utf-8") as fh:
+                currency_flags = (json.load(fh) or {}).get("currency_flags", {})
+        except (ValueError, OSError):
+            pass
+
+    sections = []
+    if fx:
+        sections.append('  <h2 class="mwh2">Exchange rates</h2>\n'
+                         f'  <p class="mwsub">{len(fx["rates"])} currencies against the US '
+                         f'dollar, {esc(fx.get("date") or "today")} — European Central Bank '
+                         'reference rates. Click any column to sort.</p>\n'
+                         + _mw_fx_table(fx, currency_flags))
+    if ms:
+        sections.append('  <h2 class="mwh2">Money supply</h2>\n'
+                         '  <p class="mwsub">How much money actually exists, by aggregate — '
+                         'narrowest (M0-class) to broadest each economy publishes. Click any '
+                         'column to sort.</p>\n' + _mw_money_supply_table(ms))
+    if reserves_fx or gold:
+        sections.append('  <h2 class="mwh2">Reserves — foreign exchange and gold</h2>\n'
+                         '  <p class="mwsub">Non-gold reserves (foreign exchange + SDRs + IMF '
+                         'reserve position) by economy, and official gold reserves by country — '
+                         'shown separately on purpose, since summing them would obscure how '
+                         'much of a reserve stockpile is a hard asset versus other currencies. '
+                         'Click any column to sort.</p>')
+        if reserves_fx:
+            sections.append(_mw_reserves_fx_table(reserves_fx))
+        if gold:
+            sections.append(_mw_gold_table(gold))
+    if debt_gdp:
+        sections.append('  <h2 class="mwh2">Global debt &amp; GDP</h2>\n'
+                         f'  <p class="mwsub">The top {len(debt_gdp["rows"])} economies by GDP, '
+                         'out of {n} the IMF covers — with each one\'s general government '
+                         'gross debt as a share of its own GDP. Click any column to '
+                         'sort.</p>'.replace("{n}", str(debt_gdp["n_countries_total"]))
+                         + _mw_debt_gdp_table(debt_gdp))
+    if bitcoin:
+        sections.append(_mw_scarcity_chart(bitcoin))
+
+    btc_line = ""
+    if bitcoin and bitcoin.get("market_cap_usd"):
+        btc_line = (f' Bitcoin\'s own market cap today is '
+                     f'<span class="mwlede-hl">{money_cap(bitcoin["market_cap_usd"])}</span>'
+                     f' — currently #{bitcoin.get("btc_rank", "?")} on '
+                     f'<a href="board.html">the Asset Board</a>.')
+
+    desc = ("Exchange rates, money supply, reserves and gold, and global debt & GDP — "
+            "with Bitcoin's own market cap set against every one of them.")
+    body = f"""  <p class="trskicker"><a href="untangling-bis-imf-world-bank.html">See also: Untangling
+    the BIS, the IMF, and the World Bank →</a></p>
+  <h1 class="btitle">Money Worldwide</h1>
+  <p class="lede">Four numbers that don't normally sit on the same page: what a dollar buys
+  elsewhere, how much money actually exists, who holds the world's reserves, and how big the
+  world's economy and its government debt actually are.{btc_line}</p>
+  <p class="stamp">Updated {esc(board.get('generated', '—'))}</p>
+{chr(10).join(sections)}
+{_mw_methods_panel(board)}
+{_treasury_nudge("Money Worldwide board")}
+  <p class="backlink"><a href="index.html">← Back to the front page</a></p>
+"""
+    return _shell(title="Money Worldwide — exchange rates, money supply, reserves, debt & GDP — %s" % SITE_NAME,
+                  desc=desc, url="%smoney-worldwide.html" % BASE_URL, active="money-worldwide",
+                  body=body, extra_css=TREASURY_CSS + MW_CSS, extra_js=MW_JS)
+
+
 def build_sitemap(entries, tags):
     """A sitemap is not optional here — it IS the discovery plan.
 
@@ -5080,7 +5617,8 @@ def build_sitemap(entries, tags):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today),
             ("%sbitcoin.html" % BASE_URL, today), ("%streasuries.html" % BASE_URL, today),
-            ("%scrypto.html" % BASE_URL, today), ("%sask.html" % BASE_URL, today)]
+            ("%scrypto.html" % BASE_URL, today), ("%smoney-worldwide.html" % BASE_URL, today),
+            ("%sask.html" % BASE_URL, today)]
     urls += [("%s%s" % (BASE_URL, meta["file"]), today)
              for meta in TREASURY_CATEGORIES.values()]
     for e in entries:
@@ -5147,6 +5685,17 @@ def main():
             print("  ! crypto_heatmap.json unreadable (%s) — skipping the Crypto "
                   "Heat Map" % exc, file=sys.stderr)
 
+    # The Money Worldwide board is optional by the same contract as the other
+    # boards. Loaded before the front page so its card can appear there.
+    money_worldwide = None
+    if os.path.exists(MONEY_WORLDWIDE_SRC):
+        try:
+            with open(MONEY_WORLDWIDE_SRC, encoding="utf-8") as fh:
+                money_worldwide = json.load(fh)
+        except (ValueError, OSError) as exc:
+            print("  ! money_worldwide.json unreadable (%s) — skipping the Money "
+                  "Worldwide board" % exc, file=sys.stderr)
+
     tags = tag_index(live)
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
 
@@ -5154,7 +5703,7 @@ def main():
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
             fh.write(text)
 
-    write("index.html", build_front(live, board, stats, treasuries, crypto))
+    write("index.html", build_front(live, board, stats, treasuries, crypto, money_worldwide))
     write("ask.html", build_ask())
     write("thanks.html", build_thanks())
     write("board.html", build_board(board))
@@ -5208,6 +5757,15 @@ def main():
     else:
         print("  ! no live supply figure — leaving the last Bitcoin vs. "
               "Humanity board in place", file=sys.stderr)
+
+    # Money Worldwide is optional by the same contract as every other board:
+    # missing/unreadable JSON costs exactly this one page.
+    if money_worldwide:
+        write("money-worldwide.html", build_money_worldwide(money_worldwide))
+    else:
+        print("  ! no money-worldwide board — leaving the last Money Worldwide "
+              "board in place", file=sys.stderr)
+
     for e in entries:
         page = build_entry_page(e, board)
         if page is None:

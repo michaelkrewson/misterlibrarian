@@ -1,0 +1,483 @@
+{
+ "generated": "2026-09-08 19:58 UTC",
+ "fx": {
+  "base": "USD",
+  "date": "2026-09-08",
+  "rates": {
+   "AUD": 1.3861,
+   "BRL": 5.1111,
+   "CAD": 1.3805,
+   "CHF": 0.81152,
+   "CNY": 6.7105,
+   "CZK": 20.825,
+   "DKK": 6.436,
+   "EUR": 0.86103,
+   "GBP": 0.73825,
+   "HKD": 7.8412,
+   "HUF": 313.37,
+   "IDR": 17597,
+   "ILS": 3.0118,
+   "INR": 94.83,
+   "ISK": 120.89,
+   "JPY": 154.3,
+   "KRW": 1341.67,
+   "MXN": 16.951,
+   "MYR": 4.0615,
+   "NOK": 9.2518,
+   "NZD": 1.7115,
+   "PHP": 62.508,
+   "PLN": 3.7178,
+   "RON": 4.5204,
+   "SEK": 9.6022,
+   "SGD": 1.2658,
+   "THB": 32.915,
+   "TRY": 48.46,
+   "ZAR": 16.024
+  }
+ },
+ "money_supply": {
+  "rows": [
+   {
+    "area": "United States",
+    "flag": "🇺🇸",
+    "currency": "USD",
+    "m0": 5523.9,
+    "m0_label": "Monetary base",
+    "m0_date": "2026-07-01",
+    "m1": 19886.4,
+    "m1_date": "2026-07-01",
+    "m2": 23218.0,
+    "m2_date": "2026-07-01",
+    "m3": null,
+    "usd_m0": 5523.9,
+    "usd_m1": 19886.4,
+    "usd_m2": 23218.0,
+    "usd_m3": null,
+    "broad_usd": 23218.0,
+    "source": "Federal Reserve H.6 (via FRED, billions of dollars)"
+   },
+   {
+    "area": "Euro area",
+    "flag": "🇪🇺",
+    "currency": "EUR",
+    "m0": null,
+    "m0_label": null,
+    "m0_date": null,
+    "m1": 11323.00412516002,
+    "m1_date": "2026-07",
+    "m2": 16457.179071542698,
+    "m2_date": "2026-07",
+    "m3": 17637.71825767558,
+    "m3_date": "2026-07",
+    "usd_m0": null,
+    "usd_m1": 13150.533808531665,
+    "usd_m2": 19113.36314825581,
+    "usd_m3": 20484.441027229692,
+    "broad_usd": 20484.441027229692,
+    "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
+   }
+  ],
+  "total_broad_usd_b": 43702.441027229695
+ },
+ "reserves_fx": {
+  "rows": [
+   {
+    "area": "China",
+    "flag": "🇨🇳",
+    "usd_m": 3482385.620113452,
+    "as_of": "2026-06-01"
+   },
+   {
+    "area": "Japan",
+    "flag": "🇯🇵",
+    "usd_m": 1177971.006308592,
+    "as_of": "2026-06-01"
+   },
+   {
+    "area": "India",
+    "flag": "🇮🇳",
+    "usd_m": 588032.8183374717,
+    "as_of": "2026-07-01"
+   },
+   {
+    "area": "Saudi Arabia",
+    "flag": "🇸🇦",
+    "usd_m": 488113.8979393323,
+    "as_of": "2026-07-01"
+   },
+   {
+    "area": "Russia",
+    "flag": "🇷🇺",
+    "usd_m": 423209.7267066991,
+    "as_of": "2025-11-01"
+   },
+   {
+    "area": "South Korea",
+    "flag": "🇰🇷",
+    "usd_m": 421863.9658648955,
+    "as_of": "2026-07-01"
+   },
+   {
+    "area": "Brazil",
+    "flag": "🇧🇷",
+    "usd_m": 345222.6493789863,
+    "as_of": "2026-06-01"
+   },
+   {
+    "area": "United States",
+    "flag": "🇺🇸",
+    "usd_m": 240512.4058950884,
+    "as_of": "2026-07-01"
+   },
+   {
+    "area": "United Kingdom",
+    "flag": "🇬🇧",
+    "usd_m": 168636.9144739963,
+    "as_of": "2026-07-01"
+   }
+  ],
+  "total_usd_m": 7335949.005018515
+ },
+ "gold": {
+  "rows": [
+   {
+    "country": "United States",
+    "flag": "🇺🇸",
+    "tonnes": 8133,
+    "usd": 1162026106202.623
+   },
+   {
+    "country": "Germany",
+    "flag": "🇩🇪",
+    "tonnes": 3355,
+    "usd": 479355414522.292
+   },
+   {
+    "country": "Italy",
+    "flag": "🇮🇹",
+    "tonnes": 2452,
+    "usd": 350336654667.26074
+   },
+   {
+    "country": "France",
+    "flag": "🇫🇷",
+    "tonnes": 2437,
+    "usd": 348193485898.9048
+   },
+   {
+    "country": "China",
+    "flag": "🇨🇳",
+    "tonnes": 2313,
+    "usd": 330476624080.49524
+   },
+   {
+    "country": "Russia",
+    "flag": "🇷🇺",
+    "tonnes": 2299,
+    "usd": 328476333230.02954
+   },
+   {
+    "country": "Switzerland",
+    "flag": "🇨🇭",
+    "tonnes": 1040,
+    "usd": 148593034606.016
+   },
+   {
+    "country": "India",
+    "flag": "🇮🇳",
+    "tonnes": 880,
+    "usd": 125732567743.55199
+   },
+   {
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "tonnes": 846,
+    "usd": 120874718535.2784
+   },
+   {
+    "country": "Turkey",
+    "flag": "🇹🇷",
+    "tonnes": 635,
+    "usd": 90727477860.40399
+   },
+   {
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "tonnes": 612,
+    "usd": 87441285748.9248
+   },
+   {
+    "country": "Poland",
+    "flag": "🇵🇱",
+    "tonnes": 582,
+    "usd": 83154948212.21278
+   },
+   {
+    "country": "Taiwan",
+    "flag": "🇹🇼",
+    "tonnes": 424,
+    "usd": 60580237185.529594
+   },
+   {
+    "country": "Uzbekistan",
+    "flag": "🇺🇿",
+    "tonnes": 416,
+    "usd": 59437213842.4064
+   },
+   {
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "tonnes": 383,
+    "usd": 54722242552.02319
+   }
+  ],
+  "total_tonnes": 26807,
+  "total_usd": 3830128344887.952,
+  "world_official_tonnes_estimate": 36600,
+  "price_usd_oz": 4444.0,
+  "price_as_of": "2026-09-08 14:18 UTC",
+  "world_market_value_usd": 30899492912567.355,
+  "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
+ },
+ "debt_gdp": {
+  "rows": [
+   {
+    "area": "USA",
+    "gdp_usd_b": 32383.92,
+    "year": "2026",
+    "debt_pct_gdp": 125.8,
+    "debt_usd_b": 40738.971359999996
+   },
+   {
+    "area": "CHN",
+    "gdp_usd_b": 20851.593,
+    "year": "2026",
+    "debt_pct_gdp": 106.9,
+    "debt_usd_b": 22290.352917000004
+   },
+   {
+    "area": "DEU",
+    "gdp_usd_b": 5452.858,
+    "year": "2026",
+    "debt_pct_gdp": 64.6,
+    "debt_usd_b": 3522.5462679999996
+   },
+   {
+    "area": "JPN",
+    "gdp_usd_b": 4379.253,
+    "year": "2026",
+    "debt_pct_gdp": 204.4,
+    "debt_usd_b": 8951.193132
+   },
+   {
+    "area": "GBR",
+    "gdp_usd_b": 4264.794,
+    "year": "2026",
+    "debt_pct_gdp": 103.6,
+    "debt_usd_b": 4418.3265839999995
+   },
+   {
+    "area": "IND",
+    "gdp_usd_b": 4153.191,
+    "year": "2026",
+    "debt_pct_gdp": 83.4,
+    "debt_usd_b": 3463.7612940000004
+   },
+   {
+    "area": "FRA",
+    "gdp_usd_b": 3596.094,
+    "year": "2026",
+    "debt_pct_gdp": 118.4,
+    "debt_usd_b": 4257.775296
+   },
+   {
+    "area": "ITA",
+    "gdp_usd_b": 2738.164,
+    "year": "2026",
+    "debt_pct_gdp": 138.4,
+    "debt_usd_b": 3789.618976
+   },
+   {
+    "area": "RUS",
+    "gdp_usd_b": 2656.452,
+    "year": "2026",
+    "debt_pct_gdp": 19.1,
+    "debt_usd_b": 507.3823320000001
+   },
+   {
+    "area": "BRA",
+    "gdp_usd_b": 2635.912,
+    "year": "2026",
+    "debt_pct_gdp": 96.5,
+    "debt_usd_b": 2543.6550799999995
+   },
+   {
+    "area": "CAN",
+    "gdp_usd_b": 2507.34,
+    "year": "2026",
+    "debt_pct_gdp": 110.7,
+    "debt_usd_b": 2775.62538
+   },
+   {
+    "area": "AUS",
+    "gdp_usd_b": 2123.963,
+    "year": "2026",
+    "debt_pct_gdp": 50.6,
+    "debt_usd_b": 1074.7252780000001
+   },
+   {
+    "area": "MEX",
+    "gdp_usd_b": 2120.855,
+    "year": "2026",
+    "debt_pct_gdp": 62.7,
+    "debt_usd_b": 1329.776085
+   },
+   {
+    "area": "ESP",
+    "gdp_usd_b": 2091.222,
+    "year": "2026",
+    "debt_pct_gdp": 98.2,
+    "debt_usd_b": 2053.5800040000004
+   },
+   {
+    "area": "KOR",
+    "gdp_usd_b": 1931.008,
+    "year": "2026",
+    "debt_pct_gdp": 54.4,
+    "debt_usd_b": 1050.468352
+   },
+   {
+    "area": "TUR",
+    "gdp_usd_b": 1640.223,
+    "year": "2026",
+    "debt_pct_gdp": 25.5,
+    "debt_usd_b": 418.25686499999995
+   },
+   {
+    "area": "IDN",
+    "gdp_usd_b": 1539.872,
+    "year": "2026",
+    "debt_pct_gdp": 41.5,
+    "debt_usd_b": 639.04688
+   },
+   {
+    "area": "NLD",
+    "gdp_usd_b": 1449.704,
+    "year": "2026",
+    "debt_pct_gdp": 44.1,
+    "debt_usd_b": 639.319464
+   },
+   {
+    "area": "SAU",
+    "gdp_usd_b": 1388.676,
+    "year": "2026",
+    "debt_pct_gdp": 32.1,
+    "debt_usd_b": 445.76499600000005
+   },
+   {
+    "area": "CHE",
+    "gdp_usd_b": 1146.911,
+    "year": "2026",
+    "debt_pct_gdp": 38.5,
+    "debt_usd_b": 441.56073499999997
+   },
+   {
+    "area": "POL",
+    "gdp_usd_b": 1134.248,
+    "year": "2026",
+    "debt_pct_gdp": 65.7,
+    "debt_usd_b": 745.2009360000001
+   },
+   {
+    "area": "TWN",
+    "gdp_usd_b": 976.719,
+    "year": "2026",
+    "debt_pct_gdp": 27.6,
+    "debt_usd_b": 269.574444
+   },
+   {
+    "area": "IRL",
+    "gdp_usd_b": 779.381,
+    "year": "2026",
+    "debt_pct_gdp": 31.6,
+    "debt_usd_b": 246.28439600000002
+   },
+   {
+    "area": "BEL",
+    "gdp_usd_b": 776.73,
+    "year": "2026",
+    "debt_pct_gdp": 109.2,
+    "debt_usd_b": 848.18916
+   },
+   {
+    "area": "SWE",
+    "gdp_usd_b": 760.481,
+    "year": "2026",
+    "debt_pct_gdp": 36.7,
+    "debt_usd_b": 279.09652700000004
+   },
+   {
+    "area": "ISR",
+    "gdp_usd_b": 719.848,
+    "year": "2026",
+    "debt_pct_gdp": 69.8,
+    "debt_usd_b": 502.45390399999997
+   },
+   {
+    "area": "ARG",
+    "gdp_usd_b": 688.378,
+    "year": "2026",
+    "debt_pct_gdp": 70.4,
+    "debt_usd_b": 484.61811200000005
+   },
+   {
+    "area": "SGP",
+    "gdp_usd_b": 659.572,
+    "year": "2026",
+    "debt_pct_gdp": 171.9,
+    "debt_usd_b": 1133.804268
+   },
+   {
+    "area": "AUT",
+    "gdp_usd_b": 623.719,
+    "year": "2026",
+    "debt_pct_gdp": 82.1,
+    "debt_usd_b": 512.073299
+   },
+   {
+    "area": "ARE",
+    "gdp_usd_b": 621.546,
+    "year": "2026",
+    "debt_pct_gdp": 31.4,
+    "debt_usd_b": 195.16544399999998
+   }
+  ],
+  "n_countries_total": 195,
+  "world_gdp_usd_b": 126295.331,
+  "world_gdp_year": "2026",
+  "world_debt_pct_gdp": 95.07946968887934,
+  "world_debt_usd_b": 120080.93095661484
+ },
+ "bitcoin": {
+  "price_usd": 78207.0078125,
+  "market_cap_usd": 1570511583417.7246,
+  "btc_rank": 12,
+  "lineup": [
+   {
+    "label": "Broad money — U.S. + Euro area (M2 + M3)",
+    "usd": 43702441027229.695,
+    "note": "The two largest, most transparently published economies — a genuine floor under the true global figure, not the whole world's money supply."
+   },
+   {
+    "label": "Gold — all above-ground supply",
+    "usd": 30899492912567.355,
+    "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
+   },
+   {
+    "label": "Bitcoin — total market cap",
+    "usd": 1570511583417.7246,
+    "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
+   }
+  ]
+ }
+}
