@@ -167,6 +167,22 @@ def pct(v):
     return "—" if v is None else f"{v:+.2f}%"
 
 
+def abbrev_num(v):
+    """29895000000 -> '29.90B' — like money_cap but no $ prefix and no fixed
+    3-decimal T tier, for quantities (coin supply) rather than dollar amounts."""
+    if v is None:
+        return "—"
+    if v >= 1e12:
+        return f"{v / 1e12:,.2f}T"
+    if v >= 1e9:
+        return f"{v / 1e9:,.2f}B"
+    if v >= 1e6:
+        return f"{v / 1e6:,.2f}M"
+    if v >= 1e3:
+        return f"{v / 1e3:,.2f}K"
+    return f"{v:,.0f}"
+
+
 def _logo_slug(domain):
     """Must match slug() in tools/finance_logos.py."""
     return domain.split(".")[0].lower()
@@ -1544,6 +1560,191 @@ CRYPTO_CATEGORY_BLURB = {
 }
 CRYPTO_PERIODS = ("1H", "1D", "7D", "1M", "3M", "6M", "YTD", "1Y")
 
+# ── the treemap — a squarified treemap (Bruls/Huizing/van Wijk, 2000), laid
+# out once in Python at build time, not recomputed in the browser. Box AREA is
+# each coin's market cap; box COLOUR is its change for whichever period is
+# selected. Two levels: the three categories tile the whole canvas first
+# (sized by each category's total market cap, which is why Bitcoin &
+# Derivatives — really just BTC — dominates the left of the page), then each
+# category's own coins are squarified again inside its own rectangle. A fixed
+# design canvas (TREEMAP_W × TREEMAP_H) is used for the geometry and then
+# expressed as percentages, so the whole thing scales with the page via CSS
+# `aspect-ratio` — no JS resize handler needed. Font sizes use CSS container
+# query units (`cqw`, relative to .treemapwrap's width) computed from each
+# box's own design-time dimensions, so text scales exactly with its box at
+# any viewport width without ever being measured at runtime.
+
+TREEMAP_W, TREEMAP_H = 1000.0, 520.0
+TREEMAP_HEADER_H = 16.0
+TREEMAP_ASPECT = TREEMAP_W / TREEMAP_H
+
+
+def _treemap_layoutrow(sizes, x, y, dx, dy):
+    covered = sum(sizes)
+    width = covered / dy
+    rects, cy = [], y
+    for s in sizes:
+        h = s / width
+        rects.append((x, cy, width, h))
+        cy += h
+    return rects
+
+
+def _treemap_layoutcol(sizes, x, y, dx, dy):
+    covered = sum(sizes)
+    height = covered / dx
+    rects, cx = [], x
+    for s in sizes:
+        w = s / height
+        rects.append((cx, y, w, height))
+        cx += w
+    return rects
+
+
+def _treemap_layout(sizes, x, y, dx, dy):
+    return (_treemap_layoutrow(sizes, x, y, dx, dy) if dx >= dy
+            else _treemap_layoutcol(sizes, x, y, dx, dy))
+
+
+def _treemap_leftover(sizes, x, y, dx, dy):
+    covered = sum(sizes)
+    if dx >= dy:
+        width = covered / dy
+        return (x + width, y, dx - width, dy)
+    height = covered / dx
+    return (x, y + height, dx, dy - height)
+
+
+def _treemap_worst(sizes, x, y, dx, dy):
+    return max(max(w / h, h / w) for _, _, w, h in _treemap_layout(sizes, x, y, dx, dy))
+
+
+def _squarify(sizes, x, y, dx, dy):
+    """[(x, y, w, h), ...] tiling the given rect, one rect per (already
+    area-scaled, already descending-sorted) size in `sizes` — see
+    _treemap_areas. Descending order is what makes the greedy row-building
+    produce good (near-square) aspect ratios rather than thin slivers."""
+    sizes = [s for s in sizes if s > 1e-9]
+    if not sizes:
+        return []
+    if len(sizes) == 1 or dx <= 0 or dy <= 0:
+        return _treemap_layout(sizes, x, y, dx, dy)
+    i = 1
+    while (i < len(sizes)
+           and _treemap_worst(sizes[:i], x, y, dx, dy)
+               >= _treemap_worst(sizes[:i + 1], x, y, dx, dy)):
+        i += 1
+    current, remaining = sizes[:i], sizes[i:]
+    rects = _treemap_layout(current, x, y, dx, dy)
+    if remaining:
+        lx, ly, ldx, ldy = _treemap_leftover(current, x, y, dx, dy)
+        rects += _squarify(remaining, lx, ly, ldx, ldy)
+    return rects
+
+
+def _treemap_areas(values, dx, dy):
+    total = sum(values)
+    area = dx * dy
+    if total <= 0:
+        return [0.0] * len(values)
+    return [v / total * area for v in values]
+
+
+def _crypto_heat_color(v):
+    """Same red/green heat scale as CRYPTO_JS's own heatColor() — duplicated
+    on purpose (one runs at build time in Python, one in the browser after a
+    period toggle) and kept deliberately simple so the two can't drift apart."""
+    if v is None:
+        return "#1b2534"
+    if abs(v) < 0.05:
+        return "hsl(210,10%,45%)"
+    hue = 142 if v >= 0 else 4
+    mag = min(abs(v), 10.0) / 10.0
+    lightness = 62 - mag * 20
+    return "hsl(%d,68%%,%.0f%%)" % (hue, lightness)
+
+
+# A bold sans-serif glyph averages roughly 0.6x its font-size in width — used
+# below to size text by how many CHARACTERS have to fit across a box, not just
+# the box's raw width. A flat width-only multiplier (the first cut of this
+# function) sized "BTC" and "GRAM" identically and let 4-5 letter symbols
+# (HYPE, NEAR, GRAM) overflow their box — this is what fixed it.
+_CRYPTO_CHAR_W = 0.6
+
+
+def _crypto_fit_font(text, width_cqw, height_cap_cqw):
+    """Largest font-size (in cqw units) that fits `text` across width_cqw
+    without overflowing sideways, capped at height_cap_cqw so a short string
+    in a tall-but-narrow box doesn't blow past its own line's vertical share."""
+    return min(width_cqw / (max(len(text), 1) * _CRYPTO_CHAR_W), height_cap_cqw)
+
+
+def _crypto_tile(r, rect):
+    x, y, w, h = rect
+    left, top = x / TREEMAP_W * 100, y / TREEMAP_H * 100
+    width, height = w / TREEMAP_W * 100, h / TREEMAP_H * 100
+    # width% IS already width-in-cqw (both relative to the same container
+    # width); height% needs the canvas aspect ratio folded in to become
+    # comparable, since cqw is a WIDTH-relative unit even when sizing a
+    # box's height. See the module note above.
+    basis_h = height / TREEMAP_ASPECT
+    ch = r.get("chg_1d")
+    sym, px_s, pc_s = r["symbol"], crypto_px(r.get("price")), pct(ch)
+
+    lines = ""
+    sym_full = _crypto_fit_font(sym, width, basis_h * 0.5)
+    if sym_full >= 6.0:
+        px_f = _crypto_fit_font(px_s, width, basis_h * 0.22)
+        pc_f = _crypto_fit_font(pc_s, width, basis_h * 0.22)
+        lines = ('<span class="ctsym" style="font-size:clamp(7px,%.2fcqw,50px)">%s</span>'
+                  '<span class="ctpx" style="font-size:clamp(6px,%.2fcqw,16px)">%s</span>'
+                  '<span class="ctpc" style="font-size:clamp(6px,%.2fcqw,17px)">%s</span>'
+                  % (sym_full, esc(sym), px_f, px_s, pc_f, pc_s))
+    else:
+        sym_solo = _crypto_fit_font(sym, width, basis_h * 0.85)
+        if sym_solo >= 3.5:
+            lines = ('<span class="ctsym" style="font-size:clamp(7px,%.2fcqw,50px)">%s</span>'
+                      % (sym_solo, esc(sym)))
+    return ('<div class="crytile" style="left:%.3f%%;top:%.3f%%;width:%.3f%%;'
+            'height:%.3f%%;background:%s" %s title="%s (%s) · %s · %s">%s</div>'
+            % (left, top, width, height, _crypto_heat_color(ch), _crypto_chg_attrs(r),
+               esc(r["name"]), esc(sym), px_s, pc_s, lines))
+
+
+def _crypto_treemap(rows):
+    known = set(CRYPTO_CATEGORY_ORDER)
+    by_cat = {c: [] for c in CRYPTO_CATEGORY_ORDER}
+    for r in rows:
+        by_cat.get(r.get("category") if r.get("category") in known else "Others",
+                   by_cat["Others"]).append(r)
+
+    # Categories in size order so the biggest anchors the top-left, same
+    # reasoning as sorting each category's own coins below.
+    cats = [c for c in CRYPTO_CATEGORY_ORDER if by_cat[c]]
+    cats.sort(key=lambda c: sum(r["market_cap"] or 0 for r in by_cat[c]), reverse=True)
+    cat_totals = [sum(r["market_cap"] or 0 for r in by_cat[c]) for c in cats]
+    cat_rects = _squarify(_treemap_areas(cat_totals, TREEMAP_W, TREEMAP_H),
+                           0, 0, TREEMAP_W, TREEMAP_H)
+
+    parts = []
+    for cat, (cx, cy, cw, cdy) in zip(cats, cat_rects):
+        header_h = min(TREEMAP_HEADER_H, max(cdy * 0.12, 12))
+        parts.append(
+            '<div class="crycat-hdr" style="left:%.3f%%;top:%.3f%%;width:%.3f%%;'
+            'height:%.3f%%">%s</div>'
+            % (cx / TREEMAP_W * 100, cy / TREEMAP_H * 100, cw / TREEMAP_W * 100,
+               header_h / TREEMAP_H * 100, esc(cat)))
+        coins = sorted(by_cat[cat], key=lambda r: r["market_cap"] or 0, reverse=True)
+        inner_y, inner_h = cy + header_h, cdy - header_h
+        if inner_h <= 0 or not coins:
+            continue
+        values = _treemap_areas([r["market_cap"] or 0 for r in coins], cw, inner_h)
+        rects = _squarify(values, cx, inner_y, cw, inner_h)
+        parts += [_crypto_tile(r, rect) for r, rect in zip(coins, rects)]
+
+    return ('  <div class="treemapwrap"><div class="treemap">\n    '
+            + "\n    ".join(parts) + "\n  </div></div>")
+
 
 def _crypto_chg_attrs(r):
     fields = {"1h": "chg_1h", "1d": "chg_1d", "7d": "chg_7d", "1m": "chg_1m",
@@ -1575,6 +1776,8 @@ def crypto_row(r):
         </span></span></td>
         <td class="px">{crypto_px(r.get('price'))}</td>
         <td class="mc">{money_cap(r['market_cap']) if r.get('market_cap') is not None else '—'}</td>
+        <td class="cs">{abbrev_num(r.get('circulating_supply'))} {esc(r['symbol'])}</td>
+        <td class="mc">{money_cap(r['volume_24h']) if r.get('volume_24h') is not None else '—'}</td>
         <td class="ch chp {ch_cls}" {_crypto_chg_attrs(r)}>{pct(ch)}</td>
       </tr>"""
 
@@ -1589,6 +1792,8 @@ def _crypto_table(rows):
         <th class="as">Coin</th>
         <th class="px">Price</th>
         <th class="mc">Market cap</th>
+        <th class="cs">Circ. supply</th>
+        <th class="mc">24h volume</th>
         <th class="ch">Change</th>
       </tr>
     </thead>
@@ -1610,6 +1815,16 @@ CRYPTO_JS = """
   var tabs = document.getElementById('cryptoTabs');
   if(!tabs) return;
   var cells = document.querySelectorAll('table.crypto td.chp');
+  var tiles = document.querySelectorAll('.crytile');
+  // Mirrors _crypto_heat_color() in build_finance.py — see that function's
+  // own note on why the two copies exist and are kept deliberately simple.
+  function heatColor(v){
+    if(v === null || isNaN(v)) return '#1b2534';
+    if(Math.abs(v) < 0.05) return 'hsl(210,10%,45%)';
+    var hue = v >= 0 ? 142 : 4;
+    var mag = Math.min(Math.abs(v), 10) / 10;
+    return 'hsl(' + hue + ',68%,' + (62 - mag * 20).toFixed(0) + '%)';
+  }
   function paint(period){
     cells.forEach(function(td){
       var raw = td.getAttribute('data-chg-' + period);
@@ -1632,6 +1847,14 @@ CRYPTO_JS = """
         ? 'rgba(74,222,128,' + alpha.toFixed(2) + ')'
         : 'rgba(248,113,113,' + alpha.toFixed(2) + ')';
     });
+    tiles.forEach(function(tile){
+      var raw = tile.getAttribute('data-chg-' + period);
+      var v = raw === '' ? null : parseFloat(raw);
+      tile.style.background = heatColor(v);
+      var pc = tile.querySelector('.ctpc');
+      if(pc) pc.textContent = (v === null || isNaN(v)) ? '\\u2014'
+        : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+    });
   }
   tabs.querySelectorAll('.bbb').forEach(function(btn){
     btn.addEventListener('click', function(){
@@ -1652,6 +1875,23 @@ CRYPTO_CSS = """
 .chtabs{display:flex;flex-wrap:wrap;gap:5px;margin:20px 0 10px}
 .crynote{margin:0 0 8px;color:#6e7d92;font-size:12.5px;font-style:italic}
 table.crypto td.ch{transition:background .15s;border-radius:4px}
+table.crypto td.cs{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.treemapwrap{margin:20px 0 6px;container-type:inline-size}
+.treemap{position:relative;width:100%;aspect-ratio:1000/520;border-radius:10px;
+  overflow:hidden;background:#0a111c}
+.crycat-hdr{position:absolute;display:flex;align-items:center;padding:0 10px;
+  background:#05080d;color:#e8eef7;font-size:clamp(9px,1.3cqw,14px);font-weight:600;
+  letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:2;
+  box-sizing:border-box}
+.crytile{position:absolute;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:1px;border:1px solid rgba(5,8,13,.55);color:#fff;
+  text-align:center;overflow:hidden;text-shadow:0 1px 2px rgba(0,0,0,.35);
+  box-sizing:border-box;transition:filter .12s;font-family:ui-sans-serif,system-ui,sans-serif}
+.crytile:hover{filter:brightness(1.15);z-index:3}
+.ctsym,.ctpx,.ctpc{max-width:96%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctsym{font-weight:700;line-height:1.05}
+.ctpx{opacity:.85;line-height:1.15}
+.ctpc{font-weight:600;line-height:1.15}
 """
 
 
@@ -1684,12 +1924,14 @@ def build_crypto_heatmap(board):
 
     body = f"""  <h1 class="btitle">The Crypto Heat Map</h1>
   <p class="lede">The top {len(rows)} coins by market cap, grouped into three
-  kinds and colour-graded green-to-red by how much each has moved. Pick a
-  period below — every column updates at once, nothing reloads.</p>
+  kinds. Box size is market cap, colour is how much each has moved. Pick a
+  period below — the map and every table column update at once, nothing
+  reloads.</p>
   <p class="stamp">Updated {esc(board.get('generated', '—'))}
     <span class="dot">·</span><span class="hl">{len(rows)} coins</span>
     {f'<span class="dot">·</span>BTC dominance {dom:.1f}%' if dom is not None else ''}</p>
   <div class="chtabs" id="cryptoTabs">{period_btns}</div>
+{_crypto_treemap(rows)}
   <p class="crynote">{covered} of {total} coins have real 3M/6M/YTD figures so
   far — CoinGecko has no bulk endpoint for those periods, so they fill in a
   few coins at a time in the background (see the note below). Until a coin
@@ -1697,14 +1939,23 @@ def build_crypto_heatmap(board):
 {sections}
   <div class="panel">
     <h2>How this board is made, and what it is not</h2>
-    <p>Price, market cap, and the 1H/1D/7D/1M/1Y change are pulled in one call
-    from CoinGecko's public market data and are exact as of the "Updated"
-    timestamp above. <b>3M, 6M and YTD are different</b>: CoinGecko has no bulk
-    field for those periods at any price, so each one is computed from that
-    coin's own daily price history, fetched a handful of coins at a time on a
-    schedule — the same paced-crawl approach this site's Ledger uses for slow
-    background jobs elsewhere. A coin's 3M/6M/YTD is real once it appears,
-    never an approximation of a different window standing in for it.</p>
+    <p>Price, market cap, circulating supply, 24h volume, and the 1H/1D/7D/1M/1Y
+    change are pulled in one call from CoinGecko's public market data and are
+    exact as of the "Updated" timestamp above. <b>3M, 6M and YTD are
+    different</b>: CoinGecko has no bulk field for those periods at any price,
+    so each one is computed from that coin's own daily price history, fetched
+    a handful of coins at a time on a schedule — the same paced-crawl approach
+    this site's Ledger uses for slow background jobs elsewhere. A coin's
+    3M/6M/YTD is real once it appears, never an approximation of a different
+    window standing in for it.</p>
+    <p>The <b>map above</b> is a squarified treemap: every box's AREA is that
+    coin's market cap, its COLOUR is the change for whichever period is
+    selected, and the three black header bars are the same three categories as
+    the tables below — sized by each category's own total market cap, which is
+    why Bitcoin & Derivatives (really just Bitcoin itself, at this kind of
+    market cap) tends to dominate the page. A coin small enough that its box
+    can't hold readable text still gets a colour and a hover tooltip; nothing
+    is dropped from the map.</p>
     <p><b>Categories</b> are a deliberately short, curated list rather than an
     exhaustive taxonomy: Bitcoin & Derivatives is Bitcoin itself, coins forked
     from its codebase, and tokenized BTC; Infrastructure & Platform is base

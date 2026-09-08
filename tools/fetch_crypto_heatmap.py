@@ -245,6 +245,8 @@ def compute(skip_slow_crawl=False):
             "category": category_for(c["id"]),
             "rank": rank,
             "price": c.get("current_price"),
+            "circulating_supply": c.get("circulating_supply"),
+            "volume_24h": c.get("total_volume"),
             "market_cap": c.get("market_cap"),
             "chg_1h": c.get("price_change_percentage_1h_in_currency"),
             "chg_1d": c.get("price_change_percentage_24h_in_currency",
