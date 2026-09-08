@@ -696,12 +696,17 @@ def _chrome(active=""):
     means the header's FIRST row reliably reads "brand left, search right"
     with nothing else competing for that row's space.
 
-    "Ask" sits between brand and search on that same first row (moved out of
-    the nav menu 2026-09-08, Michael's call: "the ask link... up to the left
-    hand side of the search entries box") — header.hsm is `justify-content:
-    space-between`, so inserting it as its own flex child here, right before
-    `search` in DOM order, puts it immediately to search's left with no
-    layout changes needed beyond the one new element + its CSS (.headerask).
+    "Ask" sits directly beside search, not just "somewhere left of it" (moved
+    out of the nav menu 2026-09-08, Michael's call, then adjusted the SAME
+    day: his first cut — Ask as its own flex child of header.hsm alongside
+    brand/search/hgroup — put it dead center of the row, because
+    `justify-content:space-between` spaces however many top-level children
+    there are evenly; with 4 of them, Ask landed in its own gap instead of
+    hugging search. Fix: Ask and search are now wrapped in one shared flex
+    child (.hsm-searchgroup) with its own small internal gap, so
+    space-between only ever sees THREE children — brand, [Ask+search], hgroup
+    — and Ask sits snug against the search box inside that group, wherever
+    the group itself lands.
     """
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
@@ -714,7 +719,7 @@ def _chrome(active=""):
     return ('<header class="hsm">'
             '<a class="brand" href="index.html">%s'
             '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
-            '%s%s'
+            '<div class="hsm-searchgroup">%s%s</div>'
             '<div class="hgroup">'
             '<input type="checkbox" class="navcb" id="navcb"/>'
             '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
@@ -1556,6 +1561,12 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .headerask:hover{color:#e8eef7}
 .headerask.on{color:__ACCENT__}
 
+/* Ask + search share this one flex child of header.hsm so `justify-content:
+   space-between` only ever spaces THREE things (brand / this group / hgroup)
+   instead of four — with Ask as its own top-level child, space-between put
+   it in its own gap, dead center of the row, instead of next to search. */
+.hsm-searchgroup{display:flex;align-items:center;gap:14px}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -1600,13 +1611,19 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search box (order 2) drops to its own full-width row underneath,
-   the same "give up the single row" fallback the travel blog's own
-   absolutely-positioned search box makes at its 640px. */
+   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
+   to its own full-width row underneath, the same "give up the single row"
+   fallback the travel blog's own absolutely-positioned search box makes at
+   its 640px. Ask+search moved from two direct header.hsm children to one
+   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
+   instead of hugging search under plain space-between); the order/flex-basis
+   that used to live on .headersearch now lives on the wrapper instead, since
+   .headersearch is one level deeper now.*/
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .headersearch{order:2;flex:1 1 100%}
+  .hsm-searchgroup{order:2;flex:1 1 100%}
+  .headersearch{flex:1 1 auto}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
@@ -5190,7 +5207,11 @@ def _mw_flag_name(iso3):
 MW_SECTIONS = {
     "exchange-rates": {
         "title": "Exchange Rates", "file": "money-worldwide-exchange-rates.html",
-        "icon": "💱",
+        # 💱 (2026-09-08 -> 💹): swapped out — Michael's call, "kind of dark to
+        # see what's really in there." 💱 renders mostly navy/teal on most
+        # platforms, which reads as muddy against this site's own dark theme;
+        # 💹 has a bright white card face, so it actually reads at a glance.
+        "icon": "💹",
         "blurb": "What a US dollar buys in other currencies today — European "
                  "Central Bank reference rates."},
     "money-supply": {
@@ -5253,6 +5274,12 @@ table.mw-sort td.mw-nm{white-space:normal}
   filter:drop-shadow(0 0 6px __ACCENT__) drop-shadow(0 0 16px __ACCENT__)}
 .mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
   filter:drop-shadow(0 0 6px __ACCENT__) drop-shadow(0 0 16px __ACCENT__)}
+/* The breadcrumb icon sits inside 12px kicker text — a much smaller stage
+   than the card/H1 icons, so it gets a lighter glow at a gentler size bump
+   rather than the same blur radius, which would read as a fuzzy blob at
+   this scale instead of a glow. */
+.mw-kicker-icon{display:inline-block;font-size:1.5em;line-height:1;vertical-align:-0.2em;
+  filter:drop-shadow(0 0 3px __ACCENT__) drop-shadow(0 0 8px __ACCENT__)}
 """
 
 # Generalised version of CEBE_JS's click-to-sort — that one only ever drove a
@@ -5394,7 +5421,16 @@ def _mw_money_supply_table(ms):
       </tr>
     </tfoot>
   </table>
-  </div>"""
+  </div>
+  <p class="mwbarnote">Euro area monetary base (M0) reads "—" on purpose, not by oversight.
+  The Eurosystem does publish this concept — its own data dictionary calls it "Base money,"
+  banknotes in circulation plus bank reserves at the ECB, the same idea as the Fed's monetary
+  base — but it lives in a completely different ECB dataset (Internal Liquidity Management,
+  the Eurosystem's own weekly financial statement) from the one used for M1/M2/M3 here
+  (Balance Sheet Items). Unlike the Fed's single well-known "BOGMBASE" series available
+  straight from FRED, there is no one clean, current, euro-area-wide aggregate in that other
+  dataset reachable the same keyless way this board pulls everything else — so this cell
+  stays blank rather than being filled with a guess.</p>"""
 
 
 def _mw_reserves_fx_table(reserves_fx):
@@ -5590,8 +5626,11 @@ def _mw_methods_panel(board):
     economies, not the world's major currencies, and no other keyless source publishes
     current-month M0/M1/M2-class levels for every country the way these two do for
     themselves. The US does not publish a distinct M3, and the Euro area does not publish a
-    distinct M0 or a standalone M2 headline the way the US does — those cells read "—" rather
-    than a guess.</p>
+    standalone M2 headline the way the US does. The Euro area's monetary base ("Base money" in
+    the ECB's own terminology) genuinely exists but lives in a different ECB dataset than the
+    one used for M1/M2/M3 here, with no single current euro-area-wide figure reachable the same
+    keyless way this board pulls everything else (see the Money Supply page's own note) — so
+    that cell, and the M2 one, read "—" rather than a guess.</p>
     <p><b>Reserves (excl. gold)</b> are curated to the {len(board.get('reserves_fx', {}).get('rows', []))}
     largest holders that a real, live, keyless mirror of IMF's own International Financial
     Statistics reserve series actually covers — several economies that would belong on this
@@ -5762,7 +5801,8 @@ def build_money_worldwide_section(board, key):
         table = _mw_debt_gdp_table(debt_gdp)
 
     desc = f"{meta['title']} — {meta['blurb']} Part of the Money Worldwide board."
-    kicker = '  <p class="trskicker"><a href="money-worldwide.html">💰 Money Worldwide</a></p>'
+    kicker = ('  <p class="trskicker"><a href="money-worldwide.html">'
+              '<span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>')
     body = f"""{kicker}
   <h1 class="btitle"><span class="mw-page-icon">{meta['icon']}</span> {esc(meta['title'])}</h1>
 {intro}

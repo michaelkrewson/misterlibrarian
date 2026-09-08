@@ -144,6 +144,12 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .headerask:hover{color:#e8eef7}
 .headerask.on{color:#f7931a}
 
+/* Ask + search share this one flex child of header.hsm so `justify-content:
+   space-between` only ever spaces THREE things (brand / this group / hgroup)
+   instead of four — with Ask as its own top-level child, space-between put
+   it in its own gap, dead center of the row, instead of next to search. */
+.hsm-searchgroup{display:flex;align-items:center;gap:14px}
+
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -188,13 +194,19 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search box (order 2) drops to its own full-width row underneath,
-   the same "give up the single row" fallback the travel blog's own
-   absolutely-positioned search box makes at its 640px. */
+   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
+   to its own full-width row underneath, the same "give up the single row"
+   fallback the travel blog's own absolutely-positioned search box makes at
+   its 640px. Ask+search moved from two direct header.hsm children to one
+   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
+   instead of hugging search under plain space-between); the order/flex-basis
+   that used to live on .headersearch now lives on the wrapper instead, since
+   .headersearch is one level deeper now.*/
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .headersearch{order:2;flex:1 1 100%}
+  .hsm-searchgroup{order:2;flex:1 1 100%}
+  .headersearch{flex:1 1 auto}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
@@ -434,6 +446,12 @@ table.mw-sort td.mw-nm{white-space:normal}
   filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
 .mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
   filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
+/* The breadcrumb icon sits inside 12px kicker text — a much smaller stage
+   than the card/H1 icons, so it gets a lighter glow at a gentler size bump
+   rather than the same blur radius, which would read as a fuzzy blob at
+   this scale instead of a glow. */
+.mw-kicker-icon{display:inline-block;font-size:1.5em;line-height:1;vertical-align:-0.2em;
+  filter:drop-shadow(0 0 3px #f7931a) drop-shadow(0 0 8px #f7931a)}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -444,7 +462,7 @@ table.mw-sort td.mw-nm{white-space:normal}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="untangling-bis-imf-world-bank.html">See also: Untangling
     the BIS, the IMF, and the World Bank →</a></p>
   <h1 class="btitle">Money Worldwide</h1>
@@ -453,7 +471,7 @@ table.mw-sort td.mw-nm{white-space:normal}
   world's economy and its government debt actually are. Bitcoin's own market cap today is <span class="mwlede-hl">$1,570,511,583,418</span> — currently #12 on <a href="board.html">the Asset Board</a>.</p>
   <p class="stamp">Updated 2026-09-08 19:58 UTC</p>
   <div class="trsboxes">
-    <a class="trsbox" href="money-worldwide-exchange-rates.html"><div class="tb-top"><span class="tb-i">💱</span><span class="tb-t">Exchange Rates →</span></div><div class="tb-v">29 currencies</div><div class="tb-s">vs. US dollar · 2026-09-08</div><p class="tb-d">What a US dollar buys in other currencies today — European Central Bank reference rates.</p></a>
+    <a class="trsbox" href="money-worldwide-exchange-rates.html"><div class="tb-top"><span class="tb-i">💹</span><span class="tb-t">Exchange Rates →</span></div><div class="tb-v">29 currencies</div><div class="tb-s">vs. US dollar · 2026-09-08</div><p class="tb-d">What a US dollar buys in other currencies today — European Central Bank reference rates.</p></a>
     <a class="trsbox" href="money-worldwide-money-supply.html"><div class="tb-top"><span class="tb-i">🏦</span><span class="tb-t">Money Supply →</span></div><div class="tb-v">$43,702,441,027,230</div><div class="tb-s">2 economies · combined broad money</div><p class="tb-d">How much money actually exists, by aggregate — narrowest to broadest — for the two most transparently published economies.</p></a>
     <a class="trsbox" href="money-worldwide-reserves.html"><div class="tb-top"><span class="tb-i">💵</span><span class="tb-t">Reserves (excl. gold) →</span></div><div class="tb-v">$7,335,949,005,019</div><div class="tb-s">9 economies</div><p class="tb-d">Foreign-exchange + SDR + IMF reserve-position holdings, by economy — gold is shown separately, on its own page.</p></a>
     <a class="trsbox" href="money-worldwide-gold.html"><div class="tb-top"><span class="tb-i">🪙</span><span class="tb-t">Gold Reserves →</span></div><div class="tb-v">$3,830,128,344,888</div><div class="tb-s">26,807 tons across 15 countries</div><p class="tb-d">Official-sector gold reserves by country, priced at today&#x27;s live gold quote.</p></a>
@@ -509,8 +527,11 @@ table.mw-sort td.mw-nm{white-space:normal}
     economies, not the world's major currencies, and no other keyless source publishes
     current-month M0/M1/M2-class levels for every country the way these two do for
     themselves. The US does not publish a distinct M3, and the Euro area does not publish a
-    distinct M0 or a standalone M2 headline the way the US does — those cells read "—" rather
-    than a guess.</p>
+    standalone M2 headline the way the US does. The Euro area's monetary base ("Base money" in
+    the ECB's own terminology) genuinely exists but lives in a different ECB dataset than the
+    one used for M1/M2/M3 here, with no single current euro-area-wide figure reachable the same
+    keyless way this board pulls everything else (see the Money Supply page's own note) — so
+    that cell, and the M2 one, read "—" rather than a guess.</p>
     <p><b>Reserves (excl. gold)</b> are curated to the 9
     largest holders that a real, live, keyless mirror of IMF's own International Financial
     Statistics reserve series actually covers — several economies that would belong on this
