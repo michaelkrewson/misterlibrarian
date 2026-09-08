@@ -5333,19 +5333,45 @@ def _mw_currency_mark(code, currency_flags):
     return f'<span class="mk mk-e" aria-hidden="true">{esc(flag)}</span>'
 
 
-def _mw_fx_table(fx, currency_flags):
+def _mw_fx_table(fx, currency_flags, btc_price_usd=None):
+    """`btc_price_usd` comes from the same board snapshot's `bitcoin.price_usd` —
+    the same live figure the scarcity-lineup chart on the hub page already uses,
+    so the two BTC columns here are never a second, independently-fetched price.
+    Both new columns derive from `rate` (units of this currency per $1) and
+    `btc_price_usd` ($ per BTC): a currency unit's sat value is
+    `1e8 / (rate * btc_price_usd)` (how many of the $1-buys-`rate`-units chain's
+    satoshis one unit is worth) and a whole bitcoin's price in that currency is
+    `rate * btc_price_usd`. Both are None-safe — a missing/zero price (the
+    snapshot's Bitcoin lineup failed to fetch that run) renders "—" and drops
+    the `data-*` sort attribute entirely, so MW_JS's `isNaN` fallback sorts
+    those rows last rather than crashing on a bad parseFloat."""
     rates = fx["rates"]
     rows = []
     for code in sorted(rates, key=lambda c: rates[c]):
         rate = rates[code]
         per_usd = (1.0 / rate) if rate else 0.0
-        rows.append(f"""      <tr data-rate="{rate}" data-perusd="{per_usd}">
+        if btc_price_usd and rate:
+            sats_per_unit = 1e8 / (rate * btc_price_usd)
+            per_btc = rate * btc_price_usd
+            btc_ds = f' data-sats="{sats_per_unit}" data-perbtc="{per_btc}"'
+            sats_cell = f"{sats_per_unit:,.4f}"
+            perbtc_cell = f"{per_btc:,.2f}"
+        else:
+            btc_ds = ""
+            sats_cell = perbtc_cell = "—"
+        rows.append(f"""      <tr data-rate="{rate}" data-perusd="{per_usd}"{btc_ds}>
         <td class="mw-nm"><span class="asw">{_mw_currency_mark(code, currency_flags)}
           <span class="nm"><span class="n1">{esc(code)}</span></span></span></td>
         <td>{rate:,.4f}</td>
         <td>{per_usd:,.4f}</td>
+        <td>{sats_cell}</td>
+        <td>{perbtc_cell}</td>
       </tr>""")
     body = "\n".join(rows)
+    btc_note = (f' Bitcoin columns priced at ${btc_price_usd:,.0f}/BTC, the same live '
+                'snapshot as the rates above.' if btc_price_usd else
+                ' Bitcoin columns read "—" this build — the snapshot\'s bitcoin price '
+                "wasn't available when this page was generated.")
     return f"""  <div class="tw">
   <table class="board mw-sort">
     <thead>
@@ -5353,6 +5379,8 @@ def _mw_fx_table(fx, currency_flags):
         <th>Currency</th>
         <th data-sort="rate" title="How many units of this currency one US dollar buys, today">Per $1</th>
         <th data-sort="perusd" title="How many US dollars one unit of this currency buys, today">$ per unit</th>
+        <th data-sort="sats" title="How many satoshis (1/100,000,000 of a bitcoin) one unit of this currency buys, at today's bitcoin price">Sats per unit</th>
+        <th data-sort="perbtc" title="How many units of this currency one whole bitcoin costs, today">Per ₿1</th>
       </tr>
     </thead>
     <tbody>
@@ -5362,7 +5390,7 @@ def _mw_fx_table(fx, currency_flags):
   </div>
   <p class="mwbarnote">No totals row here on purpose — summing exchange rates
   across currencies has no meaningful unit; unlike every other table on this
-  page, this one has nothing sensible to add up.</p>"""
+  page, this one has nothing sensible to add up.{btc_note}</p>"""
 
 
 def _mw_money_supply_table(ms):
@@ -5818,8 +5846,10 @@ def build_money_worldwide_section(board, key):
     if key == "exchange-rates":
         intro = (f'  <p class="mwsub">{len(fx["rates"])} currencies against the US '
                   f'dollar, {esc(fx.get("date") or "today")} — European Central Bank '
-                  'reference rates. Click any column to sort.</p>')
-        table = _mw_fx_table(fx, _mw_load_currency_flags())
+                  'reference rates, plus what each currency is worth in bitcoin, both '
+                  'ways. Click any column to sort.</p>')
+        btc_price = (board.get("bitcoin") or {}).get("price_usd")
+        table = _mw_fx_table(fx, _mw_load_currency_flags(), btc_price)
     elif key == "money-supply":
         ms_resolved, ms_total = _mw_ms_counts(ms or {})
         intro = (f'  <p class="mwsub">How much money actually exists, by aggregate — '

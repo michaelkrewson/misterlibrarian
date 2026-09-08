@@ -465,7 +465,7 @@ table.mw-sort td.mw-nm{white-space:normal}
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">💹</span> Exchange Rates</h1>
-  <p class="mwsub">29 currencies against the US dollar, 2026-09-08 — European Central Bank reference rates. Click any column to sort.</p>
+  <p class="mwsub">29 currencies against the US dollar, 2026-09-08 — European Central Bank reference rates, plus what each currency is worth in bitcoin, both ways. Click any column to sort.</p>
   <p class="stamp">Updated 2026-09-08 22:02 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
@@ -475,189 +475,249 @@ table.mw-sort td.mw-nm{white-space:normal}
         <th>Currency</th>
         <th data-sort="rate" title="How many units of this currency one US dollar buys, today">Per $1</th>
         <th data-sort="perusd" title="How many US dollars one unit of this currency buys, today">$ per unit</th>
+        <th data-sort="sats" title="How many satoshis (1/100,000,000 of a bitcoin) one unit of this currency buys, at today's bitcoin price">Sats per unit</th>
+        <th data-sort="perbtc" title="How many units of this currency one whole bitcoin costs, today">Per ₿1</th>
       </tr>
     </thead>
     <tbody>
-      <tr data-rate="0.73825" data-perusd="1.3545546901456147">
+      <tr data-rate="0.73825" data-perusd="1.3545546901456147" data-sats="1724.8343025647905" data-perbtc="57976.58351953125">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇬🇧</span>
           <span class="nm"><span class="n1">GBP</span></span></span></td>
         <td>0.7382</td>
         <td>1.3546</td>
+        <td>1,724.8343</td>
+        <td>57,976.58</td>
       </tr>
-      <tr data-rate="0.81152" data-perusd="1.2322555205047319">
+      <tr data-rate="0.81152" data-perusd="1.2322555205047319" data-sats="1569.10356352087" data-perbtc="63730.65636">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
           <span class="nm"><span class="n1">CHF</span></span></span></td>
         <td>0.8115</td>
         <td>1.2323</td>
+        <td>1,569.1036</td>
+        <td>63,730.66</td>
       </tr>
-      <tr data-rate="0.86103" data-perusd="1.1613997189412681">
+      <tr data-rate="0.86103" data-perusd="1.1613997189412681" data-sats="1478.8786962921808" data-perbtc="67618.79811421875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇺</span>
           <span class="nm"><span class="n1">EUR</span></span></span></td>
         <td>0.8610</td>
         <td>1.1614</td>
+        <td>1,478.8787</td>
+        <td>67,618.80</td>
       </tr>
-      <tr data-rate="1.2658" data-perusd="0.7900142202559646">
+      <tr data-rate="1.2658" data-perusd="0.7900142202559646" data-sats="1005.9716573459128" data-perbtc="99406.379165625">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇬</span>
           <span class="nm"><span class="n1">SGD</span></span></span></td>
         <td>1.2658</td>
         <td>0.7900</td>
+        <td>1,005.9717</td>
+        <td>99,406.38</td>
       </tr>
-      <tr data-rate="1.3805" data-perusd="0.7243752263672583">
+      <tr data-rate="1.3805" data-perusd="0.7243752263672583" data-sats="922.3896587239815" data-perbtc="108414.05153906251">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇦</span>
           <span class="nm"><span class="n1">CAD</span></span></span></td>
         <td>1.3805</td>
         <td>0.7244</td>
+        <td>922.3897</td>
+        <td>108,414.05</td>
       </tr>
-      <tr data-rate="1.3861" data-perusd="0.7214486689272058">
+      <tr data-rate="1.3861" data-perusd="0.7214486689272058" data-sats="918.6631006914771" data-perbtc="108853.83327656251">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
           <span class="nm"><span class="n1">AUD</span></span></span></td>
         <td>1.3861</td>
         <td>0.7214</td>
+        <td>918.6631</td>
+        <td>108,853.83</td>
       </tr>
-      <tr data-rate="1.7115" data-perusd="0.5842827928717499">
+      <tr data-rate="1.7115" data-perusd="0.5842827928717499" data-sats="744.0017083660277" data-perbtc="134408.2935234375">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇿</span>
           <span class="nm"><span class="n1">NZD</span></span></span></td>
         <td>1.7115</td>
         <td>0.5843</td>
+        <td>744.0017</td>
+        <td>134,408.29</td>
       </tr>
-      <tr data-rate="3.0118" data-perusd="0.3320273590543861">
+      <tr data-rate="3.0118" data-perusd="0.3320273590543861" data-sats="422.7900006203787" data-perbtc="236524.042321875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇱</span>
           <span class="nm"><span class="n1">ILS</span></span></span></td>
         <td>3.0118</td>
         <td>0.3320</td>
+        <td>422.7900</td>
+        <td>236,524.04</td>
       </tr>
-      <tr data-rate="3.7178" data-perusd="0.268976276292431">
+      <tr data-rate="3.7178" data-perusd="0.268976276292431" data-sats="342.5033417258746" data-perbtc="291967.954228125">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
           <span class="nm"><span class="n1">PLN</span></span></span></td>
         <td>3.7178</td>
         <td>0.2690</td>
+        <td>342.5033</td>
+        <td>291,967.95</td>
       </tr>
-      <tr data-rate="4.0615" data-perusd="0.2462144527883787">
+      <tr data-rate="4.0615" data-perusd="0.2462144527883787" data-sats="313.5193706434708" data-perbtc="318959.55836718745">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇾</span>
           <span class="nm"><span class="n1">MYR</span></span></span></td>
         <td>4.0615</td>
         <td>0.2462</td>
+        <td>313.5194</td>
+        <td>318,959.56</td>
       </tr>
-      <tr data-rate="4.5204" data-perusd="0.22121936111848506">
+      <tr data-rate="4.5204" data-perusd="0.22121936111848506" data-sats="281.6916476127016" data-perbtc="354998.10110625">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇴</span>
           <span class="nm"><span class="n1">RON</span></span></span></td>
         <td>4.5204</td>
         <td>0.2212</td>
+        <td>281.6916</td>
+        <td>354,998.10</td>
       </tr>
-      <tr data-rate="5.1111" data-perusd="0.19565259924478096">
+      <tr data-rate="5.1111" data-perusd="0.19565259924478096" data-sats="249.13598322640064" data-perbtc="401387.22116718756">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇷</span>
           <span class="nm"><span class="n1">BRL</span></span></span></td>
         <td>5.1111</td>
         <td>0.1957</td>
+        <td>249.1360</td>
+        <td>401,387.22</td>
       </tr>
-      <tr data-rate="6.436" data-perusd="0.15537600994406464">
+      <tr data-rate="6.436" data-perusd="0.15537600994406464" data-sats="197.84942881734872" data-perbtc="505434.8683125">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇰</span>
           <span class="nm"><span class="n1">DKK</span></span></span></td>
         <td>6.4360</td>
         <td>0.1554</td>
+        <td>197.8494</td>
+        <td>505,434.87</td>
       </tr>
-      <tr data-rate="6.7105" data-perusd="0.14902019223604798">
+      <tr data-rate="6.7105" data-perusd="0.14902019223604798" data-sats="189.75619162036458" data-perbtc="526992.0266953125">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
           <span class="nm"><span class="n1">CNY</span></span></span></td>
         <td>6.7105</td>
         <td>0.1490</td>
+        <td>189.7562</td>
+        <td>526,992.03</td>
       </tr>
-      <tr data-rate="7.8412" data-perusd="0.1275315002805693">
+      <tr data-rate="7.8412" data-perusd="0.1275315002805693" data-sats="162.39337395659547" data-perbtc="615788.67144375">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇭🇰</span>
           <span class="nm"><span class="n1">HKD</span></span></span></td>
         <td>7.8412</td>
         <td>0.1275</td>
+        <td>162.3934</td>
+        <td>615,788.67</td>
       </tr>
-      <tr data-rate="9.2518" data-perusd="0.10808707494757777">
+      <tr data-rate="9.2518" data-perusd="0.10808707494757777" data-sats="137.63364143933683" data-perbtc="726566.5498218749">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇴</span>
           <span class="nm"><span class="n1">NOK</span></span></span></td>
         <td>9.2518</td>
         <td>0.1081</td>
+        <td>137.6336</td>
+        <td>726,566.55</td>
       </tr>
-      <tr data-rate="9.6022" data-perusd="0.10414280060819396">
+      <tr data-rate="9.6022" data-perusd="0.10414280060819396" data-sats="132.6111645110971" data-perbtc="754084.321396875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇪</span>
           <span class="nm"><span class="n1">SEK</span></span></span></td>
         <td>9.6022</td>
         <td>0.1041</td>
+        <td>132.6112</td>
+        <td>754,084.32</td>
       </tr>
-      <tr data-rate="16.024" data-perusd="0.062406390414378426">
+      <tr data-rate="16.024" data-perusd="0.062406390414378426" data-sats="79.46573414056768" data-perbtc="1258404.028875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇿🇦</span>
           <span class="nm"><span class="n1">ZAR</span></span></span></td>
         <td>16.0240</td>
         <td>0.0624</td>
+        <td>79.4657</td>
+        <td>1,258,404.03</td>
       </tr>
-      <tr data-rate="16.951" data-perusd="0.0589935697009026">
+      <tr data-rate="16.951" data-perusd="0.0589935697009026" data-sats="75.11998842950011" data-perbtc="1331203.612921875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇽</span>
           <span class="nm"><span class="n1">MXN</span></span></span></td>
         <td>16.9510</td>
         <td>0.0590</td>
+        <td>75.1200</td>
+        <td>1,331,203.61</td>
       </tr>
-      <tr data-rate="20.825" data-perusd="0.04801920768307323">
+      <tr data-rate="20.825" data-perusd="0.04801920768307323" data-sats="61.14568662033405" data-perbtc="1635438.3363281249">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇿</span>
           <span class="nm"><span class="n1">CZK</span></span></span></td>
         <td>20.8250</td>
         <td>0.0480</td>
+        <td>61.1457</td>
+        <td>1,635,438.34</td>
       </tr>
-      <tr data-rate="32.915" data-perusd="0.03038128512836093">
+      <tr data-rate="32.915" data-perusd="0.03038128512836093" data-sats="38.68628053679042" data-perbtc="2584895.6946093747">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇭</span>
           <span class="nm"><span class="n1">THB</span></span></span></td>
         <td>32.9150</td>
         <td>0.0304</td>
+        <td>38.6863</td>
+        <td>2,584,895.69</td>
       </tr>
-      <tr data-rate="48.46" data-perusd="0.020635575732562937">
+      <tr data-rate="48.46" data-perusd="0.020635575732562937" data-sats="26.276494508222378" data-perbtc="3805682.6784375003">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
           <span class="nm"><span class="n1">TRY</span></span></span></td>
         <td>48.4600</td>
         <td>0.0206</td>
+        <td>26.2765</td>
+        <td>3,805,682.68</td>
       </tr>
-      <tr data-rate="62.508" data-perusd="0.01599795226211045">
+      <tr data-rate="62.508" data-perusd="0.01599795226211045" data-sats="20.371135276579903" data-perbtc="4908906.5799375">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇭</span>
           <span class="nm"><span class="n1">PHP</span></span></span></td>
         <td>62.5080</td>
         <td>0.0160</td>
+        <td>20.3711</td>
+        <td>4,908,906.58</td>
       </tr>
-      <tr data-rate="94.83" data-perusd="0.010545186122535063">
+      <tr data-rate="94.83" data-perusd="0.010545186122535063" data-sats="13.42780685298383" data-perbtc="7447232.5298437495">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
           <span class="nm"><span class="n1">INR</span></span></span></td>
         <td>94.8300</td>
         <td>0.0105</td>
+        <td>13.4278</td>
+        <td>7,447,232.53</td>
       </tr>
-      <tr data-rate="120.89" data-perusd="0.008271982794275788">
+      <tr data-rate="120.89" data-perusd="0.008271982794275788" data-sats="10.533203109177405" data-perbtc="9493788.25828125">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇸</span>
           <span class="nm"><span class="n1">ISK</span></span></span></td>
         <td>120.8900</td>
         <td>0.0083</td>
+        <td>10.5332</td>
+        <td>9,493,788.26</td>
       </tr>
-      <tr data-rate="154.3" data-perusd="0.006480881399870382">
+      <tr data-rate="154.3" data-perusd="0.006480881399870382" data-sats="8.252488165058045" data-perbtc="12117557.5171875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
           <span class="nm"><span class="n1">JPY</span></span></span></td>
         <td>154.3000</td>
         <td>0.0065</td>
+        <td>8.2525</td>
+        <td>12,117,557.52</td>
       </tr>
-      <tr data-rate="313.37" data-perusd="0.0031911159332418545">
+      <tr data-rate="313.37" data-perusd="0.0031911159332418545" data-sats="4.063435950692333" data-perbtc="24609714.83578125">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇭🇺</span>
           <span class="nm"><span class="n1">HUF</span></span></span></td>
         <td>313.3700</td>
         <td>0.0032</td>
+        <td>4.0634</td>
+        <td>24,609,714.84</td>
       </tr>
-      <tr data-rate="1341.67" data-perusd="0.0007453397631310232">
+      <tr data-rate="1341.67" data-perusd="0.0007453397631310232" data-sats="0.94908503869689" data-perbtc="105364636.38421875">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
           <span class="nm"><span class="n1">KRW</span></span></span></td>
         <td>1,341.6700</td>
         <td>0.0007</td>
+        <td>0.9491</td>
+        <td>105,364,636.38</td>
       </tr>
-      <tr data-rate="17597" data-perusd="5.6827868386656816e-05">
+      <tr data-rate="17597" data-perusd="5.6827868386656816e-05" data-sats="0.0723622733345716" data-perbtc="1381935577.640625">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇩</span>
           <span class="nm"><span class="n1">IDR</span></span></span></td>
         <td>17,597.0000</td>
         <td>0.0001</td>
+        <td>0.0724</td>
+        <td>1,381,935,577.64</td>
       </tr>
     </tbody>
   </table>
   </div>
   <p class="mwbarnote">No totals row here on purpose — summing exchange rates
   across currencies has no meaningful unit; unlike every other table on this
-  page, this one has nothing sensible to add up.</p>
+  page, this one has nothing sensible to add up. Bitcoin columns priced at $78,532/BTC, the same live snapshot as the rates above.</p>
 <div class="respond"><p><strong>Know a holder we're missing, or think a figure here is wrong?</strong> This board only gets closer to exhaustive with help — include a source if you have one, and it gets checked into the next update. <a href="ask.html?re=Money%20Worldwide%20%E2%80%94%20Exchange%20Rates">Tell Mr. Librarian →</a></p></div>
   <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
 
