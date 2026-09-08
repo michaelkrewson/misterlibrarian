@@ -134,6 +134,61 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#f7931a}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #f7931a;outline-offset:1px}
+
+/* Groups the search box with the nav toggle so the two move together as one
+   unit on the right — .hgroup is what lets header.hsm's own space-between
+   still cleanly read as "brand left, everything else right" with a THIRD
+   element (search) in the mix, rather than search floating alone in the
+   middle. Also the positioning context the mobile dropdown below anchors
+   against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#f7931a;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — the toggle (order 1) stays pinned next
+   to the brand and the search box (order 2) drops to its own full-width
+   row underneath, the same "give up the single row" fallback the travel
+   blog's own absolutely-positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{width:100%;flex-wrap:wrap}
+  label.navtoggle{order:1;margin-left:auto}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
 .btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
 .board-card{border-color:#22384a}
 .board-card .ec-d{color:#f7931a}
@@ -205,6 +260,7 @@ a{color:#f7931a}
    into columns instead of stacked full-width — the shift the front page
    needed once it could no longer show every entry AND every standing page
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
 .tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
@@ -282,55 +338,62 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a></nav></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hgroup"><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a></nav></div></header>
 <div class="fronthero"><figure><img src="img/us-bullion-depository.jpg" alt="The United States Bullion Depository at Fort Knox, Kentucky — a squat granite vault behind a chain-link perimeter fence, guard towers at its corners, floodlit windows barred" width="1200" height="444" loading="eager"/><figcaption>The United States Bullion Depository, Fort Knox — half the gold on the board below is kept behind that granite. Photo: Cliff, via <a href="https://commons.wikimedia.org/wiki/File:U.S._Bullion_Depository-adjust2.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption></figure></div>  <p class="tag ftag">What the world&#x27;s money is actually in</p>
   <section class="writing">
     <div class="viewbar" id="viewbar">View: <button class="viewbtn on" data-view="cards" type="button">🗂 Cards</button><button class="viewbtn" data-view="list" type="button">📋 List</button></div>
+    <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
-    <a class="tile board-card" href="crypto.html">
+    <a class="tile board-card" href="crypto.html" data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 58% of it.">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">The Crypto Heat Map</span>
       <span class="ec-s">The top 100 coins by market cap, grouped into Bitcoin &amp; Derivatives, Infrastructure &amp; Platform, and Others, colour-graded by how much each has moved — Bitcoin currently holds 58% of it.</span>
     </a>
-    <a class="tile board-card" href="board.html">
+    <a class="tile board-card" href="board.html" data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #11.">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">The Asset Board</span>
       <span class="ec-s">Gold, silver, the biggest public companies and Bitcoin, ranked by what the market says they are worth — Bitcoin currently sits at #11.</span>
     </a>
-    <a class="tile board-card" href="bitcoin.html">
+    <a class="tile board-card" href="bitcoin.html" data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.">
       <span class="ec-d">STANDING PAGE · LIVE</span>
       <span class="ec-t">The Bitcoin Board</span>
       <span class="ec-s">Block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.</span>
     </a>
-    <a class="tile board-card" href="treasuries.html">
+    <a class="tile board-card" href="treasuries.html" data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it.">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">Bitcoin Treasuries</span>
       <span class="ec-s">Public companies, miners, ETFs, countries, private companies and DeFi protocols — 3,584,045 BTC, ranked by who holds it.</span>
     </a>
-    <a class="tile" href="liquid-network-peg-drain.html">
+    <a class="tile board-card" href="humanity.html" data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in.">
+      <span class="ec-d">STANDING PAGE · LIVE</span>
+      <span class="ec-t">Bitcoin vs. Humanity</span>
+      <span class="ec-s">Every person alive, set against a currency that cannot print more of itself — satoshis per person on Earth, and what happens if all the world&#x27;s wealth wanted in.</span>
+    </a>
+    <a class="tile" href="liquid-network-peg-drain.html" data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.">
       <span class="ec-d">SEPTEMBER 6, 2026</span>
       <span class="ec-t">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</span>
       <span class="ec-s">A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</span>
     </a>
-    <a class="tile" href="how-many-bitcoins-are-there.html">
+    <a class="tile" href="how-many-bitcoins-are-there.html" data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me.">
       <span class="ec-d">AUGUST 8, 2026</span>
       <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
       <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. Here&#x27;s the arithmetic, and the two things about it that actually surprised me.</span>
     </a>
-    <a class="tile" href="coldcard-bitkey-security.html">
+    <a class="tile" href="coldcard-bitkey-security.html" data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does.">
       <span class="ec-d">AUGUST 4, 2026</span>
       <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
       <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>
-    <li><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="crypto.html">The Crypto Heat Map</a></li>
-    <li><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="board.html">The Asset Board</a></li>
-    <li><span class="ec-d">STANDING PAGE · LIVE</span><a href="bitcoin.html">The Bitcoin Board</a></li>
-    <li><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="treasuries.html">Bitcoin Treasuries</a></li>
-    <li><span class="ec-d">SEPTEMBER 6, 2026</span><a href="liquid-network-peg-drain.html">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</a></li>
-    <li><span class="ec-d">AUGUST 8, 2026</span><a href="how-many-bitcoins-are-there.html">How Many Bitcoins Are There, Exactly?</a></li>
-    <li><span class="ec-d">AUGUST 4, 2026</span><a href="coldcard-bitkey-security.html">A Twenty-Five-Minute Window, and Why I Split the Key</a></li>
+    <li data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 58% of it."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="crypto.html">The Crypto Heat Map</a></li>
+    <li data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #11."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="board.html">The Asset Board</a></li>
+    <li data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch."><span class="ec-d">STANDING PAGE · LIVE</span><a href="bitcoin.html">The Bitcoin Board</a></li>
+    <li data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="treasuries.html">Bitcoin Treasuries</a></li>
+    <li data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in."><span class="ec-d">STANDING PAGE · LIVE</span><a href="humanity.html">Bitcoin vs. Humanity</a></li>
+    <li data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal."><span class="ec-d">SEPTEMBER 6, 2026</span><a href="liquid-network-peg-drain.html">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</a></li>
+    <li data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me."><span class="ec-d">AUGUST 8, 2026</span><a href="how-many-bitcoins-are-there.html">How Many Bitcoins Are There, Exactly?</a></li>
+    <li data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does."><span class="ec-d">AUGUST 4, 2026</span><a href="coldcard-bitkey-security.html">A Twenty-Five-Minute Window, and Why I Split the Key</a></li>
     </ul>
     <div class="loadmorewrap" id="loadMoreWrap" hidden><button class="loadmore" id="loadMoreBtn" type="button">Show more</button><div class="viewcount" id="viewCount"></div></div>
   </section>
@@ -363,26 +426,38 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   var loadMoreWrap = document.getElementById('loadMoreWrap');
   var loadMoreBtn = document.getElementById('loadMoreBtn');
   var viewCount = document.getElementById('viewCount');
+  var searchEmpty = document.getElementById('searchEmpty');
   var activeView = 'cards';
   var revealCount = TILE_FIRST;
+  var query = '';
 
   function firstFor(v){ return v === 'list' ? LIST_FIRST : TILE_FIRST; }
   function stepFor(v){ return v === 'list' ? LIST_STEP : TILE_STEP; }
-  function pool(){
-    return activeView === 'list'
-      ? Array.prototype.slice.call(archiveList.children)
-      : Array.prototype.slice.call(tilesWrap.children);
+  function allOf(v){
+    return Array.prototype.slice.call(
+      (v === 'list' ? archiveList : tilesWrap).children);
+  }
+  function matches(el){
+    return !query || (el.dataset.search || '').indexOf(query) !== -1;
   }
 
+  // Filter first (search), THEN paginate what's left — a search narrows
+  // the same pool the view/load-more controls already work on, rather than
+  // being a second, separate mechanism.
   function render(){
-    var items = pool();
-    var total = items.length;
+    var all = allOf(activeView);
+    var matched = all.filter(matches);
+    var total = matched.length;
     var showN = Math.min(revealCount, total);
-    items.forEach(function(el, i){ el.style.display = i < showN ? '' : 'none'; });
+    var shown = matched.slice(0, showN);
+    all.forEach(function(el){
+      el.style.display = shown.indexOf(el) !== -1 ? '' : 'none';
+    });
     var remaining = total - showN;
     if (loadMoreWrap) loadMoreWrap.hidden = remaining <= 0;
     if (loadMoreBtn) loadMoreBtn.textContent = 'Show ' + Math.min(stepFor(activeView), remaining) + ' more';
     if (viewCount) viewCount.textContent = total ? ('Showing ' + showN + ' of ' + total) : '';
+    if (searchEmpty) searchEmpty.hidden = !(query && total === 0);
   }
 
   function setView(v){
@@ -410,6 +485,29 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       revealCount += stepFor(activeView);
       render();
     });
+  }
+
+  // The header search box (see _chrome()) — a real form that still works
+  // with JS off (it just navigates here with ?q=…). With JS on: filters
+  // live as you type, keeps the URL in sync via replaceState so the search
+  // survives a reload or gets shared, and reads a ?q= this page was handed
+  // on arrival (a search that started on a board or entry page lands here
+  // already filtered).
+  var searchInput = document.getElementById('headerSearch');
+  if (searchInput) {
+    var form = searchInput.closest('form');
+    if (form) form.addEventListener('submit', function(e){ e.preventDefault(); });
+    searchInput.addEventListener('input', function(){
+      query = searchInput.value.toLowerCase().trim();
+      revealCount = firstFor(activeView);
+      render();
+      var url = new URL(location.href);
+      if (searchInput.value) url.searchParams.set('q', searchInput.value);
+      else url.searchParams.delete('q');
+      history.replaceState(null, '', url.pathname + url.search + url.hash);
+    });
+    var handed = new URLSearchParams(location.search).get('q');
+    if (handed) { searchInput.value = handed; query = handed.toLowerCase().trim(); }
   }
 
   setView('cards');

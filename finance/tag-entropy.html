@@ -135,6 +135,61 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#f7931a}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #f7931a;outline-offset:1px}
+
+/* Groups the search box with the nav toggle so the two move together as one
+   unit on the right — .hgroup is what lets header.hsm's own space-between
+   still cleanly read as "brand left, everything else right" with a THIRD
+   element (search) in the mix, rather than search floating alone in the
+   middle. Also the positioning context the mobile dropdown below anchors
+   against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#f7931a;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — the toggle (order 1) stays pinned next
+   to the brand and the search box (order 2) drops to its own full-width
+   row underneath, the same "give up the single row" fallback the travel
+   blog's own absolutely-positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{width:100%;flex-wrap:wrap}
+  label.navtoggle{order:1;margin-left:auto}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
 .btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
 .board-card{border-color:#22384a}
 .board-card .ec-d{color:#f7931a}
@@ -206,6 +261,7 @@ a{color:#f7931a}
    into columns instead of stacked full-width — the shift the front page
    needed once it could no longer show every entry AND every standing page
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
 .tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
@@ -283,7 +339,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
   <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
   <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a></nav></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hgroup"><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="ask.html">Ask</a><a href="feed.xml">RSS</a></nav></div></header>
   <section class="writing">
     <h1 class="wtitle">entropy</h1>
     <p class="wsub">1 entry tagged <b>entropy</b>. <a href="index.html">All writing</a>.</p>

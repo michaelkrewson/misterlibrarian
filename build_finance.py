@@ -629,11 +629,42 @@ def _nav(active=""):
 
 
 def _chrome(active=""):
-    """Header used by every page in the publication."""
+    """Header used by every page in the publication.
+
+    The nav collapses into a menu below 760px via the classic CSS-only
+    "checkbox hack" (a hidden checkbox + its <label>, toggled with :checked
+    — see .navcb/.navtoggle in the base CSS) — no JavaScript, so it can't
+    break. NOT <details>/<summary>: a closed <details>'s non-summary
+    content is hidden by the browser's own internal rendering, not by an
+    overridable CSS `display` rule, so there is no way to force it open by
+    specificity alone on a wide screen — measured, not assumed, after the
+    first cut of this shipped with the nav invisible above the breakpoint.
+    The checkbox hack has no such native behavior fighting it.
+
+    The search box lives here, not just on the front page, so it's reachable
+    from anywhere (a board, an entry, wherever) — same reasoning as the
+    travel blog's own header() (see its docstring). It's a REAL form
+    (action="index.html", GET, name="q") on purpose: submitting it works
+    even with JS off, or from a page with nothing to filter client-side, by
+    just navigating to the front page with ?q=… in the URL. The front
+    page's own script (see build_front's pagination_js) does the rest:
+    filters live as you type, and reads a ?q= it was handed on arrival.
+    """
+    hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
+                 'focusable="false"><rect width="20" height="2" rx="1"/>'
+                 '<rect y="6" width="20" height="2" rx="1"/>'
+                 '<rect y="12" width="20" height="2" rx="1"/></svg>')
+    search = ('<form class="headersearch" action="index.html" method="get" role="search">'
+              '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
+              'aria-label="Search past entries"/></form>')
     return ('<header class="hsm">'
             '<a class="brand" href="index.html">%s'
             '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
-            '%s</header>' % (MARK_SVG.replace("__ACCENT__", ACCENT), _nav(active)))
+            '<div class="hgroup">%s'
+            '<input type="checkbox" class="navcb" id="navcb"/>'
+            '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
+            '%s</div></header>'
+            % (MARK_SVG.replace("__ACCENT__", ACCENT), search, hamburger, _nav(active)))
 
 
 def _legal():
@@ -823,6 +854,9 @@ def _entry_card(e):
                           esc(e["title"]), esc(e["summary"])))
 
 
+_WS_RE = re.compile(r"\s+")
+
+
 def _front_item(*, href, label, title, desc, date, board=False):
     """One thing eligible to appear on the front page — an entry or a
     standing page — in the single shape both `_tile` and `_archive_row`
@@ -830,9 +864,14 @@ def _front_item(*, href, label, title, desc, date, board=False):
     each carrying a real `date` to sort by, is what lets them share one
     rotation pool instead of two separate lists that each need their own
     cutoff logic — or worse, a hardcoded "boards always come first" order
-    that never actually rotates them."""
+    that never actually rotates them.
+
+    `search` is the lowercased haystack the header search box matches
+    against (title + description — the label is usually just a date or
+    "STANDING PAGE" boilerplate, not something a reader would type)."""
     return {"href": href, "label": label, "title": title, "desc": desc,
-            "board": board, "date": date}
+            "board": board, "date": date,
+            "search": _WS_RE.sub(" ", (title + " " + desc).lower()).strip()}
 
 
 def _parse_generated_date(s):
@@ -852,14 +891,15 @@ def _tile(item):
     """A boxed grid tile — the front page's equivalent of the travel blog's
     `.card`. Reuses the .ec-d/.ec-t/.ec-s text styles from `_entry_card`
     (those only style the spans, not the container), so the two only differ
-    in the outer box, not the typography."""
+    in the outer box, not the typography. `data-search` is what the header
+    search box's client-side filter matches against (see pagination_js)."""
     cls = "tile board-card" if item["board"] else "tile"
-    return ('    <a class="%s" href="%s">\n'
+    return ('    <a class="%s" href="%s" data-search="%s">\n'
             '      <span class="ec-d">%s</span>\n'
             '      <span class="ec-t">%s</span>\n'
             '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (cls, esc(item["href"]), esc(item["label"]),
-                          esc(item["title"]), esc(item["desc"])))
+            '    </a>' % (cls, esc(item["href"]), esc(item["search"]),
+                          esc(item["label"]), esc(item["title"]), esc(item["desc"])))
 
 
 def _archive_row(item):
@@ -867,8 +907,8 @@ def _archive_row(item):
     FRONT_TILE_LIMIT tiles — same information as a tile, no box, no
     description, just enough to find it again. Mirrors the travel blog's
     own `<ul class="archive">` pattern."""
-    return ('    <li><span class="ec-d">%s</span><a href="%s">%s</a></li>'
-            % (esc(item["label"]), esc(item["href"]), esc(item["title"])))
+    return ('    <li data-search="%s"><span class="ec-d">%s</span><a href="%s">%s</a></li>'
+            % (esc(item["search"]), esc(item["label"]), esc(item["href"]), esc(item["title"])))
 
 
 def _goatcounter():
@@ -1122,6 +1162,18 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
                                 title="The Crypto Heat Map", desc=cry_line + ".", board=True,
                                 date=_parse_generated_date(crypto.get("generated"))))
 
+    # Same "don't link to a page the build didn't write" rule, and the same
+    # data it depends on, as the Bitcoin Board tile above (both come from
+    # bitcoin_stats.json's live height/supply).
+    if stats and stats.get("tip", {}).get("height") and stats.get("supply_sats"):
+        pool.append(_front_item(
+            href="humanity.html", label="STANDING PAGE · LIVE",
+            title="Bitcoin vs. Humanity",
+            desc="Every person alive, set against a currency that cannot print more "
+                 "of itself — satoshis per person on Earth, and what happens if all "
+                 "the world's wealth wanted in.",
+            board=True, date=_parse_generated_date(stats.get("generated"))))
+
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
                          title=e["title"], desc=e["summary"], date=e["date"]) for e in entries]
 
@@ -1157,26 +1209,38 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
   var loadMoreWrap = document.getElementById('loadMoreWrap');
   var loadMoreBtn = document.getElementById('loadMoreBtn');
   var viewCount = document.getElementById('viewCount');
+  var searchEmpty = document.getElementById('searchEmpty');
   var activeView = 'cards';
   var revealCount = TILE_FIRST;
+  var query = '';
 
   function firstFor(v){ return v === 'list' ? LIST_FIRST : TILE_FIRST; }
   function stepFor(v){ return v === 'list' ? LIST_STEP : TILE_STEP; }
-  function pool(){
-    return activeView === 'list'
-      ? Array.prototype.slice.call(archiveList.children)
-      : Array.prototype.slice.call(tilesWrap.children);
+  function allOf(v){
+    return Array.prototype.slice.call(
+      (v === 'list' ? archiveList : tilesWrap).children);
+  }
+  function matches(el){
+    return !query || (el.dataset.search || '').indexOf(query) !== -1;
   }
 
+  // Filter first (search), THEN paginate what's left — a search narrows
+  // the same pool the view/load-more controls already work on, rather than
+  // being a second, separate mechanism.
   function render(){
-    var items = pool();
-    var total = items.length;
+    var all = allOf(activeView);
+    var matched = all.filter(matches);
+    var total = matched.length;
     var showN = Math.min(revealCount, total);
-    items.forEach(function(el, i){ el.style.display = i < showN ? '' : 'none'; });
+    var shown = matched.slice(0, showN);
+    all.forEach(function(el){
+      el.style.display = shown.indexOf(el) !== -1 ? '' : 'none';
+    });
     var remaining = total - showN;
     if (loadMoreWrap) loadMoreWrap.hidden = remaining <= 0;
     if (loadMoreBtn) loadMoreBtn.textContent = 'Show ' + Math.min(stepFor(activeView), remaining) + ' more';
     if (viewCount) viewCount.textContent = total ? ('Showing ' + showN + ' of ' + total) : '';
+    if (searchEmpty) searchEmpty.hidden = !(query && total === 0);
   }
 
   function setView(v){
@@ -1206,6 +1270,29 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
     });
   }
 
+  // The header search box (see _chrome()) — a real form that still works
+  // with JS off (it just navigates here with ?q=…). With JS on: filters
+  // live as you type, keeps the URL in sync via replaceState so the search
+  // survives a reload or gets shared, and reads a ?q= this page was handed
+  // on arrival (a search that started on a board or entry page lands here
+  // already filtered).
+  var searchInput = document.getElementById('headerSearch');
+  if (searchInput) {
+    var form = searchInput.closest('form');
+    if (form) form.addEventListener('submit', function(e){ e.preventDefault(); });
+    searchInput.addEventListener('input', function(){
+      query = searchInput.value.toLowerCase().trim();
+      revealCount = firstFor(activeView);
+      render();
+      var url = new URL(location.href);
+      if (searchInput.value) url.searchParams.set('q', searchInput.value);
+      else url.searchParams.delete('q');
+      history.replaceState(null, '', url.pathname + url.search + url.hash);
+    });
+    var handed = new URLSearchParams(location.search).get('q');
+    if (handed) { searchInput.value = handed; query = handed.toLowerCase().trim(); }
+  }
+
   setView('cards');
 })();
 """ % FRONT_TILE_LIMIT)
@@ -1221,6 +1308,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None):
         desc=BLURB, url=BASE_URL, active="home",
         body="""%s%s  <section class="writing">
     %s
+    <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
 %s
     </div>%s
@@ -1393,6 +1481,61 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__}
 
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:__ACCENT__}
+.navcb:focus-visible + label.navtoggle{outline:2px solid __ACCENT__;outline-offset:1px}
+
+/* Groups the search box with the nav toggle so the two move together as one
+   unit on the right — .hgroup is what lets header.hsm's own space-between
+   still cleanly read as "brand left, everything else right" with a THIRD
+   element (search) in the mix, rather than search floating alone in the
+   middle. Also the positioning context the mobile dropdown below anchors
+   against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:__ACCENT__;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — the toggle (order 1) stays pinned next
+   to the brand and the search box (order 2) drops to its own full-width
+   row underneath, the same "give up the single row" fallback the travel
+   blog's own absolutely-positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{width:100%;flex-wrap:wrap}
+  label.navtoggle{order:1;margin-left:auto}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
 .btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
 .board-card{border-color:#22384a}
 .board-card .ec-d{color:__ACCENT__}
@@ -1464,6 +1607,7 @@ a{color:__ACCENT__}
    into columns instead of stacked full-width — the shift the front page
    needed once it could no longer show every entry AND every standing page
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
 .tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
