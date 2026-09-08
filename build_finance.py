@@ -5554,7 +5554,7 @@ def _mw_debt_gdp_table(dg):
     </tbody>
     <tfoot>
       <tr>
-        <td class="mw-nm trstot-l">Total — top {len(dg['rows'])} of {dg['n_countries_total']} economies IMF covers</td>
+        <td class="mw-nm trstot-l">Total — all {dg['n_countries_total']} economies IMF covers</td>
         <td>{money_full(tot_gdp * 1e9)}</td>
         <td>{('%.1f%% (weighted avg.)' % weighted_pct) if weighted_pct is not None else '—'}</td>
         <td>{money_full(tot_debt * 1e9)}</td>
@@ -5562,10 +5562,12 @@ def _mw_debt_gdp_table(dg):
     </tfoot>
   </table>
   </div>
-  <p class="mwbarnote">World totals below (GDP {money_full(dg['world_gdp_usd_b'] * 1e9)},
-  debt-to-GDP {('%.1f%%' % dg['world_debt_pct_gdp']) if dg.get('world_debt_pct_gdp') else '—'})
-  are computed across the FULL {dg['n_countries_total']}-economy IMF set, not
-  just the top {len(dg['rows'])} shown in this table.</p>"""
+  <p class="mwbarnote">Every economy the IMF's World Economic Outlook covers is listed above —
+  no top-N cutoff (2026-09-08, Michael's call). The totals row is a straight sum of the
+  {dg['n_countries_total']} rows shown; it may not land exactly on the World GDP figure
+  quoted elsewhere on this board ({money_full(dg['world_gdp_usd_b'] * 1e9)}), because that
+  figure prefers the IMF's own official WEOWORLD aggregate over a sum of member economies
+  when the IMF publishes one — a small, expected methodology difference, not a bug.</p>"""
 
 
 def _mw_scarcity_bar(item, max_usd, colour):
@@ -5747,7 +5749,7 @@ def _mw_hub_cards(board):
         cards.append(_mw_hub_card(
             "debt-gdp", money_full(debt_gdp["world_gdp_usd_b"] * 1e9),
             f'world debt-to-GDP {("%.1f%%" % world_pct) if world_pct is not None else "—"} '
-            f'· top {len(debt_gdp["rows"])} of {debt_gdp["n_countries_total"]} shown'))
+            f'· all {debt_gdp["n_countries_total"]} economies shown'))
     return "\n".join(cards)
 
 
@@ -5839,10 +5841,9 @@ def build_money_worldwide_section(board, key):
                   'reserves (its own page). Click any column to sort.</p>')
         table = _mw_gold_table(gold)
     else:  # debt-gdp
-        intro = (f'  <p class="mwsub">The top {len(debt_gdp["rows"])} economies by GDP, '
-                  'out of {n} the IMF covers — with each one\'s general government '
-                  'gross debt as a share of its own GDP. Click any column to '
-                  'sort.</p>'.replace("{n}", str(debt_gdp["n_countries_total"])))
+        intro = (f'  <p class="mwsub">All {debt_gdp["n_countries_total"]} economies the IMF '
+                  'covers, ranked by GDP — with each one\'s general government gross debt as '
+                  'a share of its own GDP. Click any column to sort.</p>')
         table = _mw_debt_gdp_table(debt_gdp)
 
     desc = f"{meta['title']} — {meta['blurb']} Part of the Money Worldwide board."
