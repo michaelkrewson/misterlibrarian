@@ -82,6 +82,92 @@ track separately.
 NOTHING HERE IS PERSONAL. Every input is a public economic statistic from a
 central bank, a supranational institution, or a public compilation of central
 bank reports — no account, no key, nothing about anyone's personal holdings.
+
+MONEY SUPPLY EXPANSION — 2026-09-08 (read before adding/removing an economy)
+Started as "as many economies as can be genuinely, honestly sourced," not a
+fixed target — the board grew from 2 economies (US + Euro area) to 7 with
+real, verified, CURRENT live data, plus 9 more shown with blank cells and an
+honest source-note because they were seriously investigated but have no
+working live source today (Michael's call: show the country, don't silently
+drop it — a reader should see the board's coverage AMBITION, not just what
+happened to resolve on a given day). Full per-economy detail lives in
+money_worldwide_seed.json's `money_supply_economies`/`money_supply_unresolved`
+notes; this is the shape of what was found.
+
+THE OBVIOUS TEMPLATED-PATTERN HUNCH — REAL, BUT DEAD, VERIFIED DIRECTLY
+The natural next move after the US/Euro-area build was "surely FRED mirrors
+OECD's Main Economic Indicators money-supply tables the same templated way
+it mirrors IMF reserve data" (`TRESEG<CC>M052N`, used above, IS templated
+and IS current). It genuinely is templated — `MANMM101<CC>M657S` (narrow
+money, growth rate) and `MABMM301<CC>M189S` / `MANMM101<CC>M189S` (broad/
+narrow money, LEVEL, national currency) resolve for essentially every OECD
+country by swapping in its 2-letter code (US/GB/JP/CA/AU/KR/MX/CH/CN all
+confirmed to return real historical data). But EVERY series in this family
+stopped updating years ago — most in 2023-11 (the US, UK, Japan, Australia,
+South Africa), Canada in 2023-10, Korea in 2023-10, and Mexico/Switzerland
+all the way back in 2018-12 — because OECD discontinued this MEI dataset.
+The IMF-mirrored equivalent (`MYAGM2<CC>M189N`, used for China below) is
+even staler (China's stopped in 2019-08). None of this is "roughly current"
+by this board's standard — a series that cannot move for three years is not
+a live source, so the whole family is unused here despite genuinely working
+as an HTTP request. This is worth remembering distinctly from the reserve
+series' FRED mirror, which IS current — "FRED mirrors this IMF/OECD dataset"
+is not, by itself, evidence a mirror is still being fed.
+
+FIVE REAL LIVE SOURCES FOUND INSTEAD, EACH VERIFIED BY A REAL REQUEST
+  - Canada — Bank of Canada Valet API (bankofcanada.ca/valet), genuinely
+    keyless, M1++/M2/M3 (gross, SA) as of 2026-06, updated within the API's
+    normal 1-2 month lag. Accepts a bare default User-Agent.
+  - Switzerland — the SNB Data Portal's cube API (data.snb.ch/api/cube/
+    snbmonagg), genuinely keyless, M1/M2/M3 as of 2026-07. One HTTP call
+    returns every aggregate in the cube (both the level AND the y/y-change
+    series share dimension codes, so the fetch filters on "Level" — see
+    `_snb_cube_values`). Accepts a bare default User-Agent.
+  - Brazil — Banco Central do Brasil's SGS API (api.bcb.gov.br/dados/serie),
+    genuinely keyless, M1/M2/M3 as of 2026-07 (codes 27841/27842/27813 —
+    confirmed against each series' own dadosabertos.bcb.gov.br dataset page,
+    not guessed; a same-shaped code, 27810, turned out to be a near-duplicate
+    M2 vintage and was NOT used). Accepts a bare default User-Agent.
+  - United Kingdom — the Bank of England's IADB (bankofengland.co.uk/
+    boeapps/database), genuinely keyless but — confirmed directly — 403s
+    Python's own bare default User-Agent (the opposite failure mode from
+    FRED/DataMapper, which 403/hang on a DESCRIPTIVE one); `_boe_iadb_latest`
+    sends this script's real UA. The UK discontinued M1/M2/M3-class
+    reporting in 2006, so only M4 (LPMAUYN, SA, £m, as of 2026-07) exists —
+    shown in the board's M3 column as this economy's own broadest published
+    aggregate, the same convention the Euro area's M3 already uses.
+  - Norway — Statistics Norway's StatBank PxWebAPI (data.ssb.no/api/v0),
+    genuinely keyless, and the ONLY new economy with a complete M0-M3 row:
+    table 10946 (base money M0) + table 10945 (M1/M2/M3), both as of
+    2026-07. A POST with a JSON query body, not a query-string GET — see
+    `_ssb_pxweb_latest`.
+
+NINE ECONOMIES SERIOUSLY INVESTIGATED, SHOWN WITH BLANK CELLS
+(full reasoning for each lives in the seed file's `money_supply_unresolved`
+entries — this is the one-line summary of each dead end)
+  - China, India, South Africa — the templated FRED/IMF mirror exists but is
+    stale (see above); no confirmed alternative keyless API.
+  - Japan — the Bank of Japan's OWN Time-Series Data Search API is real and
+    keyless (its manual literally says "available for use by anyone"), but
+    its series-code scheme is internal apostrophe-delimited mnemonics
+    (e.g. "BS01'MABJMTA"), not a guessable template — a real candidate for a
+    future dated follow-up, not a dead end like the others on this list.
+  - South Korea (Bank of Korea ECOS), Mexico (Banxico SIE), Turkey (CBRT
+    EVDS) — each has a real, documented API, and each confirmed BY A LIVE
+    REQUEST to require a registered access key/token (Banxico returned a
+    literal "Token inválido" error) — not keyless, so excluded on the same
+    "keyless first" standard the rest of this board holds to.
+  - Australia — the RBA's Table D3 is genuinely live, current (confirmed
+    fresh within days) and keyless, but ONLY as an .xlsx download. This
+    fetcher — like every sibling fetcher this repo's refresh workflow runs —
+    is deliberately stdlib-only (no pip install step); parsing a binary
+    spreadsheet would mean adding openpyxl/pandas for one economy's one
+    column, so it's left out on purpose rather than breaking that convention.
+  - Denmark — Danmarks Nationalbank's own StatBank instance publishes M1/M2/
+    M3 (table DNMNOGL) but its PxWebAPI base path (distinct from Statistics
+    Denmark's main dst.dk instance, which DOES work — see Norway/SSB above
+    for the same API family working elsewhere) could not be confirmed
+    working within reasonable research effort.
 """
 from __future__ import annotations
 
@@ -175,6 +261,24 @@ def _get_text(url, timeout=25, send_ua=True):
         req = urllib.request.Request(url, headers=_UA_HEADER if send_ua else {})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.read().decode("utf-8", errors="replace")
+    except Exception as exc:  # noqa: BLE001
+        print("  ! %s — %s" % (url, exc), file=sys.stderr)
+        return None
+
+
+def _post_json(url, payload, timeout=25, send_ua=False):
+    """POST a JSON body, return the parsed JSON response (or None on any
+    failure) — used only by Statistics Norway's PxWebAPI, which needs a
+    query body rather than query-string params. Same fail-soft contract as
+    _get_json/_get_text: a down source costs only its own row, never a crash."""
+    try:
+        body = json.dumps(payload).encode("utf-8")
+        headers = {"Content-Type": "application/json"}
+        if send_ua:
+            headers.update(_UA_HEADER)
+        req = urllib.request.Request(url, data=body, headers=headers)
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
     except Exception as exc:  # noqa: BLE001
         print("  ! %s — %s" % (url, exc), file=sys.stderr)
         return None
@@ -548,10 +652,28 @@ def fetch_money_supply(fx, seed):
     else:
         print("  ! Euro area money supply unresolved (ECB/fx)", file=sys.stderr)
 
+    for econ in (seed or {}).get("money_supply_economies") or []:
+        row = _fetch_generic_money_row(econ, fx)
+        if row is not None:
+            rows.append(row)
+
     if not rows:
+        # nothing at all resolved (not even the US/Euro area bespoke rows) —
+        # a genuine down-day. Keep the previous board rather than write a
+        # board that's ALL blank-row placeholders (see _unresolved_money_row).
         return None
+    resolved_count = len(rows)
+
+    # Blank-cell rows for economies seriously investigated but with no
+    # working live source yet — appended only once at least one real
+    # economy resolved above, so a total outage never produces an
+    # all-dashes board (see the module docstring's fail-soft contract).
+    for entry in (seed or {}).get("money_supply_unresolved") or []:
+        rows.append(_unresolved_money_row(entry))
+
     total_broad_usd_b = sum(r["broad_usd"] for r in rows if r.get("broad_usd") is not None)
-    return {"rows": rows, "total_broad_usd_b": total_broad_usd_b}
+    return {"rows": rows, "total_broad_usd_b": total_broad_usd_b,
+            "n_resolved": resolved_count, "n_total": len(rows)}
 
 
 # ─────────────────────────────────────────────────────────────── section 3 ──
@@ -696,11 +818,13 @@ def compute_bitcoin_lineup(asset_board, money_supply, gold, debt_gdp):
 
     lineup = []
     if money_supply and money_supply.get("total_broad_usd_b") is not None:
+        n_resolved = money_supply.get("n_resolved", len(money_supply.get("rows", [])))
         lineup.append({
-            "label": "Broad money — U.S. + Euro area (M2 + M3)",
+            "label": "Broad money — %d economies with live data" % n_resolved,
             "usd": money_supply["total_broad_usd_b"] * 1e9,
-            "note": "The two largest, most transparently published economies — a genuine "
-                    "floor under the true global figure, not the whole world's money supply.",
+            "note": "The %d economies on the Money Supply page with a real, current figure "
+                    "today — a genuine floor under the true global figure, not the whole "
+                    "world's money supply." % n_resolved,
         })
     if gold and gold.get("world_market_value_usd"):
         lineup.append({

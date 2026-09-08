@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08 21:23 UTC",
+ "generated": "2026-09-08 21:56 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -75,9 +75,277 @@
     "usd_m3": 20484.441027229692,
     "broad_usd": 20484.441027229692,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
+   },
+   {
+    "area": "Canada",
+    "flag": "🇨🇦",
+    "currency": "CAD",
+    "source": "Bank of Canada Valet API — M1++, M2, M3 (gross, seasonally adjusted, millions of Canadian dollars)",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 2404.42,
+    "m1_date": "2026-06-01",
+    "usd_m1": 1741.702281781963,
+    "m2": 2840.155,
+    "m2_date": "2026-06-01",
+    "usd_m2": 2057.3379210431003,
+    "m3": 4106.258,
+    "m3_date": "2026-06-01",
+    "usd_m3": 2974.471568272365,
+    "broad_usd": 2974.471568272365
+   },
+   {
+    "area": "Switzerland",
+    "flag": "🇨🇭",
+    "currency": "CHF",
+    "source": "Swiss National Bank Data Portal — monetary aggregates M1/M2/M3 (CHF millions)",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 769.708,
+    "m1_date": "2026-07",
+    "usd_m1": 948.4769321766561,
+    "m2": 1117.458,
+    "m2_date": "2026-07",
+    "usd_m2": 1376.9937894321768,
+    "m3": 1231.109,
+    "m3_date": "2026-07",
+    "usd_m3": 1517.0408615930598,
+    "broad_usd": 1517.0408615930598
+   },
+   {
+    "area": "Brazil",
+    "flag": "🇧🇷",
+    "currency": "BRL",
+    "source": "Banco Central do Brasil SGS API — Meios de pagamento M1/M2/M3 (thousands of reais)",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 647.172339,
+    "m1_date": "2026-07-01",
+    "usd_m1": 126.62095028467452,
+    "m2": 7680.857903,
+    "m2_date": "2026-07-01",
+    "usd_m2": 1502.7798131517677,
+    "m3": 14059.773015,
+    "m3_date": "2026-07-01",
+    "usd_m3": 2750.831135176381,
+    "broad_usd": 2750.831135176381
+   },
+   {
+    "area": "United Kingdom",
+    "flag": "🇬🇧",
+    "currency": "GBP",
+    "source": "Bank of England IADB — M4 (shown in the M3 column: the UK discontinued M1/M2/M3-class reporting in 2006, so M4 is its own broadest published aggregate today), seasonally adjusted, £ millions",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": 3298.964,
+    "m3_date": "2026-07-31",
+    "usd_m3": 4468.627158821538,
+    "broad_usd": 4468.627158821538
+   },
+   {
+    "area": "Norway",
+    "flag": "🇳🇴",
+    "currency": "NOK",
+    "source": "Statistics Norway StatBank — base money M0 + monetary aggregates M1/M2/M3 (NOK millions)",
+    "m0": 215.196,
+    "m0_date": "2026M07",
+    "usd_m0": 23.259906180418948,
+    "m1": 3172.357,
+    "m1_date": "2026M07",
+    "usd_m1": 342.890788819473,
+    "m2": 3633.261,
+    "m2_date": "2026M07",
+    "usd_m2": 392.7085540111114,
+    "m3": 3645.47,
+    "m3_date": "2026M07",
+    "usd_m3": 394.02818910914635,
+    "broad_usd": 394.02818910914635
+   },
+   {
+    "area": "China",
+    "flag": "🇨🇳",
+    "currency": "CNY",
+    "source": "FRED's IMF-mirrored M2 series (MYAGM2CNM189N) stopped updating in 2019-08; the People's Bank of China has no confirmed keyless machine-readable API for current M0/M1/M2 — only PDF/report releases were found.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "India",
+    "flag": "🇮🇳",
+    "currency": "INR",
+    "source": "No working FRED mirror resolves for India's money supply (guessed IMF/OECD-style series ids do not exist); the Reserve Bank of India's Database on Indian Economy (DBIE) has no confirmed keyless JSON/CSV API for current M1/M3.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "Japan",
+    "flag": "🇯🇵",
+    "currency": "JPY",
+    "source": "FRED's IMF/OECD-mirrored series (MYAGM2JPM189S, MABMM301JPM189S) stopped updating in 2023-11. The Bank of Japan's own Time-Series Data Search API is real and genuinely keyless (stat-search.boj.or.jp/api/v1/getDataCode, its own manual says \"available for use by anyone\") — but its series-code scheme uses internal apostrophe-delimited mnemonics (e.g. \"BS01'MABJMTA\") rather than a guessable ISO-country template, and the exact M1/M2/M3 codes could not be pinned down within reasonable research effort. A real candidate for a future dated follow-up, not a dead end.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "South Korea",
+    "flag": "🇰🇷",
+    "currency": "KRW",
+    "source": "The Bank of Korea's ECOS API requires a free registered access key; only a canned demo \"sample\" endpoint works keylessly, and — confirmed by a live request — it returns no data for a real current query.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "Mexico",
+    "flag": "🇲🇽",
+    "currency": "MXN",
+    "source": "Banco de México's SIE API requires a registered access token — confirmed by a live request, which returned \"Token inválido\" (invalid token).",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "Turkey",
+    "flag": "🇹🇷",
+    "currency": "TRY",
+    "source": "The Central Bank of the Republic of Turkey's EVDS API requires a registered API key; an unauthenticated request against it returns nothing — confirmed by a live request.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "South Africa",
+    "flag": "🇿🇦",
+    "currency": "ZAR",
+    "source": "FRED's IMF-mirrored series (MABMM301ZAM189S) stopped updating in 2023-11; the South African Reserve Bank's own online statistical query is an interactive web tool, and no documented public API for it was found.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "Australia",
+    "flag": "🇦🇺",
+    "currency": "AUD",
+    "source": "The RBA's own Table D3 (Monetary Aggregates) is genuinely live, current and keyless — but only as an .xlsx download (rba.gov.au/statistics/tables/xls/d03hist.xlsx, confirmed last-modified within days of this research). Parsing it would mean adding a spreadsheet-parsing dependency (openpyxl/pandas) to a fetcher this whole repo deliberately keeps stdlib-only (see the refresh workflow's own \"Needs no pip install\" convention) — left unintegrated on purpose rather than breaking that convention for one economy.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "Denmark",
+    "flag": "🇩🇰",
+    "currency": "DKK",
+    "source": "Danmarks Nationalbank publishes M1/M2/M3 on its own StatBank instance (table DNMNOGL, distinct from Statistics Denmark's main dst.dk API), but a working PxWebAPI base path for that separate instance could not be confirmed within reasonable research effort.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 43702.441027229695
+  "total_broad_usd_b": 55807.43994020218,
+  "n_resolved": 7,
+  "n_total": 16
  },
  "reserves_fx": {
   "rows": [
@@ -144,99 +412,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1158496098904.3027
+    "usd": 1150520897230.3198
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 477899226831.9115
+    "usd": 474609321309.19995
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 349272400653.30756
+    "usd": 346867974918.07996
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 347135742411.13806
+    "usd": 344746025642.48
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 329472700942.5369
+    "usd": 327204578297.52
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 327478486583.17865
+    "usd": 325224092306.95996
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 148141638123.75198
+    "usd": 147121816441.59998
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 125350616873.94398
+    "usd": 124487690835.2
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 120507524858.35979
+    "usd": 119677939143.84
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 90451865585.17549
+    "usd": 89829186000.4
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 87175656280.5156
+    "usd": 86575530444.48
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 82902339796.17659
+    "usd": 82331631893.27998
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 60396206311.991196
+    "usd": 59980432856.96
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 59256655249.5008
+    "usd": 58848726576.64
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 54556007116.7279
+    "usd": 54180438170.32
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3818493166522.5195,
+  "total_usd": 3792206282067.2793,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4430.5,
-  "price_as_of": "2026-09-08 18:26 UTC",
-  "world_market_value_usd": 30805626316185.793,
+  "price_usd_oz": 4400.0,
+  "price_as_of": "2026-09-08 21:43 UTC",
+  "world_market_value_usd": 30593557339175.598,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -459,23 +727,23 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 78741.5234375,
-  "market_cap_usd": 1581249379313.7207,
+  "price_usd": 78532.453125,
+  "market_cap_usd": 1577053629073.5977,
   "btc_rank": 11,
   "lineup": [
    {
-    "label": "Broad money — U.S. + Euro area (M2 + M3)",
-    "usd": 43702441027229.695,
-    "note": "The two largest, most transparently published economies — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 7 economies with live data",
+    "usd": 55807439940202.18,
+    "note": "The 7 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 30805626316185.793,
+    "usd": 30593557339175.598,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1581249379313.7207,
+    "usd": 1577053629073.5977,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]

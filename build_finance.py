@@ -5218,7 +5218,8 @@ MW_SECTIONS = {
         "title": "Money Supply", "file": "money-worldwide-money-supply.html",
         "icon": "🏦",
         "blurb": "How much money actually exists, by aggregate — narrowest to "
-                 "broadest — for the two most transparently published economies."},
+                 "broadest — across every economy a real, honest, keyless "
+                 "source could be found or confirmed missing for."},
     "reserves": {
         "title": "Reserves (excl. gold)", "file": "money-worldwide-reserves.html",
         "icon": "💵",
@@ -5407,7 +5408,7 @@ def _mw_money_supply_table(ms):
         <th data-sort="m0" title="Physical currency + bank reserves at the central bank — the narrowest aggregate, an M0-class figure">Monetary base (M0-class)</th>
         <th data-sort="m1" title="Currency in circulation + demand deposits">M1</th>
         <th data-sort="m2" title="M1 + savings/small time deposits">M2</th>
-        <th data-sort="m3" title="The Euro area's own headline broad-money aggregate; the US does not publish a distinct M3">M3</th>
+        <th data-sort="m3" title="The broadest aggregate this economy itself publishes — M3 for most rows here, or another headline aggregate shown in this column where that's what a central bank calls its own broadest tier (e.g. the UK's M4); the US does not publish a distinct M3">M3</th>
       </tr>
     </thead>
     <tbody>
@@ -5581,11 +5582,19 @@ def _mw_scarcity_bar(item, max_usd, colour):
 # string constant, not the "__ACCENT__" placeholder — that placeholder only
 # gets substituted inside CSS/JS blocks by _shell(), never inside body HTML,
 # so a bar drawn directly in the body must use the real value here.
-_MW_LINEUP_COLOURS = {
-    "Broad money — U.S. + Euro area (M2 + M3)": "#5eb3d6",
-    "Gold — all above-ground supply": "#c9b45e",
-    "Bitcoin — total market cap": ACCENT,
-}
+# Matched by PREFIX, not exact string — the "Broad money" label carries a
+# live economy count since 2026-09-08 ("Broad money — 7 economies with live
+# data"), which would otherwise never match an exact key and silently fall
+# through to the default grey.
+_MW_LINEUP_COLOURS = (
+    ("Broad money", "#5eb3d6"),
+    ("Gold — all above-ground supply", "#c9b45e"),
+    ("Bitcoin — total market cap", ACCENT),
+)
+
+
+def _mw_lineup_colour(label):
+    return next((c for prefix, c in _MW_LINEUP_COLOURS if label.startswith(prefix)), "#8f8fd6")
 
 
 def _mw_scarcity_chart(bitcoin):
@@ -5594,7 +5603,7 @@ def _mw_scarcity_chart(bitcoin):
         return ""
     max_usd = max(item["usd"] for item in lineup)
     bars = "\n".join(
-        _mw_scarcity_bar(item, max_usd, _MW_LINEUP_COLOURS.get(item["label"], "#8f8fd6"))
+        _mw_scarcity_bar(item, max_usd, _mw_lineup_colour(item["label"]))
         for item in lineup)
     return f"""  <h2 class="mwh2">The scarcity lineup</h2>
   <p class="mwsub">Three figures, side by side, at the same scale — deliberately NOT summed
@@ -5619,6 +5628,7 @@ def _mw_scarcity_chart(bitcoin):
 
 def _mw_methods_panel(board):
     gold = board.get("gold") or {}
+    ms_resolved, ms_total = _mw_ms_counts(board.get("money_supply") or {})
     return f"""  <div class="panel" id="how-this-board-is-made">
     <h2>How this board is made, and what it deliberately is not</h2>
     <p><b>Exchange rates</b> are the European Central Bank's own daily reference rates,
@@ -5626,19 +5636,29 @@ def _mw_methods_panel(board):
     the same rates the IMF itself references when it revalues the Special Drawing Right every
     five years (see <a href="untangling-bis-imf-world-bank.html">the Ledger's own entry on
     what the IMF, the BIS and the World Bank each actually do</a>).</p>
-    <p><b>Money supply</b> is curated to two economies — the United States (Federal Reserve
-    H.6 data) and the Euro area (European Central Bank) — not all ~190 IMF members. That is a
-    genuine limitation, not laziness: the IMF's own comparable cross-country money-supply
-    series turned out, on inspection, to cover only a curated set of IMF-program African
-    economies, not the world's major currencies, and no other keyless source publishes
-    current-month M0/M1/M2-class levels for every country the way these two do for
-    themselves. The US does not publish a distinct M3, so that cell reads "—" rather than a
-    guess. The Euro area's monetary base ("Base money" in the ECB's own terminology) is the one
-    figure on this whole board that is hand-curated rather than live-queried — it genuinely
-    exists and the ECB states it in plain English every week, but in a different ECB dataset
-    than the one used for its own M1/M2/M3 (which, unlike M0, ARE reachable the same live
-    keyless way as everything else here) — see the Money Supply page's own note for the full
-    trail.</p>
+    <p><b>Money supply</b> covers {ms_resolved} economies with real, current, live-queried
+    figures — the United States (Federal Reserve H.6), the Euro area (European Central Bank),
+    Canada (Bank of Canada Valet API), Switzerland (SNB Data Portal), Brazil (Banco Central do
+    Brasil SGS API), the United Kingdom (Bank of England IADB) and Norway (Statistics Norway
+    StatBank) — not all ~190 IMF members, and coverage per economy is genuinely uneven (Norway
+    publishes all four aggregates; the US and UK publish only some). That unevenness is a real
+    limitation, not laziness: a real, hands-on hunt for one templated source that mirrors many
+    countries' money supply at once (the obvious next step after FRED's own templated reserve-
+    series mirror worked) found the pattern genuinely exists on FRED (OECD's discontinued Main
+    Economic Indicators series) — but every country in that family stopped updating years ago
+    (most in 2023, some back to 2018), so none of it is used here. A further
+    {ms_total - ms_resolved} economies (China, India, Japan, South Korea, Mexico, Turkey, South
+    Africa, Australia, Denmark) were seriously investigated and are shown with blank cells and
+    their own source-note rather than silently dropped — each hit a real, named obstacle (a
+    discontinued mirror, an API that requires a registered key, a genuinely live source only
+    available as a spreadsheet). The Euro area's monetary base ("Base money" in the ECB's own
+    terminology) is the one figure on
+    this whole board that is hand-curated rather than live-queried — it genuinely exists and the
+    ECB states it in plain English every week, but in a different ECB dataset than the one used
+    for its own M1/M2/M3 (which, unlike M0, ARE reachable the same live keyless way as everything
+    else here) — see the Money Supply page's own note for the full trail, and
+    <code>tools/fetch_money_worldwide.py</code>'s own dated research log for every economy's
+    individual story.</p>
     <p><b>Reserves (excl. gold)</b> are curated to the {len(board.get('reserves_fx', {}).get('rows', []))}
     largest holders that a real, live, keyless mirror of IMF's own International Financial
     Statistics reserve series actually covers — several economies that would belong on this
@@ -5678,6 +5698,18 @@ def _mw_broad_money_usd(ms):
     return sum(r.get("broad_usd") or 0.0 for r in ms.get("rows", [])) * 1e9
 
 
+def _mw_ms_counts(ms):
+    """(resolved, total) economy counts — `n_resolved`/`n_total` when the
+    fetcher wrote them (2026-09-08+), else derived from the rows themselves
+    (a row with every m0-m3 cell None is one of the honest blank-cell
+    placeholders — see `_unresolved_money_row` in the fetcher)."""
+    if "n_resolved" in ms and "n_total" in ms:
+        return ms["n_resolved"], ms["n_total"]
+    rows = ms.get("rows", [])
+    resolved = sum(1 for r in rows if any(r.get(k) is not None for k in ("m0", "m1", "m2", "m3")))
+    return resolved, len(rows)
+
+
 def _mw_hub_card(key, value_html, sub_html):
     meta = MW_SECTIONS[key]
     return (f'    <a class="trsbox" href="{meta["file"]}">'
@@ -5698,9 +5730,10 @@ def _mw_hub_cards(board):
             "exchange-rates", f'{len(fx["rates"])} currencies',
             f'vs. US dollar · {esc(fx.get("date") or "today")}'))
     if ms:
-        cards.append(_mw_hub_card(
-            "money-supply", money_full(_mw_broad_money_usd(ms)),
-            f'{len(ms["rows"])} economies · combined broad money'))
+        n_resolved, n_total = _mw_ms_counts(ms)
+        sub = (f'{n_resolved} economies with live data · {n_total} tracked · combined broad money'
+               if n_resolved < n_total else f'{n_total} economies · combined broad money')
+        cards.append(_mw_hub_card("money-supply", money_full(_mw_broad_money_usd(ms)), sub))
     if reserves_fx:
         cards.append(_mw_hub_card(
             "reserves", money_full(reserves_fx["total_usd_m"] * 1e6),
@@ -5786,9 +5819,13 @@ def build_money_worldwide_section(board, key):
                   'reference rates. Click any column to sort.</p>')
         table = _mw_fx_table(fx, _mw_load_currency_flags())
     elif key == "money-supply":
-        intro = ('  <p class="mwsub">How much money actually exists, by aggregate — '
-                  'narrowest (M0-class) to broadest each economy publishes. Click any '
-                  'column to sort.</p>')
+        ms_resolved, ms_total = _mw_ms_counts(ms or {})
+        intro = (f'  <p class="mwsub">How much money actually exists, by aggregate — '
+                  f'narrowest (M0-class) to broadest each economy publishes. '
+                  f'{ms_resolved} of {ms_total} economies tracked here have a real, live figure '
+                  f'today; the rest show "—" with their own source-note under the area name — '
+                  f'a genuinely investigated economy with no working live source yet, not a '
+                  f'guess or a silent drop. Click any column to sort.</p>')
         table = _mw_money_supply_table(ms)
     elif key == "reserves":
         intro = ('  <p class="mwsub">Foreign exchange + SDRs + IMF reserve position, by '
