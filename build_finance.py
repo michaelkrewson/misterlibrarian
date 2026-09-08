@@ -1591,9 +1591,9 @@ a{color:__ACCENT__}
   font-family:ui-sans-serif,system-ui,sans-serif}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#6e7d92;font-size:12px;letter-spacing:.13em;
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
   font-family:ui-sans-serif,system-ui,sans-serif}
-.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#5a6b80}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
