@@ -209,6 +209,30 @@ def _cached_logo_img(domain):
     return None
 
 
+# Must match CRYPTO_LOGO_EXTS / crypto_slug() in tools/finance_logos.py.
+_CRYPTO_LOGO_EXTS = ("png", "jpg", "jpeg", "webp")
+
+
+def _crypto_logo_slug(coin_id):
+    return f"crypto-{coin_id}"
+
+
+def _cached_crypto_logo_img(coin_id):
+    """The <img> tag for a cached CoinGecko coin logo, or None if nothing's
+    cached for this coin id under any extension. A coin's logo is fetched
+    straight from its own CoinGecko CDN URL (see fetch_crypto_logos() in
+    tools/finance_logos.py) rather than guessed at via a domain favicon — a
+    coin has no "domain" the way a company does."""
+    if not coin_id:
+        return None
+    slug = _crypto_logo_slug(coin_id)
+    for ext in _CRYPTO_LOGO_EXTS:
+        if os.path.exists(os.path.join(OUT, "img", f"{slug}.{ext}")):
+            return (f'<img class="mk" src="img/{esc(slug)}.{ext}" alt="" '
+                    f'width="28" height="28" loading="lazy"/>')
+    return None
+
+
 def esc(s):
     return html.escape(str(s), quote=True)
 
@@ -649,6 +673,13 @@ def _chrome(active=""):
     just navigating to the front page with ?q=… in the URL. The front
     page's own script (see build_front's pagination_js) does the rest:
     filters live as you type, and reads a ?q= it was handed on arrival.
+
+    The search box sits directly beside the brand, on its own line, rather
+    than bundled into .hgroup with the nav — the full nav (8 links) is wide
+    enough that it always wraps to its own row under the .wrap's 1000px cap,
+    so keeping search a separate flex child (in DOM order right after brand)
+    means the header's FIRST row reliably reads "brand left, search right"
+    with nothing else competing for that row's space.
     """
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
@@ -660,7 +691,8 @@ def _chrome(active=""):
     return ('<header class="hsm">'
             '<a class="brand" href="index.html">%s'
             '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
-            '<div class="hgroup">%s'
+            '%s'
+            '<div class="hgroup">'
             '<input type="checkbox" class="navcb" id="navcb"/>'
             '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
             '%s</div></header>'
@@ -1493,14 +1525,14 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 .navcb:checked + label.navtoggle{color:__ACCENT__}
 .navcb:focus-visible + label.navtoggle{outline:2px solid __ACCENT__;outline-offset:1px}
 
-/* Groups the search box with the nav toggle so the two move together as one
-   unit on the right — .hgroup is what lets header.hsm's own space-between
-   still cleanly read as "brand left, everything else right" with a THIRD
-   element (search) in the mix, rather than search floating alone in the
-   middle. Also the positioning context the mobile dropdown below anchors
-   against. */
+/* Groups the nav toggle with the nav itself so the two move together as one
+   unit, and — via margin-left:auto — always hugs the right edge of
+   whichever row it lands on: the same row as the brand+search on a screen
+   wide enough to fit the full nav there too, or its own full row underneath
+   once the nav (8 links) is too wide to share one with them. Also the
+   positioning context the mobile dropdown below anchors against. */
 .hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-  justify-content:flex-end}
+  justify-content:flex-end;margin-left:auto}
 .headersearch{margin:0}
 .headersearch input[type=search]{
   width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
@@ -1523,14 +1555,14 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
   .hgroup .nav a.on{background:rgba(247,147,26,.10)}
 }
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
-   150px search input on one line — the toggle (order 1) stays pinned next
-   to the brand and the search box (order 2) drops to its own full-width
-   row underneath, the same "give up the single row" fallback the travel
-   blog's own absolutely-positioned search box makes at its 640px. */
+   150px search input on one line — .hgroup (order 1, its own margin-left:auto
+   already pins it to the row's right edge) stays pinned next to the brand,
+   and the search box (order 2) drops to its own full-width row underneath,
+   the same "give up the single row" fallback the travel blog's own
+   absolutely-positioned search box makes at its 640px. */
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
-  .hgroup{width:100%;flex-wrap:wrap}
-  label.navtoggle{order:1;margin-left:auto}
+  .hgroup{order:1;flex-wrap:wrap}
   .headersearch{order:2;flex:1 1 100%}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
@@ -2155,11 +2187,17 @@ def _crypto_chg_attrs(r):
 
 
 def crypto_mark(r):
-    """No cached logo for a coin (this board has none — see the module docstring
-    on why fetching 100 crypto icons wasn't worth the added moving part), so
-    every row is either its symbol's first letter as a monogram."""
+    """The coin's own CoinGecko logo behind a soft colour glow, or — if that
+    logo was never cached (fetch failed, or an older checkout hasn't run
+    tools/finance_logos.py yet) — the same coloured-monogram fallback every
+    other board uses. The glow colour is the same deterministic per-name pick
+    the monogram itself would have used, so a coin looks consistent whether
+    or not its logo happened to be cached."""
     name = r.get("name", "?")
     colour = MONO[sum(ord(c) for c in name) % len(MONO)]
+    img = _cached_crypto_logo_img(r.get("id"))
+    if img:
+        return f'<span class="mkglow" aria-hidden="true" style="--glow:{colour}">{img}</span>'
     return (f'<span class="mk mk-m" aria-hidden="true" '
             f'style="background:{colour}22;color:{colour};border-color:{colour}55">'
             f'{esc(r.get("symbol", "?")[:1])}</span>')
@@ -2350,6 +2388,22 @@ table.crygrand tfoot tr:last-child td{border-bottom:3px double #3a4f66;padding-b
    fades from the accent colour back to nothing so the reader's eye lands on
    the right row without a jarring permanent highlight. */
 table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:background 1.3s ease-out}
+/* Each coin's cached logo gets a soft colour glow behind it — the same
+   per-name colour its monogram fallback would use, so a coin reads
+   consistently whether or not its logo was cached. `::before` sits behind
+   the <img> (z-index) and blurs a radial swatch of that colour outward past
+   the 28px icon; the icon's own shared `.mk` background (opaque, meant to
+   backstop a transparent PNG on a light theme) is cleared here so the glow
+   actually shows through instead of being boxed in by it. */
+.mkglow{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:28px;flex:0 0 28px}
+.mkglow::before{content:"";position:absolute;inset:-7px;border-radius:50%;
+  background:radial-gradient(circle,var(--glow) 0%,transparent 70%);
+  opacity:.55;filter:blur(3px);z-index:0}
+.mkglow .mk{position:relative;z-index:1;background:transparent}
+@media (max-width:720px){
+  .mkglow{width:24px;height:24px;flex:0 0 24px}
+}
 """
 
 

@@ -17,6 +17,12 @@ thing every market-cap site does.
 
 Anything that fails to download is simply absent, and build_finance.py falls back to a
 coloured monogram. The board never depends on a logo existing.
+
+The Crypto Heat Map's logos (`fetch_crypto_logos()` below) are a different case worth
+calling out: a coin has no "domain" to run through a favicon service, but CoinGecko's own
+`/coins/markets` response already carries a direct CDN URL to that coin's real logo
+(`tools/fetch_crypto_heatmap.py` persists it as each row's `image` field) — so those are
+fetched straight from that URL instead of guessed at, no favicon fallback needed.
 """
 from __future__ import annotations
 
@@ -24,12 +30,14 @@ import argparse
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BOARD = os.path.join(ROOT, "source", "finance", "asset_board.json")
 TREASURIES_SEED = os.path.join(ROOT, "source", "finance", "treasuries_seed.json")
 CEBE_SEED = os.path.join(ROOT, "source", "finance", "cebe_seed.json")
+CRYPTO_BOARD = os.path.join(ROOT, "source", "finance", "crypto_heatmap.json")
 IMGDIR = os.path.join(ROOT, "finance", "img")
 
 # Two sources, tried in order. Neither covers everything: Google 404s on
@@ -102,6 +110,68 @@ def fetch(domain, imgdir, force=False):
     return "monogram"
 
 
+# A coin ID (CoinGecko's own slug, e.g. "bitcoin", "usd-coin") is already a stable,
+# collision-free key — no domain-derived slugging needed the way company logos require.
+# "crypto-" prefixed so a coin can never collide with a company's own bare-domain slug
+# (e.g. a hypothetical "tron.com" logo landing on the same file as the TRON coin's).
+CRYPTO_LOGO_EXTS = ("png", "jpg", "jpeg", "webp")
+
+
+def crypto_slug(coin_id):
+    """Must match _crypto_logo_slug() in build_finance.py."""
+    return f"crypto-{coin_id}"
+
+
+def fetch_crypto_logo(coin_id, url, imgdir, force=False):
+    """Fetch one coin's own CoinGecko-hosted logo, straight from the URL the
+    /coins/markets response gave it — no favicon guessing, no fallback source.
+    Missing/broken is simply absent; build_finance.py's monogram covers it."""
+    base = crypto_slug(coin_id)
+    # The URL's own extension (query string stripped) is what CoinGecko actually
+    # serves — trust it rather than assuming .png, so a .jpg coin logo isn't
+    # saved under the wrong extension and left undecodable by the browser.
+    path = urllib.parse.urlparse(url).path
+    ext = (os.path.splitext(path)[1].lstrip(".") or "png").lower()
+    if ext not in CRYPTO_LOGO_EXTS:
+        ext = "png"
+    dest = os.path.join(imgdir, f"{base}.{ext}")
+    if not force:
+        for other_ext in CRYPTO_LOGO_EXTS:
+            if os.path.exists(os.path.join(imgdir, f"{base}.{other_ext}")):
+                return "kept"
+    blob = _try(url)
+    if not blob:
+        print(f"  ! {coin_id}: logo fetch failed — monogram fallback", file=sys.stderr)
+        return "monogram"
+    tmp = dest + ".tmp"
+    with open(tmp, "wb") as fh:
+        fh.write(blob)
+    os.replace(tmp, dest)
+    for other_ext in CRYPTO_LOGO_EXTS:
+        other_path = os.path.join(imgdir, f"{base}.{other_ext}")
+        if other_ext != ext and os.path.exists(other_path):
+            os.remove(other_path)
+    return f"{len(blob)//1024 or 1} KB"
+
+
+def fetch_crypto_logos(imgdir, force=False):
+    """Fetch every Crypto Heat Map coin's logo that's missing. Absent entirely
+    (an older checkout, or the Crypto board not built yet) is fine — same
+    "source file, no prior fetch needed" contract as the Treasuries/CEBE seeds."""
+    if not os.path.exists(CRYPTO_BOARD):
+        return 0
+    with open(CRYPTO_BOARD, encoding="utf-8") as fh:
+        crypto = json.load(fh)
+    rows = [r for r in crypto.get("rows", []) if r.get("id") and r.get("image")]
+    if not rows:
+        return 0
+    print(f"{len(rows)} crypto logo(s) -> finance/img/")
+    for r in rows:
+        print(f"  {crypto_slug(r['id']):<24} "
+              f"{fetch_crypto_logo(r['id'], r['image'], imgdir, force)}")
+    return len(rows)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--force", action="store_true", help="re-fetch logos already present")
@@ -135,6 +205,11 @@ def main():
     print(f"{len(domains)} logo(s) -> finance/img/")
     for d in domains:
         print(f"  {slug(d):<20} {fetch(d, IMGDIR, args.force)}")
+
+    # Its own pass, after the domain-favicon ones above: a coin has no domain to
+    # look up, it's fetched straight from CoinGecko's own CDN URL instead — see
+    # fetch_crypto_logos()'s own note on why that needs a different code path.
+    fetch_crypto_logos(IMGDIR, args.force)
     return 0
 
 

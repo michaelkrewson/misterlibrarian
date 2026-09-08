@@ -10,6 +10,12 @@ with price, market cap, and native % change for 1H/1D/7D/1M/1Y baked in
 (`price_change_percentage=1h,24h,7d,30d,1y`). That call is cheap and reliable
 and is all this script needs for five of the eight buttons on the page.
 
+The same response also carries each coin's own `image` URL (CoinGecko's CDN,
+not a favicon guess) — persisted here per row and cached to disk by
+`tools/finance_logos.py`'s `fetch_crypto_logos()`, same "fetch once, commit,
+never a third-party request from a reader's browser" contract as every other
+board's logos. A coin missing the field (rare) just falls back to a monogram.
+
 THE OTHER THREE BUTTONS (3M/6M/YTD) — A SLOW BACKGROUND CRAWL, ON PURPOSE
 ──────────────────────────────────────────────────────────────────────────
 CoinGecko has no bulk endpoint for 3M/6M/YTD at any price — those are not
@@ -258,6 +264,7 @@ def compute(skip_slow_crawl=False):
             "id": c["id"],
             "symbol": (c.get("symbol") or "").upper(),
             "name": c.get("name") or c["id"],
+            "image": c.get("image"),
             "category": category_for(c["id"]),
             "rank": rank,
             "price": c.get("current_price"),
