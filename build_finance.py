@@ -1679,7 +1679,7 @@ def _crypto_fit_font(text, width_cqw, height_cap_cqw):
     return min(width_cqw / (max(len(text), 1) * _CRYPTO_CHAR_W), height_cap_cqw)
 
 
-def _crypto_tile(r, rect):
+def _crypto_tile(r, rect, dominance=None):
     x, y, w, h = rect
     left, top = x / TREEMAP_W * 100, y / TREEMAP_H * 100
     width, height = w / TREEMAP_W * 100, h / TREEMAP_H * 100
@@ -1690,28 +1690,45 @@ def _crypto_tile(r, rect):
     basis_h = height / TREEMAP_ASPECT
     ch = r.get("chg_1d")
     sym, px_s, pc_s = r["symbol"], crypto_px(r.get("price")), pct(ch)
+    # Bitcoin's own box only — the one stat that's a fleet-wide figure
+    # (market share of the whole top 100) rather than something about the
+    # coin itself, so it never applies to any other tile.
+    dom_s = "%.1f%% dominance" % dominance if dominance is not None else None
 
     lines = ""
-    sym_full = _crypto_fit_font(sym, width, basis_h * 0.5)
+    sym_share = 0.42 if dom_s else 0.5
+    sym_full = _crypto_fit_font(sym, width, basis_h * sym_share)
     if sym_full >= 6.0:
-        px_f = _crypto_fit_font(px_s, width, basis_h * 0.22)
-        pc_f = _crypto_fit_font(pc_s, width, basis_h * 0.22)
-        lines = ('<span class="ctsym" style="font-size:clamp(7px,%.2fcqw,50px)">%s</span>'
+        sub_share = 0.16 if dom_s else 0.22
+        px_f = _crypto_fit_font(px_s, width, basis_h * sub_share)
+        pc_f = _crypto_fit_font(pc_s, width, basis_h * sub_share)
+        lines = ('<span class="ctsym" style="font-size:clamp(6px,%.2fcqw,50px)">%s</span>'
                   '<span class="ctpx" style="font-size:clamp(6px,%.2fcqw,16px)">%s</span>'
                   '<span class="ctpc" style="font-size:clamp(6px,%.2fcqw,17px)">%s</span>'
                   % (sym_full, esc(sym), px_f, px_s, pc_f, pc_s))
+        if dom_s:
+            dom_f = _crypto_fit_font(dom_s, width, basis_h * sub_share)
+            lines += ('<span class="ctdom" style="font-size:clamp(6px,%.2fcqw,14px)">%s</span>'
+                      % (dom_f, dom_s))
     else:
+        # No blank tiles: even a box too small for the price/pct lines still
+        # shows its symbol, sized as large as actually fits — down to a small
+        # but non-zero floor rather than disappearing (Michael's call:
+        # "make the symbol relatively sized to the box" instead of a hard
+        # cutoff that leaves a wall of unlabelled colour swatches).
         sym_solo = _crypto_fit_font(sym, width, basis_h * 0.85)
-        if sym_solo >= 3.5:
-            lines = ('<span class="ctsym" style="font-size:clamp(7px,%.2fcqw,50px)">%s</span>'
-                      % (sym_solo, esc(sym)))
-    return ('<div class="crytile" style="left:%.3f%%;top:%.3f%%;width:%.3f%%;'
-            'height:%.3f%%;background:%s" %s title="%s (%s) · %s · %s">%s</div>'
-            % (left, top, width, height, _crypto_heat_color(ch), _crypto_chg_attrs(r),
-               esc(r["name"]), esc(sym), px_s, pc_s, lines))
+        lines = ('<span class="ctsym" style="font-size:clamp(3.5px,%.2fcqw,50px)">%s</span>'
+                  % (sym_solo, esc(sym)))
+    tip = "%s (%s) · %s · %s" % (esc(r["name"]), esc(sym), px_s, pc_s)
+    if dom_s:
+        tip += " · " + dom_s
+    return ('<a class="crytile" href="#row-%s" style="left:%.3f%%;top:%.3f%%;width:%.3f%%;'
+            'height:%.3f%%;background:%s" %s title="%s">%s</a>'
+            % (esc(r["id"]), left, top, width, height, _crypto_heat_color(ch),
+               _crypto_chg_attrs(r), tip, lines))
 
 
-def _crypto_treemap(rows):
+def _crypto_treemap(rows, dominance=None):
     known = set(CRYPTO_CATEGORY_ORDER)
     by_cat = {c: [] for c in CRYPTO_CATEGORY_ORDER}
     for r in rows:
@@ -1740,7 +1757,8 @@ def _crypto_treemap(rows):
             continue
         values = _treemap_areas([r["market_cap"] or 0 for r in coins], cw, inner_h)
         rects = _squarify(values, cx, inner_y, cw, inner_h)
-        parts += [_crypto_tile(r, rect) for r, rect in zip(coins, rects)]
+        parts += [_crypto_tile(r, rect, dominance=(dominance if r["id"] == "bitcoin" else None))
+                  for r, rect in zip(coins, rects)]
 
     return ('  <div class="treemapwrap"><div class="treemap">\n    '
             + "\n    ".join(parts) + "\n  </div></div>")
@@ -1768,7 +1786,7 @@ def crypto_mark(r):
 def crypto_row(r):
     ch = r.get("chg_1d")
     ch_cls = "flat" if ch is None else ("up" if ch >= 0 else "down")
-    return f"""      <tr>
+    return f"""      <tr id="row-{esc(r['id'])}" class="cryrow">
         <td class="rk">{r['rank']}</td>
         <td class="as"><span class="asw">{crypto_mark(r)}<span class="nm">
           <span class="n1">{esc(r['symbol'])}</span>
@@ -1782,8 +1800,11 @@ def crypto_row(r):
       </tr>"""
 
 
-def _crypto_table(rows):
+def _crypto_table(rows, label="Subtotal"):
     body = "\n".join(crypto_row(r) for r in rows)
+    n = len(rows)
+    tot_mc = sum(r["market_cap"] or 0 for r in rows)
+    tot_vol = sum(r["volume_24h"] or 0 for r in rows)
     return f"""  <div class="tw">
   <table class="board crypto">
     <thead>
@@ -1800,6 +1821,17 @@ def _crypto_table(rows):
     <tbody>
 {body}
     </tbody>
+    <tfoot>
+      <tr>
+        <td class="rk"></td>
+        <td class="as crytot-l">{label} — {n} coin{'' if n == 1 else 's'}</td>
+        <td class="px"></td>
+        <td class="mc">{money_cap(tot_mc)}</td>
+        <td class="cs"></td>
+        <td class="mc">{money_cap(tot_vol)}</td>
+        <td class="ch"></td>
+      </tr>
+    </tfoot>
   </table>
   </div>"""
 
@@ -1864,6 +1896,36 @@ CRYPTO_JS = """
     });
   });
   paint('1d');
+
+  // Clicking a treemap tile jumps to (and briefly flashes) its row in the
+  // table below, instead of just a plain in-page anchor jump — a reader
+  // clicking a tiny unlabelled sliver in the map needs to actually SEE which
+  // row lit up, not just have the page silently scroll.
+  function jumpTo(id){
+    var row = document.getElementById(id);
+    if(!row) return;
+    row.scrollIntoView({behavior: 'smooth', block: 'center'});
+    row.classList.remove('cryflash');
+    void row.offsetWidth;  // restart the CSS transition if it's already mid-fade
+    row.classList.add('cryflash');
+    setTimeout(function(){ row.classList.remove('cryflash'); }, 1600);
+  }
+  tiles.forEach(function(tile){
+    tile.addEventListener('click', function(e){
+      e.preventDefault();
+      var id = tile.getAttribute('href').slice(1);
+      jumpTo(id);
+      history.replaceState(null, '', '#' + id);
+    });
+  });
+  // Loading the page with a #row-... link already in the URL: the browser's
+  // OWN native fragment jump (top-aligned, no highlight) can land AFTER this
+  // script runs and silently override a same-tick jumpTo() call — waiting for
+  // the window 'load' event guarantees this runs last and wins, landing the
+  // row centered with its flash rather than pinned to the very top.
+  if(location.hash){
+    window.addEventListener('load', function(){ jumpTo(location.hash.slice(1)); });
+  }
 })();
 """
 
@@ -1886,13 +1948,56 @@ table.crypto td.cs{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:n
 .crytile{position:absolute;display:flex;flex-direction:column;align-items:center;
   justify-content:center;gap:1px;border:1px solid rgba(5,8,13,.55);color:#fff;
   text-align:center;overflow:hidden;text-shadow:0 1px 2px rgba(0,0,0,.35);
-  box-sizing:border-box;transition:filter .12s;font-family:ui-sans-serif,system-ui,sans-serif}
+  box-sizing:border-box;transition:filter .12s;font-family:ui-sans-serif,system-ui,sans-serif;
+  text-decoration:none;cursor:pointer}
 .crytile:hover{filter:brightness(1.15);z-index:3}
-.ctsym,.ctpx,.ctpc{max-width:96%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctsym,.ctpx,.ctpc,.ctdom{max-width:96%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ctsym{font-weight:700;line-height:1.05}
 .ctpx{opacity:.85;line-height:1.15}
 .ctpc{font-weight:600;line-height:1.15}
+.ctdom{opacity:.8;font-style:italic;line-height:1.15;margin-top:2px}
+.crytot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+/* The flash a table row gets when a treemap tile scrolls it into view —
+   fades from the accent colour back to nothing so the reader's eye lands on
+   the right row without a jarring permanent highlight. */
+table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:background 1.3s ease-out}
 """
+
+
+def _crypto_grand_total(rows):
+    """A header-plus-footer-only table (no body — the 100 rows already exist
+    above) so the grand total lines up under the same columns as every
+    category table, at the true bottom of the page."""
+    n = len(rows)
+    tot_mc = sum(r["market_cap"] or 0 for r in rows)
+    tot_vol = sum(r["volume_24h"] or 0 for r in rows)
+    return f"""  <h2 class="cryh">All coins</h2>
+  <div class="tw">
+  <table class="board crypto">
+    <thead>
+      <tr>
+        <th class="rk">#</th>
+        <th class="as">Coin</th>
+        <th class="px">Price</th>
+        <th class="mc">Market cap</th>
+        <th class="cs">Circ. supply</th>
+        <th class="mc">24h volume</th>
+        <th class="ch">Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <td class="rk"></td>
+        <td class="as crytot-l">Total — {n} coin{'' if n == 1 else 's'}</td>
+        <td class="px"></td>
+        <td class="mc">{money_cap(tot_mc)}</td>
+        <td class="cs"></td>
+        <td class="mc">{money_cap(tot_vol)}</td>
+        <td class="ch"></td>
+      </tr>
+    </tfoot>
+  </table>
+  </div>"""
 
 
 def build_crypto_heatmap(board):
@@ -1931,7 +2036,7 @@ def build_crypto_heatmap(board):
     <span class="dot">·</span><span class="hl">{len(rows)} coins</span>
     {f'<span class="dot">·</span>BTC dominance {dom:.1f}%' if dom is not None else ''}</p>
   <div class="chtabs" id="cryptoTabs">{period_btns}</div>
-{_crypto_treemap(rows)}
+{_crypto_treemap(rows, dominance=dom)}
   <p class="crynote">{covered} of {total} coins have real 3M/6M/YTD figures so
   far — CoinGecko has no bulk endpoint for those periods, so they fill in a
   few coins at a time in the background (see the note below). Until a coin
@@ -1967,6 +2072,7 @@ def build_crypto_heatmap(board):
     investment advice, and a coin's presence in the top 100 is not an
     endorsement of it.</p>
   </div>
+{_crypto_grand_total(rows)}
 """
     return _shell(title="The Crypto Heat Map — top 100 cryptocurrencies — %s" % SITE_NAME,
                   desc=desc, url="%scrypto.html" % BASE_URL, active="crypto",
