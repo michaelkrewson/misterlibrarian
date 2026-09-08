@@ -230,8 +230,6 @@ DM_NON_COUNTRY = {
 def _is_country(area):
     return len(area) == 3 and area not in DM_NON_COUNTRY and not area.endswith("Q")
 
-DEBT_GDP_TOP_N = 30
-
 # ⚠️ MEASURED, NOT GUESSED (2026-09-08): FRED and IMF's own DataMapper API
 # both silently reject a DESCRIPTIVE User-Agent header — FRED hangs the
 # connection until it times out, DataMapper returns a flat 403 — yet BOTH
@@ -783,13 +781,19 @@ def fetch_debt_gdp():
     if not rows:
         return None
     rows.sort(key=lambda r: r["gdp_usd_b"], reverse=True)
-    top = rows[:DEBT_GDP_TOP_N]
+    # ALL resolved economies are shown (2026-09-08, Michael's call — "expand it to
+    # all 195 economies and tally them all") — no top-N truncation. The table's
+    # own totals row is therefore a straight sum of every row shown here, which
+    # is why it's kept SEPARATE from world_gdp_usd_b below: that field prefers
+    # the IMF's own official WEOWORLD aggregate (a published figure, not a sum
+    # of member countries) when available, so the two can differ slightly by
+    # IMF methodology even though this list is now genuinely complete.
     world_debt_pct = (total_debt_usd_b / total_gdp_usd_b * 100.0) if total_gdp_usd_b else None
     return {
-        "rows": top,
+        "rows": rows,
         "n_countries_total": len(rows),
         "world_gdp_usd_b": world_gdp_b if world_gdp_b is not None else total_gdp_usd_b,
-        "world_gdp_year": world_gdp_year or (top[0]["year"] if top else None),
+        "world_gdp_year": world_gdp_year or (rows[0]["year"] if rows else None),
         "world_debt_pct_gdp": world_debt_pct,
         "world_debt_usd_b": (world_gdp_b or total_gdp_usd_b) * (world_debt_pct or 0) / 100.0
                             if world_debt_pct else None,

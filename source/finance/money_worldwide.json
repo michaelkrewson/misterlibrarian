@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-08 21:56 UTC",
+ "generated": "2026-09-08 22:02 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -718,6 +718,1161 @@
     "year": "2026",
     "debt_pct_gdp": 31.4,
     "debt_usd_b": 195.16544399999998
+   },
+   {
+    "area": "NOR",
+    "gdp_usd_b": 599.406,
+    "year": "2026",
+    "debt_pct_gdp": 42.9,
+    "debt_usd_b": 257.145174
+   },
+   {
+    "area": "THA",
+    "gdp_usd_b": 579.996,
+    "year": "2026",
+    "debt_pct_gdp": 66.8,
+    "debt_usd_b": 387.437328
+   },
+   {
+    "area": "COL",
+    "gdp_usd_b": 539.53,
+    "year": "2026",
+    "debt_pct_gdp": 60.9,
+    "debt_usd_b": 328.57377
+   },
+   {
+    "area": "VNM",
+    "gdp_usd_b": 527.266,
+    "year": "2026",
+    "debt_pct_gdp": 29.8,
+    "debt_usd_b": 157.125268
+   },
+   {
+    "area": "MYS",
+    "gdp_usd_b": 516.428,
+    "year": "2026",
+    "debt_pct_gdp": 69.5,
+    "debt_usd_b": 358.91746
+   },
+   {
+    "area": "PHL",
+    "gdp_usd_b": 512.222,
+    "year": "2026",
+    "debt_pct_gdp": 60.2,
+    "debt_usd_b": 308.357644
+   },
+   {
+    "area": "BGD",
+    "gdp_usd_b": 510.705,
+    "year": "2026",
+    "debt_pct_gdp": 41.8,
+    "debt_usd_b": 213.47468999999998
+   },
+   {
+    "area": "DNK",
+    "gdp_usd_b": 503.772,
+    "year": "2026",
+    "debt_pct_gdp": 27.4,
+    "debt_usd_b": 138.033528
+   },
+   {
+    "area": "ROU",
+    "gdp_usd_b": 480.834,
+    "year": "2026",
+    "debt_pct_gdp": 61.9,
+    "debt_usd_b": 297.63624599999997
+   },
+   {
+    "area": "ZAF",
+    "gdp_usd_b": 479.964,
+    "year": "2026",
+    "debt_pct_gdp": 78.9,
+    "debt_usd_b": 378.691596
+   },
+   {
+    "area": "HKG",
+    "gdp_usd_b": 450.138,
+    "year": "2026",
+    "debt_pct_gdp": 14.1,
+    "debt_usd_b": 63.469457999999996
+   },
+   {
+    "area": "CZE",
+    "gdp_usd_b": 432.597,
+    "year": "2026",
+    "debt_pct_gdp": 46.4,
+    "debt_usd_b": 200.72500799999997
+   },
+   {
+    "area": "EGY",
+    "gdp_usd_b": 429.645,
+    "year": "2026",
+    "debt_pct_gdp": 87,
+    "debt_usd_b": 373.79114999999996
+   },
+   {
+    "area": "CHL",
+    "gdp_usd_b": 407.85,
+    "year": "2026",
+    "debt_pct_gdp": 42.5,
+    "debt_usd_b": 173.33625
+   },
+   {
+    "area": "PAK",
+    "gdp_usd_b": 407.786,
+    "year": "2025",
+    "debt_pct_gdp": 72.8,
+    "debt_usd_b": 296.868208
+   },
+   {
+    "area": "PER",
+    "gdp_usd_b": 380.9,
+    "year": "2026",
+    "debt_pct_gdp": 30,
+    "debt_usd_b": 114.27
+   },
+   {
+    "area": "PRT",
+    "gdp_usd_b": 380.637,
+    "year": "2026",
+    "debt_pct_gdp": 85.6,
+    "debt_usd_b": 325.825272
+   },
+   {
+    "area": "NGA",
+    "gdp_usd_b": 377.365,
+    "year": "2026",
+    "debt_pct_gdp": 32.3,
+    "debt_usd_b": 121.88889499999999
+   },
+   {
+    "area": "KAZ",
+    "gdp_usd_b": 360.456,
+    "year": "2026",
+    "debt_pct_gdp": 24.9,
+    "debt_usd_b": 89.753544
+   },
+   {
+    "area": "FIN",
+    "gdp_usd_b": 337.669,
+    "year": "2026",
+    "debt_pct_gdp": 93.1,
+    "debt_usd_b": 314.36983899999996
+   },
+   {
+    "area": "DZA",
+    "gdp_usd_b": 317.173,
+    "year": "2026",
+    "debt_pct_gdp": 59.2,
+    "debt_usd_b": 187.76641600000002
+   },
+   {
+    "area": "GRC",
+    "gdp_usd_b": 307.554,
+    "year": "2026",
+    "debt_pct_gdp": 136.9,
+    "debt_usd_b": 421.041426
+   },
+   {
+    "area": "IRN",
+    "gdp_usd_b": 300.293,
+    "year": "2026",
+    "debt_pct_gdp": 37.3,
+    "debt_usd_b": 112.009289
+   },
+   {
+    "area": "NZL",
+    "gdp_usd_b": 278.636,
+    "year": "2026",
+    "debt_pct_gdp": 56.7,
+    "debt_usd_b": 157.98661200000004
+   },
+   {
+    "area": "HUN",
+    "gdp_usd_b": 271.122,
+    "year": "2026",
+    "debt_pct_gdp": 77.9,
+    "debt_usd_b": 211.20403800000003
+   },
+   {
+    "area": "UKR",
+    "gdp_usd_b": 225.337,
+    "year": "2026",
+    "debt_pct_gdp": 122.6,
+    "debt_usd_b": 276.26316199999997
+   },
+   {
+    "area": "QAT",
+    "gdp_usd_b": 217.416,
+    "year": "2026",
+    "debt_pct_gdp": 43.3,
+    "debt_usd_b": 94.141128
+   },
+   {
+    "area": "MAR",
+    "gdp_usd_b": 194.333,
+    "year": "2026",
+    "debt_pct_gdp": 65.8,
+    "debt_usd_b": 127.87111399999999
+   },
+   {
+    "area": "UZB",
+    "gdp_usd_b": 181.502,
+    "year": "2026",
+    "debt_pct_gdp": 27.5,
+    "debt_usd_b": 49.913050000000005
+   },
+   {
+    "area": "KWT",
+    "gdp_usd_b": 172.92,
+    "year": "2026",
+    "debt_pct_gdp": 22.3,
+    "debt_usd_b": 38.56116
+   },
+   {
+    "area": "SVK",
+    "gdp_usd_b": 168.897,
+    "year": "2026",
+    "debt_pct_gdp": 63,
+    "debt_usd_b": 106.40510999999998
+   },
+   {
+    "area": "AGO",
+    "gdp_usd_b": 152.354,
+    "year": "2026",
+    "debt_pct_gdp": 51.6,
+    "debt_usd_b": 78.614664
+   },
+   {
+    "area": "BGR",
+    "gdp_usd_b": 148.121,
+    "year": "2026",
+    "debt_pct_gdp": 28.2,
+    "debt_usd_b": 41.770122
+   },
+   {
+    "area": "KEN",
+    "gdp_usd_b": 147.265,
+    "year": "2026",
+    "debt_pct_gdp": 71.6,
+    "debt_usd_b": 105.44174
+   },
+   {
+    "area": "ECU",
+    "gdp_usd_b": 138.194,
+    "year": "2026",
+    "debt_pct_gdp": null,
+    "debt_usd_b": null
+   },
+   {
+    "area": "DOM",
+    "gdp_usd_b": 136.148,
+    "year": "2026",
+    "debt_pct_gdp": 58.3,
+    "debt_usd_b": 79.374284
+   },
+   {
+    "area": "PRI",
+    "gdp_usd_b": 129.012,
+    "year": "2026",
+    "debt_pct_gdp": 18.8,
+    "debt_usd_b": 24.254256
+   },
+   {
+    "area": "GTM",
+    "gdp_usd_b": 128.886,
+    "year": "2026",
+    "debt_pct_gdp": 27.6,
+    "debt_usd_b": 35.572536
+   },
+   {
+    "area": "COD",
+    "gdp_usd_b": 123.406,
+    "year": "2026",
+    "debt_pct_gdp": 24.6,
+    "debt_usd_b": 30.357876
+   },
+   {
+    "area": "ETH",
+    "gdp_usd_b": 121.527,
+    "year": "2026",
+    "debt_pct_gdp": 40.4,
+    "debt_usd_b": 49.096908000000006
+   },
+   {
+    "area": "GHA",
+    "gdp_usd_b": 118.293,
+    "year": "2026",
+    "debt_pct_gdp": 53,
+    "debt_usd_b": 62.69529000000001
+   },
+   {
+    "area": "OMN",
+    "gdp_usd_b": 117.176,
+    "year": "2026",
+    "debt_pct_gdp": 32.7,
+    "debt_usd_b": 38.31655200000001
+   },
+   {
+    "area": "HRV",
+    "gdp_usd_b": 116.574,
+    "year": "2026",
+    "debt_pct_gdp": 56.5,
+    "debt_usd_b": 65.86430999999999
+   },
+   {
+    "area": "CIV",
+    "gdp_usd_b": 112.115,
+    "year": "2026",
+    "debt_pct_gdp": 55.1,
+    "debt_usd_b": 61.775365
+   },
+   {
+    "area": "SRB",
+    "gdp_usd_b": 112.025,
+    "year": "2026",
+    "debt_pct_gdp": 42.6,
+    "debt_usd_b": 47.72265
+   },
+   {
+    "area": "VEN",
+    "gdp_usd_b": 111.303,
+    "year": "2026",
+    "debt_pct_gdp": null,
+    "debt_usd_b": null
+   },
+   {
+    "area": "LUX",
+    "gdp_usd_b": 110.417,
+    "year": "2026",
+    "debt_pct_gdp": 28,
+    "debt_usd_b": 30.91676
+   },
+   {
+    "area": "CRI",
+    "gdp_usd_b": 109.931,
+    "year": "2026",
+    "debt_pct_gdp": 61.1,
+    "debt_usd_b": 67.167841
+   },
+   {
+    "area": "LTU",
+    "gdp_usd_b": 105.907,
+    "year": "2026",
+    "debt_pct_gdp": 45.1,
+    "debt_usd_b": 47.764057
+   },
+   {
+    "area": "BLR",
+    "gdp_usd_b": 102.042,
+    "year": "2026",
+    "debt_pct_gdp": 33.1,
+    "debt_usd_b": 33.775902
+   },
+   {
+    "area": "LKA",
+    "gdp_usd_b": 98.964,
+    "year": "2024",
+    "debt_pct_gdp": 100.8,
+    "debt_usd_b": 99.755712
+   },
+   {
+    "area": "URY",
+    "gdp_usd_b": 96.092,
+    "year": "2026",
+    "debt_pct_gdp": 66.8,
+    "debt_usd_b": 64.189456
+   },
+   {
+    "area": "PAN",
+    "gdp_usd_b": 95.024,
+    "year": "2026",
+    "debt_pct_gdp": 57.7,
+    "debt_usd_b": 54.82884800000001
+   },
+   {
+    "area": "TZA",
+    "gdp_usd_b": 94.889,
+    "year": "2026",
+    "debt_pct_gdp": 48.7,
+    "debt_usd_b": 46.210943
+   },
+   {
+    "area": "SVN",
+    "gdp_usd_b": 86.732,
+    "year": "2026",
+    "debt_pct_gdp": 65.2,
+    "debt_usd_b": 56.549264
+   },
+   {
+    "area": "MMR",
+    "gdp_usd_b": 83.832,
+    "year": "2026",
+    "debt_pct_gdp": 51.9,
+    "debt_usd_b": 43.508808
+   },
+   {
+    "area": "TKM",
+    "gdp_usd_b": 83.065,
+    "year": "2026",
+    "debt_pct_gdp": 3.7,
+    "debt_usd_b": 3.073405
+   },
+   {
+    "area": "BOL",
+    "gdp_usd_b": 80.743,
+    "year": "2026",
+    "debt_pct_gdp": 102.7,
+    "debt_usd_b": 82.923061
+   },
+   {
+    "area": "AZE",
+    "gdp_usd_b": 78.372,
+    "year": "2026",
+    "debt_pct_gdp": 20,
+    "debt_usd_b": 15.6744
+   },
+   {
+    "area": "UGA",
+    "gdp_usd_b": 73.37,
+    "year": "2026",
+    "debt_pct_gdp": 55,
+    "debt_usd_b": 40.353500000000004
+   },
+   {
+    "area": "CMR",
+    "gdp_usd_b": 65.135,
+    "year": "2026",
+    "debt_pct_gdp": 39.3,
+    "debt_usd_b": 25.598055
+   },
+   {
+    "area": "JOR",
+    "gdp_usd_b": 64.909,
+    "year": "2026",
+    "debt_pct_gdp": 81.8,
+    "debt_usd_b": 53.095562
+   },
+   {
+    "area": "TUN",
+    "gdp_usd_b": 60.745,
+    "year": "2026",
+    "debt_pct_gdp": 84.9,
+    "debt_usd_b": 51.572505
+   },
+   {
+    "area": "PRY",
+    "gdp_usd_b": 60.542,
+    "year": "2026",
+    "debt_pct_gdp": 37.8,
+    "debt_usd_b": 22.884876
+   },
+   {
+    "area": "SYR",
+    "gdp_usd_b": 60.043,
+    "year": "2010",
+    "debt_pct_gdp": 30,
+    "debt_usd_b": 18.0129
+   },
+   {
+    "area": "ZWE",
+    "gdp_usd_b": 56.713,
+    "year": "2026",
+    "debt_pct_gdp": 42.3,
+    "debt_usd_b": 23.989599
+   },
+   {
+    "area": "MAC",
+    "gdp_usd_b": 54.228,
+    "year": "2026",
+    "debt_pct_gdp": 0,
+    "debt_usd_b": 0.0
+   },
+   {
+    "area": "LVA",
+    "gdp_usd_b": 53.686,
+    "year": "2026",
+    "debt_pct_gdp": 47.4,
+    "debt_usd_b": 25.447163999999997
+   },
+   {
+    "area": "LBY",
+    "gdp_usd_b": 52.453,
+    "year": "2026",
+    "debt_pct_gdp": null,
+    "debt_usd_b": null
+   },
+   {
+    "area": "KHM",
+    "gdp_usd_b": 52.379,
+    "year": "2026",
+    "debt_pct_gdp": 27.1,
+    "debt_usd_b": 14.194709
+   },
+   {
+    "area": "EST",
+    "gdp_usd_b": 51.634,
+    "year": "2026",
+    "debt_pct_gdp": 27.8,
+    "debt_usd_b": 14.354252
+   },
+   {
+    "area": "BHR",
+    "gdp_usd_b": 48.849,
+    "year": "2026",
+    "debt_pct_gdp": 152.4,
+    "debt_usd_b": 74.445876
+   },
+   {
+    "area": "NPL",
+    "gdp_usd_b": 45.844,
+    "year": "2026",
+    "debt_pct_gdp": 49.6,
+    "debt_usd_b": 22.738624
+   },
+   {
+    "area": "CYP",
+    "gdp_usd_b": 45.171,
+    "year": "2026",
+    "debt_pct_gdp": 50.9,
+    "debt_usd_b": 22.992039
+   },
+   {
+    "area": "SDN",
+    "gdp_usd_b": 44.688,
+    "year": "2026",
+    "debt_pct_gdp": 169.1,
+    "debt_usd_b": 75.567408
+   },
+   {
+    "area": "ISL",
+    "gdp_usd_b": 43.8,
+    "year": "2026",
+    "debt_pct_gdp": 53.6,
+    "debt_usd_b": 23.476799999999997
+   },
+   {
+    "area": "GEO",
+    "gdp_usd_b": 42.716,
+    "year": "2026",
+    "debt_pct_gdp": 35.1,
+    "debt_usd_b": 14.993316000000002
+   },
+   {
+    "area": "HND",
+    "gdp_usd_b": 41.505,
+    "year": "2026",
+    "debt_pct_gdp": 43.8,
+    "debt_usd_b": 18.179190000000002
+   },
+   {
+    "area": "ZMB",
+    "gdp_usd_b": 41.243,
+    "year": "2026",
+    "debt_pct_gdp": null,
+    "debt_usd_b": null
+   },
+   {
+    "area": "SEN",
+    "gdp_usd_b": 40.469,
+    "year": "2026",
+    "debt_pct_gdp": 132.3,
+    "debt_usd_b": 53.540487000000006
+   },
+   {
+    "area": "SLV",
+    "gdp_usd_b": 39.838,
+    "year": "2026",
+    "debt_pct_gdp": 84.5,
+    "debt_usd_b": 33.66311
+   },
+   {
+    "area": "HTI",
+    "gdp_usd_b": 39.18,
+    "year": "2026",
+    "debt_pct_gdp": 10.7,
+    "debt_usd_b": 4.192259999999999
+   },
+   {
+    "area": "BIH",
+    "gdp_usd_b": 36.771,
+    "year": "2026",
+    "debt_pct_gdp": 30.8,
+    "debt_usd_b": 11.325468
+   },
+   {
+    "area": "LBN",
+    "gdp_usd_b": 34.497,
+    "year": "2025",
+    "debt_pct_gdp": 139.4,
+    "debt_usd_b": 48.088818
+   },
+   {
+    "area": "PNG",
+    "gdp_usd_b": 34.403,
+    "year": "2026",
+    "debt_pct_gdp": 49.2,
+    "debt_usd_b": 16.926276
+   },
+   {
+    "area": "GUY",
+    "gdp_usd_b": 33.961,
+    "year": "2026",
+    "debt_pct_gdp": 29.2,
+    "debt_usd_b": 9.916611999999999
+   },
+   {
+    "area": "MLI",
+    "gdp_usd_b": 33.847,
+    "year": "2026",
+    "debt_pct_gdp": 40.8,
+    "debt_usd_b": 13.809576
+   },
+   {
+    "area": "ALB",
+    "gdp_usd_b": 33.333,
+    "year": "2026",
+    "debt_pct_gdp": 51.5,
+    "debt_usd_b": 17.166495
+   },
+   {
+    "area": "BFA",
+    "gdp_usd_b": 32.513,
+    "year": "2026",
+    "debt_pct_gdp": 48.8,
+    "debt_usd_b": 15.866344
+   },
+   {
+    "area": "ARM",
+    "gdp_usd_b": 31.873,
+    "year": "2026",
+    "debt_pct_gdp": 50.6,
+    "debt_usd_b": 16.127738
+   },
+   {
+    "area": "MLT",
+    "gdp_usd_b": 30.712,
+    "year": "2026",
+    "debt_pct_gdp": 47.3,
+    "debt_usd_b": 14.526776
+   },
+   {
+    "area": "GIN",
+    "gdp_usd_b": 29.93,
+    "year": "2026",
+    "debt_pct_gdp": 44.7,
+    "debt_usd_b": 13.378710000000002
+   },
+   {
+    "area": "MNG",
+    "gdp_usd_b": 28.45,
+    "year": "2026",
+    "debt_pct_gdp": 43.7,
+    "debt_usd_b": 12.43265
+   },
+   {
+    "area": "BEN",
+    "gdp_usd_b": 27.786,
+    "year": "2026",
+    "debt_pct_gdp": 57.2,
+    "debt_usd_b": 15.893592000000002
+   },
+   {
+    "area": "TTO",
+    "gdp_usd_b": 26.836,
+    "year": "2026",
+    "debt_pct_gdp": 84.1,
+    "debt_usd_b": 22.569075999999995
+   },
+   {
+    "area": "TCD",
+    "gdp_usd_b": 25.628,
+    "year": "2026",
+    "debt_pct_gdp": 29.9,
+    "debt_usd_b": 7.662772
+   },
+   {
+    "area": "NER",
+    "gdp_usd_b": 24.813,
+    "year": "2026",
+    "debt_pct_gdp": 45.5,
+    "debt_usd_b": 11.289914999999999
+   },
+   {
+    "area": "NIC",
+    "gdp_usd_b": 24.227,
+    "year": "2026",
+    "debt_pct_gdp": 33.2,
+    "debt_usd_b": 8.043364
+   },
+   {
+    "area": "KGZ",
+    "gdp_usd_b": 23.606,
+    "year": "2026",
+    "debt_pct_gdp": 37.4,
+    "debt_usd_b": 8.828644
+   },
+   {
+    "area": "GAB",
+    "gdp_usd_b": 23.363,
+    "year": "2026",
+    "debt_pct_gdp": 86.1,
+    "debt_usd_b": 20.115543
+   },
+   {
+    "area": "MOZ",
+    "gdp_usd_b": 23.275,
+    "year": "2026",
+    "debt_pct_gdp": 106.1,
+    "debt_usd_b": 24.694774999999996
+   },
+   {
+    "area": "JAM",
+    "gdp_usd_b": 23.028,
+    "year": "2026",
+    "debt_pct_gdp": 65.8,
+    "debt_usd_b": 15.152423999999998
+   },
+   {
+    "area": "BWA",
+    "gdp_usd_b": 21.937,
+    "year": "2026",
+    "debt_pct_gdp": 47,
+    "debt_usd_b": 10.31039
+   },
+   {
+    "area": "MDA",
+    "gdp_usd_b": 21.889,
+    "year": "2026",
+    "debt_pct_gdp": 39.3,
+    "debt_usd_b": 8.602376999999999
+   },
+   {
+    "area": "MKD",
+    "gdp_usd_b": 21.605,
+    "year": "2026",
+    "debt_pct_gdp": 53.1,
+    "debt_usd_b": 11.472255
+   },
+   {
+    "area": "MDG",
+    "gdp_usd_b": 21.185,
+    "year": "2026",
+    "debt_pct_gdp": 49.3,
+    "debt_usd_b": 10.444205
+   },
+   {
+    "area": "TJK",
+    "gdp_usd_b": 20.418,
+    "year": "2026",
+    "debt_pct_gdp": 21.9,
+    "debt_usd_b": 4.4715419999999995
+   },
+   {
+    "area": "AFG",
+    "gdp_usd_b": 19.662,
+    "year": "2025",
+    "debt_pct_gdp": 8,
+    "debt_usd_b": 1.57296
+   },
+   {
+    "area": "LAO",
+    "gdp_usd_b": 18.959,
+    "year": "2026",
+    "debt_pct_gdp": 74.6,
+    "debt_usd_b": 14.143413999999998
+   },
+   {
+    "area": "MWI",
+    "gdp_usd_b": 18.152,
+    "year": "2026",
+    "debt_pct_gdp": 74.5,
+    "debt_usd_b": 13.523240000000001
+   },
+   {
+    "area": "RWA",
+    "gdp_usd_b": 17.336,
+    "year": "2026",
+    "debt_pct_gdp": 66.8,
+    "debt_usd_b": 11.580447999999999
+   },
+   {
+    "area": "NAM",
+    "gdp_usd_b": 17.314,
+    "year": "2026",
+    "debt_pct_gdp": 70.5,
+    "debt_usd_b": 12.20637
+   },
+   {
+    "area": "MUS",
+    "gdp_usd_b": 17.119,
+    "year": "2026",
+    "debt_pct_gdp": 86.5,
+    "debt_usd_b": 14.807935
+   },
+   {
+    "area": "BHS",
+    "gdp_usd_b": 17.042,
+    "year": "2026",
+    "debt_pct_gdp": 71.9,
+    "debt_usd_b": 12.253198000000003
+   },
+   {
+    "area": "COG",
+    "gdp_usd_b": 17.028,
+    "year": "2026",
+    "debt_pct_gdp": 91.3,
+    "debt_usd_b": 15.546563999999998
+   },
+   {
+    "area": "BRN",
+    "gdp_usd_b": 16.863,
+    "year": "2026",
+    "debt_pct_gdp": 1.5,
+    "debt_usd_b": 0.252945
+   },
+   {
+    "area": "WBG",
+    "gdp_usd_b": 16.017,
+    "year": "2024",
+    "debt_pct_gdp": 56.1,
+    "debt_usd_b": 8.985537
+   },
+   {
+    "area": "MRT",
+    "gdp_usd_b": 14.352,
+    "year": "2026",
+    "debt_pct_gdp": 37.1,
+    "debt_usd_b": 5.324592
+   },
+   {
+    "area": "SOM",
+    "gdp_usd_b": 14.174,
+    "year": "2026",
+    "debt_pct_gdp": null,
+    "debt_usd_b": null
+   },
+   {
+    "area": "UVK",
+    "gdp_usd_b": 14.053,
+    "year": "2026",
+    "debt_pct_gdp": 18.7,
+    "debt_usd_b": 2.627911
+   },
+   {
+    "area": "TGO",
+    "gdp_usd_b": 13.437,
+    "year": "2026",
+    "debt_pct_gdp": 64.7,
+    "debt_usd_b": 8.693739
+   },
+   {
+    "area": "MNE",
+    "gdp_usd_b": 10.227,
+    "year": "2026",
+    "debt_pct_gdp": 62.4,
+    "debt_usd_b": 6.381648
+   },
+   {
+    "area": "LIE",
+    "gdp_usd_b": 9.442,
+    "year": "2026",
+    "debt_pct_gdp": 0.5,
+    "debt_usd_b": 0.04721
+   },
+   {
+    "area": "BRB",
+    "gdp_usd_b": 8.483,
+    "year": "2026",
+    "debt_pct_gdp": 89.5,
+    "debt_usd_b": 7.592285
+   },
+   {
+    "area": "SLE",
+    "gdp_usd_b": 8.27,
+    "year": "2026",
+    "debt_pct_gdp": 44.3,
+    "debt_usd_b": 3.6636099999999994
+   },
+   {
+    "area": "BDI",
+    "gdp_usd_b": 8.137,
+    "year": "2026",
+    "debt_pct_gdp": 37,
+    "debt_usd_b": 3.0106900000000003
+   },
+   {
+    "area": "MDV",
+    "gdp_usd_b": 8.13,
+    "year": "2026",
+    "debt_pct_gdp": 129.4,
+    "debt_usd_b": 10.520220000000002
+   },
+   {
+    "area": "YEM",
+    "gdp_usd_b": 7.435,
+    "year": "2026",
+    "debt_pct_gdp": null,
+    "debt_usd_b": null
+   },
+   {
+    "area": "FJI",
+    "gdp_usd_b": 6.352,
+    "year": "2026",
+    "debt_pct_gdp": 82.5,
+    "debt_usd_b": 5.240400000000001
+   },
+   {
+    "area": "SSD",
+    "gdp_usd_b": 6.069,
+    "year": "2026",
+    "debt_pct_gdp": 57.3,
+    "debt_usd_b": 3.477537
+   },
+   {
+    "area": "SUR",
+    "gdp_usd_b": 5.908,
+    "year": "2026",
+    "debt_pct_gdp": 87.1,
+    "debt_usd_b": 5.145868
+   },
+   {
+    "area": "SWZ",
+    "gdp_usd_b": 5.792,
+    "year": "2026",
+    "debt_pct_gdp": 50,
+    "debt_usd_b": 2.8959999999999995
+   },
+   {
+    "area": "LBR",
+    "gdp_usd_b": 5.642,
+    "year": "2026",
+    "debt_pct_gdp": 53.8,
+    "debt_usd_b": 3.035396
+   },
+   {
+    "area": "AND",
+    "gdp_usd_b": 4.879,
+    "year": "2026",
+    "debt_pct_gdp": 28,
+    "debt_usd_b": 1.36612
+   },
+   {
+    "area": "DJI",
+    "gdp_usd_b": 4.725,
+    "year": "2026",
+    "debt_pct_gdp": 29.6,
+    "debt_usd_b": 1.3985999999999998
+   },
+   {
+    "area": "ABW",
+    "gdp_usd_b": 4.671,
+    "year": "2026",
+    "debt_pct_gdp": 60.3,
+    "debt_usd_b": 2.816613
+   },
+   {
+    "area": "BTN",
+    "gdp_usd_b": 3.856,
+    "year": "2026",
+    "debt_pct_gdp": 120.3,
+    "debt_usd_b": 4.638768
+   },
+   {
+    "area": "CAF",
+    "gdp_usd_b": 3.492,
+    "year": "2026",
+    "debt_pct_gdp": 64,
+    "debt_usd_b": 2.23488
+   },
+   {
+    "area": "BLZ",
+    "gdp_usd_b": 3.45,
+    "year": "2026",
+    "debt_pct_gdp": 63.2,
+    "debt_usd_b": 2.1804
+   },
+   {
+    "area": "CPV",
+    "gdp_usd_b": 3.448,
+    "year": "2026",
+    "debt_pct_gdp": 95.9,
+    "debt_usd_b": 3.306632
+   },
+   {
+    "area": "GNB",
+    "gdp_usd_b": 2.985,
+    "year": "2026",
+    "debt_pct_gdp": 73.6,
+    "debt_usd_b": 2.19696
+   },
+   {
+    "area": "LSO",
+    "gdp_usd_b": 2.972,
+    "year": "2026",
+    "debt_pct_gdp": 49,
+    "debt_usd_b": 1.4562799999999998
+   },
+   {
+    "area": "GMB",
+    "gdp_usd_b": 2.792,
+    "year": "2026",
+    "debt_pct_gdp": 68.3,
+    "debt_usd_b": 1.9069359999999997
+   },
+   {
+    "area": "LCA",
+    "gdp_usd_b": 2.765,
+    "year": "2026",
+    "debt_pct_gdp": 77.5,
+    "debt_usd_b": 2.142875
+   },
+   {
+    "area": "SMR",
+    "gdp_usd_b": 2.417,
+    "year": "2026",
+    "debt_pct_gdp": 77.3,
+    "debt_usd_b": 1.8683409999999998
+   },
+   {
+    "area": "ATG",
+    "gdp_usd_b": 2.385,
+    "year": "2026",
+    "debt_pct_gdp": 66.5,
+    "debt_usd_b": 1.586025
+   },
+   {
+    "area": "SYC",
+    "gdp_usd_b": 2.251,
+    "year": "2026",
+    "debt_pct_gdp": 55,
+    "debt_usd_b": 1.2380499999999999
+   },
+   {
+    "area": "TLS",
+    "gdp_usd_b": 2.17,
+    "year": "2026",
+    "debt_pct_gdp": 14.9,
+    "debt_usd_b": 0.32333
+   },
+   {
+    "area": "ERI",
+    "gdp_usd_b": 1.982,
+    "year": "2019",
+    "debt_pct_gdp": 260.4,
+    "debt_usd_b": 5.161128
+   },
+   {
+    "area": "SLB",
+    "gdp_usd_b": 1.836,
+    "year": "2026",
+    "debt_pct_gdp": 29.9,
+    "debt_usd_b": 0.548964
+   },
+   {
+    "area": "COM",
+    "gdp_usd_b": 1.814,
+    "year": "2026",
+    "debt_pct_gdp": 32.4,
+    "debt_usd_b": 0.587736
+   },
+   {
+    "area": "GRD",
+    "gdp_usd_b": 1.483,
+    "year": "2026",
+    "debt_pct_gdp": 69,
+    "debt_usd_b": 1.0232700000000001
+   },
+   {
+    "area": "VUT",
+    "gdp_usd_b": 1.396,
+    "year": "2026",
+    "debt_pct_gdp": 43.2,
+    "debt_usd_b": 0.603072
+   },
+   {
+    "area": "WSM",
+    "gdp_usd_b": 1.376,
+    "year": "2026",
+    "debt_pct_gdp": 17.1,
+    "debt_usd_b": 0.23529599999999998
+   },
+   {
+    "area": "VCT",
+    "gdp_usd_b": 1.236,
+    "year": "2026",
+    "debt_pct_gdp": 120.1,
+    "debt_usd_b": 1.484436
+   },
+   {
+    "area": "STP",
+    "gdp_usd_b": 1.161,
+    "year": "2026",
+    "debt_pct_gdp": 50.4,
+    "debt_usd_b": 0.585144
+   },
+   {
+    "area": "KNA",
+    "gdp_usd_b": 1.143,
+    "year": "2026",
+    "debt_pct_gdp": 64,
+    "debt_usd_b": 0.7315200000000001
+   },
+   {
+    "area": "DMA",
+    "gdp_usd_b": 0.791,
+    "year": "2026",
+    "debt_pct_gdp": 98.3,
+    "debt_usd_b": 0.777553
+   },
+   {
+    "area": "TON",
+    "gdp_usd_b": 0.716,
+    "year": "2026",
+    "debt_pct_gdp": 34.4,
+    "debt_usd_b": 0.24630399999999997
+   },
+   {
+    "area": "FSM",
+    "gdp_usd_b": 0.521,
+    "year": "2026",
+    "debt_pct_gdp": 7.5,
+    "debt_usd_b": 0.039075
+   },
+   {
+    "area": "KIR",
+    "gdp_usd_b": 0.401,
+    "year": "2026",
+    "debt_pct_gdp": 7.7,
+    "debt_usd_b": 0.030877
+   },
+   {
+    "area": "PLW",
+    "gdp_usd_b": 0.377,
+    "year": "2026",
+    "debt_pct_gdp": 56.7,
+    "debt_usd_b": 0.213759
+   },
+   {
+    "area": "MHL",
+    "gdp_usd_b": 0.342,
+    "year": "2026",
+    "debt_pct_gdp": 16.7,
+    "debt_usd_b": 0.057114000000000005
+   },
+   {
+    "area": "NRU",
+    "gdp_usd_b": 0.196,
+    "year": "2026",
+    "debt_pct_gdp": 12.7,
+    "debt_usd_b": 0.024891999999999997
+   },
+   {
+    "area": "TUV",
+    "gdp_usd_b": 0.065,
+    "year": "2026",
+    "debt_pct_gdp": 3.2,
+    "debt_usd_b": 0.0020800000000000003
    }
   ],
   "n_countries_total": 195,
