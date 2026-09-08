@@ -82,6 +82,92 @@ track separately.
 NOTHING HERE IS PERSONAL. Every input is a public economic statistic from a
 central bank, a supranational institution, or a public compilation of central
 bank reports — no account, no key, nothing about anyone's personal holdings.
+
+MONEY SUPPLY EXPANSION — 2026-09-08 (read before adding/removing an economy)
+Started as "as many economies as can be genuinely, honestly sourced," not a
+fixed target — the board grew from 2 economies (US + Euro area) to 7 with
+real, verified, CURRENT live data, plus 9 more shown with blank cells and an
+honest source-note because they were seriously investigated but have no
+working live source today (Michael's call: show the country, don't silently
+drop it — a reader should see the board's coverage AMBITION, not just what
+happened to resolve on a given day). Full per-economy detail lives in
+money_worldwide_seed.json's `money_supply_economies`/`money_supply_unresolved`
+notes; this is the shape of what was found.
+
+THE OBVIOUS TEMPLATED-PATTERN HUNCH — REAL, BUT DEAD, VERIFIED DIRECTLY
+The natural next move after the US/Euro-area build was "surely FRED mirrors
+OECD's Main Economic Indicators money-supply tables the same templated way
+it mirrors IMF reserve data" (`TRESEG<CC>M052N`, used above, IS templated
+and IS current). It genuinely is templated — `MANMM101<CC>M657S` (narrow
+money, growth rate) and `MABMM301<CC>M189S` / `MANMM101<CC>M189S` (broad/
+narrow money, LEVEL, national currency) resolve for essentially every OECD
+country by swapping in its 2-letter code (US/GB/JP/CA/AU/KR/MX/CH/CN all
+confirmed to return real historical data). But EVERY series in this family
+stopped updating years ago — most in 2023-11 (the US, UK, Japan, Australia,
+South Africa), Canada in 2023-10, Korea in 2023-10, and Mexico/Switzerland
+all the way back in 2018-12 — because OECD discontinued this MEI dataset.
+The IMF-mirrored equivalent (`MYAGM2<CC>M189N`, used for China below) is
+even staler (China's stopped in 2019-08). None of this is "roughly current"
+by this board's standard — a series that cannot move for three years is not
+a live source, so the whole family is unused here despite genuinely working
+as an HTTP request. This is worth remembering distinctly from the reserve
+series' FRED mirror, which IS current — "FRED mirrors this IMF/OECD dataset"
+is not, by itself, evidence a mirror is still being fed.
+
+FIVE REAL LIVE SOURCES FOUND INSTEAD, EACH VERIFIED BY A REAL REQUEST
+  - Canada — Bank of Canada Valet API (bankofcanada.ca/valet), genuinely
+    keyless, M1++/M2/M3 (gross, SA) as of 2026-06, updated within the API's
+    normal 1-2 month lag. Accepts a bare default User-Agent.
+  - Switzerland — the SNB Data Portal's cube API (data.snb.ch/api/cube/
+    snbmonagg), genuinely keyless, M1/M2/M3 as of 2026-07. One HTTP call
+    returns every aggregate in the cube (both the level AND the y/y-change
+    series share dimension codes, so the fetch filters on "Level" — see
+    `_snb_cube_values`). Accepts a bare default User-Agent.
+  - Brazil — Banco Central do Brasil's SGS API (api.bcb.gov.br/dados/serie),
+    genuinely keyless, M1/M2/M3 as of 2026-07 (codes 27841/27842/27813 —
+    confirmed against each series' own dadosabertos.bcb.gov.br dataset page,
+    not guessed; a same-shaped code, 27810, turned out to be a near-duplicate
+    M2 vintage and was NOT used). Accepts a bare default User-Agent.
+  - United Kingdom — the Bank of England's IADB (bankofengland.co.uk/
+    boeapps/database), genuinely keyless but — confirmed directly — 403s
+    Python's own bare default User-Agent (the opposite failure mode from
+    FRED/DataMapper, which 403/hang on a DESCRIPTIVE one); `_boe_iadb_latest`
+    sends this script's real UA. The UK discontinued M1/M2/M3-class
+    reporting in 2006, so only M4 (LPMAUYN, SA, £m, as of 2026-07) exists —
+    shown in the board's M3 column as this economy's own broadest published
+    aggregate, the same convention the Euro area's M3 already uses.
+  - Norway — Statistics Norway's StatBank PxWebAPI (data.ssb.no/api/v0),
+    genuinely keyless, and the ONLY new economy with a complete M0-M3 row:
+    table 10946 (base money M0) + table 10945 (M1/M2/M3), both as of
+    2026-07. A POST with a JSON query body, not a query-string GET — see
+    `_ssb_pxweb_latest`.
+
+NINE ECONOMIES SERIOUSLY INVESTIGATED, SHOWN WITH BLANK CELLS
+(full reasoning for each lives in the seed file's `money_supply_unresolved`
+entries — this is the one-line summary of each dead end)
+  - China, India, South Africa — the templated FRED/IMF mirror exists but is
+    stale (see above); no confirmed alternative keyless API.
+  - Japan — the Bank of Japan's OWN Time-Series Data Search API is real and
+    keyless (its manual literally says "available for use by anyone"), but
+    its series-code scheme is internal apostrophe-delimited mnemonics
+    (e.g. "BS01'MABJMTA"), not a guessable template — a real candidate for a
+    future dated follow-up, not a dead end like the others on this list.
+  - South Korea (Bank of Korea ECOS), Mexico (Banxico SIE), Turkey (CBRT
+    EVDS) — each has a real, documented API, and each confirmed BY A LIVE
+    REQUEST to require a registered access key/token (Banxico returned a
+    literal "Token inválido" error) — not keyless, so excluded on the same
+    "keyless first" standard the rest of this board holds to.
+  - Australia — the RBA's Table D3 is genuinely live, current (confirmed
+    fresh within days) and keyless, but ONLY as an .xlsx download. This
+    fetcher — like every sibling fetcher this repo's refresh workflow runs —
+    is deliberately stdlib-only (no pip install step); parsing a binary
+    spreadsheet would mean adding openpyxl/pandas for one economy's one
+    column, so it's left out on purpose rather than breaking that convention.
+  - Denmark — Danmarks Nationalbank's own StatBank instance publishes M1/M2/
+    M3 (table DNMNOGL) but its PxWebAPI base path (distinct from Statistics
+    Denmark's main dst.dk instance, which DOES work — see Norway/SSB above
+    for the same API family working elsewhere) could not be confirmed
+    working within reasonable research effort.
 """
 from __future__ import annotations
 
@@ -180,6 +266,24 @@ def _get_text(url, timeout=25, send_ua=True):
         return None
 
 
+def _post_json(url, payload, timeout=25, send_ua=False):
+    """POST a JSON body, return the parsed JSON response (or None on any
+    failure) — used only by Statistics Norway's PxWebAPI, which needs a
+    query body rather than query-string params. Same fail-soft contract as
+    _get_json/_get_text: a down source costs only its own row, never a crash."""
+    try:
+        body = json.dumps(payload).encode("utf-8")
+        headers = {"Content-Type": "application/json"}
+        if send_ua:
+            headers.update(_UA_HEADER)
+        req = urllib.request.Request(url, data=body, headers=headers)
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as exc:  # noqa: BLE001
+        print("  ! %s — %s" % (url, exc), file=sys.stderr)
+        return None
+
+
 def _load_json_file(path):
     if not os.path.exists(path):
         return None
@@ -247,11 +351,248 @@ def _ecb_bsi_latest(item_code):
         return None, None
 
 
+## ── five more providers (2026-09-08) ──────────────────────────────────────
+# Each of these is a REAL central bank / national statistics office API,
+# individually verified by hand (see the module docstring's dated research
+# log). Unlike the reserve series above, there is no single templated source
+# that covers many countries' money supply at once — the obvious FRED/OECD-MEI
+# templated pattern (MANMM101<CC>M657S / MABMM301<CC>M189S) is real but every
+# country in that family stopped updating in 2018-2023 (verified directly,
+# not assumed) — so this board leans on five separate national sources
+# instead, dispatched generically from money_worldwide_seed.json's
+# money_supply_economies list (`_fetch_generic_money_row`) rather than one
+# hardcoded if-block per country. Adding another economy on one of these
+# SAME five providers is a one-line seed-file entry; a new provider needs a
+# new `_<name>_latest`/`_<name>_values` function below and a new dispatch
+# branch in `_fetch_generic_money_row`.
+
+BOC_VALET_URL = "https://www.bankofcanada.ca/valet/observations/%s/json?recent=1"
+SNB_CUBE_URL = "https://data.snb.ch/api/cube/%s/data/json/en?fromDate=%s"
+BCB_SGS_URL = "https://api.bcb.gov.br/dados/serie/bcdata.sgs.%s/dados/ultimos/1?formato=json"
+BOE_IADB_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp"
+                "?csv.x=yes&Datefrom=01/Jan/%d&Dateto=now&SeriesCodes=%s"
+                "&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N")
+SSB_PXWEB_URL = "https://data.ssb.no/api/v0/en/table/%s"
+
+
+def _boc_valet_latest(series_name):
+    """(date_str "YYYY-MM-DD", float millions-CAD) for the Bank of Canada
+    Valet API's most recent observation of the given V-series, or
+    (None, None). Genuinely keyless — no registration, no token."""
+    d = _get_json(BOC_VALET_URL % series_name, send_ua=False)
+    if not isinstance(d, dict):
+        return None, None
+    obs = d.get("observations") or []
+    if not obs:
+        return None, None
+    row = obs[-1]
+    try:
+        val = (row.get(series_name) or {}).get("v")
+        return row.get("d"), float(val)
+    except (TypeError, ValueError):
+        return None, None
+
+
+def _snb_cube_values(cube_id, dims):
+    """{dim_code: (date_str "YYYY-MM", float millions-CHF)} for every
+    requested dimension in one SNB Data Portal "cube" — ONE http call
+    regardless of how many aggregates are requested, since the cube returns
+    every series in the cube at once. `fromDate` is a real filter the cube
+    API accepts; it's set a year back so the payload stays small without
+    risking missing the latest observation on a slow-reporting month."""
+    from_date = "%d-01-01" % (datetime.now(timezone.utc).year - 1)
+    d = _get_json(SNB_CUBE_URL % (cube_id, from_date), send_ua=False)
+    if not isinstance(d, dict):
+        return {}
+    out = {}
+    for ts in d.get("timeseries") or []:
+        header = ts.get("header") or []
+        # "Level" series only — this cube also carries a parallel
+        # "Change from the corresponding month of the previous year" set
+        # under the same dim codes, which would silently overwrite the
+        # real level if not filtered out here.
+        if not any(h.get("dimItem") == "Level" for h in header):
+            continue
+        dim_item = next((h.get("dimItem") for h in header if h.get("dim") != "Level/change"), None)
+        vals = ts.get("values") or []
+        if not vals:
+            continue
+        last = vals[-1]
+        for dim in dims:
+            # the cube labels dimensions by their human-readable text, not
+            # the short code seed.json uses (GM1/GM2/GM3) — map the codes
+            # this board cares about to the cube's own labels once here.
+            label = {"GM1": "Monetary aggregate M1", "GM2": "Monetary aggregate M2",
+                      "GM3": "Monetary aggregate M3"}.get(dim)
+            if label and dim_item == label:
+                try:
+                    out[dim] = (last.get("date"), float(last.get("value")))
+                except (TypeError, ValueError):
+                    pass
+    return out
+
+
+def _bcb_sgs_latest(series_code):
+    """(date_str "YYYY-MM-DD", float thousands-BRL) for Banco Central do
+    Brasil's SGS API's most recent observation of the given series code, or
+    (None, None). Genuinely keyless."""
+    d = _get_json(BCB_SGS_URL % series_code, send_ua=False)
+    if not isinstance(d, list) or not d:
+        return None, None
+    row = d[-1]
+    try:
+        dd, mm, yyyy = row["data"].split("/")
+        return "%s-%s-%s" % (yyyy, mm, dd), float(row["valor"])
+    except (KeyError, ValueError):
+        return None, None
+
+
+def _boe_iadb_latest(series_code):
+    """(date_str "YYYY-MM-DD", float millions-GBP) for the Bank of England
+    IADB's most recent observation of the given series code, or (None,
+    None). Keyless, but — confirmed by hand — 403s Python's own default
+    User-Agent string the way FRED/DataMapper do the OPPOSITE (see
+    `_UA_HEADER`'s note); this is the one new provider that needs a real UA."""
+    this_year = datetime.now(timezone.utc).year
+    text = _get_text(BOE_IADB_URL % (this_year - 1, series_code), send_ua=True)
+    if not text:
+        return None, None
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if len(lines) < 2:
+        return None, None
+    date_s, val_s = lines[-1].split(",")
+    try:
+        d = datetime.strptime(date_s, "%d %b %Y")
+        return d.strftime("%Y-%m-%d"), float(val_s)
+    except ValueError:
+        return None, None
+
+
+def _ssb_pxweb_latest(table_id, content_code):
+    """(date_str "YYYY-MM", float millions-native) for Statistics Norway's
+    PxWebAPI most recent observation of one content code in one table — two
+    calls (metadata to find the latest period, then a scoped data query),
+    since PxWebAPI has no simple "latest observation" shortcut the way
+    FRED's CSV export does. Genuinely keyless."""
+    meta = _get_json(SSB_PXWEB_URL % table_id, send_ua=False)
+    if not isinstance(meta, dict):
+        return None, None
+    tid = next((v for v in meta.get("variables", []) if v.get("code") == "Tid"), None)
+    if not tid or not tid.get("values"):
+        return None, None
+    latest_period = tid["values"][-1]
+    payload = {
+        "query": [
+            {"code": "ContentsCode", "selection": {"filter": "item", "values": [content_code]}},
+            {"code": "Tid", "selection": {"filter": "item", "values": [latest_period]}},
+        ],
+        "response": {"format": "json-stat2"},
+    }
+    d = _post_json(SSB_PXWEB_URL % table_id, payload, send_ua=False)
+    if not isinstance(d, dict):
+        return None, None
+    vals = d.get("value") or []
+    if not vals:
+        return None, None
+    try:
+        return latest_period, float(vals[0])
+    except (TypeError, ValueError):
+        return None, None
+
+
+def _fetch_generic_money_row(econ, fx):
+    """Build one money_supply row from a money_worldwide_seed.json
+    `money_supply_economies` entry, dispatching on its `provider`. Returns
+    None if literally nothing resolved for this economy (costs only its own
+    row — see the module's fail-soft-per-section contract)."""
+    rate = (fx or {}).get("rates", {}).get(econ["currency"])
+    if not rate:
+        print("  ! %s money supply skipped — no %s/USD rate" % (econ["area"], econ["currency"]),
+              file=sys.stderr)
+        return None
+
+    vals = {}   # "m0"/"m1"/"m2"/"m3" -> (native_billions, date_str)
+    provider = econ["provider"]
+    if provider == "boc_valet":
+        for key, series in econ.get("series", {}).items():
+            d, v = _boc_valet_latest(series)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "snb_cube":
+        cube_vals = _snb_cube_values(econ["cube"], list(econ.get("dims", {}).values()))
+        for key, dim in econ.get("dims", {}).items():
+            d, v = cube_vals.get(dim, (None, None))
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "bcb_sgs":
+        for key, series in econ.get("series", {}).items():
+            d, v = _bcb_sgs_latest(series)
+            if v is not None:
+                vals[key] = (v / 1e6, d)      # thousands -> billions
+    elif provider == "boe_iadb":
+        for key, series in econ.get("series", {}).items():
+            d, v = _boe_iadb_latest(series)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "ssb_pxweb":
+        if econ.get("table_m0") and econ.get("code_m0"):
+            d, v = _ssb_pxweb_latest(econ["table_m0"], econ["code_m0"])
+            if v is not None:
+                vals["m0"] = (v / 1000.0, d)  # millions -> billions
+        for key, code in econ.get("codes_m123", {}).items():
+            d, v = _ssb_pxweb_latest(econ["table_m123"], code)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # millions -> billions
+    else:
+        print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
+              file=sys.stderr)
+        return None
+
+    if not vals:
+        print("  ! %s money supply unresolved (%s)" % (econ["area"], provider), file=sys.stderr)
+        return None
+
+    row = {"area": econ["area"], "flag": econ["flag"], "currency": econ["currency"],
+           "source": econ["source"]}
+    for key in ("m0", "m1", "m2", "m3"):
+        native_b, date_s = vals.get(key, (None, None))
+        row[key] = native_b
+        row["%s_date" % key] = date_s
+        row["usd_%s" % key] = (native_b / rate) if native_b is not None else None
+    # this economy's own broadest resolved aggregate, broadest-first —
+    # same "whatever this economy itself calls its headline figure" idea
+    # the US (M2) and Euro area (M3) rows already use.
+    row["broad_usd"] = next(
+        (row["usd_%s" % k] for k in ("m3", "m2", "m1", "m0") if row["usd_%s" % k] is not None),
+        None)
+    return row
+
+
+def _unresolved_money_row(entry):
+    """A blank-cells row for a genuinely-investigated economy with no
+    working live source yet (Michael's call, 2026-09-08: show the country
+    with dashes and an honest source-note rather than silently drop it —
+    the board's own reader-facing coverage list should be honest about
+    ambition vs. what actually resolved today)."""
+    row = {"area": entry["area"], "flag": entry["flag"], "currency": entry["currency"],
+           "source": entry["note"]}
+    for key in ("m0", "m1", "m2", "m3"):
+        row[key] = None
+        row["%s_date" % key] = None
+        row["usd_%s" % key] = None
+    row["broad_usd"] = None
+    return row
+
+
 def fetch_money_supply(fx, seed):
-    """US (FRED, billions USD) + Euro area (ECB, millions EUR converted to
-    USD via the live fx rate) rows. Two economies, not 190 — see the module
-    docstring's IMF-research section for why a broader keyless pull of
-    comparable, CURRENT money-supply levels isn't achievable today.
+    """US (FRED) + Euro area (ECB) + five more economies (Canada/Switzerland/
+    Brazil/UK/Norway, each its own real keyless API — see the dated research
+    log above `BOC_VALET_URL`) with resolved figures, PLUS a set of
+    genuinely-investigated economies shown with blank cells and an honest
+    source-note (`money_supply_unresolved` in the seed file) rather than
+    silently dropped — see the module docstring's dated 2026-09-08 entry for
+    the full research trail (what was tried for each, and why it either
+    worked or didn't).
 
     The Euro area's M0 ("Base money") is the one figure in this whole board
     that is hand-curated rather than live-queried — not because the ECB
@@ -311,10 +652,28 @@ def fetch_money_supply(fx, seed):
     else:
         print("  ! Euro area money supply unresolved (ECB/fx)", file=sys.stderr)
 
+    for econ in (seed or {}).get("money_supply_economies") or []:
+        row = _fetch_generic_money_row(econ, fx)
+        if row is not None:
+            rows.append(row)
+
     if not rows:
+        # nothing at all resolved (not even the US/Euro area bespoke rows) —
+        # a genuine down-day. Keep the previous board rather than write a
+        # board that's ALL blank-row placeholders (see _unresolved_money_row).
         return None
+    resolved_count = len(rows)
+
+    # Blank-cell rows for economies seriously investigated but with no
+    # working live source yet — appended only once at least one real
+    # economy resolved above, so a total outage never produces an
+    # all-dashes board (see the module docstring's fail-soft contract).
+    for entry in (seed or {}).get("money_supply_unresolved") or []:
+        rows.append(_unresolved_money_row(entry))
+
     total_broad_usd_b = sum(r["broad_usd"] for r in rows if r.get("broad_usd") is not None)
-    return {"rows": rows, "total_broad_usd_b": total_broad_usd_b}
+    return {"rows": rows, "total_broad_usd_b": total_broad_usd_b,
+            "n_resolved": resolved_count, "n_total": len(rows)}
 
 
 # ─────────────────────────────────────────────────────────────── section 3 ──
@@ -459,11 +818,13 @@ def compute_bitcoin_lineup(asset_board, money_supply, gold, debt_gdp):
 
     lineup = []
     if money_supply and money_supply.get("total_broad_usd_b") is not None:
+        n_resolved = money_supply.get("n_resolved", len(money_supply.get("rows", [])))
         lineup.append({
-            "label": "Broad money — U.S. + Euro area (M2 + M3)",
+            "label": "Broad money — %d economies with live data" % n_resolved,
             "usd": money_supply["total_broad_usd_b"] * 1e9,
-            "note": "The two largest, most transparently published economies — a genuine "
-                    "floor under the true global figure, not the whole world's money supply.",
+            "note": "The %d economies on the Money Supply page with a real, current figure "
+                    "today — a genuine floor under the true global figure, not the whole "
+                    "world's money supply." % n_resolved,
         })
     if gold and gold.get("world_market_value_usd"):
         lineup.append({
