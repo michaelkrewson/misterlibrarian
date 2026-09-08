@@ -76,6 +76,21 @@
 <div class="panel">
 <p class="empty">Nothing in draft right now.</p>
 </div>
+<p class="pagehits"><span class="hits" id="hits-travel-drafts-html">👁 <span id="hits-travel-drafts-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ftravel%2Fdrafts.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-travel-drafts-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-travel-drafts-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-travel-drafts-html"); if (el) el.style.display = "none";
+    });
+})();
+</script></p>
 <footer class="site-foot">
   <p>The Librarian Abroad — Notes from the road and from the table — what was worth the trip, what was worth the plate, and what wasn't.</p>
   <p><a href="index.html">Latest</a> · <a href="bookmarked.html">Bookmarked</a> ·

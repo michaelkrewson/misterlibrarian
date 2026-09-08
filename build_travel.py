@@ -623,6 +623,15 @@ def _hits_widget(path, suffix=""):
 </script>"""
 
 
+def _pagehits(file):
+    """The `.pagehits` paragraph `build_index`/`build_post_pages` already each
+    build inline, factored out for the standing utility pages below (About,
+    Bookmarked, Write, Thanks, Drafts) that had none — same "—" placeholder,
+    fetched client-side, same fail-silent-on-a-zero-hit-page posture."""
+    hits = _hits_widget(f"{BASE}/{file}", " views")
+    return f'\n<p class="pagehits">{hits}</p>' if hits else ""
+
+
 def _meta_line(p, show_hits=False):
     bits = [f'<time datetime="{p["date"].isoformat()}">{_pretty_date(p["date"])}</time>']
     if p["place"]:
@@ -1232,7 +1241,7 @@ def build_drafts_index(all_posts):
 </section>
 <div class="panel">
 {listing}
-</div>"""
+</div>{_pagehits(DRAFTS_INDEX_FILE)}"""
     return page(f"Drafts — {SITE_NAME}", body,
                 desc="Unpublished entries, for preview only.", noindex=True)
 
@@ -1328,7 +1337,7 @@ def build_bookmarked():
   there's no meal to score. When one of these actually gets eaten, it
   graduates into a real entry.</p>
 </section>
-{list_html}"""
+{list_html}{_pagehits("bookmarked.html")}"""
     return page(f"Bookmarked — {SITE_NAME}", body, active="bookmarked",
                 desc="Places worth going back for — spotted but not yet reviewed.",
                 url="bookmarked.html")
@@ -1377,7 +1386,7 @@ def build_about():
 
   <h2>A note on timing</h2>
   <p>Entries generally go up after I'm home again, not while I'm away.</p>
-</div>"""
+</div>{_pagehits("about.html")}"""
     return page(f"About — {SITE_NAME}", body, active="about",
                 desc=f"About {SITE_NAME}.", url="about.html")
 
@@ -1435,14 +1444,14 @@ def build_write():
     if (re && f) f.value = re.slice(0, 200);
   }} catch (e) {{}}
 }})();
-</script>"""
+</script>{_pagehits("write.html")}"""
     return page(f"Write to the librarian — {SITE_NAME}", body, active="write",
                 desc="Send a note, a correction or a recommendation to Mr. Librarian.",
                 url="write.html")
 
 
 def build_thanks():
-    body = """<section class="lede">
+    body = f"""<section class="lede">
   <h1>It's on the desk</h1>
 </section>
 <div class="panel prose">
@@ -1450,7 +1459,7 @@ def build_thanks():
   good tip about somewhere I haven't been is the most useful thing anyone sends.</p>
   <p>If you left an email and it wants an answer, you'll get one. Meanwhile the
   <a href="index.html">rest of the entries</a> are here.</p>
-</div>"""
+</div>{_pagehits("thanks.html")}"""
     # noindex: this page only exists as somewhere to land after submitting.
     return page(f"Message received — {SITE_NAME}", body,
                 desc="Your note is on the librarian's desk.", noindex=True)
