@@ -89,12 +89,27 @@ SLOW_PACE_S = 3.5         # gap between per-coin historical calls, to be a polit
 SLOW_REFRESH_DAYS = 5     # how long a coin's 3M/6M/YTD is trusted before it's due again
 
 # ── categories — two positive, curated lists; everything unmapped is "Others" ──
-
+#
+# BITCOIN_DERIVATIVES deliberately means "shares Bitcoin's own ledger, or IS
+# Bitcoin" — NOT "was inspired by Bitcoin's open-source code." Those are very
+# different claims: Bitcoin Cash/SV/Gold are literal CHAIN forks (they share
+# every pre-fork Bitcoin transaction, down to the same genesis block) and
+# WBTC/cbBTC/tBTC/renBTC/Liquid BTC are the same asset, custodied and
+# reissued on another chain — both groups are Bitcoin in a real sense.
+# Litecoin, Zcash and Dash are NOT: each copied Bitcoin's original codebase
+# but then launched its OWN independent genesis block/chain in 2011-2016,
+# sharing no transaction history with Bitcoin at all — closer kin to any
+# other independent L1 than to Bitcoin itself. (Michael, 2026-09-08, after
+# the earlier version lumped Dash in here: "I also noticed dash is not
+# included in the Bitcoin area" — right instinct, and it turns out Litecoin
+# and Zcash were misclassified by the exact same logic.) Narrowing this
+# also happens to be the direct, standard fix for the treemap's own
+# degenerate-sliver problem: Bitcoin no longer has to compete for space
+# against $20B+ combined codebase-cousins that were never really its family.
 BITCOIN_DERIVATIVES = {
-    "bitcoin", "bitcoin-cash", "bitcoin-sv", "bitcoin-gold", "litecoin",
-    "zcash", "dash", "digibyte",
+    "bitcoin", "bitcoin-cash", "bitcoin-sv", "bitcoin-gold",
     "wrapped-bitcoin", "coinbase-wrapped-btc", "tbtc", "renbtc",
-    "blockstream-liquid-bitcoin", "stacks", "rootstock-rsk",
+    "blockstream-liquid-bitcoin",
 }
 
 INFRASTRUCTURE_PLATFORM = {
@@ -107,7 +122,7 @@ INFRASTRUCTURE_PLATFORM = {
     "render-token", "the-graph", "fantom", "eos", "tezos", "neo", "waves",
     "zilliqa", "harmony", "quant-network", "hyperliquid", "canton-network",
     "bittensor", "pi-network", "worldcoin-wld", "beldex", "xdce-crowd-sale",
-    "rootstock-rsk",
+    "rootstock-rsk", "stacks",
 }
 
 CATEGORY_BTC = "Bitcoin & Derivatives"

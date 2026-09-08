@@ -1647,8 +1647,11 @@ def build_board(board):
 
 CRYPTO_CATEGORY_ORDER = ("Bitcoin & Derivatives", "Infrastructure & Platform", "Others")
 CRYPTO_CATEGORY_BLURB = {
-    "Bitcoin & Derivatives": "Bitcoin itself, coins forked from its codebase, and "
-        "tokenized or wrapped representations of BTC.",
+    "Bitcoin & Derivatives": "Bitcoin itself, coins that literally forked its "
+        "chain (sharing its transaction history), and tokenized or wrapped "
+        "representations of BTC. Coins that only reused Bitcoin's original "
+        "code to launch their own separate chain (Litecoin, Zcash, Dash, ...) "
+        "are elsewhere — they don't share Bitcoin's ledger.",
     "Infrastructure & Platform": "Base-layer blockchains, scaling layers, oracles "
         "and interoperability protocols — the networks everything else is built on.",
     "Others": "Stablecoins, tokenized funds, DeFi applications, exchange tokens, "
@@ -1760,19 +1763,76 @@ def _crypto_heat_color(v):
     return "hsl(%d,68%%,%.0f%%)" % (hue, lightness)
 
 
-# A bold sans-serif glyph averages roughly 0.6x its font-size in width — used
-# below to size text by how many CHARACTERS have to fit across a box, not just
-# the box's raw width. A flat width-only multiplier (the first cut of this
-# function) sized "BTC" and "GRAM" identically and let 4-5 letter symbols
-# (HYPE, NEAR, GRAM) overflow their box — this is what fixed it.
-_CRYPTO_CHAR_W = 0.6
+# A flat "0.6x font-size per character" average (the first cut of this
+# function) sized every symbol as if it were made of average-width letters —
+# fine for "BTC", but "WOO"/"MEW"/"MOODENG" run 25-30% WIDER per character
+# than that average (measured directly: rendered each letter A-Z/0-9 alone
+# and full ticker strings at a fixed font-size in this exact font stack via
+# headless Chrome, then compared pixel widths — see the 2026-09-08 session
+# that built this table). Using the flat average for a W/M-heavy symbol
+# computed a font-size that looked right by CHARACTER COUNT but visibly
+# overflowed its box in the browser (Michael: "you need to make the other
+# ones smaller... oversized... compared to Bitcoin" — the ellipsis-truncated
+# ETH/BNB/XRP/SOL symbols were this bug, not a proportionality bug; Bitcoin's
+# own tile never hit it because its font is HEIGHT-bound, not width-bound,
+# so the same wrong formula happened to have slack there). Per-character
+# widths fix it exactly instead of guessing a single safer-but-wasteful
+# constant for every symbol regardless of its actual letters.
+_CRYPTO_CHAR_WIDTH = {
+    "A": 0.66, "B": 0.555, "C": 0.64, "D": 0.605, "E": 0.465, "F": 0.46,
+    "G": 0.65, "H": 0.61, "I": 0.145, "J": 0.475, "K": 0.59, "L": 0.455,
+    "M": 0.745, "N": 0.595, "O": 0.675, "P": 0.53, "Q": 0.675, "R": 0.565,
+    "S": 0.565, "T": 0.555, "U": 0.59, "V": 0.645, "W": 0.92, "X": 0.64,
+    "Y": 0.63, "Z": 0.545,
+    "0": 0.57, "1": 0.33, "2": 0.52, "3": 0.545, "4": 0.58, "5": 0.535,
+    "6": 0.56, "7": 0.5, "8": 0.565, "9": 0.565,
+}
+_CRYPTO_CHAR_W_DEFAULT = 0.6  # any character outside A-Z/0-9 (e.g. "_")
+# Two effects stack on top of the raw per-letter widths above, both measured
+# directly (render + pixel-measure, not guessed): (1) real inter-letter
+# spacing (kerning + each glyph's own side bearings) runs +8-12% wider than
+# summing isolated single-letter bounding boxes; (2) at the SMALL sizes most
+# tiles actually render at (most tickers are a fraction of Bitcoin's own
+# tile), font hinting rounds glyphs to whole device pixels and widens the
+# rendered text a further +5-10% beyond what a linear scale-down from a
+# large calibration size predicts — a string measured at 200px and divided
+# down to 18px comes out measurably narrower than that same string actually
+# rendered AT 18px. Both effects together needed +19-23% across every test
+# case (8px-90px, ten symbols including the worst offenders: LINK's narrow
+# "I", the long compound "FIGR_HELOC"); 1.3 clears the worst of those with
+# margin to spare for symbols not in the test set.
+_CRYPTO_CHAR_SPACING = 1.3
+
+
+def _crypto_text_width_ratio(text):
+    """Total width of `text`, in units of its own font-size (i.e. the cqw
+    value that would make its rendered width exactly fill width_cqw)."""
+    return sum(_CRYPTO_CHAR_WIDTH.get(c, _CRYPTO_CHAR_W_DEFAULT)
+               for c in text.upper()) * _CRYPTO_CHAR_SPACING
+
+
+# Every .ctsym/.ctpx/.ctpc/.ctdom span carries its own `max-width:96%` (CSS,
+# below) as a last-ditch overflow guard. That 96% is relative to the SPAN'S
+# OWN containing tile, a completely different basis than the `cqw` this
+# function computes in (relative to the whole .treemapwrap canvas) — the two
+# don't automatically agree. Targeting a font that fills exactly 100% of a
+# box's width, as this function did before, computes a value CSS then clips
+# straight back down to 96% width with an ellipsis: a "correct" fit that
+# still visibly truncates every width-bound symbol (paid for 2026-09-08 —
+# ETH/BNB/XRP/SOL all read "ET…"/"B…" etc. even after the per-character width
+# model above was exact, because the target itself was still 4% too wide;
+# Bitcoin's own tile never showed it only because ITS font is HEIGHT-bound,
+# comfortably under 96% either way). Targeting this same 96% here — with a
+# hair of its own margin — keeps both ceilings in agreement.
+_CRYPTO_WIDTH_TARGET = 0.94
 
 
 def _crypto_fit_font(text, width_cqw, height_cap_cqw):
     """Largest font-size (in cqw units) that fits `text` across width_cqw
     without overflowing sideways, capped at height_cap_cqw so a short string
     in a tall-but-narrow box doesn't blow past its own line's vertical share."""
-    return min(width_cqw / (max(len(text), 1) * _CRYPTO_CHAR_W), height_cap_cqw)
+    width_fit = width_cqw * _CRYPTO_WIDTH_TARGET / max(_crypto_text_width_ratio(text), 0.1)
+    return min(width_fit, height_cap_cqw)
 
 
 # The widest .treemapwrap itself can ever get — .wrap's own max-width (1060)
@@ -2113,7 +2173,7 @@ table.crypto td.cs{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:n
   letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:2;
   box-sizing:border-box}
 .crytile{position:absolute;display:flex;flex-direction:column;align-items:center;
-  justify-content:center;gap:1px;border:1px solid rgba(5,8,13,.55);color:#fff;
+  justify-content:center;gap:1px;outline:1px solid rgba(5,8,13,.55);color:#fff;
   text-align:center;overflow:hidden;text-shadow:0 1px 2px rgba(0,0,0,.35);
   box-sizing:border-box;transition:filter .12s;font-family:ui-sans-serif,system-ui,sans-serif;
   text-decoration:none;cursor:pointer}
