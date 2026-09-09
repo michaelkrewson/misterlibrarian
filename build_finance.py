@@ -826,27 +826,16 @@ def _entry_hero(e):
             % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
 
 
-def _ask_nudge(e):
-    """X as the comment system (blogkit.x_comment_url / x_search_url) for a
-    published entry — replacing the form-based nudge below (2026-09-09,
-    Michael's call; see blogkit's own docstring on the two functions this
-    calls). The general ask.html page is unchanged and still nav-linked for
-    anything not tied to one entry. A DRAFT keeps the old form-based nudge —
-    its URL is unlisted and not meant to be posted publicly to X."""
-    if e["draft"]:
-        return ('<div class="respond">'
-                '<p><strong>Got a question?</strong> Something here you want pushed on, '
-                'or think I have wrong? <a href="ask.html?re=%s">Ask Mr. Librarian</a> — '
-                'it goes straight to my desk.</p></div>'
-                % urllib.parse.quote(e["title"]))
-    full_url = "%s%s.html" % (BASE_URL, e["slug"])
-    comment = blogkit.x_comment_url(e["title"], full_url)
-    search = blogkit.x_search_url(full_url)
-    return ('<div class="respond">'
-            '<p><strong>Got a question?</strong> Something here you want pushed on, '
-            'or think I have wrong? Comment on X and it posts publicly, pinging me '
-            'directly — or see what other readers have already said.</p>'
-            '<div class="respond-actions">'
+def _comment_box(title, url):
+    """The site's whole comment system: X as the comment layer
+    (blogkit.x_comment_url / x_search_url) — two buttons, no pitch copy
+    (2026-09-09, Michael's call: drop the "Got a question?" paragraph that
+    used to sit above them). Shared by every entry AND every standing page
+    (the board/treasuries/crypto/bitcoin/humanity/money-worldwide pages) plus
+    the front page itself, so the whole publication carries the same box."""
+    comment = blogkit.x_comment_url(title, url)
+    search = blogkit.x_search_url(url)
+    return ('<div class="respond"><div class="respond-actions">'
             '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
             'rel="noopener">💬 Comment on X</a>'
             '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
@@ -855,18 +844,21 @@ def _ask_nudge(e):
             % (comment, search))
 
 
-def _treasury_nudge(subject):
-    """The Treasuries board's own version of _ask_nudge() — same form, same
-    no-backend reasoning, different pitch: this board is explicitly a curated
-    top-holders list that is meant to GROW, and the fastest way it grows is a
-    reader who knows of a holder it's missing or a figure it has wrong. Every
-    tip funnels through the one form the whole publication already has."""
-    return ('<div class="respond">'
-            '<p><strong>Know a holder we\'re missing, or think a figure here is '
-            'wrong?</strong> This board only gets closer to exhaustive with help — '
-            'include a source if you have one, and it gets checked into the next '
-            'update. <a href="ask.html?re=%s">Tell Mr. Librarian →</a></p></div>'
-            % urllib.parse.quote(subject))
+def _ask_nudge(e):
+    """_comment_box() for a published entry — replacing the form-based nudge
+    below (2026-09-09, Michael's call; see blogkit's own docstring on the two
+    functions _comment_box calls). The general ask.html page is unchanged and
+    still nav-linked for anything not tied to one entry. A DRAFT keeps the old
+    form-based nudge — its URL is unlisted and not meant to be posted
+    publicly to X."""
+    if e["draft"]:
+        return ('<div class="respond">'
+                '<p><strong>Got a question?</strong> Something here you want pushed on, '
+                'or think I have wrong? <a href="ask.html?re=%s">Ask Mr. Librarian</a> — '
+                'it goes straight to my desk.</p></div>'
+                % urllib.parse.quote(e["title"]))
+    full_url = "%s%s.html" % (BASE_URL, e["slug"])
+    return _comment_box(e["title"], full_url)
 
 
 def build_entry_page(e, board=None):
@@ -1554,7 +1546,9 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     </div>%s
     %s
   </section>%s
-""" % (_front_hero(), intro, chips, viewbar, tiles, archive_html, loadmore, index_hits_html),
+%s
+""" % (_front_hero(), intro, chips, viewbar, tiles, archive_html, loadmore, index_hits_html,
+       _comment_box(SITE_NAME, BASE_URL)),
         extra_js=pagination_js)
 
 
@@ -2134,13 +2128,15 @@ def build_board(board):
   <p class="lede">%(blurb)s</p>
   <p class="stamp">Updated %(gen)s%(btc)s</p>
 %(table)s
+%(nudge)s
 """ % {"blurb": esc(BLURB), "gen": esc(board.get("generated", "—")),
        "btc": btc_line, "table": BOARD_BODY_TEMPLATE % {"rows": rows,
                                                         "gold": "{:,}".format(gold_t),
                                                         "silver": "{:,}".format(silver_t),
                                                         "btcc": "{:,}".format(btc_c),
                                                         "btch": ("{:,}".format(btc_h)
-                                                                 if btc_h else "the current block")}}
+                                                                 if btc_h else "the current block")},
+       "nudge": _comment_box("The Asset Board", "%sboard.html" % BASE_URL)}
 
     # The <title> keeps the descriptive phrase the H1 used to carry. "The Asset
     # Board" is what it is CALLED (and now has a sibling it must be told apart
@@ -2900,6 +2896,7 @@ def build_crypto_heatmap(board):
     investment advice, and a coin's presence in the top 100 is not an
     endorsement of it.</p>
   </div>
+{_comment_box("The Crypto Heat Map", "%scrypto.html" % BASE_URL)}
 """
     return _shell(title="The Crypto Heat Map — top 100 cryptocurrencies — %s" % SITE_NAME,
                   desc=desc, url="%scrypto.html" % BASE_URL, active="crypto",
@@ -3195,7 +3192,7 @@ def build_treasuries_hub(board, cebe=None):
   <h2 style="margin:34px 0 4px;font-weight:400;font-size:19px">The top 20, across every category</h2>
 {table}
 {_treasury_methods_panel()}
-{_treasury_nudge("Treasuries board")}
+{_comment_box("Bitcoin Treasuries", "%streasuries.html" % BASE_URL)}
 """
     return _shell(title="Bitcoin Treasuries — who holds the world's Bitcoin",
                   desc=desc, url="%streasuries.html" % BASE_URL, active="treasuries",
@@ -3222,7 +3219,7 @@ def build_treasuries_category(board, category):
   {_treasury_freshness_line(board)}
 {table}
 {_treasury_methods_panel()}
-{_treasury_nudge("Treasuries — " + meta["title"])}
+{_comment_box(meta["title"] + " — Bitcoin Treasuries", "%s%s" % (BASE_URL, meta["file"]))}
   <p class="backlink"><a href="treasuries.html">← All Bitcoin Treasuries categories</a></p>
 """
     return _shell(title=f"{meta['title']} — Bitcoin Treasuries — {SITE_NAME}",
@@ -3531,7 +3528,7 @@ def build_cebe(board):
     <span class="dot">·</span><span class="hl">{len(rows)} companies priced</span></p>
 {table}
 {_cebe_methods_panel(board)}
-{_treasury_nudge("CEBE board")}
+{_comment_box("CEBE — Common Equity Bitcoin Exposure", "%scebe.html" % BASE_URL)}
   <p class="backlink"><a href="treasuries.html">← All Bitcoin Treasuries categories</a></p>
 """
     return _shell(title="CEBE — Common Equity Bitcoin Exposure — Bitcoin Treasuries — %s" % SITE_NAME,
@@ -4822,9 +4819,10 @@ def build_bitcoin_board(stats, board):
             '<span id="bbLive">live</span>'
             '<span><span class="bbsep">·</span> snapshot taken %s</span></p>\n'
             '  <div class="bbhero">\n%s\n  </div>\n'
-            '  <div class="bbgrid">\n%s\n  </div>\n%s'
+            '  <div class="bbgrid">\n%s\n  </div>\n%s\n%s'
             % (esc(stats.get("generated", "—")), hero_html,
-               "\n".join(cards), methods))
+               "\n".join(cards), methods,
+               _comment_box("The Bitcoin Board", "%sbitcoin.html" % BASE_URL)))
 
     return _shell(
         title="The Bitcoin Board — Bitcoin by the numbers, live",
@@ -5397,9 +5395,11 @@ def build_humanity_board(stats):
         '%s'
         '%s'
         '%s'
+        '%s'
         % (_n(height),
            esc(blogkit.pretty_date(datetime.fromtimestamp(POP_ANCHOR_TS, timezone.utc).date())),
-           hero, aside, chart_card, wealth_card, millionaire_card, methods)
+           hero, aside, chart_card, wealth_card, millionaire_card, methods,
+           _comment_box("Bitcoin vs. Humanity", "%shumanity.html" % BASE_URL))
     )
 
     return _shell(
@@ -6256,7 +6256,7 @@ def build_money_worldwide_hub(board):
   </div>
 {scarcity}
 {_mw_methods_panel(board)}
-{_treasury_nudge("Money Worldwide board")}
+{_comment_box("Money Worldwide", "%smoney-worldwide.html" % BASE_URL)}
   <p class="backlink"><a href="index.html">← Back to the front page</a></p>
 """
     return _shell(title="Money Worldwide — exchange rates, money supply, reserves, debt & GDP — %s" % SITE_NAME,
@@ -6320,7 +6320,7 @@ def build_money_worldwide_section(board, key):
   <p class="stamp">Updated {esc(board.get('generated', '—'))} · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
 {table}
-{_treasury_nudge("Money Worldwide — " + meta["title"])}
+{_comment_box(meta["title"] + " — Money Worldwide", "%s%s" % (BASE_URL, meta["file"]))}
   <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
 """
     return _shell(title=f"{meta['title']} — Money Worldwide — {SITE_NAME}",
