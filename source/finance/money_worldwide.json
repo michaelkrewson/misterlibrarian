@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 01:54 UTC",
+ "generated": "2026-09-09 02:01 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -118,10 +118,10 @@
     "area": "Brazil",
     "flag": "🇧🇷",
     "currency": "BRL",
-    "source": "Banco Central do Brasil SGS API — Meios de pagamento M1/M2/M3 (thousands of reais)",
-    "m0": null,
-    "m0_date": null,
-    "usd_m0": null,
+    "source": "Banco Central do Brasil SGS API — série 1788 \"Base monetária restrita\" for M0 (the Bank's own definition: moeda em circulação e as reservas bancárias, currency in circulation + bank reserves — a single ready-made series, unlike Canada/Switzerland's two-series constructions) + Meios de pagamento M1/M2/M3 (thousands of reais)",
+    "m0": 432.551687,
+    "m0_date": "2026-07-01",
+    "usd_m0": 84.62986186926493,
     "m1": 647.172339,
     "m1_date": "2026-07-01",
     "usd_m1": 126.62095028467452,
