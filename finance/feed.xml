@@ -7,6 +7,22 @@
   <description>A standing count of the largest assets on earth — gold, silver, the biggest public companies, and Bitcoin — ranked by what the market says they are worth, and refreshed through the day.</description>
   <language>en</language>
   <item>
+    <title>"Coded and Audited by AI," and the Longer Story Underneath That Sentence</title>
+    <link>https://mistertranslation.com/finance/ibis-wallet-ai-audit.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/ibis-wallet-ai-audit.html</guid>
+    <pubDate>Wed, 09 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A beta Bitcoin wallet's own README says, in one sentence, that it was coded and audited by frontier AI models. Taken alone that sentence would worry me. Taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on.</description>
+    <category>bitcoin</category>
+    <category>self custody</category>
+    <category>wallet</category>
+    <category>android</category>
+    <category>open source</category>
+    <category>security</category>
+    <category>bug bounty</category>
+    <category>ai</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>Older Than the United Nations, and Never Asked to Join</title>
     <link>https://mistertranslation.com/finance/untangling-bis-imf-world-bank.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/untangling-bis-imf-world-bank.html</guid>

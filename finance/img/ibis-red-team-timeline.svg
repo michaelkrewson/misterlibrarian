@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" role="img"
+     aria-label="Timeline: August 4th, the Coldcard entropy bug is disclosed; August 4th-5th, sixteen volunteers calling themselves the Bitcoin Red Team spend twenty-seven and a half hours running AI-assisted scans across three hundred ninety open-source Bitcoin repositories, Ibis Wallet among them; August 15th, Ibis ships version four point seven point oh beta crediting Bitcoin Red Team and a contributor named PortlandHODL for the findings that release fixes">
+  <rect width="900" height="460" fill="#0a0f1a"/>
+
+  <text x="450" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="20" fill="#e8dfd2">Eleven days, in the same story I'd already been reading</text>
+
+  <line x1="90" y1="230" x2="810" y2="230" stroke="rgba(148,163,184,.35)" stroke-width="2"/>
+
+  <!-- Node 1: Coldcard disclosure -->
+  <g transform="translate(150,230)">
+    <circle r="9" fill="#e8865c"/>
+    <line x1="0" y1="-9" x2="0" y2="-58" stroke="#e8865c" stroke-width="1.5"/>
+    <text x="0" y="-70" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Aug 4</text>
+    <rect x="-120" y="-160" width="240" height="82" rx="10" fill="#1a0f12" stroke="#e8865c" stroke-width="2"/>
+    <text x="0" y="-130" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8865c">Coldcard's weak-entropy</text>
+    <text x="0" y="-110" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8865c">bug is disclosed</text>
+    <text x="0" y="-88" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8" font-style="italic">the entry I wrote in this notebook</text>
+    <text x="0" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">$130M+ across 15+ groups,</text>
+    <text x="0" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">still climbing that week</text>
+  </g>
+
+  <!-- Node 2: Bitcoin Red Team blitz -->
+  <g transform="translate(450,230)">
+    <circle r="9" fill="#e8c968"/>
+    <line x1="0" y1="-9" x2="0" y2="-58" stroke="#e8c968" stroke-width="1.5"/>
+    <text x="0" y="-70" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Aug 4-5</text>
+    <rect x="-135" y="-160" width="270" height="82" rx="10" fill="#0d1520" stroke="#e8c968" stroke-width="2"/>
+    <text x="0" y="-130" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8c968">Bitcoin Red Team's 27.5-hour</text>
+    <text x="0" y="-110" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8c968">blitz across 390 repos</text>
+    <text x="0" y="-88" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8" font-style="italic">16 volunteers, OpenSats-funded, AI-assisted</text>
+    <text x="0" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">4,962 findings fleet-wide;</text>
+    <text x="0" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Ibis Wallet was one of the repos</text>
+  </g>
+
+  <!-- Node 3: Ibis ships fixes -->
+  <g transform="translate(750,230)">
+    <circle r="9" fill="#a3b378"/>
+    <line x1="0" y1="-9" x2="0" y2="-58" stroke="#a3b378" stroke-width="1.5"/>
+    <text x="0" y="-70" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Aug 15</text>
+    <rect x="-120" y="-160" width="240" height="82" rx="10" fill="#0d1520" stroke="#a3b378" stroke-width="2"/>
+    <text x="0" y="-130" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#a3b378">Ibis v4.7.0-beta ships,</text>
+    <text x="0" y="-110" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#a3b378">credits the audit by name</text>
+    <text x="0" y="-88" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8" font-style="italic">Bitcoin Red Team + PortlandHODL</text>
+    <text x="0" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Seed-leak and TLS bugs fixed;</text>
+    <text x="0" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">no funds reported lost</text>
+  </g>
+
+  <text x="450" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8" font-style="italic">
+    "Coded and audited by the most current frontier AI models" is the README's one sentence for all three of these.
+  </text>
+</svg>
