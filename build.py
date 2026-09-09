@@ -811,12 +811,9 @@ def header(active="", lang="en"):
         # Spanish locale header. The nav links ONLY to pages that exist in Spanish
         # (so a Spanish-only reader is never dumped into English); it grows as the
         # Spanish edition is built out. The 🌐 switch jumps to the English home.
-        # "Preguntar" sits on its own on the LEFT (mirroring the English layout's
-        # split -- see the note below) so it isn't crowded against the brand icon.
+        # "Preguntar" moved OUT of the header (2026-09-09), mirroring the English
+        # side -- see _foot_actions, which puts it in the boxed pair above the footer.
         return f"""<header class="site-head">
-  <div class="utilnav utilnav-left">
-    <a class="util-ask" href="contact.es.html" title="Enviar una pregunta">✉️ Preguntar</a>
-  </div>
   <div class="utilnav utilnav-right">
     <details class="langsel">
       <summary title="Idioma">\U0001F310 Español</summary>
@@ -852,19 +849,15 @@ def header(active="", lang="en"):
     {share_item}
   </nav>
 </header>"""
-    # "Ask a Question" (contact.html, submit yours) now sits on the LEFT, mirrored
-    # from "Dear Mr. Librarian" + the language switch on the right -- on desktop
-    # the two used to crowd together right next to the brand icon; splitting them
-    # across both sides balances the header instead of bunching everything on one
-    # side. "Ask a Question" and "Dear Mr. Librarian" (ask.html, browse answered
-    # ones) are still a real pair conceptually -- every answered post links back to
-    # the contact form as "send yours to the librarian's desk" -- that relationship
-    # doesn't depend on them being pixel-adjacent.
+    # "Ask a Question" (contact.html, submit yours) moved OUT of the header
+    # (2026-09-09) and now lives with "Dear Mr. Librarian" in the small boxed pair
+    # above the footer (see _foot_actions) -- the header utilnav-left slot that used
+    # to hold it is gone rather than left empty. They're still a real pair
+    # conceptually -- every answered post links back to the contact form as "send
+    # yours to the librarian's desk" -- that relationship doesn't depend on where
+    # the pair sits on the page.
     ask_on = " on" if active == "ask" else ""
     return f"""<header class="site-head">
-  <div class="utilnav utilnav-left">
-    <a class="util-ask" href="contact.html" title="Ask a question">✉️ Ask a Question</a>
-  </div>
   <div class="utilnav utilnav-right">
     <a class="util-ask{ask_on}" href="ask.html" title="Reader questions, answered one at a time">\U0001F4D6 Dear Mr. Librarian</a>
     <details class="langsel">
@@ -910,6 +903,25 @@ def header(active="", lang="en"):
     {share_item}
   </nav>
 </header>"""
+
+
+def _foot_actions(active="", lang="en"):
+    """Small boxed pair of links, centered just above the footer's top rule
+    (2026-09-09) -- where "Ask a Question" (and, in English, "Dear Mr. Librarian")
+    now live after being removed from the header's utilnav-left slot. Spanish has
+    no "Dear Mr. Librarian" page yet, so its box holds just "Preguntar"."""
+    ask_on = " on" if active == "ask" else ""
+    if lang == "es":
+        links = '<a class="util-ask" href="contact.es.html" title="Enviar una pregunta">✉️ Preguntar</a>'
+    else:
+        links = (f'<a class="util-ask" href="contact.html" title="Ask a question">✉️ Ask a Question</a>\n'
+                 f'    <a class="util-ask{ask_on}" href="ask.html" title="Reader questions, answered one at a time">'
+                 f'\U0001F4D6 Dear Mr. Librarian</a>')
+    return f"""<div class="foot-actions">
+  <div class="foot-actions-box">
+    {links}
+  </div>
+</div>"""
 
 
 # The "N views" count moved here from the nav row (2026-07-27) -- it was competing
@@ -1192,6 +1204,7 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 <script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
+{_foot_actions(active, lang)}
 {ES_FOOTER if lang == "es" else FOOTER}
 </div>
 </body>
