@@ -175,6 +175,7 @@ import argparse
 import csv
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -193,11 +194,29 @@ REFRESH_EVERY_HOURS = 6   # see the module docstring's "REFRESH CADENCE" section
 TROY_OZ_PER_TONNE = 32150.7466
 
 FRANKFURTER_URL = "https://api.frankfurter.dev/v1/latest?base=USD"
+# One extra call, USD-based, a year of daily ECB reference rates for every
+# currency at once — verified directly (2026-09-08): a single request
+# returns ~256 trading days × 28 currencies in ~100KB, so the volatility
+# column below costs one live call, not a per-currency crawl.
+FRANKFURTER_HISTORY_URL = "https://api.frankfurter.dev/v1/%s..%s?from=USD"
 FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=%s"
 ECB_BSI_URL = ("https://data-api.ecb.europa.eu/service/data/BSI/"
                "M.U2.N.V.%s.X.1.U2.2300.Z01.E"
                "?format=jsondata&lastNObservations=2&detail=full")
+# Same series, more observations — used only for the money-supply YoY
+# growth column (_ecb_bsi_series), kept separate from ECB_BSI_URL above so
+# the already-verified latest-value path (_ecb_bsi_latest) is untouched.
+ECB_BSI_URL_N = ("https://data-api.ecb.europa.eu/service/data/BSI/"
+                  "M.U2.N.V.%s.X.1.U2.2300.Z01.E"
+                  "?format=jsondata&lastNObservations=%d&detail=full")
 DATAMAPPER_URL = "https://www.imf.org/external/datamapper/api/v1/%s"
+# CoinGecko's public market_chart endpoint — genuinely keyless (verified
+# 2026-09-08 with a bare urllib request, no custom header at all; already
+# used elsewhere in this repo, see fetch_crypto_heatmap.py, which documents
+# its rate-limit behavior on a multi-coin crawl — this is a single call for
+# one coin, so that risk barely applies here).
+COINGECKO_BTC_CHART_URL = ("https://api.coingecko.com/api/v3/coins/bitcoin/market_chart"
+                            "?vs_currency=usd&days=365&interval=daily")
 
 # The two Euro-area monetary aggregates ECB's BSI dataset publishes under
 # these dimension codes — M10 is M1 (currency + overnight deposits), M20 is
@@ -304,6 +323,63 @@ def fetch_fx():
         print("  ! no exchange rates resolved", file=sys.stderr)
         return None
     return {"base": d.get("base", "USD"), "date": d.get("date"), "rates": d["rates"]}
+
+
+def _annualized_volatility_pct(prices):
+    """Annualized volatility (%%) — the standard deviation of daily log
+    returns, scaled by sqrt(252) (the usual trading-day convention; applied
+    here to BOTH fiat FX rates and Bitcoin's own 24/7 price so the two
+    numbers are computed the SAME way and stay comparable, even though
+    Bitcoin actually trades every day of the year, not ~252). Needs at
+    least 30 real points — an unusually short series shouldn't produce a
+    wild two-point "volatility"."""
+    vals = [p for p in prices if p and p > 0]
+    if len(vals) < 30:
+        return None
+    returns = [math.log(vals[i] / vals[i - 1]) for i in range(1, len(vals))]
+    mean = sum(returns) / len(returns)
+    variance = sum((r - mean) ** 2 for r in returns) / (len(returns) - 1)
+    return (variance ** 0.5) * (252 ** 0.5) * 100.0
+
+
+def fetch_fx_volatility():
+    """{currency: annualized_volatility_pct} for every currency Frankfurter
+    quotes against USD, from ONE year of its own daily ECB reference rates
+    — one extra live call (FRANKFURTER_HISTORY_URL), not a per-currency
+    crawl. USD itself never appears (Frankfurter's from=USD query has
+    nothing to quote it against) — its row renders "—" on the Money
+    Worldwide page rather than a meaningless "0%%" for the numeraire."""
+    end = datetime.now(timezone.utc).date()
+    start = end - timedelta(days=370)
+    d = _get_json(FRANKFURTER_HISTORY_URL % (start.isoformat(), end.isoformat()))
+    if not isinstance(d, dict) or not d.get("rates"):
+        print("  ! FX volatility unresolved (Frankfurter history)", file=sys.stderr)
+        return {}
+    by_date = d["rates"]
+    dates = sorted(by_date)
+    currencies = set()
+    for day in by_date.values():
+        currencies.update(day.keys())
+    out = {}
+    for ccy in currencies:
+        series = [by_date[dt][ccy] for dt in dates if ccy in by_date[dt]]
+        vol = _annualized_volatility_pct(series)
+        if vol is not None:
+            out[ccy] = vol
+    return out
+
+
+def fetch_bitcoin_volatility():
+    """Bitcoin's own annualized volatility (%%), from one year of daily
+    CoinGecko USD closes — the exact same statistic (daily log returns,
+    same annualization) fetch_fx_volatility() computes for fiat, so the
+    two numbers sit on one column with no methodology asterisk."""
+    d = _get_json(COINGECKO_BTC_CHART_URL, send_ua=False)
+    if not isinstance(d, dict) or not d.get("prices"):
+        print("  ! Bitcoin volatility unresolved (CoinGecko)", file=sys.stderr)
+        return None
+    prices = [p[1] for p in d["prices"] if isinstance(p, list) and len(p) == 2]
+    return _annualized_volatility_pct(prices)
 
 
 # ─────────────────────────────────────────────────────────────── section 2 ──
@@ -707,6 +783,356 @@ def _dk_pxweb_values(table, dim, codes_by_key, extra_dims=None):
     return out
 
 
+## ── money-supply YoY growth ("debasement rate") — 2026-09-08 ──────────────
+# A SEPARATE, additive layer on top of the already-verified latest-value
+# code above, not a change to it: each provider gets its own small
+# "_..._series"/"_..._yoy" function returning history instead of a single
+# point, dispatched by _money_broad_yoy_pct(). Isolating this here means a
+# bug in a YoY fetch can only blank one new cell, never the market-cap
+# figure a reader already relies on.
+
+def _parse_period_date(date_s):
+    """A best-effort datetime for a period label in any of this board's
+    shapes ('YYYY-MM-DD', 'YYYY-MM', 'YYYY/MM/DD', 'YYYY/MM', and the RBA's
+    own day-first 'DD/MM/YYYY') — enough precision to find the point
+    closest to a target day, not for display."""
+    for fmt in ("%Y-%m-%d", "%Y-%m", "%Y/%m/%d", "%Y/%m", "%d/%m/%Y"):
+        try:
+            return datetime.strptime(date_s, fmt)
+        except (ValueError, TypeError):
+            continue
+    return None
+
+
+def _yoy_pct(old_val, new_val):
+    if old_val is None or new_val is None or old_val == 0:
+        return None
+    return (new_val / old_val - 1.0) * 100.0
+
+
+def _yoy_from_pairs(rows, target_days=365, max_slack_days=45):
+    """(old_val, new_val) — new_val is a series' own latest value, old_val
+    is the value closest to `target_days` before it — from a
+    [(date_str, float), ...] series in any order. (None, None) if the
+    series is too short, or has no point within `max_slack_days` of the
+    target (a monthly/quarterly series' normal reporting gap, not a
+    mismatched pair of dates)."""
+    parsed = sorted(
+        ((_parse_period_date(d), v) for d, v in rows if v is not None and _parse_period_date(d)),
+        key=lambda t: t[0])
+    if len(parsed) < 2:
+        return None, None
+    latest_date, latest_val = parsed[-1]
+    target = latest_date - timedelta(days=target_days)
+    best_date, best_val = min(parsed[:-1], key=lambda t: abs((t[0] - target).days))
+    if abs((best_date - target).days) > max_slack_days:
+        return None, None
+    return best_val, latest_val
+
+
+def _fred_series(series_id):
+    """[(date_str, float), ...] ascending, every non-missing observation in
+    a FRED series — the same fredgraph.csv export _fred_latest() already
+    reads, just kept in full rather than reduced to its last row."""
+    text = _get_text(FRED_CSV_URL % series_id, send_ua=False)
+    if not text:
+        return []
+    out = []
+    for line in [ln.strip() for ln in text.splitlines() if ln.strip()][1:]:
+        parts = line.split(",")
+        if len(parts) != 2 or parts[1] in ("", "."):
+            continue
+        try:
+            out.append((parts[0], float(parts[1])))
+        except ValueError:
+            continue
+    return out
+
+
+def _ecb_bsi_series(item_code, n=13):
+    """[(period, float millions-EUR), ...] for the last `n` monthly BSI
+    observations of one item — the same query _ecb_bsi_latest() makes,
+    just with more history (n=13 comfortably spans a year of monthly
+    data)."""
+    d = _get_json(ECB_BSI_URL_N % (item_code, n))
+    if not isinstance(d, dict):
+        return []
+    try:
+        series = next(iter(d["dataSets"][0]["series"].values()))
+        obs = series["observations"]
+        obs_dims = d["structure"]["dimensions"]["observation"][0]["values"]
+        return [(obs_dims[int(k)]["id"], float(v[0])) for k, v in obs.items()]
+    except (KeyError, IndexError, StopIteration, ValueError, TypeError):
+        return []
+
+
+def _boc_valet_series(series_name, days_back=550):
+    """[(date_str, float), ...] for a Bank of Canada Valet series over the
+    last `days_back` days — confirmed 2026-09-08 that Valet's observations
+    endpoint accepts start_date/end_date query params directly (the
+    latest-value path uses its "?recent=1" shortcut instead). 550 days, not
+    ~400: the M3 series itself reports with a real lag behind today (its
+    latest observation can be ~3 months old), so a window sized only to
+    "today minus a year" can fall short of a point 365 days before the
+    series' own latest point — verified directly (2026-09-08), a 400-day
+    window returned only 10 months of history and missed the year-ago
+    target by ~90 days."""
+    end = datetime.now(timezone.utc).date()
+    start = end - timedelta(days=days_back)
+    url = ("https://www.bankofcanada.ca/valet/observations/%s/json"
+           "?start_date=%s&end_date=%s" % (series_name, start.isoformat(), end.isoformat()))
+    d = _get_json(url, send_ua=False)
+    if not isinstance(d, dict):
+        return []
+    out = []
+    for row in d.get("observations") or []:
+        try:
+            out.append((row["d"], float(row[series_name]["v"])))
+        except (KeyError, TypeError, ValueError):
+            continue
+    return out
+
+
+def _bcb_sgs_series(series_code, n=13):
+    """[(date_str, float), ...] for the last `n` monthly observations of a
+    Banco Central do Brasil SGS series — same endpoint _bcb_sgs_latest()
+    uses, just "/ultimos/N" instead of "/ultimos/1"."""
+    url = ("https://api.bcb.gov.br/dados/serie/bcdata.sgs.%s/dados/ultimos/%d?formato=json"
+           % (series_code, n))
+    d = _get_json(url, send_ua=False)
+    if not isinstance(d, list):
+        return []
+    out = []
+    for row in d:
+        try:
+            dd, mm, yyyy = row["data"].split("/")
+            out.append(("%s-%s-%s" % (yyyy, mm, dd), float(row["valor"])))
+        except (KeyError, ValueError):
+            continue
+    return out
+
+
+def _boe_iadb_series(series_code):
+    """[(date_str, float), ...] for a Bank of England IADB series — the
+    latest-value path (_boe_iadb_latest) already requests a full year+ of
+    history (Datefrom=01/Jan/<last year>) and reads only the last line;
+    this reads every line instead."""
+    this_year = datetime.now(timezone.utc).year
+    text = _get_text(BOE_IADB_URL % (this_year - 1, series_code), send_ua=True)
+    if not text:
+        return []
+    out = []
+    for line in [ln.strip() for ln in text.splitlines() if ln.strip()][1:]:
+        try:
+            date_s, val_s = line.split(",")
+            d = datetime.strptime(date_s, "%d %b %Y")
+            out.append((d.strftime("%Y-%m-%d"), float(val_s)))
+        except ValueError:
+            continue
+    return out
+
+
+def _snb_cube_series(cube_id, label, require_level=True):
+    """[(date_str "YYYY-MM", float millions-CHF), ...] for ONE label across
+    the ~1yr window an SNB Data Portal cube query already covers (see
+    _snb_cube_values, which reads the same window but keeps only each
+    label's last point) — a second read of the same cube, not a threaded
+    change to that already-verified function."""
+    from_date = "%d-01-01" % (datetime.now(timezone.utc).year - 1)
+    d = _get_json(SNB_CUBE_URL % (cube_id, from_date), send_ua=False)
+    if not isinstance(d, dict):
+        return []
+    out = []
+    for ts in d.get("timeseries") or []:
+        header = ts.get("header") or []
+        if require_level and not any(h.get("dimItem") == "Level" for h in header):
+            continue
+        dim_item = next((h.get("dimItem") for h in header if h.get("dim") != "Level/change"), None)
+        if dim_item != label:
+            continue
+        for v in ts.get("values") or []:
+            try:
+                out.append((v.get("date"), float(v.get("value"))))
+            except (TypeError, ValueError):
+                continue
+    return out
+
+
+def _boj_csv_series(table, code):
+    """[(date_str, float), ...] for ONE series code across an entire Bank
+    of Japan CSV export — _boj_csv_values() reads the same file but keeps
+    only the last row."""
+    text = _get_text(BOJ_CSV_URL % table, send_ua=True)
+    return _labeled_csv_series(text, "Series code", _BOJ_CSV_DATE_RE, code) if text else []
+
+
+def _rba_csv_series(code):
+    """[(date_str, float), ...] for ONE series code across the RBA's D3
+    CSV export — _rba_csv_values() reads the same file but keeps only the
+    last row."""
+    text = _get_text(RBA_D3_CSV_URL, send_ua=True)
+    return _labeled_csv_series(text, "Series ID", _RBA_CSV_DATE_RE, code) if text else []
+
+
+def _labeled_csv_series(text, header_label, date_re, code):
+    """[(date_str, float), ...] for ONE column of a "labeled" CSV export
+    (see _labeled_csv_values, which reduces the same shape to its last
+    row) — shared by the BoJ and RBA money-supply YoY lookups."""
+    rows = list(csv.reader(io.StringIO(text)))
+    code_row = next((r for r in rows if r and r[0] == header_label), None)
+    if not code_row:
+        return []
+    idx = {c: i for i, c in enumerate(code_row)}.get(code)
+    if idx is None:
+        return []
+    out = []
+    for r in rows:
+        if not r or not date_re.match(r[0]) or idx >= len(r) or not r[idx]:
+            continue
+        try:
+            out.append((r[0], float(r[idx])))
+        except ValueError:
+            continue
+    return out
+
+
+def _ssb_pxweb_yoy(table_id, content_code):
+    """(old_val, new_val) for one Statistics Norway content code, ~12
+    months apart — reuses the metadata call _ssb_pxweb_latest() already
+    makes to list every available period, then queries the period 13 slots
+    back (confirmed 2026-09-08: table 10945's periods are monthly, so -13
+    lands almost exactly a year before the latest one) instead of just the
+    latest."""
+    meta = _get_json(SSB_PXWEB_URL % table_id, send_ua=False)
+    if not isinstance(meta, dict):
+        return None, None
+    tid = next((v for v in meta.get("variables", []) if v.get("code") == "Tid"), None)
+    periods = (tid or {}).get("values") or []
+    if len(periods) < 13:
+        return None, None
+
+    def _query(period):
+        payload = {"query": [
+            {"code": "ContentsCode", "selection": {"filter": "item", "values": [content_code]}},
+            {"code": "Tid", "selection": {"filter": "item", "values": [period]}},
+        ], "response": {"format": "json-stat2"}}
+        d = _post_json(SSB_PXWEB_URL % table_id, payload, send_ua=False)
+        vals = (d or {}).get("value") or []
+        try:
+            return float(vals[0])
+        except (TypeError, ValueError, IndexError):
+            return None
+
+    return _query(periods[-13]), _query(periods[-1])
+
+
+def _dk_pxweb_yoy(table, dim, code, extra_dims=None):
+    """(old_val, new_val) for one Danmarks Nationalbank/Statistics Denmark
+    content code, ~12 months apart — same "list every period, then query
+    the one 13 slots back" pattern as _ssb_pxweb_yoy, adapted to this
+    dialect's plain-GET query shape (see _dk_pxweb_values)."""
+    meta = _get_json(DK_PXWEB_TABLEINFO_URL % table, send_ua=False)
+    if not isinstance(meta, dict):
+        return None, None
+    tid = next((v for v in meta.get("variables", []) if v.get("id") == "Tid"), None)
+    periods = (tid or {}).get("values") or []
+    if len(periods) < 13:
+        return None, None
+
+    def _query(period_id):
+        params = {dim: code}
+        params.update(extra_dims or {})
+        params["Tid"] = period_id
+        qs = "&".join("%s=%s" % (k, v) for k, v in params.items())
+        d = _get_json("%s?%s" % (DK_PXWEB_DATA_URL % table, qs), send_ua=False)
+        try:
+            values = d["dataset"]["value"]
+            return float(values[0]) if values else None
+        except (KeyError, TypeError, ValueError, IndexError):
+            return None
+
+    return _query(periods[-13]["id"]), _query(periods[-1]["id"])
+
+
+def _money_broad_yoy_pct(econ, broad_key):
+    """YoY %% growth of one economy's own broadest RESOLVED money-supply
+    aggregate (whichever key `broad_key` names — the same broadest-first
+    pick _fetch_generic_money_row() already makes for `broad_usd`), i.e.
+    this board's per-currency "debasement rate." Returns None for a
+    provider with no practical historical query (hand_curated — China's
+    values are hand-typed from a press release, not a queryable series;
+    rbi_wss — a fragile HTML scrape not worth extending here) or when the
+    series itself doesn't resolve; never raises, so a bad source costs only
+    this one cell."""
+    provider = econ["provider"]
+    try:
+        if provider == "boc_valet":
+            codes = econ.get("series", {}).get(broad_key)
+            if not codes:
+                return None
+            codes = codes if isinstance(codes, list) else [codes]
+            old_sum = new_sum = 0.0
+            for code in codes:
+                old_v, new_v = _yoy_from_pairs(_boc_valet_series(code))
+                if old_v is None:
+                    return None
+                old_sum += old_v
+                new_sum += new_v
+            return _yoy_pct(old_sum, new_sum)
+        if provider == "snb_cube":
+            label = econ.get("dims", {}).get(broad_key)
+            if not label:
+                return None
+            old_v, new_v = _yoy_from_pairs(_snb_cube_series(econ["cube"], label))
+            return _yoy_pct(old_v, new_v)
+        if provider == "bcb_sgs":
+            code = econ.get("series", {}).get(broad_key)
+            if not code:
+                return None
+            old_v, new_v = _yoy_from_pairs(_bcb_sgs_series(code))
+            return _yoy_pct(old_v, new_v)
+        if provider == "boe_iadb":
+            codes = econ.get("series", {}).get(broad_key)
+            if not codes:
+                return None
+            codes = codes if isinstance(codes, list) else [codes]
+            old_sum = new_sum = 0.0
+            for code in codes:
+                old_v, new_v = _yoy_from_pairs(_boe_iadb_series(code))
+                if old_v is None:
+                    return None
+                old_sum += old_v
+                new_sum += new_v
+            return _yoy_pct(old_sum, new_sum)
+        if provider == "ssb_pxweb":
+            code = econ.get("codes_m123", {}).get(broad_key)
+            if not code:
+                return None
+            return _yoy_pct(*_ssb_pxweb_yoy(econ["table_m123"], code))
+        if provider == "dk_pxweb":
+            code = econ.get("codes", {}).get(broad_key)
+            if not code:
+                return None
+            return _yoy_pct(*_dk_pxweb_yoy(econ["table"], econ["dim"], code, econ.get("extra_dims")))
+        if provider == "boj_csv":
+            spec = econ.get("tables", {}).get(broad_key)
+            if not spec:
+                return None
+            old_v, new_v = _yoy_from_pairs(_boj_csv_series(spec["table"], spec["code"]))
+            return _yoy_pct(old_v, new_v)
+        if provider == "rba_csv":
+            code = econ.get("codes", {}).get(broad_key)
+            if not code:
+                return None
+            old_v, new_v = _yoy_from_pairs(_rba_csv_series(code))
+            return _yoy_pct(old_v, new_v)
+    except Exception as exc:  # noqa: BLE001 — a growth-rate miss costs one cell, never the row
+        print("  ! %s broad-money YoY failed (%s) — %s" % (econ.get("area"), provider, exc),
+              file=sys.stderr)
+        return None
+    return None   # hand_curated / rbi_wss / unrecognized — no practical history query
+
+
 def _sum_series(fetch_one, codes):
     """(total, date_str) summing fetch_one(code) over every code in codes,
     or (None, None) if any single one fails to resolve — used where a
@@ -872,7 +1298,7 @@ def _unresolved_money_row(entry):
     return row
 
 
-def fetch_money_supply(fx, seed):
+def fetch_money_supply(fx, seed, fx_volatility=None):
     """US (FRED) + Euro area (ECB) + five more economies (Canada/Switzerland/
     Brazil/UK/Norway, each its own real keyless API — see the dated research
     log above `BOC_VALET_URL`) with resolved figures, PLUS a set of
@@ -892,8 +1318,14 @@ def fetch_money_supply(fx, seed):
     combination — see money_worldwide_seed.json's own eu_base_money note for
     the full trail. Its DOLLAR value still recomputes from today's live
     EUR/USD rate on every build, same as M1/M2/M3 — only the underlying EUR
-    figure itself is periodically hand-refreshed."""
+    figure itself is periodically hand-refreshed.
+
+    `fx_volatility` (from fetch_fx_volatility(), computed once in compute()
+    and threaded through here) supplies each row's `volatility_pct` —
+    kept a separate top-level fetch rather than reached for per-row so a
+    volatility outage never costs a money-supply row its own resolution."""
     rows = []
+    fx_volatility = fx_volatility or {}
 
     us_m0_date, us_m0 = _fred_latest("BOGMBASE")     # monetary base, billions USD
     us_m1_date, us_m1 = _fred_latest("M1SL")
@@ -907,6 +1339,8 @@ def fetch_money_supply(fx, seed):
             "m3": None,
             "usd_m0": us_m0, "usd_m1": us_m1, "usd_m2": us_m2, "usd_m3": None,
             "broad_usd": us_m2,   # this economy's own broadest published aggregate
+            "broad_yoy_pct": _yoy_pct(*_yoy_from_pairs(_fred_series("M2SL"))),
+            "volatility_pct": fx_volatility.get("USD"),  # always None — USD is the numeraire
             "source": "Federal Reserve H.6 (via FRED, billions of dollars)",
         })
     else:
@@ -934,6 +1368,8 @@ def fetch_money_supply(fx, seed):
             "usd_m0": (ea_m0 / eur_usd) if ea_m0 is not None else None,
             "usd_m1": to_usd_b(ea_m1), "usd_m2": to_usd_b(ea_m2), "usd_m3": to_usd_b(ea_m3),
             "broad_usd": to_usd_b(ea_m3),   # M3 is the ECB's own headline "broad money"
+            "broad_yoy_pct": _yoy_pct(*_yoy_from_pairs(_ecb_bsi_series(ECB_ITEMS["m3"]))),
+            "volatility_pct": fx_volatility.get("EUR"),
             "source": "European Central Bank BSI dataset (billions of euro → USD "
                       "at today's rate)",
         })
@@ -943,6 +1379,10 @@ def fetch_money_supply(fx, seed):
     for econ in (seed or {}).get("money_supply_economies") or []:
         row = _fetch_generic_money_row(econ, fx)
         if row is not None:
+            broad_key = next((k for k in ("m3", "m2", "m1", "m0")
+                               if row.get("usd_%s" % k) is not None), None)
+            row["broad_yoy_pct"] = _money_broad_yoy_pct(econ, broad_key) if broad_key else None
+            row["volatility_pct"] = fx_volatility.get(row["currency"])
             rows.append(row)
 
     if not rows:
@@ -1099,6 +1539,30 @@ _ISO3_TO_ISO2_FLAG_NAME = {
 }
 
 
+# Bitcoin's own halving schedule — a public consensus rule, not an estimate,
+# duplicated here (rather than imported) from build_finance.py's/
+# fetch_asset_board.py's own copies of the same two constants, on purpose:
+# this fetcher stays a fully independent script, the same separation every
+# other tools/fetch_*.py keeps from the page builder.
+_BTC_HALVING_INTERVAL = 210_000
+_BTC_INITIAL_SUBSIDY_SATS = 50 * 100_000_000
+
+
+def _btc_annual_issuance_pct(circulating_btc, block_height):
+    """Bitcoin's own current annualized issuance rate (%%) — the money-
+    supply "debasement rate" column's Bitcoin figure, computed exactly from
+    the halving schedule rather than fetched: current per-block subsidy
+    (50 BTC, halved every 210,000 blocks) × ~52,596 blocks/year (the
+    10-minute target), over today's circulating supply. The one cell in
+    this whole column derived from a fixed rule instead of a live query."""
+    if not circulating_btc or block_height is None:
+        return None
+    epoch = block_height // _BTC_HALVING_INTERVAL
+    subsidy_btc = (_BTC_INITIAL_SUBSIDY_SATS >> epoch) / 100_000_000.0
+    blocks_per_year = 365.25 * 24 * 6   # 10-minute block target
+    return (subsidy_btc * blocks_per_year / circulating_btc) * 100.0
+
+
 def compute_bitcoin_lineup(asset_board, money_supply, gold, debt_gdp):
     if not asset_board:
         return None
@@ -1109,6 +1573,7 @@ def compute_bitcoin_lineup(asset_board, money_supply, gold, debt_gdp):
             break
     if not btc:
         return None
+    constants = asset_board.get("constants") or {}
 
     lineup = []
     if money_supply and money_supply.get("total_broad_usd_b") is not None:
@@ -1142,6 +1607,9 @@ def compute_bitcoin_lineup(asset_board, money_supply, gold, debt_gdp):
     return {
         "price_usd": btc.get("price"), "market_cap_usd": btc.get("market_cap"),
         "btc_rank": asset_board.get("btc_rank"),
+        "volatility_pct": fetch_bitcoin_volatility(),
+        "broad_yoy_pct": _btc_annual_issuance_pct(
+            constants.get("btc_circulating"), constants.get("btc_block_height")),
         "lineup": lineup,
     }
 
@@ -1154,7 +1622,8 @@ def compute():
     asset_board = _load_json_file(ASSET_BOARD)
 
     fx = fetch_fx()
-    money_supply = fetch_money_supply(fx, seed)
+    fx_volatility = fetch_fx_volatility()
+    money_supply = fetch_money_supply(fx, seed, fx_volatility)
     reserves_fx = fetch_reserves_fx(seed)
     gold = fetch_gold(seed, asset_board)
     debt_gdp = fetch_debt_gdp()

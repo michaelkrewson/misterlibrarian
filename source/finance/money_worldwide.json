@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 02:49 UTC",
+ "generated": "2026-09-09 04:23 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -54,6 +54,8 @@
     "usd_m2": 23218.0,
     "usd_m3": null,
     "broad_usd": 23218.0,
+    "broad_yoy_pct": 5.414179019772547,
+    "volatility_pct": null,
     "source": "Federal Reserve H.6 (via FRED, billions of dollars)"
    },
    {
@@ -74,6 +76,8 @@
     "usd_m2": 19113.36314825581,
     "usd_m3": 20484.441027229692,
     "broad_usd": 20484.441027229692,
+    "broad_yoy_pct": 4.088352110312976,
+    "volatility_pct": 5.4224919318268485,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
    },
    {
@@ -93,7 +97,9 @@
     "m3": 4106.258,
     "m3_date": "2026-06-01",
     "usd_m3": 2974.471568272365,
-    "broad_usd": 2974.471568272365
+    "broad_usd": 2974.471568272365,
+    "broad_yoy_pct": 6.020863057846171,
+    "volatility_pct": 4.293544054828323
    },
    {
     "area": "Switzerland",
@@ -112,7 +118,9 @@
     "m3": 1231.109,
     "m3_date": "2026-07",
     "usd_m3": 1517.0408615930598,
-    "broad_usd": 1517.0408615930598
+    "broad_usd": 1517.0408615930598,
+    "broad_yoy_pct": 3.2863286513224788,
+    "volatility_pct": 6.895650629562171
    },
    {
     "area": "Brazil",
@@ -131,7 +139,9 @@
     "m3": 14059.773015,
     "m3_date": "2026-07-01",
     "usd_m3": 2750.831135176381,
-    "broad_usd": 2750.831135176381
+    "broad_usd": 2750.831135176381,
+    "broad_yoy_pct": 10.061686935296477,
+    "volatility_pct": 9.46248539794952
    },
    {
     "area": "United Kingdom",
@@ -150,7 +160,9 @@
     "m3": 3298.964,
     "m3_date": "2026-07-31",
     "usd_m3": 4468.627158821538,
-    "broad_usd": 4468.627158821538
+    "broad_usd": 4468.627158821538,
+    "broad_yoy_pct": 4.420197283209393,
+    "volatility_pct": 6.142922840018986
    },
    {
     "area": "Norway",
@@ -169,7 +181,9 @@
     "m3": 3645.47,
     "m3_date": "2026M07",
     "usd_m3": 394.02818910914635,
-    "broad_usd": 394.02818910914635
+    "broad_usd": 394.02818910914635,
+    "broad_yoy_pct": 5.5024975834505385,
+    "volatility_pct": 8.283385481883233
    },
    {
     "area": "China",
@@ -188,7 +202,9 @@
     "m3": null,
     "m3_date": null,
     "usd_m3": null,
-    "broad_usd": 52978.16854183742
+    "broad_usd": 52978.16854183742,
+    "broad_yoy_pct": null,
+    "volatility_pct": 2.129925913353927
    },
    {
     "area": "India",
@@ -207,7 +223,9 @@
     "m3": 322945.03,
     "m3_date": "Aug 15, 2026",
     "usd_m3": 3405.51544869767,
-    "broad_usd": 3405.51544869767
+    "broad_usd": 3405.51544869767,
+    "broad_yoy_pct": null,
+    "volatility_pct": 5.232734712142787
    },
    {
     "area": "Japan",
@@ -226,7 +244,9 @@
     "m3": 1639987.8,
     "m3_date": "2026/08",
     "usd_m3": 10628.566429034348,
-    "broad_usd": 10628.566429034348
+    "broad_usd": 10628.566429034348,
+    "broad_yoy_pct": 1.2210684580460152,
+    "volatility_pct": 8.032887977721977
    },
    {
     "area": "Australia",
@@ -245,7 +265,9 @@
     "m3": 3497.2,
     "m3_date": "31/07/2026",
     "usd_m3": 2523.050284972224,
-    "broad_usd": 2523.050284972224
+    "broad_usd": 2523.050284972224,
+    "broad_yoy_pct": 7.5532045762086275,
+    "volatility_pct": 7.78177451146861
    },
    {
     "area": "Denmark",
@@ -264,7 +286,9 @@
     "m3": 2168.97,
     "m3_date": "2026M07",
     "usd_m3": 337.00590428837785,
-    "broad_usd": 337.00590428837785
+    "broad_usd": 337.00590428837785,
+    "broad_yoy_pct": 8.651384730707656,
+    "volatility_pct": 5.416326046077543
    },
    {
     "area": "South Korea",
@@ -1885,6 +1909,8 @@
   "price_usd": 78457.2421875,
   "market_cap_usd": 1575546218783.5684,
   "btc_rank": 11,
+  "volatility_pct": 36.75215190051554,
+  "broad_yoy_pct": 0.8184735119353806,
   "lineup": [
    {
     "label": "Broad money — 12 economies with live data",

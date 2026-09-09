@@ -5445,18 +5445,34 @@ def _mw_marketcap_table(ms, bitcoin, fx):
     have no live money-supply source at all (see that page's own honest "—"
     cells) and would need a fabricated number to appear in a ranking here.
     Built 2026-09-08 at Michael's request ("show where Bitcoin ranks in
-    market cap... list and rank all the other currencies the same way")."""
+    market cap... list and rank all the other currencies the same way").
+
+    ⚡ Same day: gained two more sortable columns, `volatility_pct` (annualized
+    stdev of daily log returns — the exact same statistic for every fiat row
+    AND Bitcoin, from `fetch_fx_volatility()`/`fetch_bitcoin_volatility()` in
+    the fetcher) and `broad_yoy_pct` (this economy's own broadest aggregate's
+    year-over-year growth in ITS OWN currency — a currency's "debasement
+    rate" — from `_money_broad_yoy_pct()`/`_btc_annual_issuance_pct()`,
+    Bitcoin's own row computed exactly from the halving schedule rather than
+    fetched). Both are None-safe: a row with no resolvable figure (China's
+    hand-curated values have no queryable history; India's RBI scrape wasn't
+    extended; USD has no volatility against itself, being this whole page's
+    numeraire) renders "—" and sorts last, same convention as every other
+    honest gap on this board — never a fabricated number."""
     entries = []
     for r in ms.get("rows", []):
         cap = r.get("broad_usd")
         if cap is None:
             continue
         entries.append({"flag": r["flag"], "name": r["area"], "code": r["currency"],
-                         "cap": cap * 1e9, "is_btc": False})
+                         "cap": cap * 1e9, "is_btc": False,
+                         "vol": r.get("volatility_pct"), "yoy": r.get("broad_yoy_pct")})
     btc_cap = (bitcoin or {}).get("market_cap_usd")
     if btc_cap:
         entries.append({"flag": "₿", "name": "Bitcoin", "code": "BTC",
-                         "cap": btc_cap, "is_btc": True})
+                         "cap": btc_cap, "is_btc": True,
+                         "vol": (bitcoin or {}).get("volatility_pct"),
+                         "yoy": (bitcoin or {}).get("broad_yoy_pct")})
     entries.sort(key=lambda e: e["cap"], reverse=True)
     n = len(entries)
     if n == 0:
@@ -5467,12 +5483,22 @@ def _mw_marketcap_table(ms, bitcoin, fx):
     rows = []
     for i, e in enumerate(entries):
         cls = ' class="mw-btcrow"' if e["is_btc"] else ""
-        rows.append(f"""      <tr{cls} data-cap="{e['cap']}">
+        ds = {"cap": e["cap"]}
+        if e["yoy"] is not None:
+            ds["yoy"] = e["yoy"]
+        if e["vol"] is not None:
+            ds["vol"] = e["vol"]
+        ds_attrs = " ".join(f'data-{k}="{v}"' for k, v in ds.items())
+        yoy_cell = pct(e["yoy"])
+        vol_cell = "—" if e["vol"] is None else f"{e['vol']:.2f}%"
+        rows.append(f"""      <tr{cls} {ds_attrs}>
         <td class="rk">{i + 1}</td>
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(e['flag'])}</span>
           <span class="nm"><span class="n1">{esc(e['name'])}</span>
           <span class="n2">{esc(e['code'])}</span></span></span></td>
         <td class="mc">{money_full(e['cap'])}</td>
+        <td>{yoy_cell}</td>
+        <td>{vol_cell}</td>
       </tr>""")
     body = "\n".join(rows)
 
@@ -5487,7 +5513,7 @@ def _mw_marketcap_table(ms, bitcoin, fx):
   page</a> has a real, live figure for today — most of the {fx_n} currencies in the
   exchange-rate table above have no live money-supply source yet (see that page's own
   "—" cells), so they're left off this ranking rather than shown with a fabricated
-  number. Click "Market cap" to re-sort.</p>
+  number. Click any column to re-sort.</p>
   <div class="tw">
   <table class="board mw-sort">
     <thead>
@@ -5495,6 +5521,8 @@ def _mw_marketcap_table(ms, bitcoin, fx):
         <th>Rank</th>
         <th>Currency</th>
         <th data-sort="cap" title="Each economy's own broadest published money-supply aggregate, in US dollars at today's exchange rate — Bitcoin's own total market cap for comparison">Market cap</th>
+        <th data-sort="yoy" title="This economy's own broadest money-supply aggregate, year-over-year, in its OWN currency (not USD — a currency's exchange-rate move against the dollar is a different fact from how much more of it now exists) — a currency's own debasement rate. Bitcoin's figure is computed exactly from its halving schedule, not fetched.">Supply growth (YoY)</th>
+        <th data-sort="vol" title="Annualized volatility — the standard deviation of daily log returns over the trailing year, computed the same way for every fiat currency and for Bitcoin (Frankfurter's ECB reference rates; CoinGecko's daily close for Bitcoin)">Volatility</th>
       </tr>
     </thead>
     <tbody>
@@ -5508,7 +5536,10 @@ def _mw_marketcap_table(ms, bitcoin, fx):
   fixed-supply asset's market cap, and the same figure used in the "Broad money" bar on
   the <a href="money-worldwide.html#how-this-board-is-made">Money Worldwide hub</a>'s
   scarcity chart and the <a href="money-worldwide-money-supply.html">Money Supply
-  page</a>'s own totals row.</p>"""
+  page</a>'s own totals row. "Supply growth" and "Volatility" read "—" where no real,
+  live source resolves one (China's money-supply figures are hand-curated from a press
+  release with no queryable history behind them; USD has no volatility against itself,
+  being this whole page's own numeraire) — never a filled-in guess.</p>"""
 
 
 def _mw_money_supply_table(ms):
