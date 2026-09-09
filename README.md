@@ -70,10 +70,16 @@ python3 build_travel.py --drafts   # local preview incl. draft: true posts
   line out for a notes entry. ⚠ **The scale only works if it discriminates** — the
   published meaning of each level lives on the About page and *three stars is a good
   meal*; if everything you enjoyed gets five, the rating stops saying anything.
-- **Readers write in via a form, not comments** (`write.html`, in the nav, plus a nudge
-  at the foot of every entry that pre-fills which one). Deliberate: a comment system on
-  a static site means adopting Disqus's tracking, a GitHub login, or a server to run —
+- **General contact is a form** (`write.html`, in the nav) — deliberate: a comment system
+  on a static site means adopting Disqus's tracking, a GitHub login, or a server to run,
   and a permanent spam-moderation chore. See the note on `FORM_ENDPOINT`.
+- **Per-post comments are X, not a form** (2026-09-09) — the nudge at the foot of every
+  published entry is now two links, `blogkit.x_comment_url`/`x_search_url`: one opens a
+  pre-filled X post ("Commenting on \<title\>: \<url\> @Mr__Librarian") so a reply posts
+  publicly and pings the account directly, the other searches X for every existing post
+  mentioning that entry's URL, so a reader can see what others already said. X hosts,
+  ranks, and moderates it — this domain runs no comment backend. A **draft** preview keeps
+  the old form-based nudge instead (its URL is unlisted, not meant to be posted publicly).
 - **Originals go to S3, not git** — `python3 tools/travel_archive.py add <slug> <files…>`
   puts the full-size photos and any video in the durable blob store, so the Desktop
   copies can be deleted. `list` / `check` / `restore` do what they say. Only the

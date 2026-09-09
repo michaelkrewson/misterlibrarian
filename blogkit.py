@@ -32,6 +32,7 @@ import hashlib
 import html
 import os
 import re
+import urllib.parse
 import xml.sax.saxutils as sax
 
 _TAG_RE = re.compile(r"<[^>]+>")
@@ -220,6 +221,60 @@ def build_feed(posts, *, site_name, site_url, base, blurb, limit=30,
 </channel>
 </rss>
 """
+
+
+# -------------------------------------------------------- X comment system ---
+#
+# X (formerly Twitter) as a lightweight, unmoderated comment system for a
+# published entry: a pre-filled compose link turns "leave a comment" into a
+# public reply that pings @Mr__Librarian, and a companion search link lets
+# any reader find every comment anyone else left on that same URL. X hosts
+# it, ranks it, and moderates the spam and abuse — this domain runs no
+# comment backend at all. Shared here because both publications want the
+# identical mechanism off the identical handle (2026-09-09, Michael's call,
+# replacing the per-post nudge each blog's own write-in form used to carry —
+# that form still exists, nav-linked, for anything not tied to one entry).
+#
+# DELIBERATELY ONLY for a published page. A draft preview's URL is unlisted
+# and meant for Michael's own proofreading pass — posting it publicly to X
+# would advertise a page that isn't live yet. Each builder is responsible for
+# not calling these two on a draft; see build_travel.py's `_x_respond_nudge`
+# (drafts keep the old form-based `_respond_nudge`) and build_finance.py's
+# `_ask_nudge` (branches on `e["draft"]` itself).
+X_HANDLE = "Mr__Librarian"
+
+
+def x_comment_url(title, url):
+    """A pre-filled X compose link, phrased as a comment on `title`/`url`.
+
+    Fully editable by whoever clicks it — this is a starting point, not a
+    guarantee of what actually gets posted — but even untouched it reads as
+    a coherent comment, seeds the canonical URL (X unfurls this into a
+    link-preview card off the page's own Open Graph tags), and carries an
+    @-mention so the post pings this account even if nothing else changes.
+    """
+    # No quote marks wrapped around `title` here on purpose — this domain's
+    # own titles routinely carry their own embedded quotation marks (a
+    # title beginning "'Coded and Audited by AI,' and..." or wrapping its
+    # own phrase in straight quotes), and a second, curly-quoted layer
+    # around one of those collides into an ugly nested-quote mess. Stating
+    # the title plainly avoids the collision unconditionally.
+    text = f'Commenting on {title}:\n\n{url}\n\n@{X_HANDLE}'
+    return "https://x.com/intent/tweet?text=" + urllib.parse.quote(text)
+
+
+def x_search_url(url):
+    """A link to every X post mentioning this exact URL — the read side of
+    the comment system above, so a reader can see what others already said
+    without X ever telling this site who they are.
+
+    Quoted for an exact-phrase match rather than a bag-of-words one (a bare
+    URL's slashes and dots tokenize badly otherwise), and `f=live` (Latest,
+    not Top) so a low-engagement reply on a small blog still surfaces
+    instead of being ranked away by X's default relevance sort.
+    """
+    q = f'"{url}"'
+    return "https://x.com/search?q=" + urllib.parse.quote(q) + "&f=live"
 
 
 # ---------------------------------------------------------------- redirects ---

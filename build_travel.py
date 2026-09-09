@@ -1081,13 +1081,33 @@ def _post_article(p, extra=""):
 
 
 def _respond_nudge(p):
-    # Per-post nudge: the reach of comments without running a comment system.
+    # Form-based nudge — see blogkit.x_comment_url's docstring for why this
+    # one stays. Used ONLY for a draft preview now (build_draft_previews
+    # below); every published post uses _x_respond_nudge instead.
     # The title rides along in `re=` so a message says which entry prompted it.
     return (
         '<div class="respond">'
         '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
         f'should have gone instead? <a href="write.html?re={urllib.parse.quote(p["title"])}">'
         'Write to the librarian</a> — it goes straight to my desk.</p>'
+        '</div>')
+
+
+def _x_respond_nudge(p):
+    """Per-post nudge for a real, published entry: X as the comment system
+    (blogkit.x_comment_url / x_search_url), replacing the form-based
+    _respond_nudge above (2026-09-09, Michael's call — see blogkit's own
+    docstring on the two functions this calls). The general write.html page
+    is unchanged and still nav-linked for anything not tied to one entry."""
+    full_url = f"{SITE_URL}{BASE}/{p['file']}"
+    comment = blogkit.x_comment_url(p["title"], full_url)
+    search = blogkit.x_search_url(full_url)
+    return (
+        '<div class="respond">'
+        '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
+        f'should have gone instead? <a href="{comment}" target="_blank" rel="noopener">'
+        'Comment on X</a> — it posts publicly and pings me directly. '
+        f'<a href="{search}" target="_blank" rel="noopener">See what others said</a>.</p>'
         '</div>')
 
 
@@ -1111,7 +1131,7 @@ def build_post_pages(posts):
         hits_html = f'<p class="pagehits">{hits}</p>' if hits else ""
 
         body = f"""{_post_article(p)}
-{_respond_nudge(p)}
+{_x_respond_nudge(p)}
 {hits_html}
 {navbar}
 <p class="backlink"><a href="index.html">← All entries</a></p>"""

@@ -822,13 +822,27 @@ def _entry_hero(e):
 
 
 def _ask_nudge(e):
-    """The reach of a comments section without running one. The entry title rides
-    along in `re=` so a message arrives saying what prompted it."""
+    """X as the comment system (blogkit.x_comment_url / x_search_url) for a
+    published entry — replacing the form-based nudge below (2026-09-09,
+    Michael's call; see blogkit's own docstring on the two functions this
+    calls). The general ask.html page is unchanged and still nav-linked for
+    anything not tied to one entry. A DRAFT keeps the old form-based nudge —
+    its URL is unlisted and not meant to be posted publicly to X."""
+    if e["draft"]:
+        return ('<div class="respond">'
+                '<p><strong>Got a question?</strong> Something here you want pushed on, '
+                'or think I have wrong? <a href="ask.html?re=%s">Ask Mr. Librarian</a> — '
+                'it goes straight to my desk.</p></div>'
+                % urllib.parse.quote(e["title"]))
+    full_url = "%s%s.html" % (BASE_URL, e["slug"])
+    comment = blogkit.x_comment_url(e["title"], full_url)
+    search = blogkit.x_search_url(full_url)
     return ('<div class="respond">'
             '<p><strong>Got a question?</strong> Something here you want pushed on, '
-            'or think I have wrong? <a href="ask.html?re=%s">Ask Mr. Librarian</a> — '
-            'it goes straight to my desk.</p></div>'
-            % urllib.parse.quote(e["title"]))
+            'or think I have wrong? <a href="%s" target="_blank" rel="noopener">'
+            'Comment on X</a> — it posts publicly and pings me directly. '
+            '<a href="%s" target="_blank" rel="noopener">See what others said</a>.</p></div>'
+            % (comment, search))
 
 
 def _treasury_nudge(subject):
