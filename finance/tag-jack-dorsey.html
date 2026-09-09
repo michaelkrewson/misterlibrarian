@@ -20,38 +20,52 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#060b14;color:#e8eef7;
   font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
   -webkit-font-smoothing:antialiased}
+/* Two ambient washes, not one: the original cool wash up top (unchanged),
+   plus a second, warm accent-toned glow centered on the viewport so there's
+   a soft light sitting behind whatever cards/content are on screen — not
+   just at the very top of a long page. Both are `fixed`, so they stay put
+   as ambient lighting rather than scrolling with the page (same behavior
+   the top wash already had). The cards themselves have their own solid
+   background (`.ecard`/`.board-card` etc.), so this shows through in the
+   margins around and between them — a glow "behind the cards," not one
+   painted on top of them. */
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%)}
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(247,147,26,.16),transparent 72%)}
 .wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
 header{padding:46px 0 8px;text-align:center}
 .brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
 .bmark{width:46px;height:46px;flex:0 0 46px;overflow:visible}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 
-/* Animated mark: a soft breathing glow behind the bars, and the bars
-   themselves rising/settling like a tally being kept — quiet motion, not a
-   flashy loop, since it sits beside body text on every single page. Respects
-   reduced-motion (a glow that never stops pulsing is exactly the kind of
-   motion that spec exists to let people turn off). transform-box:fill-box
-   lets each <rect> scale from its own bottom edge in SVG user-space rather
-   than the SVG viewport's origin. */
-.bmark-glow{filter:blur(6px);transform-origin:23px 23px;
-  animation:bmarkGlow 3.4s ease-in-out infinite}
-.bmark-bar{transform-box:fill-box;transform-origin:bottom;
-  animation:bmarkRise 2.6s ease-in-out infinite}
-.bmark-bar.b1{animation-delay:.4s}
-.bmark-bar.b2{animation-delay:.2s}
-.bmark-bar.b3{animation-delay:0s}
-@keyframes bmarkGlow{
-  0%,100%{opacity:.28;transform:scale(.9)}
-  50%{opacity:.6;transform:scale(1.12)}
+/* Animated mark: a hanging lantern. The whole lantern swings gently from
+   its hook, and its own light — an internal blurred circle, `.bmark-glow`,
+   drawn FIRST so it sits behind every solid frame line — flickers like a
+   real flame, brightening and spilling out past the frame's edges (the
+   glow's radius is deliberately bigger than the lantern body). That's what
+   makes it "pop": the frame lines are fully solid/opaque, not blended with
+   the glow, so the lit halo behind them reads as light shining through and
+   around a solid object rather than a see-through tint. Everything but the
+   glow rides inside `.bmark-swing` so the light source swings with the
+   lantern it lives in. No transform-box override — for an SVG child, a
+   plain px transform-origin already resolves against the SVG's own
+   viewBox coordinates in every current browser, which is exactly the 0-46
+   space these coordinates are drawn in. Respects reduced-motion. */
+.bmark-swing{transform-origin:23px 8px;animation:bmarkSwing 3.6s ease-in-out infinite}
+.bmark-glow{filter:blur(7px);transform-origin:23px 23px;
+  animation:bmarkFlicker 2.4s ease-in-out infinite}
+@keyframes bmarkSwing{
+  0%,100%{transform:rotate(-4deg)}
+  50%{transform:rotate(4deg)}
 }
-@keyframes bmarkRise{
-  0%,100%{transform:scaleY(1)}
-  50%{transform:scaleY(1.16)}
+@keyframes bmarkFlicker{
+  0%,100%{opacity:.55;transform:scale(1)}
+  30%{opacity:.9;transform:scale(1.15)}
+  55%{opacity:.45;transform:scale(.9)}
+  80%{opacity:.78;transform:scale(1.08)}
 }
 @media (prefers-reduced-motion:reduce){
-  .bmark-glow,.bmark-bar{animation:none}
+  .bmark-swing,.bmark-glow{animation:none}
 }
 h1 .em{color:#f7931a;font-style:italic}
 .tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
@@ -409,11 +423,15 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <body>
 <div class="wrap">
   <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
-  <circle class="bmark-glow" cx="23" cy="23" r="15" fill="#f7931a" opacity=".35"/>
-  <circle cx="23" cy="23" r="21" stroke="#f7931a" stroke-width="1.5" opacity=".55"/>
-  <rect class="bmark-bar b1" x="13" y="26" width="5.4" height="10" rx="1.2" fill="#f7931a" opacity=".55"/>
-  <rect class="bmark-bar b2" x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="#f7931a" opacity=".8"/>
-  <rect class="bmark-bar b3" x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="#f7931a"/>
+  <circle class="bmark-glow" cx="23" cy="23" r="14" fill="#f7931a"/>
+  <g class="bmark-swing">
+    <path d="M20 9a3 3 0 0 1 6 0" stroke="#f7931a" stroke-width="1.6" stroke-linecap="round"/>
+    <rect x="16.5" y="10.5" width="13" height="3" rx="1.2" fill="#f7931a"/>
+    <rect x="14.5" y="14" width="17" height="20" rx="3.5" stroke="#f7931a" stroke-width="1.6"/>
+    <line x1="14.5" y1="24" x2="31.5" y2="24" stroke="#f7931a" stroke-width="1.2" opacity=".6"/>
+    <rect x="16.5" y="34.5" width="13" height="3" rx="1.2" fill="#f7931a"/>
+    <circle cx="23" cy="40" r="1.6" fill="#f7931a"/>
+  </g>
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
   <section class="writing">
     <h1 class="wtitle">jack dorsey</h1>
