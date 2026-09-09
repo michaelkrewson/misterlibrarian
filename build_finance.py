@@ -5449,7 +5449,7 @@ def _mw_marketcap_table(ms, bitcoin, fx):
 
     ⚡ Same day: gained two more sortable columns, `volatility_pct` (annualized
     stdev of daily log returns — the exact same statistic for every fiat row
-    AND Bitcoin, from `fetch_fx_volatility()`/`fetch_bitcoin_volatility()` in
+    AND Bitcoin, from `fetch_fx_volatility()`/`fetch_bitcoin_market_stats()` in
     the fetcher) and `broad_yoy_pct` (this economy's own broadest aggregate's
     year-over-year growth in ITS OWN currency — a currency's "debasement
     rate" — from `_money_broad_yoy_pct()`/`_btc_annual_issuance_pct()`,
@@ -5458,7 +5458,17 @@ def _mw_marketcap_table(ms, bitcoin, fx):
     hand-curated values have no queryable history; India's RBI scrape wasn't
     extended; USD has no volatility against itself, being this whole page's
     numeraire) renders "—" and sorts last, same convention as every other
-    honest gap on this board — never a fabricated number."""
+    honest gap on this board — never a fabricated number.
+
+    ⚡ 2026-09-09 — one more: `turnover_usd`, each currency's implied daily FX
+    trading volume, from the curated BIS Triennial Survey shares
+    (`fetch_fx_turnover()` — a periodic SURVEY, refreshed once every three
+    years like the gold-reserve tonnages, not a live feed) alongside
+    Bitcoin's own live 24h volume (`fetch_bitcoin_market_stats()`'s second
+    return value, off the SAME CoinGecko call the volatility column already
+    makes — no extra request). Resolves for all 12 currencies here (the BIS
+    survey happens to cover exactly this board's roster), so unlike the
+    other two new columns this one has no "—" gaps on the fiat side."""
     entries = []
     for r in ms.get("rows", []):
         cap = r.get("broad_usd")
@@ -5466,13 +5476,15 @@ def _mw_marketcap_table(ms, bitcoin, fx):
             continue
         entries.append({"flag": r["flag"], "name": r["area"], "code": r["currency"],
                          "cap": cap * 1e9, "is_btc": False,
-                         "vol": r.get("volatility_pct"), "yoy": r.get("broad_yoy_pct")})
+                         "vol": r.get("volatility_pct"), "yoy": r.get("broad_yoy_pct"),
+                         "turn": r.get("turnover_usd")})
     btc_cap = (bitcoin or {}).get("market_cap_usd")
     if btc_cap:
         entries.append({"flag": "₿", "name": "Bitcoin", "code": "BTC",
                          "cap": btc_cap, "is_btc": True,
                          "vol": (bitcoin or {}).get("volatility_pct"),
-                         "yoy": (bitcoin or {}).get("broad_yoy_pct")})
+                         "yoy": (bitcoin or {}).get("broad_yoy_pct"),
+                         "turn": (bitcoin or {}).get("turnover_usd")})
     entries.sort(key=lambda e: e["cap"], reverse=True)
     n = len(entries)
     if n == 0:
@@ -5488,9 +5500,12 @@ def _mw_marketcap_table(ms, bitcoin, fx):
             ds["yoy"] = e["yoy"]
         if e["vol"] is not None:
             ds["vol"] = e["vol"]
+        if e["turn"] is not None:
+            ds["turn"] = e["turn"]
         ds_attrs = " ".join(f'data-{k}="{v}"' for k, v in ds.items())
         yoy_cell = pct(e["yoy"])
         vol_cell = "—" if e["vol"] is None else f"{e['vol']:.2f}%"
+        turn_cell = "—" if e["turn"] is None else money_full(e["turn"])
         rows.append(f"""      <tr{cls} {ds_attrs}>
         <td class="rk">{i + 1}</td>
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(e['flag'])}</span>
@@ -5499,6 +5514,7 @@ def _mw_marketcap_table(ms, bitcoin, fx):
         <td class="mc">{money_full(e['cap'])}</td>
         <td>{yoy_cell}</td>
         <td>{vol_cell}</td>
+        <td>{turn_cell}</td>
       </tr>""")
     body = "\n".join(rows)
 
@@ -5523,6 +5539,7 @@ def _mw_marketcap_table(ms, bitcoin, fx):
         <th data-sort="cap" title="Each economy's own broadest published money-supply aggregate, in US dollars at today's exchange rate — Bitcoin's own total market cap for comparison">Market cap</th>
         <th data-sort="yoy" title="This economy's own broadest money-supply aggregate, year-over-year, in its OWN currency (not USD — a currency's exchange-rate move against the dollar is a different fact from how much more of it now exists) — a currency's own debasement rate. Bitcoin's figure is computed exactly from its halving schedule, not fetched.">Supply growth (YoY)</th>
         <th data-sort="vol" title="Annualized volatility — the standard deviation of daily log returns over the trailing year, computed the same way for every fiat currency and for Bitcoin (Frankfurter's ECB reference rates; CoinGecko's daily close for Bitcoin)">Volatility</th>
+        <th data-sort="turn" title="Daily trading volume — for fiat, each currency's implied share of the BIS Triennial Central Bank Survey's global FX turnover (April 2025, a periodic survey, refreshed once every three years, not a live feed); for Bitcoin, live 24h spot volume across the exchanges CoinGecko tracks. Two different measurement methods for the same underlying question — see the note below.">Daily trading volume</th>
       </tr>
     </thead>
     <tbody>
@@ -5539,7 +5556,13 @@ def _mw_marketcap_table(ms, bitcoin, fx):
   page</a>'s own totals row. "Supply growth" and "Volatility" read "—" where no real,
   live source resolves one (China's money-supply figures are hand-curated from a press
   release with no queryable history behind them; USD has no volatility against itself,
-  being this whole page's own numeraire) — never a filled-in guess.</p>"""
+  being this whole page's own numeraire) — never a filled-in guess. "Daily trading
+  volume" mixes two genuinely different measurements on purpose, not by oversight: the
+  fiat figures are a currency's implied share of a periodic survey's global total (BIS
+  Triennial Survey, April 2025 — a snapshot from central banks and dealers, taken once
+  every three years), while Bitcoin's is a live daily figure from spot exchanges. A
+  currency's real trading activity moves throughout each three-year gap; Bitcoin's does
+  not sit still for the comparison the way a survey year does.</p>"""
 
 
 def _mw_money_supply_table(ms):

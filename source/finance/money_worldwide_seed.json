@@ -23,6 +23,16 @@
    {"country": "Portugal", "flag": "🇵🇹", "tonnes": 383}
   ]
  },
+ "fx_turnover": {
+  "source_note": "BIS Triennial Central Bank Survey of Foreign Exchange and OTC Derivatives Markets, April 2025 turnover (preliminary results published 2025-09-30; final results with the BIS Quarterly Review, December 2025) — the only genuinely comprehensive measure of FX trading activity, but a periodic SURVEY (once every three years), not a live feed, so this is curated and dated like the gold-reserve tonnages above, not fetched. `shares_pct` is each currency's share of average daily turnover ON ONE SIDE of a trade — every FX trade has two currencies, so shares sum to ~200% across all currencies, not 100% (verified against the BIS's own published figures for USD/EUR/JPY/GBP/CNY/CHF; the remaining six cross-checked against a currency-distribution table sourced from the same survey). A currency's own implied daily USD volume = its share % × `total_daily_usd` (which is already a net-net, once-per-trade figure — no double-counting from the ~200%).",
+  "as_of": "2025-04",
+  "total_daily_usd": 9600000000000,
+  "shares_pct": {
+   "USD": 89.2, "EUR": 28.9, "JPY": 16.8, "GBP": 10.2, "CNY": 8.5,
+   "CHF": 6.4, "AUD": 6.1, "CAD": 5.8, "INR": 1.9, "NOK": 1.3,
+   "BRL": 0.9, "DKK": 0.7
+  }
+ },
  "eu_base_money": {
   "eur_b": 3967.8,
   "as_of": "2026-09-04",

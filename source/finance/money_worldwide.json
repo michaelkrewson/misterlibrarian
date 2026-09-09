@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 04:23 UTC",
+ "generated": "2026-09-09 13:42 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -56,6 +56,7 @@
     "broad_usd": 23218.0,
     "broad_yoy_pct": 5.414179019772547,
     "volatility_pct": null,
+    "turnover_usd": 8563200000000.0,
     "source": "Federal Reserve H.6 (via FRED, billions of dollars)"
    },
    {
@@ -78,6 +79,7 @@
     "broad_usd": 20484.441027229692,
     "broad_yoy_pct": 4.088352110312976,
     "volatility_pct": 5.4224919318268485,
+    "turnover_usd": 2774400000000.0,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
    },
    {
@@ -99,7 +101,8 @@
     "usd_m3": 2974.471568272365,
     "broad_usd": 2974.471568272365,
     "broad_yoy_pct": 6.020863057846171,
-    "volatility_pct": 4.293544054828323
+    "volatility_pct": 4.293544054828323,
+    "turnover_usd": 556800000000.0
    },
    {
     "area": "Switzerland",
@@ -120,7 +123,8 @@
     "usd_m3": 1517.0408615930598,
     "broad_usd": 1517.0408615930598,
     "broad_yoy_pct": 3.2863286513224788,
-    "volatility_pct": 6.895650629562171
+    "volatility_pct": 6.895650629562171,
+    "turnover_usd": 614400000000.0
    },
    {
     "area": "Brazil",
@@ -141,7 +145,8 @@
     "usd_m3": 2750.831135176381,
     "broad_usd": 2750.831135176381,
     "broad_yoy_pct": 10.061686935296477,
-    "volatility_pct": 9.46248539794952
+    "volatility_pct": 9.46248539794952,
+    "turnover_usd": 86400000000.00002
    },
    {
     "area": "United Kingdom",
@@ -162,7 +167,8 @@
     "usd_m3": 4468.627158821538,
     "broad_usd": 4468.627158821538,
     "broad_yoy_pct": 4.420197283209393,
-    "volatility_pct": 6.142922840018986
+    "volatility_pct": 6.142922840018986,
+    "turnover_usd": 979199999999.9999
    },
    {
     "area": "Norway",
@@ -183,7 +189,8 @@
     "usd_m3": 394.02818910914635,
     "broad_usd": 394.02818910914635,
     "broad_yoy_pct": 5.5024975834505385,
-    "volatility_pct": 8.283385481883233
+    "volatility_pct": 8.283385481883233,
+    "turnover_usd": 124800000000.00002
    },
    {
     "area": "China",
@@ -204,7 +211,8 @@
     "usd_m3": null,
     "broad_usd": 52978.16854183742,
     "broad_yoy_pct": null,
-    "volatility_pct": 2.129925913353927
+    "volatility_pct": 2.129925913353927,
+    "turnover_usd": 816000000000.0
    },
    {
     "area": "India",
@@ -225,7 +233,8 @@
     "usd_m3": 3405.51544869767,
     "broad_usd": 3405.51544869767,
     "broad_yoy_pct": null,
-    "volatility_pct": 5.232734712142787
+    "volatility_pct": 5.232734712142787,
+    "turnover_usd": 182400000000.0
    },
    {
     "area": "Japan",
@@ -246,7 +255,8 @@
     "usd_m3": 10628.566429034348,
     "broad_usd": 10628.566429034348,
     "broad_yoy_pct": 1.2210684580460152,
-    "volatility_pct": 8.032887977721977
+    "volatility_pct": 8.032887977721977,
+    "turnover_usd": 1612800000000.0
    },
    {
     "area": "Australia",
@@ -267,7 +277,8 @@
     "usd_m3": 2523.050284972224,
     "broad_usd": 2523.050284972224,
     "broad_yoy_pct": 7.5532045762086275,
-    "volatility_pct": 7.78177451146861
+    "volatility_pct": 7.78177451146861,
+    "turnover_usd": 585600000000.0
    },
    {
     "area": "Denmark",
@@ -288,7 +299,8 @@
     "usd_m3": 337.00590428837785,
     "broad_usd": 337.00590428837785,
     "broad_yoy_pct": 8.651384730707656,
-    "volatility_pct": 5.416326046077543
+    "volatility_pct": 5.416326046077543,
+    "turnover_usd": 67199999999.99999
    },
    {
     "area": "South Korea",
@@ -1909,7 +1921,8 @@
   "price_usd": 78457.2421875,
   "market_cap_usd": 1575546218783.5684,
   "btc_rank": 11,
-  "volatility_pct": 36.75215190051554,
+  "volatility_pct": 36.7635967009038,
+  "turnover_usd": 33750392843.63432,
   "broad_yoy_pct": 0.8184735119353806,
   "lineup": [
    {

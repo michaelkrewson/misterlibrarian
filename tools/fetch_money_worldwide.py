@@ -369,17 +369,37 @@ def fetch_fx_volatility():
     return out
 
 
-def fetch_bitcoin_volatility():
-    """Bitcoin's own annualized volatility (%%), from one year of daily
-    CoinGecko USD closes — the exact same statistic (daily log returns,
-    same annualization) fetch_fx_volatility() computes for fiat, so the
-    two numbers sit on one column with no methodology asterisk."""
+def fetch_bitcoin_market_stats():
+    """(volatility_pct, volume_usd) from ONE CoinGecko market_chart call —
+    365 days of daily USD closes for volatility (the exact same statistic
+    fetch_fx_volatility() computes for fiat) AND the latest day's own
+    `total_volumes` figure for the trading-volume column, sharing a single
+    request rather than fetching the same endpoint twice for two stats."""
     d = _get_json(COINGECKO_BTC_CHART_URL, send_ua=False)
     if not isinstance(d, dict) or not d.get("prices"):
-        print("  ! Bitcoin volatility unresolved (CoinGecko)", file=sys.stderr)
-        return None
+        print("  ! Bitcoin market stats unresolved (CoinGecko)", file=sys.stderr)
+        return None, None
     prices = [p[1] for p in d["prices"] if isinstance(p, list) and len(p) == 2]
-    return _annualized_volatility_pct(prices)
+    vol_pct = _annualized_volatility_pct(prices)
+    volumes = d.get("total_volumes") or []
+    volume_usd = volumes[-1][1] if volumes and isinstance(volumes[-1], list) else None
+    return vol_pct, volume_usd
+
+
+def fetch_fx_turnover(seed):
+    """{currency: implied_daily_usd_volume} from the curated BIS Triennial
+    Survey shares in money_worldwide_seed.json's `fx_turnover` block — a
+    periodic SURVEY (once every three years), not a live feed, so this is
+    curated and dated like the gold-reserve tonnages, not fetched (see the
+    seed file's own source_note for the methodology: each share is ON ONE
+    SIDE of a trade, summing to ~200%, so a currency's own implied volume
+    is simply its share % × the survey's total daily turnover)."""
+    fxt = (seed or {}).get("fx_turnover") or {}
+    total = fxt.get("total_daily_usd")
+    shares = fxt.get("shares_pct") or {}
+    if not total or not shares:
+        return {}
+    return {ccy: (pct / 100.0) * total for ccy, pct in shares.items()}
 
 
 # ─────────────────────────────────────────────────────────────── section 2 ──
@@ -1298,7 +1318,7 @@ def _unresolved_money_row(entry):
     return row
 
 
-def fetch_money_supply(fx, seed, fx_volatility=None):
+def fetch_money_supply(fx, seed, fx_volatility=None, fx_turnover=None):
     """US (FRED) + Euro area (ECB) + five more economies (Canada/Switzerland/
     Brazil/UK/Norway, each its own real keyless API — see the dated research
     log above `BOC_VALET_URL`) with resolved figures, PLUS a set of
@@ -1321,11 +1341,14 @@ def fetch_money_supply(fx, seed, fx_volatility=None):
     figure itself is periodically hand-refreshed.
 
     `fx_volatility` (from fetch_fx_volatility(), computed once in compute()
-    and threaded through here) supplies each row's `volatility_pct` —
-    kept a separate top-level fetch rather than reached for per-row so a
-    volatility outage never costs a money-supply row its own resolution."""
+    and threaded through here) supplies each row's `volatility_pct`, and
+    `fx_turnover` (from fetch_fx_turnover(), the curated BIS survey shares)
+    supplies `turnover_usd` — both kept as separate top-level fetches
+    rather than reached for per-row so an outage in either never costs a
+    money-supply row its own resolution."""
     rows = []
     fx_volatility = fx_volatility or {}
+    fx_turnover = fx_turnover or {}
 
     us_m0_date, us_m0 = _fred_latest("BOGMBASE")     # monetary base, billions USD
     us_m1_date, us_m1 = _fred_latest("M1SL")
@@ -1341,6 +1364,7 @@ def fetch_money_supply(fx, seed, fx_volatility=None):
             "broad_usd": us_m2,   # this economy's own broadest published aggregate
             "broad_yoy_pct": _yoy_pct(*_yoy_from_pairs(_fred_series("M2SL"))),
             "volatility_pct": fx_volatility.get("USD"),  # always None — USD is the numeraire
+            "turnover_usd": fx_turnover.get("USD"),
             "source": "Federal Reserve H.6 (via FRED, billions of dollars)",
         })
     else:
@@ -1370,6 +1394,7 @@ def fetch_money_supply(fx, seed, fx_volatility=None):
             "broad_usd": to_usd_b(ea_m3),   # M3 is the ECB's own headline "broad money"
             "broad_yoy_pct": _yoy_pct(*_yoy_from_pairs(_ecb_bsi_series(ECB_ITEMS["m3"]))),
             "volatility_pct": fx_volatility.get("EUR"),
+            "turnover_usd": fx_turnover.get("EUR"),
             "source": "European Central Bank BSI dataset (billions of euro → USD "
                       "at today's rate)",
         })
@@ -1383,6 +1408,7 @@ def fetch_money_supply(fx, seed, fx_volatility=None):
                                if row.get("usd_%s" % k) is not None), None)
             row["broad_yoy_pct"] = _money_broad_yoy_pct(econ, broad_key) if broad_key else None
             row["volatility_pct"] = fx_volatility.get(row["currency"])
+            row["turnover_usd"] = fx_turnover.get(row["currency"])
             rows.append(row)
 
     if not rows:
@@ -1604,10 +1630,12 @@ def compute_bitcoin_lineup(asset_board, money_supply, gold, debt_gdp):
     # not a stock of anything) and is shown elsewhere on the page instead —
     # adding it as a fourth bar here would answer a different question than
     # the one this chart is asking, not just add more context to the same one.
+    btc_vol_pct, btc_volume_usd = fetch_bitcoin_market_stats()
     return {
         "price_usd": btc.get("price"), "market_cap_usd": btc.get("market_cap"),
         "btc_rank": asset_board.get("btc_rank"),
-        "volatility_pct": fetch_bitcoin_volatility(),
+        "volatility_pct": btc_vol_pct,
+        "turnover_usd": btc_volume_usd,
         "broad_yoy_pct": _btc_annual_issuance_pct(
             constants.get("btc_circulating"), constants.get("btc_block_height")),
         "lineup": lineup,
@@ -1623,7 +1651,8 @@ def compute():
 
     fx = fetch_fx()
     fx_volatility = fetch_fx_volatility()
-    money_supply = fetch_money_supply(fx, seed, fx_volatility)
+    fx_turnover = fetch_fx_turnover(seed)
+    money_supply = fetch_money_supply(fx, seed, fx_volatility, fx_turnover)
     reserves_fx = fetch_reserves_fx(seed)
     gold = fetch_gold(seed, asset_board)
     debt_gdp = fetch_debt_gdp()
