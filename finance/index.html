@@ -309,6 +309,32 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .archive a{color:#e8eef7;text-decoration:none}
 .archive a:hover{text-decoration:underline}
 
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+/* Same pill language as .viewbar/.viewbtn below, so the two control rows
+   read as one family. A tag earns a solid or bold chip only by recurring
+   (see TAG_BAR_MIN_COUNT); the long tail stays in the DOM (still filterable,
+   still linked from an entry's own tag chips) but folded out of sight until
+   "+N more" is clicked. */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#f7931a;color:#f7931a}
+.chip.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#f7931a;color:#f7931a}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
 /* ── view toggle + "show more" pagination (front page) ──────────────────── */
 /* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
    [hidden] alone loses to a later class rule of equal specificity
@@ -363,77 +389,78 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
 <div class="fronthero"><figure><img src="img/us-bullion-depository.jpg" alt="The United States Bullion Depository at Fort Knox, Kentucky — a squat granite vault behind a chain-link perimeter fence, guard towers at its corners, floodlit windows barred" width="1200" height="444" loading="eager"/><figcaption>The United States Bullion Depository, Fort Knox — half the gold on the board below is kept behind that granite. Photo: Cliff, via <a href="https://commons.wikimedia.org/wiki/File:U.S._Bullion_Depository-adjust2.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption></figure></div>  <p class="tag ftag">What the world&#x27;s money is actually in</p>
   <section class="writing">
+    <div class="filters" id="filters"><button class="chip on" data-tag="">All</button><button class="chip w2" data-tag="bitcoin" title="4 entries">bitcoin</button><button class="chip" data-tag="multisig" title="2 entries">multisig</button><button class="chip w2" data-tag="notes" title="4 entries">notes</button><button class="chip w2" data-tag="security" title="3 entries">security</button><button class="chip w2" data-tag="self-custody" title="3 entries">self custody</button><button class="chip more" id="tagMore" type="button" aria-expanded="false" aria-controls="filters" data-count="32">+ 32 more</button><button class="chip rare" data-tag="ai" title="1 entry">ai</button><button class="chip rare" data-tag="android" title="1 entry">android</button><button class="chip rare" data-tag="bis" title="1 entry">bis</button><button class="chip rare" data-tag="bitkey" title="1 entry">bitkey</button><button class="chip rare" data-tag="block" title="1 entry">block</button><button class="chip rare" data-tag="blockstream" title="1 entry">blockstream</button><button class="chip rare" data-tag="bretton-woods" title="1 entry">bretton woods</button><button class="chip rare" data-tag="bug-bounty" title="1 entry">bug bounty</button><button class="chip rare" data-tag="bybit" title="1 entry">bybit</button><button class="chip rare" data-tag="central-banks" title="1 entry">central banks</button><button class="chip rare" data-tag="coinkite" title="1 entry">coinkite</button><button class="chip rare" data-tag="coldcard" title="1 entry">coldcard</button><button class="chip rare" data-tag="confidential-transactions" title="1 entry">confidential transactions</button><button class="chip rare" data-tag="covenants" title="1 entry">covenants</button><button class="chip rare" data-tag="entropy" title="1 entry">entropy</button><button class="chip rare" data-tag="halving" title="1 entry">halving</button><button class="chip rare" data-tag="hardware-wallet" title="1 entry">hardware wallet</button><button class="chip rare" data-tag="imf" title="1 entry">imf</button><button class="chip rare" data-tag="inheritance" title="1 entry">inheritance</button><button class="chip rare" data-tag="jack-dorsey" title="1 entry">jack dorsey</button><button class="chip rare" data-tag="liquid-network" title="1 entry">liquid network</button><button class="chip rare" data-tag="mining" title="1 entry">mining</button><button class="chip rare" data-tag="monetary-policy" title="1 entry">monetary policy</button><button class="chip rare" data-tag="money-supply" title="1 entry">money supply</button><button class="chip rare" data-tag="open-source" title="1 entry">open source</button><button class="chip rare" data-tag="scarcity" title="1 entry">scarcity</button><button class="chip rare" data-tag="sdr" title="1 entry">sdr</button><button class="chip rare" data-tag="seed-phrase" title="1 entry">seed phrase</button><button class="chip rare" data-tag="sidechain" title="1 entry">sidechain</button><button class="chip rare" data-tag="united-nations" title="1 entry">united nations</button><button class="chip rare" data-tag="wallet" title="1 entry">wallet</button><button class="chip rare" data-tag="world-bank" title="1 entry">world bank</button></div>
     <div class="viewbar" id="viewbar">View: <button class="viewbtn on" data-view="cards" type="button">🗂 Cards</button><button class="viewbtn" data-view="list" type="button">📋 List</button></div>
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
-    <a class="tile" href="ibis-wallet-ai-audit.html" data-search="&quot;coded and audited by ai,&quot; and the longer story underneath that sentence a beta bitcoin wallet&#x27;s own readme says, in one sentence, that it was coded and audited by frontier ai models. taken alone that sentence would worry me. taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on.">
+    <a class="tile" href="ibis-wallet-ai-audit.html" data-search="&quot;coded and audited by ai,&quot; and the longer story underneath that sentence a beta bitcoin wallet&#x27;s own readme says, in one sentence, that it was coded and audited by frontier ai models. taken alone that sentence would worry me. taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on." data-tags="bitcoin self-custody wallet android open-source security bug-bounty ai notes">
       <span class="ec-d">SEPTEMBER 9, 2026</span>
       <span class="ec-t">&quot;Coded and Audited by AI,&quot; and the Longer Story Underneath That Sentence</span>
       <span class="ec-s">A beta Bitcoin wallet&#x27;s own README says, in one sentence, that it was coded and audited by frontier AI models. Taken alone that sentence would worry me. Taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on.</span>
     </a>
-    <a class="tile board-card" href="board.html" data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #12.">
+    <a class="tile board-card" href="board.html" data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #12." data-tags="">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">The Asset Board</span>
       <span class="ec-s">Gold, silver, the biggest public companies and Bitcoin, ranked by what the market says they are worth — Bitcoin currently sits at #12.</span>
     </a>
-    <a class="tile board-card" href="bitcoin.html" data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.">
+    <a class="tile board-card" href="bitcoin.html" data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch." data-tags="">
       <span class="ec-d">STANDING PAGE · LIVE</span>
       <span class="ec-t">The Bitcoin Board</span>
       <span class="ec-s">Block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.</span>
     </a>
-    <a class="tile board-card" href="treasuries.html" data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it.">
+    <a class="tile board-card" href="treasuries.html" data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it." data-tags="">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">Bitcoin Treasuries</span>
       <span class="ec-s">Public companies, miners, ETFs, countries, private companies and DeFi protocols — 3,584,045 BTC, ranked by who holds it.</span>
     </a>
-    <a class="tile board-card" href="crypto.html" data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 58% of it.">
+    <a class="tile board-card" href="crypto.html" data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 58% of it." data-tags="">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">The Crypto Heat Map</span>
       <span class="ec-s">The top 100 coins by market cap, grouped into Bitcoin &amp; Derivatives, Infrastructure &amp; Platform, and Others, colour-graded by how much each has moved — Bitcoin currently holds 58% of it.</span>
     </a>
-    <a class="tile board-card" href="humanity.html" data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in.">
+    <a class="tile board-card" href="humanity.html" data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in." data-tags="">
       <span class="ec-d">STANDING PAGE · LIVE</span>
       <span class="ec-t">Bitcoin vs. Humanity</span>
       <span class="ec-s">Every person alive, set against a currency that cannot print more of itself — satoshis per person on Earth, and what happens if all the world&#x27;s wealth wanted in.</span>
     </a>
-    <a class="tile board-card" href="money-worldwide.html" data-search="money worldwide exchange rates, money supply, reserves and gold, and global debt &amp; gdp — with bitcoin&#x27;s own market cap set against every one of them.">
+    <a class="tile board-card" href="money-worldwide.html" data-search="money worldwide exchange rates, money supply, reserves and gold, and global debt &amp; gdp — with bitcoin&#x27;s own market cap set against every one of them." data-tags="">
       <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
       <span class="ec-t">Money Worldwide</span>
       <span class="ec-s">Exchange rates, money supply, reserves and gold, and global debt &amp; GDP — with Bitcoin&#x27;s own market cap set against every one of them.</span>
     </a>
-    <a class="tile" href="untangling-bis-imf-world-bank.html" data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the united nations — one of them predates the un entirely and was never made to join it. here&#x27;s what the bis actually regulates, what the imf actually lends and prices, and where a special drawing right actually comes from.">
+    <a class="tile" href="untangling-bis-imf-world-bank.html" data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the united nations — one of them predates the un entirely and was never made to join it. here&#x27;s what the bis actually regulates, what the imf actually lends and prices, and where a special drawing right actually comes from." data-tags="bis imf world-bank bretton-woods sdr central-banks united-nations monetary-policy notes">
       <span class="ec-d">SEPTEMBER 8, 2026</span>
       <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
       <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the United Nations — one of them predates the UN entirely and was never made to join it. Here&#x27;s what the BIS actually regulates, what the IMF actually lends and prices, and where a Special Drawing Right actually comes from.</span>
     </a>
-    <a class="tile" href="liquid-network-peg-drain.html" data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.">
+    <a class="tile" href="liquid-network-peg-drain.html" data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal." data-tags="bitcoin liquid-network sidechain confidential-transactions security self-custody multisig blockstream covenants notes">
       <span class="ec-d">SEPTEMBER 6, 2026</span>
       <span class="ec-t">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</span>
       <span class="ec-s">A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</span>
     </a>
-    <a class="tile" href="how-many-bitcoins-are-there.html" data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me.">
+    <a class="tile" href="how-many-bitcoins-are-there.html" data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me." data-tags="bitcoin halving money-supply mining scarcity">
       <span class="ec-d">AUGUST 8, 2026</span>
       <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
       <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. Here&#x27;s the arithmetic, and the two things about it that actually surprised me.</span>
     </a>
-    <a class="tile" href="coldcard-bitkey-security.html" data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does.">
+    <a class="tile" href="coldcard-bitkey-security.html" data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does." data-tags="bitcoin self-custody hardware-wallet security coldcard coinkite bitkey block multisig inheritance seed-phrase entropy bybit jack-dorsey notes">
       <span class="ec-d">AUGUST 4, 2026</span>
       <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
       <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>
-    <li data-search="&quot;coded and audited by ai,&quot; and the longer story underneath that sentence a beta bitcoin wallet&#x27;s own readme says, in one sentence, that it was coded and audited by frontier ai models. taken alone that sentence would worry me. taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on."><span class="ec-d">SEPTEMBER 9, 2026</span><a href="ibis-wallet-ai-audit.html">&quot;Coded and Audited by AI,&quot; and the Longer Story Underneath That Sentence</a></li>
-    <li data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #12."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="board.html">The Asset Board</a></li>
-    <li data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch."><span class="ec-d">STANDING PAGE · LIVE</span><a href="bitcoin.html">The Bitcoin Board</a></li>
-    <li data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="treasuries.html">Bitcoin Treasuries</a></li>
-    <li data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 58% of it."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="crypto.html">The Crypto Heat Map</a></li>
-    <li data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in."><span class="ec-d">STANDING PAGE · LIVE</span><a href="humanity.html">Bitcoin vs. Humanity</a></li>
-    <li data-search="money worldwide exchange rates, money supply, reserves and gold, and global debt &amp; gdp — with bitcoin&#x27;s own market cap set against every one of them."><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="money-worldwide.html">Money Worldwide</a></li>
-    <li data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the united nations — one of them predates the un entirely and was never made to join it. here&#x27;s what the bis actually regulates, what the imf actually lends and prices, and where a special drawing right actually comes from."><span class="ec-d">SEPTEMBER 8, 2026</span><a href="untangling-bis-imf-world-bank.html">Older Than the United Nations, and Never Asked to Join</a></li>
-    <li data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal."><span class="ec-d">SEPTEMBER 6, 2026</span><a href="liquid-network-peg-drain.html">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</a></li>
-    <li data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me."><span class="ec-d">AUGUST 8, 2026</span><a href="how-many-bitcoins-are-there.html">How Many Bitcoins Are There, Exactly?</a></li>
-    <li data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does."><span class="ec-d">AUGUST 4, 2026</span><a href="coldcard-bitkey-security.html">A Twenty-Five-Minute Window, and Why I Split the Key</a></li>
+    <li data-search="&quot;coded and audited by ai,&quot; and the longer story underneath that sentence a beta bitcoin wallet&#x27;s own readme says, in one sentence, that it was coded and audited by frontier ai models. taken alone that sentence would worry me. taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on." data-tags="bitcoin self-custody wallet android open-source security bug-bounty ai notes"><span class="ec-d">SEPTEMBER 9, 2026</span><a href="ibis-wallet-ai-audit.html">&quot;Coded and Audited by AI,&quot; and the Longer Story Underneath That Sentence</a></li>
+    <li data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #12." data-tags=""><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="board.html">The Asset Board</a></li>
+    <li data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch." data-tags=""><span class="ec-d">STANDING PAGE · LIVE</span><a href="bitcoin.html">The Bitcoin Board</a></li>
+    <li data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it." data-tags=""><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="treasuries.html">Bitcoin Treasuries</a></li>
+    <li data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 58% of it." data-tags=""><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="crypto.html">The Crypto Heat Map</a></li>
+    <li data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in." data-tags=""><span class="ec-d">STANDING PAGE · LIVE</span><a href="humanity.html">Bitcoin vs. Humanity</a></li>
+    <li data-search="money worldwide exchange rates, money supply, reserves and gold, and global debt &amp; gdp — with bitcoin&#x27;s own market cap set against every one of them." data-tags=""><span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span><a href="money-worldwide.html">Money Worldwide</a></li>
+    <li data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the united nations — one of them predates the un entirely and was never made to join it. here&#x27;s what the bis actually regulates, what the imf actually lends and prices, and where a special drawing right actually comes from." data-tags="bis imf world-bank bretton-woods sdr central-banks united-nations monetary-policy notes"><span class="ec-d">SEPTEMBER 8, 2026</span><a href="untangling-bis-imf-world-bank.html">Older Than the United Nations, and Never Asked to Join</a></li>
+    <li data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal." data-tags="bitcoin liquid-network sidechain confidential-transactions security self-custody multisig blockstream covenants notes"><span class="ec-d">SEPTEMBER 6, 2026</span><a href="liquid-network-peg-drain.html">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</a></li>
+    <li data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me." data-tags="bitcoin halving money-supply mining scarcity"><span class="ec-d">AUGUST 8, 2026</span><a href="how-many-bitcoins-are-there.html">How Many Bitcoins Are There, Exactly?</a></li>
+    <li data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does." data-tags="bitcoin self-custody hardware-wallet security coldcard coinkite bitkey block multisig inheritance seed-phrase entropy bybit jack-dorsey notes"><span class="ec-d">AUGUST 4, 2026</span><a href="coldcard-bitkey-security.html">A Twenty-Five-Minute Window, and Why I Split the Key</a></li>
     </ul>
     <div class="loadmorewrap" id="loadMoreWrap" hidden><button class="loadmore" id="loadMoreBtn" type="button">Show more</button><div class="viewcount" id="viewCount"></div></div>
   </section>
@@ -463,6 +490,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   if (!tilesWrap) return;
   var archiveList = document.getElementById('archiveList');
   var viewbar = document.getElementById('viewbar');
+  var filterBar = document.getElementById('filters');
   var loadMoreWrap = document.getElementById('loadMoreWrap');
   var loadMoreBtn = document.getElementById('loadMoreBtn');
   var viewCount = document.getElementById('viewCount');
@@ -470,6 +498,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   var activeView = 'cards';
   var revealCount = TILE_FIRST;
   var query = '';
+  var activeTag = '';
 
   function firstFor(v){ return v === 'list' ? LIST_FIRST : TILE_FIRST; }
   function stepFor(v){ return v === 'list' ? LIST_STEP : TILE_STEP; }
@@ -478,7 +507,10 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       (v === 'list' ? archiveList : tilesWrap).children);
   }
   function matches(el){
-    return !query || (el.dataset.search || '').indexOf(query) !== -1;
+    var tags = (el.dataset.tags || '').split(/\s+/);
+    var tagOk = !activeTag || tags.indexOf(activeTag) !== -1;
+    var textOk = !query || (el.dataset.search || '').indexOf(query) !== -1;
+    return tagOk && textOk;
   }
 
   // Filter first (search), THEN paginate what's left — a search narrows
@@ -527,6 +559,40 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     });
   }
 
+  // Unfold the long tail of one-off tags. Kept separate from the filter
+  // click handler below because this button is a disclosure, not a filter —
+  // it must never become the active tag or it would blank the listing.
+  function openTags(){
+    if (!filterBar) return;
+    var more = document.getElementById('tagMore');
+    filterBar.classList.add('tags-open');
+    if (more) {
+      more.setAttribute('aria-expanded', 'true');
+      more.textContent = '− fewer';
+    }
+  }
+
+  if (filterBar) {
+    filterBar.addEventListener('click', function(e){
+      var b = e.target.closest('.chip');
+      if (!b) return;
+      if (b.id === 'tagMore') {
+        if (filterBar.classList.contains('tags-open')) {
+          filterBar.classList.remove('tags-open');
+          b.setAttribute('aria-expanded', 'false');
+          b.textContent = '+ ' + b.dataset.count + ' more';
+        } else {
+          openTags();
+        }
+        return;
+      }
+      activeTag = b.dataset.tag;
+      filterBar.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on', c === b); });
+      revealCount = firstFor(activeView);
+      render();
+    });
+  }
+
   // The header search box (see _chrome()) — a real form that still works
   // with JS off (it just navigates here with ?q=…). With JS on: filters
   // live as you type, keeps the URL in sync via replaceState so the search
@@ -548,6 +614,23 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     });
     var handed = new URLSearchParams(location.search).get('q');
     if (handed) { searchInput.value = handed; query = handed.toLowerCase().trim(); }
+  }
+
+  // Arriving from a tag chip at the foot of an entry lands as
+  // index.html?tag=<slug> — the same plain-GET handoff the header search
+  // uses. Only honoured if a chip with that slug actually exists, so a
+  // stale or hand-typed tag shows everything rather than an empty page.
+  var handedTag = new URLSearchParams(location.search).get('tag');
+  if (handedTag && filterBar) {
+    var match = filterBar.querySelector('.chip[data-tag="' + handedTag + '"]');
+    if (match) {
+      // Most tags here are one-off, so the chip handed over is usually one
+      // of the folded ones — unfold it, or the reader sees a filtered list
+      // with no visible chip explaining why and no obvious way back.
+      if (match.classList.contains('rare')) openTags();
+      activeTag = handedTag;
+      filterBar.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on', c === match); });
+    }
   }
 
   setView('cards');

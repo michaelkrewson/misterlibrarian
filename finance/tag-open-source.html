@@ -310,6 +310,32 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .archive a{color:#e8eef7;text-decoration:none}
 .archive a:hover{text-decoration:underline}
 
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+/* Same pill language as .viewbar/.viewbtn below, so the two control rows
+   read as one family. A tag earns a solid or bold chip only by recurring
+   (see TAG_BAR_MIN_COUNT); the long tail stays in the DOM (still filterable,
+   still linked from an entry's own tag chips) but folded out of sight until
+   "+N more" is clicked. */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#f7931a;color:#f7931a}
+.chip.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#f7931a;color:#f7931a}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
 /* ── view toggle + "show more" pagination (front page) ──────────────────── */
 /* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
    [hidden] alone loses to a later class rule of equal specificity

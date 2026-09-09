@@ -27,6 +27,7 @@ Edit SITE_NAME / TAGLINE / BLURB below. Nothing else hardcodes the name.
 """
 from __future__ import annotations
 
+import collections
 import datetime as dt
 import html
 import json
@@ -76,6 +77,16 @@ META_DESC_MIN = 70
 # asked for — they are just held back from the index (and out of the sitemap)
 # until enough entries share the tag to make the page its own answer.
 TAG_INDEX_MIN = 2
+
+# The front-page tag filter bar (mirrors build_travel.py's chip bar, same
+# reasoning): chips let a reader narrow the front page to one topic in place,
+# alongside — not instead of — the permanent per-tag pages above (still
+# linked from every entry's own tag chips and from tags.html). A tag earns a
+# visible chip by RECURRING more than once; the rest fold behind a "+N more"
+# disclosure, or a young blog's one-off tags (measured: 5 entries, 37 tags)
+# would outnumber the entries themselves.
+TAG_BAR_MIN_COUNT = 2
+TAG_BAR_MAX_CHIPS = 18
 
 # How many tiles show on the front page before older ones rotate into the
 # Archive list below — the standing pages (Asset Board, Bitcoin Board,
@@ -938,7 +949,7 @@ def _entry_card(e):
 _WS_RE = re.compile(r"\s+")
 
 
-def _front_item(*, href, label, title, desc, date, board=False):
+def _front_item(*, href, label, title, desc, date, board=False, tags=()):
     """One thing eligible to appear on the front page — an entry or a
     standing page — in the single shape both `_tile` and `_archive_row`
     render from. Keeping entries and standing pages in the same shape,
@@ -949,9 +960,15 @@ def _front_item(*, href, label, title, desc, date, board=False):
 
     `search` is the lowercased haystack the header search box matches
     against (title + description — the label is usually just a date or
-    "STANDING PAGE" boilerplate, not something a reader would type)."""
+    "STANDING PAGE" boilerplate, not something a reader would type).
+
+    `tags` is always empty for a standing page — a board isn't "about" a
+    topic the way an entry is, so it carries no chip and naturally drops
+    out of view the instant the front-page tag filter is active (an empty
+    `data-tags` never matches an active tag), same as any untagged item
+    would."""
     return {"href": href, "label": label, "title": title, "desc": desc,
-            "board": board, "date": date,
+            "board": board, "date": date, "tags": list(tags),
             "search": _WS_RE.sub(" ", (title + " " + desc).lower()).strip()}
 
 
@@ -973,13 +990,19 @@ def _tile(item):
     `.card`. Reuses the .ec-d/.ec-t/.ec-s text styles from `_entry_card`
     (those only style the spans, not the container), so the two only differ
     in the outer box, not the typography. `data-search` is what the header
-    search box's client-side filter matches against (see pagination_js)."""
+    search box's client-side filter matches against; `data-tags` is what the
+    front-page tag chips match against (see pagination_js). Deliberately no
+    visible tag pills inside the tile itself — the whole tile is already one
+    `<a>`, and nesting a second clickable pill inside it would be invalid,
+    unreliably-clickable HTML; a reader reaches a tag either via the filter
+    bar above or the real chips on the entry page itself."""
     cls = "tile board-card" if item["board"] else "tile"
-    return ('    <a class="%s" href="%s" data-search="%s">\n'
+    data_tags = " ".join(blogkit.tag_slug(t) for t in item["tags"])
+    return ('    <a class="%s" href="%s" data-search="%s" data-tags="%s">\n'
             '      <span class="ec-d">%s</span>\n'
             '      <span class="ec-t">%s</span>\n'
             '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (cls, esc(item["href"]), esc(item["search"]),
+            '    </a>' % (cls, esc(item["href"]), esc(item["search"]), esc(data_tags),
                           esc(item["label"]), esc(item["title"]), esc(item["desc"])))
 
 
@@ -987,9 +1010,11 @@ def _archive_row(item):
     """A compact one-line fallback for whatever doesn't fit in
     FRONT_TILE_LIMIT tiles — same information as a tile, no box, no
     description, just enough to find it again. Mirrors the travel blog's
-    own `<ul class="archive">` pattern."""
-    return ('    <li data-search="%s"><span class="ec-d">%s</span><a href="%s">%s</a></li>'
-            % (esc(item["search"]), esc(item["label"]), esc(item["href"]), esc(item["title"])))
+    own `<ul class="archive">` pattern. Carries the same `data-tags` a tile
+    does, so the filter bar works identically whichever view is on screen."""
+    data_tags = " ".join(blogkit.tag_slug(t) for t in item["tags"])
+    return ('    <li data-search="%s" data-tags="%s"><span class="ec-d">%s</span><a href="%s">%s</a></li>'
+            % (esc(item["search"]), esc(data_tags), esc(item["label"]), esc(item["href"]), esc(item["title"])))
 
 
 def _goatcounter():
@@ -1266,7 +1291,8 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
             date=_parse_generated_date(money_worldwide.get("generated"))))
 
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
-                         title=e["title"], desc=e["summary"], date=e["date"]) for e in entries]
+                         title=e["title"], desc=e["summary"], date=e["date"],
+                         tags=e["tags"]) for e in entries]
 
     # Ascending on this transformed key == newest date first, entry-before-
     # board on a tie (see docstring) — no reverse=True, which would also
@@ -1284,6 +1310,48 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     rows = "\n".join(_archive_row(it) for it in pool)
     archive_html = '\n    <ul class="archive" id="archiveList" hidden>\n%s\n    </ul>' % rows
 
+    # The tag filter bar — same "recur to earn a chip, fold the rest" rule
+    # as build_travel.py's (see TAG_BAR_MIN_COUNT above). Counted across the
+    # WHOLE pool, not just what's currently revealed, since every tile is
+    # already in the DOM and pagination only hides some of it — a chip's
+    # count has to match what filtering it will actually turn up. Standing
+    # pages contribute nothing here (their `tags` is always []).
+    counts = collections.Counter(t for it in pool for t in it["tags"])
+    all_tags = sorted(counts, key=str.lower)
+    chips = ""
+    if all_tags:
+        shown = [t for t in all_tags if counts[t] >= TAG_BAR_MIN_COUNT]
+        if len(shown) > TAG_BAR_MAX_CHIPS:
+            keep = set(sorted(shown, key=lambda t: (-counts[t], t.lower()))
+                       [:TAG_BAR_MAX_CHIPS])
+            shown = [t for t in all_tags if t in keep]
+        shown_set = set(shown)
+        rare = [t for t in all_tags if t not in shown_set]
+
+        def _chip(t, is_rare=False):
+            n = counts[t]
+            cls = "chip"
+            if is_rare:
+                cls += " rare"
+            elif n >= 5:
+                cls += " w3"
+            elif n >= 3:
+                cls += " w2"
+            return ('<button class="%s" data-tag="%s" title="%d %s">%s</button>'
+                    % (cls, blogkit.tag_slug(t), n, "entry" if n == 1 else "entries", esc(t)))
+
+        more = ""
+        if rare:
+            more = ('<button class="chip more" id="tagMore" type="button" '
+                    'aria-expanded="false" aria-controls="filters" data-count="%d">'
+                    '+ %d more</button>' % (len(rare), len(rare)))
+        chips = ('<div class="filters" id="filters">'
+                 '<button class="chip on" data-tag="">All</button>'
+                 + "".join(_chip(t) for t in shown)
+                 + more
+                 + "".join(_chip(t, is_rare=True) for t in rare)
+                 + "</div>")
+
     viewbar = ('<div class="viewbar" id="viewbar">View: '
                '<button class="viewbtn on" data-view="cards" type="button">\U0001F5C2 Cards</button>'
                '<button class="viewbtn" data-view="list" type="button">\U0001F4CB List</button></div>')
@@ -1297,6 +1365,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
   if (!tilesWrap) return;
   var archiveList = document.getElementById('archiveList');
   var viewbar = document.getElementById('viewbar');
+  var filterBar = document.getElementById('filters');
   var loadMoreWrap = document.getElementById('loadMoreWrap');
   var loadMoreBtn = document.getElementById('loadMoreBtn');
   var viewCount = document.getElementById('viewCount');
@@ -1304,6 +1373,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
   var activeView = 'cards';
   var revealCount = TILE_FIRST;
   var query = '';
+  var activeTag = '';
 
   function firstFor(v){ return v === 'list' ? LIST_FIRST : TILE_FIRST; }
   function stepFor(v){ return v === 'list' ? LIST_STEP : TILE_STEP; }
@@ -1312,7 +1382,10 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
       (v === 'list' ? archiveList : tilesWrap).children);
   }
   function matches(el){
-    return !query || (el.dataset.search || '').indexOf(query) !== -1;
+    var tags = (el.dataset.tags || '').split(/\s+/);
+    var tagOk = !activeTag || tags.indexOf(activeTag) !== -1;
+    var textOk = !query || (el.dataset.search || '').indexOf(query) !== -1;
+    return tagOk && textOk;
   }
 
   // Filter first (search), THEN paginate what's left — a search narrows
@@ -1361,6 +1434,40 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     });
   }
 
+  // Unfold the long tail of one-off tags. Kept separate from the filter
+  // click handler below because this button is a disclosure, not a filter —
+  // it must never become the active tag or it would blank the listing.
+  function openTags(){
+    if (!filterBar) return;
+    var more = document.getElementById('tagMore');
+    filterBar.classList.add('tags-open');
+    if (more) {
+      more.setAttribute('aria-expanded', 'true');
+      more.textContent = '− fewer';
+    }
+  }
+
+  if (filterBar) {
+    filterBar.addEventListener('click', function(e){
+      var b = e.target.closest('.chip');
+      if (!b) return;
+      if (b.id === 'tagMore') {
+        if (filterBar.classList.contains('tags-open')) {
+          filterBar.classList.remove('tags-open');
+          b.setAttribute('aria-expanded', 'false');
+          b.textContent = '+ ' + b.dataset.count + ' more';
+        } else {
+          openTags();
+        }
+        return;
+      }
+      activeTag = b.dataset.tag;
+      filterBar.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on', c === b); });
+      revealCount = firstFor(activeView);
+      render();
+    });
+  }
+
   // The header search box (see _chrome()) — a real form that still works
   // with JS off (it just navigates here with ?q=…). With JS on: filters
   // live as you type, keeps the URL in sync via replaceState so the search
@@ -1384,6 +1491,23 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     if (handed) { searchInput.value = handed; query = handed.toLowerCase().trim(); }
   }
 
+  // Arriving from a tag chip at the foot of an entry lands as
+  // index.html?tag=<slug> — the same plain-GET handoff the header search
+  // uses. Only honoured if a chip with that slug actually exists, so a
+  // stale or hand-typed tag shows everything rather than an empty page.
+  var handedTag = new URLSearchParams(location.search).get('tag');
+  if (handedTag && filterBar) {
+    var match = filterBar.querySelector('.chip[data-tag="' + handedTag + '"]');
+    if (match) {
+      // Most tags here are one-off, so the chip handed over is usually one
+      // of the folded ones — unfold it, or the reader sees a filtered list
+      // with no visible chip explaining why and no obvious way back.
+      if (match.classList.contains('rare')) openTags();
+      activeTag = handedTag;
+      filterBar.querySelectorAll('.chip').forEach(function(c){ c.classList.toggle('on', c === match); });
+    }
+  }
+
   setView('cards');
 })();
 """ % FRONT_TILE_LIMIT)
@@ -1399,13 +1523,14 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
         desc=BLURB, url=BASE_URL, active="home",
         body="""%s%s  <section class="writing">
     %s
+    %s
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
 %s
     </div>%s
     %s
   </section>%s
-""" % (_front_hero(), intro, viewbar, tiles, archive_html, loadmore, index_hits_html),
+""" % (_front_hero(), intro, chips, viewbar, tiles, archive_html, loadmore, index_hits_html),
         extra_js=pagination_js)
 
 
@@ -1746,6 +1871,32 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
 .archive a{color:#e8eef7;text-decoration:none}
 .archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+/* Same pill language as .viewbar/.viewbtn below, so the two control rows
+   read as one family. A tag earns a solid or bold chip only by recurring
+   (see TAG_BAR_MIN_COUNT); the long tail stays in the DOM (still filterable,
+   still linked from an entry's own tag chips) but folded out of sight until
+   "+N more" is clicked. */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:__ACCENT__;color:__ACCENT__}
+.chip.on{background:__ACCENT__;border-color:__ACCENT__;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:__ACCENT__;color:__ACCENT__}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
 
 /* ── view toggle + "show more" pagination (front page) ──────────────────── */
 /* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
