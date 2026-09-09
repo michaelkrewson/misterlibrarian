@@ -513,9 +513,22 @@ def _fetch_generic_money_row(econ, fx):
     provider = econ["provider"]
     if provider == "boc_valet":
         for key, series in econ.get("series", {}).items():
-            d, v = _boc_valet_latest(series)
-            if v is not None:
-                vals[key] = (v / 1000.0, d)   # millions -> billions
+            # a value may be one V-series, or a list of V-series to SUM —
+            # Canada's m0 needs this (notes in circulation + settlement
+            # balances, two separate balance-sheet line items with no
+            # single published series for their sum), while every other
+            # boc_valet key here stays a plain string.
+            codes = series if isinstance(series, list) else [series]
+            total, date_s, ok = 0.0, None, True
+            for code in codes:
+                d, v = _boc_valet_latest(code)
+                if v is None:
+                    ok = False
+                    break
+                total += v
+                date_s = date_s or d
+            if ok:
+                vals[key] = (total / 1000.0, date_s)   # millions -> billions
     elif provider == "snb_cube":
         cube_vals = _snb_cube_values(econ["cube"], list(econ.get("dims", {}).values()))
         for key, dim in econ.get("dims", {}).items():

@@ -42,8 +42,8 @@
  "reserve_economies_note": "Non-gold official reserve assets (foreign exchange + SDRs + IMF reserve position), mirrored from the IMF's own International Financial Statistics onto FRED's keyless CSV endpoint — the same series IMF publishes, reached through a source that doesn't 403 a datacenter IP the way imf.org's own legacy export does (see the fetcher's docstring). Curated to the largest reserve holders that FRED actually mirrors with a live series; several economies that would belong on this list (the Eurozone as a bloc, Switzerland, Hong Kong, Singapore) either have no matching FRED mirror or one that stopped updating years ago, and are left off rather than shown stale.",
  "money_supply_economies": [
   {"area": "Canada", "flag": "🇨🇦", "currency": "CAD", "provider": "boc_valet",
-   "series": {"m1": "V37152", "m2": "V41552796", "m3": "V41552794"},
-   "source": "Bank of Canada Valet API — M1++, M2, M3 (gross, seasonally adjusted, millions of Canadian dollars)"},
+   "series": {"m0": ["V36672", "V41886561"], "m1": "V37152", "m2": "V41552796", "m3": "V41552794"},
+   "source": "Bank of Canada Valet API — M0 (notes in circulation + settlement balances of Payments Canada members, from the Bank's own balance sheet, not seasonally adjusted), M1++, M2, M3 (gross, seasonally adjusted); millions of Canadian dollars. Canada has no officially published \"M0\" aggregate — this is the standard central-bank-money construction (currency + bank reserves), the same definition this board applies to the US and euro-area M0 cells."},
   {"area": "Switzerland", "flag": "🇨🇭", "currency": "CHF", "provider": "snb_cube",
    "cube": "snbmonagg", "dims": {"m1": "GM1", "m2": "GM2", "m3": "GM3"},
    "source": "Swiss National Bank Data Portal — monetary aggregates M1/M2/M3 (CHF millions)"},
