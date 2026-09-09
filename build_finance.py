@@ -10,11 +10,16 @@ Yahoo outage, and works offline — and it is the same property build_travel.py 
 
 THREE PUBLICATIONS, ONE DOMAIN
 ─────────────────────────────
-mistertranslation.com serves three separate things: the Bible project at the root
-(build.py), The Librarian Abroad at /travel/ (build_travel.py), and this at
-/finance/. The two blogs LINK TO EACH OTHER (Michael's call, 2026-08-07) — nav,
-footer, and the odd entry-to-entry reference. The Bible project links to neither
-and is linked from neither; that separation is the one that must hold.
+mistertranslation.com serves three separate things: the Bible project, now at
+/bible.html (build.py — moved off the bare root 2026-09-09), The Librarian Abroad
+at /travel/ (build_travel.py), and this at /finance/. The two blogs LINK TO EACH
+OTHER (Michael's call, 2026-08-07) — nav, footer, and the odd entry-to-entry
+reference. ⚠️ 2026-09-09: the old "Bible project links to neither and is linked
+from neither" isolation rule is RETIRED (Michael's call — he'd stopped worrying
+about the cross-linking concern that motivated it). The bare domain root is now a
+hand-written 3-card hub (index.html, no builder of its own) linking to all three —
+this board, the travel blog, and the Bible project's new bible.html home. None of
+that changed anything inside finance/ itself; this note is just no longer true.
 
 This builder writes ONLY inside finance/ and never globs or deletes anywhere else,
 which is the same discipline that lets the other two coexist safely. build.py's only

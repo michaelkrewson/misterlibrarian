@@ -1,11 +1,14 @@
 # MisterLibrarian — Claude instructions
 
-This repo publishes **three separate things at mistertranslation.com**:
+This repo publishes **three separate things at mistertranslation.com**, reached through a
+hand-written 3-card hub at the bare domain root (`index.html`, no builder of its own —
+added 2026-09-09):
 
-1. **The Bible project** (site root, `build.py`) — a fresh translation of the Bible into
-   modern English, made from the original Hebrew/Greek one chapter at a time, with the
-   source text reproduced verse-by-verse and notes comparing every rendering choice
-   against a fixed shelf of landmark versions.
+1. **The Bible project** (`/bible.html`, `build.py`; moved off the bare root 2026-09-09 when
+   the hub took over `/` — see below) — a fresh translation of the Bible into modern English,
+   made from the original Hebrew/Greek one chapter at a time, with the source text reproduced
+   verse-by-verse and notes comparing every rendering choice against a fixed shelf of landmark
+   versions.
 2. **The Librarian Abroad** (`/travel/`, `build_travel.py`) — Michael's travel & food blog.
 3. **A finance board** (`/finance/`, `build_finance.py`) — a standing "world's largest
    assets by market cap" board, built offline from a JSON snapshot.
@@ -15,19 +18,31 @@ or a travel entry, publishing). It's well-maintained and this file doesn't repea
 file is the layer README doesn't cover: translation doctrine, editorial judgment calls,
 paid-for gotchas, and the conventions that only show up once you've been burned by them.
 
-## The one relationship rule that must hold
+## The relationship rule — RETIRED 2026-09-09, all three now cross-link via the hub
 
-**The Bible project links to neither of the other two publications, and is linked from
-neither.** No nav entry, no footer link, no home-page card, nothing pointing back. This is
-deliberate, not an oversight — don't "helpfully" add a cross-link.
+**This used to say the Bible project links to neither of the other two publications and is
+linked from neither.** That isolation was deliberate (see git history / RETIRED.md-style
+context below), but Michael dropped the concern that motivated it and asked for a top-level
+hub at `/` with one card per publication — Bitcoin & Finance, Food & Travel, and Religion
+(the Bible project) — so all three are now mutually reachable through it. **Don't reintroduce
+the isolation** — the current, correct state is: hub → all three; Bible project → back to the
+hub only via its own nav's brand-name conventions (it doesn't carry a hub link of its own
+today, and none was asked for); Librarian Abroad ↔ finance board still link directly to each
+other too (Michael's call, 2026-08-07), unaffected by the hub's addition.
 
-**The Librarian Abroad and the finance board DO link to each other** (Michael's call,
-2026-08-07) — nav, footer, entry-to-entry references are fine between those two.
+**Why the Bible project's own pages didn't move:** `build.py` still emits ~2,772 pages at the
+SAME root-level URLs they've always had (`genesis-1.html`, `toc.html`, etc.) — moving them
+under a subpath would have broken every indexed URL for zero benefit. Only the ONE page that
+used to occupy the bare root — the project's own homepage — moved, to `bible.html`
+(`build.py`'s `HOME_URL` constant; every page's nav/brand link was repointed there in one
+pass). The bare root itself is now the hub's file, not a `build.py` output at all.
 
 Each of the three builders (`build.py`, `build_travel.py`, `build_finance.py`) writes only
 inside its own output area and never globs or deletes elsewhere — that discipline is what
 lets all three coexist safely in one repo. Keep it that way; don't import one builder from
-another.
+another. The hub's `index.html` follows the same discipline by construction — it's a single
+static file with no generator, so there's nothing for a builder to accidentally clobber it
+with, and nothing it can accidentally glob into any of the three builders' own outputs.
 
 ## Before touching anything — verify, don't assume
 

@@ -2,11 +2,17 @@
 """Build "The Librarian Abroad" — Mr. Librarian's travel & food blog.
 
 This is a SEPARATE, SELF-CONTAINED site that happens to share a domain with the
-Bible project. It publishes to /travel/ on mistertranslation.com and is
-DELIBERATELY NOT LINKED to or from the Bible site: no nav entry, no footer link,
-no card on the home page, and nothing in here points back. The two projects share
-a domain and nothing else — separate builder, separate stylesheet, separate
-header/footer, separate wordmark.
+Bible project. It publishes to /travel/ on mistertranslation.com — separate
+builder, separate stylesheet, separate header/footer, separate wordmark.
+
+⚠️ 2026-09-09: this used to be "DELIBERATELY NOT LINKED to or from the Bible
+site" — that isolation rule is RETIRED (Michael's call; he'd stopped worrying
+about the cross-linking concern that motivated it). The bare domain root is now
+a hand-written 3-card hub (index.html, no builder of its own) linking to this
+blog, the finance board, and the Bible project's new home at /bible.html (moved
+off the bare root the same day). None of that touches this builder's own output
+inside travel/ — it's still a fully separate, self-contained site; only the
+domain's front door changed.
 
     python3 build_travel.py            # build published posts
     python3 build_travel.py --drafts   # include posts marked `draft: true`

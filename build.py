@@ -50,6 +50,12 @@ SHARE_JS_VER = _asset_ver("share.js")
 SITE_NAME = "The MisterLibrarian Bible Project"
 TAGLINE = "Catalogued &amp; compared, one chapter at a time"
 SITE_URL = "https://mistertranslation.com"
+# The Bible project's own homepage moved off the bare domain root 2026-09-09, when
+# mistertranslation.com/ became a 3-card hub (Bitcoin & Finance / Food & Travel /
+# Religion) — root index.html is now a separate, hand-written static file with no
+# builder of its own (this script never writes it). This project's home page is
+# just a normal page at HOME_URL; the bare root is no longer it.
+HOME_URL = "bible.html"
 OG_IMAGE = f"{SITE_URL}/img/og-default.png"   # branded default link-preview image
 OG_IMAGE_ES = f"{SITE_URL}/img/og-default.es.png"   # …and its Spanish twin
 
@@ -814,7 +820,7 @@ def header(active="", lang="en"):
     <details class="langsel">
       <summary title="Idioma">\U0001F310 Español</summary>
       <div class="langlist">
-        <a href="index.html">English</a>
+        <a href="{HOME_URL}">English</a>
         <a href="es.html" class="cur">Español</a>
       </div>
     </details>
@@ -833,7 +839,7 @@ def header(active="", lang="en"):
       <div class="mobmenu-sep"></div>
       <a href="contact.es.html">\U00002709\U0000FE0F Preguntar</a>
       <div class="mobmenu-sep"></div>
-      <a href="index.html">English</a>
+      <a href="{HOME_URL}">English</a>
       <a href="es.html" class="cur">Español</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
@@ -863,12 +869,12 @@ def header(active="", lang="en"):
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
       <div class="langlist">
-        <a href="index.html" class="cur">English</a>
+        <a href="{HOME_URL}" class="cur">English</a>
         <a href="es.html">Español</a>
       </div>
     </details>
   </div>
-  <a class="brand" href="index.html">
+  <a class="brand" href="{HOME_URL}">
     {SCROLL_SVG}
     <span class="brand-name">The Mister<span class="lib">Librarian</span> Bible Project</span>
   </a>
@@ -877,7 +883,7 @@ def header(active="", lang="en"):
   <details class="mobmenu">
     <summary>\U00002630 Menu</summary>
     <div class="mobmenu-panel">
-      <a href="index.html"{cls('home')}>Home</a>
+      <a href="{HOME_URL}"{cls('home')}>Home</a>
       <a href="toc.html"{cls('toc')}>Table of Contents</a>
       <a href="reading.html"{cls('reading')}>📗 My Reading</a>
       <a href="library.html"{cls('library')}>📚 Library</a>
@@ -887,14 +893,14 @@ def header(active="", lang="en"):
       <a href="contact.html">✉️ Ask a Question</a>
       <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
       <div class="mobmenu-sep"></div>
-      <a href="index.html" class="cur">English</a>
+      <a href="{HOME_URL}" class="cur">English</a>
       <a href="es.html">Español</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
     </div>
   </details>
   <nav class="topnav">
-    <a href="index.html"{cls('home')}>Home</a>
+    <a href="{HOME_URL}"{cls('home')}>Home</a>
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
     <a href="reading.html"{cls('reading')}>📗 My Reading</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
@@ -927,7 +933,7 @@ ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="index.html">English edition</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 
@@ -4070,8 +4076,8 @@ var MTLIB_CHAPTERS = {ch_json};
     out = page(SITE_NAME, body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
                     "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.",
-               url="index.html", og_type="website")
-    open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(out)
+               url=HOME_URL, og_type="website")
+    open(os.path.join(OUT, HOME_URL), "w", encoding="utf-8").write(out)
 
 
 def build_about():
@@ -4106,7 +4112,7 @@ def build_about():
   <p><strong>The name.</strong> A librarian's job is to catalogue, source, and compare — not to preach.
   That's the ethos here: every claim sourced, every alternative shown, disagreements between traditions
   presented rather than settled.</p>
-  <p><strong>Privacy.</strong> The <a href="index.html">home page</a>'s Verse of the Day and the
+  <p><strong>Privacy.</strong> The <a href="{HOME_URL}">home page</a>'s Verse of the Day and the
   <a href="reading.html">My Reading</a> progress tracker both run entirely in your own browser (a bit of
   localStorage) — there's no login and no server-side record of what you've read; clear your browser
   data and it's gone, same as any other private note to yourself. The one thing that <em>is</em> measured
@@ -5291,7 +5297,7 @@ Reina-Valera.</p>
 <div class="panel prose">
   <h2 style="margin-top:2px">Una edición que está naciendo</h2>
   <p>Esta es la edición en español, apenas comenzando y creciendo <strong>capítulo por capítulo</strong> junto a
-  la <a href="index.html">edición en inglés</a>, que va más adelantada. Por ahora la biblioteca completa
+  la <a href="{HOME_URL}">edición en inglés</a>, que va más adelantada. Por ahora la biblioteca completa
   (enciclopedia, diccionario, atlas, cronología) y el aparato de notas más extenso viven en inglés; todo eso se
   irá traduciendo. Nada se traduce a la ligera: el texto viene del hebreo con el mismo cuidado que la edición
   inglesa — «bóveda», no «expansión»; «la humanidad», no «el hombre» — y las notas comparan con la Reina-Valera
