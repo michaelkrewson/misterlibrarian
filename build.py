@@ -3576,6 +3576,32 @@ def _note_nudge(title, path, top=False):
             '</div>')
 
 
+def _ask_comment_nudge(title, path):
+    """Two-button 'join the conversation' row closing a Dear Mr. Librarian
+    post — replaces the old single "Ask Mr. Librarian a question" button
+    (2026-09-09, Michael's call). Same mechanism as _note_nudge above
+    (blogkit.x_search_url), but the "comment" phrasing (blogkit.x_comment_url)
+    rather than build.py's own x_note_url: an Ask post argues a position for
+    the reader to push back on, the same shape as a Ledger/Abroad entry,
+    not a reader's own note on a chapter/word/place — see blogkit.py's
+    X-comment-system section header for why the two phrasings exist. Same
+    labels as build_finance.py's _comment_box() on the Ledger's own entries;
+    bare pills (no surrounding box), same as _note_nudge, colored by this
+    site's own gold via the shared .respond-btn-primary/secondary rules in
+    style.css — the "appropriate color difference" from the Ledger's orange.
+
+    `path` is root-relative to SITE_URL (e.g. "ask-jesus-god.html")."""
+    full_url = f"{SITE_URL}/{path}"
+    comment = blogkit.x_comment_url(title, full_url)
+    search = blogkit.x_search_url(full_url)
+    return ('<div class="notebtns">'
+            f'<a class="respond-btn respond-btn-primary" href="{comment}" target="_blank" '
+            'rel="noopener">💬 Comment on X</a>'
+            f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
+            'rel="noopener">🔍 See what others said</a>'
+            '</div>')
+
+
 def _insert_before_first_verse(content, html_block):
     """Splice `html_block` in immediately before the first verse (the first
     `<div class="vrs"`) — the exact spot reader-notes.js's removed chap-notes
@@ -4534,12 +4560,7 @@ def build_ask_enoch():
   Aramaic/Greek fragments instead of pointed Masoretic Hebrew, and being upfront that it sits outside the
   Tanakh and the Protestant canon this translation has otherwise followed.</p>
 </div>
-
-<div class="panel" style="margin-top:14px">
-  <p class="muted" style="margin:0 0 12px">Have a question about the project, a translation choice, or
-  what's coming next? Reader questions are exactly how this series grows — the next one could be yours.</p>
-  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
-</div>"""
+""" + _ask_comment_nudge("Why isn't the Book of Enoch in this translation?", "ask-enoch.html")
     out = page(f"Dear Mr. Librarian: the Book of Enoch — {SITE_NAME}", body, active="ask",
                desc="Why the Book of Enoch isn't part of this Bible translation: the Masoretic source "
                     "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.",
@@ -5653,8 +5674,8 @@ def build_ask_jesus_god():
 <div class="panel" style="margin-top:14px">
   <p class="muted" style="margin:0 0 12px">More from <a href="ask.html">Dear Mr. Librarian</a>:
   <a href="ask-enoch.html">Why isn't the Book of Enoch in this translation?</a></p>
-  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
-</div>"""
+</div>
+""" + _ask_comment_nudge("Was the Word God, or a god?", "ask-jesus-god.html")
     out = page(f"Dear Mr. Librarian: was the Word God, or a god? — {SITE_NAME}", body, active="ask",
                desc="John 1:1 and the deity of Christ: the Greek grammar of the missing article (Colwell, "
                     "Harner), the three readings, 'firstborn of all creation,' the Angel of Jehovah and Michael "
@@ -5772,8 +5793,8 @@ def build_ask_jehovah():
   <a href="dictionary.html">Dictionary</a> and <a href="encyclopedia.html">Encyclopedia</a>. More from
   <a href="ask.html">Dear Mr. Librarian</a>: <a href="ask-jesus-god.html">Was the Word God, or a god?</a> &middot;
   <a href="ask-enoch.html">Why isn&rsquo;t the Book of Enoch here?</a></p>
-  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
-</div>"""
+</div>
+""" + _ask_comment_nudge("Why does this translation say “Jehovah”?", "ask-jehovah.html")
     out = page(f"Dear Mr. Librarian: why “Jehovah”? — {SITE_NAME}", body, active="ask",
                desc="The divine name in this translation: the Tetragrammaton (YHWH), why nearly every Bible hides "
                     "it behind 'the LORD,' the difference between 'Yahweh' and 'Jehovah,' and why this project "
@@ -5997,12 +6018,7 @@ def build_ask_cain_seth():
   <em>which</em> line you&rsquo;re from, but that there&rsquo;s only one candidate left standing after the flood
   &mdash; and it isn&rsquo;t Cain&rsquo;s.</p>
 </div>
-
-<div class="panel" style="margin-top:14px">
-  <p class="muted" style="margin:0 0 12px">Have a question about the project, a translation choice, or
-  what's coming next? Reader questions are exactly how this series grows — the next one could be yours.</p>
-  <a class="btn" href="contact.html">✉️ Ask Mr. Librarian a question</a>
-</div>"""
+""" + _ask_comment_nudge("Could anyone alive today be descended from Cain?", "ask-cain-seth.html")
     out = page(f"Could anyone alive today be descended from Cain? — {SITE_NAME}", body, active="ask",
                desc="After Cain killed Abel, is anyone alive today descended from him, or from Seth? "
                     "Genesis 4's line that simply stops, Genesis 5's formal line to Noah, and Genesis "
