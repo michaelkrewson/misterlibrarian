@@ -1587,8 +1587,34 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
 .wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
 header{padding:46px 0 8px;text-align:center}
 .brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
-.bmark{width:46px;height:46px;flex:0 0 46px}
+.bmark{width:46px;height:46px;flex:0 0 46px;overflow:visible}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: a soft breathing glow behind the bars, and the bars
+   themselves rising/settling like a tally being kept — quiet motion, not a
+   flashy loop, since it sits beside body text on every single page. Respects
+   reduced-motion (a glow that never stops pulsing is exactly the kind of
+   motion that spec exists to let people turn off). transform-box:fill-box
+   lets each <rect> scale from its own bottom edge in SVG user-space rather
+   than the SVG viewport's origin. */
+.bmark-glow{filter:blur(6px);transform-origin:23px 23px;
+  animation:bmarkGlow 3.4s ease-in-out infinite}
+.bmark-bar{transform-box:fill-box;transform-origin:bottom;
+  animation:bmarkRise 2.6s ease-in-out infinite}
+.bmark-bar.b1{animation-delay:.4s}
+.bmark-bar.b2{animation-delay:.2s}
+.bmark-bar.b3{animation-delay:0s}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.28;transform:scale(.9)}
+  50%{opacity:.6;transform:scale(1.12)}
+}
+@keyframes bmarkRise{
+  0%,100%{transform:scaleY(1)}
+  50%{transform:scaleY(1.16)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-bar{animation:none}
+}
 h1 .em{color:__ACCENT__;font-style:italic}
 .tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
 .lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
@@ -1692,7 +1718,7 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
   flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
 .nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:14.5px}
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13px}
 .nav a{color:#93a4bd;text-decoration:none}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__}
@@ -1789,7 +1815,7 @@ a.tg:hover{border-color:__ACCENT__;color:#e8eef7}
 header.hsm{padding:30px 0 6px;text-align:left}
 header.hsm .brand{gap:11px}
 header.hsm .bmark{width:34px;height:34px;flex:0 0 34px}
-.wm{font-size:20px;letter-spacing:.01em}
+.wm{font-size:23px;letter-spacing:.01em}
 .wm .em{color:__ACCENT__;font-style:italic}
 a{color:__ACCENT__}
 .draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
@@ -1942,10 +1968,11 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 """
 
 MARK_SVG = """<svg class="bmark" viewBox="0 0 46 46" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="23" cy="23" r="15" fill="__ACCENT__" opacity=".35"/>
   <circle cx="23" cy="23" r="21" stroke="__ACCENT__" stroke-width="1.5" opacity=".55"/>
-  <rect x="13" y="26" width="5.4" height="10" rx="1.2" fill="__ACCENT__" opacity=".55"/>
-  <rect x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="__ACCENT__" opacity=".8"/>
-  <rect x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="__ACCENT__"/>
+  <rect class="bmark-bar b1" x="13" y="26" width="5.4" height="10" rx="1.2" fill="__ACCENT__" opacity=".55"/>
+  <rect class="bmark-bar b2" x="20.3" y="19" width="5.4" height="17" rx="1.2" fill="__ACCENT__" opacity=".8"/>
+  <rect class="bmark-bar b3" x="27.6" y="12" width="5.4" height="24" rx="1.2" fill="__ACCENT__"/>
 </svg>"""
 
 
