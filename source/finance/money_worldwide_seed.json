@@ -58,12 +58,13 @@
   {"area": "Norway", "flag": "🇳🇴", "currency": "NOK", "provider": "ssb_pxweb",
    "table_m0": "10946", "code_m0": "M0Beholdning",
    "table_m123": "10945", "codes_m123": {"m1": "PengmengdBehM1", "m2": "PengmengdBehM2", "m3": "PengmengdBehM3"},
-   "source": "Statistics Norway StatBank — base money M0 + monetary aggregates M1/M2/M3 (NOK millions)"}
+   "source": "Statistics Norway StatBank — base money M0 + monetary aggregates M1/M2/M3 (NOK millions)"},
+  {"area": "China", "flag": "🇨🇳", "currency": "CNY", "provider": "hand_curated",
+   "values": {"m0": 14820.0, "m1": 115460.0, "m2": 355510.0}, "as_of": "2026-07-31",
+   "source": "People's Bank of China — Financial Statistics Report (July 2026), read by hand from the Bank's own plain-English press release (pbc.gov.cn); no live keyless API confirmed (FRED's IMF-mirrored M2 series stopped updating in 2019-08, and the Bank's own \"Money Supply\" statistical tables are real .htm/.xls/.pdf files but sit behind a per-month, unpredictably-timestamped URL with no stable series id or listing feed — hand-refreshing periodically off the monthly report, same posture as the Euro area's hand-curated M0). No M3 published. RMB billions."}
  ],
- "money_supply_economies_note": "Each entry names a real, keyless, verified-by-hand API (Bank of Canada's Valet API, the Swiss National Bank's Data Portal cube API, Banco Central do Brasil's SGS API, the Bank of England's IADB, and Statistics Norway's StatBank PxWebAPI) — five different providers because, unlike the reserve series above, no single templated source covers cross-country money supply (see the fetcher's own dated research-log entry on why the obvious FRED/OECD-MEI templated pattern is real but dead — every country's series in that family stopped updating years ago). Adding another economy on one of these SAME five providers is a one-line entry here; a genuinely new provider needs a new fetch function.",
+ "money_supply_economies_note": "Each entry names a real, verified-by-hand source — five genuinely keyless APIs (Bank of Canada's Valet API, the Swiss National Bank's Data Portal cube API, Banco Central do Brasil's SGS API, the Bank of England's IADB, and Statistics Norway's StatBank PxWebAPI), because unlike the reserve series above, no single templated source covers cross-country money supply (see the fetcher's own dated research-log entry on why the obvious FRED/OECD-MEI templated pattern is real but dead — every country's series in that family stopped updating years ago) — plus one hand-curated entry (China) for an economy whose real data has no stable machine-readable feed at all, the same posture the Euro area's own M0 cell already uses. Adding another economy on one of these SAME five APIs is a one-line entry here; a genuinely new provider (live or hand-curated) needs a new fetch function.",
  "money_supply_unresolved": [
-  {"area": "China", "flag": "🇨🇳", "currency": "CNY",
-   "note": "FRED's IMF-mirrored M2 series (MYAGM2CNM189N) stopped updating in 2019-08; the People's Bank of China has no confirmed keyless machine-readable API for current M0/M1/M2 — only PDF/report releases were found."},
   {"area": "India", "flag": "🇮🇳", "currency": "INR",
    "note": "No working FRED mirror resolves for India's money supply (guessed IMF/OECD-style series ids do not exist); the Reserve Bank of India's Database on Indian Economy (DBIE) has no confirmed keyless JSON/CSV API for current M1/M3."},
   {"area": "Japan", "flag": "🇯🇵", "currency": "JPY",

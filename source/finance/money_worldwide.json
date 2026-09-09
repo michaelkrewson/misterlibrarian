@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 02:09 UTC",
+ "generated": "2026-09-09 02:16 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -175,20 +175,20 @@
     "area": "China",
     "flag": "🇨🇳",
     "currency": "CNY",
-    "source": "FRED's IMF-mirrored M2 series (MYAGM2CNM189N) stopped updating in 2019-08; the People's Bank of China has no confirmed keyless machine-readable API for current M0/M1/M2 — only PDF/report releases were found.",
-    "m0": null,
-    "m0_date": null,
-    "usd_m0": null,
-    "m1": null,
-    "m1_date": null,
-    "usd_m1": null,
-    "m2": null,
-    "m2_date": null,
-    "usd_m2": null,
+    "source": "People's Bank of China — Financial Statistics Report (July 2026), read by hand from the Bank's own plain-English press release (pbc.gov.cn); no live keyless API confirmed (FRED's IMF-mirrored M2 series stopped updating in 2019-08, and the Bank's own \"Money Supply\" statistical tables are real .htm/.xls/.pdf files but sit behind a per-month, unpredictably-timestamped URL with no stable series id or listing feed — hand-refreshing periodically off the monthly report, same posture as the Euro area's hand-curated M0). No M3 published. RMB billions.",
+    "m0": 14820.0,
+    "m0_date": "2026-07-31",
+    "usd_m0": 2208.479248938231,
+    "m1": 115460.0,
+    "m1_date": "2026-07-31",
+    "usd_m1": 17205.8713955741,
+    "m2": 355510.0,
+    "m2_date": "2026-07-31",
+    "usd_m2": 52978.16854183742,
     "m3": null,
     "m3_date": null,
     "usd_m3": null,
-    "broad_usd": null
+    "broad_usd": 52978.16854183742
    },
    {
     "area": "India",
@@ -343,8 +343,8 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 55807.43994020218,
-  "n_resolved": 7,
+  "total_broad_usd_b": 108785.60848203959,
+  "n_resolved": 8,
   "n_total": 16
  },
  "reserves_fx": {
@@ -1887,9 +1887,9 @@
   "btc_rank": 11,
   "lineup": [
    {
-    "label": "Broad money — 7 economies with live data",
-    "usd": 55807439940202.18,
-    "note": "The 7 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 8 economies with live data",
+    "usd": 108785608482039.6,
+    "note": "The 8 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",

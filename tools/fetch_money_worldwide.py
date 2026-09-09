@@ -574,6 +574,14 @@ def _fetch_generic_money_row(econ, fx):
             d, v = _ssb_pxweb_latest(econ["table_m123"], code)
             if v is not None:
                 vals[key] = (v / 1000.0, d)   # millions -> billions
+    elif provider == "hand_curated":
+        # for an economy with genuinely no live keyless feed at all (China)
+        # — the seed's own values are already in native-currency billions,
+        # so no unit conversion here, unlike every fetched provider above.
+        as_of = econ.get("as_of")
+        for key, v in (econ.get("values") or {}).items():
+            if v is not None:
+                vals[key] = (v, as_of)
     else:
         print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
               file=sys.stderr)
