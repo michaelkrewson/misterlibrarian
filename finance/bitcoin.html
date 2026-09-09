@@ -201,22 +201,6 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
-/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
-   brand and search in header.hsm's flex row (space-between puts it directly
-   left of the search box). Same colors/behavior as a .nav link, just outside
-   the collapsible menu so it's always visible, never hidden behind the
-   hamburger. */
-.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
-  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
-.headerask:hover{color:#e8eef7}
-.headerask.on{color:#f7931a}
-
-/* Ask + search share this one flex child of header.hsm so `justify-content:
-   space-between` only ever spaces THREE things (brand / this group / hgroup)
-   instead of four — with Ask as its own top-level child, space-between put
-   it in its own gap, dead center of the row, instead of next to search. */
-.hsm-searchgroup{display:flex;align-items:center;gap:14px}
-
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -261,19 +245,13 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
-   to its own full-width row underneath, the same "give up the single row"
-   fallback the travel blog's own absolutely-positioned search box makes at
-   its 640px. Ask+search moved from two direct header.hsm children to one
-   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
-   instead of hugging search under plain space-between); the order/flex-basis
-   that used to live on .headersearch now lives on the wrapper instead, since
-   .headersearch is one level deeper now.*/
+   and search (order 2) drops to its own full-width row underneath, the same
+   "give up the single row" fallback the travel blog's own absolutely-
+   positioned search box makes at its 640px. */
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .hsm-searchgroup{order:2;flex:1 1 100%}
-  .headersearch{flex:1 1 auto}
+  .headersearch{order:2;flex:1 1 100%}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
@@ -609,7 +587,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html" class="on">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html" class="on">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
   <h1 class="btitle"><span class="bbmark" aria-hidden="true"><svg viewBox="0 0 44 44">
   <defs>
     <linearGradient id="bbCoinFace" x1="0.15" y1="0" x2="0.8" y2="1">
@@ -647,7 +625,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <p class="bbstamp"><span class="bbdot" id="bbDot"></span><span id="bbLive">live</span><span><span class="bbsep">·</span> snapshot taken 2026-09-09 21:35 UTC</span></p>
   <div class="bbhero">
     <div class="bbh"><div class="bbh-l">Price</div><div class="bbh-v am" id="bbPrice">$78,323</div><div class="bbh-s"><span id="bbSats">1,277 satoshis to the dollar</span></div></div>
-    <div class="bbh"><div class="bbh-l">Block height</div><div class="bbh-v am" id="bbBlock">966,270</div><div class="bbh-s">last block <span id="bbSince">51m 10s ago</span></div></div>
+    <div class="bbh"><div class="bbh-l">Block height</div><div class="bbh-v am" id="bbBlock">966,270</div><div class="bbh-s">last block <span id="bbSince">1h 10m ago</span></div></div>
     <div class="bbh"><div class="bbh-l">Bitcoin issued</div><div class="bbh-v am" id="bbIssued">20,082,047</div><div class="bbh-s">BTC <span class="bbsep">·</span> <span id="bbIssuedPct">95.63%</span> of every coin there will ever be</div></div>
     <div class="bbh"><div class="bbh-l">Next halving</div><div class="bbh-v am" id="bbHalving">581d 11:00:00</div><div class="bbh-s">at block 1,050,000 <span class="bbsep">·</span> ≈April 17, 2028</div></div>
   </div>
@@ -689,7 +667,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <div class="bbrow"><span class="bbk">Difficulty</span><span class="bbv" id="dDiff">127.5 T</span></div>
     <div class="bbrow"><span class="bbk">Blocks to the next retarget</span><span class="bbv" id="dLeft">1,410 blocks</span></div>
     <div class="bbrow"><span class="bbk">Expected change</span><span class="bbv" id="dChange">+4.25%</span></div>
-    <div class="bbrow"><span class="bbk">Retarget in</span><span class="bbv" id="dRetarget">9d 09:26:52</span></div>
+    <div class="bbrow"><span class="bbk">Retarget in</span><span class="bbv" id="dRetarget">9d 09:07:04</span></div>
     <div class="bbrow"><span class="bbk">Average block, this epoch<span class="bbn">the target is ten</span></span><span class="bbv" id="dBlockTime">9.6 min</span></div>
     <div class="bbrow"><span class="bbk">Paid to miners, last 24 hours</span><span class="bbv">$35,475,423</span></div>
     <div class="bbrow"><span class="bbk">Of which was fees<span class="bbn">the rest is newly minted coin</span></span><span class="bbv">0.65%</span></div><div class="bbbar"><i id="dProg" style="width:30.1%"></i></div><div class="bbbarl"><span id="dProgTxt">30.1% through this epoch</span><span>2,016 blocks</span></div><svg class="bbchart" viewBox="0 0 320 62" preserveAspectRatio="none" aria-hidden="true" focusable="false"><polygon points="0,62 0.0,17.8 2.7,51.1 5.4,20.0 8.1,21.3 10.8,14.5 13.4,21.9 16.1,21.4 18.8,16.2 21.5,43.5 24.2,25.3 26.9,33.0 29.6,15.8 32.3,17.2 35.0,30.2 37.6,17.1 40.3,12.7 43.0,10.2 45.7,21.4 48.4,19.3 51.1,20.8 53.8,21.5 56.5,21.3 59.2,24.4 61.8,29.4 64.5,14.0 67.2,21.5 69.9,18.4 72.6,32.7 75.3,33.6 78.0,12.2 80.7,14.8 83.4,25.7 86.1,21.0 88.7,23.5 91.4,28.0 94.1,29.1 96.8,14.4 99.5,33.5 102.2,15.6 104.9,36.3 107.6,26.2 110.3,25.7 112.9,27.6 115.6,21.9 118.3,13.3 121.0,58.0 123.7,56.7 126.4,34.8 129.1,40.0 131.8,29.7 134.5,28.0 137.1,20.1 139.8,4.0 142.5,35.8 145.2,47.9 147.9,11.5 150.6,28.9 153.3,33.7 156.0,10.0 158.7,34.8 161.3,38.2 164.0,41.8 166.7,30.3 169.4,39.8 172.1,47.7 174.8,28.0 177.5,41.8 180.2,35.2 182.9,19.0 185.5,28.7 188.2,49.6 190.9,16.6 193.6,35.6 196.3,45.2 199.0,51.7 201.7,30.4 204.4,47.0 207.1,30.2 209.7,38.2 212.4,19.4 215.1,46.2 217.8,34.6 220.5,38.2 223.2,47.5 225.9,43.8 228.6,36.8 231.3,33.7 233.9,58.0 236.6,39.3 239.3,42.5 242.0,38.7 244.7,40.8 247.4,50.9 250.1,34.6 252.8,35.2 255.5,19.9 258.2,33.5 260.8,30.7 263.5,56.2 266.2,51.3 268.9,40.6 271.6,47.7 274.3,27.0 277.0,46.0 279.7,34.1 282.4,44.6 285.0,35.7 287.7,41.7 290.4,42.4 293.1,41.7 295.8,50.9 298.5,40.2 301.2,37.7 303.9,46.4 306.6,44.5 309.2,42.9 311.9,25.2 314.6,47.5 317.3,40.6 320.0,47.0 320,62" fill="#f7931a" opacity=".14"/><polyline points="0.0,17.8 2.7,51.1 5.4,20.0 8.1,21.3 10.8,14.5 13.4,21.9 16.1,21.4 18.8,16.2 21.5,43.5 24.2,25.3 26.9,33.0 29.6,15.8 32.3,17.2 35.0,30.2 37.6,17.1 40.3,12.7 43.0,10.2 45.7,21.4 48.4,19.3 51.1,20.8 53.8,21.5 56.5,21.3 59.2,24.4 61.8,29.4 64.5,14.0 67.2,21.5 69.9,18.4 72.6,32.7 75.3,33.6 78.0,12.2 80.7,14.8 83.4,25.7 86.1,21.0 88.7,23.5 91.4,28.0 94.1,29.1 96.8,14.4 99.5,33.5 102.2,15.6 104.9,36.3 107.6,26.2 110.3,25.7 112.9,27.6 115.6,21.9 118.3,13.3 121.0,58.0 123.7,56.7 126.4,34.8 129.1,40.0 131.8,29.7 134.5,28.0 137.1,20.1 139.8,4.0 142.5,35.8 145.2,47.9 147.9,11.5 150.6,28.9 153.3,33.7 156.0,10.0 158.7,34.8 161.3,38.2 164.0,41.8 166.7,30.3 169.4,39.8 172.1,47.7 174.8,28.0 177.5,41.8 180.2,35.2 182.9,19.0 185.5,28.7 188.2,49.6 190.9,16.6 193.6,35.6 196.3,45.2 199.0,51.7 201.7,30.4 204.4,47.0 207.1,30.2 209.7,38.2 212.4,19.4 215.1,46.2 217.8,34.6 220.5,38.2 223.2,47.5 225.9,43.8 228.6,36.8 231.3,33.7 233.9,58.0 236.6,39.3 239.3,42.5 242.0,38.7 244.7,40.8 247.4,50.9 250.1,34.6 252.8,35.2 255.5,19.9 258.2,33.5 260.8,30.7 263.5,56.2 266.2,51.3 268.9,40.6 271.6,47.7 274.3,27.0 277.0,46.0 279.7,34.1 282.4,44.6 285.0,35.7 287.7,41.7 290.4,42.4 293.1,41.7 295.8,50.9 298.5,40.2 301.2,37.7 303.9,46.4 306.6,44.5 309.2,42.9 311.9,25.2 314.6,47.5 317.3,40.6 320.0,47.0" fill="none" stroke="#f7931a" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg><p class="bbasof">A year of hash rate.</p>

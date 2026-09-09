@@ -201,22 +201,6 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:#f7931a}
 
-/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
-   brand and search in header.hsm's flex row (space-between puts it directly
-   left of the search box). Same colors/behavior as a .nav link, just outside
-   the collapsible menu so it's always visible, never hidden behind the
-   hamburger. */
-.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
-  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
-.headerask:hover{color:#e8eef7}
-.headerask.on{color:#f7931a}
-
-/* Ask + search share this one flex child of header.hsm so `justify-content:
-   space-between` only ever spaces THREE things (brand / this group / hgroup)
-   instead of four — with Ask as its own top-level child, space-between put
-   it in its own gap, dead center of the row, instead of next to search. */
-.hsm-searchgroup{display:flex;align-items:center;gap:14px}
-
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -261,19 +245,13 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
-   to its own full-width row underneath, the same "give up the single row"
-   fallback the travel blog's own absolutely-positioned search box makes at
-   its 640px. Ask+search moved from two direct header.hsm children to one
-   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
-   instead of hugging search under plain space-between); the order/flex-basis
-   that used to live on .headersearch now lives on the wrapper instead, since
-   .headersearch is one level deeper now.*/
+   and search (order 2) drops to its own full-width row underneath, the same
+   "give up the single row" fallback the travel blog's own absolutely-
+   positioned search box makes at its 640px. */
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .hsm-searchgroup{order:2;flex:1 1 100%}
-  .headersearch{flex:1 1 auto}
+  .headersearch{order:2;flex:1 1 100%}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
@@ -471,7 +449,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
 <div class="fronthero"><figure><img src="img/us-bullion-depository.jpg" alt="The United States Bullion Depository at Fort Knox, Kentucky — a squat granite vault behind a chain-link perimeter fence, guard towers at its corners, floodlit windows barred" width="1200" height="444" loading="eager"/><figcaption>The United States Bullion Depository, Fort Knox — half the gold on the board below is kept behind that granite. Photo: Cliff, via <a href="https://commons.wikimedia.org/wiki/File:U.S._Bullion_Depository-adjust2.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a> (cropped).</figcaption></figure></div>  <p class="tag ftag">What the world&#x27;s money is actually in</p>
   <section class="writing">
     <div class="filters" id="filters"><button class="chip on" data-tag="">All</button><button class="chip w3" data-tag="bitcoin" title="5 entries">bitcoin</button><button class="chip" data-tag="multisig" title="2 entries">multisig</button><button class="chip w3" data-tag="notes" title="5 entries">notes</button><button class="chip" data-tag="open-source" title="2 entries">open source</button><button class="chip w2" data-tag="security" title="4 entries">security</button><button class="chip w2" data-tag="self-custody" title="4 entries">self custody</button><button class="chip more" id="tagMore" type="button" aria-expanded="false" aria-controls="filters" data-count="35">+ 35 more</button><button class="chip rare" data-tag="ai" title="1 entry">ai</button><button class="chip rare" data-tag="alby" title="1 entry">alby</button><button class="chip rare" data-tag="android" title="1 entry">android</button><button class="chip rare" data-tag="bis" title="1 entry">bis</button><button class="chip rare" data-tag="bitkey" title="1 entry">bitkey</button><button class="chip rare" data-tag="block" title="1 entry">block</button><button class="chip rare" data-tag="blockstream" title="1 entry">blockstream</button><button class="chip rare" data-tag="bretton-woods" title="1 entry">bretton woods</button><button class="chip rare" data-tag="bug-bounty" title="1 entry">bug bounty</button><button class="chip rare" data-tag="bybit" title="1 entry">bybit</button><button class="chip rare" data-tag="central-banks" title="1 entry">central banks</button><button class="chip rare" data-tag="coinkite" title="1 entry">coinkite</button><button class="chip rare" data-tag="coldcard" title="1 entry">coldcard</button><button class="chip rare" data-tag="confidential-transactions" title="1 entry">confidential transactions</button><button class="chip rare" data-tag="covenants" title="1 entry">covenants</button><button class="chip rare" data-tag="entropy" title="1 entry">entropy</button><button class="chip rare" data-tag="halving" title="1 entry">halving</button><button class="chip rare" data-tag="hardware-wallet" title="1 entry">hardware wallet</button><button class="chip rare" data-tag="imf" title="1 entry">imf</button><button class="chip rare" data-tag="inheritance" title="1 entry">inheritance</button><button class="chip rare" data-tag="jack-dorsey" title="1 entry">jack dorsey</button><button class="chip rare" data-tag="lightning" title="1 entry">lightning</button><button class="chip rare" data-tag="liquid-network" title="1 entry">liquid network</button><button class="chip rare" data-tag="mining" title="1 entry">mining</button><button class="chip rare" data-tag="monetary-policy" title="1 entry">monetary policy</button><button class="chip rare" data-tag="money-supply" title="1 entry">money supply</button><button class="chip rare" data-tag="node" title="1 entry">node</button><button class="chip rare" data-tag="scarcity" title="1 entry">scarcity</button><button class="chip rare" data-tag="sdr" title="1 entry">sdr</button><button class="chip rare" data-tag="seed-phrase" title="1 entry">seed phrase</button><button class="chip rare" data-tag="sidechain" title="1 entry">sidechain</button><button class="chip rare" data-tag="united-nations" title="1 entry">united nations</button><button class="chip rare" data-tag="vulnerability" title="1 entry">vulnerability</button><button class="chip rare" data-tag="wallet" title="1 entry">wallet</button><button class="chip rare" data-tag="world-bank" title="1 entry">world bank</button></div>

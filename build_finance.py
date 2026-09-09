@@ -668,9 +668,10 @@ def tag_index(entries):
 def _nav(active=""):
     def cls(k):
         return ' class="on"' if k == active else ""
-    # "Ask" moved OUT of this list 2026-09-08 (Michael's call) — it now lives in
-    # the header's top row, immediately left of the search box (see _chrome's
-    # headerask link), not buried at the end of this 8-link menu.
+    # "Ask" was moved OUT of this list 2026-09-08 (Michael's call), then dropped
+    # from the header entirely 2026-09-09 (removed the link beside the search
+    # box) — it's reached via the footer's "Ask a question" link and the
+    # per-entry "Ask Mr. Librarian" prompt instead.
     return ('<nav class="nav">'
             '<a href="index.html"%s>Writing</a>'
             '<a href="board.html"%s>Asset Board</a>'
@@ -712,35 +713,23 @@ def _chrome(active=""):
     means the header's FIRST row reliably reads "brand left, search right"
     with nothing else competing for that row's space.
 
-    "Ask" sits directly beside search, not just "somewhere left of it" (moved
-    out of the nav menu 2026-09-08, Michael's call, then adjusted the SAME
-    day: his first cut — Ask as its own flex child of header.hsm alongside
-    brand/search/hgroup — put it dead center of the row, because
-    `justify-content:space-between` spaces however many top-level children
-    there are evenly; with 4 of them, Ask landed in its own gap instead of
-    hugging search. Fix: Ask and search are now wrapped in one shared flex
-    child (.hsm-searchgroup) with its own small internal gap, so
-    space-between only ever sees THREE children — brand, [Ask+search], hgroup
-    — and Ask sits snug against the search box inside that group, wherever
-    the group itself lands.
     """
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
                  '<rect y="6" width="20" height="2" rx="1"/>'
                  '<rect y="12" width="20" height="2" rx="1"/></svg>')
-    ask = '<a class="headerask%s" href="ask.html">Ask</a>' % (' on' if active == "ask" else "")
     search = ('<form class="headersearch" action="index.html" method="get" role="search">'
               '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
               'aria-label="Search past entries"/></form>')
     return ('<header class="hsm">'
             '<a class="brand" href="index.html">%s'
             '<span class="wm">The Librarian\'s <span class="em">Ledger</span></span></a>'
-            '<div class="hsm-searchgroup">%s%s</div>'
+            '%s'
             '<div class="hgroup">'
             '<input type="checkbox" class="navcb" id="navcb"/>'
             '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
             '%s</div></header>'
-            % (MARK_SVG.replace("__ACCENT__", ACCENT), ask, search, hamburger, _nav(active)))
+            % (MARK_SVG.replace("__ACCENT__", ACCENT), search, hamburger, _nav(active)))
 
 
 def _legal():
@@ -1782,22 +1771,6 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__}
 
-/* "Ask" — moved out of .nav 2026-09-08, now its own element sitting between
-   brand and search in header.hsm's flex row (space-between puts it directly
-   left of the search box). Same colors/behavior as a .nav link, just outside
-   the collapsible menu so it's always visible, never hidden behind the
-   hamburger. */
-.headerask{color:#93a4bd;text-decoration:none;font-family:ui-sans-serif,system-ui,
-  -apple-system,sans-serif;font-size:14.5px;white-space:nowrap}
-.headerask:hover{color:#e8eef7}
-.headerask.on{color:__ACCENT__}
-
-/* Ask + search share this one flex child of header.hsm so `justify-content:
-   space-between` only ever spaces THREE things (brand / this group / hgroup)
-   instead of four — with Ask as its own top-level child, space-between put
-   it in its own gap, dead center of the row, instead of next to search. */
-.hsm-searchgroup{display:flex;align-items:center;gap:14px}
-
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
    <details>/<summary>). The checkbox itself is never seen — only its
@@ -1842,19 +1815,13 @@ label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
 /* Below this, brand + the hamburger alone no longer reliably fit beside a
    150px search input on one line — .hgroup (order 1, its own margin-left:auto
    already pins it to the row's right edge) stays pinned next to the brand,
-   and the search group (order 2 — Ask + search, see .hsm-searchgroup) drops
-   to its own full-width row underneath, the same "give up the single row"
-   fallback the travel blog's own absolutely-positioned search box makes at
-   its 640px. Ask+search moved from two direct header.hsm children to one
-   shared wrapper 2026-09-08 (Michael's call — Ask was floating mid-row
-   instead of hugging search under plain space-between); the order/flex-basis
-   that used to live on .headersearch now lives on the wrapper instead, since
-   .headersearch is one level deeper now.*/
+   and search (order 2) drops to its own full-width row underneath, the same
+   "give up the single row" fallback the travel blog's own absolutely-
+   positioned search box makes at its 640px. */
 @media (max-width:480px){
   header.hsm{flex-wrap:wrap}
   .hgroup{order:1;flex-wrap:wrap}
-  .hsm-searchgroup{order:2;flex:1 1 100%}
-  .headersearch{flex:1 1 auto}
+  .headersearch{order:2;flex:1 1 100%}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
