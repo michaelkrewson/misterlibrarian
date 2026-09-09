@@ -498,6 +498,23 @@ def _ssb_pxweb_latest(table_id, content_code):
         return None, None
 
 
+def _sum_series(fetch_one, codes):
+    """(total, date_str) summing fetch_one(code) over every code in codes,
+    or (None, None) if any single one fails to resolve — used where a
+    provider's series value may be a LIST to add together rather than one
+    series (Canada and the UK's m0 constructions, so far: a central bank
+    that discontinued its own "M0" label and split it into separate
+    published series with no ready-made sum of its own)."""
+    total, date_s = 0.0, None
+    for code in codes:
+        d, v = fetch_one(code)
+        if v is None:
+            return None, None
+        total += v
+        date_s = date_s or d
+    return total, date_s
+
+
 def _fetch_generic_money_row(econ, fx):
     """Build one money_supply row from a money_worldwide_seed.json
     `money_supply_economies` entry, dispatching on its `provider`. Returns
@@ -519,15 +536,8 @@ def _fetch_generic_money_row(econ, fx):
             # single published series for their sum), while every other
             # boc_valet key here stays a plain string.
             codes = series if isinstance(series, list) else [series]
-            total, date_s, ok = 0.0, None, True
-            for code in codes:
-                d, v = _boc_valet_latest(code)
-                if v is None:
-                    ok = False
-                    break
-                total += v
-                date_s = date_s or d
-            if ok:
+            total, date_s = _sum_series(_boc_valet_latest, codes)
+            if total is not None:
                 vals[key] = (total / 1000.0, date_s)   # millions -> billions
     elif provider == "snb_cube":
         for key, (d, v) in _snb_cube_values(econ["cube"], econ.get("dims", {})).items():
@@ -546,9 +556,15 @@ def _fetch_generic_money_row(econ, fx):
                 vals[key] = (v / 1e6, d)      # thousands -> billions
     elif provider == "boe_iadb":
         for key, series in econ.get("series", {}).items():
-            d, v = _boe_iadb_latest(series)
-            if v is not None:
-                vals[key] = (v / 1000.0, d)   # millions -> billions
+            # m0 needs this the same way Canada's boc_valet entry does —
+            # the Bank of England discontinued its own "M0" in 2006 and
+            # replaced it with two series meant to be read together
+            # (Notes & Coin in circulation + Reserve Balances), no
+            # single published series sums them.
+            codes = series if isinstance(series, list) else [series]
+            total, date_s = _sum_series(_boe_iadb_latest, codes)
+            if total is not None:
+                vals[key] = (total / 1000.0, date_s)   # millions -> billions
     elif provider == "ssb_pxweb":
         if econ.get("table_m0") and econ.get("code_m0"):
             d, v = _ssb_pxweb_latest(econ["table_m0"], econ["code_m0"])
