@@ -465,8 +465,8 @@ table.mw-sort td.mw-nm{white-space:normal}
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">🏦</span> Money Supply</h1>
-  <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. 10 of 16 economies tracked here have a real, live figure today; the rest show "—" with their own source-note under the area name — a genuinely investigated economy with no working live source yet, not a guess or a silent drop. Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-09 02:37 UTC · see <a
+  <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. 12 of 16 economies tracked here have a real, live figure today; the rest show "—" with their own source-note under the area name — a genuinely investigated economy with no working live source yet, not a guess or a silent drop. Click any column to sort.</p>
+  <p class="stamp">Updated 2026-09-09 02:49 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
   <table class="board mw-sort">
@@ -570,6 +570,24 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td title="1,296,389.5 JPYB as of 2026/08">$8,401,746,597,537</td>
         <td title="1,639,987.8 JPYB as of 2026/08">$10,628,566,429,034</td>
       </tr>
+      <tr data-m0="222.20619002957937" data-m1="1452.853329485607" data-m3="2523.050284972224">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
+          <span class="nm"><span class="n1">Australia</span>
+          <span class="mw-sub">Reserve Bank of Australia — &quot;D3 Monetary Aggregates&quot; CSV (rba.gov.au/statistics/tables/csv/d3-data.csv), already in A$ billion. Supersedes an earlier finding that this table was xlsx-only (a spreadsheet-parsing dependency this stdlib-only fetcher deliberately avoids) — the RBA has since added a genuine CSV export for it. M0 = &quot;Money base&quot; (DMAMMB, not seasonally adjusted — no SA variant is published); M1/M3 use the seasonally-adjusted series (DMAM1S/DMAM3S). No M2 — Australia&#x27;s own convention skips straight from M1 to M3 (it separately publishes an even-broader &quot;Broad money&quot; aggregate, but M3 is this economy&#x27;s own real M3, not a substitution the way the UK&#x27;s M4 is).</span></span></span></td>
+        <td title="308.0 AUDB as of 31/07/2026">$222,206,190,030</td>
+        <td title="2,013.8 AUDB as of 31/07/2026">$1,452,853,329,486</td>
+        <td class="mw-sub">—</td>
+        <td title="3,497.2 AUDB as of 31/07/2026">$2,523,050,284,972</td>
+      </tr>
+      <tr data-m1="267.37792106898695" data-m2="305.9822249844624" data-m3="337.00590428837785">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇰</span>
+          <span class="nm"><span class="n1">Denmark</span>
+          <span class="mw-sub">Danmarks Nationalbank — table DNMNOGL &quot;Key figures for the MFI sector&quot; on the api.statbank.dk PxWebAPI instance it shares with Statistics Denmark (a different dialect from Norway&#x27;s SSB PxWebAPI: metadata lives at a &quot;tableinfo&quot; endpoint and the data query is a plain GET with variable-name params, not a POST json-stat2 body — the earlier note&#x27;s blocker was the wrong request shape, not a missing endpoint). SEKTORNAT pinned to &quot;all sectors domestic and foreign&quot; (the headline total, not a sector breakdown). No M0 published in this table. DKK million.</span></span></span></td>
+        <td class="mw-sub">—</td>
+        <td title="1,720.8 DKKB as of 2026M07">$267,377,921,069</td>
+        <td title="1,969.3 DKKB as of 2026M07">$305,982,224,984</td>
+        <td title="2,169.0 DKKB as of 2026M07">$337,005,904,288</td>
+      </tr>
       <tr >
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
           <span class="nm"><span class="n1">South Korea</span>
@@ -582,7 +600,7 @@ table.mw-sort td.mw-nm{white-space:normal}
       <tr >
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇲🇽</span>
           <span class="nm"><span class="n1">Mexico</span>
-          <span class="mw-sub">Banco de México&#x27;s SIE API requires a registered access token — confirmed by a live request, which returned &quot;Token inválido&quot; (invalid token).</span></span></span></td>
+          <span class="mw-sub">Banco de México&#x27;s SIE API requires a registered access token — confirmed by a live request, which returned &quot;Token inválido&quot; (invalid token). INEGI&#x27;s own Indicators API (a second, separate Mexican statistics agency) also requires a registered token — confirmed from its own documentation, re-checked 2026-09-09. No genuinely keyless path found for either agency.</span></span></span></td>
         <td class="mw-sub">—</td>
         <td class="mw-sub">—</td>
         <td class="mw-sub">—</td>
@@ -600,25 +618,7 @@ table.mw-sort td.mw-nm{white-space:normal}
       <tr >
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇿🇦</span>
           <span class="nm"><span class="n1">South Africa</span>
-          <span class="mw-sub">FRED&#x27;s IMF-mirrored series (MABMM301ZAM189S) stopped updating in 2023-11; the South African Reserve Bank&#x27;s own online statistical query is an interactive web tool, and no documented public API for it was found.</span></span></span></td>
-        <td class="mw-sub">—</td>
-        <td class="mw-sub">—</td>
-        <td class="mw-sub">—</td>
-        <td class="mw-sub">—</td>
-      </tr>
-      <tr >
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
-          <span class="nm"><span class="n1">Australia</span>
-          <span class="mw-sub">The RBA&#x27;s own Table D3 (Monetary Aggregates) is genuinely live, current and keyless — but only as an .xlsx download (rba.gov.au/statistics/tables/xls/d03hist.xlsx, confirmed last-modified within days of this research). Parsing it would mean adding a spreadsheet-parsing dependency (openpyxl/pandas) to a fetcher this whole repo deliberately keeps stdlib-only (see the refresh workflow&#x27;s own &quot;Needs no pip install&quot; convention) — left unintegrated on purpose rather than breaking that convention for one economy.</span></span></span></td>
-        <td class="mw-sub">—</td>
-        <td class="mw-sub">—</td>
-        <td class="mw-sub">—</td>
-        <td class="mw-sub">—</td>
-      </tr>
-      <tr >
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇰</span>
-          <span class="nm"><span class="n1">Denmark</span>
-          <span class="mw-sub">Danmarks Nationalbank publishes M1/M2/M3 on its own StatBank instance (table DNMNOGL, distinct from Statistics Denmark&#x27;s main dst.dk API), but a working PxWebAPI base path for that separate instance could not be confirmed within reasonable research effort.</span></span></span></td>
+          <span class="mw-sub">UPDATE 2026-09-09: found a genuinely keyless, no-auth REST API after all — custom.resbank.co.za/SarbWebApi (its OpenAPI spec declares no security scheme at all, confirmed live). But its 4 curated &quot;Money and Banking&quot; snapshot-graph endpoints turned out to be interest rates and CPI, not money supply; the real money-supply codes (MON0100P/MON0200P/MON0300P) were found by guessing off SARB&#x27;s own MON-prefix pattern — and every one of them is a 12-month %-CHANGE series (M1/M2/M3 y/y), not a level. This board&#x27;s schema needs LEVELS (native-currency amounts, summed into the totals row and the scarcity chart) — a % change doesn&#x27;t fit that shape, so nothing was added despite having real, live, keyless data in hand. SARB&#x27;s own classic series use a DIFFERENT &quot;KBP&quot;-prefixed code scheme (confirmed via its Online Statistical Query tool&#x27;s own instructions) for level data, and no KBP code for M0/M1/M2/M3 levels could be found within reasonable effort — the interactive query tool itself would need to be driven to reveal one. A real candidate for a future dated follow-up, not a dead end.</span></span></span></td>
         <td class="mw-sub">—</td>
         <td class="mw-sub">—</td>
         <td class="mw-sub">—</td>
@@ -628,10 +628,10 @@ table.mw-sort td.mw-nm{white-space:normal}
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total (at today's exchange rate)</td>
-        <td>$18,306,497,314,371</td>
-        <td>$61,271,407,758,302</td>
-        <td>$112,429,660,505,465</td>
-        <td>$46,623,521,817,934</td>
+        <td>$18,528,703,504,401</td>
+        <td>$62,991,639,008,856</td>
+        <td>$112,735,642,730,450</td>
+        <td>$49,483,578,007,195</td>
       </tr>
     </tfoot>
   </table>

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 02:37 UTC",
+ "generated": "2026-09-09 02:49 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -229,6 +229,44 @@
     "broad_usd": 10628.566429034348
    },
    {
+    "area": "Australia",
+    "flag": "🇦🇺",
+    "currency": "AUD",
+    "source": "Reserve Bank of Australia — \"D3 Monetary Aggregates\" CSV (rba.gov.au/statistics/tables/csv/d3-data.csv), already in A$ billion. Supersedes an earlier finding that this table was xlsx-only (a spreadsheet-parsing dependency this stdlib-only fetcher deliberately avoids) — the RBA has since added a genuine CSV export for it. M0 = \"Money base\" (DMAMMB, not seasonally adjusted — no SA variant is published); M1/M3 use the seasonally-adjusted series (DMAM1S/DMAM3S). No M2 — Australia's own convention skips straight from M1 to M3 (it separately publishes an even-broader \"Broad money\" aggregate, but M3 is this economy's own real M3, not a substitution the way the UK's M4 is).",
+    "m0": 308.0,
+    "m0_date": "31/07/2026",
+    "usd_m0": 222.20619002957937,
+    "m1": 2013.8,
+    "m1_date": "31/07/2026",
+    "usd_m1": 1452.853329485607,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": 3497.2,
+    "m3_date": "31/07/2026",
+    "usd_m3": 2523.050284972224,
+    "broad_usd": 2523.050284972224
+   },
+   {
+    "area": "Denmark",
+    "flag": "🇩🇰",
+    "currency": "DKK",
+    "source": "Danmarks Nationalbank — table DNMNOGL \"Key figures for the MFI sector\" on the api.statbank.dk PxWebAPI instance it shares with Statistics Denmark (a different dialect from Norway's SSB PxWebAPI: metadata lives at a \"tableinfo\" endpoint and the data query is a plain GET with variable-name params, not a POST json-stat2 body — the earlier note's blocker was the wrong request shape, not a missing endpoint). SEKTORNAT pinned to \"all sectors domestic and foreign\" (the headline total, not a sector breakdown). No M0 published in this table. DKK million.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 1720.8443,
+    "m1_date": "2026M07",
+    "usd_m1": 267.37792106898695,
+    "m2": 1969.3016,
+    "m2_date": "2026M07",
+    "usd_m2": 305.9822249844624,
+    "m3": 2168.97,
+    "m3_date": "2026M07",
+    "usd_m3": 337.00590428837785,
+    "broad_usd": 337.00590428837785
+   },
+   {
     "area": "South Korea",
     "flag": "🇰🇷",
     "currency": "KRW",
@@ -251,7 +289,7 @@
     "area": "Mexico",
     "flag": "🇲🇽",
     "currency": "MXN",
-    "source": "Banco de México's SIE API requires a registered access token — confirmed by a live request, which returned \"Token inválido\" (invalid token).",
+    "source": "Banco de México's SIE API requires a registered access token — confirmed by a live request, which returned \"Token inválido\" (invalid token). INEGI's own Indicators API (a second, separate Mexican statistics agency) also requires a registered token — confirmed from its own documentation, re-checked 2026-09-09. No genuinely keyless path found for either agency.",
     "m0": null,
     "m0_date": null,
     "usd_m0": null,
@@ -289,45 +327,7 @@
     "area": "South Africa",
     "flag": "🇿🇦",
     "currency": "ZAR",
-    "source": "FRED's IMF-mirrored series (MABMM301ZAM189S) stopped updating in 2023-11; the South African Reserve Bank's own online statistical query is an interactive web tool, and no documented public API for it was found.",
-    "m0": null,
-    "m0_date": null,
-    "usd_m0": null,
-    "m1": null,
-    "m1_date": null,
-    "usd_m1": null,
-    "m2": null,
-    "m2_date": null,
-    "usd_m2": null,
-    "m3": null,
-    "m3_date": null,
-    "usd_m3": null,
-    "broad_usd": null
-   },
-   {
-    "area": "Australia",
-    "flag": "🇦🇺",
-    "currency": "AUD",
-    "source": "The RBA's own Table D3 (Monetary Aggregates) is genuinely live, current and keyless — but only as an .xlsx download (rba.gov.au/statistics/tables/xls/d03hist.xlsx, confirmed last-modified within days of this research). Parsing it would mean adding a spreadsheet-parsing dependency (openpyxl/pandas) to a fetcher this whole repo deliberately keeps stdlib-only (see the refresh workflow's own \"Needs no pip install\" convention) — left unintegrated on purpose rather than breaking that convention for one economy.",
-    "m0": null,
-    "m0_date": null,
-    "usd_m0": null,
-    "m1": null,
-    "m1_date": null,
-    "usd_m1": null,
-    "m2": null,
-    "m2_date": null,
-    "usd_m2": null,
-    "m3": null,
-    "m3_date": null,
-    "usd_m3": null,
-    "broad_usd": null
-   },
-   {
-    "area": "Denmark",
-    "flag": "🇩🇰",
-    "currency": "DKK",
-    "source": "Danmarks Nationalbank publishes M1/M2/M3 on its own StatBank instance (table DNMNOGL, distinct from Statistics Denmark's main dst.dk API), but a working PxWebAPI base path for that separate instance could not be confirmed within reasonable research effort.",
+    "source": "UPDATE 2026-09-09: found a genuinely keyless, no-auth REST API after all — custom.resbank.co.za/SarbWebApi (its OpenAPI spec declares no security scheme at all, confirmed live). But its 4 curated \"Money and Banking\" snapshot-graph endpoints turned out to be interest rates and CPI, not money supply; the real money-supply codes (MON0100P/MON0200P/MON0300P) were found by guessing off SARB's own MON-prefix pattern — and every one of them is a 12-month %-CHANGE series (M1/M2/M3 y/y), not a level. This board's schema needs LEVELS (native-currency amounts, summed into the totals row and the scarcity chart) — a % change doesn't fit that shape, so nothing was added despite having real, live, keyless data in hand. SARB's own classic series use a DIFFERENT \"KBP\"-prefixed code scheme (confirmed via its Online Statistical Query tool's own instructions) for level data, and no KBP code for M0/M1/M2/M3 levels could be found within reasonable effort — the interactive query tool itself would need to be driven to reveal one. A real candidate for a future dated follow-up, not a dead end.",
     "m0": null,
     "m0_date": null,
     "usd_m0": null,
@@ -343,8 +343,8 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 122819.6903597716,
-  "n_resolved": 10,
+  "total_broad_usd_b": 125679.7465490322,
+  "n_resolved": 12,
   "n_total": 16
  },
  "reserves_fx": {
@@ -1887,9 +1887,9 @@
   "btc_rank": 11,
   "lineup": [
    {
-    "label": "Broad money — 10 economies with live data",
-    "usd": 122819690359771.6,
-    "note": "The 10 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 12 economies with live data",
+    "usd": 125679746549032.2,
+    "note": "The 12 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",

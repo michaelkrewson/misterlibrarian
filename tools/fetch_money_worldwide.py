@@ -376,6 +376,9 @@ SSB_PXWEB_URL = "https://data.ssb.no/api/v0/en/table/%s"
 RBI_WSS_SECTION_URL = "https://rbi.org.in/Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=%d"
 RBI_WSS_VIEW_URL = "https://rbi.org.in/Scripts/WSSView.aspx?Id=%d"
 BOJ_CSV_URL = "https://www.stat-search.boj.or.jp/ssi/mtshtml/csv/%s.csv"
+RBA_D3_CSV_URL = "https://www.rba.gov.au/statistics/tables/csv/d3-data.csv"
+DK_PXWEB_TABLEINFO_URL = "https://api.statbank.dk/v1/tableinfo/%s?lang=en"
+DK_PXWEB_DATA_URL = "https://api.statbank.dk/v1/data/%s/JSONSTAT"
 
 
 def _boc_valet_latest(series_name):
@@ -587,6 +590,41 @@ def _rbi_wss_items(view_id, prefixes):
     return out
 
 
+def _labeled_csv_values(text, header_label, date_re, codes_by_key):
+    """{key: (date_str, float)} for every requested series code in ONE
+    "labeled" central-bank CSV export — metadata rows up top (title,
+    names, units, date range), one of which starts with `header_label`
+    (e.g. the Bank of Japan's "Series code", the RBA's "Series ID") and
+    otherwise names each column's own code, followed by dated data rows
+    matching `date_re` in their first cell. Shared by any provider shaped
+    this way — `csv.reader` handles the metadata rows' quoting; values
+    are returned in the file's own native unit, the caller converts."""
+    rows = list(csv.reader(io.StringIO(text)))
+    code_row = next((r for r in rows if r and r[0] == header_label), None)
+    if not code_row:
+        return {}
+    col_of = {code: i for i, code in enumerate(code_row)}
+    data_rows = [r for r in rows if r and date_re.match(r[0])]
+    if not data_rows:
+        return {}
+    last = data_rows[-1]
+    date_s = last[0]
+    out = {}
+    for key, code in codes_by_key.items():
+        idx = col_of.get(code)
+        if idx is None or idx >= len(last) or not last[idx]:
+            continue
+        try:
+            out[key] = (date_s, float(last[idx]))
+        except ValueError:
+            pass
+    return out
+
+
+_BOJ_CSV_DATE_RE = re.compile(r"^\d{4}/\d{2}$")
+_RBA_CSV_DATE_RE = re.compile(r"^\d{2}/\d{2}/\d{4}$")
+
+
 def _boj_csv_values(table, codes_by_key):
     """{key: (date_str "YYYY/MM", float 100-million-yen)} for every
     requested FAME series code in one Bank of Japan "Main Time-series
@@ -596,32 +634,76 @@ def _boj_csv_values(table, codes_by_key):
     a real CSV (not the REST API, whose exact M1/M2/M3/monetary-base FAME
     mnemonics could not be pinned down from its own docs — but this
     export names its OWN codes in a "Series code" header row, found by
-    hand from the Money Stock/Monetary Base pages themselves). The file
-    has metadata rows before the data (title, series names, codes, units,
-    start/end dates) — `csv.reader` handles its quoting; the code row and
-    the last real "YYYY/MM" data row are found by their own first cell."""
+    hand from the Money Stock/Monetary Base pages themselves)."""
     text = _get_text(BOJ_CSV_URL % table, send_ua=True)
     if not text:
         return {}
-    rows = list(csv.reader(io.StringIO(text)))
-    code_row = next((r for r in rows if r and r[0] == "Series code"), None)
-    if not code_row:
+    return _labeled_csv_values(text, "Series code", _BOJ_CSV_DATE_RE, codes_by_key)
+
+
+def _rba_csv_values(codes_by_key):
+    """{key: (date_str "DD/MM/YYYY", float A$ billion)} for every
+    requested Series ID in the RBA's own "D3 Monetary Aggregates" CSV
+    (rba.gov.au/statistics/tables/csv/d3-data.csv) — genuinely keyless,
+    already in A$ billion (no unit conversion needed, unlike every other
+    provider here). Superseded the earlier xlsx-only finding: the RBA has
+    since added a CSV export for this table (confirmed 2026-09-09)."""
+    text = _get_text(RBA_D3_CSV_URL, send_ua=True)
+    if not text:
         return {}
-    col_of = {code: i for i, code in enumerate(code_row)}
-    data_rows = [r for r in rows if r and re.match(r"^\d{4}/\d{2}$", r[0])]
-    if not data_rows:
+    return _labeled_csv_values(text, "Series ID", _RBA_CSV_DATE_RE, codes_by_key)
+
+
+def _dk_pxweb_latest_period(table):
+    """The most recent "Tid" (time) value for a table on the api.statbank.dk
+    PxWebAPI instance Danmarks Nationalbank shares with Statistics Denmark
+    — a DIFFERENT dialect from Norway's SSB PxWebAPI (its metadata lives
+    at a "tableinfo" endpoint, not "table"; its data query is a plain GET
+    with variable-name params, not a POST json-stat2 body — confirmed by
+    hand, since the SSB-style POST returns nothing but a format error
+    here no matter how it's phrased)."""
+    meta = _get_json(DK_PXWEB_TABLEINFO_URL % table, send_ua=False)
+    if not isinstance(meta, dict):
+        return None
+    tid = next((v for v in meta.get("variables", []) if v.get("id") == "Tid"), None)
+    if not tid or not tid.get("values"):
+        return None
+    return tid["values"][-1]["id"]
+
+
+def _dk_pxweb_values(table, dim, codes_by_key, extra_dims=None):
+    """{key: (date_str "YYYYMmm", float native unit)} for the given
+    content codes (a dimension like "AKTP") on one api.statbank.dk table,
+    at its latest period — see `_dk_pxweb_latest_period`'s note on why
+    this is its own provider rather than reusing `_ssb_pxweb_latest`.
+    `extra_dims` fixes any other dimension the table requires (e.g. a
+    sector selector) to its headline/total value; the response is a
+    JSON-stat2 object whose value array is indexed by each dimension's
+    own `category.index` — reading `dim`'s index map is enough since
+    every other dimension here is pinned to exactly one value."""
+    period = _dk_pxweb_latest_period(table)
+    if not period:
         return {}
-    last = data_rows[-1]
-    date_s = last[0]
+    params = {dim: ",".join(codes_by_key.values())}
+    params.update(extra_dims or {})
+    params["Tid"] = period
+    qs = "&".join("%s=%s" % (k, v) for k, v in params.items())
+    d = _get_json("%s?%s" % (DK_PXWEB_DATA_URL % table, qs), send_ua=False)
+    if not isinstance(d, dict):
+        return {}
+    try:
+        values = d["dataset"]["value"]
+        index = d["dataset"]["dimension"][dim]["category"]["index"]
+    except (KeyError, TypeError):
+        return {}
     out = {}
     for key, code in codes_by_key.items():
-        idx = col_of.get(code)
-        if idx is None or idx >= len(last):
-            continue
-        try:
-            out[key] = (date_s, float(last[idx]))
-        except ValueError:
-            pass
+        i = index.get(code)
+        if i is not None and i < len(values) and values[i] is not None:
+            try:
+                out[key] = (period, float(values[i]))
+            except (TypeError, ValueError):
+                pass
     return out
 
 
@@ -741,6 +823,14 @@ def _fetch_generic_money_row(econ, fx):
         for table, codes_by_key in by_table.items():
             for key, (d, v) in _boj_csv_values(table, codes_by_key).items():
                 vals[key] = (v / 10.0, d)   # 100-million-yen -> billions of yen
+    elif provider == "rba_csv":
+        for key, (d, v) in _rba_csv_values(econ.get("codes", {})).items():
+            vals[key] = (v, d)   # already A$ billion, no conversion
+    elif provider == "dk_pxweb":
+        codes = econ.get("codes", {})
+        for key, (d, v) in _dk_pxweb_values(econ["table"], econ["dim"], codes,
+                                             econ.get("extra_dims")).items():
+            vals[key] = (v / 1000.0, d)   # DKK million -> billions
     else:
         print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
               file=sys.stderr)
