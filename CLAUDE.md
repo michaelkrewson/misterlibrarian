@@ -152,6 +152,29 @@ with, and nothing it can accidentally glob into any of the three builders' own o
 - **The signature move is the echo system:** flag a word/root the first time it appears, promise
   its return, pay it off when it recurs. Every chapter's closing info-block lists which echoes were
   paid and planted, plus a one-line teaser for the next chapter.
+- **No sentence in a published page may be about OUR OWN drafting/building process — every
+  sentence is about the text, for the reader, or it doesn't ship.** (Michael's call, 2026-09-09,
+  after Numbers 36's "A correction the new chapter found in the old ones" paragraph — a whole
+  note about a site-internal encyclopedia-linker bug just fixed — read to him like the build log
+  talking to Claude instead of notes helping a reader understand a word or phrase.) This kills, on
+  sight: "an earlier draft of this page said…", "this site's own automatic linking had a bug…",
+  "a new entry was written and then deleted…", "the note was drafted saying X; fetching Y inverted
+  it…", "composing a chapter is a good time to audit the machinery…" — all real, all shipped
+  (Numbers 36; three more in Psalm 139/Job and Hebrews 11). The published page is the finished
+  product; readers should never be able to tell it was revised along the way, only that it's
+  right. **"Patterns worth carrying forward" is the one place this discipline slips most often**
+  — its own doctrine (below) is a reader-facing translation-philosophy summary + next-chapter
+  teaser (see Genesis 1's, the original), but on many later chapters (Numbers 34–36 among them) it
+  quietly turned into a QA/audit journal — "the claim was written here, tested, and found false",
+  "the search needed to be done on the causative form" — addressed to the next Claude session, not
+  to the reader. If a paragraph's subject is the chapter's own composition rather than the Hebrew/
+  Greek/English/Spanish text, cut it; don't launder it into "Patterns" just because that heading
+  exists. **If something genuinely needs to persist for the next chapter's Claude session and
+  isn't reader content, it does not go in the public page at all** — there is no private channel
+  for it today, so either it's reader-worthy prose or it doesn't get written down; don't invent a
+  workaround that lands it on the page anyway. A full sweep of the other 257 "Patterns worth
+  carrying forward" paragraphs for this same drift has NOT been done — only Numbers 36 has been
+  fixed; ask before doing the rest, it's a large review.
 - Name-puns are always surfaced (transliteration in em-dash, the Hebrew/Greek phrase in the note).
 - **Shelf density is enforced by the build**, not just editorial intent — `build.py`'s
   `check_shelf_density()` fails the build if a chapter's notes carry fewer than 3 shelf-comparison
