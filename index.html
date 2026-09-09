@@ -33,7 +33,8 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
 .wrap{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 22px 64px}
 
 header.hub-head{padding:64px 0 8px;text-align:center}
-.mark{width:52px;height:52px;display:block;margin:0 auto 18px}
+.mark{width:69px;height:69px;display:block;margin:0 auto 20px;
+  filter:drop-shadow(0 0 10px rgba(232,201,104,.55)) drop-shadow(0 0 22px rgba(232,201,104,.35))}
 h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
   background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
   -webkit-background-clip:text;background-clip:text;color:#e8c968;
@@ -55,7 +56,8 @@ h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
 .hcard:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.hcard{transition:none}.hcard:hover{transform:none}}
 
-.hcard .badge{width:56px;height:56px;flex:0 0 56px;position:relative;z-index:1}
+.hcard .badge{width:56px;height:56px;flex:0 0 56px;position:relative;z-index:1;
+  filter:drop-shadow(0 0 8px var(--accent-glow)) drop-shadow(0 0 18px var(--accent-glow))}
 .hcard .eyebrow{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600;
   position:relative;z-index:1}
