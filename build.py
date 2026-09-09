@@ -22,6 +22,7 @@ import os
 import re
 from collections import defaultdict
 
+import blogkit
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
                            LINK_OVERRIDES, VERSE_OF_DAY, ROUTES, REGIONS,
                            CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS,
@@ -2092,7 +2093,8 @@ def build_encyclopedia_entry_pages():
         og_image = f"{SITE_URL}/img/ency/{img['file']}" if img else ""
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="encyclopedia.html">🏺 Encyclopedia</a></p>
-{_ency_card(e, permalink=False)}"""
+{_ency_card(e, permalink=False)}
+{_note_nudge(e['name'], f"ency/{e['slug']}.html")}"""
         out = page(f"{e['name']} — Encyclopedia — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(e['name'], e['desc']), url=f"ency/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
@@ -2111,7 +2113,8 @@ def build_dictionary_entry_pages():
     for slug, term, orig, translit, gloss, ref in DICTIONARY:
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="dictionary.html">📖 Dictionary</a></p>
-{_dict_card(slug, term, orig, translit, gloss, ref, permalink=False)}"""
+{_dict_card(slug, term, orig, translit, gloss, ref, permalink=False)}
+{_note_nudge(term, f"dict/{slug}.html")}"""
         out = page(f"{term} — Dictionary — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(term, gloss), url=f"dict/{slug}.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{slug}.html"), "w", encoding="utf-8").write(out)
@@ -2742,7 +2745,8 @@ def build_atlas_entry_pages():
         og_image = f"{SITE_URL}/img/ency/{img['file']}" if img else ""
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="atlas.html">🗺️ Atlas</a></p>
-{_atlas_card(e, permalink=False)}"""
+{_atlas_card(e, permalink=False)}
+{_note_nudge(e['name'], f"atlas/{e['slug']}.html")}"""
         out = page(f"{e['name']} — Atlas — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(e['name'], e['desc']), url=f"atlas/{e['slug']}.html", image=og_image,
                    base=f"{SITE_URL}/")
@@ -2764,7 +2768,8 @@ def build_route_pages():
     for r in ROUTES:
         body = f"""<p style="font-size:12px;opacity:.6;margin:0 0 12px">
   <a href="atlas.html">🗺️ Atlas</a></p>
-{render_route_panel(r)}"""
+{render_route_panel(r)}
+{_note_nudge(r['title'], f"routes/{r['slug']}.html")}"""
         out = page(f"{r['title']} — Atlas — {SITE_NAME_SHORT}", body, active="library",
                    desc=_entry_desc(r['title'], r["blurb"]), url=f"routes/{r['slug']}.html", base=f"{SITE_URL}/")
         open(os.path.join(outdir, f"{r['slug']}.html"), "w", encoding="utf-8").write(out)
@@ -3547,6 +3552,36 @@ def inject_chapter_art(content, slug, lang="en"):
     return content[:i] + "\n" + block + content[i:]
 
 
+def _note_nudge(title, path):
+    """A per-page 'take a public note' box — X as the note/comment layer for a
+    chapter/dictionary/encyclopedia/atlas/route page (blogkit.x_note_url /
+    x_search_url), added 2026-09-09 (Michael's call). Lives ALONGSIDE, not in
+    place of, reader-notes.js's own private per-verse notes/highlights (that
+    system is local to the reader's own browser, no server, no account —
+    "your own margin"); this one is the opposite, public and hosted entirely
+    by X. Copy deliberately avoids reader-notes.js's own "Add note" wording
+    and 📝 icon so the two don't read as the same feature — see blogkit.py's
+    X-comment-system section header for the full reasoning shared with
+    build_travel.py/build_finance.py's near-identical `_x_respond_nudge`/
+    `_ask_nudge`.
+
+    `path` is root-relative to SITE_URL (e.g. "genesis-1.html" or
+    "ency/pharaoh.html") — every caller already builds one of those."""
+    full_url = f"{SITE_URL}/{path}"
+    note = blogkit.x_note_url(title, full_url)
+    search = blogkit.x_search_url(full_url)
+    return ('<div class="respond">'
+            '<p><strong>Take a public note.</strong> Jot a thought on this page and it '
+            'posts publicly on X, pinging me directly — or see what other readers '
+            'have already noted here.</p>'
+            '<div class="respond-actions">'
+            f'<a class="respond-btn respond-btn-primary" href="{note}" target="_blank" '
+            'rel="noopener">🌐 Take a Public Note</a>'
+            f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
+            'rel="noopener">🔍 View Notes by Others</a>'
+            '</div></div>')
+
+
 def build_chapter_pages(chapters):
     es_panels = _es_panels()   # chapters with a Spanish edition -> the reader's español toggle
     for slug, book, num, teaser in CHAPTERS:
@@ -3594,6 +3629,7 @@ function toggleEsp(){
 <article class="chapter">
 {content}
 </article>
+{_note_nudge(f"{book} {num}", chapter_filename(book, num))}
 {nav_strip(book, num, 'bottom')}
 <script>
 function toggleHeb(){{

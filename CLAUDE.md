@@ -160,6 +160,30 @@ with, and nothing it can accidentally glob into any of the three builders' own o
   even inside a version's verbatim quote — paraphrase or pick a quote that avoids it (ASV prints
   "Jehovah" natively, which is handy here).
 
+## Public notes (X) — chapter / dictionary / encyclopedia / atlas / route pages
+
+**Added 2026-09-09 (Michael's call).** Every chapter page, dictionary/encyclopedia/atlas entry
+page, and route page carries a `.respond` box (`build.py`'s `_note_nudge()`, right after the
+page's own content) with two buttons: **🌐 Take a Public Note** (a pre-filled X compose link,
+`blogkit.x_note_url`) and **🔍 View Notes by Others** (an exact-URL X search, `blogkit.x_search_url`).
+X hosts, ranks, and moderates it — this domain runs no comment backend of its own.
+
+**This is deliberately NOT the same feature as `reader-notes.js`**, which stays exactly as it
+was: a *private*, browser-local per-verse highlight/note system, no account, no server, nothing
+ever uploaded ("the reader's own margin"). The new box is the opposite — public, shared, and
+visible to every reader of that same page — which is why its copy avoids `reader-notes.js`'s own
+"Add note" wording and 📝 icon. The two coexist by design: keep a private note on a verse, or
+post a public one about the whole page.
+
+**Same underlying mechanism as `build_travel.py`/`build_finance.py`'s own X-comment nudge**
+(`_x_respond_nudge`/`_ask_nudge`), shared via `blogkit.py`. Those two pitch the link as pushing
+back on something Michael wrote (`x_comment_url`, "Commenting on…"); this one pitches the
+identical link as the reader's own note (`x_note_url`, "Note on…") — see `blogkit.py`'s X-comment-
+system section header for the full reasoning. The Bible project has no draft concept for these
+pages (everything `build.py` outputs is already live), so unlike the other two builders it calls
+these unconditionally, with no per-page draft check. **Not yet wired into the Spanish (`.es.html`)
+entry-page builders** — an easy follow-up, not done in the first pass.
+
 ## Per-chapter checklist
 
 1. **Get the source chapter FROM OUR OWN ARCHIVE — never curl the supplier.**

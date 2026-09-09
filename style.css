@@ -840,3 +840,29 @@ tr.ch-dim td{opacity:0.55}
 .chapter-art .art-note{font-size:12.5px;opacity:.78;margin:7px auto 0;text-align:left}
 .chapter-art .art-lic{font-size:11px;opacity:.6;margin-top:5px}
 @media (max-width:680px){.chapter-art figcaption{max-width:100%}}
+
+/* --- public note (X) -- see build.py's _note_nudge(). Same box the Ledger/
+   Librarian Abroad use for their own X-comment nudge, restyled onto this
+   site's --gold accent instead of each of theirs. -------------------------- */
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid var(--border);
+  border-radius:11px;background:var(--bg1)}
+.respond p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
+.respond strong{color:var(--text)}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14px;letter-spacing:.2px;text-decoration:none;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:var(--gold);color:#0b1929}
+.respond-btn-secondary{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+/* Pinned explicitly, not left to source order — the bare `a:hover{color:...}`
+   rule near the top of this file otherwise outranks a plain `.respond-btn-*`
+   class on hover and can blank a button's own text. Same fix already made in
+   travel/style.css and build_finance.py's inline CSS, 2026-09-09. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#0b1929}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:var(--gold)}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}

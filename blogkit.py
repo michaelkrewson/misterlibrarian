@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
-"""Publication machinery shared by build_travel.py and build_finance.py.
+"""Publication machinery shared by build_travel.py, build_finance.py, and
+(as of the X comment/note system below, 2026-09-09) build.py.
 
 This domain now has two publications that both publish dated entries — The
 Librarian Abroad at /travel/ and The Librarian's Ledger at /finance/. Everything
 in here is the part of "being a blog" that has nothing to do with which blog it
 is: parsing front matter, deriving a meta description, building an RSS feed,
-measuring an image so the browser can reserve space for it.
+measuring an image so the browser can reserve space for it. The Bible project
+(build.py) is not a dated-entry blog and doesn't touch the front-matter/RSS
+half of this module — it only calls the X comment/note functions, which is
+why those are written to take their own title/url arguments rather than
+reading a publication's entry shape.
 
 WHY A SHARED MODULE RATHER THAN A SECOND COPY
 The alternative was copying ~300 lines out of build_travel.py into
@@ -226,11 +231,11 @@ def build_feed(posts, *, site_name, site_url, base, blurb, limit=30,
 # -------------------------------------------------------- X comment system ---
 #
 # X (formerly Twitter) as a lightweight, unmoderated comment system for a
-# published entry: a pre-filled compose link turns "leave a comment" into a
+# published page: a pre-filled compose link turns "leave a comment" into a
 # public reply that pings @Mr__Librarian, and a companion search link lets
 # any reader find every comment anyone else left on that same URL. X hosts
 # it, ranks it, and moderates the spam and abuse — this domain runs no
-# comment backend at all. Shared here because both publications want the
+# comment backend at all. Shared here because every publication wants the
 # identical mechanism off the identical handle (2026-09-09, Michael's call,
 # replacing the per-post nudge each blog's own write-in form used to carry —
 # that form still exists, nav-linked, for anything not tied to one entry).
@@ -238,10 +243,37 @@ def build_feed(posts, *, site_name, site_url, base, blurb, limit=30,
 # DELIBERATELY ONLY for a published page. A draft preview's URL is unlisted
 # and meant for Michael's own proofreading pass — posting it publicly to X
 # would advertise a page that isn't live yet. Each builder is responsible for
-# not calling these two on a draft; see build_travel.py's `_x_respond_nudge`
+# not calling these on a draft; see build_travel.py's `_x_respond_nudge`
 # (drafts keep the old form-based `_respond_nudge`) and build_finance.py's
-# `_ask_nudge` (branches on `e["draft"]` itself).
+# `_ask_nudge` (branches on `e["draft"]` itself). The Bible project (build.py)
+# has no draft concept for chapter/dictionary/encyclopedia/atlas pages — every
+# one it builds is already live — so it calls these unconditionally.
+#
+# TWO PHRASINGS, same mechanism. `x_comment_url` (travel/finance) pitches this
+# as pushing back on something Michael wrote — a question or a correction.
+# `x_note_url` (the Bible project) pitches the identical link as the reader's
+# OWN public note or thought on a chapter/word/place — deliberately NOT the
+# same wording as reader-notes.js's per-verse "Add note" button on those same
+# pages, which is a *private*, browser-local highlight/note system with zero
+# server involvement (see that file's own header comment). This is the
+# opposite: public, shared, and hosted entirely by X. The two coexist by
+# design — one is your own margin, the other is everyone's.
 X_HANDLE = "Mr__Librarian"
+
+
+def _x_intent_url(lead, title, url):
+    """Shared body of x_comment_url/x_note_url below — same compose-link
+    shape, just a different opening verb. Not part of the public API on its
+    own; call one of the two named wrappers instead so a call site's intent
+    (comment vs. note) is legible without opening this module."""
+    # No quote marks wrapped around `title` here on purpose — this domain's
+    # own titles routinely carry their own embedded quotation marks (a
+    # title beginning "'Coded and Audited by AI,' and..." or wrapping its
+    # own phrase in straight quotes), and a second, curly-quoted layer
+    # around one of those collides into an ugly nested-quote mess. Stating
+    # the title plainly avoids the collision unconditionally.
+    text = f'{lead} {title}:\n\n{url}\n\n@{X_HANDLE}'
+    return "https://x.com/intent/tweet?text=" + urllib.parse.quote(text)
 
 
 def x_comment_url(title, url):
@@ -253,14 +285,15 @@ def x_comment_url(title, url):
     link-preview card off the page's own Open Graph tags), and carries an
     @-mention so the post pings this account even if nothing else changes.
     """
-    # No quote marks wrapped around `title` here on purpose — this domain's
-    # own titles routinely carry their own embedded quotation marks (a
-    # title beginning "'Coded and Audited by AI,' and..." or wrapping its
-    # own phrase in straight quotes), and a second, curly-quoted layer
-    # around one of those collides into an ugly nested-quote mess. Stating
-    # the title plainly avoids the collision unconditionally.
-    text = f'Commenting on {title}:\n\n{url}\n\n@{X_HANDLE}'
-    return "https://x.com/intent/tweet?text=" + urllib.parse.quote(text)
+    return _x_intent_url("Commenting on", title, url)
+
+
+def x_note_url(title, url):
+    """Same mechanism as x_comment_url, phrased as the reader's own public
+    note on `title`/`url` rather than a comment/complaint — see the module
+    section header above for why the Bible project uses this wording and
+    travel/finance use the other."""
+    return _x_intent_url("Note on", title, url)
 
 
 def x_search_url(url):
