@@ -839,9 +839,14 @@ def _ask_nudge(e):
     search = blogkit.x_search_url(full_url)
     return ('<div class="respond">'
             '<p><strong>Got a question?</strong> Something here you want pushed on, '
-            'or think I have wrong? <a href="%s" target="_blank" rel="noopener">'
-            'Comment on X</a> — it posts publicly and pings me directly. '
-            '<a href="%s" target="_blank" rel="noopener">See what others said</a>.</p></div>'
+            'or think I have wrong? Comment on X and it posts publicly, pinging me '
+            'directly — or see what other readers have already said.</p>'
+            '<div class="respond-actions">'
+            '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
+            'rel="noopener">💬 Comment on X</a>'
+            '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
+            'rel="noopener">🔍 See what others said</a>'
+            '</div></div>'
             % (comment, search))
 
 
@@ -1734,6 +1739,27 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 .respond p{margin:0;color:#a9b7c9;font-size:15px;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:__ACCENT__;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid __ACCENT__;color:__ACCENT__}
+/* Pinned explicitly, not left to source order — see the identical note in
+   travel/style.css. No generic `a:hover{color:...}` rule collides with these
+   two today, but a bare pseudo-class selector outranks a single class no
+   matter which comes later, so a future one added anywhere on this page
+   could silently blank the PRIMARY button's text again the same way it did
+   on the travel site (2026-09-09). Cheap insurance, pinned now. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:__ACCENT__}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
 
 /* ── front-page hero photo ───────────────────────────────────────────────── */
 .fronthero{margin:8px 0 2px}

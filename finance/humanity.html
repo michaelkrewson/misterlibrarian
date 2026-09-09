@@ -157,6 +157,27 @@ footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 .respond p{margin:0;color:#a9b7c9;font-size:15px;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
 .respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#f7931a;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #f7931a;color:#f7931a}
+/* Pinned explicitly, not left to source order — see the identical note in
+   travel/style.css. No generic `a:hover{color:...}` rule collides with these
+   two today, but a bare pseudo-class selector outranks a single class no
+   matter which comes later, so a future one added anywhere on this page
+   could silently blank the PRIMARY button's text again the same way it did
+   on the travel site (2026-09-09). Cheap insurance, pinned now. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#f7931a}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
 
 /* ── front-page hero photo ───────────────────────────────────────────────── */
 .fronthero{margin:8px 0 2px}
@@ -521,7 +542,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <p class="bblede hblede">Every person alive, set against a currency that cannot print more of itself. The world’s population keeps growing; Bitcoin’s supply is capped at 21 million coins and most of it is already mined — so every birth divides a fixed pie a little thinner. Here is what that looks like in the actual numbers.</p>
   <blockquote class="hbquote">“It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy.”<cite>— Satoshi Nakamoto, January 2009, days after the first bitcoin transaction</cite></blockquote>
   <p class="hbstamp"><span class="hbdot" id="hbDot"></span><span id="hbLive">live</span><span><span class="hbsep">·</span> block 966,255 <span class="hbsep">·</span> population model anchored June 25, 2026</span></p>
-  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,246,064,054</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,082,000 BTC</div><div class="hbbox-s">95.63% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,534</span> <span class="hbmuted" id="hbSppUsd">($191.81)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
+  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,246,066,464</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,082,000 BTC</div><div class="hbbox-s">95.63% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,534</span> <span class="hbmuted" id="hbSppUsd">($191.81)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
   <p class="hbaside">Even that "issued" figure overstates what can ever be spent: <a href="https://blockchair.com/bitcoin/block/501726" rel="noopener" target="_blank">block 501,726</a>, mined December 30, 2017, has a coinbase transaction that claims 0 BTC instead of the 12.5 BTC subsidy then in effect — an entirely empty block, its reward destroyed by whatever mining bug produced it. That satoshi will never exist. The 21 million cap this page computes from the halving schedule is Bitcoin’s theoretical ceiling; the real one is smaller still, and no one can ever put it back.</p>
   <section class="hbc hbwide">
     <h2>Satoshis per person on Earth — over time</h2>

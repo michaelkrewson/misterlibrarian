@@ -1105,10 +1105,14 @@ def _x_respond_nudge(p):
     return (
         '<div class="respond">'
         '<p><strong>Been here?</strong> Think I got it wrong, or know where I '
-        f'should have gone instead? <a href="{comment}" target="_blank" rel="noopener">'
-        'Comment on X</a> — it posts publicly and pings me directly. '
-        f'<a href="{search}" target="_blank" rel="noopener">See what others said</a>.</p>'
-        '</div>')
+        'should have gone instead? Comment on X and it posts publicly, pinging me '
+        'directly — or see what other readers have already said.</p>'
+        '<div class="respond-actions">'
+        f'<a class="respond-btn respond-btn-primary" href="{comment}" target="_blank" '
+        'rel="noopener">💬 Comment on X</a>'
+        f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
+        'rel="noopener">🔍 See what others said</a>'
+        '</div></div>')
 
 
 def build_post_pages(posts):

@@ -446,6 +446,8 @@ a.pill:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .pubbtn { transition: none; }
   .pubbtn:hover, .pubbtn:focus, .pubbtn:active { transform: none; }
+  .respond-btn { transition: none; }
+  .respond-btn:hover, .respond-btn:focus, .respond-btn:active { transform: none; }
 }
 
 /* Share-this-page button (share.js) rides as the last item in .topnav itself
@@ -647,6 +649,31 @@ figcaption, .credit {
 }
 .respond p { margin: 0; color: var(--ink-soft); }
 .respond strong { color: var(--ink); }
+.respond-actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+.respond-btn {
+  flex: 1 1 180px;
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14.5px;
+  letter-spacing: .2px;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  transition: transform .12s ease, filter .12s ease;
+}
+.respond-btn:hover, .respond-btn:focus { filter: brightness(1.1); transform: translateY(-1px); }
+.respond-btn:active { transform: translateY(0); }
+.respond-btn-primary { background: var(--terra); color: #0a0f1a; box-shadow: var(--shadow); }
+.respond-btn-secondary { background: transparent; border: 1px solid var(--terra); color: var(--terra-dk); }
+/* Pinned explicitly rather than left to source order: the global `a:hover`
+   rule above sets link text to var(--terra) on hover, and a bare pseudo-class
+   selector outranks a single class in specificity no matter which comes
+   later in the file. Without this, hovering the PRIMARY button (background
+   is that same var(--terra)) set its text to match its own background —
+   invisible text on hover, caught 2026-09-09. */
+.respond-btn-primary:hover, .respond-btn-primary:focus { color: #0a0f1a; }
+.respond-btn-secondary:hover, .respond-btn-secondary:focus { color: var(--terra-dk); }
 
 .askform { display: flex; flex-direction: column; gap: 18px; }
 .askform label {
