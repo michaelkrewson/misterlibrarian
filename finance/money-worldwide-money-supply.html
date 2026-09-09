@@ -485,8 +485,8 @@ table.mw-sort td.mw-nm{white-space:normal}
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
   <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">🏦</span> Money Supply</h1>
-  <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. 12 of 16 economies tracked here have a real, live figure today; the rest show "—" with their own source-note under the area name — a genuinely investigated economy with no working live source yet, not a guess or a silent drop. Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-09 13:46 UTC · see <a
+  <p class="mwsub">How much money actually exists, by aggregate — narrowest (M0-class) to broadest each economy publishes. 14 of 20 economies tracked here have a real, live figure today; the rest show "—" with their own source-note under the area name — a genuinely investigated economy with no working live source yet, not a guess or a silent drop. Click any column to sort.</p>
+  <p class="stamp">Updated 2026-09-09 14:02 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
   <table class="board mw-sort">
@@ -608,6 +608,24 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td title="1,969.3 DKKB as of 2026M07">$305,982,224,984</td>
         <td title="2,169.0 DKKB as of 2026M07">$337,005,904,288</td>
       </tr>
+      <tr data-m1="435.61475495199016" data-m2="535.3801212222199" data-m3="540.7159817541814">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇪</span>
+          <span class="nm"><span class="n1">Sweden</span>
+          <span class="mw-sub">Statistics Sweden (SCB) PxWebApi — table FM5001, the &quot;Outstanding money supply, SEK millions&quot; content code (as against the table&#x27;s other content code, 12-month growth rate, which this board doesn&#x27;t want); M1/M2/M3, sourced from Sveriges Riksbank. The same PxWebApi 1.0 software as Norway&#x27;s SSB, but M1/M2/M3 live on their own &quot;Penningm&quot; dimension here rather than through ContentsCode directly, so this needed its own small provider (`scb_pxweb`) sharing the same underlying query helper. No M0/monetary-base table found on this API within reasonable effort, despite Sweden&#x27;s own textbook M0 definition (banknotes and coins held by the public) being real and commonly cited elsewhere. SEK million.</span></span></span></td>
+        <td class="mw-sub">—</td>
+        <td title="4,182.9 SEKB as of 2026M07">$435,614,754,952</td>
+        <td title="5,140.8 SEKB as of 2026M07">$535,380,121,222</td>
+        <td title="5,192.1 SEKB as of 2026M07">$540,715,981,754</td>
+      </tr>
+      <tr data-m1="254.16211091799653" data-m2="705.0097961763312" data-m3="718.1958445252014">
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇸🇬</span>
+          <span class="nm"><span class="n1">Singapore</span>
+          <span class="mw-sub">data.gov.sg — the Monetary Authority of Singapore&#x27;s own &quot;Money Supply&quot; dataset, via data.gov.sg&#x27;s CKAN datastore_search API (genuinely keyless — an API key only raises the rate limit, it isn&#x27;t required). Row labels carry leading whitespace for display indentation in MAS&#x27;s own table (stripped before matching); the latest month is found by parsing every &quot;YYYYMon&quot;-style column id to a real date rather than trusting column order. No M0/monetary-base dataset found on data.gov.sg within reasonable effort (MAS&#x27;s own Monthly Statistical Bulletin XML endpoint for it returned a 404 when checked directly). SGD million.</span></span></span></td>
+        <td class="mw-sub">—</td>
+        <td title="321.7 SGDB as of 2026Jun">$254,162,110,918</td>
+        <td title="892.4 SGDB as of 2026Jun">$705,009,796,176</td>
+        <td title="909.1 SGDB as of 2026Jun">$718,195,844,525</td>
+      </tr>
       <tr >
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇰🇷</span>
           <span class="nm"><span class="n1">South Korea</span>
@@ -644,14 +662,32 @@ table.mw-sort td.mw-nm{white-space:normal}
         <td class="mw-sub">—</td>
         <td class="mw-sub">—</td>
       </tr>
+      <tr >
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇿</span>
+          <span class="nm"><span class="n1">New Zealand</span>
+          <span class="mw-sub">The RBNZ publishes its money/credit aggregates (table C50/M1) as real CSV/XLSX files with no API key — but the whole rbnz.govt.nz domain sits behind Cloudflare bot protection that returns a 403 to a plain server-side request (confirmed on both the statistics page itself and the direct .xlsx file URL, with a real browser User-Agent header). A different class of blocker from every registration-gated API on this list: the data is genuinely free and keyless, but the SERVER, not the data format, refuses a non-browser client. Would need a browser-driven fetch to get past it — not attempted here.</span></span></span></td>
+        <td class="mw-sub">—</td>
+        <td class="mw-sub">—</td>
+        <td class="mw-sub">—</td>
+        <td class="mw-sub">—</td>
+      </tr>
+      <tr >
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇱</span>
+          <span class="nm"><span class="n1">Israel</span>
+          <span class="mw-sub">The Bank of Israel runs a real, modern, keyless SDMX 2.1 API at edge.boi.gov.il — confirmed live, and its dataflow list even names the exact one wanted (&quot;MAG&quot; = &quot;Monetay Aggregates&quot;, their own typo). But its data response encodes each series as a compact dimension-index key (e.g. &quot;3:0:1:2:1:1:0:2&quot;) rather than a named code — decoding which key is M0/M1/M2/M3 needs the dataflow&#x27;s full structure/dimension map fetched and cross-referenced, a genuinely deeper task than every other provider here (all of which return self-describing codes or labels directly in the data response). A real candidate for a future dated follow-up, not a dead end — the API and the right dataflow are both confirmed to exist.</span></span></span></td>
+        <td class="mw-sub">—</td>
+        <td class="mw-sub">—</td>
+        <td class="mw-sub">—</td>
+        <td class="mw-sub">—</td>
+      </tr>
     </tbody>
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total (at today's exchange rate)</td>
         <td>$18,528,703,504,401</td>
-        <td>$62,991,639,008,856</td>
-        <td>$112,735,642,730,450</td>
-        <td>$49,483,578,007,195</td>
+        <td>$63,681,415,874,726</td>
+        <td>$113,976,032,647,848</td>
+        <td>$50,742,489,833,474</td>
       </tr>
     </tfoot>
   </table>

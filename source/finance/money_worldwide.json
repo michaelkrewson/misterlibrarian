@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 13:46 UTC",
+ "generated": "2026-09-09 14:02 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -78,7 +78,7 @@
     "usd_m3": 20484.441027229692,
     "broad_usd": 20484.441027229692,
     "broad_yoy_pct": 4.088352110312976,
-    "volatility_pct": 5.4224919318268485,
+    "volatility_pct": null,
     "turnover_usd": 2774400000000.0,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
    },
@@ -101,7 +101,7 @@
     "usd_m3": 2974.471568272365,
     "broad_usd": 2974.471568272365,
     "broad_yoy_pct": 6.020863057846171,
-    "volatility_pct": 4.293544054828323,
+    "volatility_pct": null,
     "turnover_usd": 556800000000.0
    },
    {
@@ -123,7 +123,7 @@
     "usd_m3": 1517.0408615930598,
     "broad_usd": 1517.0408615930598,
     "broad_yoy_pct": 3.2863286513224788,
-    "volatility_pct": 6.895650629562171,
+    "volatility_pct": null,
     "turnover_usd": 614400000000.0
    },
    {
@@ -145,7 +145,7 @@
     "usd_m3": 2750.831135176381,
     "broad_usd": 2750.831135176381,
     "broad_yoy_pct": 10.061686935296477,
-    "volatility_pct": 9.46248539794952,
+    "volatility_pct": null,
     "turnover_usd": 86400000000.00002
    },
    {
@@ -167,7 +167,7 @@
     "usd_m3": 4468.627158821538,
     "broad_usd": 4468.627158821538,
     "broad_yoy_pct": 4.420197283209393,
-    "volatility_pct": 6.142922840018986,
+    "volatility_pct": null,
     "turnover_usd": 979199999999.9999
    },
    {
@@ -189,7 +189,7 @@
     "usd_m3": 394.02818910914635,
     "broad_usd": 394.02818910914635,
     "broad_yoy_pct": 5.5024975834505385,
-    "volatility_pct": 8.283385481883233,
+    "volatility_pct": null,
     "turnover_usd": 124800000000.00002
    },
    {
@@ -211,7 +211,7 @@
     "usd_m3": null,
     "broad_usd": 52978.16854183742,
     "broad_yoy_pct": null,
-    "volatility_pct": 2.129925913353927,
+    "volatility_pct": null,
     "turnover_usd": 816000000000.0
    },
    {
@@ -233,7 +233,7 @@
     "usd_m3": 3405.51544869767,
     "broad_usd": 3405.51544869767,
     "broad_yoy_pct": null,
-    "volatility_pct": 5.232734712142787,
+    "volatility_pct": null,
     "turnover_usd": 182400000000.0
    },
    {
@@ -255,7 +255,7 @@
     "usd_m3": 10628.566429034348,
     "broad_usd": 10628.566429034348,
     "broad_yoy_pct": 1.2210684580460152,
-    "volatility_pct": 8.032887977721977,
+    "volatility_pct": null,
     "turnover_usd": 1612800000000.0
    },
    {
@@ -277,7 +277,7 @@
     "usd_m3": 2523.050284972224,
     "broad_usd": 2523.050284972224,
     "broad_yoy_pct": 7.5532045762086275,
-    "volatility_pct": 7.78177451146861,
+    "volatility_pct": null,
     "turnover_usd": 585600000000.0
    },
    {
@@ -299,8 +299,52 @@
     "usd_m3": 337.00590428837785,
     "broad_usd": 337.00590428837785,
     "broad_yoy_pct": 8.651384730707656,
-    "volatility_pct": 5.416326046077543,
+    "volatility_pct": null,
     "turnover_usd": 67199999999.99999
+   },
+   {
+    "area": "Sweden",
+    "flag": "🇸🇪",
+    "currency": "SEK",
+    "source": "Statistics Sweden (SCB) PxWebApi — table FM5001, the \"Outstanding money supply, SEK millions\" content code (as against the table's other content code, 12-month growth rate, which this board doesn't want); M1/M2/M3, sourced from Sveriges Riksbank. The same PxWebApi 1.0 software as Norway's SSB, but M1/M2/M3 live on their own \"Penningm\" dimension here rather than through ContentsCode directly, so this needed its own small provider (`scb_pxweb`) sharing the same underlying query helper. No M0/monetary-base table found on this API within reasonable effort, despite Sweden's own textbook M0 definition (banknotes and coins held by the public) being real and commonly cited elsewhere. SEK million.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 4182.86,
+    "m1_date": "2026M07",
+    "usd_m1": 435.61475495199016,
+    "m2": 5140.827,
+    "m2_date": "2026M07",
+    "usd_m2": 535.3801212222199,
+    "m3": 5192.063,
+    "m3_date": "2026M07",
+    "usd_m3": 540.7159817541814,
+    "broad_usd": 540.7159817541814,
+    "broad_yoy_pct": null,
+    "volatility_pct": null,
+    "turnover_usd": null
+   },
+   {
+    "area": "Singapore",
+    "flag": "🇸🇬",
+    "currency": "SGD",
+    "source": "data.gov.sg — the Monetary Authority of Singapore's own \"Money Supply\" dataset, via data.gov.sg's CKAN datastore_search API (genuinely keyless — an API key only raises the rate limit, it isn't required). Row labels carry leading whitespace for display indentation in MAS's own table (stripped before matching); the latest month is found by parsing every \"YYYYMon\"-style column id to a real date rather than trusting column order. No M0/monetary-base dataset found on data.gov.sg within reasonable effort (MAS's own Monthly Statistical Bulletin XML endpoint for it returned a 404 when checked directly). SGD million.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": 321.71840000000003,
+    "m1_date": "2026Jun",
+    "usd_m1": 254.16211091799653,
+    "m2": 892.4014,
+    "m2_date": "2026Jun",
+    "usd_m2": 705.0097961763312,
+    "m3": 909.0923,
+    "m3_date": "2026Jun",
+    "usd_m3": 718.1958445252014,
+    "broad_usd": 718.1958445252014,
+    "broad_yoy_pct": null,
+    "volatility_pct": null,
+    "turnover_usd": null
    },
    {
     "area": "South Korea",
@@ -377,11 +421,49 @@
     "m3_date": null,
     "usd_m3": null,
     "broad_usd": null
+   },
+   {
+    "area": "New Zealand",
+    "flag": "🇳🇿",
+    "currency": "NZD",
+    "source": "The RBNZ publishes its money/credit aggregates (table C50/M1) as real CSV/XLSX files with no API key — but the whole rbnz.govt.nz domain sits behind Cloudflare bot protection that returns a 403 to a plain server-side request (confirmed on both the statistics page itself and the direct .xlsx file URL, with a real browser User-Agent header). A different class of blocker from every registration-gated API on this list: the data is genuinely free and keyless, but the SERVER, not the data format, refuses a non-browser client. Would need a browser-driven fetch to get past it — not attempted here.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
+   },
+   {
+    "area": "Israel",
+    "flag": "🇮🇱",
+    "currency": "ILS",
+    "source": "The Bank of Israel runs a real, modern, keyless SDMX 2.1 API at edge.boi.gov.il — confirmed live, and its dataflow list even names the exact one wanted (\"MAG\" = \"Monetay Aggregates\", their own typo). But its data response encodes each series as a compact dimension-index key (e.g. \"3:0:1:2:1:1:0:2\") rather than a named code — decoding which key is M0/M1/M2/M3 needs the dataflow's full structure/dimension map fetched and cross-referenced, a genuinely deeper task than every other provider here (all of which return self-describing codes or labels directly in the data response). A real candidate for a future dated follow-up, not a dead end — the API and the right dataflow are both confirmed to exist.",
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
+    "m2": null,
+    "m2_date": null,
+    "usd_m2": null,
+    "m3": null,
+    "m3_date": null,
+    "usd_m3": null,
+    "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 125679.7465490322,
-  "n_resolved": 12,
-  "n_total": 16
+  "total_broad_usd_b": 126938.65837531158,
+  "n_resolved": 14,
+  "n_total": 20
  },
  "reserves_fx": {
   "rows": [
@@ -1921,14 +2003,14 @@
   "price_usd": 79416.2109375,
   "market_cap_usd": 1594818975750.7324,
   "btc_rank": 11,
-  "volatility_pct": 36.760528508588415,
-  "turnover_usd": 33400200998.90989,
+  "volatility_pct": 36.757733639536966,
+  "turnover_usd": 32743322163.89911,
   "broad_yoy_pct": 0.8184657424251148,
   "lineup": [
    {
-    "label": "Broad money — 12 economies with live data",
-    "usd": 125679746549032.2,
-    "note": "The 12 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 14 economies with live data",
+    "usd": 126938658375311.58,
+    "note": "The 14 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",

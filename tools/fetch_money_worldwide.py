@@ -469,6 +469,8 @@ BOE_IADB_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshow
                 "?csv.x=yes&Datefrom=01/Jan/%d&Dateto=now&SeriesCodes=%s"
                 "&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N")
 SSB_PXWEB_URL = "https://data.ssb.no/api/v0/en/table/%s"
+SCB_PXWEB_URL = "https://api.scb.se/OV0104/v1/doris/en/ssd/%s"
+SG_DATA_GOV_URL = "https://data.gov.sg/api/action/datastore_search?resource_id=%s&limit=%d"
 RBI_WSS_SECTION_URL = "https://rbi.org.in/Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=%d"
 RBI_WSS_VIEW_URL = "https://rbi.org.in/Scripts/WSSView.aspx?Id=%d"
 BOJ_CSV_URL = "https://www.stat-search.boj.or.jp/ssi/mtshtml/csv/%s.csv"
@@ -570,13 +572,16 @@ def _boe_iadb_latest(series_code):
         return None, None
 
 
-def _ssb_pxweb_latest(table_id, content_code):
-    """(date_str "YYYY-MM", float millions-native) for Statistics Norway's
-    PxWebAPI most recent observation of one content code in one table — two
-    calls (metadata to find the latest period, then a scoped data query),
-    since PxWebAPI has no simple "latest observation" shortcut the way
-    FRED's CSV export does. Genuinely keyless."""
-    meta = _get_json(SSB_PXWEB_URL % table_id, send_ua=False)
+def _pxweb1_latest(base_url, query_dims):
+    """(date_str, float) at the latest period for a classic PxWebApi 1.0
+    table — Statistics Norway's data.ssb.no AND Statistics Sweden's
+    api.scb.se are the SAME software family (GET metadata to find the
+    latest "Tid" period, then a scoped POST query in json-stat2), just
+    with different dimension shapes: Norway needs only "ContentsCode"
+    fixed, Sweden ALSO needs "Penningm" (which M1/M2/M3 lives on there)
+    fixed alongside it — `query_dims` fixes every non-time dimension to
+    exactly one value each, generically. Genuinely keyless."""
+    meta = _get_json(base_url, send_ua=False)
     if not isinstance(meta, dict):
         return None, None
     tid = next((v for v in meta.get("variables", []) if v.get("code") == "Tid"), None)
@@ -584,13 +589,12 @@ def _ssb_pxweb_latest(table_id, content_code):
         return None, None
     latest_period = tid["values"][-1]
     payload = {
-        "query": [
-            {"code": "ContentsCode", "selection": {"filter": "item", "values": [content_code]}},
-            {"code": "Tid", "selection": {"filter": "item", "values": [latest_period]}},
-        ],
+        "query": [{"code": code, "selection": {"filter": "item", "values": [val]}}
+                  for code, val in query_dims.items()]
+                 + [{"code": "Tid", "selection": {"filter": "item", "values": [latest_period]}}],
         "response": {"format": "json-stat2"},
     }
-    d = _post_json(SSB_PXWEB_URL % table_id, payload, send_ua=False)
+    d = _post_json(base_url, payload, send_ua=False)
     if not isinstance(d, dict):
         return None, None
     vals = d.get("value") or []
@@ -600,6 +604,23 @@ def _ssb_pxweb_latest(table_id, content_code):
         return latest_period, float(vals[0])
     except (TypeError, ValueError):
         return None, None
+
+
+def _ssb_pxweb_latest(table_id, content_code):
+    """(date_str "YYYY-MM", float millions-native) for Statistics Norway's
+    PxWebAPI most recent observation of one content code in one table."""
+    return _pxweb1_latest(SSB_PXWEB_URL % table_id, {"ContentsCode": content_code})
+
+
+def _scb_pxweb_latest(table_path, penningm_code):
+    """(date_str "YYYY-MM", float SEK-million) for Statistics Sweden's
+    PxWebAPI most recent "Outstanding money supply" observation of one
+    monetary-aggregate code (M1/M2/M3, each its own item on the
+    "Penningm" dimension — a different table shape from Norway's, where
+    ContentsCode alone selects the aggregate) in the FM5001 money-supply
+    table."""
+    return _pxweb1_latest(SCB_PXWEB_URL % table_path,
+                           {"Penningm": penningm_code, "ContentsCode": "000007WQ"})
 
 
 def _rbi_wss_latest_view_id(param1):
@@ -800,6 +821,45 @@ def _dk_pxweb_values(table, dim, codes_by_key, extra_dims=None):
                 out[key] = (period, float(values[i]))
             except (TypeError, ValueError):
                 pass
+    return out
+
+
+def _sg_datastore_latest(resource_id, labels_by_key):
+    """{key: (period_field, float)} for the requested DataSeries row
+    labels (e.g. "M1", "M2", "M3") in a data.gov.sg CKAN datastore
+    resource shaped like MAS's own "Money Supply" table — one wide row
+    per series, one column per month (field ids like "2026Jun"). Row
+    labels carry leading whitespace in the source table (display
+    indentation for sub-items), stripped before matching. Genuinely
+    keyless — data.gov.sg's datastore_search works unauthenticated; an
+    API key only raises the rate limit. The latest month is found by
+    parsing every "YYYYMon" field id to a real date rather than trusting
+    column order, since the API makes no ordering guarantee."""
+    d = _get_json(SG_DATA_GOV_URL % (resource_id, 20), send_ua=False)
+    if not isinstance(d, dict):
+        return {}
+    result = d.get("result") or {}
+    month_fields = []
+    for f in result.get("fields") or []:
+        fid = f.get("id", "")
+        if re.match(r"^\d{4}[A-Za-z]{3}$", fid):
+            try:
+                month_fields.append((fid, datetime.strptime(fid, "%Y%b")))
+            except ValueError:
+                pass
+    if not month_fields:
+        return {}
+    period_field = max(month_fields, key=lambda t: t[1])[0]
+    out = {}
+    for row in result.get("records") or []:
+        label = (row.get("DataSeries") or "").strip()
+        for key, target in labels_by_key.items():
+            v = row.get(period_field)
+            if label == target and v not in (None, ""):
+                try:
+                    out[key] = (period_field, float(v))
+                except (TypeError, ValueError):
+                    pass
     return out
 
 
@@ -1277,6 +1337,14 @@ def _fetch_generic_money_row(econ, fx):
         for key, (d, v) in _dk_pxweb_values(econ["table"], econ["dim"], codes,
                                              econ.get("extra_dims")).items():
             vals[key] = (v / 1000.0, d)   # DKK million -> billions
+    elif provider == "scb_pxweb":
+        for key, code in econ.get("codes", {}).items():
+            d, v = _scb_pxweb_latest(econ["table"], code)
+            if v is not None:
+                vals[key] = (v / 1000.0, d)   # SEK million -> billions
+    elif provider == "sg_datastore":
+        for key, (d, v) in _sg_datastore_latest(econ["resource_id"], econ.get("labels", {})).items():
+            vals[key] = (v / 1000.0, d)   # SGD million -> billions
     else:
         print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
               file=sys.stderr)
