@@ -7,6 +7,22 @@
   <description>A standing count of the largest assets on earth — gold, silver, the biggest public companies, and Bitcoin — ranked by what the market says they are worth, and refreshed through the day.</description>
   <language>en</language>
   <item>
+    <title>"Not Your Keys, Not Your Coins" Just Grew a Second Half</title>
+    <link>https://mistertranslation.com/finance/alby-hub-vulnerability.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/alby-hub-vulnerability.html</guid>
+    <pubDate>Wed, 09 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Alby disclosed a critical flaw in Alby Hub, its self-hosted Lightning node software, that could let an attacker who reaches an exposed control panel send your bitcoin out from under you. The twist worth sitting with is the timeline — the fix shipped over a year before the warning did — and what that gap actually tells self-custody Bitcoiners about the setting they should have checked already.</description>
+    <category>bitcoin</category>
+    <category>self custody</category>
+    <category>lightning</category>
+    <category>node</category>
+    <category>security</category>
+    <category>vulnerability</category>
+    <category>alby</category>
+    <category>open source</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>"Coded and Audited by AI," and the Longer Story Underneath That Sentence</title>
     <link>https://mistertranslation.com/finance/ibis-wallet-ai-audit.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/ibis-wallet-ai-audit.html</guid>
