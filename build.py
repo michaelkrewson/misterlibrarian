@@ -905,25 +905,6 @@ def header(active="", lang="en"):
 </header>"""
 
 
-def _foot_actions(active="", lang="en"):
-    """Small boxed pair of links, centered just above the footer's top rule
-    (2026-09-09) -- where "Ask a Question" (and, in English, "Dear Mr. Librarian")
-    now live after being removed from the header's utilnav-left slot. Spanish has
-    no "Dear Mr. Librarian" page yet, so its box holds just "Preguntar"."""
-    ask_on = " on" if active == "ask" else ""
-    if lang == "es":
-        links = '<a class="util-ask" href="contact.es.html" title="Enviar una pregunta">✉️ Preguntar</a>'
-    else:
-        links = (f'<a class="util-ask" href="contact.html" title="Ask a question">✉️ Ask a Question</a>\n'
-                 f'    <a class="util-ask{ask_on}" href="ask.html" title="Reader questions, answered one at a time">'
-                 f'\U0001F4D6 Dear Mr. Librarian</a>')
-    return f"""<div class="foot-actions">
-  <div class="foot-actions-box">
-    {links}
-  </div>
-</div>"""
-
-
 # The "N views" count moved here from the nav row (2026-07-27) -- it was competing
 # for room in an already-busy nav, and it's a bit of trivia a reader checks at the
 # end of a page, not something that belongs up top with the destinations. Sits as
@@ -1204,7 +1185,6 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 <script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
 {body}
-{_foot_actions(active, lang)}
 {ES_FOOTER if lang == "es" else FOOTER}
 </div>
 </body>
@@ -3925,7 +3905,9 @@ still ahead.</p>
   <div class="testament">New Testament · 27 books</div>
   <p class="muted" style="margin:2px 0 12px"><a href="new-testament.html">📜 Introduction to the New Testament — the Greek Scriptures →</a></p>
   <div class="bookgrid">{nt}</div>
-</div>"""
+</div>
+
+{_note_nudge("Table of Contents", "toc.html")}"""
     out = page(f"Table of Contents — {SITE_NAME}", body, active="toc",
                desc="Progress tracker for the MisterLibrarian Bible Project: every published chapter of "
                     "the fresh-from-the-Hebrew translation, and everything still ahead.", url="toc.html",
@@ -4136,7 +4118,9 @@ var MTLIB_CHAPTERS = {ch_json};
       'work. Come back when the next one lands, or revisit your <a href="reading.html">reading progress</a>.</div>';
   }}
 }})();
-</script>"""
+</script>
+
+{_note_nudge(SITE_NAME, HOME_URL)}"""
     out = page(SITE_NAME, body, active="home",
                desc="A fresh translation of the Bible into modern English, made from the original Hebrew "
                     "one chapter at a time, with verse-by-verse notes comparing seven landmark versions.",
