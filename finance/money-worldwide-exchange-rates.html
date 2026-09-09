@@ -452,6 +452,26 @@ table.mw-sort td.mw-nm{white-space:normal}
    this scale instead of a glow. */
 .mw-kicker-icon{display:inline-block;font-size:1.5em;line-height:1;vertical-align:-0.2em;
   filter:drop-shadow(0 0 3px #f7931a) drop-shadow(0 0 8px #f7931a)}
+
+/* The currency-market-cap ranking on the Exchange Rates page (see
+   _mw_marketcap_table) — Bitcoin's row gets a soft pulsing orange glow
+   instead of the flat tint board.html's own tr.btc uses elsewhere on this
+   site (Michael's call, 2026-09-08: "highlight the Bitcoin row in orange
+   glow"). Applied to each <td> rather than the <tr> itself — box-shadow on
+   a table-row with border-collapse:collapse renders unreliably across
+   browsers, but every browser paints box-shadow on a table-cell correctly,
+   and three glowing cells read as one glowing row. */
+.mw-btcrow td{background:linear-gradient(90deg,rgba(247,147,26,.16),rgba(247,147,26,.03));
+  animation:mwbtcglow 2.6s ease-in-out infinite}
+.mw-btcrow .rk,.mw-btcrow .n1{color:#f7931a;font-weight:700}
+@keyframes mwbtcglow{
+  0%,100%{box-shadow:inset 0 0 0 1px rgba(247,147,26,.28),0 0 10px rgba(247,147,26,.22)}
+  50%{box-shadow:inset 0 0 0 1px rgba(247,147,26,.55),0 0 20px rgba(247,147,26,.42)}
+}
+@media (prefers-reduced-motion:reduce){
+  .mw-btcrow td{animation:none;
+    box-shadow:inset 0 0 0 1px rgba(247,147,26,.4),0 0 16px rgba(247,147,26,.3)}
+}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -718,6 +738,126 @@ table.mw-sort td.mw-nm{white-space:normal}
   <p class="mwbarnote">No totals row here on purpose — summing exchange rates
   across currencies has no meaningful unit; unlike every other table on this
   page, this one has nothing sensible to add up. Bitcoin columns priced at $78,457/BTC, the same live snapshot as the rates above.</p>
+  <h2 class="mwh2">Where Bitcoin ranks by market cap</h2>
+  <p class="mwsub">Each economy's own broadest published money-supply aggregate — the
+  total value of that currency actually in existence, at today's exchange rate — set
+  against Bitcoin's total market cap, ranked together. Bitcoin lands at <b class="mwlede-hl">#10</b> of 13 on this list today. Scoped to the
+  12 economies the <a href="money-worldwide-money-supply.html">Money Supply
+  page</a> has a real, live figure for today — most of the 29 currencies in the
+  exchange-rate table above have no live money-supply source yet (see that page's own
+  "—" cells), so they're left off this ranking rather than shown with a fabricated
+  number. Click "Market cap" to re-sort.</p>
+  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Currency</th>
+        <th data-sort="cap" title="Each economy's own broadest published money-supply aggregate, in US dollars at today's exchange rate — Bitcoin's own total market cap for comparison">Market cap</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-cap="52978168541837.42">
+        <td class="rk">1</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
+          <span class="nm"><span class="n1">China</span>
+          <span class="n2">CNY</span></span></span></td>
+        <td class="mc">$52,978,168,541,837</td>
+      </tr>
+      <tr data-cap="23218000000000.0">
+        <td class="rk">2</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
+          <span class="nm"><span class="n1">United States</span>
+          <span class="n2">USD</span></span></span></td>
+        <td class="mc">$23,218,000,000,000</td>
+      </tr>
+      <tr data-cap="20484441027229.69">
+        <td class="rk">3</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇪🇺</span>
+          <span class="nm"><span class="n1">Euro area</span>
+          <span class="n2">EUR</span></span></span></td>
+        <td class="mc">$20,484,441,027,230</td>
+      </tr>
+      <tr data-cap="10628566429034.348">
+        <td class="rk">4</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
+          <span class="nm"><span class="n1">Japan</span>
+          <span class="n2">JPY</span></span></span></td>
+        <td class="mc">$10,628,566,429,034</td>
+      </tr>
+      <tr data-cap="4468627158821.538">
+        <td class="rk">5</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇬🇧</span>
+          <span class="nm"><span class="n1">United Kingdom</span>
+          <span class="n2">GBP</span></span></span></td>
+        <td class="mc">$4,468,627,158,822</td>
+      </tr>
+      <tr data-cap="3405515448697.67">
+        <td class="rk">6</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
+          <span class="nm"><span class="n1">India</span>
+          <span class="n2">INR</span></span></span></td>
+        <td class="mc">$3,405,515,448,698</td>
+      </tr>
+      <tr data-cap="2974471568272.3647">
+        <td class="rk">7</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇦</span>
+          <span class="nm"><span class="n1">Canada</span>
+          <span class="n2">CAD</span></span></span></td>
+        <td class="mc">$2,974,471,568,272</td>
+      </tr>
+      <tr data-cap="2750831135176.381">
+        <td class="rk">8</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇧🇷</span>
+          <span class="nm"><span class="n1">Brazil</span>
+          <span class="n2">BRL</span></span></span></td>
+        <td class="mc">$2,750,831,135,176</td>
+      </tr>
+      <tr data-cap="2523050284972.2236">
+        <td class="rk">9</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇦🇺</span>
+          <span class="nm"><span class="n1">Australia</span>
+          <span class="n2">AUD</span></span></span></td>
+        <td class="mc">$2,523,050,284,972</td>
+      </tr>
+      <tr class="mw-btcrow" data-cap="1575546218783.5684">
+        <td class="rk">10</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">₿</span>
+          <span class="nm"><span class="n1">Bitcoin</span>
+          <span class="n2">BTC</span></span></span></td>
+        <td class="mc">$1,575,546,218,784</td>
+      </tr>
+      <tr data-cap="1517040861593.0598">
+        <td class="rk">11</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
+          <span class="nm"><span class="n1">Switzerland</span>
+          <span class="n2">CHF</span></span></span></td>
+        <td class="mc">$1,517,040,861,593</td>
+      </tr>
+      <tr data-cap="394028189109.14636">
+        <td class="rk">12</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇴</span>
+          <span class="nm"><span class="n1">Norway</span>
+          <span class="n2">NOK</span></span></span></td>
+        <td class="mc">$394,028,189,109</td>
+      </tr>
+      <tr data-cap="337005904288.37787">
+        <td class="rk">13</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇰</span>
+          <span class="nm"><span class="n1">Denmark</span>
+          <span class="n2">DKK</span></span></span></td>
+        <td class="mc">$337,005,904,288</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="mwbarnote">"Market cap" here means the total value of each currency
+  actually in existence (M2/M3/M4-class, whichever aggregate an economy's own central
+  bank considers its broadest published one) — the closest fiat equivalent to a
+  fixed-supply asset's market cap, and the same figure used in the "Broad money" bar on
+  the <a href="money-worldwide.html#how-this-board-is-made">Money Worldwide hub</a>'s
+  scarcity chart and the <a href="money-worldwide-money-supply.html">Money Supply
+  page</a>'s own totals row.</p>
 <div class="respond"><p><strong>Know a holder we're missing, or think a figure here is wrong?</strong> This board only gets closer to exhaustive with help — include a source if you have one, and it gets checked into the next update. <a href="ask.html?re=Money%20Worldwide%20%E2%80%94%20Exchange%20Rates">Tell Mr. Librarian →</a></p></div>
   <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
 

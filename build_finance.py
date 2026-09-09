@@ -5302,6 +5302,26 @@ table.mw-sort td.mw-nm{white-space:normal}
    this scale instead of a glow. */
 .mw-kicker-icon{display:inline-block;font-size:1.5em;line-height:1;vertical-align:-0.2em;
   filter:drop-shadow(0 0 3px __ACCENT__) drop-shadow(0 0 8px __ACCENT__)}
+
+/* The currency-market-cap ranking on the Exchange Rates page (see
+   _mw_marketcap_table) — Bitcoin's row gets a soft pulsing orange glow
+   instead of the flat tint board.html's own tr.btc uses elsewhere on this
+   site (Michael's call, 2026-09-08: "highlight the Bitcoin row in orange
+   glow"). Applied to each <td> rather than the <tr> itself — box-shadow on
+   a table-row with border-collapse:collapse renders unreliably across
+   browsers, but every browser paints box-shadow on a table-cell correctly,
+   and three glowing cells read as one glowing row. */
+.mw-btcrow td{background:linear-gradient(90deg,rgba(247,147,26,.16),rgba(247,147,26,.03));
+  animation:mwbtcglow 2.6s ease-in-out infinite}
+.mw-btcrow .rk,.mw-btcrow .n1{color:__ACCENT__;font-weight:700}
+@keyframes mwbtcglow{
+  0%,100%{box-shadow:inset 0 0 0 1px rgba(247,147,26,.28),0 0 10px rgba(247,147,26,.22)}
+  50%{box-shadow:inset 0 0 0 1px rgba(247,147,26,.55),0 0 20px rgba(247,147,26,.42)}
+}
+@media (prefers-reduced-motion:reduce){
+  .mw-btcrow td{animation:none;
+    box-shadow:inset 0 0 0 1px rgba(247,147,26,.4),0 0 16px rgba(247,147,26,.3)}
+}
 """
 
 # Generalised version of CEBE_JS's click-to-sort — that one only ever drove a
@@ -5412,6 +5432,83 @@ def _mw_fx_table(fx, currency_flags, btc_price_usd=None):
   <p class="mwbarnote">No totals row here on purpose — summing exchange rates
   across currencies has no meaningful unit; unlike every other table on this
   page, this one has nothing sensible to add up.{btc_note}</p>"""
+
+
+def _mw_marketcap_table(ms, bitcoin, fx):
+    """Ranks Bitcoin's total market cap against each currency's own "market
+    cap" — the total value of that currency actually in existence, i.e. the
+    same `broad_usd` figure (each economy's own broadest published
+    money-supply aggregate, in USD at today's exchange rate) the Money
+    Supply page's totals row and the hub's scarcity-lineup "Broad money" bar
+    already use. Deliberately scoped to the economies THAT figure actually
+    exists for — not every currency in the {fx} table above, most of which
+    have no live money-supply source at all (see that page's own honest "—"
+    cells) and would need a fabricated number to appear in a ranking here.
+    Built 2026-09-08 at Michael's request ("show where Bitcoin ranks in
+    market cap... list and rank all the other currencies the same way")."""
+    entries = []
+    for r in ms.get("rows", []):
+        cap = r.get("broad_usd")
+        if cap is None:
+            continue
+        entries.append({"flag": r["flag"], "name": r["area"], "code": r["currency"],
+                         "cap": cap * 1e9, "is_btc": False})
+    btc_cap = (bitcoin or {}).get("market_cap_usd")
+    if btc_cap:
+        entries.append({"flag": "₿", "name": "Bitcoin", "code": "BTC",
+                         "cap": btc_cap, "is_btc": True})
+    entries.sort(key=lambda e: e["cap"], reverse=True)
+    n = len(entries)
+    if n == 0:
+        return ""
+    btc_rank = next((i + 1 for i, e in enumerate(entries) if e["is_btc"]), None)
+    n_currencies = sum(1 for e in entries if not e["is_btc"])
+
+    rows = []
+    for i, e in enumerate(entries):
+        cls = ' class="mw-btcrow"' if e["is_btc"] else ""
+        rows.append(f"""      <tr{cls} data-cap="{e['cap']}">
+        <td class="rk">{i + 1}</td>
+        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">{esc(e['flag'])}</span>
+          <span class="nm"><span class="n1">{esc(e['name'])}</span>
+          <span class="n2">{esc(e['code'])}</span></span></span></td>
+        <td class="mc">{money_full(e['cap'])}</td>
+      </tr>""")
+    body = "\n".join(rows)
+
+    btc_line = (f' Bitcoin lands at <b class="mwlede-hl">#{btc_rank}</b> of {n} on this '
+                f'list today.' if btc_rank else "")
+    fx_n = len(fx.get("rates", {})) if fx else 0
+    return f"""  <h2 class="mwh2">Where Bitcoin ranks by market cap</h2>
+  <p class="mwsub">Each economy's own broadest published money-supply aggregate — the
+  total value of that currency actually in existence, at today's exchange rate — set
+  against Bitcoin's total market cap, ranked together.{btc_line} Scoped to the
+  {n_currencies} economies the <a href="money-worldwide-money-supply.html">Money Supply
+  page</a> has a real, live figure for today — most of the {fx_n} currencies in the
+  exchange-rate table above have no live money-supply source yet (see that page's own
+  "—" cells), so they're left off this ranking rather than shown with a fabricated
+  number. Click "Market cap" to re-sort.</p>
+  <div class="tw">
+  <table class="board mw-sort">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Currency</th>
+        <th data-sort="cap" title="Each economy's own broadest published money-supply aggregate, in US dollars at today's exchange rate — Bitcoin's own total market cap for comparison">Market cap</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+  </table>
+  </div>
+  <p class="mwbarnote">"Market cap" here means the total value of each currency
+  actually in existence (M2/M3/M4-class, whichever aggregate an economy's own central
+  bank considers its broadest published one) — the closest fiat equivalent to a
+  fixed-supply asset's market cap, and the same figure used in the "Broad money" bar on
+  the <a href="money-worldwide.html#how-this-board-is-made">Money Worldwide hub</a>'s
+  scarcity chart and the <a href="money-worldwide-money-supply.html">Money Supply
+  page</a>'s own totals row.</p>"""
 
 
 def _mw_money_supply_table(ms):
@@ -5869,8 +5966,11 @@ def build_money_worldwide_section(board, key):
                   f'dollar, {esc(fx.get("date") or "today")} — European Central Bank '
                   'reference rates, plus what each currency is worth in bitcoin, both '
                   'ways. Click any column to sort.</p>')
-        btc_price = (board.get("bitcoin") or {}).get("price_usd")
+        bitcoin = board.get("bitcoin")
+        btc_price = (bitcoin or {}).get("price_usd")
         table = _mw_fx_table(fx, _mw_load_currency_flags(), btc_price)
+        if ms:
+            table += "\n" + _mw_marketcap_table(ms, bitcoin, fx)
     elif key == "money-supply":
         ms_resolved, ms_total = _mw_ms_counts(ms or {})
         intro = (f'  <p class="mwsub">How much money actually exists, by aggregate — '
