@@ -777,36 +777,17 @@ tr.ch-dim td{opacity:0.55}
 
 /* the inline note editor */
 .v-editor{margin:8px 0 2px}
-.v-ta,.cn-ta{display:block;width:100%;box-sizing:border-box;background:var(--bg2);color:var(--text);
+.v-ta{display:block;width:100%;box-sizing:border-box;background:var(--bg2);color:var(--text);
   border:1px solid var(--border);border-radius:9px;padding:9px 11px;font-family:inherit;font-size:13.5px;
   line-height:1.6;resize:vertical}
-.v-ta:focus,.cn-ta:focus{outline:none;border-color:rgba(232,201,104,0.5)}
-.v-ed-row,.cn-row{display:flex;gap:8px;align-items:center;margin-top:7px}
+.v-ta:focus{outline:none;border-color:rgba(232,201,104,0.5)}
+.v-ed-row{display:flex;gap:8px;align-items:center;margin-top:7px}
 .v-btn{background:var(--bg2);color:var(--gold);border:1px solid rgba(232,201,104,0.4);border-radius:8px;
   padding:6px 13px;font-family:inherit;font-size:12.5px;font-weight:700;cursor:pointer}
 .v-btn:hover{background:rgba(232,201,104,0.12);color:#fff}
 .v-del{color:#f47272;border-color:rgba(244,114,114,0.4)}
 .v-del:hover{background:rgba(244,114,114,0.12)}
 .v-cancel{color:var(--muted);border-color:var(--border)}
-
-/* chapter-notes panel at the top of the reading area */
-.chap-notes{margin:0 0 14px;border:1px solid var(--border);border-radius:12px;background:var(--bg1);overflow:hidden}
-.cn-toggle{display:flex;align-items:center;gap:8px;width:100%;background:none;border:none;cursor:pointer;
-  color:var(--text);font-family:inherit;font-size:13px;font-weight:700;padding:12px 16px;text-align:left}
-.cn-toggle:hover{background:rgba(255,255,255,.03)}
-.cn-count{color:var(--muted);font-weight:600;font-size:12px}
-.cn-caret{margin-left:auto;color:var(--dim);transition:transform .15s}
-.chap-notes.open .cn-caret{transform:rotate(90deg)}
-.cn-body{padding:0 16px 16px}
-.cn-saved{color:var(--gold);font-size:12px;font-weight:700}
-.cn-spacer{margin-left:auto}
-.cn-share{color:var(--b);border-color:rgba(34,211,238,0.4)}
-.cn-share:hover{background:rgba(34,211,238,0.12)}
-.cn-backup{margin-top:11px;padding-top:11px;border-top:1px solid var(--border);color:var(--muted);
-  font-size:11.5px;line-height:1.6}
-.cn-link{background:none;border:none;cursor:pointer;color:var(--b);font-family:inherit;font-size:11.5px;
-  padding:0;text-decoration:underline}
-.cn-link:hover{color:#7ee5f5}
 
 /* copied/saved toast */
 .ml-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(12px);z-index:80;
@@ -841,16 +822,18 @@ tr.ch-dim td{opacity:0.55}
 .chapter-art .art-lic{font-size:11px;opacity:.6;margin-top:5px}
 @media (max-width:680px){.chapter-art figcaption{max-width:100%}}
 
-/* --- public note (X) -- see build.py's _note_nudge(). Same box the Ledger/
-   Librarian Abroad use for their own X-comment nudge, restyled onto this
-   site's --gold accent instead of each of theirs. -------------------------- */
-.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid var(--border);
-  border-radius:11px;background:var(--bg1)}
-.respond p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
-.respond strong{color:var(--text)}
-.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
-.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
-  font-weight:700;font-size:14px;letter-spacing:.2px;text-decoration:none;
+/* --- public note (X) -- see build.py's _note_nudge(). Two bare pills, no
+   box/paragraph (removed 2026-09-09, same day as the box shipped — Michael's
+   call, the box+prose "would scare people off from actually taking a note").
+   Sized ~20% down from the Ledger/Librarian Abroad's own version of this
+   button, which still uses the full-size .respond-btn in their own
+   stylesheets — this site's copy is the only one slimmed. -------------------- */
+.notebtns{max-width:760px;margin:24px auto 0;display:flex;gap:10px;flex-wrap:wrap}
+/* Chapter pages only: sits where the removed per-chapter "My notes" panel
+   used to, right above verse 1 (inside .panel) — tight margin, no auto-center. */
+.notebtns-top{margin:0 0 16px}
+.respond-btn{flex:1 1 144px;text-align:center;padding:10px 16px;border-radius:999px;
+  font-weight:700;font-size:11.5px;letter-spacing:.2px;text-decoration:none;
   transition:transform .12s ease,filter .12s ease}
 .respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
 .respond-btn:active{transform:translateY(0)}

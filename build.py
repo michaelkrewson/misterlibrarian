@@ -3552,34 +3552,48 @@ def inject_chapter_art(content, slug, lang="en"):
     return content[:i] + "\n" + block + content[i:]
 
 
-def _note_nudge(title, path):
-    """A per-page 'take a public note' box — X as the note/comment layer for a
+def _note_nudge(title, path, top=False):
+    """Two-button 'take a note' row — X as the note/comment layer for a
     chapter/dictionary/encyclopedia/atlas/route page (blogkit.x_note_url /
-    x_search_url), added 2026-09-09 (Michael's call). Lives ALONGSIDE, not in
-    place of, reader-notes.js's own private per-verse notes/highlights (that
-    system is local to the reader's own browser, no server, no account —
-    "your own margin"); this one is the opposite, public and hosted entirely
-    by X. Copy deliberately avoids reader-notes.js's own "Add note" wording
-    and 📝 icon so the two don't read as the same feature — see blogkit.py's
-    X-comment-system section header for the full reasoning shared with
-    build_travel.py/build_finance.py's near-identical `_x_respond_nudge`/
-    `_ask_nudge`.
+    x_search_url), added 2026-09-09 (Michael's call). No pitch copy and no
+    surrounding box (Michael's follow-up the same day — the paragraph+box
+    "would scare people off from actually taking a note"); just the two
+    links, styled as slim pills (.notebtns). "Public" is deliberately absent
+    from the button's own label for the same reason, even though the note
+    itself is public once posted. Still deliberately NOT reader-notes.js's
+    own "Add note" wording/icon — see blogkit.py's X-comment-system section
+    header for why the two coexist rather than read as the same feature.
 
     `path` is root-relative to SITE_URL (e.g. "genesis-1.html" or
-    "ency/pharaoh.html") — every caller already builds one of those."""
+    "ency/pharaoh.html") — every caller already builds one of those.
+
+    `top=True` (chapter pages only, via _insert_before_first_verse below)
+    swaps in the tight-margin .notebtns-top variant — this is the SAME slot
+    reader-notes.js's now-removed per-chapter "My notes" panel used to
+    occupy, right above verse 1."""
     full_url = f"{SITE_URL}/{path}"
     note = blogkit.x_note_url(title, full_url)
     search = blogkit.x_search_url(full_url)
-    return ('<div class="respond">'
-            '<p><strong>Take a public note.</strong> Jot a thought on this page and it '
-            'posts publicly on X, pinging me directly — or see what other readers '
-            'have already noted here.</p>'
-            '<div class="respond-actions">'
+    cls = "notebtns notebtns-top" if top else "notebtns"
+    return (f'<div class="{cls}">'
             f'<a class="respond-btn respond-btn-primary" href="{note}" target="_blank" '
-            'rel="noopener">🌐 Take a Public Note</a>'
+            'rel="noopener">✏️ Take a Note</a>'
             f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
             'rel="noopener">🔍 View Notes by Others</a>'
-            '</div></div>')
+            '</div>')
+
+
+def _insert_before_first_verse(content, html_block):
+    """Splice `html_block` in immediately before the first verse (the first
+    `<div class="vrs"`) — the exact spot reader-notes.js's removed chap-notes
+    box used to occupy via `insertBefore(box, verses[0])`. Falls back to
+    prepending if a chapter's content is somehow verse-less (shouldn't
+    happen for a real chapter, but never silently drop the block)."""
+    m = re.search(r'<div class="vrs"', content)
+    if not m:
+        return html_block + "\n" + content
+    i = m.start()
+    return content[:i] + html_block + "\n" + content[i:]
 
 
 def build_chapter_pages(chapters):
@@ -3594,6 +3608,8 @@ def build_chapter_pages(chapters):
         content = move_clips_into_verses(content)
         content = render_film_clips(content)
         content, has_es = inject_spanish(content, slug, es_panels)
+        content = _insert_before_first_verse(
+            content, _note_nudge(f"{book} {num}", chapter_filename(book, num), top=True))
         orig_lang = _source_lang(book, num)   # the Hide-original toggle label
         # A pre-generated narration MP3 (audio/<book>-N.mp3) is preferred when
         # present; otherwise the Listen button reads the page aloud in the
@@ -3629,7 +3645,6 @@ function toggleEsp(){
 <article class="chapter">
 {content}
 </article>
-{_note_nudge(f"{book} {num}", chapter_filename(book, num))}
 {nav_strip(book, num, 'bottom')}
 <script>
 function toggleHeb(){{

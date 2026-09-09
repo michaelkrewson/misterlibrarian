@@ -84,9 +84,6 @@
     saveAll(data);   // a failed write (quota / private mode) just retries next load
   })();
 
-  var CHAPTER_ID = "chapter";
-  function getChapter() { return (data[keyFor(CHAPTER_ID)] || {}).note || ""; }
-
   // ------------------------------------------------------------------ i18n ---
   // The Spanish edition sets <html lang="es">; every other page on either site
   // is lang="en" (share.js branches on this same one line). The Spanish site is
@@ -126,19 +123,7 @@
       cardAlt: function (r) { return r + " — shareable card"; },
       cardCap: function (r) { return r + " · save or share this card"; },
       shareBtn: "Share", download: "Download", close: "Close",
-      imageDownloaded: "Image downloaded",
-      myNotesFor: function (r) { return "My notes for " + r; },
-      chapterThought: "A thought on the whole chapter…",
-      saved: "Saved",
-      shareChapter: "🔗 Share chapter",
-      localOnly: "Your notes &amp; highlights live only in this browser. ",
-      exportBackup: "Export a backup", importBackup: "Import",
-      nHighlights: function (n) { return n + " highlight" + (n > 1 ? "s" : ""); },
-      nNotes: function (n) { return n + " note" + (n > 1 ? "s" : ""); },
-      chapterNote: "chapter note",
-      backupDownloaded: "Backup downloaded",
-      imported: function (n) { return "Imported " + n + " item" + (n === 1 ? "" : "s"); },
-      unreadable: "That file couldn't be read"
+      imageDownloaded: "Image downloaded"
     },
     es: {
       brand: "La Traducción Mister",
@@ -169,19 +154,7 @@
       cardAlt: function (r) { return r + " — tarjeta para compartir"; },
       cardCap: function (r) { return r + " · guarda o comparte esta tarjeta"; },
       shareBtn: "Compartir", download: "Descargar", close: "Cerrar",
-      imageDownloaded: "Imagen descargada",
-      myNotesFor: function (r) { return "Mis notas de " + r; },
-      chapterThought: "Una idea sobre todo el capítulo…",
-      saved: "Guardado",
-      shareChapter: "🔗 Compartir el capítulo",
-      localOnly: "Tus notas y resaltados viven solo en este navegador. ",
-      exportBackup: "Exportar una copia", importBackup: "Importar",
-      nHighlights: function (n) { return n + (n > 1 ? " resaltados" : " resaltado"); },
-      nNotes: function (n) { return n + (n > 1 ? " notas" : " nota"); },
-      chapterNote: "nota del capítulo",
-      backupDownloaded: "Copia de seguridad descargada",
-      imported: function (n) { return n + (n === 1 ? " elemento importado" : " elementos importados"); },
-      unreadable: "No se pudo leer ese archivo"
+      imageDownloaded: "Imagen descargada"
     }
   };
   var T = ES ? STRINGS.es : STRINGS.en;
@@ -647,110 +620,13 @@
     else refreshTrigger(vrs, verseId);
   });
 
-  // ---------------------------------------------------- chapter-note panel ---
-  // Insert a compact "my notes for this chapter" block at the top of the verse area.
-  (function chapterPanel() {
-    var first = verses[0];
-    var host = first.parentNode; // the .panel that wraps the verses
-    var box = document.createElement("div");
-    box.className = "chap-notes";
-    box.innerHTML =
-      '<button class="cn-toggle" type="button">' +
-        '<span class="cn-ic">📓</span> ' + T.myNotesFor(REF) +
-        '<span class="cn-count"></span><span class="cn-caret">›</span>' +
-      "</button>" +
-      '<div class="cn-body" hidden>' +
-        '<textarea class="cn-ta" rows="4" placeholder="' + T.chapterThought + '"></textarea>' +
-        '<div class="cn-row">' +
-          '<button class="v-btn cn-save">' + T.save + "</button>" +
-          '<span class="cn-saved"></span>' +
-          '<span class="cn-spacer"></span>' +
-          '<button class="v-btn cn-share">' + T.shareChapter + "</button>" +
-        "</div>" +
-        '<div class="cn-backup">' +
-          T.localOnly +
-          '<button class="cn-link cn-export">' + T.exportBackup + "</button> · " +
-          '<button class="cn-link cn-import">' + T.importBackup + "</button>" +
-          '<input type="file" class="cn-file" accept="application/json,.json" hidden>' +
-        "</div>" +
-      "</div>";
-    host.insertBefore(box, first);
-
-    var toggle = box.querySelector(".cn-toggle");
-    var bodyEl = box.querySelector(".cn-body");
-    var ta = box.querySelector(".cn-ta");
-    var savedEl = box.querySelector(".cn-saved");
-    ta.value = getChapter();
-
-    function updateCount() {
-      var hl = 0, notes = 0;
-      var prefix = KEY_PATH + "#";
-      Object.keys(data).forEach(function (k) {
-        if (k.indexOf(prefix) !== 0) return;
-        if (k === keyFor(CHAPTER_ID)) return;
-        var r = data[k];
-        if (r.color) hl++;
-        if (r.note) notes++;
-      });
-      var parts = [];
-      if (hl) parts.push(T.nHighlights(hl));
-      if (notes) parts.push(T.nNotes(notes));
-      if (getChapter()) parts.push(T.chapterNote);
-      var c = box.querySelector(".cn-count");
-      c.textContent = parts.length ? "  ·  " + parts.join(", ") : "";
-    }
-    updateCount();
-
-    toggle.addEventListener("click", function () {
-      var open = bodyEl.hasAttribute("hidden");
-      if (open) { bodyEl.removeAttribute("hidden"); box.classList.add("open"); ta.focus(); }
-      else { bodyEl.setAttribute("hidden", ""); box.classList.remove("open"); }
-    });
-    box.querySelector(".cn-save").addEventListener("click", function () {
-      set(CHAPTER_ID, { note: ta.value.trim() });
-      savedEl.textContent = T.saved; setTimeout(function () { savedEl.textContent = ""; }, 1500);
-      updateCount();
-    });
-    box.querySelector(".cn-share").addEventListener("click", function () {
-      var url = location.origin + PATH;
-      var title = REF + " — " + T.brand;
-      if (navigator.share) navigator.share({ title: title, url: url }).catch(function () {});
-      else copyText(url, T.chapterLinkCopied);
-    });
-
-    // ---- export / import (whole-site backup) ----
-    box.querySelector(".cn-export").addEventListener("click", function () {
-      var blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
-      var a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "mister-translation-notes.json";
-      document.body.appendChild(a); a.click(); a.remove();
-      setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
-      toast(T.backupDownloaded);
-    });
-    var fileInput = box.querySelector(".cn-file");
-    box.querySelector(".cn-import").addEventListener("click", function () { fileInput.click(); });
-    fileInput.addEventListener("change", function () {
-      var f = fileInput.files && fileInput.files[0];
-      if (!f) return;
-      var reader = new FileReader();
-      reader.onload = function () {
-        try {
-          var incoming = JSON.parse(reader.result);
-          if (!incoming || typeof incoming !== "object") throw 0;
-          var added = 0;
-          Object.keys(incoming).forEach(function (k) {
-            var inc = incoming[k], cur = data[k];
-            // merge: newer 'updated' wins; brand-new keys are added
-            if (!cur || (inc.updated || 0) >= (cur.updated || 0)) { data[k] = inc; added++; }
-          });
-          saveAll(data);
-          toast(T.imported(added));
-          setTimeout(function () { location.reload(); }, 700); // re-render with merged notes
-        } catch (e) { toast(T.unreadable); }
-      };
-      reader.readAsText(f);
-      fileInput.value = "";
-    });
-  })();
+  // The chapter-level "My notes for X" panel that used to live here (a
+  // collapsible textarea + share + export/import backup, inserted right
+  // before the first verse) was REMOVED 2026-09-09 (Michael's call) — that
+  // exact spot, above verse 1, is now the static "Take a Note" / "View
+  // Notes by Others" button row build.py renders (see _note_nudge() there).
+  // Per-verse notes/highlights above are untouched; only this chapter-wide
+  // panel is gone, and with it the site's only export/import backup for the
+  // whole notebook — a deliberate tradeoff, not an oversight (see CLAUDE.md's
+  // "Public notes (X)" section for the record).
 })();
