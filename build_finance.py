@@ -1601,12 +1601,14 @@ header{padding:46px 0 8px;text-align:center}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 
 /* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
-   (`.bmark-glow`) is a blurred circle drawn FIRST — behind the rock, the
-   tower and the ring itself — with a radius just inside the ring's own
-   r=21, so once blurred it visibly clears the ring and shows up on its
-   EXTERIOR, read as light escaping from behind a solid object rather than
-   a tint on top of it. The beam is clipped to a circle just inside the
-   ring (`#bmarkClip`, r=19) so it never crosses the ring line, and it
+   (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
+   itself) as an unfilled, wide-stroked circle — a RING, not a disc —
+   whose own radius already sits outside the crisp ring's r=21. Blurred,
+   that reads unambiguously as a nimbus surrounding the icon from outside
+   it: the icon's interior (rock/tower/lamp) stays on the plain dark
+   background, untouched by any inside glow, and the light only appears
+   past the ring's own edge. The beam is clipped to a circle just inside
+   the ring (`#bmarkClip`, r=19) so it never crosses the ring line, and it
    sweeps back and forth around the lamp — brightening at the middle of
    each pass, dimming at the two extremes — because a lighthouse only
    reads as "on" when it happens to be aimed at the viewer; the opacity
@@ -1617,9 +1619,9 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
    a one-way spin. No transform-box override — for an SVG child, a plain
    px transform-origin already resolves against the SVG's own viewBox
    coordinates in every current browser. Respects reduced-motion. */
-.bmark-glow{filter:blur(7px);transform-origin:25px 25px;
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
   animation:bmarkGlow 4.2s ease-in-out infinite}
-.bmark-beam{transform-origin:25px 13px;
+.bmark-beam{transform-origin:33px 21px;
   animation:bmarkSweep 4s ease-in-out infinite alternate}
 @keyframes bmarkGlow{
   0%,100%{opacity:.32;transform:scale(.92)}
@@ -1985,29 +1987,29 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 }
 """
 
-MARK_SVG = """<svg class="bmark" viewBox="0 0 50 50" fill="none" aria-hidden="true">
+MARK_SVG = """<svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
   <defs>
-    <radialGradient id="bmarkBeamGrad" cx="25" cy="13" r="19" gradientUnits="userSpaceOnUse">
+    <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="__ACCENT__" stop-opacity=".95"/>
       <stop offset="100%" stop-color="__ACCENT__" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="bmarkClip"><circle cx="25" cy="25" r="19"/></clipPath>
+    <clipPath id="bmarkClip"><circle cx="33" cy="33" r="19"/></clipPath>
   </defs>
-  <circle class="bmark-glow" cx="25" cy="25" r="16" fill="__ACCENT__"/>
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="__ACCENT__" stroke-width="5"/>
   <g clip-path="url(#bmarkClip)">
-    <ellipse cx="25" cy="38" rx="13" ry="5.5" fill="#374357"/>
-    <ellipse cx="15" cy="37" rx="6" ry="4.5" fill="#31404f"/>
-    <ellipse cx="35" cy="38" rx="6.5" ry="4.5" fill="#3a4a5e"/>
-    <polygon points="21,33 29,33 27,15 23,15" fill="#f2f5f9"/>
-    <rect x="21.5" y="27" width="7" height="2.2" fill="__ACCENT__" opacity=".85"/>
-    <polygon points="22,11 28,11 25,6.5" fill="#f2f5f9"/>
-    <rect x="22" y="11" width="6" height="4.2" rx=".7" fill="__ACCENT__"/>
-    <circle cx="25" cy="5.8" r=".9" fill="__ACCENT__"/>
+    <ellipse cx="33" cy="46" rx="13" ry="5.5" fill="#374357"/>
+    <ellipse cx="23" cy="45" rx="6" ry="4.5" fill="#31404f"/>
+    <ellipse cx="43" cy="46" rx="6.5" ry="4.5" fill="#3a4a5e"/>
+    <polygon points="29,41 37,41 35,23 31,23" fill="#f2f5f9"/>
+    <rect x="29.5" y="35" width="7" height="2.2" fill="__ACCENT__" opacity=".85"/>
+    <polygon points="30,19 36,19 33,14.5" fill="#f2f5f9"/>
+    <rect x="30" y="19" width="6" height="4.2" rx=".7" fill="__ACCENT__"/>
+    <circle cx="33" cy="13.8" r=".9" fill="__ACCENT__"/>
     <g class="bmark-beam">
-      <path d="M25 13 L43 7 L43 19 Z" fill="url(#bmarkBeamGrad)"/>
+      <path d="M33 21 L51 15 L51 27 Z" fill="url(#bmarkBeamGrad)"/>
     </g>
   </g>
-  <circle cx="25" cy="25" r="21" stroke="__ACCENT__" stroke-width="1.4" opacity=".6"/>
+  <circle cx="33" cy="33" r="21" stroke="__ACCENT__" stroke-width="1.4" opacity=".6"/>
 </svg>"""
 
 

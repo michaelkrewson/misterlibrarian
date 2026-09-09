@@ -38,12 +38,14 @@ header{padding:46px 0 8px;text-align:center}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 
 /* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
-   (`.bmark-glow`) is a blurred circle drawn FIRST — behind the rock, the
-   tower and the ring itself — with a radius just inside the ring's own
-   r=21, so once blurred it visibly clears the ring and shows up on its
-   EXTERIOR, read as light escaping from behind a solid object rather than
-   a tint on top of it. The beam is clipped to a circle just inside the
-   ring (`#bmarkClip`, r=19) so it never crosses the ring line, and it
+   (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
+   itself) as an unfilled, wide-stroked circle — a RING, not a disc —
+   whose own radius already sits outside the crisp ring's r=21. Blurred,
+   that reads unambiguously as a nimbus surrounding the icon from outside
+   it: the icon's interior (rock/tower/lamp) stays on the plain dark
+   background, untouched by any inside glow, and the light only appears
+   past the ring's own edge. The beam is clipped to a circle just inside
+   the ring (`#bmarkClip`, r=19) so it never crosses the ring line, and it
    sweeps back and forth around the lamp — brightening at the middle of
    each pass, dimming at the two extremes — because a lighthouse only
    reads as "on" when it happens to be aimed at the viewer; the opacity
@@ -54,9 +56,9 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
    a one-way spin. No transform-box override — for an SVG child, a plain
    px transform-origin already resolves against the SVG's own viewBox
    coordinates in every current browser. Respects reduced-motion. */
-.bmark-glow{filter:blur(7px);transform-origin:25px 25px;
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
   animation:bmarkGlow 4.2s ease-in-out infinite}
-.bmark-beam{transform-origin:25px 13px;
+.bmark-beam{transform-origin:33px 21px;
   animation:bmarkSweep 4s ease-in-out infinite alternate}
 @keyframes bmarkGlow{
   0%,100%{opacity:.32;transform:scale(.92)}
@@ -491,41 +493,41 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 </head>
 <body>
 <div class="wrap">
-  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 50 50" fill="none" aria-hidden="true">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
   <defs>
-    <radialGradient id="bmarkBeamGrad" cx="25" cy="13" r="19" gradientUnits="userSpaceOnUse">
+    <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#f7931a" stop-opacity=".95"/>
       <stop offset="100%" stop-color="#f7931a" stop-opacity="0"/>
     </radialGradient>
-    <clipPath id="bmarkClip"><circle cx="25" cy="25" r="19"/></clipPath>
+    <clipPath id="bmarkClip"><circle cx="33" cy="33" r="19"/></clipPath>
   </defs>
-  <circle class="bmark-glow" cx="25" cy="25" r="16" fill="#f7931a"/>
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#f7931a" stroke-width="5"/>
   <g clip-path="url(#bmarkClip)">
-    <ellipse cx="25" cy="38" rx="13" ry="5.5" fill="#374357"/>
-    <ellipse cx="15" cy="37" rx="6" ry="4.5" fill="#31404f"/>
-    <ellipse cx="35" cy="38" rx="6.5" ry="4.5" fill="#3a4a5e"/>
-    <polygon points="21,33 29,33 27,15 23,15" fill="#f2f5f9"/>
-    <rect x="21.5" y="27" width="7" height="2.2" fill="#f7931a" opacity=".85"/>
-    <polygon points="22,11 28,11 25,6.5" fill="#f2f5f9"/>
-    <rect x="22" y="11" width="6" height="4.2" rx=".7" fill="#f7931a"/>
-    <circle cx="25" cy="5.8" r=".9" fill="#f7931a"/>
+    <ellipse cx="33" cy="46" rx="13" ry="5.5" fill="#374357"/>
+    <ellipse cx="23" cy="45" rx="6" ry="4.5" fill="#31404f"/>
+    <ellipse cx="43" cy="46" rx="6.5" ry="4.5" fill="#3a4a5e"/>
+    <polygon points="29,41 37,41 35,23 31,23" fill="#f2f5f9"/>
+    <rect x="29.5" y="35" width="7" height="2.2" fill="#f7931a" opacity=".85"/>
+    <polygon points="30,19 36,19 33,14.5" fill="#f2f5f9"/>
+    <rect x="30" y="19" width="6" height="4.2" rx=".7" fill="#f7931a"/>
+    <circle cx="33" cy="13.8" r=".9" fill="#f7931a"/>
     <g class="bmark-beam">
-      <path d="M25 13 L43 7 L43 19 Z" fill="url(#bmarkBeamGrad)"/>
+      <path d="M33 21 L51 15 L51 27 Z" fill="url(#bmarkBeamGrad)"/>
     </g>
   </g>
-  <circle cx="25" cy="25" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
+  <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
 </svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><div class="hsm-searchgroup"><a class="headerask" href="ask.html">Ask</a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form></div><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html" class="on">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
   <h1 class="btitle">Bitcoin vs. Humanity</h1>
   <p class="bblede hblede">Every person alive, set against a currency that cannot print more of itself. The world’s population keeps growing; Bitcoin’s supply is capped at 21 million coins and most of it is already mined — so every birth divides a fixed pie a little thinner. Here is what that looks like in the actual numbers.</p>
   <blockquote class="hbquote">“It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy.”<cite>— Satoshi Nakamoto, January 2009, days after the first bitcoin transaction</cite></blockquote>
   <p class="hbstamp"><span class="hbdot" id="hbDot"></span><span id="hbLive">live</span><span><span class="hbsep">·</span> block 966,218 <span class="hbsep">·</span> population model anchored June 25, 2026</span></p>
-  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,246,051,600</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,081,884 BTC</div><div class="hbbox-s">95.63% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,533</span> <span class="hbmuted" id="hbSppUsd">($192.68)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
+  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,246,052,593</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,081,884 BTC</div><div class="hbbox-s">95.63% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,533</span> <span class="hbmuted" id="hbSppUsd">($192.68)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
   <p class="hbaside">Even that "issued" figure overstates what can ever be spent: <a href="https://blockchair.com/bitcoin/block/501726" rel="noopener" target="_blank">block 501,726</a>, mined December 30, 2017, has a coinbase transaction that claims 0 BTC instead of the 12.5 BTC subsidy then in effect — an entirely empty block, its reward destroyed by whatever mining bug produced it. That satoshi will never exist. The 21 million cap this page computes from the halving schedule is Bitcoin’s theoretical ceiling; the real one is smaller still, and no one can ever put it back.</p>
   <section class="hbc hbwide">
     <h2>Satoshis per person on Earth — over time</h2>
     <p class="hbnote">Computed from Bitcoin’s halving schedule and the population model above, month by month since 2020. Halvings marked; the last point is today’s real issued supply.</p>
     <svg viewBox="0 0 600 150" style="width:100%;height:auto;display:block" role="img" aria-label="Satoshis issued per person on Earth, 2020 to present"><line x1="56" y1="114.7" x2="584" y2="114.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="118.2" text-anchor="end" font-size="8" fill="#475569">225,500</text><line x1="56" y1="87.7" x2="584" y2="87.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="91.2" text-anchor="end" font-size="8" fill="#475569">231,000</text><line x1="56" y1="60.6" x2="584" y2="60.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="64.1" text-anchor="end" font-size="8" fill="#475569">236,500</text><line x1="56" y1="33.6" x2="584" y2="33.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="37.1" text-anchor="end" font-size="8" fill="#475569">242,000</text><line x1="84.3" y1="12" x2="84.3" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="84.3" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">3rd halving</text><line x1="395.4" y1="12" x2="395.4" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="395.4" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">4th halving</text><polyline points="56.0,104.0 62.7,101.3 69.0,98.8 75.7,96.1 82.1,93.5 88.8,90.9 95.3,88.3 102.0,85.6 108.7,83.0 115.2,80.4 121.9,77.7 128.4,75.2 135.1,72.9 141.8,72.0 147.8,71.2 154.5,70.3 161.0,69.4 167.7,68.6 174.2,67.7 180.9,66.8 187.6,65.9 194.1,65.1 200.8,64.2 207.2,63.4 213.9,62.5 220.6,61.6 226.7,60.8 233.4,59.9 239.9,59.1 246.6,58.2 253.0,57.4 259.7,56.5 266.4,55.7 272.9,54.8 279.6,54.0 286.1,53.1 292.8,52.3 299.5,51.4 305.6,50.6 312.3,49.8 318.7,48.9 325.4,48.1 331.9,47.3 338.6,46.4 345.3,45.6 351.8,44.7 358.5,43.9 365.0,43.1 371.7,42.2 378.4,41.4 384.6,40.6 391.3,39.7 397.8,38.9 404.5,38.1 411.0,37.3 417.7,36.4 424.4,35.6 430.9,34.8 437.6,33.9 444.0,33.1 450.7,32.5 457.4,32.6 463.5,32.6 470.2,32.6 476.7,32.6 483.4,32.6 489.9,32.6 496.6,32.6 503.3,32.6 509.7,32.6 516.4,32.7 522.9,32.7 529.6,32.7 536.3,32.7 542.4,32.7 549.1,32.7 555.5,32.7 562.2,32.7 568.7,32.7 575.4,32.8 584.0,26.0" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="584.0" cy="26.0" r="3.5" fill="#22d3ee"/><text x="577.0" y="20.0" text-anchor="end" font-size="9" fill="#22d3ee" font-weight="700">243,533</text><circle cx="397.8" cy="38.9" r="2.5" fill="none" stroke="#f7931a" stroke-width="1.5"/><text x="402.8" y="41.9" font-size="7.5" fill="rgba(247,147,26,.75)">peak 240,913</text><text x="56.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2020</text><text x="135.1" y="131" text-anchor="middle" font-size="8" fill="#475569">2021</text><text x="213.9" y="131" text-anchor="middle" font-size="8" fill="#475569">2022</text><text x="292.8" y="131" text-anchor="middle" font-size="8" fill="#475569">2023</text><text x="371.7" y="131" text-anchor="middle" font-size="8" fill="#475569">2024</text><text x="450.7" y="131" text-anchor="middle" font-size="8" fill="#475569">2025</text><text x="529.6" y="131" text-anchor="middle" font-size="8" fill="#475569">2026</text></svg>
-<div class="hbstrip"><div class="hbchip"><div class="hbchip-l">1D</div><div class="hbchip-v" style="color:#22d3ee">+1,370</div></div><div class="hbchip"><div class="hbchip-l">1M</div><div class="hbchip-v" style="color:#22d3ee">+1,368</div></div><div class="hbchip"><div class="hbchip-l">1Y</div><div class="hbchip-v" style="color:#22d3ee">+1,343</div></div><div class="hbchip"><div class="hbchip-l">3Y</div><div class="hbchip-v" style="color:#22d3ee">+3,916</div></div><div class="hbchip"><div class="hbchip-l">5Y</div><div class="hbchip-v" style="color:#22d3ee">+8,060</div></div></div>
+<div class="hbstrip"><div class="hbchip"><div class="hbchip-l">1D</div><div class="hbchip-v" style="color:#22d3ee">+1,370</div></div><div class="hbchip"><div class="hbchip-l">1M</div><div class="hbchip-v" style="color:#22d3ee">+1,368</div></div><div class="hbchip"><div class="hbchip-l">1Y</div><div class="hbchip-v" style="color:#22d3ee">+1,343</div></div><div class="hbchip"><div class="hbchip-l">3Y</div><div class="hbchip-v" style="color:#22d3ee">+3,915</div></div><div class="hbchip"><div class="hbchip-l">5Y</div><div class="hbchip-v" style="color:#22d3ee">+8,060</div></div></div>
   </section>  <section class="hbc hbwide hbfeature">
     <h2>If all the world’s wealth were Bitcoin</h2>
     <p class="hbnote">$471.000 T of global household wealth, divided by a fixed supply of 21 million coins — UBS Global Wealth Report 2025 · year-end 2024.</p>
