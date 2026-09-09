@@ -879,7 +879,6 @@ def header(active="", lang="en"):
     <div class="mobmenu-panel">
       <a href="{HOME_URL}"{cls('home')}>Home</a>
       <a href="toc.html"{cls('toc')}>Table of Contents</a>
-      <a href="reading.html"{cls('reading')}>📗 My Reading</a>
       <a href="library.html"{cls('library')}>📚 Library</a>
       <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
       <a href="about.html"{cls('about')}>About</a>
@@ -896,7 +895,6 @@ def header(active="", lang="en"):
   <nav class="topnav">
     <a href="{HOME_URL}"{cls('home')}>Home</a>
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
-    <a href="reading.html"{cls('reading')}>📗 My Reading</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="about.html"{cls('about')}>About</a>
@@ -918,7 +916,7 @@ FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="reading.html">My Reading</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 # Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only
@@ -1179,7 +1177,6 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
 {header(active, lang)}
 {_page_view_script(lang)}
 <script src="share.js?v={SHARE_JS_VER}" defer></script>
-<script src="reading.js"></script>
 <script src="player-clips.js?v={JS_VER}"></script>
 <script src="audio-reader.js?v={AUDIO_JS_VER}"></script>
 <script src="reader-notes.js?v={NOTES_JS_VER}" defer></script>
@@ -3640,7 +3637,6 @@ def build_chapter_pages(chapters):
                    f'<a class="tgl" href="{es_file}" title="Edición en español">\U0001F310 Español</a>')
                   if has_es else "")
         toggle = (f'<div class="togglebar">'
-                  f'<button class="tgl tgl-read" id="readtgl">Mark as read</button>'
                   f'<div class="tgl-group">'
                   f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
                   f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide {orig_lang}</button>'
@@ -3677,20 +3673,6 @@ function toggleHeb(){{
     document.getElementById("hebtgl").textContent = "Show {orig_lang}";
   }}
 }}catch(e){{}} }})();
-(function(){{
-  var slug = "{slug}";
-  var btn = document.getElementById("readtgl");
-  function render(){{
-    var isRead = !!mtlibGetRead()[slug];
-    btn.textContent = isRead ? "\\u2713 Read" : "Mark as read";
-    btn.classList.toggle("done", isRead);
-  }}
-  btn.addEventListener("click", function(){{
-    mtlibSetRead(slug, !mtlibGetRead()[slug]);
-    render();
-  }});
-  render();
-}})();
 {es_js}
 </script>"""
         src = "the Greek (the critical Greek New Testament)" if _is_nt(book) else "the Hebrew (Masoretic Text)"
@@ -3958,92 +3940,6 @@ def votd_entries(chapters):
     return entries
 
 
-def build_reading():
-    rows = "".join(
-        f'<label class="rrow" data-slug="{slug}" data-href="{chapter_filename(book, num)}">'
-        f'<input type="checkbox" class="rchk"/>'
-        f'<span class="rrow-n">{book} {num}</span>'
-        f'<span class="rrow-t">{teaser}</span></label>'
-        for slug, book, num, teaser in CHAPTERS)
-    body = f"""<h1 class="pagetitle">\U0001F4D7 My Reading</h1>
-<p class="lede">Track your own progress through the translation as it's published. Checked chapters are
-remembered <strong>only in this browser</strong> — a bit of localStorage, nothing ever sent anywhere, no
-account needed. Come back after a new chapter lands and pick up right where you left off. (You can also
-check a chapter off directly from its own page, next to the Hide Hebrew toggle.)</p>
-
-<div class="panel" id="continueBox" style="display:none"></div>
-
-<h2>Your progress</h2>
-<div class="panel">
-  <div class="progress-row">
-    <div class="progress-num"><span id="rDone">0</span> of {len(CHAPTERS)} read</div>
-    <div class="progress-label" id="rPct">0%</div>
-  </div>
-  <div class="bar"><div class="bar-fill" id="rBar" style="width:0%"></div></div>
-</div>
-
-<h2>Chapters</h2>
-<div class="panel chlist rlist">
-{rows}
-</div>
-
-<p class="muted" style="margin-top:14px;font-size:12px"><a href="#" id="resetLink">Reset my progress</a></p>
-
-<script>
-(function(){{
-  var rows = document.querySelectorAll(".rrow");
-  function render(){{
-    var read = mtlibGetRead();
-    var done = 0, firstUnread = null;
-    rows.forEach(function(r){{
-      var slug = r.dataset.slug;
-      var chk = r.querySelector(".rchk");
-      var isRead = !!read[slug];
-      chk.checked = isRead;
-      r.classList.toggle("rrow-done", isRead);
-      if (isRead) done++;
-      else if (!firstUnread) firstUnread = r;
-    }});
-    var total = rows.length;
-    var pct = total ? Math.round(done / total * 100) : 0;
-    document.getElementById("rDone").textContent = done;
-    document.getElementById("rPct").textContent = pct + "%";
-    document.getElementById("rBar").style.width = pct + "%";
-    var cbox = document.getElementById("continueBox");
-    if (firstUnread){{
-      var label = firstUnread.querySelector(".rrow-n").textContent;
-      cbox.style.display = "block";
-      cbox.innerHTML = '<div class="muted" style="margin-bottom:8px">Continue where you left off</div>' +
-        '<a class="btn" href="' + firstUnread.dataset.href + '">Read ' + label + ' \\u2192</a>';
-    }} else if (total) {{
-      cbox.style.display = "block";
-      cbox.innerHTML = '<div class="muted">You\\u2019re caught up \\u2014 every published chapter is ' +
-        'read. Come back when the next one lands.</div>';
-    }}
-  }}
-  rows.forEach(function(r){{
-    r.querySelector(".rchk").addEventListener("change", function(e){{
-      mtlibSetRead(r.dataset.slug, e.target.checked);
-      render();
-    }});
-  }});
-  document.getElementById("resetLink").addEventListener("click", function(e){{
-    e.preventDefault();
-    if (confirm("Reset your reading progress on this device?")){{
-      try{{ localStorage.removeItem("mtlib_read"); }}catch(err){{}}
-      render();
-    }}
-  }});
-  render();
-}})();
-</script>"""
-    out = page(f"My Reading — {SITE_NAME}", body, active="reading",
-               desc="Track your own progress through The MisterLibrarian Bible Project, chapter by "
-                    "chapter — kept privately in your browser, no account needed.", url="reading.html",
-               og_type="website")
-    open(os.path.join(OUT, "reading.html"), "w", encoding="utf-8").write(out)
-
-
 def build_index(chapters):
     # "Newest" = most-recently-published = the LAST panel in the source file
     # (PUBLISH_ORDER), NOT CHAPTERS[-1]: CHAPTERS is in canonical order, so its tail is
@@ -4052,9 +3948,6 @@ def build_index(chapters):
     pub = [_by_slug[s] for s in PUBLISH_ORDER if s in _by_slug] or list(CHAPTERS)
     latest = pub[-1]
     votd_json = json.dumps(votd_entries(chapters), ensure_ascii=False).replace("</", "<\\/")
-    ch_json = json.dumps(
-        [{"slug": slug, "label": f"{book} {num}", "href": chapter_filename(book, num)}
-         for slug, book, num, _ in CHAPTERS])
     body = f"""<section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
   <div class="hero-grid">
@@ -4097,16 +3990,12 @@ def build_index(chapters):
   <a class="votd-link" id="votdLink" href="#">Read it in context →</a>
 </div>
 
-<div class="panel" id="continueBox" style="display:none;margin-top:14px"></div>
-
 <h2>From the desk</h2>
 <div class="cardgrid">
   <a class="card" href="old-testament.html"><div class="card-t">\U0001F4DC The Old Testament</div>
   <div class="card-d">The Hebrew Scriptures: what the Tanakh is and how it's arranged, the Masoretic text and its scribal marks, the older witnesses, and why the Name is rendered Jehovah.</div></a>
   <a class="card" href="new-testament.html"><div class="card-t">\U0001F4DC The New Testament</div>
   <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
-  <a class="card" href="reading.html"><div class="card-t">\U0001F4D7 My Reading</div>
-  <div class="card-d">Track your own progress through the translation, chapter by chapter — kept privately in your browser.</div></a>
   <a class="card" href="ask.html"><div class="card-t">\U0001F4D6 Dear Mr. Librarian</div>
   <div class="card-d">Reader questions answered — was the Word "God" or "a god" (John 1:1 and the deity of Christ), and why the Book of Enoch isn't included.</div></a>
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
@@ -4115,7 +4004,6 @@ def build_index(chapters):
 
 <script>
 var MTLIB_VOTD = {votd_json};
-var MTLIB_CHAPTERS = {ch_json};
 (function(){{
   if (!MTLIB_VOTD.length) return;
   var now = new Date();
@@ -4125,24 +4013,6 @@ var MTLIB_CHAPTERS = {ch_json};
   document.getElementById("votdRef").textContent = "\\u2014 " + v.ref;
   document.getElementById("votdBlurb").textContent = v.blurb;
   document.getElementById("votdLink").href = v.href;
-}})();
-(function(){{
-  var read = mtlibGetRead();
-  var done = 0, firstUnread = null;
-  MTLIB_CHAPTERS.forEach(function(c){{
-    if (read[c.slug]) done++;
-    else if (!firstUnread) firstUnread = c;
-  }});
-  var cbox = document.getElementById("continueBox");
-  if (done === 0) return;
-  cbox.style.display = "block";
-  if (firstUnread){{
-    cbox.innerHTML = '<div class="muted" style="margin-bottom:8px">Continue where you left off</div>' +
-      '<a class="btn btn-2" href="' + firstUnread.href + '">Read ' + firstUnread.label + ' \\u2192</a>';
-  }} else {{
-    cbox.innerHTML = '<div class="muted">You\\u2019re caught up on every published chapter \\u2014 nice ' +
-      'work. Come back when the next one lands, or revisit your <a href="reading.html">reading progress</a>.</div>';
-  }}
 }})();
 </script>
 
@@ -4186,10 +4056,9 @@ def build_about():
   <p><strong>The name.</strong> A librarian's job is to catalogue, source, and compare — not to preach.
   That's the ethos here: every claim sourced, every alternative shown, disagreements between traditions
   presented rather than settled.</p>
-  <p><strong>Privacy.</strong> The <a href="{HOME_URL}">home page</a>'s Verse of the Day and the
-  <a href="reading.html">My Reading</a> progress tracker both run entirely in your own browser (a bit of
-  localStorage) — there's no login and no server-side record of what you've read; clear your browser
-  data and it's gone, same as any other private note to yourself. The one thing that <em>is</em> measured
+  <p><strong>Privacy.</strong> A chapter page's Hide&nbsp;Hebrew/Greek and Spanish-panel toggles are
+  remembered locally in your own browser (a bit of localStorage) — there's no login and no server-side
+  record of your preferences; clear your browser data and it's gone. The one thing that <em>is</em> measured
   is an anonymous, cookie-less visit count — no personal data, no cross-site tracking, nothing sold,
   no consent banner needed because none of that happens.{" That's it, live, right below." if GOATCOUNTER_CODE else ""}</p>
   {_stats_box()}
@@ -6832,7 +6701,6 @@ def main():
     _render_default_card(os.path.join(OUT, "img", "og-default.es.png"), "es")
     build_chapter_pages(chapters)
     build_toc()
-    build_reading()
     build_index(chapters)
     build_about()
     build_old_testament()

@@ -755,7 +755,7 @@ Editing any of these `.js` files does **nothing** for a real reader until you re
 
 ## Known gaps — not yet documented here
 
-`gen_audio.py`, `audio-reader.js`, `player-clips.js`, `reader-notes.js`, `reading.js`, and
+`gen_audio.py`, `audio-reader.js`, `player-clips.js`, `reader-notes.js`, and
 `share.js` all exist in this repo but haven't been reverse-engineered into this file yet —
 read them directly before touching that surface rather than assuming this doc covers it.
 The section above covers only their **language** contract, which is the part that has
