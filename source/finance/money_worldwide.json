@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 01:49 UTC",
+ "generated": "2026-09-09 01:54 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -99,10 +99,10 @@
     "area": "Switzerland",
     "flag": "🇨🇭",
     "currency": "CHF",
-    "source": "Swiss National Bank Data Portal — monetary aggregates M1/M2/M3 (CHF millions)",
-    "m0": null,
-    "m0_date": null,
-    "usd_m0": null,
+    "source": "Swiss National Bank Data Portal — monetary base M0 (banknotes in circulation + sight deposit accounts of domestic banks at the SNB, not seasonally adjusted, from the SNB's own \"snbmoba\" cube) + monetary aggregates M1/M2/M3 (CHF millions)",
+    "m0": 511.424,
+    "m0_date": "2026-07",
+    "usd_m0": 630.205047318612,
     "m1": 769.708,
     "m1_date": "2026-07",
     "usd_m1": 948.4769321766561,

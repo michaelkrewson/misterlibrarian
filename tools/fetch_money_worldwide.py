@@ -391,13 +391,22 @@ def _boc_valet_latest(series_name):
         return None, None
 
 
-def _snb_cube_values(cube_id, dims):
-    """{dim_code: (date_str "YYYY-MM", float millions-CHF)} for every
-    requested dimension in one SNB Data Portal "cube" — ONE http call
-    regardless of how many aggregates are requested, since the cube returns
-    every series in the cube at once. `fromDate` is a real filter the cube
-    API accepts; it's set a year back so the payload stays small without
-    risking missing the latest observation on a slow-reporting month."""
+def _snb_cube_values(cube_id, label_by_key, require_level=True):
+    """{key: (date_str "YYYY-MM", float millions-CHF)} for every requested
+    key in one SNB Data Portal "cube" — ONE http call regardless of how many
+    series are requested, since the cube returns everything in it at once.
+    `label_by_key` maps this board's own key ("m0"/"m1"/...) straight to the
+    cube's own human-readable series label — the cube has no short codes of
+    its own, only these labels, so the seed file names them directly rather
+    than through an indirection layer here. `require_level` filters out a
+    parallel "Change from the corresponding month of the previous year" set
+    that a cube with a Level/change dimension (the monetary-aggregates cube)
+    carries alongside the level under the same label — a single-dimension
+    cube (the monetary-base one) has no such parallel set and needs no
+    filter, else it (correctly) matches nothing and the key stays missing.
+    `fromDate` is a real filter the cube API accepts; it's set a year back
+    so the payload stays small without risking missing the latest
+    observation on a slow-reporting month."""
     from_date = "%d-01-01" % (datetime.now(timezone.utc).year - 1)
     d = _get_json(SNB_CUBE_URL % (cube_id, from_date), send_ua=False)
     if not isinstance(d, dict):
@@ -405,26 +414,17 @@ def _snb_cube_values(cube_id, dims):
     out = {}
     for ts in d.get("timeseries") or []:
         header = ts.get("header") or []
-        # "Level" series only — this cube also carries a parallel
-        # "Change from the corresponding month of the previous year" set
-        # under the same dim codes, which would silently overwrite the
-        # real level if not filtered out here.
-        if not any(h.get("dimItem") == "Level" for h in header):
+        if require_level and not any(h.get("dimItem") == "Level" for h in header):
             continue
         dim_item = next((h.get("dimItem") for h in header if h.get("dim") != "Level/change"), None)
         vals = ts.get("values") or []
         if not vals:
             continue
         last = vals[-1]
-        for dim in dims:
-            # the cube labels dimensions by their human-readable text, not
-            # the short code seed.json uses (GM1/GM2/GM3) — map the codes
-            # this board cares about to the cube's own labels once here.
-            label = {"GM1": "Monetary aggregate M1", "GM2": "Monetary aggregate M2",
-                      "GM3": "Monetary aggregate M3"}.get(dim)
-            if label and dim_item == label:
+        for key, label in label_by_key.items():
+            if dim_item == label:
                 try:
-                    out[dim] = (last.get("date"), float(last.get("value")))
+                    out[key] = (last.get("date"), float(last.get("value")))
                 except (TypeError, ValueError):
                     pass
     return out
@@ -530,10 +530,14 @@ def _fetch_generic_money_row(econ, fx):
             if ok:
                 vals[key] = (total / 1000.0, date_s)   # millions -> billions
     elif provider == "snb_cube":
-        cube_vals = _snb_cube_values(econ["cube"], list(econ.get("dims", {}).values()))
-        for key, dim in econ.get("dims", {}).items():
-            d, v = cube_vals.get(dim, (None, None))
-            if v is not None:
+        for key, (d, v) in _snb_cube_values(econ["cube"], econ.get("dims", {})).items():
+            vals[key] = (v / 1000.0, d)   # millions -> billions
+        # m0 (monetary base) is a genuinely SEPARATE SNB cube from M1/M2/M3
+        # (its own single-dimension "Overview" shape, no Level/change split
+        # to filter) — same table_m0/table_m123 split ssb_pxweb uses below.
+        if econ.get("cube_m0") and econ.get("dims_m0"):
+            for key, (d, v) in _snb_cube_values(econ["cube_m0"], econ["dims_m0"],
+                                                 require_level=False).items():
                 vals[key] = (v / 1000.0, d)   # millions -> billions
     elif provider == "bcb_sgs":
         for key, series in econ.get("series", {}).items():
