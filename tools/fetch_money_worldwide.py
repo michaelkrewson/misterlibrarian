@@ -175,6 +175,7 @@ import argparse
 import io
 import json
 import os
+import re
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -371,6 +372,8 @@ BOE_IADB_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshow
                 "?csv.x=yes&Datefrom=01/Jan/%d&Dateto=now&SeriesCodes=%s"
                 "&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N")
 SSB_PXWEB_URL = "https://data.ssb.no/api/v0/en/table/%s"
+RBI_WSS_SECTION_URL = "https://rbi.org.in/Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=%d"
+RBI_WSS_VIEW_URL = "https://rbi.org.in/Scripts/WSSView.aspx?Id=%d"
 
 
 def _boc_valet_latest(series_name):
@@ -498,6 +501,90 @@ def _ssb_pxweb_latest(table_id, content_code):
         return None, None
 
 
+def _rbi_wss_latest_view_id(param1):
+    """The highest (= most recent) WSSView.aspx `Id` linked from one of the
+    Reserve Bank of India's Weekly Statistical Supplement permanent
+    section-listing pages (PARAM1=8 is "Reserve Money: Components and
+    Sources", PARAM1=7 is "Money Stock: Components and Sources") — these
+    listing URLs never change, so finding the CURRENT release is a
+    two-step crawl-then-fetch, the same shape ssb_pxweb already uses to
+    find Norway's latest period. Confirmed by hand: unlike RBI's DBIE data
+    portal (a JS single-page app with no keyless API found), these WSS
+    pages are genuinely server-rendered plain HTML with a real data table
+    — no browser needed, just a real User-Agent (RBI blocks Python's
+    default one, the same `_boe_iadb_latest` quirk)."""
+    text = _get_text(RBI_WSS_SECTION_URL % param1, send_ua=True)
+    if not text:
+        return None
+    ids = [int(m) for m in re.findall(r"WSSView\.aspx\?Id=(\d+)", text)]
+    return max(ids) if ids else None
+
+
+def _rbi_wss_rows(html):
+    """[[cell, cell, ...], ...] for every non-empty <tr> on one RBI WSS
+    release page, tags stripped and blank/&nbsp;-only cells dropped."""
+    rows = []
+    for tr in re.findall(r"<tr>(.*?)</tr>", html, flags=re.S):
+        cells = re.findall(r"<td[^>]*>(.*?)</td>", tr, flags=re.S)
+        cells = [re.sub(r"<[^>]+>", "", c).replace("&nbsp;", "").strip() for c in cells]
+        cells = [c for c in cells if c]
+        if cells:
+            rows.append(cells)
+    return rows
+
+
+_RBI_WSS_MONTH_DAY_RE = re.compile(r"^[A-Za-z]{3}\.\s*\d{1,2}$")
+
+
+def _rbi_wss_asof_date(rows):
+    """The table's own SECOND "Outstanding as on" column date (e.g.
+    "Aug 15, 2026") — the actual data reference date, not the release's
+    own "Date : Sep 04, 2026" header, which is when the release was
+    PUBLISHED and lags the underlying fortnight by design (a weekly WSS
+    release carrying fortnightly reserve-money/money-stock data). Reads
+    the table's own two header rows: a lone 4-digit year, followed later
+    by a "Mon. DD" pair whose SECOND value is the latest column — the
+    first is always the start-of-fiscal-year reference point."""
+    year = None
+    for cells in rows:
+        if re.match(r"^\d{4}$", cells[0]):
+            year = cells[0]
+        elif (year and len(cells) >= 2
+              and _RBI_WSS_MONTH_DAY_RE.match(cells[0])
+              and _RBI_WSS_MONTH_DAY_RE.match(cells[1])):
+            return "%s, %s" % (cells[1].replace(".", ""), year)
+    return None
+
+
+def _rbi_wss_items(view_id, prefixes):
+    """{prefix: (date_str, float crore)} for every requested item-row
+    prefix in ONE RBI WSS release — one http call regardless of how many
+    rows are requested. A row is matched by its "Item" cell STARTING WITH
+    the given prefix (e.g. "Reserve Money", "M3", "1.1", "1.2", "1.4")
+    rather than an exact string — some labels carry HTML-entity curly
+    quotes ('Other') that would make an exact match fragile, while the
+    row's own numeric sub-item code or a short unambiguous label prefix
+    is stable. Reads the SECOND "Outstanding as on" column — see
+    `_rbi_wss_asof_date` for why that's not the same as the release date."""
+    html = _get_text(RBI_WSS_VIEW_URL % view_id, send_ua=True)
+    if not html:
+        return {}
+    rows = _rbi_wss_rows(html)
+    date_s = _rbi_wss_asof_date(rows)
+    out = {}
+    for cells in rows:
+        if len(cells) < 3:
+            continue
+        label = cells[0]
+        for prefix in prefixes:
+            if prefix not in out and label.startswith(prefix):
+                try:
+                    out[prefix] = (date_s, float(cells[2].replace(",", "")))
+                except ValueError:
+                    pass
+    return out
+
+
 def _sum_series(fetch_one, codes):
     """(total, date_str) summing fetch_one(code) over every code in codes,
     or (None, None) if any single one fails to resolve — used where a
@@ -582,6 +669,28 @@ def _fetch_generic_money_row(econ, fx):
         for key, v in (econ.get("values") or {}).items():
             if v is not None:
                 vals[key] = (v, as_of)
+    elif provider == "rbi_wss":
+        # M0 and M3 are direct single rows; M1 has no row of its own in
+        # India's WSS release (unlike every other provider's M1) — it's
+        # summed from that same table's own component rows (RBI's own
+        # textbook M1 definition: currency with the public + demand
+        # deposits with banks + 'other' deposits with the RBI). No M2 —
+        # that needs post office savings data RBI doesn't publish here.
+        m0_id = _rbi_wss_latest_view_id(econ["section_m0"])
+        if m0_id:
+            d, v = _rbi_wss_items(m0_id, [econ["item_m0"]]).get(econ["item_m0"], (None, None))
+            if v is not None:
+                vals["m0"] = (v / 100.0, d)   # crore -> billions
+        m13_id = _rbi_wss_latest_view_id(econ["section_m13"])
+        if m13_id:
+            m1_prefixes = econ.get("items_m1", [])
+            items = _rbi_wss_items(m13_id, [econ["item_m3"]] + m1_prefixes)
+            d3, v3 = items.get(econ["item_m3"], (None, None))
+            if v3 is not None:
+                vals["m3"] = (v3 / 100.0, d3)
+            if m1_prefixes and all(p in items for p in m1_prefixes):
+                total = sum(items[p][1] for p in m1_prefixes)
+                vals["m1"] = (total / 100.0, items[m1_prefixes[0]][0])
     else:
         print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
               file=sys.stderr)
