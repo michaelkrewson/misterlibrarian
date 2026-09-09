@@ -26,22 +26,28 @@ body{margin:0;background:#0a0e16;color:#e9edf5;
   -webkit-font-smoothing:antialiased;min-height:100vh}
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
   background:
-    radial-gradient(55% 40% at 14% 0%,rgba(232,201,104,.08),transparent 60%),
-    radial-gradient(55% 40% at 86% 8%,rgba(94,179,214,.09),transparent 60%),
-    radial-gradient(60% 45% at 50% 100%,rgba(232,134,92,.07),transparent 60%)}
+    radial-gradient(48% 36% at 18% 2%,rgba(247,147,26,.16),transparent 62%),
+    radial-gradient(48% 36% at 50% 4%,rgba(232,201,104,.15),transparent 62%),
+    radial-gradient(48% 36% at 82% 2%,rgba(94,179,214,.14),transparent 62%),
+    radial-gradient(60% 45% at 50% 100%,rgba(232,134,92,.08),transparent 60%)}
 .wrap{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 22px 64px}
 
 header.hub-head{padding:64px 0 8px;text-align:center}
 .mark{width:52px;height:52px;display:block;margin:0 auto 18px}
-h1{margin:0 0 10px;font-size:36px;font-weight:400;letter-spacing:.01em}
+h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
+  background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
+  -webkit-background-clip:text;background-clip:text;color:#e8c968;
+  -webkit-text-fill-color:transparent}
 .tag{color:#aab4c6;font-size:16.5px;max-width:520px;margin:0 auto 8px}
 
 .cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:38px 0 8px}
 @media (max-width:760px){.cardgrid{grid-template-columns:1fr}}
 
 .hcard{position:relative;display:flex;flex-direction:column;gap:12px;padding:26px 24px 24px;
-  border-radius:16px;text-decoration:none;color:inherit;
-  background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+  border-radius:16px;text-decoration:none;color:inherit;overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 18% -25%,var(--wash),transparent 58%),
+    linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
   border:1px solid rgba(255,255,255,.09);
   transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
 .hcard:hover,.hcard:focus-visible{transform:translateY(-4px);border-color:var(--accent);
@@ -49,17 +55,18 @@ h1{margin:0 0 10px;font-size:36px;font-weight:400;letter-spacing:.01em}
 .hcard:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.hcard{transition:none}.hcard:hover{transform:none}}
 
-.hcard .badge{width:56px;height:56px;flex:0 0 56px}
+.hcard .badge{width:56px;height:56px;flex:0 0 56px;position:relative;z-index:1}
 .hcard .eyebrow{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600}
-.hcard h2{margin:2px 0 0;font-size:22px;font-weight:400;color:#f3f5fa}
-.hcard p{margin:0;color:#b7bfcf;font-size:14.5px;line-height:1.55;flex:1}
+  font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600;
+  position:relative;z-index:1}
+.hcard h2{margin:2px 0 0;font-size:23px;font-weight:400;color:var(--accent);position:relative;z-index:1}
+.hcard p{margin:0;color:#c3cadb;font-size:14.5px;line-height:1.55;flex:1;position:relative;z-index:1}
 .hcard .go{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  font-size:13px;color:var(--accent);font-weight:600}
+  font-size:13px;color:var(--accent);font-weight:600;position:relative;z-index:1}
 
-.c-finance{--accent:#f7931a;--accent-glow:rgba(247,147,26,.35)}
-.c-travel{--accent:#e8865c;--accent-glow:rgba(232,134,92,.35)}
-.c-religion{--accent:#e8c968;--accent-glow:rgba(232,201,104,.35)}
+.c-finance{--accent:#f7931a;--accent-glow:rgba(247,147,26,.35);--wash:rgba(247,147,26,.22)}
+.c-travel{--accent:#e8865c;--accent-glow:rgba(232,134,92,.35);--wash:rgba(232,134,92,.22)}
+.c-religion{--accent:#e8c968;--accent-glow:rgba(232,201,104,.35);--wash:rgba(232,201,104,.22)}
 
 footer.hub-foot{text-align:center;margin-top:56px;color:#7b8496;font-size:13px;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
