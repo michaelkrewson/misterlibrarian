@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 02:28 UTC",
+ "generated": "2026-09-09 02:37 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-08",
@@ -213,20 +213,20 @@
     "area": "Japan",
     "flag": "🇯🇵",
     "currency": "JPY",
-    "source": "FRED's IMF/OECD-mirrored series (MYAGM2JPM189S, MABMM301JPM189S) stopped updating in 2023-11. The Bank of Japan's own Time-Series Data Search API is real and genuinely keyless (stat-search.boj.or.jp/api/v1/getDataCode, its own manual says \"available for use by anyone\") — but its series-code scheme uses internal apostrophe-delimited mnemonics (e.g. \"BS01'MABJMTA\") rather than a guessable ISO-country template, and the exact M1/M2/M3 codes could not be pinned down within reasonable research effort. A real candidate for a future dated follow-up, not a dead end.",
-    "m0": null,
-    "m0_date": null,
-    "usd_m0": null,
-    "m1": null,
-    "m1_date": null,
-    "usd_m1": null,
-    "m2": null,
-    "m2_date": null,
-    "usd_m2": null,
-    "m3": null,
-    "m3_date": null,
-    "usd_m3": null,
-    "broad_usd": null
+    "source": "Bank of Japan — \"Main Time-series Statistics\" CSV exports (stat-search.boj.or.jp/ssi/mtshtml/csv/), not the REST API (real and keyless, but its exact M1/M2/M3/monetary-base FAME mnemonics couldn't be pinned down from its own documentation — these codes were instead found by hand from the Monetary Base and Money Stock pages' own CSV downloads, whose \"Series code\" header row names them itself). md01 = Monetary Base (M0, Average Amounts Outstanding); md02 = Money Stock M1/M2/M3 (same measure). 100 million yen.",
+    "m0": 543007.0,
+    "m0_date": "2026/08",
+    "usd_m0": 3519.1639662994166,
+    "m1": 1087467.8,
+    "m1_date": "2026/08",
+    "usd_m1": 7047.7498379779645,
+    "m2": 1296389.5,
+    "m2_date": "2026/08",
+    "usd_m2": 8401.746597537265,
+    "m3": 1639987.8,
+    "m3_date": "2026/08",
+    "usd_m3": 10628.566429034348,
+    "broad_usd": 10628.566429034348
    },
    {
     "area": "South Korea",
@@ -343,8 +343,8 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 112191.12393073726,
-  "n_resolved": 9,
+  "total_broad_usd_b": 122819.6903597716,
+  "n_resolved": 10,
   "n_total": 16
  },
  "reserves_fx": {
@@ -1887,9 +1887,9 @@
   "btc_rank": 11,
   "lineup": [
    {
-    "label": "Broad money — 9 economies with live data",
-    "usd": 112191123930737.27,
-    "note": "The 9 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 10 economies with live data",
+    "usd": 122819690359771.6,
+    "note": "The 10 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",

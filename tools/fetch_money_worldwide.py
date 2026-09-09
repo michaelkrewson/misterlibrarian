@@ -172,6 +172,7 @@ entries — this is the one-line summary of each dead end)
 from __future__ import annotations
 
 import argparse
+import csv
 import io
 import json
 import os
@@ -374,6 +375,7 @@ BOE_IADB_URL = ("https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshow
 SSB_PXWEB_URL = "https://data.ssb.no/api/v0/en/table/%s"
 RBI_WSS_SECTION_URL = "https://rbi.org.in/Scripts/WSSViewDetail.aspx?TYPE=Section&PARAM1=%d"
 RBI_WSS_VIEW_URL = "https://rbi.org.in/Scripts/WSSView.aspx?Id=%d"
+BOJ_CSV_URL = "https://www.stat-search.boj.or.jp/ssi/mtshtml/csv/%s.csv"
 
 
 def _boc_valet_latest(series_name):
@@ -585,6 +587,44 @@ def _rbi_wss_items(view_id, prefixes):
     return out
 
 
+def _boj_csv_values(table, codes_by_key):
+    """{key: (date_str "YYYY/MM", float 100-million-yen)} for every
+    requested FAME series code in one Bank of Japan "Main Time-series
+    Statistics" CSV export (e.g. table "md02_m_1_en" carries Money
+    Stock's M1/M2/M3 as separate columns of the SAME file) — one http
+    call regardless of how many keys share a table. Genuinely keyless and
+    a real CSV (not the REST API, whose exact M1/M2/M3/monetary-base FAME
+    mnemonics could not be pinned down from its own docs — but this
+    export names its OWN codes in a "Series code" header row, found by
+    hand from the Money Stock/Monetary Base pages themselves). The file
+    has metadata rows before the data (title, series names, codes, units,
+    start/end dates) — `csv.reader` handles its quoting; the code row and
+    the last real "YYYY/MM" data row are found by their own first cell."""
+    text = _get_text(BOJ_CSV_URL % table, send_ua=True)
+    if not text:
+        return {}
+    rows = list(csv.reader(io.StringIO(text)))
+    code_row = next((r for r in rows if r and r[0] == "Series code"), None)
+    if not code_row:
+        return {}
+    col_of = {code: i for i, code in enumerate(code_row)}
+    data_rows = [r for r in rows if r and re.match(r"^\d{4}/\d{2}$", r[0])]
+    if not data_rows:
+        return {}
+    last = data_rows[-1]
+    date_s = last[0]
+    out = {}
+    for key, code in codes_by_key.items():
+        idx = col_of.get(code)
+        if idx is None or idx >= len(last):
+            continue
+        try:
+            out[key] = (date_s, float(last[idx]))
+        except ValueError:
+            pass
+    return out
+
+
 def _sum_series(fetch_one, codes):
     """(total, date_str) summing fetch_one(code) over every code in codes,
     or (None, None) if any single one fails to resolve — used where a
@@ -691,6 +731,16 @@ def _fetch_generic_money_row(econ, fx):
             if m1_prefixes and all(p in items for p in m1_prefixes):
                 total = sum(items[p][1] for p in m1_prefixes)
                 vals["m1"] = (total / 100.0, items[m1_prefixes[0]][0])
+    elif provider == "boj_csv":
+        # group requested keys by which CSV table they need, so a table
+        # shared by more than one key (Japan's Money Stock file carries
+        # m1/m2/m3 as three columns of ONE csv) is fetched exactly once.
+        by_table = {}
+        for key, spec in econ.get("tables", {}).items():
+            by_table.setdefault(spec["table"], {})[key] = spec["code"]
+        for table, codes_by_key in by_table.items():
+            for key, (d, v) in _boj_csv_values(table, codes_by_key).items():
+                vals[key] = (v / 10.0, d)   # 100-million-yen -> billions of yen
     else:
         print("  ! %s money supply — unknown provider %r" % (econ["area"], provider),
               file=sys.stderr)
