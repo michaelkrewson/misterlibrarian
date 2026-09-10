@@ -647,9 +647,8 @@ def build_about():
       is a reason to look, not an answer. Where the best available evidence is weak, the
       entry says so rather than rounding it up.</li>
       <li><b>Numbers, not adjectives.</b> How many people, how big the effect, over how long,
-      compared with what. "Significantly reduces" tells you nothing; "cut recurrence from
-      about half to about a third over five years, in roughly two hundred people" tells you
-      something.</li>
+      compared with what. "Significantly reduces" tells you nothing; "cut five-year recurrence
+      from 38% to 20%, in a trial of 120 men" tells you something.</li>
       <li><b>"What the evidence says" is kept separate from "what I'd do."</b> The second is
       one person's judgment about one person's circumstances, and it is labelled as such.</li>
       <li><b>Sources at the end of every entry</b>, linked, so the reading can be checked and

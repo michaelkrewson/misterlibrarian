@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>What a Kidney Stone Actually Is, and Why It Forms — The Librarian&#x27;s Regimen</title>
+<meta name="description" content="What a kidney stone is made of, how it forms in the kidney, and why some people make them — the first of a series, read from the studies."/>
+<link rel="canonical" href="https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Regimen" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Regimen"/>
+<meta property="og:title" content="What a Kidney Stone Actually Is, and Why It Forms"/>
+<meta property="og:description" content="What a kidney stone is made of, how it forms in the kidney, and why some people make them — the first of a series, read from the studies."/>
+<meta property="og:url" content="https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus a warm accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(63,210,168,.13),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: a mortar and pestle, ringed by a circle — the apothecary's
+   sign, the one object that covers food, medicine and the preparing of both.
+   Same construction as the Ledger's lighthouse: the halo (`.bmark-glow`) is a
+   blurred RING drawn behind everything, radius already outside the crisp
+   ring's r=21, so the light appears past the icon's edge and never inside it.
+   The pestle rocks gently about its own tip inside the bowl
+   (`animation-direction:alternate` retraces the same arc rather than
+   snapping); the bowl is drawn OVER the pestle's lower half so the tip reads
+   as inside the mortar. No transform-box override — for an SVG child a plain
+   px transform-origin resolves against the viewBox. Respects reduced-motion. */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-pestle{transform-origin:31px 41px;
+  animation:bmarkGrind 2.6s ease-in-out infinite alternate}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkGrind{
+  0%{transform:rotate(-7deg)}
+  100%{transform:rotate(9deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-pestle{animation:none}
+}
+h1 .em{color:#3fd2a8;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#3fd2a8}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#3fd2a8;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#3fd2a8;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#3fd2a8}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#3fd2a8;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#3fd2a8;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #3fd2a8;color:#3fd2a8}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#3fd2a8}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits a little above centre: on the Tacuinum page the two
+   figures' heads and the basket of cabbages are in the upper-middle of the
+   frame (the basket's top edge at ~15% of the height, the two faces at ~36%),
+   and the library stamp is at the bottom — the band should show the former
+   and never the latter. Measured against the 300px band on a 1000px-wide
+   image: 26% shows the basket and both faces. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 26%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── nav + cross-publication links ───────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#3fd2a8}
+
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring). */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#3fd2a8}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #3fd2a8;outline-offset:1px}
+
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end;margin-left:auto}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#3fd2a8;
+  box-shadow:0 0 0 3px rgba(63,210,168,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(63,210,168,.10)}
+}
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{order:1;flex-wrap:wrap}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#3fd2a8;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#3fd2a8;font-style:italic}
+a{color:#3fd2a8}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #3fd2a8;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* The "what the evidence says" box — the entry's answer, set apart. */
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #3fd2a8;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+/* The "what I'd do" box — one person's judgment, labelled as such and kept
+   visibly distinct from the evidence box above it (amber, not the accent). */
+.entry .mine{margin:24px 0 0;padding:18px 24px;border-left:3px solid #e2c489;
+  border-radius:0 10px 10px 0;background:#12110b}
+.entry .mine p{margin:0 0 12px}
+.entry .mine p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+/* Sources: every entry ends with one. Smaller and quieter than the prose, but
+   real links — the whole point is that they can be followed. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.mednote{margin:26px 0 0;padding:12px 16px;border:1px dashed #22384a;border-radius:9px;
+  color:#7f8fa6;font-size:13.5px;line-height:1.6;font-style:italic;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.mednote a{color:#8b9ab0}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#3fd2a8;color:#3fd2a8}
+.chip.on{background:#3fd2a8;border-color:#3fd2a8;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#3fd2a8;color:#3fd2a8}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#3fd2a8;color:#3fd2a8}
+.viewbtn.on{background:#3fd2a8;border-color:#3fd2a8;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#3fd2a8;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#3fd2a8" stroke-width="5"/>
+  <g class="bmark-pestle">
+    <g transform="rotate(30 31 41)">
+      <rect x="28.7" y="18" width="4.6" height="24" rx="2.3" fill="#f2f5f9"/>
+      <circle cx="31" cy="18.2" r="3.1" fill="#3fd2a8"/>
+    </g>
+  </g>
+  <path d="M20 36 Q20 49 33 49 Q46 49 46 36 Z" fill="#f2f5f9"/>
+  <rect x="24" y="41.2" width="18" height="2.2" fill="#3fd2a8" opacity=".85"/>
+  <rect x="18.2" y="33.6" width="29.6" height="3.8" rx="1.9" fill="#f2f5f9"/>
+  <rect x="27" y="48.4" width="12" height="3" rx="1.3" fill="#d9e0ea"/>
+  <circle cx="33" cy="33" r="21" stroke="#3fd2a8" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Regimen</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="about.html">About</a></nav></div></header>
+  
+  <article class="entry">
+    <h1 class="etitle">What a Kidney Stone Actually Is, and Why It Forms</h1>
+    <p class="edate">SEPTEMBER 10, 2026</p>
+    <figure class="hero"><img src="img/brodel-kidney-stones-1909.jpg" alt="A 1909 colour plate of thirty kidney and bladder stones, most cut in half to show concentric growth rings like a tree&#x27;s; one at the lower left is branched like a piece of coral" width="949" height="1400" loading="eager"/><figcaption>Kidney and bladder stones, sectioned — the frontispiece of Kelly &amp; Burnam's <i>Diseases of the Kidneys, Ureters and Bladder</i> (1914), painted by Max Brödel in 1909. Every stone in the plate grew in layers, and the branched one at the lower left (no. 24) is a staghorn. Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Kidney_and_bladder_stones.png" rel="noopener" target="_blank">Wikimedia Commons</a>.</figcaption></figure>
+<p>I wanted to understand kidney stones from the beginning, and the beginning turned out to be a
+question I had never actually asked: <strong>what is a kidney stone, and why does one form?</strong>
+Not "how do I avoid one" — that's the next entry, and it has an answer that is less settled than
+the usual advice suggests — but the thing itself. It is a common enough object. In the United
+States about one adult in eleven has had one <a href="#src-1">[1]</a> — a figure that has roughly
+tripled since 1980 <a href="#src-3">[3]</a> — and in the most recent survey years around <strong>11% of adults</strong> reported
+one ever and <strong>2.1% reported passing one in the previous twelve months</strong>
+<a href="#src-2">[2]</a>. Men still make more than women, but the gap has been closing for a decade
+<a href="#src-3">[3]</a>. So: what is it?</p>
+
+<h2>What is a kidney stone made of?</h2>
+
+<p>A kidney stone is a hard lump of crystals, held together with a small amount of protein, that
+formed inside the kidney out of substances that are normally dissolved in urine. It can be the
+size of a grain of sand or it can fill the whole branching interior of the kidney like a cast —
+the coral-shaped "staghorn" at the lower left of the plate above. Cut one open and it has rings,
+because a stone grows in layers around whatever it started on. Brödel painted those rings in
+1909 and they are the single most useful thing to know about a stone: it is not a thing that
+appears, it is a thing that <em>accumulates</em>.</p>
+
+<p>What it accumulates out of depends on the person. The largest modern count I found is from the
+Mayo Clinic's laboratory, which analysed the first stone submitted by each of <strong>43,545
+patients</strong> in a single year <a href="#src-4">[4]</a>:</p>
+
+<ul>
+  <li><strong>Calcium oxalate — 67%.</strong> The ordinary stone. Calcium and oxalate (a small
+  organic acid that the liver makes and that is also in food) bind into a crystal that is nearly
+  insoluble in water.</li>
+  <li><strong>Calcium phosphate (hydroxyapatite) — 16%.</strong> The same mineral as bone; favours
+  alkaline urine.</li>
+  <li><strong>Uric acid — 8%.</strong> The waste product of purine metabolism, the same molecule
+  behind gout. Needs acidic urine to crystallise, which is the whole story of who gets these (below).</li>
+  <li><strong>Struvite — 3%.</strong> Magnesium ammonium phosphate, made by certain bacteria during
+  a urinary infection. These are the ones that grow into staghorns.</li>
+  <li><strong>Brushite — 0.9%</strong> (another calcium phosphate) and <strong>cystine — 0.35%</strong>
+  (an inherited defect in amino-acid transport).</li>
+</ul>
+
+<p>Two things follow. First, "kidney stone" is really "calcium stone" nine times out of ten — among
+first-time stone formers in one Minnesota county, <strong>93.5%</strong> made a calcium stone of one
+kind or another <a href="#src-5">[5]</a>. Older textbooks put struvite at around 10% <a href="#src-6">[6]</a>;
+it has fallen as urinary infections get treated sooner. Second, the kind matters for what happens
+next: in that same county, the ten-year chance of a second symptomatic stone was about <strong>30%
+for calcium oxalate and calcium phosphate</strong> stones but about <strong>50% for brushite,
+struvite and uric acid</strong> <a href="#src-5">[5]</a>. You cannot reason about your stone until
+you know which one you make — which is why the guideline says to have one analysed at least
+once <a href="#src-7">[7]</a>, and why I would keep it.</p>
+
+<h2>Why do kidney stones form?</h2>
+
+<p>Urine is a strange solution. It carries calcium, oxalate, phosphate and uric acid at concentrations
+that would already be crystallising if you dissolved the same amounts in plain water — it is
+<em>supersaturated</em>, most of the time, in most people <a href="#src-6">[6]</a>. It stays liquid
+because the kidney also puts inhibitors into it: citrate, which grabs calcium before oxalate can;
+magnesium; and a set of proteins that coat any crystal that does start and stop it growing. A stone
+is what you get when, in one kidney, the supersaturation outruns the inhibition for long enough.</p>
+
+<p>That takes four steps, and the last one is the one that matters. Crystals <em>nucleate</em>; they
+<em>grow</em>; they <em>aggregate</em> into clumps; and then they have to be <em>retained</em>. A
+crystal that washes out with the urine was never a stone — most of us pass microscopic crystals
+routinely. Something has to hold it in place long enough for the layers to build. For the common
+calcium oxalate stone, that something has a name and a discoverer.</p>
+
+<h3>Randall's plaque</h3>
+
+<p>In the 1930s Alexander Randall noticed small white deposits of calcium phosphate at the tips of the
+renal papillae — the points where the kidney's collecting ducts open into the urine-filled space —
+and proposed that stones grew on them. It took seventy years to show how. In 2003 a group at
+Indiana University took papillary biopsies from calcium stone formers during surgery and traced
+the deposits to their origin: they begin in the basement membrane of the <strong>thin limbs of the
+loop of Henle</strong>, deep in the medulla, and spread outward through the tissue until they sit
+just under the papilla's lining <a href="#src-8">[8]</a>. Where that lining erodes, the plaque is
+exposed to urine, and calcium oxalate — for which the urine is already supersaturated — grows on it.
+Stones removed at surgery are often found still attached, with a small dimple on one face where they
+sat on the papilla. Non-stone-formers biopsied in the same study had no plaque at all.</p>
+
+<p>Why the plaque forms is not settled. The current picture is that it resembles the calcification of
+an artery more than it resembles a rock in a pipe: the deposits sit in an organic matrix with the
+same proteins that show up in vascular calcification, and the tissue around them carries the marks
+of inflammation and oxidative stress <a href="#src-9">[9]</a>. A stone, on this reading, is the end
+product of a slow injury to the deep kidney rather than a simple precipitate — which is one reason
+the "dissolve it with X" folk remedies for calcium stones have never worked.</p>
+
+<h2>Who gets kidney stones, and why?</h2>
+
+<p>Everything that raises supersaturation, or lowers inhibition, or keeps a crystal in the kidney
+longer, raises the risk. The list is long; the ones with real numbers behind them are these.</p>
+
+<h3>Not enough urine</h3>
+
+<p>The single biggest one. Concentration is amount divided by volume, and stone formers make less
+urine. In the Italian trial that established the point, men presenting with a first calcium stone
+were passing about <strong>1.06 litres a day against 1.40 in controls</strong>, and women about
+0.99 against 1.24 <a href="#src-10">[10]</a>. Across three large American cohorts totalling
+<strong>192,126 people</strong>, low fluid intake accounted for an estimated <strong>26% of all first
+stones</strong> — more than any other modifiable factor — and five such factors together (fluid,
+body weight, diet pattern, dietary calcium, sugary drinks) accounted for more than half
+<a href="#src-11">[11]</a>. Whether <em>telling</em> people to drink more actually prevents stones is
+a different question from whether low volume causes them, and it is the subject of the next entry,
+because a large 2026 trial gave an answer that surprised me.</p>
+
+<h3>Too much calcium in the urine — and the trap in the obvious fix</h3>
+
+<p>High urinary calcium is the most common measurable abnormality in calcium stone formers
+<a href="#src-6">[6]</a>. The intuitive response, and the standard medical advice until the 1990s,
+was to eat less calcium. This turned out to be exactly backwards, and the evidence for that is some
+of the cleanest in the whole subject.</p>
+
+<p>First the cohorts. In <strong>45,619 men</strong> followed for four years, those eating the most
+dietary calcium had a <em>lower</em> risk of a first stone than those eating the least
+<a href="#src-12">[12]</a>. In <strong>91,731 women</strong> followed for twelve years, with 864 stones,
+the highest fifth of dietary calcium intake had <strong>35% lower risk</strong> than the lowest —
+while calcium taken as a supplement, on its own, carried a <strong>20% higher</strong> risk, and
+high sodium intake a 30% higher risk <a href="#src-13">[13]</a>.</p>
+
+<p>Then the trial. Borghi and colleagues randomised <strong>120 men</strong> with recurrent calcium
+oxalate stones and high urinary calcium to either the traditional low-calcium diet, or a diet with
+normal calcium (about 1,200 mg a day) but restricted salt and animal protein, and followed them for
+<strong>five years</strong>. On the low-calcium diet <strong>23 of 60 relapsed (38%)</strong>; on
+the normal-calcium, low-salt, low-protein diet, <strong>12 of 60 (20%)</strong> — a relative risk of
+0.49 <a href="#src-14">[14]</a>. Urinary calcium fell equally in both groups. What differed was
+oxalate: it <em>rose</em> on the low-calcium diet and fell on the other. The mechanism is in the
+gut. Calcium eaten with a meal binds the oxalate in that meal, so it leaves in the stool instead of
+being absorbed and excreted in the urine; take the calcium away and the oxalate walks straight
+through. That is also why supplemental calcium, swallowed between meals with nothing to bind,
+behaves differently from calcium in food.</p>
+
+<p>Salt is the other lever on urinary calcium: the kidney handles sodium and calcium together, and
+the more sodium it excretes the more calcium goes with it. In a three-month trial of
+<strong>210 stone formers</strong>, a low-salt diet cut urinary calcium from <strong>361 to 271 mg a
+day</strong> and brought it into the normal range in 62% of patients, against 34% on water alone
+<a href="#src-15">[15]</a>. The American guideline's current advice for calcium stone formers with
+high urinary calcium is accordingly <strong>1,000–1,200 mg a day of dietary calcium</strong>, with
+sodium limited <a href="#src-7">[7]</a> — not less calcium, but less salt.</p>
+
+<h3>Oxalate, citrate, and the acidity of the urine</h3>
+
+<p>Oxalate comes from food — spinach, rhubarb, almonds, beets, chocolate, tea are the famous ones —
+and from the liver's own metabolism, and either can run high. Citrate is the chief inhibitor and
+runs low when the body is handling an acid load, which a diet heavy in animal protein produces.
+And urine pH decides which crystal can form at all: calcium phosphate needs it alkaline, uric acid
+needs it acid. Each of these deserves its own entry; here they are just the other three dials.</p>
+
+<h3>Body weight, diabetes, and uric acid</h3>
+
+<p>In the same three cohorts — <strong>4,827 stones</strong> over a combined 46 years of follow-up —
+men over 220 lb had <strong>44% more</strong> stones than men under 150 lb, and heavier women
+roughly <strong>90% more</strong>, after adjusting for diet and fluid <a href="#src-16">[16]</a>.
+Part of the reason is specific to uric acid. Insulin resistance impairs the kidney's ability to
+excrete ammonium, which is what normally buffers acid in urine; the urine turns unusually acidic,
+and uric acid — which stays dissolved at a pH of 6.5 and largely does not at 5.3 — comes out of
+solution.
+Thirteen recurrent uric acid stone formers put through a formal insulin-clamp study were severely
+insulin resistant, and in healthy volunteers infusing insulin raised urine pH from 6.1 to 6.8
+<a href="#src-17">[17]</a>. It is why uric acid stones cluster with obesity and diabetes, and why
+after age 55 they overtake calcium phosphate as the second most common kind <a href="#src-4">[4]</a>.</p>
+
+<h3>Family</h3>
+
+<p>In <strong>37,999 men</strong> followed for eight years, a family history of stones carried a
+relative risk of <strong>2.57</strong> (95% CI 2.19–3.02), after adjusting for diet and everything
+else measured <a href="#src-18">[18]</a>. Some of that is shared kitchens, but not all of it —
+urinary calcium handling is heritable, and the rare single-gene stone diseases (cystinuria, primary
+hyperoxaluria) run in families outright.</p>
+
+<h3>Heat</h3>
+
+<p>Sweat is water that did not become urine. The Mayo laboratory received more calcium oxalate and
+uric acid stones in <strong>July and August</strong> than in any other months <a href="#src-4">[4]</a>;
+the American South has long been called the "stone belt"; and a 2008 analysis projected that a
+warming climate would push the high-risk zone north — from 40% of the US population living in it
+in 2000 to 56% by 2050 — adding <strong>1.6 to 2.2 million</strong> lifetime stone cases by
+mid-century <a href="#src-19">[19]</a>. A model, not a measurement — but the seasonal signal
+underneath it is real.</p>
+
+<h3>Infection</h3>
+
+<p>Certain bacteria — <em>Proteus</em> above all — carry an enzyme that splits urea into ammonia.
+That drives urine pH up and floods it with ammonium, and magnesium ammonium phosphate (struvite)
+crystallises in bulk. These are the stones that fill the kidney's whole interior, and they are a
+different disease: the bacteria live inside the stone, so it cannot be treated without removing it.</p>
+
+<h2>How likely is a second kidney stone?</h2>
+
+<p>Less likely than the older textbooks say, and more likely than most first-timers assume. The
+classic figures — 35% by five years, 52% by ten <a href="#src-20">[20]</a> — came from stone clinics,
+which see the people who keep coming back. When the Mayo group instead followed <strong>every</strong>
+adult in Olmsted County, Minnesota with a first symptomatic stone from 1984 on (2,239 of them), the
+rate of a second symptomatic episode was <strong>11% at two years, 20% at five, 31% at ten, and 39% at
+fifteen</strong> <a href="#src-21">[21]</a>. It compounds: the recurrence rate per hundred person-years
+was 3.4 after a first stone, 7.1 after a second, 12.1 after a third, and 17.6 after a fourth
+<a href="#src-22">[22]</a>. And those are <em>symptomatic</em> stones; when the same group put
+first-time formers through a CT scan five years later, a new stone had formed in 35% of them and
+some manifestation of recurrence — new stone, growth, or passage — was present in <strong>67%</strong>
+<a href="#src-23">[23]</a>. Most stones never announce themselves.</p>
+
+<h2>So what does a first stone actually tell you?</h2>
+
+<p>Not much, on its own — which is the honest answer, and the guideline's. The American Urological
+Association's evaluation for a first stone is a detailed history, blood chemistries and a
+urinalysis; a stone analysis <em>at least once</em> whenever a stone can be caught; and a 24-hour
+urine collection — measured for volume, pH, calcium, oxalate, uric acid, citrate, sodium,
+potassium and creatinine — for recurrent stone formers and for first-timers who are either at
+high risk <em>or interested</em> <a href="#src-7">[7]</a>. That last phrase is the door. The
+24-hour urine is the one test that tells you which of the dials above is turned up in your
+particular kidney, and every recommendation in the next entry depends on which one it is.</p>
+
+<div class="verdict">
+  <p><strong>What the evidence says.</strong> A kidney stone is a layered aggregate of crystals that
+  came out of supersaturated urine and stayed in the kidney long enough to grow — two-thirds of them
+  calcium oxalate, most of those seeded on a calcium phosphate plaque that begins deep in the loop of
+  Henle. What tips supersaturation into stone is mainly urine volume, urinary calcium (which salt
+  raises and dietary calcium, counter-intuitively, lowers), oxalate, citrate and pH — with body
+  weight, insulin resistance, family history, heat and infection each pushing on one or more of
+  those. After a first symptomatic stone, roughly one person in five has another within five years
+  and one in three within ten, and the kind of stone changes those odds by nearly half. The kind is
+  knowable — from the stone itself and from a 24-hour urine — and nothing downstream makes sense
+  without it.</p>
+</div>
+
+<div class="mine">
+  <p><strong>What I'd do.</strong> One person's judgment, not a recommendation. If a stone ever came
+  out of me I would keep it and have it analysed — the guideline asks for that anyway, and the
+  difference between a calcium oxalate stone and a uric acid one is the difference between two
+  different problems. And I would take the guideline's "or interested" at its word and ask for the
+  24-hour urine after a first stone rather than waiting for a second, because the whole of the
+  prevention literature is sorted by what that test finds.</p>
+</div>
+
+<p class="half-note">Next in this series: does drinking more water prevent kidney stones? The 1996
+trial that halved recurrence, the 2026 trial in 1,658 people that couldn't, and what the difference
+between them means.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="src-1">Scales CD, Smith AC, Hanley JM, Saigal CS. <em>Prevalence of kidney stones in the United States.</em> European Urology, 2012. <a href="https://doi.org/10.1016/j.eururo.2012.03.052" rel="noopener" target="_blank">doi:10.1016/j.eururo.2012.03.052</a></li>
+  <li id="src-2">Hill AJ, Basourakos SP, Lewicki P, et al. <em>Incidence of kidney stones in the United States: the continuous National Health and Nutrition Examination Survey.</em> Journal of Urology, 2022. <a href="https://doi.org/10.1097/JU.0000000000002331" rel="noopener" target="_blank">doi:10.1097/JU.0000000000002331</a></li>
+  <li id="src-3">Chewcharat A, Curhan G. <em>Trends in the prevalence of kidney stones in the United States from 2007 to 2016.</em> Urolithiasis, 2020. <a href="https://doi.org/10.1007/s00240-020-01210-w" rel="noopener" target="_blank">doi:10.1007/s00240-020-01210-w</a></li>
+  <li id="src-4">Lieske JC, Rule AD, Krambeck AE, et al. <em>Stone composition as a function of age and sex.</em> Clinical Journal of the American Society of Nephrology, 2014. <a href="https://doi.org/10.2215/CJN.05660614" rel="noopener" target="_blank">doi:10.2215/CJN.05660614</a></li>
+  <li id="src-5">Singh P, Enders FT, Vaughan LE, et al. <em>Stone composition among first-time symptomatic kidney stone formers in the community.</em> Mayo Clinic Proceedings, 2015. <a href="https://doi.org/10.1016/j.mayocp.2015.07.016" rel="noopener" target="_blank">doi:10.1016/j.mayocp.2015.07.016</a></li>
+  <li id="src-6">Coe FL, Evan A, Worcester E. <em>Kidney stone disease.</em> Journal of Clinical Investigation, 2005. <a href="https://doi.org/10.1172/JCI26662" rel="noopener" target="_blank">doi:10.1172/JCI26662</a></li>
+  <li id="src-7">Pearle MS, Goldfarb DS, Assimos DG, et al. <em>Medical management of kidney stones: AUA guideline.</em> Journal of Urology, 2014. <a href="https://doi.org/10.1016/j.juro.2014.05.006" rel="noopener" target="_blank">doi:10.1016/j.juro.2014.05.006</a></li>
+  <li id="src-8">Evan AP, Lingeman JE, Coe FL, et al. <em>Randall's plaque of patients with nephrolithiasis begins in basement membranes of thin loops of Henle.</em> Journal of Clinical Investigation, 2003. <a href="https://doi.org/10.1172/JCI17038" rel="noopener" target="_blank">doi:10.1172/JCI17038</a></li>
+  <li id="src-9">Khan SR, Canales BK, Dominguez-Gutierrez PR. <em>Randall's plaque and calcium oxalate stone formation: role for immunity and inflammation.</em> Nature Reviews Nephrology, 2021. <a href="https://doi.org/10.1038/s41581-020-00392-1" rel="noopener" target="_blank">doi:10.1038/s41581-020-00392-1</a></li>
+  <li id="src-10">Borghi L, Meschi T, Amato F, et al. <em>Urinary volume, water and recurrences in idiopathic calcium nephrolithiasis: a 5-year randomized prospective study.</em> Journal of Urology, 1996. <a href="https://doi.org/10.1016/S0022-5347(01)66321-3" rel="noopener" target="_blank">doi:10.1016/S0022-5347(01)66321-3</a></li>
+  <li id="src-11">Ferraro PM, Taylor EN, Gambaro G, Curhan GC. <em>Dietary and lifestyle risk factors associated with incident kidney stones in men and women.</em> Journal of Urology, 2017. <a href="https://doi.org/10.1016/j.juro.2017.03.124" rel="noopener" target="_blank">doi:10.1016/j.juro.2017.03.124</a></li>
+  <li id="src-12">Curhan GC, Willett WC, Rimm EB, Stampfer MJ. <em>A prospective study of dietary calcium and other nutrients and the risk of symptomatic kidney stones.</em> New England Journal of Medicine, 1993. <a href="https://doi.org/10.1056/NEJM199303253281203" rel="noopener" target="_blank">doi:10.1056/NEJM199303253281203</a></li>
+  <li id="src-13">Curhan GC, Willett WC, Speizer FE, Spiegelman D, Stampfer MJ. <em>Comparison of dietary calcium with supplemental calcium and other nutrients as factors affecting the risk for kidney stones in women.</em> Annals of Internal Medicine, 1997. <a href="https://doi.org/10.7326/0003-4819-126-7-199704010-00001" rel="noopener" target="_blank">doi:10.7326/0003-4819-126-7-199704010-00001</a></li>
+  <li id="src-14">Borghi L, Schianchi T, Meschi T, et al. <em>Comparison of two diets for the prevention of recurrent stones in idiopathic hypercalciuria.</em> New England Journal of Medicine, 2002. <a href="https://doi.org/10.1056/NEJMoa010369" rel="noopener" target="_blank">doi:10.1056/NEJMoa010369</a></li>
+  <li id="src-15">Nouvenne A, Meschi T, Prati B, et al. <em>Effects of a low-salt diet on idiopathic hypercalciuria in calcium-oxalate stone formers: a 3-mo randomized controlled trial.</em> American Journal of Clinical Nutrition, 2010. <a href="https://doi.org/10.3945/ajcn.2009.28614" rel="noopener" target="_blank">doi:10.3945/ajcn.2009.28614</a></li>
+  <li id="src-16">Taylor EN, Stampfer MJ, Curhan GC. <em>Obesity, weight gain, and the risk of kidney stones.</em> JAMA, 2005. <a href="https://doi.org/10.1001/jama.293.4.455" rel="noopener" target="_blank">doi:10.1001/jama.293.4.455</a></li>
+  <li id="src-17">Abate N, Chandalia M, Cabo-Chan AV, Moe OW, Sakhaee K. <em>The metabolic syndrome and uric acid nephrolithiasis: novel features of renal manifestation of insulin resistance.</em> Kidney International, 2004. <a href="https://doi.org/10.1111/j.1523-1755.2004.00386.x" rel="noopener" target="_blank">doi:10.1111/j.1523-1755.2004.00386.x</a></li>
+  <li id="src-18">Curhan GC, Willett WC, Rimm EB, Stampfer MJ. <em>Family history and risk of kidney stones.</em> Journal of the American Society of Nephrology, 1997. <a href="https://doi.org/10.1681/ASN.V8101568" rel="noopener" target="_blank">doi:10.1681/ASN.V8101568</a></li>
+  <li id="src-19">Brikowski TH, Lotan Y, Pearle MS. <em>Climate-related increase in the prevalence of urolithiasis in the United States.</em> Proceedings of the National Academy of Sciences, 2008. <a href="https://doi.org/10.1073/pnas.0709652105" rel="noopener" target="_blank">doi:10.1073/pnas.0709652105</a></li>
+  <li id="src-20">Uribarri J, Oh MS, Carroll HJ. <em>The first kidney stone.</em> Annals of Internal Medicine, 1989. <a href="https://doi.org/10.7326/0003-4819-111-12-1006" rel="noopener" target="_blank">doi:10.7326/0003-4819-111-12-1006</a></li>
+  <li id="src-21">Rule AD, Lieske JC, Li X, et al. <em>The ROKS nomogram for predicting a second symptomatic stone episode.</em> Journal of the American Society of Nephrology, 2014. <a href="https://doi.org/10.1681/ASN.2013091011" rel="noopener" target="_blank">doi:10.1681/ASN.2013091011</a></li>
+  <li id="src-22">Vaughan LE, Enders FT, Lieske JC, et al. <em>Predictors of symptomatic kidney stone recurrence after the first and subsequent episodes.</em> Mayo Clinic Proceedings, 2019. <a href="https://doi.org/10.1016/j.mayocp.2018.09.016" rel="noopener" target="_blank">doi:10.1016/j.mayocp.2018.09.016</a></li>
+  <li id="src-23">D'Costa MR, Haley WE, Mara KC, et al. <em>Symptomatic and radiographic manifestations of kidney stone recurrence and their prediction by risk factors: a prospective cohort study.</em> Journal of the American Society of Nephrology, 2019. <a href="https://doi.org/10.1681/ASN.2018121241" rel="noopener" target="_blank">doi:10.1681/ASN.2018121241</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-kidney-stones.html">kidney stones</a><a class="tg" href="tag-urology.html">urology</a><a class="tg" href="tag-nutrition.html">nutrition</a><a class="tg" href="tag-calcium.html">calcium</a><a class="tg" href="tag-oxalate.html">oxalate</a><a class="tg" href="tag-uric-acid.html">uric acid</a><a class="tg" href="tag-hydration.html">hydration</a><a class="tg" href="tag-sodium.html">sodium</a><a class="tg" href="tag-diet.html">diet</a><a class="tg" href="tag-first-principles.html">first principles</a></div>
+    <p class="mednote">This is one reader's reading of the research, not medical advice. If something here touches on your own health, take it to a clinician who knows you — and <a href="about.html">read how these entries are put together</a>.</p>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20What%20a%20Kidney%20Stone%20Actually%20Is%2C%20and%20Why%20It%20Forms%3A%0A%0Ahttps%3A//mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+
+  <p class="backlink"><a href="index.html">← Back to the Regimen</a></p>
+<footer>The Librarian&#x27;s Regimen · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is medical advice · <span class="hits" id="hits-health-what-a-kidney-stone-is-and-why-it-forms-html">👁 <span id="hits-health-what-a-kidney-stone-is-and-why-it-forms-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fhealth%2Fwhat-a-kidney-stone-is-and-why-it-forms.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-health-what-a-kidney-stone-is-and-why-it-forms-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-health-what-a-kidney-stone-is-and-why-it-forms-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-health-what-a-kidney-stone-is-and-why-it-forms-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Regimen. Nothing on this site is medical, nutritional or health advice, and no reply from Mr. Librarian is either. This site is one reader's reading of published research — not a diagnosis, not a treatment, not a recommendation to start, stop or change anything — and it does not replace a conversation with a clinician who knows you. Studies are summarised in good faith from public sources and may be misread, superseded or simply wrong; check the originals before relying on anything here. No drug, product, company or organization named on this site has endorsed it or is affiliated with it.</p></footer>
+</div>
+</body>
+</html>
