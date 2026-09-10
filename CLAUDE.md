@@ -393,6 +393,26 @@ easy follow-up, not done in the first pass.
      where to look. Burden was measured before shipping it: 106 hits over 63 chapters, mean
      1.7, 39 of the 63 completely clean — readable rather than the wall of noise that would
      train you to skip it. Re-measure if that rate climbs.
+     ⭐ **WRITE SHELF LISTS TAG-FIRST, and run the check on BOTH panels.** The tool pairs each
+     `tag t-*` with the quote that FOLLOWS it, so a list written quote-first — `'a mingled
+     stuff' (ASV), 'mixed stuff' (NWT)` — reports a wall of MISSes even when every attribution
+     is right, and the real defects hide in the noise. Rewritten tag-first (`the ASV reads 'a
+     mingled stuff'; the NWT 1984 reads 'mixed stuff'`) the same prose went from **29 verified
+     quotes to 52** on Deuteronomy 22's English panel and **41 to 56** on its Spanish one.
+     ⚠ And run it on the SPANISH panel too, not just the English: Deuteronomy 22's Spanish note
+     claimed both Reina-Valeras read «no podrás esconderte» at v3 — pure memory, and wrong. The
+     real readings are a better note (RV 1909 «retraerte» and TNM 1987 «retirarte» keep the
+     reflexive; the RV60 «negarle tu ayuda» and TNM 2019 abandon it), which is the usual
+     outcome: the fetched text beats the remembered one.
+   - **A matching VERSE COUNT does not prove matching VERSE NUMBERS.** ⚠ Paid for on
+     Deuteronomy 22 (2026-09-10). Our `exodus-22` page has 30 verses and so does the Masoretic
+     Exodus 22, which looked like proof the page followed the Hebrew numbering — it does not.
+     English Exodus 22:1 is MT 21:37, so the whole chapter is offset by one and the seduction
+     law this project cites repeatedly sits at **22:16, not 22:15**; the father's veto is 22:17.
+     Two new links and a standing `patah` dictionary entry were all a verse low. Meanwhile
+     `deuteronomy-5` DOES follow MT (honour-your-parents at 5:15, annotated "EN 16"), so the
+     convention is not even uniform across the site. **The check is to open the target verse and
+     read it**, never to compare chapter lengths.
    - **Run the shelf rule on BOTH shelves, and re-run it on every version's own
      REVISION.** ⚠ Added after Numbers 12 (2026-08-18), where the rule directly above
      was obeyed for the English shelf and skipped entirely for the Spanish one — six wrong
