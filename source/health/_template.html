@@ -1,0 +1,89 @@
+title: Copy this file to start a new entry
+date: 2026-01-01
+tags: kidney stones, hydration, diet, nutrition, prevention
+summary: One or two sentences. This is what shows on the front-page tile, in the RSS feed, and in the link preview when someone shares it. Lead with the question and the short answer.
+meta_desc: Optional. Only set this when the auto-derived search description (the first whole sentences of `summary:` that fit in 155 characters) isn't the angle worth leading on. Leave the line out entirely otherwise.
+hero: some-picture.jpg
+hero_alt: Describe the picture for someone who can't see it
+hero_credit: Optional — the source and licence, links allowed. Leave the line out if there is no hero.
+draft: true
+---
+<!--
+  HOW TO USE THIS FILE
+  ────────────────────
+  1. Copy it to  source/health/YYYY-MM-DD-a-short-slug.html
+     The filename date MUST match the `date:` above — the build refuses to
+     run if they disagree.
+  2. A hero or in-body picture goes in health/img/ (web-sized, EXIF-stripped —
+     tools/travel_photos.py does that for a photo; for a public-domain
+     illustration keep the licence and source for `hero_credit:`).
+  3. Delete `draft: true` when it's ready. THERE IS NO PUBLISHED DRAFTS PAGE on
+     this publication (Michael's call, 2026-09-10) — `draft: true` means the
+     entry does not build at all; `python3 build_health.py --drafts` renders it
+     LOCALLY, unlisted and noindexed, for a read-through. Never commit a
+     --drafts build.
+  4. Rebuild and push:
+         python3 build_health.py
+         git add health source/health && git commit -m "Regimen: …" && git push
+
+  THE SHAPE OF AN ENTRY
+  ─────────────────────
+  ONE question, stated in the first paragraph in the words a person would
+  actually search — "does drinking more water prevent kidney stones?" — not
+  "some thoughts on hydration." Then:
+
+  • What the evidence says, with numbers: how many people, how big the effect,
+    over how long, compared with what. Guidelines and systematic reviews first,
+    then trials, then cohorts; a mechanism or a mouse is a reason to look, not an
+    answer. When the best evidence is weak, say so — don't round it up.
+  • <div class="verdict"> — the answer, set apart. Written as what the studies
+    support, not what you'd like to be true.
+  • <div class="mine"> — OPTIONAL. "What I'd do." One person's judgment about one
+    person's circumstances, labelled as such. It renders in amber, deliberately
+    not the accent colour, so nobody mistakes it for the evidence box above it.
+  • <ol class="sources"> — REQUIRED. The build refuses an entry without one. Real
+    links: DOI or PubMed for a paper, the publishing body's own page for a
+    guideline. A reader must be able to check every number.
+
+  What NEVER goes in: dosing instructions aimed at the reader, "you should
+  start/stop", or anything that reads as an answer to "what should I take?".
+  The About page promises the site doesn't do that; every entry is where the
+  promise is kept.
+
+  SEO, same standing rule as the other two blogs: one <h2> that matches a real
+  search; name the condition/food/drug in full in the first paragraph; answer
+  the question the reader arrived with.
+-->
+
+<p>Open with the question, in plain words, and — if the evidence allows one — the
+short answer. Name the thing in full: the condition, the nutrient, the drug.</p>
+
+<h2>A heading that matches a real search</h2>
+<p>What the studies found. Name the study type and the size: "a 2019 systematic
+review of 12 trials in about 3,000 people", "a five-year randomised trial of 199
+people". Put the numbers in the sentence, not in an adjective.</p>
+
+<figure>
+  <img src="img/some-picture.jpg" alt="Describe it for someone who can't see it" loading="lazy"/>
+  <figcaption>Optional caption — and the source and licence if it isn't yours.</figcaption>
+</figure>
+
+<h2>Where the evidence is weak</h2>
+<p>Say so. What hasn't been tested, what has only been tested in the wrong
+population, what the effect size actually is once the headline is unpacked.</p>
+
+<div class="verdict">
+  <p><strong>What the evidence says.</strong> The answer to the question at the top,
+  as far as the studies support it, with the confidence stated honestly.</p>
+</div>
+
+<div class="mine">
+  <p><strong>What I'd do.</strong> Optional. One person's judgment, about one person's
+  circumstances — delete this block if there isn't an honest one to give.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Author(s). <em>Title</em>. Journal, year. <a href="https://doi.org/…" rel="noopener" target="_blank">doi:…</a></li>
+  <li>Body. <em>Guideline title</em>. Year. <a href="https://…" rel="noopener" target="_blank">publisher's page</a></li>
+</ol>

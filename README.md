@@ -107,3 +107,25 @@ Being unlinked means no crawler has a path to it, so `travel/sitemap.xml` (regen
 each build) is the discovery mechanism — it's advertised in the root `robots.txt` and
 should be submitted once in Google Search Console. Delete the `Sitemap:` line from
 `robots.txt` if you'd rather the blog stayed link-only.
+
+---
+
+## The fourth site in this repo: `/health/`
+
+**The Librarian's Regimen** — health, nutrition and medicine, one question at a time, read
+from the primary literature — at `mistertranslation.com/health/`. Built by `build_health.py`
+(standard library only), the same shape as the Ledger's writing half: dated entries in
+`source/health/`, a tile/list front page with tag filters and search, per-tag pages, RSS and a
+sitemap. It is linked from the home-page hub and from the other two blogs' nav/footer.
+
+```
+python3 build_health.py            # rebuild the blog
+python3 build_health.py --drafts   # LOCAL preview incl. draft: true entries — never commit one
+```
+
+- **A new entry** is one file: `source/health/YYYY-MM-DD-slug.html` (copy
+  `source/health/_template.html`; its header comment is the checklist).
+- **There is no published drafts page** — unlike `/travel/`, an entry here ships straight
+  live. `draft: true` simply keeps it out of the build.
+- **Every entry must end with a `<ol class="sources">`** — the build refuses one without it.
+- **Nothing on it is medical advice**, and the site says so on every page; keep it that way.

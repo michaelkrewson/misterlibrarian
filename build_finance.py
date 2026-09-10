@@ -8,11 +8,13 @@ which writes source/finance/asset_board.json; this reads that file and renders H
 Keeping the split means the build has no dependencies to install, cannot fail on a
 Yahoo outage, and works offline — and it is the same property build_travel.py has.
 
-THREE PUBLICATIONS, ONE DOMAIN
+FOUR PUBLICATIONS, ONE DOMAIN
 ─────────────────────────────
-mistertranslation.com serves three separate things: the Bible project, now at
+mistertranslation.com serves four separate things: the Bible project, now at
 /bible.html (build.py — moved off the bare root 2026-09-09), The Librarian Abroad
-at /travel/ (build_travel.py), and this at /finance/. The two blogs LINK TO EACH
+at /travel/ (build_travel.py), The Librarian's Regimen at /health/
+(build_health.py — health, nutrition and medicine; added 2026-09-10, a copy of
+this file's WRITING half with none of its boards), and this at /finance/. The two blogs LINK TO EACH
 OTHER (Michael's call, 2026-08-07) — nav, footer, and the odd entry-to-entry
 reference. ⚠️ 2026-09-09: the old "Bible project links to neither and is linked
 from neither" isolation rule is RETIRED (Michael's call — he'd stopped worrying
@@ -108,10 +110,14 @@ TAG_BAR_MAX_CHIPS = 18
 # blog's own index.
 FRONT_TILE_LIMIT = 6
 
-# The sibling publication. The Bible project at the root is deliberately NOT
-# linked from here and must not be — see the README. These two are.
-SIBLING_NAME = "The Librarian Abroad"
-SIBLING_URL = "https://mistertranslation.com/travel/"
+# The sibling publications (the Bible project is reached via the root hub).
+# Was a single SIBLING_NAME/SIBLING_URL pair until 2026-09-10, when The
+# Librarian's Regimen (/health/, build_health.py) became the fourth
+# publication on the domain and the footer had to carry two.
+SIBLINGS = (
+    ("The Librarian Abroad", "https://mistertranslation.com/travel/"),
+    ("The Librarian's Regimen", "https://mistertranslation.com/health/"),
+)
 
 # The same FormSubmit endpoint the travel blog posts to, so both publications
 # land in one inbox; `_subject` is what tells them apart. Reusing it is safe on
@@ -762,6 +768,7 @@ def _foot(hits_path=None):
     posture as every other `_hits_widget` call site."""
     hits = _hits_widget(hits_path, " views") if hits_path else ""
     hits_bit = " · %s" % hits if hits else ""
+    sibs = " · ".join('<a href="%s">%s</a>' % (url, esc(name)) for name, url in SIBLINGS)
     return ('<footer>%s · <a href="board.html">The Asset Board</a> · '
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
             '<a href="treasuries.html">Bitcoin Treasuries</a> · '
@@ -769,9 +776,9 @@ def _foot(hits_path=None):
             '<a href="humanity.html">Bitcoin vs. Humanity</a> · '
             '<a href="money-worldwide.html">Money Worldwide</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
-            '<a href="feed.xml">RSS</a> · <a href="%s">%s</a> · '
+            '<a href="feed.xml">RSS</a> · %s · '
             'nothing here is investment advice%s%s</footer>'
-            % (esc(SITE_NAME), SIBLING_URL, esc(SIBLING_NAME), hits_bit, _legal()))
+            % (esc(SITE_NAME), sibs, hits_bit, _legal()))
 
 
 def _shell_hits_path(url):
