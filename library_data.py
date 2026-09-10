@@ -3416,6 +3416,30 @@ DICTIONARY = [
      "that the <span class=\"tag t-niv\">NIV</span> prints 'rapes her' at 22:25 as well, so the gradient the "
      "law is built on disappears into one English word.",
      ("Deuteronomy", 22, 28)),
+    ("setumah-petuchah", "setumah / petuchah", "סְתוּמָה / פְּתוּחָה", "setumah / petuchah",
+     "CLOSED / OPEN — the Masoretic text's own paragraph marks, printed in this translation as "
+     "<strong>{S}</strong> and <strong>{P}</strong> at the point where they fall (and as "
+     "<strong>{ס}</strong> and <strong>{פ}</strong> on the Spanish pages, using the Hebrew letters the "
+     "scribes used). ⭐ <strong>They are the oldest divisions the Hebrew Bible has, and they are not the "
+     "chapter numbers.</strong> A <em>petuchah</em>, an OPEN section, ends the line where it stands and "
+     "starts the next section on a fresh line, leaving the rest of the line blank — the heavier break of "
+     "the two. A <em>setumah</em>, a CLOSED section, leaves a gap of a few words inside the line and "
+     "carries on. Both are older than the chapter and verse numbers by roughly a thousand years: the "
+     "chapters a reader knows were fitted to the Latin Bible in the thirteenth century, while these marks "
+     "are in the scribal tradition the Masoretes inherited, and the Dead Sea scrolls already have them. ⚠ "
+     "Which is why they are worth watching where the two disagree. <a "
+     "href=\"deuteronomy-22.html\">Deuteronomy 22</a> is a chapter of short unconnected laws, and its "
+     "thirteen marks — twelve <em>setumah</em> and the heavier <em>petuchah</em> after <a "
+     "href=\"deuteronomy-22.html#v22-5\">v5</a> — are the text saying where one law stops and the next "
+     "begins, which the running verse numbers cannot show. ⚠ They also cut across the chapter boundary the "
+     "numbering imposes, and <a href=\"deuteronomy-13.html#v13-1\">Deuteronomy 13:1</a> is the sharpest case "
+     "on these pages: <em>do not add to it, nor take from it</em> is the LAST verse of chapter 12 in every "
+     "English Bible and the FIRST of chapter 13 in the Hebrew — and the Masoretes then put a "
+     "<em>petuchah</em>, their heavier mark, immediately after it, so the sentence is joined to neither "
+     "side. Two traditions attach it to two different chapters and the scribes attach it to nothing. ⚠ Do "
+     "not read them as punctuation. They divide SENSE, not sentences, and a translation that turned them "
+     "into paragraph breaks would be making a claim the marks do not make.",
+     ("Deuteronomy", 22, 3)),
 ]
 
 ENCYCLOPEDIA = [
@@ -24638,3 +24662,28 @@ DICTIONARY_ES["kelim"] = ("kelim",
     "href=\"deuteronomy-22.es.html#v22-5\">Deuteronomio 22:5</a>, donde <em><a "
     "href=\"diccionario.html#keli-gever\">kelí guéver</a></em> no dice «ropa de hombre» por mucho que casi "
     "todo el estante moderno lo imprima así.")
+
+DICTIONARY_ES["setumah-petuchah"] = ("setumá / petujá",
+    "CERRADA / ABIERTA &mdash; las marcas de párrafo del propio texto masorético, impresas en esta "
+    "traducción como <strong>{ס}</strong> y <strong>{פ}</strong> en el punto donde caen, con las letras "
+    "hebreas que usaban los escribas (las páginas inglesas ponen <strong>{S}</strong> y "
+    "<strong>{P}</strong>). ⭐ <strong>Son las divisiones más antiguas que tiene la Biblia hebrea, y no "
+    "son los números de capítulo.</strong> Una <em>petujá</em>, sección ABIERTA, termina la línea donde "
+    "está y empieza la siguiente sección en un renglón nuevo, dejando en blanco lo que queda de la línea "
+    "&mdash;es el corte más fuerte de los dos. Una <em>setumá</em>, sección CERRADA, deja un hueco de "
+    "unas pocas palabras dentro de la línea y sigue. Las dos son unos mil años más antiguas que los "
+    "números de capítulo y versículo: los capítulos que conoce el lector se le ajustaron a la Biblia "
+    "latina en el siglo XIII, mientras que estas marcas están en la tradición escribal que heredaron los "
+    "masoretas, y los rollos del mar Muerto ya las traen. ⚠ Por eso vale la pena mirarlas donde las dos "
+    "cosas no coinciden. <a href=\"deuteronomy-22.es.html\">Deuteronomio 22</a> es un capítulo de leyes "
+    "breves sin conexión entre sí, y sus trece marcas &mdash;doce <em>setumá</em> y la <em>petujá</em>, "
+    "más pesada, después del <a href=\"deuteronomy-22.es.html#v22-5\">v5</a>&mdash; son el texto diciendo "
+    "dónde acaba una ley y empieza la siguiente, cosa que la numeración corrida no puede mostrar. ⚠ "
+    "También cortan por encima del límite de capítulo que impone la numeración, y <a "
+    "href=\"deuteronomy-13.es.html#v13-1\">Deuteronomio 13:1</a> es el caso más agudo de estas páginas: "
+    "<em>no le añadas, ni le quites</em> es el ÚLTIMO versículo del capítulo 12 en toda Biblia inglesa y "
+    "el PRIMERO del capítulo 13 en el hebreo &mdash;y los masoretas ponen justo después una "
+    "<em>petujá</em>, su marca más pesada, de modo que la frase no queda unida a ninguno de los dos "
+    "lados. Dos tradiciones la atan a dos capítulos distintos y los escribas no la atan a nada. ⚠ No hay "
+    "que leerlas como puntuación. Dividen el SENTIDO, no las oraciones, y una traducción que las "
+    "convirtiera en puntos y aparte estaría afirmando algo que las marcas no afirman.")
