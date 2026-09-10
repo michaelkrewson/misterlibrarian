@@ -341,6 +341,39 @@ a{color:#f7931a}
   .tilegrid{grid-template-columns:1fr 1fr 1fr}
 }
 
+/* ── entry-page recirculation: "Keep reading" + the board pointer ───────── */
+/* Both sit under the article and match its 760px measure rather than the
+   .wrap's full 1000px — an end-of-article module that runs wider than the
+   text it follows reads as a different page bolted on, not as the end of
+   this one. Two columns at that width, never the front page's three. */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+/* Accent-tinted rather than the neutral .tile box, so it reads as "this is
+   a different KIND of thing" (a live board, not another article) without
+   shouting — it sits between the article and the comment prompt. */
+.boardpromo{max-width:760px;margin:38px auto 0}
+.boardpromo a{display:block;text-decoration:none;padding:18px 20px;
+  border:1px solid rgba(247,147,26,.28);border-radius:12px;
+  background:rgba(247,147,26,.05);
+  transition:border-color .15s,background .15s}
+.boardpromo a:hover{border-color:rgba(247,147,26,.55);
+  background:rgba(247,147,26,.09)}
+.bp-k{display:block;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#f7931a;margin-bottom:7px}
+.bp-t{display:block;color:#e8eef7;font-size:18px;line-height:1.3;margin-bottom:6px}
+.bp-s{display:block;color:#a9b7c9;font-size:14.5px;line-height:1.6}
+
 /* ── the archive list — the LIST view of the same pool the tiles show ───── */
 /* No longer scoped to `.panel ul.archive` — the list used to only ever
    appear inside the Archive panel; now it's a bare alternate view sitting
@@ -426,8 +459,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 </head>
 <body>
 <div class="wrap">
-  <header class="hsm">
-    <a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
   <defs>
     <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#f7931a" stop-opacity=".95"/>
@@ -450,8 +482,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a>
-  </header>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
   
   <article class="entry">
     <h1 class="etitle">Older Than the United Nations, and Never Asked to Join</h1>
@@ -706,10 +737,41 @@ other boards already ask of gold and the mega-caps.</p>
 
     <div class="tags"><a class="tg" href="tag-bis.html">bis</a><a class="tg" href="tag-imf.html">imf</a><a class="tg" href="tag-world-bank.html">world bank</a><a class="tg" href="tag-bretton-woods.html">bretton woods</a><a class="tg" href="tag-sdr.html">sdr</a><a class="tg" href="tag-central-banks.html">central banks</a><a class="tg" href="tag-united-nations.html">united nations</a><a class="tg" href="tag-monetary-policy.html">monetary policy</a><a class="tg" href="tag-notes.html">notes</a></div>
   </article>
+  <aside class="boardpromo">
+    <a href="money-worldwide.html">
+      <span class="bp-k">Standing board</span>
+      <span class="bp-t">Money Worldwide →</span>
+      <span class="bp-s">What the world’s money is actually in — money supply, reserves, debt-to-GDP, exchange rates and gold, country by country.</span>
+    </a>
+  </aside>
   <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Older%20Than%20the%20United%20Nations%2C%20and%20Never%20Asked%20to%20Join%3A%0A%0Ahttps%3A//mistertranslation.com/finance/untangling-bis-imf-world-bank.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/untangling-bis-imf-world-bank.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="treasury-bond-buyback-explained.html" data-search="six billion dollars against seventy-four, and yields went up anyway the treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling." data-tags="treasury bonds yields federal-reserve monetary-policy central-banks deficits mstr bitcoin real-estate mortgages notes">
+      <span class="ec-d">SEPTEMBER 10, 2026</span>
+      <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
+      <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling.</span>
+    </a>
+    <a class="tile" href="cubicle-propst-right-not-to-be-interrupted.html" data-search="he drew it at 120 degrees. they built it at 90. robert propst designed the cubicle to give office workers a screen they controlled. he lived to watch companies turn it into a box, and said so." data-tags="office-design cubicle robert-propst herman-miller return-to-office remote-work real-estate productivity labor notes">
+      <span class="ec-d">SEPTEMBER 10, 2026</span>
+      <span class="ec-t">He Drew It at 120 Degrees. They Built It at 90.</span>
+      <span class="ec-s">Robert Propst designed the cubicle to give office workers a screen they controlled. He lived to watch companies turn it into a box, and said so.</span>
+    </a>
+    <a class="tile" href="trezor-brevo-phishing.html" data-search="the phishing email really was from trezor on september 9th roughly 347,000 people got an email from help@trezor." data-tags="bitcoin self-custody hardware-wallet security phishing trezor ledger bitkey seed-phrase entropy notes">
+      <span class="ec-d">SEPTEMBER 10, 2026</span>
+      <span class="ec-t">The Phishing Email Really Was From Trezor</span>
+      <span class="ec-s">On September 9th roughly 347,000 people got an email from help@trezor.</span>
+    </a>
+    <a class="tile" href="alby-hub-vulnerability.html" data-search="&quot;not your keys, not your coins&quot; just grew a second half alby disclosed a critical flaw in alby hub, its self-hosted lightning node software, that could let an attacker who reaches an exposed control panel send…" data-tags="bitcoin self-custody lightning node security vulnerability alby open-source notes">
+      <span class="ec-d">SEPTEMBER 9, 2026</span>
+      <span class="ec-t">&quot;Not Your Keys, Not Your Coins&quot; Just Grew a Second Half</span>
+      <span class="ec-s">Alby disclosed a critical flaw in Alby Hub, its self-hosted Lightning node software, that could let an attacker who reaches an exposed control panel send…</span>
+    </a>
+    </div>
+  </section>
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
-  <footer>
-    The Librarian&#x27;s Ledger · <a href="feed.xml">RSS</a> · nothing here is investment advice · <span class="hits" id="hits-finance-untangling-bis-imf-world-bank-html">👁 <span id="hits-finance-untangling-bis-imf-world-bank-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is investment advice · <span class="hits" id="hits-finance-untangling-bis-imf-world-bank-html">👁 <span id="hits-finance-untangling-bis-imf-world-bank-html-n">—</span> views</span>
 <script>
 (function(){
   fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Funtangling-bis-imf-world-bank.html.json")
@@ -723,9 +785,7 @@ other boards already ask of gold and the mega-caps.</p>
       var el = document.getElementById("hits-finance-untangling-bis-imf-world-bank-html"); if (el) el.style.display = "none";
     });
 })();
-</script>
-    <p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p>
-  </footer>
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>
 </div>
 </body>
 </html>

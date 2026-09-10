@@ -850,7 +850,121 @@ def _ask_nudge(e):
     return _comment_box(e["title"], full_url)
 
 
-def build_entry_page(e, board=None):
+# ──────────────────────────────────────────── entry-page recirculation ──
+# A reader who arrives on an entry from a search engine or a shared link has
+# never seen the front page. Until 2026-09-10 an entry was the ONE page type
+# in this publication carrying neither `_chrome` (nav + search) nor `_foot`
+# (every board, All tags, Ask, RSS, the sibling publication) — it hand-rolled
+# a brand-only header and a four-item footer instead. So the boards, which
+# are the whole reason this publication exists, were invisible to precisely
+# the readers most likely to want them, and the only way out of an entry was
+# "← Back to the Ledger", which reads as a browser Back button rather than an
+# invitation. The Librarian Abroad had already made the opposite choice (see
+# build_travel.header — nav and search on every post, entries included).
+#
+# Both shared functions are now used here like everywhere else. What follows
+# is the extra, entry-specific recirculation a nav alone doesn't provide:
+# something to read next, and a pointer to the one board this entry is about.
+
+
+def _related_entries(e, pool, limit=4):
+    """Entries to offer at the foot of `e`, best first.
+
+    Ranked by shared-tag count, ties broken by recency, then topped up with
+    the most recent entries so the block is never short — a reader who
+    reaches the bottom should always have somewhere to go, including on an
+    entry whose tags are unique to it.
+
+    Two stable sorts rather than one compound key: `date` sorts descending
+    and `shared` also sorts descending, but they're different types, so a
+    single `key` would need a negated proxy for the date string. Sorting by
+    the weaker criterion first and letting Python's stable sort preserve it
+    underneath the stronger one says the same thing without that.
+
+    `pool` is the LIVE entry list. A draft must never surface here — it is
+    unlisted and noindexed by contract (see build_entry_page's banner), and
+    advertising one from a public page would undo both.
+    """
+    def tags_of(o):
+        return {t.lower() for t in o.get("tags", ())}
+
+    mine = tags_of(e)
+    others = [o for o in pool if o["file"] != e["file"] and not o["draft"]]
+    others.sort(key=lambda o: o["date"], reverse=True)
+    others.sort(key=lambda o: len(mine & tags_of(o)), reverse=True)
+    return others[:limit]
+
+
+def _related_block(e, pool):
+    """"Keep reading" — the end-of-article module newspapers get the most
+    recirculation out of. Reuses `_tile`/`_front_item` rather than a private
+    card of its own so it can never drift from the front page's typography;
+    the `data-search`/`data-tags` attributes a tile carries are inert here
+    (nothing on an entry page filters), which is a smaller cost than a
+    second tile renderer to keep in sync."""
+    picks = _related_entries(e, pool)
+    if not picks:
+        return ""
+    tiles = "\n".join(
+        _tile(_front_item(href=o["file"],
+                          label=blogkit.pretty_date(o["date"]).upper(),
+                          title=o["title"], desc=_entry_desc(o),
+                          date=o["date"], tags=o.get("tags", ())))
+        for o in picks)
+    return ('  <section class="readnext">\n'
+            '    <h2>Keep reading</h2>\n'
+            '    <div class="tilegrid">\n%s\n    </div>\n'
+            '  </section>' % tiles)
+
+
+# Which standing board an entry's tags make it genuinely about. Ordered
+# most-specific first — the first match wins, so "mstr" reaches Bitcoin
+# Treasuries rather than stopping at a broader board that also lists it.
+#
+# The generic "bitcoin" tag is deliberately absent: it sits on nearly every
+# entry here, so including it would match everything and turn a contextual
+# pointer into a house ad. Same reasoning excludes the Asset Board and the
+# Crypto Heat Map entirely — no tag in use today is really *about* either.
+BOARD_PROMOS = (
+    ("treasuries.html", "Bitcoin Treasuries",
+     "Who holds the world’s Bitcoin — public companies, miners, ETFs, "
+     "countries, private companies and DeFi protocols, ranked by coins held.",
+     {"treasury", "mstr"}),
+    ("money-worldwide.html", "Money Worldwide",
+     "What the world’s money is actually in — money supply, reserves, "
+     "debt-to-GDP, exchange rates and gold, country by country.",
+     {"bis", "imf", "world bank", "sdr", "bretton woods", "central banks",
+      "monetary policy", "money supply", "united nations", "federal reserve",
+      "bonds", "yields", "deficits"}),
+    ("bitcoin.html", "The Bitcoin Board",
+     "Bitcoin’s own numbers, live — block height, coins issued, "
+     "difficulty, hash rate, the mempool, fees and the next halving.",
+     {"mining", "halving", "scarcity", "node", "lightning"}),
+)
+
+
+def _board_promo(e):
+    """A pointer to the one standing board this entry is actually about.
+
+    Deliberately precise rather than universal: it renders only on a real
+    tag match, and plenty of entries match nothing at all. A promo stapled
+    to every entry regardless of subject is an ad, and readers learn to skip
+    ads — while the nav and the footer (both now on entries) already carry
+    every board unconditionally for anyone who wants the whole list."""
+    mine = {t.lower() for t in e.get("tags", ())}
+    for href, label, blurb, tags in BOARD_PROMOS:
+        if mine & tags:
+            return ('  <aside class="boardpromo">\n'
+                    '    <a href="%s">\n'
+                    '      <span class="bp-k">Standing board</span>\n'
+                    '      <span class="bp-t">%s →</span>\n'
+                    '      <span class="bp-s">%s</span>\n'
+                    '    </a>\n'
+                    '  </aside>' % (esc(href), esc(label), esc(blurb)))
+    return ""
+
+
+def build_entry_page(e, board=None, pool=()):
     """Render one entry. Returns None for a `live: true` entry when board
     data can't supply a live block height (see _btc_live_stats) — the
     caller's job in that case is to leave the file exactly as it last
@@ -869,13 +983,9 @@ def build_entry_page(e, board=None):
 
     # Hits are skipped on a draft: it's an unlisted preview, not a real page a
     # visitor lands on, so a view count there would be nearly meaningless noise.
-    # Shown in the footer rather than up by the date — page metadata, not
-    # something competing with the title and date for a reader's attention.
-    hits_foot = ""
-    if not e["draft"]:
-        hits = _hits_widget("%s/%s" % (BASE, e["file"]), " views")
-        if hits:
-            hits_foot = " · %s" % hits
+    # `_foot` renders the widget (and drops it silently on a None path), same
+    # as it does for every board — the entry page used to build its own.
+    hits_path = None if e["draft"] else "%s/%s" % (BASE, e["file"])
 
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
@@ -902,9 +1012,7 @@ def build_entry_page(e, board=None):
 </head>
 <body>
 <div class="wrap">
-  <header class="hsm">
-    <a class="brand" href="index.html">%(mark)s<span class="wm">The Librarian's <span class="em">Ledger</span></span></a>
-  </header>
+  %(chrome)s
   %(banner)s
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
@@ -913,12 +1021,11 @@ def build_entry_page(e, board=None):
 %(body)s
     %(tags)s
   </article>
+%(promo)s
   %(nudge)s
+%(related)s
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
-  <footer>
-    %(site)s · <a href="feed.xml">RSS</a> · nothing here is investment advice%(hits_foot)s
-    %(legal)s
-  </footer>
+%(foot)s
 </div>
 </body>
 </html>
@@ -930,15 +1037,19 @@ def build_entry_page(e, board=None):
         "url": url,
         "css": CSS.replace("__ACCENT__", ACCENT),
         "goat": _goatcounter(),
-        "mark": MARK_SVG.replace("__ACCENT__", ACCENT),
+        # active="home": an entry belongs to Writing, so the nav marks that
+        # section current — the newspaper convention of telling an arriving
+        # reader which neighbourhood they landed in.
+        "chrome": _chrome("home"),
         "banner": banner,
         "date": date_line,
         "hero": _entry_hero(e),
         "body": body,
         "tags": _tag_chips(e),
+        "promo": _board_promo(e),
         "nudge": _ask_nudge(e),
-        "hits_foot": hits_foot,
-        "legal": _legal(),
+        "related": _related_block(e, pool),
+        "foot": _foot(hits_path),
     }
 
 
@@ -1910,6 +2021,39 @@ a{color:__ACCENT__}
 @media (min-width:980px){
   .tilegrid{grid-template-columns:1fr 1fr 1fr}
 }
+
+/* ── entry-page recirculation: "Keep reading" + the board pointer ───────── */
+/* Both sit under the article and match its 760px measure rather than the
+   .wrap's full 1000px — an end-of-article module that runs wider than the
+   text it follows reads as a different page bolted on, not as the end of
+   this one. Two columns at that width, never the front page's three. */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+/* Accent-tinted rather than the neutral .tile box, so it reads as "this is
+   a different KIND of thing" (a live board, not another article) without
+   shouting — it sits between the article and the comment prompt. */
+.boardpromo{max-width:760px;margin:38px auto 0}
+.boardpromo a{display:block;text-decoration:none;padding:18px 20px;
+  border:1px solid rgba(247,147,26,.28);border-radius:12px;
+  background:rgba(247,147,26,.05);
+  transition:border-color .15s,background .15s}
+.boardpromo a:hover{border-color:rgba(247,147,26,.55);
+  background:rgba(247,147,26,.09)}
+.bp-k{display:block;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:__ACCENT__;margin-bottom:7px}
+.bp-t{display:block;color:#e8eef7;font-size:18px;line-height:1.3;margin-bottom:6px}
+.bp-s{display:block;color:#a9b7c9;font-size:14.5px;line-height:1.6}
 
 /* ── the archive list — the LIST view of the same pool the tiles show ───── */
 /* No longer scoped to `.panel ul.archive` — the list used to only ever
@@ -6462,7 +6606,9 @@ def main():
               "board in place", file=sys.stderr)
 
     for e in entries:
-        page = build_entry_page(e, board)
+        # `live`, not `entries`: "Keep reading" may only advertise published
+        # entries, never a draft (unlisted + noindexed by contract).
+        page = build_entry_page(e, board, live)
         if page is None:
             print("  ! %s: no live block height in this run — leaving the "
                   "last successful build in place" % e["file"], file=sys.stderr)
