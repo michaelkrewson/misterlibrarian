@@ -1121,6 +1121,62 @@ def _x_respond_nudge(p):
         '</div></div>')
 
 
+def _related_posts(p, pool, limit=3):
+    """Entries to offer at the foot of `p`, best first.
+
+    Ranked by PLACE first, then shared tags, then recency. Place leads
+    because this is a travel and food blog: "more from Vancouver" is a
+    genuine reason to keep reading, whereas the chronological prev/next
+    below it pairs yesterday's ramen with today's burger on nothing more
+    than the order they were written. The two modules answer different
+    questions, so both stay.
+
+    Topped up with the most recent entries so the strip is never short —
+    a reader who reaches the bottom should always have somewhere to go,
+    including on the first entry from a place written about only once.
+
+    Two stable sorts rather than one compound key: recency sorts on a date
+    string and the rest on numbers, so sorting by the weaker criterion
+    first and letting Python's stable sort hold it underneath the stronger
+    one avoids needing a negated proxy for the date.
+
+    Drafts are filtered out. A draft is unlisted and noindexed by contract
+    (see the draft-previews section below), and advertising one from a
+    published page would undo both at once.
+    """
+    def tags_of(o):
+        return {t.lower() for t in o["tags"]}
+
+    def place_of(o):
+        return (o["place"] or "").strip().lower()
+
+    mine_tags, mine_place = tags_of(p), place_of(p)
+    others = [o for o in pool if o["file"] != p["file"] and not o["draft"]]
+    others.sort(key=lambda o: o["date"], reverse=True)
+    others.sort(key=lambda o: (bool(mine_place) and place_of(o) == mine_place,
+                               len(mine_tags & tags_of(o))),
+                reverse=True)
+    return others[:limit]
+
+
+def _related_block(p, pool):
+    """"Keep reading" — the end-of-article module that gives a reader who
+    arrived from a search engine somewhere to go other than away. Reuses
+    `post_card` rather than a private card of its own, so the strip can
+    never drift from the index's own card typography; the `data-tags` /
+    `data-stars` / `data-search` attributes a card carries are inert here
+    (nothing on a post page filters or sorts), which is a smaller cost
+    than a second card renderer to keep in sync."""
+    picks = _related_posts(p, pool)
+    if not picks:
+        return ""
+    cards = "\n".join(post_card(o) for o in picks)
+    return (f'<section class="readnext">\n'
+            f'<h2>Keep reading</h2>\n'
+            f'<div class="cards">\n{cards}\n</div>\n'
+            f'</section>')
+
+
 def build_post_pages(posts):
     out = []
     for i, p in enumerate(posts):
@@ -1143,6 +1199,7 @@ def build_post_pages(posts):
         body = f"""{_post_article(p)}
 {_x_respond_nudge(p)}
 {hits_html}
+{_related_block(p, posts)}
 {navbar}
 <p class="backlink"><a href="index.html">← All entries</a></p>"""
 

@@ -320,6 +320,50 @@ img { max-width: 100%; height: auto; display: block; }
   .cards .card:first-child .cardbody h2 { font-size: 27px; }
 }
 
+/* ------------------------------------------- "keep reading" (foot of post) -- */
+/* The related strip under an entry. A reader who lands here from a search
+   engine has never seen the index, so the foot of the page is the one place
+   left to offer them somewhere to go — see _related_block in build_travel.py
+   for how the three are chosen (place first, then shared tags). */
+
+.readnext { margin: 54px 0 0; border-top: 1px solid var(--line); padding-top: 26px; }
+.readnext > h2 {
+  margin: 0 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+/* Smaller than an index card: this is a footnote to the entry above it, not
+   the main event. The tag pills are dropped and the summary is clamped for
+   the same reason — left full-size, three cards of seven pills each and an
+   unclamped summary made the strip taller than the closing section of the
+   entry it hangs off, which inverts what the reader should be looking at.
+   Nothing is lost: the pills repeat tags the entry above already lists, and
+   a card is a teaser, not the piece. */
+.readnext .cardbody { padding: 14px 16px 17px; }
+.readnext .cardbody h2 { font-size: 19px; margin: 6px 0 7px; }
+.readnext .cardbody .summary {
+  font-size: 14.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.readnext .cardbody .tags { display: none; }
+
+@media (min-width: 720px) {
+  .readnext .cards { grid-template-columns: 1fr 1fr 1fr; }
+  /* The index promotes its first card to a full-width hero; a related strip
+     wants three equal cards, so that treatment is undone here rather than by
+     forking post_card into a second renderer just to drop one class. */
+  .readnext .cards .card:first-child { grid-column: auto; }
+  .readnext .cards .card:first-child .thumb img { aspect-ratio: 16 / 9; }
+  .readnext .cards .card:first-child .cardbody h2 { font-size: 19px; }
+}
+
 /* --------------------------------------------------- listing view + pages -- */
 /* The cards/list toggle + "show more" pagination on the index page. A whole
    section (#cards, #archiveList, #sortbar, #loadMoreWrap) is shown/hidden via
