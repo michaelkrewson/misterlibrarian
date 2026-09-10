@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 545" role="img"
+     aria-label="Diagram of a Treasury buyback as a maturity swap. In the middle, the U.S. Treasury spends 6 billion dollars. To the left, it retires an old 10-to-20-year bond whose rate was fixed for another decade or two. To the right, it sells short-term Treasury bills to raise that same cash. The result: total debt unchanged, average maturity shorter, and interest cost re-priced within months at whatever rate the Federal Reserve has set by then.">
+  <defs>
+    <marker id="bbArrowL" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f7931a"/>
+    </marker>
+    <marker id="bbArrowDown" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e8865c"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="545" fill="#0a0f1a"/>
+
+  <text x="450" y="44" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">A buyback doesn't retire debt. It changes when the bill comes due.</text>
+  <text x="450" y="72" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="12" letter-spacing="0.12em" fill="#94a3b8">WHERE THE $6 BILLION COMES FROM — AND WHAT IT LEAVES BEHIND</text>
+
+  <!-- ── Left node: the bond that gets retired ──────────────────────── -->
+  <rect x="40" y="145" width="190" height="115" rx="12" fill="#0d1520"
+        stroke="#a3b378" stroke-width="2"/>
+  <text x="135" y="177" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" letter-spacing="0.11em" fill="#a3b378">TAKEN OFF THE MARKET</text>
+  <text x="135" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8dfd2">An old 10–20</text>
+  <text x="135" y="227" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8dfd2">year bond</text>
+  <text x="135" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="12"
+        fill="#94a3b8" font-style="italic">rate fixed for decades</text>
+
+  <!-- ── Centre node: Treasury ──────────────────────────────────────── -->
+  <rect x="355" y="145" width="190" height="115" rx="12" fill="#0d1520"
+        stroke="#f7931a" stroke-width="2.5"/>
+  <text x="450" y="177" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" letter-spacing="0.11em" fill="#f7931a">U.S. TREASURY</text>
+  <text x="450" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="26"
+        font-weight="bold" fill="#e8dfd2">$6 billion</text>
+  <text x="450" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="12"
+        fill="#94a3b8" font-style="italic">September 10 operation</text>
+
+  <!-- ── Right node: the bills sold to pay for it ───────────────────── -->
+  <rect x="670" y="145" width="190" height="115" rx="12" fill="#0d1520"
+        stroke="#e8865c" stroke-width="2"/>
+  <text x="765" y="177" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" letter-spacing="0.11em" fill="#e8865c">SOLD IN ITS PLACE</text>
+  <text x="765" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8dfd2">Short-term</text>
+  <text x="765" y="227" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8dfd2">Treasury bills</text>
+  <text x="765" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="12"
+        fill="#94a3b8" font-style="italic">rate resets in weeks</text>
+
+  <!-- ── Arrows ─────────────────────────────────────────────────────── -->
+  <text x="292" y="188" text-anchor="middle" font-family="Georgia, serif" font-size="13"
+        fill="#94a3b8">buys it back,</text>
+  <text x="292" y="204" text-anchor="middle" font-family="Georgia, serif" font-size="13"
+        fill="#94a3b8">pays cash</text>
+  <line x1="350" y1="222" x2="235" y2="222" stroke="#f7931a" stroke-width="2"
+        marker-end="url(#bbArrowL)"/>
+
+  <text x="607" y="188" text-anchor="middle" font-family="Georgia, serif" font-size="13"
+        fill="#94a3b8">raises that same</text>
+  <text x="607" y="204" text-anchor="middle" font-family="Georgia, serif" font-size="13"
+        fill="#94a3b8">cash by borrowing</text>
+  <line x1="550" y1="222" x2="665" y2="222" stroke="#f7931a" stroke-width="2"
+        marker-end="url(#bbArrowL)"/>
+
+  <!-- ── Result cells ───────────────────────────────────────────────── -->
+  <text x="450" y="318" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="11" letter-spacing="0.14em" fill="#94a3b8">WHAT ACTUALLY CHANGED</text>
+
+  <rect x="40" y="336" width="250" height="96" rx="11" fill="#111a27"
+        stroke="rgba(255,255,255,.10)" stroke-width="1.5"/>
+  <text x="165" y="366" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" letter-spacing="0.11em" fill="#94a3b8">TOTAL DEBT OWED</text>
+  <text x="165" y="401" text-anchor="middle" font-family="Georgia, serif" font-size="24"
+        fill="#94a3b8">Unchanged</text>
+
+  <rect x="325" y="336" width="250" height="96" rx="11" fill="#1a1408"
+        stroke="rgba(247,147,26,.35)" stroke-width="1.5"/>
+  <text x="450" y="366" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" letter-spacing="0.11em" fill="#f7931a">AVERAGE MATURITY</text>
+  <text x="450" y="401" text-anchor="middle" font-family="Georgia, serif" font-size="24"
+        fill="#f7931a">Shorter</text>
+
+  <rect x="610" y="336" width="250" height="96" rx="11" fill="#1a0f12"
+        stroke="rgba(232,134,92,.45)" stroke-width="1.5"/>
+  <text x="735" y="366" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="10.5" letter-spacing="0.11em" fill="#e8865c">INTEREST COST</text>
+  <text x="735" y="401" text-anchor="middle" font-family="Georgia, serif" font-size="22"
+        fill="#e8865c">Re-priced in months</text>
+
+  <!-- ── The punchline ──────────────────────────────────────────────── -->
+  <line x1="735" y1="438" x2="735" y2="466" stroke="#e8865c" stroke-width="2"
+        marker-end="url(#bbArrowDown)"/>
+  <text x="860" y="495" text-anchor="end" font-family="Georgia, serif" font-size="16"
+        fill="#e8dfd2">…at whatever rate the Federal Reserve has set by then.</text>
+  <text x="860" y="521" text-anchor="end" font-family="Georgia, serif" font-size="16"
+        fill="#94a3b8" font-style="italic">Which is the one number the Treasury does not choose.</text>
+</svg>

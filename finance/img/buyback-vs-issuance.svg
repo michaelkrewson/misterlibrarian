@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img"
+     aria-label="Two bars drawn to the same scale. The top bar is the 74 billion dollars of new 10-, 20- and 30-year debt the Treasury sells in September 2026, split into 39 billion of 10-year notes, 13 billion of 20-year bonds and 22 billion of 30-year bonds. The bottom bar is the 6 billion dollar buyback operation on September 10 — a sliver about one twelfth as long as the top bar.">
+  <rect width="900" height="430" fill="#0a0f1a"/>
+
+  <text x="70" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="21"
+        fill="#e8dfd2">What Treasury is buying back, next to what it is selling</text>
+  <text x="70" y="72" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#94a3b8">SEPTEMBER 2026 — BOTH BARS DRAWN TO THE SAME SCALE</text>
+
+  <!-- ── Bar A: long-dated issuance ─────────────────────────────────── -->
+  <text x="70" y="120" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#94a3b8">SOLD TO INVESTORS THIS MONTH</text>
+  <text x="70" y="145" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        font-weight="bold" fill="#e8dfd2">$74 billion of new 10-, 20- and 30-year debt</text>
+
+  <!-- segments: 760px = $74B, so 10.2703 px per $B -->
+  <rect x="70"     y="160" width="400.5" height="58" fill="#3b4a63"/>
+  <rect x="470.5"  y="160" width="133.5" height="58" fill="#2f3d54"/>
+  <rect x="604.0"  y="160" width="226.0" height="58" fill="#26334a"/>
+  <line x1="470.5" y1="160" x2="470.5" y2="218" stroke="#0a0f1a" stroke-width="2"/>
+  <line x1="604.0" y1="160" x2="604.0" y2="218" stroke="#0a0f1a" stroke-width="2"/>
+  <rect x="70" y="160" width="760" height="58" rx="9" fill="none"
+        stroke="rgba(255,255,255,.14)" stroke-width="1.5"/>
+
+  <text x="270"   y="196" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        fill="#e8dfd2">10-year · $39B</text>
+  <text x="537"   y="196" text-anchor="middle" font-family="Georgia, serif" font-size="14"
+        fill="#e8dfd2">20-yr · $13B</text>
+  <text x="717"   y="196" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        fill="#e8dfd2">30-year · $22B</text>
+
+  <!-- Where the buyback lands inside the 10-year segment alone. Stops short of the
+       label below it: run it all the way down to bar B and it strikes through
+       "BOUGHT BACK ON THURSDAY". The two bars share an x-origin, so the eye
+       joins the dashes to the amber block without the line having to touch it. -->
+  <line x1="131.6" y1="152" x2="131.6" y2="240" stroke="#f7931a" stroke-width="1.5"
+        stroke-dasharray="4 5" opacity="0.75"/>
+
+  <!-- ── Bar B: the buyback ─────────────────────────────────────────── -->
+  <text x="70" y="264" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12"
+        letter-spacing="0.12em" fill="#f7931a">BOUGHT BACK ON THURSDAY</text>
+  <text x="70" y="289" font-family="Georgia, 'Times New Roman', serif" font-size="19"
+        font-weight="bold" fill="#e8dfd2">$6 billion — triple the usual size, and the biggest so far in this bucket</text>
+
+  <rect x="70" y="304" width="760" height="58" rx="9" fill="#161f2e"/>
+  <rect x="70" y="304" width="61.6" height="58" rx="9" fill="#f7931a"/>
+  <rect x="70" y="304" width="760" height="58" rx="9" fill="none"
+        stroke="rgba(255,255,255,.14)" stroke-width="1.5"/>
+  <text x="150" y="340" font-family="Georgia, 'Times New Roman', serif" font-size="17"
+        fill="#f7931a">$6B — about one twelfth of the bar above it</text>
+
+  <text x="70" y="398" font-family="Georgia, serif" font-size="14" fill="#94a3b8"
+        font-style="italic">Issuance sizes are Treasury's own published August 2026 quarterly refunding schedule; the</text>
+  <text x="70" y="418" font-family="Georgia, serif" font-size="14" fill="#94a3b8"
+        font-style="italic">buyback is the announced maximum for the September 10 operation. Bills are excluded from both bars.</text>
+</svg>
