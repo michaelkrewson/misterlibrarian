@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img"
+     aria-label="Three rows showing what comes back with what. Row one: the twelve words plus the encrypted channel-state backup bring back everything, channels included, in minutes. Row two: the twelve words alone bring back all the money — the provider closes the channels and the balance lands at your own ordinary bitcoin address, typically within the hour, but the channels are gone. Row three: if the wallet never comes back at all, the provider's sixty-day timer closes the channels to that same address, where the money waits for the words, for as long as it takes.">
+  <rect width="900" height="540" fill="#0a0f1a"/>
+
+  <text x="450" y="42" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="20" fill="#e8dfd2">What comes back, with what</text>
+
+  <!-- column heads -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#94a3b8" font-style="italic">
+    <text x="190" y="84" text-anchor="middle">what you still have</text>
+    <text x="430" y="84" text-anchor="start">what you get back</text>
+  </g>
+
+  <!-- ROW 1 -->
+  <g transform="translate(0,130)">
+    <rect x="50" y="-40" width="280" height="80" rx="12" fill="#0d1520" stroke="#a3b378" stroke-width="2"/>
+    <text x="190" y="-10" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">the 12 words</text>
+    <text x="190" y="16" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#a3b378">+ the channel-state backup</text>
+    <line x1="340" y1="0" x2="400" y2="0" stroke="#a3b378" stroke-width="2"/>
+    <polygon points="400,-6 412,0 400,6" fill="#a3b378"/>
+    <text x="430" y="-14" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">Everything. Channels stay open.</text>
+    <text x="430" y="12" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">minutes — this is the only path that keeps the channels</text>
+  </g>
+
+  <!-- ROW 2 -->
+  <g transform="translate(0,260)">
+    <rect x="50" y="-40" width="280" height="80" rx="12" fill="#0d1520" stroke="#e8c968" stroke-width="2"/>
+    <text x="190" y="-10" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">the 12 words</text>
+    <text x="190" y="16" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#e8c968">and nothing else</text>
+    <line x1="340" y1="0" x2="400" y2="0" stroke="#e8c968" stroke-width="2"/>
+    <polygon points="400,-6 412,0 400,6" fill="#e8c968"/>
+    <text x="430" y="-14" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">All the money. Channels close.</text>
+    <text x="430" y="12" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">the LSP closes; your side lands at your own address, ~1 confirmation</text>
+  </g>
+
+  <!-- ROW 3 -->
+  <g transform="translate(0,390)">
+    <rect x="50" y="-40" width="280" height="80" rx="12" fill="#0d1520" stroke="#e8865c" stroke-width="2"/>
+    <text x="190" y="-10" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">nothing, for 60 days</text>
+    <text x="190" y="16" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#e8865c">the wallet never comes back</text>
+    <line x1="340" y1="0" x2="400" y2="0" stroke="#e8865c" stroke-width="2"/>
+    <polygon points="400,-6 412,0 400,6" fill="#e8865c"/>
+    <text x="430" y="-14" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">The timer closes it for you.</text>
+    <text x="430" y="12" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">the money waits at that same address for the words, however long</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="60" y1="460" x2="840" y2="460" stroke="rgba(148,163,184,.25)" stroke-width="1"/>
+  <text x="450" y="492" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" fill="#e8dfd2">The words always recover the <tspan fill="#e8c968">money</tspan>. Only the backup recovers the <tspan fill="#a3b378">channels</tspan>.</text>
+  <text x="450" y="518" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="14" fill="#94a3b8" font-style="italic">"Your own address" means the plain one any bitcoin wallet finds from the twelve words — no provider's permission needed.</text>
+</svg>
