@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" role="img"
+     aria-label="Two plan-view diagrams of the same office panels. On the left, Robert Propst's 1968 Action Office II: two panels meeting at a 120 degree angle, screening the worker from behind while leaving 240 degrees open in front. On the right, the cubicle the 1980s made from the same parts: four panels at 90 degrees, closed on every side but a narrow entry gap, with the worker facing the wall and their back to the opening.">
+  <rect width="900" height="500" fill="#0a0f1a"/>
+
+  <!-- ── headings ──────────────────────────────────────────────────────── -->
+  <text x="250" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="21"
+        fill="#a3b378" font-weight="bold">What Propst drew</text>
+  <text x="250" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        fill="#94a3b8" font-style="italic">Action Office II, 1968 — two panels at 120°</text>
+
+  <text x="650" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="21"
+        fill="#e8865c" font-weight="bold">What the floor plan made</text>
+  <text x="650" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="15"
+        fill="#94a3b8" font-style="italic">the cubicle, 1980s — four panels at 90°</text>
+
+  <line x1="450" y1="96" x2="450" y2="416" stroke="rgba(255,255,255,.10)" stroke-width="1.5"/>
+
+  <!-- ══ LEFT: the 120° obtuse V, opening toward the reader ═══════════════ -->
+  <!-- the open approach, drawn first so the panels sit on top of it -->
+  <path d="M 124 234 A 148 148 0 0 0 376 234" fill="none" stroke="#a3b378"
+        stroke-width="1.6" stroke-dasharray="5 6" opacity=".55"/>
+  <text x="250" y="332" text-anchor="middle" font-family="Georgia, serif" font-size="16"
+        fill="#a3b378" font-style="italic">240° left open — you can be reached</text>
+
+  <!-- the two panels -->
+  <line x1="120" y1="228" x2="250" y2="153" stroke="#a3b378" stroke-width="9" stroke-linecap="round"/>
+  <line x1="250" y1="153" x2="380" y2="228" stroke="#a3b378" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- the angle they meet at — apex kept clear of the work surface -->
+  <path d="M 205 179 A 52 52 0 0 0 295 179" fill="none" stroke="#e8c968" stroke-width="1.6" opacity=".85"/>
+  <text x="250" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8c968" font-weight="bold">120°</text>
+
+  <!-- work surfaces hugging the lower half of each panel -->
+  <path d="M 160 226 L 216 194" fill="none" stroke="#e8dfd2" stroke-width="4.5"
+        stroke-linecap="round" opacity=".85"/>
+  <path d="M 284 194 L 340 226" fill="none" stroke="#e8dfd2" stroke-width="4.5"
+        stroke-linecap="round" opacity=".85"/>
+
+  <!-- the worker, screened behind, facing the open side -->
+  <circle cx="250" cy="243" r="13" fill="#0d1520" stroke="#e8dfd2" stroke-width="2.4"/>
+  <path d="M 231 271 A 19 19 0 0 1 269 271" fill="none" stroke="#e8dfd2" stroke-width="2.4" opacity=".7"/>
+
+  <text x="250" y="378" text-anchor="middle" font-family="Georgia, serif" font-size="16.5" fill="#e8dfd2">Screened behind. Open in front.</text>
+  <text x="250" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#94a3b8">You choose when to look up.</text>
+
+  <!-- ══ RIGHT: the 90° box ══════════════════════════════════════════════ -->
+  <!-- four panels, closed but for one entry gap at the lower right -->
+  <line x1="570" y1="155" x2="730" y2="155" stroke="#e8865c" stroke-width="9" stroke-linecap="round"/>
+  <line x1="570" y1="155" x2="570" y2="285" stroke="#e8865c" stroke-width="9" stroke-linecap="round"/>
+  <line x1="730" y1="155" x2="730" y2="285" stroke="#e8865c" stroke-width="9" stroke-linecap="round"/>
+  <line x1="570" y1="285" x2="652" y2="285" stroke="#e8865c" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- the one entry gap -->
+  <line x1="662" y1="285" x2="730" y2="285" stroke="#e8865c" stroke-width="1.6"
+        stroke-dasharray="5 6" opacity=".55"/>
+  <text x="650" y="332" text-anchor="middle" font-family="Georgia, serif" font-size="16"
+        fill="#e8865c" font-style="italic">one gap left open — you can be cornered</text>
+
+  <!-- the right angle, in the empty lower-left corner -->
+  <path d="M 592 285 L 592 263 L 570 263" fill="none" stroke="#e8c968" stroke-width="1.6" opacity=".85"/>
+  <text x="617" y="279" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8c968" font-weight="bold">90°</text>
+
+  <!-- work surface along the far wall -->
+  <path d="M 588 178 L 712 178" fill="none" stroke="#e8dfd2" stroke-width="4.5"
+        stroke-linecap="round" opacity=".85"/>
+
+  <!-- the worker, facing the wall, back to the gap -->
+  <circle cx="650" cy="222" r="13" fill="#0d1520" stroke="#e8dfd2" stroke-width="2.4"/>
+  <path d="M 631 250 A 19 19 0 0 1 669 250" fill="none" stroke="#e8dfd2" stroke-width="2.4" opacity=".7"/>
+
+  <text x="650" y="378" text-anchor="middle" font-family="Georgia, serif" font-size="16.5" fill="#e8dfd2">Enclosed on three sides. Back to the door.</text>
+  <text x="650" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#94a3b8">Someone else chooses when you look up.</text>
+
+  <!-- ── the point ─────────────────────────────────────────────────────── -->
+  <line x1="120" y1="440" x2="780" y2="440" stroke="rgba(255,255,255,.12)" stroke-width="1.5"/>
+  <text x="450" y="472" text-anchor="middle" font-family="Georgia, serif" font-size="17.5" fill="#e8c968" font-style="italic">Nothing was added. The panels were only turned.</text>
+</svg>
