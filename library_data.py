@@ -464,7 +464,19 @@ DICTIONARY = [
     ("parad", "parad", "פָּרַד", "parad",
      "To separate — Genesis 13's hinge verb: Abram proposes it (13:9), Lot enacts it (13:11), and the renewed land promise arrives precisely 'after' it happens (13:14).", (13, 9)),
     ("qadash", "qadash", "קָדַשׁ", "qadash",
-     "To make holy, set apart — its first biblical object is a day, the sabbath.", (2, 3)),
+     "To make holy, set apart — its first biblical object is a day, the sabbath. "
+     "⚠ <span data-heb=\"פן תקדש\">Its strangest legal use is <em>pen tiqdash</em>, which stands in "
+     "<strong>one verse</strong></span>: <a href=\"deuteronomy-22.html#v22-9\">Deuteronomy 22:9</a> warns "
+     "that a vineyard sown with <em><a href=\"dictionary.html#kilayim\">two kinds</a></em> will BECOME HOLY "
+     "— meaning forfeited, because a holy thing cannot be eaten by its owner. ⭐ Four witnesses print the "
+     "reverse of the Hebrew word and say the crop is DEFILED (<span class=\"tag t-kjv\">KJV</span>, <span "
+     "class=\"tag t-gnv\">Geneva</span>, <span class=\"tag t-niv\">NIV</span>, and the <span class=\"tag "
+     "t-rv\">RV 1909</span>'s «no se deprave»); six keep the direction by naming where the crop goes "
+     "('forfeited to the sanctuary' in the <span class=\"tag t-nwt\">NWT 1984</span> and the <span "
+     "class=\"tag t-tnm\">TNM</span>, «consagrar a Dios» in the <span class=\"tag t-nvi\">NVI</span>, "
+     "'confiscated by the priests' in the <span class=\"tag t-tlb\">TLB</span>); and the <span class=\"tag "
+     "t-drb\">Douay</span>, alone, simply prints the verb — 'lest … be sanctified together'. On this clause "
+     "the version that follows the Latin is the most literal on the shelf.", (2, 3)),
     ("qeshet", "qeshet", "קֶשֶׁת", "qeshet",
      "A bow — the weapon; Hebrew has no separate word for 'rainbow.' God hangs his war-bow in the clouds.", (9, 13)),
     ("raqia", "raqia", "רָקִיעַ", "raqia",
@@ -553,10 +565,26 @@ DICTIONARY = [
     ("shiphchah", "shiphchah", "שִׁפְחָה", "shiphchah",
      "A female slave — the word the shelf renders 'handmaid.' Hagar's title, used insistently through Genesis 16 (her status IS the plot); Pharaoh's gifts back at 12:16 included such women.", (16, 1)),
     ("anah", "anah / innah", "עָנָה", "anah",
-     "To afflict, oppress, humble — and, in the intensive innah, to FORCE, degrade, violate. Prophesied of Israel in Egypt (15:13), dealt by Sarai to an Egyptian (16:6), accepted in the angel's hard 'submit yourself' (16:9), heard by God in Hagar's 'affliction' (16:11) — the Exodus verb, running backward. Its darkest Genesis use is 34:2, of Shechem and Dinah — 'he took her and lay with her and innah her,' the law's own word for rape (Deuteronomy 22:29; what Amnon does to Tamar, 2 Samuel 13:14). The KJV/ASV soften it to 'humbled'; this translation renders it 'violated.' ⭐ The same root returns, decades later and unrelated to that darkest sense, at Deuteronomy 8:2-3 and 8:16 (already on these pages), paired with the verb 'to test': Jehovah 'humbles' Israel in the wilderness with hunger and manna — the Exodus-Egypt affliction verb, run once against a people and once, deliberately, FOR them.", (15, 13)),
+     "To afflict, oppress, humble — and, in the intensive innah, to FORCE, degrade, violate. Prophesied of Israel in Egypt (15:13), dealt by Sarai to an Egyptian (16:6), accepted in the angel's hard 'submit yourself' (16:9), heard by God in Hagar's 'affliction' (16:11) — the Exodus verb, running backward. Its darkest Genesis use is 34:2, of Shechem and Dinah — 'he took her and lay with her and innah her,' the law's own word for rape (Deuteronomy 22:29; what Amnon does to Tamar, 2 Samuel 13:14). The KJV/ASV soften it to 'humbled'; this translation renders it 'violated.' ⭐ The same root returns, decades later and unrelated to that darkest sense, at Deuteronomy 8:2-3 and 8:16 (already on these pages), paired with the verb 'to test': Jehovah 'humbles' Israel in the wilderness with hunger and manna — the Exodus-Egypt affliction verb, run once against a people and once, deliberately, FOR them. "
+     "⭐ <a href=\"deuteronomy-22.html\">Deuteronomy 22</a> uses it twice, and the two uses sit at opposite "
+     "ends of the same chapter's sentencing. At <a href=\"deuteronomy-22.html#v22-24\">22:24</a> a man is "
+     "stoned <em>because he violated his neighbour's wife</em>; at <a "
+     "href=\"deuteronomy-22.html#v22-29\">22:29</a> a man pays fifty of silver and marries the woman "
+     "<em>because he violated her</em>. The same verb names a capital offence and a fine, five verses "
+     "apart, and what separates them is only whether the woman was betrothed. ⚠ It arrives there from <a "
+     "href=\"deuteronomy-21.html#v21-14\">21:14</a>, of the captive woman a soldier may not then sell, and "
+     "it is the verb of the two narratives the law is usually read beside — Shechem and Dinah at <a "
+     "href=\"genesis-34.html#v34-2\">Genesis 34:2</a>, and Amnon and Tamar at 2 Samuel 13 (not yet on these "
+     "pages).", (15, 13)),
     # ---- Genesis 34 (Hebrew) ----
     ("nevalah", "nevalah", "נְבָלָה", "nevalah",
-     "An OUTRAGE — not ordinary wrong but the fixed, heavy term for a disgraceful act that tears the fabric of a people. Shechem's violation of Dinah is 'a nevalah in Israel, a thing that should not be done' (34:7); the same word names the gang-rape that ignites Israel's civil war (Judges 19-20) and Amnon's assault on Tamar ('no such nevalah is done in Israel,' 2 Samuel 13:12), and Achan's sacrilege (Joshua 7:15). It is kin to naval, the 'fool' who says in his heart there is no God (Psalm 14:1) — moral collapse, not mere foolishness. KJV and ASV flatten it to 'folly'; NIV 'disgraceful thing.' The tag 'in Israel' is pointed: the nation, freshly named two chapters back, meets its first atrocity from within its own tents.", (34, 7)),
+     "An OUTRAGE — not ordinary wrong but the fixed, heavy term for a disgraceful act that tears the fabric of a people. Shechem's violation of Dinah is 'a nevalah in Israel, a thing that should not be done' (34:7); the same word names the gang-rape that ignites Israel's civil war (Judges 19-20) and Amnon's assault on Tamar ('no such nevalah is done in Israel,' 2 Samuel 13:12), and Achan's sacrilege (Joshua 7:15). It is kin to naval, the 'fool' who says in his heart there is no God (Psalm 14:1) — moral collapse, not mere foolishness. KJV and ASV flatten it to 'folly'; NIV 'disgraceful thing.' The tag 'in Israel' is pointed: the nation, freshly named two chapters back, meets its first atrocity from within its own tents. "
+     "⭐ <a href=\"deuteronomy-22.html#v22-21\">Deuteronomy 22:21</a> is the one occurrence that breaks the "
+     "pattern, and the tell is grammatical rather than lexical. <span data-heb-read=\"נבלה\">Read out of the "
+     "verses whose consonants it shares with <em><a href=\"dictionary.html#nevelah\">nevelah</a></em>, a "
+     "carcass, the noun stands in thirteen verses</span> — and in every one of them but this the outrage "
+     "is something a man does. Here the verb is <em>asetah</em>, feminine: <strong>she</strong> did it. "
+     "The word the Bible uses of Shechem, of the men of Gibeah and of Amnon is turned, once, on a woman.", (34, 7)),
     ("mohar", "mohar", "מֹהַר", "mohar",
      "The BRIDE-PRICE — the sum a groom's household paid to the bride's family for the marriage (distinct from the mattan, an added 'gift'). Shechem, desperate, tells Dinah's brothers to 'pile on me a very great mohar and gift, and I will give it' (34:12) — he will buy his way past the crime. The law fixes a mohar for a seduced unbetrothed girl (Exodus 22:16-17). KJV 'dowry,' which properly runs the other way (bride's family to groom); mohar is the price paid FOR the bride, not by her.", (34, 12)),
     # ---- Exodus 22 (Hebrew) ----
@@ -1294,7 +1322,16 @@ DICTIONARY = [
     ("chatan", "chatan damim", "חֲתַן דָּמִים", "chatan damim",
      "'BRIDEGROOM (or son-in-law) OF BLOOD' — the cryptic phrase Zipporah speaks at the terrifying night-lodging scene, cutting off her son's foreskin with a flint and touching it to 'his feet': 'surely you are a CHATAN DAMIM to me' (4:25-26). ⚠️ One of the most obscure expressions in the Hebrew Bible: chatan is 'bridegroom / son-in-law' (from the root for marriage-by-blood-tie), damim is 'blood' (plural, often of bloodshed); who is addressed, and what the phrase means, are genuinely uncertain. The likeliest sense ties it to the covenant blood of circumcision (Genesis 17) that averts the death Moses' household faced.", ("Exodus", 4, 25)),
     ("shalach", "shalach", "שָׁלַח", "shalach",
-     "TO SEND — and, in the intensive form, to SEND AWAY, let go, release. It is the exodus refrain: 'SHALACH my people, that they may hold a feast to me' (5:1), the demand repeated to Pharaoh through ten plagues, and the same verb of God's own claim one verse earlier in the story — 'let my SON go' (4:23). Pharaoh's refusal is stated in the same word ('I will not let Israel go,' 5:2), so the whole contest is fought over a single verb: who has the right to send this people where.", ("Exodus", 5, 1)),
+     "TO SEND — and, in the intensive form, to SEND AWAY, let go, release. It is the exodus refrain: 'SHALACH my people, that they may hold a feast to me' (5:1), the demand repeated to Pharaoh through ten plagues, and the same verb of God's own claim one verse earlier in the story — 'let my SON go' (4:23). Pharaoh's refusal is stated in the same word ('I will not let Israel go,' 5:2), so the whole contest is fought over a single verb: who has the right to send this people where. "
+     "⭐ In the intensive it is the ordinary Hebrew for DIVORCE, sending a wife away, and <a "
+     "href=\"deuteronomy-22.html\">Deuteronomy 22</a> puts that sense on both sides of one chapter. <span "
+     "data-heb-read=\"שלח\">The intensive form stands in three verses there</span>: at <a "
+     "href=\"deuteronomy-22.html#v22-7\">22:7</a> it is commanded and doubled for emphasis — <em>you shall "
+     "certainly send the mother bird away</em> — and at <a href=\"deuteronomy-22.html#v22-19\">22:19</a> and "
+     "<a href=\"deuteronomy-22.html#v22-29\">22:29</a> it is forbidden, <em>he may not send her away all his "
+     "days</em>. ⚠ It reaches that chapter from the one before it, where <a "
+     "href=\"deuteronomy-21.html#v21-14\">21:14</a> uses it of the captive woman a soldier no longer wants. "
+     "A bird must be released; two women may not be.", ("Exodus", 5, 1)),
     ("teben", "teben", "תֶּבֶן", "teben",
      "STRAW — chopped stubble mixed into Nile mud to bind sun-dried bricks, a technique well attested in Egyptian brickmaking (and Egyptian scribes really did record daily brick quotas). Pharaoh's cruelty in Exodus 5 is exact: he does not lower the quota, he withdraws the TEBEN and keeps the number, so the slaves must scatter across Egypt gathering stubble and still deliver as before. 'Bricks without straw' has become the English proverb for an impossible demand.", ("Exodus", 5, 7)),
     ("nogesim", "nogsim / shotrim", "נֹגְשִׂים / שֹׁטְרִים", "nogsim / shotrim",
@@ -1521,7 +1558,15 @@ DICTIONARY = [
     ("gemul", "gemul", "גְּמוּל", "gemul",
      "A DEALING that comes back — a recompense, what one has done returning onto one's own head. From gamal, 'to deal out, requite' (also 'to wean, ripen' — to bring a thing to its completion). ⚠ It is the hinge of Obadiah: 'as you have done, it will be done to you; your GEMUL will return upon your own head' (1:15) — the boomerang of exact, measure-for-measure justice, the deed circling back to its doer. The same principle the Sermon on the Mount restates ('the measure you give will be the measure you get,' Matthew 7:2). KJV 'thy reward shall return'; NIV 'your deeds will return.'", ("Obadiah", 1, 15)),
     ("moshia", "moshia (pl. moshi'im)", "מוֹשִׁיעַ", "moshia",
-     "A DELIVERER, rescuer, saviour — the active participle of yasha, 'to save,' the same root behind the names Joshua (Yehoshua) and Jesus (Yeshua) and the word Hosanna ('save now'). ⚠ It is the RESCUER-word of the book of Judges, where God raises up a moshia to deliver Israel from an oppressor (Judges 3:9, 15) — a temporary, Spirit-seized champion, not a king. Obadiah gives the shortest book in the Bible its last hope with it: 'and DELIVERERS will go up on Mount Zion to judge the mountain of Esau' (1:21) — plural, human, and answerable to the kingdom that 'belongs to Jehovah.'", ("Obadiah", 1, 21)),
+     "A DELIVERER, rescuer, saviour — the active participle of yasha, 'to save,' the same root behind the names Joshua (Yehoshua) and Jesus (Yeshua) and the word Hosanna ('save now'). ⚠ It is the RESCUER-word of the book of Judges, where God raises up a moshia to deliver Israel from an oppressor (Judges 3:9, 15) — a temporary, Spirit-seized champion, not a king. Obadiah gives the shortest book in the Bible its last hope with it: 'and DELIVERERS will go up on Mount Zion to judge the mountain of Esau' (1:21) — plural, human, and answerable to the kingdom that 'belongs to Jehovah.' "
+     "⭐ <span data-heb=\"אין מושיע\">The phrase <em>ve-ein moshia</em>, <em>and there is no one to "
+     "save</em>, stands in <strong>five verses</strong></span>, and the first of them in the order of the "
+     "books is <a href=\"deuteronomy-22.html#v22-27\">Deuteronomy 22:27</a> — a betrothed girl who cried out "
+     "in open country and was not heard. Every other occurrence is about nations, armies and cities: "
+     "Israel under curse (Deuteronomy 28:29), Jabesh-gilead under siege (1 Samuel 11:3), Babylon abandoned "
+     "by her enchanters (Isaiah 47:15), and David's enemies crying out unanswered (Psalm 18:42; none yet "
+     "on these pages). The Hebrew gives one girl in a field the sentence it otherwise reserves for "
+     "empires.", ("Obadiah", 1, 21)),
     ("gadol", "gadol / gedolah", "גָּדוֹל", "gadol",
      "GREAT, big — an ordinary adjective that becomes the structural drumbeat of Jonah. ⚠ It tolls through all four chapters attached to almost everything: the GREAT city Nineveh (1:2; 3:2-3; 4:11), the GREAT wind and GREAT storm God hurls (1:4), the sailors' GREAT fear (1:10, 1:16), the GREAT fish (2:1), Nineveh's repentance from GREAT to small (3:5), and Jonah's GREAT displeasure and GREAT joy over the plant (4:1, 4:6). This translation keeps 'great' on all of it rather than varying the English, because the repetition — everything in the book is oversized — is part of what marks Jonah as a pointed, almost comic tale rather than a plain chronicle.", ("Jonah", 1, 2)),
     ("yarad", "yarad", "יָרַד", "yarad",
@@ -2548,7 +2593,13 @@ DICTIONARY = [
      "the image \u2014 <span class=\"tag t-kjv\">KJV</span> \u2018put the evil away\u2019, "
      "<span class=\"tag t-asv\">ASV</span> \u2018put away the evil\u2019, "
      "<span class=\"tag t-nwt\">NWT</span> 1984 \u2018clear out what is evil\u2019 \u2014 so the "
-     "uncertainty is invisible in English unless somebody says it out loud.",
+     "uncertainty is invisible in English unless somebody says it out loud. "
+     "⭐ Three of those nine verses turn out to be a single chapter: <a "
+     "href=\"deuteronomy-22.html#v22-21\">Deuteronomy 22:21</a>, <a "
+     "href=\"deuteronomy-22.html#v22-22\">22:22</a> and <a href=\"deuteronomy-22.html#v22-24\">22:24</a> close "
+     "three consecutive sexual cases with the formula, which is the densest concentration of it anywhere "
+     "in the Bible. Whatever else that chapter's case law is, the book files it under the same heading as "
+     "apostasy, perjury and the rebellious son.",
      ("Deuteronomy", 13, 6)),
     ("sarah-revolt", "sarah", "\u05e1\u05b8\u05e8\u05b8\u05d4", "sarah / dibber sarah",
      "REVOLT, defection \u2014 a noun from <em>sur</em>, to turn aside: what is spoken when somebody "
@@ -3161,6 +3212,210 @@ DICTIONARY = [
      "citation has no named author. See <em><a href=\"dictionary.html#nevelah\">nevelah</a></em> for the "
      "corpse the law will not let stay up.",
      ("Deuteronomy", 21, 22)),
+    ("alam", "hit'alem", "הִתְעַלֵּם", "hit'alem",
+     "TO HIDE YOURSELF — the reflexive of <em>alam</em>, to conceal, and the verb <a "
+     "href=\"deuteronomy-22.html\">Deuteronomy 22</a> uses three times for the thing you must not do when "
+     "you see a neighbour's animal in trouble. ⭐ The grammar is the point: what is hidden is not the ox "
+     "but YOU. <span data-heb=\"התעלמ|התעלם|תתעלם|יתעלם\">The form stands in <strong>six verses</strong></span> of "
+     "the Hebrew Bible and three of them are that one chapter — <a "
+     "href=\"deuteronomy-22.html#v22-1\">22:1</a>, <a href=\"deuteronomy-22.html#v22-3\">22:3</a> and <a "
+     "href=\"deuteronomy-22.html#v22-4\">22:4</a>. ⚠ Of the other three, Isaiah 58:7 is the one that matters "
+     "(not yet on these pages): the great fasting chapter ends its account of a real fast with <em>and "
+     "that you not hide yourself from your own flesh</em> — the identical verb, turned from a stray animal "
+     "onto your own family. Psalm 55:2 asks God not to do it (<em>do not hide yourself from my plea</em>), "
+     "and Job 6:16 uses it of snow hiding itself in a streambed. ⚠ <a href=\"exodus-23.html#v23-5\">Exodus "
+     "23:5</a>, giving the same law of the animal belonging to a man who hates you, uses a different and "
+     "flatter verb, <em>chadal</em>, to FORBEAR. Deuteronomy's replacement is the sharper one. ⚠ The shelf "
+     "divides on whether to keep the reflexive: the <span class=\"tag t-kjv\">KJV</span> and <span "
+     "class=\"tag t-asv\">ASV</span> print 'hide thyself', the <span class=\"tag t-gnv\">Geneva</span> "
+     "'withdraw thyself' and the <span class=\"tag t-nwt\">NWT 1984</span> 'deliberately withdraw', while "
+     "the <span class=\"tag t-niv\">NIV</span> ('do not ignore it') and the <span class=\"tag "
+     "t-tlb\">TLB</span> ('don't pretend you didn't see it') make it a decision about the animal instead of "
+     "about the man.",
+     ("Deuteronomy", 22, 1)),
+    ("simlah", "simlah", "שִׂמְלָה", "simlah",
+     "A CLOAK — the large outer wrap an Israelite wore by day and slept under by night, which is why <a "
+     "href=\"exodus-22.html#v22-25\">Exodus 22:25-26</a> forbids keeping one overnight as a pledge: it is "
+     "the poor man's blanket. Not the same word as <em>beged</em>, the general term for a garment. ⭐ <span "
+     "data-heb-read=\"שמל\">It runs three times through <a href=\"deuteronomy-22.html\">Deuteronomy "
+     "22</a></span>, in three unrelated laws, and the thread is easy to miss: at <a "
+     "href=\"deuteronomy-22.html#v22-3\">22:3</a> a lost cloak is property you are obliged to keep safe "
+     "until its owner comes looking; at <a href=\"deuteronomy-22.html#v22-5\">22:5</a> a woman's cloak is a "
+     "boundary a man may not cross; and at <a href=\"deuteronomy-22.html#v22-17\">22:17</a> a cloak is "
+     "spread out in the city gate as the evidence that decides whether a woman lives. ⚠ It is the garment "
+     "of the exodus itself — the dough carried out of Egypt was bound up in the people's <em>simlot</em> "
+     "(<a href=\"exodus-12.html#v12-34\">Exodus 12:34</a>) — and the one Israel's wore out in the "
+     "wilderness, <a href=\"deuteronomy-8.html#v8-4\">Deuteronomy 8:4</a>.",
+     ("Deuteronomy", 22, 3)),
+    ("keli-gever", "keli gever", "כְּלִי־גֶבֶר", "keli gever",
+     "THE GEAR OF A MAN — two words that stand in <span data-heb=\"כלי גבר\"><strong>one "
+     "verse</strong></span> of the Hebrew Bible, <a href=\"deuteronomy-22.html#v22-5\">Deuteronomy 22:5</a>, "
+     "and carry the whole difficulty of the cross-dressing law. ⭐ <em>Keli</em> is Hebrew's broadest word "
+     "for a made thing — a vessel, a tool, a weapon, a piece of equipment; it is the word for the temple's "
+     "<em><a href=\"dictionary.html#kelim\">vessels</a></em>. It is NOT a clothing word, and the clause does "
+     "not use a wearing verb either: it says <em>keli gever</em> shall not BE UPON a woman. The verse's "
+     "second half is built differently — there a man may not WEAR (<em>yilbash</em>) a woman's <em><a "
+     "href=\"dictionary.html#simlah\">simlah</a></em>, a named garment. ⚠ Because of that asymmetry the "
+     "verse has been read as three separate laws: against costume, against a woman bearing arms, and "
+     "against a cultic transvestism attested elsewhere in the ancient Near East. This project does not "
+     "choose between them. ⚠ <em>Gever</em> is not the neutral <em>ish</em> but the word for a man in his "
+     "strength. ⭐ The shelf keeps the asymmetry in its older witnesses and loses it in the newer ones, "
+     "version by version: 'that which pertaineth unto a man' against 'a woman's garment' (<span class=\"tag "
+     "t-kjv\">KJV</span>, <span class=\"tag t-asv\">ASV</span>), 'garb' against 'mantle' (<span class=\"tag "
+     "t-nwt\">NWT 1984</span>), «hábito» against «ropa» (<span class=\"tag t-rv\">RV 1909</span>) — and then "
+     "'the clothing of a man' / 'the clothing of a woman' in the <span class=\"tag t-nwt\">NWT 2013</span>, "
+     "«ropa» / «ropa» in the <span class=\"tag t-nvi\">NVI</span>, and 'men's clothing' / 'women's clothing' "
+     "in the <span class=\"tag t-niv\">NIV</span>.",
+     ("Deuteronomy", 22, 5)),
+    ("maaqeh", "ma'aqeh", "מַעֲקֶה", "ma'aqeh",
+     "A PARAPET — the low wall a builder must run around a flat roof, and a word that stands in <span "
+     "data-heb=\"מעקה\"><strong>one verse</strong></span> of the Hebrew Bible, <a "
+     "href=\"deuteronomy-22.html#v22-8\">Deuteronomy 22:8</a>. ⚠ Nothing else in the Bible describes it, so "
+     "every rendering is reconstructed from the situation rather than from the language: a 'battlement' "
+     "(<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-asv\">ASV</span>, <span class=\"tag "
+     "t-gnv\">Geneva</span>, <span class=\"tag t-drb\">Douay</span>), a 'parapet' (<span class=\"tag "
+     "t-nwt\">NWT 1984</span>, <span class=\"tag t-niv\">NIV</span>, <span class=\"tag t-tnm\">TNM</span>), "
+     "«pretil» (<span class=\"tag t-rv\">RV 1909</span>, <span class=\"tag t-rv60\">RV60</span>), «baranda» "
+     "(<span class=\"tag t-nvi\">NVI</span>) and a 'guardrail' (<span class=\"tag t-tlb\">TLB</span>). ⭐ The "
+     "law is remarkable for what it does not require: no crime, no negligence and no injury has occurred. "
+     "A man has built a house, and the <em><a href=\"dictionary.html#damim\">blood</a></em> is said to "
+     "attach to the HOUSE rather than to anyone's conduct — so the remedy is a wall put up before anybody "
+     "is hurt. It is the clearest instance in the Torah of a duty to prevent rather than to compensate.",
+     ("Deuteronomy", 22, 8)),
+    ("kilayim", "kil'ayim", "כִּלְאַיִם", "kil'ayim",
+     "TWO KINDS — a dual noun meaning a pairing of things that ought not to be paired, and the heading "
+     "under which the Torah's mixture laws are gathered. <span data-heb-read=\"כלאים\">Searched "
+     "consonantally it returns three verses and one of them is a different word</span>: <a "
+     "href=\"leviticus-19.html#v19-19\">Leviticus 19:19</a> and <a "
+     "href=\"deuteronomy-22.html#v22-9\">Deuteronomy 22:9</a> are the noun, while Isaiah 42:22's "
+     "<em>kela'im</em> is PRISONS. ⭐ The two real occurrences do not legislate the same three things. "
+     "Leviticus forbids breeding two kinds of cattle, sowing a FIELD with two kinds, and wearing <em><a "
+     "href=\"dictionary.html#shaatnez\">sha'atnez</a></em>; Deuteronomy drops the breeding rule, narrows the "
+     "field to a VINEYARD, adds a rule Leviticus does not have — plowing with an ox and a donkey together "
+     "— and keeps the cloth. ⚠ No reason is given for any of them in either book. The explanations on "
+     "offer (that the laws guard the created boundaries of <a href=\"genesis-1.html\">Genesis 1</a>, that "
+     "they reserve mixed cloth to the priesthood, that they are deliberately arbitrary) are all readers' "
+     "work, not the text's.",
+     ("Deuteronomy", 22, 9)),
+    ("shaatnez", "sha'atnez", "שַׁעַטְנֵז", "sha'atnez",
+     "MIXED CLOTH — wool and linen woven together, and one of the strangest words in the Hebrew Bible. "
+     "<span data-heb=\"שעטנז\">It stands in <strong>two verses</strong></span>, and the second one is the "
+     "first one's dictionary. ⭐ <a href=\"leviticus-19.html#v19-19\">Leviticus 19:19</a> forbids <em>beged "
+     "<a href=\"dictionary.html#kilayim\">kil'ayim</a> sha'atnez</em>, a garment of two kinds, "
+     "<em>sha'atnez</em> — and stops, giving the word without its content. <a "
+     "href=\"deuteronomy-22.html#v22-11\">Deuteronomy 22:11</a> supplies exactly what Leviticus withheld: "
+     "<em>sha'atnez — wool and linen together</em>. ⚠ The word is almost certainly not Hebrew at all. Its "
+     "consonant shape is wrong for a native root, an Egyptian origin has been proposed and is not agreed, "
+     "and the honest position is that nobody knows. ⚠ Not one of the thirteen witnesses this project "
+     "follows prints the word; all thirteen translate the definition instead — 'a garment of divers sorts' "
+     "(<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-gnv\">Geneva</span>), 'a mingled stuff' "
+     "(<span class=\"tag t-asv\">ASV</span>), 'mixed stuff' (<span class=\"tag t-nwt\">NWT 1984</span>), «de "
+     "mistura» (<span class=\"tag t-rv\">RV 1909</span>). This translation prints it, because the verse "
+     "itself glosses it one clause later.",
+     ("Deuteronomy", 22, 11)),
+    ("gedilim", "gedilim", "גְּדִלִים", "gedilim",
+     "TWISTED CORDS — the tassels commanded on the corners of a garment at <a "
+     "href=\"deuteronomy-22.html#v22-12\">Deuteronomy 22:12</a>, and NOT the word the practice is named "
+     "after. ⭐ The Bible gives the tassel command twice in two vocabularies: <a "
+     "href=\"numbers-15.html#v15-38\">Numbers 15:38</a> commands <em>tzitzit</em> on the <em><a "
+     "href=\"dictionary.html#kanaf\">kanfei</a></em> of your garments, with a cord of blue and a stated "
+     "reason (you shall see them and remember); Deuteronomy commands <em>gedilim</em> on the FOUR corners "
+     "of your covering, with no blue and no reason at all. The observance took its name from the Numbers "
+     "word; the number four comes from this verse. ⚠ <span data-heb=\"גדלים\">Read out of the fifty-odd hits "
+     "its consonants return — nearly all of them <em>gedolim</em>, 'great', or <em>migdalim</em>, 'towers' "
+     "— the noun stands in <strong>two verses</strong></span>: this one, and 1 Kings 7:17, where it names "
+     "the chain-work wreathed over the capitals of the two bronze pillars at the door of Solomon's temple. "
+     "The cords on a man's cloak and the ornament on the temple's front pillars are one word, and neither "
+     "verse points at the other. ⚠ The shelf reads 'fringes' (<span class=\"tag t-kjv\">KJV</span>, <span "
+     "class=\"tag t-asv\">ASV</span>, <span class=\"tag t-gnv\">Geneva</span>), 'tassels' (<span class=\"tag "
+     "t-nwt\">NWT 1984</span>, <span class=\"tag t-niv\">NIV</span>, <span class=\"tag t-tnm\">TNM</span>), "
+     "'strings in the hem' (<span class=\"tag t-drb\">Douay</span>), «flecos» (<span class=\"tag t-rv\">RV "
+     "1909</span>, <span class=\"tag t-rv60\">RV60</span>) and «borlas» (<span class=\"tag "
+     "t-nvi\">NVI</span>).",
+     ("Deuteronomy", 22, 12)),
+    ("kanaf", "kanaf (pl. kanfot)", "כָּנָף", "kanaf",
+     "A WING — that is the plain sense, and the corner or hem of a garment only by extension, the part "
+     "that hangs loose like a wing. ⭐ <span data-heb=\"כנפות\">The plural <em>kanfot</em> stands in "
+     "<strong>five verses</strong></span> of the Hebrew Bible, and <a "
+     "href=\"deuteronomy-22.html#v22-12\">Deuteronomy 22:12</a> is the only one where it belongs to a "
+     "garment. The other four are the ends of the world: <em>the four corners of the earth</em> at Isaiah "
+     "11:12 and Ezekiel 7:2, counted exactly as this verse counts, and the unnumbered <em>kanfot "
+     "ha-arets</em> that lightning reaches in Job 37:3 and the dawn is told to seize in Job 38:13. So a "
+     "man is told to fasten cords to the four corners of the cloth he wraps himself in, in the phrase the "
+     "Bible otherwise saves for the four corners of everything. ⚠ Isaiah 11:12 carries a second word from "
+     "the same chapter: it gathers <em><a href=\"dictionary.html#nadach\">nidchei</a> Yisrael</em>, the "
+     "DRIVEN-OUT of Israel, from those four corners — and 'driven' is the participle Deuteronomy 22:1 uses "
+     "of a stray ox. ⚠ The singular has a second life the plural does not: to spread your <em>kanaf</em> "
+     "over a woman is to claim her in marriage (Ruth 3:9), and cutting the <em>kanaf</em> off a robe is "
+     "how David proves he spared Saul (1 Samuel 24).",
+     ("Deuteronomy", 22, 12)),
+    ("alilah", "alilah (pl. alilot)", "עֲלִילָה", "alilah",
+     "A DEED, an exploit — and, in one fixed legal phrase, a TRUMPED-UP CHARGE. The noun's ordinary "
+     "company is exalted: <em>make known his <strong>alilot</strong> among the peoples</em> is said of the "
+     "acts of God in Isaiah 12:4 and 1 Chronicles 16:8. ⭐ But <span data-heb=\"עלילת\"><em>alilot "
+     "devarim</em> — literally something like 'wanton deeds of words' — stands in <strong>two "
+     "verses</strong></span>, and both are one case: <a href=\"deuteronomy-22.html#v22-14\">Deuteronomy "
+     "22:14</a>, where a husband invents a charge that his bride was not a virgin, and <a "
+     "href=\"deuteronomy-22.html#v22-17\">22:17</a>, where her father quotes the charge back at him in front "
+     "of the elders. A deed large enough to be worth publishing and a fabrication large enough to kill "
+     "someone are the same Hebrew noun. ⚠ No English version has made the literal phrase work; the <span "
+     "class=\"tag t-kjv\">KJV</span> gives up gracefully with 'give occasions of speech against her', the "
+     "<span class=\"tag t-asv\">ASV</span> reads 'lay shameful things to her charge' and the <span "
+     "class=\"tag t-nwt\">NWT 1984</span> 'charged her with notorious deeds'. ⭐ The one witness on either "
+     "shelf that keeps the <em>devarim</em> — the WORDS — inside the accusation is the "
+     "<span class=\"tag t-rv60\">RV60</span>, «faltas que den que hablar», faults that give people something "
+     "to talk about; the <span class=\"tag t-rv\">RV 1909</span> it revised had only «le pusiere algunas "
+     "faltas».",
+     ("Deuteronomy", 22, 14)),
+    ("betulim", "betulim", "בְּתוּלִים", "betulim",
+     "VIRGINITY — an abstract plural built on <em>betulah</em>, a virgin, and a word this project meets in "
+     "exactly one place. <span data-heb=\"בתולים\">The absolute form stands in <strong>three "
+     "verses</strong></span> of the Hebrew Bible, all of them in <a href=\"deuteronomy-22.html\">Deuteronomy "
+     "22</a> (<a href=\"deuteronomy-22.html#v22-14\">v14</a>, <a href=\"deuteronomy-22.html#v22-17\">v17</a>, "
+     "<a href=\"deuteronomy-22.html#v22-20\">v20</a>), with the construct <em>betulei</em> alongside it in "
+     "the same passage. ⚠ The law never says what the physical evidence is. <a "
+     "href=\"deuteronomy-22.html#v22-17\">Verse 17</a> has the parents spread out a <em><a "
+     "href=\"dictionary.html#simlah\">simlah</a></em>, a cloak, before the elders and calls it 'the "
+     "<em>betulim</em> of my daughter' — the abstract noun standing in for the object. Whether the cloth "
+     "is the bedding of the wedding night or the evidence of a first menstruation has been argued for "
+     "centuries and the text does not say. ⭐ And that is where to watch the shelf, because the Hebrew word "
+     "is <em>simlah</em>, a CLOAK — the same word as <a href=\"deuteronomy-22.html#v22-3\">22:3</a> and "
+     "<a href=\"deuteronomy-22.html#v22-5\">22:5</a> — and several versions settle the question inside the "
+     "verse by printing bedding instead. The garment is kept by the <span class=\"tag t-asv\">ASV</span> "
+     "('the garment'), the <span class=\"tag t-gnv\">Geneva</span> ('the vesture'), the "
+     "<span class=\"tag t-nwt\">NWT 1984</span> ('the mantle') and the <span class=\"tag t-rv60\">RV60</span> "
+     "(«la vestidura»); the <span class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-drb\">Douay</span> and "
+     "<span class=\"tag t-niv\">NIV</span> neutralise it to 'the cloth'; and the "
+     "<span class=\"tag t-rv\">RV 1909</span> and <span class=\"tag t-nvi\">NVI</span> print «la sábana», a "
+     "bedsheet. ⚠ The <span class=\"tag t-tlb\">TLB</span> goes furthest of all and supplies what the Hebrew "
+     "never says anywhere: 'the blood-stained sheet from her marriage bed'. ⚠ The shelf also mostly supplies "
+     "a noun the Hebrew does not have: 'the tokens of virginity' (<span class=\"tag t-kjv\">KJV</span>, "
+     "<span class=\"tag t-asv\">ASV</span>), 'evidence of virginity' "
+     "(<span class=\"tag t-nwt\">NWT 1984</span>), while the <span class=\"tag "
+     "t-kjv\">KJV</span> at <a href=\"deuteronomy-22.html#v22-14\">v14</a> flattens the whole phrase to 'I "
+     "found her not a maid'.",
+     ("Deuteronomy", 22, 14)),
+    ("taphas", "taphas", "תָּפַשׂ", "taphas",
+     "TO SEIZE, take hold of, handle — a verb of grasping, and the hinge of the most disputed law in <a "
+     "href=\"deuteronomy-22.html\">Deuteronomy 22</a>. ⭐ Its range is set by its ordinary uses: parents "
+     "<em>take hold of</em> the rebellious son to drag him to the elders (<a "
+     "href=\"deuteronomy-21.html#v21-19\">Deuteronomy 21:19</a>), an army <em>captures</em> a city (2 Kings "
+     "14:7), and a man <em>handles</em> a bow (Amos 2:15), a sickle (Jeremiah 50:16) or the law itself "
+     "(Jeremiah 2:8). It is force, and it is not the strongest word available. ⚠ That matters at <a "
+     "href=\"deuteronomy-22.html#v22-28\">Deuteronomy 22:28</a>, where a man <em>seizes</em> an unbetrothed "
+     "virgin — because three verses earlier, at <a href=\"deuteronomy-22.html#v22-25\">22:25</a>, the same "
+     "chapter used <em><a href=\"dictionary.html#chazaq\">hecheziq</a></em>, to OVERPOWER, of the man in the "
+     "field. Deuteronomy had the stronger verb in hand and chose this one. ⭐ And the Torah tells the 22:28 "
+     "case a second time with a third verb: <a href=\"exodus-22.html#v22-16\">Exodus 22:16</a> has <em><a "
+     "href=\"dictionary.html#patah\">yefatteh</a></em>, he ENTICES her. ⚠ The shelf split on this verb is "
+     "recent. Every older witness renders a taking hold — 'lay hold on her' (<span class=\"tag "
+     "t-kjv\">KJV</span>, <span class=\"tag t-asv\">ASV</span>), 'take her' (<span class=\"tag "
+     "t-gnv\">Geneva</span>), «la tomare» (<span class=\"tag t-rv\">RV 1909</span>, <span class=\"tag "
+     "t-rv60\">RV60</span>), 'seizes' (<span class=\"tag t-nwt\">NWT 1984</span>) — while the <span "
+     "class=\"tag t-niv\">NIV</span> and <span class=\"tag t-tlb\">TLB</span> print 'rapes her'. The tell is "
+     "that the <span class=\"tag t-niv\">NIV</span> prints 'rapes her' at 22:25 as well, so the gradient the "
+     "law is built on disappears into one English word.",
+     ("Deuteronomy", 22, 28)),
 ]
 
 ENCYCLOPEDIA = [
@@ -9837,6 +10092,31 @@ CHRON_ERAS = [
 ]
 
 CHRON_CHAPTERS = {
+    "deut22": dict(era="exodus",
+        when="A dozen short laws with no stated connection between them, cut apart by thirteen Masoretic "
+             "paragraph breaks &mdash; after vv3, 4, 5, 7, 9, 11, 12, 19, 21, 22, 24, 27 and 29, the one after "
+             "v5 the heavier <em>petuchah</em> and the other twelve <em>setumah</em>. First a pair rewritten from "
+             "<a href=\"exodus-23.html#v23-4\">Exodus 23:4-5</a> with the owner changed from an enemy to a "
+             "brother: a stray ox brought back, lost property held until claimed, a collapsed donkey lifted "
+             "up. Then the law against wearing what belongs to the other sex; the bird&rsquo;s nest, whose "
+             "mother must be released; the parapet required on a new roof. Then four prohibitions on mixing "
+             "&mdash; two kinds of seed in a vineyard, ox and donkey at one plow, wool and linen in one cloth "
+             "&mdash; and twisted cords on the four corners of a garment. The last seventeen verses are sexual "
+             "case law: a husband who invents a charge that his bride was not a virgin and is flogged, fined "
+             "and denied divorce for life; the same charge if true, and stoning; adultery, both parties; a "
+             "betrothed girl and a man in the city, and the same pair in open country, with opposite verdicts "
+             "and a stated reason; and an unbetrothed virgin seized, whose case ends in a fine and a marriage "
+             "that cannot be dissolved.",
+        clock="Still the plains of Moab in the fortieth year (1:3), with no narrated event and no named person "
+              "or place in the whole chapter &mdash; the same silence <a href=\"deuteronomy-19.html\">chapter "
+              "19</a> keeps. The weekly Torah portion <em>Ki Teitzei</em>, begun at "
+              "<a href=\"deuteronomy-21.html#v21-10\">21:10</a>, runs straight through it. \u26a0 Hebrew and "
+              "English versification DIVERGE here, the only such split in this stretch of the book: the "
+              "Masoretic text ends the chapter at <strong>29 verses</strong> and every English Bible on this "
+              "shelf carries a thirtieth, <em>a man shall not take his father&rsquo;s wife</em>, which the "
+              "Hebrew counts as 23:1. \u2b50 As with the chapters around it the law assumes settled conditions "
+              "Israel has not reached &mdash; built houses with flat roofs, vineyards, town gates with elders "
+              "sitting in them, and marriages contracted between households."),
     "deut21": dict(era="exodus",
         when="Five self-contained laws, each closed off by its own Masoretic paragraph break &mdash; after "
              "vv9, 14, 17, 21 and 23 &mdash; and with no stated connection between them. First the rite for "
@@ -13838,7 +14118,17 @@ DICTIONARY_ES = {
     "nashal": ("nashal", "DESPRENDERSE, salirse, quedar suelto \u2014 un verbo de cosas que se separan de aquello a lo que estaban sujetas, que Deuteronomio usa de Dios quitando naciones enteras. Es la palabra de una sandalia que sale de un pie: \u00abshal tus sandalias de tus pies\u00bb en la zarza ardiente (\u00c9xodo 3:5, ya en estas p\u00e1ginas, todav\u00eda no en espa\u00f1ol) es este mismo verbo en imperativo. Y es la palabra de una cabeza de hacha que sale volando del mango y mata a un transe\u00fante (Deuteronomio 19:5, todav\u00eda no en estas p\u00e1ginas), el accidente para el cual existen las ciudades de refugio. \u2b50 <a href=\"deuteronomy-7.es.html#v7-1\">Deuteronomio 7:1</a> y <a href=\"deuteronomy-7.es.html#v7-22\">7:22</a> enmarcan ese cap\u00edtulo con \u00e9l, una vez para la conquista entera y otra para su lentitud, y esta traducci\u00f3n lee \u00absacudir\u00bb las dos veces. \u26a0 Todo el estante lo sustituye por vocabulario de conquista \u2014echar, expulsar, arrancar, apartar\u2014, lo cual acierta con el efecto y gasta la imagen. En otros sitios el mismo verbo se usa de un olivo que suelta su fruto (Deuteronomio 28:40) y de Ret\u00edn rey de Aram expulsando a los jud\u00edos de Elat (2 Reyes 16:6), ninguno todav\u00eda en estas p\u00e1ginas."),
     "asherah": ("aser\u00e1 (pl. aseras)", "A la vez una DIOSA y el OBJETO DE MADERA que la representaba \u2014por eso el hebreo puede decir \u00absus aseras\u00bb en plural y referirse a cosas que se pueden talar. Aser\u00e1 es una divinidad importante del mundo cananeo y semita occidental, consorte de El en los textos de Ugarit; el objeto de culto que lleva su nombre era un poste, o un \u00e1rbol estilizado, plantado junto a un altar. <a href=\"deuteronomy-7.es.html#v7-5\">Deuteronomio 7:5</a> manda talarlas, repitiendo <a href=\"exodus-34.es.html#v34-13\">\u00c9xodo 34:13</a> (ya en estas p\u00e1ginas) casi palabra por palabra. \u26a0 Tres de los trece testigos que sigue este proyecto la convierten en arboleda corriente \u2014la KJV y la Biblia de Ginebra leen \u2018their groves\u2019 y la Douay-Rheims sigue los <em>lucos</em> de la Vulgata\u2014, lo cual borra a una diosa con nombre de un vers\u00edculo que trata precisamente de dioses con nombre. \u2b50 La l\u00ednea Reina-Valera deja ver la correcci\u00f3n en marcha: la edici\u00f3n de 1909 lee \u00absus bosques\u00bb y la RV60 restaura \u00absus im\u00e1genes de Asera\u00bb."),
     "eqev": ("\u00e9qev", "UN TAL\u00d3N \u2014y, usado como preposici\u00f3n, PORQUE: lo que viene pisando los talones de otra cosa. Es el mismo sustantivo que da nombre a Jacob, que nace agarrando el <em>aqev</em> de su hermano (G\u00e9nesis 25:26, ya en estas p\u00e1ginas, todav\u00eda no en espa\u00f1ol). \u2b50 <a href=\"deuteronomy-7.es.html#v7-12\">Deuteronomio 7:12</a> abre con \u00e9l \u2014\u00aba los talones de escuchar ustedes estas ordenanzas\u00bb\u2014 y esta traducci\u00f3n imprime la imagen en vez de la conjunci\u00f3n desnuda, porque la frase no describe un salario pagado por obedecer sino algo que viene detr\u00e1s. El vers\u00edculo da nombre a una semana entera del ciclo anual de lectura de la Tor\u00e1, <em>\u00c9qev</em>. \u26a0 Ninguno de los trece conserva la figura; varios testigos ingleses convierten adem\u00e1s la afirmaci\u00f3n hebrea de lo que SEGUIR\u00c1 en un \u2018si\u2019 condicional. \u2b50 La palabra reaparece una sola vez m\u00e1s como palabra desnuda en todo el libro, en <a href=\"deuteronomy-8.es.html#v8-20\">Deuteronomio 8:20</a> (ya en estas p\u00e1ginas) \u2014 \u00aba los talones de no escuchar ustedes\u00bb \u2014 cerrando ese cap\u00edtulo con la misma imagen invertida, dentro de la propia semana de lectura que este vers\u00edculo nombra."),
-    "anah": ("anah / innah", "AFLIGIR, humillar \u2014 y, en la forma intensiva innah, FORZAR, degradar, violar. Profetizado sobre Israel en Egipto (15:13), infligido por Saray a una egipcia (16:6), aceptado en el duro \u00absom\u00e9tete\u00bb del \u00e1ngel (16:9), o\u00eddo por Dios en la \u00abaflicci\u00f3n\u00bb de Agar (16:11) \u2014 el verbo del \u00c9xodo, corriendo hacia atr\u00e1s. Su uso m\u00e1s oscuro en G\u00e9nesis es 34:2, sobre Siqu\u00e9n y Dina \u2014 \u00abla tom\u00f3 y se acost\u00f3 con ella y la viol\u00f3\u00bb, la propia palabra de la ley para la violaci\u00f3n (Deuteronomio 22:29; lo que Amn\u00f3n le hace a Tamar, 2 Samuel 13:14). KJV/ASV lo suavizan a \u00abhumill\u00f3\u00bb; esta traducci\u00f3n lo vierte \u00abviol\u00f3\u00bb. \u2b50 La misma ra\u00edz vuelve, d\u00e9cadas despu\u00e9s y sin relaci\u00f3n con ese sentido m\u00e1s oscuro, en Deuteronomio 8:2-3 y 8:16 (ya en estas p\u00e1ginas), emparejada con el verbo \u00abprobar\u00bb: Jehov\u00e1 \u00abhumilla\u00bb a Israel en el desierto con hambre y man\u00e1 \u2014 el verbo de la aflicci\u00f3n de Egipto-\u00c9xodo, corrido una vez CONTRA un pueblo y una vez, deliberadamente, POR \u00e9l."),
+    "anah": ("anah / innah", "AFLIGIR, humillar \u2014 y, en la forma intensiva innah, FORZAR, degradar, violar. Profetizado sobre Israel en Egipto (15:13), infligido por Saray a una egipcia (16:6), aceptado en el duro \u00absom\u00e9tete\u00bb del \u00e1ngel (16:9), o\u00eddo por Dios en la \u00abaflicci\u00f3n\u00bb de Agar (16:11) \u2014 el verbo del \u00c9xodo, corriendo hacia atr\u00e1s. Su uso m\u00e1s oscuro en G\u00e9nesis es 34:2, sobre Siqu\u00e9n y Dina \u2014 \u00abla tom\u00f3 y se acost\u00f3 con ella y la viol\u00f3\u00bb, la propia palabra de la ley para la violaci\u00f3n (Deuteronomio 22:29; lo que Amn\u00f3n le hace a Tamar, 2 Samuel 13:14). KJV/ASV lo suavizan a \u00abhumill\u00f3\u00bb; esta traducci\u00f3n lo vierte \u00abviol\u00f3\u00bb. \u2b50 La misma ra\u00edz vuelve, d\u00e9cadas despu\u00e9s y sin relaci\u00f3n con ese sentido m\u00e1s oscuro, en Deuteronomio 8:2-3 y 8:16 (ya en estas p\u00e1ginas), emparejada con el verbo \u00abprobar\u00bb: Jehov\u00e1 \u00abhumilla\u00bb a Israel en el desierto con hambre y man\u00e1 \u2014 el verbo de la aflicci\u00f3n de Egipto-\u00c9xodo, corrido una vez CONTRA un pueblo y una vez, deliberadamente, POR \u00e9l. "
+    "⭐ <a href=\"deuteronomy-22.es.html\">Deuteronomio 22</a> lo usa dos veces, y los dos usos están en los "
+    "dos extremos de la misma sentencia del capítulo. En <a "
+    "href=\"deuteronomy-22.es.html#v22-24\">22:24</a> un hombre muere apedreado <em>porque violó a la mujer "
+    "de su prójimo</em>; en <a href=\"deuteronomy-22.es.html#v22-29\">22:29</a> un hombre paga cincuenta de "
+    "plata y se casa con la mujer <em>por cuanto la violó</em>. El mismo verbo nombra un delito capital y "
+    "una multa, con cinco versículos de por medio, y lo único que los separa es si la mujer estaba "
+    "desposada. ⚠ Llega ahí desde <a href=\"deuteronomy-21.es.html#v21-14\">21:14</a>, de la mujer cautiva "
+    "que un soldado no puede luego vender, y es el verbo de los dos relatos junto a los que suele leerse "
+    "la ley: Siquem y Dina en <a href=\"genesis-34.es.html#v34-2\">Génesis 34:2</a>, y Amnón y Tamar en 2 "
+    "Samuel 13 (todavía no en estas páginas)."),
     "matzevah": ("matzevah (pl. matzevot)", "PIEDRA ALZADA \u2014 una losa erguida puesta en pie para fijar algo de forma permanente, de <em>natsav</em>, estar de pie. La palabra es moralmente neutra y la Biblia la usa en los dos sentidos, y por eso necesita entrada propia y no una glosa. Jacob levanta una tres veces, cada vez para fijar un momento: la piedra sobre la que hab\u00eda dormido en Betel, ungida con aceite (G\u00e9nesis 28:18, ya en estas p\u00e1ginas, todav\u00eda no en espa\u00f1ol), el majano de Galaad que atestigua un pacto (G\u00e9nesis 31:45, ya en estas p\u00e1ginas, todav\u00eda no en espa\u00f1ol) y Betel otra vez (<a href=\"genesis-35.es.html#v35-14\">35:14</a>) \u2014ninguna de ellas condenada\u2014. Pero una <em>matzevah</em> puesta en un santuario cananeo es otro objeto haciendo el mismo trabajo para otro dios, y <a href=\"deuteronomy-12.es.html#v12-3\">Deuteronomio 12:3</a> manda quebrarlas, como ya lo hab\u00eda hecho <a href=\"deuteronomy-7.es.html#v7-5\">7:5</a>. \u26a0 El estante ingl\u00e9s no es consistente: esta traducci\u00f3n y la <span class=\"tag t-nwt\">NWT</span> leen &laquo;piedras alzadas&raquo;, mientras que <span class=\"tag t-kjv\">KJV</span> y <span class=\"tag t-asv\">ASV</span> imprimen &laquo;images&raquo; y &laquo;pillars&raquo; \u2014y &laquo;imagen&raquo; enga\u00f1a, porque lo propio de una <em>matzevah</em> es que NO est\u00e1 tallada. Es una piedra que significa algo, no una piedra con forma de algo; eso la distingue del <em>pesel</em>, la imagen tallada, que est\u00e1 a su lado en el mismo vers\u00edculo. \u2b50 Se conservan hileras de ellas en Gu\u00e9zer y en otros sitios, y su prop\u00f3sito se discute de verdad \u2014v\u00e9ase el frontispicio de este cap\u00edtulo."),
     "chazaq": ("chazaq", "SER FUERTE, firme, resuelto \u2014el verbo del temple y de la presa\u2014. Es la palabra detr\u00e1s del coraz\u00f3n endurecido del fara\u00f3n (el coraz\u00f3n hecho <em>fuerte</em>, no ablandado), detr\u00e1s de &laquo;su mano FUERTE y su brazo extendido&raquo; (<a href=\"deuteronomy-11.es.html#v11-2\">Deuteronomio 11:2</a>, ya en estas p\u00e1ginas) y, sobre todo, detr\u00e1s del encargo a un jefe militar: <em>chazaq ve-ematz</em>, &laquo;s\u00e9 fuerte y valiente&raquo;. \u2b50 Que es lo que hace que valga la pena detenerse en <a href=\"deuteronomy-12.es.html#v12-23\">Deuteronomio 12:23</a>. La frase exacta <em>rak chazaq</em>, &laquo;solo s\u00e9 fuerte&raquo;, aparece en tres vers\u00edculos de toda la Biblia hebrea: aquel, y <a href=\"joshua-1.es.html#v1-7\">Josu\u00e9 1:7</a> y 1:18, dichos los dos a Josu\u00e9 sobre invadir un pa\u00eds. En Deuteronomio encabeza una regla sobre no comer sangre. El hebreo trata la abstinencia como un acto que exige la misma cualidad que la guerra. \u26a0 Casi todo el estante ingl\u00e9s le quita el temple \u2014<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-asv\">ASV</span>, <span class=\"tag t-gnv\">Ginebra</span> y <span class=\"tag t-niv\">NIV</span> leen todas &laquo;be sure&raquo;\u2014 mientras que la <span class=\"tag t-nwt\">NWT</span> conserva &laquo;firmly resolved&raquo; y la Reina-Valera de 1909 &laquo;te esfuerces&raquo;. Los traductores de Ginebra lo sab\u00edan: su propio margen en ese vers\u00edculo dice, entero, &laquo;Hebrew, be strong or constant&raquo;."),
     "shaar": ("sha'ar", "UNA PUERTA \u2014y, en Deuteronomio, un PUEBLO\u2014. La puerta de un poblado amurallado era donde ocurr\u00eda su vida: el mercado, el tribunal, el banco de los ancianos, el sitio donde se o\u00eda un caso y se atestiguaba un trato. As\u00ed que &laquo;dentro de tus puertas&raquo; acaba significando no el vano sino todo lo que hay dentro de \u00e9l. <a href=\"deuteronomy-12.es.html#v12-15\">Deuteronomio 12</a> se apoya mucho en ella \u2014la carne puede comerse <em>bi-she&rsquo;arekha</em> (vv15, 17, 21), el diezmo no, y el levita que no tiene tierra propia es tres veces &laquo;el levita que est\u00e1 dentro de tus puertas&raquo; (vv12, 18, 19), un hombre definido por vivir dentro del pueblo de otro. \u26a0 Las revisiones modernas traducen el significado y pierden la imagen: el &laquo;inside your gates&raquo; de la <span class=\"tag t-nwt\">NWT</span> 1984 se vuelve &laquo;within your cities&raquo; en su revisi\u00f3n de 2013, y las &laquo;tus puertas&raquo; de la TNM 1987 se vuelven &laquo;tus ciudades&raquo; en 2019 \u2014exacto como glosa, pero disuelve la conexi\u00f3n con los postes y las puertas sobre los que el Shem\u00e1 manda escribir (<a href=\"deuteronomy-6.es.html#v6-9\">Deuteronomio 6:9</a>, <a href=\"deuteronomy-11.es.html#v11-20\">11:20</a>, ya las dos en estas p\u00e1ginas), que es la misma palabra."),
@@ -13929,7 +14219,13 @@ DICTIONARY_ES = {
     "gara": ("gara", "RESTAR &mdash;quitar una cantidad de un total, retener una parte, dejar a alguien corto. \u2b50 Es el verbo de todas las peticiones del libro de N\u00fameros. Tres veces alguien acude a Mois\u00e9s con una queja y la formula con esta palabra, y <strong>las tres veces gana el que pide</strong>: en <a href=\"numbers-9.es.html#v9-7\">N\u00fameros 9:7</a> unos hombres contaminados por un cad\u00e1ver preguntan por qu\u00e9 han de ser restados de la Pascua; en <a href=\"numbers-27.es.html#v27-4\">N\u00fameros 27:4</a> las hijas de Zelofehad preguntan por qu\u00e9 ha de restarse el NOMBRE de su padre de su clan; en <a href=\"numbers-36.es.html#v36-3\">N\u00fameros 36:3</a> son los hombres de su propio clan quienes lo usan dos veces, y sobre la tierra. Un contacto con un muerto, el nombre de un difunto y una parcela de suelo, medidos todos con un mismo verbo de contable. \u26a0 <strong>Ninguna versi\u00f3n de ninguno de los dos estantes usa una sola palabra en los tres sitios</strong>, de modo que el hilo es invisible en traducci\u00f3n: la ASV es la que m\u00e1s se acerca (&lsquo;kept back&rsquo; y luego &lsquo;taken away&rsquo; dos veces), la KJV gasta tres palabras distintas, y ambas Reina-Valeras coinciden consigo mismas en los dos \u00faltimos con \u00abquitada\u00bb y se separan en el primero. \u26a0 Esta traducci\u00f3n tampoco lo consigue &mdash;el hebreo abarca retener a una PERSONA y restar una CANTIDAD&mdash; y lo dice en vez de fabricar un eco. ⚠ <a href=\"deuteronomy-4.html#n4-2\">Deuteronomio 4:2</a> (ya en estas páginas) vuelve el mismo verbo de un recuento de personas hacia un TEXTO: «no añadirás a la palabra&hellip; ni quitarás (<em>tigre’u</em>) de ella» —la misma raíz, aplicada por primera vez en estas páginas al límite de la ley misma y no a una persona o una parcela, tratada en <em><a href=\"diccionario.html#yasaph\">yasaf</a></em>."),
     "yasaf": ("yasaf", "A\u00d1ADIR \u2014 y, en las mismas formas, VOLVER A HACER algo. \u2b50 Es la mitad de la pareja que guarda la ley: <a href=\"deuteronomy-4.es.html\">Deuteronomio 4:2</a> y <a href=\"deuteronomy-13.es.html#v13-1\">13:1</a> proh\u00edben a\u00f1adir a la palabra y quitarle, y los dos vers\u00edculos imprimen esa \u00fanica orden en n\u00fameros gramaticales distintos \u2014plural en 4:2, singular en 13:1\u2014, que es como una repetici\u00f3n se convierte en prueba. \u26a0 El segundo sentido es lo que hace dif\u00edcil buscar el verbo: <em>lo tosef</em> puede ser \u00abno a\u00f1adir\u00e1s\u00bb o \u00abno volver\u00e1s a hacerlo\u00bb, y <a href=\"deuteronomy-13.es.html#v13-12\">Deuteronomio 13:12</a> usa exactamente ese segundo sentido quince vers\u00edculos despu\u00e9s del primero. Una ra\u00edz, dos veces en un cap\u00edtulo, dos oficios distintos."),
     "nadach": ("nadach", "EMPUJAR FUERA, apartar de un camino \u2014 en causativo, sacar a alguien de la senda por la que iba. \u2b50 Es la columna vertebral de <a href=\"deuteronomy-13.es.html\">Deuteronomio 13</a>, construido como tres casos en aumento que no comparten nada salvo este verbo: lo hace el profeta (13:6), lo hace el pariente (13:11, la palabra id\u00e9ntica) y lo hacen los malvados con un pueblo entero (13:14) \u2014 una vez por caso, en orden. \u26a0 La forma de 13:14, <em>va-yadichu</em>, est\u00e1 solo en ese vers\u00edculo en toda la Biblia hebrea. El nombre rab\u00ednico posterior del tercer caso, la <em>ir ha-niddachat</em> o \u00abciudad desviada\u00bb, se construye sobre esta ra\u00edz."),
-    "baar": ("bi\u2019er", "QUEMAR, consumir \u2014 el verbo corriente para un fuego que se come lo que se le da. \u2b50 En Deuteronomio se endurece hasta ser una f\u00f3rmula de purga judicial: <em>u-viarta ha-ra mi-kirbecha</em>, \u00abquemar\u00e1s el mal de en medio de ti\u00bb, que est\u00e1 en nueve vers\u00edculos de la Biblia hebrea, <strong>todos ellos en este libro</strong>, empezando en <a href=\"deuteronomy-13.es.html#v13-6\">Deuteronomio 13:6</a>. \u26a0 Si el fuego est\u00e1 realmente dentro es discutido: los l\u00e9xicos separan una segunda ra\u00edz que significa pacer o dejar rapado, lo que dar\u00eda \u00abbarrer\u00e1s el mal\u00bb. La <span class=\"tag t-rv\">RV 1909</span> y la <span class=\"tag t-rv60\">RV60</span> ponen \u00abquitar\u00e1s el mal\u00bb, que da el efecto y gasta la imagen."),
+    "baar": ("bi\u2019er", "QUEMAR, consumir \u2014 el verbo corriente para un fuego que se come lo que se le da. \u2b50 En Deuteronomio se endurece hasta ser una f\u00f3rmula de purga judicial: <em>u-viarta ha-ra mi-kirbecha</em>, \u00abquemar\u00e1s el mal de en medio de ti\u00bb, que est\u00e1 en nueve vers\u00edculos de la Biblia hebrea, <strong>todos ellos en este libro</strong>, empezando en <a href=\"deuteronomy-13.es.html#v13-6\">Deuteronomio 13:6</a>. \u26a0 Si el fuego est\u00e1 realmente dentro es discutido: los l\u00e9xicos separan una segunda ra\u00edz que significa pacer o dejar rapado, lo que dar\u00eda \u00abbarrer\u00e1s el mal\u00bb. La <span class=\"tag t-rv\">RV 1909</span> y la <span class=\"tag t-rv60\">RV60</span> ponen \u00abquitar\u00e1s el mal\u00bb, que da el efecto y gasta la imagen. "
+    "⭐ Tres de esos nueve versículos resultan ser un solo capítulo: <a "
+    "href=\"deuteronomy-22.es.html#v22-21\">Deuteronomio 22:21</a>, <a "
+    "href=\"deuteronomy-22.es.html#v22-22\">22:22</a> y <a href=\"deuteronomy-22.es.html#v22-24\">22:24</a> "
+    "cierran con la fórmula tres casos sexuales consecutivos, que es la concentración más densa de ella "
+    "en toda la Biblia. Sea lo que sea esa casuística, el libro la archiva bajo el mismo epígrafe que la "
+    "apostasía, el falso testimonio y el hijo rebelde."),
     "sarah-revolt": ("sarah", "REBELI\u00d3N, defecci\u00f3n \u2014 un sustantivo de <em>sur</em>, apartarse: lo que se habla cuando alguien saca a un pueblo de su camino. \u2b50 <em>Dibber sarah</em>, \u00abha hablado rebeli\u00f3n\u00bb, es la acusaci\u00f3n formal contra un profeta falso en <a href=\"deuteronomy-13.es.html#v13-6\">Deuteronomio 13:6</a>, y el sustantivo est\u00e1 en solo dos vers\u00edculos de la Tor\u00e1, ese y Deuteronomio 19:16. \u2b50 Los dos profetas condenados con esas mismas palabras son Anan\u00edas en Jerem\u00edas 28:16 y Sema\u00edas en 29:32: el estatuto est\u00e1 en Deuteronomio y los dos \u00fanicos procesos con nombre propio est\u00e1n en Jerem\u00edas. \u26a0 No confundir con Sara la matriarca, que es otra palabra con otra primera letra (sin, no s\u00e1mej). \u2b50 <strong>El segundo de los dos ya est\u00e1 en estas p\u00e1ginas</strong>: en <a href=\"deuteronomy-19.es.html#v19-16\">Deuteronomio 19:16</a> un testigo malicioso se levanta <em>para responder contra \u00e9l con rebeli\u00f3n</em> \u2014la acusaci\u00f3n del falso profeta, trasladada a un tribunal y apuntada a un pr\u00f3jimo. \u26a0 Cuatro de los seis testigos revisables del estante lo han soltado: \u00aba charge of revolt\u00bb de la NWT 1984 pasa a \u00absome transgression\u00bb en 2013, \u00absublevaci\u00f3n\u00bb de la TNM 1987 pasa a \u00abviolar alguna ley\u00bb en 2019, y \u00abrebeli\u00f3n\u00bb de la RV 1909 la RV60 la suprime del todo. Perder el sustantivo es perder el v\u00ednculo entre las dos faltas."),
     "tel": ("tel", "UN MONT\u00cdCULO \u2014 y en concreto el mont\u00f3n en capas en que se convierte una ciudad destruida, donde cada reconstrucci\u00f3n levanta un poco el suelo sobre la ruina anterior. \u2b50 <em>Tel olam</em>, \u00abmont\u00f3n para siempre\u00bb, es una sentencia y no una descripci\u00f3n, y est\u00e1 en exactamente dos vers\u00edculos de la Biblia hebrea: <a href=\"deuteronomy-13.es.html#v13-17\">Deuteronomio 13:17</a>, donde se decreta para un pueblo israelita ap\u00f3stata, y Josu\u00e9 8:28, donde es lo que Josu\u00e9 hace de Hai. La ley y su \u00fanica ejecuci\u00f3n usan las mismas dos palabras. \u2b50 La palabra nunca se volvi\u00f3 arcaica: es el <em>Tel</em> de Tel Meguido y de Tel Aviv, y sigue siendo como los arque\u00f3logos llaman a los mont\u00edculos que excavan."),
     "shekhar": ("shekhar", "BEBIDA FUERTE \u2014 una bebida embriagante que no es vino. El vino (<em>yayin</em>) sale de la uva; el <em>shekhar</em> es todo lo dem\u00e1s fermentado, sobre todo CERVEZA de cebada, la bebida corriente del antiguo Oriente Pr\u00f3ximo, elaborada en textos mesopot\u00e1micos siglos antes de que existiera Israel. La ra\u00edz es la que est\u00e1 detr\u00e1s de <em>shikkor</em>, ebrio. \u26a0 La palabra aparece casi siempre dentro de una prohibici\u00f3n, y por eso sorprende <a href=\"deuteronomy-14.es.html#v14-26\">Deuteronomio 14:26</a>: los sacerdotes no pueden beber vino ni <em>shekhar</em> al entrar en la tienda de reuni\u00f3n (Lev\u00edtico 10:9), y el nazareo no puede probar ninguno de los dos mientras dure su voto (N\u00fameros 6:3) \u2014pero aqu\u00ed un estatuto le dice al israelita corriente que convierta su diezmo en plata, la lleve al santuario y la gaste en vacas, ovejas, vino y <em>shekhar</em>, para un banquete. \u2b50 Al estante le incomoda y se le nota: \u00abstrong drink\u00bb en la <span class=\"tag t-kjv\">KJV</span> y la <span class=\"tag t-gnv\">Ginebra</span>, \u00absidra\u00bb en la <span class=\"tag t-rv\">RV 1909</span> y la <span class=\"tag t-rv60\">RV60</span> \u2014que es una bebida de manzana y no de cebada\u2014, \u00ablicor embriagante\u00bb en la <span class=\"tag t-tnm\">TNM</span> 1987 y \u00abotras bebidas alcoh\u00f3licas\u00bb en la revisi\u00f3n de 2019. Todas las versiones antiguas son exactas; el problema es que \u00abbebida fuerte\u00bb le suena hoy a destilados, que en el mundo b\u00edblico no se destilaban en ninguna parte."),
@@ -13989,7 +14285,21 @@ DICTIONARY_ES = {
         "14, 16, 22) y dos son el verbo &mdash;<em>l'haqdisheni</em>, «para santificarme» (v12), que es "
         "justamente lo que Moisés y Aarón no hicieron, y <em>vayyiqqadesh</em>, «y fue santificado» (v13), que "
         "es lo que Dios obtiene de todos modos, juzgando. Falla la santidad en el pueblo llamado Santidad. "
-        "Ninguna versión puede llevarlo, porque «Cades» es un nombre y «santificar» un verbo."),
+        "Ninguna versión puede llevarlo, porque «Cades» es un nombre y «santificar» un verbo. "
+    "⚠ <span data-heb=\"פן תקדש\">Su uso jurídico más extraño es <em>pen tikdash</em>, que está en "
+    "<strong>un solo versículo</strong></span>: <a href=\"deuteronomy-22.es.html#v22-9\">Deuteronomio "
+    "22:9</a> advierte que una viña sembrada con <em><a href=\"diccionario.html#kilayim\">dos "
+    "clases</a></em> QUEDARÁ SANTIFICADA — es decir, perdida, porque una cosa santa no puede comerla su "
+    "dueño. ⭐ Cuatro testigos imprimen lo contrario de la palabra hebrea y dicen que la cosecha se "
+    "CORROMPE (la <span class=\"tag t-rv\">RV 1909</span> con «no se deprave», y en inglés la <span "
+    "class=\"tag t-kjv\">KJV</span>, la <span class=\"tag t-gnv\">Ginebra</span> y la <span class=\"tag "
+    "t-niv\">NIV</span>); seis conservan la dirección del hebreo nombrando adónde va la cosecha (al "
+    "santuario, en la <span class=\"tag t-nwt\">NWT 1984</span> y en la <span class=\"tag t-tnm\">TNM</span> "
+    "1987 y 2019, «consagrar a Dios» en la <span class=\"tag t-nvi\">NVI</span>, «confiscated by the "
+    "priests» en la <span class=\"tag t-tlb\">TLB</span>); la <span class=\"tag t-rv60\">RV60</span> se queda "
+    "en una pérdida neutra, «no sea que se pierda todo»; y la <span class=\"tag t-drb\">Douay</span>, sola, "
+    "imprime el verbo tal cual, «lest … be sanctified together». En esta cláusula la versión que sigue al "
+    "latín es la más literal del estante."),
     "sela": ("sela",
         "UN PEÑASCO —una pared de roca, un risco, un saliente de piedra sobre el que uno podría subirse o "
         "en el que podría esconderse; distinto de <em><a href=\"diccionario.html#tzur\">tzur</a></em>, la roca "
@@ -24046,3 +24356,285 @@ DICTIONARY_ES["orlah"] = ("orlah", 'literalmente PREPUCIO, y por una extensión 
     'eximido de la batalla por una viña que todavía no ha <em><a href="diccionario.html#chalal">jilel</a></em> '
     '&mdash;liberado para uso común&mdash; es un hombre cuyas vides no han llegado a su quinto año. El verbo y el '
     'sustantivo nombran los dos extremos del mismo período de espera.')
+
+DICTIONARY_ES["alam"] = ("hit'alem",
+    "ESCONDERSE — el reflexivo de <em>alam</em>, ocultar, y el verbo que <a "
+    "href=\"deuteronomy-22.es.html\">Deuteronomio 22</a> usa tres veces para lo que NO se debe hacer al ver "
+    "en apuros el animal de un prójimo. ⭐ La gramática es lo importante: lo que se esconde no es el buey, "
+    "sino TÚ. <span data-heb=\"התעלמ|התעלם|תתעלם|יתעלם\">La forma está en <strong>seis versículos</strong></span> "
+    "de la Biblia hebrea y tres de ellos son ese capítulo — <a "
+    "href=\"deuteronomy-22.es.html#v22-1\">22:1</a>, <a href=\"deuteronomy-22.es.html#v22-3\">22:3</a> y <a "
+    "href=\"deuteronomy-22.es.html#v22-4\">22:4</a>. ⚠ De los otros tres el que importa es Isaías 58:7 "
+    "(todavía no en estas páginas): el gran capítulo del ayuno cierra su descripción de un ayuno "
+    "verdadero con <em>y no te escondas de tu propia carne</em> — el mismo verbo, vuelto de un animal "
+    "extraviado sobre la propia familia. El Salmo 55:2 le pide a Dios que no lo haga (<em>no te escondas "
+    "de mi súplica</em>), y Job 6:16 lo usa de la nieve que se esconde en un cauce. ⚠ <a "
+    "href=\"exodus-23.es.html#v23-5\">Éxodo 23:5</a>, que da la misma ley del animal de un hombre que te "
+    "aborrece, usa otro verbo más plano, <em>jadal</em>, DEJAR DE. El recambio de Deuteronomio es el más "
+    "agudo. ⚠ El estante se divide sobre si conservar el reflexivo: la <span class=\"tag t-kjv\">KJV</span> "
+    "y la <span class=\"tag t-asv\">ASV</span> ponen «escóndete», la <span class=\"tag t-gnv\">Ginebra</span> "
+    "«retírate» y la <span class=\"tag t-nwt\">NWT 1984</span> «retirarte deliberadamente», mientras que la "
+    "<span class=\"tag t-niv\">NIV</span> («no lo pases por alto») y la <span class=\"tag t-tlb\">TLB</span> "
+    "hacen de ello una decisión sobre el animal y no sobre el hombre.")
+
+DICTIONARY_ES["simlah"] = ("simlá",
+    "UN MANTO — la gran prenda exterior que un israelita llevaba de día y bajo la que dormía de noche, "
+    "razón por la cual <a href=\"exodus-22.es.html#v22-25\">Éxodo 22:25-26</a> prohíbe retenerla en prenda "
+    "durante la noche: es la manta del pobre. No es la misma palabra que <em>beged</em>, el término "
+    "general para vestido. ⭐ <span data-heb-read=\"שמל\">Recorre tres veces <a "
+    "href=\"deuteronomy-22.es.html\">Deuteronomio 22</a></span>, en tres leyes sin relación entre sí, y el "
+    "hilo es fácil de perder: en <a href=\"deuteronomy-22.es.html#v22-3\">22:3</a> un manto perdido es una "
+    "propiedad que estás obligado a guardar hasta que su dueño venga a buscarla; en <a "
+    "href=\"deuteronomy-22.es.html#v22-5\">22:5</a> el manto de una mujer es un límite que un hombre no "
+    "puede cruzar; y en <a href=\"deuteronomy-22.es.html#v22-17\">22:17</a> un manto es la tela que se "
+    "extiende en la puerta de la ciudad como la prueba que decide si una mujer vive. ⚠ Es la prenda del "
+    "éxodo mismo — la masa salió de Egipto atada en las <em>simlot</em> del pueblo (<a "
+    "href=\"exodus-12.es.html#v12-34\">Éxodo 12:34</a>) — y la que no se envejeció en el desierto, <a "
+    "href=\"deuteronomy-8.es.html#v8-4\">Deuteronomio 8:4</a>.")
+
+DICTIONARY_ES["keli-gever"] = ("kelí guéver",
+    "EL EQUIPO DE UN HOMBRE — dos palabras que están en <span data-heb=\"כלי גבר\"><strong>un solo "
+    "versículo</strong></span> de la Biblia hebrea, <a href=\"deuteronomy-22.es.html#v22-5\">Deuteronomio "
+    "22:5</a>, y que cargan con toda la dificultad de la ley sobre el vestir del otro sexo. ⭐ "
+    "<em>Kelí</em> es la palabra más ancha que tiene el hebreo para una cosa fabricada: un recipiente, "
+    "una herramienta, un arma, un pertrecho; es la palabra de los <em><a "
+    "href=\"diccionario.html#kelim\">utensilios</a></em> del templo. NO es una palabra de ropa, y la "
+    "cláusula tampoco usa un verbo de vestir: dice que <em>kelí guéver</em> no ha de ESTAR SOBRE una "
+    "mujer. La segunda mitad del versículo está construida de otro modo — allí un hombre no ha de VESTIR "
+    "(<em>yilbash</em>) la <em><a href=\"diccionario.html#simlah\">simlá</a></em> de una mujer, una prenda "
+    "con nombre. ⚠ Por esa asimetría el versículo se ha leído como tres leyes distintas: contra el "
+    "disfraz, contra una mujer que porta armas, y contra un travestismo de culto atestiguado en el "
+    "antiguo Cercano Oriente. Este proyecto no elige entre ellas. ⚠ <em>Guéver</em> no es el neutro "
+    "<em>ish</em>, sino la palabra del varón en su fuerza. ⭐ El estante conserva la asimetría en sus "
+    "testigos antiguos y la pierde en los nuevos, versión por versión: «lo que pertenece a un hombre» "
+    "frente a «vestido de mujer» (<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag "
+    "t-asv\">ASV</span>), «garb» frente a «manto» (<span class=\"tag t-nwt\">NWT 1984</span>), «hábito de "
+    "hombre» frente a «ropa de mujer» (<span class=\"tag t-rv\">RV 1909</span>) — y después «la ropa de un "
+    "hombre» / «la de una mujer» en la <span class=\"tag t-tnm\">TNM 2019</span>, «traje» / «ropa» en la "
+    "<span class=\"tag t-rv60\">RV60</span> y «ropa» / «ropa» en la <span class=\"tag t-nvi\">NVI</span>.")
+
+DICTIONARY_ES["maaqeh"] = ("maaqué",
+    "UN PRETIL — el muro bajo que un constructor debe correr alrededor de una azotea, y una palabra que "
+    "está en <span data-heb=\"מעקה\"><strong>un solo versículo</strong></span> de la Biblia hebrea, <a "
+    "href=\"deuteronomy-22.es.html#v22-8\">Deuteronomio 22:8</a>. ⚠ Nada más en la Biblia lo describe, así "
+    "que toda traducción lo reconstruye desde la situación y no desde la lengua: «battlement» (<span "
+    "class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-asv\">ASV</span>, <span class=\"tag "
+    "t-gnv\">Ginebra</span>, <span class=\"tag t-drb\">Douay</span>), «parapet» (<span class=\"tag t-nwt\">NWT "
+    "1984</span>, <span class=\"tag t-niv\">NIV</span>), «pretil» (<span class=\"tag t-rv\">RV 1909</span>, "
+    "<span class=\"tag t-rv60\">RV60</span>, <span class=\"tag t-tnm\">TNM</span> 1987), «baranda» (<span "
+    "class=\"tag t-nvi\">NVI</span>) y «guardrail» (<span class=\"tag t-tlb\">TLB</span>). ⭐ La ley es "
+    "notable por lo que NO exige: no ha habido delito, ni negligencia, ni daño. Un hombre ha construido "
+    "una casa, y de la <em><a href=\"diccionario.html#damim\">sangre</a></em> se dice que se adhiere a la "
+    "CASA y no a la conducta de nadie — de modo que el remedio es un muro levantado antes de que nadie se "
+    "haga daño. Es el caso más claro de la Torá de un deber de PREVENIR en lugar de indemnizar.")
+
+DICTIONARY_ES["kilayim"] = ("kil'áyim",
+    "DOS CLASES — un sustantivo dual que nombra un emparejamiento de cosas que no deben emparejarse, y el "
+    "epígrafe bajo el que se agrupan las leyes de mezclas de la Torá. <span data-heb-read=\"כלאים\">Buscado "
+    "consonánticamente devuelve tres versículos y uno de ellos es otra palabra</span>: <a "
+    "href=\"leviticus-19.es.html#v19-19\">Levítico 19:19</a> y <a "
+    "href=\"deuteronomy-22.es.html#v22-9\">Deuteronomio 22:9</a> son el sustantivo, mientras que el "
+    "<em>kelaím</em> de Isaías 42:22 son CÁRCELES. ⭐ Las dos apariciones reales no legislan las mismas "
+    "tres cosas. Levítico prohíbe cruzar dos clases de ganado, sembrar un CAMPO con dos clases y vestir "
+    "<em><a href=\"diccionario.html#shaatnez\">sha'atnez</a></em>; Deuteronomio suprime la regla del "
+    "ganado, estrecha el campo a una VIÑA, añade una regla que Levítico no tiene — arar con buey y asno "
+    "juntos — y conserva la tela. ⚠ Ni un libro ni el otro dan razón alguna. Las explicaciones que "
+    "circulan (que las leyes guardan las fronteras creadas de <a href=\"genesis-1.es.html\">Génesis 1</a>, "
+    "que reservan la tela mezclada al sacerdocio, que son deliberadamente arbitrarias) son trabajo de los "
+    "lectores, no del texto.")
+
+DICTIONARY_ES["shaatnez"] = ("sha'atnez",
+    "TELA MEZCLADA — lana y lino tejidos juntos, y una de las palabras más extrañas de la Biblia hebrea. "
+    "<span data-heb=\"שעטנז\">Está en <strong>dos versículos</strong></span>, y el segundo es el "
+    "diccionario del primero. ⭐ <a href=\"leviticus-19.es.html#v19-19\">Levítico 19:19</a> prohíbe "
+    "<em>beged <a href=\"diccionario.html#kilayim\">kil'áyim</a> sha'atnez</em>, un vestido de dos clases, "
+    "<em>sha'atnez</em> — y se detiene, dando la palabra sin su contenido. <a "
+    "href=\"deuteronomy-22.es.html#v22-11\">Deuteronomio 22:11</a> aporta exactamente lo que Levítico se "
+    "guardó: <em>sha'atnez — lana y lino juntos</em>. ⚠ Es casi seguro que la palabra no es hebrea. La "
+    "forma de sus consonantes no corresponde a una raíz nativa, se ha propuesto un origen egipcio que no "
+    "está acordado, y la postura honrada es que nadie lo sabe. ⚠ Ninguno de los trece testigos que sigue "
+    "este proyecto imprime la palabra; los trece traducen la definición — «vestido de diversas clases» "
+    "(<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag t-gnv\">Ginebra</span>), «a mingled stuff» "
+    "(<span class=\"tag t-asv\">ASV</span>), «mixed stuff» (<span class=\"tag t-nwt\">NWT 1984</span>), «de "
+    "mistura» (<span class=\"tag t-rv\">RV 1909</span>). Esta traducción la imprime, porque el propio "
+    "versículo la glosa una cláusula después.")
+
+DICTIONARY_ES["gedilim"] = ("guedilim",
+    "CORDONES TORCIDOS — las borlas mandadas en las puntas de una prenda en <a "
+    "href=\"deuteronomy-22.es.html#v22-12\">Deuteronomio 22:12</a>, y NO la palabra por la que se conoce la "
+    "práctica. ⭐ La Biblia da el mandato de las borlas dos veces con dos vocabularios: <a "
+    "href=\"numbers-15.es.html#v15-38\">Números 15:38</a> manda <em>tzitzit</em> en los <em><a "
+    "href=\"diccionario.html#kanaf\">kanfei</a></em> de vuestros vestidos, con un cordón de azul y una "
+    "razón declarada (los veréis y os acordaréis); Deuteronomio manda <em>guedilim</em> en las CUATRO "
+    "puntas de tu manto, sin azul y sin razón ninguna. La observancia tomó su nombre de la palabra de "
+    "Números; el número cuatro viene de este versículo. ⚠ <span data-heb=\"גדלים\">Leídos de entre los "
+    "cincuenta y tantos resultados que devuelven sus consonantes — casi todos <em>guedolim</em>, "
+    "«grandes», o <em>migdalim</em>, «torres» — el sustantivo está en <strong>dos "
+    "versículos</strong></span>: este, y 1 Reyes 7:17, donde nombra las cadenillas trenzadas sobre los "
+    "capiteles de las dos columnas de bronce a la puerta del templo de Salomón. Los cordones de la punta "
+    "del manto de un hombre y el adorno de las columnas delanteras del templo son una misma palabra, y "
+    "ninguno de los dos versículos apunta al otro. ⚠ El estante lee «flecos» (<span class=\"tag t-rv\">RV "
+    "1909</span>, <span class=\"tag t-rv60\">RV60</span>), «borlas» (<span class=\"tag t-nvi\">NVI</span>, "
+    "<span class=\"tag t-tnm\">TNM</span>), «fringes» (<span class=\"tag t-kjv\">KJV</span>, <span class=\"tag "
+    "t-asv\">ASV</span>) y «strings in the hem» (<span class=\"tag t-drb\">Douay</span>).")
+
+DICTIONARY_ES["kanaf"] = ("kanaf (pl. kanfot)",
+    "UN ALA — ese es el sentido llano, y la punta o el borde de una prenda solo por extensión, la parte "
+    "que cuelga suelta como un ala. ⭐ <span data-heb=\"כנפות\">El plural <em>kanfot</em> está en "
+    "<strong>cinco versículos</strong></span> de la Biblia hebrea, y <a "
+    "href=\"deuteronomy-22.es.html#v22-12\">Deuteronomio 22:12</a> es el único donde pertenece a una "
+    "prenda. Los otros cuatro son los extremos del mundo: <em>los cuatro cabos de la tierra</em> en "
+    "Isaías 11:12 y Ezequiel 7:2, contados exactamente como cuenta este versículo, y los <em>kanfot "
+    "ha-árets</em> sin número que alcanza el relámpago en Job 37:3 y que al alba se le manda asir en Job "
+    "38:13. Así que a un hombre se le manda atar cordones a las cuatro puntas de la tela con que se "
+    "envuelve, con la expresión que la Biblia reserva por lo demás para los cuatro extremos de todo. ⚠ "
+    "Isaías 11:12 lleva una segunda palabra del mismo capítulo: reúne a los <em><a "
+    "href=\"diccionario.html#nadach\">nidjei</a> Yisrael</em>, los DESTERRADOS de Israel, desde esos cuatro "
+    "cabos — y «desterrado» es el participio que Deuteronomio 22:1 usa de un buey extraviado. ⚠ El "
+    "singular tiene una segunda vida que el plural no tiene: extender tu <em>kanaf</em> sobre una mujer "
+    "es reclamarla en matrimonio (Rut 3:9), y cortarle el <em>kanaf</em> a un manto es como David prueba "
+    "que perdonó a Saúl (1 Samuel 24).")
+
+DICTIONARY_ES["alilah"] = ("alilá (pl. alilot)",
+    "UNA HAZAÑA, una obra — y, en una expresión jurídica fija, una ACUSACIÓN FALSA. La compañía habitual "
+    "del sustantivo es elevada: <em>dad a conocer sus <strong>alilot</strong> entre los pueblos</em> se "
+    "dice de los actos de Dios en Isaías 12:4 y en 1 Crónicas 16:8. ⭐ Pero <span "
+    "data-heb=\"עלילת\"><em>alilot devarim</em> — literalmente algo así como «obras desmandadas de "
+    "palabras» — está en <strong>dos versículos</strong></span>, y los dos son un solo caso: <a "
+    "href=\"deuteronomy-22.es.html#v22-14\">Deuteronomio 22:14</a>, donde un marido inventa la acusación de "
+    "que su novia no era virgen, y <a href=\"deuteronomy-22.es.html#v22-17\">22:17</a>, donde el padre de "
+    "ella le devuelve la acusación delante de los ancianos. Una obra bastante grande como para publicarla "
+    "y una fabricación bastante grande como para matar a alguien son un mismo sustantivo hebreo. ⚠ "
+    "Ninguna versión ha hecho funcionar la expresión literal, y las dos Reina-Valeras se separan: la "
+    "<span class=\"tag t-rv\">RV 1909</span> pone «le pusiere algunas faltas» y su propia revisión <span "
+    "class=\"tag t-rv60\">RV60</span> alarga la frase a «le atribuyere faltas que den que hablar», que es "
+    "la única del estante castellano que conserva el <em>devarim</em>, las PALABRAS, dentro de la "
+    "acusación. La <span class=\"tag t-nvi\">NVI</span> resume, «la difama y la acusa», y la <span "
+    "class=\"tag t-tnm\">TNM</span> 1987 pone «hechos escandalosos».")
+
+DICTIONARY_ES["betulim"] = ("betulim",
+    "VIRGINIDAD — un plural abstracto construido sobre <em>betulá</em>, una virgen, y una palabra que "
+    "este proyecto encuentra en un solo lugar. <span data-heb=\"בתולים\">La forma absoluta está en "
+    "<strong>tres versículos</strong></span> de la Biblia hebrea, los tres en <a "
+    "href=\"deuteronomy-22.es.html\">Deuteronomio 22</a> (<a href=\"deuteronomy-22.es.html#v22-14\">v14</a>, "
+    "<a href=\"deuteronomy-22.es.html#v22-17\">v17</a>, <a href=\"deuteronomy-22.es.html#v22-20\">v20</a>), "
+    "con el constructo <em>betulei</em> al lado en el mismo pasaje. ⚠ La ley nunca dice cuál es la prueba "
+    "física. El <a href=\"deuteronomy-22.es.html#v22-17\">versículo 17</a> hace que los padres extiendan "
+    "una <em><a href=\"diccionario.html#simlah\">simlá</a></em>, un manto, delante de los ancianos y lo "
+    "llama «los <em>betulim</em> de mi hija» — el sustantivo abstracto puesto en lugar del objeto. Si esa "
+    "tela es la ropa de cama de la noche de bodas o la prueba de una primera menstruación se lleva "
+    "discutiendo siglos, y el texto no lo dice. ⭐ Y ahí está lo que hay que mirar: el hebreo dice "
+    "<em>simlá</em>, un MANTO, la misma palabra de <a href=\"deuteronomy-22.es.html#v22-3\">22:3</a> y <a "
+    "href=\"deuteronomy-22.es.html#v22-5\">22:5</a>, y buena parte del estante decide la pregunta dentro "
+    "del versículo poniendo una cosa de cama. Conservan la prenda la <span class=\"tag t-rv60\">RV60</span> "
+    "(«la vestidura»), la <span class=\"tag t-tnm\">TNM</span> 1987 («el manto»), la <span class=\"tag "
+    "t-asv\">ASV</span> y la <span class=\"tag t-gnv\">Ginebra</span>; ponen «la sábana» la <span class=\"tag "
+    "t-rv\">RV 1909</span> y la <span class=\"tag t-nvi\">NVI</span>, y la <span class=\"tag "
+    "t-kjv\">KJV</span>, la <span class=\"tag t-drb\">Douay</span> y la <span class=\"tag t-niv\">NIV</span> "
+    "lo neutralizan a «cloth». ⚠ La <span class=\"tag t-tlb\">TLB</span> va mucho más lejos que todas y "
+    "añade lo que el hebreo no dice en ninguna parte: «the blood-stained sheet from her marriage bed». ⚠ "
+    "El estante suele además suministrar un sustantivo que el hebreo no tiene: «las señales de la "
+    "virginidad» (<span class=\"tag t-rv\">RV 1909</span>, <span class=\"tag t-rv60\">RV60</span>), «la "
+    "prueba de que sí lo era» (<span class=\"tag t-nvi\">NVI</span>).")
+
+DICTIONARY_ES["taphas"] = ("tafás",
+    "ASIR, agarrar, manejar — un verbo de aferrar, y el gozne de la ley más disputada de <a "
+    "href=\"deuteronomy-22.es.html\">Deuteronomio 22</a>. ⭐ Su alcance lo fijan sus usos corrientes: unos "
+    "padres <em>echan mano</em> del hijo contumaz para arrastrarlo ante los ancianos (<a "
+    "href=\"deuteronomy-21.es.html#v21-19\">Deuteronomio 21:19</a>), un ejército <em>toma</em> una ciudad "
+    "(2 Reyes 14:7), y un hombre <em>maneja</em> el arco (Amós 2:15), la hoz (Jeremías 50:16) o la ley "
+    "misma (Jeremías 2:8). Es fuerza, y no es la palabra más fuerte de que se disponía. ⚠ Eso importa en "
+    "<a href=\"deuteronomy-22.es.html#v22-28\">Deuteronomio 22:28</a>, donde un hombre <em>agarra</em> a una "
+    "virgen no desposada — porque tres versículos antes, en <a "
+    "href=\"deuteronomy-22.es.html#v22-25\">22:25</a>, el mismo capítulo usó <em><a "
+    "href=\"diccionario.html#chazaq\">hejezik</a></em>, FORZAR, del hombre en el campo. Deuteronomio tenía "
+    "a mano el verbo más fuerte y eligió este. ⭐ Y la Torá cuenta el caso de 22:28 una segunda vez con un "
+    "tercer verbo: <a href=\"exodus-22.es.html#v22-16\">Éxodo 22:16</a> tiene <em><a "
+    "href=\"diccionario.html#patah\">yefatté</a></em>, la SEDUCE. ⚠ La división del estante sobre este "
+    "verbo es reciente. Todo testigo antiguo traduce un echar mano — «la tomare» (<span class=\"tag "
+    "t-rv\">RV 1909</span>, <span class=\"tag t-rv60\">RV60</span>), «lay hold on her» (<span class=\"tag "
+    "t-kjv\">KJV</span>, <span class=\"tag t-asv\">ASV</span>), «la prenda» (<span class=\"tag "
+    "t-tnm\">TNM</span> 1987) — mientras que la <span class=\"tag t-nvi\">NVI</span> pone «la obliga a "
+    "acostarse con él» y la <span class=\"tag t-niv\">NIV</span> «rapes her». La señal es que la NIV pone "
+    "«rapes her» también en 22:25, de modo que el gradiente sobre el que está construida la ley "
+    "desaparece en una sola palabra.")
+
+DICTIONARY_ES["nevalah"] = ("nevalá",
+    "UNA INFAMIA — no un mal cualquiera, sino el término fijo y pesado para un acto vergonzoso que rasga "
+    "el tejido de un pueblo. La violación de Dina por Siquem es <em>una nevalá en Israel, cosa que no "
+    "debe hacerse</em> (<a href=\"genesis-34.es.html#v34-7\">Génesis 34:7</a>); la misma palabra nombra la "
+    "violación colectiva que enciende la guerra civil de Israel (Jueces 19-20), el asalto de Amnón a "
+    "Tamar (2 Samuel 13:12) y el sacrilegio de Acán (Josué 7:15) — ninguno de los tres todavía en estas "
+    "páginas. ⚠ Es pariente de <em>naval</em>, el NECIO que dice en su corazón que no hay Dios (Salmo "
+    "14:1): un derrumbe moral, no una simple tontería. La <span class=\"tag t-rv60\">RV60</span> pone "
+    "«vileza» y la <span class=\"tag t-kjv\">KJV</span> y la <span class=\"tag t-asv\">ASV</span> lo aplanan "
+    "a «folly», locura. El añadido «en Israel» está puesto a propósito: la nación recién nombrada se "
+    "encuentra con su primera atrocidad dentro de sus propias tiendas. ⭐ <a "
+    "href=\"deuteronomy-22.es.html#v22-21\">Deuteronomio 22:21</a> es la única aparición que rompe el "
+    "patrón, y la señal es gramatical y no léxica. <span data-heb-read=\"נבלה\">Leído aparte de los "
+    "versículos cuyas consonantes comparte con <em>nevelá</em>, un cadáver, el sustantivo está en trece "
+    "versículos</span> — y en todos ellos menos en este la infamia es algo que hace un hombre. Aquí el "
+    "verbo es <em>asetá</em>, femenino: <strong>ella</strong> lo hizo. La palabra que la Biblia usa de "
+    "Siquem, de los hombres de Guibeá y de Amnón se vuelve, una sola vez, sobre una mujer.")
+
+DICTIONARY_ES["moshia"] = ("moshía (pl. moshiim)",
+    "UN LIBERTADOR, salvador — el participio activo de <em>yashá</em>, salvar, la misma raíz que está "
+    "detrás de los nombres Josué (<em>Yehoshúa</em>) y Jesús (<em>Yeshúa</em>) y de la palabra Hosanna "
+    "(«salva ahora»). ⚠ Es la palabra del RESCATADOR en el libro de los Jueces, donde Dios levanta un "
+    "<em>moshía</em> para librar a Israel de un opresor (Jueces 3:9, 15) — un campeón temporal tomado por "
+    "el espíritu, no un rey. Abdías le da con ella su última esperanza al libro más corto de la Biblia: "
+    "<em>y subirán LIBERTADORES al monte de Sion para juzgar al monte de Esaú</em> (1:21) — en plural, "
+    "humanos, y sujetos al reino que «es de Jehová». ⭐ <span data-heb=\"אין מושיע\">La expresión <em>ve-ein "
+    "moshía</em>, <em>y no hay quien la salve</em>, está en <strong>cinco versículos</strong></span>, y "
+    "el primero de ellos en el orden de los libros es <a "
+    "href=\"deuteronomy-22.es.html#v22-27\">Deuteronomio 22:27</a> — una joven desposada que gritó en campo "
+    "abierto y no fue oída. Todas las demás apariciones son sobre naciones, ejércitos y ciudades: Israel "
+    "bajo maldición (Deuteronomio 28:29), Jabes de Galaad sitiada (1 Samuel 11:3), Babilonia abandonada "
+    "por sus encantadores (Isaías 47:15) y los enemigos de David clamando sin respuesta (Salmo 18:42; "
+    "ninguno todavía en estas páginas). El hebreo le da a una sola muchacha en un campo la frase que por "
+    "lo demás reserva para los imperios.")
+
+DICTIONARY_ES["shalach"] = ("shalaj",
+    "ENVIAR — y, en la forma intensiva, DESPEDIR, dejar ir, soltar. Es el estribillo del éxodo: "
+    "<em>SHALAJ a mi pueblo, para que me celebre fiesta</em> (<a href=\"exodus-5.es.html#v5-1\">Éxodo "
+    "5:1</a>), la exigencia repetida a Faraón a lo largo de diez plagas, y el mismo verbo del reclamo que "
+    "Dios hace un versículo antes en el relato: <em>deja ir a mi HIJO</em> (<a "
+    "href=\"exodus-4.es.html#v4-23\">4:23</a>). La negativa de Faraón se enuncia con la misma palabra («no "
+    "dejaré ir a Israel», <a href=\"exodus-5.es.html#v5-2\">5:2</a>), de modo que todo el pleito se libra "
+    "sobre un solo verbo: quién tiene el derecho de enviar a este pueblo y adónde. ⭐ En el intensivo es "
+    "el hebreo corriente para REPUDIAR, despedir a una esposa, y <a "
+    "href=\"deuteronomy-22.es.html\">Deuteronomio 22</a> pone ese sentido a los dos lados de un mismo "
+    "capítulo. <span data-heb-read=\"שלח\">La forma intensiva está allí en tres versículos</span>: en <a "
+    "href=\"deuteronomy-22.es.html#v22-7\">22:7</a> se manda, y duplicada para dar énfasis — <em>sin falta "
+    "soltarás a la madre</em> —, y en <a href=\"deuteronomy-22.es.html#v22-19\">22:19</a> y <a "
+    "href=\"deuteronomy-22.es.html#v22-29\">22:29</a> se prohíbe, <em>no podrá despedirla en todos sus "
+    "días</em>. ⚠ Llega a ese capítulo desde el anterior, donde <a "
+    "href=\"deuteronomy-21.es.html#v21-14\">21:14</a> lo usa de la mujer cautiva que un soldado ya no "
+    "quiere. Un pájaro debe ser soltado; dos mujeres no pueden serlo.")
+
+DICTIONARY_ES["patah"] = ("patá",
+    "PERSUADIR &mdash; seducir &mdash; engañar: todo el escandaloso registro de Jeremías 20:7, <em>me "
+    "sedujiste, Jehová, y fui seducido</em>. El mismo verbo manda al espíritu mentiroso a "
+    "<em>inducir</em> a Acab (1 Reyes 22) y nombra al seductor de <a "
+    "href=\"exodus-22.es.html#v22-16\">Éxodo 22:16</a>. La <span class=\"tag t-kjv\">KJV</span> y la <span "
+    "class=\"tag t-niv\">NIV</span> leen «deceived»; la <span class=\"tag t-nwt\">NWT</span> «fooled»; la "
+    "<span class=\"tag t-rv60\">RV60</span> «me sedujiste»; esta traducción «sedujiste», con las lecturas "
+    "más oscuras llevadas a la nota. Sus enemigos lo usan también (20:10): «quizá se dejará seducir». ⭐ Y "
+    "es el verbo que hace comparable el caso de <a href=\"deuteronomy-22.es.html#v22-28\">Deuteronomio "
+    "22:28</a>: la Torá legisla dos veces el mismo caso &mdash;un hombre y una virgen no desposada&mdash; "
+    "y Éxodo dice que la SEDUCE mientras que Deuteronomio dice que la <em><a "
+    "href=\"diccionario.html#taphas\">agarra</a></em>. Dos verbos distintos, dos penas distintas, y solo Éxodo "
+    "le deja al padre un veto.")
+
+DICTIONARY_ES["kelim"] = ("kelim",
+    "UTENSILIOS, enseres &mdash; el servicio de oro y plata del templo, y uno de los pocos objetos "
+    "físicos cuya historia entera cuenta la Biblia. Nabucodonosor se los lleva a la casa del tesoro de su "
+    "dios (Daniel 1:2; 2 Reyes 25); Belsasar bebe vino en ellos en su último banquete y ve la escritura "
+    "en la pared (Daniel 5); y en <a href=\"ezra-1.es.html\">Esdras 1:7-11</a> Ciro los hace contar y los "
+    "manda de vuelta a ese mismo templo. Son lo que sobrevive intacto a la catástrofe &mdash;devueltos, "
+    "como todo lo demás en ese libro, por inventario. ⚠ El singular <em>kelí</em> es mucho más ancho que "
+    "«utensilio de culto»: es cualquier cosa fabricada &mdash;un recipiente, una herramienta, un arma, un "
+    "pertrecho&mdash;, y esa anchura es toda la dificultad de <a "
+    "href=\"deuteronomy-22.es.html#v22-5\">Deuteronomio 22:5</a>, donde <em><a "
+    "href=\"diccionario.html#keli-gever\">kelí guéver</a></em> no dice «ropa de hombre» por mucho que casi "
+    "todo el estante moderno lo imprima así.")
