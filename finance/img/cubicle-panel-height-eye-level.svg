@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img"
+     aria-label="Chart of cubicle panel heights against a seated worker's eye level, roughly 48 inches from the floor. In the 1970s and 1980s panels ran 60 to 84 inches, well above the eye line. By the late 1990s the standard was 66 inches, still above it. Today's low panels run 36 to 42 inches, below the eye line, so a seated worker can be seen and interrupted without anyone having to stand up.">
+  <rect width="900" height="470" fill="#0a0f1a"/>
+
+  <text x="450" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="20"
+        fill="#e8dfd2">The year the wall stopped working</text>
+  <text x="450" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="15.5"
+        fill="#94a3b8" font-style="italic">panel height, in inches from the floor</text>
+
+  <!-- ── the seated worker, drawn to the same scale (3.44px per inch) ──── -->
+  <circle cx="140" cy="206" r="10" fill="#0d1520" stroke="#e8dfd2" stroke-width="2.2"/>
+  <circle cx="147" cy="213" r="2.2" fill="#e8c968"/>
+  <line x1="140" y1="216" x2="140" y2="297" stroke="#e8dfd2" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="128" y1="297" x2="176" y2="297" stroke="#e8dfd2" stroke-width="3" stroke-linecap="round"/>
+  <line x1="176" y1="297" x2="176" y2="380" stroke="#e8dfd2" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="146" y1="300" x2="146" y2="378" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="132" y1="378" x2="160" y2="378" stroke="#94a3b8" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="153" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">a seated worker</text>
+
+  <!-- ── the eye line ─────────────────────────────────────────────────── -->
+  <line x1="100" y1="215" x2="800" y2="215" stroke="#e8c968" stroke-width="1.8"
+        stroke-dasharray="7 6" opacity=".9"/>
+  <text x="800" y="205" text-anchor="end" font-family="Georgia, serif" font-size="15.5"
+        fill="#e8c968" font-style="italic">seated eye level — about 48 in</text>
+
+  <!-- ── the floor ────────────────────────────────────────────────────── -->
+  <line x1="100" y1="380" x2="800" y2="380" stroke="rgba(255,255,255,.22)" stroke-width="1.8"/>
+
+  <!-- ══ 1970s–80s: 60 to 84 in ══════════════════════════════════════════ -->
+  <rect x="210" y="91" width="120" height="82" fill="#94a3b8" opacity=".22"/>
+  <rect x="210" y="91" width="120" height="82" fill="none" stroke="#94a3b8"
+        stroke-width="1.4" stroke-dasharray="4 4" opacity=".6"/>
+  <rect x="210" y="173" width="120" height="207" fill="#94a3b8" opacity=".55"/>
+  <text x="270" y="80" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8dfd2" font-weight="bold">60–84 in</text>
+  <text x="270" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8dfd2">1970s–80s</text>
+  <text x="270" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">Propst's “rathole” era</text>
+
+  <!-- ══ late 1990s: 66 in ═══════════════════════════════════════════════ -->
+  <rect x="430" y="153" width="120" height="227" fill="#94a3b8" opacity=".55"/>
+  <text x="490" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8dfd2" font-weight="bold">66 in</text>
+  <text x="490" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8dfd2">late 1990s</text>
+  <text x="490" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">the standard cubicle</text>
+
+  <!-- ══ today: 36 to 42 in — labelled inside, the eye line owns the space above ══ -->
+  <rect x="650" y="235" width="120" height="21" fill="#e8865c" opacity=".28"/>
+  <rect x="650" y="235" width="120" height="21" fill="none" stroke="#e8865c"
+        stroke-width="1.4" stroke-dasharray="4 4" opacity=".6"/>
+  <rect x="650" y="256" width="120" height="124" fill="#e8865c" opacity=".85"/>
+  <text x="710" y="296" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#0a0f1a" font-weight="bold">36–42 in</text>
+  <text x="710" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#e8dfd2">today</text>
+  <text x="710" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="14.5"
+        fill="#94a3b8" font-style="italic">the “collaborative” low panel</text>
+
+  <text x="450" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="17"
+        fill="#e8c968" font-style="italic">Below that dashed line a panel is no longer a screen. It is a railing.</text>
+</svg>
