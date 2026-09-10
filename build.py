@@ -3869,15 +3869,20 @@ def build_book_intros():
         open(os.path.join(OUT, f"book-{book_slug(book)}.html"), "w", encoding="utf-8").write(out)
 
 
-def build_toc():
-    done = len(CHAPTERS)
-    pct = round(done / TOTAL_BIBLE_CHAPTERS * 1000) / 10
+def _all_books_panel():
+    """The "All 66 Books" grid: every book, linked to its own page once started.
 
+    Shared by the Table of Contents AND the Bible home page, so the two can never
+    drift apart. ⭐ These 66 links are the site's main internal-link hub — the
+    shortest path from the front door to any chapter — which is why the home page
+    carries the grid as well as the TOC. Before 2026-09-10 the home page linked to
+    ZERO book pages, so every chapter sat 5 hops from mistertranslation.com/ and
+    the only route ran through toc.html, which Google had itself declined to index
+    (500 URLs in "Crawled - currently not indexed", 179 of them real chapters).
+    Keep this on both pages; dropping it from the home page restores that funnel.
+    """
     pub = defaultdict(set)          # book -> {published chapter numbers}
-    book_seen = []                  # books with published chapters, first-seen order
     for _s, book, num, _t in CHAPTERS:
-        if book not in pub:
-            book_seen.append(book)
         pub[book].add(num)
 
     def book_chip(name, n):
@@ -3890,6 +3895,19 @@ def build_toc():
         return f'<span class="book">{name} <i>{n}</i></span>'
     ot = "".join(book_chip(n, c) for n, c in BOOKS_OT)
     nt = "".join(book_chip(n, c) for n, c in BOOKS_NT)
+    return f"""<div class="panel">
+  <div class="testament">Old Testament · 39 books</div>
+  <p class="muted" style="margin:2px 0 12px"><a href="old-testament.html">📜 Introduction to the Old Testament — the Hebrew Scriptures →</a></p>
+  <div class="bookgrid">{ot}</div>
+  <div class="testament">New Testament · 27 books</div>
+  <p class="muted" style="margin:2px 0 12px"><a href="new-testament.html">📜 Introduction to the New Testament — the Greek Scriptures →</a></p>
+  <div class="bookgrid">{nt}</div>
+</div>"""
+
+
+def build_toc():
+    done = len(CHAPTERS)
+    pct = round(done / TOTAL_BIBLE_CHAPTERS * 1000) / 10
     # The per-book chapter grids and the per-chapter commentary that used to be
     # duplicated here now live on each book's own page, where they belong. This
     # page is the navigator: progress, then all 66 books.
@@ -3908,14 +3926,7 @@ still ahead.</p>
 </div>
 
 <h2>All 66 Books</h2>
-<div class="panel">
-  <div class="testament">Old Testament · 39 books</div>
-  <p class="muted" style="margin:2px 0 12px"><a href="old-testament.html">📜 Introduction to the Old Testament — the Hebrew Scriptures →</a></p>
-  <div class="bookgrid">{ot}</div>
-  <div class="testament">New Testament · 27 books</div>
-  <p class="muted" style="margin:2px 0 12px"><a href="new-testament.html">📜 Introduction to the New Testament — the Greek Scriptures →</a></p>
-  <div class="bookgrid">{nt}</div>
-</div>
+{_all_books_panel()}
 
 {_note_nudge("Table of Contents", "toc.html")}"""
     out = page(f"Table of Contents — {SITE_NAME}", body, active="toc",
@@ -4003,6 +4014,12 @@ def build_index(chapters):
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
 </div>
+
+<h2>All 66 Books</h2>
+<p class="lede">Every book of the Bible, and how far the translation has reached in each. A book in
+gold has been started — open it for its chapters and the commentary on each one.</p>
+{_all_books_panel()}
+<p class="muted" style="margin:10px 0 0"><a href="toc.html">\U0001F4DC Full Table of Contents, with progress →</a></p>
 
 <script>
 var MTLIB_VOTD = {votd_json};
