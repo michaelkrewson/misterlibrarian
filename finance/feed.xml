@@ -24,6 +24,25 @@
     <category>notes</category>
   </item>
   <item>
+    <title>A Jar Is Not a Vault: Reading My Friend's Lightning Wallet Before I Recommend It</title>
+    <link>https://mistertranslation.com/finance/lightning-in-a-jar-review.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/lightning-in-a-jar-review.html</guid>
+    <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he'd be the first to tell you it has no audit. I trust him — which is exactly why I shouldn't ask you to trust it on my say-so. So I read the code, checked the served binary against the published hashes, and worked out what the trust model really is. Along the way, the thing every Lightning wallet review should say and mostly doesn't: what a Lightning wallet is for, and what it is not.</description>
+    <category>bitcoin</category>
+    <category>self custody</category>
+    <category>lightning</category>
+    <category>wallet</category>
+    <category>open source</category>
+    <category>security</category>
+    <category>ldk</category>
+    <category>lsp</category>
+    <category>lightning in a jar</category>
+    <category>lijox</category>
+    <category>seed phrase</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</title>
     <link>https://mistertranslation.com/finance/treasury-bond-buyback-explained.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/treasury-bond-buyback-explained.html</guid>
