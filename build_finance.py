@@ -810,7 +810,13 @@ def _entry_hero(e):
     if not e["hero"]:
         return ""
     dims = blogkit.dim_attrs(os.path.join(OUT, "img"), e["hero"])
-    cap = "<figcaption>%s</figcaption>" % esc(e["hero_credit"]) if e["hero_credit"] else ""
+    # hero_credit goes in RAW, exactly as FRONT_HERO_CREDIT does — a photo
+    # credit has to be able to link its source and its licence. Escaping it
+    # (as this did until 2026-09-10) meant a CC BY-SA hero could only carry
+    # unlinked attribution, which is weaker than the linked credits every
+    # in-body <figure> on this site already uses. The two heroes that predate
+    # this are plain prose with no markup, so they render identically.
+    cap = "<figcaption>%s</figcaption>" % e["hero_credit"] if e["hero_credit"] else ""
     return ('<figure class="hero"><img src="img/%s" alt="%s"%s loading="eager"/>%s</figure>'
             % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
 
