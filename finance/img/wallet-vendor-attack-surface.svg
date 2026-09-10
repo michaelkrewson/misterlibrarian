@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img"
+     aria-label="Diagram: six third-party vendors around a central box representing the hardware wallet and its seed phrase. Each vendor — e-commerce database, email marketing, package registry, support desk, shipping and fulfillment, payment partner — has been breached at Trezor or Ledger. The central box, the device and the seed, has not.">
+  <rect width="900" height="540" fill="#0a0f1a"/>
+
+  <text x="450" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">
+    Where a hardware wallet company actually gets breached
+  </text>
+
+  <!-- connector lines, drawn first so boxes sit on top -->
+  <g stroke="#e8865c" stroke-width="1.5" opacity="0.45">
+    <line x1="165" y1="140" x2="362" y2="238"/>
+    <line x1="450" y1="140" x2="450" y2="232"/>
+    <line x1="735" y1="140" x2="538" y2="238"/>
+    <line x1="165" y1="404" x2="362" y2="306"/>
+    <line x1="450" y1="404" x2="450" y2="312"/>
+    <line x1="735" y1="404" x2="538" y2="306"/>
+  </g>
+
+  <!-- centre: the thing everyone worries about, and the thing nothing has reached -->
+  <rect x="330" y="232" width="240" height="80" rx="10" fill="#16220f" stroke="#a3b378" stroke-width="2"/>
+  <text x="450" y="262" text-anchor="middle" font-family="Georgia, serif" font-size="16.5" fill="#cbd79c" font-weight="bold">THE DEVICE + THE SEED</text>
+  <text x="450" y="287" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#a3b378">never breached, 12 years</text>
+
+  <!-- top row -->
+  <g>
+    <rect x="30" y="58" width="270" height="82" rx="8" fill="#1a1210" stroke="#e8865c" stroke-width="1.4" opacity="0.95"/>
+    <text x="46" y="84" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">E-commerce database</text>
+    <text x="46" y="106" font-family="Georgia, serif" font-size="14.5" fill="#e8865c">Ledger · July 2020</text>
+    <text x="46" y="127" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8">1.1M emails, 272k home addresses</text>
+  </g>
+  <g>
+    <rect x="315" y="58" width="270" height="82" rx="8" fill="#1a1210" stroke="#e8865c" stroke-width="1.4" opacity="0.95"/>
+    <text x="331" y="84" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">Email marketing</text>
+    <text x="331" y="106" font-family="Georgia, serif" font-size="14.5" fill="#e8865c">Mailchimp 2022 · Brevo 2026</text>
+    <text x="331" y="127" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8">lists, then mail sent as the brand</text>
+  </g>
+  <g>
+    <rect x="600" y="58" width="270" height="82" rx="8" fill="#1a1210" stroke="#e8865c" stroke-width="1.4" opacity="0.95"/>
+    <text x="616" y="84" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">Package registry (npm)</text>
+    <text x="616" y="106" font-family="Georgia, serif" font-size="14.5" fill="#e8865c">Ledger · December 2023</text>
+    <text x="616" y="127" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8">~$600k drained from web users</text>
+  </g>
+
+  <!-- bottom row -->
+  <g>
+    <rect x="30" y="404" width="270" height="82" rx="8" fill="#1a1210" stroke="#e8865c" stroke-width="1.4" opacity="0.95"/>
+    <text x="46" y="430" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">Support ticket desk</text>
+    <text x="46" y="452" font-family="Georgia, serif" font-size="14.5" fill="#e8865c">Trezor · January 2024</text>
+    <text x="46" y="473" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8">66,000 users; 41 asked for seeds</text>
+  </g>
+  <g>
+    <rect x="315" y="404" width="270" height="82" rx="8" fill="#1a1210" stroke="#e8865c" stroke-width="1.4" opacity="0.95"/>
+    <text x="331" y="430" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">Shipping &amp; fulfillment</text>
+    <text x="331" y="452" font-family="Georgia, serif" font-size="14.5" fill="#e8865c">ShipMonk / Trezor · Aug 2026</text>
+    <text x="331" y="473" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8">80,689 names, addresses, phones</text>
+  </g>
+  <g>
+    <rect x="600" y="404" width="270" height="82" rx="8" fill="#1a1210" stroke="#e8865c" stroke-width="1.4" opacity="0.95"/>
+    <text x="616" y="430" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">Payment partner</text>
+    <text x="616" y="452" font-family="Georgia, serif" font-size="14.5" fill="#e8865c">Global-e / Ledger · Jan 2026</text>
+    <text x="616" y="473" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8">names, addresses, phones, orders</text>
+  </g>
+
+  <text x="450" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">
+    Six real breaches. Not one of them went through the product you actually bought.
+  </text>
+</svg>

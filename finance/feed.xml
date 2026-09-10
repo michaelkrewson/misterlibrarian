@@ -43,6 +43,24 @@
     <category>notes</category>
   </item>
   <item>
+    <title>The Phishing Email Really Was From Trezor</title>
+    <link>https://mistertranslation.com/finance/trezor-brevo-phishing.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/trezor-brevo-phishing.html</guid>
+    <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On September 9th roughly 347,000 people got an email from help@trezor.io warning them about a chip flaw in their wallet and pointing them somewhere to check it. It was a phishing attack — and it came from Trezor's real domain, passed every authentication check a mail server performs, and borrowed its cover story from two vulnerabilities that are genuinely real. This is Trezor's second breach in a month and its third this year, and not one of them touched the device.</description>
+    <category>bitcoin</category>
+    <category>self custody</category>
+    <category>hardware wallet</category>
+    <category>security</category>
+    <category>phishing</category>
+    <category>trezor</category>
+    <category>ledger</category>
+    <category>bitkey</category>
+    <category>seed phrase</category>
+    <category>entropy</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>"Not Your Keys, Not Your Coins" Just Grew a Second Half</title>
     <link>https://mistertranslation.com/finance/alby-hub-vulnerability.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/alby-hub-vulnerability.html</guid>
