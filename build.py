@@ -1679,8 +1679,50 @@ def _verse_link_chrome(content, cls, lang):
         return f'<a class="eterm" {attrs}{title}>'
 
     def line(m):
-        return m.group(1) + _A_TAG.sub(fix_tag, m.group(2)) + m.group(3)
+        inner = _A_TAG.sub(fix_tag, m.group(2))
+        return m.group(1) + _link_paragraph_markers(inner, lang) + m.group(3)
     return _VERSE_LINE[cls].sub(line, content)
+
+
+# The Masoretic paragraph marks, as they sit in the verse text: {S}/{P} on the
+# English pages and {ס}/{פ} on the Spanish ones.
+_PARA_MARK = re.compile(r'\{([SPספ])\}')
+_PARA_NAME = {
+    "S": ("setumah", "closed section"), "P": ("petuchah", "open section"),
+    "ס": ("setumá", "sección cerrada"), "פ": ("petujá", "sección abierta"),
+}
+
+
+def _link_paragraph_markers(text, lang):
+    """Turn a bare {S}/{P}/{ס}/{פ} in a verse line into an explained link.
+
+    ⚠ Michael, 2026-09-10, reading Deuteronomy 22: "What are the s and p in
+    brackets? as a reader, I don't even know what that stands for." He was
+    right, and it was not a new chapter's problem -- 202 of these stood in 34
+    English pages and 664 in the Spanish ones, every one of them an unglossed
+    symbol with nothing to click. They are the oldest divisions the Hebrew
+    Bible has and the page was presenting them as typographic noise.
+
+    Same treatment the surrounding library links get, and for the same reason:
+    class="eterm", so it whispers inside scripture rather than shouting, plus a
+    title naming the mark. The destination is the dictionary entry, which is
+    where the explanation belongs -- a tooltip alone would still leave a reader
+    on a phone with a symbol and no way in.
+
+    Deliberately verse-lines-only, via _verse_link_chrome: a {S} quoted inside
+    a NOTE is being talked about rather than used, and linking it there would
+    put a second underline in the middle of a sentence that is already
+    explaining itself."""
+    if "{" not in text:
+        return text
+    href = "diccionario.html#setumah-petuchah" if lang == "es" else "dictionary.html#setumah-petuchah"
+
+    def one(m):
+        name, gloss = _PARA_NAME[m.group(1)]
+        title = html.escape(f"{name} — {gloss}", quote=True)
+        return (f'<a class="eterm pmark" href="{href}" title="{title}">'
+                f'{{{m.group(1)}}}</a>')
+    return _PARA_MARK.sub(one, text)
 
 
 def inject_xrefs(content, book, ch):
