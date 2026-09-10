@@ -695,9 +695,11 @@ the script (idempotent — only fetches what's missing).
   it's deliberately unlinked from everything.
 - `lastmod` in the sitemap comes from git history, not file mtime (every build rewrites every
   file, so mtime would stamp "today" on everything, always).
-- The ~3,800 `/v/` per-verse stub pages are deliberately **excluded** from the sitemap — they
+- The **18,165** `/v/` per-verse stub pages are deliberately **excluded** from the sitemap — they
   exist to give a shared verse its own link-preview card, not to be indexed; listing a
-  `noindex` URL in a sitemap is a reported Search Console error, not a bonus.
+  `noindex` URL in a sitemap is a reported Search Console error, not a bonus. (This said
+  "~3,800" until 2026-09-10 — off by ~5×, and nobody noticed because no build step checks it.
+  The build's own `verse cards: N published to S3` line is the number; `ls v/ | wc -l` agrees.)
 - `page(...)`'s `url=` argument controls **both** the canonical tag and `og:type` at once
   (`og_type = og_type or ("article" if url else "website")`). Passing `url=` to fix a missing
   canonical on a hub/index page (home, table of contents, dictionary index) will silently
