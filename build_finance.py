@@ -917,9 +917,19 @@ def _related_block(e, pool):
             '  </section>' % tiles)
 
 
-# Which standing board an entry's tags make it genuinely about. Ordered
-# most-specific first — the first match wins, so "mstr" reaches Bitcoin
-# Treasuries rather than stopping at a broader board that also lists it.
+# Which standing board an entry's tags make it genuinely about. The board
+# with the MOST matching tags wins; this tuple's order only breaks a tie
+# (most-specific board first).
+#
+# ⚠️ Scoring by count rather than by first-match-in-order is load-bearing,
+# and was paid for: "how many bitcoins are there" is tagged {bitcoin,
+# halving, money supply, mining, scarcity}. It matches Money Worldwide on
+# ONE tag ("money supply") and the Bitcoin Board on THREE — and a
+# first-match rule handed a Bitcoin-supply entry a pointer to the fiat
+# board, because Money Worldwide happens to be declared first. Some tags
+# are genuinely ambiguous in isolation ("money supply" is fiat M2 on a
+# central-bank entry and coin issuance on a Bitcoin one); the rest of the
+# entry's tags are what disambiguate, so the rule has to weigh all of them.
 #
 # The generic "bitcoin" tag is deliberately absent: it sits on nearly every
 # entry here, so including it would match everything and turn a contextual
@@ -952,16 +962,22 @@ def _board_promo(e):
     ads — while the nav and the footer (both now on entries) already carry
     every board unconditionally for anyone who wants the whole list."""
     mine = {t.lower() for t in e.get("tags", ())}
+    best, best_n = None, 0
     for href, label, blurb, tags in BOARD_PROMOS:
-        if mine & tags:
-            return ('  <aside class="boardpromo">\n'
-                    '    <a href="%s">\n'
-                    '      <span class="bp-k">Standing board</span>\n'
-                    '      <span class="bp-t">%s →</span>\n'
-                    '      <span class="bp-s">%s</span>\n'
-                    '    </a>\n'
-                    '  </aside>' % (esc(href), esc(label), esc(blurb)))
-    return ""
+        n = len(mine & tags)
+        # Strictly greater, so an earlier (more specific) board keeps a tie.
+        if n > best_n:
+            best, best_n = (href, label, blurb), n
+    if not best:
+        return ""
+    href, label, blurb = best
+    return ('  <aside class="boardpromo">\n'
+            '    <a href="%s">\n'
+            '      <span class="bp-k">Standing board</span>\n'
+            '      <span class="bp-t">%s →</span>\n'
+            '      <span class="bp-s">%s</span>\n'
+            '    </a>\n'
+            '  </aside>' % (esc(href), esc(label), esc(blurb)))
 
 
 def build_entry_page(e, board=None, pool=()):
