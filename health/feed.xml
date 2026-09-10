@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>The Librarian's Regimen</title>
+  <link>https://mistertranslation.com/health/</link>
+  <atom:link href="https://mistertranslation.com/health/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Notes on health, nutrition and medicine, worked through one question at a time from the primary literature: what the studies actually found, how sure anyone can honestly be, and what that leaves a reasonable person to do. Written by a reader, not a clinician — nothing here is medical advice.</description>
+  <language>en</language>
+  <item>
+    <title>What a Kidney Stone Actually Is, and Why It Forms</title>
+    <link>https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html</guid>
+    <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
+    <description>About one adult in ten will make a kidney stone. Before the questions about water, calcium and what to eat, the first one: what a stone actually is, what it is made of, and why it forms in some kidneys and not others — read from the studies.</description>
+    <category>kidney stones</category>
+    <category>urology</category>
+    <category>nutrition</category>
+    <category>calcium</category>
+    <category>oxalate</category>
+    <category>uric acid</category>
+    <category>hydration</category>
+    <category>sodium</category>
+    <category>diet</category>
+    <category>first principles</category>
+  </item>
+</channel>
+</rss>

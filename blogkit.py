@@ -104,7 +104,13 @@ def meta_desc(explicit, summary, lo, hi):
     if len(summary) <= hi:
         return summary
     out = ""
-    for sentence in re.findall(r'[^.!?]*[.!?]', summary):
+    # A sentence ends at .!? followed by a space or the end — NOT at any dot.
+    # The old pattern ([^.!?]*[.!?]) broke on the first dot it met, so a
+    # summary opening "…an email from help@trezor.io warning them…" produced
+    # the description "…an email from help@trezor." — a domain cut in half,
+    # in the one line a shared link shows (Ledger, 2026-09-10). Same trap
+    # for "3.5 million", "U.S.", "e.g." mid-sentence.
+    for sentence in re.findall(r'.*?[.!?]+(?=\s|$)', summary):
         if len(out) + len(sentence) > hi:
             break
         out += sentence

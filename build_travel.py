@@ -256,6 +256,7 @@ def header(active=""):
       <a href="write.html"{cls('write')}>✉️ Write</a>
       <a href="about.html"{cls('about')}>About</a>
       <a class="sib" href="https://mistertranslation.com/finance/" title="What the world's money is actually in">The Librarian's Ledger →</a>
+      <a class="sib" href="https://mistertranslation.com/health/" title="Health, nutrition and medicine — one question at a time, from the studies">The Librarian's Regimen →</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
     </div>
@@ -267,6 +268,7 @@ def header(active=""):
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
     <a class="sib" href="https://mistertranslation.com/finance/" title="What the world's money is actually in">The Librarian's Ledger →</a>
+    <a class="sib" href="https://mistertranslation.com/health/" title="Health, nutrition and medicine — one question at a time, from the studies">The Librarian's Regimen →</a>
     <span class="share-widget"></span>
   </nav>
 </header>"""
@@ -278,7 +280,8 @@ FOOTER = f"""<footer class="site-foot">
   <a href="write.html">Write to the librarian</a> ·
   <a href="about.html">About</a> · <a href="feed.xml">RSS</a></p>
   <p class="sibfoot"><a href="https://mistertranslation.com/finance/">The Librarian's Ledger</a>
-  — the other one, about money.</p>
+  — the other one, about money — and <a href="https://mistertranslation.com/health/">The
+  Librarian's Regimen</a>, about health.</p>
 </footer>"""
 
 

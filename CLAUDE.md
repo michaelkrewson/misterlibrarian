@@ -1,8 +1,8 @@
 # MisterLibrarian — Claude instructions
 
-This repo publishes **three separate things at mistertranslation.com**, reached through a
-hand-written 3-card hub at the bare domain root (`index.html`, no builder of its own —
-added 2026-09-09):
+This repo publishes **four separate things at mistertranslation.com**, reached through a
+hand-written 4-card hub at the bare domain root (`index.html`, no builder of its own —
+added 2026-09-09 with three cards; the fourth 2026-09-10):
 
 1. **The Bible project** (`/bible.html`, `build.py`; moved off the bare root 2026-09-09 when
    the hub took over `/` — see below) — a fresh translation of the Bible into modern English,
@@ -12,6 +12,9 @@ added 2026-09-09):
 2. **The Librarian Abroad** (`/travel/`, `build_travel.py`) — Michael's travel & food blog.
 3. **A finance board** (`/finance/`, `build_finance.py`) — a standing "world's largest
    assets by market cap" board, built offline from a JSON snapshot.
+4. **The Librarian's Regimen** (`/health/`, `build_health.py`) — a blog on health,
+   nutrition and medicine, one question at a time, read from the primary literature.
+   Added 2026-09-10; see its own section below.
 
 **Read `README.md` first** for the mechanical how-to (build commands, how to add a chapter
 or a travel entry, publishing). It's well-maintained and this file doesn't repeat it. This
@@ -37,8 +40,8 @@ used to occupy the bare root — the project's own homepage — moved, to `bible
 (`build.py`'s `HOME_URL` constant; every page's nav/brand link was repointed there in one
 pass). The bare root itself is now the hub's file, not a `build.py` output at all.
 
-Each of the three builders (`build.py`, `build_travel.py`, `build_finance.py`) writes only
-inside its own output area and never globs or deletes elsewhere — that discipline is what
+Each of the four builders (`build.py`, `build_travel.py`, `build_finance.py`,
+`build_health.py`) writes only inside its own output area and never globs or deletes elsewhere — that discipline is what
 lets all three coexist safely in one repo. Keep it that way; don't import one builder from
 another. The hub's `index.html` follows the same discipline by construction — it's a single
 static file with no generator, so there's nothing for a builder to accidentally clobber it
@@ -688,6 +691,61 @@ a public repo, and asking for more would get fewer (sub-hourly schedules are dro
 still). **So do not reason about this publication's freshness from the cron line.** It is
 also why the Bitcoin board's live layer is load-bearing rather than decorative: without it
 that page would sit up to five hours stale.
+
+## The Librarian's Regimen (`/health/`)
+
+Health, nutrition and medicine — one question at a time, read from the studies. Built by
+`build_health.py` (standard library only, no network), source in `source/health/`, output in
+`health/`. Added 2026-09-10, Michael's call, as a **dedicated** publication rather than a
+general "post anything" blog: health and money are both subjects where a reader's trust is
+judged per topic, and a kidney-stone piece sitting between two Bitcoin wallet audits is not the
+framing either deserves. Name chosen from three offered (Casebook / Regimen / Apothecary) —
+"Regimen" after the medieval *regimen sanitatis* genre; the front-page hero is a page from a
+1445–1450 *Tacuinum sanitatis* (BnF Latin 9333, f. 53, public domain), which is that genre.
+
+**What it is mechanically:** the WRITING half of `build_finance.py`, near-verbatim — same
+front-matter vocabulary minus `live`, same tile/list front page with the tag filter bar and
+header search, same "Keep reading" recirculation, same tag-page/sitemap rules, same X comment
+layer, same FormSubmit inbox (`_subject` tells it apart). None of the Ledger's standing boards.
+The two builders do not import each other; a shared-mechanism fix goes in `blogkit.py`, a
+page-chrome idea gets ported by hand. Its mark is a mortar and pestle (animated pestle, same
+ring/halo construction as the Ledger's lighthouse) — the SAME artwork is inlined on the root
+hub's fourth card, so change both or neither.
+
+**Conventions that differ from the other two blogs — these are the ones to get right:**
+
+- **No drafts page. Ships straight live, like the Ledger** (Michael's call 2026-09-10; the
+  travel blog's `drafts.html` was offered and declined). `draft: true` means the entry does not
+  build at all; `python3 build_health.py --drafts` renders it LOCALLY, unlisted + noindexed,
+  for a read-through. Never commit a `--drafts` build. So: write an entry in his voice, publish
+  it, and tell him plainly it is live and worth reading over — the same posture as
+  `project_ledger_has_no_drafts_page` in memory.
+- **Every entry ends with `<ol class="sources">` and the build REFUSES one without it**
+  (`check_entries`). Real links — DOI/PubMed for a paper, the publishing body's page for a
+  guideline. The About page promises nothing is taken on faith; the check is what keeps it.
+- **Evidence and judgment are kept visibly apart.** `<div class="verdict">` (accent) is "what
+  the evidence says"; `<div class="mine">` (amber, deliberately NOT the accent) is "what I'd
+  do" — optional, one person's judgment about one person's circumstances, labelled as such.
+- **Numbers, not adjectives.** How many people, how big the effect, over how long, compared
+  with what. Guideline/systematic review > trial > cohort > mechanism/animal. When the best
+  evidence is weak the entry says so rather than rounding it up.
+- **What NEVER goes in an entry:** dosing aimed at the reader, "you should start/stop",
+  anything that reads as an answer to "what should I take?". `_legal`, the per-entry
+  `.mednote`, the footer's "nothing here is medical advice" and the ask page's
+  "don't ask me whether you should take something" all say the site doesn't do that; every
+  entry is where the promise is kept. Keep every one of those in place — they are not
+  boilerplate to trim.
+- **Never invent his experience** — the travel-blog rule applies here with more force, since
+  the natural subject is his own body. If an entry touches something personal (a diagnosis,
+  a symptom, a number from his own labs), it comes from what he actually said, or it is left
+  out. Research about a condition is fine; asserting he has it is not, unless he told you.
+
+**Adding an entry:** copy `source/health/_template.html` to
+`source/health/YYYY-MM-DD-slug.html` (the header comment is the checklist), rebuild, commit
+`health/` + `source/health/`, push. Pictures go in `health/img/` web-sized and EXIF-stripped
+(`tools/travel_photos.py` for a photo; for a public-domain illustration keep the source and
+licence for `hero_credit:`). The sitemap is advertised in the root `robots.txt`; submit
+`health/sitemap.xml` once in Google Search Console, same as the other two.
 
 ## Source archive
 

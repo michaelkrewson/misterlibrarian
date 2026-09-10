@@ -25,3 +25,7 @@ Sitemap: https://mistertranslation.com/travel/sitemap.xml
 # /finance/ -- The Librarian's Ledger. Same as travel: linked from the home page's
 # 3-card hub since 2026-09-09, and listed here as well.
 Sitemap: https://mistertranslation.com/finance/sitemap.xml
+
+# /health/ -- The Librarian's Regimen (added 2026-09-10). Linked from the home
+# page's hub card like the other two, and listed here as well.
+Sitemap: https://mistertranslation.com/health/sitemap.xml
