@@ -1613,6 +1613,7 @@ _A_TAG = re.compile(r'<a\s+([^>]*)>')
 _VERSE_LINE = {
     "eng": re.compile(r'(<div class="eng">)(.*?)(</div>)', re.S),
     "esp": re.compile(r'(<div class="esp">)(.*?)(</div>)', re.S),
+    "heb": re.compile(r'(<div class="heb">)(.*?)(</div>)', re.S),
 }
 _CHROME_LABEL = {
     "en": ("\u2014 see the Atlas", "\u2014 see the Encyclopedia", "\u2014 see the Dictionary"),
@@ -1681,7 +1682,14 @@ def _verse_link_chrome(content, cls, lang):
     def line(m):
         inner = _A_TAG.sub(fix_tag, m.group(2))
         return m.group(1) + _link_paragraph_markers(inner, lang) + m.group(3)
-    return _VERSE_LINE[cls].sub(line, content)
+    content = _VERSE_LINE[cls].sub(line, content)
+
+    # The Hebrew column carries the same marks, and the reader meets them THERE
+    # first -- the Hebrew line sits above the translation. Linking one and not
+    # the other left {ס} bare directly above a linked {S} on the same verse.
+    def heb_line(m):
+        return m.group(1) + _link_paragraph_markers(m.group(2), lang) + m.group(3)
+    return _VERSE_LINE["heb"].sub(heb_line, content)
 
 
 # The Masoretic paragraph marks, as they sit in the verse text: {S}/{P} on the
