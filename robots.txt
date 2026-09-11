@@ -29,3 +29,7 @@ Sitemap: https://mistertranslation.com/finance/sitemap.xml
 # /health/ -- The Librarian's Regimen (added 2026-09-10). Linked from the home
 # page's hub card like the other two, and listed here as well.
 Sitemap: https://mistertranslation.com/health/sitemap.xml
+
+# /notebook/ -- The Librarian's Notebook (added 2026-09-11). Linked from the home
+# page's hub card like the other three blogs, and listed here as well.
+Sitemap: https://mistertranslation.com/notebook/sitemap.xml

@@ -132,3 +132,30 @@ python3 build_health.py --drafts   # LOCAL preview incl. draft: true entries —
 - **Spanish edition:** an entry's twin is the same file with `.es.html`
   (`source/health/YYYY-MM-DD-slug.es.html`); the Spanish front page is `health/es.html`, and
   About / Ask / Disclaimer have `.es.html` twins. Both editions build from the one command.
+
+---
+
+## The fifth site in this repo: `/notebook/`
+
+**The Librarian's Notebook** — a commonplace book: science and technology, the world, arts
+and culture, and whatever else didn't fit the other four — at
+`mistertranslation.com/notebook/`. Built by `build_notebook.py` (standard library only), the
+same shape as the Regimen's writing half: dated entries in `source/notebook/`, a tile/list
+front page with tag filters and search, per-tag pages, RSS and a sitemap — **plus a fixed
+`section:` on every entry** (`technology` / `world` / `culture` / `notes`), each with its own
+nav link and page. It is linked from the home-page hub and from the other three blogs'
+nav/footer.
+
+```
+python3 build_notebook.py          # rebuild the blog — that's the whole CLI
+```
+
+- **A new entry** is one file: `source/notebook/YYYY-MM-DD-slug.html` (copy
+  `source/notebook/_template.html`; its header comment is the checklist). `section:` is
+  required and must be one of the four above; the build refuses anything else.
+- **There are no drafts at all** — no `draft:` key, no `--drafts` flag, no preview page.
+  Every file in `source/notebook/` builds and ships.
+- **Sources are optional** (an opinion piece may have none), but an `<ol class="sources">`
+  renders the same as on the Regimen when an entry has one.
+- **What goes here vs. the Ledger:** if the spine of a piece is a price, a balance sheet, or
+  an institution that moves money, it's the Ledger; otherwise it's here.

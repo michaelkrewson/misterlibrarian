@@ -1,0 +1,90 @@
+title: Copy this file to start a new entry
+date: 2026-01-01
+section: technology
+tags: open source, software, history
+summary: One or two sentences. This is what shows on the front-page tile, in the RSS feed, and in the link preview when someone shares it. Lead with the thing the entry actually says.
+meta_desc: Optional. Only set this when the auto-derived search description (the first whole sentences of `summary:` that fit in 155 characters) isn't the angle worth leading on. Leave the line out entirely otherwise.
+hero: some-picture.jpg
+hero_alt: Describe the picture for someone who can't see it
+hero_credit: Optional — the source and licence, links allowed. Leave the line out if there is no hero.
+---
+<!--
+  HOW TO USE THIS FILE
+  ────────────────────
+  1. Copy it to  source/notebook/YYYY-MM-DD-a-short-slug.html
+     The filename date MUST match the `date:` above — the build refuses to
+     run if they disagree.
+  2. `section:` is REQUIRED and must be one of:
+         technology   Science & Technology — machines, software, the sciences
+         world        The World — geopolitics, institutions, the news
+         culture      Arts & Culture — books, music, film, buildings
+         notes        Notes — anything that fits none of the other three
+     The build refuses any other value. Pick the one a reader would look
+     under; tags do the finer sorting.
+  3. A hero or in-body picture goes in notebook/img/ (web-sized, EXIF-stripped —
+     tools/travel_photos.py does that for a photo; for a public-domain
+     illustration keep the licence and source for `hero_credit:`).
+  4. THERE ARE NO DRAFTS on this publication (Michael's call, 2026-09-11):
+     every file in source/notebook/ builds and ships. Write it, publish it,
+     tell him it's live; he'll ask for a reword if he wants one.
+  5. Rebuild and push:
+         python3 build_notebook.py
+         git add notebook source/notebook && git commit -m "Notebook: …" && git push
+
+  THE SHAPE OF AN ENTRY
+  ─────────────────────
+  Explainers over hot takes. The useful thing about a news story is usually
+  not the reaction to it but the piece of the world it turns out to depend
+  on — an institution, a mechanism, a number — so find that and set it out.
+
+  • Open with what the entry actually says, in the first paragraph, in the
+    words a person would search. Name the thing in full.
+  • Where a claim rests on a figure, give the figure with its source; where it
+    rests on a document, link the document. A reader should be able to check
+    the entry, not take it on faith.
+  • Opinions are welcome and are labelled as opinions — "I think", not "it is
+    obvious that". Being told one is wrong is the most useful message anyone
+    sends.
+  • <div class="aside"> — OPTIONAL. A definition, a digression, the number
+    behind a sentence, set apart from the argument.
+  • <ol class="sources"> — OPTIONAL here (an opinion piece may have none), but
+    when the entry leans on sources, list them, with real links. It renders
+    the same as on the Regimen.
+
+  What NEVER goes in: advice aimed at the reader (financial, legal, medical,
+  technical), and anything that reads as telling someone what to do with
+  their money, their health or their lawyer. The small print on every page
+  says the site doesn't do that; every entry is where the promise is kept.
+
+  SEO, same standing rule as the other blogs: one <h2> that matches a real
+  search; name the subject in full in the first paragraph; answer the
+  question the reader arrived with.
+-->
+
+<p>Open with what the entry says. Name the thing in full — the company, the
+treaty, the book, the piece of software — so a reader who arrived from a search
+knows in one paragraph whether this is the page they wanted.</p>
+
+<h2>A heading that matches a real search</h2>
+<p>The argument, with its working shown. "The standard was finalised in 2004 and
+adopted by 31 of the 38 OECD countries by 2010" beats "widely adopted"; a link
+to the standard beats both.</p>
+
+<figure>
+  <img src="img/some-picture.jpg" alt="Describe it for someone who can't see it" loading="lazy"/>
+  <figcaption>Optional caption — and the source and licence if it isn't yours.</figcaption>
+</figure>
+
+<div class="aside">
+  <p><strong>The number behind that sentence.</strong> Optional — a definition, a
+  digression, or the arithmetic, set apart so the argument reads clean without it.</p>
+</div>
+
+<h2>Where I could be wrong</h2>
+<p>Say so. What you haven't read, what the other side's best argument is, what
+would change your mind.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Author or body. <i>Title of the document</i>. Year. <a href="https://example.org/">https://example.org/</a></li>
+</ol>

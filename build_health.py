@@ -10,12 +10,14 @@ STANDARD LIBRARY ONLY, deliberately — same property build_travel.py and
 build_finance.py have. Nothing here touches the network; an entry is a file on
 disk and the build is a pure function of the source directory.
 
-FOUR PUBLICATIONS, ONE DOMAIN
+FIVE PUBLICATIONS, ONE DOMAIN
 ─────────────────────────────
-mistertranslation.com serves four separate things behind the hand-written hub at
+mistertranslation.com serves five separate things behind the hand-written hub at
 the bare root (index.html): the Bible project (/bible.html, build.py), The Librarian
 Abroad (/travel/, build_travel.py), The Librarian's Ledger (/finance/,
-build_finance.py), and this (/health/). Added 2026-09-10 (Michael's call) as a
+build_finance.py), The Librarian's Notebook (/notebook/, build_notebook.py — the
+general one, a copy of THIS file's writing half, added 2026-09-11), and this
+(/health/). Added 2026-09-10 (Michael's call) as a
 DEDICATED health publication rather than a general "post anything" blog: health
 and money are both subjects where a reader's trust is judged per topic, and a
 kidney-stone piece sitting between two Bitcoin wallet audits is not the framing
@@ -114,13 +116,15 @@ TAG_BAR_MAX_CHIPS = 18
 # "Show more". No standing pages compete for these slots here.
 FRONT_TILE_LIMIT = 6
 
-# The sibling publications — both blogs link here and this links to both. The
-# Bible project is reached via the root hub, same as from the other two.
+# The sibling publications — every blog links to every other in its footer.
+# The Bible project is reached via the root hub, same as from the others.
 SIBLINGS = (
     ("The Librarian's Ledger", "https://mistertranslation.com/finance/",
      "What the world's money is actually in"),
     ("The Librarian Abroad", "https://mistertranslation.com/travel/",
      "Notes from the road and the table"),
+    ("The Librarian's Notebook", "https://mistertranslation.com/notebook/",
+     "A commonplace book — science and technology, the world, arts and culture"),
 )
 
 # The same FormSubmit endpoint the other two blogs post to, so every publication
