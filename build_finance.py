@@ -8,13 +8,16 @@ which writes source/finance/asset_board.json; this reads that file and renders H
 Keeping the split means the build has no dependencies to install, cannot fail on a
 Yahoo outage, and works offline — and it is the same property build_travel.py has.
 
-FOUR PUBLICATIONS, ONE DOMAIN
+FIVE PUBLICATIONS, ONE DOMAIN
 ─────────────────────────────
-mistertranslation.com serves four separate things: the Bible project, now at
+mistertranslation.com serves five separate things: the Bible project, now at
 /bible.html (build.py — moved off the bare root 2026-09-09), The Librarian Abroad
 at /travel/ (build_travel.py), The Librarian's Regimen at /health/
 (build_health.py — health, nutrition and medicine; added 2026-09-10, a copy of
-this file's WRITING half with none of its boards), and this at /finance/. The two blogs LINK TO EACH
+this file's WRITING half with none of its boards), The Librarian's Notebook at
+/notebook/ (build_notebook.py — the general-purpose commonplace book, added
+2026-09-11; the `notes`-tagged non-money pieces that had been landing HERE are
+what it exists for — new ones go there), and this at /finance/. The two blogs LINK TO EACH
 OTHER (Michael's call, 2026-08-07) — nav, footer, and the odd entry-to-entry
 reference. ⚠️ 2026-09-09: the old "Bible project links to neither and is linked
 from neither" isolation rule is RETIRED (Michael's call — he'd stopped worrying
@@ -113,10 +116,12 @@ FRONT_TILE_LIMIT = 6
 # The sibling publications (the Bible project is reached via the root hub).
 # Was a single SIBLING_NAME/SIBLING_URL pair until 2026-09-10, when The
 # Librarian's Regimen (/health/, build_health.py) became the fourth
-# publication on the domain and the footer had to carry two.
+# publication on the domain and the footer had to carry two; The Librarian's
+# Notebook (/notebook/, build_notebook.py) made it three on 2026-09-11.
 SIBLINGS = (
     ("The Librarian Abroad", "https://mistertranslation.com/travel/"),
     ("The Librarian's Regimen", "https://mistertranslation.com/health/"),
+    ("The Librarian's Notebook", "https://mistertranslation.com/notebook/"),
 )
 
 # The same FormSubmit endpoint the travel blog posts to, so both publications
