@@ -21,6 +21,22 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;colo
 .site-head .brand{display:inline-block;color:inherit}
 .mtlib-icon{display:block;margin:0 auto 14px;width:56px;height:56px;
   filter:drop-shadow(0 3px 12px rgba(232,201,104,0.28))}
+/* The scroll winds itself shut and open again, slowly, wherever the icon appears
+   (the header brand on every Bible page; the SAME rules are inlined on the landing
+   index.html for its header mark + Religion card badge — keep the two in step).
+   One 14s clock: open ~4s, close over 2.8s, rest closed ~1.7s, open over 2.8s.
+   The sheet squeezes toward the centre by the distance the rollers travel, so the
+   paper's edge stays flush with each roller the whole way; the rollers thicken as
+   they take the sheet up; the quill fades before it could float over a shut scroll. */
+.scr-sheet{transform-origin:23px 23px;animation:scrSheet 14s ease-in-out infinite}
+.scr-quill{transform-origin:23px 23px;animation:scrSheet 14s ease-in-out infinite,scrQuill 14s ease-in-out infinite}
+.scr-roll-l{transform-origin:10.8px 23px;animation:scrRollL 14s ease-in-out infinite}
+.scr-roll-r{transform-origin:35.2px 23px;animation:scrRollR 14s ease-in-out infinite}
+@keyframes scrSheet{0%,30%{transform:scaleX(1)}50%,62%{transform:scaleX(.02)}82%,100%{transform:scaleX(1)}}
+@keyframes scrRollL{0%,30%{transform:translateX(0) scaleX(1)}50%,62%{transform:translateX(9.78px) scaleX(1.4)}82%,100%{transform:translateX(0) scaleX(1)}}
+@keyframes scrRollR{0%,30%{transform:translateX(0) scaleX(1)}50%,62%{transform:translateX(-9.78px) scaleX(1.4)}82%,100%{transform:translateX(0) scaleX(1)}}
+@keyframes scrQuill{0%,30%{opacity:1}40%,72%{opacity:0}82%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.scr-sheet,.scr-quill,.scr-roll-l,.scr-roll-r{animation:none}}
 .brand-name{font-family:Georgia,"Times New Roman",serif;font-weight:700;
   font-size:clamp(21px,5vw,31px);letter-spacing:-0.2px;color:#f7f2e2;line-height:1.2}
 .brand-name .lib{color:var(--gold)}

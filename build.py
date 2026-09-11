@@ -793,15 +793,20 @@ FAVICON = ("data:image/svg+xml," + html.escape(
 SCROLL_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
   <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
-  <rect x="9" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
-  <rect x="33.4" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
-  <rect x="12.6" y="14.5" width="20.8" height="17" fill="#efe6cf"/>
-  <g stroke="#8a7ab0" stroke-width="1.1" stroke-linecap="round">
-    <line x1="15.5" y1="19" x2="30.5" y2="19"/>
-    <line x1="15.5" y1="23" x2="30.5" y2="23"/>
-    <line x1="15.5" y1="27" x2="26.5" y2="27"/>
+  <!-- the unrolled sheet and its writing: squeezes toward the centre as the rollers wind it up -->
+  <g class="scr-sheet">
+    <rect x="12.6" y="14.5" width="20.8" height="17" fill="#efe6cf"/>
+    <g stroke="#8a7ab0" stroke-width="1.1" stroke-linecap="round">
+      <line x1="15.5" y1="19" x2="30.5" y2="19"/>
+      <line x1="15.5" y1="23" x2="30.5" y2="23"/>
+      <line x1="15.5" y1="27" x2="26.5" y2="27"/>
+    </g>
   </g>
-  <path d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
+  <!-- the two rollers: travel inward, thickening as they take up the sheet, until they meet -->
+  <rect class="scr-roll-l" x="9" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+  <rect class="scr-roll-r" x="33.4" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+  <!-- the quill: rides the sheet, fades out before it would float over the closed scroll -->
+  <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
 </svg>"""
 
 
