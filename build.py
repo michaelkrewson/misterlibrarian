@@ -864,15 +864,17 @@ def header(active="", lang="en"):
 </header>"""
     # "Ask a Question" (contact.html, submit yours) moved OUT of the header
     # (2026-09-09) and now lives with "Dear Mr. Librarian" in the small boxed pair
-    # above the footer (see _foot_actions) -- the header utilnav-left slot that used
-    # to hold it is gone rather than left empty. They're still a real pair
+    # above the footer (see _foot_actions). They're still a real pair
     # conceptually -- every answered post links back to the contact form as "send
     # yours to the librarian's desk" -- that relationship doesn't depend on where
     # the pair sits on the page.
-    ask_on = " on" if active == "ask" else ""
+    # "Dear Mr. Librarian" itself moved from the top-right utility corner INTO the
+    # main nav row (2026-09-10, Michael's call): it's a destination with content
+    # (the Q&A column), the same kind of thing as Library/Chronology, and beside
+    # the 🌐 language switch it read like a setting. The corner now holds only
+    # the language switch, which is the one thing up there that IS a control.
     return f"""<header class="site-head">
   <div class="utilnav utilnav-right">
-    <a class="util-ask{ask_on}" href="ask.html" title="Reader questions, answered one at a time">\U0001F4D6 Dear Mr. Librarian</a>
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
       <div class="langlist">
@@ -894,10 +896,10 @@ def header(active="", lang="en"):
       <a href="toc.html"{cls('toc')}>Table of Contents</a>
       <a href="library.html"{cls('library')}>📚 Library</a>
       <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
+      <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
       <a href="about.html"{cls('about')}>About</a>
       <div class="mobmenu-sep"></div>
       <a href="contact.html">✉️ Ask a Question</a>
-      <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
       <div class="mobmenu-sep"></div>
       <a href="{HOME_URL}" class="cur">English</a>
       <a href="es.html">Español</a>
@@ -910,6 +912,7 @@ def header(active="", lang="en"):
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
+    <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
     <a href="about.html"{cls('about')}>About</a>
     {share_item}
   </nav>
