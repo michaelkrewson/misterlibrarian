@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Six Hundred Pounds of Lawful Silver — Eight Miles West</title>
+<meta name="description" content="The 1712 deed for 580 acres in Bucks County, the 1720 tract, and Derrick Kroesen&#x27;s 1729 will — gold buttons, a cow, &quot;my Negro man Fortune.&quot; Chapter 7."/>
+<link rel="canonical" href="https://mistertranslation.com/west/six-hundred-pounds-of-lawful-silver.html"/>
+<link rel="alternate" type="application/rss+xml" title="Eight Miles West" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Eight Miles West"/>
+<meta property="og:title" content="Six Hundred Pounds of Lawful Silver"/>
+<meta property="og:description" content="The 1712 deed for 580 acres in Bucks County, the 1720 tract, and Derrick Kroesen&#x27;s 1729 will — gold buttons, a cow, &quot;my Negro man Fortune.&quot; Chapter 7."/>
+<meta property="og:url" content="https://mistertranslation.com/west/six-hundred-pounds-of-lawful-silver.html"/>
+<meta property="article:section" content="Part II — The X on the Will"/>
+<meta name="author" content="Michael V. Krewson"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(79,168,220,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#4fa8dc;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#4fa8dc}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#4fa8dc;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#4fa8dc;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#4fa8dc}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#4fa8dc;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#4fa8dc;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #4fa8dc;color:#4fa8dc}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#4fa8dc}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#4fa8dc;border-bottom-color:#4fa8dc}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#4fa8dc;
+  box-shadow:0 0 0 3px rgba(79,168,220,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#4fa8dc;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#4fa8dc;font-style:italic}
+a{color:#4fa8dc}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#4fa8dc;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #4fa8dc;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #4fa8dc;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#4fa8dc;color:#4fa8dc}
+.viewbtn.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#4fa8dc;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+
+/* ── the animated mark: a compass whose needle settles west ─────────────── */
+.bmark-needle{transform-origin:33px 33px;animation:bmarkNeedle 5.2s ease-in-out infinite}
+@keyframes bmarkNeedle{
+  0%{transform:rotate(-60deg)}
+  45%{transform:rotate(14deg)}
+  62%{transform:rotate(-6deg)}
+  75%,100%{transform:rotate(0deg)}
+}
+@media (prefers-reduced-motion:reduce){.bmark-needle{animation:none}}
+
+/* The Castello Plan's fort sits at the lower left of the sheet; the shared
+   hero crop (object-position near the top) would cut it off. */
+.fronthero img{height:340px;object-position:42% 78%}
+
+.byline{margin:-6px 0 18px;color:#c3d0e0;font-size:15px;letter-spacing:.02em}
+
+/* ── epigraph: Uncle Al's sentence, the book's thesis ─────────────────── */
+.epigraph{max-width:640px;margin:48px auto 8px;padding:0;border:0;text-align:center}
+.epigraph p{margin:0;color:#e8eef7;font-size:19px;line-height:1.6;font-style:italic}
+.epigraph footer{margin:12px 0 0;padding:0;border:0;color:#7f8fa6;font-size:13px;font-style:normal;
+  font-family:ui-sans-serif,system-ui,sans-serif;letter-spacing:.04em;text-align:center}
+
+/* ── contents page ──────────────────────────────────────────────────────── */
+.count{margin-top:14px;color:#7f8fa6;font-size:14px;font-style:italic}
+.count a{color:#8b9ab0}
+.part{max-width:760px;margin:44px auto 0;padding-top:26px;border-top:1px solid #1b2534}
+.part .pnum{margin:0 0 4px;color:#4fa8dc;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;font-family:ui-sans-serif,system-ui,sans-serif}
+.part h2{margin:0;font-size:27px;font-weight:400;line-height:1.2;color:#e8eef7}
+.part .pspan{margin:4px 0 0;color:#5a6b80;font-size:13px;letter-spacing:.06em;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.part .plede{margin:12px 0 0;color:#b9c6d8;font-size:15.5px}
+.part .unwritten{margin:16px 0 0;color:#5a6b80;font-size:14px;font-style:italic}
+.chapters{list-style:none;margin:18px 0 0;padding:0}
+.chapters li{border-top:1px solid #131b27}
+.chapters li:first-child{border-top:0}
+.chapters a{display:grid;grid-template-columns:2.6rem 1fr auto;gap:12px;align-items:baseline;
+  padding:12px 4px;text-decoration:none;color:inherit;border-radius:8px}
+.chapters a:hover{background:#0a111c}
+.chapters .cnum{color:#4fa8dc;font-variant-numeric:tabular-nums;font-size:15px}
+.chapters .ctitle{color:#e8eef7;font-size:17.5px}
+.chapters .cdate{color:#5a6b80;font-size:12.5px;letter-spacing:.04em;
+  font-family:ui-sans-serif,system-ui,sans-serif;text-align:right}
+@media (max-width:560px){.chapters a{grid-template-columns:2.2rem 1fr}.chapters .cdate{grid-column:2;text-align:left}}
+
+/* ── chapter page ───────────────────────────────────────────────────────── */
+.dateline{margin:-16px 0 22px;color:#93a4bd;font-size:15px;font-style:italic}
+.record{margin:0 0 26px;padding:10px 14px;border:1px solid #1b2534;border-radius:8px;
+  background:#0a111c;color:#a9b7c9;font-size:14px;line-height:1.6}
+.record .rlabel{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-right:8px}
+.entry .sources{margin:38px 0 0;padding:22px 0 0 22px;border-top:1px solid #1b2534;
+  color:#93a4bd;font-size:14px;line-height:1.6}
+.entry .sources li{margin:0 0 7px}
+.entry .sources a{color:#8b9ab0}
+/* The three registers a chapter writes in. `.doc` is a quoted document, set
+   apart; `.legend` is a family story stated as a story; `.infer` marks a
+   sentence worked back from a date or an age rather than read off a page. */
+.entry .doc{margin:26px 0;padding:14px 20px;border-left:3px solid #4fa8dc;background:#0a111c;
+  border-radius:0 10px 10px 0;color:#d6e0ee;font-size:15.5px;line-height:1.7}
+.entry .doc p{margin:0 0 10px;color:inherit;font-size:inherit}
+.entry .doc p:last-child{margin:0}
+.entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
+.entry .legend{border-left-color:#e8c968;background:#120f0a}
+.entry .infer{color:#a9b7c9;font-style:italic}
+.draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pn{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid #1b2534;
+  border-radius:10px;text-decoration:none;color:inherit;background:#0a111c}
+.pn:empty{border:0;background:transparent}
+.pn.next{text-align:right}
+.pn:hover{border-color:#4fa8dc}
+.pnl{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.pnt{color:#c3d0e0;font-size:15px}
+@media (max-width:560px){.prevnext{grid-template-columns:1fr}.pn.next{text-align:left}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#4fa8dc" stroke-width="5"/>
+  <circle cx="33" cy="33" r="21" fill="#0a111c" stroke="#4fa8dc" stroke-width="1.4" opacity=".9"/>
+  <g stroke="#9aa7bd" stroke-width="1.2" stroke-linecap="round" opacity=".8">
+    <line x1="33" y1="14" x2="33" y2="18"/><line x1="33" y1="48" x2="33" y2="52"/>
+    <line x1="14" y1="33" x2="18" y2="33"/><line x1="48" y1="33" x2="52" y2="33"/>
+  </g>
+  <text x="14.5" y="35.8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="6.5" fill="#4fa8dc" text-anchor="middle">W</text>
+  <g class="bmark-needle">
+    <polygon points="33,33 18,33 33,29.6" fill="#4fa8dc"/>
+    <polygon points="33,33 18,33 33,36.4" fill="#4fa8dc" opacity=".55"/>
+    <polygon points="33,33 48,33 33,29.6" fill="#d9e0ea" opacity=".9"/>
+    <polygon points="33,33 48,33 33,36.4" fill="#d9e0ea" opacity=".5"/>
+    <circle cx="33" cy="33" r="2.2" fill="#f2f5f9"/>
+  </g>
+</svg><span class="wm">Eight Miles <span class="em">West</span></span></a><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Contents</a><a href="about.html">About the book</a><a href="ask.html">Write in</a></nav></div></header>
+  
+  <article class="entry chapter">
+    <p class="edate"><a class="esec" href="index.html#part-will">Part II · THE X ON THE WILL</a> · Chapter 7</p>
+    <h1 class="etitle">Six Hundred Pounds of Lawful Silver</h1>
+    <p class="dateline">Southampton Township, Bucks County · 10 November 1712</p>
+    <p class="record"><span class="rlabel">In the record</span> Derrick² Kroesen (1662–1731) · Elizabeth Cregier (1662–1740) · Casal Van Hasten · Garret³ Kroesen (1685–1767) · Henry³ Kroesen (1707–1789) · Fortune</p>
+    
+<p>The deed begins the way every Pennsylvania deed of its century begins, with a tree:</p>
+
+<div class="doc">
+  <p>This Indenture made the tenth day of November in the year of our Lord One Thousand Seven Hundred and Twelve, between Charles Husteen of Southampton in the County of Bucks and province of Pennsylvania, Yeoman, of the one part, and Derrick Crusen of Southampton aforesaid, Yeoman, of the other part. Whereas there is a certain tract or parcel of land situate, lying and being in the Southampton aforesaid, beginning at a Spanish Oak, being a corner of a tract of land laid out to Peter Groom; thence by the said Groom's line north-east three hundred thirty-four perches to a small black oak; thence north-west by a street or road three hundred twenty-eight perches to a corner post; thence by Nicholas Randall's line south-west three hundred thirty-two perches to a post; thence south-east by John Jones's land one hundred and eighteen perches to a corner post; thence by Henry Pointer's land … thence south-west two hundred twelve perches to a post by a dead white oak … thence south-east by the County Line one hundred sixty-seven perches to the place of beginning, containing five hundred and eighty acres…</p>
+  <p>…for and in consideration of the sum of six hundred pounds of lawful silver money of Pennsylvania aforesaid, to him in hand paid by the said Derrick Crusen…</p>
+  <span class="cite">Deed, Charles Husteen to Derrick Crusen, 10 November 1712, recorded 17 January 1712/13, Bucks County Deed Book D, p. 214 — copied from the original by Anne Raike for Frank K. Swain, 1933; as transcribed in Cruise, pp. 179–182 [1]. Spelling modernised.</span>
+</div>
+
+<p>A Spanish oak, a small black oak, a dead white oak; the lines of Groom and Randall and Jones and Pointer; a street or road; the County Line. Five hundred and eighty acres — a little under a square mile — in Southampton Township, Bucks County, in the thirtieth year of William Penn's colony, some fifty miles from the island, across the Raritan and the Delaware, in a province that was English and Quaker and spoke neither of the languages Derrick Kroesen had grown up hearing. Six hundred pounds in silver. And at the foot of it, where the seller signed his name, the buyer made his mark.</p>
+
+<h2>The land, and who it came from</h2>
+
+<p>"Charles Husteen" was the Bucks County clerk's spelling of Casal Van Hasten, the son-in-law — the husband of Neeltje³, who had come to this land ahead of everyone in 1710, baptized two sons on it, and died on it with the second. The deed itself tells the rest of his story in the passive voice of the law: he and a partner, Lawrence Johnson, had bought the tract on 15 June 1708 from John Swift, "late of Southampton, Gent"; "the said Lawrence Johnson is since deceased before any partition made"; and so the whole had "legally descended to the said Charles as surviving tenant" [1]. Casal was selling the farm his wife and child had died on to her parents, for silver, and leaving. The family's book, which knows he left, does not know where he went [2].</p>
+
+<p>Behind Swift the chain runs back to the beginning of the province. The 580 acres were part of a tract William Penn had granted to his cousin and surveyor, Arthur Cook; Cook sold to Swift in 1681, the year before Penn himself arrived; Swift held it twenty-seven years and sold to the two Dutchmen in 1708 [2]. The deed reserves "the yearly quit rent hereafter accruing for the same to the Chief Lord of the fee thereof" — Penn, or his heirs — and Derrick paid, on taking possession, 191 shillings and change in arrears of it, <span class="infer">which Swain read as evidence that nobody had paid Penn his shilling an acre on this ground since 1681</span> [2]. The neighbours named in the bounds — Groom, Randall, Jones, Pointer — are English and Welsh. Southampton Township was Quaker country. <span class="infer">A Dutch Reformed family from Staten Island, arriving with a dead daughter and six hundred pounds, was as foreign there as its grandfather had been at Gowanus, and for the same reason: it had come for the land, not the neighbours.</span></p>
+
+<p>Where the six hundred pounds came from, the record does not say, and the family's genealogist says only what he believes: that it was the Staten Island patent, sold in 1709 after twenty-nine years of quarrel, and that "a fair case can also be made that the dispute between the brothers, lasting until 1709, may have benefited the price" [3]. Hendrick, with his share, bought fifty-two and a half acres on the island. Derrick bought five hundred and eighty in Pennsylvania. <span class="infer">Whatever the will had said, the elder son came out of the settlement with the money to buy eleven times the land, in a colony where an acre cost a fraction of what it did on the Kill Van Kull; if the point of the twenty-nine years was to establish who had the larger claim, the deeds answer it.</span></p>
+
+<h2>A Dutch church among the Scotch-Irish</h2>
+
+<p>They had joined a church before they bought the farm. On 23 June 1711 Derrick and Elizabeth were received into the Reformed Dutch congregation of Bensalem-Neshaminy — organised only the year before, on 20 May 1710, by a minister named Paulus Van Vlecq, who set up its ruling council the next day and then went off to found another at Germantown — and it was the family's church for twenty years [4]. Then the neighbourhood changed around it. "There was a major influx of Germans and Scotch-Irish settlers into the area around this period," the genealogist writes, "which created problems for the Dutch. It resulted in uneasy relationships with other Protestant denominations and eventually forced them to start their own Reformed churches" [5]. By about 1730 the Bensalem congregation "had become dominated by Scotch-Irish settlers and served by Scotch Presbyterian ministers," and the Dutch seceded, "as the Dutch preferred their own minister who would preach in the Dutch language" — and got one, Petrus Hendricus Dorsius, called from the Netherlands to the new Reformed Dutch Church at Feasterville [5]. The meeting-house and graveyard of that church stood, Swain found, in the north corner of a piece of Derrick's land that he gave his son in 1727; the meeting-house "has long since disappeared but the nicely walled graveyard remains" [6]. Fifty years after the two Labadists had heard the Dutch of Staten Island say "wherever we went" that they wanted a minister of their own, their grandchildren in Pennsylvania were still saying it, and getting one, and burying each other beside him.</p>
+
+<h2>Five hundred more</h2>
+
+<p>On 15 December 1720 Derrick bought again — 500 acres in the adjoining township of Northampton, from Benjamin Borden of Newport, Rhode Island, acting through a Bucks County attorney, Joseph Kirkbride, "for one hundred and seventy pounds lawful money of America" [7]. Note the price and the phrase. The first tract, cleared and farmed since 1681, had cost six hundred pounds of Pennsylvania silver; the second, at a third of the price for nearly the same acreage, "probably was not cleared of timber and took substantial work to achieve any type of crop production" [5]. That is the pattern of the whole family's next two centuries in one pair of deeds: buy the cleared farm with the money you brought, then buy the woods next to it cheap and clear them with your sons. "The only cash crop was wheat," the genealogist notes of these years; "other crops of barley, corn, oats, and vegetables were grown but used for their own domestic consumption" [5]. One thousand and eighty acres, held by a man who signed with a mark.</p>
+
+<p>Seven years later he began giving it away. On 22 August 1727, and on 9 June of the same year, and in deeds of gift that Swain spent the 1930s trying to reconcile and never quite could, Derrick and Elizabeth "commenced deeding certain tracts of their 1,080 acres of land to their children": to Francis, 250 acres; to Catharine, 250; to Garret, 260; to Nicholas, 250; to John, about 150 along the County Line; to Derrick junior, 143 or 200, depending on which of Swain's notes you read; and for themselves an L-shaped tract of about 230 acres, "which they retained as their residence plantation" [6]. The arithmetic does not close — Swain's totals come to 1,533 acres out of 1,080 — and the genealogist, who tried, gave up honestly: "the land transactions appear confusing" [6]. What is not confusing is the intent. Six sons and a daughter, and a farm for each of them, carved off before the father died so that no will would have to do it. <span class="infer">The man who had spent twenty-nine years fighting his brother over what a burned will had said was not going to leave his own children a paper to fight over. He gave it to them while he was alive and could put his mark on it.</span></p>
+
+<h2>The will</h2>
+
+<p>What was left he disposed of on 4 January 1729, "being in health and in perfect and sound mind, memory and understanding, thanks be given to God therefore." The will is in the ordinary form of its time and place, and it is the last document Derrick Kroesen ever marked, and every line of it is about work and who does it:</p>
+
+<div class="doc">
+  <p>ITEM. I give and bequeath unto my son Garret Cruson all my gold and silver buttons and one cow.</p>
+  <p>ITEM. I give unto my beloved wife Elizabeth all the residue and remainder of my personal estate, to be enjoyed during her natural life if she do so remain my widow; and after her decease I give the wagon, ploughs, harrow and horse harness unto my son Henry, and the rest to be equally divided among all my children, Garret, Francis, Nicholas, John, Derrick, Henry and Catharine …</p>
+  <p>ITEM. I also give my said wife Elizabeth all that my messuage, tenement, plantation and tract of land situate in Southampton whereon I now dwell, to be by her enjoyed and possessed during her natural life in case she remain my widow; and I will that my youngest son Henry have the order and management of the said plantation as her tenant, and that he have the east end of the said messuage in which he now lives, with half the cellar, as also my Negro man Fortune, so long as he manage and occupy the same industriously and render and pay unto my wife yearly the rent or part of the profit of the said plantation hereafter mentioned, viz: during the life of the said Negro man, one half of all the wheat, rye, barley, Indian corn and cider … but in case the said Negro man do die, that then from thence my said son doth render unto my said wife but one third part of the wheat, rye, barley and cider, and half the Indian corn … but if it shall happen that my said wife Elizabeth do marry before she depart this life, that then I give unto her the sum of ten pounds a year only …</p>
+  <p>…Lastly I do constitute, make and ordain my two sons Garret Cruson and John Cruson my true and lawful executors … In witness I have hereunto put my hand and seal the day and year first above written.</p>
+  <p>His Derick X Cruson Mark.</p>
+  <span class="cite">Will of Derrick Cruson, Senior, of Southampton, Bucks County, Yeoman, made 4 January 1729, proved 25 December 1731 — Bucks County Will Book 1, p. 155, file 30; copied 14 March 1932 by Mrs. F. W. (Anne) Raike for Frank K. Swain; as transcribed in Cruise, pp. 191–193 [8]. Spelling modernised.</span>
+</div>
+
+<p>Read it as a farm. The eldest son, who already had his 260 acres and a stone house going up on them, gets the buttons off his father's coat and a cow. The youngest, Henry, twenty-one and already living in the east end of the house with half the cellar, gets the wagon and the ploughs and the harness when his mother dies, and the plantation itself after her, and in the meantime he farms it as her tenant. The widow gets the house and the land for life — <i>if she do so remain my widow</i>; the family's genealogist notes, drily, that wives in these wills "were sometimes left with nothing more than their clothes and a rocking chair, particularly if she should remarry" — and her income from it is set as a share of the crop: half of everything, or a third and half the corn [8].</p>
+
+<p>And the difference between the half and the third is a man's life. "During the life of the said Negro man, one half … but in case the said Negro man do die, that then … but one third part." Elizabeth Cregier's widowhood, the granddaughter of the Burgomaster and the Fiscal, was to be worth more or less depending on whether an enslaved man named Fortune was alive to do the work that made it.</p>
+
+<p>This is the first time in the family's four centuries of records that a person the family owned is named. He is named because he was property, in the clause that disposes of him — "as also my Negro man Fortune," between the east end of the house and half the cellar — and that is all the record has: a name, a legal status, a father's assessment of how much of the farm's yield depended on him. Where he came from, how Derrick came to hold him, what became of him after 1731 when the house passed to Henry, whether he had a wife or children in the quarters of a Dutch farm in a Quaker township — none of it is written down, here or anywhere the family's researchers looked. Pennsylvania in 1729 permitted slavery, taxed it, and would not begin to abolish it for another fifty years; the Quakers of Bucks County were only starting to be uneasy about it in their own meetings. Derrick Kroesen was not unusual. That is the point, and the book does not soften it: the family that had arrived in America as a cooper who signed with a mark and a ship's carpenter who signed with a mark now signed, with a mark, a document that counted a man among the wagon and the ploughs. The last chapter of this part of the book is about his son's will, and a woman named Lydia, and the price of a family's freedom by instalment. Fortune is where that begins.</p>
+
+<h2>The date stone</h2>
+
+<p>Derrick died in 1731. The will was proved on Christmas Day, and <span class="infer">a Bucks County probate in December of a will whose maker was alive in the spring puts his death somewhere in the middle of the year.</span> The only other witness to the date is a stone. Garret³, the eldest son, was building a stone house on his 260 acres, and "a date stone was placed in the east gable marked, 'Derrick Kroesen, May 12, 1731'" [9]. Anne Raike, who recorded it, read it the only way it can be read: "Garret, when building this house, must have placed the inscribed stone, marking his father's death" [9]. A son finishing a house and setting his dead father's name in the gable, with a date, where the morning sun would hit it. It is the nearest thing to a gravestone Derrick has; where he was buried the record does not say.</p>
+
+<p>The house stood a hundred and forty years. When it was torn down in 1871, the demolition uncovered "a secret hiding place behind a closet large enough to hold several persons," which Raike, writing in the 1930s, took in stride: "In those days, that was probably necessary" [9]. <span class="infer">What it was for — a strongroom in a county with no bank, a refuge in a war that would pass close by it, a place to hide people — is not recorded, and every reading of it is a guess.</span> A new house was built on the old foundation in 1935 and the date stone "again placed in the east gable." A photograph taken in 1969 shows the stone, and the caption transcribes it as "Built by D.K. 1730. Rebuilt by A.C. 1871" — A.C. being Aaron Cornell, who owned the place then [9]. So the stone as it stands says 1730 and "built by D.K.," and Raike's note says May 12, 1731, and Derrick Kroesen; <span class="infer">either the stone was recut when it was reset, or one of the two readings is wrong, and this book records both as printed rather than choosing.</span> The genealogist's own last word on it is the simplest: "The stone is still there today" [9].</p>
+
+<p>Elizabeth outlived her husband by nine years and stayed a widow, which under the will meant she kept the house and the half of the wheat. She died in 1740, at seventy-eight, and was buried in Bucks County, and with her the first generation of this book — the girl held at the font in the church inside the fort in 1662, with the Burgomaster and the Fiscal for witnesses, two years before the flag came down — is gone [10]. She had been born a Dutch subject, married an English one, and died a Pennsylvanian on a farm bought with her husband's mark. Her grandfathers' names are on the surrender of New Netherland. Hers is on nothing but a marriage line and a will, and on the stone at Feasterville, if it survived, which nobody has found.</p>
+
+<h2>Three marks and a hand</h2>
+
+<p>Jan Pietersen signed with an X for forty years. Garret Croesen signed with an X. Derrick Kroesen signed the deed for 580 acres and the deed for 500 and the deeds of gift to seven children and his will with an X. His brother on Staten Island wrote a hand a minister called beautiful, and kept the church's book for twenty years, and is remembered for it. Derrick is remembered by an X, a date stone carved by his son, and four words from the island: "Dirk disappeared, and Hendrick here." He had not disappeared. He had gone fifty miles south-west with six hundred pounds of silver, bought a square mile of Pennsylvania from the man who had buried his daughter on it, added most of another, given it to his children in his lifetime so that no fire could take it from them, and set a family in a county it would not leave for a hundred years. The next chapter is his eldest son, the one who got the buttons and the cow — and who, in his own will, would write the family's name the way it is written now.</p>
+
+<h2>The ground it happened on</h2>
+
+<p><span class="infer">As always: what follows is what the period's own records say about the place and the words, not a document about the family.</span> A perch is sixteen and a half feet; the 334 perches of the first line are a mile and a bit, and the whole tract was roughly a mile square, running from the "street or road" — Street Road, still so named — to the County Line, which was then the boundary with Philadelphia County and is now the Montgomery County line [1, 6]. The corner trees are how Pennsylvania surveyed: a Spanish oak (the southern red oak), a black oak, a dead white oak, each blazed and named in the deed, so that a boundary could be walked by a man who could not read it. "Lawful silver money of Pennsylvania" and "lawful money of America" are different things: the province had no mint, and its pounds were an accounting unit for a mixture of Spanish silver dollars, English coin and, after 1723, its own paper, so that a deed had to say what kind of pound it meant [7]. A messuage is a dwelling house with its yard and outbuildings; "the east end of the said messuage … with half the cellar" describes a house already divided between two households, the son's and the parents', which is how a Dutch farmhouse of the period commonly was. Cider in the will means orchards on the farm — the apple trees of this family's story again — and wheat, rye, barley and Indian corn are the four grains of a Delaware Valley farm, the wheat for Philadelphia and the rest for the household and the stock. Southampton and Northampton townships lie along the Neshaminy, twenty miles north-east of Philadelphia; the Feasterville graveyard Swain describes is still walled, and still there.</p>
+
+<ol class="sources">
+  <li>Deed, Charles Husteen to Derrick Crusen, 10 November 1712, with its metes and bounds, the recital of the Swift-to-Husteen-and-Johnson deed of 15 June 1708, and the consideration of "six hundred pounds of lawful silver money of Pennsylvania": Bucks County Deed Book D, p. 214, copied from the original by Anne Raike for Frank K. Swain in 1933, and transcribed in full in Warren D. Cruise, <i>The Croesen Families of America</i>, Vol. I (Gateway Press, Baltimore, 1998), pp. 179–182. As throughout, the documents are read as Cruise transcribed them; spelling is modernised in the quotations.</li>
+  <li>The chain of title from Penn to Arthur Cook to John Swift (1681) to Johnson and Van Hasten (1708); Casal's departure; the quit-rent arrears and Swain's reading of them: Cruise, pp. 177–178.</li>
+  <li>The genealogist's belief about the source of the money and the effect of the dispute on the price: Cruise, p. 343.</li>
+  <li>Derrick and Elizabeth's admission to the Bensalem-Neshaminy church, 23 June 1711; the church's founding on 20 May 1710 by Paulus Van Vlecq: <i>Pennsylvania Vital Records</i>, Vol. I, p. 249, in Cruise, p. 175.</li>
+  <li>The Scotch-Irish, the secession of c. 1730, Dorsius, Feasterville and Richboro, the North and Southampton Reformed Dutch Church; the uncleared 500 acres and wheat as the only cash crop: Cruise, pp. 176, 319.</li>
+  <li>The deeds of gift of 1727, Swain's reconstruction, the 230-acre home plantation, and the Feasterville meeting-house and graveyard on Derrick junior's tract: Frank King Swain's notes, in Cruise, pp. 188–189.</li>
+  <li>Deed, Benjamin Borden (by Joseph Kirkbride, attorney) to Derrick Cruson, 15 December 1720, 500 acres in Northampton, £170 "lawful money of America," recorded 13 October 1726: copied by Warren Cruise from the original at the Spruance Library, Bucks County Historical Society, Doylestown; in Cruise, pp. 178, 182–188. The currency note is general to the period: Pennsylvania's first paper money was issued in 1723.</li>
+  <li>The will of Derrick Cruson, Senior, made 4 January 1729, proved 25 December 1731, quoted; and the genealogist's remark on widows' portions: Bucks County Will Book 1, p. 155, file 30, copied by Anne Raike 14 March 1932; in Cruise, pp. 191–193.</li>
+  <li>The stone house, the date stone "Derrick Kroesen, May 12, 1731," the 1871 demolition and the hiding place, the 1935 rebuilding, and the 1969 photograph reading "Built by D.K. 1730. Rebuilt by A.C. 1871": Anne Raike's notes and the photograph caption, in Cruise, p. 190.</li>
+  <li>Elizabeth's death in 1740 and burial in Bucks County: Cruise, p. 194.</li>
+</ol>
+
+  </article>
+  <nav class="prevnext"><a class="pn prev" href="the-voorlezers-hand.html"><span class="pnl">← Previous</span><span class="pnt">6 · The Voorlezer&#x27;s Hand</span></a><a class="pn next" href="index.html"><span class="pnl">Contents</span><span class="pnt">The next chapter isn't written yet</span></a></nav>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Six%20Hundred%20Pounds%20of%20Lawful%20Silver%3A%0A%0Ahttps%3A//mistertranslation.com/west/six-hundred-pounds-of-lawful-silver.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/west/six-hundred-pounds-of-lawful-silver.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+<footer>Eight Miles West · <a href="about.html">About the book</a> · <a href="ask.html">Write in</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <span class="hits" id="hits-west-six-hundred-pounds-of-lawful-silver-html">👁 <span id="hits-west-six-hundred-pounds-of-lawful-silver-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fwest%2Fsix-hundred-pounds-of-lawful-silver.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-west-six-hundred-pounds-of-lawful-silver-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-west-six-hundred-pounds-of-lawful-silver-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-west-six-hundred-pounds-of-lawful-silver-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 Michael V. Krewson. A work of family history published for interest. Every chapter says which of its statements rest on a document, which are inferred, and which are family legend; documents are cited so they can be checked, and may be misread, superseded or simply wrong. Living people are written about with their knowledge. Nothing here is professional advice of any kind, genealogical or otherwise. Opinions are the author's own.</p></footer>
+</div>
+</body>
+</html>
