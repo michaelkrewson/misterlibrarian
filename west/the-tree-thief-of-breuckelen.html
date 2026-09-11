@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The Tree Thief of Breuckelen — Eight Miles West</title>
+<meta name="description" content="Garret Dircksen Croesen, cooper from Winschoten, and the 1662 tree-thief affair at Breuckelen — he sued his minister; the church wrote it down. Ch. 2."/>
+<link rel="canonical" href="https://mistertranslation.com/west/the-tree-thief-of-breuckelen.html"/>
+<link rel="alternate" type="application/rss+xml" title="Eight Miles West" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Eight Miles West"/>
+<meta property="og:title" content="The Tree Thief of Breuckelen"/>
+<meta property="og:description" content="Garret Dircksen Croesen, cooper from Winschoten, and the 1662 tree-thief affair at Breuckelen — he sued his minister; the church wrote it down. Ch. 2."/>
+<meta property="og:url" content="https://mistertranslation.com/west/the-tree-thief-of-breuckelen.html"/>
+<meta property="article:section" content="Part I — Two Homelands, Two Flags"/>
+<meta name="author" content="Michael V. Krewson"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(79,168,220,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#4fa8dc;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#4fa8dc}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#4fa8dc;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#4fa8dc;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#4fa8dc}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#4fa8dc;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#4fa8dc;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #4fa8dc;color:#4fa8dc}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#4fa8dc}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#4fa8dc;border-bottom-color:#4fa8dc}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#4fa8dc;
+  box-shadow:0 0 0 3px rgba(79,168,220,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#4fa8dc;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#4fa8dc;font-style:italic}
+a{color:#4fa8dc}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#4fa8dc;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #4fa8dc;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #4fa8dc;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#4fa8dc;color:#4fa8dc}
+.viewbtn.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#4fa8dc;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+
+/* ── the animated mark: a compass whose needle settles west ─────────────── */
+.bmark-needle{transform-origin:33px 33px;animation:bmarkNeedle 5.2s ease-in-out infinite}
+@keyframes bmarkNeedle{
+  0%{transform:rotate(-60deg)}
+  45%{transform:rotate(14deg)}
+  62%{transform:rotate(-6deg)}
+  75%,100%{transform:rotate(0deg)}
+}
+@media (prefers-reduced-motion:reduce){.bmark-needle{animation:none}}
+
+/* The Castello Plan's fort sits at the lower left of the sheet; the shared
+   hero crop (object-position near the top) would cut it off. */
+.fronthero img{height:340px;object-position:42% 78%}
+
+.byline{margin:-6px 0 18px;color:#c3d0e0;font-size:15px;letter-spacing:.02em}
+
+/* ── contents page ──────────────────────────────────────────────────────── */
+.count{margin-top:14px;color:#7f8fa6;font-size:14px;font-style:italic}
+.count a{color:#8b9ab0}
+.part{max-width:760px;margin:44px auto 0;padding-top:26px;border-top:1px solid #1b2534}
+.part .pnum{margin:0 0 4px;color:#4fa8dc;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;font-family:ui-sans-serif,system-ui,sans-serif}
+.part h2{margin:0;font-size:27px;font-weight:400;line-height:1.2;color:#e8eef7}
+.part .pspan{margin:4px 0 0;color:#5a6b80;font-size:13px;letter-spacing:.06em;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.part .plede{margin:12px 0 0;color:#b9c6d8;font-size:15.5px}
+.part .unwritten{margin:16px 0 0;color:#5a6b80;font-size:14px;font-style:italic}
+.chapters{list-style:none;margin:18px 0 0;padding:0}
+.chapters li{border-top:1px solid #131b27}
+.chapters li:first-child{border-top:0}
+.chapters a{display:grid;grid-template-columns:2.6rem 1fr auto;gap:12px;align-items:baseline;
+  padding:12px 4px;text-decoration:none;color:inherit;border-radius:8px}
+.chapters a:hover{background:#0a111c}
+.chapters .cnum{color:#4fa8dc;font-variant-numeric:tabular-nums;font-size:15px}
+.chapters .ctitle{color:#e8eef7;font-size:17.5px}
+.chapters .cdate{color:#5a6b80;font-size:12.5px;letter-spacing:.04em;
+  font-family:ui-sans-serif,system-ui,sans-serif;text-align:right}
+@media (max-width:560px){.chapters a{grid-template-columns:2.2rem 1fr}.chapters .cdate{grid-column:2;text-align:left}}
+
+/* ── chapter page ───────────────────────────────────────────────────────── */
+.dateline{margin:-16px 0 22px;color:#93a4bd;font-size:15px;font-style:italic}
+.record{margin:0 0 26px;padding:10px 14px;border:1px solid #1b2534;border-radius:8px;
+  background:#0a111c;color:#a9b7c9;font-size:14px;line-height:1.6}
+.record .rlabel{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-right:8px}
+.entry .sources{margin:38px 0 0;padding:22px 0 0 22px;border-top:1px solid #1b2534;
+  color:#93a4bd;font-size:14px;line-height:1.6}
+.entry .sources li{margin:0 0 7px}
+.entry .sources a{color:#8b9ab0}
+/* The three registers a chapter writes in. `.doc` is a quoted document, set
+   apart; `.legend` is a family story stated as a story; `.infer` marks a
+   sentence worked back from a date or an age rather than read off a page. */
+.entry .doc{margin:26px 0;padding:14px 20px;border-left:3px solid #4fa8dc;background:#0a111c;
+  border-radius:0 10px 10px 0;color:#d6e0ee;font-size:15.5px;line-height:1.7}
+.entry .doc p{margin:0 0 10px;color:inherit;font-size:inherit}
+.entry .doc p:last-child{margin:0}
+.entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
+.entry .legend{border-left-color:#e8c968;background:#120f0a}
+.entry .infer{color:#a9b7c9;font-style:italic}
+.draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pn{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid #1b2534;
+  border-radius:10px;text-decoration:none;color:inherit;background:#0a111c}
+.pn:empty{border:0;background:transparent}
+.pn.next{text-align:right}
+.pn:hover{border-color:#4fa8dc}
+.pnl{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.pnt{color:#c3d0e0;font-size:15px}
+@media (max-width:560px){.prevnext{grid-template-columns:1fr}.pn.next{text-align:left}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#4fa8dc" stroke-width="5"/>
+  <circle cx="33" cy="33" r="21" fill="#0a111c" stroke="#4fa8dc" stroke-width="1.4" opacity=".9"/>
+  <g stroke="#9aa7bd" stroke-width="1.2" stroke-linecap="round" opacity=".8">
+    <line x1="33" y1="14" x2="33" y2="18"/><line x1="33" y1="48" x2="33" y2="52"/>
+    <line x1="14" y1="33" x2="18" y2="33"/><line x1="48" y1="33" x2="52" y2="33"/>
+  </g>
+  <text x="14.5" y="35.8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="6.5" fill="#4fa8dc" text-anchor="middle">W</text>
+  <g class="bmark-needle">
+    <polygon points="33,33 18,33 33,29.6" fill="#4fa8dc"/>
+    <polygon points="33,33 18,33 33,36.4" fill="#4fa8dc" opacity=".55"/>
+    <polygon points="33,33 48,33 33,29.6" fill="#d9e0ea" opacity=".9"/>
+    <polygon points="33,33 48,33 33,36.4" fill="#d9e0ea" opacity=".5"/>
+    <circle cx="33" cy="33" r="2.2" fill="#f2f5f9"/>
+  </g>
+</svg><span class="wm">Eight Miles <span class="em">West</span></span></a><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Contents</a><a href="about.html">About the book</a><a href="ask.html">Write in</a></nav></div></header>
+  
+  <article class="entry chapter">
+    <p class="edate"><a class="esec" href="index.html#part-flags">Part I · TWO HOMELANDS, TWO FLAGS</a> · Chapter 2</p>
+    <h1 class="etitle">The Tree Thief of Breuckelen</h1>
+    <p class="dateline">Gowanus · a day of prayer, March 1662</p>
+    <p class="record"><span class="rlabel">In the record</span> Garret Dircksen Croesen (c.1639–1680) · Neeltje Jans (c.1640–c.1690) · Jan Pietersen Van Husum (c.1606–c.1675) · Henricus Selyns (1636–1701) · Femmetje Nyssens</p>
+    
+<p>Some time in the middle of March 1662, towards evening, on a day the church had set aside for prayer, a young man walked out of the village of Breuckelen into the woods and came back with trees. Fruit trees, the record is careful to say — "not wild trees but fruit trees" [1]. How many, he never said. Where exactly he had found them, he never said either. He was about twenty-two years old, he had been married five months, and his wife was expecting their first child.</p>
+
+<p>That is the whole of the offence. Everything that follows — the rumours, the pastoral visit, the summons, the letter to the magistrates, ten pages in a church book that had never before spent ten pages on anything — grew out of a few saplings dug up on the wrong day. And it is the first time in four centuries of records that the man this family is named for opens his mouth and says something we can still read.</p>
+
+<h2>Gerrit Dircksen Croesen, cooper, from Winschoten</h2>
+
+<p>He came from Winschoten, in the province of Groningen, in the far north-east of the Netherlands, close to the German border. That much he said himself, when he transferred his church membership to Breuckelen in 1661: "Gerrit Dirckzen Crousen, from Winschoten" [2]. Nothing else about his life before America survives — not his parents' names, not his ship, not the year he sailed. The town he left was old and had been badly used: walled in 1593 during the war against Spain, taken and burned by the Spaniards in 1624 with its weaving mill and the monastery down the road, and visited by war and plague more than once after that. The church on the market square, built about 1300, is still standing; a cousin photographed it in 1995 [3]. <span class="infer">If he was born around 1639, as the family's researchers reckon from his later ages, he grew up in a town still rebuilding from the fire.</span> He left in time. In 1665, a few years after he had gone, "almost the whole population was wiped out by war and pestilence," and "the corpses stayed in the streets for days for lack of coffins" [3].</p>
+
+<div class="doc legend">
+  <p>There is a story about the ship. A family researcher in Pennsylvania, Marie Metzgar, had heard that a passenger on a vessel called the <i>Draetvat</i> — the "Wire-Cask" — kept a journal of the crossing in which he mentioned talking with two other passengers, Garret Dircksen Croesen and his brother. When the Holland Society was asked, it found a <i>Draetvat</i> that sailed on 2 April 1657 under Captain Jan Jansen Bestevaer, carrying, among others, "Marcus De Chousoy, wife, two workmen, and two boys, over twelve years of age." Nobody has ever found the journal.</p>
+  <span class="cite">Cruise (1998), pp. 44–45, who calls it "all conjecture" and says so twice. If Garret was born about 1640 he would have been seventeen in 1657, which fits "two boys over twelve" — and fits nothing else, because there is nothing else. It is recorded here as what it is: a story a researcher heard, with a real manifest underneath it and no proof on top.</span>
+</div>
+
+<p>What is not conjecture is that by the spring of 1661 he was already in America, already working, and already in the records — because of wine. On 1 May 1661 a notary in New Amsterdam named Salomon Lachaire was trying to collect on eight hogsheads of French wine, some 440 gallons, that a minister named Welius had been selling on the side before he inconveniently died. The wine had been passed to a man named Van Gesel, who had sold it "in part at auction and in part by the anker and by the can at retail," and had not paid for it. The notary went round the witnesses, and one of them told him "that Gerrit Creuse, Cooper, filled up said wines and ever since worked thereat." Then, in the same breath, the notary billed for his afternoon:</p>
+
+<div class="doc">
+  <p>I drank with them at the house of Madame Wessels 1 pint of wine on my own account. Comes for my trouble fl. 4. Further at the request of Lieve Ottens, I went with him and the said Van Nas to Breuckelen and there drew up an affidavit of the above named Croesen.</p>
+  <span class="cite">Register of Salomon Lachaire, Notary Public, 1 May 1661 — Scott &amp; Stryker-Rodda (eds.), New York Historical Manuscripts: Dutch, p. 40, as transcribed in Cruise, pp. 48–49 [4].</span>
+</div>
+
+<p>That is the first sighting. It tells us three things the family's genealogist was glad to have: that Garret was a cooper — a maker of barrels and casks, the containers everything liquid moved in, a real trade in a port town; that he was living at Gowanus, the hamlet on the shore a few miles south-west of Breuckelen village; and that he had been there long enough to have made the casks the wine went into, <span class="infer">which puts his arrival some time before the 1660 the family's tradition gives, and possibly well before</span> [4]. A cooper who "filled up" the wine had a customer base. He was not fresh off the boat.</p>
+
+<p>The rest of 1661 is a young man settling in, and it happens fast. On 29 May he joined the Breuckelen church by transfer from Winschoten, with two witnesses to vouch for him, Teunis Nyssen and Jan Martijn [2]. On 2 October he stood witness himself, for a man named Jan Clerck "from Brazil" making his confession of faith — the Dutch had lost their Brazilian colony to the Portuguese a few years earlier and the refugees were still arriving [5]. And on 30 October 1661 he married.</p>
+
+<div class="doc">
+  <p>1661, October 30: Gerrit Dirckzen Crousen, to Neeltie Jans, "from Nieuw Nederlant"; witnesses: Jans Pietersz, father of the bride, Jeurie Janszen, on the side of the bridegroom.</p>
+  <span class="cite">Old First Dutch Reformed Church of Brooklyn, First Book of Records, 1660–1752 (van der Linde, ed.), p. 212, as transcribed in Cruise, pp. 50–51 [6].</span>
+</div>
+
+<p>Neeltje Jans was "from New Netherland" — born in the colony, in Manhattan, around 1640, a full generation before her husband arrived. Her father, Jan Pietersen, stood as her witness. He was not Dutch either; he was from Husum in Schleswig, up near the Danish border, had been in New Amsterdam since about 1638, could not write his name, and had done well enough as a farmer, ship's carpenter and trader to be one of the twenty-five founding members of the Breuckelen church when it was organised in 1660 [7]. Her mother, Elsje, had died when Neeltje was about ten; the children took their mother's family name, Staats, and it is under that name that her brothers appear in the records from here on. She will have her own chapter. What matters for this one is that the cooper from Winschoten had married into the most established family in a village of about two or three hundred people, and that within the year he had a patent for twenty-eight acres at Gowanus, with a house on it, between two neighbours named Volkert Bries and Jacob Brouwer [8]. <span class="infer">The family's genealogist thought it "probable" that the father-in-law "had some part in this early rise," and nothing in the record argues with him.</span></p>
+
+<h2>What the twenty-eight acres looked like</h2>
+
+<p><span class="infer">Nothing in this section is a document about Garret. It is what the colony's own describers wrote about places like his and men like him, and it is here so that the record has ground under it.</span> Gowanus was not a village so much as a shore: a tidal creek winding up from the bay through salt marsh into low wooded hills, with a scatter of farms along the higher ground and, from about 1661, a tide-mill — Adam Brouwer's — where the creek was dammed [20]. Two Dutch travellers who walked through it in September 1679 were fed oysters roasted on the coals by a farmer there, "the largest and best oysters I have ever seen, some of them a foot long," and found the trees "so laden with peaches that the branches broke under the weight," the fruit lying on the ground for the hogs [21]. That is the fruit country a young man was setting himself up in.</p>
+
+<p>The fruit trees of New Netherland were European stock. Adriaen van der Donck, describing the colony in 1655, lists apples, pears, cherries, plums, quinces and above all peaches, "which grow so plentifully that the hogs are fed on them," all raised from pits and grafts the settlers had carried over, because the country's own trees — the wild plum, the crab, the mulberry — were not what a Dutchman meant by an orchard [22]. So when the consistory pressed Garret on whether the trees were "wild trees" or "fruit trees," and he conceded fruit trees "from the woods," the question was sharper than it sounds. Wild trees belonged to nobody. Fruit trees at the edge of the woods were somebody's young orchard, set out from grafts in the loose ground where the clearing stopped, and everyone in a village of three hundred knew whose. <span class="infer">The likeliest reading of his evasions — "not before he was absolutely sure," "did not know how many" — is that he knew exactly, and so did Femmetje.</span></p>
+
+<p>As for what he wore to dig them: a working Dutchman of 1662 dressed in linen and wool — a long linen shirt, loose woollen knee-breeches, a sleeved jerkin or doublet over the shirt, woollen stockings, and leather shoes with a strap or buckle; wooden shoes were a thing of the old country's wet fields and appear in almost no colonial inventory [23]. Over it, in March, a coat of coarse wool, and on his head a felt hat with a brim — the hat that a Dutchman took off in church, to a magistrate, and to a flag he acknowledged, and that a boy in Breuckelen would refuse to take off to an English one two years later. Neeltje, indoors and expecting, would have been in a linen cap, a laced bodice, a woollen petticoat and an apron, the clothes of every woman in a Dutch genre painting of the decade, which is where most of what we know about them comes from [23]. The house behind them was almost certainly wood — a frame house of a room or two with a steep roof and a chimney at one end, the Dutch stone-and-tile houses of Manhattan and New Utrecht being for fiscals, not coopers [24]. Somewhere near it stood a cooperage: a shed, a fire for heating the staves, a stack of oak and a stack of hoops. And somewhere behind it, in fresh-turned March ground, a row of saplings that were the talk of the village.</p>
+
+<p>Then, in December, he was a witness at the baptism of his wife's niece. He was twenty-two, married, landed, and in good standing with his church. He had been in the records for seven months. Three months later he went into the woods.</p>
+
+<h2>"Notorious and public knowledge even among the children"</h2>
+
+<p>The rumour started with a woman named Femmetje Nyssens. Her husband was Teunis Nyssen — the same Teunis Nyssen who had stood witness for Garret at the church ten months before, and with whom Garret was now, the record says, having "private quarrels" [9]. What the quarrel was about is not written down. What Femmetje said is: she called him a tree-thief, and she said it, Garret would later complain, "in the presence of the full meeting" [1]. The consistory's own description of how far it travelled is the best sentence in the file. The rumours, it wrote, "were notorious and public knowledge even among the children" [10].</p>
+
+<p>Breuckelen in 1662 had a new minister, and he was not a man to let a rumour run. Henricus Selyns had arrived from the Netherlands two years earlier, chosen — as the last chapter told — by a committee of two, the Burgomaster Martin Cregier and the Fiscal Nicasius De Sille, and approved by the Classis of Amsterdam in February 1660. He was in his mid-twenties, educated, exact, and about to be the keeper of one of the most complete church record books in colonial America. Some weeks before the Lord's Supper was to be celebrated, he and an elder, Wilhelmus Bredenbend, went round the congregation on the customary pastoral visit, inviting members to the Table. They came to the house at Gowanus. And here the record, for once, is gentle:</p>
+
+<div class="doc">
+  <p>…not inside the house where he would have been embarrassed in the presence of his wife, but after we had gone outside, so that he was told in the most suitable and proper way about the rumours which are notorious and public knowledge even among the children.</p>
+  <span class="cite">Letter of the Breuckelen consistory to the Schouts and Schepens of Breuckelen, 5 April 1662 — First Book of Records, pp. 37–47, as transcribed in Cruise, pp. 59–60 [10].</span>
+</div>
+
+<p>Outside, away from Neeltje, the minister and the elder told him what the village was saying, and told him that they could not invite him to the Lord's Supper "unless there would be a Christian and penitent disclosure of what was already being said behind his back" [10]. If it was true, he should repent of it. If it was a lie, let it be a warning. Either way, he was barred from communion until it was cleared up.</p>
+
+<p>Garret's answer is the reason this chapter exists. He did not go to Femmetje. He did not go to the consistory. He went to the court-messenger of Breuckelen and had Dominie Henricus Selyns, his minister, cited to appear before the Lower Court of Breuckelen at its next session, to answer for the rumours. And he did it on the Sabbath.</p>
+
+<h2>The consistory, 2 and 5 April 1662</h2>
+
+<p>The church's own account opens with the sound of a body of men who cannot believe what has been done to them:</p>
+
+<div class="doc">
+  <p>Furthermore, it was brought to the attention of the Hon. Consistory, to their regret and disdain, that Gerrit Dirckzen Croesen van Wynschooten, a member of our congregation, has dared, with extreme wickedness and impudence (in violation of all Ordinances of the Church and customary procedures, without any right or justification, and at an inappropriate time, abusing even the Sabbath for the impudent scheme, a day reserved for the divine worship and for abstinence in preparation of the imminent Lord's Supper), to cite, and to have cited by the court-messenger, the person of Henricus Selyns, his lawful minister and teacher…</p>
+  <span class="cite">Consistory minutes, 2 April 1662 — First Book of Records, p. 245, as transcribed in Cruise, p. 54 [11].</span>
+</div>
+
+<p>A modern editor of the record book, in a footnote the family's genealogist reprints, put it more plainly: Garret "became so enraged when Selijns and Bredenbend discreetly questioned him about the rumours" that he "held the minister responsible for the accusations and filed a libel suit against them," and the minister's "indignation at having been cited in a secular court is evident from the fact that the Croesen affair covers no less than ten full pages in the original Protocol" [12]. Nothing else in the book's first ninety years got ten pages.</p>
+
+<p>The consistory did not know what to do, which is itself telling. It voted to send Selyns across the river to consult "the Rev., pious, and very learned father Domine Johannes Megapolensis," the senior minister of the colony, on three questions: whether to summon Garret, whether to censure him, and whether to appear in the court where they had been cited [11]. Megapolensis's advice came back on 5 April: summon him at once; suspend him from the Supper; and write to the magistrates. They sent the court-messenger for Garret — "he will have to appear immediately" — and he came [9].</p>
+
+<p>What follows is an interrogation, and the church wrote down both sides of it. He was asked what justification a member had for citing his minister in court. He answered, the clerk recorded, that "[the citation] was due to his own dullness and that [he] did not know any better, but that he had been advised by wiser people" — and then, warming up, that he had "even gone to Manhattan for that purpose, and had waited for more than half a day to see Henricus Selyns, shouting he would come to the Hon. Lord General's place where he was staying" [9]. The Lord General was Stuyvesant. A twenty-two-year-old cooper had crossed the river, found his minister's lodging at the Director-General's house, and stood outside it for half a day, shouting.</p>
+
+<p>He "persisted in his innocence." He asked that the people accusing him be the ones barred from the Supper, and that Femmetje Nyssens be made to appear before the consistory. He was reminded of something he had reportedly said — "Consider me the offender" — and answered that "this was not based upon the truth but upon rumours." Selyns had told him, at the house, "I do not know, God knows. You can deceive me but not God," and Garret did not deny being told it. Then he lost his temper:</p>
+
+<div class="doc">
+  <p>Eventually [he] tried to justify his case with indecent maledictions saying, "If it's true, I'll be damned!" and after he had been punished for that, [he] persisted equally strongly in his afore-mentioned swearing and self-damnation.</p>
+  <span class="cite">Consistory minutes, 5 April 1662 — as transcribed in Cruise, p. 57 [9].</span>
+</div>
+
+<p>They asked him why he had cited the minister before the Supper, when the court would not even sit until after it. He said "that he had sought his honour, the sooner the better." They asked why he had cited Selyns and not Femmetje, "or others who were talking about it every day." He said nobody had accused him but Selyns — which the clerk notes was untrue, since he had himself complained that Femmetje called him a tree-thief in front of the whole meeting. They asked when he had taken the trees. "In the middle of March," he said, "but that he did not know for sure." They said they knew very well: it was the day of prayers. He said it was towards evening. They asked where in the woods, and how many. He "did not want to tell before he was absolutely sure and that he did not know how many" [1].</p>
+
+<p>He was sent outside while they deliberated, and called back in to hear the verdict. He was suspended from the Lord's Supper on three grounds, each of them about the lawsuit and none of them about the trees: "personal hatred against his lawful minister," "rejection and contempt of the consistory," and "breaking the promises he had made to the consistory while shaking their hands." As for his request that his accusers be barred instead, the answer was that he could first clear himself in the court he had dragged his minister into, "and the consistory will then do what they consider proper and reasonable" [1].</p>
+
+<h2>The letter to the magistrates</h2>
+
+<p>Then they wrote to the court. The letter, addressed to "the Schouts and Schepens of the village and jurisdiction of Breuckelen" and handed to Schout Adriaen Hegeman, is the part of the affair that historians of the colony have remembered, because it is one of the first times in America that a church told a court to mind its own business. It repeats the whole indictment — the wickedness, the impudence, the Sabbath — with one addition, in parentheses, after Garret's name: "(may God mend his manners!)" [10]. It asks the court to annul the citation, to prevent any like it in future, and "to leave those concerning Church matters to the Church meeting." And then, having said all that, it asks the court to investigate the trees anyway, carefully — "so that, if it is all lies, the aforesaid Crousen will be cleansed and cleared of the rumours about thievery and theft of certain trees," and if it is true, the church will do what its discipline requires. Selyns and Bredenbend signed it on 5 April 1662, "in our Church meeting" [10].</p>
+
+<p>The old Brooklyn historian Stiles summarised the minister's position two centuries later: "the civil courts could not try offences arising purely out of the ecclesiastical relation; and … the complainant having submitted himself to the canons of the church, by becoming one of its members, was thereby precluded from taking the matter before the courts" [13]. The family's genealogist, a twentieth-century man, was unimpressed. "That probably would not work today. Garret was entitled to his day in court, and Femmetje should have had to answer to her part in the charges" [13].</p>
+
+<p>And there the record stops. No verdict from the court survives. No finding about the trees. The consistory minutes move on to other business, and the family's genealogist, who read all of it, concluded that the affair "soon disappeared as everyone was happy to get out of this one" [14]. Whether Garret ever took communion again in Selyns's church is not written down. Selyns himself went back to the Netherlands in July 1664, a month before the English ships came, and did not return to the colony for eighteen years [14].</p>
+
+<h2>Eighteen days</h2>
+
+<p>What is written down is this. On 23 July 1662, in the Reformed Dutch Church of Breuckelen — the same church, with the same minister — Gerrit Croesen and Neeltje Jans baptized their first child, a son, Dirck. The witnesses were Grietje Jans, Neeltje's stepmother, and a neighbour named Adam Brouwer [15]. The consistory had suspended the father from the Table fifteen weeks earlier. It baptized his son anyway. The church's discipline was about the Supper, not the font, and a Dutch church in 1662 did not visit a father's contempt on his child.</p>
+
+<p>Across the river, in the church inside the fort, another child had been baptized eighteen days before, on 5 July, with the Burgomaster and the Fiscal standing as her witnesses. Nobody at either font could have known it, but the boy and the girl would marry each other in this same Breuckelen church twenty-two years later, and the family whose name is on this book descends from the pair of them. Two baptisms, eighteen days and eight miles apart: one at the top of the colony, one in a village that was calling the father a thief.</p>
+
+<p>Adam Brouwer, the witness, should be remembered too. He was an old friend of Neeltje's father, a fellow founder of the church, a former soldier of the Company in Brazil, and, in the genealogist's careful phrase, "fractious and troublesome" — and that, he adds, is being kind to him [16]. Seven years after he stood at this font, he and Garret would be in court against each other, and ten years after that his son would raid Garret's grape arbour and Adam would say, in front of a witness, that if he had been there Gerrit "should not have come off alive." That is the next chapter.</p>
+
+<p>For now the cooper had his trees, wherever they came from, and his son, and his twenty-eight acres. In April 1664, with Selyns still in the pulpit, Neeltje joined the church herself, with Garret as one of her witnesses and the chief magistrate of Breuckelen as the other [17]. In 1670 a lawyer named John Sharp sued Garret for seventy-two guilders in unpaid fees and the court told him to pay up [18]. In 1675 the tax roll has him at Breuckelen with "1 poll, 2 oxen, 4 cows," a run of younger cattle, three hogs, and "14 morgens land and valley" — the twenty-eight acres, in Dutch measure — assessed at £99 10s [19]. He never learned to write. He was, the record shows, quick to feel his honour touched and quick to go to law about it, and he did not much care who was on the other side. The family's own genealogist, four generations on, would tell Michael that the rifts in this family ran "all the way back to the 1600s." This is what the 1600s look like: a man of twenty-two, barred from the Table over some saplings, standing outside the Governor's house for half a day, shouting for his minister to come down.</p>
+
+<ol class="sources">
+  <li>The consistory's examination of Garret on 5 April 1662 — the trees "not wild trees but fruit trees," "the middle of March," the day of prayers, "towards evening," the refusal to say where or how many, the three grounds of suspension, and the verdict: <i>Old First Dutch Reformed Church of Brooklyn, First Book of Records, 1660–1752</i>, ed. A. P. G. Jos van der Linde (New York Historical Manuscripts: Dutch), pp. 37–47, as transcribed in full in Warren D. Cruise, <i>The Croesen Families of America</i>, Vol. I (Gateway Press, Baltimore, 1998), pp. 54–61. Throughout this chapter the record book is read as Cruise transcribed it, not in the original.</li>
+  <li>Garret's admission to the Breuckelen church by transfer from Winschoten, 29 May 1661, with witnesses Teunis Nyssen and Jan Martijn: <i>First Book of Records</i>, p. 21, in Cruise, pp. 49–50.</li>
+  <li>Winschoten's history — the walls of 1593, the Spanish burning of 1624, the plague of 1665, the church on the market square: a 1982 account by G. P. I. Hiskes-Knigge of the Westerwolde genealogical society, written at Cruise's request and translated, in Cruise, pp. 40–41; the 1995 photographs and note by Shirley Ann Cruzen Stevens, Cruise, pp. 42–43.</li>
+  <li>The wine deposition of 1 May 1661: Register of Salomon Lachaire, Notary Public, in Scott &amp; Stryker-Rodda (eds.), <i>New York Historical Manuscripts: Dutch</i>, p. 40, in Cruise, pp. 47–49, with Cruise's own reading of what it establishes about Garret's trade and arrival.</li>
+  <li>Garret as witness to the confession of faith of Jan Clerck "from Brazil," 2 October 1661: <i>First Book of Records</i>, p. 29, in Cruise, p. 50.</li>
+  <li>The marriage record of 30 October 1661: <i>First Book of Records</i>, p. 212, in Cruise, pp. 50–51.</li>
+  <li>Jan Pietersen Van Husum — born at Husum c. 1605–07, in New Amsterdam by c. 1638, his X mark on a 1640 deed, a founding member of the Breuckelen church: Cruise, pp. 108–135 (the Pietersen/Staats section) and p. 61. Neeltje's birth c. 1639–40, her mother's death and the Staats name: Cruise, pp. 136–137, 152–155.</li>
+  <li>The twenty-eight acres at Gowanus by patent, the two neighbours, the size of Breuckelen: Cruise, pp. 47, 154; the genealogist's "probable" about the father-in-law's help, p. 47.</li>
+  <li>The consistory of 5 April 1662 — Megapolensis's advice, the summons, the exchange with Garret including "his own dullness," the half-day outside the General's house, "Consider me the offender," "You can deceive me but not God," "If it's true, I'll be damned!" and "he had sought his honour, the sooner the better"; and the "private quarrels with Teunis Nijssen and Albert Cornelissen Wantenaer": <i>First Book of Records</i>, pp. 37–47, in Cruise, pp. 56–59.</li>
+  <li>The consistory's letter to the Schouts and Schepens of Breuckelen, 5 April 1662, handed to Schout Adriaen Hegeman — "not inside the house where he would have been embarrassed in the presence of his wife," "notorious and public knowledge even among the children," "(may God mend his manners!)," the request that the court both annul the citation and investigate the trees: <i>First Book of Records</i>, pp. 37–47, in Cruise, pp. 59–61.</li>
+  <li>The consistory minute of 2 April 1662, quoted, and the decision to consult Megapolensis: <i>First Book of Records</i>, p. 245, in Cruise, pp. 54–56.</li>
+  <li>The modern editor's endnote (no. 26) on the affair's ten pages in the original Protocol: van der Linde's edition, reprinted in Cruise, pp. 53–54.</li>
+  <li>The jurisdictional point: Henry R. Stiles, <i>A History of the City of Brooklyn</i> (1867), Vol. I, p. 145, quoted in Cruise, pp. 61–62; the genealogist's own verdict ("That probably would not work today"), Cruise, p. 62.</li>
+  <li>"Soon disappeared as everyone was happy to get out of this one"; Selyns's departure in July 1664 and return in 1682: Cruise, pp. 53, 61.</li>
+  <li>The baptism of Dirck, 23 July 1662, with witnesses Adam Brouwer and Grietje Jans: <i>First Book of Records</i>, p. 112, in Cruise, p. 62. Elizabeth Cregier's baptism on 5 July 1662 is the subject of the preceding chapter.</li>
+  <li>Adam Brouwer — "fractious and troublesome," the 1669 court case and the 1679 assault: Cruise, pp. 62, 68–71; treated in the next chapter.</li>
+  <li>Neeltje's admission to the church, 9 April 1664, witnesses Gerrit Crousen and Willem Gerritsen van Couwenhoven, magistrate: <i>First Book of Records</i>, p. 222, in Cruise, p. 63.</li>
+  <li>John Sharp v. Gerrit Croesen, 1670, fl. 72 in attorney's fees: Fernow (ed.), <i>The Records of New Amsterdam</i>, Vol. VI, p. 217, in Cruise, p. 64.</li>
+  <li>The Breuckelen tax rolls of 1675 and 1676: Stiles, Vol. I, p. 99, in Cruise, pp. 64–65. A morgen is about two acres; "14 morgens land and valley" is the twenty-eight-acre farm.</li>
+  <li>Gowanus as a tidal creek and marsh with scattered farms; Adam Brouwer as "the miller," with a mill on the creek from the early 1660s: Cruise, pp. 46–47, 170; Stiles, Vol. I, on the Gowanus settlement. The description of the ground is general to the period, not a survey of Garret's lot.</li>
+  <li>The oysters and the peaches at Gowanus, September 1679: Jasper Dankers and Peter Sluyter, <i>Journal of a Voyage to New York … 1679–80</i> (trans. Henry C. Murphy, Long Island Historical Society, 1867), public domain; the Gowanus passages are reprinted in part in Cruise's Staten Island section. The travellers' host was a farmer named Simon, "our old friend Symon, who had come over from Gouanes."</li>
+  <li>Adriaen van der Donck, <i>A Description of New Netherland</i> (Amsterdam, 1655), on the colony's fruit trees and the peaches fed to hogs — public domain, in several modern translations (e.g. Goedhuys, ed. Gehring &amp; Starna, 2008).</li>
+  <li>Dress of ordinary Dutch colonists in the 1660s: the standard descriptions rest on probate inventories and on Dutch genre painting of the period; see, for a readable summary, Russell Shorto, <i>The Island at the Center of the World</i> (2004), and the costume notes in the New Netherland Institute's published translations. No inventory of Garret's own clothing exists. Stated here as what a man of his trade and standing in that decade wore, not as what he is recorded wearing.</li>
+  <li>House types in the Brooklyn settlements — frame houses for farmers, stone and tile for the wealthy: Stiles, Vol. I; the De Sille house at New Utrecht, "the first house covered with red tiles," in Cruise, p. 223. Garret's house is nowhere described; the record only says the patent "contained a house or Garret built one" (Cruise, p. 154).</li>
+</ol>
+
+  </article>
+  <nav class="prevnext"><a class="pn prev" href="two-witnesses-at-the-font.html"><span class="pnl">← Previous</span><span class="pnt">1 · Two Witnesses at the Font</span></a><a class="pn next" href="index.html"><span class="pnl">Contents</span><span class="pnt">The next chapter isn't written yet</span></a></nav>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Tree%20Thief%20of%20Breuckelen%3A%0A%0Ahttps%3A//mistertranslation.com/west/the-tree-thief-of-breuckelen.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/west/the-tree-thief-of-breuckelen.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+<footer>Eight Miles West · <a href="about.html">About the book</a> · <a href="ask.html">Write in</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <span class="hits" id="hits-west-the-tree-thief-of-breuckelen-html">👁 <span id="hits-west-the-tree-thief-of-breuckelen-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fwest%2Fthe-tree-thief-of-breuckelen.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-west-the-tree-thief-of-breuckelen-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-west-the-tree-thief-of-breuckelen-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-west-the-tree-thief-of-breuckelen-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 Michael V. Krewson. A work of family history published for interest. Every chapter says which of its statements rest on a document, which are inferred, and which are family legend; documents are cited so they can be checked, and may be misread, superseded or simply wrong. Living people are written about with their knowledge. Nothing here is professional advice of any kind, genealogical or otherwise. Opinions are the author's own.</p></footer>
+</div>
+</body>
+</html>
