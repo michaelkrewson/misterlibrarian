@@ -163,7 +163,9 @@ SCOPE_PATTERNS = [
     (r"of the Hebrew Bible|in the Hebrew Bible|in the whole Bible|in the Bible"
      r"|across the whole text|de la Biblia hebrea|en toda la Biblia", "bible"),
     (r"in the Torah|(?:across|in) the whole Torah|en (?:toda )?la Tor[aá]", "torah"),
-    (r"in this book|en este libro", "book"),
+    # "of this book" too (2026-09-11): three Deuteronomy 26 claims written that way were silently
+    # SKIPPED -- no scope, no UNVERIFIED line, nothing -- which is worse than a failure.
+    (r"(?:in|of) this book|(?:en|de) este libro", "book"),
     # A NAMED book: "stands in seventeen verses OF DEUTERONOMY". Deliberately
     # LAST -- a sentence reading "nine verses of the Hebrew Bible, all nine in
     # Deuteronomy" is a claim about the BIBLE, and the wider scope must win.

@@ -334,6 +334,21 @@ easy follow-up, not done in the first pass.
      defect. Counting an enumeration stays yours.
      **Burden, measured before wiring it in:** 53 such claims across all 327 shipped
      chapters, in 22 of them, mean 2.4 in a chapter that has any.
+     ⚠ **The archive reader dropped the second half of every multi-line verse until
+     2026-09-11.** In the poetic books Mechon prints a long verse across two lines, and
+     `heb_search.chapter_verses` kept only the numbered first line — **605 continuation
+     lines** (488 in Psalms, 56 in Job, 32 in Proverbs) were invisible to every count
+     `heb_search.py` or `count_check.py` ever ran. Found because Psalm 119:176's second
+     half, *for I have not forgotten your commandments*, did not exist to the tool. A
+     sweep of all 622 built pages after the fix turned up **three shipped claims that were
+     low** — Deuteronomy 24's *ani ve-evyon* "eleven verses" (fifteen: four psalm/Job
+     hits sat on second lines) and Deuteronomy 17's *pele* "eighty-one" (eighty-six) —
+     corrected in the same change. **Two scope traps in `count_check.py`, both fixed the
+     same day:** "N verses **of** this book" was not a scope (only "in this book" was) and
+     such a claim was silently SKIPPED — no UNVERIFIED line, nothing — so three
+     Deuteronomy 26 claims went unchecked until the wording was noticed; and a claim
+     joined to another by a semicolon shares its sentence, and only the FIRST count in a
+     sentence is read. One claim per sentence.
    - **Recompute every number.** If a sentence says "two breaks" and then lists three, that
      is a shipped contradiction (it was). If it states a ratio, do the division (Numbers 7
      claimed 5× where the real figure was ~4.25×).

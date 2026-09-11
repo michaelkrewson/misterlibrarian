@@ -52,6 +52,8 @@ _SEPS = re.compile(r"[־׀׃,.;:!?()\[\] \-]+")
 # word, so the whole marker goes.
 _SECTION = re.compile(r"\{[^}]*\}")
 _HEB_VERSE = re.compile(r"^([א-ת]{1,4})\s+(.*)$")
+_ENG_VERSE = re.compile(r"^\d+\s")
+_HAS_HEB = re.compile(r"[א-ת]")
 
 
 def bare(s: str) -> str:
@@ -67,7 +69,7 @@ def chapter_verses(book: str, chapter: int) -> list[tuple[int, str]]:
     """-> [(verse_no, hebrew_text)] for one archived chapter."""
     raw = fetch(book, chapter, quiet=True)
     subdir, _fn, _url = resolve(book, chapter)
-    out, n = [], 0
+    out, n, open_heb = [], 0, False
     for line in verses(raw, subdir).split("\n"):
         line = line.strip()
         # Mechon prints the Hebrew line (numbered with a Hebrew letter) then the
@@ -75,6 +77,23 @@ def chapter_verses(book: str, chapter: int) -> list[tuple[int, str]]:
         if _HEB_VERSE.match(line):
             n += 1
             out.append((n, _HEB_VERSE.match(line).group(2)))
+            open_heb = True
+        elif _ENG_VERSE.match(line):
+            open_heb = False
+        elif open_heb and _HAS_HEB.search(line):
+            # ⚠ A CONTINUATION LINE. In the poetic books Mechon breaks a long
+            # verse across lines (a <br> before the second half, printed with no
+            # verse letter), and until 2026-09-11 everything after the break was
+            # silently dropped -- so the second half of Psalm 119:176, "for I have
+            # not forgotten your commandments", did not exist to this tool, and a
+            # count of lo shakachti came back 6 where the archive holds 7.
+            # Measured before the fix: 605 such lines across the 929 chapters --
+            # 488 in Psalms, 56 in Job, 32 in Proverbs, 7 in Ecclesiastes, and a
+            # scattering of 22 in the prose books. Only a line that follows a
+            # numbered Hebrew line with no English line in between is absorbed,
+            # so nothing else changes.
+            v, t = out[-1]
+            out[-1] = (v, t + " " + line)
     return out
 
 
