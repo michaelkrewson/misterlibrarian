@@ -257,8 +257,8 @@ def header(active=""):
       <a href="about.html"{cls('about')}>About</a>
       <a class="sib" href="https://mistertranslation.com/finance/" title="What the world's money is actually in">The Librarian's Ledger →</a>
       <a class="sib" href="https://mistertranslation.com/health/" title="Health, nutrition and medicine — one question at a time, from the studies">The Librarian's Regimen →</a>
-    <a class="sib" href="https://mistertranslation.com/notebook/" title="A commonplace book — science and technology, the world, arts and culture">The Librarian's Notebook →</a>
       <a class="sib" href="https://mistertranslation.com/notebook/" title="A commonplace book — science and technology, the world, arts and culture">The Librarian's Notebook →</a>
+      <a class="sib" href="https://mistertranslation.com/west/" title="A family history — four centuries in America, one document at a time">Eight Miles West →</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
     </div>
@@ -284,7 +284,8 @@ FOOTER = f"""<footer class="site-foot">
   <p class="sibfoot"><a href="https://mistertranslation.com/finance/">The Librarian's Ledger</a>
   — the other one, about money — <a href="https://mistertranslation.com/health/">The
   Librarian's Regimen</a>, about health — and <a href="https://mistertranslation.com/notebook/">The
-  Librarian's Notebook</a>, about everything else.</p>
+  Librarian's Notebook</a>, about everything else — and <a href="https://mistertranslation.com/west/">Eight
+  Miles West</a>, a family history.</p>
 </footer>"""
 
 

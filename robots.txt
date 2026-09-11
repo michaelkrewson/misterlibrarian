@@ -33,3 +33,7 @@ Sitemap: https://mistertranslation.com/health/sitemap.xml
 # /notebook/ -- The Librarian's Notebook (added 2026-09-11). Linked from the home
 # page's hub card like the other three blogs, and listed here as well.
 Sitemap: https://mistertranslation.com/notebook/sitemap.xml
+
+# /west/ -- Eight Miles West, the family history (added 2026-09-11). Linked from
+# the home page's hub card like the others, and listed here as well.
+Sitemap: https://mistertranslation.com/west/sitemap.xml

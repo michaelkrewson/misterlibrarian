@@ -19,6 +19,9 @@ added 2026-09-09 with three cards; the fourth 2026-09-10; the fifth 2026-09-11):
    science & technology, the world, arts & culture, and whatever else fits none of the
    other four. The one ORDINARY blog on the domain. Added 2026-09-11; see its own section
    below.
+6. **Eight Miles West** (`/west/`, `build_west.py`) — a family history published a
+   chapter at a time; a BOOK (numbered chapters in five fixed parts, read in order), not a
+   blog. Added 2026-09-11; see its own section below.
 
 **Read `README.md` first** for the mechanical how-to (build commands, how to add a chapter
 or a travel entry, publishing). It's well-maintained and this file doesn't repeat it. This
@@ -1037,3 +1040,53 @@ snapshot goes stale the moment it's written. Read the **dated tail** (newest ent
 of `project_misterlibrarian_site` and `project_misterlibrarian_methods` in the memory system
 before starting a new book, or when this file's doctrine and the actual code disagree — trust
 the code and the live site over any memory note, this file included.
+
+## Eight Miles West (`/west/`)
+
+A family history — the Croesen / Kroesen / Kroessen / Kreuso / Cruse / Krewson line's four
+centuries in America, from a cooper at Breuckelen c.1660 through Staten Island, Bucks County,
+Ohio, Iowa and the Pacific, into the twentieth century's wars and breakages — published one
+chapter at a time by `build_west.py` (standard library only), source in `source/west/`,
+output in `west/`. Added 2026-09-11 (Michael's call). Michael's own family; the research
+record behind it lives in the mstr-trader repo's private MiSTeRGenealogy (`genealogy.json`,
+171 people, 32 story write-ups) and the family's own published genealogy, Warren D. Cruise,
+*The Croesen Families of America*, Vol. I (1998), OCR'd in full in the fleet's S3
+(`blobs/GENEALOGY_BOOK_OCR/`). Written to be read on the web first and compiled into a
+KDP paperback later (plain KDP, not Select — Select's exclusivity conflicts with free web
+chapters).
+
+**It is a BOOK, not a blog — the one structural difference from the other five, and the
+reason it is its own builder rather than a Notebook section:** a narrative has an ORDER.
+Chapters are numbered in the filename (`NN-slug.html`) and read in that order inside five
+fixed PARTS (`flags` / `will` / `west` / `broke` / `keepers` — the five eras the record
+divides into on its own); the contents page IS the front page and shows all five parts from
+day one, "Not yet written" where nothing is; chapter pages carry Previous/Next in reading
+order. No tags, no tag pages, no search box, no newest-first. `date:` is the publish date
+for the feed/sitemap only.
+
+**The book's whole promise, enforced in markup:** every sentence is documented, inferred, or
+family legend, and the reader can see which. Plain cited prose = documented; `<span
+class="infer">` (italic) = worked back from an age or a gap; `<div class="doc legend">`
+(gold rule) = a story the family told, stated as a story and NEVER promoted to fact in a
+later chapter. `<div class="doc">` quotes a document verbatim with a `.cite` line — prefer
+the original's words to a paraphrase every time the original survives. `<ol
+class="sources">` is REQUIRED (the Regimen's rule; the build refuses without it).
+
+**Drafts — the Regimen's posture, kept on purpose here** even though the Notebook dropped
+drafts entirely: `draft: true` = not built; `--drafts` = local noindexed preview; no drafts
+page. The later chapters are about living people and a father who left, and those get read
+by Michael in his own voice before they get a URL. Never commit a `--drafts` build.
+
+**Spine decided 2026-09-11 (Michael to ratify on the page):** Book I opens on Elizabeth
+Cregier's baptism, Reformed Dutch Church, Manhattan, 5 July 1662 — witnesses Martin Kregier
+(Burgomaster) and Nicasius de Silla (Schout-Fiscal), her two grandfathers; two years before
+the English take the colony; she dies 1740 on a Bucks County farm. One person carries each
+era after her. Working title stays until three chapters exist.
+
+**Same X comment layer, same FormSubmit inbox (`_subject` "Eight Miles West — a reader
+wrote in"), same GoatCounter.** Mark: a compass whose needle settles west (the same SVG is
+inlined on the root hub's sixth card — change both or neither). Accent Delft blue `#4fa8dc`.
+Six cards now fill the hub's 2×3 grid, so the Notebook lost its full-width fifth-card rule.
+Sibling link added to the other four blogs' footers (and the travel mobile menu, where a
+duplicated Notebook line was fixed in passing).
+

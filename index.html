@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Mister Translation</title>
-<meta name="description" content="Five projects kept by Mr. Librarian: a fresh Bible translation, a count of the world's biggest money, notes from the road, health from the studies, a notebook."/>
+<meta name="description" content="Six projects kept by Mr. Librarian: a Bible translation, the world's biggest money, notes from the road, health from the studies, a notebook, a family history."/>
 <link rel="canonical" href="https://mistertranslation.com/"/>
 <meta property="og:site_name" content="Mister Translation"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Mister Translation"/>
-<meta property="og:description" content="Five projects kept by Mr. Librarian: a fresh Bible translation, a count of the world's biggest money, notes from the road, health from the studies, a notebook."/>
+<meta property="og:description" content="Six projects kept by Mr. Librarian: a Bible translation, the world's biggest money, notes from the road, health from the studies, a notebook, a family history."/>
 <meta property="og:image" content="https://mistertranslation.com/img/og-default.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mister Translation"/>
-<meta name="twitter:description" content="Five projects kept by Mr. Librarian: a fresh Bible translation, a count of the world's biggest money, notes from the road, health from the studies, a notebook."/>
+<meta name="twitter:description" content="Six projects kept by Mr. Librarian: a Bible translation, the world's biggest money, notes from the road, health from the studies, a notebook, a family history."/>
 <meta name="twitter:image" content="https://mistertranslation.com/img/og-default.png"/>
 <meta property="og:url" content="https://mistertranslation.com/"/>
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 46 46&#x27;&gt;&lt;circle cx=&#x27;23&#x27; cy=&#x27;23&#x27; r=&#x27;22.5&#x27; fill=&#x27;#0b1929&#x27;/&gt;&lt;rect x=&#x27;9&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;33.4&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;12.6&#x27; y=&#x27;14.5&#x27; width=&#x27;20.8&#x27; height=&#x27;17&#x27; fill=&#x27;#efe6cf&#x27;/&gt;&lt;path d=&#x27;M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z&#x27; fill=&#x27;#e8c968&#x27;/&gt;&lt;/svg&gt;"/>
@@ -116,11 +116,13 @@ h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
 .c-religion{--accent:#e8c968;--accent-glow:rgba(232,201,104,.35);--wash:rgba(232,201,104,.22)}
 .c-health{--accent:#3fd2a8;--accent-glow:rgba(63,210,168,.35);--wash:rgba(63,210,168,.22)}
 .c-notebook{--accent:#8fa3ff;--accent-glow:rgba(143,163,255,.35);--wash:rgba(143,163,255,.22)}
-/* The fifth card is the catch-all, so it sits under the four subject cards at
-   full width — "and everything else" — rather than leaving an orphan in a
-   two-column grid. */
-@media (min-width:761px){.c-notebook{grid-column:1/-1}}
+.c-west{--accent:#4fa8dc;--accent-glow:rgba(79,168,220,.35);--wash:rgba(79,168,220,.22)}
+/* Six cards fill a 2×3 grid evenly, so the Notebook no longer needs the
+   full-width row it took as the orphaned fifth card (2026-09-11). */
 
+.c-west .bmark-needle{transform-origin:33px 33px;animation:bmarkNeedle 5.2s ease-in-out infinite}
+@keyframes bmarkNeedle{0%{transform:rotate(-60deg)}45%{transform:rotate(14deg)}62%{transform:rotate(-6deg)}75%,100%{transform:rotate(0deg)}}
+@media (prefers-reduced-motion:reduce){.c-west .bmark-needle{animation:none}}
 footer.hub-foot{text-align:center;margin-top:56px;color:#7b8496;font-size:13px;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 footer.hub-foot p{margin:4px 0}
@@ -269,6 +271,28 @@ footer.hub-foot p{margin:4px 0}
     <h2>Science &amp; Technology, the World, Arts &amp; Culture</h2>
     <p>A commonplace book for everything that didn't fit the other four — the technology writing with no Bitcoin in it, the news explained rather than shouted, the occasional argument about a book or a building. Explainers over hot takes, working shown, one reader's opinions labelled as such.</p>
     <div class="go">Enter the Notebook →</div>
+  </a>
+  <a class="hcard c-west" href="west/">
+    <span class="badge"><svg viewBox="0 0 66 66" fill="none" aria-hidden="true">
+        <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#4fa8dc" stroke-width="5"/>
+        <circle cx="33" cy="33" r="21" fill="#0a111c" stroke="#4fa8dc" stroke-width="1.4" opacity=".9"/>
+        <g stroke="#9aa7bd" stroke-width="1.2" stroke-linecap="round" opacity=".8">
+          <line x1="33" y1="14" x2="33" y2="18"/><line x1="33" y1="48" x2="33" y2="52"/>
+          <line x1="14" y1="33" x2="18" y2="33"/><line x1="48" y1="33" x2="52" y2="33"/>
+        </g>
+        <text x="14.5" y="35.8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="6.5" fill="#4fa8dc" text-anchor="middle">W</text>
+        <g class="bmark-needle">
+          <polygon points="33,33 18,33 33,29.6" fill="#4fa8dc"/>
+          <polygon points="33,33 18,33 33,36.4" fill="#4fa8dc" opacity=".55"/>
+          <polygon points="33,33 48,33 33,29.6" fill="#d9e0ea" opacity=".9"/>
+          <polygon points="33,33 48,33 33,36.4" fill="#d9e0ea" opacity=".5"/>
+          <circle cx="33" cy="33" r="2.2" fill="#f2f5f9"/>
+        </g>
+      </svg></span>
+    <div class="eyebrow">Eight Miles West</div>
+    <h2>A Family History</h2>
+    <p>One family's four centuries in America, read from the documents it left behind — a cooper who landed at Breuckelen around 1660, the Dutch colony changing hands around him, Staten Island, Bucks County, Iowa, the Pacific, and the twentieth century's wars. Croesen, Kroesen, Krewson. Non-fiction, a chapter at a time.</p>
+    <div class="go">Open the book →</div>
   </a>
 </div>
 

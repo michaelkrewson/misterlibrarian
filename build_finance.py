@@ -122,6 +122,7 @@ SIBLINGS = (
     ("The Librarian Abroad", "https://mistertranslation.com/travel/"),
     ("The Librarian's Regimen", "https://mistertranslation.com/health/"),
     ("The Librarian's Notebook", "https://mistertranslation.com/notebook/"),
+    ("Eight Miles West", "https://mistertranslation.com/west/"),
 )
 
 # The same FormSubmit endpoint the travel blog posts to, so both publications

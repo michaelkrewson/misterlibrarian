@@ -125,6 +125,8 @@ SIBLINGS = (
      "Notes from the road and the table"),
     ("The Librarian's Notebook", "https://mistertranslation.com/notebook/",
      "A commonplace book — science and technology, the world, arts and culture"),
+    ("Eight Miles West", "https://mistertranslation.com/west/",
+     "A family history — four centuries in America, one document at a time"),
 )
 
 # The same FormSubmit endpoint the other two blogs post to, so every publication
