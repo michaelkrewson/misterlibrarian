@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Should Not Have Come Off Alive — Eight Miles West</title>
+<meta name="description" content="The Brouwer feud, the 1677 Staten Island patent, and Garret Croesen&#x27;s death on 7 March 1680 — &quot;he should not have come off alive.&quot; Chapter 3."/>
+<link rel="canonical" href="https://mistertranslation.com/west/should-not-have-come-off-alive.html"/>
+<link rel="alternate" type="application/rss+xml" title="Eight Miles West" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Eight Miles West"/>
+<meta property="og:title" content="Should Not Have Come Off Alive"/>
+<meta property="og:description" content="The Brouwer feud, the 1677 Staten Island patent, and Garret Croesen&#x27;s death on 7 March 1680 — &quot;he should not have come off alive.&quot; Chapter 3."/>
+<meta property="og:url" content="https://mistertranslation.com/west/should-not-have-come-off-alive.html"/>
+<meta property="article:section" content="Part I — Two Homelands, Two Flags"/>
+<meta name="author" content="Michael V. Krewson"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(79,168,220,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#4fa8dc;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#4fa8dc}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#4fa8dc;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#4fa8dc;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#4fa8dc}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#4fa8dc;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#4fa8dc;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #4fa8dc;color:#4fa8dc}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#4fa8dc}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#4fa8dc;border-bottom-color:#4fa8dc}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#4fa8dc;
+  box-shadow:0 0 0 3px rgba(79,168,220,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#4fa8dc;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#4fa8dc;font-style:italic}
+a{color:#4fa8dc}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#4fa8dc;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #4fa8dc;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #4fa8dc;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#4fa8dc;color:#4fa8dc}
+.viewbtn.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#4fa8dc;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+
+/* ── the animated mark: a compass whose needle settles west ─────────────── */
+.bmark-needle{transform-origin:33px 33px;animation:bmarkNeedle 5.2s ease-in-out infinite}
+@keyframes bmarkNeedle{
+  0%{transform:rotate(-60deg)}
+  45%{transform:rotate(14deg)}
+  62%{transform:rotate(-6deg)}
+  75%,100%{transform:rotate(0deg)}
+}
+@media (prefers-reduced-motion:reduce){.bmark-needle{animation:none}}
+
+/* The Castello Plan's fort sits at the lower left of the sheet; the shared
+   hero crop (object-position near the top) would cut it off. */
+.fronthero img{height:340px;object-position:42% 78%}
+
+.byline{margin:-6px 0 18px;color:#c3d0e0;font-size:15px;letter-spacing:.02em}
+
+/* ── contents page ──────────────────────────────────────────────────────── */
+.count{margin-top:14px;color:#7f8fa6;font-size:14px;font-style:italic}
+.count a{color:#8b9ab0}
+.part{max-width:760px;margin:44px auto 0;padding-top:26px;border-top:1px solid #1b2534}
+.part .pnum{margin:0 0 4px;color:#4fa8dc;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;font-family:ui-sans-serif,system-ui,sans-serif}
+.part h2{margin:0;font-size:27px;font-weight:400;line-height:1.2;color:#e8eef7}
+.part .pspan{margin:4px 0 0;color:#5a6b80;font-size:13px;letter-spacing:.06em;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.part .plede{margin:12px 0 0;color:#b9c6d8;font-size:15.5px}
+.part .unwritten{margin:16px 0 0;color:#5a6b80;font-size:14px;font-style:italic}
+.chapters{list-style:none;margin:18px 0 0;padding:0}
+.chapters li{border-top:1px solid #131b27}
+.chapters li:first-child{border-top:0}
+.chapters a{display:grid;grid-template-columns:2.6rem 1fr auto;gap:12px;align-items:baseline;
+  padding:12px 4px;text-decoration:none;color:inherit;border-radius:8px}
+.chapters a:hover{background:#0a111c}
+.chapters .cnum{color:#4fa8dc;font-variant-numeric:tabular-nums;font-size:15px}
+.chapters .ctitle{color:#e8eef7;font-size:17.5px}
+.chapters .cdate{color:#5a6b80;font-size:12.5px;letter-spacing:.04em;
+  font-family:ui-sans-serif,system-ui,sans-serif;text-align:right}
+@media (max-width:560px){.chapters a{grid-template-columns:2.2rem 1fr}.chapters .cdate{grid-column:2;text-align:left}}
+
+/* ── chapter page ───────────────────────────────────────────────────────── */
+.dateline{margin:-16px 0 22px;color:#93a4bd;font-size:15px;font-style:italic}
+.record{margin:0 0 26px;padding:10px 14px;border:1px solid #1b2534;border-radius:8px;
+  background:#0a111c;color:#a9b7c9;font-size:14px;line-height:1.6}
+.record .rlabel{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-right:8px}
+.entry .sources{margin:38px 0 0;padding:22px 0 0 22px;border-top:1px solid #1b2534;
+  color:#93a4bd;font-size:14px;line-height:1.6}
+.entry .sources li{margin:0 0 7px}
+.entry .sources a{color:#8b9ab0}
+/* The three registers a chapter writes in. `.doc` is a quoted document, set
+   apart; `.legend` is a family story stated as a story; `.infer` marks a
+   sentence worked back from a date or an age rather than read off a page. */
+.entry .doc{margin:26px 0;padding:14px 20px;border-left:3px solid #4fa8dc;background:#0a111c;
+  border-radius:0 10px 10px 0;color:#d6e0ee;font-size:15.5px;line-height:1.7}
+.entry .doc p{margin:0 0 10px;color:inherit;font-size:inherit}
+.entry .doc p:last-child{margin:0}
+.entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
+.entry .legend{border-left-color:#e8c968;background:#120f0a}
+.entry .infer{color:#a9b7c9;font-style:italic}
+.draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pn{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid #1b2534;
+  border-radius:10px;text-decoration:none;color:inherit;background:#0a111c}
+.pn:empty{border:0;background:transparent}
+.pn.next{text-align:right}
+.pn:hover{border-color:#4fa8dc}
+.pnl{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.pnt{color:#c3d0e0;font-size:15px}
+@media (max-width:560px){.prevnext{grid-template-columns:1fr}.pn.next{text-align:left}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#4fa8dc" stroke-width="5"/>
+  <circle cx="33" cy="33" r="21" fill="#0a111c" stroke="#4fa8dc" stroke-width="1.4" opacity=".9"/>
+  <g stroke="#9aa7bd" stroke-width="1.2" stroke-linecap="round" opacity=".8">
+    <line x1="33" y1="14" x2="33" y2="18"/><line x1="33" y1="48" x2="33" y2="52"/>
+    <line x1="14" y1="33" x2="18" y2="33"/><line x1="48" y1="33" x2="52" y2="33"/>
+  </g>
+  <text x="14.5" y="35.8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="6.5" fill="#4fa8dc" text-anchor="middle">W</text>
+  <g class="bmark-needle">
+    <polygon points="33,33 18,33 33,29.6" fill="#4fa8dc"/>
+    <polygon points="33,33 18,33 33,36.4" fill="#4fa8dc" opacity=".55"/>
+    <polygon points="33,33 48,33 33,29.6" fill="#d9e0ea" opacity=".9"/>
+    <polygon points="33,33 48,33 33,36.4" fill="#d9e0ea" opacity=".5"/>
+    <circle cx="33" cy="33" r="2.2" fill="#f2f5f9"/>
+  </g>
+</svg><span class="wm">Eight Miles <span class="em">West</span></span></a><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Contents</a><a href="about.html">About the book</a><a href="ask.html">Write in</a></nav></div></header>
+  
+  <article class="entry chapter">
+    <p class="edate"><a class="esec" href="index.html#part-flags">Part I · TWO HOMELANDS, TWO FLAGS</a> · Chapter 3</p>
+    <h1 class="etitle">Should Not Have Come Off Alive</h1>
+    <p class="dateline">Gowanus · Sunday afternoon, 31 August 1679</p>
+    <p class="record"><span class="rlabel">In the record</span> Garret Dircksen Croesen (c.1639–1680) · Neeltje Jans (c.1640–c.1690) · Adam Brouwer · Pieter Adamsen Brouwer · Pieter Jans Staats (b. 1638) · Volkert Hendricksen Bries</p>
+    
+<p>On a Sunday afternoon at the end of August 1679, a young man named Peter Brouwer walked into the constable's at Jerome's, in Breuckelen, bleeding. He said that Gerrit Croesen had assaulted and beaten him. He said that if the constable would not do him justice, he would kill Gerrit himself. Some time afterwards, when word came in that Gerrit "was very bad," he said in front of witnesses that he wished he had killed him outright [1].</p>
+
+<p>The next morning the constable, Jan Aertsen, took statements. They are short, and they survive in the papers of Governor Andros, and between them they give the last clear look at the man this family is named for, seven months before he died. The occasion, the constable wrote at the bottom of the sheet, "was going upon Gerrit Croesen's land with sacks to gather grapes" [1].</p>
+
+<h2>The miller next door</h2>
+
+<p>The Brouwers had been part of Garret's life since before he had one in America. Adam Brouwer was a soldier from Cologne who had gone out to Brazil for the West India Company in 1641, served at Fort St. Louis de Marinham, come up to New Amsterdam when that colony was lost, and married Magdalen Verdon on 21 March 1645 [2]. He and Neeltje's father, Jan Pietersen, were neighbours in New Amsterdam, moved to Breuckelen at about the same time, went into business together, and were two of the twenty-five men who founded the Breuckelen church in 1660. It was Jan Pietersen who helped Adam get permission to dig a channel through Red Hook into Gowanus Bay — which mattered, because Adam Brouwer ran the only grain mill in Breuckelen, a tide-mill on the Gowanus creek, and every farm in the village brought its wheat to him [2]. He stood as witness when Garret and Neeltje baptized their first son in July 1662. His kinsman Jacob Brouwer held the lot next to Garret's twenty-eight acres [3].</p>
+
+<p>He was also, in the words of the Brooklyn historian who went through the records two centuries later, "rather fractious and troublesome at times" — and the family's genealogist adds that to say so "is being very kind to Adam Brouwer" [4]. In February 1668 he was ordered under arrest for seditious speeches. In November of the same year the Governor had to warn him formally, on the complaint of "the inhabitants, constables, and overseers of the town," that as long as he kept the mill he must "grind for all persons, without distinction or exception, according to custom, the first come to be first served," because he had been refusing to grind for some of them "on frivolous pretences" [4]. A man who owns the only mill and picks whose bread he will grind has a great deal of power in a village of three hundred, and evidently enjoyed it.</p>
+
+<p>Some time in 1669 it came to blows between the two households. The record is torn — literally: the surviving document has holes in it — but the family's genealogist reads it, cautiously, as Garret having struck Adam's wife, "may have punched her in the nose," and Adam having assaulted Garret in return [5]. Each was fined ten pounds, payable to the other, for the damage his side had done. Neither paid. A year later the matter reached the Governor, who settled it the way a tired man settles a quarrel between children:</p>
+
+<div class="doc">
+  <p>…upon due consideration had hereupon and finding the trespass and damage on both sides to be equal, I have thought fit to order that the one do counterbalance the other, so that the said Croosen shall forgo his pretence to the ten pounds given him as the said Brower shall forgo the like sum given for his wife. Always provided that this Order do no way take off the charges each party is incident to pay for their particular suits in Courts or elsewhere. Given under my hand at Fort James in New York this 19th day of November 1670.</p>
+  <span class="cite">Order of Governor Francis Lovelace, 19 November 1670, addressed to the High Sheriff of Long Island and the Constable of Breucklyn — Christoph &amp; Christoph (eds.), New York Historical Manuscripts: English, Books of General Entries 1664–1673, p. 385, as transcribed in Cruise, p. 69 [5]. Spelling modernised; the original is damaged and the editors' brackets mark what is lost.</span>
+</div>
+
+<p>The two fines cancelled each other. The court costs did not. And the Governor's name on the order is worth noticing, because he was not Dutch.</p>
+
+<h2>Two flags, and a man who did not move</h2>
+
+<p>In August 1664, four English warships carrying six hundred men had anchored in Gravesend Bay, across the Narrows from Staten Island and a few miles down the shore from Garret's farm, and Peter Stuyvesant — who wanted to fight, and could find nobody willing to fight with him — surrendered New Netherland without a shot [6]. Four months earlier, in April, Neeltje had joined the Breuckelen church, with her husband as one witness and the village's chief magistrate, Willem van Couwenhoven, as the other; the family's genealogist reads that as a sign of how well connected the Pietersen side still was [7]. Van Couwenhoven's magistracy ended with the surrender. So did Selyns's ministry, in July; he sailed for home a month before the ships arrived [8]. New Amsterdam became New York. Breuckelen became, on English paper, Breucklyn, and then Brooklyn. Gowanus stayed Gowanus.</p>
+
+<p>Nine years later it flipped back. In August 1673 a Dutch fleet, fresh from beating the English at sea in Europe, sailed into the bay and took the whole province without much more of a fight than the English had faced, and for fifteen months the colony was New Netherland again and the city was New Orange. Martin Cregier, the old Burgomaster from chapter one, was called back into its service. Then, in November 1674, the Netherlands traded the whole of it back to England in exchange for Suriname, and it was New York for good [9]. Two flags in fourteen years. Garret Croesen was on the same twenty-eight acres under both of them, and under both of them again, and he never moved. In 1675 and 1676 the English assessors taxed him at Breuckelen, in English pounds, for one poll, two oxen, four cows, a run of young cattle, three hogs and "14 morgens land and valley" — a Dutch measure of land on an English tax roll, which is the whole condition of the place in a phrase [10].</p>
+
+<p>The family's own book, describing these years, says plainly that they were not an Indian-war story. The real bloodshed of the decade — the Esopus, where Cregier campaigned — was eighty miles north. What happened at Gowanus was smaller and closer: a change of masters that arrived by sea, twice, and altered the language of the court and the name on the tax roll, and left a Dutch cooper making barrels for whoever was buying [9].</p>
+
+<h2>Twenty-ninth of September, 1677</h2>
+
+<p>It was under the English, then, and from an English governor, that the family took its first step west. On 29 September 1677 Sir Edmund Andros granted Garret Croesen a patent for land on the north shore of Staten Island, along the Kill Van Kull:</p>
+
+<div class="doc">
+  <p>…being bounded on the west side with a small run of water which makes the partition betwixt the land belonging to the Mill and the land laid out for Colonel Lovelace's plantation … in breadth one hundred and seventeen English rod, in length into the woods two hundred thirty-four rod, containing one hundred and sixty acres and one hundred rod; as also a piece of meadow ground lying on the south-west side of John Turisen's creek … containing twelve acres … Quit rent: 2 bushels of good winter wheat in New York.</p>
+  <span class="cite">Patent to Garret Croesen, 29 September 1677, certified copy from the New York Secretary of State — as transcribed in Cruise, pp. 66–67 [11]. Spelling modernised.</span>
+</div>
+
+<p>One hundred and seventy-two acres, then, counting the meadow, on what had been the plantation of the same Governor Lovelace who had cancelled the fines seven years before. The same day, the same governor issued a patent for another 172 acres, adjoining, to Pieter Jans Staats, Neeltje's older brother [11]. The two men who had married into and been born into Jan Pietersen's family took their land side by side, and when the surveyor came round in 1693 to draw "a certain range of lots lying along the Kill Van Kull, being part of the late Governor Lovelace's estate," Garret's lot was still marked with his name, thirteen years after his death [11]. Neeltje's younger sister's husband, John Vincent, had land there too; her nephew would take more in 1680. Between them, the family's genealogist counted, the Pietersen–Staats–Croesen connection came to hold 710 acres of Staten Island [11].</p>
+
+<p>Garret never lived on it. Later writers said he "removed" there; the family's genealogist, and the researcher Lila James Roney before him in 1944, went through the tax rolls and the church lists and found him at Gowanus to the end, and said so [12]. The patent was for his sons. <span class="infer">It was also a bet — made in the fourteenth year of English rule, by a man who had been born a subject of the States General — that the English would stay, and that a Dutch family's future lay in taking their land on their terms. Of the nineteen years he appears in the records, some fourteen were lived under the English flag; the patent is the year he stopped waiting for the Dutch one to come back.</span> Two months later, on 9 December 1677, he and Neeltje baptized their last child, Annetje, at Breuckelen, with John Vincent standing as witness [13].</p>
+
+<p>The family's book, when it reaches this patent, pauses to say what the word <i>west</i> meant to this family at the start: "When the Croesen family first headed west, the journey was an eight mile boat trip from Brooklyn to Staten Island" [14]. Everything after — Bucks County, Ohio, Iowa, the Pacific — was further along the same line. But the first eight miles were across the Kill, and they were bought with two bushels of winter wheat a year.</p>
+
+<h2>The grapes</h2>
+
+<p>Then the quarrel with the Brouwers came back, in the next generation. On the last Sunday of August 1679, Adam's son Peter went onto Garret's land "with sacks to gather grapes." What was said is not recorded. What Garret did is: he beat him badly enough that Peter arrived at the constable's "all bloody." And something happened to Garret too, because by the time the witnesses were talking, the news going round was that "Gerrit was very bad." The constable's notes of the next morning:</p>
+
+<div class="doc">
+  <p>Sept. 1st 1679. The Constable (Jan Aartsen) declares that Peter Brower coming yesterday, being Sunday afternoon, to him at Jerome's, he complained that Gerrit Croesen had assaulted and beaten him, he being all bloody, and told the Constable if he would not do him justice, he would kill Gerrit.</p>
+  <p>Afterwards, Peter Brower said, when some came and told that Gerrit was very bad, that he wished that he had killed him quite. This was heard by Thomas Lamberts, Marten Ryertsen, one of the overseers, Caspar Videt and others.</p>
+  <p>Caspar Videt declares upon oath that he heard Adam Brower say, being come to the Ferryman's house, that if he had been with his son, he should not have come off alive, meaning Gerrit — that his legs should not have been able to carry him off; and he saw him push the Overseer above rudely with his hand. Martin Ryertse saith the same. Dirck the Ferryman can say to the same but unwilling.</p>
+  <p>Titus Serix declares that he heard the son say he was sorry he had not killed him.</p>
+  <p>The occasion was going upon Gerrit Croesen's land with sacks to gather grapes.</p>
+  <p>Willemtye Tyse, wife of Jan Buys the midwife, declares that she heard Adam Brower say at that time, "I am but a little man, but if I had been there Gerrit should not have come off alive."</p>
+  <p>[endorsed] Peter Brower — bound over to the Sessions at Gravesend about Gerrit Croesen.</p>
+  <span class="cite">Evidence taken by the Constable of Breuckelen, 1 September 1679 — Christoph &amp; Christoph (eds.), The Andros Papers 1679–1680, p. 139, as transcribed in Cruise, pp. 70–71 [1]. Spelling modernised.</span>
+</div>
+
+<p>It is Peter, the one who arrived bleeding, who was bound over to answer at the Gravesend sessions — which the editors of the Andros papers read to mean that there was a second encounter, of which the miller's son was suspected of being the instigator, and which is presumably how Gerrit came to be "very bad" [1]. Adam was at the ferryman's house, on the shore where the boats crossed to Manhattan, saying in front of the overseer and the ferryman and a midwife's wife that his son should have finished the job. Dirck the Ferryman "can say to the same but unwilling." Everyone in the village heard, and one woman was willing to swear to the exact words.</p>
+
+<p>Ten years earlier the same two families had been fined ten pounds apiece for hitting each other. In between, Adam had stood at the font for Garret's son and Jacob Brouwer had farmed the next lot. This is what the family's genealogist meant when he wrote that the record was "difficult to sort out": these people were not strangers who fell out. They were founders of the same church, and neighbours, and they went at each other for a decade with fists and lawsuits and, at the end, a sack of grapes.</p>
+
+<h2>7 March 1680</h2>
+
+<p>The minister who served the Dutch churches of Brooklyn, Flatbush, Flatlands and New Utrecht in these years, Casparus van Zuuren, kept a list of his communicants, town by town, from September 1677 to 1685. Under "Residing at Gouwanus" it reads:</p>
+
+<div class="doc">
+  <p>Gerrit Croesen (died 7th March 1680) and Neeltje Jan his wife.</p>
+  <span class="cite">List of old and new communicants of Brooklyn, 1677–1685, in the hand of Rev. Casparus van Zuuren, copied by Teunis G. Bergen from the Flatbush church records — Stiles, A History of the City of Brooklyn (1867), Vol. I, appendix p. 428, in Cruise, p. 73 [15].</span>
+</div>
+
+<p>That parenthesis is the only record of his death. No cause. No burial. He was about forty. The researcher who set out the family's line in the <i>New York Genealogical and Biographical Record</i> in 1944 put the two facts next to each other — bound over for an assault on 1 September 1679; died 7 March 1680 — and wrote that "one cannot help wondering whether or not his death was due to the effects of this assault" [12]. The family's genealogist, fifty years after her, wondered the same thing in print and left it there [4]. <span class="infer">So does this book. Six months is a long time to die of a beating, and a short time for a man of forty with five children and a new patent to die of anything else. "Gerrit was very bad" is the last thing anyone said about him alive, and it was said by the people who wanted him dead. It is not proof, and there will never be proof, and it is what the record leaves you with.</span></p>
+
+<h2>What was left</h2>
+
+<p>He had made a will. It named both sons as heirs to the Staten Island patent — that much is known from what happened afterwards — and it was the only copy, and it burned, in a fire nobody dated, some time before 1698. Under the English law that now governed Gowanus, a man who died without a written will was succeeded in his land by his eldest son, and Derrick was eighteen, and Derrick insisted. His brother Hendrick, who was fourteen, would spend the next twenty-nine years protesting [16]. That is a later chapter. It began the week the will burned.</p>
+
+<p>Neeltje was left with five children between eighteen and three, a house and twenty-eight acres at Gowanus, the patent across the Kill, and debts. Historians have made much of the debts; the family's genealogist thought they were overstated, because she kept the Staten Island land, "which probably would not have been possible if serious debts were involved" [17]. What she sold was the farm at Gowanus — and the record of who bought it is the kind of thing this family's history keeps doing. She sold it to Jacob Brouwer, the neighbour [17]. Seven months after her husband's death, on 10 October 1680, she was betrothed to the neighbour on the other side, Volkert Hendricksen Bries, and on 31 October — "Neeltje Jans, widow of Gerrit Croesen, both residing under the jurisdiction of Brooklyn, married at Breuckelen" — she married him [18]. A son, Hendrick Bries, was born the next year. Volkert would eventually take him to New Jersey and then to Bucks County, where he became a neighbour to the Croesens all over again, and a deacon of their church [18].</p>
+
+<p>None of that is a judgment on her. A widow with five children and a farm she could not work alone did, in 1680, what widows did, and did it with the man whose fence she could see from her door. But the family's founder had been in the ground seven months when his farm went to the family that had wished him dead and his wife went to the house next door, and the two facts sit in the record side by side, and the record does not comment.</p>
+
+<p>Derrick, the eldest, "a young man of 18," was by then making the crossing to Staten Island "at least part time," the family's book says, to work the patent his father had never seen [14]. Eight miles by boat. He could not write his name. He had, since March, been the head of the family, and since the fire, its sole heir in law. The girl with the Burgomaster and the Fiscal for grandfathers was seventeen, living in her stepfather's household — in Manhattan, the marriage record four years later implies — and did not know him yet.</p>
+
+<h2>The ground it happened on</h2>
+
+<p><span class="infer">As in the last chapter: none of this is a document about Garret, and all of it is what the colony's own describers said about the places named above.</span> The ferry where Adam Brouwer made his threat was the Brooklyn ferry, the one crossing between Long Island and Manhattan, a landing on the East River shore below the village where the ferryman kept a house and a tavern and where everything and everyone going to the city passed through — which is why the constable's witnesses include an overseer, a ferryman, and a midwife's wife: it was the one place in Breuckelen where a man could count on an audience [19]. The grapes were real. Adriaen van der Donck, describing the colony in 1655, wrote that wild vines grew everywhere in New Netherland, climbing the trees along every creek, and that the settlers had begun planting European stock and training it on arbours; a grape arbour at Gowanus in the last week of August was a crop coming ripe, and a young man arriving with sacks was not there to taste it [20]. The Staten Island patent was on the Kill Van Kull, the tidal strait between the island's north shore and New Jersey, a mile wide, where Lovelace had laid out a plantation and where the family's land ran from the water "into the woods two hundred thirty-four rod" — about three-quarters of a mile of forest behind a strip of shore [11]. The mill "belonging to" the land next to it was a tide-mill like Brouwer's. It was, in 1677, a place where two Dutch travellers walking through two years later would find houses standing empty and the ground "worn out and barren" in the old village and the settlers gone to better land on the island's interior — a shoreline being abandoned for the woods behind it, which is where the family's sons would build [21]. That is the next part of the story.</p>
+
+<ol class="sources">
+  <li>The constable's evidence of 1 September 1679: Peter R. Christoph and Florence A. Christoph (eds.), <i>The Andros Papers, 1679–1680</i> (New York Historical Manuscripts), p. 139, transcribed in full with the editors' note in Warren D. Cruise, <i>The Croesen Families of America</i>, Vol. I (Gateway Press, Baltimore, 1998), pp. 70–71. As in the preceding chapters, the colonial records are read as Cruise transcribed them; spelling is modernised in the quotations above and the original spelling is in Cruise.</li>
+  <li>Adam Brouwer — Cologne, Brazil, Fort St. Louis de Marinham, the 1645 marriage, the mill, the Red Hook channel, the partnership with Jan Pietersen and the founding of the church: Cruise, pp. 62, 71–72, citing Hoffman, "Brouwer Beginnings," <i>The American Genealogist</i> 23 (April 1947), p. 194.</li>
+  <li>Adam Brouwer as witness at Dirck's baptism, 23 July 1662; Jacob Brouwer as Garret's neighbour: Cruise, pp. 62, 154, and the 1675–76 tax rolls (Cruise, pp. 64–65).</li>
+  <li>"Fractious and troublesome," the arrest for seditious speeches (February 1667/8), Governor Lovelace's order of 12 November 1668 that the mill grind "first come to be first served," and the genealogist's comment: Stiles, <i>A History of the City of Brooklyn</i> (1867), Vol. I, pp. 156–157, quoted in Cruise, pp. 72–73. Stiles's dating of the 1679 assault to 1669 and his attribution of it to Adam rather than Peter are corrected by Cruise on p. 73.</li>
+  <li>The 1669 affray and the Governor's order of 19 November 1670 cancelling the two ten-pound fines: Christoph &amp; Christoph (eds.), <i>New York Historical Manuscripts: English, Books of General Entries of the Colony of New York, 1664–1673</i>, p. 385, in Cruise, p. 69. Cruise's reading of the damaged text ("may have punched her in the nose") is his, and is given here as his.</li>
+  <li>The English ships in Gravesend Bay, August 1664, and the surrender: Cruise, p. 92. The signatories to the capitulation are in the first chapter.</li>
+  <li>Neeltje's admission to the church, 9 April 1664, with Willem Gerritsen van Couwenhoven, magistrate 1661–64, as witness: <i>First Book of Records</i>, p. 222, in Cruise, p. 63.</li>
+  <li>Selyns's departure in July 1664: Cruise, p. 61.</li>
+  <li>The Dutch reconquest of 1673, the fifteen months of New Orange, the retrocession of 1674 and the Suriname exchange: Cruise, pp. 94, 214; the place-names swinging with the flag, Cruise, p. 4; "not an Indian-war story," Cruise, pp. 28–29.</li>
+  <li>The Breuckelen assessment rolls of 1675 and 1676: Stiles, Vol. I, p. 99, in Cruise, pp. 64–65.</li>
+  <li>The patent of 29 September 1677, the 1693 survey by Augustine Graham "pursuant to a warrant bearing date the 25th of July 1693," Pieter Jans Staats's patent of the same day, John Vincent's land, and the family's 710 acres: Cruise, pp. 66–67, from the certified copy in the New York Secretary of State's office (New York Colonial Manuscripts, Land Papers, Vol. II, p. 216) and pp. 144, 341.</li>
+  <li>That Garret never removed to Staten Island, against the older writers who said he did: Lila James Roney, "The Kroesen-Croesen Family of Staten Island and Bucks County, Pennsylvania," <i>New York Genealogical and Biographical Record</i> 75 (July 1944), reprinted in Cruise, p. 75, with Cruise's agreement at pp. 68, 75; her sentence "one cannot help wondering whether or not his death was due to the effects of this assault" is on the same page.</li>
+  <li>Annetje's baptism, 9 December 1677, witnesses Annetje Jans and Jan Van Cent (John Vincent): <i>First Book of Records</i>, p. 116, in Cruise, p. 68.</li>
+  <li>"An eight mile boat trip from Brooklyn to Staten Island," and Derrick at eighteen "probably living there, at least part time": Cruise, p. 81.</li>
+  <li>The Van Zuuren communicant list: Stiles, Vol. I, appendix p. 428, in Cruise, p. 73.</li>
+  <li>The burned will, the English rule of primogeniture, Hendrick's petition of 1698, the survey of 1700 and the sale of 1709: Cruise, pp. 47, 74, 319; the "twenty-nine years" is the span from 1680 to 1709.</li>
+  <li>The debts, the sale of the Gowanus farm to Jacob Brouwer in 1680, and the retention of the Staten Island patent: Cruise, pp. 47, 154–155.</li>
+  <li>Neeltje's betrothal (10 October 1680) and marriage (31 October 1680) to Volkert Hendricksen Bries, "widow of Gerrit Croesen"; Hendrick Bries born 1681 and his later life in New Jersey and Bucks County: Cruise, p. 155, citing Roney (1944), p. 98, and the <i>Year Book of the Holland Society of New York</i>, 1898, p. 89.</li>
+  <li>The Brooklyn ferry as the one crossing and its ferryman's house: Stiles, Vol. I, on the ferry; the constable's evidence itself places Adam Brouwer's words "at the Ferryman's house."</li>
+  <li>Adriaen van der Donck, <i>A Description of New Netherland</i> (1655), on the wild vines and the settlers' planted grapes — public domain, in modern translation (Goedhuys, ed. Gehring &amp; Starna, 2008).</li>
+  <li>The condition of the Staten Island shore in 1679–80 — empty houses, "worn out and barren" ground, settlers moving inland: Jasper Dankers and Peter Sluyter, <i>Journal of a Voyage to New York, 1679–80</i>, reprinted in part in Cruise, pp. 102–107, and the subject of a later chapter.</li>
+</ol>
+
+  </article>
+  <nav class="prevnext"><a class="pn prev" href="the-tree-thief-of-breuckelen.html"><span class="pnl">← Previous</span><span class="pnt">2 · The Tree Thief of Breuckelen</span></a><a class="pn next" href="index.html"><span class="pnl">Contents</span><span class="pnt">The next chapter isn't written yet</span></a></nav>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Should%20Not%20Have%20Come%20Off%20Alive%3A%0A%0Ahttps%3A//mistertranslation.com/west/should-not-have-come-off-alive.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/west/should-not-have-come-off-alive.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+<footer>Eight Miles West · <a href="about.html">About the book</a> · <a href="ask.html">Write in</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <span class="hits" id="hits-west-should-not-have-come-off-alive-html">👁 <span id="hits-west-should-not-have-come-off-alive-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fwest%2Fshould-not-have-come-off-alive.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-west-should-not-have-come-off-alive-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-west-should-not-have-come-off-alive-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-west-should-not-have-come-off-alive-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 Michael V. Krewson. A work of family history published for interest. Every chapter says which of its statements rest on a document, which are inferred, and which are family legend; documents are cited so they can be checked, and may be misread, superseded or simply wrong. Living people are written about with their knowledge. Nothing here is professional advice of any kind, genealogical or otherwise. Opinions are the author's own.</p></footer>
+</div>
+</body>
+</html>
