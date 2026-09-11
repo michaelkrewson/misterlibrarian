@@ -6,12 +6,12 @@
         font-size="20" fill="#e8dfd2">Who holds what</text>
 
   <!-- a dashed enclosure around everything that is one operator today -->
-  <rect x="362" y="70" width="508" height="392" rx="16" fill="none" stroke="#e8865c" stroke-width="1.5" stroke-dasharray="6 5"/>
-  <text x="616" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+  <rect x="292" y="70" width="593" height="392" rx="16" fill="none" stroke="#e8865c" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="588" y="62" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-size="13" fill="#e8865c" font-style="italic">today, everything inside the dashed line is run by the same one person</text>
 
   <!-- YOUR PHONE -->
-  <g transform="translate(160,150)">
+  <g transform="translate(130,150)">
     <circle r="58" fill="#0d1520" stroke="#e8865c" stroke-width="2.5"/>
     <rect x="-16" y="-26" width="32" height="52" rx="6" fill="none" stroke="#e8dfd2" stroke-width="2.2"/>
     <circle cx="0" cy="18" r="2.6" fill="#e8dfd2"/>
@@ -21,21 +21,21 @@
           font-size="14" fill="#94a3b8" font-style="italic">a browser tab, really</text>
   </g>
   <g font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#e8dfd2">
-    <text x="160" y="310" text-anchor="middle">the 12 words</text>
-    <text x="160" y="336" text-anchor="middle">the channel state</text>
-    <text x="160" y="362" text-anchor="middle">the payment secrets</text>
-    <text x="160" y="388" text-anchor="middle">a passphrase lock on all of it</text>
+    <text x="130" y="310" text-anchor="middle">the 12 words</text>
+    <text x="130" y="336" text-anchor="middle">the channel state</text>
+    <text x="130" y="362" text-anchor="middle">the payment secrets</text>
+    <text x="130" y="388" text-anchor="middle">a passphrase lock on all of it</text>
   </g>
-  <text x="160" y="420" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+  <text x="130" y="420" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-size="13" fill="#94a3b8" font-style="italic">none of this ever leaves</text>
 
   <!-- channel line between phone and LSP -->
-  <line x1="222" y1="150" x2="392" y2="150" stroke="#e8c968" stroke-width="3"/>
-  <text x="307" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+  <line x1="188" y1="150" x2="412" y2="150" stroke="#e8c968" stroke-width="3"/>
+  <text x="244" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-size="13" fill="#e8c968">your channel</text>
 
   <!-- THE LSP -->
-  <g transform="translate(450,150)">
+  <g transform="translate(470,150)">
     <circle r="58" fill="#0d1520" stroke="#e8c968" stroke-width="2.5"/>
     <rect x="-20" y="-24" width="40" height="15" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
     <rect x="-20" y="-6" width="40" height="15" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
@@ -47,33 +47,33 @@
           font-size="14" fill="#94a3b8" font-style="italic">a Lightning node that stays awake</text>
   </g>
   <g font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#e8dfd2">
-    <text x="450" y="310" text-anchor="middle">the other side of your channel</text>
-    <text x="450" y="336" text-anchor="middle">opens it on your first payment in</text>
-    <text x="450" y="362" text-anchor="middle">holds a payment while you sleep —</text>
-    <text x="450" y="384" text-anchor="middle" fill="#e8c968">under a lock only your phone opens</text>
-    <text x="450" y="410" text-anchor="middle">closes a silent channel after 60 days</text>
+    <text x="470" y="310" text-anchor="middle">the other side of your channel</text>
+    <text x="470" y="336" text-anchor="middle">opens it on your first payment in</text>
+    <text x="470" y="362" text-anchor="middle">holds a payment while you sleep —</text>
+    <text x="470" y="384" text-anchor="middle" fill="#e8c968">under a lock only your phone opens</text>
+    <text x="470" y="410" text-anchor="middle">closes a silent channel after 60 days</text>
   </g>
-  <text x="450" y="440" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+  <text x="470" y="440" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-size="13" fill="#94a3b8" font-style="italic">sees the amounts. cannot redirect a sat.</text>
 
   <!-- REGISTRY + BACKUP (stacked, right) -->
-  <g transform="translate(740,118)">
+  <g transform="translate(748,118)">
     <rect x="-100" y="-30" width="200" height="60" rx="10" fill="#0d1520" stroke="#a3b378" stroke-width="2"/>
     <text x="0" y="-6" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">The registry</text>
     <text x="0" y="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#94a3b8" font-style="italic">a signed list of LSPs. that's all.</text>
   </g>
-  <g transform="translate(740,208)">
+  <g transform="translate(748,208)">
     <rect x="-100" y="-30" width="200" height="60" rx="10" fill="#0d1520" stroke="#a3b378" stroke-width="2"/>
     <text x="0" y="-6" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#e8dfd2">The backup host</text>
     <text x="0" y="17" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#94a3b8" font-style="italic">a sealed blob it cannot read</text>
   </g>
   <g font-family="Georgia, 'Times New Roman', serif" font-size="15" fill="#e8dfd2">
-    <text x="740" y="310" text-anchor="middle">wallets pick an LSP from the list</text>
-    <text x="740" y="336" text-anchor="middle">and can switch to another</text>
-    <text x="740" y="362" text-anchor="middle">the blob restores your channels</text>
-    <text x="740" y="388" text-anchor="middle">on a new phone, with the words</text>
+    <text x="748" y="310" text-anchor="middle">wallets pick an LSP from the list</text>
+    <text x="748" y="336" text-anchor="middle">and can switch to another</text>
+    <text x="748" y="362" text-anchor="middle">the blob restores your channels</text>
+    <text x="748" y="388" text-anchor="middle">on a new phone, with the words</text>
   </g>
-  <text x="740" y="420" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+  <text x="748" y="420" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
         font-size="13" fill="#94a3b8" font-style="italic">anyone can run either one</text>
 
   <!-- footer -->
