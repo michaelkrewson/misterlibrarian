@@ -3705,7 +3705,9 @@ DICTIONARY = [
      ("Deuteronomy", 21, 14)),
     ("ashaq", "ashaq", "עָשַׁק", "ashaq",
      "TO OPPRESS, defraud, extort — to keep back from a person what is owed to him, or to take by force what "
-     "is his. Its home in the law is wages: <a href=\"leviticus-19.html#v19-13\">Leviticus 19:13</a>, <em>you "
+     "is his. In the Torah it is first a wrong against a fellow's property, the extortion a guilt offering must repay "
+     "at <a href=\"leviticus-5.html#v5-21\">Leviticus 5:21–23</a> (6:2–4 in the English shelf), and then, twice, a "
+     "wrong against a hired man's wages: <a href=\"leviticus-19.html#v19-13\">Leviticus 19:13</a>, <em>you "
      "shall not oppress your neighbour… the wages of a hired worker shall not remain with you until "
      "morning</em>, and <a href=\"deuteronomy-24.html#v24-14\">Deuteronomy 24:14</a>, <em>you shall not oppress "
      "a hired man who is poor and needy</em>. <span data-heb=\"תעשק שכיר\">The phrase <em>oppress a hired "
@@ -3759,14 +3761,16 @@ DICTIONARY = [
      ("Deuteronomy", 24, 17)),
     ("olel", "olel", "עוֹלֵל", "olel",
      "TO GLEAN a vineyard — to go back over the vines after the vintage for what the pickers left; the noun "
-     "<em>olelot</em> is the gleanings themselves. <span data-heb=\"תעולל\">As a verb it stands in <strong>two "
-     "verses</strong> of the Hebrew Bible</span>, <a href=\"leviticus-19.html#v19-10\">Leviticus 19:10</a> and "
+     "<em>olelot</em> is the gleanings themselves. <span data-heb=\"תעולל\">In the Torah the verb stands in "
+     "<strong>two verses</strong></span>, <a href=\"leviticus-19.html#v19-10\">Leviticus 19:10</a> and "
      "<a href=\"deuteronomy-24.html#v24-21\">Deuteronomy 24:21</a>, both forbidding the owner to do it so that "
-     "the poor can. The noun is the prophets' image for a remnant: <a href=\"obadiah-1.html#v5\">Obadiah "
+     "the poor can; outside it Jeremiah 6:9 has the remnant of Israel <em>gleaned as a vine</em>, and Judges 20:45 "
+     "turns the verb on men, five thousand Benjaminites <em>gleaned on the highways</em>. The noun is the prophets' "
+     "image for a remnant: <a href=\"obadiah-1.html#v5\">Obadiah "
      "1:5</a>, <em>if grape-gatherers came to you, would they not leave gleanings?</em>; Isaiah 17:6, "
      "<em>gleanings left, as when an olive tree is beaten, two or three berries at the top of the topmost "
-     "bough</em>; Micah 7:1, <em>like the gleanings of the vintage, no cluster to eat</em>; Jeremiah 6:9, "
-     "<em>they shall glean the remnant of Israel as a vine</em> (none yet on these pages). ⚠ The same "
+     "bough</em>; Micah 7:1, <em>like the gleanings of the vintage, no cluster to eat</em> (none yet on these "
+     "pages). ⚠ The same "
      "consonants spell <em>olal</em>, a small child (Psalm 8:3, Lamentations 2:11), an unrelated word — read "
      "the hits. Spanish has the exact verb, <em>rebuscar</em>, and the <span class=\"tag t-rv\">RV 1909</span> "
      "and <span class=\"tag t-rv60\">RV60</span> use it; the <span class=\"tag t-kjv\">KJV</span> prints 'glean', "
@@ -10449,7 +10453,7 @@ CHRON_ERAS = [
 
 CHRON_CHAPTERS = {
     "deut24": dict(era="exodus",
-        when="Nine short laws, cut apart by ten Masoretic paragraph breaks &mdash; after vv4, 6, 7, 9, 13, 15, 16, "
+        when="Ten short laws, cut apart by ten Masoretic paragraph breaks &mdash; after vv4, 6, 7, 9, 13, 15, 16, "
              "18, 19 and 22, every one of them the lighter <em>setumah</em>. The Torah&rsquo;s one law of divorce "
              "opens it, a four-verse sentence that commands nothing until its last clause: a wife sent away with a "
              "<em>certificate of severance</em> and married to another may never be taken back by the first husband. "
@@ -25399,7 +25403,10 @@ DICTIONARY_ES["hitamer"] = ("hit'amer",
 
 DICTIONARY_ES["ashaq"] = ("ashaq",
     "OPRIMIR, defraudar, extorsionar —retenerle a una persona lo que se le debe, o quitarle por la fuerza lo "
-    "que es suyo. Su casa en la ley es el salario: <a href=\"leviticus-19.es.html#v19-13\">Levítico 19:13</a>, "
+    "que es suyo. En la Torá es primero un agravio contra los bienes de un compañero, la extorsión que una ofrenda "
+    "por la culpa debe restituir en <a href=\"leviticus-5.es.html#v5-21\">Levítico 5:21-23</a> (6:2-4 en el estante "
+    "inglés), y después, dos veces, un agravio contra el salario de un jornalero: <a "
+    "href=\"leviticus-19.es.html#v19-13\">Levítico 19:13</a>, "
     "<em>no oprimirás a tu prójimo… no retendrás el salario del jornalero hasta la mañana</em>, y <a "
     "href=\"deuteronomy-24.es.html#v24-14\">Deuteronomio 24:14</a>, <em>no oprimirás al jornalero pobre y "
     "menesteroso</em>. <span data-heb=\"תעשק שכיר\">La expresión <em>oprimir al jornalero</em> está en "
@@ -25454,14 +25461,16 @@ DICTIONARY_ES["almanah"] = ("almaná",
 
 DICTIONARY_ES["olel"] = ("olel",
     "REBUSCAR una viña —volver sobre las vides después de la vendimia por lo que los vendimiadores dejaron; "
-    "el sustantivo <em>olelot</em> es el rebusco mismo. <span data-heb=\"תעולל\">Como verbo está en <strong>dos "
-    "versículos</strong> de la Biblia hebrea</span>, <a href=\"leviticus-19.es.html#v19-10\">Levítico 19:10</a> "
+    "el sustantivo <em>olelot</em> es el rebusco mismo. <span data-heb=\"תעולל\">En la Torá el verbo está en "
+    "<strong>dos versículos</strong></span>, <a href=\"leviticus-19.es.html#v19-10\">Levítico 19:10</a> "
     "y <a href=\"deuteronomy-24.es.html#v24-21\">Deuteronomio 24:21</a>, los dos prohibiéndoselo al dueño para "
-    "que puedan hacerlo los pobres. El sustantivo es la imagen de los profetas para un resto: <a "
+    "que puedan hacerlo los pobres; fuera de ella Jeremías 6:9 tiene al resto de Israel <em>rebuscado como una "
+    "vid</em>, y Jueces 20:45 vuelve el verbo contra hombres, cinco mil benjamitas <em>rebuscados por los "
+    "caminos</em>. El sustantivo es la imagen de los profetas para un resto: <a "
     "href=\"obadiah-1.es.html#v5\">Abdías 1:5</a>, <em>si vinieran a ti vendimiadores, ¿no dejarían "
     "rebuscos?</em>; Isaías 17:6, <em>quedarán rebuscos, como cuando se varea un olivo, dos o tres aceitunas "
     "en la punta de la rama más alta</em>; Miqueas 7:1, <em>como los rebuscos de la vendimia, sin racimo que "
-    "comer</em>; Jeremías 6:9, <em>rebuscarán como una vid el resto de Israel</em> (ninguno todavía en estas "
+    "comer</em> (ninguno todavía en estas "
     "páginas). ⚠ Las mismas consonantes escriben <em>olal</em>, un niño pequeño (Salmo 8:3, Lamentaciones "
     "2:11), una palabra sin relación —hay que leer los resultados. El castellano tiene el verbo exacto, "
     "<em>rebuscar</em>, y la <span class=\"tag t-rv\">RV 1909</span> y la <span class=\"tag t-rv60\">RV60</span> "
