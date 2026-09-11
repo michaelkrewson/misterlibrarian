@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Timeline of twenty-four trading-strategy retirements between June 17 and September 1, 2026, on a 95-day project. Each strategy is a dot on the date it was retired, coloured by cause: six for no measured edge, five because the evidence did not survive scrutiny, two as unmeasurable at their firing rate, four as costing more than they could earn, four as beaten by a simpler sibling, three for no counterparty, wrong weather or a judgement call. Two, Bipolar and Stretch, traded real money. Three survivors, Arbitrageur, the Investor vault and CryptoTrend, stand at the right edge.">
+<rect width="900" height="700" fill="#0a0f1a"/>
+<text x="450.0" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">Twenty-four retirements in ninety-five days</text>
+<text x="450.0" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#94a3b8" font-style="italic">one dot per strategy, on the day it was switched off · June 8 – September 11, 2026</text>
+<line x1="237.1" y1="78" x2="237.1" y2="568.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="241.1" y="584.0" font-family="Georgia, serif" font-size="14" fill="#94a3b8">July</text>
+<line x1="462.2" y1="78" x2="462.2" y2="568.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="466.2" y="584.0" font-family="Georgia, serif" font-size="14" fill="#94a3b8">August</text>
+<line x1="687.4" y1="78" x2="687.4" y2="568.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="691.4" y="584.0" font-family="Georgia, serif" font-size="14" fill="#94a3b8">September</text>
+<line x1="70.0" y1="78" x2="70.0" y2="568.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="74.0" y="584.0" font-family="Georgia, serif" font-size="14" fill="#94a3b8">June 8 · first commit</text>
+<line x1="70" y1="568.0" x2="820" y2="568.0" stroke="#94a3b8" stroke-width="1"/>
+<circle cx="135.4" cy="96.0" r="5.5" fill="#e8865c"/>
+<text x="147.4" y="101.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">HourlyScalper</text>
+<circle cx="135.4" cy="115.5" r="5.5" fill="#e8865c"/>
+<text x="147.4" y="120.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Overnight</text>
+<circle cx="309.7" cy="135.0" r="5.5" fill="#e8c968"/>
+<text x="321.7" y="140.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">DejaVu</text>
+<circle cx="309.7" cy="154.5" r="5.5" fill="#e8c968"/>
+<text x="321.7" y="159.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">MACD</text>
+<circle cx="316.9" cy="174.0" r="5.5" fill="#7fb3d5"/>
+<text x="328.9" y="179.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Seeder</text>
+<circle cx="331.5" cy="193.5" r="5.5" fill="#e8865c"/>
+<text x="343.5" y="198.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Mosaic</text>
+<circle cx="331.5" cy="213.0" r="5.5" fill="#a3b378"/>
+<text x="343.5" y="218.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Supertrend</text>
+<circle cx="331.5" cy="232.5" r="5.5" fill="#e8865c"/>
+<text x="343.5" y="237.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Ichimoku bot (the original)</text>
+<circle cx="353.3" cy="252.0" r="5.5" fill="#e8865c"/>
+<text x="365.3" y="257.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Sandbox</text>
+<circle cx="353.3" cy="271.5" r="5.5" fill="#94a3b8"/>
+<text x="365.3" y="276.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Bitcoin DCA</text>
+<circle cx="382.3" cy="291.0" r="5.5" fill="#7fb3d5"/>
+<text x="394.3" y="296.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Sentry</text>
+<circle cx="389.6" cy="310.5" r="5.5" fill="#a3b378"/>
+<text x="401.6" y="315.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Cascade</text>
+<circle cx="505.8" cy="330.0" r="5.5" fill="#7fb3d5"/>
+<text x="517.8" y="335.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Suspension</text>
+<circle cx="542.1" cy="349.5" r="5.5" fill="#94a3b8"/>
+<text x="554.1" y="354.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Schizo</text>
+<circle cx="542.1" cy="369.0" r="5.5" fill="#94a3b8"/>
+<text x="554.1" y="374.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Chaser</text>
+<circle cx="542.1" cy="388.5" r="5.5" fill="#94a3b8"/>
+<text x="554.1" y="393.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Crude</text>
+<circle cx="592.9" cy="408.0" r="5.5" fill="#c9a0dc"/>
+<text x="604.9" y="413.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Sandbox2</text>
+<circle cx="607.5" cy="427.5" r="9" fill="none" stroke="#e8dfd2" stroke-width="1.5"/>
+<circle cx="607.5" cy="427.5" r="5.5" fill="#e8865c"/>
+<text x="619.5" y="432.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Bipolar · real money</text>
+<circle cx="607.5" cy="447.0" r="5.5" fill="#c9a0dc"/>
+<text x="619.5" y="452.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Phoenix</text>
+<circle cx="636.5" cy="466.5" r="5.5" fill="#c9a0dc"/>
+<text x="648.5" y="471.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Pendulum</text>
+<circle cx="651.1" cy="486.0" r="5.5" fill="#a3b378"/>
+<text x="637.1" y="491.0" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Smart</text>
+<circle cx="680.1" cy="505.5" r="5.5" fill="#c9a0dc"/>
+<text x="666.1" y="510.5" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Fade</text>
+<circle cx="680.1" cy="525.0" r="5.5" fill="#c9a0dc"/>
+<text x="666.1" y="530.0" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">FadeShadow</text>
+<circle cx="687.4" cy="544.5" r="9" fill="none" stroke="#e8dfd2" stroke-width="1.5"/>
+<circle cx="687.4" cy="544.5" r="5.5" fill="#a3b378"/>
+<text x="673.4" y="549.5" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Stretch · real money</text>
+<line x1="760.0" y1="78" x2="760.0" y2="568.0" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="760.0" y="76.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8" font-style="italic">today</text>
+<circle cx="760.0" cy="505.5" r="5.5" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+<text x="772.0" y="510.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Arbitrageur</text>
+<circle cx="760.0" cy="525.0" r="5.5" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+<text x="772.0" y="530.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Investor vault</text>
+<circle cx="760.0" cy="544.5" r="5.5" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+<text x="772.0" y="549.5" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">CryptoTrend</text>
+<text x="772.0" y="491.0" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8" font-style="italic">real money:</text>
+<text x="772.0" y="476.0" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8" font-style="italic">still running,</text>
+<circle cx="80" cy="608.0" r="5.5" fill="#e8865c"/>
+<text x="92" y="612.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">No edge — measured <tspan fill="#94a3b8">(6)</tspan></text>
+<circle cx="500" cy="608.0" r="5.5" fill="#c9a0dc"/>
+<text x="512" y="612.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">The evidence didn't survive scrutiny <tspan fill="#94a3b8">(5)</tspan></text>
+<circle cx="80" cy="630.0" r="5.5" fill="#e8c968"/>
+<text x="92" y="634.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Unmeasurable at its firing rate <tspan fill="#94a3b8">(2)</tspan></text>
+<circle cx="500" cy="630.0" r="5.5" fill="#94a3b8"/>
+<text x="512" y="634.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Cost more than it could earn <tspan fill="#94a3b8">(4)</tspan></text>
+<circle cx="80" cy="652.0" r="5.5" fill="#a3b378"/>
+<text x="92" y="656.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">Beaten by a simpler sibling <tspan fill="#94a3b8">(4)</tspan></text>
+<circle cx="500" cy="652.0" r="5.5" fill="#7fb3d5"/>
+<text x="512" y="656.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">No counterparty, wrong weather, or a call <tspan fill="#94a3b8">(3)</tspan></text>
+<circle cx="80" cy="674.0" r="9" fill="none" stroke="#e8dfd2" stroke-width="1.5"/>
+<text x="92" y="678.0" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2">ring = it traded real money before it was retired</text>
+</svg>
