@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The Voorlezer&#x27;s Hand — Eight Miles West</title>
+<meta name="description" content="Hendrick Kroesen, first Voorlezer of Staten Island, found by his own hand in the 1698 baptismal book; his brother Derrick; the burned will. Chapter 6."/>
+<link rel="canonical" href="https://mistertranslation.com/west/the-voorlezers-hand.html"/>
+<link rel="alternate" type="application/rss+xml" title="Eight Miles West" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="Eight Miles West"/>
+<meta property="og:title" content="The Voorlezer&#x27;s Hand"/>
+<meta property="og:description" content="Hendrick Kroesen, first Voorlezer of Staten Island, found by his own hand in the 1698 baptismal book; his brother Derrick; the burned will. Chapter 6."/>
+<meta property="og:url" content="https://mistertranslation.com/west/the-voorlezers-hand.html"/>
+<meta property="article:section" content="Part I — Two Homelands, Two Flags"/>
+<meta name="author" content="Michael V. Krewson"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(79,168,220,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#4fa8dc;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#4fa8dc}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#4fa8dc;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#4fa8dc;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#4fa8dc}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#4fa8dc;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#4fa8dc;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #4fa8dc;color:#4fa8dc}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#4fa8dc}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#4fa8dc;border-bottom-color:#4fa8dc}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#4fa8dc;
+  box-shadow:0 0 0 3px rgba(79,168,220,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#4fa8dc;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#4fa8dc;font-style:italic}
+a{color:#4fa8dc}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#4fa8dc;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #4fa8dc;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #4fa8dc;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#4fa8dc;color:#4fa8dc}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#4fa8dc;color:#4fa8dc}
+.viewbtn.on{background:#4fa8dc;border-color:#4fa8dc;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#4fa8dc;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+
+/* ── the animated mark: a compass whose needle settles west ─────────────── */
+.bmark-needle{transform-origin:33px 33px;animation:bmarkNeedle 5.2s ease-in-out infinite}
+@keyframes bmarkNeedle{
+  0%{transform:rotate(-60deg)}
+  45%{transform:rotate(14deg)}
+  62%{transform:rotate(-6deg)}
+  75%,100%{transform:rotate(0deg)}
+}
+@media (prefers-reduced-motion:reduce){.bmark-needle{animation:none}}
+
+/* The Castello Plan's fort sits at the lower left of the sheet; the shared
+   hero crop (object-position near the top) would cut it off. */
+.fronthero img{height:340px;object-position:42% 78%}
+
+.byline{margin:-6px 0 18px;color:#c3d0e0;font-size:15px;letter-spacing:.02em}
+
+/* ── epigraph: Uncle Al's sentence, the book's thesis ─────────────────── */
+.epigraph{max-width:640px;margin:48px auto 8px;padding:0;border:0;text-align:center}
+.epigraph p{margin:0;color:#e8eef7;font-size:19px;line-height:1.6;font-style:italic}
+.epigraph footer{margin:12px 0 0;padding:0;border:0;color:#7f8fa6;font-size:13px;font-style:normal;
+  font-family:ui-sans-serif,system-ui,sans-serif;letter-spacing:.04em;text-align:center}
+
+/* ── contents page ──────────────────────────────────────────────────────── */
+.count{margin-top:14px;color:#7f8fa6;font-size:14px;font-style:italic}
+.count a{color:#8b9ab0}
+.part{max-width:760px;margin:44px auto 0;padding-top:26px;border-top:1px solid #1b2534}
+.part .pnum{margin:0 0 4px;color:#4fa8dc;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;font-family:ui-sans-serif,system-ui,sans-serif}
+.part h2{margin:0;font-size:27px;font-weight:400;line-height:1.2;color:#e8eef7}
+.part .pspan{margin:4px 0 0;color:#5a6b80;font-size:13px;letter-spacing:.06em;
+  font-family:ui-sans-serif,system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.part .plede{margin:12px 0 0;color:#b9c6d8;font-size:15.5px}
+.part .unwritten{margin:16px 0 0;color:#5a6b80;font-size:14px;font-style:italic}
+.chapters{list-style:none;margin:18px 0 0;padding:0}
+.chapters li{border-top:1px solid #131b27}
+.chapters li:first-child{border-top:0}
+.chapters a{display:grid;grid-template-columns:2.6rem 1fr auto;gap:12px;align-items:baseline;
+  padding:12px 4px;text-decoration:none;color:inherit;border-radius:8px}
+.chapters a:hover{background:#0a111c}
+.chapters .cnum{color:#4fa8dc;font-variant-numeric:tabular-nums;font-size:15px}
+.chapters .ctitle{color:#e8eef7;font-size:17.5px}
+.chapters .cdate{color:#5a6b80;font-size:12.5px;letter-spacing:.04em;
+  font-family:ui-sans-serif,system-ui,sans-serif;text-align:right}
+@media (max-width:560px){.chapters a{grid-template-columns:2.2rem 1fr}.chapters .cdate{grid-column:2;text-align:left}}
+
+/* ── chapter page ───────────────────────────────────────────────────────── */
+.dateline{margin:-16px 0 22px;color:#93a4bd;font-size:15px;font-style:italic}
+.record{margin:0 0 26px;padding:10px 14px;border:1px solid #1b2534;border-radius:8px;
+  background:#0a111c;color:#a9b7c9;font-size:14px;line-height:1.6}
+.record .rlabel{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-right:8px}
+.entry .sources{margin:38px 0 0;padding:22px 0 0 22px;border-top:1px solid #1b2534;
+  color:#93a4bd;font-size:14px;line-height:1.6}
+.entry .sources li{margin:0 0 7px}
+.entry .sources a{color:#8b9ab0}
+/* The three registers a chapter writes in. `.doc` is a quoted document, set
+   apart; `.legend` is a family story stated as a story; `.infer` marks a
+   sentence worked back from a date or an age rather than read off a page. */
+.entry .doc{margin:26px 0;padding:14px 20px;border-left:3px solid #4fa8dc;background:#0a111c;
+  border-radius:0 10px 10px 0;color:#d6e0ee;font-size:15.5px;line-height:1.7}
+.entry .doc p{margin:0 0 10px;color:inherit;font-size:inherit}
+.entry .doc p:last-child{margin:0}
+.entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
+.entry .legend{border-left-color:#e8c968;background:#120f0a}
+.entry .infer{color:#a9b7c9;font-style:italic}
+.draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pn{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid #1b2534;
+  border-radius:10px;text-decoration:none;color:inherit;background:#0a111c}
+.pn:empty{border:0;background:transparent}
+.pn.next{text-align:right}
+.pn:hover{border-color:#4fa8dc}
+.pnl{color:#4fa8dc;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.pnt{color:#c3d0e0;font-size:15px}
+@media (max-width:560px){.prevnext{grid-template-columns:1fr}.pn.next{text-align:left}}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#4fa8dc" stroke-width="5"/>
+  <circle cx="33" cy="33" r="21" fill="#0a111c" stroke="#4fa8dc" stroke-width="1.4" opacity=".9"/>
+  <g stroke="#9aa7bd" stroke-width="1.2" stroke-linecap="round" opacity=".8">
+    <line x1="33" y1="14" x2="33" y2="18"/><line x1="33" y1="48" x2="33" y2="52"/>
+    <line x1="14" y1="33" x2="18" y2="33"/><line x1="48" y1="33" x2="52" y2="33"/>
+  </g>
+  <text x="14.5" y="35.8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="6.5" fill="#4fa8dc" text-anchor="middle">W</text>
+  <g class="bmark-needle">
+    <polygon points="33,33 18,33 33,29.6" fill="#4fa8dc"/>
+    <polygon points="33,33 18,33 33,36.4" fill="#4fa8dc" opacity=".55"/>
+    <polygon points="33,33 48,33 33,29.6" fill="#d9e0ea" opacity=".9"/>
+    <polygon points="33,33 48,33 33,36.4" fill="#d9e0ea" opacity=".5"/>
+    <circle cx="33" cy="33" r="2.2" fill="#f2f5f9"/>
+  </g>
+</svg><span class="wm">Eight Miles <span class="em">West</span></span></a><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Contents</a><a href="about.html">About the book</a><a href="ask.html">Write in</a></nav></div></header>
+  
+  <article class="entry chapter">
+    <p class="edate"><a class="esec" href="index.html#part-flags">Part I · TWO HOMELANDS, TWO FLAGS</a> · Chapter 6</p>
+    <h1 class="etitle">The Voorlezer&#x27;s Hand</h1>
+    <p class="dateline">Staten Island · 28 September 1698</p>
+    <p class="record"><span class="rlabel">In the record</span> Hendrick² Kroesen (c.1665–1761) · Cornelia Corsen (b. 1681) · Derrick² Kroesen (1662–1731) · Elizabeth Cregier (1662–1740) · Maritje³ Kroesen (b. 1698) · Pieter Jans Staats · John Vincent</p>
+    
+<p>The oldest surviving record book of the Reformed Dutch Church on Staten Island begins on 5 May 1696, in a hand that a nineteenth-century minister called "peculiarly beautiful," and for the first hundred and sixty-nine years nobody knew whose hand it was [1]. The keeper of a Dutch church's records did not sign them. He wrote down other people's children, their parents and their witnesses, in the third person, page after page, and left himself out. Then, in the winter of 1698, he wrote this:</p>
+
+<div class="doc">
+  <p><i>Henderyck Kroesen syn gedoopte Kinderen. In de name des heeren Jesus Christus, in Jaer 1698 den 28 September, in memorn is myn doctor Maritje geboren en gedoopt door domeny Batolius, als getuyge Dirreck Kroesen en Kathareina Staats, in December 1698.</i></p>
+  <p>Hendrick Kroesen, his children baptized. In the name of our Lord Jesus Christ, in the year 1698, the 28th of September, in the morning my daughter Maritje was born, and was baptized by Domine Bartholf in December 1698; as witnesses, Dirck Kroesen and Katharina Staats.</p>
+  <span class="cite">Baptismal register of the Reformed Dutch Church of Staten Island, in the Voorlezer's own hand — Transcriptions of the Earliest Volume of Staten Island Records, 1678–1813, p. xxxv; McMillen, "The Voorlezer," Staten Island Historian 8 (July 1946); as transcribed in Cruise, pp. 340, 373 [1].</span>
+</div>
+
+<p><i>My</i> daughter. One possessive pronoun, in a book that otherwise had none, and the clerk of the Staten Island church for its first twenty years stepped out of the third person and became a man with a name. The Reverend James Brownlee saw it in 1865, preparing a discourse for the church's two-hundredth anniversary, and put it in a footnote: "The records are first made in Dutch by Hendrick Kroesen, as may be learned from some touching entries of his children's names" [1]. Eighty years after that, when the little house the church had built for its Voorlezer had been saved from demolition and nobody could say who had lived in it, a Staten Island historian named Loring McMillen went back to Brownlee's footnote and the register and worked it through, and the Voorlezer, he wrote, "emerged after nearly 250 years of oblivion into the community which had lost all trace of him" [2].</p>
+
+<p>He was Garret the cooper's second son. The witness at the font, Dirck Kroesen, was the first. It was December 1698. Some months earlier — the exact date is not recorded — the house of the county clerk had burned down with their father's will inside it, and within the year the two men standing together at Maritje's baptism would be on opposite sides of a petition to the Governor of New York.</p>
+
+<h2>The brother who could write</h2>
+
+<p>Hendrick was about fifteen when his father died in March 1680, and the family's genealogist reckons that "most of those first fifteen years were spent attending school at the Reformed Dutch Church in Breuckelen" — the school kept by that church's own Voorlezer — where "he became fluent in both the English and Dutch languages, which would serve him well in later years" [3]. His older brother had not gone. Derrick, the family's book says flatly, "never received any formal education, and consequently, was never able to write his name" [4]. It is one of the plainest facts in the record and one of the least explained: two sons, three years apart, on a twenty-eight-acre farm, and the elder worked it while the younger was sent to learn his letters. <span class="infer">Whatever the reason — a father who needed his first boy in the cooperage, a second who showed aptitude, the church's school opening at the right moment — it set the shape of both lives. The elder son could claim under English law; the younger could read what the law said.</span></p>
+
+<p>By his own account, given under oath in 1699, Hendrick had been living on the island, on the lot his father meant for him, for "about twelve years" — since 1687, when he was about twenty-two, and his mother, on the family's reckoning, was dying or dead [5]. <span class="infer">The genealogist's guess for the next decade is the modest one: he "may have spent the next ten years, from 1687 to 1697, working the patent and possibly teaching some," in a community that had "neither church nor minister" and schooled its children, when it schooled them, in private houses.</span> He called himself a Planter. And around 1695 the Dutch families of the island, who had told the two Labadist travellers "wherever we went" that they wanted a minister, did the thing Dutch congregations did when they could not get one: they built a house for a Voorlezer, on ground leased for fifty years from a man named James Hanse Dye, at the head of the Fresh Kill [6].</p>
+
+<h2>What a Voorlezer was</h2>
+
+<p>McMillen's 1946 article, which the family's genealogist reprinted whole because he could not better it, sets out the office. The Voorlezer was "an employee of a Reformed Dutch congregation whose principal office was to assist the dominie in the Church services by ringing the bell, leading the singing, admonishing noisy ones, keeping the records of the church including the baptismal records (thus the English title of clerk), and in the absence of the dominie conducting church services by reading from the scriptures or from a published book of sermons" — hence the other English title, "fore-reader" [2]. He could not baptize, marry, preach his own sermon or serve communion. He kept a school "in which was taught elementary reading, writing and arithmetic, together with religious study leading to a simple catechism." In most places he was also court clerk, court messenger and public scrivener, and in that last capacity, McMillen notes, an old Dutch manual of 1607 required him to be able "to compose love letters" [2].</p>
+
+<p>On an island with one Dutch congregation and no minister of its own — the Domine Bartholf who baptized Maritje came over from New Jersey when he could — the Voorlezer was the church, most Sundays. And the building that went with the job was not a church as anyone now imagines one: "with true Dutch realism and frugality it was intended that the voorlezer would also dwell and teach school" in it, and such buildings "were dwellings or houses and always so called" [2]. In 1697, around the age of thirty-two, Hendrick married Cornelia Corsen — sixteen, the daughter of Captain Cornelius Corsen, the man Leisler had made a captain and a justice, and of Maritje van der Grift — and the newlyweds moved into the Voorlezer's house [7]. Their first child was born there on a September morning the next year, and her father, keeping the church's book, wrote her down.</p>
+
+<p>The congregation left the house in 1701, and it is worth knowing why. The lease from James Hanse Dye carried a clause "that no person shall live in the said church, which if the said congregation of the Dutch shall presume to put any person therein, then my gift is void" [6]. A Voorlezer with a wife and a baby living in the building was, on a strict reading, exactly that, <span class="infer">and the genealogist's inference that the breach is what moved the congregation is the likeliest one.</span> They sold the house on 13 March 1701 and built again at Port Richmond, on the north shore, near the family's patents, and the record says Hendrick's nephew Garret³ — Derrick's eldest — "helped his Uncle Hendrick build the Reformed Dutch Church at Port Richmond" [8]. Whether Hendrick kept the title after the move is not known; he kept the book until about 1718 [9].</p>
+
+<p>The house he left survived by accident. It passed through private hands for two hundred and thirty-eight years, its origin forgotten, until a title search and the carpentry itself — materials and joinery of before 1700 — identified it, and in 1936 Staten Island scheduled it for demolition. Three years of local effort, led by a Mrs. T. Livingstone Kennedy, saved it, and in 1939 it was given to the Staten Island Historical Society. It stands at 63 Arthur Kill Road, in Richmondtown, and is recognised as "the earliest known elementary school building standing in the United States" [6]. The book Hendrick kept in it nearly did not survive at all: "the priceless document was almost destroyed," the family's genealogist writes, until "Mrs. Alfred DeGroot happened upon the tattered artifact and deposited the book with the Reformed Dutch Church" [6]. A schoolroom a cooper's son taught in, and the register he wrote in a hand a minister thought beautiful, both saved by women who noticed.</p>
+
+<h2>Derrick and Elizabeth on the island</h2>
+
+<p>The elder brother's life in these years is recorded, as his father's was, in other people's registers. His children's baptisms trace the family's move. Garret³, born about 1685, has no record at all. Francis was baptized at Breuckelen on 11 September 1689 — "Frans; parents: Dirck Croes, Elizabeth Croes; witnesses: Pieter Jansen, Katrijna Bogardes" — Derrick's uncle Pieter Staats and one of Elizabeth's Bogardus half-sisters [10]. Neeltje³ was baptized there on 13 March 1692, with Volkert Bries, the stepfather, as witness [10]. They were living on Staten Island by then; they crossed to Breuckelen to do it, because there was nowhere on the island to do it and because Breuckelen was still the family's church [10].</p>
+
+<p>Then, from 1696, the entries are in Hendrick's book. Nicholas, 5 May 1696 — the very day the register begins — with "Cornelis Vielen, Caatye Bogardus" as witnesses. Derck, 22 October 1701, with "Niclaes Backer, Blandyena Bogardus." Hendrick³, 30 July 1707, with "Chrystiaan Korssen, Sara Bogardus" [11]. <span class="infer">The uncle's hand, writing the nephews down; the first entry in the island's oldest church book may be the Voorlezer recording his own brother's son.</span> And in every one of them, a Bogardus: Caatje, Blandina, Sara — the daughters of Walburg De Sille and Willem Bogardus, Elizabeth's half-sisters from the Manhattan house she grew up in, crossing the bay to stand at the font for her children. "It is apparent," the genealogist writes, "that Elizabeth had influence with her step-family" [11]. The Burgomaster's granddaughter had not been cut off by marrying a farmer who signed with a mark. Her family came to her.</p>
+
+<p>Derrick is on the roll of "First Settlers" of the island for 1691, the year after Leisler's raid on the Catholic collector's beef [12]. A census of the island's men between sixteen and sixty, taken in a year the census-taker forgot to write down — 1706, or 1709, depending on whose age you trust — has "Derick Krose, 46; Gerard Croose, 24; Francis Crose, 17; Hendryk Crose, 40," and a few lines down "Peter Staats, 40; Abram Staes, 44" [13]. Two brothers, two sons, two cousins, on one page. Between 1685 and 1707 Elizabeth bore eight children, and all eight lived to marry, which for the time and place was a great deal of luck and a great deal of work [14].</p>
+
+<h2>The fire, and the petition</h2>
+
+<p>The county's records in the 1690s were kept in the house of a Mr. O'Neil, and in 1698 the house burned. Among the things in it was the will of Garret Dircksen Croesen, "together with the probate and record thereof," and no copy existed anywhere else [5]. The family's book had always known the will burned; it was the Staten Island descendants, two centuries later, who remembered the detail of whose house — "Gerrit made a will and the will was burned up in Mr. O'Neil's house in 1698" — in a conversation taken down in 1902 [15].</p>
+
+<p>Under the English law that had governed the island since Derrick was two, a man who died without a will was succeeded in his land by his eldest son, and the law did not distinguish between a will that had never been made and one that had been made, proved, recorded, and then reduced to ash in the county clerk's parlour. Derrick was the eldest son. "Derrick must have pushed the issue," the genealogist writes, "forcing Hendrick to take some action" [5]. What Hendrick did — the brother who could write — was petition the Governor:</p>
+
+<div class="doc">
+  <p>The Humble Petition of Hendrick Cruise of the County of Richmond, Planter, sheweth:</p>
+  <p>That your Excellency's Petitioner's father died about sixteen years ago seized of sundry lots and tracts of land in the County of Richmond, one of which lots was by the last Will and Testament of your Petitioner's father devised unto your Excellency's Petitioner, then an orphan, and your Petitioner's Uncles Peter Jans and John Vincent were appointed overseers of the said Will, and pursuant to the said devise did take care that your Excellency's Petitioner, so soon as he had come of age fit for labour, to enter upon said lot of land, of which he hath been peaceably possessed about twelve years; yet so it is, may it please your Excellency, that some years ago a fire happened in the house of one Mr. O'Neil, who was keeper of the records of said County, in whose custody the said will was, together with the probate and record thereof, which was in the said fire consumed and destroyed without there being left any copy thereof. And your Excellency's Petitioner's brother, having notice of the same, would thereby endeavour to defeat your Excellency's Petitioner of his said right by entering upon the said land as heir to his father —</p>
+  <span class="cite">Petition of Hendrick Cruise to the Governor of New York, 1699 — New York State Archives, Albany, Book 3, p. 34 ("H &amp; D Croesen"), with the warrant for survey of 6 June 1700; as transcribed in Cruise, p. 342 [5]. Spelling modernised.</span>
+</div>
+
+<p>It asked that he be left "in quiet possession," and it came with an affidavit from the two uncles — Peter Jans Staats, Neeltje's brother, and John Vincent, her sister's husband — "that they had witnessed, seen and read the said will which was destroyed by fire, and that Hendrick together with his brother Dirck had been each devised a lot of land" [5]. Two men who could not have been more inside the family swearing to what a burned paper had said, against the eldest son. The line in the petition that carries the most weight is the quietest: <i>having notice of the same</i>. Derrick did not make the claim until he learned the will was gone. <span class="infer">A man who believed he was his father's sole heir would not have waited eighteen years to say so. He had known what the will said, and he had lived with it, and when the paper burned he saw the law change under him and reached for it.</span></p>
+
+<p>"The outcome of the petition is not recorded," the genealogist writes; a survey of the two lots was ordered in 1700, "apparently, an agreement was reached," and in 1709 the whole patent was sold, in a transaction that was never recorded, except for a strip of thirteen and a half acres on the western side that the will had left to their sister Elsje [5]. Twenty-nine years from the death to the sale. The Staten Island branch of the family, when they told the story in 1902, told it in one sentence: "So he tried to grab the whole estate" [15]. And of what became of the man who tried, they had four words: "Dirk disappeared, and Hendrick here" [15].</p>
+
+<h2>What each brother did with the money</h2>
+
+<p>The genealogist's belief — and he says it is a belief — is that the sale of the patent, after thirty-two years of ownership and a generation of settlement along the north shore, funded both brothers' next moves, and "a fair case can also be made that the dispute between the brothers, lasting until 1709, may have benefited the price" [5]. What is recorded is what they bought.</p>
+
+<p>Hendrick, in 1709, bought fifty-two and a half acres next door to the old patent from a George Hooglandt — a parcel that included the thirteen and a half acres his sister Elsje had inherited and her husband had sold off in 1696 [16]. He bought his sister's strip back and built his house on it, the "Dwelling House," an old stone house that stood until a Vanderbilt tore it down in the nineteenth century, and he laid out the family burial plot on the same ground; a descendant found five of the stones there in 1902 and photographed them [16]. He deeded a strip to his cousin John Staats, whose son-in-law, the island's first resident Dutch minister, built a house on it that is still standing — the Cruser–Pelton house, which in the Revolution would be a British headquarters with Hendrick's widowed daughter-in-law living in it [17]. He kept the church's book until about 1718, was still called the Voorlezer in the records of the house he had left, and died in 1761, aged about ninety-five, leaving his son Cornelius three tracts of land "and also my Silver Tankard" [18]. His descendants held the ground until 1835. McMillen, writing of the whole class of men Hendrick belonged to, allowed himself one summary: "At no time did the Voorlezer feature on the wrong side of the public or court records, a tribute to his honesty and industry and a tribute which cannot be paid to many of the Dutch dominies, his ecclesiastic superiors" [2].</p>
+
+<p>Derrick, in 1712, bought 580 acres in Bucks County, Pennsylvania, for six hundred pounds [19]. But he did not go there first. His daughter did.</p>
+
+<h2>Neeltje goes first</h2>
+
+<p>Neeltje³, the girl baptized at Breuckelen in 1692 with her step-grandfather as witness, married young — seventeen — a man named Casal Van Hasten, who with a partner had bought 580 acres in Bucks County in 1708 and had come into the whole of it when the partner died [20]. By 21 May 1710 she was there, baptizing her first son, Jacob, in the new Reformed Dutch church at Bensalem-Neshaminy; a month later she was admitted to its membership by certificate. She was the first of the family in Pennsylvania. The family's book says it plainly: "There is little doubt that Neeltje was the first Kroesen to reside in Bucks County" [20]. Her parents followed within the year — their own admission to the Bensalem church is dated 23 June 1711 — and a note in the Raike files says they lived with Neeltje and Casal when they arrived, which "would make sense" [20]. On 12 August 1711 she baptized a second son, Derrick, for her father. And then, the book says, "she died at a very early age and never really knew her two sons" [20]. The baby died too. Casal sold the 580 acres to his wife's parents in 1712 and left.</p>
+
+<p>That is why the family is in Pennsylvania. Not the lawsuit, not the patent money, not a plan. A daughter went ahead to her husband's land, and died there with her second child, and her parents bought the farm she died on and stayed on it for the rest of their lives. "It was during this time," the genealogist writes in his conclusion, "that Neeltje's second son was born, and both mother and son died sometime after the birth. Subsequently, in 1712, Casal decided to leave the area and sold the 580-acre farm to Derrick and Elizabeth. They continued to live on this tract for the remainder of their lives" [21].</p>
+
+<p>So the first part of this book ends where the family's genealogist ended his: Derrick and Elizabeth, "that grand and brave old couple … being twice transplanted," on a farm in Bucks County, in their fifties, with a dead daughter and a dead grandson somewhere on it, and the English flag over everything [22]. Behind them was the island, and on it the brother who could write, in a house on his sister's thirteen acres, keeping the book. The two of them never lived in the same colony again. Hendrick's people would remember only that Dirk disappeared.</p>
+
+<h2>The ground it happened on</h2>
+
+<p><span class="infer">As always: what follows is what the period's own describers said about the places, not a document about the family.</span> The Voorlezer's House still stands, and can be visited: a two-storey clapboard building with a steep roof, a big room downstairs that served as church and schoolroom and a smaller one behind it, the family's quarters above — plain, as McMillen says, and "always so called" a house [2]. The bell he rang hung from it. The school taught Dutch children to read Dutch; the island's first English-language records and its Dutch church book ran in parallel for a generation, and a man who had both languages, as Hendrick did, was the hinge between them, which is why the Voorlezer was so often the court's clerk too [2]. The two family patents on the Kill Van Kull were each about a quarter of a mile wide and a mile deep — a strip of shore and salt meadow, then upland, then the "woods" the surveyors' chains ran into — and the sale of 1709 broke them into the lots that maps would carry for the next century: Lot 1 and Lot 4 and the widow's strip [16]. Port Richmond, where the congregation rebuilt, was the landing on the north shore where the ferry to New Jersey ran; the family's church was, as everything on the island was, at the water. Bucks County, where the next part of this book begins, was some fifty miles south-west by no road at all, across the Raritan, the Millstone and the Delaware, in a colony that was English, Quaker, and only thirty years old.</p>
+
+<ol class="sources">
+  <li>The baptismal entry of Maritje Kroesen, 28 September / December 1698, in the Voorlezer's hand; Brownlee's 1865 identification and his remark on the handwriting: <i>Transcriptions of the Early Town Records of New York: The Earliest Volume of Staten Island Records, 1678–1813</i>, p. xxxv, and Loring McMillen, "The Voorlezer," <i>The Staten Island Historian</i> 8, no. 3 (July–September 1946), pp. 17–19, 22 — both as reprinted in Warren D. Cruise, <i>The Croesen Families of America</i>, Vol. I (Gateway Press, Baltimore, 1998), pp. 340, 372–373. The "Domine Batolius" of the entry is presumably Guiliam Bartholf, the itinerant minister who served the Dutch congregations of northern New Jersey and Staten Island in these years. As throughout, the records are read as Cruise transcribed them.</li>
+  <li>McMillen's article on the office of Voorlezer, the house, its uses, its identification, and the character of the men who held the office: Cruise, pp. 367–373, reprinting McMillen (1946) with the Staten Island Historical Society's permission.</li>
+  <li>Hendrick's schooling at the Breuckelen church and his two languages: Cruise, p. 338.</li>
+  <li>Derrick "never received any formal education … never able to write his name": Cruise, p. 170.</li>
+  <li>The burned will, Hendrick's 1699 petition (quoted), the uncles' affidavit, the survey warrant of 6 June 1700, the unrecorded sale of 1709 and Elsje's 13½ acres, and the genealogist's belief about the proceeds: Cruise, pp. 74, 341–343, citing New York State Archives, Albany, Book 3, p. 34.</li>
+  <li>The Voorlezer's house — built c. 1695, the Dye lease and its "no person shall live in the said church" clause, the sale of 13 March 1701, the 1936 demolition order, Mrs. T. Livingstone Kennedy, the gift to the Historical Society in 1939, "the earliest known elementary school building standing in the United States," and the near-loss of the record book: Cruise, pp. 339–340, citing "The Story of the Voorlezer's House" (Staten Island Historical Society, 1974) and McMillen (1946). The address is given as 63 Arthur Kill Road in McMillen; a later Cruise page gives 45.</li>
+  <li>Hendrick's marriage c. 1697 to Cornelia Corsen (b. 24 July 1681, bapt. Breuckelen 13 August 1681), daughter of Capt. Cornelius Corsen and Maritje van der Grift; "Planter"; the move into the Voorlezer's house: Cruise, pp. 336, 338.</li>
+  <li>The congregation's move to Port Richmond and Garret³'s part in building the church: Cruise, pp. 177, 340.</li>
+  <li>Hendrick's record-keeping "until around 1718": Cruise, p. 343.</li>
+  <li>The Breuckelen baptisms of Francis (11 September 1689) and Neeltje³ (13 March 1692), with witnesses: <i>Old First Dutch Reformed Church of Brooklyn, First Book of Records</i>, pp. 128, 130, in Cruise, p. 172; the continued use of the Breuckelen church to 1693, Cruise, p. 171.</li>
+  <li>The Staten Island baptisms of Nicholas (5 May 1696), Derck (22 October 1701) and Hendrick³ (30 July 1707), with the Bogardus witnesses, and William B. Bogardus's memo identifying them: NYG&amp;B <i>Staten Island Church Records</i>, Vol. V, pp. 10–11, in Cruise, pp. 172–173.</li>
+  <li>The "First Settlers" roll of 1691: Monnette, <i>First Settlers of Ye Plantations of Piscataway and Woodbridge</i>, pp. 120–121, in Cruise, pp. 173–174.</li>
+  <li>The undated census ("1706") and its ages: Stillwell, <i>Historical and Genealogical Miscellany</i>, Vol. I, pp. 151, 153, in Cruise, pp. 174–175, with the genealogist's discussion of the date.</li>
+  <li>Derrick and Elizabeth's eight children and their marriages: Cruise, pp. 168–169, 176–177, 318.</li>
+  <li>The 1902 account of the Staten Island branch — "the will was burned up in Mr. O'Neil's house in 1698," "so he tried to grab the whole estate," "Dirk disappeared, and Hendrick here," the burial plot and its five stones: a conversation with a Mr. Rowland recorded by "MA," reprinted in Cruise, pp. 364–366.</li>
+  <li>Hendrick's 1709 purchase of 52½ acres from George Hooglandt, including Elsje's strip (sold by William Claaz, 17 May 1696), the "Dwelling House," and the burial plot: Cruise, pp. 345–347, citing Richmond County Liber B, pp. 9, 452.</li>
+  <li>The strips deeded to John Staats (1709), the Rev. Cornelius Van Santvoord's house, its later history as the Cruser–Pelton "Mansion House" and Loyalist headquarters, and "Widow Cruser": Cruise, pp. 341, 346, citing Richmond County Liber D, pp. 285, 509.</li>
+  <li>Hendrick's will (made 11 August 1760, proved 4 July 1761), the three tracts and the silver tankard: Cruise, pp. 336, 347.</li>
+  <li>Derrick's purchase of the 580-acre Van Hasten tract in 1712 for £600: Cruise, pp. 74, 177–181.</li>
+  <li>Neeltje³ and Casal Van Hasten — the 1708 purchase with Lawrence Johnson, Jacob's baptism (21 May 1710), her admission (23 June 1710), Derrick's baptism (12 August 1711), the Raike note, and her early death: <i>Pennsylvania Vital Records</i>, Vol. I, pp. 111, 115, 117–118, 249, in Cruise, pp. 175–177; Derrick and Elizabeth's admission to the Bensalem-Neshaminy church, 23 June 1711, Cruise, p. 175.</li>
+  <li>The genealogist's conclusion on the move to Bucks County: Cruise, p. 319.</li>
+  <li>"That grand and brave old couple … being twice transplanted": Frank King Swain's 1933 note, in Cruise, p. 80.</li>
+</ol>
+
+  </article>
+  <nav class="prevnext"><a class="pn prev" href="two-strangers-walk-across-staten-island.html"><span class="pnl">← Previous</span><span class="pnt">5 · Two Strangers Walk Across Staten Island</span></a><a class="pn next" href="index.html"><span class="pnl">Contents</span><span class="pnt">The next chapter isn't written yet</span></a></nav>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Voorlezer%27s%20Hand%3A%0A%0Ahttps%3A//mistertranslation.com/west/the-voorlezers-hand.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/west/the-voorlezers-hand.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+<footer>Eight Miles West · <a href="about.html">About the book</a> · <a href="ask.html">Write in</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <span class="hits" id="hits-west-the-voorlezers-hand-html">👁 <span id="hits-west-the-voorlezers-hand-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fwest%2Fthe-voorlezers-hand.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-west-the-voorlezers-hand-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-west-the-voorlezers-hand-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-west-the-voorlezers-hand-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 Michael V. Krewson. A work of family history published for interest. Every chapter says which of its statements rest on a document, which are inferred, and which are family legend; documents are cited so they can be checked, and may be misread, superseded or simply wrong. Living people are written about with their knowledge. Nothing here is professional advice of any kind, genealogical or otherwise. Opinions are the author's own.</p></footer>
+</div>
+</body>
+</html>
