@@ -536,6 +536,10 @@ def build_front(chapters):
     legend.</p>
     <p class="count">%(count)s · <a href="about.html">About the book and its sources</a></p>
   </div>
+  <blockquote class="epigraph">
+    <p>"Seems like the whole Krewson line all the way back to the 1600s had these problems with rifts over disagreements… but no one was talking about what they were."</p>
+    <footer>— Alfred G. M. Krewson to his nephew, 20 January 2005</footer>
+  </blockquote>
 %(toc)s
 """ % {"tagline": esc(TAGLINE), "author": esc(AUTHOR), "hero": _front_hero(), "count": count, "toc": _toc(chapters)}
     return _shell(title="%s — %s" % (SITE_NAME, "a family's four centuries in America"),
@@ -1144,6 +1148,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .fronthero img{height:340px;object-position:42% 78%}
 
 .byline{margin:-6px 0 18px;color:#c3d0e0;font-size:15px;letter-spacing:.02em}
+
+/* ── epigraph: Uncle Al's sentence, the book's thesis ─────────────────── */
+.epigraph{max-width:640px;margin:48px auto 8px;padding:0;border:0;text-align:center}
+.epigraph p{margin:0;color:#e8eef7;font-size:19px;line-height:1.6;font-style:italic}
+.epigraph footer{margin:12px 0 0;padding:0;border:0;color:#7f8fa6;font-size:13px;font-style:normal;
+  font-family:ui-sans-serif,system-ui,sans-serif;letter-spacing:.04em;text-align:center}
 
 /* ── contents page ──────────────────────────────────────────────────────── */
 .count{margin-top:14px;color:#7f8fa6;font-size:14px;font-style:italic}
