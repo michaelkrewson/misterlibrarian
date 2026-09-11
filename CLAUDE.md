@@ -46,6 +46,12 @@ lets all three coexist safely in one repo. Keep it that way; don't import one bu
 another. The hub's `index.html` follows the same discipline by construction — it's a single
 static file with no generator, so there's nothing for a builder to accidentally clobber it
 with, and nothing it can accidentally glob into any of the three builders' own outputs.
+⚠ **One guard does still reach it:** `build.py`'s `check_built_descriptions()` scans every
+root `*.html` it finds, the hand-written hub included, and FAILS the Bible build when a
+`<meta name="description">` runs past 160 characters. The hub's did (194 chars, from its
+2026-09-10 fourth-card edit) and the next Bible chapter's build fell over on it, after every
+page had already been written — trimmed to 156. Editing the hub's description by hand means
+counting it; nothing else caps it.
 
 ## Before touching anything — verify, don't assume
 
@@ -366,6 +372,16 @@ easy follow-up, not done in the first pass.
      reason to ship a chapter without it on 2026-08-19.
    - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
      <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
+     ⚠ **An OFFSET chapter needs the PREVIOUS chapter's BibleGateway text too, under
+     `<NAME>_prev.json`.** `--verse-offset 1` sends our v1 to the shelf's last verse of the
+     chapter before, and for the seven BG versions the checker reads that from
+     `<shelf-dir>/<NAME>_prev.json` — so fetch the previous chapter into its own dir and copy
+     each `NIV.json`… across under the `_prev` name (Deuteronomy 23, 2026-09-10, whose v1 is
+     every English Bible's 22:30: `fetch_shelf_bg.py Deuteronomy 22 source/shelf/d22` then
+     `cp d22/NIV.json d23/NIV_prev.json` for all seven). Without it every quote from that
+     verse reads NO DATA. ⚠ `fetch_shelf_bg.py` also writes a non-numeric `_whole` key, and
+     the `_prev` path crashed on it the first time it was fed a real fetch — fixed in
+     `shelf_check.py`, but it means the path had only ever been exercised on hand-made files.
      ⚠ **In a NEW worktree the shelf dir is not there.** `source/shelf/` is gitignored, so a
      review worktree cut from `main` has none of the chapter's BG fetches, and every version
      reads NO DATA — which shelf_check reports as MISS. Deuteronomy 18's review saw **28
