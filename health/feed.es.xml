@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>El Régimen del Bibliotecario</title>
+  <link>https://mistertranslation.com/health/</link>
+  <atom:link href="https://mistertranslation.com/health/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Notas sobre salud, nutrición y medicina, trabajadas de una en una a partir de la literatura científica: qué encontraron realmente los estudios, hasta qué punto puede uno estar seguro con honestidad, y qué le queda por hacer a una persona razonable. Escrito por un lector, no por un médico: nada de esto es consejo médico.</description>
+  <language>en</language>
+  <item>
+    <title>Qué es en realidad un cálculo renal, y por qué se forma</title>
+    <link>https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.es.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.es.html</guid>
+    <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Alrededor de un adulto de cada diez formará un cálculo renal. Antes de las preguntas sobre el agua, el calcio y qué comer, la primera: qué es en realidad una piedra en el riñón, de qué está hecha y por qué se forma en unos riñones y no en otros — leído en los estudios. Con una posdata sobre el agua dura, las destiladoras y las pastillas de calcio.</description>
+    <category>cálculos renales</category>
+    <category>urología</category>
+    <category>nutrición</category>
+    <category>calcio</category>
+    <category>oxalato</category>
+    <category>ácido úrico</category>
+    <category>hidratación</category>
+    <category>sodio</category>
+    <category>dieta</category>
+    <category>principios básicos</category>
+    <category>suplementos</category>
+    <category>agua dura</category>
+    <category>vitamina C</category>
+    <category>vitamina D</category>
+  </item>
+</channel>
+</rss>

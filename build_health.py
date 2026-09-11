@@ -135,6 +135,92 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "health")
 ENTRY_SRC = os.path.join(ROOT, "source", "health")
 
+# ── The Spanish edition (2026-09-10, Michael's ask: the kidney-stone entry is
+# for a Spanish friend). Same conventions as build.py's Spanish Bible edition:
+# a twin is a `.es.html` file next to its English original — an entry's twin is
+# `source/health/YYYY-MM-DD-slug.es.html` with the SAME front-matter vocabulary
+# (its own Spanish title/summary/tags, body translated) and builds to
+# `health/<slug>.es.html`; the front page's twin is `es.html`; the standing
+# pages' twins are `about.es.html` / `ask.es.html` / `thanks.es.html` /
+# `disclaimer.es.html`; the feed's is `feed.es.xml`. Every page carries
+# `lang="es"`, `og:locale es_ES`, and hreflang alternates pointing at its twin
+# (in the head AND the sitemap); the header carries a language link. Tag pages
+# are English-only — a Spanish entry's tag chips hand off to `es.html?tag=…`,
+# which the front-page script already honours — so the Spanish edition adds
+# exactly the pages it has content for and no near-empty ones.
+#
+# Every reader-visible string lives in UI below, keyed by language, and every
+# page-building function takes `lang`. Nothing sniffs the `.es` filename for
+# the language of a page: `e["lang"]` is set once when the entry is loaded.
+SITE_NAME_ES = "El Régimen del Bibliotecario"
+TAGLINE_ES = "Salud, nutrición y medicina: una pregunta cada vez, a partir de los estudios"
+BLURB_ES = ("Notas sobre salud, nutrición y medicina, trabajadas de una en una a partir de la "
+            "literatura científica: qué encontraron realmente los estudios, hasta qué punto "
+            "puede uno estar seguro con honestidad, y qué le queda por hacer a una persona "
+            "razonable. Escrito por un lector, no por un médico: nada de esto es consejo médico.")
+
+UI = {
+    "en": {
+        "site": SITE_NAME, "tagline": TAGLINE, "blurb": BLURB, "locale": "en_US",
+        "other": "es", "lang_link": "Español",
+        "front": "index.html", "about": "about.html", "ask": "ask.html",
+        "thanks": "thanks.html", "disclaimer": "disclaimer.html", "feed": "feed.xml",
+        "brand": 'The Librarian\'s <span class="em">Regimen</span>',
+        "nav_writing": "Writing", "nav_about": "About",
+        "search_ph": "Search entries…", "search_aria": "Search past entries",
+        "back": "← Back to the Regimen", "keep_reading": "Keep reading",
+        "read_twin": "Leer esta entrada en español →",
+        "comment": "💬 Comment on X", "seen": "🔍 See what others said",
+        "foot_about": "About", "foot_disclaimer": "Disclaimer", "foot_tags": "All tags",
+        "foot_ask": "Ask a question", "foot_none": "nothing here is medical advice",
+        "sib_suffix": "", "views": " views", "visits": " visits to this page",
+        "empty_search": "No entries match that search.",
+        "first_entry": ('The first entry is being written. <a href="feed.xml">Subscribe to '
+                        'the feed</a> to catch it, or read <a href="about.html">how the '
+                        'entries are put together</a> meanwhile.'),
+        "view": "View:", "cards": "\U0001F5C2 Cards", "list": "\U0001F4CB List",
+        "show_more": "Show more", "js_show": "Show ", "js_more": " more",
+        "js_showing": "Showing ", "js_of": " of ", "js_fewer": "− fewer",
+        "chip_all": "All", "chip_more": "+ %d more", "one_entry": "entry", "n_entries": "entries",
+    },
+    "es": {
+        "site": SITE_NAME_ES, "tagline": TAGLINE_ES, "blurb": BLURB_ES, "locale": "es_ES",
+        "other": "en", "lang_link": "English",
+        "front": "es.html", "about": "about.es.html", "ask": "ask.es.html",
+        "thanks": "thanks.es.html", "disclaimer": "disclaimer.es.html", "feed": "feed.es.xml",
+        "brand": 'El <span class="em">Régimen</span> del Bibliotecario',
+        "nav_writing": "Escritos", "nav_about": "Acerca de",
+        "search_ph": "Buscar entradas…", "search_aria": "Buscar entradas anteriores",
+        "back": "← Volver al Régimen", "keep_reading": "Seguir leyendo",
+        "read_twin": "Read this entry in English →",
+        "comment": "💬 Comentar en X", "seen": "🔍 Ver qué han dicho otros",
+        "foot_about": "Acerca de", "foot_disclaimer": "Aviso legal", "foot_tags": "",
+        "foot_ask": "Haga una pregunta", "foot_none": "nada de esto es consejo médico",
+        "sib_suffix": " (en inglés)", "views": " visitas", "visits": " visitas a esta página",
+        "empty_search": "Ninguna entrada coincide con esa búsqueda.",
+        "first_entry": ('La primera entrada está en camino. <a href="feed.es.xml">Suscríbase '
+                        'al canal RSS</a> para no perdérsela, o lea mientras tanto '
+                        '<a href="about.es.html">cómo se elaboran las entradas</a>.'),
+        "view": "Vista:", "cards": "\U0001F5C2 Tarjetas", "list": "\U0001F4CB Lista",
+        "show_more": "Mostrar más", "js_show": "Mostrar ", "js_more": " más",
+        "js_showing": "Mostrando ", "js_of": " de ", "js_fewer": "− menos",
+        "chip_all": "Todas", "chip_more": "+ %d más", "one_entry": "entrada", "n_entries": "entradas",
+    },
+}
+
+_ES_MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
+              "septiembre", "octubre", "noviembre", "diciembre"]
+
+
+def _pretty_date(d, lang="en"):
+    if lang == "es":
+        return "%d de %s de %d" % (d.day, _ES_MONTHS[d.month - 1], d.year)
+    return blogkit.pretty_date(d)
+
+
+def _other_front(lang):
+    return UI[UI[lang]["other"]]["front"]
+
 # Mint-teal. Chosen against the three colours it has to sit beside in a shared
 # nav/footer/hub: the Ledger's Bitcoin amber (#f7931a), the travel blog's
 # terracotta (#e8865c) and the Bible project's gold (#e8c968) are all warm, so
@@ -155,7 +241,10 @@ def load_entries(include_drafts=False):
     """Read source/health/*.html into entry dicts, newest first.
 
     Shares blogkit's front-matter parser with the other two blogs but not
-    their vocabulary — see KNOWN_KEYS above.
+    their vocabulary — see KNOWN_KEYS above. A `.es.html` file is the Spanish
+    twin of the `.html` file with the same date and slug: it gets `lang:"es"`,
+    builds to `<slug>.es.html`, and the two are paired via `twin` (each
+    carrying the other's output filename) when both are live.
     """
     if not os.path.isdir(ENTRY_SRC):
         return []
@@ -167,11 +256,12 @@ def load_entries(include_drafts=False):
             meta, body = blogkit.parse_front_matter(
                 fh.read(), "source/health/" + fn, KNOWN_KEYS, REQUIRED_KEYS)
 
-        m = re.match(r"(\d{4})-(\d{2})-(\d{2})-(.+)\.html$", fn)
+        m = re.match(r"(\d{4})-(\d{2})-(\d{2})-(.+?)(\.es)?\.html$", fn)
         if not m:
-            raise ValueError("source/health/%s: name must be YYYY-MM-DD-slug.html" % fn)
+            raise ValueError("source/health/%s: name must be YYYY-MM-DD-slug[.es].html" % fn)
         date = dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
         slug = m.group(4)
+        lang = "es" if m.group(5) else "en"
         if meta["date"].strip() != date.isoformat():
             raise ValueError(
                 "source/health/%s: `date: %s` disagrees with the filename (%s). "
@@ -184,7 +274,8 @@ def load_entries(include_drafts=False):
 
         entries.append({
             "slug": slug,
-            "file": slug + ".html",
+            "lang": lang,
+            "file": slug + (".es.html" if lang == "es" else ".html"),
             "date": date,
             "title": meta["title"],
             "summary": meta["summary"],
@@ -194,8 +285,14 @@ def load_entries(include_drafts=False):
             "hero_alt": meta.get("hero_alt", "").strip(),
             "hero_credit": meta.get("hero_credit", "").strip(),
             "draft": draft,
+            "twin": None,
             "body": body,
         })
+    by = {(e["slug"], e["lang"]): e for e in entries}
+    for e in entries:
+        other = by.get((e["slug"], "en" if e["lang"] == "es" else "es"))
+        if other and other["date"] == e["date"]:
+            e["twin"] = other["file"]
     entries.sort(key=lambda e: e["date"], reverse=True)
     return entries
 
@@ -209,10 +306,17 @@ def _tag_file(tag):
 
 
 def _tag_chips(e):
+    """Tag chips. English entries link to the per-tag pages; a Spanish entry's
+    chips hand off to the Spanish front page filtered by that tag (there are
+    no Spanish tag pages — see the Spanish-edition note above)."""
     if not e["tags"]:
         return ""
-    chips = "".join('<a class="tg" href="%s">%s</a>' % (_tag_file(t), esc(t))
-                    for t in e["tags"])
+    if e["lang"] == "es":
+        chips = "".join('<a class="tg" href="es.html?tag=%s">%s</a>'
+                        % (blogkit.tag_slug(t), esc(t)) for t in e["tags"])
+    else:
+        chips = "".join('<a class="tg" href="%s">%s</a>' % (_tag_file(t), esc(t))
+                        for t in e["tags"])
     return '<div class="tags">%s</div>' % chips
 
 
@@ -227,7 +331,9 @@ def tag_index(entries):
 
 # ──────────────────────────────────────────────────────────────────── chrome ──
 
-def _nav(active=""):
+def _nav(active="", lang="en"):
+    u = UI[lang]
+
     def cls(k):
         return ' class="on"' if k == active else ""
     # Two links. The Ledger's nav is seven because it has six standing boards;
@@ -235,13 +341,15 @@ def _nav(active=""):
     # publication look like it's pretending to be bigger than it is. "Ask" is
     # reached from the footer and the per-entry prompt, same as on the Ledger.
     return ('<nav class="nav">'
-            '<a href="index.html"%s>Writing</a>'
-            '<a href="about.html"%s>About</a>'
-            '</nav>' % (cls("home"), cls("about")))
+            '<a href="%s"%s>%s</a>'
+            '<a href="%s"%s>%s</a>'
+            '</nav>' % (u["front"], cls("home"), u["nav_writing"],
+                        u["about"], cls("about"), u["nav_about"]))
 
 
-def _chrome(active=""):
-    """Header used by every page in the publication — brand, search, nav.
+def _chrome(active="", lang="en", lang_href=None):
+    """Header used by every page in the publication — brand, search, nav, and
+    the language link.
 
     Same markup as build_finance._chrome, laid out differently (see the
     "header" block in CSS): brand left + search right on one row, the nav on
@@ -250,26 +358,37 @@ def _chrome(active=""):
     is a REAL form (GET, name="q") so it works with JS off by navigating to
     the front page with ?q=…; the front page's own script filters live and
     reads a handed-over ?q=.
+
+    `lang_href` is where the language link goes: the page's own twin when it
+    has one, else the other edition's front page. It sits at the right end of
+    the nav row, and is the one thing in the header that is never hidden — a
+    Spanish reader handed an English URL has to be able to find the way across
+    without reading English first.
     """
+    u = UI[lang]
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
                  '<rect y="6" width="20" height="2" rx="1"/>'
                  '<rect y="12" width="20" height="2" rx="1"/></svg>')
-    search = ('<form class="headersearch" action="index.html" method="get" role="search">'
-              '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
-              'aria-label="Search past entries"/></form>')
+    search = ('<form class="headersearch" action="%s" method="get" role="search">'
+              '<input type="search" name="q" id="headerSearch" placeholder="%s" '
+              'aria-label="%s"/></form>' % (u["front"], esc(u["search_ph"]), esc(u["search_aria"])))
+    other = u["other"]
+    langlink = ('<a class="langlink" href="%s" lang="%s" hreflang="%s">%s</a>'
+                % (esc(lang_href or _other_front(lang)), other, other, u["lang_link"]))
     return ('<header class="hsm">'
-            '<a class="brand" href="index.html">%s'
-            '<span class="wm">The Librarian\'s <span class="em">Regimen</span></span></a>'
+            '<a class="brand" href="%s">%s'
+            '<span class="wm">%s</span></a>'
             '%s'
             '<div class="hgroup">'
             '<input type="checkbox" class="navcb" id="navcb"/>'
             '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
-            '%s</div></header>'
-            % (MARK_SVG.replace("__ACCENT__", ACCENT), search, hamburger, _nav(active)))
+            '%s%s</div></header>'
+            % (u["front"], MARK_SVG.replace("__ACCENT__", ACCENT), u["brand"], search,
+               hamburger, _nav(active, lang), langlink))
 
 
-def _legal():
+def _legal(lang="en"):
     """The small print, deliberately smaller and dimmer than everything else in
     the footer. No personal name anywhere on this site: the byline throughout is
     "Mr. Librarian," and this paragraph keeps that posture rather than becoming
@@ -278,6 +397,22 @@ def _legal():
     The medical sentence is the whole reason this publication's legal line is
     not a copy of the Ledger's: the failure mode there is a reader buying
     something; the failure mode here is a reader stopping a medication."""
+    year = datetime.now(timezone.utc).year
+    if lang == "es":
+        return ('<p class="legal">© %d %s. Nada de lo publicado en este sitio es consejo '
+                'médico, nutricional ni de salud, y ninguna respuesta de Mr. Librarian lo es '
+                'tampoco. Este sitio es la lectura que un lector hace de investigación '
+                'publicada — no un diagnóstico, no un tratamiento, no una recomendación de '
+                'empezar, dejar o cambiar nada — y no sustituye una conversación con un '
+                'médico que le conozca. No ha sido revisado, corregido ni aprobado por ningún '
+                'médico ni por ningún otro profesional sanitario titulado. Los estudios se '
+                'resumen de buena fe a partir de fuentes públicas y pueden estar mal leídos, '
+                'superados o sencillamente equivocados; compruebe los originales antes de '
+                'fiarse de nada de lo que hay aquí. Ningún fármaco, suplemento, producto, '
+                'empresa u organización mencionados en este sitio lo ha respaldado ni está '
+                'afiliado a él; nada aquí está patrocinado. El uso de este sitio es bajo su '
+                'propia responsabilidad: véase el <a href="disclaimer.es.html">aviso legal '
+                'completo</a>.</p>' % (year, esc(SITE_NAME_ES)))
     return ('<p class="legal">© %d %s. Nothing on this site is medical, nutritional or '
             'health advice, and no reply from Mr. Librarian is either. This site is one '
             'reader\'s reading of published research — not a diagnosis, not a treatment, '
@@ -290,15 +425,33 @@ def _legal():
             'organization named on this site has endorsed it or is affiliated with it; '
             'nothing here is sponsored. Use of this site is at your own risk — see the '
             '<a href="disclaimer.html">full disclaimer</a>.</p>'
-            % (datetime.now(timezone.utc).year, esc(SITE_NAME)))
+            % (year, esc(SITE_NAME)))
 
 
-def _disclaimer_box():
+def _disclaimer_box(lang="en"):
     """The medical disclaimer, on every page, above the footer, at a size meant to
     be read (the .legal small print below it is the copyright/affiliation line).
     Michael's ask, 2026-09-10: say on every page that none of this is medical
     advice and none of it has been reviewed by a doctor. Kept to the sentences a
-    reader actually needs; the full text is disclaimer.html."""
+    reader actually needs; the full text is disclaimer.html. The Spanish box
+    gives the emergency number a Spanish reader actually has (112 — Spain and
+    the whole EU) ahead of 911."""
+    if lang == "es":
+        return ('<aside class="disclaimer" aria-label="Aviso médico">'
+                '<p><strong>Aviso médico.</strong> Todo lo publicado en este sitio es '
+                'información general con fines educativos. <strong>No es consejo médico, '
+                'nutricional ni de salud</strong>, ni sustituye el consejo de un médico, '
+                'farmacéutico, dietista u otro profesional sanitario titulado que le conozca. '
+                'El autor no es un profesional sanitario titulado y escribe bajo seudónimo; '
+                '<strong>ninguna entrada ha sido revisada por un médico</strong> ni por nadie '
+                'con una licencia sanitaria. Leer este sitio, o escribirle, no crea ninguna '
+                'relación médico-paciente ni de ningún otro tipo profesional. No empiece, deje '
+                'ni cambie ningún medicamento, suplemento, dieta o tratamiento por algo que '
+                'haya leído aquí: hable antes con su médico. Si cree que puede tener una '
+                'urgencia médica, llame ahora a su médico o al número de emergencias (112 en '
+                'España y en toda la Unión Europea; 911 en Estados Unidos). '
+                '<a href="disclaimer.es.html">Lea el aviso completo →</a></p>'
+                '</aside>')
     return ('<aside class="disclaimer" aria-label="Medical disclaimer">'
             '<p><strong>Medical disclaimer.</strong> Everything on this site is general '
             'information for education only. It is <strong>not medical, nutritional or '
@@ -315,20 +468,26 @@ def _disclaimer_box():
             '</aside>')
 
 
-def _foot(hits_path=None):
+def _foot(hits_path=None, lang="en"):
     """`hits_path` (e.g. "/health/about.html") gets its own live-fetched view
     count appended (per-path GoatCounter counter via `_hits_widget`). `None`
     (the index page, which shows its own "N visits" line in-body) or a
     zero-hit path renders nothing — fail-silent, like every other call site."""
-    hits = _hits_widget(hits_path, " views") if hits_path else ""
+    u = UI[lang]
+    hits = _hits_widget(hits_path, u["views"]) if hits_path else ""
     hits_bit = " · %s" % hits if hits else ""
-    sibs = " · ".join('<a href="%s">%s</a>' % (url, esc(name)) for name, url, _ in SIBLINGS)
-    return ('%s<footer>%s · <a href="about.html">About</a> · '
-            '<a href="disclaimer.html">Disclaimer</a> · '
-            '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
-            '<a href="feed.xml">RSS</a> · %s · '
-            'nothing here is medical advice%s%s</footer>'
-            % (_disclaimer_box(), esc(SITE_NAME), sibs, hits_bit, _legal()))
+    sibs = " · ".join('<a href="%s">%s</a>%s' % (url, esc(name), u["sib_suffix"])
+                      for name, url, _ in SIBLINGS)
+    tags = ('<a href="tags.html">%s</a> · ' % u["foot_tags"]) if u["foot_tags"] else ""
+    return ('%s<footer>%s · <a href="%s">%s</a> · '
+            '<a href="%s">%s</a> · '
+            '%s<a href="%s">%s</a> · '
+            '<a href="%s">RSS</a> · %s · '
+            '%s%s%s</footer>'
+            % (_disclaimer_box(lang), esc(u["site"]), u["about"], u["foot_about"],
+               u["disclaimer"], u["foot_disclaimer"],
+               tags, u["ask"], u["foot_ask"],
+               u["feed"], sibs, u["foot_none"], hits_bit, _legal(lang)))
 
 
 def _shell_hits_path(url):
@@ -352,15 +511,29 @@ FRONT_HERO_CREDIT = (
     'rel="noopener" target="_blank">Wikimedia Commons</a> / '
     '<a href="https://gallica.bnf.fr/ark:/12148/btv1b105072169" rel="noopener" '
     'target="_blank">Gallica</a>.')
+FRONT_HERO_ALT_ES = ("Una página de un Tacuinum sanitatis del siglo XV: en un huerto amurallado, "
+                     "un hombre con un sobretodo rosado se carga a la cabeza un cesto lleno de "
+                     "coles mientras una mujer de azul sujeta la cerca")
+FRONT_HERO_CREDIT_ES = (
+    'La recolección de las coles, del <i>Tacuinum sanitatis</i> de Ibn Butlan — un manual de '
+    'salud árabe del siglo XI, aquí en una copia latina pintada hacia 1445–1450 '
+    '(Bibliothèque nationale de France, Latin 9333, f. 53). El género que dio nombre a esta '
+    'publicación: un <i>régimen</i> era el conjunto de cómo se vivía. Dominio público, vía '
+    '<a href="https://commons.wikimedia.org/wiki/File:Tacuinum_Sanitatis-cabbage_harvest.jpg" '
+    'rel="noopener" target="_blank">Wikimedia Commons</a> / '
+    '<a href="https://gallica.bnf.fr/ark:/12148/btv1b105072169" rel="noopener" '
+    'target="_blank">Gallica</a>.')
 
 
-def _front_hero():
+def _front_hero(lang="en"):
     """The publication's one page-wide picture, front and center on the index.
     Not an entry hero (see _entry_hero) — the front page's own fixed banner."""
     dims = blogkit.dim_attrs(os.path.join(OUT, "img"), FRONT_HERO_IMG)
+    alt = FRONT_HERO_ALT_ES if lang == "es" else FRONT_HERO_ALT
+    credit = FRONT_HERO_CREDIT_ES if lang == "es" else FRONT_HERO_CREDIT
     return ('<div class="fronthero"><figure><img src="img/%s" alt="%s"%s loading="eager"/>'
             '<figcaption>%s</figcaption></figure></div>'
-            % (FRONT_HERO_IMG, esc(FRONT_HERO_ALT), dims, FRONT_HERO_CREDIT))
+            % (FRONT_HERO_IMG, esc(alt), dims, credit))
 
 
 def _entry_hero(e):
@@ -374,18 +547,19 @@ def _entry_hero(e):
             % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
 
 
-def _comment_box(title, url):
+def _comment_box(title, url, lang="en"):
     """The site's whole comment system: X as the comment layer
     (blogkit.x_comment_url / x_search_url) — two buttons, no pitch copy."""
+    u = UI[lang]
     comment = blogkit.x_comment_url(title, url)
     search = blogkit.x_search_url(url)
     return ('<div class="respond"><div class="respond-actions">'
             '<a class="respond-btn respond-btn-primary" href="%s" target="_blank" '
-            'rel="noopener">💬 Comment on X</a>'
+            'rel="noopener">%s</a>'
             '<a class="respond-btn respond-btn-secondary" href="%s" target="_blank" '
-            'rel="noopener">🔍 See what others said</a>'
+            'rel="noopener">%s</a>'
             '</div></div>'
-            % (comment, search))
+            % (comment, u["comment"], search, u["seen"]))
 
 
 def _ask_nudge(e):
@@ -395,17 +569,22 @@ def _ask_nudge(e):
     if e["draft"]:
         return ('<div class="respond">'
                 '<p><strong>Got a question?</strong> Something here you want pushed on, '
-                'or think I have wrong? <a href="ask.html?re=%s">Ask Mr. Librarian</a> — '
+                'or think I have wrong? <a href="%s?re=%s">Ask Mr. Librarian</a> — '
                 'it goes straight to my desk.</p></div>'
-                % urllib.parse.quote(e["title"]))
-    full_url = "%s%s.html" % (BASE_URL, e["slug"])
-    return _comment_box(e["title"], full_url)
+                % (UI[e["lang"]]["ask"], urllib.parse.quote(e["title"])))
+    full_url = BASE_URL + e["file"]
+    return _comment_box(e["title"], full_url, e["lang"])
 
 
-def _mednote():
+def _mednote(lang="en"):
     """The per-entry disclaimer, under the tags on every entry. Deliberately a
     sentence a person would say rather than a legal block — the legal block is
     in the footer already; this one is meant to be read."""
+    if lang == "es":
+        return ('<p class="mednote">Esto es la lectura que un lector hace de la investigación, '
+                'no consejo médico. Si algo de lo que hay aquí toca su propia salud, llévelo a '
+                'un médico que le conozca — y <a href="about.es.html">lea cómo se elaboran '
+                'estas entradas</a>.</p>')
     return ('<p class="mednote">This is one reader\'s reading of the research, not medical '
             'advice. If something here touches on your own health, take it to a clinician '
             'who knows you — and <a href="about.html">read how these entries are put '
@@ -431,42 +610,61 @@ def _related_entries(e, pool, limit=4):
 
 def _related_block(e, pool):
     """"Keep reading" — reuses `_tile`/`_front_item` rather than a private card
-    so it can never drift from the front page's typography."""
+    so it can never drift from the front page's typography. `pool` is the live
+    entries in the SAME language as `e`; the caller filters."""
     picks = _related_entries(e, pool)
     if not picks:
         return ""
+    lang = e["lang"]
     tiles = "\n".join(
         _tile(_front_item(href=o["file"],
-                          label=blogkit.pretty_date(o["date"]).upper(),
+                          label=_pretty_date(o["date"], lang).upper(),
                           title=o["title"], desc=_entry_desc(o),
                           date=o["date"], tags=o.get("tags", ())))
         for o in picks)
     return ('  <section class="readnext">\n'
-            '    <h2>Keep reading</h2>\n'
+            '    <h2>%s</h2>\n'
             '    <div class="tilegrid">\n%s\n    </div>\n'
-            '  </section>' % tiles)
+            '  </section>' % (UI[lang]["keep_reading"], tiles))
+
+
+def _hreflang(url, alt_url):
+    """hreflang alternates for a page and its twin (x-default = the English
+    page, the edition search engines should show when they can't tell)."""
+    if not alt_url:
+        return ""
+    en, es = (url, alt_url) if ".es.html" in alt_url or alt_url.endswith("/es.html") else (alt_url, url)
+    return ('<link rel="alternate" hreflang="en" href="%s"/>\n'
+            '<link rel="alternate" hreflang="es" href="%s"/>\n'
+            '<link rel="alternate" hreflang="x-default" href="%s"/>\n' % (en, es, en))
 
 
 def build_entry_page(e, pool=()):
-    """Render one entry."""
-    date_line = blogkit.pretty_date(e["date"]).upper()
+    """Render one entry, in the entry's own language."""
+    lang = e["lang"]
+    u = UI[lang]
+    date_line = _pretty_date(e["date"], lang).upper()
     hits_path = None if e["draft"] else "%s/%s" % (BASE, e["file"])
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
+    alt_url = (BASE_URL + e["twin"]) if e["twin"] else None
     banner = ('<div class="draftban">🔒 <b>Draft preview</b> — not published. This page '
               'is not linked from the site and is absent from the feed.</div>'
               if e["draft"] else "")
     noindex = '<meta name="robots" content="noindex,nofollow"/>\n' if e["draft"] else ""
+    twin_note = ('<p class="langnote"><a href="%s" lang="%s" hreflang="%s">%s</a></p>'
+                 % (e["twin"], u["other"], u["other"], u["read_twin"])) if e["twin"] else ""
     return """<!doctype html>
-<html lang="en">
+<html lang="%(lang)s">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>%(title)s — %(site)s</title>
 <meta name="description" content="%(desc)s"/>
 %(noindex)s<link rel="canonical" href="%(url)s"/>
-<link rel="alternate" type="application/rss+xml" title="%(site)s" href="feed.xml"/>
+%(hreflang)s<link rel="alternate" type="application/rss+xml" title="%(site)s" href="%(feed)s"/>
 <meta property="og:type" content="article"/>
+<meta property="og:locale" content="%(locale)s"/>
 <meta property="og:site_name" content="%(site)s"/>
 <meta property="og:title" content="%(title)s"/>
 <meta property="og:description" content="%(desc)s"/>
@@ -481,6 +679,7 @@ def build_entry_page(e, pool=()):
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
     <p class="edate">%(date)s</p>
+    %(twin_note)s
     %(hero)s
 %(body)s
     %(tags)s
@@ -488,29 +687,36 @@ def build_entry_page(e, pool=()):
   </article>
   %(nudge)s
 %(related)s
-  <p class="backlink"><a href="index.html">← Back to the Regimen</a></p>
+  <p class="backlink"><a href="%(front)s">%(back)s</a></p>
 %(foot)s
 </div>
 </body>
 </html>
 """ % {
+        "lang": lang,
         "title": esc(e["title"]),
-        "site": esc(SITE_NAME),
+        "site": esc(u["site"]),
         "desc": esc(desc),
         "noindex": noindex,
         "url": url,
+        "hreflang": _hreflang(url, alt_url),
+        "feed": u["feed"],
+        "locale": u["locale"],
         "css": CSS.replace("__ACCENT__", ACCENT),
         "goat": _goatcounter(),
-        "chrome": _chrome("home"),
+        "chrome": _chrome("home", lang, e["twin"] or _other_front(lang)),
         "banner": banner,
         "date": date_line,
+        "twin_note": twin_note,
         "hero": _entry_hero(e),
         "body": e["body"],
         "tags": _tag_chips(e),
-        "mednote": _mednote(),
+        "mednote": _mednote(lang),
         "nudge": _ask_nudge(e),
         "related": _related_block(e, pool),
-        "foot": _foot(hits_path),
+        "front": u["front"],
+        "back": u["back"],
+        "foot": _foot(hits_path, lang),
     }
 
 
@@ -519,7 +725,7 @@ def _entry_card(e):
             '      <span class="ec-d">%s</span>\n'
             '      <span class="ec-t">%s</span>\n'
             '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (esc(e["file"]), blogkit.pretty_date(e["date"]).upper(),
+            '    </a>' % (esc(e["file"]), _pretty_date(e["date"], e["lang"]).upper(),
                           esc(e["title"]), esc(e["summary"])))
 
 
@@ -590,18 +796,23 @@ def _hits_widget(path, suffix=""):
 
 
 def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website",
-           extra_css="", extra_js=""):
+           extra_css="", extra_js="", lang="en", alt_url=None, lang_href=None):
+    """`lang` picks the chrome's language; `alt_url` (absolute) is the page's
+    twin in the other edition, for hreflang; `lang_href` (relative) is where
+    the header's language link goes — defaults to the other front page."""
+    u = UI[lang]
     robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
     return """<!doctype html>
-<html lang="en">
+<html lang="%(lang)s">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>%(title)s</title>
 <meta name="description" content="%(desc)s"/>
 %(robots)s<link rel="canonical" href="%(url)s"/>
-<link rel="alternate" type="application/rss+xml" title="%(site)s" href="feed.xml"/>
+%(hreflang)s<link rel="alternate" type="application/rss+xml" title="%(site)s" href="%(feed)s"/>
 <meta property="og:type" content="%(ogt)s"/>
+<meta property="og:locale" content="%(locale)s"/>
 <meta property="og:site_name" content="%(site)s"/>
 <meta property="og:title" content="%(title)s"/>
 <meta property="og:description" content="%(desc)s"/>
@@ -617,24 +828,19 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 </div>
 %(js)s</body>
 </html>
-""" % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
-       "site": esc(SITE_NAME), "ogt": og_type,
+""" % {"lang": lang, "title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
+       "hreflang": _hreflang(url, alt_url), "feed": u["feed"], "locale": u["locale"],
+       "site": esc(u["site"]), "ogt": og_type,
        "css": (CSS + extra_css).replace("__ACCENT__", ACCENT),
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "body": body,
-       "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
+       "chrome": _chrome(active, lang, lang_href), "body": body,
+       "foot": _foot(_shell_hits_path(url), lang), "goat": _goatcounter()}
 
 
 # ───────────────────────────────────────────────────────────────────── pages ──
 
-def build_about():
-    """Who is writing, how an entry is worked, and — above all — what this is
-    not. The Ledger gets away without an About page because its boards explain
-    themselves in their own methods panels; a health publication cannot. This
-    is the page the footer's "nothing here is medical advice" and every entry's
-    .mednote point at."""
-    body = """  <section class="asklede">
+ABOUT_BODY_EN = """  <section class="asklede">
     <h1 class="wtitle">About the Regimen</h1>
     <p class="wsub">Health, nutrition and medicine, one question at a time — read from the
     studies, by a reader.</p>
@@ -711,19 +917,120 @@ def build_about():
     <a href="ask.html#expect">can and can't be used for</a> first.</p>
   </div>
 """
+
+ABOUT_BODY_ES = """  <section class="asklede">
+    <h1 class="wtitle">Acerca del Régimen</h1>
+    <p class="wsub">Salud, nutrición y medicina, una pregunta cada vez — leídas en los
+    estudios, por un lector.</p>
+  </section>
+
+  <div class="panel">
+    <h2>Qué es esto</h2>
+    <p>Un cuaderno de preguntas sobre el cuerpo, trabajadas como es debido. Cada entrada parte de
+    una pregunta que una persona razonable podría hacerse de verdad — qué causa esto, si aquello
+    ayuda, cuánto, comparado con qué — y acude a la literatura científica original para
+    responderla: guías clínicas, revisiones sistemáticas y metaanálisis, ensayos aleatorizados y,
+    por debajo de ellos, los estudios de cohortes, más o menos en ese orden de confianza. Lo que
+    sale de ahí se escribe en lenguaje llano, mostrando el trabajo y con las fuentes listadas al
+    final de cada entrada, para que nada de lo que hay aquí tenga que creerse por fe.</p>
+    <p>Soy un lector, no un médico. Esa es toda la postura de este sitio, y por eso lo dice cada
+    página.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Qué no es esto</h2>
+    <p><b>No es consejo médico, y ninguna respuesta mía lo es tampoco.</b> Nada de lo que hay
+    aquí es un diagnóstico, un tratamiento ni una recomendación de empezar, dejar o cambiar nada
+    de lo que usted toma o hace. Si una entrada toca su propia salud, el paso correcto es una
+    conversación con un médico que le conozca — su historial, sus otras enfermedades, sus otros
+    medicamentos —, y nada de eso puede saberlo una página de internet.</p>
+    <p><b>No lo ha revisado ningún médico.</b> Ningún médico, farmacéutico, dietista ni otro
+    profesional sanitario titulado ha leído, corregido ni aprobado ninguna entrada antes de
+    publicarse. Lo que está leyendo es la lectura que una persona hace de la literatura,
+    cotejada con los artículos originales pero no con un clínico. El
+    <a href="disclaimer.es.html">aviso legal completo</a> dice el resto.</p>
+    <p>Tampoco es algo cerrado. Los estudios se superan, se retractan y se malinterpretan —
+    también por mi parte. Cada entrada enlaza sus fuentes para que pueda comprobarlas, y que me
+    digan que me he equivocado en algo es el mensaje más útil que puede enviarme nadie.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Cómo se elabora una entrada</h2>
+    <ul>
+      <li><b>Una pregunta, planteada al principio.</b> No «todo sobre X», sino una cosa que una
+      persona querría saber de verdad, respondida tan directamente como lo permita la
+      evidencia.</li>
+      <li><b>Fuentes originales, por orden de rango.</b> Una guía clínica o una revisión
+      sistemática pesa más que un ensayo aislado; un ensayo pesa más que un estudio
+      observacional; un mecanismo o un estudio en animales es un motivo para mirar, no una
+      respuesta. Cuando la mejor evidencia disponible es débil, la entrada lo dice en vez de
+      redondear hacia arriba.</li>
+      <li><b>Números, no adjetivos.</b> Cuántas personas, cuánto de grande es el efecto, durante
+      cuánto tiempo, comparado con qué. «Reduce significativamente» no dice nada; «redujo las
+      recurrencias a cinco años del 38 % al 20 %, en un ensayo con 120 hombres» dice algo.</li>
+      <li><b>«Qué dice la evidencia» se mantiene aparte de «qué haría yo».</b> Lo segundo es el
+      juicio de una persona sobre las circunstancias de una persona, y así se etiqueta.</li>
+      <li><b>Fuentes al final de cada entrada</b>, enlazadas, para que la lectura pueda
+      comprobarse y la entrada corregirse.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>Por qué «Régimen»</h2>
+    <p>La palabra es más antigua de lo que suena. Un <i>regimen sanitatis</i> — una regla de salud
+    — fue todo un género medieval: manuales que tomaban el cuerpo como algo que se cuida, como
+    un huerto, a través de lo que se comía y bebía, cómo se dormía, cómo uno se movía, el aire
+    que respiraba y lo que tomaba cuando algo iba mal. El <i>Tacuinum sanitatis</i> de Ibn Butlan,
+    del siglo XI, cuya página de recolectores de coles preside la portada, es uno de ellos. Aquellos
+    libros eran seguros de sí mismos, exhaustivos y, con frecuencia, erróneos. La idea aquí es
+    conservar su alcance — el conjunto de cómo se vive, no solo las pastillas — y perder su
+    seguridad: mostrar el trabajo, citar los estudios y decir hasta qué punto puede uno estar
+    seguro con honestidad.</p>
+  </div>
+
+  <div class="panel">
+    <h2>La edición en español</h2>
+    <p>Las entradas se escriben primero en inglés y se traducen después; el enlace «English» de
+    la cabecera lleva siempre al original. Los estudios citados son los mismos en las dos
+    ediciones, con sus títulos originales, para que puedan comprobarse. Las cifras de
+    prevalencia que aparecen suelen ser estadounidenses, porque de ahí salen las mejores
+    encuestas nacionales; cuando existe un dato español fiable, se dice.</p>
+  </div>
+
+  <div class="panel expect">
+    <h2>Cómo contactar</h2>
+    <p>Cada entrada termina con un botón que abre una respuesta pública en X, y una búsqueda que
+    encuentra lo que otros lectores han dicho sobre esa misma página. Para cualquier cosa que no
+    esté ligada a una entrada — una pregunta, una corrección, un estudio que debería haber leído —
+    hay <a href="ask.es.html">un formulario que llega directamente a mi mesa</a>. Lea antes
+    <a href="ask.es.html#expect">para qué puede y para qué no puede usarse</a>.</p>
+  </div>
+"""
+
+
+def build_about(lang="en"):
+    """Who is writing, how an entry is worked, and — above all — what this is
+    not. The Ledger gets away without an About page because its boards explain
+    themselves in their own methods panels; a health publication cannot. This
+    is the page the footer's "nothing here is medical advice" and every entry's
+    .mednote point at."""
+    if lang == "es":
+        body = ABOUT_BODY_ES
+        return _shell(title="Acerca de — %s" % SITE_NAME_ES,
+                      desc="Qué es El Régimen del Bibliotecario, cómo se elabora cada entrada a "
+                           "partir de la literatura científica, y por qué nada de esto es "
+                           "consejo médico.",
+                      url="%sabout.es.html" % BASE_URL, active="about", body=body,
+                      lang="es", alt_url="%sabout.html" % BASE_URL, lang_href="about.html")
+    body = ABOUT_BODY_EN
     return _shell(title="About — %s" % SITE_NAME,
                   desc="What The Librarian's Regimen is, how each entry is worked from the "
                        "primary literature, and why none of it is medical advice.",
-                  url="%sabout.html" % BASE_URL, active="about", body=body)
+                  url="%sabout.html" % BASE_URL, active="about", body=body,
+                  alt_url="%sabout.es.html" % BASE_URL, lang_href="about.es.html")
 
 
-def build_disclaimer():
-    """The full medical disclaimer — the page the per-page box and the small print
-    link to. Standard-form language for a personal, non-professional health
-    publication; not drafted by a lawyer, and says so nowhere because a disclaimer
-    that undercuts itself is worse than one that doesn't. Revise the date line
-    whenever the text changes."""
-    body = """  <section class="asklede">
+DISCLAIMER_BODY_EN = """  <section class="asklede">
     <h1 class="wtitle">Disclaimer</h1>
     <p class="wsub">Please read this before relying on anything published here. Last revised
     September 10, 2026.</p>
@@ -815,28 +1122,132 @@ def build_disclaimer():
     the <a href="ask.html">ask page</a>.</p>
   </div>
 """
+
+DISCLAIMER_BODY_ES = """  <section class="asklede">
+    <h1 class="wtitle">Aviso legal y médico</h1>
+    <p class="wsub">Léalo antes de fiarse de nada de lo publicado aquí. Última revisión: 10 de
+    septiembre de 2026.</p>
+  </section>
+
+  <div class="panel">
+    <h2>1. No es consejo médico</h2>
+    <p>El Régimen del Bibliotecario — cada entrada, página, imagen, pie de foto, etiqueta,
+    elemento del canal RSS, respuesta a un comentario y contestación a una pregunta — se publica
+    <b>únicamente como información general con fines educativos</b>. Nada de lo que contiene es
+    consejo médico, nutricional, dietético, farmacéutico ni de salud, y nada de ello es un
+    diagnóstico, un plan de tratamiento, una prescripción ni una recomendación de que ningún
+    lector empiece, deje, continúe o cambie ningún medicamento, suplemento, alimento, dieta,
+    ejercicio, prueba, dispositivo o tratamiento. No sustituye el consejo individual de un
+    médico, farmacéutico, dietista-nutricionista, enfermero u otro profesional sanitario
+    titulado que conozca su historial, sus enfermedades y qué más toma.</p>
+  </div>
+
+  <div class="panel">
+    <h2>2. Quién escribe esto, y quién no lo ha revisado</h2>
+    <p>Este sitio lo escribe un particular bajo el seudónimo de Mr. Librarian. El autor
+    <b>no es médico, enfermero, farmacéutico, dietista ni ningún otro profesional sanitario
+    titulado o certificado</b>, no posee ninguna cualificación médica y no está afiliado a
+    ningún hospital, clínica, universidad, colegio profesional ni empresa. <b>Ninguna entrada ha
+    sido revisada, corregida, verificada ni aprobada por un médico ni por nadie que posea una
+    licencia sanitaria</b>, ni antes ni después de su publicación.</p>
+  </div>
+
+  <div class="panel">
+    <h2>3. Ninguna relación profesional</h2>
+    <p>Leer este sitio, suscribirse a él, comentarlo, escribir al autor a través de la página de
+    preguntas o por cualquier otro canal, o recibir una respuesta, <b>no</b> crea ninguna
+    relación médico-paciente, dietista-cliente ni ninguna otra relación profesional o
+    fiduciaria. Cualquier respuesta del autor es la opinión de un lector y queda sujeta a todas
+    las partes de este aviso.</p>
+  </div>
+
+  <div class="panel">
+    <h2>4. Exactitud, vigencia y errores</h2>
+    <p>Las entradas resumen investigación publicada de buena fe y citan sus fuentes para que
+    puedan comprobarse. Aun así, pueden interpretar mal un estudio, omitir otro, citar una cifra
+    que se haya corregido después, o apoyarse en investigación que haya sido superada o
+    retractada. El conocimiento médico cambia; una entrada refleja lo que el autor encontró en la
+    fecha que lleva, y el autor no tiene obligación alguna de actualizarla. <b>Compruebe las
+    fuentes originales antes de fiarse de cualquier cifra, afirmación o conclusión de este
+    sitio.</b></p>
+  </div>
+
+  <div class="panel">
+    <h2>5. Nada de esto es una recomendación</h2>
+    <p>Cuando una entrada menciona un fármaco, un suplemento, una dosis, una dieta, un alimento,
+    un dispositivo, una prueba o un procedimiento, está describiendo lo que un estudio hizo o
+    encontró, no recomendándoselo a usted ni a nadie. Las dosis que se citan son las que usaron
+    esos estudios, reproducidas para que el hallazgo pueda entenderse; no son cantidades que
+    nadie deba tomar. Cuando el autor escribe qué haría él mismo, está claramente etiquetado como
+    el juicio de una persona sobre las circunstancias de una persona, y no es una recomendación
+    para ningún lector.</p>
+  </div>
+
+  <div class="panel">
+    <h2>6. Urgencias</h2>
+    <p><b>Si cree que puede tener una urgencia médica, llame inmediatamente a su médico o al
+    número de emergencias (112 en España y en toda la Unión Europea; 911 en Estados
+    Unidos).</b> Nunca retrase la búsqueda de atención médica, desatienda un consejo profesional
+    ni interrumpa un tratamiento por algo que haya leído aquí.</p>
+  </div>
+
+  <div class="panel">
+    <h2>7. Enlaces, productos e independencia</h2>
+    <p>Los enlaces a otros sitios se ofrecen como referencia. El autor no los controla, no es
+    responsable de su contenido y los enlaza sin respaldarlos. Este sitio no lleva publicidad,
+    patrocinios, enlaces de afiliación ni contenido pagado, y ningún fármaco, suplemento,
+    producto, empresa u organización mencionados en él lo ha respaldado, revisado ni está
+    afiliado a él.</p>
+  </div>
+
+  <div class="panel">
+    <h2>8. Uso bajo su propia responsabilidad; sin garantía; limitación de responsabilidad</h2>
+    <p>Usted utiliza este sitio, y actúa o deja de actuar en función de cualquier cosa que
+    contenga, enteramente bajo su propia responsabilidad. El sitio se ofrece «tal cual» y «según
+    disponibilidad», sin garantía de ningún tipo, expresa o implícita, incluida cualquier garantía
+    de exactitud, integridad, idoneidad para un fin determinado o no infracción. En la máxima
+    medida que permita la legislación aplicable, el autor declina toda responsabilidad por
+    cualquier pérdida, lesión, enfermedad, daño o gasto de cualquier naturaleza — directo,
+    indirecto, incidental, consecuente o de otro tipo — que se derive del uso de este sitio o de
+    la confianza depositada en él o en cualquier cosa publicada en él, o esté relacionado con
+    ellos. Si no está de acuerdo con estas condiciones, no utilice este sitio.</p>
+  </div>
+
+  <div class="panel">
+    <h2>9. Cambios y contacto</h2>
+    <p>Este aviso puede revisarse en cualquier momento; la fecha del encabezado es la del texto
+    vigente. Las preguntas sobre él, o sobre cualquier cosa publicada aquí, pueden enviarse a
+    través de la <a href="ask.es.html">página de preguntas</a>. En caso de discrepancia entre esta
+    traducción y la <a href="disclaimer.html">versión inglesa</a>, prevalece la inglesa.</p>
+  </div>
+"""
+
+
+def build_disclaimer(lang="en"):
+    """The full medical disclaimer — the page the per-page box and the small print
+    link to. Standard-form language for a personal, non-professional health
+    publication; not drafted by a lawyer, and says so nowhere because a disclaimer
+    that undercuts itself is worse than one that doesn't. Revise the date line
+    whenever the text changes. The Spanish text states that the English version
+    prevails on any discrepancy — the one sentence a translation of a disclaimer
+    needs that the original doesn't."""
+    if lang == "es":
+        return _shell(title="Aviso legal y médico — %s" % SITE_NAME_ES,
+                      desc="El aviso legal y médico completo de %s: no es consejo médico, no lo "
+                           "ha revisado ningún médico, no crea ninguna relación profesional, uso "
+                           "bajo su propia responsabilidad." % SITE_NAME_ES,
+                      url="%sdisclaimer.es.html" % BASE_URL, body=DISCLAIMER_BODY_ES,
+                      lang="es", alt_url="%sdisclaimer.html" % BASE_URL,
+                      lang_href="disclaimer.html")
     return _shell(title="Disclaimer — %s" % SITE_NAME,
                   desc="The full medical disclaimer for %s: not medical advice, not reviewed "
                        "by any doctor, no professional relationship, use at your own risk."
                        % SITE_NAME,
-                  url="%sdisclaimer.html" % BASE_URL, body=body)
+                  url="%sdisclaimer.html" % BASE_URL, body=DISCLAIMER_BODY_EN,
+                  alt_url="%sdisclaimer.es.html" % BASE_URL, lang_href="disclaimer.es.html")
 
 
-def build_ask():
-    """The one place a reader can reach the librarian about the writing.
-
-    Posts to FormSubmit — no backend, no database, no cookie. The `re` query
-    parameter carries which entry the reader came from and is filled in
-    client-side.
-
-    ⚠️ The expectations paragraph is not boilerplate. On a publication about
-    health the question it will attract most is "should I take / stop / try X?",
-    and it is the one question that must never get an answer here — not out of
-    caution but because answering it would be practising medicine on a stranger
-    whose history is unknown. Saying so on the form is kinder than saying it in
-    a reply, and it steers people toward the questions that can be answered well.
-    """
-    body = """  <section class="asklede">
+ASK_BODY_EN = """  <section class="asklede">
     <h1 class="wtitle">Ask Mr. Librarian</h1>
     <p class="wsub">A question about something written here, a correction, or a study you
     think I have misread. It goes straight to my desk.</p>
@@ -894,15 +1305,114 @@ def build_ask():
   } catch (e) {}
 })();
 </script>
-""" % {"endpoint": FORM_ENDPOINT, "next": "%sthanks.html" % BASE_URL}
+"""
 
+ASK_BODY_ES = """  <section class="asklede">
+    <h1 class="wtitle">Pregunte a Mr. Librarian</h1>
+    <p class="wsub">Una pregunta sobre algo escrito aquí, una corrección, o un estudio que cree que
+    he leído mal. Llega directamente a mi mesa.</p>
+  </section>
+
+  <div class="panel">
+    <form action="%(endpoint)s" method="POST" class="askform">
+      <input type="hidden" name="_subject" value="El Régimen del Bibliotecario — una pregunta de un lector"/>
+      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="_next" value="%(next)s"/>
+      <!-- Honeypot: una persona real nunca lo ve; un robot lo rellena. -->
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+
+      <label>¿Sobre qué es? <span class="opt">(opcional)</span>
+        <input type="text" name="entry" id="entryField"
+               placeholder="Una entrada, o déjelo en blanco"/>
+      </label>
+      <label>Su nombre <span class="opt">(opcional)</span>
+        <input type="text" name="name" placeholder="Como quiera que le llame — o en blanco"/>
+      </label>
+      <label>Su correo <span class="opt">(opcional — solo si quiere respuesta)</span>
+        <input type="email" name="email" placeholder="usted@ejemplo.com"/>
+      </label>
+      <label>Su pregunta <span class="req">(obligatoria)</span>
+        <textarea name="message" required rows="7"
+          placeholder="¿De qué ensayo sale esa cifra? ¿Ha visto la revisión más reciente? ¿Por qué dio tan poco peso al estudio de cohortes?"></textarea>
+      </label>
+      <button class="btn" type="submit">Enviar</button>
+      <p class="formnote">Al enviar aparece un captcha rápido para dejar fuera a los robots, y
+      después vuelve aquí. Nada se publica: los mensajes llegan a mi bandeja de entrada y los leo
+      todos.</p>
+    </form>
+  </div>
+
+  <div class="panel expect" id="expect">
+    <h2>Qué puedo y qué no puedo responder</h2>
+    <p><b>Pregúnteme</b> de dónde sale una cifra, por qué me fié de un estudio más que de otro,
+    señáleme investigación que se me ha pasado, o dígame que me he equivocado en un dato: esos
+    dos últimos son los mensajes más útiles que envía nadie.</p>
+    <p><b>No me pregunte</b> si debería tomar algo, dejar de tomar algo, o qué significan sus
+    síntomas. No voy a responder a eso, y debería desconfiar de cualquiera en internet que lo
+    hiciera: no conoce su historial, sus otras enfermedades ni qué más toma. Nada de este sitio es
+    consejo médico y ninguna respuesta mía lo será tampoco. Si tiene que ver con su propia salud,
+    por favor, llévelo a un médico que le conozca.</p>
+  </div>
+
+<script>
+// Rellena «sobre qué es» cuando el lector llega desde el pie de una entrada.
+// Se asigna con .value (nunca innerHTML) para que una URL manipulada no pueda inyectar marcado.
+(function(){
+  try {
+    var re = new URLSearchParams(location.search).get('re');
+    var f = document.getElementById('entryField');
+    if (re && f) f.value = re.slice(0, 200);
+  } catch (e) {}
+})();
+</script>
+"""
+
+
+def build_ask(lang="en"):
+    """The one place a reader can reach the librarian about the writing.
+
+    Posts to FormSubmit — no backend, no database, no cookie. The `re` query
+    parameter carries which entry the reader came from and is filled in
+    client-side.
+
+    ⚠️ The expectations paragraph is not boilerplate. On a publication about
+    health the question it will attract most is "should I take / stop / try X?",
+    and it is the one question that must never get an answer here — not out of
+    caution but because answering it would be practising medicine on a stranger
+    whose history is unknown. Saying so on the form is kinder than saying it in
+    a reply, and it steers people toward the questions that can be answered well.
+    """
+    if lang == "es":
+        body = ASK_BODY_ES % {"endpoint": FORM_ENDPOINT, "next": "%sthanks.es.html" % BASE_URL}
+        return _shell(title="Pregunte a Mr. Librarian — %s" % SITE_NAME_ES,
+                      desc="Haga una pregunta sobre algo escrito en %s, señale un estudio que se "
+                           "me haya pasado, o dígame que me he equivocado en un dato." % SITE_NAME_ES,
+                      url="%sask.es.html" % BASE_URL, active="ask", body=body,
+                      lang="es", alt_url="%sask.html" % BASE_URL, lang_href="ask.html")
+    body = ASK_BODY_EN % {"endpoint": FORM_ENDPOINT, "next": "%sthanks.html" % BASE_URL}
     return _shell(title="Ask Mr. Librarian — %s" % SITE_NAME,
                   desc="Ask a question about something written on %s, point me at a study "
                        "I have missed, or tell me I have a fact wrong." % SITE_NAME,
-                  url="%sask.html" % BASE_URL, active="ask", body=body)
+                  url="%sask.html" % BASE_URL, active="ask", body=body,
+                  alt_url="%sask.es.html" % BASE_URL, lang_href="ask.es.html")
 
 
-def build_thanks():
+def build_thanks(lang="en"):
+    if lang == "es":
+        body = """  <section class="asklede">
+    <h1 class="wtitle">Está en la mesa</h1>
+  </section>
+  <div class="panel">
+    <p><b>Su pregunta ha llegado.</b> Gracias — leo todo lo que llega, y que me digan que me he
+    equivocado en un dato es lo más útil que envía nadie.</p>
+    <p>Si dejó un correo y la pregunta pide respuesta, la tendrá. Mientras tanto está
+    <a href="es.html">el resto de lo escrito</a>.</p>
+  </div>
+"""
+        return _shell(title="Pregunta recibida — %s" % SITE_NAME_ES,
+                      desc="Su pregunta está en la mesa del bibliotecario.",
+                      url="%sthanks.es.html" % BASE_URL, body=body, noindex=True, lang="es",
+                      lang_href="thanks.html")
     body = """  <section class="asklede">
     <h1 class="wtitle">It's on the desk</h1>
   </section>
@@ -916,78 +1426,13 @@ def build_thanks():
     # noindex: this page exists only as somewhere to land after submitting.
     return _shell(title="Question received — %s" % SITE_NAME,
                   desc="Your question is on the librarian's desk.",
-                  url="%sthanks.html" % BASE_URL, body=body, noindex=True)
+                  url="%sthanks.html" % BASE_URL, body=body, noindex=True,
+                  lang_href="thanks.es.html")
 
 
-def build_front(entries):
-    """The publication's front page: what has been written, newest first — as a
-    bounded grid of tiles with a list view, a tag filter bar, and the header
-    search, all client-side over one pool. Same construction as the Ledger's
-    front page minus the standing-page tiles."""
-    pool = [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
-                        title=e["title"], desc=e["summary"], date=e["date"],
-                        tags=e["tags"]) for e in entries]
-    pool.sort(key=lambda it: -it["date"].toordinal())
-
-    tiles = "\n".join(_tile(it) for it in pool)
-    rows = "\n".join(_archive_row(it) for it in pool)
-    archive_html = '\n    <ul class="archive" id="archiveList" hidden>\n%s\n    </ul>' % rows
-
-    counts = collections.Counter(t for it in pool for t in it["tags"])
-    all_tags = sorted(counts, key=str.lower)
-    chips = ""
-    if all_tags:
-        shown = [t for t in all_tags if counts[t] >= TAG_BAR_MIN_COUNT]
-        if len(shown) > TAG_BAR_MAX_CHIPS:
-            keep = set(sorted(shown, key=lambda t: (-counts[t], t.lower()))
-                       [:TAG_BAR_MAX_CHIPS])
-            shown = [t for t in all_tags if t in keep]
-        shown_set = set(shown)
-        rare = [t for t in all_tags if t not in shown_set]
-
-        def _chip(t, is_rare=False):
-            n = counts[t]
-            cls = "chip"
-            if is_rare:
-                cls += " rare"
-            elif n >= 5:
-                cls += " w3"
-            elif n >= 3:
-                cls += " w2"
-            return ('<button class="%s" data-tag="%s" title="%d %s">%s</button>'
-                    % (cls, blogkit.tag_slug(t), n, "entry" if n == 1 else "entries", esc(t)))
-
-        more = ""
-        if rare:
-            more = ('<button class="chip more" id="tagMore" type="button" '
-                    'aria-expanded="false" aria-controls="filters" data-count="%d">'
-                    '+ %d more</button>' % (len(rare), len(rare)))
-        chips = ('<div class="filters" id="filters">'
-                 '<button class="chip on" data-tag="">All</button>'
-                 + "".join(_chip(t) for t in shown)
-                 + more
-                 + "".join(_chip(t, is_rare=True) for t in rare)
-                 + "</div>")
-
-    # A brand-new publication has nothing to list yet. Say so in a sentence
-    # rather than rendering an empty grid with a view toggle over nothing.
-    if not pool:
-        viewbar = ""
-        loadmore = ""
-        empty_note = ('    <p class="empty first">The first entry is being written. '
-                      '<a href="feed.xml">Subscribe to the feed</a> to catch it, or read '
-                      '<a href="about.html">how the entries are put together</a> meanwhile.</p>\n')
-    else:
-        empty_note = ""
-        viewbar = ('<div class="viewbar" id="viewbar">View: '
-                   '<button class="viewbtn on" data-view="cards" type="button">\U0001F5C2 Cards</button>'
-                   '<button class="viewbtn" data-view="list" type="button">\U0001F4CB List</button></div>')
-        loadmore = ('<div class="loadmorewrap" id="loadMoreWrap" hidden>'
-                    '<button class="loadmore" id="loadMoreBtn" type="button">Show more</button>'
-                    '<div class="viewcount" id="viewCount"></div></div>')
-    pagination_js = ("""
+FRONT_JS = """
 (function(){
-  var TILE_FIRST = %d, TILE_STEP = 12, LIST_FIRST = 20, LIST_STEP = 40;
+  var TILE_FIRST = __TILE_FIRST__, TILE_STEP = 12, LIST_FIRST = 20, LIST_STEP = 40;
   var tilesWrap = document.getElementById('tiles');
   if (!tilesWrap) return;
   var archiveList = document.getElementById('archiveList');
@@ -1027,8 +1472,8 @@ def build_front(entries):
     });
     var remaining = total - showN;
     if (loadMoreWrap) loadMoreWrap.hidden = remaining <= 0;
-    if (loadMoreBtn) loadMoreBtn.textContent = 'Show ' + Math.min(stepFor(activeView), remaining) + ' more';
-    if (viewCount) viewCount.textContent = total ? ('Showing ' + showN + ' of ' + total) : '';
+    if (loadMoreBtn) loadMoreBtn.textContent = '__JS_SHOW__' + Math.min(stepFor(activeView), remaining) + '__JS_MORE__';
+    if (viewCount) viewCount.textContent = total ? ('__JS_SHOWING__' + showN + '__JS_OF__' + total) : '';
     if (searchEmpty) searchEmpty.hidden = !(query && total === 0);
   }
 
@@ -1066,7 +1511,7 @@ def build_front(entries):
     filterBar.classList.add('tags-open');
     if (more) {
       more.setAttribute('aria-expanded', 'true');
-      more.textContent = '− fewer';
+      more.textContent = '__JS_FEWER__';
     }
   }
 
@@ -1078,7 +1523,7 @@ def build_front(entries):
         if (filterBar.classList.contains('tags-open')) {
           filterBar.classList.remove('tags-open');
           b.setAttribute('aria-expanded', 'false');
-          b.textContent = '+ ' + b.dataset.count + ' more';
+          b.textContent = '__JS_MORE_PREFIX__' + b.dataset.count + '__JS_MORE__';
         } else {
           openTags();
         }
@@ -1124,26 +1569,104 @@ def build_front(entries):
 
   setView('cards');
 })();
-""" % FRONT_TILE_LIMIT)
+"""
 
-    index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
+
+def build_front(entries, lang="en"):
+    """The publication's front page: what has been written, newest first — as a
+    bounded grid of tiles with a list view, a tag filter bar, and the header
+    search, all client-side over one pool. Same construction as the Ledger's
+    front page minus the standing-page tiles. `entries` are the live entries in
+    `lang` (the caller filters); the Spanish front page is es.html."""
+    u = UI[lang]
+    pool = [_front_item(href=e["file"], label=_pretty_date(e["date"], lang).upper(),
+                        title=e["title"], desc=e["summary"], date=e["date"],
+                        tags=e["tags"]) for e in entries]
+    pool.sort(key=lambda it: -it["date"].toordinal())
+
+    tiles = "\n".join(_tile(it) for it in pool)
+    rows = "\n".join(_archive_row(it) for it in pool)
+    archive_html = '\n    <ul class="archive" id="archiveList" hidden>\n%s\n    </ul>' % rows
+
+    counts = collections.Counter(t for it in pool for t in it["tags"])
+    all_tags = sorted(counts, key=str.lower)
+    chips = ""
+    if all_tags:
+        shown = [t for t in all_tags if counts[t] >= TAG_BAR_MIN_COUNT]
+        if len(shown) > TAG_BAR_MAX_CHIPS:
+            keep = set(sorted(shown, key=lambda t: (-counts[t], t.lower()))
+                       [:TAG_BAR_MAX_CHIPS])
+            shown = [t for t in all_tags if t in keep]
+        shown_set = set(shown)
+        rare = [t for t in all_tags if t not in shown_set]
+
+        def _chip(t, is_rare=False):
+            n = counts[t]
+            cls = "chip"
+            if is_rare:
+                cls += " rare"
+            elif n >= 5:
+                cls += " w3"
+            elif n >= 3:
+                cls += " w2"
+            return ('<button class="%s" data-tag="%s" title="%d %s">%s</button>'
+                    % (cls, blogkit.tag_slug(t), n,
+                       u["one_entry"] if n == 1 else u["n_entries"], esc(t)))
+
+        more = ""
+        if rare:
+            more = ('<button class="chip more" id="tagMore" type="button" '
+                    'aria-expanded="false" aria-controls="filters" data-count="%d">'
+                    '%s</button>' % (len(rare), u["chip_more"] % len(rare)))
+        chips = ('<div class="filters" id="filters">'
+                 '<button class="chip on" data-tag="">%s</button>' % u["chip_all"]
+                 + "".join(_chip(t) for t in shown)
+                 + more
+                 + "".join(_chip(t, is_rare=True) for t in rare)
+                 + "</div>")
+
+    # A brand-new publication has nothing to list yet. Say so in a sentence
+    # rather than rendering an empty grid with a view toggle over nothing.
+    if not pool:
+        viewbar = ""
+        loadmore = ""
+        empty_note = '    <p class="empty first">%s</p>\n' % u["first_entry"]
+    else:
+        empty_note = ""
+        viewbar = ('<div class="viewbar" id="viewbar">%s '
+                   '<button class="viewbtn on" data-view="cards" type="button">%s</button>'
+                   '<button class="viewbtn" data-view="list" type="button">%s</button></div>'
+                   % (u["view"], u["cards"], u["list"]))
+        loadmore = ('<div class="loadmorewrap" id="loadMoreWrap" hidden>'
+                    '<button class="loadmore" id="loadMoreBtn" type="button">%s</button>'
+                    '<div class="viewcount" id="viewCount"></div></div>' % u["show_more"])
+    pagination_js = (FRONT_JS
+                     .replace("__TILE_FIRST__", str(FRONT_TILE_LIMIT))
+                     .replace("__JS_SHOW__", u["js_show"]).replace("__JS_MORE_PREFIX__", u["chip_more"].split("%d")[0])
+                     .replace("__JS_MORE__", u["js_more"]).replace("__JS_SHOWING__", u["js_showing"])
+                     .replace("__JS_OF__", u["js_of"]).replace("__JS_FEWER__", u["js_fewer"]))
+
+    url = BASE_URL if lang == "en" else BASE_URL + "es.html"
+    hits_path = "%s/%s" % (BASE, u["front"])
+    index_hits = _hits_widget(hits_path, u["visits"])
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
-    intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
+    intro = '  <p class="tag ftag">%s</p>\n' % esc(u["tagline"])
     return _shell(
-        title="%s — %s" % (SITE_NAME, TAGLINE),
-        desc=BLURB, url=BASE_URL, active="home",
+        title="%s — %s" % (u["site"], u["tagline"]),
+        desc=u["blurb"], url=url, active="home", lang=lang,
+        alt_url=(BASE_URL + "es.html") if lang == "en" else BASE_URL,
         body="""%s%s  <section class="writing">
 %s    %s
     %s
-    <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
+    <p class="empty" id="searchEmpty" hidden>%s</p>
     <div class="tilegrid" id="tiles">
 %s
     </div>%s
     %s
   </section>%s
 %s
-""" % (_front_hero(), intro, empty_note, chips, viewbar, tiles, archive_html, loadmore,
-       index_hits_html, _comment_box(SITE_NAME, BASE_URL)),
+""" % (_front_hero(lang), intro, empty_note, chips, viewbar, esc(u["empty_search"]), tiles,
+       archive_html, loadmore, index_hits_html, _comment_box(u["site"], url, lang)),
         extra_js=pagination_js)
 
 
@@ -1356,6 +1879,14 @@ header.hsm .brand{order:1}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__;border-bottom-color:__ACCENT__}
 .navcb,label.navtoggle{display:none}
+/* The language link: right end of the nav row, never hidden. */
+.langlink{margin-left:auto;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  font-size:13px;color:#93a4bd;text-decoration:none;padding:3px 11px;border-radius:999px;
+  border:1px solid #1e2938}
+.langlink:hover{color:#e8eef7;border-color:__ACCENT__}
+/* "Read this entry in English/Spanish →", under the date on a paired entry. */
+.langnote{margin:-16px 0 24px;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  font-size:13.5px}
 
 .headersearch input[type=search]{
   width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
@@ -1566,22 +2097,39 @@ def build_sitemap(entries, tags):
     """A sitemap is the discovery plan — robots.txt advertises this file. Tag
     pages appear only once they carry TAG_INDEX_MIN entries; submitting a page
     we have marked noindex would be asking Google to index something we told it
-    not to."""
+    not to. Spanish twins are listed too, each pair carrying hreflang
+    alternates (the same convention as the Bible project's sitemap)."""
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    urls = [(BASE_URL, today), ("%sabout.html" % BASE_URL, today),
-            ("%sdisclaimer.html" % BASE_URL, today), ("%sask.html" % BASE_URL, today)]
+    pairs = [(BASE_URL, BASE_URL + "es.html", today)]
+    for name in ("about", "disclaimer", "ask"):
+        pairs.append((BASE_URL + name + ".html", BASE_URL + name + ".es.html", today))
+    urls = []
+    for en, es, mod in pairs:
+        urls.append((en, mod, en, es))
+        urls.append((es, mod, en, es))
     for e in entries:
-        urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
-    for tag, es in sorted(tags.items()):
-        if len(es) >= TAG_INDEX_MIN:
+        loc = BASE_URL + e["file"]
+        if e["twin"]:
+            en, es = (loc, BASE_URL + e["twin"]) if e["lang"] == "en" else (BASE_URL + e["twin"], loc)
+            urls.append((loc, e["date"].isoformat(), en, es))
+        else:
+            urls.append((loc, e["date"].isoformat(), None, None))
+    for tag, es_ in sorted(tags.items()):
+        if len(es_) >= TAG_INDEX_MIN:
             urls.append(("%stag-%s.html" % (BASE_URL, blogkit.tag_slug(tag)),
-                         max(x["date"] for x in es).isoformat()))
-    body = "\n".join(
-        "  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n  </url>" % u
-        for u in urls)
+                         max(x["date"] for x in es_).isoformat(), None, None))
+    rows = []
+    for loc, mod, en, es in urls:
+        alt = ""
+        if en and es:
+            alt = ('\n    <xhtml:link rel="alternate" hreflang="en" href="%s"/>'
+                   '\n    <xhtml:link rel="alternate" hreflang="es" href="%s"/>'
+                   '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % (en, es, en))
+        rows.append("  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>%s\n  </url>" % (loc, mod, alt))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-            + body + "\n</urlset>\n")
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+            'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+            + "\n".join(rows) + "\n</urlset>\n")
 
 
 def _prune_stale_tag_pages(tags):
@@ -1630,45 +2178,55 @@ def main():
     entries = load_entries(include_drafts=include_drafts)
     live = [e for e in entries if not e["draft"]]
     check_entries(entries)
+    live_en = [e for e in live if e["lang"] == "en"]
+    live_es = [e for e in live if e["lang"] == "es"]
 
-    tags = tag_index(live)
+    tags = tag_index(live_en)
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
 
     def write(name, text):
         with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
             fh.write(text)
 
-    write("index.html", build_front(live))
-    write("about.html", build_about())
-    write("ask.html", build_ask())
-    write("thanks.html", build_thanks())
-    write("disclaimer.html", build_disclaimer())
+    write("index.html", build_front(live_en, "en"))
+    write("es.html", build_front(live_es, "es"))
+    for lang in ("en", "es"):
+        u = UI[lang]
+        write(u["about"], build_about(lang))
+        write(u["ask"], build_ask(lang))
+        write(u["thanks"], build_thanks(lang))
+        write(u["disclaimer"], build_disclaimer(lang))
 
     for e in entries:
-        # `live`, not `entries`: "Keep reading" may only advertise published
-        # entries, never a draft (unlisted + noindexed by contract).
-        write(e["file"], build_entry_page(e, live))
-    for tag, es in tags.items():
+        # Same-language, LIVE pool only: "Keep reading" may only advertise
+        # published entries, never a draft (unlisted + noindexed by contract).
+        pool = live_en if e["lang"] == "en" else live_es
+        write(e["file"], build_entry_page(e, pool))
+    for tag, es_ in tags.items():
         write("tag-%s.html" % blogkit.tag_slug(tag),
-              build_tag_page(tag, es, len(es) >= TAG_INDEX_MIN))
+              build_tag_page(tag, es_, len(es_) >= TAG_INDEX_MIN))
     tl = build_tag_list(tags)
     if tl:
         write("tags.html", tl)
-    write("feed.xml", blogkit.build_feed(live, site_name=SITE_NAME, site_url=SITE_URL,
+    write("feed.xml", blogkit.build_feed(live_en, site_name=SITE_NAME, site_url=SITE_URL,
                                          base=BASE, blurb=BLURB))
+    write("feed.es.xml", blogkit.build_feed(live_es, site_name=SITE_NAME_ES, site_url=SITE_URL,
+                                            base=BASE, blurb=BLURB_ES))
     write("sitemap.xml", build_sitemap(live, tags))
 
     _prune_stale_tag_pages(tags)
 
     indexable = sum(1 for v in tags.values() if len(v) >= TAG_INDEX_MIN)
-    print("built /health/ — %d entr%s (%d live), %d tag page%s (%d indexable, %d held "
-          "back at <%d entries)"
-          % (len(entries), "y" if len(entries) == 1 else "ies", len(live),
-             len(tags), "" if len(tags) == 1 else "s", indexable,
+    print("built /health/ — %d entr%s (%d live: %d English, %d Spanish), %d tag page%s "
+          "(%d indexable, %d held back at <%d entries)"
+          % (len(entries), "y" if len(entries) == 1 else "ies", len(live), len(live_en),
+             len(live_es), len(tags), "" if len(tags) == 1 else "s", indexable,
              len(tags) - indexable, TAG_INDEX_MIN))
     for e in entries:
-        print("  %s  %-38s %s" % (e["date"], e["file"], "[DRAFT]" if e["draft"] else ""))
+        print("  %s  %-44s %s%s" % (e["date"], e["file"], "[DRAFT] " if e["draft"] else "",
+                                   ("↔ " + e["twin"]) if e["twin"] else ""))
     return 0
+
 
 
 if __name__ == "__main__":
