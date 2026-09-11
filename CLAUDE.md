@@ -754,9 +754,30 @@ hub's fourth card, so change both or neither.
   a symptom, a number from his own labs), it comes from what he actually said, or it is left
   out. Research about a condition is fine; asserting he has it is not, unless he told you.
 
+- **The Spanish edition (2026-09-10 — the kidney-stone entry is for a Spanish friend).**
+  Same conventions as the Bible project's: a twin is a `.es.html` file beside its English
+  original — `source/health/YYYY-MM-DD-slug.es.html` (same front-matter vocabulary, its own
+  Spanish title/summary/tags, body translated, SAME source list with the SAME citation
+  numbers) builds to `health/<slug>.es.html`; the front page's twin is `es.html`; About /
+  Ask / Thanks / Disclaimer have `.es.html` twins; the feed is `feed.es.xml`. Every page
+  carries `lang`, `og:locale`, hreflang alternates (head + sitemap) and a header language
+  link (to the twin when one exists, else the other front page); a paired entry also gets a
+  "Read this entry in English / Leer esta entrada en español →" line under its date.
+  **Tag pages are English-only** — a Spanish entry's chips hand off to `es.html?tag=…`.
+  Every reader-visible string is in `UI[lang]` in `build_health.py`; `e["lang"]` is set at
+  load, never sniffed from the filename. Site name in Spanish is "El Régimen del
+  Bibliotecario"; the author stays "Mr. Librarian" (a name, as on the Spanish Bible pages).
+  Spanish (Spain): `usted` for the reader, Spanish number format (43.545 / 1,17 / 67 %),
+  112 ahead of 911 in the emergency line, and the Spanish disclaimer says the English text
+  prevails on any discrepancy. ⭐ **Twin-diff before shipping**: the two editions must cite
+  the same source numbers the same number of times (`Counter` over `href="#src-N"` in each
+  body) — a translation that drops or moves a citation is a defect, same rule as the Bible
+  chapters' notes.
+
 **Adding an entry:** copy `source/health/_template.html` to
 `source/health/YYYY-MM-DD-slug.html` (the header comment is the checklist), rebuild, commit
-`health/` + `source/health/`, push. Pictures go in `health/img/` web-sized and EXIF-stripped
+`health/` + `source/health/`, push. A Spanish twin is optional per entry and is the same file
+with `.es.html`. Pictures go in `health/img/` web-sized and EXIF-stripped
 (`tools/travel_photos.py` for a photo; for a public-domain illustration keep the source and
 licence for `hero_credit:`). The sitemap is advertised in the root `robots.txt`; submit
 `health/sitemap.xml` once in Google Search Console, same as the other two.

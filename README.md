@@ -129,3 +129,6 @@ python3 build_health.py --drafts   # LOCAL preview incl. draft: true entries —
   live. `draft: true` simply keeps it out of the build.
 - **Every entry must end with a `<ol class="sources">`** — the build refuses one without it.
 - **Nothing on it is medical advice**, and the site says so on every page; keep it that way.
+- **Spanish edition:** an entry's twin is the same file with `.es.html`
+  (`source/health/YYYY-MM-DD-slug.es.html`); the Spanish front page is `health/es.html`, and
+  About / Ask / Disclaimer have `.es.html` twins. Both editions build from the one command.
