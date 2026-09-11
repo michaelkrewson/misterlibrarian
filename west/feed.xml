@@ -6,6 +6,12 @@
   <atom:link href="https://mistertranslation.com/west/feed.xml" rel="self" type="application/rss+xml"/>
   <description>The Krewson family's four centuries in America — Croesen, Kroesen, Kroessen, Kreuso, Cruse, Krewson — from a cooper who landed at Breuckelen around 1660, through Staten Island, Bucks County, Ohio, Iowa and the Pacific. Non-fiction, read from the family's own record and the colonial church books, published a chapter at a time by Michael V. Krewson.</description>
   <language>en</language>
-
+  <item>
+    <title>Two Witnesses at the Font</title>
+    <link>https://mistertranslation.com/west/two-witnesses-at-the-font.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/west/two-witnesses-at-the-font.html</guid>
+    <pubDate>Fri, 11 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On 5 July 1662 a baby named Elizabeth Cregier was baptized in the Reformed Dutch Church of New Amsterdam. The two men who stood as her witnesses were her grandfathers — the city's Burgomaster and the colony's Schout-Fiscal. Twenty-six months later both of them signed the surrender of New Netherland to the English. This is where the family's American story begins: not with the cooper, but with the girl his son would marry, born at the top of a world that was about to end.</description>
+  </item>
 </channel>
 </rss>
