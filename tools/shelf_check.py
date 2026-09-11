@@ -452,7 +452,7 @@ def main():
     for m in re.finditer(r'id="v\d+-(\d+)".*?href="#(n[\d-]+)"', frag, re.S):
         v2n.setdefault(m.group(2), set()).add(m.group(1))
 
-    notes = re.findall(r'<div class="note" id="(n[\d-]+)">(.*?)\n  </div>', frag, re.S)
+    notes = re.findall(r'<div class="note" id="(n[\d-]+)">(.*?)\n {2,4}</div>', frag, re.S)
     if not notes:
         print("no notes found in fragment -- is this a chapter panel?"); return 2
 

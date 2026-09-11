@@ -77,7 +77,7 @@ KNOWN LIMITS, stated rather than implied:
 """
 import argparse, glob, html, os, re, sys
 
-NOTE = re.compile(r'<div class="note" id="(n[\d-]+)">(.*?)\n  </div>', re.S)
+NOTE = re.compile(r'<div class="note" id="(n[\d-]+)">(.*?)\n {2,4}</div>', re.S)
 PARA = re.compile(r'<p>(.*?)</p>', re.S)
 TAG = re.compile(r'class="tag (t-[a-z0-9]+)"')
 HREF = re.compile(r'href="([^"]+)"')
