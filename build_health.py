@@ -280,12 +280,37 @@ def _legal():
             'health advice, and no reply from Mr. Librarian is either. This site is one '
             'reader\'s reading of published research — not a diagnosis, not a treatment, '
             'not a recommendation to start, stop or change anything — and it does not '
-            'replace a conversation with a clinician who knows you. Studies are '
-            'summarised in good faith from public sources and may be misread, '
-            'superseded or simply wrong; check the originals before relying on '
-            'anything here. No drug, product, company or organization named on this '
-            'site has endorsed it or is affiliated with it.</p>'
+            'replace a conversation with a clinician who knows you. It has not been '
+            'reviewed, edited or approved by any physician or other licensed health '
+            'professional. Studies are summarised in good faith from public sources and '
+            'may be misread, superseded or simply wrong; check the originals before '
+            'relying on anything here. No drug, supplement, product, company or '
+            'organization named on this site has endorsed it or is affiliated with it; '
+            'nothing here is sponsored. Use of this site is at your own risk — see the '
+            '<a href="disclaimer.html">full disclaimer</a>.</p>'
             % (datetime.now(timezone.utc).year, esc(SITE_NAME)))
+
+
+def _disclaimer_box():
+    """The medical disclaimer, on every page, above the footer, at a size meant to
+    be read (the .legal small print below it is the copyright/affiliation line).
+    Michael's ask, 2026-09-10: say on every page that none of this is medical
+    advice and none of it has been reviewed by a doctor. Kept to the sentences a
+    reader actually needs; the full text is disclaimer.html."""
+    return ('<aside class="disclaimer" aria-label="Medical disclaimer">'
+            '<p><strong>Medical disclaimer.</strong> Everything on this site is general '
+            'information for education only. It is <strong>not medical, nutritional or '
+            'health advice</strong>, and it is not a substitute for advice from a licensed '
+            'physician, pharmacist, dietitian or other qualified health professional who '
+            'knows you. The author is not a licensed health professional and writes under '
+            'a pen name; <strong>no entry has been reviewed by a doctor</strong> or anyone '
+            'else with a medical licence. Reading this site, or writing to it, creates no '
+            'doctor–patient or other professional relationship. Do not start, stop or change '
+            'any medication, supplement, diet or treatment because of something read here — '
+            'talk to your clinician first. If you think you may have a medical emergency, '
+            'call your doctor or your local emergency number (911 in the United States) '
+            'now. <a href="disclaimer.html">Read the full disclaimer →</a></p>'
+            '</aside>')
 
 
 def _foot(hits_path=None):
@@ -296,11 +321,12 @@ def _foot(hits_path=None):
     hits = _hits_widget(hits_path, " views") if hits_path else ""
     hits_bit = " · %s" % hits if hits else ""
     sibs = " · ".join('<a href="%s">%s</a>' % (url, esc(name)) for name, url, _ in SIBLINGS)
-    return ('<footer>%s · <a href="about.html">About</a> · '
+    return ('%s<footer>%s · <a href="about.html">About</a> · '
+            '<a href="disclaimer.html">Disclaimer</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · %s · '
             'nothing here is medical advice%s%s</footer>'
-            % (esc(SITE_NAME), sibs, hits_bit, _legal()))
+            % (_disclaimer_box(), esc(SITE_NAME), sibs, hits_bit, _legal()))
 
 
 def _shell_hits_path(url):
@@ -632,6 +658,11 @@ def build_about():
     or do. If an entry touches on your own health, the right next step is a conversation
     with a clinician who knows you — your history, your other conditions, your other
     medications — none of which a page on the internet can know.</p>
+    <p><b>It has not been reviewed by a doctor.</b> No physician, pharmacist, dietitian or
+    other licensed health professional has read, edited or approved any entry before it went
+    up. What you are reading is one person's reading of the literature, checked against the
+    original papers but not against a clinician. The
+    <a href="disclaimer.html">full disclaimer</a> says the rest.</p>
     <p>It is also not settled. Studies get superseded, retracted and misread — including by
     me. Every entry links its sources so you can check them, and being told I have got
     something wrong is the most useful message anyone can send.</p>
@@ -682,6 +713,111 @@ def build_about():
                   desc="What The Librarian's Regimen is, how each entry is worked from the "
                        "primary literature, and why none of it is medical advice.",
                   url="%sabout.html" % BASE_URL, active="about", body=body)
+
+
+def build_disclaimer():
+    """The full medical disclaimer — the page the per-page box and the small print
+    link to. Standard-form language for a personal, non-professional health
+    publication; not drafted by a lawyer, and says so nowhere because a disclaimer
+    that undercuts itself is worse than one that doesn't. Revise the date line
+    whenever the text changes."""
+    body = """  <section class="asklede">
+    <h1 class="wtitle">Disclaimer</h1>
+    <p class="wsub">Please read this before relying on anything published here. Last revised
+    September 10, 2026.</p>
+  </section>
+
+  <div class="panel">
+    <h2>1. Not medical advice</h2>
+    <p>The Librarian's Regimen — every entry, page, image, caption, tag, feed item, reply to a
+    comment and answer to a question — is published for <b>general information and education
+    only</b>. Nothing on it is medical, nutritional, dietary, pharmaceutical or health advice,
+    and nothing on it is a diagnosis, a treatment plan, a prescription, or a recommendation
+    that any reader start, stop, continue or change any medication, supplement, food, diet,
+    exercise, test, device or treatment. It is not a substitute for the individual advice of a
+    licensed physician, pharmacist, registered dietitian, nurse or other qualified health
+    professional who knows your history, your conditions, and what else you take.</p>
+  </div>
+
+  <div class="panel">
+    <h2>2. Who writes this, and who has not reviewed it</h2>
+    <p>This site is written by one private individual under the pen name Mr. Librarian. The
+    author is <b>not a physician, nurse, pharmacist, dietitian, or any other licensed or
+    certified health professional</b>, holds no medical qualification, and is not affiliated
+    with any hospital, clinic, university, professional body or company. <b>No entry has been
+    reviewed, edited, fact-checked or approved by a physician or by anyone else holding a
+    health-care licence</b>, before or after publication.</p>
+  </div>
+
+  <div class="panel">
+    <h2>3. No professional relationship</h2>
+    <p>Reading this site, subscribing to it, commenting on it, writing to the author through
+    the ask page or any other channel, or receiving a reply, does <b>not</b> create a
+    physician–patient, dietitian–client, or any other professional or fiduciary relationship.
+    Any reply from the author is one reader's opinion and is subject to every part of this
+    disclaimer.</p>
+  </div>
+
+  <div class="panel">
+    <h2>4. Accuracy, currency and errors</h2>
+    <p>Entries summarise published research in good faith and cite their sources so they can
+    be checked. They may nonetheless misread a study, omit one, quote a figure that has since
+    been corrected, or rest on research that has been superseded or retracted. Medical
+    knowledge changes; an entry reflects what the author found on the date it carries, and
+    the author is under no obligation to update it. <b>Check the original sources before
+    relying on any number, claim or conclusion here.</b></p>
+  </div>
+
+  <div class="panel">
+    <h2>5. Nothing here is a recommendation</h2>
+    <p>Where an entry names a drug, supplement, dose, diet, food, device, test or procedure,
+    it is describing what a study did or found — not recommending it to you or anyone. Doses
+    quoted are the doses those studies used, reported so the finding can be understood; they
+    are not amounts anyone should take. Where the author writes what he would do himself, that
+    is clearly labelled as one person's judgment about one person's circumstances and is not a
+    recommendation to any reader.</p>
+  </div>
+
+  <div class="panel">
+    <h2>6. Emergencies</h2>
+    <p><b>If you think you may have a medical emergency, call your doctor or your local
+    emergency number (911 in the United States) immediately.</b> Never delay seeking care,
+    disregard professional advice, or stop a treatment because of something you read here.</p>
+  </div>
+
+  <div class="panel">
+    <h2>7. Links, products and independence</h2>
+    <p>Links to other sites are provided for reference. The author does not control them, is
+    not responsible for their content, and links to them without endorsement. This site
+    carries no advertising, no sponsorship, no affiliate links and no paid placements, and no
+    drug, supplement, product, company or organization named on it has endorsed it, reviewed
+    it, or is affiliated with it.</p>
+  </div>
+
+  <div class="panel">
+    <h2>8. Use at your own risk; no warranty; limitation of liability</h2>
+    <p>You use this site, and act or refrain from acting on anything in it, entirely at your
+    own risk. The site is provided "as is" and "as available", without warranty of any kind,
+    express or implied, including any warranty of accuracy, completeness, fitness for a
+    particular purpose, or non-infringement. To the fullest extent permitted by applicable
+    law, the author disclaims all liability for any loss, injury, illness, damage or expense
+    of any kind — direct, indirect, incidental, consequential or otherwise — arising out of
+    or in connection with the use of, or reliance on, this site or anything published on it.
+    If you do not agree to these terms, do not use this site.</p>
+  </div>
+
+  <div class="panel">
+    <h2>9. Changes and contact</h2>
+    <p>This disclaimer may be revised at any time; the date at the top is the date of the
+    current text. Questions about it, or about anything published here, can be sent through
+    the <a href="ask.html">ask page</a>.</p>
+  </div>
+"""
+    return _shell(title="Disclaimer — %s" % SITE_NAME,
+                  desc="The full medical disclaimer for %s: not medical advice, not reviewed "
+                       "by any doctor, no professional relationship, use at your own risk."
+                       % SITE_NAME,
+                  url="%sdisclaimer.html" % BASE_URL, body=body)
 
 
 def build_ask():
@@ -1112,10 +1248,21 @@ h1 .em{color:__ACCENT__;font-style:italic}
 .panel li{margin:0 0 8px}
 .panel b{color:#e8eef7;font-weight:600}
 .asklede + .panel{margin-top:0}
-footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+/* The medical disclaimer, every page, above the footer. Sized to be READ
+   (13.5px, normal contrast) — the .legal small print below it is where the
+   copyright/affiliation boilerplate goes. Dashed border + the accent tint
+   match the per-entry .mednote so the two read as one family. */
+.disclaimer{max-width:760px;margin:56px auto 0;padding:16px 20px;
+  border:1px dashed #2a4a3f;border-radius:11px;background:rgba(63,210,168,.045)}
+.disclaimer p{margin:0;color:#a9b7c9;font-size:13.5px;line-height:1.65;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.disclaimer strong{color:#d6e0ee}
+.disclaimer a{color:#8fd9c2;white-space:nowrap}
+footer{margin:28px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
 .pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
@@ -1428,7 +1575,7 @@ def build_sitemap(entries, tags):
     not to."""
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(BASE_URL, today), ("%sabout.html" % BASE_URL, today),
-            ("%sask.html" % BASE_URL, today)]
+            ("%sdisclaimer.html" % BASE_URL, today), ("%sask.html" % BASE_URL, today)]
     for e in entries:
         urls.append(("%s%s" % (BASE_URL, e["file"]), e["date"].isoformat()))
     for tag, es in sorted(tags.items()):
@@ -1501,6 +1648,7 @@ def main():
     write("about.html", build_about())
     write("ask.html", build_ask())
     write("thanks.html", build_thanks())
+    write("disclaimer.html", build_disclaimer())
 
     for e in entries:
         # `live`, not `entries`: "Keep reading" may only advertise published
