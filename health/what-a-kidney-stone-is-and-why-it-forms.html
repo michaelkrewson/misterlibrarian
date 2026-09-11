@@ -75,10 +75,21 @@ h1 .em{color:#3fd2a8;font-style:italic}
 .panel li{margin:0 0 8px}
 .panel b{color:#e8eef7;font-weight:600}
 .asklede + .panel{margin-top:0}
-footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+/* The medical disclaimer, every page, above the footer. Sized to be READ
+   (13.5px, normal contrast) — the .legal small print below it is where the
+   copyright/affiliation boilerplate goes. Dashed border + the accent tint
+   match the per-entry .mednote so the two read as one family. */
+.disclaimer{max-width:760px;margin:56px auto 0;padding:16px 20px;
+  border:1px dashed #2a4a3f;border-radius:11px;background:rgba(63,210,168,.045)}
+.disclaimer p{margin:0;color:#a9b7c9;font-size:13.5px;line-height:1.65;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.disclaimer strong{color:#d6e0ee}
+.disclaimer a{color:#8fd9c2;white-space:nowrap}
+footer{margin:28px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
 .pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
@@ -687,8 +698,9 @@ number that does matter is how much comes out of the tap, not what was taken out
 
 <p>This is the one of the three where the intuition is partly right, and there is a proper
 randomised trial to say by how much. The Women's Health Initiative gave <strong>36,282
-postmenopausal women</strong> either 1,000 mg of calcium carbonate with 400 IU of vitamin D
-a day, or placebo, for an average of <strong>seven years</strong>. Stones were reported by 449
+postmenopausal women</strong> either 1,000 mg a day of elemental calcium as <strong>calcium
+carbonate</strong> — the form in most supermarket supplements and antacids — with 400 IU of
+vitamin D<sub>3</sub>, or placebo, for an average of <strong>seven years</strong>. Stones were reported by 449
 women on the supplement and 381 on placebo — a hazard ratio of <strong>1.17</strong> (95% CI
 1.02–1.34) <a href="#src-29">[29]</a> <a href="#src-30">[30]</a>. In absolute terms that is
 2.5% against 2.1%: about <strong>one extra stone for every 270 women</strong> taking the pill for
@@ -697,14 +709,18 @@ earlier — supplemental calcium, RR 1.20 — and noticed that two-thirds of the
 took it away from meals or with meals that had little oxalate to bind <a href="#src-13">[13]</a>.</p>
 
 <p>That timing is the mechanism, and it has been tested directly. Thirty-two healthy men took
-three grams of calcium carbonate a day for a week, either as one gram with each meal or as the
-whole dose at bedtime, then crossed over. With meals, urinary calcium rose but urinary oxalate
+three grams of calcium carbonate a day (about 1,200 mg of calcium) for a week, either as one
+gram with each meal or as the whole dose at bedtime, then crossed over. With meals, urinary calcium rose but urinary oxalate
 <em>fell</em> and citrate rose, and the calculated tendency of the urine to form calcium
 oxalate did not change. At bedtime, urinary calcium rose the same amount, oxalate did not
 move, and the tendency to form calcium oxalate rose significantly <a href="#src-31">[31]</a>.
 Calcium in food is protective because it meets oxalate in the gut; calcium in a pill on an
 empty stomach is the same calcium arriving with nothing to bind. The supplement is not the
-villain; the empty stomach is.</p>
+villain; the empty stomach is. The other common form, <strong>calcium citrate</strong>, has
+only been tested on urine, not stones: in 18 postmenopausal women, 400 mg of calcium as
+citrate twice a day raised urinary calcium and citrate together, lowered oxalate, and left the
+urine's calcium oxalate saturation unchanged <a href="#src-41">[41]</a> — a plausible
+advantage over the carbonate, with no stone-count trial behind it.</p>
 
 <p>The other pills, briefly. <strong>Vitamin D</strong> on its own has not shown a stone signal
 in trials: 5,110 adults given 100,000 IU a month (about 3,300 IU a day) for a median 3.3 years
@@ -718,10 +734,31 @@ the supplement with the clearest signal, because the body turns part of it into 
 in men — and none in women <a href="#src-34">[34]</a>; a Swedish cohort of 23,355 men put
 ascorbic-acid tablet users at roughly double the risk, though letters to the journal argued
 part of that is men on high-dose vitamin C being scanned more readily <a href="#src-35">[35]</a>.
-<strong>Magnesium</strong> runs the other way in every dataset that has it — the highest fifth of
-dietary intake had 29% fewer stones in men <a href="#src-36">[36]</a>, and magnesium in water 12%
-fewer <a href="#src-26">[26]</a> — but no trial has tested a magnesium pill alone for stone
-prevention, so that is an association, not a treatment. <strong>Short answer: the calcium pill
+<strong>Magnesium</strong> runs the other way in every dataset that has it — but it matters which
+magnesium, because three different things have gone by that name above.</p>
+
+<p>In water it is the dissolved ion, leached from dolomite and magnesium-bearing limestone, and
+the UK Biobank's 12% fewer stones above 5 mg per litre is about that <a href="#src-26">[26]</a>.
+In the cohorts it is magnesium in food — nuts, seeds, beans, whole grains, leafy greens — where
+the highest fifth of intake had 29% fewer stones in men <a href="#src-36">[36]</a>. Neither is a
+pill. The pills have been tested, and the result depends on the salt. <strong>Magnesium
+hydroxide</strong> — milk of magnesia — is the one magnesium salt ever put on its own against a
+placebo for stone recurrence: at 650 or 1,300 mg a day it did no better than the placebo, in a
+trial that also watched the placebo group form 56% fewer stones than their own histories
+predicted — a lesson in why "I started taking it and the stones stopped" proves nothing
+<a href="#src-37">[37]</a>. <strong>Potassium-magnesium citrate</strong> did work: 64 recurrent
+stone formers, three years, new stones in 63.6% on placebo and 12.9% on the salt
+<a href="#src-38">[38]</a>. But that salt carries 63 mEq of citrate and 42 of potassium
+alongside its 21 of magnesium, and citrate salts with no magnesium in them cut new stones by
+a similar margin across seven trials <a href="#src-39">[39]</a> — so the citrate is the likely
+active half. The only head-to-head between magnesium salts is on urine, not stones: 90
+stone formers with high urinary oxalate were randomised to <strong>magnesium oxide</strong>,
+<strong>magnesium citrate</strong> or placebo, 120 mg three times a day with meals for eight
+weeks; both lowered urinary oxalate, the citrate about twice as much (−17 against −8 mg a
+day), and only the citrate significantly lowered the calcium oxalate supersaturation
+<a href="#src-40">[40]</a>. So the magnesium with evidence behind it is the magnesium already in
+food and hard water; as a pill, the citrate salt — and probably as much for its citrate as its
+magnesium; and the hydroxide failed the one fair test it was given. <strong>Short answer: the calcium pill
 most people take for their bones raises stone risk by about a sixth over seven years — small
 in absolute terms, and avoidable in principle by taking it with food; the supplement to be
 genuinely wary of is high-dose vitamin C, in men.</strong></p>
@@ -768,6 +805,11 @@ between them means.</p>
   <li id="src-34">Ferraro PM, Curhan GC, Gambaro G, Taylor EN. <em>Total, dietary, and supplemental vitamin C intake and risk of incident kidney stones.</em> American Journal of Kidney Diseases, 2016. <a href="https://doi.org/10.1053/j.ajkd.2015.09.005" rel="noopener" target="_blank">doi:10.1053/j.ajkd.2015.09.005</a></li>
   <li id="src-35">Thomas LDK, Elinder C-G, Tiselius H-G, Wolk A, Åkesson A. <em>Ascorbic acid supplements and kidney stone incidence among men: a prospective study.</em> JAMA Internal Medicine, 2013. <a href="https://doi.org/10.1001/jamainternmed.2013.2296" rel="noopener" target="_blank">doi:10.1001/jamainternmed.2013.2296</a></li>
   <li id="src-36">Taylor EN, Stampfer MJ, Curhan GC. <em>Dietary factors and the risk of incident kidney stones in men: new insights after 14 years of follow-up.</em> Journal of the American Society of Nephrology, 2004. <a href="https://doi.org/10.1097/01.ASN.0000146012.44570.20" rel="noopener" target="_blank">doi:10.1097/01.ASN.0000146012.44570.20</a></li>
+  <li id="src-37">Ettinger B, Citron JT, Livermore B, Dolman LI. <em>Chlorthalidone reduces calcium oxalate calculous recurrence but magnesium hydroxide does not.</em> Journal of Urology, 1988. <a href="https://doi.org/10.1016/S0022-5347(17)42599-7" rel="noopener" target="_blank">doi:10.1016/S0022-5347(17)42599-7</a></li>
+  <li id="src-38">Ettinger B, Pak CYC, Citron JT, et al. <em>Potassium-magnesium citrate is an effective prophylaxis against recurrent calcium oxalate nephrolithiasis.</em> Journal of Urology, 1997. <a href="https://doi.org/10.1016/S0022-5347(01)68155-2" rel="noopener" target="_blank">doi:10.1016/S0022-5347(01)68155-2</a></li>
+  <li id="src-39">Phillips R, Hanchanale VS, Myatt A, et al. <em>Citrate salts for preventing and treating calcium containing kidney stones in adults.</em> Cochrane Database of Systematic Reviews, 2015. <a href="https://doi.org/10.1002/14651858.CD010057.pub2" rel="noopener" target="_blank">doi:10.1002/14651858.CD010057.pub2</a></li>
+  <li id="src-40">Taheri M, et al. <em>Effect of magnesium oxide or citrate supplements on metabolic risk factors in kidney stone formers with idiopathic hyperoxaluria: a randomized clinical trial.</em> Magnesium Research, 2024. <a href="https://doi.org/10.1684/mrh.2024.0524" rel="noopener" target="_blank">doi:10.1684/mrh.2024.0524</a></li>
+  <li id="src-41">Sakhaee K, Poindexter JR, Pak CYC. <em>Stone forming risk of calcium citrate supplementation in healthy postmenopausal women.</em> Journal of Urology, 2004. <a href="https://doi.org/10.1097/01.ju.0000136400.14728.cd" rel="noopener" target="_blank">doi:10.1097/01.ju.0000136400.14728.cd</a></li>
 </ol>
 
     <div class="tags"><a class="tg" href="tag-kidney-stones.html">kidney stones</a><a class="tg" href="tag-urology.html">urology</a><a class="tg" href="tag-nutrition.html">nutrition</a><a class="tg" href="tag-calcium.html">calcium</a><a class="tg" href="tag-oxalate.html">oxalate</a><a class="tg" href="tag-uric-acid.html">uric acid</a><a class="tg" href="tag-hydration.html">hydration</a><a class="tg" href="tag-sodium.html">sodium</a><a class="tg" href="tag-diet.html">diet</a><a class="tg" href="tag-first-principles.html">first principles</a><a class="tg" href="tag-supplements.html">supplements</a><a class="tg" href="tag-hard-water.html">hard water</a><a class="tg" href="tag-vitamin-c.html">vitamin C</a><a class="tg" href="tag-vitamin-d.html">vitamin D</a></div>
@@ -776,7 +818,7 @@ between them means.</p>
   <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20What%20a%20Kidney%20Stone%20Actually%20Is%2C%20and%20Why%20It%20Forms%3A%0A%0Ahttps%3A//mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/health/what-a-kidney-stone-is-and-why-it-forms.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
 
   <p class="backlink"><a href="index.html">← Back to the Regimen</a></p>
-<footer>The Librarian&#x27;s Regimen · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is medical advice · <span class="hits" id="hits-health-what-a-kidney-stone-is-and-why-it-forms-html">👁 <span id="hits-health-what-a-kidney-stone-is-and-why-it-forms-html-n">—</span> views</span>
+<aside class="disclaimer" aria-label="Medical disclaimer"><p><strong>Medical disclaimer.</strong> Everything on this site is general information for education only. It is <strong>not medical, nutritional or health advice</strong>, and it is not a substitute for advice from a licensed physician, pharmacist, dietitian or other qualified health professional who knows you. The author is not a licensed health professional and writes under a pen name; <strong>no entry has been reviewed by a doctor</strong> or anyone else with a medical licence. Reading this site, or writing to it, creates no doctor–patient or other professional relationship. Do not start, stop or change any medication, supplement, diet or treatment because of something read here — talk to your clinician first. If you think you may have a medical emergency, call your doctor or your local emergency number (911 in the United States) now. <a href="disclaimer.html">Read the full disclaimer →</a></p></aside><footer>The Librarian&#x27;s Regimen · <a href="about.html">About</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is medical advice · <span class="hits" id="hits-health-what-a-kidney-stone-is-and-why-it-forms-html">👁 <span id="hits-health-what-a-kidney-stone-is-and-why-it-forms-html-n">—</span> views</span>
 <script>
 (function(){
   fetch("https://mistertranslation.goatcounter.com/counter/%2Fhealth%2Fwhat-a-kidney-stone-is-and-why-it-forms.html.json")
@@ -790,7 +832,7 @@ between them means.</p>
       var el = document.getElementById("hits-health-what-a-kidney-stone-is-and-why-it-forms-html"); if (el) el.style.display = "none";
     });
 })();
-</script><p class="legal">© 2026 The Librarian&#x27;s Regimen. Nothing on this site is medical, nutritional or health advice, and no reply from Mr. Librarian is either. This site is one reader's reading of published research — not a diagnosis, not a treatment, not a recommendation to start, stop or change anything — and it does not replace a conversation with a clinician who knows you. Studies are summarised in good faith from public sources and may be misread, superseded or simply wrong; check the originals before relying on anything here. No drug, product, company or organization named on this site has endorsed it or is affiliated with it.</p></footer>
+</script><p class="legal">© 2026 The Librarian&#x27;s Regimen. Nothing on this site is medical, nutritional or health advice, and no reply from Mr. Librarian is either. This site is one reader's reading of published research — not a diagnosis, not a treatment, not a recommendation to start, stop or change anything — and it does not replace a conversation with a clinician who knows you. It has not been reviewed, edited or approved by any physician or other licensed health professional. Studies are summarised in good faith from public sources and may be misread, superseded or simply wrong; check the originals before relying on anything here. No drug, supplement, product, company or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored. Use of this site is at your own risk — see the <a href="disclaimer.html">full disclaimer</a>.</p></footer>
 </div>
 </body>
 </html>

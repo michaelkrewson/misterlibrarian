@@ -76,10 +76,21 @@ h1 .em{color:#3fd2a8;font-style:italic}
 .panel li{margin:0 0 8px}
 .panel b{color:#e8eef7;font-weight:600}
 .asklede + .panel{margin-top:0}
-footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+/* The medical disclaimer, every page, above the footer. Sized to be READ
+   (13.5px, normal contrast) — the .legal small print below it is where the
+   copyright/affiliation boilerplate goes. Dashed border + the accent tint
+   match the per-entry .mednote so the two read as one family. */
+.disclaimer{max-width:760px;margin:56px auto 0;padding:16px 20px;
+  border:1px dashed #2a4a3f;border-radius:11px;background:rgba(63,210,168,.045)}
+.disclaimer p{margin:0;color:#a9b7c9;font-size:13.5px;line-height:1.65;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.disclaimer strong{color:#d6e0ee}
+.disclaimer a{color:#8fd9c2;white-space:nowrap}
+footer{margin:28px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
   color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
 .legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
   font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
 .ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
 .pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
 
@@ -389,7 +400,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <a href="index.html">the rest of the writing</a>.</p>
   </div>
 
-  <footer>The Librarian&#x27;s Regimen · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is medical advice · <span class="hits" id="hits-health-thanks-html">👁 <span id="hits-health-thanks-html-n">—</span> views</span>
+  <aside class="disclaimer" aria-label="Medical disclaimer"><p><strong>Medical disclaimer.</strong> Everything on this site is general information for education only. It is <strong>not medical, nutritional or health advice</strong>, and it is not a substitute for advice from a licensed physician, pharmacist, dietitian or other qualified health professional who knows you. The author is not a licensed health professional and writes under a pen name; <strong>no entry has been reviewed by a doctor</strong> or anyone else with a medical licence. Reading this site, or writing to it, creates no doctor–patient or other professional relationship. Do not start, stop or change any medication, supplement, diet or treatment because of something read here — talk to your clinician first. If you think you may have a medical emergency, call your doctor or your local emergency number (911 in the United States) now. <a href="disclaimer.html">Read the full disclaimer →</a></p></aside><footer>The Librarian&#x27;s Regimen · <a href="about.html">About</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · nothing here is medical advice · <span class="hits" id="hits-health-thanks-html">👁 <span id="hits-health-thanks-html-n">—</span> views</span>
 <script>
 (function(){
   fetch("https://mistertranslation.goatcounter.com/counter/%2Fhealth%2Fthanks.html.json")
@@ -403,7 +414,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       var el = document.getElementById("hits-health-thanks-html"); if (el) el.style.display = "none";
     });
 })();
-</script><p class="legal">© 2026 The Librarian&#x27;s Regimen. Nothing on this site is medical, nutritional or health advice, and no reply from Mr. Librarian is either. This site is one reader's reading of published research — not a diagnosis, not a treatment, not a recommendation to start, stop or change anything — and it does not replace a conversation with a clinician who knows you. Studies are summarised in good faith from public sources and may be misread, superseded or simply wrong; check the originals before relying on anything here. No drug, product, company or organization named on this site has endorsed it or is affiliated with it.</p></footer>
+</script><p class="legal">© 2026 The Librarian&#x27;s Regimen. Nothing on this site is medical, nutritional or health advice, and no reply from Mr. Librarian is either. This site is one reader's reading of published research — not a diagnosis, not a treatment, not a recommendation to start, stop or change anything — and it does not replace a conversation with a clinician who knows you. It has not been reviewed, edited or approved by any physician or other licensed health professional. Studies are summarised in good faith from public sources and may be misread, superseded or simply wrong; check the originals before relying on anything here. No drug, supplement, product, company or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored. Use of this site is at your own risk — see the <a href="disclaimer.html">full disclaimer</a>.</p></footer>
 </div>
 </body>
 </html>

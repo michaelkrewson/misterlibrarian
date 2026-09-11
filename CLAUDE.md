@@ -735,6 +735,20 @@ hub's fourth card, so change both or neither.
   "don't ask me whether you should take something" all say the site doesn't do that; every
   entry is where the promise is kept. Keep every one of those in place — they are not
   boilerplate to trim.
+- **A boxed medical disclaimer sits above the footer of EVERY page** (`_disclaimer_box()`,
+  rendered by `_foot`; Michael's ask 2026-09-10: "none of this is medical advice nor
+  reviewed by any doctor") — not medical advice, author not a licensed professional, no
+  entry reviewed by a doctor, no doctor–patient relationship, don't start/stop anything,
+  911 in an emergency — linking to the full `disclaimer.html` (`build_disclaimer()`: nine
+  numbered sections incl. no-warranty / limitation of liability; a "Last revised" date in
+  its lede — bump it when the text changes). The About page's "What this is not" and the
+  `.legal` small print both say "not reviewed by a doctor" too. Standard-form language,
+  not lawyer-drafted; if he ever wants it reviewed, that's a human step.
+- **Name the salt.** "Calcium" and "magnesium" are not one thing: WHI gave calcium
+  CARBONATE (1,000 mg elemental); magnesium HYDROXIDE failed its placebo trial while
+  potassium-magnesium CITRATE succeeded (probably the citrate). An entry that says "a
+  calcium pill" or "a magnesium pill" without the form got a correction from Michael on
+  day one — say which, every time.
 - **Never invent his experience** — the travel-blog rule applies here with more force, since
   the natural subject is his own body. If an entry touches something personal (a diagnosis,
   a symptom, a number from his own labs), it comes from what he actually said, or it is left
