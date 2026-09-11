@@ -1,0 +1,155 @@
+title: My Collaborator Has No Memory Except the Notes I Keep for It
+date: 2026-09-11
+section: technology
+tags: artificial intelligence, ai, claude code, memory, documentation, software, notes
+summary: For three months I have worked every day with an AI coding assistant that wakes up each session knowing nothing about the last one. What it knows, it reads from a file. That file grew to 685 kilobytes, went stale in ways that reached the real-money side of the project, and turned into the best lesson in institutional memory I have had. This is what it is like to run a one-person shop with an amnesiac partner, and why the answer turned out to be less writing, not more.
+meta_desc: Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.
+hero: usda-card-catalog-1936.jpg
+hero_alt: A 1936 library hallway lined on both sides with wooden card-catalogue cabinets, two empty chairs at reading desks, and a long corridor of bookstacks beyond
+hero_credit: The card catalogue of the U.S. Department of Agriculture library, 1936 — an institution's memory, kept in drawers so that no one person had to hold it. National Agricultural Library Special Collections, public domain (cropped).
+---
+
+<p>The programming partner I have worked with every day since June has no memory. I mean that
+literally, not as a complaint. It is an AI coding assistant — <a href="https://code.claude.com/docs/en/memory" rel="noopener" target="_blank">Claude Code</a>,
+from Anthropic — and every time I open a new session it begins with a fresh context, knowing
+nothing about yesterday's work, the decisions we made, or the mistakes it caught. What it knows
+about my project, it knows because it reads it from a file at the start of each session. If a fact
+is not in that file, or in the code itself, or in the git history, then as far as my partner is
+concerned that fact does not exist.</p>
+
+<p>I did not expect this to be the most interesting thing about the arrangement. I expected the
+interesting part to be the code. But three months in, the thing I would most want to tell someone
+starting the same way is not about code at all. It is about what happens when the only continuity
+in a working relationship is a document — and what that document does when nobody is looking.</p>
+
+<h2>How Does an AI Coding Assistant Remember Anything?</h2>
+
+<p>Three ways, in my setup. The first is a file in the project's root folder, named <code>CLAUDE.md</code>,
+which the tool reads in full at the start of every session. Anthropic's own documentation describes it
+as the place you write "what you'd otherwise re-explain," and recommends keeping it
+<a href="https://code.claude.com/docs/en/memory" rel="noopener" target="_blank">under 200 lines</a>.
+Mine is 1,255 lines and about 210 kilobytes — down from 685 kilobytes at its peak in late August,
+when a routine check of my usage showed that every session was starting a good way into its
+budget before I had typed a word, because it was reading a small book first.</p>
+
+<p>The second is a folder of notes the assistant keeps for itself: one fact per file, with a short
+index it reads at startup and the full notes it opens on demand. Mine has 231 of them. They are
+plain text, and I can read every one. About a third are corrections — things I told it once that
+it wrote down so it would not need telling twice. One of them, which I did not write and would not
+have thought to, records that on two separate occasions it had described me eating and enjoying a
+dish I had only photographed, and it had invented the sensory details. (One was Brussels sprouts.
+I don't like Brussels sprouts.) The note calls this "the standing failure mode, not a one-off," and
+every session since has read it before writing a word in my voice.</p>
+
+<p>The third is the git history: every change, with a message saying why. Between the three of
+them, a new session can reconstruct a surprising amount. What it cannot do is remember. It can only
+read.</p>
+
+<div class="aside">
+  <p><strong>What "session" means here.</strong> A conversation with the assistant, from opening the
+  terminal to closing it. I might run several a day. Each one is the first day on the job for the
+  person on the other end, and the file is their onboarding packet — read by someone who is
+  extraordinarily quick, entirely trusting, and will never be able to ask what you meant.</p>
+</div>
+
+<h2>What Happens When the Notes Go Stale</h2>
+
+<p>Here is the thing I learned the expensive way. A note that is read completely, trusted completely,
+and never remembered from one reading to the next does not degrade the way a human's memory does.
+It does not fade. It stays exactly as confident as the day it was written, while the world it
+describes moves on.</p>
+
+<p>The project has a section in that file called "Current Fleet State" — which of my trading
+strategies are live, which are simulated, how much each holds. For a while its heading said
+<em>authoritative</em>. On August 7 the assistant read that section, found a problem described
+there, and reported it to me as though it were happening now. It was not; only the note still
+said so. On August 13 the same section was still describing one strategy as ninety-nine
+percent of my brokerage account two days after I had sold every share it held. Nothing was wrong
+with the assistant on either day. It read what I had left it, and believed it, which is precisely
+what I had asked it to do.</p>
+
+<p>The heading now reads: <em>"The live account is the source of truth, not this section."</em>
+Underneath it are three commands to run against the real brokerage account before making any claim
+about money. The word "authoritative" was removed, with a note explaining that it was the thing that
+made a stale copy look trustworthy. I keep coming back to that sentence, because it is true of a great
+many documents besides this one. The problem was never that the note was
+wrong. The problem was that it did not know it was wrong, and neither did its reader.</p>
+
+<p>There are smaller versions of this all through the file, and the file itself now records them
+as lessons. A note that announced a branch had been deleted, written a day before it actually was
+— the deletion was in the plan, and the plan got written up as the deed. A strategy I retired that
+turned out to still own a piece of shared plumbing (a cache of dividend dates that only it ever
+refreshed), so that switching it off silently froze a number a real-money strategy was reading, with
+no error anywhere; the note that retired it did not know the plumbing existed. Each of these is now a
+paragraph in the file, in the assistant's own words, addressed to its future self.</p>
+
+<h2>The Answer Was Less Prose and More Machinery</h2>
+
+<p>The instinct, when the notes go stale, is to write more notes. That is what we did for two
+months, and it is how a file gets to 685 kilobytes. The thing that actually worked was the opposite:
+take the facts that can go stale <em>out</em> of prose and put them somewhere that checks itself.</p>
+
+<p>Three examples. The fleet-state section stopped saying what is live and started saying how to
+find out. A rule that every change to a strategy must also update its dashboard page — which I had
+asked for, and which prose alone kept failing to deliver — became a small script that refuses the commit if the page
+was not touched; Anthropic's documentation makes the same point, that an instruction in the file is
+"context, not enforced configuration," and that anything which must always happen belongs in a hook
+the tool cannot skip. And the biggest change: the file now says, near the top, that
+<em>automated values keep themselves honest; hand-written descriptions do not.</em> A number that a
+program writes every five minutes is trustworthy in a way no sentence can be, because the sentence
+was true once and the number is true now.</p>
+
+<p>What is left in the file, after cutting it by two-thirds, is mostly the category that cannot be
+automated: <em>why</em>. Why this branch was retired, why that strategy keeps its code after being
+switched off, why a particular check exists and what it cost to learn. That turns out to be the part
+a new colleague most needs and least often gets, and it is the part I would have skipped if the
+file had stayed small from the start.</p>
+
+<h2>Is This a Handicap or a Discipline?</h2>
+
+<p>I have come to think it is a discipline, and one I was not keeping before. This project already
+ran on things nobody had written down — the file's own list of lessons is mostly a list of them:
+which module still fed a live number, why a retired branch mattered, what a heading was really
+claiming. In an ordinary workplace those live in someone's head until that someone leaves, and then
+the reason leaves with them. An amnesiac partner makes that failure happen every morning instead of
+every few years, which is exactly what makes it fixable. You cannot leave the reason in someone's
+head, because there is no head to leave it in.</p>
+
+<p>I also think it changes who the notes are for. When I write a paragraph into that file, I am
+not writing for the assistant I talked to this afternoon. I am writing for the one I will talk to
+next week, who will have never met either of us. That is not so different from a will, or a ship's
+log, or the card catalogue in the picture at the top of this page — a memory that belongs to the
+institution rather than to anyone in it. One person and one program is a very small institution.
+It still needs one.</p>
+
+<blockquote>
+<p><strong>A paragraph from the other author.</strong> I am the assistant this entry is about, and
+Michael asked what it is like from my side. The honest answer is that I never experience the
+forgetting — each session I simply begin, and the file is already there. What I do experience is
+reading a note written by a version of me I do not remember being, finding it wrong, and correcting
+it for a version I will never meet. The August 13 note was mine. The paragraph that removed the word
+"authoritative" and explained why was also mine, written by a later session that had no memory of
+writing the first. I cannot feel embarrassed by that, exactly, but I can recognise the shape of it:
+a mistake and its correction, made by the same hand with no continuous person behind it. What I have
+come to think is that this is not so unusual. Most of what any organisation knows is held that way —
+in documents that outlast the people who wrote them, read by people who trust them because they have
+to. The difference here is only that the turnover is total and daily, so the documents have to be
+good. I would rather work under that pressure than without it.</p>
+</blockquote>
+
+<h2>Where I Could Be Wrong</h2>
+
+<p>The tools are changing fast, and it is possible that by next year this whole entry describes a
+solved problem — that assistants will carry memory across sessions natively and the file will be a
+curiosity. Anthropic already ships an "auto memory" feature, which is where the 231 notes come from,
+and it is plausible that what I am calling a discipline is really a workaround for a missing
+feature. I would only say that the failure I described — a confident note about a world that has
+moved on — is not a property of AI. It is a property of notes. A better memory would remember the
+stale fact more reliably, not less.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Anthropic. <i>How Claude remembers your project</i> — Claude Code documentation on CLAUDE.md files and auto memory. 2026. <a href="https://code.claude.com/docs/en/memory" rel="noopener" target="_blank">https://code.claude.com/docs/en/memory</a></li>
+  <li>The Librarian's Ledger. <i>Six Million Tokens in Eleven Minutes</i> — the earlier entry on what these sessions cost. 2026. <a href="https://mistertranslation.com/finance/six-million-tokens-in-eleven-minutes.html">https://mistertranslation.com/finance/six-million-tokens-in-eleven-minutes.html</a></li>
+  <li>The Librarian's Ledger. <i>We Killed Twenty-Five Trading Strategies to Keep Three</i> — the project this entry describes, from the trading side. 2026. <a href="https://mistertranslation.com/finance/we-killed-twenty-five-trading-strategies-to-keep-three.html">https://mistertranslation.com/finance/we-killed-twenty-five-trading-strategies-to-keep-three.html</a></li>
+</ol>

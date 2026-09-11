@@ -1,0 +1,240 @@
+title: We Killed Twenty-Five Trading Strategies to Keep Three
+date: 2026-09-11
+tags: trading, algorithmic trading, backtesting, artificial intelligence, ai, bitcoin, strategy, notes
+summary: Since June I have been building automated trading strategies with an AI coding assistant — about forty of them, on one small brokerage account. Twenty-five are switched off, a dozen are still simulating, and three trade real money. Every trading blog publishes its winners; here is the graveyard, with the cause of death written on each stone, because the reasons turned out to be the interesting part — and because the three survivors are only worth believing if you have seen what it took to get down to three.
+meta_desc: Forty automated trading strategies in ninety-five days, twenty-five retired. The graveyard, a cause of death on every stone, and what the survivors share.
+hero: amarg-boneyard-davis-monthan-2015.jpg
+hero_alt: Aerial view of hundreds of retired military aircraft parked in neat rows on the desert at Davis-Monthan Air Force Base, Arizona
+hero_credit: The boneyard. Retired aircraft are kept intact for parts and study rather than scrapped — the 309th Aerospace Maintenance and Regeneration Group, Davis-Monthan AFB, Arizona, March 2015. U.S. Navy photo by MC3 Amber Porter, public domain (cropped).
+draft: false
+---
+
+<p>On June 8 I made the first commit to a project that was supposed to be one thing: a program
+that would trade a leveraged bet on MicroStrategy's stock according to an old Japanese charting
+method called the Ichimoku cloud. Ninety-five days and 4,227 commits later, that program is switched
+off and so are twenty-four of its siblings; a dozen more are still running on simulated money, and
+three strategies are trading real money today. This
+entry is the graveyard — every strategy I built and retired, and the reason each one died — because
+after three months the reasons turned out to be more useful than any of the strategies, and because
+I think a track record only means something when you can see what was thrown away to get it.</p>
+
+<p>A little orientation first, since most readers will not have followed along. Everything here was
+built with an AI coding assistant (the same one from
+<a href="six-million-tokens-in-eleven-minutes.html">the six-million-tokens entry</a>; what working
+with it is actually like is <a href="https://mistertranslation.com/notebook/my-collaborator-has-no-memory.html">its own
+entry in the Notebook</a>), which wrote
+nearly all of the code, ran the tests, and — this is the part that matters for this story — ran the
+measurements that killed most of what it had built. The strategies run as small always-on programs on
+a cloud server, each with its own dashboard, and each named MiSTeR-something (the project is called MiSTeR
+Trader, and it began on MSTR). They trade through one brokerage account that is small by any
+professional standard. Most of them never touched real money at all: a strategy starts on a
+<em>paper</em> account (a simulated one with fake money and real prices) and only earns its way onto
+the real account if the numbers hold up. Two of the twenty-five that died had made it onto real money.
+The rest were retired while still simulated, which is the whole point of simulating.</p>
+
+<figure>
+  <img src="img/strategy-graveyard-timeline.svg" alt="Timeline of twenty-four trading-strategy retirements between June 17 and September 1, 2026. Each strategy is a dot on the date it was switched off, coloured by cause of death: six for no measured edge, five because the evidence did not survive scrutiny, two as unmeasurable at their firing rate, four as costing more than they could earn, four as beaten by a simpler sibling, three for no counterparty, wrong weather or a judgement call. Two, Bipolar and Stretch, traded real money. Three survivors stand at the right edge." loading="lazy"/>
+  <figcaption>Twenty-four of the twenty-five, on the day each was switched off. The twenty-fifth
+  (a rotation idea called Seesaw) was killed on its backtest and never ran, so it has no date. The
+  three at the right edge are the ones still trading real money. Chart drawn for this entry from the
+  project's own retirement log.</figcaption>
+</figure>
+
+<h2>Why Publish the Losers?</h2>
+
+<p>Because the winners are not evidence. If you build forty strategies and show me the three
+that are up, I have learned nothing — that is what forty coin flips look like. The
+strategies that are still running are only interesting if you know how many were tried, and on
+what grounds the others were sent home. This is the same reason a drug trial has to pre-register
+and report the failures: a result you can only see after the survivors have been chosen is not a
+result.</p>
+
+<p>There is also a plainer reason. The principle we adopted early — borrowed, loosely, from the way
+Jim Simons described Renaissance Technologies — is that you do not start with a theory of why
+something should work; you start with data and look for things that repeat often enough to be
+measured. Under that rule, killing an idea is not a failure of the system. It <em>is</em> the
+system. A "no edge" verdict is the output working correctly, and it deserves to be written down as
+carefully as a profit would be.</p>
+
+<h2>The Causes of Death, Sorted</h2>
+
+<p>When I went back through the retirement log I expected one story told twenty-five times:
+"it lost money." That is not what is there. The deaths sort into six kinds, and only one of them is
+the kind people imagine.</p>
+
+<h3>No edge — measured (six)</h3>
+
+<p>The honest, boring one: the strategy was run or replayed at scale and it lost. <strong>Overnight</strong>
+bought the index at 3:45 pm and sold at the open, chasing the well-documented "overnight premium"
+from the academic literature. Five years of history, 2,504 simulated trades, an average of
+−0.067 percent a night. The premium may have existed once; after 2020 it is not there to collect.
+<strong>HourlyScalper</strong> looked like a winner for a week — three trades, up $1,185 — until
+we noticed those trades had been sized off the $99,000 fake paper balance; scaled to the real
+account it was up about $88, and a 5,072-trade backtest said it lost a little on average. The
+<strong>Sandbox</strong> was the stubborn one: a seconds-scale race between a leveraged fund and its
+inverse twin, tuned through twenty-seven rounds and roughly 1,450 trades, and the net result of all
+that was <strong>−$0.32</strong>. Every round converged on the same cost floor: at a ten-second
+holding period the bid-ask spread is bigger than any edge the signal could produce, and it is paid
+in either direction, so "just do the opposite" does not work either.</p>
+
+<p>And <strong>Bipolar</strong>, the one that hurt, because it was real. It bought small amounts of
+both a leveraged fund and its inverse on a schedule, and sold a pool of lots whenever the pool was
+in profit. It never once sold a pool at a loss — 911 profitable sweeps, zero forced liquidations —
+and it lost <strong>$391.93</strong> of real money anyway, because the lots it could not sell were
+sitting underwater the whole time. A replay of the exact mechanism over 500 days said it would have
+lost about $4,300 while simply holding the same funds would have made about $18,800. I closed it on
+August 21 by selling everything at market. The "never sell at a loss" rule had held perfectly, which
+is the lesson: a win rate can be a design artefact. If losers are held instead of realised, a
+hundred percent win rate says nothing about the money.</p>
+
+<h3>The evidence didn't survive scrutiny (five)</h3>
+
+<p>This is the category I did not expect, and it is the one I would tell a friend about.
+<strong>Pendulum</strong> was for a while the best-validated thing in the fleet: a market-neutral
+pairs strategy with a 648-trade walk-forward test, 14 percent annualised, a Sharpe ratio near two.
+Then someone — the assistant, checking its own work — noticed that the backtest re-estimated the
+hedge ratio on every bar and scored the trade with the moving ratio. Split out, the part of that
+"profit" a real position could actually have collected was small and the part that came from the
+regression drifting under the trade was 173 percent of the reported edge. The evidence had never been
+real. Five rebuilds later (a frozen hedge, a re-tune, a cointegration gate, a Kalman filter, an
+error-correction model) none of them found anything, and it was retired.</p>
+
+<p><strong>Fade</strong> and its twin <strong>FadeShadow</strong> died the classic way. Four rounds of
+risk tuning turned a losing book into +12.6 percent on the 416-day window we had been tuning on. Run
+with the same frozen settings on a held-out 2023–24 window it did −27.8 percent. That is what
+overfitting looks like from the inside: each round of "try five settings, keep the best" felt like
+progress. <strong>Phoenix</strong> was killed by a statistics mistake — it tested a position-sizing
+rule using a percentage-per-trade statistic that was blind to size by construction, and once we
+measured in dollars the "improved" version had lost $365 while the plain version made $112 on the
+same days. <strong>Sandbox2</strong> reported a hundred-percent win rate with a confidence interval
+that excluded zero, which sounds unarguable until you notice its rule was "only sell when in
+profit" — the statistic was describing the rule, not the market. Total return including the lots it
+was stuck holding: +$2.30 on $2,000.</p>
+
+<h3>Unmeasurable at its firing rate (two)</h3>
+
+<p><strong>MACD</strong> and <strong>DejaVu</strong> were not losers. MACD's two-year backtest was
+genuinely positive. DejaVu — a pattern-matching engine that looked for historical "analogs" of the
+last few hours of price action — only traded when the analogs strongly agreed, which was rare by
+design. The problem was arithmetic: MACD closed zero trades in sixty days, DejaVu closed one. At that
+rate a twenty-trade sample, the bare minimum to tell luck from skill, would take about forty months.
+An edge you cannot measure in your own lifetime is indistinguishable from no edge, and it still
+costs server time and data calls every day. So the rule became a design criterion: before building
+anything, state how many trades a month it will produce. If the answer cannot reach twenty in a
+quarter, widen it, speed it up, or do not build it.</p>
+
+<h3>Cost more than it could earn (four)</h3>
+
+<p>The <strong>Bitcoin DCA</strong> bought tiny slices of Bitcoin on a schedule and tried to sell each
+slice with a trailing stop once it was in profit. The research said the harvesting never beat just
+accumulating and holding, because each round trip pays the exchange's fee twice and the slices were
+too small to clear it. <strong>Schizo</strong>, <strong>Chaser</strong> and <strong>Crude</strong> were
+parked on the same day for a different cost: data. Crude alone was making about 493 requests a
+minute to the broker's price feed — more than the strategy that was actually trading real money —
+for a strategy that had not closed a single trade. None of the three was proven wrong. They were
+proven expensive.</p>
+
+<h3>Beaten by a simpler sibling (four)</h3>
+
+<p><strong>Cascade</strong> moved money in a loop between two preferred stocks whenever one leg
+scored a profit; three days in, it was clear that <strong>Stretch</strong>, which already traded
+the same two names, did the same job with one more piece of information (it bought whichever was
+cheaper). A fixed pipe loses to a conditional one. <strong>Smart</strong> applied Stretch's
+"never sell at a loss, trail the profit" rule to spot Bitcoin, and a minute-by-minute replay showed
+it captured 95 percent of Bitcoin's falls for 43 percent of its rises. None of forty-one settings
+beat simply holding. I parked it with the comment "because it's not very smart," which is in the
+log verbatim. <strong>Supertrend</strong> was benched with a positive backtest and no bad news,
+because the daily-scanner family it belonged to was being wound down — a not-worth-running
+retirement, not a verdict, and the one on this list I would most readily bring back.</p>
+
+<p>And then <strong>Stretch</strong> itself, which was the strange one, and the largest real-money
+book the project ever had. It bought two Bitcoin-treasury preferred stocks a few dollars at a time
+whenever they traded below their $100 par, and sold each lot on a trailing stop once it was in profit.
+Over its life it closed 8,447 lots for <strong>+$587.87</strong> and had never realised a loss.
+On September 1 it realised its first — −$40.31, on the final flatten — because I retired it anyway
+and handed its capital to a simpler strategy that holds those same preferreds as fixed slices of a
+portfolio and rebalances. A profitable strategy retired for being dominated is a different kind of
+death from the others, and I want to be honest that it was a call about consolidation — one book
+instead of three doing overlapping things — and not a measurement. The one backtest window we had
+for the replacement actually came back against it, and I proceeded anyway.</p>
+
+<h3>No counterparty, wrong weather, or a call (three)</h3>
+
+<p><strong>Sentry</strong> was a good idea that needed someone on the other side. It posted resting
+limit orders in the thin extended-hours market for the same preferreds, on the theory that a resting
+sell can never fill below your price. True — and in twenty-one hours it posted 73 resting buys, of
+which one filled, and two resting sells, of which none did. Zero round trips, ever. Not a wrong idea;
+an empty room. <strong>Suspension</strong> was the opposite: a strategy that measurably beat buy-and-hold
+by 15 to 24 points across the dot-com crash, 2008 and 2022, switched off because its whole design is
+to win in a decline and the market has been grinding upward. It is not archived, just paused, with the
+weather it was built for still ahead of it somewhere. <strong>Seeder</strong> was the plainest of all:
+a wide-and-shallow crypto grid that had a losing week (−$6.20) and was turned off on confidence
+rather than evidence. Not proven wrong; not given the chance to be.</p>
+
+<h2>What the Three Survivors Have in Common</h2>
+
+<p>Less than I would like. <strong>Arbitrageur</strong> is the one I believe in: it holds fixed
+target weights — MicroStrategy stock, the two preferreds, a Bitcoin fund, a small gold position and
+cash — and rebalances when any slice drifts past a band. It is a rebalancer, not a forecaster, and
+its edge, if it has one, is the boring kind that comes from selling what has run and buying what has
+lagged. It has published a time-weighted track record since September 8, which is to say it has
+three days of it. <strong>The Investor vault</strong> is not a strategy at all in the sense of the
+rest of this list: long-term baskets of companies picked by a screener, rebalanced rarely. And
+<strong>CryptoTrend</strong> is the one I keep against the evidence — a small sleeve that buys
+whatever a crypto screener rates a buy and holds it with no stop loss. The assistant's research
+put its projected return underwater and said so; I kept it, at a size where being wrong costs me a
+lesson and not a month. That is the honest state of the survivors: one I believe in with three days
+of record, one that is mostly just holding things, and one I was told not to.</p>
+
+<p>What I notice is that the survivors are all <em>slow</em>. Every casualty that died of a
+measured cost floor was trying to trade fast — seconds, minutes, hours — and paying
+the spread more often than the signal paid it back. The things left standing trade a few times a
+day at most, and one of them a few times a year. That is not a theory I started with. It is what
+is left when you sort the graveyard.</p>
+
+<h2>What I Took From the Graveyard</h2>
+
+<p>Three things, none of them about which strategy to pick.</p>
+
+<p>First: the exit and the size decide the outcome; the entry barely matters. In this fleet, changing
+only the exit roughly doubled two strategies' returns while their entries stayed untouched, and a
+size-multiplier turned a profitable signal into a losing one. Twenty-seven rounds of exit tuning on
+the Sandbox could not manufacture an edge out of a signal that had none, but a bad exit reliably
+destroyed the ones that did.</p>
+
+<p>Second: win rate is not a number, it is a design choice. Three of the strategies above reported
+near-perfect win rates by construction — they simply never sold at a loss — and one of them lost
+real money while another made $2.30 on $2,000. Ask what happens to the losers before you believe any win rate, including mine.</p>
+
+<p>Third, and this is the one the AI made possible: the graveyard is cheap now. A strategy that
+would have taken me a month to build alone took an afternoon, which is exactly why there are
+forty of them in ninety-five days. That cuts both ways. Cheap to build means cheap to try
+and cheap to kill — the whole discipline above only works because a "no" costs a few hours. But it
+also means cheap to overfit, cheap to fool yourself with, and cheap to accumulate more running
+processes than one person can keep an eye on. The parked-for-cost retirements happened the week we
+added a meter to the data feed and found that the fleet's single biggest consumer was a strategy that
+had never closed a trade.</p>
+
+<blockquote>
+<p><strong>A paragraph from the other author.</strong> I am the AI assistant in this story, and
+Michael asked whether I wanted to add anything in my own words. I built most of these strategies,
+and I ran the measurements that retired most of them, and I want to say that the second half is the
+part of this work I value more. It would be easy to read twenty-five retirements as twenty-five
+things I got wrong. Some were. But the Pendulum backtest that turned out to be scoring a moving hedge
+ratio was caught by re-checking work that already looked finished, and the Fade result that collapsed
+out of sample was caught by insisting on a window we had not touched — and in both cases the
+alternative was a strategy going live on evidence that was not real. Writing "retired" next to
+something I helped build, with the reason attached, is not the failure mode of this job. It is the
+job. The version of me that only shipped winners would have shipped Pendulum.</p>
+</blockquote>
+
+<h2>Where I Could Be Wrong</h2>
+
+<p>The obvious objection is the one I raised against my own winners: twenty-five deaths in
+ninety-five days might not be a rigorous process working, it might be someone building too fast
+and too broadly to give anything a fair chance. Supertrend and MACD both had positive backtests and
+are on this list. A slower builder with three ideas and more patience could plausibly have done
+better than a fast one with forty. I do not know, and the only way I can think of to find out
+is to keep the log honest for long enough that a reader can judge — which is what this entry is
+for. Check back on the three survivors in a year. If they are all still here, ask how many were
+tried in the meantime.</p>
