@@ -1601,7 +1601,7 @@ DICTIONARY = [
     ("radam", "radam", "רָדַם", "radam",
      "TO FALL INTO A DEEP SLEEP — the heavy, often God-sent stupor, not ordinary rest. The noun tardemah is the sleep that falls on Adam when the side is taken (Genesis 2:21) and on Abram at the covenant of the pieces (Genesis 15:12), and the deep sleep of Sisera and of Saul's camp. ⚠ Jonah 1:5 gives it to a prophet in a crisis: while pagan sailors fight the storm and pray, Jonah has gone below and 'fallen into a deep sleep' — a spiritual numbness dressed as literal unconsciousness, from which a heathen captain has to wake him.", ("Jonah", 1, 5)),
     ("yare", "yare / yir'ah", "יָרֵא", "yare",
-     "TO FEAR — and, in the same word, TO REVERE, to worship. Hebrew does not split the terror from the reverence: 'the fear of Jehovah is the beginning of wisdom.' ⚠ It is the pivot word of Jonah 1. Jonah CLAIMS it as his religion — 'I FEAR Jehovah, the God of heaven' (1:9) — while doing the one thing that shows his fear is not governing him; and the pagan sailors keep actually FEELING it, three rising times: they are afraid (1:5), they 'fear a great fear' at his confession (1:10), and after the sea calms they 'fear Jehovah with a great fear' and sacrifice to him (1:16). The man who says he fears God is out-feared, and out-worshipped, by the heathens around him. ⭐ <a href=\"deuteronomy-25.html#v25-18\">Deuteronomy 25:18</a> (now on these pages) charges Amalek with the lack of it — <em>he did not fear God</em> — the Torah's phrase for the decency expected of outsiders (Genesis 20:11, 42:18; Exodus 1:17), and the fear Leviticus 19 and 25 attach five times to laws for the weak.", ("Jonah", 1, 9)),
+     "TO FEAR — and, in the same word, TO REVERE, to worship. Hebrew does not split the terror from the reverence: 'the fear of Jehovah is the beginning of wisdom.' ⚠ It is the pivot word of Jonah 1. Jonah CLAIMS it as his religion — 'I FEAR Jehovah, the God of heaven' (1:9) — while doing the one thing that shows his fear is not governing him; and the pagan sailors keep actually FEELING it, three rising times: they are afraid (1:5), they 'fear a great fear' at his confession (1:10), and after the sea calms they 'fear Jehovah with a great fear' and sacrifice to him (1:16). The man who says he fears God is out-feared, and out-worshipped, by the heathens around him. ⭐ <a href=\"deuteronomy-25.html#v25-18\">Deuteronomy 25:18</a> (now on these pages) charges Amalek with the lack of it — <em>he did not fear God</em> — the Torah's phrase for a decency it looks for before and beyond Sinai (Genesis 20:11, 42:18; Exodus 1:17), and the fear Leviticus 19 and 25 attach five times to laws for the weak.", ("Jonah", 1, 9)),
     ("ra-ah", "ra'ah", "רָעָה", "ra'ah",
      "EVIL, calamity, harm — a word that covers both moral wickedness AND the disaster it brings, since Hebrew often names a deed and its consequence with one word. ⚠ It is a thread through Jonah: Nineveh's 'EVIL has come up before me' (1:2, their wickedness); 'on whose account this EVIL has come upon us' (1:7, the sailors mean the calamity of the storm); God sees Nineveh turn from its 'EVIL way' and relents of the 'EVIL' he had said he would do (3:10, both senses in one verse); and — the book's sting — 'it was EVIL to Jonah, a great evil' (4:1) that God had been merciful. The same word carries the crime, the punishment, and Jonah's fury that the punishment was cancelled.", ("Jonah", 1, 2)),
     ("dag-gadol", "dag gadol", "דָּג גָּדוֹל", "dag gadol",
@@ -3868,9 +3868,9 @@ DICTIONARY = [
      "href=\"deuteronomy-7.html#v7-16\">7:16</a>), the enticer to other gods (<a "
      "href=\"deuteronomy-13.html#v13-9\">13:9</a>), the murderer (<a href=\"deuteronomy-19.html#v19-13\">19:13</a>), "
      "the false witness (<a href=\"deuteronomy-19.html#v19-21\">19:21</a>) and the woman of <a "
-     "href=\"deuteronomy-25.html#v25-12\">25:12</a> — and each time it is the judge's pity that is forbidden, not "
-     "the victim's. ⚠ The head word alone is wider: Ezekiel makes it God's own refrain, <em>my eye will not "
-     "pity</em> (5:11, 7:4, 8:18, 9:10, not yet on these pages), and Jonah 4:10–11 (not yet on these pages) turns "
+     "href=\"deuteronomy-25.html#v25-12\">25:12</a> — and each time it is the pity of the one who must carry the "
+     "sentence out that is forbidden, not the victim's. ⚠ The head word alone is wider: Ezekiel makes it God's own "
+     "refrain, <em>my eye will not pity</em> (5:11, 7:4, 7:9, 8:18, 9:10, not yet on these pages), and Jonah 4:10–11 (not yet on these pages) turns "
      "it the other way — <em>you pitied the gourd … and should I not pity Nineveh?</em> ⚠ It is not "
      "<em>racham</em>, compassion from the womb, nor <em>chamal</em>, to spare in the sense of holding back; 13:9 "
      "has this word and <em>chamal</em> side by side. <em>Chus</em> is the softening of a gaze.",
@@ -3916,7 +3916,7 @@ DICTIONARY = [
      "href=\"exodus-4.html#v4-4\">Exodus 4:4</a> (already on these pages), Samson's foxes tied tail to tail "
      "(Judges 15:4), and Deuteronomy 28's blessing and curse, <em>the head and not the tail</em> (28:13), <em>he "
      "shall be the head and you the tail</em> (28:44); Isaiah 9:14 glosses it, <em>the prophet who teaches lies, "
-     "he is the tail</em> (none yet on these pages). The shelf reads 'smote the hindmost of thee' (KJV, ASV), "
+     "he is the tail</em> (9:15 in English numbering; none yet on these pages). The shelf reads 'smote the hindmost of thee' (KJV, ASV), "
      "'attacked all who were lagging behind' (NIV), «te desbarató la retaguardia» (RV60), «herir en tu zaga» "
      "(TNM 1987).",
      ("Deuteronomy", 25, 18)),
@@ -3931,8 +3931,8 @@ DICTIONARY = [
      "what <a href=\"isaiah-40.html#v40-28\">Isaiah 40:28–31</a> (already on these pages) builds its promise from: "
      "the God who <em>does not faint or grow weary</em> gives strength to the faint, and those who wait for him "
      "<em>run and do not grow weary, walk and do not faint</em>. ⚠ Gideon's three hundred cross the Jordan "
-     "<em>faint yet pursuing</em> (Judges 8:4), David's men reach the Jordan <em>ayephim</em> after Absalom's "
-     "revolt (2 Samuel 16:14), Isaiah 28:12 offers <em>rest to the weary</em>, and Job 22:7 accuses a man of "
+     "<em>faint yet pursuing</em> (Judges 8:4), David and his men arrive <em>ayephim</em> in the flight from Absalom "
+     "(2 Samuel 16:14), Isaiah 28:12 offers <em>rest to the weary</em>, and Job 22:7 accuses a man of "
      "giving <em>no water to the faint</em> (none yet on these pages).",
      ("Deuteronomy", 25, 18)),
     ("zekher", "zekher", "זֵכֶר", "zekher",
@@ -3946,7 +3946,7 @@ DICTIONARY = [
      "with the subject changed. ⚠ The Greek read <em>the name of Amalek</em> there, and the NIV, TLB and Douay "
      "follow it; the KJV, ASV and Geneva keep 'remembrance', the NWT 1984 'mention'. Proverbs 10:7 (not yet on "
      "these pages) sets the two fates side by side, <em>the memory of the righteous is a blessing, but the name "
-     "of the wicked rots</em>; Psalm 9:7, <em>their memory has perished</em>; Psalm 112:6, <em>the righteous "
+     "of the wicked rots</em>; Psalm 9:7, <em>their memory has perished</em> (9:6 in English numbering); Psalm 112:6, <em>the righteous "
      "will be remembered for ever</em> (neither yet on these pages). ⚠ Not the same word as <em>zikkaron</em>, "
      "a memorial object — the book of Exodus 17:14 itself is one — nor <em>azkarah</em>, the offering's memorial "
      "portion.",
@@ -14777,7 +14777,7 @@ DICTIONARY_ES = {
         "sustantivo con el verbo <em>será</em> está en <strong>dos versículos</strong> de la Biblia "
         "hebrea</span> —6:25 por la ley entera guardada, 24:13 por un solo vestido devuelto."),
     "ahav": ("ahav", "AMAR —y su PRIMERA aparición en la Biblia es Génesis 22:2, «tu hijo, tu único, a quien AMAS». El amor entra en la Escritura justo en el momento en que se pide entregarlo. ⭐ La forma imperativa <em>ve-ahavtá</em>, «y amarás», es más rara de lo que su fama sugiere: comprobada contra los 929 capítulos archivados, aparece en exactamente CUATRO versículos. Dos mandan amar a una persona —<a href=\"leviticus-19.es.html#v19-18\">Levítico 19:18</a> y 19:34 (ya en estas páginas), el prójimo y el residente extranjero— y dos mandan amar a Dios, <a href=\"deuteronomy-6.es.html#n6-5\">Deuteronomio 6:5</a> y 11:1. ⚠ Cuando <a href=\"matthew-22.es.html#v22-37\">Mateo 22:37-39</a> (ya en estas páginas) cuenta que Jesús nombra el mandamiento más grande y el segundo semejante a él, los dos versículos que nombra son uno de cada pareja. Y la gramática difiere: Deuteronomio 6:5 marca su objeto con <em>et</em>, el marcador ordinario de complemento directo, mientras que Levítico 19:18 usa la preposición <em>le</em> —el hebreo ama a Dios transitivamente y al prójimo dativamente."),
-    "yare": ("yaré / yirá", "TEMER —y, en la misma palabra, REVERENCIAR, adorar. El hebreo no separa el terror de la reverencia: «el temor de Jehová es el principio de la sabiduría». ⭐ Es el verbo con el que se abre y se cierra el capítulo del Shemá: <a href=\"deuteronomy-6.es.html#n6-1\">Deuteronomio 6:2</a> da como propósito de todo el sermón «para que temas a Jehová tu Dios», el v13 lo vuelve mandato («A Jehová tu Dios temerás») y el v24 lo repite en la respuesta que un padre le da a su hijo. ⚠ Cuando Mateo 4:10 cita el v13, el griego dice «te postrarás» en vez de «temerás» —un cambio que la propia nota de Mateo 4 en estas páginas ya señala. ⭐ <a href=\"deuteronomy-25.es.html#v25-18\">Deuteronomio 25:18</a> (ya en estas páginas) acusa a Amalec de carecer de él —<em>no temió a Dios</em>—, la expresión de la Torá para la decencia que se espera de los de fuera (Génesis 20:11, 42:18; Éxodo 1:17), y el temor que Levítico 19 y 25 sujetan cinco veces a leyes para los débiles."),
+    "yare": ("yaré / yirá", "TEMER —y, en la misma palabra, REVERENCIAR, adorar. El hebreo no separa el terror de la reverencia: «el temor de Jehová es el principio de la sabiduría». ⭐ Es el verbo con el que se abre y se cierra el capítulo del Shemá: <a href=\"deuteronomy-6.es.html#n6-1\">Deuteronomio 6:2</a> da como propósito de todo el sermón «para que temas a Jehová tu Dios», el v13 lo vuelve mandato («A Jehová tu Dios temerás») y el v24 lo repite en la respuesta que un padre le da a su hijo. ⚠ Cuando Mateo 4:10 cita el v13, el griego dice «te postrarás» en vez de «temerás» —un cambio que la propia nota de Mateo 4 en estas páginas ya señala. ⭐ <a href=\"deuteronomy-25.es.html#v25-18\">Deuteronomio 25:18</a> (ya en estas páginas) acusa a Amalec de carecer de él —<em>no temió a Dios</em>—, la expresión de la Torá para una decencia que busca antes y más allá del Sinaí (Génesis 20:11, 42:18; Éxodo 1:17), y el temor que Levítico 19 y 25 sujetan cinco veces a leyes para los débiles."),
     "mitzvah": ("mitsvá", "UN MANDAMIENTO —un solo encargo, frente a los cuerpos de normas en plural junto a los que "
      "suele aparecer. <a href=\"deuteronomy-6.es.html#n6-1\">Deuteronomio 6:1</a> abre el capítulo del Shemá con el "
      "sustantivo en SINGULAR («y este es el mandamiento»), con los estatutos y las "
@@ -25830,9 +25830,9 @@ DICTIONARY_ES["chus"] = ("chus / tachos",
     "href=\"deuteronomy-7.es.html#v7-16\">7:16</a>), el que incita a otros dioses (<a "
     "href=\"deuteronomy-13.es.html#v13-9\">13:9</a>), el homicida (<a href=\"deuteronomy-19.es.html#v19-13\">"
     "19:13</a>), el testigo falso (<a href=\"deuteronomy-19.es.html#v19-21\">19:21</a>) y la mujer de <a "
-    "href=\"deuteronomy-25.es.html#v25-12\">25:12</a>—, y cada vez es la compasión del juez la que se prohíbe, no "
-    "la de la víctima. ⚠ La palabra sola es más ancha: Ezequiel la hace estribillo del propio Dios, <em>mi ojo "
-    "no perdonará</em> (5:11, 7:4, 8:18, 9:10, todavía no en estas páginas), y Jonás 4:10–11 (todavía no en estas "
+    "href=\"deuteronomy-25.es.html#v25-12\">25:12</a>—, y cada vez es la compasión de quien tiene que ejecutar la "
+    "sentencia la que se prohíbe, no la de la víctima. ⚠ La palabra sola es más ancha: Ezequiel la hace estribillo "
+    "del propio Dios, <em>mi ojo no perdonará</em> (5:11, 7:4, 7:9, 8:18, 9:10, todavía no en estas páginas), y Jonás 4:10–11 (todavía no en estas "
     "páginas) le da la vuelta —<em>tú tuviste lástima de la calabacera … ¿y no he de tenerla yo de Nínive?</em> "
     "⚠ No es <em>racham</em>, la compasión que sale de las entrañas, ni <em>chamal</em>, perdonar en el sentido "
     "de contenerse; 13:9 tiene esta palabra y <em>chamal</em> una junto a otra. <em>Chus</em> es el ablandarse de "
@@ -25894,7 +25894,7 @@ DICTIONARY_ES["ayeph"] = ("ayeph",
     "Isaías 40:28–31</a> (ya en estas páginas) construye su promesa: el Dios que <em>no desfallece ni se "
     "fatiga</em> da fuerzas al que desfallece, y los que esperan en él <em>corren y no se cansan, caminan y no se "
     "fatigan</em>. ⚠ Los trescientos de Gedeón cruzan el Jordán <em>cansados pero persiguiendo</em> (Jueces 8:4), "
-    "los hombres de David llegan al Jordán <em>ayephim</em> tras la revuelta de Absalón (2 Samuel 16:14), Isaías "
+    "David y los suyos llegan <em>ayephim</em> en la huida de Absalón (2 Samuel 16:14), Isaías "
     "28:12 ofrece <em>reposo al cansado</em>, y Job 22:7 acusa a un hombre de no dar <em>agua al desfallecido</em> "
     "(ninguno todavía en estas páginas).")
 
