@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The Escape Valve — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Drones hit Saudi Arabia&#x27;s East–West pipeline, the big bypass around a Hormuz shut since March. Who is hurt, where the oil goes now, what the price says."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/the-escape-valve.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
+<meta property="og:title" content="The Escape Valve"/>
+<meta property="og:description" content="Drones hit Saudi Arabia&#x27;s East–West pipeline, the big bypass around a Hormuz shut since March. Who is hurt, where the oil goes now, what the price says."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/the-escape-valve.html"/>
+<meta property="article:section" content="The World"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(143,163,255,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#8fa3ff;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#8fa3ff}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#8fa3ff;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#8fa3ff;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#8fa3ff}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#8fa3ff;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#8fa3ff;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #8fa3ff;color:#8fa3ff}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#8fa3ff}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#8fa3ff;border-bottom-color:#8fa3ff}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#8fa3ff;
+  box-shadow:0 0 0 3px rgba(143,163,255,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#8fa3ff;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#8fa3ff;font-style:italic}
+a{color:#8fa3ff}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#8fa3ff;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #8fa3ff;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #8fa3ff;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#8fa3ff;color:#8fa3ff}
+.viewbtn.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#8fa3ff;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#8fa3ff" stroke-width="5"/>
+  <rect x="21" y="18" width="24" height="30" rx="2.5" fill="#f2f5f9"/>
+  <rect x="21" y="18" width="4" height="30" rx="1.5" fill="#8fa3ff" opacity=".85"/>
+  <g stroke="#9aa7bd" stroke-width="1.3" stroke-linecap="round">
+    <line x1="29" y1="25" x2="41" y2="25"/>
+    <line x1="29" y1="30" x2="41" y2="30"/>
+    <line x1="29" y1="35" x2="38" y2="35"/>
+  </g>
+  <line class="bmark-ink" x1="29" y1="41" x2="41" y2="41" stroke="#8fa3ff" stroke-width="1.7" stroke-linecap="round"/>
+  <g class="bmark-nib">
+    <g transform="translate(29 41) rotate(-50)">
+      <polygon points="0,0 3.8,-1.8 3.8,1.8" fill="#d9e0ea"/>
+      <rect x="3.8" y="-1.9" width="11" height="3.8" rx="1.6" fill="#f2f5f9"/>
+      <rect x="11.2" y="-1.9" width="3.6" height="3.8" rx="1.2" fill="#8fa3ff"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html">Science &amp; Technology</a><a href="world.html" class="on">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
+  <article class="entry">
+    <h1 class="etitle">The Escape Valve</h1>
+    <p class="edate"><a class="esec" href="world.html">THE WORLD</a> · SEPTEMBER 11, 2026</p>
+    <figure class="hero"><img src="img/east-west-pipeline-plume-2026-09-10.jpg" alt="Satellite view of western Saudi Arabia on 10 September 2026 — a thick black smoke plume rising from a point inland and streaming south-west toward the Red Sea coast, with a pale grey cloud of it spreading over the coastal plain" width="1300" height="650" loading="eager"/><figcaption>The plume, from 800 km up. NASA Worldview, VIIRS on NOAA-20, 10 September 2026, the Madinah region of Saudi Arabia with the Red Sea at left. NASA imagery is in the public domain.</figcaption></figure>
+<p>On Thursday morning, 10 September 2026, several pumping stations on the <strong>East–West
+pipeline</strong> — the 1,200-kilometre line that carries Saudi crude from the oil fields on the
+Persian Gulf across the whole width of the country to the port of Yanbu on the Red Sea — were hit
+by drones. Saudi Arabia shut the line down. <a href="https://www.spa.gov.sa/en/N2674017"
+rel="noopener" target="_blank">The kingdom's press agency called it a precaution</a>; an American
+official told reporters the drones had come from Iraq. By afternoon the smoke was big enough that
+NASA's fire satellites were flagging it, and by evening a friend had sent me a link with the words
+<em>you can see it from space</em>. You can. That is it, at the top of the page.</p>
+
+<p>I live about as far from the Arabian Peninsula as it is possible to live, and the thing I
+wanted to know was not who fired the drones. It was how much of the world's oil is really not
+moving right now, why one pipeline in the desert should matter this much, and whether there is a
+single thing a person in my position should do differently because of it. This is what I found.
+Along the way I discovered that three things I believed on Thursday evening were wrong, and I've
+left those corrections in, because the mistakes are the useful part.</p>
+
+<h2>How Much of the World's Oil Is Not Flowing?</h2>
+
+<p>Start with the part I had half-right. The Strait of Hormuz — the 33-kilometre-wide gap between
+Iran and Oman that every tanker leaving the Persian Gulf has to pass through — has been effectively
+closed to commercial shipping <strong>since 2 March</strong>, two days after the United States and
+Israel struck Iran. That is more than six months, not a news item from this week. Before the war
+about a hundred ships a day went through; <a
+href="https://www.aljazeera.com/news/2026/8/27/how-a-95-percent-drop-in-hormuz-traffic-changed-global-shipping"
+rel="noopener" target="_blank">by late August it was about five</a>, a 95 percent drop. Two
+ceasefires have come and gone. The strait is, in the words of one tracking site, closed on day
+193.</p>
+
+<figure>
+  <img src="img/strait-of-hormuz-from-the-iss.jpg" alt="Photograph from the International Space Station looking down on the Strait of Hormuz: the Musandam Peninsula of Oman juts up from the bottom of the frame toward the Iranian coast, with the Persian Gulf on the left and the Gulf of Oman on the right, the Earth's curve and the blackness of space at the top right" loading="lazy"/>
+  <figcaption>The whole problem in one photograph. The Musandam Peninsula points up at Iran; the
+  Persian Gulf is to the left, the Gulf of Oman to the right, and everything the Gulf states sell
+  by sea goes through the gap. Photo: NASA, from the International Space Station, public domain.</figcaption>
+</figure>
+
+<p>But here is the thing I had wrong: <em>the oil did not stop</em>. It halved. The Gulf states
+were exporting about 17 million barrels of crude a day before the war; by August they were still
+getting about 9 million out. The difference is almost entirely two pipelines that go around the
+strait instead of through it — and by far the bigger of the two is the one that was hit
+yesterday.</p>
+
+<figure>
+  <img src="img/gulf-crude-escape-routes.svg" alt="Two maps of the Arabian Peninsula, before the war and now. Before: one thick gold ribbon of about seventeen million barrels a day leaves the Persian Gulf through the Strait of Hormuz. Now: that ribbon is a thread of about two million barrels a day; a blue ribbon of five million barrels a day runs west across Saudi Arabia along the East-West pipeline to Yanbu on the Red Sea, with a red burst marking where it was hit on 10 September; a thin green ribbon leaves Fujairah on the Gulf of Oman." loading="lazy"/>
+  <figcaption>The escape routes. Left, the world as it was on 27 February; right, the world as it
+  was on 10 September, an hour before the drones. Ribbon width is barrels per day, drawn to the
+  same scale in both panels. Flow figures from Kpler via Al Jazeera, OilPrice and CNBC; coastlines
+  from Natural Earth. Drawn for this entry.</figcaption>
+</figure>
+
+<p>The East–West pipeline can move about 7 million barrels a day and, since March, has been
+running <a
+href="https://oilprice.com/Latest-Energy-News/World-News/Drone-Strikes-Hit-Saudi-Arabias-Vital-East-West-Oil-Pipeline.html"
+rel="noopener" target="_blank">around 5 million of them</a> to Yanbu, where tankers load on the
+Red Sea and never go near Hormuz at all. The UAE's line from Habshan to Fujairah adds roughly
+another 1.5 million. A couple of million more still slip through the strait itself — Chinese-owned
+ships mostly, moving along routes Iran has approved. Add it up and you get the 9 million.</p>
+
+<p>Which is why yesterday is a bigger event than a fire in a desert. Look at who got hurt by the
+closure and who didn't. Port calls at Kuwait are down 86 percent since March; at the UAE, 69
+percent; Iraq, Qatar and Bahrain, about two-thirds. <strong>Saudi Arabia: down 15 percent.</strong>
+The pipeline is the entire reason the largest exporter in the region has been the least damaged
+one. It was the escape valve — for Saudi Arabia, and by extension for everyone who buys from
+Saudi Arabia. Somebody has now put drones into it.</p>
+
+<figure>
+  <img src="img/madinah-region-before-and-after.jpg" alt="Two satellite images of the same stretch of western Saudi Arabia side by side, labelled 8 September and 10 September. The first shows desert, scattered clouds and the Red Sea coast. The second shows the same scene with a dark plume of smoke rising from a point inland and drifting south-west across the coastal plain to the sea." loading="lazy"/>
+  <figcaption>Same satellite, same ground, two days apart. NASA Worldview, VIIRS on NOAA-20,
+  8 and 10 September 2026; public domain.</figcaption>
+</figure>
+
+<div class="aside">
+  <p><strong>The one thing to watch this week.</strong> The reports say <em>pumping stations</em>
+  were hit, not the trunk line, and the distinction matters more than anything else in this story.
+  When strikes in April knocked about 700,000 barrels a day off the same system, Saudi Arabia had
+  it back in weeks. A pumping station is machinery in a building; a ruptured trunk line across
+  1,200 km of desert is a different order of repair. As of Friday nobody outside Aramco knows which
+  it is.</p>
+</div>
+
+<h2>The Irony About Where the Drones Came From</h2>
+
+<p>If the American official is right that the drones came from Iraq — Iran-aligned militias there
+have hit Saudi Arabia this way before — then they were launched from the one country the closure
+has hurt more than any other. <a
+href="https://www.usnews.com/news/world/articles/2026-04-06/exclusive-iraq-could-restore-oil-exports-to-pre-war-level-within-a-week-if-hormuz-reopens-basra-oil-chief-says"
+rel="noopener" target="_blank">Between 96 and 97 percent of Iraq's crude exports go through
+Hormuz</a>; oil is roughly 90 percent of the Iraqi state's income; production at Basra fell from
+3.3 million barrels a day to under a million. Iraq has been floated as a candidate for a new
+pipeline north to Turkey precisely because it has no escape valve of its own. And drones flown from
+its territory just closed its neighbour's.</p>
+
+<h2>It Isn't Only Oil</h2>
+
+<p>This is the second thing I hadn't taken on board. I had been thinking of Hormuz as an oil
+story. It is also:</p>
+
+<ul>
+  <li><strong>A gas story.</strong> About a fifth of the world's liquefied natural gas went through
+  the strait, nearly all of it Qatar's. Europe was getting 12 to 14 percent of its LNG that way.</li>
+  <li><strong>A food story.</strong> Up to 30 percent of internationally traded fertilizer moved
+  through the strait — the Gulf makes 30 to 35 percent of the world's exported urea and 20 to 30
+  percent of its ammonia. Fertilizer that doesn't ship this autumn is grain that doesn't grow next
+  spring, and that bill arrives at grocery stores nowhere near a tanker.</li>
+  <li><strong>A human story.</strong> Seventy-one attacks on ships since March, by the count of the
+  crisis's Wikipedia editors; 20 seafarers dead, 35 injured; at one point in April 2,000 ships and
+  20,000 sailors sat trapped inside the Gulf. War-risk insurance for one transit went from an
+  eighth of a percent of a ship's value to as much as four-tenths, and for a big tanker that is a
+  quarter of a million dollars per trip.</li>
+</ul>
+
+<h2>Where the Oil Is Going Instead</h2>
+
+<p>Oil that can't get out of the Gulf doesn't vanish; the buyers go elsewhere, and elsewhere has
+had a very good six months. Here is the map I actually wanted when I started — where the barrels
+are moving <em>now</em>.</p>
+
+<figure>
+  <img src="img/where-the-oil-goes-now.svg" alt="A world map centred on the Indian and Pacific oceans showing where oil is flowing in September 2026. A gold ribbon from the Persian Gulf to China, Japan, Korea and India is drawn thin and dashed, labelled cut roughly in half. An orange ribbon from the US Gulf Coast to Asia is labelled 3.3 million barrels a day, three times pre-war. A blue ribbon from Venezuela to the United States is labelled 0.79 million barrels a day, a seven-year high. Magenta ribbons from Russia to India and China are labelled record volumes." loading="lazy"/>
+  <figcaption>The rerouting. Dashed ribbons are pre-war flows that have been cut back; solid ones
+  are flows the closure created or enlarged. Routes are schematic. Figures from the EIA, Reuters,
+  CREA and Rio Times; coastlines from Natural Earth. Drawn for this entry.</figcaption>
+</figure>
+
+<p><strong>The United States.</strong> This part I had right, and it's bigger than I thought.
+American crude production is running at a record, <a
+href="https://www.eia.gov/todayinenergy/detail.php?id=68125" rel="noopener" target="_blank">just
+under 14 million barrels a day</a>. In April <a
+href="https://www.eia.gov/todayinenergy/detail.php?id=67825" rel="noopener" target="_blank">US
+petroleum exports set an all-time record</a>, and crude shipments to Asia roughly tripled from
+their pre-war level — American barrels are now filling Japanese and Korean and Indian tanks that
+Saudi barrels used to fill.</p>
+
+<p><strong>Venezuela.</strong> I had written "probably using some of our power in Venezuela" in my
+notes. The reality is well past <em>probably</em>. US forces took Maduro out of Caracas on 3
+January; an interim government has run the country since; the oil revenue flows through a US
+Treasury account. <a href="https://www.riotimesonline.com/venezuela-economy-after-maduro-2026/"
+rel="noopener" target="_blank">Venezuela shipped 786,000 barrels a day to the United States in
+July</a>, the most in seven years, and <a
+href="https://www.cnn.com/2026/09/02/economy/chevron-venezuela-oil" rel="noopener"
+target="_blank">Chevron announced last week it would spend $7 billion to double its Venezuelan
+output</a>. China, which used to be Venezuela's biggest customer, is being crowded out.</p>
+
+<p><strong>Russia.</strong> This is the third thing I got wrong, and I got it backwards. I assumed
+Russia couldn't take advantage of $100 oil while fighting its own war. The opposite is true.
+Russia's Urals crude <a
+href="https://energyandcleanair.org/april-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/"
+rel="noopener" target="_blank">averaged $112 a barrel in April</a>, two and a half times the
+Western price cap that is supposed to constrain it. India's imports of Russian crude have set
+records two months running; Russian fuel oil going to Singapore and Malaysia jumped two and a half
+times in July. The closure of Hormuz is, among other things, a subsidy to the Russian war effort.
+What <em>is</em> true is that Russia's exports of refined products are at the lowest level on
+record — its refineries are the part that is struggling, not its wells.</p>
+
+<p>And the table I most wanted to see — whose oil actually came through that strait:</p>
+
+<figure>
+  <img src="img/whose-oil-came-through-hormuz.svg" alt="Horizontal bar chart of the share of each country's crude oil imports that came from the Gulf through the Strait of Hormuz before the war: Eritrea and Madagascar about ninety percent, Pakistan seventy-eight, Japan seventy-seven, Kenya seventy-seven, China about thirty-five, India about thirty, and the United States eight percent." loading="lazy"/>
+  <figcaption>Dependence. Import shares from Kpler via Al Jazeera, Vortexa, India's petroleum
+  ministry and the EIA. Drawn for this entry.</figcaption>
+</figure>
+
+<p>Read the bottom bar twice. The United States gets <a
+href="https://www.hydrocarbonengineering.com/refining/07042026/eia-the-middle-east-gulf-was-source-for-8-of-2025-us-crude-oil-imports/"
+rel="noopener" target="_blank">eight percent of its imported crude from the Gulf</a>, and it
+produces more than it imports. Japan gets 77 percent. Pakistan 78. The country with the aircraft
+carriers in the strait is the one that needs the strait least, and the countries that need it most
+have no navy there at all. Hold that thought for two sections.</p>
+
+<h2>What the Price Is Saying</h2>
+
+<figure>
+  <img src="img/brent-through-the-war.svg" alt="Line chart of the Brent crude front-month settlement from February to 11 September 2026. It sits near seventy-two dollars before 28 February, jumps past one hundred by mid-March, peaks at one hundred eighteen on 31 March, drifts to the eighties over the summer, climbs back through one hundred in early September, spikes to one hundred eight on 10 September when the Saudi pipeline is hit, and closes at one hundred four on the 11th on talk of diplomacy." loading="lazy"/>
+  <figcaption>Brent, the world's benchmark crude, through the war. Daily settlements from the
+  ICE front-month contract via Yahoo Finance; the intraday spike in March was reported at $126.
+  Drawn for this entry.</figcaption>
+</figure>
+
+<p>The chart answers a question I had been asking badly. Oil was $72 on 27 February. It closed
+at $118 on 31 March, drifted back into the $80s over the summer as two ceasefires flickered, and
+has climbed through $100 again as they failed. The pipeline attack sent it to about $108 on
+Thursday. Then on Friday, on nothing more than <a
+href="https://www.cnbc.com/2026/09/11/oil-price-today-iran-brent-wti-trump.html" rel="noopener"
+target="_blank">reports of renewed diplomatic contact about reopening the strait</a>, it fell
+almost 3 percent to a little over $104.</p>
+
+<p>That Friday move is the whole lesson about the "war premium." Roughly $30 of the price of a
+barrel today is the closure — the gap between the dashed line and the gold one. It is real, it is
+justified by the facts on the ground, and it can evaporate in a single trading session on a rumour
+of peace. It did a small version of that yesterday. Meanwhile the price at the pump for people who
+have never heard of Yanbu: the American average hit <a href="https://gasprices.aaa.com/?state=US"
+rel="noopener" target="_blank">$4.30 a gallon on Friday</a>.</p>
+
+<div class="aside">
+  <p><strong>The stockpiles.</strong> In March the IEA's member countries agreed to release <a
+  href="https://www.cnbc.com/2026/03/14/iran-war-iea-oil-stockpile-spr-strait-hormuz.html"
+  rel="noopener" target="_blank">400 million barrels from their emergency reserves</a>, the largest
+  release in the agency's fifty-year history; the United States put up 172 million of them. The
+  world uses about 100 million barrels a day. The largest emergency release in history bought four
+  days.</p>
+</div>
+
+<h2>Will the United States, or NATO, Just Go In and Take the Strait?</h2>
+
+<p>I asked this as if it were hypothetical. It isn't; most of the options have already been tried
+at least once in the last six months, which is itself the answer to how easy any of them are.</p>
+
+<figure>
+  <img src="img/earnest-will-convoy-1987.jpg" alt="A 1987 photograph at sea: the frigate USS Hawes in the foreground, a large oil tanker astern of it with a cruiser and an amphibious ship following behind, all in a line on a calm grey sea" loading="lazy"/>
+  <figcaption>The last time. USS Hawes, the tanker Gas King, USS William H. Standley and USS
+  Guadalcanal in convoy in the Persian Gulf, 21 October 1987, during Operation Earnest Will — the
+  US Navy escorting reflagged Kuwaiti tankers through the Iran–Iraq "tanker war." It took over a
+  year and cost a frigate nearly sunk by a mine. Photo: PH2 Elliot, US Navy, public domain.</figcaption>
+</figure>
+
+<ul>
+  <li><strong>Escorting tankers through.</strong> The Navy did this in 1987–88 and launched it
+  again on 4 May this year as "Project Freedom." It was paused two days later, on 6 May, when the
+  White House said negotiations were making progress. Iran's 2026 toolkit — mines, drones,
+  shore-launched missiles — is a great deal nastier than its 1987 one.</li>
+  <li><strong>Blockading Iran back.</strong> Done: the US Navy blockaded Iranian ports from 13
+  April to 29 May, lifted it, and <a
+  href="https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed"
+  rel="noopener" target="_blank">resumed it in July</a>. As of this week the two sides are hitting
+  each other's tankers, and Iran has fired a ballistic missile toward a US carrier.</li>
+  <li><strong>Clearing the mines.</strong> Ongoing; on 25 August the Navy said it had identified
+  more than a hundred suspected mines in the shipping lane. Clearing mines while the people who laid
+  them are still laying them is a job with no end date.</li>
+  <li><strong>Seizing the strait itself.</strong> The President said in March the US "might seize
+  control" of the waterway and later mused about renaming it. Nobody has attempted it. Holding
+  the strait means holding the Iranian coast and islands on its northern side, which means an
+  invasion of Iran, which is a different war than the one being fought. Meanwhile Iran has done the
+  mirror-image thing on paper: in May it created a "Persian Gulf Strait Authority" that claims the
+  right to license every transit.</li>
+  <li><strong>Making a deal.</strong> Two have been signed and both collapsed within days — the
+  April two-week ceasefire and the Islamabad memorandum of 17 June. Oman is carrying messages again
+  this week, which is what the oil market was reacting to on Friday. An Iranian analyst quoted by
+  Al Jazeera put Tehran's view plainly: neither side can back down without looking as though it
+  lost, so the only option is to escalate.</li>
+</ul>
+
+<p>And NATO? I looked, and I found nothing. No European or Asian navy is operating in the strait.
+That is the strangest fact in this whole story to me: the countries whose economies actually run
+on that oil — Japan, Korea, India, China — are watching, and the country that could get by without
+it is the one doing the fighting. The UAE, for its part, has stopped waiting on anyone: <a
+href="https://www.cnbc.com/2026/05/20/uae-pipeline-strait-hormuz-iran-war-oil.html" rel="noopener"
+target="_blank">it is fast-tracking a second pipeline to Fujairah</a>, due in 2027, to double the
+volume it can move without going through Hormuz. Escape valves are the growth industry of 2026.</p>
+
+<h2>What Can a Person on the Other Side of the Planet Do?</h2>
+
+<p>About the strait, nothing. I want to be honest about that rather than end with a list of
+seven things. But I did come out of this with three things I'm keeping in mind, and I'll label
+them as opinions, because that's what they are.</p>
+
+<p><strong>First, for a household, energy is a cost line, not an investment line.</strong> The way
+this war reaches me is through the price of a gallon of gas, the price of a kilowatt-hour, the
+price of a bag of fertilizer folded into the price of bread next spring. Those are the numbers
+that actually move in my life, and the useful question is how exposed my own budget is to them.
+The car in my driveway happens to run on electricity, which I did not buy as a hedge against the
+Strait of Hormuz, but this week it is one. The sun keeps getting cheaper, and the barrel keeps
+getting more political; over a long enough horizon I don't think it's close which of those I'd
+rather depend on.</p>
+
+<p><strong>Second, the war premium is a bet on diplomacy, not on oil.</strong> The question I kept
+circling on Thursday night was whether this is the moment to own oil companies. My honest answer
+is that I don't have an energy portfolio, and this week is a good illustration of why. Thirty dollars of the price of a barrel is
+a closed strait. If a deal is signed, that thirty dollars leaves in an afternoon, and Friday showed
+what a rumour of a deal does. If instead things escalate, oil is already over $100 and the world
+starts using less of it, which caps the upside. Whichever way it breaks, you are not betting on
+geology or on a company; you are betting on whether two governments that have each said they
+can't back down will back down, and I have no edge on that at all. I have never been able to read
+the room in energy, and I have stopped pretending I can. Someone who can, should.</p>
+
+<p><strong>Third, the thing to watch isn't the price; it's the repair.</strong> The
+pumping-station-versus-trunk-line question in the box above will decide whether this is a
+two-week story or a six-month one for Saudi Arabia, and it will be answered by satellite photos
+and Aramco statements over the next few days, long before it shows up as a number. If the plume
+in the picture at the top of this page is gone by next week and the line is pumping, yesterday was
+a bad day. If not, the escape valve is closed, and the map on this page gets redrawn.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<p>The flow figures are estimates from ship-tracking firms, quoted by news organisations, not
+audited numbers; "about 9 million barrels a day" could easily be 8 or 10. I don't know how much
+the East–West pipeline carried before the war, so the "before" panel of the first map shows it
+thin and unnumbered rather than guessed. The attribution of the drones to Iraq rests on one
+unnamed American official as of Friday. The satellite plume is unambiguous — it isn't there on the
+8th and it is on the 10th — but I've placed it by eye against the pipeline's route, and I could be
+off by some kilometres. And on the question I care most about, which is whether the pumping
+stations or the pipe itself were hit, I'm as much in the dark as everyone outside Dhahran. If you
+know better on any of it, the address is below.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Saudi Press Agency. <i>East–West Pipeline Shut Down as a Precaution Following Multiple Attacks</i>. 11 September 2026. <a href="https://www.spa.gov.sa/en/N2674017">https://www.spa.gov.sa/en/N2674017</a></li>
+  <li>CNN. <i>Saudi oil pipeline shut down after attack triggers fires</i>. 11 September 2026. <a href="https://www.cnn.com/2026/09/11/politics/saudi-arabian-oil-pipeline-hit-by-projectiles-triggering-fires">https://www.cnn.com/2026/09/11/politics/saudi-arabian-oil-pipeline-hit-by-projectiles-triggering-fires</a></li>
+  <li>OilPrice.com. <i>Drone Strikes Hit Saudi Arabia's Vital East-West Oil Pipeline</i>. 11 September 2026. <a href="https://oilprice.com/Latest-Energy-News/World-News/Drone-Strikes-Hit-Saudi-Arabias-Vital-East-West-Oil-Pipeline.html">https://oilprice.com/Latest-Energy-News/World-News/Drone-Strikes-Hit-Saudi-Arabias-Vital-East-West-Oil-Pipeline.html</a></li>
+  <li>CNBC. <i>Saudi Arabia shut down East-West crude oil pipeline after multiple attacks</i>. 11 September 2026. <a href="https://www.cnbc.com/2026/09/11/saudi-arabia-shut-down-east-west-crude-oil-pipeline.html">https://www.cnbc.com/2026/09/11/saudi-arabia-shut-down-east-west-crude-oil-pipeline.html</a></li>
+  <li>Al Jazeera. <i>How a 95 percent drop in Hormuz traffic changed global shipping</i>. 27 August 2026. <a href="https://www.aljazeera.com/news/2026/8/27/how-a-95-percent-drop-in-hormuz-traffic-changed-global-shipping">https://www.aljazeera.com/news/2026/8/27/how-a-95-percent-drop-in-hormuz-traffic-changed-global-shipping</a></li>
+  <li>Al Jazeera. <i>US, Iran engaged in tanker war: Where is the months-long conflict headed?</i> 6 September 2026. <a href="https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed">https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed</a></li>
+  <li>CNBC. <i>The two oil pipelines helping Saudi Arabia and UAE bypass the Strait of Hormuz</i>. 12 March 2026. <a href="https://www.cnbc.com/2026/03/12/strait-of-hormuz-oil-pipelines-iran-war-saudi-arabia-uae.html">https://www.cnbc.com/2026/03/12/strait-of-hormuz-oil-pipelines-iran-war-saudi-arabia-uae.html</a></li>
+  <li>CNBC. <i>UAE says new pipeline that will bypass Strait of Hormuz is nearly 50% complete</i>. 20 May 2026. <a href="https://www.cnbc.com/2026/05/20/uae-pipeline-strait-hormuz-iran-war-oil.html">https://www.cnbc.com/2026/05/20/uae-pipeline-strait-hormuz-iran-war-oil.html</a></li>
+  <li>US News / Reuters. <i>Iraq Could Restore Oil Exports to Pre-War Level Within a Week if Hormuz Reopens, Basra Oil Chief Says</i>. 6 April 2026. <a href="https://www.usnews.com/news/world/articles/2026-04-06/exclusive-iraq-could-restore-oil-exports-to-pre-war-level-within-a-week-if-hormuz-reopens-basra-oil-chief-says">https://www.usnews.com/news/world/articles/2026-04-06/exclusive-iraq-could-restore-oil-exports-to-pre-war-level-within-a-week-if-hormuz-reopens-basra-oil-chief-says</a></li>
+  <li>Asharq Al-Awsat. <i>The High Cost of Hormuz: $37 Billion Shock Exposes Iraq's Economic Vulnerability</i>. 2026. <a href="https://english.aawsat.com/business/5287019-high-cost-hormuz-37-billion-shock-exposes-iraq%E2%80%99s-economic-vulnerability">https://english.aawsat.com/business/5287019-high-cost-hormuz-37-billion-shock-exposes-iraq%E2%80%99s-economic-vulnerability</a></li>
+  <li>Wikipedia. <i>2026 Strait of Hormuz crisis</i> (timeline, commodity shares, insurance, casualties, ship attacks). <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis</a></li>
+  <li>USNI News. <i>U.S., Iran Trade Strikes in Strait of Hormuz as Both Battle on Social Media</i>. 4 September 2026. <a href="https://news.usni.org/2026/09/04/u-s-iran-trade-strikes-in-strait-of-hormuz-as-both-battle-on-social-media">https://news.usni.org/2026/09/04/u-s-iran-trade-strikes-in-strait-of-hormuz-as-both-battle-on-social-media</a></li>
+  <li>CNBC. <i>The biggest release of emergency oil stockpiles in history was announced</i>. 14 March 2026. <a href="https://www.cnbc.com/2026/03/14/iran-war-iea-oil-stockpile-spr-strait-hormuz.html">https://www.cnbc.com/2026/03/14/iran-war-iea-oil-stockpile-spr-strait-hormuz.html</a></li>
+  <li>CNBC. <i>Oil prices fall Friday, but post sharp weekly gains as tensions in the Middle East rise</i>. 11 September 2026. <a href="https://www.cnbc.com/2026/09/11/oil-price-today-iran-brent-wti-trump.html">https://www.cnbc.com/2026/09/11/oil-price-today-iran-brent-wti-trump.html</a></li>
+  <li>AAA. <i>National average gas prices</i>. 11 September 2026. <a href="https://gasprices.aaa.com/?state=US">https://gasprices.aaa.com/?state=US</a></li>
+  <li>US Energy Information Administration. <i>United States on track for record crude oil production in 2026</i>. <a href="https://www.eia.gov/todayinenergy/detail.php?id=68125">https://www.eia.gov/todayinenergy/detail.php?id=68125</a></li>
+  <li>US Energy Information Administration. <i>U.S. exports of crude oil and petroleum products reached record in April</i>. <a href="https://www.eia.gov/todayinenergy/detail.php?id=67825">https://www.eia.gov/todayinenergy/detail.php?id=67825</a></li>
+  <li>Hydrocarbon Engineering, citing the EIA. <i>The Middle East Gulf was source for 8% of 2025 US crude oil imports</i>. 7 April 2026. <a href="https://www.hydrocarbonengineering.com/refining/07042026/eia-the-middle-east-gulf-was-source-for-8-of-2025-us-crude-oil-imports/">https://www.hydrocarbonengineering.com/refining/07042026/eia-the-middle-east-gulf-was-source-for-8-of-2025-us-crude-oil-imports/</a></li>
+  <li>Vortexa. <i>China's crude import stress resistance in a Hormuz crisis</i>. 2026. <a href="https://www.vortexa.com/insights/chinas-crude-import-stress-resistance">https://www.vortexa.com/insights/chinas-crude-import-stress-resistance</a></li>
+  <li>All India Radio News. <i>India secures 70% of crude oil imports outside Strait of Hormuz: Petroleum Ministry</i>. 11 March 2026. <a href="https://www.newsonair.gov.in/india-secures-70-of-crude-oil-imports-outside-strait-of-hormuz-petroleum-ministry/">https://www.newsonair.gov.in/india-secures-70-of-crude-oil-imports-outside-strait-of-hormuz-petroleum-ministry/</a></li>
+  <li>S&amp;P Global. <i>Venezuela's oil industry is operating after US seizes Maduro</i>. 3 January 2026. <a href="https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/010326-factbox-venezuelas-oil-industry-is-operating-after-us-seizes-maduro">https://www.spglobal.com/energy/en/news-research/latest-news/crude-oil/010326-factbox-venezuelas-oil-industry-is-operating-after-us-seizes-maduro</a></li>
+  <li>Rio Times. <i>Venezuela's Oil Exports to the US Hit a Seven-Year High</i>. 2026. <a href="https://www.riotimesonline.com/venezuela-economy-after-maduro-2026/">https://www.riotimesonline.com/venezuela-economy-after-maduro-2026/</a></li>
+  <li>CNN. <i>Chevron pledges to double its Venezuelan oil production</i>. 2 September 2026. <a href="https://www.cnn.com/2026/09/02/economy/chevron-venezuela-oil">https://www.cnn.com/2026/09/02/economy/chevron-venezuela-oil</a></li>
+  <li>Centre for Research on Energy and Clean Air. <i>April 2026</i> and <i>July 2026 — Monthly analysis of Russian fossil fuel exports and sanctions</i>. <a href="https://energyandcleanair.org/april-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/">https://energyandcleanair.org/april-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/</a> · <a href="https://energyandcleanair.org/july-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/">https://energyandcleanair.org/july-2026-monthly-analysis-of-russian-fossil-fuel-exports-and-sanctions/</a></li>
+  <li>NASA Worldview / EOSDIS GIBS. VIIRS (NOAA-20) corrected-reflectance imagery, 8 and 10 September 2026. Public domain. <a href="https://worldview.earthdata.nasa.gov/">https://worldview.earthdata.nasa.gov/</a></li>
+  <li>Natural Earth. Public-domain map data used for the two flow maps. <a href="https://www.naturalearthdata.com/">https://www.naturalearthdata.com/</a></li>
+  <li>Brent settlements: ICE Brent front-month continuous contract via Yahoo Finance, pulled 11 September 2026.</li>
+  <li>Photographs: NASA, <i>The Strait of Hormuz connects the Gulf of Oman with the Persian Gulf</i>, public domain, via Wikimedia Commons; PH2 Elliot, US Navy, <i>USS Hawes, USS William H. Standley and USS Guadalcanal escort tanker Gas King, 21 October 1987</i>, public domain, via Wikimedia Commons.</li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-oil.html">oil</a><a class="tg" href="tag-energy.html">energy</a><a class="tg" href="tag-strait-of-hormuz.html">strait of hormuz</a><a class="tg" href="tag-saudi-arabia.html">saudi arabia</a><a class="tg" href="tag-iran.html">iran</a><a class="tg" href="tag-iraq.html">iraq</a><a class="tg" href="tag-geopolitics.html">geopolitics</a><a class="tg" href="tag-shipping.html">shipping</a><a class="tg" href="tag-russia.html">russia</a><a class="tg" href="tag-venezuela.html">venezuela</a><a class="tg" href="tag-maps.html">maps</a></div>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Escape%20Valve%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/the-escape-valve.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/the-escape-valve.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+
+  <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-the-escape-valve-html">👁 <span id="hits-notebook-the-escape-valve-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fthe-escape-valve.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-notebook-the-escape-valve-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-notebook-the-escape-valve-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-notebook-the-escape-valve-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>
+</div>
+</body>
+</html>

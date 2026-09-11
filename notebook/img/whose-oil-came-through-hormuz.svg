@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 545" role="img" aria-label="Horizontal bar chart of the share of each country's crude oil imports that came from the Gulf through the Strait of Hormuz before the war: Eritrea and Madagascar about ninety percent, Pakistan seventy-eight, Japan seventy-seven, Kenya seventy-seven, China about thirty-five, India about thirty, and the United States eight percent.">
+<rect width="900" height="545" fill="#0a0f1a"/>
+<text x="450.0" y="34.0" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">Whose oil came through Hormuz</text>
+<text x="450.0" y="57.0" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#94a3b8" font-style="italic">share of each country's crude imports sourced from the Gulf, before the war</text>
+<line x1="190.0" y1="84" x2="190.0" y2="422" stroke="#1e2a3c" stroke-width="1"/>
+<text x="190.0" y="440.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">0%</text>
+<line x1="352.5" y1="84" x2="352.5" y2="422" stroke="#1e2a3c" stroke-width="1"/>
+<text x="352.5" y="440.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">25%</text>
+<line x1="515.0" y1="84" x2="515.0" y2="422" stroke="#1e2a3c" stroke-width="1"/>
+<text x="515.0" y="440.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">50%</text>
+<line x1="677.5" y1="84" x2="677.5" y2="422" stroke="#1e2a3c" stroke-width="1"/>
+<text x="677.5" y="440.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">75%</text>
+<line x1="840.0" y1="84" x2="840.0" y2="422" stroke="#1e2a3c" stroke-width="1"/>
+<text x="840.0" y="440.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">100%</text>
+<rect x="190" y="92" width="585.0" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="771.0" y="92" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="112.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">Eritrea</text>
+<text x="785.0" y="112.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">≈90%</text>
+<rect x="190" y="134" width="585.0" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="771.0" y="134" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="154.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">Madagascar</text>
+<text x="785.0" y="154.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">≈90%</text>
+<rect x="190" y="176" width="507.0" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="693.0" y="176" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="196.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">Pakistan</text>
+<text x="707.0" y="196.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">78%</text>
+<rect x="190" y="218" width="500.5" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="686.5" y="218" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="238.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">Japan</text>
+<text x="700.5" y="238.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">77%</text>
+<rect x="190" y="260" width="500.5" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="686.5" y="260" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="280.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">Kenya</text>
+<text x="700.5" y="280.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">77%</text>
+<rect x="190" y="302" width="227.5" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="413.5" y="302" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="322.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">China</text>
+<text x="427.5" y="322.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">≈35%</text>
+<rect x="190" y="344" width="195.0" height="30" rx="0" fill="#ad8a2c"/>
+<rect x="381.0" y="344" width="4" height="30" rx="2" fill="#ad8a2c"/>
+<text x="178.0" y="364.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">India</text>
+<text x="395.0" y="364.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">≈30%</text>
+<rect x="190" y="386" width="52.0" height="30" rx="0" fill="#d4653a"/>
+<rect x="238.0" y="386" width="4" height="30" rx="2" fill="#d4653a"/>
+<text x="178.0" y="406.0" text-anchor="end" font-family="Georgia, serif" font-size="14.5" fill="#e8dfd2">United States</text>
+<text x="252.0" y="406.0" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">8%</text>
+<text x="190.0" y="501.0" text-anchor="start" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">Sources: Al Jazeera / Kpler import-dependence figures (Aug 2026); China ≈35% of total crude supply via Hormuz in 2025 (Vortexa);</text>
+<text x="190.0" y="518.0" text-anchor="start" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">India ≈30% (petroleum ministry, Mar 2026); United States 8% of 2025 crude imports, 490 kb/d of 6.2 mb/d (EIA).</text>
+<text x="190.0" y="535.0" text-anchor="start" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8" font-style="italic">The US bar is the point: the country with the navy in the strait is the one that needs the strait least.</text>
+</svg>
