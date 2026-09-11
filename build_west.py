@@ -86,12 +86,16 @@ from datetime import datetime, timezone
 import blogkit
 
 SITE_NAME = "Eight Miles West"
+# The one publication on the domain with a real name on it (Michael's call,
+# 2026-09-11): this is his own family's book, and the printed edition will carry
+# the same name. Everywhere else the domain's byline stays "Mr. Librarian".
+AUTHOR = "Michael V. Krewson"
 TAGLINE = "A family's four centuries in America — from New Amsterdam to the Pacific, one document at a time"
 BLURB = ("The Krewson family's four centuries in America — Croesen, Kroesen, Kroessen, "
          "Kreuso, Cruse, Krewson — from a cooper who landed at Breuckelen around 1660, "
          "through Staten Island, Bucks County, Ohio, Iowa and the Pacific. Non-fiction, "
          "read from the family's own record and the colonial church books, published a "
-         "chapter at a time by Mr. Librarian.")
+         "chapter at a time by Michael V. Krewson.")
 
 FRONT_DESC = ("A family's four centuries in America, from New Amsterdam to the Pacific — "
               "the Croesen / Kroesen / Krewson line, read from the documents, one chapter "
@@ -280,7 +284,7 @@ def _legal():
             'checked, and may be misread, superseded or simply wrong. Living people are '
             'written about with their knowledge. Nothing here is professional advice of '
             'any kind, genealogical or otherwise. Opinions are the author\'s own.</p>'
-            % (year, esc(SITE_NAME)))
+            % (year, esc(AUTHOR)))
 
 
 def _foot(hits_path=None):
@@ -347,6 +351,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
 <meta name="twitter:card" content="summary"/>
+<meta name="author" content="%(author)s"/>
 <style>%(css)s</style>%(goat)s
 </head>
 <body>
@@ -358,7 +363,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 </body>
 </html>
 """ % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
-       "site": esc(SITE_NAME), "ogt": og_type,
+       "site": esc(SITE_NAME), "ogt": og_type, "author": esc(AUTHOR),
        "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
        "chrome": _chrome(active), "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
@@ -432,6 +437,7 @@ def build_chapter_page(c, live):
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
 <meta property="article:section" content="Part %(pnum)s — %(pname)s"/>
+<meta name="author" content="%(author)s"/>
 <meta name="twitter:card" content="summary"/>
 <style>%(css)s</style>%(goat)s
 </head>
@@ -457,7 +463,7 @@ def build_chapter_page(c, live):
         "title": esc(c["title"]), "site": esc(SITE_NAME), "desc": esc(desc), "url": url,
         "noindex": noindex, "pkey": c["part"], "pnum": _part_num(c["part"]),
         "pname": esc(_part_name(c["part"])), "pname_u": esc(_part_name(c["part"]).upper()),
-        "num": c["num"],
+        "num": c["num"], "author": esc(AUTHOR),
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
         "goat": _goatcounter(), "chrome": _chrome(""), "draft": draft_banner,
         "dateline": dateline, "people": people, "hero": _hero(c), "body": c["body"],
@@ -517,6 +523,7 @@ def build_front(chapters):
     count = ("%d chapter%s published so far" % (n, "" if n == 1 else "s") if n
              else "The first chapter is being written")
     body = """  <p class="tag">%(tagline)s</p>
+  <p class="byline">by %(author)s</p>
   %(hero)s
   <div class="lede">
     <p>This is the story of one family becoming American, read from the documents it left
@@ -530,7 +537,7 @@ def build_front(chapters):
     <p class="count">%(count)s · <a href="about.html">About the book and its sources</a></p>
   </div>
 %(toc)s
-""" % {"tagline": esc(TAGLINE), "hero": _front_hero(), "count": count, "toc": _toc(chapters)}
+""" % {"tagline": esc(TAGLINE), "author": esc(AUTHOR), "hero": _front_hero(), "count": count, "toc": _toc(chapters)}
     return _shell(title="%s — %s" % (SITE_NAME, "a family's four centuries in America"),
                   desc=FRONT_DESC, url=BASE_URL, active="home", body=body)
 
@@ -547,7 +554,9 @@ ABOUT_BODY = """  <section class="asklede">
     <p>A family history, written as narrative non-fiction and published one chapter at a
     time. The family is the one that landed at Breuckelen (Brooklyn) around 1660 as
     <b>Croesen</b> and has been spelled <b>Kroesen, Kroessen, Kreuso, Cruse</b> and
-    <b>Krewson</b> since — the author's own. The book follows it from the Dutch colony
+    <b>Krewson</b> since — the author's own. It is written by Michael V. Krewson, a
+    tenth-generation descendant of the cooper, and published under his name; the rest of
+    this domain is kept as Mr. Librarian, and the two are the same person. The book follows it from the Dutch colony
     through the English takeover, into Pennsylvania, across the frontier to Ohio and Iowa,
     and into the wars and breakages of the twentieth century. It is written to be read
     here first, in order, and compiled into a printed book when it is done.</p>
@@ -1133,6 +1142,8 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 /* The Castello Plan's fort sits at the lower left of the sheet; the shared
    hero crop (object-position near the top) would cut it off. */
 .fronthero img{height:340px;object-position:42% 78%}
+
+.byline{margin:-6px 0 18px;color:#c3d0e0;font-size:15px;letter-spacing:.02em}
 
 /* ── contents page ──────────────────────────────────────────────────────── */
 .count{margin-top:14px;color:#7f8fa6;font-size:14px;font-style:italic}
