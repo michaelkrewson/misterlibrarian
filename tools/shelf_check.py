@@ -241,7 +241,10 @@ def shelf_pool(verses, offset, text, prev_text):
         if n >= 1:
             t = text.get(str(n), "")
         elif prev_text:
-            keys = sorted((int(k) for k in prev_text), reverse=True)
+            # fetch_shelf_bg.py writes a non-numeric "_whole" key beside the verses,
+            # so a <NAME>_prev.json copied straight from its output must be filtered
+            # (Deuteronomy 23, whose v1 is the shelf's 22:30, was the first real use).
+            keys = sorted((int(k) for k in prev_text if str(k).isdigit()), reverse=True)
             idx = -n
             t = prev_text.get(str(keys[idx]), "") if idx < len(keys) else ""
         else:
