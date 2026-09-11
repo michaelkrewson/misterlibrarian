@@ -243,11 +243,13 @@ def _nav(active=""):
 def _chrome(active=""):
     """Header used by every page in the publication — brand, search, nav.
 
-    Same construction as build_finance._chrome: the nav collapses into a menu
-    below 760px via the CSS-only checkbox hack (no JavaScript, so it can't
-    break), and the search box is a REAL form (GET, name="q") so it works with
-    JS off by navigating to the front page with ?q=…; the front page's own
-    script filters live and reads a handed-over ?q=.
+    Same markup as build_finance._chrome, laid out differently (see the
+    "header" block in CSS): brand left + search right on one row, the nav on
+    its own row underneath, left-aligned, at every width — so the checkbox +
+    hamburger label this still emits are never displayed here. The search box
+    is a REAL form (GET, name="q") so it works with JS off by navigating to
+    the front page with ?q=…; the front page's own script filters live and
+    reads a handed-over ?q=.
     """
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
@@ -1331,52 +1333,44 @@ footer{margin:28px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
   .fronthero figcaption{font-size:12px}
 }
 
-/* ── nav + cross-publication links ───────────────────────────────────────── */
-header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
-  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
-.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13px}
-.nav a{color:#93a4bd;text-decoration:none}
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (Michael's call, 2026-09-10): row one is the brand on
+   the left and the search box pushed to the right edge; row two is the nav,
+   left-aligned under the brand. The Ledger keeps everything on one row
+   because its nav is seven links wide; this one is two, and two links on
+   their own row read as a table of contents rather than a menu. No hamburger
+   at any width — `.hgroup` takes the full row (flex-basis:100%) so it can
+   never share a line with the search box, and the checkbox/label the shared
+   _chrome() markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
 .nav a:hover{color:#e8eef7}
-.nav a.on{color:__ACCENT__}
+.nav a.on{color:__ACCENT__;border-bottom-color:__ACCENT__}
+.navcb,label.navtoggle{display:none}
 
-/* Collapsible on narrow screens via the CSS-only checkbox hack (see
-   _chrome()'s docstring). */
-.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
-label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
-  padding:9px;border-radius:8px;align-items:center;justify-content:center}
-label.navtoggle svg rect{fill:currentColor}
-label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
-.navcb:checked + label.navtoggle{color:__ACCENT__}
-.navcb:focus-visible + label.navtoggle{outline:2px solid __ACCENT__;outline-offset:1px}
-
-.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-  justify-content:flex-end;margin-left:auto}
-.headersearch{margin:0}
 .headersearch input[type=search]{
-  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
   color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
   padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
 .headersearch input[type=search]::-webkit-search-cancel-button{display:none}
 .headersearch input[type=search]::placeholder{color:#5a6b80}
-.headersearch input[type=search]:focus{outline:none;width:190px;border-color:__ACCENT__;
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:__ACCENT__;
   box-shadow:0 0 0 3px rgba(63,210,168,.14)}
 
-@media (max-width:760px){
-  label.navtoggle{display:flex}
-  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
-    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
-    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
-    box-shadow:0 16px 40px rgba(0,0,0,.5)}
-  .navcb:checked ~ .nav{display:flex}
-  .hgroup .nav a{padding:10px 12px;border-radius:8px}
-  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
-  .hgroup .nav a.on{background:rgba(63,210,168,.10)}
-}
-@media (max-width:480px){
-  header.hsm{flex-wrap:wrap}
-  .hgroup{order:1;flex-wrap:wrap}
-  .headersearch{order:2;flex:1 1 100%}
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
   .headersearch input[type=search]{width:100%}
   .headersearch input[type=search]:focus{width:100%}
 }
