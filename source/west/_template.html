@@ -1,0 +1,93 @@
+title: Copy this file to start a new chapter
+date: 2026-01-01
+part: flags
+dateline: Manhattan · 5 July 1662
+people: Elizabeth Cregier (1662–1740), Martin Cregier (c.1617–c.1711), Nicasius De Sille (1610–1691)
+summary: Two or three sentences. This is what shows on the RSS feed and in the link preview when someone shares the chapter. Say who it is about and what happens, in the words a descendant would search.
+meta_desc: Optional. Only set this when the auto-derived search description (the first whole sentences of `summary:` that fit in 155 characters) isn't the angle worth leading on. Leave the line out otherwise.
+hero: some-picture.jpg
+hero_alt: Describe the picture for someone who can't see it
+hero_credit: Optional — the source and licence, links allowed. Leave the line out if there is no hero.
+draft: true
+---
+<!--
+  HOW TO USE THIS FILE
+  ────────────────────
+  1. Copy it to  source/west/NN-a-short-slug.html
+     NN is the CHAPTER NUMBER (01, 02, …) and it is the reading order — the
+     build sorts by it, not by date. Two files with the same number are
+     refused. Gaps are fine (write chapter 7 before chapter 5 if the research
+     lands that way; it slots in).
+  2. `part:` is one of  flags / will / west / broke / keepers  — the five eras
+     on the contents page. The build refuses anything else.
+  3. `date:` is the PUBLISH date (feed, sitemap). It says nothing about order.
+  4. `dateline:` is where and when the chapter opens, in the story — it renders
+     in italics under the title and on the contents page. Optional.
+  5. `people:` — the documented people the chapter is about, with dates, comma
+     separated. Renders as an "In the record" line under the title so a
+     surname-searcher landing mid-book sees who this is before the prose.
+     Optional, but almost every chapter should have it.
+  6. A hero or in-body picture goes in west/img/ — web-sized (≤1600px, q82,
+     EXIF stripped; tools/travel_photos.py does it for a photo). A public-domain
+     map or painting keeps its source and licence in `hero_credit:`.
+  7. Delete `draft: true` when it's ready. There is NO published drafts page:
+     `draft: true` means the chapter does not build at all;
+     `python3 build_west.py --drafts` renders it LOCALLY, unlisted and
+     noindexed, for a read-through. Never commit a --drafts build. The later
+     chapters are about living people and a father who left — those get read
+     by Michael before they get a URL.
+  8. Rebuild and push:
+         python3 build_west.py
+         git add west source/west && git commit -m "West: ch. NN — …" && git push
+
+  THE SHAPE OF A CHAPTER
+  ──────────────────────
+  One person carries it. Open in a scene the documents actually give you (a
+  baptism with two grandfathers as witnesses; a consistory meeting about
+  stolen trees; a will signed with an X) — not with a birth date. Then the
+  life, then what it cost, then the document that closes it.
+
+  THREE REGISTERS, KEPT VISIBLY APART — this is the book's whole promise:
+  • Documented: stated as fact, with the source numbered in the text [1].
+  • Inferred:   <span class="infer">…</span> — worked back from an age, a gap,
+                a naming pattern. Italic on the page. Say what it rests on.
+  • Legend:     <div class="doc legend">…</div> — a story the family told, stated
+                AS a story. Gold rule. Never promoted to fact in a later chapter.
+
+  <div class="doc"> quotes a document verbatim — a church-book line, a will, a
+  letter — with <span class="cite">where it is</span> underneath. Prefer the
+  original's own words to a paraphrase every time the original survives.
+
+  <ol class="sources"> — REQUIRED. The build refuses a chapter without one.
+  Cruise 1998 by page; the NYG&B baptism/marriage volumes by volume and page;
+  a will by county, book and number; a family letter by writer and date. A
+  reader must be able to find the document behind every fact.
+
+  What NEVER goes in: a fact promoted from a legend because it made a better
+  story; anything about a living person they haven't been told about; a
+  guess at what someone felt, stated as if a document said so.
+
+  SEO, the standing rule: one <h2> that matches a real query — a descendant
+  types the ancestor's full name and a place ("Gerret Dircksen Croesen
+  Gowanus", "Martin Cregier Esopus"). Every spelling of the surname the
+  chapter's people actually used, at least once, in the prose.
+-->
+<p>Opening paragraph — the scene.</p>
+
+<div class="doc">
+  <p>The document, quoted.</p>
+  <span class="cite">Where it is — book, volume, page.</span>
+</div>
+
+<h2>A heading that matches a real search</h2>
+
+<p>The life. <span class="infer">A sentence worked back from a date, marked as such.</span></p>
+
+<div class="doc legend">
+  <p>A story the family told, stated as a story.</p>
+  <span class="cite">Who told it, and when.</span>
+</div>
+
+<ol class="sources">
+  <li>Warren D. Cruise, <i>The Croesen Families of America</i>, Vol. I (Gateway Press, 1998), p. 194.</li>
+</ol>

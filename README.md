@@ -159,3 +159,35 @@ python3 build_notebook.py          # rebuild the blog — that's the whole CLI
   renders the same as on the Regimen when an entry has one.
 - **What goes here vs. the Ledger:** if the spine of a piece is a price, a balance sheet, or
   an institution that moves money, it's the Ledger; otherwise it's here.
+
+---
+
+## The sixth site in this repo: `/west/`
+
+**Eight Miles West** — a family history, published a chapter at a time: the Croesen /
+Kroesen / Krewson line's four centuries in America, from a cooper at Breuckelen c.1660 to the
+twentieth century, read from the documents — at `mistertranslation.com/west/`. Built by
+`build_west.py` (standard library only). **It is a BOOK, not a blog**: chapters are NUMBERED
+and read in order inside five fixed PARTS; the contents page is the front page; there are no
+tags, no tag pages, no search box and no "newest first".
+
+```
+python3 build_west.py            # rebuild the book — that's the whole CLI
+python3 build_west.py --drafts   # LOCAL preview only: also renders `draft: true` chapters
+```
+
+- **A new chapter** is one file: `source/west/NN-slug.html` (copy `source/west/_template.html`;
+  its header comment is the checklist). `NN` is the chapter number and the reading order —
+  the build sorts by it, refuses a duplicate, and allows gaps. `part:` is required and must
+  be one of `flags` / `will` / `west` / `broke` / `keepers` (the five eras in `PARTS`).
+  `date:` is the publish date (feed + sitemap) and says nothing about order. `dateline:`
+  (where/when the chapter opens) and `people:` (the documented people it is about) are
+  optional and render under the title.
+- **`draft: true` = not built at all**; `--drafts` renders it locally, noindexed. There is no
+  published drafts page. Never commit a `--drafts` build. (Later chapters are about living
+  people — they get read before they get a URL.)
+- **Every chapter must end with `<ol class="sources">`** — the build refuses one without it.
+- **Three registers, kept visibly apart** in the markup: documented (plain prose, cited),
+  inferred (`<span class="infer">`, italic), and family legend (`<div class="doc legend">`,
+  gold rule). `<div class="doc">` quotes a document verbatim with a `.cite` line under it.
+- The front-page hero is the Castello Plan of New Amsterdam (1660, public domain).

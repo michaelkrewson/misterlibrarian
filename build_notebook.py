@@ -165,6 +165,8 @@ SIBLINGS = (
      "Notes from the road and the table"),
     ("The Librarian's Regimen", "https://mistertranslation.com/health/",
      "Health, nutrition and medicine — one question at a time, from the studies"),
+    ("Eight Miles West", "https://mistertranslation.com/west/",
+     "A family history — four centuries in America, one document at a time"),
 )
 
 # The same FormSubmit endpoint the other blogs post to, so every publication
