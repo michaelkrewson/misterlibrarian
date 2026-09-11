@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img" aria-label="Three horizontal bars, one per era, each representing everyone. In 2000 the divide runs between the roughly half of American adults online and the half who were not, with home broadband at one percent. In 2025 nearly everyone is inside the bar — ninety-six percent use the internet and ninety-one percent own a smartphone — but a shaded band marks the poorer third who depend on a phone alone, against four percent of high earners. In the AI era the bar is full again, with a shaded band for the free tier that carries ads, a daily message cap, and last year's model, against an ad-free paid tier with the frontier model.">
+<rect width="900" height="470" fill="#0a0f1a"/>
+<text x="450.0" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">The divide doesn’t close. It moves inside.</text>
+<text x="450.0" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#94a3b8" font-style="italic">each bar is everyone · gold is “has it” · the hatched band is “has the worse version”</text>
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#e8c968" opacity=".35"/><line x1="0" y1="0" x2="0" y2="8" stroke="#0a0f1a" stroke-width="3"/></pattern></defs>
+<text x="228" y="114.0" text-anchor="end" font-family="Georgia, serif" font-size="22" fill="#e8dfd2">2000</text>
+<text x="228" y="136.0" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">the internet</text>
+<rect x="250" y="95" width="580" height="46" rx="6" fill="#0d1520" stroke="#26334a" stroke-width="1"/>
+<rect x="250" y="95" width="301.6" height="46" rx="6" fill="#e8c968" opacity=".85"/>
+<text x="262" y="123.0" font-family="Georgia, serif" font-size="14" fill="#0a0f1a" font-weight="bold">52% of adults online</text>
+<text x="818" y="123.0" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#94a3b8">48% not online at all</text>
+<line x1="551.6" y1="87" x2="551.6" y2="149" stroke="#e8865c" stroke-width="2.2"/>
+<text x="551.6" y="82" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8865c" font-style="italic">the line</text>
+<text x="250" y="168" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">home broadband: 1%. The line ran between people who had a connection and people who did not.</text>
+<text x="228" y="236.0" text-anchor="end" font-family="Georgia, serif" font-size="22" fill="#e8dfd2">2025</text>
+<text x="228" y="258.0" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">the phone in the pocket</text>
+<rect x="250" y="217" width="580" height="46" rx="6" fill="#0d1520" stroke="#26334a" stroke-width="1"/>
+<rect x="250" y="217" width="556.8" height="46" rx="6" fill="#e8c968" opacity=".85"/>
+<rect x="714.0" y="217" width="92.8" height="46" fill="url(#hatch)"/>
+<rect x="714.0" y="217" width="92.8" height="46" fill="none" stroke="#0a0f1a" stroke-width="2"/>
+<rect x="715.4" y="230.0" width="90.0" height="20" rx="4" fill="#0a0f1a" opacity=".85"/>
+<text x="760.4" y="245.0" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2" font-style="italic">phone only</text>
+<text x="262" y="245.0" font-family="Georgia, serif" font-size="14" fill="#0a0f1a" font-weight="bold">96% online · 91% own a smartphone</text>
+<line x1="714.0" y1="209" x2="714.0" y2="271" stroke="#e8865c" stroke-width="2.2"/>
+<text x="714.0" y="204" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8865c" font-style="italic">the line</text>
+<text x="250" y="290" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">16% of adults are phone-only (no home broadband): 34% of those under $30k, 4% of those over $100k.</text>
+<text x="228" y="358.0" text-anchor="end" font-family="Georgia, serif" font-size="22" fill="#e8dfd2">2026 →</text>
+<text x="228" y="380.0" text-anchor="end" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">the model in the pocket</text>
+<rect x="250" y="339" width="580" height="46" rx="6" fill="#0d1520" stroke="#26334a" stroke-width="1"/>
+<rect x="250" y="339" width="580.0" height="46" rx="6" fill="#e8c968" opacity=".85"/>
+<rect x="540.0" y="339" width="290.0" height="46" fill="url(#hatch)"/>
+<rect x="540.0" y="339" width="290.0" height="46" fill="none" stroke="#0a0f1a" stroke-width="2"/>
+<rect x="628.6" y="352.0" width="112.8" height="20" rx="4" fill="#0a0f1a" opacity=".85"/>
+<text x="685.0" y="367.0" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#e8dfd2" font-style="italic">the free tier</text>
+<text x="262" y="367.0" font-family="Georgia, serif" font-size="14" fill="#0a0f1a" font-weight="bold">everyone has a chatbot</text>
+<line x1="540.0" y1="331" x2="540.0" y2="393" stroke="#e8865c" stroke-width="2.2"/>
+<text x="540.0" y="326" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8865c" font-style="italic">the line</text>
+<text x="250" y="412" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">free tier: ads, a daily cap, last year’s model  ·  paid tier: no ads, no cap, the frontier</text>
+<text x="450.0" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#5f6f85">2000 and 2025 figures: Pew Research Center. The 2026 row describes today’s tiers; its band width is not a measurement.</text>
+</svg>

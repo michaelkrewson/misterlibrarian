@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Log-scale chart of the list price of a million input tokens from November 2021 to September 2026. Two lines start together at sixty dollars for GPT-3. The cheapest model of GPT-3 quality falls to six cents by November 2024, a thousandfold drop. The most capable model on sale falls only to thirty dollars for GPT-4 in March 2023, fifteen for Claude Opus 4.1 in August 2025, and ten for Claude Fable 5.1 in 2026, with Claude Opus 5 at five. A lone marker shows DeepSeek R1, an open-weight model near the frontier, at fifty-five cents in January 2025.">
+<rect width="900" height="520" fill="#0a0f1a"/>
+<text x="450.0" y="36" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">Two prices for intelligence, 2021–2026</text>
+<text x="450.0" y="60" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#94a3b8" font-style="italic">list price of one million input tokens, log scale</text>
+<line x1="120" y1="80.0" x2="830" y2="80.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="108" y="85.0" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#94a3b8">$100</text>
+<line x1="120" y1="167.5" x2="830" y2="167.5" stroke="#1e2a3c" stroke-width="1"/>
+<text x="108" y="172.5" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#94a3b8">$10</text>
+<line x1="120" y1="255.0" x2="830" y2="255.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="108" y="260.0" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#94a3b8">$1</text>
+<line x1="120" y1="342.5" x2="830" y2="342.5" stroke="#1e2a3c" stroke-width="1"/>
+<text x="108" y="347.5" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#94a3b8">10¢</text>
+<line x1="120" y1="430.0" x2="830" y2="430.0" stroke="#1e2a3c" stroke-width="1"/>
+<text x="108" y="435.0" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#94a3b8">1¢</text>
+<line x1="144.5" y1="430" x2="144.5" y2="437" stroke="#94a3b8" stroke-width="1"/>
+<text x="144.5" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">2022</text>
+<line x1="291.4" y1="430" x2="291.4" y2="437" stroke="#94a3b8" stroke-width="1"/>
+<text x="291.4" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">2023</text>
+<line x1="438.3" y1="430" x2="438.3" y2="437" stroke="#94a3b8" stroke-width="1"/>
+<text x="438.3" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">2024</text>
+<line x1="585.2" y1="430" x2="585.2" y2="437" stroke="#94a3b8" stroke-width="1"/>
+<text x="585.2" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">2025</text>
+<line x1="732.1" y1="430" x2="732.1" y2="437" stroke="#94a3b8" stroke-width="1"/>
+<text x="732.1" y="456" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">2026</text>
+<line x1="120" y1="430" x2="830" y2="430" stroke="#94a3b8" stroke-width="1.2"/>
+<polyline points="120.0,99.4 560.7,361.9" fill="none" stroke="#e8865c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="120.0,99.4 315.9,125.8 670.9,152.1 830.0,167.5" fill="none" stroke="#e8c968" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="120.0" cy="99.4" r="6" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="2"/>
+<circle cx="315.9" cy="125.8" r="5.5" fill="#e8c968" stroke="#0a0f1a" stroke-width="2"/>
+<circle cx="670.9" cy="152.1" r="5.5" fill="#e8c968" stroke="#0a0f1a" stroke-width="2"/>
+<circle cx="830.0" cy="167.5" r="5.5" fill="#e8c968" stroke="#0a0f1a" stroke-width="2"/>
+<circle cx="830.0" cy="193.8" r="4.5" fill="#e8c968" stroke="#0a0f1a" stroke-width="2"/>
+<circle cx="560.7" cy="361.9" r="5.5" fill="#e8865c" stroke="#0a0f1a" stroke-width="2"/>
+<circle cx="585.2" cy="277.7" r="6" fill="#a3b378" stroke="#0a0f1a" stroke-width="2"/>
+<text x="122.0" y="83.4" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2">GPT-3, Nov 2021 · $60</text>
+<text x="325.9" y="115.8" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8c968">GPT-4 · $30</text>
+<text x="668.9" y="138.1" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8c968">Opus 4.1 · $15</text>
+<text x="834.0" y="147.5" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8c968">Fable 5.1 · $10</text>
+<text x="834.0" y="213.8" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8c968">Opus 5 · $5</text>
+<text x="572.7" y="366.9" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8865c">6¢ · cheapest GPT-3-quality model, Nov 2024</text>
+<text x="597.2" y="282.7" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#a3b378">DeepSeek R1, open weights, Jan 2025 · 55¢</text>
+<text x="150" y="390.9" text-anchor="start" font-family="Georgia, serif" font-size="15.5" fill="#e8865c" font-style="italic">the cheapest way to buy a FIXED level of intelligence</text>
+<text x="150" y="412.9" text-anchor="start" font-family="Georgia, serif" font-size="15.5" fill="#e8865c" font-style="italic">÷1,000 in three years</text>
+<text x="480" y="173.7" text-anchor="middle" font-family="Georgia, serif" font-size="15.5" fill="#e8c968" font-style="italic">the BEST model on sale that day · ÷6 in five years</text>
+<line x1="120" y1="494" x2="148" y2="494" stroke="#e8c968" stroke-width="2.6"/>
+<text x="156" y="498" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8">frontier list price</text>
+<line x1="310" y1="494" x2="338" y2="494" stroke="#e8865c" stroke-width="2.6"/>
+<text x="346" y="498" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8">cheapest model at GPT-3 quality (a16z)</text>
+<circle cx="640" cy="494" r="5" fill="#a3b378"/>
+<text x="652" y="498" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8">open-weight, near-frontier</text>
+</svg>
