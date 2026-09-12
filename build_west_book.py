@@ -55,6 +55,12 @@ EPIGRAPH = ("Seems like the whole Krewson line all the way back to the 1600s had
             "with rifts over disagreements… but no one was talking about what they were.")
 EPIGRAPH_BY = "Alfred G. M. Krewson to his nephew, 20 January 2005"
 
+# The line from chapter 19's close on Gen. Frederick Kroesen — Michael's own
+# reaction to it (12 September 2026) was "you shouldn't lose that," so it gets
+# a page of its own, and the back-cover copy below.
+TAGLINE_QUOTE = ("A four-star general and a machinist's grandson spent sixty years "
+                  "looking for the same Dutch cooper. Neither found him.")
+
 esc = W.esc
 
 
@@ -83,6 +89,9 @@ i, em { font-style: italic; }
 .epi { padding-top: 2.6in; text-align: center; }
 .epi p { text-indent: 0; font-style: italic; font-size: 12pt; line-height: 1.5; margin: 0 .3in .4in; }
 .epi .by { font-style: normal; font-size: 8.4pt; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
+.tagline { padding-top: 3in; text-align: center; }
+.tagline p { text-indent: 0; font-size: 15pt; line-height: 1.5; margin: 0 .35in; font-family: "Iowan Old Style", Palatino, Georgia, serif; }
+.tagline .from { display: block; margin-top: .35in; font-size: 8.5pt; letter-spacing: .1em; text-transform: uppercase; color: #555; }
 .toc h1 { font-size: 14pt; font-weight: normal; letter-spacing: .18em; text-transform: uppercase; text-align: center; margin: .6in 0 .5in; }
 .toc .tpart { margin: .35in 0 .1in; font-size: 8.6pt; letter-spacing: .12em; text-transform: uppercase; text-indent: 0; }
 .toc .tpart b { font-weight: normal; }
@@ -144,6 +153,8 @@ def _front(chapters):
                   "d": dt.date.today().strftime("%-d %B %Y")})
     parts.append('<section class="page epi"><p>&ldquo;%s&rdquo;</p><p class="by">&mdash; %s</p></section>'
                  % (esc(EPIGRAPH), esc(EPIGRAPH_BY)))
+    parts.append('<section class="page tagline"><p>&ldquo;%s&rdquo;<span class="from">Chapter 19 &middot; The Cousin Who Kept the Name</span></p></section>'
+                 % esc(TAGLINE_QUOTE))
     # contents
     toc = ['<section class="page toc"><h1>Contents</h1>']
     cur = None
@@ -309,7 +320,7 @@ p { margin: 0 0 .7em; }
 .infer { text-decoration: underline dotted; }
 .sources { font-size: .85em; border-top: 1px solid #999; margin-top: 2em; padding-top: 1em; }
 .sources:before { content: "Sources"; display: block; letter-spacing: .14em; text-transform: uppercase; font-size: .85em; margin-bottom: .5em; }
-.tp, .half, .epi, .part { text-align: center; margin-top: 30%; }
+.tp, .half, .epi, .tagline, .part { text-align: center; margin-top: 30%; }
 .tp h1 { font-size: 2.2em; }
 .copy { font-size: .85em; }
 .toc p { margin: 0 0 .3em; }
@@ -355,6 +366,8 @@ def build_epub(chapters, epub_path):
         % (esc(TITLE), esc(SUBTITLE), YEAR, esc(AUTHOR), YEAR))))
     add("epigraph.xhtml", _xhtml("Epigraph", '<section class="epi"><p class="lede">&#8220;%s&#8221;</p><p class="by">&#8212; %s</p></section>'
                                  % (esc(EPIGRAPH), esc(EPIGRAPH_BY))))
+    add("tagline.xhtml", _xhtml("Tagline", '<section class="tagline"><p class="lede">&#8220;%s&#8221;<br/><span class="by">Chapter 19 &#183; The Cousin Who Kept the Name</span></p></section>'
+                                 % esc(TAGLINE_QUOTE)))
     # nav / contents
     nav = ['<nav epub:type="toc" id="toc"><h1>Contents</h1><ol>']
     cur = None
@@ -420,6 +433,71 @@ def build_epub(chapters, epub_path):
     return len(files)
 
 
+def write_back_cover_copy(chapters):
+    """book/back-cover-copy.txt — jacket text for the KDP cover, once a cover
+    is designed. Not part of the interior; this file is the copy to hand a
+    cover designer or paste into KDP's back-cover text box."""
+    n = len(chapters)
+    txt = """EIGHT MILES WEST — back cover copy (draft, %(d)s)
+================================================================
+
+TAGLINE (for the cover, under the title):
+
+    %(tag)s
+
+BACK COVER COPY:
+
+In 1662, in a stone church at the tip of Manhattan island, a Dutch cooper's
+granddaughter was baptized with the colony's two most powerful men standing
+witness. Two years later they surrendered New Amsterdam to England without firing
+a shot.
+
+Three hundred and sixty years later, a machinist's grandson found his uncle's
+letters, a genealogy book with the family's name in it, and a private record
+that had just lost twenty-four of its own stories to a bad save -- and set
+out to write down what four centuries of documents actually say about a
+family that crossed an ocean, then a colony, then a continent, and never
+once talked about why it kept breaking apart.
+
+EIGHT MILES WEST follows one American family -- Croesen, Kroesen, Kroessen,
+Cruse, Krewson, a dozen spellings of one name -- through the surrender of a
+Dutch colony, a tree theft prosecuted by a minister, a will that freed three
+enslaved people by installment, a Revolution fought by cousins on both
+sides, a son on the run from his own father, a four-hundred-dollar loan taken
+under false pretenses, a war fought twice by two of the same four children,
+and the four-star general -- descended from the same baptized girl -- who
+searched the Dutch archives with an army behind him and found exactly the
+same blank everyone else did.
+
+Every sentence is marked: documented, inferred, or family legend. This is
+non-fiction, read from the wills, the church books, and sixty years of a
+family's own letters.
+
+%(n)s chapters. Five parts. Four centuries.
+
+----------------------------------------------------------------
+
+AUTHOR BIO (short):
+
+Michael V. Krewson is the great-great-great-grandson of Lewis Krewson of
+Ohio and Iowa, and the ninth-generation descendant of Garret Dircksen
+Croesen of Breuckelen. EIGHT MILES WEST is his first book. He lives in
+California.
+
+----------------------------------------------------------------
+
+Also usable as a pull-quote / cover blurb on its own:
+
+    "%(tag)s"
+                                    -- from Chapter 19, "The Cousin Who
+                                       Kept the Name"
+""" % {"d": dt.date.today().isoformat(), "tag": TAGLINE_QUOTE, "n": n, }
+    path = os.path.join(OUT, "back-cover-copy.txt")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(txt)
+    return path
+
+
 def main():
     html_only = "--html" in sys.argv
     chapters = W.load_chapters(include_drafts=False)
@@ -433,6 +511,8 @@ def main():
     epub_path = os.path.join(OUT, "eight-miles-west.epub")
     n = build_epub(chapters, epub_path)
     print("epub: %d files → %s" % (n, os.path.relpath(epub_path, ROOT)))
+    cover_copy_path = write_back_cover_copy(chapters)
+    print("back-cover copy → %s" % os.path.relpath(cover_copy_path, ROOT))
     if html_only:
         return
     pdf_path = os.path.join(OUT, "eight-miles-west.pdf")
