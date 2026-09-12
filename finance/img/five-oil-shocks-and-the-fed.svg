@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 590" role="img" aria-label="Five small panels, one per oil shock: 1973, 1979, 1990, 2022 and 2026. The top row shows the oil price change from the month the shock began over the following eighteen months: up 134 percent in 1973, up 166 percent by 1980, up 93 percent then back down in 1990, up 38 percent then down in 2022, and up 58 percent then partly back in 2026. The bottom row shows the change in the federal funds rate over the same months: up about two points then down in 1973, up eight points by 1980, cut by three points in 1990, up four and a quarter points in 2022, and unchanged so far in 2026.">
+<rect width="900" height="590" fill="#0a0f1a"/>
+<text x="450.0" y="34.0" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">Five oil shocks, and what the Fed did next</text>
+<text x="450.0" y="57.0" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#94a3b8" font-style="italic">months from the start of the shock; oil = WTI monthly average, Fed = effective funds rate</text>
+<text transform="translate(16,203.0) rotate(-90)" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8" font-style="italic">oil price, % change</text>
+<line x1="62.0" y1="254.0" x2="212.8" y2="254.0" stroke="#94a3b8" stroke-width="1.1"/>
+<text x="56.0" y="258.0" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+0%</text>
+<line x1="62.0" y1="186.0" x2="212.8" y2="186.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<text x="56.0" y="190.0" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+100%</text>
+<line x1="62.0" y1="118.0" x2="212.8" y2="118.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<text x="56.0" y="122.0" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+200%</text>
+<line x1="83.5" y1="118.0" x2="83.5" y2="288.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="137.4" y="88.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2" font-weight="bold">1973 · Arab embargo</text>
+<text x="137.4" y="103.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8" font-style="italic">month 0 = Oct 1973</text>
+<polyline points="62.0,265.8 69.2,254.0 76.4,254.0 83.5,254.0 90.7,254.0 97.9,254.0 105.1,162.5 112.3,162.5 119.4,162.5 126.6,162.5 133.8,162.5 141.0,162.5 148.2,162.5 155.4,162.5 162.5,162.5 169.7,145.9 176.9,145.9 184.1,145.9 191.3,145.9 198.4,145.9 205.6,145.9 212.8,145.9" fill="none" stroke="#ad8a2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="169.7" cy="145.9" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="161.7" y="136.9" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+159%</text>
+<line x1="228.8" y1="254.0" x2="379.6" y2="254.0" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="228.8" y1="186.0" x2="379.6" y2="186.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="228.8" y1="118.0" x2="379.6" y2="118.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="250.3" y1="118.0" x2="250.3" y2="288.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="304.2" y="88.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2" font-weight="bold">1979 · Iranian revolution</text>
+<text x="304.2" y="103.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8" font-style="italic">month 0 = Dec 1978</text>
+<polyline points="228.8,254.0 236.0,254.0 243.2,254.0 250.3,254.0 257.5,254.0 264.7,249.4 271.9,249.4 279.1,249.4 286.2,239.1 293.4,234.5 300.6,222.4 307.8,200.7 315.0,191.5 322.2,189.2 329.3,180.0 336.5,173.2 343.7,173.2 350.9,152.6 358.1,148.0 365.2,141.1 372.4,141.1 379.6,141.1" fill="none" stroke="#ad8a2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="365.2" cy="141.1" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="357.2" y="132.1" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+166%</text>
+<line x1="395.6" y1="254.0" x2="546.4" y2="254.0" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="395.6" y1="186.0" x2="546.4" y2="186.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="395.6" y1="118.0" x2="546.4" y2="118.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="417.1" y1="118.0" x2="417.1" y2="288.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="471.0" y="88.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2" font-weight="bold">1990 · Kuwait invaded</text>
+<text x="471.0" y="103.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8" font-style="italic">month 0 = Jul 1990</text>
+<polyline points="395.6,254.2 402.8,255.5 410.0,260.4 417.1,254.0 424.3,222.9 431.5,199.1 438.7,190.9 445.9,204.2 453.0,222.3 460.2,230.9 467.4,247.1 474.6,249.5 481.8,246.0 489.0,244.5 496.1,248.3 503.3,243.8 510.5,242.9 517.7,242.3 524.9,237.3 532.0,240.0 539.2,250.8 546.4,253.3" fill="none" stroke="#ad8a2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="438.7" cy="190.9" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="446.7" y="181.9" text-anchor="start" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+93%</text>
+<line x1="562.4" y1="254.0" x2="713.2" y2="254.0" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="562.4" y1="186.0" x2="713.2" y2="186.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="562.4" y1="118.0" x2="713.2" y2="118.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="583.9" y1="118.0" x2="583.9" y2="288.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="637.8" y="88.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2" font-weight="bold">2022 · Ukraine</text>
+<text x="637.8" y="103.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8" font-style="italic">month 0 = Jan 2022</text>
+<polyline points="562.4,255.4 569.6,257.3 576.8,263.4 583.9,254.0 591.1,247.1 598.3,233.3 605.5,238.8 612.7,232.5 619.8,228.2 627.0,239.0 634.2,245.5 641.4,253.2 648.6,250.5 655.8,253.1 662.9,259.5 670.1,258.2 677.3,259.2 684.5,262.1 691.7,257.1 698.8,263.5 706.0,264.6 713.2,259.8" fill="none" stroke="#ad8a2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="619.8" cy="228.2" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="627.8" y="219.2" text-anchor="start" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+38%</text>
+<line x1="729.2" y1="254.0" x2="880.0" y2="254.0" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="729.2" y1="186.0" x2="880.0" y2="186.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="729.2" y1="118.0" x2="880.0" y2="118.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="750.7" y1="118.0" x2="750.7" y2="288.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<text x="804.6" y="88.0" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#e8dfd2" font-weight="bold">2026 · Hormuz closed</text>
+<text x="804.6" y="103.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8" font-style="italic">month 0 = Feb 2026</text>
+<polyline points="729.2,258.7 736.4,260.9 743.6,258.7 750.7,254.0 757.9,225.7 765.1,216.3 772.3,214.3 779.5,232.6 786.6,237.2 793.8,233.6" fill="none" stroke="#ad8a2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="793.8" cy="233.6" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="801.8" y="224.6" text-anchor="start" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+30% so far</text>
+<text transform="translate(16,415.0) rotate(-90)" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8" font-style="italic">Fed funds rate, change in points</text>
+<line x1="62.0" y1="486.9" x2="212.8" y2="486.9" stroke="#1e2a3c" stroke-width="0.8"/>
+<text x="56.0" y="490.9" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">-3</text>
+<line x1="62.0" y1="447.7" x2="212.8" y2="447.7" stroke="#94a3b8" stroke-width="1.1"/>
+<text x="56.0" y="451.7" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+0</text>
+<line x1="62.0" y1="408.5" x2="212.8" y2="408.5" stroke="#1e2a3c" stroke-width="0.8"/>
+<text x="56.0" y="412.5" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+3</text>
+<line x1="62.0" y1="369.2" x2="212.8" y2="369.2" stroke="#1e2a3c" stroke-width="0.8"/>
+<text x="56.0" y="373.2" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+6</text>
+<line x1="62.0" y1="330.0" x2="212.8" y2="330.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<text x="56.0" y="334.0" text-anchor="end" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">+9</text>
+<line x1="83.5" y1="330.0" x2="83.5" y2="500.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<polyline points="62.0,442.6 69.2,441.3 76.4,437.6 83.5,447.7 90.7,447.4 97.9,448.5 105.1,452.4 112.3,461.3 119.4,456.3 126.6,441.2 133.8,430.7 141.0,422.6 148.2,409.6 155.4,421.5 162.5,430.3 169.7,447.0 176.9,455.0 184.1,467.0 191.3,485.4 198.4,497.0 205.6,500.0 212.8,500.0" fill="none" stroke="#6d84e6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="212.8" cy="500.0" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="204.8" y="491.0" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">-4.5 pts</text>
+<text x="83.5" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">0</text>
+<text x="126.6" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">6</text>
+<text x="169.7" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">12</text>
+<text x="212.8" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">18</text>
+<line x1="228.8" y1="486.9" x2="379.6" y2="486.9" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="228.8" y1="447.7" x2="379.6" y2="447.7" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="228.8" y1="408.5" x2="379.6" y2="408.5" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="228.8" y1="369.2" x2="379.6" y2="369.2" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="228.8" y1="330.0" x2="379.6" y2="330.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="250.3" y1="330.0" x2="250.3" y2="500.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<polyline points="228.8,468.4 236.0,461.7 243.2,451.2 250.3,447.7 257.5,447.2 264.7,447.3 271.9,446.9 279.1,448.0 286.2,444.9 293.4,444.3 300.6,441.9 307.8,435.8 315.0,429.4 322.2,398.8 329.3,406.5 336.5,398.7 343.7,398.1 350.9,394.1 358.1,354.1 365.2,348.6 372.4,435.3 379.6,455.0" fill="none" stroke="#6d84e6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="365.2" cy="348.6" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="357.2" y="339.6" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+7.6 pts</text>
+<text x="250.3" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">0</text>
+<text x="293.4" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">6</text>
+<text x="336.5" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">12</text>
+<text x="379.6" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">18</text>
+<line x1="395.6" y1="486.9" x2="546.4" y2="486.9" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="395.6" y1="447.7" x2="546.4" y2="447.7" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="395.6" y1="408.5" x2="546.4" y2="408.5" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="395.6" y1="369.2" x2="546.4" y2="369.2" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="395.6" y1="330.0" x2="546.4" y2="330.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="417.1" y1="330.0" x2="417.1" y2="500.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<polyline points="395.6,446.3 402.8,447.3 410.0,445.9 417.1,447.7 424.3,448.0 431.5,447.0 438.7,448.2 445.9,452.1 453.0,458.7 460.2,463.9 467.4,472.5 474.6,474.2 481.8,477.0 489.0,478.7 496.1,477.1 503.3,478.2 510.5,480.3 517.7,483.0 524.9,486.1 532.0,491.4 539.2,496.3 546.4,500.0" fill="none" stroke="#6d84e6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="546.4" cy="500.0" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="538.4" y="491.0" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">-4.1 pts</text>
+<text x="417.1" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">0</text>
+<text x="460.2" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">6</text>
+<text x="503.3" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">12</text>
+<text x="546.4" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">18</text>
+<line x1="562.4" y1="486.9" x2="713.2" y2="486.9" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="562.4" y1="447.7" x2="713.2" y2="447.7" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="562.4" y1="408.5" x2="713.2" y2="408.5" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="562.4" y1="369.2" x2="713.2" y2="369.2" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="562.4" y1="330.0" x2="713.2" y2="330.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="583.9" y1="330.0" x2="583.9" y2="500.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<polyline points="562.4,447.7 569.6,447.7 576.8,447.7 583.9,447.7 591.1,447.7 598.3,446.1 605.5,444.4 612.7,438.7 619.8,432.9 627.0,426.8 634.2,418.3 641.4,415.3 648.6,408.5 655.8,399.3 662.9,395.1 670.1,392.1 677.3,389.0 684.5,387.9 691.7,385.6 698.8,382.6 706.0,382.3 713.2,381.8" fill="none" stroke="#6d84e6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="713.2" cy="381.8" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="705.2" y="372.8" text-anchor="end" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">+5.0 pts</text>
+<text x="583.9" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">0</text>
+<text x="627.0" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">6</text>
+<text x="670.1" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">12</text>
+<text x="713.2" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">18</text>
+<line x1="729.2" y1="486.9" x2="880.0" y2="486.9" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="729.2" y1="447.7" x2="880.0" y2="447.7" stroke="#94a3b8" stroke-width="1.1"/>
+<line x1="729.2" y1="408.5" x2="880.0" y2="408.5" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="729.2" y1="369.2" x2="880.0" y2="369.2" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="729.2" y1="330.0" x2="880.0" y2="330.0" stroke="#1e2a3c" stroke-width="0.8"/>
+<line x1="750.7" y1="330.0" x2="750.7" y2="500.0" stroke="#1e2a3c" stroke-width="1" stroke-dasharray="3,3"/>
+<polyline points="729.2,444.6 736.4,446.6 743.6,447.7 750.7,447.7 757.9,447.7 765.1,447.7 772.3,447.8 779.5,447.8 786.6,447.8 793.8,447.8" fill="none" stroke="#6d84e6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="793.8" cy="447.8" r="4" fill="#e8dfd2" stroke="#0a0f1a" stroke-width="1.5"/>
+<text x="801.8" y="438.8" text-anchor="start" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">unchanged so far</text>
+<text x="750.7" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">0</text>
+<text x="793.8" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">6</text>
+<text x="836.9" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">12</text>
+<text x="880.0" y="516.0" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#94a3b8">18</text>
+<text x="14.0" y="554.0" text-anchor="start" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">Source: FRED — WTI monthly average (WTISPLC), effective federal funds rate (FEDFUNDS), through Aug 2026. Labels mark the largest move in the window.</text>
+<text x="14.0" y="571.0" text-anchor="start" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">1990's Fed cut into its shock (a recession had begun); 1979–80's hiked eight points and broke inflation at the cost of two recessions. 2026 ends at month 6.</text>
+</svg>
