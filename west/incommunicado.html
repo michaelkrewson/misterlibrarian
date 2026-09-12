@@ -12,9 +12,10 @@
 <meta property="og:title" content="Incommunicado"/>
 <meta property="og:description" content="1961–65 — Al in the Berlin Brigade, Glenn on the USS Robison, and Grandpa Mitchell dying intestate between them: the Irish estate lost to cousins. Ch. 15."/>
 <meta property="og:url" content="https://mistertranslation.com/west/incommunicado.html"/>
+<meta property="og:image" content="https://mistertranslation.com/west/img/al-krewson-sanity-test-berlin-age-19.jpg"/>
 <meta property="article:section" content="Part IV — The Year the Family Broke Apart"/>
 <meta name="author" content="Michael V. Krewson"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -438,6 +439,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -491,6 +519,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 
 <p>"Yes, this really happened." The shooting he means is the one every soldier in the Brigade that year remembered: Peter Fechter, eighteen, shot at the Wall near Checkpoint Charlie on 17 August 1962 and left to bleed to death in the strip while West Berliners screamed at the American guards to do something and the American guards, under orders, did nothing; there were riots at the checkpoint for nights afterward, and the Brigade was on riot duty [3]. <span class="infer">The guards who shot Fechter were East German, not Russian; Al's "Russians" is how a nineteen-year-old private understood the far side of the Wall, and the book leaves his word in his sentence.</span></p>
 
+<figure class="plate">
+  <img src="img/al-krewson-sanity-test-berlin-age-19.jpg" alt="A black-and-white photograph of a young soldier in US Army dress greens and a service cap, seated at a plain wooden table in front of a curtain, hands folded on the table, eyes shut and grinning broadly. A shoulder patch and a braided cord are visible on the left shoulder." width="344" height="458" loading="lazy" decoding="async"/>
+  <figcaption>"Al Krewson's Sanity Test, Berlin, Age 19" — the family's own title for it, and the joke is the photograph. He is nineteen, in dress greens, a hundred and ten miles inside East Germany, in the year of Peter Fechter and the riots at Checkpoint Charlie.
+    <span class="cite">Family archive; Michael Krewson's own photograph file.</span></figcaption>
+</figure>
+
 <h2>The sailor</h2>
 
 <p>Glenn had gone into the Navy and to sea. The ship he names, the USS <i>Robison</i> (DDG-12), was a <i>Charles F. Adams</i>-class guided-missile destroyer, 437 feet, commissioned in December 1961 and home-ported at San Diego — one of the new Tartar-missile ships the Pacific Fleet was sending west in rotation in 1963 and 1964 [4]. A destroyer on a Western Pacific deployment in those years was gone six or seven months, and a sailor aboard her got his mail when the ship did. "Incommunicado, on assignment" is what that looked like from the deck.</p>
@@ -517,12 +551,24 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 
 <p>Al reached Granny in London "almost a year later" — 1964 — on a leave granted because he was about to be discharged, and got, as the last chapter told, the reprimand about the Wall [2]. A second Berlin photograph, "Al Krewson in Berlin, at Age 21," a formal dress-uniform portrait, is from that year [2]. Then he went home the long way, and the paragraph in which he tells it is worth having whole, because it is the only account in the archive of how one of these people actually crossed the world:</p>
 
+<figure class="plate">
+  <img src="img/al-krewson-in-berlin-age-21.jpg" alt="A formal black-and-white head-and-shoulders portrait of a young soldier in US Army dress greens, service cap squared, dark tie, ribbon bar and unit insignia on the lapels, a braided cord over the left shoulder, looking straight at the camera without expression." width="336" height="445" loading="lazy" decoding="async"/>
+  <figcaption>Berlin, 1964, at twenty-one — two years after the sanity test and the same uniform, taken straight. He was about to be discharged. His grandfather in Ireland was already dead, and his grandmother in London would not learn of it for three months.
+    <span class="cite">Family archive; Michael Krewson's own photograph file, titled "Al Krewson in Berlin, at Age 21."</span></figcaption>
+</figure>
+
 <div class="doc">
   <p>I then made a quick trip to Dublin and made arrangements for my upcoming discharge from the Army, got discharged in Berlin and passed through the Russian Checkpoints as a civilian on a military train to Frankfurt. From there I flew to London, then to Dublin. I soon ran out of money and couldn't get work there, so I went to England to an American Air Force Base and got a free ride to the States. I stayed in New York for a while, earned enough money to get back to California to my brother and sisters … then eventually went into the Navy.</p>
   <span class="cite">Al Krewson to Michael, 26 June 2002 [2].</span>
 </div>
 
 <p>The duty train through Marienborn with a discharge paper instead of orders; Dublin with no money and no work in the last year of the emigration decade; a hop on a Military Air Transport flight out of an American base in East Anglia — the ordinary route home for a broke ex-soldier in 1964 [3]. And New York: the family archive holds a photograph titled "Al Krewson with Irish Family in Manhattan, Age 22" — 1965 — seven people crowded onto and around a bed in a small apartment, Al in shirtsleeves at the left, a baby held up in the middle, an older man standing at the right in a suit [2]. Who they were, the caption does not say. <span class="infer">An Irish family in Manhattan who put up a twenty-two-year-old with a Dublin education and no money, in the year he "stayed in New York for a while," is the likeliest reading; the book treats them as the people who got him the rest of the way to California.</span> Then California, and his brother and sisters, and "eventually" the Navy — the second service, the one that would take him, on his own word, to Vietnam. That is the next chapter's.</p>
+
+<figure class="plate">
+  <img src="img/al-krewson-irish-family-manhattan-age-22.jpg" alt="A black-and-white snapshot of seven people crowded onto and around a bed in a small apartment: a young man in shirtsleeves sitting on the bed's edge at the left, two women beside him, a third standing behind, a fourth holding a baby upright in the middle, and a man in a shirt and tie standing at the right. A lamp and a headboard behind them." width="304" height="292" loading="lazy" decoding="async"/>
+  <figcaption>Manhattan, 1965, on the way home with no money — seven people on and around one bed in a small apartment, Al in shirtsleeves at the left. <span class="infer">Who the others were is not written on the print and is named in no letter; the chapter's reading of them is the reading above.</span>
+    <span class="cite">Family archive; Michael Krewson's own photograph file, titled "Al Krewson with Irish Family in Manhattan, Age 22."</span></figcaption>
+</figure>
 
 <p>Granny, widowed, left London for Málaga. Glenn came off the <i>Robison</i>, married, and was in Massachusetts by 1971, where Michael was born [7]. The estate in the mountains passed to people none of them could name, and the family's letters never mention Ireland again except to say what was lost there.</p>
 

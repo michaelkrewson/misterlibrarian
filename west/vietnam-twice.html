@@ -12,9 +12,10 @@
 <meta property="og:title" content="Vietnam, Twice"/>
 <meta property="og:description" content="Al and Marjorie Krewson in Vietnam — a Navy headstone at Willamette, a nurse on the helicopters, Agent Orange — and the family’s roll since 1755. Ch. 16."/>
 <meta property="og:url" content="https://mistertranslation.com/west/vietnam-twice.html"/>
+<meta property="og:image" content="https://mistertranslation.com/west/img/al-and-barbara-krewson-headstone-willamette-national-cemetery-ll-241.jpg"/>
 <meta property="article:section" content="Part IV — The Year the Family Broke Apart"/>
 <meta name="author" content="Michael V. Krewson"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -438,6 +439,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -484,6 +512,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <p>KREWSON, ALFRED · SN US NAVY · War Period: VIETNAM · Date of Birth: 02/02/1943 · Date of Death: 01/24/2006 · Buried At: SECTION LL SITE 241 · WILLAMETTE NATIONAL CEMETERY, 11800 SE MT. SCOTT BOULEVARD, PORTLAND, OR 97086</p>
   <span class="cite">VA Nationwide Gravesite Locator, queried 12 September 2026 [1].</span>
 </div>
+
+<figure class="plate">
+  <img src="img/al-and-barbara-krewson-headstone-willamette-national-cemetery-ll-241.jpg" alt="A flat granite grave marker set level with mown grass, incised with a Latin cross at the top and 'LL 241' in the upper right corner. The inscription reads: ALFRED G M KREWSON, SN US NAVY VIETNAM, FEB 2 1943, JAN 24 2006; BARBARA H KREWSON, FEB 2 1955, SEP 3 2007; BELOVED MOTHER AND FATHER." width="1600" height="927" loading="lazy" decoding="async"/>
+  <figcaption>Section LL, site 241, Willamette National Cemetery, Portland — the government's four lines, and one the family chose. Cut in stone is the birth date he had given his nephew in a letter, and the one word about the war that he allowed: VIETNAM. Barbara was born on the same day of the year, twelve years after him, and the stone shows it.
+    <span class="cite">Family archive; a photograph of the marker, kept with the record of the grave.</span></figcaption>
+</figure>
 
 <p>Seaman, United States Navy, Vietnam. The birth date is the one he gave Michael himself; this is the first paper that agrees with it. The death date is a year and three days after the morning he sat down and wrote two long emails about 1946. His wife Barbara — born, by the same record, on the same day of the year twelve years after him — followed him into the same grave in September 2007 [1]. Between the Navy and the grave there were forty years in Portland, six children, thirteen grandchildren, a piano, and a war he mentioned to his nephew exactly once.</p>
 

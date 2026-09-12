@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Resize and compress photos for The Librarian Abroad (/travel/).
+"""Resize and compress photos for any publication on this domain.
 
 A phone photo is 3–6 MB and 4000px wide. A hundred of those would add half a
 gigabyte to a repo that is already ~270 MB of git history — and git history is
 forever, so an oversized photo committed once can never really be taken back out.
-This is the gate: everything that goes into travel/img/ goes through here first.
+This is the gate: everything that goes into a publication's img/ goes through
+here first.
 
     python3 tools/travel_photos.py ~/Desktop/lisbon/*.jpg
     python3 tools/travel_photos.py --name sardines ~/Desktop/IMG_4417.jpeg
-    python3 tools/travel_photos.py --check          # audit what's already there
+    python3 tools/travel_photos.py --into west ~/Desktop/scan.jpg
+    python3 tools/travel_photos.py --check                 # audit travel/img/
+    python3 tools/travel_photos.py --into west --check     # audit west/img/
 
 It prints the filename to paste into a post's `hero:` line or <figure> tag.
 
@@ -16,6 +19,16 @@ Defaults: 1600px on the long edge, JPEG quality 82, progressive — comfortably
 sharp on a retina laptop at the ~860px column this site renders at, and typically
 150–350 KB per photo. EXIF is STRIPPED, which matters: phone photos carry GPS
 coordinates, and this repo is public.
+
+`--into <pub>` picks the destination (default `travel`). It was added 2026-09-12
+because four other publications had by then been told, in CLAUDE.md, to use this
+tool — the Regimen, the Notebook and Eight Miles West all keep pictures in their
+own `img/` — and the only way to obey that instruction was to run the tool and
+then move the file by hand, which is exactly the step someone eventually skips.
+One gate, one flag, no hand-moving. ⚠ It does NOT upscale: a small archival scan
+comes through at its own size, because inventing pixels in a family photograph is
+the one thing a family history must not do. Check what came out before using it —
+`build_west_book.py` prints the print resolution of every picture it places.
 """
 import argparse
 import os
@@ -28,7 +41,13 @@ except ImportError:
     sys.exit("Pillow is required:  python3 -m pip install Pillow")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-IMG_DIR = os.path.join(ROOT, "travel", "img")
+
+# Every publication that keeps its own pictures. A publication not listed here
+# has no img/ convention yet; add the line when it gets one.
+PUBS = ("travel", "health", "notebook", "west", "finance")
+DEFAULT_PUB = "travel"
+
+IMG_DIR = os.path.join(ROOT, DEFAULT_PUB, "img")   # rebound by main() per --into
 
 MAX_EDGE = 1600
 QUALITY = 82
@@ -76,7 +95,7 @@ def convert(src, name=None, max_edge=MAX_EDGE, quality=QUALITY):
 
 def check():
     if not os.path.isdir(IMG_DIR):
-        print("no travel/img/ yet")
+        print("no %s yet" % os.path.relpath(IMG_DIR, ROOT))
         return 0
     total = 0.0
     fat = []
@@ -88,8 +107,8 @@ def check():
         total += kb
         if kb > WARN_KB and not fn.endswith(".svg"):
             fat.append((fn, kb))
-    print("travel/img/: {} files, {:.1f} MB total".format(
-        len(os.listdir(IMG_DIR)), total / 1024.0))
+    print("{}: {} files, {:.1f} MB total".format(
+        os.path.relpath(IMG_DIR, ROOT), len(os.listdir(IMG_DIR)), total / 1024.0))
     if fat:
         print("\n⚠ over {} KB — re-run these through the resizer:".format(WARN_KB))
         for fn, kb in sorted(fat, key=lambda x: -x[1]):
@@ -98,13 +117,19 @@ def check():
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Prepare photos for /travel/.")
+    global IMG_DIR
+    ap = argparse.ArgumentParser(
+        description="Prepare photos for a publication's img/ directory.")
     ap.add_argument("photos", nargs="*", help="source image files")
     ap.add_argument("--name", help="base filename to use (single photo only)")
+    ap.add_argument("--into", default=DEFAULT_PUB, choices=PUBS,
+                    help="which publication's img/ to write into (default: %s)" % DEFAULT_PUB)
     ap.add_argument("--max-edge", type=int, default=MAX_EDGE)
     ap.add_argument("--quality", type=int, default=QUALITY)
-    ap.add_argument("--check", action="store_true", help="audit travel/img/ and exit")
+    ap.add_argument("--check", action="store_true", help="audit that img/ and exit")
     args = ap.parse_args()
+
+    IMG_DIR = os.path.join(ROOT, args.into, "img")
 
     if args.check:
         sys.exit(0 if check() == 0 else 1)
@@ -113,7 +138,7 @@ def main():
     if args.name and len(args.photos) > 1:
         ap.error("--name only makes sense with a single photo")
 
-    print("writing into travel/img/ (EXIF stripped):")
+    print("writing into %s/img/ (EXIF stripped):" % args.into)
     for src in args.photos:
         convert(src, args.name, args.max_edge, args.quality)
     print("\nPaste the filename into a post's `hero:` line or a <figure> tag.")

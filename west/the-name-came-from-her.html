@@ -438,6 +438,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}

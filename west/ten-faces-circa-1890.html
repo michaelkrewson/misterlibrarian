@@ -12,9 +12,10 @@
 <meta property="og:title" content="Ten Faces, Circa 1890"/>
 <meta property="og:description" content="The Krewsons from Bucks County to Ohio to Iowa, 1788–1890 — the thin middle of the record — and one photograph of ten people, names on the back. Ch. 11."/>
 <meta property="og:url" content="https://mistertranslation.com/west/ten-faces-circa-1890.html"/>
+<meta property="og:image" content="https://mistertranslation.com/west/img/krewson-family-c1890-full.jpg"/>
 <meta property="article:section" content="Part III — Ohio, Iowa, Oregon"/>
 <meta name="author" content="Michael V. Krewson"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -438,6 +439,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -480,6 +508,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     
 <p>Ten people sat for a photographer around 1890 — four standing, six seated, a baby on one knee and a toddler holding on to another. The print survived. And then, decades later, somebody turned it over and wrote all ten names on the back.</p>
 
+<figure class="plate">
+  <img src="img/krewson-family-c1890-full.jpg" alt="A studio group portrait of ten people, about 1890. Four adults stand across the back — three young men in hats and a young woman with a light bow at her collar. Six sit in front: a bearded man in glasses with a baby on his knee, a small boy standing at his side, two women, and at the right a white-bearded older man with his hat resting on his knee. The print is creased and spotted." width="1600" height="1169" loading="lazy" decoding="async"/>
+  <figcaption>The print itself. Four standing, six seated, a baby on one knee and a toddler holding on to another — the ten faces this chapter reads.
+    <span class="cite">A photographic print in the family's keeping, photographed front and back by Michael Krewson on 20 August 2026. "Circa 1890" is written on the reverse in a later hand.</span></figcaption>
+</figure>
+
 <p>That somebody was Earl W. Krewson, of 4644 S.E. 85th Avenue, Portland, Oregon. He signed it, dated it "Nov 3" without a year, added "circa 1890" in a different pen, and left his telephone number [1]. The names are not listed but positioned — each one written where its person stands — which is what makes them usable, once you know the trick: the back of a print is a mirror of the front, so the name at the back's right belongs to the face at the front's left. Read that way, every name lands on exactly one face with none left over. "Sylvester Krewson 16 yrs" falls on the youngest man in the back row, in a soft hat. "Charlie (Boy)" falls on the infant. "Oliver (Boy)" on the toddler. And "Lewis Edward Krewson" on the white-bearded man seated at the far right with his hat resting on his knee — Michael's great-great-grandfather, and until the print was turned over, a name on a chart with no face [1].</p>
 
 <p>That is the document this part of the book has, and it is almost the only one. For the hundred and fifty years between Simon and this print the family left nothing in its own hand — no will that anyone has found, no deed, no church book, no letter. What survives is what other people's family trees carry: names, dates, a county here and there. This chapter is honest about that. It says what the record holds, it reads the photograph as carefully as the earlier chapters read the wills, and it says where the rest is.</p>
@@ -497,6 +531,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <h2>Reading the print</h2>
 
 <p>The photograph is a studio group of the kind every prosperous farm family in the Midwest sat for once: the parents seated in front, the children arranged around them by height and marriage, the grandchildren on knees. What it shows, read the way the wills were read, is this.</p>
+
+<figure class="plate">
+  <img src="img/krewson-family-c1890-key.jpg" alt="The same group portrait with ten boxes drawn on it, each labelled with a name: Uncle George, Uncle Charles, Aunt Mary and Sylvester Krewson 16 across the back; Uncle William, Oliver (boy), Charlie (boy), Lotta, Phoebe Ellen Krewson and Lewis Edward Krewson in front." width="1600" height="1169" loading="lazy" decoding="async"/>
+  <figcaption>The ten names carried round from the back to the faces they belong to. The reverse of a print is a mirror of its face, so a name written at the back's right belongs to the face at the front's left; read that way each name lands on exactly one person and none is left over. The plain "Sylvester Krewson 16 yrs," among the Uncles and the one Aunt, is what identifies the man who wrote them.
+    <span class="cite">Keyed by the family's record from the inscribed reverse; the inscription itself is reproduced in the last chapter.</span></figcaption>
+</figure>
 
 <p>Lewis is about forty-seven, white-bearded already, in a dark suit, his hat on his knee — the pose of a man who has been told to sit still and is doing it. Phoebe is beside him, hair centre-parted and swept low over the ears, the long straight nose and deep-set eyes that carry, aged twenty-five years, into the only other portrait of her the family has [1]. Behind them stand the sons: George, in the annotator's "Uncle George"; Charles, "Uncle Charles," in a bowler hat and wire-rimmed glasses, about seventeen — the narrow face and long neck and prominent ears that carry, three years on, into the Seymour cabinet card, the two set side by side in the family's archive so that a reader can judge for himself, and the record calling it "a strong probability, not a confirmed identification" [7]; Sylvester, sixteen, in the soft hat, the youngest adult. "Aunt Mary," the twin. And at the left, seated, "Uncle William" with Lotta and their two boys — Oliver, the toddler, and Charlie, the baby — "a family inside the family," which is what a photograph like this is for: to show that the line goes on [1].</p>
 

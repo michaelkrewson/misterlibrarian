@@ -12,9 +12,10 @@
 <meta property="og:title" content="Let&#x27;s Keep Each Other Posted"/>
 <meta property="og:description" content="The last chapter — Al’s method, the record Michael built, the day it lost 24 stories, documented / inferred / legend, and what is still open. Ch. 20."/>
 <meta property="og:url" content="https://mistertranslation.com/west/lets-keep-each-other-posted.html"/>
+<meta property="og:image" content="https://mistertranslation.com/west/img/krewson-family-c1890-back-inscription.jpg"/>
 <meta property="article:section" content="Part V — The People Who Kept This"/>
 <meta name="author" content="Michael V. Krewson"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -438,6 +439,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -521,6 +549,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <h2>The keepers</h2>
 
 <p>Katherine Breck Weaver, from 1915. Frank King Swain, from the 1920s, in his castle. Anne Raike, from 1932. A Mr. Stols in The Hague in 1943. Marie Metzgar, fifty years. Wayne Nelson. Shirley Cruzen Stevens. William Bogardus. General Kroesen, from 1960. Warren Cruise, twenty years, and his mother before him. Earl, with his ballpoint pen on the back of a photograph. Al, from the late 1960s to 2005. Michael, from 2000, when he first wrote to his uncle, to the server he keeps now. Not one of them was paid; not one of them was, by Al's diagnosis, part of a family that "built up what other families did." What they built was this — a record that a Los Angeles child of 1946, a sergeant of 1944, a Bucks County lieutenant of 1776 and a girl at a font in 1662 all stand in together, on the same page, with the fences between them written down and therefore, for the first time, visible.</p>
+
+<figure class="plate">
+  <img src="img/krewson-family-c1890-back-inscription.jpg" alt="The blank reverse of an old photographic print, covered in blue ballpoint handwriting. Ten names are written spaced out across it rather than in a list: 'Sylvester Krewson 16 yrs.', 'aunt Mary' and 'Uncle Charles' joined by a line and labelled 'Twins', 'Uncle George', 'Oliver (Boy)', 'Uncle William', 'Lotta' with an arrow and the words 'wife to Krewsons', 'Charlie (Boy)', 'Lewis Edward Krewson' and 'Phoebe Ellen Krewson'. At the foot, a signature — Earl W. Krewson — with 'Nov 3', an address, '4644 S.E. 85th Ave. Portland, Or. 97266', a telephone number, and in a different pen, 'circa 1890'." width="1600" height="862" loading="lazy" decoding="async"/>
+  <figcaption>The keeping, photographed. Earl W. Krewson turned the print over some November and wrote the ten names not in a list but spaced where their people stood, bracketed the twins, noted that Lotta was a wife and not a daughter, signed it, and left his address and telephone number in case anyone ever rang. He is the reason chapter 11 has faces to read and the reason his cousin's son found the family at all. Nothing else in four centuries of this record does so much with so little.
+    <span class="cite">The reverse of the c. 1890 print, in the family's keeping; photographed by Michael Krewson on 20 August 2026. The front of it is in chapter 11.</span></figcaption>
+</figure>
 
 <p>The title of the book is a distance: the eight miles of water between Brooklyn and Staten Island that the family crossed first, in the 1680s, because the land was cheaper on the other side. Every generation after crossed something — the Delaware, the Alleghenies, the Mississippi, the Rockies, an ocean back the other way, a wall, a war — and left less behind than it should have, and someone came after and picked up what was left. This book is one more of those. It is not finished, because the list above is not finished, and the record it was written from was built to be added to. That was the request in 2005, and this is the reply, in the words the family's genealogist used to close every letter he wrote:</p>
 
