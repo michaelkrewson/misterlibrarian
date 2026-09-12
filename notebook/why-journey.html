@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Why Journey — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/why-journey.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
+<meta property="og:title" content="Why Journey"/>
+<meta property="og:description" content="Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/why-journey.html"/>
+<meta property="article:section" content="Arts &amp; Culture"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(143,163,255,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#8fa3ff;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#8fa3ff}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#8fa3ff;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#8fa3ff;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#8fa3ff}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#8fa3ff;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#8fa3ff;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #8fa3ff;color:#8fa3ff}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#8fa3ff}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#8fa3ff;border-bottom-color:#8fa3ff}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#8fa3ff;
+  box-shadow:0 0 0 3px rgba(143,163,255,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#8fa3ff;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#8fa3ff;font-style:italic}
+a{color:#8fa3ff}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#8fa3ff;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #8fa3ff;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #8fa3ff;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#8fa3ff;color:#8fa3ff}
+.viewbtn.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#8fa3ff;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#8fa3ff" stroke-width="5"/>
+  <rect x="21" y="18" width="24" height="30" rx="2.5" fill="#f2f5f9"/>
+  <rect x="21" y="18" width="4" height="30" rx="1.5" fill="#8fa3ff" opacity=".85"/>
+  <g stroke="#9aa7bd" stroke-width="1.3" stroke-linecap="round">
+    <line x1="29" y1="25" x2="41" y2="25"/>
+    <line x1="29" y1="30" x2="41" y2="30"/>
+    <line x1="29" y1="35" x2="38" y2="35"/>
+  </g>
+  <line class="bmark-ink" x1="29" y1="41" x2="41" y2="41" stroke="#8fa3ff" stroke-width="1.7" stroke-linecap="round"/>
+  <g class="bmark-nib">
+    <g transform="translate(29 41) rotate(-50)">
+      <polygon points="0,0 3.8,-1.8 3.8,1.8" fill="#d9e0ea"/>
+      <rect x="3.8" y="-1.9" width="11" height="3.8" rx="1.6" fill="#f2f5f9"/>
+      <rect x="11.2" y="-1.9" width="3.6" height="3.8" rx="1.2" fill="#8fa3ff"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html" class="on">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
+  <article class="entry">
+    <h1 class="etitle">Why Journey</h1>
+    <p class="edate"><a class="esec" href="culture.html">ARTS &amp; CULTURE</a> · SEPTEMBER 12, 2026</p>
+    <figure class="hero"><img src="img/journey-minneapolis-2008.jpg" alt="Five members of the band Journey standing in a row at the front of a stage with their arms around each other, laughing, under a curtain of white stage lights; the singer in the middle is bent forward with long dark hair over his face and the guitarist beside him holds a yellow Les Paul" width="1600" height="800" loading="eager"/><figcaption>Journey at the end of a show in Minneapolis, 16 September 2008 — Ross Valory, Jonathan Cain, Arnel Pineda, Neal Schon, Deen Castronovo. Not the lineup I grew up with — the band as it was thirty years on. Photo: Matt Becker, CC BY 3.0, via Wikimedia Commons.</figcaption></figure>
+<p>I've been meaning to write about music here, and the honest place to start is with the
+band I'd pick if I could only keep one. That's Journey. It has been for most of my life, and
+I don't expect it to change. This is the first entry in what I intend to be a long, slow
+series about them — one that I'll add to over months and probably years, because the band's
+history is fifty-odd years and sixteen studio albums long, and mine with them is
+forty-odd years long too, and neither fits in a single post.</p>
+
+<p>So let me set out the rule for the series first, because it's the thing I had to work out
+before I could write a word of it.</p>
+
+<h2>Not a History</h2>
+
+<p>The history of Journey has already been written, several times, by people who were there.
+There's a fine long Wikipedia article. There are documentaries. There are memoirs. If I wrote
+"the history of Journey," I'd be summarizing those, and you'd be better off reading them. What
+nobody else has is <em>my</em> Journey — which record arrived when, how it got to me, what I
+was doing when it did — and that's the only part I can write that's worth reading.</p>
+
+<p>So each entry in this series will be one record (or, sometimes, one song, when a single song
+carries it), and each will have two halves. The first half is the record: what it is, who made
+it, what was going on in the band, with real sources. The second half is where I was. The
+records won't come in release order; they'll come in the order they reached me, which is a
+very different thing and, I think, the more interesting one. Every entry will carry the tag
+<a href="tag-journey.html">journey</a>, so that page becomes the index of the series as it
+grows.</p>
+
+<h2>Why It Had to Be the Eighties</h2>
+
+<p>I was born in the summer of 1971. That means <em>Escape</em> came out when I was ten,
+<em>Frontiers</em> when I was eleven going on twelve, and <em>Raised on Radio</em> when I was
+fifteen. Journey came into my life in the eighties, during about the most impressionable
+years a person has, and I don't think that's an accident of taste so much as a fact about how
+memory works. As a young person you form your memories around the music you hear at the time.
+It's the soundtrack that gets laid down first, and everything you hear afterward is measured
+against it.</p>
+
+<p>It turns out this is something psychologists have actually measured. The music people
+love most, for the rest of their lives, clusters heavily around what they heard in their
+teens and early twenties — the "reminiscence bump," as the memory researchers call it — and
+it holds even for songs from before a person was born, if their parents were playing them.
+I didn't need the study to know it was true of me, but I like knowing it isn't just me.</p>
+
+<p>And what Journey sang about, in those years, were very emotional things. Leaving and
+staying. Being on the road and being faithful anyway. Holding on. That's a lot for a
+ten-year-old to take in, and I think that's exactly why it took. You don't fully understand
+"Open Arms" at ten. You do understand that the person singing it means it.</p>
+
+<h2>The Voice</h2>
+
+<p>I was a Steve Perry fan, like most people who came to the band when I did, and I want to
+be plain about what that means, because it's the center of the whole thing for me. Journey has
+had a lot of members and five singers. But for me, and I suspect for anyone who
+found them in the years I did, Steve Perry <em>is</em> the voice. Not a voice. The voice. When
+I say the songs were about emotional things and that a ten-year-old could tell the singer meant
+it, that's who I'm talking about. Take him off those records and what's left is a very good
+band. With him on them it's the band I'd keep over every other one.</p>
+
+<p>Here is what I've learned about him since, most of it long after I'd already decided.</p>
+
+<p>He was born Stephen Ray Perry in January 1949 in Hanford, California, in the San Joaquin
+Valley — a farm town, not a music town — to Portuguese parents whose families had come from
+the Azores. His father sang. He grew up on the valley's radio and on Sam Cooke, whose phrasing
+you can hear in him once you know to listen for it. By his late twenties he'd spent the better
+part of a decade trying to make it, in one band after another, and in 1977 he was in one
+called Alien Project that had finally gotten the attention of a label — and then the band's
+bass player was killed in a car accident, and Perry went home to Lemoore and decided he was
+done. That's when Journey's manager, Herbie Herbert, who'd heard the Alien Project demo tape,
+tracked him down. Perry was twenty-eight. His first appearance with the band was on stage in
+San Francisco that October, and <em>Infinity</em>, the first album with him on it, came out
+in January 1978 and gave them "Lights" and "Wheel in the Sky." Within a few years they were
+one of the biggest bands in America.</p>
+
+<figure>
+  <img src="img/steve-perry-2019.jpg" alt="Steve Perry, older, with dark swept-back hair and a dark jacket over a black shirt, seated on a stage holding a microphone in one hand and gesturing with the other, mid-sentence, with a table of water bottles in front of him" loading="lazy"/>
+  <figcaption>Steve Perry at seventy, on a conference panel about how musicians write through
+  loss, Seattle, April 2019 — the year after <em>Traces</em>. Photo: Joe Mabel, CC BY-SA 4.0,
+  via Wikimedia Commons.</figcaption>
+</figure>
+
+<p>What he had, technically, was a high, clear tenor that stayed clean at the top of its range
+where most rock singers go to grit — the reason a Journey chorus sounds like it's opening a
+door rather than kicking one in. Rolling Stone put him on its list of the hundred greatest
+singers, and the nickname that stuck, "The Voice," is usually credited to Jon Bon Jovi, which
+tells you what the other singers thought. But the technical part isn't the part that got me at
+ten. The part that got me is that he sounds like he means it. There is no irony anywhere in a
+Steve Perry vocal. He is not standing slightly outside the song, the way a lot of singers do to
+protect themselves. He's all the way in.</p>
+
+<p>He wrote, too — that's the part people forget. "Don't Stop Believin'" is Perry, Neal Schon
+and Jonathan Cain. "Open Arms," "Who's Crying Now" and "Separate Ways" are Perry and Cain.
+"Lights" and "Any Way You Want It" are Perry and Schon. The exception that proves it is
+"Faithfully," which Cain wrote alone on a napkin on a tour bus — and which nobody but Perry
+could have sung. In 1984, at the height of it, he made a solo record, <em>Street Talk</em>,
+and "Oh Sherrie" went to number three; it's the one Journey-adjacent song of the decade that
+isn't a Journey song, and it belongs in this series too.</p>
+
+<p>And then, at the end of the <em>Raised on Radio</em> tour in early 1987, he stopped. Not
+dramatically — he was worn down, his mother had died while the record was being made, and he
+went home to the valley.
+The band stopped with him, because there wasn't a band without him. Nine years later he came
+back for <em>Trial by Fire</em>; I'll get to what happened after that in a minute. He has sung
+in public a handful of times since — a run of songs with the band Eels in 2014, out of nowhere,
+his first in nineteen years — and in 2018, at sixty-nine, he made an album called
+<em>Traces</em>, after the death of the woman he'd been with, having promised her he wouldn't go
+back into hiding when she was gone. When Journey went into the Rock and Roll Hall of Fame in
+2017 he was there and spoke, and didn't sing. He'll get his own entry in this series, probably
+more than one. He's the reason there's a series.</p>
+
+<h2>The Ones Before</h2>
+
+<p>Perry joined in 1977, and <em>Infinity</em> is where most of the world's idea of
+Journey begins. What I didn't know at the time — what I don't think I was even aware of — is
+that there was a band called Journey for four years before that. Neal Schon and Gregg Rolie
+had come out of Santana in 1973 and made three albums of long, jazz-tinged, mostly
+instrumental rock with Rolie singing what vocals there were, and the records didn't sell,
+and the label told the band to find a frontman.</p>
+
+<figure>
+  <img src="img/journey-1977-rolie-era.jpg" alt="A black-and-white 1977 trade advertisement headed JOURNEY. NEXT. showing four men, the band before Steve Perry joined: two with long dark hair and moustaches, one with a full beard, one with shorter curly hair, all looking at the camera" loading="lazy"/>
+  <figcaption>The band I didn't know existed. Journey circa 1977 — Gregg Rolie, Neal Schon,
+  Ross Valory and Aynsley Dunbar — the year before <em>Infinity</em>, in the trade advertisement for <em>Next</em>. Photograph
+  public domain.</figcaption>
+</figure>
+
+<p>I enjoyed some of those songs without knowing what they were. It was only later, as an
+adult, that I went back and listened to the Rolie years on purpose, and came to appreciate
+that early history — the fact that the band which wrote "Faithfully" was, not long before,
+something closer to a fusion group with a keyboard player from "Black Magic Woman" out
+front. That's going to be its own entry, or several. I'll write it as what I am, which is a
+fan who got there late, rather than pretending I was listening to <em>Look into the
+Future</em> in 1976 at the age of five.</p>
+
+<h2>The Nineties, and the Song I Missed</h2>
+
+<p>Then the nineties. Perry left after the <em>Raised on Radio</em> tour, the band stopped in
+1987, and for most of the decade there simply wasn't a Journey. I was disappointed by that,
+in the way you're disappointed by something you can't do anything about. And here's the
+confession this entry has been working toward: in 1996 the classic lineup — Perry, Schon,
+Cain, Valory, Steve Smith — got back together and made <em>Trial by Fire</em>, and its lead
+single was "When You Love a Woman," and it went to the top of the adult-contemporary chart
+and was nominated for a Grammy. And I didn't know it existed. I honestly went four or five
+years without knowing that song was out. I can't tell you why. I was twenty-five, I had a
+life, the radio I listened to evidently wasn't playing it, and somehow a new Journey single
+by Steve Perry went straight past me.</p>
+
+<p>When I finally heard it, years after everyone else, it went straight in. It is now, I think,
+my favorite song of theirs — of all of them — and it has the odd distinction of being a song I
+associate with the wrong year. The band never toured the record: Perry's hip gave out — a degenerative bone
+condition, diagnosed after a hike — and the rest of the story is one you may already know, in
+which the band waited, and then didn't, and Perry never sang with them again. That's an entry
+of its own too, and not an easy one.</p>
+
+<h2>The One Time I Saw Them</h2>
+
+<p>The time I saw Journey in person was in Fayetteville, Arkansas, at Bud Walton Arena, at one
+of the concerts Walmart puts on for its associates and shareholders during its annual-meeting
+week. The singer was Arnel Pineda — the man Neal Schon found on YouTube — so it was 2008 or
+later, and it was not the Steve Perry band. What I can't give you is the year. Those shows are
+a private event for the company's people rather than a tour date, so they don't turn up in the
+setlist archives the way a regular concert does, and I've looked. I'll write the night up
+properly as its own entry once I've pinned it down; I'd rather say that than make it up.</p>
+
+<h2>What Comes Next</h2>
+
+<p>The first record entry will be <em>Escape</em>, because that's the one that got my
+attention and made me a fan. Then the rest of the eighties in the order I met them, which
+ends at <em>Raised on Radio</em> — and I'll say now that <em>Raised on Radio</em>, not
+<em>Escape</em>, is my favorite Journey album of all, which is not the popular answer and
+will take an entry of its own to defend. Then backward into the Rolie
+years, as a latecomer; then the long strange story after Perry — Steve Augeri, Arnel Pineda, the
+band that has now outlived its most famous singer's tenure by decades, and the fact that a
+song from 1981 became, of all things, the best-selling digital track of the twentieth century
+on the strength of a television finale and a high-school choir show. There is a lot to write.
+I'm in no hurry.</p>
+
+<p>If you have a Journey of your own — a first album, a first song, a show you were at — I'd
+like to hear about it. The address is below. And if you happen to know which year Journey
+played the Walmart week in Fayetteville, you'd be saving me a search.</p>
+
+<h2>Where I Could Be Wrong</h2>
+<p>The memories are mine and I've tried to say only what I actually remember. The band facts
+are from the sources below and I've kept them to the ones that don't move — dates, lineups,
+what charted. The Fayetteville show is what I remember — the venue, the occasion, the
+singer — but I haven't been able to find a record of it, so the year is still open; I've said
+so above and I'll fill it in when I know.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Wikipedia. <i>Journey (band)</i> — the lineup and album chronology used throughout. <a href="https://en.wikipedia.org/wiki/Journey_(band)">https://en.wikipedia.org/wiki/Journey_(band)</a></li>
+  <li>Wikipedia. <i>Trial by Fire (Journey album)</i> and <i>When You Love a Woman</i> — the 1996 reunion, the single's chart run and Grammy nomination, and the tour that never happened. <a href="https://en.wikipedia.org/wiki/Trial_by_Fire_(Journey_album)">https://en.wikipedia.org/wiki/Trial_by_Fire_(Journey_album)</a></li>
+  <li>Krumhansl, C. L. and Zupnick, J. A. <i>Cascading Reminiscence Bumps in Popular Music</i>. Psychological Science 24(10), 2013 — the finding that musical memory clusters in adolescence and early adulthood, and inherits from parents. <a href="https://doi.org/10.1177/0956797613486486">https://doi.org/10.1177/0956797613486486</a></li>
+  <li>Wikipedia. <i>Steve Perry</i> — Hanford, the Azores, Alien Project, the 1977 hiring, the 1987 stop, Eels 2014, <i>Traces</i>. <a href="https://en.wikipedia.org/wiki/Steve_Perry">https://en.wikipedia.org/wiki/Steve_Perry</a></li>
+  <li>Rolling Stone. <i>100 Greatest Singers of All Time</i> (2008) — Steve Perry at No. 76. <a href="https://www.rollingstone.com/music/music-lists/100-greatest-singers-of-all-time-147019/">https://www.rollingstone.com/music/music-lists/100-greatest-singers-of-all-time-147019/</a></li>
+  <li>Rock &amp; Roll Hall of Fame. <i>Journey</i> (inducted 2017). <a href="https://rockhall.com/inductees/journey/">https://rockhall.com/inductees/journey/</a></li>
+  <li>Photographs: Matt Becker, <i>Journey, live in Minneapolis, 16 September 2008</i>, CC BY 3.0; Joe Mabel, <i>Steve Perry, Pop Conference 2019</i>, CC BY-SA 4.0; and the anonymous 1977 trade advertisement for <i>Next</i>, public domain — all via Wikimedia Commons.</li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-journey.html">journey</a><a class="tg" href="tag-music.html">music</a><a class="tg" href="tag-rock.html">rock</a><a class="tg" href="tag-1980s.html">1980s</a><a class="tg" href="tag-steve-perry.html">steve perry</a><a class="tg" href="tag-memory.html">memory</a><a class="tg" href="tag-series.html">series</a></div>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Why%20Journey%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/why-journey.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/why-journey.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="escape-and-the-four-times-i-paid-for-it.html" data-search="escape, and the four times i paid for it escape (1981), the journey record that made me a fan — and the lp, cassette, cd, napster and streaming i&#x27;ve owned it on since. series entry two." data-tags="journey music rock 1980s steve-perry escape vinyl cassette napster streaming series">
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Escape, and the Four Times I Paid for It</span>
+      <span class="ec-s">Escape (1981), the Journey record that made me a fan — and the LP, cassette, CD, Napster and streaming I&#x27;ve owned it on since. Series entry two.</span>
+    </a>
+    <a class="tile" href="raised-on-radio-the-one-i-have-to-defend.html" data-search="raised on radio, the one i have to defend raised on radio (1986) is my favorite journey album — perry, the synthesizers, &quot;the eyes of a woman,&quot; &quot;girl can&#x27;t help it.&quot; my defense. series entry three." data-tags="journey music rock 1980s steve-perry raised-on-radio synthesizers series">
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Raised on Radio, the One I Have to Defend</span>
+      <span class="ec-s">Raised on Radio (1986) is my favorite Journey album — Perry, the synthesizers, &quot;The Eyes of a Woman,&quot; &quot;Girl Can&#x27;t Help It.&quot; My defense. Series entry three.</span>
+    </a>
+    <a class="tile" href="the-second-plane.html" data-search="the second plane woken in california to watch the second plane hit, twenty-five years ago. this week 2,977 drones rebuilt the towers over new york harbor. why it got to me." data-tags="september-11 memory new-york memorial drones saudi-arabia 2001 notes">
+      <span class="ec-d">NOTES · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Second Plane</span>
+      <span class="ec-s">Woken in California to watch the second plane hit, twenty-five years ago. This week 2,977 drones rebuilt the towers over New York Harbor. Why it got to me.</span>
+    </a>
+    <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
+      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
+      <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
+    </a>
+    </div>
+  </section>
+  <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-why-journey-html">👁 <span id="hits-notebook-why-journey-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fwhy-journey.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-notebook-why-journey-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-notebook-why-journey-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-notebook-why-journey-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>
+</div>
+</body>
+</html>

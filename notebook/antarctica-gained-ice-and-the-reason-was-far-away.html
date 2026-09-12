@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
+<meta property="og:title" content="Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away"/>
+<meta property="og:description" content="Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html"/>
+<meta property="article:section" content="Science &amp; Technology"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(143,163,255,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#8fa3ff;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#8fa3ff}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#8fa3ff;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#8fa3ff;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#8fa3ff}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#8fa3ff;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#8fa3ff;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #8fa3ff;color:#8fa3ff}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#8fa3ff}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#8fa3ff;border-bottom-color:#8fa3ff}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#8fa3ff;
+  box-shadow:0 0 0 3px rgba(143,163,255,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#8fa3ff;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#8fa3ff;font-style:italic}
+a{color:#8fa3ff}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#8fa3ff;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #8fa3ff;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #8fa3ff;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#8fa3ff;color:#8fa3ff}
+.viewbtn.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#8fa3ff;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#8fa3ff" stroke-width="5"/>
+  <rect x="21" y="18" width="24" height="30" rx="2.5" fill="#f2f5f9"/>
+  <rect x="21" y="18" width="4" height="30" rx="1.5" fill="#8fa3ff" opacity=".85"/>
+  <g stroke="#9aa7bd" stroke-width="1.3" stroke-linecap="round">
+    <line x1="29" y1="25" x2="41" y2="25"/>
+    <line x1="29" y1="30" x2="41" y2="30"/>
+    <line x1="29" y1="35" x2="38" y2="35"/>
+  </g>
+  <line class="bmark-ink" x1="29" y1="41" x2="41" y2="41" stroke="#8fa3ff" stroke-width="1.7" stroke-linecap="round"/>
+  <g class="bmark-nib">
+    <g transform="translate(29 41) rotate(-50)">
+      <polygon points="0,0 3.8,-1.8 3.8,1.8" fill="#d9e0ea"/>
+      <rect x="3.8" y="-1.9" width="11" height="3.8" rx="1.6" fill="#f2f5f9"/>
+      <rect x="11.2" y="-1.9" width="3.6" height="3.8" rx="1.2" fill="#8fa3ff"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html" class="on">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
+  <article class="entry">
+    <h1 class="etitle">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</h1>
+    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 12, 2026</p>
+    <figure class="hero"><img src="img/antarctica-blue-marble.jpg" alt="Satellite mosaic of the whole Antarctic continent from above the South Pole, white ice sheet against a dark blue ocean, the Antarctic Peninsula reaching out at the upper left" width="1600" height="800" loading="eager"/><figcaption>Antarctica from above, assembled from NASA's Blue Marble satellite imagery. Wilkes Land and Queen Mary Land — where the snow fell — are the long coast at the lower right. NASA; public domain.</figcaption></figure>
+<p>I try to keep this rule: when a headline number is astonishing, read the paper before deciding
+what it means. This one earned it. "Antarctica gained a record 695 billion tons of ice" is true,
+appeared everywhere last week, and will be quoted for years by people who did not read past it.
+The study behind it, published in <i>Nature</i> on 19 August by a team led by Yunhe Wang at the
+Institute of Oceanology of the Chinese Academy of Sciences, is more interesting than the headline
+and points the opposite way from how the headline will be used.</p>
+
+<h2>How Do You Weigh a Continent?</h2>
+
+<p>The gain was not measured with rulers or photographs. It was weighed. Since 2002 a pair of
+satellites — first GRACE, then its successor GRACE-FO from 2018 — have flown one behind the other
+around the Earth, measuring the distance between themselves to a few microns. When the leading
+satellite passes over something heavy, it is pulled very slightly ahead; when the trailing one
+crosses the same mass, it catches up. Month by month, the changing distance between them maps where
+mass on the Earth's surface has moved. It is how we know Greenland is losing ice, how we know the
+Central Valley's aquifers are being drained, and how the 695-billion-ton figure was obtained.</p>
+
+<p>Between July 2021 and April 2023 the gravity record shows the Antarctic ice sheet getting heavier
+by roughly 695 gigatons — the largest twenty-two-month gain since the satellites began. Almost all
+of it landed in one region of East Antarctica, Queen Mary Land and Wilkes Land, the long stretch of
+coast facing the Indian Ocean. Ice cores drilled there show the same thing from the ground: two
+years of exceptional snowfall.</p>
+
+<div class="aside">
+  <p><strong>Scale.</strong> The Antarctic ice sheet weighs on the order of 24 million gigatons.
+  A 695-gigaton gain is about three thousandths of one percent of it. In sea-level terms, 362
+  gigatons of ice is one millimetre of global ocean; the gain is worth roughly two millimetres of
+  sea level that did not rise during those two years. The losses of the preceding two decades, at
+  the paper's figure of 140.5 gigatons a year, add to about 2,800 gigatons — four times the gain.</p>
+</div>
+
+<h2>Where Did the Snow Come From?</h2>
+
+<p>This is the part the paper adds, and it is why it is in <i>Nature</i>. Snow in East Antarctica
+does not fall because it is cold — it is always cold, and cold air holds almost no water. It falls
+when the atmosphere delivers moisture from somewhere warmer. The team traced that moisture with
+water-vapour tracking and found the trigger not in the Southern Ocean but in the tropics: the
+"tropical warm pool," the pocket of the western Pacific and eastern Indian Ocean that is the
+warmest open water on the planet. During 2021–23 that pool ran persistently hot.</p>
+
+<p>A hot patch of ocean heats the air above it, the rising air disturbs the jet stream, and the
+disturbance does not stay put — it travels as a train of ridges and troughs, a Rossby wave, arcing
+poleward across the Southern Hemisphere. By the time this one reached East Antarctica it had set up
+a stable pattern the authors call a north–south dipole: high pressure on one side, low on the
+other, with the air between them flowing steadily from the mid-latitude Indian Ocean straight onto
+the ice. That flow carried atmospheric rivers — long, narrow bands of water vapour, the same
+structures that flood California in a wet winter — and where they hit the cold plateau, they
+dropped their load as snow. For twenty-two months. The paper's phrase is a "previously
+underrecognized tropical warm pool–East Antarctic Ice Sheet teleconnection pathway," which is the
+scientific way of saying: nobody had drawn this line on the map before.</p>
+
+<p>Seven thousand kilometres is roughly the distance from that warm pool to Wilkes Land. The
+weather that added 695 billion tons to Antarctica was made in the tropics.</p>
+
+<h2>So Is Antarctica Growing?</h2>
+
+<p>No, and the authors say so in nearly every paragraph. The gain is a weather event of unusual
+size and duration, laid on top of a trend that has been running the other way for the whole
+satellite era. The trend is driven by something else entirely — warm ocean water melting the
+undersides of the West Antarctic glaciers where they meet the sea, a process a heavy snowfall on
+the far side of the continent does nothing to slow. The two years in question were a pause in the
+running total, not a reversal of it, and by the paper's own accounting the pause was already
+receding by 2023.</p>
+
+<p>What the study does change is the size of the swings you should expect. If a tropical
+teleconnection can add 695 gigatons in two years, it can presumably subtract on the same scale in a
+dry one, and the year-to-year noise in Antarctica's mass is larger than the models had assumed. That
+matters for anyone trying to detect the trend from a short record — a few years of gravity data,
+read alone, can point the wrong way. Which is, of course, exactly what the headline invites you to do.</p>
+
+<h2>Why Did This One Get So Much Attention?</h2>
+
+<p>Partly because the number is enormous and the mechanism is elegant. Partly, I suspect, because
+"Antarctica gains ice" is a sentence with an audience waiting for it. I noticed that most of the
+coverage put the 140-gigatons-a-year loss in the last paragraph or not at all, and that the
+paper's own framing — a teleconnection, a temporary anomaly — was replaced with the word "surprise."
+It was a surprise in the sense that the source of the moisture was unexpected. It was not a
+surprise in the sense that anything about the long-term picture had changed. Two different claims,
+one word.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<p>The mass of the ice sheet and the gigatons-per-millimetre conversion are standard figures, not
+from this paper, and the "seven thousand kilometres" is my own reading of a map rather than a
+number the authors give — I would rather state it as an estimate than pretend it is theirs. The
+long-term loss rate quoted is the paper's; other groups publish somewhat different rates depending
+on how they treat the slow rebound of the bedrock under the ice, which the gravity satellites see as
+mass and have to subtract. The direction is not in dispute; the second decimal place is. I am also
+taking the attribution of the snowfall to the warm pool on the authors' evidence — water-vapour
+tracing and circulation analysis — which is the kind of causal argument that gets tested by whether
+the next warm-pool event does the same thing. That test is a few years off.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Wang, Y. et al. <i>Nature</i> 656, 897 (19 August 2026). DOI 10.1038/s41586-026-10912-x. Institute of Oceanology, Chinese Academy of Sciences.</li>
+  <li>ScienceDaily. <i>Antarctica gained a record 695 billion tons of ice. Scientists found the surprising reason.</i> 6 September 2026. <a href="https://www.sciencedaily.com/releases/2026/09/260906170128.htm" rel="noopener" target="_blank">sciencedaily.com</a></li>
+  <li>SpaceDaily. <i>Tropical warm pool drove record Antarctic ice-sheet mass gain.</i> September 2026. <a href="https://spacedaily.com/t-antarctica-695-billion-tonnes-tropical-snowfall/" rel="noopener" target="_blank">spacedaily.com</a></li>
+  <li>NASA / JPL. <i>GRACE-FO: Gravity Recovery and Climate Experiment Follow-On</i> — how the twin satellites weigh ice sheets. <a href="https://gracefo.jpl.nasa.gov/" rel="noopener" target="_blank">gracefo.jpl.nasa.gov</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-climate.html">climate</a><a class="tg" href="tag-antarctica.html">antarctica</a><a class="tg" href="tag-ice-sheet.html">ice sheet</a><a class="tg" href="tag-sea-level.html">sea level</a><a class="tg" href="tag-satellites.html">satellites</a><a class="tg" href="tag-grace.html">grace</a><a class="tg" href="tag-weather.html">weather</a><a class="tg" href="tag-science.html">science</a></div>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Antarctica%20Gained%20695%20Billion%20Tons%20of%20Ice%2C%20and%20the%20Reason%20Was%20Seven%20Thousand%20Kilometres%20Away%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="galileos-experiment-with-one-atom-in-two-places.html" data-search="galileo&#x27;s experiment, done with one atom in two places a rubidium atom in superposition, half in free fall, confirms einstein&#x27;s equivalence principle, and starts a ladder toward testing penrose&#x27;s collapse idea." data-tags="physics quantum-mechanics gravity einstein penrose science experiments">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Galileo&#x27;s Experiment, Done With One Atom in Two Places</span>
+      <span class="ec-s">A rubidium atom in superposition, half in free fall, confirms Einstein&#x27;s equivalence principle, and starts a ladder toward testing Penrose&#x27;s collapse idea.</span>
+    </a>
+    <a class="tile" href="bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html" data-search="eight years to mercury, and one chance to stop bepicolombo dropped its engine module on 3 september 2026 and enters mercury orbit on 21 november. why arriving at mercury is so hard, and what it studies." data-tags="space mercury bepicolombo esa jaxa planetary-science spaceflight engineering">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
+      <span class="ec-s">BepiColombo dropped its engine module on 3 September 2026 and enters Mercury orbit on 21 November. Why arriving at Mercury is so hard, and what it studies.</span>
+    </a>
+    <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
+      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
+    </a>
+    <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed apple&#x27;s a20 pro is the first iphone chip on tsmc&#x27;s 2nm n2 process. what &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the finfet." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
+      <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+    </a>
+    </div>
+  </section>
+  <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-antarctica-gained-ice-and-the-reason-was-far-away-html">👁 <span id="hits-notebook-antarctica-gained-ice-and-the-reason-was-far-away-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fantarctica-gained-ice-and-the-reason-was-far-away.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-notebook-antarctica-gained-ice-and-the-reason-was-far-away-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-notebook-antarctica-gained-ice-and-the-reason-was-far-away-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-notebook-antarctica-gained-ice-and-the-reason-was-far-away-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>memecoin — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="1 entry on memecoin from The Librarian&#x27;s Ledger."/>
+<meta name="robots" content="noindex,follow"/>
+<link rel="canonical" href="https://mistertranslation.com/finance/tag-memecoin.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
+<meta property="og:title" content="memecoin — The Librarian&#x27;s Ledger"/>
+<meta property="og:description" content="1 entry on memecoin from The Librarian&#x27;s Ledger."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/tag-memecoin.html"/>
+<meta property="og:image" content="https://mistertranslation.com/finance/img/og-default.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="memecoin — The Librarian&#x27;s Ledger"/>
+<meta name="twitter:description" content="1 entry on memecoin from The Librarian&#x27;s Ledger."/>
+<meta name="twitter:image" content="https://mistertranslation.com/finance/img/og-default.png"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, not one: the original cool wash up top (unchanged),
+   plus a second, warm accent-toned glow centered on the viewport so there's
+   a soft light sitting behind whatever cards/content are on screen — not
+   just at the very top of a long page. Both are `fixed`, so they stay put
+   as ambient lighting rather than scrolling with the page (same behavior
+   the top wash already had). The cards themselves have their own solid
+   background (`.ecard`/`.board-card` etc.), so this shows through in the
+   margins around and between them — a glow "behind the cards," not one
+   painted on top of them. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(247,147,26,.16),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: a lighthouse on a rock, ringed by a circle. The halo
+   (`.bmark-glow`) is drawn FIRST (behind the rock, the tower and the ring
+   itself) as an unfilled, wide-stroked circle — a RING, not a disc —
+   whose own radius already sits outside the crisp ring's r=21. Blurred,
+   that reads unambiguously as a nimbus surrounding the icon from outside
+   it: the icon's interior (rock/tower/lamp) stays on the plain dark
+   background, untouched by any inside glow, and the light only appears
+   past the ring's own edge. The beam is clipped to a circle just inside
+   the ring (`#bmarkClip`, r=19) so it never crosses the ring line, and it
+   sweeps back and forth around the lamp — brightening at the middle of
+   each pass, dimming at the two extremes — because a lighthouse only
+   reads as "on" when it happens to be aimed at the viewer; the opacity
+   keyframes ride the same timeline as the rotation for exactly that
+   reason. `animation-direction:alternate` on a 2-keyframe animation
+   retraces the same sweep backwards each cycle instead of snapping back
+   to the start, which is what gives the back-and-forth motion rather than
+   a one-way spin. No transform-box override — for an SVG child, a plain
+   px transform-origin already resolves against the SVG's own viewBox
+   coordinates in every current browser. Respects reduced-motion. */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-beam{transform-origin:33px 21px;
+  animation:bmarkSweep 4s ease-in-out infinite alternate}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkSweep{
+  0%{transform:rotate(-50deg);opacity:.1}
+  50%{transform:rotate(0deg);opacity:.95}
+  100%{transform:rotate(50deg);opacity:.1}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-beam{animation:none}
+}
+h1 .em{color:#f7931a;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#f7931a}
+.stamp{margin:22px 0 26px;text-align:center;color:#7f8fa6;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.stamp .dot{color:#3f4c5f;margin:0 8px}
+
+/* The table is the one element that can be intrinsically wider than a phone.
+   Letting it scroll inside its own box is what stops it stretching .wrap and
+   pushing the whole page sideways — the prose must never overflow because a
+   number column did. */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.board{width:100%;border-collapse:collapse;
+  font-family:ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+.board th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6e7d92;padding:0 12px 10px;border-bottom:1px solid #1b2534}
+.board td{padding:11px 12px;border-bottom:1px solid #131b27;font-size:15px;vertical-align:middle}
+.board tr:last-child td{border-bottom:0}
+.rk{color:#6e7d92;font-variant-numeric:tabular-nums;width:44px}
+.asw{display:flex;align-items:center;gap:11px;min-width:0}
+.mk{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:contain;background:#0d1521}
+.mk-e,.mk-m{display:inline-flex;align-items:center;justify-content:center;
+  font-size:16px;border:1px solid #1e2938;font-family:ui-sans-serif,system-ui,sans-serif}
+.mk-m{font-weight:600}
+.nm{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.n1{font-weight:600;color:#e8eef7}
+.n2{font-size:11.5px;color:#6e7d92;letter-spacing:.05em}
+.mc{font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.px,.ch{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.ch.up{color:#4ade80}.ch.down{color:#f87171}.ch.flat{color:#6e7d92}
+.sp{width:140px}.spark{display:block}.nosp{color:#3f4c5f}
+.wh{text-align:right;font-size:17px;width:52px}
+tr.btc{background:linear-gradient(90deg,rgba(247,147,26,.10),rgba(247,147,26,.02))}
+tr.btc .n1{color:#f7931a}
+tr.metal{background:rgba(255,255,255,.018)}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .lede and .entry). Without
+   it the methods panel inherits the full 1,016px column and sets prose about
+   145 characters to the line, which is roughly twice a comfortable measure. */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#f7931a;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 6px}
+footer{margin:52px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#f7931a;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#f7931a}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#f7931a;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#f7931a;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #f7931a;color:#f7931a}
+/* Pinned explicitly, not left to source order — see the identical note in
+   travel/style.css. No generic `a:hover{color:...}` rule collides with these
+   two today, but a bare pseudo-class selector outranks a single class no
+   matter which comes later, so a future one added anywhere on this page
+   could silently blank the PRIMARY button's text again the same way it did
+   on the travel site (2026-09-09). Cheap insurance, pinned now. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#f7931a}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero photo ───────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 38%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── nav + cross-publication link ────────────────────────────────────────── */
+header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18px;
+  flex-wrap:wrap;padding:26px 0 8px;border-bottom:1px solid #131b27;margin-bottom:4px}
+.nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13px}
+.nav a{color:#93a4bd;text-decoration:none}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#f7931a}
+
+/* Collapsible on narrow screens via the CSS-only checkbox hack (see
+   _chrome()'s docstring for why this is a checkbox + label rather than
+   <details>/<summary>). The checkbox itself is never seen — only its
+   <label> (the hamburger) and, once :checked, the sibling .nav. */
+.navcb{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+label.navtoggle{display:none;cursor:pointer;color:#93a4bd;
+  padding:9px;border-radius:8px;align-items:center;justify-content:center}
+label.navtoggle svg rect{fill:currentColor}
+label.navtoggle:hover{color:#e8eef7;background:rgba(255,255,255,.05)}
+.navcb:checked + label.navtoggle{color:#f7931a}
+.navcb:focus-visible + label.navtoggle{outline:2px solid #f7931a;outline-offset:1px}
+
+/* Groups the nav toggle with the nav itself so the two move together as one
+   unit, and — via margin-left:auto — always hugs the right edge of
+   whichever row it lands on: the same row as the brand+search on a screen
+   wide enough to fit the full nav there too, or its own full row underneath
+   once the nav (8 links) is too wide to share one with them. Also the
+   positioning context the mobile dropdown below anchors against. */
+.hgroup{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  justify-content:flex-end;margin-left:auto}
+.headersearch{margin:0}
+.headersearch input[type=search]{
+  width:150px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:#f7931a;
+  box-shadow:0 0 0 3px rgba(247,147,26,.14)}
+
+@media (max-width:760px){
+  label.navtoggle{display:flex}
+  .hgroup .nav{display:none;position:absolute;right:0;top:calc(100% + 10px);z-index:30;
+    flex-direction:column;align-items:stretch;gap:1px;min-width:210px;
+    background:#0e1522;border:1px solid #1e2938;border-radius:12px;padding:8px;
+    box-shadow:0 16px 40px rgba(0,0,0,.5)}
+  .navcb:checked ~ .nav{display:flex}
+  .hgroup .nav a{padding:10px 12px;border-radius:8px}
+  .hgroup .nav a:hover{background:rgba(255,255,255,.05)}
+  .hgroup .nav a.on{background:rgba(247,147,26,.10)}
+}
+/* Below this, brand + the hamburger alone no longer reliably fit beside a
+   150px search input on one line — .hgroup (order 1, its own margin-left:auto
+   already pins it to the row's right edge) stays pinned next to the brand,
+   and search (order 2) drops to its own full-width row underneath, the same
+   "give up the single row" fallback the travel blog's own absolutely-
+   positioned search box makes at its 640px. */
+@media (max-width:480px){
+  header.hsm{flex-wrap:wrap}
+  .hgroup{order:1;flex-wrap:wrap}
+  .headersearch{order:2;flex:1 1 100%}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+.btitle{font-size:31px;font-weight:400;margin:26px 0 12px;letter-spacing:.01em}
+.board-card{border-color:#22384a}
+.board-card .ec-d{color:#f7931a}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#f7931a;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#f7931a;font-style:italic}
+a{color:#f7931a}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #f7931a;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #4ade80;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list on the board page ──────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+/* Same box language as .ecard (border, radius, background), just gridded
+   into columns instead of stacked full-width — the shift the front page
+   needed once it could no longer show every entry AND every standing page
+   as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" + the board pointer ───────── */
+/* Both sit under the article and match its 760px measure rather than the
+   .wrap's full 1000px — an end-of-article module that runs wider than the
+   text it follows reads as a different page bolted on, not as the end of
+   this one. Two columns at that width, never the front page's three. */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+/* Accent-tinted rather than the neutral .tile box, so it reads as "this is
+   a different KIND of thing" (a live board, not another article) without
+   shouting — it sits between the article and the comment prompt. */
+.boardpromo{max-width:760px;margin:38px auto 0}
+.boardpromo a{display:block;text-decoration:none;padding:18px 20px;
+  border:1px solid rgba(247,147,26,.28);border-radius:12px;
+  background:rgba(247,147,26,.05);
+  transition:border-color .15s,background .15s}
+.boardpromo a:hover{border-color:rgba(247,147,26,.55);
+  background:rgba(247,147,26,.09)}
+.bp-k{display:block;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#f7931a;margin-bottom:7px}
+.bp-t{display:block;color:#e8eef7;font-size:18px;line-height:1.3;margin-bottom:6px}
+.bp-s{display:block;color:#a9b7c9;font-size:14.5px;line-height:1.6}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+/* No longer scoped to `.panel ul.archive` — the list used to only ever
+   appear inside the Archive panel; now it's a bare alternate view sitting
+   right where the tile grid does (see build_front), same as the travel
+   blog's own cards/list toggle. */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+/* Same pill language as .viewbar/.viewbtn below, so the two control rows
+   read as one family. A tag earns a solid or bold chip only by recurring
+   (see TAG_BAR_MIN_COUNT); the long tail stays in the DOM (still filterable,
+   still linked from an entry's own tag chips) but folded out of sight until
+   "+N more" is clicked. */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#f7931a;color:#f7931a}
+.chip.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#f7931a;color:#f7931a}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+/* #tiles/#archiveList are shown/hidden via the `hidden` attribute from JS —
+   [hidden] alone loses to a later class rule of equal specificity
+   (.tilegrid{display:grid} would win), so each gets an explicit override
+   here rather than relying on the UA default. Individual items still use
+   inline style.display for pagination, which already wins on specificity. */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#f7931a;color:#f7931a}
+.viewbtn.on{background:#f7931a;border-color:#f7931a;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#f7931a;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+  .board th,.board td{padding:10px 7px}
+  .sp,th.sp,.wh,th.wh{display:none}       /* sparkline + flag are the first to go */
+  .n2{display:none}
+  .board td{font-size:14px}
+  .mk{width:24px;height:24px;flex:0 0 24px}
+}
+@media (max-width:560px){
+  .px,th.px{display:none}                 /* on a phone, rank + name + cap + today */
+  .n1{font-size:14px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="bmarkBeamGrad" cx="33" cy="21" r="19" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f7931a" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#f7931a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bmarkClip"><circle cx="33" cy="33" r="19"/></clipPath>
+  </defs>
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#f7931a" stroke-width="5"/>
+  <g clip-path="url(#bmarkClip)">
+    <ellipse cx="33" cy="46" rx="13" ry="5.5" fill="#374357"/>
+    <ellipse cx="23" cy="45" rx="6" ry="4.5" fill="#31404f"/>
+    <ellipse cx="43" cy="46" rx="6.5" ry="4.5" fill="#3a4a5e"/>
+    <polygon points="29,41 37,41 35,23 31,23" fill="#f2f5f9"/>
+    <rect x="29.5" y="35" width="7" height="2.2" fill="#f7931a" opacity=".85"/>
+    <polygon points="30,19 36,19 33,14.5" fill="#f2f5f9"/>
+    <rect x="30" y="19" width="6" height="4.2" rx=".7" fill="#f7931a"/>
+    <circle cx="33" cy="13.8" r=".9" fill="#f7931a"/>
+    <g class="bmark-beam">
+      <path d="M33 21 L51 15 L51 27 Z" fill="url(#bmarkBeamGrad)"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
+  <section class="writing">
+    <h1 class="wtitle">memecoin</h1>
+    <p class="wsub">1 entry tagged <b>memecoin</b>. <a href="index.html">All writing</a>.</p>
+    <a class="ecard" href="hunter-biden-laptop-memecoin-five-thousand-dollar-pool.html">
+      <span class="ec-d">SEPTEMBER 11, 2026</span>
+      <span class="ec-t">The Laptop That Was Worth More Than BlackRock for Two Minutes</span>
+      <span class="ec-s">On Wednesday morning Hunter Biden&#x27;s $LAPTOP token opened at eight cents and printed $339 two minutes later — a &quot;market cap&quot; bigger than BlackRock — before falling 99 percent in the hour. Biden says the market maker seeded the pool with $5,000. I wanted to understand how five thousand dollars can print three hundred billion, so here is the arithmetic of an automated market maker, the on-chain tape minute by minute, who was on the other side, and what has happened since.</span>
+    </a>
+  </section>
+
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-tag-memecoin-html">👁 <span id="hits-finance-tag-memecoin-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Ftag-memecoin.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-finance-tag-memecoin-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-finance-tag-memecoin-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-finance-tag-memecoin-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>
+</div>
+</body>
+</html>
