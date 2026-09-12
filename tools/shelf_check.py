@@ -189,7 +189,18 @@ NEAR = 40   # a quote further than this from its tag is someone else's
 FAR  = 120  # ...and past this it is nobody's -- the tag is a paraphrase
 SKIP = {"mine"}          # this translation -- nothing to check it against
 
-QUOTE = re.compile(r'&lsquo;(.+?)&rsquo;|&laquo;(.+?)&raquo;|‘(.+?)’|«(.+?)»')
+# Straight double quotes are the FOURTH shape, added 2026-09-11. The chapters written
+# before this tool existed (Genesis 1 through the early thirties) quote the shelf as
+# "without form, and void" -- plain ASCII quotes -- and this regex could not see a
+# single one of them: Genesis 1 reported 0 checked quotes and 128 "paraphrases", and
+# the chapter turned out to carry ~40 wrong attributions the tool would have caught.
+# The lookbehind keeps attribute values out (href="#v21-8" is not a quotation --
+# it was the one false positive the extension produced on Deuteronomy 21); the
+# character class excludes tags so a quote never spans markup. Measured before
+# shipping: Deuteronomy 15 and 21 (curly-quote chapters) report identical results
+# with and without it.
+QUOTE = re.compile(r'&lsquo;(.+?)&rsquo;|&laquo;(.+?)&raquo;|‘(.+?)’|«(.+?)»'
+                   r'|&ldquo;(.+?)&rdquo;|“(.+?)”|(?<!=)"([^"<>]{4,}?)"')
 
 def norm(s):
     """Fold to a comparable form: entities, curly quotes, accents, case, spacing."""
