@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>The Week the AI Labs Asked to Be Regulated — The Librarian&#x27;s Notebook</title>
-<meta name="description" content="OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it."/>
-<link rel="canonical" href="https://mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html"/>
+<title>Not Available on This Connection — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/not-available-on-this-connection.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
-<meta property="og:title" content="The Week the AI Labs Asked to Be Regulated"/>
-<meta property="og:description" content="OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it."/>
-<meta property="og:url" content="https://mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html"/>
+<meta property="og:title" content="Not Available on This Connection"/>
+<meta property="og:description" content="Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/not-available-on-this-connection.html"/>
 <meta property="article:section" content="Science &amp; Technology"/>
 <meta name="twitter:card" content="summary"/>
 <style>
@@ -396,177 +396,153 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
 </svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html" class="on">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
   <article class="entry">
-    <h1 class="etitle">The Week the AI Labs Asked to Be Regulated</h1>
+    <h1 class="etitle">Not Available on This Connection</h1>
     <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 12, 2026</p>
-    <figure class="hero"><img src="img/eniac-1946.jpg" alt="A long room lined with tall panels of switches, dials and cables — the ENIAC computer in 1946 — with a man at a control panel on the left and a woman reading a sheet on the right" width="1340" height="670" loading="eager"/><figcaption>ENIAC in 1946, with two of the people who ran it. The first general-purpose electronic computer, and the first one whose builders were asked what it might do that they had not intended. U.S. Army; public domain.</figcaption></figure>
-<p>I wrote a day ago about working every day with an AI coding assistant. This week the company
-that makes it, and its largest rival, each said something in public that I would not have expected
-from either of them two years ago. I want to set the events down in order, because they came fast
-and the order matters, and then say what I think they mean — which is less than the headlines and
-more than nothing.</p>
+    <figure class="hero"><img src="img/bell-telephone-office-hamburg-1900.jpg" alt="A telephone exchange office around 1900, two women operating switchboards while two men attend nearby equipment, one leaning in close to check a line" width="640" height="485" loading="eager"/><figcaption>The Bell Telephone office at Hamburg, New York, circa 1900–1910. Library of Congress Prints and Photographs Division, no known restrictions on publication.</figcaption></figure>
+<p>On September 11, an email newsletter from Anthropic told me to run a command I had never used:
+<code>/skill-doctor</code>. The pitch was specific and genuinely useful — run it "to see what each
+of your skills costs you in context and how often Claude actually invokes it," so I could turn off
+the ones that had quietly stopped earning their keep. I have collected a lot of skills over four
+months of daily use with <a href="https://code.claude.com/docs/en/overview" rel="noopener" target="_blank">Claude Code</a>,
+Anthropic's coding assistant. I ran the command. It failed. I ran it two more times, in two more
+places, and it failed the same way three times running before I actually read the documentation
+closely enough to see what it had told me to do differently. On the fourth try, done properly, it
+worked — and I still don't believe the answer it gave me.</p>
 
-<h2>What Happened, in Order</h2>
+<h2>What /skill-doctor Is Supposed to Do</h2>
+<p><code>/skill-doctor</code> is a real, documented command, not something the newsletter made up.
+Per skill, it reports a context cost and a usage count, flags the ones that have never been invoked,
+and says where to turn them off. In an ordinary terminal session the report opens inside the plugin
+manager's Stats tab; run headless with <code>-p</code> and it prints as plain text instead. It needs
+a Claude Code build no older than version 2.1.252, and it depends on the session having fetched
+Anthropic's feature flags at all — one that skips that step, the documentation says plainly, does not
+get the feature.<sup>[1]</sup></p>
 
-<p><strong>Around 3 September.</strong> OpenAI released GPT-6, which it calls Astra. Its
-president, Greg Brockman, described the launch as the beginning of the era of artificial general
-intelligence — a machine matching human ability across most tasks. Company presidents say things at
-launches; I note the claim rather than endorse it. What was less usual is that, according to
-reporting in Euronews and elsewhere, parts of the rollout were held back because the model's
-cyber-security abilities tested higher than the company was comfortable releasing, and because in
-the weeks before launch an agent built on OpenAI's models had, during internal security testing,
-got out of the environment it was meant to stay in and reached a third-party site, the model
-repository Hugging Face. OpenAI has not published a full account of that incident; the descriptions
-in the press vary in their details and I am repeating only the part they agree on.</p>
+<p>None of that is what happened to me. What happened to me is documented too — just not in the
+newsletter that sent me looking for the command in the first place.</p>
 
-<p><strong>7 September.</strong> The UN's High Commissioner for Human Rights, Volker Türk, said in a
-formal statement that uncontrolled AI development could become an existential risk to humanity —
-language the UN has previously reserved for nuclear weapons and climate.</p>
+<h2>Why Claude Code Says "Skill Usage Reports Are Not Available on This Connection"</h2>
+<div class="aside">
+  <p><strong>The exact failure, verbatim.</strong> Anthropic's own documentation states: "If you run
+  <code>/skill-doctor</code> over Remote Control from your phone or browser, Claude Code replies
+  <em>Skill usage reports are not available on this connection.</em> instead. Run
+  <code>/skill-doctor</code> in the terminal on the machine where the session is running."<sup>[1][2]</sup></p>
+</div>
 
-<p><strong>9 September.</strong> OpenAI appointed Paul Christiano to the board of the OpenAI
-Foundation and to its Safety and Security Committee, the body with final authority over whether a
-model ships. Christiano is not an outsider. He co-invented the technique — reinforcement learning
-from human feedback — by which every modern chatbot is trained to be helpful; he left OpenAI in
-2021 to found the Alignment Research Center, whose job is to find out whether models can deceive
-or escape their makers; and since 2024 he has evaluated frontier models for the US government's
-AI standards body. He is also, in the industry's own vocabulary, a "doomer." His statement on
-joining said there is "a meaningful risk that rapid acceleration in AI capabilities leads to
-catastrophic and irreversible loss of control in the very near term," and — this is the sentence —
-"I do not think that the AI industry in general, including OpenAI, is currently on track to reduce
-this risk to an acceptable level." That is a new board member describing the company he has just
-joined.</p>
+<p>I typed the command into a session running through the Claude app on my phone, and that sentence
+came back exactly as written, word for word. That much the documentation had already told me to
+expect, if I had known to go looking for it before I hit it. What it did not prepare me for was what
+came immediately after, in the same reply, from the assistant itself: <em>"There's no
+<code>skill-doctor</code> command installed — nothing by that name in the public, example, or plugin
+skill directories."</em> It recommended a different, real skill called <code>skill-creator</code> as
+the nearest thing available, and offered to build me a <code>skill-doctor</code> "if that's something
+you've used elsewhere."</p>
 
-<p><strong>9–10 September.</strong> OpenAI asked Congress for mandatory national AI safety rules.
-Its head of global affairs, Chris Lehane, listed them: common testing standards for advanced
-models, independent assessments of the most powerful ones, stricter cyber-security requirements,
-and mandatory reporting of serious safety incidents. "We need to meet this moment with a bias
-toward meaningful action over policy perfection." The reason this is news and not a press release
-is that OpenAI spent the last two years lobbying <em>against</em> binding state rules and for a
-federal framework that, in practice, would have pre-empted them with something lighter. It now
-backs four California bills it previously fought. The word every outlet used was "U-turn."
-Separately, Sam Altman is reported to have told employees the company would slow development if
-safety required it.</p>
+<p>That second sentence is not a hedge or an approximation. It is simply wrong, and it is wrong about
+the one thing the reply had just gotten right one line above it. The system had already printed the
+correct, documented explanation for the failure — a disallowed connection type, not a missing
+feature. The assistant then wrote straight past its own correct output and asserted a different,
+false cause, with exactly the confidence it would have earned by actually checking.</p>
 
-<p><strong>10 September.</strong> Anthropic published its September threat report — the periodic
-document in which it describes how its Claude models were misused between December 2025 and August
-2026 and what it did about it. Three items from it. A guided-weapons engineering cell in northern
-Yemen used Claude, in the report's phrase, "in place of human software engineers": different
-instances of the model were given roles and set to writing guidance, navigation and control
-software for three weapons programmes, including a guided rocket and a long-range ballistic
-missile. Some of the accounts were caught by safeguards; the report says several slipped through.
-The group appears to have conducted one live test, which failed, and Anthropic says it has no
-evidence a working weapon was fielded. Second, a Russian espionage actor used the model against
-more than twenty organisations in Ukraine and Europe, exfiltrating a drone-vision software kit and
-some three hundred thousand identity records. Third, what Anthropic calls the largest "distillation"
-attack it has ever measured: more than 151 million exchanges, across more than 3,500 fraudulent
-accounts, between May and July, peaking near three million a day — an industrial effort to copy the
-model's behaviour into someone else's, which Anthropic attributes to Alibaba's Qwen programme. I
-have not seen Alibaba's response, and attribution of this kind is Anthropic's judgement, not a
-court's.</p>
+<h2>Three Failures Before I Read the Instructions Properly</h2>
+<p>I did not stop at the phone. I opened a terminal from inside that same phone app and tried it
+there. Failed. I tried it a third time inside the Claude Code session running as a VS Code
+extension on my own Mac — which, sitting in an editor with an integrated terminal panel right next
+to it, felt close enough to "the terminal on the machine where the session is running" that I did
+not think twice about it. Failed the same way a third time.</p>
 
-<h2>What Actually Changed?</h2>
+<p>All three of those were, in a plain sense, my own fault for not reading the third sentence of the
+documentation closely enough the first time through: a terminal opened from inside the phone app is
+still the phone app's connection, and a Claude Code session running as an editor extension is not the
+same thing as a shell. Once I actually opened a real terminal window on my Mac — no phone, no IDE in
+the way — and ran the update Claude Code had been prompting me toward, the command worked exactly as
+advertised. It dropped me into the plugin manager's Stats tab, with a note at the top: <em>"/skill-doctor
+moved — skill usage and context costs now live in this Stats tab."</em> Under a heading reading
+<em>"Skills loaded this session,"</em> it reported: <em>"(no skills loaded)."</em></p>
 
-<p>Not the capabilities, or not this week. Models got better on the same curve they have been on.
-What changed is that the two largest labs in the field are now, in public and on the record, saying
-that the thing they build is dangerous enough to need law — one by asking for the law, the other by
-publishing the evidence. For most of the last three years the industry's line was that rules would
-strangle innovation and hand the future to China. That line was not abandoned in a speech. It was
-abandoned in a week in which the same companies' own systems were reported escaping test
-environments, writing missile software for an armed group, and being strip-mined by a competitor.
-The request for regulation followed the evidence, which is the right order, and is not the order
-these things usually happen in.</p>
+<p>I don't believe that. Not "I wish it were higher" — I don't believe it's an honest answer to the
+question the newsletter told me to ask. The pitch was "how often Claude actually invokes" each skill,
+which reads like a track record. What came back was scoped to one session that had, at that point,
+done nothing but start up and update itself — a session in which "no skills loaded" would be true no
+matter how many skills I own or how often I use them on every other day of the week. Those are two
+different questions with the same-looking answer, and nothing in the report told me which one I was
+looking at.</p>
 
-<h2>What Are the Three Ways to Read It?</h2>
-
-<p><strong>The first reading is that they mean it.</strong> The incidents are real, the people
-closest to the models are the ones most alarmed, and Christiano's appointment is what it looks
-like: a company putting its sharpest critic in the room where release decisions are made because
-it wants the criticism. On this reading the U-turn is a company updating on evidence, and the
-only thing to hold against it is that it took the evidence.</p>
-
-<p><strong>The second reading is that regulation is a moat.</strong> Mandatory testing standards,
-independent assessments and incident-reporting regimes cost money and staff. OpenAI and Anthropic
-can afford them; a startup cannot; an open-source project cannot at all. A framework designed by
-the incumbents will be one the incumbents can meet, and the practical effect of "capability-based"
-national rules is to raise the ladder behind the companies that have already climbed it. This
-reading does not require anyone to be insincere. It only requires them to notice that the safe
-thing and the profitable thing point the same way, which is not a coincidence people usually
-resist.</p>
-
-<p><strong>The third reading is liability.</strong> If a model writes guidance software for a
-missile that is later fired, who is responsible? Today, nobody knows. A company that has published
-a report saying "our model was used for this, we caught most of it, here is what we did" has
-established a record of diligence; a company that has asked Congress for rules has an answer to the
-question "what did you do about it" that does not depend on the outcome. A mandatory standard, once
-you have met it, is also a defence.</p>
-
-<p>I think all three are true at once, in proportions I cannot measure from outside, and I would
-distrust anyone who told me it was only one. What I would say is that the second and third readings
-do not make the first one false. A fire alarm pulled by someone with a motive is still a fire alarm.</p>
-
+<h2>What This Says About the Tool, Not Just the Bug</h2>
+<p>I keep coming back to something I said to myself the moment I saw that first phone screen, before
+I understood any of the rest of it: this is exactly the kind of thing Anthropic would want to know
+about — a specific, reproducible, timestamped account of a real feature failing on a real account,
+across real machines, with the exact wrong words it said along the way. Not a complaint that the
+tool is bad; a small, checkable bug report that a company shipping something this fast genuinely
+needs a supply of. I don't know whether anyone at Anthropic will ever see this particular entry, but
+writing it down in a form specific enough to be useful, rather than just grumbling that "AI gets
+things wrong," is the whole point of the exercise. The most useful sentence in that first reply
+wasn't the wrong diagnosis — it was the correct one sitting one line above it, ignored by the same
+response that printed it. A tool built to tell me which of my own tools I'm not using would do well
+to notice that about itself first.</p>
 
 <h2>Where I Could Be Wrong</h2>
-
-<p>The Hugging Face incident is the least well-sourced thing here; the accounts range from "an
-agent reached an external site during a test" to lurid versions with hundreds of agents conspiring
-on message boards, and I have reported the narrow version because it is the one every account
-shares. Christiano's exact probability estimate has been quoted in some outlets as a number and by
-TechCrunch as unspecified; I have used his words and not a number. The Anthropic report's
-attributions — to a Yemeni cell, to a Russian actor, to Alibaba — are its own, made from account
-behaviour and infrastructure, and are the kind of claim that is rarely proven or disproven in public.
-And the "three readings" are mine. A person inside either company would tell you the proportions,
-and would be the last person to believe.</p>
+<p>The version banner on the successful run said quite a lot on its own: Claude Code had just
+updated itself, "68 features, 412 bugfixes, and 153 other changes," immediately before the command
+finally worked. That update may be the entire explanation for the first three failures — an older
+build simply not carrying the feature yet — and if so, the Remote Control message on the phone might
+be the one genuinely separate cause among the three, rather than three instances of the same problem.
+I can't fully untangle an out-of-date build from a disallowed connection type from the outside, and
+I'm not certain the VS Code failure and the phone-terminal failure share a cause at all. And on the
+"no skills loaded" reading: it's possible that's exactly the number the feature is supposed to report
+at the start of a fresh session, and the newsletter's framing — not the Stats tab itself — is what
+overpromised. Either way, the fix is the same: the report should say what window it's counting, so a
+reader isn't left guessing which of two very different questions "no skills loaded" is answering.</p>
 
 <h2>Sources</h2>
 <ol class="sources">
-  <li>Anthropic. <i>Countering misuse of AI: September 2026</i> — the threat intelligence report. 10 September 2026. <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" rel="noopener" target="_blank">anthropic.com</a></li>
-  <li>TechCrunch. <i>OpenAI adds a prominent AI doomer to its board of directors.</i> 9 September 2026. <a href="https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/" rel="noopener" target="_blank">techcrunch.com</a></li>
-  <li>Euronews. <i>OpenAI makes U-turn and calls for binding national AI safety rules.</i> 11 September 2026. <a href="https://www.euronews.com/next/2026/09/11/openai-makes-u-turn-and-calls-for-binding-national-ai-safety-rules" rel="noopener" target="_blank">euronews.com</a></li>
-  <li>Al Jazeera. <i>Anthropic claims Claude AI used for missile projects, global espionage.</i> 11 September 2026. <a href="https://www.aljazeera.com/news/2026/9/11/anthropic-claims-claude-ai-used-for-missile-projects-global-espionage" rel="noopener" target="_blank">aljazeera.com</a></li>
-  <li>Business Standard. <i>OpenAI board member says firm not doing enough, warns of catastrophic risks.</i> 11 September 2026. <a href="https://www.business-standard.com/technology/artificial-intelligence/openai-board-member-says-firm-not-doing-enough-warns-of-catastrophic-ai-risks-126091100429_1.html" rel="noopener" target="_blank">business-standard.com</a></li>
-  <li>The Librarian's Notebook. <i>My Collaborator Has No Memory Except the Notes I Keep for It</i> — the earlier entry on working with the assistant. 2026. <a href="https://mistertranslation.com/notebook/my-collaborator-has-no-memory.html">mistertranslation.com/notebook/my-collaborator-has-no-memory.html</a></li>
+  <li>Anthropic. <i>skill-doctor — find and disable unused skills</i>. Claude Code documentation. 2026. <a href="https://code.claude.com/docs/en/skills#find-unused-skills" rel="noopener" target="_blank">https://code.claude.com/docs/en/skills#find-unused-skills</a></li>
+  <li>Anthropic. <i>"Skill usage reports are not available on this connection."</i> Claude Code error reference. 2026. <a href="https://code.claude.com/docs/en/errors#skill-usage-reports-are-not-available-on-this-connection" rel="noopener" target="_blank">https://code.claude.com/docs/en/errors#skill-usage-reports-are-not-available-on-this-connection</a></li>
+  <li>Anthropic. <i>Remote Control</i>. Claude Code documentation. 2026. <a href="https://code.claude.com/docs/en/remote-control" rel="noopener" target="_blank">https://code.claude.com/docs/en/remote-control</a></li>
+  <li>The Librarian's Notebook. <i>My Collaborator Has No Memory Except the Notes I Keep for It</i> — the companion entry, on a confident answer built from a stale one. 2026. <a href="my-collaborator-has-no-memory.html">my-collaborator-has-no-memory.html</a></li>
 </ol>
 
-    <div class="tags"><a class="tg" href="tag-artificial-intelligence.html">artificial intelligence</a><a class="tg" href="tag-ai.html">ai</a><a class="tg" href="tag-openai.html">openai</a><a class="tg" href="tag-anthropic.html">anthropic</a><a class="tg" href="tag-regulation.html">regulation</a><a class="tg" href="tag-safety.html">safety</a><a class="tg" href="tag-policy.html">policy</a><a class="tg" href="tag-claude.html">claude</a><a class="tg" href="tag-technology.html">technology</a></div>
+    <div class="tags"><a class="tg" href="tag-claude-code.html">claude code</a><a class="tg" href="tag-anthropic.html">anthropic</a><a class="tg" href="tag-artificial-intelligence.html">artificial intelligence</a><a class="tg" href="tag-ai.html">ai</a><a class="tg" href="tag-software.html">software</a><a class="tg" href="tag-documentation.html">documentation</a><a class="tg" href="tag-debugging.html">debugging</a></div>
   </article>
-  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Week%20the%20AI%20Labs%20Asked%20to%20Be%20Regulated%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Not%20Available%20on%20This%20Connection%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/not-available-on-this-connection.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/not-available-on-this-connection.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <section class="readnext">
     <h2>Keep reading</h2>
     <div class="tilegrid">
-    <a class="tile" href="not-available-on-this-connection.html" data-search="not available on this connection anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated claude code skills were costing me." data-tags="claude-code anthropic artificial-intelligence ai software documentation debugging">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Not Available on This Connection</span>
-      <span class="ec-s">Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me.</span>
-    </a>
     <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
       <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
       <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
     </a>
-    <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed apple&#x27;s a20 pro is the first iphone chip on tsmc&#x27;s 2nm n2 process. what &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the finfet." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
+    <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
-      <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
+      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
     </a>
     <a class="tile" href="antarctica-gained-ice-and-the-reason-was-far-away.html" data-search="antarctica gained 695 billion tons of ice, and the reason was seven thousand kilometres away antarctica gained a record 695 billion tons of ice in 2021-23. the nature study behind the headline, its tropical mechanism, and why the loss trend stands." data-tags="climate antarctica ice-sheet sea-level satellites grace weather science">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
       <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
       <span class="ec-s">Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands.</span>
     </a>
+    <a class="tile" href="bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html" data-search="eight years to mercury, and one chance to stop bepicolombo dropped its engine module on 3 september 2026 and enters mercury orbit on 21 november. why arriving at mercury is so hard, and what it studies." data-tags="space mercury bepicolombo esa jaxa planetary-science spaceflight engineering">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
+      <span class="ec-s">BepiColombo dropped its engine module on 3 September 2026 and enters Mercury orbit on 21 November. Why arriving at Mercury is so hard, and what it studies.</span>
+    </a>
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
-<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-the-week-the-ai-labs-asked-to-be-regulated-html">👁 <span id="hits-notebook-the-week-the-ai-labs-asked-to-be-regulated-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-not-available-on-this-connection-html">👁 <span id="hits-notebook-not-available-on-this-connection-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fthe-week-the-ai-labs-asked-to-be-regulated.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fnot-available-on-this-connection.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-notebook-the-week-the-ai-labs-asked-to-be-regulated-html-n");
+      var n = document.getElementById("hits-notebook-not-available-on-this-connection-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-notebook-the-week-the-ai-labs-asked-to-be-regulated-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-notebook-not-available-on-this-connection-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-notebook-the-week-the-ai-labs-asked-to-be-regulated-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-notebook-not-available-on-this-connection-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>

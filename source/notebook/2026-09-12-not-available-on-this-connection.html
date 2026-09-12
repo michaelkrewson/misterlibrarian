@@ -1,0 +1,112 @@
+title: Not Available on This Connection
+date: 2026-09-12
+section: technology
+tags: claude code, anthropic, artificial intelligence, ai, software, documentation, debugging
+summary: Anthropic's own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me. It failed three times before I read the instructions properly, and the one time it printed the true reason for the failure, the assistant's own reply talked past it. The fourth try finally worked — and I still don't believe what it told me.
+hero: bell-telephone-office-hamburg-1900.jpg
+hero_alt: A telephone exchange office around 1900, two women operating switchboards while two men attend nearby equipment, one leaning in close to check a line
+hero_credit: The Bell Telephone office at Hamburg, New York, circa 1900–1910. Library of Congress Prints and Photographs Division, no known restrictions on publication.
+---
+
+<p>On September 11, an email newsletter from Anthropic told me to run a command I had never used:
+<code>/skill-doctor</code>. The pitch was specific and genuinely useful — run it "to see what each
+of your skills costs you in context and how often Claude actually invokes it," so I could turn off
+the ones that had quietly stopped earning their keep. I have collected a lot of skills over four
+months of daily use with <a href="https://code.claude.com/docs/en/overview" rel="noopener" target="_blank">Claude Code</a>,
+Anthropic's coding assistant. I ran the command. It failed. I ran it two more times, in two more
+places, and it failed the same way three times running before I actually read the documentation
+closely enough to see what it had told me to do differently. On the fourth try, done properly, it
+worked — and I still don't believe the answer it gave me.</p>
+
+<h2>What /skill-doctor Is Supposed to Do</h2>
+<p><code>/skill-doctor</code> is a real, documented command, not something the newsletter made up.
+Per skill, it reports a context cost and a usage count, flags the ones that have never been invoked,
+and says where to turn them off. In an ordinary terminal session the report opens inside the plugin
+manager's Stats tab; run headless with <code>-p</code> and it prints as plain text instead. It needs
+a Claude Code build no older than version 2.1.252, and it depends on the session having fetched
+Anthropic's feature flags at all — one that skips that step, the documentation says plainly, does not
+get the feature.<sup>[1]</sup></p>
+
+<p>None of that is what happened to me. What happened to me is documented too — just not in the
+newsletter that sent me looking for the command in the first place.</p>
+
+<h2>Why Claude Code Says "Skill Usage Reports Are Not Available on This Connection"</h2>
+<div class="aside">
+  <p><strong>The exact failure, verbatim.</strong> Anthropic's own documentation states: "If you run
+  <code>/skill-doctor</code> over Remote Control from your phone or browser, Claude Code replies
+  <em>Skill usage reports are not available on this connection.</em> instead. Run
+  <code>/skill-doctor</code> in the terminal on the machine where the session is running."<sup>[1][2]</sup></p>
+</div>
+
+<p>I typed the command into a session running through the Claude app on my phone, and that sentence
+came back exactly as written, word for word. That much the documentation had already told me to
+expect, if I had known to go looking for it before I hit it. What it did not prepare me for was what
+came immediately after, in the same reply, from the assistant itself: <em>"There's no
+<code>skill-doctor</code> command installed — nothing by that name in the public, example, or plugin
+skill directories."</em> It recommended a different, real skill called <code>skill-creator</code> as
+the nearest thing available, and offered to build me a <code>skill-doctor</code> "if that's something
+you've used elsewhere."</p>
+
+<p>That second sentence is not a hedge or an approximation. It is simply wrong, and it is wrong about
+the one thing the reply had just gotten right one line above it. The system had already printed the
+correct, documented explanation for the failure — a disallowed connection type, not a missing
+feature. The assistant then wrote straight past its own correct output and asserted a different,
+false cause, with exactly the confidence it would have earned by actually checking.</p>
+
+<h2>Three Failures Before I Read the Instructions Properly</h2>
+<p>I did not stop at the phone. I opened a terminal from inside that same phone app and tried it
+there. Failed. I tried it a third time inside the Claude Code session running as a VS Code
+extension on my own Mac — which, sitting in an editor with an integrated terminal panel right next
+to it, felt close enough to "the terminal on the machine where the session is running" that I did
+not think twice about it. Failed the same way a third time.</p>
+
+<p>All three of those were, in a plain sense, my own fault for not reading the third sentence of the
+documentation closely enough the first time through: a terminal opened from inside the phone app is
+still the phone app's connection, and a Claude Code session running as an editor extension is not the
+same thing as a shell. Once I actually opened a real terminal window on my Mac — no phone, no IDE in
+the way — and ran the update Claude Code had been prompting me toward, the command worked exactly as
+advertised. It dropped me into the plugin manager's Stats tab, with a note at the top: <em>"/skill-doctor
+moved — skill usage and context costs now live in this Stats tab."</em> Under a heading reading
+<em>"Skills loaded this session,"</em> it reported: <em>"(no skills loaded)."</em></p>
+
+<p>I don't believe that. Not "I wish it were higher" — I don't believe it's an honest answer to the
+question the newsletter told me to ask. The pitch was "how often Claude actually invokes" each skill,
+which reads like a track record. What came back was scoped to one session that had, at that point,
+done nothing but start up and update itself — a session in which "no skills loaded" would be true no
+matter how many skills I own or how often I use them on every other day of the week. Those are two
+different questions with the same-looking answer, and nothing in the report told me which one I was
+looking at.</p>
+
+<h2>What This Says About the Tool, Not Just the Bug</h2>
+<p>I keep coming back to something I said to myself the moment I saw that first phone screen, before
+I understood any of the rest of it: this is exactly the kind of thing Anthropic would want to know
+about — a specific, reproducible, timestamped account of a real feature failing on a real account,
+across real machines, with the exact wrong words it said along the way. Not a complaint that the
+tool is bad; a small, checkable bug report that a company shipping something this fast genuinely
+needs a supply of. I don't know whether anyone at Anthropic will ever see this particular entry, but
+writing it down in a form specific enough to be useful, rather than just grumbling that "AI gets
+things wrong," is the whole point of the exercise. The most useful sentence in that first reply
+wasn't the wrong diagnosis — it was the correct one sitting one line above it, ignored by the same
+response that printed it. A tool built to tell me which of my own tools I'm not using would do well
+to notice that about itself first.</p>
+
+<h2>Where I Could Be Wrong</h2>
+<p>The version banner on the successful run said quite a lot on its own: Claude Code had just
+updated itself, "68 features, 412 bugfixes, and 153 other changes," immediately before the command
+finally worked. That update may be the entire explanation for the first three failures — an older
+build simply not carrying the feature yet — and if so, the Remote Control message on the phone might
+be the one genuinely separate cause among the three, rather than three instances of the same problem.
+I can't fully untangle an out-of-date build from a disallowed connection type from the outside, and
+I'm not certain the VS Code failure and the phone-terminal failure share a cause at all. And on the
+"no skills loaded" reading: it's possible that's exactly the number the feature is supposed to report
+at the start of a fresh session, and the newsletter's framing — not the Stats tab itself — is what
+overpromised. Either way, the fix is the same: the report should say what window it's counting, so a
+reader isn't left guessing which of two very different questions "no skills loaded" is answering.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Anthropic. <i>skill-doctor — find and disable unused skills</i>. Claude Code documentation. 2026. <a href="https://code.claude.com/docs/en/skills#find-unused-skills" rel="noopener" target="_blank">https://code.claude.com/docs/en/skills#find-unused-skills</a></li>
+  <li>Anthropic. <i>"Skill usage reports are not available on this connection."</i> Claude Code error reference. 2026. <a href="https://code.claude.com/docs/en/errors#skill-usage-reports-are-not-available-on-this-connection" rel="noopener" target="_blank">https://code.claude.com/docs/en/errors#skill-usage-reports-are-not-available-on-this-connection</a></li>
+  <li>Anthropic. <i>Remote Control</i>. Claude Code documentation. 2026. <a href="https://code.claude.com/docs/en/remote-control" rel="noopener" target="_blank">https://code.claude.com/docs/en/remote-control</a></li>
+  <li>The Librarian's Notebook. <i>My Collaborator Has No Memory Except the Notes I Keep for It</i> — the companion entry, on a confident answer built from a stale one. 2026. <a href="my-collaborator-has-no-memory.html">my-collaborator-has-no-memory.html</a></li>
+</ol>
