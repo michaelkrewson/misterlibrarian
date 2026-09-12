@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mistertranslation.com/notebook/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/about.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/ask.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/technology.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/world.html</loc>
@@ -22,14 +22,34 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/culture.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/notes.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/galileos-experiment-with-one-atom-in-two-places.html</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/the-other-door.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/two-nanometres-of-nothing.html</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
@@ -41,7 +61,19 @@
     <lastmod>2026-09-11</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/tag-ai.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-artificial-intelligence.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/tag-energy.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-engineering.html</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
@@ -61,11 +93,19 @@
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/notebook/tag-science.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/notebook/tag-shipping.html</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/notebook/tag-strait-of-hormuz.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/notebook/tag-technology.html</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
 </urlset>
