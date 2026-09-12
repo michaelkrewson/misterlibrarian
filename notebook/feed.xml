@@ -7,6 +7,50 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</title>
+    <link>https://mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/antarctica-gained-ice-and-the-reason-was-far-away.html</guid>
+    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Between July 2021 and April 2023 the Antarctic ice sheet got heavier by about 695 billion tons — the largest gain in the twenty-four-year satellite-gravity record. A paper in Nature traces it to a warm patch of tropical ocean that bent the atmosphere over East Antarctica and turned it into a snow funnel. The headline is a gift to anyone who wants to misread it. The paper is not: two decades of losses at 140 billion tons a year are still there, and the gain is a weather event, not a trend.</description>
+    <category>climate</category>
+    <category>antarctica</category>
+    <category>ice sheet</category>
+    <category>sea level</category>
+    <category>satellites</category>
+    <category>grace</category>
+    <category>weather</category>
+    <category>science</category>
+  </item>
+  <item>
+    <title>Eight Years to Mercury, and One Chance to Stop</title>
+    <link>https://mistertranslation.com/notebook/bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html</guid>
+    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On 3 September the BepiColombo spacecraft, two hundred million kilometres from Earth, let go of the engine that carried it for eight years and 9.9 billion kilometres. On 21 November it has to stop at Mercury, the hardest planet in the solar system to arrive at, using a sequence it will run on its own because the radio round-trip is too long to help. A 2024 power fault already cost it eleven months. This is what it is for, why the arrival is so hard, and what the last flyby found on the way in.</description>
+    <category>space</category>
+    <category>mercury</category>
+    <category>bepicolombo</category>
+    <category>esa</category>
+    <category>jaxa</category>
+    <category>planetary science</category>
+    <category>spaceflight</category>
+    <category>engineering</category>
+  </item>
+  <item>
+    <title>Galileo's Experiment, Done With One Atom in Two Places</title>
+    <link>https://mistertranslation.com/notebook/galileos-experiment-with-one-atom-in-two-places.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/galileos-experiment-with-one-atom-in-two-places.html</guid>
+    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A team including Roger Penrose has dropped a rubidium atom that was, in the quantum sense, in two places at once — one half falling freely, the other held still — and read off how gravity changed it. Einstein's equivalence principle survived. What makes it worth an entry is not the result but the ladder it starts: the same instrument, with heavier and heavier objects, could eventually test Penrose's own idea that gravity is what stops big things from being in two places at once. He helped build the tool that could prove him wrong.</description>
+    <category>physics</category>
+    <category>quantum mechanics</category>
+    <category>gravity</category>
+    <category>einstein</category>
+    <category>penrose</category>
+    <category>science</category>
+    <category>experiments</category>
+  </item>
+  <item>
     <title>The Other Door</title>
     <link>https://mistertranslation.com/notebook/the-other-door.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/the-other-door.html</guid>
@@ -38,6 +82,37 @@
     <category>saudi arabia</category>
     <category>2001</category>
     <category>notes</category>
+  </item>
+  <item>
+    <title>The Week the AI Labs Asked to Be Regulated</title>
+    <link>https://mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-week-the-ai-labs-asked-to-be-regulated.html</guid>
+    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
+    <description>In one week in September 2026: OpenAI shipped a model its president called the start of the AGI era, then asked Congress for mandatory safety rules it had spent two years opposing; it put its most prominent internal critic on the board, and he said the industry was not on track; Anthropic published a report saying its own model had been used to write missile-guidance software in Yemen and to run the largest data-theft campaign it had ever measured. I use one of these tools every day. This is an attempt to say what changed, and what the three explanations are.</description>
+    <category>artificial intelligence</category>
+    <category>ai</category>
+    <category>openai</category>
+    <category>anthropic</category>
+    <category>regulation</category>
+    <category>safety</category>
+    <category>policy</category>
+    <category>claude</category>
+    <category>technology</category>
+  </item>
+  <item>
+    <title>Two Nanometres of Nothing: What Apple's New Chip Actually Changed</title>
+    <link>https://mistertranslation.com/notebook/two-nanometres-of-nothing.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/two-nanometres-of-nothing.html</guid>
+    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
+    <description>The A20 Pro in the iPhone 18 Pro is the first phone chip made on a "2-nanometre" process. Nothing on it is two nanometres wide; the number stopped measuring anything about a decade ago. What did change is real and fourteen years overdue: the transistor's gate now wraps all the way around the channel instead of three sides of a fin. This is what that means, why the fin had to go, and why the label survives anyway.</description>
+    <category>semiconductors</category>
+    <category>apple</category>
+    <category>tsmc</category>
+    <category>chips</category>
+    <category>transistors</category>
+    <category>iphone</category>
+    <category>engineering</category>
+    <category>technology</category>
   </item>
   <item>
     <title>My Collaborator Has No Memory Except the Notes I Keep for It</title>
