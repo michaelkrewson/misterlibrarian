@@ -73,7 +73,7 @@
     <link>https://mistertranslation.com/notebook/not-available-on-this-connection.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/not-available-on-this-connection.html</guid>
     <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Anthropic's own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me. It failed three times before I read the instructions properly, and the one time it printed the true reason for the failure, the assistant's own reply talked past it. The fourth try finally worked — and I still don't believe what it told me.</description>
+    <description>Anthropic's own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me. It failed three times, and once, when it printed the true reason why, the assistant's own reply talked past it. The fourth try stopped refusing the connection and gave me nothing anyway — four attempts in, I still have not been able to use it.</description>
     <category>claude code</category>
     <category>anthropic</category>
     <category>artificial intelligence</category>

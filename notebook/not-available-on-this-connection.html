@@ -407,7 +407,8 @@ months of daily use with <a href="https://code.claude.com/docs/en/overview" rel=
 Anthropic's coding assistant. I ran the command. It failed. I ran it two more times, in two more
 places, and it failed the same way three times running before I actually read the documentation
 closely enough to see what it had told me to do differently. On the fourth try, done properly, it
-worked — and I still don't believe the answer it gave me.</p>
+stopped refusing the connection — and gave me nothing anyway. Four tries in, I still have not once
+gotten this feature to tell me what it was built to tell me.</p>
 
 <h2>What /skill-doctor Is Supposed to Do</h2>
 <p><code>/skill-doctor</code> is a real, documented command, not something the newsletter made up.
@@ -444,7 +445,7 @@ correct, documented explanation for the failure — a disallowed connection type
 feature. The assistant then wrote straight past its own correct output and asserted a different,
 false cause, with exactly the confidence it would have earned by actually checking.</p>
 
-<h2>Three Failures Before I Read the Instructions Properly</h2>
+<h2>Four Tries, and the Fourth Wasn't a Success Either</h2>
 <p>I did not stop at the phone. I opened a terminal from inside that same phone app and tried it
 there. Failed. I tried it a third time inside the Claude Code session running as a VS Code
 extension on my own Mac — which, sitting in an editor with an integrated terminal panel right next
@@ -454,19 +455,22 @@ not think twice about it. Failed the same way a third time.</p>
 <p>All three of those were, in a plain sense, my own fault for not reading the third sentence of the
 documentation closely enough the first time through: a terminal opened from inside the phone app is
 still the phone app's connection, and a Claude Code session running as an editor extension is not the
-same thing as a shell. Once I actually opened a real terminal window on my Mac — no phone, no IDE in
-the way — and ran the update Claude Code had been prompting me toward, the command worked exactly as
-advertised. It dropped me into the plugin manager's Stats tab, with a note at the top: <em>"/skill-doctor
+same thing as a shell. So I opened a real terminal window on my Mac — no phone, no IDE in the way —
+updated to the latest build, and ran it a fourth time. This time it stopped refusing the connection.
+It dropped me into the plugin manager's Stats tab, with a note at the top: <em>"/skill-doctor
 moved — skill usage and context costs now live in this Stats tab."</em> Under a heading reading
-<em>"Skills loaded this session,"</em> it reported: <em>"(no skills loaded)."</em></p>
+<em>"Skills loaded this session,"</em> it reported: <em>"(no skills loaded)."</em> That was the whole
+report. No numbers, no list, nothing to turn off. Four tries in, on the one occasion the command
+finally went where the documentation says it should go, it had nothing to say once it got there.</p>
 
-<p>I don't believe that. Not "I wish it were higher" — I don't believe it's an honest answer to the
-question the newsletter told me to ask. The pitch was "how often Claude actually invokes" each skill,
-which reads like a track record. What came back was scoped to one session that had, at that point,
-done nothing but start up and update itself — a session in which "no skills loaded" would be true no
-matter how many skills I own or how often I use them on every other day of the week. Those are two
-different questions with the same-looking answer, and nothing in the report told me which one I was
-looking at.</p>
+<p>I don't believe an empty report is the honest shape of the answer here, for what it's worth — not
+"I wish it were higher," but that this doesn't read like the feature the newsletter described. The
+pitch was "how often Claude actually invokes" each skill, which reads like a track record built up
+over time. What came back was scoped to one session that had, at that point, done nothing but start
+up and update itself — a session in which "no skills loaded" would be true no matter how many skills
+I own or how often I use them on every other day of the week. Whether that's a bug or just how the
+feature is scoped, the practical result is the same one I started with: I still don't know which of
+my skills are worth keeping, which was the entire reason I went looking for this command.</p>
 
 <h2>What This Says About the Tool, Not Just the Bug</h2>
 <p>I keep coming back to something I said to myself the moment I saw that first phone screen, before
@@ -482,17 +486,18 @@ response that printed it. A tool built to tell me which of my own tools I'm not 
 to notice that about itself first.</p>
 
 <h2>Where I Could Be Wrong</h2>
-<p>The version banner on the successful run said quite a lot on its own: Claude Code had just
-updated itself, "68 features, 412 bugfixes, and 153 other changes," immediately before the command
-finally worked. That update may be the entire explanation for the first three failures — an older
-build simply not carrying the feature yet — and if so, the Remote Control message on the phone might
-be the one genuinely separate cause among the three, rather than three instances of the same problem.
-I can't fully untangle an out-of-date build from a disallowed connection type from the outside, and
-I'm not certain the VS Code failure and the phone-terminal failure share a cause at all. And on the
-"no skills loaded" reading: it's possible that's exactly the number the feature is supposed to report
-at the start of a fresh session, and the newsletter's framing — not the Stats tab itself — is what
-overpromised. Either way, the fix is the same: the report should say what window it's counting, so a
-reader isn't left guessing which of two very different questions "no skills loaded" is answering.</p>
+<p>The version banner on that fourth run said quite a lot on its own: Claude Code had just updated
+itself, "68 features, 412 bugfixes, and 153 other changes," immediately before the command stopped
+refusing the connection. That update may be the entire explanation for the first three failures — an
+older build simply not carrying the feature yet — and if so, the Remote Control message on the phone
+might be the one genuinely separate cause among the three, rather than three instances of the same
+problem. I can't fully untangle an out-of-date build from a disallowed connection type from the
+outside, and I'm not certain the VS Code failure and the phone-terminal failure share a cause at all.
+And on the empty report: it's possible "no skills loaded" is exactly the correct, honest number for a
+session that has done nothing yet, and the newsletter's framing — not the Stats tab itself — is what
+overpromised a track record the feature was never built to keep. Either way, the practical fix is the
+same one I keep landing on: the report should say what window it's counting, so a reader isn't left,
+as I still am, unable to tell whether an empty answer means "nothing to report" or "wrong question."</p>
 
 <h2>Sources</h2>
 <ol class="sources">
