@@ -22,3 +22,6 @@ __pycache__/
 # Third-party copyrighted translations, fetched on demand and quoted in short
 # phrases only -- never committed, never redistributed.
 source/shelf/
+
+# Book compile output (build_west_book.py) — a build product, never committed
+book/
