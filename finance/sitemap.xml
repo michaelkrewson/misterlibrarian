@@ -2,75 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mistertranslation.com/finance/</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/board.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/bitcoin.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/crypto.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/money-worldwide.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/ask.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries-public.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries-mining.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries-etf.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries-countries.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries-private.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/treasuries-defi.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/money-worldwide-exchange-rates.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/money-worldwide-money-supply.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/money-worldwide-reserves.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/money-worldwide-gold.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/money-worldwide-debt-gdp.html</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/finance/a-rate-hike-against-a-strait.html</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/we-killed-twenty-five-trading-strategies-to-keep-three.html</loc>
@@ -137,6 +141,10 @@
     <lastmod>2026-09-10</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/finance/tag-bonds.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/finance/tag-central-banks.html</loc>
     <lastmod>2026-09-10</lastmod>
   </url>
@@ -145,8 +153,16 @@
     <lastmod>2026-09-10</lastmod>
   </url>
   <url>
+    <loc>https://mistertranslation.com/finance/tag-federal-reserve.html</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
     <loc>https://mistertranslation.com/finance/tag-hardware-wallet.html</loc>
     <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/finance/tag-inflation.html</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-lightning.html</loc>
@@ -154,7 +170,11 @@
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-monetary-policy.html</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/finance/tag-mortgages.html</loc>
+    <lastmod>2026-09-12</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/finance/tag-multisig.html</loc>
