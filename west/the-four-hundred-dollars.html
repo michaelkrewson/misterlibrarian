@@ -12,9 +12,10 @@
 <meta property="og:title" content="The Four Hundred Dollars"/>
 <meta property="og:description" content="1946 — Granny lends Galen Krewson $400 for a farm; he leaves four children near Tulsa. 1948, a bell-tent at Lancaster. Uncle Al’s own account. Chapter 13."/>
 <meta property="og:url" content="https://mistertranslation.com/west/the-four-hundred-dollars.html"/>
+<meta property="og:image" content="https://mistertranslation.com/west/img/margery-krewson-age-25-1947.jpg"/>
 <meta property="article:section" content="Part IV — The Year the Family Broke Apart"/>
 <meta name="author" content="Michael V. Krewson"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -438,6 +439,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -480,6 +508,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     
 <p>In 1946 a woman named Félice Mitchell — "Granny" to the four children in this chapter — came from England to Los Angeles to see her daughter, and found her, in the words her grandson would quote sixty years later, "married with 4 babies on her hands." She was, in her own words, "shocked and horrified beyond words" [1].</p>
 
+<figure class="plate">
+  <img src="img/margery-krewson-age-25-1947.jpg" alt="A small black-and-white head-and-shoulders portrait of a young woman with dark hair swept back, in a patterned dress with a thin chain at her neck, looking straight at the camera against a plain pale background." width="256" height="281" loading="lazy" decoding="async"/>
+  <figcaption>Margery Knight Marshall at twenty-five, 1947 — the year after this chapter. Born at 62 Foxley Lane, Purley, in Surrey, on 21 April 1922; brought to her father's house in California at six; twenty-four, with four children and no husband, when her mother arrived from England.
+    <span class="cite">Family archive; Michael Krewson's own photograph file, titled "Margery Krewson, Age 25, 1947." 1947 less 25 lands on 1922, which is her certificated birth year.</span></figcaption>
+</figure>
+
 <p>Everything in this chapter comes from one man's memory, written down once. Al Krewson — one of the four babies, three years old in 1946 — sat at a keyboard in Portland, Oregon, on the morning of 21 January 2005, sixty-two years old, and wrote his nephew Michael two long emails in a row about the year his family came apart, in answer to a question about who his father was. He had pieced it together, he said, "from several talks we had during my growing up years in Ireland" with the grandmother who took him there, from two cousins who had known his father, and from what a three-year-old keeps. He sent the second email by accident before he had finished it, and then finished it. At the end he wrote: "I will assure you what I shared is as accurate as I can make it based on information given to me first hand. You may consider this as a piece of family history and you should perhaps keep it for your records" [1]. This is the record he asked for.</p>
 
 <h2>Granny</h2>
@@ -499,6 +533,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 </div>
 
 <p>A Rhodes Scholar goes to Oxford. The University of Otago keeps the public roll of New Zealand's Rhodes Scholars, and the 1911 line reads <i>Alfred George Marshall — Auckland — Balliol</i>, between Kenneth Sisam in 1910 and Alan Wallace in 1912 [6]. So the research chemist of 62 Foxley Lane was a New Zealander, born at Dargaville on the Kaipara in March 1888 by a relative's reckoning [7], a Balliol man, a captain of Royal Engineers in the First World War, and by 1946 a Shell Oil executive in Berkeley — which is how a man in California came to have a car and the means to drive to Tulsa for his daughter and four grandchildren. He died on Sunday 21 October 1973, aged eighty-five. "Mrs. Margery M. Kresen" is the newspaper's misprint of Krewson. "Four grandchildren" is exactly the four of this chapter; "three great grandchildren," in October 1973, includes a two-year-old in Haverhill, Massachusetts. And "Mrs. Katherine M. Kibby of Berkeley" is a great-aunt the family's record had never held — <span class="infer">almost certainly the "Aunt Kay" who stands beside Grandpa Marshall and a fourteen-year-old Al in the photograph of about 1957, with "Uncle Bill" her husband</span>. Granny said Grandpa had been at Oxford. He had.</p>
+
+<figure class="plate">
+  <img src="img/al-k-grandpa-marshall-aunt-kay-uncle-bill.jpg" alt="A black-and-white snapshot of four people on the steps of a white clapboard porch: a boy of about fourteen in a jacket and tie at the left, a white-haired man in a checked shirt and dark jacket behind him, a dark-haired woman in a pale belted coat in front, and a young man in a light jacket and bow tie at the right." width="576" height="392" loading="lazy" decoding="async"/>
+  <figcaption>California, about 1957. The boy at the left is Al Krewson at fourteen, the age the print gives him and the year he left for Ireland. The print names the other three in order — Grandpa Marshall, Aunt Kay and Uncle Bill. <span class="infer">"Grandpa Marshall" is matched to Alfred George Marshall by name and generation, not independently confirmed, and the reading of "Aunt Kay" as the Mrs. Katherine M. Kibby of the 1973 obituary is this chapter's. "Uncle Bill" is documented nowhere else in the family's record at all, and the young man at the right looks too young to be her husband; the record flags all three rather than guessing, and so does the book.</span>
+    <span class="cite">Family archive; Michael Krewson's own photograph file, titled "Al K (age 14), Grandpa Marshall, Aunt Kay and Uncle Bill."</span></figcaption>
+</figure>
 
 <p>Later the same night Michael exported the Ancestry tree he had been keeping, and its gallery held the New Zealand papers [8]. In 1910 a Dunedin photographer posed "the three candidates for the Rhodes Scholarship" against a weatherboard wall — Smith of Wellington, Ongley of Otago, "and A. G. Marshall (University College, Auckland), the successful candidate." In August 1914 a Port Chalmers paper reported that "the Rev. G. T. Marshall, of Port Chalmers, has received a letter from his son, who was Rhodes scholar for 1911 and was in Oxford when the war broke out, stating that he has enlisted in the British Army, and is received as a corporal in the Royal Engineers to act as despatch rider and motor cyclist … The letter is dated August 14." The Press Association, when he came home on leave in December 1931 "after an absence of 21 years": he "went to France with the first reinforcements of the English Regular Army, qualifying as one of the 'Old Contemptibles.' He later secured a commission and served at Gallipoli until the evacuation, after which he served in Egypt and Mesopotamia till the end of the war" — and afterwards, at Oxford and in Sussex, did the research "in conjunction with Mr. H. Ricardo, a prominent engine designer" that gave petrol its knock rating, before Shell sent him to California in 1928 [8]. So the research chemist was a vicar's son, an Old Contemptible, a Gallipoli captain, and a colleague of Ricardo and Tizard; the family knew none of it.</p>
 
@@ -581,6 +621,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <p>LONELY HEARTS SWINDLER GETS 3-YEAR PRISON TERM. Los Angeles (AP) — Federal officials said yesterday that a man who pleaded guilty in a lonely hearts swindle has been sentenced to three years in prison. Galen Vane Krewson, 59, a machinist's helper, pleaded guilty in federal court here last Dec. 3 to charges that he bilked Mrs. Josephine M. Barber of Rapid City, S.D., out of $1,320 by mail fraud. U.S. Judge Ben Harrison sentenced him to three years on 11 counts, to run concurrently, last March 14. Asst. U.S. Atty. John K. Duncan said Krewson wrote more than 100 letters to Mrs. Barber while he was in hospitals in Oklahoma after obtaining her name from a lonely hearts correspondence club. Duncan said she sent Krewson money, in amounts ranging from $50 to $800, because he told her his money was in safety deposit boxes in California and he couldn't get to it. Krewson represented himself as a Hollywood cowboy actor who was recuperating from injuries suffered when a horse fell on him on a movie set, Duncan said. The federal attorney said Krewson made promises to marry the South Dakota woman. Krewson, who gives his home address as San Bernardino, was arrested here last July.</p>
   <span class="cite"><i>San Bernardino County Sun</i>, 1957 (undated clipping; "last March 14" places it after 14 March 1957) [9].</span>
 </div>
+
+<figure class="plate">
+  <img src="img/galen-v-krewson-lonely-hearts-swindler-san-bernardino-county-sun-1957.jpg" alt="A newspaper clipping headed 'LONELY HEARTS SWINDLER GETS 3-YEAR PRISON TERM', a single column of type naming Galen Vane Krewson, 59, a machinist's helper, with neighbouring columns headed 'Snowstorms in Central Plains' and 'Business Sent to…' partly visible on either side." width="400" height="400" loading="lazy" decoding="async"/>
+  <figcaption>The clipping as it sits on the page, between a snowstorm in the Dakotas and a column of business news. Nobody in the family saw it for sixty-nine years.
+    <span class="cite">Found by Michael Krewson on 11 September 2026 in a newspaper archive and saved to the family record.</span></figcaption>
+</figure>
 
 <p>Fifty-nine in 1957 is a man born in 1897. "Hospitals in Oklahoma" — the state of Marvel's farm. "Promises to marry" — his tree has a fifth marriage, in Houston, on 29 November 1950, to a woman it does not name [8]. And Springfield, Missouri, which no one in the family could account for, has one institution that accounts for it, and the death certificate names it. Missouri State File No. 20741, filed 17 June 1957: place of death, Greene County, Springfield, "Medical Center for Federal Prisoners," length of stay thirty-four days; Galen Vane Krewson, white, male, <i>divorced</i>, born July 29, 1897, Cincinnati, Iowa, usual occupation "machine operator," industry "varied"; father's name "Unknown (deceased)," mother's maiden name "Unknown (deceased)" — the informant being "FILE: MCFP Springfield, Missouri," the prison's own record, which did not know Charles and Lottie; cause of death, inanition, due to carcinoma of the bladder with metastases, nineteen months — so he had been dying since the autumn of 1955, through the Oklahoma hospitals and the hundred letters; autopsy performed; certified by the Clinical Director; buried 10 June 1957 in St. Mary's Cemetery, Springfield, by a local funeral home, three days after he died at 1:55 in the morning [10]. Al was in Ireland; the letters his father had written him were in Grandpa Mitchell's safe.</p>
 

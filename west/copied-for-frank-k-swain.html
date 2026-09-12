@@ -12,9 +12,10 @@
 <meta property="og:title" content="Copied for Frank K. Swain"/>
 <meta property="og:description" content="The people who kept the Croesen record — Frank Swain at Fonthill, Anne Raike’s wills, a Dutch archivist in 1943, Warren Cruise’s 1998 book. Part V. Ch. 18."/>
 <meta property="og:url" content="https://mistertranslation.com/west/copied-for-frank-k-swain.html"/>
+<meta property="og:image" content="https://mistertranslation.com/west/img/croesen-families-of-america-volume-i-binding.jpg"/>
 <meta property="article:section" content="Part V — The People Who Kept This"/>
 <meta name="author" content="Michael V. Krewson"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -438,6 +439,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid #4fa8dc;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -480,6 +508,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     
 <p>At the foot of the 1729 will of Derrick Kroesen — the one that gave Henry³ the east end of the house and "my Negro man Fortune" — there is a line in square brackets that this book has quoted again and again without stopping to read it: "[Copied March 14, 1932 by Mrs. F.W. (Anne) Raike for Frank K. Swain. Book 1, Page 155, file 30.]" [1]. Under the 1720 Borden deed: "[Copied by Warren Cruise from copy of original deed furnished by Spruance Library, Bucks County Historical Society, Doylestown, PA.]" Under the 1712 deed: "[Copied from original document by Ann Raike for Frank K. Swain in 1933]." Under a note on the children of Derrick and Elizabeth: "FRANK KING SWAIN 'Fonthill' (Descendant) wrote the following note in 1933: (Anne Raike Files)" [1]. Parts II and III of this book are made of documents, and every one of them came down a chain of hands. Part V is about the hands.</p>
 
+<figure class="plate">
+  <img src="img/croesen-families-of-america-volume-i-binding.jpg" alt="The front board of a dark cloth-bound book, blocked in gilt within a double rule: THE CROESEN FAMILIES OF AMERICA, VOLUME I, and beneath a short rule, Croesen Families in the 1600s. A library barcode label is stuck to the upper left corner." width="706" height="1116" loading="lazy" decoding="async"/>
+  <figcaption>The book this one is quoting from: Warren D. Cruise's <i>The Croesen Families of America</i>, Volume I, printed for him in Baltimore in 1998 after twenty years' work, and subtitled for the century he could document. There was never a Volume II.
+    <span class="cite">The front board of a library copy. The barcode is the Greene County Public Library, Ohio.</span></figcaption>
+</figure>
+
 <h2>The man at Fonthill</h2>
 
 <p>Frank King Swain was born in 1876 and was twenty years old when Henry Chapman Mercer hired him — to dig. Mercer was the Doylestown archaeologist, collector and tile-maker whose Moravian Pottery and Tile Works supplied the floors of the Pennsylvania State Capitol, and whose house, Fonthill, he poured in reinforced concrete between 1908 and 1912: forty-four rooms, eighteen fireplaces, two hundred windows, every surface set with his own tiles. Swain went from the digs to the pottery, became its manager, married Mercer's housekeeper, Laura Long, in 1925, and when Mercer died in 1930 and left the castle in trust as a museum, it was on the condition that the Swains could live in it for the rest of their lives. Frank did — he inherited the pottery, ran it, and died at Fonthill in 1954; Laura stayed on giving occasional tours until her death in 1975 [2].</p>
@@ -506,6 +540,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <h2>The work book</h2>
 
 <p>Between Raike's volumes and Cruise's book there was a stage the Tributes page calls "the earlier 'work book,'" assembled in the early 1980s by Marie Metzgar of Pennsylvania — "approximately fifty years" of research — with General Kroesen as "a major contributor" [3]. Around it Cruise names the rest of the chain: Lewis Wayne Nelson of New Jersey (d. 1996), who wrote the 1979 study of the Cruser family of the Stony Brook and the "Voorlezer" article this book's chapter 6 leaned on; Shirley Ann Cruzen Stevens of Michigan, who traced the Cruzen line and photographed Winschoten in the province of Groningen, where the name may have begun; William B. Bogardus of Ohio, a descendant of Anneke Jans and the Dominie, who edited the text and "has been so important in defining Dutch traditions and names" [3]. Six people, two states away from each other, each with a shoebox. A family that "never built up what other families did" had, by the 1980s, a research collective.</p>
+
+<figure class="plate">
+  <img src="img/croesen-families-of-america-bookplate-shirley-cruzen-stevens.jpg" alt="The front endpapers of a book. On the left, a printed bookplate decorated with two owls and an open book, lettered 'From the Library of' and typed beneath: 'Shirley Cruzen Stevens, donated in memory of my great-grandfather, Andrew C. Cruzen & grandfather, John Wm. Cruzen of Greene County, Ohio.' On the facing page, a typed accession slip reading 'Greene Co. Room 929.2 Croesen / Cruise, Warren D. / The Croesen families of America / Volume I', and below it a stamp: GREENE COUNTY ROOM, GREENE COUNTY LIBRARY, 76 EAST MARKET STREET, XENIA, OH 45385." width="1392" height="1078" loading="lazy" decoding="async"/>
+  <figcaption>One of the six, on the endpaper. Shirley Cruzen Stevens — the cousin who traced the Cruzen line and photographed the church at Winschoten — bought the family's book and gave it to a public library in Xenia, Ohio, in memory of her own great-grandfather and grandfather. The library catalogued it and stamped it and shelved it in its local room, which is where it still is. This chapter's whole argument is on these two facing pages: a keeper's shoebox ends when she does, and an accession number does not.
+    <span class="cite">Front endpapers of the Greene County Public Library copy. The plate is quoted as printed; the book's own tributes page spells her Shirley Ann Cruzen Stevens.</span></figcaption>
+</figure>
 
 <h2>Denver, 1998</h2>
 

@@ -17,6 +17,36 @@ shells out to Google Chrome (macOS path below) and uses pypdf if it is installed
 which is the one exception, and it fails soft: no Chrome → no PDF, the HTML and
 EPUB are still built and the build says so.
 
+PICTURES — and the two editions want opposite things
+────────────────────────────────────────────────────
+A chapter's pictures are `<figure class="plate">` blocks in its own source (see
+`source/west/_template.html`), placed in the chapter they belong to. Both
+editions here carry them, by different routes, because print and screen are not
+the same problem:
+
+  EPUB  gets the web JPEGs verbatim out of `west/img/` — colour, ≤1600px on the
+        long edge, which is what a reading device wants. They are copied into
+        the zip under OEBPS/img/ with manifest entries; stdlib only.
+
+  PRINT gets a GREYSCALE derivative in `book/img/`, because a KDP paperback's
+        black-and-white interior is what this book is (and a colour interior
+        costs several times as much per copy). Needs Pillow; without it the
+        colour file is used instead and the build says so — the same fail-soft
+        posture as Chrome and pypdf.
+
+⭐ THE PART THAT IS MEASURED RATHER THAN GUESSED: every printed plate is sized
+from ITS OWN pixel width, not stretched to the column. Most of this archive is
+1920s–60s snapshots surviving only as small scans — 248 to 600 pixels across —
+so a single "full width" rule would print a 248px snapshot at 4.5 inches and 55
+DPI, which is a blur, while printing the 2600px group portrait at the same 4.5
+inches and 578 DPI, which is right. Instead each picture is placed at
+`pixels ÷ 300` inches, clamped to [MIN_PLATE_IN, TEXT_W_IN]: the big plates fill
+the column, the little snapshots print small and sharp. The build PRINTS the
+effective resolution of every plate, flags any that fall under 300 DPI, and
+REFUSES the book outright below MIN_DPI. Nothing is ever upscaled, here or in
+`west/img/`: inventing pixels in a family photograph is the picture equivalent
+of promoting a legend to a fact.
+
 DESIGN
 The web build is dark, Delft-blue, one chapter per page. The book is the same
 text set for paper: Iowan Old Style (the macOS book face; Palatino/Georgia
@@ -45,7 +75,19 @@ import build_west as W  # noqa: E402
 
 ROOT = W.ROOT
 OUT = os.path.join(ROOT, "book")
+WEB_IMG = os.path.join(ROOT, "west", "img")     # the committed web pictures
+BOOK_IMG = os.path.join(OUT, "img")             # greyscale print derivatives
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+# ── print geometry, and the plate-sizing rule ────────────────────────────────
+# The @page block below is 6x9in with 0.75in side margins, so the text block —
+# and therefore the widest a picture can be — is 4.5in.
+PAGE_W_IN = 6.0
+TEXT_W_IN = PAGE_W_IN - 0.75 - 0.75
+TARGET_DPI = 300.0      # KDP's own stated floor for interior images
+MIN_PLATE_IN = 1.6      # narrower than this and a picture stops reading as one
+MIN_DPI = 150.0         # below this the book is refused rather than printed blurry
+PRINT_QUALITY = 90
 
 TITLE = W.SITE_NAME
 SUBTITLE = "A family's four centuries in America"
@@ -123,6 +165,21 @@ i, em { font-style: italic; }
 .doc.legend { border-left-style: dotted; }
 .doc.legend::before { content: "Family legend"; display: block; font-size: 7.6pt; letter-spacing: .16em; text-transform: uppercase; color: #444; margin-bottom: .05in; }
 .infer { text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #777; text-underline-offset: 2.5pt; }
+
+/* Plates — a picture is a document, and in print it keeps the document's rule
+   at the left, so the three registers still read in monochrome. The WIDTH of
+   each image is set inline, per picture, by _plate_style(): see the module
+   docstring. `page-break-inside: avoid` keeps a picture and its caption
+   together rather than letting a page break land between them. */
+.plate { margin: .22in 0 .24in; padding: 0 0 0 .16in; border-left: 1.2pt solid #333;
+  page-break-inside: avoid; }
+.plate img { display: block; max-width: 100%; height: auto; }
+.plate figcaption { margin: .08in 0 0; font-size: 8.6pt; line-height: 1.42; color: #222;
+  text-indent: 0; }
+.plate figcaption .cite { display: block; margin-top: .04in; font-size: 8pt; color: #444; }
+.plate.legend { border-left-style: dotted; }
+.plate.legend::before { content: "Family legend"; display: block; font-size: 7.6pt;
+  letter-spacing: .16em; text-transform: uppercase; color: #444; margin-bottom: .05in; }
 .chapter ol:not(.sources) { margin: .1in 0 .1in .25in; padding: 0; font-size: 10.4pt; }
 .chapter ol:not(.sources) li { margin: 0 0 .06in; }
 
@@ -169,15 +226,117 @@ def _front(chapters):
     return "\n".join(parts)
 
 
-def _body_html(c):
+# ── plates: measure, convert to greyscale, and size each one for paper ───────
+
+def _img_px(path):
+    """Pixel size of a JPEG/PNG, from the file. Pillow if present, else a small
+    header read, so the sizing rule works even without Pillow installed."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            return im.size
+    except ImportError:
+        pass
+    d = W.blogkit.img_dims(os.path.dirname(path), os.path.basename(path))
+    return d if d else None
+
+
+def _plate_inches(px_w):
+    """Printed width for a picture that many pixels across, and the resolution
+    it lands at. `pixels / 300` inches, held between MIN_PLATE_IN and the text
+    block. Never wider than the column, never upscaled past its own detail."""
+    want = px_w / TARGET_DPI
+    inches = max(MIN_PLATE_IN, min(TEXT_W_IN, want))
+    return inches, px_w / inches
+
+
+def prepare_print_images(chapters):
+    """Write the greyscale print derivatives and work out each plate's width.
+
+    Returns {filename: (inches, dpi, px_w, px_h)}. REFUSES the build if any
+    picture would print below MIN_DPI — the printed page is the one place a
+    too-small scan cannot be quietly got away with.
+    """
+    names = []
+    for c in chapters:
+        for n in W.plate_images(c["body"]):
+            if n not in names:
+                names.append(n)
+    if not names:
+        return {}, False
+
+    os.makedirs(BOOK_IMG, exist_ok=True)
+    try:
+        from PIL import Image, ImageOps
+        have_pil = True
+    except ImportError:
+        have_pil = False
+
+    sizes, coarse, missing = {}, [], []
+    for n in names:
+        src = os.path.join(WEB_IMG, n)
+        if not os.path.exists(src):
+            missing.append(n)
+            continue
+        px = _img_px(src)
+        if not px:
+            missing.append(n + " (unreadable)")
+            continue
+        inches, dpi = _plate_inches(px[0])
+        sizes[n] = (inches, dpi, px[0], px[1])
+        if dpi < MIN_DPI:
+            coarse.append((n, px[0], dpi))
+        dst = os.path.join(BOOK_IMG, n)
+        if have_pil:
+            with Image.open(src) as im:
+                # Greyscale for a black-and-white interior. No resize: the
+                # printer's own downsampling beats ours, and throwing pixels
+                # away here could only lower the resolution reported above.
+                ImageOps.grayscale(im).save(dst, "JPEG", quality=PRINT_QUALITY,
+                                            optimize=True)
+        else:
+            shutil.copyfile(src, dst)
+
+    if missing:
+        sys.exit("book refused — plate images not in west/img/:\n  " + "\n  ".join(missing))
+    if coarse:
+        sys.exit("book refused — these plates are too coarse to print (under %d DPI "
+                 "even at the %.1fin minimum):\n  " % (MIN_DPI, MIN_PLATE_IN)
+                 + "\n  ".join("%s — %dpx wide, would print at %d DPI"
+                               % (n, w, d) for n, w, d in coarse))
+    return sizes, have_pil
+
+
+PLATE_IMG_RE = re.compile(r'<img\b([^>]*?)\bsrc="img/([^"]+)"([^>]*?)/?>', re.I)
+# Attributes the web build injects that the printed page must not inherit: a
+# pixel width fights the inch width set here, and lazy loading is meaningless
+# on paper.
+_DROP_ATTRS = re.compile(r'\s+(?:width|height|loading|decoding)="[^"]*"', re.I)
+
+
+def _plate_style(body, sizes):
+    """Give every plate image its measured printed width, in inches."""
+    def fix(m):
+        pre, name, post = m.group(1), m.group(2), m.group(3)
+        attrs = _DROP_ATTRS.sub("", pre + post).strip()
+        attrs = (" " + attrs) if attrs else ""
+        inches = sizes.get(name, (TEXT_W_IN,))[0]
+        return '<img src="img/%s"%s style="width:%.2fin"/>' % (name, attrs, inches)
+
+    return PLATE_IMG_RE.sub(fix, body)
+
+
+def _body_html(c, sizes=None):
     """The chapter body as written, plus print-only touches."""
     b = c["body"].strip()
     # first paragraph unindented
     b = re.sub(r"^<p>", '<p class="first">', b, count=1)
+    if sizes:
+        b = _plate_style(b, sizes)
     return b
 
 
-def _chapter(c):
+def _chapter(c, sizes=None):
     roman, name, _, _ = W.PARTS[c["part"]]
     people = ""
     if c["people"]:
@@ -188,10 +347,10 @@ def _chapter(c):
 <p class="lede">%(s)s</p>
 %(b)s
 </article>""" % {"n": c["num"], "t": esc(c["title"]), "dl": dateline, "pp": people,
-                 "s": esc(c["summary"]), "b": _body_html(c)}
+                 "s": esc(c["summary"]), "b": _body_html(c, sizes)}
 
 
-def _parts_and_chapters(chapters):
+def _parts_and_chapters(chapters, sizes=None):
     out = []
     cur = None
     for c in chapters:
@@ -200,7 +359,7 @@ def _parts_and_chapters(chapters):
             roman, name, span, lede = W.PARTS[cur]
             out.append('<section class="part" id="part-%s"><p class="num">Part %s</p><h1>%s</h1><p class="span">%s</p><p class="part-lede">%s</p></section>'
                        % (esc(cur), esc(roman), esc(name), esc(span), esc(lede)))
-        out.append(_chapter(c))
+        out.append(_chapter(c, sizes))
     return "\n".join(out)
 
 
@@ -213,8 +372,8 @@ def _back():
 </section>""" % {"t": esc(TITLE), "a": esc(AUTHOR)}
 
 
-def build_html(chapters):
-    body = _front(chapters) + "\n" + _parts_and_chapters(chapters) + "\n" + _back()
+def build_html(chapters, sizes=None):
+    body = _front(chapters) + "\n" + _parts_and_chapters(chapters, sizes) + "\n" + _back()
     doc = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>%s</title><style>%s</style></head>
 <body>
@@ -324,7 +483,35 @@ p { margin: 0 0 .7em; }
 .tp h1 { font-size: 2.2em; }
 .copy { font-size: .85em; }
 .toc p { margin: 0 0 .3em; }
+/* Plates — the picture counterpart of .doc, same rule at the left. `max-width`
+   and no width, so a small archival scan is shown at its own size rather than
+   blown up to the reading width. */
+figure.plate { margin: 1.3em 0; padding-left: .8em; border-left: 2px solid #444; }
+figure.plate img { display: block; max-width: 100%; height: auto; }
+figure.plate figcaption { margin: .5em 0 0; font-size: .82em; line-height: 1.45; color: #333; }
+figure.plate figcaption .cite { display: block; margin-top: .3em; font-size: .93em; color: #555; }
+figure.plate.legend { border-left-style: dotted; }
+figure.plate.legend:before { content: "Family legend"; display: block; font-size: .7em;
+  letter-spacing: .14em; text-transform: uppercase; color: #555; }
 """
+
+
+_MEDIA = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
+          ".gif": "image/gif", ".svg": "image/svg+xml", ".webp": "image/webp"}
+
+
+def _media_type(name):
+    return _MEDIA.get(os.path.splitext(name)[1].lower(), "application/octet-stream")
+
+
+def _epub_plate_names(chapters):
+    """Every plate picture the EPUB has to carry, in reading order."""
+    out = []
+    for c in chapters:
+        for n in W.plate_images(c["body"]):
+            if n not in out:
+                out.append(n)
+    return out
 
 
 def _xhtml(title, body_html):
@@ -342,6 +529,10 @@ def _to_xhtml_fragment(s):
     few HTML-isms XML-safe and verify by parsing."""
     s = re.sub(r"<br\s*>", "<br/>", s)
     s = re.sub(r"<hr\s*>", "<hr/>", s)
+    # A plate's <img> is written self-closed in the sources, but an un-closed
+    # one would make the whole EPUB chapter unparseable, so close it here
+    # rather than relying on every future caption being typed correctly.
+    s = re.sub(r"<img\b([^>]*?)\s*/?>", lambda m: "<img%s/>" % m.group(1).rstrip(), s)
     s = s.replace("&nbsp;", "&#160;").replace("&mdash;", "&#8212;").replace("&ndash;", "&#8211;") \
          .replace("&ldquo;", "&#8220;").replace("&rdquo;", "&#8221;").replace("&middot;", "&#183;") \
          .replace("&copy;", "&#169;").replace("&hellip;", "&#8230;")
@@ -355,8 +546,21 @@ def build_epub(chapters, epub_path):
     uid = "urn:uuid:" + "8d1c0f0e-" + "west" + "-" + str(YEAR) + "-eight-miles"
     files = []  # (name, bytes, mediatype, id, in_spine)
     def add(name, text, mt="application/xhtml+xml", spine=True):
-        files.append((name, text.encode("utf-8"), mt, re.sub(r"[^a-z0-9]", "_", name), spine))
+        add_bytes(name, text.encode("utf-8"), mt, spine)
+
+    def add_bytes(name, data, mt, spine=False):
+        # Manifest ids must be XML names, so they cannot start with a digit;
+        # every id here starts with a letter from the filename or the "img_"
+        # prefix the path supplies.
+        files.append((name, data, mt, re.sub(r"[^a-z0-9]", "_", name), spine))
+
     add("style.css", EPUB_CSS, "text/css", spine=False)
+    # The pictures, as the web serves them — colour, ≤1600px, which is what a
+    # reading device wants. Only the plates actually referenced by a chapter go
+    # in, so the file never carries a picture no page shows.
+    for n in _epub_plate_names(chapters):
+        with open(os.path.join(WEB_IMG, n), "rb") as fh:
+            add_bytes("img/" + n, fh.read(), _media_type(n))
     add("title.xhtml", _xhtml(TITLE, '<section class="tp"><h1>%s</h1><p class="lede">%s</p><p class="by">%s</p></section>'
                               % (esc(TITLE), esc(SUBTITLE), esc(AUTHOR))))
     add("copyright.xhtml", _xhtml("Copyright", _to_xhtml_fragment(
@@ -503,9 +707,28 @@ def main():
     chapters = W.load_chapters(include_drafts=False)
     W.check_chapters(chapters)
     os.makedirs(OUT, exist_ok=True)
+
+    sizes, have_pil = prepare_print_images(chapters)
+    if sizes:
+        note = "" if have_pil else "   (Pillow missing — colour, not greyscale)"
+        print("plates: %d picture%s, sized from their own resolution%s"
+              % (len(sizes), "" if len(sizes) == 1 else "s", note))
+        low = 0
+        for n in sorted(sizes, key=lambda k: sizes[k][1]):
+            inches, dpi, pw, _ph = sizes[n]
+            flag = ""
+            if dpi < TARGET_DPI:
+                flag = "  under %d" % TARGET_DPI
+                low += 1
+            print("  %-66s %4dpx → %4.2fin @ %4d DPI%s" % (n[:66], pw, inches, dpi, flag))
+        if low:
+            print("  %d of %d print under %d DPI. They are small archival scans, so "
+                  "they print small rather than soft; none is under the %d DPI floor."
+                  % (low, len(sizes), TARGET_DPI, MIN_DPI))
+
     html_path = os.path.join(OUT, "eight-miles-west.html")
     with open(html_path, "w", encoding="utf-8") as fh:
-        fh.write(build_html(chapters))
+        fh.write(build_html(chapters, sizes))
     words = sum(len(re.sub(r"<[^>]+>", " ", c["body"]).split()) for c in chapters)
     print("book: %d chapters, ~%s words → %s" % (len(chapters), format(words, ","), os.path.relpath(html_path, ROOT)))
     epub_path = os.path.join(OUT, "eight-miles-west.epub")

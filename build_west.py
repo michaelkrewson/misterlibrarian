@@ -380,6 +380,69 @@ def _hero(c):
             % (esc(c["hero"]), esc(c["hero_alt"]), dims, cap))
 
 
+# ─────────────────────────────────────────────────────────────────── plates ──
+#
+# A PLATE is a picture placed in the chapter it belongs to — never gathered
+# into an insert section in the middle of the book (Michael's call, 2026-09-12).
+# The author writes the minimum:
+#
+#     <figure class="plate">
+#       <img src="img/name.jpg" alt="what is in the frame"/>
+#       <figcaption>What is known about it.
+#         <span class="cite">Where it came from.</span></figcaption>
+#     </figure>
+#
+# and the BUILD fills in the rest — real width/height off the file on disk (so
+# the page never reflows as pictures load) plus lazy decoding. Dimensions are
+# read, not declared, for the same reason the wills are quoted and not
+# paraphrased: a number typed by hand is a number that can drift from the
+# thing it describes.
+#
+# `check_chapters` refuses a plate whose file is missing, whose `alt` is empty,
+# or which has no caption — the picture equivalent of the rule that refuses a
+# chapter with no `<ol class="sources">`.
+
+PLATE_RE = re.compile(r'<figure\b[^>]*\bclass="[^"]*\bplate\b[^"]*"[^>]*>(.*?)</figure>',
+                      re.S | re.I)
+IMG_SRC_RE = re.compile(r'<img\b([^>]*?)\bsrc="img/([^"]+)"([^>]*?)/?>', re.I)
+
+
+def plate_images(body):
+    """Every img filename referenced by a plate in this body, in reading order.
+
+    Used by the web build for `og:image` and by `build_west_book.py` to know
+    which pictures the printed edition and the EPUB have to carry.
+    """
+    out = []
+    for block in PLATE_RE.findall(body or ""):
+        for _pre, name, _post in IMG_SRC_RE.findall(block):
+            if name not in out:
+                out.append(name)
+    return out
+
+
+def _prepare_plates(body):
+    """Inject measured width/height + lazy decoding into every plate image."""
+    img_dir = os.path.join(OUT, "img")
+
+    def fix_block(m):
+        block = m.group(0)
+
+        def fix_img(im):
+            pre, name, post = im.group(1), im.group(2), im.group(3)
+            attrs = (pre + post)
+            add = ""
+            if " width=" not in attrs:
+                add += blogkit.dim_attrs(img_dir, name)
+            if "loading=" not in attrs:
+                add += ' loading="lazy" decoding="async"'
+            return '<img%ssrc="img/%s"%s%s/>' % (pre, name, post.rstrip(), add)
+
+        return IMG_SRC_RE.sub(fix_img, block)
+
+    return PLATE_RE.sub(fix_block, body or "")
+
+
 def _comment_box(c, url):
     """X as the comment layer, published chapters only — a draft preview's URL
     is unlisted and must never be pushed to X."""
@@ -422,6 +485,17 @@ def build_chapter_page(c, live):
               % " · ".join(esc(p) for p in c["people"])) if c["people"] else ""
     draft_banner = ('<p class="draftbanner">DRAFT — local preview, not published</p>'
                     if c["draft"] else "")
+    # The chapter's first plate is its share card. Nothing is rendered twice
+    # for this: the picture is in the prose where it belongs and the card just
+    # points at the same file. A chapter with no picture keeps the plain
+    # `summary` card it has always had.
+    plates = plate_images(c["body"])
+    og_image = ""
+    card = "summary"
+    if plates:
+        og_image = ('<meta property="og:image" content="%simg/%s"/>\n'
+                    % (BASE_URL, plates[0]))
+        card = "summary_large_image"
     return """<!doctype html>
 <html lang="en">
 <head>
@@ -436,9 +510,9 @@ def build_chapter_page(c, live):
 <meta property="og:title" content="%(title)s"/>
 <meta property="og:description" content="%(desc)s"/>
 <meta property="og:url" content="%(url)s"/>
-<meta property="article:section" content="Part %(pnum)s — %(pname)s"/>
+%(ogimg)s<meta property="article:section" content="Part %(pnum)s — %(pname)s"/>
 <meta name="author" content="%(author)s"/>
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="%(card)s"/>
 <style>%(css)s</style>%(goat)s
 </head>
 <body>
@@ -466,7 +540,9 @@ def build_chapter_page(c, live):
         "num": c["num"], "author": esc(AUTHOR),
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
         "goat": _goatcounter(), "chrome": _chrome(""), "draft": draft_banner,
-        "dateline": dateline, "people": people, "hero": _hero(c), "body": c["body"],
+        "dateline": dateline, "people": people, "hero": _hero(c),
+        "body": _prepare_plates(c["body"]),
+        "ogimg": og_image, "card": card,
         "prevnext": _prevnext(c, live), "nudge": _comment_box(c, url),
         "foot": _foot(hits_path),
     }
@@ -727,6 +803,26 @@ def check_chapters(chapters):
             problems.append("%s: hero image has no hero_alt" % c["slug"])
         if c["hero"] and not os.path.exists(os.path.join(OUT, "img", c["hero"])):
             problems.append("%s: hero image west/img/%s does not exist" % (c["slug"], c["hero"]))
+        # Plates: the file must exist, the picture must be described for a
+        # reader who cannot see it, and it must carry a caption saying what is
+        # known about it. Same posture as the sources rule — a picture with no
+        # provenance is exactly the kind of thing this book promises not to do.
+        for block in PLATE_RE.findall(c["body"]):
+            imgs = IMG_SRC_RE.findall(block)
+            if not imgs:
+                problems.append('%s: a <figure class="plate"> has no '
+                                '<img src="img/…"/>' % c["slug"])
+            for _pre, name, _post in imgs:
+                if not os.path.exists(os.path.join(OUT, "img", name)):
+                    problems.append("%s: plate image west/img/%s does not exist"
+                                    % (c["slug"], name))
+            if not re.search(r'\balt="[^"]+"', block):
+                problems.append("%s: plate %s has no alt text"
+                                % (c["slug"], imgs[0][1] if imgs else "?"))
+            if "<figcaption" not in block:
+                problems.append("%s: plate %s has no <figcaption> — every picture "
+                                "says what is known about it and where it came from"
+                                % (c["slug"], imgs[0][1] if imgs else "?"))
         if d in seen:
             problems.append("%s: identical search description to %s" % (c["slug"], seen[d]))
         seen[d] = c["slug"]
@@ -1198,6 +1294,33 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 .entry .doc .cite{display:block;margin-top:8px;color:#7f8fa6;font-size:13px;font-style:italic}
 .entry .legend{border-left-color:#e8c968;background:#120f0a}
 .entry .infer{color:#a9b7c9;font-style:italic}
+/* ── PLATES — a photograph is a document, so it wears a document's clothes ───
+   figure.plate is the picture counterpart of `.doc`: the image,
+   then a caption saying what is actually known about it, then a `.cite` line
+   giving the provenance — the same shape, the same accent rule, the same quiet
+   italic citation. `.plate.legend` takes `.doc.legend`'s gold rule for a
+   picture whose identification is family tradition rather than record, and
+   `<span class="infer">` works inside a caption exactly as it does in the
+   prose. A reader who has learned to read the three registers in the text
+   reads them in the captions without being told a second time.
+   ⚠ `max-width:100%` and nothing else: the pictures are NEVER upscaled, in CSS
+   or on disk. Most of this archive is 1920s–60s snapshots surviving only as
+   small scans of 250–600px, and a 1961 photograph of a man and a dog on a lawn
+   renders as a small inset because that is the size of what exists. Stretching
+   it would be the picture equivalent of promoting a legend to a fact. */
+.entry .plate{margin:30px auto 30px;padding:0 0 0 20px;border-left:3px solid __ACCENT__;
+  text-align:left}
+.entry .plate img{display:block;max-width:100%;height:auto;border-radius:8px;
+  background:#0a111c}
+.entry .plate figcaption{margin:11px 0 0;max-width:620px;color:#93a4bd;font-size:14px;
+  font-style:normal;line-height:1.6}
+.entry .plate figcaption .cite{display:block;margin-top:6px;color:#7f8fa6;font-size:12.5px;
+  font-style:italic}
+.entry .plate.legend{border-left-color:#e8c968}
+@media (max-width:560px){
+  .entry .plate{padding-left:14px}
+  .entry .plate figcaption{font-size:13.5px}
+}
 .draftbanner{margin:18px 0 -8px;text-align:center;color:#e8c968;font-size:12px;letter-spacing:.14em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .prevnext{max-width:760px;margin:40px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}

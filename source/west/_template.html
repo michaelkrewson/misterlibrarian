@@ -28,8 +28,10 @@ draft: true
      surname-searcher landing mid-book sees who this is before the prose.
      Optional, but almost every chapter should have it.
   6. A hero or in-body picture goes in west/img/ — web-sized (≤1600px, q82,
-     EXIF stripped; tools/travel_photos.py does it for a photo). A public-domain
-     map or painting keeps its source and licence in `hero_credit:`.
+     EXIF stripped; `python3 tools/travel_photos.py --into west <files>` does
+     it). A public-domain map or painting keeps its source and licence in
+     `hero_credit:` (hero) or in the caption's `.cite` (in-body). For an
+     in-body picture see PICTURES below — that is the normal case.
   7. Delete `draft: true` when it's ready. There is NO published drafts page:
      `draft: true` means the chapter does not build at all;
      `python3 build_west.py --drafts` renders it LOCALLY, unlisted and
@@ -57,6 +59,44 @@ draft: true
   <div class="doc"> quotes a document verbatim — a church-book line, a will, a
   letter — with <span class="cite">where it is</span> underneath. Prefer the
   original's own words to a paraphrase every time the original survives.
+
+  PICTURES — A PHOTOGRAPH IS A DOCUMENT, SO IT WEARS A DOCUMENT'S CLOTHES
+  ──────────────────────────────────────────────────────────────────────
+  A picture goes in the CHAPTER IT BELONGS TO, at the point in the prose it
+  belongs to — never gathered into an insert section in the middle of the book
+  (Michael's call, 2026-09-12). Use:
+
+      <figure class="plate">
+        <img src="img/name.jpg" alt="what is actually in the frame"/>
+        <figcaption>What is known about it.
+          <span class="cite">Where it came from.</span></figcaption>
+      </figure>
+
+  and the build fills in width/height off the file and lazy loading, so you
+  never type a dimension. `.plate` is the picture counterpart of `.doc` — same
+  accent rule, same quiet italic citation — and the SAME THREE REGISTERS apply
+  INSIDE the caption:
+  • Documented: who, when, where, said plainly.
+  • <span class="infer">…</span> for an identification worked back from an age,
+    a file name, a face — say what it rests on.
+  • class="plate legend" (gold rule) for a picture whose identification is only
+    what the family says.
+  ⚠ NEVER name a face the record does not name, and never quietly repair a
+  caption the record itself flags as doubtful — write the doubt into the
+  caption. If the family's own note says "not independently confirmed," the
+  caption says so too. A picture with a confident wrong caption is worse than
+  no picture, because a reader cannot check a face the way they can check a
+  will.
+
+  The BUILD REFUSES a plate whose file is missing, whose alt text is empty, or
+  which has no <figcaption> — the same posture as the sources rule.
+
+  Pictures are never upscaled, here or in the printed book: most of this
+  archive is 1920s–60s snapshots surviving only as small scans, and they render
+  at the size of what exists. `python3 tools/travel_photos.py --into west <file>`
+  is the gate into west/img/ (resizes down, strips EXIF);
+  `python3 build_west_book.py` prints the print resolution of every picture it
+  places, and refuses one too coarse to print.
 
   <ol class="sources"> — REQUIRED. The build refuses a chapter without one.
   Cruise 1998 by page; the NYG&B baptism/marriage volumes by volume and page;
@@ -87,6 +127,13 @@ draft: true
   <p>A story the family told, stated as a story.</p>
   <span class="cite">Who told it, and when.</span>
 </div>
+
+<figure class="plate">
+  <img src="img/some-picture.jpg" alt="What is actually in the frame, for a reader who cannot see it."/>
+  <figcaption>What is known about it — who, when, where.
+    <span class="infer">Any identification worked back rather than read off the print, and what it rests on.</span>
+    <span class="cite">Where the picture came from.</span></figcaption>
+</figure>
 
 <ol class="sources">
   <li>Warren D. Cruise, <i>The Croesen Families of America</i>, Vol. I (Gateway Press, 1998), p. 194.</li>
