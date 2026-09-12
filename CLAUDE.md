@@ -420,6 +420,17 @@ easy follow-up, not done in the first pass.
      Scripts do not, which is exactly why `validate_chapter.py` exists. Same remedy here:
      the script extracts every `tag t-*` claim with its adjacent quoted phrase and fails
      when that phrase is not in that version's fetched text for those verses.
+     ⚠ **It reads straight double quotes too, since 2026-09-11.** The chapters written
+     before the tool existed (Genesis 1 through the early thirties) quote the shelf as
+     `"without form, and void"` in plain ASCII quotes, and the `QUOTE` regex only knew
+     ‘…’/«…»/`&lsquo;` — so Genesis 1 reported **0 checked quotes and 128 "paraphrases"**
+     while carrying ~40 wrong attributions the tool would have caught. A review of Genesis
+     1–33 that day found the same class in nearly every early chapter (NWT "land of
+     Fugitiveness" for Nod, DRB "my iniquity", ASV "as God" not "as gods", GNV "die the
+     death", NIV "streams" for *ed*, the NWT 1984 still reading "ladder" at 28:12 — and one
+     adopted LXX variant in the verse text, Gen 4:15 "Not so" for the Masoretic "Therefore").
+     Attribute values are excluded (`href="#v21-8"` was the one false positive), and
+     Deuteronomy 15/21 report identical results with and without it.
      Mutation-tested against the three real defects that motivated it — a version quoted
      as something it does not say and a version cited but never fetched both FAIL the run;
      a version merely *named* in a list where it does not belong is reported as PARTIAL,
