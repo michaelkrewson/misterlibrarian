@@ -3,15 +3,16 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>ai — The Librarian&#x27;s Notebook</title>
-<meta name="description" content="2 entries on ai from The Librarian&#x27;s Notebook."/>
-<link rel="canonical" href="https://mistertranslation.com/notebook/tag-ai.html"/>
+<title>Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/two-nanometres-of-nothing.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
-<meta property="og:type" content="website"/>
+<meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
-<meta property="og:title" content="ai — The Librarian&#x27;s Notebook"/>
-<meta property="og:description" content="2 entries on ai from The Librarian&#x27;s Notebook."/>
-<meta property="og:url" content="https://mistertranslation.com/notebook/tag-ai.html"/>
+<meta property="og:title" content="Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed"/>
+<meta property="og:description" content="Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/two-nanometres-of-nothing.html"/>
+<meta property="article:section" content="Science &amp; Technology"/>
 <meta name="twitter:card" content="summary"/>
 <style>
 *{box-sizing:border-box}
@@ -393,34 +394,149 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
-</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
-  <section class="writing">
-    <h1 class="wtitle">ai</h1>
-    <p class="wsub">2 entries tagged <b>ai</b>. <a href="index.html">All writing</a>.</p>
-    <a class="ecard" href="the-week-the-ai-labs-asked-to-be-regulated.html">
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html" class="on">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
+  <article class="entry">
+    <h1 class="etitle">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</h1>
+    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 12, 2026</p>
+    <figure class="hero"><img src="img/bell-labs-transistor-1948.jpg" alt="Three men in shirtsleeves at a laboratory bench crowded with electronic equipment, one seated at a microscope and the two others standing over him" width="1600" height="799" loading="eager"/><figcaption>John Bardeen, William Shockley and Walter Brattain at Bell Labs in 1948, the year after the first transistor. The device they are looking at was about a centimetre across. AT&amp;T; public domain.</figcaption></figure>
+<p>On 9 September Apple announced the iPhone 18 Pro, and in the middle of the presentation said
+the words that matter to me more than the camera: its A20 Pro chip is built on a two-nanometre
+process. It is the first phone chip on TSMC's N2 node, and by most accounts the first
+mass-market product of any kind on it. I want to explain why that is a genuine milestone, and why
+the number Apple used to describe it is not a measurement of anything.</p>
+
+<h2>What Does "2 Nanometres" Measure?</h2>
+
+<p>Nothing. That is the honest answer and it has been the honest answer since roughly 2011. In the
+beginning the node name meant something: a "1-micron" process in the 1980s had transistor gates
+about a micron long, and each new generation shrank that length by about thirty percent, doubling
+the number of transistors per area — Moore's law as an engineering schedule. Somewhere around the
+28-nanometre generation the gate length stopped shrinking on schedule, because physics started
+objecting, but the naming kept its rhythm. Each new node got a smaller number because that is what
+customers expected a new node to be called. On TSMC's "2nm" process the smallest actual dimension
+— the pitch between adjacent gates — is a few dozen nanometres. A silicon atom sits about half a
+nanometre from its neighbour. Two nanometres is four atoms. There is nothing four atoms wide on this
+chip and nobody at TSMC will tell you there is.</p>
+
+<p>So the name is a generation label, like a model year. The right question is not "how small" but
+"what changed," and this time the answer is the biggest structural change in the transistor since
+2011.</p>
+
+<h2>Why Did the Fin Have to Go?</h2>
+
+<p>A transistor is a switch: a channel of silicon that current can flow through, and a gate beside
+it whose voltage opens or closes the channel. For fifty years the gate sat on top of a flat channel
+— one surface of contact. As transistors shrank, the gate lost its grip: the channel was so short
+that current leaked through even when the gate said "off," and every leaking transistor is heat and
+wasted battery. The fix, which Intel announced in 2011, shipped in 2012 and everyone else followed, was to stand the
+channel up as a thin vertical fin and drape the gate over it, so the gate touched three sides
+instead of one. That is the FinFET, and every phone, laptop and data-centre chip of the last decade
+and a half used it.</p>
+
+<p>Three sides was enough for a while. It is no longer enough. The move in N2 — and in Samsung's
+and Intel's competing nodes of the same generation — is to slice the fin into a stack of thin
+horizontal sheets and wrap the gate <em>completely</em> around each one: top, bottom and both sides.
+Four sides. The gate now surrounds the channel like a hand around a hose, and its control over the
+current is as complete as geometry allows. The name is gate-all-around, or nanosheet. The
+practical consequence is that the switch closes properly again, which means less leakage, which
+means the chip can either run faster at the same power or the same speed at less power.</p>
+
+<div class="aside">
+  <p><strong>TSMC's own figures for N2 against its previous node, N3E.</strong> Ten to fifteen
+  percent faster at the same power; twenty-four to thirty-five percent less power at the same speed, depending on which of its own presentations you read;
+  about fifteen percent more transistors per area, up to twenty for pure logic. Those are the
+  foundry's claims for the process, not Apple's for the chip. Apple's claims for the A20 Pro — a
+  graphics unit up to forty percent faster than last year's, fifty percent more memory bandwidth,
+  a doubled neural engine — mix the process gain with everything else it redesigned, and cannot be
+  separated back out from a keynote.</p>
+</div>
+
+<h2>Why Is the Sheet Better Than the Fin, Beyond the Fourth Side?</h2>
+
+<p>Because it is adjustable. A fin's width was fixed by the lithography; you got the fin you got. A
+nanosheet's width can be chosen per transistor: wide sheets where you want drive current, narrow
+ones where you want to save power, and the designer can mix them on the same chip. TSMC sells this
+as a feature, and it is one — it is the first time in a long while that a new node gave chip
+designers a new knob rather than just a smaller version of the old ones. The other thing that got
+better is the memory cells. On-chip cache, the SRAM that sits next to the processor cores, had
+essentially stopped shrinking for two generations, which was quietly one of the worst problems in
+the industry because modern chips are mostly cache. N2 shrinks it again.</p>
+
+<h2>What Did It Cost to Get Here?</h2>
+
+<p>Nobody outside TSMC and Apple knows the price of an N2 wafer, but the reporting has it well above
+the previous node, and the reporting also has Apple taking more than half of TSMC's entire 2nm
+capacity for the year. That is the arrangement that has held since the A-series began: Apple
+pays for the first year of a new node, gets it exclusively or nearly so, and everyone else — Nvidia,
+AMD, Qualcomm — comes in the following year once the yields have improved and the price has come
+down. It is the reason an iPhone chip is usually a year ahead of anything in a data centre. It is
+also, for what it is worth, most of why the phone costs $1,199.</p>
+
+<p>I will not turn this into an investment note; the Ledger is for that, and a chip's process node
+is not a stock thesis. But I will note the concentration. One foundry, one node, one lead customer,
+one island. Every "2nm" chip in the world this year comes out of TSMC's fabs in Taiwan, and the
+machines that pattern them come from one company in the Netherlands. The transistor's fourth side
+was an engineering achievement; the supply chain that delivers it is a single point of failure that
+everyone has decided to live with.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<p>The "more than half of capacity" figure is trade-press reporting, not a disclosure by either
+company; treat it as plausible rather than known. The gate-length and pitch numbers are
+approximate and vary by which feature you measure; my point is the order of magnitude, that the
+label is off by a factor of ten or more from anything physical, and that holds however you count.
+And while I have called N2 the first mass-market gate-all-around process, Samsung shipped a
+nanosheet node earlier in low volume — "first at scale" is the defensible claim, and the one I mean.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Apple Newsroom. <i>Apple debuts iPhone 18 Pro and iPhone 18 Pro Max.</i> 9 September 2026. <a href="https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/" rel="noopener" target="_blank">apple.com</a></li>
+  <li>TrendForce. <i>TSMC reveals N2 nanosheet details: 35% power savings, 15% performance gain, densest SRAM cell yet.</i> December 2024. <a href="https://www.trendforce.com/news/2024/12/16/news-tsmc-reveals-n2-nanosheet-details-35-power-savings-15-performance-gain-densest-sram-cell-yet/" rel="noopener" target="_blank">trendforce.com</a></li>
+  <li>Tom's Hardware. <i>SRAM scaling isn't dead after all — TSMC's 2nm process tech claims major improvements.</i> <a href="https://www.tomshardware.com/tech-industry/sram-scaling-isnt-dead-after-all-tsmcs-2nm-process-tech-claims-major-improvements" rel="noopener" target="_blank">tomshardware.com</a></li>
+  <li>AppleWorld.Today. <i>Apple's A20 Pro is rumored to use TSMC's base N2 process.</i> September 2026. <a href="https://appleworld.today/2026/09/apples-a20-pro-is-rumored-to-use-tsmcs-base-n2-process/" rel="noopener" target="_blank">appleworld.today</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-semiconductors.html">semiconductors</a><a class="tg" href="tag-apple.html">apple</a><a class="tg" href="tag-tsmc.html">tsmc</a><a class="tg" href="tag-chips.html">chips</a><a class="tg" href="tag-transistors.html">transistors</a><a class="tg" href="tag-iphone.html">iphone</a><a class="tg" href="tag-engineering.html">engineering</a><a class="tg" href="tag-technology.html">technology</a></div>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Two%20Nanometres%20of%20Nothing%3A%20What%20Apple%27s%20New%20Chip%20Actually%20Changed%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/two-nanometres-of-nothing.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/two-nanometres-of-nothing.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html" data-search="eight years to mercury, and one chance to stop bepicolombo dropped its engine module on 3 september 2026 and enters mercury orbit on 21 november. why arriving at mercury is so hard, and what it studies." data-tags="space mercury bepicolombo esa jaxa planetary-science spaceflight engineering">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
+      <span class="ec-s">BepiColombo dropped its engine module on 3 September 2026 and enters Mercury orbit on 21 November. Why arriving at Mercury is so hard, and what it studies.</span>
+    </a>
+    <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
       <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
-      <span class="ec-s">In one week in September 2026: OpenAI shipped a model its president called the start of the AGI era, then asked Congress for mandatory safety rules it had spent two years opposing; it put its most prominent internal critic on the board, and he said the industry was not on track; Anthropic published a report saying its own model had been used to write missile-guidance software in Yemen and to run the largest data-theft campaign it had ever measured. I use one of these tools every day. This is an attempt to say what changed, and what the three explanations are.</span>
+      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
     </a>
-    <a class="ecard" href="my-collaborator-has-no-memory.html">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
-      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
-      <span class="ec-s">For three months I have worked every day with an AI coding assistant that wakes up each session knowing nothing about the last one. What it knows, it reads from a file. That file grew to 685 kilobytes, went stale in ways that reached the real-money side of the project, and turned into the best lesson in institutional memory I have had. This is what it is like to run a one-person shop with an amnesiac partner, and why the answer turned out to be less writing, not more.</span>
+    <a class="tile" href="antarctica-gained-ice-and-the-reason-was-far-away.html" data-search="antarctica gained 695 billion tons of ice, and the reason was seven thousand kilometres away antarctica gained a record 695 billion tons of ice in 2021-23. the nature study behind the headline, its tropical mechanism, and why the loss trend stands." data-tags="climate antarctica ice-sheet sea-level satellites grace weather science">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
+      <span class="ec-s">Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands.</span>
     </a>
+    <a class="tile" href="galileos-experiment-with-one-atom-in-two-places.html" data-search="galileo&#x27;s experiment, done with one atom in two places a rubidium atom in superposition, half in free fall, confirms einstein&#x27;s equivalence principle, and starts a ladder toward testing penrose&#x27;s collapse idea." data-tags="physics quantum-mechanics gravity einstein penrose science experiments">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Galileo&#x27;s Experiment, Done With One Atom in Two Places</span>
+      <span class="ec-s">A rubidium atom in superposition, half in free fall, confirms Einstein&#x27;s equivalence principle, and starts a ladder toward testing Penrose&#x27;s collapse idea.</span>
+    </a>
+    </div>
   </section>
-
-  <footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-tag-ai-html">👁 <span id="hits-notebook-tag-ai-html-n">—</span> views</span>
+  <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-two-nanometres-of-nothing-html">👁 <span id="hits-notebook-two-nanometres-of-nothing-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Ftag-ai.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Ftwo-nanometres-of-nothing.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-notebook-tag-ai-html-n");
+      var n = document.getElementById("hits-notebook-two-nanometres-of-nothing-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-notebook-tag-ai-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-notebook-two-nanometres-of-nothing-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-notebook-tag-ai-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-notebook-two-nanometres-of-nothing-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>
