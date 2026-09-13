@@ -100,6 +100,37 @@ different layers of the same phone, and turning on one doesn't touch the other. 
 security documentation keeps that boundary explicit for exactly this reason: it's the layer where a
 legal-process question and a stolen-or-seized-device question stop being the same question.</p>
 
+<h2>What actually helps against the thing this video is about</h2>
+
+<p>Advanced Data Protection answers a legal-process question. A physical-possession question —
+the one this video is actually about — has a different, shorter list of answers, and Apple has
+shipped real pieces of it. This is the "other thing" worth turning on, alongside ADP rather than
+instead of it.</p>
+
+<p><strong>Lockdown Mode</strong> (Settings → Privacy & Security → Lockdown Mode) is Apple's own
+opt-in answer to exactly this threat class: it drastically narrows what the device will process
+from outside sources, which is where exploit chains like the one Azimuth built typically get their
+first foothold. It shipped in 2022 for journalists, dissidents and executives who consider
+themselves individually targeted, but the switch doesn't check anyone's job title.</p>
+
+<p><strong>A long alphanumeric passcode</strong> (Settings → Face ID & Passcode → Change Passcode →
+Custom Alphanumeric Code) replaces the six-digit PIN most people leave in place by default. Nearly
+every publicized extraction still depends, at some stage, on brute-forcing the passcode once an
+exploit chain has gotten a tool past the ten-tries data wipe — a six-digit PIN is a million
+combinations to grind through; a real passcode is enough that the exploit chain goes stale before
+it finishes.</p>
+
+<p><strong>Stolen Device Protection</strong> — on by default since iOS 17.3, visible at Settings →
+Face ID & Passcode — adds a Face ID check and a one-hour delay before anything security-sensitive
+changes (viewing a saved password, turning off Find My, adding a new face to Face ID) when the
+phone is away from a location it recognizes as familiar. It's built for a stolen, already-unlocked
+phone in someone else's hands, a different scenario from a seized phone in a lab, but it's real
+and it's already on.</p>
+
+<p>And the one that costs nothing: <strong>reboot the phone</strong> before any encounter where it
+might leave your hands — a border crossing, a stop, a repair counter. A phone that's been off comes
+back in BFU, which is the state that blunts every method described above.</p>
+
 <h2>The example that shows the ceiling is higher than "unlock the phone"</h2>
 
 <p>A case that surfaced this April is a cleaner illustration than any hypothetical. In a Texas
@@ -120,29 +151,35 @@ cipher.</p>
 <p>None of the above is really about phones-in-general so much as it's about what a phone is: a
 networked, general-purpose computer that a company you don't work for keeps updating, and that is
 built, on purpose, to keep working after you've unlocked it once. That's a fine trade for almost
-everything people use a phone for. It's a bad fit for a Bitcoin private key or seed phrase, which
-is exactly why hardware signers — devices whose entire design brief is to generate and hold key
-material somewhere that is never networked, never runs a general-purpose OS, and never has
-someone else's forensic tooling as an intended user — exist as a separate product category rather
-than a feature inside a wallet app. The BFU/AFU distinction above doesn't have an equivalent for
-a hardware signer, because the key material was never on a device that gets unlocked by anything
-other than the physical confirmation button on the signer itself. That's the specific property
-this whole class of attack is built around not having.</p>
+everything people use a phone for. It's a bad fit for a Bitcoin private key or seed phrase.</p>
 
-<h2>Where I could be wrong</h2>
+<p>Which raises a natural next question: can a tool like this read Apple's own Passwords app — the
+thing that holds your actual saved passwords, and where some people, against every piece of
+guidance from every hardware-wallet maker, keep a seed phrase typed in as a password note. The
+honest answer is a documented "it depends," and I can't fully close the gap. The ordinary contents
+of the iOS keychain — which is what the Passwords app is a front end for — are reported to come out
+whole once a tool has a full file-system image of an unlocked device; Cellebrite's own product
+documentation names Keychain extraction as a supported feature of its Physical Analyzer software,
+and independent forensic researchers have published the mechanics of it for
+years.<sup><a href="#src-7">[7]</a></sup><sup><a href="#src-8">[8]</a></sup> Separately, keychain
+entries that carry a biometric access-control flag are reported to resist this, because unwrapping
+them takes a live round-trip through the Secure Enclave at the moment of reading, not just an
+unlocked device — something a static copy of the file system can't produce on its
+own.<sup><a href="#src-7">[7]</a></sup> Which of those two categories an entry in the Passwords app
+actually falls into isn't something I can confirm from a source I trust, and the video doesn't
+settle it either, since I still can't load it myself to see what's on screen. That's a genuinely
+open question, and I'd rather leave it open than guess at an answer to sound complete.</p>
 
-<p>The video is embedded above so you can judge it yourself; I haven't been able to independently
-confirm the device or iOS version in that specific clip, and I'd correct this entry if it turns
-out to show something other than a standard AFU extraction. "Smartphones are
-getting more exploitable, not smarter" is a real tension but I don't think it's quite right as
-stated: base OS security has objectively improved on a fairly steep curve — the Secure Enclave,
-BlastDoor's message-parsing sandbox, pointer authentication, Lockdown Mode — and each of those
-closed real, previously-used attack classes. What's grown alongside it is the commercial market for
-finding what's left: better-funded, more numerous vendors chasing a narrower and narrower set of
-remaining bugs. Both things are true at once, and "your phone is less safe than it used to be" and
-"your phone is harder to break into than it used to be" are both defensible readings of the same
-decade, which is exactly the kind of situation this notebook exists to sit with rather than
-resolve into one headline.</p>
+<p>What that uncertainty argues for isn't "hope it's the protected category" — it's the same answer
+either way. A seed phrase shouldn't exist as an entry in any app on a general-purpose phone,
+Passwords app included, regardless of how that app protects it. That's the entire reason hardware
+signers — devices whose only job is holding key material somewhere that never runs a
+general-purpose OS and never has anyone else's forensic tooling as an intended user — exist as
+separate hardware rather than a feature inside a wallet app. A hardware signer has no BFU/AFU
+distinction to worry about, because the key material was never on a device unlocked by anything
+but the physical button on the signer itself. That's the property this entire class of attack is
+built around not having, and it's the one place in this entry I'm not hedging: don't keep it on
+the phone.</p>
 
 <h2>Sources</h2>
 <ol class="sources">
@@ -152,5 +189,7 @@ resolve into one headline.</p>
   <li id="src-4">Signal. <i>Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app's perspective.</i> 21 April 2021. <a href="https://signal.org/blog/cellebrite-vulnerabilities/" rel="noopener" target="_blank">signal.org</a></li>
   <li id="src-5">Apple. <i>Apple advances user security with powerful new data protections.</i> 7 December 2022. <a href="https://www.apple.com/newsroom/2022/12/apple-advances-user-security-with-powerful-new-data-protections/" rel="noopener" target="_blank">apple.com</a></li>
   <li id="src-6">Security Affairs. <i>iPhone forensics expose Signal messages after app removal in U.S. case.</i> 13 April 2026. <a href="https://securityaffairs.com/190740/security/iphone-forensics-expose-signal-messages-after-app-removal-in-u-s-case.html" rel="noopener" target="_blank">securityaffairs.com</a></li>
+  <li id="src-7">ElcomSoft. <i>Extracting and Decrypting iOS Keychain: Physical, Logical and Cloud Options Explored.</i> August 2020. <a href="https://blog.elcomsoft.com/2020/08/extracting-and-decrypting-ios-keychain-physical-logical-and-cloud-options-explored/" rel="noopener" target="_blank">blog.elcomsoft.com</a></li>
+  <li id="src-8">Cellebrite. <i>How to Use the Keychain in Cellebrite Physical Analyzer.</i> Product documentation. <a href="https://cellebrite.com/en/cellebrite-software/cellebrite-physical-analyzer/how-to-use-the-keychain-in-cellebrite-physical-analyzer/" rel="noopener" target="_blank">cellebrite.com</a></li>
   <li>@BitcoinNewsCom on X. The video that prompted this entry. <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464" rel="noopener" target="_blank">x.com/BitcoinNewsCom/status/2098825343721230464</a></li>
 </ol>
