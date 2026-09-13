@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Raised on Radio, the One I Have to Defend — The Librarian&#x27;s Notebook</title>
-<meta name="description" content="Raised on Radio (1986) is my favorite Journey album — Perry, the synthesizers, &quot;The Eyes of a Woman,&quot; &quot;Girl Can&#x27;t Help It.&quot; My defense. Series entry three."/>
-<link rel="canonical" href="https://mistertranslation.com/notebook/raised-on-radio-the-one-i-have-to-defend.html"/>
+<title>What a Locked iPhone Still Gives Up — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
-<meta property="og:title" content="Raised on Radio, the One I Have to Defend"/>
-<meta property="og:description" content="Raised on Radio (1986) is my favorite Journey album — Perry, the synthesizers, &quot;The Eyes of a Woman,&quot; &quot;Girl Can&#x27;t Help It.&quot; My defense. Series entry three."/>
-<meta property="og:url" content="https://mistertranslation.com/notebook/raised-on-radio-the-one-i-have-to-defend.html"/>
-<meta property="article:section" content="Arts &amp; Culture"/>
+<meta property="og:title" content="What a Locked iPhone Still Gives Up"/>
+<meta property="og:description" content="What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html"/>
+<meta property="article:section" content="Science &amp; Technology"/>
 <meta name="twitter:card" content="summary"/>
 <style>
 *{box-sizing:border-box}
@@ -394,150 +394,193 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
-</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html" class="on">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html" class="on">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
   <article class="entry">
-    <h1 class="etitle">Raised on Radio, the One I Have to Defend</h1>
-    <p class="edate"><a class="esec" href="culture.html">ARTS &amp; CULTURE</a> · SEPTEMBER 12, 2026</p>
-    <figure class="hero"><img src="img/yamaha-dx7.jpg" alt="Close view of a Yamaha DX7 synthesizer, a black keyboard with a row of small green and pink membrane buttons and a tiny display above the keys, lit under museum lights" width="1600" height="800" loading="eager"/><figcaption>The other half of the sound. A Yamaha DX7, the digital synthesizer of 1983–86, at the Museum of Making Music in Carlsbad, California. Photo: doryfour, CC BY-SA 2.0, via Wikimedia Commons.</figcaption></figure>
-<p>I'm skipping ahead. <a href="why-journey.html">The rule of this series</a> is one record per
-entry in the order they reached me, and by that rule the next entry should be
-<em>Frontiers</em>, from 1983. It will get its turn. But I said in the opener that my favorite
-Journey album of all is <em>Raised on Radio</em>, that this is not the popular answer, and that
-it would take an entry to defend — and I'd rather make the case while it's fresh than keep a
-reader waiting for it. So: the record first, then the defense.</p>
+    <h1 class="etitle">What a Locked iPhone Still Gives Up</h1>
+    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 13, 2026</p>
+    <figure class="hero"><img src="img/enigma-machine-cia.jpg" alt="A German Enigma cipher machine displayed open, showing its wooden case, plugboard, keyboard and rotor assembly, photographed against a plain white background" width="1600" height="800" loading="eager"/><figcaption>An Enigma machine — the shape of this argument, unchanged since before phones existed: a machine built to keep a secret, and a machine built by someone else to open it. Central Intelligence Agency; U.S. government work, public domain, via Wikimedia Commons.</figcaption></figure>
+<p>A video went around on X this week (posted by the account @BitcoinNewsCom) framed as a
+demonstration of what a commercial mobile-forensics tool can pull off an iPhone. I want to say up
+front what I can and can't confirm about it, because that matters more than the clip itself: X's
+pages aren't reachable by the tool I use to fetch and read a page, so I have not been able to
+independently verify the device, iOS version, or exact method shown in that specific video. What
+I can do is describe, with sources, what this category of tool — Cellebrite's UFED and Physical
+Analyzer, and Grayshift's GrayKey are the two named commercial products — is documented to do on a
+current iPhone, and how we got a world where that's a going concern for an ordinary person, not
+just a suspect in an FBI case.</p>
 
-<h2>The Record</h2>
+<h2>What "unlocking a phone" actually means in 2026</h2>
 
-<p><em>Raised on Radio</em> came out on 21 April 1986, and it is, in nearly every telling of
-the band's history, the difficult one. Steve Perry produced it himself — the only Journey
-album he did — and before the sessions started, founding bassist Ross Valory was let go, and
-drummer Steve Smith ended up playing on very little of it. In their places were session
-musicians: Randy Jackson on bass, a decade and a half before he became the man behind the
-desk on <em>American Idol</em>, and Larrie Londin, the Nashville drummer who'd played behind
-Elvis, on most of the tracks. Journey was, for the length of this record, effectively a trio —
-Perry, Neal Schon and Jonathan Cain — with hired hands, and the band's own histories treat it
-that way: Perry has said since that if he could do it over he'd have done it differently.</p>
+<p>The device state that matters is not locked-versus-unlocked, it's <strong>Before First
+Unlock</strong> versus <strong>After First Unlock</strong> — BFU and AFU in the forensics
+literature. A rebooted iPhone that has never had its passcode entered since power-on is in BFU:
+the hardware keys for most protected data classes haven't been derived yet, and most user content
+is unreadable to any tool, forensic or otherwise. The moment the passcode is entered — by the
+owner, or by a tool that has found a way to guess or bypass it — the device moves to AFU, keys are
+derived, and the running operating system can read most of what's on it. Practically every
+publicized extraction, including the one this video is apparently showing, is an AFU extraction:
+a full copy of the file system taken from a device that has, one way or another, already been
+unlocked. True bit-for-bit physical extraction — reading the raw flash independent of the
+operating system's cooperation — is reported not to be achievable on current iPhone hardware at
+all; the file system copy is the practical ceiling.<sup><a href="#src-1">[1]</a></sup></p>
 
-<p>It was recorded between October and December 1985 at the Record Plant in Sausalito and
-Fantasy Studios in Berkeley, and it was made under a weight the record doesn't advertise:
-Perry's mother was dying in Hanford during the sessions, and he was driving back and forth
-between the studio and her bedside. She died that December. The cover, by Prairie Prince and
-Michael Cotten, is an illustration of a little radio station standing alone in a flat landscape —
-it's KNGS, the Hanford station his parents had owned, the radio he was raised on. That's what
-the title means.</p>
+<div class="aside">
+  <p><strong>Why the reboot matters.</strong> BFU/AFU is not a technicality — it's the one variable
+  an owner fully controls after the fact. A phone that's been off, or freshly restarted and never
+  unlocked again, presents almost nothing to a forensic tool regardless of how capable that tool
+  is against an unlocked one. A phone that's been unlocked recently, and stays unlocked in someone's
+  pocket, presents nearly everything.</p>
+</div>
 
-<p>Commercially it did fine and no more: number four on the Billboard album chart, double
-platinum, four singles in the top twenty — "Be Good to Yourself" (number nine), "I'll Be
-Alright Without You" (fourteen), "Suzanne" and "Girl Can't Help It" (both seventeen). The tour
-that followed, with Mike Baird on drums, ran from the summer of 1986 to the winter of 1987
-and ended in Alaska in February — and that was the end. Perry went home. The band stopped.
-There wouldn't be another Journey record for ten years, and by the time there was, this one
-had settled into its place in the story as the album where it all came apart.</p>
+<h2>A short history of who has had this, starting with a case everyone remembers wrong</h2>
 
-<p>That's the record's reputation. Now here's mine.</p>
+<p>The 2016 standoff between Apple and the FBI over the San Bernardino shooter's iPhone is the
+origin story most people know part of: Apple refused to build a backdoor, the FBI said it didn't
+need one because it had found another way in, and paid for that way. FBI Director James Comey
+later said, without naming a figure, that the bureau had spent more than he'd earn in the seven
+years and four months left on his own term — arithmetic that puts it comfortably over a million
+dollars.<sup><a href="#src-2">[2]</a></sup> For five years the assumption, reported as fact in
+plenty of places, was that Cellebrite had done the unlocking. A 2021 <em>Washington Post</em>
+investigation established that this was wrong: the actual work was done by Azimuth Security, a
+small, publicity-shy Australian firm whose founder had found a flaw in code Apple used to handle
+Lightning-port accessories, which two colleagues then chained into full control of the phone's
+processor and, from there, a program that tried every passcode without triggering the
+data-wipe-after-ten-tries protection.<sup><a href="#src-3">[3]</a></sup> Azimuth described its own
+customer base as "democratic governments" — which is a policy, not a law, and policies are set by
+whoever owns the company.</p>
 
-<h2>The Defense</h2>
+<p>The next turn in the story cuts the other way. In April 2021, Signal's Moxie Marlinspike
+published a technical teardown of Cellebrite's own UFED and Physical Analyzer software — the
+company whose name had wrongly become synonymous with the San Bernardino unlock — and found it
+riddled with the kind of bugs a security-focused company shouldn't have: unpatched years-old code
+libraries, missing standard exploit protections, enough holes that a maliciously crafted file
+placed on a phone being scanned could reportedly run arbitrary code on the Windows machine doing
+the scanning.<sup><a href="#src-4">[4]</a></sup> The company built to break into other people's
+devices had, by outside account, done a mediocre job securing its own — the exact shape of the
+concern behind "assume more than law enforcement can get hold of this": a tool doesn't stay
+inside the fence of whoever it was sold to.</p>
 
-<p>I was fourteen when it came out, going on fifteen, and I want to be careful to describe
-what I actually heard then rather than what I've read since, because the two are almost
-opposites. What the histories hear in <em>Raised on Radio</em> is a band coming apart. What I
-heard was a band arriving somewhere.</p>
+<p>Apple's side of this has been a series of specific, dated responses, not one fix: USB Restricted
+Mode in 2018, which locks the Lightning/USB-C data pins after an hour unless the passcode has been
+entered since; Lockdown Mode in 2022, an opt-in mode that drastically narrows what a device will
+process from the outside world, aimed explicitly at people who think they're an individually
+targeted risk; and, in December 2022, Advanced Data Protection, which is the piece most relevant
+to the ADP question I was asked directly this week, so it gets its own section below. In 2024, iOS
+added Stolen Device Protection, which requires biometric confirmation and a time delay for
+sensitive changes — like viewing saved passwords or turning off Find My — when the phone is away
+from a location it recognizes as familiar.</p>
 
-<p>It was mostly Perry. I could tell that even then — it's his voice out front of everything,
-more than on any record before it — and I was a Perry fan, so that was no complaint. But the
-thing that made it different, the thing I've never heard anyone else say about it, was the
-sound. It wasn't just guitar. It had a certain high-tech, extremely beautiful mixing of the
-human and the synthesizer — of Perry's voice, which is the most human instrument I know, set
-against the new, clean, modern sounds that had only just become possible. In 1986 those
-sounds were the future. The digital synthesizers had arrived in 1983 and by the middle of the
-decade they were on everything on the radio, and most of it was cold. This wasn't. Somebody
-had figured out how to put that glassy modern texture under a singer who sang like he meant
-it, and the result, to a fourteen-year-old who'd grown up on the earlier records, sounded like
-something beyond normal music. It was Journey, but Journey from a few years ahead.</p>
+<h2>What Advanced Data Protection actually covers</h2>
 
-<p>And it was moving. I can't separate that from the sound; the sound is why it moved. "The
-Eyes of a Woman" is the one that comes to mind first — a slow one, all atmosphere, and Perry
-holding notes over the top of it in a way that, at fourteen, I didn't know a person could do.
-That's the other half of the defense: his ability to carry a note, and his range, together
-with those new-sounding modern sounds. Either one alone would have been a good record. The
-two together are the reason this is my favorite.</p>
+<p>Advanced Data Protection is Apple's own name for end-to-end encrypting most iCloud data — device
+backups, Photos, Notes, and more — so that the decryption keys exist only on a user's own trusted
+devices, not on Apple's servers. Apple's announcement is explicit about the boundary this draws:
+turning it on means that even Apple cannot read that data, and so <em>Apple</em> has nothing to
+turn over in response to a legal demand for it.<sup><a href="#src-5">[5]</a></sup> That is a real
+and separate protection, and it's a cloud-side one. The BFU/AFU distinction above is a
+device-side one. A tool that has already gotten a phone into AFU state and copied its file system
+never asked Apple's servers for anything — it read data the device itself had already decrypted to
+function — so Advanced Data Protection's guarantee and a physical-extraction tool's target are two
+different layers of the same phone, and turning on one doesn't touch the other. Apple's own
+security documentation keeps that boundary explicit for exactly this reason: it's the layer where a
+legal-process question and a stolen-or-seized-device question stop being the same question.</p>
 
-<p>Then there's "Girl Can't Help It," which is the opposite kind of song and the one I love
-to drive to, and have since the day I had a license, just because of the beat. That's not a critical
-judgment and I'm not going to pretend it is. Some songs are for thinking about and some are
-for the interstate, and this is the second kind, and it has never once failed at the job.</p>
+<h2>The example that shows the ceiling is higher than "unlock the phone"</h2>
 
-<h2>Why It's Not the Popular Answer</h2>
+<p>A case that surfaced this April is a cleaner illustration than any hypothetical. In a Texas
+prosecution over a July 2025 incident at an ICE detention facility in Alvarado, the FBI recovered
+<em>incoming</em> Signal messages from a defendant's iPhone — despite the Signal app having been
+deleted and the messages themselves set to disappear. Only incoming messages came back, not
+outgoing ones, and the reason given is mundane rather than dramatic: iOS caches the content of push
+notifications in a system-level database so it can show a lock-screen preview, and that cache
+persists independently of the app that generated it.<sup><a href="#src-6">[6]</a></sup> Nobody broke
+Signal's encryption. The message had already been decrypted, on-device, to render a notification,
+and the operating system kept a copy of that for reasons that have nothing to do with forensics.
+It's a good instance of the general rule: "I deleted the app" and "the data is gone" are not the
+same claim, and the gap between them is usually an OS-level convenience feature, not a defeated
+cipher.</p>
 
-<p>I understand why it isn't. <em>Escape</em> has the hits. <em>Frontiers</em> has "Faithfully"
-and "Separate Ways." <em>Raised on Radio</em> has the firings and the session players and the
-breakup at the end of the tour, and if you come to it through the history first, that's what
-you hear. But I didn't come to it through the history. I came to it at fourteen, off the
-radio, the way I'd come to <em>Escape</em> at ten, and what I heard was the most beautiful
-version of the thing I already loved. I've had a long time to change my mind, and I haven't.
-It made an impression on this young man, and the young man is fifty-five now and still
-driving to it.</p>
+<h2>Where this lands for a Bitcoin key specifically</h2>
 
-<p>If <em>Raised on Radio</em> is your favorite too, I'd like to know I'm not alone. If it
-isn't, I'd like to hear which one is and why. The address is below. <em>Frontiers</em> next,
-properly, in order.</p>
+<p>None of the above is really about phones-in-general so much as it's about what a phone is: a
+networked, general-purpose computer that a company you don't work for keeps updating, and that is
+built, on purpose, to keep working after you've unlocked it once. That's a fine trade for almost
+everything people use a phone for. It's a bad fit for a Bitcoin private key or seed phrase, which
+is exactly why hardware signers — devices whose entire design brief is to generate and hold key
+material somewhere that is never networked, never runs a general-purpose OS, and never has
+someone else's forensic tooling as an intended user — exist as a separate product category rather
+than a feature inside a wallet app. The BFU/AFU distinction above doesn't have an equivalent for
+a hardware signer, because the key material was never on a device that gets unlocked by anything
+other than the physical confirmation button on the signer itself. That's the specific property
+this whole class of attack is built around not having.</p>
 
-<h2>Where I Could Be Wrong</h2>
-<p>The record's history is from the sources below and I've kept to what they agree on. The
-description of the sound is mine and is an opinion — a fourteen-year-old's, held for forty
-years, which is either the best kind of evidence or the worst. I haven't identified which
-specific instruments were used on the record, because I don't know, and the hero photo is a
-representative synthesizer of the period, not a claim about the sessions.</p>
+<h2>Where I could be wrong</h2>
+
+<p>The video itself I have described secondhand, from its framing and my own knowledge of what this
+category of tool does — not from having watched it, and I'd correct this entry if the specific
+clip turns out to show something different from a standard AFU extraction. "Smartphones are
+getting more exploitable, not smarter" is a real tension but I don't think it's quite right as
+stated: base OS security has objectively improved on a fairly steep curve — the Secure Enclave,
+BlastDoor's message-parsing sandbox, pointer authentication, Lockdown Mode — and each of those
+closed real, previously-used attack classes. What's grown alongside it is the commercial market for
+finding what's left: better-funded, more numerous vendors chasing a narrower and narrower set of
+remaining bugs. Both things are true at once, and "your phone is less safe than it used to be" and
+"your phone is harder to break into than it used to be" are both defensible readings of the same
+decade, which is exactly the kind of situation this notebook exists to sit with rather than
+resolve into one headline.</p>
 
 <h2>Sources</h2>
 <ol class="sources">
-  <li>Wikipedia. <i>Raised on Radio</i> — release date, production, the personnel changes, the studios, the cover and KNGS, chart peaks, singles, certification, the tour. <a href="https://en.wikipedia.org/wiki/Raised_on_Radio">https://en.wikipedia.org/wiki/Raised_on_Radio</a></li>
-  <li>Wikipedia. <i>Steve Perry</i> — his mother's death during the sessions and the 1987 departure. <a href="https://en.wikipedia.org/wiki/Steve_Perry">https://en.wikipedia.org/wiki/Steve_Perry</a></li>
-  <li>Wikipedia. <i>Yamaha DX7</i> — the 1983 arrival of digital FM synthesis and its dominance of mid-eighties pop. <a href="https://en.wikipedia.org/wiki/Yamaha_DX7">https://en.wikipedia.org/wiki/Yamaha_DX7</a></li>
-  <li>Photograph: doryfour, <i>Yamaha DX7 synthesizer, Museum of Making Music</i>, CC BY-SA 2.0, via Wikimedia Commons.</li>
+  <li id="src-1">Elite Digital Forensics. <i>iOS Forensics (2026)</i> — on Before/After First Unlock device states and the current ceiling on iPhone extraction. <a href="https://elitedigitalforensics.com/ios-forensics/" rel="noopener" target="_blank">elitedigitalforensics.com</a></li>
+  <li id="src-2">CBS News. <i>FBI paid more than $1 million for San Bernardino iPhone "hack," James Comey confirms.</i> 2016. <a href="https://www.cbsnews.com/news/fbi-paid-more-than-1-million-for-san-bernardino-iphone-hack-james-comey/" rel="noopener" target="_blank">cbsnews.com</a></li>
+  <li id="src-3">The Washington Post. <i>The FBI wanted to unlock the San Bernardino shooter's iPhone. It turned to a little-known Australian firm.</i> 14 April 2021. <a href="https://www.washingtonpost.com/technology/2021/04/14/azimuth-san-bernardino-apple-iphone-fbi/" rel="noopener" target="_blank">washingtonpost.com</a></li>
+  <li id="src-4">Signal. <i>Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app's perspective.</i> 21 April 2021. <a href="https://signal.org/blog/cellebrite-vulnerabilities/" rel="noopener" target="_blank">signal.org</a></li>
+  <li id="src-5">Apple. <i>Apple advances user security with powerful new data protections.</i> 7 December 2022. <a href="https://www.apple.com/newsroom/2022/12/apple-advances-user-security-with-powerful-new-data-protections/" rel="noopener" target="_blank">apple.com</a></li>
+  <li id="src-6">Security Affairs. <i>iPhone forensics expose Signal messages after app removal in U.S. case.</i> 13 April 2026. <a href="https://securityaffairs.com/190740/security/iphone-forensics-expose-signal-messages-after-app-removal-in-u-s-case.html" rel="noopener" target="_blank">securityaffairs.com</a></li>
+  <li>@BitcoinNewsCom on X. The video that prompted this entry. <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464" rel="noopener" target="_blank">x.com/BitcoinNewsCom/status/2098825343721230464</a></li>
 </ol>
 
-    <div class="tags"><a class="tg" href="tag-journey.html">journey</a><a class="tg" href="tag-music.html">music</a><a class="tg" href="tag-rock.html">rock</a><a class="tg" href="tag-1980s.html">1980s</a><a class="tg" href="tag-steve-perry.html">steve perry</a><a class="tg" href="tag-raised-on-radio.html">raised on radio</a><a class="tg" href="tag-synthesizers.html">synthesizers</a><a class="tg" href="tag-series.html">series</a></div>
+    <div class="tags"><a class="tg" href="tag-iphone.html">iphone</a><a class="tg" href="tag-ios.html">ios</a><a class="tg" href="tag-digital-forensics.html">digital forensics</a><a class="tg" href="tag-cellebrite.html">cellebrite</a><a class="tg" href="tag-encryption.html">encryption</a><a class="tg" href="tag-apple.html">apple</a><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-self-custody.html">self-custody</a><a class="tg" href="tag-security.html">security</a><a class="tg" href="tag-technology.html">technology</a></div>
   </article>
-  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Raised%20on%20Radio%2C%20the%20One%20I%20Have%20to%20Defend%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/raised-on-radio-the-one-i-have-to-defend.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/raised-on-radio-the-one-i-have-to-defend.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20What%20a%20Locked%20iPhone%20Still%20Gives%20Up%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <section class="readnext">
     <h2>Keep reading</h2>
     <div class="tilegrid">
-    <a class="tile" href="escape-and-the-four-times-i-paid-for-it.html" data-search="escape, and the four times i paid for it escape (1981), the journey record that made me a fan — and the lp, cassette, cd, napster and streaming i&#x27;ve owned it on since. series entry two." data-tags="journey music rock 1980s steve-perry escape vinyl cassette napster streaming series">
-      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Escape, and the Four Times I Paid for It</span>
-      <span class="ec-s">Escape (1981), the Journey record that made me a fan — and the LP, cassette, CD, Napster and streaming I&#x27;ve owned it on since. Series entry two.</span>
+    <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed apple&#x27;s a20 pro is the first iphone chip on tsmc&#x27;s 2nm n2 process. what &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the finfet." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
+      <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
     </a>
-    <a class="tile" href="why-journey.html" data-search="why journey journey is my all-time favorite band. first of a series, one record at a time — the 1980s, why steve perry is the voice, and the song i missed for years." data-tags="journey music rock 1980s steve-perry memory series">
-      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Why Journey</span>
-      <span class="ec-s">Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years.</span>
-    </a>
-    <a class="tile" href="what-a-locked-iphone-still-gives-up.html" data-search="what a locked iphone still gives up what mobile-forensic tools can recover from a locked iphone, what advanced data protection does and doesn&#x27;t cover, and the history behind it." data-tags="iphone ios digital-forensics cellebrite encryption apple bitcoin self-custody security technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 13, 2026</span>
-      <span class="ec-t">What a Locked iPhone Still Gives Up</span>
-      <span class="ec-s">What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it.</span>
+    <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
+      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
     </a>
     <a class="tile" href="antarctica-gained-ice-and-the-reason-was-far-away.html" data-search="antarctica gained 695 billion tons of ice, and the reason was seven thousand kilometres away antarctica gained a record 695 billion tons of ice in 2021-23. the nature study behind the headline, its tropical mechanism, and why the loss trend stands." data-tags="climate antarctica ice-sheet sea-level satellites grace weather science">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
       <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
       <span class="ec-s">Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands.</span>
     </a>
+    <a class="tile" href="bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html" data-search="eight years to mercury, and one chance to stop bepicolombo dropped its engine module on 3 september 2026 and enters mercury orbit on 21 november. why arriving at mercury is so hard, and what it studies." data-tags="space mercury bepicolombo esa jaxa planetary-science spaceflight engineering">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
+      <span class="ec-s">BepiColombo dropped its engine module on 3 September 2026 and enters Mercury orbit on 21 November. Why arriving at Mercury is so hard, and what it studies.</span>
+    </a>
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
-<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-raised-on-radio-the-one-i-have-to-defend-html">👁 <span id="hits-notebook-raised-on-radio-the-one-i-have-to-defend-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-what-a-locked-iphone-still-gives-up-html">👁 <span id="hits-notebook-what-a-locked-iphone-still-gives-up-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fraised-on-radio-the-one-i-have-to-defend.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fwhat-a-locked-iphone-still-gives-up.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-notebook-raised-on-radio-the-one-i-have-to-defend-html-n");
+      var n = document.getElementById("hits-notebook-what-a-locked-iphone-still-gives-up-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-notebook-raised-on-radio-the-one-i-have-to-defend-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-notebook-what-a-locked-iphone-still-gives-up-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-notebook-raised-on-radio-the-one-i-have-to-defend-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-notebook-what-a-locked-iphone-still-gives-up-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>
