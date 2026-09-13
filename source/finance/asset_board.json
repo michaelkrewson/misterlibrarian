@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13 18:45 UTC",
+ "generated": "2026-09-13 21:20 UTC",
  "assets": [
   {
    "name": "Gold",
@@ -52,10 +52,11 @@
    "country": "🇸🇦",
    "emoji": null,
    "domain": "aramco.com",
-   "market_cap": 6221858161895.37,
-   "price": 25.719999313354492,
+   "market_cap": 6221858328000.0,
+   "price": 25.72,
    "change_pct": -1.38,
    "spark": [
+    26.1427,
     26.2415,
     26.7746,
     26.5574,
@@ -84,8 +85,7 @@
     25.96,
     26.06,
     26.04,
-    26.14,
-    25.72
+    26.14
    ],
    "rank": 2
   },
@@ -492,9 +492,9 @@
    "country": "🌐",
    "emoji": "₿",
    "domain": null,
-   "market_cap": 1553434336379.377,
-   "price": 77347.28125,
-   "change_pct": 0.1,
+   "market_cap": 1553854547217.2852,
+   "price": 77368.0234375,
+   "change_pct": 0.13,
    "spark": [
     63024.3203,
     62818.6523,
@@ -525,7 +525,7 @@
     76568.125,
     77173.7969,
     77270.4688,
-    77347.2812
+    77368.0234
    ],
    "rank": 12
   },
@@ -799,7 +799,7 @@
  "constants": {
   "gold_tonnes": 216265,
   "silver_tonnes": 1750000,
-  "btc_circulating": 20083890.62,
-  "btc_block_height": 966860
+  "btc_circulating": 20083937.5,
+  "btc_block_height": 966875
  }
 }
