@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13 05:53 UTC",
+ "generated": "2026-09-13 16:01 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-11",
@@ -131,9 +131,9 @@
     "flag": "🇧🇷",
     "currency": "BRL",
     "source": "Banco Central do Brasil SGS API — série 1788 \"Base monetária restrita\" for M0 (the Bank's own definition: moeda em circulação e as reservas bancárias, currency in circulation + bank reserves — a single ready-made series, unlike Canada/Switzerland's two-series constructions) + Meios de pagamento M1/M2/M3 (thousands of reais)",
-    "m0": 432.551687,
-    "m0_date": "2026-07-01",
-    "usd_m0": 84.63482957658292,
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
     "m1": 647.172339,
     "m1_date": "2026-07-01",
     "usd_m1": 126.62838283634655,
@@ -624,7 +624,7 @@
   "total_usd": 3799876796971.315,
   "world_official_tonnes_estimate": 36600,
   "price_usd_oz": 4408.89990234375,
-  "price_as_of": "2026-09-13 05:51 UTC",
+  "price_as_of": "2026-09-13 15:59 UTC",
   "world_market_value_usd": 30655439082963.457,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 77298.9921875,
-  "market_cap_usd": 1552445421327.7832,
+  "price_usd": 77101.84375,
+  "market_cap_usd": 1548500660267.638,
   "btc_rank": 12,
-  "volatility_pct": 36.728024294828074,
-  "turnover_usd": 14743254269.158861,
-  "broad_yoy_pct": 0.8183898402400213,
+  "volatility_pct": 36.727868414349906,
+  "turnover_usd": 15773389526.462074,
+  "broad_yoy_pct": 0.8183820723182045,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2022,7 +2022,7 @@
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1552445421327.7832,
+    "usd": 1548500660267.638,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
