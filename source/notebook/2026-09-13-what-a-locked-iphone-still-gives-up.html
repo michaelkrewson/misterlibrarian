@@ -11,18 +11,46 @@ hero_credit: An Enigma machine — the shape of this argument, unchanged since b
 
 <p>The video below went around on X this week, posted by the account Bitcoin News, captioned
 "everything law enforcement can see when they get physical access to your phone — better not be
-keeping a seed phrase on there." It's a demonstration of a category of commercial mobile-forensics
-tool — Cellebrite's UFED and Physical Analyzer, and Grayshift's GrayKey are the two named products
-in that category — extracting data off an iPhone. I haven't been able to independently verify the
-specific device or iOS version in this particular clip, so treat that part as the account's claim,
-not mine; what follows below it is sourced, and is about the documented capability of this category
-of tool in general, not this one video.</p>
+keeping a seed phrase on there." The clip itself is a re-post: it's watermarked throughout with an
+Instagram handle, @khanjicyber, which appears to be the actual creator, part one of a two-part
+series. Having now watched the whole thing frame by frame, I can say plainly what it shows: a
+demonstration of two named, real forensic tools — Magnet Forensics' AXIOM (the "License: Axiom
+Essentials (Dongle)" watermark and the "Integrate with Magnet One" case screen are both visible
+on screen) run against an unlocked Google Pixel 6, and iLEAPP, a free, open-source parser, run
+against an iPhone's iTunes backup. Both are named further down, with what they actually surfaced.</p>
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Everything law enforcement can see when they get physical access to your phone.<br><br>Better not be keeping a seed phrase on there. <a href="https://t.co/0f2CXQSqv5">pic.twitter.com/0f2CXQSqv5</a></p>&mdash; Bitcoin News (@BitcoinNewsCom) <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464?ref_src=twsrc%5Etfw">September 12, 2026</a></blockquote>
 <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
-<p>How we got a world where that's a going concern for an ordinary person, and not just a suspect
-in an FBI case:</p>
+<h2>What's actually on screen</h2>
+
+<p>The first tool is <strong>Magnet AXIOM</strong>, a commercial forensic suite in the same
+category as Cellebrite's better-known UFED and Physical Analyzer.<sup><a href="#src-1">[1]</a></sup>
+Before any device is touched, the case-setup screen's "Case type" dropdown is worth pausing on: the
+options scrolled past on screen include Major Crimes, Border Security, Child Exploitation and
+Counter-Terrorism, but also Civil Case or Investigation, Data Exfiltration/IP Theft, Fraud, HR/
+Internal Investigation, Policy Violation, Probation/Parole Violation and Wrongful Termination —
+categories with nothing to do with law enforcement at all. The imaging step against the Pixel 6
+lists "Confirm the device is unlocked" as a required step before "Running ADB backup" — the
+demonstration is an AFU extraction, exactly the category described above, not some novel way
+around the passcode. Once the image finishes, AXIOM's results are organized into a category tree,
+and two of its labelled branches are <strong>Passwords and Tokens (3 matches)</strong> and
+<strong>User Accounts (4 matches)</strong> — named, counted categories, sitting in the same list as
+Communication, Media, Documents and Location & Travel. The video doesn't open that category to show
+what the three items actually are, so I can't tell you whether they're Wi-Fi keys, saved site
+logins or something else — but the category existing, with matches in it, is no longer something
+I'm inferring from vendor literature. It's on screen.</p>
+
+<p>The second half of the video switches to <strong>iLEAPP</strong> — iOS Logs, Events, and
+Properties Parser — run against what its own output labels an iTunes_Backup of an iPhone. iLEAPP
+is free and its source code is public.<sup><a href="#src-2">[2]</a></sup> No dongle, no license,
+no vetted customer list: anyone who can get hold of an iPhone's backup file can run it. What comes
+out, in this demonstration: a Bluetooth-LE report listing 43 nearby devices the phone had logged;
+a Safari Tabs report recovering closed and private tabs, not just open ones; a Safari search-terms
+history; calendar entries; recovered "trashed" (deleted) photos, including their Live Photo
+component; and — the one worth dwelling on — a Notes entry, synced via iCloud, titled
+<em>Passwords</em>, with the snippet and full content both showing a plaintext password in the
+clear. iOS Notes carries no keychain protection at all; a note is a note, and it came back whole.</p>
 
 <h2>What "unlocking a phone" actually means in 2026</h2>
 
@@ -33,11 +61,11 @@ the hardware keys for most protected data classes haven't been derived yet, and 
 is unreadable to any tool, forensic or otherwise. The moment the passcode is entered — by the
 owner, or by a tool that has found a way to guess or bypass it — the device moves to AFU, keys are
 derived, and the running operating system can read most of what's on it. Practically every
-publicized extraction, including the one this video is apparently showing, is an AFU extraction:
+publicized extraction, including both tools in the video above, is an AFU extraction:
 a full copy of the file system taken from a device that has, one way or another, already been
 unlocked. True bit-for-bit physical extraction — reading the raw flash independent of the
 operating system's cooperation — is reported not to be achievable on current iPhone hardware at
-all; the file system copy is the practical ceiling.<sup><a href="#src-1">[1]</a></sup></p>
+all; the file system copy is the practical ceiling.<sup><a href="#src-3">[3]</a></sup></p>
 
 <div class="aside">
   <p><strong>Why the reboot matters.</strong> BFU/AFU is not a technicality — it's the one variable
@@ -54,13 +82,13 @@ origin story most people know part of: Apple refused to build a backdoor, the FB
 need one because it had found another way in, and paid for that way. FBI Director James Comey
 later said, without naming a figure, that the bureau had spent more than he'd earn in the seven
 years and four months left on his own term — arithmetic that puts it comfortably over a million
-dollars.<sup><a href="#src-2">[2]</a></sup> For five years the assumption, reported as fact in
+dollars.<sup><a href="#src-4">[4]</a></sup> For five years the assumption, reported as fact in
 plenty of places, was that Cellebrite had done the unlocking. A 2021 <em>Washington Post</em>
 investigation established that this was wrong: the actual work was done by Azimuth Security, a
 small, publicity-shy Australian firm whose founder had found a flaw in code Apple used to handle
 Lightning-port accessories, which two colleagues then chained into full control of the phone's
 processor and, from there, a program that tried every passcode without triggering the
-data-wipe-after-ten-tries protection.<sup><a href="#src-3">[3]</a></sup> Azimuth described its own
+data-wipe-after-ten-tries protection.<sup><a href="#src-5">[5]</a></sup> Azimuth described its own
 customer base as "democratic governments" — which is a policy, not a law, and policies are set by
 whoever owns the company.</p>
 
@@ -70,7 +98,7 @@ company whose name had wrongly become synonymous with the San Bernardino unlock 
 riddled with the kind of bugs a security-focused company shouldn't have: unpatched years-old code
 libraries, missing standard exploit protections, enough holes that a maliciously crafted file
 placed on a phone being scanned could reportedly run arbitrary code on the Windows machine doing
-the scanning.<sup><a href="#src-4">[4]</a></sup> The company built to break into other people's
+the scanning.<sup><a href="#src-6">[6]</a></sup> The company built to break into other people's
 devices had, by outside account, done a mediocre job securing its own — the exact shape of the
 concern behind "assume more than law enforcement can get hold of this": a tool doesn't stay
 inside the fence of whoever it was sold to.</p>
@@ -91,7 +119,7 @@ from a location it recognizes as familiar.</p>
 backups, Photos, Notes, and more — so that the decryption keys exist only on a user's own trusted
 devices, not on Apple's servers. Apple's announcement is explicit about the boundary this draws:
 turning it on means that even Apple cannot read that data, and so <em>Apple</em> has nothing to
-turn over in response to a legal demand for it.<sup><a href="#src-5">[5]</a></sup> That is a real
+turn over in response to a legal demand for it.<sup><a href="#src-7">[7]</a></sup> That is a real
 and separate protection, and it's a cloud-side one. The BFU/AFU distinction above is a
 device-side one. A tool that has already gotten a phone into AFU state and copied its file system
 never asked Apple's servers for anything — it read data the device itself had already decrypted to
@@ -139,7 +167,7 @@ prosecution over a July 2025 incident at an ICE detention facility in Alvarado, 
 deleted and the messages themselves set to disappear. Only incoming messages came back, not
 outgoing ones, and the reason given is mundane rather than dramatic: iOS caches the content of push
 notifications in a system-level database so it can show a lock-screen preview, and that cache
-persists independently of the app that generated it.<sup><a href="#src-6">[6]</a></sup> Nobody broke
+persists independently of the app that generated it.<sup><a href="#src-8">[8]</a></sup> Nobody broke
 Signal's encryption. The message had already been decrypted, on-device, to render a notification,
 and the operating system kept a copy of that for reasons that have nothing to do with forensics.
 It's a good instance of the general rule: "I deleted the app" and "the data is gone" are not the
@@ -156,19 +184,19 @@ everything people use a phone for. It's a bad fit for a Bitcoin private key or s
 <p>Which raises a natural next question: can a tool like this read Apple's own Passwords app — the
 thing that holds your actual saved passwords, and where some people, against every piece of
 guidance from every hardware-wallet maker, keep a seed phrase typed in as a password note. The
-honest answer is a documented "it depends," and I can't fully close the gap. The ordinary contents
-of the iOS keychain — which is what the Passwords app is a front end for — are reported to come out
-whole once a tool has a full file-system image of an unlocked device; Cellebrite's own product
-documentation names Keychain extraction as a supported feature of its Physical Analyzer software,
-and independent forensic researchers have published the mechanics of it for
-years.<sup><a href="#src-7">[7]</a></sup><sup><a href="#src-8">[8]</a></sup> Separately, keychain
-entries that carry a biometric access-control flag are reported to resist this, because unwrapping
-them takes a live round-trip through the Secure Enclave at the moment of reading, not just an
-unlocked device — something a static copy of the file system can't produce on its
-own.<sup><a href="#src-7">[7]</a></sup> Which of those two categories an entry in the Passwords app
-actually falls into isn't something I can confirm from a source I trust, and the video doesn't
-settle it either, since I still can't load it myself to see what's on screen. That's a genuinely
-open question, and I'd rather leave it open than guess at an answer to sound complete.</p>
+video doesn't show that specific app being opened, so I can't point to it on screen. What it shows
+instead answers the broader question just as directly: AXIOM's own results tree, run against the
+Pixel 6, labels a category <strong>Passwords and Tokens</strong> with matches in it — three, in
+this case — sitting next to <strong>User Accounts</strong> with four more. And on the iPhone side,
+iLEAPP pulled an iCloud-synced Notes entry, titled outright <em>Passwords</em>, with a plaintext
+password sitting in both the list snippet and the full note body. Neither of those is the Passwords
+app specifically, and I can't tell you whether a true Keychain-backed, biometric-gated entry would
+have come out the same way — independent research on iOS Keychain extraction says items with a
+biometric access-control flag resist this, because unwrapping them needs a live round-trip through
+the Secure Enclave at read time, not just an unlocked device.<sup><a href="#src-9">[9]</a></sup>
+What the video removes is the need to guess at whether "passwords" as a category survives this kind
+of extraction in general. It does. What's still open is only the narrower, more technical question
+of which specific storage mechanism a given password sits in.</p>
 
 <p>What that uncertainty argues for isn't "hope it's the protected category" — it's the same answer
 either way. A seed phrase shouldn't exist as an entry in any app on a general-purpose phone,
@@ -183,13 +211,14 @@ the phone.</p>
 
 <h2>Sources</h2>
 <ol class="sources">
-  <li id="src-1">Elite Digital Forensics. <i>iOS Forensics (2026)</i> — on Before/After First Unlock device states and the current ceiling on iPhone extraction. <a href="https://elitedigitalforensics.com/ios-forensics/" rel="noopener" target="_blank">elitedigitalforensics.com</a></li>
-  <li id="src-2">CBS News. <i>FBI paid more than $1 million for San Bernardino iPhone "hack," James Comey confirms.</i> 2016. <a href="https://www.cbsnews.com/news/fbi-paid-more-than-1-million-for-san-bernardino-iphone-hack-james-comey/" rel="noopener" target="_blank">cbsnews.com</a></li>
-  <li id="src-3">The Washington Post. <i>The FBI wanted to unlock the San Bernardino shooter's iPhone. It turned to a little-known Australian firm.</i> 14 April 2021. <a href="https://www.washingtonpost.com/technology/2021/04/14/azimuth-san-bernardino-apple-iphone-fbi/" rel="noopener" target="_blank">washingtonpost.com</a></li>
-  <li id="src-4">Signal. <i>Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app's perspective.</i> 21 April 2021. <a href="https://signal.org/blog/cellebrite-vulnerabilities/" rel="noopener" target="_blank">signal.org</a></li>
-  <li id="src-5">Apple. <i>Apple advances user security with powerful new data protections.</i> 7 December 2022. <a href="https://www.apple.com/newsroom/2022/12/apple-advances-user-security-with-powerful-new-data-protections/" rel="noopener" target="_blank">apple.com</a></li>
-  <li id="src-6">Security Affairs. <i>iPhone forensics expose Signal messages after app removal in U.S. case.</i> 13 April 2026. <a href="https://securityaffairs.com/190740/security/iphone-forensics-expose-signal-messages-after-app-removal-in-u-s-case.html" rel="noopener" target="_blank">securityaffairs.com</a></li>
-  <li id="src-7">ElcomSoft. <i>Extracting and Decrypting iOS Keychain: Physical, Logical and Cloud Options Explored.</i> August 2020. <a href="https://blog.elcomsoft.com/2020/08/extracting-and-decrypting-ios-keychain-physical-logical-and-cloud-options-explored/" rel="noopener" target="_blank">blog.elcomsoft.com</a></li>
-  <li id="src-8">Cellebrite. <i>How to Use the Keychain in Cellebrite Physical Analyzer.</i> Product documentation. <a href="https://cellebrite.com/en/cellebrite-software/cellebrite-physical-analyzer/how-to-use-the-keychain-in-cellebrite-physical-analyzer/" rel="noopener" target="_blank">cellebrite.com</a></li>
-  <li>@BitcoinNewsCom on X. The video that prompted this entry. <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464" rel="noopener" target="_blank">x.com/BitcoinNewsCom/status/2098825343721230464</a></li>
+  <li id="src-1">Magnet Forensics. <i>Magnet AXIOM</i> — the product visible on screen in the video above ("License: Axiom Essentials (Dongle)," "Integrate with Magnet One"). <a href="https://www.magnetforensics.com/products/magnet-axiom/" rel="noopener" target="_blank">magnetforensics.com</a></li>
+  <li id="src-2">Alexis Brignoni (abrignoni). <i>iLEAPP — iOS Logs, Events, And Properties Parser.</i> Free, open-source; the tool run against the iTunes backup in the second half of the video. <a href="https://github.com/abrignoni/iLEAPP" rel="noopener" target="_blank">github.com/abrignoni/iLEAPP</a></li>
+  <li id="src-3">Elite Digital Forensics. <i>iOS Forensics (2026)</i> — on Before/After First Unlock device states and the current ceiling on iPhone extraction. <a href="https://elitedigitalforensics.com/ios-forensics/" rel="noopener" target="_blank">elitedigitalforensics.com</a></li>
+  <li id="src-4">CBS News. <i>FBI paid more than $1 million for San Bernardino iPhone "hack," James Comey confirms.</i> 2016. <a href="https://www.cbsnews.com/news/fbi-paid-more-than-1-million-for-san-bernardino-iphone-hack-james-comey/" rel="noopener" target="_blank">cbsnews.com</a></li>
+  <li id="src-5">The Washington Post. <i>The FBI wanted to unlock the San Bernardino shooter's iPhone. It turned to a little-known Australian firm.</i> 14 April 2021. <a href="https://www.washingtonpost.com/technology/2021/04/14/azimuth-san-bernardino-apple-iphone-fbi/" rel="noopener" target="_blank">washingtonpost.com</a></li>
+  <li id="src-6">Signal. <i>Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app's perspective.</i> 21 April 2021. <a href="https://signal.org/blog/cellebrite-vulnerabilities/" rel="noopener" target="_blank">signal.org</a></li>
+  <li id="src-7">Apple. <i>Apple advances user security with powerful new data protections.</i> 7 December 2022. <a href="https://www.apple.com/newsroom/2022/12/apple-advances-user-security-with-powerful-new-data-protections/" rel="noopener" target="_blank">apple.com</a></li>
+  <li id="src-8">Security Affairs. <i>iPhone forensics expose Signal messages after app removal in U.S. case.</i> 13 April 2026. <a href="https://securityaffairs.com/190740/security/iphone-forensics-expose-signal-messages-after-app-removal-in-u-s-case.html" rel="noopener" target="_blank">securityaffairs.com</a></li>
+  <li id="src-9">ElcomSoft. <i>Extracting and Decrypting iOS Keychain: Physical, Logical and Cloud Options Explored.</i> August 2020. <a href="https://blog.elcomsoft.com/2020/08/extracting-and-decrypting-ios-keychain-physical-logical-and-cloud-options-explored/" rel="noopener" target="_blank">blog.elcomsoft.com</a></li>
+  <li>@khanjicyber on Instagram. The original video — watermarked throughout, part one of a two-part series. Re-posted (uncredited) by @BitcoinNewsCom on X, embedded above. <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464" rel="noopener" target="_blank">x.com/BitcoinNewsCom/status/2098825343721230464</a></li>
 </ol>
