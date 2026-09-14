@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Diagram: three pressures converge on U.S. base oil supply. Persian Gulf Group III — Pearl GTL Qatar, ADNOC UAE, Bapco Bahrain, 44 percent of U.S. supply, Hormuz shut and Pearl GTL damaged in March. Korea — about 30 percent of U.S. Group III, needs Gulf crude it cannot fully get, margins pull refiners toward diesel. Group II, the usual backup, now trading at a discount to diesel and pulled out of the market too. The three arrows converge on one box: 74 percent of U.S. Group III imports under direct stress. That box arrows down to a final box: Costco, Kirkland Signature synthetic limited to two boxes per member per week, price thirty to fifty eight dollars per ten quarts, Mobil 1 capped at five per member, the first rationing in the chain's history.">
+<rect width="900" height="700" fill="#0a0f1a"/>
+<text x="450" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="21" fill="#e8dfd2">Three pressures, one squeeze</text>
+<text x="450" y="61" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8" font-style="italic">how a closed strait ends up rationed on a warehouse shelf</text>
+
+<!-- Row 1: three pressure boxes -->
+<g font-family="Georgia, serif">
+  <rect x="24" y="90" width="266" height="196" rx="6" fill="#0b1322" stroke="#8fa3ff" stroke-width="1.3"/>
+  <text x="157" y="118" text-anchor="middle" font-size="15" fill="#8fa3ff" font-weight="bold">Persian Gulf Group III</text>
+  <text x="157" y="142" text-anchor="middle" font-size="12.5" fill="#cbd5e1">Pearl GTL (Qatar) · ADNOC (UAE)</text>
+  <text x="157" y="160" text-anchor="middle" font-size="12.5" fill="#cbd5e1">Bapco (Bahrain)</text>
+  <text x="157" y="185" text-anchor="middle" font-size="13" fill="#e8dfd2" font-weight="bold">44% of U.S. Group III</text>
+  <text x="157" y="209" text-anchor="middle" font-size="12" fill="#94a3b8">Hormuz exports effectively</text>
+  <text x="157" y="225" text-anchor="middle" font-size="12" fill="#94a3b8">closed; Pearl GTL damaged</text>
+  <text x="157" y="241" text-anchor="middle" font-size="12" fill="#94a3b8">by strikes in March</text>
+  <text x="157" y="266" text-anchor="middle" font-size="11.5" fill="#f0b74a">→ half capacity, ≥1 year</text>
+
+  <rect x="317" y="90" width="266" height="196" rx="6" fill="#0b1322" stroke="#8fa3ff" stroke-width="1.3"/>
+  <text x="450" y="118" text-anchor="middle" font-size="15" fill="#8fa3ff" font-weight="bold">South Korea</text>
+  <text x="450" y="148" text-anchor="middle" font-size="13" fill="#e8dfd2" font-weight="bold">~30% of U.S. Group III</text>
+  <text x="450" y="175" text-anchor="middle" font-size="12" fill="#94a3b8">Runs on Middle East crude</text>
+  <text x="450" y="191" text-anchor="middle" font-size="12" fill="#94a3b8">that is itself constrained</text>
+  <text x="450" y="216" text-anchor="middle" font-size="12" fill="#94a3b8">Asian diesel/jet margins at</text>
+  <text x="450" y="232" text-anchor="middle" font-size="12" fill="#94a3b8">multi-year highs pull refiners</text>
+  <text x="450" y="248" text-anchor="middle" font-size="12" fill="#94a3b8">toward fuel, not base oil</text>
+  <text x="450" y="266" text-anchor="middle" font-size="11.5" fill="#f0b74a">→ can't backfill the gap</text>
+
+  <rect x="610" y="90" width="266" height="196" rx="6" fill="#0b1322" stroke="#8fa3ff" stroke-width="1.3"/>
+  <text x="743" y="118" text-anchor="middle" font-size="15" fill="#8fa3ff" font-weight="bold">Group II base oil</text>
+  <text x="743" y="145" text-anchor="middle" font-size="12.5" fill="#cbd5e1">The usual backup when</text>
+  <text x="743" y="161" text-anchor="middle" font-size="12.5" fill="#cbd5e1">Group III runs short</text>
+  <text x="743" y="188" text-anchor="middle" font-size="12" fill="#94a3b8">Diesel margins at a 40-year</text>
+  <text x="743" y="204" text-anchor="middle" font-size="12" fill="#94a3b8">high pull feedstock to fuel</text>
+  <text x="743" y="228" text-anchor="middle" font-size="13" fill="#e8dfd2" font-weight="bold">first time on record:</text>
+  <text x="743" y="248" text-anchor="middle" font-size="13" fill="#e8dfd2" font-weight="bold">priced BELOW diesel</text>
+  <text x="743" y="266" text-anchor="middle" font-size="11.5" fill="#f0b74a">→ pulled from the market too</text>
+</g>
+
+<!-- converging arrows -->
+<g stroke="#5b6b8c" stroke-width="1.6" fill="none">
+  <path d="M157,286 L400,340" marker-end="url(#arrow)"/>
+  <path d="M450,286 L450,340" marker-end="url(#arrow)"/>
+  <path d="M743,286 L500,340" marker-end="url(#arrow)"/>
+</g>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#5b6b8c"/>
+  </marker>
+</defs>
+
+<!-- Row 2: the squeeze -->
+<rect x="200" y="352" width="500" height="86" rx="6" fill="#141b2e" stroke="#f0b74a" stroke-width="1.4"/>
+<text x="450" y="386" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#f0b74a" font-weight="bold">74% of U.S. Group III imports</text>
+<text x="450" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#f0b74a" font-weight="bold">under direct stress at once</text>
+<text x="450" y="428" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8" font-style="italic">ILMA industry briefing, May 2026 — no full recovery expected before mid-2027</text>
+
+<path d="M450,438 L450,478" stroke="#5b6b8c" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+<!-- Row 3: the shelf -->
+<rect x="130" y="486" width="640" height="180" rx="6" fill="#0b1322" stroke="#e8dfd2" stroke-width="1.2"/>
+<text x="450" y="518" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="#e8dfd2" font-weight="bold">Costco, September 2026</text>
+<text x="450" y="548" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#cbd5e1">Kirkland Signature full synthetic: capped at 2 boxes / member / week</text>
+<text x="450" y="570" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#cbd5e1">10 quarts — was $30, now $58</text>
+<text x="450" y="596" text-anchor="middle" font-family="Georgia, serif" font-size="13.5" fill="#cbd5e1">Mobil 1: capped at 5 / member</text>
+<text x="450" y="628" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#f0b74a" font-weight="bold">Costco's first-ever purchase limit on motor oil</text>
+<text x="450" y="652" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#64748b">Figures: The Drive, AutoGuide — see Sources</text>
+</svg>
