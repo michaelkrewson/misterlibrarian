@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img"
+     aria-label="Bar chart comparing two FOMC votes. July 29, 2026: 9 votes to hold, 3 votes to hike, out of 12. September 16, 2026: 0 votes to hold, 12 votes to hike — unanimous.">
+  <rect width="900" height="430" fill="#0a0f1a"/>
+
+  <!-- scale: 0..12 votes maps to x=140..800 (660px), 55px/vote -->
+  <line x1="140" y1="345" x2="800" y2="345" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <text x="140" y="371" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">0</text>
+  <text x="470" y="371" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">6 votes</text>
+  <text x="800" y="371" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">12</text>
+
+  <!-- 12-of-12 unanimous line, spanning both groups -->
+  <line x1="800" y1="45" x2="800" y2="345" stroke="#e8865c" stroke-width="2" stroke-dasharray="6,5"/>
+  <text x="790" y="35" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#e8865c" font-weight="bold">12 of 12</text>
+
+  <!-- group 1: July 29, 2026 -->
+  <text x="140" y="62" font-family="Georgia, serif" font-size="17" fill="#e8dfd2" font-weight="bold">July 29 — hold</text>
+
+  <text x="140" y="92" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">Hold</text>
+  <rect x="140" y="100" width="495" height="30" rx="6" fill="#5c6b85" opacity="0.9"/>
+  <text x="645" y="121" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">9</text>
+
+  <text x="140" y="150" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">Hike</text>
+  <rect x="140" y="158" width="165" height="30" rx="6" fill="#a3b378" opacity="0.9"/>
+  <text x="315" y="179" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">3</text>
+
+  <!-- group 2: September 16, 2026 -->
+  <text x="140" y="238" font-family="Georgia, serif" font-size="17" fill="#e8dfd2" font-weight="bold">September 16 — hike</text>
+
+  <text x="140" y="268" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">Hold</text>
+  <rect x="140" y="276" width="4" height="30" rx="2" fill="#5c6b85" opacity="0.9"/>
+  <text x="156" y="297" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">0</text>
+
+  <text x="140" y="326" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">Hike</text>
+  <rect x="140" y="334" width="660" height="30" rx="6" fill="#a3b378" opacity="0.9"/>
+  <text x="770" y="355" font-family="Georgia, serif" font-size="16" fill="#0a0f1a" font-weight="bold">12</text>
+
+  <text x="140" y="408" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">Nine to three for holding in July. Twelve to zero for hiking in September — the whole committee moved together.</text>
+</svg>
