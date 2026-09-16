@@ -596,6 +596,75 @@ a public ledger can timestamp a government's economic statistics tamper-evidentl
 smaller and, I'd argue, still a genuinely interesting story on its own — it just isn't the one the
 video is telling.</p>
 
+<h2>The Coin and the Company, in Plain Facts</h2>
+
+<p>Since the rest of this entry is about one specific claim, it's worth closing with the
+underlying basics — the numbers a reel usually skips past on its way to a price target.</p>
+
+<p><strong>How many XRP exist.</strong> All 100 billion XRP that will ever exist were created at
+once, in the genesis ledger, when the XRP Ledger launched on June 2, 2012. There is no mining and
+no staking, and the code has no function to create more. About 62.88 billion of those are in
+circulation as of September 15, 2026; Ripple itself holds most of the rest, with roughly 32.6
+billion still sitting in the escrow contracts described above.</p>
+
+<p><strong>Inflation rate: there isn't one, in the usual sense.</strong> XRP's supply can only go
+down, never up — the opposite of Bitcoin, which is still issuing new coins on a fixed schedule
+until around 2140. Every XRPL transaction permanently destroys a small fee, 0.00001 XRP (10
+"drops") at minimum, and that XRP is gone for good — not paid to anyone, including Ripple. In
+practice that burn is tiny: <a href="https://allaboutxrp.com/learn/xrp-burn-rate"
+rel="noopener" target="_blank">cumulative destroyed XRP since 2012 totals somewhere around 14.4
+million</a>, or about 0.014 percent of the original 100 billion. So "deflationary" is technically
+accurate and practically negligible — the honest description is a fixed, capped supply that
+shrinks by a rounding error a year, not a currency getting meaningfully scarcer over time.</p>
+
+<p><strong>How it's secured, and whether that's the same thing as Bitcoin.</strong> XRP does not
+use Bitcoin's proof-of-work — no mining, no energy-intensive hash race. Instead, the XRP Ledger
+runs its own consensus protocol: <a href="https://xrpl.org/about/faq" rel="noopener"
+target="_blank">more than 150 independent validators operate on the network</a>, and each
+participant chooses a list of validators it trusts (a "Unique Node List," or UNL) to help it
+agree on the ledger's state. Once roughly 80 percent of a node's trusted validators agree, a ledger
+closes and is treated as final — in practice this takes 3 to 5 seconds, versus Bitcoin's roughly
+10-minute block time. There's no recorded instance of the network processing a fraudulent
+transaction. That said, "secure" and "decentralized" are different questions with different
+answers.</p>
+
+<p><strong>Is it decentralized?</strong> This one is a genuine, ongoing argument, not a settled
+fact, and it's worth hearing both sides rather than picking one. Ripple runs only 1 of the 150-plus
+validators on the network and only 1 of the 35-plus validators on the default recommended UNL, and
+anyone can run a validator or choose a different trusted list — nothing in the protocol forces a
+node to follow Ripple's recommendation. That's the case Ripple and its former CTO make when
+critics call the network centralized. The <a href="https://www.ccn.com/news/crypto/does-ripple-hold-absolute-control-of-the-xrp-ledger-former-cto-calls-claim-nonsensical/"
+rel="noopener" target="_blank">counter-argument, made by critics like Cyber Capital's
+Justin Bons</a>, is that because Ripple and the XRP Ledger Foundation publish the default list nearly
+everyone actually uses, diverging from it risks splitting off from the rest of the network — which
+in practice gives whoever publishes the recommended list outsized influence over who counts as a
+trusted validator, even without owning the majority of them outright. Both descriptions are
+accurate as far as they go; they disagree about how much a "default that almost everyone follows"
+differs from a rule that's formally enforced.</p>
+
+<p><strong>Is it similar to Bitcoin?</strong> As a public, traded digital asset with a capped
+supply, yes. Almost everywhere else, no. Bitcoin is mined, inflating on a fixed and publicly known
+schedule until its 21 million cap is reached around 2140; XRP was entirely pre-created in one
+ledger in 2012 and can only shrink from there. Bitcoin's security comes from computational cost —
+attacking it means outspending the entire honest mining network; XRP's comes from a validator
+supermajority agreeing on history, a different model with different trust assumptions, not a
+weaker or stronger one in any simple sense. And the two were built for different jobs: Bitcoin was
+designed as a decentralized store of value and payment network with no company behind it; XRP was
+built by Ripple, a real Silicon Valley company, explicitly as a fast, cheap bridge asset for
+moving money between currencies.</p>
+
+<p><strong>The company itself.</strong> Ripple was founded in 2012 — originally as OpenCoin — by
+Chris Larsen, Jed McCaleb and Arthur Britto; Brad Garlinghouse has been CEO since 2015, and the
+company is headquartered in San Francisco. It's still privately held: Ripple's president said in
+January 2026 the company planned to stay that way, though Garlinghouse struck a more open tone
+about an eventual IPO by August. Its most recent <a href="https://valueaddvc.com/blog/ripple-valuation-2026-how-xrps-parent-company-hit-50b-and-whether-an-ipo-is-next"
+rel="noopener" target="_blank">private valuation, tied to a share buyback in
+March 2026, was around $50 billion</a>, up from roughly $40 billion at a funding round the previous
+November. Ripple's actual business is selling cross-border payments infrastructure to banks and
+financial institutions — RippleNet and On-Demand Liquidity, discussed earlier in this piece — not
+XRP speculation, though selling XRP from its own holdings has historically also been a real source
+of company revenue.</p>
+
 <h2>Where I Could Be Wrong</h2>
 
 <ul>
@@ -612,6 +681,16 @@ video is telling.</p>
   <li><strong>I haven't read every line of Working Paper 1374's technical appendix</strong> — the
   quote and mechanism described above come from the paper's own stated methodology, not an
   independent replication of the prototype.</li>
+  <li><strong>The 14.4 million cumulative-burn figure</strong> comes from a secondary tracker, not
+  a live on-chain count I ran myself, and moves slightly every day; the 0.014% scale of it against
+  the 100 billion supply is what I'd stand behind, not the exact last digit.</li>
+  <li><strong>The decentralization section describes a real, unresolved argument</strong> on
+  purpose rather than picking a winner — both "Ripple runs one validator and can't force a fork"
+  and "almost everyone still follows Ripple's recommended list" are true statements, and reasonable
+  people weight them differently.</li>
+  <li><strong>Ripple's $50 billion valuation</strong> comes from press reporting on a private share
+  buyback, not an audited figure or a public filing — private companies don't have to disclose
+  this, and buyback pricing isn't the same thing as a market-clearing price.</li>
   <li><strong>I don't hold XRP</strong>, long or short, in any account I trade myself.</li>
 </ul>
 
