@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img"
+     aria-label="Bar chart of the Senate cloture vote on the CLARITY Act, September 15, 2026: 49 votes yes, 50 votes no, against a dashed line at 60, the number of votes cloture requires">
+  <rect width="900" height="380" fill="#0a0f1a"/>
+
+  <!-- scale: 0..70 votes maps to x=140..820 (680px), 9.714px/vote -->
+  <line x1="140" y1="290" x2="820" y2="290" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <text x="140" y="316" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">0</text>
+  <text x="480" y="316" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">35 votes</text>
+  <text x="820" y="316" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">70</text>
+
+  <!-- 60-vote cloture threshold, spanning both rows -->
+  <line x1="723" y1="90" x2="723" y2="290" stroke="#e8865c" stroke-width="2" stroke-dasharray="6,5"/>
+  <text x="713" y="80" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#e8865c" font-weight="bold">60 needed</text>
+  <text x="713" y="99" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#e8865c" font-weight="bold">to invoke cloture</text>
+
+  <!-- row 1: Yes -->
+  <text x="140" y="120" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">Yes</text>
+  <rect x="140" y="136" width="476" height="34" rx="6" fill="#a3b378" opacity="0.9"/>
+  <text x="628" y="159" font-family="Georgia, serif" font-size="17" fill="#e8dfd2" font-weight="bold">49</text>
+
+  <!-- row 2: No -->
+  <text x="140" y="230" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">No</text>
+  <rect x="140" y="246" width="486" height="34" rx="6" fill="#5c6b85" opacity="0.9"/>
+  <text x="638" y="269" font-family="Georgia, serif" font-size="17" fill="#e8dfd2" font-weight="bold">50</text>
+
+  <text x="140" y="358" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">A majority voted yes. It failed anyway — cloture is a 60-vote rule, not a 51-vote one.</text>
+</svg>
