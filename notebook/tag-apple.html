@@ -160,6 +160,27 @@ footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
   .fronthero figcaption{font-size:12px}
 }
 
+/* ── the rundown box: a running list of story candidates, front and center
+   on the index page. Hand-maintained in source/notebook/_rundown.json — an
+   item is plain text until it becomes its own entry, at which point it turns
+   into a link. Same accent-edged treatment as an in-entry .aside (see the
+   .entry .aside rule below), sized for the front page instead. */
+.rundown{margin:26px 0 34px;padding:22px 26px;border-left:3px solid #8fa3ff;
+  border-radius:0 12px 12px 0;background:#0a111c}
+.rdtitle{margin:0 0 4px;font-size:19px;font-weight:400;color:#e8eef7}
+.rddate{margin:0 0 14px;color:#7f8fa6;font-size:13px;font-style:italic}
+.rdnote{margin:0 0 18px;color:#93a4bd;font-size:14.5px;line-height:1.6}
+.rdsec{margin:18px 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.03em;
+  text-transform:uppercase;color:#8fa3ff}
+.rdsec:first-of-type{margin-top:0}
+.rdlist{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
+.rdlist li{margin:0 0 7px}
+.rdlist a:hover{text-decoration:underline}
+@media (max-width:720px){
+  .rundown{padding:18px 18px;margin:22px 0 28px}
+  .rdtitle{font-size:17px}
+}
+
 /* ── header: brand left, search right; nav on its own row underneath ────── */
 /* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
    on the left and the search box pushed to the right edge; row two is the

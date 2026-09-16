@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-16",
+  "title": "The rundown",
+  "note": "What's going on right now, in one place. Items stay plain text until one of them becomes its own entry below — then it turns into a link.",
+  "sections": [
+    {
+      "label": "Macro & markets",
+      "items": [
+        {"text": "The Fed hikes 25bp to 3.75–4.00% — the first rate increase in three years, on sticky inflation and a strong labor market.", "href": ""},
+        {"text": "Oil holds near $101–109 a barrel on the seven-month Iran war; the Strait of Hormuz is running at roughly 5% of normal shipping traffic.", "href": ""},
+        {"text": "The Senate kills the CLARITY Act, 49–50 on cloture — crypto market-structure regulation stalls again, likely for the rest of 2026.", "href": ""}
+      ]
+    },
+    {
+      "label": "Bitcoin & crypto",
+      "items": [
+        {"text": "Bitcoin falls to roughly $76,000 as ETFs see $450 million in outflows — the largest since June — on the CLARITY Act failure.", "href": ""},
+        {"text": "Strategy (MSTR) resumes buying after a ten-week pause: +4,603 BTC, taking its stack to 845,050 BTC — about 4% of all bitcoin that will ever exist.", "href": ""}
+      ]
+    },
+    {
+      "label": "Artificial intelligence",
+      "items": [
+        {"text": "Five frontier model launches land inside ten days — Claude Fable 5.1, GPT-6 Astra, Gemini 3.8 Flash, Meta's Muse Spark 1.3, and DeepSeek V4.1-Flash.", "href": ""},
+        {"text": "OpenAI is reportedly shopping a valuation as high as $1.5 trillion while delaying an IPO on safety grounds.", "href": ""}
+      ]
+    },
+    {
+      "label": "Science",
+      "items": [
+        {"text": "The 2022 Hunga Tonga eruption may have chemically destroyed some of the methane it released — a finding that could reshape pollution estimates.", "href": ""},
+        {"text": "A large real-world study links semaglutide (Ozempic/Wegovy) to roughly 40% fewer asthma attacks.", "href": ""}
+      ]
+    },
+    {
+      "label": "Space",
+      "items": [
+        {"text": "SpaceX targets September 22 for Starship's first-ever attempt to reach orbit, deploying the first Starlink V3 satellites along the way.", "href": ""}
+      ]
+    }
+  ]
+}
