@@ -665,6 +665,82 @@ financial institutions — RippleNet and On-Demand Liquidity, discussed earlier 
 XRP speculation, though selling XRP from its own holdings has historically also been a real source
 of company revenue.</p>
 
+<h2>The Same Bet, Wearing a Different Ticker</h2>
+
+<p>There's a question underneath all of this that the reel never asks and most of the coverage
+doesn't either: if you already hold Bitcoin, does adding XRP actually give you a second, different
+bet — or is it just more of the first one, wearing a cheaper price tag? I pulled the actual daily
+returns for XRP, Bitcoin and MicroStrategy going back two years and ran the correlation myself
+rather than assume an answer.</p>
+
+<ul>
+  <li><strong>XRP vs. Bitcoin, trailing 2 years:</strong> 0.63 correlation, XRP annualized volatility 104%</li>
+  <li><strong>XRP vs. Bitcoin, trailing 1 year:</strong> 0.87 correlation</li>
+  <li><strong>XRP vs. MSTR, trailing 2 years:</strong> 0.49 correlation (0.69 over the trailing year)</li>
+  <li><strong>MSTR vs. Bitcoin, trailing 2 years, for comparison:</strong> 0.73 correlation, MSTR annualized volatility 103%</li>
+  <li><strong>Bitcoin's own annualized volatility:</strong> 53%</li>
+</ul>
+
+<p>Two things jump out. First, XRP's correlation to Bitcoin has been climbing, not falling — 0.63
+over two years, 0.87 over the last one, which is now <em>higher</em> than MicroStrategy's own
+0.73 correlation to Bitcoin, and MSTR is a company that holds Bitcoin on its balance sheet on
+purpose. A 0.87 daily-return correlation sits in the same range this site has already flagged
+elsewhere as "the same bet, not a second one" — the finding behind why a couple of stock indexes
+that move together 87–95% of the time don't actually diversify anything. Second, XRP isn't even
+the calmer way to hold that bet: its own volatility, 104% annualized, is higher than MicroStrategy's
+103% and roughly double Bitcoin's 53%. Adding it to a book that already holds Bitcoin doesn't
+spread the risk out — it re-levers the same risk at a higher vol, through a smaller, newer, less
+liquid wrapper.</p>
+
+<h2>What I Actually Did About My Own Book</h2>
+
+<p>I wanted to size this properly for Arbitrageur, my live rebalancing book (MSTR 45% / Bitcoin
+45% / cash 10%) — not off a vibe, but tied to something falsifiable: what's the actual probability
+that the one real, quantified bull claim about XRP comes true, and what would that actually be
+worth?</p>
+
+<p>The one claim worth pricing is Ripple CEO Brad Garlinghouse's own stated target, from earlier in
+this piece: XRP capturing 14 percent of SWIFT's roughly $150 trillion in annual volume within five
+years of June 2025 — about $21 trillion a year running through XRP as the bridge asset. Turning
+that into a price target needs one more number nobody states out loud: how many times a year the
+XRP in circulation would need to turn over to move that much volume. On-Demand Liquidity is built
+specifically so a bank holds XRP for seconds, not as a balance — which matters, because the
+required market cap swings enormously depending on that assumption:</p>
+
+<ul>
+  <li><strong>Turns over once a year</strong> → needs a $21,000B market cap, about 235× today's</li>
+  <li><strong>Turns over monthly</strong> → needs $1,750B, about 19.6× today's</li>
+  <li><strong>Turns over weekly</strong> → needs $404B, about 4.5× today's</li>
+  <li><strong>Turns over 100 times a year</strong> → needs $210B, about 2.4× today's</li>
+  <li><strong>Turns over daily</strong> — closer to how ODL is actually designed to work → needs
+  only $57.5B, about 36 percent <em>below</em> today's $89.35B</li>
+</ul>
+
+<p>Full success on the SWIFT claim doesn't obviously mean the price has to go up at all — if ODL
+genuinely works the way it's designed to, several of the "adoption succeeded" scenarios need
+<em>less</em> market cap than exists today. That alone argues against sizing this as a moonshot
+bet on price.</p>
+
+<p>Then the probability itself. Ripple's own reported $1.3 trillion in ODL volume for the second
+quarter of 2025 annualizes to about $5.2 trillion — roughly a quarter of the $21 trillion target
+already, in raw dollar terms. Closing the rest of the gap needs about 42 percent compounded annual
+growth for four more years straight. That's a real, live adoption curve, not a made-up number — and
+also exactly the kind of sustained growth rate that most multi-year corporate targets miss. Putting
+a number on it is a judgment call, not a measurement: I put it at roughly a 10 to 15 percent chance
+of something in that neighborhood actually happening on anything like the stated timeline.</p>
+
+<p>Run the expected value with the middle of that range — 12 percent odds, a 2.5× payoff if it
+lands, a 25 percent loss in the more likely case where XRP just trades as higher-beta,
+highly-correlated crypto — and it comes out slightly <em>negative</em>: 0.12 × 1.50 + 0.88 ×
+(−0.25) = −0.04. Priced as a bet on the numbers alone, that argues for zero, not a position. The
+honest reason to hold anything at all is convexity, not edge: a small, cheap claim on a right-skewed
+outcome you're roughly breakeven-to-negative on in expectation, not a conviction call.</p>
+
+<p>I went with <strong>1 percent</strong>, funded out of the cash sleeve, smaller than the 3–5
+percent a pure expected-value read would have supported. My own read on the claim is blunter than
+the math needs it to be: I think this is a moonshot at best, and I'd rather the position size say
+so honestly than dress up a coin flip as a forecast.</p>
+
 <h2>Where I Could Be Wrong</h2>
 
 <ul>
@@ -691,7 +767,16 @@ of company revenue.</p>
   <li><strong>Ripple's $50 billion valuation</strong> comes from press reporting on a private share
   buyback, not an audited figure or a public filing — private companies don't have to disclose
   this, and buyback pricing isn't the same thing as a market-clearing price.</li>
-  <li><strong>I don't hold XRP</strong>, long or short, in any account I trade myself.</li>
+  <li><strong>The correlation and volatility figures</strong> are from a daily-return calculation I
+  ran myself against Yahoo Finance price data, not an independently reviewed dataset — the direction
+  (rising correlation, comparably high volatility) is the load-bearing part, not the exact second
+  decimal.</li>
+  <li><strong>The 10–15 percent probability I put on the SWIFT-capture claim, and the 2.5× / −25%
+  payoff scenarios in the expected-value math</strong>, are my own judgment calls, stated as such —
+  not measurements. Move either input and the number moves with it; someone with a different read
+  on Ripple's adoption curve would reasonably land somewhere else.</li>
+  <li><strong>I now hold a small position in XRP</strong> — 1% of Arbitrageur, funded from its cash
+  sleeve — sized the way this entry describes.</li>
 </ul>
 
     <div class="tags"><a class="tg" href="tag-xrp.html">xrp</a><a class="tg" href="tag-ripple.html">ripple</a><a class="tg" href="tag-cryptocurrency.html">cryptocurrency</a><a class="tg" href="tag-bis.html">bis</a><a class="tg" href="tag-basel-committee.html">basel committee</a><a class="tg" href="tag-bank-regulation.html">bank regulation</a><a class="tg" href="tag-tokenization.html">tokenization</a><a class="tg" href="tag-misinformation.html">misinformation</a></div>
