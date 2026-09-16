@@ -1,0 +1,133 @@
+title: XRP, Basel, and the 1,250 Percent Number
+date: 2026-09-16
+tags: xrp, ripple, cryptocurrency, bis, basel committee, bank regulation, tokenization, misinformation
+summary: A video making the rounds walks through a real trend — stock exchanges tokenizing shares — then pivots to Basel I, II and III, and lands on a specific claim: the newest paper out of Basel mentions XRP dozens of times, therefore the Bank for International Settlements is about to use it. The paper is real. It does name XRP, a lot. Here's what it actually says, and the one number from the same institution that the video leaves out.
+meta_desc: A video claims the newest Basel paper's many XRP mentions mean BIS is adopting it. The paper is real — here's what it says, and the number the video skips.
+hero: bruegel-blind-leading-blind-1568.jpg
+hero_alt: Pieter Bruegel the Elder's 1568 painting The Blind Leading the Blind — six blind men in a line, each gripping the shoulder or staff of the man ahead of him, the leader already fallen into a ditch and the next two beginning to topple in after him
+hero_credit: The Parable of the Blind Leading the Blind. Pieter Bruegel the Elder, 1568, Museo di Capodimonte, Naples. Public domain, via Wikimedia Commons.
+draft: false
+---
+
+<p>A video making the rounds walks through this argument: stock exchanges are tokenizing
+everything right now, which is true — then it pivots to the Basel Committee, runs quickly through
+Basel I, II and III, and lands on a specific claim: the newest paper to come out of Basel mentions
+XRP a great many times, and that can only mean one thing — the Bank for International Settlements
+is about to use it. I went and found the actual paper. It's real, it does name XRP repeatedly, and
+it's a more interesting story than "BIS is adopting XRP" — not because that claim is a total
+fabrication, but because it's built out of two entirely different Basel-family documents welded
+together, with the one number that would puncture it left on the cutting-room floor.</p>
+
+<h2>The Real Part: Everything Actually Is Getting Tokenized</h2>
+
+<p>Start with what the video gets right, because it's genuinely happening. The Depository Trust &amp;
+Clearing Corporation — the utility that settles the overwhelming majority of U.S. stock trades —
+ran a production pilot moving Russell 1000 stocks, ETFs and Treasuries onto tokenized rails in July
+2026, with more than fifty firms participating ahead of a full October 2026 launch, <a
+href="https://www.coindesk.com/business/2026/05/04/wall-street-giant-dtcc-plans-tokenized-securities-platform-with-july-pilot-october-launch"
+rel="noopener" target="_blank">CoinDesk reported</a>. Nasdaq was the marketplace where those pilot
+trades executed before conversion into tokens at DTCC, under an SEC-approved rule change letting
+tokenized shares trade on the same order book as ordinary ones. NYSE's parent, Intercontinental
+Exchange, announced its own tokenized-trading plans back in January. None of that is hype — it's
+Wall Street's own settlement plumbing, moving.</p>
+
+<h2>Basel I, II and III, in One Paragraph</h2>
+
+<p>Where the video's argument starts doing real work is the pivot to Basel, so it's worth being
+precise about what that word actually names. The Basel Committee on Banking Supervision, housed at
+the Bank for International Settlements in Basel, Switzerland, has published three successive
+international bank capital frameworks — Basel I (1988), Basel II (2004) and Basel III (agreed in
+2010–2011, phased in through the 2020s) — each one setting how much capital a bank must hold
+against the risk of what it lends and invests in. None of the three was originally about
+cryptocurrency at all; Basel III is a response to the 2008 financial crisis. What ties this to XRP
+is a single, much narrower addition: in 2022 the Committee finalized a specific standard for how
+banks must treat cryptoasset holdings on their own books, effective since January 2025. That
+standard is real, and XRP genuinely appears in it — but not in the paper the video is actually
+pointing at.</p>
+
+<h2>The Paper That Actually Names XRP</h2>
+
+<p>The newest Basel-family document to mention XRP by name, repeatedly, is real: <a
+href="https://www.bis.org/publ/work1374.htm" rel="noopener" target="_blank">BIS Working Paper
+No. 1374</a>, <em>"Verifiable official statistics: a blockchain-based approach,"</em> published
+September 2, 2026 by five BIS researchers — Mario Rusev, Rafael Schmidt, Edward Lambe, Christian
+Schmieder and Glenn Philip Tice. The problem it's solving has nothing to do with payments: SDMX,
+the technical standard institutions use to publish official economic statistics, has no built-in
+way to cryptographically prove a dataset hasn't been altered after release. The paper's
+proof-of-concept fixes that by taking a batch of statistical datasets, compressing them into a
+single cryptographic fingerprint, and anchoring that fingerprint on a public ledger so anyone can
+later verify the data is genuine and untouched. The line doing the actual work, straight from the
+paper: <em>"a single summary value covering a batch of data sets is recorded on the XRP Ledger,
+where it is timestamped and cannot subsequently be altered."</em> The researchers picked XRPL for
+this specific job — low fees, fast finality, well-documented consensus — the same reasons a lot of
+technical proof-of-concept work picks whatever ledger is cheap and well-understood to build on.
+XRP the currency is not transacted, held, or recommended anywhere in the paper. It's a timestamp
+service. The paper says so itself: it's a proof of concept, not a production system and not a
+commitment to anything.</p>
+
+<h2>The Other Document, and the Number That Gets Left Out</h2>
+
+<p>Here's where two separate things get folded into one story. Separately from that research paper,
+the Basel Committee also runs a periodic monitoring exercise across roughly 150 banks, including 29
+globally systemic ones, tracking what cryptoassets they actually report holding exposure to — and
+XRP recently entered the top five most-reported names in that survey, alongside Bitcoin, Ethereum
+and Solana. That part is genuinely a sign banks are looking at XRP. What it comes bundled with is
+the number the video skips entirely: under the Committee's own 2022 standard, XRP — like Bitcoin,
+like Ether, like essentially every cryptoasset without a qualifying backing mechanism — is
+classified "Group 2b," and a bank holding one must apply a capital risk weight of <strong>1,250
+percent</strong> to that exposure.</p>
+
+<figure>
+  <img src="img/basel-crypto-risk-weight-ladder.svg" alt="Bar chart of Basel III capital risk weights: a sovereign bond at roughly 20 percent, a typical corporate loan at 100 percent, a bank's own equity holding at roughly 250 percent, and an unbacked cryptoasset such as XRP or Bitcoin, classified Group 2b, at 1,250 percent" loading="lazy"/>
+  <figcaption>Risk weight sets how much capital a bank must hold against an exposure — 100% means
+  capital equal to the exposure itself. Group 2b crypto sits more than twelve times higher than
+  ordinary bank equity holdings. Basel Committee standardized-approach weights are typical figures
+  for illustration; the 1,250% Group 2b figure is the Committee's own published rule.</figcaption>
+</figure>
+
+<p>A 1,250 percent risk weight means a bank must hold capital equal to the <em>entire value</em> of
+its XRP exposure, and then some — <a href="https://www.bis.org/committees/bcbs/basel-framework/standard/sco/60/inforce/2026-01-01/published/2024-11-27"
+rel="noopener" target="_blank">the Committee's own published framework</a> spells out that this
+treatment is deliberately conservative, and that a bank's total exposure to this whole category is
+separately capped at roughly 1–2 percent of its Tier 1 capital before even harsher treatment kicks
+in. That is about as far from an on-ramp to institutional adoption as a regulator can design a rule
+to be. It is not a rule written about XRP specifically — Bitcoin and Ether get the identical 1,250
+percent, and always have, since the same standard applies to any cryptoasset in that bucket. XRP
+showing up in a bank exposure survey conducted under a rule engineered to make holding it as
+expensive as possible is real, but it's evidence banks are cautiously testing the water under a
+punitive capital charge, not evidence Basel is preparing to embrace it.</p>
+
+<h2>What the Video Actually Did</h2>
+
+<p>Laid out like this, the leap is three separate moves stacked on top of each other. First, two
+different documents from two different parts of the same institution — an unrelated technical
+research paper about statistics integrity, and a periodic bank-exposure survey conducted under a
+capital rule — get treated as one continuous "Basel" story simply because both come from the BIS.
+Second, a narrow proof-of-concept that timestamps data fingerprints gets read as a payments or
+settlement decision, which the paper never claims to be. Third, and this is the one that actually
+inverts the story: the very capital rule that made XRP's appearance in a bank survey newsworthy is
+the same rule punishing any bank that holds it, and that number simply never gets mentioned. The
+paper really does name XRP a lot, dozens of times by one count — it's a real, current, September
+2026 document, genuinely the newest one in the Basel family to do so. What it's testing is whether
+a public ledger can timestamp a government's economic statistics tamper-evidently. That's a
+smaller and, I'd argue, still a genuinely interesting story on its own — it just isn't the one the
+video is telling.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The exact count of XRP mentions in Working Paper 1374</strong> is a figure I've seen
+  reported by outside coverage of the paper rather than counted by hand myself; the substance of
+  what those mentions describe, I've verified against the paper's own abstract and the quoted line
+  above.</li>
+  <li><strong>The standardized-approach risk weights I've used for a sovereign bond, a corporate
+  loan and a bank equity holding</strong> in the chart are typical figures for illustration and
+  vary by the specific exposure and jurisdiction's implementation — the 1,250% Group 2b crypto
+  figure is the one precise, load-bearing number, and it's the Committee's own published rule.</li>
+  <li><strong>The DTCC/Nasdaq tokenization pilot</strong> is a real, ongoing rollout as of this
+  writing; its scope could change before the stated October 2026 launch.</li>
+  <li><strong>I haven't read every line of Working Paper 1374's technical appendix</strong> — the
+  quote and mechanism described above come from the paper's own stated methodology, not an
+  independent replication of the prototype.</li>
+  <li><strong>I don't hold XRP</strong>, long or short, in any account I trade myself.</li>
+</ul>
