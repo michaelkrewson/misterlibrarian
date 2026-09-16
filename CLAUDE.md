@@ -28,6 +28,42 @@ or a travel entry, publishing). It's well-maintained and this file doesn't repea
 file is the layer README doesn't cover: translation doctrine, editorial judgment calls,
 paid-for gotchas, and the conventions that only show up once you've been burned by them.
 
+## Voice — a touch of wit, across every publication (Michael's ask, 2026-09-16)
+
+Michael reads Morning Brew and Robinhood Snacks for their morning newsletters and wants more
+of that in his own writing here — not a tone swap, an addition. **The wit rides on top of a
+real fact; it never replaces one, and it never softens or hides an uncertain claim, a risk, or
+a hedge.** A joke that makes a shaky number sound more certain than it is fails this site's own
+honesty doctrine before it fails as a joke. Concretely: look for **one or two moments per
+entry** — usually the opening hook, a section transition, or a closing line — where a wry,
+plain-spoken observation can do double duty as both true and funny, the way Morning Brew turns
+a real earnings miss into a one-line punch rather than burying the joke in a separate aside.
+Compare a flat sentence to a witty one carrying the identical fact: "Municipal Credit's tokenized
+value is $8.34" (flat) vs. "Municipal Credit clocks in at $8.34 — not billion, not million,
+*eight dollars and thirty-four cents*, which is either the newest category on the board or
+someone's lunch money" (same fact, now it has a pulse).
+
+**Calibrate per publication — this is not a uniform volume knob:**
+- **The Ledger** (`/finance/`) and **The Librarian's Notebook** (`/notebook/`) have the most
+  room — first-person, conversational registers already, so a wry aside fits naturally between
+  the citations.
+- **The Librarian Abroad** (`/travel/`) and **The Librarian's Regimen** (`/health/`) take it
+  more lightly — travel already has personality built in; health writing needs the humor to
+  never read as flippant about someone's actual medical situation.
+- **The Bible project** (`/bible.html`) and **Eight Miles West** (`/west/`) take the least —
+  the translation doctrine above already forbids first-person meta-commentary on the page, and
+  a family history has real people's real lives in it. Any wit there lives in a genuinely
+  interesting turn of phrase about the text or the history itself (a name-pun payoff, an
+  ironic historical detail), never a jokey aside from the writer.
+- **Never at the expense of the per-publication rules above or below this one** — the Ledger's
+  "Where I Could Be Wrong" honesty, the Bible project's reader-check translation standard, and
+  every other doctrine in this file all outrank being funny.
+
+**How to remember this without being told again:** it's saved as a standing feedback memory
+(`feedback_add_wit_to_blog_voice` in Claude's own memory store) in addition to living here, so
+it should surface on its own in a future session — but if a run of entries reads dry again,
+that's the sign to re-read this section rather than wait to be asked twice.
+
 ## The relationship rule — RETIRED 2026-09-09, all three now cross-link via the hub
 
 **This used to say the Bible project links to neither of the other two publications and is
@@ -909,30 +945,6 @@ web-sized and EXIF-stripped (`tools/travel_photos.py` for a photo; for a public-
 illustration keep the source and licence for `hero_credit:`). The sitemap is advertised in
 the root `robots.txt`; **submit `notebook/sitemap.xml` once in Google Search Console** — a
 human step, same as the other three.
-
-**The rundown box (added 2026-09-16, Michael's call):** a pinned box under the front-page
-hero — deliberately NOT a dated entry, so it survives regardless of what else publishes and
-never falls off the six-tile front page. Hand-maintained in `source/notebook/_rundown.json`
-(a leading underscore, like `_template.html`, so `load_entries()` ignores it): a `date`, an
-optional `note`, and `sections` of `{label, items:[{text, href}]}`. An item with no `href`
-renders as plain text; add one once the item becomes its own entry, and it turns into a link
-— the whole point being that unwritten story candidates and published entries can sit in the
-same list. Rendered by `_rundown_box()` in `build_notebook.py`, wired into `build_front()`.
-Mixed money-and-everything-else content belongs here rather than the Ledger on purpose: the
-Ledger is for pieces whose *spine* is a price or an institution that moves money (same rule as
-`notes` above); a digest that's deliberately Fed-hike-next-to-a-Mars-launch is the Notebook's
-job, even on days it's mostly money news.
-
-**Archiving a rundown:** `python3 tools/archive_rundown.py` turns the live box into a real,
-dated, `rundown`-tagged entry (using the ordinary entry pipeline — no new mechanism) and
-resets `_rundown.json` for the next cycle (`--keep` archives without resetting). Every past
-rundown collects on `tag-rundown.html` for free, via the same tag-page mechanism every other
-tag already gets — that page IS the years-over-years archive, no separate index to maintain.
-The front page shows a "See past rundowns →" link to it, but only once at least one rundown
-has actually been archived (`_rundown_box()` checks the entry pool for the `rundown` tag
-before linking, so it never points at an empty page). Default `--section world` (it's a news
-roundup); override per run if a given day's rundown leans hard the other way. Run
-`python3 build_notebook.py` after, same as any entry.
 
 ## Source archive
 
