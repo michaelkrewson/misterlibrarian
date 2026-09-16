@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img"
+     aria-label="Horizontal bar chart comparing Bitcoin miner energy efficiency in joules per terahash, lower is more efficient. Antminer S21 XP, the best air-cooled ASIC on the market: 13.5 J/TH. Antminer S23 Hyd, the best hydro-cooled ASIC on the market: 9.5 J/TH, the first commercial miner under 10. HashFly, FutureBit's claimed figure if scaled to real organic neurons, shown with a dashed outline as unverified: 1 J/TH.">
+  <rect width="900" height="430" fill="#0a0f1a"/>
+
+  <!-- scale: 0..15 J/TH maps to x=140..820 (680px), 45.33px/J -->
+  <line x1="140" y1="360" x2="820" y2="360" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <text x="140" y="386" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">0 J/TH</text>
+  <text x="480" y="386" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">7.5 J/TH</text>
+  <text x="820" y="386" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">15 J/TH</text>
+  <text x="480" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6b7688" font-style="italic">lower is more efficient</text>
+
+  <!-- row 1: Antminer S21 XP, best air-cooled, 13.5 J/TH -->
+  <text x="140" y="58" font-family="Georgia, serif" font-size="17" fill="#e8dfd2">Antminer S21 XP — best air-cooled ASIC</text>
+  <rect x="140" y="72" width="612" height="34" rx="6" fill="#5c6b85" opacity="0.9"/>
+  <text x="762" y="95" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">13.5</text>
+
+  <!-- row 2: Antminer S23 Hyd, best hydro-cooled, 9.5 J/TH -->
+  <text x="140" y="158" font-family="Georgia, serif" font-size="17" fill="#e8dfd2">Antminer S23 Hyd — best hydro-cooled ASIC</text>
+  <rect x="140" y="172" width="431" height="34" rx="6" fill="#a3b378" opacity="0.9"/>
+  <text x="581" y="195" font-family="Georgia, serif" font-size="16" fill="#e8dfd2" font-weight="bold">9.5</text>
+
+  <!-- row 3: HashFly, claimed, 1 J/TH, unverified -->
+  <text x="140" y="258" font-family="Georgia, serif" font-size="17" fill="#e8dfd2">HashFly — FutureBit's claimed figure</text>
+  <rect x="140" y="272" width="45" height="34" rx="6" fill="none" stroke="#e8865c" stroke-width="2" stroke-dasharray="5,4"/>
+  <text x="195" y="295" font-family="Georgia, serif" font-size="16" fill="#e8865c" font-weight="bold">1</text>
+  <text x="140" y="326" font-family="Georgia, serif" font-size="13.5" fill="#e8865c" font-style="italic">dashed = unverified, no independent benchmark</text>
+
+</svg>
