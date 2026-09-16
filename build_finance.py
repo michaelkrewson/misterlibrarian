@@ -6759,7 +6759,8 @@ def build_sitemap(entries, tags):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(BASE_URL, today), ("%sboard.html" % BASE_URL, today),
             ("%sbitcoin.html" % BASE_URL, today), ("%streasuries.html" % BASE_URL, today),
-            ("%scrypto.html" % BASE_URL, today), ("%smoney-worldwide.html" % BASE_URL, today),
+            ("%scrypto.html" % BASE_URL, today), ("%scrypto-screener.html" % BASE_URL, today),
+            ("%smoney-worldwide.html" % BASE_URL, today),
             ("%sask.html" % BASE_URL, today)]
     urls += [("%s%s" % (BASE_URL, meta["file"]), today)
              for meta in TREASURY_CATEGORIES.values()]
