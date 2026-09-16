@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img"
+     aria-label="Bar chart of Basel III capital risk weights: a sovereign bond at roughly 20 percent, a typical corporate loan at 100 percent, a bank's own equity holding at roughly 250 percent, and an unbacked cryptoasset such as XRP or Bitcoin, classified Group 2b, at 1,250 percent — meaning a bank must hold capital equal to the full value of the exposure, and then some">
+  <rect width="900" height="420" fill="#0a0f1a"/>
+
+  <!-- linear scale: 0% to 1300% mapped to x=140..820 (680px), 0.523px per percentage point -->
+  <line x1="140" y1="350" x2="820" y2="350" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
+  <g font-family="Georgia, serif" font-size="13" fill="#94a3b8" text-anchor="middle">
+    <text x="140" y="372">0%</text>
+    <text x="270" y="372">250%</text>
+    <text x="400" y="372">500%</text>
+    <text x="530" y="372">750%</text>
+    <text x="660" y="372">1,000%</text>
+    <text x="817" y="372">1,250%</text>
+  </g>
+
+  <!-- 100%-of-exposure reference line -->
+  <line x1="192" y1="40" x2="192" y2="350" stroke="rgba(255,255,255,.14)" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="192" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#7f8fa6">100% — capital equal to the exposure itself</text>
+
+  <!-- row 1: sovereign bond, ~20% -->
+  <text x="140" y="70" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">A sovereign bond, roughly</text>
+  <rect x="140" y="82" width="10.5" height="22" rx="4" fill="#5c6b85" opacity="0.9"/>
+  <text x="160" y="98" font-family="Georgia, serif" font-size="15" fill="#e8dfd2" font-weight="bold">20%</text>
+
+  <!-- row 2: corporate loan, 100% -->
+  <text x="140" y="140" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">A typical corporate loan, roughly</text>
+  <rect x="140" y="152" width="52.3" height="22" rx="4" fill="#5c6b85" opacity="0.9"/>
+  <text x="202" y="168" font-family="Georgia, serif" font-size="15" fill="#e8dfd2" font-weight="bold">100%</text>
+
+  <!-- row 3: bank's own equity holding, ~250% -->
+  <text x="140" y="210" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">A bank's own equity holding, roughly</text>
+  <rect x="140" y="222" width="130.8" height="22" rx="4" fill="#5c6b85" opacity="0.9"/>
+  <text x="281" y="238" font-family="Georgia, serif" font-size="15" fill="#e8dfd2" font-weight="bold">250%</text>
+
+  <!-- row 4: Group 2b crypto (XRP, Bitcoin, Ether...), 1250% -->
+  <text x="140" y="280" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">XRP, Bitcoin, Ether — every unbacked cryptoasset</text>
+  <rect x="140" y="292" width="654" height="22" rx="4" fill="#f7931a" opacity="0.95"/>
+  <text x="804" y="308" font-family="Georgia, serif" font-size="15" fill="#e8dfd2" font-weight="bold" text-anchor="end">1,250%</text>
+
+  <text x="140" y="404" font-family="Georgia, serif" font-size="13.5" fill="#94a3b8" font-style="italic">
+    Same 1,250% weight for every unbacked cryptoasset — Bitcoin and Ether included, not a rule aimed at XRP.
+  </text>
+</svg>
