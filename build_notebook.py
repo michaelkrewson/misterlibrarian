@@ -80,6 +80,7 @@ from __future__ import annotations
 import collections
 import datetime as dt
 import html
+import json
 import os
 import re
 import sys
@@ -180,6 +181,9 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "notebook")
 ENTRY_SRC = os.path.join(ROOT, "source", "notebook")
+# The front page's rundown box (see _load_rundown/_rundown_box below) — a
+# leading underscore so load_entries() ignores it like _template.html.
+RUNDOWN_FILE = os.path.join(ENTRY_SRC, "_rundown.json")
 
 # Periwinkle ink. Chosen against the four colours it has to sit beside in a
 # shared nav/footer/hub: the Ledger's Bitcoin amber (#f7931a), the travel blog's
@@ -415,6 +419,64 @@ def _entry_hero(e):
     cap = "<figcaption>%s</figcaption>" % e["hero_credit"] if e["hero_credit"] else ""
     return ('<figure class="hero"><img src="img/%s" alt="%s"%s loading="eager"/>%s</figure>'
             % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
+
+
+def _load_rundown():
+    """The front page's rundown box: a hand-maintained running list of the
+    day's stories, each one plain text until it becomes its own entry, at
+    which point it turns into a link. Lives in source/notebook/_rundown.json
+    rather than as a dated entry — it's a standing box that gets edited in
+    place, not a post — so it is deliberately outside load_entries()'s
+    YYYY-MM-DD-slug.html contract. Optional: no file, no box."""
+    if not os.path.exists(RUNDOWN_FILE):
+        return None
+    with open(RUNDOWN_FILE, encoding="utf-8") as fh:
+        data = json.load(fh)
+    for sec in data.get("sections", []):
+        for item in sec.get("items", []):
+            item.setdefault("href", "")
+    return data
+
+
+def _rundown_box(data, entries=()):
+    """The front-page rundown box. `entries` is the same pool build_front()
+    already has — used only to detect whether any past rundown has been
+    archived yet (tagged "rundown", see tools/archive_rundown.py), so the
+    "See past rundowns" link never points at a tag page with nothing on it."""
+    if not data or not data.get("sections"):
+        return ""
+    date_label = data.get("date", "")
+    try:
+        y, m, d = (int(p) for p in date_label.split("-"))
+        date_label = blogkit.pretty_date(dt.date(y, m, d))
+    except ValueError:
+        pass
+    parts = ['<section class="rundown">',
+             '    <h2 class="rdtitle">%s</h2>' % esc(data.get("title") or "The rundown")]
+    if date_label:
+        parts.append('    <p class="rddate">%s</p>' % esc(date_label))
+    if data.get("note"):
+        parts.append('    <p class="rdnote">%s</p>' % esc(data["note"]))
+    for sec in data["sections"]:
+        items = sec.get("items", [])
+        if not items:
+            continue
+        lis = []
+        for it in items:
+            text = esc(it.get("text", ""))
+            href = it.get("href", "").strip()
+            if href:
+                lis.append('<li><a href="%s">%s</a></li>' % (esc(href), text))
+            else:
+                lis.append("<li>%s</li>" % text)
+        parts.append('    <h3 class="rdsec">%s</h3>' % esc(sec.get("label", "")))
+        parts.append('    <ul class="rdlist">%s</ul>' % "".join(lis))
+    has_archive = any("rundown" in {t.lower() for t in e.get("tags", ())} for e in entries)
+    if has_archive:
+        parts.append('    <p class="rdarchive"><a href="%s">See past rundowns →</a></p>'
+                      % _tag_file("rundown"))
+    parts.append("  </section>")
+    return "\n".join(parts) + "\n"
 
 
 def _comment_box(title, url):
@@ -1045,11 +1107,12 @@ def build_front(entries):
     index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
+    rundown = _rundown_box(_load_rundown(), entries)
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=FRONT_DESC, url=url, active="home",
-        body="%s%s%s%s\n%s\n" % (_front_hero(), intro, listing, index_hits_html,
-                                 _comment_box(SITE_NAME, url)),
+        body="%s%s%s%s%s\n%s\n" % (_front_hero(), intro, rundown, listing, index_hits_html,
+                                    _comment_box(SITE_NAME, url)),
         extra_js=js)
 
 
@@ -1261,6 +1324,27 @@ footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 @media (max-width:720px){
   .fronthero img{height:170px;border-radius:10px}
   .fronthero figcaption{font-size:12px}
+}
+
+/* ── the rundown box: a running list of story candidates, front and center
+   on the index page. Hand-maintained in source/notebook/_rundown.json — an
+   item is plain text until it becomes its own entry, at which point it turns
+   into a link. Same accent-edged treatment as an in-entry .aside (see the
+   .entry .aside rule below), sized for the front page instead. */
+.rundown{margin:26px 0 34px;padding:22px 26px;border-left:3px solid __ACCENT__;
+  border-radius:0 12px 12px 0;background:#0a111c}
+.rdtitle{margin:0 0 4px;font-size:19px;font-weight:400;color:#e8eef7}
+.rddate{margin:0 0 14px;color:#7f8fa6;font-size:13px;font-style:italic}
+.rdnote{margin:0 0 18px;color:#93a4bd;font-size:14.5px;line-height:1.6}
+.rdsec{margin:18px 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.03em;
+  text-transform:uppercase;color:__ACCENT__}
+.rdsec:first-of-type{margin-top:0}
+.rdlist{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
+.rdlist li{margin:0 0 7px}
+.rdlist a:hover{text-decoration:underline}
+@media (max-width:720px){
+  .rundown{padding:18px 18px;margin:22px 0 28px}
+  .rdtitle{font-size:17px}
 }
 
 /* ── header: brand left, search right; nav on its own row underneath ────── */
