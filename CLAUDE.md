@@ -910,6 +910,30 @@ illustration keep the source and licence for `hero_credit:`). The sitemap is adv
 the root `robots.txt`; **submit `notebook/sitemap.xml` once in Google Search Console** — a
 human step, same as the other three.
 
+**The rundown box (added 2026-09-16, Michael's call):** a pinned box under the front-page
+hero — deliberately NOT a dated entry, so it survives regardless of what else publishes and
+never falls off the six-tile front page. Hand-maintained in `source/notebook/_rundown.json`
+(a leading underscore, like `_template.html`, so `load_entries()` ignores it): a `date`, an
+optional `note`, and `sections` of `{label, items:[{text, href}]}`. An item with no `href`
+renders as plain text; add one once the item becomes its own entry, and it turns into a link
+— the whole point being that unwritten story candidates and published entries can sit in the
+same list. Rendered by `_rundown_box()` in `build_notebook.py`, wired into `build_front()`.
+Mixed money-and-everything-else content belongs here rather than the Ledger on purpose: the
+Ledger is for pieces whose *spine* is a price or an institution that moves money (same rule as
+`notes` above); a digest that's deliberately Fed-hike-next-to-a-Mars-launch is the Notebook's
+job, even on days it's mostly money news.
+
+**Archiving a rundown:** `python3 tools/archive_rundown.py` turns the live box into a real,
+dated, `rundown`-tagged entry (using the ordinary entry pipeline — no new mechanism) and
+resets `_rundown.json` for the next cycle (`--keep` archives without resetting). Every past
+rundown collects on `tag-rundown.html` for free, via the same tag-page mechanism every other
+tag already gets — that page IS the years-over-years archive, no separate index to maintain.
+The front page shows a "See past rundowns →" link to it, but only once at least one rundown
+has actually been archived (`_rundown_box()` checks the entry pool for the `rundown` tag
+before linking, so it never points at an empty page). Default `--section world` (it's a news
+roundup); override per run if a given day's rundown leans hard the other way. Run
+`python3 build_notebook.py` after, same as any entry.
+
 ## Source archive
 
 **Read from it. That is the whole point of it.** ⚠️ Paid for 2026-08-18: the

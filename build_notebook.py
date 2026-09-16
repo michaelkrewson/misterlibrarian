@@ -438,13 +438,17 @@ def _load_rundown():
     return data
 
 
-def _rundown_box(data):
+def _rundown_box(data, entries=()):
+    """The front-page rundown box. `entries` is the same pool build_front()
+    already has — used only to detect whether any past rundown has been
+    archived yet (tagged "rundown", see tools/archive_rundown.py), so the
+    "See past rundowns" link never points at a tag page with nothing on it."""
     if not data or not data.get("sections"):
         return ""
     date_label = data.get("date", "")
     try:
         y, m, d = (int(p) for p in date_label.split("-"))
-        date_label = dt.date(y, m, d).strftime("%B %d, %Y").replace(" 0", " ")
+        date_label = blogkit.pretty_date(dt.date(y, m, d))
     except ValueError:
         pass
     parts = ['<section class="rundown">',
@@ -467,6 +471,10 @@ def _rundown_box(data):
                 lis.append("<li>%s</li>" % text)
         parts.append('    <h3 class="rdsec">%s</h3>' % esc(sec.get("label", "")))
         parts.append('    <ul class="rdlist">%s</ul>' % "".join(lis))
+    has_archive = any("rundown" in {t.lower() for t in e.get("tags", ())} for e in entries)
+    if has_archive:
+        parts.append('    <p class="rdarchive"><a href="%s">See past rundowns →</a></p>'
+                      % _tag_file("rundown"))
     parts.append("  </section>")
     return "\n".join(parts) + "\n"
 
@@ -1099,7 +1107,7 @@ def build_front(entries):
     index_hits = _hits_widget("%s/index.html" % BASE, " visits to this page")
     index_hits_html = ('\n  <p class="pagehits">%s</p>' % index_hits) if index_hits else ""
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
-    rundown = _rundown_box(_load_rundown())
+    rundown = _rundown_box(_load_rundown(), entries)
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=FRONT_DESC, url=url, active="home",
