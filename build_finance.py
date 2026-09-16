@@ -144,6 +144,7 @@ BTC_SRC = os.path.join(ROOT, "source", "finance", "bitcoin_stats.json")
 TREASURIES_SRC = os.path.join(ROOT, "source", "finance", "treasuries.json")
 CEBE_SRC = os.path.join(ROOT, "source", "finance", "cebe.json")
 CRYPTO_SRC = os.path.join(ROOT, "source", "finance", "crypto_heatmap.json")
+SCREENER_SRC = os.path.join(ROOT, "source", "finance", "crypto_screener.json")
 MONEY_WORLDWIDE_SRC = os.path.join(ROOT, "source", "finance", "money_worldwide.json")
 OUT = os.path.join(ROOT, "finance")
 ENTRY_SRC = os.path.join(ROOT, "source", "finance")
@@ -694,10 +695,12 @@ def _nav(active=""):
             '<a href="bitcoin.html"%s>Bitcoin Board</a>'
             '<a href="treasuries.html"%s>Bitcoin Treasuries</a>'
             '<a href="crypto.html"%s>Crypto Heat Map</a>'
+            '<a href="crypto-screener.html"%s>Crypto Screener</a>'
             '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
             '<a href="money-worldwide.html"%s>Money Worldwide</a>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
-                        cls("crypto"), cls("humanity"), cls("money-worldwide")))
+                        cls("crypto"), cls("crypto-screener"), cls("humanity"),
+                        cls("money-worldwide")))
 
 
 def _chrome(active=""):
@@ -779,6 +782,7 @@ def _foot(hits_path=None):
             '<a href="bitcoin.html">The Bitcoin Board</a> · '
             '<a href="treasuries.html">Bitcoin Treasuries</a> · '
             '<a href="crypto.html">The Crypto Heat Map</a> · '
+            '<a href="crypto-screener.html">The Crypto Screener</a> · '
             '<a href="humanity.html">Bitcoin vs. Humanity</a> · '
             '<a href="money-worldwide.html">Money Worldwide</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
@@ -3151,6 +3155,172 @@ def build_crypto_heatmap(board):
     return _shell(title="The Crypto Heat Map — top 100 cryptocurrencies — %s" % SITE_NAME,
                   desc=desc, url="%scrypto.html" % BASE_URL, active="crypto",
                   body=body, extra_css=CRYPTO_CSS, extra_js=CRYPTO_JS)
+
+
+# ─────────────────────────────────────────────────────────── the Crypto Screener ──
+#
+# An independent, self-contained reimplementation of the 4-pillar scoring behind
+# mstr-trader's own private MiSTeRCryptoScreener — see tools/fetch_crypto_screener.py's
+# own docstring for the full story (why CoinGecko rather than that tool's own output,
+# what's genuinely adapted vs. faithfully ported, and why there is deliberately no
+# BUY/HOLD/TRIM/AVOID label anywhere on this page). Reuses MW_JS unmodified for
+# sorting — same `table.mw-sort` + `th[data-sort]` + `tr data-*` contract, no new
+# client-side script needed.
+
+SCREENER_PILLARS = (
+    ("composite", "Score"), ("trend_score", "Trend"), ("momentum_score", "Momentum"),
+    ("vol_score", "Volatility"), ("rel_strength_score", "Rel. Strength"),
+)
+
+
+def _screener_bar(v):
+    """A plain 0-100 gradient bar — deliberately the same visual language
+    regardless of whether the number is good or bad news, since this board
+    shows a measurement, not a verdict (no green-means-buy/red-means-sell)."""
+    if v is None:
+        return '<span class="neutral">—</span>'
+    v = max(0.0, min(100.0, v))
+    hue = 200 - v * 1.1  # a single blue→amber gradient, not red/green
+    return (f'<span class="scb" title="{v:.1f}"><span class="scbfill" '
+            f'style="width:{v:.0f}%;background:hsl({hue:.0f},55%,55%)"></span></span>')
+
+
+def _screener_row(r):
+    return f"""      <tr data-composite="{r['composite']}" data-trend="{r['trend_score']}"
+        data-momentum="{r['momentum_score']}" data-vol="{r['vol_score']}"
+        data-rs="{r['rel_strength_score']}" data-ret1m="{r.get('ret_1m') or 0}"
+        data-ret3m="{r.get('ret_3m') or 0}" data-price="{r.get('price') or 0}">
+        <td class="rk">{r['rank']}</td>
+        <td class="as"><span class="asw">{crypto_mark(r)}<span class="nm">
+          <span class="n1">{esc(r['symbol'])}</span>
+          <span class="n2">{esc(r['name'])}</span>
+        </span></span></td>
+        <td class="px">{crypto_px(r.get('price'))}</td>
+        <td>{_screener_bar(r['composite'])}</td>
+        <td>{_screener_bar(r['trend_score'])}</td>
+        <td>{_screener_bar(r['momentum_score'])}</td>
+        <td>{_screener_bar(r['vol_score'])}</td>
+        <td>{_screener_bar(r['rel_strength_score'])}</td>
+        <td class="ch chp {'up' if (r.get('ret_1m') or 0) >= 0 else 'down'}">{pct(r.get('ret_1m'))}</td>
+        <td class="ch chp {'up' if (r.get('ret_3m') or 0) >= 0 else 'down'}">{pct(r.get('ret_3m'))}</td>
+      </tr>"""
+
+
+def _screener_table(rows):
+    body = "\n".join(_screener_row(r) for r in rows)
+    return f"""  <div class="tw">
+  <table class="board crypto mw-sort">
+    <thead>
+      <tr>
+        <th class="rk" data-sort="composite">#</th>
+        <th class="as">Coin</th>
+        <th class="px" data-sort="price">Price</th>
+        <th data-sort="composite">Score ▼</th>
+        <th data-sort="trend">Trend</th>
+        <th data-sort="momentum">Momentum</th>
+        <th data-sort="vol">Volatility</th>
+        <th data-sort="rs">Rel. Strength</th>
+        <th class="ch" data-sort="ret1m">1M</th>
+        <th class="ch" data-sort="ret3m">3M</th>
+      </tr>
+    </thead>
+    <tbody>
+{body}
+    </tbody>
+  </table>
+  </div>"""
+
+
+def _screener_unscored(rows):
+    if not rows:
+        return ""
+    items = "\n".join(
+        f'      <li>{crypto_mark(r)} <b>{esc(r["symbol"])}</b> '
+        f'<span class="dim">{esc(r["name"])} · {crypto_px(r.get("price"))}</span></li>'
+        for r in sorted(rows, key=lambda r: r["symbol"]))
+    return f"""  <div class="panel">
+    <p><b>{len(rows)} more coin{"" if len(rows) == 1 else "s"} not yet scored:</b>
+    each needs a year of its own daily price HISTORY on file before Trend, Momentum,
+    Volatility and Relative Strength can be computed — not a year to fetch it. That
+    history arrives a handful of coins at a time (CoinGecko rate-limits how fast an
+    anonymous caller can pull it), so this list typically empties out within about a
+    day of a fresh start, never all at once. Nothing here is ever guessed at in the
+    meantime — a coin just waits here, showing its real price, until its real score
+    is ready.</p>
+    <ul class="screenerwait">
+{items}
+    </ul>
+  </div>"""
+
+
+SCREENER_CSS = """
+.scb{display:inline-block;width:64px;height:8px;border-radius:4px;background:#00000014;
+  vertical-align:middle;position:relative;overflow:hidden}
+:root[data-theme="dark"] .scb, @media (prefers-color-scheme:dark){.scb{background:#ffffff1a}}
+.scbfill{display:block;height:100%;border-radius:4px}
+.screenerwait{list-style:none;padding:0;margin:0;display:grid;gap:6px;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.screenerwait li{display:flex;align-items:center;gap:8px;font-size:13px}
+"""
+
+
+def build_crypto_screener(board):
+    rows = board.get("rows", [])
+    unscored = board.get("unscored", [])
+    crawl = board.get("crawl", {})
+    covered, total = crawl.get("covered", 0), crawl.get("total", len(rows) + len(unscored))
+
+    desc = ("A curated ~%d-coin universe ranked on Trend, Momentum, Volatility and "
+            "Relative Strength vs. Bitcoin — the calculations behind a screener, with "
+            "no buy/sell verdict attached to any coin." % total)
+
+    body = f"""  <h1 class="btitle">The Crypto Screener</h1>
+  <p class="lede">A curated universe of {total} coins, scored across four pillars —
+  Trend, Momentum, Volatility, and Relative Strength against Bitcoin — and ranked by
+  a composite of the four. This shows the calculations, not a recommendation: there
+  is no buy, sell, or hold label anywhere on this page.</p>
+  <p class="stamp">Updated {esc(board.get('generated', '—'))}
+    <span class="dot">·</span><span class="hl">{len(rows)} of {total} coins scored</span></p>
+  <p class="crynote">Data provided by <a href="https://www.coingecko.com" target="_blank"
+    rel="noopener">CoinGecko</a>.</p>
+{_screener_table(rows)}
+{_screener_unscored(unscored)}
+  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p>Every coin is scored on four pillars, weighted <b>Trend 35% / Momentum 35% /
+    Volatility 15% / Relative Strength 15%</b>: <b>Trend</b> is price against its own
+    20/50/200-day moving averages, plus whether the 50-day average is itself rising
+    and above the 200-day (a "golden cross"). <b>Momentum</b> blends a 1-month and
+    3-month return, ranked against every other coin in the universe, refined by a
+    small bounded adjustment for RSI position, recent volume expansion, and MACD
+    direction. <b>Volatility</b> rewards a coin trading in its own normal range and
+    penalises one that has gone dormant or is spiking — moderate is "good," not
+    high or low on its own. <b>Relative Strength</b> is the same 1-month/3-month
+    blend, but measured as <i>excess</i> return over Bitcoin's own, ranked the same
+    way — is this coin outperforming the market's own benchmark, not just rising.</p>
+    <p><b>Volatility here is not a true ATR%</b>, the way it is in some private
+    tools — CoinGecko's public data gives one closing price per coin per day, not
+    the intraday High/Low a true trading range needs. This uses the size of each
+    day's price move instead (a close-to-close realized-volatility proxy), scored
+    against that same coin's own 20-day average the identical way a true ATR% would
+    be — same goal, same shape of scoring, a different raw ingredient.</p>
+    <p><b>{covered} of {total}</b> coins have a full year of history cached so far —
+    CoinGecko rate-limits how fast an anonymous caller can pull a coin's own daily
+    price history (a handful of coins per run before it says no), the same
+    paced-crawl approach as this Ledger's Crypto Heat Map board. That's a limit on
+    SPEED, not on whether a coin ever gets there — with the boards refreshing several
+    times a day, a fresh universe typically finishes filling in within about a day,
+    not weeks or months. A coin not yet reached shows its price and name above but
+    no score — never a guessed one.</p>
+    <p>This is a snapshot of the market, not a recommendation. Nothing here is
+    investment advice, and a coin's score is not an endorsement of it — a screener
+    ranks against its own universe, not against every coin that exists.</p>
+  </div>
+{_comment_box("The Crypto Screener", "%scrypto-screener.html" % BASE_URL)}
+"""
+    return _shell(title="The Crypto Screener — Trend, Momentum, Volatility, Relative Strength — %s" % SITE_NAME,
+                  desc=desc, url="%scrypto-screener.html" % BASE_URL, active="crypto-screener",
+                  body=body, extra_css=CRYPTO_CSS + SCREENER_CSS, extra_js=MW_JS)
 
 
 # ─────────────────────────────────────────────────────────── the Treasuries board ──
@@ -6714,6 +6884,26 @@ def main():
         write("crypto.html", build_crypto_heatmap(crypto))
     else:
         print("  ! no crypto heat map — leaving the last Crypto Heat Map page in place",
+              file=sys.stderr)
+
+    # The Crypto Screener is optional by the same contract as every other board:
+    # missing/unreadable JSON costs exactly its own page. Unlike the others it can
+    # render meaningfully with an EMPTY `rows` list (every coin still mid-crawl on
+    # a brand-new checkout) — that's a real, honest state (see _screener_unscored),
+    # not a reason to skip the page, so this only checks the file loaded, not that
+    # it already has scored rows.
+    screener = None
+    if os.path.exists(SCREENER_SRC):
+        try:
+            with open(SCREENER_SRC, encoding="utf-8") as fh:
+                screener = json.load(fh)
+        except (ValueError, OSError) as exc:
+            print("  ! crypto_screener.json unreadable (%s) — skipping the Crypto "
+                  "Screener" % exc, file=sys.stderr)
+    if screener:
+        write("crypto-screener.html", build_crypto_screener(screener))
+    else:
+        print("  ! no crypto screener — leaving the last Crypto Screener page in place",
               file=sys.stderr)
 
     btc_page = build_bitcoin_board(stats, board) if stats else None

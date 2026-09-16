@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Gold Reserves — Money Worldwide — The Librarian&#x27;s Ledger</title>
-<meta name="description" content="Gold Reserves — Official-sector gold reserves by country, priced at today&#x27;s live gold quote. Part of the Money Worldwide board."/>
-<link rel="canonical" href="https://mistertranslation.com/finance/money-worldwide-gold.html"/>
+<title>The Crypto Screener — Trend, Momentum, Volatility, Relative Strength — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="A curated ~32-coin universe ranked on Trend, Momentum, Volatility and Relative Strength vs. Bitcoin — the calculations behind a screener, with no buy/sell verdict attached to any coin."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/crypto-screener.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
-<meta property="og:title" content="Gold Reserves — Money Worldwide — The Librarian&#x27;s Ledger"/>
-<meta property="og:description" content="Gold Reserves — Official-sector gold reserves by country, priced at today&#x27;s live gold quote. Part of the Money Worldwide board."/>
-<meta property="og:url" content="https://mistertranslation.com/finance/money-worldwide-gold.html"/>
+<meta property="og:title" content="The Crypto Screener — Trend, Momentum, Volatility, Relative Strength — The Librarian&#x27;s Ledger"/>
+<meta property="og:description" content="A curated ~32-coin universe ranked on Trend, Momentum, Volatility and Relative Strength vs. Bitcoin — the calculations behind a screener, with no buy/sell verdict attached to any coin."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/crypto-screener.html"/>
 <meta property="og:image" content="https://mistertranslation.com/finance/img/og-default.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Gold Reserves — Money Worldwide — The Librarian&#x27;s Ledger"/>
-<meta name="twitter:description" content="Gold Reserves — Official-sector gold reserves by country, priced at today&#x27;s live gold quote. Part of the Money Worldwide board."/>
+<meta name="twitter:title" content="The Crypto Screener — Trend, Momentum, Volatility, Relative Strength — The Librarian&#x27;s Ledger"/>
+<meta name="twitter:description" content="A curated ~32-coin universe ranked on Trend, Momentum, Volatility and Relative Strength vs. Bitcoin — the calculations behind a screener, with no buy/sell verdict attached to any coin."/>
 <meta name="twitter:image" content="https://mistertranslation.com/finance/img/og-default.png"/>
 <style>
 *{box-sizing:border-box}
@@ -459,127 +459,68 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   .n1{font-size:14px}
 }
 
-/* ── The Treasuries board ─────────────────────────────────────────────────────
-   Appended only to treasuries*.html (see _shell's extra_css) — namespaced .trs*
-   so it can never collide with the asset table's .board/.mc/.px it also reuses. */
-.trs-hl{color:#f7931a;font-variant-numeric:tabular-nums}
-.trsboxes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0 0}
-.trsbox{display:block;padding:18px 20px;border:1px solid #24303f;border-radius:13px;
-  background:linear-gradient(158deg,#111927 0%,#0a111c 64%);
-  text-decoration:none;color:inherit;transition:border-color .15s}
-.trsbox:hover{border-color:#f7931a}
-.trsbox .tb-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.trsbox .tb-i{font-size:20px}
-.trsbox .tb-t{font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#93a4bd;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsbox .tb-v{margin-top:9px;font-size:24px;line-height:1.15;color:#f7931a;
-  letter-spacing:-.01em;font-variant-numeric:tabular-nums;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trsbox .tb-s{margin-top:6px;font-size:13px;color:#93a4bd;line-height:1.4}
-.trsbox .tb-d{margin:12px 0 0;padding-top:12px;border-top:1px solid #1b2534;
-  font-size:13px;color:#93a4bd;line-height:1.45}
-.pc{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap;text-align:right}
-.trscat{display:block;margin-top:2px;font-size:11px;color:#6e7d92}
-.ao{font-variant-numeric:tabular-nums;color:#5a6b80;font-size:12.5px;white-space:nowrap}
-.ao.v{color:#7f8fa6}
-.trsfresh{margin:20px 0 0;color:#5a6b80;font-size:12.5px;font-style:italic;line-height:1.6}
-.board tfoot td{border-top:2px solid #24303f;border-bottom:0;padding-top:12px;
-  font-weight:700;color:#e8eef7}
-.board tfoot .mc,.board tfoot .px,.board tfoot .pc{color:#f7931a}
-.trstot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-@media (max-width:900px){.trsboxes{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.trsboxes{grid-template-columns:1fr}}
-
-/* The Bitcoin Board's own coin mark (BB_COIN_SVG) + its glow, reused here so
-   the H1 on every Treasuries page literally carries the same Bitcoin logo —
-   just this one component out of BB_CSS, not the whole stylesheet, since
-   these pages don't draw the rest of that page's chart/grid. Keep both in
-   sync if the coin mark itself ever changes. */
-.bbmark{position:relative;display:inline-flex;align-items:center;justify-content:center;
-  width:1.16em;height:1.16em;margin-right:.34em;vertical-align:-.17em}
-.bbmark::before{content:"";position:absolute;inset:-58%;border-radius:50%;
-  background:radial-gradient(circle,rgba(247,147,26,.60) 0%,rgba(247,147,26,.34) 32%,
-    rgba(247,147,26,.10) 55%,rgba(247,147,26,0) 72%);
-  animation:bbglow 4.2s ease-in-out infinite}
-.bbmark svg{position:relative;width:100%;height:100%;display:block;
-  filter:drop-shadow(0 1px 7px rgba(247,147,26,.60))}
-@keyframes bbglow{0%,100%{opacity:.6;transform:scale(.92)}
-  50%{opacity:1;transform:scale(1.08)}}
-
-.trskicker{margin:0 0 10px}
-.trskicker a{display:inline-flex;align-items:center;font-size:12px;letter-spacing:.1em;
-  text-transform:uppercase;color:#7f8fa6;text-decoration:none;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.trskicker a:hover{color:#f7931a}
-.trskicker .bbmark{width:1em;height:1em}
-
-/* ⚠️ Must stay LAST — see BB_CSS's own note on why a rule of equal
-   specificity placed earlier silently loses to this one. */
-@media (prefers-reduced-motion:reduce){
-  .bbmark::before{animation:none;opacity:.8}
+/* ── The Crypto Heat Map ─────────────────────────────────────────────────── */
+.cryh{margin:38px 0 4px;font-size:20px;font-weight:500;color:#e8eef7}
+.crycount{margin-left:8px;font-size:12.5px;font-weight:400;color:#6e7d92}
+.crysub{margin:0 0 14px;color:#8b9ab0;font-size:13.5px;max-width:640px}
+.chtabs{display:flex;flex-wrap:wrap;gap:5px;margin:20px 0 10px}
+.crynote{margin:0 0 8px;color:#6e7d92;font-size:12.5px;font-style:italic}
+table.crypto td.ch{transition:background .15s;border-radius:4px}
+table.crypto td.cs{font-variant-numeric:tabular-nums;color:#a9b7c9;white-space:nowrap}
+.treemapwrap{margin:20px 0 6px;container-type:inline-size}
+.treemap{position:relative;width:100%;aspect-ratio:1000/520;border-radius:10px;
+  overflow:hidden;background:#0a111c}
+.crycat-hdr{position:absolute;display:flex;align-items:center;padding:0 10px;
+  background:#05080d;color:#e8eef7;font-size:clamp(9px,1.3cqw,14px);font-weight:600;
+  letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:2;
+  box-sizing:border-box}
+.crytile{position:absolute;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:1px;outline:1px solid rgba(5,8,13,.55);color:#fff;
+  text-align:center;overflow:hidden;text-shadow:0 1px 2px rgba(0,0,0,.35);
+  box-sizing:border-box;transition:filter .12s;font-family:ui-sans-serif,system-ui,sans-serif;
+  text-decoration:none;cursor:pointer}
+.crytile:hover{filter:brightness(1.15);z-index:3}
+.ctsym,.ctpx,.ctpc,.ctdom{max-width:96%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ctsym{font-weight:700;line-height:1.05}
+.ctpx{opacity:.85;line-height:1.15}
+.ctpc{font-weight:600;line-height:1.15}
+.ctdom{opacity:.8;font-style:italic;line-height:1.15;margin-top:2px}
+.crytot-l{color:#93a4bd;font-weight:600;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+/* The grand total's own double rule (accounting-style "this is the final
+   sum") — set apart from every per-category subtotal's plain single line.
+   Needs the same `tr:last-child` as the shared `.board tr:last-child td`
+   rule it's overriding (that rule zeroes the last row's border on every
+   plain data table); matching it is what wins the specificity tie instead
+   of reaching for !important. */
+table.crygrand tfoot tr:last-child td{border-bottom:3px double #3a4f66;padding-bottom:14px}
+/* The flash a table row gets when a treemap tile scrolls it into view —
+   fades from the accent colour back to nothing so the reader's eye lands on
+   the right row without a jarring permanent highlight. */
+table.crypto tr.cryflash td{background:rgba(247,147,26,.28);transition:background 1.3s ease-out}
+/* Each coin's cached logo gets a soft colour glow behind it — the same
+   per-name colour its monogram fallback would use, so a coin reads
+   consistently whether or not its logo was cached. `::before` sits behind
+   the <img> (z-index) and blurs a radial swatch of that colour outward past
+   the 28px icon; the icon's own shared `.mk` background (opaque, meant to
+   backstop a transparent PNG on a light theme) is cleared here so the glow
+   actually shows through instead of being boxed in by it. */
+.mkglow{position:relative;display:inline-flex;align-items:center;justify-content:center;
+  width:28px;height:28px;flex:0 0 28px}
+.mkglow::before{content:"";position:absolute;inset:-7px;border-radius:50%;
+  background:radial-gradient(circle,var(--glow) 0%,transparent 70%);
+  opacity:.55;filter:blur(3px);z-index:0}
+.mkglow .mk{position:relative;z-index:1;background:transparent}
+@media (max-width:720px){
+  .mkglow{width:24px;height:24px;flex:0 0 24px}
 }
 
-/* ── The Money Worldwide board ────────────────────────────────────────────────
-   Namespaced .mw* so it can never collide with .board/.trs*/.cbe* it also
-   reuses for its tables. */
-.mwlede-hl{color:#f7931a;font-variant-numeric:tabular-nums}
-table.mw-sort th[data-sort]{cursor:pointer;user-select:none;white-space:nowrap}
-table.mw-sort th[data-sort]:hover{color:#e8eef7}
-table.mw-sort td{font-variant-numeric:tabular-nums;white-space:nowrap}
-table.mw-sort td.mw-nm{white-space:normal}
-.mw-sub{display:block;margin-top:1px;font-size:11px;color:#6e7d92}
-.mw-r{color:#f87171}
-.mwh2{margin:34px 0 4px;font-weight:400;font-size:19px}
-.mwsub{margin:0 0 14px;color:#93a4bd;font-size:14px;line-height:1.55}
-.mwcaveat{margin:10px 0 0;padding:11px 14px;border-left:3px solid #f7931a;
-  background:#111927;border-radius:0 8px 8px 0;color:#a9b7c9;font-size:13px;
-  line-height:1.55}
-.mwscarcity{margin:22px 0 0;display:flex;flex-direction:column;gap:14px}
-.mwbarrow{display:grid;grid-template-columns:230px 1fr auto;align-items:center;gap:12px}
-.mwbarrow .mwbl{font-size:13px;color:#c7d2e0}
-.mwbarrow .mwbv{font-variant-numeric:tabular-nums;color:#f7931a;font-weight:600;
-  white-space:nowrap;text-align:right;font-size:14.5px}
-.mwbartrack{position:relative;height:22px;background:#0a111c;border:1px solid #1b2534;
-  border-radius:6px;overflow:hidden}
-.mwbarfill{position:absolute;left:0;top:0;bottom:0;border-radius:5px 0 0 5px;
-  transition:width .2s}
-.mwbarnote{margin:2px 0 0;font-size:11.5px;color:#5a6b80;line-height:1.5;grid-column:1/-1}
-@media (max-width:640px){.mwbarrow{grid-template-columns:1fr}.mwbv{text-align:left}}
-/* Bigger, glowing icons — Michael's call, 2026-09-08. Scoped to THIS board only:
-   .trsbox .tb-i repeats the Treasuries board's own selector at equal specificity,
-   so it overrides that 20px rule here (MW_CSS loads after TREASURY_CSS) without
-   touching Treasuries' own cards, which never load this stylesheet at all.
-   .mw-page-icon is a brand-new class with nothing to collide with. */
-.trsbox .tb-i{font-size:34px;line-height:1;display:inline-block;
-  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
-.mw-page-icon{display:inline-block;font-size:1.3em;line-height:1;vertical-align:-0.1em;
-  filter:drop-shadow(0 0 6px #f7931a) drop-shadow(0 0 16px #f7931a)}
-/* The breadcrumb icon sits inside 12px kicker text — a much smaller stage
-   than the card/H1 icons, so it gets a lighter glow at a gentler size bump
-   rather than the same blur radius, which would read as a fuzzy blob at
-   this scale instead of a glow. */
-.mw-kicker-icon{display:inline-block;font-size:1.5em;line-height:1;vertical-align:-0.2em;
-  filter:drop-shadow(0 0 3px #f7931a) drop-shadow(0 0 8px #f7931a)}
-
-/* The currency-market-cap ranking on the Exchange Rates page (see
-   _mw_marketcap_table) — Bitcoin's row gets a soft pulsing orange glow
-   instead of the flat tint board.html's own tr.btc uses elsewhere on this
-   site (Michael's call, 2026-09-08: "highlight the Bitcoin row in orange
-   glow"). Applied to each <td> rather than the <tr> itself — box-shadow on
-   a table-row with border-collapse:collapse renders unreliably across
-   browsers, but every browser paints box-shadow on a table-cell correctly,
-   and three glowing cells read as one glowing row. */
-.mw-btcrow td{background:linear-gradient(90deg,rgba(247,147,26,.16),rgba(247,147,26,.03));
-  animation:mwbtcglow 2.6s ease-in-out infinite}
-.mw-btcrow .rk,.mw-btcrow .n1{color:#f7931a;font-weight:700}
-@keyframes mwbtcglow{
-  0%,100%{box-shadow:inset 0 0 0 1px rgba(247,147,26,.28),0 0 10px rgba(247,147,26,.22)}
-  50%{box-shadow:inset 0 0 0 1px rgba(247,147,26,.55),0 0 20px rgba(247,147,26,.42)}
-}
-@media (prefers-reduced-motion:reduce){
-  .mw-btcrow td{animation:none;
-    box-shadow:inset 0 0 0 1px rgba(247,147,26,.4),0 0 16px rgba(247,147,26,.3)}
-}
+.scb{display:inline-block;width:64px;height:8px;border-radius:4px;background:#00000014;
+  vertical-align:middle;position:relative;overflow:hidden}
+:root[data-theme="dark"] .scb, @media (prefers-color-scheme:dark){.scb{background:#ffffff1a}}
+.scbfill{display:block;height:100%;border-radius:4px}
+.screenerwait{list-style:none;padding:0;margin:0;display:grid;gap:6px;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.screenerwait li{display:flex;align-items:center;gap:8px;font-size:13px}
 </style>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -608,141 +549,261 @@ table.mw-sort td.mw-nm{white-space:normal}
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
-</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="crypto-screener.html">Crypto Screener</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html" class="on">Money Worldwide</a></nav></div></header>
-  <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
-  <h1 class="btitle"><span class="mw-page-icon">🪙</span> Gold Reserves</h1>
-  <p class="mwsub">Official-sector gold reserves by country, priced at today's live gold quote — shown separately from foreign-exchange reserves (its own page). Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-16 18:05 UTC · see <a
-    href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
+</svg><span class="wm">The Librarian's <span class="em">Ledger</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="board.html">Asset Board</a><a href="bitcoin.html">Bitcoin Board</a><a href="treasuries.html">Bitcoin Treasuries</a><a href="crypto.html">Crypto Heat Map</a><a href="crypto-screener.html" class="on">Crypto Screener</a><a href="humanity.html">Bitcoin vs. Humanity</a><a href="money-worldwide.html">Money Worldwide</a></nav></div></header>
+  <h1 class="btitle">The Crypto Screener</h1>
+  <p class="lede">A curated universe of 32 coins, scored across four pillars —
+  Trend, Momentum, Volatility, and Relative Strength against Bitcoin — and ranked by
+  a composite of the four. This shows the calculations, not a recommendation: there
+  is no buy, sell, or hold label anywhere on this page.</p>
+  <p class="stamp">Updated 2026-09-16 21:39 UTC
+    <span class="dot">·</span><span class="hl">8 of 32 coins scored</span></p>
+  <p class="crynote">Data provided by <a href="https://www.coingecko.com" target="_blank"
+    rel="noopener">CoinGecko</a>.</p>
   <div class="tw">
-  <table class="board mw-sort">
+  <table class="board crypto mw-sort">
     <thead>
       <tr>
-        <th>Country</th>
-        <th data-sort="tonnes" title="Official-sector gold reserves, in metric tons">Gold reserves</th>
-        <th data-sort="usd" title="Tons × troy ounces per ton × today's gold price">Value, today's price</th>
+        <th class="rk" data-sort="composite">#</th>
+        <th class="as">Coin</th>
+        <th class="px" data-sort="price">Price</th>
+        <th data-sort="composite">Score ▼</th>
+        <th data-sort="trend">Trend</th>
+        <th data-sort="momentum">Momentum</th>
+        <th data-sort="vol">Volatility</th>
+        <th data-sort="rs">Rel. Strength</th>
+        <th class="ch" data-sort="ret1m">1M</th>
+        <th class="ch" data-sort="ret3m">3M</th>
       </tr>
     </thead>
     <tbody>
-      <tr data-tonnes="8133" data-usd="1147696942462.371">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
-          <span class="nm"><span class="n1">United States</span></span></span></td>
-        <td>8,133 tons</td>
-        <td>$1,147,696,942,462</td>
+      <tr data-composite="99.4" data-trend="100.0"
+        data-momentum="100.0" data-vol="96.1"
+        data-rs="100.0" data-ret1m="120.65988008682082"
+        data-ret3m="93.6640032299748" data-price="0.16570703218269572">
+        <td class="rk">1</td>
+        <td class="as"><span class="asw"><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-arbitrum.jpg" alt="" width="28" height="28" loading="lazy"/></span><span class="nm">
+          <span class="n1">ARB</span>
+          <span class="n2">Arbitrum</span>
+        </span></span></td>
+        <td class="px">$0.1657</td>
+        <td><span class="scb" title="99.4"><span class="scbfill" style="width:99%;background:hsl(91,55%,55%)"></span></span></td>
+        <td><span class="scb" title="100.0"><span class="scbfill" style="width:100%;background:hsl(90,55%,55%)"></span></span></td>
+        <td><span class="scb" title="100.0"><span class="scbfill" style="width:100%;background:hsl(90,55%,55%)"></span></span></td>
+        <td><span class="scb" title="96.1"><span class="scbfill" style="width:96%;background:hsl(94,55%,55%)"></span></span></td>
+        <td><span class="scb" title="100.0"><span class="scbfill" style="width:100%;background:hsl(90,55%,55%)"></span></span></td>
+        <td class="ch chp up">+120.66%</td>
+        <td class="ch chp up">+93.66%</td>
       </tr>
-      <tr data-tonnes="3355" data-usd="473444392224.42584">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
-          <span class="nm"><span class="n1">Germany</span></span></span></td>
-        <td>3,355 tons</td>
-        <td>$473,444,392,224</td>
+      <tr data-composite="79.5" data-trend="90.0"
+        data-momentum="79.7" data-vol="48.4"
+        data-rs="85.7" data-ret1m="31.249299593845524"
+        data-ret3m="58.658458112423496" data-price="117.13748505860055">
+        <td class="rk">2</td>
+        <td class="as"><span class="asw"><span class="mkglow" aria-hidden="true" style="--glow:#5ec98f"><img class="mk" src="img/crypto-aave.png" alt="" width="28" height="28" loading="lazy"/></span><span class="nm">
+          <span class="n1">AAVE</span>
+          <span class="n2">Aave</span>
+        </span></span></td>
+        <td class="px">$117.14</td>
+        <td><span class="scb" title="79.5"><span class="scbfill" style="width:80%;background:hsl(113,55%,55%)"></span></span></td>
+        <td><span class="scb" title="90.0"><span class="scbfill" style="width:90%;background:hsl(101,55%,55%)"></span></span></td>
+        <td><span class="scb" title="79.7"><span class="scbfill" style="width:80%;background:hsl(112,55%,55%)"></span></span></td>
+        <td><span class="scb" title="48.4"><span class="scbfill" style="width:48%;background:hsl(147,55%,55%)"></span></span></td>
+        <td><span class="scb" title="85.7"><span class="scbfill" style="width:86%;background:hsl(106,55%,55%)"></span></span></td>
+        <td class="ch chp up">+31.25%</td>
+        <td class="ch chp up">+58.66%</td>
       </tr>
-      <tr data-tonnes="2452" data-usd="346016587104.1109">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
-          <span class="nm"><span class="n1">Italy</span></span></span></td>
-        <td>2,452 tons</td>
-        <td>$346,016,587,104</td>
+      <tr data-composite="69.3" data-trend="90.0"
+        data-momentum="67.2" data-vol="23.9"
+        data-rs="71.4" data-ret1m="17.86403797416498"
+        data-ret3m="17.949631431952028" data-price="76012.10369434163">
+        <td class="rk">3</td>
+        <td class="as"><span class="asw"><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-bitcoin.png" alt="" width="28" height="28" loading="lazy"/></span><span class="nm">
+          <span class="n1">BTC</span>
+          <span class="n2">Bitcoin</span>
+        </span></span></td>
+        <td class="px">$76,012</td>
+        <td><span class="scb" title="69.3"><span class="scbfill" style="width:69%;background:hsl(124,55%,55%)"></span></span></td>
+        <td><span class="scb" title="90.0"><span class="scbfill" style="width:90%;background:hsl(101,55%,55%)"></span></span></td>
+        <td><span class="scb" title="67.2"><span class="scbfill" style="width:67%;background:hsl(126,55%,55%)"></span></span></td>
+        <td><span class="scb" title="23.9"><span class="scbfill" style="width:24%;background:hsl(174,55%,55%)"></span></span></td>
+        <td><span class="scb" title="71.4"><span class="scbfill" style="width:71%;background:hsl(121,55%,55%)"></span></span></td>
+        <td class="ch chp up">+17.86%</td>
+        <td class="ch chp up">+17.95%</td>
       </tr>
-      <tr data-tonnes="2437" data-usd="343899846155.26843">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
-          <span class="nm"><span class="n1">France</span></span></span></td>
-        <td>2,437 tons</td>
-        <td>$343,899,846,155</td>
+      <tr data-composite="52.2" data-trend="50.0"
+        data-momentum="43.8" data-vol="86.2"
+        data-rs="42.9" data-ret1m="16.397039991170814"
+        data-ret3m="9.264872376065924" data-price="7.385151825400277">
+        <td class="rk">4</td>
+        <td class="as"><span class="asw"><span class="mkglow" aria-hidden="true" style="--glow:#c9b45e"><img class="mk" src="img/crypto-avalanche-2.png" alt="" width="28" height="28" loading="lazy"/></span><span class="nm">
+          <span class="n1">AVAX</span>
+          <span class="n2">Avalanche</span>
+        </span></span></td>
+        <td class="px">$7.39</td>
+        <td><span class="scb" title="52.2"><span class="scbfill" style="width:52%;background:hsl(143,55%,55%)"></span></span></td>
+        <td><span class="scb" title="50.0"><span class="scbfill" style="width:50%;background:hsl(145,55%,55%)"></span></span></td>
+        <td><span class="scb" title="43.8"><span class="scbfill" style="width:44%;background:hsl(152,55%,55%)"></span></span></td>
+        <td><span class="scb" title="86.2"><span class="scbfill" style="width:86%;background:hsl(105,55%,55%)"></span></span></td>
+        <td><span class="scb" title="42.9"><span class="scbfill" style="width:43%;background:hsl(153,55%,55%)"></span></span></td>
+        <td class="ch chp up">+16.40%</td>
+        <td class="ch chp up">+9.26%</td>
       </tr>
-      <tr data-tonnes="2313" data-usd="326401454311.50433">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
-          <span class="nm"><span class="n1">China</span></span></span></td>
-        <td>2,313 tons</td>
-        <td>$326,401,454,312</td>
+      <tr data-composite="37.0" data-trend="25.0"
+        data-momentum="53.0" data-vol="7.8"
+        data-rs="57.1" data-ret1m="11.776635524698143"
+        data-ret3m="16.741635145967848" data-price="0.1946310461583104">
+        <td class="rk">5</td>
+        <td class="as"><span class="asw"><span class="mkglow" aria-hidden="true" style="--glow:#5eb3d6"><img class="mk" src="img/crypto-cardano.png" alt="" width="28" height="28" loading="lazy"/></span><span class="nm">
+          <span class="n1">ADA</span>
+          <span class="n2">Cardano</span>
+        </span></span></td>
+        <td class="px">$0.1946</td>
+        <td><span class="scb" title="37.0"><span class="scbfill" style="width:37%;background:hsl(159,55%,55%)"></span></span></td>
+        <td><span class="scb" title="25.0"><span class="scbfill" style="width:25%;background:hsl(172,55%,55%)"></span></span></td>
+        <td><span class="scb" title="53.0"><span class="scbfill" style="width:53%;background:hsl(142,55%,55%)"></span></span></td>
+        <td><span class="scb" title="7.8"><span class="scbfill" style="width:8%;background:hsl(191,55%,55%)"></span></span></td>
+        <td><span class="scb" title="57.1"><span class="scbfill" style="width:57%;background:hsl(137,55%,55%)"></span></span></td>
+        <td class="ch chp up">+11.78%</td>
+        <td class="ch chp up">+16.74%</td>
       </tr>
-      <tr data-tonnes="2299" data-usd="324425829425.91797">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
-          <span class="nm"><span class="n1">Russia</span></span></span></td>
-        <td>2,299 tons</td>
-        <td>$324,425,829,426</td>
+      <tr data-composite="32.7" data-trend="65.0"
+        data-momentum="11.9" data-vol="24.0"
+        data-rs="14.3" data-ret1m="23.255906136887393"
+        data-ret3m="-21.710745119363615" data-price="0.07214401331119763">
+        <td class="rk">6</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">B</span><span class="nm">
+          <span class="n1">BAT</span>
+          <span class="n2">Basic Attention</span>
+        </span></span></td>
+        <td class="px">$0.07214</td>
+        <td><span class="scb" title="32.7"><span class="scbfill" style="width:33%;background:hsl(164,55%,55%)"></span></span></td>
+        <td><span class="scb" title="65.0"><span class="scbfill" style="width:65%;background:hsl(128,55%,55%)"></span></span></td>
+        <td><span class="scb" title="11.9"><span class="scbfill" style="width:12%;background:hsl(187,55%,55%)"></span></span></td>
+        <td><span class="scb" title="24.0"><span class="scbfill" style="width:24%;background:hsl(174,55%,55%)"></span></span></td>
+        <td><span class="scb" title="14.3"><span class="scbfill" style="width:14%;background:hsl(184,55%,55%)"></span></span></td>
+        <td class="ch chp up">+23.26%</td>
+        <td class="ch chp down">-21.71%</td>
       </tr>
-      <tr data-tonnes="1040" data-usd="146760705786.40918">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
-          <span class="nm"><span class="n1">Switzerland</span></span></span></td>
-        <td>1,040 tons</td>
-        <td>$146,760,705,786</td>
+      <tr data-composite="24.2" data-trend="25.0"
+        data-momentum="25.1" data-vol="16.0"
+        data-rs="28.6" data-ret1m="6.35169229617969"
+        data-ret3m="2.7663730916291485" data-price="218.21123330855787">
+        <td class="rk">7</td>
+        <td class="as"><span class="asw"><span class="mkglow" aria-hidden="true" style="--glow:#c9b45e"><img class="mk" src="img/crypto-bitcoin-cash.png" alt="" width="28" height="28" loading="lazy"/></span><span class="nm">
+          <span class="n1">BCH</span>
+          <span class="n2">Bitcoin Cash</span>
+        </span></span></td>
+        <td class="px">$218.21</td>
+        <td><span class="scb" title="24.2"><span class="scbfill" style="width:24%;background:hsl(173,55%,55%)"></span></span></td>
+        <td><span class="scb" title="25.0"><span class="scbfill" style="width:25%;background:hsl(172,55%,55%)"></span></span></td>
+        <td><span class="scb" title="25.1"><span class="scbfill" style="width:25%;background:hsl(172,55%,55%)"></span></span></td>
+        <td><span class="scb" title="16.0"><span class="scbfill" style="width:16%;background:hsl(182,55%,55%)"></span></span></td>
+        <td><span class="scb" title="28.6"><span class="scbfill" style="width:29%;background:hsl(169,55%,55%)"></span></span></td>
+        <td class="ch chp up">+6.35%</td>
+        <td class="ch chp up">+2.77%</td>
       </tr>
-      <tr data-tonnes="880" data-usd="124182135665.42316">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
-          <span class="nm"><span class="n1">India</span></span></span></td>
-        <td>880 tons</td>
-        <td>$124,182,135,665</td>
-      </tr>
-      <tr data-tonnes="846" data-usd="119384189514.71364">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
-          <span class="nm"><span class="n1">Japan</span></span></span></td>
-        <td>846 tons</td>
-        <td>$119,384,189,515</td>
-      </tr>
-      <tr data-tonnes="635" data-usd="89608700167.6633">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
-          <span class="nm"><span class="n1">Turkey</span></span></span></td>
-        <td>635 tons</td>
-        <td>$89,608,700,168</td>
-      </tr>
-      <tr data-tonnes="612" data-usd="86363030712.77156">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
-          <span class="nm"><span class="n1">Netherlands</span></span></span></td>
-        <td>612 tons</td>
-        <td>$86,363,030,713</td>
-      </tr>
-      <tr data-tonnes="582" data-usd="82129548815.08669">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
-          <span class="nm"><span class="n1">Poland</span></span></span></td>
-        <td>582 tons</td>
-        <td>$82,129,548,815</td>
-      </tr>
-      <tr data-tonnes="424" data-usd="59833210820.61298">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
-          <span class="nm"><span class="n1">Taiwan</span></span></span></td>
-        <td>424 tons</td>
-        <td>$59,833,210,821</td>
-      </tr>
-      <tr data-tonnes="416" data-usd="58704282314.56368">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇿</span>
-          <span class="nm"><span class="n1">Uzbekistan</span></span></span></td>
-        <td>416 tons</td>
-        <td>$58,704,282,315</td>
-      </tr>
-      <tr data-tonnes="383" data-usd="54047452227.110306">
-        <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇹</span>
-          <span class="nm"><span class="n1">Portugal</span></span></span></td>
-        <td>383 tons</td>
-        <td>$54,047,452,227</td>
+      <tr data-composite="8.0" data-trend="20.0"
+        data-momentum="0.0" data-vol="6.6"
+        data-rs="0.0" data-ret1m="11.343262177534408"
+        data-ret3m="-44.2123734702197" data-price="2.5847932729160204e-06">
+        <td class="rk">8</td>
+        <td class="as"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">B</span><span class="nm">
+          <span class="n1">BONK</span>
+          <span class="n2">Bonk</span>
+        </span></span></td>
+        <td class="px">$0.000002585</td>
+        <td><span class="scb" title="8.0"><span class="scbfill" style="width:8%;background:hsl(191,55%,55%)"></span></span></td>
+        <td><span class="scb" title="20.0"><span class="scbfill" style="width:20%;background:hsl(178,55%,55%)"></span></span></td>
+        <td><span class="scb" title="0.0"><span class="scbfill" style="width:0%;background:hsl(200,55%,55%)"></span></span></td>
+        <td><span class="scb" title="6.6"><span class="scbfill" style="width:7%;background:hsl(193,55%,55%)"></span></span></td>
+        <td><span class="scb" title="0.0"><span class="scbfill" style="width:0%;background:hsl(200,55%,55%)"></span></span></td>
+        <td class="ch chp up">+11.34%</td>
+        <td class="ch chp down">-44.21%</td>
       </tr>
     </tbody>
-    <tfoot>
-      <tr>
-        <td class="mw-nm trstot-l">Total — 15 countries shown</td>
-        <td>26,807 tons</td>
-        <td>$3,782,898,307,708</td>
-      </tr>
-    </tfoot>
   </table>
   </div>
-  <p class="mwbarnote">These 15 are a curated top slice, not every reporting
-  country — the World Gold Council's own estimate for ALL central banks and
-  the IMF together is ≈36,600 tons,
-  well above the 26,807 tons summed here.</p>
-<div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Gold%20Reserves%20%E2%80%94%20Money%20Worldwide%3A%0A%0Ahttps%3A//mistertranslation.com/finance/money-worldwide-gold.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/money-worldwide-gold.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
-  <p class="backlink"><a href="money-worldwide.html">← All Money Worldwide sections</a></p>
+  <div class="panel">
+    <p><b>24 more coins not yet scored:</b>
+    each needs a year of its own daily price HISTORY on file before Trend, Momentum,
+    Volatility and Relative Strength can be computed — not a year to fetch it. That
+    history arrives a handful of coins at a time (CoinGecko rate-limits how fast an
+    anonymous caller can pull it), so this list typically empties out within about a
+    day of a fresh start, never all at once. Nothing here is ever guessed at in the
+    meantime — a coin just waits here, showing its real price, until its real score
+    is ready.</p>
+    <ul class="screenerwait">
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c9b45e"><img class="mk" src="img/crypto-curve-dao-token.png" alt="" width="28" height="28" loading="lazy"/></span> <b>CRV</b> <span class="dim">Curve DAO · $0.3144</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-dogecoin.png" alt="" width="28" height="28" loading="lazy"/></span> <b>DOGE</b> <span class="dim">Dogecoin · $0.08043</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#8f8fd6"><img class="mk" src="img/crypto-polkadot.jpg" alt="" width="28" height="28" loading="lazy"/></span> <b>DOT</b> <span class="dim">Polkadot · $1.01</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#5ec98f"><img class="mk" src="img/crypto-ethereum.png" alt="" width="28" height="28" loading="lazy"/></span> <b>ETH</b> <span class="dim">Ethereum · $2,404</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c9b45e"><img class="mk" src="img/crypto-filecoin.png" alt="" width="28" height="28" loading="lazy"/></span> <b>FIL</b> <span class="dim">Filecoin · $0.7981</span></li>
+      <li><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">G</span> <b>GRT</b> <span class="dim">The Graph · $0.01761</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-hyperliquid.jpg" alt="" width="28" height="28" loading="lazy"/></span> <b>HYPE</b> <span class="dim">Hyperliquid · $78.09</span></li>
+      <li><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">L</span> <b>LDO</b> <span class="dim">Lido DAO · $0.3421</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c98f5e"><img class="mk" src="img/crypto-chainlink.png" alt="" width="28" height="28" loading="lazy"/></span> <b>LINK</b> <span class="dim">Chainlink · $10.92</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c98f5e"><img class="mk" src="img/crypto-litecoin.png" alt="" width="28" height="28" loading="lazy"/></span> <b>LTC</b> <span class="dim">Litecoin · $51.22</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-ondo-finance.png" alt="" width="28" height="28" loading="lazy"/></span> <b>ONDO</b> <span class="dim">Ondo · $0.3394</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-pepe.jpeg" alt="" width="28" height="28" loading="lazy"/></span> <b>PEPE</b> <span class="dim">Pepe · $0.000003380</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#8f8fd6"><img class="mk" src="img/crypto-polygon-ecosystem-token.png" alt="" width="28" height="28" loading="lazy"/></span> <b>POL</b> <span class="dim">POL (ex-MATIC) · $0.09372</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#8f8fd6"><img class="mk" src="img/crypto-render-token.png" alt="" width="28" height="28" loading="lazy"/></span> <b>RENDER</b> <span class="dim">Render · $1.33</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#5ec98f"><img class="mk" src="img/crypto-shiba-inu.png" alt="" width="28" height="28" loading="lazy"/></span> <b>SHIB</b> <span class="dim">Shiba Inu · $0.000004900</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c9b45e"><img class="mk" src="img/crypto-sky.jpg" alt="" width="28" height="28" loading="lazy"/></span> <b>SKY</b> <span class="dim">Sky · $0.05728</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#5eb3d6"><img class="mk" src="img/crypto-solana.png" alt="" width="28" height="28" loading="lazy"/></span> <b>SOL</b> <span class="dim">Solana · $98.30</span></li>
+      <li><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">S</span> <b>SUSHI</b> <span class="dim">Sushi · $0.2086</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#5ec98f"><img class="mk" src="img/crypto-official-trump.png" alt="" width="28" height="28" loading="lazy"/></span> <b>TRUMP</b> <span class="dim">Official Trump · $1.90</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c9b45e"><img class="mk" src="img/crypto-uniswap.png" alt="" width="28" height="28" loading="lazy"/></span> <b>UNI</b> <span class="dim">Uniswap · $6.45</span></li>
+      <li><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">W</span> <b>WIF</b> <span class="dim">dogwifhat · $0.1812</span></li>
+      <li><span class="mkglow" aria-hidden="true" style="--glow:#c95e8f"><img class="mk" src="img/crypto-ripple.png" alt="" width="28" height="28" loading="lazy"/></span> <b>XRP</b> <span class="dim">XRP · $1.29</span></li>
+      <li><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">X</span> <b>XTZ</b> <span class="dim">Tezos · $0.2482</span></li>
+      <li><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">Y</span> <b>YFI</b> <span class="dim">yearn.finance · $2,045</span></li>
+    </ul>
+  </div>
+  <div class="panel">
+    <h2>How this board is made, and what it is not</h2>
+    <p>Every coin is scored on four pillars, weighted <b>Trend 35% / Momentum 35% /
+    Volatility 15% / Relative Strength 15%</b>: <b>Trend</b> is price against its own
+    20/50/200-day moving averages, plus whether the 50-day average is itself rising
+    and above the 200-day (a "golden cross"). <b>Momentum</b> blends a 1-month and
+    3-month return, ranked against every other coin in the universe, refined by a
+    small bounded adjustment for RSI position, recent volume expansion, and MACD
+    direction. <b>Volatility</b> rewards a coin trading in its own normal range and
+    penalises one that has gone dormant or is spiking — moderate is "good," not
+    high or low on its own. <b>Relative Strength</b> is the same 1-month/3-month
+    blend, but measured as <i>excess</i> return over Bitcoin's own, ranked the same
+    way — is this coin outperforming the market's own benchmark, not just rising.</p>
+    <p><b>Volatility here is not a true ATR%</b>, the way it is in some private
+    tools — CoinGecko's public data gives one closing price per coin per day, not
+    the intraday High/Low a true trading range needs. This uses the size of each
+    day's price move instead (a close-to-close realized-volatility proxy), scored
+    against that same coin's own 20-day average the identical way a true ATR% would
+    be — same goal, same shape of scoring, a different raw ingredient.</p>
+    <p><b>8 of 32</b> coins have a full year of history cached so far —
+    CoinGecko rate-limits how fast an anonymous caller can pull a coin's own daily
+    price history (a handful of coins per run before it says no), the same
+    paced-crawl approach as this Ledger's Crypto Heat Map board. That's a limit on
+    SPEED, not on whether a coin ever gets there — with the boards refreshing several
+    times a day, a fresh universe typically finishes filling in within about a day,
+    not weeks or months. A coin not yet reached shows its price and name above but
+    no score — never a guessed one.</p>
+    <p>This is a snapshot of the market, not a recommendation. Nothing here is
+    investment advice, and a coin's score is not an endorsement of it — a screener
+    ranks against its own universe, not against every coin that exists.</p>
+  </div>
+<div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Crypto%20Screener%3A%0A%0Ahttps%3A//mistertranslation.com/finance/crypto-screener.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/crypto-screener.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
 
-  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-money-worldwide-gold-html">👁 <span id="hits-finance-money-worldwide-gold-html-n">—</span> views</span>
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-crypto-screener-html">👁 <span id="hits-finance-crypto-screener-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Fmoney-worldwide-gold.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Fcrypto-screener.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-finance-money-worldwide-gold-html-n");
+      var n = document.getElementById("hits-finance-crypto-screener-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-finance-money-worldwide-gold-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-finance-crypto-screener-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-finance-money-worldwide-gold-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-finance-crypto-screener-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it.</p></footer>

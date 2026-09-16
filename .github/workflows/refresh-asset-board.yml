@@ -5,6 +5,7 @@
 #     tools/fetch_treasuries.py     stdlib + a price -> source/finance/treasuries.json
 #     tools/fetch_cebe.py           yfinance + a price -> source/finance/cebe.json
 #     tools/fetch_crypto_heatmap.py stdlib + CoinGecko  -> source/finance/crypto_heatmap.json
+#     tools/fetch_crypto_screener.py stdlib + CoinGecko -> source/finance/crypto_screener.json
 #     tools/fetch_money_worldwide.py ECB/FRED/IMF DataMapper -> source/finance/money_worldwide.json
 #     tools/finance_logos.py        fetches any logo we don't already have cached
 #     build_finance.py              renders all six boards from that JSON (stdlib only)
@@ -136,6 +137,16 @@ jobs:
       # docstring for why that's a background crawl rather than one big pull.
       - name: Compute the Crypto Heat Map
         run: python3 tools/fetch_crypto_heatmap.py
+
+      # Also its own step, same contract as the Crypto Heat Map above — a
+      # CoinGecko outage or rate limit costs only this board its refresh.
+      # Needs no pip install (stdlib urllib only). Its own slow crawl (each
+      # coin's full ~year of daily history, not just three point comparisons)
+      # advances a handful of coins each run and self-throttles on the first
+      # 429 — see the script's own docstring for why full coverage takes
+      # several days to first fill in.
+      - name: Compute the Crypto Screener
+        run: python3 tools/fetch_crypto_screener.py
 
       # Also its own step, same contract as the others — a source going down
       # (ECB, FRED, or IMF DataMapper) costs only this board its refresh.
