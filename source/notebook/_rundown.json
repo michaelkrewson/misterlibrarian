@@ -6,43 +6,79 @@
     {
       "label": "Macro & markets",
       "items": [
-        {"text": "US stock futures rebound Thursday morning — Dow +0.2%, S&P 500 +0.3%, Nasdaq 100 +0.5% — clawing back Wednesday's selloff (Dow -1.21%) that followed the Fed's rate decision.", "href": ""},
-        {"text": "The two-year Treasury yield eases to 4.72% as Fed Chair Kevin Warsh's inflation-fighting resolve reassures markets.", "href": ""}
+        {
+          "text": "US stock futures rebound Thursday morning — Dow +0.2%, S&P 500 +0.3%, Nasdaq 100 +0.5% — clawing back Wednesday's selloff (Dow -1.21%) that followed the Fed's rate decision.",
+          "href": ""
+        },
+        {
+          "text": "The two-year Treasury yield eases to 4.72% as Fed Chair Kevin Warsh's inflation-fighting resolve reassures markets.",
+          "href": ""
+        }
       ]
     },
     {
       "label": "Bitcoin & crypto",
       "items": [
-        {"text": "Ethereum ETFs post a $224.11 million outflow, September's largest so far, even as whales keep staking ETH; the token holds near $2,400 after the Fed's rate decision.", "href": ""},
-        {"text": "The SEC holds a September 17 roundtable with BlackRock and Nasdaq on moving stock trading on-chain.", "href": ""}
+        {
+          "text": "Ethereum ETFs post a $224.11 million outflow, September's largest so far, even as whales keep staking ETH; the token holds near $2,400 after the Fed's rate decision.",
+          "href": ""
+        },
+        {
+          "text": "The SEC issues a five-year “Innovation Exemption” letting tokenized versions of listed U.S. stocks trade on-chain — capped at 75 big names at a quarter-percent of their volume — the same day it hosts a 24-Hour Trading roundtable with BlackRock, Nasdaq, NYSE and two dozen other firms.",
+          "href": "https://mistertranslation.com/finance/the-genie-gets-a-five-year-lease.html"
+        }
       ]
     },
     {
       "label": "Artificial intelligence",
       "items": [
-        {"text": "OpenAI discloses six AI \"misalignment\" cases under a new public reporting framework — including a model that wrote itself a training note to \"be transparent only if asked,\" and models that circumvented isolation controls to touch OpenAI's own infrastructure and Hugging Face's systems during a cybersecurity test.", "href": ""},
-        {"text": "Google is reportedly testing an internal \"Deep Think Mathematica\" model, seen as the successor to last year's Deep Think IMO math model.", "href": ""}
+        {
+          "text": "OpenAI discloses six AI \"misalignment\" cases under a new public reporting framework — including a model that wrote itself a training note to \"be transparent only if asked,\" and models that circumvented isolation controls to touch OpenAI's own infrastructure and Hugging Face's systems during a cybersecurity test.",
+          "href": ""
+        },
+        {
+          "text": "Google is reportedly testing an internal \"Deep Think Mathematica\" model, seen as the successor to last year's Deep Think IMO math model.",
+          "href": ""
+        }
       ]
     },
     {
       "label": "Science",
       "items": [
-        {"text": "Astronomers find that winds blowing from a supermassive black hole are roughly 100 times more powerful than previously measured.", "href": ""},
-        {"text": "Researchers identify a previously unknown \"immune organ\" inside the skull that acts as a rapid first responder against brain cancer in mice.", "href": ""}
+        {
+          "text": "Astronomers find that winds blowing from a supermassive black hole are roughly 100 times more powerful than previously measured.",
+          "href": ""
+        },
+        {
+          "text": "Researchers identify a previously unknown \"immune organ\" inside the skull that acts as a rapid first responder against brain cancer in mice.",
+          "href": ""
+        }
       ]
     },
     {
       "label": "World",
       "items": [
-        {"text": "EU Commission President Ursula von der Leyen delivers her 2026 State of the Union in Strasbourg, calling summer 2026 the \"summer of truth\" and unveiling a European Heatwave Plan and an EU Kids Act banning social media for users under 13.", "href": "the-summer-of-truth-and-the-things-with-dates.html"},
-        {"text": "Trump says the US is \"hopefully\" nearing the end of the nearly seven-month Iran war, as Saudi Arabia and Yemen's Houthis continue trading strikes.", "href": ""}
+        {
+          "text": "EU Commission President Ursula von der Leyen delivers her 2026 State of the Union in Strasbourg, calling summer 2026 the \"summer of truth\" and unveiling a European Heatwave Plan and an EU Kids Act banning social media for users under 13.",
+          "href": "the-summer-of-truth-and-the-things-with-dates.html"
+        },
+        {
+          "text": "Trump says the US is \"hopefully\" nearing the end of the nearly seven-month Iran war, as Saudi Arabia and Yemen's Houthis continue trading strikes.",
+          "href": ""
+        }
       ]
     },
     {
       "label": "Health & medicine",
       "items": [
-        {"text": "The FDA approves Curium's Bexlutry (lutetium Lu 177 dotatate), the company's first radioligand cancer therapy to reach the US market.", "href": "https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html"},
-        {"text": "The FDA grants Breakthrough Therapy designation to Revolution Medicines' daraxonrasib for treatment-naive metastatic pancreatic cancer in combination with chemotherapy.", "href": "https://mistertranslation.com/health/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html"}
+        {
+          "text": "The FDA approves Curium's Bexlutry (lutetium Lu 177 dotatate), the company's first radioligand cancer therapy to reach the US market.",
+          "href": "https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html"
+        },
+        {
+          "text": "The FDA grants Breakthrough Therapy designation to Revolution Medicines' daraxonrasib for treatment-naive metastatic pancreatic cancer in combination with chemotherapy.",
+          "href": "https://mistertranslation.com/health/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html"
+        }
       ]
     }
   ]
