@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>What Radioligand Therapy Is, and Why a Second Lutathera Matters — The Librarian&#x27;s Regimen</title>
+<meta name="description" content="What radioligand therapy is, what Lutathera’s trials showed, and why Curium’s Bexlutry — the first radioligand equivalent — matters, read from the studies."/>
+<link rel="canonical" href="https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Regimen" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Regimen"/>
+<meta property="og:title" content="What Radioligand Therapy Is, and Why a Second Lutathera Matters"/>
+<meta property="og:description" content="What radioligand therapy is, what Lutathera’s trials showed, and why Curium’s Bexlutry — the first radioligand equivalent — matters, read from the studies."/>
+<meta property="og:url" content="https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus a warm accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(63,210,168,.13),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: a mortar and pestle, ringed by a circle — the apothecary's
+   sign, the one object that covers food, medicine and the preparing of both.
+   Same construction as the Ledger's lighthouse: the halo (`.bmark-glow`) is a
+   blurred RING drawn behind everything, radius already outside the crisp
+   ring's r=21, so the light appears past the icon's edge and never inside it.
+   The pestle rocks gently about its own tip inside the bowl
+   (`animation-direction:alternate` retraces the same arc rather than
+   snapping); the bowl is drawn OVER the pestle's lower half so the tip reads
+   as inside the mortar. No transform-box override — for an SVG child a plain
+   px transform-origin resolves against the viewBox. Respects reduced-motion. */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-pestle{transform-origin:31px 41px;
+  animation:bmarkGrind 2.6s ease-in-out infinite alternate}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkGrind{
+  0%{transform:rotate(-7deg)}
+  100%{transform:rotate(9deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-pestle{animation:none}
+}
+h1 .em{color:#3fd2a8;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#3fd2a8}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#3fd2a8;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+/* The medical disclaimer, every page, above the footer. Sized to be READ
+   (13.5px, normal contrast) — the .legal small print below it is where the
+   copyright/affiliation boilerplate goes. Dashed border + the accent tint
+   match the per-entry .mednote so the two read as one family. */
+.disclaimer{max-width:760px;margin:56px auto 0;padding:16px 20px;
+  border:1px dashed #2a4a3f;border-radius:11px;background:rgba(63,210,168,.045)}
+.disclaimer p{margin:0;color:#a9b7c9;font-size:13.5px;line-height:1.65;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.disclaimer strong{color:#d6e0ee}
+.disclaimer a{color:#8fd9c2;white-space:nowrap}
+footer{margin:28px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#3fd2a8;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#3fd2a8}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#3fd2a8;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#3fd2a8;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #3fd2a8;color:#3fd2a8}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#3fd2a8}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits a little above centre: on the Tacuinum page the two
+   figures' heads and the basket of cabbages are in the upper-middle of the
+   frame (the basket's top edge at ~15% of the height, the two faces at ~36%),
+   and the library stamp is at the bottom — the band should show the former
+   and never the latter. Measured against the 300px band on a 1000px-wide
+   image: 26% shows the basket and both faces. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 26%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (Michael's call, 2026-09-10): row one is the brand on
+   the left and the search box pushed to the right edge; row two is the nav,
+   left-aligned under the brand. The Ledger keeps everything on one row
+   because its nav is seven links wide; this one is two, and two links on
+   their own row read as a table of contents rather than a menu. No hamburger
+   at any width — `.hgroup` takes the full row (flex-basis:100%) so it can
+   never share a line with the search box, and the checkbox/label the shared
+   _chrome() markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#3fd2a8;border-bottom-color:#3fd2a8}
+.navcb,label.navtoggle{display:none}
+/* The language link: right end of the nav row, never hidden. */
+.langlink{margin-left:auto;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  font-size:13px;color:#93a4bd;text-decoration:none;padding:3px 11px;border-radius:999px;
+  border:1px solid #1e2938}
+.langlink:hover{color:#e8eef7;border-color:#3fd2a8}
+/* "Read this entry in English/Spanish →", under the date on a paired entry. */
+.langnote{margin:-16px 0 24px;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  font-size:13.5px}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#3fd2a8;
+  box-shadow:0 0 0 3px rgba(63,210,168,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#3fd2a8;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#3fd2a8;font-style:italic}
+a{color:#3fd2a8}
+.draftban{margin:16px 0 0;padding:11px 15px;border:1px solid #7a5a2a;border-radius:9px;
+  background:#1a1408;color:#e2c489;font-size:14.5px;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #3fd2a8;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* The "what the evidence says" box — the entry's answer, set apart. */
+.entry .verdict{margin:32px 0 0;padding:20px 24px;border-left:3px solid #3fd2a8;
+  border-radius:0 10px 10px 0;background:#0a141c}
+.entry .verdict p{margin:0 0 12px}
+.entry .verdict p:last-child{margin:0}
+/* The "what I'd do" box — one person's judgment, labelled as such and kept
+   visibly distinct from the evidence box above it (amber, not the accent). */
+.entry .mine{margin:24px 0 0;padding:18px 24px;border-left:3px solid #e2c489;
+  border-radius:0 10px 10px 0;background:#12110b}
+.entry .mine p{margin:0 0 12px}
+.entry .mine p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+/* Sources: every entry ends with one. Smaller and quieter than the prose, but
+   real links — the whole point is that they can be followed. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.mednote{margin:26px 0 0;padding:12px 16px;border:1px dashed #22384a;border-radius:9px;
+  color:#7f8fa6;font-size:13.5px;line-height:1.6;font-style:italic;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.mednote a{color:#8b9ab0}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:9.5em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#3fd2a8;color:#3fd2a8}
+.chip.on{background:#3fd2a8;border-color:#3fd2a8;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#3fd2a8;color:#3fd2a8}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#3fd2a8;color:#3fd2a8}
+.viewbtn.on{background:#3fd2a8;border-color:#3fd2a8;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#3fd2a8;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#3fd2a8" stroke-width="5"/>
+  <g class="bmark-pestle">
+    <g transform="rotate(30 31 41)">
+      <rect x="28.7" y="18" width="4.6" height="24" rx="2.3" fill="#f2f5f9"/>
+      <circle cx="31" cy="18.2" r="3.1" fill="#3fd2a8"/>
+    </g>
+  </g>
+  <path d="M20 36 Q20 49 33 49 Q46 49 46 36 Z" fill="#f2f5f9"/>
+  <rect x="24" y="41.2" width="18" height="2.2" fill="#3fd2a8" opacity=".85"/>
+  <rect x="18.2" y="33.6" width="29.6" height="3.8" rx="1.9" fill="#f2f5f9"/>
+  <rect x="27" y="48.4" width="12" height="3" rx="1.3" fill="#d9e0ea"/>
+  <circle cx="33" cy="33" r="21" stroke="#3fd2a8" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Regimen</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html" class="on">Writing</a><a href="about.html">About</a></nav><a class="langlink" href="es.html" lang="es" hreflang="es">Español</a></div></header>
+  
+  <article class="entry">
+    <h1 class="etitle">What Radioligand Therapy Is, and Why a Second Lutathera Matters</h1>
+    <p class="edate">SEPTEMBER 17, 2026</p>
+    
+    <figure class="hero"><img src="img/marie-curie-1920s.jpg" alt="A black-and-white studio portrait of Marie Curie in her fifties, seated, hands folded, in a dark dress, looking slightly off-camera" width="1177" height="1600" loading="eager"/><figcaption>Marie Curie, photographed by Henri Manuel around 1920. The company that just won the first approval for a copy of Lutathera is named for her and Pierre — and the drug is, at bottom, her idea: put a radioactive atom where you want it and let it do the work. Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Marie_Curie_c._1920s.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>.</figcaption></figure>
+<p>On September 14 the FDA approved a drug called <strong>Bexlutry</strong> — chemically,
+<strong>lutetium Lu 177 dotatate</strong> — for adults with somatostatin-receptor-positive
+gastroenteropancreatic neuroendocrine tumours, "including foregut, midgut, and hindgut
+neuroendocrine tumors" <a href="#src-1">[1]</a>. If that molecule name sounds familiar it is
+because it is the same one Novartis has sold since January 2018 as <strong>Lutathera</strong>.
+Bexlutry is the first FDA-cleared copy of a radioligand therapy — the first "radioligand
+equivalent," in the agency's phrase — and it comes from Curium, a company most people outside
+nuclear medicine have never heard of <a href="#src-1">[1]</a> <a href="#src-2">[2]</a>. So the
+question I wanted answered is really three questions: <strong>what is a radioligand therapy,
+what does the evidence say this one actually does for the people who get it, and why did it take
+eight years and a patent trial to get a second one on the shelf?</strong></p>
+
+<h2>What is a radioligand therapy?</h2>
+
+<p>A radioligand is a molecule with two ends. One end is a <em>ligand</em> — a small piece that
+binds to a specific protein on the surface of a cell. The other is a radioactive atom, held on
+by a chemical cage called a chelator. Inject it, and the ligand finds its protein wherever that
+protein is in the body, dragging the radioactive atom along with it. The atom then decays where
+it sits, and the radiation it gives off damages the cells within a couple of millimetres. It is
+radiotherapy that travels to the tumour rather than being aimed at it from outside — which is
+why it works on cancer that has spread to a dozen places at once.</p>
+
+<p>In lutetium Lu 177 dotatate the three parts are literal. <em>Dotatate</em> is a synthetic
+cousin of somatostatin, a hormone whose receptors are unusually common on the surface of
+neuroendocrine tumour cells; the DOTA part is the cage; and <em>lutetium-177</em> is the atom,
+a beta emitter with a half-life of about 6.6 days. That half-life is the whole logistics
+problem of the field. You cannot make a batch and put it on a shelf: roughly a tenth of the
+dose is gone every day from the moment it is made, so every vial is manufactured to order and
+shipped against a clock <a href="#src-3">[3]</a>. Keep that in mind for the business half of
+this, because it is why "a generic" of a radiopharmaceutical is not like a generic of a
+blood-pressure pill.</p>
+
+<p>Neuroendocrine tumours themselves are uncommon but not rare, and getting less rare. A 2017
+analysis of the US SEER cancer registries found the age-adjusted incidence had risen
+<strong>6.4-fold</strong> between 1973 and 2012, to about 7 new cases per 100,000 people a year,
+with roughly 171,000 Americans living with one in 2014 <a href="#src-4">[4]</a>. Most of that
+rise is better scanning finding tumours that used to go unnoticed; some of it is real. They grow
+slowly as cancers go, and many of them carry the somatostatin receptor, which is what makes them
+a target you can aim a ligand at.</p>
+
+<h2>Does lutetium Lu 177 dotatate work? What the trials found</h2>
+
+<p>Bexlutry did not run a new efficacy trial. Under the FDA's 505(b)(2) pathway it was allowed
+to lean on the published evidence for Lutathera, plus "targeted bridging data" showing the two
+products have the same biological and chemical profile <a href="#src-1">[1]</a>. So the question
+"does Bexlutry work?" is, for practical purposes, the question "did Lutathera's trials hold up?"
+There are three that matter.</p>
+
+<p><strong>NETTER-1</strong> (2017) was the trial that got the drug approved. It randomised
+<strong>229 people</strong> with advanced midgut neuroendocrine tumours that were still growing
+despite standard somatostatin-analogue treatment. Half got four doses of lutetium-177 dotatate
+eight weeks apart plus ordinary-dose octreotide; the other half got high-dose octreotide alone.
+At 20 months, <strong>65% of the radioligand group were alive without their disease progressing,
+against 11% of the control group</strong> — a hazard ratio for progression or death of 0.21 —
+and 18% had a measurable tumour response versus 3% <a href="#src-5">[5]</a>. That is an enormous
+difference for a cancer drug, and it is the number the whole field was built on.</p>
+
+<p>The <em>survival</em> result is more sobering, and it is the one a careful reader should
+hold onto. In the final analysis, published in 2021 after a median follow-up of more than six
+years, median overall survival was <strong>48.0 months with the radioligand versus 36.3
+months without</strong> — nearly a year longer — but the hazard ratio was 0.84 with a confidence
+interval of 0.60 to 1.17, and the difference was <strong>not statistically significant</strong>
+(p=0.30) <a href="#src-6">[6]</a>. Part of the reason is that 36% of the control patients went on
+to get radioligand therapy themselves once the trial allowed it, which blurs any survival
+comparison. But the honest statement is: the drug reliably delays progression by a wide margin,
+and probably extends life, and the trial was not able to prove the second part.</p>
+
+<p><strong>NETTER-2</strong> (2024) moved the drug earlier. It randomised <strong>226 people
+with newly diagnosed, higher-grade (grade 2 and 3) tumours</strong> — people who had not yet had
+any treatment — to lutetium-177 dotatate plus octreotide, or high-dose octreotide alone. Median
+progression-free survival was <strong>22.8 months against 8.5 months</strong> (hazard ratio
+0.28), and 43% had a tumour response versus 9% <a href="#src-7">[7]</a>. Survival data from that
+trial are still maturing.</p>
+
+<p>The third study is the one the Bexlutry label leans on for safety: the Dutch
+<strong>ERASMUS</strong> series, a single hospital's record of <strong>1,214 people</strong>
+treated with the same molecule between 2000 and 2012 — no control group, so it says nothing
+about efficacy that the randomised trials don't say better, but a great deal about what happens
+to the bone marrow and kidneys over years <a href="#src-8">[8]</a>. In the version cited on the
+new label: <strong>2% of patients developed myelodysplastic syndrome, 0.5% developed acute
+leukaemia</strong>, and under 1% developed kidney failure <a href="#src-1">[1]</a>. In NETTER-1,
+low blood counts were common — anaemia in 81% of the treated group versus 54% of controls,
+low platelets in 53% versus 17% <a href="#src-1">[1]</a>. The treatment is given with an amino
+acid infusion before, during and after each dose specifically to protect the kidneys, and the
+label warns about radiation exposure, marrow suppression, secondary blood cancers, kidney and
+liver toxicity, and a "neuroendocrine hormonal crisis" the tumour can trigger when it is hit
+<a href="#src-2">[2]</a>. None of that is new; it is Lutathera's label with a different name at
+the top.</p>
+
+<div class="verdict">
+  <p><strong>What the evidence says.</strong> For somatostatin-receptor-positive
+  gastroenteropancreatic neuroendocrine tumours, lutetium Lu 177 dotatate — whether the vial
+  says Lutathera or Bexlutry — is one of the best-supported drugs in its corner of oncology:
+  two randomised trials of 229 and 226 people, a roughly threefold to fourfold cut in the rate of
+  progression, and tumour shrinkage in a fifth to two-fifths of patients depending on the
+  setting. What it has <em>not</em> proved, in six years of follow-up, is a statistically
+  significant survival gain, partly because control patients crossed over. The price is a
+  measurable, small, long-term risk of secondary blood cancer (about 2–3% combined for MDS
+  and leukaemia in the largest series) and a routine of low blood counts during treatment.
+  Bexlutry adds no new efficacy evidence of its own; its claim is equivalence, and the FDA
+  accepted it.</p>
+</div>
+
+<h2>Why did it take a courtroom to get a second one?</h2>
+
+<p>Lutathera was developed by a French company, Advanced Accelerator Applications, which Novartis
+bought in a deal announced in late 2017 for about $3.9 billion. It has been a quietly excellent
+purchase. Novartis's own 2025 accounts put Lutathera at <strong>$816 million in net sales for
+the year, up 13%</strong>, with $147 million of the fourth quarter's $203 million coming from the
+United States alone <a href="#src-9">[9]</a>. Its sibling Pluvicto — the same idea aimed at
+prostate cancer — did $2.0 billion <a href="#src-9">[9]</a>. Radioligand therapy is now a
+franchise, and the same report notes, drily, that "Novartis is in patent litigation with
+manufacturers having FDA applications referencing Lutathera" <a href="#src-9">[9]</a>. That
+sentence is this story.</p>
+
+<p>Two companies had filed. Lantheus, a Massachusetts imaging company, had a true generic
+(an ANDA) called PNT2003 that the FDA <em>tentatively</em> approved on March 2, 2026 — tentative
+because a 30-month litigation stay under the Hatch-Waxman rules blocked a final decision until
+June <a href="#src-10">[10]</a>. Curium had gone the 505(b)(2) route with its own branded
+version. Novartis's subsidiary sued both over four patents listed in the FDA's Orange Book for
+Lutathera, covering how the product is made.</p>
+
+<p>The case went to a five-day bench trial in Delaware last December. On June 17, 2026, Judge
+Maryellen Noreika ruled <strong>all four patents invalid</strong> — not because the inventions
+weren't real, but because the claimed inventions "had been on sale more than one year before the
+patents' effective filing dates" <a href="#src-11">[11]</a>. In plain English: Novartis had been
+selling Lutathera for years and only then filed patents on how it was made, and US law gives you
+one year from the first sale to do that, not six. The court also found Curium's product did not
+infringe the claims at all <a href="#src-11">[11]</a>. Three months later, the FDA approved
+Bexlutry. Curium says it is "now available for prescribing physicians and patient use"
+<a href="#src-1">[1]</a>.</p>
+
+<p>It is worth noticing who <em>didn't</em> get approved. ITM, a German company with a genuinely
+new somatostatin-targeting radioligand (¹⁷⁷Lu-edotreotide, which beat the standard drug
+everolimus in its own phase 3 trial), received a complete response letter from the FDA on August
+7 — over manufacturing and a third-party facility, not over the clinical data
+<a href="#src-12">[12]</a>. So the new molecule is waiting on a factory, while the copy of the
+eight-year-old one reached patients first. In a field where the product decays 10% a day, the
+factory is not a detail; it is the product.</p>
+
+<h2>The companies</h2>
+
+<p><strong>Curium</strong> is private. It was assembled in 2017 by the investment firm CapVest,
+which is still its controlling shareholder, out of two older nuclear-medicine businesses, and it
+describes itself as a company of more than 3,800 people, 45-plus products, four manufacturing
+sites and customers in over 70 countries <a href="#src-1">[1]</a>. Until this week its
+business was overwhelmingly <em>diagnostic</em> isotopes — the tracers used in scans — and its
+own chief executive, Renaud Dehareng, called the approval "a defining milestone for Curium as we
+expand our offering into oncology therapeutics" <a href="#src-1">[1]</a>. Its North American
+chief, Mike Patterson, made the logistics argument out loud: "As the only vertically integrated,
+lutetium-based NETs therapy manufacturer, Curium is uniquely positioned" <a href="#src-1">[1]</a>
+— meaning it makes its own lutetium rather than buying it, which in a 6.6-day-half-life business
+is the moat.</p>
+
+<p>Two more facts about Curium turn a drug story into a deal story. In November 2025 CapVest
+recapitalised the company through a continuation fund at a valuation of about <strong>$7
+billion</strong>, which it called the largest transaction in nuclear medicine
+<a href="#src-13">[13]</a>. And on August 3, 2026 — six weeks after the Delaware ruling and six
+weeks before the approval — Curium agreed to <strong>buy Lantheus</strong> (Nasdaq: LNTH), the
+<em>other</em> company that had just beaten Novartis in court, for $102.50 a share in cash plus a
+contingent right worth up to $12 more, <strong>up to $8.0 billion</strong> in all, expected to
+close in the first half of 2027 subject to shareholder and regulatory approval
+<a href="#src-14">[14]</a>. If it closes, both same-molecule challengers to Lutathera — the
+branded Bexlutry and the tentatively-approved generic PNT2003 — end up under one roof, alongside
+Lantheus's Pylarify, the leading prostate-cancer PET tracer. A market that had one seller of this
+molecule for eight years is about to have two, and the two are merging. Somewhere an antitrust
+lawyer just sat up.</p>
+
+<p><strong>Novartis</strong> (NYSE: NVS), for its part, keeps the brand, the installed base of
+treatment centres, and a 2028 phase 3 readout in the pipeline for Lutathera in a broader
+GEP-NET population <a href="#src-9">[9]</a>. What it loses is the monopoly price. Lutathera's
+list price has been reported at about <strong>$56,000 per dose</strong>, with a standard course
+of four doses <a href="#src-15">[15]</a>. Curium has not published a price for Bexlutry, and I
+would not assume the discount is deep: a radiopharmaceutical copy still has to be made to order
+and flown to the hospital, and the FDA's own language — a "radioligand equivalent," not a
+generic — tells you the agency thinks of it as a second brand. Whether hospitals treat it as one
+is the next number to watch.</p>
+
+<h2>Where the evidence is weak</h2>
+
+<p>Three honest gaps. First, <em>equivalence is inferred, not tested in patients</em> — the
+bridging data compares the chemistry and biology of the two products; nobody randomised people
+to Bexlutry versus Lutathera, and nobody will. That is normal for a 505(b)(2) approval and it is
+also true of every generic you have ever taken; I note it because the field is new enough that
+this is the first time it has been done. Second, the survival question is still open after six
+years, for the crossover reason above. Third, the long-term secondary-cancer numbers come from a
+series in which people were treated up to twenty-five years ago at doses and schedules that were
+still being worked out; the modern risk may be lower, or may simply not have had time to show.</p>
+
+<div class="mine">
+  <p><strong>What I'd do.</strong> I am not a patient here and I won't pretend to be one. But
+  if I were reading this because someone I love has one of these tumours, the thing I would
+  take to the appointment is the NETTER-1 progression curve and the question of whether the
+  centre treating them can now get either product, and at what cost — because as of this week,
+  for the first time, that is a question with more than one answer.</p>
+</div>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Curium. <em>Curium announces FDA approval of BEXLUTRY lutetium Lu 177 dotatate injection for adults with SSTR-positive GEP-NETs</em>. Press release, 14 September 2026. <a href="https://www.globenewswire.com/news-release/2026/09/14/3361587/0/en/curium-announces-fda-approval-of-bexlutry-lutetium-lu-177-dotatate-injection-for-adults-with-sstr-positive-gep-nets.html" rel="noopener" target="_blank">globenewswire.com</a></li>
+  <li>CancerNetwork. <em>FDA Approves Lutetium Lu 177 Dotatate Injection for GEP-NETs</em>. 14 September 2026. <a href="https://www.cancernetwork.com/view/fda-approves-lutetium-lu-177-dotatate-injection-for-gep-nets" rel="noopener" target="_blank">cancernetwork.com</a></li>
+  <li>BioPharma Dive. <em>FDA clears first generic radioligand drug</em>. 15 September 2026. <a href="https://www.biopharmadive.com/news/radioligand-generic-sionna-layoffs-novo-contineum-arrowhead-corbus/830246/" rel="noopener" target="_blank">biopharmadive.com</a></li>
+  <li>Dasari A, Shen C, Halperin D, et al. <em>Trends in the Incidence, Prevalence, and Survival Outcomes in Patients With Neuroendocrine Tumors in the United States</em>. JAMA Oncology, 2017. <a href="https://doi.org/10.1001/jamaoncol.2017.0589" rel="noopener" target="_blank">doi:10.1001/jamaoncol.2017.0589</a></li>
+  <li>Strosberg J, El-Haddad G, Wolin E, et al. <em>Phase 3 Trial of ¹⁷⁷Lu-Dotatate for Midgut Neuroendocrine Tumors</em> (NETTER-1). New England Journal of Medicine, 2017. <a href="https://doi.org/10.1056/NEJMoa1607427" rel="noopener" target="_blank">doi:10.1056/NEJMoa1607427</a></li>
+  <li>Strosberg JR, Caplin ME, Kunz PL, et al. <em>¹⁷⁷Lu-Dotatate plus long-acting octreotide versus high-dose long-acting octreotide in patients with midgut neuroendocrine tumours (NETTER-1): final overall survival and long-term safety results</em>. Lancet Oncology, 2021. <a href="https://doi.org/10.1016/S1470-2045(21)00572-6" rel="noopener" target="_blank">doi:10.1016/S1470-2045(21)00572-6</a></li>
+  <li>Singh S, Halperin D, Myrehaug S, et al. <em>[¹⁷⁷Lu]Lu-DOTA-TATE plus long-acting octreotide versus high-dose long-acting octreotide for the treatment of newly diagnosed, advanced grade 2–3, well-differentiated, gastroenteropancreatic neuroendocrine tumours (NETTER-2)</em>. Lancet, 2024. <a href="https://doi.org/10.1016/S0140-6736(24)00701-3" rel="noopener" target="_blank">doi:10.1016/S0140-6736(24)00701-3</a></li>
+  <li>Brabander T, van der Zwan WA, Teunissen JJM, et al. <em>Long-Term Efficacy, Survival, and Safety of [¹⁷⁷Lu-DOTA⁰,Tyr³]octreotate in Patients with Gastroenteropancreatic and Bronchial Neuroendocrine Tumors</em> (the ERASMUS series). Clinical Cancer Research, 2017. <a href="https://doi.org/10.1158/1078-0432.CCR-16-2743" rel="noopener" target="_blank">doi:10.1158/1078-0432.CCR-16-2743</a></li>
+  <li>Novartis. <em>Fourth Quarter and Full Year 2025 Condensed Interim Financial Report</em> — net sales by product (Lutathera USD 816 m FY2025 vs 724 m FY2024; Pluvicto USD 1,994 m) and the litigation note. <a href="https://www.novartis.com/sites/novartis_com/files/q4-2025-interim-financial-report-en.pdf" rel="noopener" target="_blank">novartis.com (PDF)</a></li>
+  <li>Lantheus. <em>Lantheus Receives FDA Tentative Approval for Lutetium Lu 177 Dotatate (PNT2003), Radioequivalent to LUTATHERA</em>. Press release, 2 March 2026. <a href="https://www.globenewswire.com/news-release/2026/03/02/3247398/0/en/Lantheus-Receives-FDA-Tentative-Approval-for-Lutetium-Lu-177-Dotatate-PNT2003-Radioequivalent-to-LUTATHERA.html" rel="noopener" target="_blank">globenewswire.com</a></li>
+  <li>AuntMinnie. <em>Curium, Lantheus win patent dispute over lutetium-177 dotatate products</em> (Advanced Accelerator Applications v. Curium/Lantheus, D. Del., Noreika J., 17 June 2026). <a href="https://www.auntminnie.com/clinical-news/molecular-imaging/news/15828151/curium-lantheus-win-patent-dispute-over-lutetium177-dotatate-products" rel="noopener" target="_blank">auntminnie.com</a></li>
+  <li>ITM Isotope Technologies Munich. <em>ITM Receives Complete Response Letter for ¹⁷⁷Lu-edotreotide (ITM-11)</em>. Press release, 10 August 2026. <a href="https://www.globenewswire.com/news-release/2026/08/10/3341933/0/en/itm-receives-complete-response-letter-for-lu-edotreotide-itm-11.html" rel="noopener" target="_blank">globenewswire.com</a></li>
+  <li>CapVest / Curium. <em>CapVest recapitalises Curium to accelerate its growth strategy, marking the largest transaction in nuclear medicine globally</em>. 20 November 2025. <a href="https://www.curiumpharma.com/2025/11/20/capvest-recapitalizes-curium/" rel="noopener" target="_blank">curiumpharma.com</a></li>
+  <li>Curium / Lantheus. <em>Curium Announces Definitive Agreement to Merge with Lantheus</em>. 3 August 2026. <a href="https://www.curiumpharma.com/2026/08/03/curium-merge-lantheus/" rel="noopener" target="_blank">curiumpharma.com</a></li>
+  <li>Managed Healthcare Executive. <em>FDA Approves Lutathera for Adolescents with Neuroendocrine Tumors</em> — reports a wholesale acquisition cost of $55,896 per dose, about four doses per course. 2024. <a href="https://www.managedhealthcareexecutive.com/view/fda-approves-lutathera-for-adolescents-with-neuroendocrine-tumors" rel="noopener" target="_blank">managedhealthcareexecutive.com</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-cancer.html">cancer</a><a class="tg" href="tag-neuroendocrine-tumors.html">neuroendocrine tumors</a><a class="tg" href="tag-radioligand-therapy.html">radioligand therapy</a><a class="tg" href="tag-nuclear-medicine.html">nuclear medicine</a><a class="tg" href="tag-lutetium-177.html">lutetium-177</a><a class="tg" href="tag-lutathera.html">Lutathera</a><a class="tg" href="tag-bexlutry.html">Bexlutry</a><a class="tg" href="tag-curium.html">Curium</a><a class="tg" href="tag-novartis.html">Novartis</a><a class="tg" href="tag-lantheus.html">Lantheus</a><a class="tg" href="tag-drug-prices.html">drug prices</a><a class="tg" href="tag-fda.html">FDA</a></div>
+    <p class="mednote">This is one reader's reading of the research, not medical advice. If something here touches on your own health, take it to a clinician who knows you — and <a href="about.html">read how these entries are put together</a>.</p>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20What%20Radioligand%20Therapy%20Is%2C%20and%20Why%20a%20Second%20Lutathera%20Matters%3A%0A%0Ahttps%3A//mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html" data-search="pancreatic cancer has a drug that works. now the fda wants it tried first daraxonrasib doubled survival in treated pancreatic cancer; now it has fda breakthrough status for first-line use with chemo. the trials and the company." data-tags="cancer pancreatic-cancer daraxonrasib rasonque kras ras-inhibitors revolution-medicines chemotherapy breakthrough-therapy drug-prices fda oncology">
+      <span class="ec-d">SEPTEMBER 17, 2026</span>
+      <span class="ec-t">Pancreatic Cancer Has a Drug That Works. Now the FDA Wants It Tried First</span>
+      <span class="ec-s">Daraxonrasib doubled survival in treated pancreatic cancer; now it has FDA Breakthrough status for first-line use with chemo. The trials and the company.</span>
+    </a>
+    <a class="tile" href="what-a-kidney-stone-is-and-why-it-forms.html" data-search="what a kidney stone actually is, and why it forms what a kidney stone is made of, how it forms in the kidney, and why some people make them — the first of a series, read from the studies." data-tags="kidney-stones urology nutrition calcium oxalate uric-acid hydration sodium diet first-principles supplements hard-water vitamin-c vitamin-d">
+      <span class="ec-d">SEPTEMBER 10, 2026</span>
+      <span class="ec-t">What a Kidney Stone Actually Is, and Why It Forms</span>
+      <span class="ec-s">What a kidney stone is made of, how it forms in the kidney, and why some people make them — the first of a series, read from the studies.</span>
+    </a>
+    </div>
+  </section>
+  <p class="backlink"><a href="index.html">← Back to the Regimen</a></p>
+<aside class="disclaimer" aria-label="Medical disclaimer"><p><strong>Medical disclaimer.</strong> Everything on this site is general information for education only. It is <strong>not medical, nutritional or health advice</strong>, and it is not a substitute for advice from a licensed physician, pharmacist, dietitian or other qualified health professional who knows you. The author is not a licensed health professional and writes under a pen name; <strong>no entry has been reviewed by a doctor</strong> or anyone else with a medical licence. Reading this site, or writing to it, creates no doctor–patient or other professional relationship. Do not start, stop or change any medication, supplement, diet or treatment because of something read here — talk to your clinician first. If you think you may have a medical emergency, call your doctor or your local emergency number (911 in the United States) now. <a href="disclaimer.html">Read the full disclaimer →</a></p></aside><footer>The Librarian&#x27;s Regimen · <a href="about.html">About</a> · <a href="disclaimer.html">Disclaimer</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is medical advice · <span class="hits" id="hits-health-what-radioligand-therapy-is-and-why-a-second-lutathera-matters-html">👁 <span id="hits-health-what-radioligand-therapy-is-and-why-a-second-lutathera-matters-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fhealth%2Fwhat-radioligand-therapy-is-and-why-a-second-lutathera-matters.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-health-what-radioligand-therapy-is-and-why-a-second-lutathera-matters-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-health-what-radioligand-therapy-is-and-why-a-second-lutathera-matters-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-health-what-radioligand-therapy-is-and-why-a-second-lutathera-matters-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Regimen. Nothing on this site is medical, nutritional or health advice, and no reply from Mr. Librarian is either. This site is one reader's reading of published research — not a diagnosis, not a treatment, not a recommendation to start, stop or change anything — and it does not replace a conversation with a clinician who knows you. It has not been reviewed, edited or approved by any physician or other licensed health professional. Studies are summarised in good faith from public sources and may be misread, superseded or simply wrong; check the originals before relying on anything here. No drug, supplement, product, company or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored. Use of this site is at your own risk — see the <a href="disclaimer.html">full disclaimer</a>.</p></footer>
+</div>
+</body>
+</html>

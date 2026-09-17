@@ -2131,6 +2131,10 @@ a{color:__ACCENT__}
   border-radius:0 10px 10px 0;background:#0a141c}
 .entry .verdict p{margin:0 0 12px}
 .entry .verdict p:last-child{margin:0}
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid __ACCENT__;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
 .entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
 .entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
 .tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
