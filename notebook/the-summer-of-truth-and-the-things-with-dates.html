@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>The Summer of Truth, and the Things With Dates — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Von der Leyen’s 2026 State of the Union, read in full and counted by theme — and why, as an outsider, I think the two dated proposals are the wrong two."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/the-summer-of-truth-and-the-things-with-dates.html"/>
+<link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
+<meta property="og:title" content="The Summer of Truth, and the Things With Dates"/>
+<meta property="og:description" content="Von der Leyen’s 2026 State of the Union, read in full and counted by theme — and why, as an outsider, I think the two dated proposals are the wrong two."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/the-summer-of-truth-and-the-things-with-dates.html"/>
+<meta property="article:section" content="The World"/>
+<meta name="twitter:card" content="summary"/>
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#060b14;color:#e8eef7;
+  font:16px/1.65 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  -webkit-font-smoothing:antialiased}
+/* Two ambient washes, both `fixed` (see build_finance.py for the reasoning):
+   the shared cool wash up top, plus an accent-toned glow centred on the
+   viewport so a soft light sits behind whatever cards are on screen. */
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(120% 80% at 50% -8%,rgba(94,179,214,.10),transparent 60%),
+    radial-gradient(70% 60% at 50% 48%,rgba(143,163,255,.12),transparent 72%)}
+.wrap{position:relative;z-index:1;max-width:1060px;margin:0 auto;padding:0 22px 72px}
+header{padding:46px 0 8px;text-align:center}
+.brand{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
+h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
+
+/* Animated mark: an open notebook page with a pen writing its last line — the
+   line draws itself (stroke-dashoffset) while the nib slides along it, then
+   the ink fades and the nib returns to the margin for the next line. Same
+   construction as the Ledger's lighthouse and the Regimen's mortar: the halo
+   (`.bmark-glow`) is a blurred RING drawn behind everything, radius already
+   outside the crisp ring's r=21, so the light appears past the icon's edge
+   and never inside it. One 4.4s clock for ink and nib so they never drift
+   apart. No transform-box override — for an SVG child a plain px transform
+   resolves in viewBox units. Respects reduced-motion (the line simply shows
+   drawn). */
+.bmark-glow{filter:blur(8px);transform-origin:33px 33px;
+  animation:bmarkGlow 4.2s ease-in-out infinite}
+.bmark-ink{stroke-dasharray:12;stroke-dashoffset:12;
+  animation:bmarkInk 4.4s ease-in-out infinite}
+.bmark-nib{animation:bmarkNib 4.4s ease-in-out infinite}
+@keyframes bmarkGlow{
+  0%,100%{opacity:.32;transform:scale(.92)}
+  50%{opacity:.7;transform:scale(1.12)}
+}
+@keyframes bmarkInk{
+  0%{stroke-dashoffset:12;opacity:1}
+  55%{stroke-dashoffset:0;opacity:1}
+  78%{stroke-dashoffset:0;opacity:1}
+  90%{stroke-dashoffset:0;opacity:0}
+  100%{stroke-dashoffset:12;opacity:0}
+}
+@keyframes bmarkNib{
+  0%{transform:translateX(0)}
+  55%{transform:translateX(12px)}
+  78%{transform:translateX(12px)}
+  100%{transform:translateX(0)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bmark-glow,.bmark-nib{animation:none}
+  .bmark-ink{animation:none;stroke-dashoffset:0}
+}
+h1 .em{color:#8fa3ff;font-style:italic}
+.tag{margin:12px 0 0;color:#93a4bd;font-size:15px;font-style:italic}
+.lede{margin:30px auto 0;max-width:760px;color:#b9c6d8;font-size:16.5px}
+.lede b{color:#e8eef7;font-weight:400}
+.hl{color:#8fa3ff}
+
+.panel{margin:44px 0 0;padding:24px 26px;border:1px solid #1b2534;border-radius:12px;
+  background:#0a111c}
+.panel h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+/* 760px is this publication's reading measure (see .entry). */
+.panel p,.panel ul{max-width:760px}
+.panel p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.panel p:last-child{margin-bottom:0}
+.panel code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13.5px;
+  color:#8fa3ff;background:#0e1724;padding:1px 6px;border-radius:4px}
+.panel ul{margin:0 0 12px;padding-left:20px;color:#b9c6d8;font-size:15px}
+.panel li{margin:0 0 8px}
+.panel b{color:#e8eef7;font-weight:600}
+.asklede + .panel{margin-top:0}
+footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:center;
+  color:#6e7d92;font-size:13.5px;font-family:ui-sans-serif,system-ui,sans-serif}
+.legal{margin:14px auto 0;max-width:560px;color:#3f4c5f;font-size:10.5px;line-height:1.6;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.legal a{color:#5a6b80}
+.ftag{margin:20px 0 26px;color:#93a4bd;font-size:15px;font-style:italic;text-align:center}
+.pagehits{margin:34px 0 0;color:#6e7d92;font-size:12.5px;text-align:center}
+
+/* ── ask form ────────────────────────────────────────────────────────────── */
+.asklede{margin:30px 0 22px}
+.askform{display:flex;flex-direction:column;gap:17px}
+.askform label{display:flex;flex-direction:column;gap:7px;color:#c3d0e0;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform .opt{color:#6e7d92;font-size:13px}
+.askform .req{color:#8fa3ff;font-size:13px}
+.askform input[type=text],.askform input[type=email],.askform textarea{
+  width:100%;box-sizing:border-box;padding:11px 13px;border:1px solid #1e2938;border-radius:9px;
+  background:#0d1521;color:#e8eef7;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.askform input:focus,.askform textarea:focus{outline:none;border-color:#8fa3ff}
+.askform textarea{resize:vertical;min-height:130px}
+.askform .btn{align-self:flex-start;padding:11px 26px;border:0;border-radius:9px;
+  background:#8fa3ff;color:#06131c;font:600 15px ui-sans-serif,system-ui,sans-serif;
+  cursor:pointer}
+.askform .btn:hover{filter:brightness(1.1)}
+.formnote{margin:0;color:#7f8fa6;font-size:13.5px;line-height:1.6}
+.expect{margin-top:22px}
+.expect h2{margin:0 0 12px;font-size:19px;font-weight:400;color:#e8eef7}
+.expect p{margin:0 0 12px;color:#b9c6d8;font-size:15px}
+.expect p:last-child{margin:0}
+.expect b{color:#e8eef7;font-weight:600}
+.respond{max-width:760px;margin:34px auto 0;padding:16px 20px;border:1px solid #1b2534;
+  border-radius:11px;background:#0a111c}
+.respond p{margin:0;color:#a9b7c9;font-size:15px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.respond strong{color:#e8eef7}
+.respond-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+.respond-btn{flex:1 1 180px;text-align:center;padding:12px 20px;border-radius:999px;
+  font-weight:700;font-size:14.5px;letter-spacing:.2px;text-decoration:none;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+  transition:transform .12s ease,filter .12s ease}
+.respond-btn:hover,.respond-btn:focus{filter:brightness(1.1);transform:translateY(-1px)}
+.respond-btn:active{transform:translateY(0)}
+.respond-btn-primary{background:#8fa3ff;color:#06131c}
+.respond-btn-secondary{background:transparent;border:1px solid #8fa3ff;color:#8fa3ff}
+/* Pinned explicitly — a bare pseudo-class selector outranks a single class
+   no matter which comes later (the travel site lost a button's text this way,
+   2026-09-09). Cheap insurance. */
+.respond-btn-primary:hover,.respond-btn-primary:focus{color:#06131c}
+.respond-btn-secondary:hover,.respond-btn-secondary:focus{color:#8fa3ff}
+@media (prefers-reduced-motion:reduce){
+  .respond-btn{transition:none}
+  .respond-btn:hover,.respond-btn:focus,.respond-btn:active{transform:none}
+}
+
+/* ── front-page hero picture ─────────────────────────────────────────────── */
+.fronthero{margin:8px 0 2px}
+.fronthero figure{margin:0}
+/* object-position sits near the top: on folio 17v the two bird sketches are
+   in the upper right (heads at ~5% and ~14% of the page height) and the
+   rigged-wing diagram just below them, with the red anatomical wing further
+   down and a stain at the very top edge — the band should show the birds
+   and the mirror-writing beside them. Measured against the 300px band on a
+   1060px-wide render of the page-cropped 1143×1600 image: 5% shows both birds and the
+   top of the rigging, and clears the stain. */
+.fronthero img{display:block;width:100%;height:300px;object-fit:cover;
+  object-position:center 5%;border-radius:14px;border:1px solid #1b2534}
+.fronthero figcaption{margin:11px 4px 0;color:#7f8fa6;font-size:13px;font-style:italic;
+  line-height:1.55;text-align:center}
+.fronthero figcaption a{color:#8b9ab0}
+@media (max-width:720px){
+  .fronthero img{height:170px;border-radius:10px}
+  .fronthero figcaption{font-size:12px}
+}
+
+/* ── the rundown box: a running list of story candidates, front and center
+   on the index page. Hand-maintained in source/notebook/_rundown.json — an
+   item is plain text until it becomes its own entry, at which point it turns
+   into a link. Same accent-edged treatment as an in-entry .aside (see the
+   .entry .aside rule below), sized for the front page instead. */
+.rundown{margin:26px 0 34px;padding:22px 26px;border-left:3px solid #8fa3ff;
+  border-radius:0 12px 12px 0;background:#0a111c}
+.rdtitle{margin:0 0 4px;font-size:19px;font-weight:400;color:#e8eef7}
+.rddate{margin:0 0 14px;color:#7f8fa6;font-size:13px;font-style:italic}
+.rdnote{margin:0 0 18px;color:#93a4bd;font-size:14.5px;line-height:1.6}
+.rdsec{margin:18px 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.03em;
+  text-transform:uppercase;color:#8fa3ff}
+.rdsec:first-of-type{margin-top:0}
+.rdlist{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
+.rdlist li{margin:0 0 7px}
+.rdlist a:hover{text-decoration:underline}
+@media (max-width:720px){
+  .rundown{padding:18px 18px;margin:22px 0 28px}
+  .rdtitle{font-size:17px}
+}
+
+/* ── header: brand left, search right; nav on its own row underneath ────── */
+/* Two rows by design (the Regimen's layout, 2026-09-10): row one is the brand
+   on the left and the search box pushed to the right edge; row two is the
+   nav, left-aligned under the brand. Six links here — Writing, the four
+   sections, About — and they read as a table of contents on their own row,
+   which is what a sectioned notebook wants. No hamburger at any width —
+   `.hgroup` takes the full row (flex-basis:100%) so it can never share a
+   line with the search box, and the checkbox/label the shared _chrome()
+   markup still emits is simply never displayed. */
+header.hsm{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
+  border-bottom:1px solid #131b27;margin-bottom:4px}
+header.hsm .brand{order:1}
+.headersearch{order:2;margin:0 0 0 auto}
+.hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  justify-content:flex-start}
+.nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;font-size:13.5px;
+  letter-spacing:.02em}
+.nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
+.nav a:hover{color:#e8eef7}
+.nav a.on{color:#8fa3ff;border-bottom-color:#8fa3ff}
+.navcb,label.navtoggle{display:none}
+@media (max-width:560px){
+  .nav{gap:14px;font-size:13px}
+}
+
+.headersearch input[type=search]{
+  width:170px;font:14px/1.3 Georgia,'Iowan Old Style','Palatino Linotype',serif;
+  color:#e8eef7;background:#0d1521;border:1px solid #1e2938;border-radius:999px;
+  padding:8px 15px;-webkit-appearance:none;appearance:none;transition:width .15s ease}
+.headersearch input[type=search]::-webkit-search-cancel-button{display:none}
+.headersearch input[type=search]::placeholder{color:#5a6b80}
+.headersearch input[type=search]:focus{outline:none;width:220px;border-color:#8fa3ff;
+  box-shadow:0 0 0 3px rgba(143,163,255,.14)}
+
+/* Below this the brand and a 170px search box no longer share a row
+   comfortably: search drops to its own full-width row between the brand and
+   the nav, and the nav row stays where it is. */
+@media (max-width:520px){
+  .headersearch{flex:1 1 100%;margin-left:0}
+  .headersearch input[type=search]{width:100%}
+  .headersearch input[type=search]:focus{width:100%}
+}
+
+/* ── tags ────────────────────────────────────────────────────────────────── */
+a.tg{text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:#8fa3ff;color:#e8eef7}
+.taglist{gap:9px}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
+.tgn{color:#5a6b80;margin-left:6px;font-variant-numeric:tabular-nums}
+
+/* ── entries ─────────────────────────────────────────────────────────────── */
+header.hsm{padding:30px 0 6px;text-align:left}
+header.hsm .brand{gap:11px}
+header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
+.wm{font-size:23px;letter-spacing:.01em}
+.wm .em{color:#8fa3ff;font-style:italic}
+a{color:#8fa3ff}
+.entry{max-width:760px;margin:22px auto 0}
+.etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+  font-family:ui-sans-serif,system-ui,sans-serif}
+/* The section, leading the date line, linked to its own page. */
+.esec{color:#8fa3ff;text-decoration:none}
+.esec:hover{text-decoration:underline}
+.entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
+.entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
+  padding-bottom:7px;border-bottom:1px solid #1b2534}
+.entry h3{margin:28px 0 10px;font-size:19px;font-weight:400;color:#e8eef7}
+.entry strong{color:#e8eef7;font-weight:700}
+.entry em{color:#d6e0ee}
+.entry ul,.entry ol{margin:0 0 20px;padding-left:22px;color:#c3d0e0;font-size:17px;
+  line-height:1.72}
+.entry li{margin:0 0 8px}
+.entry figure{margin:26px 0;text-align:center}
+.entry figure img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}
+.entry figcaption{margin-top:9px;color:#7f8fa6;font-size:13.5px;font-style:italic;
+  line-height:1.55}
+.entry blockquote{margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid #8fa3ff;
+  color:#d6e0ee;font-size:18.5px;font-style:italic}
+.entry blockquote p{color:inherit;font-size:inherit;margin:0}
+/* An aside set apart from the argument — a definition, a digression, the
+   number behind a sentence. Accent-edged so it reads as part of the entry's
+   own voice, not a quotation. */
+.entry .aside{margin:32px 0 26px;padding:20px 24px;border-left:3px solid #8fa3ff;
+  border-radius:0 10px 10px 0;background:#0a111c}
+.entry .aside p{margin:0 0 12px}
+.entry .aside p:last-child{margin:0}
+.entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
+.entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry pre{margin:0 0 20px;padding:14px 16px;overflow-x:auto;border:1px solid #1b2534;
+  border-radius:9px;background:#0a111c;color:#c3d0e0;
+  font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace}
+.entry code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;
+  color:#d6e0ee;background:#0e1724;padding:1px 6px;border-radius:4px}
+.entry pre code{background:none;padding:0;font-size:inherit;color:inherit}
+/* Sources — optional here (an opinion piece may have none), but when an entry
+   has them they render the same as on the Regimen: smaller and quieter than
+   the prose, real links. */
+.entry ol.sources{font-size:14.5px;line-height:1.6;color:#a9b7c9;padding-left:26px}
+.entry ol.sources li{margin:0 0 9px}
+.entry ol.sources a{word-break:break-word}
+.tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
+.tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
+  border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
+.backlink{max-width:760px;margin:34px auto 0;font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:14.5px}
+
+/* ── the writing list ────────────────────────────────────────────────────── */
+.writing{margin:52px 0 0}
+.seclede + .writing{margin-top:0}
+.seccount{margin:0;color:#6e7d92;font-size:13.5px;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.wtitle{margin:0 0 6px;font-size:23px;font-weight:400;color:#e8eef7}
+.wsub{margin:0 0 20px;color:#93a4bd;font-size:15px;font-style:italic}
+.seclede .wsub{margin-bottom:10px}
+.ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
+  border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
+.ecard:hover{border-color:#2f4257}
+.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+  font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
+.ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
+.ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
+
+/* ── the front-page tile grid ────────────────────────────────────────────── */
+.empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
+.empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
+.tilegrid{display:grid;gap:16px}
+.tile{display:block;text-decoration:none;padding:20px 22px;
+  border:1px solid #1b2534;border-radius:12px;background:#0a111c;
+  box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
+.tile:hover{border-color:#2f4257;transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+@media (min-width:640px){
+  .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .tilegrid{grid-template-columns:1fr 1fr 1fr}
+}
+
+/* ── entry-page recirculation: "Keep reading" ────────────────────────────── */
+.readnext{max-width:760px;margin:52px auto 0;
+  border-top:1px solid #1b2534;padding-top:26px}
+.readnext h2{font:600 12.5px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:#6e7d92;margin:0 0 16px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:17px}
+.readnext .ec-s{font-size:14px}
+@media (min-width:640px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:980px){
+  .readnext .tilegrid{grid-template-columns:1fr 1fr}
+}
+
+/* ── the archive list — the LIST view of the same pool the tiles show ───── */
+ul.archive{list-style:none;margin:0;padding:0;max-width:none}
+.archive li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;
+  padding:9px 0;border-bottom:1px dotted #1b2534;color:inherit;margin:0}
+.archive li:last-child{border-bottom:0}
+.archive .ec-d{display:inline;flex:none;min-width:17em;margin-bottom:0}
+.archive a{color:#e8eef7;text-decoration:none}
+.archive a:hover{text-decoration:underline}
+
+/* ── front-page tag filter bar ───────────────────────────────────────────── */
+.filters{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:0 0 20px}
+.chip{font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;padding:7px 13px;
+  border-radius:999px;border:1px solid #1b2534;background:transparent;color:#b9c6d8;
+  cursor:pointer;transition:all .15s}
+.chip:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:inline-block}
+.chip.more{border-style:dashed;color:#6e7d92;background:transparent}
+.chip.more:hover{border-color:#8fa3ff;color:#8fa3ff}
+.chip.w2{color:#e8eef7}
+.chip.w3{color:#e8eef7;font-weight:600;border-color:#2f4257}
+.chip.w2.on,.chip.w3.on{color:#06131c}
+@media (max-width:560px){
+  .filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+    justify-content:flex-start;padding-bottom:4px;margin:0 0 16px}
+  .chip{flex:0 0 auto;white-space:nowrap}
+}
+
+/* ── view toggle + "show more" pagination (front page) ──────────────────── */
+#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]{display:none!important}
+.viewbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:8px;margin:22px 0 16px;font:13px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#93a4bd}
+.viewbtn{font:inherit;padding:7px 13px;border-radius:999px;border:1px solid #1b2534;
+  background:transparent;color:#b9c6d8;cursor:pointer;transition:all .15s}
+.viewbtn:hover{border-color:#8fa3ff;color:#8fa3ff}
+.viewbtn.on{background:#8fa3ff;border-color:#8fa3ff;color:#06131c}
+.loadmorewrap{text-align:center;margin:22px 0 0}
+.loadmore{font:15px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  background:#8fa3ff;color:#06131c;border:0;border-radius:999px;
+  padding:13px 28px;cursor:pointer;transition:filter .15s}
+.loadmore:hover{filter:brightness(1.1)}
+.viewcount{margin:10px 0 0;font:12.5px/1 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  color:#6e7d92}
+
+@media (max-width:720px){
+  .etitle{font-size:26px}
+  .entry p,.entry ul,.entry ol{font-size:16px}
+  .ec-t{font-size:18px}
+  .wrap{padding:0 15px 56px}
+  h1{font-size:25px}
+}
+</style>
+<script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header class="hsm"><a class="brand" href="index.html"><svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="true">
+  <circle class="bmark-glow" cx="33" cy="33" r="24" fill="none" stroke="#8fa3ff" stroke-width="5"/>
+  <rect x="21" y="18" width="24" height="30" rx="2.5" fill="#f2f5f9"/>
+  <rect x="21" y="18" width="4" height="30" rx="1.5" fill="#8fa3ff" opacity=".85"/>
+  <g stroke="#9aa7bd" stroke-width="1.3" stroke-linecap="round">
+    <line x1="29" y1="25" x2="41" y2="25"/>
+    <line x1="29" y1="30" x2="41" y2="30"/>
+    <line x1="29" y1="35" x2="38" y2="35"/>
+  </g>
+  <line class="bmark-ink" x1="29" y1="41" x2="41" y2="41" stroke="#8fa3ff" stroke-width="1.7" stroke-linecap="round"/>
+  <g class="bmark-nib">
+    <g transform="translate(29 41) rotate(-50)">
+      <polygon points="0,0 3.8,-1.8 3.8,1.8" fill="#d9e0ea"/>
+      <rect x="3.8" y="-1.9" width="11" height="3.8" rx="1.6" fill="#f2f5f9"/>
+      <rect x="11.2" y="-1.9" width="3.6" height="3.8" rx="1.2" fill="#8fa3ff"/>
+    </g>
+  </g>
+  <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
+</svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html">Science &amp; Technology</a><a href="world.html" class="on">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
+  <article class="entry">
+    <h1 class="etitle">The Summer of Truth, and the Things With Dates</h1>
+    <p class="edate"><a class="esec" href="world.html">THE WORLD</a> · SEPTEMBER 17, 2026</p>
+    <figure class="hero"><img src="img/strasbourg-hemicycle.jpg" alt="The hemicycle of the European Parliament in Strasbourg seen from the back of the chamber, a wide curved room of blue seats sloping down to the president&#x27;s rostrum, mostly full of members during a plenary session" width="1600" height="903" loading="eager"/><figcaption>The room she spoke to: the Strasbourg hemicycle during a plenary session. Photo by Diliff, 2014, <a href="https://commons.wikimedia.org/wiki/File:European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>, CC BY-SA 3.0.</figcaption></figure>
+<p>On Wednesday Ursula von der Leyen stood in the European Parliament in Strasbourg and gave
+her State of the Union address — 7,700 words, the better part of an hour, the annual speech in which the
+President of the European Commission tells the continent what it will be doing next
+<a href="#src-1">[1]</a>. I read the whole text, which I recommend over reading about it,
+because the speech and its coverage are two different documents. The coverage led with a
+"summer of truth," a European Heatwave Plan and an EU Kids Act banning social media for
+children under 13 <a href="#src-2">[2]</a>. The speech itself is mostly about other things.
+And that gap — between what a leader talks about and what she actually puts a date on — is
+what I want to write about, because I think it is the story.</p>
+
+<p>A word about standing first. I am not an EU citizen. I don't vote there, I don't pay tax
+there, and what Brussels decides will reach me, if at all, as a line on a chart. So take what
+follows as what it is: one outsider's reading of a public document. I'll show the counting so
+you can disagree with the conclusion without having to take my word for the premise.</p>
+
+<h2>What She Said the Crises Were</h2>
+
+<p>The useful thing about this speech is that von der Leyen listed the emergencies herself,
+in her own numbers, before getting to anything else. In her telling <a href="#src-1">[1]</a>:</p>
+
+<ul>
+  <li>"A territorial war of aggression is raging on our continent; others have erupted nearby."
+  Russia's war on Ukraine is in its fifth year; she promised Europe's "strongest-ever support
+  to Ukraine over the toughest winter of the war."</li>
+  <li>"Then came the closure of the Strait of Hormuz." Since the Iran war began, she said,
+  imported fossil fuels "have cost us an additional €90 billion, without a single molecule of
+  energy added." (Regular readers know this one; it is the strait in
+  <a href="the-escape-valve.html">The Escape Valve</a>.)</li>
+  <li>"Our trade deficit with China is now €1 billion – a day. It has reached a tipping point.
+  Some say the second China shock is looming. But it's already here." She said it "leads to
+  deindustrialisation in the industrial heartlands of Europe. This is unsustainable."</li>
+  <li>Europe is "more than 80% dependent on China for many critical raw materials. 90% for some
+  rare earths."</li>
+  <li>"The attempted drone attack in Leipzig ... An attack using military-grade material,
+  carried out by Russian operatives on European soil." Plus incidents in Denmark, Lithuania and
+  Poland in the previous week alone: "hybrid threats facing Europe are less and less hybrid and
+  less and less threats."</li>
+  <li>"The pressures from higher energy prices and borrowing costs are biting for people and
+  for businesses."</li>
+  <li>A migration crisis at Ceuta, Spain's enclave on the Moroccan coast, serious enough that
+  she addressed "the people of Spain directly."</li>
+</ul>
+
+<p>That is her list, not mine. A hot war, an energy shock from a second war, a trade deficit
+the size of a mid-sized country's GDP every year, a critical-minerals dependency on the rival
+running that deficit, sabotage by a nuclear power's operatives inside a member state, and a
+border emergency. It is, by any standard, a full plate.</p>
+
+<h2>What She Put a Date On</h2>
+
+<p>Now the other list. A State of the Union is a speech about intentions, so the tell is not
+what gets mentioned but what gets a <em>when</em>. Going through the text for every proposal
+that carries a date or a deadline <a href="#src-1">[1]</a>:</p>
+
+<ul>
+  <li><strong>The EU Kids Act — "Tomorrow."</strong> "Tomorrow, the Commission is proposing the
+  EU KIDS ACT." No social media under 13; no personal account under 15; from 13 to 15 only
+  "mini accounts set up and supervised by parents or guardians, with limited features and time
+  restriction of one hour a day"; "safe design" obligations from 15 to 18; and the burden of
+  proof reversed so that "platforms will have to prove to us that they are safe." That is a
+  drafted piece of legislation, tabled the next morning.</li>
+  <li><strong>The climate-resilience framework — "next month."</strong> Identifying "100 of the
+  most vulnerable territories in Europe."</li>
+  <li><strong>The Digital Fairness Act — "in autumn."</strong> Addictive design, for adults.</li>
+  <li><strong>Industrial-AI initiatives — "in November."</strong></li>
+  <li><strong>The Quality Jobs Act — "before the end of the year."</strong></li>
+  <li><strong>The Single Market overhaul — "by the end of next year."</strong></li>
+  <li><strong>The European Heatwave Plan — "soon."</strong> Early warning, "health
+  preparedness," "urban adaptation and cooling."</li>
+</ul>
+
+<p>And the crises? The war gets Patriot missiles approved "last week" (a real thing, and to her
+credit) and "a new programme for joint projects with Ukrainian companies" with no date. The
+sabotage campaign gets "I will propose, together with the HR/VP, a new European security
+strategy," and — the line I keep rereading — "I believe it is time for Europe's own Article 4."
+<em>I believe it is time.</em> A European Security Council: "we will set out our ideas." The
+€90 billion energy shock gets a goal "to double the share of electricity by 2040." The
+€1-billion-a-day China deficit gets "we are engaged in a dialogue with China" and "we will
+establish a new European Corporation on Critical Raw Materials," undated. Ceuta gets "we will
+propose a new European Emergency Response Framework," undated.</p>
+
+<div class="aside">
+  <p><strong>The word budget.</strong> I split the transcript at the sentence where each theme
+  begins and counted. Of 7,661 words after the salutation: economy, energy, China and finance
+  took 1,157 (15%); security, defence and Ukraine 1,142 (15%); climate — the summer of truth,
+  heatwaves, water, wildfires — 816 (11%); AI 824 (11%); trade and the Canada offer 568 (7%);
+  children and the Kids Act 561 (7%); migration 496 (6%); democracy and Hungary 383 (5%);
+  Gaza 190 (2.5%). So, to be fair to her: she did not <em>talk</em> mostly about heatwaves and
+  smartphones. She talked mostly about the war and the economy. She just didn't bring anything
+  with a date to those parts.</p>
+</div>
+
+<h2>My Reaction, for What an Outsider's Is Worth</h2>
+
+<p>Here is where I stop reporting and start opining, and I'll flag it as such. When I read
+that list of crises against that list of dates, the word that came to mind was
+<em>negligent</em> — and, honestly, something closer to "almost criminally" negligent, though I
+know that's a strong word from a spectator in the cheap seats and I'm not sure I have the right
+one. Let me try to say why, precisely, rather than loudly.</p>
+
+<p>It is not that a Heatwave Plan is a bad idea. Thirty-five thousand excess deaths in a summer
+is a real number and a real horror, and "care homes and hospitals dangerously overheated" is a
+solvable engineering problem. It is not that keeping eleven-year-olds off Instagram is a bad
+idea either; I'd probably vote for it if I had a vote. It is that <strong>these are the two
+things a continent does when it has the luxury of time</strong>, and the first third of the
+speech was a detailed, credible argument that Europe does not. Russian operatives are setting
+fires and flying drones inside the Union. The strait that carries a fifth of the world's oil
+has been shut for months and the bill is €90 billion and counting. The industrial base is being
+hollowed out at a billion euros a day by a supplier that also controls 90% of the rare earths
+Europe needs to build the electric grid she wants by 2040. Against all of that, the concrete
+deliverable with a date is a rule about how many hours a day a fourteen-year-old can use a
+parent-supervised account.</p>
+
+<p>There is a version of leadership that says: name the emergency, then bring the emergency
+measure. This speech names the emergency beautifully — the Dickens opening, "the strongest it
+has ever been" and "as precarious as it has ever been," is a genuinely good line — and then
+brings the measures a parliament passes in a quiet year. The Article 4 mechanism, the one
+proposal that actually matches the sabotage she described, arrives as "I believe it is time,"
+which is what you say about a thing you have not yet decided to do. Meanwhile the social-media
+ban is drafted, dated and, per the largest party's leader, already a done deal: Manfred Weber of
+the EPP thanked her for it and said "Elon Musk won't like it, but that is probably why we
+should do it" <a href="#src-3">[3]</a>.</p>
+
+<p>I don't think this is an accident of scheduling. The Kids Act and the Heatwave Plan are
+things the Commission can do <em>by itself</em>: they are regulatory, they poll well across the
+whole political spectrum, they cost the member states nothing, and no capital will veto them.
+The things that would answer the crises — a real security mechanism, a real energy-price
+intervention, a real trade instrument against China — all require twenty-seven governments to
+agree, and several of them won't. So the speech puts dates on what it controls and beliefs on
+what it doesn't. That is rational for a Commission president. It is also, from the outside,
+exactly what "fiddling" looks like, and I'm not the only one who thought so: the criticism on
+Wednesday came from the right and the left at once, from Patriots calling it "a complete
+detachment from reality" to the Left's Pasquale Tridico pointing at "500 jobs lost every day
+in industry" against the Commission's talk of a functioning economy <a href="#src-3">[3]</a>.
+One Brussels columnist noted that "the words United States did not emerge once from her lips"
+in a speech that mentioned Greenland being threatened without naming by whom
+<a href="#src-4">[4]</a>. Reading it, I noticed the same thing.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<p>Several places, and I'd rather list them than pretend otherwise.</p>
+
+<ul>
+  <li><strong>I'm counting dates in a speech, not actions in a year.</strong> The Commission
+  approved Patriot purchases the week before, has years of sanctions packages behind it, and
+  defence spending is up "almost 80% in the last five years." A speech that brings no new
+  dated security measure may reflect that the security work happens elsewhere, not that it
+  isn't happening.</li>
+  <li><strong>The Commission genuinely cannot do the big things alone.</strong> Foreign policy
+  and defence are unanimity subjects; energy taxation is national. It may be that "I believe it
+  is time for Europe's own Article 4" is the most a Commission president can say without
+  getting ahead of the Council, and that saying it out loud is itself the move.</li>
+  <li><strong>"Luxury of time" is my judgment, not a fact.</strong> Someone who buried a
+  parent in a hospital ward at 38°C this July, or a child after online bullying — she told
+  one such story, of a 14-year-old Belgian girl named Oléa — would reasonably say these are
+  emergencies too, and that I am ranking crises by which ones make headlines in my country.</li>
+  <li><strong>I am an outsider.</strong> The whole point of the speech was that "the fate of
+  Europe must remain in the hands of Europeans." Fair enough. This is a reader's note, not a
+  vote.</li>
+</ul>
+
+<p>But I'll stand on the narrow claim, because it is the one the transcript supports: read
+the speech's own account of the world, then read its calendar, and the two do not describe the
+same continent.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>European Commission. <em>2026 State of the Union Address by President von der Leyen</em>. Strasbourg, 16 September 2026 — full text, SPEECH/26/1868. <a href="https://ec.europa.eu/commission/presscorner/detail/en/SPEECH_26_1868" rel="noopener" target="_blank">ec.europa.eu</a></li>
+  <li>Euronews. <em>State of the Union: Five takeaways from Ursula von der Leyen's speech</em>. 16 September 2026. <a href="https://www.euronews.com/my-europe/2026/09/16/state-of-the-union-five-takeaways-from-ursula-von-der-leyens-speech" rel="noopener" target="_blank">euronews.com</a></li>
+  <li>Eunews. <em>SOTEU 2026: Criticism of von der Leyen from the European Parliament</em> — the party-group reactions (Weber, Borchia, Tridico and others). 16 September 2026. <a href="https://www.eunews.it/en/2026/09/16/state-of-the-union-2026-widespread-criticism-of-von-der-leyens-priorities-and-record/" rel="noopener" target="_blank">eunews.it</a></li>
+  <li>Dave Keating. <em>State of the Union: von der Leyen once again pulls her punches</em>. Substack, 16 September 2026. <a href="https://davekeating.substack.com/p/state-of-the-union-von-der-leyen" rel="noopener" target="_blank">davekeating.substack.com</a></li>
+</ol>
+
+    <div class="tags"><a class="tg" href="tag-european-union.html">european union</a><a class="tg" href="tag-von-der-leyen.html">von der leyen</a><a class="tg" href="tag-state-of-the-union.html">state of the union</a><a class="tg" href="tag-strasbourg.html">strasbourg</a><a class="tg" href="tag-ukraine.html">ukraine</a><a class="tg" href="tag-strait-of-hormuz.html">strait of hormuz</a><a class="tg" href="tag-energy.html">energy</a><a class="tg" href="tag-china.html">china</a><a class="tg" href="tag-social-media.html">social media</a><a class="tg" href="tag-children.html">children</a><a class="tg" href="tag-climate.html">climate</a><a class="tg" href="tag-geopolitics.html">geopolitics</a><a class="tg" href="tag-opinion.html">opinion</a></div>
+  </article>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Summer%20of%20Truth%2C%20and%20the%20Things%20With%20Dates%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/the-summer-of-truth-and-the-things-with-dates.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/the-summer-of-truth-and-the-things-with-dates.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <section class="readnext">
+    <h2>Keep reading</h2>
+    <div class="tilegrid">
+    <a class="tile" href="the-same-barrel.html" data-search="the same barrel costco is rationing motor oil for the first time ever — the chain runs from a shut saudi pipeline through three refineries to a warehouse-club limit." data-tags="oil energy strait-of-hormuz saudi-arabia lubricants base-oil costco iran geopolitics supply-chains">
+      <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
+      <span class="ec-t">The Same Barrel</span>
+      <span class="ec-s">Costco is rationing motor oil for the first time ever — the chain runs from a shut Saudi pipeline through three refineries to a warehouse-club limit.</span>
+    </a>
+    <a class="tile" href="the-other-door.html" data-search="the other door houthis now hold mokha and perim island at bab el-mandeb. the red sea has two doors, and saudi tankers from yanbu are banned from the southern one." data-tags="oil energy red-sea bab-el-mandeb houthis yemen saudi-arabia strait-of-hormuz geopolitics shipping maps">
+      <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Other Door</span>
+      <span class="ec-s">Houthis now hold Mokha and Perim island at Bab el-Mandeb. The Red Sea has two doors, and Saudi tankers from Yanbu are banned from the southern one.</span>
+    </a>
+    <a class="tile" href="the-escape-valve.html" data-search="the escape valve drones hit saudi arabia&#x27;s east–west pipeline, the big bypass around a hormuz shut since march. who is hurt, where the oil goes now, what the price says." data-tags="oil energy strait-of-hormuz saudi-arabia iran iraq geopolitics shipping russia venezuela maps">
+      <span class="ec-d">WORLD · SEPTEMBER 11, 2026</span>
+      <span class="ec-t">The Escape Valve</span>
+      <span class="ec-s">Drones hit Saudi Arabia&#x27;s East–West pipeline, the big bypass around a Hormuz shut since March. Who is hurt, where the oil goes now, what the price says.</span>
+    </a>
+    <a class="tile" href="antarctica-gained-ice-and-the-reason-was-far-away.html" data-search="antarctica gained 695 billion tons of ice, and the reason was seven thousand kilometres away antarctica gained a record 695 billion tons of ice in 2021-23. the nature study behind the headline, its tropical mechanism, and why the loss trend stands." data-tags="climate antarctica ice-sheet sea-level satellites grace weather science">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
+      <span class="ec-s">Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands.</span>
+    </a>
+    </div>
+  </section>
+  <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-the-summer-of-truth-and-the-things-with-dates-html">👁 <span id="hits-notebook-the-summer-of-truth-and-the-things-with-dates-html-n">—</span> views</span>
+<script>
+(function(){
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fthe-summer-of-truth-and-the-things-with-dates.html.json")
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var n = document.getElementById("hits-notebook-the-summer-of-truth-and-the-things-with-dates-html-n");
+      if (n && d && d.count) n.textContent = d.count;
+      else { var el = document.getElementById("hits-notebook-the-summer-of-truth-and-the-things-with-dates-html"); if (el) el.style.display = "none"; }
+    })
+    .catch(function(){
+      var el = document.getElementById("hits-notebook-the-summer-of-truth-and-the-things-with-dates-html"); if (el) el.style.display = "none";
+    });
+})();
+</script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored.</p></footer>
+</div>
+</body>
+</html>

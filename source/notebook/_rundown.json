@@ -34,15 +34,15 @@
     {
       "label": "World",
       "items": [
-        {"text": "EU Commission President Ursula von der Leyen delivers her 2026 State of the Union in Strasbourg, calling summer 2026 the \"summer of truth\" and unveiling a European Heatwave Plan and an EU Kids Act banning social media for users under 13.", "href": ""},
+        {"text": "EU Commission President Ursula von der Leyen delivers her 2026 State of the Union in Strasbourg, calling summer 2026 the \"summer of truth\" and unveiling a European Heatwave Plan and an EU Kids Act banning social media for users under 13.", "href": "the-summer-of-truth-and-the-things-with-dates.html"},
         {"text": "Trump says the US is \"hopefully\" nearing the end of the nearly seven-month Iran war, as Saudi Arabia and Yemen's Houthis continue trading strikes.", "href": ""}
       ]
     },
     {
       "label": "Health & medicine",
       "items": [
-        {"text": "The FDA approves Curium's Bexlutry (lutetium Lu 177 dotatate), the company's first radioligand cancer therapy to reach the US market.", "href": ""},
-        {"text": "The FDA grants Breakthrough Therapy designation to Revolution Medicines' daraxonrasib for treatment-naive metastatic pancreatic cancer in combination with chemotherapy.", "href": ""}
+        {"text": "The FDA approves Curium's Bexlutry (lutetium Lu 177 dotatate), the company's first radioligand cancer therapy to reach the US market.", "href": "https://mistertranslation.com/health/what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html"},
+        {"text": "The FDA grants Breakthrough Therapy designation to Revolution Medicines' daraxonrasib for treatment-naive metastatic pancreatic cancer in combination with chemotherapy.", "href": "https://mistertranslation.com/health/daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html"}
       ]
     }
   ]
