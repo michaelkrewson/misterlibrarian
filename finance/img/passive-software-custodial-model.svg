@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img"
+     aria-label="Left: a flow diagram of the custodial model in CFTC Staff Letter 26-25 — a user's app, the passive software provider, sends orders straight to a registered exchange or futures commission merchant, the user's money sits at the clearinghouse, and a revenue share flows back to the app; the app never holds the money. Right: a table of what changed between the 2006 to 2008 technology-vendor letters and the 2026 letter — a pre-existing broker relationship, once required, no longer is; steering users to a particular broker, once forbidden, is now allowed; per-trade fees and revenue share, once forbidden, are now allowed; buy and sell signals are still forbidden; custody of user funds is still forbidden; and the relief lasts until a rule is written, with no date.">
+  <rect width="900" height="400" fill="#0a0f1a"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">The custodial model <tspan fill="#94a3b8">— Staff Letter 26-25, Sep 17, 2026</tspan></text>
+  <rect x="40" y="80" width="170" height="56" rx="6" fill="none" stroke="#5b8def" stroke-width="2"/>
+  <text x="125.0" y="104" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#e8dfd2">Your phone</text>
+  <text x="125.0" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">the app = passive software</text>
+  <rect x="280" y="80" width="170" height="56" rx="6" fill="none" stroke="#e8865c" stroke-width="2"/>
+  <text x="365.0" y="104" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#e8dfd2">Exchange / FCM</text>
+  <text x="365.0" y="122" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">the registrant</text>
+  <rect x="280" y="200" width="170" height="56" rx="6" fill="none" stroke="#a3b378" stroke-width="2"/>
+  <text x="365.0" y="224" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#e8dfd2">Clearinghouse</text>
+  <text x="365.0" y="242" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">where the money sits</text>
+  <rect x="40" y="200" width="170" height="56" rx="6" fill="none" stroke="#5c6b85" stroke-width="2"/>
+  <text x="125.0" y="224" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#e8dfd2">The app never</text>
+  <text x="125.0" y="242" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">holds a dollar</text>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#e8dfd2"/></marker></defs>
+  <line x1="210" y1="98" x2="278" y2="98" stroke="#e8dfd2" stroke-width="2" marker-end="url(#a)"/>
+  <text x="244" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#e8dfd2">orders</text>
+  <line x1="278" y1="120" x2="210" y2="120" stroke="#c9b458" stroke-width="2" marker-end="url(#a)"/>
+  <text x="244" y="148" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9b458">revenue share</text>
+  <line x1="365" y1="136" x2="365" y2="198" stroke="#a3b378" stroke-width="2" marker-end="url(#a)"/>
+  <text x="372" y="172" font-family="Georgia, serif" font-size="11" fill="#a3b378">funds</text>
+  <line x1="125" y1="200" x2="125" y2="140" stroke="#5c6b85" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="40" y="300" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">Allowed, with ten conditions and a notice filing:</text>
+  <text x="52" y="322" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• market the app and specific contracts</text>
+  <text x="52" y="341" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• steer users to specific exchanges</text>
+  <text x="52" y="360" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• charge a fee per trade</text>
+  <text x="40" y="386" font-family="Georgia, serif" font-size="12.5" fill="#e8865c">Still forbidden: buy/sell signals, custody, routing discretion.</text>
+  <line x1="490" y1="30" x2="490" y2="392" stroke="rgba(255,255,255,.12)"/>
+  <text x="520" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">What changed <tspan fill="#94a3b8">since the 2006–08 letters</tspan></text>
+  <text x="735" y="72" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8">2006–08</text>
+  <text x="840" y="72" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8">2026</text>
+  <line x1="520" y1="84" x2="870" y2="84" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="100" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Prior broker relationship</text>
+  <text x="735" y="100" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">required</text>
+  <text x="840" y="100" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#c9b458">not required</text>
+  <line x1="520" y1="118" x2="870" y2="118" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="134" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Steer users to a broker</text>
+  <text x="735" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">forbidden</text>
+  <text x="840" y="134" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#c9b458">allowed</text>
+  <line x1="520" y1="152" x2="870" y2="152" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="168" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Per-trade fee / revenue share</text>
+  <text x="735" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">forbidden</text>
+  <text x="840" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#c9b458">allowed</text>
+  <line x1="520" y1="186" x2="870" y2="186" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="202" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Buy / sell signals</text>
+  <text x="735" y="202" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">forbidden</text>
+  <text x="840" y="202" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#94a3b8">forbidden</text>
+  <line x1="520" y1="220" x2="870" y2="220" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="236" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Holding user funds</text>
+  <text x="735" y="236" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">forbidden</text>
+  <text x="840" y="236" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#94a3b8">forbidden</text>
+  <line x1="520" y1="254" x2="870" y2="254" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="270" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Exchange membership</text>
+  <text x="735" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">forbidden</text>
+  <text x="840" y="270" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#94a3b8">forbidden</text>
+  <line x1="520" y1="288" x2="870" y2="288" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="304" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Relief lasts</text>
+  <text x="735" y="304" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">until a rule</text>
+  <text x="840" y="304" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#94a3b8">until a rule</text>
+  <line x1="520" y1="322" x2="870" y2="322" stroke="rgba(255,255,255,.08)"/>
+  <text x="520" y="338" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Joint liability with the exchange</text>
+  <text x="735" y="338" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">—</text>
+  <text x="840" y="338" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#e8865c">required</text>
+  <text x="870" y="368" text-anchor="end" font-family="Georgia, serif" font-size="11.5" font-style="italic" fill="#94a3b8">Letters 06-29, 08-07, 08-12 vs. 26-09 and 26-25.</text>
+</svg>
