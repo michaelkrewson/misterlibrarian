@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Not Available on This Connection — The Librarian&#x27;s Notebook</title>
-<meta name="description" content="Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me."/>
-<link rel="canonical" href="https://mistertranslation.com/notebook/not-available-on-this-connection.html"/>
+<title>The Mosquito That Can&#x27;t Carry It — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="How gene drives work, the difference between suppression and population modification, and where malaria gene-drive field trials actually stand in 2026."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/the-mosquito-that-cant-carry-it.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
-<meta property="og:title" content="Not Available on This Connection"/>
-<meta property="og:description" content="Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me."/>
-<meta property="og:url" content="https://mistertranslation.com/notebook/not-available-on-this-connection.html"/>
+<meta property="og:title" content="The Mosquito That Can&#x27;t Carry It"/>
+<meta property="og:description" content="How gene drives work, the difference between suppression and population modification, and where malaria gene-drive field trials actually stand in 2026."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/the-mosquito-that-cant-carry-it.html"/>
 <meta property="article:section" content="Science &amp; Technology"/>
 <meta name="twitter:card" content="summary"/>
 <style>
@@ -418,158 +418,244 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
 </svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html" class="on">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
   <article class="entry">
-    <h1 class="etitle">Not Available on This Connection</h1>
-    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 12, 2026</p>
-    <figure class="hero"><img src="img/bell-telephone-office-hamburg-1900.jpg" alt="A telephone exchange office around 1900, two women operating switchboards while two men attend nearby equipment, one leaning in close to check a line" width="640" height="485" loading="eager"/><figcaption>The Bell Telephone office at Hamburg, New York, circa 1900–1910. Library of Congress Prints and Photographs Division, no known restrictions on publication.</figcaption></figure>
-<p>On September 11, an email newsletter from Anthropic told me to run a command I had never used:
-<code>/skill-doctor</code>. The pitch was specific and genuinely useful — run it "to see what each
-of your skills costs you in context and how often Claude actually invokes it," so I could turn off
-the ones that had quietly stopped earning their keep. I have collected a lot of skills over four
-months of daily use with <a href="https://code.claude.com/docs/en/overview" rel="noopener" target="_blank">Claude Code</a>,
-Anthropic's coding assistant. I ran the command. It failed. I ran it two more times, in two more
-places, and it failed the same way three times running before I actually read the documentation
-closely enough to see what it had told me to do differently. On the fourth try, done properly, it
-stopped refusing the connection — and gave me nothing anyway. Four tries in, I still have not once
-gotten this feature to tell me what it was built to tell me.</p>
+    <h1 class="etitle">The Mosquito That Can&#x27;t Carry It</h1>
+    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 17, 2026</p>
+    
+<p>There is a room at UC Davis with thousands of mosquitoes in it, sorted into colonies by where
+their ancestors were caught — Mali, São Tomé and Príncipe, and now Annobón, a volcanic speck of
+Equatorial Guinea in the Gulf of Guinea. Some of those colonies are wild-type. Some of them have
+been edited so that the malaria parasite cannot complete its life cycle inside them. The second
+group is kept separately, behind more doors, and the people who raise them are the reason this
+entry exists: the <a href="https://stopmalaria.org/inside-the-insectary-the-team-moving-ucmis-research-forward/" rel="noopener" target="_blank">University of California Malaria
+Initiative published a piece about its insectary staff</a> — the students and technicians who
+feed, count, breed and dissect the things — and one line in it stopped me. The insectary manager,
+Danspaid Mabuka, was twelve when his sister died of malaria. He has spent about fifteen years in
+malaria research since.</p>
 
-<h2>What /skill-doctor Is Supposed to Do</h2>
-<p><code>/skill-doctor</code> is a real, documented command, not something the newsletter made up.
-Per skill, it reports a context cost and a usage count, flags the ones that have never been invoked,
-and says where to turn them off. In an ordinary terminal session the report opens inside the plugin
-manager's Stats tab; run headless with <code>-p</code> and it prints as plain text instead. It needs
-a Claude Code build no older than version 2.1.252, and it depends on the session having fetched
-Anthropic's feature flags at all — one that skips that step, the documentation says plainly, does not
-get the feature.<sup>[1]</sup></p>
+<p>I want to explain what he is working on, because the mechanism is genuinely beautiful, the
+public conversation about it is mostly wrong in one specific way, and the field just took a hard
+institutional hit that almost nobody outside it noticed.</p>
 
-<p>None of that is what happened to me. What happened to me is documented too — just not in the
-newsletter that sent me looking for the command in the first place.</p>
+<h2>What Is a Gene Drive?</h2>
 
-<h2>Why Claude Code Says "Skill Usage Reports Are Not Available on This Connection"</h2>
+<p>Start with the thing everybody learns and then forget the word "dominant," because it is not
+the point. If you put a new gene into one mosquito and release it, that mosquito's offspring
+inherit the gene from one parent out of two — so roughly half of them carry it. Their offspring,
+mating with wild mosquitoes, pass it on to half of theirs. The gene dilutes. Within a handful of
+generations your expensive laboratory edit has been rounded off to nothing by ordinary sex.
+Mendel's coin flip is the enemy of every genetic approach to anything wild.</p>
+
+<p>A gene drive is a gene that cheats the coin flip. The trick, in the CRISPR era, is to give the
+edit the ability to copy itself onto the other chromosome. The inserted cassette carries the
+Cas9 enzyme and a guide RNA aimed at the exact spot on the chromosome where the cassette itself
+sits. So in a mosquito that inherited one edited copy and one wild copy, the machinery cuts the
+wild copy at precisely that site — and the cell, repairing the break, uses the intact edited
+chromosome sitting right there as its template. It copies the cassette across. The mosquito now
+has two edited copies, and every one of its offspring inherits the edit.</p>
+
+<p>Fifty percent becomes, in the good case, nearly a hundred. That is the whole idea. It is not a
+stronger gene; it is a gene that rewrites its own inheritance odds, and the consequence is that a
+small release can spread a trait through a whole interbreeding population without anyone having to
+release very much of anything.</p>
+
 <div class="aside">
-  <p><strong>The exact failure, verbatim.</strong> Anthropic's own documentation states: "If you run
-  <code>/skill-doctor</code> over Remote Control from your phone or browser, Claude Code replies
-  <em>Skill usage reports are not available on this connection.</em> instead. Run
-  <code>/skill-doctor</code> in the terminal on the machine where the session is running."<sup>[1][2]</sup></p>
+  <p><strong>Why this is the only genetic approach that scales to a continent.</strong> The
+  alternative genetic methods — sterile males, self-limiting systems — work, and they are safer
+  precisely because they fade. But fading means you have to keep releasing, forever, everywhere,
+  which turns a biology problem into a logistics-and-budget problem of the same shape as bed nets.
+  A drive is the only version where the intervention keeps working after the trucks stop coming.
+  That is its appeal and, to its critics, exactly its problem.</p>
 </div>
 
-<p>I typed the command into a session running through the Claude app on my phone, and that sentence
-came back exactly as written, word for word. That much the documentation had already told me to
-expect, if I had known to go looking for it before I hit it. What it did not prepare me for was what
-came immediately after, in the same reply, from the assistant itself: <em>"There's no
-<code>skill-doctor</code> command installed — nothing by that name in the public, example, or plugin
-skill directories."</em> It recommended a different, real skill called <code>skill-creator</code> as
-the nearest thing available, and offered to build me a <code>skill-doctor</code> "if that's something
-you've used elsewhere."</p>
+<h2>The Two Schools: Kill the Mosquito, or Cure It?</h2>
 
-<p>That second sentence is not a hedge or an approximation. It is simply wrong, and it is wrong about
-the one thing the reply had just gotten right one line above it. The system had already printed the
-correct, documented explanation for the failure — a disallowed connection type, not a missing
-feature. The assistant then wrote straight past its own correct output and asserted a different,
-false cause, with exactly the confidence it would have earned by actually checking.</p>
+<p>Here is the part the coverage usually flattens. There is not one gene-drive-for-malaria
+project; there are two philosophies, and they want different things to happen to the mosquito.</p>
 
-<h2>Four Tries, and the Fourth Wasn't a Success Either</h2>
-<p>I did not stop at the phone. I opened a terminal from inside that same phone app and tried it
-there. Failed. I tried it a third time inside the Claude Code session running as a VS Code
-extension on my own Mac — which, sitting in an editor with an integrated terminal panel right next
-to it, felt close enough to "the terminal on the machine where the session is running" that I did
-not think twice about it. Failed the same way a third time.</p>
+<p><strong>Suppression</strong> aims to crash the population. The best-known version targets
+<i>doublesex</i>, a gene essential to female development — edited females are sterile, the drive
+spreads through males, and the population runs out of functional females and collapses. Target
+Malaria, based at Imperial College London, is the flagship. It is elegant and brutal: no
+mosquitoes, no malaria.</p>
 
-<p>All three of those were, in a plain sense, my own fault for not reading the third sentence of the
-documentation closely enough the first time through: a terminal opened from inside the phone app is
-still the phone app's connection, and a Claude Code session running as an editor extension is not the
-same thing as a shell. So I opened a real terminal window on my Mac — no phone, no IDE in the way —
-updated to the latest build, and ran it a fourth time. This time it stopped refusing the connection.
-It dropped me into the plugin manager's Stats tab, with a note at the top: <em>"/skill-doctor
-moved — skill usage and context costs now live in this Stats tab."</em> Under a heading reading
-<em>"Skills loaded this session,"</em> it reported: <em>"(no skills loaded)."</em> That was the whole
-report. No numbers, no list, nothing to turn off. Four tries in, on the one occasion the command
-finally went where the documentation says it should go, it had nothing to say once it got there.</p>
+<p><strong>Population modification</strong> leaves the mosquito alive and takes away its ability
+to carry the parasite. This is the University of California Malaria Initiative's approach — a
+collaboration across four UC campuses (Davis, Irvine, San Diego, Berkeley) with Johns Hopkins,
+with the mosquito work anchored at UC Davis's Vector Genetics Laboratory and UC San Diego's Tata
+Institute for Genetics and Society. Their published strain, <b>TP13</b>, carries the Cas9 drive
+linked to two genes encoding single-chain antibody fragments — one aimed at the parasite's
+ookinete stage, one at the sporozoite stage. Two locks on two different doors of the parasite's
+journey through the insect. The mosquito still bites you. You just don't get malaria, because
+what it is carrying dies inside it.</p>
 
-<p>I don't believe an empty report is the honest shape of the answer here, for what it's worth — not
-"I wish it were higher," but that this doesn't read like the feature the newsletter described. The
-pitch was "how often Claude actually invokes" each skill, which reads like a track record built up
-over time. What came back was scoped to one session that had, at that point, done nothing but start
-up and update itself — a session in which "no skills loaded" would be true no matter how many skills
-I own or how often I use them on every other day of the week. Whether that's a bug or just how the
-feature is scoped, the practical result is the same one I started with: I still don't know which of
-my skills are worth keeping, which was the entire reason I went looking for this command.</p>
+<p>Bites don't transmit; that is the sentence to keep. And the strategic difference matters more
+than it sounds: a suppression drive that works removes a species from an ecosystem, which means
+the ecological argument against it is permanent and the political argument against it never gets
+easier. A modification drive is asking for something narrower — that a mosquito which has been
+biting people for as long as there have been people go on doing exactly that, minus one passenger.
+In small cage trials the modification drives reached full introduction into the caged population
+within three to six months.</p>
 
-<h2>What This Says About the Tool, Not Just the Bug</h2>
-<p>I keep coming back to something I said to myself the moment I saw that first phone screen, before
-I understood any of the rest of it: this is exactly the kind of thing Anthropic would want to know
-about — a specific, reproducible, timestamped account of a real feature failing on a real account,
-across real machines, with the exact wrong words it said along the way. Not a complaint that the
-tool is bad; a small, checkable bug report that a company shipping something this fast genuinely
-needs a supply of. I don't know whether anyone at Anthropic will ever see this particular entry, but
-writing it down in a form specific enough to be useful, rather than just grumbling that "AI gets
-things wrong," is the whole point of the exercise. The most useful sentence in that first reply
-wasn't the wrong diagnosis — it was the correct one sitting one line above it, ignored by the same
-response that printed it. A tool built to tell me which of my own tools I'm not using would do well
-to notice that about itself first.</p>
+<p>I don't think the modification camp is obviously right. Suppression has a cleaner endpoint and
+does not depend on the edit staying functional over evolutionary time — dead mosquitoes cannot
+evolve resistance to being dead. But if I were choosing which one to ask a health ministry to
+approve first, the one that does not end a species is a much shorter conversation.</p>
+
+<h2>Why an Island?</h2>
+
+<p>Notice which mosquitoes are in that Davis insectary: Mali, São Tomé and Príncipe, Annobón.
+Two of those three are islands, and that is not a coincidence — it is the entire trial design.</p>
+
+<p>UC Davis's Gregory Lanzaro and colleagues screened 22 candidate island sites off the African
+coast against explicit criteria: genetic and geographic isolation, how many vector species are
+present, size, topography. Isolation matters because a drive is designed to spread through an
+interbreeding population, and an island population that barely exchanges migrants with the
+mainland is a population you can actually bound. Species count matters for a subtler reason: if
+five different <i>Anopheles</i> species are transmitting malaria at your site and you modify one
+of them, the other four keep transmitting and your result is statistically invisible. Oceanic
+islands had between one and seven anopheline species, against a mainland site's much richer cast —
+which is why Annobón scored well.</p>
+
+<p>So the choice of Annobón is doing two jobs at once: it makes the effect measurable, and it
+makes the release containable. UCMI announced a partnership with the Government of Equatorial
+Guinea at the UN General Assembly in September 2025, tied to that country's Vision 2030 malaria
+elimination strategy. The Open Philanthropy grant behind the São Tomé work is $10.2 million.</p>
+
+<div class="aside">
+  <p><strong>The unsettled part.</strong> Whether geographic isolation is the right containment
+  strategy is a live scientific argument, not a settled premise — there is a published exchange
+  over whether trials need <i>genetic</i> localisation (drives engineered so they cannot spread
+  beyond a target population) rather than geographic isolation (islands). Anyone telling you the
+  containment question is closed is selling something.</p>
+</div>
+
+<h2>The Setback Nobody Covered</h2>
+
+<p>Here is where the optimistic version of this story runs into 2025.</p>
+
+<p>On 11 August 2025, Target Malaria released about 16,000 genetically modified male mosquitoes —
+engineered to produce almost exclusively male offspring — in the village of Souroukoudindan,
+Burkina Faso. Eleven days later, on 22 August, the Burkinabè government suspended the project by
+administrative directive from the Ministry of Higher Education, Research and Innovation.
+<a href="https://www.science.org/content/article/after-humiliating-raid-burkina-faso-halts-gene-drive-project-fight-malaria" rel="noopener" target="_blank">Science</a> reported a raid on the
+institute. Researchers killed the mosquitoes remaining in their insectary. The government sent a
+team to spray insecticide in the village where the release had happened.</p>
+
+<p>Read that sequence again, because it is the most important fact in this entry. The
+best-funded, furthest-advanced gene-drive malaria programme in the world spent roughly a decade
+on community engagement, staged releases, and regulatory groundwork — and eleven days after its
+first modified-male release, a government ended it and sprayed the site. As of early 2026 it
+remains suspended, and <a href="https://www.nature.com/articles/d44148-025-00286-z" rel="noopener" target="_blank">Nature Africa</a> reported the freeze casting doubt on other programmes across the
+continent.</p>
+
+<p>Which means the honest version of the gene-drive story in 2026 is not "the science is nearly
+ready and then it gets deployed." The science is further along than the politics by a wide margin,
+and the binding constraint is consent — national, regulatory, and village-level. It also makes
+UCMI's island strategy look like something more than statistical convenience: a small island
+nation whose government has signed a malaria-elimination partnership is a place where the consent
+question has a tractable shape.</p>
+
+<h2>What It's Up Against</h2>
+
+<p>The reason any of this is worth a decade of somebody's life: in 2024 there were an estimated
+282 million malaria cases and about 610,000 deaths. Africa accounted for 94% of cases and 95% of
+deaths, and 75% of the deaths were children under five. Global malaria funding that year was $3.9
+billion against a $9.3 billion target — 42% of what the plan called for. The existing toolkit,
+which genuinely works, is simultaneously underfunded and losing ground to drug and insecticide
+resistance.</p>
+
+<p>That is the context in which a self-spreading intervention stops sounding exotic and starts
+sounding like arithmetic. Bed nets have to be bought, shipped, hung, replaced, and re-bought
+every three years for a hundred million households. A drive, if it works, is a fixed cost with a
+spreading benefit — which is a fundamentally different financial object, and I have taken that
+apart properly in <a href="https://mistertranslation.com/finance/six-dollars-a-net-forever-versus-one-fixed-bet.html">a companion piece on the Ledger</a>: six dollars a net,
+forever, versus one fixed bet.</p>
 
 <h2>Where I Could Be Wrong</h2>
-<p>The version banner on that fourth run said quite a lot on its own: Claude Code had just updated
-itself, "68 features, 412 bugfixes, and 153 other changes," immediately before the command stopped
-refusing the connection. That update may be the entire explanation for the first three failures — an
-older build simply not carrying the feature yet — and if so, the Remote Control message on the phone
-might be the one genuinely separate cause among the three, rather than three instances of the same
-problem. I can't fully untangle an out-of-date build from a disallowed connection type from the
-outside, and I'm not certain the VS Code failure and the phone-terminal failure share a cause at all.
-And on the empty report: it's possible "no skills loaded" is exactly the correct, honest number for a
-session that has done nothing yet, and the newsletter's framing — not the Stats tab itself — is what
-overpromised a track record the feature was never built to keep. Either way, the practical fix is the
-same one I keep landing on: the report should say what window it's counting, so a reader isn't left,
-as I still am, unable to tell whether an empty answer means "nothing to report" or "wrong question."</p>
+
+<p>Several places, and they are not small.</p>
+
+<p><strong>Resistance is the mechanism's own worst enemy.</strong> The cut-and-copy step doesn't
+always copy. Sometimes the cell repairs the break by just sticking the ends back together, which
+mutates the target site and produces a chromosome the guide RNA can no longer recognise — a
+resistant allele, immune to the drive and now under selection to spread. The published work on
+these strains includes papers specifically on Cas9-mediated maternal effects and derived
+resistance alleles, which tells you the researchers take it as seriously as the critics do. The
+dual-effector design helps against the parasite evolving around the cargo; it does not by itself
+solve resistance at the cut site.</p>
+
+<p><strong>Cage trials are not islands.</strong> "Full introduction in three to six months" is a
+result from a box. The article I started from quotes the sentiment exactly right — the moment of
+truth is real-world performance, and nobody has that data yet for a modification drive in a wild
+population, because no such release has happened.</p>
+
+<p><strong>I am not an entomologist or a geneticist.</strong> I have read the published papers and
+the institutional announcements; I have not run a colony or sat in a regulatory hearing. Where
+this entry describes a mechanism, I have tried to describe it the way the primary literature does
+and to link the primary literature so you can check me. Where it offers an opinion — that
+modification is the easier political ask, that consent is the binding constraint — that is mine
+and it is arguable.</p>
+
+<p><strong>And the ecological objection to suppression deserves better than I gave it.</strong> I
+treated "removing a species" as mainly a political liability. Whether <i>Anopheles gambiae</i>
+occupies an ecological role that something worse would fill is a genuine empirical question I am
+not qualified to settle.</p>
 
 <h2>Sources</h2>
 <ol class="sources">
-  <li>Anthropic. <i>skill-doctor — find and disable unused skills</i>. Claude Code documentation. 2026. <a href="https://code.claude.com/docs/en/skills#find-unused-skills" rel="noopener" target="_blank">https://code.claude.com/docs/en/skills#find-unused-skills</a></li>
-  <li>Anthropic. <i>"Skill usage reports are not available on this connection."</i> Claude Code error reference. 2026. <a href="https://code.claude.com/docs/en/errors#skill-usage-reports-are-not-available-on-this-connection" rel="noopener" target="_blank">https://code.claude.com/docs/en/errors#skill-usage-reports-are-not-available-on-this-connection</a></li>
-  <li>Anthropic. <i>Remote Control</i>. Claude Code documentation. 2026. <a href="https://code.claude.com/docs/en/remote-control" rel="noopener" target="_blank">https://code.claude.com/docs/en/remote-control</a></li>
-  <li>The Librarian's Notebook. <i>My Collaborator Has No Memory Except the Notes I Keep for It</i> — the companion entry, on a confident answer built from a stale one. 2026. <a href="my-collaborator-has-no-memory.html">my-collaborator-has-no-memory.html</a></li>
+  <li>University of California Malaria Initiative. <i>Inside the Insectary: The Team Moving UCMI's Research Forward.</i> 2026. <a href="https://stopmalaria.org/inside-the-insectary-the-team-moving-ucmis-research-forward/" rel="noopener" target="_blank">stopmalaria.org</a></li>
+  <li>Carballar-Lejarazú, R. et al. <i>Dual effector population modification gene-drive strains of the African malaria mosquitoes, Anopheles gambiae and Anopheles coluzzii.</i> PNAS, 2023. <a href="https://www.pnas.org/doi/full/10.1073/pnas.2221118120" rel="noopener" target="_blank">pnas.org</a></li>
+  <li>Green, E. I. et al. <i>A population modification gene drive targeting both Saglin and Lipophorin impairs Plasmodium transmission in Anopheles mosquitoes.</i> eLife, 2023. <a href="https://elifesciences.org/articles/93142" rel="noopener" target="_blank">elifesciences.org</a></li>
+  <li>Lanzaro, G. C. et al. <i>Selection of sites for field trials of genetically engineered mosquitoes with gene drive.</i> Evolutionary Applications, 2021. <a href="https://onlinelibrary.wiley.com/doi/10.1111/eva.13283" rel="noopener" target="_blank">onlinelibrary.wiley.com</a></li>
+  <li><i>Response to "Field Trials Need Genetic Localization, Not Geographic Isolation."</i> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12874945/" rel="noopener" target="_blank">ncbi.nlm.nih.gov</a></li>
+  <li>Science. <i>After 'humiliating' raid, Burkina Faso halts 'gene drive' project to fight malaria.</i> 2025. <a href="https://www.science.org/content/article/after-humiliating-raid-burkina-faso-halts-gene-drive-project-fight-malaria" rel="noopener" target="_blank">science.org</a></li>
+  <li>Nature Africa. <i>Mosquito gene drive cancellation disrupts Africa's malaria research.</i> 2025. <a href="https://www.nature.com/articles/d44148-025-00286-z" rel="noopener" target="_blank">nature.com</a></li>
+  <li>World Health Organization. <i>World Malaria Report 2025</i> — 2024 case, death and financing estimates. <a href="https://www.who.int/teams/global-malaria-programme/reports" rel="noopener" target="_blank">who.int</a></li>
+  <li>UC Davis. <i>UC Malaria Initiative Expands Activities to Equatorial Guinea.</i> 2025. <a href="https://unfoldpodcast.ucdavis.edu/blog/uc-malaria-initiative-expands-acivities-equatorial-guinea" rel="noopener" target="_blank">ucdavis.edu</a></li>
+  <li>UC ANR. <i>UC Davis $10.2 Million Grant Targets Malaria in São Tomé and Príncipe.</i> <a href="https://ucanr.edu/blog/entomology-nematology-news/article/uc-davis-102-million-grant-targets-malaria-sao-tome-and" rel="noopener" target="_blank">ucanr.edu</a></li>
 </ol>
 
-    <div class="tags"><a class="tg" href="tag-claude-code.html">claude code</a><a class="tg" href="tag-anthropic.html">anthropic</a><a class="tg" href="tag-artificial-intelligence.html">artificial intelligence</a><a class="tg" href="tag-ai.html">ai</a><a class="tg" href="tag-software.html">software</a><a class="tg" href="tag-documentation.html">documentation</a><a class="tg" href="tag-debugging.html">debugging</a></div>
+    <div class="tags"><a class="tg" href="tag-gene-drive.html">gene drive</a><a class="tg" href="tag-malaria.html">malaria</a><a class="tg" href="tag-crispr.html">crispr</a><a class="tg" href="tag-mosquitoes.html">mosquitoes</a><a class="tg" href="tag-genetics.html">genetics</a><a class="tg" href="tag-public-health.html">public health</a><a class="tg" href="tag-uc-davis.html">uc davis</a><a class="tg" href="tag-biotechnology.html">biotechnology</a></div>
   </article>
-  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Not%20Available%20on%20This%20Connection%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/not-available-on-this-connection.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/not-available-on-this-connection.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20The%20Mosquito%20That%20Can%27t%20Carry%20It%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/the-mosquito-that-cant-carry-it.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/the-mosquito-that-cant-carry-it.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <section class="readnext">
     <h2>Keep reading</h2>
     <div class="tilegrid">
-    <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
-      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
-      <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
-    </a>
-    <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
-      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
-    </a>
-    <a class="tile" href="the-mosquito-that-cant-carry-it.html" data-search="the mosquito that can&#x27;t carry it how gene drives work, the difference between suppression and population modification, and where malaria gene-drive field trials actually stand in 2026." data-tags="gene-drive malaria crispr mosquitoes genetics public-health uc-davis biotechnology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 17, 2026</span>
-      <span class="ec-t">The Mosquito That Can&#x27;t Carry It</span>
-      <span class="ec-s">How gene drives work, the difference between suppression and population modification, and where malaria gene-drive field trials actually stand in 2026.</span>
-    </a>
     <a class="tile" href="what-a-locked-iphone-still-gives-up.html" data-search="what a locked iphone still gives up what mobile-forensic tools can recover from a locked iphone, what advanced data protection does and doesn&#x27;t cover, and the history behind it." data-tags="iphone ios digital-forensics cellebrite encryption apple bitcoin self-custody security technology">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 13, 2026</span>
       <span class="ec-t">What a Locked iPhone Still Gives Up</span>
       <span class="ec-s">What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it.</span>
     </a>
+    <a class="tile" href="antarctica-gained-ice-and-the-reason-was-far-away.html" data-search="antarctica gained 695 billion tons of ice, and the reason was seven thousand kilometres away antarctica gained a record 695 billion tons of ice in 2021-23. the nature study behind the headline, its tropical mechanism, and why the loss trend stands." data-tags="climate antarctica ice-sheet sea-level satellites grace weather science">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
+      <span class="ec-s">Antarctica gained a record 695 billion tons of ice in 2021-23. The Nature study behind the headline, its tropical mechanism, and why the loss trend stands.</span>
+    </a>
+    <a class="tile" href="bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html" data-search="eight years to mercury, and one chance to stop bepicolombo dropped its engine module on 3 september 2026 and enters mercury orbit on 21 november. why arriving at mercury is so hard, and what it studies." data-tags="space mercury bepicolombo esa jaxa planetary-science spaceflight engineering">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
+      <span class="ec-s">BepiColombo dropped its engine module on 3 September 2026 and enters Mercury orbit on 21 November. Why arriving at Mercury is so hard, and what it studies.</span>
+    </a>
+    <a class="tile" href="galileos-experiment-with-one-atom-in-two-places.html" data-search="galileo&#x27;s experiment, done with one atom in two places a rubidium atom in superposition, half in free fall, confirms einstein&#x27;s equivalence principle, and starts a ladder toward testing penrose&#x27;s collapse idea." data-tags="physics quantum-mechanics gravity einstein penrose science experiments">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Galileo&#x27;s Experiment, Done With One Atom in Two Places</span>
+      <span class="ec-s">A rubidium atom in superposition, half in free fall, confirms Einstein&#x27;s equivalence principle, and starts a ladder toward testing Penrose&#x27;s collapse idea.</span>
+    </a>
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
-<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-not-available-on-this-connection-html">👁 <span id="hits-notebook-not-available-on-this-connection-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-the-mosquito-that-cant-carry-it-html">👁 <span id="hits-notebook-the-mosquito-that-cant-carry-it-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fnot-available-on-this-connection.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fthe-mosquito-that-cant-carry-it.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-notebook-not-available-on-this-connection-html-n");
+      var n = document.getElementById("hits-notebook-the-mosquito-that-cant-carry-it-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-notebook-not-available-on-this-connection-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-notebook-the-mosquito-that-cant-carry-it-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-notebook-not-available-on-this-connection-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-notebook-the-mosquito-that-cant-carry-it-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer>
