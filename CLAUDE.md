@@ -64,6 +64,45 @@ someone's lunch money" (same fact, now it has a pulse).
 it should surface on its own in a future session — but if a run of entries reads dry again,
 that's the sign to re-read this section rather than wait to be asked twice.
 
+## Monetization — Google AdSense publisher policy binds EVERY publication (2026-09-17)
+
+Michael applied for Google AdSense on 2026-09-17 (privacy.html / librarian.html were built
+for it — see the hub section above). From that day the whole domain is a Google publisher
+property, and **AdSense can demonetize a page, or drop the whole site, for content that
+breaks its publisher policies — retroactively, on any page, on any of the six publications.**
+This is a standing editorial constraint, not a one-off. The note Michael asked for on
+application day, seeing the AdSense home-page banner:
+
+- **Ukraine / Russia.** Google's standing notice: *"Due to the war in Ukraine, we will pause
+  monetization of content that exploits, dismisses, or condones the war."* Read it exactly —
+  it does NOT forbid writing about the war. It forbids three postures: **exploiting** it
+  (clickbait, using the war as a hook for something else), **dismissing** it (denying or
+  minimizing it — "nothing is really happening," "it's all staged"), or **condoning** it
+  (justifying or cheering the invasion, repeating Kremlin framing as fact). Sourced, sober
+  explainers about the war, its economics, its refugees, its history — the Notebook's and the
+  Ledger's ordinary mode — are fine. The failure mode to avoid is a wry line that reads as
+  minimizing, or a "both sides" framing that reads as condoning. When in doubt, cite the
+  documented fact and drop the joke — the wit doctrine above already says wit never softens a
+  real thing, and this is the sharpest case of it.
+- **The broader Google Publisher Policies** apply equally and are the ones more likely to bite
+  by accident on this site: no **dangerous or derogatory** content (attacking a group on
+  religion/ethnicity/nationality — relevant on the Bible project's comparative-tradition notes,
+  which present disagreements between traditions rather than settling them, which is exactly
+  the safe posture); no **misrepresentation** (claims presented as fact that are demonstrably
+  false — the site's own sourcing doctrine already exceeds this, keep it); no **unreliable and
+  harmful claims** in health (the Regimen's "not medical advice" + primary-literature standard
+  is the protection — never a cure claim, never "stop your medication"); nothing sexually
+  explicit, no shocking content, no promotion of dangerous products. Financial content is
+  allowed; **financial advice** and "get rich" framing is where the Ledger's own "measurement,
+  never a recommendation" rule does the work.
+- **Mechanics to remember:** don't click your own ads (an instant ban); don't place ads on
+  the 404/thanks/contact pages or pop them into the middle of a form; if ads ever go on the
+  Bible chapters, keep them out of the Hebrew/Greek source panels. `privacy.html` §6 already
+  carries the required cookie/opt-out language and says "no ads running as of the date at
+  the top" — **flip that sentence and its date the day ads go live.** The verification
+  `<script>` goes in every page shell (`build.py`'s `page()`, the five blog `_shell`s, and the
+  hand-written `index.html` / `privacy.html` / `librarian.html`), never pasted per page.
+
 ## The relationship rule — RETIRED 2026-09-09, all three now cross-link via the hub
 
 **This used to say the Bible project links to neither of the other two publications and is
