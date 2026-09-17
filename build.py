@@ -1190,6 +1190,12 @@ def _meta_desc(book, num, teaser, src, lang="en", label=None):
     return out
 
 
+# Per-entry reference pages that carry `noindex,follow` (see page()). The landing
+# pages (dictionary.html / encyclopedia.html / atlas.html and their Spanish twins)
+# are root files and stay indexable; routes/ (one page, ~330 words) is left alone.
+NOINDEX_PREFIXES = ("dict/", "ency/", "atlas/")
+
+
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
     # Trim here, at the choke point. Descriptions were being hand-written at ~70
     # call sites and three of them (the book intros, the testament intros, the
@@ -1204,11 +1210,22 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
     # img/..., encyclopedia.html#slug, ...) resolve correctly without rewriting a
     # single one of them. Every other page omits it, so this is a no-op everywhere else.
     base_tag = f'\n<base href="{html.escape(base, quote=True)}"/>' if base else ""
+    # Reference-entry stubs are kept OUT of Google's index (2026-09-17). Measured
+    # that day: dict/ median 140 body words, ency/ 172, atlas/ 201 vs 4,114 for a
+    # chapter -- 3,077 thin pages against 347 substantial ones. GSC showed the
+    # cost plainly: the stubs got crawled in July and made up most of the 1,718
+    # indexed pages while ~220 of 347 English chapters sat un-indexed and the
+    # site's daily impressions fell to ~0-3. `follow` keeps their links crawlable
+    # so the chapters they point at are still reached; readers see no change.
+    # build_sitemap() sniffs this tag and drops the page, so it sits early in the
+    # head (before the long favicon data-URI) where that 2,500-byte read sees it.
+    robots = ('\n<meta name="robots" content="noindex,follow"/>'
+              if url.startswith(NOINDEX_PREFIXES) else "")
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
 <meta charset="utf-8"/>{base_tag}
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>{robots}
 <title>{html.escape(title)}</title>{d}{og}
 <link rel="icon" href="{FAVICON}"/>
 <link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script()}
@@ -6557,11 +6574,13 @@ def build_sitemap():
     _WHOLE_SITE_SHARE = 0.95
     pages = sorted(f for f in os.listdir(OUT)
                    if f.endswith(".html") and os.path.isfile(os.path.join(OUT, f)))
-    # ency/ and dict/ hold real, indexable per-entry pages (unlike /v/'s noindex
-    # redirect stubs above) -- they just live one level down, so os.listdir(OUT)
-    # alone never sees them. Walked separately and added with their subdir prefix
-    # so every downstream step (hreflang pairing via string-slicing, lastmod
-    # lookup, the noindex sniff) treats "ency/seir.html" exactly like a root page.
+    # Subdirectory pages live one level down, so os.listdir(OUT) alone never sees
+    # them. Walked separately and added with their subdir prefix so every downstream
+    # step (hreflang pairing via string-slicing, lastmod lookup, the noindex sniff)
+    # treats "ency/seir.html" exactly like a root page. Since 2026-09-17 the
+    # dict/ency/atlas entries carry `noindex,follow` (NOINDEX_PREFIXES, see page())
+    # and the sniff below drops them -- the walk is kept so routes/ still lands and
+    # so flipping a prefix back to indexable needs no change here.
     for sub in ("ency", "dict", "atlas", "routes"):
         subdir = os.path.join(OUT, sub)
         if os.path.isdir(subdir):
