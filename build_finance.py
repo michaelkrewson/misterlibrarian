@@ -51,6 +51,7 @@ from datetime import datetime, timezone
 import blogkit
 
 SITE_NAME = "The Librarian's Ledger"
+PRIVACY_URL = "https://mistertranslation.com/privacy.html"   # the site-wide policy at the hub root
 TAGLINE = "What the world's money is actually in"
 BLURB = ("A standing count of the largest assets on earth — gold, silver, the biggest "
          "public companies, and Bitcoin — ranked by what the market says they are worth, "
@@ -763,8 +764,9 @@ def _legal():
             'or sell any security. Figures are drawn from public sources, are not '
             'audited, and are not warranted to be accurate or complete — do your own '
             'research before relying on anything here. No company, fund, or government '
-            'named on this site has endorsed it or is affiliated with it.</p>'
-            % (datetime.now(timezone.utc).year, esc(SITE_NAME)))
+            'named on this site has endorsed it or is affiliated with it. '
+            '<a href="%s">Privacy policy</a>.</p>'
+            % (datetime.now(timezone.utc).year, esc(SITE_NAME), PRIVACY_URL))
 
 
 def _foot(hits_path=None):

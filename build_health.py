@@ -78,6 +78,7 @@ from datetime import datetime, timezone
 import blogkit
 
 SITE_NAME = "The Librarian's Regimen"
+PRIVACY_URL = "https://mistertranslation.com/privacy.html"   # the site-wide policy at the hub root
 TAGLINE = "Health, nutrition and medicine — one question at a time, from the studies"
 BLURB = ("Notes on health, nutrition and medicine, worked through one question at a time "
          "from the primary literature: what the studies actually found, how sure anyone "
@@ -418,7 +419,8 @@ def _legal(lang="en"):
                 'empresa u organización mencionados en este sitio lo ha respaldado ni está '
                 'afiliado a él; nada aquí está patrocinado. El uso de este sitio es bajo su '
                 'propia responsabilidad: véase el <a href="disclaimer.es.html">aviso legal '
-                'completo</a>.</p>' % (year, esc(SITE_NAME_ES)))
+                'completo</a>. <a href="%s">Política de privacidad</a>.</p>'
+                % (year, esc(SITE_NAME_ES), PRIVACY_URL))
     return ('<p class="legal">© %d %s. Nothing on this site is medical, nutritional or '
             'health advice, and no reply from Mr. Librarian is either. This site is one '
             'reader\'s reading of published research — not a diagnosis, not a treatment, '
@@ -430,8 +432,9 @@ def _legal(lang="en"):
             'relying on anything here. No drug, supplement, product, company or '
             'organization named on this site has endorsed it or is affiliated with it; '
             'nothing here is sponsored. Use of this site is at your own risk — see the '
-            '<a href="disclaimer.html">full disclaimer</a>.</p>'
-            % (year, esc(SITE_NAME)))
+            '<a href="disclaimer.html">full disclaimer</a>. '
+            '<a href="%s">Privacy policy</a>.</p>'
+            % (year, esc(SITE_NAME), PRIVACY_URL))
 
 
 def _disclaimer_box(lang="en"):

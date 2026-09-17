@@ -90,6 +90,7 @@ SITE_NAME = "Eight Miles West"
 # 2026-09-11): this is his own family's book, and the printed edition will carry
 # the same name. Everywhere else the domain's byline stays "Mr. Librarian".
 AUTHOR = "Michael V. Krewson"
+PRIVACY_URL = "https://mistertranslation.com/privacy.html"   # the site-wide policy at the hub root
 TAGLINE = "A family's four centuries in America — from New Amsterdam to the Pacific, one document at a time"
 BLURB = ("The Krewson family's four centuries in America — Croesen, Kroesen, Kroessen, "
          "Kreuso, Cruse, Krewson — from a cooper who landed at Breuckelen around 1660, "
@@ -283,8 +284,9 @@ def _legal():
             'inferred, and which are family legend; documents are cited so they can be '
             'checked, and may be misread, superseded or simply wrong. Living people are '
             'written about with their knowledge. Nothing here is professional advice of '
-            'any kind, genealogical or otherwise. Opinions are the author\'s own.</p>'
-            % (year, esc(AUTHOR)))
+            'any kind, genealogical or otherwise. Opinions are the author\'s own. '
+            '<a href="%s">Privacy policy</a>.</p>'
+            % (year, esc(AUTHOR), PRIVACY_URL))
 
 
 def _foot(hits_path=None):

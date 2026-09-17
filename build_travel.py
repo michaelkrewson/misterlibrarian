@@ -280,7 +280,8 @@ FOOTER = f"""<footer class="site-foot">
   <p>{SITE_NAME} — {BLURB}</p>
   <p><a href="index.html">Latest</a> · <a href="bookmarked.html">Bookmarked</a> ·
   <a href="write.html">Write to the librarian</a> ·
-  <a href="about.html">About</a> · <a href="feed.xml">RSS</a></p>
+  <a href="about.html">About</a> · <a href="feed.xml">RSS</a> ·
+  <a href="https://mistertranslation.com/privacy.html">Privacy</a></p>
   <p class="sibfoot"><a href="https://mistertranslation.com/finance/">The Librarian's Ledger</a>
   — the other one, about money — <a href="https://mistertranslation.com/health/">The
   Librarian's Regimen</a>, about health — and <a href="https://mistertranslation.com/notebook/">The

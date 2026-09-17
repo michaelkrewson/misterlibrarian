@@ -954,7 +954,7 @@ FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="privacy.html">Privacy</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 # Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only
@@ -963,7 +963,7 @@ ES_FOOTER = f"""<footer class="site-foot">
   <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
   originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
   que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="es.html">Inicio</a> · <a href="{HOME_URL}">English edition</a> · <a href="privacy.html">Privacidad</a></p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 
@@ -4165,7 +4165,7 @@ def build_about():
   remembered locally in your own browser (a bit of localStorage) — there's no login and no server-side
   record of your preferences; clear your browser data and it's gone. The one thing that <em>is</em> measured
   is an anonymous, cookie-less visit count — no personal data, no cross-site tracking, nothing sold,
-  no consent banner needed because none of that happens.{" That's it, live, right below." if GOATCOUNTER_CODE else ""}</p>
+  no consent banner needed because none of that happens.{" That's it, live, right below." if GOATCOUNTER_CODE else ""} The full <a href="privacy.html">privacy policy</a> for the whole site says the same at greater length.</p>
   {_stats_box()}
 </div>"""
     out = page(f"About — {SITE_NAME}", body, active="about",

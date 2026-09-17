@@ -90,6 +90,7 @@ from datetime import datetime, timezone
 import blogkit
 
 SITE_NAME = "The Librarian's Notebook"
+PRIVACY_URL = "https://mistertranslation.com/privacy.html"   # the site-wide policy at the hub root
 TAGLINE = "A commonplace book — science and technology, the world, arts and culture, and whatever else didn't fit"
 BLURB = ("A commonplace book kept by Mr. Librarian: notes on science and technology, on the "
          "world and its news, on the arts, and on whatever else didn't belong in the Ledger, "
@@ -362,7 +363,7 @@ def _legal():
             'anything here. Opinions are the author\'s own and are not those of any '
             'employer, company or organization. No person, company, product or '
             'organization named on this site has endorsed it or is affiliated with it; '
-            'nothing here is sponsored.</p>' % (year, esc(SITE_NAME)))
+            'nothing here is sponsored. <a href="%s">Privacy policy</a>.</p>' % (year, esc(SITE_NAME), PRIVACY_URL))
 
 
 def _foot(hits_path=None):

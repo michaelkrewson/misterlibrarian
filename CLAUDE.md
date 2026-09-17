@@ -97,6 +97,20 @@ page had already been written — trimmed to 156 (and again to 159 when the fift
 2026-09-11 — the first cut was 163). Editing the hub's description by hand means
 counting it; nothing else caps it.
 
+**Site-wide legal pages at the hub root (2026-09-17, for the Google AdSense application):**
+`privacy.html` (one policy for all six publications — GoatCounter, localStorage, FormSubmit,
+the OSM/YouTube-nocookie embeds, and an AdSense section written to apply the day ads switch on)
+and `librarian.html` (site-wide About & Contact — same FormSubmit endpoint as the Bible
+project's `contact.html`, general subject line, returns to itself with `?sent=1` instead of
+the Bible-styled `thanks.html`). Both hand-written in the hub's own visual language, same as
+`index.html`; both under the same 160-char description cap. **Every footer links to the
+policy:** the hub's, `build.py`'s `FOOTER`/`ES_FOOTER`, `build_travel.py`'s `FOOTER`, and the
+`_legal()` small print of finance/health/notebook/west (via a `PRIVACY_URL` constant, absolute
+because those live one level down). Change the policy → edit `privacy.html` and move its dated
+line; don't fork per-publication copies. The AdSense wording (cookies, Ads Settings/aboutads
+opt-outs, partner-sites link, EEA/UK consent) is what Google's program policy asks a publisher's
+policy to say — keep it if the section is ever rewritten.
+
 ## Before touching anything — verify, don't assume
 
 - **Check the actual repo/live site, not `ls`/`grep` guesses.** Chapter build slugs are not
