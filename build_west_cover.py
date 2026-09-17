@@ -81,7 +81,7 @@ HC_WRAP_EDGE_IN = 0.591
 BARCODE_W_IN, BARCODE_H_IN = 2.0, 1.2
 BARCODE_BOTTOM_IN, BARCODE_HINGE_IN = 0.76, 0.25
 
-ACCENT = "#4fa8dc"   # the site's Delft blue — same accent as mistertranslation.com/west/
+ACCENT = "#6d1b2b"   # deep burgundy — the cover's own choice, not tied to the site's Delft blue
 
 
 def spine_in(pages, paper):
