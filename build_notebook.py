@@ -111,6 +111,7 @@ BASE = "/notebook"
 # Cookie-less, no-consent-banner analytics, same account as the other four so
 # there's one dashboard for the whole domain. Set to None to disable entirely.
 GOATCOUNTER_CODE = "mistertranslation"
+ADSENSE_CLIENT = "ca-pub-7435612822800919"   # Google AdSense publisher id (applied 2026-09-17); the tag rides with the GoatCounter script into every <head>
 
 # The Notebook's front-matter vocabulary: the Regimen's, plus `section`, minus
 # `draft` (no draft mechanism exists here — see the module docstring).
@@ -635,7 +636,9 @@ def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
-            f'async src="//gc.zgo.at/count.js"></script>')
+            f'async src="//gc.zgo.at/count.js"></script>'
+            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
 
 
 def _hits_id(path):

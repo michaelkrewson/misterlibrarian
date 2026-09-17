@@ -71,6 +71,7 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 # CODE in CODE.goatcounter.com). Leave as None and every tracking hook below is a
 # silent no-op — the site behaves exactly as it does today.
 GOATCOUNTER_CODE = "mistertranslation"
+ADSENSE_CLIENT = "ca-pub-7435612822800919"   # Google AdSense publisher id (applied 2026-09-17); the tag rides with the GoatCounter script into every <head>
 
 # Chapter registry: slug -> (book, chapter number, one-line teaser).
 # Add a line here when a new chapter lands in the source file.
@@ -973,7 +974,9 @@ def _goatcounter_script():
     if not GOATCOUNTER_CODE:
         return ""
     return (f'\n<script data-goatcounter="https://{GOATCOUNTER_CODE}.goatcounter.com/count" '
-            f'async src="//gc.zgo.at/count.js"></script>')
+            f'async src="//gc.zgo.at/count.js"></script>'
+            f'\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+            f'?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>')
 
 
 def _stats_box():
