@@ -1035,6 +1035,20 @@ the script (idempotent — only fetches what's missing).
   2026-09-10, off by ~5×, for exactly that reason. The authority is the build's own
   `verse cards: N published to S3` line (`ls v/ | wc -l` agrees) — quote *that*, never a figure
   frozen in prose.
+- **The `dict/`, `ency/` and `atlas/` per-entry pages are `noindex,follow` and out of the
+  sitemap (2026-09-17, Michael's call — reversing the 09-10 wait-and-see).** `NOINDEX_PREFIXES`
+  in `build.py`, applied inside `page()` off the `url=` prefix, so no call site opts in or out
+  by hand; the sitemap's existing noindex sniff drops them (3,814 → 738 URLs). Measured the
+  same day: dict median 140 body words, ency 172, atlas 201, vs 4,114 for a chapter — 3,077
+  thin pages beside 347 substantial ones — and GSC's per-reason exports showed the cost: the
+  stubs got crawled in July and made up most of the 1,718 indexed pages while ~220 of 347
+  English chapters sat un-indexed and impressions ran ~0–3/day. Readers see no change; the
+  landing pages (`dictionary.html` / `encyclopedia.html` / `atlas.html` + Spanish twins) and
+  `routes/` stay indexable. ⚠️ **GSC's Indexed count WILL fall** toward ~400–500 over the
+  following weeks — that is the fix working, not a regression; the number to watch is English
+  chapters indexed (~127 of 347 at the time) and daily impressions. To reverse: remove a
+  prefix from the tuple and rebuild. Full trace in Claude's memory
+  (`project_mistertranslation_indexing_cliff`).
 - `page(...)`'s `url=` argument controls **both** the canonical tag and `og:type` at once
   (`og_type = og_type or ("article" if url else "website")`). Passing `url=` to fix a missing
   canonical on a hub/index page (home, table of contents, dictionary index) will silently
