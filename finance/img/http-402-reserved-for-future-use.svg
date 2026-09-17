@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img"
+     aria-label="Two timelines. Top: HTTP status code 402, Payment Required, sat marked reserved for future use from the HTTP/1.1 specification in January 1997 through HTTP/2 in 2015 and HTTP/3 in 2022, twenty-eight years. Bottom: three payment standards for AI agents arrived in sixteen months — Coinbase's x402 in May 2025, Stripe and Tempo's Machine Payments Protocol in March 2026, Mastercard's Agent Pay for Machines in June 2026, and the XRP Ledger AI Starter Kit 1.1 joining MPP on September 17, 2026">
+  <rect width="900" height="380" fill="#0a0f1a"/>
+
+  <!-- ===== Row 1: the wait (1997–2022) ===== -->
+  <text x="60" y="56" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">HTTP 402 <tspan fill="#94a3b8">Payment Required</tspan></text>
+  <text x="840" y="56" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#e8865c" font-weight="bold">28 years “reserved for future use”</text>
+
+  <line x1="60" y1="96" x2="840" y2="96" stroke="#5c6b85" stroke-width="3" stroke-dasharray="10,7" opacity="0.9"/>
+
+  <!-- 1997 -->
+  <circle cx="60" cy="96" r="6" fill="#e8dfd2"/>
+  <text x="60" y="126" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Jan 1997</text>
+  <text x="60" y="144" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#94a3b8">HTTP/1.1 (RFC 2068)</text>
+
+  <!-- 2015 -->
+  <circle cx="527" cy="96" r="5" fill="#94a3b8"/>
+  <text x="527" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">May 2015</text>
+  <text x="527" y="144" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">HTTP/2 — still reserved</text>
+
+  <!-- 2022 -->
+  <circle cx="840" cy="96" r="5" fill="#94a3b8"/>
+  <text x="840" y="126" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Jun 2022</text>
+  <text x="840" y="144" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">HTTP/3 — still reserved</text>
+
+  <!-- divider -->
+  <line x1="60" y1="176" x2="840" y2="176" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+
+  <!-- ===== Row 2: the rush (May 2025 – Sep 2026) ===== -->
+  <text x="60" y="210" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">Then three standards <tspan fill="#94a3b8">for machines paying machines — and XRP joining one</tspan></text>
+  <text x="840" y="210" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#a3b378" font-weight="bold">16 months</text>
+
+  <!-- scale: May 2025 → Sep 2026 maps to x=60..840; ~48.75px/month -->
+  <line x1="60" y1="252" x2="840" y2="252" stroke="#a3b378" stroke-width="3" opacity="0.9"/>
+
+  <!-- May 2025: x402 -->
+  <circle cx="60" cy="252" r="6" fill="#a3b378"/>
+  <text x="60" y="282" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">May 2025</text>
+  <text x="60" y="300" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#94a3b8">x402 — Coinbase</text>
+
+  <!-- Mar 2026: MPP  (10 months → x = 60 + 10*48.75 = 547) -->
+  <circle cx="547" cy="252" r="6" fill="#a3b378"/>
+  <text x="547" y="282" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Mar 2026</text>
+  <text x="547" y="300" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">MPP — Stripe + Tempo</text>
+
+  <!-- Jun 2026: Agent Pay for Machines (13 months → x = 694) -->
+  <circle cx="694" cy="252" r="6" fill="#a3b378"/>
+  <text x="694" y="228" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">Jun 2026</text>
+  <text x="694" y="244" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">Agent Pay for Machines — Mastercard</text>
+
+  <!-- Sep 17 2026: XRPL kit 1.1 joins MPP (16 months → x = 840) -->
+  <circle cx="840" cy="252" r="7" fill="#e8865c"/>
+  <text x="840" y="282" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8865c" font-weight="bold">Sep 17, 2026</text>
+  <text x="840" y="300" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">XRP Ledger kit 1.1 joins MPP</text>
+
+  <text x="60" y="352" font-family="Georgia, serif" font-size="14.5" fill="#94a3b8" font-style="italic">Ripple plugs into all three and wrote none of them. That is the whole story behind “XRP added to Stripe's standard.”</text>
+</svg>
