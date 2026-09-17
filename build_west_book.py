@@ -702,6 +702,106 @@ Also usable as a pull-quote / cover blurb on its own:
     return path
 
 
+# Surnames the family's own record carries across four centuries of clerks'
+# spellings (chapter 8) — the actual search traffic for a book like this is
+# people looking up their own family name, not the title.
+SURNAMES = ("Croesen", "Kroesen", "Kroessen", "Cruse", "Cruser", "Krewson",
+            "Staats", "Nevius", "Cregier")
+
+KDP_KEYWORDS = [
+    "Dutch colonial New Amsterdam family history",
+    "genealogy nonfiction family history memoir",
+    "Croesen Kroesen Krewson Cruse family",
+    "New Netherland Staten Island Bucks County",
+    "American family saga four generations",
+    "immigrant family history documented record",
+    "Staats Nevius Cregier genealogy",
+]
+
+KDP_CATEGORIES = [
+    ("Reference > Genealogy & Heraldry",
+     "a thin, low-competition category this book fits exactly, and where surname "
+     "searches actually convert"),
+    ("History > Americas > United States > Colonial & Revolutionary Periods",
+     "Parts I-II (1662-1798) earn this on their own"),
+    ("Biography & Autobiography > Personal Memoirs",
+     "for Parts III-V (1890s-2026), where the record is family letters rather than "
+     "colonial documents"),
+]
+
+
+def write_kdp_listing_copy(chapters):
+    """book/kdp-listing.txt — the metadata KDP's own upload form asks for
+    (title/subtitle, description, 7 keyword slots, category picks, author
+    bio). Not part of the interior or the cover; paste straight into the
+    KDP dashboard fields. Categories are named the way KDP's own picker UI
+    names them, not by BISAC code, since the picker is the thing that's
+    actually used at upload time."""
+    n = len(chapters)
+    desc = """In 1662, in a stone church at the tip of Manhattan island, a Dutch cooper's granddaughter was baptized with the colony's two most powerful men standing witness as her grandfathers. Two years later, those same two men signed away New Amsterdam to England without a shot fired.
+
+%(t)s follows one American family -- recorded across the centuries as %(surnames)s -- through a tree-theft lawsuit a young cooper brought against his own minister, a will that freed three enslaved people by installment payments of ten pounds a year, a Revolution fought by cousins on opposite sides of the same war, a son who fled his own father's threat to kill him, a four-hundred-dollar loan taken under false pretenses, a family broken apart in 1946 and pieced back together by letters sixty years later -- all the way to a four-star general, descended from the same baptized girl, who searched the Dutch archives with an army behind him and found exactly the same blank everyone else in the family had.
+
+Every claim in this book is marked as one of three things: documented, inferred from the record, or family legend -- and the book says which, on every page. It is written from four centuries of wills, church registers, court records, letters, and a family's own private correspondence, not from assumption.
+
+If your own family tree carries the name Croesen, Kroesen, Kroessen, Cruse, Cruser, Krewson, Staats, Nevius, or Cregier, some of the people in this book are very likely yours too.
+
+%(n)s chapters. Five parts. Four centuries. One name, spelled a dozen ways.""" % {
+        "t": TITLE, "n": n, "surnames": ", ".join(SURNAMES[:6])}
+
+    kw_lines = "\n".join("  %d. %-46s (%d chars)" % (i + 1, k, len(k))
+                          for i, k in enumerate(KDP_KEYWORDS))
+    cat_lines = "\n".join("  - %s\n      %s" % (c, why) for c, why in KDP_CATEGORIES)
+
+    txt = """EIGHT MILES WEST — KDP listing copy (draft, %(d)s)
+================================================================
+Paste these straight into KDP's own upload-form fields. Nothing here
+needs a designer or a lawyer; it's copy, and it's yours to edit freely
+before or after publishing.
+
+TITLE:
+    %(t)s
+
+SUBTITLE:
+    %(s)s
+
+DESCRIPTION (KDP's own editor supports bold/italic/line breaks; plain
+text below reads fine as-is):
+----------------------------------------------------------------
+%(desc)s
+----------------------------------------------------------------
+
+KEYWORDS (KDP gives you 7 slots, 50 characters each; don't repeat words
+already in the title or subtitle -- these don't):
+%(kw)s
+
+CATEGORIES (KDP's picker lets you choose up to 3; use the names below to
+find them in its own hierarchy -- these are deliberately in three
+different sections rather than three history categories, since a book
+this hard to pin to one shelf should claim more than one):
+%(cat)s
+
+AUTHOR BIO (same one on the back cover, works as-is for KDP's Author
+Central profile too):
+    %(a)s is the great-great-great-grandson of Lewis Krewson of Ohio and
+    Iowa, and the ninth-generation descendant of Garret Dircksen Croesen
+    of Breuckelen. %(t)s is his first book. He lives in California.
+
+NOT SET HERE ON PURPOSE -- yours to decide, not copy:
+  - Price (paperback royalty is print-cost-dependent; check KDP's own
+    royalty calculator against the final page count before setting one).
+  - Publication date (KDP defaults to the day you hit publish).
+  - Series ("Eight Miles West" isn't structured as a series in KDP's own
+    sense -- one complete book -- so leave this field blank unless a
+    Volume II is actually written).
+""" % {"d": dt.date.today().isoformat(), "t": TITLE, "s": SUBTITLE, "desc": desc,
+       "kw": kw_lines, "cat": cat_lines, "a": AUTHOR}
+    path = os.path.join(OUT, "kdp-listing.txt")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(txt)
+    return path
+
+
 def main():
     html_only = "--html" in sys.argv
     chapters = W.load_chapters(include_drafts=False)
@@ -736,6 +836,8 @@ def main():
     print("epub: %d files → %s" % (n, os.path.relpath(epub_path, ROOT)))
     cover_copy_path = write_back_cover_copy(chapters)
     print("back-cover copy → %s" % os.path.relpath(cover_copy_path, ROOT))
+    listing_path = write_kdp_listing_copy(chapters)
+    print("KDP listing copy → %s" % os.path.relpath(listing_path, ROOT))
     if html_only:
         return
     pdf_path = os.path.join(OUT, "eight-miles-west.pdf")
