@@ -81,7 +81,7 @@ HC_WRAP_EDGE_IN = 0.591
 BARCODE_W_IN, BARCODE_H_IN = 2.0, 1.2
 BARCODE_BOTTOM_IN, BARCODE_HINGE_IN = 0.76, 0.25
 
-ACCENT = "#6d1b2b"   # deep burgundy — the cover's own choice, not tied to the site's Delft blue
+ACCENT = "#4a1018"   # deep oxblood — the cover's own choice, not tied to the site's Delft blue
 GOLD = "#cda43c"
 GOLD_HI = "#f0d78c"
 GOLD_SHADOW = "rgba(0,0,0,.45)"
