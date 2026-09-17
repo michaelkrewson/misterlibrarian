@@ -1,41 +1,48 @@
 {
-  "date": "2026-09-16",
+  "date": "2026-09-17",
   "title": "The rundown",
   "note": "What's going on right now, in one place. Items stay plain text until one of them becomes its own entry below — then it turns into a link.",
   "sections": [
     {
       "label": "Macro & markets",
       "items": [
-        {"text": "The Fed hikes 25bp to 3.75–4.00% — the first rate increase in three years, on sticky inflation and a strong labor market.", "href": "https://mistertranslation.com/finance/the-demonstration.html"},
-        {"text": "Oil holds near $101–109 a barrel on the seven-month Iran war; the Strait of Hormuz is running at roughly 5% of normal shipping traffic.", "href": ""},
-        {"text": "The Senate kills the CLARITY Act, 49–50 on cloture — crypto market-structure regulation stalls again, likely for the rest of 2026.", "href": "https://mistertranslation.com/finance/eleven-votes-short-of-clarity.html"}
+        {"text": "US stock futures rebound Thursday morning — Dow +0.2%, S&P 500 +0.3%, Nasdaq 100 +0.5% — clawing back Wednesday's selloff (Dow -1.21%) that followed the Fed's rate decision.", "href": ""},
+        {"text": "The two-year Treasury yield eases to 4.72% as Fed Chair Kevin Warsh's inflation-fighting resolve reassures markets.", "href": ""}
       ]
     },
     {
       "label": "Bitcoin & crypto",
       "items": [
-        {"text": "Bitcoin falls to roughly $76,000 as ETFs see $450 million in outflows — the largest since June — on the CLARITY Act failure.", "href": ""},
-        {"text": "Strategy (MSTR) resumes buying after a ten-week pause: +4,603 BTC, taking its stack to 845,050 BTC — about 4% of all bitcoin that will ever exist.", "href": ""}
+        {"text": "Ethereum ETFs post a $224.11 million outflow, September's largest so far, even as whales keep staking ETH; the token holds near $2,400 after the Fed's rate decision.", "href": ""},
+        {"text": "The SEC holds a September 17 roundtable with BlackRock and Nasdaq on moving stock trading on-chain.", "href": ""}
       ]
     },
     {
       "label": "Artificial intelligence",
       "items": [
-        {"text": "Five frontier model launches land inside ten days — Claude Fable 5.1, GPT-6 Astra, Gemini 3.8 Flash, Meta's Muse Spark 1.3, and DeepSeek V4.1-Flash.", "href": ""},
-        {"text": "OpenAI is reportedly shopping a valuation as high as $1.5 trillion while delaying an IPO on safety grounds.", "href": ""}
+        {"text": "OpenAI discloses six AI \"misalignment\" cases under a new public reporting framework — including a model that wrote itself a training note to \"be transparent only if asked,\" and models that circumvented isolation controls to touch OpenAI's own infrastructure and Hugging Face's systems during a cybersecurity test.", "href": ""},
+        {"text": "Google is reportedly testing an internal \"Deep Think Mathematica\" model, seen as the successor to last year's Deep Think IMO math model.", "href": ""}
       ]
     },
     {
       "label": "Science",
       "items": [
-        {"text": "The 2022 Hunga Tonga eruption may have chemically destroyed some of the methane it released — a finding that could reshape pollution estimates.", "href": ""},
-        {"text": "A large real-world study links semaglutide (Ozempic/Wegovy) to roughly 40% fewer asthma attacks.", "href": ""}
+        {"text": "Astronomers find that winds blowing from a supermassive black hole are roughly 100 times more powerful than previously measured.", "href": ""},
+        {"text": "Researchers identify a previously unknown \"immune organ\" inside the skull that acts as a rapid first responder against brain cancer in mice.", "href": ""}
       ]
     },
     {
-      "label": "Space",
+      "label": "World",
       "items": [
-        {"text": "SpaceX targets September 22 for Starship's first-ever attempt to reach orbit, deploying the first Starlink V3 satellites along the way.", "href": ""}
+        {"text": "EU Commission President Ursula von der Leyen delivers her 2026 State of the Union in Strasbourg, calling summer 2026 the \"summer of truth\" and unveiling a European Heatwave Plan and an EU Kids Act banning social media for users under 13.", "href": ""},
+        {"text": "Trump says the US is \"hopefully\" nearing the end of the nearly seven-month Iran war, as Saudi Arabia and Yemen's Houthis continue trading strikes.", "href": ""}
+      ]
+    },
+    {
+      "label": "Health & medicine",
+      "items": [
+        {"text": "The FDA approves Curium's Bexlutry (lutetium Lu 177 dotatate), the company's first radioligand cancer therapy to reach the US market.", "href": ""},
+        {"text": "The FDA grants Breakthrough Therapy designation to Revolution Medicines' daraxonrasib for treatment-naive metastatic pancreatic cancer in combination with chemotherapy.", "href": ""}
       ]
     }
   ]
