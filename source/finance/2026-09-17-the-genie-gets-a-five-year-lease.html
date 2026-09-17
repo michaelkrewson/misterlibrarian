@@ -1,0 +1,201 @@
+title: The Genie Gets a Five-Year Lease
+date: 2026-09-17
+tags: sec, tokenization, tokenized stocks, market structure, 24-hour trading, crypto regulation, clarity act, paul atkins
+summary: Yesterday I wrote that the SEC and CFTC would build crypto rules without Congress. This morning the same friend who started that conversation texted me the SEC's "Innovation Exemption" with two words of commentary — "the genie" — and a five-year number. He's right about the number. Here's what the order actually does, the caps nobody is quoting, and the other thing the SEC did in the same building on the same day that matters more than the order.
+meta_desc: The SEC’s Innovation Exemption lets tokenized stocks trade on-chain for five years: the caps, the issuer veto, and the same-day 24-hour trading roundtable.
+hero: sec-headquarters-washington-2.jpg
+hero_alt: The glass-and-stone headquarters of the U.S. Securities and Exchange Commission at 100 F Street NE in Washington, D.C., photographed from across the street on a clear spring afternoon
+hero_credit: The building where both things happened on September 17. U.S. Securities and Exchange Commission headquarters, Washington, D.C., April 2026. Photo by ajay_suresh, CC BY 4.0, via Flickr / Wikimedia Commons.
+draft: false
+---
+
+<p><a href="after-clarity-failed-what-selig-and-atkins-can-still-do.html">Yesterday I wrote</a> that
+the failed CLARITY vote didn't stop the SEC and CFTC from building a crypto framework — it just took
+away their other option, and that the "genie" my friend was worried about was one built to be put
+back in the bottle by the next chair or the next court. Less than a day later the same friend texted
+me a link to the SEC's newsroom and a caption: <em>"This is the 'genie'. 5 years exemptions."</em>
+Then a second text: digital assets tokenize the whole stock market before the next administration,
+and it becomes extremely difficult to go back to limited trading hours. I've now read the order, the
+fact sheet, and the three commissioner statements that came out with it. He has the number right,
+and he has the hours point more right than I expected — because the hours point isn't an inference
+from the order. It's the other half of the SEC's own day.</p>
+
+<h2>What Was Actually Signed</h2>
+
+<p>On September 17 the Commission issued <a
+href="https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment"
+rel="noopener" target="_blank">Release 2026-90</a> — formally <a
+href="https://www.sec.gov/files/rules/exorders/2026/34-106402.pdf" rel="noopener"
+target="_blank">Exchange Act Release No. 34-106402</a>, File No. 4-927, sixty pages — an exemptive
+order under Section 36(a)(1) of the Securities Exchange Act, the SEC's general power to exempt
+people from the Act's requirements when it finds doing so is in the public interest. It is not a
+rule. Nobody proposed it, nobody commented on it, and it didn't go through the Federal Register
+before taking effect; it was effective the day it was signed. The order does two things:</p>
+
+<ul>
+  <li>It exempts a new category it calls a <strong>Tokenized Securities Venue</strong> — a platform
+  that runs automated market maker liquidity pools for tokenized versions of exchange-listed U.S.
+  stock ("NMS stock," the ordinary shares that trade on NYSE and Nasdaq) and sets the rules for who
+  may trade there — from the definition of an <strong>"exchange."</strong> Meaning it can bring
+  buyers and sellers together in a listed stock without registering as one.</li>
+  <li>It exempts the firms that put their own capital into those pools from the definition of a
+  <strong>"dealer."</strong> Meaning they can make markets in a listed stock without registering as
+  one either.</li>
+</ul>
+
+<p>The word doing the work in the press release is "permissioned." The pools live on public,
+permissionless blockchains — the order requires that, and requires the smart contracts to be public
+and auditable — but the people allowed to trade in them are vetted by the venue. So this is not
+"Apple shares on Uniswap." Commissioner Hester Peirce's <a
+href="https://www.sec.gov/newsroom/speeches-statements/peirce-slumber-number-innovation-exemption-statement-091726"
+rel="noopener" target="_blank">statement</a>, titled "Slumber Number" after Procrustes and his
+one-size bed, says so directly: the order addresses one specific venue model and does not apply to
+truly decentralized systems, and the conditions are there so that "nobody else's sleep is
+disturbed." It's a bed tailored to one kind of sleeper.</p>
+
+<h2>The Numbers Nobody Is Quoting</h2>
+
+<p>The five-year figure is real and it has a date on it: <strong>the exemptions run from September
+17, 2026 to September 17, 2031.</strong> But the order is a lot more hemmed-in than "tokenize the
+stock market" suggests, and the caps are the part worth knowing:</p>
+
+<div class="aside">
+<p><strong>Symbol and volume limits, straight from Section II.F of the order.</strong> Stocks are
+split into the two tiers the market already uses for circuit breakers (the Limit Up-Limit Down plan).
+<strong>Tier 1</strong> — the S&amp;P 500, the Russell 1000, and the big ETFs — a venue may trade at
+most <strong>75 symbols</strong>, and in each one no more than <strong>0.25 percent</strong> of the
+prior month's average daily share volume. <strong>Tier 2</strong> — everything else — <strong>250
+symbols</strong>, <strong>2.5 percent</strong>. The SEC's own staff footnote puts the 2025 daily
+weighted-average volume of a Tier 1 stock at 3,022,668 shares, so a quarter of a percent of that is
+roughly 7,500 shares a day, per stock, per venue. For a Tier 2 name (1,207,978 shares average) the
+2.5 percent cap works out to about 30,000. Affiliated venues have to add their volume together. The
+first time a venue blows through a cap it gets a free pass; every time after that, trading in that
+stock pauses for three months.</p>
+</div>
+
+<p>There's more of that flavor throughout. A venue must publish a public notice at least 30 days
+before it opens and tell the Commission within one business day of doing so. It must halt a token
+whenever the primary listing exchange halts the underlying share. It has to publish transaction data
+— price, size, time, pool address, end-of-day pool size — at regular intervals; Commissioner Uyeda's <a
+href="https://www.sec.gov/newsroom/speeches-statements/uyeda-statement-innovation-exemption-091726"
+rel="noopener" target="_blank">statement</a> lists the fields, and frames the whole thing as a
+data-collection exercise for the permanent rule that's supposed to follow. Tokens must carry
+"the same rights and privileges" as the ordinary share — no synthetic wrappers, no "tokenized linked
+securities," no swaps dressed as stock. And the one that will decide how much of the market actually
+shows up on-chain: if a third party tokenizes a company's stock, the venue has to give <strong>the
+issuer written notice and an opportunity to object</strong> before trading it. Every listed company
+in America just got a veto over whether its shares trade on these venues. Watch which ones use
+it.</p>
+
+<p>So the honest description is not "the whole stock market, tokenized." It's a fenced, capped,
+permissioned pilot with a hard date and a three-month penalty box — 75 big names at a quarter-percent
+of their volume. Peirce's own word is "limited." Chairman Atkins's is "interim."</p>
+
+<h2>The Other Thing That Happened in That Building</h2>
+
+<p>Here is why my friend's hours point lands anyway. On the same September 17, from ten in the
+morning to four in the afternoon, the SEC hosted a <a
+href="https://www.sec.gov/newsroom/press-releases/2026-83-sec-announces-agenda-panelists-roundtable-preparations-24-hour-trading"
+rel="noopener" target="_blank">Roundtable on Preparations for 24-Hour Trading</a> — that is the
+title — with panelists from Robinhood, NYSE, Nasdaq, BlackRock, Citadel Securities, Jane Street,
+Virtu, Cboe, DTCC, Schwab, Interactive Brokers, State Street, Invesco, Citi, BNP Paribas, FINRA and
+a dozen others. Twenty-seven firms. The three panels were titled preparedness, resiliency, and
+"expected impacts and consideration of next steps," the last one explicitly covering future 24x7
+expansion. This was announced September 1, weeks before the exemption dropped, which tells you the
+two were scheduled to land together.</p>
+
+<p>And the order knows it. The <a href="https://www.sec.gov/files/34-106402-fact-sheet.pdf"
+rel="noopener" target="_blank">fact sheet's</a> list of what tokenized venues can offer reads:
+"enabling investor self-custody, <strong>around-the-clock trading</strong>, fractional ownership of
+shares, and near instantaneous settlement." The order's own request for comment asks what effect
+"transaction reporting within ten minutes of the occurrence of a transaction and <strong>overnight
+trading</strong>" would have on the underlying stock's open and close. The halt condition says a
+token must stop when the primary exchange halts — a halt, not a close. Nothing in sixty pages says a
+pool has to go quiet at 4 p.m. Eastern. So "hard to go back to limited trading hours" isn't my friend
+reading tea leaves. It's the agenda, written down, in the SEC's own words, on the same day.</p>
+
+<h2>Which Genie, Revisited</h2>
+
+<p>Yesterday's piece said a rule built by two agency chairs is more fragile than a statute: the next
+chair can rewrite it, and after <em>Loper Bright</em> the next court gives it less deference. Today's
+order tests that argument on a concrete document, and the result is more interesting than "I was
+right" or "I was wrong."</p>
+
+<p>On paper the genie is on a lease, not a deed. Section V of the order says it in one sentence: the
+Commission "may modify the length or any other aspect of the exemptions" whenever it decides that's
+in the public interest. A future Commission with three votes could shorten five years to five months.
+And Atkins himself, in <a
+href="https://www.sec.gov/newsroom/speeches-statements/atkins-innovation-exemption-bridge-toward-durable-rulemaking-091726"
+rel="noopener" target="_blank">his statement</a>, says the thing out loud that the press release
+tiptoes around: "Earlier this week, Congress was unsuccessful in advancing the CLARITY Act despite
+the tireless efforts of many," and "this interim measure must be followed by durable rulemaking." He
+is not claiming this is the permanent answer. He is claiming it's a bridge, and naming the thing it's
+a bridge <em>to</em> — a rule, which is exactly the kind of instrument I said yesterday is exposed to
+the next administration and the next court.</p>
+
+<p>But the lease-versus-deed framing misses where the lock-in actually lives, and my friend's text
+got closer to it than my legal analysis did. The ratchet isn't the order. It's the plumbing. Twenty-seven
+firms just spent a day telling the SEC how far along they are on running the market around the clock;
+DTCC is launching tokenized settlement in October regardless of this order; Nasdaq <a
+href="https://www.sec.gov/files/rules/sro/nasdaq/2026/34-105199.pdf" rel="noopener"
+target="_blank">already has SEC approval</a>, since April, to trade 23 hours a day. If, over the next five years, a few dozen large names trade on-chain
+at all hours with real liquidity providers and real settlement, a future Commission can revoke an
+exemption with a signature — but it cannot un-build the firms, the pools, the customer expectations,
+or the pile of Uyeda's transaction data showing whether it worked. The order is the genie. The
+constituency it creates over five years is what makes the bottle hard to find. That's a different,
+and I think more accurate, sense of "can't go back" than the one I argued against yesterday.</p>
+
+<p>The wry part is that the SEC designed it this way on purpose and says so. "The Commission is not
+cementing today's technology as the standard for tomorrow," Atkins writes. "It is allowing the market
+to evolve, monitoring its development, and using that insight to inform a nimbler and future-ready
+regulatory framework." Peirce: tailor the bed to the sleeper, then watch how he sleeps. Uyeda: send us
+metrics, case studies, incident analyses. Three commissioners, three statements, one method — run the
+experiment first, write the rule from the results. A market the regulator lets happen so it can study
+it is a market that's hard to un-happen.</p>
+
+<h2>What I'll Be Watching</h2>
+
+<ul>
+  <li><strong>The first 30-day notice.</strong> A venue has to post publicly a month before it opens
+  and tell the SEC within a day. The earliest a compliant pool can trade a listed stock is therefore
+  mid-October — the same month DTCC's tokenized-settlement platform goes live. Whoever files first
+  tells you who's been building for this.</li>
+  <li><strong>Which issuers object.</strong> The veto is the quiet kill switch in the order. If
+  Apple or Microsoft say no to third-party tokens of their stock, "tokenizing the stock market" gets a
+  lot smaller than 75 symbols in a hurry.</li>
+  <li><strong>Whether the caps bind.</strong> A quarter-percent of a mega-cap's daily volume is
+  thousands of shares, not millions. If venues are bumping the limit and hitting three-month pauses,
+  that's the argument for raising it — and the order literally asks in its comment questions whether
+  75 / 0.25 and 250 / 2.5 are the right numbers. The comment file is <a
+  href="https://www.sec.gov/rules-regulations/public-comments/4-927" rel="noopener"
+  target="_blank">4-927</a>.</li>
+  <li><strong>Whether "durable rulemaking" gets proposed before January 2029.</strong> Atkins named
+  it as the next step. A proposed rule with a comment period is the difference between a five-year
+  lease and something the next tenant has to formally evict.</li>
+</ul>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The 7,500-share and 30,000-share figures</strong> are my own arithmetic on the SEC
+  staff's 2025 tier-wide weighted averages, quoted in the order's footnote 72. Any specific stock's
+  cap is 0.25 or 2.5 percent of <em>its own</em> prior-month volume, which for Apple or Nvidia is a
+  much larger number and for a thin Russell 1000 name a much smaller one.</li>
+  <li><strong>I've read the order's body and its conditions, not every one of its 118 footnotes
+  or the full comment-question list.</strong> The caps, tiers, dates, halt rule, issuer-objection
+  mechanism and the Section V modification language are quoted from the text directly; the
+  characterization of what counts as a "Tokenized Securities Venue" is my plain-English compression
+  of a definition that runs several paragraphs.</li>
+  <li><strong>The 24-hour roundtable's panelist list</strong> comes from the SEC's September 1
+  agenda release; I did not watch the webcast, so I can't tell you what any of those firms actually
+  said on the day, only that they were scheduled to say it.</li>
+  <li><strong>"The earliest a pool can trade is mid-October"</strong> assumes a venue files its
+  notice immediately. Nothing requires anyone to. It's possible no venue qualifies for months.</li>
+  <li><strong>The "constituency is the ratchet" argument</strong> is a judgment, not a finding.
+  The counter-case is real: five years is long enough for a bad incident — a pool exploit, a
+  manipulation case, a settlement failure — to give a future Commission all the public-interest
+  reason it needs to shorten the term, and the order hands it that power in one sentence.</li>
+  <li><strong>I hold no tokenized stock</strong> and nothing in my own book trades on any of these
+  venues. My interest is the plumbing under the market my Arbitrageur strategy lives in, not a
+  position. None of this is legal or investment advice.</li>
+</ul>
