@@ -1,0 +1,217 @@
+title: Eight Million Accounts and a Basketball Court
+date: 2026-09-17
+tags: xrp, ripple, xrp ledger, rich list, crypto adoption, on-chain data, college sports, sponsorship, escrow, bitquery, xrpscan
+summary: My friend sent a screenshot of the XRP rich list and a thought: only 8.13 million XRP accounts exist, so "less than 1 percent of 1 percent" of humanity owns any, and yet the coin gets endless attention. Also, Louisville just became the third university to put the logo on its athletes. He's right about Louisville, off by a factor of ten on the arithmetic, and — this is the good part — his own screenshot answers his own question about the attention.
+meta_desc: 8.13 million XRP accounts, 793 of them sending 93% of the traffic; a top 10,000 that holds 90% of the coin; and who's buying the basketball courts.
+hero: xrp-rich-list-and-who-actually-uses-it.svg
+hero_alt: Two charts. Top: a stacked bar of who holds the roughly 100 billion XRP, from XRPSCAN's rich list on September 17, 2026 — Ripple 39.9 percent, most of it in escrow; six exchanges 18.3 percent; two co-founders 3.8 percent; one unnamed account 1.8 percent; the remaining ten thousand rich-list accounts 25.8 percent; and everyone outside the top ten thousand, about 8.1 million accounts, 10.3 percent. Bottom: a funnel of the same ledger's use in August 2026 from Bitquery — 8,138,198 funded accounts, 214,066 that sent any transaction, and 793 accounts that sent 93 percent of all traffic, 767 of them machines.
+hero_credit: Top bar from XRPSCAN's balances API, aggregated by the labels it publishes, September 17, 2026. Bottom funnel from Bitquery's XRP Ledger adoption audit, September 2026.
+draft: false
+---
+
+<p>Four texts since Tuesday is a pace. My friend — the one who has been <a
+href="after-clarity-failed-what-selig-and-atkins-can-still-do.html">feeding this publication all
+week</a> — sent a screenshot tonight of the <a href="https://xrpscan.com/balances" rel="noopener"
+target="_blank">XRPSCAN rich list</a>, a donut chart of who owns XRP, with a caption:
+<em>"What's amazing is that only 8,130,000 XRP accounts exist. Many users hold multiple accounts.
+Less than 1% of 1% of people mathematically own any XRP.. yet XRP always gets tons of attention."</em>
+And a postscript: the University of Louisville is now the third university to put XRP on its
+uniforms or its field.</p>
+
+<p>I like this text more than the others, because it isn't a forwarded headline. It's a number he
+found, a calculation he did, and a puzzle he noticed. All three deserve a straight answer, and the
+answer to the third one is sitting in the chart he sent.</p>
+
+<h2>The Arithmetic First, Because It's the Least Interesting Error</h2>
+
+<p>The number is real. XRPSCAN counts <strong>8,138,198 funded accounts</strong> on the ledger as of
+this week; my friend rounded it. The world has about 8.2 billion people in it. Divide, and you get
+0.099 percent — roughly <strong>one person in a thousand</strong>. "One percent of one percent" is
+one in ten thousand. He's off by a factor of ten, in the direction that makes his point sound better
+than it is.</p>
+
+<p>But I'd let that go, because the numerator is wrong in two directions at once, and the ways it's
+wrong are more interesting than the division.</p>
+
+<h2>An Account Is Not a Person, in Either Direction</h2>
+
+<p><strong>Direction one: the count is far too low to be "people who own XRP."</strong> Look at the
+screenshot again. Coinbase appears as 347 accounts. UPbit, the Korean exchange, as 13. Binance as 147,
+Bithumb as 3, Uphold as 4, bitbank as 2. Six companies, 516 ledger accounts, <strong>18.3 percent of
+every XRP in existence</strong> — held on behalf of customers who, as far as the ledger knows, do not
+exist. When you buy XRP on Coinbase you don't get an account on the XRP Ledger; you get a row in
+Coinbase's database, and Coinbase's 347 accounts hold 5.8 billion XRP for all of you at once. The
+spot XRP ETFs have taken in about <a
+href="https://cryptobriefing.com/xrp-ledger-490k-new-accounts-first-half-2026/" rel="noopener"
+target="_blank">$1.5 billion</a>; every one of those holders has zero XRPL accounts. So do the people
+holding it on Robinhood, Kraken, eToro and every other custodian. The ledger's account count is a
+count of doors, and most of the people are behind six of them.</p>
+
+<p>Here's a way to size the gap. Security.org's <a
+href="https://www.security.org/digital-security/cryptocurrency-annual-consumer-report/" rel="noopener"
+target="_blank">2026 consumer survey</a> put U.S. crypto ownership at about 30 percent of adults —
+70 million people — and found 11 percent of those owners hold XRP. Do the multiplication and you get
+something like <strong>7.7 million Americans</strong>. That's a survey of 992 people, so hold it
+loosely, but the order of magnitude is the point: the United States alone may have about as many
+XRP holders as the entire ledger has accounts, and the U.S. isn't even where XRP's big retail base
+is. Korea is — which is why an exchange you've never used, UPbit, holds more XRP than Coinbase.</p>
+
+<p><strong>Direction two: the count is far too high to be "people who use XRP."</strong> Opening an
+XRPL account costs one XRP — about a dollar-thirty at tonight's price — since validators <a
+href="https://harvest.finance/xrp-rich-list" rel="noopener" target="_blank">cut the base reserve from
+10 XRP in December 2024</a>. Cheap accounts get made. Of the 8.14 million, <strong>6.72 million hold
+less than 1,000 XRP</strong>, and the median balance across the whole ledger is <strong>12 XRP</strong>,
+about sixteen dollars. That's not a portfolio; that's the change in a car door. Then there's spam.
+Bitquery's audit of the ledger, published this month, counted a single dust-spam campaign that touched
+<a href="https://bitquery.io/investigations/xrp-ledger-adoption-audit" rel="noopener"
+target="_blank">2.4 million wallets this year</a>, and a phishing run between August 23 and September
+8 that reached 1,280,036 distinct wallets in seventeen days for a total cost of 69.6 XRP — ninety-six
+dollars. Every wallet that received one of those is a "funded account."</p>
+
+<p>So the 8.13 million undercounts holders by a lot and overcounts users by a lot, and there is no
+arithmetic you can do on it that lands on "how many people own XRP." My friend's instinct — that
+accounts and people aren't the same thing — was right. He just applied it in one direction.</p>
+
+<h2>What the Ledger Actually Does All Day</h2>
+
+<p>The Bitquery audit is the most useful document I've read on XRP this year, and it's worth
+quoting its numbers straight, because they are the ones that answer "how many people use this."</p>
+
+<ul>
+  <li>In August 2026, <strong>214,066 accounts</strong> sent at least one transaction. That's 2.6
+  percent of the funded accounts.</li>
+  <li>Of those, <strong>793 accounts — 0.37 percent of senders — sent 93.2 percent of all August
+  traffic</strong>. Bitquery classifies 767 of the 793 as machines: exchanges, bots, spam senders.
+  The top thousand accounts have produced 70 to 90 percent of monthly transactions every month since
+  2013.</li>
+  <li>Over the twelve months to August, 1,568,580 accounts sent at least one <em>payment</em>. Two-thirds
+  of the accounts that arrived last year never came back after their first month.</li>
+  <li>Filter out the spam, and the number of genuinely active accounts in August 2026 — about
+  191,000 — is roughly what it was in <strong>January 2018</strong>.</li>
+</ul>
+
+<p>That last line is the one to sit with. The XRP Ledger went live in 2012. It is fourteen years old,
+older than Ethereum, older than every chain that's eaten its lunch. And after a full cycle of
+lawsuits, settlements, ETF approvals, a stablecoin, university sponsorships and this week's <a
+href="reserved-for-future-use.html">AI developer kits</a>, the count of real people doing real things
+on it is back where it was the month after the 2017 bubble popped. My friend's puzzle was "so few
+owners, so much attention." The audit's answer is "so few <em>users</em>, and it's been that way for
+nearly nine years."</p>
+
+<p>For scale: Bitcoin's count of addresses with a non-zero balance crossed <a
+href="https://www.fxstreet.com/cryptocurrencies/news/non-zero-btc-addresses-hit-all-time-high-of-40-million-202202280526"
+rel="noopener" target="_blank">40 million back in early 2022</a>, and nobody uses that to argue
+Bitcoin is secretly under-owned, because everybody understands that an address is not a person.
+The same courtesy applies here.</p>
+
+<h2>Now Read the Chart He Sent</h2>
+
+<p>The donut is the interesting part, and not for the reason it was sent. Here's what it says, in
+order.</p>
+
+<p><strong>Ripple, 31 accounts, 39.88 percent.</strong> Four-tenths of every XRP that exists is held
+by the company, and by XRPSCAN's tally 35.7 billion of Ripple's 39.9 billion is in escrow —
+time-locked contracts that release <a
+href="https://beincrypto.com/ripple-unlocks-1-billion-xrp-tokens-escrow-september-2026/"
+rel="noopener" target="_blank">one billion XRP on the first of every month</a>, of which Ripple has
+historically re-locked 600 to 800 million and kept the rest. At tonight's price the part that isn't
+re-locked is somewhere between $260 million and $520 million a month of potential supply from a
+single seller. Other trackers put the escrow at 31 to 32 billion rather than 35.7; the difference is
+how you count the re-locks, and it doesn't change the shape.</p>
+
+<p><strong>Six exchanges, 516 accounts, 18.3 percent.</strong> Customer money, as above.</p>
+
+<p><strong>Two co-founders, 14 accounts, 3.8 percent.</strong> The labels say chrislarsen and
+ahbritto — Chris Larsen, Ripple's co-founder and executive chairman, and Arthur Britto, the
+co-creator of the ledger, who has kept an almost total public silence since. 3.8 billion XRP between two people.</p>
+
+<p><strong>One unlabeled account, 1.8 percent.</strong> Nobody knows. 1.8 billion XRP.</p>
+
+<p><strong>The other roughly 9,970 accounts on the rich list, 25.8 percent.</strong> Everyone who
+holds more than about 240,000 XRP — roughly $310,000 — and isn't one of the above.</p>
+
+<p><strong>Everyone outside the top ten thousand — the other 8.13 million accounts — 10.31 percent.</strong></p>
+
+<p>Read it once more. The 8.13 million accounts my friend was counting own, put together, a tenth of
+the coin. The top ten thousand accounts own the other nine-tenths, and one company owns four-tenths
+by itself. That is the actually amazing statistic in the screenshot, and it was there the whole
+time.</p>
+
+<h2>The Attention, and Who's Buying It</h2>
+
+<p>Which brings us to the puzzle. Why does a coin with this few real users get "tons of attention"?</p>
+
+<p>Because the largest holder is a company, and the company buys the attention. The <a
+href="https://www2.kusports.com/sports/college/general/2026/jul/08/ku-athletics-announces-jersey-patch-deal-with-cryptocurrency-company-ripple/"
+rel="noopener" target="_blank">University of Kansas announced on July 8</a> that an XRP patch would
+go on every uniform in its athletic department, multi-year, terms undisclosed — Ripple called it "the
+first-ever crypto sponsorship of a major college athletics program." The <a
+href="https://floridagators.com/news/2026/9/4/football-florida-athletics-debuts-xrp-cryptocurrency-logo-at-ben-hill-griffin-stadium"
+rel="noopener" target="_blank">University of Florida followed on September 4</a> with the XRP logo
+painted on the field at Ben Hill Griffin Stadium, a deal reported at about $5 million a year. And on
+<a href="https://www.learfield.com/2026/09/louisville-athletics-announces-strategic-brand-partnership-with-ripple-bringing-xrp-cryptocurrency-to-louisville-basketball/"
+rel="noopener" target="_blank">September 15 Louisville announced</a> that two XRP logos would become
+a permanent fixture on Denny Crum Court — in the two spots at midcourt where the late Hall of Fame
+coach's signature used to be. The signature isn't gone; it's been moved inside the three-point lines,
+closer to the baselines, to make room. So my friend is right: Louisville is the third. Uniforms,
+field, court — Ripple has now bought each of the three surfaces a camera points at.</p>
+
+<p>None of this is sinister, and I want to be careful not to write it as if it were. If you owned 40
+percent of a thing, you'd put its logo at midcourt too; that's just what a marketing budget is for,
+and Ripple has funded university blockchain research since 2018 on top of the sports deals. But it
+flips the inference in the text. The attention isn't evidence of an adoption wave the account count
+hasn't caught up with. The attention is a line item, paid for by the holder of the 40 percent, out of
+a treasury that unlocks a billion of its own coins every month. Bitcoin's marketing budget is zero, which
+is why its logo isn't on anybody's court — and also why nobody has to wonder who's paying for it.</p>
+
+<p>Put the two halves together and the text reads differently. Few people own XRP directly:
+true, but the same is true of every coin, and the ledger count can't tell you how few. Few people
+<em>use</em> it: true, and stable since 2018. Lots of attention: true, and purchased. The mystery
+isn't a mystery. It's a business model.</p>
+
+<h2>What I'll Be Watching</h2>
+
+<ul>
+  <li><strong>The monthly senders number.</strong> 214,066 in August, per Bitquery. If Ripple's
+  developer kits and stablecoin ever bring real users, this is the line that moves — not the funded
+  count, which a $96 phishing campaign can move by a million.</li>
+  <li><strong>Ripple's slice of the bar.</strong> 39.88 percent tonight. Every month's unlock that
+  isn't re-locked shrinks it a little; a company that still holds 40 percent after nearly nine years of
+  selling has a long runway.</li>
+  <li><strong>Louisville's terms.</strong> Kansas and Louisville are undisclosed; Florida leaked at
+  $5 million a year. If the other two surface, I'll have a number for what a season of attention
+  costs.</li>
+  <li><strong>The fourth school.</strong> There will be one. Three in ten weeks is a program, not a
+  coincidence.</li>
+</ul>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The account count itself depends on who's counting.</strong> XRPSCAN's 8,138,198 is
+  funded accounts this week. Bitquery counts 8,972,159 accounts <em>ever created</em> — the gap is
+  accounts that were deleted and their reserves reclaimed, which the ledger allows. A July report put
+  the total at 8.4 million using yet another method. My friend's figure matches XRPSCAN's, so that's
+  the one I used.</li>
+  <li><strong>The 7.7 million Americans</strong> comes from a 992-person survey multiplied out; the
+  confidence interval on an 11 percent subgroup of that is wide. I'm using it for order of magnitude,
+  not as a count.</li>
+  <li><strong>"767 of 793 are machines"</strong> is Bitquery's classification, and classifying an
+  account as a bot is a judgment call made from its behavior. The broad shape — a few hundred accounts
+  sending nearly everything — doesn't depend on where the line is drawn.</li>
+  <li><strong>The escrow figure.</strong> XRPSCAN's per-account escrow sums to 35.7 billion; trackers
+  that read the escrow objects directly report 31 to 32 billion after the September 1 release. I've
+  given both. The "$260 to $520 million a month" is what the historically un-relocked portion is worth
+  at $1.30, not a claim about what Ripple actually sells — its sales are disclosed quarterly and vary.</li>
+  <li><strong>"Paid for out of a treasury that receives a billion coins a month"</strong> is my
+  inference about where a sponsorship budget comes from, not a disclosed fact. Ripple has other
+  revenue — it bought a $1 billion treasury-software company last year — and none of the three
+  schools has said what it was paid in.</li>
+  <li><strong>Some of the attention is organic.</strong> The XRP community is real, loud, and older
+  than most; the $1.5 billion that went into the ETFs came from actual people. I'm arguing the
+  sponsorships explain the attention my friend was puzzled by, not that nobody would care without
+  them.</li>
+  <li><strong>I hold no XRP</strong> and no Ripple stock, which isn't public anyway. My own book is
+  Bitcoin through an ETF and Strategy Inc. I have no opinion on the price; this is a note about what
+  a chart says, and none of it is investment advice.</li>
+</ul>

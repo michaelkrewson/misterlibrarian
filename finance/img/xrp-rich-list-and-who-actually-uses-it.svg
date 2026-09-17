@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img"
+     aria-label="Two charts. Top: a stacked bar of who holds the roughly 100 billion XRP, from XRPSCAN's rich list on September 17, 2026 — Ripple 39.9 percent, most of it in escrow; six exchanges 18.3 percent; two co-founders 3.8 percent; one unnamed account 1.8 percent; the remaining ten thousand rich-list accounts 25.8 percent; and everyone outside the top ten thousand, about 8.1 million accounts, 10.3 percent. Bottom: a funnel of the same ledger's use in August 2026 from Bitquery — 8,138,198 funded accounts, 214,066 that sent any transaction, and 793 accounts that sent 93 percent of all traffic, 767 of them machines.">
+  <rect width="900" height="400" fill="#0a0f1a"/>
+  <text x="60" y="44" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">Who holds the 100 billion <tspan fill="#94a3b8">— XRPSCAN rich list, Sep 17, 2026</tspan></text>
+  <rect x="60.0" y="64" width="278.5" height="38" fill="#e8865c"/>
+  <text x="199.2" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">35.7%</text>
+  <rect x="338.5" y="64" width="32.6" height="38" fill="#f2b58f"/>
+  <rect x="371.1" y="64" width="143.0" height="38" fill="#5b8def"/>
+  <text x="442.6" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">18.3%</text>
+  <rect x="514.0" y="64" width="29.9" height="38" fill="#a3b378"/>
+  <rect x="543.9" y="64" width="14.0" height="38" fill="#c9b458"/>
+  <rect x="558.0" y="64" width="201.3" height="38" fill="#5c6b85"/>
+  <text x="658.6" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">25.8%</text>
+  <rect x="759.3" y="64" width="80.4" height="38" fill="#e8dfd2"/>
+  <text x="799.5" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#0a0f1a">10.3%</text>
+  <rect x="60" y="114" width="11" height="11" fill="#e8865c"/>
+  <text x="77" y="124" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">Ripple — escrow <tspan fill="#e8dfd2">35.7%</tspan></text>
+  <rect x="325" y="114" width="11" height="11" fill="#f2b58f"/>
+  <text x="342" y="124" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">Ripple — liquid <tspan fill="#e8dfd2">4.2%</tspan></text>
+  <rect x="590" y="114" width="11" height="11" fill="#5b8def"/>
+  <text x="607" y="124" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">Six exchanges <tspan fill="#e8dfd2">18.3%</tspan></text>
+  <rect x="60" y="136" width="11" height="11" fill="#a3b378"/>
+  <text x="77" y="146" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">Two co-founders <tspan fill="#e8dfd2">3.8%</tspan></text>
+  <rect x="325" y="136" width="11" height="11" fill="#c9b458"/>
+  <text x="342" y="146" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">One unnamed account <tspan fill="#e8dfd2">1.8%</tspan></text>
+  <rect x="590" y="136" width="11" height="11" fill="#5c6b85"/>
+  <text x="607" y="146" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">~9,970 other rich-list accounts <tspan fill="#e8dfd2">25.8%</tspan></text>
+  <rect x="60" y="158" width="11" height="11" fill="#e8dfd2"/>
+  <text x="77" y="168" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">Everyone else (8.1M accounts) <tspan fill="#e8dfd2">10.3%</tspan></text>
+  <line x1="60" y1="184" x2="840" y2="184" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+  <text x="60" y="216" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">Who used it in August 2026 <tspan fill="#94a3b8">— Bitquery</tspan></text>
+  <rect x="60" y="236" width="780.0" height="26" fill="#5c6b85"/>
+  <text x="72.0" y="254" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#e8dfd2">8,138,198 <tspan font-weight="normal" fill="#94a3b8">funded accounts</tspan></text>
+  <rect x="60" y="276" width="20.5" height="26" fill="#5b8def"/>
+  <text x="92.5" y="294" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#e8dfd2">214,066 <tspan font-weight="normal" fill="#94a3b8">sent any transaction (2.6%)</tspan></text>
+  <rect x="60" y="316" width="2.0" height="26" fill="#e8865c"/>
+  <text x="74.0" y="334" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#e8dfd2">793 <tspan font-weight="normal" fill="#94a3b8">sent 93.2% of all traffic — 767 of them machines</tspan></text>
+  <text x="840" y="386" text-anchor="end" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8" font-style="italic">Bar lengths to scale. The third bar is two pixels wide because it has to be.</text>
+</svg>
