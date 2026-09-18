@@ -70,7 +70,7 @@ OG_IMAGE = f"{SITE_URL}{BASE}/img/og-default.png"
 # there's one dashboard. This is invisible to readers and creates NO public link
 # between the two sites. Set to None to disable entirely.
 GOATCOUNTER_CODE = "mistertranslation"
-ADSENSE_CLIENT = "ca-pub-7435612822800919"   # Google AdSense publisher id (applied 2026-09-17); the tag rides with the GoatCounter script into every <head>
+ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-2001…, swapped 2026-09-18 — the 2026-09-17 pub-7435… account was duplicate-flagged); the tag rides with the GoatCounter script into every <head>
 
 # FormSubmit alias for the "write to the librarian" form — the SAME activated
 # endpoint the Bible site uses, so there was nothing to set up and it worked from
