@@ -237,8 +237,14 @@ def scope_of(text: str):
     A named book comes back as "named:<English book>", so the caller needs no
     second return value and the scope prints itself in the report.
     """
+    # ⚠ Matched on a DE-ACCENTED copy (2026-09-17): ES_BOOKS holds "Josue", the
+    # page prints "Josué", and the named-book scope had never once matched a
+    # Spanish book name with an accent -- "tres versículos de Josué" was silently
+    # no scope at all, so the claim was skipped rather than checked. The Spanish
+    # scope words themselves ("de la Biblia hebrea") carry no accent that matters.
+    plain = _deaccent(text)
     for pat, name in SCOPE_PATTERNS:
-        m = re.search(pat, text, re.I)
+        m = re.search(pat, plain, re.I)
         if not m:
             continue
         if name != "named":
@@ -317,8 +323,12 @@ def _book_hint(frag: str, path: str) -> str | None:
     """
     m = re.search(r'id="chapter-([a-z]+)\d+"', frag)
     if m:
+        # Joshua 4 (2026-09-17) was the first chapter past the Torah to carry an
+        # "of this book" claim, and "josh" was not here: three correct counts
+        # reported "archive says 0". Keep this in step with build.CHAPTERS' slugs.
         byid = {"deut": "Deuteronomy", "gen": "Genesis", "exod": "Exodus",
-                "lev": "Leviticus", "num": "Numbers"}.get(m.group(1))
+                "lev": "Leviticus", "num": "Numbers", "josh": "Joshua",
+                "judg": "Judges", "ruth": "Ruth"}.get(m.group(1))
         if byid:
             return byid
     stem = os.path.basename(path).split(".")[0]
