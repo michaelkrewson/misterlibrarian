@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img"
+     aria-label="Left: a side-by-side table of Bitcoin in March 2017 and Zcash in September 2026 — price about 1,200 dollars versus about 1,290 dollars; coins in circulation about 16.2 million versus about 16.9 million; market cap about 19 billion versus about 22 billion; share of all crypto roughly four-fifths versus under one percent; what happened next, sixteen times higher in nine months versus a question mark. Right: a list of four coins each pitched as Bitcoin plus one feature — Litecoin 2011, faster; Monero 2014, private by default; Zcash 2016, private when you choose; Bitcoin Cash 2017, bigger blocks — with the note that each is under two percent of Bitcoin's market cap today, and beneath it the four things a fork cannot copy: the deepest liquidity, the largest security budget, no founder or foundation or dev tax, and a monetary policy nobody has the standing to change.">
+  <rect width="900" height="400" fill="#0a0f1a"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">Same price, same coin count <tspan fill="#94a3b8">— the arithmetic in the post</tspan></text>
+  <text x="300" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#f7931a">Bitcoin, Mar 2017</text>
+  <text x="415" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#e8c547">Zcash, Sep 2026</text>
+  <line x1="40" y1="86" x2="470" y2="86" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="106" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Price</text>
+  <text x="300" y="106" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">~$1,200</text>
+  <text x="415" y="106" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">~$1,290</text>
+  <line x1="40" y1="120" x2="470" y2="120" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="140" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Coins in circulation</text>
+  <text x="300" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">~16.2M</text>
+  <text x="415" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">~16.9M</text>
+  <line x1="40" y1="154" x2="470" y2="154" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="174" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Hard cap</text>
+  <text x="300" y="174" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">21M</text>
+  <text x="415" y="174" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">21M</text>
+  <line x1="40" y1="188" x2="470" y2="188" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="208" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Market cap</text>
+  <text x="300" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#c9b458">~$19B</text>
+  <text x="415" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#c9b458">~$22B</text>
+  <line x1="40" y1="222" x2="470" y2="222" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="242" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Share of all crypto</text>
+  <text x="300" y="242" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#e8865c">~4 in 5 dollars</text>
+  <text x="415" y="242" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#e8865c">under 1%</text>
+  <line x1="40" y1="256" x2="470" y2="256" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="276" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Prior 90%+ drawdowns</text>
+  <text x="300" y="276" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">one</text>
+  <text x="415" y="276" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">two</text>
+  <line x1="40" y1="290" x2="470" y2="290" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="310" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">What happened next</text>
+  <text x="300" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#a3b378">×16 in 9 months</text>
+  <text x="415" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#e8dfd2">?</text>
+  <text x="40" y="350" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">The first four rows are the whole argument. The last three</text>
+  <text x="40" y="368" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">are why the argument has been wrong every previous time.</text>
+  <line x1="500" y1="30" x2="500" y2="392" stroke="rgba(255,255,255,.12)"/>
+  <text x="530" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">"Bitcoin, plus one feature"</text>
+  <text x="530" y="72" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Litecoin <tspan fill="#94a3b8">2011 · faster</tspan></text>
+  <text x="530" y="94" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Monero <tspan fill="#94a3b8">2014 · private by default</tspan></text>
+  <text x="530" y="116" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Zcash <tspan fill="#94a3b8">2016 · private when you choose</tspan></text>
+  <text x="530" y="138" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Bitcoin Cash <tspan fill="#94a3b8">2017 · bigger blocks</tspan></text>
+  <text x="530" y="166" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#e8865c">Each under 2% of Bitcoin's market cap today.</text>
+  <line x1="530" y1="186" x2="870" y2="186" stroke="rgba(255,255,255,.08)"/>
+  <text x="530" y="212" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">What a fork inherits:</text>
+  <text x="542" y="232" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• the code, the cap, the halvings</text>
+  <text x="530" y="266" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">What it can't copy:</text>
+  <text x="542" y="286" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• the deepest liquidity</text>
+  <text x="542" y="305" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• the largest security budget</text>
+  <text x="542" y="324" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• no founder, no foundation, no dev tax</text>
+  <text x="542" y="343" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">• a money nobody has the standing to change</text>
+  <text x="530" y="380" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">Money isn't a spreadsheet you upgrade. It's a place people agree to meet.</text>
+</svg>
