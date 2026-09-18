@@ -103,6 +103,25 @@ application day, seeing the AdSense home-page banner:
   `<script>` goes in every page shell (`build.py`'s `page()`, the five blog `_shell`s, and the
   hand-written `index.html` / `privacy.html` / `librarian.html`), never pasted per page.
 
+**Amazon Associates (2026-09-17) — text links only, tagged at build time.** One tracking ID per
+blog in `blogkit.AMAZON_TAGS` (`librarianledger-20` / `librarianregimen-20` / `librarianabroad-20`;
+the Notebook has none on purpose — nothing there mentions products; the account's old catch-all
+`thwoneme-20` is retired here). **Write a plain product URL in the source
+(`https://www.amazon.com/dp/B0XXXXXXXX`) and nothing else** — each blog's loader runs
+`blogkit.tag_amazon_links`, which appends that blog's `tag=` and sets
+`rel="sponsored nofollow noopener"`; never paste an `amzn.to` short link (its tag is baked into
+the redirect and can't be rewritten — the Coldcard entry's was one, pointing at a store page
+under the old ID, and was replaced with the `/dp/` URL). Two disclosures, both automatic: (1)
+Amazon's required sentence (`blogkit.AMAZON_DISCLOSURE`, EN + ES) lands in a blog's footer the
+moment ANY of its entries links to Amazon (`AFFILIATE_LIVE` in each builder) and not before —
+today that is the Ledger only; (2) the travel blog's opening entry promised a paid link would
+"say so plainly where it happened," so every builder REFUSES an entry that links to Amazon
+without the word "affiliate" in its own text (`blogkit.affiliate_note_missing`; the Coldcard
+entry's `.half-note` is the model). **No banners, no Native Shopping Ads widgets** (Michael asked;
+declined — they convert worse than an in-sentence link and compete with AdSense for the same
+slots). Expectation set honestly: 45 clicks → 1 order → $0.10 for all of 2026 across the account;
+this is plumbing so a link written anyway gets credited, not a revenue plan.
+
 ## The relationship rule — RETIRED 2026-09-09, all three now cross-link via the hub
 
 **This used to say the Bible project links to neither of the other two publications and is

@@ -355,3 +355,85 @@ a{{color:#5eb3d6}}
 </body>
 </html>
 """
+
+
+# ------------------------------------------------------------- amazon links ---
+
+# One Amazon Associates tracking ID per publication (created 2026-09-17 in the
+# Associates console, all under the one account). Per-blog IDs exist so the
+# Associates report can say WHICH blog a click came from; the older
+# `thwoneme-20` was the account's single catch-all and is no longer used here.
+# The Notebook has no ID on purpose — nothing there mentions products.
+AMAZON_TAGS = {
+    "finance": "librarianledger-20",
+    "health": "librarianregimen-20",
+    "travel": "librarianabroad-20",
+}
+
+# Amazon's own required wording (Operating Agreement §5), in the two languages
+# this domain publishes. Keep the sentence verbatim — it is the one line Amazon's
+# compliance check looks for.
+AMAZON_DISCLOSURE = {
+    "en": "As an Amazon Associate I earn from qualifying purchases.",
+    "es": "En calidad de Afiliado de Amazon, obtengo ingresos por las compras "
+          "adscritas que cumplen los requisitos aplicables.",
+}
+
+_A_TAG_RE = re.compile(r"<a\s[^>]*>", re.I)
+_HREF_RE = re.compile(r'href="([^"]*)"', re.I)
+_REL_RE = re.compile(r'\srel="[^"]*"', re.I)
+_AMAZON_HOST_RE = re.compile(r"^https?://(www\.)?amazon\.[a-z.]+/", re.I)
+_AMZN_SHORT_RE = re.compile(r"^https?://amzn\.to/", re.I)
+
+
+def has_amazon_link(body_html):
+    """True when the body carries any Amazon link at all — a full amazon.com
+    URL or an `amzn.to` short link (whose tag is baked in and can't be read
+    from here). Drives the footer disclosure: it appears on a publication the
+    moment one of its entries links to Amazon, and not before."""
+    for a in _A_TAG_RE.findall(body_html):
+        m = _HREF_RE.search(a)
+        if m and (_AMAZON_HOST_RE.match(m.group(1)) or _AMZN_SHORT_RE.match(m.group(1))):
+            return True
+    return False
+
+
+def tag_amazon_links(body_html, tag):
+    """Append the publication's tracking ID to every full amazon.com link in an
+    entry body, replacing any `tag=` already on the URL, and mark the anchor
+    `rel="sponsored nofollow noopener"` (Google asks for `sponsored` on paid
+    links; a missing `rel` on an affiliate link is the kind of thing that costs
+    a small site more than the link earns).
+
+    Runs at build time, so an entry is written with a plain product URL
+    (`https://www.amazon.com/dp/B0XXXXXXXX`) and never has to know the tag.
+    `amzn.to` short links are left untouched: their tag is baked into the
+    redirect and can't be rewritten — resolve one to its `/dp/` URL instead.
+    Any other `<a>` is returned byte-identical."""
+    def fix(m):
+        a = m.group(0)
+        h = _HREF_RE.search(a)
+        if not h or not _AMAZON_HOST_RE.match(h.group(1)):
+            return a
+        url = h.group(1)
+        parts = urllib.parse.urlsplit(url)
+        q = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+             if k != "tag"]
+        q.append(("tag", tag))
+        url = urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(q)))
+        a = a[:h.start(1)] + html.escape(url, quote=True) + a[h.end(1):]
+        a = _REL_RE.sub("", a)
+        return a[:-1] + ' rel="sponsored nofollow noopener">'
+    return _A_TAG_RE.sub(fix, body_html)
+
+
+def affiliate_note_missing(body_html):
+    """True when an entry links to Amazon but never says so in its own text.
+
+    The travel blog's first entry promised that if a link ever paid, "it would
+    say so plainly where it happened" — the Ledger's Coldcard entry honoured
+    that with a `.half-note` naming the link. This makes the promise a build
+    check rather than a memory: an Amazon link with no sentence containing the
+    word "affiliate" refuses the build. The footer disclosure is Amazon's
+    requirement; this one is the site's own."""
+    return has_amazon_link(body_html) and "affiliate" not in plain_text(body_html).lower()

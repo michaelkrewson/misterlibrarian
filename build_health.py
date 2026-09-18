@@ -245,6 +245,12 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+# Set by load_entries: True once any entry links to Amazon. _legal reads it so
+# Amazon's required disclosure line appears on every page of this publication
+# only when there is actually a link somewhere to disclose.
+AFFILIATE_LIVE = False
+
+
 def load_entries(include_drafts=False):
     """Read source/health/*.html into entry dicts, newest first.
 
@@ -254,6 +260,7 @@ def load_entries(include_drafts=False):
     builds to `<slug>.es.html`, and the two are paired via `twin` (each
     carrying the other's output filename) when both are live.
     """
+    global AFFILIATE_LIVE
     if not os.path.isdir(ENTRY_SRC):
         return []
     entries = []
@@ -263,6 +270,12 @@ def load_entries(include_drafts=False):
         with open(os.path.join(ENTRY_SRC, fn), encoding="utf-8") as fh:
             meta, body = blogkit.parse_front_matter(
                 fh.read(), "source/health/" + fn, KNOWN_KEYS, REQUIRED_KEYS)
+        # Affiliate plumbing (2026-09-17): a plain amazon.com URL in the source
+        # gets this publication's tracking ID + rel="sponsored" here, so an entry
+        # never carries the tag by hand. The footer disclosure switches on the
+        # moment any entry links to Amazon (see _legal) — data, not prose.
+        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS["health"])
+        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.has_amazon_link(body)
 
         m = re.match(r"(\d{4})-(\d{2})-(\d{2})-(.+?)(\.es)?\.html$", fn)
         if not m:
@@ -418,10 +431,12 @@ def _legal(lang="en"):
                 'superados o sencillamente equivocados; compruebe los originales antes de '
                 'fiarse de nada de lo que hay aquí. Ningún fármaco, suplemento, producto, '
                 'empresa u organización mencionados en este sitio lo ha respaldado ni está '
-                'afiliado a él; nada aquí está patrocinado. El uso de este sitio es bajo su '
+                'afiliado a él; nada aquí está patrocinado. %sEl uso de este sitio es bajo su '
                 'propia responsabilidad: véase el <a href="disclaimer.es.html">aviso legal '
                 'completo</a>. <a href="%s">Política de privacidad</a>.</p>'
-                % (year, esc(SITE_NAME_ES), PRIVACY_URL))
+                % (year, esc(SITE_NAME_ES),
+                   (blogkit.AMAZON_DISCLOSURE["es"] + " ") if AFFILIATE_LIVE else "",
+                   PRIVACY_URL))
     return ('<p class="legal">© %d %s. Nothing on this site is medical, nutritional or '
             'health advice, and no reply from Mr. Librarian is either. This site is one '
             'reader\'s reading of published research — not a diagnosis, not a treatment, '
@@ -432,10 +447,12 @@ def _legal(lang="en"):
             'may be misread, superseded or simply wrong; check the originals before '
             'relying on anything here. No drug, supplement, product, company or '
             'organization named on this site has endorsed it or is affiliated with it; '
-            'nothing here is sponsored. Use of this site is at your own risk — see the '
+            'nothing here is sponsored. %sUse of this site is at your own risk — see the '
             '<a href="disclaimer.html">full disclaimer</a>. '
             '<a href="%s">Privacy policy</a>.</p>'
-            % (year, esc(SITE_NAME), PRIVACY_URL))
+            % (year, esc(SITE_NAME),
+               (blogkit.AMAZON_DISCLOSURE["en"] + " ") if AFFILIATE_LIVE else "",
+               PRIVACY_URL))
 
 
 def _disclaimer_box(lang="en"):
@@ -2180,6 +2197,9 @@ def check_entries(entries):
         if 'class="sources"' not in e["body"]:
             problems.append("%s: no <ol class=\"sources\"> — every entry cites what it "
                             "read (see source/health/_template.html)" % e["slug"])
+        if blogkit.affiliate_note_missing(e["body"]):
+            problems.append("%s: links to Amazon but never says 'affiliate' in its own "
+                            "text — a paid link says so where it happens" % e["slug"])
     if problems:
         sys.exit("build refused:\n  " + "\n  ".join(problems))
 

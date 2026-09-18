@@ -291,6 +291,16 @@ FOOTER = f"""<footer class="site-foot">
 </footer>"""
 
 
+def _footer():
+    """FOOTER, plus Amazon's required disclosure sentence once any post links
+    there (AFFILIATE_LIVE). Kept out of the constant so a build with no such
+    link — every build before 2026-09-17 — renders the footer byte-identically."""
+    if not AFFILIATE_LIVE:
+        return FOOTER
+    line = '  <p class="sibfoot">%s</p>\n' % blogkit.AMAZON_DISCLOSURE["en"]
+    return FOOTER.replace("</footer>", line + "</footer>")
+
+
 def _goatcounter():
     if not GOATCOUNTER_CODE:
         return ""
@@ -353,7 +363,7 @@ def page(title, body, active="", desc="", url="", image="", noindex=False):
 {header(active)}
 <script src="share.js?v={share_v}" defer></script>
 {body}
-{FOOTER}
+{_footer()}
 </div>
 </body>
 </html>
@@ -408,8 +418,15 @@ def parse_front_matter(text, where):
     return meta, body.lstrip("\n")
 
 
+# Set by load_posts: True once any post links to Amazon. _footer reads it so
+# Amazon's required disclosure line appears on every page of this publication
+# only when there is actually a link somewhere to disclose.
+AFFILIATE_LIVE = False
+
+
 def load_posts(include_drafts=False):
     """Read source/travel/*.html into post dicts, newest first."""
+    global AFFILIATE_LIVE
     if not os.path.isdir(SRC_DIR):
         return []
     posts = []
@@ -425,6 +442,18 @@ def load_posts(include_drafts=False):
         path = os.path.join(SRC_DIR, fn)
         with open(path, encoding="utf-8") as f:
             meta, body = parse_front_matter(f.read(), f"source/travel/{fn}")
+        # Affiliate plumbing (2026-09-17): a plain amazon.com URL in the source
+        # gets this publication's tracking ID + rel="sponsored" here, so an entry
+        # never carries the tag by hand. The footer disclosure switches on the
+        # moment any entry links to Amazon (see _footer) — data, not prose. And
+        # the opening entry's promise ("if that ever changes, it would say so
+        # plainly where it happened") is a build check, not a memory.
+        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS["travel"])
+        if blogkit.affiliate_note_missing(body):
+            raise ValueError(
+                f"source/travel/{fn}: links to Amazon but never says 'affiliate' in its "
+                f"own text — a paid link says so where it happens")
+        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.has_amazon_link(body)
 
         is_draft = meta.get("draft", "").lower() in ("1", "true", "yes")
         if is_draft and not include_drafts:
