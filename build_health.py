@@ -92,7 +92,7 @@ BASE = "/health"
 # Cookie-less, no-consent-banner analytics, same account as the other three so
 # there's one dashboard for the whole domain. Set to None to disable entirely.
 GOATCOUNTER_CODE = "mistertranslation"
-ADSENSE_CLIENT = "ca-pub-7435612822800919"   # Google AdSense publisher id (applied 2026-09-17); the tag rides with the GoatCounter script into every <head>
+ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-2001…, swapped 2026-09-18 — the 2026-09-17 pub-7435… account was duplicate-flagged); the tag rides with the GoatCounter script into every <head>
 
 # The Regimen's front-matter vocabulary. The Ledger's minus `live` (nothing here
 # rebuilds itself from a data feed) — an entry has no stars, no place, no chart.

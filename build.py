@@ -71,7 +71,7 @@ FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 # CODE in CODE.goatcounter.com). Leave as None and every tracking hook below is a
 # silent no-op — the site behaves exactly as it does today.
 GOATCOUNTER_CODE = "mistertranslation"
-ADSENSE_CLIENT = "ca-pub-7435612822800919"   # Google AdSense publisher id (applied 2026-09-17); the tag rides with the GoatCounter script into every <head>
+ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-2001…, swapped 2026-09-18 — the 2026-09-17 pub-7435… account was duplicate-flagged); the tag rides with the GoatCounter script into every <head>
 
 # Chapter registry: slug -> (book, chapter number, one-line teaser).
 # Add a line here when a new chapter lands in the source file.
