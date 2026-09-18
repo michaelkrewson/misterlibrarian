@@ -608,12 +608,19 @@ def _btc_template(body, stats):
 
 # ───────────────────────────────────────────────────────────────── entries ───
 
+# Set by load_entries: True once any entry links to Amazon. _legal reads it so
+# Amazon's required disclosure line appears on every page of this publication
+# only when there is actually a link somewhere to disclose.
+AFFILIATE_LIVE = False
+
+
 def load_entries(include_drafts=False):
     """Read source/finance/*.html into entry dicts, newest first.
 
     Shares blogkit's front-matter parser with the travel blog but not its
     vocabulary — see KNOWN_KEYS above.
     """
+    global AFFILIATE_LIVE
     if not os.path.isdir(ENTRY_SRC):
         return []
     entries = []
@@ -623,6 +630,12 @@ def load_entries(include_drafts=False):
         with open(os.path.join(ENTRY_SRC, fn), encoding="utf-8") as fh:
             meta, body = blogkit.parse_front_matter(
                 fh.read(), "source/finance/" + fn, KNOWN_KEYS, REQUIRED_KEYS)
+        # Affiliate plumbing (2026-09-17): a plain amazon.com URL in the source
+        # gets this publication's tracking ID + rel="sponsored" here, so an entry
+        # never carries the tag by hand. The footer disclosure switches on the
+        # moment any entry links to Amazon (see _legal) — data, not prose.
+        body = blogkit.tag_amazon_links(body, blogkit.AMAZON_TAGS["finance"])
+        AFFILIATE_LIVE = AFFILIATE_LIVE or blogkit.has_amazon_link(body)
 
         m = re.match(r"(\d{4})-(\d{2})-(\d{2})-(.+)\.html$", fn)
         if not m:
@@ -765,9 +778,11 @@ def _legal():
             'or sell any security. Figures are drawn from public sources, are not '
             'audited, and are not warranted to be accurate or complete — do your own '
             'research before relying on anything here. No company, fund, or government '
-            'named on this site has endorsed it or is affiliated with it. '
+            'named on this site has endorsed it or is affiliated with it. %s'
             '<a href="%s">Privacy policy</a>.</p>'
-            % (datetime.now(timezone.utc).year, esc(SITE_NAME), PRIVACY_URL))
+            % (datetime.now(timezone.utc).year, esc(SITE_NAME),
+               (blogkit.AMAZON_DISCLOSURE["en"] + " ") if AFFILIATE_LIVE else "",
+               PRIVACY_URL))
 
 
 def _foot(hits_path=None):
@@ -7014,6 +7029,10 @@ def check_entries(entries):
         if d in seen:
             problems.append("%s: identical search description to %s" % (e["slug"], seen[d]))
         seen[d] = e["slug"]
+        if blogkit.affiliate_note_missing(e["body"]):
+            problems.append("%s: links to Amazon but never says 'affiliate' in its own "
+                            "text — the travel blog's opening entry promised a paid link "
+                            "would say so where it happens" % e["slug"])
     if problems:
         sys.exit("build refused:\n  " + "\n  ".join(problems))
 
