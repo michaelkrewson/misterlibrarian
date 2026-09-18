@@ -98,8 +98,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install yfinance
-        run: python -m pip install --quiet --upgrade yfinance
+      # Pillow is what blogkit.img_dims uses to emit width/height on every hero
+      # image (a Core Web Vitals hint) and what _og keys the summary_large_image
+      # Twitter card on. It fails OPEN, so without it this hourly rebuild quietly
+      # stripped both from every Ledger page and the next local build put them
+      # back — a flip-flop that ran for weeks before it was noticed (2026-09-17).
+      - name: Install yfinance and Pillow
+        run: python -m pip install --quiet --upgrade yfinance pillow
 
       - name: Fetch the asset board
         run: python3 tools/fetch_asset_board.py

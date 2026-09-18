@@ -86,6 +86,12 @@ jobs:
           SLUG: ${{ steps.pick.outputs.slug }}
         run: python3 tools/publish_draft.py "$SLUG"
 
+      # Same reason as refresh-asset-board.yml: blogkit.img_dims fails open
+      # without Pillow, and a travel post published from here would lose its
+      # photos' width/height hints until the next local build.
+      - name: Install Pillow
+        run: python3 -m pip install --quiet pillow
+
       - name: Rebuild /travel/
         run: python3 build_travel.py
 
