@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-19",
   "title": "The rundown",
   "note": "What's going on right now, in one place. Items stay plain text until one of them becomes its own entry below — then it turns into a link.",
   "sections": [
     {
-      "label": "Macro & markets",
+      "label": "Business & markets",
       "items": [
         {
-          "text": "The Fed raises rates 25 basis points to 3.75%-4% in a unanimous vote, its first hike since 2023, with Chair Kevin Warsh citing inflation \"too high ... for too long\" and 16 of 18 officials expecting at least one more hike before year-end.",
-          "href": ""
+          "text": "Warren Buffett, 96, steps down as chairman of Berkshire Hathaway after more than 60 years leading the company, taking the title of chairman emeritus; his son Howard G. Buffett, a Berkshire director for 33 years, becomes chairman, while Greg Abel continues as CEO, a role he took over from Buffett eight months ago — I took a closer look at the S&P 500 advice Buffett leaves behind.",
+          "href": "https://mistertranslation.com/finance/the-chairman-retires-the-advice-doesnt.html"
         },
         {
-          "text": "Warren Buffett, 96, steps down as chairman of Berkshire Hathaway, a title he'd held since 1970, handing it to his son Howard while Greg Abel keeps running the company — and I take a closer look at the S&P 500 advice Buffett leaves behind.",
-          "href": "https://mistertranslation.com/finance/the-chairman-retires-the-advice-doesnt.html"
+          "text": "SpaceX's weighting in the Nasdaq-100 is set to more than double, from about 1.28% to roughly 2.82%, when the index's rebalance takes effect at Monday's close, September 21, after lockup expirations pushed the company's public float to about 16% of shares outstanding.",
+          "href": ""
         }
       ]
     },
@@ -20,11 +20,11 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades near $77,980 as of 8am ET, its third straight day of gains and down just 1.5% in September, historically its weakest month.",
+          "text": "Bitcoin trades above $81,000 on September 19, extending a rally that shrugged off both this week's Fed rate hike and the Senate's failure to invoke cloture on the CLARITY Act digital-asset market-structure bill, which fell short of the 60 votes needed to advance.",
           "href": ""
         },
         {
-          "text": "Hong Kong's 2026 Policy Address commits to letting regulated stablecoins trade on licensed platforms and settle tokenized money-market funds, with the HKMA in final review of 36 stablecoin-license applications.",
+          "text": "The rally coincided with reports that the Commodity Futures Trading Commission sent its own crypto market-structure rules to the White House for review.",
           "href": ""
         }
       ]
@@ -33,19 +33,11 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Security firm Hacktron AI used Anthropic's Claude Opus 5 to chain three bugs into an exploit that reached OpenAI's internal GitHub and its \"Monorepo\" source code in under 72 hours; OpenAI paid $6,500 through its bug bounty program.",
+          "text": "Anthropic makes Claude Sonnet 5's introductory API pricing — $2 per million input tokens, $10 per million output tokens — permanent, canceling a previously announced increase to $3/$15 that had been set to take effect September 1.",
           "href": ""
         },
         {
-          "text": "OpenAI, Anthropic and Google DeepMind have been in talks for weeks on AI safety, OpenAI policy chief Chris Lehane says, following Anthropic CEO Dario Amodei's essay urging the industry to slow the pace of frontier AI development.",
-          "href": ""
-        },
-        {
-          "text": "Google's new Gemini 3.8 Flash Cyber model found a critical vulnerability in under two hours that research typically takes months to surface, and Google says it now beats Anthropic's Mythos 5 and OpenAI's GPT-5.6 Sol and GPT-5.5-Cyber at autonomous vulnerability discovery.",
-          "href": ""
-        },
-        {
-          "text": "Apple's new Mac Studio ships September 22 with M5 Max and M5 Ultra chips and up to 512GB of unified memory, in the exact same 7.7-inch-square case it's used since 2023 — I looked at what actually changed, since it isn't the redesign it might sound like.",
+          "text": "Apple's new Mac Studio, with M5 Max and M5 Ultra chip options, begins shipping September 22 starting at $2,499 — in the exact same case Apple's used since 2023, it turns out; I looked at what actually changed.",
           "href": "https://mistertranslation.com/notebook/the-same-box-a-lot-more-inside.html"
         }
       ]
@@ -54,16 +46,12 @@
       "label": "Science",
       "items": [
         {
-          "text": "Physicists at Switzerland's Paul Scherrer Institute and ETH Zurich built a new cold muonium beam, capturing antimuons in superfluid helium near absolute zero, to test whether gravity pulls on this antimatter-containing atom the same way it pulls on ordinary matter — the team projects about 1% precision within roughly 100 days of data collection, published in Nature Physics on September 14.",
+          "text": "A Nature Communications modeling study finds that continued political fragmentation of Latin America's power grids raises system costs by up to 7% and weakens drought resilience, while regional grid integration could save $32 billion a year and sharply cut emissions by 2045.",
           "href": ""
         },
         {
-          "text": "Webb's newest and largest public image, a panorama of the star-forming region IC 348, contains the smallest brown dwarfs ever confirmed — about twice the mass of Jupiter, below the mass theory says a failed star should be able to form at, and one may have a disk of its own forming planets.",
+          "text": "Using the James Webb Space Telescope, astronomers searching the star-forming region IC 348 find brown dwarfs with just twice Jupiter's mass, pushing the study of these objects into a new, lower mass range — and possibly below the mass floor theory says a failed star should be able to form at, which I dug into.",
           "href": "https://mistertranslation.com/notebook/twice-the-mass-of-jupiter-and-a-problem-for-how-stars-form.html"
-        },
-        {
-          "text": "The FDA approves levacetylleucine (Aqneursa) as the first treatment for the ataxia in ataxia-telangiectasia, a rare inherited DNA-repair disorder, after a 73-patient trial showed a statistically significant improvement on the standard ataxia rating scale within 12 weeks (P<.001) — I wrote up what A-T actually is and what the trial showed.",
-          "href": "https://mistertranslation.com/health/the-first-approved-treatment-for-ataxia-in-a-t.html"
         }
       ]
     },
@@ -71,29 +59,21 @@
       "label": "World",
       "items": [
         {
-          "text": "Trump threatens \"very serious tariffs\" on the EU, or to \"stop trading with Europe on many things,\" over Ursula von der Leyen's proposal to make Canada the bloc's first associate member; Canadian PM Mark Carney welcomed the idea in an address to the European Parliament.",
+          "text": "President Trump signs the Lindsey O. Graham Sanctioning Russia and Iran Act into law, authorizing tariffs of up to 100% on the five largest buyers of Russian oil and gas and sanctioning Vladimir Putin, Russian officials, oligarchs and banks; the bill is named for the senator who negotiated it before his death in July.",
           "href": ""
         },
         {
-          "text": "The EU will disburse €3.3 billion ($3.8 billion) to Ukraine for missile and drone procurement, von der Leyen announces after a call with President Zelensky, bringing the bloc's mobilized aid to nearly €15 billion this year.",
-          "href": ""
-        },
-        {
-          "text": "The US State Department approves a potential $24.3 billion sale of 48 F-35 fighter jets to Saudi Arabia — the kingdom's first F-35s, pending congressional approval.",
+          "text": "Russian guided bombs hit an apartment building in Sumy, killing two and injuring seven, including a 13-year-old girl, the same day a separate strike near Nikopol injures seven more.",
           "href": ""
         }
       ]
     },
     {
-      "label": "Arts & culture",
+      "label": "Health & medicine",
       "items": [
         {
-          "text": "At the September 14 Emmy Awards, \"The Pitt\" wins outstanding drama series for the second year running, and Matthew Rhys becomes the first performer to win lead-acting Emmys in two genres in one year — limited series for \"The Beast in Me,\" comedy series for \"Widow's Bay.\"",
-          "href": ""
-        },
-        {
-          "text": "Taryn Simon's \"Father Country Do I Love You\" opens today at the Guggenheim in New York, filling Frank Lloyd Wright's rotunda with photographs, text, video and sculpture through March 14, 2027.",
-          "href": ""
+          "text": "The FDA approves levacetylleucine (Aqneursa) as the first treatment for ataxia in patients with ataxia-telangiectasia, based on phase 3 trial data showing a statistically significant improvement (P<.001) on a standard ataxia rating scale within 12 weeks — I wrote up what the disease actually is and what the trial showed.",
+          "href": "https://mistertranslation.com/health/the-first-approved-treatment-for-ataxia-in-a-t.html"
         }
       ]
     }
