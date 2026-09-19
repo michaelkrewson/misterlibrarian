@@ -6875,3 +6875,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    try:                      # keep the hub at / in step with this publication
+        import build_hub; build_hub.refresh()
+    except Exception as _e:
+        print("build_hub: %s" % _e)

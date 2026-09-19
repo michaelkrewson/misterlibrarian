@@ -31,6 +31,20 @@ Translated with Claude; kept by Mr. Librarian.
 
 ---
 
+## The front door: `/` (`index.html` + `build_hub.py`)
+
+The bare domain is a hand-written six-card hub. Its copy and cards are edited by hand in
+`index.html`; the one line per card that changes — "Latest · date · title" — is filled by
+`build_hub.py` from each publication's sources (and the Bible's from `bible.html`'s own
+"Newest:" button). It also renders the hub's share image, `img/og-hub.png`.
+
+```
+python3 build_hub.py     # refresh the six latest lines + og-hub.png
+```
+
+You rarely need to run it: every other builder calls it last, so any publish refreshes
+the hub. It never fails a build — a bad source dir leaves that card's line as it was.
+
 ## The other site in this repo: `/travel/`
 
 This repo also publishes **The Librarian Abroad**, a travel & food blog, at

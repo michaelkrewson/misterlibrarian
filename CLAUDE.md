@@ -1,8 +1,17 @@
 # MisterLibrarian — Claude instructions
 
-This repo publishes **five separate things at mistertranslation.com**, reached through a
-hand-written 5-card hub at the bare domain root (`index.html`, no builder of its own —
-added 2026-09-09 with three cards; the fourth 2026-09-10; the fifth 2026-09-11):
+This repo publishes **six separate things at mistertranslation.com**, reached through a
+hand-written 6-card hub at the bare domain root (`index.html` — added 2026-09-09 with three
+cards; the fourth 2026-09-10; the fifth and sixth 2026-09-11). **Since 2026-09-18 the hub has
+one small builder, `build_hub.py`**, which does NOT write the page: it refills the one
+`<div class="latest" data-pub="…">` line inside each card from that publication's sources
+(newest non-draft entry; the Bible's from bible.html's own "Newest:" button) and renders the
+hub's own share image `img/og-hub.png`. Every builder below calls `build_hub.refresh()` at the
+end of its `__main__`, so publishing anywhere refreshes the hub — never hand-edit a latest
+line, and keep the six `data-pub` slots when editing the cards. The copy, cards and styling
+stay hand-written in `index.html`. Card convention (2026-09-18 review): the big `<h2>` is the
+PUBLICATION's name (the brand), the small eyebrow is its category; the persona is
+"Mr. Librarian" everywhere on the hub.
 
 1. **The Bible project** (`/bible.html`, `build.py`; moved off the bare root 2026-09-09 when
    the hub took over `/` — see below) — a fresh translation of the Bible into modern English,
