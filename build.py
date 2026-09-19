@@ -953,8 +953,8 @@ def header(active="", lang="en"):
 # The "N views" count moved here from the nav row (2026-07-27) -- it was competing
 # for room in an already-busy nav, and it's a bit of trivia a reader checks at the
 # end of a page, not something that belongs up top with the destinations. Sits as
-# its own line at the very bottom-left, after the footer's other two paragraphs
-# (which are already left-aligned by default -- .site-foot has no centering).
+# its own line, centered under the footer's other two paragraphs (style.css's
+# .site-foot, centered 2026-09-19 to match every one of the five blogs).
 # Empty string (renders nothing) when GoatCounter isn't configured.
 _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>'
                     if GOATCOUNTER_CODE else "")
