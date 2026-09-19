@@ -1359,4 +1359,9 @@ MARK_SVG = """<svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="tr
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    _rc = main()
+    try:                      # keep the hub at / in step with this publication
+        import build_hub; build_hub.refresh()
+    except Exception as _e:
+        print("build_hub: %s" % _e)
+    sys.exit(_rc)
