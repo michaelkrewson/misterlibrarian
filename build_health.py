@@ -31,6 +31,9 @@ This builder writes ONLY inside health/ and never globs or deletes anywhere else
 the same discipline that lets the other three coexist safely. The one deletion
 it performs (`_prune_stale_tag_pages`) is scoped hard to health/tag-*.html.
 
+⚡ 2026-09-18 (Michael's call): the Bible project joined SIBLINGS directly, so
+this blog's footer now links straight to it rather than only via the root hub.
+
 WHAT THIS IS A COPY OF, AND WHAT IT DELIBERATELY ISN'T
 ──────────────────────────────────────────────────────
 The *writing* half of build_finance.py, near-verbatim: front matter via blogkit,
@@ -119,7 +122,12 @@ TAG_BAR_MAX_CHIPS = 18
 FRONT_TILE_LIMIT = 6
 
 # The sibling publications — every blog links to every other in its footer.
-# The Bible project is reached via the root hub, same as from the others.
+# The Bible project was reached only via the root hub until 2026-09-18
+# (Michael's call), when it joined this list directly like the others.
+# ⚠ The ES footer's blanket "(en inglés)" sib_suffix applies to this entry
+# too even though the Bible project has its own Spanish edition (es.html) —
+# a known, accepted imprecision rather than threading a per-language URL
+# through SIBLINGS for one entry.
 SIBLINGS = (
     ("The Librarian's Ledger", "https://mistertranslation.com/finance/",
      "What the world's money is actually in"),
@@ -129,6 +137,8 @@ SIBLINGS = (
      "A commonplace book — science and technology, the world, arts and culture"),
     ("Eight Miles West", "https://mistertranslation.com/west/",
      "A family history — four centuries in America, one document at a time"),
+    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
+     "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
 # The same FormSubmit endpoint the other two blogs post to, so every publication

@@ -67,6 +67,9 @@ else — the same discipline that lets the other five coexist safely. If a
 shared mechanism needs fixing, fix it in blogkit.py; the builders do not
 import each other (see CLAUDE.md).
 
+⚡ 2026-09-18 (Michael's call): the Bible project joined SIBLINGS directly, so
+this blog's footer now links straight to it rather than only via the root hub.
+
 RENAMING
 The working title is "Eight Miles West" — the family's first move was a boat
 ride across the Kill from Gowanus to Staten Island, and every generation after
@@ -144,6 +147,8 @@ PARTS = {
                 "grandson ended up looking for the same cooper."),
 }
 
+# The Bible project was reached only via the root hub until 2026-09-18
+# (Michael's call), when it joined this list directly like the others.
 SIBLINGS = (
     ("The Librarian's Notebook", "https://mistertranslation.com/notebook/",
      "A commonplace book — science and technology, the world, arts and culture"),
@@ -153,6 +158,8 @@ SIBLINGS = (
      "Notes from the road and the table"),
     ("The Librarian's Regimen", "https://mistertranslation.com/health/",
      "Health, nutrition and medicine — one question at a time, from the studies"),
+    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
+     "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
 FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"

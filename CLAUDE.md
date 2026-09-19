@@ -140,7 +140,24 @@ hub at `/` with one card per publication — Bitcoin & Finance, Food & Travel, a
 (the Bible project) — so all three are now mutually reachable through it. **Don't reintroduce
 the isolation** — the current, correct state is: hub → all three; Bible project → back to the
 hub only via its own nav's brand-name conventions (it doesn't carry a hub link of its own
-today, and none was asked for); Librarian Abroad ↔ finance board still link directly to each
+today, and none was asked for).
+
+⚡ **2026-09-18 (Michael's call): every one of the five blogs now links straight to the Bible
+project too**, not just via the hub. Each builder's `SIBLINGS` list (`build_finance.py`,
+`build_health.py`, `build_notebook.py`, `build_west.py`) and `build_travel.py`'s hand-rolled
+header/footer sibling links gained a fifth entry — "Mr. Librarian's Bible" → `bible.html` — so
+each blog's footer (and, for Travel, its mobile-menu sibling row too, the one place it lists
+siblings twice) now names all FIVE other publications, not four. The Bible project's own
+~2,772 pages (`build.py`) were deliberately left untouched — reachable from the blogs via the
+hub-style pattern only, since adding a "visit our blogs" mention to a spare reference work at
+that scale is a much bigger, more consequential change than a one-line addition to five
+footers, and nothing prompted it. Known small imprecision: `build_health.py`'s Spanish (`es`)
+footer tags every sibling link "(en inglés)" via a blanket per-entry suffix; that's correct for
+the other four (English-only), but the Bible project also has its own Spanish edition (`es.html`)
+that this doesn't route to — accepted rather than threading a per-language URL through
+`SIBLINGS` for one entry.
+
+Librarian Abroad ↔ finance board still link directly to each
 other too (Michael's call, 2026-08-07), unaffected by the hub's addition.
 
 **Why the Bible project's own pages didn't move:** `build.py` still emits ~2,772 pages at the

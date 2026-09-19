@@ -70,6 +70,9 @@ notebook/tag-*.html. If a shared mechanism needs fixing, fix it in blogkit.py;
 if a page-chrome idea proves out here, port it by hand (the builders do not
 import each other — see CLAUDE.md).
 
+⚡ 2026-09-18 (Michael's call): the Bible project joined SIBLINGS directly, so
+this blog's footer now links straight to it rather than only via the root hub.
+
 RENAMING
 ────────
 Edit SITE_NAME / TAGLINE / BLURB below. The hub card on the root index.html and
@@ -160,7 +163,8 @@ TAG_BAR_MAX_CHIPS = 18
 FRONT_TILE_LIMIT = 6
 
 # The sibling publications — every blog links to every other in its footer.
-# The Bible project is reached via the root hub, same as from the other three.
+# The Bible project was reached only via the root hub until 2026-09-18
+# (Michael's call), when it joined this list directly like the others.
 SIBLINGS = (
     ("The Librarian's Ledger", "https://mistertranslation.com/finance/",
      "What the world's money is actually in"),
@@ -170,6 +174,8 @@ SIBLINGS = (
      "Health, nutrition and medicine — one question at a time, from the studies"),
     ("Eight Miles West", "https://mistertranslation.com/west/",
      "A family history — four centuries in America, one document at a time"),
+    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html",
+     "A fresh translation of the Bible into modern English, one chapter at a time"),
 )
 
 # The same FormSubmit endpoint the other blogs post to, so every publication

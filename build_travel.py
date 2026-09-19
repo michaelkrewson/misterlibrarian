@@ -222,8 +222,10 @@ COMPASS_SVG = """<svg class="mark" viewBox="0 0 48 48" width="62" height="62" ar
 
 
 def header(active=""):
-    """Site header. NOTE: every link here is relative and stays inside /travel/ —
-    there is intentionally no route from this blog to the Bible project.
+    """Site header. NOTE: every link here is relative and stays inside /travel/,
+    EXCEPT the mobile menu's sibling row, which since 2026-09-18 (Michael's call)
+    also carries a direct link to the Bible project (bible.html) alongside the
+    other three blogs — it had been reachable only via the root hub before that.
 
     The search box lives here, not just on the index page, so it's reachable
     from anywhere on the site — a post page, About, wherever. It's a REAL form
@@ -260,6 +262,7 @@ def header(active=""):
       <a class="sib" href="https://mistertranslation.com/health/" title="Health, nutrition and medicine — one question at a time, from the studies">The Librarian's Regimen →</a>
       <a class="sib" href="https://mistertranslation.com/notebook/" title="A commonplace book — science and technology, the world, arts and culture">The Librarian's Notebook →</a>
       <a class="sib" href="https://mistertranslation.com/west/" title="A family history — four centuries in America, one document at a time">Eight Miles West →</a>
+      <a class="sib" href="https://mistertranslation.com/bible.html" title="A fresh translation of the Bible into modern English, one chapter at a time">Mr. Librarian's Bible →</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
     </div>
@@ -283,9 +286,10 @@ FOOTER = f"""<footer class="site-foot">
   <a href="https://mistertranslation.com/privacy.html">Privacy</a></p>
   <p class="sibfoot"><a href="https://mistertranslation.com/finance/">The Librarian's Ledger</a>
   — the other one, about money — <a href="https://mistertranslation.com/health/">The
-  Librarian's Regimen</a>, about health — and <a href="https://mistertranslation.com/notebook/">The
-  Librarian's Notebook</a>, about everything else — and <a href="https://mistertranslation.com/west/">Eight
-  Miles West</a>, a family history.</p>
+  Librarian's Regimen</a>, about health — <a href="https://mistertranslation.com/notebook/">The
+  Librarian's Notebook</a>, about everything else — <a href="https://mistertranslation.com/west/">Eight
+  Miles West</a>, a family history — and <a href="https://mistertranslation.com/bible.html">Mr.
+  Librarian's Bible</a>, a fresh translation of scripture.</p>
 </footer>"""
 
 

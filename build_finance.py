@@ -25,6 +25,8 @@ about the cross-linking concern that motivated it). The bare domain root is now 
 hand-written 3-card hub (index.html, no builder of its own) linking to all three —
 this board, the travel blog, and the Bible project's new bible.html home. None of
 that changed anything inside finance/ itself; this note is just no longer true.
+⚡ 2026-09-18 (Michael's call): the Bible project also joined SIBLINGS directly,
+so this board's footer now links straight to it rather than only via the hub.
 
 This builder writes ONLY inside finance/ and never globs or deletes anywhere else,
 which is the same discipline that lets the other two coexist safely. build.py's only
@@ -123,7 +125,10 @@ TAG_BAR_MAX_CHIPS = 18
 # blog's own index.
 FRONT_TILE_LIMIT = 6
 
-# The sibling publications (the Bible project is reached via the root hub).
+# The sibling publications, PLUS the Bible/Translation project itself as of
+# 2026-09-18 (Michael's call) — it had been reachable only via the root hub
+# since the hub replaced the old "Bible links to neither" isolation rule
+# 2026-09-09; this is the first direct blog→Bible link.
 # Was a single SIBLING_NAME/SIBLING_URL pair until 2026-09-10, when The
 # Librarian's Regimen (/health/, build_health.py) became the fourth
 # publication on the domain and the footer had to carry two; The Librarian's
@@ -132,6 +137,7 @@ SIBLINGS = (
     ("The Librarian Abroad", "https://mistertranslation.com/travel/"),
     ("The Librarian's Regimen", "https://mistertranslation.com/health/"),
     ("The Librarian's Notebook", "https://mistertranslation.com/notebook/"),
+    ("Mr. Librarian's Bible", "https://mistertranslation.com/bible.html"),
     ("Eight Miles West", "https://mistertranslation.com/west/"),
 )
 
