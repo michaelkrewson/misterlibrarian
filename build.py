@@ -45,6 +45,12 @@ def _asset_ver(name):
 CSS_VER = _asset_ver("style.css")
 JS_VER = _asset_ver("player-clips.js")
 AUDIO_JS_VER = _asset_ver("audio-reader.js")
+# The Listen button falls back to the browser's own robotic SpeechSynthesis voice
+# whenever no pre-generated narration MP3 exists (see gen_audio.py) — and none do
+# yet, so every chapter currently plays that voice. Disabled site-wide 2026-09-18
+# (Michael's call: unpleasant to listen to) until real narration is generated.
+# audio-reader.js and gen_audio.py are left in place, ready to re-enable.
+ENABLE_LISTEN_BUTTON = False
 NOTES_JS_VER = _asset_ver("reader-notes.js")
 SHARE_JS_VER = _asset_ver("share.js")
 
@@ -3748,13 +3754,15 @@ def build_chapter_pages(chapters):
         # browser. gen_audio.py produces those files.
         mp3_rel = f"audio/{book_slug(book)}-{num}.mp3"
         audio_attr = f' data-audio="{mp3_rel}"' if os.path.exists(os.path.join(OUT, mp3_rel)) else ""
+        listen_btn = (f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
+                      if ENABLE_LISTEN_BUTTON else "")
         es_file = chapter_filename(book, num)[:-5] + ".es.html"
         es_btn = ((f'<button class="tgl" id="esptgl" onclick="toggleEsp()">Mostrar español</button>'
                    f'<a class="tgl" href="{es_file}" title="Edición en español">\U0001F310 Español</a>')
                   if has_es else "")
         toggle = (f'<div class="togglebar">'
                   f'<div class="tgl-group">'
-                  f'<button class="tgl tgl-audio" id="audiotgl"{audio_attr}>🔊 Listen</button>'
+                  f'{listen_btn}'
                   f'<button class="tgl" id="hebtgl" onclick="toggleHeb()">Hide {orig_lang}</button>'
                   f'{es_btn}'
                   f'<a class="tgl" href="atlas.html#{book_slug(book)}-{num}">🗺️ Atlas</a>'
