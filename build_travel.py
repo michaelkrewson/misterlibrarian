@@ -270,8 +270,6 @@ def header(active=""):
     <a href="bookmarked.html"{cls('bookmarked')}>📑 Bookmarked</a>
     <a href="write.html"{cls('write')}>✉️ Write</a>
     <a href="about.html"{cls('about')}>About</a>
-    <a class="sib" href="https://mistertranslation.com/finance/" title="What the world's money is actually in">The Librarian's Ledger →</a>
-    <a class="sib" href="https://mistertranslation.com/health/" title="Health, nutrition and medicine — one question at a time, from the studies">The Librarian's Regimen →</a>
     <span class="share-widget"></span>
   </nav>
 </header>"""
