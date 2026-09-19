@@ -56,6 +56,14 @@ TAGLINE = "What the world's money is actually in"
 BLURB = ("A standing count of the largest assets on earth — gold, silver, the biggest "
          "public companies, and Bitcoin — ranked by what the market says they are worth, "
          "and refreshed through the day.")
+# The writing index and the feed describe the PUBLICATION, not the board: by
+# 2026-09-18 the Ledger carried 36 entries and its own front-page description
+# (and the hub card's) still only mentioned the asset count. BLURB stays the
+# board's description (board.html); this one is what search and the feed see.
+WRITING_BLURB = ("Writing on Bitcoin, money, and the people who regulate it — read from "
+                 "the filings and the footnotes — plus a standing board of the world's "
+                 "biggest assets, gold, silver, the largest companies and Bitcoin, ranked "
+                 "by what the market says they're worth.")
 
 BASE_URL = "https://mistertranslation.com/finance/"
 SITE_URL = "https://mistertranslation.com"
@@ -1799,7 +1807,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     intro = '  <p class="tag ftag">%s</p>\n' % esc(TAGLINE)
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
-        desc=BLURB, url=BASE_URL, active="home",
+        desc=WRITING_BLURB, url=BASE_URL, active="home",
         body="""%s%s  <section class="writing">
     %s
     %s
@@ -6976,7 +6984,7 @@ def main():
     if tl:
         write("tags.html", tl)
     write("feed.xml", blogkit.build_feed(live, site_name=SITE_NAME, site_url=SITE_URL,
-                                         base=BASE, blurb=BLURB))
+                                         base=BASE, blurb=WRITING_BLURB))
     write("sitemap.xml", build_sitemap(live, tags))
 
     _prune_stale_tag_pages(tags)
@@ -7038,4 +7046,9 @@ def check_entries(entries):
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    _rc = main()
+    try:                      # keep the hub at / in step with this publication
+        import build_hub; build_hub.refresh()
+    except Exception as _e:
+        print("build_hub: %s" % _e)
+    sys.exit(_rc)

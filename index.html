@@ -4,17 +4,17 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Mister Translation</title>
-<meta name="description" content="Six projects kept by Mr. Librarian: a Bible translation, the world's biggest money, notes from the road, health from the studies, a notebook, a family history."/>
+<meta name="description" content="A Bible translation into modern English, and the five other things Mr. Librarian keeps one entry at a time: the Ledger on Bitcoin and money, notes from the road, health from the studies, a notebook, and a family history."/>
 <link rel="canonical" href="https://mistertranslation.com/"/>
 <meta property="og:site_name" content="Mister Translation"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Mister Translation"/>
-<meta property="og:description" content="Six projects kept by Mr. Librarian: a Bible translation, the world's biggest money, notes from the road, health from the studies, a notebook, a family history."/>
-<meta property="og:image" content="https://mistertranslation.com/img/og-default.png"/>
+<meta property="og:description" content="A Bible translation into modern English, and the five other things Mr. Librarian keeps one entry at a time: the Ledger on Bitcoin and money, notes from the road, health from the studies, a notebook, and a family history."/>
+<meta property="og:image" content="https://mistertranslation.com/img/og-hub.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Mister Translation"/>
-<meta name="twitter:description" content="Six projects kept by Mr. Librarian: a Bible translation, the world's biggest money, notes from the road, health from the studies, a notebook, a family history."/>
-<meta name="twitter:image" content="https://mistertranslation.com/img/og-default.png"/>
+<meta name="twitter:description" content="A Bible translation into modern English, and the five other things Mr. Librarian keeps one entry at a time: the Ledger on Bitcoin and money, notes from the road, health from the studies, a notebook, and a family history."/>
+<meta name="twitter:image" content="https://mistertranslation.com/img/og-hub.png"/>
 <meta property="og:url" content="https://mistertranslation.com/"/>
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 46 46&#x27;&gt;&lt;circle cx=&#x27;23&#x27; cy=&#x27;23&#x27; r=&#x27;22.5&#x27; fill=&#x27;#0b1929&#x27;/&gt;&lt;rect x=&#x27;9&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;33.4&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;12.6&#x27; y=&#x27;14.5&#x27; width=&#x27;20.8&#x27; height=&#x27;17&#x27; fill=&#x27;#efe6cf&#x27;/&gt;&lt;path d=&#x27;M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z&#x27; fill=&#x27;#e8c968&#x27;/&gt;&lt;/svg&gt;"/>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -42,7 +42,7 @@ h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
   background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
   -webkit-background-clip:text;background-clip:text;color:#e8c968;
   -webkit-text-fill-color:transparent}
-.tag{color:#aab4c6;font-size:16.5px;max-width:520px;margin:0 auto 8px}
+.tag{color:#aab4c6;font-size:16.5px;max-width:600px;margin:0 auto 8px}
 
 .cardgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:38px 0 8px}
 @media (max-width:760px){.cardgrid{grid-template-columns:1fr}}
@@ -111,6 +111,16 @@ h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
 .hcard p{margin:0;color:#c3cadb;font-size:14.5px;line-height:1.55;flex:1;position:relative;z-index:1}
 .hcard .go{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:13px;color:var(--accent);font-weight:600;position:relative;z-index:1}
+/* The one line on this page that changes: refilled by build_hub.py from each
+   publication's sources whenever any builder runs. Plain text, not a link — the
+   whole card is already an <a>. */
+.hcard .latest{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:12.5px;line-height:1.45;color:#9aa4b8;position:relative;z-index:1;
+  padding-top:10px;border-top:1px solid rgba(255,255,255,.07)}
+.hcard .latest:empty{display:none}
+.hcard .latest .lk{color:var(--accent);font-weight:600;letter-spacing:.04em;
+  text-transform:uppercase;font-size:10.5px;margin-right:4px}
+.hcard .latest time{color:#c3cadb}
 
 .c-finance{--accent:#f7931a;--accent-glow:rgba(247,147,26,.35);--wash:rgba(247,147,26,.22)}
 .c-travel{--accent:#e8865c;--accent-glow:rgba(232,134,92,.35);--wash:rgba(232,134,92,.22)}
@@ -153,7 +163,7 @@ footer.hub-foot a:hover{color:#e8c968}
     <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
   </svg>
   <h1>Mister Translation</h1>
-  <div class="tag">A few small projects, kept one entry at a time by Mr. Librarian.</div>
+  <div class="tag">A Bible translation, and the five other things Mr. Librarian keeps — one entry at a time.</div>
 </header>
 
 <div class="cardgrid">
@@ -182,9 +192,10 @@ footer.hub-foot a:hover{color:#e8c968}
       </g>
       <circle cx="33" cy="33" r="21" stroke="#f7931a" stroke-width="1.4" opacity=".6"/>
     </svg></span>
-    <div class="eyebrow">The Librarian's Ledger</div>
-    <h2>Bitcoin &amp; Finance</h2>
-    <p>A running, refreshed count of the world's biggest money — gold, silver, the largest public companies, and Bitcoin — ranked by what the market actually says they're worth.</p>
+    <div class="eyebrow">Bitcoin &amp; Finance</div>
+    <h2>The Librarian's Ledger</h2>
+    <p>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</p>
+    <div class="latest" data-pub="finance"><span class="lk">Latest</span> <time datetime="2026-09-17">Sep 17</time> · The Genie Gets a Five-Year Lease</div>
     <div class="go">Enter the Ledger →</div>
   </a>
 
@@ -198,9 +209,10 @@ footer.hub-foot a:hover{color:#e8c968}
       <circle cx="24" cy="24" r="3.4" fill="#a3b378"/>
       <circle cx="24" cy="24" r="1.3" fill="#0d1520"/>
     </svg></span>
-    <div class="eyebrow">The Librarian Abroad</div>
-    <h2>Food &amp; Travel</h2>
-    <p>Notes from the road and the table — what was worth the trip, what was worth the plate, and what wasn't.</p>
+    <div class="eyebrow">Food &amp; Travel</div>
+    <h2>The Librarian Abroad</h2>
+    <p>Notes from the road and the table — what was worth the trip, what was worth the plate, and what wasn't. Lately the restaurants of Portland and Vancouver, Washington, one visit at a time, with the occasional detour to an apple press.</p>
+    <div class="latest" data-pub="travel"><span class="lk">Latest</span> <time datetime="2026-09-05">Sep 5</time> · A Washington Apple Haul, Bound for Cider</div>
     <div class="go">Enter Abroad →</div>
   </a>
 
@@ -219,9 +231,10 @@ footer.hub-foot a:hover{color:#e8c968}
       <rect x="27" y="48.4" width="12" height="3" rx="1.3" fill="#d9e0ea"/>
       <circle cx="33" cy="33" r="21" stroke="#3fd2a8" stroke-width="1.4" opacity=".6"/>
     </svg></span>
-    <div class="eyebrow">The Librarian's Regimen</div>
-    <h2>Health &amp; Medicine</h2>
+    <div class="eyebrow">Health &amp; Medicine</div>
+    <h2>The Librarian's Regimen</h2>
     <p>Health, nutrition and medicine, one question at a time — what the studies actually found, how sure anyone can honestly be, and what that leaves a reasonable person to do. A reader's notebook, not medical advice.</p>
+    <div class="latest" data-pub="health"><span class="lk">Latest</span> <time datetime="2026-09-17">Sep 17</time> · What Radioligand Therapy Is, and Why a Second Lutathera Matters</div>
     <div class="go">Enter the Regimen →</div>
   </a>
 
@@ -244,10 +257,11 @@ footer.hub-foot a:hover{color:#e8c968}
       <!-- the quill: rides the sheet, fades out before it would float over the closed scroll -->
       <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
     </svg></span>
-    <div class="eyebrow">Mr. Librarian's Bible</div>
-    <h2>Religion</h2>
-    <p>A fresh translation of the Bible into modern English, made from the original Hebrew and Greek, one chapter at a time.</p>
-    <div class="go">Enter the Project →</div>
+    <div class="eyebrow">Religion</div>
+    <h2>Mr. Librarian's Bible</h2>
+    <p>A fresh translation of the Bible into modern English, made from the original Hebrew and Greek one chapter at a time — with the source text alongside and every rendering choice checked against a shelf of landmark versions.</p>
+    <div class="latest" data-pub="bible"><span class="lk">Newest</span> Numbers 36</div>
+    <div class="go">Enter the Bible →</div>
   </a>
 
   <a class="hcard c-notebook" href="notebook/">
@@ -270,9 +284,10 @@ footer.hub-foot a:hover{color:#e8c968}
         </g>
         <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
       </svg></span>
-    <div class="eyebrow">The Librarian's Notebook</div>
-    <h2>Science &amp; Technology, the World, Arts &amp; Culture</h2>
-    <p>A commonplace book for everything that didn't fit the other four — the technology writing with no Bitcoin in it, the news explained rather than shouted, the occasional argument about a book or a building. Explainers over hot takes, working shown, one reader's opinions labelled as such.</p>
+    <div class="eyebrow">Science &amp; Technology · The World · Arts &amp; Culture</div>
+    <h2>The Librarian's Notebook</h2>
+    <p>A commonplace book for everything that didn't fit the other five — the technology writing with no Bitcoin in it, the news explained rather than shouted, the occasional argument about a book or a building. Explainers over hot takes, working shown.</p>
+    <div class="latest" data-pub="notebook"><span class="lk">Latest</span> <time datetime="2026-09-17">Sep 17</time> · The Summer of Truth, and the Things With Dates</div>
     <div class="go">Enter the Notebook →</div>
   </a>
   <a class="hcard c-west" href="west/">
@@ -292,29 +307,17 @@ footer.hub-foot a:hover{color:#e8c968}
           <circle cx="33" cy="33" r="2.2" fill="#f2f5f9"/>
         </g>
       </svg></span>
-    <div class="eyebrow">Eight Miles West</div>
-    <h2>A Family History</h2>
-    <p>One family's four centuries in America, read from the documents it left behind — a cooper who landed at Breuckelen around 1660, the Dutch colony changing hands around him, Staten Island, Bucks County, Iowa, the Pacific, and the twentieth century's wars. Croesen, Kroesen, Krewson. Non-fiction, a chapter at a time.</p>
+    <div class="eyebrow">A Family History</div>
+    <h2>Eight Miles West</h2>
+    <p>One family's four centuries in America, read from the documents it left behind — a cooper who landed at Breuckelen around 1660, then Staten Island, Bucks County, Iowa, the Pacific, and the twentieth century's wars. Croesen, Kroesen, Krewson. Non-fiction, a chapter at a time.</p>
+    <div class="latest" data-pub="west"><span class="lk">Latest</span> <time datetime="2026-09-12">Sep 12</time> · Chapter 20 · Let&#x27;s Keep Each Other Posted</div>
     <div class="go">Open the book →</div>
   </a>
 </div>
 
 <footer class="hub-foot">
   <p><a href="librarian.html">About &amp; Contact</a> · <a href="privacy.html">Privacy</a></p>
-  <p><span id="pgviews"></span></p>
 </footer>
 </div>
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  var el = document.getElementById("pgviews");
-  fetch("https://mistertranslation.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
-    .then(function(r){ return r.json(); })
-    .then(function(d){
-      if (el && d && d.count) el.textContent = "\u{1F441}️ " + d.count + " views";
-      else if (el) el.remove();
-    })
-    .catch(function(){ if (el) el.remove(); });
-});
-</script>
 </body>
 </html>
