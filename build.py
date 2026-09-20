@@ -976,11 +976,23 @@ def header(active="", lang="en"):
 _FOOT_VIEWS_LINE = ('\n  <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>'
                     if GOATCOUNTER_CODE else "")
 
+# The five sibling publications, same names/order/hrefs the hub (index.html) itself uses for
+# their cards -- every other blog's footer already links out to its siblings this way (see
+# e.g. finance/index.html's footer); the Bible project's footer didn't, until 2026-09-19. Bible
+# pages sit at the site root (or one level down under a <base> tag on dict/ency/atlas stub
+# pages -- see page()), so a root-relative "finance/" resolves correctly from anywhere.
+_SIBLING_LINKS = ('<a href="finance/">The Librarian\'s Ledger</a> · '
+                   '<a href="travel/">The Librarian Abroad</a> · '
+                   '<a href="health/">The Librarian\'s Regimen</a> · '
+                   '<a href="notebook/">The Librarian\'s Notebook</a> · '
+                   '<a href="west/">Eight Miles West</a>')
+
 FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>{_FOOT_VIEWS_LINE}
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
 # Spanish-locale footer — links only to what exists in Spanish, so a Spanish-only

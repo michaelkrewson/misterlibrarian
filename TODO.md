@@ -15,9 +15,14 @@ Eight Miles West (`west/`). Check items off as we ship them.
       `build_search_page()` in `build.py`; verified with Playwright (desktop + mobile
       screenshots, a real form GET-submit from `ask.html` landing on 98 live "jehovah"
       results, zero console errors).
-- [ ] **Footer cross-links to the other five blogs.** `finance/index.html`'s footer links out
-      to all five siblings; `bible.html`'s footer only links back up to the hub
-      (`mistertranslation.com`), not sideways to Ledger/Notebook/Regimen/Abroad/West.
+- [x] **Footer cross-links to the other five blogs.** Shipped 2026-09-19. Every English page's
+      footer now carries a line linking The Librarian's Ledger / The Librarian Abroad / The
+      Librarian's Regimen / The Librarian's Notebook / Eight Miles West, same names/order the
+      hub (`index.html`) already uses for their cards. Deliberately left the Spanish footer
+      (`ES_FOOTER`) untouched — its own documented invariant is that a Spanish-only reader is
+      never sent to English-only content, and none of the five siblings has a Spanish edition.
+      Verified on a root page and a `dict/` subdirectory page (which resolves the relative
+      `finance/`-style hrefs against its `<base>` tag) — both correct.
 - [ ] **RSS feed.** `finance/feed.xml`, `notebook/feed.xml`, `health/feed.xml` (+ a Spanish
       variant), `west/feed.xml` all exist. No `feed.xml` for the Bible project. (Needs a look
       at `build.py` to see how the other builders generate theirs.)
