@@ -4,9 +4,17 @@ Found 2026-09-19 by comparing `bible.html`/`ask.html`/`toc.html`/`library.html`/
 against the equivalent pages in Ledger (`finance/`), Notebook, Regimen (`health/`), and
 Eight Miles West (`west/`). Check items off as we ship them.
 
-- [ ] **Site search.** Every other blog has a live header search box on every page
-      (`<form class="headersearch" role="search">`, e.g. `finance/index.html`). The Bible
-      project — the largest of the six by page count — has none anywhere.
+- [x] **Site search.** Shipped 2026-09-19. A header search box (`.headersearch`, desktop
+      `.topnav` + mobile `.mobmenu-panel`) now sits on every Bible-project page, submitting to
+      a new `search.html` that live-filters a build-time `search-index.json` (2,101 items:
+      353 chapters, 1,257 dictionary terms, 472 encyclopedia entries, 7 Dear Mr. Librarian
+      posts, 12 core pages). Scoped to titles+summaries, same as the sibling blogs' own header
+      search — full verse text is what the Concordance already covers. `search.html` is
+      noindex'd (results page, no static content of its own). English only for now — the
+      Spanish header doesn't carry a search box yet. Built by `build_search_index()` /
+      `build_search_page()` in `build.py`; verified with Playwright (desktop + mobile
+      screenshots, a real form GET-submit from `ask.html` landing on 98 live "jehovah"
+      results, zero console errors).
 - [ ] **Footer cross-links to the other five blogs.** `finance/index.html`'s footer links out
       to all five siblings; `bible.html`'s footer only links back up to the hub
       (`mistertranslation.com`), not sideways to Ledger/Notebook/Regimen/Abroad/West.

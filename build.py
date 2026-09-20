@@ -942,6 +942,10 @@ def header(active="", lang="en"):
       <div class="mobmenu-sep"></div>
       <a href="contact.html">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
+      <form class="headersearch" action="search.html" method="get" role="search">
+        <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
+      </form>
+      <div class="mobmenu-sep"></div>
       <a href="{HOME_URL}" class="cur">English</a>
       <a href="es.html">Español</a>
       <div class="mobmenu-sep"></div>
@@ -955,6 +959,9 @@ def header(active="", lang="en"):
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
     <a href="about.html"{cls('about')}>About</a>
+    <form class="headersearch" action="search.html" method="get" role="search">
+      <input type="search" name="q" id="headerSearch" placeholder="Search…" aria-label="Search the site"/>
+    </form>
     {share_item}
   </nav>
 </header>"""
@@ -1211,7 +1218,7 @@ def _meta_desc(book, num, teaser, src, lang="en", label=None):
 # Per-entry reference pages that carry `noindex,follow` (see page()). The landing
 # pages (dictionary.html / encyclopedia.html / atlas.html and their Spanish twins)
 # are root files and stay indexable; routes/ (one page, ~330 words) is left alone.
-NOINDEX_PREFIXES = ("dict/", "ency/", "atlas/")
+NOINDEX_PREFIXES = ("dict/", "ency/", "atlas/", "search.html")
 
 
 def page(title, body, active="", desc="", url="", image="", lang="en", base="", og_type=None):
@@ -2217,6 +2224,173 @@ def build_encyclopedia_entry_pages():
         open(os.path.join(outdir, f"{e['slug']}.html"), "w", encoding="utf-8").write(out)
         n += 1
     return n
+
+
+# Search-index source for the 7 hand-authored "Dear Mr. Librarian" posts. There's no shared
+# data list backing build_ask_index()'s hardcoded HTML (see that function) -- kept in sync by
+# hand, same title/url/blurb as the cards there.
+ASK_ENTRIES = [
+    ("Are we living in the Great Tribulation right now?", "ask-great-tribulation.html",
+     "Matthew 24's actual list of signs, four ways Christians have read when it applies, and "
+     "Jesus's own repeated warnings against reading your own moment as the decisive one."),
+    ("Was the Word “God,” or “a god”?", "ask-jesus-god.html",
+     "John 1:1 and the deity of Christ — the Greek of the missing article, “firstborn of all "
+     "creation,” the Angel of Jehovah, and the whole argument laid out on both sides."),
+    ("Why does this translation say “Jehovah”?", "ask-jehovah.html",
+     "The name of God — the four letters behind “the LORD,” why almost every Bible hides "
+     "it, and the choice between “the LORD,” “Yahweh,” and “Jehovah.”"),
+    ("Why isn't the Book of Enoch in this translation?", "ask-enoch.html",
+     "The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls."),
+    ("How long were the days of creation?", "ask-creation-days.html",
+     "The elastic Hebrew word yom, the sunless first days and the open seventh, and the ordinary-day, "
+     "day-age, and literary-framework readings — with their pedigrees, no vote cast."),
+    ("Did Isaac Newton write about the Bible?", "ask-newton.html",
+     "The scientist wrote more on Scripture than on physics — his Daniel & Revelation, his textual "
+     "criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled honestly."),
+    ("Could anyone alive today be descended from Cain?", "ask-cain-seth.html",
+     "Cain's line simply stops in Genesis 4; Seth's runs to Noah; and Genesis 9:19 says the whole earth "
+     "was peopled from Noah's sons. What that adds up to — and the two questions it depends on."),
+]
+
+# Core reference/hub pages -- small and hand-curated on purpose (there are only a dozen or so,
+# vs. thousands of chapters/dictionary/encyclopedia entries, so a data-driven pass isn't worth
+# the risk of a wrong URL). Added to the search index alongside the three big auto-derived
+# categories below.
+STATIC_PAGES = [
+    ("Table of Contents", "toc.html",
+     "Every book of the Bible and how far the translation has reached in each."),
+    ("Library", "library.html",
+     "The dictionary, encyclopedia, atlas, concordance, and cross-references built alongside the translation."),
+    ("Chronology", "chronology.html",
+     "A timeline of the events the translation has reached so far."),
+    ("About the project", "about.html",
+     "The method, the seven-version shelf, and what “essentially literal, modern register” means here."),
+    ("Dear Mr. Librarian", "ask.html",
+     "Reader questions about the translation, answered one at a time."),
+    ("Ask Mr. Librarian a question", "contact.html",
+     "Send in a question, a correction, or a chapter request."),
+    ("Concordance", "concordance.html",
+     "Every significant English word in the translation so far, with every verse it appears in."),
+    ("Dictionary", "dictionary.html",
+     "The original-language words this translation has met so far, Hebrew and Greek."),
+    ("Encyclopedia", "encyclopedia.html",
+     "Every place, person, and thing the translation has named so far."),
+    ("Atlas", "atlas.html",
+     "Every place named in the translation so far, mapped."),
+    ("The Old Testament", "old-testament.html",
+     "The Hebrew Scriptures: the Tanakh, the Masoretic text, and the older witnesses."),
+    ("The New Testament", "new-testament.html",
+     "Crossing from Hebrew into Greek: the critical text and manuscript apparatus behind the translation."),
+]
+
+
+def _search_teaser(text, limit=170):
+    """Same truncate-at-a-word-boundary idiom as _dict_index_row/_ency_index_row, factored out
+    here since the search index is the third caller."""
+    t = _plain(text)
+    if len(t) > limit:
+        t = t[:limit - 3].rsplit(" ", 1)[0].rstrip(",;:—") + "…"
+    return t
+
+
+def build_search_index():
+    """Site search index: title + short blurb + URL for every chapter, dictionary term,
+    encyclopedia entry, Dear Mr. Librarian post, and core reference page -- fetched once by
+    search.html and filtered entirely client-side. Same scope as the sibling blogs' own header
+    search (finance/notebook/health/west): titles and summaries, not full body text -- the
+    concordance (every word in every verse) already covers true full-text lookup.
+
+    English only for now, matching the header search box itself (see header()) -- the
+    Spanish-locale header doesn't carry one yet, so there's nowhere on the Spanish side that
+    would point at this file."""
+    items = []
+    for _slug, book, num, teaser in CHAPTERS:
+        items.append({"t": f"{book} {num}", "u": chapter_filename(book, num),
+                       "b": _search_teaser(teaser), "c": "Chapter"})
+    for slug, term, _orig, _translit, gloss, _ref in DICTIONARY:
+        items.append({"t": term, "u": f"dict/{slug}.html",
+                       "b": _search_teaser(gloss), "c": "Dictionary"})
+    for e in ENCYCLOPEDIA:
+        items.append({"t": e["name"], "u": f"ency/{e['slug']}.html",
+                       "b": _search_teaser(e["desc"]), "c": "Encyclopedia"})
+    for title, url, blurb in ASK_ENTRIES:
+        items.append({"t": title, "u": url, "b": blurb, "c": "Dear Mr. Librarian"})
+    for title, url, blurb in STATIC_PAGES:
+        items.append({"t": title, "u": url, "b": blurb, "c": "Page"})
+    with open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, separators=(",", ":"))
+    return len(items)
+
+
+def build_search_page():
+    """search.html -- the landing page for the header search box (see header()). All rendering
+    happens client-side against search-index.json (fetched once, cached by the browser): reads
+    ?q= from the URL for a box submitted elsewhere on the site, and re-filters live as the
+    reader types in its own box, matching every query word (AND, not phrase) against each
+    item's title+blurb. noindex'd (see NOINDEX_PREFIXES below) -- a results page has no content
+    of its own until JS runs, so there's nothing here worth Google indexing separately from the
+    pages it points at."""
+    body = """<h1 class="pagetitle">🔎 Search</h1>
+<p class="lede">Across every chapter, dictionary term, encyclopedia entry, and Dear Mr. Librarian
+post published so far — titles and summaries, not the full verse text (for that, the
+<a href="concordance.html">Concordance</a> indexes every word in every verse).</p>
+<div class="panel searchbox-panel">
+  <input type="search" id="pageSearch" class="pagesearch-input"
+    placeholder="Search chapters, dictionary, encyclopedia…" aria-label="Search the site"/>
+</div>
+<div id="searchStatus" class="search-status"></div>
+<div id="searchResults" class="search-results"></div>
+<script>
+(function(){
+  var input = document.getElementById('pageSearch');
+  var status = document.getElementById('searchStatus');
+  var results = document.getElementById('searchResults');
+  var params = new URLSearchParams(location.search);
+  var initial = params.get('q') || '';
+  input.value = initial;
+  var items = null;
+  fetch('search-index.json').then(function(r){ return r.json(); }).then(function(data){
+    items = data;
+    render(initial);
+  }).catch(function(){
+    status.textContent = 'Search index failed to load.';
+  });
+
+  function escapeHtml(s){
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function render(query){
+    if (!items) return;
+    query = (query || '').trim().toLowerCase();
+    if (!query){
+      status.textContent = '';
+      results.innerHTML = '';
+      return;
+    }
+    var words = query.split(/\\s+/);
+    var matched = items.filter(function(it){
+      var hay = (it.t + ' ' + it.b).toLowerCase();
+      return words.every(function(w){ return hay.indexOf(w) !== -1; });
+    }).slice(0, 100);
+    status.textContent = matched.length
+      ? ('Showing ' + matched.length + (matched.length === 100 ? '+' : '') + ' result' + (matched.length === 1 ? '' : 's'))
+      : 'No results.';
+    results.innerHTML = matched.map(function(it){
+      return '<a class="sr-item" href="' + it.u + '">' +
+        '<span class="sr-cat">' + escapeHtml(it.c) + '</span>' +
+        '<span class="sr-t">' + escapeHtml(it.t) + '</span>' +
+        '<span class="sr-b">' + escapeHtml(it.b) + '</span></a>';
+    }).join('');
+  }
+
+  input.addEventListener('input', function(){ render(input.value); });
+})();
+</script>"""
+    out = page(f"Search — {SITE_NAME}", body, active="", url="search.html",
+               desc="Search across every chapter, dictionary term, encyclopedia entry, and "
+                    "Dear Mr. Librarian post published so far.", og_type="website")
+    open(os.path.join(OUT, "search.html"), "w", encoding="utf-8").write(out)
 
 
 def build_dictionary_entry_pages():
@@ -7077,6 +7251,8 @@ def main():
     build_atlas_entry_pages()
     build_route_pages()
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
+    n_search = build_search_index()
+    build_search_page()
     n_sitemap = build_sitemap()
     check_canonicals()
     check_built_descriptions()
@@ -7084,7 +7260,8 @@ def main():
     report_card_budget()
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp/{n_things}c, "
-          f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), sitemap {n_sitemap} urls from {args.source}")
+          f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), search index {n_search} items, "
+          f"sitemap {n_sitemap} urls from {args.source}")
 
 
 if __name__ == "__main__":

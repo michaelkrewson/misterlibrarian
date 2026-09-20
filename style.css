@@ -49,6 +49,13 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;colo
   border:1px solid transparent}
 .topnav a:hover{color:var(--text);border-color:var(--border)}
 .topnav a.on{color:var(--gold);border-color:rgba(232,201,104,0.35);background:rgba(232,201,104,0.08)}
+.headersearch{margin:0;display:inline-flex}
+.headersearch input[type=search]{width:118px;font:inherit;font-size:12px;color:var(--text);
+  background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:6px 12px;
+  transition:width .18s ease,border-color .18s ease}
+.headersearch input[type=search]::placeholder{color:var(--dim)}
+.headersearch input[type=search]::-webkit-search-cancel-button{filter:invert(0.6)}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:var(--gold)}
 
 /* ── shared blocks ── */
 h1.pagetitle{font-size:24px;font-weight:800;letter-spacing:-0.3px;margin:6px 0 10px;color:#fff}
@@ -227,6 +234,9 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
   .mobmenu-panel a.cur::after{content:" ✓";font-size:11px;opacity:.85}
   .mobmenu-sep{height:1px;background:var(--border);margin:6px 8px}
   .mobmenu-panel .share-widget{padding:6px 14px}
+  .mobmenu-panel .headersearch{padding:0 8px}
+  .mobmenu-panel .headersearch input[type=search]{width:100%}
+  .mobmenu-panel .headersearch input[type=search]:focus{width:100%}
 }
 /* Share rides as the last item in .topnav itself (see header()) -- sized to
    match .topnav a so it reads as a native nav item, not a separate floating
@@ -417,6 +427,21 @@ body.hide-heb .xrefs{margin-top:5px}
 .atlas-items{display:flex;flex-wrap:wrap;gap:6px 8px;padding:2px 0}
 .atlas-item{font-size:12.5px;padding:5px 10px;border-radius:14px;background:var(--bg2);
   border:1px solid var(--border);text-decoration:none;color:var(--text)}
+
+/* ── search.html ── */
+.searchbox-panel{padding:14px 16px}
+.pagesearch-input{width:100%;font:inherit;font-size:15px;color:var(--text);background:var(--bg2);
+  border:1px solid var(--border);border-radius:10px;padding:11px 14px}
+.pagesearch-input:focus{outline:none;border-color:var(--gold)}
+.search-status{font-size:12px;color:var(--muted);margin:14px 2px 8px}
+.search-results{display:flex;flex-direction:column;gap:1px}
+.sr-item{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:12px 14px;
+  border-radius:10px;text-decoration:none;color:var(--text);border:1px solid transparent}
+.sr-item:hover{background:var(--bg1);border-color:var(--border)}
+.sr-cat{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--gold);flex:0 0 auto}
+.sr-t{font-weight:700;color:#fff;flex:0 0 auto}
+.sr-b{font-size:12.5px;color:var(--muted);line-height:1.5;flex:1 1 100%}
 .atlas-item:hover{background:var(--bg1);border-color:var(--dim)}
 .ehead{font-weight:800;color:#fff;font-size:14.5px;margin-bottom:6px}
 .eentry p{margin:0 0 8px;font-size:12.8px;line-height:1.72;color:var(--muted)}
