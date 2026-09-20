@@ -266,7 +266,7 @@ def _chrome(active=""):
               '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
               'aria-label="Search past entries"/></form>')
     return ('<header class="askhead">'
-            '<a class="brand" href="index.html">%s<span class="wm">Dear Mr. <span class="em">Librarian</span></span></a>'
+            '<a class="brand" href="index.html">%s<span class="wm">Dear <span class="em">Mr.</span> <span class="em">Librarian</span></span></a>'
             '%s'
             '<nav class="nav">'
             '<a href="index.html"%s>Home</a>'
