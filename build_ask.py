@@ -147,7 +147,11 @@ def load_entries(include_drafts=False):
         draft = meta.get("draft", "").strip().lower() in ("true", "yes", "1")
         if draft and not include_drafts:
             continue
+        # Order matters: _add_sources scans for BARE chapter hrefs (the shape
+        # authors actually type), so it must run before _fix_chapter_links
+        # rewrites them to `../...` -- reversed, the scan would find nothing.
         body = _add_sources(body)
+        body = _fix_chapter_links(body)
         entries.append({
             "slug": slug,
             "file": slug + ".html",
@@ -164,6 +168,20 @@ def load_entries(include_drafts=False):
 
 
 _CHAPTER_LINK_RE = re.compile(r'href="([a-z0-9]+(?:-[a-z0-9]+)*-\d+)\.html(?:#[^"]*)?"')
+
+# A post body written like a chapter page's own prose links a chapter as
+# `href="matthew-24.html#v24-3"` -- correct from a page at the repo root, but
+# every /ask/ entry is one level DOWN from there, so left as-is it 404s at
+# /ask/matthew-24.html. `_add_sources` already knows to prefix its OWN
+# generated "Read in the text" list with `../`; this does the same for the
+# in-body citations authors actually hand-type, so no post has to remember to
+# type `../` itself (caught 2026-09-20: all 7 shipped posts had this live).
+_BARE_CHAPTER_HREF_RE = re.compile(
+    r'href="([a-z0-9]+(?:-[a-z0-9]+)*-\d+\.html(?:#[^"]*)?)"')
+
+
+def _fix_chapter_links(body):
+    return _BARE_CHAPTER_HREF_RE.sub(lambda m: 'href="../%s"' % m.group(1), body)
 
 
 def _add_sources(body):

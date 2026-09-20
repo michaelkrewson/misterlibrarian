@@ -87,6 +87,16 @@ a.tg:hover{border-color:var(--gold);color:var(--gold)}
 .entry ol.sources{max-width:720px;margin:0 auto;font-size:13px;line-height:1.6;
   color:var(--muted);padding-left:24px}
 .entry ol.sources li{margin:0 0 8px}
+/* External citations (jw.org, press coverage, published studies) -- a SEPARATE
+   list from the auto-generated internal .sources one (build_ask.py's
+   _add_sources looks for the literal string `class="sources"` to decide
+   whether an entry already has one; naming this differently keeps both
+   lists independent so the Bible-chapter auto-list still gets generated). */
+.entry ol.extsources{max-width:720px;margin:0 auto;font-size:13px;line-height:1.6;
+  color:var(--muted);padding-left:24px}
+.entry ol.extsources li{margin:0 0 8px}
+.entry sup a{color:var(--gold);text-decoration:none;font-size:11px}
+.entry sup a:hover{text-decoration:underline}
 
 /* ── the writing list / tag pages ── */
 .writing{margin:44px 0 0}
