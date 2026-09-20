@@ -5,7 +5,9 @@ Single source of truth: mstr-trader's dashboard/mister_translation.html
 (each chapter lives there as a <div class="chapter-panel" id="chapter-genN">
 block). This script extracts every chapter panel and regenerates the public
 site: one page per chapter with prev/next navigation, a Table of Contents
-with live progress, the home page, and the Dear Mr. Librarian posts.
+with live progress, and the home page. Dear Mr. Librarian is a separate blog,
+build_ask.py, at /ask/ -- this file only redirects its old URLs (see
+ASK_REDIRECTS).
 
 Usage:
     python3 build.py [--source /path/to/mister_translation.html]
@@ -941,10 +943,10 @@ def header(active="", lang="en"):
       <a href="toc.html"{cls('toc')}>Table of Contents</a>
       <a href="library.html"{cls('library')}>📚 Library</a>
       <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
-      <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
+      <a href="ask/"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
       <a href="about.html"{cls('about')}>About</a>
       <div class="mobmenu-sep"></div>
-      <a href="ask.html#ask-form">✉️ Ask a Question</a>
+      <a href="ask/ask.html">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
       <form class="headersearch" action="search.html" method="get" role="search">
         <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
@@ -961,7 +963,7 @@ def header(active="", lang="en"):
     <a href="toc.html"{cls('toc')}>Table of Contents</a>
     <a href="library.html"{cls('library')}>📚 Library</a>
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
-    <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
+    <a href="ask/"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
     <a href="about.html"{cls('about')}>About</a>
     {share_item}
   </nav>
@@ -992,7 +994,7 @@ FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask.html#ask-form">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
   <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -2244,32 +2246,6 @@ def build_encyclopedia_entry_pages():
     return n
 
 
-# Search-index source for the 7 hand-authored "Dear Mr. Librarian" posts. There's no shared
-# data list backing build_ask_index()'s hardcoded HTML (see that function) -- kept in sync by
-# hand, same title/url/blurb as the cards there.
-ASK_ENTRIES = [
-    ("Are we living in the Great Tribulation right now?", "ask-great-tribulation.html",
-     "Matthew 24's actual list of signs, four ways Christians have read when it applies, and "
-     "Jesus's own repeated warnings against reading your own moment as the decisive one."),
-    ("Was the Word “God,” or “a god”?", "ask-jesus-god.html",
-     "John 1:1 and the deity of Christ — the Greek of the missing article, “firstborn of all "
-     "creation,” the Angel of Jehovah, and the whole argument laid out on both sides."),
-    ("Why does this translation say “Jehovah”?", "ask-jehovah.html",
-     "The name of God — the four letters behind “the LORD,” why almost every Bible hides "
-     "it, and the choice between “the LORD,” “Yahweh,” and “Jehovah.”"),
-    ("Why isn't the Book of Enoch in this translation?", "ask-enoch.html",
-     "The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls."),
-    ("How long were the days of creation?", "ask-creation-days.html",
-     "The elastic Hebrew word yom, the sunless first days and the open seventh, and the ordinary-day, "
-     "day-age, and literary-framework readings — with their pedigrees, no vote cast."),
-    ("Did Isaac Newton write about the Bible?", "ask-newton.html",
-     "The scientist wrote more on Scripture than on physics — his Daniel & Revelation, his textual "
-     "criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled honestly."),
-    ("Could anyone alive today be descended from Cain?", "ask-cain-seth.html",
-     "Cain's line simply stops in Genesis 4; Seth's runs to Noah; and Genesis 9:19 says the whole earth "
-     "was peopled from Noah's sons. What that adds up to — and the two questions it depends on."),
-]
-
 # Core reference/hub pages -- small and hand-curated on purpose (there are only a dozen or so,
 # vs. thousands of chapters/dictionary/encyclopedia entries, so a data-driven pass isn't worth
 # the risk of a wrong URL). Added to the search index alongside the three big auto-derived
@@ -2283,8 +2259,9 @@ STATIC_PAGES = [
      "A timeline of the events the translation has reached so far."),
     ("About the project", "about.html",
      "The method, the seven-version shelf, and what “essentially literal, modern register” means here."),
-    ("Dear Mr. Librarian", "ask.html",
-     "Ask a question about the translation, or browse what's already been answered."),
+    ("Dear Mr. Librarian", "ask/",
+     "Ask a question about the translation, or browse what's already been answered — its own "
+     "page now, linked from here."),
     ("Concordance", "concordance.html",
      "Every significant English word in the translation so far, with every verse it appears in."),
     ("Dictionary", "dictionary.html",
@@ -2311,7 +2288,8 @@ def _search_teaser(text, limit=170):
 
 def build_search_index():
     """Site search index: title + short blurb + URL for every chapter, dictionary term,
-    encyclopedia entry, Dear Mr. Librarian post, and core reference page -- fetched once by
+    encyclopedia entry, and core reference page (incl. a pointer to Dear Mr. Librarian,
+    now its own blog at /ask/) -- fetched once by
     search.html and filtered entirely client-side. Same scope as the sibling blogs' own header
     search (finance/notebook/health/west): titles and summaries, not full body text -- the
     concordance (every word in every verse) already covers true full-text lookup.
@@ -2329,8 +2307,6 @@ def build_search_index():
     for e in ENCYCLOPEDIA:
         items.append({"t": e["name"], "u": f"ency/{e['slug']}.html",
                        "b": _search_teaser(e["desc"]), "c": "Encyclopedia"})
-    for title, url, blurb in ASK_ENTRIES:
-        items.append({"t": title, "u": url, "b": blurb, "c": "Dear Mr. Librarian"})
     for title, url, blurb in STATIC_PAGES:
         items.append({"t": title, "u": url, "b": blurb, "c": "Page"})
     with open(os.path.join(OUT, "search-index.json"), "w", encoding="utf-8") as f:
@@ -2419,7 +2395,7 @@ def _git_added_dates(paths):
     month shouldn't resurface as if it were new again. One call per path is
     fine here (unlike build_sitemap()'s single 600-commit-window pass over the
     whole site) because the feed only ever needs this for the newest ~40
-    chapters + the 7 Dear Mr. Librarian posts, not all 350+ chapters.
+    chapters, not all 350+.
 
     Silently omits a path git has no history for (a feed item with no
     resolvable date is dropped by the caller, never backdated to build day)."""
@@ -2447,11 +2423,14 @@ def build_feed_page():
     """feed.xml -- an RSS feed for readers who want to follow the Bible project
     directly, same as the other five blogs (finance/notebook/health/west) already
     do via blogkit.build_feed(). Unlike those, this site isn't a dated-entry blog
-    (see blogkit.py's own module docstring) -- chapters and Dear Mr. Librarian
-    posts have no front-matter date, so the "posts" list is synthesized here from
-    CHAPTERS + ASK_ENTRIES, newest-first by git's real add-date for each page
-    (_git_added_dates), rather than parsed the way blogkit.parse_entry does for
-    finance/travel.
+    (see blogkit.py's own module docstring) -- chapters have no front-matter date,
+    so the "posts" list is synthesized here from CHAPTERS, newest-first by git's
+    real add-date for each page (_git_added_dates), rather than parsed the way
+    blogkit.parse_entry does for finance/travel.
+
+    Chapters only, since 2026-09-19 -- Dear Mr. Librarian moved to its own blog
+    at /ask/ with its own feed.xml (build_ask.py); keeping its posts in BOTH
+    feeds would just be the same content advertised twice.
 
     English only for now, matching search.html and the header search box -- see
     their own notes on why.
@@ -2460,8 +2439,7 @@ def build_feed_page():
     by_slug = {slug: (book, num, teaser) for slug, book, num, teaser in CHAPTERS}
     chapter_files = {slug: chapter_filename(*by_slug[slug][:2])
                       for slug in newest_chapter_slugs if slug in by_slug}
-    ask_files = [url for _title, url, _blurb in ASK_ENTRIES]
-    dates = _git_added_dates(list(chapter_files.values()) + ask_files)
+    dates = _git_added_dates(list(chapter_files.values()))
 
     posts = []
     for slug in newest_chapter_slugs:
@@ -2473,17 +2451,12 @@ def build_feed_page():
             continue
         posts.append({"file": fname, "title": f"{book} {num}", "date": dates[fname],
                        "summary": _search_teaser(teaser, limit=280), "tags": []})
-    for title, url, blurb in ASK_ENTRIES:
-        if url not in dates:
-            continue
-        posts.append({"file": url, "title": title, "date": dates[url],
-                       "summary": blurb, "tags": []})
     posts.sort(key=lambda p: p["date"], reverse=True)
 
     xml = blogkit.build_feed(
         posts, site_name=SITE_NAME, site_url=SITE_URL, base="",
         blurb="A fresh translation of the Bible into modern English, made from the original "
-              "Hebrew and Greek one chapter at a time, plus new Dear Mr. Librarian posts.",
+              "Hebrew and Greek one chapter at a time.",
         limit=30)
     open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8").write(xml)
     return len(posts)
@@ -3969,32 +3942,6 @@ def _note_nudge(title, path, top=False):
             '</div>')
 
 
-def _ask_comment_nudge(title, path):
-    """Two-button 'join the conversation' row closing a Dear Mr. Librarian
-    post — replaces the old single "Ask Mr. Librarian a question" button
-    (2026-09-09, Michael's call). Same mechanism as _note_nudge above
-    (blogkit.x_search_url), but the "comment" phrasing (blogkit.x_comment_url)
-    rather than build.py's own x_note_url: an Ask post argues a position for
-    the reader to push back on, the same shape as a Ledger/Abroad entry,
-    not a reader's own note on a chapter/word/place — see blogkit.py's
-    X-comment-system section header for why the two phrasings exist. Same
-    labels as build_finance.py's _comment_box() on the Ledger's own entries;
-    bare pills (no surrounding box), same as _note_nudge, colored by this
-    site's own gold via the shared .respond-btn-primary/secondary rules in
-    style.css — the "appropriate color difference" from the Ledger's orange.
-
-    `path` is root-relative to SITE_URL (e.g. "ask-jesus-god.html")."""
-    full_url = f"{SITE_URL}/{path}"
-    comment = blogkit.x_comment_url(title, full_url)
-    search = blogkit.x_search_url(full_url)
-    return ('<div class="notebtns">'
-            f'<a class="respond-btn respond-btn-primary" href="{comment}" target="_blank" '
-            'rel="noopener">💬 Comment on X</a>'
-            f'<a class="respond-btn respond-btn-secondary" href="{search}" target="_blank" '
-            'rel="noopener">🔍 See what others said</a>'
-            '</div>')
-
-
 def _insert_before_first_verse(content, html_block):
     """Splice `html_block` in immediately before the first verse (the first
     `<div class="vrs"`) — the exact spot reader-notes.js's removed chap-notes
@@ -4403,7 +4350,7 @@ def build_index(chapters):
   <div class="card-d">The Hebrew Scriptures: what the Tanakh is and how it's arranged, the Masoretic text and its scribal marks, the older witnesses, and why the Name is rendered Jehovah.</div></a>
   <a class="card" href="new-testament.html"><div class="card-t">\U0001F4DC The New Testament</div>
   <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
-  <a class="card" href="ask.html"><div class="card-t">\U0001F4D6 Dear Mr. Librarian</div>
+  <a class="card" href="ask/"><div class="card-t">\U0001F4D6 Dear Mr. Librarian</div>
   <div class="card-d">Ask a question, or browse what's already been answered — was the Word "God" or "a god" (John 1:1 and the deity of Christ), and why the Book of Enoch isn't included.</div></a>
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
@@ -4799,182 +4746,6 @@ roughly 5,800 Greek manuscripts is actually weighed, and what carries over from 
                     "(Vaticanus, Sinaiticus, the early papyri P52/P66/P75/P46), how thousands of manuscripts "
                     "are weighed, and what carries over from the Hebrew.", url="new-testament.html")
     open(os.path.join(OUT, "new-testament.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_enoch():
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">Why isn't the Book of Enoch in this translation?</h1>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>"Why did you not include the Book of Enoch in your translation of the Bible?"</p>
-</div>
-
-<div class="panel prose">
-  <p>This project's source text has been the <strong>Masoretic Hebrew Bible</strong> — the Tanakh, pointed
-  Hebrew and all — since the very first line of the very first chapter. The Book of Enoch was never part of
-  that corpus to begin with. There's no Masoretic Hebrew text of Enoch to translate from; it doesn't survive
-  complete in Hebrew at all. The only complete text is in Ge'ez (classical Ethiopic), with fragments of the
-  original Aramaic and some Greek turning up among the Dead Sea Scrolls and elsewhere. So leaving it out
-  wasn't a judgment call about whether it belongs — it was outside this project's stated method before the
-  question of canon ever came up.</p>
-  <p>The broader canon question is genuinely interesting, though. Enoch isn't in the Jewish canon, the
-  Protestant 66-book list this project's Table of Contents is built around, or even the Catholic
-  Deuterocanon (the extra books the Douay-Rheims tradition includes — Tobit, Judith, Maccabees, and so on —
-  don't include it either). The one tradition where it actually <em>is</em> canonical scripture is the
-  <strong>Ethiopian Orthodox Tewahedo Church</strong>, which is often the detail people miss — it's not that
-  Enoch was universally rejected, it's that one major, ancient Christian tradition kept it and the others
-  didn't.</p>
-  <p>And it wasn't obscure or forgotten in the meantime. Multiple Aramaic copies of it turned up at Qumran
-  among the Dead Sea Scrolls, so it was clearly in real circulation in Second Temple Judaism. And the New
-  Testament itself references it — the epistle of <strong>Jude, verses 14–15</strong>, cites "Enoch, the
-  seventh from Adam" prophesying judgment, language that traces straight back to Enoch's text. So whatever
-  the reasons different communities eventually settled their canons the way they did (and scholars don't
-  agree on one tidy explanation — theories range from its pseudepigraphal authorship claim, to discomfort
-  with its angelology and cosmology, to it simply falling outside the criteria later rabbinic and church
-  authorities used), it was clearly read and taken seriously by people in a position to know it well.</p>
-  <p>Two places in this translation touch Enoch's world directly: the man himself — "Enoch walked with God,
-  and then he was not there, for God took him" — appears in <a href="genesis-5.html#v5-21">Genesis
-  5:21–24</a>, the two-verse mystery from which the later book grew; and the "sons of God" episode the Book
-  of Enoch expands so dramatically opens <a href="genesis-6.html#v6-1">Genesis 6</a>.</p>
-  <p>If this project ever extends to it, that's a real possibility — but it would be a different kind of
-  undertaking than the Hebrew chapters posted so far, since it means working from Ge'ez and the
-  Aramaic/Greek fragments instead of pointed Masoretic Hebrew, and being upfront that it sits outside the
-  Tanakh and the Protestant canon this translation has otherwise followed.</p>
-</div>
-""" + _ask_comment_nudge("Why isn't the Book of Enoch in this translation?", "ask-enoch.html")
-    out = page(f"Dear Mr. Librarian: the Book of Enoch — {SITE_NAME}", body, active="ask",
-               desc="Why the Book of Enoch isn't part of this Bible translation: the Masoretic source "
-                    "text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.",
-               url="ask-enoch.html")
-    open(os.path.join(OUT, "ask-enoch.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_newton():
-    """Dear Mr. Librarian: did Isaac Newton write about the Bible? Presents his three
-    public-domain biblical works, their genuine fit with this site (Daniel/Revelation,
-    the Johannine Comma on the NT apparatus page, the Chronology), and — under the
-    project's neutrality rule — handles his private anti-Trinitarianism factually,
-    distinguishing his sound textual findings from his partisan doctrinal motive. The
-    works themselves are archived (source/newton/ + S3) by tools/archive_newton.py."""
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">Did Isaac Newton write about the Bible?</h1>
-<h2 style="margin-top:2px">The scientist's other library — and where it touches this one</h2>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>"I've heard that Isaac Newton — the gravity and calculus Newton — wrote a huge amount about the Bible and
-  prophecy. Is that true? And is any of it something you'd use in this translation?"</p>
-</div>
-
-<div class="panel prose">
-  <p><strong>It is true, and it is stranger than most people know.</strong> The man who wrote the
-  <em>Principia</em> left behind <em>more</em> words on theology, prophecy, and church history than on physics
-  and mathematics combined — on the order of a million or two, most of it never published in his lifetime and
-  only fully catalogued in the last century (the Yahuda and Portsmouth papers). Newton saw no wall between the
-  two studies. He believed God had written two books — the book of nature and the book of Scripture — and that
-  both were coded, lawful, and open to patient decoding by the same careful mind. He read Hebrew and Greek,
-  collated manuscripts, drew up chronologies, and worked over Daniel and Revelation the way he worked over the
-  orbits of the planets: as a system with hidden rules, to be recovered, not invented.</p>
-  <p>Three of his biblical works were printed after his death and are long out of copyright. Remarkably, all
-  three land on ground this project already stands on — so yes, they are worth knowing, and we keep our own
-  copies so a dead link can never lose them (see <em>"Did we use any of it?"</em> below).</p>
-</div>
-
-<h2>1. His reading of Daniel and Revelation (1733)</h2>
-<div class="panel prose">
-  <p><strong>"Observations upon the Prophecies of Daniel, and the Apocalypse of St. John."</strong> This is
-  Newton's big published book of biblical interpretation, and it takes on exactly the two apocalyptic books this
-  translation has begun — <a href="daniel-1.html">Daniel</a> and <a href="revelation-1.html">Revelation</a>. He
-  read them as a <em>historicist</em>: the beasts, horns, and seals are a symbolic map of real empires and
-  church history, to be matched piece by piece against the record. He treated the imagery almost as a fixed
-  vocabulary — a sun for a king, a beast for a kingdom — and decoded it with the same confidence he brought to
-  a physical law.</p>
-  <p><strong>What to make of it.</strong> Newton is dazzling here, and dated. His historicist scheme — reading
-  the prophecies as a running commentary on the rise of Rome and the medieval church — is one honorable
-  tradition among several (this library lays those traditions out, with their pedigrees, in the Daniel and
-  Revelation notes, and casts no vote). And a famous footnote: in a <em>separate, unpublished</em> paper Newton
-  once calculated that the world could not end before the year <strong>2060</strong> — reckoning from Daniel's
-  1,260 "days" read as years. It is often misreported as a doomsday prediction; his own point was the opposite.
-  He was rebuking the date-setters of his day: not "the end comes in 2060," but "stop announcing it sooner —
-  the arithmetic won't even allow it." A scientist's caution, aimed at zealots.</p>
-</div>
-
-<h2>2. His textual criticism — and the Johannine Comma (1754)</h2>
-<div class="panel prose">
-  <p><strong>"An Historical Account of Two Notable Corruptions of Scripture,"</strong> written as a private
-  letter to John Locke around 1690. This is Newton at his most rigorous, and it touches this site at its most
-  sensitive seam. He argues, verse by verse and manuscript by manuscript, that <em>two</em> famous
-  Trinitarian proof-texts were not original but crept into the Bible later: the <strong>Johannine Comma</strong>
-  (1&nbsp;John&nbsp;5:7, "there are three that bear record in heaven, the Father, the Word, and the Holy
-  Ghost") and the reading of <strong>1&nbsp;Timothy&nbsp;3:16</strong> ("<em>God</em> was manifest in the
-  flesh" versus "<em>he who</em> was manifest").</p>
-  <p><strong>Here is the striking part: on the textual facts, Newton was right,</strong> and modern scholarship
-  — of every doctrinal stripe — agrees with him. The Johannine Comma is absent from every early Greek
-  manuscript and every early translation; it surfaces first in late Latin copies and is now dropped or bracketed
-  by essentially all critical editions. That is precisely why this site's <a href="new-testament.html">New
-  Testament introduction</a> already names the Comma among the handful of famously disputed passages the notes
-  will flag when we reach them. So Newton's <em>method</em> here — weigh the oldest and widest manuscript
-  witnesses, ask which reading best explains how the others arose — is the very method the Greek-Scriptures page
-  describes. When 1&nbsp;John&nbsp;5 is eventually translated, his letter will be the classic witness in the
-  note.</p>
-</div>
-
-<h2>3. His biblical chronology (1728)</h2>
-<div class="panel prose">
-  <p><strong>"The Chronology of Ancient Kingdoms Amended."</strong> Newton spent decades trying to fix the dates
-  of the ancient world — Egypt, Greece, Assyria, Israel — against the biblical record and the astronomy he could
-  reconstruct, arguing the standard chronologies of his day had stretched history too long. It is, in effect,
-  his own version of the project behind this site's <a href="chronology.html">Chronology</a> feature: the same
-  impulse to place the story on a timeline. His specific conclusions have not survived the two centuries of
-  archaeology since; but the instinct — build the timeline from the sources, show your working — is a kindred
-  one.</p>
-</div>
-
-<h2>The one thing to hold at arm's length</h2>
-<div class="panel prose bi-debates">
-  <p>There is a reason to read Newton's biblical work with care, and it would be dishonest to hide it. Privately,
-  Newton was an <strong>anti-Trinitarian</strong> — an "Arian," in the old term: he held that the Father alone is
-  God in the fullest sense and that the Son is subordinate. He kept it secret (it would have cost him his
-  Cambridge post and worse), but it shaped what he studied. His <em>Two Notable Corruptions</em> is not
-  disinterested textual criticism that happened to land on two verses — it is aimed, deliberately, at the two
-  verses most used to prove the Trinity.</p>
-  <p>So the honest distinction is this. Newton's <em>textual finding</em> — that the Johannine Comma is a late
-  insertion — stands on its own evidence and is accepted today by scholars who hold the Trinity as firmly as any
-  (the doctrine never rested on that one disputed verse). But Newton's <em>larger conclusion</em> — that the
-  deity of Christ itself is a corruption — is a doctrinal position, and a contested one, exactly the terrain of
-  this library's hardest question: <a href="ask-jesus-god.html">was the Word "God," or "a god"?</a> On that
-  question the site does what it always does — lays out the readings with their pedigrees and does not cast a
-  vote. Newton belongs in that conversation as a famous, formidable <em>witness</em> for one side; he does not
-  get to be the judge, and neither do we.</p>
-</div>
-
-<h2>Did we use any of it — and where are the books?</h2>
-<div class="panel prose">
-  <p><strong>Where Newton already touches this site:</strong> the <a href="new-testament.html">manuscript
-  apparatus page</a> flags the Johannine Comma he demolished; <a href="daniel-1.html">Daniel</a> and
-  <a href="revelation-1.html">Revelation</a> are the books of his <em>Observations</em>; and the
-  <a href="chronology.html">Chronology</a> is the project he attempted first. As the relevant chapters arrive, a
-  Newton observation will occasionally appear in a note — clearly labelled as a voice from history, never as the
-  translation's own ruling.</p>
-  <p><strong>And we keep the works themselves.</strong> All three are fully public domain (Newton died in 1727),
-  and this library now archives its own durable copies so they can't be lost to a broken link — mirrored the way
-  we mirror the Hebrew and Greek source texts. You can read them at their homes: the
-  <a href="https://www.gutenberg.org/ebooks/16878" rel="noopener">Observations on Daniel &amp; the Apocalypse</a>
-  and the <a href="https://www.gutenberg.org/ebooks/15784" rel="noopener">Chronology of Ancient Kingdoms</a> at
-  Project Gutenberg, and the <a href="https://archive.org/details/83824690-an-historical-account-of-two-notable-corruptions-of-scripture" rel="noopener">Two
-  Notable Corruptions of Scripture</a> at the Internet Archive.</p>
-  <p class="muted" style="font-size:12px">My own takeaway: the most famous scientist in history spent his hidden hours doing something very like what this project does — sourcing, collating, comparing, and
-  refusing to take a text on trust. On his best days (the manuscripts) he was decades ahead of his time; on his
-  boldest (the prophecy timetable, the chronology) he over-read the evidence; and on the deepest question he
-  took a side this library will not. Worth knowing, worth keeping — and worth weighing for yourself.</p>
-</div>"""
-    out = page(f"Did Isaac Newton write about the Bible? — {SITE_NAME}", body, active="ask",
-               desc="Isaac Newton wrote more on the Bible than on physics. His Observations on Daniel and "
-                    "Revelation, his textual criticism of the Johannine Comma (1 John 5:7), and his biblical "
-                    "chronology — how they fit The MisterLibrarian Bible Project, his private anti-Trinitarianism "
-                    "handled honestly, and where to read the public-domain works.", url="ask-newton.html")
-    open(os.path.join(OUT, "ask-newton.html"), "w", encoding="utf-8").write(out)
 
 
 ES_BOOK = {"Genesis": "Génesis", "Exodus": "Éxodo", "Leviticus": "Levítico",
@@ -5667,910 +5438,37 @@ Reina-Valera.</p>
     open(os.path.join(OUT, "es.html"), "w", encoding="utf-8").write(out)
 
 
-def build_ask_index():
-    body = f"""<h1 class="pagetitle">\U0001F4D6 Dear Mr. Librarian</h1>
-<p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
-between versions — answered one at a time, the way everything here is done: sourced, compared, and left for you to
-weigh rather than settled from the desk. Have one of your own? Ask it below — good questions become posts here,
-exactly how this series grows.</p>
-{_question_form_html()}
-<h2>Answered so far</h2>
-<div class="cardgrid">
-  <a class="card" href="ask-great-tribulation.html"><div class="card-t">Are we living in the Great Tribulation right now?</div>
-  <div class="card-d">Matthew 24's actual list of signs, four ways Christians have read when it applies, and
-  Jesus's own repeated warnings against reading your own moment as the decisive one.</div></a>
-  <a class="card" href="ask-jesus-god.html"><div class="card-t">Was the Word "God," or "a god"?</div>
-  <div class="card-d">John 1:1 and the deity of Christ — the Greek of the missing article, "firstborn of all
-  creation," the Angel of Jehovah, and the whole argument laid out on both sides.</div></a>
-  <a class="card" href="ask-jehovah.html"><div class="card-t">Why does this translation say "Jehovah"?</div>
-  <div class="card-d">The name of God — the four letters behind "the LORD," why almost every Bible hides it, and
-  the choice between "the LORD," "Yahweh," and "Jehovah."</div></a>
-  <a class="card" href="ask-enoch.html"><div class="card-t">Why isn't the Book of Enoch in this translation?</div>
-  <div class="card-d">The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea
-  Scrolls.</div></a>
-  <a class="card" href="ask-creation-days.html"><div class="card-t">How long were the days of creation?</div>
-  <div class="card-d">The elastic Hebrew word <em>yom</em>, the sunless first days and the open seventh, and the
-  ordinary-day, day-age, and literary-framework readings — with their pedigrees, no vote cast.</div></a>
-  <a class="card" href="ask-newton.html"><div class="card-t">Did Isaac Newton write about the Bible?</div>
-  <div class="card-d">The scientist wrote more on Scripture than on physics — his Daniel &amp; Revelation, his
-  textual criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled
-  honestly.</div></a>
-  <a class="card" href="ask-cain-seth.html"><div class="card-t">Could anyone alive today be descended from Cain?</div>
-  <div class="card-d">Cain's line simply stops in Genesis 4; Seth's runs to Noah; and Genesis 9:19 says the
-  whole earth was peopled from Noah's sons. What that adds up to — and the two questions it depends
-  on.</div></a>
-</div>"""
-    out = page(f"Dear Mr. Librarian — {SITE_NAME}", body, active="ask",
-               desc="Ask Mr. Librarian a question about the translation, or browse what's already been "
-                    "answered — sourced, compared, and left for you to weigh.", url="ask.html", og_type="website")
-    open(os.path.join(OUT, "ask.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_jesus_god():
-    """The exhaustive, balanced Dear Mr. Librarian post on John 1:1 and the deity of
-    Christ. Presents BOTH the subordinationist/unitarian case and the full-deity case
-    at full strength and declines to hand down a verdict — the project's 'catalogue,
-    source, compare, don't preach' ethos. Edit this function to revise the post."""
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">Was the Word "God," or "a god"?</h1>
-<h2 style="margin-top:2px">John 1:1 and the deity of Christ</h2>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>"John 1:1 is usually translated 'the Word was God,' but the New World Translation reads 'the Word was a
-  god.' Which is right — and behind it, the bigger question: is Jesus God, a lesser divine being, or the
-  highest of created beings? Can you lay out the whole argument, from the Greek and from the rest of the Bible,
-  on both sides?"</p>
-</div>
-
-<div class="panel prose">
-  <p><strong>A word before we begin.</strong> This is the single most-argued sentence in the Bible, and people
-  who love the text, read the Greek, and mean every syllable of it have divided over it for seventeen centuries.
-  A librarian's task here is not to hand down a verdict but to lay the evidence out fully and fairly — the
-  grammar, the immediate context, and the witness of the rest of Scripture — and let you weigh it. So this post
-  builds <em>both</em> cases at full strength and marks honestly where each one pays a price. (Our own
-  translation had to choose a rendering for the verse itself; it takes the <em>qualitative</em> road — "and the
-  Word was <a href="john-1.html#v1">divine</a>" — for reasons the John 1 note explains, but that is a rendering,
-  not a ruling. The argument below is yours to finish.)</p>
-</div>
-
-<h2>The sentence that won't sit still</h2>
-<div class="panel prose">
-  <p>The Greek is <span class="greek">Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος</span>
-  — three clauses. <strong>(1)</strong> "In the beginning was the Word": already existing when time began.
-  <strong>(2)</strong> "and the Word was <em>with</em> God" (<em>pros ton theon</em>): face-to-face, in
-  relationship — so the Word is not simply the same as the one he is "with." <strong>(3)</strong> "and the Word
-  was <em>theos</em>." The whole fight is that third clause — and, standing behind it, whether the one it names
-  is the eternal God, a distinct-but-lesser deity, or the first and highest thing God ever made.</p>
-</div>
-
-<h2>The grammar: the missing article</h2>
-<div class="panel prose">
-  <p><strong>Koine Greek has no word for "a."</strong> It has only the definite article ("the"). So every "a" or
-  "an" in an English New Testament is <em>supplied</em> by the translator — it is never literally in the Greek.
-  "There came <em>a</em> man" (John 1:6) has no "a" in Greek. That happens thousands of times, and it is the root
-  of the whole dispute: in the clause "the Word was <em>theos</em>," <em>theos</em> ("God/god") has no article,
-  and the translator must decide whether to leave it bare, add "the," or add "a."</p>
-  <p><strong>The exact construction here</strong> — an article-less predicate noun standing <em>before</em> the
-  verb — turns up all over the New Testament, and translators render it three different ways depending on the
-  word and the context:</p>
-  <ul class="prose-list">
-    <li><strong>Indefinite ("a ___"):</strong> "this man is <em>a murderer</em>" (Acts 28:4 — the closest
-    structural twin to John 1:1); "he was <em>a murderer</em> from the beginning" (John 8:44); "you are <em>a
-    prophet</em>" (John 4:19). And, tellingly, the very same word: the Maltese "said he was <em>a god</em>" of
-    Paul (Acts 28:6). So <em>theos</em> without the article <em>can</em> be "a god" — that part of the New World
-    Translation's case is not baseless.</li>
-    <li><strong>Qualitative (the <em>nature</em>, no "a," where "a" would be wrong):</strong> "God is
-    <em>spirit</em>" (John 4:24 — same construction, and no one writes "God is a spirit"); "God is <em>love</em>"
-    (1 John 4:8 — never "a love"); the Word became "<em>flesh</em>" (John 1:14).</li>
-    <li><strong>Definite ("the ___"):</strong> a smaller set, where context makes the bare noun definite.</li>
-  </ul>
-  <p>So the construction <em>by itself</em> settles nothing — the same grammar yields "a murderer," "a god,"
-  "God is spirit," and "God is love." What decides is the meaning of the noun and the context. The two studies
-  everyone cites: <strong>Colwell (1933)</strong> observed that a <em>definite</em> predicate noun before the
-  verb usually drops its article — but that only describes nouns already known to be definite; it cannot tell you
-  whether a bare noun is definite, indefinite, or qualitative (reading it the other way round is a logical
-  error). <strong>Harner (1973)</strong> studied this precise construction and concluded it is usually
-  <em>qualitative</em> — and that John 1:1c is <em>neither</em> "the Word was God" <em>nor</em> "a god," but "the
-  Word had the same nature as God." That qualitative reading is the mainstream of Greek scholarship.</p>
-  <p><strong>The honest summary of the grammar:</strong> "a god" is grammatically <em>possible</em> (Acts 28:6
-  proves it) but grammatically <em>disfavored</em> — the construction leans qualitative, toward <em>nature</em>,
-  not toward "one of a class." And there is a semantic snag on top: "prophet," "murderer," "king" are classes you
-  can be one <em>of</em>; but in the Bible's strict monotheism there is no class of "gods" to be one of ("besides
-  me there is no god," Isaiah 44:6), which is what makes "a god" sit awkwardly where "a prophet" does not.</p>
-</div>
-
-<h2>The three readings, and one piece of plain logic</h2>
-<div class="panel prose">
-  <p>Three renderings, three theologies:</p>
-  <ul class="prose-list">
-    <li><strong>"the Word was God"</strong> (definite) — if read as "the Word <em>is</em> the person God," it
-    collapses the Word into the Father. But the clause just said the Word was <em>with</em> God, and later Jesus
-    <em>prays</em> to the Father — you cannot be <em>with</em> someone and <em>be</em> that same someone. So this
-    reading, taken flatly, is ruled out by the verse itself. (It is the ancient error called <em>modalism</em>.)</li>
-    <li><strong>"the Word was a god"</strong> (indefinite) — a distinct, <em>lesser</em> deity. Solves the
-    with/be problem, but at the price the grammar disfavors and monotheism resists.</li>
-    <li><strong>"the Word was divine / fully God"</strong> (qualitative) — the Word shares the one God's nature
-    while remaining a distinct person from the Father. Answers the with/be logic (distinct persons, one nature)
-    and matches the grammar's qualitative lean.</li>
-  </ul>
-  <p>Notice what the reader's own instinct — "you can't be with someone and be someone at the same time" —
-  actually proves: it kills the flat, identifying reading, and leaves <em>either</em> the indefinite <em>or</em>
-  the qualitative standing. Which of those two wins is decided not by the one verse but by what the rest of
-  Scripture says the Word <em>is</em>. So — the two cases.</p>
-</div>
-
-<h2>The case that the Word is distinct, and subordinate</h2>
-<div class="panel prose">
-  <p>This is the reading Arius argued in the fourth century and the Jehovah's Witnesses hold today: the Son is
-  genuinely <em>other</em> than the Father, ranked <em>under</em> him, and — in its stronger form — the first and
-  highest of God's creatures rather than the uncreated God. Its evidence is real and considerable:</p>
-  <p><strong>The distinction is written in.</strong> "The Word was <em>with</em> God." The Son is never the
-  Father, and the Gospel never blurs them.</p>
-  <p><strong>The Son defers to the Father, everywhere.</strong> "The Father is <em>greater</em> than I" (John
-  14:28); "the Son can do nothing of his own accord" (5:19); "I came not to do my own will but the will of him
-  who sent me" (6:38); "that they may know <em>you, the only true God</em>, and Jesus Christ whom you sent"
-  (17:3); "I am ascending to <em>my God</em> and your God" (20:17); of the last day, "nor the Son, but only the
-  Father" (Mark 13:32).</p>
-  <p><strong>He prays.</strong> "Our Father who art in heaven" — spoken by a man on earth, to the Father in
-  heaven. He cannot be praying to himself. Whoever the Word is, he is not the one he addresses.</p>
-  <p><strong>"The firstborn of all creation" (Colossians 1:15),</strong> "the beginning of the creation of God"
-  (Revelation 3:14), and Wisdom, whom "Jehovah created at the beginning of his work" (Proverbs 8:22, in the
-  Greek Old Testament). On this reading the Son <em>had a beginning</em> — and the model is elegant: the Father,
-  the unmade Architect, brings forth one first and supreme being, the Word, and then makes everything else
-  <em>through</em> him, the master builder. "All things came to be through him" is satisfied without making the
-  builder himself unmade.</p>
-  <p><strong>The Angel of Jehovah.</strong> "I send an angel before you... obey his voice... <em>for my name is
-  in him</em>" (Exodus 23:20–21). Throughout the Old Testament a figure called the Angel of Jehovah appears,
-  speaks as God, bears the divine Name, and leads Israel out of Egypt (Exodus 14:19). Read this way, the "God" who
-  <em>appears and speaks</em> in the Old Testament is the Word — Yahweh's spokesman and agent — while the supreme,
-  invisible God is the Father ("no one has ever seen God," John 1:18; "his voice you have never heard, his form
-  you have never seen," 5:37). And the pre-human Word, on this reading, is <em>Michael the archangel</em> — the
-  Lord descends "with the voice of an archangel" (1 Thessalonians 4:16); Michael leads the armies of heaven
-  (Revelation 12:7; Daniel 12:1).</p>
-  <p><strong>And monotheism itself.</strong> There is one God, the Father; to call the Word "God" flatly seems to
-  make two. Better, then, "a god," "a mighty one," "divine" — a real but subordinate glory, under the one God.</p>
-  <p>It is a coherent, textually-anchored system, sincerely held. It is not a straw man, and it was very nearly
-  the church's settled view.</p>
-</div>
-
-<h2>The case that the Word is fully God — one nature, distinct person</h2>
-<div class="panel prose">
-  <p>This reading agrees with every "distinct" and "submits" verse above — and says they describe the Son's
-  <em>person</em> and his <em>mission</em>, not a lesser <em>nature</em>. Its evidence is a second stack the
-  created-Son reading has to account for:</p>
-  <p><strong>He made everything that was made (John 1:3; Colossians 1:16).</strong> "Not one thing came to be that
-  has come to be" apart from him. If he made <em>all</em> created things, he is not among them — he is on the
-  Creator's side of the line. (Tellingly, the New World Translation has to insert "<strong>[other]</strong>" four
-  times in Colossians 1 — "all <em>[other]</em> things" — to keep the Son a creature; that bracketed word is not
-  in the Greek, and it is doing all the work.)</p>
-  <p><strong>"Firstborn" means rank, not birth-order.</strong> God calls David — Jesse's <em>youngest</em> son —
-  "my <em>firstborn</em>, the highest of the kings of the earth" (Psalm 89:27), and glosses it for us: highest.
-  Israel and Ephraim are each God's "firstborn" though neither was first. And Paul explains <em>why</em> he calls
-  the Son firstborn — "<strong>for</strong> in him all things were created... and he is <em>before</em> all
-  things" (Colossians 1:16–17): the title is grounded in his being Creator and sustainer, not the first creature.
-  Greek even had a word for "first-created" (<em>prōtoktistos</em>); Paul pointedly did not use it.</p>
-  <p><strong>God says he created alone.</strong> "I am Jehovah, who made all things, who stretched out the heavens
-  <em>alone</em>, who spread out the earth <em>by myself</em>" (Isaiah 44:24). A general-contractor creature doing
-  the building makes that false — unless the "through whom" belongs to the one Creator's own act.</p>
-  <p><strong>Hebrews 1 all but forbids reading the Son as an angel.</strong> "To which of the <em>angels</em> did
-  God ever say, 'You are my Son'?" (1:5) — none. "Let all God's angels <em>worship him</em>" (1:6). "Of the Son he
-  says, 'Your throne, <em>O God</em>, is forever'" (1:8). And to the Son: "<em>You, Lord, laid the foundation of
-  the earth</em>" (1:10 — a psalm to the eternal, unchanging YHWH, put in the Father's mouth <em>to</em> the Son).</p>
-  <p><strong>The worship line.</strong> Created angels <em>refuse</em> worship: "You must not do that! I am a
-  fellow servant... <em>worship God!</em>" (Revelation 22:8–9). The Son <em>receives</em> it, and angels are
-  commanded to give it (Hebrews 1:6; and Thomas: "<em>my Lord and my God!</em>," John 20:28). Worship is the one
-  thing that cannot be delegated — which is why it divides the Son from every creature.</p>
-  <p><strong>YHWH's own signature, on Jesus.</strong> "I am <em>the first and the last</em>," says the one "who
-  died, and is alive forevermore" (Revelation 1:17–18); "I am the Alpha and the Omega, the first and the last"
-  (22:13, where verse 16 says "I, Jesus"). And "the first and the last" is the title YHWH claims <em>exclusively</em>
-  — "besides me there is no god" (Isaiah 44:6). You cannot be "the first" and have had a beginning. So the same
-  book that some read as "the beginning of creation" (Rev 3:14) also calls Jesus the one before whom nothing was.</p>
-  <p><strong>He simply "was."</strong> John 1:1 says the Word "<em>was</em>" (continuous), never "came to be" —
-  the very verb used for created things through the rest of the Prologue. "Before Abraham was, <em>I am</em>"
-  (8:58). "The glory I had with you <em>before the world existed</em>" (17:5). "In him the whole <em>fullness of
-  deity</em> dwells bodily" (Colossians 2:9); "in the <em>form of God</em>" (Philippians 2:6); "<em>Mighty
-  God</em>" (Isaiah 9:6).</p>
-  <p><strong>And the submission is real — but it is the submission of the <em>incarnate</em> Son.</strong> He
-  "<em>emptied himself</em>, taking the form of a servant" (Philippians 2:6–7). "Greater" in "the Father is greater
-  than I" is <em>meizōn</em> — greater in <em>position</em> — not <em>kreittōn</em>, better in <em>nature</em>. A
-  son who obeys his father is no less human; and "Son" and "begotten" are same-nature words (a father begets a son
-  of his own kind), which is why the old line was "<strong>begotten, not made</strong>": the Son is not fashioned
-  like a tool but is of the Father's own being.</p>
-</div>
-
-<h2>The Angel of Jehovah, and Michael the archangel</h2>
-<div class="panel prose">
-  <p>This deserves its own weighing, because half of it is strong on any reading. That the Old Testament's
-  <em>visible, speaking</em> God is the pre-incarnate Word — Yahweh's face and voice for the invisible Father —
-  is an <em>ancient</em> Christian reading (Justin, Irenaeus, Tertullian), and it has real support: "no one has
-  ever seen God" (John 1:18); the rock in the wilderness "<em>was Christ</em>" (1 Corinthians 10:4); and the
-  earliest manuscripts of Jude 5 read that "<em>Jesus</em>, who saved a people out of the land of Egypt," later
-  judged them. So the reader's instinct that the Word acted, appeared, and led in the Old Testament is not only
-  plausible — it is old and well-grounded.</p>
-  <p>What that instinct <em>produces</em>, though, cuts toward deity: if the "God" at the burning bush is the
-  Word, then the one who said "<strong>I AM WHO I AM</strong>" (Exodus 3:14) is the Word — and when Jesus says
-  "before Abraham was, <em>I am</em>" (John 8:58), he is claiming to be that very "I AM." Identifying the
-  Old Testament God-figure with the Word makes him <em>greater</em>, not smaller.</p>
-  <p>Is that Word a <em>created</em> archangel? "Angel" (<em>malʾakh</em>, <em>angelos</em>) means
-  <strong>messenger — one sent</strong>; it names a job, not a nature. So the Word can be "the Messenger of Jehovah"
-  while being divine. And three things resist the identification of the Son with the creature Michael:
-  the Angel of Jehovah <em>receives worship</em>, speaks as God ("I am the God of Bethel," Genesis 31:13), and
-  bears the Name — where created angels refuse worship; <strong>Hebrews 1</strong> spends a chapter proving the
-  Son is <em>above</em> the angels, worshiped <em>by</em> them, and the Creator; <strong>Colossians 1:16</strong>
-  says the Son created the angelic ranks ("thrones, dominions, rulers, authorities") — so he made Michael; and
-  <strong>Jude 9</strong> has "the archangel Michael" not daring to rebuke Satan on his own authority — "<em>the
-  Lord rebuke you</em>" — while Jesus commands Satan and demons directly ("Be gone, Satan!"). Michael appeals to a
-  higher authority; Jesus <em>is</em> the one appealed to. (And "with the voice of an archangel," 1 Thessalonians
-  4:16, no more makes Jesus the archangel than "with a trumpet blast" makes a general the trumpeter.)</p>
-</div>
-
-<h2>Where the oldest manuscripts weigh in</h2>
-<div class="panel prose">
-  <p>Two nearby verses are decided by the same manuscript evidence set out in the
-  <a href="new-testament.html">New Testament introduction</a>. At <strong>John 1:18</strong> the earliest
-  witnesses — the papyri <strong>P66</strong> and <strong>P75</strong>, with Sinaiticus and Vaticanus — read
-  "the only <em>God</em>," while the later majority (and the King James tradition) read "the only <em>Son</em>."
-  At <strong>John 1:34</strong> the earliest text reads "the <em>Chosen One</em> of God," the majority "the
-  <em>Son</em> of God." The oldest copies, in other words, lean toward the higher Christology at 1:18 — but the
-  manuscripts alone do not end the argument, and honest editions print both.</p>
-</div>
-
-<h2>The three ways the church has read it</h2>
-<div class="panel prose">
-  <p>It helps to name the landscape, without endorsing a corner:</p>
-  <p><strong>Trinitarian</strong> (the Nicene mainstream): one God in three distinct persons — Father, Son,
-  Spirit — the Son "begotten, not made," of one nature with the Father. Reads 1:1 qualitatively or definitely.</p>
-  <p><strong>Unitarian / Arian / Jehovah's Witnesses:</strong> the Father alone is Almighty God; the Son is a
-  distinct, subordinate being — in the Witnesses' form, the first creation and the pre-human Michael, "a god" in
-  a real but lesser sense. Reads 1:1 "a god."</p>
-  <p><strong>Modalist</strong> (Sabellian): Father, Son, and Spirit are one person in three modes. Reads 1:1 as
-  a flat identity — and is the one option the verse's own "with God," plus the Lord's Prayer, most clearly rule
-  out.</p>
-</div>
-
-<h2>Why sincere readers land differently</h2>
-<div class="panel prose">
-  <p>Because each reading pays a real price somewhere, and honest people weigh the prices differently.</p>
-  <p><strong>The full-deity reading</strong> must take "firstborn" as rank rather than birth, lean hard on "the
-  first and the last" being said of Jesus, and confess that three persons in one being is beyond tidy
-  comprehension.</p>
-  <p><strong>The created-Son reading</strong> must insert "[other]" into Colossians, read "firstborn" against
-  Psalm 89's own definition, set aside Isaiah 44:24's "alone," and explain how a creature can be worshiped and
-  wear YHWH's exclusive title.</p>
-  <p><strong>The modalist reading</strong> must explain away the plain "with God" and a Son who prays to a Father
-  not himself.</p>
-  <p>Where you land depends on which verses you treat as the fixed points and which you treat as the ones needing
-  explaining — and that is a genuinely weighty judgment, not a mark of bad faith on any side.</p>
-</div>
-
-<h2>Where this translation stands — and doesn't</h2>
-<div class="panel prose">
-  <p>A translation cannot print three renderings in one line; it has to choose, and then let the note carry the
-  rest. This project renders 1:1 <strong>"and the Word was <a href="john-1.html#v1">divine</a>"</strong> — the
-  qualitative road — because it is the reading the grammar most supports, it keeps the distinction the verse
-  itself insists on ("<em>with</em> God"), and it avoids both the flat "was God" (which an English reader can hear
-  as "the Word is the Father") and "a god" (which the grammar least supports and monotheism resists). That is a
-  <em>translation choice</em>, argued in the open — not a verdict on the deep question of whether the Son is God
-  of very God, a lesser divine being, or the first of creatures. On <em>that</em>, I set the two cases side by side, as above, and hands the scales to you.</p>
-  <p class="muted" style="margin-top:6px">Read the verse in place, with its note: <a href="john-1.html#v1">John
-  1:1</a>. The manuscripts behind 1:18 and 1:34: the <a href="new-testament.html">New Testament introduction</a>.
-  More questions become posts here — <a href="ask.html#ask-form">send yours to the librarian's desk</a>.</p>
-</div>
-
-<div class="panel" style="margin-top:14px">
-  <p class="muted" style="margin:0 0 12px">More from <a href="ask.html">Dear Mr. Librarian</a>:
-  <a href="ask-enoch.html">Why isn't the Book of Enoch in this translation?</a></p>
-</div>
-""" + _ask_comment_nudge("Was the Word God, or a god?", "ask-jesus-god.html")
-    out = page(f"Dear Mr. Librarian: was the Word God, or a god? — {SITE_NAME}", body, active="ask",
-               desc="John 1:1 and the deity of Christ: the Greek grammar of the missing article (Colwell, "
-                    "Harner), the three readings, 'firstborn of all creation,' the Angel of Jehovah and Michael "
-                    "the archangel, the earliest manuscripts, and the whole case on both sides — laid out, not "
-                    "settled.", url="ask-jesus-god.html")
-    open(os.path.join(OUT, "ask-jesus-god.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_jehovah():
-    """Dear Mr. Librarian post explaining the divine-name choice: the Tetragrammaton,
-    why nearly every Bible hides it behind 'the LORD,' Yahweh vs. Jehovah, and why this
-    project restores the traditional English form 'Jehovah.'"""
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">Why does this translation say &ldquo;Jehovah&rdquo;?</h1>
-<h2 style="margin-top:2px">The name of God &mdash; the LORD, Yahweh, or Jehovah</h2>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>&ldquo;Most Bibles say &lsquo;the L<span style="font-variant:small-caps">ord</span>.&rsquo; Why does this one
-  print &lsquo;Jehovah&rsquo;? And isn&rsquo;t the Hebrew name really &lsquo;Yahweh&rsquo;?&rdquo;</p>
-</div>
-
-<div class="panel prose">
-  <p><strong>The short answer.</strong> Behind the English word &ldquo;L<span
-  style="font-variant:small-caps">ord</span>&rdquo; in most Bibles stands an actual name &mdash; the personal name
-  of God, four Hebrew letters, <span class="dheb">יהוה</span> (YHWH), that the text uses some
-  6,800 times. This translation prints it as <strong>Jehovah</strong> rather than hiding it behind the title
-  &ldquo;the L<span style="font-variant:small-caps">ord</span>.&rdquo; Here is the whole story &mdash; the name, why
-  it got covered over, and why &ldquo;Jehovah&rdquo; and not &ldquo;Yahweh.&rdquo;</p>
-</div>
-
-<h2>The name, and the four letters</h2>
-<div class="panel prose">
-  <p>God&rsquo;s personal name in the Hebrew Bible is written with four consonants &mdash; <span
-  class="dheb">יהוה</span>, Y&#8209;H&#8209;W&#8209;H &mdash; which is why it is called the
-  <strong>Tetragrammaton</strong> (&ldquo;four letters&rdquo;). It first appears in this translation at
-  <a href="genesis-2.html">Genesis 2:4</a>, paired with <em>Elohim</em> (&ldquo;God&rdquo;) as <em>YHWH
-  Elohim</em>, and from there it runs through the whole Hebrew Bible about <strong>6,800 times</strong> &mdash; far
-  more often than any title. It is not a generic word for &ldquo;god&rdquo; (that is <em>Elohim</em>); it is a name,
-  the way &ldquo;Abram&rdquo; is a name.</p>
-</div>
-
-<h2>Why almost every Bible hides it</h2>
-<div class="panel prose">
-  <p>Sometime in the centuries before Christ, Jewish reverence for the name hardened into a practice of
-  <strong>not pronouncing it aloud</strong>. When a reader reached YHWH in the text, he said <em>Adonai</em>
-  (&ldquo;my Lord&rdquo;) instead. That spoken substitution became the written one nearly everywhere:</p>
-  <ul>
-    <li>the Greek Old Testament (the <strong>Septuagint</strong>) put <em>Kyrios</em>, &ldquo;Lord&rdquo;;</li>
-    <li>the Latin <strong>Vulgate</strong> put <em>Dominus</em>, &ldquo;Lord&rdquo;;</li>
-    <li>and the <strong>King James Version</strong> set the English pattern still followed almost everywhere: print
-    the name as &ldquo;the L<span style="font-variant:small-caps">ord</span>&rdquo; in small capitals &mdash; so a
-    reader can tell the divine name from the ordinary word &ldquo;Lord&rdquo; (<em>Adonai</em>).</li>
-  </ul>
-  <p>So &ldquo;the L<span style="font-variant:small-caps">ord</span>&rdquo; in your Bible is not a translation of
-  the name &mdash; it is a <em>substitute</em> for it, a title standing where the text actually put a name.
-  Reverent, and nearly universal &mdash; but it does hide the name.</p>
-</div>
-
-<h2>Yahweh, or Jehovah?</h2>
-<div class="panel prose">
-  <p>Here is the twist: because the name went unspoken for so long, <strong>its original pronunciation was
-  lost</strong>. Hebrew was written with consonants only; the vowel marks were added centuries later by scribes
-  called the Masoretes &mdash; and when they came to YHWH, they did not write the name&rsquo;s own vowels (which
-  they were not saying), they wrote the vowels of <em>Adonai</em>, as a reminder to say &ldquo;Adonai.&rdquo; So the
-  written form carries one word&rsquo;s consonants and another word&rsquo;s vowels.</p>
-  <p><strong>&ldquo;Yahweh&rdquo;</strong> is the modern scholarly <em>reconstruction</em> of the original &mdash;
-  pieced together from early Greek writers who did spell it out (Clement of Alexandria wrote <em>Iabe</em>) and from
-  the way the name appears inside other names (<em>Yeho</em>&#8209;shua, Isai&#8209;<em>ah</em>). It is very likely
-  close to right.</p>
-  <p><strong>&ldquo;Jehovah&rdquo;</strong> is what you get if you read those hybrid letters literally &mdash;
-  YHWH&rsquo;s consonants <em>with</em> Adonai&rsquo;s vowels &mdash; a reading that took shape in the Middle Ages
-  and became standard in English from around the sixteenth century. Strictly, it is a form that was never spoken in
-  ancient Israel. But it has been the English name of God for some <strong>four to five hundred years</strong>: it
-  stands in the KJV itself (Exodus 6:3; Psalm 83:18; Isaiah 12:2; 26:4), runs through the whole
-  <span class="tag t-asv">ASV</span> of 1901, fills the hymnbook (&ldquo;Guide Me, O Thou Great Jehovah&rdquo;), and
-  is the <span class="tag t-nwt">NWT</span>&rsquo;s single most defining choice.</p>
-</div>
-
-<h2>Why this translation chose &ldquo;Jehovah&rdquo;</h2>
-<div class="panel prose">
-  <p>Three honest options, then: keep <strong>&ldquo;the L<span
-  style="font-variant:small-caps">ord</span>&rdquo;</strong> (traditional, but it hides the name); restore
-  <strong>&ldquo;Yahweh&rdquo;</strong> (the scholar&rsquo;s best reconstruction); or restore
-  <strong>&ldquo;Jehovah&rdquo;</strong> (the long&#8209;accepted English form of the name). This translation takes
-  the third road &mdash; <strong>Jehovah</strong> &mdash; because it does the main thing worth doing, <em>puts the
-  name back where the text has a name</em>, and does it in the form that has been at home in English for four
-  centuries and that readers already recognize. It is not the scholar&rsquo;s reconstruction, and the notes do not
-  pretend otherwise; it is the traditional English name, chosen on purpose &mdash; the same instinct that keeps
-  &ldquo;Jesus&rdquo; and &ldquo;Isaiah&rdquo; rather than re&#8209;spelling every familiar name from scratch.</p>
-  <p>A small, consistent code follows from it, and you will see all of it in the text:</p>
-  <ul>
-    <li><strong>Jehovah</strong> = the name YHWH (where other Bibles print &ldquo;the L<span
-    style="font-variant:small-caps">ord</span>&rdquo;).</li>
-    <li><strong>Lord Jehovah</strong> = <em>Adonai YHWH</em>, the title &ldquo;Lord&rdquo; joined to the name (as at
-    <a href="genesis-15.html">Genesis 15:2</a>; older Bibles print &ldquo;Lord G<span
-    style="font-variant:small-caps">od</span>&rdquo;).</li>
-    <li><strong>Lord</strong> (ordinary type) = <em>Adonai</em>, the title on its own; <strong>God</strong> =
-    <em>Elohim</em>.</li>
-  </ul>
-</div>
-
-<h2>And the New Testament?</h2>
-<div class="panel prose">
-  <p>The same instinct raises a fair question about Jesus &mdash; whose name in his own tongue was
-  <strong>Yeshua</strong> (&ldquo;Yahweh saves&rdquo;). This project keeps <strong>&ldquo;Jesus,&rdquo;</strong> the
-  form the New Testament&rsquo;s own Greek authors wrote (<em>Iēsous</em>) and the form English has used for
-  centuries &mdash; restoring the divine <em>name</em> in the Old Testament, while leaving the familiar personal
-  names where readers already know them. So: the <em>name of God</em> is restored; the names of people are left as
-  they stand.</p>
-</div>
-
-<div class="panel" style="margin-top:14px">
-  <p class="muted" style="margin:0 0 12px">See it first at <a href="genesis-2.html">Genesis 2:4</a>, or in the
-  <a href="dictionary.html">Dictionary</a> and <a href="encyclopedia.html">Encyclopedia</a>. More from
-  <a href="ask.html">Dear Mr. Librarian</a>: <a href="ask-jesus-god.html">Was the Word God, or a god?</a> &middot;
-  <a href="ask-enoch.html">Why isn&rsquo;t the Book of Enoch here?</a></p>
-</div>
-""" + _ask_comment_nudge("Why does this translation say “Jehovah”?", "ask-jehovah.html")
-    out = page(f"Dear Mr. Librarian: why “Jehovah”? — {SITE_NAME}", body, active="ask",
-               desc="The divine name in this translation: the Tetragrammaton (YHWH), why nearly every Bible hides "
-                    "it behind 'the LORD,' the difference between 'Yahweh' and 'Jehovah,' and why this project "
-                    "restores the traditional English form 'Jehovah.'", url="ask-jehovah.html")
-    open(os.path.join(OUT, "ask-jehovah.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_creation_days():
-    """Dear Mr. Librarian post on the length of the creation 'days' — the word yom,
-    the internal signals of Genesis 1, the ordinary-day / day-age / framework
-    readings with their pedigrees, and the honest 'isn't this just bending the Bible
-    to fit science?' question. Companion to the Genesis 1 v5 note and the yom
-    dictionary entry. Neutrality habit: lay out the views, don't cast a vote."""
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">How long were the days of creation?</h1>
-<h2 style="margin-top:2px">The word <em>yom</em>, the age of the earth, and the &ldquo;day-age&rdquo; reading</h2>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>&ldquo;Does Genesis really mean six 24-hour days? Or can a &lsquo;day&rsquo; of creation stand for a long
-  age &mdash; millions of years &mdash; so the Bible and the age of the earth aren&rsquo;t at war?&rdquo;</p>
-</div>
-
-<div class="panel prose">
-  <p><strong>The short answer.</strong> The Hebrew word for &ldquo;day&rdquo; here is
-  <a href="dictionary.html#yom"><em>yom</em></a>, and it is one of the most elastic words in the Bible: it can
-  mean the daylight hours, an ordinary 24-hour day, <em>or</em> an indefinite stretch of time &mdash; an age.
-  That range is real, and it is the reason serious readers have held very different views of the six
-  &ldquo;days&rdquo; for two thousand years. A &ldquo;day&rdquo; that stands for a long age is a legitimate,
-  ancient reading &mdash; not a modern dodge &mdash; and this translation lays out the options rather than
-  insisting on one. Here is the whole picture.</p>
-</div>
-
-<h2>The word does the heavy lifting</h2>
-<div class="panel prose">
-  <p>Right in <a href="genesis-1.html#v5">Genesis 1:5</a>, <em>yom</em> is used two ways in a single sentence:
-  &ldquo;God named the light <strong>day</strong> (<em>yom</em>), and the darkness he named night&rdquo; &mdash;
-  there <em>yom</em> is the <em>daylight</em>, half of a 24-hour period &mdash; and then &ldquo;there was
-  evening, and there was morning, <strong>day</strong> (<em>yom</em>) one,&rdquo; where it is the whole unit.
-  Elsewhere the same word stretches much further:</p>
-  <ul>
-    <li>&ldquo;in the <strong>day</strong> that Jehovah made earth and heaven&rdquo;
-    (<a href="genesis-2.html#v2-4">Genesis 2:4</a>) &mdash; here one <em>yom</em> gathers up the <em>entire</em>
-    creation week; it plainly means &ldquo;when,&rdquo; not a single sunrise-to-sunset;</li>
-    <li>&ldquo;the <strong>day</strong> of Jehovah&rdquo; &mdash; a whole era of judgment, not an afternoon;</li>
-    <li>&ldquo;a thousand years in your sight are but as a <strong>day</strong>&rdquo; (Psalm 90:4, quoted at
-    2 Peter 3:8) &mdash; the Bible&rsquo;s own reminder that God&rsquo;s days are not measured by our clocks.</li>
-  </ul>
-  <p>So the question &ldquo;how long is a day of creation?&rdquo; cannot be settled just by pointing at the word
-  &ldquo;day.&rdquo; The word itself leaves the door open.</p>
-</div>
-
-<h2>What Genesis 1 itself hints</h2>
-<div class="panel prose">
-  <p>Two features of the chapter have made even careful, conservative readers wonder whether these are ordinary
-  days:</p>
-  <ul>
-    <li><strong>The sun is not made until the fourth day</strong> (<a href="genesis-1.html#v14">1:14&ndash;19</a>).
-    But an ordinary &ldquo;evening and morning&rdquo; day is defined by the sun. So the first three
-    &ldquo;days&rdquo; pass with no sun to clock them &mdash; which suggests the word may be doing something
-    other than marking solar days.</li>
-    <li><strong>The seventh day has no &ldquo;evening and morning.&rdquo;</strong> Every other day is sealed
-    with that refrain; the seventh is left open. The New Testament still speaks of God&rsquo;s
-    <strong>rest</strong> as something a believer can enter <em>now</em> (Hebrews 4:3&ndash;11) &mdash; an
-    open-ended &ldquo;day&rdquo; that has not yet closed.</li>
-  </ul>
-</div>
-
-<h2>The readings, and their pedigrees</h2>
-<div class="panel prose">
-  <p>Three views have been held by serious readers, and a fourth older one. This library sets them out with
-  their credentials and <strong>does not cast a vote</strong>.</p>
-
-  <h3>1. Ordinary days &mdash; six literal 24-hour days</h3>
-  <p>The plain force of &ldquo;evening and morning&rdquo; attached to a number, and the ground the Fourth
-  Commandment gives for the seven-day week: &ldquo;in <em>six days</em> Jehovah made the heavens and the earth
-  &hellip; and rested the seventh&rdquo; (Exodus 20:11). This is the reading of the Reformers and of modern
-  <strong>young-earth creationism</strong>, which on the genealogies&rsquo; arithmetic places creation about
-  six thousand years ago.</p>
-
-  <h3>2. Long ages &mdash; the &ldquo;day-age&rdquo; reading</h3>
-  <p>Each <em>yom</em> is a vast epoch, so the six &ldquo;days&rdquo; can span the millions and billions of
-  years the earth and cosmos actually show. This is emphatically <em>not</em> a modern invention to escape
-  geology: <strong>Augustine</strong> argued in the early fifth century (in <em>The Literal Meaning of
-  Genesis</em>) that the creation &ldquo;days&rdquo; were <em>not</em> ordinary days at all, and
-  <strong>Origen</strong> and the Jewish philosopher <strong>Philo</strong> read them non-literally centuries
-  before that &mdash; more than a thousand years before anyone measured a rock. The day-age reading lets the
-  Genesis account and the age of the universe (about <strong>13.8 billion years</strong>, with the earth about
-  4.5 billion) stand together without forcing either to bend.</p>
-
-  <h3>3. The literary framework</h3>
-  <p>The &ldquo;days&rdquo; are a <em>topical</em>, not a stopwatch, arrangement. Days one to three form the
-  <strong>realms</strong> &mdash; light, then sky and sea, then land &mdash; and days four to six fill those
-  realms with their <strong>rulers</strong>: the luminaries, then birds and fish, then land animals and
-  humankind. On this reading the chapter is a deliberately patterned poem of order, and &ldquo;how many
-  hours?&rdquo; is simply the wrong question to put to it.</p>
-
-  <h3>4. The gap reading (older)</h3>
-  <p>An unstated stretch of time &mdash; long enough for whatever geology shows &mdash; falls <em>between</em>
-  verses 1 and 2, before the six days begin. Widely held a century ago, less so now, but still on the shelf.</p>
-</div>
-
-<h2>&ldquo;But isn&rsquo;t this just bending the Bible to fit science?&rdquo;</h2>
-<div class="panel prose">
-  <p>It is the fair question, and the honest answer is <strong>no &mdash; at least not necessarily</strong>. The
-  non-literal reading of the &ldquo;days&rdquo; is older than modern science by more than a millennium; Augustine
-  reached it with no geology in hand at all, simply from wrestling with the text (the sunless first days, the
-  open seventh, the elastic word). So a reader can hold the day-age or framework view on <em>literary and
-  linguistic</em> grounds and never mention a fossil.</p>
-  <p>Two honesty notes cut both ways. First, the <strong>age of the earth is a separate question</strong> from
-  the length of the &ldquo;days&rdquo;: it is answered, independently and consistently, by radiometric dating,
-  the cosmos&rsquo;s expansion, and the light-travel time of distant stars &mdash; and a 24-hour-day reader can
-  still hold an old earth (the gap or framework views allow it). Second, forcing a tight <em>concordance</em>
-  &mdash; matching each &ldquo;day&rdquo; to a geological era &mdash; can strain the text as much as ignoring
-  the science does. This library&rsquo;s habit is to refuse both kinds of forcing.</p>
-</div>
-
-<h2>Where this translation stands</h2>
-<div class="panel prose">
-  <p>It renders <em>yom</em> plainly <strong>&ldquo;day&rdquo;</strong> &mdash; the true word, carrying its own
-  full range &mdash; and presses no length onto it. It does not tell you the earth is six thousand years old, and
-  it does not tell you the &ldquo;days&rdquo; are geological ages. It tells you what the word can mean, what the
-  chapter hints, and who has read it which way &mdash; and leaves the weighing to you.</p>
-  <p>One thing to know about this site&rsquo;s dates: the traditional years on the
-  <a href="chronology.html">chronology</a> (Ussher&rsquo;s <strong>4004 BC</strong>, &ldquo;AM 1&rdquo;) are given
-  as <em>the text&rsquo;s own genealogical reckoning</em> &mdash; the number the &ldquo;begat&rdquo; lists add up
-  to &mdash; not as a scientific claim about the age of the planet. The long-age reading is fully on the table.
-  The verse-by-verse discussion lives in the note at <a href="genesis-1.html#n5">Genesis 1:5</a>.</p>
-</div>
-
-<div class="askbar askbar-foot"><a href="ask.html">← More from Dear Mr. Librarian</a></div>"""
-    out = page(f"How long were the days of creation? — {SITE_NAME}", body, active="ask",
-               desc="How long were the days of creation? The Hebrew word yom, the age of the earth, and the "
-                    "ordinary-day, day-age, and literary-framework readings — laid out with their pedigrees "
-                    "and left for you to weigh.",
-               url="ask-creation-days.html")
-    open(os.path.join(OUT, "ask-creation-days.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_cain_seth():
-    """Dear Mr. Librarian post: is anyone alive today descended from Cain, or
-    is everyone descended from Seth (via Noah)? Walks Genesis 4:17-22 (Cain's
-    line, which simply stops at Lamech's children), Genesis 5's toledot
-    formula for Seth's line to Noah, and Genesis 9:19's flat claim that "from
-    them the whole earth was peopled." Neutrality habit: the flood-universality
-    and pre-flood-intermarriage questions are laid out, not settled."""
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">Could anyone alive today be descended from Cain?</h1>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>&ldquo;After Cain killed Abel, is there any way to know today whether someone is descended from Cain,
-  or from Seth? Or is that just lost to history?&rdquo;</p>
-</div>
-
-<div class="panel prose">
-  <p><strong>The short answer.</strong> On the text&rsquo;s own terms, this isn&rsquo;t actually the open
-  question it sounds like &mdash; and the answer it gives is the opposite of what you&rsquo;d expect. Cain&rsquo;s
-  line is recorded, and then it simply stops. Seth&rsquo;s line is recorded all the way to Noah. And Genesis
-  says flatly that everyone alive after the flood came through Noah. Put those three together and Genesis is
-  telling you that everyone today would be descended from Seth &mdash; and nobody would be descended from Cain
-  at all.</p>
-</div>
-
-<h2>What Genesis actually records about Cain&rsquo;s line</h2>
-<div class="panel prose">
-  <p>Cain is marked, exiled to the land of Nod, and builds a city (<a href="genesis-4.html#v4-16">Genesis
-  4:16&ndash;17</a>). His descendants are then named in one short, flat list: Enoch (a different man from the
-  Enoch of chapter 5), Irad, Mehujael, Methushael, Lamech &mdash; and Lamech&rsquo;s children, Jabal, Jubal,
-  Tubal-cain, and their sister Naamah (<a href="genesis-4.html#v4-18">4:18&ndash;22</a>). And that&rsquo;s it.
-  The text never mentions them again. No further generation, no marriage into anyone else&rsquo;s line, no
-  connection forward to Noah &mdash; the record just ends, four generations past Cain&rsquo;s own son.</p>
-  <p>Compare that to how chapter 5 opens: &ldquo;This is the record of the generations (<em>toledot</em>) of
-  Adam&rdquo; (<a href="genesis-5.html#v5-1">5:1</a>) &mdash; a formal heading the Cain list never gets &mdash;
-  introducing the line through <a href="ency/seth.html">Seth</a>, born when Adam was 130
-  (<a href="genesis-5.html#v5-3">5:3</a>), that runs generation by generation to Noah. It&rsquo;s the same
-  <em>toledot</em> formula that structures the rest of Genesis. The book itself is marking one branch as the
-  line the story keeps following, and the other as a branch it lets drop.</p>
-</div>
-
-<h2>What the flood does to the question</h2>
-<div class="panel prose">
-  <p>Noah is Seth&rsquo;s descendant &mdash; Seth, Enosh, Kenan, Mahalalel, Jared, Enoch, Methuselah, Lamech
-  (a different Lamech from Cain&rsquo;s), Noah, all named in that same chapter 5 list. And after the flood,
-  Genesis says this about where every living person came from: &ldquo;These three were Noah&rsquo;s sons, and
-  from them the whole earth was peopled&rdquo; (<a href="genesis-9.html#v9-19">Genesis 9:19</a>).</p>
-  <p>Cain&rsquo;s line is never said to have boarded the ark, and the text gives no reason to think it did
-  &mdash; it had already gone silent five chapters earlier. So if you read Genesis 9:19 as covering literally
-  everyone, the conclusion follows on the page: every person alive today, by this text&rsquo;s own account,
-  descends from Seth through Noah, and Cain&rsquo;s branch ended with the flood.</p>
-</div>
-
-<h2>Two honest complications</h2>
-<div class="panel prose">
-  <p>That conclusion leans on two things this project doesn&rsquo;t settle for you.</p>
-  <p><strong>The lines may already have blurred before the flood.</strong> The four strangest verses in
-  Genesis &mdash; the &ldquo;sons of God&rdquo; marrying &ldquo;the daughters of men&rdquo;
-  (<a href="genesis-6.html#n6-1">Genesis 6:1&ndash;4</a>) &mdash; have three serious readings, and one of the
-  oldest alternatives to the &ldquo;divine beings&rdquo; reading is exactly this: the line of Seth
-  intermarrying with the line of Cain. If that&rsquo;s the right reading, the two bloodlines were already
-  mixing well before Noah, and a clean &ldquo;Sethite, not Cainite&rdquo; label stops meaning much even on the
-  text&rsquo;s own terms. This project renders the phrase literally and leaves the identification open, the
-  same way that note does.</p>
-  <p><strong>&ldquo;The whole earth&rdquo; is doing a lot of work.</strong> Whether Genesis 9:19 and the flood
-  narrative around it describe every human being on the planet, or use the same kind of sweeping,
-  everyone&rsquo;s-affected language the Bible uses elsewhere for events that weren&rsquo;t literally universal,
-  is a genuinely disputed question this post doesn&rsquo;t take a side on. The Seth-not-Cain answer above is
-  what the text says <em>if</em> you read that language at full strength &mdash; not a claim independent of how
-  you read it.</p>
-</div>
-
-<h2>So, is it a true statement?</h2>
-<div class="panel prose">
-  <p>It depends which kind of &ldquo;know&rdquo; the question means. In the sense of an actual, documented
-  family tree reaching back six thousand years to a named ancestor &mdash; no one has that, for Cain, Seth, or
-  anyone else that far back. Nobody&rsquo;s paper trail goes anywhere near that deep. So if the question is
-  &ldquo;can you prove your descent,&rdquo; the honest answer is always no, and it was never really about which
-  brother.</p>
-  <p>But in the sense of &ldquo;what does the story itself say happened&rdquo; &mdash; Genesis isn&rsquo;t
-  actually silent. Read at face value, it answers a narrower, sharper question than the one usually asked: not
-  <em>which</em> line you&rsquo;re from, but that there&rsquo;s only one candidate left standing after the flood
-  &mdash; and it isn&rsquo;t Cain&rsquo;s.</p>
-</div>
-""" + _ask_comment_nudge("Could anyone alive today be descended from Cain?", "ask-cain-seth.html")
-    out = page(f"Could anyone alive today be descended from Cain? — {SITE_NAME}", body, active="ask",
-               desc="After Cain killed Abel, is anyone alive today descended from him, or from Seth? "
-                    "Genesis 4's line that simply stops, Genesis 5's formal line to Noah, and Genesis "
-                    "9:19's claim that the whole earth was peopled from Noah's sons.",
-               url="ask-cain-seth.html")
-    open(os.path.join(OUT, "ask-cain-seth.html"), "w", encoding="utf-8").write(out)
-
-
-def build_ask_great_tribulation():
-    """Dear Mr. Librarian post: are we living in the Great Tribulation right now,
-    given the state of the world? Deliberately scoped to text + interpretive
-    history only (Michael's call, 2026-09-19) — no scoring of current headlines
-    against the signs, since that is the one move Matthew 24 itself repeatedly
-    warns against, and it's also the least stable, most contested kind of
-    content a page can carry. Leans hard on notes this chapter already
-    publishes (n24-1's near/far-horizon question, n24-4's "a reader in any
-    century can point at this" observation, n24-32's four "this generation"
-    readings) rather than re-deriving them. Neutrality habit: the four
-    interpretive traditions are named and sourced, not ranked."""
-    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
-<h1 class="pagetitle">Are we living in the Great Tribulation right now?</h1>
-<h2 style="margin-top:2px">What Matthew 24 actually lists as signs, how Christians have read the timing for two
-thousand years, and the one thing Jesus himself keeps saying about trying to answer this</h2>
-
-<div class="qbox">
-  <div class="qlabel">A reader asked</div>
-  <p>&ldquo;With everything going on in the world right now, are we already living in the Great Tribulation Jesus
-  talked about &mdash; or is it still to come? How would we even know?&rdquo;</p>
-</div>
-
-<div class="panel prose">
-  <p><strong>The short answer.</strong> You are not the first to ask this. It is, almost word for word, the
-  question his own disciples asked him directly: &ldquo;Tell us, <strong>when</strong> will these things be? And
-  what is the <strong>sign</strong>?&rdquo; (<a href="matthew-24.html#v24-3">Matthew 24:3</a>). And his very first
-  word back is not an answer &mdash; it is a warning: &ldquo;See that no one leads you astray&rdquo;
-  (<a href="matthew-24.html#v24-4">v4</a>). That sets the shape of everything below. This page lays out what the
-  discourse actually names as signs, the main ways serious readers have understood <em>when</em> they apply, and
-  what Jesus himself says about the project of reading your own moment as the decisive one. It does not tell you
-  the answer is yes, and it does not tell you the answer is no &mdash; the same rule as everywhere else in this
-  library.</p>
-</div>
-
-<h2>One question, or two? The seam the whole chapter turns on</h2>
-<div class="panel prose">
-  <p>The disciples' question already has a fork built into it. In Greek, its second and third parts &mdash;
-  &ldquo;what is the sign of your <em>presence</em>&rdquo; and &ldquo;of the <em>completion of the age</em>&rdquo;
-  &mdash; share a single article, which is a real grammatical hint that <em>they</em> took the temple's fall
-  (which he had just predicted, <a href="matthew-24.html#v24-2">v2</a>) and the end of the age to be one and the
-  same event. Whether Jesus answers on their assumption or corrects it is, in this library's own words,
-  &ldquo;the difficulty the whole chapter inherits&rdquo; (<a href="matthew-24.html#n24-1">note on 24:1&ndash;3</a>).
-  The readings on offer: the whole discourse is about Jerusalem's fall in <strong>AD&nbsp;70</strong>; it is about
-  a still-future end; it moves from one to the other partway through (candidates: <a
-  href="matthew-24.html#v24-15">v15</a>, <a href="matthew-24.html#v24-29">v29</a>, <a
-  href="matthew-24.html#v24-36">v36</a>); or it holds both together on purpose, a near horizon and a far one
-  described in one prophetic sweep &mdash; which is a recognized pattern elsewhere in the prophets, not a
-  translator's invention. This page does not choose between them either; it is the same seam the chapter's own
-  note flags, carried forward.</p>
-</div>
-
-<h2>What the discourse lists as signs &mdash; and its own warning about listing them</h2>
-<div class="panel prose">
-  <p>The first stretch of the answer (<a href="matthew-24.html#v24-4">vv4&ndash;14</a>) is a list almost anyone
-  would recognize: false messiahs, <strong>wars and rumours of wars</strong>, <strong>famines and
-  earthquakes</strong>, persecution, betrayal, false prophets, lawlessness multiplying, love growing cold, and
-  the good news reaching &ldquo;the whole inhabited earth&rdquo; before &ldquo;the end&rdquo; arrives. And this
-  library's own note on that stretch says the load-bearing thing plainly: <strong>&ldquo;Everything in this
-  paragraph is something a reader in any century can point at, which is why it has been pointed at in every
-  century; the passage's own use of it is to forbid the inference&rdquo;</strong>
-  (<a href="matthew-24.html#n24-4">note on 24:4&ndash;14</a>). Twice in this stretch alone the text says
-  <em>not yet</em> &mdash; &ldquo;the end is not yet&rdquo; (v6), &ldquo;the <strong>beginning</strong> of birth
-  pangs&rdquo; (v8) &mdash; labour pain being, on purpose, a pain that is productive and not itself the birth.</p>
-  <p>What follows gets sharper. <strong>&ldquo;The abomination that desolates&rdquo;</strong> standing in a holy
-  place (<a href="matthew-24.html#v24-15">v15</a>) quotes <a href="daniel-11.html#v11-31">Daniel 11:31</a> and
-  <a href="daniel-12.html#v12-11">12:11</a> &mdash; a phrase that had <em>already happened once</em>, in 167 BC,
-  when Antiochus IV set up an altar to Zeus in the temple, which is part of why &ldquo;let the reader
-  understand&rdquo; is inserted right there. Then flight instructions so concrete and short-range (do not go
-  back for a cloak; pray it isn't winter or a Sabbath) that they read as advice for an actual siege, not the end
-  of the world. Then, at <a href="matthew-24.html#v24-21">v21</a>, the phrase this series has already looked at
-  once: <strong><a href="dictionary.html#thlipsis">great tribulation</a></strong>, &ldquo;such as has not
-  happened from the beginning of the world until now, nor ever will&rdquo; &mdash; the same phrase, word for
-  word, as <a href="revelation-7.html#v7-14">Revelation 7:14</a>'s &ldquo;the great tribulation.&rdquo; More false
-  messiahs (<a href="matthew-24.html#v24-23">vv23&ndash;26</a>), with the same instruction as before &mdash;
-  &ldquo;do not believe it&rdquo; &mdash; and a comparison to <strong>lightning</strong> (v27): visible
-  everywhere at once, which is the point; nobody has to be told <em>where</em> it happened. Then the sun
-  darkened, the moon without light, the stars falling (<a href="matthew-24.html#v24-29">v29</a>) &mdash; stock
-  Old Testament language for the fall of cities and empires (Isaiah 13:10, 34:4; Joel 2:10), which by this
-  library's own reading &ldquo;does not by itself require a cosmic end&rdquo; even though &ldquo;it was always
-  used of something enormous&rdquo; (<a href="matthew-24.html#n24-29">note on 24:29&ndash;31</a>) &mdash; and
-  finally the Son of Man gathering &ldquo;his chosen from the four winds&rdquo; (vv30&ndash;31).</p>
-</div>
-
-<h2>The hinge: &ldquo;this generation&rdquo;</h2>
-<div class="panel prose">
-  <p>Whatever else is unresolved, one sentence decides more than any other: <strong>&ldquo;This generation will
-  not pass away until all these things happen&rdquo;</strong> (<a href="matthew-24.html#v24-34">v34</a>). This
-  library calls it &ldquo;the hardest sentence in the chapter&rdquo; and reports four readings without choosing:
-  <strong>(1)</strong> it means his actual contemporaries, and &ldquo;all these things&rdquo; is the temple's
-  fall within about forty years &mdash; which fits the word <em>genea</em> and the chapter's Judean detail, at
-  the cost of reading vv29&ndash;31 as prophetic language for that event rather than something literally cosmic;
-  <strong>(2)</strong> <em>genea</em> means &ldquo;race&rdquo; or &ldquo;kind&rdquo; &mdash; possible, but a
-  strained sense Matthew doesn't use elsewhere; <strong>(3)</strong> it means the generation alive when the
-  final signs actually begin, &ldquo;this&rdquo; pointing forward rather than at the crowd in front of him;
-  <strong>(4)</strong> it is a prediction whose terms were not met as stated, which some readers hold and others
-  regard as impossible for these words to mean (<a href="matthew-24.html#n24-32">note on 24:32&ndash;35</a>). C.
-  S. Lewis called the parallel saying in Mark &ldquo;the most embarrassing verse in the Bible&rdquo; &mdash; and
-  pointed out that the admission of ignorance in the very next verses (see below) sits right beside it, preserved
-  by copyists who could plainly see the tension and left it alone anyway.</p>
-</div>
-
-<h2>Four ways this has been read across church history</h2>
-<div class="panel prose">
-  <p>Zoom out from this one chapter and the same seam runs through the whole history of reading it. None of
-  these is a fringe position; all four have been held by serious, careful readers, and this library sets them
-  out with no vote cast.</p>
-  <h3>1. Preterist &mdash; mostly or entirely fulfilled already</h3>
-  <p>The discourse (or most of it) describes the Jewish-Roman war and Jerusalem's fall in <strong>AD&nbsp;70</strong>
-  &mdash; an actual catastrophe within the lifetime of people Jesus was speaking to, matching &ldquo;this
-  generation&rdquo; read as reading (1) above, and matching the flight instructions' concrete, local character.
-  Cost: vv29&ndash;31's cosmic imagery has to be read figuratively (which the shelf's own OT background supports,
-  see above), and <a href="revelation-7.html#v7-14">Revelation 7:14</a>'s identical phrase becomes a separate
-  vision, not literally the same event.</p>
-  <h3>2. Futurist &mdash; still ahead, a distinct end-times event</h3>
-  <p>The discourse (in whole, or from <a href="matthew-24.html#v24-15">v15</a> or <a
-  href="matthew-24.html#v24-29">v29</a> on) describes a still-future, unprecedented global tribulation
-  immediately before a visible return &mdash; anchored on v21's own claim that nothing before or after will match
-  it, a claim later history arguably tests hard against AD&nbsp;70 alone. Reads &ldquo;this generation&rdquo; as (3)
-  or (4) above, and reads Revelation 7:14 as depicting the very same, still-future event named here. This is the
-  most widely held reading in contemporary evangelical circles, and it's the reading closest to the question this
-  page opened with.</p>
-  <h3>3. Historicist &mdash; unfolding across the whole church age</h3>
-  <p>The tribulation, and apocalyptic language generally, describes a pattern playing out progressively through
-  church history &mdash; a common Reformation-era reading, when Reformers frequently read persecution under Rome
-  and later powers this way. Less commonly held today, but historically significant, and part of why the
-  Reformation-era shelf (Geneva 1599 among the versions here) sometimes carries interpretive freight modern
-  editions don't.</p>
-  <h3>4. Idealist &mdash; a recurring pattern, not one pinpointable event</h3>
-  <p>The passage describes something true of <em>every</em> age &mdash; every generation gets its wars, its false
-  messiahs, its persecutions &mdash; so &ldquo;the great tribulation&rdquo; names a pattern the church is, in some
-  sense, always living inside, rather than a single date on a calendar.</p>
-</div>
-
-<h2>What the text itself says about answering this for yourself</h2>
-<div class="panel prose">
-  <p>This is the part that's easy to skip past, and it shouldn't be. Set beside every sign in the list above is
-  an instruction not to treat it as decisive:</p>
-  <ul>
-    <li>His first sentence, before a single sign is named: <strong>&ldquo;See that no one leads you
-    astray&rdquo;</strong> (<a href="matthew-24.html#v24-4">v4</a>).</li>
-    <li>Twice more, of specific claims to have located it: <strong>&ldquo;do not believe it&rdquo;</strong>
-    (<a href="matthew-24.html#v24-23">vv23, 26</a>) &mdash; and the lightning comparison right after (v27) makes
-    the point explicit: the true thing needs no one to announce where it happened.</li>
-    <li>The flattest statement in the whole discourse: <strong>&ldquo;About that day and hour nobody knows
-    &mdash; not the angels of the heavens, nor the Son &mdash; but the Father only&rdquo;</strong>
-    (<a href="matthew-24.html#v24-36">v36</a>) &mdash; on the best manuscript evidence, including
-    &ldquo;nor the Son,&rdquo; a clause a scribe would have every reason to remove and none to add
-    (<a href="matthew-24.html#n24-36">note on 24:36&ndash;41</a>).</li>
-    <li>The comparison to <strong>Noah</strong> that follows (v37) is aimed at <em>obliviousness</em>, not
-    wickedness &mdash; people &ldquo;eating and drinking, marrying and giving in marriage,&rdquo; ordinary life,
-    with the only fault named being that &ldquo;they did not know.&rdquo; The text's own comparison isn't
-    &ldquo;look how bad things have gotten,&rdquo; it's &ldquo;look how ordinary the day looked right up until
-    it wasn't.&rdquo;</li>
-    <li>And the same answer, given flatly to the same disciples on a different day: <strong>&ldquo;It is not for
-    you to know times or seasons that the Father has set within his own authority&rdquo;</strong>
-    (<a href="acts-1.html#v7">Acts 1:7</a>).</li>
-  </ul>
-</div>
-
-<h2>What history shows about answering it anyway</h2>
-<div class="panel prose">
-  <p>This isn't a hypothetical risk. Confident, dated claims that a particular generation's crisis <em>was</em>
-  the great tribulation, or that the end had arrived within a specific, named window, have recurred across
-  nearly the whole span of church history &mdash; the second-century Montanist movement's expectation of an
-  imminent end; a cluster of apocalyptic movements around the year 1000; the English Civil War's Fifth Monarchy
-  movement, reading current politics as the last days; the Millerite movement's calculation of 1844, remembered
-  today as &ldquo;the Great Disappointment&rdquo; when the date passed; and, in the twentieth century, several
-  named-and-missed dates across more than one modern movement. This is a documented pattern, not a judgment on
-  anyone's sincerity, and it cuts in a specific direction: it is evidence that the impulse this page is
-  describing &mdash; matching a real, frightening moment against the signs and concluding <em>this is it</em>
-  &mdash; has been strong, recurring, and, every time it has attached to a specific date, wrong so far. That
-  doesn't prove the tribulation isn't near; nobody can prove a negative about the future. It is, however, exactly
-  the caution the text itself gives, arriving from an entirely different direction.</p>
-</div>
-
-<h2>So &mdash; are we in it?</h2>
-<div class="panel prose">
-  <p>Here is what the chapter actually hands you, and what it doesn't. It hands you a real pattern &mdash; wars,
-  disasters, false messiahs &mdash; present in literally every era, including the first-century one Jesus was
-  addressing. It hands you a strong historical candidate for at least part of it, an actual catastrophe within a
-  named generation's lifetime, if you read &ldquo;this generation&rdquo; one way; and a still-future, distinct
-  event if you read it another. And it hands you, twice over, in language too plain to soften, an instruction not
-  to treat certainty about the calendar as the goal. What it never hands you is permission to treat a confident
-  <em>yes, now</em> or <em>no, not yet</em> as itself a mark of understanding it correctly. The mark of
-  faithfulness this chapter actually names, in the parables that immediately follow (the faithful and sensible
-  slave, the ten virgins next chapter), is different: <strong>stay awake</strong>, and be doing what you're
-  supposed to be doing &mdash; whether the day turns out to be today or not. That's what the text gives. The
-  weighing of the rest is, as always here, yours.</p>
-</div>
-""" + _ask_comment_nudge("Are we living in the Great Tribulation right now?", "ask-great-tribulation.html")
-    out = page(f"Are we living in the Great Tribulation right now? — {SITE_NAME}", body, active="ask",
-               desc="Matthew 24's actual list of signs, the four ways Christians have read when the Great "
-                    "Tribulation applies, and Jesus's own repeated warnings against reading your own moment "
-                    "as the decisive one — sourced, compared, and left for you to weigh.",
-               url="ask-great-tribulation.html")
-    open(os.path.join(OUT, "ask-great-tribulation.html"), "w", encoding="utf-8").write(out)
-
-
-def _question_form_html():
-    """The 'ask a question' form -- shared by ask.html (folded in 2026-09-19 so the Dear Mr.
-    Librarian nav destination has the live form right there, matching finance/notebook/health's
-    own Ask Mr. Librarian pages, which ARE the form) and contact.html (kept working at its old
-    URL for anyone who already bookmarked/shared it, but no longer linked from the header/
-    footer/mobmenu -- see header()/FOOTER). id="ask-form" so a link elsewhere on the site can
-    jump straight to it (ask.html#ask-form). English only -- the Spanish twin
-    (build_contact_es) keeps its own copy; there's no Spanish Dear Mr. Librarian page to fold
-    it into."""
-    return f"""<div class="panel" id="ask-form">
-  <form action="{FORM_ENDPOINT}" method="POST" class="askform">
-    <input type="hidden" name="_subject" value="Ask Mr. Librarian — a question from the site"/>
-    <input type="hidden" name="_template" value="table"/>
-    <input type="hidden" name="_next" value="{SITE_URL}/thanks.html"/>
-    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
-    <label>Your name <span class="opt">(optional)</span>
-      <input type="text" name="name" placeholder="However you'd like to be credited — or leave blank"/>
-    </label>
-    <label>Your email <span class="opt">(optional — only needed if you'd like a reply)</span>
-      <input type="email" name="email" placeholder="you@example.com"/>
-    </label>
-    <label>Your question <span class="req">(required)</span>
-      <textarea name="question" required rows="7"
-        placeholder="Ask anything — a verse, a word choice, a comparison between versions, what's coming next…"></textarea>
-    </label>
-    <button class="btn" type="submit">Send to the librarian's desk</button>
-    <p class="formnote">Sending shows a quick captcha (keeps the robots out of the library), then brings
-    you back here. Nothing is posted publicly — questions go straight to Mr. Librarian's desk.</p>
-  </form>
-</div>"""
-
-
-def build_contact():
-    body = f"""<h1 class="pagetitle">✉️ Ask Mr. Librarian a question</h1>
-<p class="lede">A question about the project, a translation choice you'd argue with, a chapter request,
-or something you've always wondered about the text — send it in. Good questions become
-<a href="ask-enoch.html">Dear Mr. Librarian</a> posts (anonymously unless you say otherwise), and reader
-questions are exactly how that series grows.</p>
-
-{_question_form_html()}"""
-    out = page(f"Ask a question — {SITE_NAME}", body, active="contact",
-               desc="Send Mr. Librarian a question about the translation, a verse, or the project — "
-                    "good questions become Dear Mr. Librarian posts.", url="contact.html", og_type="website")
-    open(os.path.join(OUT, "contact.html"), "w", encoding="utf-8").write(out)
-
-
-def build_thanks():
-    body = """<h1 class="pagetitle">📬 It's on the librarian's desk</h1>
-<div class="panel prose">
-  <p><strong>Your question is in.</strong> Thank you — reader questions are the lifeblood of the
-  <a href="ask-enoch.html">Dear Mr. Librarian</a> series, and every one gets read. If yours becomes a post,
-  it will appear anonymously unless you asked otherwise; if you left an email, you may get a reply
-  directly.</p>
-  <p>Meanwhile, the shelves are open: the <a href="toc.html">Table of Contents</a> has every chapter
-  published so far.</p>
-</div>"""
-    out = page(f"Question received — {SITE_NAME}", body,
-               desc="Your question is on Mr. Librarian's desk.", url="thanks.html", og_type="website")
-    open(os.path.join(OUT, "thanks.html"), "w", encoding="utf-8").write(out)
+# Dear Mr. Librarian split into its own blog at /ask/ (2026-09-19, build_ask.py) —
+# see ASK_BLOG_TODO.md. Every URL this project used to own for it now redirects
+# there via blogkit.redirect_stub() (meta-refresh + canonical; GitHub Pages can't
+# issue a real 301), so a bookmarked/shared/indexed old link never dead-ends.
+ASK_REDIRECTS = {
+    "ask.html": ("https://mistertranslation.com/ask/", "Dear Mr. Librarian"),
+    "contact.html": ("https://mistertranslation.com/ask/ask.html", "Ask Mr. Librarian a question"),
+    "thanks.html": ("https://mistertranslation.com/ask/thanks.html", "Question received"),
+    "ask-enoch.html": ("https://mistertranslation.com/ask/enoch.html",
+                        "Why isn't the Book of Enoch in this translation?"),
+    "ask-newton.html": ("https://mistertranslation.com/ask/newton.html",
+                         "Did Isaac Newton write about the Bible?"),
+    "ask-jesus-god.html": ("https://mistertranslation.com/ask/jesus-god.html",
+                            "Was the Word “God,” or “a god”?"),
+    "ask-jehovah.html": ("https://mistertranslation.com/ask/jehovah.html",
+                          "Why does this translation say “Jehovah”?"),
+    "ask-creation-days.html": ("https://mistertranslation.com/ask/creation-days.html",
+                                "How long were the days of creation?"),
+    "ask-cain-seth.html": ("https://mistertranslation.com/ask/cain-seth.html",
+                            "Could anyone alive today be descended from Cain?"),
+    "ask-great-tribulation.html": ("https://mistertranslation.com/ask/great-tribulation.html",
+                                    "Are we living in the Great Tribulation right now?"),
+}
+
+
+def build_ask_redirects():
+    for old_name, (to_url, title) in ASK_REDIRECTS.items():
+        out = blogkit.redirect_stub(to_url, title=title,
+                                     note="Dear Mr. Librarian is now its own page.")
+        open(os.path.join(OUT, old_name), "w", encoding="utf-8").write(out)
+    return len(ASK_REDIRECTS)
 
 
 def build_contact_es():
@@ -7337,17 +6235,8 @@ def main():
     build_new_testament()
     build_book_intros()
     build_chronology()
-    build_ask_enoch()
-    build_ask_index()
-    build_ask_jesus_god()
-    build_ask_jehovah()
-    build_ask_creation_days()
-    build_ask_newton()
-    build_ask_cain_seth()
-    build_ask_great_tribulation()
+    n_ask_redirects = build_ask_redirects()
     build_es()
-    build_contact()
-    build_thanks()
     build_contact_es()
     build_thanks_es()
     n_words, n_refs = build_concordance(chapters)
@@ -7370,7 +6259,8 @@ def main():
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp/{n_things}c, "
           f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), search index {n_search} items, "
-          f"feed {n_feed} items, sitemap {n_sitemap} urls from {args.source}")
+          f"feed {n_feed} items, {n_ask_redirects} ask redirects, sitemap {n_sitemap} urls "
+          f"from {args.source}")
 
 
 if __name__ == "__main__":

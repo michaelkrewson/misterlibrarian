@@ -4,7 +4,7 @@
   <title>The MisterLibrarian Bible Project</title>
   <link>https://mistertranslation.com/</link>
   <atom:link href="https://mistertranslation.com/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>A fresh translation of the Bible into modern English, made from the original Hebrew and Greek one chapter at a time, plus new Dear Mr. Librarian posts.</description>
+  <description>A fresh translation of the Bible into modern English, made from the original Hebrew and Greek one chapter at a time.</description>
   <language>en</language>
   <item>
     <title>Revelation 13</title>
@@ -12,13 +12,6 @@
     <guid isPermaLink="true">https://mistertranslation.com/revelation-13.html</guid>
     <pubDate>Sat, 19 Sep 2026 12:00:00 +0000</pubDate>
     <description>A beast rises out of the sea -- ten horns, seven heads, the dragon's own body from the chapter before, and now a composite of every animal Daniel's four-beast vision needed a separate scene to describe: a leopard's body, a bear's feet, a lion's mouth. One of its heads bears a…</description>
-  </item>
-  <item>
-    <title>Are we living in the Great Tribulation right now?</title>
-    <link>https://mistertranslation.com/ask-great-tribulation.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/ask-great-tribulation.html</guid>
-    <pubDate>Sat, 19 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Matthew 24's actual list of signs, four ways Christians have read when it applies, and Jesus's own repeated warnings against reading your own moment as the decisive one.</description>
   </item>
   <item>
     <title>Numbers 36</title>
@@ -68,13 +61,6 @@
     <guid isPermaLink="true">https://mistertranslation.com/numbers-30.html</guid>
     <pubDate>Sun, 23 Aug 2026 12:00:00 +0000</pubDate>
     <description>A single law of vows, and the shelf cannot even agree where it begins — only Douay-Rheims and Geneva 1599 side with the Masoretic text in opening the chapter with the sentence Numbers 29's own closing note promised; the other eleven witnesses on this project's shelf attach it…</description>
-  </item>
-  <item>
-    <title>Could anyone alive today be descended from Cain?</title>
-    <link>https://mistertranslation.com/ask-cain-seth.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/ask-cain-seth.html</guid>
-    <pubDate>Sun, 23 Aug 2026 12:00:00 +0000</pubDate>
-    <description>Cain's line simply stops in Genesis 4; Seth's runs to Noah; and Genesis 9:19 says the whole earth was peopled from Noah's sons. What that adds up to — and the two questions it depends on.</description>
   </item>
   <item>
     <title>Numbers 29</title>
@@ -215,6 +201,20 @@
     <guid isPermaLink="true">https://mistertranslation.com/exodus-37.html</guid>
     <pubDate>Wed, 12 Aug 2026 12:00:00 +0000</pubDate>
     <description>The chapter narrows from a whole team to one man, named once: 'Bezalel made the ark' (v1), and every verse after simply says 'he made,' unnamed but understood, through the ark and its cherubim, the table, the golden lampstand, and the altar of incense. The lampstand repeats…</description>
+  </item>
+  <item>
+    <title>Revelation 12</title>
+    <link>https://mistertranslation.com/revelation-12.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/revelation-12.html</guid>
+    <pubDate>Sun, 09 Aug 2026 12:00:00 +0000</pubDate>
+    <description>A great sign in heaven: a woman clothed with the sun, the moon under her feet, twelve stars crowning her head, crying out in the pain of childbirth -- while a second sign waits opposite her, a great red dragon with seven heads and ten horns, sweeping a third of the stars from…</description>
+  </item>
+  <item>
+    <title>Revelation 11</title>
+    <link>https://mistertranslation.com/revelation-11.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/revelation-11.html</guid>
+    <pubDate>Sat, 08 Aug 2026 12:00:00 +0000</pubDate>
+    <description>John is handed a measuring reed and told to measure the temple -- but to leave the outer court unmeasured, handed over to be trampled for forty-two months, the same span two unnamed witnesses will spend prophesying in sackcloth, fire pouring from their mouths, power to shut…</description>
   </item>
 </channel>
 </rss>

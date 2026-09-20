@@ -1,0 +1,102 @@
+/* Dear Mr. Librarian — layered on top of ../style.css (the Bible project's shared
+   theme: :root vars, .wrap, .panel, .eilist/.eirow, .fronthero, .notebtns/.respond-btn,
+   .headersearch, buttons). This file holds only what that stylesheet doesn't have yet:
+   the blog chrome, entry dateline/typography, the tile grid, and tag chips. */
+
+/* ── chrome ── */
+.askhead{display:flex;align-items:center;justify-content:space-between;
+  column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:30px 0 18px;
+  border-bottom:1px solid var(--border);margin-bottom:8px}
+.askhead .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:inherit}
+.askhead .mtlib-icon{width:40px;height:40px;flex:0 0 40px}
+.askhead .wm{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:21px;
+  color:#f7f2e2;letter-spacing:-0.2px}
+.askhead .wm .em{color:var(--gold);font-style:italic}
+.askhead .nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:13px;
+  font-weight:600}
+.askhead .nav a{color:var(--muted);text-decoration:none;padding:2px 0;
+  border-bottom:1px solid transparent}
+.askhead .nav a:hover{color:var(--text)}
+.askhead .nav a.on{color:var(--gold);border-bottom-color:var(--gold)}
+
+.askfoot{margin:44px 0 0;padding-top:18px;border-top:1px solid var(--border);text-align:center;
+  color:var(--dim);font-size:11.5px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.askfoot p{margin:0 0 8px}
+.askfoot a{color:var(--muted)}
+.askfoot a:hover{color:var(--gold)}
+.askfoot .legal{margin:14px auto 0;max-width:560px;color:var(--dim);font-size:10.5px;line-height:1.6}
+.askfoot .legal a{color:var(--muted)}
+.askfoot .hits{opacity:.75}
+
+.ftag{margin:20px 0 26px;color:var(--purple);font-size:13px;font-weight:700;
+  letter-spacing:0.06em;text-transform:uppercase;text-align:center}
+
+/* ── entry page ── */
+.entry{max-width:720px;margin:22px auto 0}
+.etitle{font-family:Georgia,"Times New Roman",serif;font-size:29px;font-weight:700;
+  line-height:1.25;margin:0 0 8px;color:#f7f2e2;letter-spacing:-0.2px}
+.edate{margin:0 0 22px;color:var(--dim);font-size:11px;letter-spacing:0.12em;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.entry .qbox,.entry .panel{max-width:none}
+.backlink{max-width:720px;margin:30px auto 0;font-family:-apple-system,BlinkMacSystemFont,
+  "Segoe UI",sans-serif;font-size:13.5px}
+.backlink a{color:var(--muted)}
+.backlink a:hover{color:var(--gold)}
+
+/* ── tags ── */
+.tags{margin:30px 0 0;display:flex;flex-wrap:wrap;gap:7px;max-width:720px;margin-left:auto;
+  margin-right:auto}
+a.tg{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:12px;
+  color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:4px 11px;
+  background:var(--bg1);text-decoration:none;transition:border-color .15s,color .15s}
+a.tg:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ── sources ── */
+.entry ol.sources{max-width:720px;margin:0 auto;font-size:13px;line-height:1.6;
+  color:var(--muted);padding-left:24px}
+.entry ol.sources li{margin:0 0 8px}
+
+/* ── the writing list / tag pages ── */
+.writing{margin:44px 0 0}
+.wtitle{margin:0 0 6px;font-size:21px;font-weight:800;color:#fff}
+.wsub{margin:0 0 18px;color:var(--muted);font-size:13px;font-style:italic}
+.ecard{display:block;text-decoration:none;padding:16px 18px;margin:0 0 10px;
+  border:1px solid var(--border);border-radius:11px;background:var(--bg1);
+  transition:border-color .15s}
+.ecard:hover{border-color:rgba(232,201,104,0.4)}
+.ec-d{display:block;color:var(--dim);font-size:11px;letter-spacing:0.12em;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin-bottom:5px}
+.ec-t{display:block;color:#fff;font-size:17px;line-height:1.32;margin-bottom:5px}
+.ec-s{display:block;color:var(--muted);font-size:13px;line-height:1.55}
+
+/* ── front-page tile grid ── */
+.empty{margin:8px 0 22px;color:var(--muted);font-size:13.5px;font-style:italic;text-align:center}
+.tilegrid{display:grid;gap:14px}
+.tile{display:block;text-decoration:none;padding:18px 20px;border:1px solid var(--border);
+  border-radius:12px;background:var(--bg1);transition:transform .15s,border-color .15s}
+.tile:hover{border-color:rgba(232,201,104,0.4);transform:translateY(-2px)}
+@media (min-width:640px){.tilegrid{grid-template-columns:1fr 1fr}}
+@media (min-width:980px){.tilegrid{grid-template-columns:1fr 1fr 1fr}}
+
+/* ── recirculation ── */
+.readnext{max-width:720px;margin:44px auto 0;border-top:1px solid var(--border);padding-top:22px}
+.readnext h2{font:700 11.5px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.readnext .tilegrid{grid-template-columns:1fr}
+.readnext .ec-t{font-size:15.5px}
+.readnext .ec-s{font-size:12.5px}
+@media (min-width:640px){.readnext .tilegrid{grid-template-columns:1fr 1fr}}
+
+/* ── the tag-chip bar on the front page ── */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin:0 0 22px}
+.chip{font:12.5px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  padding:6px 12px;border-radius:999px;border:1px solid var(--border);background:transparent;
+  color:var(--muted);text-decoration:none;transition:all .15s}
+.chip:hover{border-color:var(--gold);color:var(--gold)}
+.chipn{color:var(--dim);margin-left:3px}
+
+@media (max-width:680px){
+  .etitle{font-size:24px}
+  .askhead{padding:22px 0 14px}
+}

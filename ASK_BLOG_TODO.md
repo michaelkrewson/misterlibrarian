@@ -1,127 +1,136 @@
 # Splitting "Dear Mr. Librarian" into its own blog
 
-Scoped 2026-09-19. Goal: give Dear Mr. Librarian the same real structure the other five
-blogs have (own home, own archive, dates, tags, sources, keep-reading, its own feed) instead
-of living inside the Bible project's template — while keeping it OFF the mistertranslation.com
-hub's card grid. The Bible's own nav link ("📖 Dear Mr. Librarian") stays and just points at
-the new location. Check items off as we ship them; items marked 🤔 are my proposed default,
-not a done deal — redirect me when we get there if you want something else.
+Scoped 2026-09-19, shipped 2026-09-19. Dear Mr. Librarian now has the same real structure
+the other five blogs have (own home, own archive, dates, tags, sources, keep-reading, its
+own feed) instead of living inside the Bible project's template — and stays OFF the
+mistertranslation.com hub's card grid, per Michael's ask. Live at `/ask/`, reachable only via
+the Bible project's own "📖 Dear Mr. Librarian" nav link.
 
-## 0. Decide the shape (do this first — everything below depends on it)
+## 0. The shape — decided
 
-- [ ] 🤔 **Folder/URL.** Proposing `/ask/` — short, matches the existing `ask-*.html` slugs so
-      the migration is mostly a rename, and reads fine in a URL (`mistertranslation.com/ask/`).
-      Alternative: something more brand-like (`/dearmrlibrarian/`?) matching how the other five
-      are named after their own titles, not a generic word. **This is the one call worth
-      confirming before I touch anything** — once real, it's expensive to rename again.
-- [ ] 🤔 **Page names inside it**, matching the sibling convention exactly: `ask/index.html`
-      (the archive homepage — hero photo, post list, tags), `ask/ask.html` (the live
-      submission form — yes, "ask/ask.html", same pattern as `finance/ask.html`). Individual
-      posts drop the `ask-` prefix now that the folder carries it: `ask/great-tribulation.html`
-      instead of `ask-great-tribulation.html`.
-- [ ] 🤔 **CSS approach.** The other five ship fully-inlined per-page `<style>` blocks (each
-      page self-contained, no shared stylesheet). The Bible links a shared `style.css`.
-      Proposing the Bible's approach (`ask/style.css`, linked) since there are only ~7 posts
-      today — easier to keep consistent by hand than copy-pasting a `<style>` block into every
-      new post the way the bigger blogs do.
-- [ ] 🤔 **Feed relationship.** The Bible's `feed.xml` (built 2026-09-19) currently includes the
-      7 Dear Mr. Librarian posts alongside chapters. Once this blog has its own `ask/feed.xml`,
-      proposing the posts move OUT of the Bible's feed (avoid the same content in two feeds) —
-      the Bible's feed becomes chapters-only again.
-- [ ] 🤔 **Sibling footer cross-links.** Every page on all five blogs ends with a line linking
-      the other five (`The Librarian's Ledger · The Librarian Abroad · …`), which I added to
-      the Bible's own footer a few items back. Does the new Dear Mr. Librarian blog join that
-      same six-way cross-link line on EVERY page across the whole site (all six blogs list all
-      five *other* ones), or does it stay off that list too — same spirit as "no hub card,"
-      just reachable through the Bible rather than promoted everywhere? Leaning toward
-      **off the cross-link list**, consistent with "no card," but this is genuinely your call.
+- [x] **Folder/URL: `/ask/`.** Confirmed — matches the fleet's own convention (finance/travel/
+      health are generic topic nouns in the URL, not their fancy brand names, which only ever
+      appear in `<title>`/header).
+- [x] **Page names**: `ask/index.html` (archive homepage), `ask/ask.html` (the live submission
+      form, matching `finance/ask.html`'s naming). Posts drop the `ask-` prefix now the folder
+      carries it: `ask/great-tribulation.html`, not `ask-great-tribulation.html`.
+- [x] **CSS: linked, not inlined.** `ask/style.css` layers blog-specific classes (entry
+      dateline, tile grid, tag chips, tag filter bar) on top of the Bible's own shared
+      `../style.css` (reused directly for `:root` vars, `.wrap`, `.panel`, `.fronthero`,
+      `.notebtns`/`.respond-btn`, `.headersearch`, buttons — all already existed and needed no
+      changes). One shared visual system, not a duplicated one.
+- [x] **Feed: split.** The Bible's `feed.xml` is chapters-only again (`build_feed_page()`);
+      `ask/feed.xml` is the real thing — front-matter dates via `blogkit.build_feed()`, not the
+      git-history fallback the Bible's own feed needs.
+- [x] **Sibling footer cross-links: off, deliberately.** `ask/`'s footer links back to the
+      Bible project only ("Dear Mr. Librarian is part of The MisterLibrarian Bible Project") —
+      it does NOT join the six-way Ledger/Abroad/Regimen/Notebook/Bible cross-link line that
+      appears on every OTHER page across the domain. Same reasoning as no hub card: a footer
+      cross-link is how a reader discovers a blog they didn't know existed, which is exactly
+      the promotion Michael asked to skip.
+- [x] **Revised during implementation, worth flagging:** the original plan proposed keeping
+      the 7 posts listed in the Bible's own `search-index.json`/`feed.xml` too (repointed to
+      the new URLs), reasoning that the nav link still lives in the Bible. Reconsidered while
+      building: once the posts have a real home with their own archive/tags/feed, duplicating
+      them in the Bible's OWN search index is just maintaining two listings for one thing.
+      The Bible's search index now carries a single pointer entry ("Dear Mr. Librarian" →
+      `ask/`, in the `Page` category, same as `Library`/`Concordance`) instead of all 7 posts
+      individually — findable, not duplicated.
 
-## 1. Scaffold the new blog (mechanical, no new content decisions)
+## 1. Scaffold — done
 
-- [ ] Own header/footer template in `build_ask.py` (new file) — own brand mark (reuse the
-      scroll icon, or something distinct?), a thin nav (Home / Tags / [Ask a question] —
-      there's no "topic pages" concept here the way finance has Bitcoin Board/Treasuries/etc.,
-      so this nav is intentionally sparse compared to the siblings').
-      🤔 also decide: reuse the Bible's own gold/parchment theme (visual continuity with where
-      it came from) or give it a distinct palette (visual independence, matching how each of
-      the other five has its own accent color)?
-- [ ] `ask/index.html` — archive homepage: full-width hero banner (`.fronthero`, matching the
-      now-standard pattern across all six), intro copy, and a post list. With only 7 posts,
-      probably doesn't need finance's full load-more/view-toggle apparatus yet — a simple tile
-      grid is enough, built so it can grow into the fuller pattern later without a rewrite.
-- [ ] `ask/tags.html` + per-tag pages (`ask/tag-<slug>.html`), matching `blogkit.tag_slug()`.
-- [ ] `ask/feed.xml` via `blogkit.build_feed()` (the real thing this time — front-matter dates,
-      not the git-history-inferred dates the Bible's own feed had to fall back to).
-- [ ] `ask/sitemap.xml`, and add its line to the root `robots.txt` (same pattern as the other
-      five's `Sitemap:` lines).
+- [x] `build_ask.py` (new, ~470 lines) — own header/footer (`_chrome()`/`_foot()`), reusing the
+      Bible's scroll-mark SVG for visual continuity. Nav: Home / Tags / Ask a question / ← The
+      Bible — no topic pages the way finance has (Bitcoin Board etc.), so deliberately thin.
+      No view-toggle/load-more pagination or live JS tag-filter bar (health/finance's kind) —
+      a plain tile grid plus a static `/tags.html` is the honest amount of machinery for 7
+      posts; the code is structured so the fuller pattern can be ported in later if the
+      archive grows enough to need trimming.
+- [x] `ask/index.html` — full-width `.fronthero` banner (reused the Great Isaiah Scroll photo
+      already licensed/credited for `bible.html`'s own hero, rather than sourcing/licensing a
+      new image), tag chip row, tile grid of all 7 posts.
+- [x] `ask/tags.html` + 14 per-tag pages (4 indexable at `TAG_INDEX_MIN=2`, 10 held back
+      noindex'd until they earn a second post — same convention as health/finance).
+- [x] `ask/feed.xml` (7 items) + `ask/sitemap.xml` (14 URLs) — both validated well-formed.
+- [x] `robots.txt` gained the `Sitemap: .../ask/sitemap.xml` line.
 
-## 2. Migrate the 7 existing posts
+## 2. Migrated the 7 existing posts — done
 
-- [ ] Convert each `build_ask_*()` Python function in `build.py` into a front-matter source
-      file at `source/ask/<slug>.html` (title/date/tags/summary/meta_desc/hero/hero_alt/
-      hero_credit/draft, then the body HTML) — the same authoring format `source/health/`,
-      `source/finance/`, etc. already use, parsed by `blogkit.parse_front_matter()`.
-      **Date needs a real decision per post**: use each post's actual git "first added" date
-      (same `_git_added_dates()` approach the Bible feed already uses) rather than guessing.
-- [ ] Delete the 7 `build_ask_*()` functions from `build.py` once `build_ask.py` builds them
-      instead — no duplicate source of truth for the same 7 posts.
-- [ ] Redirect stubs at every old URL (`ask.html`, `ask-enoch.html`, `ask-jesus-god.html`,
-      `ask-jehovah.html`, `ask-creation-days.html`, `ask-newton.html`, `ask-cain-seth.html`,
-      `ask-great-tribulation.html`, `contact.html`) via `blogkit.redirect_stub()` — the same
-      meta-refresh + canonical pattern already used elsewhere in this codebase for a moved
-      page, so a bookmarked/shared/indexed link never dead-ends.
+- [x] Extracted each post's real body content (not re-typed) from the already-built, correct
+      HTML output — more reliable than re-deriving from the Python generator functions — into
+      `source/ask/YYYY-MM-DD-slug.html` front-matter files, stripping old-template boilerplate
+      (the top-of-page "← Dear Mr. Librarian" back-link, the old hand-written "More from Dear
+      Mr. Librarian" cross-link panels — 2 posts had these woven into otherwise-real content
+      and got a manual, careful trim rather than a blanket regex strip).
+- [x] Real per-post dates via git's "file first added" history (2026-07-10 through
+      2026-09-19), not guessed.
+- [x] Deleted all 8 `build_ask_*()` functions (7 posts + the old `build_ask_index()`) and the
+      now-dead `_question_form_html()`/`_ask_comment_nudge()` helpers from `build.py`.
+      **Caught and fixed a real mistake here**: the first removal pass swept up `ES_BOOK` (the
+      158-entry English→Spanish book-name map, load-bearing across the Spanish edition) because
+      it sat immediately after `build_ask_newton()` with no `def` boundary between them and my
+      boundary-detection only looked for `def` lines. `python3 build.py` failed loudly
+      (`NameError: name 'ES_BOOK' is not defined`) before this ever reached a commit — restored
+      verbatim from git history, rebuilt clean. Worth remembering: a line-range removal based on
+      `def`-boundaries alone can silently eat a plain assignment sitting between two functions.
+- [x] Redirect stubs (`blogkit.redirect_stub()` — meta-refresh + canonical, `noindex,follow`)
+      at every old URL: `ask.html`, `contact.html`, `thanks.html`, and all 7 `ask-*.html`
+      files, each pointing at its new `ask/...` home. Verified the stub HTML directly (correct
+      target URLs, correct noindex tag) rather than trusting a live cross-origin redirect to
+      resolve cleanly in a local Playwright check.
 
-## 3. Close the structural gaps this whole split was for
+## 3. Structural gaps — closed
 
-- [ ] **Dates** — from front matter now, shown on each post (`<p class="edate">`, matching the
-      siblings) and on the archive tiles.
-- [ ] **Tags** — 🤔 needs a taxonomy invented from scratch (the 7 posts have none today).
-      Rough cut from what's actually in them: `canon`, `textual-criticism`, `translation`,
-      `christology`, `chronology`, `genealogy`, `eschatology`, `manuscripts` — I'll refine
-      this against the real posts when we get here, not guess blind.
-- [ ] **Sources** — 🤔 the real open question. Finance's "Sources" section is a numbered list
-      of EXTERNAL citations (GiveWell, WHO, journal papers). These 7 posts don't route through
-      outside reporting — their "sources" are internal (specific Bible chapters/verses/notes)
-      plus the project's own 7-version shelf comparison (NIV/KJV/Douay-Rheims/Living
-      Bible/Geneva/ASV/NWT) and, for the Newton post, real external biographical/historical
-      sources. Proposing a "Sources" section that's honest about this: external citations
-      where they exist (Newton's biography, historical-interpretation claims), and a distinct
-      "Read in the text" list of the specific chapters/verses each post leans on where they
-      don't. Needs a pass per post, not a mechanical port.
-- [ ] **Keep reading** — auto-generated related-post tiles at the bottom of each post, same
-      `data-search`/`data-tags` mechanism as the siblings. With only 7 posts this will surface
-      most of the archive most of the time — fine at this size, revisit if the archive grows.
-- [ ] **Backlink** — `← Back to Dear Mr. Librarian` line before the footer, matching the
-      siblings' `← Back to the Ledger` etc.
-- [ ] Images — 🤔 optional, not required. The 7 posts are argument/exegesis essays and read
-      fine as pure text; the siblings' posts aren't ALWAYS illustrated either. Not scoping new
-      image research/licensing per post unless you want it — flag if you do.
+- [x] **Dates** — real, from front matter, on every post and every archive tile.
+- [x] **Tags** — 14 tags assigned across the 7 posts from a shared, reused vocabulary
+      (`textual criticism` ×4, `church history`/`genesis`/`translation philosophy` ×2 each,
+      the rest singletons): canon, christology, church history, dead sea scrolls, divine name,
+      eschatology, genealogy, genesis, hebrew language, isaac newton, john, matthew, textual
+      criticism, translation philosophy.
+- [x] **Sources** — shipped as the honest, mechanical version: `_add_sources()` auto-generates
+      an `<ol class="sources">` ("Read in the text") from every distinct Bible-chapter link
+      already present in a post's own body, plus a standing line naming the seven-version
+      shelf comparison. Never hand-typed (can't drift from what a post actually cites), never
+      fabricated. `check_entries()` refuses to build any post missing this, same discipline as
+      `build_health.py`.
+      **Still open, deliberately not done here**: real EXTERNAL citations (the Newton post is
+      the obvious candidate — a real biography, his actual published works) would need
+      verified sources, which is a content-research task, not something to invent as part of
+      a structural migration. Revisit if wanted.
+- [x] **Keep reading** — `_related_block()`, ranked by shared-tag count then recency, same
+      mechanism as health/finance.
+- [x] **Backlink** — `← Back to Dear Mr. Librarian` on every post.
+- [x] **Images** — skipped, as scoped. All 7 posts stay pure text; only the front-page hero
+      banner has a photo (reused, not newly sourced).
 
-## 4. Point the Bible project at the new location
+## 4. Bible project repointed — done
 
-- [ ] `header()`'s "📖 Dear Mr. Librarian" nav link (desktop + mobile) → `ask/` (was `ask.html`).
-- [ ] Bible homepage's "Dear Mr. Librarian" card → same new URL, description re-checked (still
-      accurate once the form lives on `ask/ask.html` rather than this same page).
-- [ ] Footer's "Ask Mr. Librarian a question" link → `ask/ask.html` (was `ask.html#ask-form`).
-- [ ] The one per-post CTA in the John 1:1 post ("send yours to the librarian's desk") → same.
-- [ ] Bible's `search-index.json` (`build_search_index()`) — drop the 7 hardcoded `ASK_ENTRIES`
-      (now genuinely a different site) or keep them findable with repointed URLs? Proposing
-      **keep them searchable** from the Bible's own search box (the nav link still lives in
-      the Bible, so a reader would reasonably expect search to still find them) but pointing
-      at `ask/...` URLs.
-- [ ] Bible's `feed.xml` (`build_feed_page()`) — drop the 7 ask posts per the item-0 decision
-      above, chapters-only again.
-- [ ] Confirm `index.html` (the mistertranslation.com hub) is untouched — **no seventh card**.
-      This is a guardrail line, not a task: nothing here should add one.
+- [x] `header()`'s "📖 Dear Mr. Librarian" (desktop nav + mobile menu) → `ask/`.
+- [x] Mobile menu's separate "✉️ Ask a Question" link → `ask/ask.html`.
+- [x] Bible homepage's "Dear Mr. Librarian" card → `ask/`, description unchanged (still
+      accurate: "Ask a question, or browse what's already been answered…").
+- [x] Footer's "Ask Mr. Librarian a question" → `ask/ask.html` (was `ask.html#ask-form`).
+- [x] The one per-post CTA in the John 1:1 chapter page ("send yours to the librarian's desk")
+      → `ask/ask.html`.
+- [x] `search-index.json` — single pointer entry, not 7 (see the revised decision in §0).
+- [x] `feed.xml` — chapters-only again (see §0).
+- [x] `index.html` (the mistertranslation.com hub) — confirmed untouched, no seventh card.
+      `build_hub.py`'s `_PUBS` dict was checked directly: it has no "ask" entry and never will
+      unless someone adds one, so this isn't a suppression that could silently lapse — the hub
+      simply doesn't know `/ask/` exists.
 
-## 5. Verify before shipping
+## 5. Verified
 
-- [ ] Every old URL redirects correctly (curl/Playwright check, not just "should work").
-- [ ] New `ask/` pages render correctly (Playwright screenshots, desktop + mobile, same
-      discipline as the rest of this parity pass).
-- [ ] Bible's search still finds Dear Mr. Librarian content, landing on the new URLs.
-- [ ] `robots.txt` + both sitemaps (Bible's and the new one) are consistent — no duplicate or
-      conflicting canonical claims on the same content.
-- [ ] Spot-check a few inbound old links still resolve (anything in this repo's own
-      `docs/`/`RETIRED.md`-style history, if any point at the old ask-*.html paths — unlikely
-      here since this is a different repo's convention, but worth one grep pass).
+- [x] Every old URL's redirect stub inspected directly (target URL + noindex tag correct) for
+      all 10 redirected paths.
+- [x] `ask/` pages rendered with Playwright — front page, an entry (top + full scroll to the
+      sources/tags/comment-box/keep-reading/backlink/footer), the tags page, the ask form —
+      desktop (1280px) and mobile (390px). Zero console errors throughout.
+- [x] Bible's search index confirmed to carry the single `ask/` pointer, not stale entries.
+- [x] `robots.txt` + both sitemaps consistent: Bible's `sitemap.xml` dropped from 751→741 URLs
+      (the 10 old ask paths correctly excluded as noindex'd redirects), `ask/sitemap.xml` is a
+      clean 14 URLs.
+- [x] Full `python3 build.py` run end to end with no errors (after the `ES_BOOK` fix above) —
+      2,093 search-index items, 40 feed items, 10 ask redirects, 741 sitemap URLs.
+- [x] `python3 build_ask.py` run end to end with no errors — 7 entries, 14 tag pages
+      (4 indexable), valid `feed.xml`/`sitemap.xml`.

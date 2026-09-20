@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Dear Mr. Librarian</title>
+  <link>https://mistertranslation.com/ask/</link>
+  <atom:link href="https://mistertranslation.com/ask/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Reader questions about the translation — a word-choice, the text, the canon, a comparison between versions — answered one at a time, the way everything in this project is done: sourced, compared, and left for you to weigh rather than settled from the desk.</description>
+  <language>en</language>
+  <item>
+    <title>Are we living in the Great Tribulation right now?</title>
+    <link>https://mistertranslation.com/ask/great-tribulation.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/great-tribulation.html</guid>
+    <pubDate>Sat, 19 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Matthew 24's actual list of signs, four ways Christians have read when it applies, and Jesus's own repeated warnings against reading your own moment as the decisive one.</description>
+    <category>eschatology</category>
+    <category>matthew</category>
+    <category>church history</category>
+  </item>
+  <item>
+    <title>Could anyone alive today be descended from Cain?</title>
+    <link>https://mistertranslation.com/ask/cain-seth.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/cain-seth.html</guid>
+    <pubDate>Sun, 23 Aug 2026 12:00:00 +0000</pubDate>
+    <description>Cain's line simply stops in Genesis 4; Seth's runs to Noah; and Genesis 9:19 says the whole earth was peopled from Noah's sons. What that adds up to — and the two questions it depends on.</description>
+    <category>genesis</category>
+    <category>genealogy</category>
+  </item>
+  <item>
+    <title>Did Isaac Newton write about the Bible?</title>
+    <link>https://mistertranslation.com/ask/newton.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/newton.html</guid>
+    <pubDate>Sat, 18 Jul 2026 12:00:00 +0000</pubDate>
+    <description>The scientist wrote more on Scripture than on physics — his Daniel &amp; Revelation, his textual criticism of the Johannine Comma, his chronology, and his hidden anti-Trinitarianism, handled honestly.</description>
+    <category>church history</category>
+    <category>textual criticism</category>
+    <category>isaac newton</category>
+  </item>
+  <item>
+    <title>How long were the days of creation?</title>
+    <link>https://mistertranslation.com/ask/creation-days.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/creation-days.html</guid>
+    <pubDate>Fri, 17 Jul 2026 12:00:00 +0000</pubDate>
+    <description>The elastic Hebrew word yom, the sunless first days and the open seventh, and the ordinary-day, day-age, and literary-framework readings — with their pedigrees, no vote cast.</description>
+    <category>genesis</category>
+    <category>hebrew language</category>
+  </item>
+  <item>
+    <title>Why does this translation say “Jehovah”?</title>
+    <link>https://mistertranslation.com/ask/jehovah.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/jehovah.html</guid>
+    <pubDate>Wed, 15 Jul 2026 12:00:00 +0000</pubDate>
+    <description>The name of God — the four letters behind “the LORD,” why almost every Bible hides it, and the choice between “the LORD,” “Yahweh,” and “Jehovah.”</description>
+    <category>divine name</category>
+    <category>translation philosophy</category>
+    <category>textual criticism</category>
+  </item>
+  <item>
+    <title>Was the Word "God," or "a god"?</title>
+    <link>https://mistertranslation.com/ask/jesus-god.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/jesus-god.html</guid>
+    <pubDate>Mon, 13 Jul 2026 12:00:00 +0000</pubDate>
+    <description>John 1:1 and the deity of Christ — the Greek of the missing article, “firstborn of all creation,” the Angel of Jehovah, and the whole argument laid out on both sides.</description>
+    <category>christology</category>
+    <category>john</category>
+    <category>translation philosophy</category>
+    <category>textual criticism</category>
+  </item>
+  <item>
+    <title>Why isn't the Book of Enoch in this translation?</title>
+    <link>https://mistertranslation.com/ask/enoch.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/ask/enoch.html</guid>
+    <pubDate>Fri, 10 Jul 2026 12:00:00 +0000</pubDate>
+    <description>The Masoretic source text, the canon question, the Ethiopian exception, and the Dead Sea Scrolls.</description>
+    <category>canon</category>
+    <category>dead sea scrolls</category>
+    <category>textual criticism</category>
+  </item>
+</channel>
+</rss>
