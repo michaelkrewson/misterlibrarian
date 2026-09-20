@@ -1265,6 +1265,9 @@ DICTIONARY = [
     # ---- Revelation 11 (Greek) ----
     ("therion", "thērion", "θηρίον", "thērion",
      "THE BEAST — this book's own word for its central antagonist, and it arrives already wearing the definite article: to thērion, 'THE beast' (11:7), as if the reader is expected to already know which one is meant, on its very first appearance. It does not surface again for several chapters (13:1; 17:8, both using the identical phrase 'coming up OUT OF THE ABYSS'), and its full portrait — heads, horns, a mortal wound healed — waits two chapters past this first bare mention. ⚠ Deliberately distinct from zōa, 'living creatures' (4:6-8), which this translation keeps untranslated as a technical term for exactly this reason — a false-friend collision the Greek itself does not make, since thērion and zōon share no root.", ("Revelation", 11, 7)),
+    # ---- Revelation 13 (Greek) ----
+    ("charagma", "charagma", "χάραγμα", "charagma",
+     "A STAMP — not a private tattoo but the ordinary Greek word for an official mark: the impress of a die on a coin bearing the emperor's portrait, and the seal of name and regnal year that made a contract or receipt valid in the first centuries of the empire. Buying and selling 'the mark, the name of the beast, or the number of its name' (13:17) is not a metaphor invented for the vision — it describes, literally, how commerce already required exactly this kind of seal. The same word marked a branded slave or a devotee's cultic tattoo elsewhere in Greco-Roman life: ownership, in every one of its uses.", ("Revelation", 13, 16)),
     # ---- Revelation 12 (Greek) ----
     ("kategor", "katēgōr", "κατήγωρ", "katēgōr",
      "THE ACCUSER — not the ordinary Greek word for a prosecutor (katēgoros, which most later manuscripts smooth this to), but a rarer, Semitic-flavored form found almost nowhere else in surviving Greek — a foreign-sounding title for a figure John elsewhere leaves untranslated as SATAN, itself Hebrew for 'accuser.' English keeps the ordinary root in CATEGORY, a thing one is accused, or charged, of belonging to. The scene it names — a prosecutor accusing a man before God 'day and night' — restages Job 1:6 and Zechariah 3:1's own heavenly courtrooms a third and final time, only here the court itself is dissolved.", ("Revelation", 12, 10)),
@@ -5011,6 +5014,9 @@ ENCYCLOPEDIA = [
          coords=(32.65, 35.68, 0.5),
          desc="A Hellenistic city of the DECAPOLIS, on the heights south-east of the Sea of Galilee (modern Umm Qais in Jordan) — Greek-speaking, with a theatre and colonnaded streets, and famous enough to have produced philosophers and poets. Its territory apparently reached down toward the lake, which is what 'the region of the Gadarenes' means. ⚠ The name is one of the New Testament's best-known textual knots, and the geography is why: GADARA sits about six miles from the shore and GERASA a good thirty, and neither is a lakeside town with a cliff running into the water. The manuscripts differ across all three Gospels; the earliest witnesses of Matthew read Gadarenes (which this translation prints), while much of the later tradition reads GERGESENES — a name Origen argued for in the third century precisely because he knew the other two did not fit the terrain. Both a scribal correction toward plausible geography and an original local name remain live options; what can be said is that the difficulty was noticed early and argued about honestly. ⚠ The herd of pigs in the story is itself a piece of geography: unclean animals grazing in quantity mean Gentile country.",
          refs=[("Matthew", 8, 28)]),
+    dict(slug="michael", name="Michael", kind="person", aliases=["Michael", "Michael the archangel"],
+         refs=[("Revelation", 12, 7), ("Daniel", 12, 1), ("Jude", 1, 9)],
+         desc="Hebrew Mi-kha-El — 'who is like God?' — a question folded into a name, and the only figure in the whole Bible called ARCHANGEL outright (Jude 9, disputing with the Devil over the body of Moses). Daniel's last vision already names him Israel's own guardian, 'the great prince who stands over the sons of your people' (Daniel 12:1) — the same chapter that supplies Revelation's own 'time, times, and half a time.' Revelation 12 puts him at the head of heaven's counter-attack against the dragon, and wins: 'Michael and his angels fought the dragon... and the great dragon was thrown down' (12:7-9). One chapter later, a chanting crowd asks the beast the very question his name already answered — 'who is like the beast?' (Revelation 13:4) — a blasphemous echo, not a coincidence of wording. A small minority of readers, mostly modern, identify Michael with Christ himself (leaning on 1 Thessalonians 4:16's 'voice of an archangel'); the great majority, ancient and modern, keep him a created being, chief of the angels."),
     dict(slug="satan", name="Satan", kind="person", aliases=["Satan"],
          desc="'The ADVERSARY' — Hebrew ha-satan is not originally a name but a job description, the one who opposes or brings the accusation; in Job he appears among the sons of God as a kind of prosecutor, and in Zechariah 3 he stands to accuse the high priest. The Greek Old Testament renders it DIABOLOS, 'slanderer', which is where English 'devil' comes from. ⚠ In Matthew 4 both words sit side by side: the narrator calls him 'the devil' and 'the tempter', and when Jesus finally addresses him directly he uses the Hebrew adversary-name — 'Go away, SATAN' (4:10). ⚠ Matthew then puts those same words in Jesus' mouth once more, at 16:23, to PETER, when the disciple tells him he must not suffer: 'Go behind me, Satan.' The name attaches not to a monster but to whoever offers the shortcut. Scripture is markedly reticent about his origin; the familiar biography (a fallen angel of light) is assembled largely from Isaiah 14 and Ezekiel 28, passages whose stated subjects are the kings of Babylon and Tyre — a later synthesis rather than a claim of the text. ⚠ Revelation 12:9 is the first place in the whole Bible where the serpent of Genesis 3 is named outright as this same figure — 'the great dragon... the ancient serpent, the one called Devil and Satan' — an identification centuries of later readers simply assumed, made explicit in the text for the first time here, on the very chapter that also puts the serpent's own head under a heel (Genesis 3:15).",
          refs=[("Matthew", 4, 10), ("Revelation", 12, 9)]),
@@ -12584,6 +12590,9 @@ CHRON_CHAPTERS = {
     "rev12": dict(era="apostolic",
                   when="A woman clothed with the sun, the moon under her feet, cries out in the pain of childbirth while a great red dragon with seven heads waits to devour her child the moment he is born. The child — 'who is to rule all the nations with a rod of iron' — is caught up to God's throne, and the woman flees into the wilderness. War breaks out in heaven; Michael and his angels fight the dragon, identified plainly as 'that ancient serpent, who is called the devil and Satan,' and throw him down to earth, 'the accuser of our brothers,' filled with fury because he knows his time is short.",
                   clock="c. AD 95, opening the book's second major vision cycle (chapters 12-14), which steps back from the trumpets to retell the whole cosmic conflict from a different angle — the woman is read variously as Israel, Mary, or the church, and the dragon's defeat as either the original heavenly fall or Christ's own victory at the cross and resurrection."),
+    "rev13": dict(era="apostolic",
+                  when="A beast rises from the sea, wearing the dragon's own seven heads and ten horns, its body a composite of the leopard, bear, and lion of Daniel's earlier vision; one of its heads bears a fatal wound that heals, and the whole earth follows it in astonishment, asking 'who is like the beast?' A second beast then rises from the earth, lamb-horned but dragon-voiced, working false signs to make the world worship an image of the first beast and forcing everyone, 'the small and the great, the rich and the poor,' to receive its mark before they may buy or sell — a mark identified, at the chapter's close, by a number: 666.",
+                  clock="c. AD 95, continuing the second vision cycle opened in chapter 12 — the two beasts have been read across the centuries as the persecuting Roman state and its supporting imperial cult, and, by later interpreters, variously as other empires or institutions since; the number of the beast has its own long, disputed history of proposed solutions, this book's own dictionary/encyclopedia entries among them."),
     "rev21": dict(era="apostolic",
                   when="John sees 'a new heaven and a new earth,' the sea itself gone, and the holy city, new Jerusalem, coming down out of heaven 'as a bride adorned for her husband.' A voice from the throne promises, 'he will wipe away every tear from their eyes... Behold, I am making all things new.' The city itself is then described at length — a perfect cube of gold and jewels, twelve gates named for the twelve tribes, twelve foundations named for the twelve apostles, no temple within it because 'its temple is the Lord God the Almighty and the Lamb.'",
                   clock="c. AD 95, opening the book's final vision, after the millennium and the last judgment of chapter 20 — the culmination the whole book has been building toward since its first chapter."),
@@ -18720,6 +18729,15 @@ DICTIONARY_ES = {
         "zōa, «criaturas vivientes» (4:6-8), que esta traducción mantiene sin traducir como "
         "término técnico precisamente por esto —una falsa coincidencia que el propio griego no "
         "comete, ya que thērion y zōon no comparten raíz."),
+    "charagma": ("charagma",
+        "UN SELLO —no un tatuaje privado, sino la palabra griega corriente para una marca "
+        "oficial: la impresión de un cuño sobre una moneda con el retrato del emperador, y el "
+        "sello de nombre y año de reinado que hacía válido un contrato o un recibo en los "
+        "primeros siglos del imperio. Comprar y vender «la marca, el nombre de la bestia, o el "
+        "número de su nombre» (13:17) no es una metáfora inventada para la visión —describe, "
+        "literalmente, cómo el comercio ya exigía exactamente ese tipo de sello. La misma "
+        "palabra marcaba a un esclavo herrado o el tatuaje cultual de un devoto en otros "
+        "lugares de la vida grecorromana: propiedad, en cada uno de sus usos."),
     # ---- Apocalipsis 12 ----
     "kategor": ("katēgōr",
         "EL ACUSADOR —no la palabra griega corriente para un fiscal (katēgoros, a la que la "
@@ -20231,6 +20249,22 @@ ENCYCLOPEDIA_ES = {
         "lectores posteriores simplemente dieron por sentada, hecha expl&iacute;cita en el texto por primera "
         "vez aqu&iacute;, en el mismo cap&iacute;tulo que tambi&eacute;n pone la cabeza de la propia serpiente "
         "bajo un tal&oacute;n (G&eacute;nesis 3:15)."),
+    "michael": ("Miguel",
+        "Hebreo Mi-kha-El &mdash;&laquo;&iquest;qui&eacute;n como Dios?&raquo;&mdash;, una pregunta plegada "
+        "dentro de un nombre, y la &uacute;nica figura de toda la Biblia llamada ARC&Aacute;NGEL sin rodeos "
+        "(Judas 9, disputando con el Diablo por el cuerpo de Mois&eacute;s). La &uacute;ltima visi&oacute;n de "
+        "Daniel ya lo nombra guardi&aacute;n propio de Israel, &laquo;el gran pr&iacute;ncipe que est&aacute; "
+        "de pie sobre los hijos de tu pueblo&raquo; (Daniel 12:1) &mdash;el mismo cap&iacute;tulo que le "
+        "presta a Apocalipsis su propio &laquo;un tiempo, y tiempos, y la mitad de un tiempo&raquo;. "
+        "Apocalipsis 12 lo pone al frente del contraataque del cielo contra el drag&oacute;n, y gana: "
+        "&laquo;Miguel y sus &aacute;ngeles combatieron contra el drag&oacute;n&hellip; y fue arrojado el "
+        "gran drag&oacute;n&raquo; (12:7&ndash;9). Un cap&iacute;tulo despu&eacute;s, una multitud que grita "
+        "le hace a la bestia la misma pregunta que su nombre ya hab&iacute;a respondido &mdash;&laquo;&iquest;qui&eacute;n "
+        "es semejante a la bestia?&raquo; (Apocalipsis 13:4)&mdash;, un eco blasfemo, no una coincidencia de "
+        "palabras. Una peque&ntilde;a minor&iacute;a de lectores, sobre todo modernos, identifica a Miguel "
+        "con Cristo mismo (apoy&aacute;ndose en &laquo;voz de arc&aacute;ngel&raquo; de 1 Tesalonicenses "
+        "4:16); la gran mayor&iacute;a, antigua y moderna, lo mantiene como un ser creado, jefe de los "
+        "&aacute;ngeles."),
     "milcom": ("Milcom (Molec)",
         "El dios nacional de AM&Oacute;N &mdash;«la abominaci&oacute;n de los amonitas» (1 Reyes 11:5, 7)&mdash;, "
         "cuyo culto trajeron las esposas extranjeras de Salom&oacute;n a un lugar alto al este de "
