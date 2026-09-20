@@ -5406,6 +5406,9 @@ between versions — answered one at a time, the way everything here is done: so
 weigh rather than settled from the desk. Have one of your own? The <a href="contact.html">question box</a> is
 exactly how this series grows.</p>
 <div class="cardgrid">
+  <a class="card" href="ask-great-tribulation.html"><div class="card-t">Are we living in the Great Tribulation right now?</div>
+  <div class="card-d">Matthew 24's actual list of signs, four ways Christians have read when it applies, and
+  Jesus's own repeated warnings against reading your own moment as the decisive one.</div></a>
   <a class="card" href="ask-jesus-god.html"><div class="card-t">Was the Word "God," or "a god"?</div>
   <div class="card-d">John 1:1 and the deity of Christ — the Greek of the missing article, "firstborn of all
   creation," the Angel of Jehovah, and the whole argument laid out on both sides.</div></a>
@@ -6039,6 +6042,204 @@ def build_ask_cain_seth():
                     "9:19's claim that the whole earth was peopled from Noah's sons.",
                url="ask-cain-seth.html")
     open(os.path.join(OUT, "ask-cain-seth.html"), "w", encoding="utf-8").write(out)
+
+
+def build_ask_great_tribulation():
+    """Dear Mr. Librarian post: are we living in the Great Tribulation right now,
+    given the state of the world? Deliberately scoped to text + interpretive
+    history only (Michael's call, 2026-09-19) — no scoring of current headlines
+    against the signs, since that is the one move Matthew 24 itself repeatedly
+    warns against, and it's also the least stable, most contested kind of
+    content a page can carry. Leans hard on notes this chapter already
+    publishes (n24-1's near/far-horizon question, n24-4's "a reader in any
+    century can point at this" observation, n24-32's four "this generation"
+    readings) rather than re-deriving them. Neutrality habit: the four
+    interpretive traditions are named and sourced, not ranked."""
+    body = """<div class="askbar"><a href="ask.html">← Dear Mr. Librarian</a></div>
+<h1 class="pagetitle">Are we living in the Great Tribulation right now?</h1>
+<h2 style="margin-top:2px">What Matthew 24 actually lists as signs, how Christians have read the timing for two
+thousand years, and the one thing Jesus himself keeps saying about trying to answer this</h2>
+
+<div class="qbox">
+  <div class="qlabel">A reader asked</div>
+  <p>&ldquo;With everything going on in the world right now, are we already living in the Great Tribulation Jesus
+  talked about &mdash; or is it still to come? How would we even know?&rdquo;</p>
+</div>
+
+<div class="panel prose">
+  <p><strong>The short answer.</strong> You are not the first to ask this. It is, almost word for word, the
+  question his own disciples asked him directly: &ldquo;Tell us, <strong>when</strong> will these things be? And
+  what is the <strong>sign</strong>?&rdquo; (<a href="matthew-24.html#v24-3">Matthew 24:3</a>). And his very first
+  word back is not an answer &mdash; it is a warning: &ldquo;See that no one leads you astray&rdquo;
+  (<a href="matthew-24.html#v24-4">v4</a>). That sets the shape of everything below. This page lays out what the
+  discourse actually names as signs, the main ways serious readers have understood <em>when</em> they apply, and
+  what Jesus himself says about the project of reading your own moment as the decisive one. It does not tell you
+  the answer is yes, and it does not tell you the answer is no &mdash; the same rule as everywhere else in this
+  library.</p>
+</div>
+
+<h2>One question, or two? The seam the whole chapter turns on</h2>
+<div class="panel prose">
+  <p>The disciples' question already has a fork built into it. In Greek, its second and third parts &mdash;
+  &ldquo;what is the sign of your <em>presence</em>&rdquo; and &ldquo;of the <em>completion of the age</em>&rdquo;
+  &mdash; share a single article, which is a real grammatical hint that <em>they</em> took the temple's fall
+  (which he had just predicted, <a href="matthew-24.html#v24-2">v2</a>) and the end of the age to be one and the
+  same event. Whether Jesus answers on their assumption or corrects it is, in this library's own words,
+  &ldquo;the difficulty the whole chapter inherits&rdquo; (<a href="matthew-24.html#n24-1">note on 24:1&ndash;3</a>).
+  The readings on offer: the whole discourse is about Jerusalem's fall in <strong>AD&nbsp;70</strong>; it is about
+  a still-future end; it moves from one to the other partway through (candidates: <a
+  href="matthew-24.html#v24-15">v15</a>, <a href="matthew-24.html#v24-29">v29</a>, <a
+  href="matthew-24.html#v24-36">v36</a>); or it holds both together on purpose, a near horizon and a far one
+  described in one prophetic sweep &mdash; which is a recognized pattern elsewhere in the prophets, not a
+  translator's invention. This page does not choose between them either; it is the same seam the chapter's own
+  note flags, carried forward.</p>
+</div>
+
+<h2>What the discourse lists as signs &mdash; and its own warning about listing them</h2>
+<div class="panel prose">
+  <p>The first stretch of the answer (<a href="matthew-24.html#v24-4">vv4&ndash;14</a>) is a list almost anyone
+  would recognize: false messiahs, <strong>wars and rumours of wars</strong>, <strong>famines and
+  earthquakes</strong>, persecution, betrayal, false prophets, lawlessness multiplying, love growing cold, and
+  the good news reaching &ldquo;the whole inhabited earth&rdquo; before &ldquo;the end&rdquo; arrives. And this
+  library's own note on that stretch says the load-bearing thing plainly: <strong>&ldquo;Everything in this
+  paragraph is something a reader in any century can point at, which is why it has been pointed at in every
+  century; the passage's own use of it is to forbid the inference&rdquo;</strong>
+  (<a href="matthew-24.html#n24-4">note on 24:4&ndash;14</a>). Twice in this stretch alone the text says
+  <em>not yet</em> &mdash; &ldquo;the end is not yet&rdquo; (v6), &ldquo;the <strong>beginning</strong> of birth
+  pangs&rdquo; (v8) &mdash; labour pain being, on purpose, a pain that is productive and not itself the birth.</p>
+  <p>What follows gets sharper. <strong>&ldquo;The abomination of desolation&rdquo;</strong> standing in a holy
+  place (<a href="matthew-24.html#v24-15">v15</a>) quotes <a href="daniel-11.html#v11-31">Daniel 11:31</a> and
+  <a href="daniel-12.html#v12-11">12:11</a> &mdash; a phrase that had <em>already happened once</em>, in 167 BC,
+  when Antiochus IV set up an altar to Zeus in the temple, which is part of why &ldquo;let the reader
+  understand&rdquo; is inserted right there. Then flight instructions so concrete and short-range (do not go
+  back for a cloak; pray it isn't winter or a Sabbath) that they read as advice for an actual siege, not the end
+  of the world. Then, at <a href="matthew-24.html#v24-21">v21</a>, the phrase this series has already looked at
+  once: <strong><a href="dictionary.html#thlipsis">great tribulation</a></strong>, &ldquo;such as has not
+  happened from the beginning of the world until now, nor ever will&rdquo; &mdash; the same phrase, word for
+  word, as <a href="revelation-7.html#v7-14">Revelation 7:14</a>'s &ldquo;the great tribulation.&rdquo; More false
+  messiahs (<a href="matthew-24.html#v24-23">vv23&ndash;26</a>), with the same instruction as before &mdash;
+  &ldquo;do not believe it&rdquo; &mdash; and a comparison to <strong>lightning</strong> (v27): visible
+  everywhere at once, which is the point; nobody has to be told <em>where</em> it happened. Then the sun
+  darkened, the moon without light, the stars falling (<a href="matthew-24.html#v24-29">v29</a>) &mdash; stock
+  Old Testament language for the fall of cities and empires (Isaiah 13:10, 34:4; Joel 2:10), which by this
+  library's own reading &ldquo;does not by itself require a cosmic end&rdquo; even though &ldquo;it was always
+  used of something enormous&rdquo; (<a href="matthew-24.html#n24-29">note on 24:29&ndash;31</a>) &mdash; and
+  finally the Son of Man gathering &ldquo;his chosen from the four winds&rdquo; (vv30&ndash;31).</p>
+</div>
+
+<h2>The hinge: &ldquo;this generation&rdquo;</h2>
+<div class="panel prose">
+  <p>Whatever else is unresolved, one sentence decides more than any other: <strong>&ldquo;This generation will
+  not pass away until all these things happen&rdquo;</strong> (<a href="matthew-24.html#v24-34">v34</a>). This
+  library calls it &ldquo;the hardest sentence in the chapter&rdquo; and reports four readings without choosing:
+  <strong>(1)</strong> it means his actual contemporaries, and &ldquo;all these things&rdquo; is the temple's
+  fall within about forty years &mdash; which fits the word <em>genea</em> and the chapter's Judean detail, at
+  the cost of reading vv29&ndash;31 as prophetic language for that event rather than something literally cosmic;
+  <strong>(2)</strong> <em>genea</em> means &ldquo;race&rdquo; or &ldquo;kind&rdquo; &mdash; possible, but a
+  strained sense Matthew doesn't use elsewhere; <strong>(3)</strong> it means the generation alive when the
+  final signs actually begin, &ldquo;this&rdquo; pointing forward rather than at the crowd in front of him;
+  <strong>(4)</strong> it is a prediction whose terms were not met as stated, which some readers hold and others
+  regard as impossible for these words to mean (<a href="matthew-24.html#n24-32">note on 24:32&ndash;35</a>). C.
+  S. Lewis called the parallel saying in Mark &ldquo;the most embarrassing verse in the Bible&rdquo; &mdash; and
+  pointed out that the admission of ignorance in the very next verses (see below) sits right beside it, preserved
+  by copyists who could plainly see the tension and left it alone anyway.</p>
+</div>
+
+<h2>Four ways this has been read across church history</h2>
+<div class="panel prose">
+  <p>Zoom out from this one chapter and the same seam runs through the whole history of reading it. None of
+  these is a fringe position; all four have been held by serious, careful readers, and this library sets them
+  out with no vote cast.</p>
+  <h3>1. Preterist &mdash; mostly or entirely fulfilled already</h3>
+  <p>The discourse (or most of it) describes the Jewish-Roman war and Jerusalem's fall in <strong>AD&nbsp;70</strong>
+  &mdash; an actual catastrophe within the lifetime of people Jesus was speaking to, matching &ldquo;this
+  generation&rdquo; read as reading (1) above, and matching the flight instructions' concrete, local character.
+  Cost: vv29&ndash;31's cosmic imagery has to be read figuratively (which the shelf's own OT background supports,
+  see above), and <a href="revelation-7.html#v7-14">Revelation 7:14</a>'s identical phrase becomes a separate
+  vision, not literally the same event.</p>
+  <h3>2. Futurist &mdash; still ahead, a distinct end-times event</h3>
+  <p>The discourse (in whole, or from <a href="matthew-24.html#v24-15">v15</a> or <a
+  href="matthew-24.html#v24-29">v29</a> on) describes a still-future, unprecedented global tribulation
+  immediately before a visible return &mdash; anchored on v21's own claim that nothing before or after will match
+  it, a claim later history arguably tests hard against AD&nbsp;70 alone. Reads &ldquo;this generation&rdquo; as (3)
+  or (4) above, and reads Revelation 7:14 as depicting the very same, still-future event named here. This is the
+  most widely held reading in contemporary evangelical circles, and it's the reading closest to the question this
+  page opened with.</p>
+  <h3>3. Historicist &mdash; unfolding across the whole church age</h3>
+  <p>The tribulation, and apocalyptic language generally, describes a pattern playing out progressively through
+  church history &mdash; a common Reformation-era reading, when Reformers frequently read persecution under Rome
+  and later powers this way. Less commonly held today, but historically significant, and part of why the
+  Reformation-era shelf (Geneva 1599 among the versions here) sometimes carries interpretive freight modern
+  editions don't.</p>
+  <h3>4. Idealist &mdash; a recurring pattern, not one pinpointable event</h3>
+  <p>The passage describes something true of <em>every</em> age &mdash; every generation gets its wars, its false
+  messiahs, its persecutions &mdash; so &ldquo;the great tribulation&rdquo; names a pattern the church is, in some
+  sense, always living inside, rather than a single date on a calendar.</p>
+</div>
+
+<h2>What the text itself says about answering this for yourself</h2>
+<div class="panel prose">
+  <p>This is the part that's easy to skip past, and it shouldn't be. Set beside every sign in the list above is
+  an instruction not to treat it as decisive:</p>
+  <ul>
+    <li>His first sentence, before a single sign is named: <strong>&ldquo;See that no one leads you
+    astray&rdquo;</strong> (<a href="matthew-24.html#v24-4">v4</a>).</li>
+    <li>Twice more, of specific claims to have located it: <strong>&ldquo;do not believe it&rdquo;</strong>
+    (<a href="matthew-24.html#v24-23">vv23, 26</a>) &mdash; and the lightning comparison right after (v27) makes
+    the point explicit: the true thing needs no one to announce where it happened.</li>
+    <li>The flattest statement in the whole discourse: <strong>&ldquo;About that day and hour nobody knows
+    &mdash; not the angels of the heavens, nor the Son &mdash; but the Father only&rdquo;</strong>
+    (<a href="matthew-24.html#v24-36">v36</a>) &mdash; on the best manuscript evidence, including
+    &ldquo;nor the Son,&rdquo; a clause a scribe would have every reason to remove and none to add
+    (<a href="matthew-24.html#n24-36">note on 24:36&ndash;41</a>).</li>
+    <li>The comparison to <strong>Noah</strong> that follows (v37) is aimed at <em>obliviousness</em>, not
+    wickedness &mdash; people &ldquo;eating and drinking, marrying and giving in marriage,&rdquo; ordinary life,
+    with the only fault named being that &ldquo;they did not know.&rdquo; The text's own comparison isn't
+    &ldquo;look how bad things have gotten,&rdquo; it's &ldquo;look how ordinary the day looked right up until
+    it wasn't.&rdquo;</li>
+    <li>And the same answer, given flatly to the same disciples on a different day: <strong>&ldquo;It is not for
+    you to know times or seasons that the Father has set within his own authority&rdquo;</strong>
+    (<a href="acts-1.html#v7">Acts 1:7</a>).</li>
+  </ul>
+</div>
+
+<h2>What history shows about answering it anyway</h2>
+<div class="panel prose">
+  <p>This isn't a hypothetical risk. Confident, dated claims that a particular generation's crisis <em>was</em>
+  the great tribulation, or that the end had arrived within a specific, named window, have recurred across
+  nearly the whole span of church history &mdash; the second-century Montanist movement's expectation of an
+  imminent end; a cluster of apocalyptic movements around the year 1000; the English Civil War's Fifth Monarchy
+  movement, reading current politics as the last days; the Millerite movement's calculation of 1844, remembered
+  today as &ldquo;the Great Disappointment&rdquo; when the date passed; and, in the twentieth century, several
+  named-and-missed dates across more than one modern movement. This is a documented pattern, not a judgment on
+  anyone's sincerity, and it cuts in a specific direction: it is evidence that the impulse this page is
+  describing &mdash; matching a real, frightening moment against the signs and concluding <em>this is it</em>
+  &mdash; has been strong, recurring, and, every time it has attached to a specific date, wrong so far. That
+  doesn't prove the tribulation isn't near; nobody can prove a negative about the future. It is, however, exactly
+  the caution the text itself gives, arriving from an entirely different direction.</p>
+</div>
+
+<h2>So &mdash; are we in it?</h2>
+<div class="panel prose">
+  <p>Here is what the chapter actually hands you, and what it doesn't. It hands you a real pattern &mdash; wars,
+  disasters, false messiahs &mdash; present in literally every era, including the first-century one Jesus was
+  addressing. It hands you a strong historical candidate for at least part of it, an actual catastrophe within a
+  named generation's lifetime, if you read &ldquo;this generation&rdquo; one way; and a still-future, distinct
+  event if you read it another. And it hands you, twice over, in language too plain to soften, an instruction not
+  to treat certainty about the calendar as the goal. What it never hands you is permission to treat a confident
+  <em>yes, now</em> or <em>no, not yet</em> as itself a mark of understanding it correctly. The mark of
+  faithfulness this chapter actually names, in the parables that immediately follow (the faithful and sensible
+  slave, the ten virgins next chapter), is different: <strong>stay awake</strong>, and be doing what you're
+  supposed to be doing &mdash; whether the day turns out to be today or not. That's what the text gives. The
+  weighing of the rest is, as always here, yours.</p>
+</div>
+""" + _ask_comment_nudge("Are we living in the Great Tribulation right now?", "ask-great-tribulation.html")
+    out = page(f"Are we living in the Great Tribulation right now? — {SITE_NAME}", body, active="ask",
+               desc="Matthew 24's actual list of signs, the four ways Christians have read when the Great "
+                    "Tribulation applies, and Jesus's own repeated warnings against reading your own moment "
+                    "as the decisive one — sourced, compared, and left for you to weigh.",
+               url="ask-great-tribulation.html")
+    open(os.path.join(OUT, "ask-great-tribulation.html"), "w", encoding="utf-8").write(out)
 
 
 def build_contact():
@@ -6861,6 +7062,7 @@ def main():
     build_ask_creation_days()
     build_ask_newton()
     build_ask_cain_seth()
+    build_ask_great_tribulation()
     build_es()
     build_contact()
     build_thanks()
