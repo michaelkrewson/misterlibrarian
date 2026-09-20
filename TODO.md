@@ -14,7 +14,15 @@ Eight Miles West (`west/`). Check items off as we ship them.
       Spanish header doesn't carry a search box yet. Built by `build_search_index()` /
       `build_search_page()` in `build.py`; verified with Playwright (desktop + mobile
       screenshots, a real form GET-submit from `ask.html` landing on 98 live "jehovah"
-      results, zero console errors).
+      results, zero console errors). **Moved 2026-09-19** from the `.topnav` pill row (where
+      it wrapped onto its own line) into `.utilnav-right`, alongside the language switch —
+      Michael's call, to match the corner-controls placement search boxes usually get rather
+      than sit in a nav row this header was never designed to hold it in (this header is a
+      centered/symmetric design, unlike the siblings' left-brand/right-utility bar). Mobile
+      menu's own copy (`#headerSearchMob`) untouched. Same pass widened `.hero p` (dropped its
+      `max-width:70ch` cap) — once the hero photo went full-width, that cap was the one thing
+      in the section not matching, and read as an awkward empty gap rather than a deliberate
+      readability choice for a two-paragraph intro.
 - [x] **Footer cross-links to the other five blogs.** Shipped 2026-09-19. Every English page's
       footer now carries a line linking The Librarian's Ledger / The Librarian Abroad / The
       Librarian's Regimen / The Librarian's Notebook / Eight Miles West, same names/order the

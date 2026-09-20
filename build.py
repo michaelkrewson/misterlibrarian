@@ -917,6 +917,9 @@ def header(active="", lang="en"):
     # the language switch, which is the one thing up there that IS a control.
     return f"""<header class="site-head">
   <div class="utilnav utilnav-right">
+    <form class="headersearch" action="search.html" method="get" role="search">
+      <input type="search" name="q" id="headerSearch" placeholder="Search…" aria-label="Search the site"/>
+    </form>
     <details class="langsel">
       <summary title="Language">\U0001F310 English</summary>
       <div class="langlist">
@@ -960,9 +963,6 @@ def header(active="", lang="en"):
     <a href="chronology.html"{cls('chronology')}>🕰 Chronology</a>
     <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
     <a href="about.html"{cls('about')}>About</a>
-    <form class="headersearch" action="search.html" method="get" role="search">
-      <input type="search" name="q" id="headerSearch" placeholder="Search…" aria-label="Search the site"/>
-    </form>
     {share_item}
   </nav>
 </header>"""

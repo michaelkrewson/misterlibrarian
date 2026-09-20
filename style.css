@@ -72,7 +72,12 @@ h2{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:upperc
 .hero{padding:8px 0 4px}
 .hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:clamp(24px,4.6vw,34px);
   line-height:1.25;color:#f7f2e2;margin:0 0 16px;letter-spacing:-0.2px}
-.hero p{font-size:14px;line-height:1.8;color:var(--text);max-width:70ch;margin:0 0 14px}
+/* No max-width here (dropped from 70ch, 2026-09-19): the intro is only two short
+   paragraphs, and capping their width was the one thing in this section NOT
+   spanning full width once the hero photo became a full-width banner -- it read
+   as a mismatch/empty gap rather than a deliberate readability choice. Matches
+   the photo, caption, and CTA row above/below it, which are already full-width. */
+.hero p{font-size:14px;line-height:1.8;color:var(--text);margin:0 0 14px}
 .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
 .btn{display:inline-block;background:var(--gold);color:#0b1929;font-weight:800;font-size:13px;
   padding:10px 20px;border-radius:10px}
