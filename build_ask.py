@@ -85,12 +85,19 @@ META_DESC_MAX = 155
 META_DESC_MIN = 70
 
 TAG_INDEX_MIN = 2          # a tag page below this stays built but noindex'd
-FRONT_HERO_IMG = "../img/great-isaiah-scroll.jpg"
-FRONT_HERO_ALT = ("Two columns of the Great Isaiah Scroll from Qumran — dense hand-written "
-                   "Hebrew on warm parchment, with an ancient crack running between the sheets")
-FRONT_HERO_CREDIT = ('The Great Isaiah Scroll — Qumran, 2nd century BC. Photograph: Ardon Bar '
-                      'Hama — via <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" '
-                      'rel="noopener" target="_blank">Wikimedia Commons</a> · public domain (detail).')
+# A distinct hero from the Bible's own (which reuses the Great Isaiah Scroll on
+# bible.html) -- the Main Reading Room's circular reference desk at the Library of
+# Congress, the literal "librarian's desk" a visitor approached to ask a question.
+# National Photo Co., early 1900s glass negative, gift of Herbert A. French (1947),
+# no known copyright restrictions per the Library of Congress's own designation.
+FRONT_HERO_IMG = "img/loc-reading-room-desk.jpg"
+FRONT_HERO_ALT = ("A bird's-eye view of the circular reference desk at the center of the "
+                   "Library of Congress Main Reading Room, ringed by card catalogs and "
+                   "reading chairs radiating outward")
+FRONT_HERO_CREDIT = ('The Main Reading Room, Library of Congress — Washington, D.C., early 1900s. '
+                      'National Photo Company — via '
+                      '<a href="https://commons.wikimedia.org/wiki/File:Reading_room,_Library_of_Congress,_Washington,_D.C..jpg" '
+                      'rel="noopener" target="_blank">Wikimedia Commons</a> · public domain.')
 
 FORM_ENDPOINT = "https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c"
 
