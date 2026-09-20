@@ -3,12 +3,28 @@
    .headersearch, buttons). This file holds only what that stylesheet doesn't have yet:
    the blog chrome, entry dateline/typography, the tile grid, and tag chips. */
 
+/* Page-wide accent glow — the same soft top-of-page radial technique MiSTeR Trader's
+   dashboard uses (dashboard/mr_trader.html: a wide, faint radial sitting behind
+   everything), tuned to this blog's own hue (the envelope mark's purple letter)
+   rather than the Bible's gold, so /ask/ reads as its own page, not a Bible page
+   that forgot its color. Higher specificity than ../style.css's body rule (a class
+   beats a bare element), so it wins regardless of link order. */
+body.askblog{background:
+    radial-gradient(120% 80% at 50% -8%, rgba(167,139,250,0.16), transparent 60%) fixed,
+    var(--bg)}
+
 /* ── chrome ── */
 .askhead{display:flex;align-items:center;
   column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:30px 0 18px;
   border-bottom:1px solid var(--border);margin-bottom:8px}
 .askhead .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:inherit}
-.askhead .mtlib-icon{width:40px;height:40px;flex:0 0 40px}
+/* Icon glow — the Bible's own mark gets a drop-shadow from shared style.css's
+   `.site-head .mtlib-icon` rule, but .askhead's own header was never under
+   `.site-head` so it never inherited it. Dual-tone to match the mark's two colors:
+   gold rim + purple letter (mirrors mr_trader.html's per-card icon glows, each
+   tinted to its own logo). */
+.askhead .mtlib-icon{width:40px;height:40px;flex:0 0 40px;
+  filter:drop-shadow(0 2px 10px rgba(232,201,104,0.4)) drop-shadow(0 0 9px rgba(167,139,250,0.35))}
 .askhead .wm{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:21px;
   color:#f7f2e2;letter-spacing:-0.2px}
 .askhead .wm .em{color:var(--gold);font-style:italic}
