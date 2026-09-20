@@ -278,6 +278,15 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
 .t-nwt{background:rgba(249,115,22,0.10);color:#f97316}
 /* TNM = the Spanish New World Translation (wol.jw.org), the Spanish-shelf twin of t-nwt */
 .t-tnm{background:rgba(249,115,22,0.10);color:#f97316;border-color:rgba(249,115,22,0.25)}
+/* Greek critical-apparatus witnesses (WH/Treg/NA28/RP) -- a different family from the
+   Bible-VERSION shelf tags above (KJV/ASV/NWT/...): these name printed editions of the
+   Greek text itself. Same defect class as the t-rv60/t-esv audits above: Revelation 12
+   already used all four with no rule at all, so they rendered as plain grey chips.
+   Found auditing Revelation 13, 2026-09-19. */
+.t-wh{background:rgba(236,72,153,0.10);color:#ec4899}
+.t-treg{background:rgba(20,184,166,0.10);color:#14b8a6}
+.t-na28{background:rgba(99,102,241,0.12);color:#6366f1}
+.t-rp{background:rgba(202,138,4,0.12);color:#ca8a04}
 .info-block{margin-top:14px;padding:14px 16px;background:rgba(167,139,250,0.04);
   border:1px solid rgba(167,139,250,0.15);border-radius:10px}
 .info-block h3{margin:0 0 8px;font-size:13px;color:var(--purple)}
