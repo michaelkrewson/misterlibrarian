@@ -941,7 +941,7 @@ def header(active="", lang="en"):
       <a href="ask.html"{cls('ask')}>\U0001F4D6 Dear Mr. Librarian</a>
       <a href="about.html"{cls('about')}>About</a>
       <div class="mobmenu-sep"></div>
-      <a href="contact.html">✉️ Ask a Question</a>
+      <a href="ask.html#ask-form">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
       <form class="headersearch" action="search.html" method="get" role="search">
         <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
@@ -992,7 +992,7 @@ FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask.html#ask-form">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
   <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -2284,9 +2284,7 @@ STATIC_PAGES = [
     ("About the project", "about.html",
      "The method, the seven-version shelf, and what “essentially literal, modern register” means here."),
     ("Dear Mr. Librarian", "ask.html",
-     "Reader questions about the translation, answered one at a time."),
-    ("Ask Mr. Librarian a question", "contact.html",
-     "Send in a question, a correction, or a chapter request."),
+     "Ask a question about the translation, or browse what's already been answered."),
     ("Concordance", "concordance.html",
      "Every significant English word in the translation so far, with every verse it appears in."),
     ("Dictionary", "dictionary.html",
@@ -4406,7 +4404,7 @@ def build_index(chapters):
   <a class="card" href="new-testament.html"><div class="card-t">\U0001F4DC The New Testament</div>
   <div class="card-d">Crossing from Hebrew into Greek: the critical text, the manuscript apparatus behind the translation, and the method for the Greek Scriptures.</div></a>
   <a class="card" href="ask.html"><div class="card-t">\U0001F4D6 Dear Mr. Librarian</div>
-  <div class="card-d">Reader questions answered — was the Word "God" or "a god" (John 1:1 and the deity of Christ), and why the Book of Enoch isn't included.</div></a>
+  <div class="card-d">Ask a question, or browse what's already been answered — was the Word "God" or "a god" (John 1:1 and the deity of Christ), and why the Book of Enoch isn't included.</div></a>
   <a class="card" href="about.html"><div class="card-t">ℹ️ About the project</div>
   <div class="card-d">The method, the seven-version shelf, and what "essentially literal, modern register" means here.</div></a>
 </div>
@@ -5670,11 +5668,13 @@ Reina-Valera.</p>
 
 
 def build_ask_index():
-    body = """<h1 class="pagetitle">\U0001F4D6 Dear Mr. Librarian</h1>
+    body = f"""<h1 class="pagetitle">\U0001F4D6 Dear Mr. Librarian</h1>
 <p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
 between versions — answered one at a time, the way everything here is done: sourced, compared, and left for you to
-weigh rather than settled from the desk. Have one of your own? The <a href="contact.html">question box</a> is
+weigh rather than settled from the desk. Have one of your own? Ask it below — good questions become posts here,
 exactly how this series grows.</p>
+{_question_form_html()}
+<h2>Answered so far</h2>
 <div class="cardgrid">
   <a class="card" href="ask-great-tribulation.html"><div class="card-t">Are we living in the Great Tribulation right now?</div>
   <div class="card-d">Matthew 24's actual list of signs, four ways Christians have read when it applies, and
@@ -5701,8 +5701,8 @@ exactly how this series grows.</p>
   on.</div></a>
 </div>"""
     out = page(f"Dear Mr. Librarian — {SITE_NAME}", body, active="ask",
-               desc="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, "
-                    "compared, and left for you to weigh.", url="ask.html", og_type="website")
+               desc="Ask Mr. Librarian a question about the translation, or browse what's already been "
+                    "answered — sourced, compared, and left for you to weigh.", url="ask.html", og_type="website")
     open(os.path.join(OUT, "ask.html"), "w", encoding="utf-8").write(out)
 
 
@@ -5955,7 +5955,7 @@ def build_ask_jesus_god():
   of very God, a lesser divine being, or the first of creatures. On <em>that</em>, I set the two cases side by side, as above, and hands the scales to you.</p>
   <p class="muted" style="margin-top:6px">Read the verse in place, with its note: <a href="john-1.html#v1">John
   1:1</a>. The manuscripts behind 1:18 and 1:34: the <a href="new-testament.html">New Testament introduction</a>.
-  More questions become posts here — <a href="contact.html">send yours to the librarian's desk</a>.</p>
+  More questions become posts here — <a href="ask.html#ask-form">send yours to the librarian's desk</a>.</p>
 </div>
 
 <div class="panel" style="margin-top:14px">
@@ -6512,14 +6512,16 @@ thousand years, and the one thing Jesus himself keeps saying about trying to ans
     open(os.path.join(OUT, "ask-great-tribulation.html"), "w", encoding="utf-8").write(out)
 
 
-def build_contact():
-    body = f"""<h1 class="pagetitle">✉️ Ask Mr. Librarian a question</h1>
-<p class="lede">A question about the project, a translation choice you'd argue with, a chapter request,
-or something you've always wondered about the text — send it in. Good questions become
-<a href="ask-enoch.html">Dear Mr. Librarian</a> posts (anonymously unless you say otherwise), and reader
-questions are exactly how that series grows.</p>
-
-<div class="panel">
+def _question_form_html():
+    """The 'ask a question' form -- shared by ask.html (folded in 2026-09-19 so the Dear Mr.
+    Librarian nav destination has the live form right there, matching finance/notebook/health's
+    own Ask Mr. Librarian pages, which ARE the form) and contact.html (kept working at its old
+    URL for anyone who already bookmarked/shared it, but no longer linked from the header/
+    footer/mobmenu -- see header()/FOOTER). id="ask-form" so a link elsewhere on the site can
+    jump straight to it (ask.html#ask-form). English only -- the Spanish twin
+    (build_contact_es) keeps its own copy; there's no Spanish Dear Mr. Librarian page to fold
+    it into."""
+    return f"""<div class="panel" id="ask-form">
   <form action="{FORM_ENDPOINT}" method="POST" class="askform">
     <input type="hidden" name="_subject" value="Ask Mr. Librarian — a question from the site"/>
     <input type="hidden" name="_template" value="table"/>
@@ -6540,6 +6542,16 @@ questions are exactly how that series grows.</p>
     you back here. Nothing is posted publicly — questions go straight to Mr. Librarian's desk.</p>
   </form>
 </div>"""
+
+
+def build_contact():
+    body = f"""<h1 class="pagetitle">✉️ Ask Mr. Librarian a question</h1>
+<p class="lede">A question about the project, a translation choice you'd argue with, a chapter request,
+or something you've always wondered about the text — send it in. Good questions become
+<a href="ask-enoch.html">Dear Mr. Librarian</a> posts (anonymously unless you say otherwise), and reader
+questions are exactly how that series grows.</p>
+
+{_question_form_html()}"""
     out = page(f"Ask a question — {SITE_NAME}", body, active="contact",
                desc="Send Mr. Librarian a question about the translation, a verse, or the project — "
                     "good questions become Dear Mr. Librarian posts.", url="contact.html", og_type="website")

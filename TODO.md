@@ -49,11 +49,20 @@ Eight Miles West (`west/`). Check items off as we ship them.
       per occurrence, not just the chapter). Revisit only if *thematic* browsing (e.g. "every
       chapter touching prophecy," which the Concordance genuinely can't do) becomes a wanted
       feature in its own right — that's a separate project, not this parity pass.
-- [ ] **"Dear Mr. Librarian" pattern mismatch.** On finance/notebook/health, that nav slot
-      *is* the live question-submission form (name/email/question + captcha). On the Bible
-      project it's a static FAQ digest, and the actual form lives a click deeper at
-      `contact.html`. Decide: fold the form into `ask.html` to match, or leave as-is
-      (arguably a reasonable variant, just inconsistent).
+- [x] **"Dear Mr. Librarian" pattern mismatch.** Shipped 2026-09-19 (Michael's call: match the
+      other blogs' functionality/look, with updated cards). `ask.html` now opens with the same
+      live question-submission form finance/notebook/health's own "Ask Mr. Librarian" pages
+      are (name/email optional, question required, captcha note) via a new shared
+      `_question_form_html()` (`id="ask-form"`), with the existing 7-post FAQ archive kept
+      below it under a new "Answered so far" heading rather than thrown away — unique content
+      the siblings don't have. `contact.html` still builds and works at its old URL (backward
+      compat for anyone who bookmarked/shared it) but is no longer linked from the header/
+      footer/mobmenu/per-post CTAs — those now point at `ask.html#ask-form`. Updated: the
+      homepage's "Dear Mr. Librarian" card description (now mentions asking, not just
+      browsing), `ask.html`'s own meta description, and the search index (merged the separate
+      `contact.html` entry into the enriched "Dear Mr. Librarian" one, 2101→2100 items).
+      Verified with Playwright: form renders correctly, footer/mobmenu links jump straight to
+      `#ask-form`, `contact.html` still returns 200, zero console errors.
 - [x] **Homepage hero photo is small/side-column, not a banner.** Shipped 2026-09-19. The
       Great Isaiah Scroll photo moved out of the 260–360px `.hero-grid` side column into a
       full-width `.fronthero` banner above the `<h1>`, matching finance/notebook/health/west's

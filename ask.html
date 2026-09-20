@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Dear Mr. Librarian — The MisterLibrarian Bible Project</title>
-<meta name="description" content="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, compared, and left for you to weigh."/>
+<meta name="description" content="Ask Mr. Librarian a question about the translation, or browse what&#x27;s already been answered — sourced, compared, and left for you to weigh."/>
 <link rel="canonical" href="https://mistertranslation.com/ask.html"/>
 <meta property="og:site_name" content="Mister Translation"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Dear Mr. Librarian — The MisterLibrarian Bible Project"/>
-<meta property="og:description" content="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, compared, and left for you to weigh."/>
+<meta property="og:description" content="Ask Mr. Librarian a question about the translation, or browse what&#x27;s already been answered — sourced, compared, and left for you to weigh."/>
 <meta property="og:image" content="https://mistertranslation.com/img/og-default.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Dear Mr. Librarian — The MisterLibrarian Bible Project"/>
-<meta name="twitter:description" content="Reader questions about The MisterLibrarian Bible Project, answered one at a time — sourced, compared, and left for you to weigh."/>
+<meta name="twitter:description" content="Ask Mr. Librarian a question about the translation, or browse what&#x27;s already been answered — sourced, compared, and left for you to weigh."/>
 <meta name="twitter:image" content="https://mistertranslation.com/img/og-default.png"/>
 <meta property="og:url" content="https://mistertranslation.com/ask.html"/>
 <link rel="alternate" type="application/rss+xml" title="The MisterLibrarian Bible Project" href="feed.xml"/>
@@ -67,7 +67,7 @@
       <a href="ask.html" class="on">📖 Dear Mr. Librarian</a>
       <a href="about.html">About</a>
       <div class="mobmenu-sep"></div>
-      <a href="contact.html">✉️ Ask a Question</a>
+      <a href="ask.html#ask-form">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
       <form class="headersearch" action="search.html" method="get" role="search">
         <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
@@ -112,8 +112,30 @@ document.addEventListener("DOMContentLoaded", function(){
 <h1 class="pagetitle">📖 Dear Mr. Librarian</h1>
 <p class="lede">Reader questions about the translation — a word-choice, the text, the canon, a comparison
 between versions — answered one at a time, the way everything here is done: sourced, compared, and left for you to
-weigh rather than settled from the desk. Have one of your own? The <a href="contact.html">question box</a> is
+weigh rather than settled from the desk. Have one of your own? Ask it below — good questions become posts here,
 exactly how this series grows.</p>
+<div class="panel" id="ask-form">
+  <form action="https://formsubmit.co/cea4e687d42ed1897e3ccd3753c4d75c" method="POST" class="askform">
+    <input type="hidden" name="_subject" value="Ask Mr. Librarian — a question from the site"/>
+    <input type="hidden" name="_template" value="table"/>
+    <input type="hidden" name="_next" value="https://mistertranslation.com/thanks.html"/>
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+    <label>Your name <span class="opt">(optional)</span>
+      <input type="text" name="name" placeholder="However you'd like to be credited — or leave blank"/>
+    </label>
+    <label>Your email <span class="opt">(optional — only needed if you'd like a reply)</span>
+      <input type="email" name="email" placeholder="you@example.com"/>
+    </label>
+    <label>Your question <span class="req">(required)</span>
+      <textarea name="question" required rows="7"
+        placeholder="Ask anything — a verse, a word choice, a comparison between versions, what's coming next…"></textarea>
+    </label>
+    <button class="btn" type="submit">Send to the librarian's desk</button>
+    <p class="formnote">Sending shows a quick captcha (keeps the robots out of the library), then brings
+    you back here. Nothing is posted publicly — questions go straight to Mr. Librarian's desk.</p>
+  </form>
+</div>
+<h2>Answered so far</h2>
 <div class="cardgrid">
   <a class="card" href="ask-great-tribulation.html"><div class="card-t">Are we living in the Great Tribulation right now?</div>
   <div class="card-d">Matthew 24's actual list of signs, four ways Christians have read when it applies, and
@@ -143,7 +165,7 @@ exactly how this series grows.</p>
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask.html#ask-form">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
   <p><a href="finance/">The Librarian's Ledger</a> · <a href="travel/">The Librarian Abroad</a> · <a href="health/">The Librarian's Regimen</a> · <a href="notebook/">The Librarian's Notebook</a> · <a href="west/">Eight Miles West</a></p>
   <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>
 </footer>
