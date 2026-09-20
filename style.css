@@ -49,6 +49,13 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;colo
   border:1px solid transparent}
 .topnav a:hover{color:var(--text);border-color:var(--border)}
 .topnav a.on{color:var(--gold);border-color:rgba(232,201,104,0.35);background:rgba(232,201,104,0.08)}
+.headersearch{margin:0;display:inline-flex}
+.headersearch input[type=search]{width:118px;font:inherit;font-size:12px;color:var(--text);
+  background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:6px 12px;
+  transition:width .18s ease,border-color .18s ease}
+.headersearch input[type=search]::placeholder{color:var(--dim)}
+.headersearch input[type=search]::-webkit-search-cancel-button{filter:invert(0.6)}
+.headersearch input[type=search]:focus{outline:none;width:190px;border-color:var(--gold)}
 
 /* ── shared blocks ── */
 h1.pagetitle{font-size:24px;font-weight:800;letter-spacing:-0.3px;margin:6px 0 10px;color:#fff}
@@ -65,7 +72,12 @@ h2{font-size:11px;color:var(--muted);letter-spacing:0.12em;text-transform:upperc
 .hero{padding:8px 0 4px}
 .hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:clamp(24px,4.6vw,34px);
   line-height:1.25;color:#f7f2e2;margin:0 0 16px;letter-spacing:-0.2px}
-.hero p{font-size:14px;line-height:1.8;color:var(--text);max-width:70ch;margin:0 0 14px}
+/* No max-width here (dropped from 70ch, 2026-09-19): the intro is only two short
+   paragraphs, and capping their width was the one thing in this section NOT
+   spanning full width once the hero photo became a full-width banner -- it read
+   as a mismatch/empty gap rather than a deliberate readability choice. Matches
+   the photo, caption, and CTA row above/below it, which are already full-width. */
+.hero p{font-size:14px;line-height:1.8;color:var(--text);margin:0 0 14px}
 .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
 .btn{display:inline-block;background:var(--gold);color:#0b1929;font-weight:800;font-size:13px;
   padding:10px 20px;border-radius:10px}
@@ -227,6 +239,9 @@ body.show-esp .esp{display:block;margin-top:3px;padding-left:10px;border-left:2p
   .mobmenu-panel a.cur::after{content:" ✓";font-size:11px;opacity:.85}
   .mobmenu-sep{height:1px;background:var(--border);margin:6px 8px}
   .mobmenu-panel .share-widget{padding:6px 14px}
+  .mobmenu-panel .headersearch{padding:0 8px}
+  .mobmenu-panel .headersearch input[type=search]{width:100%}
+  .mobmenu-panel .headersearch input[type=search]:focus{width:100%}
 }
 /* Share rides as the last item in .topnav itself (see header()) -- sized to
    match .topnav a so it reads as a native nav item, not a separate floating
@@ -417,6 +432,21 @@ body.hide-heb .xrefs{margin-top:5px}
 .atlas-items{display:flex;flex-wrap:wrap;gap:6px 8px;padding:2px 0}
 .atlas-item{font-size:12.5px;padding:5px 10px;border-radius:14px;background:var(--bg2);
   border:1px solid var(--border);text-decoration:none;color:var(--text)}
+
+/* ── search.html ── */
+.searchbox-panel{padding:14px 16px}
+.pagesearch-input{width:100%;font:inherit;font-size:15px;color:var(--text);background:var(--bg2);
+  border:1px solid var(--border);border-radius:10px;padding:11px 14px}
+.pagesearch-input:focus{outline:none;border-color:var(--gold)}
+.search-status{font-size:12px;color:var(--muted);margin:14px 2px 8px}
+.search-results{display:flex;flex-direction:column;gap:1px}
+.sr-item{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;padding:12px 14px;
+  border-radius:10px;text-decoration:none;color:var(--text);border:1px solid transparent}
+.sr-item:hover{background:var(--bg1);border-color:var(--border)}
+.sr-cat{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+  color:var(--gold);flex:0 0 auto}
+.sr-t{font-weight:700;color:#fff;flex:0 0 auto}
+.sr-b{font-size:12.5px;color:var(--muted);line-height:1.5;flex:1 1 100%}
 .atlas-item:hover{background:var(--bg1);border-color:var(--dim)}
 .ehead{font-weight:800;color:#fff;font-size:14.5px;margin-bottom:6px}
 .eentry p{margin:0 0 8px;font-size:12.8px;line-height:1.72;color:var(--muted)}
@@ -708,21 +738,24 @@ tr.ch-dim td{opacity:0.55}
 .chron-honest,.chron-video,.chron-roadmap{margin-top:26px}
 .chron-honest h2,.chron-video h2,.chron-roadmap h2{font-size:16px;color:var(--gold)}
 
-/* ---- Home hero: the Shrine of the Book figure (2026-07-16) ---- */
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,360px);
-  column-gap:28px;align-items:center}
-.hero-fig{margin:4px 0 0;background:var(--bg2);border:1px solid var(--border);
-  border-radius:12px;padding:10px;align-self:start}
-.hero-fig img{display:block;width:100%;height:auto;border-radius:7px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.45)}
-.hero-fig figcaption{font-size:11.5px;line-height:1.55;color:var(--muted);margin-top:10px}
-.hero-fig .ms-name{display:block;color:var(--gold);font-weight:800;font-size:12px;
+/* ---- Home hero: the Shrine of the Book figure (2026-07-16; rebuilt as a
+   full-width banner 2026-09-19 to match finance/notebook/health/west's own
+   .fronthero -- the Great Isaiah Scroll used to sit in a 260-360px side
+   column beside the intro copy, the one visual mismatch left across the six
+   blogs' home pages. Same figcaption sub-structure as before (a bold
+   manuscript-name line + body + a dimmer credit line), just re-themed for a
+   banner instead of a side panel -- richer than the siblings' single italic
+   caption line, so kept rather than flattened to match theirs exactly. ---- */
+.fronthero{margin:4px 0 22px}
+.fronthero img{display:block;width:100%;height:280px;object-fit:cover;
+  border-radius:12px;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+.fronthero figcaption{font-size:11.5px;line-height:1.55;color:var(--muted);margin:12px 4px 0}
+.fronthero .ms-name{display:block;color:var(--gold);font-weight:800;font-size:12px;
   letter-spacing:0.02em;margin-bottom:4px}
-.hero-fig .ms-credit{display:block;margin-top:8px;font-size:10.5px;line-height:1.5;color:var(--dim)}
-.hero-fig .ms-credit a{color:var(--muted)}
+.fronthero .ms-credit{display:block;margin-top:8px;font-size:10.5px;line-height:1.5;color:var(--dim)}
+.fronthero .ms-credit a{color:var(--muted)}
 @media (max-width:760px){
-  .hero-grid{display:block}
-  .hero-fig{max-width:420px;margin:18px auto 0}
+  .fronthero img{height:170px;border-radius:10px}
 }
 
 /* ---- Red letters: the recorded words of Jesus (the Gospels + the risen

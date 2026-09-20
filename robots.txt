@@ -37,3 +37,9 @@ Sitemap: https://mistertranslation.com/notebook/sitemap.xml
 # /west/ -- Eight Miles West, the family history (added 2026-09-11). Linked from
 # the home page's hub card like the others, and listed here as well.
 Sitemap: https://mistertranslation.com/west/sitemap.xml
+
+# /ask/ -- Dear Mr. Librarian (split out 2026-09-19, build_ask.py). Deliberately
+# NOT linked from the home page's hub card -- reachable only via the Bible
+# project's own nav -- but still gets a sitemap line here like every other
+# publication; "no hub card" and "no sitemap" are different decisions.
+Sitemap: https://mistertranslation.com/ask/sitemap.xml
