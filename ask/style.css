@@ -60,6 +60,12 @@ body.askblog{background:
 
 /* ── entry page ── */
 .entry{max-width:720px;margin:22px auto 0}
+/* Instagram's embed.js REPLACES the blockquote with its own <iframe>, carrying
+   its own hardcoded inline `margin: 0 0 12px` (no auto) -- an ancestor
+   `text-align:center` does nothing against a `display:block` element, and an
+   inline style always outranks a plain CSS rule, so only `!important` in a
+   real stylesheet wins. Centers any Instagram embed dropped into a post. */
+.entry iframe.instagram-media{margin:0 auto 20px !important}
 .etitle{font-family:Georgia,"Times New Roman",serif;font-size:29px;font-weight:700;
   line-height:1.25;margin:0 0 8px;color:#f7f2e2;letter-spacing:-0.2px}
 .edate{margin:0 0 22px;color:var(--dim);font-size:11px;letter-spacing:0.12em;
