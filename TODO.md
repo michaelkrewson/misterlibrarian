@@ -36,8 +36,19 @@ Eight Miles West (`west/`). Check items off as we ship them.
       matching search.html. Verified: well-formed XML (`xml.dom.minidom`), sane item dates/
       links/descriptions, autodiscovery tag present on root + `dict/` subdirectory pages,
       absent from the Spanish edition.
-- [ ] **Tags/archive index page.** Ledger has `finance/tags.html`. No equivalent for the
-      Bible project.
+- [x] **Tags/archive index page — N/A, closed 2026-09-19.** `finance/tags.html` is a topic
+      cloud for a dated-entry blog: ~170 posts hand-tagged at authorship with editorial themes
+      ("bitcoin," "cftc," "seed phrase"), grouping *articles* by *subject*. The Bible project
+      has no equivalent data (no tags exist anywhere on a chapter/dictionary/encyclopedia
+      entry), and retrofitting one would mean hand-tagging 353 already-published chapters +
+      1,257 dictionary + 472 encyclopedia entries with themes invented after the fact — a real
+      content-curation project, not a feature port. The Concordance (`concordance.html`) is
+      this site's correct analog: an auto-generated word index (word · count · links) built
+      from the translation's own vocabulary rather than editorial tags — zero curation debt,
+      and each reference links straight to the verse (confirmed: `<a href="genesis-1.html#v5">`
+      per occurrence, not just the chapter). Revisit only if *thematic* browsing (e.g. "every
+      chapter touching prophecy," which the Concordance genuinely can't do) becomes a wanted
+      feature in its own right — that's a separate project, not this parity pass.
 - [ ] **"Dear Mr. Librarian" pattern mismatch.** On finance/notebook/health, that nav slot
       *is* the live question-submission form (name/email/question + captcha). On the Bible
       project it's a static FAQ digest, and the actual form lives a click deeper at
