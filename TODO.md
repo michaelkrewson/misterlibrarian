@@ -54,6 +54,13 @@ Eight Miles West (`west/`). Check items off as we ship them.
       project it's a static FAQ digest, and the actual form lives a click deeper at
       `contact.html`. Decide: fold the form into `ask.html` to match, or leave as-is
       (arguably a reasonable variant, just inconsistent).
-- [ ] **Homepage hero photo is small/side-column, not a banner.** `bible.html`'s hero photo
-      (`.hero-fig`) sits in a 260–360px side column next to the intro text; every sibling
-      blog leads with a full-width `loading="eager"` banner photo. Lower priority / cosmetic.
+- [x] **Homepage hero photo is small/side-column, not a banner.** Shipped 2026-09-19. The
+      Great Isaiah Scroll photo moved out of the 260–360px `.hero-grid` side column into a
+      full-width `.fronthero` banner above the `<h1>`, matching finance/notebook/health/west's
+      own `.fronthero` pattern (fixed-height, `object-fit:cover`, rounded, `loading="eager"`
+      since it's now above the fold). Kept the richer figcaption sub-structure (bold
+      manuscript-name line + body + a dimmer credit line) rather than flattening it to the
+      siblings' single italic caption, since there's more real citation content here. Verified
+      with Playwright on desktop + mobile — clean crop, everything below (CTA buttons, Verse
+      of the Day, card grid) unaffected. Scoped to `bible.html` only (its Spanish twin,
+      `es.html`, never used the old side-column layout).

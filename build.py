@@ -4359,9 +4359,20 @@ def build_index(chapters):
     pub = [_by_slug[s] for s in PUBLISH_ORDER if s in _by_slug] or list(CHAPTERS)
     latest = pub[-1]
     votd_json = json.dumps(votd_entries(chapters), ensure_ascii=False).replace("</", "<\\/")
-    body = f"""<section class="hero">
+    body = f"""<figure class="fronthero">
+    <img src="img/great-isaiah-scroll.jpg" width="1040" height="639" loading="eager"
+      alt="Two columns of the Great Isaiah Scroll from Qumran — dense hand-written Hebrew on warm parchment, with an ancient crack running between the sheets"/>
+    <figcaption>
+      <span class="ms-name">The Great Isaiah Scroll — Qumran, 2nd century BC</span>
+      Two columns of the <em>Great Isaiah Scroll</em> (1QIsa<sup>a</sup>), from Cave 1 at Qumran — the oldest
+      complete copy of any book of the Bible, and the treasure the Shrine of the Book in Jerusalem was built
+      to house.
+      <span class="ms-credit">Photograph: Ardon Bar Hama — via
+      <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · public domain (detail)</span>
+    </figcaption>
+  </figure>
+<section class="hero">
   <h1>A new translation of the Bible,<br/>made one chapter at a time.</h1>
-  <div class="hero-grid">
   <div class="hero-copy">
   <p>Welcome. This project translates the Bible into modern English directly from the original Hebrew —
   the Masoretic Text, reproduced verse-by-verse alongside the new rendering so every choice can be checked
@@ -4377,19 +4388,6 @@ def build_index(chapters):
     <a class="btn" href="genesis-1.html">Start at Genesis 1</a>
     <a class="btn btn-2" href="{chapter_filename(latest[1], latest[2])}">Newest: {latest[1]} {latest[2]}</a>
   </div>
-  </div>
-  <figure class="hero-fig">
-    <img src="img/great-isaiah-scroll.jpg" width="1040" height="639" loading="lazy"
-      alt="Two columns of the Great Isaiah Scroll from Qumran — dense hand-written Hebrew on warm parchment, with an ancient crack running between the sheets"/>
-    <figcaption>
-      <span class="ms-name">The Great Isaiah Scroll — Qumran, 2nd century BC</span>
-      Two columns of the <em>Great Isaiah Scroll</em> (1QIsa<sup>a</sup>), from Cave 1 at Qumran — the oldest
-      complete copy of any book of the Bible, and the treasure the Shrine of the Book in Jerusalem was built
-      to house.
-      <span class="ms-credit">Photograph: Ardon Bar Hama — via
-      <a href="https://commons.wikimedia.org/wiki/File:Great_Isaiah_Scroll.jpg" rel="noopener">Wikimedia Commons</a> · public domain (detail)</span>
-    </figcaption>
-  </figure>
   </div>
 </section>
 

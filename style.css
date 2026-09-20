@@ -733,21 +733,24 @@ tr.ch-dim td{opacity:0.55}
 .chron-honest,.chron-video,.chron-roadmap{margin-top:26px}
 .chron-honest h2,.chron-video h2,.chron-roadmap h2{font-size:16px;color:var(--gold)}
 
-/* ---- Home hero: the Shrine of the Book figure (2026-07-16) ---- */
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,360px);
-  column-gap:28px;align-items:center}
-.hero-fig{margin:4px 0 0;background:var(--bg2);border:1px solid var(--border);
-  border-radius:12px;padding:10px;align-self:start}
-.hero-fig img{display:block;width:100%;height:auto;border-radius:7px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.45)}
-.hero-fig figcaption{font-size:11.5px;line-height:1.55;color:var(--muted);margin-top:10px}
-.hero-fig .ms-name{display:block;color:var(--gold);font-weight:800;font-size:12px;
+/* ---- Home hero: the Shrine of the Book figure (2026-07-16; rebuilt as a
+   full-width banner 2026-09-19 to match finance/notebook/health/west's own
+   .fronthero -- the Great Isaiah Scroll used to sit in a 260-360px side
+   column beside the intro copy, the one visual mismatch left across the six
+   blogs' home pages. Same figcaption sub-structure as before (a bold
+   manuscript-name line + body + a dimmer credit line), just re-themed for a
+   banner instead of a side panel -- richer than the siblings' single italic
+   caption line, so kept rather than flattened to match theirs exactly. ---- */
+.fronthero{margin:4px 0 22px}
+.fronthero img{display:block;width:100%;height:280px;object-fit:cover;
+  border-radius:12px;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+.fronthero figcaption{font-size:11.5px;line-height:1.55;color:var(--muted);margin:12px 4px 0}
+.fronthero .ms-name{display:block;color:var(--gold);font-weight:800;font-size:12px;
   letter-spacing:0.02em;margin-bottom:4px}
-.hero-fig .ms-credit{display:block;margin-top:8px;font-size:10.5px;line-height:1.5;color:var(--dim)}
-.hero-fig .ms-credit a{color:var(--muted)}
+.fronthero .ms-credit{display:block;margin-top:8px;font-size:10.5px;line-height:1.5;color:var(--dim)}
+.fronthero .ms-credit a{color:var(--muted)}
 @media (max-width:760px){
-  .hero-grid{display:block}
-  .hero-fig{max-width:420px;margin:18px auto 0}
+  .fronthero img{height:170px;border-radius:10px}
 }
 
 /* ---- Red letters: the recorded words of Jesus (the Gospels + the risen
