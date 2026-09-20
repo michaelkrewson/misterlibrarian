@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20 05:59 UTC",
+ "generated": "2026-09-20 15:52 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-18",
@@ -219,9 +219,9 @@
     "flag": "🇮🇳",
     "currency": "INR",
     "source": "Reserve Bank of India — Weekly Statistical Supplement: \"Reserve Money: Components and Sources\" for M0, \"Money Stock: Components and Sources\" for M3 (M1 has no row of its own there — derived by summing that same table's own component rows: Currency with the Public + Demand Deposits with Banks + 'Other' Deposits with the RBI, the RBI's own textbook M1 definition). Not RBI's DBIE portal (a JS app with no confirmed keyless API) — these are separate, permanent, server-rendered WSS release pages, crawled for the latest release each time. No M2 published (needs post office savings-bank data RBI doesn't report on this cadence). ₹ Crore.",
-    "m0": 52766.42,
-    "m0_date": "Aug 31, 2026",
-    "usd_m0": 550.3381309970797,
+    "m0": null,
+    "m0_date": null,
+    "usd_m0": null,
     "m1": 79198.82,
     "m1_date": "Aug 31, 2026",
     "usd_m1": 826.0202336253651,
@@ -257,28 +257,6 @@
     "broad_yoy_pct": 1.2210684580460152,
     "volatility_pct": 8.134220457709528,
     "turnover_usd": 1612800000000.0
-   },
-   {
-    "area": "Australia",
-    "flag": "🇦🇺",
-    "currency": "AUD",
-    "source": "Reserve Bank of Australia — \"D3 Monetary Aggregates\" CSV (rba.gov.au/statistics/tables/csv/d3-data.csv), already in A$ billion. Supersedes an earlier finding that this table was xlsx-only (a spreadsheet-parsing dependency this stdlib-only fetcher deliberately avoids) — the RBA has since added a genuine CSV export for it. M0 = \"Money base\" (DMAMMB, not seasonally adjusted — no SA variant is published); M1/M3 use the seasonally-adjusted series (DMAM1S/DMAM3S). No M2 — Australia's own convention skips straight from M1 to M3 (it separately publishes an even-broader \"Broad money\" aggregate, but M3 is this economy's own real M3, not a substitution the way the UK's M4 is).",
-    "m0": 308.0,
-    "m0_date": "31/07/2026",
-    "usd_m0": 219.29512281950872,
-    "m1": 2013.8,
-    "m1_date": "31/07/2026",
-    "usd_m1": 1433.819864720541,
-    "m2": null,
-    "m2_date": null,
-    "usd_m2": null,
-    "m3": 3497.2,
-    "m3_date": "31/07/2026",
-    "usd_m3": 2489.99644001424,
-    "broad_usd": 2489.99644001424,
-    "broad_yoy_pct": 7.5532045762086275,
-    "volatility_pct": 7.759429855087541,
-    "turnover_usd": 585600000000.0
    },
    {
     "area": "Denmark",
@@ -464,9 +442,9 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 126614.39142858834,
-  "n_resolved": 15,
-  "n_total": 20
+  "total_broad_usd_b": 124124.3949885741,
+  "n_resolved": 14,
+  "n_total": 19
  },
  "reserves_fx": {
   "rows": [
@@ -624,7 +602,7 @@
   "total_usd": 3813666637997.014,
   "world_official_tonnes_estimate": 36600,
   "price_usd_oz": 4424.89990234375,
-  "price_as_of": "2026-09-20 05:57 UTC",
+  "price_as_of": "2026-09-20 15:50 UTC",
   "world_market_value_usd": 30766688382378.64,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
@@ -2003,17 +1981,17 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 80452.7578125,
-  "market_cap_usd": 1616040717959.6748,
+  "price_usd": 80839.4921875,
+  "market_cap_usd": 1623822627351.0967,
   "btc_rank": 12,
-  "volatility_pct": 37.159456473518844,
-  "turnover_usd": 25219797701.376064,
-  "broad_yoy_pct": 0.8182601006893067,
+  "volatility_pct": 37.153736599986324,
+  "turnover_usd": 23073028259.044853,
+  "broad_yoy_pct": 0.8182532261139078,
   "lineup": [
    {
-    "label": "Broad money — 15 economies with live data",
-    "usd": 126614391428588.34,
-    "note": "The 15 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
+    "label": "Broad money — 14 economies with live data",
+    "usd": 124124394988574.11,
+    "note": "The 14 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",
@@ -2022,7 +2000,7 @@
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1616040717959.6748,
+    "usd": 1623822627351.0967,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
