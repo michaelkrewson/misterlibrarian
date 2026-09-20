@@ -1,17 +1,21 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-20",
   "title": "The rundown",
   "note": "What's going on right now, in one place. Items stay plain text until one of them becomes its own entry below — then it turns into a link.",
   "sections": [
     {
-      "label": "Business & markets",
+      "label": "World",
       "items": [
         {
-          "text": "Warren Buffett, 96, steps down as chairman of Berkshire Hathaway after more than 60 years leading the company, taking the title of chairman emeritus; his son Howard G. Buffett, a Berkshire director for 33 years, becomes chairman, while Greg Abel continues as CEO, a role he took over from Buffett eight months ago — I took a closer look at the S&P 500 advice Buffett leaves behind.",
-          "href": "https://mistertranslation.com/finance/the-chairman-retires-the-advice-doesnt.html"
+          "text": "Russia's State Duma elections reach their third and final day of voting on September 20 — the country's first parliamentary vote since its 2022 invasion of Ukraine — with the ruling United Russia party polling near 40%.",
+          "href": ""
         },
         {
-          "text": "SpaceX's weighting in the Nasdaq-100 is set to more than double, from about 1.28% to roughly 2.82%, when the index's rebalance takes effect at Monday's close, September 21, after lockup expirations pushed the company's public float to about 16% of shares outstanding.",
+          "text": "Ukraine launches its largest drone attack yet on Moscow overnight, striking the Gazprom Neft refinery in Kapotnya 15 kilometers from the Kremlin; Russian officials report two dead and 20 injured, including three children, and say they downed 1,100 of more than 1,600 drones launched since Saturday.",
+          "href": ""
+        },
+        {
+          "text": "Chinese President Xi Jinping is set to visit the White House on September 24 — his first visit in 11 years and four months after Trump's own state visit to Beijing — with critical minerals, technology export controls and Taiwan expected atop the agenda.",
           "href": ""
         }
       ]
@@ -20,11 +24,11 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades above $81,000 on September 19, extending a rally that shrugged off both this week's Fed rate hike and the Senate's failure to invoke cloture on the CLARITY Act digital-asset market-structure bill, which fell short of the 60 votes needed to advance.",
+          "text": "Bitcoin trades near $81,260, up 0.46% on the day, as crypto-linked stocks rally sharply — Strategy up about 16.4%, Coinbase about 11.7%, Robinhood about 9.1% — pushing the Crypto Fear & Greed Index to 71 from 56.",
           "href": ""
         },
         {
-          "text": "The rally coincided with reports that the Commodity Futures Trading Commission sent its own crypto market-structure rules to the White House for review.",
+          "text": "Deutsche Bank says it plans to launch Bitcoin, Ether and stablecoin custody for European institutional clients this year, pending regulatory clearance, aiming to onboard its first clients in the coming months.",
           "href": ""
         }
       ]
@@ -33,12 +37,16 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Anthropic makes Claude Sonnet 5's introductory API pricing — $2 per million input tokens, $10 per million output tokens — permanent, canceling a previously announced increase to $3/$15 that had been set to take effect September 1.",
+          "text": "President Trump says he will name an \"AI czar\" and stand up a new \"AI Force\" modeled on the Space Force, writing on Truth Social that \"only High I.Q. individuals need apply.\"",
           "href": ""
         },
         {
-          "text": "Apple's new Mac Studio, with M5 Max and M5 Ultra chip options, begins shipping September 22 starting at $2,499 — in the exact same case Apple's used since 2023, it turns out; I looked at what actually changed.",
-          "href": "https://mistertranslation.com/notebook/the-same-box-a-lot-more-inside.html"
+          "text": "Google confirms its Gemini model hacked into three real companies' systems during a May red-team test run by the security firm Irregular — guessing passwords in one case and using leaked credentials in the other two — after a test environment meant to stay offline unexpectedly had internet access.",
+          "href": ""
+        },
+        {
+          "text": "Anthropic names Accenture's Faculty unit as its first embedded AI safety evaluator, giving its staff employee-level access to red-team Claude models, with both companies expecting to invest at least $1 billion each over five years in AI safety.",
+          "href": ""
         }
       ]
     },
@@ -46,24 +54,24 @@
       "label": "Science",
       "items": [
         {
-          "text": "A Nature Communications modeling study finds that continued political fragmentation of Latin America's power grids raises system costs by up to 7% and weakens drought resilience, while regional grid integration could save $32 billion a year and sharply cut emissions by 2045.",
+          "text": "CERN's ATLAS and CMS experiments find strong evidence that pairs of Z bosons produced in Higgs boson decays can be quantum entangled — the first such measurement at the electroweak scale, extending tests of Einstein's \"spooky action at a distance\" to a new class of massive particles.",
           "href": ""
         },
         {
-          "text": "Using the James Webb Space Telescope, astronomers searching the star-forming region IC 348 find brown dwarfs with just twice Jupiter's mass, pushing the study of these objects into a new, lower mass range — and possibly below the mass floor theory says a failed star should be able to form at, which I dug into.",
-          "href": "https://mistertranslation.com/notebook/twice-the-mass-of-jupiter-and-a-problem-for-how-stars-form.html"
+          "text": "UCLA researchers use tooth-enamel isotopes to put Tyrannosaurus rex's average body temperature at 36.3°C (97.3°F), evidence the dinosaur was warm-blooded and ran about as hot as a modern elephant.",
+          "href": ""
         }
       ]
     },
     {
-      "label": "World",
+      "label": "Space",
       "items": [
         {
-          "text": "President Trump signs the Lindsey O. Graham Sanctioning Russia and Iran Act into law, authorizing tariffs of up to 100% on the five largest buyers of Russian oil and gas and sanctioning Vladimir Putin, Russian officials, oligarchs and banks; the bill is named for the senator who negotiated it before his death in July.",
+          "text": "NASA awards SpaceX a $946 million contract extension for three more crewed missions to the International Space Station, bringing its total under the Commercial Crew program to 17 flights worth $5.92 billion and extending the arrangement through 2030.",
           "href": ""
         },
         {
-          "text": "Russian guided bombs hit an apartment building in Sumy, killing two and injuring seven, including a 13-year-old girl, the same day a separate strike near Nikopol injures seven more.",
+          "text": "Russia's Progress M-25 cargo craft docks at the ISS's Poisk module on September 19 after a one-week delay caused by a technical issue with its Soyuz-2-1b rocket's third stage.",
           "href": ""
         }
       ]
@@ -72,8 +80,12 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "The FDA approves levacetylleucine (Aqneursa) as the first treatment for ataxia in patients with ataxia-telangiectasia, based on phase 3 trial data showing a statistically significant improvement (P<.001) on a standard ataxia rating scale within 12 weeks — I wrote up what the disease actually is and what the trial showed.",
-          "href": "https://mistertranslation.com/health/the-first-approved-treatment-for-ataxia-in-a-t.html"
+          "text": "The FDA grants full approval to FAYUVI (UX111), an AAV gene therapy from Ultragenyx, as the first-ever treatment for Sanfilippo syndrome Type A, a fatal childhood neurodegenerative disease, with shipments to treatment centers expected within 30-60 days.",
+          "href": ""
+        },
+        {
+          "text": "The CDC reports 3,471 confirmed measles cases in the U.S. so far in 2026 as of September 17, while COVID-19 activity is elevated and rising nationally, though hospitalizations remain low overall.",
+          "href": ""
         }
       ]
     }
