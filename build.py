@@ -13,6 +13,7 @@ Usage:
 After adding a new chapter to the source file, re-run this and push.
 """
 import argparse
+import datetime
 import hashlib
 import html
 import io
@@ -991,7 +992,7 @@ FOOTER = f"""<footer class="site-foot">
   <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
   the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
   with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
-  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="contact.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="{SITE_URL}/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
   <p>{_SIBLING_LINKS}</p>{_FOOT_VIEWS_LINE}
 </footer>"""
 
@@ -1258,12 +1259,17 @@ def page(title, body, active="", desc="", url="", image="", lang="en", base="", 
     # head (before the long favicon data-URI) where that 2,500-byte read sees it.
     robots = ('\n<meta name="robots" content="noindex,follow"/>'
               if url.startswith(NOINDEX_PREFIXES) else "")
+    # English only, matching feed.xml itself (build_feed_page()) -- there's no Spanish
+    # feed yet, so an es.html page pointing at feed.xml would advertise English-only
+    # content to a Spanish-only reader.
+    rss_tag = ('\n<link rel="alternate" type="application/rss+xml" '
+               f'title="{SITE_NAME}" href="feed.xml"/>' if lang == "en" else "")
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
 <meta charset="utf-8"/>{base_tag}
 <meta name="viewport" content="width=device-width, initial-scale=1"/>{robots}
-<title>{html.escape(title)}</title>{d}{og}
+<title>{html.escape(title)}</title>{d}{og}{rss_tag}
 <link rel="icon" href="{FAVICON}"/>
 <link rel="stylesheet" href="style.css?v={CSS_VER}"/>{_goatcounter_script()}
 </head>
@@ -2403,6 +2409,86 @@ post published so far — titles and summaries, not the full verse text (for tha
                desc="Search across every chapter, dictionary term, encyclopedia entry, and "
                     "Dear Mr. Librarian post published so far.", og_type="website")
     open(os.path.join(OUT, "search.html"), "w", encoding="utf-8").write(out)
+
+
+def _git_added_dates(paths):
+    """Git 'date this file was first added' for each of `paths`, via one `git log
+    --diff-filter=A --follow` subprocess call per path.
+
+    Deliberately the file's ADD date, not blogkit.py's sitemap-style lastmod
+    (most recent touch) -- an RSS feed's whole point is telling a subscriber
+    what's NEW, and a chapter that ships today then gets a wording fix next
+    month shouldn't resurface as if it were new again. One call per path is
+    fine here (unlike build_sitemap()'s single 600-commit-window pass over the
+    whole site) because the feed only ever needs this for the newest ~40
+    chapters + the 7 Dear Mr. Librarian posts, not all 350+ chapters.
+
+    Silently omits a path git has no history for (a feed item with no
+    resolvable date is dropped by the caller, never backdated to build day)."""
+    import subprocess
+    out = {}
+    for rel in paths:
+        try:
+            log = subprocess.run(
+                ["git", "-C", OUT, "log", "--diff-filter=A", "--follow",
+                 "--format=%cI", "--", rel],
+                capture_output=True, text=True, timeout=10).stdout.strip()
+        except Exception:
+            continue
+        if not log:
+            continue
+        iso = log.splitlines()[-1]     # oldest line = the add (--follow can print a rename chain)
+        try:
+            out[rel] = datetime.date.fromisoformat(iso[:10])
+        except ValueError:
+            continue
+    return out
+
+
+def build_feed_page():
+    """feed.xml -- an RSS feed for readers who want to follow the Bible project
+    directly, same as the other five blogs (finance/notebook/health/west) already
+    do via blogkit.build_feed(). Unlike those, this site isn't a dated-entry blog
+    (see blogkit.py's own module docstring) -- chapters and Dear Mr. Librarian
+    posts have no front-matter date, so the "posts" list is synthesized here from
+    CHAPTERS + ASK_ENTRIES, newest-first by git's real add-date for each page
+    (_git_added_dates), rather than parsed the way blogkit.parse_entry does for
+    finance/travel.
+
+    English only for now, matching search.html and the header search box -- see
+    their own notes on why.
+    """
+    newest_chapter_slugs = list(reversed(PUBLISH_ORDER))[:40] or [s for s, *_ in CHAPTERS][:40]
+    by_slug = {slug: (book, num, teaser) for slug, book, num, teaser in CHAPTERS}
+    chapter_files = {slug: chapter_filename(*by_slug[slug][:2])
+                      for slug in newest_chapter_slugs if slug in by_slug}
+    ask_files = [url for _title, url, _blurb in ASK_ENTRIES]
+    dates = _git_added_dates(list(chapter_files.values()) + ask_files)
+
+    posts = []
+    for slug in newest_chapter_slugs:
+        if slug not in by_slug:
+            continue
+        book, num, teaser = by_slug[slug]
+        fname = chapter_files[slug]
+        if fname not in dates:
+            continue
+        posts.append({"file": fname, "title": f"{book} {num}", "date": dates[fname],
+                       "summary": _search_teaser(teaser, limit=280), "tags": []})
+    for title, url, blurb in ASK_ENTRIES:
+        if url not in dates:
+            continue
+        posts.append({"file": url, "title": title, "date": dates[url],
+                       "summary": blurb, "tags": []})
+    posts.sort(key=lambda p: p["date"], reverse=True)
+
+    xml = blogkit.build_feed(
+        posts, site_name=SITE_NAME, site_url=SITE_URL, base="",
+        blurb="A fresh translation of the Bible into modern English, made from the original "
+              "Hebrew and Greek one chapter at a time, plus new Dear Mr. Librarian posts.",
+        limit=30)
+    open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8").write(xml)
+    return len(posts)
 
 
 def build_dictionary_entry_pages():
@@ -7265,6 +7351,7 @@ def main():
     build_library((n_words, n_refs, n_dict, n_places, n_people, n_things, len(XREFS), n_mapped, n_atlas_places))
     n_search = build_search_index()
     build_search_page()
+    n_feed = build_feed_page()
     n_sitemap = build_sitemap()
     check_canonicals()
     check_built_descriptions()
@@ -7273,7 +7360,7 @@ def main():
     print(f"built {len(CHAPTERS)} chapters + core pages + library "
           f"(concordance {n_words}w/{n_refs}refs, dict {n_dict}, ency {n_places}p/{n_people}pp/{n_things}c, "
           f"atlas {n_mapped}/{n_atlas_places} mapped, xrefs {len(XREFS)}), search index {n_search} items, "
-          f"sitemap {n_sitemap} urls from {args.source}")
+          f"feed {n_feed} items, sitemap {n_sitemap} urls from {args.source}")
 
 
 if __name__ == "__main__":

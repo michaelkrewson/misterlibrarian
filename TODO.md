@@ -23,9 +23,19 @@ Eight Miles West (`west/`). Check items off as we ship them.
       never sent to English-only content, and none of the five siblings has a Spanish edition.
       Verified on a root page and a `dict/` subdirectory page (which resolves the relative
       `finance/`-style hrefs against its `<base>` tag) — both correct.
-- [ ] **RSS feed.** `finance/feed.xml`, `notebook/feed.xml`, `health/feed.xml` (+ a Spanish
-      variant), `west/feed.xml` all exist. No `feed.xml` for the Bible project. (Needs a look
-      at `build.py` to see how the other builders generate theirs.)
+- [x] **RSS feed.** Shipped 2026-09-19. New `feed.xml` (RSS 2.0, via the shared
+      `blogkit.build_feed()` the other five blogs already use), autodiscovery `<link
+      rel="alternate">` in every English page's `<head>`, and an "RSS" link in the footer.
+      The Bible project has no front-matter/date system for chapters (unlike finance/travel's
+      dated entries — see blogkit.py's own module docstring), so the feed's `posts` list is
+      synthesized in a new `build_feed_page()`: the 40 most-recently-published chapters +
+      the 7 Dear Mr. Librarian posts, each dated by git's real "date this file was first
+      added" (`_git_added_dates()`, `git log --diff-filter=A`) rather than blogkit's own
+      most-recent-touch lastmod — so a later wording fix doesn't resurface a chapter as new.
+      47 candidate items, 30 shown (blogkit's own default limit). English only for now,
+      matching search.html. Verified: well-formed XML (`xml.dom.minidom`), sane item dates/
+      links/descriptions, autodiscovery tag present on root + `dict/` subdirectory pages,
+      absent from the Spanish edition.
 - [ ] **Tags/archive index page.** Ledger has `finance/tags.html`. No equivalent for the
       Bible project.
 - [ ] **"Dear Mr. Librarian" pattern mismatch.** On finance/notebook/health, that nav slot
