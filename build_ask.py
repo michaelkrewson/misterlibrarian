@@ -79,7 +79,8 @@ BIBLE_URL = "https://mistertranslation.com/bible.html"
 GOATCOUNTER_CODE = "mistertranslation"
 ADSENSE_CLIENT = "ca-pub-2001206283779660"
 
-KNOWN_KEYS = {"title", "date", "tags", "summary", "meta_desc", "draft"}
+KNOWN_KEYS = {"title", "date", "tags", "summary", "meta_desc", "draft",
+              "hero", "hero_alt", "hero_credit"}
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
 META_DESC_MIN = 70
@@ -162,6 +163,9 @@ def load_entries(include_drafts=False):
             "tags": [t.strip() for t in meta.get("tags", "").split(",") if t.strip()],
             "draft": draft,
             "body": body,
+            "hero": meta.get("hero", "").strip(),
+            "hero_alt": meta.get("hero_alt", "").strip(),
+            "hero_credit": meta.get("hero_credit", "").strip(),
         })
     entries.sort(key=lambda e: e["date"], reverse=True)
     return entries
@@ -298,6 +302,19 @@ def _front_hero():
             % (FRONT_HERO_IMG, esc(FRONT_HERO_ALT), FRONT_HERO_CREDIT))
 
 
+def _entry_hero(e):
+    """An entry's own hero image, if it has one -- same shape as _front_hero() but
+    per-post (see build_notebook.py/build_finance.py's own _entry_hero, which this
+    mirrors). hero_credit goes in RAW, exactly as FRONT_HERO_CREDIT does, since a
+    photo credit is routinely a link."""
+    if not e["hero"]:
+        return ""
+    dims = blogkit.dim_attrs(os.path.join(OUT, "img"), e["hero"])
+    cap = "<figcaption>%s</figcaption>" % e["hero_credit"] if e["hero_credit"] else ""
+    return ('<figure class="hero"><img src="img/%s" alt="%s"%s loading="eager"/>%s</figure>'
+            % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
+
+
 def _comment_box(title, url):
     comment = blogkit.x_comment_url(title, url)
     search = blogkit.x_search_url(url)
@@ -367,6 +384,7 @@ def build_entry_page(e, pool=()):
 <article class="entry">
   <h1 class="etitle">%(title)s</h1>
   <p class="edate">%(date)s</p>
+%(hero)s
 %(body)s
   %(tags)s
 </article>
@@ -382,7 +400,7 @@ def build_entry_page(e, pool=()):
         "favicon": FAVICON,
         "cssver": CSS_VER, "askver": blogkit.asset_ver(ROOT, "ask/style.css"),
         "goat": _goatcounter(), "chrome": _chrome(""), "date": date_line,
-        "body": e["body"], "tags": _tag_chips(e),
+        "hero": _entry_hero(e), "body": e["body"], "tags": _tag_chips(e),
         "nudge": _comment_box(e["title"], url), "related": _related_block(e, pool),
         "foot": _foot(hits_path),
     }
@@ -643,6 +661,10 @@ def check_entries(entries):
         if 'class="sources"' not in e["body"]:
             problems.append("%s: no <ol class=\"sources\"> — every entry cites what it "
                             "references (see _add_sources)" % e["slug"])
+        if e["hero"] and not e["hero_alt"]:
+            problems.append("%s: hero image has no hero_alt" % e["slug"])
+        if e["hero"] and not os.path.exists(os.path.join(OUT, "img", e["hero"])):
+            problems.append("%s: hero image ask/img/%s does not exist" % (e["slug"], e["hero"]))
     if problems:
         sys.exit("build refused:\n  " + "\n  ".join(problems))
 
