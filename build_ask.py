@@ -210,37 +210,45 @@ def tag_index(entries):
 
 # ──────────────────────────────────────────────────────────────────── chrome ──
 
-# Same scroll mark as the Bible project (visual continuity — this blog is
-# structured like a sibling but themed as part of the translation project).
+# A letter arriving in an envelope -- its own mark, distinct from the Bible's scroll
+# and every sibling's (Ledger's lighthouse, Regimen's mortar-and-pestle, Notebook's
+# pen, West's compass). Apt for a reader-mail column: "Dear Mr. Librarian" IS
+# correspondence. Painted back-to-front so the z-order alone does the construction:
+# the open flap (.env-flap) sits behind everything; the letter (.env-letter) slides
+# up through the gap it leaves; the pocket rect + its front seam line are drawn LAST
+# so they cover the letter's lower half, reading as "tucked into the envelope."
 MARK_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
 <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
-<g class="scr-sheet">
-  <rect x="12.6" y="14.5" width="20.8" height="17" fill="#efe6cf"/>
-  <g stroke="#8a7ab0" stroke-width="1.1" stroke-linecap="round">
-    <line x1="15.5" y1="19" x2="30.5" y2="19"/>
-    <line x1="15.5" y1="23" x2="30.5" y2="23"/>
-    <line x1="15.5" y1="27" x2="26.5" y2="27"/>
+<path class="env-flap" d="M10 18 L23 7 L36 18" fill="none" stroke="#e8c968" stroke-width="1" stroke-linejoin="round"/>
+<g class="env-letter">
+  <rect x="14" y="14" width="18" height="15" fill="#efe6cf"/>
+  <g stroke="#8a7ab0" stroke-width="1" stroke-linecap="round">
+    <line x1="17" y1="18.5" x2="29" y2="18.5"/>
+    <line x1="17" y1="22" x2="29" y2="22"/>
+    <line x1="17" y1="25.5" x2="24" y2="25.5"/>
   </g>
 </g>
-<rect class="scr-roll-l" x="9" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
-<rect class="scr-roll-r" x="33.4" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
-<path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
+<rect x="8" y="18" width="30" height="16" rx="1.5" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+<path d="M8.5 18.3 L23 29 L37.5 18.3" fill="none" stroke="#e8c968" stroke-width="0.8" stroke-linejoin="round"/>
 </svg>"""
 
 
 def _chrome(active=""):
     def cls(k):
         return ' class="on"' if k == active else ""
+    search = ('<form class="headersearch" action="index.html" method="get" role="search">'
+              '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
+              'aria-label="Search past entries"/></form>')
     return ('<header class="askhead">'
             '<a class="brand" href="index.html">%s<span class="wm">Dear Mr. <span class="em">Librarian</span></span></a>'
+            '%s'
             '<nav class="nav">'
             '<a href="index.html"%s>Home</a>'
             '<a href="tags.html"%s>Tags</a>'
             '<a href="ask.html"%s>Ask a question</a>'
-            '<a href="%s">← The Bible</a>'
             '</nav></header>'
-            % (MARK_SVG, cls("home"), cls("tags"), cls("ask"), BIBLE_URL))
+            % (MARK_SVG, search, cls("home"), cls("tags"), cls("ask")))
 
 
 def _foot(hits_path=None):
@@ -399,7 +407,7 @@ def _hits_widget(path, suffix=""):
 </script>"""
 
 
-def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website"):
+def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website", extra_js=""):
     robots = '<meta name="robots" content="noindex,follow"/>\n' if noindex else ""
     return """<!doctype html>
 <html lang="en">
@@ -426,6 +434,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 %(body)s
 %(foot)s
 </div>
+%(extra_js)s
 </body>
 </html>
 """ % {
@@ -433,7 +442,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
         "site": esc(SITE_NAME), "ogtype": og_type, "favicon": FAVICON,
         "cssver": CSS_VER,
         "askver": blogkit.asset_ver(ROOT, "ask/style.css"), "goat": _goatcounter(),
-        "chrome": _chrome(active), "body": body, "foot": _foot(),
+        "chrome": _chrome(active), "body": body, "foot": _foot(), "extra_js": extra_js,
     }
 
 
@@ -448,17 +457,40 @@ def build_front(entries):
         % (_tag_file(t), esc(t), n) for t, n in sorted(counts.items(), key=lambda kv: kv[0].lower()))
     filters = ('<div class="filters">%s</div>' % chips) if chips else ""
     empty = "" if entries else '<p class="empty">The first question is being answered.</p>'
+    search_js = """
+(function(){
+  var input = document.getElementById('headerSearch');
+  var tiles = document.getElementById('tiles');
+  var empty = document.getElementById('searchEmpty');
+  if (!tiles) return;
+  var all = Array.prototype.slice.call(tiles.children);
+  var params = new URLSearchParams(location.search);
+  if (input) input.value = params.get('q') || '';
+  function render(query){
+    query = (query || '').trim().toLowerCase();
+    var shown = 0;
+    all.forEach(function(el){
+      var match = !query || (el.dataset.search || '').indexOf(query) !== -1;
+      el.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+    if (empty) empty.hidden = !(query && shown === 0);
+  }
+  render(params.get('q'));
+  if (input) input.addEventListener('input', function(){ render(input.value); });
+})();
+"""
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE), desc=BLURB, url=BASE_URL, active="home",
-        og_type="website",
-        body="""%s<p class="tag ftag">%s</p>
-<section class="writing">
+        og_type="website", extra_js="<script>%s</script>" % search_js,
+        body="""%s<section class="writing">
 %s%s
-<div class="tilegrid">
+<p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
+<div class="tilegrid" id="tiles">
 %s
 </div>
 </section>
-%s""" % (_front_hero(), esc(TAGLINE), filters, empty, tiles, _comment_box(SITE_NAME, BASE_URL)))
+%s""" % (_front_hero(), filters, empty, tiles, _comment_box(SITE_NAME, BASE_URL)))
 
 
 def build_tag_page(tag, entries, indexable):
@@ -477,22 +509,24 @@ def build_tag_page(tag, entries, indexable):
 
 
 def build_tag_list(tags):
+    """Every tag, as one browsable page -- same sort (most-used first, alphabetical
+    tiebreak) and chip layout as health/finance's own build_tag_list(), and noindex'd
+    for the same reason theirs is: a list of links has nothing of its own to rank for."""
     if not tags:
         return None
-    rows = "\n".join(
-        '<a class="eirow" href="%s"><span class="ei-name">%s</span>'
-        '<span class="tgn">×%d</span></a>' % (_tag_file(t), esc(t), len(es))
-        for t, es in sorted(tags.items(), key=lambda kv: kv[0].lower()))
+    items = "".join(
+        '<a class="tg" href="%s">%s <span class="tgn">%d</span></a>'
+        % (_tag_file(t), esc(t), len(es))
+        for t, es in sorted(tags.items(), key=lambda kv: (-len(kv[1]), kv[0].lower())))
     return _shell(
         title="All tags — %s" % SITE_NAME,
         desc="Every tag used across Dear Mr. Librarian.", url=BASE_URL + "tags.html",
+        noindex=True,
         body="""<section class="writing">
 <h1 class="wtitle">All tags</h1>
 <p class="wsub">%d tag%s so far. <a href="index.html">All questions</a>.</p>
-<div class="panel eilist">
-%s
-</div>
-</section>""" % (len(tags), "" if len(tags) == 1 else "s", rows))
+<div class="tags taglist">%s</div>
+</section>""" % (len(tags), "" if len(tags) == 1 else "s", items))
 
 
 def build_ask_page():

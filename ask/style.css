@@ -4,7 +4,7 @@
    the blog chrome, entry dateline/typography, the tile grid, and tag chips. */
 
 /* ── chrome ── */
-.askhead{display:flex;align-items:center;justify-content:space-between;
+.askhead{display:flex;align-items:center;
   column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:30px 0 18px;
   border-bottom:1px solid var(--border);margin-bottom:8px}
 .askhead .brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;color:inherit}
@@ -12,6 +12,8 @@
 .askhead .wm{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:21px;
   color:#f7f2e2;letter-spacing:-0.2px}
 .askhead .wm .em{color:var(--gold);font-style:italic}
+/* search + nav are pushed together to the right; brand stays left */
+.askhead .headersearch{margin-left:auto}
 .askhead .nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:13px;
   font-weight:600}
@@ -19,6 +21,17 @@
   border-bottom:1px solid transparent}
 .askhead .nav a:hover{color:var(--text)}
 .askhead .nav a.on{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* the envelope-and-letter mark: flap peeks open behind, the letter slides up
+   through the gap and settles back, the pocket (drawn last) covers its base */
+.env-letter{transform-box:fill-box;transform-origin:50% 100%;
+  animation:envPeek 6.4s ease-in-out infinite}
+@keyframes envPeek{
+  0%,12%{transform:translateY(0)}
+  38%,58%{transform:translateY(-9px)}
+  84%,100%{transform:translateY(0)}
+}
+@media (prefers-reduced-motion:reduce){.env-letter{animation:none}}
 
 .askfoot{margin:44px 0 0;padding-top:18px;border-top:1px solid var(--border);text-align:center;
   color:var(--dim);font-size:11.5px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -28,9 +41,6 @@
 .askfoot .legal{margin:14px auto 0;max-width:560px;color:var(--dim);font-size:10.5px;line-height:1.6}
 .askfoot .legal a{color:var(--muted)}
 .askfoot .hits{opacity:.75}
-
-.ftag{margin:20px 0 26px;color:var(--purple);font-size:13px;font-weight:700;
-  letter-spacing:0.06em;text-transform:uppercase;text-align:center}
 
 /* ── entry page ── */
 .entry{max-width:720px;margin:22px auto 0}
@@ -51,6 +61,11 @@ a.tg{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-siz
   color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:4px 11px;
   background:var(--bg1);text-decoration:none;transition:border-color .15s,color .15s}
 a.tg:hover{border-color:var(--gold);color:var(--gold)}
+.tgn{color:var(--dim);margin-left:6px;font-variant-numeric:tabular-nums}
+/* the /tags.html page: same chip style, slightly larger, tighter gap -- matches
+   health/finance's own .taglist modifier */
+.taglist{gap:9px;max-width:none}
+.taglist .tg{font-size:13.5px;padding:6px 13px}
 
 /* ── sources ── */
 .entry ol.sources{max-width:720px;margin:0 auto;font-size:13px;line-height:1.6;
