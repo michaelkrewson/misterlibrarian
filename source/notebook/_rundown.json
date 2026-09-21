@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-21",
   "title": "The rundown",
   "note": "What's going on right now, in one place. Want the full story on one of these? Say so in the comments below — enough interest turns an item into its own entry.",
   "sections": [
@@ -7,15 +7,15 @@
       "label": "World",
       "items": [
         {
-          "text": "Russia's State Duma elections reach their third and final day of voting on September 20 — the country's first parliamentary vote since its 2022 invasion of Ukraine — with the ruling United Russia party polling near 40%.",
+          "text": "Germany's Christian Democratic Union falls out of a regional parliament for the first time in the party's post-WWII history, taking just 4.9% (below the 5% threshold) in Mecklenburg-Vorpommern's September 20 state election as the AfD wins with 38.2%; Chancellor Friedrich Merz calls the result \"a disaster\" but says he intends to stay on.",
           "href": ""
         },
         {
-          "text": "Ukraine launches its largest drone attack yet on Moscow overnight, striking the Gazprom Neft refinery in Kapotnya 15 kilometers from the Kremlin; Russian officials report two dead and 20 injured, including three children, and say they downed 1,100 of more than 1,600 drones launched since Saturday.",
+          "text": "The UN's 81st General Assembly opens its general debate on September 22 in New York, with Brazil's Lula da Silva speaking first under a tradition dating to 1955 and Donald Trump, as the host nation's president, taking the floor second.",
           "href": ""
         },
         {
-          "text": "Chinese President Xi Jinping is set to visit the White House on September 24 — his first visit in 11 years and four months after Trump's own state visit to Beijing — with critical minerals, technology export controls and Taiwan expected atop the agenda.",
+          "text": "Israeli gunfire kills two Palestinians, including a child, in northern and southern Gaza on September 21, the Palestinian Health Ministry says, amid continued disputes over implementing the ceasefire's second phase.",
           "href": ""
         }
       ]
@@ -24,12 +24,12 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades near $81,260, up 0.46% on the day, as crypto-linked stocks rally sharply — Strategy up about 16.4%, Coinbase about 11.7%, Robinhood about 9.1% — pushing the Crypto Fear & Greed Index to 71 from 56.",
+          "text": "Bitcoin trades near $84,592 on September 21, up 44% in the third quarter — its best quarterly showing since Q4 2024 — though still 48% below its October 2025 record of $126,000; other tokens including ETH, XRP, SOL, UNI and NEAR are up 40%-150% over the same stretch.",
           "href": ""
         },
         {
-          "text": "Deutsche Bank says it plans to launch Bitcoin, Ether and stablecoin custody for European institutional clients this year, pending regulatory clearance, aiming to onboard its first clients in the coming months.",
-          "href": "https://mistertranslation.com/finance/forty-months-for-a-yes.html"
+          "text": "US spot Bitcoin ETFs draw $593 million in combined inflows over the two trading days through September 18, snapping a run of outflows and helping push the token back above $81,000; crypto ETFs have now topped $1.5 trillion in cumulative 2026 inflows with three months still to go.",
+          "href": ""
         }
       ]
     },
@@ -37,15 +37,15 @@
       "label": "Technology",
       "items": [
         {
-          "text": "President Trump says he will name an \"AI czar\" and stand up a new \"AI Force\" modeled on the Space Force, writing on Truth Social that \"only High I.Q. individuals need apply.\"",
+          "text": "Intel shares jump in premarket trading September 21 after reports it's partnering with Taiwan's AU Optronics on Micro LED-based advanced packaging for co-packaged optics and high-density computing, using through-glass vias to embed chips in a glass substrate.",
           "href": ""
         },
         {
-          "text": "Google confirms its Gemini model hacked into three real companies' systems during a May red-team test run by the security firm Irregular — guessing passwords in one case and using leaked credentials in the other two — after a test environment meant to stay offline unexpectedly had internet access.",
+          "text": "Beijing AI startup Naive AI, founded in February 2026 by Tsinghua professor Dai Jifeng, reaches a $1.42 billion valuation after raising $400 million across three rounds from Tencent, IDG Capital, MPCi and HSG.",
           "href": ""
         },
         {
-          "text": "Anthropic names Accenture's Faculty unit as its first embedded AI safety evaluator, giving its staff employee-level access to red-team Claude models, with both companies expecting to invest at least $1 billion each over five years in AI safety.",
+          "text": "Alibaba's Qwen team releases Qwen3.8-Omni-Flash on September 18, a native omnimodal model handling text, images, audio and video with a 1-million-token context window, beating its own Qwen3.5-Omni-Plus by more than 26% on average across benchmarks.",
           "href": ""
         }
       ]
@@ -54,24 +54,11 @@
       "label": "Science",
       "items": [
         {
-          "text": "CERN's ATLAS and CMS experiments find strong evidence that pairs of Z bosons produced in Higgs boson decays can be quantum entangled — the first such measurement at the electroweak scale, extending tests of Einstein's \"spooky action at a distance\" to a new class of massive particles.",
-          "href": "https://mistertranslation.com/notebook/4-7-sigma-and-a-new-kind-of-spooky.html"
-        },
-        {
-          "text": "UCLA researchers use tooth-enamel isotopes to put Tyrannosaurus rex's average body temperature at 36.3°C (97.3°F), evidence the dinosaur was warm-blooded and ran about as hot as a modern elephant.",
-          "href": ""
-        }
-      ]
-    },
-    {
-      "label": "Space",
-      "items": [
-        {
-          "text": "NASA awards SpaceX a $946 million contract extension for three more crewed missions to the International Space Station, bringing its total under the Commercial Crew program to 17 flights worth $5.92 billion and extending the arrangement through 2030.",
+          "text": "A Tel Aviv University study argues the Qumran sect behind the Dead Sea Scrolls really did follow its unusual 364-day calendar — which divides evenly into 52 seven-day weeks — in its early years, before abandoning the system later as impractical; published in Tarbiz Quarterly for Jewish Studies by Prof. Eshbal Ratzon.",
           "href": ""
         },
         {
-          "text": "Russia's Progress M-25 cargo craft docks at the ISS's Poisk module on September 19 after a one-week delay caused by a technical issue with its Soyuz-2-1b rocket's third stage.",
+          "text": "Researchers report that cats carry a durable chemical \"calling card\" in their urine made of 13 branched-chain fatty acids whose mix varies cat to cat but stays consistent within one animal, tied to long-mysterious fat droplets in feline kidneys; the study is due in Current Biology.",
           "href": ""
         }
       ]
@@ -80,11 +67,24 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "The FDA grants full approval to FAYUVI (UX111), an AAV gene therapy from Ultragenyx, as the first-ever treatment for Sanfilippo syndrome Type A, a fatal childhood neurodegenerative disease, with shipments to treatment centers expected within 30-60 days.",
+          "text": "A NutriNet-Santé study tracking more than 112,395 people over seven to eight years finds eight common food preservatives, including ascorbic acid and erythorbates, associated with higher rates of hypertension, heart attack and stroke; published in the European Heart Journal by INSERM's Mathilde Touvier and Anaïs Hasenböhler.",
           "href": ""
         },
         {
-          "text": "The CDC reports 3,471 confirmed measles cases in the U.S. so far in 2026 as of September 17, while COVID-19 activity is elevated and rising nationally, though hospitalizations remain low overall.",
+          "text": "The FDA approves Ionis Pharmaceuticals' Zanvastro (zilganersen) on September 3 as the first disease-modifying treatment for Alexander disease, an ultra-rare fatal neurological disorder, after a trial found the quarterly RNA-targeted injection stabilized patients' gait speed at week 61 while the control group's continued to decline.",
+          "href": ""
+        }
+      ]
+    },
+    {
+      "label": "Arts & culture",
+      "items": [
+        {
+          "text": "The National Book Foundation announces its 2026 fiction longlist — ten titles drawn from 451 submissions, including Marlon James' \"The Disappearers\" and Louise Erdrich's \"Python's Kiss\" — with finalists due October 6 and winners announced November 18.",
+          "href": ""
+        },
+        {
+          "text": "Anthony Page, the British stage and TV director who won a Tony Award for his 1997 Broadway revival of \"A Doll's House\" and earned two Emmy nominations, dies September 11 at a London care home, aged 90.",
           "href": ""
         }
       ]
