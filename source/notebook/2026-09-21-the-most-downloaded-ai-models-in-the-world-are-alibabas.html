@@ -1,0 +1,216 @@
+title: The Most-Downloaded AI Models in the World Are Alibaba's
+date: 2026-09-21
+section: technology
+tags: artificial intelligence, alibaba, qwen, open weights, china, machine learning, deepseek, multimodal
+summary: On 18 September Alibaba's Qwen team shipped Qwen3.8-Omni-Flash — one model that takes text, images, audio and video, holds a million tokens of context, and decides for itself which parts of a two-hour video are worth watching. The release is the news, but the program behind it is the story: Qwen passed three billion downloads this summer, more than Google's and Meta's open models combined. Here is what "omnimodal" actually means, what the 26 percent is measuring, and why a company most people know for e-commerce is a serious AI lab.
+meta_desc: Qwen3.8-Omni-Flash explained — what omnimodal means, what the benchmark jump measures, and how Alibaba's Qwen became the most-downloaded model family.
+hero: alibaba-hangzhou-headquarters.jpg
+hero_alt: The entrance plaza of Alibaba Group's headquarters campus in Hangzhou, China — low glass office blocks wrapped in a white concrete lattice of irregular polygons, with a matching perforated canopy floating overhead on slender columns, orange and grey box-shaped meeting rooms cantilevered out of the facade, and a security barrier across the empty forecourt
+hero_credit: Alibaba Group's headquarters campus in Hangzhou, photographed in 2012 — the building the cloud division and the Qwen team grew up inside. Photo by Thomas Lombard, architecture by HASSELL, CC BY-SA 3.0, via Wikimedia Commons.
+---
+
+<p>On 18 September 2026, the Qwen team at Alibaba Cloud released <strong>Qwen3.8-Omni-Flash</strong>,
+a model that accepts text, images, audio and video through one endpoint, carries a
+<strong>one-million-token context window</strong>, and — according to Alibaba's own
+figures — scores more than 25 percent better on average than the model it replaces, across
+29 evaluations. It went live the same day on Qwen Chat, Alibaba Cloud's Model Studio and an
+OpenAI-compatible API, alongside two pieces of companion tooling, Qwen-MM-Plugins and
+Qwen-Live Harness, for long-running and real-time work.</p>
+
+<p>I had not been following Alibaba's AI program closely, which turns out to have been a
+mistake of some size: at the time of this release, Qwen is the most-downloaded family of
+open-weight AI models in the world, by a margin that is not close. So this entry is two
+things at once — what is actually new in this specific model, and what the program behind it
+looks like for anyone who, like me, was reading about three other labs instead.</p>
+
+<h2>What "Omnimodal" Actually Means, as Opposed to Multimodal</h2>
+
+<p>Most models people call multimodal are a language model with sense organs bolted on, and
+often the bolting is a pipeline: speech goes to a transcription model, the transcript goes to
+the language model, the language model's reply goes to a text-to-speech model. Each hop is a
+lossy translation into text. Tone, overlapping speakers, the pause before someone answers,
+which of two people on screen was talking — all of that is gone by the time the reasoning
+starts, because text is the only thing that survives the handoff.</p>
+
+<p>A <em>native</em> omnimodal model is trained so that audio and video are first-class
+inputs in the same representation the text lives in, rather than guests who have to be
+translated at the door. Qwen has been building toward this for a while: Qwen2.5-Omni
+introduced a "Thinker-Talker" design — a Thinker that perceives text, images, audio and
+video and produces reasoning and text, and a Talker that turns the Thinker's stream into
+speech tokens in real time — and Qwen3-Omni carried it forward as an openly published
+model. So the lineage here is genuine architecture work, not a marketing word applied
+retroactively.</p>
+
+<p>Worth one honest asterisk, though: <strong>this particular model's native output is
+text.</strong> It sees and hears everything; it answers in writing. There is a separate
+<code>-Realtime</code> variant aimed at sub-1.4-second streaming interaction, but the
+headline model is four modalities in, one modality out. If the phrase "omnimodal" made you
+picture a machine that talks back in its own voice, that is the earlier Omni line's trick,
+not this one's job.</p>
+
+<h2>The 26 Percent, and What It Is Actually Measuring</h2>
+
+<p>First, the number itself needs a small correction, and it is the kind of thing worth
+getting right rather than repeating: Qwen's own announcement states <strong>more than 25
+percent average improvement across 29 evaluations</strong> versus its predecessor
+Qwen3.5-Omni-Plus. Some of the coverage rounds this to "more than 26 percent across 30
+evaluations." The difference does not change anything material, but a self-reported average
+across an evaluation suite the vendor chose is a soft number twice over, and it is more
+useful to look at what moved inside it.</p>
+
+<p>The individual results are lopsided in a way the average hides. The biggest single jump is
+on WildClawBench-MM, a multimodal agent benchmark, where the model scores 71.0 against its
+predecessor's 34.5 — a 36.5-point gain, which is less "improved" than "the previous model was
+not really doing this task." AgenticVBench moves 22.3 points. Speaker diarization — the
+problem of working out who said which sentence in a recording with several people in it —
+goes from a roughly 88 percent error rate on the AliMeeting set to about 3 percent, which
+again reads as a capability appearing rather than sharpening.</p>
+
+<p>Against Google's Gemini 3.8 Flash, the comparison Alibaba chose to publish, it is a split
+decision: Qwen ahead on the diarization sets, on music reasoning, on the joint audio-video
+benchmark and on multimodal agent work; Gemini ahead on Video-MME-v2, 71.0 to 65.0. A vendor
+that publishes the benchmark it loses is at least showing you the whole table.</p>
+
+<div class="aside">
+  <p><strong>The interesting number is the one that went down.</strong> On OmniVideoBench,
+  accuracy rose from 63.4 to 67.8 — a decent but unremarkable gain. The striking part is that
+  it did so while consuming <strong>145,736 tokens down to 79,117</strong>, about 45 percent
+  fewer. That is the "agentic perception" idea doing the work: instead of grinding through
+  every frame and every second of audio at uniform resolution, the model does a coarse pass,
+  decides which stretches matter, and looks closely only there. Better answers on roughly half
+  the input is a different kind of improvement from better answers on the same input — it is
+  the difference between reading faster and knowing which chapter to read.</p>
+</div>
+
+<h2>Why a Million Tokens Matters Specifically Here</h2>
+
+<p>Long context windows have become a slightly tired bullet point on text models, where the
+honest question is whether anyone actually has a million tokens of text they want answered
+about. Video is different. Video is enormous. An hour of footage sampled at a usable frame
+rate, plus its audio track, plus a transcript, eats context at a rate a chat log never
+approaches — which is exactly why the published limits read the way they do: video up to two
+hours or two gigabytes, audio up to three hours, stable at 15 frames per second, with the
+million-token budget split roughly 991,000 tokens of input against 131,000 of output.</p>
+
+<p>Put those together and the shape of the intended product is obvious. This is not a model
+for answering questions about a paragraph. It is a model for handing over a recorded meeting,
+a lecture, a day of security footage or a long interview and getting back something that
+required watching the whole thing. The 98-percent cut in the per-hour price of audio input
+(93 percent for audio plus video) is the same argument made in the currency that decides
+whether anyone does it twice.</p>
+
+<h2>Why the Company You Know for E-Commerce Is a Serious Lab</h2>
+
+<p>The short version: Alibaba is not primarily an AI lab that happens to sell things, it is a
+cloud provider that needs a reason for you to rent its servers, and a very good free model is
+the most effective advertisement a cloud provider has ever found.</p>
+
+<p>The program started in April 2023 as Tongyi Qianwen and went public that September after
+Chinese regulatory approval. Qwen2 landed in June 2024, Qwen2.5 that September, Qwen3 in April
+2025 — trained on 36 trillion tokens across 119 languages — and the Qwen3.8 generation
+arrived in August 2026, topped by Qwen3.8-Max at 2.4 trillion parameters, which at the time
+made it the second-largest open-weight language model in the world, behind Moonshot AI's Kimi
+K3.</p>
+
+<p>The distribution numbers are what actually surprised me. Hugging Face's state-of-open-models
+report in mid-August 2026 put Qwen past <strong>three billion downloads</strong> in six
+months, against roughly 418 million for Google's open models and 227 million for Meta's over
+2026 — more than both combined, several times over. Alibaba has open-sourced over 460 models;
+the ecosystem has produced more than 300,000 derivatives. Chinese open-weight models, led by
+Qwen and DeepSeek, now account for something like 30 percent of global model downloads.
+Meanwhile Alibaba's Cloud Intelligence Group pushed capital expenditure to ¥126.1 billion for
+fiscal 2026, with AI running at roughly 30 percent of external cloud revenue, and in July 2026
+Qwen became the model behind Apple Intelligence in China, where ChatGPT is not available.</p>
+
+<p>That is the strategy in one sentence: give away the weights, win the developers, rent them
+the servers. It is the same play Google ran with Android, and it is being run against American
+frontier labs whose best models are not downloadable at all.</p>
+
+<h2>Where Qwen Sits Against DeepSeek and the Rest</h2>
+
+<p>Among the Chinese open-weight labs — DeepSeek, Moonshot's Kimi, MiniMax, Zhipu — the
+rough division is that DeepSeek competes on licence permissiveness and cost per token and has
+the louder reputation for raw reasoning, while Qwen competes on breadth: more sizes, more
+modalities, more languages, and an ecosystem large enough that fine-tuning a Qwen checkpoint
+is the path of least resistance for most people building something. Against the Western labs,
+the comparison is harder to make honestly, because the Western frontier models are closed and
+the benchmark tables everyone quotes are published by whoever is being compared.</p>
+
+<p>Which is the caveat to carry out of all of this. <strong>Downloads measure distribution, not
+capability</strong> — a model that is free, small enough to run locally and permissively
+licensed will out-download a better model that is none of those things, every time. And a
+26 percent average lift across a vendor's own evaluation suite tells you the vendor believes
+its model improved; it does not tell you by how much on your work.</p>
+
+<h2>The Part That Is Not in the Announcement</h2>
+
+<p>Three things worth knowing before anyone builds on this. <strong>The weights are not
+open.</strong> Qwen3.8-Omni-Flash is API-only, running on Alibaba's own infrastructure, even
+though it is built on Qwen3.8-Flash-Next, whose weights were published in August 2026. The
+open-weight strategy has a boundary, and the newest omnimodal model sits on the far side of
+it. <strong>Video and audio limits are real limits</strong> — two hours, two gigabytes, three
+hours of audio, 15 frames per second — and anything past those needs chunking you have to
+build yourself. And <strong>early reports of the companion tooling are mixed</strong>: the
+Qwen-MM-Plugins integration with third-party coding agents has been described as prone to
+interruptions and unstable sessions, which is the sort of thing that gets fixed in a fortnight
+but is worth knowing on day three rather than discovering on day one.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>Every benchmark figure here is the vendor's.</strong> Alibaba selected the
+  evaluation suite, ran the comparisons, and chose which competitor results to print. Nothing
+  in this entry is an independent replication, and the history of this industry is that
+  self-reported margins shrink when someone else runs the same tests on their own workloads.</li>
+  <li><strong>The headline improvement figure is reported two ways.</strong> Qwen's own
+  announcement says more than 25 percent across 29 evaluations; several outlets say more than
+  26 percent across 30. I have used the company's own smaller number, but I have not resolved
+  which suite the larger figure counts, and it is possible the two refer to different
+  cuts of the same results.</li>
+  <li><strong>The language-coverage figures disagree between sources</strong> — one summary
+  gives 74 languages plus 39 Chinese dialects for speech recognition and a smaller set for
+  generation, another states 113 languages outright. I have therefore avoided quoting a single
+  language count in the body, because the two are not reconcilable from the public material.</li>
+  <li><strong>I have not used this model.</strong> Everything above is read, not tested. The
+  gap between a benchmark table and a model's behaviour on a real two-hour recording is
+  precisely the gap that benchmarks exist to hide.</li>
+  <li><strong>"Native omnimodal" is a claim about architecture I am taking on trust.</strong>
+  The published material describes the design at the level of capability rather than
+  internals, and I have leaned on the documented Thinker-Talker lineage of the earlier Omni
+  models to describe what the family means by the term. A model can be described as native and
+  still be doing more internal translation than the word implies.</li>
+  <li><strong>Download counts are a soft metric in a second way I did not dwell on:</strong>
+  automated pipelines, CI systems and mirrors pull models repeatedly, and no public report I
+  have seen separates a human evaluating a model from a build server fetching it for the
+  hundredth time.</li>
+</ul>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>Qwen (Alibaba Cloud). <i>Qwen3.8-Omni-Flash: Omni Senses. Agentic Delivery.</i> 18
+  September 2026. <a href="https://qwen.ai/blog?id=qwen3.8-omni-flash" rel="noopener"
+  target="_blank">qwen.ai</a></li>
+  <li>TechNode. <i>Alibaba's Qwen releases Qwen3.8-Omni-Flash with 1M-token context.</i> 18
+  September 2026. <a href="https://technode.com/2026/09/18/alibabas-qwen-releases-qwen3-8-omni-flash-with-1m-token-context/"
+  rel="noopener" target="_blank">technode.com</a></li>
+  <li>MarkTechPost. <i>Alibaba Qwen Releases Qwen3.8-Omni-Flash: A 1M-Context Omni-Modal Model
+  Built Around Agentic Audio-Video Understanding and Tool Use.</i> 18 September 2026.
+  <a href="https://www.marktechpost.com/2026/09/18/alibaba-qwen-releases-qwen3-8-omni-flash/"
+  rel="noopener" target="_blank">marktechpost.com</a></li>
+  <li>DataCamp. <i>Qwen3.8-Omni-Flash: Features and Benchmarks.</i> September 2026 — source of
+  the benchmark-by-benchmark comparison against Gemini 3.8 Flash.
+  <a href="https://www.datacamp.com/blog/qwen3-8-omni-flash" rel="noopener"
+  target="_blank">datacamp.com</a></li>
+  <li>Fortune. <i>Alibaba AI models hit 3 billion downloads, passing Meta, Google.</i> 15
+  August 2026, reporting Hugging Face's state-of-open-models figures.
+  <a href="https://fortune.com/2026/08/15/alibaba-qwen-open-ai-models-3-billion-downloads-meta-google/"
+  rel="noopener" target="_blank">fortune.com</a></li>
+  <li>Qwen Team, Alibaba Group. <i>Qwen2.5-Omni Technical Report.</i> arXiv:2503.20215 — the
+  Thinker-Talker architecture. <a href="https://arxiv.org/abs/2503.20215" rel="noopener"
+  target="_blank">arxiv.org</a></li>
+  <li>Qwen Team, Alibaba Group. <i>Qwen3-Omni Technical Report.</i> arXiv:2509.17765.
+  <a href="https://arxiv.org/abs/2509.17765" rel="noopener" target="_blank">arxiv.org</a></li>
+  <li>Wikipedia. <i>Qwen.</i> Accessed September 2026 — release timeline and model-generation
+  dates. <a href="https://en.wikipedia.org/wiki/Qwen" rel="noopener"
+  target="_blank">en.wikipedia.org</a></li>
+</ol>
