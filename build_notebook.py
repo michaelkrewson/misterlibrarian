@@ -323,7 +323,8 @@ def _nav(active=""):
 
 
 def _chrome(active=""):
-    """Header used by every page in the publication — brand, search, nav.
+    """Header used by every page in the publication — hub breadcrumb, brand,
+    search, nav.
 
     Same markup as build_health._chrome minus the language link, laid out the
     same way (see the "header" block in CSS): brand left + search right on one
@@ -332,6 +333,13 @@ def _chrome(active=""):
     The search box is a REAL form (GET, name="q") so it works with JS off by
     navigating to the front page with ?q=…; the front page's own script filters
     live and reads a handed-over ?q=.
+
+    2026-09-21 (Michael's ask, reached from an entry with no way back to the
+    root hub except the browser's back button): the brand is now preceded by
+    a small "Mister Library ›" crumb, its mark a copy of the hub's own <svg
+    class="mark"> (see HUB_MARK_SVG). Clicking it always jumps to the very
+    top; clicking the Notebook's own brand next to it always comes home to
+    THIS publication's index — two different "home"s, one row.
     """
     hamburger = ('<svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" '
                  'focusable="false"><rect width="20" height="2" rx="1"/>'
@@ -340,15 +348,21 @@ def _chrome(active=""):
     search = ('<form class="headersearch" action="index.html" method="get" role="search">'
               '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
               'aria-label="Search past entries"/></form>')
+    hublink = ('<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
+               '%s<span class="hubwm">Mister Library</span></a>'
+               '<span class="crumbsep" aria-hidden="true">›</span>'
+               % (SITE_URL, HUB_MARK_SVG))
+    brand = ('<a class="brand" href="index.html">%s'
+             '<span class="wm">The Librarian\'s <span class="em">Notebook</span></span></a>'
+             % MARK_SVG.replace("__ACCENT__", ACCENT))
     return ('<header class="hsm">'
-            '<a class="brand" href="index.html">%s'
-            '<span class="wm">The Librarian\'s <span class="em">Notebook</span></span></a>'
+            '<div class="brandcrumb">%s%s</div>'
             '%s'
             '<div class="hgroup">'
             '<input type="checkbox" class="navcb" id="navcb"/>'
             '<label class="navtoggle" for="navcb" aria-label="Menu">%s</label>'
             '%s</div></header>'
-            % (MARK_SVG.replace("__ACCENT__", ACCENT), search, hamburger, _nav(active)))
+            % (hublink, brand, search, hamburger, _nav(active)))
 
 
 def _legal():
@@ -1207,6 +1221,27 @@ header{padding:46px 0 8px;text-align:center}
 .bmark{width:61px;height:61px;flex:0 0 61px;overflow:visible}
 h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
 
+/* Breadcrumb up to the hub (2026-09-21, Michael's ask): "Mister Library ›
+   The Librarian's Notebook" — a Notebook page had no way back to the root
+   hub except the browser's back button. The hub mark below is a byte-for-
+   byte copy of the <svg class="mark"> in the root index.html (that file is
+   hand-written, not built, so there's nothing to import from — keep the two
+   in step by hand if the hub mark ever changes, same discipline MARK_SVG's
+   own docstring already calls out for inlining on the hub). */
+.brandcrumb{display:inline-flex;align-items:center;gap:10px}
+.hublink{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#93a4bd}
+.hublink:hover{color:#e8eef7}
+.hubmark{width:26px;height:26px;flex:0 0 26px;overflow:visible}
+.hublink .hubwm{font-size:15px;letter-spacing:.01em;white-space:nowrap;
+  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
+.crumbsep{color:#5a6b80;font-size:16px;line-height:1}
+.shelf-spine{transform-box:fill-box;transform-origin:bottom center;
+  animation:spinePop 3.6s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes spinePop{0%,84%,100%{transform:translateY(0);filter:brightness(1)}
+  10%{transform:translateY(-2.4px);filter:brightness(1.55)}}
+@media (prefers-reduced-motion:reduce){.shelf-spine{animation:none}}
+@media (max-width:480px){.hublink .hubwm{display:none}}
+
 /* Animated mark: an open notebook page with a pen writing its last line — the
    line draws itself (stroke-dashoffset) while the nib slides along it, then
    the ink fades and the nib returns to the margin for the next line. Same
@@ -1369,7 +1404,7 @@ footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 header.hsm{display:flex;align-items:center;justify-content:space-between;
   column-gap:18px;row-gap:12px;flex-wrap:wrap;padding:26px 0 12px;
   border-bottom:1px solid #131b27;margin-bottom:4px}
-header.hsm .brand{order:1}
+header.hsm .brandcrumb{order:1}
 .headersearch{order:2;margin:0 0 0 auto}
 .hgroup{order:3;flex:1 1 100%;display:flex;align-items:center;gap:22px;flex-wrap:wrap;
   justify-content:flex-start}
@@ -1593,6 +1628,23 @@ MARK_SVG = """<svg class="bmark" viewBox="0 0 66 66" fill="none" aria-hidden="tr
     </g>
   </g>
   <circle cx="33" cy="33" r="21" stroke="__ACCENT__" stroke-width="1.4" opacity=".6"/>
+</svg>"""
+
+# The hub mark: a byte-for-byte copy of <svg class="mark"> in the hand-written
+# root index.html, sized down for the breadcrumb (see the CSS block above).
+# That file is hand-written, not built by a script here, so there is nothing
+# to import — if the hub mark ever changes, this copy needs to change with
+# it, same as every other cross-file "port it by hand" case in this repo.
+HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
+  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
+  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
+  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
+  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
+  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
+  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
+  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
+  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
+  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
 </svg>"""
 
 
