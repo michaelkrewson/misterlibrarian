@@ -1,0 +1,247 @@
+title: Four Hundred Million for a Model Nobody Has Seen
+date: 2026-09-21
+tags: naive ai, china ai, tencent, hsg, hongshan, idg capital, mpci, venture capital, open weight models, large language models, tsinghua, deepseek
+summary: Naive AI, founded in Beijing in February 2026 by Tsinghua professor Dai Jifeng, has raised about $400 million across three rounds at a $1.42 billion valuation, backed by Tencent, IDG Capital, MPCi and HSG. It has fewer than a hundred employees and has not released a model. Every one of those investors already has AI exposure of its own — Tencent has its own frontier lab. The interesting question isn't whether the company is good. It's why a corporate investor pays to stand outside its own building.
+meta_desc: Naive AI raised $400M at a $1.42B valuation before shipping a model. Why Tencent, HSG, IDG and MPCi backed an outside lab.
+hero: tsinghua-university-second-gate.jpg
+hero_alt: The white stone Second Gate of Tsinghua University in Beijing, a triple-arched Western-classical gateway with paired columns and grey brick, the three characters Qing Hua Yuan carved in red on the central panel, framed by tall green trees under a clear blue sky with three urns of ivy in the foreground
+hero_credit: The Second Gate (Er Xiaomen) of Tsinghua University, Beijing, 27 October 2019. Photo by an anonymous Tsinghua student, released under CC0 1.0 public domain dedication, via Wikimedia Commons.
+draft: false
+---
+
+<p>A Beijing company called Naive AI, founded in February 2026, has raised roughly $400 million across
+three rounds — about $100 million, then $180 million, then $120 million — and was most recently valued
+at $1.42 billion. It employs fewer than a hundred people. As of the reporting, it has not released a
+model; its first is said to be due about now. The investors on the cap table are Tencent, IDG Capital,
+MPCi and HSG, the firm formerly known as Sequoia Capital China.</p>
+
+<p>Seven months, four of the largest names in Chinese technology capital, a unicorn valuation, and
+nothing shipped. Also, one presumes deliberately, a company named Naive — which is either a very good
+joke about how models get built or an accident of translation, and which nobody has explained on the
+record. The question worth asking isn't whether that's a lot of money for a company with no product.
+It's why Tencent, which operates its own frontier model, paid to own a slice of someone else's.</p>
+
+<h2>Who Dai Jifeng Is</h2>
+
+<p>Start with the asset actually being bought, because it isn't software.</p>
+
+<p>Dai Jifeng is an associate professor in Tsinghua University's Department of Electronic Engineering,
+where he has been since July 2022. Before that he spent 2014 to 2019 as a principal researcher and
+research manager in the vision group at Microsoft Research Asia, and 2019 to 2022 as executive
+research director at SenseTime. His name is on work that a great many people in computer vision have
+built on: Deformable Convolutional Networks, presented at ICCV in 2017, which let a convolutional
+kernel learn to move its own sampling points rather than sitting on a fixed grid; Deformable DETR,
+which made transformer-based object detection converge in a fraction of the training time; and later
+the InternImage and InternVL lines of large vision and vision-language models.</p>
+
+<p>That is a specific kind of pedigree. It is not "ran a big team at a big company." It is "published
+the thing that other people's architectures are now made of," twice, plus a decade of running research
+groups at two of the most productive AI labs in Asia. When a professor with that record leaves to
+start a company and brings part of his team, the thing on offer is not a product roadmap. It is a
+dozen or so people who have shipped state-of-the-art results before, available exactly once.</p>
+
+<h2>What Naive AI Is Actually Building</h2>
+
+<p>The second thing being bought is a strategy, and it is a deliberately contrarian one.</p>
+
+<p>Naive AI is not pretraining a foundation model from scratch. By the reporting, it takes an existing
+Chinese open-weight model that has already been pretrained, modifies its structure, and then does the
+downstream work — mid-training, post-training, reinforcement learning — to lift performance. Its first
+release is to be open-weight itself, free to download and adapt, in the manner of DeepSeek and
+Moonshot. Separately, the team is said to be researching recursive self-improvement, where a system is
+used to improve its own training.</p>
+
+<p>Skipping pretraining sounds like skipping the hard part. It is closer to the opposite. Pretraining
+is the expensive part — the part that consumes a nine-figure compute budget and, for a Chinese lab
+under US export controls on advanced accelerators and the high-bandwidth memory that feeds them, the
+part that is hardest to buy at any price. Meanwhile the supply of strong open-weight base models has
+become abundant and free: DeepSeek, Qwen, Kimi and GLM have all put serious models into the open. If
+the base is a commodity and the compute to make one is rationed, the scarce skill moves downstream, to
+the people who are best at what happens after.</p>
+
+<p>The bet is not unique to China. Thinking Machines Lab built on a DeepSeek base; Cursor built its
+coding model on a Z.ai base. What's notable is a well-funded lab saying out loud, at founding, that
+pretraining is not where it intends to compete.</p>
+
+<div class="aside">
+  <p><strong>Pre-, mid-, post-.</strong> Roughly: <em>pretraining</em> is the enormous first pass over
+  a very large text corpus that gives a model its general competence — the multi-hundred-million-dollar
+  step. <em>Mid-training</em> is a further, more targeted pass on curated or synthetic data to deepen
+  particular capabilities, such as reasoning or code, before the model is shaped for use.
+  <em>Post-training</em> is the shaping: supervised fine-tuning on demonstrations, then reinforcement
+  learning against feedback or verifiable rewards, which is where most of the difference between a raw
+  base model and something you would actually deploy now comes from. The industry's centre of gravity
+  has been drifting steadily from the first to the last two, which is precisely the drift Naive AI's
+  business plan is standing on.</p>
+</div>
+
+<h2>The Four Names on the Cap Table</h2>
+
+<p><strong>Tencent</strong> is the one that makes the question interesting: it runs its own frontier
+model family, Hunyuan, and has built its own AI silicon. It is also, separately, one of the most active
+investors in other people's Chinese AI labs — it has put money into Zhipu AI, MiniMax, Moonshot AI and
+Baichuan, holding reported minority stakes of a couple of percent in the first two.</p>
+
+<p><strong>HSG</strong> is Sequoia Capital China, which split from the American firm in a 2023
+restructuring that carved Sequoia into three independent houses and became fully separate in 2024,
+rebranding as HongShan in Chinese and HSG in English, with something on the order of $56 billion under
+management. Its AI book includes Moonshot and MiniMax. <strong>IDG Capital</strong> is one of the
+oldest venture firms operating in China, a generalist with three decades of technology positions.
+<strong>MPCi</strong> is the firm formerly known as Matrix Partners China, renamed after separating
+from its American namesake — another long-running China technology investor.</p>
+
+<p>Notice that three of the four already hold positions in the Chinese labs everyone has heard of. So
+this is not a case of outsiders discovering AI. It is incumbents adding a name to a portfolio they
+already own several of.</p>
+
+<h2>Why Pay to Stand Outside Your Own Building</h2>
+
+<p>The instinct that a corporate investor with its own AI lab has no reason to fund an external one
+assumes the internal lab is the bet. It isn't. It's <em>a</em> bet — one architecture, one research
+culture, one set of institutional habits, funded on one budget cycle, staffed by people who already
+work there. There are at least five reasons to buy exposure outside it, and they stack.</p>
+
+<p><strong>An internal lab can only be wrong in one direction.</strong> Hunyuan is a product
+requirement: Tencent needs models to run inside WeChat, its cloud and its games. It is not a claim that
+Tencent's researchers will find the best method. If the winning technique over the next three years is
+something Tencent's own organisation is not structured to pursue — and post-training-centric
+development on someone else's open base is structurally awkward for a company whose pride is invested
+in its own base model — then a stake in a lab that <em>is</em> structured for it is cheap insurance.</p>
+
+<p><strong>The bet here is specifically orthogonal.</strong> That is the sharpest form of the argument.
+Tencent pretrains. Naive AI has publicly declined to. Backing a company whose entire thesis is that
+your own most expensive activity is becoming a commodity is not a conflict; it is a hedge against your
+own capital allocation, bought for a fraction of what that allocation costs.</p>
+
+<p><strong>The money comes back through the meter.</strong> Tencent sells cloud. A portfolio of
+well-funded AI startups is a portfolio of customers who will spend their raise on compute, some of it
+yours. This is the oldest reason a platform company invests in its ecosystem, and it does not require
+any single portfolio company to win.</p>
+
+<p><strong>The financial returns stopped being theoretical.</strong> Chinese AI labs have started
+reaching public markets, and the early marks have been extraordinary — Zhipu and MiniMax both listed
+in Hong Kong, with reported post-listing gains that would make a 2 percent stake a serious line item.
+When your last several AI positions have printed like that, the internal debate about whether to take
+another one gets short.</p>
+
+<p><strong>And relative to the alternatives, $1.42 billion is small.</strong> DeepSeek's first outside
+raise reportedly closed in May 2026 at a valuation around $52 billion, with later talks reported near
+$70 billion. Against that, Naive AI is a call option on a credentialed team at roughly two percent of
+the price. Rhodium Group's own work on the sector makes the pricing logic explicit and uncomfortable:
+Chinese model companies generate around a tenth of the revenue of OpenAI and Anthropic while trading at
+far higher multiples of it. Nobody is underwriting these at these prices on cash flow. They are being
+underwritten on the possibility that one of them turns out to be the important one — which is exactly
+the kind of bet you make many of, in small sizes, rather than one of, in a large size.</p>
+
+<p>Put all five together and the pattern isn't strange at all. It's a portfolio. The odd-looking part —
+a company with its own lab funding a rival — is only odd if you think the lab and the investment are
+answering the same question. They aren't. One is "what do we ship next quarter." The other is "what if
+we're wrong."</p>
+
+<h2>The Part That Isn't Tidy</h2>
+
+<p>One thing the investors underwrote alongside the pedigree: an unresolved dispute.</p>
+
+<p>Before founding Naive AI, Dai was technical adviser to MiroMind, an AGI startup associated with the
+billionaire Shanda founder Chen Tianqiao, from around August 2025. He stepped down on 18 January 2026
+and left with some of the team. On 23 April 2026, MiroMind issued a notice stating that its core
+technology and intellectual property remained entirely its own and reserving the right to take legal
+action. Dai has told the <i>Washington Post</i> that MiroMind tried to force him to relocate overseas,
+which is what prompted his departure; Chen has denied that account; Dai declined to comment to
+Bloomberg. No public settlement has been reported, and as far as I can find, no litigation has been
+filed either.</p>
+
+<p>That is a real overhang on a company whose principal asset is a research team and the methods in
+its heads. It is also, evidently, not one that was disqualifying to four sophisticated investors — at
+least two of whom priced a round after the notice was published. Reasonable people can read that as
+diligence concluding the claim is weak, or as competition for the deal outrunning the diligence. From
+the outside, both explanations fit the facts equally well.</p>
+
+<h2>What Would Settle It</h2>
+
+<ul>
+  <li><strong>The first model.</strong> Everything above is a thesis until an open-weight release can
+  be benchmarked by strangers. A post-training-first lab either delivers a measurable lift over the
+  base model it started from, or it doesn't, and the open-weight format means the answer will be public
+  within days of release.</li>
+  <li><strong>Which base it started from.</strong> The specific choice is a statement about whose
+  ecosystem the team thinks is winning, and it will be inspectable.</li>
+  <li><strong>Whether the MiroMind claim ever becomes a filing.</strong> A notice reserving rights and
+  a complaint are very different objects.</li>
+</ul>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The round details come from trade and business press, not filings.</strong> The three
+  tranches ($100M / $180M / $120M), the $1.42 billion valuation and the earlier reported $800 million
+  post-money in April all trace back to reporting on private rounds. Chinese private financings are
+  not publicly documented the way a US filing is, and I have not seen a primary document for any of
+  these numbers.</li>
+  <li><strong>I could not confirm the per-investor split.</strong> Coverage names Tencent, IDG Capital,
+  MPCi and HSG collectively across three rounds; which firm led which round, at what size, and whether
+  all four participated in all three, I could not establish. My argument about Tencent's motives is
+  therefore about a class of investor, not about a documented allocation.</li>
+  <li><strong>"Why they invested" is inference throughout.</strong> None of the four has published a
+  rationale for this specific position. The five reasons above are drawn from those firms' observable
+  behaviour in adjacent deals and the general economics of corporate venture — not from anything an
+  investor said about Naive AI.</li>
+  <li><strong>The Hong Kong listing gains are secondhand.</strong> I am relying on reporting of Zhipu's
+  and MiniMax's post-IPO performance and Tencent's reported stake percentages rather than on exchange
+  filings, and share prices move — whatever those marks were when reported, they are not what they are
+  now.</li>
+  <li><strong>The technical description is as reported, not as documented.</strong> "Modifies the
+  structure of a pretrained open-weight model, then mid-trains and post-trains it" is the press
+  account; the company has published no technical report I can read, and the phrase could describe
+  anything from a light fine-tuning pipeline to a genuine architectural intervention. Until the model
+  is out, so is the answer.</li>
+  <li><strong>I hold no position in Tencent, any of these funds, or any Chinese AI company.</strong> My
+  own book is Bitcoin through an ETF and Strategy Inc. A Beijing lab's funding round has no bearing on
+  either, and I am writing this because the investor logic is interesting, not because it is
+  actionable. None of this is investment advice.</li>
+</ul>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li>The Information. <i>A Tsinghua Professor's Stealth LLM Startup Hits $1.4 Billion Valuation.</i>
+  September 2026.
+  <a href="https://www.theinformation.com/articles/tsinghua-professors-stealth-llm-startup-hits-1-4-billion-valuation"
+  rel="noopener" target="_blank">theinformation.com</a></li>
+  <li>Implicator.ai. <i>Naive AI Hits $1.4 Billion Valuation After Raising $400M.</i> September 2026.
+  <a href="https://www.implicator.ai/naive-ai-1-4-billion-valuation-400-million-raise/"
+  rel="noopener" target="_blank">implicator.ai</a></li>
+  <li>Crypto Briefing. <i>Tencent backs Naive AI, valuing the Chinese startup at $1.42 billion after
+  just seven months.</i> September 2026.
+  <a href="https://cryptobriefing.com/tencent-backs-naive-ai-billion-valuation/"
+  rel="noopener" target="_blank">cryptobriefing.com</a></li>
+  <li>Digital Today. <i>China AI startup Naive AI bets on mid and post-training to compete in LLMs.</i>
+  September 2026.
+  <a href="https://www.digitaltoday.co.kr/en/view/105607/china-ai-startup-naive-ai-bets-on-mid-and-post-training-to-compete-in-llms"
+  rel="noopener" target="_blank">digitaltoday.co.kr</a></li>
+  <li>Jifeng Dai. Personal academic page (positions, publications).
+  <a href="https://jifengdai.org/" rel="noopener" target="_blank">jifengdai.org</a></li>
+  <li>Dai, Qi, Xiong, Li, Zhang, Hu &amp; Wei. <i>Deformable Convolutional Networks.</i> ICCV 2017,
+  arXiv:1703.06211. <a href="https://arxiv.org/pdf/1703.06211" rel="noopener"
+  target="_blank">arxiv.org</a></li>
+  <li>Wang et al. <i>InternImage: Exploring Large-Scale Vision Foundation Models with Deformable
+  Convolutions.</i> arXiv:2211.05778.
+  <a href="https://arxiv.org/abs/2211.05778" rel="noopener" target="_blank">arxiv.org</a></li>
+  <li>TechCrunch. <i>Sequoia splits China and India arms from US mothership to avoid 'portfolio
+  conflict' and 'market confusion'.</i> 6 June 2023.
+  <a href="https://techcrunch.com/2023/06/06/sequoia-rebrands-china-india-and-southeast-asia-units/"
+  rel="noopener" target="_blank">techcrunch.com</a></li>
+  <li>HSG. <i>About Us.</i> <a href="https://www.hsgcap.com/about-us/" rel="noopener"
+  target="_blank">hsgcap.com</a></li>
+  <li>EqualOcean. <i>Tencent Intensifies AI Investment Strategy.</i> 2025.
+  <a href="https://equalocean.com/analysis/2025033121463" rel="noopener"
+  target="_blank">equalocean.com</a></li>
+  <li>Digital Today. <i>Tencent shifts bets to China's AI leaders from DeepSeek to AI chips.</i>
+  <a href="https://www.digitaltoday.co.kr/en/view/85073/tencent-shifts-bets-to-chinas-ai-leaders-from-deepseek-to-ai-chips"
+  rel="noopener" target="_blank">digitaltoday.co.kr</a></li>
+  <li>Rhodium Group. <i>Silent Saboteurs: Loaded Assumptions in US AI Policy.</i> 2025.
+  <a href="https://rhg.com/wp-content/uploads/2025/02/Silent-Saboteurs-Loaded-Assumptions-in-US-AI-Policy.pdf"
+  rel="noopener" target="_blank">rhg.com</a></li>
+  <li>Wikipedia. <i>DeepSeek</i> (funding history and reported valuations).
+  <a href="https://en.wikipedia.org/wiki/DeepSeek" rel="noopener"
+  target="_blank">en.wikipedia.org</a></li>
+</ol>
