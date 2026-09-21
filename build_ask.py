@@ -278,9 +278,31 @@ HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
   <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
 </svg>"""
 
-CRUMBSEP_SVG = ('<svg class="crumbsep" viewBox="0 0 10 20" width="7" height="15" aria-hidden="true" '
-                'focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" '
-                'stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+# Thicker, brighter than build.py's own CRUMBSEP_SVG on purpose (2026-09-21, Michael's
+# ask, after seeing the mockup) -- this crumb carries THREE links instead of every
+# sibling's two, so the separators needed to read as dividers at a glance, not
+# disappear into the row. NOT a byte-for-byte copy of the other CRUMBSEP_SVGs for
+# that reason -- if the hub mark ever needs updating, this file's caret is exempt.
+CRUMBSEP_SVG = ('<svg class="crumbsep" viewBox="0 0 10 20" width="9" height="18" aria-hidden="true" '
+                'focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#9fb0c7" '
+                'stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+
+# A SIMPLIFIED derivative of build.py's own SCROLL_SVG for the "Mr. Librarian's Bible"
+# crumb link -- deliberately NOT a byte-for-byte copy the way HUB_MARK_SVG is. The real
+# scroll's fine linework (the three ruled lines, the quill) is drawn for the 44-56px
+# sizes it appears at elsewhere (the Bible's own header, the About page) and blurs to a
+# smudge at this crumb's 26px -- measured directly (see the mockup this shipped from).
+# Keeping just the bold shapes -- the parchment rect and the two rollers -- survives
+# the shrink and still reads as "a scroll," so the winding animation (the rollers
+# sliding in as the sheet narrows) rides on those instead. If the REAL scroll's colors
+# ever change, port them here by eye; there's no ruled-line detail left to keep in sync.
+CRUMB_BIBLE_SVG = """<svg class="biblemark" viewBox="0 0 46 46" aria-hidden="true">
+  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
+  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
+  <rect class="crumb-scroll-sheet" x="12.6" y="14.5" width="20.8" height="17" fill="#efe6cf"/>
+  <rect class="crumb-scroll-roll-l" x="9" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+  <rect class="crumb-scroll-roll-r" x="33.4" y="12" width="3.6" height="22" rx="1.8" fill="#3b2d5e" stroke="#e8c968" stroke-width="0.6"/>
+</svg>"""
 
 
 def _chrome(active=""):
@@ -294,23 +316,24 @@ def _chrome(active=""):
     # nested one level deeper (part of the Bible project, which is itself one of the
     # hub's publications), so this is a THREE-level trail rather than every other
     # blog's two: Mister Library > Mr. Librarian's Bible > Dear Mr. Librarian (the
-    # last of those is .askhead's own big brand, rendered separately right below
-    # this line, same relationship build.py's .hubcrumb has to its own .brand).
+    # last of those is .askmain's own big brand, rendered on the row below). The
+    # search box rides at the end of THIS row, not the brand row below -- see the
+    # .askhead layout comment in ask/style.css for why (Option B of that mockup).
     crumb = ('<div class="askcrumb">'
              '<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
              '%s<span class="hubwm">Mister Library</span></a>%s'
-             '<a class="midlink" href="%s">Mr. Librarian’s Bible</a>%s'
-             '</div>' % (SITE_URL, HUB_MARK_SVG, CRUMBSEP_SVG, BIBLE_URL, CRUMBSEP_SVG))
-    return ('<header class="askhead">'
-            '%s'
+             '<a class="biblelink" href="%s">%s<span class="biblewm">Mr. Librarian’s Bible</span></a>%s'
+             '%s'
+             '</div>' % (SITE_URL, HUB_MARK_SVG, CRUMBSEP_SVG,
+                         BIBLE_URL, CRUMB_BIBLE_SVG, CRUMBSEP_SVG, search))
+    main = ('<div class="askmain">'
             '<a class="brand" href="index.html">%s<span class="wm">Dear <span class="em">Mr.</span> <span class="em">Librarian</span></span></a>'
-            '%s'
             '<nav class="nav">'
             '<a href="index.html"%s>Home</a>'
             '<a href="tags.html"%s>Tags</a>'
             '<a href="ask.html"%s>Ask a question</a>'
-            '</nav></header>'
-            % (crumb, MARK_SVG, search, cls("home"), cls("tags"), cls("ask")))
+            '</nav></div>' % (MARK_SVG, cls("home"), cls("tags"), cls("ask")))
+    return '<header class="askhead">%s%s</header>' % (crumb, main)
 
 
 def _foot(hits_path=None):
