@@ -40,6 +40,39 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;colo
 .brand-name{font-family:Georgia,"Times New Roman",serif;font-weight:700;
   font-size:clamp(21px,5vw,31px);letter-spacing:-0.2px;color:#f7f2e2;line-height:1.2}
 .brand-name .lib{color:var(--gold)}
+
+/* Breadcrumb up to the hub (2026-09-21, Michael's ask, ported from the
+   Notebook after he approved it there): "Mister Library ›" above the brand
+   — this page had no way back to the root hub except the browser's back
+   button. Unlike the five other publications (a horizontal row, hub crumb
+   sized to match the local brand exactly), this header's own brand is a
+   vertically STACKED hero (a 56px icon centered above up to a 31px name) —
+   matching that size would print a second giant hero above the first one,
+   so the crumb instead sits as a small utility line above it, the same
+   size relationship an ordinary breadcrumb strip has to a page's own H1.
+   The hub mark is a byte-for-byte copy of <svg class="mark"> in the
+   hand-written root index.html (nothing to import — keep the two in step
+   by hand if it ever changes), and the text carries the same gold gradient
+   as that page's own <h1>. Centered like the rest of .site-head; sits
+   inside normal flow above .brand, so it never competes with .utilnav's
+   absolutely-positioned corner pills. */
+.hubcrumb{display:flex;align-items:center;justify-content:center;gap:7px;margin:0 0 16px}
+.hublink{display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+  transition:opacity .15s ease}
+.hublink:hover{opacity:.82}
+.hubmark{width:26px;height:26px;flex:none;overflow:visible;
+  filter:drop-shadow(0 0 4px rgba(232,201,104,.55)) drop-shadow(0 0 9px rgba(232,201,104,.35))}
+.hublink .hubwm{font-family:Georgia,"Times New Roman",serif;font-size:15px;font-weight:700;
+  letter-spacing:-0.1px;white-space:nowrap;
+  background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
+  -webkit-background-clip:text;background-clip:text;color:#e8c968;
+  -webkit-text-fill-color:transparent}
+.hubcrumb .crumbsep{flex:none}
+.shelf-spine{transform-box:fill-box;transform-origin:bottom center;
+  animation:spinePop 3.6s ease-in-out infinite;animation-delay:var(--d)}
+@keyframes spinePop{0%,84%,100%{transform:translateY(0);filter:brightness(1)}
+  10%{transform:translateY(-2.4px);filter:brightness(1.55)}}
+@media (prefers-reduced-motion:reduce){.shelf-spine{animation:none}}
 .site-head .rule{width:50px;height:2px;margin:16px auto 13px;
   background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .site-head .tag{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;

@@ -107,14 +107,75 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .brand-name .abroad { color: var(--terra); font-style: italic; }
 
-/* Upper-right of the header, on every page (see header()'s docstring for why
-   it's a real form rather than a JS-only widget). Absolutely positioned
-   against .site-head so it sits beside the brand row without disturbing the
-   centered layout beneath it; below ~620px there usually isn't room beside a
-   30px wordmark, so it drops into normal flow instead. */
-.headersearch { position: absolute; top: 38px; right: 0; margin: 0; }
+/* Breadcrumb up to the hub (2026-09-21, Michael's ask, ported from the
+   Notebook after he approved it there): "Mister Library › The Librarian
+   Abroad" — a page here had no way back to the root hub except the
+   browser's back button. This blog's header is its own centered hero
+   layout (not the compact two-row .hsm the other four publications share),
+   so the crumb sits beside the brand inside the same centered flex row
+   rather than in a fixed left position. The .brandwrap (the <h1> on the
+   home page) still wraps ONLY this blog's own brand — the hub crumb is a
+   sibling, not folded into that heading. The hub mark is a byte-for-byte
+   copy of <svg class="mark"> in the root index.html (hand-written, not
+   built — nothing to import; keep the two in step by hand if it ever
+   changes), sized to match this page's own 62px compass, with the same
+   gold gradient text-fill + drop-shadow halo used on every publication's
+   crumb, so the hub's identity travels with it rather than borrowing this
+   blog's own terracotta accent. */
+.brandcrumb { display: inline-flex; align-items: center; gap: 14px; }
+.hublink {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: opacity .15s ease;
+}
+.hublink:hover { opacity: .82; }
+.hubmark {
+  width: 62px;
+  height: 62px;
+  flex: none;
+  filter: drop-shadow(0 0 6px rgba(232,201,104,.55)) drop-shadow(0 0 14px rgba(232,201,104,.35));
+}
+.hublink .hubwm {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: .2px;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #f7931a, #e8865c 45%, #e8c968 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #e8c968;
+  -webkit-text-fill-color: transparent;
+}
+.crumbsep { flex: none; }
+.shelf-spine {
+  transform-box: fill-box;
+  transform-origin: bottom center;
+  animation: spinePop 3.6s ease-in-out infinite;
+  animation-delay: var(--d);
+}
+@keyframes spinePop {
+  0%, 84%, 100% { transform: translateY(0); filter: brightness(1); }
+  10% { transform: translateY(-2.4px); filter: brightness(1.55); }
+}
+@media (prefers-reduced-motion: reduce) { .shelf-spine { animation: none; } }
+@media (max-width: 560px) {
+  .hubmark { width: 45px; height: 45px; }
+  .hublink .hubwm { display: none; }
+}
+
+/* Used to float absolutely in the header's upper-right corner (see header()'s
+   docstring for why it's a real form rather than a JS-only widget). The hub
+   breadcrumb (2026-09-21) widened the centered brand row enough that its
+   right edge now runs INTO that fixed corner position at every width up to
+   .wrap's own 860px cap — not just below some narrow breakpoint the way the
+   old mobile fallback assumed. So the corner float is retired: search is now
+   always centered, static, in normal flow below the brand row (the same
+   treatment the old sub-640px fallback already used, now the only one). */
+.headersearch { margin: 18px auto 0; max-width: 220px; }
 .headersearch input[type="search"] {
-  width: 148px;
+  width: 100%;
   font: 14px/1.3 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   color: var(--ink);
   background: var(--paper-2);
@@ -129,14 +190,8 @@ img { max-width: 100%; height: auto; display: block; }
 .headersearch input[type="search"]::placeholder { color: var(--muted); }
 .headersearch input[type="search"]:focus {
   outline: none;
-  width: 190px;
   border-color: var(--terra);
   box-shadow: 0 0 0 3px rgba(194,94,58,.14);
-}
-@media (max-width: 640px) {
-  .headersearch { position: static; margin: 18px auto 0; max-width: 220px; }
-  .headersearch input[type="search"] { width: 100%; }
-  .headersearch input[type="search"]:focus { width: 100%; }
 }
 
 .searchcount {
