@@ -348,10 +348,13 @@ def _chrome(active=""):
     search = ('<form class="headersearch" action="index.html" method="get" role="search">'
               '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
               'aria-label="Search past entries"/></form>')
+    crumbsep = ('<svg class="crumbsep" viewBox="0 0 10 20" width="9" height="20" '
+                'aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" '
+                'stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" '
+                'stroke-linejoin="round"/></svg>')
     hublink = ('<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
-               '%s<span class="hubwm">Mister Library</span></a>'
-               '<span class="crumbsep" aria-hidden="true">›</span>'
-               % (SITE_URL, HUB_MARK_SVG))
+               '%s<span class="hubwm">Mister Library</span></a>%s'
+               % (SITE_URL, HUB_MARK_SVG, crumbsep))
     brand = ('<a class="brand" href="index.html">%s'
              '<span class="wm">The Librarian\'s <span class="em">Notebook</span></span></a>'
              % MARK_SVG.replace("__ACCENT__", ACCENT))
@@ -1229,12 +1232,30 @@ h1{margin:0;font-size:31px;font-weight:400;letter-spacing:.01em}
    in step by hand if the hub mark ever changes, same discipline MARK_SVG's
    own docstring already calls out for inlining on the hub). */
 .brandcrumb{display:inline-flex;align-items:center;gap:10px}
-.hublink{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#93a4bd}
-.hublink:hover{color:#e8eef7}
-.hubmark{width:26px;height:26px;flex:0 0 26px;overflow:visible}
-.hublink .hubwm{font-size:15px;letter-spacing:.01em;white-space:nowrap;
-  font-family:ui-sans-serif,system-ui,-apple-system,sans-serif}
-.crumbsep{color:#5a6b80;font-size:16px;line-height:1}
+.hublink{display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  transition:opacity .15s ease}
+.hublink:hover{opacity:.82}
+/* Same 45px as the Notebook's own .bmark (header.hsm context) — full parity
+   with the current-page icon, not a shrunken ancestor version — plus the
+   same soft gold drop-shadow halo the big <svg class="mark"> wears on the
+   hub's own index.html (Michael's ask, 2026-09-21: size, the shelf-spine
+   pop animation already on the mark, AND the glow, all matched). */
+.hubmark{width:45px;height:45px;flex:0 0 45px;overflow:visible;
+  filter:drop-shadow(0 0 6px rgba(232,201,104,.55)) drop-shadow(0 0 14px rgba(232,201,104,.35))}
+/* Same serif stack + 23px as the Notebook's own .wm (no font-family override
+   needed — both inherit body's Georgia stack), and the SAME gold gradient
+   text-fill as the hub's own <h1>Mister Library</h1> on index.html, so the
+   hub's identity travels with it wherever this crumb appears rather than
+   borrowing the current publication's accent color. */
+.hublink .hubwm{font-size:23px;font-weight:400;letter-spacing:.01em;white-space:nowrap;
+  background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
+  -webkit-background-clip:text;background-clip:text;color:#e8c968;
+  -webkit-text-fill-color:transparent}
+/* An SVG chevron rather than a "›" glyph — a font's own angle-quote glyph
+   reads thin and easy to miss between two now-equal-weight brand names;
+   a drawn stroke gives a caret as thick and deliberate as the crumb it
+   separates (Michael's ask, same pass as the icon glow). */
+.crumbsep{flex:0 0 auto}
 .shelf-spine{transform-box:fill-box;transform-origin:bottom center;
   animation:spinePop 3.6s ease-in-out infinite;animation-delay:var(--d)}
 @keyframes spinePop{0%,84%,100%{transform:translateY(0);filter:brightness(1)}
