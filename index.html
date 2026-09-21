@@ -42,7 +42,31 @@ h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
   background:linear-gradient(90deg,#f7931a,#e8865c 45%,#e8c968 85%);
   -webkit-background-clip:text;background-clip:text;color:#e8c968;
   -webkit-text-fill-color:transparent}
-.tag{color:#aab4c6;font-size:16.5px;max-width:600px;margin:0 auto 8px}
+/* The rundown box: the Notebook's live news roundup (source/notebook/_rundown.json),
+   mirrored here so a daily visit shows it without a click into /notebook/ first.
+   Regenerated wholesale by build_hub.py on every publish, same as a card's .latest
+   line — never hand-edit the contents, only source/notebook/_rundown.json. */
+.hubrundown{text-align:left;margin:30px 0 6px;padding:22px 26px;
+  border-left:3px solid #8fa3ff;border-radius:0 12px 12px 0;background:#0a111c}
+.hubrundown:empty{display:none;margin:0}
+.hubrundown .rdtitle{margin:0 0 4px;font-size:19px;font-weight:400;color:#e8eef7}
+.hubrundown .rddate{margin:0 0 16px;color:#7f8fa6;font-size:13px;font-style:italic}
+.hubrundown .rdsec{margin:16px 0 8px;font-size:12px;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;color:#8fa3ff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hubrundown .rdsec:first-of-type{margin-top:0}
+.hubrundown ul{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
+.hubrundown li{margin:0 0 7px}
+.hubrundown a{color:inherit}
+.hubrundown a:hover{text-decoration:underline}
+.hubrundown .rdmore{margin:18px 0 0;font-size:13px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hubrundown .rdmore a{color:#8fa3ff;font-weight:600;text-decoration:none}
+.hubrundown .rdmore a:hover{text-decoration:underline}
+@media (max-width:720px){
+  .hubrundown{padding:18px 18px;margin:24px 0 4px}
+  .hubrundown .rdtitle{font-size:17px}
+}
 
 .cardgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:38px 0 8px}
 @media (max-width:760px){.cardgrid{grid-template-columns:1fr}}
@@ -163,8 +187,25 @@ footer.hub-foot a:hover{color:#e8c968}
     <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
   </svg>
   <h1>Mister Translation</h1>
-  <div class="tag">A Bible translation, and the five other things Mr. Librarian keeps — one entry at a time.</div>
 </header>
+
+<section id="rundown" class="hubrundown">
+  <h2 class="rdtitle">The rundown</h2>
+  <p class="rddate">September 21, 2026</p>
+  <h3 class="rdsec">World</h3>
+  <ul><li>Germany&#x27;s Christian Democratic Union falls out of a regional parliament for the first time in the party&#x27;s post-WWII history, taking just 4.9% (below the 5% threshold) in Mecklenburg-Vorpommern&#x27;s September 20 state election as the AfD wins with 38.2%; Chancellor Friedrich Merz calls the result &quot;a disaster&quot; but says he intends to stay on.</li><li>The UN&#x27;s 81st General Assembly opens its general debate on September 22 in New York, with Brazil&#x27;s Lula da Silva speaking first under a tradition dating to 1955 and Donald Trump, as the host nation&#x27;s president, taking the floor second.</li><li>Israeli gunfire kills two Palestinians, including a child, in northern and southern Gaza on September 21, the Palestinian Health Ministry says, amid continued disputes over implementing the ceasefire&#x27;s second phase.</li></ul>
+  <h3 class="rdsec">Bitcoin &amp; crypto</h3>
+  <ul><li>Bitcoin trades near $84,592 on September 21, up 44% in the third quarter — its best quarterly showing since Q4 2024 — though still 48% below its October 2025 record of $126,000; other tokens including ETH, XRP, SOL, UNI and NEAR are up 40%-150% over the same stretch.</li><li>US spot Bitcoin ETFs draw $593 million in combined inflows over the two trading days through September 18, snapping a run of outflows and helping push the token back above $81,000; crypto ETFs have now topped $1.5 trillion in cumulative 2026 inflows with three months still to go.</li></ul>
+  <h3 class="rdsec">Technology</h3>
+  <ul><li>Intel shares jump in premarket trading September 21 after reports it&#x27;s partnering with Taiwan&#x27;s AU Optronics on Micro LED-based advanced packaging for co-packaged optics and high-density computing, using through-glass vias to embed chips in a glass substrate.</li><li>Beijing AI startup Naive AI, founded in February 2026 by Tsinghua professor Dai Jifeng, reaches a $1.42 billion valuation after raising $400 million across three rounds from Tencent, IDG Capital, MPCi and HSG.</li><li>Alibaba&#x27;s Qwen team releases Qwen3.8-Omni-Flash on September 18, a native omnimodal model handling text, images, audio and video with a 1-million-token context window, beating its own Qwen3.5-Omni-Plus by more than 26% on average across benchmarks.</li></ul>
+  <h3 class="rdsec">Science</h3>
+  <ul><li>A Tel Aviv University study argues the Qumran sect behind the Dead Sea Scrolls really did follow its unusual 364-day calendar — which divides evenly into 52 seven-day weeks — in its early years, before abandoning the system later as impractical; published in Tarbiz Quarterly for Jewish Studies by Prof. Eshbal Ratzon.</li><li>Researchers report that cats carry a durable chemical &quot;calling card&quot; in their urine made of 13 branched-chain fatty acids whose mix varies cat to cat but stays consistent within one animal, tied to long-mysterious fat droplets in feline kidneys; the study is due in Current Biology.</li></ul>
+  <h3 class="rdsec">Health &amp; medicine</h3>
+  <ul><li>A NutriNet-Santé study tracking more than 112,395 people over seven to eight years finds eight common food preservatives, including ascorbic acid and erythorbates, associated with higher rates of hypertension, heart attack and stroke; published in the European Heart Journal by INSERM&#x27;s Mathilde Touvier and Anaïs Hasenböhler.</li><li>The FDA approves Ionis Pharmaceuticals&#x27; Zanvastro (zilganersen) on September 3 as the first disease-modifying treatment for Alexander disease, an ultra-rare fatal neurological disorder, after a trial found the quarterly RNA-targeted injection stabilized patients&#x27; gait speed at week 61 while the control group&#x27;s continued to decline.</li></ul>
+  <h3 class="rdsec">Arts &amp; culture</h3>
+  <ul><li>The National Book Foundation announces its 2026 fiction longlist — ten titles drawn from 451 submissions, including Marlon James&#x27; &quot;The Disappearers&quot; and Louise Erdrich&#x27;s &quot;Python&#x27;s Kiss&quot; — with finalists due October 6 and winners announced November 18.</li><li>Anthony Page, the British stage and TV director who won a Tony Award for his 1997 Broadway revival of &quot;A Doll&#x27;s House&quot; and earned two Emmy nominations, dies September 11 at a London care home, aged 90.</li></ul>
+  <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>
+</section>
 
 <div class="cardgrid">
   <a class="hcard c-finance" href="finance/">

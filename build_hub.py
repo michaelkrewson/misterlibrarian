@@ -14,6 +14,12 @@ list of six projects otherwise would:
   2. `img/og-hub.png`, the hub's OWN link-preview image. The root used to point at the
      Bible project's default card, so sharing mistertranslation.com/ advertised "A fresh
      translation of the Bible" and landed on a six-project hub (found 2026-09-18).
+  3. The rundown box (`<section id="rundown" class="hubrundown">`, added 2026-09-21) —
+     a full mirror of the Notebook's own front-page news roundup, so a daily visit to
+     the bare domain shows it without a click into /notebook/ first. Rendered straight
+     from source/notebook/_rundown.json (the SAME file the Notebook builds from — no
+     second copy to drift), wholesale-replaced every run exactly like a card's .latest
+     line. Empty/missing file → an empty <section>, which `.hubrundown:empty` hides.
 
 Run directly (`python3 build_hub.py`) or — the point — it runs at the end of EVERY
 builder's `__main__` (build.py, build_finance.py, build_health.py, build_notebook.py,
@@ -25,6 +31,7 @@ already one big <a>, and an anchor can't nest inside an anchor.
 """
 import datetime as _dt
 import html
+import json
 import os
 import re
 import sys
@@ -32,6 +39,7 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 INDEX = os.path.join(ROOT, "index.html")
 OG_PATH = os.path.join(ROOT, "img", "og-hub.png")
+RUNDOWN_FILE = os.path.join(ROOT, "source", "notebook", "_rundown.json")
 
 # data-pub → (source dir, url prefix). The Bible is handled separately.
 DATED = {
@@ -44,6 +52,8 @@ _DATED_NAME = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+?)\.html$")
 _WEST_NAME = re.compile(r"^(\d{2})-(.+?)\.html$")
 _LATEST_DIV = re.compile(r'<div class="latest" data-pub="([a-z]+)">.*?</div>', re.S)
 _BIBLE_NEWEST = re.compile(r'href="([a-z0-9-]+\.html)">Newest: ([^<]+)<')
+_RUNDOWN_SECTION = re.compile(
+    r'<section id="rundown" class="hubrundown">.*?</section>', re.S)
 
 
 def _front_matter(path):
@@ -177,6 +187,79 @@ def refresh_index(entries, quiet=False):
     return new != src
 
 
+# --- the rundown box: a full mirror of the Notebook's front-page news roundup -------
+def _load_rundown():
+    """Same contract as build_notebook.py's own _load_rundown: optional file, missing
+    href defaults to "". Kept as an independent copy rather than an import — this is
+    the one place build_hub.py reads a publication's source data directly instead of
+    a rendered page, so it stays a plain read of the JSON, nothing more."""
+    if not os.path.exists(RUNDOWN_FILE):
+        return None
+    with open(RUNDOWN_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+    for sec in data.get("sections", []):
+        for item in sec.get("items", []):
+            item.setdefault("href", "")
+    return data
+
+
+def _pretty_date(date_iso):
+    try:
+        y, m, d = (int(p) for p in date_iso.split("-"))
+        return _dt.date(y, m, d).strftime("%B %-d, %Y")
+    except ValueError:
+        return date_iso
+
+
+def _rundown_html(data):
+    if not data or not data.get("sections"):
+        return '<section id="rundown" class="hubrundown"></section>'
+    parts = ['<section id="rundown" class="hubrundown">',
+             '  <h2 class="rdtitle">%s</h2>' % html.escape(data.get("title") or "The rundown")]
+    date_label = data.get("date", "")
+    if date_label:
+        parts.append('  <p class="rddate">%s</p>' % html.escape(_pretty_date(date_label)))
+    for sec in data["sections"]:
+        items = sec.get("items", [])
+        if not items:
+            continue
+        parts.append('  <h3 class="rdsec">%s</h3>' % html.escape(sec.get("label", "")))
+        lis = []
+        for it in items:
+            text = html.escape(it.get("text", ""))
+            href = it.get("href", "").strip()
+            if href:
+                lis.append('<li><a href="%s">%s</a></li>' % (html.escape(href), text))
+            else:
+                lis.append("<li>%s</li>" % text)
+        parts.append('  <ul>%s</ul>' % "".join(lis))
+    parts.append('  <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>')
+    parts.append("</section>")
+    return "\n".join(parts)
+
+
+def refresh_rundown(quiet=True):
+    """Wholesale-replaces <section id="rundown"> in index.html from the SAME
+    source/notebook/_rundown.json the Notebook's own front page renders — no second
+    copy of the day's stories to drift out of sync. Runs every time any builder
+    finishes (via refresh(), below), same as the card .latest lines."""
+    data = _load_rundown()
+    html_block = _rundown_html(data)
+    with open(INDEX, encoding="utf-8") as f:
+        src = f.read()
+    if not _RUNDOWN_SECTION.search(src):
+        print('build_hub: index.html has no <section id="rundown"> slot', file=sys.stderr)
+        return False
+    new = _RUNDOWN_SECTION.sub(lambda m: html_block, src, count=1)
+    if new != src:
+        with open(INDEX, "w", encoding="utf-8") as f:
+            f.write(new)
+    if not quiet:
+        n = sum(len(s.get("items", [])) for s in (data or {}).get("sections", []))
+        print("  rundown   %s" % ("%d item%s" % (n, "" if n == 1 else "s") if n else "(none)"))
+    return new != src
+
+
 # --- the hub's own link-preview card ------------------------------------------------
 # Same dark gradient + gold frame as build.py's _render_default_card (kept in step by
 # hand; that renderer is buried in a 6,800-line module we don't want to import here).
@@ -234,6 +317,12 @@ def refresh(quiet=True):
             print("hub: index.html %s" % ("updated" if changed else "unchanged"))
     except Exception as e:
         print("build_hub: index refresh failed: %s" % e, file=sys.stderr)
+    try:
+        changed = refresh_rundown(quiet=quiet)
+        if not quiet:
+            print("hub: rundown box %s" % ("updated" if changed else "unchanged"))
+    except Exception as e:
+        print("build_hub: rundown refresh failed: %s" % e, file=sys.stderr)
     try:
         ok = render_og()
         if not quiet:
