@@ -86,6 +86,16 @@ META_DESC_MAX = 155
 META_DESC_MIN = 70
 
 TAG_INDEX_MIN = 2          # a tag page below this stays built but noindex'd
+# The front-page tag cloud has the same long-tail shape build_travel.py's own
+# TAG_BAR_MIN_COUNT was built for (there: 13 entries, 46 tags, 32 used once;
+# here: 9 entries, 20 tags, 16 used once) -- a flat alphabetical list sprawls
+# to three rows before the first entry tile even shows. Same fix: only a tag
+# that RECURS earns a permanent slot; the one-off tags fold behind a "+N more"
+# toggle. This is display-only, not the live filter bar build_travel.py also
+# has -- every chip is still a plain link to its static /tag-<slug>.html page,
+# per this file's own module docstring on why that heavier machinery isn't
+# worth it yet at this size.
+TAG_BAR_MIN_COUNT = 2
 # A distinct hero from the Bible's own (which reuses the Great Isaiah Scroll on
 # bible.html) -- the Main Reading Room's circular reference desk at the Library of
 # Congress, the literal "librarian's desk" a visitor approached to ask a question.
@@ -551,11 +561,37 @@ def build_front(entries):
     for e in entries:
         for t in e["tags"]:
             counts[t] = counts.get(t, 0) + 1
-    chips = "".join(
-        '<a class="chip" href="%s">%s <span class="chipn">%d</span></a>'
-        % (_tag_file(t), esc(t), n) for t, n in sorted(counts.items(), key=lambda kv: kv[0].lower()))
-    filters = ('<div class="filters">%s</div>' % chips) if chips else ""
+    all_tags = sorted(counts, key=str.lower)
+    shown = [t for t in all_tags if counts[t] >= TAG_BAR_MIN_COUNT]
+    shown_set = set(shown)
+    rare = [t for t in all_tags if t not in shown_set]
+
+    def _chip(t, is_rare=False):
+        return ('<a class="chip%s" href="%s">%s <span class="chipn">%d</span></a>'
+                % (" rare" if is_rare else "", _tag_file(t), esc(t), counts[t]))
+
+    more = ('<button class="chip more" id="tagMore" type="button" '
+            'aria-expanded="false" aria-controls="filters">+ %d more</button>' % len(rare)
+            ) if rare else ""
+    chips = (('<div class="filters" id="filters">'
+              + "".join(_chip(t) for t in shown) + more
+              + "".join(_chip(t, is_rare=True) for t in rare) + "</div>")
+             if all_tags else "")
+    filters = chips
     empty = "" if entries else '<p class="empty">The first question is being answered.</p>'
+    tagmore_js = """
+(function(){
+  var more = document.getElementById('tagMore');
+  var bar = document.getElementById('filters');
+  if (!more || !bar) return;
+  var label = more.textContent;
+  more.addEventListener('click', function(){
+    var open = bar.classList.toggle('tags-open');
+    more.setAttribute('aria-expanded', open ? 'true' : 'false');
+    more.textContent = open ? 'Show fewer tags' : label;
+  });
+})();
+"""
     search_js = """
 (function(){
   var input = document.getElementById('headerSearch');
@@ -581,7 +617,7 @@ def build_front(entries):
 """
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE), desc=BLURB, url=BASE_URL, active="home",
-        og_type="website", extra_js="<script>%s</script>" % search_js,
+        og_type="website", extra_js="<script>%s%s</script>" % (tagmore_js, search_js),
         body="""%s<section class="writing">
 %s%s
 <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>

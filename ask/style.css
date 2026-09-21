@@ -199,6 +199,15 @@ a.tg:hover{border-color:var(--gold);color:var(--gold)}
   color:var(--muted);text-decoration:none;transition:all .15s}
 .chip:hover{border-color:var(--gold);color:var(--gold)}
 .chipn{color:var(--dim);margin-left:3px}
+/* The long tail of one-off tags, folded away until asked for -- same recipe
+   as /travel/'s front-page filter bar (see TAG_BAR_MIN_COUNT in
+   build_ask.py). Display only: every tag chip is still a plain link, still in
+   the DOM, still reachable from the foot of an entry -- this just keeps the
+   cloud to about two rows before the "+N more" toggle is clicked. */
+.chip.rare{display:none}
+.filters.tags-open .chip.rare{display:block}
+.chip.more{border:1px solid var(--border);border-style:dashed;background:none;cursor:pointer}
+.chip.more:hover{border-color:var(--gold);color:var(--gold)}
 
 @media (max-width:680px){
   .etitle{font-size:24px}
