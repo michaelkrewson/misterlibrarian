@@ -7,6 +7,51 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>Fifty-Two Weeks, No Remainder</title>
+    <link>https://mistertranslation.com/notebook/fifty-two-weeks-no-remainder.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/fifty-two-weeks-no-remainder.html</guid>
+    <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A study by Prof. Eshbal Ratzon of Tel Aviv University argues that the Qumran sect really did run its famous 364-day calendar in daily life — at least at first — and then quietly stopped, because 364 days is a day and a quarter short of a solar year and the error compounds. Here is what the calendar was for, why a number divisible by seven was worth that much trouble, what the roughly twenty calendrical scrolls actually contain, and why the argument matters to anyone reading Second Temple texts.</description>
+    <category>dead sea scrolls</category>
+    <category>qumran</category>
+    <category>archaeology</category>
+    <category>calendars</category>
+    <category>second temple judaism</category>
+    <category>book of jubilees</category>
+    <category>astronomy</category>
+    <category>history</category>
+  </item>
+  <item>
+    <title>The Calling Card in a Cat's Kidneys</title>
+    <link>https://mistertranslation.com/notebook/the-calling-card-in-a-cats-kidneys.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-calling-card-in-a-cats-kidneys.html</guid>
+    <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Cat kidneys are stuffed with fat droplets, and nobody has known why for about 110 years. A study in Current Biology reports the answer: they are a reservoir for thirteen branched-chain fatty acids whose exact mix differs from cat to cat, holds steady within one animal, and survives on the ground for at least a day — a chemical calling card. Then the obvious follow-up, which has a real and complicated literature: do people have one too, and could you identify someone from it?</description>
+    <category>biology</category>
+    <category>cats</category>
+    <category>chemistry</category>
+    <category>animal behaviour</category>
+    <category>kidneys</category>
+    <category>forensic science</category>
+    <category>metabolomics</category>
+    <category>scent</category>
+  </item>
+  <item>
+    <title>The Most-Downloaded AI Models in the World Are Alibaba's</title>
+    <link>https://mistertranslation.com/notebook/the-most-downloaded-ai-models-in-the-world-are-alibabas.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-most-downloaded-ai-models-in-the-world-are-alibabas.html</guid>
+    <pubDate>Mon, 21 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On 18 September Alibaba's Qwen team shipped Qwen3.8-Omni-Flash — one model that takes text, images, audio and video, holds a million tokens of context, and decides for itself which parts of a two-hour video are worth watching. The release is the news, but the program behind it is the story: Qwen passed three billion downloads this summer, more than Google's and Meta's open models combined. Here is what "omnimodal" actually means, what the 26 percent is measuring, and why a company most people know for e-commerce is a serious AI lab.</description>
+    <category>artificial intelligence</category>
+    <category>alibaba</category>
+    <category>qwen</category>
+    <category>open weights</category>
+    <category>china</category>
+    <category>machine learning</category>
+    <category>deepseek</category>
+    <category>multimodal</category>
+  </item>
+  <item>
     <title>4.7 Sigma, and a New Kind of Spooky</title>
     <link>https://mistertranslation.com/notebook/4-7-sigma-and-a-new-kind-of-spooky.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/4-7-sigma-and-a-new-kind-of-spooky.html</guid>
