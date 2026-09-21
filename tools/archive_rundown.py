@@ -76,8 +76,9 @@ def main():
                      help='Default: "The Rundown — <the box\'s own date, spelled out>"')
     ap.add_argument("--section", default="world", choices=SECTIONS,
                      help="Notebook section (default: world — this is a news roundup)")
-    ap.add_argument("--slug", default="the-rundown",
-                     help="Filename slug; the date comes from the box (default: the-rundown)")
+    ap.add_argument("--slug", default=None,
+                     help="Filename slug (default: the-rundown-<date>, unique per day — "
+                          "see the 2026-09-21 fix note below for why a fixed slug is wrong)")
     ap.add_argument("--tags", default="rundown",
                      help='Comma-separated tags (default: "rundown" — '
                           "this is what makes tag-rundown.html the archive)")
@@ -115,7 +116,22 @@ def main():
         "%d stor%s across %s, tracked on %s."
         % (n_items, "y" if n_items == 1 else "ies", labels, pretty_date(date_obj)))
 
-    fn = "%s-%s.html" % (date_str, args.slug)
+    # 2026-09-21 fix: the default slug used to be the fixed word "the-rundown"
+    # for every day. build_notebook.py's load_entries() strips only the
+    # YYYY-MM-DD- filename prefix and uses the REMAINING slug as the output
+    # URL (notebook/<slug>.html) — the same rule every other entry relies on
+    # to get a unique permalink. A fixed slug meant every archived day built
+    # to the identical notebook/the-rundown.html, silently overwriting the
+    # previous day's — a full rebuild kept whichever date sorted first in
+    # os.listdir(), so four of the first five archived rundowns (09-17
+    # through 09-20) were invisible on the live site despite existing as
+    # real, correctly-tagged source files. Discovered when Michael pointed
+    # out the newly-published articles weren't showing as linked on "the
+    # rundown posts" and only one of the two he meant (the front-page box)
+    # turned out to still be reachable. Each day's slug is now unique by
+    # construction.
+    slug = args.slug or ("the-rundown-%s" % date_str)
+    fn = "%s-%s.html" % (date_str, slug)
     out_path = os.path.join(SRC, fn)
     if os.path.exists(out_path):
         sys.exit("source/notebook/%s already exists — pick a different --slug" % fn)
