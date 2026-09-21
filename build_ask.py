@@ -262,6 +262,26 @@ MARK_SVG = """<svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.o
 <path d="M8.5 18.3 L23 29 L37.5 18.3" fill="none" stroke="#e8c968" stroke-width="0.8" stroke-linejoin="round"/>
 </svg>"""
 
+# The hub mark + caret, byte-for-byte copies of build.py's own HUB_MARK_SVG/CRUMBSEP_SVG
+# (itself a copy of the hand-written root index.html's <svg class="mark">) -- same
+# discipline as every other publication's own copy: nothing to import, keep the three
+# in step by hand if the hub mark ever changes.
+HUB_MARK_SVG = """<svg class="hubmark" viewBox="0 0 46 46" aria-hidden="true">
+  <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
+  <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
+  <line x1="9.5" y1="33.2" x2="36.5" y2="33.2" stroke="#3a4657" stroke-width="1.4"/>
+  <rect class="shelf-spine" style="--d:0s" x="11" y="15" width="3.4" height="18" rx="1" fill="#f7931a"/>
+  <rect class="shelf-spine" style="--d:.22s" x="15.2" y="12" width="3.4" height="21" rx="1" fill="#e8865c"/>
+  <rect class="shelf-spine" style="--d:.44s" x="19.4" y="17" width="3.4" height="16" rx="1" fill="#3fd2a8"/>
+  <rect class="shelf-spine" style="--d:.66s" x="23.6" y="13" width="3.4" height="20" rx="1" fill="#e8c968"/>
+  <rect class="shelf-spine" style="--d:.88s" x="27.8" y="16" width="3.4" height="17" rx="1" fill="#8fa3ff"/>
+  <rect class="shelf-spine" style="--d:1.1s" x="32" y="14" width="3.4" height="19" rx="1" fill="#4fa8dc"/>
+</svg>"""
+
+CRUMBSEP_SVG = ('<svg class="crumbsep" viewBox="0 0 10 20" width="7" height="15" aria-hidden="true" '
+                'focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" '
+                'stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+
 
 def _chrome(active=""):
     def cls(k):
@@ -269,7 +289,20 @@ def _chrome(active=""):
     search = ('<form class="headersearch" action="index.html" method="get" role="search">'
               '<input type="search" name="q" id="headerSearch" placeholder="Search entries…" '
               'aria-label="Search past entries"/></form>')
+    # Breadcrumb up to the hub AND the Bible project (2026-09-21, Michael's ask) --
+    # /ask/ isn't a sibling of Ledger/Regimen/Notebook/Abroad off the root hub, it's
+    # nested one level deeper (part of the Bible project, which is itself one of the
+    # hub's publications), so this is a THREE-level trail rather than every other
+    # blog's two: Mister Library > Mr. Librarian's Bible > Dear Mr. Librarian (the
+    # last of those is .askhead's own big brand, rendered separately right below
+    # this line, same relationship build.py's .hubcrumb has to its own .brand).
+    crumb = ('<div class="askcrumb">'
+             '<a class="hublink" href="%s/" aria-label="Mister Library — every publication">'
+             '%s<span class="hubwm">Mister Library</span></a>%s'
+             '<a class="midlink" href="%s">Mr. Librarian’s Bible</a>%s'
+             '</div>' % (SITE_URL, HUB_MARK_SVG, CRUMBSEP_SVG, BIBLE_URL, CRUMBSEP_SVG))
     return ('<header class="askhead">'
+            '%s'
             '<a class="brand" href="index.html">%s<span class="wm">Dear <span class="em">Mr.</span> <span class="em">Librarian</span></span></a>'
             '%s'
             '<nav class="nav">'
@@ -277,7 +310,7 @@ def _chrome(active=""):
             '<a href="tags.html"%s>Tags</a>'
             '<a href="ask.html"%s>Ask a question</a>'
             '</nav></header>'
-            % (MARK_SVG, search, cls("home"), cls("tags"), cls("ask")))
+            % (crumb, MARK_SVG, search, cls("home"), cls("tags"), cls("ask")))
 
 
 def _foot(hits_path=None):
