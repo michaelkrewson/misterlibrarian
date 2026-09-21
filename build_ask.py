@@ -352,13 +352,11 @@ def _foot(hits_path=None):
     hitswidget = _hits_widget(hits_path, " views") if hits_path else ""
     hits_bit = " · %s" % hitswidget if hitswidget else ""
     return ('<footer class="askfoot">'
-            '<p>Dear Mr. Librarian is part of <a href="%s">The MisterLibrarian Bible Project</a> — '
-            'reader questions about the translation, answered one at a time.</p>'
             '<p><a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · <a href="%s">Mr. Librarian’s Bible</a>%s</p>'
-            '<p class="legal">© %d The MisterLibrarian Bible Project. '
+            '<p class="legal">© %d mistertranslation.com. '
             '<a href="%s">Privacy policy</a>.</p>'
-            '</footer>' % (BIBLE_URL, BIBLE_URL, hits_bit, year,
+            '</footer>' % (BIBLE_URL, hits_bit, year,
                             "https://mistertranslation.com/privacy.html"))
 
 
