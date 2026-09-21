@@ -215,7 +215,7 @@ def _rundown_html(data):
     if not data or not data.get("sections"):
         return '<section id="rundown" class="hubrundown"></section>'
     parts = ['<section id="rundown" class="hubrundown">',
-             '  <h2 class="rdtitle">%s</h2>' % html.escape(data.get("title") or "The rundown")]
+             '  <h2 class="rdtitle">%s</h2>' % html.escape(data.get("title") or "Today's rundown")]
     date_label = data.get("date", "")
     if date_label:
         parts.append('  <p class="rddate">%s</p>' % html.escape(_pretty_date(date_label)))

@@ -147,7 +147,7 @@ def main():
     print("archived -> source/notebook/%s" % fn)
 
     if not args.keep:
-        fresh = {"date": dt.date.today().isoformat(), "title": "The rundown",
+        fresh = {"date": dt.date.today().isoformat(), "title": "Today's rundown",
                  "note": data.get("note", ""), "sections": []}
         with open(RUNDOWN_FILE, "w", encoding="utf-8") as fh:
             json.dump(fresh, fh, indent=2, ensure_ascii=False)

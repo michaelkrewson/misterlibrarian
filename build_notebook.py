@@ -477,7 +477,7 @@ def _rundown_box(data, entries=()):
     except ValueError:
         pass
     parts = ['<section class="rundown">',
-             '    <h2 class="rdtitle">%s</h2>' % esc(data.get("title") or "The rundown")]
+             '    <h2 class="rdtitle">%s</h2>' % esc(data.get("title") or "Today's rundown")]
     if date_label:
         parts.append('    <p class="rddate">%s</p>' % esc(date_label))
     if data.get("note"):
