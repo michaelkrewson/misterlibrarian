@@ -1165,13 +1165,30 @@ def _subscribe_modal():
     the modal never causes a request to Substack at all. `hidden` (the plain
     HTML attribute, not a class) is what keeps this invisible before JS
     runs; the trigger's own real href is the fallback if JS never runs.
+
+    ⚠️ The iframe carries NO `loading="lazy"` attribute (paid for on mobile
+    Safari, 2026-09-22) — it doesn't need one (the script above is already
+    the lazy-load: nothing ever sets `src` until the reader actually clicks
+    Subscribe), and adding one is actively harmful: `open()` used to set
+    `iframe.src` while the modal was still `hidden` (i.e. `display:none`,
+    no layout box) and only unhide it a line later. Desktop Chrome/Safari
+    mostly forgive that ordering, but mobile Safari's lazy-load heuristic
+    can permanently defer a `loading="lazy"` resource that had no layout
+    box at the moment its `src` was assigned — the frame never fetches
+    again until some unrelated scroll/resize nudges it, so a mobile reader
+    got a blank white card with no way to tell it was stuck rather than
+    loading. Fixed two ways, either sufficient alone: no `loading="lazy"`
+    attribute (a bare `src` assignment always navigates immediately,
+    visible or not), and `open()` now unhides the modal BEFORE setting
+    `src`, so even a future `loading="lazy"` re-add would see a real
+    layout box first.
     """
     return ("""<div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
      aria-label="Subscribe to The Librarian's Ledger">
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
     <button type="button" class="submodal-close" aria-label="Close">&times;</button>
-    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+    <iframe title="Subscribe to The Librarian's Ledger"></iframe>
   </div>
 </div>
 <script>
@@ -1182,9 +1199,9 @@ def _subscribe_modal():
   var embedSrc = %(embed)s;
   function open(e){
     if (e) e.preventDefault();
-    if (!iframe.src) iframe.src = embedSrc;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    if (!iframe.src) iframe.src = embedSrc;
   }
   function close(){
     modal.hidden = true;

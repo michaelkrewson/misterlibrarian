@@ -895,7 +895,7 @@ writing, to open it.</p>
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
     <button type="button" class="submodal-close" aria-label="Close">&times;</button>
-    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+    <iframe title="Subscribe to The Librarian's Ledger"></iframe>
   </div>
 </div>
 <script>
@@ -906,9 +906,9 @@ writing, to open it.</p>
   var embedSrc = "https://misterlibrarian.substack.com/embed";
   function open(e){
     if (e) e.preventDefault();
-    if (!iframe.src) iframe.src = embedSrc;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    if (!iframe.src) iframe.src = embedSrc;
   }
   function close(){
     modal.hidden = true;
