@@ -117,6 +117,7 @@ OUT = os.path.join(ROOT, "ask")
 ENTRY_SRC = os.path.join(ROOT, "source", "ask")
 
 CSS_VER = blogkit.asset_ver(ROOT, "style.css")
+SHARE_JS_VER = blogkit.asset_ver(ROOT, "share.js")
 
 # Same inline favicon as the Bible project (build.py's FAVICON) -- not a file,
 # so no ../img/ reference is needed or correct here.
@@ -342,6 +343,7 @@ def _chrome(active=""):
             '<a href="index.html"%s>Home</a>'
             '<a href="tags.html"%s>Tags</a>'
             '<a href="ask.html"%s>Ask a question</a>'
+            '<span class="share-widget"></span>'
             '</nav></div>' % (MARK_SVG, cls("home"), cls("tags"), cls("ask")))
     return '<header class="askhead">%s%s</header>' % (crumb, main)
 
@@ -445,6 +447,7 @@ def build_entry_page(e, pool=()):
 <body class="askblog">
 <div class="wrap">
 %(chrome)s
+<script src="../share.js?v=%(sharever)s" defer></script>
 <article class="entry">
   <h1 class="etitle">%(title)s</h1>
   <p class="edate">%(date)s</p>
@@ -463,6 +466,7 @@ def build_entry_page(e, pool=()):
         "title": esc(e["title"]), "site": esc(SITE_NAME), "desc": esc(desc), "url": url,
         "favicon": FAVICON,
         "cssver": CSS_VER, "askver": blogkit.asset_ver(ROOT, "ask/style.css"),
+        "sharever": SHARE_JS_VER,
         "goat": _goatcounter(), "chrome": _chrome(""), "date": date_line,
         "hero": _entry_hero(e), "body": e["body"], "tags": _tag_chips(e),
         "nudge": _comment_box(e["title"], url), "related": _related_block(e, pool),
@@ -538,6 +542,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <body class="askblog">
 <div class="wrap">
 %(chrome)s
+<script src="../share.js?v=%(sharever)s" defer></script>
 %(body)s
 %(foot)s
 </div>
@@ -549,6 +554,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
         "site": esc(SITE_NAME), "ogtype": og_type, "favicon": FAVICON,
         "cssver": CSS_VER,
         "askver": blogkit.asset_ver(ROOT, "ask/style.css"), "goat": _goatcounter(),
+        "sharever": SHARE_JS_VER,
         "chrome": _chrome(active), "body": body, "foot": _foot(), "extra_js": extra_js,
     }
 

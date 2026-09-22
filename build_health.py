@@ -248,6 +248,8 @@ def _other_front(lang):
 # link colour.
 ACCENT = "#3fd2a8"
 
+SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+
 
 # ────────────────────────────────────────────────────────────────── entries ──
 
@@ -374,6 +376,7 @@ def _nav(active="", lang="en"):
     return ('<nav class="nav">'
             '<a href="%s"%s>%s</a>'
             '<a href="%s"%s>%s</a>'
+            '<span class="share-widget"></span>'
             '</nav>' % (u["front"], cls("home"), u["nav_writing"],
                         u["about"], cls("about"), u["nav_about"]))
 
@@ -720,6 +723,7 @@ def build_entry_page(e, pool=()):
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
   %(banner)s
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
@@ -750,6 +754,7 @@ def build_entry_page(e, pool=()):
         "css": CSS.replace("__ACCENT__", ACCENT),
         "goat": _goatcounter(),
         "chrome": _chrome("home", lang, e["twin"] or _other_front(lang)),
+        "sharever": SHARE_JS_VER,
         "banner": banner,
         "date": date_line,
         "twin_note": twin_note,
@@ -886,6 +891,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
 %(body)s
   %(foot)s
 </div>
@@ -897,7 +903,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        "css": (CSS + extra_css).replace("__ACCENT__", ACCENT),
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active, lang, lang_href), "body": body,
+       "chrome": _chrome(active, lang, lang_href), "sharever": SHARE_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url), lang), "goat": _goatcounter()}
 
 
@@ -1970,6 +1976,17 @@ header.hsm .brandcrumb{order:1}
 .nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__;border-bottom-color:__ACCENT__}
+/* Share rides as the last item in .nav itself (see _nav()) -- sized to match
+   .nav a so it reads as a native nav item, not a separate floating widget. */
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:#93a4bd;
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
+  cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.share-btn:hover,.share-btn:focus-visible{color:__ACCENT__;border-color:__ACCENT__;
+  background:rgba(255,255,255,.05)}
+.share-toast{font-size:11.5px;font-weight:600;color:__ACCENT__;opacity:0;transition:opacity .15s;
+  white-space:nowrap}
+.share-toast.show{opacity:1}
 .navcb,label.navtoggle{display:none}
 /* The language link: right end of the nav row, never hidden. */
 .langlink{margin-left:auto;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;

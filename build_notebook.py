@@ -202,6 +202,8 @@ RUNDOWN_FILE = os.path.join(ENTRY_SRC, "_rundown.json")
 ACCENT = "#8fa3ff"
 ACCENT_RGB = "143,163,255"
 
+SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+
 
 # ────────────────────────────────────────────────────────────────── entries ──
 
@@ -319,6 +321,7 @@ def _nav(active=""):
     for key, (name, fn, _, _) in SECTIONS.items():
         links.append('<a href="%s"%s>%s</a>' % (fn, cls(key), esc(name)))
     links.append('<a href="about.html"%s>About</a>' % cls("about"))
+    links.append('<span class="share-widget"></span>')
     return '<nav class="nav">%s</nav>' % "".join(links)
 
 
@@ -588,6 +591,7 @@ def build_entry_page(e, pool=()):
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
     %(sec_line)s
@@ -611,6 +615,7 @@ def build_entry_page(e, pool=()):
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
         "goat": _goatcounter(),
         "chrome": _chrome(e["section"]),
+        "sharever": SHARE_JS_VER,
         "sec_line": sec_line,
         "hero": _entry_hero(e),
         "body": e["body"],
@@ -739,6 +744,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
 %(body)s
   %(foot)s
 </div>
@@ -749,7 +755,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        "css": (CSS + extra_css).replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "body": body,
+       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
@@ -1460,6 +1466,17 @@ header.hsm .brandcrumb{order:1}
 .nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__;border-bottom-color:__ACCENT__}
+/* Share rides as the last item in .nav itself (see _nav()) -- sized to match
+   .nav a so it reads as a native nav item, not a separate floating widget. */
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:#93a4bd;
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
+  cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.share-btn:hover,.share-btn:focus-visible{color:__ACCENT__;border-color:__ACCENT__;
+  background:rgba(255,255,255,.05)}
+.share-toast{font-size:11.5px;font-weight:600;color:__ACCENT__;opacity:0;transition:opacity .15s;
+  white-space:nowrap}
+.share-toast.show{opacity:1}
 .navcb,label.navtoggle{display:none}
 @media (max-width:560px){
   .nav{gap:14px;font-size:13px}

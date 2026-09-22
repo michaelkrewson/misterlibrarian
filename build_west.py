@@ -174,6 +174,8 @@ CHAPTER_SRC = os.path.join(ROOT, "source", "west")
 ACCENT = "#4fa8dc"
 ACCENT_RGB = "79,168,220"
 
+SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+
 
 def esc(s):
     return html.escape(str(s), quote=True)
@@ -264,7 +266,8 @@ def _nav(active=""):
         return ' class="on"' if k == active else ""
     links = ['<a href="index.html"%s>Contents</a>' % cls("home"),
              '<a href="about.html"%s>About the book</a>' % cls("about"),
-             '<a href="ask.html"%s>Write in</a>' % cls("ask")]
+             '<a href="ask.html"%s>Write in</a>' % cls("ask"),
+             '<span class="share-widget"></span>']
     return '<nav class="nav">%s</nav>' % "".join(links)
 
 
@@ -378,6 +381,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
 %(body)s
   %(foot)s
 </div>
@@ -386,7 +390,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 """ % {"title": esc(title), "desc": esc(desc), "robots": robots, "url": url,
        "site": esc(SITE_NAME), "ogt": og_type, "author": esc(AUTHOR),
        "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
-       "chrome": _chrome(active), "body": body,
+       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
@@ -539,6 +543,7 @@ def build_chapter_page(c, live):
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
   %(draft)s
   <article class="entry chapter">
     <p class="edate"><a class="esec" href="index.html#part-%(pkey)s">Part %(pnum)s · %(pname_u)s</a> · Chapter %(num)d</p>
@@ -560,7 +565,7 @@ def build_chapter_page(c, live):
         "pname": esc(_part_name(c["part"])), "pname_u": esc(_part_name(c["part"]).upper()),
         "num": c["num"], "author": esc(AUTHOR),
         "css": CSS.replace("__ACCENT__", ACCENT).replace("__ACCENT_RGB__", ACCENT_RGB),
-        "goat": _goatcounter(), "chrome": _chrome(""), "draft": draft_banner,
+        "goat": _goatcounter(), "chrome": _chrome(""), "sharever": SHARE_JS_VER, "draft": draft_banner,
         "dateline": dateline, "people": people, "hero": _hero(c),
         "body": _prepare_plates(c["body"]),
         "ogimg": og_image, "card": card,
@@ -1088,6 +1093,17 @@ header.hsm .brandcrumb{order:1}
 .nav a{color:#93a4bd;text-decoration:none;padding:2px 0;border-bottom:1px solid transparent}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__;border-bottom-color:__ACCENT__}
+/* Share rides as the last item in .nav itself (see _nav()) -- sized to match
+   .nav a so it reads as a native nav item, not a separate floating widget. */
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:#93a4bd;
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
+  cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.share-btn:hover,.share-btn:focus-visible{color:__ACCENT__;border-color:__ACCENT__;
+  background:rgba(255,255,255,.05)}
+.share-toast{font-size:11.5px;font-weight:600;color:__ACCENT__;opacity:0;transition:opacity .15s;
+  white-space:nowrap}
+.share-toast.show{opacity:1}
 .navcb,label.navtoggle{display:none}
 @media (max-width:560px){
   .nav{gap:14px;font-size:13px}

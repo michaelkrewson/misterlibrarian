@@ -175,6 +175,8 @@ ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 # stay legible side by side — a softer orange here would not be.
 ACCENT = "#f7931a"
 
+SHARE_JS_VER = blogkit.asset_ver(OUT, "share.js")
+
 # The Ledger's email list (2026-09-21) — a Substack publication used ONLY as a
 # mailing list + subscribe page, not as a second place this blog gets written.
 # See _subscribe_box() and privacy.html §5.
@@ -744,6 +746,7 @@ def _nav(active=""):
             '<a href="crypto-screener.html"%s>Crypto Screener</a>'
             '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
             '<a href="money-worldwide.html"%s>Money Worldwide</a>'
+            '<span class="share-widget"></span>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
                         cls("crypto"), cls("crypto-screener"), cls("humanity"),
                         cls("money-worldwide")))
@@ -1308,6 +1311,7 @@ def build_entry_page(e, board=None, pool=()):
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
   %(banner)s
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
@@ -1338,6 +1342,7 @@ def build_entry_page(e, board=None, pool=()):
         # section current — the newspaper convention of telling an arriving
         # reader which neighbourhood they landed in.
         "chrome": _chrome("home"),
+        "sharever": SHARE_JS_VER,
         "banner": banner,
         "date": date_line,
         "hero": _entry_hero(e),
@@ -1526,6 +1531,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
 <body>
 <div class="wrap">
   %(chrome)s
+<script src="share.js?v=%(sharever)s" defer></script>
 %(body)s
   %(foot)s
 </div>
@@ -1541,7 +1547,7 @@ def _shell(*, title, desc, url, body, active="", noindex=False, og_type="website
        # which silently paints the thing black rather than erroring.
        "js": ("<script>\n%s\n</script>\n" % extra_js.replace("__ACCENT__", ACCENT)
               if extra_js else ""),
-       "chrome": _chrome(active), "body": body,
+       "chrome": _chrome(active), "sharever": SHARE_JS_VER, "body": body,
        "foot": _foot(_shell_hits_path(url)), "goat": _goatcounter()}
 
 
@@ -2233,6 +2239,17 @@ header.hsm{display:flex;align-items:center;justify-content:space-between;gap:18p
 .nav a{color:#93a4bd;text-decoration:none}
 .nav a:hover{color:#e8eef7}
 .nav a.on{color:__ACCENT__}
+/* Share rides as the last item in .nav itself (see _nav()) -- sized to match
+   .nav a so it reads as a native nav item, not a separate floating widget. */
+.share-widget{display:inline-flex;align-items:center;gap:8px}
+.share-btn{font-family:inherit;font-size:12px;font-weight:700;color:#93a4bd;
+  background:transparent;padding:6px 14px;border:1px solid transparent;border-radius:14px;
+  cursor:pointer;user-select:none;transition:color .12s,border-color .12s,background .12s}
+.share-btn:hover,.share-btn:focus-visible{color:__ACCENT__;border-color:__ACCENT__;
+  background:rgba(255,255,255,.05)}
+.share-toast{font-size:11.5px;font-weight:600;color:__ACCENT__;opacity:0;transition:opacity .15s;
+  white-space:nowrap}
+.share-toast.show{opacity:1}
 
 /* Collapsible on narrow screens via the CSS-only checkbox hack (see
    _chrome()'s docstring for why this is a checkbox + label rather than
