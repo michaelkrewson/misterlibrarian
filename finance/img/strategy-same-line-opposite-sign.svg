@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" role="img"
+     aria-label="Left: a table comparing Strategy Inc's second quarter of 2025 against its second quarter of 2026 — GAAP net income plus ten point oh two billion dollars versus minus eight point two two billion; software revenue 114.5 million versus 122.4 million dollars; bitcoin fair value swing that quarter unknown versus minus eight point three two billion; note that the same fair value accounting rule marks bitcoin to market every quarter, both ways. Right: blocked again, September 18, 2026 — the S and P 500 requires positive GAAP net income in the latest quarter and the trailing four quarters combined; Strategy's trailing four quarter figure is a seventeen point four four billion dollar unrealized loss; passed over in September 2025, November 2025, March 2026, and September 2026. Footer: the stock went from a five hundred forty three dollar all time high in November 2024 to eighty two dollars in June 2026 when its market value fell below its bitcoin's value, to one hundred sixty nine dollars and fifty nine cents today, while bitcoin itself sits near eighty six thousand dollars, a nine month high.">
+  <rect width="900" height="400" fill="#0a0f1a"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">Same line item <tspan fill="#94a3b8">— opposite sign</tspan></text>
+  <text x="300" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#94a3b8">Q2 2025</text>
+  <text x="415" y="74" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#94a3b8">Q2 2026</text>
+  <line x1="40" y1="86" x2="470" y2="86" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="106" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">GAAP net income</text>
+  <text x="300" y="106" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#a3b378">+$10.02B</text>
+  <text x="415" y="106" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#e8865c">-$8.22B</text>
+  <line x1="40" y1="120" x2="470" y2="120" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="140" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Software revenue</text>
+  <text x="300" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">$114.5M</text>
+  <text x="415" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">$122.4M</text>
+  <line x1="40" y1="154" x2="470" y2="154" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="174" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Bitcoin fair-value swing</text>
+  <text x="300" y="174" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">— (mostly the gain above)</text>
+  <text x="415" y="174" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" font-weight="bold" fill="#e8865c">-$8.32B</text>
+  <line x1="40" y1="188" x2="470" y2="188" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="216" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">Same rule both times: fair-value bitcoin accounting</text>
+  <text x="40" y="234" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">(ASU 2023-08) marks the balance sheet to market</text>
+  <text x="40" y="252" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">every quarter — no cash moved either time.</text>
+  <line x1="500" y1="30" x2="500" y2="308" stroke="rgba(255,255,255,.12)"/>
+  <text x="530" y="40" font-family="Georgia, serif" font-size="17" fill="#e8dfd2">Blocked again <tspan fill="#94a3b8" font-size="13">— Sep 18, 2026</tspan></text>
+  <text x="530" y="66" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">S&amp;P 500 rule: positive GAAP net income,</text>
+  <text x="530" y="84" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">latest quarter AND trailing four quarters.</text>
+  <text x="530" y="112" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#e8865c">$17.44B trailing 4-quarter loss</text>
+  <text x="530" y="130" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">— the one line the index can't wave through.</text>
+  <line x1="530" y1="150" x2="870" y2="150" stroke="rgba(255,255,255,.08)"/>
+  <text x="530" y="172" font-family="Georgia, serif" font-size="12" fill="#94a3b8">Passed over:</text>
+  <text x="542" y="192" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Sep 2025 · Nov 2025 · Mar 2026 · Sep 2026</text>
+  <text x="530" y="222" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">Market cap: large enough. Volume: liquid</text>
+  <text x="530" y="240" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">enough. Earnings: fails on this one line.</text>
+  <line x1="40" y1="330" x2="860" y2="330" stroke="rgba(255,255,255,.12)"/>
+  <text x="450" y="358" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Stock: <tspan fill="#94a3b8">$543 ATH (Nov '24)</tspan> → <tspan fill="#e8865c">$82, mNAV &lt; 1 (Jun '26)</tspan> → <tspan fill="#c9b458" font-weight="bold">$169.59 today</tspan></text>
+  <text x="450" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Bitcoin: <tspan fill="#f7931a" font-weight="bold">~$86,000</tspan><tspan fill="#94a3b8"> — a nine-month high</tspan></text>
+</svg>

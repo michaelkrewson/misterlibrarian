@@ -7,6 +7,23 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Seventeen Billion Reasons They're Still Not In</title>
+    <link>https://mistertranslation.com/finance/seventeen-billion-reasons-theyre-still-not-in.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/seventeen-billion-reasons-theyre-still-not-in.html</guid>
+    <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Strategy bought bitcoin again last week, bought back its own preferred stock, and got snubbed by the S&amp;P 500 for the fourth time running — this time for a very specific, very quotable reason: a $17.44 billion unrealized loss that the same accounting rule which handed the company a $10 billion GAAP profit last year just as easily handed it a $8.2 billion GAAP loss this year. I went and checked all four numbers.</description>
+    <category>strategy inc</category>
+    <category>mstr</category>
+    <category>michael saylor</category>
+    <category>bitcoin</category>
+    <category>mnav</category>
+    <category>s&amp;p 500</category>
+    <category>gaap accounting</category>
+    <category>credit rating</category>
+    <category>preferred stock</category>
+    <category>arbitrageur</category>
+  </item>
+  <item>
     <title>Eleven Percent for a Hole in Glass</title>
     <link>https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html</guid>
@@ -496,28 +513,6 @@
     <category>money supply</category>
     <category>mining</category>
     <category>scarcity</category>
-  </item>
-  <item>
-    <title>A Twenty-Five-Minute Window, and Why I Split the Key</title>
-    <link>https://mistertranslation.com/finance/coldcard-bitkey-security.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/coldcard-bitkey-security.html</guid>
-    <pubDate>Tue, 04 Aug 2026 12:00:00 +0000</pubDate>
-    <description>A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</description>
-    <category>bitcoin</category>
-    <category>self custody</category>
-    <category>hardware wallet</category>
-    <category>security</category>
-    <category>coldcard</category>
-    <category>coinkite</category>
-    <category>bitkey</category>
-    <category>block</category>
-    <category>multisig</category>
-    <category>inheritance</category>
-    <category>seed phrase</category>
-    <category>entropy</category>
-    <category>bybit</category>
-    <category>jack dorsey</category>
-    <category>notes</category>
   </item>
 </channel>
 </rss>
