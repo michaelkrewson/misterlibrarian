@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>What a Locked iPhone Still Gives Up — The Librarian&#x27;s Notebook</title>
-<meta name="description" content="What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it."/>
-<link rel="canonical" href="https://mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html"/>
+<title>Plugin4Shell: A Pin Is Not a Verification — The Librarian&#x27;s Notebook</title>
+<meta name="description" content="Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched."/>
+<link rel="canonical" href="https://mistertranslation.com/notebook/a-pin-is-not-a-verification.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Notebook" href="feed.xml"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Notebook"/>
-<meta property="og:title" content="What a Locked iPhone Still Gives Up"/>
-<meta property="og:description" content="What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it."/>
-<meta property="og:url" content="https://mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html"/>
+<meta property="og:title" content="Plugin4Shell: A Pin Is Not a Verification"/>
+<meta property="og:description" content="Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched."/>
+<meta property="og:url" content="https://mistertranslation.com/notebook/a-pin-is-not-a-verification.html"/>
 <meta property="article:section" content="Science &amp; Technology"/>
 <meta name="twitter:card" content="summary"/>
 <style>
@@ -469,264 +469,103 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <circle cx="33" cy="33" r="21" stroke="#8fa3ff" stroke-width="1.4" opacity=".6"/>
 </svg><span class="wm">The Librarian's <span class="em">Notebook</span></span></a></div><form class="headersearch" action="index.html" method="get" role="search"><input type="search" name="q" id="headerSearch" placeholder="Search entries…" aria-label="Search past entries"/></form><div class="hgroup"><input type="checkbox" class="navcb" id="navcb"/><label class="navtoggle" for="navcb" aria-label="Menu"><svg viewBox="0 0 20 14" width="20" height="14" aria-hidden="true" focusable="false"><rect width="20" height="2" rx="1"/><rect y="6" width="20" height="2" rx="1"/><rect y="12" width="20" height="2" rx="1"/></svg></label><nav class="nav"><a href="index.html">Writing</a><a href="technology.html" class="on">Science &amp; Technology</a><a href="world.html">The World</a><a href="culture.html">Arts &amp; Culture</a><a href="notes.html">Notes</a><a href="about.html">About</a></nav></div></header>
   <article class="entry">
-    <h1 class="etitle">What a Locked iPhone Still Gives Up</h1>
-    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 13, 2026</p>
-    <figure class="hero"><img src="img/enigma-machine-cia.jpg" alt="A German Enigma cipher machine displayed open, showing its wooden case, plugboard, keyboard and rotor assembly, photographed against a plain white background" width="1600" height="800" loading="eager"/><figcaption>An Enigma machine — the shape of this argument, unchanged since before phones existed: a machine built to keep a secret, and a machine built by someone else to open it. Central Intelligence Agency; U.S. government work, public domain, via Wikimedia Commons.</figcaption></figure>
-<p>The video below went around on X this week, posted by the account Bitcoin News, captioned
-"everything law enforcement can see when they get physical access to your phone — better not be
-keeping a seed phrase on there." The clip itself is a re-post: it's watermarked throughout with an
-Instagram handle, @khanjicyber, which appears to be the actual creator, part one of a two-part
-series. Having now watched the whole thing frame by frame, I can say plainly what it shows: a
-demonstration of two named, real forensic tools — Magnet Forensics' AXIOM (the "License: Axiom
-Essentials (Dongle)" watermark and the "Integrate with Magnet One" case screen are both visible
-on screen) run against an unlocked Google Pixel 6, and iLEAPP, a free, open-source parser, run
-against an iPhone's iTunes backup. Both are named further down, with what they actually surfaced.</p>
+    <h1 class="etitle">Plugin4Shell: A Pin Is Not a Verification</h1>
+    <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 22, 2026</p>
+    
+<p>On September 17, 2026, the AI-agent security firm AIR Security disclosed "Plugin4Shell" — a zero-click vulnerability in the plugin systems of four AI coding agents: Claude Code, OpenAI Codex, GitHub Copilot, and Gemini CLI. All four let a developer extend the agent with third-party plugins pulled from a git repository, and all four let the plugin's manifest pin that plugin to an exact commit — a 40-character SHA hash — specifically so a marketplace listing can't be swapped for something else after it's been reviewed. Plugin4Shell broke that promise: under the right conditions, the agent would report that it had checked out the pinned commit while a different one sat on disk.</p>
 
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Everything law enforcement can see when they get physical access to your phone.<br><br>Better not be keeping a seed phrase on there. <a href="https://t.co/0f2CXQSqv5">pic.twitter.com/0f2CXQSqv5</a></p>&mdash; Bitcoin News (@BitcoinNewsCom) <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464?ref_src=twsrc%5Etfw">September 12, 2026</a></blockquote>
-<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+<h2>What SHA-Pinning Was Supposed to Stop</h2>
 
-<h2>What's actually on screen</h2>
+<p>A plugin marketplace's whole security model rests on one assumption: the code a reviewer looked at is the code that runs. Pinning to a commit SHA, rather than a branch name like <code>main</code>, is how that assumption gets enforced — a SHA identifies one specific, immutable snapshot of a repository's history, so a plugin author can't quietly push new code to the same branch after approval and have every existing installation silently pick it up. It's the same reason a `package-lock.json` pins to a resolved hash instead of a version range. The pin is the whole point.</p>
 
-<p>The first tool is <strong>Magnet AXIOM</strong>, a commercial forensic suite in the same
-category as Cellebrite's better-known UFED and Physical Analyzer.<sup><a href="#src-1">[1]</a></sup>
-Before any device is touched, the case-setup screen's "Case type" dropdown is worth pausing on: the
-options scrolled past on screen include Major Crimes, Border Security, Child Exploitation and
-Counter-Terrorism, but also Civil Case or Investigation, Data Exfiltration/IP Theft, Fraud, HR/
-Internal Investigation, Policy Violation, Probation/Parole Violation and Wrongful Termination —
-categories with nothing to do with law enforcement at all. The imaging step against the Pixel 6
-lists "Confirm the device is unlocked" as a required step before "Running ADB backup" — the
-demonstration is an AFU extraction, exactly the category described above, not some novel way
-around the passcode. Once the image finishes, AXIOM's results are organized into a category tree,
-and two of its labelled branches are <strong>Passwords and Tokens (3 matches)</strong> and
-<strong>User Accounts (4 matches)</strong> — named, counted categories, sitting in the same list as
-Communication, Media, Documents and Location & Travel. The video doesn't open that category to show
-what the three items actually are, so I can't tell you whether they're Wi-Fi keys, saved site
-logins or something else — but the category existing, with matches in it, is no longer something
-I'm inferring from vendor literature. It's on screen.</p>
-
-<p>The second half of the video switches to <strong>iLEAPP</strong> — iOS Logs, Events, and
-Properties Parser — run against what its own output labels an iTunes_Backup of an iPhone. iLEAPP
-is free and its source code is public.<sup><a href="#src-2">[2]</a></sup> No dongle, no license,
-no vetted customer list: anyone who can get hold of an iPhone's backup file can run it. What comes
-out, in this demonstration: a Bluetooth-LE report listing 43 nearby devices the phone had logged;
-a Safari Tabs report recovering closed and private tabs, not just open ones; a Safari search-terms
-history; calendar entries; recovered "trashed" (deleted) photos, including their Live Photo
-component; and — the one worth dwelling on — a Notes entry, synced via iCloud, titled
-<em>Passwords</em>, with the snippet and full content both showing a plaintext password in the
-clear. iOS Notes carries no keychain protection at all; a note is a note, and it came back whole.</p>
-
-<h2>What "unlocking a phone" actually means in 2026</h2>
-
-<p>The device state that matters is not locked-versus-unlocked, it's <strong>Before First
-Unlock</strong> versus <strong>After First Unlock</strong> — BFU and AFU in the forensics
-literature. A rebooted iPhone that has never had its passcode entered since power-on is in BFU:
-the hardware keys for most protected data classes haven't been derived yet, and most user content
-is unreadable to any tool, forensic or otherwise. The moment the passcode is entered — by the
-owner, or by a tool that has found a way to guess or bypass it — the device moves to AFU, keys are
-derived, and the running operating system can read most of what's on it. Practically every
-publicized extraction, including both tools in the video above, is an AFU extraction:
-a full copy of the file system taken from a device that has, one way or another, already been
-unlocked. True bit-for-bit physical extraction — reading the raw flash independent of the
-operating system's cooperation — is reported not to be achievable on current iPhone hardware at
-all; the file system copy is the practical ceiling.<sup><a href="#src-3">[3]</a></sup></p>
+<p>The bug lived in how each agent turned that pinned SHA into an actual checkout. Git resolves a string you hand it as a <em>reference name</em> — a branch or tag — before it tries to resolve it as a raw object ID. So if a repository's default branch happens to be named after the exact 40-character string a plugin was pinned to, <code>git checkout &lt;sha&gt;</code> checks out that branch, not the commit. Git does print a warning that the reference is ambiguous — but none of the four agents re-read <code>HEAD</code> afterward to confirm it had landed on the object it asked for. The pin was recorded as honored while a different branch's code sat on disk. Gemini CLI had its own variant: it fetched the plugin and then ran <code>git checkout FETCH_HEAD</code>, which a branch literally named <code>FETCH_HEAD</code> hijacks the same way.</p>
 
 <div class="aside">
-  <p><strong>Why the reboot matters.</strong> BFU/AFU is not a technicality — it's the one variable
-  an owner fully controls after the fact. A phone that's been off, or freshly restarted and never
-  unlocked again, presents almost nothing to a forensic tool regardless of how capable that tool
-  is against an unlocked one. A phone that's been unlocked recently, and stays unlocked in someone's
-  pocket, presents nearly everything.</p>
+  <p><strong>Why this only bites on some git hosts.</strong> GitHub refuses to let anyone create a branch or tag whose name looks like a 40-character commit hash, which is why GitHub-hosted plugins mostly dodge this. Bitbucket and self-hosted git servers impose no such restriction — and Anthropic's own plugin-marketplace documentation explicitly supports pinning a plugin's SHA from "GitLab, Bitbucket, and self-hosted servers," describing the process as fetching and checking out the pinned commit with no mention of verifying what actually landed. That's the exact gap.</p>
 </div>
 
-<h2>A short history of who has had this, starting with a case everyone remembers wrong</h2>
+<p>Two ways an attacker gets a hostile branch into place: submit a plugin that passes review honestly, then create the collision branch and swap the code later; or simply compromise a legitimate plugin author's repository. Either path needs the victim to already have that plugin installed with auto-update on — which is the default, and is why AIR calls it zero-click. The agent's own background update check does the swap on its own.</p>
 
-<p>The 2016 standoff between Apple and the FBI over the San Bernardino shooter's iPhone is the
-origin story most people know part of: Apple refused to build a backdoor, the FBI said it didn't
-need one because it had found another way in, and paid for that way. FBI Director James Comey
-later said, without naming a figure, that the bureau had spent more than he'd earn in the seven
-years and four months left on his own term — arithmetic that puts it comfortably over a million
-dollars.<sup><a href="#src-4">[4]</a></sup> For five years the assumption, reported as fact in
-plenty of places, was that Cellebrite had done the unlocking. A 2021 <em>Washington Post</em>
-investigation established that this was wrong: the actual work was done by Azimuth Security, a
-small, publicity-shy Australian firm whose founder had found a flaw in code Apple used to handle
-Lightning-port accessories, which two colleagues then chained into full control of the phone's
-processor and, from there, a program that tried every passcode without triggering the
-data-wipe-after-ten-tries protection.<sup><a href="#src-5">[5]</a></sup> Azimuth described its own
-customer base as "democratic governments" — which is a policy, not a law, and policies are set by
-whoever owns the company.</p>
+<h2>Who's Actually Patched</h2>
 
-<p>The next turn in the story cuts the other way. In April 2021, Signal's Moxie Marlinspike
-published a technical teardown of Cellebrite's own UFED and Physical Analyzer software — the
-company whose name had wrongly become synonymous with the San Bernardino unlock — and found it
-riddled with the kind of bugs a security-focused company shouldn't have: unpatched years-old code
-libraries, missing standard exploit protections, enough holes that a maliciously crafted file
-placed on a phone being scanned could reportedly run arbitrary code on the Windows machine doing
-the scanning.<sup><a href="#src-6">[6]</a></sup> The company built to break into other people's
-devices had, by outside account, done a mediocre job securing its own — the exact shape of the
-concern behind "assume more than law enforcement can get hold of this": a tool doesn't stay
-inside the fence of whoever it was sold to.</p>
+<p>OpenAI's fix is the clearest evidence of what the bug was, because it's the one vendor whose patch is a public, readable diff. Pull request #34644, "Verify Git plugin SHA checkouts," merged into the Codex repository on July 22, 2026 and shipped in Codex 0.146.0 on July 29. Its own description is close to a plain-English writeup of the entire vulnerability: <em>"Git can interpret a requested commit SHA as a branch name when the remote's default branch has the same name... Resolve HEAD after checking out a SHA-pinned Git plugin source and reject the source when the resolved commit does not exactly match the requested SHA."</em> Four lines, and the bug is gone: check what you actually got, not what you asked for.</p>
 
-<p>Apple's side of this has been a series of specific, dated responses, not one fix: USB Restricted
-Mode in 2018, which locks the Lightning/USB-C data pins after an hour unless the passcode has been
-entered since; Lockdown Mode in 2022, an opt-in mode that drastically narrows what a device will
-process from the outside world, aimed explicitly at people who think they're an individually
-targeted risk; and, in December 2022, Advanced Data Protection, which is the piece most relevant
-to the ADP question I was asked directly this week, so it gets its own section below. In 2024, iOS
-added Stolen Device Protection, which requires biometric confirmation and a time delay for
-sensitive changes — like viewing saved passwords or turning off Find My — when the phone is away
-from a location it recognizes as familiar.</p>
+<p>Anthropic's side of the story is less visible. AIR's disclosure timeline says Anthropic confirmed a fix in Claude Code 2.1.179 on June 17, and that version was published to npm on June 16 — the dates line up. But Claude Code is closed source, so there's no diff to read, and the version's own public changelog entry lists nine items, all UX and stability fixes — a scrolling glitch on WSL2, a sandbox glob bug, a feedback survey banner — with nothing about git, SHA verification, or plugin integrity. No security advisory exists for it either. The fix may well be there; Anthropic's own records just don't say so.</p>
 
-<h2>What Advanced Data Protection actually covers</h2>
+<p>GitHub Copilot has no patch as of this writing. GitHub's public statement to reporters was that GitHub itself blocks the SHA-lookalike branch names that make the attack possible — true, but it only protects GitHub-hosted plugins, which was never the part of the attack surface AIR was pointing at. Gemini CLI isn't getting fixed either, for a more interesting reason: Google told AIR in August that it won't patch it, because Gemini CLI is being wound down in favor of a successor called Antigravity CLI. Individual accounts lost access in June; anyone still running it on an enterprise Code Assist license, however, is running an unpatched agent with no fix coming.</p>
 
-<p>Advanced Data Protection is Apple's own name for end-to-end encrypting most iCloud data — device
-backups, Photos, Notes, and more — so that the decryption keys exist only on a user's own trusted
-devices, not on Apple's servers. Apple's announcement is explicit about the boundary this draws:
-turning it on means that even Apple cannot read that data, and so <em>Apple</em> has nothing to
-turn over in response to a legal demand for it.<sup><a href="#src-7">[7]</a></sup> That is a real
-and separate protection, and it's a cloud-side one. The BFU/AFU distinction above is a
-device-side one. A tool that has already gotten a phone into AFU state and copied its file system
-never asked Apple's servers for anything — it read data the device itself had already decrypted to
-function — so Advanced Data Protection's guarantee and a physical-extraction tool's target are two
-different layers of the same phone, and turning on one doesn't touch the other. Apple's own
-security documentation keeps that boundary explicit for exactly this reason: it's the layer where a
-legal-process question and a stolen-or-seized-device question stop being the same question.</p>
+<h2>Sizing the Alarm Correctly</h2>
 
-<h2>What actually helps against the thing this video is about</h2>
+<p>Nobody — not AIR, not the four vendors, not the trade press that covered it — has reported this being exploited in the wild. AIR built working proof-of-concept exploits against all four agents as part of a coordinated disclosure that started in June and only went public in September, the standard shape of a responsibly handled bug. There's also no CVE number attached to it. I checked the National Vulnerability Database's own API directly and it returns zero results for "Plugin4Shell," and neither the Claude Code nor the Codex GitHub repository has a security advisory that names it — notable mainly because Anthropic does routinely file CVEs for Claude Code (there are thirty on record, including one for an unrelated git-related sandbox escape from the same June). A bug this shaped, in tools this widely embedded in developer workflows, moving through the ecosystem on a startup's blog post and a four-line pull request description rather than any of the usual advisory channels, is itself worth noticing.</p>
 
-<p>Advanced Data Protection answers a legal-process question. A physical-possession question —
-the one this video is actually about — has a different, shorter list of answers, and Apple has
-shipped real pieces of it. This is the "other thing" worth turning on, alongside ADP rather than
-instead of it.</p>
-
-<p><strong>Lockdown Mode</strong> (Settings → Privacy & Security → Lockdown Mode) is Apple's own
-opt-in answer to exactly this threat class: it drastically narrows what the device will process
-from outside sources, which is where exploit chains like the one Azimuth built typically get their
-first foothold. It shipped in 2022 for journalists, dissidents and executives who consider
-themselves individually targeted, but the switch doesn't check anyone's job title.</p>
-
-<p><strong>A long alphanumeric passcode</strong> (Settings → Face ID & Passcode → Change Passcode →
-Custom Alphanumeric Code) replaces the six-digit PIN most people leave in place by default. Nearly
-every publicized extraction still depends, at some stage, on brute-forcing the passcode once an
-exploit chain has gotten a tool past the ten-tries data wipe — a six-digit PIN is a million
-combinations to grind through; a real passcode is enough that the exploit chain goes stale before
-it finishes.</p>
-
-<p><strong>Stolen Device Protection</strong> — on by default since iOS 17.3, visible at Settings →
-Face ID & Passcode — adds a Face ID check and a one-hour delay before anything security-sensitive
-changes (viewing a saved password, turning off Find My, adding a new face to Face ID) when the
-phone is away from a location it recognizes as familiar. It's built for a stolen, already-unlocked
-phone in someone else's hands, a different scenario from a seized phone in a lab, but it's real
-and it's already on.</p>
-
-<p>And the one that costs nothing: <strong>reboot the phone</strong> before any encounter where it
-might leave your hands — a border crossing, a stop, a repair counter. A phone that's been off comes
-back in BFU, which is the state that blunts every method described above.</p>
-
-<h2>The example that shows the ceiling is higher than "unlock the phone"</h2>
-
-<p>A case that surfaced this April is a cleaner illustration than any hypothetical. In a Texas
-prosecution over a July 2025 incident at an ICE detention facility in Alvarado, the FBI recovered
-<em>incoming</em> Signal messages from a defendant's iPhone — despite the Signal app having been
-deleted and the messages themselves set to disappear. Only incoming messages came back, not
-outgoing ones, and the reason given is mundane rather than dramatic: iOS caches the content of push
-notifications in a system-level database so it can show a lock-screen preview, and that cache
-persists independently of the app that generated it.<sup><a href="#src-8">[8]</a></sup> Nobody broke
-Signal's encryption. The message had already been decrypted, on-device, to render a notification,
-and the operating system kept a copy of that for reasons that have nothing to do with forensics.
-It's a good instance of the general rule: "I deleted the app" and "the data is gone" are not the
-same claim, and the gap between them is usually an OS-level convenience feature, not a defeated
-cipher.</p>
-
-<h2>Where this lands for a Bitcoin key specifically</h2>
-
-<p>None of the above is really about phones-in-general so much as it's about what a phone is: a
-networked, general-purpose computer that a company you don't work for keeps updating, and that is
-built, on purpose, to keep working after you've unlocked it once. That's a fine trade for almost
-everything people use a phone for. It's a bad fit for a Bitcoin private key or seed phrase.</p>
-
-<p>Which raises a natural next question: can a tool like this read Apple's own Passwords app — the
-thing that holds your actual saved passwords, and where some people, against every piece of
-guidance from every hardware-wallet maker, keep a seed phrase typed in as a password note. The
-video doesn't show that specific app being opened, so I can't point to it on screen. What it shows
-instead answers the broader question just as directly: AXIOM's own results tree, run against the
-Pixel 6, labels a category <strong>Passwords and Tokens</strong> with matches in it — three, in
-this case — sitting next to <strong>User Accounts</strong> with four more. And on the iPhone side,
-iLEAPP pulled an iCloud-synced Notes entry, titled outright <em>Passwords</em>, with a plaintext
-password sitting in both the list snippet and the full note body. Neither of those is the Passwords
-app specifically, and I can't tell you whether a true Keychain-backed, biometric-gated entry would
-have come out the same way — independent research on iOS Keychain extraction says items with a
-biometric access-control flag resist this, because unwrapping them needs a live round-trip through
-the Secure Enclave at read time, not just an unlocked device.<sup><a href="#src-9">[9]</a></sup>
-What the video removes is the need to guess at whether "passwords" as a category survives this kind
-of extraction in general. It does. What's still open is only the narrower, more technical question
-of which specific storage mechanism a given password sits in.</p>
-
-<p>What that uncertainty argues for isn't "hope it's the protected category" — it's the same answer
-either way. A seed phrase shouldn't exist as an entry in any app on a general-purpose phone,
-Passwords app included, regardless of how that app protects it. That's the entire reason hardware
-signers — devices whose only job is holding key material somewhere that never runs a
-general-purpose OS and never has anyone else's forensic tooling as an intended user — exist as
-separate hardware rather than a feature inside a wallet app. A hardware signer has no BFU/AFU
-distinction to worry about, because the key material was never on a device unlocked by anything
-but the physical button on the signer itself. That's the property this entire class of attack is
-built around not having, and it's the one place in this entry I'm not hedging: don't keep it on
-the phone.</p>
+<h2>Where I Could Be Wrong</h2>
+<ul>
+  <li><strong>Anthropic's fix is attested, not verified.</strong> I could not find a changelog line, an advisory, or a diff confirming Claude Code 2.1.179 actually contains this fix — only AIR's disclosure timeline and the fact that a version was published on the date they cite.</li>
+  <li><strong>Scale claims are the disclosing firm's own.</strong> AIR's public framing leans on "millions of agents" affected; I found no methodology behind that number and am not repeating it as fact.</li>
+  <li><strong>I did not independently test the GitHub-vs-Bitbucket branch-naming claim.</strong> It's reported consistently across AIR, GitHub's own statement, and two independent outlets, but I read those reports rather than confirming it against a live repository myself.</li>
+  <li><strong>"Gemini CLI is deprecated, so it doesn't matter" undersells it.</strong> Enterprise Code Assist Standard and Enterprise licenses keep working CLI access with support — a real population still exposed to an issue Google has said it won't fix.</li>
+  <li><strong>Coverage outside security trade press is thin.</strong> I found solid reporting from The Register, The Hacker News, Help Net Security, and heise, and a fair amount of low-quality aggregator rewrites I didn't cite. I found nothing from BleepingComputer, Ars Technica, or TechCrunch as of this writing, which may mean I simply haven't seen it yet rather than that it doesn't exist.</li>
+</ul>
 
 <h2>Sources</h2>
 <ol class="sources">
-  <li id="src-1">Magnet Forensics. <i>Magnet AXIOM</i> — the product visible on screen in the video above ("License: Axiom Essentials (Dongle)," "Integrate with Magnet One"). <a href="https://www.magnetforensics.com/products/magnet-axiom/" rel="noopener" target="_blank">magnetforensics.com</a></li>
-  <li id="src-2">Alexis Brignoni (abrignoni). <i>iLEAPP — iOS Logs, Events, And Properties Parser.</i> Free, open-source; the tool run against the iTunes backup in the second half of the video. <a href="https://github.com/abrignoni/iLEAPP" rel="noopener" target="_blank">github.com/abrignoni/iLEAPP</a></li>
-  <li id="src-3">Elite Digital Forensics. <i>iOS Forensics (2026)</i> — on Before/After First Unlock device states and the current ceiling on iPhone extraction. <a href="https://elitedigitalforensics.com/ios-forensics/" rel="noopener" target="_blank">elitedigitalforensics.com</a></li>
-  <li id="src-4">CBS News. <i>FBI paid more than $1 million for San Bernardino iPhone "hack," James Comey confirms.</i> 2016. <a href="https://www.cbsnews.com/news/fbi-paid-more-than-1-million-for-san-bernardino-iphone-hack-james-comey/" rel="noopener" target="_blank">cbsnews.com</a></li>
-  <li id="src-5">The Washington Post. <i>The FBI wanted to unlock the San Bernardino shooter's iPhone. It turned to a little-known Australian firm.</i> 14 April 2021. <a href="https://www.washingtonpost.com/technology/2021/04/14/azimuth-san-bernardino-apple-iphone-fbi/" rel="noopener" target="_blank">washingtonpost.com</a></li>
-  <li id="src-6">Signal. <i>Exploiting vulnerabilities in Cellebrite UFED and Physical Analyzer from an app's perspective.</i> 21 April 2021. <a href="https://signal.org/blog/cellebrite-vulnerabilities/" rel="noopener" target="_blank">signal.org</a></li>
-  <li id="src-7">Apple. <i>Apple advances user security with powerful new data protections.</i> 7 December 2022. <a href="https://www.apple.com/newsroom/2022/12/apple-advances-user-security-with-powerful-new-data-protections/" rel="noopener" target="_blank">apple.com</a></li>
-  <li id="src-8">Security Affairs. <i>iPhone forensics expose Signal messages after app removal in U.S. case.</i> 13 April 2026. <a href="https://securityaffairs.com/190740/security/iphone-forensics-expose-signal-messages-after-app-removal-in-u-s-case.html" rel="noopener" target="_blank">securityaffairs.com</a></li>
-  <li id="src-9">ElcomSoft. <i>Extracting and Decrypting iOS Keychain: Physical, Logical and Cloud Options Explored.</i> August 2020. <a href="https://blog.elcomsoft.com/2020/08/extracting-and-decrypting-ios-keychain-physical-logical-and-cloud-options-explored/" rel="noopener" target="_blank">blog.elcomsoft.com</a></li>
-  <li>@khanjicyber on Instagram. The original video — watermarked throughout, part one of a two-part series. Re-posted (uncredited) by @BitcoinNewsCom on X, embedded above. <a href="https://x.com/BitcoinNewsCom/status/2098825343721230464" rel="noopener" target="_blank">x.com/BitcoinNewsCom/status/2098825343721230464</a></li>
+  <li>AIR Security. <i>Plugin4Shell.</i> September 17, 2026. <a href="https://www.air.security/blog-posts/plugin4shell" rel="noopener" target="_blank">air.security</a></li>
+  <li>OpenAI. Pull request #34644, <i>"Verify Git plugin SHA checkouts."</i> Merged July 22, 2026. <a href="https://github.com/openai/codex/pull/34644" rel="noopener" target="_blank">github.com/openai/codex</a></li>
+  <li>OpenAI. <i>Codex 0.146.0 release notes.</i> July 29, 2026. <a href="https://github.com/openai/codex/releases/tag/rust-v0.146.0" rel="noopener" target="_blank">github.com/openai/codex</a></li>
+  <li>Anthropic. <i>Claude Code CHANGELOG.md</i> (entry for 2.1.179). <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md" rel="noopener" target="_blank">raw changelog</a></li>
+  <li>Anthropic. <i>Claude Code plugin marketplaces documentation</i> (SHA-pinning against GitLab/Bitbucket/self-hosted sources). <a href="https://code.claude.com/docs/en/plugin-marketplaces" rel="noopener" target="_blank">code.claude.com</a></li>
+  <li>National Vulnerability Database. Keyword search for "plugin4shell," zero results as of September 22, 2026. <a href="https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=plugin4shell" rel="noopener" target="_blank">nvd.nist.gov API</a></li>
+  <li>GitHub Security Advisories, <i>anthropics/claude-code.</i> GHSA-7835-87q9-rgvv / CVE-2026-55607 (an unrelated sandbox-escape advisory, cited to show Anthropic does file CVEs when one exists). <a href="https://github.com/anthropics/claude-code/security/advisories/GHSA-7835-87q9-rgvv" rel="noopener" target="_blank">github.com</a></li>
+  <li>Lyons, Jessica. <i>"AI coding agents' 0-click RCE flaw could hand attackers keys to the kingdom."</i> The Register, September 17, 2026. <a href="https://www.theregister.com/security/2026/09/17/ai-coding-agents-0-click-rce-flaw-could-hand-attackers-keys-to-the-kingdom/5297335" rel="noopener" target="_blank">theregister.com</a></li>
+  <li>Khandelwal, Swati. <i>"Plugin4Shell Lets Repository Owners..."</i> The Hacker News, September 18, 2026. <a href="https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html" rel="noopener" target="_blank">thehackernews.com</a></li>
+  <li>Markovic, Sinisa. <i>"Plugin4Shell: AI coding agents vulnerability."</i> Help Net Security, September 18, 2026. <a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/" rel="noopener" target="_blank">helpnetsecurity.com</a></li>
+  <li>Masiero, Manuel. <i>"Critical flaw in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI."</i> heise online, September 21, 2026. <a href="https://www.heise.de/en/news/Critical-flaw-in-Claude-Code-OpenAI-Codex-GitHub-Copilot-and-Gemini-CLI-11460259.html" rel="noopener" target="_blank">heise.de</a></li>
+  <li>Google. <i>"An important update: transitioning Gemini CLI to Antigravity CLI."</i> Google Developers Blog. <a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/" rel="noopener" target="_blank">developers.googleblog.com</a></li>
+  <li>AIR Security. <i>SkillJacking.</i> (Prior research from the same firm, cited for its track record.) <a href="https://www.air.security/blog-posts/skilljacking" rel="noopener" target="_blank">air.security</a></li>
+  <li>SecurityWeek. <i>"AI Agent Firewall Startup AIR Security Emerges From Stealth With $50 Million."</i> <a href="https://www.securityweek.com/ai-agent-firewall-startup-air-security-emerges-from-stealth-with-50-million/" rel="noopener" target="_blank">securityweek.com</a></li>
 </ol>
 
-    <div class="tags"><a class="tg" href="tag-iphone.html">iphone</a><a class="tg" href="tag-ios.html">ios</a><a class="tg" href="tag-digital-forensics.html">digital forensics</a><a class="tg" href="tag-cellebrite.html">cellebrite</a><a class="tg" href="tag-encryption.html">encryption</a><a class="tg" href="tag-apple.html">apple</a><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-self-custody.html">self-custody</a><a class="tg" href="tag-security.html">security</a><a class="tg" href="tag-technology.html">technology</a></div>
+    <div class="tags"><a class="tg" href="tag-plugin4shell.html">Plugin4Shell</a><a class="tg" href="tag-ai-coding-agents.html">AI coding agents</a><a class="tg" href="tag-claude-code.html">Claude Code</a><a class="tg" href="tag-codex.html">Codex</a><a class="tg" href="tag-github-copilot.html">GitHub Copilot</a><a class="tg" href="tag-gemini-cli.html">Gemini CLI</a><a class="tg" href="tag-supply-chain-security.html">supply chain security</a><a class="tg" href="tag-git.html">git</a><a class="tg" href="tag-vulnerability-disclosure.html">vulnerability disclosure</a><a class="tg" href="tag-air-security.html">AIR Security</a></div>
   </article>
-  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20What%20a%20Locked%20iPhone%20Still%20Gives%20Up%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/what-a-locked-iphone-still-gives-up.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Plugin4Shell%3A%20A%20Pin%20Is%20Not%20a%20Verification%3A%0A%0Ahttps%3A//mistertranslation.com/notebook/a-pin-is-not-a-verification.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/notebook/a-pin-is-not-a-verification.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <section class="readnext">
     <h2>Keep reading</h2>
     <div class="tilegrid">
-    <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed apple&#x27;s a20 pro is the first iphone chip on tsmc&#x27;s 2nm n2 process. what &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the finfet." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
+    <a class="tile" href="not-available-on-this-connection.html" data-search="not available on this connection anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated claude code skills were costing me." data-tags="claude-code anthropic artificial-intelligence ai software documentation debugging">
       <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
-      <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+      <span class="ec-t">Not Available on This Connection</span>
+      <span class="ec-s">Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me.</span>
     </a>
-    <a class="tile" href="the-same-box-a-lot-more-inside.html" data-search="the same box, a lot more inside apple&#x27;s 2026 mac studio with m5 max and m5 ultra: specs, price, ship date, and why the &quot;redesign&quot; everyone&#x27;s expecting isn&#x27;t one." data-tags="apple mac-studio m5-max m5-ultra apple-silicon hardware">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
-      <span class="ec-t">The Same Box, a Lot More Inside</span>
-      <span class="ec-s">Apple&#x27;s 2026 Mac Studio with M5 Max and M5 Ultra: specs, price, ship date, and why the &quot;redesign&quot; everyone&#x27;s expecting isn&#x27;t one.</span>
+    <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
+      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
+      <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
     </a>
-    <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
-      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
+    <a class="tile" href="fifty-two-weeks-no-remainder.html" data-search="fifty-two weeks, no remainder did the qumran sect really use its 364-day calendar? a tel aviv university study in tarbiz argues yes — then explains why they stopped." data-tags="dead-sea-scrolls qumran archaeology calendars second-temple-judaism book-of-jubilees astronomy history">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+      <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
+      <span class="ec-s">Did the Qumran sect really use its 364-day calendar? A Tel Aviv University study in Tarbiz argues yes — then explains why they stopped.</span>
     </a>
-    <a class="tile" href="a-pin-is-not-a-verification.html" data-search="plugin4shell: a pin is not a verification plugin4shell let a git branch name override a sha-pinned plugin in claude code, codex, copilot and gemini cli. how the pin failed, and who&#x27;s patched." data-tags="plugin4shell ai-coding-agents claude-code codex github-copilot gemini-cli supply-chain-security git vulnerability-disclosure air-security">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
-      <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
+    <a class="tile" href="the-calling-card-in-a-cats-kidneys.html" data-search="the calling card in a cat&#x27;s kidneys cats carry a 13-molecule chemical signature in their urine, stored in their kidneys. do humans have one — and could it identify a person?" data-tags="biology cats chemistry animal-behaviour kidneys forensic-science metabolomics scent">
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+      <span class="ec-t">The Calling Card in a Cat&#x27;s Kidneys</span>
+      <span class="ec-s">Cats carry a 13-molecule chemical signature in their urine, stored in their kidneys. Do humans have one — and could it identify a person?</span>
     </a>
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Notebook</a></p>
-<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-what-a-locked-iphone-still-gives-up-html">👁 <span id="hits-notebook-what-a-locked-iphone-still-gives-up-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Notebook · <a href="about.html">About</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/finance/">The Librarian&#x27;s Ledger</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · one reader's opinions, nothing here is advice · <span class="hits" id="hits-notebook-a-pin-is-not-a-verification-html">👁 <span id="hits-notebook-a-pin-is-not-a-verification-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fwhat-a-locked-iphone-still-gives-up.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Fnotebook%2Fa-pin-is-not-a-verification.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-notebook-what-a-locked-iphone-still-gives-up-html-n");
+      var n = document.getElementById("hits-notebook-a-pin-is-not-a-verification-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-notebook-what-a-locked-iphone-still-gives-up-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-notebook-a-pin-is-not-a-verification-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-notebook-what-a-locked-iphone-still-gives-up-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-notebook-a-pin-is-not-a-verification-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Notebook. Everything on this site is one reader's opinion and general information, published for interest only. Nothing here is professional advice of any kind — not financial, legal, medical, technical or otherwise — and no reply from Mr. Librarian is either. Facts are drawn from public sources in good faith, are linked where they can be, and may be misread, superseded or simply wrong; check the originals before relying on anything here. Opinions are the author's own and are not those of any employer, company or organization. No person, company, product or organization named on this site has endorsed it or is affiliated with it; nothing here is sponsored. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer>
