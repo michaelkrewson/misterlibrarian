@@ -322,11 +322,14 @@ a{color:#3fd2a8}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -440,49 +443,76 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile" href="does-light-at-night-hurt-your-heart.html" data-search="does light at night hurt your heart? a uk biobank study of 11,071 adults found that people with bedroom light above roughly 3 lux at night — dimmer than almost any lamp, but bright enough for closed eyes to register — developed a thicker, stiffer-pumping heart and higher rates of heart failure, stroke and atrial fibrillation years later than people who slept in real darkness. led by tulane&#x27;s lu qi, published september 9, 2026 in the european heart journal. here&#x27;s what &quot;3 lux&quot; actually looks like, and what the study can and can&#x27;t say about a nightstand lamp." data-tags="sleep circadian-rhythm light-at-night cardiovascular-disease uk-biobank cardiac-mri heart-failure melatonin lu-qi">
-      <span class="ec-d">SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Does Light at Night Hurt Your Heart?</span>
-      <span class="ec-s">A UK Biobank study of 11,071 adults found that people with bedroom light above roughly 3 lux at night — dimmer than almost any lamp, but bright enough for closed eyes to register — developed a thicker, stiffer-pumping heart and higher rates of heart failure, stroke and atrial fibrillation years later than people who slept in real darkness. Led by Tulane&#x27;s Lu Qi, published September 9, 2026 in the European Heart Journal. Here&#x27;s what &quot;3 lux&quot; actually looks like, and what the study can and can&#x27;t say about a nightstand lamp.</span>
+      <span class="tile-media"><img src="img/full-moon-over-capitol.jpg" alt="" width="1142" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Does Light at Night Hurt Your Heart?</span>
+        <span class="ec-s">A UK Biobank study of 11,071 adults found that people with bedroom light above roughly 3 lux at night — dimmer than almost any lamp, but bright enough for closed eyes to register — developed a thicker, stiffer-pumping heart and higher rates of heart failure, stroke and atrial fibrillation years later than people who slept in real darkness. Led by Tulane&#x27;s Lu Qi, published September 9, 2026 in the European Heart Journal. Here&#x27;s what &quot;3 lux&quot; actually looks like, and what the study can and can&#x27;t say about a nightstand lamp.</span>
+      </span>
     </a>
     <a class="tile" href="does-red-light-therapy-work.html" data-search="does red light therapy work, and why does the price range from $60 to $1,200? red light therapy panels run from about $50 for a handheld unit to well over $1,200 for a full-body array, all promising some version of the same benefits. the clinical evidence is genuinely strong for exactly one use case that has nothing to do with a home panel, real but modest for a couple of things people actually buy these for, and weak or backwards for most of what gets marketed. and independent measurement has found $1,200 panels overstating their light output by roughly the same margin as $60 ones." data-tags="red-light-therapy photobiomodulation led-panels near-infrared-light skin-health hair-loss muscle-recovery fda-regulation emf consumer-electronics">
-      <span class="ec-d">SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Does Red Light Therapy Work, and Why Does the Price Range From $60 to $1,200?</span>
-      <span class="ec-s">Red light therapy panels run from about $50 for a handheld unit to well over $1,200 for a full-body array, all promising some version of the same benefits. The clinical evidence is genuinely strong for exactly one use case that has nothing to do with a home panel, real but modest for a couple of things people actually buy these for, and weak or backwards for most of what gets marketed. And independent measurement has found $1,200 panels overstating their light output by roughly the same margin as $60 ones.</span>
+      <span class="tile-media"><img src="img/red-heat-lamp-infrared.jpg" alt="" width="1600" height="1232" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Does Red Light Therapy Work, and Why Does the Price Range From $60 to $1,200?</span>
+        <span class="ec-s">Red light therapy panels run from about $50 for a handheld unit to well over $1,200 for a full-body array, all promising some version of the same benefits. The clinical evidence is genuinely strong for exactly one use case that has nothing to do with a home panel, real but modest for a couple of things people actually buy these for, and weak or backwards for most of what gets marketed. And independent measurement has found $1,200 panels overstating their light output by roughly the same margin as $60 ones.</span>
+      </span>
     </a>
     <a class="tile" href="does-stopping-a-glp-1-raise-heart-risk.html" data-search="does stopping a glp-1 drug raise your heart risk? a veterans affairs study of 333,687 people with type 2 diabetes found that the longer someone went off a glp-1 drug like semaglutide, the higher their risk of stroke, heart attack or death climbed — 4% higher at six months off, 14% at a year, 22% at two years — compared with staying on it, and restarting the drug only partly closed the gap. here&#x27;s what the study actually measured, and the one comparison group that changes how the headline number should be read." data-tags="glp-1 semaglutide ozempic wegovy tirzepatide type-2-diabetes cardiovascular-disease veterans-health medication-adherence target-trial-emulation">
-      <span class="ec-d">SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Does Stopping a GLP-1 Drug Raise Your Heart Risk?</span>
-      <span class="ec-s">A Veterans Affairs study of 333,687 people with type 2 diabetes found that the longer someone went off a GLP-1 drug like semaglutide, the higher their risk of stroke, heart attack or death climbed — 4% higher at six months off, 14% at a year, 22% at two years — compared with staying on it, and restarting the drug only partly closed the gap. Here&#x27;s what the study actually measured, and the one comparison group that changes how the headline number should be read.</span>
+      <span class="tile-media"><img src="img/wegovy-semaglutide-pens.jpg" alt="" width="1200" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Does Stopping a GLP-1 Drug Raise Your Heart Risk?</span>
+        <span class="ec-s">A Veterans Affairs study of 333,687 people with type 2 diabetes found that the longer someone went off a GLP-1 drug like semaglutide, the higher their risk of stroke, heart attack or death climbed — 4% higher at six months off, 14% at a year, 22% at two years — compared with staying on it, and restarting the drug only partly closed the gap. Here&#x27;s what the study actually measured, and the one comparison group that changes how the headline number should be read.</span>
+      </span>
     </a>
     <a class="tile" href="alexander-disease-and-the-first-drug-approved-for-it.html" data-search="alexander disease, and the first drug approved to treat it what is alexander disease, and what did the fda actually approve for it? axd is an ultra-rare, usually fatal genetic disorder of the brain&#x27;s astrocytes, caused by mutations in the gfap gene. on september 3, 2026, the fda approved zanvastro (zilganersen), an rna-targeted drug given by quarterly spinal injection, as the first treatment aimed at the disease itself rather than its symptoms. the trial behind it enrolled 49 randomized patients." data-tags="alexander-disease gfap rare-disease fda-approval zilganersen zanvastro ionis antisense genetics">
-      <span class="ec-d">SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Alexander Disease, and the First Drug Approved to Treat It</span>
-      <span class="ec-s">What is Alexander disease, and what did the FDA actually approve for it? AxD is an ultra-rare, usually fatal genetic disorder of the brain&#x27;s astrocytes, caused by mutations in the GFAP gene. On September 3, 2026, the FDA approved Zanvastro (zilganersen), an RNA-targeted drug given by quarterly spinal injection, as the first treatment aimed at the disease itself rather than its symptoms. The trial behind it enrolled 49 randomized patients.</span>
+      <span class="tile-media"><img src="img/gfap-astrocytes-immunostain.jpg" alt="" width="1344" height="1024" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Alexander Disease, and the First Drug Approved to Treat It</span>
+        <span class="ec-s">What is Alexander disease, and what did the FDA actually approve for it? AxD is an ultra-rare, usually fatal genetic disorder of the brain&#x27;s astrocytes, caused by mutations in the GFAP gene. On September 3, 2026, the FDA approved Zanvastro (zilganersen), an RNA-targeted drug given by quarterly spinal injection, as the first treatment aimed at the disease itself rather than its symptoms. The trial behind it enrolled 49 randomized patients.</span>
+      </span>
     </a>
     <a class="tile" href="do-food-preservatives-raise-blood-pressure.html" data-search="do common food preservatives raise blood pressure and heart risk? a french cohort of 112,395 adults, followed a median of 7.9 years, found that the heaviest consumers of preservative food additives developed hypertension and cardiovascular disease at higher rates than the lightest. eight individual preservatives were each tied to high blood pressure, including sodium nitrite, potassium sorbate, citric acid and — oddly — ascorbic acid, plain vitamin c. this is a cohort study, so it shows association, not proof of cause. here is what the numbers actually say, and how the eight show up on an american ingredient panel." data-tags="food-additives preservatives blood-pressure hypertension cardiovascular-disease stroke nutrition processed-food sodium-nitrite ascorbic-acid food-labels cohort-studies">
-      <span class="ec-d">SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Do Common Food Preservatives Raise Blood Pressure and Heart Risk?</span>
-      <span class="ec-s">A French cohort of 112,395 adults, followed a median of 7.9 years, found that the heaviest consumers of preservative food additives developed hypertension and cardiovascular disease at higher rates than the lightest. Eight individual preservatives were each tied to high blood pressure, including sodium nitrite, potassium sorbate, citric acid and — oddly — ascorbic acid, plain vitamin C. This is a cohort study, so it shows association, not proof of cause. Here is what the numbers actually say, and how the eight show up on an American ingredient panel.</span>
+      <span class="tile-media"><img src="img/us-grocery-aisle.jpg" alt="" width="1600" height="1067" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Do Common Food Preservatives Raise Blood Pressure and Heart Risk?</span>
+        <span class="ec-s">A French cohort of 112,395 adults, followed a median of 7.9 years, found that the heaviest consumers of preservative food additives developed hypertension and cardiovascular disease at higher rates than the lightest. Eight individual preservatives were each tied to high blood pressure, including sodium nitrite, potassium sorbate, citric acid and — oddly — ascorbic acid, plain vitamin C. This is a cohort study, so it shows association, not proof of cause. Here is what the numbers actually say, and how the eight show up on an American ingredient panel.</span>
+      </span>
     </a>
     <a class="tile" href="the-first-approved-treatment-for-ataxia-in-a-t.html" data-search="the first approved treatment for ataxia in ataxia-telangiectasia what is ataxia-telangiectasia, and does the drug the fda just approved for it actually work? a-t is a rare, inherited disorder in a dna-repair gene that causes progressive loss of coordination starting in early childhood. on september 18, 2026, the fda approved levacetylleucine (aqneursa) as the first treatment for the ataxia itself, based on a 73-patient trial showing a real, statistically significant improvement on the standard ataxia rating scale." data-tags="ataxia-telangiectasia ataxia rare-disease fda-approval levacetylleucine aqneursa genetics">
-      <span class="ec-d">SEPTEMBER 19, 2026</span>
-      <span class="ec-t">The First Approved Treatment for Ataxia in Ataxia-Telangiectasia</span>
-      <span class="ec-s">What is ataxia-telangiectasia, and does the drug the FDA just approved for it actually work? A-T is a rare, inherited disorder in a DNA-repair gene that causes progressive loss of coordination starting in early childhood. On September 18, 2026, the FDA approved levacetylleucine (Aqneursa) as the first treatment for the ataxia itself, based on a 73-patient trial showing a real, statistically significant improvement on the standard ataxia rating scale.</span>
+      <span class="tile-media"><img src="img/grays-anatomy-cerebellum-1918.jpg" alt="" width="1140" height="999" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 19, 2026</span>
+        <span class="ec-t">The First Approved Treatment for Ataxia in Ataxia-Telangiectasia</span>
+        <span class="ec-s">What is ataxia-telangiectasia, and does the drug the FDA just approved for it actually work? A-T is a rare, inherited disorder in a DNA-repair gene that causes progressive loss of coordination starting in early childhood. On September 18, 2026, the FDA approved levacetylleucine (Aqneursa) as the first treatment for the ataxia itself, based on a 73-patient trial showing a real, statistically significant improvement on the standard ataxia rating scale.</span>
+      </span>
     </a>
     <a class="tile" href="daraxonrasib-pancreatic-cancer-and-what-breakthrough-status-means.html" data-search="pancreatic cancer has a drug that works. now the fda wants it tried first three weeks after approving daraxonrasib for pancreatic cancer that has already been treated — the first drug to roughly double survival in that disease — the fda gave it breakthrough therapy status for newly diagnosed patients, on top of chemotherapy. what the drug does, what the trials actually showed, what &quot;breakthrough&quot; legally means, and the $39,800-a-month company behind it." data-tags="cancer pancreatic-cancer daraxonrasib rasonque kras ras-inhibitors revolution-medicines chemotherapy breakthrough-therapy drug-prices fda oncology">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Pancreatic Cancer Has a Drug That Works. Now the FDA Wants It Tried First</span>
-      <span class="ec-s">Three weeks after approving daraxonrasib for pancreatic cancer that has already been treated — the first drug to roughly double survival in that disease — the FDA gave it Breakthrough Therapy status for newly diagnosed patients, on top of chemotherapy. What the drug does, what the trials actually showed, what &quot;breakthrough&quot; legally means, and the $39,800-a-month company behind it.</span>
+      <span class="tile-media"><img src="img/sobotta-1906-pancreas.jpg" alt="" width="1600" height="1385" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Pancreatic Cancer Has a Drug That Works. Now the FDA Wants It Tried First</span>
+        <span class="ec-s">Three weeks after approving daraxonrasib for pancreatic cancer that has already been treated — the first drug to roughly double survival in that disease — the FDA gave it Breakthrough Therapy status for newly diagnosed patients, on top of chemotherapy. What the drug does, what the trials actually showed, what &quot;breakthrough&quot; legally means, and the $39,800-a-month company behind it.</span>
+      </span>
     </a>
     <a class="tile" href="what-radioligand-therapy-is-and-why-a-second-lutathera-matters.html" data-search="what radioligand therapy is, and why a second lutathera matters on september 14 the fda approved bexlutry, curium&#x27;s copy of novartis&#x27;s lutathera — the first &quot;radioligand equivalent&quot; ever cleared. the question underneath the headline: what is a radioligand therapy, what does the evidence say it does for neuroendocrine tumours, and why did it take a delaware courtroom to get a second one to market? with numbers, and the companies." data-tags="cancer neuroendocrine-tumors radioligand-therapy nuclear-medicine lutetium-177 lutathera bexlutry curium novartis lantheus drug-prices fda">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">What Radioligand Therapy Is, and Why a Second Lutathera Matters</span>
-      <span class="ec-s">On September 14 the FDA approved Bexlutry, Curium&#x27;s copy of Novartis&#x27;s Lutathera — the first &quot;radioligand equivalent&quot; ever cleared. The question underneath the headline: what is a radioligand therapy, what does the evidence say it does for neuroendocrine tumours, and why did it take a Delaware courtroom to get a second one to market? With numbers, and the companies.</span>
+      <span class="tile-media"><img src="img/marie-curie-1920s.jpg" alt="" width="1177" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">What Radioligand Therapy Is, and Why a Second Lutathera Matters</span>
+        <span class="ec-s">On September 14 the FDA approved Bexlutry, Curium&#x27;s copy of Novartis&#x27;s Lutathera — the first &quot;radioligand equivalent&quot; ever cleared. The question underneath the headline: what is a radioligand therapy, what does the evidence say it does for neuroendocrine tumours, and why did it take a Delaware courtroom to get a second one to market? With numbers, and the companies.</span>
+      </span>
     </a>
     <a class="tile" href="what-a-kidney-stone-is-and-why-it-forms.html" data-search="what a kidney stone actually is, and why it forms about one adult in ten will make a kidney stone. before the questions about water, calcium and what to eat, the first one: what a stone actually is, what it is made of, and why it forms in some kidneys and not others — read from the studies. with a postscript on hard water, distillers, and calcium pills." data-tags="kidney-stones urology nutrition calcium oxalate uric-acid hydration sodium diet first-principles supplements hard-water vitamin-c vitamin-d">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">What a Kidney Stone Actually Is, and Why It Forms</span>
-      <span class="ec-s">About one adult in ten will make a kidney stone. Before the questions about water, calcium and what to eat, the first one: what a stone actually is, what it is made of, and why it forms in some kidneys and not others — read from the studies. With a postscript on hard water, distillers, and calcium pills.</span>
+      <span class="tile-media"><img src="img/brodel-kidney-stones-1909.jpg" alt="" width="949" height="1400" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">What a Kidney Stone Actually Is, and Why It Forms</span>
+        <span class="ec-s">About one adult in ten will make a kidney stone. Before the questions about water, calcium and what to eat, the first one: what a stone actually is, what it is made of, and why it forms in some kidneys and not others — read from the studies. With a postscript on hard water, distillers, and calcium pills.</span>
+      </span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>

@@ -322,11 +322,14 @@ a{color:#3fd2a8}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -440,9 +443,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>Ninguna entrada coincide con esa búsqueda.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile" href="what-a-kidney-stone-is-and-why-it-forms.es.html" data-search="qué es en realidad un cálculo renal, y por qué se forma alrededor de un adulto de cada diez formará un cálculo renal. antes de las preguntas sobre el agua, el calcio y qué comer, la primera: qué es en realidad una piedra en el riñón, de qué está hecha y por qué se forma en unos riñones y no en otros — leído en los estudios. con una posdata sobre el agua dura, las destiladoras y las pastillas de calcio." data-tags="c-lculos-renales urolog-a nutrici-n calcio oxalato cido-rico hidrataci-n sodio dieta principios-b-sicos suplementos agua-dura vitamina-c vitamina-d">
-      <span class="ec-d">10 DE SEPTIEMBRE DE 2026</span>
-      <span class="ec-t">Qué es en realidad un cálculo renal, y por qué se forma</span>
-      <span class="ec-s">Alrededor de un adulto de cada diez formará un cálculo renal. Antes de las preguntas sobre el agua, el calcio y qué comer, la primera: qué es en realidad una piedra en el riñón, de qué está hecha y por qué se forma en unos riñones y no en otros — leído en los estudios. Con una posdata sobre el agua dura, las destiladoras y las pastillas de calcio.</span>
+      <span class="tile-media"><img src="img/brodel-kidney-stones-1909.jpg" alt="" width="949" height="1400" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">10 DE SEPTIEMBRE DE 2026</span>
+        <span class="ec-t">Qué es en realidad un cálculo renal, y por qué se forma</span>
+        <span class="ec-s">Alrededor de un adulto de cada diez formará un cálculo renal. Antes de las preguntas sobre el agua, el calcio y qué comer, la primera: qué es en realidad una piedra en el riñón, de qué está hecha y por qué se forma en unos riñones y no en otros — leído en los estudios. Con una posdata sobre el agua dura, las destiladoras y las pastillas de calcio.</span>
+      </span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>

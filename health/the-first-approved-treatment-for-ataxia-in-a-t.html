@@ -319,11 +319,14 @@ a{color:#3fd2a8}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -529,24 +532,36 @@ obviously separable from A-T itself in a trial this size.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="alexander-disease-and-the-first-drug-approved-for-it.html" data-search="alexander disease, and the first drug approved to treat it what alexander disease is, how zilganersen (zanvastro) works, and exactly what its 49-patient approval trial showed at week 61." data-tags="alexander-disease gfap rare-disease fda-approval zilganersen zanvastro ionis antisense genetics">
-      <span class="ec-d">SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Alexander Disease, and the First Drug Approved to Treat It</span>
-      <span class="ec-s">What Alexander disease is, how zilganersen (Zanvastro) works, and exactly what its 49-patient approval trial showed at week 61.</span>
+      <span class="tile-media"><img src="img/gfap-astrocytes-immunostain.jpg" alt="" width="1344" height="1024" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Alexander Disease, and the First Drug Approved to Treat It</span>
+        <span class="ec-s">What Alexander disease is, how zilganersen (Zanvastro) works, and exactly what its 49-patient approval trial showed at week 61.</span>
+      </span>
     </a>
     <a class="tile" href="does-light-at-night-hurt-your-heart.html" data-search="does light at night hurt your heart? a uk biobank study tied nighttime light above 3 lux to heart remodeling and higher cardiovascular risk years later. what 3 lux actually is, in plain terms." data-tags="sleep circadian-rhythm light-at-night cardiovascular-disease uk-biobank cardiac-mri heart-failure melatonin lu-qi">
-      <span class="ec-d">SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Does Light at Night Hurt Your Heart?</span>
-      <span class="ec-s">A UK Biobank study tied nighttime light above 3 lux to heart remodeling and higher cardiovascular risk years later. What 3 lux actually is, in plain terms.</span>
+      <span class="tile-media"><img src="img/full-moon-over-capitol.jpg" alt="" width="1142" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Does Light at Night Hurt Your Heart?</span>
+        <span class="ec-s">A UK Biobank study tied nighttime light above 3 lux to heart remodeling and higher cardiovascular risk years later. What 3 lux actually is, in plain terms.</span>
+      </span>
     </a>
     <a class="tile" href="does-red-light-therapy-work.html" data-search="does red light therapy work, and why does the price range from $60 to $1,200? what the evidence actually shows for red light therapy panels, and why price doesn&#x27;t track measured light output between a $60 unit and a $1,200 one." data-tags="red-light-therapy photobiomodulation led-panels near-infrared-light skin-health hair-loss muscle-recovery fda-regulation emf consumer-electronics">
-      <span class="ec-d">SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Does Red Light Therapy Work, and Why Does the Price Range From $60 to $1,200?</span>
-      <span class="ec-s">What the evidence actually shows for red light therapy panels, and why price doesn&#x27;t track measured light output between a $60 unit and a $1,200 one.</span>
+      <span class="tile-media"><img src="img/red-heat-lamp-infrared.jpg" alt="" width="1600" height="1232" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Does Red Light Therapy Work, and Why Does the Price Range From $60 to $1,200?</span>
+        <span class="ec-s">What the evidence actually shows for red light therapy panels, and why price doesn&#x27;t track measured light output between a $60 unit and a $1,200 one.</span>
+      </span>
     </a>
     <a class="tile" href="does-stopping-a-glp-1-raise-heart-risk.html" data-search="does stopping a glp-1 drug raise your heart risk? a va study of 333,687 people found stopping a glp-1 raised cardiovascular risk the longer someone stayed off it. what was measured, and what wasn&#x27;t." data-tags="glp-1 semaglutide ozempic wegovy tirzepatide type-2-diabetes cardiovascular-disease veterans-health medication-adherence target-trial-emulation">
-      <span class="ec-d">SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Does Stopping a GLP-1 Drug Raise Your Heart Risk?</span>
-      <span class="ec-s">A VA study of 333,687 people found stopping a GLP-1 raised cardiovascular risk the longer someone stayed off it. What was measured, and what wasn&#x27;t.</span>
+      <span class="tile-media"><img src="img/wegovy-semaglutide-pens.jpg" alt="" width="1200" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Does Stopping a GLP-1 Drug Raise Your Heart Risk?</span>
+        <span class="ec-s">A VA study of 333,687 people found stopping a GLP-1 raised cardiovascular risk the longer someone stayed off it. What was measured, and what wasn&#x27;t.</span>
+      </span>
     </a>
     </div>
   </section>

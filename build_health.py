@@ -664,7 +664,8 @@ def _related_block(e, pool):
         _tile(_front_item(href=o["file"],
                           label=_pretty_date(o["date"], lang).upper(),
                           title=o["title"], desc=_entry_desc(o),
-                          date=o["date"], tags=o.get("tags", ())))
+                          date=o["date"], tags=o.get("tags", ()),
+                          hero=o.get("hero", "")))
         for o in picks)
     return ('  <section class="readnext">\n'
             '    <h2>%s</h2>\n'
@@ -776,23 +777,39 @@ def _entry_card(e):
 _WS_RE = re.compile(r"\s+")
 
 
-def _front_item(*, href, label, title, desc, date, tags=()):
+def _front_item(*, href, label, title, desc, date, tags=(), hero=""):
     """One entry in the single shape both `_tile` and `_archive_row` render
-    from. `search` is the lowercased haystack the header search box matches."""
+    from. `search` is the lowercased haystack the header search box matches.
+    `hero` is the entry's own hero-image filename (in health/img/), if any
+    — `_tile` leads the card with it, banner-style; `_archive_row`'s list
+    view ignores it, that view is text-only by design."""
     return {"href": href, "label": label, "title": title, "desc": desc,
-            "date": date, "tags": list(tags),
+            "date": date, "tags": list(tags), "hero": hero,
             "search": _WS_RE.sub(" ", (title + " " + desc).lower()).strip()}
 
 
 def _tile(item):
     """A boxed grid tile. `data-search` is what the header search box's
-    client-side filter matches; `data-tags` is what the tag chips match."""
+    client-side filter matches; `data-tags` is what the tag chips match.
+    When the entry has a hero image, a full-width 16:9 crop of that same
+    photo (never a separate/stock image) leads the card — the same banner
+    treatment The Librarian Abroad's cards use (and now the Notebook's),
+    reusing the hero file directly rather than a generated derivative. No
+    hero: the card renders text-only, same as before."""
     data_tags = " ".join(blogkit.tag_slug(t) for t in item["tags"])
+    media = ""
+    if item["hero"]:
+        dims = blogkit.dim_attrs(os.path.join(OUT, "img"), item["hero"])
+        media = ('      <span class="tile-media"><img src="img/%s" alt=""%s '
+                  'loading="lazy"/></span>\n' % (esc(item["hero"]), dims))
     return ('    <a class="tile" href="%s" data-search="%s" data-tags="%s">\n'
-            '      <span class="ec-d">%s</span>\n'
-            '      <span class="ec-t">%s</span>\n'
-            '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (esc(item["href"]), esc(item["search"]), esc(data_tags),
+            '%s'
+            '      <span class="tile-body">\n'
+            '        <span class="ec-d">%s</span>\n'
+            '        <span class="ec-t">%s</span>\n'
+            '        <span class="ec-s">%s</span>\n'
+            '      </span>\n'
+            '    </a>' % (esc(item["href"]), esc(item["search"]), esc(data_tags), media,
                           esc(item["label"]), esc(item["title"]), esc(item["desc"])))
 
 
@@ -1627,7 +1644,7 @@ def build_front(entries, lang="en"):
     u = UI[lang]
     pool = [_front_item(href=e["file"], label=_pretty_date(e["date"], lang).upper(),
                         title=e["title"], desc=e["summary"], date=e["date"],
-                        tags=e["tags"]) for e in entries]
+                        tags=e["tags"], hero=e["hero"]) for e in entries]
     pool.sort(key=lambda it: -it["date"].toordinal())
 
     tiles = "\n".join(_tile(it) for it in pool)
@@ -2062,11 +2079,14 @@ a{color:__ACCENT__}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
