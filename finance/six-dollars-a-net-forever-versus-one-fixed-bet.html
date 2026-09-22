@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -752,24 +755,36 @@ you can check it.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="we-killed-twenty-five-trading-strategies-to-keep-three.html" data-search="we killed twenty-five trading strategies to keep three forty automated trading strategies in ninety-five days, twenty-five retired. the graveyard, a cause of death on every stone, and what the survivors share." data-tags="trading algorithmic-trading backtesting artificial-intelligence ai bitcoin strategy notes">
-      <span class="ec-d">SEPTEMBER 11, 2026</span>
-      <span class="ec-t">We Killed Twenty-Five Trading Strategies to Keep Three</span>
-      <span class="ec-s">Forty automated trading strategies in ninety-five days, twenty-five retired. The graveyard, a cause of death on every stone, and what the survivors share.</span>
+      <span class="tile-media"><img src="img/amarg-boneyard-davis-monthan-2015.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 11, 2026</span>
+        <span class="ec-t">We Killed Twenty-Five Trading Strategies to Keep Three</span>
+        <span class="ec-s">Forty automated trading strategies in ninety-five days, twenty-five retired. The graveyard, a cause of death on every stone, and what the survivors share.</span>
+      </span>
     </a>
     <a class="tile" href="cubicle-propst-right-not-to-be-interrupted.html" data-search="he drew it at 120 degrees. they built it at 90. robert propst designed the cubicle to give office workers a screen they controlled. he lived to watch companies turn it into a box, and said so." data-tags="office-design cubicle robert-propst herman-miller return-to-office remote-work real-estate productivity labor notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">He Drew It at 120 Degrees. They Built It at 90.</span>
-      <span class="ec-s">Robert Propst designed the cubicle to give office workers a screen they controlled. He lived to watch companies turn it into a box, and said so.</span>
+      <span class="tile-media"><img src="img/cubicle-farm-rows.jpg" alt="" width="1600" height="762" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">He Drew It at 120 Degrees. They Built It at 90.</span>
+        <span class="ec-s">Robert Propst designed the cubicle to give office workers a screen they controlled. He lived to watch companies turn it into a box, and said so.</span>
+      </span>
     </a>
     <a class="tile" href="lightning-in-a-jar-review.html" data-search="a jar is not a vault: reading my friend&#x27;s lightning wallet before i recommend it a friend of mine spent six months building a self-custodial lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit." data-tags="bitcoin self-custody lightning wallet open-source security ldk lsp lightning-in-a-jar lijox seed-phrase notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">A Jar Is Not a Vault: Reading My Friend&#x27;s Lightning Wallet Before I Recommend It</span>
-      <span class="ec-s">A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit.</span>
+      <span class="tile-media"><img src="img/lightning-in-a-jar-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">A Jar Is Not a Vault: Reading My Friend&#x27;s Lightning Wallet Before I Recommend It</span>
+        <span class="ec-s">A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit.</span>
+      </span>
     </a>
     <a class="tile" href="six-million-tokens-in-eleven-minutes.html" data-search="six million tokens in eleven minutes will burning six million tokens on a blog post ever seem normal? i priced it, traced where the price is going, and asked who pays for the free tier." data-tags="artificial-intelligence ai tokens pricing inflation digital-divide open-source productivity notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
-      <span class="ec-s">Will burning six million tokens on a blog post ever seem normal? I priced it, traced where the price is going, and asked who pays for the free tier.</span>
+      <span class="tile-media"><img src="img/ibm-7090-nasa-ames-1961.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
+        <span class="ec-s">Will burning six million tokens on a blog post ever seem normal? I priced it, traced where the price is going, and asked who pays for the free tier.</span>
+      </span>
     </a>
     </div>
   </section>

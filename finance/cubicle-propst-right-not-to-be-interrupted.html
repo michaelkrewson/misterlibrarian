@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -857,24 +860,34 @@ BY 2.0</a> licence. Same parts. Different angle.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="six-million-tokens-in-eleven-minutes.html" data-search="six million tokens in eleven minutes will burning six million tokens on a blog post ever seem normal? i priced it, traced where the price is going, and asked who pays for the free tier." data-tags="artificial-intelligence ai tokens pricing inflation digital-divide open-source productivity notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
-      <span class="ec-s">Will burning six million tokens on a blog post ever seem normal? I priced it, traced where the price is going, and asked who pays for the free tier.</span>
+      <span class="tile-media"><img src="img/ibm-7090-nasa-ames-1961.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
+        <span class="ec-s">Will burning six million tokens on a blog post ever seem normal? I priced it, traced where the price is going, and asked who pays for the free tier.</span>
+      </span>
     </a>
     <a class="tile" href="treasury-bond-buyback-explained.html" data-search="six billion dollars against seventy-four, and yields went up anyway the treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling." data-tags="treasury bonds yields federal-reserve monetary-policy central-banks deficits mstr bitcoin real-estate mortgages notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
-      <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
+        <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling.</span>
+      </span>
     </a>
     <a class="tile" href="six-dollars-a-net-forever-versus-one-fixed-bet.html" data-search="six dollars a net, forever, versus one fixed bet a bed net costs about $6 and lasts three years, which makes malaria prevention a subscription with 600 million subscribers and no end date." data-tags="philanthropy global-health malaria cost-effectiveness givewell open-philanthropy biotechnology gene-drive notes">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Six Dollars a Net, Forever, Versus One Fixed Bet</span>
-      <span class="ec-s">A bed net costs about $6 and lasts three years, which makes malaria prevention a subscription with 600 million subscribers and no end date.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Six Dollars a Net, Forever, Versus One Fixed Bet</span>
+        <span class="ec-s">A bed net costs about $6 and lasts three years, which makes malaria prevention a subscription with 600 million subscribers and no end date.</span>
+      </span>
     </a>
     <a class="tile" href="we-killed-twenty-five-trading-strategies-to-keep-three.html" data-search="we killed twenty-five trading strategies to keep three forty automated trading strategies in ninety-five days, twenty-five retired. the graveyard, a cause of death on every stone, and what the survivors share." data-tags="trading algorithmic-trading backtesting artificial-intelligence ai bitcoin strategy notes">
-      <span class="ec-d">SEPTEMBER 11, 2026</span>
-      <span class="ec-t">We Killed Twenty-Five Trading Strategies to Keep Three</span>
-      <span class="ec-s">Forty automated trading strategies in ninety-five days, twenty-five retired. The graveyard, a cause of death on every stone, and what the survivors share.</span>
+      <span class="tile-media"><img src="img/amarg-boneyard-davis-monthan-2015.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 11, 2026</span>
+        <span class="ec-t">We Killed Twenty-Five Trading Strategies to Keep Three</span>
+        <span class="ec-s">Forty automated trading strategies in ninety-five days, twenty-five retired. The graveyard, a cause of death on every stone, and what the survivors share.</span>
+      </span>
     </a>
     </div>
   </section>

@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -889,24 +892,35 @@ were the market declining to change the subject.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="a-rate-hike-against-a-strait.html" data-search="a rate hike against a strait cpi hit 3.4% on gasoline and the fed is expected to hike next week. core is 2.4%. what five past oil shocks say about raising rates against a supply shock." data-tags="federal-reserve interest-rates inflation cpi oil energy strait-of-hormuz monetary-policy bonds mortgages gasoline">
-      <span class="ec-d">SEPTEMBER 12, 2026</span>
-      <span class="ec-t">A Rate Hike Against a Strait</span>
-      <span class="ec-s">CPI hit 3.4% on gasoline and the Fed is expected to hike next week. Core is 2.4%. What five past oil shocks say about raising rates against a supply shock.</span>
+      <span class="tile-media"><img src="img/oregon-even-numbers-only-1974.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 12, 2026</span>
+        <span class="ec-t">A Rate Hike Against a Strait</span>
+        <span class="ec-s">CPI hit 3.4% on gasoline and the Fed is expected to hike next week. Core is 2.4%. What five past oil shocks say about raising rates against a supply shock.</span>
+      </span>
     </a>
     <a class="tile" href="the-demonstration.html" data-search="the demonstration the fed hiked a quarter point on wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in july." data-tags="federal-reserve interest-rates inflation oil energy strait-of-hormuz monetary-policy bonds treasury-yields kevin-warsh">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">The Demonstration</span>
-      <span class="ec-s">The Fed hiked a quarter point on Wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in July.</span>
+      <span class="tile-media"><img src="img/fomc-board-room-entrance.jpg" alt="" width="1063" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">The Demonstration</span>
+        <span class="ec-s">The Fed hiked a quarter point on Wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in July.</span>
+      </span>
     </a>
     <a class="tile" href="untangling-bis-imf-world-bank.html" data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…" data-tags="bis imf world-bank bretton-woods sdr central-banks united-nations monetary-policy notes">
-      <span class="ec-d">SEPTEMBER 8, 2026</span>
-      <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
-      <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 8, 2026</span>
+        <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
+        <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…</span>
+      </span>
     </a>
     <a class="tile" href="eleven-votes-short-of-clarity.html" data-search="eleven votes short of clarity the clarity act&#x27;s senate cloture vote failed 49-50 today. what the bill does, who crossed over, and what the failure did to bitcoin and my own book." data-tags="clarity-act senate crypto-regulation bitcoin sec cftc market-structure strategy-inc mstr arbitrageur">
-      <span class="ec-d">SEPTEMBER 15, 2026</span>
-      <span class="ec-t">Eleven Votes Short of Clarity</span>
-      <span class="ec-s">The CLARITY Act&#x27;s Senate cloture vote failed 49-50 today. What the bill does, who crossed over, and what the failure did to Bitcoin and my own book.</span>
+      <span class="tile-media"><img src="img/capitol-rotunda-dome-washington.jpg" alt="" width="3000" height="2343" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 15, 2026</span>
+        <span class="ec-t">Eleven Votes Short of Clarity</span>
+        <span class="ec-s">The CLARITY Act&#x27;s Senate cloture vote failed 49-50 today. What the bill does, who crossed over, and what the failure did to Bitcoin and my own book.</span>
+      </span>
     </a>
     </div>
   </section>

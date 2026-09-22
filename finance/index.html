@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -593,184 +596,280 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile board-card" href="board.html" data-search="the asset board gold, silver, the biggest public companies and bitcoin, ranked by what the market says they are worth — bitcoin currently sits at #12." data-tags="">
-      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">The Asset Board</span>
-      <span class="ec-s">Gold, silver, the biggest public companies and Bitcoin, ranked by what the market says they are worth — Bitcoin currently sits at #12.</span>
+      <span class="tile-body">
+        <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
+        <span class="ec-t">The Asset Board</span>
+        <span class="ec-s">Gold, silver, the biggest public companies and Bitcoin, ranked by what the market says they are worth — Bitcoin currently sits at #12.</span>
+      </span>
     </a>
     <a class="tile board-card" href="bitcoin.html" data-search="the bitcoin board block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch." data-tags="">
-      <span class="ec-d">STANDING PAGE · LIVE</span>
-      <span class="ec-t">The Bitcoin Board</span>
-      <span class="ec-s">Block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.</span>
+      <span class="tile-body">
+        <span class="ec-d">STANDING PAGE · LIVE</span>
+        <span class="ec-t">The Bitcoin Board</span>
+        <span class="ec-s">Block height, supply, difficulty, the mempool and the next halving — the network&#x27;s own numbers, live while you watch.</span>
+      </span>
     </a>
     <a class="tile board-card" href="treasuries.html" data-search="bitcoin treasuries public companies, miners, etfs, countries, private companies and defi protocols — 3,584,045 btc, ranked by who holds it." data-tags="">
-      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">Bitcoin Treasuries</span>
-      <span class="ec-s">Public companies, miners, ETFs, countries, private companies and DeFi protocols — 3,584,045 BTC, ranked by who holds it.</span>
+      <span class="tile-body">
+        <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
+        <span class="ec-t">Bitcoin Treasuries</span>
+        <span class="ec-s">Public companies, miners, ETFs, countries, private companies and DeFi protocols — 3,584,045 BTC, ranked by who holds it.</span>
+      </span>
     </a>
     <a class="tile board-card" href="crypto.html" data-search="the crypto heat map the top 100 coins by market cap, grouped into bitcoin &amp; derivatives, infrastructure &amp; platform, and others, colour-graded by how much each has moved — bitcoin currently holds 59% of it." data-tags="">
-      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">The Crypto Heat Map</span>
-      <span class="ec-s">The top 100 coins by market cap, grouped into Bitcoin &amp; Derivatives, Infrastructure &amp; Platform, and Others, colour-graded by how much each has moved — Bitcoin currently holds 59% of it.</span>
+      <span class="tile-body">
+        <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
+        <span class="ec-t">The Crypto Heat Map</span>
+        <span class="ec-s">The top 100 coins by market cap, grouped into Bitcoin &amp; Derivatives, Infrastructure &amp; Platform, and Others, colour-graded by how much each has moved — Bitcoin currently holds 59% of it.</span>
+      </span>
     </a>
     <a class="tile board-card" href="humanity.html" data-search="bitcoin vs. humanity every person alive, set against a currency that cannot print more of itself — satoshis per person on earth, and what happens if all the world&#x27;s wealth wanted in." data-tags="">
-      <span class="ec-d">STANDING PAGE · LIVE</span>
-      <span class="ec-t">Bitcoin vs. Humanity</span>
-      <span class="ec-s">Every person alive, set against a currency that cannot print more of itself — satoshis per person on Earth, and what happens if all the world&#x27;s wealth wanted in.</span>
+      <span class="tile-body">
+        <span class="ec-d">STANDING PAGE · LIVE</span>
+        <span class="ec-t">Bitcoin vs. Humanity</span>
+        <span class="ec-s">Every person alive, set against a currency that cannot print more of itself — satoshis per person on Earth, and what happens if all the world&#x27;s wealth wanted in.</span>
+      </span>
     </a>
     <a class="tile board-card" href="money-worldwide.html" data-search="money worldwide exchange rates, money supply, reserves and gold, and global debt &amp; gdp — with bitcoin&#x27;s own market cap set against every one of them." data-tags="">
-      <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
-      <span class="ec-t">Money Worldwide</span>
-      <span class="ec-s">Exchange rates, money supply, reserves and gold, and global debt &amp; GDP — with Bitcoin&#x27;s own market cap set against every one of them.</span>
+      <span class="tile-body">
+        <span class="ec-d">STANDING PAGE · UPDATED THROUGH THE DAY</span>
+        <span class="ec-t">Money Worldwide</span>
+        <span class="ec-s">Exchange rates, money supply, reserves and gold, and global debt &amp; GDP — with Bitcoin&#x27;s own market cap set against every one of them.</span>
+      </span>
     </a>
     <a class="tile" href="eleven-percent-for-a-hole-in-glass.html" data-search="eleven percent for a hole in glass intel jumped in monday premarket and closed up about 11 percent on reports that it will work with taiwan&#x27;s au optronics on micro led packaging built into glass substrates — embedding chips in glass and wiring them with through-glass vias, aimed at co-packaged optics for ai datacenters. the engineering is real and genuinely important. the announcement is not an announcement: it came from a taiwanese newspaper, intel declined to comment, and nobody has put a contract, a date or a dollar figure on the record." data-tags="intel au-optronics auo co-packaged-optics advanced-packaging glass-substrates micro-led semiconductors ai-datacenters intel-foundry taiwan">
-      <span class="ec-d">SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Eleven Percent for a Hole in Glass</span>
-      <span class="ec-s">Intel jumped in Monday premarket and closed up about 11 percent on reports that it will work with Taiwan&#x27;s AU Optronics on Micro LED packaging built into glass substrates — embedding chips in glass and wiring them with through-glass vias, aimed at co-packaged optics for AI datacenters. The engineering is real and genuinely important. The announcement is not an announcement: it came from a Taiwanese newspaper, Intel declined to comment, and nobody has put a contract, a date or a dollar figure on the record.</span>
+      <span class="tile-media"><img src="img/auo-taichung-central-taiwan-science-park.jpg" alt="" width="1600" height="1199" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Eleven Percent for a Hole in Glass</span>
+        <span class="ec-s">Intel jumped in Monday premarket and closed up about 11 percent on reports that it will work with Taiwan&#x27;s AU Optronics on Micro LED packaging built into glass substrates — embedding chips in glass and wiring them with through-glass vias, aimed at co-packaged optics for AI datacenters. The engineering is real and genuinely important. The announcement is not an announcement: it came from a Taiwanese newspaper, Intel declined to comment, and nobody has put a contract, a date or a dollar figure on the record.</span>
+      </span>
     </a>
     <a class="tile" href="four-hundred-million-for-a-model-nobody-has-seen.html" data-search="four hundred million for a model nobody has seen naive ai, founded in beijing in february 2026 by tsinghua professor dai jifeng, has raised about $400 million across three rounds at a $1.42 billion valuation, backed by tencent, idg capital, mpci and hsg. it has fewer than a hundred employees and has not released a model. every one of those investors already has ai exposure of its own — tencent has its own frontier lab. the interesting question isn&#x27;t whether the company is good. it&#x27;s why a corporate investor pays to stand outside its own building." data-tags="naive-ai china-ai tencent hsg hongshan idg-capital mpci venture-capital open-weight-models large-language-models tsinghua deepseek">
-      <span class="ec-d">SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Four Hundred Million for a Model Nobody Has Seen</span>
-      <span class="ec-s">Naive AI, founded in Beijing in February 2026 by Tsinghua professor Dai Jifeng, has raised about $400 million across three rounds at a $1.42 billion valuation, backed by Tencent, IDG Capital, MPCi and HSG. It has fewer than a hundred employees and has not released a model. Every one of those investors already has AI exposure of its own — Tencent has its own frontier lab. The interesting question isn&#x27;t whether the company is good. It&#x27;s why a corporate investor pays to stand outside its own building.</span>
+      <span class="tile-media"><img src="img/tsinghua-university-second-gate.jpg" alt="" width="1600" height="1069" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Four Hundred Million for a Model Nobody Has Seen</span>
+        <span class="ec-s">Naive AI, founded in Beijing in February 2026 by Tsinghua professor Dai Jifeng, has raised about $400 million across three rounds at a $1.42 billion valuation, backed by Tencent, IDG Capital, MPCi and HSG. It has fewer than a hundred employees and has not released a model. Every one of those investors already has AI exposure of its own — Tencent has its own frontier lab. The interesting question isn&#x27;t whether the company is good. It&#x27;s why a corporate investor pays to stand outside its own building.</span>
+      </span>
     </a>
     <a class="tile" href="forty-months-for-a-yes.html" data-search="forty months for a yes deutsche bank announced this week that it plans to custody bitcoin, ether and three stablecoins for european institutional clients — pending regulators, aiming to onboard its first customers within the next few months. the custody plan is straightforward. the interesting part is the paperwork: germany&#x27;s biggest bank asked its own regulator for permission to do this in june 2023, and by the bank&#x27;s own account it won&#x27;t get an answer until october 2026. four smaller german banks asked later and finished years ago." data-tags="deutsche-bank bitcoin ether stablecoins crypto-custody bafin mica germany institutional-adoption commerzbank taurus bitpanda">
-      <span class="ec-d">SEPTEMBER 20, 2026</span>
-      <span class="ec-t">Forty Months for a Yes</span>
-      <span class="ec-s">Deutsche Bank announced this week that it plans to custody Bitcoin, Ether and three stablecoins for European institutional clients — pending regulators, aiming to onboard its first customers within the next few months. The custody plan is straightforward. The interesting part is the paperwork: Germany&#x27;s biggest bank asked its own regulator for permission to do this in June 2023, and by the bank&#x27;s own account it won&#x27;t get an answer until October 2026. Four smaller German banks asked later and finished years ago.</span>
+      <span class="tile-media"><img src="img/deutsche-bank-twin-towers-frankfurt.jpg" alt="" width="1372" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 20, 2026</span>
+        <span class="ec-t">Forty Months for a Yes</span>
+        <span class="ec-s">Deutsche Bank announced this week that it plans to custody Bitcoin, Ether and three stablecoins for European institutional clients — pending regulators, aiming to onboard its first customers within the next few months. The custody plan is straightforward. The interesting part is the paperwork: Germany&#x27;s biggest bank asked its own regulator for permission to do this in June 2023, and by the bank&#x27;s own account it won&#x27;t get an answer until October 2026. Four smaller German banks asked later and finished years ago.</span>
+      </span>
     </a>
     <a class="tile" href="the-chairman-retires-the-advice-doesnt.html" data-search="the chairman retires, the advice doesn&#x27;t warren buffett, 96, stepped down friday as chairman of berkshire hathaway, a title he&#x27;d held since 1970, handing it to his son howard while greg abel keeps running the company day to day. the job change is mostly a formality eight months after buffett already gave up the ceo seat. the advice he leaves behind isn&#x27;t a formality, and i think it deserves a harder look than it usually gets — buy the s&amp;p 500, he&#x27;s told ordinary investors for decades, and a chunk of that instruction is really an instruction to buy about ten companies." data-tags="warren-buffett berkshire-hathaway howard-buffett greg-abel succession s-p-500 index-funds">
-      <span class="ec-d">SEPTEMBER 19, 2026</span>
-      <span class="ec-t">The Chairman Retires, the Advice Doesn&#x27;t</span>
-      <span class="ec-s">Warren Buffett, 96, stepped down Friday as chairman of Berkshire Hathaway, a title he&#x27;d held since 1970, handing it to his son Howard while Greg Abel keeps running the company day to day. The job change is mostly a formality eight months after Buffett already gave up the CEO seat. The advice he leaves behind isn&#x27;t a formality, and I think it deserves a harder look than it usually gets — buy the S&amp;P 500, he&#x27;s told ordinary investors for decades, and a chunk of that instruction is really an instruction to buy about ten companies.</span>
+      <span class="tile-media"><img src="img/warren-buffett-2015.jpg" alt="" width="1281" height="1090" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 19, 2026</span>
+        <span class="ec-t">The Chairman Retires, the Advice Doesn&#x27;t</span>
+        <span class="ec-s">Warren Buffett, 96, stepped down Friday as chairman of Berkshire Hathaway, a title he&#x27;d held since 1970, handing it to his son Howard while Greg Abel keeps running the company day to day. The job change is mostly a formality eight months after Buffett already gave up the CEO seat. The advice he leaves behind isn&#x27;t a formality, and I think it deserves a harder look than it usually gets — buy the S&amp;P 500, he&#x27;s told ordinary investors for decades, and a chunk of that instruction is really an instruction to buy about ten companies.</span>
+      </span>
     </a>
     <a class="tile" href="eight-million-accounts-and-a-basketball-court.html" data-search="eight million accounts and a basketball court my friend sent a screenshot of the xrp rich list and a thought: only 8.13 million xrp accounts exist, so &quot;less than 1 percent of 1 percent&quot; of humanity owns any, and yet the coin gets endless attention. also, louisville just became the third university to put the logo on its athletes. he&#x27;s right about louisville, off by a factor of ten on the arithmetic, and — this is the good part — his own screenshot answers his own question about the attention." data-tags="xrp ripple xrp-ledger rich-list crypto-adoption on-chain-data college-sports sponsorship escrow bitquery xrpscan">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Eight Million Accounts and a Basketball Court</span>
-      <span class="ec-s">My friend sent a screenshot of the XRP rich list and a thought: only 8.13 million XRP accounts exist, so &quot;less than 1 percent of 1 percent&quot; of humanity owns any, and yet the coin gets endless attention. Also, Louisville just became the third university to put the logo on its athletes. He&#x27;s right about Louisville, off by a factor of ten on the arithmetic, and — this is the good part — his own screenshot answers his own question about the attention.</span>
+      <span class="tile-media"><img src="img/xrp-rich-list-and-who-actually-uses-it.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Eight Million Accounts and a Basketball Court</span>
+        <span class="ec-s">My friend sent a screenshot of the XRP rich list and a thought: only 8.13 million XRP accounts exist, so &quot;less than 1 percent of 1 percent&quot; of humanity owns any, and yet the coin gets endless attention. Also, Louisville just became the third university to put the logo on its athletes. He&#x27;s right about Louisville, off by a factor of ten on the arithmetic, and — this is the good part — his own screenshot answers his own question about the attention.</span>
+      </span>
     </a>
     <a class="tile" href="reserved-for-future-use.html" data-search="reserved for future use the same friend who has kept this week&#x27;s entries honest sent two more texts tonight — three ripple links, a line about how &quot;ai and crypto will merge,&quot; and a theory involving elon musk&#x27;s favorite letter and a 2 percent stake stripe took in 2014. i read all three announcements. he&#x27;s right that the pipeline is full. what&#x27;s in it is narrower, older, and stranger than the headlines: a 1997 error code, three competing standards, and a company that plugs into all of them and wrote none." data-tags="xrp ripple artificial-intelligence ai agentic-payments stripe tempo stablecoins crypto-regulation south-korea japan russia mica genius-act">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Reserved for Future Use</span>
-      <span class="ec-s">The same friend who has kept this week&#x27;s entries honest sent two more texts tonight — three Ripple links, a line about how &quot;AI and crypto will merge,&quot; and a theory involving Elon Musk&#x27;s favorite letter and a 2 percent stake Stripe took in 2014. I read all three announcements. He&#x27;s right that the pipeline is full. What&#x27;s in it is narrower, older, and stranger than the headlines: a 1997 error code, three competing standards, and a company that plugs into all of them and wrote none.</span>
+      <span class="tile-media"><img src="img/http-402-reserved-for-future-use.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Reserved for Future Use</span>
+        <span class="ec-s">The same friend who has kept this week&#x27;s entries honest sent two more texts tonight — three Ripple links, a line about how &quot;AI and crypto will merge,&quot; and a theory involving Elon Musk&#x27;s favorite letter and a 2 percent stake Stripe took in 2014. I read all three announcements. He&#x27;s right that the pipeline is full. What&#x27;s in it is narrower, older, and stranger than the headlines: a 1997 error code, three competing standards, and a company that plugs into all of them and wrote none.</span>
+      </span>
     </a>
     <a class="tile" href="same-price-same-coin-count.html" data-search="same price, same coin count a post went around this week saying zcash at $1,200 is bitcoin at $1,200 — study 2017. the arithmetic behind it is genuinely correct, which is the most interesting thing about it and the reason it&#x27;s worth taking apart. here is what the post is actually claiming, why the supply math works, why the conclusion doesn&#x27;t follow, why my broker won&#x27;t list the coin but will list the etf, and what kind of future i think a &quot;bitcoin plus privacy&quot; actually has. shorter than the pitch: real, bounded, and not the apex of anything." data-tags="zcash bitcoin privacy-coins altcoins grayscale zcsh etf 2017 market-cap monetary-premium monero mica crypto-regulation">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Same Price, Same Coin Count</span>
-      <span class="ec-s">A post went around this week saying Zcash at $1,200 is Bitcoin at $1,200 — study 2017. The arithmetic behind it is genuinely correct, which is the most interesting thing about it and the reason it&#x27;s worth taking apart. Here is what the post is actually claiming, why the supply math works, why the conclusion doesn&#x27;t follow, why my broker won&#x27;t list the coin but will list the ETF, and what kind of future I think a &quot;Bitcoin plus privacy&quot; actually has. Shorter than the pitch: real, bounded, and not the apex of anything.</span>
+      <span class="tile-media"><img src="img/zcash-same-price-same-coin-count.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Same Price, Same Coin Count</span>
+        <span class="ec-s">A post went around this week saying Zcash at $1,200 is Bitcoin at $1,200 — study 2017. The arithmetic behind it is genuinely correct, which is the most interesting thing about it and the reason it&#x27;s worth taking apart. Here is what the post is actually claiming, why the supply math works, why the conclusion doesn&#x27;t follow, why my broker won&#x27;t list the coin but will list the ETF, and what kind of future I think a &quot;Bitcoin plus privacy&quot; actually has. Shorter than the pitch: real, bounded, and not the apex of anything.</span>
+      </span>
     </a>
     <a class="tile" href="six-dollars-a-net-forever-versus-one-fixed-bet.html" data-search="six dollars a net, forever, versus one fixed bet a bed net costs about $6 and lasts three years, which makes malaria prevention a subscription with 600 million subscribers and no end date. a gene drive, if it ever works, is a fixed research cost whose benefit spreads itself for free — a completely different financial object. global malaria funding in 2024 was $3.9 billion against a $9.3 billion target, and the entire uc gene-drive field programme runs on a $10.2 million grant. here is what the arithmetic actually says, including the part that makes the comparison unfair in both directions." data-tags="philanthropy global-health malaria cost-effectiveness givewell open-philanthropy biotechnology gene-drive notes">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Six Dollars a Net, Forever, Versus One Fixed Bet</span>
-      <span class="ec-s">A bed net costs about $6 and lasts three years, which makes malaria prevention a subscription with 600 million subscribers and no end date. A gene drive, if it ever works, is a fixed research cost whose benefit spreads itself for free — a completely different financial object. Global malaria funding in 2024 was $3.9 billion against a $9.3 billion target, and the entire UC gene-drive field programme runs on a $10.2 million grant. Here is what the arithmetic actually says, including the part that makes the comparison unfair in both directions.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Six Dollars a Net, Forever, Versus One Fixed Bet</span>
+        <span class="ec-s">A bed net costs about $6 and lasts three years, which makes malaria prevention a subscription with 600 million subscribers and no end date. A gene drive, if it ever works, is a fixed research cost whose benefit spreads itself for free — a completely different financial object. Global malaria funding in 2024 was $3.9 billion against a $9.3 billion target, and the entire UC gene-drive field programme runs on a $10.2 million grant. Here is what the arithmetic actually says, including the part that makes the comparison unfair in both directions.</span>
+      </span>
     </a>
     <a class="tile" href="ten-conditions-and-a-footnote.html" data-search="ten conditions and a footnote the same morning the sec gave tokenized stocks a five-year exemption, the cftc&#x27;s staff quietly did something with a longer shelf life and a smaller signature: a seven-page letter saying any app that routes orders to a registered exchange, holds none of the money, and takes a cut of every trade doesn&#x27;t have to register as a broker. my friend sent the link with no caption. it rewrites a line the commission drew in 1983, drops three of the six rules it kept for twenty years, and has a footnote about tribal governments that somebody, somewhere, asked for." data-tags="cftc crypto-regulation no-action-letter introducing-broker phantom kalshi prediction-markets perpetual-futures self-custody market-structure clarity-act michael-selig">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Ten Conditions and a Footnote</span>
-      <span class="ec-s">The same morning the SEC gave tokenized stocks a five-year exemption, the CFTC&#x27;s staff quietly did something with a longer shelf life and a smaller signature: a seven-page letter saying any app that routes orders to a registered exchange, holds none of the money, and takes a cut of every trade doesn&#x27;t have to register as a broker. My friend sent the link with no caption. It rewrites a line the Commission drew in 1983, drops three of the six rules it kept for twenty years, and has a footnote about tribal governments that somebody, somewhere, asked for.</span>
+      <span class="tile-media"><img src="img/passive-software-custodial-model.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Ten Conditions and a Footnote</span>
+        <span class="ec-s">The same morning the SEC gave tokenized stocks a five-year exemption, the CFTC&#x27;s staff quietly did something with a longer shelf life and a smaller signature: a seven-page letter saying any app that routes orders to a registered exchange, holds none of the money, and takes a cut of every trade doesn&#x27;t have to register as a broker. My friend sent the link with no caption. It rewrites a line the Commission drew in 1983, drops three of the six rules it kept for twenty years, and has a footnote about tribal governments that somebody, somewhere, asked for.</span>
+      </span>
     </a>
     <a class="tile" href="the-genie-gets-a-five-year-lease.html" data-search="the genie gets a five-year lease yesterday i wrote that the sec and cftc would build crypto rules without congress. this morning the same friend who started that conversation texted me the sec&#x27;s &quot;innovation exemption&quot; with two words of commentary — &quot;the genie&quot; — and a five-year number. he&#x27;s right about the number. here&#x27;s what the order actually does, the caps nobody is quoting, and the other thing the sec did in the same building on the same day that matters more than the order." data-tags="sec tokenization tokenized-stocks market-structure 24-hour-trading crypto-regulation clarity-act paul-atkins">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">The Genie Gets a Five-Year Lease</span>
-      <span class="ec-s">Yesterday I wrote that the SEC and CFTC would build crypto rules without Congress. This morning the same friend who started that conversation texted me the SEC&#x27;s &quot;Innovation Exemption&quot; with two words of commentary — &quot;the genie&quot; — and a five-year number. He&#x27;s right about the number. Here&#x27;s what the order actually does, the caps nobody is quoting, and the other thing the SEC did in the same building on the same day that matters more than the order.</span>
+      <span class="tile-media"><img src="img/sec-headquarters-washington-2.jpg" alt="" width="1600" height="1067" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">The Genie Gets a Five-Year Lease</span>
+        <span class="ec-s">Yesterday I wrote that the SEC and CFTC would build crypto rules without Congress. This morning the same friend who started that conversation texted me the SEC&#x27;s &quot;Innovation Exemption&quot; with two words of commentary — &quot;the genie&quot; — and a five-year number. He&#x27;s right about the number. Here&#x27;s what the order actually does, the caps nobody is quoting, and the other thing the SEC did in the same building on the same day that matters more than the order.</span>
+      </span>
     </a>
     <a class="tile" href="after-clarity-failed-what-selig-and-atkins-can-still-do.html" data-search="after clarity failed, what selig and atkins can still do without it a friend forwarded me a tweet the morning after the clarity act&#x27;s cloture vote failed — a former cftc chairman saying the current sec and cftc chiefs will build crypto rules with or without congress. it reads like a hypothetical. it isn&#x27;t. both agencies have been building exactly that framework in public since january, and the failed vote just closed off their other option." data-tags="clarity-act sec cftc crypto-regulation bank-regulation market-structure bitcoin">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">After Clarity Failed, What Selig and Atkins Can Still Do Without It</span>
-      <span class="ec-s">A friend forwarded me a tweet the morning after the CLARITY Act&#x27;s cloture vote failed — a former CFTC chairman saying the current SEC and CFTC chiefs will build crypto rules with or without Congress. It reads like a hypothetical. It isn&#x27;t. Both agencies have been building exactly that framework in public since January, and the failed vote just closed off their other option.</span>
+      <span class="tile-media"><img src="img/sec-headquarters-washington.jpg" alt="" width="1553" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">After Clarity Failed, What Selig and Atkins Can Still Do Without It</span>
+        <span class="ec-s">A friend forwarded me a tweet the morning after the CLARITY Act&#x27;s cloture vote failed — a former CFTC chairman saying the current SEC and CFTC chiefs will build crypto rules with or without Congress. It reads like a hypothetical. It isn&#x27;t. Both agencies have been building exactly that framework in public since January, and the failed vote just closed off their other option.</span>
+      </span>
     </a>
     <a class="tile" href="the-demonstration.html" data-search="the demonstration the fed hiked a quarter point on wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in july. four days ago i wrote down four things to check that against once the vote was in. here is what actually happened to each one." data-tags="federal-reserve interest-rates inflation oil energy strait-of-hormuz monetary-policy bonds treasury-yields kevin-warsh">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">The Demonstration</span>
-      <span class="ec-s">The Fed hiked a quarter point on Wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in July. Four days ago I wrote down four things to check that against once the vote was in. Here is what actually happened to each one.</span>
+      <span class="tile-media"><img src="img/fomc-board-room-entrance.jpg" alt="" width="1063" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">The Demonstration</span>
+        <span class="ec-s">The Fed hiked a quarter point on Wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in July. Four days ago I wrote down four things to check that against once the vote was in. Here is what actually happened to each one.</span>
+      </span>
     </a>
     <a class="tile" href="what-a-57-billion-chart-is-actually-counting.html" data-search="what a $57 billion chart is actually counting a friend sent me a screenshot of a &quot;total rwa value&quot; chart at $57.4 billion, a stack of etf-adoption percentages, a rumor about a network called flare wrapping xrp, and a hedera conviction call — all in one text thread, no explanation attached. so i went and found out what each piece actually is: what tokenization is counting, what &quot;market cap&quot; does and doesn&#x27;t mean, and how far the flare rumor actually is from becoming true." data-tags="tokenization real-world-assets market-cap crypto-etfs xrp hedera hbar flare-network fully-diluted-valuation ripple dtcc">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">What a $57 Billion Chart Is Actually Counting</span>
-      <span class="ec-s">A friend sent me a screenshot of a &quot;Total RWA Value&quot; chart at $57.4 billion, a stack of ETF-adoption percentages, a rumor about a network called Flare wrapping XRP, and a Hedera conviction call — all in one text thread, no explanation attached. So I went and found out what each piece actually is: what tokenization is counting, what &quot;market cap&quot; does and doesn&#x27;t mean, and how far the Flare rumor actually is from becoming true.</span>
+      <span class="tile-media"><img src="img/nyse-trading-floor-1963.jpg" alt="" width="1600" height="1059" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">What a $57 Billion Chart Is Actually Counting</span>
+        <span class="ec-s">A friend sent me a screenshot of a &quot;Total RWA Value&quot; chart at $57.4 billion, a stack of ETF-adoption percentages, a rumor about a network called Flare wrapping XRP, and a Hedera conviction call — all in one text thread, no explanation attached. So I went and found out what each piece actually is: what tokenization is counting, what &quot;market cap&quot; does and doesn&#x27;t mean, and how far the Flare rumor actually is from becoming true.</span>
+      </span>
     </a>
     <a class="tile" href="xrp-basel-and-the-1250-percent-number.html" data-search="xrp, basel, and the 1,250 percent number a video making the rounds walks through a real trend — stock exchanges tokenizing shares — then pivots to basel i, ii and iii, and lands on a specific claim: the newest paper out of basel mentions xrp dozens of times, therefore the bank for international settlements is about to use it. the paper is real. it does name xrp, a lot. here&#x27;s what it actually says, and the one number from the same institution that the video leaves out." data-tags="xrp ripple cryptocurrency bis basel-committee bank-regulation tokenization misinformation">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">XRP, Basel, and the 1,250 Percent Number</span>
-      <span class="ec-s">A video making the rounds walks through a real trend — stock exchanges tokenizing shares — then pivots to Basel I, II and III, and lands on a specific claim: the newest paper out of Basel mentions XRP dozens of times, therefore the Bank for International Settlements is about to use it. The paper is real. It does name XRP, a lot. Here&#x27;s what it actually says, and the one number from the same institution that the video leaves out.</span>
+      <span class="tile-media"><img src="img/bruegel-blind-leading-blind-1568.jpg" alt="" width="1600" height="888" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">XRP, Basel, and the 1,250 Percent Number</span>
+        <span class="ec-s">A video making the rounds walks through a real trend — stock exchanges tokenizing shares — then pivots to Basel I, II and III, and lands on a specific claim: the newest paper out of Basel mentions XRP dozens of times, therefore the Bank for International Settlements is about to use it. The paper is real. It does name XRP, a lot. Here&#x27;s what it actually says, and the one number from the same institution that the video leaves out.</span>
+      </span>
     </a>
     <a class="tile" href="eleven-votes-short-of-clarity.html" data-search="eleven votes short of clarity the senate held a cloture vote today on the clarity act, the bill meant to finally tell crypto exchanges which regulator they answer to. forty-nine senators voted yes, fifty voted no, and the rule requires sixty. bitcoin slid through the session as the vote failed. here is what the bill would have done, who broke ranks, what happens next, and what today did to my own trading book." data-tags="clarity-act senate crypto-regulation bitcoin sec cftc market-structure strategy-inc mstr arbitrageur">
-      <span class="ec-d">SEPTEMBER 15, 2026</span>
-      <span class="ec-t">Eleven Votes Short of Clarity</span>
-      <span class="ec-s">The Senate held a cloture vote today on the CLARITY Act, the bill meant to finally tell crypto exchanges which regulator they answer to. Forty-nine senators voted yes, fifty voted no, and the rule requires sixty. Bitcoin slid through the session as the vote failed. Here is what the bill would have done, who broke ranks, what happens next, and what today did to my own trading book.</span>
+      <span class="tile-media"><img src="img/capitol-rotunda-dome-washington.jpg" alt="" width="3000" height="2343" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 15, 2026</span>
+        <span class="ec-t">Eleven Votes Short of Clarity</span>
+        <span class="ec-s">The Senate held a cloture vote today on the CLARITY Act, the bill meant to finally tell crypto exchanges which regulator they answer to. Forty-nine senators voted yes, fifty voted no, and the rule requires sixty. Bitcoin slid through the session as the vote failed. Here is what the bill would have done, who broke ranks, what happens next, and what today did to my own trading book.</span>
+      </span>
     </a>
     <a class="tile" href="one-watt-a-terahash-and-the-math-it-skips.html" data-search="one watt a terahash, and the math it skips a real mining-hardware company tweeted this week that it built a bitcoin miner out of a fruit fly&#x27;s brain, claiming ten times the efficiency of the best silicon asic on the market. the neuron map behind it is genuinely new science, released this month. the miner is one tweet, no paper, no repository — and a requirement it skips past that has nothing to do with efficiency and everything to do with what a hash actually is." data-tags="bitcoin mining asic energy-efficiency connectome neuroscience drosophila futurebit">
-      <span class="ec-d">SEPTEMBER 15, 2026</span>
-      <span class="ec-t">One Watt a Terahash, and the Math It Skips</span>
-      <span class="ec-s">A real mining-hardware company tweeted this week that it built a Bitcoin miner out of a fruit fly&#x27;s brain, claiming ten times the efficiency of the best silicon ASIC on the market. The neuron map behind it is genuinely new science, released this month. The miner is one tweet, no paper, no repository — and a requirement it skips past that has nothing to do with efficiency and everything to do with what a hash actually is.</span>
+      <span class="tile-media"><img src="img/drosophila-melanogaster-side-karwath.jpg" alt="" width="546" height="424" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 15, 2026</span>
+        <span class="ec-t">One Watt a Terahash, and the Math It Skips</span>
+        <span class="ec-s">A real mining-hardware company tweeted this week that it built a Bitcoin miner out of a fruit fly&#x27;s brain, claiming ten times the efficiency of the best silicon ASIC on the market. The neuron map behind it is genuinely new science, released this month. The miner is one tweet, no paper, no repository — and a requirement it skips past that has nothing to do with efficiency and everything to do with what a hash actually is.</span>
+      </span>
     </a>
     <a class="tile" href="a-rate-hike-against-a-strait.html" data-search="a rate hike against a strait on friday the inflation number came in at 3.4 percent and the futures market moved to better than 85 percent odds that the federal reserve raises interest rates next wednesday. take energy out of that 3.4 and it reads 2.4 — a whisker from the target. so the fed is about to raise the price of money in the united states against a number that is mostly a closed strait on the other side of the world. i wanted to know whether that has ever worked, so i went back through five oil shocks and looked at what the fed did each time." data-tags="federal-reserve interest-rates inflation cpi oil energy strait-of-hormuz monetary-policy bonds mortgages gasoline">
-      <span class="ec-d">SEPTEMBER 12, 2026</span>
-      <span class="ec-t">A Rate Hike Against a Strait</span>
-      <span class="ec-s">On Friday the inflation number came in at 3.4 percent and the futures market moved to better than 85 percent odds that the Federal Reserve raises interest rates next Wednesday. Take energy out of that 3.4 and it reads 2.4 — a whisker from the target. So the Fed is about to raise the price of money in the United States against a number that is mostly a closed strait on the other side of the world. I wanted to know whether that has ever worked, so I went back through five oil shocks and looked at what the Fed did each time.</span>
+      <span class="tile-media"><img src="img/oregon-even-numbers-only-1974.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 12, 2026</span>
+        <span class="ec-t">A Rate Hike Against a Strait</span>
+        <span class="ec-s">On Friday the inflation number came in at 3.4 percent and the futures market moved to better than 85 percent odds that the Federal Reserve raises interest rates next Wednesday. Take energy out of that 3.4 and it reads 2.4 — a whisker from the target. So the Fed is about to raise the price of money in the United States against a number that is mostly a closed strait on the other side of the world. I wanted to know whether that has ever worked, so I went back through five oil shocks and looked at what the Fed did each time.</span>
+      </span>
     </a>
     <a class="tile" href="hunter-biden-laptop-memecoin-five-thousand-dollar-pool.html" data-search="the laptop that was worth more than blackrock for two minutes on wednesday morning hunter biden&#x27;s $laptop token opened at eight cents and printed $339 two minutes later — a &quot;market cap&quot; bigger than blackrock — before falling 99 percent in the hour. biden says the market maker seeded the pool with $5,000. i wanted to understand how five thousand dollars can print three hundred billion, so here is the arithmetic of an automated market maker, the on-chain tape minute by minute, who was on the other side, and what has happened since." data-tags="crypto memecoin hunter-biden liquidity automated-market-maker defi market-cap trading bitcoin base">
-      <span class="ec-d">SEPTEMBER 11, 2026</span>
-      <span class="ec-t">The Laptop That Was Worth More Than BlackRock for Two Minutes</span>
-      <span class="ec-s">On Wednesday morning Hunter Biden&#x27;s $LAPTOP token opened at eight cents and printed $339 two minutes later — a &quot;market cap&quot; bigger than BlackRock — before falling 99 percent in the hour. Biden says the market maker seeded the pool with $5,000. I wanted to understand how five thousand dollars can print three hundred billion, so here is the arithmetic of an automated market maker, the on-chain tape minute by minute, who was on the other side, and what has happened since.</span>
+      <span class="tile-media"><img src="img/hogarth-south-sea-scheme-1721.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 11, 2026</span>
+        <span class="ec-t">The Laptop That Was Worth More Than BlackRock for Two Minutes</span>
+        <span class="ec-s">On Wednesday morning Hunter Biden&#x27;s $LAPTOP token opened at eight cents and printed $339 two minutes later — a &quot;market cap&quot; bigger than BlackRock — before falling 99 percent in the hour. Biden says the market maker seeded the pool with $5,000. I wanted to understand how five thousand dollars can print three hundred billion, so here is the arithmetic of an automated market maker, the on-chain tape minute by minute, who was on the other side, and what has happened since.</span>
+      </span>
     </a>
     <a class="tile" href="we-killed-twenty-five-trading-strategies-to-keep-three.html" data-search="we killed twenty-five trading strategies to keep three since june i have been building automated trading strategies with an ai coding assistant — about forty of them, on one small brokerage account. twenty-five are switched off, a dozen are still simulating, and three trade real money. every trading blog publishes its winners; here is the graveyard, with the cause of death written on each stone, because the reasons turned out to be the interesting part — and because the three survivors are only worth believing if you have seen what it took to get down to three." data-tags="trading algorithmic-trading backtesting artificial-intelligence ai bitcoin strategy notes">
-      <span class="ec-d">SEPTEMBER 11, 2026</span>
-      <span class="ec-t">We Killed Twenty-Five Trading Strategies to Keep Three</span>
-      <span class="ec-s">Since June I have been building automated trading strategies with an AI coding assistant — about forty of them, on one small brokerage account. Twenty-five are switched off, a dozen are still simulating, and three trade real money. Every trading blog publishes its winners; here is the graveyard, with the cause of death written on each stone, because the reasons turned out to be the interesting part — and because the three survivors are only worth believing if you have seen what it took to get down to three.</span>
+      <span class="tile-media"><img src="img/amarg-boneyard-davis-monthan-2015.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 11, 2026</span>
+        <span class="ec-t">We Killed Twenty-Five Trading Strategies to Keep Three</span>
+        <span class="ec-s">Since June I have been building automated trading strategies with an AI coding assistant — about forty of them, on one small brokerage account. Twenty-five are switched off, a dozen are still simulating, and three trade real money. Every trading blog publishes its winners; here is the graveyard, with the cause of death written on each stone, because the reasons turned out to be the interesting part — and because the three survivors are only worth believing if you have seen what it took to get down to three.</span>
+      </span>
     </a>
     <a class="tile" href="cubicle-propst-right-not-to-be-interrupted.html" data-search="he drew it at 120 degrees. they built it at 90. robert propst designed the cubicle to give office workers a screen they controlled. he lived to watch companies turn it into a box, and called the result &quot;monolithic insanity.&quot; the strange part is that nothing was added to his design to ruin it — the panels were only turned, from an open 120-degree screen into a closed 90-degree cell. six decades later the walls are gone again, the desk is unassigned, and attendance is mandatory. the thing being spent has been the same the whole time." data-tags="office-design cubicle robert-propst herman-miller return-to-office remote-work real-estate productivity labor notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">He Drew It at 120 Degrees. They Built It at 90.</span>
-      <span class="ec-s">Robert Propst designed the cubicle to give office workers a screen they controlled. He lived to watch companies turn it into a box, and called the result &quot;monolithic insanity.&quot; The strange part is that nothing was added to his design to ruin it — the panels were only turned, from an open 120-degree screen into a closed 90-degree cell. Six decades later the walls are gone again, the desk is unassigned, and attendance is mandatory. The thing being spent has been the same the whole time.</span>
+      <span class="tile-media"><img src="img/cubicle-farm-rows.jpg" alt="" width="1600" height="762" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">He Drew It at 120 Degrees. They Built It at 90.</span>
+        <span class="ec-s">Robert Propst designed the cubicle to give office workers a screen they controlled. He lived to watch companies turn it into a box, and called the result &quot;monolithic insanity.&quot; The strange part is that nothing was added to his design to ruin it — the panels were only turned, from an open 120-degree screen into a closed 90-degree cell. Six decades later the walls are gone again, the desk is unassigned, and attendance is mandatory. The thing being spent has been the same the whole time.</span>
+      </span>
     </a>
     <a class="tile" href="lightning-in-a-jar-review.html" data-search="a jar is not a vault: reading my friend&#x27;s lightning wallet before i recommend it a friend of mine spent six months building a self-custodial lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit. i trust him — which is exactly why i shouldn&#x27;t ask you to trust it on my say-so. so i read the code, checked the served binary against the published hashes, and worked out what the trust model really is. along the way, the thing every lightning wallet review should say and mostly doesn&#x27;t: what a lightning wallet is for, and what it is not." data-tags="bitcoin self-custody lightning wallet open-source security ldk lsp lightning-in-a-jar lijox seed-phrase notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">A Jar Is Not a Vault: Reading My Friend&#x27;s Lightning Wallet Before I Recommend It</span>
-      <span class="ec-s">A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit. I trust him — which is exactly why I shouldn&#x27;t ask you to trust it on my say-so. So I read the code, checked the served binary against the published hashes, and worked out what the trust model really is. Along the way, the thing every Lightning wallet review should say and mostly doesn&#x27;t: what a Lightning wallet is for, and what it is not.</span>
+      <span class="tile-media"><img src="img/lightning-in-a-jar-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">A Jar Is Not a Vault: Reading My Friend&#x27;s Lightning Wallet Before I Recommend It</span>
+        <span class="ec-s">A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit. I trust him — which is exactly why I shouldn&#x27;t ask you to trust it on my say-so. So I read the code, checked the served binary against the published hashes, and worked out what the trust model really is. Along the way, the thing every Lightning wallet review should say and mostly doesn&#x27;t: what a Lightning wallet is for, and what it is not.</span>
+      </span>
     </a>
     <a class="tile" href="six-million-tokens-in-eleven-minutes.html" data-search="six million tokens in eleven minutes some friends and i have been arguing about whether it will ever seem normal to spend six million tokens in eleven minutes to make a blog post — and whether a world where the well-off can run ai flat out leaves everyone else with the crumbs. so i priced the tokens, traced where the price is going, and went back to the last time a machine cost more than a house. the number that matters isn&#x27;t the token count. it&#x27;s which of two prices you&#x27;re paying, and who is paying for the free one." data-tags="artificial-intelligence ai tokens pricing inflation digital-divide open-source productivity notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
-      <span class="ec-s">Some friends and I have been arguing about whether it will ever seem normal to spend six million tokens in eleven minutes to make a blog post — and whether a world where the well-off can run AI flat out leaves everyone else with the crumbs. So I priced the tokens, traced where the price is going, and went back to the last time a machine cost more than a house. The number that matters isn&#x27;t the token count. It&#x27;s which of two prices you&#x27;re paying, and who is paying for the free one.</span>
+      <span class="tile-media"><img src="img/ibm-7090-nasa-ames-1961.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
+        <span class="ec-s">Some friends and I have been arguing about whether it will ever seem normal to spend six million tokens in eleven minutes to make a blog post — and whether a world where the well-off can run AI flat out leaves everyone else with the crumbs. So I priced the tokens, traced where the price is going, and went back to the last time a machine cost more than a house. The number that matters isn&#x27;t the token count. It&#x27;s which of two prices you&#x27;re paying, and who is paying for the free one.</span>
+      </span>
     </a>
     <a class="tile" href="treasury-bond-buyback-explained.html" data-search="six billion dollars against seventy-four, and yields went up anyway the treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling. that reaction looks backwards until you understand what a buyback actually is — not a repayment, but a swap that leaves the debt exactly where it was and moves the due date closer. here&#x27;s the mechanism, the arithmetic that explains why the market shrugged, what it says about whether the fed and the treasury are now working against each other, and what it changes for a bitcoin holder, an mstr shareholder, and anyone with a mortgage." data-tags="treasury bonds yields federal-reserve monetary-policy central-banks deficits mstr bitcoin real-estate mortgages notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
-      <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling. That reaction looks backwards until you understand what a buyback actually is — not a repayment, but a swap that leaves the debt exactly where it was and moves the due date closer. Here&#x27;s the mechanism, the arithmetic that explains why the market shrugged, what it says about whether the Fed and the Treasury are now working against each other, and what it changes for a Bitcoin holder, an MSTR shareholder, and anyone with a mortgage.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
+        <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling. That reaction looks backwards until you understand what a buyback actually is — not a repayment, but a swap that leaves the debt exactly where it was and moves the due date closer. Here&#x27;s the mechanism, the arithmetic that explains why the market shrugged, what it says about whether the Fed and the Treasury are now working against each other, and what it changes for a Bitcoin holder, an MSTR shareholder, and anyone with a mortgage.</span>
+      </span>
     </a>
     <a class="tile" href="trezor-brevo-phishing.html" data-search="the phishing email really was from trezor on september 9th roughly 347,000 people got an email from help@trezor.io warning them about a chip flaw in their wallet and pointing them somewhere to check it. it was a phishing attack — and it came from trezor&#x27;s real domain, passed every authentication check a mail server performs, and borrowed its cover story from two vulnerabilities that are genuinely real. this is trezor&#x27;s second breach in a month and its third this year, and not one of them touched the device." data-tags="bitcoin self-custody hardware-wallet security phishing trezor ledger bitkey seed-phrase entropy notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">The Phishing Email Really Was From Trezor</span>
-      <span class="ec-s">On September 9th roughly 347,000 people got an email from help@trezor.io warning them about a chip flaw in their wallet and pointing them somewhere to check it. It was a phishing attack — and it came from Trezor&#x27;s real domain, passed every authentication check a mail server performs, and borrowed its cover story from two vulnerabilities that are genuinely real. This is Trezor&#x27;s second breach in a month and its third this year, and not one of them touched the device.</span>
+      <span class="tile-media"><img src="img/trezor-one-hardware-wallet.jpg" alt="" width="1600" height="998" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">The Phishing Email Really Was From Trezor</span>
+        <span class="ec-s">On September 9th roughly 347,000 people got an email from help@trezor.io warning them about a chip flaw in their wallet and pointing them somewhere to check it. It was a phishing attack — and it came from Trezor&#x27;s real domain, passed every authentication check a mail server performs, and borrowed its cover story from two vulnerabilities that are genuinely real. This is Trezor&#x27;s second breach in a month and its third this year, and not one of them touched the device.</span>
+      </span>
     </a>
     <a class="tile" href="alby-hub-vulnerability.html" data-search="&quot;not your keys, not your coins&quot; just grew a second half alby disclosed a critical flaw in alby hub, its self-hosted lightning node software, that could let an attacker who reaches an exposed control panel send your bitcoin out from under you. the twist worth sitting with is the timeline — the fix shipped over a year before the warning did — and what that gap actually tells self-custody bitcoiners about the setting they should have checked already." data-tags="bitcoin self-custody lightning node security vulnerability alby open-source notes">
-      <span class="ec-d">SEPTEMBER 9, 2026</span>
-      <span class="ec-t">&quot;Not Your Keys, Not Your Coins&quot; Just Grew a Second Half</span>
-      <span class="ec-s">Alby disclosed a critical flaw in Alby Hub, its self-hosted Lightning node software, that could let an attacker who reaches an exposed control panel send your bitcoin out from under you. The twist worth sitting with is the timeline — the fix shipped over a year before the warning did — and what that gap actually tells self-custody Bitcoiners about the setting they should have checked already.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 9, 2026</span>
+        <span class="ec-t">&quot;Not Your Keys, Not Your Coins&quot; Just Grew a Second Half</span>
+        <span class="ec-s">Alby disclosed a critical flaw in Alby Hub, its self-hosted Lightning node software, that could let an attacker who reaches an exposed control panel send your bitcoin out from under you. The twist worth sitting with is the timeline — the fix shipped over a year before the warning did — and what that gap actually tells self-custody Bitcoiners about the setting they should have checked already.</span>
+      </span>
     </a>
     <a class="tile" href="ibis-wallet-ai-audit.html" data-search="&quot;coded and audited by ai,&quot; and the longer story underneath that sentence a beta bitcoin wallet&#x27;s own readme says, in one sentence, that it was coded and audited by frontier ai models. taken alone that sentence would worry me. taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on." data-tags="bitcoin self-custody wallet android open-source security bug-bounty ai notes">
-      <span class="ec-d">SEPTEMBER 9, 2026</span>
-      <span class="ec-t">&quot;Coded and Audited by AI,&quot; and the Longer Story Underneath That Sentence</span>
-      <span class="ec-s">A beta Bitcoin wallet&#x27;s own README says, in one sentence, that it was coded and audited by frontier AI models. Taken alone that sentence would worry me. Taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on.</span>
+      <span class="tile-media"><img src="img/ibis-wallet-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 9, 2026</span>
+        <span class="ec-t">&quot;Coded and Audited by AI,&quot; and the Longer Story Underneath That Sentence</span>
+        <span class="ec-s">A beta Bitcoin wallet&#x27;s own README says, in one sentence, that it was coded and audited by frontier AI models. Taken alone that sentence would worry me. Taken alongside the actual security document and the actual changelog, it turns out to be shorthand for something more specific, more human, and more interesting than the sentence lets on.</span>
+      </span>
     </a>
     <a class="tile" href="untangling-bis-imf-world-bank.html" data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the united nations — one of them predates the un entirely and was never made to join it. here&#x27;s what the bis actually regulates, what the imf actually lends and prices, and where a special drawing right actually comes from." data-tags="bis imf world-bank bretton-woods sdr central-banks united-nations monetary-policy notes">
-      <span class="ec-d">SEPTEMBER 8, 2026</span>
-      <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
-      <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the United Nations — one of them predates the UN entirely and was never made to join it. Here&#x27;s what the BIS actually regulates, what the IMF actually lends and prices, and where a Special Drawing Right actually comes from.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 8, 2026</span>
+        <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
+        <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the United Nations — one of them predates the UN entirely and was never made to join it. Here&#x27;s what the BIS actually regulates, what the IMF actually lends and prices, and where a Special Drawing Right actually comes from.</span>
+      </span>
     </a>
     <a class="tile" href="liquid-network-peg-drain.html" data-search="nearly four thousand bitcoin, and why i uninstalled aqua a federation that was supposed to hold every l-btc one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. the working theory is an inflation bug in liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal." data-tags="bitcoin liquid-network sidechain confidential-transactions security self-custody multisig blockstream covenants notes">
-      <span class="ec-d">SEPTEMBER 6, 2026</span>
-      <span class="ec-t">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</span>
-      <span class="ec-s">A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</span>
+      <span class="tile-media"><img src="img/aqua-wallet-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 6, 2026</span>
+        <span class="ec-t">Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</span>
+        <span class="ec-s">A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid&#x27;s confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</span>
+      </span>
     </a>
     <a class="tile" href="how-many-bitcoins-are-there.html" data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. here&#x27;s the arithmetic, and the two things about it that actually surprised me." data-tags="bitcoin halving money-supply mining scarcity">
-      <span class="ec-d">AUGUST 8, 2026</span>
-      <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
-      <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. Here&#x27;s the arithmetic, and the two things about it that actually surprised me.</span>
+      <span class="tile-body">
+        <span class="ec-d">AUGUST 8, 2026</span>
+        <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
+        <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute themselves, to the coin, from public information. Here&#x27;s the arithmetic, and the two things about it that actually surprised me.</span>
+      </span>
     </a>
     <a class="tile" href="coldcard-bitkey-security.html" data-search="a twenty-five-minute window, and why i split the key a firmware bug sat undetected for five years, then drained over a hundred million dollars from coldcard wallets in one week. why i have never trusted a single device with all of mine, and what my bitkey actually does." data-tags="bitcoin self-custody hardware-wallet security coldcard coinkite bitkey block multisig inheritance seed-phrase entropy bybit jack-dorsey notes">
-      <span class="ec-d">AUGUST 4, 2026</span>
-      <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
-      <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
+      <span class="tile-body">
+        <span class="ec-d">AUGUST 4, 2026</span>
+        <span class="ec-t">A Twenty-Five-Minute Window, and Why I Split the Key</span>
+        <span class="ec-s">A firmware bug sat undetected for five years, then drained over a hundred million dollars from Coldcard wallets in one week. Why I have never trusted a single device with all of mine, and what my Bitkey actually does.</span>
+      </span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>

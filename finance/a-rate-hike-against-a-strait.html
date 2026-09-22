@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -806,24 +809,34 @@ find out in a hurry what "looking through" was supposed to mean.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="the-demonstration.html" data-search="the demonstration the fed hiked a quarter point on wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in july." data-tags="federal-reserve interest-rates inflation oil energy strait-of-hormuz monetary-policy bonds treasury-yields kevin-warsh">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">The Demonstration</span>
-      <span class="ec-s">The Fed hiked a quarter point on Wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in July.</span>
+      <span class="tile-media"><img src="img/fomc-board-room-entrance.jpg" alt="" width="1063" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">The Demonstration</span>
+        <span class="ec-s">The Fed hiked a quarter point on Wednesday, 12 to 0 — unanimous, from a committee that voted 9 to 3 to hold in July.</span>
+      </span>
     </a>
     <a class="tile" href="treasury-bond-buyback-explained.html" data-search="six billion dollars against seventy-four, and yields went up anyway the treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling." data-tags="treasury bonds yields federal-reserve monetary-policy central-banks deficits mstr bitcoin real-estate mortgages notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
-      <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling.</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Billion Dollars Against Seventy-Four, and Yields Went Up Anyway</span>
+        <span class="ec-s">The Treasury tripled its next bond buyback to $6 billion, and long-term interest rates rose on the news instead of falling.</span>
+      </span>
     </a>
     <a class="tile" href="six-million-tokens-in-eleven-minutes.html" data-search="six million tokens in eleven minutes will burning six million tokens on a blog post ever seem normal? i priced it, traced where the price is going, and asked who pays for the free tier." data-tags="artificial-intelligence ai tokens pricing inflation digital-divide open-source productivity notes">
-      <span class="ec-d">SEPTEMBER 10, 2026</span>
-      <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
-      <span class="ec-s">Will burning six million tokens on a blog post ever seem normal? I priced it, traced where the price is going, and asked who pays for the free tier.</span>
+      <span class="tile-media"><img src="img/ibm-7090-nasa-ames-1961.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">Six Million Tokens in Eleven Minutes</span>
+        <span class="ec-s">Will burning six million tokens on a blog post ever seem normal? I priced it, traced where the price is going, and asked who pays for the free tier.</span>
+      </span>
     </a>
     <a class="tile" href="untangling-bis-imf-world-bank.html" data-search="older than the united nations, and never asked to join three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…" data-tags="bis imf world-bank bretton-woods sdr central-banks united-nations monetary-policy notes">
-      <span class="ec-d">SEPTEMBER 8, 2026</span>
-      <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
-      <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…</span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 8, 2026</span>
+        <span class="ec-t">Older Than the United Nations, and Never Asked to Join</span>
+        <span class="ec-s">Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different…</span>
+      </span>
     </a>
     </div>
   </section>

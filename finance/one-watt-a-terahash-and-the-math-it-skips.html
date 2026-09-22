@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -778,24 +781,35 @@ keep it</a> — is going to keep doing that with silicon, not with a fly.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="how-many-bitcoins-are-there.html" data-search="how many bitcoins are there, exactly? gold and silver&#x27;s numbers on the board above are genuine estimates. bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute…" data-tags="bitcoin halving money-supply mining scarcity">
-      <span class="ec-d">AUGUST 8, 2026</span>
-      <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
-      <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute…</span>
+      <span class="tile-body">
+        <span class="ec-d">AUGUST 8, 2026</span>
+        <span class="ec-t">How Many Bitcoins Are There, Exactly?</span>
+        <span class="ec-s">Gold and silver&#x27;s numbers on the board above are genuine estimates. Bitcoin&#x27;s supply turns out not to be a guess at all — it&#x27;s a fact anyone can compute…</span>
+      </span>
     </a>
     <a class="tile" href="forty-months-for-a-yes.html" data-search="forty months for a yes deutsche bank plans bitcoin, ether and stablecoin custody in 2026 — filed with bafin in 2023, while four smaller german banks got licensed first." data-tags="deutsche-bank bitcoin ether stablecoins crypto-custody bafin mica germany institutional-adoption commerzbank taurus bitpanda">
-      <span class="ec-d">SEPTEMBER 20, 2026</span>
-      <span class="ec-t">Forty Months for a Yes</span>
-      <span class="ec-s">Deutsche Bank plans Bitcoin, Ether and stablecoin custody in 2026 — filed with BaFin in 2023, while four smaller German banks got licensed first.</span>
+      <span class="tile-media"><img src="img/deutsche-bank-twin-towers-frankfurt.jpg" alt="" width="1372" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 20, 2026</span>
+        <span class="ec-t">Forty Months for a Yes</span>
+        <span class="ec-s">Deutsche Bank plans Bitcoin, Ether and stablecoin custody in 2026 — filed with BaFin in 2023, while four smaller German banks got licensed first.</span>
+      </span>
     </a>
     <a class="tile" href="same-price-same-coin-count.html" data-search="same price, same coin count zcash at $1,200 really is bitcoin at $1,200 in market-cap terms. why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where zec actually goes." data-tags="zcash bitcoin privacy-coins altcoins grayscale zcsh etf 2017 market-cap monetary-premium monero mica crypto-regulation">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Same Price, Same Coin Count</span>
-      <span class="ec-s">Zcash at $1,200 really is Bitcoin at $1,200 in market-cap terms. Why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where ZEC actually goes.</span>
+      <span class="tile-media"><img src="img/zcash-same-price-same-coin-count.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Same Price, Same Coin Count</span>
+        <span class="ec-s">Zcash at $1,200 really is Bitcoin at $1,200 in market-cap terms. Why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where ZEC actually goes.</span>
+      </span>
     </a>
     <a class="tile" href="after-clarity-failed-what-selig-and-atkins-can-still-do.html" data-search="after clarity failed, what selig and atkins can still do without it a former cftc chair says the sec and cftc can regulate crypto without congress. they&#x27;ve been doing it in public since january — here&#x27;s the paper trail." data-tags="clarity-act sec cftc crypto-regulation bank-regulation market-structure bitcoin">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">After Clarity Failed, What Selig and Atkins Can Still Do Without It</span>
-      <span class="ec-s">A former CFTC chair says the SEC and CFTC can regulate crypto without Congress. They&#x27;ve been doing it in public since January — here&#x27;s the paper trail.</span>
+      <span class="tile-media"><img src="img/sec-headquarters-washington.jpg" alt="" width="1553" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">After Clarity Failed, What Selig and Atkins Can Still Do Without It</span>
+        <span class="ec-s">A former CFTC chair says the SEC and CFTC can regulate crypto without Congress. They&#x27;ve been doing it in public since January — here&#x27;s the paper trail.</span>
+      </span>
     </a>
     </div>
   </section>

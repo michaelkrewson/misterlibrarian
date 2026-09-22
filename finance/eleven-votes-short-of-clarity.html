@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -741,24 +744,36 @@ but the more consequential one for anything priced on regulatory certainty arriv
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="after-clarity-failed-what-selig-and-atkins-can-still-do.html" data-search="after clarity failed, what selig and atkins can still do without it a former cftc chair says the sec and cftc can regulate crypto without congress. they&#x27;ve been doing it in public since january — here&#x27;s the paper trail." data-tags="clarity-act sec cftc crypto-regulation bank-regulation market-structure bitcoin">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">After Clarity Failed, What Selig and Atkins Can Still Do Without It</span>
-      <span class="ec-s">A former CFTC chair says the SEC and CFTC can regulate crypto without Congress. They&#x27;ve been doing it in public since January — here&#x27;s the paper trail.</span>
+      <span class="tile-media"><img src="img/sec-headquarters-washington.jpg" alt="" width="1553" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">After Clarity Failed, What Selig and Atkins Can Still Do Without It</span>
+        <span class="ec-s">A former CFTC chair says the SEC and CFTC can regulate crypto without Congress. They&#x27;ve been doing it in public since January — here&#x27;s the paper trail.</span>
+      </span>
     </a>
     <a class="tile" href="ten-conditions-and-a-footnote.html" data-search="ten conditions and a footnote cftc staff letter 26-25: any app can route perps and event contracts to a registered exchange, take a per-trade cut, and skip broker registration." data-tags="cftc crypto-regulation no-action-letter introducing-broker phantom kalshi prediction-markets perpetual-futures self-custody market-structure clarity-act michael-selig">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Ten Conditions and a Footnote</span>
-      <span class="ec-s">CFTC Staff Letter 26-25: any app can route perps and event contracts to a registered exchange, take a per-trade cut, and skip broker registration.</span>
+      <span class="tile-media"><img src="img/passive-software-custodial-model.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Ten Conditions and a Footnote</span>
+        <span class="ec-s">CFTC Staff Letter 26-25: any app can route perps and event contracts to a registered exchange, take a per-trade cut, and skip broker registration.</span>
+      </span>
     </a>
     <a class="tile" href="the-genie-gets-a-five-year-lease.html" data-search="the genie gets a five-year lease the sec’s innovation exemption lets tokenized stocks trade on-chain for five years: the caps, the issuer veto, and the same-day 24-hour trading roundtable." data-tags="sec tokenization tokenized-stocks market-structure 24-hour-trading crypto-regulation clarity-act paul-atkins">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">The Genie Gets a Five-Year Lease</span>
-      <span class="ec-s">The SEC’s Innovation Exemption lets tokenized stocks trade on-chain for five years: the caps, the issuer veto, and the same-day 24-hour trading roundtable.</span>
+      <span class="tile-media"><img src="img/sec-headquarters-washington-2.jpg" alt="" width="1600" height="1067" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">The Genie Gets a Five-Year Lease</span>
+        <span class="ec-s">The SEC’s Innovation Exemption lets tokenized stocks trade on-chain for five years: the caps, the issuer veto, and the same-day 24-hour trading roundtable.</span>
+      </span>
     </a>
     <a class="tile" href="same-price-same-coin-count.html" data-search="same price, same coin count zcash at $1,200 really is bitcoin at $1,200 in market-cap terms. why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where zec actually goes." data-tags="zcash bitcoin privacy-coins altcoins grayscale zcsh etf 2017 market-cap monetary-premium monero mica crypto-regulation">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Same Price, Same Coin Count</span>
-      <span class="ec-s">Zcash at $1,200 really is Bitcoin at $1,200 in market-cap terms. Why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where ZEC actually goes.</span>
+      <span class="tile-media"><img src="img/zcash-same-price-same-coin-count.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Same Price, Same Coin Count</span>
+        <span class="ec-s">Zcash at $1,200 really is Bitcoin at $1,200 in market-cap terms. Why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where ZEC actually goes.</span>
+      </span>
     </a>
     </div>
   </section>

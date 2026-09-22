@@ -1090,7 +1090,8 @@ def _related_block(e, pool):
         _tile(_front_item(href=o["file"],
                           label=blogkit.pretty_date(o["date"]).upper(),
                           title=o["title"], desc=_entry_desc(o),
-                          date=o["date"], tags=o.get("tags", ())))
+                          date=o["date"], tags=o.get("tags", ()),
+                          hero=o.get("hero", "")))
         for o in picks)
     return ('  <section class="readnext">\n'
             '    <h2>Keep reading</h2>\n'
@@ -1362,7 +1363,7 @@ def _entry_card(e):
 _WS_RE = re.compile(r"\s+")
 
 
-def _front_item(*, href, label, title, desc, date, board=False, tags=()):
+def _front_item(*, href, label, title, desc, date, board=False, tags=(), hero=""):
     """One thing eligible to appear on the front page — an entry or a
     standing page — in the single shape both `_tile` and `_archive_row`
     render from. Keeping entries and standing pages in the same shape,
@@ -1379,9 +1380,13 @@ def _front_item(*, href, label, title, desc, date, board=False, tags=()):
     topic the way an entry is, so it carries no chip and naturally drops
     out of view the instant the front-page tag filter is active (an empty
     `data-tags` never matches an active tag), same as any untagged item
-    would."""
+    would.
+
+    `hero` is an entry's own hero-image filename (in finance/img/), if any
+    — `_tile` leads the card with it, banner-style. Always empty for a
+    board tile; a data board has no hero photo to reuse."""
     return {"href": href, "label": label, "title": title, "desc": desc,
-            "board": board, "date": date, "tags": list(tags),
+            "board": board, "date": date, "tags": list(tags), "hero": hero,
             "search": _WS_RE.sub(" ", (title + " " + desc).lower()).strip()}
 
 
@@ -1408,14 +1413,27 @@ def _tile(item):
     visible tag pills inside the tile itself — the whole tile is already one
     `<a>`, and nesting a second clickable pill inside it would be invalid,
     unreliably-clickable HTML; a reader reaches a tag either via the filter
-    bar above or the real chips on the entry page itself."""
+    bar above or the real chips on the entry page itself. When the entry has
+    a hero image, a full-width 16:9 crop of that same photo (never a
+    separate/stock image) leads the card — the same banner treatment The
+    Librarian Abroad's cards use (and now the Notebook's and the Regimen's),
+    reusing the hero file directly rather than a generated derivative. A
+    board tile never has one — it renders text-only, same as before."""
     cls = "tile board-card" if item["board"] else "tile"
     data_tags = " ".join(blogkit.tag_slug(t) for t in item["tags"])
+    media = ""
+    if item["hero"]:
+        dims = blogkit.dim_attrs(os.path.join(OUT, "img"), item["hero"])
+        media = ('      <span class="tile-media"><img src="img/%s" alt=""%s '
+                  'loading="lazy"/></span>\n' % (esc(item["hero"]), dims))
     return ('    <a class="%s" href="%s" data-search="%s" data-tags="%s">\n'
-            '      <span class="ec-d">%s</span>\n'
-            '      <span class="ec-t">%s</span>\n'
-            '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (cls, esc(item["href"]), esc(item["search"]), esc(data_tags),
+            '%s'
+            '      <span class="tile-body">\n'
+            '        <span class="ec-d">%s</span>\n'
+            '        <span class="ec-t">%s</span>\n'
+            '        <span class="ec-s">%s</span>\n'
+            '      </span>\n'
+            '    </a>' % (cls, esc(item["href"]), esc(item["search"]), esc(data_tags), media,
                           esc(item["label"]), esc(item["title"]), esc(item["desc"])))
 
 
@@ -1711,7 +1729,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
 
     pool += [_front_item(href=e["file"], label=blogkit.pretty_date(e["date"]).upper(),
                          title=e["title"], desc=e["summary"], date=e["date"],
-                         tags=e["tags"]) for e in entries]
+                         tags=e["tags"], hero=e["hero"]) for e in entries]
 
     # Ascending on this transformed key == newest date first, entry-before-
     # board on a tie (see docstring) — no reverse=True, which would also
@@ -2348,11 +2366,14 @@ a{color:__ACCENT__}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }

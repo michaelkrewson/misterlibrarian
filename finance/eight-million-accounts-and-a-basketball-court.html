@@ -368,11 +368,14 @@ a{color:#f7931a}
    as one ever-growing list. See FRONT_TILE_LIMIT / build_front. */
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -807,24 +810,36 @@ isn't a mystery. It's a business model.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="reserved-for-future-use.html" data-search="reserved for future use ripple&#x27;s three ai announcements, the 1997 error code behind &quot;xrp joins stripe&#x27;s standard,&quot; stripe&#x27;s stellar stake, and who really leads on crypto rules." data-tags="xrp ripple artificial-intelligence ai agentic-payments stripe tempo stablecoins crypto-regulation south-korea japan russia mica genius-act">
-      <span class="ec-d">SEPTEMBER 17, 2026</span>
-      <span class="ec-t">Reserved for Future Use</span>
-      <span class="ec-s">Ripple&#x27;s three AI announcements, the 1997 error code behind &quot;XRP joins Stripe&#x27;s standard,&quot; Stripe&#x27;s Stellar stake, and who really leads on crypto rules.</span>
+      <span class="tile-media"><img src="img/http-402-reserved-for-future-use.svg" alt="" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 17, 2026</span>
+        <span class="ec-t">Reserved for Future Use</span>
+        <span class="ec-s">Ripple&#x27;s three AI announcements, the 1997 error code behind &quot;XRP joins Stripe&#x27;s standard,&quot; Stripe&#x27;s Stellar stake, and who really leads on crypto rules.</span>
+      </span>
     </a>
     <a class="tile" href="what-a-57-billion-chart-is-actually-counting.html" data-search="what a $57 billion chart is actually counting a friend&#x27;s texts cited a $57b rwa chart, crypto etf percentages, a flare/xrp rumor and an hbar bet. here&#x27;s what each claim actually checks out to." data-tags="tokenization real-world-assets market-cap crypto-etfs xrp hedera hbar flare-network fully-diluted-valuation ripple dtcc">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">What a $57 Billion Chart Is Actually Counting</span>
-      <span class="ec-s">A friend&#x27;s texts cited a $57B RWA chart, crypto ETF percentages, a Flare/XRP rumor and an HBAR bet. Here&#x27;s what each claim actually checks out to.</span>
+      <span class="tile-media"><img src="img/nyse-trading-floor-1963.jpg" alt="" width="1600" height="1059" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">What a $57 Billion Chart Is Actually Counting</span>
+        <span class="ec-s">A friend&#x27;s texts cited a $57B RWA chart, crypto ETF percentages, a Flare/XRP rumor and an HBAR bet. Here&#x27;s what each claim actually checks out to.</span>
+      </span>
     </a>
     <a class="tile" href="xrp-basel-and-the-1250-percent-number.html" data-search="xrp, basel, and the 1,250 percent number a video claims the newest basel paper&#x27;s many xrp mentions mean bis is adopting it. the paper is real — here&#x27;s what it says, and the number the video skips." data-tags="xrp ripple cryptocurrency bis basel-committee bank-regulation tokenization misinformation">
-      <span class="ec-d">SEPTEMBER 16, 2026</span>
-      <span class="ec-t">XRP, Basel, and the 1,250 Percent Number</span>
-      <span class="ec-s">A video claims the newest Basel paper&#x27;s many XRP mentions mean BIS is adopting it. The paper is real — here&#x27;s what it says, and the number the video skips.</span>
+      <span class="tile-media"><img src="img/bruegel-blind-leading-blind-1568.jpg" alt="" width="1600" height="888" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 16, 2026</span>
+        <span class="ec-t">XRP, Basel, and the 1,250 Percent Number</span>
+        <span class="ec-s">A video claims the newest Basel paper&#x27;s many XRP mentions mean BIS is adopting it. The paper is real — here&#x27;s what it says, and the number the video skips.</span>
+      </span>
     </a>
     <a class="tile" href="eleven-percent-for-a-hole-in-glass.html" data-search="eleven percent for a hole in glass intel rose about 11% on a report it will build micro led glass-substrate packaging with au optronics. what that actually means." data-tags="intel au-optronics auo co-packaged-optics advanced-packaging glass-substrates micro-led semiconductors ai-datacenters intel-foundry taiwan">
-      <span class="ec-d">SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Eleven Percent for a Hole in Glass</span>
-      <span class="ec-s">Intel rose about 11% on a report it will build Micro LED glass-substrate packaging with AU Optronics. What that actually means.</span>
+      <span class="tile-media"><img src="img/auo-taichung-central-taiwan-science-park.jpg" alt="" width="1600" height="1199" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Eleven Percent for a Hole in Glass</span>
+        <span class="ec-s">Intel rose about 11% on a report it will build Micro LED glass-substrate packaging with AU Optronics. What that actually means.</span>
+      </span>
     </a>
     </div>
   </section>
