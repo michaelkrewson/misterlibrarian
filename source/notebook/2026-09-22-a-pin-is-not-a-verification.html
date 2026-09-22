@@ -4,6 +4,9 @@ section: technology
 tags: Plugin4Shell, AI coding agents, Claude Code, Codex, GitHub Copilot, Gemini CLI, supply chain security, git, vulnerability disclosure, AIR Security
 summary: AIR Security disclosed "Plugin4Shell" on September 17, 2026 — a zero-click flaw in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI that let a hijacked git branch silently swap in different code than the one a plugin manifest had pinned by commit hash. OpenAI's own four-line patch note describes the whole bug: nobody checked what git actually checked out.
 meta_desc: Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who's patched.
+hero: pin-tumbler-unlocked.jpg
+hero_alt: A cutaway diagram of a pin tumbler lock shown in the unlocked position, with the key inserted and each spring-loaded pin pushed to align exactly at the shear line
+hero_credit: Wapcaplet and Mats Halldin, dual-licensed GFDL / CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Pin_tumbler_unlocked.png" rel="noopener" target="_blank">Wikimedia Commons</a>.
 ---
 
 <p>On September 17, 2026, the AI-agent security firm AIR Security disclosed "Plugin4Shell" — a zero-click vulnerability in the plugin systems of four AI coding agents: Claude Code, OpenAI Codex, GitHub Copilot, and Gemini CLI. All four let a developer extend the agent with third-party plugins pulled from a git repository, and all four let the plugin's manifest pin that plugin to an exact commit — a 40-character SHA hash — specifically so a marketplace listing can't be swapped for something else after it's been reviewed. Plugin4Shell broke that promise: under the right conditions, the agent would report that it had checked out the pinned commit while a different one sat on disk.</p>

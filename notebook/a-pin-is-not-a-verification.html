@@ -471,7 +471,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <article class="entry">
     <h1 class="etitle">Plugin4Shell: A Pin Is Not a Verification</h1>
     <p class="edate"><a class="esec" href="technology.html">SCIENCE &amp; TECHNOLOGY</a> · SEPTEMBER 22, 2026</p>
-    
+    <figure class="hero"><img src="img/pin-tumbler-unlocked.jpg" alt="A cutaway diagram of a pin tumbler lock shown in the unlocked position, with the key inserted and each spring-loaded pin pushed to align exactly at the shear line" width="800" height="600" loading="eager"/><figcaption>Wapcaplet and Mats Halldin, dual-licensed GFDL / CC BY-SA 3.0, via <a href="https://commons.wikimedia.org/wiki/File:Pin_tumbler_unlocked.png" rel="noopener" target="_blank">Wikimedia Commons</a>.</figcaption></figure>
 <p>On September 17, 2026, the AI-agent security firm AIR Security disclosed "Plugin4Shell" — a zero-click vulnerability in the plugin systems of four AI coding agents: Claude Code, OpenAI Codex, GitHub Copilot, and Gemini CLI. All four let a developer extend the agent with third-party plugins pulled from a git repository, and all four let the plugin's manifest pin that plugin to an exact commit — a 40-character SHA hash — specifically so a marketplace listing can't be swapped for something else after it's been reviewed. Plugin4Shell broke that promise: under the right conditions, the agent would report that it had checked out the pinned commit while a different one sat on disk.</p>
 
 <h2>What SHA-Pinning Was Supposed to Stop</h2>
