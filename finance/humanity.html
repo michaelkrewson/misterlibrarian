@@ -424,6 +424,30 @@ a{color:#f7931a}
 .sb-s{margin:0 0 16px;color:#a9b7c9;font-size:14.5px;line-height:1.6}
 .sb-btn{display:inline-block;flex:none;min-width:160px}
 
+/* ── the subscribe modal every .subscribe-trigger opens (2026-09-21) ──────
+   Substack's own /embed iframe is a fixed white box with no theming hook —
+   wrong rendered inline in the page flow against this site's dark palette,
+   but fine as a small floating card over a dimmed backdrop, which is what
+   this gives it. `hidden` (the HTML attribute the script toggles) is what
+   keeps it invisible; no extra display rule needed for that half. */
+.submodal{position:fixed;inset:0;z-index:999;display:flex;
+  align-items:center;justify-content:center;padding:16px}
+.submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
+.submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
+  animation:submodal-in .15s ease-out}
+.submodal-card iframe{display:block;width:480px;max-width:100%;height:380px;
+  border:0;border-radius:14px}
+.submodal-close{position:absolute;top:-14px;right:-14px;z-index:2;
+  width:32px;height:32px;border:0;border-radius:999px;
+  background:#0a111c;border:1px solid #1b2534;color:#e8eef7;
+  font-size:20px;line-height:1;cursor:pointer}
+.submodal-close:hover{background:#131e2e}
+@keyframes submodal-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .submodal-card{animation:none}
+}
+
 /* ── the archive list — the LIST view of the same pool the tiles show ───── */
 /* No longer scoped to `.panel ul.archive` — the list used to only ever
    appear inside the Archive panel; now it's a bare alternate view sitting
@@ -614,12 +638,12 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
   <p class="bblede hblede">Every person alive, set against a currency that cannot print more of itself. The world’s population keeps growing; Bitcoin’s supply is capped at 21 million coins and most of it is already mined — so every birth divides a fixed pie a little thinner. Here is what that looks like in the actual numbers.</p>
   <blockquote class="hbquote">“It might make sense just to get some in case it catches on. If enough people think the same way, that becomes a self fulfilling prophecy.”<cite>— Satoshi Nakamoto, January 2009, days after the first bitcoin transaction</cite></blockquote>
   <p class="hbstamp"><span class="hbdot" id="hbDot"></span><span id="hbLive">live</span><span><span class="hbsep">·</span> block 968,054 <span class="hbsep">·</span> population model anchored June 25, 2026</span></p>
-  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,248,370,933</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,087,622 BTC</div><div class="hbbox-s">95.66% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,534</span> <span class="hbmuted" id="hbSppUsd">($210.49)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
+  <div class="hbherogrid"><div class="hbbox"><div class="hbbox-l">World population</div><div class="hbbox-v" id="hbPop" style="color:#22d3ee">8,248,371,733</div><div class="hbbox-s">extrapolated · +2.18/sec</div></div><div class="hbbox"><div class="hbbox-l">Bitcoin issued</div><div class="hbbox-v" id="hbIssued" style="color:#f7931a">20,087,622 BTC</div><div class="hbbox-s">95.66% of the 21 million cap</div></div><div class="hbbox"><div class="hbbox-l">Satoshis per person on Earth</div><div class="hbbox-v" style="color:#22d3ee"><span id="hbSpp">243,534</span> <span class="hbmuted" id="hbSppUsd">($210.49)</span></div><div class="hbbox-s">issued supply ÷ world population, live</div></div></div>
   <p class="hbaside">Even that "issued" figure overstates what can ever be spent: <a href="https://blockchair.com/bitcoin/block/501726" rel="noopener" target="_blank">block 501,726</a>, mined December 30, 2017, has a coinbase transaction that claims 0 BTC instead of the 12.5 BTC subsidy then in effect — an entirely empty block, its reward destroyed by whatever mining bug produced it. That satoshi will never exist. The 21 million cap this page computes from the halving schedule is Bitcoin’s theoretical ceiling; the real one is smaller still, and no one can ever put it back.</p>
   <section class="hbc hbwide">
     <h2>Satoshis per person on Earth — over time</h2>
     <p class="hbnote">Computed from Bitcoin’s halving schedule and the population model above, month by month since 2020. Halvings marked; the last point is today’s real issued supply.</p>
-    <svg viewBox="0 0 600 150" style="width:100%;height:auto;display:block" role="img" aria-label="Satoshis issued per person on Earth, 2020 to present"><line x1="56" y1="114.7" x2="584" y2="114.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="118.2" text-anchor="end" font-size="8" fill="#475569">225,500</text><line x1="56" y1="87.7" x2="584" y2="87.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="91.2" text-anchor="end" font-size="8" fill="#475569">231,000</text><line x1="56" y1="60.6" x2="584" y2="60.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="64.1" text-anchor="end" font-size="8" fill="#475569">236,500</text><line x1="56" y1="33.6" x2="584" y2="33.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="37.1" text-anchor="end" font-size="8" fill="#475569">242,000</text><line x1="84.2" y1="12" x2="84.2" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="84.2" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">3rd halving</text><line x1="393.7" y1="12" x2="393.7" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="393.7" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">4th halving</text><polyline points="56.0,104.0 62.7,101.3 68.9,98.8 75.6,96.1 82.0,93.5 88.7,90.9 95.1,88.3 101.8,85.6 108.5,83.0 114.9,80.4 121.6,77.8 128.0,75.2 134.7,72.9 141.3,72.0 147.4,71.2 154.0,70.3 160.5,69.5 167.1,68.6 173.6,67.7 180.3,66.8 186.9,65.9 193.4,65.1 200.0,64.2 206.5,63.4 213.2,62.5 219.8,61.6 225.8,60.8 232.5,60.0 238.9,59.1 245.6,58.2 252.1,57.4 258.7,56.5 265.4,55.7 271.8,54.8 278.5,54.0 285.0,53.1 291.6,52.3 298.3,51.4 304.3,50.6 311.0,49.8 317.4,48.9 324.1,48.1 330.5,47.3 337.2,46.4 343.9,45.6 350.3,44.7 357.0,43.9 363.4,43.1 370.1,42.2 376.8,41.4 383.0,40.6 389.6,39.7 396.1,38.9 402.8,38.1 409.2,37.3 415.9,36.4 422.5,35.6 429.0,34.8 435.7,33.9 442.1,33.1 448.8,32.5 455.4,32.6 461.5,32.6 468.1,32.6 474.6,32.6 481.2,32.6 487.7,32.6 494.3,32.6 501.0,32.6 507.5,32.6 514.1,32.7 520.6,32.7 527.2,32.7 533.9,32.7 539.9,32.7 546.6,32.7 553.0,32.7 559.7,32.7 566.1,32.7 572.8,32.8 584.0,26.0" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="584.0" cy="26.0" r="3.5" fill="#22d3ee"/><text x="577.0" y="20.0" text-anchor="end" font-size="9" fill="#22d3ee" font-weight="700">243,534</text><circle cx="396.1" cy="38.9" r="2.5" fill="none" stroke="#f7931a" stroke-width="1.5"/><text x="401.1" y="41.9" font-size="7.5" fill="rgba(247,147,26,.75)">peak 240,913</text><text x="56.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2020</text><text x="134.7" y="131" text-anchor="middle" font-size="8" fill="#475569">2021</text><text x="213.2" y="131" text-anchor="middle" font-size="8" fill="#475569">2022</text><text x="291.6" y="131" text-anchor="middle" font-size="8" fill="#475569">2023</text><text x="370.1" y="131" text-anchor="middle" font-size="8" fill="#475569">2024</text><text x="448.8" y="131" text-anchor="middle" font-size="8" fill="#475569">2025</text><text x="527.2" y="131" text-anchor="middle" font-size="8" fill="#475569">2026</text></svg>
+    <svg viewBox="0 0 600 150" style="width:100%;height:auto;display:block" role="img" aria-label="Satoshis issued per person on Earth, 2020 to present"><line x1="56" y1="114.7" x2="584" y2="114.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="118.2" text-anchor="end" font-size="8" fill="#475569">225,500</text><line x1="56" y1="87.7" x2="584" y2="87.7" stroke="#fff" stroke-opacity=".05"/><text x="52" y="91.2" text-anchor="end" font-size="8" fill="#475569">231,000</text><line x1="56" y1="60.6" x2="584" y2="60.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="64.1" text-anchor="end" font-size="8" fill="#475569">236,500</text><line x1="56" y1="33.6" x2="584" y2="33.6" stroke="#fff" stroke-opacity=".05"/><text x="52" y="37.1" text-anchor="end" font-size="8" fill="#475569">242,000</text><line x1="84.2" y1="12" x2="84.2" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="84.2" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">3rd halving</text><line x1="393.7" y1="12" x2="393.7" y2="118" stroke="#f7931a" stroke-opacity=".4" stroke-dasharray="3,3"/><text x="393.7" y="21" text-anchor="middle" font-size="7.5" fill="rgba(247,147,26,.7)">4th halving</text><polyline points="56.0,104.0 62.7,101.3 68.9,98.8 75.6,96.1 82.0,93.5 88.7,90.9 95.1,88.3 101.8,85.6 108.5,83.0 114.9,80.4 121.6,77.8 128.0,75.2 134.7,72.9 141.3,72.0 147.4,71.2 154.0,70.3 160.5,69.5 167.1,68.6 173.6,67.7 180.3,66.8 186.9,65.9 193.4,65.1 200.0,64.2 206.5,63.4 213.2,62.5 219.8,61.6 225.8,60.8 232.5,60.0 238.9,59.1 245.6,58.2 252.1,57.4 258.7,56.5 265.4,55.7 271.8,54.8 278.5,54.0 285.0,53.1 291.6,52.3 298.3,51.4 304.3,50.6 311.0,49.8 317.4,48.9 324.1,48.1 330.5,47.3 337.2,46.4 343.9,45.6 350.3,44.7 357.0,43.9 363.4,43.1 370.1,42.2 376.7,41.4 383.0,40.6 389.6,39.7 396.1,38.9 402.8,38.1 409.2,37.3 415.9,36.4 422.5,35.6 429.0,34.8 435.7,33.9 442.1,33.1 448.8,32.5 455.4,32.6 461.5,32.6 468.1,32.6 474.6,32.6 481.2,32.6 487.7,32.6 494.3,32.6 501.0,32.6 507.5,32.6 514.1,32.7 520.6,32.7 527.2,32.7 533.9,32.7 539.9,32.7 546.6,32.7 553.0,32.7 559.7,32.7 566.1,32.7 572.8,32.8 584.0,26.0" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="584.0" cy="26.0" r="3.5" fill="#22d3ee"/><text x="577.0" y="20.0" text-anchor="end" font-size="9" fill="#22d3ee" font-weight="700">243,534</text><circle cx="396.1" cy="38.9" r="2.5" fill="none" stroke="#f7931a" stroke-width="1.5"/><text x="401.1" y="41.9" font-size="7.5" fill="rgba(247,147,26,.75)">peak 240,913</text><text x="56.0" y="131" text-anchor="middle" font-size="8" fill="#475569">2020</text><text x="134.7" y="131" text-anchor="middle" font-size="8" fill="#475569">2021</text><text x="213.2" y="131" text-anchor="middle" font-size="8" fill="#475569">2022</text><text x="291.6" y="131" text-anchor="middle" font-size="8" fill="#475569">2023</text><text x="370.1" y="131" text-anchor="middle" font-size="8" fill="#475569">2024</text><text x="448.8" y="131" text-anchor="middle" font-size="8" fill="#475569">2025</text><text x="527.2" y="131" text-anchor="middle" font-size="8" fill="#475569">2026</text></svg>
 <div class="hbstrip"><div class="hbchip"><div class="hbchip-l">1D</div><div class="hbchip-v" style="color:#22d3ee">+1,372</div></div><div class="hbchip"><div class="hbchip-l">1M</div><div class="hbchip-v" style="color:#22d3ee">+1,370</div></div><div class="hbchip"><div class="hbchip-l">1Y</div><div class="hbchip-v" style="color:#22d3ee">+1,345</div></div><div class="hbchip"><div class="hbchip-l">3Y</div><div class="hbchip-v" style="color:#22d3ee">+3,848</div></div><div class="hbchip"><div class="hbchip-l">5Y</div><div class="hbchip-v" style="color:#22d3ee">+7,990</div></div></div>
   </section>  <section class="hbc hbwide hbfeature">
     <h2>If all the world’s wealth were Bitcoin</h2>
@@ -665,7 +689,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     sale.</p>
   </div>
 <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Bitcoin%20vs.%20Humanity%3A%0A%0Ahttps%3A//mistertranslation.com/finance/humanity.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/humanity.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
-  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-humanity-html">👁 <span id="hits-finance-humanity-html-n">—</span> views</span>
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-humanity-html">👁 <span id="hits-finance-humanity-html-n">—</span> views</span>
 <script>
 (function(){
   fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Fhumanity.html.json")
@@ -679,7 +703,40 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       var el = document.getElementById("hits-finance-humanity-html"); if (el) el.style.display = "none";
     });
 })();
-</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer>
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
+     aria-label="Subscribe to The Librarian's Ledger">
+  <div class="submodal-backdrop"></div>
+  <div class="submodal-card">
+    <button type="button" class="submodal-close" aria-label="Close">&times;</button>
+    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var modal = document.getElementById('submodal');
+  if (!modal) return;
+  var iframe = modal.querySelector('iframe');
+  var embedSrc = "https://misterlibrarian.substack.com/embed";
+  function open(e){
+    if (e) e.preventDefault();
+    if (!iframe.src) iframe.src = embedSrc;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.subscribe-trigger').forEach(function(t){
+    t.addEventListener('click', open);
+  });
+  modal.querySelector('.submodal-close').addEventListener('click', close);
+  modal.querySelector('.submodal-backdrop').addEventListener('click', close);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
+})();
+</script>
 </div>
 <script>
 

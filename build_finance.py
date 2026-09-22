@@ -177,11 +177,20 @@ ACCENT = "#f7931a"
 
 # The Ledger's email list (2026-09-21) — a Substack publication used ONLY as a
 # mailing list + subscribe page, not as a second place this blog gets written.
-# Nothing is embedded from it (no iframe, no script) — just a plain outbound
-# link, same "works with JS off, nothing tracked by this box itself" posture
-# as the rest of the site's links (see _comment_box's X links). See
-# _subscribe_box() and privacy.html §5.
+# See _subscribe_box() and privacy.html §5.
+#
+# ⚡ 2026-09-21 — every "Subscribe" trigger opens SUBSTACK_EMBED_URL in an
+# on-page modal (see _subscribe_modal()) rather than navigating away, so the
+# reader never leaves the article. Substack's own /embed iframe is a fixed
+# white box with no theming hook — it would clash badly rendered inline in
+# the page flow against this site's dark palette, but reads fine as a small
+# floating card over a dimmed backdrop, which is what the modal gives it.
+# The underlying <a href=SUBSTACK_SUBSCRIBE_URL> is kept as the real,
+# JS-off fallback (same "works with JS off" posture as the rest of the
+# site's forms) — the iframe itself is only ever requested lazily, on the
+# first actual click, never preloaded on every pageview.
 SUBSTACK_SUBSCRIBE_URL = "https://misterlibrarian.substack.com/subscribe"
+SUBSTACK_EMBED_URL = "https://misterlibrarian.substack.com/embed"
 
 # Monogram colours for anything with no cached logo. Picked by name hash so a given
 # company always gets the same one.
@@ -836,9 +845,9 @@ def _foot(hits_path=None):
             '<a href="money-worldwide.html">Money Worldwide</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
             '<a href="feed.xml">RSS</a> · '
-            '<a href="%s" target="_blank" rel="noopener">Subscribe by email</a> · %s · '
-            'nothing here is investment advice%s%s</footer>'
-            % (esc(SITE_NAME), SUBSTACK_SUBSCRIBE_URL, sibs, hits_bit, _legal()))
+            '<a href="%s" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · %s · '
+            'nothing here is investment advice%s%s</footer>%s'
+            % (esc(SITE_NAME), SUBSTACK_SUBSCRIBE_URL, sibs, hits_bit, _legal(), _subscribe_modal()))
 
 
 def _shell_hits_path(url):
@@ -1128,20 +1137,69 @@ BOARD_PROMOS = (
 def _subscribe_box():
     """A quiet pitch for the Ledger's free Substack list (2026-09-21).
 
-    Reuses .respond-btn-primary rather than inventing a second button style,
-    and links straight to Substack's own subscribe page rather than embedding
-    Substack's iframe widget — that iframe ships as a fixed white box with no
-    theming hook, which would fight this site's dark palette, and every other
-    call-to-action here (the X comment buttons) is already a plain outbound
-    link rather than embedded third-party markup. No email address is
-    collected by this site; see privacy.html §5."""
+    Reuses .respond-btn-primary rather than inventing a second button style.
+    The button is a real <a href=SUBSTACK_SUBSCRIBE_URL> (works with JS off,
+    same posture as the rest of the site's forms) carrying `subscribe-trigger`
+    — _subscribe_modal()'s script intercepts any element with that class and
+    opens the embed in an on-page modal instead. No email address is
+    collected by this site itself; see privacy.html §5."""
     return ('<aside class="subbox">'
             '<p class="sb-k">Free email list</p>'
             '<p class="sb-t">Get new Ledger entries by email</p>'
             '<p class="sb-s">No spam, no fixed schedule — just an email when something new goes up.</p>'
-            '<a class="respond-btn respond-btn-primary sb-btn" href="%s" target="_blank" '
-            'rel="noopener">Subscribe</a>'
+            '<a class="respond-btn respond-btn-primary sb-btn subscribe-trigger" href="%s" '
+            'target="_blank" rel="noopener">Subscribe</a>'
             '</aside>' % SUBSTACK_SUBSCRIBE_URL)
+
+
+def _subscribe_modal():
+    """The one on-page modal every 'Subscribe' trigger opens into (2026-09-21).
+
+    Rendered ONCE per page — called from _foot(), which both build paths
+    (build_entry_page's hand-rolled template and every _shell()-based page)
+    already call exactly once, so this rides along for free instead of
+    needing a third call site threaded through both templates.
+
+    The iframe's `src` is set lazily by the script, on the first actual
+    click — never preloaded on every pageview, so a reader who never opens
+    the modal never causes a request to Substack at all. `hidden` (the plain
+    HTML attribute, not a class) is what keeps this invisible before JS
+    runs; the trigger's own real href is the fallback if JS never runs.
+    """
+    return ("""<div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
+     aria-label="Subscribe to The Librarian's Ledger">
+  <div class="submodal-backdrop"></div>
+  <div class="submodal-card">
+    <button type="button" class="submodal-close" aria-label="Close">&times;</button>
+    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var modal = document.getElementById('submodal');
+  if (!modal) return;
+  var iframe = modal.querySelector('iframe');
+  var embedSrc = %(embed)s;
+  function open(e){
+    if (e) e.preventDefault();
+    if (!iframe.src) iframe.src = embedSrc;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.subscribe-trigger').forEach(function(t){
+    t.addEventListener('click', open);
+  });
+  modal.querySelector('.submodal-close').addEventListener('click', close);
+  modal.querySelector('.submodal-backdrop').addEventListener('click', close);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
+})();
+</script>""" % {"embed": json.dumps(SUBSTACK_EMBED_URL)})
 
 
 def _board_promo(e):
@@ -2316,6 +2374,30 @@ a{color:__ACCENT__}
 .sb-t{margin:0 0 6px;color:#e8eef7;font-size:19px;line-height:1.3;font-weight:400}
 .sb-s{margin:0 0 16px;color:#a9b7c9;font-size:14.5px;line-height:1.6}
 .sb-btn{display:inline-block;flex:none;min-width:160px}
+
+/* ── the subscribe modal every .subscribe-trigger opens (2026-09-21) ──────
+   Substack's own /embed iframe is a fixed white box with no theming hook —
+   wrong rendered inline in the page flow against this site's dark palette,
+   but fine as a small floating card over a dimmed backdrop, which is what
+   this gives it. `hidden` (the HTML attribute the script toggles) is what
+   keeps it invisible; no extra display rule needed for that half. */
+.submodal{position:fixed;inset:0;z-index:999;display:flex;
+  align-items:center;justify-content:center;padding:16px}
+.submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
+.submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
+  animation:submodal-in .15s ease-out}
+.submodal-card iframe{display:block;width:480px;max-width:100%;height:380px;
+  border:0;border-radius:14px}
+.submodal-close{position:absolute;top:-14px;right:-14px;z-index:2;
+  width:32px;height:32px;border:0;border-radius:999px;
+  background:#0a111c;border:1px solid #1b2534;color:#e8eef7;
+  font-size:20px;line-height:1;cursor:pointer}
+.submodal-close:hover{background:#131e2e}
+@keyframes submodal-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .submodal-card{animation:none}
+}
 
 /* ── the archive list — the LIST view of the same pool the tiles show ───── */
 /* No longer scoped to `.panel ul.archive` — the list used to only ever
