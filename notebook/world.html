@@ -351,18 +351,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
-  background:#111a28}
-.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
-.tile-body{flex:1;min-width:0}
-@media (max-width:480px){
-  .tile-media{width:60px;height:60px}
-}
+.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
+  overflow:hidden;background:#111a28}
+.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -485,94 +481,70 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile" href="why-the-washington-supreme-court-struck-down-i-2066.html" data-search="why the washington supreme court struck down i-2066 on september 17, 2026, a divided washington supreme court ruled initiative 2066 — the natural gas measure two million washingtonians approved in 2024 — unconstitutional in its entirety. what the ruling actually says, what i-2066 actually did, what the dissent argued, and which justices from the ruling are actually on this november&#x27;s ballot." data-tags="washington-state i-2066 natural-gas washington-supreme-court ballot-initiatives single-subject-rule judicial-elections energy-policy">
-      <span class="tile-media"><img src="img/thumb/wa-temple-of-justice.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 22, 2026</span>
-        <span class="ec-t">Why the Washington Supreme Court Struck Down I-2066</span>
-        <span class="ec-s">On September 17, 2026, a divided Washington Supreme Court ruled Initiative 2066 — the natural gas measure two million Washingtonians approved in 2024 — unconstitutional in its entirety. What the ruling actually says, what I-2066 actually did, what the dissent argued, and which justices from the ruling are actually on this November&#x27;s ballot.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 22, 2026</span>
+      <span class="ec-t">Why the Washington Supreme Court Struck Down I-2066</span>
+      <span class="tile-thumb"><img src="img/thumb/wa-temple-of-justice.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">On September 17, 2026, a divided Washington Supreme Court ruled Initiative 2066 — the natural gas measure two million Washingtonians approved in 2024 — unconstitutional in its entirety. What the ruling actually says, what I-2066 actually did, what the dissent argued, and which justices from the ruling are actually on this November&#x27;s ballot.</span>
     </a>
     <a class="tile" href="nobody-wanted-to-go-first.html" data-search="nobody wanted to go first when the un&#x27;s 81st general assembly opens its general debate on september 22, brazil&#x27;s president speaks first, as every brazilian president has, on and off, since the late 1940s. the standard one-line explanation — &quot;a tradition dating to 1955&quot; — is true, but it skips the six years in between when the honor actually changed hands three times." data-tags="united-nations brazil general-assembly diplomacy protocol lula-da-silva history">
-      <span class="tile-media"><img src="img/thumb/un-general-assembly-hall.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 21, 2026</span>
-        <span class="ec-t">Nobody Wanted to Go First</span>
-        <span class="ec-s">When the UN&#x27;s 81st General Assembly opens its general debate on September 22, Brazil&#x27;s president speaks first, as every Brazilian president has, on and off, since the late 1940s. The standard one-line explanation — &quot;a tradition dating to 1955&quot; — is true, but it skips the six years in between when the honor actually changed hands three times.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 21, 2026</span>
+      <span class="ec-t">Nobody Wanted to Go First</span>
+      <span class="tile-thumb"><img src="img/thumb/un-general-assembly-hall.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">When the UN&#x27;s 81st General Assembly opens its general debate on September 22, Brazil&#x27;s president speaks first, as every Brazilian president has, on and off, since the late 1940s. The standard one-line explanation — &quot;a tradition dating to 1955&quot; — is true, but it skips the six years in between when the honor actually changed hands three times.</span>
     </a>
     <a class="tile" href="the-rundown-2026-09-21.html" data-search="the rundown — september 21, 2026 14 stories across world, bitcoin &amp; crypto, technology, science, health &amp; medicine, arts &amp; culture, tracked on september 21, 2026." data-tags="rundown">
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 21, 2026</span>
-        <span class="ec-t">The Rundown — September 21, 2026</span>
-        <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Health &amp; medicine, Arts &amp; culture, tracked on September 21, 2026.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 21, 2026</span>
+      <span class="ec-t">The Rundown — September 21, 2026</span>
+      <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Health &amp; medicine, Arts &amp; culture, tracked on September 21, 2026.</span>
     </a>
     <a class="tile" href="the-rundown-2026-09-20.html" data-search="the rundown — september 20, 2026 14 stories across world, bitcoin &amp; crypto, technology, science, space, health &amp; medicine, tracked on september 20, 2026." data-tags="rundown">
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 20, 2026</span>
-        <span class="ec-t">The Rundown — September 20, 2026</span>
-        <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Space, Health &amp; medicine, tracked on September 20, 2026.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 20, 2026</span>
+      <span class="ec-t">The Rundown — September 20, 2026</span>
+      <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Space, Health &amp; medicine, tracked on September 20, 2026.</span>
     </a>
     <a class="tile" href="the-rundown-2026-09-19.html" data-search="the rundown — september 19, 2026 11 stories across business &amp; markets, bitcoin &amp; crypto, technology, science, world, health &amp; medicine, tracked on september 19, 2026." data-tags="rundown">
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 19, 2026</span>
-        <span class="ec-t">The Rundown — September 19, 2026</span>
-        <span class="ec-s">11 stories across Business &amp; markets, Bitcoin &amp; crypto, Technology, Science, World, Health &amp; medicine, tracked on September 19, 2026.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 19, 2026</span>
+      <span class="ec-t">The Rundown — September 19, 2026</span>
+      <span class="ec-s">11 stories across Business &amp; markets, Bitcoin &amp; crypto, Technology, Science, World, Health &amp; medicine, tracked on September 19, 2026.</span>
     </a>
     <a class="tile" href="the-rundown-2026-09-18.html" data-search="the rundown — september 18, 2026 12 stories across macro &amp; markets, bitcoin &amp; crypto, technology, science, world, arts &amp; culture, tracked on september 18, 2026." data-tags="rundown">
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 18, 2026</span>
-        <span class="ec-t">The Rundown — September 18, 2026</span>
-        <span class="ec-s">12 stories across Macro &amp; markets, Bitcoin &amp; crypto, Technology, Science, World, Arts &amp; culture, tracked on September 18, 2026.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 18, 2026</span>
+      <span class="ec-t">The Rundown — September 18, 2026</span>
+      <span class="ec-s">12 stories across Macro &amp; markets, Bitcoin &amp; crypto, Technology, Science, World, Arts &amp; culture, tracked on September 18, 2026.</span>
     </a>
     <a class="tile" href="the-rundown-2026-09-17.html" data-search="the rundown — september 17, 2026 13 stories across macro &amp; markets, bitcoin &amp; crypto, artificial intelligence, science, world, health &amp; medicine, tracked on september 17, 2026." data-tags="rundown">
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 17, 2026</span>
-        <span class="ec-t">The Rundown — September 17, 2026</span>
-        <span class="ec-s">13 stories across Macro &amp; markets, Bitcoin &amp; crypto, Artificial intelligence, Science, World, Health &amp; medicine, tracked on September 17, 2026.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 17, 2026</span>
+      <span class="ec-t">The Rundown — September 17, 2026</span>
+      <span class="ec-s">13 stories across Macro &amp; markets, Bitcoin &amp; crypto, Artificial intelligence, Science, World, Health &amp; medicine, tracked on September 17, 2026.</span>
     </a>
     <a class="tile" href="the-summer-of-truth-and-the-things-with-dates.html" data-search="the summer of truth, and the things with dates ursula von der leyen&#x27;s 2026 state of the union names a war on the continent, a closed strait of hormuz that has cost europe €90 billion, a €1-billion-a-day trade deficit with china and a russian drone attack in leipzig — and the two proposals that leave the hall with a date attached are a heatwave plan and a ban on social media for children. i counted the words, read the whole thing, and here is what i think, as someone who doesn&#x27;t get a vote." data-tags="european-union von-der-leyen state-of-the-union strasbourg ukraine strait-of-hormuz energy china social-media children climate geopolitics opinion">
-      <span class="tile-media"><img src="img/thumb/strasbourg-hemicycle.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 17, 2026</span>
-        <span class="ec-t">The Summer of Truth, and the Things With Dates</span>
-        <span class="ec-s">Ursula von der Leyen&#x27;s 2026 State of the Union names a war on the continent, a closed Strait of Hormuz that has cost Europe €90 billion, a €1-billion-a-day trade deficit with China and a Russian drone attack in Leipzig — and the two proposals that leave the hall with a date attached are a Heatwave Plan and a ban on social media for children. I counted the words, read the whole thing, and here is what I think, as someone who doesn&#x27;t get a vote.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 17, 2026</span>
+      <span class="ec-t">The Summer of Truth, and the Things With Dates</span>
+      <span class="tile-thumb"><img src="img/thumb/strasbourg-hemicycle.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Ursula von der Leyen&#x27;s 2026 State of the Union names a war on the continent, a closed Strait of Hormuz that has cost Europe €90 billion, a €1-billion-a-day trade deficit with China and a Russian drone attack in Leipzig — and the two proposals that leave the hall with a date attached are a Heatwave Plan and a ban on social media for children. I counted the words, read the whole thing, and here is what I think, as someone who doesn&#x27;t get a vote.</span>
     </a>
     <a class="tile" href="the-rundown-2026-09-16.html" data-search="the rundown — september 16, 2026 10 stories across macro &amp; markets, bitcoin &amp; crypto, artificial intelligence, science, space, tracked on september 16, 2026." data-tags="rundown">
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 16, 2026</span>
-        <span class="ec-t">The Rundown — September 16, 2026</span>
-        <span class="ec-s">10 stories across Macro &amp; markets, Bitcoin &amp; crypto, Artificial intelligence, Science, Space, tracked on September 16, 2026.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 16, 2026</span>
+      <span class="ec-t">The Rundown — September 16, 2026</span>
+      <span class="ec-s">10 stories across Macro &amp; markets, Bitcoin &amp; crypto, Artificial intelligence, Science, Space, tracked on September 16, 2026.</span>
     </a>
     <a class="tile" href="the-same-barrel.html" data-search="the same barrel costco started rationing motor oil this week, a first in its history — two boxes of its own kirkland signature synthetic per member, per week. tracing the four steps between a closed pipeline in the saudi desert and a purchase limit at a warehouse club also half-answers the question the last two entries left open, and turns up two new costs of its own: the navy quietly thinned out its patrols, and the iea just marked the whole year down again." data-tags="oil energy strait-of-hormuz saudi-arabia lubricants base-oil costco iran geopolitics supply-chains">
-      <span class="tile-media"><img src="img/thumb/valvoline-worlds-first-motor-oil-can.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
-        <span class="ec-t">The Same Barrel</span>
-        <span class="ec-s">Costco started rationing motor oil this week, a first in its history — two boxes of its own Kirkland Signature synthetic per member, per week. Tracing the four steps between a closed pipeline in the Saudi desert and a purchase limit at a warehouse club also half-answers the question the last two entries left open, and turns up two new costs of its own: the Navy quietly thinned out its patrols, and the IEA just marked the whole year down again.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
+      <span class="ec-t">The Same Barrel</span>
+      <span class="tile-thumb"><img src="img/thumb/valvoline-worlds-first-motor-oil-can.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Costco started rationing motor oil this week, a first in its history — two boxes of its own Kirkland Signature synthetic per member, per week. Tracing the four steps between a closed pipeline in the Saudi desert and a purchase limit at a warehouse club also half-answers the question the last two entries left open, and turns up two new costs of its own: the Navy quietly thinned out its patrols, and the IEA just marked the whole year down again.</span>
     </a>
     <a class="tile" href="the-other-door.html" data-search="the other door yesterday i wrote that the east–west pipeline was saudi arabia&#x27;s escape valve around a closed strait of hormuz. in the same forty-eight hours the drones hit the pipeline&#x27;s inlet, iran-backed houthis took mokha and perim island — the door at the bottom of the red sea that the pipeline&#x27;s oil sails out through. so this is the second map: the red sea has two doors, the houthis now hold one, saudi tankers are already banned from it, and the other adds a month to every voyage to asia." data-tags="oil energy red-sea bab-el-mandeb houthis yemen saudi-arabia strait-of-hormuz geopolitics shipping maps">
-      <span class="tile-media"><img src="img/thumb/perim-island-bab-el-mandeb.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">The Other Door</span>
-        <span class="ec-s">Yesterday I wrote that the East–West pipeline was Saudi Arabia&#x27;s escape valve around a closed Strait of Hormuz. In the same forty-eight hours the drones hit the pipeline&#x27;s inlet, Iran-backed Houthis took Mokha and Perim island — the door at the bottom of the Red Sea that the pipeline&#x27;s oil sails out through. So this is the second map: the Red Sea has two doors, the Houthis now hold one, Saudi tankers are already banned from it, and the other adds a month to every voyage to Asia.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Other Door</span>
+      <span class="tile-thumb"><img src="img/thumb/perim-island-bab-el-mandeb.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Yesterday I wrote that the East–West pipeline was Saudi Arabia&#x27;s escape valve around a closed Strait of Hormuz. In the same forty-eight hours the drones hit the pipeline&#x27;s inlet, Iran-backed Houthis took Mokha and Perim island — the door at the bottom of the Red Sea that the pipeline&#x27;s oil sails out through. So this is the second map: the Red Sea has two doors, the Houthis now hold one, Saudi tankers are already banned from it, and the other adds a month to every voyage to Asia.</span>
     </a>
     <a class="tile" href="the-escape-valve.html" data-search="the escape valve yesterday somebody flew drones into the pumping stations of saudi arabia&#x27;s east–west pipeline, and the smoke was visible from orbit. i sat on the other side of the planet asking the obvious questions — how much of the world&#x27;s oil is actually not flowing, who wins, who loses, will the navies go in, and what a person like me can do about any of it. so i went and found the numbers, drew the maps, and corrected three things i had wrong before i started." data-tags="oil energy strait-of-hormuz saudi-arabia iran iraq geopolitics shipping russia venezuela maps">
-      <span class="tile-media"><img src="img/thumb/east-west-pipeline-plume-2026-09-10.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 11, 2026</span>
-        <span class="ec-t">The Escape Valve</span>
-        <span class="ec-s">Yesterday somebody flew drones into the pumping stations of Saudi Arabia&#x27;s East–West pipeline, and the smoke was visible from orbit. I sat on the other side of the planet asking the obvious questions — how much of the world&#x27;s oil is actually not flowing, who wins, who loses, will the navies go in, and what a person like me can do about any of it. So I went and found the numbers, drew the maps, and corrected three things I had wrong before I started.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 11, 2026</span>
+      <span class="ec-t">The Escape Valve</span>
+      <span class="tile-thumb"><img src="img/thumb/east-west-pipeline-plume-2026-09-10.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Yesterday somebody flew drones into the pumping stations of Saudi Arabia&#x27;s East–West pipeline, and the smoke was visible from orbit. I sat on the other side of the planet asking the obvious questions — how much of the world&#x27;s oil is actually not flowing, who wins, who loses, will the navies go in, and what a person like me can do about any of it. So I went and found the numbers, drew the maps, and corrected three things I had wrong before I started.</span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>

@@ -351,18 +351,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
-  background:#111a28}
-.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
-.tile-body{flex:1;min-width:0}
-@media (max-width:480px){
-  .tile-media{width:60px;height:60px}
-}
+.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
+  overflow:hidden;background:#111a28}
+.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -485,28 +481,22 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile" href="escape-and-the-four-times-i-paid-for-it.html" data-search="escape, and the four times i paid for it the second entry in my journey series is the record that got me — escape, july 1981, the first with jonathan cain, the one with &quot;don&#x27;t stop believin&#x27;&quot; on it. it came to me off the radio, and then i bought it on lp, and then on cassette, and then on cd, and then took it for free on napster like everybody did, and now i stream it like everybody does. i have paid journey many times over for the same music. i do love them, so it&#x27;s okay." data-tags="journey music rock 1980s steve-perry escape vinyl cassette napster streaming series">
-      <span class="tile-media"><img src="img/thumb/lp-shelf-and-headphones.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">Escape, and the Four Times I Paid for It</span>
-        <span class="ec-s">The second entry in my Journey series is the record that got me — Escape, July 1981, the first with Jonathan Cain, the one with &quot;Don&#x27;t Stop Believin&#x27;&quot; on it. It came to me off the radio, and then I bought it on LP, and then on cassette, and then on CD, and then took it for free on Napster like everybody did, and now I stream it like everybody does. I have paid Journey many times over for the same music. I do love them, so it&#x27;s okay.</span>
-      </span>
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Escape, and the Four Times I Paid for It</span>
+      <span class="tile-thumb"><img src="img/thumb/lp-shelf-and-headphones.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">The second entry in my Journey series is the record that got me — Escape, July 1981, the first with Jonathan Cain, the one with &quot;Don&#x27;t Stop Believin&#x27;&quot; on it. It came to me off the radio, and then I bought it on LP, and then on cassette, and then on CD, and then took it for free on Napster like everybody did, and now I stream it like everybody does. I have paid Journey many times over for the same music. I do love them, so it&#x27;s okay.</span>
     </a>
     <a class="tile" href="raised-on-radio-the-one-i-have-to-defend.html" data-search="raised on radio, the one i have to defend my favorite journey album is not escape and not frontiers. it&#x27;s raised on radio, from 1986 — the one steve perry produced himself, the one made after two founding members were let go, the one the band never quite recovered from. this is the entry where i say why: it was mostly perry, it mixed his voice with the new synthesizer sound of the mid-eighties in a way that felt beyond normal music to a fourteen-year-old, and &quot;the eyes of a woman&quot; still moves me and &quot;girl can&#x27;t help it&quot; is still what i drive to." data-tags="journey music rock 1980s steve-perry raised-on-radio synthesizers series">
-      <span class="tile-media"><img src="img/thumb/yamaha-dx7.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">Raised on Radio, the One I Have to Defend</span>
-        <span class="ec-s">My favorite Journey album is not Escape and not Frontiers. It&#x27;s Raised on Radio, from 1986 — the one Steve Perry produced himself, the one made after two founding members were let go, the one the band never quite recovered from. This is the entry where I say why: it was mostly Perry, it mixed his voice with the new synthesizer sound of the mid-eighties in a way that felt beyond normal music to a fourteen-year-old, and &quot;The Eyes of a Woman&quot; still moves me and &quot;Girl Can&#x27;t Help It&quot; is still what I drive to.</span>
-      </span>
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Raised on Radio, the One I Have to Defend</span>
+      <span class="tile-thumb"><img src="img/thumb/yamaha-dx7.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">My favorite Journey album is not Escape and not Frontiers. It&#x27;s Raised on Radio, from 1986 — the one Steve Perry produced himself, the one made after two founding members were let go, the one the band never quite recovered from. This is the entry where I say why: it was mostly Perry, it mixed his voice with the new synthesizer sound of the mid-eighties in a way that felt beyond normal music to a fourteen-year-old, and &quot;The Eyes of a Woman&quot; still moves me and &quot;Girl Can&#x27;t Help It&quot; is still what I drive to.</span>
     </a>
     <a class="tile" href="why-journey.html" data-search="why journey my favorite band, of all time, is journey. this is the first entry of a series about them — not a history of the band, which exists already and was written by people who were in the room, but one record at a time, each paired with where i was when it reached me. it starts with why, with the singer who is the reason, and with a confession about a song i somehow missed for five years." data-tags="journey music rock 1980s steve-perry memory series">
-      <span class="tile-media"><img src="img/thumb/journey-minneapolis-2008.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">Why Journey</span>
-        <span class="ec-s">My favorite band, of all time, is Journey. This is the first entry of a series about them — not a history of the band, which exists already and was written by people who were in the room, but one record at a time, each paired with where I was when it reached me. It starts with why, with the singer who is the reason, and with a confession about a song I somehow missed for five years.</span>
-      </span>
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Why Journey</span>
+      <span class="tile-thumb"><img src="img/thumb/journey-minneapolis-2008.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">My favorite band, of all time, is Journey. This is the first entry of a series about them — not a history of the band, which exists already and was written by people who were in the room, but one record at a time, each paired with where I was when it reached me. It starts with why, with the singer who is the reason, and with a confession about a song I somehow missed for five years.</span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>

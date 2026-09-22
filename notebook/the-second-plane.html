@@ -352,18 +352,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
-  background:#111a28}
-.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
-.tile-body{flex:1;min-width:0}
-@media (max-width:480px){
-  .tile-media{width:60px;height:60px}
-}
+.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
+  overflow:hidden;background:#111a28}
+.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -604,36 +600,28 @@ like from where you stood. The address is below.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
-      <span class="tile-media"><img src="img/thumb/usda-card-catalog-1936.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
-        <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
-        <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
-      </span>
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
+      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
+      <span class="tile-thumb"><img src="img/thumb/usda-card-catalog-1936.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
     </a>
     <a class="tile" href="the-same-barrel.html" data-search="the same barrel costco is rationing motor oil for the first time ever — the chain runs from a shut saudi pipeline through three refineries to a warehouse-club limit." data-tags="oil energy strait-of-hormuz saudi-arabia lubricants base-oil costco iran geopolitics supply-chains">
-      <span class="tile-media"><img src="img/thumb/valvoline-worlds-first-motor-oil-can.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
-        <span class="ec-t">The Same Barrel</span>
-        <span class="ec-s">Costco is rationing motor oil for the first time ever — the chain runs from a shut Saudi pipeline through three refineries to a warehouse-club limit.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
+      <span class="ec-t">The Same Barrel</span>
+      <span class="tile-thumb"><img src="img/thumb/valvoline-worlds-first-motor-oil-can.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Costco is rationing motor oil for the first time ever — the chain runs from a shut Saudi pipeline through three refineries to a warehouse-club limit.</span>
     </a>
     <a class="tile" href="the-other-door.html" data-search="the other door houthis now hold mokha and perim island at bab el-mandeb. the red sea has two doors, and saudi tankers from yanbu are banned from the southern one." data-tags="oil energy red-sea bab-el-mandeb houthis yemen saudi-arabia strait-of-hormuz geopolitics shipping maps">
-      <span class="tile-media"><img src="img/thumb/perim-island-bab-el-mandeb.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">The Other Door</span>
-        <span class="ec-s">Houthis now hold Mokha and Perim island at Bab el-Mandeb. The Red Sea has two doors, and Saudi tankers from Yanbu are banned from the southern one.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Other Door</span>
+      <span class="tile-thumb"><img src="img/thumb/perim-island-bab-el-mandeb.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Houthis now hold Mokha and Perim island at Bab el-Mandeb. The Red Sea has two doors, and Saudi tankers from Yanbu are banned from the southern one.</span>
     </a>
     <a class="tile" href="why-journey.html" data-search="why journey journey is my all-time favorite band. first of a series, one record at a time — the 1980s, why steve perry is the voice, and the song i missed for years." data-tags="journey music rock 1980s steve-perry memory series">
-      <span class="tile-media"><img src="img/thumb/journey-minneapolis-2008.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">Why Journey</span>
-        <span class="ec-s">Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years.</span>
-      </span>
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Why Journey</span>
+      <span class="tile-thumb"><img src="img/thumb/journey-minneapolis-2008.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years.</span>
     </a>
     </div>
   </section>

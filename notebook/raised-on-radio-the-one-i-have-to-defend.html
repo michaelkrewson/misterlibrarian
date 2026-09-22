@@ -352,18 +352,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
-  background:#111a28}
-.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
-.tile-body{flex:1;min-width:0}
-@media (max-width:480px){
-  .tile-media{width:60px;height:60px}
-}
+.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
+  overflow:hidden;background:#111a28}
+.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -584,36 +580,28 @@ representative synthesizer of the period, not a claim about the sessions.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="escape-and-the-four-times-i-paid-for-it.html" data-search="escape, and the four times i paid for it escape (1981), the journey record that made me a fan — and the lp, cassette, cd, napster and streaming i&#x27;ve owned it on since. series entry two." data-tags="journey music rock 1980s steve-perry escape vinyl cassette napster streaming series">
-      <span class="tile-media"><img src="img/thumb/lp-shelf-and-headphones.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">Escape, and the Four Times I Paid for It</span>
-        <span class="ec-s">Escape (1981), the Journey record that made me a fan — and the LP, cassette, CD, Napster and streaming I&#x27;ve owned it on since. Series entry two.</span>
-      </span>
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Escape, and the Four Times I Paid for It</span>
+      <span class="tile-thumb"><img src="img/thumb/lp-shelf-and-headphones.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Escape (1981), the Journey record that made me a fan — and the LP, cassette, CD, Napster and streaming I&#x27;ve owned it on since. Series entry two.</span>
     </a>
     <a class="tile" href="why-journey.html" data-search="why journey journey is my all-time favorite band. first of a series, one record at a time — the 1980s, why steve perry is the voice, and the song i missed for years." data-tags="journey music rock 1980s steve-perry memory series">
-      <span class="tile-media"><img src="img/thumb/journey-minneapolis-2008.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">Why Journey</span>
-        <span class="ec-s">Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years.</span>
-      </span>
+      <span class="ec-d">CULTURE · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">Why Journey</span>
+      <span class="tile-thumb"><img src="img/thumb/journey-minneapolis-2008.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Journey is my all-time favorite band. First of a series, one record at a time — the 1980s, why Steve Perry is the voice, and the song I missed for years.</span>
     </a>
     <a class="tile" href="a-pin-is-not-a-verification.html" data-search="plugin4shell: a pin is not a verification plugin4shell let a git branch name override a sha-pinned plugin in claude code, codex, copilot and gemini cli. how the pin failed, and who&#x27;s patched." data-tags="plugin4shell ai-coding-agents claude-code codex github-copilot gemini-cli supply-chain-security git vulnerability-disclosure air-security">
-      <span class="tile-media"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
-        <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
-        <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
-      </span>
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
+      <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
+      <span class="tile-thumb"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
     </a>
     <a class="tile" href="why-the-washington-supreme-court-struck-down-i-2066.html" data-search="why the washington supreme court struck down i-2066 what the washington supreme court&#x27;s 6-3 ruling on i-2066 actually holds, what the natural gas initiative did, and which justices are up for reelection." data-tags="washington-state i-2066 natural-gas washington-supreme-court ballot-initiatives single-subject-rule judicial-elections energy-policy">
-      <span class="tile-media"><img src="img/thumb/wa-temple-of-justice.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">WORLD · SEPTEMBER 22, 2026</span>
-        <span class="ec-t">Why the Washington Supreme Court Struck Down I-2066</span>
-        <span class="ec-s">What the Washington Supreme Court&#x27;s 6-3 ruling on I-2066 actually holds, what the natural gas initiative did, and which justices are up for reelection.</span>
-      </span>
+      <span class="ec-d">WORLD · SEPTEMBER 22, 2026</span>
+      <span class="ec-t">Why the Washington Supreme Court Struck Down I-2066</span>
+      <span class="tile-thumb"><img src="img/thumb/wa-temple-of-justice.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">What the Washington Supreme Court&#x27;s 6-3 ruling on I-2066 actually holds, what the natural gas initiative did, and which justices are up for reelection.</span>
     </a>
     </div>
   </section>

@@ -352,18 +352,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
-  background:#111a28}
-.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
-.tile-body{flex:1;min-width:0}
-@media (max-width:480px){
-  .tile-media{width:60px;height:60px}
-}
+.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
+  overflow:hidden;background:#111a28}
+.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -594,36 +590,28 @@ as I still am, unable to tell whether an empty answer means "nothing to report" 
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it working daily with an ai coding assistant that forgets every session. how the notes file it reads at startup grew, went stale, and what made it reliable." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
-      <span class="tile-media"><img src="img/thumb/usda-card-catalog-1936.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
-        <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
-        <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
-      </span>
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
+      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
+      <span class="tile-thumb"><img src="img/thumb/usda-card-catalog-1936.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Working daily with an AI coding assistant that forgets every session. How the notes file it reads at startup grew, went stale, and what made it reliable.</span>
     </a>
     <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
-      <span class="tile-media"><img src="img/thumb/eniac-1946.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
-        <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
-      </span>
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
+      <span class="tile-thumb"><img src="img/thumb/eniac-1946.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
     </a>
     <a class="tile" href="a-pin-is-not-a-verification.html" data-search="plugin4shell: a pin is not a verification plugin4shell let a git branch name override a sha-pinned plugin in claude code, codex, copilot and gemini cli. how the pin failed, and who&#x27;s patched." data-tags="plugin4shell ai-coding-agents claude-code codex github-copilot gemini-cli supply-chain-security git vulnerability-disclosure air-security">
-      <span class="tile-media"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
-        <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
-        <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
-      </span>
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
+      <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
+      <span class="tile-thumb"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
     </a>
     <a class="tile" href="the-most-downloaded-ai-models-in-the-world-are-alibabas.html" data-search="the most-downloaded ai models in the world are alibaba&#x27;s qwen3.8-omni-flash explained — what omnimodal means, what the benchmark jump measures, and how alibaba&#x27;s qwen became the most-downloaded model family." data-tags="artificial-intelligence alibaba qwen open-weights china machine-learning deepseek multimodal">
-      <span class="tile-media"><img src="img/thumb/alibaba-hangzhou-headquarters.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-        <span class="ec-t">The Most-Downloaded AI Models in the World Are Alibaba&#x27;s</span>
-        <span class="ec-s">Qwen3.8-Omni-Flash explained — what omnimodal means, what the benchmark jump measures, and how Alibaba&#x27;s Qwen became the most-downloaded model family.</span>
-      </span>
+      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+      <span class="ec-t">The Most-Downloaded AI Models in the World Are Alibaba&#x27;s</span>
+      <span class="tile-thumb"><img src="img/thumb/alibaba-hangzhou-headquarters.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Qwen3.8-Omni-Flash explained — what omnimodal means, what the benchmark jump measures, and how Alibaba&#x27;s Qwen became the most-downloaded model family.</span>
     </a>
     </div>
   </section>

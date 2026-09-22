@@ -351,18 +351,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
-  background:#111a28}
-.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
-.tile-body{flex:1;min-width:0}
-@media (max-width:480px){
-  .tile-media{width:60px;height:60px}
-}
+.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
+  overflow:hidden;background:#111a28}
+.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -485,12 +481,10 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile" href="the-second-plane.html" data-search="the second plane twenty-five years ago i was woken up in california to watch the second plane go into the tower. this week 2,977 drones rose over new york harbor, one for each person, and built the towers again for a few minutes at full size. it got to me more than i expected, and i&#x27;ve been trying to work out why — and why it landed in the same week that drones set fire to a saudi pipeline and a widow stood at ground zero to say the country had spent twenty-five years protecting the saudis instead of her." data-tags="september-11 memory new-york memorial drones saudi-arabia 2001 notes">
-      <span class="tile-media"><img src="img/thumb/tribute-in-light-2010.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="tile-body">
-        <span class="ec-d">NOTES · SEPTEMBER 12, 2026</span>
-        <span class="ec-t">The Second Plane</span>
-        <span class="ec-s">Twenty-five years ago I was woken up in California to watch the second plane go into the tower. This week 2,977 drones rose over New York Harbor, one for each person, and built the towers again for a few minutes at full size. It got to me more than I expected, and I&#x27;ve been trying to work out why — and why it landed in the same week that drones set fire to a Saudi pipeline and a widow stood at Ground Zero to say the country had spent twenty-five years protecting the Saudis instead of her.</span>
-      </span>
+      <span class="ec-d">NOTES · SEPTEMBER 12, 2026</span>
+      <span class="ec-t">The Second Plane</span>
+      <span class="tile-thumb"><img src="img/thumb/tribute-in-light-2010.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="ec-s">Twenty-five years ago I was woken up in California to watch the second plane go into the tower. This week 2,977 drones rose over New York Harbor, one for each person, and built the towers again for a few minutes at full size. It got to me more than I expected, and I&#x27;ve been trying to work out why — and why it landed in the same week that drones set fire to a Saudi pipeline and a widow stood at Ground Zero to say the country had spent twenty-five years protecting the Saudis instead of her.</span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>
