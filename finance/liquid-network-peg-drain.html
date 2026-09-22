@@ -766,7 +766,7 @@ Covenants are necessary plumbing for a better answer. They are not, on their own
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
     <button type="button" class="submodal-close" aria-label="Close">&times;</button>
-    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+    <iframe title="Subscribe to The Librarian's Ledger"></iframe>
   </div>
 </div>
 <script>
@@ -777,9 +777,9 @@ Covenants are necessary plumbing for a better answer. They are not, on their own
   var embedSrc = "https://misterlibrarian.substack.com/embed";
   function open(e){
     if (e) e.preventDefault();
-    if (!iframe.src) iframe.src = embedSrc;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    if (!iframe.src) iframe.src = embedSrc;
   }
   function close(){
     modal.hidden = true;
