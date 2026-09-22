@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-21",
+  "date": "2026-09-22",
   "title": "Today's rundown",
   "note": "What's going on right now, in one place. Want the full story on one of these? Say so in the comments below — enough interest turns an item into its own entry.",
   "sections": [
@@ -7,15 +7,24 @@
       "label": "World",
       "items": [
         {
-          "text": "Germany's Christian Democratic Union falls out of a regional parliament for the first time in the party's post-WWII history, taking just 4.9% (below the 5% threshold) in Mecklenburg-Vorpommern's September 20 state election as the AfD wins with 38.2%; Chancellor Friedrich Merz calls the result \"a disaster\" but says he intends to stay on.",
+          "text": "President Trump addresses the UN General Assembly on September 22 — his first appearance since the US entered its war with Iran seven months ago — as the second speaker after Brazil's Lula da Silva, three days after announcing a new US-Greenland-Denmark security agreement.",
           "href": ""
         },
         {
-          "text": "The UN's 81st General Assembly opens its general debate on September 22 in New York, with Brazil's Lula da Silva speaking first under a tradition dating to 1955 and Donald Trump, as the host nation's president, taking the floor second.",
-          "href": "https://mistertranslation.com/notebook/nobody-wanted-to-go-first.html"
+          "text": "The Palestinian Health Ministry says Israeli strikes and gunfire have killed 1,394 Palestinians and injured 4,839 in Gaza since the ceasefire began in October 2025, with 834 of the dead still under rubble.",
+          "href": ""
+        }
+      ]
+    },
+    {
+      "label": "Business & markets",
+      "items": [
+        {
+          "text": "The Federal Reserve raises its benchmark rate a quarter point to 3.75%-4% on September 16, its first hike since 2023, citing persistently elevated inflation; the FOMC votes 12-0 and its projections leave room for another increase this year.",
+          "href": ""
         },
         {
-          "text": "Israeli gunfire kills two Palestinians, including a child, in northern and southern Gaza on September 21, the Palestinian Health Ministry says, amid continued disputes over implementing the ceasefire's second phase.",
+          "text": "Brent crude falls to about $100 a barrel on September 21, a fourth straight session of declines, as traders bet on diplomatic de-escalation between the US and Iran ahead of this week's UN General Assembly.",
           "href": ""
         }
       ]
@@ -24,11 +33,11 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades near $84,592 on September 21, up 44% in the third quarter — its best quarterly showing since Q4 2024 — though still 48% below its October 2025 record of $126,000; other tokens including ETH, XRP, SOL, UNI and NEAR are up 40%-150% over the same stretch.",
+          "text": "Bitcoin opens at $86,597.82 on September 22, up 6.7% from Monday's open, before slipping as much as 2.2% to $85,092 following Monday's eight-month high of $87,381.",
           "href": ""
         },
         {
-          "text": "US spot Bitcoin ETFs draw $593 million in combined inflows over the two trading days through September 18, snapping a run of outflows and helping push the token back above $81,000; crypto ETFs have now topped $1.5 trillion in cumulative 2026 inflows with three months still to go.",
+          "text": "Russia's central bank proposes capping banks' crypto-asset exposure at 1% of capital, the same week South Korea's Hana Bank issues a $100 million digital bond through Euroclear's blockchain platform.",
           "href": ""
         }
       ]
@@ -37,29 +46,33 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Intel shares jump in premarket trading September 21 after reports it's partnering with Taiwan's AU Optronics on Micro LED-based advanced packaging for co-packaged optics and high-density computing, using through-glass vias to embed chips in a glass substrate.",
-          "href": "https://mistertranslation.com/finance/eleven-percent-for-a-hole-in-glass.html"
+          "text": "AMD's stock hits an all-time high of $613.92 on September 21, pushing its market cap past $1 trillion for the first time and making it the fourth US chip company — after Nvidia, Broadcom and Micron — to cross that threshold; the stock is up more than 180% this year.",
+          "href": ""
         },
         {
-          "text": "Beijing AI startup Naive AI, founded in February 2026 by Tsinghua professor Dai Jifeng, reaches a $1.42 billion valuation after raising $400 million across three rounds from Tencent, IDG Capital, MPCi and HSG.",
-          "href": "https://mistertranslation.com/finance/four-hundred-million-for-a-model-nobody-has-seen.html"
+          "text": "Security researchers disclose \"Plugin4Shell\" on September 18, a zero-click remote-code-execution flaw letting attackers swap malicious plugin code past SHA-pinning checks in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI; Anthropic patches it in Claude Code 2.1.179, OpenAI in Codex 0.146.0.",
+          "href": ""
         },
         {
-          "text": "Alibaba's Qwen team releases Qwen3.8-Omni-Flash on September 18, a native omnimodal model handling text, images, audio and video with a 1-million-token context window, beating its own Qwen3.5-Omni-Plus by more than 26% on average across benchmarks.",
-          "href": "https://mistertranslation.com/notebook/the-most-downloaded-ai-models-in-the-world-are-alibabas.html"
+          "text": "Healthcare distributor McKesson discloses a cybersecurity breach detected August 25 involving unauthorized access to third-party applications, with the ShinyHunters extortion group claiming to have exfiltrated 284 million rows of patient data from its Oncology & Multispecialty and Medical-Surgical units.",
+          "href": ""
         }
       ]
     },
     {
-      "label": "Science",
+      "label": "Science & space",
       "items": [
         {
-          "text": "A Tel Aviv University study argues the Qumran sect behind the Dead Sea Scrolls really did follow its unusual 364-day calendar — which divides evenly into 52 seven-day weeks — in its early years, before abandoning the system later as impractical; published in Tarbiz Quarterly for Jewish Studies by Prof. Eshbal Ratzon.",
-          "href": "https://mistertranslation.com/notebook/fifty-two-weeks-no-remainder.html"
+          "text": "Astronomers confirm Elias 2-24 b, a Jupiter-mass planet less than a million years old orbiting a star 450 light-years away, as the youngest planet ever found — the previous record-holders were all at least 5 million years old — in work led by Andrea Bernardi, a doctoral candidate at Universidad Diego Portales in Chile.",
+          "href": ""
         },
         {
-          "text": "Researchers report that cats carry a durable chemical \"calling card\" in their urine made of 13 branched-chain fatty acids whose mix varies cat to cat but stays consistent within one animal, tied to long-mysterious fat droplets in feline kidneys; the study is due in Current Biology.",
-          "href": "https://mistertranslation.com/notebook/the-calling-card-in-a-cats-kidneys.html"
+          "text": "Indonesia's Anak Krakatau erupts for more than 24 hours starting September 4, sending ash as high as 50,000 feet, shutting down eight airports and disrupting nearly 3,000 flights.",
+          "href": ""
+        },
+        {
+          "text": "SpaceX's Super Heavy booster arrives at the pad on September 21 ahead of Starship Flight Test 14, targeting September 28 for the vehicle's first orbital launch attempt, carrying 26 V3 Starlink satellites.",
+          "href": ""
         }
       ]
     },
@@ -67,24 +80,11 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "A NutriNet-Santé study tracking more than 112,395 people over seven to eight years finds eight common food preservatives, including ascorbic acid and erythorbates, associated with higher rates of hypertension, heart attack and stroke; published in the European Heart Journal by INSERM's Mathilde Touvier and Anaïs Hasenböhler.",
-          "href": "https://mistertranslation.com/health/do-food-preservatives-raise-blood-pressure.html"
-        },
-        {
-          "text": "The FDA approves Ionis Pharmaceuticals' Zanvastro (zilganersen) on September 3 as the first disease-modifying treatment for Alexander disease, an ultra-rare fatal neurological disorder, after a trial found the quarterly RNA-targeted injection stabilized patients' gait speed at week 61 while the control group's continued to decline.",
-          "href": "https://mistertranslation.com/health/alexander-disease-and-the-first-drug-approved-for-it.html"
-        }
-      ]
-    },
-    {
-      "label": "Arts & culture",
-      "items": [
-        {
-          "text": "The National Book Foundation announces its 2026 fiction longlist — ten titles drawn from 451 submissions, including Marlon James' \"The Disappearers\" and Louise Erdrich's \"Python's Kiss\" — with finalists due October 6 and winners announced November 18.",
+          "text": "A UK Biobank study of 11,071 adults finds nighttime light exposure above 3 lux is linked to thickening of the heart's left ventricle wall and early signs of reduced cardiac function three years later, in research led by Tulane University's Lu Qi and published September 9 in the European Heart Journal.",
           "href": ""
         },
         {
-          "text": "Anthony Page, the British stage and TV director who won a Tony Award for his 1997 Broadway revival of \"A Doll's House\" and earned two Emmy nominations, dies September 11 at a London care home, aged 90.",
+          "text": "A Washington University School of Medicine study of more than 333,000 veterans with type 2 diabetes finds cardiovascular risk climbs the longer patients stay off GLP-1 drugs like Ozempic and Wegovy after stopping — 4% higher at six months, 14% at one year, 22% at two years — with the lost benefit not fully restored even after resuming treatment.",
           "href": ""
         }
       ]
