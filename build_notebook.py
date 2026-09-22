@@ -500,6 +500,10 @@ def _rundown_box(data, entries=()):
     if has_archive:
         parts.append('    <p class="rdarchive"><a href="%s">See past rundowns →</a></p>'
                       % _tag_file("rundown"))
+    missed_url = blogkit.x_missed_url("https://mistertranslation.com/notebook/")
+    parts.append(
+        '    <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s" '
+        'target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>' % esc(missed_url))
     parts.append("  </section>")
     return "\n".join(parts) + "\n"
 
@@ -1408,6 +1412,8 @@ footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 .rdlist{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
 .rdlist li{margin:0 0 7px}
 .rdlist a:hover{text-decoration:underline}
+.rdask{margin:16px 0 0}
+.rdask .respond-btn{flex:0 1 auto;padding:9px 18px;font-size:14px}
 @media (max-width:720px){
   .rundown{padding:18px 18px;margin:22px 0 28px}
   .rdtitle{font-size:17px}

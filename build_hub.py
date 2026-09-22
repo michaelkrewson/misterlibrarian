@@ -36,6 +36,8 @@ import os
 import re
 import sys
 
+import blogkit
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 INDEX = os.path.join(ROOT, "index.html")
 OG_PATH = os.path.join(ROOT, "img", "og-hub.png")
@@ -234,6 +236,11 @@ def _rundown_html(data):
                 lis.append("<li>%s</li>" % text)
         parts.append('  <ul>%s</ul>' % "".join(lis))
     parts.append('  <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>')
+    missed_url = blogkit.x_missed_url("https://mistertranslation.com/notebook/")
+    parts.append(
+        '  <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s" '
+        'target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>'
+        % html.escape(missed_url))
     parts.append("</section>")
     return "\n".join(parts)
 

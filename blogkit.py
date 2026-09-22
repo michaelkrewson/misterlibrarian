@@ -302,6 +302,17 @@ def x_note_url(title, url):
     return _x_intent_url("Note on", title, url)
 
 
+def x_missed_url(url):
+    """A pre-filled X compose link for the rundown box's own feedback channel —
+    'did today's rundown miss something?' Same compose mechanism as
+    x_comment_url/x_note_url above, but fixed wording rather than a per-item
+    title, since the rundown box is one standing thing rather than a dated
+    entry. `url` should be the rundown's canonical home (the Notebook front
+    page), the same for every caller."""
+    text = f"Did today's rundown miss something?\n\n{url}\n\n@{X_HANDLE}"
+    return "https://x.com/intent/tweet?text=" + urllib.parse.quote(text)
+
+
 def x_search_url(url):
     """A link to every X post mentioning this exact URL — the read side of
     the comment system above, so a reader can see what others already said
