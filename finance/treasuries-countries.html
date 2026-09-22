@@ -424,6 +424,30 @@ a{color:#f7931a}
 .sb-s{margin:0 0 16px;color:#a9b7c9;font-size:14.5px;line-height:1.6}
 .sb-btn{display:inline-block;flex:none;min-width:160px}
 
+/* ── the subscribe modal every .subscribe-trigger opens (2026-09-21) ──────
+   Substack's own /embed iframe is a fixed white box with no theming hook —
+   wrong rendered inline in the page flow against this site's dark palette,
+   but fine as a small floating card over a dimmed backdrop, which is what
+   this gives it. `hidden` (the HTML attribute the script toggles) is what
+   keeps it invisible; no extra display rule needed for that half. */
+.submodal{position:fixed;inset:0;z-index:999;display:flex;
+  align-items:center;justify-content:center;padding:16px}
+.submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
+.submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
+  box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
+  animation:submodal-in .15s ease-out}
+.submodal-card iframe{display:block;width:480px;max-width:100%;height:380px;
+  border:0;border-radius:14px}
+.submodal-close{position:absolute;top:-14px;right:-14px;z-index:2;
+  width:32px;height:32px;border:0;border-radius:999px;
+  background:#0a111c;border:1px solid #1b2534;color:#e8eef7;
+  font-size:20px;line-height:1;cursor:pointer}
+.submodal-close:hover{background:#131e2e}
+@keyframes submodal-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){
+  .submodal-card{animation:none}
+}
+
 /* ── the archive list — the LIST view of the same pool the tiles show ───── */
 /* No longer scoped to `.panel ul.archive` — the list used to only ever
    appear inside the Archive panel; now it's a bare alternate view sitting
@@ -760,7 +784,7 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Countries%20%E2%80%94%20Bitcoin%20Treasuries%3A%0A%0Ahttps%3A//mistertranslation.com/finance/treasuries-countries.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/treasuries-countries.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <p class="backlink"><a href="treasuries.html">← All Bitcoin Treasuries categories</a></p>
 
-  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-treasuries-countries-html">👁 <span id="hits-finance-treasuries-countries-html-n">—</span> views</span>
+  <footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-treasuries-countries-html">👁 <span id="hits-finance-treasuries-countries-html-n">—</span> views</span>
 <script>
 (function(){
   fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Ftreasuries-countries.html.json")
@@ -774,7 +798,40 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
       var el = document.getElementById("hits-finance-treasuries-countries-html"); if (el) el.style.display = "none";
     });
 })();
-</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer>
+</script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
+     aria-label="Subscribe to The Librarian's Ledger">
+  <div class="submodal-backdrop"></div>
+  <div class="submodal-card">
+    <button type="button" class="submodal-close" aria-label="Close">&times;</button>
+    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var modal = document.getElementById('submodal');
+  if (!modal) return;
+  var iframe = modal.querySelector('iframe');
+  var embedSrc = "https://misterlibrarian.substack.com/embed";
+  function open(e){
+    if (e) e.preventDefault();
+    if (!iframe.src) iframe.src = embedSrc;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.subscribe-trigger').forEach(function(t){
+    t.addEventListener('click', open);
+  });
+  modal.querySelector('.submodal-close').addEventListener('click', close);
+  modal.querySelector('.submodal-backdrop').addEventListener('click', close);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
+})();
+</script>
 </div>
 </body>
 </html>
