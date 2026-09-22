@@ -24,6 +24,21 @@
     <category>AIR Security</category>
   </item>
   <item>
+    <title>Why the Washington Supreme Court Struck Down I-2066</title>
+    <link>https://mistertranslation.com/notebook/why-the-washington-supreme-court-struck-down-i-2066.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/why-the-washington-supreme-court-struck-down-i-2066.html</guid>
+    <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On September 17, 2026, a divided Washington Supreme Court ruled Initiative 2066 — the natural gas measure two million Washingtonians approved in 2024 — unconstitutional in its entirety. What the ruling actually says, what I-2066 actually did, what the dissent argued, and which justices from the ruling are actually on this November's ballot.</description>
+    <category>Washington state</category>
+    <category>I-2066</category>
+    <category>natural gas</category>
+    <category>Washington Supreme Court</category>
+    <category>ballot initiatives</category>
+    <category>single-subject rule</category>
+    <category>judicial elections</category>
+    <category>energy policy</category>
+  </item>
+  <item>
     <title>Fifty-Two Weeks, No Remainder</title>
     <link>https://mistertranslation.com/notebook/fifty-two-weeks-no-remainder.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/fifty-two-weeks-no-remainder.html</guid>
@@ -408,20 +423,6 @@
     <category>steve perry</category>
     <category>memory</category>
     <category>series</category>
-  </item>
-  <item>
-    <title>My Collaborator Has No Memory Except the Notes I Keep for It</title>
-    <link>https://mistertranslation.com/notebook/my-collaborator-has-no-memory.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/my-collaborator-has-no-memory.html</guid>
-    <pubDate>Fri, 11 Sep 2026 12:00:00 +0000</pubDate>
-    <description>For three months I have worked every day with an AI coding assistant that wakes up each session knowing nothing about the last one. What it knows, it reads from a file. That file grew to 685 kilobytes, went stale in ways that reached the real-money side of the project, and turned into the best lesson in institutional memory I have had. This is what it is like to run a one-person shop with an amnesiac partner, and why the answer turned out to be less writing, not more.</description>
-    <category>artificial intelligence</category>
-    <category>ai</category>
-    <category>claude code</category>
-    <category>memory</category>
-    <category>documentation</category>
-    <category>software</category>
-    <category>notes</category>
   </item>
 </channel>
 </rss>
