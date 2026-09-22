@@ -24,6 +24,19 @@
     <category>AIR Security</category>
   </item>
   <item>
+    <title>Claude Opus 5.5 Is Cheaper and Faster — But the Real News Is What Anthropic Led With</title>
+    <link>https://mistertranslation.com/notebook/claude-opus-5-5-leads-with-a-safety-score.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/claude-opus-5-5-leads-with-a-safety-score.html</guid>
+    <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On September 22, 2026, Anthropic shipped Claude Opus 5.5 — its first new model since CEO Dario Amodei published an essay ten days earlier arguing the whole industry should deliberately slow down. It's 40 percent cheaper than Opus 5, runs about 30 percent faster, performs close to the pricier Fable 5.1 — and the launch announcement opened with an alignment score, not a benchmark.</description>
+    <category>artificial intelligence</category>
+    <category>anthropic</category>
+    <category>claude</category>
+    <category>ai safety</category>
+    <category>llm benchmarks</category>
+    <category>dario amodei</category>
+  </item>
+  <item>
     <title>Why the Washington Supreme Court Struck Down I-2066</title>
     <link>https://mistertranslation.com/notebook/why-the-washington-supreme-court-struck-down-i-2066.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/why-the-washington-supreme-court-struck-down-i-2066.html</guid>
@@ -409,20 +422,6 @@
     <category>iphone</category>
     <category>engineering</category>
     <category>technology</category>
-  </item>
-  <item>
-    <title>Why Journey</title>
-    <link>https://mistertranslation.com/notebook/why-journey.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/why-journey.html</guid>
-    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-    <description>My favorite band, of all time, is Journey. This is the first entry of a series about them — not a history of the band, which exists already and was written by people who were in the room, but one record at a time, each paired with where I was when it reached me. It starts with why, with the singer who is the reason, and with a confession about a song I somehow missed for five years.</description>
-    <category>journey</category>
-    <category>music</category>
-    <category>rock</category>
-    <category>1980s</category>
-    <category>steve perry</category>
-    <category>memory</category>
-    <category>series</category>
   </item>
 </channel>
 </rss>
