@@ -428,10 +428,28 @@ a{color:#f7931a}
    Substack's own /embed iframe is a fixed white box with no theming hook —
    wrong rendered inline in the page flow against this site's dark palette,
    but fine as a small floating card over a dimmed backdrop, which is what
-   this gives it. `hidden` (the HTML attribute the script toggles) is what
-   keeps it invisible; no extra display rule needed for that half. */
+   this gives it.
+   ⚠️ THE ACTUAL BUG (found 2026-09-22, after two rounds of chasing the
+   wrong thing in the iframe/lazy-load timing — see _subscribe_modal()'s
+   docstring): the comment that used to sit here claimed `hidden` alone
+   kept this invisible, "no extra display rule needed." That's false, and
+   it's the exact mistake `#tiles[hidden],#archiveList[hidden],
+   #loadMoreWrap[hidden]{display:none!important}` below (the view-toggle
+   section) already exists to avoid: `.submodal{display:flex}` and the UA
+   stylesheet's `[hidden]{display:none}` have EQUAL specificity, and an
+   author rule always beats a UA rule at equal specificity regardless of
+   source order — so `display:flex` won on every single page load,
+   `hidden` attribute or not. The modal was never click-triggered in
+   practice; it covered the whole viewport (confirmed via
+   getComputedStyle: `display: flex`, a full-viewport bounding box) the
+   instant the CSS parsed, on every device, showing an iframe whose `src`
+   was never set until a click that had nothing left to reveal — hence a
+   permanently blank card blocking the page, exactly the original report.
+   `.submodal[hidden]` below (two simple selectors, strictly higher
+   specificity than `.submodal` alone) is what actually keeps it hidden. */
 .submodal{position:fixed;inset:0;z-index:999;display:flex;
   align-items:center;justify-content:center;padding:16px}
+.submodal[hidden]{display:none}
 .submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
 .submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
   box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
@@ -693,7 +711,7 @@ table.mw-sort td.mw-nm{white-space:normal}
   <p class="trskicker"><a href="money-worldwide.html"><span class="mw-kicker-icon">💰</span> Money Worldwide</a></p>
   <h1 class="btitle"><span class="mw-page-icon">🪙</span> Gold Reserves</h1>
   <p class="mwsub">Official-sector gold reserves by country, priced at today's live gold quote — shown separately from foreign-exchange reserves (its own page). Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-21 23:08 UTC · see <a
+  <p class="stamp">Updated 2026-09-22 09:48 UTC · see <a
     href="money-worldwide.html#how-this-board-is-made">how this whole board is made →</a></p>
   <div class="tw">
   <table class="board mw-sort">
@@ -705,102 +723,102 @@ table.mw-sort td.mw-nm{white-space:normal}
       </tr>
     </thead>
     <tbody>
-      <tr data-tonnes="8133" data-usd="1150677811978.9324">
+      <tr data-tonnes="8133" data-usd="1137420622387.8665">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇸</span>
           <span class="nm"><span class="n1">United States</span></span></span></td>
         <td>8,133 tons</td>
-        <td>$1,150,677,811,979</td>
+        <td>$1,137,420,622,388</td>
       </tr>
-      <tr data-tonnes="3355" data-usd="474674051295.8709">
+      <tr data-tonnes="3355" data-usd="469205236457.80054">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇩🇪</span>
           <span class="nm"><span class="n1">Germany</span></span></span></td>
         <td>3,355 tons</td>
-        <td>$474,674,051,296</td>
+        <td>$469,205,236,458</td>
       </tr>
-      <tr data-tonnes="2452" data-usd="346915282795.07465">
+      <tr data-tonnes="2452" data-usd="342918402323.2569">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇹</span>
           <span class="nm"><span class="n1">Italy</span></span></span></td>
         <td>2,452 tons</td>
-        <td>$346,915,282,795</td>
+        <td>$342,918,402,323</td>
       </tr>
-      <tr data-tonnes="2437" data-usd="344793044115.6594">
+      <tr data-tonnes="2437" data-usd="340820614380.82263">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇫🇷</span>
           <span class="nm"><span class="n1">France</span></span></span></td>
         <td>2,437 tons</td>
-        <td>$344,793,044,116</td>
+        <td>$340,820,614,381</td>
       </tr>
-      <tr data-tonnes="2313" data-usd="327249204365.82697">
+      <tr data-tonnes="2313" data-usd="323478900723.36597">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇳</span>
           <span class="nm"><span class="n1">China</span></span></span></td>
         <td>2,313 tons</td>
-        <td>$327,249,204,366</td>
+        <td>$323,478,900,723</td>
       </tr>
-      <tr data-tonnes="2299" data-usd="325268448265.03937">
+      <tr data-tonnes="2299" data-usd="321520965310.42725">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇷🇺</span>
           <span class="nm"><span class="n1">Russia</span></span></span></td>
         <td>2,299 tons</td>
-        <td>$325,268,448,265</td>
+        <td>$321,520,965,310</td>
       </tr>
-      <tr data-tonnes="1040" data-usd="147141881772.7886">
+      <tr data-tonnes="1040" data-usd="145446630675.4434">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇨🇭</span>
           <span class="nm"><span class="n1">Switzerland</span></span></span></td>
         <td>1,040 tons</td>
-        <td>$147,141,881,773</td>
+        <td>$145,446,630,675</td>
       </tr>
-      <tr data-tonnes="880" data-usd="124504669192.35957">
+      <tr data-tonnes="880" data-usd="123070225956.14441">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇮🇳</span>
           <span class="nm"><span class="n1">India</span></span></span></td>
         <td>880 tons</td>
-        <td>$124,504,669,192</td>
+        <td>$123,070,225,956</td>
       </tr>
-      <tr data-tonnes="846" data-usd="119694261519.01842">
+      <tr data-tonnes="846" data-usd="118315239953.29338">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇯🇵</span>
           <span class="nm"><span class="n1">Japan</span></span></span></td>
         <td>846 tons</td>
-        <td>$119,694,261,519</td>
+        <td>$118,315,239,953</td>
       </tr>
-      <tr data-tonnes="635" data-usd="89841437428.57765">
+      <tr data-tonnes="635" data-usd="88806356229.71783">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇷</span>
           <span class="nm"><span class="n1">Turkey</span></span></span></td>
         <td>635 tons</td>
-        <td>$89,841,437,429</td>
+        <td>$88,806,356,230</td>
       </tr>
-      <tr data-tonnes="612" data-usd="86587338120.14098">
+      <tr data-tonnes="612" data-usd="85589748051.31862">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇳🇱</span>
           <span class="nm"><span class="n1">Netherlands</span></span></span></td>
         <td>612 tons</td>
-        <td>$86,587,338,120</td>
+        <td>$85,589,748,051</td>
       </tr>
-      <tr data-tonnes="582" data-usd="82342860761.31053">
+      <tr data-tonnes="582" data-usd="81394172166.45004">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇱</span>
           <span class="nm"><span class="n1">Poland</span></span></span></td>
         <td>582 tons</td>
-        <td>$82,342,860,761</td>
+        <td>$81,394,172,166</td>
       </tr>
-      <tr data-tonnes="424" data-usd="59988613338.13689">
+      <tr data-tonnes="424" data-usd="59297472506.1423">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇹🇼</span>
           <span class="nm"><span class="n1">Taiwan</span></span></span></td>
         <td>424 tons</td>
-        <td>$59,988,613,338</td>
+        <td>$59,297,472,506</td>
       </tr>
-      <tr data-tonnes="416" data-usd="58856752709.11544">
+      <tr data-tonnes="416" data-usd="58178652270.17736">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇺🇿</span>
           <span class="nm"><span class="n1">Uzbekistan</span></span></span></td>
         <td>416 tons</td>
-        <td>$58,856,752,709</td>
+        <td>$58,178,652,270</td>
       </tr>
-      <tr data-tonnes="383" data-usd="54187827614.401955">
+      <tr data-tonnes="383" data-usd="53563518796.82194">
         <td class="mw-nm"><span class="asw"><span class="mk mk-e" aria-hidden="true">🇵🇹</span>
           <span class="nm"><span class="n1">Portugal</span></span></span></td>
         <td>383 tons</td>
-        <td>$54,187,827,614</td>
+        <td>$53,563,518,797</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
         <td class="mw-nm trstot-l">Total — 15 countries shown</td>
         <td>26,807 tons</td>
-        <td>$3,792,723,485,272</td>
+        <td>$3,749,026,758,189</td>
       </tr>
     </tfoot>
   </table>
@@ -831,7 +849,7 @@ table.mw-sort td.mw-nm{white-space:normal}
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
     <button type="button" class="submodal-close" aria-label="Close">&times;</button>
-    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+    <iframe title="Subscribe to The Librarian's Ledger"></iframe>
   </div>
 </div>
 <script>
@@ -842,9 +860,9 @@ table.mw-sort td.mw-nm{white-space:normal}
   var embedSrc = "https://misterlibrarian.substack.com/embed";
   function open(e){
     if (e) e.preventDefault();
-    if (!iframe.src) iframe.src = embedSrc;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    if (!iframe.src) iframe.src = embedSrc;
   }
   function close(){
     modal.hidden = true;

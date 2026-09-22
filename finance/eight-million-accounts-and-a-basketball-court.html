@@ -428,10 +428,28 @@ a{color:#f7931a}
    Substack's own /embed iframe is a fixed white box with no theming hook —
    wrong rendered inline in the page flow against this site's dark palette,
    but fine as a small floating card over a dimmed backdrop, which is what
-   this gives it. `hidden` (the HTML attribute the script toggles) is what
-   keeps it invisible; no extra display rule needed for that half. */
+   this gives it.
+   ⚠️ THE ACTUAL BUG (found 2026-09-22, after two rounds of chasing the
+   wrong thing in the iframe/lazy-load timing — see _subscribe_modal()'s
+   docstring): the comment that used to sit here claimed `hidden` alone
+   kept this invisible, "no extra display rule needed." That's false, and
+   it's the exact mistake `#tiles[hidden],#archiveList[hidden],
+   #loadMoreWrap[hidden]{display:none!important}` below (the view-toggle
+   section) already exists to avoid: `.submodal{display:flex}` and the UA
+   stylesheet's `[hidden]{display:none}` have EQUAL specificity, and an
+   author rule always beats a UA rule at equal specificity regardless of
+   source order — so `display:flex` won on every single page load,
+   `hidden` attribute or not. The modal was never click-triggered in
+   practice; it covered the whole viewport (confirmed via
+   getComputedStyle: `display: flex`, a full-viewport bounding box) the
+   instant the CSS parsed, on every device, showing an iframe whose `src`
+   was never set until a click that had nothing left to reveal — hence a
+   permanently blank card blocking the page, exactly the original report.
+   `.submodal[hidden]` below (two simple selectors, strictly higher
+   specificity than `.submodal` alone) is what actually keeps it hidden. */
 .submodal{position:fixed;inset:0;z-index:999;display:flex;
   align-items:center;justify-content:center;padding:16px}
+.submodal[hidden]{display:none}
 .submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
 .submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
   box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
@@ -830,7 +848,7 @@ isn't a mystery. It's a business model.</p>
   <div class="submodal-backdrop"></div>
   <div class="submodal-card">
     <button type="button" class="submodal-close" aria-label="Close">&times;</button>
-    <iframe title="Subscribe to The Librarian's Ledger" loading="lazy"></iframe>
+    <iframe title="Subscribe to The Librarian's Ledger"></iframe>
   </div>
 </div>
 <script>
@@ -841,9 +859,9 @@ isn't a mystery. It's a business model.</p>
   var embedSrc = "https://misterlibrarian.substack.com/embed";
   function open(e){
     if (e) e.preventDefault();
-    if (!iframe.src) iframe.src = embedSrc;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
+    if (!iframe.src) iframe.src = embedSrc;
   }
   function close(){
     modal.hidden = true;

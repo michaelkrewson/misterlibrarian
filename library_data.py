@@ -4356,7 +4356,7 @@ DICTIONARY = [
      "SPEAKING WITH DIFFICULTY, having an impediment &mdash; built from mogis, 'hardly, with difficulty', and lalos, 'talking'. &#9888; It occurs exactly once in the whole New Testament, and its only other appearance anywhere in Greek Scripture is the Septuagint's own Isaiah 35:6, part of a prophecy of the messianic age: 'the tongue of the mogilalōn will speak plainly' (not yet on these pages). Mark reaches for this single rare word at exactly the healing that enacts it (7:32), without ever naming Isaiah &mdash; the vocabulary alone carries the claim.",
      ("Mark", 7, 32)),
     ("ephphatha", "Ephphatha", "Εφφαθα", "Ephphatha",
-     "BE OPENED &mdash; Aramaic, transliterated directly into the Greek text and then translated for the reader, exactly as this Gospel already does with <a href=\"dictionary.html#talitha\">Talitha koum</a> (5:41) and Boanerges (3:17). The third and last time Mark preserves the actual sound of Jesus's own spoken words before explaining what they meant, as though the original syllables themselves are part of what is being reported, not only their sense.",
+     "BE OPENED &mdash; Aramaic, transliterated directly into the Greek text and then translated for the reader, exactly as this Gospel already does with <a href=\"dictionary.html#talitha\">Talitha koum</a> (5:41) and Boanerges (3:17), and will do twice more before the book ends, at Gethsemane's 'Abba' (14:36) and the cross's 'Eloi, Eloi' (15:34) — the third of four times Mark preserves the actual sound of Jesus's own spoken words before explaining what they meant, as though the original syllables themselves are part of what is being reported, not only their sense.",
      ("Mark", 7, 34)),
 ]
 
@@ -19683,10 +19683,11 @@ DICTIONARY_ES = {
     "ephphatha": ("Efatá",
         "SÉ ABIERTO &mdash; arameo, transliterado directamente al texto griego y luego traducido para el "
         "lector, exactamente como este Evangelio ya hace con <a href=\"diccionario.html#talitha\">"
-        "Talita cum</a> (5:41) y Boanerges (3:17). La tercera y última vez que Marcos conserva el "
-        "sonido real de las propias palabras habladas por Jesús antes de explicar su significado, "
-        "como si las sílabas originales mismas formaran parte de lo que se relata, no solo su "
-        "sentido."),
+        "Talita cum</a> (5:41) y Boanerges (3:17), y lo hará dos veces más antes de que termine el "
+        "libro, en el «Abba» de Getsemaní (14:36) y el «Eloi, Eloi» de la cruz (15:34) —la tercera "
+        "de cuatro veces que Marcos conserva el sonido real de las propias palabras habladas por "
+        "Jesús antes de explicar su significado, como si las sílabas originales mismas formaran "
+        "parte de lo que se relata, no solo su sentido."),
     "qorban": ("qorbán / ofrenda",
         "OFRENDA &mdash; literalmente «lo que se acerca» (de qarav, «acercarse»). La palabra hebrea básica "
         "para un sacrificio no lo enmarca como destrucción sino como CERCANÍA: el adorador se acerca a "
