@@ -1166,22 +1166,34 @@ def _subscribe_modal():
     HTML attribute, not a class) is what keeps this invisible before JS
     runs; the trigger's own real href is the fallback if JS never runs.
 
-    ⚠️ The iframe carries NO `loading="lazy"` attribute (paid for on mobile
-    Safari, 2026-09-22) — it doesn't need one (the script above is already
-    the lazy-load: nothing ever sets `src` until the reader actually clicks
-    Subscribe), and adding one is actively harmful: `open()` used to set
-    `iframe.src` while the modal was still `hidden` (i.e. `display:none`,
-    no layout box) and only unhide it a line later. Desktop Chrome/Safari
-    mostly forgive that ordering, but mobile Safari's lazy-load heuristic
-    can permanently defer a `loading="lazy"` resource that had no layout
-    box at the moment its `src` was assigned — the frame never fetches
-    again until some unrelated scroll/resize nudges it, so a mobile reader
-    got a blank white card with no way to tell it was stuck rather than
-    loading. Fixed two ways, either sufficient alone: no `loading="lazy"`
-    attribute (a bare `src` assignment always navigates immediately,
-    visible or not), and `open()` now unhides the modal BEFORE setting
-    `src`, so even a future `loading="lazy"` re-add would see a real
-    layout box first.
+    ⚠️ The iframe carries NO `loading="lazy"` attribute — it doesn't need
+    one (the script is already the lazy-load: nothing sets `src` until the
+    reader clicks Subscribe), and `open()` unhides the modal BEFORE setting
+    `src` rather than after, so the iframe always has a real layout box the
+    moment it starts fetching. Neither of these was ever the actual bug
+    (below) — they're real hygiene, kept because they're harmless and
+    correct, not because they explain what readers saw.
+
+    ⚠️ THE ACTUAL BUG (found 2026-09-22, after the above shipped and a
+    reader still saw it broken): `.submodal{display:flex}` in the CSS and
+    the browser's own default `[hidden]{display:none}` have EQUAL
+    specificity, and an author stylesheet rule always wins over a
+    user-agent one at equal specificity regardless of source order — so
+    `display:flex` won on every single page load, `hidden` attribute or
+    not. This modal was never click-triggered in practice: it covered the
+    full viewport, showing an iframe whose `src` hadn't been set yet, on
+    every device, the instant the CSS parsed — confirmed locally via
+    `getComputedStyle(#submodal).display === "flex"` on a fresh load, no
+    click, full-viewport bounding box. That's a permanently blank card
+    blocking the page, exactly the original report, and exactly the CSS
+    mistake `#tiles[hidden],#archiveList[hidden],#loadMoreWrap[hidden]
+    {display:none!important}` (the view-toggle CSS, same file) already
+    exists to avoid — just not yet applied here. Real fix is the CSS rule
+    `.submodal[hidden]{display:none}` next to `.submodal` itself.
+    (A same-origin-link-only, JS-gated-by-`matchMedia` workaround was
+    tried and reverted once this was found — once the modal actually
+    honors `hidden`, there was never a mobile-specific defect for it to
+    work around.)
     """
     return ("""<div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
      aria-label="Subscribe to The Librarian's Ledger">
@@ -2396,10 +2408,28 @@ a{color:__ACCENT__}
    Substack's own /embed iframe is a fixed white box with no theming hook —
    wrong rendered inline in the page flow against this site's dark palette,
    but fine as a small floating card over a dimmed backdrop, which is what
-   this gives it. `hidden` (the HTML attribute the script toggles) is what
-   keeps it invisible; no extra display rule needed for that half. */
+   this gives it.
+   ⚠️ THE ACTUAL BUG (found 2026-09-22, after two rounds of chasing the
+   wrong thing in the iframe/lazy-load timing — see _subscribe_modal()'s
+   docstring): the comment that used to sit here claimed `hidden` alone
+   kept this invisible, "no extra display rule needed." That's false, and
+   it's the exact mistake `#tiles[hidden],#archiveList[hidden],
+   #loadMoreWrap[hidden]{display:none!important}` below (the view-toggle
+   section) already exists to avoid: `.submodal{display:flex}` and the UA
+   stylesheet's `[hidden]{display:none}` have EQUAL specificity, and an
+   author rule always beats a UA rule at equal specificity regardless of
+   source order — so `display:flex` won on every single page load,
+   `hidden` attribute or not. The modal was never click-triggered in
+   practice; it covered the whole viewport (confirmed via
+   getComputedStyle: `display: flex`, a full-viewport bounding box) the
+   instant the CSS parsed, on every device, showing an iframe whose `src`
+   was never set until a click that had nothing left to reveal — hence a
+   permanently blank card blocking the page, exactly the original report.
+   `.submodal[hidden]` below (two simple selectors, strictly higher
+   specificity than `.submodal` alone) is what actually keeps it hidden. */
 .submodal{position:fixed;inset:0;z-index:999;display:flex;
   align-items:center;justify-content:center;padding:16px}
+.submodal[hidden]{display:none}
 .submodal-backdrop{position:absolute;inset:0;background:rgba(6,11,20,.75)}
 .submodal-card{position:relative;z-index:1;background:#fff;border-radius:14px;
   box-shadow:0 24px 70px rgba(0,0,0,.55);max-width:100%;
