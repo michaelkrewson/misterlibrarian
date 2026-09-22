@@ -51,7 +51,7 @@
         },
         {
           "text": "Security researchers disclose \"Plugin4Shell\" on September 18, a zero-click remote-code-execution flaw letting attackers swap malicious plugin code past SHA-pinning checks in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI; Anthropic patches it in Claude Code 2.1.179, OpenAI in Codex 0.146.0.",
-          "href": ""
+          "href": "https://mistertranslation.com/notebook/a-pin-is-not-a-verification.html"
         },
         {
           "text": "Healthcare distributor McKesson discloses a cybersecurity breach detected August 25 involving unauthorized access to third-party applications, with the ShinyHunters extortion group claiming to have exfiltrated 284 million rows of patient data from its Oncology & Multispecialty and Medical-Surgical units.",
@@ -81,11 +81,11 @@
       "items": [
         {
           "text": "A UK Biobank study of 11,071 adults finds nighttime light exposure above 3 lux is linked to thickening of the heart's left ventricle wall and early signs of reduced cardiac function three years later, in research led by Tulane University's Lu Qi and published September 9 in the European Heart Journal.",
-          "href": ""
+          "href": "https://mistertranslation.com/health/does-light-at-night-hurt-your-heart.html"
         },
         {
           "text": "A Washington University School of Medicine study of more than 333,000 veterans with type 2 diabetes finds cardiovascular risk climbs the longer patients stay off GLP-1 drugs like Ozempic and Wegovy after stopping — 4% higher at six months, 14% at one year, 22% at two years — with the lost benefit not fully restored even after resuming treatment.",
-          "href": ""
+          "href": "https://mistertranslation.com/health/does-stopping-a-glp-1-raise-heart-risk.html"
         }
       ]
     }
