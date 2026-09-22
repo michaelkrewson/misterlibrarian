@@ -1516,7 +1516,7 @@ header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
 a{color:__ACCENT__}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.4px;
   font-family:ui-sans-serif,system-ui,sans-serif}
 /* The section, leading the date line, linked to its own page. */
 .esec{color:__ACCENT__;text-decoration:none}
