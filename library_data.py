@@ -8516,8 +8516,12 @@ ENCYCLOPEDIA = [
               "emperor himself; his son PHILIP the tetrarch enlarged the town and renamed it Caesarea in Augustus's "
               "honor, adding 'Philippi' ('of Philip') to distinguish it from the OTHER Caesarea his father had "
               "built on the coast (Caesarea Maritima, not on these pages). A city carrying Caesar's name twice "
-              "over is where Matthew 16:13 has Jesus ask his disciples who people say he is — the northernmost "
-              "point any Gospel records him traveling to, roughly forty kilometers north of the Sea of Galilee.",
+              "over is where <a href=\"matthew-16.html#v16-13\">Matthew 16:13</a> and "
+              "<a href=\"mark-8.html#v8-27\">Mark 8:27</a> have Jesus ask his disciples who people say he is "
+              "— roughly forty kilometers north of the Sea of Galilee, and as far north as any Gospel takes him "
+              "INLAND. ⚠ It is not the northernmost point in the Gospels outright: Mark's route one chapter "
+              "earlier goes through <a href=\"encyclopedia.html#sidon\">Sidon</a> on the coast "
+              "(<a href=\"mark-7.html#v7-31\">7:31</a>), about thirty kilometers further north still.",
          refs=[("Matthew", 16, 13), ("Mark", 8, 27)],
          coords=(33.2481, 35.6919, 0.02),
          modern="Banias, Golan Heights",
@@ -20635,9 +20639,13 @@ ENCYCLOPEDIA_ES["caesarea-philippi"] = ("Cesarea de Filipo",
     "Augusto y levantó allí un templo al emperador mismo; su hijo FILIPO el tetrarca ensanchó la ciudad "
     "y la renombró Cesarea en honor a Augusto, añadiendo «de Filipo» para distinguirla de la OTRA "
     "Cesarea que su padre había construido en la costa (Cesarea Marítima, todavía no en estas páginas). "
-    "Una ciudad que lleva el nombre de César dos veces es donde Mateo 16:13 tiene a Jesús preguntando a "
-    "sus discípulos quién dice la gente que es él — el punto más al norte al que cualquier Evangelio lo "
-    "registra viajando, a unos cuarenta kilómetros al norte del mar de Galilea.")
+    "Una ciudad que lleva el nombre de César dos veces es donde "
+    "<a href=\"matthew-16.es.html#v16-13\">Mateo 16:13</a> y <a href=\"mark-8.es.html#v8-27\">Marcos 8:27</a> "
+    "tienen a Jesús preguntando a sus discípulos quién dice la gente que es él — a unos cuarenta kilómetros al "
+    "norte del mar de Galilea, y lo más al norte que cualquier Evangelio lo lleva TIERRA ADENTRO. ⚠ No es el "
+    "punto más al norte de los Evangelios sin más: la ruta de Marcos un capítulo antes pasa por "
+    "<a href=\"enciclopedia.html#sidon\">Sidón</a>, en la costa (<a href=\"mark-7.es.html#v7-31\">7:31</a>), "
+    "unos treinta kilómetros más al norte todavía.")
 
 ENCYCLOPEDIA_ES["elijah"] = ("Elías",
     "El tisbita — el profeta que aparece en 1 Reyes 17 sin presentación, sin padre nombrado y sin relato "
