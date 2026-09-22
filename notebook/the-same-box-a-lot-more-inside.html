@@ -352,14 +352,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
-  overflow:hidden;background:#111a28}
-.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -541,28 +541,36 @@ have, not necessarily what a typical buyer will see day to day.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="what-a-locked-iphone-still-gives-up.html" data-search="what a locked iphone still gives up what mobile-forensic tools can recover from a locked iphone, what advanced data protection does and doesn&#x27;t cover, and the history behind it." data-tags="iphone ios digital-forensics cellebrite encryption apple bitcoin self-custody security technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 13, 2026</span>
-      <span class="ec-t">What a Locked iPhone Still Gives Up</span>
-      <span class="tile-thumb"><img src="img/thumb/enigma-machine-cia.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it.</span>
+      <span class="tile-media"><img src="img/enigma-machine-cia.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 13, 2026</span>
+        <span class="ec-t">What a Locked iPhone Still Gives Up</span>
+        <span class="ec-s">What mobile-forensic tools can recover from a locked iPhone, what Advanced Data Protection does and doesn&#x27;t cover, and the history behind it.</span>
+      </span>
     </a>
     <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed apple&#x27;s a20 pro is the first iphone chip on tsmc&#x27;s 2nm n2 process. what &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the finfet." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
-      <span class="tile-thumb"><img src="img/thumb/bell-labs-transistor-1948.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+      <span class="tile-media"><img src="img/bell-labs-transistor-1948.jpg" alt="" width="1600" height="799" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
+        <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+      </span>
     </a>
     <a class="tile" href="a-pin-is-not-a-verification.html" data-search="plugin4shell: a pin is not a verification plugin4shell let a git branch name override a sha-pinned plugin in claude code, codex, copilot and gemini cli. how the pin failed, and who&#x27;s patched." data-tags="plugin4shell ai-coding-agents claude-code codex github-copilot gemini-cli supply-chain-security git vulnerability-disclosure air-security">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
-      <span class="tile-thumb"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
+      <span class="tile-media"><img src="img/pin-tumbler-unlocked.jpg" alt="" width="800" height="600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
+        <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
+      </span>
     </a>
     <a class="tile" href="fifty-two-weeks-no-remainder.html" data-search="fifty-two weeks, no remainder did the qumran sect really use its 364-day calendar? a tel aviv university study in tarbiz argues yes — then explains why they stopped." data-tags="dead-sea-scrolls qumran archaeology calendars second-temple-judaism book-of-jubilees astronomy history">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
-      <span class="tile-thumb"><img src="img/thumb/qumran-cave-4-matson.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Did the Qumran sect really use its 364-day calendar? A Tel Aviv University study in Tarbiz argues yes — then explains why they stopped.</span>
+      <span class="tile-media"><img src="img/qumran-cave-4-matson.jpg" alt="" width="1456" height="1038" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
+        <span class="ec-s">Did the Qumran sect really use its 364-day calendar? A Tel Aviv University study in Tarbiz argues yes — then explains why they stopped.</span>
+      </span>
     </a>
     </div>
   </section>

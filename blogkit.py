@@ -195,58 +195,6 @@ def dim_attrs(img_dir, filename):
     return f' width="{d[0]}" height="{d[1]}"' if d else ""
 
 
-_THUMB_CACHE = {}
-
-
-def ensure_thumb(img_dir, filename, size=144):
-    """Relative path of a small, center-cropped square JPEG derivative of
-    `filename`, building it into `img_dir/thumb/` first if it's missing or
-    older than the source — or None if there's nothing to build.
-
-    For reusing an existing hero image as a card thumbnail without shipping
-    its full weight (heroes here commonly run 200-500KB) to every card on a
-    listing page. Returns None — never the original filename — for no
-    filename, a non-raster source (.svg), a missing/unreadable file, or no
-    Pillow; callers render a text-only card in that case, the same fail-open
-    contract as img_dims/dim_attrs. Cached per (img_dir, filename, size),
-    since a listing page asks for the same thumbnail once per card.
-    """
-    key = (img_dir, filename, size)
-    if key in _THUMB_CACHE:
-        return _THUMB_CACHE[key]
-    rel = _build_thumb(img_dir, filename, size)
-    _THUMB_CACHE[key] = rel
-    return rel
-
-
-def _build_thumb(img_dir, filename, size):
-    if not filename or filename.lower().endswith(".svg"):
-        return None
-    src = os.path.join(img_dir, filename)
-    name, _ext = os.path.splitext(filename)
-    rel = f"thumb/{name}.jpg"
-    dest = os.path.join(img_dir, "thumb", f"{name}.jpg")
-    try:
-        src_mtime = os.path.getmtime(src)
-    except OSError:
-        return None
-    try:
-        if os.path.getmtime(dest) >= src_mtime:
-            return rel
-    except OSError:
-        pass  # no derivative yet — fall through and build one
-    try:
-        from PIL import Image, ImageOps
-        os.makedirs(os.path.dirname(dest), exist_ok=True)
-        with Image.open(src) as im:
-            im = ImageOps.exif_transpose(im).convert("RGB")
-            im = ImageOps.fit(im, (size, size), Image.LANCZOS)
-            im.save(dest, "JPEG", quality=78, optimize=True, progressive=True)
-        return rel
-    except Exception:
-        return None
-
-
 # --------------------------------------------------------------------- feed ---
 
 def build_feed(posts, *, site_name, site_url, base, blurb, limit=30,

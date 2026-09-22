@@ -633,15 +633,12 @@ def _entry_card(e):
 _WS_RE = re.compile(r"\s+")
 
 
-TILE_THUMB_SIZE = 144  # 2x a 72px CSS box, for retina
-
-
 def _front_item(*, href, label, title, desc, date, tags=(), hero=""):
     """One entry in the single shape both `_tile` and `_archive_row` render
     from. `search` is the lowercased haystack the header search box matches.
     `hero` is the entry's own hero-image filename (in notebook/img/), if any
-    — `_tile` turns it into a small thumbnail; `_archive_row`'s list view
-    ignores it, that view is text-only by design."""
+    — `_tile` leads the card with it, banner-style; `_archive_row`'s list
+    view ignores it, that view is text-only by design."""
     return {"href": href, "label": label, "title": title, "desc": desc,
             "date": date, "tags": list(tags), "hero": hero,
             "search": _WS_RE.sub(" ", (title + " " + desc).lower()).strip()}
@@ -650,26 +647,28 @@ def _front_item(*, href, label, title, desc, date, tags=(), hero=""):
 def _tile(item):
     """A boxed grid tile. `data-search` is what the header search box's
     client-side filter matches; `data-tags` is what the tag chips match.
-    When the entry has a hero image, a small square crop of that same photo
-    (never a separate/stock image) sits between the title and the summary —
-    `blogkit.ensure_thumb` builds it from the existing hero so the card stays
-    light. No hero, or no Pillow at build time: the card renders text-only,
-    same as before."""
+    When the entry has a hero image, a full-width 16:9 crop of that same
+    photo (never a separate/stock image) leads the card — the same banner
+    treatment The Librarian Abroad's cards use, reusing the hero file
+    directly rather than a generated derivative (Abroad's own `_hero_img`
+    does the same: `object-fit:cover` costs nothing to crop, and these hero
+    photos are already sized for the web). No hero: the card renders
+    text-only, same as before."""
     data_tags = " ".join(blogkit.tag_slug(t) for t in item["tags"])
     media = ""
-    thumb = blogkit.ensure_thumb(os.path.join(OUT, "img"), item["hero"], TILE_THUMB_SIZE) \
-        if item["hero"] else None
-    if thumb:
-        media = ('      <span class="tile-thumb"><img src="img/%s" alt="" '
-                  'width="%d" height="%d" loading="lazy"/></span>\n'
-                  % (esc(thumb), TILE_THUMB_SIZE, TILE_THUMB_SIZE))
+    if item["hero"]:
+        dims = blogkit.dim_attrs(os.path.join(OUT, "img"), item["hero"])
+        media = ('      <span class="tile-media"><img src="img/%s" alt=""%s '
+                  'loading="lazy"/></span>\n' % (esc(item["hero"]), dims))
     return ('    <a class="tile" href="%s" data-search="%s" data-tags="%s">\n'
-            '      <span class="ec-d">%s</span>\n'
-            '      <span class="ec-t">%s</span>\n'
             '%s'
-            '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (esc(item["href"]), esc(item["search"]), esc(data_tags),
-                          esc(item["label"]), esc(item["title"]), media, esc(item["desc"])))
+            '      <span class="tile-body">\n'
+            '        <span class="ec-d">%s</span>\n'
+            '        <span class="ec-t">%s</span>\n'
+            '        <span class="ec-s">%s</span>\n'
+            '      </span>\n'
+            '    </a>' % (esc(item["href"]), esc(item["search"]), esc(data_tags), media,
+                          esc(item["label"]), esc(item["title"]), esc(item["desc"])))
 
 
 def _archive_row(item):
@@ -1568,14 +1567,14 @@ a{color:__ACCENT__}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
-  overflow:hidden;background:#111a28}
-.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }

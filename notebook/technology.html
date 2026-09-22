@@ -351,14 +351,14 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:block;text-decoration:none;overflow:hidden;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
-.tile-thumb{display:block;width:72px;height:72px;margin:2px 0 10px;border-radius:9px;
-  overflow:hidden;background:#111a28}
-.tile-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-media{display:block;margin:0;background:#111a28}
+.tile-media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile-body{display:block;padding:20px 22px}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -481,99 +481,131 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
     <div class="tilegrid" id="tiles">
     <a class="tile" href="a-pin-is-not-a-verification.html" data-search="plugin4shell: a pin is not a verification air security disclosed &quot;plugin4shell&quot; on september 17, 2026 — a zero-click flaw in claude code, openai codex, github copilot and gemini cli that let a hijacked git branch silently swap in different code than the one a plugin manifest had pinned by commit hash. openai&#x27;s own four-line patch note describes the whole bug: nobody checked what git actually checked out." data-tags="plugin4shell ai-coding-agents claude-code codex github-copilot gemini-cli supply-chain-security git vulnerability-disclosure air-security">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
-      <span class="tile-thumb"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">AIR Security disclosed &quot;Plugin4Shell&quot; on September 17, 2026 — a zero-click flaw in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI that let a hijacked git branch silently swap in different code than the one a plugin manifest had pinned by commit hash. OpenAI&#x27;s own four-line patch note describes the whole bug: nobody checked what git actually checked out.</span>
+      <span class="tile-media"><img src="img/pin-tumbler-unlocked.jpg" alt="" width="800" height="600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
+        <span class="ec-s">AIR Security disclosed &quot;Plugin4Shell&quot; on September 17, 2026 — a zero-click flaw in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI that let a hijacked git branch silently swap in different code than the one a plugin manifest had pinned by commit hash. OpenAI&#x27;s own four-line patch note describes the whole bug: nobody checked what git actually checked out.</span>
+      </span>
     </a>
     <a class="tile" href="fifty-two-weeks-no-remainder.html" data-search="fifty-two weeks, no remainder a study by prof. eshbal ratzon of tel aviv university argues that the qumran sect really did run its famous 364-day calendar in daily life — at least at first — and then quietly stopped, because 364 days is a day and a quarter short of a solar year and the error compounds. here is what the calendar was for, why a number divisible by seven was worth that much trouble, what the roughly twenty calendrical scrolls actually contain, and why the argument matters to anyone reading second temple texts." data-tags="dead-sea-scrolls qumran archaeology calendars second-temple-judaism book-of-jubilees astronomy history">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
-      <span class="tile-thumb"><img src="img/thumb/qumran-cave-4-matson.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">A study by Prof. Eshbal Ratzon of Tel Aviv University argues that the Qumran sect really did run its famous 364-day calendar in daily life — at least at first — and then quietly stopped, because 364 days is a day and a quarter short of a solar year and the error compounds. Here is what the calendar was for, why a number divisible by seven was worth that much trouble, what the roughly twenty calendrical scrolls actually contain, and why the argument matters to anyone reading Second Temple texts.</span>
+      <span class="tile-media"><img src="img/qumran-cave-4-matson.jpg" alt="" width="1456" height="1038" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
+        <span class="ec-s">A study by Prof. Eshbal Ratzon of Tel Aviv University argues that the Qumran sect really did run its famous 364-day calendar in daily life — at least at first — and then quietly stopped, because 364 days is a day and a quarter short of a solar year and the error compounds. Here is what the calendar was for, why a number divisible by seven was worth that much trouble, what the roughly twenty calendrical scrolls actually contain, and why the argument matters to anyone reading Second Temple texts.</span>
+      </span>
     </a>
     <a class="tile" href="the-calling-card-in-a-cats-kidneys.html" data-search="the calling card in a cat&#x27;s kidneys cat kidneys are stuffed with fat droplets, and nobody has known why for about 110 years. a study in current biology reports the answer: they are a reservoir for thirteen branched-chain fatty acids whose exact mix differs from cat to cat, holds steady within one animal, and survives on the ground for at least a day — a chemical calling card. then the obvious follow-up, which has a real and complicated literature: do people have one too, and could you identify someone from it?" data-tags="biology cats chemistry animal-behaviour kidneys forensic-science metabolomics scent">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">The Calling Card in a Cat&#x27;s Kidneys</span>
-      <span class="tile-thumb"><img src="img/thumb/cat-following-a-scent-trail.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Cat kidneys are stuffed with fat droplets, and nobody has known why for about 110 years. A study in Current Biology reports the answer: they are a reservoir for thirteen branched-chain fatty acids whose exact mix differs from cat to cat, holds steady within one animal, and survives on the ground for at least a day — a chemical calling card. Then the obvious follow-up, which has a real and complicated literature: do people have one too, and could you identify someone from it?</span>
+      <span class="tile-media"><img src="img/cat-following-a-scent-trail.jpg" alt="" width="1600" height="1064" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">The Calling Card in a Cat&#x27;s Kidneys</span>
+        <span class="ec-s">Cat kidneys are stuffed with fat droplets, and nobody has known why for about 110 years. A study in Current Biology reports the answer: they are a reservoir for thirteen branched-chain fatty acids whose exact mix differs from cat to cat, holds steady within one animal, and survives on the ground for at least a day — a chemical calling card. Then the obvious follow-up, which has a real and complicated literature: do people have one too, and could you identify someone from it?</span>
+      </span>
     </a>
     <a class="tile" href="the-most-downloaded-ai-models-in-the-world-are-alibabas.html" data-search="the most-downloaded ai models in the world are alibaba&#x27;s on 18 september alibaba&#x27;s qwen team shipped qwen3.8-omni-flash — one model that takes text, images, audio and video, holds a million tokens of context, and decides for itself which parts of a two-hour video are worth watching. the release is the news, but the program behind it is the story: qwen passed three billion downloads this summer, more than google&#x27;s and meta&#x27;s open models combined. here is what &quot;omnimodal&quot; actually means, what the 26 percent is measuring, and why a company most people know for e-commerce is a serious ai lab." data-tags="artificial-intelligence alibaba qwen open-weights china machine-learning deepseek multimodal">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">The Most-Downloaded AI Models in the World Are Alibaba&#x27;s</span>
-      <span class="tile-thumb"><img src="img/thumb/alibaba-hangzhou-headquarters.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">On 18 September Alibaba&#x27;s Qwen team shipped Qwen3.8-Omni-Flash — one model that takes text, images, audio and video, holds a million tokens of context, and decides for itself which parts of a two-hour video are worth watching. The release is the news, but the program behind it is the story: Qwen passed three billion downloads this summer, more than Google&#x27;s and Meta&#x27;s open models combined. Here is what &quot;omnimodal&quot; actually means, what the 26 percent is measuring, and why a company most people know for e-commerce is a serious AI lab.</span>
+      <span class="tile-media"><img src="img/alibaba-hangzhou-headquarters.jpg" alt="" width="1600" height="1077" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">The Most-Downloaded AI Models in the World Are Alibaba&#x27;s</span>
+        <span class="ec-s">On 18 September Alibaba&#x27;s Qwen team shipped Qwen3.8-Omni-Flash — one model that takes text, images, audio and video, holds a million tokens of context, and decides for itself which parts of a two-hour video are worth watching. The release is the news, but the program behind it is the story: Qwen passed three billion downloads this summer, more than Google&#x27;s and Meta&#x27;s open models combined. Here is what &quot;omnimodal&quot; actually means, what the 26 percent is measuring, and why a company most people know for e-commerce is a serious AI lab.</span>
+      </span>
     </a>
     <a class="tile" href="4-7-sigma-and-a-new-kind-of-spooky.html" data-search="4.7 sigma, and a new kind of spooky cern&#x27;s atlas and cms experiments have found strong evidence that pairs of z bosons — the carriers of the weak nuclear force — come out of certain higgs boson decays quantum entangled. it&#x27;s the first time entanglement has been measured between two massive force-carrying particles rather than matter particles, and it happened because a higgs boson has zero spin and a z boson doesn&#x27;t, which leaves the two z bosons no honest way to be independent of each other. here&#x27;s what was actually measured, how sure they are, and what it isn&#x27;t." data-tags="physics particle-physics cern large-hadron-collider higgs-boson quantum-mechanics entanglement einstein">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 20, 2026</span>
-      <span class="ec-t">4.7 Sigma, and a New Kind of Spooky</span>
-      <span class="tile-thumb"><img src="img/thumb/atlas-detector-cern-2007.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">CERN&#x27;s ATLAS and CMS experiments have found strong evidence that pairs of Z bosons — the carriers of the weak nuclear force — come out of certain Higgs boson decays quantum entangled. It&#x27;s the first time entanglement has been measured between two massive force-carrying particles rather than matter particles, and it happened because a Higgs boson has zero spin and a Z boson doesn&#x27;t, which leaves the two Z bosons no honest way to be independent of each other. Here&#x27;s what was actually measured, how sure they are, and what it isn&#x27;t.</span>
+      <span class="tile-media"><img src="img/atlas-detector-cern-2007.jpg" alt="" width="836" height="1600" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 20, 2026</span>
+        <span class="ec-t">4.7 Sigma, and a New Kind of Spooky</span>
+        <span class="ec-s">CERN&#x27;s ATLAS and CMS experiments have found strong evidence that pairs of Z bosons — the carriers of the weak nuclear force — come out of certain Higgs boson decays quantum entangled. It&#x27;s the first time entanglement has been measured between two massive force-carrying particles rather than matter particles, and it happened because a Higgs boson has zero spin and a Z boson doesn&#x27;t, which leaves the two Z bosons no honest way to be independent of each other. Here&#x27;s what was actually measured, how sure they are, and what it isn&#x27;t.</span>
+      </span>
     </a>
     <a class="tile" href="the-same-box-a-lot-more-inside.html" data-search="the same box, a lot more inside apple&#x27;s new mac studio ships september 22 with m5 max and m5 ultra chips, up to 512gb of unified memory, and the same 7.7-inch-square case it&#x27;s shipped since 2023. i&#x27;ve always liked apple machines, and i was expecting a smaller redesign — it isn&#x27;t one, and the real story turns out to be better than that: the same little box got a lot more machine crammed into it, at the same starting price." data-tags="apple mac-studio m5-max m5-ultra apple-silicon hardware">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
-      <span class="ec-t">The Same Box, a Lot More Inside</span>
-      <span class="tile-thumb"><img src="img/thumb/mac-studio-2022-case.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Apple&#x27;s new Mac Studio ships September 22 with M5 Max and M5 Ultra chips, up to 512GB of unified memory, and the same 7.7-inch-square case it&#x27;s shipped since 2023. I&#x27;ve always liked Apple machines, and I was expecting a smaller redesign — it isn&#x27;t one, and the real story turns out to be better than that: the same little box got a lot more machine crammed into it, at the same starting price.</span>
+      <span class="tile-media"><img src="img/mac-studio-2022-case.jpg" alt="" width="1600" height="1143" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
+        <span class="ec-t">The Same Box, a Lot More Inside</span>
+        <span class="ec-s">Apple&#x27;s new Mac Studio ships September 22 with M5 Max and M5 Ultra chips, up to 512GB of unified memory, and the same 7.7-inch-square case it&#x27;s shipped since 2023. I&#x27;ve always liked Apple machines, and I was expecting a smaller redesign — it isn&#x27;t one, and the real story turns out to be better than that: the same little box got a lot more machine crammed into it, at the same starting price.</span>
+      </span>
     </a>
     <a class="tile" href="twice-the-mass-of-jupiter-and-a-problem-for-how-stars-form.html" data-search="twice the mass of jupiter, and a problem for how stars form the james webb space telescope&#x27;s newest, largest public image is a panorama of a stellar nursery called ic 348 — and buried in it are the smallest brown dwarfs ever confirmed, weighing in at about twice the mass of jupiter. that number is smaller than the theory of how stars form says it should be able to produce, and one of the objects appears to have its own disk of material, meaning something that is itself barely planet-sized may be forming planets of its own." data-tags="james-webb-space-telescope astronomy brown-dwarfs star-formation ic-348 space">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
-      <span class="ec-t">Twice the Mass of Jupiter, and a Problem for How Stars Form</span>
-      <span class="tile-thumb"><img src="img/thumb/webb-ic348-brown-dwarfs.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">The James Webb Space Telescope&#x27;s newest, largest public image is a panorama of a stellar nursery called IC 348 — and buried in it are the smallest brown dwarfs ever confirmed, weighing in at about twice the mass of Jupiter. That number is smaller than the theory of how stars form says it should be able to produce, and one of the objects appears to have its own disk of material, meaning something that is itself barely planet-sized may be forming planets of its own.</span>
+      <span class="tile-media"><img src="img/webb-ic348-brown-dwarfs.jpg" alt="" width="1600" height="903" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
+        <span class="ec-t">Twice the Mass of Jupiter, and a Problem for How Stars Form</span>
+        <span class="ec-s">The James Webb Space Telescope&#x27;s newest, largest public image is a panorama of a stellar nursery called IC 348 — and buried in it are the smallest brown dwarfs ever confirmed, weighing in at about twice the mass of Jupiter. That number is smaller than the theory of how stars form says it should be able to produce, and one of the objects appears to have its own disk of material, meaning something that is itself barely planet-sized may be forming planets of its own.</span>
+      </span>
     </a>
     <a class="tile" href="the-mosquito-that-cant-carry-it.html" data-search="the mosquito that can&#x27;t carry it malaria killed about 610,000 people in 2024, three quarters of them children under five. one approach to ending it does not spray anything, distribute anything, or ask anyone to take a pill — it edits the mosquito so the parasite cannot survive inside it, and lets the edit spread itself through the wild population. there are two schools of thought about how to do that, they disagree about whether the mosquito should live, and the better-funded one just had its field programme shut down by a government. this is how the mechanism works and where it actually stands." data-tags="gene-drive malaria crispr mosquitoes genetics public-health uc-davis biotechnology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 17, 2026</span>
-      <span class="ec-t">The Mosquito That Can&#x27;t Carry It</span>
-      <span class="ec-s">Malaria killed about 610,000 people in 2024, three quarters of them children under five. One approach to ending it does not spray anything, distribute anything, or ask anyone to take a pill — it edits the mosquito so the parasite cannot survive inside it, and lets the edit spread itself through the wild population. There are two schools of thought about how to do that, they disagree about whether the mosquito should live, and the better-funded one just had its field programme shut down by a government. This is how the mechanism works and where it actually stands.</span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 17, 2026</span>
+        <span class="ec-t">The Mosquito That Can&#x27;t Carry It</span>
+        <span class="ec-s">Malaria killed about 610,000 people in 2024, three quarters of them children under five. One approach to ending it does not spray anything, distribute anything, or ask anyone to take a pill — it edits the mosquito so the parasite cannot survive inside it, and lets the edit spread itself through the wild population. There are two schools of thought about how to do that, they disagree about whether the mosquito should live, and the better-funded one just had its field programme shut down by a government. This is how the mechanism works and where it actually stands.</span>
+      </span>
     </a>
     <a class="tile" href="what-a-locked-iphone-still-gives-up.html" data-search="what a locked iphone still gives up a phone-forensics demonstration circulating on x this week is a reminder that &quot;only law enforcement has this&quot; was never really the boundary — the tools, the vendors and the exploits all move. what a locked iphone actually protects, what advanced data protection does and doesn&#x27;t cover, and a short history of who has had this capability and for how long." data-tags="iphone ios digital-forensics cellebrite encryption apple bitcoin self-custody security technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 13, 2026</span>
-      <span class="ec-t">What a Locked iPhone Still Gives Up</span>
-      <span class="tile-thumb"><img src="img/thumb/enigma-machine-cia.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">A phone-forensics demonstration circulating on X this week is a reminder that &quot;only law enforcement has this&quot; was never really the boundary — the tools, the vendors and the exploits all move. What a locked iPhone actually protects, what Advanced Data Protection does and doesn&#x27;t cover, and a short history of who has had this capability and for how long.</span>
+      <span class="tile-media"><img src="img/enigma-machine-cia.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 13, 2026</span>
+        <span class="ec-t">What a Locked iPhone Still Gives Up</span>
+        <span class="ec-s">A phone-forensics demonstration circulating on X this week is a reminder that &quot;only law enforcement has this&quot; was never really the boundary — the tools, the vendors and the exploits all move. What a locked iPhone actually protects, what Advanced Data Protection does and doesn&#x27;t cover, and a short history of who has had this capability and for how long.</span>
+      </span>
     </a>
     <a class="tile" href="antarctica-gained-ice-and-the-reason-was-far-away.html" data-search="antarctica gained 695 billion tons of ice, and the reason was seven thousand kilometres away between july 2021 and april 2023 the antarctic ice sheet got heavier by about 695 billion tons — the largest gain in the twenty-four-year satellite-gravity record. a paper in nature traces it to a warm patch of tropical ocean that bent the atmosphere over east antarctica and turned it into a snow funnel. the headline is a gift to anyone who wants to misread it. the paper is not: two decades of losses at 140 billion tons a year are still there, and the gain is a weather event, not a trend." data-tags="climate antarctica ice-sheet sea-level satellites grace weather science">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
-      <span class="tile-thumb"><img src="img/thumb/antarctica-blue-marble.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Between July 2021 and April 2023 the Antarctic ice sheet got heavier by about 695 billion tons — the largest gain in the twenty-four-year satellite-gravity record. A paper in Nature traces it to a warm patch of tropical ocean that bent the atmosphere over East Antarctica and turned it into a snow funnel. The headline is a gift to anyone who wants to misread it. The paper is not: two decades of losses at 140 billion tons a year are still there, and the gain is a weather event, not a trend.</span>
+      <span class="tile-media"><img src="img/antarctica-blue-marble.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Antarctica Gained 695 Billion Tons of Ice, and the Reason Was Seven Thousand Kilometres Away</span>
+        <span class="ec-s">Between July 2021 and April 2023 the Antarctic ice sheet got heavier by about 695 billion tons — the largest gain in the twenty-four-year satellite-gravity record. A paper in Nature traces it to a warm patch of tropical ocean that bent the atmosphere over East Antarctica and turned it into a snow funnel. The headline is a gift to anyone who wants to misread it. The paper is not: two decades of losses at 140 billion tons a year are still there, and the gain is a weather event, not a trend.</span>
+      </span>
     </a>
     <a class="tile" href="bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html" data-search="eight years to mercury, and one chance to stop on 3 september the bepicolombo spacecraft, two hundred million kilometres from earth, let go of the engine that carried it for eight years and 9.9 billion kilometres. on 21 november it has to stop at mercury, the hardest planet in the solar system to arrive at, using a sequence it will run on its own because the radio round-trip is too long to help. a 2024 power fault already cost it eleven months. this is what it is for, why the arrival is so hard, and what the last flyby found on the way in." data-tags="space mercury bepicolombo esa jaxa planetary-science spaceflight engineering">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
-      <span class="tile-thumb"><img src="img/thumb/mercury-messenger-color.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">On 3 September the BepiColombo spacecraft, two hundred million kilometres from Earth, let go of the engine that carried it for eight years and 9.9 billion kilometres. On 21 November it has to stop at Mercury, the hardest planet in the solar system to arrive at, using a sequence it will run on its own because the radio round-trip is too long to help. A 2024 power fault already cost it eleven months. This is what it is for, why the arrival is so hard, and what the last flyby found on the way in.</span>
+      <span class="tile-media"><img src="img/mercury-messenger-color.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Eight Years to Mercury, and One Chance to Stop</span>
+        <span class="ec-s">On 3 September the BepiColombo spacecraft, two hundred million kilometres from Earth, let go of the engine that carried it for eight years and 9.9 billion kilometres. On 21 November it has to stop at Mercury, the hardest planet in the solar system to arrive at, using a sequence it will run on its own because the radio round-trip is too long to help. A 2024 power fault already cost it eleven months. This is what it is for, why the arrival is so hard, and what the last flyby found on the way in.</span>
+      </span>
     </a>
     <a class="tile" href="galileos-experiment-with-one-atom-in-two-places.html" data-search="galileo&#x27;s experiment, done with one atom in two places a team including roger penrose has dropped a rubidium atom that was, in the quantum sense, in two places at once — one half falling freely, the other held still — and read off how gravity changed it. einstein&#x27;s equivalence principle survived. what makes it worth an entry is not the result but the ladder it starts: the same instrument, with heavier and heavier objects, could eventually test penrose&#x27;s own idea that gravity is what stops big things from being in two places at once. he helped build the tool that could prove him wrong." data-tags="physics quantum-mechanics gravity einstein penrose science experiments">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Galileo&#x27;s Experiment, Done With One Atom in Two Places</span>
-      <span class="tile-thumb"><img src="img/thumb/galileo-sustermans-1636.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">A team including Roger Penrose has dropped a rubidium atom that was, in the quantum sense, in two places at once — one half falling freely, the other held still — and read off how gravity changed it. Einstein&#x27;s equivalence principle survived. What makes it worth an entry is not the result but the ladder it starts: the same instrument, with heavier and heavier objects, could eventually test Penrose&#x27;s own idea that gravity is what stops big things from being in two places at once. He helped build the tool that could prove him wrong.</span>
+      <span class="tile-media"><img src="img/galileo-sustermans-1636.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Galileo&#x27;s Experiment, Done With One Atom in Two Places</span>
+        <span class="ec-s">A team including Roger Penrose has dropped a rubidium atom that was, in the quantum sense, in two places at once — one half falling freely, the other held still — and read off how gravity changed it. Einstein&#x27;s equivalence principle survived. What makes it worth an entry is not the result but the ladder it starts: the same instrument, with heavier and heavier objects, could eventually test Penrose&#x27;s own idea that gravity is what stops big things from being in two places at once. He helped build the tool that could prove him wrong.</span>
+      </span>
     </a>
     <a class="tile" href="not-available-on-this-connection.html" data-search="not available on this connection anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated claude code skills were costing me. it failed three times, and once, when it printed the true reason why, the assistant&#x27;s own reply talked past it. the fourth try stopped refusing the connection and gave me nothing anyway — four attempts in, i still have not been able to use it." data-tags="claude-code anthropic artificial-intelligence ai software documentation debugging">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Not Available on This Connection</span>
-      <span class="tile-thumb"><img src="img/thumb/bell-telephone-office-hamburg-1900.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me. It failed three times, and once, when it printed the true reason why, the assistant&#x27;s own reply talked past it. The fourth try stopped refusing the connection and gave me nothing anyway — four attempts in, I still have not been able to use it.</span>
+      <span class="tile-media"><img src="img/bell-telephone-office-hamburg-1900.jpg" alt="" width="640" height="485" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Not Available on This Connection</span>
+        <span class="ec-s">Anthropic&#x27;s own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me. It failed three times, and once, when it printed the true reason why, the assistant&#x27;s own reply talked past it. The fourth try stopped refusing the connection and gave me nothing anyway — four attempts in, I still have not been able to use it.</span>
+      </span>
     </a>
     <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated in one week in september 2026: openai shipped a model its president called the start of the agi era, then asked congress for mandatory safety rules it had spent two years opposing; it put its most prominent internal critic on the board, and he said the industry was not on track; anthropic published a report saying its own model had been used to write missile-guidance software in yemen and to run the largest data-theft campaign it had ever measured. i use one of these tools every day. this is an attempt to say what changed, and what the three explanations are." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
-      <span class="tile-thumb"><img src="img/thumb/eniac-1946.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">In one week in September 2026: OpenAI shipped a model its president called the start of the AGI era, then asked Congress for mandatory safety rules it had spent two years opposing; it put its most prominent internal critic on the board, and he said the industry was not on track; Anthropic published a report saying its own model had been used to write missile-guidance software in Yemen and to run the largest data-theft campaign it had ever measured. I use one of these tools every day. This is an attempt to say what changed, and what the three explanations are.</span>
+      <span class="tile-media"><img src="img/eniac-1946.jpg" alt="" width="1340" height="670" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
+        <span class="ec-s">In one week in September 2026: OpenAI shipped a model its president called the start of the AGI era, then asked Congress for mandatory safety rules it had spent two years opposing; it put its most prominent internal critic on the board, and he said the industry was not on track; Anthropic published a report saying its own model had been used to write missile-guidance software in Yemen and to run the largest data-theft campaign it had ever measured. I use one of these tools every day. This is an attempt to say what changed, and what the three explanations are.</span>
+      </span>
     </a>
     <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed the a20 pro in the iphone 18 pro is the first phone chip made on a &quot;2-nanometre&quot; process. nothing on it is two nanometres wide; the number stopped measuring anything about a decade ago. what did change is real and fourteen years overdue: the transistor&#x27;s gate now wraps all the way around the channel instead of three sides of a fin. this is what that means, why the fin had to go, and why the label survives anyway." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
-      <span class="tile-thumb"><img src="img/thumb/bell-labs-transistor-1948.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">The A20 Pro in the iPhone 18 Pro is the first phone chip made on a &quot;2-nanometre&quot; process. Nothing on it is two nanometres wide; the number stopped measuring anything about a decade ago. What did change is real and fourteen years overdue: the transistor&#x27;s gate now wraps all the way around the channel instead of three sides of a fin. This is what that means, why the fin had to go, and why the label survives anyway.</span>
+      <span class="tile-media"><img src="img/bell-labs-transistor-1948.jpg" alt="" width="1600" height="799" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
+        <span class="ec-s">The A20 Pro in the iPhone 18 Pro is the first phone chip made on a &quot;2-nanometre&quot; process. Nothing on it is two nanometres wide; the number stopped measuring anything about a decade ago. What did change is real and fourteen years overdue: the transistor&#x27;s gate now wraps all the way around the channel instead of three sides of a fin. This is what that means, why the fin had to go, and why the label survives anyway.</span>
+      </span>
     </a>
     <a class="tile" href="my-collaborator-has-no-memory.html" data-search="my collaborator has no memory except the notes i keep for it for three months i have worked every day with an ai coding assistant that wakes up each session knowing nothing about the last one. what it knows, it reads from a file. that file grew to 685 kilobytes, went stale in ways that reached the real-money side of the project, and turned into the best lesson in institutional memory i have had. this is what it is like to run a one-person shop with an amnesiac partner, and why the answer turned out to be less writing, not more." data-tags="artificial-intelligence ai claude-code memory documentation software notes">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
-      <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
-      <span class="tile-thumb"><img src="img/thumb/usda-card-catalog-1936.jpg" alt="" width="144" height="144" loading="lazy"/></span>
-      <span class="ec-s">For three months I have worked every day with an AI coding assistant that wakes up each session knowing nothing about the last one. What it knows, it reads from a file. That file grew to 685 kilobytes, went stale in ways that reached the real-money side of the project, and turned into the best lesson in institutional memory I have had. This is what it is like to run a one-person shop with an amnesiac partner, and why the answer turned out to be less writing, not more.</span>
+      <span class="tile-media"><img src="img/usda-card-catalog-1936.jpg" alt="" width="1600" height="800" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 11, 2026</span>
+        <span class="ec-t">My Collaborator Has No Memory Except the Notes I Keep for It</span>
+        <span class="ec-s">For three months I have worked every day with an AI coding assistant that wakes up each session knowing nothing about the last one. What it knows, it reads from a file. That file grew to 685 kilobytes, went stale in ways that reached the real-money side of the project, and turned into the best lesson in institutional memory I have had. This is what it is like to run a one-person shop with an amnesiac partner, and why the answer turned out to be less writing, not more.</span>
+      </span>
     </a>
     </div>
     <ul class="archive" id="archiveList" hidden>
