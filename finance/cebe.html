@@ -428,8 +428,25 @@ a{color:#f7931a}
    Substack's own /embed iframe is a fixed white box with no theming hook —
    wrong rendered inline in the page flow against this site's dark palette,
    but fine as a small floating card over a dimmed backdrop, which is what
-   this gives it. `hidden` (the HTML attribute the script toggles) is what
-   keeps it invisible; no extra display rule needed for that half. */
+   this gives it.
+   ⚠️ THE ACTUAL BUG (found 2026-09-22, after two rounds of chasing the
+   wrong thing in the iframe/lazy-load timing — see _subscribe_modal()'s
+   docstring): the comment that used to sit here claimed `hidden` alone
+   kept this invisible, "no extra display rule needed." That's false, and
+   it's the exact mistake `#tiles[hidden],#archiveList[hidden],
+   #loadMoreWrap[hidden]{display:none!important}` below (the view-toggle
+   section) already exists to avoid: `.submodal{display:flex}` and the UA
+   stylesheet's `[hidden]{display:none}` have EQUAL specificity, and an
+   author rule always beats a UA rule at equal specificity regardless of
+   source order — so `display:flex` won on every single page load,
+   `hidden` attribute or not. The modal was never click-triggered in
+   practice; it covered the whole viewport (confirmed via
+   getComputedStyle: `display: flex`, a full-viewport bounding box) the
+   instant the CSS parsed, on every device, showing an iframe whose `src`
+   was never set until a click that had nothing left to reveal — hence a
+   permanently blank card blocking the page, exactly the original report.
+   `.submodal[hidden]` below (two simple selectors, strictly higher
+   specificity than `.submodal` alone) is what actually keeps it hidden. */
 .submodal{position:fixed;inset:0;z-index:999;display:flex;
   align-items:center;justify-content:center;padding:16px}
 .submodal[hidden]{display:none}
@@ -711,7 +728,7 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
   all belonged to you. It doesn't — debt and preferred stock sit ahead of common
   stock in line. <span class="cbe-hl">CEBE</span> answers the sharper question:
   what's actually left once they're paid? Click any column to sort.</p>
-  <p class="stamp">Updated 2026-09-21 23:07 UTC · BTC $86,584
+  <p class="stamp">Updated 2026-09-22 04:21 UTC · BTC $85,507
     <span class="dot">·</span><span class="hl">25 companies priced</span></p>
   <div class="tw">
   <table class="board cbe">
@@ -732,7 +749,7 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
       </tr>
     </thead>
     <tbody id="cbe-tbody">
-      <tr data-price="0.217" data-mnav="0.051" data-claimspct="9.7" data-cebebtc="2617.5" data-sats100="2058751" data-satsshare="4467" data-btc="2899" data-claimsusd="24373210" data-coverage="" data-stress50="1837344">
+      <tr data-price="0.217" data-mnav="0.051" data-claimspct="9.8" data-cebebtc="2613.96" data-sats100="2055961" data-satsshare="4461" data-btc="2899" data-claimsusd="24373210" data-coverage="" data-stress50="1831764">
         <td class="rk">1</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/ddc.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">DDC</span>
@@ -740,16 +757,16 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         </span></span></td>
         <td>$0.22</td>
         <td><span class="cbe-g">0.05× ◆</span></td>
-        <td><span class="cbe-g">9.7%</span></td>
-        <td class="">2,618 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">2,058,751</td>
-        <td>4,467</td>
+        <td><span class="cbe-g">9.8%</span></td>
+        <td class="">2,614 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">2,055,961</td>
+        <td>4,461</td>
         <td>2,899</td>
         <td title="Debt $24 M · Preferred $0 · break-even BTC price ~$8,407" class="">$24 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 2,058,751 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 2,003,400; at BTC −50% it would read 1,837,344. Not a forecast — a sensitivity test."><span class="cbe-sub">2,003,400</span> / <span class="">1,837,344</span></span></td>
+        <td><span title="At today&#x27;s price this reads 2,055,961 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 1,999,912; at BTC −50% it would read 1,831,764. Not a forecast — a sensitivity test."><span class="cbe-sub">1,999,912</span> / <span class="">1,831,764</span></span></td>
       </tr>
-      <tr data-price="0.2076" data-mnav="0.231" data-claimspct="7.6" data-cebebtc="3240.76" data-sats100="461306" data-satsshare="958" data-btc="3506.4" data-claimsusd="23000000" data-coverage="" data-stress50="423494">
+      <tr data-price="0.2076" data-mnav="0.234" data-claimspct="7.7" data-cebebtc="3237.41" data-sats100="460830" data-satsshare="957" data-btc="3506.4" data-claimsusd="23000000" data-coverage="" data-stress50="422541">
         <td class="rk">2</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">H</span><span class="nm">
           <span class="n1">HOGPF</span>
@@ -757,57 +774,57 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         </span></span></td>
         <td>$0.21</td>
         <td><span class="cbe-g">0.23× ◆</span></td>
-        <td><span class="cbe-g">7.6%</span></td>
-        <td class="">3,241 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">461,306</td>
-        <td>958</td>
+        <td><span class="cbe-g">7.7%</span></td>
+        <td class="">3,237 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">460,830</td>
+        <td>957</td>
         <td>3,506</td>
         <td title="Debt $23 M · Preferred $0 · break-even BTC price ~$6,559" class="">$23 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 461,306 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 451,853; at BTC −50% it would read 423,494. Not a forecast — a sensitivity test."><span class="cbe-sub">451,853</span> / <span class="">423,494</span></span></td>
+        <td><span title="At today&#x27;s price this reads 460,830 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 451,258; at BTC −50% it would read 422,541. Not a forecast — a sensitivity test."><span class="cbe-sub">451,258</span> / <span class="">422,541</span></span></td>
       </tr>
-      <tr data-price="1.83" data-mnav="0.629" data-claimspct="4.1" data-cebebtc="41253.72" data-sats100="176117" data-satsshare="3223" data-btc="43000" data-claimsusd="151200000" data-coverage="" data-stress50="168662">
+      <tr data-price="1.84" data-mnav="0.641" data-claimspct="4.1" data-cebebtc="41231.71" data-sats100="175067" data-satsshare="3221" data-btc="43000" data-claimsusd="151200000" data-coverage="" data-stress50="167559">
         <td class="rk">3</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/metaplanet.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">MTPLF</span>
           <span class="cbe-sub">Metaplanet · 3350.T · 🇯🇵</span>
         </span></span></td>
-        <td>$1.83</td>
-        <td><span class="cbe-g">0.63× ◆</span></td>
+        <td>$1.84</td>
+        <td><span class="cbe-g">0.64× ◆</span></td>
         <td><span class="cbe-g">4.1%</span></td>
-        <td class="">41,254 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">176,117</td>
-        <td>3,223</td>
+        <td class="">41,232 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">175,067</td>
+        <td>3,221</td>
         <td>43,000</td>
         <td title="Debt $0 · Preferred $151 M · break-even BTC price ~$3,516" class="">$151 M</td>
         <td><span class="cbe-sub" title="Real preferred stock exists, but this company&#x27;s operating cash flow isn&#x27;t disclosed at a comparable (core-business-only) level — showing a number here would mean forcing one, not reporting one">n/a</span></td>
-        <td><span title="At today&#x27;s price this reads 176,117 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 174,254; at BTC −50% it would read 168,662. Not a forecast — a sensitivity test."><span class="cbe-sub">174,254</span> / <span class="">168,662</span></span></td>
+        <td><span title="At today&#x27;s price this reads 175,067 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 173,190; at BTC −50% it would read 167,559. Not a forecast — a sensitivity test."><span class="cbe-sub">173,190</span> / <span class="">167,559</span></span></td>
       </tr>
-      <tr data-price="6.61" data-mnav="0.608" data-claimspct="12.9" data-cebebtc="37895.19" data-sats100="165307" data-satsshare="10927" data-btc="43514" data-claimsusd="486500000" data-coverage="" data-stress50="140796">
+      <tr data-price="6.61" data-mnav="0.616" data-claimspct="13.1" data-cebebtc="37824.38" data-sats100="164998" data-satsshare="10906" data-btc="43514" data-claimsusd="486500000" data-coverage="" data-stress50="140179">
         <td class="rk">4</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">T</span><span class="nm">
           <span class="n1">XXI</span>
           <span class="cbe-sub">Twenty One Capital · 🇺🇸</span>
         </span></span></td>
         <td>$6.61</td>
-        <td><span class="cbe-g">0.61× ◆</span></td>
-        <td><span class="">12.9%</span></td>
-        <td class="">37,895 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">165,307</td>
-        <td>10,927</td>
+        <td><span class="cbe-g">0.62× ◆</span></td>
+        <td><span class="">13.1%</span></td>
+        <td class="">37,824 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">164,998</td>
+        <td>10,906</td>
         <td>43,514</td>
         <td title="Debt $486 M · Preferred $0 · break-even BTC price ~$11,180" class="">$486 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 165,307 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 159,179; at BTC −50% it would read 140,796. Not a forecast — a sensitivity test."><span class="cbe-sub">159,179</span> / <span class="">140,796</span></span></td>
+        <td><span title="At today&#x27;s price this reads 164,998 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 158,793; at BTC −50% it would read 140,179. Not a forecast — a sensitivity test."><span class="cbe-sub">158,793</span> / <span class="">140,179</span></span></td>
       </tr>
-      <tr data-price="8.01" data-mnav="0.716" data-claimspct="0.0" data-cebebtc="1046.0" data-sats100="161196" data-satsshare="12912" data-btc="1046" data-claimsusd="0" data-coverage="" data-stress50="161196">
+      <tr data-price="8.01" data-mnav="0.726" data-claimspct="0.0" data-cebebtc="1046.0" data-sats100="161196" data-satsshare="12912" data-btc="1046" data-claimsusd="0" data-coverage="" data-stress50="161196">
         <td class="rk">5</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5ec98f22;color:#5ec98f;border-color:#5ec98f55">Z</span><span class="nm">
           <span class="n1">ZOOZ</span>
           <span class="cbe-sub">ZOOZ Strategy · 🇺🇸</span>
         </span></span></td>
         <td>$8.01</td>
-        <td><span class="cbe-g">0.72× ◆</span></td>
+        <td><span class="cbe-g">0.73× ◆</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">1,046 BTC</td>
         <td class="cbe-hl" style="font-weight:700">161,196</td>
@@ -817,14 +834,14 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 161,196 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 161,196; at BTC −50% it would read 161,196. Not a forecast — a sensitivity test."><span class="cbe-sub">161,196</span> / <span class="">161,196</span></span></td>
       </tr>
-      <tr data-price="2.42" data-mnav="1.194" data-claimspct="0.0" data-cebebtc="1083.0" data-sats100="96700" data-satsshare="2340" data-btc="1083" data-claimsusd="0" data-coverage="" data-stress50="96700">
+      <tr data-price="2.42" data-mnav="1.209" data-claimspct="0.0" data-cebebtc="1083.0" data-sats100="96700" data-satsshare="2340" data-btc="1083" data-claimsusd="0" data-coverage="" data-stress50="96700">
         <td class="rk">6</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">K</span><span class="nm">
           <span class="n1">KULR</span>
           <span class="cbe-sub">KULR Technology · 🇺🇸</span>
         </span></span></td>
         <td>$2.42</td>
-        <td><span class="">1.19×</span></td>
+        <td><span class="">1.21×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">1,083 BTC</td>
         <td class="cbe-hl" style="font-weight:700">96,700</td>
@@ -834,31 +851,48 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 96,700 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 96,700; at BTC −50% it would read 96,700. Not a forecast — a sensitivity test."><span class="cbe-sub">96,700</span> / <span class="">96,700</span></span></td>
       </tr>
-      <tr data-price="168.5" data-mnav="0.895" data-claimspct="32.3" data-cebebtc="571765.9" data-sats100="87317" data-satsshare="147128" data-btc="845050" data-claimsusd="23662056000" data-coverage="-0.012" data-stress50="45582">
+      <tr data-price="0.765" data-mnav="1.211" data-claimspct="0.0" data-cebebtc="2747.0" data-sats100="96536" data-satsshare="739" data-btc="2747" data-claimsusd="0" data-coverage="" data-stress50="96536">
         <td class="rk">7</td>
+        <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">T</span><span class="nm">
+          <span class="n1">TSWCF</span>
+          <span class="cbe-sub">The Smarter Web Company · SWC.L · 🇬🇧</span>
+        </span></span></td>
+        <td>$0.77</td>
+        <td><span class="">1.21×</span></td>
+        <td><span class="cbe-g">0.0%</span></td>
+        <td class="">2,747 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">96,536</td>
+        <td>739</td>
+        <td>2,747</td>
+        <td title="Debt $0 · Preferred $0" class="">$0 M</td>
+        <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
+        <td><span title="At today&#x27;s price this reads 96,536 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 96,536; at BTC −50% it would read 96,536. Not a forecast — a sensitivity test."><span class="cbe-sub">96,536</span> / <span class="">96,536</span></span></td>
+      </tr>
+      <tr data-price="168.5" data-mnav="0.906" data-claimspct="32.7" data-cebebtc="568322.0" data-sats100="86791" data-satsshare="146242" data-btc="845050" data-claimsusd="23662056000" data-coverage="-0.012" data-stress50="44530">
+        <td class="rk">8</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/strategy.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">MSTR</span>
           <span class="cbe-sub">Strategy (MicroStrategy) · 🇺🇸</span>
         </span></span></td>
         <td>$168.50</td>
-        <td><span class="cbe-g">0.90× ◆</span></td>
-        <td><span class="cbe-r">32.3%</span></td>
-        <td class="">571,766 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">87,317</td>
-        <td>147,128</td>
+        <td><span class="cbe-g">0.91× ◆</span></td>
+        <td><span class="cbe-r">32.7%</span></td>
+        <td class="">568,322 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">86,791</td>
+        <td>146,242</td>
         <td>845,050</td>
         <td title="Debt $8.2 B · Preferred $15.5 B · break-even BTC price ~$28,001" class="">$23.7 B</td>
         <td><span class="cbe-r" title="Operating cash flow $-20 M ÷ annual preferred dividend obligation $1.7 B (blended rate 11.17%) — can the core business&#x27;s own cash flow service the dividend bill?">-0.012×</span></td>
-        <td><span title="At today&#x27;s price this reads 87,317 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 76,883; at BTC −50% it would read 45,582. Not a forecast — a sensitivity test."><span class="cbe-sub">76,883</span> / <span class="">45,582</span></span></td>
+        <td><span title="At today&#x27;s price this reads 86,791 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 76,226; at BTC −50% it would read 44,530. Not a forecast — a sensitivity test."><span class="cbe-sub">76,226</span> / <span class="">44,530</span></span></td>
       </tr>
-      <tr data-price="1.45" data-mnav="1.49" data-claimspct="0.0" data-cebebtc="1855.0" data-sats100="77534" data-satsshare="1124" data-btc="1855" data-claimsusd="0" data-coverage="" data-stress50="77534">
-        <td class="rk">8</td>
+      <tr data-price="1.45" data-mnav="1.508" data-claimspct="0.0" data-cebebtc="1855.0" data-sats100="77534" data-satsshare="1124" data-btc="1855" data-claimsusd="0" data-coverage="" data-stress50="77534">
+        <td class="rk">9</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c98f5e22;color:#c98f5e;border-color:#c98f5e55">B</span><span class="nm">
           <span class="n1">FUFU</span>
           <span class="cbe-sub">BitFuFu · 🇸🇬</span>
         </span></span></td>
         <td>$1.45</td>
-        <td><span class="">1.49×</span></td>
+        <td><span class="">1.51×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">1,855 BTC</td>
         <td class="cbe-hl" style="font-weight:700">77,534</td>
@@ -868,65 +902,48 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 77,534 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 77,534; at BTC −50% it would read 77,534. Not a forecast — a sensitivity test."><span class="cbe-sub">77,534</span> / <span class="">77,534</span></span></td>
       </tr>
-      <tr data-price="0.992" data-mnav="1.551" data-claimspct="0.0" data-cebebtc="2747.0" data-sats100="74446" data-satsshare="739" data-btc="2747" data-claimsusd="0" data-coverage="" data-stress50="74446">
-        <td class="rk">9</td>
-        <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">T</span><span class="nm">
-          <span class="n1">TSWCF</span>
-          <span class="cbe-sub">The Smarter Web Company · SWC.L · 🇬🇧</span>
-        </span></span></td>
-        <td>$0.99</td>
-        <td><span class="">1.55×</span></td>
-        <td><span class="cbe-g">0.0%</span></td>
-        <td class="">2,747 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">74,446</td>
-        <td>739</td>
-        <td>2,747</td>
-        <td title="Debt $0 · Preferred $0" class="">$0 M</td>
-        <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 74,446 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 74,446; at BTC −50% it would read 74,446. Not a forecast — a sensitivity test."><span class="cbe-sub">74,446</span> / <span class="">74,446</span></span></td>
-      </tr>
-      <tr data-price="0.4171" data-mnav="1.787" data-claimspct="0.0" data-cebebtc="1862.0" data-sats100="64642" data-satsshare="270" data-btc="1862" data-claimsusd="0" data-coverage="" data-stress50="64642">
+      <tr data-price="0.417" data-mnav="1.809" data-claimspct="0.0" data-cebebtc="1862.0" data-sats100="64658" data-satsshare="270" data-btc="1862" data-claimsusd="0" data-coverage="" data-stress50="64658">
         <td class="rk">10</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/canaan-creative.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">CAN</span>
           <span class="cbe-sub">Canaan Inc · 🇨🇳</span>
         </span></span></td>
         <td>$0.42</td>
-        <td><span class="">1.79×</span></td>
+        <td><span class="">1.81×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">1,862 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">64,642</td>
+        <td class="cbe-hl" style="font-weight:700">64,658</td>
         <td>270</td>
         <td>1,862</td>
         <td title="Debt $0 · Preferred $0" class="">$0 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 64,642 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 64,642; at BTC −50% it would read 64,642. Not a forecast — a sensitivity test."><span class="cbe-sub">64,642</span> / <span class="">64,642</span></span></td>
+        <td><span title="At today&#x27;s price this reads 64,658 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 64,658; at BTC −50% it would read 64,658. Not a forecast — a sensitivity test."><span class="cbe-sub">64,658</span> / <span class="">64,658</span></span></td>
       </tr>
-      <tr data-price="30.33" data-mnav="1.356" data-claimspct="47.1" data-cebebtc="12986.82" data-sats100="45103" data-satsshare="13680" data-btc="24531" data-claimsusd="999542500" data-coverage="" data-stress50="5010">
+      <tr data-price="30.33" data-mnav="1.373" data-claimspct="47.7" data-cebebtc="12841.34" data-sats100="44598" data-satsshare="13527" data-btc="24531" data-claimsusd="999542500" data-coverage="" data-stress50="4000">
         <td class="rk">11</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/strive.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">ASST</span>
           <span class="cbe-sub">Strive Asset Management · 🇺🇸</span>
         </span></span></td>
         <td>$30.33</td>
-        <td><span class="">1.36×</span></td>
-        <td><span class="cbe-r">47.1%</span></td>
-        <td class="">12,987 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">45,103</td>
-        <td>13,680</td>
+        <td><span class="">1.37×</span></td>
+        <td><span class="cbe-r">47.7%</span></td>
+        <td class="">12,841 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">44,598</td>
+        <td>13,527</td>
         <td>24,531</td>
         <td title="Debt $0 · Preferred $1,000 M · break-even BTC price ~$40,746" class="">$1,000 M</td>
         <td><span class="cbe-sub" title="Real preferred stock exists, but this company&#x27;s operating cash flow isn&#x27;t disclosed at a comparable (core-business-only) level — showing a number here would mean forcing one, not reporting one">n/a</span></td>
-        <td><span title="At today&#x27;s price this reads 45,103 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 35,080; at BTC −50% it would read 5,010. Not a forecast — a sensitivity test."><span class="cbe-sub">35,080</span> / <span class="">5,010</span></span></td>
+        <td><span title="At today&#x27;s price this reads 44,598 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 34,448; at BTC −50% it would read 4,000. Not a forecast — a sensitivity test."><span class="cbe-sub">34,448</span> / <span class="">4,000</span></span></td>
       </tr>
-      <tr data-price="40.14" data-mnav="3.063" data-claimspct="0.0" data-cebebtc="24400.0" data-sats100="37708" data-satsshare="15136" data-btc="24400" data-claimsusd="0" data-coverage="" data-stress50="37708">
+      <tr data-price="40.14" data-mnav="3.101" data-claimspct="0.0" data-cebebtc="24400.0" data-sats100="37708" data-satsshare="15136" data-btc="24400" data-claimsusd="0" data-coverage="" data-stress50="37708">
         <td class="rk">12</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/bullish.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">BLSH</span>
           <span class="cbe-sub">Bullish · 🇺🇸</span>
         </span></span></td>
         <td>$40.14</td>
-        <td><span class="cbe-r">3.06×</span></td>
+        <td><span class="cbe-r">3.10×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">24,400 BTC</td>
         <td class="cbe-hl" style="font-weight:700">37,708</td>
@@ -936,31 +953,14 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 37,708 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 37,708; at BTC −50% it would read 37,708. Not a forecast — a sensitivity test."><span class="cbe-sub">37,708</span> / <span class="">37,708</span></span></td>
       </tr>
-      <tr data-price="13.28" data-mnav="1.479" data-claimspct="79.5" data-cebebtc="7429.34" data-sats100="15984" data-satsshare="2123" data-btc="36303" data-claimsusd="2500000000" data-coverage="" data-stress50="-46137">
+      <tr data-price="6.58" data-mnav="7.356" data-claimspct="0.0" data-cebebtc="3145.0" data-sats100="15898" data-satsshare="1046" data-btc="3145" data-claimsusd="0" data-coverage="" data-stress50="15898">
         <td class="rk">13</td>
-        <td class="cbe-nm"><span class="asw"><img class="mk" src="img/mara.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
-          <span class="n1">MARA</span>
-          <span class="cbe-sub">MARA Holdings · 🇺🇸</span>
-        </span></span></td>
-        <td>$13.28</td>
-        <td><span class="">1.48×</span></td>
-        <td><span class="cbe-r">79.5%</span></td>
-        <td class="">7,429 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">15,984</td>
-        <td>2,123</td>
-        <td>36,303</td>
-        <td title="Debt $2.5 B · Preferred $0 · break-even BTC price ~$68,865" class="">$2.5 B</td>
-        <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 15,984 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 454; at BTC −50% it would read -46,137. Not a forecast — a sensitivity test."><span class="cbe-sub">454</span> / <span class="cbe-r">-46,137</span></span></td>
-      </tr>
-      <tr data-price="6.58" data-mnav="7.265" data-claimspct="0.0" data-cebebtc="3145.0" data-sats100="15898" data-satsshare="1046" data-btc="3145" data-claimsusd="0" data-coverage="" data-stress50="15898">
-        <td class="rk">14</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">C</span><span class="nm">
           <span class="n1">CPTLF</span>
           <span class="cbe-sub">Capital B (fmr. The Blockchain Group) · ALCPB.PA · 🇫🇷</span>
         </span></span></td>
         <td>$6.58</td>
-        <td><span class="cbe-r">7.26×</span></td>
+        <td><span class="cbe-r">7.36×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">3,145 BTC</td>
         <td class="cbe-hl" style="font-weight:700">15,898</td>
@@ -970,65 +970,82 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 15,898 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 15,898; at BTC −50% it would read 15,898. Not a forecast — a sensitivity test."><span class="cbe-sub">15,898</span> / <span class="">15,898</span></span></td>
       </tr>
-      <tr data-price="14.76" data-mnav="3.67" data-claimspct="55.7" data-cebebtc="5962.85" data-sats100="13931" data-satsshare="2056" data-btc="13470" data-claimsusd="650000000" data-coverage="" data-stress50="-3608">
+      <tr data-price="13.28" data-mnav="1.497" data-claimspct="80.5" data-cebebtc="7065.47" data-sats100="15201" data-satsshare="2019" data-btc="36303" data-claimsusd="2500000000" data-coverage="" data-stress50="-47702">
+        <td class="rk">14</td>
+        <td class="cbe-nm"><span class="asw"><img class="mk" src="img/mara.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
+          <span class="n1">MARA</span>
+          <span class="cbe-sub">MARA Holdings · 🇺🇸</span>
+        </span></span></td>
+        <td>$13.28</td>
+        <td><span class="">1.50×</span></td>
+        <td><span class="cbe-r">80.5%</span></td>
+        <td class="">7,065 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">15,201</td>
+        <td>2,019</td>
+        <td>36,303</td>
+        <td title="Debt $2.5 B · Preferred $0 · break-even BTC price ~$68,865" class="">$2.5 B</td>
+        <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
+        <td><span title="At today&#x27;s price this reads 15,201 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read -525; at BTC −50% it would read -47,702. Not a forecast — a sensitivity test."><span class="cbe-sub">-525</span> / <span class="cbe-r">-47,702</span></span></td>
+      </tr>
+      <tr data-price="14.76" data-mnav="3.716" data-claimspct="56.4" data-cebebtc="5868.24" data-sats100="13710" data-satsshare="2024" data-btc="13470" data-claimsusd="650000000" data-coverage="" data-stress50="-4050">
         <td class="rk">15</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/cleanspark.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">CLSK</span>
           <span class="cbe-sub">CleanSpark · 🇺🇸</span>
         </span></span></td>
         <td>$14.76</td>
-        <td><span class="cbe-r">3.67×</span></td>
-        <td><span class="cbe-r">55.7%</span></td>
-        <td class="">5,963 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">13,931</td>
-        <td>2,056</td>
+        <td><span class="cbe-r">3.72×</span></td>
+        <td><span class="cbe-r">56.4%</span></td>
+        <td class="">5,868 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">13,710</td>
+        <td>2,024</td>
         <td>13,470</td>
         <td title="Debt $650 M · Preferred $0 · break-even BTC price ~$48,255" class="">$650 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 13,931 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 9,546; at BTC −50% it would read -3,608. Not a forecast — a sensitivity test."><span class="cbe-sub">9,546</span> / <span class="cbe-r">-3,608</span></span></td>
+        <td><span title="At today&#x27;s price this reads 13,710 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 9,270; at BTC −50% it would read -4,050. Not a forecast — a sensitivity test."><span class="cbe-sub">9,270</span> / <span class="cbe-r">-4,050</span></span></td>
       </tr>
-      <tr data-price="2.28" data-mnav="4.846" data-claimspct="42.6" data-cebebtc="611.56" data-sats100="13685" data-satsshare="312" data-btc="1065" data-claimsusd="39260615" data-coverage="" data-stress50="3538">
+      <tr data-price="2.28" data-mnav="4.907" data-claimspct="43.1" data-cebebtc="605.85" data-sats100="13557" data-satsshare="309" data-btc="1065" data-claimsusd="39260615" data-coverage="" data-stress50="3283">
         <td class="rk">16</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c95e8f22;color:#c95e8f;border-color:#c95e8f55">C</span><span class="nm">
           <span class="n1">CANG</span>
           <span class="cbe-sub">Cango Inc · 🇨🇳</span>
         </span></span></td>
         <td>$2.28</td>
-        <td><span class="cbe-r">4.85×</span></td>
-        <td><span class="cbe-r">42.6%</span></td>
-        <td class="">612 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">13,685</td>
-        <td>312</td>
+        <td><span class="cbe-r">4.91×</span></td>
+        <td><span class="cbe-r">43.1%</span></td>
+        <td class="">606 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">13,557</td>
+        <td>309</td>
         <td>1,065</td>
         <td title="Debt $39 M · Preferred $0 · break-even BTC price ~$36,864" class="">$39 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 13,685 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 11,148; at BTC −50% it would read 3,538. Not a forecast — a sensitivity test."><span class="cbe-sub">11,148</span> / <span class="">3,538</span></span></td>
+        <td><span title="At today&#x27;s price this reads 13,557 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 10,989; at BTC −50% it would read 3,283. Not a forecast — a sensitivity test."><span class="cbe-sub">10,989</span> / <span class="">3,283</span></span></td>
       </tr>
-      <tr data-price="24.18" data-mnav="6.412" data-claimspct="44.2" data-cebebtc="8750.32" data-sats100="10052" data-satsshare="2431" data-btc="15680" data-claimsusd="600000000" data-coverage="" data-stress50="2092">
+      <tr data-price="24.18" data-mnav="6.493" data-claimspct="44.8" data-cebebtc="8662.99" data-sats100="9952" data-satsshare="2406" data-btc="15680" data-claimsusd="600000000" data-coverage="" data-stress50="1891">
         <td class="rk">17</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/riotplatforms.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">RIOT</span>
           <span class="cbe-sub">Riot Platforms · 🇺🇸</span>
         </span></span></td>
         <td>$24.18</td>
-        <td><span class="cbe-r">6.41×</span></td>
-        <td><span class="cbe-r">44.2%</span></td>
-        <td class="">8,750 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">10,052</td>
-        <td>2,431</td>
+        <td><span class="cbe-r">6.49×</span></td>
+        <td><span class="cbe-r">44.8%</span></td>
+        <td class="">8,663 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">9,952</td>
+        <td>2,406</td>
         <td>15,680</td>
         <td title="Debt $600 M · Preferred $0 · break-even BTC price ~$38,265" class="">$600 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 10,052 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 8,062; at BTC −50% it would read 2,092. Not a forecast — a sensitivity test."><span class="cbe-sub">8,062</span> / <span class="">2,092</span></span></td>
+        <td><span title="At today&#x27;s price this reads 9,952 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 7,937; at BTC −50% it would read 1,891. Not a forecast — a sensitivity test."><span class="cbe-sub">7,937</span> / <span class="">1,891</span></span></td>
       </tr>
-      <tr data-price="10.3" data-mnav="17.323" data-claimspct="0.0" data-cebebtc="7300.0" data-sats100="6667" data-satsshare="687" data-btc="7300" data-claimsusd="0" data-coverage="" data-stress50="6667">
+      <tr data-price="10.3" data-mnav="17.541" data-claimspct="0.0" data-cebebtc="7300.0" data-sats100="6667" data-satsshare="687" data-btc="7300" data-claimsusd="0" data-coverage="" data-stress50="6667">
         <td class="rk">18</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">A</span><span class="nm">
           <span class="n1">ABTC</span>
           <span class="cbe-sub">American Bitcoin · 🇺🇸</span>
         </span></span></td>
         <td>$10.30</td>
-        <td><span class="cbe-r">17.32×</span></td>
+        <td><span class="cbe-r">17.54×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">7,300 BTC</td>
         <td class="cbe-hl" style="font-weight:700">6,667</td>
@@ -1038,31 +1055,31 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 6,667 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 6,667; at BTC −50% it would read 6,667. Not a forecast — a sensitivity test."><span class="cbe-sub">6,667</span> / <span class="">6,667</span></span></td>
       </tr>
-      <tr data-price="103.42" data-mnav="12.784" data-claimspct="33.7" data-cebebtc="6813.16" data-sats100="5989" data-satsshare="6194" data-btc="10278" data-claimsusd="300000000" data-coverage="" data-stress50="2943">
+      <tr data-price="103.42" data-mnav="12.945" data-claimspct="34.1" data-cebebtc="6769.5" data-sats100="5951" data-satsshare="6154" data-btc="10278" data-claimsusd="300000000" data-coverage="" data-stress50="2867">
         <td class="rk">19</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/hut8.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">HUT</span>
           <span class="cbe-sub">Hut 8 · 🇨🇦</span>
         </span></span></td>
         <td>$103.42</td>
-        <td><span class="cbe-r">12.78×</span></td>
-        <td><span class="cbe-r">33.7%</span></td>
-        <td class="">6,813 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">5,989</td>
-        <td>6,194</td>
+        <td><span class="cbe-r">12.95×</span></td>
+        <td><span class="cbe-r">34.1%</span></td>
+        <td class="">6,770 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">5,951</td>
+        <td>6,154</td>
         <td>10,278</td>
         <td title="Debt $300 M · Preferred $0 · break-even BTC price ~$29,189" class="">$300 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads 5,989 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 5,228; at BTC −50% it would read 2,943. Not a forecast — a sensitivity test."><span class="cbe-sub">5,228</span> / <span class="">2,943</span></span></td>
+        <td><span title="At today&#x27;s price this reads 5,951 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 5,180; at BTC −50% it would read 2,867. Not a forecast — a sensitivity test."><span class="cbe-sub">5,180</span> / <span class="">2,867</span></span></td>
       </tr>
-      <tr data-price="1.83" data-mnav="25.801" data-claimspct="0.0" data-cebebtc="11.69" data-sats100="4476" data-satsshare="82" data-btc="11.69" data-claimsusd="0" data-coverage="" data-stress50="4476">
+      <tr data-price="1.83" data-mnav="26.126" data-claimspct="0.0" data-cebebtc="11.69" data-sats100="4476" data-satsshare="82" data-btc="11.69" data-claimsusd="0" data-coverage="" data-stress50="4476">
         <td class="rk">20</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#c9b45e22;color:#c9b45e;border-color:#c9b45e55">V</span><span class="nm">
           <span class="n1">VIDA</span>
           <span class="cbe-sub">Vida Global Inc. · 🇺🇸</span>
         </span></span></td>
         <td>$1.83</td>
-        <td><span class="cbe-r">25.80×</span></td>
+        <td><span class="cbe-r">26.13×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">12 BTC</td>
         <td class="cbe-hl" style="font-weight:700">4,476</td>
@@ -1072,14 +1089,14 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 4,476 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 4,476; at BTC −50% it would read 4,476. Not a forecast — a sensitivity test."><span class="cbe-sub">4,476</span> / <span class="">4,476</span></span></td>
       </tr>
-      <tr data-price="201.05" data-mnav="39.658" data-claimspct="0.0" data-cebebtc="15389.0" data-sats100="2912" data-satsshare="5855" data-btc="15389" data-claimsusd="0" data-coverage="" data-stress50="2912">
+      <tr data-price="201.05" data-mnav="40.158" data-claimspct="0.0" data-cebebtc="15389.0" data-sats100="2912" data-satsshare="5855" data-btc="15389" data-claimsusd="0" data-coverage="" data-stress50="2912">
         <td class="rk">21</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/coinbase.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">COIN</span>
           <span class="cbe-sub">Coinbase Global · 🇺🇸</span>
         </span></span></td>
         <td>$201.05</td>
-        <td><span class="cbe-r">39.66×</span></td>
+        <td><span class="cbe-r">40.16×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">15,389 BTC</td>
         <td class="cbe-hl" style="font-weight:700">2,912</td>
@@ -1089,14 +1106,14 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 2,912 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 2,912; at BTC −50% it would read 2,912. Not a forecast — a sensitivity test."><span class="cbe-sub">2,912</span> / <span class="">2,912</span></span></td>
       </tr>
-      <tr data-price="77.91" data-mnav="59.295" data-claimspct="0.0" data-cebebtc="9032.0" data-sats100="1948" data-satsshare="1518" data-btc="9032" data-claimsusd="0" data-coverage="" data-stress50="1948">
+      <tr data-price="77.91" data-mnav="60.042" data-claimspct="0.0" data-cebebtc="9032.0" data-sats100="1948" data-satsshare="1518" data-btc="9032" data-claimsusd="0" data-coverage="" data-stress50="1948">
         <td class="rk">22</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/block.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">XYZ</span>
           <span class="cbe-sub">Block Inc · 🇺🇸</span>
         </span></span></td>
         <td>$77.91</td>
-        <td><span class="cbe-r">59.30×</span></td>
+        <td><span class="cbe-r">60.04×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">9,032 BTC</td>
         <td class="cbe-hl" style="font-weight:700">1,948</td>
@@ -1106,14 +1123,14 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 1,948 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 1,948; at BTC −50% it would read 1,948. Not a forecast — a sensitivity test."><span class="cbe-sub">1,948</span> / <span class="">1,948</span></span></td>
       </tr>
-      <tr data-price="18.9" data-mnav="59.519" data-claimspct="0.0" data-cebebtc="1500.0" data-sats100="1940" data-satsshare="367" data-btc="1500" data-claimsusd="0" data-coverage="" data-stress50="1940">
+      <tr data-price="18.9" data-mnav="60.269" data-claimspct="0.0" data-cebebtc="1500.0" data-sats100="1940" data-satsshare="367" data-btc="1500" data-claimsusd="0" data-coverage="" data-stress50="1940">
         <td class="rk">23</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#8f8fd622;color:#8f8fd6;border-color:#8f8fd655">C</span><span class="nm">
           <span class="n1">CIFR</span>
           <span class="cbe-sub">Cipher Digital (fmr. Cipher Mining) · 🇺🇸</span>
         </span></span></td>
         <td>$18.90</td>
-        <td><span class="cbe-r">59.52×</span></td>
+        <td><span class="cbe-r">60.27×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">1,500 BTC</td>
         <td class="cbe-hl" style="font-weight:700">1,940</td>
@@ -1123,14 +1140,14 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 1,940 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 1,940; at BTC −50% it would read 1,940. Not a forecast — a sensitivity test."><span class="cbe-sub">1,940</span> / <span class="">1,940</span></span></td>
       </tr>
-      <tr data-price="375.3" data-mnav="1208.949" data-claimspct="0.0" data-cebebtc="11509.0" data-sats100="96" data-satsshare="359" data-btc="11509" data-claimsusd="0" data-coverage="" data-stress50="96">
+      <tr data-price="375.3" data-mnav="1224.184" data-claimspct="0.0" data-cebebtc="11509.0" data-sats100="96" data-satsshare="359" data-btc="11509" data-claimsusd="0" data-coverage="" data-stress50="96">
         <td class="rk">24</td>
         <td class="cbe-nm"><span class="asw"><img class="mk" src="img/tesla.png" alt="" width="28" height="28" loading="lazy"/><span class="nm">
           <span class="n1">TSLA</span>
           <span class="cbe-sub">Tesla · 🇺🇸</span>
         </span></span></td>
         <td>$375.30</td>
-        <td><span class="cbe-r">1208.95×</span></td>
+        <td><span class="cbe-r">1224.18×</span></td>
         <td><span class="cbe-g">0.0%</span></td>
         <td class="">11,509 BTC</td>
         <td class="cbe-hl" style="font-weight:700">96</td>
@@ -1140,22 +1157,22 @@ table.cbe td.cbe-nm{white-space:normal;max-width:220px}
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
         <td><span title="At today&#x27;s price this reads 96 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read 96; at BTC −50% it would read 96. Not a forecast — a sensitivity test."><span class="cbe-sub">96</span> / <span class="">96</span></span></td>
       </tr>
-      <tr data-price="9.12" data-mnav="3.058" data-claimspct="117.4" data-cebebtc="-1660.98" data-sats100="-6575" data-satsshare="-600" data-btc="9542" data-claimsusd="970000000" data-coverage="" data-stress50="-50921">
+      <tr data-price="9.12" data-mnav="3.096" data-claimspct="118.9" data-cebebtc="-1802.16" data-sats100="-7134" data-satsshare="-651" data-btc="9542" data-claimsusd="970000000" data-coverage="" data-stress50="-52039">
         <td class="rk">25</td>
         <td class="cbe-nm"><span class="asw"><span class="mk mk-m" aria-hidden="true" style="background:#5eb3d622;color:#5eb3d6;border-color:#5eb3d655">T</span><span class="nm">
           <span class="n1">DJT</span>
           <span class="cbe-sub">Trump Media &amp; Technology · 🇺🇸</span>
         </span></span></td>
         <td>$9.12</td>
-        <td><span class="cbe-r">3.06×</span></td>
-        <td><span class="cbe-r">117.4%</span></td>
-        <td class="">-1,661 BTC</td>
-        <td class="cbe-hl" style="font-weight:700">-6,575</td>
-        <td>-600</td>
+        <td><span class="cbe-r">3.10×</span></td>
+        <td><span class="cbe-r">118.9%</span></td>
+        <td class="">-1,802 BTC</td>
+        <td class="cbe-hl" style="font-weight:700">-7,134</td>
+        <td>-651</td>
         <td>9,542</td>
         <td title="Debt $970 M · Preferred $0 · break-even BTC price ~$101,656" class="">$970 M</td>
         <td><span class="cbe-sub" title="No preferred stock outstanding — nothing to cover">—</span></td>
-        <td><span title="At today&#x27;s price this reads -6,575 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read -17,662; at BTC −50% it would read -50,921. Not a forecast — a sensitivity test."><span class="cbe-sub">-17,662</span> / <span class="cbe-r">-50,921</span></span></td>
+        <td><span title="At today&#x27;s price this reads -7,134 sats/$100. Holding the stock price and all claims fixed: at BTC −20% it would read -18,360; at BTC −50% it would read -52,039. Not a forecast — a sensitivity test."><span class="cbe-sub">-18,360</span> / <span class="cbe-r">-52,039</span></span></td>
       </tr>
     </tbody>
   </table>
