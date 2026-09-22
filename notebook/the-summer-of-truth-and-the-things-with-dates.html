@@ -352,11 +352,18 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
+  background:#111a28}
+.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-body{flex:1;min-width:0}
+@media (max-width:480px){
+  .tile-media{width:60px;height:60px}
+}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -652,24 +659,36 @@ same continent.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="the-same-barrel.html" data-search="the same barrel costco is rationing motor oil for the first time ever — the chain runs from a shut saudi pipeline through three refineries to a warehouse-club limit." data-tags="oil energy strait-of-hormuz saudi-arabia lubricants base-oil costco iran geopolitics supply-chains">
-      <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
-      <span class="ec-t">The Same Barrel</span>
-      <span class="ec-s">Costco is rationing motor oil for the first time ever — the chain runs from a shut Saudi pipeline through three refineries to a warehouse-club limit.</span>
+      <span class="tile-media"><img src="img/thumb/valvoline-worlds-first-motor-oil-can.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · SEPTEMBER 13, 2026</span>
+        <span class="ec-t">The Same Barrel</span>
+        <span class="ec-s">Costco is rationing motor oil for the first time ever — the chain runs from a shut Saudi pipeline through three refineries to a warehouse-club limit.</span>
+      </span>
     </a>
     <a class="tile" href="the-other-door.html" data-search="the other door houthis now hold mokha and perim island at bab el-mandeb. the red sea has two doors, and saudi tankers from yanbu are banned from the southern one." data-tags="oil energy red-sea bab-el-mandeb houthis yemen saudi-arabia strait-of-hormuz geopolitics shipping maps">
-      <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">The Other Door</span>
-      <span class="ec-s">Houthis now hold Mokha and Perim island at Bab el-Mandeb. The Red Sea has two doors, and Saudi tankers from Yanbu are banned from the southern one.</span>
+      <span class="tile-media"><img src="img/thumb/perim-island-bab-el-mandeb.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">The Other Door</span>
+        <span class="ec-s">Houthis now hold Mokha and Perim island at Bab el-Mandeb. The Red Sea has two doors, and Saudi tankers from Yanbu are banned from the southern one.</span>
+      </span>
     </a>
     <a class="tile" href="the-escape-valve.html" data-search="the escape valve drones hit saudi arabia&#x27;s east–west pipeline, the big bypass around a hormuz shut since march. who is hurt, where the oil goes now, what the price says." data-tags="oil energy strait-of-hormuz saudi-arabia iran iraq geopolitics shipping russia venezuela maps">
-      <span class="ec-d">WORLD · SEPTEMBER 11, 2026</span>
-      <span class="ec-t">The Escape Valve</span>
-      <span class="ec-s">Drones hit Saudi Arabia&#x27;s East–West pipeline, the big bypass around a Hormuz shut since March. Who is hurt, where the oil goes now, what the price says.</span>
+      <span class="tile-media"><img src="img/thumb/east-west-pipeline-plume-2026-09-10.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · SEPTEMBER 11, 2026</span>
+        <span class="ec-t">The Escape Valve</span>
+        <span class="ec-s">Drones hit Saudi Arabia&#x27;s East–West pipeline, the big bypass around a Hormuz shut since March. Who is hurt, where the oil goes now, what the price says.</span>
+      </span>
     </a>
     <a class="tile" href="the-most-downloaded-ai-models-in-the-world-are-alibabas.html" data-search="the most-downloaded ai models in the world are alibaba&#x27;s qwen3.8-omni-flash explained — what omnimodal means, what the benchmark jump measures, and how alibaba&#x27;s qwen became the most-downloaded model family." data-tags="artificial-intelligence alibaba qwen open-weights china machine-learning deepseek multimodal">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">The Most-Downloaded AI Models in the World Are Alibaba&#x27;s</span>
-      <span class="ec-s">Qwen3.8-Omni-Flash explained — what omnimodal means, what the benchmark jump measures, and how Alibaba&#x27;s Qwen became the most-downloaded model family.</span>
+      <span class="tile-media"><img src="img/thumb/alibaba-hangzhou-headquarters.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">The Most-Downloaded AI Models in the World Are Alibaba&#x27;s</span>
+        <span class="ec-s">Qwen3.8-Omni-Flash explained — what omnimodal means, what the benchmark jump measures, and how Alibaba&#x27;s Qwen became the most-downloaded model family.</span>
+      </span>
     </a>
     </div>
   </section>

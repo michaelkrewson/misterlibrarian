@@ -550,7 +550,8 @@ def _related_block(e, pool):
     tiles = "\n".join(
         _tile(_front_item(href=o["file"], label=_date_label(o),
                           title=o["title"], desc=_entry_desc(o),
-                          date=o["date"], tags=o.get("tags", ())))
+                          date=o["date"], tags=o.get("tags", ()),
+                          hero=o.get("hero", "")))
         for o in picks)
     return ('  <section class="readnext">\n'
             '    <h2>Keep reading</h2>\n'
@@ -632,23 +633,43 @@ def _entry_card(e):
 _WS_RE = re.compile(r"\s+")
 
 
-def _front_item(*, href, label, title, desc, date, tags=()):
+TILE_THUMB_SIZE = 144  # 2x a 72px CSS box, for retina
+
+
+def _front_item(*, href, label, title, desc, date, tags=(), hero=""):
     """One entry in the single shape both `_tile` and `_archive_row` render
-    from. `search` is the lowercased haystack the header search box matches."""
+    from. `search` is the lowercased haystack the header search box matches.
+    `hero` is the entry's own hero-image filename (in notebook/img/), if any
+    — `_tile` turns it into a small thumbnail; `_archive_row`'s list view
+    ignores it, that view is text-only by design."""
     return {"href": href, "label": label, "title": title, "desc": desc,
-            "date": date, "tags": list(tags),
+            "date": date, "tags": list(tags), "hero": hero,
             "search": _WS_RE.sub(" ", (title + " " + desc).lower()).strip()}
 
 
 def _tile(item):
     """A boxed grid tile. `data-search` is what the header search box's
-    client-side filter matches; `data-tags` is what the tag chips match."""
+    client-side filter matches; `data-tags` is what the tag chips match.
+    When the entry has a hero image, a small square crop of that same photo
+    (never a separate/stock image) leads the card — `blogkit.ensure_thumb`
+    builds it from the existing hero so the card stays light. No hero, or no
+    Pillow at build time: the card renders text-only, same as before."""
     data_tags = " ".join(blogkit.tag_slug(t) for t in item["tags"])
+    media = ""
+    thumb = blogkit.ensure_thumb(os.path.join(OUT, "img"), item["hero"], TILE_THUMB_SIZE) \
+        if item["hero"] else None
+    if thumb:
+        media = ('      <span class="tile-media"><img src="img/%s" alt="" '
+                  'width="%d" height="%d" loading="lazy"/></span>\n'
+                  % (esc(thumb), TILE_THUMB_SIZE, TILE_THUMB_SIZE))
     return ('    <a class="tile" href="%s" data-search="%s" data-tags="%s">\n'
-            '      <span class="ec-d">%s</span>\n'
-            '      <span class="ec-t">%s</span>\n'
-            '      <span class="ec-s">%s</span>\n'
-            '    </a>' % (esc(item["href"]), esc(item["search"]), esc(data_tags),
+            '%s'
+            '      <span class="tile-body">\n'
+            '        <span class="ec-d">%s</span>\n'
+            '        <span class="ec-t">%s</span>\n'
+            '        <span class="ec-s">%s</span>\n'
+            '      </span>\n'
+            '    </a>' % (esc(item["href"]), esc(item["search"]), esc(data_tags), media,
                           esc(item["label"]), esc(item["title"]), esc(item["desc"])))
 
 
@@ -1055,7 +1076,7 @@ def _listing(entries, first_entry_html):
     built from, and the JS that drives it. Returns (html, js)."""
     pool = [_front_item(href=e["file"], label=_date_label(e),
                         title=e["title"], desc=e["summary"], date=e["date"],
-                        tags=e["tags"]) for e in entries]
+                        tags=e["tags"], hero=e["hero"]) for e in entries]
     pool.sort(key=lambda it: -it["date"].toordinal())
 
     tiles = "\n".join(_tile(it) for it in pool)
@@ -1548,11 +1569,18 @@ a{color:__ACCENT__}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
+  background:#111a28}
+.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-body{flex:1;min-width:0}
+@media (max-width:480px){
+  .tile-media{width:60px;height:60px}
+}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }

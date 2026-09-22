@@ -352,11 +352,18 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
+  background:#111a28}
+.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-body{flex:1;min-width:0}
+@media (max-width:480px){
+  .tile-media{width:60px;height:60px}
+}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -693,24 +700,36 @@ the phone.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="two-nanometres-of-nothing.html" data-search="two nanometres of nothing: what apple&#x27;s new chip actually changed apple&#x27;s a20 pro is the first iphone chip on tsmc&#x27;s 2nm n2 process. what &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the finfet." data-tags="semiconductors apple tsmc chips transistors iphone engineering technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
-      <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+      <span class="tile-media"><img src="img/thumb/bell-labs-transistor-1948.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">Two Nanometres of Nothing: What Apple&#x27;s New Chip Actually Changed</span>
+        <span class="ec-s">Apple&#x27;s A20 Pro is the first iPhone chip on TSMC&#x27;s 2nm N2 process. What &quot;2 nanometres&quot; really measures, and why gate-all-around replaced the FinFET.</span>
+      </span>
     </a>
     <a class="tile" href="the-same-box-a-lot-more-inside.html" data-search="the same box, a lot more inside apple&#x27;s 2026 mac studio with m5 max and m5 ultra: specs, price, ship date, and why the &quot;redesign&quot; everyone&#x27;s expecting isn&#x27;t one." data-tags="apple mac-studio m5-max m5-ultra apple-silicon hardware">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
-      <span class="ec-t">The Same Box, a Lot More Inside</span>
-      <span class="ec-s">Apple&#x27;s 2026 Mac Studio with M5 Max and M5 Ultra: specs, price, ship date, and why the &quot;redesign&quot; everyone&#x27;s expecting isn&#x27;t one.</span>
+      <span class="tile-media"><img src="img/thumb/mac-studio-2022-case.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 19, 2026</span>
+        <span class="ec-t">The Same Box, a Lot More Inside</span>
+        <span class="ec-s">Apple&#x27;s 2026 Mac Studio with M5 Max and M5 Ultra: specs, price, ship date, and why the &quot;redesign&quot; everyone&#x27;s expecting isn&#x27;t one.</span>
+      </span>
     </a>
     <a class="tile" href="the-week-the-ai-labs-asked-to-be-regulated.html" data-search="the week the ai labs asked to be regulated openai asks for mandatory us ai rules, paul christiano warns from its board, anthropic publishes its threat report: one week, three ways to read it." data-tags="artificial-intelligence ai openai anthropic regulation safety policy claude technology">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
-      <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
-      <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
+      <span class="tile-media"><img src="img/thumb/eniac-1946.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 12, 2026</span>
+        <span class="ec-t">The Week the AI Labs Asked to Be Regulated</span>
+        <span class="ec-s">OpenAI asks for mandatory US AI rules, Paul Christiano warns from its board, Anthropic publishes its threat report: one week, three ways to read it.</span>
+      </span>
     </a>
     <a class="tile" href="a-pin-is-not-a-verification.html" data-search="plugin4shell: a pin is not a verification plugin4shell let a git branch name override a sha-pinned plugin in claude code, codex, copilot and gemini cli. how the pin failed, and who&#x27;s patched." data-tags="plugin4shell ai-coding-agents claude-code codex github-copilot gemini-cli supply-chain-security git vulnerability-disclosure air-security">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
-      <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
+      <span class="tile-media"><img src="img/thumb/pin-tumbler-unlocked.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Plugin4Shell: A Pin Is Not a Verification</span>
+        <span class="ec-s">Plugin4Shell let a git branch name override a SHA-pinned plugin in Claude Code, Codex, Copilot and Gemini CLI. How the pin failed, and who&#x27;s patched.</span>
+      </span>
     </a>
     </div>
   </section>

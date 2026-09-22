@@ -352,11 +352,18 @@ a{color:#8fa3ff}
 .empty{margin:8px 0 22px;color:#7f8fa6;font-size:14.5px;font-style:italic}
 .empty.first{text-align:center;margin:4px auto 22px;max-width:640px}
 .tilegrid{display:grid;gap:16px}
-.tile{display:block;text-decoration:none;padding:20px 22px;
+.tile{display:flex;gap:14px;align-items:flex-start;text-decoration:none;padding:20px 22px;
   border:1px solid #1b2534;border-radius:12px;background:#0a111c;
   box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s,border-color .15s,box-shadow .15s}
 .tile:hover{border-color:#2f4257;transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,.35),0 14px 32px rgba(0,0,0,.35)}
+.tile-media{flex:none;width:72px;height:72px;border-radius:9px;overflow:hidden;
+  background:#111a28}
+.tile-media img{display:block;width:100%;height:100%;object-fit:cover}
+.tile-body{flex:1;min-width:0}
+@media (max-width:480px){
+  .tile-media{width:60px;height:60px}
+}
 @media (min-width:640px){
   .tilegrid{grid-template-columns:1fr 1fr}
 }
@@ -569,24 +576,34 @@ those years, only that it did.</p>
     <h2>Keep reading</h2>
     <div class="tilegrid">
     <a class="tile" href="fifty-two-weeks-no-remainder.html" data-search="fifty-two weeks, no remainder did the qumran sect really use its 364-day calendar? a tel aviv university study in tarbiz argues yes — then explains why they stopped." data-tags="dead-sea-scrolls qumran archaeology calendars second-temple-judaism book-of-jubilees astronomy history">
-      <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
-      <span class="ec-s">Did the Qumran sect really use its 364-day calendar? A Tel Aviv University study in Tarbiz argues yes — then explains why they stopped.</span>
+      <span class="tile-media"><img src="img/thumb/qumran-cave-4-matson.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">TECHNOLOGY · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">Fifty-Two Weeks, No Remainder</span>
+        <span class="ec-s">Did the Qumran sect really use its 364-day calendar? A Tel Aviv University study in Tarbiz argues yes — then explains why they stopped.</span>
+      </span>
     </a>
     <a class="tile" href="why-the-washington-supreme-court-struck-down-i-2066.html" data-search="why the washington supreme court struck down i-2066 what the washington supreme court&#x27;s 6-3 ruling on i-2066 actually holds, what the natural gas initiative did, and which justices are up for reelection." data-tags="washington-state i-2066 natural-gas washington-supreme-court ballot-initiatives single-subject-rule judicial-elections energy-policy">
-      <span class="ec-d">WORLD · SEPTEMBER 22, 2026</span>
-      <span class="ec-t">Why the Washington Supreme Court Struck Down I-2066</span>
-      <span class="ec-s">What the Washington Supreme Court&#x27;s 6-3 ruling on I-2066 actually holds, what the natural gas initiative did, and which justices are up for reelection.</span>
+      <span class="tile-media"><img src="img/thumb/wa-temple-of-justice.jpg" alt="" width="144" height="144" loading="lazy"/></span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Why the Washington Supreme Court Struck Down I-2066</span>
+        <span class="ec-s">What the Washington Supreme Court&#x27;s 6-3 ruling on I-2066 actually holds, what the natural gas initiative did, and which justices are up for reelection.</span>
+      </span>
     </a>
     <a class="tile" href="the-rundown-2026-09-21.html" data-search="the rundown — september 21, 2026 14 stories across world, bitcoin &amp; crypto, technology, science, health &amp; medicine, arts &amp; culture, tracked on september 21, 2026." data-tags="rundown">
-      <span class="ec-d">WORLD · SEPTEMBER 21, 2026</span>
-      <span class="ec-t">The Rundown — September 21, 2026</span>
-      <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Health &amp; medicine, Arts &amp; culture, tracked on September 21, 2026.</span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · SEPTEMBER 21, 2026</span>
+        <span class="ec-t">The Rundown — September 21, 2026</span>
+        <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Health &amp; medicine, Arts &amp; culture, tracked on September 21, 2026.</span>
+      </span>
     </a>
     <a class="tile" href="the-rundown-2026-09-20.html" data-search="the rundown — september 20, 2026 14 stories across world, bitcoin &amp; crypto, technology, science, space, health &amp; medicine, tracked on september 20, 2026." data-tags="rundown">
-      <span class="ec-d">WORLD · SEPTEMBER 20, 2026</span>
-      <span class="ec-t">The Rundown — September 20, 2026</span>
-      <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Space, Health &amp; medicine, tracked on September 20, 2026.</span>
+      <span class="tile-body">
+        <span class="ec-d">WORLD · SEPTEMBER 20, 2026</span>
+        <span class="ec-t">The Rundown — September 20, 2026</span>
+        <span class="ec-s">14 stories across World, Bitcoin &amp; crypto, Technology, Science, Space, Health &amp; medicine, tracked on September 20, 2026.</span>
+      </span>
     </a>
     </div>
   </section>
