@@ -175,6 +175,14 @@ ENTRY_SRC = os.path.join(ROOT, "source", "finance")
 # stay legible side by side — a softer orange here would not be.
 ACCENT = "#f7931a"
 
+# The Ledger's email list (2026-09-21) — a Substack publication used ONLY as a
+# mailing list + subscribe page, not as a second place this blog gets written.
+# Nothing is embedded from it (no iframe, no script) — just a plain outbound
+# link, same "works with JS off, nothing tracked by this box itself" posture
+# as the rest of the site's links (see _comment_box's X links). See
+# _subscribe_box() and privacy.html §5.
+SUBSTACK_SUBSCRIBE_URL = "https://misterlibrarian.substack.com/subscribe"
+
 # Monogram colours for anything with no cached logo. Picked by name hash so a given
 # company always gets the same one.
 MONO = ["#5eb3d6", "#c98f5e", "#8f8fd6", "#5ec98f", "#c95e8f", "#c9b45e"]
@@ -827,9 +835,10 @@ def _foot(hits_path=None):
             '<a href="humanity.html">Bitcoin vs. Humanity</a> · '
             '<a href="money-worldwide.html">Money Worldwide</a> · '
             '<a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · '
-            '<a href="feed.xml">RSS</a> · %s · '
+            '<a href="feed.xml">RSS</a> · '
+            '<a href="%s" target="_blank" rel="noopener">Subscribe by email</a> · %s · '
             'nothing here is investment advice%s%s</footer>'
-            % (esc(SITE_NAME), sibs, hits_bit, _legal()))
+            % (esc(SITE_NAME), SUBSTACK_SUBSCRIBE_URL, sibs, hits_bit, _legal()))
 
 
 def _shell_hits_path(url):
@@ -1116,6 +1125,25 @@ BOARD_PROMOS = (
 )
 
 
+def _subscribe_box():
+    """A quiet pitch for the Ledger's free Substack list (2026-09-21).
+
+    Reuses .respond-btn-primary rather than inventing a second button style,
+    and links straight to Substack's own subscribe page rather than embedding
+    Substack's iframe widget — that iframe ships as a fixed white box with no
+    theming hook, which would fight this site's dark palette, and every other
+    call-to-action here (the X comment buttons) is already a plain outbound
+    link rather than embedded third-party markup. No email address is
+    collected by this site; see privacy.html §5."""
+    return ('<aside class="subbox">'
+            '<p class="sb-k">Free email list</p>'
+            '<p class="sb-t">Get new Ledger entries by email</p>'
+            '<p class="sb-s">No spam, no fixed schedule — just an email when something new goes up.</p>'
+            '<a class="respond-btn respond-btn-primary sb-btn" href="%s" target="_blank" '
+            'rel="noopener">Subscribe</a>'
+            '</aside>' % SUBSTACK_SUBSCRIBE_URL)
+
+
 def _board_promo(e):
     """A pointer to the one standing board this entry is actually about.
 
@@ -1200,6 +1228,7 @@ def build_entry_page(e, board=None, pool=()):
 %(body)s
     %(tags)s
   </article>
+  %(subscribe)s
 %(promo)s
   %(nudge)s
 %(related)s
@@ -1226,6 +1255,7 @@ def build_entry_page(e, board=None, pool=()):
         "hero": _entry_hero(e),
         "body": body,
         "tags": _tag_chips(e),
+        "subscribe": _subscribe_box(),
         "promo": _board_promo(e),
         "nudge": _ask_nudge(e),
         "related": _related_block(e, pool),
@@ -1823,7 +1853,7 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     return _shell(
         title="%s — %s" % (SITE_NAME, TAGLINE),
         desc=WRITING_BLURB, url=BASE_URL, active="home",
-        body="""%s%s  <section class="writing">
+        body="""%s%s%s  <section class="writing">
     %s
     %s
     <p class="empty" id="searchEmpty" hidden>No entries match that search.</p>
@@ -1833,8 +1863,8 @@ def build_front(entries, board, stats=None, treasuries=None, crypto=None, money_
     %s
   </section>%s
 %s
-""" % (_front_hero(), intro, chips, viewbar, tiles, archive_html, loadmore, index_hits_html,
-       _comment_box(SITE_NAME, BASE_URL)),
+""" % (_front_hero(), _subscribe_box(), intro, chips, viewbar, tiles, archive_html, loadmore,
+       index_hits_html, _comment_box(SITE_NAME, BASE_URL)),
         extra_js=pagination_js)
 
 
@@ -2275,6 +2305,17 @@ a{color:__ACCENT__}
   letter-spacing:.15em;text-transform:uppercase;color:__ACCENT__;margin-bottom:7px}
 .bp-t{display:block;color:#e8eef7;font-size:18px;line-height:1.3;margin-bottom:6px}
 .bp-s{display:block;color:#a9b7c9;font-size:14.5px;line-height:1.6}
+
+/* ── the email-list pitch — same accent-tinted-card language as .boardpromo,
+   so the two read as siblings rather than two different callout styles ─── */
+.subbox{max-width:760px;margin:26px auto 0;padding:20px 22px;text-align:center;
+  border:1px solid rgba(247,147,26,.28);border-radius:12px;
+  background:rgba(247,147,26,.05)}
+.sb-k{margin:0 0 8px;font:600 11px/1 ui-sans-serif,system-ui,sans-serif;
+  letter-spacing:.15em;text-transform:uppercase;color:__ACCENT__}
+.sb-t{margin:0 0 6px;color:#e8eef7;font-size:19px;line-height:1.3;font-weight:400}
+.sb-s{margin:0 0 16px;color:#a9b7c9;font-size:14.5px;line-height:1.6}
+.sb-btn{display:inline-block;flex:none;min-width:160px}
 
 /* ── the archive list — the LIST view of the same pool the tiles show ───── */
 /* No longer scoped to `.panel ul.archive` — the list used to only ever
