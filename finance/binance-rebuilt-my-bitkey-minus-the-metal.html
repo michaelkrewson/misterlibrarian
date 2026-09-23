@@ -354,6 +354,14 @@ a{color:#f7931a}
 .entry .aside p:last-child{margin:0}
 .entry .half-note{color:#7f8fa6;font-size:14.5px;font-style:italic}
 .entry hr{border:0;border-top:1px solid #1b2534;margin:34px 0}
+.entry table.cmp{width:100%;min-width:480px;border-collapse:collapse;margin:26px 0;font-size:15px}
+.entry table.cmp th{text-align:left;padding:10px 14px;color:#e8eef7;font-weight:600;
+  font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;border-bottom:2px solid #f7931a}
+.entry table.cmp td{padding:11px 14px;border-bottom:1px solid #1b2534;color:#c3d0e0;
+  vertical-align:top;line-height:1.5}
+.entry table.cmp tr:last-child td{border-bottom:0}
+.entry table.cmp td:first-child,.entry table.cmp th:first-child{color:#8b9ab0;
+  font-size:12.5px;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
 .tags{margin:34px 0 0;display:flex;flex-wrap:wrap;gap:7px}
 .tg{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;color:#8b9ab0;
   border:1px solid #1e2938;border-radius:999px;padding:4px 11px;background:#0a111c}
@@ -707,6 +715,22 @@ settlement from November 2023 was the parent company Binance.com's, over Bank Se
 sanctions failures, and Binance.US was not a party to it. The overhang was real two years ago; the
 entity asking to hold a third of your key today is under materially less federal pressure than it
 was then, and I'd rather say that plainly than let a stale headline do the work of an argument.</p>
+
+<h2>Side by Side, in One Table</h2>
+
+<p>Everything above, compressed to the version you can actually scan:</p>
+
+<div class="tw"><table class="cmp">
+<tr><th></th><th>My Bitkey</th><th>Binance.US Wallet</th></tr>
+<tr><td>Architecture</td><td>On-chain multisig — two of three real Bitcoin keys</td><td>Off-chain MPC — two of three mathematical shares, no key ever assembled</td></tr>
+<tr><td>Visible on-chain?</td><td>Yes, as a two-of-three script anyone can read</td><td>No, signs like an ordinary single-key wallet</td></tr>
+<tr><td>Second key lives on</td><td>A dedicated NFC hardware card, never online</td><td>Your phone — ordinary software</td></tr>
+<tr><td>Third key lives on</td><td>Block's own server — a co-signer, not a custodian</td><td>Your personal cloud backup (iCloud or Google Drive)</td></tr>
+<tr><td>Co-signer</td><td>Block — a payments/hardware company, one step removed from the trade</td><td>Binance.US — the same company running the exchange side of the app</td></tr>
+<tr><td>Transaction display</td><td>Second-gen device adds its own screen to verify against</td><td>Phone screen only — the device holding a share is also doing the showing</td></tr>
+<tr><td>Assets covered</td><td>Bitcoin, only</td><td>Ethereum, BNB Chain, Base, Arbitrum, Polygon, Solana, Robinhood Chain</td></tr>
+<tr><td>Regulatory overhang</td><td>N/A</td><td>SEC case vs. BAM Trading paused Feb. 2025, dismissed May 2025</td></tr>
+</table></div>
 
 <h2>What I'd Actually Do</h2>
 
