@@ -1,17 +1,21 @@
 {
-  "date": "2026-09-22",
-  "title": "Today's rundown",
-  "note": "What's going on right now, in one place. Want the full story on one of these? Say so in the comments below — enough interest turns an item into its own entry.",
+  "date": "2026-09-23",
+  "title": "The rundown",
+  "note": "What's going on right now, in one place. Items stay plain text until one of them becomes its own entry below — then it turns into a link.",
   "sections": [
     {
       "label": "World",
       "items": [
         {
-          "text": "President Trump addresses the UN General Assembly on September 22 — his first appearance since the US entered its war with Iran seven months ago — as the second speaker after Brazil's Lula da Silva, three days after announcing a new US-Greenland-Denmark security agreement.",
+          "text": "President Trump tells the UN General Assembly on September 22 he faces a \"big decision\" on Iran — a deal or \"annihilate the Islamic Republic\" — and predicts an agreement only after November's midterm elections, since Tehran is \"waiting to see how I do.\"",
           "href": ""
         },
         {
-          "text": "The Palestinian Health Ministry says Israeli strikes and gunfire have killed 1,394 Palestinians and injured 4,839 in Gaza since the ceasefire began in October 2025, with 834 of the dead still under rubble.",
+          "text": "Chinese President Xi Jinping arrives in Washington on September 23 for his first U.S. state visit in 11 years, with Thursday's main meeting expected to center on extending last year's trade truce alongside AI, Taiwan and critical minerals.",
+          "href": ""
+        },
+        {
+          "text": "Ukrainian President Volodymyr Zelenskyy calls on September 23 for a trilateral meeting with Presidents Trump and Putin and repeats Kyiv's readiness for a mutual \"energy ceasefire\" if Russian strikes on power infrastructure stop.",
           "href": ""
         }
       ]
@@ -20,11 +24,11 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "The Federal Reserve raises its benchmark rate a quarter point to 3.75%-4% on September 16, its first hike since 2023, citing persistently elevated inflation; the FOMC votes 12-0 and its projections leave room for another increase this year.",
+          "text": "The Nasdaq 100 closes at a record on September 22, its first since June, as the Philadelphia Semiconductor Index jumps 4.3% and Intel and Arm Holdings both surge more than 12%, while the S&P 500 finishes flat and the Dow falls 0.4%.",
           "href": ""
         },
         {
-          "text": "Brent crude falls to about $100 a barrel on September 21, a fourth straight session of declines, as traders bet on diplomatic de-escalation between the US and Iran ahead of this week's UN General Assembly.",
+          "text": "Asian equities extend a rally into a sixth straight session on September 23 — India's Sensex opens up more than 100 points and MSCI's Asia Pacific index adds 0.3% — tracking Wall Street's chip rally and falling oil prices tied to hopes for an Iran deal.",
           "href": ""
         }
       ]
@@ -33,11 +37,11 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin opens at $86,597.82 on September 22, up 6.7% from Monday's open, before slipping as much as 2.2% to $85,092 following Monday's eight-month high of $87,381.",
+          "text": "Bitcoin and ether open near eight-month highs on September 23, with Fundstrat's Sean Farrell declaring \"the crypto winter is over\" after bitcoin gained more than 5% Friday and another 6% Monday.",
           "href": ""
         },
         {
-          "text": "Russia's central bank proposes capping banks' crypto-asset exposure at 1% of capital, the same week South Korea's Hana Bank issues a $100 million digital bond through Euroclear's blockchain platform.",
+          "text": "BitMEX permanently shuts down at 04:00 UTC on September 23 after 11 years, closing an exchange whose daily volume had shrunk to roughly $400,000 following its 2020 Bank Secrecy Act case and years of losing share to Binance, Bybit and OKX.",
           "href": ""
         }
       ]
@@ -46,15 +50,11 @@
       "label": "Technology",
       "items": [
         {
-          "text": "AMD's stock hits an all-time high of $613.92 on September 21, pushing its market cap past $1 trillion for the first time and making it the fourth US chip company — after Nvidia, Broadcom and Micron — to cross that threshold; the stock is up more than 180% this year.",
+          "text": "Alibaba unveils its Zhenwu V900 AI accelerator on September 22 at its Hangzhou conference, calling it China's most powerful chip yet, built for clusters of up to 500,000 units and said to triple the performance of its predecessor, days ahead of Xi's Washington visit.",
           "href": ""
         },
         {
-          "text": "Security researchers disclose \"Plugin4Shell\" on September 18, a zero-click remote-code-execution flaw letting attackers swap malicious plugin code past SHA-pinning checks in Claude Code, OpenAI Codex, GitHub Copilot and Gemini CLI; Anthropic patches it in Claude Code 2.1.179, OpenAI in Codex 0.146.0.",
-          "href": "https://mistertranslation.com/notebook/a-pin-is-not-a-verification.html"
-        },
-        {
-          "text": "Healthcare distributor McKesson discloses a cybersecurity breach detected August 25 involving unauthorized access to third-party applications, with the ShinyHunters extortion group claiming to have exfiltrated 284 million rows of patient data from its Oncology & Multispecialty and Medical-Surgical units.",
+          "text": "House Select Committee on China chairman John Moolenaar urges the Trump administration on September 18 to close \"cloud services loopholes\" and tighten chipmaking-equipment export controls to China, in a letter sent less than a week before Xi's September 24 Washington visit.",
           "href": ""
         }
       ]
@@ -63,15 +63,11 @@
       "label": "Science & space",
       "items": [
         {
-          "text": "Astronomers confirm Elias 2-24 b, a Jupiter-mass planet less than a million years old orbiting a star 450 light-years away, as the youngest planet ever found — the previous record-holders were all at least 5 million years old — in work led by Andrea Bernardi, a doctoral candidate at Universidad Diego Portales in Chile.",
+          "text": "ESA's JUICE spacecraft swings within 8,640 km of Earth on September 28 for a gravity assist over the Indian Ocean, gaining about 3.5 km/s of speed on its way to a 2031 arrival at Jupiter's icy moons.",
           "href": ""
         },
         {
-          "text": "Indonesia's Anak Krakatau erupts for more than 24 hours starting September 4, sending ash as high as 50,000 feet, shutting down eight airports and disrupting nearly 3,000 flights.",
-          "href": ""
-        },
-        {
-          "text": "SpaceX's Super Heavy booster arrives at the pad on September 21 ahead of Starship Flight Test 14, targeting September 28 for the vehicle's first orbital launch attempt, carrying 26 V3 Starlink satellites.",
+          "text": "A paper led by Kenji Furuya of Japan's RIKEN institute finds interstellar object 3I/ATLAS's water carries a deuterium-to-hydrogen ratio of about 1%, tens of times higher than a typical solar-system comet's 0.015%-0.03%, consistent with it forming in a low-metallicity stellar nursery.",
           "href": ""
         }
       ]
@@ -80,12 +76,12 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "A UK Biobank study of 11,071 adults finds nighttime light exposure above 3 lux is linked to thickening of the heart's left ventricle wall and early signs of reduced cardiac function three years later, in research led by Tulane University's Lu Qi and published September 9 in the European Heart Journal.",
-          "href": "https://mistertranslation.com/health/does-light-at-night-hurt-your-heart.html"
+          "text": "A BMJ review of 69 randomized trials covering 153,902 adults finds calcium and vitamin D supplements, alone or combined, produce little to no reduction in fracture or fall risk for most older people.",
+          "href": ""
         },
         {
-          "text": "A Washington University School of Medicine study of more than 333,000 veterans with type 2 diabetes finds cardiovascular risk climbs the longer patients stay off GLP-1 drugs like Ozempic and Wegovy after stopping — 4% higher at six months, 14% at one year, 22% at two years — with the lost benefit not fully restored even after resuming treatment.",
-          "href": "https://mistertranslation.com/health/does-stopping-a-glp-1-raise-heart-risk.html"
+          "text": "A WEHI-led study of roughly 900 human gut biopsies, published in Science, finds intestinal cells in inflammatory bowel disease patients can stay primed to die even during symptom-free remission, with higher cell-death signaling tied to greater relapse risk over more than two years of follow-up.",
+          "href": ""
         }
       ]
     }
