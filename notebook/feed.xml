@@ -7,6 +7,22 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>The Chip China Banned Itself Into Building</title>
+    <link>https://mistertranslation.com/notebook/the-chip-china-banned-itself-into-building.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-chip-china-banned-itself-into-building.html</guid>
+    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On September 22, Alibaba's chip unit T-Head unveiled the Zhenwu V900 at the company's Apsara Conference in Hangzhou — 216GB of on-package memory, a 1,200GB/s interconnect, and clusters scaling to 500,000 units, which CEO Eddie Wu called "the most powerful AI chip in China today." The obvious story is the timing, one day before Xi Jinping landed in Washington for his first US state visit in three years. The more interesting story is who actually kept Nvidia's H200 out of China — and it wasn't only Washington.</description>
+    <category>alibaba</category>
+    <category>zhenwu v900</category>
+    <category>t-head</category>
+    <category>china</category>
+    <category>semiconductors</category>
+    <category>export controls</category>
+    <category>nvidia</category>
+    <category>ai infrastructure</category>
+    <category>apsara conference</category>
+  </item>
+  <item>
     <title>Plugin4Shell: A Pin Is Not a Verification</title>
     <link>https://mistertranslation.com/notebook/a-pin-is-not-a-verification.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/a-pin-is-not-a-verification.html</guid>
@@ -401,21 +417,6 @@
     <category>geopolitics</category>
     <category>shipping</category>
     <category>maps</category>
-  </item>
-  <item>
-    <title>The Second Plane</title>
-    <link>https://mistertranslation.com/notebook/the-second-plane.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-second-plane.html</guid>
-    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Twenty-five years ago I was woken up in California to watch the second plane go into the tower. This week 2,977 drones rose over New York Harbor, one for each person, and built the towers again for a few minutes at full size. It got to me more than I expected, and I've been trying to work out why — and why it landed in the same week that drones set fire to a Saudi pipeline and a widow stood at Ground Zero to say the country had spent twenty-five years protecting the Saudis instead of her.</description>
-    <category>september 11</category>
-    <category>memory</category>
-    <category>new york</category>
-    <category>memorial</category>
-    <category>drones</category>
-    <category>saudi arabia</category>
-    <category>2001</category>
-    <category>notes</category>
   </item>
 </channel>
 </rss>
