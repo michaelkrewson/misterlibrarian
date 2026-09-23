@@ -42,6 +42,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 INDEX = os.path.join(ROOT, "index.html")
 OG_PATH = os.path.join(ROOT, "img", "og-hub.png")
 RUNDOWN_FILE = os.path.join(ROOT, "source", "notebook", "_rundown.json")
+RUNDOWN_JS_VER = blogkit.asset_ver(ROOT, "rundown.js")
 
 # data-pub → (source dir, url prefix). The Bible is handled separately.
 DATED = {
@@ -217,19 +218,37 @@ def _pretty_date(date_iso):
         return date_iso
 
 
+def _rdblock(label, lis_html):
+    """Independent copy of build_notebook.py's _rdblock — one orderable/hideable
+    rundown block, keyed by the section's own label text so a saved reader
+    preference survives from one day's box to the next. Kept as its own copy
+    rather than an import, matching this codebase's no-cross-dependency rule."""
+    e = html.escape(label)
+    return (
+        '  <div class="rdblock" data-rdkey="%s">\n'
+        '    <h3 class="rdsec">%s<span class="rdctl">'
+        '<button type="button" class="rdup" aria-label="Move %s up">▲</button>'
+        '<button type="button" class="rddown" aria-label="Move %s down">▼</button>'
+        '<button type="button" class="rdhide" aria-label="Hide %s">✕</button>'
+        '</span></h3>\n'
+        '    <ul>%s</ul>\n'
+        '  </div>'
+    ) % (e, e, e, e, e, lis_html)
+
+
 def _rundown_html(data):
     if not data or not data.get("sections"):
         return '<section id="rundown" class="hubrundown"></section>'
-    parts = ['<section id="rundown" class="hubrundown">',
+    parts = ['<section id="rundown" class="hubrundown" data-rundown>',
              '  <h2 class="rdtitle">%s</h2>' % html.escape(data.get("title") or "Today's rundown")]
     date_label = data.get("date", "")
     if date_label:
         parts.append('  <p class="rddate">%s</p>' % html.escape(_pretty_date(date_label)))
+    parts.append('  <div class="rdblocks">')
     for sec in data["sections"]:
         items = sec.get("items", [])
         if not items:
             continue
-        parts.append('  <h3 class="rdsec">%s</h3>' % html.escape(sec.get("label", "")))
         lis = []
         for it in items:
             text = html.escape(it.get("text", ""))
@@ -256,7 +275,7 @@ def _rundown_html(data):
                 lis.append('<li class="rdbreak">🚨 %s</li>' % body)
             else:
                 lis.append("<li>%s</li>" % body)
-        parts.append('  <ul>%s</ul>' % "".join(lis))
+        parts.append(_rdblock(sec.get("label", ""), "".join(lis)))
     reads = data.get("reads", [])
     if reads:
         rlis = []
@@ -268,14 +287,17 @@ def _rundown_html(data):
                             % (html.escape(href), text))
             else:
                 rlis.append("<li>%s</li>" % text)
-        parts.append('  <h3 class="rdsec">Worth reading elsewhere</h3>')
-        parts.append('  <ul>%s</ul>' % "".join(rlis))
+        parts.append(_rdblock("Worth reading elsewhere", "".join(rlis)))
+    parts.append('  </div>')
+    parts.append('  <div class="rdtools"><button type="button" class="rdreset">'
+                  '↺ Reset order</button><span class="rdhidden"></span></div>')
     parts.append('  <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>')
     missed_url = blogkit.x_missed_url("https://mistertranslation.com/notebook/")
     parts.append(
         '  <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s" '
         'target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>'
         % html.escape(missed_url))
+    parts.append('  <script src="rundown.js?v=%s" defer></script>' % RUNDOWN_JS_VER)
     parts.append("</section>")
     return "\n".join(parts)
 
