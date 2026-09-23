@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 610" width="900" height="610" role="img"
+     aria-label="Diagram titled What's Actually Combining. Left card, Paramount Skydance, the Ellison-controlled buyer: CBS and CBS News, Paramount Pictures, MTV, Nickelodeon home of SpongeBob, Comedy Central and BET, Showtime, Pluto TV. Right card, Warner Bros. Discovery, the target: CNN, HBO and HBO Max, Warner Bros. Pictures, Discovery TLC and HGTV, TNT and TBS, Cartoon Network home of Bugs Bunny, DC Comics. Both cards funnel down into one bar labeled equals one company, listing CBS News plus CNN, HBO plus MTV plus Nickelodeon, and SpongeBob plus Bugs Bunny plus Harry Potter plus Transformers now under one roof, with a note that the states did not get a breakup, they got guardrails. A footer row of four figures: about 110 billion dollars deal price near 31 dollars a share; 12 states sued then settled, the Justice Department had cleared the deal with zero conditions; 30 rising to 32 films a year, a five year theatrical floor with 4 independent films; 30 million dollars, the penalty per film short of quota. Caption: settlement reached September 21, 2026; close expected on or around October 5, 2026, pending remaining approvals.">
+  <rect width="900" height="610" fill="#0a0f1a"/>
+
+  <text x="450" y="36" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="20" fill="#e8dfd2">What's Actually Combining</text>
+  <text x="450" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="13" fill="#94a3b8" font-style="italic">two media companies, one signature, twelve state settlements</text>
+
+  <!-- LEFT CARD: Paramount Skydance -->
+  <rect x="50" y="82" width="380" height="230" rx="12" fill="#0d1520" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="240" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" font-weight="bold" fill="#e8dfd2">PARAMOUNT SKYDANCE</text>
+  <text x="240" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="11" fill="#94a3b8" font-style="italic">the Ellison-controlled buyer</text>
+  <line x1="90" y1="140" x2="390" y2="140" stroke="rgba(255,255,255,.08)"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#e8dfd2" text-anchor="middle">
+    <text x="240" y="163">CBS &amp; CBS News</text>
+    <text x="240" y="185">Paramount Pictures</text>
+    <text x="240" y="207">MTV</text>
+    <text x="240" y="229">Nickelodeon <tspan fill="#94a3b8" font-size="12">(SpongeBob)</tspan></text>
+    <text x="240" y="251">Comedy Central · BET</text>
+    <text x="240" y="273">Showtime</text>
+    <text x="240" y="295">Pluto TV</text>
+  </g>
+
+  <!-- RIGHT CARD: Warner Bros. Discovery -->
+  <rect x="470" y="82" width="380" height="230" rx="12" fill="#0d1520" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="660" y="112" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" font-weight="bold" fill="#e8dfd2">WARNER BROS. DISCOVERY</text>
+  <text x="660" y="130" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="11" fill="#94a3b8" font-style="italic">the target</text>
+  <line x1="510" y1="140" x2="810" y2="140" stroke="rgba(255,255,255,.08)"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="13.5" fill="#e8dfd2" text-anchor="middle">
+    <text x="660" y="163">CNN</text>
+    <text x="660" y="185">HBO &amp; HBO Max</text>
+    <text x="660" y="207">Warner Bros. Pictures</text>
+    <text x="660" y="229">Discovery, TLC, HGTV</text>
+    <text x="660" y="251">TNT · TBS</text>
+    <text x="660" y="273">Cartoon Network <tspan fill="#94a3b8" font-size="12">(Bugs Bunny)</tspan></text>
+    <text x="660" y="295">DC Comics</text>
+  </g>
+
+  <!-- funnel -->
+  <line x1="240" y1="312" x2="450" y2="350" stroke="#e8c968" stroke-width="2.2"/>
+  <line x1="660" y1="312" x2="450" y2="350" stroke="#e8c968" stroke-width="2.2"/>
+  <text x="450" y="340" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="12" fill="#e8c968">~$110B</text>
+
+  <!-- merged bar -->
+  <rect x="90" y="358" width="720" height="112" rx="12" fill="#0d1520" stroke="#a3b378" stroke-width="2"/>
+  <text x="450" y="386" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" font-weight="bold" fill="#a3b378">= ONE COMPANY</text>
+  <text x="450" y="403" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="11.5" fill="#94a3b8" font-style="italic">the states didn't get a breakup — they got guardrails</text>
+  <text x="450" y="427" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="13.5" fill="#e8dfd2">CBS News + CNN · HBO + MTV + Nickelodeon</text>
+  <text x="450" y="450" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="13.5" fill="#e8dfd2">SpongeBob + Bugs Bunny + Harry Potter + Transformers</text>
+
+  <!-- footer stats -->
+  <line x1="60" y1="500" x2="840" y2="500" stroke="rgba(148,163,184,.25)"/>
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+    <text x="150" y="528" font-size="21" fill="#e8dfd2">~$110B</text>
+    <text x="150" y="548" font-size="11.5" fill="#94a3b8">deal price, ~$31/share</text>
+
+    <text x="350" y="528" font-size="21" fill="#e8dfd2">12 states</text>
+    <text x="350" y="548" font-size="11.5" fill="#94a3b8">sued, then settled — DOJ asked for nothing</text>
+
+    <text x="550" y="528" font-size="21" fill="#e8dfd2">30→32 films/yr</text>
+    <text x="550" y="548" font-size="11.5" fill="#94a3b8">5-yr theatrical floor, 4 indies</text>
+
+    <text x="750" y="528" font-size="21" fill="#e8865c">$30M</text>
+    <text x="750" y="548" font-size="11.5" fill="#94a3b8">penalty per film short of quota</text>
+  </g>
+
+  <text x="450" y="588" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="12.5" fill="#94a3b8" font-style="italic">Settlement reached September 21, 2026 — close expected on or around October 5, pending remaining approvals</text>
+</svg>

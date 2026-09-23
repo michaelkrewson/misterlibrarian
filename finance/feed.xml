@@ -23,6 +23,24 @@
     <category>fuel prices</category>
   </item>
   <item>
+    <title>The Family That Now Owns Your Childhood</title>
+    <link>https://mistertranslation.com/finance/the-family-that-now-owns-your-childhood.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/the-family-that-now-owns-your-childhood.html</guid>
+    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Paramount Skydance's roughly $110 billion purchase of Warner Bros. Discovery cleared its last legal obstacle this week, and the list of what one company now controls is almost absurd to read in one sentence: CBS and CNN, HBO and MTV, SpongeBob and Bugs Bunny, Harry Potter and Transformers. The federal government approved the deal in June with zero conditions attached. It took twelve state attorneys general suing on their own, separately, to get any guardrails at all — and even then, nobody broke anything up. I built the org chart and read the settlement so you don't have to.</description>
+    <category>paramount skydance</category>
+    <category>warner bros discovery</category>
+    <category>david ellison</category>
+    <category>larry ellison</category>
+    <category>oracle</category>
+    <category>antitrust</category>
+    <category>media consolidation</category>
+    <category>state attorneys general</category>
+    <category>hollywood</category>
+    <category>rob bonta</category>
+    <category>mergers</category>
+  </item>
+  <item>
     <title>Seventeen Billion Reasons They're Still Not In</title>
     <link>https://mistertranslation.com/finance/seventeen-billion-reasons-theyre-still-not-in.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/seventeen-billion-reasons-theyre-still-not-in.html</guid>
@@ -499,23 +517,6 @@
     <category>central banks</category>
     <category>united nations</category>
     <category>monetary policy</category>
-    <category>notes</category>
-  </item>
-  <item>
-    <title>Nearly Four Thousand Bitcoin, and Why I Uninstalled Aqua</title>
-    <link>https://mistertranslation.com/finance/liquid-network-peg-drain.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/liquid-network-peg-drain.html</guid>
-    <pubDate>Sun, 06 Sep 2026 12:00:00 +0000</pubDate>
-    <description>A federation that was supposed to hold every L-BTC one-to-one in real bitcoin just watched roughly four thousand bitcoin walk out the door in a single afternoon. The working theory is an inflation bug in Liquid's confidential transactions, and the functionaries signed the withdrawal anyway — because from where they sat, it looked completely normal.</description>
-    <category>bitcoin</category>
-    <category>liquid network</category>
-    <category>sidechain</category>
-    <category>confidential transactions</category>
-    <category>security</category>
-    <category>self custody</category>
-    <category>multisig</category>
-    <category>blockstream</category>
-    <category>covenants</category>
     <category>notes</category>
   </item>
 </channel>
