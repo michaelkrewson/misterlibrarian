@@ -904,6 +904,76 @@ def _entry_hero(e):
             % (esc(e["hero"]), esc(e["hero_alt"]), dims, cap))
 
 
+_SVG_DIM_RE = re.compile(r'viewBox="[\d.\-]+\s+[\d.\-]+\s+([\d.]+)\s+([\d.]+)"')
+
+
+def _svg_social_png(img_dir, svg_filename):
+    """Rasterize an SVG hero to a same-basename PNG, for og:image/twitter:image
+    ONLY — the on-page <img> keeps using the crisp SVG.
+
+    Caught live 2026-09-23 sharing the diesel-export-ban post on X: the card
+    came back as the site's generic branded fallback with no real image at
+    all, even though og:image pointed straight at a real, correct SVG file.
+    X (like Facebook/LinkedIn) does not render SVG as a link-preview image —
+    it fetches the URL, can't decode it as a raster image, and silently
+    synthesizes a title-only card instead of erroring. This affected every
+    SVG-hero entry on the Ledger, not just that one (six as of this fix).
+
+    Rendered via headless Chromium (already a project dependency through
+    Playwright, used for exactly this kind of visual check elsewhere in this
+    codebase) rather than cairosvg/rsvg-convert/Pillow — none of those are
+    installed and Pillow's own SVG support requires the same missing native
+    cairo library. The SVG is loaded through a tiny HTML wrapper, not
+    navigated to directly: Chromium's built-in bare-SVG document view adds
+    its own chrome/scaling, which a raw screenshot would bake in.
+
+    Cached by mtime (skips relaunching Chromium on a build where the SVG
+    hasn't changed) and fails OPEN — if Playwright is missing, the source
+    SVG can't be read, or its viewBox can't be parsed, returns None and the
+    caller falls back to the SVG URL, i.e. exactly today's (broken) status
+    quo, never a build failure.
+    """
+    base, _ = os.path.splitext(svg_filename)
+    png_name = f"{base}.png"
+    svg_path = os.path.join(img_dir, svg_filename)
+    png_path = os.path.join(img_dir, png_name)
+    try:
+        if (os.path.exists(png_path)
+                and os.path.getmtime(png_path) >= os.path.getmtime(svg_path)):
+            return png_name
+        with open(svg_path, encoding="utf-8") as f:
+            svg_src = f.read()
+        m = _SVG_DIM_RE.search(svg_src)
+        if not m:
+            return None
+        w, h = int(float(m.group(1))), int(float(m.group(2)))
+        import tempfile
+        from playwright.sync_api import sync_playwright
+        wrapper = (f'<!DOCTYPE html><html><head><style>'
+                   f'*{{margin:0;padding:0}}'
+                   f'html,body{{width:{w}px;height:{h}px;overflow:hidden}}'
+                   f'img{{display:block;width:{w}px;height:{h}px}}'
+                   f'</style></head><body><img src="file://{os.path.abspath(svg_path)}"/>'
+                   f'</body></html>')
+        with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as f:
+            f.write(wrapper)
+            wrapper_path = f.name
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch()
+                page = browser.new_page(viewport={"width": w, "height": h},
+                                         device_scale_factor=2)
+                page.goto(f"file://{wrapper_path}")
+                page.wait_for_timeout(100)
+                page.screenshot(path=png_path)
+                browser.close()
+        finally:
+            os.unlink(wrapper_path)
+        return png_name
+    except Exception:
+        return None
+
+
 def _social_tags(title, desc, image=""):
     """The og:image + Twitter-card block a shared link unfurls from — the one
     thing this publication's <head> lacked that its two siblings already had
@@ -918,7 +988,17 @@ def _social_tags(title, desc, image=""):
     So: no hero → the default card, large; a landscape hero ≥600px wide →
     large; anything else (small, square, or unreadable) → summary. og:image
     itself always carries the real image — Facebook/LinkedIn/iMessage all
-    render a square one as a square thumbnail on their own."""
+    render a square one as a square thumbnail on their own.
+
+    An SVG `image` is swapped for its rasterized PNG twin here (see
+    `_svg_social_png`) before any of the above runs — X/Facebook/LinkedIn
+    can't unfurl an SVG at all, so og:image must carry a raster file even
+    though the on-page <img> (built separately, in `_entry_hero`) keeps
+    using the SVG."""
+    if image and image.lower().endswith(".svg"):
+        png = _svg_social_png(os.path.join(OUT, "img"), image)
+        if png:
+            image = png
     if image:
         src = f"{SITE_URL}{BASE}/img/{image}"
         d = blogkit.img_dims(os.path.join(OUT, "img"), image)
