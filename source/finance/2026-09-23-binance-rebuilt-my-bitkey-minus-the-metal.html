@@ -1,0 +1,157 @@
+title: Binance Rebuilt My Bitkey, Minus the Metal
+date: 2026-09-23
+tags: binance us, bitkey, self custody, mpc, multisig, seed phrase, block, robinhood chain, wallet security, web3 wallet
+summary: An email landed today announcing Binance.US's new self-custody wallet — no seed phrase, keys split three ways, "no single point of failure." I already own the product that pitch describes; it's called a Bitkey, and Block shipped it two years ago. Here's what's actually the same, what's genuinely different, and why one detail — what's doing the signing, not the math behind it — is the whole ballgame.
+meta_desc: Binance.US's new keyless wallet vs. my Bitkey: same 2-of-3 idea, one runs on hardware, one runs on your phone and iCloud.
+hero: binance-bitkey-two-triangles.svg
+hero_alt: Two triangular diagrams side by side under the heading "Two of three, either way." Left, labeled "MY BITKEY — on-chain multisig, Bitcoin only": three circles — your phone, a hardware key, and Block's server — with the note "any two unlock funds; the hardware key never touches the internet." Right, labeled "BINANCE.US WALLET — off-chain MPC, seven-plus chains": three circles — your device, your personal cloud backup, and Binance.US — with the note "any two shares unlock funds; two of the three still live in software." A caption beneath both reads: the trust math is identical; what each triangle is made of is not.
+hero_credit: Bitkey's architecture from Block's own published documentation (see this site's earlier Coldcard/Bitkey entry); Binance's MPC key-split from Binance's own blog post "Embracing the Future of Web3: Binance's Innovative MPC Wallet," describing the same three-share design used by Binance.US Wallet.
+draft: false
+---
+
+<p>An email from Binance.US landed in my inbox this afternoon, subject line "A Different Way to
+Hold Your Crypto." The pitch: a new self-custody wallet built into their app, no seed phrase
+required, your keys "split three ways: across your device, your personal cloud storage, and
+Binance.US. No single point of failure." I read it twice, because I already own the thing this
+is describing. It's called a Bitkey, and I wrote about mine <a
+href="coldcard-bitkey-security.html">seven weeks ago</a>, after a hardware wallet bug across town
+went and stole a hundred and thirty million dollars.</p>
+
+<h2>What Landed in My Inbox</h2>
+
+<p>Binance.US Wallet went live today, September 23, for eligible iOS and Android users — folded
+directly into the existing Binance.US app, so you can move between the exchange side and the
+wallet side without switching apps. The pitch, in the company's own words: "self-custody,
+simplified," keyless technology that splits your key three ways, and "no single point of failure"
+because a thief would need to compromise more than one location at once. It reaches Ethereum, BNB
+Chain, Base, Arbitrum, Polygon, Solana, and Robinhood's new Robinhood Chain — "tens of thousands
+of tokens and hundreds of DApps" in the company's phrasing. A built-in Security Center lets you
+check a token or a dApp before you trade it. And a footnote promises lower fees than "major
+self-custody wallets," measured, per the email's own fine print, against published fees as of
+September 22 and "not guaranteed for all users or transactions."</p>
+
+<h2>I Already Own the Idea This Is Selling as New</h2>
+
+<p>Here's the thing that actually surprised me: the marketing isn't lying, and it isn't even new.
+"No seed phrase, no single point of failure, need two of three to move anything" is precisely
+Bitkey's pitch — the one Jack Dorsey's company, Block, has been shipping since 2024. Binance's
+own explanation of the mechanics, published on its blog under the title "Embracing the Future of
+Web3," lays out the identical shape: three key-shares are generated, one lands on your device, one
+lands in your personal cloud storage (iCloud or Google Drive) behind a recovery password only you
+know, and one sits on Binance's own servers. "A minimum of two key-shares is required" to sign
+anything. Lose one, the other two still get you home. That's the exact sentence I wrote about my
+own hardware key in August, word for word in spirit if not in vendor.</p>
+
+<h2>Multisig and MPC Look Identical on a Slide, Not on the Chain</h2>
+
+<p>Where the two actually part ways is more interesting than "hardware versus software," and it's
+worth getting right before getting to that part, because the two techniques aren't quite the same
+thing wearing different clothes. Bitkey is <strong>on-chain multisig</strong> — three real Bitcoin
+keys, and the arrangement itself is visible in the transaction: anyone looking at the blockchain
+can see it's a two-of-three script, the same way you'd notice a signature line on a contract needs
+two names on it. Binance's mechanism is <strong>MPC</strong>, multi-party computation — three
+mathematical shares that jointly compute one ordinary signature without any single private key
+ever existing anywhere, even for an instant. Binance's own description is direct about this: "a
+single private key is never generated, split, or reconstructed in the process." That's a genuinely
+elegant piece of cryptography, and it produces a transaction that looks, on the blockchain, like
+any other single-signature wallet in the world — no visible fingerprint that three parties were
+involved at all. The trade is exactly the mirror image of the trade you'd guess: Bitkey's
+arrangement is auditable by a stranger from the outside, using nothing but a block explorer;
+Binance's is invisible from the outside and has to be trusted from the inside, on the strength of
+the company's own implementation.</p>
+
+<h2>The Difference That Actually Decides It: What's Doing the Signing</h2>
+
+<p>Set the cryptography aside, because it isn't the part that would keep me up at night. What
+matters more is where the two non-server keys physically live. My Bitkey's second key sits on a
+dedicated piece of hardware — a stainless-steel card, talking to my phone only over NFC, that has
+never once touched the internet and never will. Binance.US Wallet's two non-custodial shares are
+your <em>device</em> and your <em>personal cloud storage</em> — which is to say, your phone and
+your iCloud or Google account, both ordinary software, both reachable by anything that can already
+reach your phone. If malware gets onto that phone, an attacker doesn't need to break MPC math at
+all; they need your device share, which they may already have, and your cloud account, which is a
+password-and-2FA problem rather than a steal-something-out-of-my-pocket problem. Two of three
+starts to look a lot closer than the marketing implies once you notice both non-Binance shares
+share one attack surface.</p>
+
+<p>I made this same point in my Bitkey piece about a different failure entirely — the billion
+and a half dollars Bybit lost out of a cold multisig in February of 2025, not because anyone broke
+the multisig math, but because the interface the signers were looking at showed them a different
+transaction than the one they actually approved. That risk applies here with extra force: Bitkey
+at least ships a hardware device whose whole second-generation redesign was adding a screen to
+verify what you're signing against. A phone-plus-cloud arrangement has no such independent surface
+to check against at all — the phone showing you the transaction is the same phone holding one of
+your two shares.</p>
+
+<h2>Scope Is the Real Trade, and It's Not a Small One</h2>
+
+<p>Bitkey does one thing: Bitcoin. That's Block's whole minimalist thesis, and it means the attack
+surface is whatever Bitcoin's base layer actually is — old, simple, thoroughly picked-over.
+Binance.US Wallet reaches seven-plus chains and, per its own pitch, tens of thousands of tokens.
+That's not a knock; multi-chain DeFi is a real use case with real demand. But it's also exactly why
+the wallet ships with a built-in "Security Center" to vet a token or a dApp before you touch it —
+a feature Bitkey has no need for, because there's nothing to vet. Every extra chain is an extra
+bridge, an extra token-approval dialog, an extra scam contract with a name one letter off from a
+real one. Bitcoin's narrowness isn't a missing feature. On a wallet built to hold savings rather
+than to explore, it's the feature.</p>
+
+<h2>Who's Actually Holding the Third Share</h2>
+
+<p>Worth naming plainly, since it's a fact about the arrangement and not a jab: Bitkey's
+co-signer is Block, a payments and hardware company sitting one step removed from anywhere your
+Bitcoin actually trades. Binance.US's third share sits inside the very same corporate entity that
+also runs the exchange side of the same app you're using. Neither of those facts should decide it
+by itself — but it's worth knowing the company holding your third share is also the company
+whose order book you might be trading against. And it's worth being fair about the specific
+company: the SEC's 2023 case against Binance.US and its BAM Trading Services entity — unregistered
+securities offerings, inflated volumes, the works — was paused in February 2025 and formally
+dismissed that May. That's genuinely resolved, not merely quiet. The much larger $4.3 billion
+settlement from November 2023 was the parent company Binance.com's, over Bank Secrecy Act and
+sanctions failures, and Binance.US was not a party to it. The overhang was real two years ago; the
+entity asking to hold a third of your key today is under materially less federal pressure than it
+was then, and I'd rather say that plainly than let a stale headline do the work of an argument.</p>
+
+<h2>What I'd Actually Do</h2>
+
+<div class="verdict">
+<strong>Worth switching to?</strong> If you already trust Binance.US with your identity and want a
+lower-friction way to dabble in multi-chain DeFi without juggling a dozen seed phrases across a
+dozen L2s, this is a genuinely reasonable on-ramp, and the underlying MPC design is real
+engineering, not vaporware. What it isn't is a hardware wallet, and I wouldn't treat it as a
+substitute for one on money I'd call savings rather than play. The rule I wrote down in August
+still holds: any arrangement where every leg lives in software is a single point of failure in
+practice, whatever the math says about "two of three" on a slide. My Bitcoin still sits behind
+the Bitkey, for the same reason it did before this email arrived — one of its three legs has to be
+physically stolen out of a room, and the other two don't.
+</div>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>I don't have a Binance.US Wallet account.</strong> Everything above is drawn from
+  the promotional email itself, Binance's own blog post describing its MPC architecture, and
+  secondary reporting on the Binance.US-specific launch — not a hands-on test of the product
+  against my own Bitkey. A published architecture and a shipped implementation can diverge.</li>
+  <li><strong>The MPC description I've quoted is Binance's own blog post about "Binance Wallet"
+  generally</strong>, not a Binance.US-specific technical paper; secondary reporting describes the
+  Binance.US Wallet as using the same underlying MPC technology, but I haven't seen a
+  Binance.US-branded document that restates the three-share design in its own words.</li>
+  <li><strong>No independent, named third-party security audit of Binance's MPC wallet turned up
+  in my own research</strong>, for what that's worth — I raised the identical gap about Bitkey in
+  August, and I'd rather flag the same absence here than let one product's silence read as
+  more suspicious than the other's.</li>
+  <li><strong>The fee comparison is Binance's own marketing claim</strong> — "pay less compared to
+  major self-custody wallets," measured against published fees as of September 22 and stated as
+  not guaranteed — not a benchmark I ran myself against Bitkey's real on-chain Bitcoin fees (which
+  run higher per transaction than a single-signature spend, since a two-of-three spend needs more
+  data on the blockchain than a plain one-key spend does).</li>
+  <li><strong>The SEC/Binance.US timeline</strong> — case paused February 2025, dismissed May 29,
+  2025 — is as I found it in contemporaneous reporting; I have not read the dismissal filing
+  itself. The $4.3 billion November 2023 settlement figure is well-documented and specific to
+  Binance Holdings/Changpeng Zhao, not BAM Trading Services (Binance.US), which is the distinction
+  the paragraph above rests on.</li>
+  <li><strong>I own a Bitkey and no Binance.US products.</strong> I'm not a neutral party on
+  whether a hardware leg beats a cloud leg, for the same reason I wasn't neutral comparing Bitkey
+  to Coldcard in August. None of this is investment or security advice tailored to your own
+  situation — it's one person's read of two published architectures.</li>
+</ul>

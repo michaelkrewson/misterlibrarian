@@ -7,6 +7,23 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Binance Rebuilt My Bitkey, Minus the Metal</title>
+    <link>https://mistertranslation.com/finance/binance-rebuilt-my-bitkey-minus-the-metal.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/binance-rebuilt-my-bitkey-minus-the-metal.html</guid>
+    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+    <description>An email landed today announcing Binance.US's new self-custody wallet — no seed phrase, keys split three ways, "no single point of failure." I already own the product that pitch describes; it's called a Bitkey, and Block shipped it two years ago. Here's what's actually the same, what's genuinely different, and why one detail — what's doing the signing, not the math behind it — is the whole ballgame.</description>
+    <category>binance us</category>
+    <category>bitkey</category>
+    <category>self custody</category>
+    <category>mpc</category>
+    <category>multisig</category>
+    <category>seed phrase</category>
+    <category>block</category>
+    <category>robinhood chain</category>
+    <category>wallet security</category>
+    <category>web3 wallet</category>
+  </item>
+  <item>
     <title>Nearly Two Million Barrels to Fix One Shortage</title>
     <link>https://mistertranslation.com/finance/nearly-two-million-barrels-to-fix-one-shortage.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/nearly-two-million-barrels-to-fix-one-shortage.html</guid>
@@ -501,22 +518,6 @@
     <category>security</category>
     <category>bug bounty</category>
     <category>ai</category>
-    <category>notes</category>
-  </item>
-  <item>
-    <title>Older Than the United Nations, and Never Asked to Join</title>
-    <link>https://mistertranslation.com/finance/untangling-bis-imf-world-bank.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/untangling-bis-imf-world-bank.html</guid>
-    <pubDate>Tue, 08 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Three institutions get lumped together in casual conversation, and they have three genuinely different jobs, three different owners, and three different relationships to the United Nations — one of them predates the UN entirely and was never made to join it. Here's what the BIS actually regulates, what the IMF actually lends and prices, and where a Special Drawing Right actually comes from.</description>
-    <category>bis</category>
-    <category>imf</category>
-    <category>world bank</category>
-    <category>bretton woods</category>
-    <category>sdr</category>
-    <category>central banks</category>
-    <category>united nations</category>
-    <category>monetary policy</category>
     <category>notes</category>
   </item>
 </channel>

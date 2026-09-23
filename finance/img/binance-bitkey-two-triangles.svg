@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1750 780" role="img"
+     aria-label="Two triangular diagrams side by side. Left, My Bitkey, on-chain multisig, Bitcoin only: your phone, the hardware key, and Block's server, any two of which unlock funds, and the hardware key never touches the internet. Right, Binance.US Wallet, off-chain MPC, seven-plus chains: your device, your personal cloud backup, and Binance.US, any two shares of which unlock funds, but two of the three still live in software. Caption: the trust math is identical, what each triangle is made of is not.">
+  <rect width="1750" height="780" fill="#0a0f1a"/>
+
+  <text x="875" y="50" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="30" font-style="italic" fill="#e8c968">Two of three, either way</text>
+  <text x="875" y="78" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="15" fill="#94a3b8">the same 2-of-3 arrangement, built two different ways</text>
+
+  <line x1="875" y1="105" x2="875" y2="690" stroke="rgba(232,201,104,.16)" stroke-width="1.5"/>
+
+  <!-- LEFT: My Bitkey -->
+  <text x="390" y="118" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">MY BITKEY</text>
+  <text x="390" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="13" font-style="italic" fill="#94a3b8">on-chain multisig &#183; Bitcoin only</text>
+
+  <polygon points="390,195 140,485 640,485" fill="none" stroke="rgba(232,201,104,.28)" stroke-width="2"/>
+
+  <text x="390" y="332" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="18" font-style="italic" fill="#e8c968">any two unlock funds</text>
+  <text x="390" y="357" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="12.5" fill="#94a3b8">the hardware key never touches the internet</text>
+
+  <g transform="translate(390,195)">
+    <circle r="55" fill="#0d1520" stroke="#e8865c" stroke-width="2.5"/>
+    <rect x="-15" y="-25" width="30" height="50" rx="6" fill="none" stroke="#e8dfd2" stroke-width="2.2"/>
+    <circle cx="0" cy="17" r="2.4" fill="#e8dfd2"/>
+    <text x="0" y="93" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19" fill="#e8dfd2">Your phone</text>
+    <text x="0" y="115" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="13" font-style="italic" fill="#94a3b8">the app key</text>
+  </g>
+
+  <g transform="translate(140,485)">
+    <circle r="55" fill="#0d1520" stroke="#a3b378" stroke-width="2.5"/>
+    <rect x="-23" y="-14" width="46" height="28" rx="7" fill="none" stroke="#e8dfd2" stroke-width="2.2"/>
+    <circle cx="-10" cy="0" r="4.2" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <line x1="2" y1="0" x2="16" y2="0" stroke="#e8dfd2" stroke-width="2.2"/>
+    <line x1="16" y1="0" x2="16" y2="6" stroke="#e8dfd2" stroke-width="2.2"/>
+    <text x="0" y="93" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19" fill="#e8dfd2">The hardware key</text>
+    <text x="0" y="115" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="13" font-style="italic" fill="#94a3b8">the NFC card, offline</text>
+  </g>
+
+  <g transform="translate(640,485)">
+    <circle r="55" fill="#0d1520" stroke="#e8c968" stroke-width="2.5"/>
+    <rect x="-19" y="-23" width="38" height="14" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <rect x="-19" y="-6" width="38" height="14" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <rect x="-19" y="11" width="38" height="14" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <circle cx="-12" cy="1" r="1.5" fill="#e8dfd2"/>
+    <text x="0" y="93" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19" fill="#e8dfd2">Block's server</text>
+    <text x="0" y="115" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="13" font-style="italic" fill="#94a3b8">co-signer, not custodian</text>
+  </g>
+
+  <!-- RIGHT: Binance.US Wallet -->
+  <text x="1360" y="118" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="21" fill="#e8dfd2">BINANCE.US WALLET</text>
+  <text x="1360" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="13" font-style="italic" fill="#94a3b8">off-chain MPC &#183; seven-plus chains</text>
+
+  <polygon points="1360,195 1110,485 1610,485" fill="none" stroke="rgba(232,201,104,.28)" stroke-width="2"/>
+
+  <text x="1360" y="332" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="18" font-style="italic" fill="#e8c968">any two shares unlock funds</text>
+  <text x="1360" y="357" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="12.5" fill="#94a3b8">two of the three still live in software</text>
+
+  <g transform="translate(1360,195)">
+    <circle r="55" fill="#0d1520" stroke="#e8865c" stroke-width="2.5"/>
+    <rect x="-15" y="-25" width="30" height="50" rx="6" fill="none" stroke="#e8dfd2" stroke-width="2.2"/>
+    <circle cx="0" cy="17" r="2.4" fill="#e8dfd2"/>
+    <text x="0" y="93" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19" fill="#e8dfd2">Your device</text>
+    <text x="0" y="115" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="13" font-style="italic" fill="#94a3b8">the app share</text>
+  </g>
+
+  <g transform="translate(1110,485)">
+    <circle r="55" fill="#0d1520" stroke="#a3b378" stroke-width="2.5"/>
+    <g transform="scale(1.9) translate(-12,-11)">
+      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"
+            fill="none" stroke="#e8dfd2" stroke-width="1.15"/>
+    </g>
+    <text x="0" y="93" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19" fill="#e8dfd2">Your cloud backup</text>
+    <text x="0" y="115" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="13" font-style="italic" fill="#94a3b8">iCloud or Google Drive</text>
+  </g>
+
+  <g transform="translate(1610,485)">
+    <circle r="55" fill="#0d1520" stroke="#e8c968" stroke-width="2.5"/>
+    <rect x="-19" y="-23" width="38" height="14" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <rect x="-19" y="-6" width="38" height="14" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <rect x="-19" y="11" width="38" height="14" rx="3" fill="none" stroke="#e8dfd2" stroke-width="2"/>
+    <circle cx="-12" cy="1" r="1.5" fill="#e8dfd2"/>
+    <text x="0" y="93" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="19" fill="#e8dfd2">Binance.US</text>
+    <text x="0" y="115" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+          font-size="13" font-style="italic" fill="#94a3b8">co-signer, still online</text>
+  </g>
+
+  <text x="875" y="745" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="16" fill="#94a3b8">The trust math is identical. What each triangle is made of is not.</text>
+</svg>
