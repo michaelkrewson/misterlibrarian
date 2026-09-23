@@ -93,20 +93,32 @@ Ledger, Notebook, Travel — not just the one this was caught on):
   `source/<pub>/img/`). Skipping the hero is a real option only when there genuinely isn't a
   fitting image to find — not the default when one wasn't looked for.
 - **A tweet, after publishing.** Michael wants each new entry actually posted to X, not just
-  drafted. **This is currently a real gap, not a checklist miss** — there is no X account or
-  posting credential wired into this repo or this environment (checked 2026-09-23: no MCP
-  connector for X/Twitter is available, and none of the build scripts hold an API key for
-  one — the existing `blogkit.x_comment_url`/`x_note_url` machinery is a READER-facing
-  pre-filled compose link for commenting on a page, not an authoring/posting mechanism for
-  announcing one). To actually post on publish, this needs X API v2 credentials (an API
-  key/secret + access token/secret, or an OAuth2 bearer token) from an X developer app tied
-  to whichever account should be posting, stored the way this repo already stores other
-  secrets (env var / macOS Keychain — see how `mstr-trader`'s `alpaca_broker.py` does it for
-  the pattern), plus a small script using either `tweepy` or a direct HTTPS call to X's
-  `POST /2/tweets` endpoint. **Until that exists, the fallback is: draft the tweet text (under
-  280 characters, article title + the honest one-line hook + the live URL) and hand it over
-  in chat for Michael to post himself** — better than silently skipping the step, and not a
-  substitute for actually wiring up posting once credentials exist.
+  drafted. **The posting mechanism now exists — `tools/post_to_x.py`** (built 2026-09-23,
+  standard library only, hand-rolled OAuth 1.0a/HMAC-SHA1 signing, no `tweepy`/`requests`
+  dependency). It is distinct from `blogkit.x_comment_url`/`x_note_url`, which only build a
+  READER-facing pre-filled compose link for commenting on a page — this is the only thing in
+  the repo that authors and posts on Michael's own behalf. **What's still missing is
+  credentials, not code** — the script reads four values (API key/secret, access
+  token/secret) from `~/.misterlibrarian/x_credentials.json` (outside the repo, chmod 600;
+  never committed), which Michael has to generate once from an X developer app under
+  console.x.com (the script's own top docstring has the exact steps, including the
+  read-then-write-permissions-then-regenerate-token gotcha). X also moved to pay-per-use
+  pricing 2026-02-06 — no free tier, roughly $0.20/post since an announcement tweet always
+  carries a URL — so a credit balance has to exist too, not just the four keys. The signing
+  math is verified against X's own published worked example (`python3 tools/post_to_x.py
+  --selftest`, no credentials needed) and against an independent `openssl dgst -sha1 -hmac`
+  computation of the same base string. **Always run a real post with `--dry-run` first** — it
+  signs and prints the exact request without spending a credit or touching the network, so a
+  mistake shows up before it costs money or posts something wrong. **Until Michael has
+  supplied credentials, the fallback stays: draft the tweet text (`--dry-run`'s t.co-adjusted
+  length check keeps it under 280) and hand it over in chat for him to post himself** — not a
+  reason to stop building toward the real thing once keys exist. ⚠️ **A real (non-`--dry-run`)
+  post is a per-post confirm, not a standing pre-authorization** like the git worktree
+  commit/push/merge flow elsewhere in this file — it's a public, visible, costs-real-money
+  action on Michael's own account, a different risk class than a git push to a repo he owns.
+  Show him the drafted text and get a go-ahead before actually invoking it for real, unless
+  he explicitly says otherwise (and if he does, record that the same way the git
+  pre-authorization is recorded here, so it doesn't need re-litigating every session).
 
 ## Monetization — Google AdSense publisher policy binds EVERY publication (2026-09-17)
 
