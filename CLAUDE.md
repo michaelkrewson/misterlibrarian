@@ -73,6 +73,41 @@ someone's lunch money" (same fact, now it has a pulse).
 it should surface on its own in a future session — but if a run of entries reads dry again,
 that's the sign to re-read this section rather than wait to be asked twice.
 
+## Every entry gets a hero image, and gets tweeted (Michael's ask, 2026-09-23)
+
+Caught the first time on a `/health/` entry that shipped with neither. Two separate misses,
+one root cause — publishing was treated as done once the page built and the sources checked
+out, when two more steps are actually part of "done" for every blog on this domain (Regimen,
+Ledger, Notebook, Travel — not just the one this was caught on):
+
+- **A hero image, by default.** Every existing `/health/` entry has one; Ledger and Notebook
+  are close behind (27/33 and 31/39 as of 2026-09-23 — the exceptions are the rule Michael
+  hasn't pushed on, not evidence a hero is optional). `REQUIRED_KEYS` in each builder doesn't
+  enforce this — the build will happily ship without one — so it has to be a checklist habit,
+  not something a missing `hero:` line gets caught by. Source a real, on-topic, properly
+  licensed image (Wikimedia Commons public-domain/CC search is the usual path — a period
+  anatomical plate, a historical photo, a relevant CC-licensed photo; see any existing
+  `source/<pub>/*.html`'s `hero_credit:` line for the citation format), web-size it
+  (~1400–1600px wide is the existing range) and strip metadata before it goes in
+  `<pub>/img/`, which is the tracked, canonical location (not gitignored, not a separate
+  `source/<pub>/img/`). Skipping the hero is a real option only when there genuinely isn't a
+  fitting image to find — not the default when one wasn't looked for.
+- **A tweet, after publishing.** Michael wants each new entry actually posted to X, not just
+  drafted. **This is currently a real gap, not a checklist miss** — there is no X account or
+  posting credential wired into this repo or this environment (checked 2026-09-23: no MCP
+  connector for X/Twitter is available, and none of the build scripts hold an API key for
+  one — the existing `blogkit.x_comment_url`/`x_note_url` machinery is a READER-facing
+  pre-filled compose link for commenting on a page, not an authoring/posting mechanism for
+  announcing one). To actually post on publish, this needs X API v2 credentials (an API
+  key/secret + access token/secret, or an OAuth2 bearer token) from an X developer app tied
+  to whichever account should be posting, stored the way this repo already stores other
+  secrets (env var / macOS Keychain — see how `mstr-trader`'s `alpaca_broker.py` does it for
+  the pattern), plus a small script using either `tweepy` or a direct HTTPS call to X's
+  `POST /2/tweets` endpoint. **Until that exists, the fallback is: draft the tweet text (under
+  280 characters, article title + the honest one-line hook + the live URL) and hand it over
+  in chat for Michael to post himself** — better than silently skipping the step, and not a
+  substitute for actually wiring up posting once credentials exist.
+
 ## Monetization — Google AdSense publisher policy binds EVERY publication (2026-09-17)
 
 Michael applied for Google AdSense on 2026-09-17 (privacy.html / librarian.html were built
