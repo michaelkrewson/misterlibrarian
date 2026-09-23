@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img"
+     aria-label="Left: a diverging bar chart, same hour, same headline — US diesel futures down more than 7 percent versus European diesel futures up more than 7 percent, both reacting to news of a reported 90-day US diesel export ban. Right: S&amp;P Global's own modeled fix for a full ban running October through December 2026 — crude runs cut by about 1.9 million barrels a day, roughly 12 percent of US refining throughput, which because diesel and gasoline are cracked from the same barrel also cuts gasoline output by as much as 750,000 barrels a day. Caption: a policy sold as lowering one fuel's price, modeled to work by shrinking the supply of both.">
+  <rect width="900" height="400" fill="#0a0f1a"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">Same headline, opposite signs <tspan fill="#94a3b8">— the tape, Sep 23</tspan></text>
+
+  <!-- Left panel: diverging bar chart -->
+  <line x1="255" y1="70" x2="255" y2="230" stroke="rgba(255,255,255,.15)"/>
+  <text x="255" y="62" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#94a3b8">same hour</text>
+
+  <text x="245" y="112" text-anchor="end" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">US diesel futures</text>
+  <rect x="115" y="98" width="140" height="22" fill="#c15b5b"/>
+  <text x="105" y="113" text-anchor="end" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#c15b5b">-7%+</text>
+
+  <text x="265" y="160" text-anchor="start" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">European diesel futures</text>
+  <rect x="255" y="146" width="140" height="22" fill="#7fae6a"/>
+  <text x="405" y="161" text-anchor="start" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#7fae6a">+7%+</text>
+
+  <text x="40" y="200" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">Both reacting, inside one hour, to the same wire item:</text>
+  <text x="40" y="218" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">a reported 90-day US diesel export ban.</text>
+
+  <line x1="40" y1="242" x2="460" y2="242" stroke="rgba(255,255,255,.08)"/>
+  <text x="40" y="264" font-family="Georgia, serif" font-size="11.5" fill="#e8dfd2">US diesel price <tspan fill="#94a3b8">(AAA)</tspan></text>
+  <text x="40" y="288" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#e8c547">$6.51/gal</text>
+  <text x="280" y="264" font-family="Georgia, serif" font-size="11.5" fill="#e8dfd2">Distillate stocks</text>
+  <text x="280" y="288" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#e8865c">-13% vs avg</text>
+
+  <!-- divider -->
+  <line x1="500" y1="30" x2="500" y2="392" stroke="rgba(255,255,255,.12)"/>
+
+  <!-- Right panel: the S&P Global model -->
+  <text x="530" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">One barrel, two fuels</text>
+  <text x="530" y="60" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">S&amp;P Global's own model of a full ban, Oct-Dec 2026</text>
+
+  <text x="530" y="98" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">To clear the trapped diesel, crude runs fall</text>
+  <text x="530" y="128" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#e8865c">~1.9M bpd</text>
+  <text x="700" y="128" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">~12% of US throughput</text>
+
+  <line x1="530" y1="150" x2="870" y2="150" stroke="rgba(255,255,255,.08)"/>
+
+  <text x="530" y="180" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">Diesel and gasoline crack from one barrel,</text>
+  <text x="530" y="198" font-family="Georgia, serif" font-size="12.5" fill="#e8dfd2">so gasoline output falls up to</text>
+  <text x="530" y="230" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#c15b5b">750,000 bpd</text>
+
+  <line x1="530" y1="252" x2="870" y2="252" stroke="rgba(255,255,255,.08)"/>
+
+  <text x="530" y="278" font-family="Georgia, serif" font-size="12" fill="#94a3b8">Own Energy Secretary:</text>
+  <text x="530" y="296" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">"definitely doesn't work"</text>
+  <text x="530" y="322" font-family="Georgia, serif" font-size="12" fill="#94a3b8">American Petroleum Institute:</text>
+  <text x="530" y="340" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">would "wreak havoc" at home and abroad</text>
+
+  <text x="40" y="382" font-family="Georgia, serif" font-size="12" fill="#94a3b8">A policy sold as lowering one fuel's price, modeled to work by shrinking the supply of both.</text>
+</svg>
