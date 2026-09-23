@@ -7,6 +7,21 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>The Cheapest Fuel in the Solar System Is a Planet</title>
+    <link>https://mistertranslation.com/notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html</guid>
+    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+    <description>On September 28, the European Space Agency's JUICE spacecraft swings within 8,640 kilometres of Earth over the Indian Ocean, borrowing 3.5 kilometres a second of speed from our planet for free. It's the third of four such thefts on a roundabout route to Jupiter's icy moons that won't actually arrive until 2031 — because JUICE can't carry enough fuel to get there any faster.</description>
+    <category>space</category>
+    <category>esa</category>
+    <category>juice</category>
+    <category>jupiter</category>
+    <category>ganymede</category>
+    <category>gravity assist</category>
+    <category>spaceflight</category>
+    <category>engineering</category>
+  </item>
+  <item>
     <title>The Chip China Banned Itself Into Building</title>
     <link>https://mistertranslation.com/notebook/the-chip-china-banned-itself-into-building.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/the-chip-china-banned-itself-into-building.html</guid>
@@ -400,21 +415,6 @@
     <category>software</category>
     <category>documentation</category>
     <category>debugging</category>
-  </item>
-  <item>
-    <title>Raised on Radio, the One I Have to Defend</title>
-    <link>https://mistertranslation.com/notebook/raised-on-radio-the-one-i-have-to-defend.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/raised-on-radio-the-one-i-have-to-defend.html</guid>
-    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-    <description>My favorite Journey album is not Escape and not Frontiers. It's Raised on Radio, from 1986 — the one Steve Perry produced himself, the one made after two founding members were let go, the one the band never quite recovered from. This is the entry where I say why: it was mostly Perry, it mixed his voice with the new synthesizer sound of the mid-eighties in a way that felt beyond normal music to a fourteen-year-old, and "The Eyes of a Woman" still moves me and "Girl Can't Help It" is still what I drive to.</description>
-    <category>journey</category>
-    <category>music</category>
-    <category>rock</category>
-    <category>1980s</category>
-    <category>steve perry</category>
-    <category>raised on radio</category>
-    <category>synthesizers</category>
-    <category>series</category>
   </item>
 </channel>
 </rss>
