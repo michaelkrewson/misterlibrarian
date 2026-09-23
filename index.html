@@ -60,6 +60,24 @@ h1{margin:0 0 10px;font-size:38px;font-weight:400;letter-spacing:.01em;
 .hubrundown li{margin:0 0 7px}
 .hubrundown a{color:#8fa3ff}
 .hubrundown a:hover{text-decoration:underline}
+.hubrundown a.rdsrc{color:#7f8fa6;font-size:12px;text-decoration:none;margin-left:3px}
+.hubrundown a.rdsrc:hover{color:#8fa3ff;text-decoration:underline}
+.hubrundown li.rdbreak{font-weight:600;color:#e8eef7}
+.hubrundown .rdblocks{display:flex;flex-direction:column}
+.hubrundown .rdblock .rdsec{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.hubrundown .rdctl{display:inline-flex;gap:2px;flex:0 0 auto}
+.hubrundown .rdctl button{background:none;border:none;cursor:pointer;padding:2px 5px;
+  font-size:11px;color:#54617a;line-height:1;border-radius:4px}
+.hubrundown .rdctl button:hover,.hubrundown .rdctl button:focus{color:#8fa3ff;background:#131c2b}
+.hubrundown .rdtools{margin:14px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  font-size:12.5px;color:#7f8fa6}
+.hubrundown .rdreset{background:none;border:none;cursor:pointer;padding:0;font:inherit;
+  color:#7f8fa6;text-decoration:underline}
+.hubrundown .rdreset:hover,.hubrundown .rdreset:focus{color:#8fa3ff}
+.hubrundown .rdhidden:empty{display:none}
+.hubrundown .rdrestore{background:#131c2b;border:none;border-radius:999px;cursor:pointer;
+  padding:2px 9px;font-size:12px;color:#a9b7c9;margin-left:4px}
+.hubrundown .rdrestore:hover,.hubrundown .rdrestore:focus{color:#8fa3ff}
 .hubrundown .rdmore{margin:18px 0 0;font-size:13px;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .hubrundown .rdmore a{color:#8fa3ff;font-weight:600;text-decoration:none}
@@ -206,23 +224,39 @@ footer.hub-foot a:hover{color:#e8c968}
   <p class="tagline">and other publications of Mister Librarian</p>
 </header>
 
-<section id="rundown" class="hubrundown">
+<section id="rundown" class="hubrundown" data-rundown>
   <h2 class="rdtitle">The rundown</h2>
   <p class="rddate">September 23, 2026</p>
-  <h3 class="rdsec">World</h3>
-  <ul><li>President Trump tells the UN General Assembly on September 22 he faces a &quot;big decision&quot; on Iran — a deal or &quot;annihilate the Islamic Republic&quot; — and predicts an agreement only after November&#x27;s midterm elections, since Tehran is &quot;waiting to see how I do.&quot;</li><li>Chinese President Xi Jinping arrives in Washington on September 23 for his first U.S. state visit in 11 years, with Thursday&#x27;s main meeting expected to center on extending last year&#x27;s trade truce alongside AI, Taiwan and critical minerals.</li><li>Ukrainian President Volodymyr Zelenskyy calls on September 23 for a trilateral meeting with Presidents Trump and Putin and repeats Kyiv&#x27;s readiness for a mutual &quot;energy ceasefire&quot; if Russian strikes on power infrastructure stop.</li></ul>
-  <h3 class="rdsec">Business &amp; markets</h3>
-  <ul><li>The Nasdaq 100 closes at a record on September 22, its first since June, as the Philadelphia Semiconductor Index jumps 4.3% and Intel and Arm Holdings both surge more than 12%, while the S&amp;P 500 finishes flat and the Dow falls 0.4%.</li><li>Asian equities extend a rally into a sixth straight session on September 23 — India&#x27;s Sensex opens up more than 100 points and MSCI&#x27;s Asia Pacific index adds 0.3% — tracking Wall Street&#x27;s chip rally and falling oil prices tied to hopes for an Iran deal.</li></ul>
-  <h3 class="rdsec">Bitcoin &amp; crypto</h3>
-  <ul><li>Bitcoin and ether open near eight-month highs on September 23, with Fundstrat&#x27;s Sean Farrell declaring &quot;the crypto winter is over&quot; after bitcoin gained more than 5% Friday and another 6% Monday.</li><li>BitMEX permanently shuts down at 04:00 UTC on September 23 after 11 years, closing an exchange whose daily volume had shrunk to roughly $400,000 following its 2020 Bank Secrecy Act case and years of losing share to Binance, Bybit and OKX.</li></ul>
-  <h3 class="rdsec">Technology</h3>
-  <ul><li><a href="notebook/the-chip-china-banned-itself-into-building.html">Alibaba unveils its Zhenwu V900 AI accelerator on September 22 at its Hangzhou conference, calling it China&#x27;s most powerful chip yet, built for clusters of up to 500,000 units and said to triple the performance of its predecessor, days ahead of Xi&#x27;s Washington visit.</a></li><li><a href="notebook/the-chip-doesnt-have-to-cross-a-border.html">House Select Committee on China chairman John Moolenaar urges the Trump administration on September 18 to close &quot;cloud services loopholes&quot; and tighten chipmaking-equipment export controls to China, in a letter sent less than a week before Xi&#x27;s September 24 Washington visit.</a></li></ul>
-  <h3 class="rdsec">Science &amp; space</h3>
-  <ul><li><a href="notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html">ESA&#x27;s JUICE spacecraft swings within 8,640 km of Earth on September 28 for a gravity assist over the Indian Ocean, gaining about 3.5 km/s of speed on its way to a 2031 arrival at Jupiter&#x27;s icy moons.</a></li><li><a href="notebook/a-comet-carrying-someone-elses-recipe-for-water.html">A paper led by Kenji Furuya of Japan&#x27;s RIKEN institute finds interstellar object 3I/ATLAS&#x27;s water carries a deuterium-to-hydrogen ratio of about 1%, tens of times higher than a typical solar-system comet&#x27;s 0.015%-0.03%, consistent with it forming in a low-metallicity stellar nursery.</a></li></ul>
-  <h3 class="rdsec">Health &amp; medicine</h3>
-  <ul><li><a href="notebook//health/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html">A BMJ review of 69 randomized trials covering 153,902 adults finds calcium and vitamin D supplements, alone or combined, produce little to no reduction in fracture or fall risk for most older people.</a></li><li><a href="notebook//health/why-do-ibd-patients-relapse-even-in-remission.html">A WEHI-led study of roughly 900 human gut biopsies, published in Science, finds intestinal cells in inflammatory bowel disease patients can stay primed to die even during symptom-free remission, with higher cell-death signaling tied to greater relapse risk over more than two years of follow-up.</a></li></ul>
+  <div class="rdblocks">
+  <div class="rdblock" data-rdkey="World">
+    <h3 class="rdsec">World<span class="rdctl"><button type="button" class="rdup" aria-label="Move World up">▲</button><button type="button" class="rddown" aria-label="Move World down">▼</button><button type="button" class="rdhide" aria-label="Hide World">✕</button></span></h3>
+    <ul><li>President Trump tells the UN General Assembly on September 22 he faces a &quot;big decision&quot; on Iran — a deal or &quot;annihilate the Islamic Republic&quot; — and predicts an agreement only after November&#x27;s midterm elections, since Tehran is &quot;waiting to see how I do.&quot;</li><li>Chinese President Xi Jinping arrives in Washington on September 23 for his first U.S. state visit in 11 years, with Thursday&#x27;s main meeting expected to center on extending last year&#x27;s trade truce alongside AI, Taiwan and critical minerals.</li><li>Ukrainian President Volodymyr Zelenskyy calls on September 23 for a trilateral meeting with Presidents Trump and Putin and repeats Kyiv&#x27;s readiness for a mutual &quot;energy ceasefire&quot; if Russian strikes on power infrastructure stop.</li></ul>
+  </div>
+  <div class="rdblock" data-rdkey="Business &amp; markets">
+    <h3 class="rdsec">Business &amp; markets<span class="rdctl"><button type="button" class="rdup" aria-label="Move Business &amp; markets up">▲</button><button type="button" class="rddown" aria-label="Move Business &amp; markets down">▼</button><button type="button" class="rdhide" aria-label="Hide Business &amp; markets">✕</button></span></h3>
+    <ul><li>The Nasdaq 100 closes at a record on September 22, its first since June, as the Philadelphia Semiconductor Index jumps 4.3% and Intel and Arm Holdings both surge more than 12%, while the S&amp;P 500 finishes flat and the Dow falls 0.4%.</li><li>Asian equities extend a rally into a sixth straight session on September 23 — India&#x27;s Sensex opens up more than 100 points and MSCI&#x27;s Asia Pacific index adds 0.3% — tracking Wall Street&#x27;s chip rally and falling oil prices tied to hopes for an Iran deal.</li></ul>
+  </div>
+  <div class="rdblock" data-rdkey="Bitcoin &amp; crypto">
+    <h3 class="rdsec">Bitcoin &amp; crypto<span class="rdctl"><button type="button" class="rdup" aria-label="Move Bitcoin &amp; crypto up">▲</button><button type="button" class="rddown" aria-label="Move Bitcoin &amp; crypto down">▼</button><button type="button" class="rdhide" aria-label="Hide Bitcoin &amp; crypto">✕</button></span></h3>
+    <ul><li>Bitcoin and ether open near eight-month highs on September 23, with Fundstrat&#x27;s Sean Farrell declaring &quot;the crypto winter is over&quot; after bitcoin gained more than 5% Friday and another 6% Monday.</li><li>BitMEX permanently shuts down at 04:00 UTC on September 23 after 11 years, closing an exchange whose daily volume had shrunk to roughly $400,000 following its 2020 Bank Secrecy Act case and years of losing share to Binance, Bybit and OKX.</li></ul>
+  </div>
+  <div class="rdblock" data-rdkey="Technology">
+    <h3 class="rdsec">Technology<span class="rdctl"><button type="button" class="rdup" aria-label="Move Technology up">▲</button><button type="button" class="rddown" aria-label="Move Technology down">▼</button><button type="button" class="rdhide" aria-label="Hide Technology">✕</button></span></h3>
+    <ul><li><a href="notebook/the-chip-china-banned-itself-into-building.html">Alibaba unveils its Zhenwu V900 AI accelerator on September 22 at its Hangzhou conference, calling it China&#x27;s most powerful chip yet, built for clusters of up to 500,000 units and said to triple the performance of its predecessor, days ahead of Xi&#x27;s Washington visit.</a></li><li><a href="notebook/the-chip-doesnt-have-to-cross-a-border.html">House Select Committee on China chairman John Moolenaar urges the Trump administration on September 18 to close &quot;cloud services loopholes&quot; and tighten chipmaking-equipment export controls to China, in a letter sent less than a week before Xi&#x27;s September 24 Washington visit.</a></li></ul>
+  </div>
+  <div class="rdblock" data-rdkey="Science &amp; space">
+    <h3 class="rdsec">Science &amp; space<span class="rdctl"><button type="button" class="rdup" aria-label="Move Science &amp; space up">▲</button><button type="button" class="rddown" aria-label="Move Science &amp; space down">▼</button><button type="button" class="rdhide" aria-label="Hide Science &amp; space">✕</button></span></h3>
+    <ul><li><a href="notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html">ESA&#x27;s JUICE spacecraft swings within 8,640 km of Earth on September 28 for a gravity assist over the Indian Ocean, gaining about 3.5 km/s of speed on its way to a 2031 arrival at Jupiter&#x27;s icy moons.</a></li><li><a href="notebook/a-comet-carrying-someone-elses-recipe-for-water.html">A paper led by Kenji Furuya of Japan&#x27;s RIKEN institute finds interstellar object 3I/ATLAS&#x27;s water carries a deuterium-to-hydrogen ratio of about 1%, tens of times higher than a typical solar-system comet&#x27;s 0.015%-0.03%, consistent with it forming in a low-metallicity stellar nursery.</a></li></ul>
+  </div>
+  <div class="rdblock" data-rdkey="Health &amp; medicine">
+    <h3 class="rdsec">Health &amp; medicine<span class="rdctl"><button type="button" class="rdup" aria-label="Move Health &amp; medicine up">▲</button><button type="button" class="rddown" aria-label="Move Health &amp; medicine down">▼</button><button type="button" class="rdhide" aria-label="Hide Health &amp; medicine">✕</button></span></h3>
+    <ul><li><a href="notebook//health/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html">A BMJ review of 69 randomized trials covering 153,902 adults finds calcium and vitamin D supplements, alone or combined, produce little to no reduction in fracture or fall risk for most older people.</a></li><li><a href="notebook//health/why-do-ibd-patients-relapse-even-in-remission.html">A WEHI-led study of roughly 900 human gut biopsies, published in Science, finds intestinal cells in inflammatory bowel disease patients can stay primed to die even during symptom-free remission, with higher cell-death signaling tied to greater relapse risk over more than two years of follow-up.</a></li></ul>
+  </div>
+  </div>
+  <div class="rdtools"><button type="button" class="rdreset">↺ Reset order</button><span class="rdhidden"></span></div>
   <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>
   <p class="rdask"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Did%20today%27s%20rundown%20miss%20something%3F%0A%0Ahttps%3A//mistertranslation.com/notebook/%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>
+  <script src="rundown.js?v=add27ae543" defer></script>
 </section>
 
 <div class="cardgrid">

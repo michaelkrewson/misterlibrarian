@@ -61,11 +61,27 @@ def render_body(data):
         for it in items:
             text = esc(it.get("text", ""))
             href = it.get("href", "").strip()
-            if href:
-                lis.append('  <li><a href="%s">%s</a></li>' % (esc(href), text))
-            else:
-                lis.append("  <li>%s</li>" % text)
+            src = it.get("source_href", "").strip()
+            body = '<a href="%s">%s</a>' % (esc(href), text) if href else text
+            if src:
+                body += ' <a href="%s" target="_blank" rel="noopener">↗</a>' % esc(src)
+            if it.get("breaking"):
+                body = "🚨 %s" % body
+            lis.append("  <li>%s</li>" % body)
         parts.append("<ul>\n%s\n</ul>" % "\n".join(lis))
+    reads = data.get("reads", [])
+    if reads:
+        parts.append("<h2>Worth reading elsewhere</h2>")
+        rlis = []
+        for it in reads:
+            text = esc(it.get("text", ""))
+            href = it.get("href", "").strip()
+            if href:
+                rlis.append('  <li><a href="%s" target="_blank" rel="noopener">%s</a></li>'
+                            % (esc(href), text))
+            else:
+                rlis.append("  <li>%s</li>" % text)
+        parts.append("<ul>\n%s\n</ul>" % "\n".join(rlis))
     return "\n\n".join(parts) + "\n"
 
 
@@ -148,7 +164,7 @@ def main():
 
     if not args.keep:
         fresh = {"date": dt.date.today().isoformat(), "title": "Today's rundown",
-                 "note": data.get("note", ""), "sections": []}
+                 "note": data.get("note", ""), "sections": [], "reads": []}
         with open(RUNDOWN_FILE, "w", encoding="utf-8") as fh:
             json.dump(fresh, fh, indent=2, ensure_ascii=False)
             fh.write("\n")
