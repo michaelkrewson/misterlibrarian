@@ -73,7 +73,7 @@ someone's lunch money" (same fact, now it has a pulse).
 it should surface on its own in a future session — but if a run of entries reads dry again,
 that's the sign to re-read this section rather than wait to be asked twice.
 
-## Every entry gets a hero image, and gets tweeted (Michael's ask, 2026-09-23)
+## Every entry gets a hero image, and a drafted (not posted) tweet (Michael's ask, 2026-09-23)
 
 Caught the first time on a `/health/` entry that shipped with neither. Two separate misses,
 one root cause — publishing was treated as done once the page built and the sources checked
@@ -92,33 +92,24 @@ Ledger, Notebook, Travel — not just the one this was caught on):
   `<pub>/img/`, which is the tracked, canonical location (not gitignored, not a separate
   `source/<pub>/img/`). Skipping the hero is a real option only when there genuinely isn't a
   fitting image to find — not the default when one wasn't looked for.
-- **A tweet, after publishing.** Michael wants each new entry actually posted to X, not just
-  drafted. **The posting mechanism now exists — `tools/post_to_x.py`** (built 2026-09-23,
-  standard library only, hand-rolled OAuth 1.0a/HMAC-SHA1 signing, no `tweepy`/`requests`
-  dependency). It is distinct from `blogkit.x_comment_url`/`x_note_url`, which only build a
-  READER-facing pre-filled compose link for commenting on a page — this is the only thing in
-  the repo that authors and posts on Michael's own behalf. **What's still missing is
-  credentials, not code** — the script reads four values (API key/secret, access
-  token/secret) from `~/.misterlibrarian/x_credentials.json` (outside the repo, chmod 600;
-  never committed), which Michael has to generate once from an X developer app under
-  console.x.com (the script's own top docstring has the exact steps, including the
-  read-then-write-permissions-then-regenerate-token gotcha). X also moved to pay-per-use
-  pricing 2026-02-06 — no free tier, roughly $0.20/post since an announcement tweet always
-  carries a URL — so a credit balance has to exist too, not just the four keys. The signing
-  math is verified against X's own published worked example (`python3 tools/post_to_x.py
-  --selftest`, no credentials needed) and against an independent `openssl dgst -sha1 -hmac`
-  computation of the same base string. **Always run a real post with `--dry-run` first** — it
-  signs and prints the exact request without spending a credit or touching the network, so a
-  mistake shows up before it costs money or posts something wrong. **Until Michael has
-  supplied credentials, the fallback stays: draft the tweet text (`--dry-run`'s t.co-adjusted
-  length check keeps it under 280) and hand it over in chat for him to post himself** — not a
-  reason to stop building toward the real thing once keys exist. ⚠️ **A real (non-`--dry-run`)
-  post is a per-post confirm, not a standing pre-authorization** like the git worktree
-  commit/push/merge flow elsewhere in this file — it's a public, visible, costs-real-money
-  action on Michael's own account, a different risk class than a git push to a repo he owns.
-  Show him the drafted text and get a go-ahead before actually invoking it for real, unless
-  he explicitly says otherwise (and if he does, record that the same way the git
-  pre-authorization is recorded here, so it doesn't need re-litigating every session).
+- **A tweet, after publishing — drafted, never posted. Settled 2026-09-23, Michael's call.**
+  A posting mechanism exists (`tools/post_to_x.py`, built the same day: standard library
+  only, hand-rolled OAuth 1.0a/HMAC-SHA1 signing verified against X's own published worked
+  example and independently against `openssl dgst -sha1 -hmac`; `--dry-run` signs and prints
+  a request without spending anything). **It stays unused by default.** X moved to
+  pay-per-use pricing 2026-02-06 — no free tier, roughly $0.20 per post since an announcement
+  tweet always carries a URL — and once Michael saw that, his call was that it's a sensible
+  way for X to charge, and that he'd rather post these by hand than pay per tweet. So: no X
+  developer app, no credentials, no `~/.misterlibrarian/x_credentials.json` — none of that
+  should be requested or chased. **The standing workflow is: after publishing, draft the
+  tweet text (under 280 chars including the link — a plain manual count is fine; the script's
+  `_tco_length` helper in `tools/post_to_x.py` does the t.co-adjusted version if it's worth
+  double-checking) and hand it over in chat for Michael to post himself.** The script is kept
+  — not deleted — because the underlying decision was about the API's price, not about the
+  code being wrong or the idea being bad; if that ever changes (a price drop, a free tier
+  returning, or Michael simply changing his mind), it's ready to go with no further work.
+  Don't independently decide to set up credentials or spend money on this without him raising
+  it again.
 
 ## Monetization — Google AdSense publisher policy binds EVERY publication (2026-09-17)
 
