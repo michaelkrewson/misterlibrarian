@@ -192,9 +192,9 @@ def refresh_index(entries, quiet=False):
 # --- the rundown box: a full mirror of the Notebook's front-page news roundup -------
 def _load_rundown():
     """Same contract as build_notebook.py's own _load_rundown: optional file, missing
-    href defaults to "". Kept as an independent copy rather than an import — this is
-    the one place build_hub.py reads a publication's source data directly instead of
-    a rendered page, so it stays a plain read of the JSON, nothing more."""
+    href/source_href default to "". Kept as an independent copy rather than an import —
+    this is the one place build_hub.py reads a publication's source data directly
+    instead of a rendered page, so it stays a plain read of the JSON, nothing more."""
     if not os.path.exists(RUNDOWN_FILE):
         return None
     with open(RUNDOWN_FILE, encoding="utf-8") as f:
@@ -202,6 +202,10 @@ def _load_rundown():
     for sec in data.get("sections", []):
         for item in sec.get("items", []):
             item.setdefault("href", "")
+            item.setdefault("source_href", "")
+            item.setdefault("breaking", False)
+    for it in data.get("reads", []):
+        it.setdefault("href", "")
     return data
 
 
@@ -230,6 +234,7 @@ def _rundown_html(data):
         for it in items:
             text = html.escape(it.get("text", ""))
             href = it.get("href", "").strip()
+            src = it.get("source_href", "").strip()
             if href:
                 # _rundown.json's hrefs are written relative to /notebook/ (where the
                 # Notebook's own front page renders them). This mirror sits one
@@ -239,10 +244,32 @@ def _rundown_html(data):
                 # cross-publication link) is already correct as-is.
                 if not re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*://', href):
                     href = "notebook/" + href
-                lis.append('<li><a href="%s">%s</a></li>' % (html.escape(href), text))
+                body = '<a href="%s">%s</a>' % (html.escape(href), text)
             else:
-                lis.append("<li>%s</li>" % text)
+                body = text
+            # source_href is always an outbound absolute URL (the primary news
+            # source), never a same-site relative path — no prefix rewrite needed.
+            if src:
+                body += ' <a class="rdsrc" href="%s" target="_blank" rel="noopener" ' \
+                        'title="Source">↗</a>' % html.escape(src)
+            if it.get("breaking"):
+                lis.append('<li class="rdbreak">🚨 %s</li>' % body)
+            else:
+                lis.append("<li>%s</li>" % body)
         parts.append('  <ul>%s</ul>' % "".join(lis))
+    reads = data.get("reads", [])
+    if reads:
+        rlis = []
+        for it in reads:
+            text = html.escape(it.get("text", ""))
+            href = it.get("href", "").strip()
+            if href:
+                rlis.append('<li><a href="%s" target="_blank" rel="noopener">%s</a></li>'
+                            % (html.escape(href), text))
+            else:
+                rlis.append("<li>%s</li>" % text)
+        parts.append('  <h3 class="rdsec">Worth reading elsewhere</h3>')
+        parts.append('  <ul>%s</ul>' % "".join(rlis))
     parts.append('  <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>')
     missed_url = blogkit.x_missed_url("https://mistertranslation.com/notebook/")
     parts.append(

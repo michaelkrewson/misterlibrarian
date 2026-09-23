@@ -560,7 +560,24 @@ def _load_rundown():
     which point it turns into a link. Lives in source/notebook/_rundown.json
     rather than as a dated entry — it's a standing box that gets edited in
     place, not a post — so it is deliberately outside load_entries()'s
-    YYYY-MM-DD-slug.html contract. Optional: no file, no box."""
+    YYYY-MM-DD-slug.html contract. Optional: no file, no box.
+
+    `source_href` (added 2026-09-23) is a SEPARATE field from `href` — the
+    primary news source an item is summarizing, present from the moment the
+    item is written. `href` still means "this graduated into our own entry"
+    and still only appears later. The two are independent so an item can
+    carry a source link immediately without pre-empting its own eventual
+    write-up link.
+
+    `breaking` (added 2026-09-23) is an item-level flag for the rare
+    genuinely-big story — a Drudge-siren analog. Use sparingly on purpose;
+    it only means something if most days have none.
+
+    Top-level `reads` (added 2026-09-23) is a SEPARATE list from `sections` —
+    a short "worth reading elsewhere" pointer list (other people's pieces or
+    good threads, not our own news items), rendered as its own block. Every
+    item is an outbound link by definition, unlike a section item's `href`
+    which starts empty and only fills in once something graduates."""
     if not os.path.exists(RUNDOWN_FILE):
         return None
     with open(RUNDOWN_FILE, encoding="utf-8") as fh:
@@ -568,6 +585,10 @@ def _load_rundown():
     for sec in data.get("sections", []):
         for item in sec.get("items", []):
             item.setdefault("href", "")
+            item.setdefault("source_href", "")
+            item.setdefault("breaking", False)
+    for it in data.get("reads", []):
+        it.setdefault("href", "")
     return data
 
 
@@ -598,12 +619,31 @@ def _rundown_box(data, entries=()):
         for it in items:
             text = esc(it.get("text", ""))
             href = it.get("href", "").strip()
-            if href:
-                lis.append('<li><a href="%s">%s</a></li>' % (esc(href), text))
+            src = it.get("source_href", "").strip()
+            body = '<a href="%s">%s</a>' % (esc(href), text) if href else text
+            if src:
+                body += ' <a class="rdsrc" href="%s" target="_blank" rel="noopener" ' \
+                        'title="Source">↗</a>' % esc(src)
+            if it.get("breaking"):
+                body = '🚨 %s' % body
+                lis.append('<li class="rdbreak">%s</li>' % body)
             else:
-                lis.append("<li>%s</li>" % text)
+                lis.append("<li>%s</li>" % body)
         parts.append('    <h3 class="rdsec">%s</h3>' % esc(sec.get("label", "")))
         parts.append('    <ul class="rdlist">%s</ul>' % "".join(lis))
+    reads = data.get("reads", [])
+    if reads:
+        rlis = []
+        for it in reads:
+            text = esc(it.get("text", ""))
+            href = it.get("href", "").strip()
+            if href:
+                rlis.append('<li><a href="%s" target="_blank" rel="noopener">%s</a></li>'
+                            % (esc(href), text))
+            else:
+                rlis.append("<li>%s</li>" % text)
+        parts.append('    <h3 class="rdsec">Worth reading elsewhere</h3>')
+        parts.append('    <ul class="rdlist">%s</ul>' % "".join(rlis))
     has_archive = any("rundown" in {t.lower() for t in e.get("tags", ())} for e in entries)
     if has_archive:
         parts.append('    <p class="rdarchive"><a href="%s">See past rundowns →</a></p>'
@@ -1547,6 +1587,9 @@ footer{margin:56px 0 0;padding-top:22px;border-top:1px solid #131b27;text-align:
 .rdlist{margin:0;padding-left:20px;color:#c3d0e0;font-size:15px;line-height:1.6}
 .rdlist li{margin:0 0 7px}
 .rdlist a:hover{text-decoration:underline}
+.rdlist a.rdsrc{color:#7f8fa6;font-size:12px;text-decoration:none;margin-left:3px}
+.rdlist a.rdsrc:hover{color:__ACCENT__;text-decoration:underline}
+.rdlist li.rdbreak{font-weight:600;color:#e8eef7}
 .rdask{margin:16px 0 0}
 .rdask .respond-btn{flex:0 1 auto;padding:9px 18px;font-size:14px}
 @media (max-width:720px){
