@@ -231,6 +231,14 @@ def _rundown_html(data):
             text = html.escape(it.get("text", ""))
             href = it.get("href", "").strip()
             if href:
+                # _rundown.json's hrefs are written relative to /notebook/ (where the
+                # Notebook's own front page renders them). This mirror sits one
+                # directory up at the site root, so any same-publication relative
+                # link needs a "notebook/" prefix here or it 404s at the root while
+                # working fine on the Notebook page itself. An absolute URL (a
+                # cross-publication link) is already correct as-is.
+                if not re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*://', href):
+                    href = "notebook/" + href
                 lis.append('<li><a href="%s">%s</a></li>' % (html.escape(href), text))
             else:
                 lis.append("<li>%s</li>" % text)
