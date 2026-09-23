@@ -1830,6 +1830,9 @@ DICTIONARY = [
     # ---- Mark 10 (Greek) ----
     ("rabbouni", "rabbouni", "Ραββουνι", "rabbouni",
      "MY GREAT ONE, MY MASTER — an Aramaic title built on the same root as 'rabbi' (rab, great one) but carrying a personal possessive suffix rabbi itself has lost, so 'my own great one' comes closer than the flattened 'rabbi' most shelf versions print. ⚠ It is used by exactly two people in the whole New Testament, in exactly two scenes: a blind beggar on the road out of Jericho, crying 'Rabbouni, that I may see again' (Mark 10:51), and Mary Magdalene at the empty tomb, turning at the sound of her own name to say 'Rabbouni!' — the Gospel of John's own note that it means 'Teacher' (20:16, not yet on these pages). A beggar who has never seen his face and a woman who watched him die use the identical word for him.", ("Mark", 10, 51)),
+    # ---- Mark 11 (Greek) ----
+    ("kyrios", "kyrios", "κύριος", "kyrios",
+     "LORD, MASTER, OWNER — the ordinary Greek word for anyone with authority over a thing or a person: a slave's owner, a landlord, a husband (1 Peter 3:6), or God himself. It is also the Greek Bible's own standing word for the Hebrew divine name — where the Hebrew text has YHVH, the Greek translators of the Septuagint wrote kyrios, so that any New Testament writer quoting an Old Testament verse containing the divine name was, in Greek, already writing kyrios for it. ⚠ Mark 11:3 uses the word in its plainest sense — 'the kyrios has need of it,' a coded phrase that only works if it can mean simply 'its owner' to whoever is standing there holding the rope, and yet reads, to anyone who already believes something about Jesus, as him quietly naming himself. The ambiguity is almost certainly the point: it lets Mark's Jesus assert something about himself in a sentence a bystander cannot object to. Six verses later, at v9, the same word appears in a very different register: the crowd's shout quotes Psalm 118:26, 'blessed is the one who comes in the name of [kyriou]' — and because that line is quoting a Hebrew psalm whose own word IS the divine name, this translation renders it 'Jehovah' there rather than 'the Lord,' the same choice already made at Matthew 21:9's identical line. One Greek word, two English words in the same chapter, sorted by whether the sentence is quoting the Hebrew Bible or not.", ("Mark", 11, 3)),
     # ---- Matthew 20 (Greek) ----
     ("lytron", "lytron / antilytron", "λύτρον", "lytron",
      "A RANSOM — the price paid to release a slave, a captive or a debtor; from lyō, 'to loose.' It is the Greek Old Testament's word for the redemption-price of a life (Exodus 21:30) and for the half-shekel every Israelite paid 'as a lytron for his soul' (Exodus 30:12, already on these pages — the very tax argued over at Matthew 17:24). ⚠ It appears in the Gospels exactly twice, in one saying: 'to give his life a lytron ANTI many' (Matthew 20:28 and Mark 10:45). The preposition matters and is often flattened — anti is the ordinary word for 'in place of, in exchange for,' and NWT's 'a ransom IN EXCHANGE FOR many' is the most exact reading on the shelf, against KJV/ASV's 'a ransom for many.' Paul intensifies it to antilytron, 'a corresponding ransom' (1 Timothy 2:6). ⚠ The word says a price was paid and does not say to whom — the question later theology spent centuries on. And 'many' (pollōn) is itself disputed: a limit, or the Semitic idiom for 'the great number, i.e. all.'", ("Matthew", 20, 28)),
@@ -5347,7 +5350,15 @@ ENCYCLOPEDIA = [
     dict(slug="mount-of-olives", name="Mount of Olives", kind="place", aliases=["Olivet", "Mount of Olives"],
          coords=(31.7783, 35.2464, 0.04),
          desc="The limestone ridge east of Jerusalem, across the Kidron valley, rising a little above the temple mount and facing it — so that anyone standing on it looks down into the city. Named for the olive groves on its slopes; Gethsemane lies at its foot. Luke calls it by a place-name form, Elaiōn, 'Olivet', and adds that it is 'a sabbath day's journey' from Jerusalem — about two thousand cubits, two-thirds of a mile — which is the only time the Bible uses that measure. It is where David fled weeping from Absalom, where Zechariah 14:4 says Jehovah's feet will stand, where Jesus taught, wept over the city, and was arrested, and where Acts places the ascension.",
-         refs=[("Acts", 1, 12)]),
+         refs=[("Acts", 1, 12), ("Mark", 11, 1)]),
+    dict(slug="bethany", name="Bethany", kind="place", aliases=["Bethany"],
+         coords=(31.7700, 35.2644, 0.03),
+         desc="A village on the south-eastern slope of the Mount of Olives, under two miles from Jerusalem on the road down to Jericho — close enough for Jesus to use it as a base at the end of each day during his final week rather than lodging inside the city itself. It is also where Lazarus, Martha and Mary lived (John 11, not yet on these pages) and where a woman anointed Jesus' head at the house of 'Simon the leper' (Mark 14:3, not yet on these pages). ⚠ Its modern Arabic name, al-'Ayzariyya, still preserves the memory — it derives from 'Lazarium', the place of Lazarus. Distinct from the Bethany 'across the Jordan' where John was baptizing (John 1:28, not yet on these pages) — the same place-name attached to two different villages a considerable distance apart.",
+         refs=[("Mark", 11, 1)]),
+    dict(slug="bethphage", name="Bethphage", kind="place", aliases=["Bethphage"],
+         coords=(31.7773, 35.2509, 0.02), approx=True,
+         desc="A village on the Mount of Olives, between Bethany and Jerusalem on the road down from the summit — named only for this one scene in the shared Gospel tradition (Matthew 21:1; Luke 19:29, not yet on these pages) and nowhere else in the Bible. ⚠ Its name is Aramaic, beth paggē, 'house of unripe figs' — pagga is the word for a fig too green to be fully ripe, the same class of fruit Song of Songs 2:13 (not yet on these pages) pictures a fig tree putting out before its leaves are done unfolding. Mark does not comment on the name, but the village Jesus and the twelve pass through on their way into Jerusalem is named, in Aramaic, after the one thing the fig tree two verses later conspicuously fails to produce. Its exact site is not fixed archaeologically; the tradition kept since at least the medieval period, now marked by a Franciscan church, sits on the eastern shoulder of the ridge.",
+         refs=[("Mark", 11, 1)]),
     dict(slug="akeldama", name="Akeldama", kind="place", aliases=["Akeldama"],
          coords=(31.7692, 35.2331, 0.02), approx=True,
          desc="The 'Field of Blood' — Aramaic ḥăqēl dəmā, which Luke transliterates and then translates for his Greek readers, a small detail that tells you a good deal about who he was writing for. Both Gospels and Acts agree that a plot of ground outside Jerusalem was bought with the betrayal money and carried that name; they explain the name differently, and this library prints both accounts. ⚠ The pin is TRADITIONAL, not certain: the site shown to pilgrims since at least the fourth century lies on the southern slope of the Hinnom valley, where Jerusalem's potters worked the clay and where rock-cut tombs were used as a burial ground for foreigners — which fits Matthew's 'field for the burial of strangers'. The identification is early and plausible; it is not evidence.",
@@ -12640,6 +12651,9 @@ CHRON_CHAPTERS = {
     "mark10": dict(era="gospels",
                   when="Pharisees test Jesus on divorce; he answers from creation itself — 'what God has joined together, let not man separate.' Children are brought to him and blessed over the disciples' objection. A rich man, told to sell everything and follow, goes away grieving, prompting the saying that it is easier for a camel to pass through a needle's eye than for a rich man to enter the kingdom. On the road up to Jerusalem, Jesus gives the third and final prediction of his death; James and John ask for the seats at his right and left, and are told the Son of Man came 'to give his life a ransom in exchange for many.' At Jericho, a blind beggar named Bartimaeus is healed and follows him on the road.",
                   clock="c. AD 29-30, the final approach to Jerusalem — corresponding to Matthew 19-20's own telling of the same sequence, immediately before the triumphal entry of chapter 11."),
+    "mark11": dict(era="gospels",
+                  when="Jesus rides a borrowed colt into Jerusalem to a crowd's Hosanna, looks around the temple, and leaves for the night. The next morning he curses a fruitless fig tree on the way in, then drives the money-changers and dove-sellers from the temple courts, quoting Isaiah and Jeremiah against them. The fig tree is found withered the following morning, prompting a teaching on faith and forgiveness. Back in the temple a third time, the chief priests, scribes and elders demand to know his authority; he answers with a counter-question about John's baptism that leaves them unable to respond either way.",
+                  clock="c. AD 30, the Sunday before Passover through the two days that follow — corresponding to Matthew 21:1-27's own telling of the same triumphal entry, cleansing and authority challenge, compressed by Matthew into a single day where Mark spreads it across two."),
     "luke2": dict(era="gospels",
                   when="A census under Caesar Augustus brings Joseph and the pregnant Mary to Bethlehem, where Jesus is born and laid in a manger, 'because there was no place for them in the inn.' Shepherds keeping watch nearby are told by an angel, then a whole multitude of the heavenly host praising God. At eight days he is circumcised and named; at the temple, the aged Simeon and the prophetess Anna both recognize him. The chapter closes years later with the twelve-year-old Jesus staying behind in the temple, 'sitting among the teachers, listening to them and asking them questions.'",
                   clock="c. 6-4 BC for the birth, matching Matthew's account of the same event told from Mary's side rather than Joseph's (see chapter 1's note); the temple episode at the close jumps forward to c. AD 6-8, when Jesus is twelve — the only story the Gospels tell of his childhood between infancy and adulthood."),
@@ -17790,6 +17804,30 @@ DICTIONARY_ES = {
         "«¡Rabbouni!» — la propia nota del Evangelio de Juan de que significa «Maestro» (20:16, todavía no "
         "en estas páginas). Un mendigo que nunca ha visto su rostro y una mujer que lo vio morir usan la "
         "palabra idéntica para él."),
+    # ---- Mateo 7 ----
+    "exousia": ("autoridad",
+        "«AUTORIDAD» — lo que asombró a las multitudes (Mateo 7:29): los escribas enseñaban por cita, "
+        "fallos en nombre de maestros anteriores; la única nota al pie de este predicador era «pero yo "
+        "os digo». Plantada donde el libro puede alcanzarla: la última frase de Mateo reclama «TODA "
+        "autoridad, en el cielo y en la tierra» (28:18)."),
+    # ---- Marcos 11 ----
+    "kyrios": ("Señor, amo, dueño",
+        "SEÑOR, AMO, DUEÑO — la palabra griega ordinaria para cualquiera con autoridad sobre una cosa o una "
+        "persona: el dueño de un esclavo, un propietario, un esposo (1 Pedro 3:6), o Dios mismo. Es también "
+        "la palabra fija de la Biblia griega para el nombre divino hebreo — donde el texto hebreo tiene "
+        "YHVH, los traductores griegos de la Septuaginta escribieron kyrios, de modo que cualquier escritor "
+        "del Nuevo Testamento que citara un versículo del Antiguo Testamento con el nombre divino ya estaba, "
+        "en griego, escribiendo kyrios por él. ⚠ Marcos 11:3 usa la palabra en su sentido más llano — «el "
+        "kyrios lo necesita», una frase en clave que solo funciona si puede significar simplemente «su "
+        "dueño» para quien est&eacute; sosteniendo la cuerda, y que sin embargo se lee, para quien ya cree "
+        "algo sobre Jesús, como si se nombrara a sí mismo discretamente. La ambigüedad es casi con certeza "
+        "el punto: deja que el Jesús de Marcos afirme algo sobre sí mismo en una frase que un transeúnte no "
+        "puede objetar. Seis versículos después, en el v. 9, la misma palabra aparece en un registro muy "
+        "distinto: el grito de la multitud cita el Salmo 118:26, «bendito el que viene en el nombre de "
+        "[kyriou]» — y porque esa línea cita un salmo hebreo cuya propia palabra ES el nombre divino, esta "
+        "traducción la vierte ahí «Jehová» en vez de «el Señor», la misma decisión ya tomada en la línea "
+        "idéntica de Mateo 21:9. Una sola palabra griega, dos palabras españolas en el mismo capítulo, "
+        "repartidas según si la frase cita la Biblia hebrea o no."),
     # ---- Mateo 20 ----
     "lytron": ("rescate",
         "UN RESCATE — el precio que se paga para liberar a un esclavo, a un cautivo o a un deudor; de lyō, "
@@ -20503,6 +20541,37 @@ ENCYCLOPEDIA_ES["jerusalem"] = ("Jerusalén",
     "estaban los lugares altos donde se quemaban niños (Jeremías 19:2, 5). El nombre griego de ese "
     "valle, <em>Gehena</em>, se volvió una palabra para el juicio. Cayó ante Babilonia en 587 a. C., "
     "como Jeremías había dicho.")
+ENCYCLOPEDIA_ES["mount-of-olives"] = ("Monte de los Olivos",
+    "La cresta caliza al oriente de Jerusalén, al otro lado del valle del Cedrón, que se eleva un poco "
+    "por encima del monte del templo y le hace frente &mdash;de modo que cualquiera de pie en ella mira "
+    "hacia abajo, dentro de la ciudad. Llamado así por los olivares de sus laderas; Getsemaní está a "
+    "sus pies. Lucas lo llama por su forma de nombre de lugar, <em>Elaiōn</em>, «Olivet», y añade que "
+    "está «a un día de camino de sábado» de Jerusalén &mdash;unos dos mil codos, dos tercios de milla&mdash; "
+    "la única vez que la Biblia usa esa medida. Es donde David huyó llorando de Absalón, donde Zacarías "
+    "14:4 dice que los pies de Jehová se posarán, donde Jesús enseñó, lloró por la ciudad y fue "
+    "arrestado, y donde Hechos sitúa la ascensión.")
+ENCYCLOPEDIA_ES["bethany"] = ("Betania",
+    "Una aldea en la ladera sureste del Monte de los Olivos, a menos de tres kilómetros de Jerusalén "
+    "por el camino que baja hacia Jericó — lo bastante cerca como para que Jesús la usara de base al "
+    "final de cada día de su última semana, en vez de pasar la noche dentro de la ciudad misma. Es "
+    "también donde vivían Lázaro, Marta y María (Juan 11, todavía no en estas páginas) y donde una "
+    "mujer ungió la cabeza de Jesús en casa de «Simón el leproso» (Marcos 14:3, todavía no en estas "
+    "páginas). ⚠ Su nombre árabe moderno, al-Ayzariyya, todavía conserva la memoria — deriva de "
+    "«Lazarium», el lugar de Lázaro. Distinta de la Betania «al otro lado del Jordán» donde Juan "
+    "bautizaba (Juan 1:28, todavía no en estas páginas) — el mismo nombre de lugar aplicado a dos "
+    "aldeas distintas, separadas por una distancia considerable.")
+ENCYCLOPEDIA_ES["bethphage"] = ("Betfagé",
+    "Una aldea en el Monte de los Olivos, entre Betania y Jerusalén por el camino que baja de la "
+    "cumbre — nombrada solo para esta escena en la tradición evangélica compartida (Mateo 21:1; "
+    "Lucas 19:29, todavía no en estas páginas) y en ningún otro lugar de la Biblia. ⚠ Su nombre es "
+    "arameo, <em>beth paggē</em>, «casa de higos verdes» — <em>pagga</em> es la palabra para un higo "
+    "demasiado verde para estar del todo maduro, la misma clase de fruto que Cantar de los Cantares "
+    "2:13 (todavía no en estas páginas) pinta como lo que una higuera saca antes de que sus hojas "
+    "terminen de desplegarse. Marcos no comenta el nombre, pero la aldea por la que pasan Jesús y los "
+    "doce camino de Jerusalén se llama, en arameo, por lo único que la higuera dos versículos después "
+    "no produce en absoluto. Su emplazamiento exacto no está fijado arqueológicamente; la tradición "
+    "conservada desde al menos la época medieval, hoy marcada por una iglesia franciscana, se sitúa "
+    "en el hombro oriental de la cresta.")
 ENCYCLOPEDIA_ES["topheth"] = ("Tofet",
     "Un valle real y transitable — <em>gei Ven-Hinom</em>, «el valle del hijo de Hinom» — que corre por el "
     "borde sur y occidental de Jerusalén, pasando por los talleres de cerámica y sus vertederos junto a la "
