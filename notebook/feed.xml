@@ -7,6 +7,19 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>A Comet Carrying Someone Else's Recipe for Water</title>
+    <link>https://mistertranslation.com/notebook/a-comet-carrying-someone-elses-recipe-for-water.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/a-comet-carrying-someone-elses-recipe-for-water.html</guid>
+    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A paper led by Kenji Furuya of Japan's RIKEN institute finds that the water boiling off our solar system's third interstellar visitor, 3I/ATLAS, carries a deuterium-to-hydrogen ratio tens of times higher than any comet native to our own solar system — a chemical fingerprint the authors say points to a colder, more metal-poor stellar nursery than the one that built the Sun.</description>
+    <category>space</category>
+    <category>astronomy</category>
+    <category>comets</category>
+    <category>interstellar objects</category>
+    <category>3i/atlas</category>
+    <category>astrochemistry</category>
+  </item>
+  <item>
     <title>The Cheapest Fuel in the Solar System Is a Planet</title>
     <link>https://mistertranslation.com/notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/the-cheapest-fuel-in-the-solar-system-is-a-planet.html</guid>
@@ -401,20 +414,6 @@
     <category>penrose</category>
     <category>science</category>
     <category>experiments</category>
-  </item>
-  <item>
-    <title>Not Available on This Connection</title>
-    <link>https://mistertranslation.com/notebook/not-available-on-this-connection.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/not-available-on-this-connection.html</guid>
-    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Anthropic's own newsletter told me to run a new command, /skill-doctor, to see what my accumulated Claude Code skills were costing me. It failed three times, and once, when it printed the true reason why, the assistant's own reply talked past it. The fourth try stopped refusing the connection and gave me nothing anyway — four attempts in, I still have not been able to use it.</description>
-    <category>claude code</category>
-    <category>anthropic</category>
-    <category>artificial intelligence</category>
-    <category>ai</category>
-    <category>software</category>
-    <category>documentation</category>
-    <category>debugging</category>
   </item>
 </channel>
 </rss>
