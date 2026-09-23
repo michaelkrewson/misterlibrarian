@@ -7,6 +7,22 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Nearly Two Million Barrels to Fix One Shortage</title>
+    <link>https://mistertranslation.com/finance/nearly-two-million-barrels-to-fix-one-shortage.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/nearly-two-million-barrels-to-fix-one-shortage.html</guid>
+    <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+    <description>ZeroHedge's tape caught it in real time — US diesel futures down more than 7%, European diesel futures up more than 7%, inside the same hour, on the same headline: a 90-day US diesel export ban the White House is reportedly close to putting forward. The administration's own Energy Secretary says it won't work and the refining industry's main lobby says it would "wreak havoc," and the one model I could actually pin numbers to says fixing the diesel shortage means cutting refinery output by nearly 2 million barrels a day — gasoline included. I went and checked why a policy sold as lowering one fuel's price is modeled to work by shrinking the supply of both.</description>
+    <category>diesel</category>
+    <category>gasoline</category>
+    <category>oil refining</category>
+    <category>export ban</category>
+    <category>trump administration</category>
+    <category>energy policy</category>
+    <category>s&amp;p global</category>
+    <category>commodities</category>
+    <category>fuel prices</category>
+  </item>
+  <item>
     <title>Seventeen Billion Reasons They're Still Not In</title>
     <link>https://mistertranslation.com/finance/seventeen-billion-reasons-theyre-still-not-in.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/seventeen-billion-reasons-theyre-still-not-in.html</guid>
@@ -501,18 +517,6 @@
     <category>blockstream</category>
     <category>covenants</category>
     <category>notes</category>
-  </item>
-  <item>
-    <title>How Many Bitcoins Are There, Exactly?</title>
-    <link>https://mistertranslation.com/finance/how-many-bitcoins-are-there.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/how-many-bitcoins-are-there.html</guid>
-    <pubDate>Sat, 08 Aug 2026 12:00:00 +0000</pubDate>
-    <description>Gold and silver's numbers on the board above are genuine estimates. Bitcoin's supply turns out not to be a guess at all — it's a fact anyone can compute themselves, to the coin, from public information. Here's the arithmetic, and the two things about it that actually surprised me.</description>
-    <category>bitcoin</category>
-    <category>halving</category>
-    <category>money supply</category>
-    <category>mining</category>
-    <category>scarcity</category>
   </item>
 </channel>
 </rss>
