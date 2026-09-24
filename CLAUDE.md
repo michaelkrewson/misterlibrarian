@@ -1282,7 +1282,7 @@ Cregier's baptism, Reformed Dutch Church, Manhattan, 5 July 1662 — witnesses M
 the English take the colony; she dies 1740 on a Bucks County farm. One person carries each
 era after her. Working title stays until three chapters exist.
 
-**Byline: Michael V. Krewson — the ONE publication on the domain with a real name on it** (his call, 2026-09-11; the printed edition will carry the same name). The `AUTHOR` constant in `build_west.py` feeds the front-page byline, the About page, the `<meta name="author">` on every page and the © line. Everywhere else the domain stays "Mr. Librarian"; the About page says the two are the same person. Don't spread the real name to the other five.
+**Byline: Michael V. Krewson — the ONE publication on the domain with a real name on it** (his call, 2026-09-11; the printed edition will carry the same name). The `AUTHOR` constant in `build_west.py` feeds the About page, the `<meta name="author">` on every page and the © line. **⚠️ 2026-09-24 — the visible front-page `<p class="byline">by ...</p>` was removed** (Michael's call: he doesn't expect the public to infer his complete identity from the remaining explicit mentions, so those stay, but this one prominent line didn't need to). Everywhere else the domain stays "Mr. Librarian"; the About page says the two are the same person. Don't spread the real name to the other five.
 
 **Same X comment layer, same FormSubmit inbox (`_subject` "Eight Miles West — a reader
 wrote in"), same GoatCounter.** Mark: a compass whose needle settles west (the same SVG is

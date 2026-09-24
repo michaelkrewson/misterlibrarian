@@ -625,7 +625,6 @@ def build_front(chapters):
     count = ("%d chapter%s published so far" % (n, "" if n == 1 else "s") if n
              else "The first chapter is being written")
     body = """  <p class="tag">%(tagline)s</p>
-  <p class="byline">by %(author)s</p>
   %(hero)s
   <div class="lede">
     <p>This is the story of one family becoming American, read from the documents it left
