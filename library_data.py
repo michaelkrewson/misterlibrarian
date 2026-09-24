@@ -370,7 +370,7 @@ DICTIONARY = [
     ["dikaiosyne", "dikaiosynē", "δικαιοσύνη", "dikaiosynē", "RIGHTEOUSNESS / justice — one word in Greek for what English splits into two, and the key term of Romans. ⚠ 'The righteousness of God' (dikaiosynē theou, 1:17) is the most argued-over phrase in the letter, and the dispute is grammatical before it is theological: a righteousness that BELONGS to God (his covenant faithfulness, his putting-things-right), one that COMES from God as a gift, or one that COUNTS before God. Luther described his whole turn as a change of mind about this genitive. Behind it stands the Hebrew tsedaqah, which is likewise relational — being right BY someone, not merely being morally correct. ⚠ In Matthew the word runs the other way round — not a status God gives but the doing of what God has asked: it is what Jesus says he and John are completing when he insists on being baptized, 'thus it is fitting for us to fulfil all righteousness' (3:15), and it becomes the spine of the Sermon on the Mount (hunger for it, 5:6; exceed the scribes' and Pharisees' measure of it, 5:20; do not practise it to be seen, 6:1).", ["Romans", 1, 17]],
     ["orge", "orgē", "ὀργή", "orgē", "WRATH — settled anger, not a flare of temper (that is thymos); the root of English 'orgy' only by a long and unrelated road. Romans 1:18 pairs it deliberately with 1:17: God's righteousness 'is revealed', and God's wrath 'is revealed' — the same verb, present tense, both happening now. ⚠ And the chapter defines the wrath by what follows: three times 'God gave them over'. The judgment described is not a thunderbolt but a letting-go — being handed the thing you wanted more than God.", ["Romans", 1, 18]],
     ["doxa", "doxa", "δόξα", "doxa", "GLORY — weight, splendour, the visible worth of a thing; the root of 'doxology'. In classical Greek it means opinion or reputation (hence 'orthodox', right opinion, and 'paradox', beside opinion), but the Greek Old Testament pressed it into service for the Hebrew kavod, 'weight' — the heaviness of God's presence that fills the tabernacle. Romans 1:23 turns on it: they 'exchanged the GLORY of the incorruptible God for a likeness of an image' — a trade, and the psalm being quoted (106:20) had said the same thing about Israel and the golden calf — the exact day named at <a href=\"exodus-32.html#v32-4\">Exodus 32:4</a>, already on these pages.", ["Romans", 1, 23]],
-    ["paradidomi", "paradidōmi", "παραδίδωμι", "paradidōmi", "To HAND OVER, deliver up — a judicial word: what a magistrate does when he hands a prisoner to the executioner. It tolls three times in Romans 1 (vv 24, 26, 28), 'God gave them over', and the three occurrences are the skeleton of the paragraph. ⚠ It is also the word used all through the Gospels of Jesus being handed over — by Judas, by the priests, by Pilate — and by Paul of God who 'did not spare his own Son but gave him over for us all' (Romans 8:32). The same verb does the condemning and the rescuing. &#9888; Its densest concentration anywhere is Matthew 26, where it sounds in TEN of seventy-five verses (2, 15, 16, 21, 23, 24, 25, 45, 46, 48) and is the chapter's spine. That chapter is also why 'betray' will not do as a standing rendering: Matthew uses the same verb of what Judas does, passively of what is being done to the Son of Man (26:2, 24, 45), and then, in the next chapter, of the priests handing Jesus to Pilate (27:2) and of Pilate handing him over to be crucified (27:26). 'Betray' can be carried through the passives, and the KJV does it, but it names a breach of trust the verb does not carry on its own, and it cannot follow the word into the priests' and Pilate's hands. ⚠ Mark 14 carries the same weight: the verb sounds in seven of its seventy-two verses (10, 11, 18, 21, 41, 42, 44), active of Judas and passive of the Son of Man (21, 41), and this translation renders it 'hand over' there too.", ["Matthew", 26, 2]],
+    ["paradidomi", "paradidōmi", "παραδίδωμι", "paradidōmi", "To HAND OVER, deliver up — a judicial word: what a magistrate does when he hands a prisoner to the executioner. It tolls three times in Romans 1 (vv 24, 26, 28), 'God gave them over', and the three occurrences are the skeleton of the paragraph. ⚠ It is also the word used all through the Gospels of Jesus being handed over — by Judas, by the priests, by Pilate — and by Paul of God who 'did not spare his own Son but gave him over for us all' (Romans 8:32). The same verb does the condemning and the rescuing. &#9888; Its densest concentration anywhere is Matthew 26, where it sounds in TEN of seventy-five verses (2, 15, 16, 21, 23, 24, 25, 45, 46, 48) and is the chapter's spine. That chapter is also why 'betray' will not do as a standing rendering: Matthew uses the same verb of what Judas does, passively of what is being done to the Son of Man (26:2, 24, 45), and then, in the next chapter, of the priests handing Jesus to Pilate (27:2) and of Pilate handing him over to be crucified (27:26). 'Betray' can be carried through the passives, and the KJV does it, but it names a breach of trust the verb does not carry on its own, and it cannot follow the word into the priests' and Pilate's hands. ⚠ Mark 14 carries the same weight: the verb sounds in seven of its seventy-two verses (10, 11, 18, 21, 41, 42, 44), active of Judas and passive of the Son of Man (21, 41), and this translation renders it 'hand over' there too. Mark 15 closes the chain it opened: the chief priests 'handed him over' to Pilate out of envy (v10), echoing back to 14's own handing-over, and Pilate 'hands him over' to be crucified (v15) — the same verb, three occurrences (vv1, 10, 15), moving the same body through a third pair of hands.", ["Matthew", 26, 2]],
     ["physis", "physis", "φύσις", "physis", "NATURE — the way a thing grows or is constituted, from phyō, 'to grow'; the root of 'physics' and 'physical'. The phrase para physin, 'contrary to nature', is Stoic ethical vocabulary, common in Hellenistic Jewish writers such as Philo and Josephus, and it stands at the centre of the most contested paragraph in Romans (1:26-27). ⚠ One datum both sides of that argument cite: Paul uses para physin once more in the same letter, at 11:24, of GOD grafting a wild olive branch into a cultivated tree 'contrary to nature' — so in his usage the phrase is not automatically a term of absolute moral condemnation. The library reports the readings and does not vote.", ["Romans", 1, 26]],
     ["adokimos", "adokimos", "ἀδόκιμος", "adokimos", "UNAPPROVED — failing the test; used of counterfeit coin and of metal that does not pass assay, from dokimazō, 'to test and approve'. Romans 1:28 is a pun that only survives if both halves keep the same root: they did not APPROVE of holding God in accurate knowledge, so God gave them over to an UNAPPROVED mind. KJV's 'reprobate mind' carries the idea through Latin; NWT reads 'disapproved mental state'. Paul turns it on himself at 1 Corinthians 9:27 — the fear of preaching to others and being adokimos himself.", ["Romans", 1, 28]],
     ["tekmerion", "tekmērion", "τεκμήριον", "tekmērion", "A DEMONSTRATIVE proof — not a hint but the kind of sign that settles a case. Aristotle separates it from sēmeion, an ordinary sign that can mislead, and defines a tekmērion as the necessary sign that cannot be refuted (Rhetoric 1357b); Greek doctors used it of the symptom that makes a diagnosis certain. It appears once in the whole New Testament, of the risen Jesus presenting himself alive 'by many conclusive proofs' — courtroom-and-clinic vocabulary chosen at the exact point where the argument needs it. KJV 'many infallible proofs' catches the force; ASV's 'many proofs' loses it.", ["Acts", 1, 3]],
@@ -1225,7 +1225,7 @@ DICTIONARY = [
     ("iota", "iota / keraia", "ἰῶτα / κεραία", "iōta / keraia",
      "'Not one iota, not one little hook' (Matthew 5:18) — a GREEK sentence pointing at HEBREW letters: iōta stands for yod (י), the alphabet's smallest letter; keraia ('little horn') is the serif-stroke distinguishing near-twin letters. KJV 'one jot or one tittle' — 'jot' IS iota, worn smooth by English mouths.", ("Matthew", 5, 18)),
     ("angareuo", "angareuō", "ἀγγαρεύω", "angareuō",
-     "'To press into service' — a Persian word from the royal courier-post (Herodotus' angaroi), by Roman times the soldier's legal right to commandeer a civilian for one mile (milion — a Latin loanword; Rome audible in the Greek). Matthew 5:41: go the second one. The verb returns on Simon of Cyrene, pressed into carrying a cross (27:32).", ("Matthew", 5, 41)),
+     "'To press into service' — a Persian word from the royal courier-post (Herodotus' angaroi), by Roman times the soldier's legal right to commandeer a civilian for one mile (milion — a Latin loanword; Rome audible in the Greek). Matthew 5:41: go the second one. The verb returns on Simon of Cyrene, pressed into carrying a cross (27:32) — and on Mark's own telling of the identical moment (Mark 15:21), the only other verse in the whole New Testament that uses it.", ("Matthew", 5, 41)),
     ("teleios", "teleios", "τέλειος", "teleios",
      "PERFECT, COMPLETE — from telos, 'end, goal': not flawless but FINISHED, having reached its intended end, the way ripe fruit, a full-grown adult, or a completed task is 'perfect'. ⚠ It is a keyword of James — the 'perfect work' of endurance, the 'perfect gift' from above, the 'perfect law of liberty' (1:4, 17, 25; also 3:2) — carrying the sense of wholeness and maturity, not moral spotlessness. It is the word behind Jesus' 'be teleioi as your heavenly Father is teleios' (Matthew 5:48), which in context means all-embracing in love, not defect-free. The KJV's 'perfect' is right read as the older English 'complete', misleading read as modern 'faultless'. It is the Greek Bible's counterpart to the Hebrew tamim — El Shaddai's charge to Abram, 'walk before me, and be blameless' (Genesis 17:1) — and Luke's parallel reads 'merciful' (6:36): the wholeness in question is love without a fence.", ("Matthew", 5, 48)),
     # ---- Matthew 6 (Greek) ----
@@ -1290,7 +1290,7 @@ DICTIONARY = [
     ("paradeisos", "paradeisos", "παράδεισος", "paradeisos",
      "Paradise — a Persian loan-word for a walled garden, and the very word the Greek Bible chose for EDEN (Genesis 2:8 LXX). 'The tree of life in the paradise of God' (Rev 2:7) is Eden's tree, promised back.", ("Revelation", 2, 7)),
     ("stephanos", "stephanos", "στέφανος", "stephanos",
-     "The victor's wreath — the laurel of the games, not a monarch's diadem: 'the crown of life' (Rev 2:10), promised to a city whose ringed acropolis ancient writers praised as 'the crown of Smyrna.'", ("Revelation", 2, 10)),
+     "The victor's wreath — the laurel of the games, not a monarch's diadem: 'the crown of life' (Rev 2:10), promised to a city whose ringed acropolis ancient writers praised as 'the crown of Smyrna.' ⚠ No Gospel ever puts a diadēma, a monarch's actual crown, on Jesus's head — only this word, the festal wreath, twisted out of thorns by the mocking soldiers (Mark 15:17; Matthew 27:29; John 19:2, all three sharing the participle 'having plaited'). The word itself is part of the mockery: even the object chosen to humiliate him is the wrong kind of crown for a king.", ("Revelation", 2, 10)),
     ("psephos", "psēphos leukē", "ψῆφος λευκή", "psēphos leukē",
      "The white stone — literally a pebble (NWT's 'white pebble' is exact), with uses all over ancient life: a juror's acquittal vote, an admission token to a feast, an amulet bearing a secret name. Which the promise of Rev 2:17 means is honestly unknown; all three fit a letter about verdicts, banquets, and a new name.", ("Revelation", 2, 17)),
     ("morning-star", "ho astēr ho prōinos", "ὁ ἀστὴρ ὁ πρωϊνός", "ho astēr ho prōinos",
@@ -1817,6 +1817,13 @@ DICTIONARY = [
      "BLESSED — the adjective of praise, 'blessed be…', the Greek of the Hebrew barukh. ⚠ It stands in eight verses of the New Testament, and in seven of them it does what it does in a Jewish blessing, praising God inside a sentence ('Blessed be the God and Father of our Lord Jesus Christ', 2 Corinthians 1:3, Ephesians 1:3, 1 Peter 1:3; 'Blessed be the Lord God of Israel', Luke 1:68). The eighth is different. At Mark 14:61 the high priest asks 'Are you the Christ, the Son of the Blessed?' — ho eulogētos used on its own, as a title standing in for the divine name, which he does not say. Jesus answers in the same register, 'at the right hand of the Power'. Matthew's parallel has the high priest say 'the Son of God' outright (26:63).", ('Mark', 14, 61)),
     ("ekthambeomai", "ekthambeomai", "ἐκθαμβέομαι", "ekthambeomai",
      "TO BE OVERWHELMED — thambos, astonishment, made stronger by ek-. ⚠ Only Mark uses the verb in the New Testament (Acts 3:11 has the related adjective), in four verses, and they run the whole range from wonder to horror: the crowd that sees Jesus come down from the mountain of the transfiguration (9:15), Jesus himself at Gethsemane, where it is alarm, not wonder (14:33), and the women who find a young man in the tomb and are told not to be (16:5, 6; not yet on these pages). Matthew's Gethsemane replaces it with the plainer 'to be grieved' (26:37); the KJV's 'sore amazed' at Mark 14:33 keeps the old sense of 'amazed', which once included being stunned with fear.", ('Mark', 14, 33)),
+    # ---- Mark 15 (Greek) ----
+    ("porphyra", "porphyra", "πορφύρα", "porphyra",
+     "PURPLE — the royal/imperial dye colour, from a Phoenician murex-shell industry so costly it became a byword for wealth and rank (Luke 16:19's rich man; Lydia the 'seller of purple' at Acts 16:14, not yet on these pages). ⚠ It stands in nine verses of the New Testament. Mark dresses the mocked Jesus in it (15:17, 20); John independently agrees (19:2, 5), even sharing the participle 'having plaited' for the thorn crown with both Mark and Matthew. Matthew alone has a scarlet soldier's cloak instead, chlamys kokkinē (27:28) — the ready-to-hand garment rather than the genuinely costly dye. Revelation later dresses the great harlot in it, paired with scarlet (17:4; 18:12, 16) — the same color that mocked a king worn, by the book's end, by the empire that killed one.", ("Mark", 15, 17)),
+    ("kentyrion", "kentyriōn", "κεντυρίων", "kentyriōn",
+     "CENTURION — a straight transliteration of the Latin centurio, unlike Matthew and Luke, who both use the native Greek hekatontarchēs (literally 'commander of a hundred') for the same office, including in their own parallels to this chapter's own centurion. ⚠ The word stands in exactly three verses of the New Testament, all three in this chapter (15:39, 44, 45) — Mark uses it nowhere else and no other Gospel uses it at all. One more entry in this chapter's cluster of Roman loanwords (praitōrion, speira, phragelloō), and the vocabulary Mark is elsewhere known for borrowing more freely than the other three Gospels.", ("Mark", 15, 39)),
+    ("bouleutes", "bouleutēs", "βουλευτής", "bouleutēs",
+     "A COUNCIL MEMBER — from boulē, the council (the same body Mark and Matthew both also call the synedrion, Sanhedrin). ⚠ It stands in exactly two verses of the whole New Testament: Mark's description of Joseph of Arimathea (15:43) and Luke's parallel (23:50, not yet on these pages) — nowhere else. Matthew calls the same man only 'a rich man' who 'had himself also been made a disciple' (27:57); John has him a disciple 'secretly, for fear of the Jews' (19:38, not yet on these pages). Only Mark and Luke state outright that he sat on the very council that had just voted to hand Jesus over.", ("Mark", 15, 43)),
     # ---- Matthew 23 (Greek) ----
     ("hypokrites", "hypokritēs", "ὑποκριτής", "hypokritēs",
      "In ordinary Greek, a STAGE ACTOR &mdash; one who speaks from behind a mask, from hypo-krinomai, to answer or play a part; the masked professional of a theatre like the one at Sepphoris, an hour's walk from Nazareth. The moral sense came later; the theatrical one is what the word still carried. It is the Sermon's term for piety performed to an audience (Matthew 6:2, 5, 16), and 6:1 supplies the matching verb: righteousness done 'to be GAZED AT' (theathēnai &mdash; the root of 'theater'). ⚠ Matthew uses it more than the rest of the New Testament together (13 of about 18 occurrences), and the woes of chapter 23 hammer it six times. English 'hypocrite' is this word worn down: it now means somebody who fails to practise what they preach, where the Greek picture is narrower and sharper &mdash; somebody playing to a house.", ("Matthew", 6, 2)),
@@ -4947,6 +4954,100 @@ ENCYCLOPEDIA = [
               "blasphemy from the mourning-tear the Law prohibits. \u26a0 Mark never names him: in Mark's trial "
               "scene (14:53-65) he is 'the high priest' throughout, and the name Caiaphas does not occur anywhere "
               "in that Gospel."),
+    dict(slug="mary-magdalene", name="Mary Magdalene", kind="person",
+         aliases=["Mary of Magdala"],
+         refs=[("Mark", 15, 40)],
+         desc="A woman named for her hometown, Magdala, a fishing town on the western shore of the Sea of "
+              "Galilee (its Aramaic name, Migdal, means &lsquo;tower&rsquo;, from a fish-salting industry's "
+              "watchtowers, on one account). She appears at every stage of the passion this Gospel gives a "
+              "witness to &mdash; watching the crucifixion from a distance (15:40), watching where Jesus was "
+              "buried (15:47), and coming to the tomb with spices (16:1, not yet on these pages) &mdash; the one "
+              "named woman common to all three scenes across every Gospel. Luke 8:2 (not yet on these pages) "
+              "says seven demons had gone out of her, and nothing in that verse or anywhere else in the New "
+              "Testament calls her a prostitute or identifies her with the unnamed &lsquo;sinful woman&rsquo; of "
+              "Luke 7:37&ndash;38 &mdash; a conflation that goes back to a sixth-century sermon of Pope Gregory "
+              "the Great and stuck in Western tradition for over a thousand years despite no textual basis for "
+              "it. &#9888; &lsquo;Magdalene&rsquo; distinguishes her from the New Testament's several other "
+              "Marys (Jesus's mother; Mary the mother of James the younger and of Joses; Mary of Bethany; Mary "
+              "the wife of Clopas) &mdash; itself the single most common woman's name in first-century "
+              "Palestine, honouring the Hasmonean queen Mariamne."),
+    dict(slug="simon-of-cyrene", name="Simon of Cyrene", kind="person",
+         aliases=["Simon"],
+         refs=[("Mark", 15, 21)],
+         desc="The passer-by pressed into carrying Jesus's cross (Mark 15:21; Matthew 27:32; Luke 23:26). "
+              "Cyrene was a prosperous Greek city on the coast of modern Libya, home to a substantial Jewish "
+              "community since at least the second century BCE; Cyrenian Jews had their own synagogue in "
+              "Jerusalem (Acts 6:9, not yet on these pages) and were among the crowd at Pentecost (Acts 2:10). "
+              "&#9888; Mark alone names his sons, &lsquo;the father of Alexander and Rufus&rsquo; &mdash; a detail "
+              "that only works as identification if the sons were known to Mark's first audience, though nothing "
+              "in the text says who that audience was. Whether this Rufus is the Rufus Paul greets at Romans "
+              "16:13 (not yet on these pages), &lsquo;the chosen one in the Lord, and his mother and mine&rsquo;, "
+              "is an old, unprovable, and reasonably common guess &mdash; a common name offered here as a real "
+              "possibility and nothing firmer. Mark's Greek says only that Simon was &lsquo;coming in from the "
+              "field&rsquo;, not that he was arriving in the city for the feast; the detail has been read both "
+              "ways."),
+    dict(slug="alexander-son-of-simon", name="Alexander (son of Simon of Cyrene)", kind="person",
+         aliases=["Alexander"],
+         refs=[("Mark", 15, 21)],
+         desc="One of the two sons Mark names to identify Simon of Cyrene (15:21) &mdash; otherwise unmentioned "
+              "in the New Testament, and not to be confused with the several other men named Alexander in Acts "
+              "and the letters (a common Greek name after Alexander the Great). Naming him at all only makes "
+              "sense if he was known to Mark's first readers; nothing further is recorded of him."),
+    dict(slug="rufus", name="Rufus", kind="person",
+         refs=[("Mark", 15, 21)],
+         desc="The second of the two sons Mark names to identify Simon of Cyrene (15:21). A common Latin name "
+              "(&lsquo;red-haired&rsquo;) among both Romans and Jews of the period. Romans 16:13 (not yet on "
+              "these pages) greets a Rufus in Rome, &lsquo;the chosen one in the Lord, and his mother and "
+              "mine&rsquo; &mdash; an old and popular identification with this Rufus, consistent with Mark's "
+              "Gospel having strong early ties to the Roman church, but unprovable: the name was common enough "
+              "that the library records the possibility and stops short of asserting it."),
+    dict(slug="joseph-of-arimathea", name="Joseph of Arimathea", kind="person",
+         refs=[("Mark", 15, 43)],
+         desc="The council member who asked Pilate for Jesus's body and buried it in his own new tomb (Mark "
+              "15:43&ndash;46; Matthew 27:57&ndash;60; Luke 23:50&ndash;53; John 19:38&ndash;42, the last two not "
+              "yet on these pages). Arimathea's location is uncertain; the leading candidate is Ramathaim-zophim "
+              "in the hill country of Ephraim, Samuel's birthplace, but the identification rests on the name "
+              "alone. &#9888; The four Gospels frame him four different ways, none contradicting the others so "
+              "much as choosing what to foreground: Mark calls him a &lsquo;prominent <a href=\"dictionary.html#bouleutes\">council member</a>&rsquo; "
+              "who was himself waiting for the kingdom of God &mdash; a man acting against the very body that had "
+              "just condemned Jesus; Matthew calls him simply &lsquo;a rich man&hellip; who had himself also been "
+              "made a disciple&rsquo;; Luke adds that he &lsquo;had not consented to their plan and action&rsquo;; "
+              "John has him a disciple only &lsquo;secretly, for fear of the Jews&rsquo;. Only Mark and Luke state "
+              "outright that he sat on the Sanhedrin that had just voted to hand Jesus over."),
+    dict(slug="mary-mother-of-james-the-younger", name="Mary the mother of James the younger and of Joses", kind="person",
+         aliases=["Mary the mother of James", "Mary (mother of James and Joses)"],
+         refs=[("Mark", 15, 40)],
+         desc="One of the women who watched the crucifixion from a distance and, with Mary Magdalene, watched "
+              "where Jesus was buried (Mark 15:40, 47; 16:1, not yet on these pages). &#9888; Mark 6:3 (already "
+              "on these pages) names Jesus's own brothers, in the same order, as &lsquo;James and Joses and Judas "
+              "and Simon&rsquo;, son of &lsquo;Mary&rsquo; &mdash; the identical pair of names by which this Mary "
+              "is identified here. Whether this is the same Mary, Jesus's own mother named by her other sons "
+              "rather than by him, or a different relative who happens to share a common name and two sons' "
+              "names with his family, is a genuine and old dispute. John 19:25 (not yet on these pages) lists "
+              "Jesus's mother and a separate &lsquo;Mary the wife of Clopas&rsquo; together at the cross as two "
+              "distinct women, which is the strongest textual support for reading her as a distinct relative "
+              "&mdash; the reading most later tradition settled on. The library states both readings and the "
+              "stakes each carries, and does not decide between them."),
+    dict(slug="salome", name="Salome (disciple)", kind="person",
+         aliases=["Salome"],
+         refs=[("Mark", 15, 40)],
+         desc="One of the women named at the cross (Mark 15:40) and among those who came to the tomb with "
+              "spices (16:1, not yet on these pages) &mdash; not to be confused with Herodias's dancing daughter "
+              "(unnamed in the Gospels themselves; the name &lsquo;Salome&rsquo; for her comes from Josephus), "
+              "nor with Salome the midwife of later apocryphal tradition. Mark names her only here and does not "
+              "connect her to any other figure in his own Gospel; a widely held but unprovable later tradition "
+              "identifies her with &lsquo;the mother of the sons of Zebedee&rsquo; who appears in the parallel "
+              "list at Matthew 27:56, which would make her James and John's own mother &mdash; the request she "
+              "makes on their behalf at Matthew 20:20&ndash;21 (not yet on these pages) is not in Mark, where "
+              "the brothers ask for themselves (<a href=\"mark-10.html#v10-37\">10:37</a>, already on these "
+              "pages)."),
+    dict(slug="joses", name="Joses", kind="person",
+         refs=[("Mark", 15, 40)],
+         desc="A shortened form of Joseph, and one of the two sons by whom Mary is identified at the cross "
+              "(Mark 15:40, 47) &mdash; see the <a href=\"encyclopedia.html#mary-mother-of-james-the-younger\">Mary "
+              "the mother of James the younger</a> entry for the identity question this name raises. Mark uses "
+              "the identical name, in the identical short form, of one of Jesus's own brothers at 6:3 (already "
+              "on these pages); nothing else is recorded of him under either reading."),
     dict(slug="sanhedrin", name="Sanhedrin", kind="people",
          aliases=["council", "synedrion"],
          refs=[("Matthew", 26, 59)],
@@ -12708,6 +12809,9 @@ CHRON_CHAPTERS = {
     "mark14": dict(era="gospels",
                   when="Two days before the Passover the chief priests look for a way to seize Jesus by trickery. At Bethany, in the house of Simon the leper, a woman breaks an alabaster jar of nard over his head, and Judas goes to the chief priests, who promise him silver. Two disciples prepare the Passover in an upper room; at the meal Jesus says one of the Twelve will hand him over, gives them bread and the cup of 'my blood of the covenant', and on the way to the Mount of Olives predicts that Peter will deny him before a rooster crows twice. He prays in Gethsemane while Peter, James and John sleep, is arrested when Judas kisses him, and is tried at night before the high priest and the Sanhedrin, while Peter, in the courtyard below, denies him three times.",
                   clock="c. AD 30, from two days before the Passover to the Thursday night of Holy Week and on toward the dawn of Friday; Mark makes the supper a Passover meal, where John's Gospel dates the crucifixion to the day the lambs were slain — corresponding to Matthew 26's account of the same night."),
+    "mark15": dict(era="gospels",
+                  when="Early in the morning the chief priests hold a council and hand Jesus over to Pilate, who is surprised by his silence. At the feast Pilate offers to release a prisoner; the crowd, stirred up by the chief priests, chooses the insurrectionist Barabbas over Jesus and calls for crucifixion. Soldiers scourge Jesus, dress him in purple and a thorn crown in mockery, then lead him out; Simon of Cyrene is pressed into carrying the cross to Golgotha, where Jesus is crucified at the third hour between two bandits under the charge 'The King of the Jews.' Darkness covers the land from the sixth to the ninth hour; Jesus cries out in Aramaic and dies, the sanctuary curtain tears in two, and a centurion calls him God's son. Women, including Mary Magdalene, watch from a distance; that evening Joseph of Arimathea, a council member, obtains the body from Pilate and buries it in a rock-cut tomb before the Sabbath.",
+                  clock="c. AD 30, Friday of Holy Week, from dawn to the evening before the Sabbath — corresponding to Matthew 27's account of the same day, with the two Gospels' own hour-markers for the darkness and the crucifixion not fully reconciled (see this chapter's own note)."),
     "luke2": dict(era="gospels",
                   when="A census under Caesar Augustus brings Joseph and the pregnant Mary to Bethlehem, where Jesus is born and laid in a manger, 'because there was no place for them in the inn.' Shepherds keeping watch nearby are told by an angel, then a whole multitude of the heavenly host praising God. At eight days he is circumcised and named; at the temple, the aged Simeon and the prophetess Anna both recognize him. The chapter closes years later with the twelve-year-old Jesus staying behind in the temple, 'sitting among the teachers, listening to them and asking them questions.'",
                   clock="c. 6-4 BC for the birth, matching Matthew's account of the same event told from Mary's side rather than Joseph's (see chapter 1's note); the temple episode at the close jumps forward to c. AD 6-8, when Jesus is twelve — the only story the Gospels tell of his childhood between infancy and adulthood."),
@@ -28069,7 +28173,10 @@ DICTIONARY_ES["paradidomi"] = ("entregar",
     "41, 42, 44), activo de lo que hace Judas y pasivo de lo que se le hace al Hijo del Hombre (21, 41). Por eso "
     "\u00abtraicionar\u00bb no sirve como traducci\u00f3n fija: puede sostenerse en esos pasivos, pero nombra una "
     "ruptura de confianza que el verbo no lleva por s\u00ed solo, y no puede seguirlo cuando pasa a los sacerdotes que "
-    "entregan a Jes\u00fas a Pilato (Mateo 27:2; Marcos 15:1) y a Pilato que lo entrega para ser crucificado (Mateo 27:26).")
+    "entregan a Jes\u00fas a Pilato (Mateo 27:2; Marcos 15:1) y a Pilato que lo entrega para ser crucificado (Mateo 27:26). "
+    "Marcos 15 cierra la cadena que abri\u00f3: suena tres veces (vv. 1, 10, 15) \u2014los principales sacerdotes lo "
+    "entregan a Pilato por envidia, y Pilato lo entrega para ser crucificado\u2014, el mismo verbo moviendo el mismo "
+    "cuerpo por un tercer par de manos.")
 DICTIONARY_ES["peirasmos"] = ("prueba; tentaci\u00f3n",
     "UNA PRUEBA \u2014y una TENTACI\u00d3N: la misma palabra griega cubre las dos cosas, una prueba de fuera "
     "(penalidades, persecuci\u00f3n) y una seducci\u00f3n interior al mal, de peiraz\u014d, \u00abprobar, poner a prueba\u00bb. "
@@ -28090,6 +28197,39 @@ DICTIONARY_ES["anathema"] = ("anatema",
     "maldijo \u2014a s\u00ed mismo, si ment\u00eda, o a Jes\u00fas\u2014 queda abierto; sus \u00fanicos otros usos en el Nuevo "
     "Testamento son los hombres de Hechos 23:12, 14 y 21 que se juramentaron bajo maldici\u00f3n a no comer hasta "
     "haber matado a Pablo.")
+DICTIONARY_ES["stephanos"] = ("corona",
+    "LA CORONA DEL VENCEDOR \u2014el laurel de los juegos, no la diadema de un monarca: \u00abla corona de la "
+    "vida\u00bb (Apoc. 2:10), prometida a una ciudad cuya acr\u00f3polis amurallada los escritores antiguos alababan "
+    "como \u00abla corona de Esmirna\u00bb. \u26a0 Ning\u00fan Evangelio pone jam\u00e1s una diad\u0113ma, la corona real "
+    "propiamente dicha, sobre la cabeza de Jes\u00fas \u2014solo esta palabra, la corona festiva, trenzada aqu\u00ed de "
+    "espinas por los soldados burlones (Marcos 15:17; Mateo 27:29; Juan 19:2, los tres compartiendo el "
+    "participio \u00abtrenzando\u00bb). La palabra misma forma parte de la burla: hasta el objeto elegido para "
+    "humillarlo es la corona equivocada para un rey.")
+DICTIONARY_ES["porphyra"] = ("p\u00farpura",
+    "P\u00daRPURA \u2014el color del tinte real/imperial, de una industria fenicia del caracol m\u00farice tan costosa que "
+    "se volvi\u00f3 sin\u00f3nimo de riqueza y rango (el rico de Lucas 16:19; Lidia, \u00abvendedora de p\u00farpura\u00bb en "
+    "Hechos 16:14, todav\u00eda no en estas p\u00e1ginas). \u26a0 Est\u00e1 en nueve vers\u00edculos del Nuevo Testamento. Marcos "
+    "viste de ella al Jes\u00fas escarnecido (15:17, 20); Juan coincide de forma independiente (19:2, 5), compartiendo "
+    "incluso el participio \u00abtrenzando\u00bb de la corona de espinas con Marcos y Mateo. Solo Mateo tiene en su lugar "
+    "un manto militar escarlata, chlamys kokkin\u0113 (27:28) \u2014la prenda a mano en vez del tinte genuinamente costoso. "
+    "Apocalipsis viste m\u00e1s tarde a la gran ramera de ella, emparejada con el escarlata (17:4; 18:12, 16) \u2014el "
+    "mismo color que se burl\u00f3 de un rey, llevado, al final del libro, por el imperio que mat\u00f3 a uno.")
+DICTIONARY_ES["kentyrion"] = ("centuri\u00f3n",
+    "CENTURI\u00d3N \u2014una transliteraci\u00f3n directa del lat\u00edn centurio, a diferencia de Mateo y Lucas, que usan el "
+    "griego nativo hekatontarch\u0113s (literalmente \u00abjefe de cien\u00bb) para el mismo cargo, incluso en sus propios "
+    "paralelos de este mismo cap\u00edtulo. \u26a0 La palabra est\u00e1 en exactamente tres vers\u00edculos del Nuevo Testamento, "
+    "los tres en este cap\u00edtulo (15:39, 44, 45) \u2014Marcos no la usa en ning\u00fan otro lugar y ning\u00fan otro Evangelio "
+    "la usa en absoluto. Una entrada m\u00e1s del racimo de pr\u00e9stamos romanos de este cap\u00edtulo (praito\u0301rion, "
+    "speira, phragello\u0304), el vocabulario que Marcos es conocido por tomar prestado con m\u00e1s libertad que los "
+    "otros tres Evangelios.")
+DICTIONARY_ES["bouleutes"] = ("miembro del consejo",
+    "MIEMBRO DEL CONSEJO \u2014de boul\u0113, el consejo (el mismo cuerpo que Marcos y Mateo llaman tambi\u00e9n synedrion, "
+    "Sanedr\u00edn). \u26a0 Est\u00e1 en exactamente dos vers\u00edculos de todo el Nuevo Testamento: la descripci\u00f3n que hace "
+    "Marcos de Jos\u00e9 de Arimatea (15:43) y el paralelo de Lucas (23:50, todav\u00eda no en estas p\u00e1ginas) \u2014en "
+    "ning\u00fan otro lugar. Mateo llama al mismo hombre solo \u00abun hombre rico\u2026 que tambi\u00e9n hab\u00eda sido hecho "
+    "disc\u00edpulo\u00bb (27:57); Juan lo hace disc\u00edpulo solo \u00aben secreto, por miedo a los jud\u00edos\u00bb (19:38, todav\u00eda "
+    "no en estas p\u00e1ginas). Solo Marcos y Lucas dicen abiertamente que se sentaba en el mismo consejo que acababa "
+    "de votar entregar a Jes\u00fas.")
 ENCYCLOPEDIA_ES["simon-the-leper"] = ("Sim\u00f3n el leproso",
     "El anfitri\u00f3n de Betania en cuya casa una mujer derram\u00f3 un frasco de nardo sobre la cabeza de Jes\u00fas, dos "
     "d\u00edas antes de la Pascua (Marcos 14:3; Mateo 26:6). Se le conoce solo por el \u00fanico dato unido a su nombre, "
@@ -28127,3 +28267,92 @@ ENCYCLOPEDIA_ES["caiaphas"] = ("Caif\u00e1s",
     "cargo, aunque la tradici\u00f3n jud\u00eda posterior distingui\u00f3 un rasg\u00f3n judicial al o\u00edr una blasfemia del rasg\u00f3n "
     "de luto que la Ley prohibe. \u26a0 Marcos nunca lo nombra: en la escena del juicio de Marcos (14:53-65) es "
     "\u00abel sumo sacerdote\u00bb de principio a fin, y el nombre de Caif\u00e1s no aparece en ninguna parte de ese Evangelio.")
+ENCYCLOPEDIA_ES["golgotha"] = ("G\u00f3lgota",
+    "El lugar fuera de las murallas de Jerusal\u00e9n donde Jes\u00fas fue crucificado. El nombre es el arameo "
+    "gulgolta, UNA CALAVERA, que Mateo y Marcos se detienen ambos a traducir; \u00abCalvario\u00bb entra al espa\u00f1ol "
+    "por el lat\u00edn de la Vulgata, calvaria, la misma palabra. \u26a0 Por qu\u00e9 el nombre, nadie lo sabe: se han "
+    "propuesto un afloramiento con forma de calavera, un lugar de ejecuciones y una asociaci\u00f3n con un "
+    "cementerio, y la tradici\u00f3n de que la calavera de Ad\u00e1n yac\u00eda debajo \u2014la raz\u00f3n por la que aparece una "
+    "calavera al pie de la cruz en tanto arte cristiano\u2014 es leyenda y no evidencia. Los Evangelios lo sit\u00faan "
+    "fuera de la ciudad y cerca de una tumba en un jard\u00edn; el sitio bajo la Iglesia del Santo Sepulcro encaja "
+    "con ambos datos, ya que la segunda muralla corr\u00eda por dentro de \u00e9l en el siglo I y la zona era una "
+    "cantera abandonada con tumbas excavadas en la roca, que es todo lo que la arqueolog\u00eda respalda. La rival "
+    "\u00abTumba del Jard\u00edn\u00bb del siglo XIX, al norte de la Puerta de Damasco, es una tumba genuina pero de la "
+    "\u00e9poca equivocada. \u26a0 N\u00f3tese lo que los textos NO dicen: ninguno de los cuatro Evangelios lo llama "
+    "una colina.")
+ENCYCLOPEDIA_ES["mary-magdalene"] = ("Mar\u00eda Magdalena",
+    "Una mujer nombrada por su pueblo natal, Magdala, un pueblo pesquero en la orilla occidental del mar de "
+    "Galilea (su nombre arameo, Migdal, significa \u00abtorre\u00bb, seg\u00fan una explicaci\u00f3n por las torres de "
+    "vigilancia de una industria de salaz\u00f3n de pescado). Aparece en cada etapa de la pasi\u00f3n que este "
+    "Evangelio da testigo \u2014mirando la crucifixi\u00f3n desde lejos (15:40), mirando d\u00f3nde sepultaron a Jes\u00fas "
+    "(15:47), y llegando a la tumba con especias (16:1, todav\u00eda no en estas p\u00e1ginas)\u2014 la \u00fanica mujer "
+    "nombrada com\u00fan a las tres escenas en los cuatro Evangelios. Lucas 8:2 (todav\u00eda no en estas p\u00e1ginas) "
+    "dice que hab\u00edan salido de ella siete demonios, y nada en ese vers\u00edculo ni en ning\u00fan otro lugar del "
+    "Nuevo Testamento la llama prostituta ni la identifica con la \u00abmujer pecadora\u00bb sin nombre de Lucas "
+    "7:37\u201338 \u2014una fusi\u00f3n que se remonta a una hom\u00edlia del siglo VI del papa Gregorio Magno y perdur\u00f3 "
+    "en la tradici\u00f3n occidental por m\u00e1s de mil a\u00f1os sin base textual alguna. \u26a0 \u00abMagdalena\u00bb la "
+    "distingue de las otras varias Mar\u00edas del Nuevo Testamento (la madre de Jes\u00fas; Mar\u00eda la madre de "
+    "Jacobo el menor y de Jos\u00e9s; Mar\u00eda de Betania; Mar\u00eda mujer de Cleof\u00e1s) \u2014en s\u00ed mismo el nombre de "
+    "mujer m\u00e1s com\u00fan en la Palestina del siglo I, en honor a la reina asmonea Mariamne.")
+ENCYCLOPEDIA_ES["simon-of-cyrene"] = ("Sim\u00f3n de Cirene",
+    "El transe\u00fante obligado a cargar la cruz de Jes\u00fas (Marcos 15:21; Mateo 27:32; Lucas 23:26). Cirene era una "
+    "pr\u00f3spera ciudad griega en la costa de la actual Libia, con una comunidad jud\u00eda importante desde al menos "
+    "el siglo II a. C.; los jud\u00edos de Cirene ten\u00edan su propia sinagoga en Jerusal\u00e9n (Hechos 6:9, todav\u00eda no "
+    "en estas p\u00e1ginas) y estaban entre la multitud de Pentecost\u00e9s (Hechos 2:10). \u26a0 Solo Marcos nombra a sus "
+    "hijos, \u00abpadre de Alejandro y de Rufo\u00bb \u2014un dato que solo funciona como identificaci\u00f3n si los hijos "
+    "eran conocidos por los primeros lectores de Marcos, aunque el texto no dice qui\u00e9nes eran esos lectores. Si "
+    "este Rufo es el Rufo que Pablo saluda en Romanos 16:13 (todav\u00eda no en estas p\u00e1ginas), \u00abel escogido en "
+    "el Se\u00f1or, y su madre y la m\u00eda\u00bb, es una vieja conjetura, indemostrable pero razonablemente com\u00fan \u2014un "
+    "nombre com\u00fan ofrecido aqu\u00ed como posibilidad real y nada m\u00e1s firme.")
+ENCYCLOPEDIA_ES["alexander-son-of-simon"] = ("Alejandro (hijo de Sim\u00f3n de Cirene)",
+    "Uno de los dos hijos que Marcos nombra para identificar a Sim\u00f3n de Cirene (15:21) \u2014por lo dem\u00e1s no "
+    "mencionado en el Nuevo Testamento, y que no debe confundirse con los otros varios hombres llamados Alejandro "
+    "en Hechos y las cartas (un nombre griego com\u00fan tras Alejandro Magno). Nombrarlo en absoluto solo tiene "
+    "sentido si era conocido por los primeros lectores de Marcos; no se registra nada m\u00e1s de \u00e9l.")
+ENCYCLOPEDIA_ES["rufus"] = ("Rufo",
+    "El segundo de los dos hijos que Marcos nombra para identificar a Sim\u00f3n de Cirene (15:21). Un nombre lat\u00edn "
+    "com\u00fan (\u00abpelirrojo\u00bb) tanto entre romanos como entre jud\u00edos de la \u00e9poca. Romanos 16:13 (todav\u00eda no en "
+    "estas p\u00e1ginas) saluda a un Rufo en Roma, \u00abel escogido en el Se\u00f1or, y su madre y la m\u00eda\u00bb \u2014una vieja y "
+    "popular identificaci\u00f3n con este Rufo, coherente con los fuertes lazos tempranos del Evangelio de Marcos con "
+    "la iglesia de Roma, pero indemostrable: el nombre era lo bastante com\u00fan como para que la biblioteca "
+    "registre la posibilidad sin afirmarla.")
+ENCYCLOPEDIA_ES["joseph-of-arimathea"] = ("Jos\u00e9 de Arimatea",
+    "El miembro del consejo que pidi\u00f3 a Pilato el cuerpo de Jes\u00fas y lo sepult\u00f3 en su propia tumba nueva "
+    "(Marcos 15:43\u201346; Mateo 27:57\u201360; Lucas 23:50\u201353; Juan 19:38\u201342, estos dos \u00faltimos todav\u00eda no en "
+    "estas p\u00e1ginas). La ubicaci\u00f3n de Arimatea es incierta; el candidato principal es Ramataim-zofim, en la "
+    "regi\u00f3n monta\u00f1osa de Efra\u00edn, lugar de nacimiento de Samuel, pero la identificaci\u00f3n descansa solo en el "
+    "nombre. \u26a0 Los cuatro Evangelios lo enmarcan de cuatro maneras distintas, ninguna contradiciendo a las "
+    "otras tanto como eligiendo qu\u00e9 poner en primer plano: Marcos lo llama \u00abun distinguido "
+    "<a href=\"diccionario.html#bouleutes\">miembro del consejo</a>\u00bb que \u00e9l mismo esperaba el reino de Dios "
+    "\u2014un hombre actuando contra el mismo cuerpo que acababa de condenar a Jes\u00fas; Mateo lo llama simplemente "
+    "\u00abun hombre rico\u2026 que tambi\u00e9n hab\u00eda sido hecho disc\u00edpulo\u00bb; Lucas a\u00f1ade que \u00abno hab\u00eda consentido en "
+    "el acuerdo ni en los hechos de ellos\u00bb; Juan lo hace disc\u00edpulo solo \u00aben secreto, por miedo a los "
+    "jud\u00edos\u00bb. Solo Marcos y Lucas dicen abiertamente que se sentaba en el Sanedr\u00edn que acababa de votar "
+    "entregar a Jes\u00fas.")
+ENCYCLOPEDIA_ES["mary-mother-of-james-the-younger"] = ("Mar\u00eda la madre de Jacobo el menor",
+    "Una de las mujeres que presenciaron la crucifixi\u00f3n desde lejos y, con Mar\u00eda Magdalena, vieron d\u00f3nde "
+    "sepultaron a Jes\u00fas (Marcos 15:40, 47; 16:1, todav\u00eda no en estas p\u00e1ginas). \u26a0 Marcos 6:3 (ya en estas "
+    "p\u00e1ginas) nombra a los propios hermanos de Jes\u00fas, en el mismo orden, como \u00abJacobo y Jos\u00e9s y Judas y "
+    "Sim\u00f3n\u00bb, hijo de \u00abMar\u00eda\u00bb \u2014el mismo par de nombres por el que esta Mar\u00eda queda identificada aqu\u00ed. "
+    "Si es la misma Mar\u00eda, la propia madre de Jes\u00fas nombrada por sus otros hijos en vez de por \u00e9l, o una "
+    "pariente distinta que comparte por casualidad un nombre com\u00fan y dos nombres de hijos con su familia, es "
+    "una disputa real y antigua. Juan 19:25 (todav\u00eda no en estas p\u00e1ginas) nombra a la madre de Jes\u00fas y, por "
+    "separado, a \u00abMar\u00eda mujer de Cleof\u00e1s\u00bb como dos mujeres distintas juntas, el apoyo textual m\u00e1s fuerte "
+    "para leerla como pariente distinta \u2014la lectura que asent\u00f3 la tradici\u00f3n posterior. La biblioteca expone "
+    "ambas lecturas y no decide entre ellas.")
+ENCYCLOPEDIA_ES["salome"] = ("Salom\u00e9 (disc\u00edpula)",
+    "Una de las mujeres nombradas en la cruz (Marcos 15:40) y entre las que llegaron a la tumba con especias "
+    "(16:1, todav\u00eda no en estas p\u00e1ginas) \u2014no debe confundirse con la hija bailarina de Herod\u00edas (sin "
+    "nombre en los propios Evangelios; el nombre \u00abSalom\u00e9\u00bb para ella viene de Josefo), ni con la comadrona "
+    "Salom\u00e9 de la tradici\u00f3n ap\u00f3crifa posterior. Marcos la nombra solo aqu\u00ed y no la conecta con ninguna otra "
+    "figura de su propio Evangelio; una tradici\u00f3n posterior, extendida pero indemostrable, la identifica con "
+    "\u00abla madre de los hijos de Zebedeo\u00bb de la lista paralela en Mateo 27:56, lo que la har\u00eda madre de "
+    "Jacobo y Juan \u2014la petici\u00f3n que hace en su nombre en Mateo 20:20\u201321 (todav\u00eda no en estas p\u00e1ginas) no "
+    "est\u00e1 en Marcos, donde los hermanos piden por s\u00ed mismos (<a href=\"mark-10.es.html#v10-37\">10:37</a>, ya "
+    "en estas p\u00e1ginas).")
+ENCYCLOPEDIA_ES["joses"] = ("Jos\u00e9s",
+    "Una forma abreviada de Jos\u00e9, y uno de los dos hijos por los que Mar\u00eda queda identificada en la cruz "
+    "(Marcos 15:40, 47) \u2014v\u00e9ase la entrada <a href=\"enciclopedia.html#mary-mother-of-james-the-younger\">Mar\u00eda "
+    "la madre de Jacobo el menor</a> para la cuesti\u00f3n de identidad que plantea este nombre. Marcos usa el mismo "
+    "nombre, en la misma forma corta, para uno de los propios hermanos de Jes\u00fas en 6:3 (ya en estas p\u00e1ginas); "
+    "no se registra nada m\u00e1s de \u00e9l bajo ninguna de las dos lecturas.")
