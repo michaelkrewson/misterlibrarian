@@ -14,12 +14,11 @@ list of six projects otherwise would:
   2. `img/og-hub.png`, the hub's OWN link-preview image. The root used to point at the
      Bible project's default card, so sharing mistertranslation.com/ advertised "A fresh
      translation of the Bible" and landed on a six-project hub (found 2026-09-18).
-  3. The rundown box (`<section id="rundown" class="hubrundown">`, added 2026-09-21) —
-     a full mirror of the Notebook's own front-page news roundup, so a daily visit to
-     the bare domain shows it without a click into /notebook/ first. Rendered straight
-     from source/notebook/_rundown.json (the SAME file the Notebook builds from — no
-     second copy to drift), wholesale-replaced every run exactly like a card's .latest
-     line. Empty/missing file → an empty <section>, which `.hubrundown:empty` hides.
+
+A rundown-box mirror lived here 2026-09-21→2026-09-24 (a full copy of the Notebook's
+front-page news roundup, rendered from source/notebook/_rundown.json). Removed
+2026-09-24 (Michael's call) — the rundown stays on the Notebook's own front page only;
+the bare-domain hub no longer shows it.
 
 Run directly (`python3 build_hub.py`) or — the point — it runs at the end of EVERY
 builder's `__main__` (build.py, build_finance.py, build_health.py, build_notebook.py,
@@ -31,7 +30,6 @@ already one big <a>, and an anchor can't nest inside an anchor.
 """
 import datetime as _dt
 import html
-import json
 import os
 import re
 import sys
@@ -41,8 +39,6 @@ import blogkit
 ROOT = os.path.dirname(os.path.abspath(__file__))
 INDEX = os.path.join(ROOT, "index.html")
 OG_PATH = os.path.join(ROOT, "img", "og-hub.png")
-RUNDOWN_FILE = os.path.join(ROOT, "source", "notebook", "_rundown.json")
-RUNDOWN_JS_VER = blogkit.asset_ver(ROOT, "rundown.js")
 
 # data-pub → (source dir, url prefix). The Bible is handled separately.
 DATED = {
@@ -55,8 +51,6 @@ _DATED_NAME = re.compile(r"^(\d{4}-\d{2}-\d{2})-(.+?)\.html$")
 _WEST_NAME = re.compile(r"^(\d{2})-(.+?)\.html$")
 _LATEST_DIV = re.compile(r'<div class="latest" data-pub="([a-z]+)">.*?</div>', re.S)
 _BIBLE_NEWEST = re.compile(r'href="([a-z0-9-]+\.html)">Newest: ([^<]+)<')
-_RUNDOWN_SECTION = re.compile(
-    r'<section id="rundown" class="hubrundown">.*?</section>', re.S)
 
 
 def _front_matter(path):
@@ -190,140 +184,6 @@ def refresh_index(entries, quiet=False):
     return new != src
 
 
-# --- the rundown box: a full mirror of the Notebook's front-page news roundup -------
-def _load_rundown():
-    """Same contract as build_notebook.py's own _load_rundown: optional file, missing
-    href/source_href default to "". Kept as an independent copy rather than an import —
-    this is the one place build_hub.py reads a publication's source data directly
-    instead of a rendered page, so it stays a plain read of the JSON, nothing more."""
-    if not os.path.exists(RUNDOWN_FILE):
-        return None
-    with open(RUNDOWN_FILE, encoding="utf-8") as f:
-        data = json.load(f)
-    for sec in data.get("sections", []):
-        for item in sec.get("items", []):
-            item.setdefault("href", "")
-            item.setdefault("source_href", "")
-            item.setdefault("breaking", False)
-    for it in data.get("reads", []):
-        it.setdefault("href", "")
-    return data
-
-
-def _pretty_date(date_iso):
-    try:
-        y, m, d = (int(p) for p in date_iso.split("-"))
-        return _dt.date(y, m, d).strftime("%B %-d, %Y")
-    except ValueError:
-        return date_iso
-
-
-def _rdblock(label, lis_html):
-    """Independent copy of build_notebook.py's _rdblock — one orderable/hideable
-    rundown block, keyed by the section's own label text so a saved reader
-    preference survives from one day's box to the next. Kept as its own copy
-    rather than an import, matching this codebase's no-cross-dependency rule."""
-    e = html.escape(label)
-    return (
-        '  <div class="rdblock" data-rdkey="%s">\n'
-        '    <h3 class="rdsec">%s<span class="rdctl">'
-        '<button type="button" class="rdup" aria-label="Move %s up">▲</button>'
-        '<button type="button" class="rddown" aria-label="Move %s down">▼</button>'
-        '<button type="button" class="rdhide" aria-label="Hide %s">✕</button>'
-        '</span></h3>\n'
-        '    <ul>%s</ul>\n'
-        '  </div>'
-    ) % (e, e, e, e, e, lis_html)
-
-
-def _rundown_html(data):
-    if not data or not data.get("sections"):
-        return '<section id="rundown" class="hubrundown"></section>'
-    parts = ['<section id="rundown" class="hubrundown" data-rundown>',
-             '  <h2 class="rdtitle">%s</h2>' % html.escape(data.get("title") or "Today's rundown")]
-    date_label = data.get("date", "")
-    if date_label:
-        parts.append('  <p class="rddate">%s</p>' % html.escape(_pretty_date(date_label)))
-    parts.append('  <div class="rdblocks">')
-    for sec in data["sections"]:
-        items = sec.get("items", [])
-        if not items:
-            continue
-        lis = []
-        for it in items:
-            text = html.escape(it.get("text", ""))
-            href = it.get("href", "").strip()
-            src = it.get("source_href", "").strip()
-            if href:
-                # _rundown.json's hrefs are written relative to /notebook/ (where the
-                # Notebook's own front page renders them). This mirror sits one
-                # directory up at the site root, so any same-publication relative
-                # link needs a "notebook/" prefix here or it 404s at the root while
-                # working fine on the Notebook page itself. An absolute URL (a
-                # cross-publication link) is already correct as-is.
-                if not re.match(r'^[a-zA-Z][a-zA-Z0-9+.-]*://', href):
-                    href = "notebook/" + href
-                body = '<a href="%s">%s</a>' % (html.escape(href), text)
-            else:
-                body = text
-            # source_href is always an outbound absolute URL (the primary news
-            # source), never a same-site relative path — no prefix rewrite needed.
-            if src:
-                body += ' <a class="rdsrc" href="%s" target="_blank" rel="noopener" ' \
-                        'title="Source">↗</a>' % html.escape(src)
-            if it.get("breaking"):
-                lis.append('<li class="rdbreak">🚨 %s</li>' % body)
-            else:
-                lis.append("<li>%s</li>" % body)
-        parts.append(_rdblock(sec.get("label", ""), "".join(lis)))
-    reads = data.get("reads", [])
-    if reads:
-        rlis = []
-        for it in reads:
-            text = html.escape(it.get("text", ""))
-            href = it.get("href", "").strip()
-            if href:
-                rlis.append('<li><a href="%s" target="_blank" rel="noopener">%s</a></li>'
-                            % (html.escape(href), text))
-            else:
-                rlis.append("<li>%s</li>" % text)
-        parts.append(_rdblock("Worth reading elsewhere", "".join(rlis)))
-    parts.append('  </div>')
-    parts.append('  <div class="rdtools"><button type="button" class="rdreset">'
-                  '↺ Reset order</button><span class="rdhidden"></span></div>')
-    parts.append('  <p class="rdmore"><a href="notebook/">Read the whole Notebook →</a></p>')
-    missed_url = blogkit.x_missed_url("https://mistertranslation.com/notebook/")
-    parts.append(
-        '  <p class="rdask"><a class="respond-btn respond-btn-primary" href="%s" '
-        'target="_blank" rel="noopener">📰 Did We Miss Something?</a></p>'
-        % html.escape(missed_url))
-    parts.append('  <script src="rundown.js?v=%s" defer></script>' % RUNDOWN_JS_VER)
-    parts.append("</section>")
-    return "\n".join(parts)
-
-
-def refresh_rundown(quiet=True):
-    """Wholesale-replaces <section id="rundown"> in index.html from the SAME
-    source/notebook/_rundown.json the Notebook's own front page renders — no second
-    copy of the day's stories to drift out of sync. Runs every time any builder
-    finishes (via refresh(), below), same as the card .latest lines."""
-    data = _load_rundown()
-    html_block = _rundown_html(data)
-    with open(INDEX, encoding="utf-8") as f:
-        src = f.read()
-    if not _RUNDOWN_SECTION.search(src):
-        print('build_hub: index.html has no <section id="rundown"> slot', file=sys.stderr)
-        return False
-    new = _RUNDOWN_SECTION.sub(lambda m: html_block, src, count=1)
-    if new != src:
-        with open(INDEX, "w", encoding="utf-8") as f:
-            f.write(new)
-    if not quiet:
-        n = sum(len(s.get("items", [])) for s in (data or {}).get("sections", []))
-        print("  rundown   %s" % ("%d item%s" % (n, "" if n == 1 else "s") if n else "(none)"))
-    return new != src
-
-
 # --- the hub's own link-preview card ------------------------------------------------
 # Same dark gradient + gold frame as build.py's _render_default_card (kept in step by
 # hand; that renderer is buried in a 6,800-line module we don't want to import here).
@@ -381,12 +241,6 @@ def refresh(quiet=True):
             print("hub: index.html %s" % ("updated" if changed else "unchanged"))
     except Exception as e:
         print("build_hub: index refresh failed: %s" % e, file=sys.stderr)
-    try:
-        changed = refresh_rundown(quiet=quiet)
-        if not quiet:
-            print("hub: rundown box %s" % ("updated" if changed else "unchanged"))
-    except Exception as e:
-        print("build_hub: rundown refresh failed: %s" % e, file=sys.stderr)
     try:
         ok = render_og()
         if not quiet:
