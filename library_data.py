@@ -1801,6 +1801,11 @@ DICTIONARY = [
      "A LABOUR PAIN — specifically the pangs of childbirth, not pain in general. ⚠ At Matthew 24:8 the wars, famines and earthquakes are 'the beginning of ōdinōn,' and the whole force of the metaphor is that pain of this kind is PRODUCTIVE: it is the pain that precedes a birth, and it means the process is under way rather than that the end has come. The prophets use it exactly so (Isaiah 26:17; Jeremiah 22:23; Hosea 13:13), and later Jewish writing speaks of 'the birth pangs of the Messiah' as a fixed phrase. So the verse is doing the opposite of what a reader collecting disasters wants: it says these are the early contractions, and adds 'the end is not yet' two verses earlier. Paul uses the same image of the whole creation groaning as in childbirth (Romans 8:22).", ("Matthew", 24, 8)),
     ("bdelygma", "bdelygma tēs erēmōseōs", "βδέλυγμα τῆς ἐρημώσεως", "bdelygma",
      "THE ABOMINATION THAT DESOLATES — bdelygma is something that makes you retch (from bdelyssomai, to feel disgust), the Greek Old Testament's word for an idol or a defilement; erēmōsis is a laying-waste, and the genitive between them is causal, not descriptive: the abomination brings the desolation about, exactly what Daniel's own Hebrew already says outright (see <a href=\"dictionary.html#shiqquts\">shiqquts</a>). ⚠ The phrase is quoted, and Matthew 24:15 names its source out loud: Daniel, at 11:31, 12:11 and 9:27. Daniel's own phrase had a first fulfilment the first century knew well — in 167 BC Antiochus IV set up an altar to Zeus in the temple and sacrificed on it, which is what 1 Maccabees calls by the same words. So the verse invokes something that had ALREADY happened once, which is a large part of why dating its second reference is so contested. Note also that Matthew 24:15 carries the Gospel's one aside to the reader ('let the reader understand'), which is the writer speaking rather than Jesus.", ("Matthew", 24, 15)),
+    # ---- Mark 13 (Greek) ----
+    ("pseudochristos", "pseudochristos", "ψευδόχριστος", "pseudochristos",
+     "A FALSE CHRIST — pseudēs, 'false,' fused onto christos, 'anointed one.' ⚠ Confirmed directly against the archived Greek New Testament: the compound occurs in exactly two verses in the whole of the New Testament, Matthew 24:24 and its own parallel, Mark 13:22 — nowhere else, in any other book. Its partner pseudoprophētēs, 'false prophet,' is the far older and commoner word, appearing across the Gospels, Acts and Revelation on its own; pseudochristos looks like a coinage built to match it, a false ANOINTED ONE invented on the model of a false MOUTHPIECE, rather than a term either evangelist inherited already in use. Both occurrences pair the two words in the identical order, false christs before false prophets, and both attach the identical warning: signs and wonders, to lead astray the chosen, if possible.", ("Mark", 13, 22)),
+    ("thyroros", "thyrōros", "θυρωρός", "thyrōros",
+     "A DOORKEEPER — thyra, 'door,' + ōros, a watcher or guard; the same office as a modern porter or gatekeeper. It occurs three times in the New Testament, and the three scenes are worth reading against each other: commanded to keep watch in a master's absence at Mark 13:34; the gatekeeper who recognizes a true shepherd's voice and opens to him at John 10:3 (not yet on these pages); and the servant girl doorkeeper who lets Peter into the high priest's courtyard and puts to him the question he first denies, at John 18:16-17 (not yet on these pages). One is commanded to watch, one watches rightly, and one becomes the setting for a betrayal — the same office doing three different kinds of work.", ("Mark", 13, 34)),
     # ---- Matthew 23 (Greek) ----
     ("hypokrites", "hypokritēs", "ὑποκριτής", "hypokritēs",
      "In ordinary Greek, a STAGE ACTOR &mdash; one who speaks from behind a mask, from hypo-krinomai, to answer or play a part; the masked professional of a theatre like the one at Sepphoris, an hour's walk from Nazareth. The moral sense came later; the theatrical one is what the word still carried. It is the Sermon's term for piety performed to an audience (Matthew 6:2, 5, 16), and 6:1 supplies the matching verb: righteousness done 'to be GAZED AT' (theathēnai &mdash; the root of 'theater'). ⚠ Matthew uses it more than the rest of the New Testament together (13 of about 18 occurrences), and the woes of chapter 23 hammer it six times. English 'hypocrite' is this word worn down: it now means somebody who fails to practise what they preach, where the Greek picture is narrower and sharper &mdash; somebody playing to a house.", ("Matthew", 6, 2)),
@@ -12665,6 +12670,9 @@ CHRON_CHAPTERS = {
     "mark12": dict(era="gospels",
                   when="Still in the temple courts, Jesus tells the parable of the vineyard tenants against the authorities who have just failed to trap him. Pharisees and Herodians try the poll-tax question; Sadducees try the seven-brothers riddle; a scribe asks for the greatest commandment and is told he is not far from the kingdom of God. Jesus then asks his own question about the Christ as David's son and Lord, warns the crowd against the scribes, and watches a poor widow give two small coins at the treasury.",
                   clock="c. AD 30, the Tuesday before Passover, continuing directly from the authority challenge that closed chapter 11 — corresponding to Matthew 21:33-22:46's own telling of the same string of temple confrontations, on Matthew's single compressed day."),
+    "mark13": dict(era="gospels",
+                  when="Leaving the temple, a disciple admires its stones; Jesus predicts their total destruction. On the Mount of Olives, Peter, James, John and Andrew ask privately when this will be, and Jesus answers with wars, earthquakes and famines ('the beginning of birth pangs'), persecution before councils and kings, 'the abomination that desolates' standing where it ought not, false christs and false prophets, and cosmic signs before the Son of Man comes in the clouds. A parable of the fig tree teaches watchfulness rather than a date; 'concerning that day or hour no one knows, not even the Son, but only the Father.' The discourse closes with a parable of a doorkeeper commanded to keep watch.",
+                  clock="c. AD 30, the Tuesday evening of Holy Week, delivered privately on the Mount of Olives overlooking the temple, immediately after the confrontations of chapter 12 — corresponding to Matthew 24's own Olivet Discourse, delivered on the same evening in that Gospel's own harmony."),
     "luke2": dict(era="gospels",
                   when="A census under Caesar Augustus brings Joseph and the pregnant Mary to Bethlehem, where Jesus is born and laid in a manger, 'because there was no place for them in the inn.' Shepherds keeping watch nearby are told by an angel, then a whole multitude of the heavenly host praising God. At eight days he is circumcised and named; at the temple, the aged Simeon and the prophetess Anna both recognize him. The chapter closes years later with the twelve-year-old Jesus staying behind in the temple, 'sitting among the teachers, listening to them and asking them questions.'",
                   clock="c. 6-4 BC for the birth, matching Matthew's account of the same event told from Mary's side rather than Joseph's (see chapter 1's note); the temple episode at the close jumps forward to c. AD 6-8, when Jesus is twelve — the only story the Gospels tell of his childhood between infancy and adulthood."),
@@ -17688,6 +17696,25 @@ DICTIONARY_ES = {
         "es buena parte de por qué fechar su segunda referencia se discute tanto. Nótese además que Mateo "
         "24:15 lleva el único aparte al lector de todo el Evangelio («el que lee, entienda»), que es el "
         "escritor hablando y no Jesús."),
+    # ---- Marcos 13 ----
+    "pseudochristos": ("falso cristo",
+        "UN FALSO CRISTO — pseudēs, «falso», fundido con christos, «ungido». ⚠ Confirmado directamente contra "
+        "el Nuevo Testamento griego archivado: el compuesto aparece en exactamente dos versículos de todo el "
+        "Nuevo Testamento, Mateo 24:24 y su propio paralelo, Marcos 13:22 — en ningún otro lugar, en ningún "
+        "otro libro. Su pareja pseudoprophētēs, «falso profeta», es la palabra mucho más antigua y corriente, "
+        "que aparece por su cuenta en los Evangelios, Hechos y Apocalipsis; pseudochristos parece un acuñamiento "
+        "hecho a la medida de esa otra palabra, un falso UNGIDO inventado sobre el modelo de un falso "
+        "PORTAVOZ, más que un término que ambos evangelistas heredaran ya en uso. Las dos apariciones emparejan "
+        "las dos palabras en el mismo orden, falsos cristos antes que falsos profetas, y ambas añaden la "
+        "misma advertencia: señales y prodigios, para descarriar a los escogidos, si fuera posible."),
+    "thyroros": ("portero",
+        "UN PORTERO — thyra, «puerta», + ōros, un vigilante o guardián; el mismo oficio que un portero "
+        "moderno. Aparece tres veces en el Nuevo Testamento, y las tres escenas vale la pena leerlas una "
+        "contra otra: mandado a vigilar en ausencia de su amo en Marcos 13:34; el portero que reconoce la voz "
+        "de un pastor verdadero y le abre en Juan 10:3 (todavía no en estas páginas); y la criada portera que "
+        "deja entrar a Pedro al patio del sumo sacerdote y le hace la pregunta que él niega por primera vez, en "
+        "Juan 18:16-17 (todavía no en estas páginas). Uno recibe la orden de vigilar, otro vigila como debe, y "
+        "otro se convierte en el escenario de una traición — el mismo oficio haciendo tres trabajos distintos."),
     # ---- Mateo 23 ----
     "hypokrites": ("hipócrita, actor",
         "UN ACTOR — el que habla desde detrás de una máscara, de hypo-krinomai, responder o representar un "
@@ -20612,6 +20639,12 @@ ENCYCLOPEDIA_ES["bethany"] = ("Betania",
     "«Lazarium», el lugar de Lázaro. Distinta de la Betania «al otro lado del Jordán» donde Juan "
     "bautizaba (Juan 1:28, todavía no en estas páginas) — el mismo nombre de lugar aplicado a dos "
     "aldeas distintas, separadas por una distancia considerable.")
+ENCYCLOPEDIA_ES["sanhedrin"] = ("Sanedrín",
+    "El concilio de Jerusalén — del griego synedrion, literalmente un «sentarse juntos», la misma "
+    "palabra de la que el español toma «sínodo». Bajo dominio romano era el principal cuerpo judicial "
+    "y administrativo judío, presidido por el sumo sacerdote y formado por los principales sacerdotes, "
+    "los ancianos (cabezas de familias principales) y los escribas — los Evangelios nombran a los tres "
+    "grupos.")
 ENCYCLOPEDIA_ES["bethphage"] = ("Betfagé",
     "Una aldea en el Monte de los Olivos, entre Betania y Jerusalén por el camino que baja de la "
     "cumbre — nombrada solo para esta escena en la tradición evangélica compartida (Mateo 21:1; "
