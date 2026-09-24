@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,16 +7,16 @@
       "label": "World",
       "items": [
         {
-          "text": "President Trump tells the UN General Assembly on September 22 he faces a \"big decision\" on Iran — a deal or \"annihilate the Islamic Republic\" — and predicts an agreement only after November's midterm elections, since Tehran is \"waiting to see how I do.\"",
-          "href": ""
+          "text": "Chinese President Xi Jinping meets President Trump at the White House on September 24 for an arrival ceremony, a Rose Garden military review and a state dinner in the East Room, with AI, rare earths, trade and Taiwan atop the agenda on his first Washington visit in more than a decade.",
+          "href": "",
+          "source_href": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
+          "breaking": false
         },
         {
-          "text": "Chinese President Xi Jinping arrives in Washington on September 23 for his first U.S. state visit in 11 years, with Thursday's main meeting expected to center on extending last year's trade truce alongside AI, Taiwan and critical minerals.",
-          "href": ""
-        },
-        {
-          "text": "Ukrainian President Volodymyr Zelenskyy calls on September 23 for a trilateral meeting with Presidents Trump and Putin and repeats Kyiv's readiness for a mutual \"energy ceasefire\" if Russian strikes on power infrastructure stop.",
-          "href": ""
+          "text": "Fifty countries and the EU issue a joint statement on September 23, delivered by Danish Foreign Minister Lars Løkke Rasmussen ahead of a UN Security Council meeting, calling on Russia to accept the full, immediate and unconditional ceasefire Ukraine says it agreed to as early as March 2025; the United States does not join the statement.",
+          "href": "",
+          "source_href": "https://www.pravda.com.ua/eng/news/2026/09/23/8054796/",
+          "breaking": false
         }
       ]
     },
@@ -24,12 +24,16 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "The Nasdaq 100 closes at a record on September 22, its first since June, as the Philadelphia Semiconductor Index jumps 4.3% and Intel and Arm Holdings both surge more than 12%, while the S&P 500 finishes flat and the Dow falls 0.4%.",
-          "href": ""
+          "text": "The 10-year Treasury yield jumps to 5.11% on September 24, its highest level since 2007, and the 30-year touches a post-2004 peak of 5.438%, after S&P Global flash PMI data show new orders and input/output prices at multi-year highs and fuel bets on another Fed rate hike this year.",
+          "href": "",
+          "source_href": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-24-2026",
+          "breaking": false
         },
         {
-          "text": "Asian equities extend a rally into a sixth straight session on September 23 — India's Sensex opens up more than 100 points and MSCI's Asia Pacific index adds 0.3% — tracking Wall Street's chip rally and falling oil prices tied to hopes for an Iran deal.",
-          "href": ""
+          "text": "The Dow Jones Industrial Average falls 360 points (0.69%) on September 23 to close at 51,503, with US stock futures sliding further Thursday morning as inflation fears and the bond selloff outweigh hopes for Middle East diplomacy.",
+          "href": "",
+          "source_href": "https://tradingeconomics.com/united-states/stock-market",
+          "breaking": false
         }
       ]
     },
@@ -37,12 +41,16 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin and ether open near eight-month highs on September 23, with Fundstrat's Sean Farrell declaring \"the crypto winter is over\" after bitcoin gained more than 5% Friday and another 6% Monday.",
-          "href": ""
+          "text": "Bitcoin opens at $84,370.41 on September 24, down 2.1% from Wednesday, then falls further to $83,462.29 by 7:33 a.m. ET as CME's FedWatch tool puts the odds of an October Fed rate hike at 75.3%.",
+          "href": "",
+          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-september-24-2026-crypto-prices-lose-ground-as-rate-hike-expectations-grow-114459916.html",
+          "breaking": false
         },
         {
-          "text": "BitMEX permanently shuts down at 04:00 UTC on September 23 after 11 years, closing an exchange whose daily volume had shrunk to roughly $400,000 following its 2020 Bank Secrecy Act case and years of losing share to Binance, Bybit and OKX.",
-          "href": ""
+          "text": "The CFTC opens an investigation into Polymarket after a Wall Street Journal report that CEO Shayne Coplan told staff to \"keep growing and pay a fine\" rather than fix compliance gaps exposed by a February attempt to steal $10 million from its US platform, an episode that already cost the company its chief compliance officer and its US CEO.",
+          "href": "",
+          "source_href": "https://www.theblock.co/news/regulation/2026-09-20-polymarket-faced-10-million-fraud-attempt-as-its-ceo-pushed-growth-over-compliance-concerns-wsj-415875",
+          "breaking": false
         }
       ]
     },
@@ -50,12 +58,16 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Alibaba unveils its Zhenwu V900 AI accelerator on September 22 at its Hangzhou conference, calling it China's most powerful chip yet, built for clusters of up to 500,000 units and said to triple the performance of its predecessor, days ahead of Xi's Washington visit.",
-          "href": "the-chip-china-banned-itself-into-building.html"
+          "text": "Cisco Talos discloses CLOSEDQUORUM on September 22, a Windows implant it calls the first documented malware to hand tactical attack decisions to a panel of four commercial AI models — DeepSeek, Qwen, Mistral and Google Gemini — that vote on each move, while releasing an open-source detection toolkit called CAIRN and stating it has not confirmed the malware deployed against real victims.",
+          "href": "",
+          "source_href": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+          "breaking": false
         },
         {
-          "text": "House Select Committee on China chairman John Moolenaar urges the Trump administration on September 18 to close \"cloud services loopholes\" and tighten chipmaking-equipment export controls to China, in a letter sent less than a week before Xi's September 24 Washington visit.",
-          "href": "the-chip-doesnt-have-to-cross-a-border.html"
+          "text": "OpenAI launches GPT-6 Sol and GPT-6 Luna on September 22, roughly 90 minutes after Anthropic's own Claude Opus 5.5 price cut, pricing Sol at $2/$10 per million input/output tokens (down from $4/$20) and Luna at $0.10/$0.50 (down from $0.20/$1.20).",
+          "href": "",
+          "source_href": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "breaking": false
         }
       ]
     },
@@ -63,12 +75,16 @@
       "label": "Science & space",
       "items": [
         {
-          "text": "ESA's JUICE spacecraft swings within 8,640 km of Earth on September 28 for a gravity assist over the Indian Ocean, gaining about 3.5 km/s of speed on its way to a 2031 arrival at Jupiter's icy moons.",
-          "href": "the-cheapest-fuel-in-the-solar-system-is-a-planet.html"
+          "text": "Paleontologists from Fundación Dinópolis identify 14 tail vertebrae found at El Castellar, Teruel, Spain as the first confirmed Diplodocus fossil found outside North America, suggesting the roughly 150-million-year-old sauropod crossed between continents during the Late Jurassic.",
+          "href": "",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260918024807.htm",
+          "breaking": false
         },
         {
-          "text": "A paper led by Kenji Furuya of Japan's RIKEN institute finds interstellar object 3I/ATLAS's water carries a deuterium-to-hydrogen ratio of about 1%, tens of times higher than a typical solar-system comet's 0.015%-0.03%, consistent with it forming in a low-metallicity stellar nursery.",
-          "href": "a-comet-carrying-someone-elses-recipe-for-water.html"
+          "text": "A study led by Pablo Santos-Sanz of Spain's IAA-CSIC, using a James Webb Space Telescope stellar occultation from October 2022, finds the centaur Chariklo's ring system has visibly changed in just a few years — its inner ring growing denser and its outer ring fainter.",
+          "href": "",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260915232124.htm",
+          "breaking": false
         }
       ]
     },
@@ -76,14 +92,19 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "A BMJ review of 69 randomized trials covering 153,902 adults finds calcium and vitamin D supplements, alone or combined, produce little to no reduction in fracture or fall risk for most older people.",
-          "href": "/health/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html"
+          "text": "A Peking University-led study tracking more than 95,000 adults' wrist-monitor sleep data over nine years finds each 47.6-minute increase in REM sleep is tied to a lower risk of 83 diseases, including heart failure, dementia and Parkinson's, while more deep sleep is linked to lower risk of seven conditions including type 2 diabetes.",
+          "href": "",
+          "source_href": "https://www.medicalnewstoday.com/articles/more-dream-sleep-linked-to-lower-risk-of-83-diseases-including-diabetes",
+          "breaking": false
         },
         {
-          "text": "A WEHI-led study of roughly 900 human gut biopsies, published in Science, finds intestinal cells in inflammatory bowel disease patients can stay primed to die even during symptom-free remission, with higher cell-death signaling tied to greater relapse risk over more than two years of follow-up.",
-          "href": "/health/why-do-ibd-patients-relapse-even-in-remission.html"
+          "text": "A Mayo Clinic-led prospective study of 35,878 adults age 50 and older, published in Nature Medicine, finds a multicancer blood test detected signals across 17 cancer types with a positive predictive value of 60.3% and 99.64% specificity, catching 53% of cancers at stage 1 or 2.",
+          "href": "",
+          "source_href": "https://newsnetwork.mayoclinic.org/discussion/multicancer-blood-test-detects-17-cancer-types-in-large-prospective-study/",
+          "breaking": false
         }
       ]
     }
-  ]
+  ],
+  "reads": []
 }
