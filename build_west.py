@@ -89,10 +89,10 @@ from datetime import datetime, timezone
 import blogkit
 
 SITE_NAME = "Eight Miles West"
-# The one publication on the domain with a real name on it (Michael's call,
-# 2026-09-11): this is his own family's book, and the printed edition will carry
-# the same name. Everywhere else the domain's byline stays "Mr. Librarian".
-AUTHOR = "Michael V. Krewson"
+# His real name goes on the printed edition one day, not the web version (Michael's
+# call, 2026-09-24) — feeds the copyright line + <meta name="author">. The About
+# page still names him in its own prose; this constant no longer reaches it.
+AUTHOR = "mistertranslation.com"
 PRIVACY_URL = "https://mistertranslation.com/privacy.html"   # the site-wide policy at the hub root
 TAGLINE = "A family's four centuries in America — from New Amsterdam to the Pacific, one document at a time"
 BLURB = ("The Krewson family's four centuries in America — Croesen, Kroesen, Kroessen, "
