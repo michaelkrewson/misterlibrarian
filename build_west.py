@@ -89,10 +89,10 @@ from datetime import datetime, timezone
 import blogkit
 
 SITE_NAME = "Eight Miles West"
-# The one publication on the domain with a real name on it (Michael's call,
-# 2026-09-11): this is his own family's book, and the printed edition will carry
-# the same name. Everywhere else the domain's byline stays "Mr. Librarian".
-AUTHOR = "Michael V. Krewson"
+# His real name goes on the printed edition one day, not the web version (Michael's
+# call, 2026-09-24) — feeds the copyright line + <meta name="author">. The About
+# page still names him in its own prose; this constant no longer reaches it.
+AUTHOR = "mistertranslation.com"
 PRIVACY_URL = "https://mistertranslation.com/privacy.html"   # the site-wide policy at the hub root
 TAGLINE = "A family's four centuries in America — from New Amsterdam to the Pacific, one document at a time"
 BLURB = ("The Krewson family's four centuries in America — Croesen, Kroesen, Kroessen, "
@@ -659,9 +659,9 @@ ABOUT_BODY = """  <section class="asklede">
     <p>A family history, written as narrative non-fiction and published one chapter at a
     time. The family is the one that landed at Breuckelen (Brooklyn) around 1660 as
     <b>Croesen</b> and has been spelled <b>Kroesen, Kroessen, Kreuso, Cruse</b> and
-    <b>Krewson</b> since — the author's own. It is written by Michael V. Krewson, a
-    tenth-generation descendant of the cooper, and published under his name; the rest of
-    this domain is kept as Mr. Librarian, and the two are the same person. The book follows it from the Dutch colony
+    <b>Krewson</b> since — the author's own. It is written by a modern member of the
+    family, a tenth-generation descendant of the cooper, under this domain's usual
+    byline, Mr. Librarian. The book follows it from the Dutch colony
     through the English takeover, into Pennsylvania, across the frontier to Ohio and Iowa,
     and into the wars and breakages of the twentieth century. It is written to be read
     here first, in order, and compiled into a printed book when it is done.</p>
