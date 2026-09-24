@@ -8957,7 +8957,7 @@ XREFS = [
     # ---- Leviticus 21 ----
     (("Leviticus", 21, 5), ("Leviticus", 19, 27), "the identical mourning-practice ban — no bald spot, no trimmed beard corners, no cuts in the flesh — first given to all Israel, now restated word for word for priests specifically"),
     (("Leviticus", 21, 9), ("Leviticus", 19, 29), "chalal, 'to profane' — the general warning against profaning a daughter through prostitution, now given its specific priestly penalty"),
-    (("Leviticus", 21, 10), ("Mark", 14, 63), "the high priest's own ban on tearing his clothes — the exact gesture Caiaphas performs at Jesus's trial, breaking a law written for his office specifically"),
+    (("Leviticus", 21, 10), ("Mark", 14, 63), "the high priest's own ban on tearing his clothes — the exact gesture the high priest performs at Jesus's trial, breaking a law written for his office specifically"),
     (("Leviticus", 21, 23), ("Leviticus", 11, 44), "the standing distinction this book keeps between approach and worth — a blemished priest barred from the altar, not from the priesthood or from provision"),
     # ---- Leviticus 20 ----
     (("Leviticus", 20, 17), ("Genesis", 19, 19), "chesed — the covenant-kindness word Lot himself first speaks in the whole Bible, begging the angels for it at Sodom's gate, turned here against the exact crime his own daughters and their father commit before that chapter ends"),
