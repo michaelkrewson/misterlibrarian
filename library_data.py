@@ -5379,6 +5379,9 @@ ENCYCLOPEDIA = [
     dict(slug="galilee", name="Galilee", kind="place", aliases=["Galilee", "Galileans"],
          desc="The northern region of the land — hill country and a freshwater lake, ringed by Gentile territory, which is why Isaiah 9:1 calls it 'Galilee of the nations'. It was fertile, densely settled, and politically restless: Judas the Galilean's tax revolt of AD 6 began there, and the word 'Galilean' carried in Jerusalem roughly the tone of a provincial accent — Peter's own speech gives him away in the high priest's courtyard. Almost all of Jesus' ministry happens here, all of the Twelve but perhaps one come from here, and the men in white at the ascension address the whole future church by the name of a backwater: 'Men of Galilee, why do you stand looking into heaven?'",
          refs=[("Matthew", 2, 22), ("Acts", 1, 11)]),
+    dict(slug="judea", name="Judea", kind="place", aliases=["Judea", "Judaea"],
+         desc="The southern region of the land, centred on Jerusalem — under Rome, a formal province (Iudaea) governed directly by a prefect or procurator (Pilate among them) rather than by a client king, after Herod Archelaus was deposed in AD 6. It is drier and more mountainous than Galilee to its north, and its hill country is where John the Baptist preaches and where Jesus is finally tried and executed. 'Judea' can mean the narrower region around Jerusalem or, more loosely, the whole territory of the Jewish people (so 'the land of Judea' at times stretches to cover Galilee as well) — the word carries both a tight administrative sense and a looser ethnic one, and which is meant has to be read from context each time.",
+         refs=[("Matthew", 2, 1), ("Mark", 13, 14)]),
     # ---- places ----
     dict(slug="eden", name="Eden", kind="place",
          desc="The garden's region, 'in the east' (2:8), watered by a river that splits into four. Two of the four "
@@ -20639,6 +20642,16 @@ ENCYCLOPEDIA_ES["bethany"] = ("Betania",
     "«Lazarium», el lugar de Lázaro. Distinta de la Betania «al otro lado del Jordán» donde Juan "
     "bautizaba (Juan 1:28, todavía no en estas páginas) — el mismo nombre de lugar aplicado a dos "
     "aldeas distintas, separadas por una distancia considerable.")
+ENCYCLOPEDIA_ES["judea"] = ("Judea",
+    "La región sur de la tierra, centrada en Jerusalén — bajo Roma, una provincia formal "
+    "(Iudaea) gobernada directamente por un prefecto o procurador (Pilato entre ellos) en "
+    "vez de por un rey cliente, después de que Herodes Arquelao fuera depuesto en el año 6 "
+    "d. C. Es más seca y montañosa que Galilea al norte, y su región montañosa es donde "
+    "predica Juan el Bautista y donde Jesús finalmente es juzgado y ejecutado. «Judea» "
+    "puede referirse a la región más estrecha alrededor de Jerusalén o, en sentido más "
+    "amplio, a todo el territorio del pueblo judío — la palabra lleva tanto un sentido "
+    "administrativo estrecho como uno étnico más amplio, y cuál se quiere decir hay que "
+    "leerlo del contexto cada vez.")
 ENCYCLOPEDIA_ES["sanhedrin"] = ("Sanedrín",
     "El concilio de Jerusalén — del griego synedrion, literalmente un «sentarse juntos», la misma "
     "palabra de la que el español toma «sínodo». Bajo dominio romano era el principal cuerpo judicial "

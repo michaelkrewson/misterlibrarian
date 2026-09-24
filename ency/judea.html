@@ -1,21 +1,24 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
+<base href="https://mistertranslation.com/"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>La Biblioteca — La Traducción Mister</title>
-<meta name="description" content="La sala de consulta de la edición española: concordancia, diccionario, enciclopedia y atlas."/>
-<link rel="canonical" href="https://mistertranslation.com/biblioteca.html"/>
+<meta name="robots" content="noindex,follow"/>
+<title>Judea — Encyclopedia — Mister Translation</title>
+<meta name="description" content="Judea: The southern region of the land, centred on Jerusalem — under Rome, a formal province (Iudaea) governed directly by a prefect or procurator (Pilate…"/>
+<link rel="canonical" href="https://mistertranslation.com/ency/judea.html"/>
 <meta property="og:site_name" content="Mister Translation"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="La Biblioteca — La Traducción Mister"/>
-<meta property="og:description" content="La sala de consulta de la edición española: concordancia, diccionario, enciclopedia y atlas."/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Judea — Encyclopedia — Mister Translation"/>
+<meta property="og:description" content="Judea: The southern region of the land, centred on Jerusalem — under Rome, a formal province (Iudaea) governed directly by a prefect or procurator (Pilate…"/>
 <meta property="og:image" content="https://mistertranslation.com/img/og-default.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="La Biblioteca — La Traducción Mister"/>
-<meta name="twitter:description" content="La sala de consulta de la edición española: concordancia, diccionario, enciclopedia y atlas."/>
+<meta name="twitter:title" content="Judea — Encyclopedia — Mister Translation"/>
+<meta name="twitter:description" content="Judea: The southern region of the land, centred on Jerusalem — under Rome, a formal province (Iudaea) governed directly by a prefect or procurator (Pilate…"/>
 <meta name="twitter:image" content="https://mistertranslation.com/img/og-default.png"/>
-<meta property="og:url" content="https://mistertranslation.com/biblioteca.html"/>
+<meta property="og:url" content="https://mistertranslation.com/ency/judea.html"/>
+<link rel="alternate" type="application/rss+xml" title="The MisterLibrarian Bible Project" href="feed.xml"/>
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 46 46&#x27;&gt;&lt;circle cx=&#x27;23&#x27; cy=&#x27;23&#x27; r=&#x27;22.5&#x27; fill=&#x27;#0b1929&#x27;/&gt;&lt;rect x=&#x27;9&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;33.4&#x27; y=&#x27;12&#x27; width=&#x27;3.6&#x27; height=&#x27;22&#x27; rx=&#x27;1.8&#x27; fill=&#x27;#3b2d5e&#x27; stroke=&#x27;#e8c968&#x27; stroke-width=&#x27;0.6&#x27;/&gt;&lt;rect x=&#x27;12.6&#x27; y=&#x27;14.5&#x27; width=&#x27;20.8&#x27; height=&#x27;17&#x27; fill=&#x27;#efe6cf&#x27;/&gt;&lt;path d=&#x27;M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z&#x27; fill=&#x27;#e8c968&#x27;/&gt;&lt;/svg&gt;"/>
 <link rel="stylesheet" href="style.css?v=d9bb6a996c"/>
 <script data-goatcounter="https://mistertranslation.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -25,11 +28,14 @@
 <div class="wrap">
 <header class="site-head">
   <div class="utilnav utilnav-right">
+    <form class="headersearch" action="search.html" method="get" role="search">
+      <input type="search" name="q" id="headerSearch" placeholder="Search…" aria-label="Search the site"/>
+    </form>
     <details class="langsel">
-      <summary title="Idioma">🌐 Español</summary>
+      <summary title="Language">🌐 English</summary>
       <div class="langlist">
-        <a href="bible.html">English</a>
-        <a href="es.html" class="cur">Español</a>
+        <a href="bible.html" class="cur">English</a>
+        <a href="es.html">Español</a>
       </div>
     </details>
   </div>
@@ -49,7 +55,7 @@
     </a>
     <svg class="crumbsep" viewBox="0 0 10 20" width="7" height="15" aria-hidden="true" focusable="false"><path d="M2 3 L8 10 L2 17" fill="none" stroke="#7f8fa6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </div>
-  <a class="brand" href="es.html">
+  <a class="brand" href="bible.html">
     <svg class="mtlib-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <circle cx="23" cy="23" r="22.5" fill="#0b1929"/>
   <circle cx="23" cy="23" r="22.5" fill="none" stroke="#e8c968" stroke-width="0.7" opacity="0.4"/>
@@ -68,27 +74,39 @@
   <!-- the quill: rides the sheet, fades out before it would float over the closed scroll -->
   <path class="scr-quill" d="M28 30 l5 -5 1.4 1.4 -5 5 -2 0.6 z" fill="#e8c968"/>
 </svg>
-    <span class="brand-name">La Traducción <span class="lib">Mister</span></span>
+    <span class="brand-name">The Mister<span class="lib">Librarian</span> Bible Project</span>
   </a>
   <div class="rule"></div>
-  <div class="tag">Una nueva traducción de la Biblia desde el hebreo y el griego</div>
+  <div class="tag">Catalogued &amp; compared, one chapter at a time</div>
   <details class="mobmenu">
-    <summary>☰ Menú</summary>
+    <summary>☰ Menu</summary>
     <div class="mobmenu-panel">
-      <a href="es.html">Inicio</a>
-      <a href="biblioteca.html" class="on">Biblioteca</a>
+      <a href="bible.html">Home</a>
+      <a href="toc.html">Table of Contents</a>
+      <a href="library.html" class="on">📚 Library</a>
+      <a href="chronology.html">🕰 Chronology</a>
+      <a href="ask/">📖 Dear Mr. Librarian</a>
+      <a href="about.html">About</a>
       <div class="mobmenu-sep"></div>
-      <a href="contact.es.html">✉️ Preguntar</a>
+      <a href="ask/ask.html">✉️ Ask a Question</a>
       <div class="mobmenu-sep"></div>
-      <a href="bible.html">English</a>
-      <a href="es.html" class="cur">Español</a>
+      <form class="headersearch" action="search.html" method="get" role="search">
+        <input type="search" name="q" id="headerSearchMob" placeholder="Search…" aria-label="Search the site"/>
+      </form>
+      <div class="mobmenu-sep"></div>
+      <a href="bible.html" class="cur">English</a>
+      <a href="es.html">Español</a>
       <div class="mobmenu-sep"></div>
       <span class="share-widget"></span>
     </div>
   </details>
   <nav class="topnav">
-    <a href="es.html">Inicio</a>
-    <a href="biblioteca.html" class="on">Biblioteca</a>
+    <a href="bible.html">Home</a>
+    <a href="toc.html">Table of Contents</a>
+    <a href="library.html" class="on">📚 Library</a>
+    <a href="chronology.html">🕰 Chronology</a>
+    <a href="ask/">📖 Dear Mr. Librarian</a>
+    <a href="about.html">About</a>
     <span class="share-widget"></span>
   </nav>
 </header>
@@ -98,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function(){
   fetch("https://mistertranslation.goatcounter.com/counter/" + encodeURIComponent(location.pathname) + ".json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      if (el && d && d.count) el.textContent = "👁️ " + d.count + " vistas";
+      if (el && d && d.count) el.textContent = "👁️ " + d.count + " views";
       else if (el) el.remove();
     })
     .catch(function(){ if (el) el.remove(); });
@@ -109,42 +127,23 @@ document.addEventListener("DOMContentLoaded", function(){
 <script src="audio-reader.js?v=2963af9fe0"></script>
 <script src="reader-notes.js?v=fbc6ea66a2" defer></script>
 <script src="https://www.youtube.com/iframe_api"></script>
-<h1 class="pagetitle">📚 La Biblioteca</h1>
-<p class="lede">La sala de consulta de la edición española. Cada estante crece —
-automáticamente o a mano — a medida que se traduce cada capítulo, así que la biblioteca es
-siempre exactamente tan honda como la traducción misma.</p>
-
-<div class="cardgrid">
-  <a class="card" href="concordancia.html"><div class="card-t">🔠 Concordancia</div>
-  <div class="card-d">12347 palabras · 89958 apariciones — todas las palabras significativas
-  del texto español, indexadas a cada versículo. Generada del texto mismo:
-  <strong>completa</strong>.</div></a>
-  <a class="card" href="diccionario.html"><div class="card-t">📖 Diccionario</div>
-  <div class="card-d">888 de 1273 términos hebreos y griegos explicados en
-  español — crece con cada capítulo.</div></a>
-  <a class="card" href="enciclopedia.html"><div class="card-t">🏺 Enciclopedia</div>
-  <div class="card-d">262 de 486 entradas de personas, lugares y oficios en
-  español — crece con cada capítulo.</div></a>
-  <a class="card" href="atlas-es.html"><div class="card-t">🗺️ Atlas</div>
-  <div class="card-d">125 de 138 lugares situados en el mapa, con el texto en
-  español.</div></a>
+<p style="font-size:12px;opacity:.6;margin:0 0 12px">
+  <a href="encyclopedia.html">🏺 Encyclopedia</a></p>
+<div class="eentry" id="judea">
+  <div class="ehead">Judea</div>
+  <p>The southern region of the land, centred on Jerusalem — under Rome, a formal province (Iudaea) governed directly by a prefect or procurator (Pilate among them) rather than by a client king, after Herod Archelaus was deposed in AD 6. It is drier and more mountainous than Galilee to its north, and its hill country is where John the Baptist preaches and where Jesus is finally tried and executed. 'Judea' can mean the narrower region around Jerusalem or, more loosely, the whole territory of the Jewish people (so 'the land of Judea' at times stretches to cover Galilee as well) — the word carries both a tight administrative sense and a looser ethnic one, and which is meant has to be read from context each time.</p>
+  
+  <div class="erefs"><span class="xr-label">in the text</span> <a href="matthew-2.html#v2-1">Matt 2:1</a> <a href="mark-13.html#v13-14">Mark 13:14</a></div>
+  
+  <div class="evids-empty">▶ No films on the shelf yet — archaeology and geography videos get added here as Mr. Librarian finds good ones.</div>
 </div>
-
-<div class="panel" style="padding:12px 16px">
-  <h3 style="margin-top:0">Por qué algunas páginas están incompletas</h3>
-  <p>La regla de esta edición es sencilla: <strong>nada se rellena con inglés</strong>. La
-  navegación española enlaza solo a páginas que existen en español, y una entrada del
-  diccionario escrita en inglés dentro de una página española no le sirve de nada a quien lee
-  solo español. Así que cada estante muestra su cobertura real y va creciendo capítulo a
-  capítulo.</p>
-  <p>La <strong>concordancia</strong> es la excepción: se construye a partir del texto español
-  mismo, de modo que está completa desde el primer día y no puede quedarse atrás.</p>
-</div>
+<div class="notebtns"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Note%20on%20Judea%3A%0A%0Ahttps%3A//mistertranslation.com/ency/judea.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">✏️ Take a Note</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/ency/judea.html%22&f=live" target="_blank" rel="noopener">🔍 View Notes by Others</a></div>
 <footer class="site-foot">
-  <p>La Traducción Mister — una nueva traducción de la Biblia al español, hecha desde el hebreo y el griego
-  originales (el Texto Masorético y el texto crítico griego), capítulo por capítulo, con notas del traductor
-  que comparan cada decisión con la Reina-Valera y otras versiones. Cuidada por Mr. Librarian. Esta edición está creciendo capítulo por capítulo.</p>
-  <p><a href="es.html">Inicio</a> · <a href="bible.html">English edition</a> · <a href="https://mistertranslation.com/">mistertranslation.com</a> · <a href="privacy.html">Privacidad</a></p>
+  <p>The MisterLibrarian Bible Project — a fresh translation of the Bible into modern English, made from
+  the original Hebrew and Greek (the Masoretic Text and the critical Greek text) one chapter at a time,
+  with translator's notes comparing every choice against seven landmark versions. Kept by Mr. Librarian.</p>
+  <p><a href="toc.html">Table of Contents</a> · <a href="library.html">Library</a> · <a href="chronology.html">Chronology</a> · <a href="ask/ask.html">Ask Mr. Librarian a question</a> · <a href="about.html">About the project</a> · <a href="feed.xml">RSS</a> · <a href="https://mistertranslation.com/">mistertranslation.com</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="finance/">The Librarian's Ledger</a> · <a href="travel/">The Librarian Abroad</a> · <a href="health/">The Librarian's Regimen</a> · <a href="notebook/">The Librarian's Notebook</a> · <a href="west/">Eight Miles West</a></p>
   <p class="foot-views"><span class="pageviews" id="pgviews"></span></p>
 </footer>
 </div>
