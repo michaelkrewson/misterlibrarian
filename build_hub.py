@@ -218,7 +218,7 @@ def render_og(path=OG_PATH):
     d.rounded_rectangle([34, 34, W - 34, H - 34], radius=26, outline=(92, 84, 54), width=2)
 
     wf = ImageFont.truetype(_FONTS["serif_b"], 74)
-    p1, p2 = "Mister ", "Library"
+    p1, p2 = "Mister ", "Translation"
     w1 = d.textlength(p1, font=wf); w2 = d.textlength(p2, font=wf); sx = W / 2 - (w1 + w2) / 2
     d.text((sx, 205), p1, font=wf, fill=(247, 242, 226), anchor="lm")
     d.text((sx + w1, 205), p2, font=wf, fill=(232, 201, 104), anchor="lm")
