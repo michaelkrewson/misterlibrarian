@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="Left: a bar chart of the rough annual arithmetic. What abolishing income taxes for citizens gives up — about 2.7 trillion dollars of federal individual income tax plus roughly 0.55 trillion of state income tax, about 3.25 trillion in all. What a 90 percent tax on big public companies' profits could raise in the best case, before any company changes its behavior — about 2.3 trillion gross, about 1.85 trillion net of the corporate tax those companies already pay. And after companies react — a faded bar with a question mark, shrinking. Right: the four exits a company would take — pay the profit out as pay, which would now be tax-free; go private; stay under the market-cap line or split up; move the profit abroad — and a strip showing who owns US stock: foreign investors about 42 percent, retirement accounts about 27 percent, taxable accounts about 27 percent.">
+<rect width="900" height="400" fill="#0a0f1a"/>
+<text x="40" y="40" font-family="Georgia, serif" font-size="18" fill="#e8dfd2">Ninety percent of what? <tspan fill="#94a3b8">— rough annual arithmetic, $ trillions</tspan></text>
+<line x1="40" y1="260.3" x2="480" y2="260.3" stroke="rgba(255,255,255,.08)"/>
+<text x="36" y="264.3" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#94a3b8">1</text>
+<line x1="40" y1="190.6" x2="480" y2="190.6" stroke="rgba(255,255,255,.08)"/>
+<text x="36" y="194.6" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#94a3b8">2</text>
+<line x1="40" y1="120.9" x2="480" y2="120.9" stroke="rgba(255,255,255,.08)"/>
+<text x="36" y="124.9" text-anchor="end" font-family="Georgia, serif" font-size="10" fill="#94a3b8">3</text>
+<line x1="40" y1="330" x2="480" y2="330" stroke="rgba(255,255,255,.25)"/>
+<rect x="70" y="141.8" width="100" height="188.2" fill="#7aa2d6" />
+<rect x="70" y="103.5" width="100" height="38.3" fill="#4f6f99" />
+<text x="120.0" y="235.9" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#0a0f1a" font-weight="bold">federal ~2.7</text>
+<text x="120.0" y="125.8" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#e8dfd2">state ~0.55</text>
+<text x="120.0" y="95.5" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#e8dfd2">~3.25</text>
+<rect x="215" y="201.1" width="100" height="128.9" fill="#c9b458" />
+<rect x="215" y="169.7" width="100" height="31.4" fill="rgba(201,180,88,.35)" stroke="#c9b458" stroke-dasharray="3 3"/>
+<text x="265.0" y="265.2" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#0a0f1a" font-weight="bold">net ~1.85</text>
+<text x="265.0" y="189.0" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#e8dfd2">corp tax already paid</text>
+<text x="265.0" y="161.7" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#e8dfd2">~2.3 gross</text>
+<rect x="360" y="267.3" width="100" height="62.7" fill="rgba(224,122,95,.25)" stroke="#e07a5f" stroke-dasharray="4 3"/>
+<text x="410.0" y="308.6" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#e07a5f">?</text>
+<path d="M410.0 211.5 L410.0 256.8" stroke="#e07a5f" stroke-width="2"/>
+<path d="M404.0 248.8 L410.0 256.8 L416.0 248.8" stroke="#e07a5f" stroke-width="2" fill="none"/>
+<text x="120.0" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">Income taxes</text>
+<text x="120.0" y="363" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">given up</text>
+<text x="265.0" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">90% haul, before</text>
+<text x="265.0" y="363" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">anyone reacts</text>
+<text x="410.0" y="348" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">After companies</text>
+<text x="410.0" y="363" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#e8dfd2">react</text>
+<line x1="500" y1="62" x2="500" y2="370" stroke="rgba(255,255,255,.08)"/>
+<text x="520" y="80" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#c9b458">Four exits from a 90% rate</text>
+<circle cx="529" cy="104" r="9" fill="none" stroke="#e07a5f"/>
+<text x="529" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#e07a5f">1</text>
+<text x="548" y="108" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Pay it out as pay</text>
+<text x="548" y="124" font-family="Georgia, serif" font-size="11" fill="#94a3b8">wages would now be tax-free</text>
+<circle cx="529" cy="148" r="9" fill="none" stroke="#e07a5f"/>
+<text x="529" y="152" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#e07a5f">2</text>
+<text x="548" y="152" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Go private</text>
+<text x="548" y="168" font-family="Georgia, serif" font-size="11" fill="#94a3b8">PE-backed US firms: ~1,900 → ~11,200</text>
+<circle cx="529" cy="192" r="9" fill="none" stroke="#e07a5f"/>
+<text x="529" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#e07a5f">3</text>
+<text x="548" y="196" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Stay under the line</text>
+<text x="548" y="212" font-family="Georgia, serif" font-size="11" fill="#94a3b8">or split into smaller pieces</text>
+<circle cx="529" cy="236" r="9" fill="none" stroke="#e07a5f"/>
+<text x="529" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#e07a5f">4</text>
+<text x="548" y="240" font-family="Georgia, serif" font-size="13" fill="#e8dfd2">Book the profit abroad</text>
+<text x="548" y="256" font-family="Georgia, serif" font-size="11" fill="#94a3b8">90% pays for a lot of lawyers</text>
+<text x="520" y="300" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#c9b458">Who owns US stock (end of 2022)</text>
+<rect x="520.0" y="312" width="142.8" height="18" fill="#7aa2d6"/>
+<text x="591.4" y="325" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#0a0f1a" font-weight="bold">foreign 42%</text>
+<rect x="662.8" y="312" width="91.8" height="18" fill="#c9b458"/>
+<text x="708.7" y="325" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#0a0f1a" font-weight="bold">retirement 27%</text>
+<rect x="754.6" y="312" width="91.8" height="18" fill="#94a3b8"/>
+<text x="800.5" y="325" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#0a0f1a" font-weight="bold">taxable 27%</text>
+<rect x="846.4" y="312" width="13.6" height="18" fill="#475569"/>
+<text x="520" y="350" font-family="Georgia, serif" font-size="11" fill="#94a3b8">Tax Policy Center (Rosenthal &amp; Mucciolo, 2024); share of all</text>
+<text x="520" y="364" font-family="Georgia, serif" font-size="11" fill="#94a3b8">outstanding US corporate stock. Remainder: other holders.</text>
+<text x="40" y="388" font-family="Georgia, serif" font-size="10.5" fill="#94a3b8">Sources: CBO (FY2025), Census/Tax Foundation (state), S&amp;P 500 net income, the author's rough arithmetic — see the post.</text>
+</svg>
