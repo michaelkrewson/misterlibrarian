@@ -3862,6 +3862,9 @@ def report_card_budget():
     print(msg)
 
 
+BRACKET_OPEN, BRACKET_CLOSE = chr(0x27E6), chr(0x27E7)   # the critical text's double brackets
+
+
 def build_verse_stubs(book, num, content, lang="en"):
     """Emit one /v/<book>-<ch>-<v>.html share-stub per verse in this chapter, so a
     shared verse link unfurls with THAT verse's text (crawlers ignore #fragments).
@@ -3884,7 +3887,9 @@ def build_verse_stubs(book, num, content, lang="en"):
         vid = m.group(1)
         v = vid.rsplit("-", 1)[-1] if "-" in vid else vid[1:]
         eng = re.sub(r'<a class="notelink".*?</a>', "", m.group(2), flags=re.S)
-        text = _plain(eng)
+        # The critical text's double brackets (Mark 16:9-20) mark where a bracketed
+        # passage opens and closes on the page; they are not part of a shared verse.
+        text = _plain(eng).replace(BRACKET_OPEN, "").replace(BRACKET_CLOSE, "").strip()
         if not text:
             continue
         ref = f"{ES_BOOK.get(book, book) if es else book} {num}:{v}"
