@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Eight Million Accounts and a Basketball Court — The Librarian&#x27;s Ledger</title>
-<meta name="description" content="8.13 million XRP accounts, 793 of them sending 93% of the traffic; a top 10,000 that holds 90% of the coin; and who&#x27;s buying the basketball courts."/>
-<link rel="canonical" href="https://mistertranslation.com/finance/eight-million-accounts-and-a-basketball-court.html"/>
+<title>A Private Room With a Public Door — The Librarian&#x27;s Ledger</title>
+<meta name="description" content="Shielded Bitcoin explained: Zcash-style private transfers with no soft fork, what the mainnet demo proved, and why Lightning still comes first."/>
+<link rel="canonical" href="https://mistertranslation.com/finance/a-private-room-with-a-public-door.html"/>
 <link rel="alternate" type="application/rss+xml" title="The Librarian&#x27;s Ledger" href="feed.xml"/>
 <meta property="og:type" content="article"/>
 <meta property="og:site_name" content="The Librarian&#x27;s Ledger"/>
-<meta property="og:title" content="Eight Million Accounts and a Basketball Court"/>
-<meta property="og:description" content="8.13 million XRP accounts, 793 of them sending 93% of the traffic; a top 10,000 that holds 90% of the coin; and who&#x27;s buying the basketball courts."/>
-<meta property="og:url" content="https://mistertranslation.com/finance/eight-million-accounts-and-a-basketball-court.html"/>
-<meta property="og:image" content="https://mistertranslation.com/finance/img/xrp-rich-list-and-who-actually-uses-it.png"/>
+<meta property="og:title" content="A Private Room With a Public Door"/>
+<meta property="og:description" content="Shielded Bitcoin explained: Zcash-style private transfers with no soft fork, what the mainnet demo proved, and why Lightning still comes first."/>
+<meta property="og:url" content="https://mistertranslation.com/finance/a-private-room-with-a-public-door.html"/>
+<meta property="og:image" content="https://mistertranslation.com/finance/img/shielded-bitcoin-private-room-public-door.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Eight Million Accounts and a Basketball Court"/>
-<meta name="twitter:description" content="8.13 million XRP accounts, 793 of them sending 93% of the traffic; a top 10,000 that holds 90% of the coin; and who&#x27;s buying the basketball courts."/>
-<meta name="twitter:image" content="https://mistertranslation.com/finance/img/xrp-rich-list-and-who-actually-uses-it.png"/>
+<meta name="twitter:title" content="A Private Room With a Public Door"/>
+<meta name="twitter:description" content="Shielded Bitcoin explained: Zcash-style private transfers with no soft fork, what the mainnet demo proved, and why Lightning still comes first."/>
+<meta name="twitter:image" content="https://mistertranslation.com/finance/img/shielded-bitcoin-private-room-public-door.png"/>
 <style>
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -611,271 +611,320 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
 <script src="share.js?v=a8bba5ef16" defer></script>
   
   <article class="entry">
-    <h1 class="etitle">Eight Million Accounts and a Basketball Court</h1>
-    <p class="edate">SEPTEMBER 17, 2026</p>
-    <figure class="hero"><img src="img/xrp-rich-list-and-who-actually-uses-it.svg" alt="Two charts. Top: a stacked bar of who holds the roughly 100 billion XRP, from XRPSCAN&#x27;s rich list on September 17, 2026 — Ripple 39.9 percent, most of it in escrow; six exchanges 18.3 percent; two co-founders 3.8 percent; one unnamed account 1.8 percent; the remaining ten thousand rich-list accounts 25.8 percent; and everyone outside the top ten thousand, about 8.1 million accounts, 10.3 percent. Bottom: a funnel of the same ledger&#x27;s use in August 2026 from Bitquery — 8,138,198 funded accounts, 214,066 that sent any transaction, and 793 accounts that sent 93 percent of all traffic, 767 of them machines." loading="eager"/><figcaption>Top bar from XRPSCAN's balances API, aggregated by the labels it publishes, September 17, 2026. Bottom funnel from Bitquery's XRP Ledger adoption audit, September 2026.</figcaption></figure>
-<p>Four texts since Tuesday is a pace. My friend — the one who has been <a
-href="after-clarity-failed-what-selig-and-atkins-can-still-do.html">feeding this publication all
-week</a> — sent a screenshot tonight of the <a href="https://xrpscan.com/balances" rel="noopener"
-target="_blank">XRPSCAN rich list</a>, a donut chart of who owns XRP, with a caption:
-<em>"What's amazing is that only 8,130,000 XRP accounts exist. Many users hold multiple accounts.
-Less than 1% of 1% of people mathematically own any XRP.. yet XRP always gets tons of attention."</em>
-And a postscript: the University of Louisville is now the third university to put XRP on its
-uniforms or its field.</p>
+    <h1 class="etitle">A Private Room With a Public Door</h1>
+    <p class="edate">SEPTEMBER 25, 2026</p>
+    <figure class="hero"><img src="img/shielded-bitcoin-private-room-public-door.svg" alt="A diagram titled &quot;A private room with a public door.&quot; Three panels, left to right. The door in: you send ordinary bitcoin to a vault address, and everyone can see which address deposited, how much, and when. The private room: coins become encrypted notes; each transfer is a sealed 669-byte envelope riding inside a normal Bitcoin transaction and carrying a 192-byte zero-knowledge proof; the sender, recipient and amount are hidden, while the fact that a transfer happened, its timing and fee, and how many notes went in and out stay visible. The door out: the vault pays you back, and everyone can see which address withdrew, how much, and when. Caption: today both doors are held by one key; the trustless version, PIPEs v2, exists only on paper. Footer: the test transfer was 793 virtual bytes against about 140 for a plain payment, paid a 2,382-satoshi fee, and took 1.89 seconds to prove." loading="eager"/><figcaption>Mechanism from Shikhelman, Komarov and Moskvin, "Shielded Bitcoin: Private Transfers on the Bitcoin L1" ([alloc] init, September 24, 2026); size, fee and proving-time figures from Bitsaga's mainnet test transaction and write-up, September 25, 2026.</figcaption></figure>
+<p>Someone sent me a link today, and on first read I didn't really understand it. In crypto
+that usually means it's either a scam or a research paper. This one is a research paper. The page, from a site called <a
+href="https://bitsaga.be/insights/shielded-bitcoin">Bitsaga</a>, makes a claim that would have
+been a punchline a few years ago: private Bitcoin transfers, with the amount and the recipient
+encrypted, running on Bitcoin as it exists today. <em>"Nothing in Bitcoin's rules changes. No
+soft fork, no vote, no new coin."</em> And there's a receipt: <a
+href="https://mempool.space/tx/5c3a5857e9fe9aa98ccb18e52b1a229fcac542caf4e46b499de8efd4bdec3751">a
+real transaction</a>, confirmed in block 968,533 at 09:40 UTC on September 25, carrying a
+shielded transfer that only its recipient can read.</p>
 
-<p>I like this text more than the others, because it isn't a forwarded headline. It's a number he
-found, a calculation he did, and a puzzle he noticed. All three deserve a straight answer, and the
-answer to the third one is sitting in the chart he sent.</p>
+<p>Both halves of that are true. The same page also calls its own demo <em>"proof of concept,
+insecure by design, not usable today"</em>, and that's true too. So here is the whole thing,
+from the top, in the order it finally made sense to me.</p>
 
-<h2>The Arithmetic First, Because It's the Least Interesting Error</h2>
+<h2>Two Different Groups, One Idea</h2>
 
-<p>The number is real. XRPSCAN counts <strong>8,138,198 funded accounts</strong> on the ledger as of
-this week; my friend rounded it. The world has about 8.2 billion people in it. Divide, and you get
-0.099 percent — roughly <strong>one person in a thousand</strong>. "One percent of one percent" is
-one in ten thousand. He's off by a factor of ten, in the direction that makes his point sound better
-than it is.</p>
+<p>It helps to know there are two parties here, because the headlines blur them. On September
+24, three researchers at a New York cryptography firm called [alloc] init (Clara Shikhelman,
+Mikhail Komarov and Aleksei Moskvin) published <a
+href="https://allocinit.xyz/uploads/shielded-bitcoin.pdf">a 56-page paper called <em>Shielded
+Bitcoin</em></a>. It's a design and a security analysis. Bitsaga, a separate outfit, built the
+transfer half of that design as a <a
+href="https://github.com/bitsagarob/shielded-btc-probe">public test program</a>, rehearsed it
+on a test network, and on September 25 ran it on mainnet with test-sized amounts. The paper is the
+blueprint. Bitsaga put up a shed from it to show the blueprint isn't fiction.</p>
 
-<p>But I'd let that go, because the numerator is wrong in two directions at once, and the ways it's
-wrong are more interesting than the division.</p>
+<h2>The Problem It's Solving</h2>
 
-<h2>An Account Is Not a Person, in Either Direction</h2>
+<p>Bitcoin is a glass ledger. Every payment ever made is public forever: which address paid
+which address, and exactly how much. Addresses don't carry names, but once anyone ties one
+address to you (an exchange withdrawal, an invoice, a donation page), they can often follow
+the money for years.</p>
 
-<p><strong>Direction one: the count is far too low to be "people who own XRP."</strong> Look at the
-screenshot again. Coinbase appears as 347 accounts. UPbit, the Korean exchange, as 13. Binance as 147,
-Bithumb as 3, Uphold as 4, bitbank as 2. Six companies, 516 ledger accounts, <strong>18.3 percent of
-every XRP in existence</strong> — held on behalf of customers who, as far as the ledger knows, do not
-exist. When you buy XRP on Coinbase you don't get an account on the XRP Ledger; you get a row in
-Coinbase's database, and Coinbase's 347 accounts hold 5.8 billion XRP for all of you at once. The
-spot XRP ETFs have taken in about <a
-href="https://cryptobriefing.com/xrp-ledger-490k-new-accounts-first-half-2026/" rel="noopener"
-target="_blank">$1.5 billion</a>; every one of those holders has zero XRPL accounts. So do the people
-holding it on Robinhood, Kraken, eToro and every other custodian. The ledger's account count is a
-count of doors, and most of the people are behind six of them.</p>
+<p>There are partial fixes today, and the paper lists them honestly. CoinJoin mixes many
+people's payments into one transaction so it's harder to say whose coin went where. PayJoin
+breaks some common tracing assumptions. Silent Payments let you publish one reusable address
+without every payment to it being linked. All three make tracing harder. None of them hides
+the <em>amount</em>, and none of them gives you what Zcash has had since 2016: a shielded pool
+where the sender, the recipient and the value are simply not on the public record.</p>
 
-<p>Here's a way to size the gap. Security.org's <a
-href="https://www.security.org/digital-security/cryptocurrency-annual-consumer-report/" rel="noopener"
-target="_blank">2026 consumer survey</a> put U.S. crypto ownership at about 30 percent of adults —
-70 million people — and found 11 percent of those owners hold XRP. Do the multiplication and you get
-something like <strong>7.7 million Americans</strong>. That's a survey of 992 people, so hold it
-loosely, but the order of magnitude is the point: the United States alone may have about as many
-XRP holders as the entire ledger has accounts, and the U.S. isn't even where XRP's big retail base
-is. Korea is — which is why an exchange you've never used, UPbit, holds more XRP than Coinbase.</p>
+<p>Until now, the Bitcoin-native ways to get there all ran through a soft fork, usually new
+opcodes like OP_CAT, which means years of argument and possibly never. The point of this paper
+is to skip that argument entirely.</p>
 
-<p><strong>Direction two: the count is far too high to be "people who use XRP."</strong> Opening an
-XRPL account costs one XRP — about a dollar-thirty at tonight's price — since validators <a
-href="https://harvest.finance/xrp-rich-list" rel="noopener" target="_blank">cut the base reserve from
-10 XRP in December 2024</a>. Cheap accounts get made. Of the 8.14 million, <strong>6.72 million hold
-less than 1,000 XRP</strong>, and the median balance across the whole ledger is <strong>12 XRP</strong>,
-about sixteen dollars. That's not a portfolio; that's the change in a car door. Then there's spam.
-Bitquery's audit of the ledger, published this month, counted a single dust-spam campaign that touched
-<a href="https://bitquery.io/investigations/xrp-ledger-adoption-audit" rel="noopener"
-target="_blank">2.4 million wallets this year</a>, and a phishing run between August 23 and September
-8 that reached 1,280,036 distinct wallets in seventeen days for a total cost of 69.6 XRP — ninety-six
-dollars. Every wallet that received one of those is a "funded account."</p>
+<h2>How It Works, in Plain English</h2>
 
-<p>So the 8.13 million undercounts holders by a lot and overcounts users by a lot, and there is no
-arithmetic you can do on it that lands on "how many people own XRP." My friend's instinct — that
-accounts and people aren't the same thing — was right. He just applied it in one direction.</p>
+<p>Picture a vault with one public door in and one public door out, and a private room in
+between.</p>
 
-<h2>What the Ledger Actually Does All Day</h2>
+<ol>
+  <li><strong>The door in.</strong> You send ordinary bitcoin to a vault address. That payment is
+  a normal Bitcoin transaction, so everyone sees it.</li>
+  <li><strong>Your coins become notes.</strong> Inside, your balance exists as encrypted
+  "notes." Each note is a sealed amount addressed to its owner. Nobody else can read one.</li>
+  <li><strong>Paying someone means mailing an envelope.</strong> To send, your wallet builds a
+  sealed envelope (669 bytes in Bitsaga's test) and posts it inside a perfectly normal Bitcoin
+  transaction, in the OP_RETURN field Bitcoin already allows for attaching data. The envelope
+  holds the new notes, encrypted so only the recipient can open theirs, plus a small
+  mathematical proof.</li>
+  <li><strong>The proof does the trusting.</strong> That proof, 192 bytes, is a zero-knowledge
+  proof. In Bitsaga's words it says the sender <em>"spent notes she owns and created exactly
+  the value she consumed, without saying which notes or what value."</em> It proves you
+  didn't counterfeit anything while revealing nothing about what you actually did.</li>
+  <li><strong>Spent notes get punched, like a coat-check ticket.</strong> Each spend publishes a
+  "nullifier," a code that marks <em>some</em> note as spent without saying which one. If
+  anyone tries to spend the same note twice, the second nullifier matches the first and the
+  transfer is thrown out.</li>
+  <li><strong>The door out.</strong> When you want real bitcoin back, the vault pays you to an
+  ordinary address. Also public.</li>
+</ol>
 
-<p>The Bitquery audit is the most useful document I've read on XRP this year, and it's worth
-quoting its numbers straight, because they are the ones that answer "how many people use this."</p>
+<p>The recipient opens their note with a <em>viewing key</em>. That key has a nice side
+effect: if an accountant needs to see your income, you hand them a viewing key that shows
+what you received, not a list of addresses that shows everything.</p>
 
-<ul>
-  <li>In August 2026, <strong>214,066 accounts</strong> sent at least one transaction. That's 2.6
-  percent of the funded accounts.</li>
-  <li>Of those, <strong>793 accounts — 0.37 percent of senders — sent 93.2 percent of all August
-  traffic</strong>. Bitquery classifies 767 of the 793 as machines: exchanges, bots, spam senders.
-  The top thousand accounts have produced 70 to 90 percent of monthly transactions every month since
-  2013.</li>
-  <li>Over the twelve months to August, 1,568,580 accounts sent at least one <em>payment</em>. Two-thirds
-  of the accounts that arrived last year never came back after their first month.</li>
-  <li>Filter out the spam, and the number of genuinely active accounts in August 2026 — about
-  191,000 — is roughly what it was in <strong>January 2018</strong>.</li>
-</ul>
+<h2>The Clever Part: Bitcoin as a Bulletin Board</h2>
 
-<p>That last line is the one to sit with. The XRP Ledger went live in 2012. It is fourteen years old,
-older than Ethereum, older than every chain that's eaten its lunch. And after a full cycle of
-lawsuits, settlements, ETF approvals, a stablecoin, university sponsorships and this week's <a
-href="reserved-for-future-use.html">AI developer kits</a>, the count of real people doing real things
-on it is back where it was the month after the 2017 bubble popped. My friend's puzzle was "so few
-owners, so much attention." The audit's answer is "so few <em>users</em>, and it's been that way for
-nearly nine years."</p>
+<p>Here's the move that makes it work without a fork. <strong>Bitcoin itself never checks the
+proofs.</strong> To a Bitcoin node, the envelope is just data it carries and ignores. The
+checking happens in software called an <em>indexer</em>, which reads every envelope in block
+order, verifies each proof (about 2.5 milliseconds apiece in the test) and keeps the private
+ledger up to date. If an envelope's proof fails, the transaction still gets mined, and the
+indexer simply doesn't count it.</p>
 
-<p>For scale: Bitcoin's count of addresses with a non-zero balance crossed <a
-href="https://www.fxstreet.com/cryptocurrencies/news/non-zero-btc-addresses-hit-all-time-high-of-40-million-202202280526"
-rel="noopener" target="_blank">40 million back in early 2022</a>, and nobody uses that to argue
-Bitcoin is secretly under-owned, because everybody understands that an address is not a person.
-The same courtesy applies here.</p>
+<p>That sounds fragile until you see the guarantee the paper rests on: the rules are fixed and
+the input is the Bitcoin blockchain, so <em>any</em> two honest indexers replaying the same
+blocks end up with the same private ledger, without talking to each other. Bitcoin supplies
+the ordering and the permanence. The math supplies the validity. It's the same basic trick
+Ordinals and Runes use: meaning is read into data Bitcoin carries but doesn't interpret.
+The difference is that here the thing being tracked is money, and the tracking is encrypted.</p>
 
-<h2>Now Read the Chart He Sent</h2>
+<p>That is also why the design leans on the paper's Zcash lineage so openly. It's Zcash's
+shielded-note architecture (notes, nullifiers, a zero-knowledge proof per transfer), minus
+Zcash's own blockchain. For Zcash that was <a href="same-price-same-coin-count.html">the whole
+pitch against Bitcoin</a>: "Bitcoin, plus privacy." This is an attempt to make the "plus"
+available without leaving.</p>
 
-<p>The donut is the interesting part, and not for the reason it was sent. Here's what it says, in
-order.</p>
+<h2>What the Demo Proved, and What It Didn't</h2>
 
-<p><strong>Ripple, 31 accounts, 39.88 percent.</strong> Four-tenths of every XRP that exists is held
-by the company, and by XRPSCAN's tally 35.7 billion of Ripple's 39.9 billion is in escrow —
-time-locked contracts that release <a
-href="https://beincrypto.com/ripple-unlocks-1-billion-xrp-tokens-escrow-september-2026/"
-rel="noopener" target="_blank">one billion XRP on the first of every month</a>, of which Ripple has
-historically re-locked 600 to 800 million and kept the rest. At tonight's price the part that isn't
-re-locked is somewhere between $260 million and $520 million a month of potential supply from a
-single seller. Other trackers put the escrow at 31 to 32 billion rather than 35.7; the difference is
-how you count the re-locks, and it doesn't change the shape.</p>
-
-<p><strong>Six exchanges, 516 accounts, 18.3 percent.</strong> Customer money, as above.</p>
-
-<p><strong>Two co-founders, 14 accounts, 3.8 percent.</strong> The labels say chrislarsen and
-ahbritto — Chris Larsen, Ripple's co-founder and executive chairman, and Arthur Britto, the
-co-creator of the ledger, who has kept an almost total public silence since. 3.8 billion XRP between two people.</p>
-
-<p><strong>One unlabeled account, 1.8 percent.</strong> Nobody knows. 1.8 billion XRP.</p>
-
-<p><strong>The other roughly 9,970 accounts on the rich list, 25.8 percent.</strong> Everyone who
-holds more than about 240,000 XRP — roughly $310,000 — and isn't one of the above.</p>
-
-<p><strong>Everyone outside the top ten thousand — the other 8.13 million accounts — 10.31 percent.</strong></p>
-
-<p>Read it once more. The 8.13 million accounts my friend was counting own, put together, a tenth of
-the coin. The top ten thousand accounts own the other nine-tenths, and one company owns four-tenths
-by itself. That is the actually amazing statistic in the screenshot, and it was there the whole
-time.</p>
-
-<h2>The Attention, and Who's Buying It</h2>
-
-<p>Which brings us to the puzzle. Why does a coin with this few real users get "tons of attention"?</p>
-
-<p>Because the largest holder is a company, and the company buys the attention. The <a
-href="https://www2.kusports.com/sports/college/general/2026/jul/08/ku-athletics-announces-jersey-patch-deal-with-cryptocurrency-company-ripple/"
-rel="noopener" target="_blank">University of Kansas announced on July 8</a> that an XRP patch would
-go on every uniform in its athletic department, multi-year, terms undisclosed — Ripple called it "the
-first-ever crypto sponsorship of a major college athletics program." The <a
-href="https://floridagators.com/news/2026/9/4/football-florida-athletics-debuts-xrp-cryptocurrency-logo-at-ben-hill-griffin-stadium"
-rel="noopener" target="_blank">University of Florida followed on September 4</a> with the XRP logo
-painted on the field at Ben Hill Griffin Stadium, a deal reported at about $5 million a year. And on
-<a href="https://www.learfield.com/2026/09/louisville-athletics-announces-strategic-brand-partnership-with-ripple-bringing-xrp-cryptocurrency-to-louisville-basketball/"
-rel="noopener" target="_blank">September 15 Louisville announced</a> that two XRP logos would become
-a permanent fixture on Denny Crum Court — in the two spots at midcourt where the late Hall of Fame
-coach's signature used to be. The signature isn't gone; it's been moved inside the three-point lines,
-closer to the baselines, to make room. So my friend is right: Louisville is the third. Uniforms,
-field, court — Ripple has now bought each of the three surfaces a camera points at.</p>
-
-<p>None of this is sinister, and I want to be careful not to write it as if it were. If you owned 40
-percent of a thing, you'd put its logo at midcourt too; that's just what a marketing budget is for,
-and Ripple has funded university blockchain research since 2018 on top of the sports deals. But it
-flips the inference in the text. The attention isn't evidence of an adoption wave the account count
-hasn't caught up with. The attention is a line item, paid for by the holder of the 40 percent, out of
-a treasury that unlocks a billion of its own coins every month. Bitcoin's marketing budget is zero, which
-is why its logo isn't on anybody's court — and also why nobody has to wonder who's paying for it.</p>
-
-<p>Put the two halves together and the text reads differently. Few people own XRP directly:
-true, but the same is true of every coin, and the ledger count can't tell you how few. Few people
-<em>use</em> it: true, and stable since 2018. Lots of attention: true, and purchased. The mystery
-isn't a mystery. It's a business model.</p>
-
-<h2>What I'll Be Watching</h2>
+<p>It proved the private room works on real Bitcoin, today, with no one's permission. It also
+came with three problems, which Bitsaga lists itself rather than leaving you to find them:</p>
 
 <ul>
-  <li><strong>The monthly senders number.</strong> 214,066 in August, per Bitquery. If Ripple's
-  developer kits and stablecoin ever bring real users, this is the line that moves — not the funded
-  count, which a $96 phishing campaign can move by a million.</li>
-  <li><strong>Ripple's slice of the bar.</strong> 39.88 percent tonight. Every month's unlock that
-  isn't re-locked shrinks it a little; a company that still holds 40 percent after nearly nine years of
-  selling has a long runway.</li>
-  <li><strong>Louisville's terms.</strong> Kansas and Louisville are undisclosed; Florida leaked at
-  $5 million a year. If the other two surface, I'll have a number for what a season of attention
-  costs.</li>
-  <li><strong>The fourth school.</strong> There will be one. Three in ten weeks is a program, not a
-  coincidence.</li>
+  <li><strong>The vault is one company holding one key.</strong> <em>"Coins enter by paying a
+  vault we control... That is a custodian, not a bridge."</em> The shielded ledger may be
+  trustless, but the actual bitcoin is sitting in someone's wallet, and getting it back out
+  means that someone pays you.</li>
+  <li><strong>The lock's combination is public.</strong> This kind of proof system (Groth16,
+  the same one Zcash used for years) needs a one-time setup that produces a secret, which must
+  then be destroyed. In the test, that secret is generated from a published seed, so
+  <em>"anyone could forge a proof and empty the vault."</em> That's deliberate for a demo, and
+  the fix is known: a proper setup ceremony, or a newer proof system that needs no secret at
+  all, which is the road Zcash itself took in 2022.</li>
+  <li><strong>Proving is slow.</strong> About two seconds per proof on a sixteen-thread server,
+  nine on a single thread. Fine for a server, rough for a phone.</li>
 </ul>
+
+<p>And it's heavy. A plain Bitcoin payment is about 140 virtual bytes. The shielded transfer
+was 793, most of it the envelope, for a 2,382-satoshi fee at a quiet three sats per byte. On a
+busy fee day, every private payment costs five-and-a-half times a normal one. The envelope
+also only relays because Bitcoin Core raised its default OP_RETURN size limit in version 30,
+the change that had Bitcoin developers at each other's throats last year. The paper itself
+flags the risk that relay or mining policy tightens again around large data outputs.</p>
+
+<h2>Privacy Is the Size of the Crowd</h2>
+
+<p>This is the part that matters more than any of the cryptography, and both documents say it
+plainly. Bitsaga: <em>"with two depositors the link is obvious."</em> If Alice puts in 0.37
+BTC on Tuesday and Bob takes out 0.37 BTC on Wednesday, the encryption in between is
+decoration. The paper goes further: in the worst case the set of people you could be
+<em>"may collapse to a singleton."</em></p>
+
+<p>Encrypted notes don't make you anonymous. <em>Other people's</em> notes make you anonymous.
+Zcash learned this the hard way. A 2018 study, <a
+href="https://www.usenix.org/conference/usenixsecurity18/presentation/kappos">"An Empirical
+Analysis of Anonymity in Zcash"</a>, found that most of what flowed through its shielded pool
+could be linked anyway, because so few people used the pool and the ones who did moved money
+in and out in recognizable patterns. And even a full pool can't hide what the paper lists as
+public: when you transacted, how many notes went in and out, and which wallet paid the fee.</p>
+
+<h2>Could a Decentralized Escrow Replace the One Key?</h2>
+
+<p>This was my first instinct too: keep the private room, but hand the door to a group instead
+of one company, so no single party can run off with the coins. It's a good instinct, and the
+paper already lists it as a possible design: <em>"Federated or multisignature custody,
+BitVM-style bridges, and future covenant- or vault-based constructions remain useful
+comparison points, but the intended architecture is PIPE-based."</em> Here's how the options
+compare.</p>
+
+<div class="tw"><table class="cmp">
+<thead><tr><th>Who holds the door</th><th>Who you're trusting</th><th>Exists today?</th><th>The catch</th></tr></thead>
+<tbody>
+<tr><td><strong>One key</strong> (the demo)</td><td>One company</td><td>Yes</td><td>A custodian, by its own description</td></tr>
+<tr><td><strong>A federation</strong> (say 11 of 15 signers)</td><td>That most of a named group stays honest and reachable</td><td>Yes, as a pattern: Liquid and Fedimint work this way</td><td>Named people holding the bitcoin behind a privacy pool</td></tr>
+<tr><td><strong>A BitVM-style bridge</strong></td><td>That at least one watcher is honest and online to challenge a bad withdrawal</td><td>Early versions, on other projects</td><td>Complex; operators front the money and withdrawals wait out a challenge window</td></tr>
+<tr><td><strong>PIPEs v2</strong></td><td>Only the math</td><td>No, <a href="https://eprint.iacr.org/2026/186">paper only</a></td><td>Rests on witness encryption, which nobody has made practical yet</td></tr>
+</tbody>
+</table></div>
+
+<p>The federation is the one you could build this year, and it would be a real improvement:
+one rogue signer can't steal anything. Something very close already exists. Fedimint is a
+federation of "guardians" holding bitcoin in multisig and issuing private ecash against it.
+The difference is where the ledger lives. In Fedimint the federation runs the private ledger
+itself. In Shielded Bitcoin the ledger lives on Bitcoin and anyone can rebuild it, and the
+federation would only guard the door.</p>
+
+<p>But a federation has two problems, and I've already watched the first one happen. On
+September 6, <a href="liquid-network-peg-drain.html">roughly four thousand bitcoin walked out
+of Liquid's federation reserve</a> in one afternoon. The leading theory when I wrote about it,
+from developers who know that codebase, was a bug in the math that checks Liquid's hidden
+amounts, and the eleven-of-fifteen signers approved the withdrawal because it looked perfectly
+normal. A federation can only refuse what it can see, and a door-keeper for a shielded pool
+sees even less, because hiding amounts is the entire point. If a proof can be forged (and in
+the demo, remember, the setup secret is public), the signers will cheerfully approve a
+withdrawal that looks flawless. Decentralizing the keyholders doesn't help if the thing they're
+all checking is broken.</p>
+
+<p>The second problem isn't technical at all. It's legal. The prosecutions that hit Bitcoin privacy tools in
+the last two years turned on the charge of running an unlicensed money-transmitting business.
+Samourai Wallet's developers pleaded guilty to it, and one was <a
+href="https://www.coindesk.com/policy/2025/11/06/samourai-wallet-developer-sentenced-to-5-years-in-prison-for-unlicensed-money-transmitting">sentenced
+to five years</a> last November. Tornado Cash's Roman Storm was <a
+href="https://www.bankinfosecurity.com/cryptohack-roundup-verdict-in-tornado-cash-founders-case-a-29144">convicted
+on that count</a> in August 2025. The line those cases keep drawing is <em>custody</em>. A
+federation holding the bitcoin behind a shielded pool is a named group of people holding a
+mixer's money, and that's exactly the shape those cases were about. It doesn't matter how
+decentralized the signing is if every signer can be subpoenaed.</p>
+
+<p>So a decentralized escrow makes this <em>safer</em> but not <em>viable</em>, in the sense of
+something a normal person should put savings into. That's why the authors are betting on
+PIPEs v2. The idea: lock the vault's key inside a kind of encryption that only opens for
+someone holding a valid proof, so the coins move when the math says so and nobody ever holds
+them. If it works, there's no custodian to charge. It's elegant, it would give Bitcoin
+covenant-like powers with no soft fork, and as of today it's a research paper that no one has
+built.</p>
+
+<h2>Would I Build This, or Just Keep Building on Lightning?</h2>
+
+<div class="verdict">
+<p><strong>For a normal person, tomorrow: Lightning, without much hesitation.</strong> It's
+already live, already cheap, already instant, and its payments are private in a way the base
+chain isn't. They're routed through encrypted hops and never written to the blockchain one by
+one. Its weak spots are known and being worked on: opening and closing a channel is public, the
+service providers most phone wallets lean on can see a lot, and a normal invoice still points
+at the receiver's node, which newer invoice formats with "blinded paths" are fixing. Pair it
+with an ecash mint or a Fedimint and you get strong spending privacy today, as long as you
+trust the mint the way you'd trust a bank with pocket money.</p>
+
+<p><strong>But they aren't competing for the same job.</strong> Lightning protects
+<em>spending</em>. It does nothing for the balance sitting in cold storage, or for large
+amounts that belong on-chain, and that's precisely the job a shielded pool does. As I wrote
+when <a href="lightning-in-a-jar-review.html">reading a friend's Lightning wallet</a>, a
+Lightning wallet is a wallet, not a vault. A working shielded pool would be the vault.</p>
+
+<p><strong>So: spend engineering on Lightning now, and watch this.</strong> The milestones
+that would change my mind, in order: a real setup ceremony or a setup-free proof system, a
+peg-out that doesn't depend on one key, and a pool with enough users that "private" is true
+in practice and not only in the math. The first is routine. The second is the whole ballgame.
+The third can't be built, only earned.</p>
+</div>
+
+<p>What I actually find exciting here isn't the demo. It's that someone spelled out, in 56
+pages of honest analysis, how much of Zcash's privacy Bitcoin can get without changing a single
+rule. The answer turns out to be all of the private room. The door is the part nobody has
+figured out yet.</p>
 
 <h2>Where I Could Be Wrong</h2>
 
 <ul>
-  <li><strong>The account count itself depends on who's counting.</strong> XRPSCAN's 8,138,198 is
-  funded accounts this week. Bitquery counts 8,972,159 accounts <em>ever created</em> — the gap is
-  accounts that were deleted and their reserves reclaimed, which the ledger allows. A July report put
-  the total at 8.4 million using yet another method. My friend's figure matches XRPSCAN's, so that's
-  the one I used.</li>
-  <li><strong>The 7.7 million Americans</strong> comes from a 992-person survey multiplied out; the
-  confidence interval on an 11 percent subgroup of that is wide. I'm using it for order of magnitude,
-  not as a count.</li>
-  <li><strong>"767 of 793 are machines"</strong> is Bitquery's classification, and classifying an
-  account as a bot is a judgment call made from its behavior. The broad shape — a few hundred accounts
-  sending nearly everything — doesn't depend on where the line is drawn.</li>
-  <li><strong>The escrow figure.</strong> XRPSCAN's per-account escrow sums to 35.7 billion; trackers
-  that read the escrow objects directly report 31 to 32 billion after the September 1 release. I've
-  given both. The "$260 to $520 million a month" is what the historically un-relocked portion is worth
-  at $1.30, not a claim about what Ripple actually sells — its sales are disclosed quarterly and vary.</li>
-  <li><strong>"Paid for out of a treasury that receives a billion coins a month"</strong> is my
-  inference about where a sponsorship budget comes from, not a disclosed fact. Ripple has other
-  revenue — it bought a $1 billion treasury-software company last year — and none of the three
-  schools has said what it was paid in.</li>
-  <li><strong>Some of the attention is organic.</strong> The XRP community is real, loud, and older
-  than most; the $1.5 billion that went into the ETFs came from actual people. I'm arguing the
-  sponsorships explain the attention my friend was puzzled by, not that nobody would care without
-  them.</li>
-  <li><strong>I hold no XRP</strong> and no Ripple stock, which isn't public anyway. My own book is
-  Bitcoin through an ETF and Strategy Inc. I have no opinion on the price; this is a note about what
-  a chart says, and none of it is investment advice.</li>
+  <li><strong>I read the paper and Bitsaga's write-up; I didn't run the code.</strong> The
+  size, fee and speed figures are Bitsaga's own from one test transfer, and the transaction
+  itself checks out on the public chain (793 virtual bytes, 2,382 satoshis, one data output).
+  One test isn't a benchmark.</li>
+  <li><strong>PIPEs v2 could arrive faster than I'm implying.</strong> Witness encryption has
+  gone from "theoretical" to "has a concrete candidate scheme" quickly, and the v2 paper alone
+  has ten authors. Press coverage has quoted storage requirements in the hundreds of terabytes
+  for the current version against a target of around 100 gigabytes. I haven't checked those
+  figures myself, and a gap like that can close suddenly or not at all.</li>
+  <li><strong>The legal picture is moving.</strong> US prosecutors have signaled since 2025
+  that writing genuinely non-custodial software isn't by itself the target, and the Tornado
+  Cash case still has post-trial and appeal steps that could change what it stands for. How
+  any of that applies to a federation holding a shielded pool's bitcoin hasn't been tested, and
+  I'm not a lawyer. Treat my custody point as a reading of the pattern, not legal advice.</li>
+  <li><strong>I'm describing Lightning's privacy in broad strokes.</strong> How private a given
+  Lightning payment is depends heavily on the wallet, the service provider and the invoice
+  format, and some popular wallets are simply custodial accounts with a Lightning front end.</li>
+  <li><strong>I hold bitcoin, so I'd like it to get more private.</strong> That's a bias worth
+  naming. None of this is investment advice. It's one person's reading of a new paper and a
+  day-old demo.</li>
 </ul>
 
-    <div class="tags"><a class="tg" href="tag-xrp.html">xrp</a><a class="tg" href="tag-ripple.html">ripple</a><a class="tg" href="tag-xrp-ledger.html">xrp ledger</a><a class="tg" href="tag-rich-list.html">rich list</a><a class="tg" href="tag-crypto-adoption.html">crypto adoption</a><a class="tg" href="tag-on-chain-data.html">on-chain data</a><a class="tg" href="tag-college-sports.html">college sports</a><a class="tg" href="tag-sponsorship.html">sponsorship</a><a class="tg" href="tag-escrow.html">escrow</a><a class="tg" href="tag-bitquery.html">bitquery</a><a class="tg" href="tag-xrpscan.html">xrpscan</a></div>
+    <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-privacy.html">privacy</a><a class="tg" href="tag-shielded-bitcoin.html">shielded bitcoin</a><a class="tg" href="tag-zero-knowledge-proofs.html">zero knowledge proofs</a><a class="tg" href="tag-zcash.html">zcash</a><a class="tg" href="tag-pipes.html">pipes</a><a class="tg" href="tag-alloc-init.html">alloc init</a><a class="tg" href="tag-lightning.html">lightning</a><a class="tg" href="tag-fedimint.html">fedimint</a><a class="tg" href="tag-bridges.html">bridges</a><a class="tg" href="tag-custody.html">custody</a><a class="tg" href="tag-op-return.html">op_return</a></div>
   </article>
   <aside class="subbox"><p class="sb-k">Free email list</p><p class="sb-t">Get new Ledger entries by email</p><p class="sb-s">No spam, no fixed schedule — just an email when something new goes up.</p><a class="respond-btn respond-btn-primary sb-btn subscribe-trigger" href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a></aside>
-
-  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20Eight%20Million%20Accounts%20and%20a%20Basketball%20Court%3A%0A%0Ahttps%3A//mistertranslation.com/finance/eight-million-accounts-and-a-basketball-court.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/eight-million-accounts-and-a-basketball-court.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
+  <aside class="boardpromo">
+    <a href="bitcoin.html">
+      <span class="bp-k">Standing board</span>
+      <span class="bp-t">The Bitcoin Board →</span>
+      <span class="bp-s">Bitcoin’s own numbers, live — block height, coins issued, difficulty, hash rate, the mempool, fees and the next halving.</span>
+    </a>
+  </aside>
+  <div class="respond"><div class="respond-actions"><a class="respond-btn respond-btn-primary" href="https://x.com/intent/tweet?text=Commenting%20on%20A%20Private%20Room%20With%20a%20Public%20Door%3A%0A%0Ahttps%3A//mistertranslation.com/finance/a-private-room-with-a-public-door.html%0A%0A%40Mr__Librarian" target="_blank" rel="noopener">💬 Comment on X</a><a class="respond-btn respond-btn-secondary" href="https://x.com/search?q=%22https%3A//mistertranslation.com/finance/a-private-room-with-a-public-door.html%22&f=live" target="_blank" rel="noopener">🔍 See what others said</a></div></div>
   <section class="readnext">
     <h2>Keep reading</h2>
     <div class="tilegrid">
-    <a class="tile" href="reserved-for-future-use.html" data-search="reserved for future use ripple&#x27;s three ai announcements, the 1997 error code behind &quot;xrp joins stripe&#x27;s standard,&quot; stripe&#x27;s stellar stake, and who really leads on crypto rules." data-tags="xrp ripple artificial-intelligence ai agentic-payments stripe tempo stablecoins crypto-regulation south-korea japan russia mica genius-act">
-      <span class="tile-media"><img src="img/http-402-reserved-for-future-use.svg" alt="" loading="lazy"/></span>
+    <a class="tile" href="same-price-same-coin-count.html" data-search="same price, same coin count zcash at $1,200 really is bitcoin at $1,200 in market-cap terms. why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where zec actually goes." data-tags="zcash bitcoin privacy-coins altcoins grayscale zcsh etf 2017 market-cap monetary-premium monero mica crypto-regulation">
+      <span class="tile-media"><img src="img/zcash-same-price-same-coin-count.svg" alt="" loading="lazy"/></span>
       <span class="tile-body">
         <span class="ec-d">SEPTEMBER 17, 2026</span>
-        <span class="ec-t">Reserved for Future Use</span>
-        <span class="ec-s">Ripple&#x27;s three AI announcements, the 1997 error code behind &quot;XRP joins Stripe&#x27;s standard,&quot; Stripe&#x27;s Stellar stake, and who really leads on crypto rules.</span>
+        <span class="ec-t">Same Price, Same Coin Count</span>
+        <span class="ec-s">Zcash at $1,200 really is Bitcoin at $1,200 in market-cap terms. Why the arithmetic holds, why &quot;study 2017&quot; doesn&#x27;t follow, and where ZEC actually goes.</span>
       </span>
     </a>
-    <a class="tile" href="what-a-57-billion-chart-is-actually-counting.html" data-search="what a $57 billion chart is actually counting a friend&#x27;s texts cited a $57b rwa chart, crypto etf percentages, a flare/xrp rumor and an hbar bet. here&#x27;s what each claim actually checks out to." data-tags="tokenization real-world-assets market-cap crypto-etfs xrp hedera hbar flare-network fully-diluted-valuation ripple dtcc">
-      <span class="tile-media"><img src="img/nyse-trading-floor-1963.jpg" alt="" width="1600" height="1059" loading="lazy"/></span>
+    <a class="tile" href="lightning-in-a-jar-review.html" data-search="a jar is not a vault: reading my friend&#x27;s lightning wallet before i recommend it a friend of mine spent six months building a self-custodial lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit." data-tags="bitcoin self-custody lightning wallet open-source security ldk lsp lightning-in-a-jar lijox seed-phrase notes">
+      <span class="tile-media"><img src="img/lightning-in-a-jar-icon.png" alt="" width="512" height="512" loading="lazy"/></span>
       <span class="tile-body">
-        <span class="ec-d">SEPTEMBER 16, 2026</span>
-        <span class="ec-t">What a $57 Billion Chart Is Actually Counting</span>
-        <span class="ec-s">A friend&#x27;s texts cited a $57B RWA chart, crypto ETF percentages, a Flare/XRP rumor and an HBAR bet. Here&#x27;s what each claim actually checks out to.</span>
+        <span class="ec-d">SEPTEMBER 10, 2026</span>
+        <span class="ec-t">A Jar Is Not a Vault: Reading My Friend&#x27;s Lightning Wallet Before I Recommend It</span>
+        <span class="ec-s">A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he&#x27;d be the first to tell you it has no audit.</span>
       </span>
     </a>
-    <a class="tile" href="xrp-basel-and-the-1250-percent-number.html" data-search="xrp, basel, and the 1,250 percent number a video claims the newest basel paper&#x27;s many xrp mentions mean bis is adopting it. the paper is real — here&#x27;s what it says, and the number the video skips." data-tags="xrp ripple cryptocurrency bis basel-committee bank-regulation tokenization misinformation">
-      <span class="tile-media"><img src="img/bruegel-blind-leading-blind-1568.jpg" alt="" width="1600" height="888" loading="lazy"/></span>
+    <a class="tile" href="alby-hub-vulnerability.html" data-search="&quot;not your keys, not your coins&quot; just grew a second half alby disclosed a critical flaw in alby hub, its self-hosted lightning node software, that could let an attacker who reaches an exposed control panel send…" data-tags="bitcoin self-custody lightning node security vulnerability alby open-source notes">
       <span class="tile-body">
-        <span class="ec-d">SEPTEMBER 16, 2026</span>
-        <span class="ec-t">XRP, Basel, and the 1,250 Percent Number</span>
-        <span class="ec-s">A video claims the newest Basel paper&#x27;s many XRP mentions mean BIS is adopting it. The paper is real — here&#x27;s what it says, and the number the video skips.</span>
+        <span class="ec-d">SEPTEMBER 9, 2026</span>
+        <span class="ec-t">&quot;Not Your Keys, Not Your Coins&quot; Just Grew a Second Half</span>
+        <span class="ec-s">Alby disclosed a critical flaw in Alby Hub, its self-hosted Lightning node software, that could let an attacker who reaches an exposed control panel send…</span>
       </span>
     </a>
-    <a class="tile" href="a-private-room-with-a-public-door.html" data-search="a private room with a public door shielded bitcoin explained: zcash-style private transfers with no soft fork, what the mainnet demo proved, and why lightning still comes first." data-tags="bitcoin privacy shielded-bitcoin zero-knowledge-proofs zcash pipes alloc-init lightning fedimint bridges custody op-return">
-      <span class="tile-media"><img src="img/shielded-bitcoin-private-room-public-door.svg" alt="" loading="lazy"/></span>
+    <a class="tile" href="seventeen-billion-reasons-theyre-still-not-in.html" data-search="seventeen billion reasons they&#x27;re still not in strategy inc&#x27;s latest bitcoin buy, its 4th s&amp;p 500 rejection over a $17.44b gaap loss, its b- credit rating, and why mnav fell below 1 in 2026." data-tags="strategy-inc mstr michael-saylor bitcoin mnav s-p-500 gaap-accounting credit-rating preferred-stock arbitrageur">
+      <span class="tile-media"><img src="img/strategy-same-line-opposite-sign.svg" alt="" loading="lazy"/></span>
       <span class="tile-body">
-        <span class="ec-d">SEPTEMBER 25, 2026</span>
-        <span class="ec-t">A Private Room With a Public Door</span>
-        <span class="ec-s">Shielded Bitcoin explained: Zcash-style private transfers with no soft fork, what the mainnet demo proved, and why Lightning still comes first.</span>
+        <span class="ec-d">SEPTEMBER 22, 2026</span>
+        <span class="ec-t">Seventeen Billion Reasons They&#x27;re Still Not In</span>
+        <span class="ec-s">Strategy Inc&#x27;s latest bitcoin buy, its 4th S&amp;P 500 rejection over a $17.44B GAAP loss, its B- credit rating, and why mNAV fell below 1 in 2026.</span>
       </span>
     </a>
     </div>
   </section>
   <p class="backlink"><a href="index.html">← Back to the Ledger</a></p>
-<footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-eight-million-accounts-and-a-basketball-court-html">👁 <span id="hits-finance-eight-million-accounts-and-a-basketball-court-html-n">—</span> views</span>
+<footer>The Librarian&#x27;s Ledger · <a href="board.html">The Asset Board</a> · <a href="bitcoin.html">The Bitcoin Board</a> · <a href="treasuries.html">Bitcoin Treasuries</a> · <a href="crypto.html">The Crypto Heat Map</a> · <a href="crypto-screener.html">The Crypto Screener</a> · <a href="humanity.html">Bitcoin vs. Humanity</a> · <a href="money-worldwide.html">Money Worldwide</a> · <a href="tags.html">All tags</a> · <a href="ask.html">Ask a question</a> · <a href="feed.xml">RSS</a> · <a href="https://misterlibrarian.substack.com/subscribe" target="_blank" rel="noopener" class="subscribe-trigger">Subscribe by email</a> · <a href="https://mistertranslation.com/travel/">The Librarian Abroad</a> · <a href="https://mistertranslation.com/health/">The Librarian&#x27;s Regimen</a> · <a href="https://mistertranslation.com/notebook/">The Librarian&#x27;s Notebook</a> · <a href="https://mistertranslation.com/bible.html">Mr. Librarian&#x27;s Bible</a> · <a href="https://mistertranslation.com/west/">Eight Miles West</a> · nothing here is investment advice · <span class="hits" id="hits-finance-a-private-room-with-a-public-door-html">👁 <span id="hits-finance-a-private-room-with-a-public-door-html-n">—</span> views</span>
 <script>
 (function(){
-  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Feight-million-accounts-and-a-basketball-court.html.json")
+  fetch("https://mistertranslation.goatcounter.com/counter/%2Ffinance%2Fa-private-room-with-a-public-door.html.json")
     .then(function(r){ return r.json(); })
     .then(function(d){
-      var n = document.getElementById("hits-finance-eight-million-accounts-and-a-basketball-court-html-n");
+      var n = document.getElementById("hits-finance-a-private-room-with-a-public-door-html-n");
       if (n && d && d.count) n.textContent = d.count;
-      else { var el = document.getElementById("hits-finance-eight-million-accounts-and-a-basketball-court-html"); if (el) el.style.display = "none"; }
+      else { var el = document.getElementById("hits-finance-a-private-room-with-a-public-door-html"); if (el) el.style.display = "none"; }
     })
     .catch(function(){
-      var el = document.getElementById("hits-finance-eight-million-accounts-and-a-basketball-court-html"); if (el) el.style.display = "none";
+      var el = document.getElementById("hits-finance-a-private-room-with-a-public-door-html"); if (el) el.style.display = "none";
     });
 })();
 </script><p class="legal">© 2026 The Librarian&#x27;s Ledger. Nothing on this site is financial, legal, or investment advice, and no reply from Mr. Librarian is either. This site is measurement, not a recommendation — nothing here is a recommendation to buy or sell any security. Figures are drawn from public sources, are not audited, and are not warranted to be accurate or complete — do your own research before relying on anything here. No company, fund, or government named on this site has endorsed it or is affiliated with it. As an Amazon Associate I earn from qualifying purchases. <a href="https://mistertranslation.com/privacy.html">Privacy policy</a>.</p></footer><div class="submodal" id="submodal" hidden role="dialog" aria-modal="true"
