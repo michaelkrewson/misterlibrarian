@@ -382,7 +382,7 @@ DICTIONARY = [
     ["paroxysmos", "paroxysmos", "παροξυσμός", "paroxysmos", "A SHARPENING, a sharp provoking — para- ('alongside') + oxynō ('to sharpen'), the direct ancestor of English 'paroxysm.' In secular Greek it named the whetting of a blade or the goading of an animal; the New Testament uses it exactly twice, in two very different registers. Here it is the blunt word Luke reaches for when Paul and Barnabas — having just won the Jerusalem council's argument for Gentile freedom together — split over John Mark days later: no softer word offered in its place. At Hebrews 10:24 (not yet on these pages) the same root turns constructive: believers are to 'consider one another so as to provoke to love and good works' — the identical sharpening, aimed at encouragement instead of division.", ["Acts", 15, 39]],
     ["kleros", "klēros", "κλῆρος", "klēros", "A LOT — first the pebble or marked stone that is cast, then the share it assigns you, then the inheritance you hold; the Greek Bible's standing rendering of the Hebrew goral. Acts 1 uses it both ways within ten verses: Judas 'was allotted his share (klēros) in this ministry' (v17), and the lot (klēros) falls on Matthias (v26) — the LAST casting of lots anywhere in the Bible. Its English afterlife is odd and exact: through Latin clericus it is the root of CLERGY, a word for the ordained that began as a word for a dice-throw.", ["Acts", 1, 26]],
     ["episkope", "episkopē", "ἐπισκοπή", "episkopē", "An OVERSEER'S POST — the office of one who watches over; from episkopos, 'overseer', which travelled through Latin into Old English and emerged as BISHOP. Peter applies Psalm 109:8 to the vacancy Judas left: 'let another take his episkopē'. KJV says the later word out loud — 'his bishoprick let another take' — a fair rendering of the term and, at the same time, an anachronism, since no such office exists in that room. The same noun elsewhere means a divine 'visitation' (Luke 19:44).", ["Acts", 1, 20]],
-    ["analambano", "analambanō", "ἀναλαμβάνω", "analambanō", "To TAKE UP, lift up and receive — the verb Acts uses four times in one chapter for the ascension (1:2, 1:11, 1:22), always in the passive: he was taken up. It is the word the Greek Old Testament uses of ELIJAH, taken up in the whirlwind while Elisha watched and then received a double portion of his spirit (2 Kings 2:9-11), and it is picked up in the hymn fragment of 1 Timothy 3:16, 'taken up in glory'. Luke's second volume opens with the Elijah pattern in the frame: the master goes up, and the successors receive the Spirit.", ["Acts", 1, 9]],
+    ["analambano", "analambanō", "ἀναλαμβάνω", "analambanō", "To TAKE UP, lift up and receive — the verb Acts uses three times in one chapter for the ascension (1:2, 1:11, 1:22), always in the passive: he was taken up. The longer ending of Mark uses it too: 'he was taken up into heaven and sat down at the right hand of God' (Mark 16:19). It is the word the Greek Old Testament uses of ELIJAH, taken up in the whirlwind while Elisha watched and then received a double portion of his spirit (2 Kings 2:9-11), and it is picked up in the hymn fragment of 1 Timothy 3:16, 'taken up in glory'. Luke's second volume opens with the Elijah pattern in the frame: the master goes up, and the successors receive the Spirit.", ["Acts", 1, 9]],
     ("adam", "adam", "אָדָם", "adam",
      "Humankind / the human; a personal name only later. Puns on adamah, 'ground' — the groundling from the ground.", (2, 7)),
     ("adamah", "adamah", "אֲדָמָה", "adamah",
@@ -1812,11 +1812,11 @@ DICTIONARY = [
     ("sindon", "sindōn", "σινδών", "sindōn",
      "A LINEN CLOTH — fine linen, a sheet or wrap rather than a tailored garment. ⚠ It occurs in five verses of the New Testament, and they fall into two scenes: the young man at Jesus's arrest who runs away naked and leaves his sindōn in the hands that grabbed him (Mark 14:51, 52), and the burial, where Joseph of Arimathea wraps the body in one (Matthew 27:59; Luke 23:53; Mark 15:46). Mark alone has both scenes, a chapter apart, so in his Gospel the same word is worn by a man who escapes and wound round the one who did not. Whether Mark meant the two to be read together he does not say.", ('Mark', 14, 51)),
     ("neaniskos", "neaniskos", "νεανίσκος", "neaniskos",
-     "A YOUNG MAN — the ordinary word for a youth or a man in his prime, from neos, 'new, young'. ⚠ Mark uses it for only two figures, and both appear from nowhere: the young man in a linen cloth who follows Jesus after everyone else has fled and escapes naked (14:51), and the young man in a white robe the women find sitting inside the empty tomb (16:5, not yet on these pages). Neither is named. In Matthew it is the rich young man (19:20, 22). Interpreters have connected Mark's two young men in almost every possible way, and have also declined to connect them at all; the text supplies the word twice and stops.", ('Mark', 14, 51)),
+     "A YOUNG MAN — the ordinary word for a youth or a man in his prime, from neos, 'new, young'. ⚠ Mark uses it for only two figures, and both appear from nowhere: the young man in a linen cloth who follows Jesus after everyone else has fled and escapes naked (14:51), and the young man in a white robe the women find sitting inside the empty tomb (16:5). Neither is named. In Matthew it is the rich young man (19:20, 22). Interpreters have connected Mark's two young men in almost every possible way, and have also declined to connect them at all; the text supplies the word twice and stops.", ('Mark', 14, 51)),
     ("eulogetos", "eulogētos", "εὐλογητός", "eulogētos",
      "BLESSED — the adjective of praise, 'blessed be…', the Greek of the Hebrew barukh. ⚠ It stands in eight verses of the New Testament, and in seven of them it does what it does in a Jewish blessing, praising God inside a sentence ('Blessed be the God and Father of our Lord Jesus Christ', 2 Corinthians 1:3, Ephesians 1:3, 1 Peter 1:3; 'Blessed be the Lord God of Israel', Luke 1:68). The eighth is different. At Mark 14:61 the high priest asks 'Are you the Christ, the Son of the Blessed?' — ho eulogētos used on its own, as a title standing in for the divine name, which he does not say. Jesus answers in the same register, 'at the right hand of the Power'. Matthew's parallel has the high priest say 'the Son of God' outright (26:63).", ('Mark', 14, 61)),
     ("ekthambeomai", "ekthambeomai", "ἐκθαμβέομαι", "ekthambeomai",
-     "TO BE OVERWHELMED — thambos, astonishment, made stronger by ek-. ⚠ Only Mark uses the verb in the New Testament (Acts 3:11 has the related adjective), in four verses, and they run the whole range from wonder to horror: the crowd that sees Jesus come down from the mountain of the transfiguration (9:15), Jesus himself at Gethsemane, where it is alarm, not wonder (14:33), and the women who find a young man in the tomb and are told not to be (16:5, 6; not yet on these pages). Matthew's Gethsemane replaces it with the plainer 'to be grieved' (26:37); the KJV's 'sore amazed' at Mark 14:33 keeps the old sense of 'amazed', which once included being stunned with fear.", ('Mark', 14, 33)),
+     "TO BE OVERWHELMED — thambos, astonishment, made stronger by ek-. ⚠ Only Mark uses the verb in the New Testament (Acts 3:11 has the related adjective), in four verses, and they run the whole range from wonder to horror: the crowd that sees Jesus come down from the mountain of the transfiguration (9:15), Jesus himself at Gethsemane, where it is alarm, not wonder (14:33), and the women who find a young man in the tomb and are told not to be (16:5, 6). Matthew's Gethsemane replaces it with the plainer 'to be grieved' (26:37); the KJV's 'sore amazed' at Mark 14:33 keeps the old sense of 'amazed', which once included being stunned with fear.", ('Mark', 14, 33)),
     # ---- Mark 15 (Greek) ----
     ("porphyra", "porphyra", "πορφύρα", "porphyra",
      "PURPLE — the royal/imperial dye colour, from a Phoenician murex-shell industry so costly it became a byword for wealth and rank (Luke 16:19's rich man; Lydia the 'seller of purple' at Acts 16:14, not yet on these pages). ⚠ It stands in nine verses of the New Testament. Mark dresses the mocked Jesus in it (15:17, 20); John independently agrees (19:2, 5), even sharing the participle 'having plaited' for the thorn crown with both Mark and Matthew. Matthew alone has a scarlet soldier's cloak instead, chlamys kokkinē (27:28) — the ready-to-hand garment rather than the genuinely costly dye. Revelation later dresses the great harlot in it, paired with scarlet (17:4; 18:12, 16) — the same color that mocked a king worn, by the book's end, by the empire that killed one.", ("Mark", 15, 17)),
@@ -1824,6 +1824,15 @@ DICTIONARY = [
      "CENTURION — a straight transliteration of the Latin centurio, unlike Matthew and Luke, who both use the native Greek hekatontarchēs (literally 'commander of a hundred') for the same office, including in their own parallels to this chapter's own centurion. ⚠ The word stands in exactly three verses of the New Testament, all three in this chapter (15:39, 44, 45) — Mark uses it nowhere else and no other Gospel uses it at all. One more entry in this chapter's cluster of Roman loanwords (praitōrion, speira, phragelloō), and the vocabulary Mark is elsewhere known for borrowing more freely than the other three Gospels.", ("Mark", 15, 39)),
     ("bouleutes", "bouleutēs", "βουλευτής", "bouleutēs",
      "A COUNCIL MEMBER — from boulē, the council (the same body Mark and Matthew both also call the synedrion, Sanhedrin). ⚠ It stands in exactly two verses of the whole New Testament: Mark's description of Joseph of Arimathea (15:43) and Luke's parallel (23:50, not yet on these pages) — nowhere else. Matthew calls the same man only 'a rich man' who 'had himself also been made a disciple' (27:57); John has him a disciple 'secretly, for fear of the Jews' (19:38, not yet on these pages). Only Mark and Luke state outright that he sat on the very council that had just voted to hand Jesus over.", ("Mark", 15, 43)),
+    # ---- Mark 16 (Greek) ----
+    ("ekstasis", "ekstasis", "ἔκστασις", "ekstasis",
+     "AMAZEMENT, astonishment — literally a STANDING-OUTSIDE (ek + stasis), a person put beside themselves; the root of English 'ecstasy', which has since drifted toward delight. ⚠ Mark uses the noun in exactly two verses, and both times for people meeting a raising from the dead: the room where Jairus's twelve-year-old daughter got up and walked, 'overcome with great amazement' (5:42), and the three women fleeing the empty tomb, gripped by 'trembling and amazement' (16:8). In Acts the same word names a visionary trance — Peter on the roof at Joppa (Acts 10:10; 11:5), Paul in the temple (22:17). The shelf at Mark 16:8 shows the range: KJV 'amazed', ASV 'astonishment', NWT 1984 'strong emotion', Douay 'fear'.", ("Mark", 16, 8)),
+    ("apistia", "apistia", "ἀπιστία", "apistia",
+     "UNBELIEF — a-, 'not', + pistis, 'faith, trust'; with its verb apisteō, 'to disbelieve'. ⚠ In Mark the noun stands in three verses, and they trace an arc. Jesus 'was amazed at their unbelief' in his own hometown (6:6); a father cries 'I believe — help my unbelief' (9:24); and in the longer ending (16:9-20, a passage the critical text prints in double brackets) the risen Jesus reproaches the Eleven themselves for their 'unbelief and hardness of heart' (16:14), after they refused to believe two separate reports (16:11, 13), and the verb returns in the commission, 'whoever does not believe will be condemned' (16:16). The unbelief this Gospel begins by finding in a village it ends by finding in the disciples.", ("Mark", 6, 6)),
+    ("morphe", "morphē", "μορφή", "morphē",
+     "FORM — the outward shape by which a thing is recognised. ⚠ The noun stands in only three verses of the New Testament: Mark 16:12, where the risen Jesus is 'made visible in another form' to two disciples walking into the country (in the longer ending, which the critical text brackets), and the pair at Philippians 2:6-7, 'being in the form of God… taking the form of a slave', one of the most argued-over sentences in Christian theology. Its verb, metamorphoō, is the transfiguration: 'he was transfigured before them' (Mark 9:2). What the 'other form' of Mark 16:12 was, the verse does not say; Luke's account of the road to Emmaus has the two simply fail to recognise him until the bread is broken.", ("Mark", 16, 12)),
+    ("katakrino", "katakrinō", "κατακρίνω", "katakrinō",
+     "TO CONDEMN — kata ('down, against') + krinō ('to judge'): not merely to judge but to pass sentence against. ⚠ Mark uses it in three verses, and the first two are about Jesus: the prediction that the chief priests and scribes 'will condemn him to death' (10:33), and the night court where 'they all condemned him to be guilty of death' (14:64). The third turns it outward, in the longer ending's commission: 'whoever does not believe will be condemned' (16:16). The KJV and the Geneva print 'shall be damned' there — in 1611 'damn' could still carry its Latin sense, damnare, simply to condemn — where the ASV and the Douay read 'shall be condemned'.", ("Mark", 10, 33)),
     # ---- Matthew 23 (Greek) ----
     ("hypokrites", "hypokritēs", "ὑποκριτής", "hypokritēs",
      "In ordinary Greek, a STAGE ACTOR &mdash; one who speaks from behind a mask, from hypo-krinomai, to answer or play a part; the masked professional of a theatre like the one at Sepphoris, an hour's walk from Nazareth. The moral sense came later; the theatrical one is what the word still carried. It is the Sermon's term for piety performed to an audience (Matthew 6:2, 5, 16), and 6:1 supplies the matching verb: righteousness done 'to be GAZED AT' (theathēnai &mdash; the root of 'theater'). ⚠ Matthew uses it more than the rest of the New Testament together (13 of about 18 occurrences), and the woes of chapter 23 hammer it six times. English 'hypocrite' is this word worn down: it now means somebody who fails to practise what they preach, where the Greek picture is narrower and sharper &mdash; somebody playing to a house.", ("Matthew", 6, 2)),
@@ -4976,8 +4985,9 @@ ENCYCLOPEDIA = [
               "Galilee (its Aramaic name, Migdal, means &lsquo;tower&rsquo;, from a fish-salting industry's "
               "watchtowers, on one account). She appears at every stage of the passion this Gospel gives a "
               "witness to &mdash; watching the crucifixion from a distance (15:40), watching where Jesus was "
-              "buried (15:47), and coming to the tomb with spices (16:1, not yet on these pages) &mdash; the one "
-              "named woman common to all three scenes across every Gospel. Luke 8:2 (not yet on these pages) "
+              "buried (15:47), and coming to the tomb with spices (16:1) &mdash; the one "
+              "named woman common to all three scenes across every Gospel. The longer ending of Mark (16:9, printed "
+              "in brackets as a later addition) makes her the first to see him risen. Luke 8:2 (not yet on these pages) "
               "says seven demons had gone out of her, and nothing in that verse or anywhere else in the New "
               "Testament calls her a prostitute or identifies her with the unnamed &lsquo;sinful woman&rsquo; of "
               "Luke 7:37&ndash;38 &mdash; a conflation that goes back to a sixth-century sermon of Pope Gregory "
@@ -5033,7 +5043,7 @@ ENCYCLOPEDIA = [
          aliases=["Mary the mother of James", "Mary (mother of James and Joses)"],
          refs=[("Mark", 15, 40)],
          desc="One of the women who watched the crucifixion from a distance and, with Mary Magdalene, watched "
-              "where Jesus was buried (Mark 15:40, 47; 16:1, not yet on these pages). &#9888; Mark 6:3 (already "
+              "where Jesus was buried (Mark 15:40, 47), and came to the tomb with spices (16:1). &#9888; Mark 6:3 (already "
               "on these pages) names Jesus's own brothers, in the same order, as &lsquo;James and Joses and Judas "
               "and Simon&rsquo;, son of &lsquo;Mary&rsquo; &mdash; the identical pair of names by which this Mary "
               "is identified here. Whether this is the same Mary, Jesus's own mother named by her other sons "
@@ -5047,9 +5057,9 @@ ENCYCLOPEDIA = [
          aliases=["Salome"],
          refs=[("Mark", 15, 40)],
          desc="One of the women named at the cross (Mark 15:40) and among those who came to the tomb with "
-              "spices (16:1, not yet on these pages) &mdash; not to be confused with Herodias's dancing daughter "
+              "spices (16:1) &mdash; not to be confused with Herodias's dancing daughter "
               "(unnamed in the Gospels themselves; the name &lsquo;Salome&rsquo; for her comes from Josephus), "
-              "nor with Salome the midwife of later apocryphal tradition. Mark names her only here and does not "
+              "nor with Salome the midwife of later apocryphal tradition. Mark names her twice, at the cross and at the tomb, and does not "
               "connect her to any other figure in his own Gospel; a widely held but unprovable later tradition "
               "identifies her with &lsquo;the mother of the sons of Zebedee&rsquo; who appears in the parallel "
               "list at Matthew 27:56, which would make her James and John's own mother &mdash; the request she "
@@ -5522,7 +5532,7 @@ ENCYCLOPEDIA = [
          desc="The 'Field of Blood' — Aramaic ḥăqēl dəmā, which Luke transliterates and then translates for his Greek readers, a small detail that tells you a good deal about who he was writing for. Both Gospels and Acts agree that a plot of ground outside Jerusalem was bought with the betrayal money and carried that name; they explain the name differently, and this library prints both accounts. ⚠ The pin is TRADITIONAL, not certain: the site shown to pilgrims since at least the fourth century lies on the southern slope of the Hinnom valley, where Jerusalem's potters worked the clay and where rock-cut tombs were used as a burial ground for foreigners — which fits Matthew's 'field for the burial of strangers'. The identification is early and plausible; it is not evidence.",
          refs=[("Acts", 1, 19)]),
     dict(slug="galilee", name="Galilee", kind="place", aliases=["Galilee", "Galileans"],
-         desc="The northern region of the land — hill country and a freshwater lake, ringed by Gentile territory, which is why Isaiah 9:1 calls it 'Galilee of the nations'. It was fertile, densely settled, and politically restless: Judas the Galilean's tax revolt of AD 6 began there, and the word 'Galilean' carried in Jerusalem roughly the tone of a provincial accent — Peter's own speech gives him away in the high priest's courtyard. Almost all of Jesus' ministry happens here, all of the Twelve but perhaps one come from here, and the men in white at the ascension address the whole future church by the name of a backwater: 'Men of Galilee, why do you stand looking into heaven?'",
+         desc="The northern region of the land — hill country and a freshwater lake, ringed by Gentile territory, which is why Isaiah 9:1 calls it 'Galilee of the nations'. It was fertile, densely settled, and politically restless: Judas the Galilean's tax revolt of AD 6 began there, and the word 'Galilean' carried in Jerusalem roughly the tone of a provincial accent — Peter's own speech gives him away in the high priest's courtyard. Almost all of Jesus' ministry happens here, all of the Twelve but perhaps one come from here, and the men in white at the ascension address the whole future church by the name of a backwater: 'Men of Galilee, why do you stand looking into heaven?' In Mark it is also the place of the promised meeting: 'I will go ahead of you into Galilee' (14:28), repeated at the empty tomb (16:7).",
          refs=[("Matthew", 2, 22), ("Acts", 1, 11)]),
     dict(slug="judea", name="Judea", kind="place", aliases=["Judea", "Judaea"],
          desc="The southern region of the land, centred on Jerusalem — under Rome, a formal province (Iudaea) governed directly by a prefect or procurator (Pilate among them) rather than by a client king, after Herod Archelaus was deposed in AD 6. It is drier and more mountainous than Galilee to its north, and its hill country is where John the Baptist preaches and where Jesus is finally tried and executed. 'Judea' can mean the narrower region around Jerusalem or, more loosely, the whole territory of the Jewish people (so 'the land of Judea' at times stretches to cover Galilee as well) — the word carries both a tight administrative sense and a looser ethnic one, and which is meant has to be read from context each time.",
@@ -5884,7 +5894,9 @@ ENCYCLOPEDIA = [
          refs=[("Matthew", 4, 18), ("John", 1, 40), ("John", 1, 44)], videos=[]),
     dict(slug="simon-peter", name="Simon Peter", kind="person", aliases=["Simon Peter", "Simon", "Cephas", "Peter"],
          desc="Simon son of John, Andrew's brother, whom Jesus renames on sight: Cephas — Aramaic kepha, 'rock,' "
-              "rendered into Greek as Petros.",
+              "rendered into Greek as Petros. In Mark, his last named moment in the passion is the weeping after the "
+              "rooster's second crow (14:72); the next is the message from the tomb, 'tell his disciples and Peter' "
+              "(16:7), a phrase only Mark has.",
          refs=[("Matthew", 4, 18), ("John", 1, 40), ("John", 1, 41), ("John", 1, 42)], videos=[]),
     dict(slug="philip", name="Philip", kind="person", aliases=["Philip"],
          desc="From Bethsaida, the town of Andrew and Peter. Called by Jesus with 'Follow me,' he in turn finds "
@@ -6010,7 +6022,8 @@ ENCYCLOPEDIA = [
          refs=[("John", 2, 1), ("John", 2, 3), ("John", 2, 5), ("John", 2, 12)], videos=[]),
     dict(slug="nazareth", name="Nazareth", kind="place", aliases=["Nazareth"],
          desc="Jesus' obscure Galilean hometown, never named in the Old Testament — hence Nathanael's 'Can anything "
-              "good come out of Nazareth?'",
+              "good come out of Nazareth?' Mark calls Jesus 'the Nazarene' four times, the last in the mouth of the "
+              "young man sitting in the empty tomb (16:6).",
          refs=[("John", 1, 45), ("John", 1, 46), ("Matthew", 2, 23)], coords=(32.702, 35.297, 0.06),
          modern="Nazareth, Israel", videos=[]),
 
@@ -12855,6 +12868,9 @@ CHRON_CHAPTERS = {
     "mark15": dict(era="gospels",
                   when="Early in the morning the chief priests hold a council and hand Jesus over to Pilate, who is surprised by his silence. At the feast Pilate offers to release a prisoner; the crowd, stirred up by the chief priests, chooses the insurrectionist Barabbas over Jesus and calls for crucifixion. Soldiers scourge Jesus, dress him in purple and a thorn crown in mockery, then lead him out; Simon of Cyrene is pressed into carrying the cross to Golgotha, where Jesus is crucified at the third hour between two bandits under the charge 'The King of the Jews.' Darkness covers the land from the sixth to the ninth hour; Jesus cries out in Aramaic and dies, the sanctuary curtain tears in two, and a centurion calls him God's son. Women, including Mary Magdalene, watch from a distance; that evening Joseph of Arimathea, a council member, obtains the body from Pilate and buries it in a rock-cut tomb before the Sabbath.",
                   clock="c. AD 30, Friday of Holy Week, from dawn to the evening before the Sabbath — corresponding to Matthew 27's account of the same day, with the two Gospels' own hour-markers for the darkness and the crucifixion not fully reconciled (see this chapter's own note)."),
+    "mark16": dict(era="gospels",
+                  when="When the Sabbath is over, Mary Magdalene, Mary the mother of James, and Salome buy spices and come to the tomb very early on the first day of the week, wondering who will roll away the stone. They find it rolled back, and inside a young man in a white robe tells them Jesus has been raised and is going ahead of the disciples, and Peter, into Galilee. They flee in trembling and amazement and say nothing to anyone, for they are afraid — where the oldest manuscripts end. Two later endings follow in the critical text's brackets: a brief shorter ending, and the longer ending (16:9-20), in which Jesus appears to Mary Magdalene, to two disciples walking into the country, and to the Eleven, commissions them to proclaim the good news to all creation, and is taken up into heaven.",
+                  clock="c. AD 30, the Sunday after the crucifixion, at sunrise — corresponding to Matthew 28's account of the same morning; the longer ending's appearances run over an unspecified period after it."),
     "luke2": dict(era="gospels",
                   when="A census under Caesar Augustus brings Joseph and the pregnant Mary to Bethlehem, where Jesus is born and laid in a manger, 'because there was no place for them in the inn.' Shepherds keeping watch nearby are told by an angel, then a whole multitude of the heavenly host praising God. At eight days he is circumcised and named; at the temple, the aged Simeon and the prophetess Anna both recognize him. The chapter closes years later with the twelve-year-old Jesus staying behind in the temple, 'sitting among the teachers, listening to them and asking them questions.'",
                   clock="c. 6-4 BC for the birth, matching Matthew's account of the same event told from Mary's side rather than Joseph's (see chapter 1's note); the temple episode at the close jumps forward to c. AD 6-8, when Jesus is twelve — the only story the Gospels tell of his childhood between infancy and adulthood."),
@@ -13994,6 +14010,10 @@ BOOK_INTROS = {
             ("11:1–16:8", "Jerusalem — the entry, the temple, the last supper, Gethsemane, the trial, the "
                           "cross, and the empty tomb. The Gospel that has run at a sprint slows to tell the "
                           "passion in detail."),
+            ("16:9–20", "The longer ending — absent from the two oldest complete Greek Bibles, known by the "
+                        "late second century, and printed in double brackets by the critical text: appearances, "
+                        "the commission, and the ascension. A two-sentence shorter ending, also bracketed, "
+                        "stands between v8 and v9."),
         ],
         themes=[
             "URGENCY — the relentless 'immediately' (euthys), a kingdom breaking in with no pause, a Jesus "
@@ -14024,7 +14044,7 @@ BOOK_INTROS = {
                     "explained in the note. And its ENDING is the single largest textual problem in the "
                     "Gospels: the oldest manuscripts stop abruptly at 16:8, with the women fleeing the empty "
                     "tomb 'for they were afraid,' and the familiar 'longer ending' (16:9-20) is a later "
-                    "addition — flagged there when the translation reaches it. This library prints the "
+                    "addition — printed in chapter 16 inside the critical text's own double brackets, with the shorter ending beside it and the evidence for each. This library prints the "
                     "critical text and lays the variants out with their pedigrees. The seven-version shelf "
                     "under every chapter compares the NIV, KJV, Douay-Rheims, The Living Bible, the 1599 "
                     "Geneva, ASV, and NWT.",
@@ -28211,7 +28231,7 @@ DICTIONARY_ES["neaniskos"] = ("joven",
     "\u00abnuevo, joven\u00bb. \u26a0 Marcos la usa solo para dos figuras, y las dos aparecen de la nada: el joven "
     "envuelto en una s\u00e1bana de lino que sigue a Jes\u00fas cuando todos los dem\u00e1s han huido y escapa desnudo "
     "(14:51), y el joven vestido de blanco que las mujeres encuentran sentado dentro de la tumba vac\u00eda "
-    "(16:5, todav\u00eda no en estas p\u00e1ginas). Ninguno tiene nombre. En Mateo es el joven rico (19:20, 22). "
+    "(16:5). Ninguno tiene nombre. En Mateo es el joven rico (19:20, 22). "
     "Los int\u00e9rpretes han relacionado a los dos j\u00f3venes de Marcos de casi todas las maneras posibles, y "
     "tambi\u00e9n se han negado a relacionarlos; el texto da la palabra dos veces y se detiene.")
 DICTIONARY_ES["eulogetos"] = ("bendito",
@@ -28228,7 +28248,7 @@ DICTIONARY_ES["ekthambeomai"] = ("quedar sobrecogido",
     "Testamento (Hechos 3:11 tiene el adjetivo emparentado), en cuatro vers\u00edculos, y recorren toda la escala "
     "del asombro al horror: la multitud que ve a Jes\u00fas bajar del monte de la transfiguraci\u00f3n (9:15), el propio "
     "Jes\u00fas en Getseman\u00ed, donde es espanto y no maravilla (14:33), y las mujeres que encuentran a un joven en "
-    "la tumba y a quienes se les dice que no lo est\u00e9n (16:5, 6; todav\u00eda no en estas p\u00e1ginas). El Getseman\u00ed "
+    "la tumba y a quienes se les dice que no lo est\u00e9n (16:5, 6). El Getseman\u00ed "
     "de Mateo lo cambia por el m\u00e1s llano \u00abentristecerse\u00bb (26:37).")
 DICTIONARY_ES["paradidomi"] = ("entregar",
     "ENTREGAR, poner en manos de otro \u2014una palabra judicial: lo que hace un magistrado cuando pone a un preso en "
@@ -28363,8 +28383,9 @@ ENCYCLOPEDIA_ES["mary-magdalene"] = ("Mar\u00eda Magdalena",
     "Galilea (su nombre arameo, Migdal, significa \u00abtorre\u00bb, seg\u00fan una explicaci\u00f3n por las torres de "
     "vigilancia de una industria de salaz\u00f3n de pescado). Aparece en cada etapa de la pasi\u00f3n que este "
     "Evangelio da testigo \u2014mirando la crucifixi\u00f3n desde lejos (15:40), mirando d\u00f3nde sepultaron a Jes\u00fas "
-    "(15:47), y llegando a la tumba con especias (16:1, todav\u00eda no en estas p\u00e1ginas)\u2014 la \u00fanica mujer "
-    "nombrada com\u00fan a las tres escenas en los cuatro Evangelios. Lucas 8:2 (todav\u00eda no en estas p\u00e1ginas) "
+    "(15:47), y llegando a la tumba con especias (16:1)\u2014 la \u00fanica mujer "
+    "nombrada com\u00fan a las tres escenas en los cuatro Evangelios. El final largo de Marcos (16:9, impreso "
+    "entre corchetes como a\u00f1adido posterior) la hace la primera en verlo resucitado. Lucas 8:2 (todav\u00eda no en estas p\u00e1ginas) "
     "dice que hab\u00edan salido de ella siete demonios, y nada en ese vers\u00edculo ni en ning\u00fan otro lugar del "
     "Nuevo Testamento la llama prostituta ni la identifica con la \u00abmujer pecadora\u00bb sin nombre de Lucas "
     "7:37\u201338 \u2014una fusi\u00f3n que se remonta a una hom\u00edlia del siglo VI del papa Gregorio Magno y perdur\u00f3 "
@@ -28409,7 +28430,7 @@ ENCYCLOPEDIA_ES["joseph-of-arimathea"] = ("Jos\u00e9 de Arimatea",
     "entregar a Jes\u00fas.")
 ENCYCLOPEDIA_ES["mary-mother-of-james-the-younger"] = ("Mar\u00eda la madre de Jacobo el menor",
     "Una de las mujeres que presenciaron la crucifixi\u00f3n desde lejos y, con Mar\u00eda Magdalena, vieron d\u00f3nde "
-    "sepultaron a Jes\u00fas (Marcos 15:40, 47; 16:1, todav\u00eda no en estas p\u00e1ginas). \u26a0 Marcos 6:3 (ya en estas "
+    "sepultaron a Jes\u00fas (Marcos 15:40, 47), y llegaron a la tumba con especias (16:1). \u26a0 Marcos 6:3 (ya en estas "
     "p\u00e1ginas) nombra a los propios hermanos de Jes\u00fas, en el mismo orden, como \u00abJacobo y Jos\u00e9s y Judas y "
     "Sim\u00f3n\u00bb, hijo de \u00abMar\u00eda\u00bb \u2014el mismo par de nombres por el que esta Mar\u00eda queda identificada aqu\u00ed. "
     "Si es la misma Mar\u00eda, la propia madre de Jes\u00fas nombrada por sus otros hijos en vez de por \u00e9l, o una "
@@ -28420,9 +28441,9 @@ ENCYCLOPEDIA_ES["mary-mother-of-james-the-younger"] = ("Mar\u00eda la madre de J
     "ambas lecturas y no decide entre ellas.")
 ENCYCLOPEDIA_ES["salome"] = ("Salom\u00e9 (disc\u00edpula)",
     "Una de las mujeres nombradas en la cruz (Marcos 15:40) y entre las que llegaron a la tumba con especias "
-    "(16:1, todav\u00eda no en estas p\u00e1ginas) \u2014no debe confundirse con la hija bailarina de Herod\u00edas (sin "
+    "(16:1) \u2014no debe confundirse con la hija bailarina de Herod\u00edas (sin "
     "nombre en los propios Evangelios; el nombre \u00abSalom\u00e9\u00bb para ella viene de Josefo), ni con la comadrona "
-    "Salom\u00e9 de la tradici\u00f3n ap\u00f3crifa posterior. Marcos la nombra solo aqu\u00ed y no la conecta con ninguna otra "
+    "Salom\u00e9 de la tradici\u00f3n ap\u00f3crifa posterior. Marcos la nombra dos veces, en la cruz y en la tumba, y no la conecta con ninguna otra "
     "figura de su propio Evangelio; una tradici\u00f3n posterior, extendida pero indemostrable, la identifica con "
     "\u00abla madre de los hijos de Zebedeo\u00bb de la lista paralela en Mateo 27:56, lo que la har\u00eda madre de "
     "Jacobo y Juan \u2014la petici\u00f3n que hace en su nombre en Mateo 20:20\u201321 (todav\u00eda no en estas p\u00e1ginas) no "
@@ -28434,3 +28455,88 @@ ENCYCLOPEDIA_ES["joses"] = ("Jos\u00e9s",
     "la madre de Jacobo el menor</a> para la cuesti\u00f3n de identidad que plantea este nombre. Marcos usa el mismo "
     "nombre, en la misma forma corta, para uno de los propios hermanos de Jes\u00fas en 6:3 (ya en estas p\u00e1ginas); "
     "no se registra nada m\u00e1s de \u00e9l bajo ninguna de las dos lecturas.")
+# ---- Mark 16 ----
+DICTIONARY_ES["ekstasis"] = ("asombro",
+    "ASOMBRO, pasmo — literalmente un ESTAR-FUERA (ek + stasis), una persona puesta fuera de sí; la raíz del "
+    "castellano «éxtasis», que desde entonces ha derivado hacia el deleite. ⚠ Marcos usa el sustantivo en "
+    "exactamente dos versículos, y las dos veces para gente que se encuentra con alguien levantado de la muerte: la "
+    "habitación donde la hija de Jairo, de doce años, se levantó y echó a andar, «sobrecogidos de un gran asombro» "
+    "(5:42), y las tres mujeres que huyen de la tumba vacía, presas de «temblor y asombro» (16:8). En Hechos la "
+    "misma palabra nombra un trance visionario — Pedro en la azotea de Jope (Hechos 10:10; 11:5), Pablo en el templo "
+    "(22:17). El estante en Marcos 16:8 muestra el abanico: RV60 «espanto», TNM 1987 «fuerte emoción», NVI "
+    "«desconcertadas».")
+DICTIONARY_ES["apistia"] = ("incredulidad",
+    "INCREDULIDAD — a-, «no», + pistis, «fe, confianza»; con su verbo apisteō, «no creer». ⚠ En Marcos el "
+    "sustantivo está en tres versículos, y trazan un arco. Jesús «se maravillaba de la incredulidad de ellos» en "
+    "su propio pueblo (6:6); un padre clama «Creo —ayuda mi incredulidad» (9:24); y en el final largo (16:9-20, un "
+    "pasaje que el texto crítico imprime entre dobles corchetes) Jesús resucitado reprocha a los Once mismos su "
+    "«incredulidad y dureza de corazón» (16:14), después de que se negaran a creer dos relatos distintos (16:11, "
+    "13), y el verbo vuelve en el encargo, «el que no crea será condenado» (16:16). La incredulidad que este "
+    "Evangelio empieza encontrando en una aldea termina encontrándola en los discípulos.")
+DICTIONARY_ES["morphe"] = ("forma",
+    "FORMA — la figura exterior por la que se reconoce algo. ⚠ El sustantivo está en solo tres versículos del Nuevo "
+    "Testamento: Marcos 16:12, donde Jesús resucitado «se hace visible en otra forma» a dos discípulos que van al "
+    "campo (en el final largo, que el texto crítico pone entre corchetes), y la pareja de Filipenses 2:6-7, «siendo "
+    "en forma de Dios… tomando forma de esclavo», una de las frases más discutidas de la teología cristiana. Su "
+    "verbo, metamorphoō, es la transfiguración: «se transfiguró delante de ellos» (Marcos 9:2). Cuál era la «otra "
+    "forma» de Marcos 16:12, el versículo no lo dice; el relato de Lucas del camino de Emaús hace que los dos "
+    "sencillamente no lo reconozcan hasta que se parte el pan.")
+DICTIONARY_ES["katakrino"] = ("condenar",
+    "CONDENAR — kata («abajo, contra») + krinō («juzgar»): no solo juzgar, sino dictar sentencia en contra. ⚠ "
+    "Marcos lo usa en tres versículos, y los dos primeros son sobre Jesús: la predicción de que los principales "
+    "sacerdotes y los escribas «lo condenarán a muerte» (10:33), y el tribunal nocturno donde «todos lo condenaron "
+    "como reo de muerte» (14:64). El tercero lo vuelve hacia fuera, en el encargo del final largo: «el que no crea "
+    "será condenado» (16:16). Las dos Reina-Valera y la NVI leen ahí «será condenado»; en inglés, la King James de "
+    "1611 imprimió «shall be damned», cuando esa palabra aún podía tener su sentido latino, damnare, simplemente "
+    "condenar.")
+DICTIONARY_ES["euangelion"] = ("buena noticia / evangelio",
+    "BUENA NOTICIA — la palabra de la que viene «evangelio». En el mundo griego más amplio era un anuncio IMPERIAL: "
+    "la buena noticia del nacimiento, la victoria o el ascenso de un César, proclamada por todo el imperio — una "
+    "inscripción famosa llama al cumpleaños de Augusto «el principio (ARCHĒ) de la buena noticia (EUANGELION) para "
+    "el mundo». Marcos toma ese vocabulario político y lo cuelga de un carpintero galileo: su primerísima línea, «el "
+    "principio (ARCHĒ) de la buena noticia de Jesucristo» (1:1), se lee casi como una respuesta deliberada al culto "
+    "al emperador. ⚠️ Puede que Marcos inaugurara el uso de EUANGELION como título de una VIDA escrita de Jesús; los "
+    "cuatro relatos llegaron a llamarse «Evangelios» por su palabra inicial. En boca de Jesús no es un libro sino un "
+    "anuncio: «el reino de Dios se ha acercado» (1:15). Y en el final largo de Marcos es lo que se envía «a toda la "
+    "creación» (16:15).")
+DICTIONARY_ES["baptizo"] = ("bautizar",
+    "SUMERGIR, meter bajo el agua, hundir — una palabra griega corriente, usada de barcos que se hunden y de telas "
+    "que se tiñen, que toda Biblia castellana translitera en vez de traducir, de modo que al lector hay que decirle "
+    "lo que significa. ⚠ Lo nuevo en el uso de Juan no era el agua: el lavado ritual lo prescribía la Ley, se "
+    "practicaba a diario en Qumrán y se exigía a un gentil que se convertía al judaísmo. Pero esos lavados se los "
+    "hacía UNO MISMO y se REPETÍAN. El de Juan lo hace OTRO, ocurre UNA VEZ y se exige a JUDÍOS — trata a los hijos de "
+    "Abraham como si necesitaran el baño del converso, que es exactamente la ofensa que nombra en Mateo 3:9. Su propio "
+    "bautismo es «para arrepentimiento», con agua; dice que el que viene bautizará «con Espíritu Santo y fuego» "
+    "(3:11).")
+DICTIONARY_ES["analambano"] = ("tomar arriba",
+    "TOMAR ARRIBA, alzar y recibir — el verbo que Hechos usa tres veces en un solo capítulo para la ascensión (1:2, "
+    "1:11, 1:22), siempre en pasiva: fue tomado arriba. Es la palabra que el Antiguo Testamento griego usa de ELÍAS, "
+    "arrebatado en el torbellino mientras Eliseo miraba y recibía luego una doble porción de su espíritu (2 Reyes "
+    "2:9-11), y la recoge el fragmento de himno de 1 Timoteo 3:16, «recibido arriba en gloria». El final largo de "
+    "Marcos la usa también: «fue tomado arriba al cielo y se sentó a la derecha de Dios» (Marcos 16:19). El segundo "
+    "volumen de Lucas abre con el patrón de Elías en el marco: el maestro sube, y los sucesores reciben el Espíritu.")
+ENCYCLOPEDIA_ES["jesus"] = ("Jesús",
+    "Jesús de Nazaret, hijo de José — el Verbo hecho carne (Juan 1:14). Aclamado por el Bautista como «el Cordero de "
+    "Dios» y «el Escogido de Dios», y confesado por Natanael como «Hijo de Dios» y «Rey de Israel»; él se llama a sí "
+    "mismo «el Hijo del Hombre» (1:51). En la visión inicial del Apocalipsis es «el testigo fiel, el primogénito de "
+    "los muertos y el soberano de los reyes de la tierra» (Apocalipsis 1:5) — uno semejante a un hijo de hombre entre "
+    "los candeleros, que lleva la descripción del propio Anciano de Días y que dice «Yo soy el primero y el último… y "
+    "estuve muerto, y mira: estoy vivo por los siglos» (Apocalipsis 1:13-18).")
+ENCYCLOPEDIA_ES["simon-peter"] = ("Simón Pedro",
+    "Simón hijo de Juan, hermano de Andrés, a quien Jesús cambia el nombre nada más verlo: Cefas — el arameo kefa, "
+    "«roca», vertido al griego como Petros. En Marcos, su último momento con nombre en el relato de la pasión es el "
+    "llanto tras el segundo canto del gallo (14:72); el siguiente es el mensaje de la tumba, «digan a sus discípulos "
+    "y a Pedro» (16:7), una frase que solo tiene Marcos.")
+ENCYCLOPEDIA_ES["galilee"] = ("Galilea",
+    "La región norte del país — tierra de colinas y un lago de agua dulce, rodeada de territorio gentil, por lo que "
+    "Isaías 9:1 la llama «Galilea de las naciones». Era fértil, densamente poblada y políticamente inquieta: la "
+    "revuelta fiscal de Judas el Galileo, en el año 6 d.C., empezó allí, y la palabra «galileo» tenía en Jerusalén más "
+    "o menos el tono de un acento de provincias — el propio habla de Pedro lo delata en el patio del sumo sacerdote. "
+    "Casi todo el ministerio de Jesús ocurre aquí, todos los Doce salvo quizá uno son de aquí, y los hombres de blanco "
+    "en la ascensión se dirigen a toda la iglesia futura con el nombre de un rincón apartado: «Varones galileos, ¿por "
+    "qué están mirando al cielo?». En Marcos es también el lugar de la cita prometida: «iré delante de ustedes a "
+    "Galilea» (14:28), repetido junto a la tumba vacía (16:7).")
+ENCYCLOPEDIA_ES["nazareth"] = ("Nazaret",
+    "El oscuro pueblo galileo de Jesús, nunca nombrado en el Antiguo Testamento — de ahí el «¿De Nazaret puede salir "
+    "algo bueno?» de Natanael. Marcos lo llama «el Nazareno» cuatro veces, la última en boca del joven sentado en la "
+    "tumba vacía (16:6).")
