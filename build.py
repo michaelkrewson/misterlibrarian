@@ -6197,12 +6197,53 @@ def check_forward_claims(chapters):
         word in the lead-in makes this return None: skipping is the safe failure,
         guessing is not."""
         book = book_of_slug.get(slug)
-        tail = re.sub(r"<[^>]+>", "", back)[-200:]   # measured in VISIBLE text, not markup
-        tail = tail.split(" ", 1)[-1]   # never start mid-word ("…alm 95:11" must not read as "5:11")
-        if not book or book_word_re.search(tail):
+        tail = visible_tail(back, 200)
+        if not book or foreign_book_near(tail, book):
             return None
         cites = list(re.finditer(r"(?<![\d:])(\d{1,3}):\d+", tail))
         return (book, int(cites[-1].group(1))) if cites else None
+
+    def visible_tail(text, n):
+        """The last n VISIBLE characters (markup stripped), never starting mid-word —
+        "…alm 95:11" must not read as "5:11" — but a window that was not cut keeps
+        its first word, or "John's (12:3" at the start of a note loses "John's"."""
+        vis = re.sub(r"<[^>]+>", "", text)
+        return vis[-n:].split(" ", 1)[-1] if len(vis) > n else vis
+
+    def foreign_book_near(text, book):
+        """A book name in `text` other than the page's own (in either language):
+        "Mark uses it three more times … (14:30" is still Mark on a Mark page."""
+        own = {book, ES_BOOK.get(book)}
+        return any(w.group(0) not in own for w in book_word_re.finditer(text))
+
+    # "(19:13, 19:21, 25:12, none of them yet on these pages)" — one claim about a
+    # whole LIST, which the single-citation checks above never read past its last
+    # item. Found 2026-09-25 as ~30 stale lists in both languages. Only citations
+    # INSIDE the claim's own parenthesis are checked; a list written before the
+    # parenthesis, or one where a different book is named just ahead of it, is
+    # skipped — the same safe-failure rule as same_book_ref.
+    list_claim_re = re.compile(
+        r"\b(?:none|neither)(?:\s+of\s+(?:them|these|those|the\s+(?:last\s+)?\w+(?:\s+\w+)?))?"
+        r"\s+(?:is\s+|are\s+)?yet\s+on\s+these\s+pages|"
+        r"\b(?:ninguno|ninguna)(?:\s+de\s+(?:los|las|estos|estas|esos|esas|ellos|ellas)(?:\s+\w+){0,2})?,?"
+        r"\s+todavía\s+en\s+estas\s+páginas(?!\s+en\s+español)")
+
+    def list_refs(u, pos, slug):
+        before = re.sub(r"<[^>]+>", "", u[max(0, pos - 900):pos])
+        lp, rp = before.rfind("("), before.rfind(")")
+        if lp <= rp:
+            return []
+        inner = before[lp + 1:]
+        book = book_of_slug.get(slug)
+        cur = None if foreign_book_near(visible_tail(before[:lp], 150), book) else book
+        out = []
+        for t in re.finditer(ref_re.pattern + r"|(?<![\d:])(\d{1,3}):\d+", inner):
+            if t.group(1):
+                cur = es_to_en.get(t.group(1), t.group(1))
+                out.append((cur, int(t.group(2))))
+            elif cur:
+                out.append((cur, int(t.group(3))))
+        return out
 
     def scan(slug, body, where):
         u = re.sub(r"\s+", " ", html.unescape(body))
@@ -6218,6 +6259,10 @@ def check_forward_claims(chapters):
                     bad.append(f"  {where}: says {ref[0]} {ref[1]} is not in SPANISH, but its ES twin exists")
             elif ref in shipped:
                 bad.append(f"  {where}: says {ref[0]} {ref[1]} is 'not yet on these pages', but it shipped")
+        for m in list_claim_re.finditer(u):
+            for ref in list_refs(u, m.start(), slug):
+                if ref in shipped:
+                    bad.append(f"  {where}: a 'none yet on these pages' list includes {ref[0]} {ref[1]}, which shipped")
         for m in re.finditer(r"already on these pages|ya en estas páginas( en español)?", u):
             ref = last_ref(u[max(0, m.start() - 130):m.start()])
             if not ref:
