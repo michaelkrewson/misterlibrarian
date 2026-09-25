@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1750 700" role="img" aria-label="A diagram titled A private room with a public door. Three panels left to right. The door in: you send ordinary bitcoin to a vault address; everyone can see who deposited, how much, and when. The private room: coins become encrypted notes, and each transfer is a sealed 669-byte envelope inside a normal Bitcoin transaction carrying a zero-knowledge proof; sender, recipient and amount are hidden, while the fact that a transfer happened, its timing, its fee and how many notes went in and out stay visible. The door out: the vault pays you back to an ordinary address; everyone can see who withdrew, how much, and when. A caption notes that today both doors are held by one key, and the trustless version, PIPEs v2, exists only on paper. A footer compares the test transfer: 793 virtual bytes versus about 140 for a plain payment, a 2,382-satoshi fee, and 1.89 seconds to generate the proof.">
+<rect width="1750" height="700" fill="#0a0f1a"/>
+<text x="875.0" y="58" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="32" fill="#e8c968" font-style="italic">A private room with a public door</text>
+<text x="875.0" y="90" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#94a3b8">how Shielded Bitcoin hides a transfer, and what it can&#8217;t hide</text>
+<rect x="60" y="130" width="440" height="380" rx="14" fill="#0d1520" stroke="#e8865c" stroke-width="2"/><text x="280.0" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e8dfd2">THE DOOR IN</text><text x="280.0" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">an ordinary Bitcoin payment to the vault</text>
+<rect x="580" y="130" width="590" height="380" rx="14" fill="#0d1520" stroke="#7fb8a4" stroke-width="2"/><text x="875.0" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e8dfd2">THE PRIVATE ROOM</text><text x="875.0" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">coins become encrypted notes</text>
+<rect x="1250" y="130" width="440" height="380" rx="14" fill="#0d1520" stroke="#e8865c" stroke-width="2"/><text x="1470.0" y="172" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#e8dfd2">THE DOOR OUT</text><text x="1470.0" y="196" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">the vault pays you back</text>
+<line x1="506" y1="365" x2="562" y2="365" stroke="#e8c968" stroke-width="2.5"/><polygon points="574,365 558,357 558,373" fill="#e8c968"/>
+<line x1="1176" y1="365" x2="1232" y2="365" stroke="#e8c968" stroke-width="2.5"/><polygon points="1244,365 1228,357 1228,373" fill="#e8c968"/>
+<rect x="250" y="232" width="60" height="96" rx="4" fill="none" stroke="#e8865c" stroke-width="2.5"/><circle cx="296" cy="284" r="4" fill="#e8865c"/>
+<text x="110" y="380" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#e8865c" font-weight="bold">EVERYONE SEES</text>
+<circle cx="116" cy="403" r="3.5" fill="#e8865c"/>
+<text x="130" y="408" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">which address deposited</text>
+<circle cx="116" cy="430" r="3.5" fill="#e8865c"/>
+<text x="130" y="435" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">how much</text>
+<circle cx="116" cy="457" r="3.5" fill="#e8865c"/>
+<text x="130" y="462" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">when</text>
+<rect x="723.0" y="238.0" width="74.0" height="48.0" rx="4" fill="#111c2b" stroke="#e8c968" stroke-width="2"/><polyline points="723.0,238.0 760,266.0 797.0,238.0" fill="none" stroke="#e8c968" stroke-width="2"/><circle cx="760" cy="268.0" r="7.0" fill="#e8c968"/>
+<rect x="838.0" y="238.0" width="74.0" height="48.0" rx="4" fill="#111c2b" stroke="#e8c968" stroke-width="2"/><polyline points="838.0,238.0 875,266.0 912.0,238.0" fill="none" stroke="#e8c968" stroke-width="2"/><circle cx="875" cy="268.0" r="7.0" fill="#e8c968"/>
+<rect x="953.0" y="238.0" width="74.0" height="48.0" rx="4" fill="#111c2b" stroke="#e8c968" stroke-width="2"/><polyline points="953.0,238.0 990,266.0 1027.0,238.0" fill="none" stroke="#e8c968" stroke-width="2"/><circle cx="990" cy="268.0" r="7.0" fill="#e8c968"/>
+<text x="875" y="318" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">each transfer: a sealed 669-byte envelope, riding inside a</text>
+<text x="875" y="337" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">normal transaction, carrying a 192-byte zero-knowledge proof</text>
+<text x="622" y="385" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#7fb8a4" font-weight="bold">HIDDEN</text>
+<circle cx="628" cy="408" r="3.5" fill="#7fb8a4"/>
+<text x="642" y="413" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">sender</text>
+<circle cx="628" cy="435" r="3.5" fill="#7fb8a4"/>
+<text x="642" y="440" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">recipient</text>
+<circle cx="628" cy="462" r="3.5" fill="#7fb8a4"/>
+<text x="642" y="467" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">amount</text>
+<text x="885" y="385" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#e8865c" font-weight="bold">STILL VISIBLE</text>
+<circle cx="891" cy="408" r="3.5" fill="#e8865c"/>
+<text x="905" y="413" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">that a transfer happened</text>
+<circle cx="891" cy="435" r="3.5" fill="#e8865c"/>
+<text x="905" y="440" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">its timing and fee</text>
+<circle cx="891" cy="462" r="3.5" fill="#e8865c"/>
+<text x="905" y="467" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">how many notes in and out</text>
+<rect x="1440" y="232" width="60" height="96" rx="4" fill="none" stroke="#e8865c" stroke-width="2.5"/><circle cx="1486" cy="284" r="4" fill="#e8865c"/>
+<text x="1300" y="380" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#e8865c" font-weight="bold">EVERYONE SEES</text>
+<circle cx="1306" cy="403" r="3.5" fill="#e8865c"/>
+<text x="1320" y="408" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">which address withdrew</text>
+<circle cx="1306" cy="430" r="3.5" fill="#e8865c"/>
+<text x="1320" y="435" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">how much</text>
+<circle cx="1306" cy="457" r="3.5" fill="#e8865c"/>
+<text x="1320" y="462" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#e8dfd2">when</text>
+<text x="875.0" y="560" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#e8dfd2" font-style="italic">Today both doors are held by one key. The trustless version, PIPEs v2, exists only on paper.</text>
+<line x1="260" y1="590" x2="1490" y2="590" stroke="rgba(232,201,104,.18)" stroke-width="1.5"/>
+<text x="440" y="632" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#e8c968">793 vB</text>
+<text x="440" y="659" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">the test transfer (a plain payment: ~140)</text>
+<text x="875" y="632" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#e8c968">2,382 sat</text>
+<text x="875" y="659" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">fee paid</text>
+<text x="1310" y="632" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#e8c968">1.89 s</text>
+<text x="1310" y="659" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#94a3b8" font-style="italic">to generate the proof, on a server</text>
+</svg>

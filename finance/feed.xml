@@ -7,6 +7,25 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>A Private Room With a Public Door</title>
+    <link>https://mistertranslation.com/finance/a-private-room-with-a-public-door.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/a-private-room-with-a-public-door.html</guid>
+    <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Someone sent me a write-up I didn't understand at first, claiming Zcash-style privacy now works on Bitcoin itself — no soft fork, no new coin — and a real private transfer confirmed on mainnet this morning to prove it. Both halves are true. Here is how it works in plain English, what the demo actually proved, the flaws its own builders list first, whether swapping the one-key vault for a decentralized escrow would fix it, and why, if I had to make Bitcoin private for a normal person tomorrow, I would still start with Lightning.</description>
+    <category>bitcoin</category>
+    <category>privacy</category>
+    <category>shielded bitcoin</category>
+    <category>zero knowledge proofs</category>
+    <category>zcash</category>
+    <category>pipes</category>
+    <category>alloc init</category>
+    <category>lightning</category>
+    <category>fedimint</category>
+    <category>bridges</category>
+    <category>custody</category>
+    <category>op_return</category>
+  </item>
+  <item>
     <title>Ninety Percent of Nothing</title>
     <link>https://mistertranslation.com/finance/ninety-percent-of-nothing.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/ninety-percent-of-nothing.html</guid>
@@ -500,24 +519,6 @@
     <category>bitcoin</category>
     <category>real estate</category>
     <category>mortgages</category>
-    <category>notes</category>
-  </item>
-  <item>
-    <title>The Phishing Email Really Was From Trezor</title>
-    <link>https://mistertranslation.com/finance/trezor-brevo-phishing.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/trezor-brevo-phishing.html</guid>
-    <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
-    <description>On September 9th roughly 347,000 people got an email from help@trezor.io warning them about a chip flaw in their wallet and pointing them somewhere to check it. It was a phishing attack — and it came from Trezor's real domain, passed every authentication check a mail server performs, and borrowed its cover story from two vulnerabilities that are genuinely real. This is Trezor's second breach in a month and its third this year, and not one of them touched the device.</description>
-    <category>bitcoin</category>
-    <category>self custody</category>
-    <category>hardware wallet</category>
-    <category>security</category>
-    <category>phishing</category>
-    <category>trezor</category>
-    <category>ledger</category>
-    <category>bitkey</category>
-    <category>seed phrase</category>
-    <category>entropy</category>
     <category>notes</category>
   </item>
 </channel>

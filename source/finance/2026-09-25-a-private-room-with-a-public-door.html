@@ -1,0 +1,261 @@
+title: A Private Room With a Public Door
+date: 2026-09-25
+tags: bitcoin, privacy, shielded bitcoin, zero knowledge proofs, zcash, pipes, alloc init, lightning, fedimint, bridges, custody, op_return
+summary: Someone sent me a write-up I didn't understand at first, claiming Zcash-style privacy now works on Bitcoin itself — no soft fork, no new coin — and a real private transfer confirmed on mainnet this morning to prove it. Both halves are true. Here is how it works in plain English, what the demo actually proved, the flaws its own builders list first, whether swapping the one-key vault for a decentralized escrow would fix it, and why, if I had to make Bitcoin private for a normal person tomorrow, I would still start with Lightning.
+meta_desc: Shielded Bitcoin explained: Zcash-style private transfers with no soft fork, what the mainnet demo proved, and why Lightning still comes first.
+hero: shielded-bitcoin-private-room-public-door.svg
+hero_alt: A diagram titled "A private room with a public door." Three panels, left to right. The door in: you send ordinary bitcoin to a vault address, and everyone can see which address deposited, how much, and when. The private room: coins become encrypted notes; each transfer is a sealed 669-byte envelope riding inside a normal Bitcoin transaction and carrying a 192-byte zero-knowledge proof; the sender, recipient and amount are hidden, while the fact that a transfer happened, its timing and fee, and how many notes went in and out stay visible. The door out: the vault pays you back, and everyone can see which address withdrew, how much, and when. Caption: today both doors are held by one key; the trustless version, PIPEs v2, exists only on paper. Footer: the test transfer was 793 virtual bytes against about 140 for a plain payment, paid a 2,382-satoshi fee, and took 1.89 seconds to prove.
+hero_credit: Mechanism from Shikhelman, Komarov and Moskvin, "Shielded Bitcoin: Private Transfers on the Bitcoin L1" ([alloc] init, September 24, 2026); size, fee and proving-time figures from Bitsaga's mainnet test transaction and write-up, September 25, 2026.
+draft: false
+---
+
+<p>Someone sent me a link today, and on first read I didn't really understand it. In crypto
+that usually means it's either a scam or a research paper. This one is a research paper. The page, from a site called <a
+href="https://bitsaga.be/insights/shielded-bitcoin">Bitsaga</a>, makes a claim that would have
+been a punchline a few years ago: private Bitcoin transfers, with the amount and the recipient
+encrypted, running on Bitcoin as it exists today. <em>"Nothing in Bitcoin's rules changes. No
+soft fork, no vote, no new coin."</em> And there's a receipt: <a
+href="https://mempool.space/tx/5c3a5857e9fe9aa98ccb18e52b1a229fcac542caf4e46b499de8efd4bdec3751">a
+real transaction</a>, confirmed in block 968,533 at 09:40 UTC on September 25, carrying a
+shielded transfer that only its recipient can read.</p>
+
+<p>Both halves of that are true. The same page also calls its own demo <em>"proof of concept,
+insecure by design, not usable today"</em>, and that's true too. So here is the whole thing,
+from the top, in the order it finally made sense to me.</p>
+
+<h2>Two Different Groups, One Idea</h2>
+
+<p>It helps to know there are two parties here, because the headlines blur them. On September
+24, three researchers at a New York cryptography firm called [alloc] init (Clara Shikhelman,
+Mikhail Komarov and Aleksei Moskvin) published <a
+href="https://allocinit.xyz/uploads/shielded-bitcoin.pdf">a 56-page paper called <em>Shielded
+Bitcoin</em></a>. It's a design and a security analysis. Bitsaga, a separate outfit, built the
+transfer half of that design as a <a
+href="https://github.com/bitsagarob/shielded-btc-probe">public test program</a>, rehearsed it
+on a test network, and on September 25 ran it on mainnet with test-sized amounts. The paper is the
+blueprint. Bitsaga put up a shed from it to show the blueprint isn't fiction.</p>
+
+<h2>The Problem It's Solving</h2>
+
+<p>Bitcoin is a glass ledger. Every payment ever made is public forever: which address paid
+which address, and exactly how much. Addresses don't carry names, but once anyone ties one
+address to you (an exchange withdrawal, an invoice, a donation page), they can often follow
+the money for years.</p>
+
+<p>There are partial fixes today, and the paper lists them honestly. CoinJoin mixes many
+people's payments into one transaction so it's harder to say whose coin went where. PayJoin
+breaks some common tracing assumptions. Silent Payments let you publish one reusable address
+without every payment to it being linked. All three make tracing harder. None of them hides
+the <em>amount</em>, and none of them gives you what Zcash has had since 2016: a shielded pool
+where the sender, the recipient and the value are simply not on the public record.</p>
+
+<p>Until now, the Bitcoin-native ways to get there all ran through a soft fork, usually new
+opcodes like OP_CAT, which means years of argument and possibly never. The point of this paper
+is to skip that argument entirely.</p>
+
+<h2>How It Works, in Plain English</h2>
+
+<p>Picture a vault with one public door in and one public door out, and a private room in
+between.</p>
+
+<ol>
+  <li><strong>The door in.</strong> You send ordinary bitcoin to a vault address. That payment is
+  a normal Bitcoin transaction, so everyone sees it.</li>
+  <li><strong>Your coins become notes.</strong> Inside, your balance exists as encrypted
+  "notes." Each note is a sealed amount addressed to its owner. Nobody else can read one.</li>
+  <li><strong>Paying someone means mailing an envelope.</strong> To send, your wallet builds a
+  sealed envelope (669 bytes in Bitsaga's test) and posts it inside a perfectly normal Bitcoin
+  transaction, in the OP_RETURN field Bitcoin already allows for attaching data. The envelope
+  holds the new notes, encrypted so only the recipient can open theirs, plus a small
+  mathematical proof.</li>
+  <li><strong>The proof does the trusting.</strong> That proof, 192 bytes, is a zero-knowledge
+  proof. In Bitsaga's words it says the sender <em>"spent notes she owns and created exactly
+  the value she consumed, without saying which notes or what value."</em> It proves you
+  didn't counterfeit anything while revealing nothing about what you actually did.</li>
+  <li><strong>Spent notes get punched, like a coat-check ticket.</strong> Each spend publishes a
+  "nullifier," a code that marks <em>some</em> note as spent without saying which one. If
+  anyone tries to spend the same note twice, the second nullifier matches the first and the
+  transfer is thrown out.</li>
+  <li><strong>The door out.</strong> When you want real bitcoin back, the vault pays you to an
+  ordinary address. Also public.</li>
+</ol>
+
+<p>The recipient opens their note with a <em>viewing key</em>. That key has a nice side
+effect: if an accountant needs to see your income, you hand them a viewing key that shows
+what you received, not a list of addresses that shows everything.</p>
+
+<h2>The Clever Part: Bitcoin as a Bulletin Board</h2>
+
+<p>Here's the move that makes it work without a fork. <strong>Bitcoin itself never checks the
+proofs.</strong> To a Bitcoin node, the envelope is just data it carries and ignores. The
+checking happens in software called an <em>indexer</em>, which reads every envelope in block
+order, verifies each proof (about 2.5 milliseconds apiece in the test) and keeps the private
+ledger up to date. If an envelope's proof fails, the transaction still gets mined, and the
+indexer simply doesn't count it.</p>
+
+<p>That sounds fragile until you see the guarantee the paper rests on: the rules are fixed and
+the input is the Bitcoin blockchain, so <em>any</em> two honest indexers replaying the same
+blocks end up with the same private ledger, without talking to each other. Bitcoin supplies
+the ordering and the permanence. The math supplies the validity. It's the same basic trick
+Ordinals and Runes use: meaning is read into data Bitcoin carries but doesn't interpret.
+The difference is that here the thing being tracked is money, and the tracking is encrypted.</p>
+
+<p>That is also why the design leans on the paper's Zcash lineage so openly. It's Zcash's
+shielded-note architecture (notes, nullifiers, a zero-knowledge proof per transfer), minus
+Zcash's own blockchain. For Zcash that was <a href="same-price-same-coin-count.html">the whole
+pitch against Bitcoin</a>: "Bitcoin, plus privacy." This is an attempt to make the "plus"
+available without leaving.</p>
+
+<h2>What the Demo Proved, and What It Didn't</h2>
+
+<p>It proved the private room works on real Bitcoin, today, with no one's permission. It also
+came with three problems, which Bitsaga lists itself rather than leaving you to find them:</p>
+
+<ul>
+  <li><strong>The vault is one company holding one key.</strong> <em>"Coins enter by paying a
+  vault we control... That is a custodian, not a bridge."</em> The shielded ledger may be
+  trustless, but the actual bitcoin is sitting in someone's wallet, and getting it back out
+  means that someone pays you.</li>
+  <li><strong>The lock's combination is public.</strong> This kind of proof system (Groth16,
+  the same one Zcash used for years) needs a one-time setup that produces a secret, which must
+  then be destroyed. In the test, that secret is generated from a published seed, so
+  <em>"anyone could forge a proof and empty the vault."</em> That's deliberate for a demo, and
+  the fix is known: a proper setup ceremony, or a newer proof system that needs no secret at
+  all, which is the road Zcash itself took in 2022.</li>
+  <li><strong>Proving is slow.</strong> About two seconds per proof on a sixteen-thread server,
+  nine on a single thread. Fine for a server, rough for a phone.</li>
+</ul>
+
+<p>And it's heavy. A plain Bitcoin payment is about 140 virtual bytes. The shielded transfer
+was 793, most of it the envelope, for a 2,382-satoshi fee at a quiet three sats per byte. On a
+busy fee day, every private payment costs five-and-a-half times a normal one. The envelope
+also only relays because Bitcoin Core raised its default OP_RETURN size limit in version 30,
+the change that had Bitcoin developers at each other's throats last year. The paper itself
+flags the risk that relay or mining policy tightens again around large data outputs.</p>
+
+<h2>Privacy Is the Size of the Crowd</h2>
+
+<p>This is the part that matters more than any of the cryptography, and both documents say it
+plainly. Bitsaga: <em>"with two depositors the link is obvious."</em> If Alice puts in 0.37
+BTC on Tuesday and Bob takes out 0.37 BTC on Wednesday, the encryption in between is
+decoration. The paper goes further: in the worst case the set of people you could be
+<em>"may collapse to a singleton."</em></p>
+
+<p>Encrypted notes don't make you anonymous. <em>Other people's</em> notes make you anonymous.
+Zcash learned this the hard way. A 2018 study, <a
+href="https://www.usenix.org/conference/usenixsecurity18/presentation/kappos">"An Empirical
+Analysis of Anonymity in Zcash"</a>, found that most of what flowed through its shielded pool
+could be linked anyway, because so few people used the pool and the ones who did moved money
+in and out in recognizable patterns. And even a full pool can't hide what the paper lists as
+public: when you transacted, how many notes went in and out, and which wallet paid the fee.</p>
+
+<h2>Could a Decentralized Escrow Replace the One Key?</h2>
+
+<p>This was my first instinct too: keep the private room, but hand the door to a group instead
+of one company, so no single party can run off with the coins. It's a good instinct, and the
+paper already lists it as a possible design: <em>"Federated or multisignature custody,
+BitVM-style bridges, and future covenant- or vault-based constructions remain useful
+comparison points, but the intended architecture is PIPE-based."</em> Here's how the options
+compare.</p>
+
+<div class="tw"><table class="cmp">
+<thead><tr><th>Who holds the door</th><th>Who you're trusting</th><th>Exists today?</th><th>The catch</th></tr></thead>
+<tbody>
+<tr><td><strong>One key</strong> (the demo)</td><td>One company</td><td>Yes</td><td>A custodian, by its own description</td></tr>
+<tr><td><strong>A federation</strong> (say 11 of 15 signers)</td><td>That most of a named group stays honest and reachable</td><td>Yes, as a pattern: Liquid and Fedimint work this way</td><td>Named people holding the bitcoin behind a privacy pool</td></tr>
+<tr><td><strong>A BitVM-style bridge</strong></td><td>That at least one watcher is honest and online to challenge a bad withdrawal</td><td>Early versions, on other projects</td><td>Complex; operators front the money and withdrawals wait out a challenge window</td></tr>
+<tr><td><strong>PIPEs v2</strong></td><td>Only the math</td><td>No, <a href="https://eprint.iacr.org/2026/186">paper only</a></td><td>Rests on witness encryption, which nobody has made practical yet</td></tr>
+</tbody>
+</table></div>
+
+<p>The federation is the one you could build this year, and it would be a real improvement:
+one rogue signer can't steal anything. Something very close already exists. Fedimint is a
+federation of "guardians" holding bitcoin in multisig and issuing private ecash against it.
+The difference is where the ledger lives. In Fedimint the federation runs the private ledger
+itself. In Shielded Bitcoin the ledger lives on Bitcoin and anyone can rebuild it, and the
+federation would only guard the door.</p>
+
+<p>But a federation has two problems, and I've already watched the first one happen. On
+September 6, <a href="liquid-network-peg-drain.html">roughly four thousand bitcoin walked out
+of Liquid's federation reserve</a> in one afternoon. The leading theory when I wrote about it,
+from developers who know that codebase, was a bug in the math that checks Liquid's hidden
+amounts, and the eleven-of-fifteen signers approved the withdrawal because it looked perfectly
+normal. A federation can only refuse what it can see, and a door-keeper for a shielded pool
+sees even less, because hiding amounts is the entire point. If a proof can be forged (and in
+the demo, remember, the setup secret is public), the signers will cheerfully approve a
+withdrawal that looks flawless. Decentralizing the keyholders doesn't help if the thing they're
+all checking is broken.</p>
+
+<p>The second problem isn't technical at all. It's legal. The prosecutions that hit Bitcoin privacy tools in
+the last two years turned on the charge of running an unlicensed money-transmitting business.
+Samourai Wallet's developers pleaded guilty to it, and one was <a
+href="https://www.coindesk.com/policy/2025/11/06/samourai-wallet-developer-sentenced-to-5-years-in-prison-for-unlicensed-money-transmitting">sentenced
+to five years</a> last November. Tornado Cash's Roman Storm was <a
+href="https://www.bankinfosecurity.com/cryptohack-roundup-verdict-in-tornado-cash-founders-case-a-29144">convicted
+on that count</a> in August 2025. The line those cases keep drawing is <em>custody</em>. A
+federation holding the bitcoin behind a shielded pool is a named group of people holding a
+mixer's money, and that's exactly the shape those cases were about. It doesn't matter how
+decentralized the signing is if every signer can be subpoenaed.</p>
+
+<p>So a decentralized escrow makes this <em>safer</em> but not <em>viable</em>, in the sense of
+something a normal person should put savings into. That's why the authors are betting on
+PIPEs v2. The idea: lock the vault's key inside a kind of encryption that only opens for
+someone holding a valid proof, so the coins move when the math says so and nobody ever holds
+them. If it works, there's no custodian to charge. It's elegant, it would give Bitcoin
+covenant-like powers with no soft fork, and as of today it's a research paper that no one has
+built.</p>
+
+<h2>Would I Build This, or Just Keep Building on Lightning?</h2>
+
+<div class="verdict">
+<p><strong>For a normal person, tomorrow: Lightning, without much hesitation.</strong> It's
+already live, already cheap, already instant, and its payments are private in a way the base
+chain isn't. They're routed through encrypted hops and never written to the blockchain one by
+one. Its weak spots are known and being worked on: opening and closing a channel is public, the
+service providers most phone wallets lean on can see a lot, and a normal invoice still points
+at the receiver's node, which newer invoice formats with "blinded paths" are fixing. Pair it
+with an ecash mint or a Fedimint and you get strong spending privacy today, as long as you
+trust the mint the way you'd trust a bank with pocket money.</p>
+
+<p><strong>But they aren't competing for the same job.</strong> Lightning protects
+<em>spending</em>. It does nothing for the balance sitting in cold storage, or for large
+amounts that belong on-chain, and that's precisely the job a shielded pool does. As I wrote
+when <a href="lightning-in-a-jar-review.html">reading a friend's Lightning wallet</a>, a
+Lightning wallet is a wallet, not a vault. A working shielded pool would be the vault.</p>
+
+<p><strong>So: spend engineering on Lightning now, and watch this.</strong> The milestones
+that would change my mind, in order: a real setup ceremony or a setup-free proof system, a
+peg-out that doesn't depend on one key, and a pool with enough users that "private" is true
+in practice and not only in the math. The first is routine. The second is the whole ballgame.
+The third can't be built, only earned.</p>
+</div>
+
+<p>What I actually find exciting here isn't the demo. It's that someone spelled out, in 56
+pages of honest analysis, how much of Zcash's privacy Bitcoin can get without changing a single
+rule. The answer turns out to be all of the private room. The door is the part nobody has
+figured out yet.</p>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>I read the paper and Bitsaga's write-up; I didn't run the code.</strong> The
+  size, fee and speed figures are Bitsaga's own from one test transfer, and the transaction
+  itself checks out on the public chain (793 virtual bytes, 2,382 satoshis, one data output).
+  One test isn't a benchmark.</li>
+  <li><strong>PIPEs v2 could arrive faster than I'm implying.</strong> Witness encryption has
+  gone from "theoretical" to "has a concrete candidate scheme" quickly, and the v2 paper alone
+  has ten authors. Press coverage has quoted storage requirements in the hundreds of terabytes
+  for the current version against a target of around 100 gigabytes. I haven't checked those
+  figures myself, and a gap like that can close suddenly or not at all.</li>
+  <li><strong>The legal picture is moving.</strong> US prosecutors have signaled since 2025
+  that writing genuinely non-custodial software isn't by itself the target, and the Tornado
+  Cash case still has post-trial and appeal steps that could change what it stands for. How
+  any of that applies to a federation holding a shielded pool's bitcoin hasn't been tested, and
+  I'm not a lawyer. Treat my custody point as a reading of the pattern, not legal advice.</li>
+  <li><strong>I'm describing Lightning's privacy in broad strokes.</strong> How private a given
+  Lightning payment is depends heavily on the wallet, the service provider and the invoice
+  format, and some popular wallets are simply custodial accounts with a Lightning front end.</li>
+  <li><strong>I hold bitcoin, so I'd like it to get more private.</strong> That's a bias worth
+  naming. None of this is investment advice. It's one person's reading of a new paper and a
+  day-old demo.</li>
+</ul>
