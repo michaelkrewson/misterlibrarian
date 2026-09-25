@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-24",
+  "date": "2026-09-25",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,15 +7,15 @@
       "label": "World",
       "items": [
         {
-          "text": "Chinese President Xi Jinping meets President Trump at the White House on September 24 for an arrival ceremony, a Rose Garden military review and a state dinner in the East Room, with AI, rare earths, trade and Taiwan atop the agenda on his first Washington visit in more than a decade.",
+          "text": "Treasury Secretary Scott Bessent announces on September 24 that the US and China will extend their trade truce two more months, through January 10, 2027, as President Xi Jinping begins a White House state visit and the two sides work toward a broader deal on tariffs and rare earths.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
+          "source_href": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
           "breaking": false
         },
         {
-          "text": "Fifty countries and the EU issue a joint statement on September 23, delivered by Danish Foreign Minister Lars Løkke Rasmussen ahead of a UN Security Council meeting, calling on Russia to accept the full, immediate and unconditional ceasefire Ukraine says it agreed to as early as March 2025; the United States does not join the statement.",
+          "text": "President Zelensky says on September 25 that Washington has proposed a technical-level, three-way meeting between Ukraine, Russia and the US in the United Arab Emirates, with the Kremlin saying such talks could happen soon.",
           "href": "",
-          "source_href": "https://www.pravda.com.ua/eng/news/2026/09/23/8054796/",
+          "source_href": "https://www.usnews.com/news/world/articles/2026-09-25/us-proposes-trilateral-meeting-with-ukraine-russia-in-uae-zelenskiy-says",
           "breaking": false
         }
       ]
@@ -24,15 +24,15 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "The 10-year Treasury yield jumps to 5.11% on September 24, its highest level since 2007, and the 30-year touches a post-2004 peak of 5.438%, after S&P Global flash PMI data show new orders and input/output prices at multi-year highs and fuel bets on another Fed rate hike this year.",
+          "text": "Akamai Technologies shares surge more than 20% in premarket trading on September 25 after the company discloses an $11.6 billion, seven-year cloud-computing deal with Anthropic, plus a warrant that could give Anthropic up to roughly 5% of Akamai's common shares.",
           "href": "",
-          "source_href": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-24-2026",
+          "source_href": "https://siliconangle.com/2026/09/24/akamai-shares-jump-more-than-20-on-11-6b-anthropic-computing-deal/",
           "breaking": false
         },
         {
-          "text": "The Dow Jones Industrial Average falls 360 points (0.69%) on September 23 to close at 51,503, with US stock futures sliding further Thursday morning as inflation fears and the bond selloff outweigh hopes for Middle East diplomacy.",
+          "text": "The S&P 500 closes essentially flat on September 24 at 7,704.13 (down 1.90 points), the Dow falls 161.61 points (0.3%) to 51,349.98, and the Nasdaq edges up 3.34 points to 26,939.37, as Treasury yields hold near two-decade highs.",
           "href": "",
-          "source_href": "https://tradingeconomics.com/united-states/stock-market",
+          "source_href": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-24-123300781.html",
           "breaking": false
         }
       ]
@@ -41,15 +41,15 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin opens at $84,370.41 on September 24, down 2.1% from Wednesday, then falls further to $83,462.29 by 7:33 a.m. ET as CME's FedWatch tool puts the odds of an October Fed rate hike at 75.3%.",
+          "text": "Bitcoin opens September 25 at $84,378.12, roughly flat from Thursday, before climbing to $85,199.84 by 7:14 a.m. ET.",
           "href": "",
-          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-september-24-2026-crypto-prices-lose-ground-as-rate-hike-expectations-grow-114459916.html",
+          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-september-25-2026-is-bitcoin-finally-on-a-path-to-250000-113048042.html",
           "breaking": false
         },
         {
-          "text": "The CFTC opens an investigation into Polymarket after a Wall Street Journal report that CEO Shayne Coplan told staff to \"keep growing and pay a fine\" rather than fix compliance gaps exposed by a February attempt to steal $10 million from its US platform, an episode that already cost the company its chief compliance officer and its US CEO.",
+          "text": "The Federal Reserve proposes on September 24 that payment-stablecoin issuers hold reserves almost entirely in short-term Treasury bills or other highly liquid assets, its most concrete stablecoin rulemaking since Congress passed the GENIUS Act.",
           "href": "",
-          "source_href": "https://www.theblock.co/news/regulation/2026-09-20-polymarket-faced-10-million-fraud-attempt-as-its-ceo-pushed-growth-over-compliance-concerns-wsj-415875",
+          "source_href": "https://en.cryptonomist.ch/2026/09/25/stablecoin-regulation-us/",
           "breaking": false
         }
       ]
@@ -58,15 +58,21 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Cisco Talos discloses CLOSEDQUORUM on September 22, a Windows implant it calls the first documented malware to hand tactical attack decisions to a panel of four commercial AI models — DeepSeek, Qwen, Mistral and Google Gemini — that vote on each move, while releasing an open-source detection toolkit called CAIRN and stating it has not confirmed the malware deployed against real victims.",
+          "text": "Anthropic says its Claude model spent 21.5 hours and 949 autonomous agent sessions sifting roughly 200,000 bacteriophage enzyme clusters down to 3,564 candidates, surfacing a previously undescribed, CRISPR-like enzyme system it calls array-associated reverse transcriptases (ART).",
           "href": "",
-          "source_href": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+          "source_href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
           "breaking": false
         },
         {
-          "text": "OpenAI launches GPT-6 Sol and GPT-6 Luna on September 22, roughly 90 minutes after Anthropic's own Claude Opus 5.5 price cut, pricing Sol at $2/$10 per million input/output tokens (down from $4/$20) and Luna at $0.10/$0.50 (down from $0.20/$1.20).",
+          "text": "Amazon opens its Seller Central APIs to outside AI agents at its Accelerate conference on September 23, launching a US beta plugin that lets sellers manage inventory, pricing, listings and analytics through Anthropic's Claude in about 60 seconds with no coding.",
           "href": "",
-          "source_href": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
+          "source_href": "https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/",
+          "breaking": false
+        },
+        {
+          "text": "OpenAI's Sam Altman and Anthropic's Dario Amodei tell the UN Security Council on September 23 that the AI industry needs binding international standards, with Amodei warning that, managed poorly, AI \"could be a risk to humanity as a whole.\"",
+          "href": "",
+          "source_href": "https://www.cnn.com/2026/09/23/tech/altman-amodei-ai-safety-un-security-council",
           "breaking": false
         }
       ]
@@ -75,15 +81,15 @@
       "label": "Science & space",
       "items": [
         {
-          "text": "Paleontologists from Fundación Dinópolis identify 14 tail vertebrae found at El Castellar, Teruel, Spain as the first confirmed Diplodocus fossil found outside North America, suggesting the roughly 150-million-year-old sauropod crossed between continents during the Late Jurassic.",
+          "text": "A study published in Icarus finds Uranus's moon Ariel may once have held a subsurface ocean more than 100 miles (170 km) deep, based on tidal-stress modeling of the fractures and ridges across its surface.",
           "href": "",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260918024807.htm",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260923035951.htm",
           "breaking": false
         },
         {
-          "text": "A study led by Pablo Santos-Sanz of Spain's IAA-CSIC, using a James Webb Space Telescope stellar occultation from October 2022, finds the centaur Chariklo's ring system has visibly changed in just a few years — its inner ring growing denser and its outer ring fainter.",
+          "text": "SpaceX completes a wet dress rehearsal on September 24 ahead of Starship Flight 14, targeted for September 28 as the vehicle's first-ever orbital launch attempt, set to carry 26 upgraded Starlink V3 satellites roughly 171 miles above Earth.",
           "href": "",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260915232124.htm",
+          "source_href": "https://www.space.com/news/live/spacex-starship-flight-14-live-updates-sept-24-2026-starship-first-orbital-launch-attempt",
           "breaking": false
         }
       ]
@@ -92,15 +98,15 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "A Peking University-led study tracking more than 95,000 adults' wrist-monitor sleep data over nine years finds each 47.6-minute increase in REM sleep is tied to a lower risk of 83 diseases, including heart failure, dementia and Parkinson's, while more deep sleep is linked to lower risk of seven conditions including type 2 diabetes.",
+          "text": "A Bayesian meta-analysis of 110 randomized trials and 22,608 patients, published in JAMA Network Open, finds a 94.4% probability that the antibiotic cefepime carries higher all-cause mortality than other beta-lactam antibiotics — 6.6% of cefepime patients died versus 6.2% on other beta-lactams.",
           "href": "",
-          "source_href": "https://www.medicalnewstoday.com/articles/more-dream-sleep-linked-to-lower-risk-of-83-diseases-including-diabetes",
+          "source_href": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2853883",
           "breaking": false
         },
         {
-          "text": "A Mayo Clinic-led prospective study of 35,878 adults age 50 and older, published in Nature Medicine, finds a multicancer blood test detected signals across 17 cancer types with a positive predictive value of 60.3% and 99.64% specificity, catching 53% of cancers at stage 1 or 2.",
+          "text": "A study of 1,496 US healthcare personnel in the American Journal of Industrial Medicine finds 169 of them, or 11.3%, reported at least one persistent moderate-or-severe long-COVID symptom at both three and six months after infection.",
           "href": "",
-          "source_href": "https://newsnetwork.mayoclinic.org/discussion/multicancer-blood-test-detects-17-cancer-types-in-large-prospective-study/",
+          "source_href": "https://www.cidrap.umn.edu/covid-19/more-1-10-us-healthcare-workers-report-ongoing-long-covid-symptoms-study-finds",
           "breaking": false
         }
       ]
