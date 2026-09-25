@@ -6184,11 +6184,32 @@ def check_forward_claims(chapters):
             return None
         return es_to_en.get(m.group(1), m.group(1)), int(m.group(2))
 
+    # Any book name, bare or possessive ("John's", "Luke will say"), in plain prose.
+    book_word_re = re.compile(r"\b(?:" + "|".join(re.escape(n) for n in names + [
+        "Psalm", "Salmo", "Song of Songs", "Cantar de los Cantares"]) + r")\b")
+
+    def same_book_ref(back, slug):
+        """A BARE in-book citation — "(14:22, not yet on these pages)" — names no
+        book, so last_ref() cannot see it, and ~9 of them went stale in Joshua 7 and
+        Mark 6–14 (review of 2026-09-25) while the rest of this guard stayed green.
+        A bare N:MM means the page's OWN book unless another book is named just
+        before it ("John's (12:3, …)", "Luke will say it (4:16, …)"), so any book
+        word in the lead-in makes this return None: skipping is the safe failure,
+        guessing is not."""
+        book = book_of_slug.get(slug)
+        tail = re.sub(r"<[^>]+>", "", back)[-200:]   # measured in VISIBLE text, not markup
+        tail = tail.split(" ", 1)[-1]   # never start mid-word ("…alm 95:11" must not read as "5:11")
+        if not book or book_word_re.search(tail):
+            return None
+        cites = list(re.finditer(r"(?<![\d:])(\d{1,3}):\d+", tail))
+        return (book, int(cites[-1].group(1))) if cites else None
+
     def scan(slug, body, where):
         u = re.sub(r"\s+", " ", html.unescape(body))
         for m in re.finditer(r"(?:not yet|neither yet) on these pages|"
                              r"(?:todavía|aún) no(?: \w+){0,4}? (?:en |a )?estas páginas( en español)?", u):
-            ref = last_ref(u[max(0, m.start() - 130):m.start()])
+            back = u[max(0, m.start() - 130):m.start()]
+            ref = last_ref(back) or same_book_ref(u[max(0, m.start() - 700):m.start()], slug)
             if not ref:
                 continue
             if m.group(1):
