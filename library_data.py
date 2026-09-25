@@ -28205,6 +28205,16 @@ DICTIONARY_ES["stephanos"] = ("corona",
     "espinas por los soldados burlones (Marcos 15:17; Mateo 27:29; Juan 19:2, los tres compartiendo el "
     "participio \u00abtrenzando\u00bb). La palabra misma forma parte de la burla: hasta el objeto elegido para "
     "humillarlo es la corona equivocada para un rey.")
+DICTIONARY_ES["euthys"] = ("enseguida",
+    "ENSEGUIDA, al instante \u2014la palabra firma de Marcos y el motor de su Evangelio. Aparece unas cuarenta "
+    "veces en estos diecis\u00e9is cap\u00edtulos breves (once solo en el cap\u00edtulo 1), muchas m\u00e1s que en todo el "
+    "resto del Nuevo Testamento junto, empujando el relato a paso sin aliento: Jes\u00fas llama, y \u00abENSEGUIDA "
+    "dejaron las redes\u00bb; habla, y \u00abENSEGUIDA\u00bb la lepra desaparece. \u26a0 No es relleno. El EUTHYS "
+    "incesante es la teolog\u00eda de Marcos hecha adverbio \u2014un reino que irrumpe sin pausa para deliberar, un "
+    "Jes\u00fas siempre en movimiento, un relato que nunca se sienta. La mayor\u00eda de las traducciones lo var\u00edan "
+    "(\u00abal punto\u00bb, \u00abluego\u00bb, \u00abenseguida\u00bb) por elegancia; mantenerlo constante deja o\u00edr el tambor. "
+    "La misma palabra, EUTHEIAS, en 1:3, \u00abenderezad sus sendas\u00bb \u2014la ra\u00edz es \u00abrecto\u00bb, y en el "
+    "tiempo, \u00abderecho hacia\u00bb, de ah\u00ed \u00abal instante\u00bb.")
 DICTIONARY_ES["porphyra"] = ("p\u00farpura",
     "P\u00daRPURA \u2014el color del tinte real/imperial, de una industria fenicia del caracol m\u00farice tan costosa que "
     "se volvi\u00f3 sin\u00f3nimo de riqueza y rango (el rico de Lucas 16:19; Lidia, \u00abvendedora de p\u00farpura\u00bb en "
