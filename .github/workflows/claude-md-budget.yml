@@ -1,0 +1,24 @@
+name: CLAUDE.md budget
+
+# CLAUDE.md is loaded in full into every Claude session in this repo. It was cut
+# 130KB -> 53KB on 2026-09-25 by moving surface-specific detail into claude-docs/.
+# This fails the push (GitHub emails the owner) if it regrows past the budget the
+# file itself states — new dated history belongs in claude-docs/*.md.
+on:
+  push:
+    paths: ["CLAUDE.md"]
+  pull_request:
+    paths: ["CLAUDE.md"]
+
+jobs:
+  budget:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          size=$(wc -c < CLAUDE.md)
+          echo "CLAUDE.md is $size bytes (budget 70000)"
+          if [ "$size" -gt 70000 ]; then
+            echo "::error::CLAUDE.md is $size bytes, over its 70,000-byte budget — move dated history into claude-docs/*.md"
+            exit 1
+          fi
