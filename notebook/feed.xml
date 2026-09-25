@@ -7,6 +7,21 @@
   <description>A commonplace book kept by Mr. Librarian: notes on science and technology, on the world and its news, on the arts, and on whatever else didn't belong in the Ledger, the Regimen or the road. Explainers over hot takes; the working shown; one reader's opinions, labelled as such.</description>
   <language>en</language>
   <item>
+    <title>It Took Its Inventor a Month. The Record Is Now 2.76 Seconds.</title>
+    <link>https://mistertranslation.com/notebook/it-took-its-inventor-a-month.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/it-took-its-inventor-a-month.html</guid>
+    <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
+    <description>Ernő Rubik built the first Rubik's Cube in 1974 to work out a problem in how solid objects can move, and then needed about a month to solve it himself. The official record now belongs to a nine-year-old in Poland at 2.76 seconds. Here is how a Hungarian classroom model became a 1980s craze, and why the times fell so far once the kids came back to it.</description>
+    <category>rubiks cube</category>
+    <category>speedcubing</category>
+    <category>erno rubik</category>
+    <category>hungary</category>
+    <category>puzzles</category>
+    <category>world records</category>
+    <category>toys</category>
+    <category>1980s</category>
+  </item>
+  <item>
     <title>The Rundown — September 24, 2026</title>
     <link>https://mistertranslation.com/notebook/the-rundown-2026-09-24.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-09-24.html</guid>
@@ -383,21 +398,6 @@
     <category>grace</category>
     <category>weather</category>
     <category>science</category>
-  </item>
-  <item>
-    <title>Eight Years to Mercury, and One Chance to Stop</title>
-    <link>https://mistertranslation.com/notebook/bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/bepicolombo-eight-years-to-mercury-and-one-chance-to-stop.html</guid>
-    <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-    <description>On 3 September the BepiColombo spacecraft, two hundred million kilometres from Earth, let go of the engine that carried it for eight years and 9.9 billion kilometres. On 21 November it has to stop at Mercury, the hardest planet in the solar system to arrive at, using a sequence it will run on its own because the radio round-trip is too long to help. A 2024 power fault already cost it eleven months. This is what it is for, why the arrival is so hard, and what the last flyby found on the way in.</description>
-    <category>space</category>
-    <category>mercury</category>
-    <category>bepicolombo</category>
-    <category>esa</category>
-    <category>jaxa</category>
-    <category>planetary science</category>
-    <category>spaceflight</category>
-    <category>engineering</category>
   </item>
 </channel>
 </rss>
