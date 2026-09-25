@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25 07:31 UTC",
+ "generated": "2026-09-25 13:33 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-24",
@@ -66,18 +66,18 @@
     "m0": 3967.8,
     "m0_label": "Base money (ECB weekly statement, hand-curated)",
     "m0_date": "2026-09-04",
-    "m1": 11323.00412516002,
-    "m1_date": "2026-07",
-    "m2": 16457.179071542698,
-    "m2_date": "2026-07",
-    "m3": 17637.71825767558,
-    "m3_date": "2026-07",
+    "m1": 11292.63969074594,
+    "m1_date": "2026-08",
+    "m2": 16441.0004632149,
+    "m2_date": "2026-08",
+    "m3": 17628.99235301954,
+    "m3_date": "2026-08",
     "usd_m0": 4510.196194330143,
-    "usd_m1": 12870.85289421877,
-    "usd_m2": 18706.86688287755,
-    "usd_m3": 20048.78516115623,
-    "broad_usd": 20048.78516115623,
-    "broad_yoy_pct": 4.088352110312976,
+    "usd_m1": 12836.337657428263,
+    "usd_m2": 18688.476667214065,
+    "usd_m3": 20038.86642987649,
+    "broad_usd": 20038.86642987649,
+    "broad_yoy_pct": 4.002702042669748,
     "volatility_pct": 5.388656640555816,
     "turnover_usd": 2774400000000.0,
     "source": "European Central Bank BSI dataset (billions of euro → USD at today's rate)"
@@ -134,9 +134,9 @@
     "m0": 432.551687,
     "m0_date": "2026-07-01",
     "usd_m0": 83.49129227146388,
-    "m1": 647.172339,
-    "m1_date": "2026-07-01",
-    "usd_m1": 124.91745271000617,
+    "m1": null,
+    "m1_date": null,
+    "usd_m1": null,
     "m2": 7680.857903,
     "m2_date": "2026-07-01",
     "usd_m2": 1482.5621338403337,
@@ -219,19 +219,19 @@
     "flag": "🇮🇳",
     "currency": "INR",
     "source": "Reserve Bank of India — Weekly Statistical Supplement: \"Reserve Money: Components and Sources\" for M0, \"Money Stock: Components and Sources\" for M3 (M1 has no row of its own there — derived by summing that same table's own component rows: Currency with the Public + Demand Deposits with Banks + 'Other' Deposits with the RBI, the RBI's own textbook M1 definition). Not RBI's DBIE portal (a JS app with no confirmed keyless API) — these are separate, permanent, server-rendered WSS release pages, crawled for the latest release each time. No M2 published (needs post office savings-bank data RBI doesn't report on this cadence). ₹ Crore.",
-    "m0": 52766.42,
-    "m0_date": "Aug 31, 2026",
-    "usd_m0": 549.8793247186328,
-    "m1": 79198.82,
-    "m1_date": "Aug 31, 2026",
-    "usd_m1": 825.3315964985412,
+    "m0": 52718.73,
+    "m0_date": "Sep 15, 2026",
+    "usd_m0": 549.3823468111714,
+    "m1": 78250.13,
+    "m1_date": "Sep 15, 2026",
+    "usd_m1": 815.4452897040435,
     "m2": null,
     "m2_date": null,
     "usd_m2": null,
-    "m3": 332216.48,
-    "m3_date": "Aug 31, 2026",
-    "usd_m3": 3462.030846185911,
-    "broad_usd": 3462.030846185911,
+    "m3": 330674.46,
+    "m3_date": "Sep 15, 2026",
+    "usd_m3": 3445.961442267612,
+    "broad_usd": 3445.961442267612,
     "broad_yoy_pct": null,
     "volatility_pct": 5.226850581301037,
     "turnover_usd": 182400000000.0
@@ -464,7 +464,7 @@
     "broad_usd": null
    }
   ],
-  "total_broad_usd_b": 126259.42684031425,
+  "total_broad_usd_b": 126233.4387051162,
   "n_resolved": 15,
   "n_total": 20
  },
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1127039862716.645
+    "usd": 1130935919310.5483
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 464922997591.8288
+    "usd": 466530186805.2244
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 339788730281.7181
+    "usd": 340963343680.00305
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 337710087967.5966
+    "usd": 338877515721.1123
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 320526644837.5261
+    "usd": 321634671260.9491
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 318586578677.6794
+    "usd": 319687898499.3177
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 144119200445.7532
+    "usd": 144617405149.7566
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 121947015761.79117
+    "usd": 122368573588.25557
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 117235426516.44923
+    "usd": 117640696881.43661
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 87995857964.4743
+    "usd": 88300050259.70715
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 84808606416.15477
+    "usd": 85101780722.74138
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 80651321787.91188
+    "usd": 80930124804.95993
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 58756289412.49938
+    "usd": 58959403637.97769
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 57647680178.30128
+    "usd": 57846962059.90264
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 53074667087.23411
+    "usd": 53258140550.343056
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3714810967643.5635,
+  "total_usd": 3727652672932.2354,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4310.2001953125,
-  "price_as_of": "2026-09-25 07:29 UTC",
-  "world_market_value_usd": 29969172004231.555,
+  "price_usd_oz": 4325.10009765625,
+  "price_as_of": "2026-09-25 13:31 UTC",
+  "world_market_value_usd": 30072772235300.105,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,26 +2003,26 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 84039.3203125,
-  "market_cap_usd": 1688272208706.836,
+  "price_usd": 83965.3203125,
+  "market_cap_usd": 1686794013688.8672,
   "btc_rank": 11,
-  "volatility_pct": 37.41126765569822,
-  "turnover_usd": 37036257455.21347,
-  "broad_yoy_pct": 0.8181685816793457,
+  "volatility_pct": 37.41224438067269,
+  "turnover_usd": 37772542032.12542,
+  "broad_yoy_pct": 0.8181645089955163,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
-    "usd": 126259426840314.25,
+    "usd": 126233438705116.2,
     "note": "The 15 economies on the Money Supply page with a real, current figure today — a genuine floor under the true global figure, not the whole world's money supply."
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 29969172004231.555,
+    "usd": 30072772235300.105,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1688272208706.836,
+    "usd": 1686794013688.8672,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
