@@ -1,0 +1,226 @@
+title: The Fed Wrote the House Rules. Nobody Lives There Yet.
+date: 2026-09-25
+tags: federal reserve, stablecoins, genius act, usdc, tether, bank regulation, treasury bills, crypto regulation, michael barr
+summary: On September 24 the Federal Reserve proposed its rulebook for the stablecoin issuers it will supervise under the GENIUS Act — Treasury bills of 93 days or less, a two-business-day redemption promise, a capital charge that starts at two percent, and an automatic wind-down for anyone who falls short. The headlines say the Fed is telling stablecoins what to hold. Mostly Congress already did that. What the Fed actually decided is more interesting, and the list of issuers it applies to today is empty.
+meta_desc: The Fed’s Sept. 24 GENIUS Act stablecoin proposal: 93-day T-bills, 2-day redemption, a 2%-to-1% capital charge — and who it actually covers.
+hero: fed-stablecoin-capital-charge.svg
+hero_alt: A line chart of the Federal Reserve's proposed operational-risk capital charge for the stablecoin issuers it would supervise, rising in three tiers: 2.0 percent of the first 20 billion dollars outstanding, 1.5 percent of the next 30 billion, and 1.0 percent above 50 billion. Marked points: 10 billion dollars outstanding requires 200 million in capital, the size at which a large state-chartered issuer must move to the Fed; 75 billion, about USDC's size in late 2025, requires 1.1 billion; 180 billion, about USDT's size, would require 2.15 billion.
+hero_credit: One of the numbers the Fed genuinely chose for itself rather than inherited from Congress. Tiers from footnote 7 of the Board staff memo of September 3, 2026; issuer sizes from the proposal's own economic analysis. Neither USDC nor USDT is supervised by the Fed — they're marked for scale only.
+draft: false
+---
+
+<p>The headline on Thursday's news was that the Federal Reserve wants stablecoin issuers to hold
+their reserves "almost entirely in short-term Treasury bills." That's true in the way it's true that
+a restaurant health inspector wants the kitchen to have a sink: it's in the rules, but the inspector
+didn't write that part. Congress did, fourteen months ago, in the GENIUS Act. What the Fed did on
+September 24 is fill in the blanks Congress left for it — and those blanks turn out to be where the
+real decisions live. So I read the proposal, the staff memo that went to the Board, and Governor
+Barr's statement. Here's what's actually new, what isn't, and the part almost nobody mentioned: as of
+today, the Fed supervises zero stablecoin issuers.</p>
+
+<h2>What Was Actually Proposed</h2>
+
+<p>The Board <a href="https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm"
+rel="noopener" target="_blank">requested comment on two proposals</a>. The big one, <a
+href="https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20260924a4.pdf"
+rel="noopener" target="_blank">Docket R-1899</a>, is the rulebook itself — reserves, capital,
+redemption, what an issuer may and may not do, supervision, enforcement — touching six parts of the
+Fed's regulations. The small one, <a
+href="https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20260924a3.pdf"
+rel="noopener" target="_blank">Docket R-1900</a>, is the application form: how a bank the Fed
+supervises asks permission to set up a subsidiary that issues stablecoins. Both are open for 60 days
+once they appear in the Federal Register, which they haven't yet.</p>
+
+<p>The Fed is late, and it's not alone. The GENIUS Act, signed in July 2025, gave the regulators a
+year to write their rules. The FDIC proposed in December, the NCUA in February, the OCC in March,
+Treasury in April — the Board's own <a
+href="https://www.federalreserve.gov/newsevents/pressreleases/files/bcreg20260924a1.pdf"
+rel="noopener" target="_blank">staff memo</a> lists them in a footnote. The law switches on at the
+earlier of <strong>January 18, 2027</strong> or 120 days after the regulators finalize their rules.
+At the current pace, the calendar is going to win.</p>
+
+<h2>The Part Congress Already Wrote</h2>
+
+<p>Under the proposal, a Fed-supervised issuer's reserves must at all times be worth at least the
+face value of every coin it has outstanding, kept separate from its other assets, and made up only
+of:</p>
+
+<ul>
+  <li>U.S. dollar cash, and balances at a Federal Reserve Bank;</li>
+  <li>demand deposits at an insured bank or credit union;</li>
+  <li>Treasuries with <strong>93 days or less</strong> to maturity;</li>
+  <li>overnight repo and reverse repo backed by Treasuries;</li>
+  <li>shares of funds that hold nothing but the above — a money market fund with even one
+  Treasury maturing past 93 days is out;</li>
+  <li>and tokenized versions of some of those.</li>
+</ul>
+
+<p>That list is, almost word for word, section 4(a)(1) of the Act. The 93 days is Congress's number,
+not the Fed's. So "the Fed proposes Treasury bills" is really "the Fed proposes to obey the statute,"
+which is reassuring but not news. Ninety-three days is roughly a thirteen-week T-bill plus a
+weekend, which is a very specific way of saying "nothing that can lose real money if rates jump."</p>
+
+<h2>The Part the Fed Actually Chose</h2>
+
+<p>This is where the proposal earns its 392 pages.</p>
+
+<p><strong>What "timely" means.</strong> The Act says holders must be able to redeem in a "timely"
+way and leaves the word to the regulators. The Fed's definition: <strong>no later than two business
+days</strong> after the request, as an outer limit — an issuer can promise faster — with the Board
+keeping the power to stretch it if an issuer's safety or financial stability is at stake. And if an
+issuer's reserves ever fall below one-to-one, the proposal requires it to notify the Fed and then
+liquidate and redeem, unless it has a credible plan to get back to full backing and the Board tells it
+to proceed with that plan.</p>
+
+<p><strong>A capital charge that shrinks as you grow.</strong> Reserves cover the coins. Capital is
+the issuer's own money, sitting behind the reserves, to absorb the things that go wrong in running
+the business — a botched smart contract, a mis-mint, a failed redemption system. The Fed's answer
+is a simple sliding scale: <strong>2.0 percent of the first $20 billion outstanding, 1.5 percent of
+the next $30 billion, 1.0 percent above $50 billion</strong>, plus a quarter of the issuer's average
+non-reserve revenue over three years, plus a "loss scalar" that nudges the requirement up or down
+based on the issuer's own history of operational losses. On the chart above, a $10 billion issuer
+holds $200 million; one USDC's size (the proposal pegs Circle's coin at about $70–75 billion in late
+2025) would hold about <strong>$1.1 billion</strong>. The staff's reason for the taper is in a
+footnote and it's a fair one: running $100 billion of coins is not five times riskier than running
+$20 billion.</p>
+
+<p><strong>Two percent on the uninsured bank deposit.</strong> Reserves held as uninsured deposits
+at a bank, or as reverse repo that isn't fully covered by collateral, carry an extra two percent
+charge — the bank-capital rulebook's 20 percent risk weight times its 8 percent minimum, borrowed
+directly. The proposal names exactly why this line exists: in March 2023, Circle had
+<strong>$3.3 billion</strong> of USDC's reserves sitting as uninsured deposits at Silicon Valley
+Bank when the FDIC took it over, and the coin briefly broke its peg. Somebody at the Fed remembered.
+The proposal also asks issuers to avoid parking their uninsured deposits at "one or a small number"
+of banks — a principle, not a number, which the comment letters will spend 60 days trying to turn
+into a number.</p>
+
+<p><strong>An interest-rate charge it hasn't made up its mind about.</strong> The staff considered
+making issuers hold capital against a two-percentage-point jump in interest rates, and instead turned
+it into Question 174: should the shock be half a point, three points, something in between, or
+nothing? With nothing past 93 days allowed, the honest answer is probably "small." Barr's statement
+says he wants public input on exactly this, and on foreign-currency risk.</p>
+
+<p><strong>An automatic wind-down.</strong> Miss the capital minimum at a quarter's end and you owe
+the Fed a plan. Still short at the end of the next quarter, and the proposal requires the issuer to
+liquidate all of its reserves and redeem every coin outstanding. This is the stablecoin version of
+the death penalty, and it has a delightful twist: the harshest sentence the rule can hand down is
+<em>give everyone their money back</em> — which is also, if you think about it, the entire
+product.</p>
+
+<h2>The Rule About Interest</h2>
+
+<p>The GENIUS Act bans an issuer from paying holders interest or yield just for holding the coin. The
+obvious workaround is to have someone else pay it: the issuer pays an affiliate or partner, and the
+partner pays the holder. The Fed, following the OCC's March proposal, says it will
+<strong>presume</strong> that arrangement is a banned interest payment when the middleman is either
+an affiliate of the issuer, a company offering "yield as a service" on the issuer's behalf, or a
+brand the issuer mints white-label coins for. The issuer can try to rebut the presumption in writing.
+The preamble is careful about what's <em>not</em> caught: a merchant who gives you a discount for
+paying in stablecoins is fine, and so is an issuer splitting profits with a white-label partner.</p>
+
+<p>What the presumption doesn't obviously reach is an unaffiliated distributor that pays "rewards"
+on a stablecoin balance out of its own revenue share — the Fed says anything outside the presumption
+will be judged "case by case," and Question 37 asks whether the scope is right. That's the question
+every exchange paying rewards on a dollar-coin balance will be reading closely, because it's the
+difference between a line item and a business model.</p>
+
+<h2>Who This Actually Applies To</h2>
+
+<p>Now the part that gets lost. The Fed doesn't regulate stablecoin issuers generally. Under the Act
+it gets two kinds: subsidiaries of <strong>state member banks</strong> — state-chartered banks that
+joined the Federal Reserve System, 703 of them at the end of 2025, most of them community banks — and
+<strong>state-chartered uninsured issuers that grow past $10 billion</strong> outstanding, which
+must move under the Fed within 360 days unless they win a waiver to stay with their state regulator.
+That $10 billion line is the orange dot on the chart.</p>
+
+<p>Neither group has any members yet. No state member bank has an approved stablecoin subsidiary —
+the application process for one was proposed the same afternoon. And the two coins that make up the
+market mostly aren't headed here: the proposal's own economic analysis puts Tether's USDT at roughly
+58 percent of a $317 billion market and Circle's USDC at about a quarter, and Circle's route runs
+through the <strong>OCC</strong>, which in <a
+href="https://occ.gov/news-issuances/news-releases/2025/nr-occ-2025-125.html" rel="noopener"
+target="_blank">December 2025</a> conditionally approved a national trust bank for it alongside
+Paxos, BitGo, Ripple and Fidelity Digital Assets. Tether issues USDT from outside the United States,
+which puts it under the Act's separate foreign-issuer rules, not this one.</p>
+
+<p>So the Fed has written the house rules for a house with no tenants. That's less silly than it
+sounds, for three reasons:</p>
+
+<ul>
+  <li><strong>It's the template.</strong> The staff memo says the proposal was written in
+  consultation with the OCC, FDIC and NCUA, and the yield presumption is lifted straight from the OCC.
+  The agencies are converging on one playbook, and the Fed's capital numbers are now on the table for
+  everyone to be compared against.</li>
+  <li><strong>One piece applies to everybody.</strong> The Act gives the Fed <em>exclusive</em>
+  authority over its tying ban for every issuer, whoever supervises them: no issuer may require you
+  to buy another product, or promise not to use a competitor, as the price of its stablecoin
+  services. That rule reaches Circle, Paxos and every bank issuer from day one.</li>
+  <li><strong>The $10 billion escalator.</strong> Any state-chartered issuer that succeeds lands at
+  the Fed eventually. The rule is written for the winners, not the applicants.</li>
+</ul>
+
+<h2>Barr's One Objection</h2>
+
+<p>Governor Michael Barr <a
+href="https://www.federalreserve.gov/newsevents/pressreleases/barr-statement-20260924.htm"
+rel="noopener" target="_blank">supported the proposal</a>, and his statement contains the best
+single sentence anyone wrote about it on Thursday: "Stablecoins will only be stable if they can be
+reliably and promptly redeemed at par in a range of conditions." His objection is narrower than the
+headlines made it sound. The proposal says the Fed can only take supervisory or enforcement action
+over an issuer's anti-money-laundering program if the deficiency is "significant or systemic" — the
+same standard the Board proposed for ordinary banks in July. Barr says that standard "may have unknown
+effects" on the Fed's ability to confirm that an issuer's compliance program actually works, and
+that he'll want it addressed before any final rule. Translated: he's happy with the vault, less
+happy that the guard is only allowed to act on big problems.</p>
+
+<p>This connects to something I wrote <a href="after-clarity-failed-what-selig-and-atkins-can-still-do.html">after
+the CLARITY Act failed</a>: when Congress stalls, the agencies build the framework anyway. Stablecoins
+are the exception that proves the point. Here Congress <em>did</em> pass the law, and the agencies
+are still the ones deciding what two percent, 93 days and "significant" mean in practice.</p>
+
+<h2>What I'll Be Watching</h2>
+
+<ul>
+  <li><strong>The Federal Register date.</strong> The 60-day clock doesn't start until publication.
+  Add the time to read the letters and finalize, and it's going to be tight against January 18.</li>
+  <li><strong>The first state member bank application.</strong> The proposal is written for 703
+  potential applicants. The first one to file tells you whether community and regional banks actually
+  want to issue their own coins, or would rather <a href="forty-months-for-a-yes.html">custody someone
+  else's</a>.</li>
+  <li><strong>Question 174.</strong> Whether an interest-rate charge appears in the final rule, and at
+  what size, is the one capital decision still genuinely open.</li>
+  <li><strong>How "significant or systemic" survives.</strong> Barr has put it on the record; the
+  final rule will show whether the rest of the Board agreed.</li>
+  <li><strong>The yield comment letters.</strong> Whoever argues hardest about Question 37 is telling
+  you whose business model runs through a stablecoin rewards program.</li>
+</ul>
+
+<h2>Where I Could Be Wrong</h2>
+
+<ul>
+  <li><strong>The dollar figures on the chart</strong> are my own arithmetic on the three tiers in the
+  staff memo's footnote 7, and they cover only the first part of the operational-risk charge. The real
+  requirement adds 25 percent of three-year average non-reserve revenue, the loss scalar, the two
+  percent charge on any uninsured deposits, and ordinary bank capital on any non-reserve assets — so
+  for a real issuer the number would be higher.</li>
+  <li><strong>USDC and USDT are on the chart for scale, not because the rule applies to them.</strong>
+  Their sizes come from the proposal's own economic analysis (late 2025 figures), not today's
+  supply, and neither issuer is Fed-supervised.</li>
+  <li><strong>"Zero Fed-supervised issuers today"</strong> follows from the structure of the Act: no
+  one can be a permitted issuer before the approval process exists, and the Fed's application rule was
+  only proposed Thursday. If a state-chartered issuer is already close to $10 billion, it could be
+  the first to transition — I haven't found one, but I haven't surveyed every state trust company.</li>
+  <li><strong>I've read the staff memo, Barr's statement, and the proposal's sections on reserves,
+  capital, the yield ban and the economic analysis</strong> — not all 392 pages or every one of its
+  numbered comment questions. The reserve list, the 93 days, the capital tiers, the wind-down triggers
+  and the presumption language are quoted from the documents themselves. Which pieces are the Act's
+  and which are the Fed's is my reading of where the proposal cites the statute versus where it says
+  "the Board is proposing"; the staff memo describes several Fed choices as "consistent with the
+  Act," which can blur the line.</li>
+  <li><strong>Whether a given rewards program falls inside or outside the yield presumption</strong>
+  is my reading of the rule text, not a legal opinion. The Fed itself says the cases outside the
+  presumption will be decided one at a time.</li>
+  <li><strong>Nothing in my own trading book is a stablecoin or a stablecoin issuer.</strong> My
+  interest here is in the plumbing that dollars move through on their way into and out of Bitcoin.
+  None of this is legal or investment advice.</li>
+</ul>

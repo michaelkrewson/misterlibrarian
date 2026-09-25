@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="A line chart of the Federal Reserve's proposed operational-risk capital charge for the stablecoin issuers it would supervise, rising in three tiers: 2.0 percent of the first 20 billion dollars outstanding, 1.5 percent of the next 30 billion, and 1.0 percent above 50 billion. Marked points: 10 billion dollars outstanding requires 200 million in capital, the size at which a large state-chartered issuer must move to the Fed; 75 billion, about USDC's size in late 2025, requires 1.1 billion; 180 billion, about USDT's size, would require 2.15 billion.">
+  <rect width="900" height="420" fill="#0a0f1a"/>
+  <text x="90" y="40" font-family="Georgia, serif" font-size="20" fill="#e8dfd2">The Fed’s proposed capital charge <tspan fill="#94a3b8">for the stablecoins an issuer has outstanding</tspan></text>
+  <text x="90" y="64" font-family="Georgia, serif" font-size="14" fill="#94a3b8">Operational-risk component only · 2.0% of the first $20B, 1.5% of the next $30B, 1.0% above $50B</text>
+  <rect x="90.0" y="90" width="76.0" height="260" fill="#e8865c" opacity="0.07"/>
+  <text x="128.0" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#e8865c" font-weight="bold">2.0%</text>
+  <rect x="166.0" y="90" width="114.0" height="260" fill="#8fb3ff" opacity="0.07"/>
+  <text x="223.0" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#8fb3ff" font-weight="bold">1.5%</text>
+  <rect x="280.0" y="90" width="570.0" height="260" fill="#a3b378" opacity="0.07"/>
+  <text x="565.0" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#a3b378" font-weight="bold">1.0%</text>
+  <line x1="90" y1="298.0" x2="850" y2="298.0" stroke="rgba(255,255,255,.10)"/>
+  <text x="80" y="303.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$0.5B</text>
+  <line x1="90" y1="246.0" x2="850" y2="246.0" stroke="rgba(255,255,255,.10)"/>
+  <text x="80" y="251.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$1B</text>
+  <line x1="90" y1="194.0" x2="850" y2="194.0" stroke="rgba(255,255,255,.10)"/>
+  <text x="80" y="199.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$1.5B</text>
+  <line x1="90" y1="142.0" x2="850" y2="142.0" stroke="rgba(255,255,255,.10)"/>
+  <text x="80" y="147.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$2B</text>
+  <line x1="90" y1="90.0" x2="850" y2="90.0" stroke="rgba(255,255,255,.10)"/>
+  <text x="80" y="95.0" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$2.5B</text>
+  <text x="80" y="355" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$0</text>
+  <line x1="90" y1="350" x2="850" y2="350" stroke="#5c6b85" stroke-width="1.5"/>
+  <line x1="90.0" y1="350" x2="90.0" y2="356" stroke="#5c6b85"/>
+  <text x="90.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$0</text>
+  <line x1="166.0" y1="350" x2="166.0" y2="356" stroke="#5c6b85"/>
+  <text x="166.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$20B</text>
+  <line x1="280.0" y1="350" x2="280.0" y2="356" stroke="#5c6b85"/>
+  <text x="280.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$50B</text>
+  <line x1="470.0" y1="350" x2="470.0" y2="356" stroke="#5c6b85"/>
+  <text x="470.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$100B</text>
+  <line x1="660.0" y1="350" x2="660.0" y2="356" stroke="#5c6b85"/>
+  <text x="660.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$150B</text>
+  <line x1="850.0" y1="350" x2="850.0" y2="356" stroke="#5c6b85"/>
+  <text x="850.0" y="374" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#94a3b8">$200B</text>
+  <text x="470.0" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#94a3b8">Stablecoins outstanding</text>
+  <polyline points="90.0,350.0 166.0,308.4 280.0,261.6 850.0,105.6" fill="none" stroke="#e8dfd2" stroke-width="3"/>
+  <circle cx="128.0" cy="329.2" r="6" fill="#e8865c"/>
+  <text x="132.0" y="187.2" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">$10B → $200M</text>
+  <text x="132.0" y="205.2" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#94a3b8">the size that moves a big state issuer to the Fed</text>
+  <circle cx="375.0" cy="235.6" r="6" fill="#8fb3ff"/>
+  <text x="389.0" y="275.6" text-anchor="start" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">$75B → $1.1B</text>
+  <text x="389.0" y="293.6" text-anchor="start" font-family="Georgia, serif" font-size="13" fill="#94a3b8">about USDC’s size in late 2025 (1.47%)</text>
+  <circle cx="774.0" cy="126.4" r="6" fill="#a3b378"/>
+  <text x="762.0" y="104.4" text-anchor="end" font-family="Georgia, serif" font-size="14" fill="#e8dfd2" font-weight="bold">$180B → $2.15B</text>
+  <text x="762.0" y="122.4" text-anchor="end" font-family="Georgia, serif" font-size="13" fill="#94a3b8">about USDT’s size (1.19%)</text>
+</svg>
