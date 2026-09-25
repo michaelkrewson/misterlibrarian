@@ -7,6 +7,22 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Ninety Percent of Nothing</title>
+    <link>https://mistertranslation.com/finance/ninety-percent-of-nothing.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/ninety-percent-of-nothing.html</guid>
+    <pubDate>Fri, 25 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A tax idea keeps making the rounds: abolish federal and state income taxes for every US citizen, tax the profits of big public companies at 90% instead, keep taxing non-citizens, and break up monopolies in the process. It's easy to see why it appeals, since it hits a real nerve. I ran the arithmetic and followed what companies would actually do the morning after. The honest answer is that a 90% rate on corporate profit mostly teaches companies to stop reporting profit. After that I go through six alternatives that aim at the same targets, with what each one really costs.</description>
+    <category>taxes</category>
+    <category>income tax</category>
+    <category>corporate tax</category>
+    <category>tax policy</category>
+    <category>antitrust</category>
+    <category>monopolies</category>
+    <category>value-added tax</category>
+    <category>wealth tax</category>
+    <category>notes</category>
+  </item>
+  <item>
     <title>The Fed Wrote the House Rules. Nobody Lives There Yet.</title>
     <link>https://mistertranslation.com/finance/the-fed-wrote-the-house-rules-nobody-lives-there-yet.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/the-fed-wrote-the-house-rules-nobody-lives-there-yet.html</guid>
@@ -502,22 +518,6 @@
     <category>bitkey</category>
     <category>seed phrase</category>
     <category>entropy</category>
-    <category>notes</category>
-  </item>
-  <item>
-    <title>"Not Your Keys, Not Your Coins" Just Grew a Second Half</title>
-    <link>https://mistertranslation.com/finance/alby-hub-vulnerability.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/alby-hub-vulnerability.html</guid>
-    <pubDate>Wed, 09 Sep 2026 12:00:00 +0000</pubDate>
-    <description>Alby disclosed a critical flaw in Alby Hub, its self-hosted Lightning node software, that could let an attacker who reaches an exposed control panel send your bitcoin out from under you. The twist worth sitting with is the timeline — the fix shipped over a year before the warning did — and what that gap actually tells self-custody Bitcoiners about the setting they should have checked already.</description>
-    <category>bitcoin</category>
-    <category>self custody</category>
-    <category>lightning</category>
-    <category>node</category>
-    <category>security</category>
-    <category>vulnerability</category>
-    <category>alby</category>
-    <category>open source</category>
     <category>notes</category>
   </item>
 </channel>
