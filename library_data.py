@@ -10388,7 +10388,7 @@ XREFS = [
     (("Matthew", 15, 21), ("Matthew", 11, 21), "Tyre and Sidon, invoked only as a standard of comparison at 11:21-22, are now the actual destination — Jesus' one recorded personal visit to Gentile soil in the Gospels"),
     (("Matthew", 15, 22), ("Matthew", 9, 27), "eleēson me… huie Dauid, 'have mercy on me… Son of David' — the identical cry of two blind men in Israel now comes from the one Gentile this Gospel goes furthest to mark as an outsider"),
     (("Matthew", 15, 25), ("Matthew", 14, 33), "proskyneō, an eighth bow — every earlier instance from a Jewish suppliant, a Roman-appointed king, or the devil himself; this is the first from a Gentile"),
-    (("Matthew", 15, 32), ("Matthew", 9, 36), "splanchnizomai — narrated ABOUT Jesus before the five thousand and the crowds of 9:36; here, for the first of only two times in this Gospel, he says the word himself, in the first person"),
+    (("Matthew", 15, 32), ("Matthew", 9, 36), "splanchnizomai — narrated ABOUT Jesus before the five thousand and the crowds of 9:36; here, for the only time in this Gospel, he says the word himself, in the first person"),
     (("Matthew", 15, 37), ("Matthew", 14, 20), "kophinos becomes spyris — twelve small Jewish hand-baskets in Jewish territory, seven larger unmarked hampers two chapters later on Gentile-adjacent ground; the vocabulary itself tracks who is being fed"),
     (("Matthew", 15, 14), ("Matthew", 23, 16), "typhloi hodēgoi, 'blind guides' — a phrase tossed off here as an aside returns as a title Jesus repeats twice over, by name, in the seven woes of chapter 23"),
     (("Matthew", 16, 1), ("Matthew", 3, 7), "the Pharisees and Sadducees, first paired together at John's baptism, reunite for their second joint appearance in this Gospel — an odd alliance that agrees on almost nothing except, apparently, Jesus"),
@@ -10454,7 +10454,7 @@ XREFS = [
     (("Matthew", 20, 30), ("Matthew", 9, 27), "two blind men calling him Son of David — Matthew tells this twice, and whether it is a doublet or two events is genuinely disputed"),
     (("Matthew", 20, 30), ("Matthew", 15, 22), "'Son of David' — always shouted by someone with no standing to confer a royal title, and always over an objection from the people nearby"),
     (("Matthew", 20, 31), ("Matthew", 19, 13), "the crowd tells them to be quiet — exactly what the disciples did to the children one chapter earlier"),
-    (("Matthew", 20, 34), ("Matthew", 15, 32), "splanchnizomai — the fifth and last time Matthew uses the gut-word of Jesus, as chapter 15's note said it would be"),
+    (("Matthew", 20, 34), ("Matthew", 15, 32), "splanchnizomai — the fifth and last time Matthew uses the gut-word, the fourth of Jesus (the other belongs to the parable's master at 18:27)"),
     (("Matthew", 20, 34), ("Matthew", 19, 22), "'they followed him' — the rich young man could see and went away; two blind men, given sight, walk toward Jerusalem"),
     # ---- Matthew 19 ----
     (("Matthew", 19, 1), ("Matthew", 13, 53), "the discourse formula — the fourth of the five fixed sentences that mark the close of each great block of teaching"),
