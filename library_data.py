@@ -18050,7 +18050,7 @@ DICTIONARY_ES = {
         "28:20) y ningún otro evangelista la tiene. AIŌN es una era o un siglo más que «el mundo» — razón por "
         "la cual «el fin del mundo» importa una cosmología que el griego no afirma, y por la que conviene leer "
         "«siglo» o «era». Nótese dónde aparece la expresión por última vez: en la frase final del Evangelio, "
-        "«yo estoy con vosotros todos los días hasta la synteleia del siglo» (28:20), lo que convierte la "
+        "«yo estoy con ustedes todos los días hasta la synteleia del siglo» (28:20), lo que convierte la "
         "conclusión en algo con lo que Mateo termina y no en algo que teme."),
     "odin": ("dolor de parto",
         "UN DOLOR DE PARTO — específicamente las contracciones del alumbramiento, no el dolor en general. ⚠ En "
