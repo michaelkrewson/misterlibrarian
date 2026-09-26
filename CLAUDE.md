@@ -249,8 +249,12 @@ footers, sibling links or the legal pages.
 - **Other fixed renderings, established — search the source file's existing notes before inventing
   a new one for a recurring word; consistency is the product:** "vault" (raqia, not firmament),
   "side" not "rib" (tsela — the flagship departure), "humankind/the human" (generic adam),
-  "a helper corresponding to him" (ezer kenegdo), "appointed times" (mo'adim), "the LORD" small-caps
-  (YHVH), "Look —" (hineh), "my bow" not "rainbow" (qeshet), "great sea-beasts" (taninim).
+  "a helper corresponding to him" (ezer kenegdo), "appointed times" (mo'adim), "Jehovah"
+  (YHVH — never "the LORD"; in the NT also wherever *kyrios* is plainly the God of Israel rather than
+  Jesus: OT quotations, OT formulas ("angel of Jehovah", "Jehovah God the Almighty") and bare "the
+  Lord" with God as referent (Mark 13:20), the note saying the Greek reads *kyrios*. "Lord" stays
+  where the referent is Jesus or genuinely open (Mark 5:19), and the note says why. Ps 110:1 =
+  "Jehovah said to my Lord"), "Look —" (hineh), "my bow" not "rainbow" (qeshet), "great sea-beasts" (taninim).
 - **Neutrality rule:** where traditions genuinely split (protoevangelium, sons-of-God, "like
   God/gods"), present the readings with their pedigrees and don't vote. A doctrinal rendering in a
   shelf version (e.g. NWT's "active force") gets flagged as doctrinal, factually, not dismissively.
