@@ -101,7 +101,7 @@ ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-
 
 # The Regimen's front-matter vocabulary. The Ledger's minus `live` (nothing here
 # rebuilds itself from a data feed) — an entry has no stars, no place, no chart.
-KNOWN_KEYS = {"title", "date", "tags", "summary", "meta_desc",
+KNOWN_KEYS = {"title", "date", "updated", "tags", "summary", "meta_desc",
               "hero", "hero_alt", "hero_credit", "draft"}
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
@@ -307,11 +307,28 @@ def load_entries(include_drafts=False):
         if draft and not include_drafts:
             continue
 
+        # Optional `updated: YYYY-MM-DD` — a living piece bumps this so the
+        # date line can show both without rewriting `date` itself.
+        updated_raw = meta.get("updated", "").strip()
+        updated = None
+        if updated_raw:
+            try:
+                updated = dt.date.fromisoformat(updated_raw)
+            except ValueError:
+                raise ValueError(
+                    "source/health/%s: `updated: %s` is not a YYYY-MM-DD date"
+                    % (fn, updated_raw))
+            if updated < date:
+                raise ValueError(
+                    "source/health/%s: `updated: %s` is before `date: %s`"
+                    % (fn, updated_raw, date.isoformat()))
+
         entries.append({
             "slug": slug,
             "lang": lang,
             "file": slug + (".es.html" if lang == "es" else ".html"),
             "date": date,
+            "updated": updated,
             "title": meta["title"],
             "summary": meta["summary"],
             "meta_desc": meta.get("meta_desc", "").strip(),
@@ -806,6 +823,9 @@ def build_entry_page(e, pool=()):
     lang = e["lang"]
     u = UI[lang]
     date_line = _pretty_date(e["date"], lang).upper()
+    if e.get("updated"):
+        date_line += ' <span class="upd-stamp">· updated %s</span>' % esc(
+            _pretty_date(e["updated"], lang))
     hits_path = None if e["draft"] else "%s/%s" % (BASE, e["file"])
     desc = _entry_desc(e)
     url = BASE_URL + e["file"]
@@ -2153,8 +2173,9 @@ a{color:__ACCENT__}
   font-family:ui-sans-serif,system-ui,sans-serif}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+.edate{margin:0 0 26px;color:#5a6b80;font-size:10px;letter-spacing:.1em;
   font-family:ui-sans-serif,system-ui,sans-serif}
+.edate .upd-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
@@ -2213,7 +2234,7 @@ a{color:__ACCENT__}
 .ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
   border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
 .ecard:hover{border-color:#2f4257}
-.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+.ec-d{display:block;color:#6e7d92;font-size:10px;letter-spacing:.1em;
   font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
 .ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
 .ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}

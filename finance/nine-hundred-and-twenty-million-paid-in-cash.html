@@ -325,9 +325,10 @@ a{color:#f7931a}
   font-family:ui-sans-serif,system-ui,sans-serif}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#5a6b80;font-size:11px;letter-spacing:.12em;
+.edate{margin:0 0 26px;color:#5a6b80;font-size:10px;letter-spacing:.1em;
   font-family:ui-sans-serif,system-ui,sans-serif}
-.edate .live-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
+.edate .live-stamp,.edate .upd-stamp{letter-spacing:normal;text-transform:none;
+  font-style:italic;color:#4d5c70}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}
@@ -375,7 +376,7 @@ a{color:#f7931a}
 .ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
   border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
 .ecard:hover{border-color:#2f4257}
-.ec-d{display:block;color:#6e7d92;font-size:11.5px;letter-spacing:.13em;
+.ec-d{display:block;color:#6e7d92;font-size:10px;letter-spacing:.1em;
   font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
 .ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
 .ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}
@@ -615,12 +616,11 @@ ul.archive{list-style:none;margin:0;padding:0;max-width:none}
     <p class="edate">SEPTEMBER 26, 2026</p>
     <figure class="hero"><img src="img/chicago-board-of-trade-night.jpg" alt="The Chicago Board of Trade building at night, its rooftop statue of Ceres lit in blue, now part of CME Group" width="1500" height="2000" loading="eager"/><figcaption>The Chicago Board of Trade building, now part of CME Group, at night. Photo by seligmanwaite, via Wikimedia Commons, licensed CC BY 2.0.</figcaption></figure>
 <p>This came up as a direct question while I was reporting <a
-href="/finance/two-point-eight-times-the-halving.html">Two Point Eight Times the Halving</a>
-earlier tonight, and it deserves its own answer rather than a footnote: if a derivatives exchange
-can move Bitcoin's price with leveraged paper, does that mean it can eventually do to Bitcoin what
-gold's critics say has been done to gold for decades — trade so much synthetic supply against a
-real, scarce asset that the price stops reflecting reality? I can answer part of this with real
-confidence, because it's protocol mechanics, not a judgment call.</p>
+href="/finance/two-point-eight-times-the-halving.html">Two Point Eight Times the Halving</a>: if a
+derivatives exchange can move Bitcoin's price with leveraged paper, does that mean it can
+eventually do to Bitcoin what gold's critics say has been done to gold for decades — trade so much
+synthetic supply against a real, scarce asset that the price stops reflecting reality? I can
+answer part of this with real confidence, because it's protocol mechanics, not a judgment call.</p>
 
 <h2>What CME Actually Settles In</h2>
 
@@ -658,6 +658,13 @@ deferred prosecution agreement, and several individual traders were separately c
 criminal court. Both facts are true at once: one specific suppression theory was investigated and
 found wanting, and a different, provable manipulation technique ran for eight years at the largest
 bank in the country before anyone was caught.</p>
+
+<figure>
+  <img src="img/spoofing-mechanics-jpmorgan.svg" alt="A four-step diagram of how spoofing works: place large fake orders with no intent to fill them, other traders react and the price moves, cancel the fake orders in milliseconds before they execute, then trade the real opposite position at the price just engineered. Below it, JPMorgan's actual 2020 case as a scorecard: 920.2 million dollars in total penalties, 2008 through 2016 (eight years before anyone was caught), 15 traders across two desks, and over 300 million dollars in losses caused to other market participants." loading="lazy"/>
+  <figcaption>The trick has four steps and none of them require the underlying asset to
+  cooperate — which is exactly why it isn't obviously harder to attempt on a Bitcoin order book
+  than a gold one. The difference is what happens after, covered next.</figcaption>
+</figure>
 
 <h2>Why the Same Trick Is Harder to Sustain on Bitcoin</h2>
 
@@ -701,8 +708,6 @@ queued separately, and I'll link it here once it exists rather than guess at an 
   I'm citing it as the reason the "can spot itself be gamed" question is legitimate, not as a
   current measurement — that's exactly the gap the queued follow-up needs to close.</li>
 </ul>
-
-<p><em>Update log: none yet — this is the initial version, published 2026-09-26.</em></p>
 
     <div class="tags"><a class="tg" href="tag-bitcoin.html">bitcoin</a><a class="tg" href="tag-cme.html">cme</a><a class="tg" href="tag-derivatives.html">derivatives</a><a class="tg" href="tag-federal-reserve.html">federal reserve</a><a class="tg" href="tag-monetary-policy.html">monetary policy</a><a class="tg" href="tag-spoofing.html">spoofing</a><a class="tg" href="tag-gold.html">gold</a></div>
   </article>

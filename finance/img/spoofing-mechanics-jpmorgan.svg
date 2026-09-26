@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img"
+     aria-label="Top: a four-step diagram of how spoofing works. Step one, place large fake orders on one side of the book with no intent to let them fill. Step two, other traders see the fake wall and the price moves the way the spoofer wants. Step three, cancel the fake orders in milliseconds, before they execute. Step four, trade the real, opposite position at the price just engineered. Bottom: a scorecard of JPMorgan's actual 2020 case — 920.2 million dollars in penalties, from 2008 through 2016, fifteen traders, hundreds of thousands of spoof orders, over 300 million dollars in losses caused to other market participants.">
+  <rect width="900" height="560" fill="#0a0f1a"/>
+  <text x="40" y="42" font-family="Georgia, serif" font-size="19" fill="#e8dfd2">How spoofing actually works</text>
+  <text x="40" y="64" font-family="Georgia, serif" font-size="12.5" fill="#94a3b8">The order was never real — it only had to look real for a second</text>
+
+  <!-- Step 1 -->
+  <rect x="30" y="96" width="192" height="108" rx="10" fill="#111a29" stroke="rgba(255,255,255,.14)"/>
+  <text x="126" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5a6b80">STEP 1</text>
+  <text x="126" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#e8dfd2">Place fake orders</text>
+  <!-- mini order book: big fake sell wall -->
+  <rect x="66" y="152" width="120" height="8" fill="#e8865c" opacity=".85"/>
+  <rect x="66" y="163" width="90" height="8" fill="#e8865c" opacity=".6"/>
+  <rect x="66" y="174" width="60" height="8" fill="#e8865c" opacity=".4"/>
+  <text x="126" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#94a3b8">a heavy sell wall, never meant to fill</text>
+
+  <path d="M226 150 L258 150" stroke="#5a6b80" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Step 2 -->
+  <rect x="260" y="96" width="192" height="108" rx="10" fill="#111a29" stroke="rgba(255,255,255,.14)"/>
+  <text x="356" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5a6b80">STEP 2</text>
+  <text x="356" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#e8dfd2">Price reacts</text>
+  <path d="M300 190 L330 178 L360 184 L412 156" stroke="#e8865c" stroke-width="2" fill="none"/>
+  <text x="356" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#94a3b8">other traders see the wall, sell into it</text>
+
+  <path d="M456 150 L488 150" stroke="#5a6b80" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Step 3 -->
+  <rect x="490" y="96" width="192" height="108" rx="10" fill="#111a29" stroke="rgba(255,255,255,.14)"/>
+  <text x="586" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#5a6b80">STEP 3</text>
+  <text x="586" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#e8dfd2">Cancel before fill</text>
+  <rect x="526" y="152" width="120" height="8" fill="#3a4556"/>
+  <rect x="526" y="163" width="90" height="8" fill="#3a4556" opacity=".7"/>
+  <line x1="526" y1="148" x2="646" y2="172" stroke="#5a6b80" stroke-width="1.5"/>
+  <text x="586" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#94a3b8">gone in milliseconds — never executed</text>
+
+  <path d="M686 150 L718 150" stroke="#5a6b80" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Step 4 -->
+  <rect x="720" y="96" width="150" height="108" rx="10" fill="#1a1408" stroke="rgba(247,147,26,.5)"/>
+  <text x="795" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c9a86a">STEP 4</text>
+  <text x="795" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="bold" fill="#f7931a">Trade the real position</text>
+  <text x="795" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#c9a86a">at the price</text>
+  <text x="795" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="10.5" fill="#c9a86a">just engineered</text>
+
+  <line x1="40" y1="234" x2="860" y2="234" stroke="rgba(255,255,255,.1)"/>
+
+  <text x="40" y="268" font-family="Georgia, serif" font-size="15" fill="#e8dfd2">This isn't hypothetical — JPMorgan actually did it, and got caught</text>
+  <text x="40" y="288" font-family="Georgia, serif" font-size="12" fill="#94a3b8">Gold, silver, platinum, palladium, and Treasury futures — settled with the CFTC, DOJ, and SEC, September 2020</text>
+
+  <!-- scorecard: 4 big stats -->
+  <rect x="40" y="310" width="195" height="120" rx="10" fill="#111a29" stroke="rgba(255,255,255,.1)"/>
+  <text x="137" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#f7931a">$920.2M</text>
+  <text x="137" y="384" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">total penalty —</text>
+  <text x="137" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">fines, restitution, disgorgement</text>
+
+  <rect x="248" y="310" width="195" height="120" rx="10" fill="#111a29" stroke="rgba(255,255,255,.1)"/>
+  <text x="345" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#e8dfd2">8 years</text>
+  <text x="345" y="384" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">2008 – 2016,</text>
+  <text x="345" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">before anyone was caught</text>
+
+  <rect x="456" y="310" width="195" height="120" rx="10" fill="#111a29" stroke="rgba(255,255,255,.1)"/>
+  <text x="553" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#e8dfd2">15</text>
+  <text x="553" y="384" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">traders across two desks —</text>
+  <text x="553" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">several later convicted criminally</text>
+
+  <rect x="664" y="310" width="196" height="120" rx="10" fill="#111a29" stroke="rgba(255,255,255,.1)"/>
+  <text x="762" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#e8865c">$300M+</text>
+  <text x="762" y="384" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">losses caused to</text>
+  <text x="762" y="400" text-anchor="middle" font-family="Georgia, serif" font-size="11.5" fill="#94a3b8">other market participants</text>
+
+  <text x="40" y="466" font-family="Georgia, serif" font-size="13" fill="#c9d4e0">Spoofing works on any order-driven market, gold or Bitcoin, silver or Treasuries — the</text>
+  <text x="40" y="488" font-family="Georgia, serif" font-size="13" fill="#c9d4e0">technique doesn't care what's underneath it. What's different for Bitcoin is step two: a</text>
+  <text x="40" y="510" font-family="Georgia, serif" font-size="13" fill="#c9d4e0">spot-price gap is cheap and fast to arbitrage away, so a fake move is harder to make stick.</text>
+
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5a6b80"/>
+    </marker>
+  </defs>
+</svg>
