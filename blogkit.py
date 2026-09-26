@@ -137,6 +137,52 @@ def pretty_date(d):
         return d.strftime("%B %d, %Y")
 
 
+def parse_updated(raw, where, pub_date):
+    """Parse an optional `updated: YYYY-MM-DD` or `updated: YYYY-MM-DD HH:MM`
+    front-matter value into (date, time_or_None). Returns (None, None) for
+    an empty/absent value. `pub_date` is the entry's own `date`, so a typo'd
+    `updated` that predates publication fails the build instead of shipping
+    a page that claims to have been updated before it existed.
+
+    Shared by every blog builder so "add a real Update section, bump this"
+    (see liquid-network-peg-drain.html for the actual dated-h2 half of that
+    convention) means the same thing everywhere rather than four near-copies
+    that drift out of sync.
+    """
+    raw = (raw or "").strip()
+    if not raw:
+        return None, None
+    date_part, _, time_part = raw.partition(" ")
+    try:
+        updated_date = dt.date.fromisoformat(date_part)
+    except ValueError:
+        raise ValueError(f"{where}: `updated: {raw}` is not YYYY-MM-DD or YYYY-MM-DD HH:MM")
+    updated_time = None
+    if time_part:
+        try:
+            updated_time = dt.time.fromisoformat(time_part)
+        except ValueError:
+            raise ValueError(f"{where}: `updated: {raw}` has an invalid HH:MM time")
+    if updated_date < pub_date:
+        raise ValueError(f"{where}: `updated: {raw}` is before `date: {pub_date.isoformat()}`")
+    return updated_date, updated_time
+
+
+def pretty_updated(updated_date, updated_time):
+    """Render an (updated_date, updated_time) pair from parse_updated as the
+    compact 'updated <date>[, <time>]' bit that goes next to the publish
+    date — never a lone timestamp with no date, since the date is what a
+    reader actually orients on."""
+    out = "updated " + pretty_date(updated_date)
+    if updated_time is not None:
+        try:
+            t = updated_time.strftime("%-I:%M %p")
+        except ValueError:
+            t = updated_time.strftime("%I:%M %p").lstrip("0")
+        out += ", " + t
+    return out
+
+
 def rfc822(d):
     """RFC-822 date for RSS.
 

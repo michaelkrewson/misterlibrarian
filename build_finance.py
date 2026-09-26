@@ -686,29 +686,19 @@ def load_entries(include_drafts=False):
             continue
         live = meta.get("live", "").strip().lower() in ("true", "yes", "1")
 
-        # Optional `updated: YYYY-MM-DD` — a living piece (one that gets dated
-        # "Update" h2 sections added over time, see liquid-network-peg-drain.html)
-        # bumps this so the date line can show both without rewriting `date`
-        # itself, which stays the original publish day forever.
-        updated_raw = meta.get("updated", "").strip()
-        updated = None
-        if updated_raw:
-            try:
-                updated = dt.date.fromisoformat(updated_raw)
-            except ValueError:
-                raise ValueError(
-                    "source/finance/%s: `updated: %s` is not a YYYY-MM-DD date"
-                    % (fn, updated_raw))
-            if updated < date:
-                raise ValueError(
-                    "source/finance/%s: `updated: %s` is before `date: %s`"
-                    % (fn, updated_raw, date.isoformat()))
+        # Optional `updated: YYYY-MM-DD` or `updated: YYYY-MM-DD HH:MM` — a
+        # living piece (one that gets dated "Update" h2 sections added over
+        # time, see liquid-network-peg-drain.html) bumps this so the date
+        # line can show both without rewriting `date` itself.
+        updated, updated_time = blogkit.parse_updated(
+            meta.get("updated", ""), "source/finance/" + fn, date)
 
         entries.append({
             "slug": slug,
             "file": slug + ".html",
             "date": date,
             "updated": updated,
+            "updated_time": updated_time,
             "title": meta["title"],
             "summary": meta["summary"],
             "meta_desc": meta.get("meta_desc", "").strip(),
@@ -1371,8 +1361,8 @@ def build_entry_page(e, board=None, pool=()):
     body = e["body"]
     date_line = blogkit.pretty_date(e["date"]).upper()
     if e.get("updated"):
-        date_line += ' <span class="upd-stamp">· updated %s</span>' % esc(
-            blogkit.pretty_date(e["updated"]))
+        date_line += ' <span class="upd-stamp">· %s</span>' % esc(
+            blogkit.pretty_updated(e["updated"], e.get("updated_time")))
     if e.get("live"):
         stats = _btc_live_stats(board or {})
         if stats is None:
@@ -2431,7 +2421,7 @@ a{color:__ACCENT__}
   font-family:ui-sans-serif,system-ui,sans-serif}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#5a6b80;font-size:10px;letter-spacing:.1em;
+.edate{margin:0 0 26px;color:#5a6b80;font-size:9px;letter-spacing:.08em;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .edate .live-stamp,.edate .upd-stamp{letter-spacing:normal;text-transform:none;
   font-style:italic;color:#4d5c70}
@@ -2482,7 +2472,7 @@ a{color:__ACCENT__}
 .ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
   border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
 .ecard:hover{border-color:#2f4257}
-.ec-d{display:block;color:#6e7d92;font-size:10px;letter-spacing:.1em;
+.ec-d{display:block;color:#6e7d92;font-size:9px;letter-spacing:.08em;
   font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
 .ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
 .ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}

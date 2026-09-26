@@ -247,27 +247,18 @@ def load_entries():
                 "source/notebook/%s: `section: %s` is not one of %s"
                 % (fn, meta["section"], ", ".join(SECTIONS)))
 
-        # Optional `updated: YYYY-MM-DD` — a living piece bumps this so the
-        # date line can show both without rewriting `date` itself.
-        updated_raw = meta.get("updated", "").strip()
-        updated = None
-        if updated_raw:
-            try:
-                updated = dt.date.fromisoformat(updated_raw)
-            except ValueError:
-                raise ValueError(
-                    "source/notebook/%s: `updated: %s` is not a YYYY-MM-DD date"
-                    % (fn, updated_raw))
-            if updated < date:
-                raise ValueError(
-                    "source/notebook/%s: `updated: %s` is before `date: %s`"
-                    % (fn, updated_raw, date.isoformat()))
+        # Optional `updated: YYYY-MM-DD` or `updated: YYYY-MM-DD HH:MM` — a
+        # living piece bumps this so the date line can show both without
+        # rewriting `date` itself.
+        updated, updated_time = blogkit.parse_updated(
+            meta.get("updated", ""), "source/notebook/" + fn, date)
 
         entries.append({
             "slug": slug,
             "file": slug + ".html",
             "date": date,
             "updated": updated,
+            "updated_time": updated_time,
             "section": section,
             "title": meta["title"],
             "summary": meta["summary"],
@@ -755,8 +746,8 @@ def build_entry_page(e, pool=()):
     url = BASE_URL + e["file"]
     date_bit = blogkit.pretty_date(e["date"]).upper()
     if e.get("updated"):
-        date_bit += ' <span class="upd-stamp">· updated %s</span>' % esc(
-            blogkit.pretty_date(e["updated"]))
+        date_bit += ' <span class="upd-stamp">· %s</span>' % esc(
+            blogkit.pretty_updated(e["updated"], e.get("updated_time")))
     sec_line = ('<p class="edate"><a class="esec" href="%s">%s</a> · %s</p>'
                 % (_section_file(e["section"]), esc(_section_name(e["section"]).upper()),
                    date_bit))
@@ -1729,7 +1720,7 @@ header.hsm .bmark{width:45px;height:45px;flex:0 0 45px}
 a{color:__ACCENT__}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#5a6b80;font-size:10px;letter-spacing:.35px;
+.edate{margin:0 0 26px;color:#5a6b80;font-size:9px;letter-spacing:.3px;
   font-family:ui-sans-serif,system-ui,sans-serif}
 .edate .upd-stamp{letter-spacing:normal;text-transform:none;font-style:italic;color:#4d5c70}
 /* The section, leading the date line, linked to its own page. */
@@ -1789,7 +1780,7 @@ a{color:__ACCENT__}
 .ecard{display:block;text-decoration:none;padding:18px 20px;margin:0 0 12px;
   border:1px solid #1b2534;border-radius:11px;background:#0a111c;transition:border-color .15s}
 .ecard:hover{border-color:#2f4257}
-.ec-d{display:block;color:#6e7d92;font-size:10px;letter-spacing:.1em;
+.ec-d{display:block;color:#6e7d92;font-size:9px;letter-spacing:.08em;
   font-family:ui-sans-serif,system-ui,sans-serif;margin-bottom:6px}
 .ec-t{display:block;color:#e8eef7;font-size:20px;line-height:1.3;margin-bottom:7px}
 .ec-s{display:block;color:#a9b7c9;font-size:15px;line-height:1.6}

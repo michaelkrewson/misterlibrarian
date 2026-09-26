@@ -501,18 +501,11 @@ def load_posts(include_drafts=False):
         except ValueError:
             raise ValueError(f"source/travel/{fn}: date must be YYYY-MM-DD")
 
-        # Optional `updated: YYYY-MM-DD` — a living piece bumps this so the
-        # date line can show both without rewriting `date` itself.
-        updated_raw = meta.get("updated", "").strip()
-        updated = None
-        if updated_raw:
-            try:
-                updated = dt.date.fromisoformat(updated_raw)
-            except ValueError:
-                raise ValueError(f"source/travel/{fn}: `updated: {updated_raw}` is not a YYYY-MM-DD date")
-            if updated < date:
-                raise ValueError(
-                    f"source/travel/{fn}: `updated: {updated_raw}` is before `date: {date.isoformat()}`")
+        # Optional `updated: YYYY-MM-DD` or `updated: YYYY-MM-DD HH:MM` — a
+        # living piece bumps this so the date line can show both without
+        # rewriting `date` itself.
+        updated, updated_time = blogkit.parse_updated(
+            meta.get("updated", ""), f"source/travel/{fn}", date)
 
         # Stars are optional, but a malformed one is an error rather than a
         # silently-dropped rating — a review that quietly loses its score is worse
@@ -537,6 +530,7 @@ def load_posts(include_drafts=False):
             "file": f"{slug}.html",
             "date": date,
             "updated": updated,
+            "updated_time": updated_time,
             "title": meta["title"],
             "place": meta.get("place", ""),
             "tags": tags,
@@ -725,8 +719,9 @@ def _pagehits(file):
 def _meta_line(p, show_hits=False):
     bits = [f'<time datetime="{p["date"].isoformat()}">{_pretty_date(p["date"])}</time>']
     if p.get("updated"):
-        bits.append(f'<span class="upd-stamp">updated '
-                     f'<time datetime="{p["updated"].isoformat()}">{_pretty_date(p["updated"])}</time></span>')
+        bits.append(f'<span class="upd-stamp">'
+                     f'<time datetime="{p["updated"].isoformat()}">'
+                     f'{blogkit.pretty_updated(p["updated"], p.get("updated_time"))}</time></span>')
     if p["place"]:
         bits.append(f'<span class="place">📍 {html.escape(p["place"])}</span>')
     if p["draft"]:
