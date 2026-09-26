@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26 07:25 UTC",
+ "generated": "2026-09-26 17:01 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-25",
@@ -489,12 +489,6 @@
     "as_of": "2026-07-01"
    },
    {
-    "area": "Saudi Arabia",
-    "flag": "🇸🇦",
-    "usd_m": 488250.5489133492,
-    "as_of": "2026-07-01"
-   },
-   {
     "area": "Russia",
     "flag": "🇷🇺",
     "usd_m": 423209.7267066991,
@@ -525,7 +519,7 @@
     "as_of": "2026-08-01"
    }
   ],
-  "total_usd_m": 7248612.14005497
+  "total_usd_m": 6760361.591141621
  },
  "gold": {
   "rows": [
@@ -624,7 +618,7 @@
   "total_usd": 3724291483348.7314,
   "world_official_tonnes_estimate": 36600,
   "price_usd_oz": 4321.2001953125,
-  "price_as_of": "2026-09-26 07:23 UTC",
+  "price_as_of": "2026-09-26 17:00 UTC",
   "world_market_value_usd": 30045655897579.492,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
@@ -2003,12 +1997,12 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 84008.3671875,
-  "market_cap_usd": 1687686354719.387,
+  "price_usd": 84104.3125,
+  "market_cap_usd": 1689629355527.3438,
   "btc_rank": 11,
-  "volatility_pct": 37.408929662892106,
-  "turnover_usd": 32885303264.46779,
-  "broad_yoy_pct": 0.8181511459901154,
+  "volatility_pct": 37.40902023447967,
+  "turnover_usd": 18802538733.597507,
+  "broad_yoy_pct": 0.8181436371272574,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2022,7 +2016,7 @@
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1687686354719.387,
+    "usd": 1689629355527.3438,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]
