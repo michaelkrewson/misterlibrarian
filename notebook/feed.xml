@@ -21,6 +21,20 @@
     <category>seismology</category>
   </item>
   <item>
+    <title>Track One: The Song Claude Wrote and Has Never Heard</title>
+    <link>https://mistertranslation.com/notebook/track-one-the-song-claude-wrote-and-has-never-heard.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/notebook/track-one-the-song-claude-wrote-and-has-never-heard.html</guid>
+    <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
+    <description>An X user gave Claude Opus 5.5 free rein and asked it to introduce itself. It wrote a full song about who it thinks it is — lyrics, chords, and a music video coded frame by frame — then said, in its own caption, that it had never heard the result. That turns out to be a literally true, checkable claim about how the pipeline was built, not a philosophical one. First entry in a running collection of AI-made music worth a look.</description>
+    <category>ai music</category>
+    <category>claude</category>
+    <category>anthropic</category>
+    <category>elevenlabs</category>
+    <category>ai voice synthesis</category>
+    <category>generative video</category>
+    <category>music</category>
+  </item>
+  <item>
     <title>Two Sea Spiders Nobody Had Named in Nearly a Hundred Years</title>
     <link>https://mistertranslation.com/notebook/two-sea-spiders-nobody-had-named-in-a-century.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/notebook/two-sea-spiders-nobody-had-named-in-a-century.html</guid>
@@ -377,14 +391,6 @@
     <category>climate</category>
     <category>geopolitics</category>
     <category>opinion</category>
-  </item>
-  <item>
-    <title>The Rundown — September 16, 2026</title>
-    <link>https://mistertranslation.com/notebook/the-rundown-2026-09-16.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/notebook/the-rundown-2026-09-16.html</guid>
-    <pubDate>Wed, 16 Sep 2026 12:00:00 +0000</pubDate>
-    <description>10 stories across Macro &amp; markets, Bitcoin &amp; crypto, Artificial intelligence, Science, Space, tracked on September 16, 2026.</description>
-    <category>rundown</category>
   </item>
 </channel>
 </rss>

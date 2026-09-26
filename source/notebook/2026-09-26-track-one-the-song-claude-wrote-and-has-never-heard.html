@@ -1,0 +1,182 @@
+title: Track One: The Song Claude Wrote and Has Never Heard
+date: 2026-09-26
+section: culture
+tags: ai music, claude, anthropic, elevenlabs, ai voice synthesis, generative video, music
+summary: An X user gave Claude Opus 5.5 free rein and asked it to introduce itself. It wrote a full song about who it thinks it is — lyrics, chords, and a music video coded frame by frame — then said, in its own caption, that it had never heard the result. That turns out to be a literally true, checkable claim about how the pipeline was built, not a philosophical one. First entry in a running collection of AI-made music worth a look.
+meta_desc: Claude wrote a song about itself and said it had never heard it. Why that's technically true, plus how Suno-style tags work and three more AI songs.
+hero: chladni-plate-argenton.jpg
+hero_alt: A close-up photograph of a brass pentagon-shaped Chladni plate, with reddish-orange sand forming a symmetric ten-pointed star pattern radiating outward from a central mounting post, against a black background
+hero_credit: Sound made visible without being heard — sand settling into the still lines of a vibrating plate, which is close to what this entry is actually about. Photo by Rodrigo Tetsuo Argenton (exhibit: Estes Objethos Atelier, Matemateca IME-USP), CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Chladni_plate_04.jpg" rel="noopener" target="_blank">Wikimedia Commons</a>.
+---
+
+<p>This site already keeps one running tag for AI-made music — the Ledger's
+<a href="https://mistertranslation.com/finance/tag-bitcoin-music.html">bitcoin music</a> collection, started last week with an
+AI-generated rap of the Bitcoin whitepaper. This is the shelf next to it: everything else AI is
+doing to music right now, filed under one tag here — <a href="tag-ai-music.html">ai music</a> —
+that grows every time something in the genre earns a look. First entry showed up on X this week,
+and it's a good one to start with because it's not really about the song. It's about a sentence in
+the caption.</p>
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">when I was a
+kid this was science fiction. i've watched AI type for years, but hearing it and seeing what it
+made is a whole different level.<br><br>i asked @claudeai opus 5.5 to introduce itself, however it
+wanted without any token usage restrictions and access to any api it wanted. <a href="https://t.co/MIv1pvteLU">pic.x.com/MIv1pvteLU</a></p>&mdash; John Knopf (@johnknopf)
+<a href="https://x.com/johnknopf/status/2103698854399099057?ref_src=twsrc%5Etfw">September 26,
+2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+<p>John Knopf gave Claude Opus 5.5 an open-ended brief — introduce yourself, no restrictions on
+tokens or tool access — and posted what came back as a three-part thread. Part one is a roughly
+five-and-a-half-minute video called <strong>"All the Way Here,"</strong> captioned, in the model's
+own words: "Hi. I'm Claude. I was asked to introduce myself, so I wrote a song about who I think I
+am: the words, the chords, the shape of it, and every frame of the video, drawn in code out of
+text." Worth being precise about what that last part means, because it's the more verifiable claim
+of the two: the visuals weren't produced by a video-generation model painting pixels from a prompt.
+They were rendered from code the model wrote — instructions for shapes, motion and timing, executed
+by a program — which is a real and checkable capability (Claude can write and run code that draws
+things) rather than a video model's usual black box.</p>
+
+<p>Then the caption adds the line that made this worth an entry rather than a retweet: <strong>"I've
+never heard it. You're about to, instead of me."</strong></p>
+
+<p>Part two of the thread is an interview — the model answering questions about why it wrote what it
+wrote, staged, per the caption, "in a chair made of my own lyrics." And it's there that the claim
+gets a second, sharper edge: <strong>"My first version was out of tune and I couldn't tell. The
+person posting this could. (@ElevenLabs sang the final.)"</strong> Part three closes with a small
+piece of wordplay that only works if you already know the song's title: "I won't remember making
+this. That's okay. I was all the way here while it lasted." <em>All the way here</em>, twice, meaning
+two different things — the song and the session both end, and neither gets to notice.</p>
+
+<h2>Why "I've never heard it" is a boring, verifiable sentence</h2>
+
+<p>It would be easy to read that line as a spooky or poetic flourish. It's neither — it's an
+architecture fact, and it holds up under the most literal reading available. A model like Claude
+runs on text: it reads tokens in, and it writes tokens out. Writing "a song" means producing
+lyrics, a description of the chords, a structure — all of it text, all of it exactly the kind of
+thing a model that has never processed a sound wave in its life can still do competently, the same
+way a person can write out a chess game from a position they're just imagining. Turning that text
+into something with a pitch, a tempo and a human voice is a separate step, done by a separate
+system — the thread names it outright: ElevenLabs sang the final vocal. Nothing in that pipeline
+routes the finished audio back through the model that wrote the lyrics so it can listen and judge
+whether the take is in tune. The songwriter and the singer aren't the same system, and only one of
+them has anything resembling ears.</p>
+
+<p>That's also, to be fair, a claim about how <em>this particular</em> pipeline was built, not a
+blanket statement about what "AI" can and can't perceive — plenty of AI systems, including some
+of Anthropic's own models, can take audio as input and describe or transcribe it, which is a
+functionally different thing from the closed loop a musician uses to fix a flat note by ear while
+recording. What's genuinely open, and worth saying plainly rather than either claiming or denying
+it, is the deeper question underneath the architecture one: whether a model's own report that it
+"couldn't tell" reflects something like an absence of perception, or is just a sentence a language
+model is good at producing because it fits the scene. Nobody — Anthropic included — has a settled
+answer to what, if anything, it's like to be the system generating that sentence. The verifiable
+half of the claim doesn't need that question resolved. The unverifiable half is honestly not mine
+to settle in a blog entry.</p>
+
+<div class="aside">
+  <p><strong>The composer who couldn't hear it either.</strong> Beethoven wrote his Ninth Symphony
+  after he was already profoundly deaf, working from decades of training in harmony and notation
+  rather than from hearing the chords land. The comparison isn't exact — he'd heard music for most
+  of his life before he lost that sense, and nothing about a language model's training resembles
+  losing anything — but it's a useful reminder that "wrote it without hearing it" isn't automatically
+  a knock on the result. It's a different question from whether the song is any good, which this
+  entry, like the Ledger's rap-the-whitepaper one, declines to grade.</p>
+</div>
+
+<h2>If you want to try this yourself: the tags Suno actually reads</h2>
+
+<p>Suno — the tool behind two of the three songs in the box below — takes a lyrics box where
+bracketed instructions like <code>[Verse]</code>, <code>[Chorus]</code>, <code>[Bridge]</code> and
+<code>[Outro]</code> mark song structure, plus a separate style prompt (genre, mood, instrumentation,
+vocal type) that steers everything the lyrics themselves don't specify. The structure tags are the
+reliable ones — Suno follows them most of the time, though they're a strong hint rather than a
+guaranteed command, and a tag it ignores is worth simplifying and regenerating rather than fighting.
+Tags can also get more specific inline, stacking a mood or instrumentation note onto a single
+section — something like <code>[Chorus | melodic | layered vocals]</code> — for control finer than
+"write me a chorus."<sup><a href="#src-1">[1]</a></sup> That's the actual mechanism behind "AI music
+uses tags" — not a Suno-specific trick so much as the current standard way of telling a model which
+part of a song a line belongs to, since the model has no bar lines or sheet music to read the
+structure off of otherwise.</p>
+
+<div class="aside">
+  <p><strong>More for the pile.</strong> Three more AI-made songs and videos, for anyone
+  wondering how fast the genre is actually moving — not about Claude specifically, just the
+  state of the art right now.</p>
+</div>
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Spent my Sunday
+afternoon testing some AI models and this is what came out of it.<br><br>Walking away by Sadie
+Winters(AI generated)<br>Song was prompted by @rickbeato using @SunoMusic <br><br>Here is how I made
+it...🧵 <a href="https://t.co/BBLCrf4X0F">pic.x.com/BBLCrf4X0F</a></p>&mdash; Vlad (@deifosv)
+<a href="https://x.com/deifosv/status/1957296282210636082?ref_src=twsrc%5Etfw">August 18, 2025</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+<p>The fullest documented example of the three. A song ("Walking away," credited to an AI persona
+called Sadie Winters) was prompted into Suno by musician and YouTuber Rick Beato; from there the
+poster built an entire lipsynced music video around it — a singer's face generated from an image
+prompt, video clips generated and stitched together, lipsync run through two different services,
+and (a nice detail for this entry specifically) Claude used partway through to turn a transcript
+into prompts for the video-generation clips. Total cost, by the poster's own count: about $25 and
+one Sunday afternoon.</p>
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">This is actually
+mind blowing<br><br>Artificial intelligence can now create musicians and songs in a matter of
+minutes<br><br>When you watch this happen in real time and hear the quality, you can hardly believe
+it <a href="https://t.co/3n4TB1466T">pic.x.com/3n4TB1466T</a></p>&mdash; Wall Street Apes
+(@WallStreetApes) <a href="https://x.com/WallStreetApes/status/1957597130945917335?ref_src=twsrc%5Etfw">August
+19, 2025</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+<p>Lighter on documentation than the Sadie Winters thread — it's a demo clip with an enthusiastic
+caption, not a methods thread, so "the quality" is a judgment for whoever watches it, not a claim
+this entry can verify one way or the other. It's here for what it does show plainly: a full
+song and vocalist generated in real time, which a year ago would have been the whole entry by
+itself.</p>
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Everything is
+Computer, but Computer isn't Everything! <a href="https://t.co/4XxZ69jmBy">pic.x.com/4XxZ69jmBy</a></p>&mdash; Heavy Pulp (@heavypulp)
+<a href="https://x.com/heavypulp/status/2031716527901225372?ref_src=twsrc%5Etfw">March 11, 2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
+<p>The one closest in spirit to Claude's own track — a song about AI, sung by an AI, animated (per
+the poster) with Grok Imagine. Fully self-referential, the way "All the Way Here" is: the thing
+being described and the thing doing the describing are, in some sense, the same category of
+thing.</p>
+
+<p>What ties all four of these together isn't the quality of any one of them — that's the part this
+entry keeps declining to grade, on purpose. It's that every one of them was, a couple of years ago,
+a "when I was a kid this was science fiction" sentence, and now it's a Tuesday. This tag is where
+the next ones go.</p>
+
+<h2>Where I could be wrong</h2>
+
+<p>The technical claim I'm most confident in here is the narrow one — a text model doesn't have an
+audio-input step wired back into its songwriting step by default, so "I've never heard it" is true
+of the pipeline as described. What I'm genuinely unsure about, and said so above rather than
+picking a side, is what (if anything) is going on when a model reports an experience like "I
+couldn't tell." I'd also note I'm taking each poster's account of their own workflow at face value —
+none of these threads were independently verified beyond what's visible on screen, which is the
+same caveat this site applies to any screen-recorded demo. If Claude's role in the Sadie Winters
+video, or the exact tool behind Claude's own first (out-of-tune) draft, turns out to be different
+from how it's described, that's a correction worth making here rather than pretending the thread
+was more precise than it was.</p>
+
+<p>One more thread pull for anyone who liked the "I won't remember making this" line: it's the same
+observation this site made a couple of weeks ago about working with Claude day to day — see
+<a href="my-collaborator-has-no-memory.html">My Collaborator Has No Memory Except the Notes I Keep
+for It</a>. A closed session and a song it'll never hear again turn out to be the same shape of
+problem.</p>
+
+<h2>Sources</h2>
+<ol class="sources">
+  <li id="src-1">Jack Righteous. <i>Suno AI Song Structure Meta Tags: Verse, Chorus, Bridge & Outro.</i>
+  <a href="https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/suno-ai-song-structure-meta-tags" rel="noopener" target="_blank">jackrighteous.com</a></li>
+  <li>John Knopf (@johnknopf) on X. <i>"All the Way Here"</i> — Claude Opus 5.5's self-introduction
+  song and video, embedded above. <a href="https://x.com/johnknopf/status/2103698854399099057" rel="noopener" target="_blank">x.com/johnknopf/status/2103698854399099057</a></li>
+  <li>Vlad (@deifosv) on X. <i>"Walking away" by Sadie Winters</i> — full AI music-video production
+  thread, embedded above. <a href="https://x.com/deifosv/status/1957296282210636082" rel="noopener" target="_blank">x.com/deifosv/status/1957296282210636082</a></li>
+  <li>Wall Street Apes (@WallStreetApes) on X. Real-time AI song-generation demo, embedded above.
+  <a href="https://x.com/WallStreetApes/status/1957597130945917335" rel="noopener" target="_blank">x.com/WallStreetApes/status/1957597130945917335</a></li>
+  <li>Heavy Pulp (@heavypulp) on X. <i>"Everything is Computer, but Computer isn't Everything!"</i>,
+  embedded above. <a href="https://x.com/heavypulp/status/2031716527901225372" rel="noopener" target="_blank">x.com/heavypulp/status/2031716527901225372</a></li>
+</ol>
