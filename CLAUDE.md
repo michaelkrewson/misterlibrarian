@@ -37,6 +37,19 @@ or a travel entry, publishing). It's well-maintained and this file doesn't repea
 file is the layer README doesn't cover: translation doctrine, editorial judgment calls,
 paid-for gotchas, and the conventions that only show up once you've been burned by them.
 
+## Keeping this file small (2026-09-25)
+
+This file is loaded in full into every Claude session in this repo, so its size is a direct
+per-session cost. **Budget: 70,000 bytes** (`wc -c CLAUDE.md`). It holds current rules plus
+pointers; surface-specific detail and dated history live in `claude-docs/*.md` (moved there
+verbatim on 2026-09-25 — nothing was dropped or reworded). **New dated history, incident
+write-ups and "paid for on …" narratives go into the relevant `claude-docs/*.md` file, not
+here** — add at most a one-line rule here when a lesson changes what every session must do.
+When a section below points at a `claude-docs/` file, read that file before working on that
+surface. (The mstr-trader repo enforces the same pattern with a size-budget commit hook; a copy
+may be added here.) `claude-docs/` is served publicly by GitHub Pages exactly as this file is,
+so the same rule applies: nothing private goes in either.
+
 ## Voice — a touch of wit, across every publication (Michael's ask, 2026-09-16)
 
 Michael reads Morning Brew and Robinhood Snacks for their morning newsletters and wants more
@@ -169,69 +182,25 @@ declined — they convert worse than an in-sentence link and compete with AdSens
 slots). Expectation set honestly: 45 clicks → 1 order → $0.10 for all of 2026 across the account;
 this is plumbing so a link written anyway gets credited, not a revenue plan.
 
-## The relationship rule — RETIRED 2026-09-09, all three now cross-link via the hub
+## Hub, cross-links and site-wide legal pages
 
-**This used to say the Bible project links to neither of the other two publications and is
-linked from neither.** That isolation was deliberate (see git history / RETIRED.md-style
-context below), but Michael dropped the concern that motivated it and asked for a top-level
-hub at `/` with one card per publication — Bitcoin & Finance, Food & Travel, and Religion
-(the Bible project) — so all three are now mutually reachable through it. **Don't reintroduce
-the isolation** — the current, correct state is: hub → all three; Bible project → back to the
-hub only via its own nav's brand-name conventions (it doesn't carry a hub link of its own
-today, and none was asked for).
+The old "the Bible project links to nothing and is linked from nothing" isolation rule was
+**RETIRED 2026-09-09 — don't reintroduce it.** Current state: the hub (`index.html`) links all
+six publications; since 2026-09-18 every blog's footer (each builder's `SIBLINGS`, and
+`build_travel.py`'s hand-rolled header/footer links) also links straight to `bible.html`, while
+`build.py`'s own ~2,772 pages were deliberately left untouched. Librarian Abroad ↔ finance
+board link directly too. Bible pages keep their root-level URLs; only the old homepage moved,
+to `bible.html` (`HOME_URL`). **Each builder writes only inside its own output area, never
+globs or deletes elsewhere, and never imports another builder.** ⚠ `build.py`'s
+`check_built_descriptions()` also scans the hand-written root pages and FAILS the Bible build
+when any `<meta name="description">` runs past 160 characters — count it when editing the hub.
+`privacy.html` (one policy for all six publications) and `librarian.html` (site-wide About &
+Contact) are hand-written in the hub's style; every footer links the policy — change it by
+editing `privacy.html` and moving its dated line, never by forking per-publication copies.
 
-⚡ **2026-09-18 (Michael's call): every one of the five blogs now links straight to the Bible
-project too**, not just via the hub. Each builder's `SIBLINGS` list (`build_finance.py`,
-`build_health.py`, `build_notebook.py`, `build_west.py`) and `build_travel.py`'s hand-rolled
-header/footer sibling links gained a fifth entry — "Mr. Librarian's Bible" → `bible.html` — so
-each blog's footer (and, for Travel, its mobile-menu sibling row too, the one place it lists
-siblings twice) now names all FIVE other publications, not four. The Bible project's own
-~2,772 pages (`build.py`) were deliberately left untouched — reachable from the blogs via the
-hub-style pattern only, since adding a "visit our blogs" mention to a spare reference work at
-that scale is a much bigger, more consequential change than a one-line addition to five
-footers, and nothing prompted it. Known small imprecision: `build_health.py`'s Spanish (`es`)
-footer tags every sibling link "(en inglés)" via a blanket per-entry suffix; that's correct for
-the other four (English-only), but the Bible project also has its own Spanish edition (`es.html`)
-that this doesn't route to — accepted rather than threading a per-language URL through
-`SIBLINGS` for one entry.
-
-Librarian Abroad ↔ finance board still link directly to each
-other too (Michael's call, 2026-08-07), unaffected by the hub's addition.
-
-**Why the Bible project's own pages didn't move:** `build.py` still emits ~2,772 pages at the
-SAME root-level URLs they've always had (`genesis-1.html`, `toc.html`, etc.) — moving them
-under a subpath would have broken every indexed URL for zero benefit. Only the ONE page that
-used to occupy the bare root — the project's own homepage — moved, to `bible.html`
-(`build.py`'s `HOME_URL` constant; every page's nav/brand link was repointed there in one
-pass). The bare root itself is now the hub's file, not a `build.py` output at all.
-
-Each of the five builders (`build.py`, `build_travel.py`, `build_finance.py`,
-`build_health.py`, `build_notebook.py`) writes only inside its own output area and never globs or deletes elsewhere — that discipline is what
-lets them all coexist safely in one repo. Keep it that way; don't import one builder from
-another. The hub's `index.html` follows the same discipline by construction — it's a single
-static file with no generator, so there's nothing for a builder to accidentally clobber it
-with, and nothing it can accidentally glob into any of the three builders' own outputs.
-⚠ **One guard does still reach it:** `build.py`'s `check_built_descriptions()` scans every
-root `*.html` it finds, the hand-written hub included, and FAILS the Bible build when a
-`<meta name="description">` runs past 160 characters. The hub's did (194 chars, from its
-2026-09-10 fourth-card edit) and the next Bible chapter's build fell over on it, after every
-page had already been written — trimmed to 156 (and again to 159 when the fifth card landed
-2026-09-11 — the first cut was 163). Editing the hub's description by hand means
-counting it; nothing else caps it.
-
-**Site-wide legal pages at the hub root (2026-09-17, for the Google AdSense application):**
-`privacy.html` (one policy for all six publications — GoatCounter, localStorage, FormSubmit,
-the OSM/YouTube-nocookie embeds, and an AdSense section written to apply the day ads switch on)
-and `librarian.html` (site-wide About & Contact — same FormSubmit endpoint as the Bible
-project's `contact.html`, general subject line, returns to itself with `?sent=1` instead of
-the Bible-styled `thanks.html`). Both hand-written in the hub's own visual language, same as
-`index.html`; both under the same 160-char description cap. **Every footer links to the
-policy:** the hub's, `build.py`'s `FOOTER`/`ES_FOOTER`, `build_travel.py`'s `FOOTER`, and the
-`_legal()` small print of finance/health/notebook/west (via a `PRIVACY_URL` constant, absolute
-because those live one level down). Change the policy → edit `privacy.html` and move its dated
-line; don't fork per-publication copies. The AdSense wording (cookies, Ads Settings/aboutads
-opt-outs, partner-sites link, EEA/UK consent) is what Google's program policy asks a publisher's
-policy to say — keep it if the section is ever rewritten.
+Full detail (the retirement history, the Spanish-footer imprecision, the AdSense wording the
+policy must keep): `claude-docs/hub_and_crosslinks.md` — read it before editing the hub,
+footers, sibling links or the legal pages.
 
 ## Before touching anything — verify, don't assume
 
@@ -379,38 +348,23 @@ policy to say — keep it if the section is ever rewritten.
 
 ## Public notes (X) — chapter / dictionary / encyclopedia / atlas / route pages
 
-**Added 2026-09-09 (Michael's call), simplified and repositioned the same day.** Every chapter
-page, dictionary/encyclopedia/atlas entry page, and route page carries a bare two-button row
-(`build.py`'s `_note_nudge()`, class `.notebtns`): **✏️ Take a Note** (a pre-filled X compose
-link, `blogkit.x_note_url`) and **🔍 View Notes by Others** (an exact-URL X search,
-`blogkit.x_search_url`). X hosts, ranks, and moderates it — this domain runs no comment backend
-of its own. **No pitch paragraph, no surrounding box, and no "Public" in the button label** —
-the first cut had all three, and Michael's own read was that the prose+box "would scare people
-off from actually taking a note" and that spelling out "public" on the button undercuts the same
-goal, even though the note is genuinely public once posted.
-
-**On chapter pages the row sits ABOVE VERSE 1**, not at the bottom — `_insert_before_first_verse()`
-splices it in right before the first `<div class="vrs">`, the exact spot `reader-notes.js`'s
-per-chapter "My notes for X" panel used to occupy (`.notebtns-top`, tight margin). **That private
-panel was REMOVED the same day** (Michael's explicit call, after being told it was also the
-site's ONLY export/import backup for a reader's whole notebook — every chapter's notes and
-highlights, not just one — and choosing to remove it anyway rather than relocate the backup
-UI elsewhere). Per-verse notes/highlights are UNCHANGED and still private/local; only the
-chapter-wide textarea+share+backup panel is gone. On dictionary/encyclopedia/atlas/route pages
-(no verses, so no panel to replace) the row stays at the bottom of the entry, unchanged.
-
-**Same underlying mechanism as `build_travel.py`/`build_finance.py`'s own X-comment nudge**
-(`_x_respond_nudge`/`_ask_nudge`), shared via `blogkit.py` — those two still use the full-size,
-boxed version with the "Commenting on…" pitch text; only the Bible project's copy was slimmed
-(~20% smaller pills) and stripped down. `x_comment_url` (travel/finance) pitches the link as
-pushing back on something Michael wrote; `x_note_url` (here) pitches the identical link as the
-reader's own note ("Note on…") — see `blogkit.py`'s X-comment-system section header for the full
-reasoning. The Bible project has no draft concept for these pages (everything `build.py` outputs
-is already live), so unlike the other two builders it calls this unconditionally, with no
-per-page draft check. **Not yet wired into the Spanish (`.es.html`) entry-page builders** — an
-easy follow-up, not done in the first pass.
+Every chapter page and dictionary/encyclopedia/atlas/route entry page carries a bare
+two-button row (`build.py`'s `_note_nudge()`, class `.notebtns`: **✏️ Take a Note** /
+**🔍 View Notes by Others**, built on `blogkit.py`'s X links). **No pitch paragraph, no box, no
+"Public" in the button label** (Michael's call). On chapter pages it sits ABOVE VERSE 1; the old
+private per-chapter notes panel (and its notebook backup UI) was deliberately removed —
+per-verse notes/highlights are unchanged. Not yet wired into the Spanish (`.es.html`)
+entry-page builders. Full detail: `claude-docs/bible_public_notes.md` — read it before
+touching that row or `reader-notes.js`'s panels.
 
 ## Per-chapter checklist
+
+The steps below are the current rules. **The full original text of this checklist — every
+dated incident and worked example that explains WHY each sub-rule exists (the Numbers 7–36,
+Deuteronomy 14–26 and Genesis 1–33 reviews, the tool-calibration numbers, the known tool
+traps) — is preserved verbatim in `claude-docs/chapter_checklist_history.md`.** Read it before
+your first chapter in a session, and whenever a check below fails in a way you don't
+understand.
 
 1. **Get the source chapter FROM OUR OWN ARCHIVE — never curl the supplier.**
    `python3 tools/source_text.py <Book> <Chapter>` (add `--raw` for the archived
@@ -445,19 +399,11 @@ easy follow-up, not done in the first pass.
    `build.py`'s `check_library_parity()` prints the running English/Spanish gap on every
    build — watch that the number doesn't grow on a chapter you just shipped.
    **`check_library_dupes()` FAILS the build on a duplicate slug** in any of the four
-   structures (added 2026-09-03, after `DICTIONARY_ES` was found defining `shuv` twice —
-   a Zechariah 1 entry and a Psalm 23 entry, each saying something the other did not, with
-   the Zechariah one dead text since the day the second landed; `dabaq`/`davaq` was the
-   same failure wearing two spellings). ⚠ **It reads the AST of `library_data.py`, never
-   the imported object, and that is the whole point:** Python collapses a duplicate key
-   while BUILDING the dict literal — no error, no warning, later entry wins — so
-   `Counter(DICTIONARY_ES.keys())` is *guaranteed* to find nothing. The first cut of the
-   check did exactly that and passed a deliberately re-introduced duplicate; only the
-   source still holds both keys. A failure rather than a warning (unlike parity, which has
-   a legacy backlog) because a duplicate slug is always a fresh mistake and always fixable
-   on the spot. **To fix one: read the LOSER for what only it says, merge both into the
-   entry at the EARLIER position, and let the survivor keep the earlier first-discussed
-   reference.**
+   structures. ⚠ It reads the AST of `library_data.py`, never the imported object — Python
+   silently collapses a duplicate key while building a dict literal, so
+   `Counter(DICTIONARY_ES.keys())` is *guaranteed* to find nothing. **To fix one: read the
+   LOSER for what only it says, merge both into the entry at the EARLIER position, and let the
+   survivor keep the earlier first-discussed reference.** (why: `claude-docs/chapter_checklist_history.md`, step 4)
 5. **Write the note headings SEO-first.** The meta description and JSON-LD are automatic
    from the chapter's teaser (`check_seo()` guards them) — the one manual step per chapter is
    writing `<h3>` note headings that *lead* with the term someone would actually search for,
@@ -471,260 +417,79 @@ easy follow-up, not done in the first pass.
    per-entry check, not a per-book intention — skipping it for a whole book has happened and
    left a queued video unplaced past the chapter it was meant for.
 7. Register the chapter: one line in `CHAPTERS` in `build.py`, bump `NEXT_UP`.
-8. **Run a CLAIMS PASS — separate from, and after, every check above.** ⚠ Paid for twice in
-   one night (Numbers 7 and Numbers 8, 2026-08-18): every structural check passed, the build
-   was green, and both chapters still shipped false statements — because the build validates
+8. **Run a CLAIMS PASS — separate from, and after, every check above.** The build validates
    *structure*, never *assertions*. `check_local_anchors()` proves a link resolves;
    `check_forward_claims()` proves a chapter exists. **Neither one reads what you said about
-   it.** Numbers 8's headline claim ("the first time the lampstand is lit") was refuted by
-   Exodus 40:25 — already shipped, and linked from a note *in that same chapter* — and it
-   had propagated to six places including a brand-new dictionary entry. Re-read every
-   asserting sentence and check:
+   it.** Re-read every asserting sentence and check (why, with every incident:
+   `claude-docs/chapter_checklist_history.md`, step 8):
    - **Absolutes are guilty until proven** — "first / only / never / every / the one place."
-     Grep the shipped source for the counter-example *before* keeping the word. ⚠️ For a claim
-     about the HEBREW ("occurs once", "the first time in the Bible"), grep the actual text, not
-     a memory or a web search: `python3 tools/heb_search.py <hebrew>` searches all 929 archived
-     OT chapters consonantally (`--book X`, `--count`). It matches **letters, not lemmas**, so
-     read the hits rather than quoting the tally — the calibration case is Nephilim, where the
-     defective spelling returns 20 verses of which only 2 are the word. Numbers 14's four best
-     notes were all found this way, and the same pass killed a false "first time Israel proposes
-     killing its own leaders" that Exodus 17:4 — already on these pages — refutes. Both of
-     Numbers 8's worst errors were absolutes ("first time it is lit"; "every other *tenufah*
-     waves a piece of an animal" — Leviticus 23:20, already on these pages, waves two LIVE
-     lambs).
+     Grep the shipped source for the counter-example *before* keeping the word. For a claim
+     about the HEBREW, grep the actual text, not a memory or a web search:
+     `python3 tools/heb_search.py <hebrew>` searches all 929 archived OT chapters
+     consonantally (`--book X`, `--count`). It matches **letters, not lemmas**, so read the
+     hits rather than quoting the tally.
    - **AND RUN THE COUNT CHECKER, do not re-run your own search:
-     `python3 tools/count_check.py <fragment.html>`.** ⚠ Added 2026-09-03, after the
-     Deuteronomy 15 review found the class had shipped four times and after the
-     Deuteronomy 14 review had already written the rule down in prose. A claim like
-     "the word stands in five verses of the Hebrew Bible" is invisible to
-     `shelf_check.py` (which reads quoted phrases), to `validate_chapter.py` (links)
-     and to `twin_diff.py` (the two languages) — nothing in this project read a
-     number until now. **Every corpus-count claim must carry the Hebrew it counted,
-     in a `data-heb` attribute inside the same sentence** — invisible to the reader,
-     and it cannot drift from the claim the way a sidecar file would:
-     `the root <em data-heb="שמט">shamat</em> stands in <strong>eleven verses</strong>`.
-     ⭐ **The pass that matters is NARROWER, not the re-run.** Re-running the author's
-     own query reproduces the author's own number, which is why a naive checker would
-     have missed the real defect: `תחוס עינך` genuinely stands in five verses, all
-     Deuteronomy, while the head word `תחוס` stands in eleven — five of them Ezekiel
-     saying the identical thing of GOD's eye. So when the query is more than one word
-     the tool runs the head word too and prints both counts. A claim resting on a
-     phrase while the prose talks about "the word" or "the formula" is the failure.
-     ⚠ Two escape hatches, both honest rather than convenient: `a|b` unions two
-     spellings (a word written defectively and plene is one claim and two searches),
-     and **`data-heb-read=` declares a count reached by READING the hits rather than
-     by matching** — Numbers 23's *shephi* is nine verses while the bare consonants
-     match fifty-five, so string-matching cannot check it and the tool says so instead
-     of failing it. ⚠ It deliberately does NOT check a tally of versions against an
-     enumeration ("Nine pluralise it (…eight named…)"): that was built, measured, and
-     dropped — English enumerates versions in too many shapes, and the sentence-scoped
-     version produced two false positives and no true ones on a chapter that had the
-     defect. Counting an enumeration stays yours.
-     **Burden, measured before wiring it in:** 53 such claims across all 327 shipped
-     chapters, in 22 of them, mean 2.4 in a chapter that has any.
-     ⚠ **The archive reader dropped the second half of every multi-line verse until
-     2026-09-11.** In the poetic books Mechon prints a long verse across two lines, and
-     `heb_search.chapter_verses` kept only the numbered first line — **605 continuation
-     lines** (488 in Psalms, 56 in Job, 32 in Proverbs) were invisible to every count
-     `heb_search.py` or `count_check.py` ever ran. Found because Psalm 119:176's second
-     half, *for I have not forgotten your commandments*, did not exist to the tool. A
-     sweep of all 622 built pages after the fix turned up **three shipped claims that were
-     low** — Deuteronomy 24's *ani ve-evyon* "eleven verses" (fifteen: four psalm/Job
-     hits sat on second lines) and Deuteronomy 17's *pele* "eighty-one" (eighty-six) —
-     corrected in the same change. **Two scope traps in `count_check.py`, both fixed the
-     same day:** "N verses **of** this book" was not a scope (only "in this book" was) and
-     such a claim was silently SKIPPED — no UNVERIFIED line, nothing — so three
-     Deuteronomy 26 claims went unchecked until the wording was noticed; and a claim
-     joined to another by a semicolon shares its sentence, and only the FIRST count in a
-     sentence is read. One claim per sentence.
-   - **Recompute every number.** If a sentence says "two breaks" and then lists three, that
-     is a shipped contradiction (it was). If it states a ratio, do the division (Numbers 7
-     claimed 5× where the real figure was ~4.25×).
+     `python3 tools/count_check.py <fragment.html>`.** **Every corpus-count claim must carry
+     the Hebrew it counted, in a `data-heb` attribute inside the same sentence**
+     (`the root <em data-heb="שמט">shamat</em> stands in <strong>eleven verses</strong>`).
+     ⭐ **The pass that matters is NARROWER, not the re-run:** for a multi-word query the tool
+     also counts the head word and prints both — a claim resting on a phrase while the prose
+     talks about "the word" or "the formula" is the failure. `a|b` unions two spellings;
+     `data-heb-read=` declares a count reached by READING the hits. It does NOT check a tally
+     of versions against an enumeration — counting an enumeration stays yours. **One claim per
+     sentence** (only the first count in a sentence is read).
+   - **Recompute every number.** A count must match the list it introduces; a stated ratio
+     gets the division done.
    - **Open every chapter you cite** — its actual shipped text, not just proof the file
      exists. Cross-reference *existence* and cross-reference *substance* are different checks
      and only the first one is automated.
    - **ENUMERATE every sentence that asserts something about a text OUTSIDE this chapter,
-     and fetch each one.** ⚠ Added 2026-08-22 after this failed in three consecutive
-     chapters, each time in a different disguise, and each time it was the chapter REVIEW
-     rather than the pre-ship pass that caught it. Numbers 23 shipped a false "the one other
-     place" absolute; Numbers 24 shipped a v13-repeats-22:18 comparison and a "nothing to
-     arbitrate" claim, both written from memory; Numbers 25 shipped "Micah 6:5 names
-     Baal-peor" (it names Balak and Balaam), a loose quotation of Hosea 9:10, and called a
-     harmonisation a "guess" when the Greek says it outright. ⭐ **The pattern is the
-     lesson: patching the specific category that was last criticised does not work.** After
-     Numbers 24's review I tightened the shelf-comparison check and it demonstrably worked —
-     Numbers 25's own pre-ship pass caught my false unanimity before it shipped — and the
-     identical laxity simply reappeared one category over, in cross-references to other
-     biblical books. Treat "X says Y" about ANY text you are not currently translating as
-     the same class of claim as an absolute: it is guilty until fetched. That includes
-     other biblical books, the New Testament (`tools/source_text.py` covers all 1,189
-     chapters, Greek included), and named non-biblical sources — if you cite a tractate, a
-     Maccabees verse or a scribal tradition and cannot produce it, say in the note that it
-     is reported rather than verified, or cut it.
-   - **FETCH every shelf quote you print. Never write one from memory.** ⚠ Added after
-     Numbers 10 (2026-08-18) printed four renderings of 10:36 unfetched: ASV came out
-     misquoted ("the ten thousand thousands" for its actual "the ten thousands of the
-     thousands"), and worse, the sentence claimed the shelf split along the *eleph*
-     thousand/clan seam when **not one of the five versions reads "clan" there** — a false
-     causal claim resting on quotes that were never checked. The tell is that the three
-     preceding chapters got this right *by habit*, which is precisely why it failed the
-     moment attention was elsewhere: an unwritten rule is not a rule. Fetch the parallel
-     page, paste the wording, and only then say what the shelf is doing. **For the NWT/TNM,
-     ASV and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`** (see the
-     shelf-source rule in the doctrine section) — "I could not fetch the NWT" stopped being a
-     reason to ship a chapter without it on 2026-08-19.
+     and fetch each one.** ⭐ Patching the specific category that was last criticised does not
+     work — the laxity reappears one category over. "X says Y" about ANY text you are not
+     currently translating is guilty until fetched: other biblical books, the New Testament
+     (`tools/source_text.py` covers all 1,189 chapters, Greek included), and named
+     non-biblical sources — if you cannot produce it, say in the note that it is reported
+     rather than verified, or cut it.
+   - **FETCH every shelf quote you print. Never write one from memory.** For the NWT/TNM, ASV
+     and KJV that fetch is `python3 tools/shelf_text.py <Book> <Ch> --all`.
    - **Then RUN the check, do not just intend to: `python3 tools/shelf_check.py
      <fragment.html> --book Numbers --chapter NN --shelf-dir <dir the fetches wrote to>`.**
-     ⚠ **An OFFSET chapter needs the PREVIOUS chapter's BibleGateway text too, under
-     `<NAME>_prev.json`.** `--verse-offset 1` sends our v1 to the shelf's last verse of the
-     chapter before, and for the seven BG versions the checker reads that from
-     `<shelf-dir>/<NAME>_prev.json` — so fetch the previous chapter into its own dir and copy
-     each `NIV.json`… across under the `_prev` name (Deuteronomy 23, 2026-09-10, whose v1 is
-     every English Bible's 22:30: `fetch_shelf_bg.py Deuteronomy 22 source/shelf/d22` then
-     `cp d22/NIV.json d23/NIV_prev.json` for all seven). Without it every quote from that
-     verse reads NO DATA. ⚠ `fetch_shelf_bg.py` also writes a non-numeric `_whole` key, and
-     the `_prev` path crashed on it the first time it was fed a real fetch — fixed in
-     `shelf_check.py`, but it means the path had only ever been exercised on hand-made files.
-     ⚠ **In a NEW worktree the shelf dir is not there.** `source/shelf/` is gitignored, so a
-     review worktree cut from `main` has none of the chapter's BG fetches, and every version
-     reads NO DATA — which shelf_check reports as MISS. Deuteronomy 18's review saw **28
-     "PROBLEM(S)" and 18 quotes checked instead of 46**, all of it an artifact of the empty
-     directory rather than a defect in the text. `cp -R` the dir from the chapter's own
-     worktree (or re-fetch) BEFORE believing a single MISS, and treat a sudden collapse in
-     the "checked quotes" count as the tell.
-     ⚠ Added 2026-08-22, and the reason matters more than the command. Numbers 27's review
-     found two wrong shelf attributions **whose correct text was already fetched and sitting
-     in the working directory** — I ran the fetch and never opened the file. So this was not
-     a diligence failure that a firmer rule could fix; it was attention going to the newest
-     written rule and off an older one. Written rules compete for attention and lose.
-     Scripts do not, which is exactly why `validate_chapter.py` exists. Same remedy here:
-     the script extracts every `tag t-*` claim with its adjacent quoted phrase and fails
-     when that phrase is not in that version's fetched text for those verses.
-     ⚠ **It reads straight double quotes too, since 2026-09-11.** The chapters written
-     before the tool existed (Genesis 1 through the early thirties) quote the shelf as
-     `"without form, and void"` in plain ASCII quotes, and the `QUOTE` regex only knew
-     ‘…’/«…»/`&lsquo;` — so Genesis 1 reported **0 checked quotes and 128 "paraphrases"**
-     while carrying ~40 wrong attributions the tool would have caught. A review of Genesis
-     1–33 that day found the same class in nearly every early chapter (NWT "land of
-     Fugitiveness" for Nod, DRB "my iniquity", ASV "as God" not "as gods", GNV "die the
-     death", NIV "streams" for *ed*, the NWT 1984 still reading "ladder" at 28:12 — and one
-     adopted LXX variant in the verse text, Gen 4:15 "Not so" for the Masoretic "Therefore").
-     Attribute values are excluded (`href="#v21-8"` was the one false positive), and
-     Deuteronomy 15/21 report identical results with and without it.
-     Mutation-tested against the three real defects that motivated it — a version quoted
-     as something it does not say and a version cited but never fetched both FAIL the run;
-     a version merely *named* in a list where it does not belong is reported as PARTIAL,
-     a warning, so **read the PARTIAL lines rather than trusting "clean."**
-     PARAPHRASES are counted and NOT checked; they are still yours to read. ⚠ **It now also
-     reports UNTAGGED version names** (2026-08-27) — a version named in bare prose with no
-     `tag t-*` span, which the quote checker is structurally blind to. That class had by then
-     recurred three times (Numbers 23's "the 1909 Reina-Valera keeps the name", Numbers 27's
-     "both Reina-Valeras", and three of them in Numbers 36), and the audit was always two
-     lines: strip the tag spans, look for a version name in what is left. It is a WARNING and
-     stays out of the exit code, deliberately — it **cannot** tell an untagged citation from a
-     legitimate discursive mention ("the Geneva-to-King-James line showing itself"), only
-     where to look. Burden was measured before shipping it: 106 hits over 63 chapters, mean
-     1.7, 39 of the 63 completely clean — readable rather than the wall of noise that would
-     train you to skip it. Re-measure if that rate climbs.
-     ⭐ **WRITE SHELF LISTS TAG-FIRST, and run the check on BOTH panels.** The tool pairs each
-     `tag t-*` with the quote that FOLLOWS it, so a list written quote-first — `'a mingled
-     stuff' (ASV), 'mixed stuff' (NWT)` — reports a wall of MISSes even when every attribution
-     is right, and the real defects hide in the noise. Rewritten tag-first (`the ASV reads 'a
-     mingled stuff'; the NWT 1984 reads 'mixed stuff'`) the same prose went from **29 verified
-     quotes to 52** on Deuteronomy 22's English panel and **41 to 56** on its Spanish one.
-     ⚠ And run it on the SPANISH panel too, not just the English: Deuteronomy 22's Spanish note
-     claimed both Reina-Valeras read «no podrás esconderte» at v3 — pure memory, and wrong. The
-     real readings are a better note (RV 1909 «retraerte» and TNM 1987 «retirarte» keep the
-     reflexive; the RV60 «negarle tu ayuda» and TNM 2019 abandon it), which is the usual
-     outcome: the fetched text beats the remembered one.
-   - **A matching VERSE COUNT does not prove matching VERSE NUMBERS.** ⚠ Paid for on
-     Deuteronomy 22 (2026-09-10). Our `exodus-22` page has 30 verses and so does the Masoretic
-     Exodus 22, which looked like proof the page followed the Hebrew numbering — it does not.
-     English Exodus 22:1 is MT 21:37, so the whole chapter is offset by one and the seduction
-     law this project cites repeatedly sits at **22:16, not 22:15**; the father's veto is 22:17.
-     Two new links and a standing `patah` dictionary entry were all a verse low. Meanwhile
-     `deuteronomy-5` DOES follow MT (honour-your-parents at 5:15, annotated "EN 16"), so the
-     convention is not even uniform across the site. **The check is to open the target verse and
+     Written rules compete for attention and lose; scripts do not. Traps: ⚠ **an OFFSET
+     chapter needs the PREVIOUS chapter's BibleGateway text too, under `<NAME>_prev.json`**;
+     ⚠ **in a NEW worktree the shelf dir is not there** (`source/shelf/` is gitignored) —
+     `cp -R` it from the chapter's own worktree (or re-fetch) BEFORE believing a single MISS,
+     and treat a sudden collapse in the "checked quotes" count as the tell. **Read the
+     PARTIAL lines rather than trusting "clean"**; PARAPHRASES are counted and NOT checked;
+     UNTAGGED version-name warnings are yours to read. ⭐ **WRITE SHELF LISTS TAG-FIRST, and
+     run the check on BOTH panels** (English and Spanish).
+   - **A matching VERSE COUNT does not prove matching VERSE NUMBERS.** English Exodus 22 is
+     offset by one against the Masoretic text, while `deuteronomy-5` follows MT — the
+     convention is not uniform across the site. **The check is to open the target verse and
      read it**, never to compare chapter lengths.
    - **Run the shelf rule on BOTH shelves, and re-run it on every version's own
-     REVISION.** ⚠ Added after Numbers 12 (2026-08-18), where the rule directly above
-     was obeyed for the English shelf and skipped entirely for the Spanish one — six wrong
-     claims in one chapter, all written from memory. The worst inverted the chapter's central
-     note: it told a Spanish reader the RV60 "conserva «boca a boca»" when the RV60 reads
-     "Cara a cara." Two specific traps this class keeps setting. (a) **The Reina-Valera is not
-     one version.** The doctrine above calls RV antigua (1909) and RV60/NVI a *spectrum*; both
-     Spanish errors that mattered came from attributing the antigua's archaic reading to the
-     RV60, which had revised it away. Fetch the edition you are naming. (b) **A version's own
-     revision is a different witness.** NWT 1984 "Mouth to mouth" → 2013 "Face-to-face";
-     RV antigua "Boca á boca" → RV60 "Cara a cara"; TNM 2019 "cara a cara". Naming the wrong
-     edition is the same error as naming the wrong version — and checking both editions is
-     usually where the better note is hiding, since a shelf that moves across four centuries
-     says more than a shelf frozen at one date.
+     REVISION.** (a) **The Reina-Valera is not one version** — fetch the edition you are
+     naming (RV antigua 1909 vs RV60). (b) **A version's own revision is a different
+     witness** (NWT 1984 vs 2013; TNM 1987 vs 2019) — naming the wrong edition is the same
+     error as naming the wrong version.
    - **Check what you assert ABOUT a list, not just the list.** The members and the count can
-     all be right while the predicate binding them is wrong — Numbers 9 called four cases
-     "a law made in response to a complaint" when two were prosecutions, and Numbers 10
-     titled a note "the same blast for war and for festival" when the Hebrew uses *heria*
-     in one verse and *taqa* in the other, inverting the chapter's own point.
-   - **DIFF THE TWINS, mechanically, verse by verse.** The doctrine section above already
-     says a divergence between the English and Spanish is a signal one of them is off &mdash;
-     but saying it is not doing it, and Numbers 13 (2026-08-18) shipped with three, none of
-     which any other check could see. v21 had the English printing the place-name
-     `Lebo-hamath` while the Spanish translated the phrase (`a la entrada de Hamat`), so the
-     two twins were taking opposite sides of a live scholarly question; v20's `fat or lean`
-     became `f&eacute;rtil o magra`, breaking the very pair the note points at; and vv22/28
-     kept the Hebrew's definite article in English (`the offspring of THE Anak`) and dropped
-     it in Spanish. Print the two verse texts side by side and read them &mdash; it takes one
-     throwaway script and finds what nothing else does. Two useful corollaries it surfaced:
-     a divergence usually means **neither** side has a note (v21's strange English word
-     appeared twice with nowhere to send the reader), and the fix is often to make both sides
-     strange and explain it once, not to smooth one of them.
-   - **AND RUN IT, do not re-derive it: `python3 tools/twin_diff.py &lt;slug&gt; --prose --all`**
-     (or two file paths for a pre-splice fragment). ⚠ Added 2026-08-27 after Numbers 36, and
-     the reason is the one this file keeps rediscovering: the rule above has been written
-     three times and the diff was a *throwaway script* every time, so it was slightly
-     different every time. Same remedy as `validate_chapter.py` and `shelf_check.py` &mdash;
-     it stopped being a rule and became a script. **SHAPE** (default) is the mechanical
-     version of this bullet and the one below it &mdash; per note id: paragraph count, digits,
-     and the outbound-link set &mdash; and it FAILS the run. **PROSE** (`--prose`) is the new
-     half, and it exists because Numbers 36 shipped a garbled opening sentence, "the
-     appellants open with the same word the verse it opens with," which the Spanish twin had
-     right and which **no structural check could see**. ⭐ Be honest about what it does: the
-     arithmetic does NOT detect that garble (EN 121 chars / ES 139, a ratio of 1.149 against a
-     corpus p95 of 1.14; its whole note sat at the p25). The counts are TRIAGE; the
-     **side-by-side print is the check**, and a human reads across it. Which is why `--all` is
-     the mode for a chapter you are about to ship: a garble inside an otherwise perfectly
-     matched note prints only if you ask. ⚠ Thresholds and severity tiers are measured, not
-     chosen (`--calibrate` re-derives them from all 261 twin pairs), and the shelf-tag
-     multiset the bullet below asks for was **deliberately not built** &mdash; the two
-     languages cite two different shelves (EN leads KJV 803 / ASV 585, ES leads RV60 551 /
-     NVI 433), so comparing them fails 800 of 1,514 clean notes and measures nothing. What
-     survives of it is an asymmetry warning: one side cites the shelf, the other is silent.
-     It found three live defects on its first run &mdash; a dropped `27:11` clause in Numbers
-     36's own n36-13, and one-sided links still shipped in Numbers 31 and 32.
-   - **AND DIFF THE NOTES, not just the verses.** ⚠ Added after Numbers 14 (2026-08-18), where
-     the verse twin-diff was run exactly as written above, came back clean, and missed
-     everything — because the rule said *verse by verse* and the notes are where the claims
-     actually live. A post-ship read found **nine chapters cited as live links in English and
-     as dead prose in Spanish** (Nehemiah, Exodus 14/17/32/34, Genesis 15/37, Numbers 1,
-     Deuteronomy 1): the Spanish reader was being told *ya en estas páginas* with no way to get
-     there. Diff per note id — paragraph count, shelf tags, digits, and the set of outbound
-     links — and treat a link present on one side only as a defect until proven otherwise.
-     Two legitimate exceptions exist and should be *flagged rather than linked*: a chapter with
-     no Spanish edition takes `numbers-13.es.html`'s wording, "ya en estas páginas, todavía no
-     en español". ⚠ And check that a citation's link actually points at the chapter it names —
-     "Nehemiah 9:17" linked to `nehemiah-1.html` survived this chapter's own composition-time
-     fix of the identical bug on Galatians 3:11, because the fix was applied to the instance
-     that was noticed and not swept for its parallels.
-   - **A fix written during the review is not exempt from the review.** ⚠ The Lebo-hamath
-     note added while FIXING the above put the NWT 1984 on the wrong side of the shelf split
-     (it reads &lsquo;to the entering in of Ha&rsquo;math&rsquo;, the phrase reading, not the
-     name). New prose written in an audit feels like a correction and therefore trustworthy;
-     it is just prose, and needs the same fetch-and-check as the prose it replaces.
+     all be right while the predicate binding them is wrong.
+   - **DIFF THE TWINS, mechanically, verse by verse — AND RUN IT, do not re-derive it:
+     `python3 tools/twin_diff.py <slug> --prose --all`** (or two file paths for a pre-splice
+     fragment). **SHAPE** (default: per note id, paragraph count, digits, outbound-link set)
+     FAILS the run; **PROSE** is triage — the **side-by-side print is the check**, and a human
+     reads across it, which is why `--all` is the mode for a chapter about to ship. A
+     divergence usually means **neither** side has a note; the fix is often to make both
+     sides strange and explain it once, not to smooth one of them.
+   - **AND DIFF THE NOTES, not just the verses.** Per note id — paragraph count, shelf tags,
+     digits, and the set of outbound links — and treat a link present on one side only as a
+     defect until proven otherwise (a cited chapter with no Spanish edition is flagged, not
+     linked: "ya en estas páginas, todavía no en español"). ⚠ Check that a citation's link
+     actually points at the chapter it names, and sweep a fix for its parallels.
+   - **A fix written during the review is not exempt from the review.** New prose written in
+     an audit needs the same fetch-and-check as the prose it replaces.
    - **Diff the bookkeeping.** A chnote saying "X and Y extended, N new entries" must match
-     `git diff library_data.py`. Numbers 8 claimed two entries extended when only one was.
-   - When a claim fails, prefer the one that survives — it is usually the better note anyway
-     (Moses handing the lamps to Aaron beat the false "first lit"; the
-     object → piece → live-animal → living-people escalation beat the false "every other").
+     `git diff library_data.py`.
+   - When a claim fails, prefer the one that survives — it is usually the better note anyway.
 9. `python3 build.py` → commit → push. GitHub Pages rebuilds in ~30–90s; poll the live URL
    to confirm.
 
@@ -765,332 +530,67 @@ easy follow-up, not done in the first pass.
 
 ## The Librarian Abroad (`/travel/`)
 
-- **A new entry is one file:** `source/travel/YYYY-MM-DD-slug.html`, front matter then plain
-  HTML (copy `source/travel/_template.html`). The build fails loudly on a typo'd key, a
-  missing required field, or a filename date that disagrees with the front matter.
-- **Photos are the source, not optional context.** If Michael says photos exist but they
-  aren't attached, go get them — Photos.app AppleScript automation is already granted on his
-  Mac. **This is a hard requirement: never tell him a photo is unreachable without having
-  tried this first.** `ls`/`mdfind`/`find` on `~/Pictures/Photos Library.photoslibrary` will
-  all fail with `Operation not permitted` — that's ordinary TCC sandboxing, not evidence the
-  photos can't be reached. Paid for twice now (2026-07-28, 2026-08-22) by asking him to
-  manually export before trying the workaround already documented right here. Working recipe:
-  - `tell application "Photos" to count of media items` for the total; a `whose date` filter
-    and some index forms throw `-1700`/`-2741`, so don't fight it — index from the tail
-    (`media item i` counting down from the total, or `media item -(i+1)`), print
-    `date`/`filename` for the last ~30–40 to find the right session by eye. "Last night" is
-    a rough clock time, not a query predicate.
-  - Build a list: `set theItems to {}` then `repeat … set end of theItems to media item i`.
-  - **Export syntax is exact:** `export theItems to (POSIX file "/path")` with no options
-    yields Photos' own JPEG conversions. To get true originals (HEIC/MOV, needed before the
-    resizer below) the keyword is **`with using originals`** — `using originals` alone
-    (missing `with`) throws `Expected expression but found end of line (-2741)`, which reads
-    like the whole approach failed rather than one missing word.
-  - Read `location` on each item for real GPS *before* exporting — `with using originals`
-    strips it from the exported file.
-  - **Write the script to a `.applescript` file and run `osascript path.scpt`**, not
-    `osascript -e '...'` — multi-line `-e` scripts have thrown confusing, wrongly-numbered
-    syntax errors here even on a script that was actually fine.
-  **Every photo must go through `python3 tools/travel_photos.py <files>`** before it can be
-  used — it resizes to web size and strips EXIF including GPS. Git history is forever; an
-  oversized or geotagged original committed once can't really be taken back out. HEIC
-  sources need `sips -s format jpeg -Z 1600 in.HEIC --out out.jpg` first (this machine's
-  Pillow has no HEIC plugin).
-- **Ask for a voice memo before writing a food entry.** Michael records ~30-second memos at
-  the table; the sensory detail he actually noticed is exactly the part a photo or menu can't
-  reconstruct, and it's the part worth reading an entry for. `python3
-  tools/travel_transcribe.py <memo> --archive <slug>` runs Apple's on-device speech model —
-  no upload, nothing leaves the Mac, deliberately, since a memo is his voice in a public
-  place. ⚠️ **The memo's filename names the wrong venue** (Voice Memos names a recording
-  after whatever its location lookup resolves to, which on a restaurant street is often a
-  neighbor) — never infer the entry from the filename, ask. ⚠️ **The transcript is a draft,
-  not a quote** — the model mishears menu terms; correct it in the archived transcript's
-  CORRECTIONS block, don't overwrite the raw output.
-- **Writing in Michael's first-person voice is normal and welcome** — that's the job, not a
-  risk to hedge on. What matters is a *place*, not a permission: it goes into the drafts
-  pipeline (`draft: true` → build → push → he reads it at
-  `mistertranslation.com/travel/drafts.html`) before it's public, because he's the
-  proofreader and that page exists for him to read on his phone. Don't skip straight to `main`.
-- **Never invent a specific he didn't give you** — a dollar figure, a time, a founder detail,
-  or (twice now, the standing failure mode to actually watch for) *his own experience of a
-  dish*. Describing food from a photo is fine; saying he tasted it and liked it is not, unless
-  it's in the photo, the memo, or something he actually told you. Per-sentence test while
-  drafting: is this in a photo, or did he say it? If neither, cut it.
-- **Librarian's Stars** (`stars: 1–5`, halves allowed) turns an entry into a review — only
-  worth printing because the scale can say no. Three stars is a good meal, five is meant to
-  stay rare; the published meaning lives on the About page. A post with no `stars:` renders
-  no rating.
-- **Readers write in via a form** (`write.html`), not comments — deliberate, to avoid
-  trading the site's no-tracking posture for Disqus or a moderation chore on a notebook
-  written irregularly by design.
-- **Originals + video go to S3** via `python3 tools/travel_archive.py add <slug> <files...>`
-  — content-addressed by sha256, so `add` is idempotent. ⚠️ The slug is the tool's **first
-  positional argument** — a bare glob with no explicit slug silently makes the first matched
-  photo the slug instead. Always write the slug explicitly and read the tool's own last line
-  (`archived … under '<slug>'`) to confirm what it actually used.
+Must-knows: a new entry is one file, `source/travel/YYYY-MM-DD-slug.html` (copy
+`source/travel/_template.html`). **Never tell Michael a photo is unreachable without first
+trying the Photos.app AppleScript recipe** in the full doc — `ls`/`mdfind`/`find` failing on
+the Photos library is ordinary TCC sandboxing, not evidence. **Every photo must go through
+`python3 tools/travel_photos.py <files>`** (web size, EXIF/GPS stripped) before it is used —
+git history is forever. Ask for a voice memo before a food entry (the memo's filename names
+the wrong venue; the transcript is a draft, not a quote). Writing in his first-person voice is
+the job, but it goes through the drafts pipeline (`draft: true` → `travel/drafts.html`) before
+it's public. **Never invent a specific he didn't give you** — above all his own experience of
+a dish. Originals/video → `python3 tools/travel_archive.py add <slug> <files...>`, slug
+written explicitly.
+
+Full detail (the exact AppleScript/export syntax, transcription, Librarian's Stars, the reader
+form): `claude-docs/travel.md` — read it before working on /travel/.
 
 ## The finance board (`/finance/`)
 
-Standard-library-only build (`build_finance.py`), deliberately no network dependency in the
-build itself — separate fetchers write the data snapshots; the builder only reads them. So a
-provider having a bad night can never fail a build or blank a page. Links with `/travel/`,
-not with the Bible project (the relationship rule above).
+"The Ledger" — a standard-library build (`build_finance.py`) that only reads data snapshots
+written by separate fetchers, so a provider's bad night can never fail a build or blank a page.
+Eight standing boards (Asset Board, Bitcoin Board, Bitcoin Treasuries, CEBE, Crypto Heat Map,
+Bitcoin vs. Humanity, Money Worldwide, Crypto Screener) beside the Ledger's written entries.
+Must-knows: **a live price quoted in an entry is a dated snapshot** — write it with an explicit
+date anchor, link the live board, and re-check every quoted figure after merging `main`
+(`live: true` and the `{{BTC_*}}` tokens do not cover prices); **the Bitcoin subsidy
+arithmetic exists three times** — touch any copy and run
+`python3 tools/fetch_bitcoin_stats.py --selftest`; the refresh workflow's hourly cron really
+runs ~6×/day, so never reason about freshness from the cron line; no BUY/HOLD/TRIM/AVOID-style
+verdict next to a specific coin; keep the board table in the full doc current when a board is
+added.
 
-**Eight standing boards** (the first two renamed 2026-09-03 so they could be told apart;
-Bitcoin Treasuries and CEBE joined 2026-09-06; the Crypto Heat Map and Bitcoin vs.
-Humanity both joined 2026-09-07; Money Worldwide joined 2026-09-08; the Crypto Screener
-joined 2026-09-16 — keep this table current when a board is added
-rather than letting it go stale again, the exact failure mode this note itself once was):
-
-| Page | What it counts | Data |
-|------|----------------|------|
-| **The Asset Board** (`board.html`) | The world's largest assets by market cap — gold, silver, the mega-caps, Bitcoin | `tools/fetch_asset_board.py` (yfinance) → `source/finance/asset_board.json` |
-| **The Bitcoin Board** (`bitcoin.html`) | The Bitcoin network's own numbers — price, supply, difficulty, mempool, fees, halvings, Lightning | `tools/fetch_bitcoin_stats.py` (**stdlib only**) → `source/finance/bitcoin_stats.json` |
-| **Bitcoin Treasuries** (`treasuries.html` + 6 category pages) | Who holds the world's Bitcoin — public companies, miners, ETFs, countries, private companies, DeFi — ranked by coins held, not market cap (most holders have no shares to price) | `tools/fetch_treasuries.py` (**stdlib** — one BTC price, everything else a curated holdings count) → `source/finance/treasuries.json`, from the curated `source/finance/treasuries_seed.json` |
-| **CEBE — Common Equity Bitcoin Exposure** (`cebe.html`) | A sharper companion to Bitcoin Treasuries' public-company rows: not how much BTC a company holds, but how much of it actually belongs to a COMMON shareholder once debt AND preferred-stock liquidation preference (net of cash) are paid first. Sortable — the only board on this site with real client-side interactivity beyond the Bitcoin Board's chart. Ported 2026-09-06 from mstr-trader's own MiSTeRCEBE tracker — same formula (verified against cebetracker.io's own published spec), same curated companies. Cards into `treasuries.html` as a featured 7th box, set apart from the six category boxes since it's a different LENS on the same public-company rows, not a seventh holder category | `tools/fetch_cebe.py` (yfinance, needs a live per-company STOCK price unlike every other board here) → `source/finance/cebe.json`, from the curated `source/finance/cebe_seed.json` (ported from mstr-trader's `btc_treasuries.json`). A ticker is DROPPED from the output (not the seed) if yfinance can't price it or its last bar is >4 days stale — see the script's own docstring. **⚡ 2026-09-07 — two new columns**: Pref Coverage (operating cash flow ÷ annual preferred dividend obligation — a going-concern check; MSTR reads a deeply negative −0.012×, Metaplanet deliberately `n/a` since its segment reporting doesn't isolate core-business cash flow) and BTC Stress (Sats/$100 at BTC −20%/−50%, a sensitivity test, not a forecast). Same pass corrected MSTR's `preferred_liq_usd` $13.5B→$15.46B and removed the rendered methods panel's link to mstr-trader's repo (not meant to be a public reference) |
-| **The Crypto Heat Map** (`crypto.html`) | The top 100 coins by market cap, grouped into three curated sections (Bitcoin & Derivatives, Infrastructure & Platform, Others — two positive lists in the fetcher, everything unmapped defaults to Others). Each coin's price, market cap, circulating supply, 24h volume, and colour-graded change render in three sortable-by-category tables, with click-to-toggle 1H/1D/7D/1M/3M/6M/YTD/1Y buttons (reuses the Bitcoin Board's `.bbb` button styling). Added 2026-09-07. **⚡ Same day — an actual squarified treemap added above the tables** (Bruls/Huizing/van Wijk 2000 algorithm, `_squarify()`), matching the classic CoinMarketCap/Coin360-style heatmap look Michael asked for: box AREA is market cap, box COLOUR is the selected period's change, three black header bars for the same three categories (sized by each category's own total cap, which is why the Bitcoin & Derivatives bar is basically just one giant BTC box). Laid out entirely in Python at build time onto a fixed design canvas (`TREEMAP_W`/`TREEMAP_H`) and expressed as percentages, so it scales responsively via CSS `aspect-ratio` with **no JS resize handler** — the one runtime JS job (`CRYPTO_JS`) is the same "period toggle repaints a baked-in value" pattern already used for the tables, extended to also repaint `.crytile` backgrounds/text. Font sizes use CSS container-query `cqw` units computed per-box from **both its width AND how many characters its label needs** (`_crypto_fit_font`) — the first cut sized text off box width alone and let 4-5 letter symbols (HYPE, GRAM, NEAR) overflow their box; fixed by capping font-size at `width_cqw / (len(text) × 0.6)` before ever comparing it to the height budget. A box too small for even its symbol alone still gets a colour and a hover tooltip — nothing is dropped from the map, same principle as the tables' "—" for uncrawled 3M/6M/YTD. **⚡ Follow-up pass, same day (Michael's feedback after seeing it live):** (1) every tile now shows its symbol regardless of size — the original cutoff that left small boxes blank is gone, sized down to a 3.5px floor rather than disappearing; (2) clicking a tile scrolls its row into view in the table below and gives it a 1.6s amber flash (`.cryflash`, `jumpTo()` in `CRYPTO_JS`) instead of a plain anchor jump — tiles are now `<a href="#row-<coingecko-id>">`, and loading the page with that hash already in the URL waits for the `load` event before jumping, because the browser's own native (top-aligned, no-flash) fragment scroll can otherwise land AFTER the script runs and silently override it; (3) each category table gets a `<tfoot>` subtotal row (market cap + 24h volume, same pattern `_treasury_table` already used) and the page ends with an "All coins" grand total; (4) the Bitcoin tile ONLY also shows `{btc_dominance_pct}% dominance` as a 4th line (`_crypto_tile`'s `dominance` param, wired only for `r["id"] == "bitcoin"`) — a fleet-wide stat about Bitcoin's share of the top 100, not a per-coin figure, so it never applies to any other tile. **⚡ Second follow-up pass, same day:** the methods panel moved from between the last category table and the grand total to AFTER the grand total (Michael's ask — data first, methodology explanation last), and lost its opening paragraph (the "here's which fields come from one API call" mechanics, which was more useful to a future editor than a reader). In its place: a real explanation of what Bitcoin's own market cap here is and isn't — computed dynamically from the live `btc_row` each build, not a hardcoded figure — spelling out that it's circulating supply × price ONLY, does not add anything for Bitcoin ETF share counts or for any company's BTC holdings (already inside the circulating-supply figure, not stacked on top of it), and that every coin on the board is priced by the same formula, which is what makes the cross-coin comparison fair. Also: the grand total's `<tfoot>` now renders a genuine CSS `border-bottom:3px double` under the final row — the first cut was silently losing to `.board tr:last-child td{border-bottom:0}` (a same-page rule for suppressing the trailing border on plain data tables), which wins the specificity tie against a same-class-count selector once its `:last-child` pseudo-class is counted; the fix matched that same `tr:last-child` in the crygrand-scoped selector rather than reaching for `!important`. | `tools/fetch_crypto_heatmap.py` (**stdlib urllib**, one CoinGecko `/coins/markets` call gets price/market cap/circulating supply/24h volume/1H/1D/7D/1M/1Y for all 100 coins at once) → `source/finance/crypto_heatmap.json`. **3M/6M/YTD are NOT in that call** — CoinGecko has no bulk endpoint for those periods at any price, and the free anonymous API throttles hard on a per-coin historical pull (measured directly: 3 paced calls was enough to draw a sustained 429). So those three are filled in by a **slow background crawl**, same shape as mstr-trader's `rh_backfill.py`: a handful of coins get their real 3M/6M/YTD computed each run (stopping immediately on the first 429), persisted to `source/finance/crypto_heatmap_slow.json` keyed by coin id so progress survives across runs. A coin not yet reached reads "—", never a guess or a mislabeled substitute |
-| **Bitcoin vs. Humanity** (`humanity.html`) | Every person alive, set against Bitcoin's fixed 21 million coins: a live world-population counter, BTC issued, satoshis-per-person-on-Earth (+ a chart of that ratio since 2020), "if all the world's wealth were Bitcoin," and "if every millionaire wanted one." Added 2026-09-07 at Michael's request, built from the same "Bitcoin vs. Humanity" panel already live on mstr-trader's own private Arbitrageur cockpit (`BTCW` in `dashboard/mister_arbitrageur.html`) — ported here as an independent, self-contained implementation (own `POP_ANCHOR_TS`/`WORLD_POP_ANCHOR`/`WORLD_POP_RATE`/`WORLD_WEALTH_USD`/`WORLD_MILLIONAIRES` constants in `build_finance.py`, no reference to that private repo anywhere on the page — same discipline as CEBE's own port). Deliberately excludes the private tool's US-population and sats-per-US-citizen rows (Michael's ask — this board is about the whole world). **No new fetcher** — reuses `bitcoin_stats.json` (the Bitcoin Board's own data) for the one thing that needs a network call, the live block height/supply/price; population is a straight-line UN WPP 2024 extrapolation (a model, not a census — ticks in the browser every second), wealth and millionaire counts are UBS Global Wealth Report 2025 constants refreshed by hand ~yearly. The page's own methods panel spells out which of its four kinds of number is which, same honesty framing as the Bitcoin Board's three. Also carries a genuine Satoshi Nakamoto quote (January 2009, verified) and a note on block 501,726 (mined 2017-12-30, an empty block whose coinbase claimed 0 BTC instead of 12.5 — a real, additional reduction below the modeled 21 million cap this page's own math still uses). `HB_CSS`/`HB_JS` are fully self-contained (`.hb*` namespace) rather than reusing `BB_CSS` — same per-board CSS-block convention CEBE/Crypto Heat Map already follow | `source/finance/bitcoin_stats.json` (shared with the Bitcoin Board — no new fetcher) |
-| **Money Worldwide** (`money-worldwide.html` hub + 5 section pages) | Exchange rates, money supply (M0/M1/M2-class), FX + gold reserves, and global government debt & GDP — with Bitcoin's own market cap set against all four (a "scarcity lineup" bar chart: broad money vs. gold's total above-ground value vs. Bitcoin's market cap, deliberately NOT summed into one number — the point is the contrast: fiat is expandable by policy choice, gold grows ~1.5%/yr from mining, Bitcoin is fixed at 21M by consensus rule; world GDP is shown elsewhere on the page, not in this chart, since it's a flow not a stock). Added 2026-09-08. **⚡ Same day, split into a hub + 5 section pages** (Michael's call — "too much data on that one page"), the same hub/sub-page pattern `treasuries.html` already established (`TREASURY_CATEGORIES` → `MW_SECTIONS`): `money-worldwide.html` keeps the intro, one card per section (headline figure computed independently of any one section's own page — e.g. the money-supply card sums `broad_usd` across economies rather than depending on the scarcity chart's `bitcoin.lineup` existing), the scarcity-lineup chart, AND the methodology panel (deliberately NOT split across the five section pages — the chart is a cross-section synthesis that doesn't belong to any one section, and repeating five sourcing paragraphs five times would either duplicate all of them everywhere or force picking one arbitrary owner); `money-worldwide-exchange-rates.html` / `-money-supply.html` / `-reserves.html` / `-gold.html` / `-debt-gdp.html` each carry just their own table + inline caveat (the fx table's honest "no totals row" note, the gold table's world-estimate note, etc.) and a link back to the hub's fuller `#how-this-board-is-made` panel. Reserves and gold — previously one `<h2>` sharing a page — are now two separate cards/pages; they were always two separate tables under one heading. `MW_JS`/`MW_CSS` (sortable tables, namespaced `.mw-sort`) are shared by the hub (no sortable tables of its own, just the `TREASURY_CSS`-borrowed `.trsbox` cards) and every section page via `_shell`'s `extra_css`/`extra_js`. **⚠️ The IMF research that shaped this board — read `tools/fetch_money_worldwide.py`'s own docstring before touching a source here.** Two of IMF's own systems are real and keyless but serve no actual data: the legacy `dataservices.imf.org` SDMX endpoint is DNS-dead; `sdmxcentral.imf.org` is a live, keyless STRUCTURE REGISTRY (dataflow/codelist/datastructure queries work — this is how EXR/MSG/GGD/NAG/ILV1/COF were confirmed to exist as real IMF dataflows) but every `/data/...` query returns SDMX error 501 "Data Queries are not implemented," verified directly. The legacy human-facing TSV export (`rms_five.aspx`) 403s a datacenter IP (an Akamai WAF, the same "Yahoo blocks datacenter ranges" problem this repo already has, from a different vendor). The one IMF system that DOES serve real data keylessly is the **DataMapper API** (`www.imf.org/external/datamapper/api/v1/...`, the same JSON imf.org's own public DataMapper site calls) — genuinely broad (~195 economies + a WEOWORLD aggregate in one call) but its catalogue is WEO/fiscal indicators only (GDP, debt-to-GDP, current account, …); its one monetary-adjacent series, Broad Money % of GDP, turned out on inspection to cover only a curated set of IMF-program African economies — not one G7 country has a value in it. So three of the four sections lean on other real, keyless, official sources instead: **exchange rates** from the European Central Bank's own daily reference rates (reached through Frankfurter, a keyless JSON proxy for the same ECB numbers); **money supply** curated to the US (Federal Reserve H.6 via FRED's keyless CSV trick, `fredgraph.csv?id=...`) and the Euro area (ECB's own SDMX 2.1 JSON API); **non-gold reserves** via FRED's own mirror of IMF's International Financial Statistics reserve series (`TRESEG<CC>M052N` codes) for 9 major economies — so this section traces back to the IMF after all, just through a mirror that doesn't edge-block a CI runner; **gold reserves** a curated, dated seed (`source/finance/money_worldwide_seed.json`, top 15 official holders, World Gold Council/IMF-compiled, same posture as `treasuries_seed.json`'s BTC holdings) priced off the Asset Board's own live gold quote. Only **global debt & GDP** pulls straight from DataMapper, across the full ~195-economy set. ⚠️ **Two real bugs found and fixed during the build, worth remembering:** (1) FRED and IMF DataMapper both reject a DESCRIPTIVE User-Agent header (FRED hangs until timeout, DataMapper 403s) yet both accept either no custom UA at all or a bare client-default one — measured by hand, not assumed; Frankfurter is the mirror image (blocks the literal `Python-urllib` default, accepts a descriptive UA) — see `_UA_HEADER`/`send_ua` in the fetcher. (2) DataMapper's per-country series run ~5 years into the FUTURE (a published WEO forecast horizon) as well as into the past, so "the max year present" silently returns a 2031 forecast on a 2026 build — `_latest_year()` caps at the current calendar year; and DataMapper mixes in ~20 regional/income-group aggregate codes (`APQ`, `WHQ`, `OAE`, …) that are NOT real ISO3 countries but pass a naive `len()==3` filter — `_is_country()` also excludes anything ending in `Q` (the actual WEO aggregate-code convention) plus a named set for the handful that don't follow it. **Self-throttled to ~every 6 hours** regardless of how often the workflow runs (money supply/reserves/GDP are monthly-to-quarterly in reality; running on the hourly cron would be pure commit noise) — see `REFRESH_EVERY_HOURS`/`_due()`. Sortable tables (`MW_JS`) generalise `CEBE_JS`'s click-to-sort to drive every table on a page independently rather than one fixed id. Cross-linked both ways with `untangling-bis-imf-world-bank.html` (the Ledger's IMF/BIS/World Bank explainer). **⚡ Money supply expanded 2026-09-08 — 2 economies → 7 with real live data + 9 more shown with honest blank cells** (Canada/Switzerland/Brazil/UK/Norway added, each a config-driven `money_supply_economies` entry in the seed file naming one of five newly-verified central-bank/stats-office APIs; China/India/Japan/South Korea/Mexico/Turkey/South Africa/Australia/Denmark seriously investigated and listed with "—" + a source-note rather than dropped, per Michael's call). The obvious FRED/OECD-MEI templated pattern for cross-country money supply (mirroring the reserve series' own working template) turned out to be REAL but DEAD — every country's series in that family stopped updating in 2018-2023. Full per-economy research trail: the fetcher's own dated docstring entry ("MONEY SUPPLY EXPANSION — 2026-09-08") and `money_worldwide_seed.json`'s `money_supply_economies`/`money_supply_unresolved` notes — read those before re-researching any of these economies. **⚡ Debt & GDP table expanded to ALL ~195 economies same day** (Michael's call — "expand it to all 195 economies and tally them all"; previously a top-30-by-GDP cutoff, `DEBT_GDP_TOP_N`, purely a DISPLAY limit since `fetch_debt_gdp()` already fetched and summed every economy for the separately-shown world total). The truncation is now removed entirely — the table's own totals row sums all shown rows directly, with an honest note that it may not land exactly on the World GDP figure quoted elsewhere on the page, since that figure prefers the IMF's own official WEOWORLD aggregate over a straight sum of member economies. **⚡ Exchange Rates page gained a currency market-cap ranking, same day** (Michael's ask — "show where Bitcoin ranks in market cap... list and rank all the other currencies the same way," on `money-worldwide-exchange-rates.html`): `_mw_marketcap_table()` ranks each of the Money Supply page's `broad_usd`-resolved economies (12 today) against `bitcoin.market_cap_usd` as one sorted leaderboard — deliberately scoped to those 12, not all 29 FX currencies on the page, since most have no live money-supply source at all (fabricating a number for the rest would violate this board's own honesty convention). Bitcoin currently lands **#10 of 13** (behind China/US/Euro area/Japan/UK/India/Canada/Brazil/Australia, ahead of Switzerland/Norway/Denmark) — a different, currency-only ranking from the Asset Board's `btc_rank` (#11 against ALL world assets — stocks, gold, silver — not just currencies), so the two numbers are expected to differ and should never be conflated. Bitcoin's row gets a `.mw-btcrow` pulsing orange glow (box-shadow keyframe on each `<td>`, not the `<tr>` — box-shadow on a table-row is unreliable under `border-collapse:collapse`, but every browser paints it correctly on a table-cell) rather than the flat `tr.btc` tint `board.html` uses elsewhere; reuses the existing `.rk`/`.mc`/`table.mw-sort` conventions so the rank renumbers correctly on a re-sort. **⚡ Same day, that ranking gained two more sortable columns** (Michael's direct follow-up — "are there other metrics... can we add those as sortable columns"): **Supply growth (YoY)**, each economy's own broadest aggregate's year-over-year growth in its OWN currency (never USD — an FX move against the dollar is a different fact from how much more of a currency now exists), i.e. a currency's own debasement rate; and **Volatility**, annualized stdev of daily log returns, computed the identical way for every fiat row and for Bitcoin so the numbers sit on one column with no methodology asterisk. Both are real, live, additive — NOT threaded through the already-verified latest-value code paths above, each gets its own small `_..._series`/`_..._yoy` sibling function so a bug in one can only blank its own new cell. **Volatility**: `fetch_fx_volatility()` — ONE extra Frankfurter call (`FRANKFURTER_HISTORY_URL`, a year of USD-based daily ECB rates for all 29 currencies in ~100KB, verified directly) computing `_annualized_volatility_pct()` per currency; `fetch_bitcoin_volatility()` — ONE CoinGecko `market_chart` call (365 daily USD closes; genuinely keyless with a bare urllib request, no custom header — already used elsewhere in this repo by `fetch_crypto_heatmap.py`, which documents that endpoint's rate-limit behavior on a much heavier multi-coin crawl this single-coin call barely resembles). USD itself renders "—", not a meaningless "0%" — Frankfurter's own `from=USD` query has nothing to quote the dollar against. **Supply growth**: resolved for **10 of the 12 market-cap-ranked economies + Bitcoin** — US/Euro area/Switzerland/UK already had ~1yr of history sitting in an already-fetched payload (near-zero extra cost); Canada/Brazil/Norway/Denmark/Japan/Australia needed a modest, DIRECTLY-VERIFIED request tweak each (Valet's `start_date`/`end_date` params, BCB's `/ultimos/13`, ECB's `lastNObservations` bumped to 13, a second SSB/DK PxWeb query for the period 13 slots back, and reading a CSV export's full column instead of just its last row) — China (hand-curated from a press release, no queryable history) and India (RBI's fragile HTML scrape, not extended) honestly render "—", same "genuinely investigated, not resolved" convention the base money-supply table already uses. Bitcoin's own figure, `_btc_annual_issuance_pct()`, is the one cell in the column computed from a fixed rule rather than fetched — current per-block subsidy (from `asset_board.json`'s `constants.btc_block_height`, the halving schedule duplicated here rather than imported, keeping this fetcher a fully independent script) × ~52,596 blocks/year over `constants.btc_circulating`, landing at **+0.82%/yr** against fiat rows mostly running 1–10%/yr — visually, the whole point of building this column. ⚠️ **Two real bugs found and fixed verifying this, worth remembering:** (1) a `days_back=400` window for Canada's Valet query looked "a year," but the M3 series itself reports ~3 months behind today, so the window's actual earliest point fell ~90 days short of the true year-ago target — widened to 550 days, confirmed against a direct query spanning 2024-01-01. (2) `_parse_period_date()`'s format list didn't include the RBA's own day-first `DD/MM/YYYY` (it only had `YYYY/MM/DD`), so Australia's 737-point CSV history silently parsed to zero usable dates and returned "—" despite having plenty of real data — added the missing format. **⚡ 2026-09-09 — a fourth sortable column, Daily trading volume** (Michael's follow-up ask): fiat rows are each currency's implied share of the **BIS Triennial Central Bank Survey, April 2025** (real, current data — WebSearch-verified against the BIS's own press release AND cross-checked on Wikipedia's currency-distribution table, since the BIS's own HTML page only stated 6 of the 12 currencies this board needs by name; total $9.6T/day, curated into `money_worldwide_seed.json`'s new `fx_turnover` block the same periodic-survey posture as the gold-reserve tonnages, NOT fetched — the next survey isn't due until April 2028). Each share is "one side of a trade" and sums to ~200% across all currencies by the survey's own convention, so a currency's implied volume is simply `share% × $9.6T` — resolves for all 12 currencies here (unlike the two YoY gaps, the BIS roster happens to cover this board's exactly). Bitcoin's own figure is its live 24h volume, read off the SAME CoinGecko `market_chart` call the volatility column already makes (`fetch_bitcoin_market_stats()` now returns both from one request, replacing the old single-purpose `fetch_bitcoin_volatility()`) — no extra network cost. The column's own caveat note says outright that it mixes two different measurements (a 3-yearly survey vs. a live daily figure) rather than pretending they're the same kind of number. | `tools/fetch_money_worldwide.py` → `source/finance/money_worldwide.json`, from the curated `source/finance/money_worldwide_seed.json` (gold reserves + the tracked reserve-economies' FRED series ids + the money-supply economies/providers + currency flag emoji + the BIS FX-turnover shares) |
-| **The Crypto Screener** (`crypto-screener.html`) | A curated ~32-coin universe (a fixed spot-crypto list, not the Heat Map's top-100-by-cap) ranked on four pillars — Trend 35% / Momentum 35% / Volatility 15% / Relative Strength 15% vs. Bitcoin — no BUY/HOLD/TRIM/AVOID verdict anywhere, Michael's explicit call: a label like that next to a specific coin on a public page reads as a directive to a stranger, which this site's own `_legal()` footer and `build_ask()` already refuse to give ("what should I buy" is the one question never answered here). Added 2026-09-16. **An independent, self-contained reimplementation of mstr-trader's own private MiSTeRCryptoScreener** — same 4 pillars/weights, same intent, but built fresh against CoinGecko rather than reading that tool's output, same discipline as this repo's CEBE/Bitcoin-vs-Humanity ports (no reference to the private repo anywhere on the page). **Why a fresh build, not a port of the output:** the private tool's Alpaca-fed crypto data was found the SAME DAY to carry years of fabricated/mismatched history under several tickers (ARB/USD's 3-month return briefly read +19,746% off a stuck historical price) — publishing that pipeline directly would have republished whatever it gets wrong next. Volatility here is a close-to-close realized-volatility proxy, not a true ATR% (CoinGecko's `market_chart` gives one close per coin per day, no intraday High/Low) — same Goldilocks scoring curve, different raw ingredient, stated on the page itself. Momentum's RSI/volume-expansion/MACD "confirm" term IS a faithful port (CoinGecko's `market_chart` also returns `total_volumes`). **The slow crawl:** every pillar needs each coin's own ~year of daily closes, a per-coin `market_chart` call subject to the same anonymous rate limit `fetch_crypto_heatmap.py` already measured (a handful of coins before a 429) — so a coin's full history arrives a few at a time in the background (`SLOW_STORE`/`SLOW_REFRESH_DAYS`, BTC always fetched first since every Rel-Strength pillar depends on it), typically clearing a fresh 32-coin universe within about a day, not fetched-and-shown instantly. ⚠️ **The first draft of the "still mid-crawl" copy said "each needs about a year of its own daily price history" and Michael read that as "this will take about a year" — a real wording defect, not a real timeline, fixed same-day to say explicitly that a year is the DATA depth needed, not the fetch time.** Sortable via the shared `MW_JS` (`table.mw-sort` + `data-sort`), no new client-side script. Every `COIN_IDS` mapping was verified live against CoinGecko's own `/coins/markets` response (symbol AND name checked, not just the slug guessed) before being trusted — the same defect class as the private tool's own corruption, caught here before it could repeat: POL is `polygon-ecosystem-token` (the post-rebrand id; the old `matic-network` is a different, legacy listing) and dogwifhat's id is `dogwifcoin`, not the more obvious `dogwifhat` | `tools/fetch_crypto_screener.py` (stdlib + CoinGecko) → `source/finance/crypto_screener.json`, from the persisted `source/finance/crypto_screener_series.json` (each covered coin's full cached daily price+volume series) |
-
-⚠️ **An ENTRY that quotes a live price is a dated snapshot, and `live: true` will not save it.**
-The `{{BTC_*}}` token vocabulary (`_btc_template`) covers **supply, height, halvings and the two
-generated SVGs — no price, and nothing at all for the other boards** (no MSTR, no CEBE, no FX).
-So a price in an entry's prose is frozen at the moment you wrote it while the boards it sits
-beside refresh ~6×/day. Paid for 2026-09-10 on `treasury-bond-buyback-explained`: between
-building the entry and merging it, four "Refresh the boards" commits landed on `main`, and the
-Bitcoin and MSTR figures in the body were already wrong by the time the merge conflict was
-resolved — a merge that only conflicted in generated HTML, so nothing flagged the prose. **Write
-the number with an explicit date anchor** ("about $77,300 on the afternoon of September 10") and
-link the live board, rather than phrasing it as a standing fact; and **re-check every quoted
-figure after merging `main`**, not just before.
-
-**The price chart** (full-width market card) draws from three places, picked by range:
-`price_weekly` (all history back to July 2010, ~845 points) for 3Y/10Y/ALL **and for
-every moving average**; `price_daily` (two years) for 1M–1Y; and live Coinbase candles,
-fetched only on demand, for 1H/1D/1W. Minute resolution is deliberately never baked — it
-would be stale before the commit landed. The 50/100/200-**week** averages are a rolling
-mean over the weekly series computed in the browser, so there is exactly one
-implementation. ⚠️ Two things that were wrong on the first cut and should stay fixed: a
-moving average must **not** be interpolated backwards past its own first point (that draws
-a 200-week average over weeks 1–199, a line with nothing behind it — extending it
-*forward* to the present is fine), and axis labels take the tick **step**, not just the
-value, or a one-hour view prints "$81k" four times. The log toggle auto-arms on 3Y/10Y/ALL
-because a sixteen-year linear Bitcoin chart is a flat line with a spike on the end.
-
-`board.html` keeps its URL — only its display name changed, so nothing indexed broke. Its
-`<title>` still carries "the biggest assets in the world", which is the phrase people search
-for; the H1 carries the house name.
-
-**The Bitcoin Board mixes three kinds of number and says so on its own face.** This is the
-thing to preserve if it is ever extended — a dashboard that sets an hourly snapshot, a live
-poll and a deterministic clock in identical type is quietly lying about two of them:
-
-1. **Computed, exact.** Supply, halvings, milestones — the consensus subsidy schedule summed
-   in whole satoshis from the live height. Not an estimate, and it recomputes *in the browser*
-   as blocks land, so it stays exact between builds.
-2. **Polled, live.** Price, height, mempool, fees (60s) and difficulty, hash rate (5min),
-   fetched from mempool.space by the page itself. Skipped while the tab is hidden. On failure
-   it keeps the last good reading and says so beside the dot in the header.
-3. **Snapshot, hourly.** Charts, the all-time high, chain size and totals. Lightning is the
-   exception worth remembering: its upstream statistics are rebuilt on mempool's own schedule
-   and have been observed days behind, so that panel prints its own date.
-
-⚠️ **The same subsidy arithmetic now exists three times** — `tools/fetch_asset_board.py`,
-`tools/fetch_bitcoin_stats.py` and the page's own JavaScript. That is deliberate (importing
-across would drag yfinance into a script whose whole point is needing nothing installed, and
-the browser obviously cannot import Python) and it is guarded:
-`python3 tools/fetch_bitcoin_stats.py --selftest` checks the Python copy against the halving
-boundaries, which are fixed facts rather than anything we decide. **If you touch any of the
-three, run that and re-check the others.** The JavaScript copy uses
-`Math.floor(5e9 / 2**e)` rather than a shift on purpose: `>>` is 32-bit in JavaScript and
-would silently wrap 5,000,000,000.
-
-**Deliberately absent, and it should stay that way:** UTXO set size, chain work, output-type
-breakdowns, coinjoin activity, corporate treasury holdings. Those need a full node with an
-address index or a hand-kept list — don't add one from a guess. The page used to spell this
-out in its methods panel; that paragraph was cut 2026-09-03 (Michael's call) because a
-reader does not need a list of what isn't there. The rule stands, it just isn't advertised.
-
-Both boards refresh from one GitHub Action (`.github/workflows/refresh-asset-board.yml` —
-the file name is unchanged on purpose, since GitHub keys a workflow's schedule and history
-to its path).
-
-⚠️ **It says `cron: "0 * * * *"` but it does not run hourly.** Measured 2026-09-03 across
-thirteen consecutive scheduled runs: they land at roughly 17:45, 13:28, 08:45, 03:58, 23:12,
-20:52 — **about six times a day, 2.5 to 5 hours apart**. GitHub drops the rest under load on
-a public repo, and asking for more would get fewer (sub-hourly schedules are dropped harder
-still). **So do not reason about this publication's freshness from the cron line.** It is
-also why the Bitcoin board's live layer is load-bearing rather than decorative: without it
-that page would sit up to five hours stale.
+Full detail (every board's data sources, fetcher quirks and paid-for bugs, the price chart,
+the three kinds of number, what is deliberately absent): `claude-docs/finance.md` — read it
+before working on any /finance/ board, fetcher or entry that quotes a figure.
 
 ## The Librarian's Regimen (`/health/`)
 
-Health, nutrition and medicine — one question at a time, read from the studies. Built by
-`build_health.py` (standard library only, no network), source in `source/health/`, output in
-`health/`. Added 2026-09-10, Michael's call, as a **dedicated** publication rather than a
-general "post anything" blog: health and money are both subjects where a reader's trust is
-judged per topic, and a kidney-stone piece sitting between two Bitcoin wallet audits is not the
-framing either deserves. Name chosen from three offered (Casebook / Regimen / Apothecary) —
-"Regimen" after the medieval *regimen sanitatis* genre; the front-page hero is a page from a
-1445–1450 *Tacuinum sanitatis* (BnF Latin 9333, f. 53, public domain), which is that genre.
+`build_health.py` (standard library, no network) — the writing half of `build_finance.py`,
+near-verbatim; the two do not import each other (shared fixes go in `blogkit.py`). **No drafts
+page — ships live**; `--drafts` is a local noindexed preview, never committed. Must-knows:
+**every entry ends with `<ol class="sources">` or the build refuses it**; evidence
+(`<div class="verdict">`) and his judgment (`<div class="mine">`) stay visibly apart; numbers,
+not adjectives; **never dosing aimed at the reader, never "you should start/stop"**, and keep
+every disclaimer (`_disclaimer_box()`, `.mednote`, footer, `disclaimer.html`) in place; **name
+the salt** (calcium carbonate vs citrate, magnesium hydroxide vs citrate); **never invent his
+experience** of his own body. A Spanish twin is a `.es.html` beside the original and must cite
+the same source numbers the same number of times.
 
-**What it is mechanically:** the WRITING half of `build_finance.py`, near-verbatim — same
-front-matter vocabulary minus `live`, same tile/list front page with the tag filter bar and
-header search, same "Keep reading" recirculation, same tag-page/sitemap rules, same X comment
-layer, same FormSubmit inbox (`_subject` tells it apart). None of the Ledger's standing boards.
-The two builders do not import each other; a shared-mechanism fix goes in `blogkit.py`, a
-page-chrome idea gets ported by hand. Its mark is a mortar and pestle (animated pestle, same
-ring/halo construction as the Ledger's lighthouse) — the SAME artwork is inlined on the root
-hub's fourth card, so change both or neither.
-
-**Conventions that differ from the other two blogs — these are the ones to get right:**
-
-- **No drafts page. Ships straight live, like the Ledger** (Michael's call 2026-09-10; the
-  travel blog's `drafts.html` was offered and declined). `draft: true` means the entry does not
-  build at all; `python3 build_health.py --drafts` renders it LOCALLY, unlisted + noindexed,
-  for a read-through. Never commit a `--drafts` build. So: write an entry in his voice, publish
-  it, and tell him plainly it is live and worth reading over — the same posture as
-  `project_ledger_has_no_drafts_page` in memory.
-- **Every entry ends with `<ol class="sources">` and the build REFUSES one without it**
-  (`check_entries`). Real links — DOI/PubMed for a paper, the publishing body's page for a
-  guideline. The About page promises nothing is taken on faith; the check is what keeps it.
-- **Evidence and judgment are kept visibly apart.** `<div class="verdict">` (accent) is "what
-  the evidence says"; `<div class="mine">` (amber, deliberately NOT the accent) is "what I'd
-  do" — optional, one person's judgment about one person's circumstances, labelled as such.
-- **Numbers, not adjectives.** How many people, how big the effect, over how long, compared
-  with what. Guideline/systematic review > trial > cohort > mechanism/animal. When the best
-  evidence is weak the entry says so rather than rounding it up.
-- **What NEVER goes in an entry:** dosing aimed at the reader, "you should start/stop",
-  anything that reads as an answer to "what should I take?". `_legal`, the per-entry
-  `.mednote`, the footer's "nothing here is medical advice" and the ask page's
-  "don't ask me whether you should take something" all say the site doesn't do that; every
-  entry is where the promise is kept. Keep every one of those in place — they are not
-  boilerplate to trim.
-- **A boxed medical disclaimer sits above the footer of EVERY page** (`_disclaimer_box()`,
-  rendered by `_foot`; Michael's ask 2026-09-10: "none of this is medical advice nor
-  reviewed by any doctor") — not medical advice, author not a licensed professional, no
-  entry reviewed by a doctor, no doctor–patient relationship, don't start/stop anything,
-  911 in an emergency — linking to the full `disclaimer.html` (`build_disclaimer()`: nine
-  numbered sections incl. no-warranty / limitation of liability; a "Last revised" date in
-  its lede — bump it when the text changes). The About page's "What this is not" and the
-  `.legal` small print both say "not reviewed by a doctor" too. Standard-form language,
-  not lawyer-drafted; if he ever wants it reviewed, that's a human step.
-- **Name the salt.** "Calcium" and "magnesium" are not one thing: WHI gave calcium
-  CARBONATE (1,000 mg elemental); magnesium HYDROXIDE failed its placebo trial while
-  potassium-magnesium CITRATE succeeded (probably the citrate). An entry that says "a
-  calcium pill" or "a magnesium pill" without the form got a correction from Michael on
-  day one — say which, every time.
-- **Never invent his experience** — the travel-blog rule applies here with more force, since
-  the natural subject is his own body. If an entry touches something personal (a diagnosis,
-  a symptom, a number from his own labs), it comes from what he actually said, or it is left
-  out. Research about a condition is fine; asserting he has it is not, unless he told you.
-
-- **The Spanish edition (2026-09-10 — the kidney-stone entry is for a Spanish friend).**
-  Same conventions as the Bible project's: a twin is a `.es.html` file beside its English
-  original — `source/health/YYYY-MM-DD-slug.es.html` (same front-matter vocabulary, its own
-  Spanish title/summary/tags, body translated, SAME source list with the SAME citation
-  numbers) builds to `health/<slug>.es.html`; the front page's twin is `es.html`; About /
-  Ask / Thanks / Disclaimer have `.es.html` twins; the feed is `feed.es.xml`. Every page
-  carries `lang`, `og:locale`, hreflang alternates (head + sitemap) and a header language
-  link (to the twin when one exists, else the other front page); a paired entry also gets a
-  "Read this entry in English / Leer esta entrada en español →" line under its date.
-  **Tag pages are English-only** — a Spanish entry's chips hand off to `es.html?tag=…`.
-  Every reader-visible string is in `UI[lang]` in `build_health.py`; `e["lang"]` is set at
-  load, never sniffed from the filename. Site name in Spanish is "El Régimen del
-  Bibliotecario"; the author stays "Mr. Librarian" (a name, as on the Spanish Bible pages).
-  Spanish (Spain): `usted` for the reader, Spanish number format (43.545 / 1,17 / 67 %),
-  112 ahead of 911 in the emergency line, and the Spanish disclaimer says the English text
-  prevails on any discrepancy. ⭐ **Twin-diff before shipping**: the two editions must cite
-  the same source numbers the same number of times (`Counter` over `href="#src-N"` in each
-  body) — a translation that drops or moves a citation is a defect, same rule as the Bible
-  chapters' notes.
-
-**Adding an entry:** copy `source/health/_template.html` to
-`source/health/YYYY-MM-DD-slug.html` (the header comment is the checklist), rebuild, commit
-`health/` + `source/health/`, push. A Spanish twin is optional per entry and is the same file
-with `.es.html`. Pictures go in `health/img/` web-sized and EXIF-stripped
-(`tools/travel_photos.py` for a photo; for a public-domain illustration keep the source and
-licence for `hero_credit:`). The sitemap is advertised in the root `robots.txt`; submit
-`health/sitemap.xml` once in Google Search Console, same as the other two.
+Full detail: `claude-docs/health_regimen.md` — read it before working on /health/.
 
 ## The Librarian's Notebook (`/notebook/`)
 
-A commonplace book — science & technology, the world, arts & culture, and whatever else
-didn't fit. Built by `build_notebook.py` (standard library only, no network), source in
-`source/notebook/`, output in `notebook/`. Added 2026-09-11, Michael's call, as **the one
-ordinary blog on the domain** — the place where the person, not the subject, is the
-through-line. The other four are special-purpose by design (scripture / money / the road /
-the body), and everything Michael writes "every so often" outside them — a technology piece
-with no Bitcoin in it, a geopolitics or news explainer, the rare arts piece — had nowhere to
-go. **The tell that it was needed:** by 2026-09-11 three such pieces had already landed in the
-Ledger under a soft `notes` tag (the Propst cubicle essay, the AI-token pricing piece, the
-BIS/IMF/World Bank explainer). They stay where they are (live URLs; each has a money angle) —
-`tools/make_redirect_stubs.py` exists if he ever wants one moved.
+`build_notebook.py` (standard library, no network) — the one ordinary blog on the domain; the
+writing half of `build_health.py`. Editorial line: **if the spine of a piece is a price, a
+balance sheet, or an institution that moves money, it's the Ledger; otherwise it's the
+Notebook.** Must-knows: **`section:` is REQUIRED** and must be `technology` / `world` /
+`culture` / `notes` (the `SECTIONS` table); **no drafts at all** — every file in
+`source/notebook/` builds and ships, so publish and tell him it is live; sources optional; no
+Spanish edition by default; keep geopolitics analytical; never invent his experience or his
+opinion.
 
-**Why ONE new publication and not two** (a science-&-tech vertical plus a general one was
-considered): at "every so often" and "rarely" each would look dead within months, and a blog
-whose last entry is four months old loses the reader on arrival. One publication at the
-combined cadence is a living blog. The editorial line this leaves the Ledger with: **if the
-spine of a piece is a price, a balance sheet, or an institution that moves money, it's the
-Ledger; otherwise it's the Notebook.**
-
-**What it is mechanically:** the WRITING half of `build_health.py`, near-verbatim (which is
-itself the writing half of `build_finance.py`) — same front-matter vocabulary minus `draft`
-plus `section`, same tile/list front page with the tag filter bar and header search, same
-"Keep reading" recirculation, same tag-page/sitemap rules, same X comment layer, same
-FormSubmit inbox (`_subject` tells it apart), same two-row header. Its mark is a notebook
-page with a pen writing its last line (the ink draws itself via `stroke-dashoffset`, the nib
-slides along it, then returns to the margin) — the SAME artwork is inlined on the root hub's
-fifth card, so change both or neither. Accent is periwinkle ink `#8fa3ff`, the only cool
-blue among the five. The front-page hero is folio 17v of Leonardo's *Codex on the Flight of
-Birds* (public domain, Wikimedia `File:Codice_Volo_17V.jpg`), cropped to the page bounds
-(the raw scan has a white margin all round; `object-position: center 5%` shows both bird
-sketches). The builders do not import each other; a shared-mechanism fix goes in
-`blogkit.py`, a page-chrome idea gets ported by hand.
-
-**Conventions that differ from the other blogs — these are the ones to get right:**
-
-- **`section:` is REQUIRED on every entry and must be one of `technology` / `world` /
-  `culture` / `notes`** (the `SECTIONS` table in `build_notebook.py`; the build refuses any
-  other value in `load_entries`). Each section is a nav link and its own page
-  (`technology.html` etc.) built from the same listing code as the front page, filtered;
-  always in the sitemap, even empty (it's navigation, not a duplicate). The section leads
-  every tile's date line ("TECHNOLOGY · SEPTEMBER 11, 2026") and the entry page's date line,
-  linked. Tags run underneath exactly as on the other blogs. ⭐ **The sections are the
-  future split seam:** if one section outgrows the others, lift it into its own masthead with
-  one redirect stub per entry and nothing else moves. Decide that from the counts, not now.
-  To add a section, add a row to `SECTIONS` — nav, pages, sitemap and labels all read it.
-- **NO DRAFTS, AT ALL** (Michael's call 2026-09-11: *"we don't need drafts. I can always go
-  back and have you reword something"*). Unlike the Regimen there is no `draft:` key, no
-  `--drafts` flag, no preview page — every file in `source/notebook/` builds and ships. So:
-  write an entry in his voice, publish it, tell him plainly it is live and worth reading
-  over. (`_template.html` is skipped by the leading-underscore rule, as everywhere.)
-- **Sources are OPTIONAL** — an opinion piece may have none — but `<ol class="sources">`
-  renders as on the Regimen when present, and the template asks for one wherever the entry
-  leans on a figure or a document. `<div class="aside">` (accent-edged) is the one house
-  box: a definition, a digression, the number behind a sentence.
-- **No Spanish edition by default.** A twin doubles the cost of a post and the point of this
-  publication is low friction. If a specific entry ever earns one, port the twin mechanism
-  from `build_health.py` then — don't pre-build it.
-- **One general disclaimer, once, in the small print** (`_legal`): not advice of any kind,
-  one reader's opinions, not those of any employer. No per-page medical box (that's the
-  Regimen's), no financial line (that's the Ledger's). The About page's "What it's not"
-  points at those two for money and health.
-- **Geopolitics next to a Bible translation is a real consideration**, and the structure is
-  what makes it a choice rather than a leak: own feed, own section pages, so a translation
-  reader or a Ledger subscriber never has to receive it. Keep the register analytical
-  (the BIS/IMF explainer is the model — explain the thing, not the hot take).
-- **Never invent his experience or his opinion** — the travel-blog rule. An opinion in an
-  entry is one he actually holds and said, or it is left out.
-
-**Adding an entry:** copy `source/notebook/_template.html` to
-`source/notebook/YYYY-MM-DD-slug.html` (the header comment is the checklist; set `section:`),
-rebuild, commit `notebook/` + `source/notebook/`, push. Pictures go in `notebook/img/`
-web-sized and EXIF-stripped (`tools/travel_photos.py` for a photo; for a public-domain
-illustration keep the source and licence for `hero_credit:`). The sitemap is advertised in
-the root `robots.txt`; **submit `notebook/sitemap.xml` once in Google Search Console** — a
-human step, same as the other three.
+Full detail: `claude-docs/notebook.md` — read it before working on /notebook/.
 
 ## Source archive
 
@@ -1151,84 +651,20 @@ the script (idempotent — only fetches what's missing).
 
 ## Front-end JS — the Spanish edition is a page, not a locale flag
 
-`reader-notes.js`, `share.js` and `audio-reader.js` run on **both** editions off one file,
-so anything they render or read has to branch. Two things must; one must not.
+`reader-notes.js`, `share.js` and `audio-reader.js` run on **both** editions off one file.
+Must-knows: language is `(document.documentElement.lang || "").toLowerCase().indexOf("es") === 0`
+— never sniff the `.es` filename; **the verse line is `.eng` in English and `.esp` in Spanish**
+— a `.eng`-only selector silently reads nothing on every Spanish chapter; anything reading a
+verse must strip the widget chrome inside it. **Storage keys, `/v/` stub URLs and download
+filenames must NOT branch** (`baseStem()`/`KEY_PATH` strip `.es`). Each edition has its OWN
+`/v/` share stub. **Verse cards live in the public S3 bucket, not this repo — don't move them
+back** (GitHub Pages hard-caps a site at 1 GB); `img/v/.cards.json` is tracked and
+load-bearing. `?v=` is a content hash — editing a `.js` file does nothing for readers until
+`build.py` is re-run.
 
-- **Language** is `(document.documentElement.lang || "").toLowerCase().indexOf("es") === 0`
-  — that single line is the whole detection, identical in `share.js` and `reader-notes.js`.
-  Don't sniff the `.es` filename for it (the stem gets stripped for URL-building and would
-  lie), and don't leave a reader-visible string outside the string table.
-- **The verse line** is `.eng` on the English page and **`.esp` on the Spanish one**. This
-  is the trap: a selector written as `.eng` alone still *works* — no error, no blank page —
-  it just silently reads nothing on every Spanish chapter. `reader-notes.js` shipped that
-  way, so on the whole Spanish site "Copiar el versículo" copied a reference with no verse
-  attached and "Compartir como imagen" produced a card with a reference, a divider, and
-  empty space where the verse belongs. Both `reader-notes.js` and `audio-reader.js` were
-  fixed on 2026-08-19 — the latter pre-emptively, since Spanish pages still ship no Listen
-  button, so that adding the button is the only step left rather than the day it is added
-  being the day this is found broken. ⚠ Whatever reads a verse must also strip the widget
-  chrome reader-notes.js appends *inside* that same line (`.v-tools`, `.v-note`,
-  `.v-editor`, `.notelink`, `.xrefs`, `.vclip`) — audio-reader stripped only `.notelink`
-  and was therefore reading the "⋯" button glyph aloud after every verse, and would have
-  read a reader's own saved note out loud.
-- **What must NOT branch:** storage keys, the `/v/` stub URLs, download filenames. Those
-  name a *verse*, not a page, so they are language-neutral — `baseStem()` strips `.es`
-  precisely so the two editions can never disagree about which verse is which. ⚠ An earlier
-  version of this section claimed the localStorage keys were already neutral. They were
-  not: until 2026-08-19 the key was `location.pathname`, so one verse held two separate
-  notebooks and the 🌐 toggle looked like it had wiped the reader's margin. `KEY_PATH` now
-  drops the `.es`, and a one-time migration folds the legacy rows in — **losslessly**: where
-  both editions held a note the newer leads and the older is kept beneath it rather than
-  dropped. `PATH` itself is still the right thing for the chapter share URL, which must link
-  to the edition actually being read; only the *keys* are neutral.
-
-**Each edition has its OWN `/v/` share stub** (`numbers-14-1.html` /
-`numbers-14-1.es.html`, fixed 2026-08-19). The STEM stays neutral so the pair sits
-together, but the stub is not: it carries that edition's verse in its Open Graph card,
-its own `lang`/`og:locale`/site name, and redirects to that edition's chapter. Before
-this there was one neutral stub, so a Spanish reader sharing Números 14:1 handed the
-recipient the ENGLISH verse and dropped them on the English page — the most public place
-the site switched languages on its own readers, since a share link is what a Spanish
-reader sends to other Spanish readers.
-
-**Verse cards live in a PUBLIC S3 BUCKET, not in this repo** (moved 2026-08-19).
-`mistertranslation-public` / `us-east-1` / prefix `public/verse-cards/`, served from the
-plain bucket URL — **no CloudFront, deliberately** (Michael: "less future maintenance and
-dependencies"; the bonus is that with no CDN there is no cache to invalidate, so a
-re-rendered card is live immediately). Credentials: `~/.mstr-trader/cards.env`, mode 600,
-a **different key from `backup.env`** — that one writes the private archive bucket holding
-the bank/tax/medical records, and the two must never be shared. The key has PutObject +
-ListBucket and deliberately **not** DeleteObject.
-
-⚠ **Why they moved, so nobody moves them back:** cards are ~38 KB each and scale with
-VERSES, and **GitHub Pages hard-caps a published site at 1 GB** — a limit, not a warning,
-unlike the repo-size numbers usually quoted. At 291 of 1,189 chapters the site was 507 MB;
-English alone at full coverage is ~1.1 GB, over the cap by itself. Moving the cards out
-took the site to **~174 MB** and, far more importantly, stopped it growing.
-
-⚠ **`img/v/.cards.json` is TRACKED, and that is load-bearing.** It is the record of which
-cards are published, and `_ensure_verse_card` consults it BEFORE the network — a matching
-hash returns the URL with no S3 call. That is what lets a build on a machine with no
-credentials still emit correct `og:image` tags for every published card. Without it, one
-credential-less build would silently strip the verse art off every share on the site. Only
-a NEW or CHANGED card touches S3, and if that upload fails only that ONE card falls back to
-the default.
-
-`ES_VERSE_CARDS` is now **True** — turned on the same day, because it was only ever OFF for
-as long as the cards lived in the repo. The bucket has no cap, so there is no reason left to
-give the Spanish edition worse art. The **Spanish default card** (`img/og-default.es.png`)
-stays as the fallback and is still load-bearing: the English default is an English *image*,
-wordmark and tagline both, so falling back to it would put English straight back into the
-most visible part of a Spanish share.
-
-The Spanish book name is **not** duplicated in JS. `reader-notes.js` takes the reference a
-reader sees from the page's own `<title>` ("Números 14 — La Traducción Mister"), falling
-back to the slug only if that head doesn't end in the chapter's number — so `build.py`'s
-`ES_BOOK` stays the single source and no JS copy can drift from it.
-
-⚠ **`?v=` is a content hash** (`_asset_ver`), baked into all 2,772 pages at build time.
-Editing any of these `.js` files does **nothing** for a real reader until you re-run
-`build.py`; the browser keeps serving the cached old file under the old stamp.
+Full detail (bucket, credentials and key permissions, the migration numbers, the Spanish
+default card, where the Spanish book name comes from): `claude-docs/frontend_js.md` — read it
+before touching any of those JS files or the verse-card pipeline.
 
 ## Known gaps — not yet documented here
 
@@ -1250,52 +686,14 @@ the code and the live site over any memory note, this file included.
 
 ## Eight Miles West (`/west/`)
 
-A family history — the Croesen / Kroesen / Kroessen / Kreuso / Cruse / Krewson line's four
-centuries in America, from a cooper at Breuckelen c.1660 through Staten Island, Bucks County,
-Ohio, Iowa and the Pacific, into the twentieth century's wars and breakages — published one
-chapter at a time by `build_west.py` (standard library only), source in `source/west/`,
-output in `west/`. Added 2026-09-11 (Michael's call). Michael's own family; the research
-record behind it lives in the mstr-trader repo's private MiSTeRGenealogy (`genealogy.json`,
-171 people, 32 story write-ups) and the family's own published genealogy, Warren D. Cruise,
-*The Croesen Families of America*, Vol. I (1998), OCR'd in full in the fleet's S3
-(`blobs/GENEALOGY_BOOK_OCR/`). Written to be read on the web first and compiled into a
-KDP paperback later (plain KDP, not Select — Select's exclusivity conflicts with free web
-chapters).
+`build_west.py` (standard library) — Michael's family history, published as a BOOK (numbered
+`NN-slug.html` chapters in five fixed parts, read in order), not a blog. Must-knows: every
+sentence is documented (cited prose), inferred (`<span class="infer">`) or family legend
+(`<div class="doc legend">`, never promoted to fact later); `<ol class="sources">` is
+REQUIRED; drafts keep the Regimen's posture (`draft: true` = not built, `--drafts` = local
+preview, never committed) because later chapters concern living people. **Since 2026-09-24
+his real name is OFF the web version** (`AUTHOR` = `"mistertranslation.com"`), except where he
+is a cited SOURCE inside a chapter — and don't spread the real name to the other five
+publications.
 
-**It is a BOOK, not a blog — the one structural difference from the other five, and the
-reason it is its own builder rather than a Notebook section:** a narrative has an ORDER.
-Chapters are numbered in the filename (`NN-slug.html`) and read in that order inside five
-fixed PARTS (`flags` / `will` / `west` / `broke` / `keepers` — the five eras the record
-divides into on its own); the contents page IS the front page and shows all five parts from
-day one, "Not yet written" where nothing is; chapter pages carry Previous/Next in reading
-order. No tags, no tag pages, no search box, no newest-first. `date:` is the publish date
-for the feed/sitemap only.
-
-**The book's whole promise, enforced in markup:** every sentence is documented, inferred, or
-family legend, and the reader can see which. Plain cited prose = documented; `<span
-class="infer">` (italic) = worked back from an age or a gap; `<div class="doc legend">`
-(gold rule) = a story the family told, stated as a story and NEVER promoted to fact in a
-later chapter. `<div class="doc">` quotes a document verbatim with a `.cite` line — prefer
-the original's words to a paraphrase every time the original survives. `<ol
-class="sources">` is REQUIRED (the Regimen's rule; the build refuses without it).
-
-**Drafts — the Regimen's posture, kept on purpose here** even though the Notebook dropped
-drafts entirely: `draft: true` = not built; `--drafts` = local noindexed preview; no drafts
-page. The later chapters are about living people and a father who left, and those get read
-by Michael in his own voice before they get a URL. Never commit a `--drafts` build.
-
-**Spine decided 2026-09-11 (Michael to ratify on the page):** Book I opens on Elizabeth
-Cregier's baptism, Reformed Dutch Church, Manhattan, 5 July 1662 — witnesses Martin Kregier
-(Burgomaster) and Nicasius de Silla (Schout-Fiscal), her two grandfathers; two years before
-the English take the colony; she dies 1740 on a Bucks County farm. One person carries each
-era after her. Working title stays until three chapters exist.
-
-**⚠️ 2026-09-24 — his real name came OFF the web version** (Michael's call: it goes on the printed edition one day, not the web copy — "for now it will slow them down at least," not a claim of full anonymity). The front-page `<p class="byline">by ...</p>` line, the `<meta name="author">` tag (every page), and the © footer line were all switched to `mistertranslation.com` — the `AUTHOR` constant in `build_west.py` now reads `"mistertranslation.com"` and feeds the meta tag + © line (the byline paragraph itself was deleted outright, not re-pointed). **The About page's own prose was also de-named the same day** — "It is written by Michael V. Krewson... published under his name" → "written by a modern member of the family... under this domain's usual byline, Mr. Librarian." **⚠️ What's deliberately NOT touched: his name as a cited SOURCE inside the chapters themselves** (photo credits, email correspondence, the DNA panel, the genealogical record rows like "Michael V. Krewson (b. 1971)") — those are documented citations the book's own honesty convention requires, not authorship attribution, and scrubbing them would break the sourcing. Prior state (2026-09-11 → 2026-09-24): this was "the ONE publication on the domain with a real name on it." Everywhere else the domain stays "Mr. Librarian." Don't spread the real name to the other five.
-
-**Same X comment layer, same FormSubmit inbox (`_subject` "Eight Miles West — a reader
-wrote in"), same GoatCounter.** Mark: a compass whose needle settles west (the same SVG is
-inlined on the root hub's sixth card — change both or neither). Accent Delft blue `#4fa8dc`.
-Six cards now fill the hub's 2×3 grid, so the Notebook lost its full-width fifth-card rule.
-Sibling link added to the other four blogs' footers (and the travel mobile menu, where a
-duplicated Notebook line was fixed in passing).
-
+Full detail: `claude-docs/west.md` — read it before working on /west/.
