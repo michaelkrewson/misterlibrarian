@@ -2,59 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mistertranslation.com/health/</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/es.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/about.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/about.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/about.es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/about.html"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/about.es.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/about.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/about.es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/about.html"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/disclaimer.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/disclaimer.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/disclaimer.es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/disclaimer.html"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/disclaimer.es.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/disclaimer.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/disclaimer.es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/disclaimer.html"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/ask.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/ask.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/ask.es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/ask.html"/>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/ask.es.html</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://mistertranslation.com/health/ask.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mistertranslation.com/health/ask.es.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mistertranslation.com/health/ask.html"/>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/health/why-are-tattoos-permanent-and-where-does-the-ink-go.html</loc>
+    <lastmod>2026-09-26</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/do-calcium-and-vitamin-d-supplements-prevent-fractures-and-falls.html</loc>
@@ -137,6 +141,10 @@
   <url>
     <loc>https://mistertranslation.com/health/tag-cardiovascular-disease.html</loc>
     <lastmod>2026-09-22</lastmod>
+  </url>
+  <url>
+    <loc>https://mistertranslation.com/health/tag-dermatology.html</loc>
+    <lastmod>2026-09-26</lastmod>
   </url>
   <url>
     <loc>https://mistertranslation.com/health/tag-drug-prices.html</loc>
