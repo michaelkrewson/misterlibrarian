@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-25 22:10 UTC",
+ "generated": "2026-09-26 07:25 UTC",
  "fx": {
   "base": "USD",
   "date": "2026-09-25",
@@ -533,99 +533,99 @@
     "country": "United States",
     "flag": "🇺🇸",
     "tonnes": 8133,
-    "usd": 1129733076473.545
+    "usd": 1129916164959.7207
    },
    {
     "country": "Germany",
     "flag": "🇩🇪",
     "tonnes": 3355,
-    "usd": 466033993799.18146
+    "usd": 466109520895.1018
    },
    {
     "country": "Italy",
     "flag": "🇮🇹",
     "tonnes": 2452,
-    "usd": 340600701280.3556
+    "usd": 340655900219.0133
    },
    {
     "country": "France",
     "flag": "🇫🇷",
     "tonnes": 2437,
-    "usd": 338517091770.07605
+    "usd": 338571953031.7028
    },
    {
     "country": "China",
     "flag": "🇨🇳",
     "tonnes": 2313,
-    "usd": 321292586485.09894
+    "usd": 321344656283.26996
    },
    {
     "country": "Russia",
     "flag": "🇷🇺",
     "tonnes": 2299,
-    "usd": 319347884275.50464
+    "usd": 319399638908.4468
    },
    {
     "country": "Switzerland",
     "flag": "🇨🇭",
     "tonnes": 1040,
-    "usd": 144463592712.712
+    "usd": 144487004986.8572
    },
    {
     "country": "India",
     "flag": "🇮🇳",
     "tonnes": 880,
-    "usd": 122238424603.064
+    "usd": 122258234988.87917
    },
    {
     "country": "Japan",
     "flag": "🇯🇵",
     "tonnes": 846,
-    "usd": 117515576379.7638
+    "usd": 117534621364.30884
    },
    {
     "country": "Turkey",
     "flag": "🇹🇷",
     "tonnes": 635,
-    "usd": 88206135935.1655
+    "usd": 88220430929.4753
    },
    {
     "country": "Netherlands",
     "flag": "🇳🇱",
     "tonnes": 612,
-    "usd": 85011268019.4036
+    "usd": 85025045242.26596
    },
    {
     "country": "Poland",
     "flag": "🇵🇱",
     "tonnes": 582,
-    "usd": 80844048998.84459
+    "usd": 80857150867.64508
    },
    {
     "country": "Taiwan",
     "flag": "🇹🇼",
     "tonnes": 424,
-    "usd": 58896695490.5672
+    "usd": 58906240494.64178
    },
    {
     "country": "Uzbekistan",
     "flag": "🇺🇿",
     "tonnes": 416,
-    "usd": 57785437085.0848
+    "usd": 57794801994.74288
    },
    {
     "country": "Portugal",
     "flag": "🇵🇹",
     "tonnes": 383,
-    "usd": 53201496162.469894
+    "usd": 53210118182.65991
    }
   ],
   "total_tonnes": 26807,
-  "total_usd": 3723688009470.837,
+  "total_usd": 3724291483348.7314,
   "world_official_tonnes_estimate": 36600,
-  "price_usd_oz": 4320.5,
-  "price_as_of": "2026-09-25 22:09 UTC",
-  "world_market_value_usd": 30040787382706.402,
+  "price_usd_oz": 4321.2001953125,
+  "price_as_of": "2026-09-26 07:23 UTC",
+  "world_market_value_usd": 30045655897579.492,
   "source_note": "World Gold Council, compiled from IMF International Financial Statistics reporting; most recent WGC compilation as of early 2026 (Q4 2025 / Q1 2026 reporting round, per-country update cadence varies — several countries report only quarterly or annually). Tonnages are official-sector holdings only — they exclude private and unofficial holdings entirely."
  },
  "debt_gdp": {
@@ -2003,12 +2003,12 @@
   "world_debt_usd_b": 120080.93095661484
  },
  "bitcoin": {
-  "price_usd": 83878.9921875,
-  "market_cap_usd": 1685069976049.888,
+  "price_usd": 84008.3671875,
+  "market_cap_usd": 1687686354719.387,
   "btc_rank": 11,
-  "volatility_pct": 37.41269722285618,
-  "turnover_usd": 36062602967.27145,
-  "broad_yoy_pct": 0.8181595452632886,
+  "volatility_pct": 37.408929662892106,
+  "turnover_usd": 32885303264.46779,
+  "broad_yoy_pct": 0.8181511459901154,
   "lineup": [
    {
     "label": "Broad money — 15 economies with live data",
@@ -2017,12 +2017,12 @@
    },
    {
     "label": "Gold — all above-ground supply",
-    "usd": 30040787382706.402,
+    "usd": 30045655897579.492,
     "note": "Every ounce ever mined, at today's price — not just central-bank reserves, and deliberately NOT added into the money-supply bar above it."
    },
    {
     "label": "Bitcoin — total market cap",
-    "usd": 1685069976049.888,
+    "usd": 1687686354719.387,
     "note": "21 million coins, fixed by consensus rule — the fixed point this whole lineup is measured against."
    }
   ]

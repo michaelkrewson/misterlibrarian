@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-25",
+  "date": "2026-09-26",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,15 +7,21 @@
       "label": "World",
       "items": [
         {
-          "text": "Treasury Secretary Scott Bessent announces on September 24 that the US and China will extend their trade truce two more months, through January 10, 2027, as President Xi Jinping begins a White House state visit and the two sides work toward a broader deal on tariffs and rare earths.",
+          "text": "China and the US agree on a $30 billion reciprocal tariff cut and launch a new AI dialogue as part of an eight-point consensus reached as Xi Jinping's three-day state visit to Washington concludes on September 25, with the two leaders pledging to meet at least twice more this year.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
+          "source_href": "https://www.cnbc.com/2026/09/26/china-us-tariff-cut-ai-dialogue.html",
           "breaking": false
         },
         {
-          "text": "President Zelensky says on September 25 that Washington has proposed a technical-level, three-way meeting between Ukraine, Russia and the US in the United Arab Emirates, with the Kremlin saying such talks could happen soon.",
+          "text": "Bangkok's city government declares a flood disaster across all 50 districts on September 26 after nearly 300 millimeters of rain fell over 48 hours, with roughly 980 residents moved into temporary shelters and 36 bedridden patients transferred to hospitals.",
           "href": "",
-          "source_href": "https://www.usnews.com/news/world/articles/2026-09-25/us-proposes-trilateral-meeting-with-ukraine-russia-in-uae-zelenskiy-says",
+          "source_href": "https://www.khaosodenglish.com/featured/2026/09/26/bangkok-declares-all-50-districts-disaster-affected-as-flood-warning-issued/",
+          "breaking": false
+        },
+        {
+          "text": "The Palestinian Central Elections Commission opens registration on September 26 for candidate lists in the November 28 legislative election, the first such vote in the West Bank and Gaza since 2006, with registration running through October 7.",
+          "href": "",
+          "source_href": "https://www.bernama.com/en/world/news.php?id=2612204",
           "breaking": false
         }
       ]
@@ -24,15 +30,9 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "Akamai Technologies shares surge more than 20% in premarket trading on September 25 after the company discloses an $11.6 billion, seven-year cloud-computing deal with Anthropic, plus a warrant that could give Anthropic up to roughly 5% of Akamai's common shares.",
+          "text": "US stocks close out the week higher on September 25, with the S&P 500 up 0.51% to 7,743.41, the Dow up 478.64 points (0.93%) to 51,828.62, and the Nasdaq up 0.5% to 27,068.72, even as Treasury yields hold near two-decade highs.",
           "href": "",
-          "source_href": "https://siliconangle.com/2026/09/24/akamai-shares-jump-more-than-20-on-11-6b-anthropic-computing-deal/",
-          "breaking": false
-        },
-        {
-          "text": "The S&P 500 closes essentially flat on September 24 at 7,704.13 (down 1.90 points), the Dow falls 161.61 points (0.3%) to 51,349.98, and the Nasdaq edges up 3.34 points to 26,939.37, as Treasury yields hold near two-decade highs.",
-          "href": "",
-          "source_href": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-sep-24-123300781.html",
+          "source_href": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-25-134126022.html",
           "breaking": false
         }
       ]
@@ -41,15 +41,15 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin opens September 25 at $84,378.12, roughly flat from Thursday, before climbing to $85,199.84 by 7:14 a.m. ET.",
+          "text": "Bitcoin trades near $84,000 on September 26 as the total crypto market cap holds at $2.98 trillion (up 0.3%), the Fear & Greed Index reads 74 (\"Greed\"), and 24-hour trading volume runs $109.2 billion.",
           "href": "",
-          "source_href": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-september-25-2026-is-bitcoin-finally-on-a-path-to-250000-113048042.html",
+          "source_href": "https://coincodex.com/article/92667/daily-market-update-for-september-26-2026",
           "breaking": false
         },
         {
-          "text": "The Federal Reserve proposes on September 24 that payment-stablecoin issuers hold reserves almost entirely in short-term Treasury bills or other highly liquid assets, its most concrete stablecoin rulemaking since Congress passed the GENIUS Act.",
-          "href": "https://mistertranslation.com/finance/the-fed-wrote-the-house-rules-nobody-lives-there-yet.html",
-          "source_href": "https://en.cryptonomist.ch/2026/09/25/stablecoin-regulation-us/",
+          "text": "Crypto exchange Bitget confirms on September 25 that suspected North Korean hackers stole $351.6 million from its hot and warm wallets on September 24 via a spoofed-transfer backend compromise, freezing withdrawals while its cold wallets and a $464 million-plus user protection fund remain untouched.",
+          "href": "",
+          "source_href": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
           "breaking": false
         }
       ]
@@ -58,21 +58,15 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Anthropic says its Claude model spent 21.5 hours and 949 autonomous agent sessions sifting roughly 200,000 bacteriophage enzyme clusters down to 3,564 candidates, surfacing a previously undescribed, CRISPR-like enzyme system it calls array-associated reverse transcriptases (ART).",
+          "text": "Anthropic launches Claude Opus 5.5 on September 22 at $4 per million input tokens and $20 per million output tokens (down from Opus 5's $5/$25), and OpenAI answers roughly 90 minutes later with GPT-6 Sol priced at $2 and $10 per million tokens.",
           "href": "",
-          "source_href": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+          "source_href": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
           "breaking": false
         },
         {
-          "text": "Amazon opens its Seller Central APIs to outside AI agents at its Accelerate conference on September 23, launching a US beta plugin that lets sellers manage inventory, pricing, listings and analytics through Anthropic's Claude in about 60 seconds with no coding.",
+          "text": "Security researcher Rasmus Moorats publishes two still-unpatched OxygenOS flaws on September 24 that let an app with no special permissions gain root access on a OnePlus 15, five months after reporting them to OnePlus on April 18 and receiving neither a CVE nor a fix.",
           "href": "",
-          "source_href": "https://www.geekwire.com/2026/amazon-opens-its-seller-tools-to-outside-ai-agents-starting-with-anthropics-claude/",
-          "breaking": false
-        },
-        {
-          "text": "OpenAI's Sam Altman and Anthropic's Dario Amodei tell the UN Security Council on September 23 that the AI industry needs binding international standards, with Amodei warning that, managed poorly, AI \"could be a risk to humanity as a whole.\"",
-          "href": "",
-          "source_href": "https://www.cnn.com/2026/09/23/tech/altman-amodei-ai-safety-un-security-council",
+          "source_href": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
           "breaking": false
         }
       ]
@@ -81,15 +75,15 @@
       "label": "Science & space",
       "items": [
         {
-          "text": "A study published in Icarus finds Uranus's moon Ariel may once have held a subsurface ocean more than 100 miles (170 km) deep, based on tidal-stress modeling of the fractures and ridges across its surface.",
+          "text": "UBC researchers describe two sea spider species new to science from British Columbia's Salish Sea, the first found there in nearly a century, including the red-eyed, three-lipped Callipallene pilosuspedes, collected scuba diving to depths of 18 meters.",
           "href": "",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260923035951.htm",
+          "source_href": "https://news.ubc.ca/2026/09/new-sea-spiders-discovered-salish-sea/",
           "breaking": false
         },
         {
-          "text": "SpaceX completes a wet dress rehearsal on September 24 ahead of Starship Flight 14, targeted for September 28 as the vehicle's first-ever orbital launch attempt, set to carry 26 upgraded Starlink V3 satellites roughly 171 miles above Earth.",
+          "text": "A Science Advances study led by LSU's Brandon Shuck maps a roughly 22-mile-long tear opening in the Cascadia subduction zone's Nootka Fault Zone off Vancouver Island, where the oceanic slab has already dropped about 5 kilometers, suggesting subduction zones can die piecemeal rather than all at once.",
           "href": "",
-          "source_href": "https://www.space.com/news/live/spacex-starship-flight-14-live-updates-sept-24-2026-starship-first-orbital-launch-attempt",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260924231343.htm",
           "breaking": false
         }
       ]
@@ -98,15 +92,15 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "A Bayesian meta-analysis of 110 randomized trials and 22,608 patients, published in JAMA Network Open, finds a 94.4% probability that the antibiotic cefepime carries higher all-cause mortality than other beta-lactam antibiotics — 6.6% of cefepime patients died versus 6.2% on other beta-lactams.",
+          "text": "A study tracking more than 113,000 people for up to 20 years finds a transient ischemic attack, or \"mini-stroke,\" carries a 34% higher long-term dementia risk than no stroke at all, with about one in five TIA patients diagnosed with dementia within roughly seven years.",
           "href": "",
-          "source_href": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2853883",
+          "source_href": "https://www.medicalnewstoday.com/articles/mini-strokes-linked-to-34-higher-long-term-dementia-risk-in-new-study",
           "breaking": false
         },
         {
-          "text": "A study of 1,496 US healthcare personnel in the American Journal of Industrial Medicine finds 169 of them, or 11.3%, reported at least one persistent moderate-or-severe long-COVID symptom at both three and six months after infection.",
+          "text": "A Washington University-led phase 1/2 trial in 30 adults with AML or high-risk MDS finds that CRISPR-edited donor stem cells with the CD33 gene deleted engraft normally and let some patients tolerate CD33-targeted maintenance therapy afterward without prolonged, severe blood-cell suppression.",
           "href": "",
-          "source_href": "https://www.cidrap.umn.edu/covid-19/more-1-10-us-healthcare-workers-report-ongoing-long-covid-symptoms-study-finds",
+          "source_href": "https://www.nature.com/articles/s41591-026-04362-1",
           "breaking": false
         }
       ]
