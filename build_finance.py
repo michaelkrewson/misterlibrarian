@@ -91,7 +91,7 @@ ADSENSE_CLIENT = "ca-pub-2001206283779660"   # Google AdSense publisher id (pub-
 # replaced with figures freshly derived from asset_board.json on EVERY build,
 # so the entry rebuilds itself hourly right alongside the board. Every other
 # entry ignores this key entirely; a body with no tokens is untouched by it.
-KNOWN_KEYS = {"title", "date", "updated", "tags", "summary", "meta_desc",
+KNOWN_KEYS = {"title", "date", "time", "updated", "tags", "summary", "meta_desc",
               "hero", "hero_alt", "hero_credit", "draft", "live"}
 REQUIRED_KEYS = {"title", "date", "summary"}
 META_DESC_MAX = 155
@@ -686,6 +686,18 @@ def load_entries(include_drafts=False):
             continue
         live = meta.get("live", "").strip().lower() in ("true", "yes", "1")
 
+        # Optional `time: HH:MM` — the publish time-of-day, shown next to
+        # `date` on the entry page. Absent for most existing entries; only
+        # ever set going forward, never required.
+        time_raw = meta.get("time", "").strip()
+        pub_time = None
+        if time_raw:
+            try:
+                pub_time = dt.time.fromisoformat(time_raw)
+            except ValueError:
+                raise ValueError(
+                    "source/finance/%s: `time: %s` is not an HH:MM time" % (fn, time_raw))
+
         # Optional `updated: YYYY-MM-DD` or `updated: YYYY-MM-DD HH:MM` — a
         # living piece (one that gets dated "Update" h2 sections added over
         # time, see liquid-network-peg-drain.html) bumps this so the date
@@ -697,6 +709,7 @@ def load_entries(include_drafts=False):
             "slug": slug,
             "file": slug + ".html",
             "date": date,
+            "pub_time": pub_time,
             "updated": updated,
             "updated_time": updated_time,
             "title": meta["title"],
@@ -755,7 +768,6 @@ def _nav(active=""):
             '<a href="crypto-screener.html"%s>Crypto Screener</a>'
             '<a href="humanity.html"%s>Bitcoin vs. Humanity</a>'
             '<a href="money-worldwide.html"%s>Money Worldwide</a>'
-            '<span class="share-widget"></span>'
             '</nav>' % (cls("home"), cls("board"), cls("bitcoin"), cls("treasuries"),
                         cls("crypto"), cls("crypto-screener"), cls("humanity"),
                         cls("money-worldwide")))
@@ -1360,6 +1372,8 @@ def build_entry_page(e, board=None, pool=()):
     """
     body = e["body"]
     date_line = blogkit.pretty_date(e["date"]).upper()
+    if e.get("pub_time"):
+        date_line += ", " + blogkit.pretty_time(e["pub_time"]).upper()
     if e.get("updated"):
         date_line += ' <span class="upd-stamp">· %s</span>' % esc(
             blogkit.pretty_updated(e["updated"], e.get("updated_time")))
@@ -1407,7 +1421,7 @@ def build_entry_page(e, board=None, pool=()):
   %(banner)s
   <article class="entry">
     <h1 class="etitle">%(title)s</h1>
-    <p class="edate">%(date)s</p>
+    <p class="edate"><span class="edate-text">%(date)s</span><span class="share-widget"></span></p>
     %(hero)s
 %(body)s
     %(tags)s
@@ -2421,10 +2435,14 @@ a{color:__ACCENT__}
   font-family:ui-sans-serif,system-ui,sans-serif}
 .entry{max-width:760px;margin:22px auto 0}
 .etitle{font-size:33px;font-weight:400;line-height:1.22;margin:0 0 10px;letter-spacing:.01em}
-.edate{margin:0 0 26px;color:#5a6b80;font-size:9px;letter-spacing:.08em;
+.edate{margin:0 0 26px;display:flex;align-items:center;justify-content:space-between;
+  gap:14px;flex-wrap:wrap}
+.edate-text{color:#5a6b80;font-size:7px;letter-spacing:.06em;
   font-family:ui-sans-serif,system-ui,sans-serif}
-.edate .live-stamp,.edate .upd-stamp{letter-spacing:normal;text-transform:none;
+.edate-text .live-stamp,.edate-text .upd-stamp{letter-spacing:normal;text-transform:none;
   font-style:italic;color:#4d5c70}
+.edate .share-widget{flex:none}
+.edate .share-btn{font-size:10px}
 .entry p{margin:0 0 20px;color:#c3d0e0;font-size:17px;line-height:1.72}
 .entry h2{margin:38px 0 14px;font-size:23px;font-weight:400;color:#e8eef7;
   padding-bottom:7px;border-bottom:1px solid #1b2534}

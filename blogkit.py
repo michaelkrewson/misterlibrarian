@@ -168,6 +168,15 @@ def parse_updated(raw, where, pub_date):
     return updated_date, updated_time
 
 
+def pretty_time(t):
+    """'2:14 PM' — %-I is a GNU/BSD extension; fall back and strip the
+    leading zero by hand elsewhere, same pattern as pretty_date."""
+    try:
+        return t.strftime("%-I:%M %p")
+    except ValueError:
+        return t.strftime("%I:%M %p").lstrip("0")
+
+
 def pretty_updated(updated_date, updated_time):
     """Render an (updated_date, updated_time) pair from parse_updated as the
     compact 'updated <date>[, <time>]' bit that goes next to the publish
@@ -175,11 +184,7 @@ def pretty_updated(updated_date, updated_time):
     reader actually orients on."""
     out = "updated " + pretty_date(updated_date)
     if updated_time is not None:
-        try:
-            t = updated_time.strftime("%-I:%M %p")
-        except ValueError:
-            t = updated_time.strftime("%I:%M %p").lstrip("0")
-        out += ", " + t
+        out += ", " + pretty_time(updated_time)
     return out
 
 
