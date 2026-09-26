@@ -137,7 +137,7 @@ OUT_DIR = os.path.join(ROOT, "travel")
 # Fields a post may declare. Anything else in the front matter is an error —
 # better a loud typo than a silently-ignored `sumary:` line.
 KNOWN_KEYS = {
-    "title", "date", "place", "tags", "hero", "hero_alt", "hero_credit",
+    "title", "date", "updated", "place", "tags", "hero", "hero_alt", "hero_credit",
     "summary", "draft", "stars", "subject", "subject_type", "meta_desc",
 }
 REQUIRED_KEYS = {"title", "date", "summary"}
@@ -501,6 +501,19 @@ def load_posts(include_drafts=False):
         except ValueError:
             raise ValueError(f"source/travel/{fn}: date must be YYYY-MM-DD")
 
+        # Optional `updated: YYYY-MM-DD` — a living piece bumps this so the
+        # date line can show both without rewriting `date` itself.
+        updated_raw = meta.get("updated", "").strip()
+        updated = None
+        if updated_raw:
+            try:
+                updated = dt.date.fromisoformat(updated_raw)
+            except ValueError:
+                raise ValueError(f"source/travel/{fn}: `updated: {updated_raw}` is not a YYYY-MM-DD date")
+            if updated < date:
+                raise ValueError(
+                    f"source/travel/{fn}: `updated: {updated_raw}` is before `date: {date.isoformat()}`")
+
         # Stars are optional, but a malformed one is an error rather than a
         # silently-dropped rating — a review that quietly loses its score is worse
         # than a build that stops.
@@ -523,6 +536,7 @@ def load_posts(include_drafts=False):
             "slug": slug,
             "file": f"{slug}.html",
             "date": date,
+            "updated": updated,
             "title": meta["title"],
             "place": meta.get("place", ""),
             "tags": tags,
@@ -710,6 +724,9 @@ def _pagehits(file):
 
 def _meta_line(p, show_hits=False):
     bits = [f'<time datetime="{p["date"].isoformat()}">{_pretty_date(p["date"])}</time>']
+    if p.get("updated"):
+        bits.append(f'<span class="upd-stamp">updated '
+                     f'<time datetime="{p["updated"].isoformat()}">{_pretty_date(p["updated"])}</time></span>')
     if p["place"]:
         bits.append(f'<span class="place">📍 {html.escape(p["place"])}</span>')
     if p["draft"]:
