@@ -296,6 +296,11 @@ footers, sibling links or the legal pages.
   do the Hebrew/Greek work first, compose the Spanish verse independently from that source work
   (never translated from the English), *then* pull the Spanish shelf into the notes as a tiebreaker
   — shelf phrasing belongs in notes only, never in the verse text's own cadence.
+- **Spanish verse text addresses a plural "you" as *ustedes*, never *vosotros*** (Michael's call,
+  2026-09-25): *les digo*, *saben*, *Dejen*, *Vayan*, *Tengan*, *su Padre* — never *os digo*,
+  *sabéis*, *Dejad*, *Id*, *Tened*, *vuestro Padre*. Mark is converted; Matthew, John, Acts and
+  most of the OT are legacy *vosotros* — convert a whole book at a time, and change a note's
+  quote of a verse with the verse. Shelf quotations (RV 1909/RV60 print *vosotros*) stay exact.
 - **Give near-synonyms their own dictionary entries — don't lump a word-family together.** Hebrew
   keeps related words distinct (a wisdom vocabulary of six near-synonyms is six entries, not one),
   and the translation + dictionary should too.
@@ -379,7 +384,10 @@ understand.
    this last one). `build.py` also runs `check_forward_claims()` (every "not yet on these
    pages" / "already translated" / "next in sequence" claim gets checked against the real
    registries, both languages) and `check_local_anchors()` (every in-chapter href must
-   actually resolve) — read a build failure from either as real, not noise.
+   actually resolve) — read a build failure from either as real, not noise. It reads bare
+   same-book citations ("(14:22, not yet…)") and lists inside their own parenthesis, but NOT a list
+   written before its parenthesis or an unparenthesised "…, neither yet on these pages." — when a
+   chapter ships, grep older pages for its book and chapter number by hand.
 4. **Grow the library** for this chapter, all five parts — a missing one fails silently, no
    build error:
    - `DICTIONARY` (English) — new/extended terms this chapter's notes lean on
