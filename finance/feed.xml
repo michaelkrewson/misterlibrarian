@@ -7,6 +7,18 @@
   <description>Writing on Bitcoin, money, and the people who regulate it — read from the filings and the footnotes — plus a standing board of the world's biggest assets, gold, silver, the largest companies and Bitcoin, ranked by what the market says they're worth.</description>
   <language>en</language>
   <item>
+    <title>Track One: Satoshi Raps the Whitepaper</title>
+    <link>https://mistertranslation.com/finance/track-one-satoshi-raps-the-whitepaper.html</link>
+    <guid isPermaLink="true">https://mistertranslation.com/finance/track-one-satoshi-raps-the-whitepaper.html</guid>
+    <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
+    <description>A stranger on X asked an AI agent to track down Satoshi Nakamoto and get him to rap the Bitcoin whitepaper. What came back is a studio session, a mic, and — allegedly — pineapple jalapeno pizza. It's also the first entry in something new here: a running, tagged collection of the songs, videos and memes Bitcoin's culture keeps producing, filed so the next one is easy to find.</description>
+    <category>bitcoin</category>
+    <category>bitcoin music</category>
+    <category>ai music</category>
+    <category>satoshi nakamoto</category>
+    <category>culture</category>
+  </item>
+  <item>
     <title>A Private Room With a Public Door</title>
     <link>https://mistertranslation.com/finance/a-private-room-with-a-public-door.html</link>
     <guid isPermaLink="true">https://mistertranslation.com/finance/a-private-room-with-a-public-door.html</guid>
@@ -502,25 +514,6 @@
     <category>real estate</category>
     <category>productivity</category>
     <category>labor</category>
-    <category>notes</category>
-  </item>
-  <item>
-    <title>A Jar Is Not a Vault: Reading My Friend's Lightning Wallet Before I Recommend It</title>
-    <link>https://mistertranslation.com/finance/lightning-in-a-jar-review.html</link>
-    <guid isPermaLink="true">https://mistertranslation.com/finance/lightning-in-a-jar-review.html</guid>
-    <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>
-    <description>A friend of mine spent six months building a self-custodial Lightning wallet that runs in a browser, and he'd be the first to tell you it has no audit. I trust him — which is exactly why I shouldn't ask you to trust it on my say-so. So I read the code, checked the served binary against the published hashes, and worked out what the trust model really is. Along the way, the thing every Lightning wallet review should say and mostly doesn't: what a Lightning wallet is for, and what it is not.</description>
-    <category>bitcoin</category>
-    <category>self custody</category>
-    <category>lightning</category>
-    <category>wallet</category>
-    <category>open source</category>
-    <category>security</category>
-    <category>ldk</category>
-    <category>lsp</category>
-    <category>lightning in a jar</category>
-    <category>lijox</category>
-    <category>seed phrase</category>
     <category>notes</category>
   </item>
 </channel>
