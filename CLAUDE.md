@@ -249,8 +249,12 @@ footers, sibling links or the legal pages.
 - **Other fixed renderings, established — search the source file's existing notes before inventing
   a new one for a recurring word; consistency is the product:** "vault" (raqia, not firmament),
   "side" not "rib" (tsela — the flagship departure), "humankind/the human" (generic adam),
-  "a helper corresponding to him" (ezer kenegdo), "appointed times" (mo'adim), "the LORD" small-caps
-  (YHVH), "Look —" (hineh), "my bow" not "rainbow" (qeshet), "great sea-beasts" (taninim).
+  "a helper corresponding to him" (ezer kenegdo), "appointed times" (mo'adim), "Jehovah"
+  (YHVH — never "the LORD"; in the NT also wherever *kyrios* is plainly the God of Israel rather than
+  Jesus: OT quotations, OT formulas ("angel of Jehovah", "Jehovah God the Almighty") and bare "the
+  Lord" with God as referent (Mark 13:20), the note saying the Greek reads *kyrios*. "Lord" stays
+  where the referent is Jesus or genuinely open (Mark 5:19), and the note says why. Ps 110:1 =
+  "Jehovah said to my Lord"), "Look —" (hineh), "my bow" not "rainbow" (qeshet), "great sea-beasts" (taninim).
 - **Neutrality rule:** where traditions genuinely split (protoevangelium, sons-of-God, "like
   God/gods"), present the readings with their pedigrees and don't vote. A doctrinal rendering in a
   shelf version (e.g. NWT's "active force") gets flagged as doctrinal, factually, not dismissively.
@@ -296,6 +300,11 @@ footers, sibling links or the legal pages.
   do the Hebrew/Greek work first, compose the Spanish verse independently from that source work
   (never translated from the English), *then* pull the Spanish shelf into the notes as a tiebreaker
   — shelf phrasing belongs in notes only, never in the verse text's own cadence.
+- **Spanish verse text addresses a plural "you" as *ustedes*, never *vosotros*** (Michael's call,
+  2026-09-25): *les digo*, *saben*, *Dejen*, *Vayan*, *Tengan*, *su Padre* — never *os digo*,
+  *sabéis*, *Dejad*, *Id*, *Tened*, *vuestro Padre*. Mark is converted; Matthew, John, Acts and
+  most of the OT are legacy *vosotros* — convert a whole book at a time, and change a note's
+  quote of a verse with the verse. Shelf quotations (RV 1909/RV60 print *vosotros*) stay exact.
 - **Give near-synonyms their own dictionary entries — don't lump a word-family together.** Hebrew
   keeps related words distinct (a wisdom vocabulary of six near-synonyms is six entries, not one),
   and the translation + dictionary should too.
@@ -379,7 +388,10 @@ understand.
    this last one). `build.py` also runs `check_forward_claims()` (every "not yet on these
    pages" / "already translated" / "next in sequence" claim gets checked against the real
    registries, both languages) and `check_local_anchors()` (every in-chapter href must
-   actually resolve) — read a build failure from either as real, not noise.
+   actually resolve) — read a build failure from either as real, not noise. It reads bare
+   same-book citations ("(14:22, not yet…)") and lists inside their own parenthesis, but NOT a list
+   written before its parenthesis or an unparenthesised "…, neither yet on these pages." — when a
+   chapter ships, grep older pages for its book and chapter number by hand.
 4. **Grow the library** for this chapter, all five parts — a missing one fails silently, no
    build error:
    - `DICTIONARY` (English) — new/extended terms this chapter's notes lean on
