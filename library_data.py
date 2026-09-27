@@ -10971,7 +10971,7 @@ XREFS = [
     (('Luke', 5, 38), ('Matthew', 9, 17), "'and both are preserved' -- Matthew's own ending, borrowed into the Byzantine text of Luke"),
     # ---- Luke 6 ----
     (('Luke', 6, 1), ('Mark', 2, 26), "grain plucked on the sabbath -- Luke names no priest, where Mark names the wrong one"),
-    (('Luke', 6, 1), ('Deuteronomy', 23, 25), "melilot and the rubbing by hand -- Luke's own detail, already in the Latin of the Law itself"),
+    (('Luke', 6, 1), ('Deuteronomy', 23, 26), "melilot and the rubbing by hand -- Luke's own detail, already in the Latin of the Law itself"),
     (('Luke', 6, 5), ('Mark', 2, 27), "'the sabbath came into being for man' -- the sentence Luke and Matthew both drop"),
     (('Luke', 6, 6), ('Luke', 5, 12), "no anger, no grief named -- the same redactional habit, caught twice now"),
     (('Luke', 6, 10), ('Matthew', 12, 13), "'whole as the other' -- Matthew's own addition, echoed in the Byzantine text of Luke"),
