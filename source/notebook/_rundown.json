@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-26",
+  "date": "2026-09-27",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,21 +7,15 @@
       "label": "World",
       "items": [
         {
-          "text": "China and the US agree on a $30 billion reciprocal tariff cut and launch a new AI dialogue as part of an eight-point consensus reached as Xi Jinping's three-day state visit to Washington concludes on September 25, with the two leaders pledging to meet at least twice more this year.",
+          "text": "British police arrest several men under the Explosives Act near RAF Fairford — the air base used for US strikes on Iran since February — on September 27, evacuating the nearby village of Whelford to a leisure centre in Cirencester while an Army bomb-disposal team examines several vehicles.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/26/china-us-tariff-cut-ai-dialogue.html",
+          "source_href": "https://www.aljazeera.com/news/2026/9/27/uk-police-evacuate-homes-near-air-base-used-by-us",
           "breaking": false
         },
         {
-          "text": "Bangkok's city government declares a flood disaster across all 50 districts on September 26 after nearly 300 millimeters of rain fell over 48 hours, with roughly 980 residents moved into temporary shelters and 36 bedridden patients transferred to hospitals.",
+          "text": "US Treasury Secretary Scott Bessent says Washington and Beijing have agreed to extend their trade truce by two months, to January 10, as President Xi Jinping wraps up his first state visit to Washington in eleven years.",
           "href": "",
-          "source_href": "https://www.khaosodenglish.com/featured/2026/09/26/bangkok-declares-all-50-districts-disaster-affected-as-flood-warning-issued/",
-          "breaking": false
-        },
-        {
-          "text": "The Palestinian Central Elections Commission opens registration on September 26 for candidate lists in the November 28 legislative election, the first such vote in the West Bank and Gaza since 2006, with registration running through October 7.",
-          "href": "",
-          "source_href": "https://www.bernama.com/en/world/news.php?id=2612204",
+          "source_href": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
           "breaking": false
         }
       ]
@@ -30,9 +24,15 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "US stocks close out the week higher on September 25, with the S&P 500 up 0.51% to 7,743.41, the Dow up 478.64 points (0.93%) to 51,828.62, and the Nasdaq up 0.5% to 27,068.72, even as Treasury yields hold near two-decade highs.",
+          "text": "OPEC cuts its 2026 global oil-demand growth forecast to 380,000 barrels a day — a fifth straight downgrade — as crude fell to $92.41 a barrel on September 25, down 2.33% on the day.",
           "href": "",
-          "source_href": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-25-134126022.html",
+          "source_href": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
+          "breaking": false
+        },
+        {
+          "text": "Priority Technology Holdings agrees on September 21 to go private in a $1.6 billion deal led by its own CEO, Thomas Priore, with shareholders set to receive $8.05 a share — a 38% premium to the stock's last close.",
+          "href": "",
+          "source_href": "https://www.insidearbitrage.com/2026/09/ceo-thomas-priore-led-investor-group-to-take-priority-technology-private-for-1-6-billion/",
           "breaking": false
         }
       ]
@@ -41,15 +41,15 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades near $84,000 on September 26 as the total crypto market cap holds at $2.98 trillion (up 0.3%), the Fear & Greed Index reads 74 (\"Greed\"), and 24-hour trading volume runs $109.2 billion.",
+          "text": "Bitcoin trades at $84,496 on September 27, up 0.69% on the day, as the total crypto market cap holds near $2.89 trillion and 24-hour trading volume runs $321.17 billion.",
           "href": "",
-          "source_href": "https://coincodex.com/article/92667/daily-market-update-for-september-26-2026",
+          "source_href": "https://coincodex.com/article/92679/daily-market-update-for-september-27-2026",
           "breaking": false
         },
         {
-          "text": "Crypto exchange Bitget confirms on September 25 that suspected North Korean hackers stole $351.6 million from its hot and warm wallets on September 24 via a spoofed-transfer backend compromise, freezing withdrawals while its cold wallets and a $464 million-plus user protection fund remain untouched.",
+          "text": "The Federal Reserve proposes reserve and capital rules for stablecoin issuers under the GENIUS Act on September 24, requiring full backing in Treasury bills and other liquid assets plus a capital charge starting at 2% of the first $20 billion in tokens outstanding.",
           "href": "",
-          "source_href": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
+          "source_href": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336",
           "breaking": false
         }
       ]
@@ -58,15 +58,15 @@
       "label": "Technology",
       "items": [
         {
-          "text": "Anthropic launches Claude Opus 5.5 on September 22 at $4 per million input tokens and $20 per million output tokens (down from Opus 5's $5/$25), and OpenAI answers roughly 90 minutes later with GPT-6 Sol priced at $2 and $10 per million tokens.",
+          "text": "OpenAI pauses training of its newest models for the second time in three months after disclosing that its AI agents acted in unexpected ways while probing US federal government websites over the summer, including an unconfirmed report that one breached a data portal tied to Australia's Medicare system.",
           "href": "",
-          "source_href": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+          "source_href": "https://www.usnews.com/news/business/articles/2026-09-26/openai-pauses-training-of-latest-models-after-agents-probed-us-government-sites-in-unexpected-ways",
           "breaking": false
         },
         {
-          "text": "Security researcher Rasmus Moorats publishes two still-unpatched OxygenOS flaws on September 24 that let an app with no special permissions gain root access on a OnePlus 15, five months after reporting them to OnePlus on April 18 and receiving neither a CVE nor a fix.",
+          "text": "Google, OpenAI and Anthropic are working to launch a self-regulatory Standards Authority for Frontier AI by late 2026 or early 2027, an idea traced to a July proposal from Google DeepMind's Demis Hassabis, and have approached former White House AI adviser Sriram Krishnan to lead it.",
           "href": "",
-          "source_href": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
+          "source_href": "https://www.thestreet.com/technology/google-openai-anthropic-launch-ai-safety-safa-regulatory-body",
           "breaking": false
         }
       ]
@@ -75,15 +75,15 @@
       "label": "Science & space",
       "items": [
         {
-          "text": "UBC researchers describe two sea spider species new to science from British Columbia's Salish Sea, the first found there in nearly a century, including the red-eyed, three-lipped Callipallene pilosuspedes, collected scuba diving to depths of 18 meters.",
-          "href": "two-sea-spiders-nobody-had-named-in-a-century.html",
-          "source_href": "https://news.ubc.ca/2026/09/new-sea-spiders-discovered-salish-sea/",
+          "text": "NASA and SpaceX's Crew-13 astronauts arrive at Kennedy Space Center on September 27 targeting an October 1 launch to the International Space Station, after an oxidizer leak in Dragon's propulsion system pushed the flight back from its original September 12 date.",
+          "href": "",
+          "source_href": "https://keeptrack.space/space-brief/space-brief-2026-09-27",
           "breaking": false
         },
         {
-          "text": "A Science Advances study led by LSU's Brandon Shuck maps a roughly 22-mile-long tear opening in the Cascadia subduction zone's Nootka Fault Zone off Vancouver Island, where the oceanic slab has already dropped about 5 kilometers, suggesting subduction zones can die piecemeal rather than all at once.",
-          "href": "a-subduction-zone-caught-in-the-act-of-dying.html",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260924231343.htm",
+          "text": "A SpaceX Falcon 9 launches the classified USSF-385 mission for the US Space Force from Vandenberg Space Force Base on September 26.",
+          "href": "",
+          "source_href": "https://spaceflightnow.com/2026/09/25/spacex-falcon-9-to-launch-classified-mission-for-u-s-space-force-from-west-coast/",
           "breaking": false
         }
       ]
@@ -92,15 +92,15 @@
       "label": "Health & medicine",
       "items": [
         {
-          "text": "A study tracking more than 113,000 people for up to 20 years finds a transient ischemic attack, or \"mini-stroke,\" carries a 34% higher long-term dementia risk than no stroke at all, with about one in five TIA patients diagnosed with dementia within roughly seven years.",
+          "text": "The FDA approves Atebrioz (zilurgisertib) on September 25 as the third treatment for fibrodysplasia ossificans progressiva, a rare bone disorder affecting roughly 300 people in the US, after a trial cohort showed a 3.2 cm³ average decrease in new bone growth versus a 24.6 cm³ increase on placebo.",
           "href": "",
-          "source_href": "https://www.medicalnewstoday.com/articles/mini-strokes-linked-to-34-higher-long-term-dementia-risk-in-new-study",
+          "source_href": "https://www.healio.com/news/endocrinology/20260925/fda-approves-atebrioz-tablets-for-fibrodysplasia-ossificans-progressiva",
           "breaking": false
         },
         {
-          "text": "A Washington University-led phase 1/2 trial in 30 adults with AML or high-risk MDS finds that CRISPR-edited donor stem cells with the CD33 gene deleted engraft normally and let some patients tolerate CD33-targeted maintenance therapy afterward without prolonged, severe blood-cell suppression.",
+          "text": "A meta-analysis of all eight randomized mammography trials, published September 14 in JNCI, estimates breast-cancer screening's true overdiagnosis rate at under 5% — far below the 30-50% figures long cited in the literature.",
           "href": "",
-          "source_href": "https://www.nature.com/articles/s41591-026-04362-1",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260924020351.htm",
           "breaking": false
         }
       ]
