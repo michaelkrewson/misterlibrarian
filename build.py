@@ -29,7 +29,7 @@ import blogkit
 from library_data import (DICTIONARY, ENCYCLOPEDIA, XREFS, VIDEO_CREDITS, VIDEO_QUEUE,
                            LINK_OVERRIDES, VERSE_OF_DAY, ROUTES, REGIONS,
                            CHRON_ERAS, CHRON_CHAPTERS, CHRON_EVENTS, BOOK_INTROS,
-                           DICTIONARY_ES, ENCYCLOPEDIA_ES, CHAPTER_ART)
+                           DICTIONARY_ES, ENCYCLOPEDIA_ES, CHAPTER_ART, ART_SKIPPED)
 
 OUT = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_SOURCE = os.path.join(OUT, "source", "mister_translation.html")
@@ -6362,6 +6362,26 @@ def check_chron_coverage(chapters):
                            "one is fine; see the docstring above for the pattern)")
 
 
+def check_chapter_art_coverage(chapters):
+    """Every shipped chapter needs a DECISION about art, not necessarily art itself.
+    CHAPTER_ART's own docstring says a chapter with none is a no-op — true, but that
+    silence looks identical whether nobody looked or somebody looked hard and found
+    nothing. Found 2026-09-28 the same way check_chron_coverage found its own gap:
+    Luke 1-4 all shipped with a painting, then Luke 5-11 shipped without one, seven
+    chapters straight across three sessions, with no record either way. This guard
+    closes it the same way: a chapter cannot ship until it is in CHAPTER_ART (a
+    painting/artifact was found) OR ART_SKIPPED (one honest sentence on what was
+    looked for and why nothing fit) — never silently neither."""
+    missing = sorted(slug for slug in chapters
+                      if slug not in CHAPTER_ART and slug not in ART_SKIPPED)
+    if missing:
+        raise SystemExit("CHAPTER-ART COVERAGE CHECK FAILED — no decision recorded for:\n"
+                         + "\n".join(f"  {s}" for s in missing)
+                         + "\n(either add a CHAPTER_ART entry, or record why nothing fit in "
+                           "ART_SKIPPED[slug] = \"one honest sentence\" — library_data.py, "
+                           "right after the CHAPTER_ART dict)")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", default=DEFAULT_SOURCE)
@@ -6376,6 +6396,7 @@ def main():
     check_forward_claims(chapters)
     check_local_anchors(chapters)
     check_chron_coverage(chapters)
+    check_chapter_art_coverage(chapters)
     check_library_slug_collisions()
     _render_default_card(os.path.join(OUT, "img", "og-default.png"))
     _render_default_card(os.path.join(OUT, "img", "og-default.es.png"), "es")
