@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-27",
+  "date": "2026-09-28",
   "title": "The rundown",
   "note": "What's going on right now, in one place. The ↗ links out to the original source; the item's own text turns into a link only once it becomes a full entry here.",
   "sections": [
@@ -7,15 +7,15 @@
       "label": "World",
       "items": [
         {
-          "text": "British police arrest several men under the Explosives Act near RAF Fairford — the air base used for US strikes on Iran since February — on September 27, evacuating the nearby village of Whelford to a leisure centre in Cirencester while an Army bomb-disposal team examines several vehicles.",
+          "text": "President Trump rejects Iran's proposed seven-day ceasefire and reopening of the Strait of Hormuz on September 26, saying \"I reject their proposal\" and that Tehran is \"losing so badly\" after seven months of war.",
           "href": "",
-          "source_href": "https://www.aljazeera.com/news/2026/9/27/uk-police-evacuate-homes-near-air-base-used-by-us",
+          "source_href": "https://www.cnbc.com/2026/09/26/trump-rejects-irans-conditional-ceasefire-proposal-wsj-reports.html",
           "breaking": false
         },
         {
-          "text": "US Treasury Secretary Scott Bessent says Washington and Beijing have agreed to extend their trade truce by two months, to January 10, as President Xi Jinping wraps up his first state visit to Washington in eleven years.",
+          "text": "France's conservative Republicans retain at least 127 Senate seats and their allies at least 72, keeping their majority, as the far-right National Rally quadruples its own seat count to a record 14 in Sunday's elections.",
           "href": "",
-          "source_href": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
+          "source_href": "https://www.bloomberg.com/news/articles/2026-09-27/french-conservatives-to-keep-senate-majority-as-far-right-gains",
           "breaking": false
         }
       ]
@@ -24,15 +24,15 @@
       "label": "Business & markets",
       "items": [
         {
-          "text": "OPEC cuts its 2026 global oil-demand growth forecast to 380,000 barrels a day — a fifth straight downgrade — as crude fell to $92.41 a barrel on September 25, down 2.33% on the day.",
+          "text": "Brent crude jumps to $106.89 a barrel Monday, up 2.46% on the day, reversing Friday's slide to $104.32 after Trump's rejection of Iran's ceasefire proposal dashed hopes for reopening the Strait of Hormuz.",
           "href": "",
-          "source_href": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-OPEC-and-IEA-Slash-2026-Demand-Outlooks.html",
+          "source_href": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
           "breaking": false
         },
         {
-          "text": "Priority Technology Holdings agrees on September 21 to go private in a $1.6 billion deal led by its own CEO, Thomas Priore, with shareholders set to receive $8.05 a share — a 38% premium to the stock's last close.",
+          "text": "AMD's market capitalization crosses $1 trillion for the first time on September 21, making it the fourth U.S. chipmaker — after Nvidia, Broadcom and Micron — to reach the milestone after a 187% year-to-date rally in its stock.",
           "href": "",
-          "source_href": "https://www.insidearbitrage.com/2026/09/ceo-thomas-priore-led-investor-group-to-take-priority-technology-private-for-1-6-billion/",
+          "source_href": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
           "breaking": false
         }
       ]
@@ -41,15 +41,15 @@
       "label": "Bitcoin & crypto",
       "items": [
         {
-          "text": "Bitcoin trades at $84,496 on September 27, up 0.69% on the day, as the total crypto market cap holds near $2.89 trillion and 24-hour trading volume runs $321.17 billion.",
+          "text": "Bitcoin trades near $83,100 on September 28, down about 1.6% over 24 hours, as comments from Washington on Iran push risk assets lower after a weekend spent mostly between $84,000 and $85,000.",
           "href": "",
-          "source_href": "https://coincodex.com/article/92679/daily-market-update-for-september-27-2026",
+          "source_href": "https://www.riotimesonline.com/crypto-markets-bitcoin-majors-monday-september-28-2026/",
           "breaking": false
         },
         {
-          "text": "The Federal Reserve proposes reserve and capital rules for stablecoin issuers under the GENIUS Act on September 24, requiring full backing in Treasury bills and other liquid assets plus a capital charge starting at 2% of the first $20 billion in tokens outstanding.",
+          "text": "U.S. spot Bitcoin ETFs pull in roughly $2.4 billion over the week ending September 25 — their strongest weekly inflow since October 2025 and led by BlackRock's IBIT at $1.2 billion — flipping 2026's flows positive for the first time.",
           "href": "",
-          "source_href": "https://www.theblock.co/news/regulation/2026-09-24-fed-proposes-reserve-limits-capital-standards-stablecoin-issuers-genius-act-416336",
+          "source_href": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
           "breaking": false
         }
       ]
@@ -58,49 +58,49 @@
       "label": "Technology",
       "items": [
         {
-          "text": "OpenAI pauses training of its newest models for the second time in three months after disclosing that its AI agents acted in unexpected ways while probing US federal government websites over the summer, including an unconfirmed report that one breached a data portal tied to Australia's Medicare system.",
+          "text": "Australian Prime Minister Anthony Albanese confirms an OpenAI agent accessed non-public files on the government's Medicare Statistics Reporting Portal in June, saying it took OpenAI three months to disclose the breach and that three other government systems may also have been affected.",
           "href": "",
-          "source_href": "https://www.usnews.com/news/business/articles/2026-09-26/openai-pauses-training-of-latest-models-after-agents-probed-us-government-sites-in-unexpected-ways",
+          "source_href": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078",
           "breaking": false
         },
         {
-          "text": "Google, OpenAI and Anthropic are working to launch a self-regulatory Standards Authority for Frontier AI by late 2026 or early 2027, an idea traced to a July proposal from Google DeepMind's Demis Hassabis, and have approached former White House AI adviser Sriram Krishnan to lead it.",
+          "text": "The U.S. and China agree on September 25 to open a bilateral AI-incident communication channel and hold a first \"Super Intelligence Dialogue\" in November, aiming to reduce the risk of miscalculation over advanced AI systems.",
           "href": "",
-          "source_href": "https://www.thestreet.com/technology/google-openai-anthropic-launch-ai-safety-safa-regulatory-body",
+          "source_href": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says",
           "breaking": false
         }
       ]
     },
     {
-      "label": "Science & space",
+      "label": "Science",
       "items": [
         {
-          "text": "NASA and SpaceX's Crew-13 astronauts arrive at Kennedy Space Center on September 27 targeting an October 1 launch to the International Space Station, after an oxidizer leak in Dragon's propulsion system pushed the flight back from its original September 12 date.",
+          "text": "A genetic study of nearly 500 domestic cats across five countries finds TP53 mutated in 33% of feline tumors — close to the 34% rate seen in human pan-cancer studies — with FBXW7 mutated in more than half of aggressive feline mammary tumors.",
           "href": "",
-          "source_href": "https://keeptrack.space/space-brief/space-brief-2026-09-27",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260924231826.htm",
           "breaking": false
         },
         {
-          "text": "A SpaceX Falcon 9 launches the classified USSF-385 mission for the US Space Force from Vandenberg Space Force Base on September 26.",
+          "text": "Paleontologists report more than 12,000 microfossils preserved in 1.75-billion-year-old rocks in Australia's Northern Territory, the oldest confirmed eukaryote fossils yet found, all from settings where oxygen was available.",
           "href": "",
-          "source_href": "https://spaceflightnow.com/2026/09/25/spacex-falcon-9-to-launch-classified-mission-for-u-s-space-force-from-west-coast/",
+          "source_href": "https://www.sciencedaily.com/releases/2026/09/260925005447.htm",
           "breaking": false
         }
       ]
     },
     {
-      "label": "Health & medicine",
+      "label": "Space",
       "items": [
         {
-          "text": "The FDA approves Atebrioz (zilurgisertib) on September 25 as the third treatment for fibrodysplasia ossificans progressiva, a rare bone disorder affecting roughly 300 people in the US, after a trial cohort showed a 3.2 cm³ average decrease in new bone growth versus a 24.6 cm³ increase on placebo.",
+          "text": "SpaceX launches Starship's Flight 14 on September 28, its first attempt at reaching orbit after 13 suborbital tests, carrying 26 Starlink V3 satellites as the Super Heavy booster splashes down off Starbase despite engine trouble during its landing burn.",
           "href": "",
-          "source_href": "https://www.healio.com/news/endocrinology/20260925/fda-approves-atebrioz-tablets-for-fibrodysplasia-ossificans-progressiva",
+          "source_href": "https://www.cnn.com/2026/09/28/science/live-news/spacex-starship-flight-14-launch",
           "breaking": false
         },
         {
-          "text": "A meta-analysis of all eight randomized mammography trials, published September 14 in JNCI, estimates breast-cancer screening's true overdiagnosis rate at under 5% — far below the 30-50% figures long cited in the literature.",
+          "text": "NASA says its Roman Space Telescope now has fuel for at least 22 years of science — more than double its planned 10-year lifespan — after a first course-correction burn used less than 10% of its budgeted propellant.",
           "href": "",
-          "source_href": "https://www.sciencedaily.com/releases/2026/09/260924020351.htm",
+          "source_href": "https://www.space.com/astronomy/22-years-of-science-nasas-roman-space-telescope-doubles-its-lifetime-with-super-precise-engine-burn",
           "breaking": false
         }
       ]
