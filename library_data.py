@@ -26851,7 +26851,292 @@ CHAPTER_ART = {
         license="Public domain",
         source_url="https://commons.wikimedia.org/wiki/File:1624_map_of_the_Exodus_route_by_Abraham_Ortelius.jpg",
     )],
+    # ---- Luke 5-11 retroactive backfill (2026-09-28) — see ART_SKIPPED's own comment ----
+    "luke5": [dict(
+        file="luke5-tissot-miraculous-draught.jpg",
+        title="The Miraculous Draught of Fishes",
+        title_es="La pesca milagrosa",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="A wooden fishing boat overloaded with a tangled catch of fish, several men hauling "
+            "nets over the side; in the stern, a bearded fisherman kneels facing a robed figure "
+            "who sits with one hand raised, a rocky Galilean shoreline rising behind them.",
+        note="&#9888; <strong>The kneeling man is the whole chapter in one gesture.</strong> "
+             "Tissot paints the catch already hauled half aboard — nets straining, men bent "
+             "double under the weight of it — and Simon not lifting a single fish, but on his "
+             "knees facing Jesus. That is v8, exactly: &lsquo;Simon Peter fell down at Jesus&rsquo;s "
+             "knees, saying, &ldquo;Go away from me, Lord, for I am a sinful man.&rdquo;&rsquo; The "
+             "astonishment this translation&rsquo;s own note calls out at v9 (&lsquo;amazement had "
+             "seized him&rsquo;) is written on every face still working the net. Tissot traveled to "
+             "the Middle East in 1886 specifically to sketch the landscape, dress and boats his "
+             "earlier religious paintings had imagined from Paris — this scene is one result.",
+        note_es="&#9888; <strong>El hombre arrodillado es todo el capítulo en un solo gesto.</strong> "
+                "Tissot pinta la pesca ya medio subida a bordo —redes tensas, hombres doblados "
+                "bajo el peso—, y a Simón sin tocar un solo pez, sino de rodillas frente a "
+                "Jesús. Eso es exactamente el v8: &laquo;Simón Pedro cayó a las rodillas "
+                "de Jesús, diciendo: &lsquo;Apártate de mí, Señor, porque soy hombre "
+                "pecador&rsquo;&raquo;. El asombro que la propia nota de esta traducción señala "
+                "en el v9 (&lsquo;el asombro se había apoderado de él&rsquo;) está escrito "
+                "en cada rostro que todavía tira de la red. Tissot viajó a Oriente Medio en "
+                "1886 justamente para dibujar del natural el paisaje, la vestimenta y las barcas que "
+                "sus cuadros religiosos anteriores habían imaginado desde París —esta "
+                "escena es uno de los resultados.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Miraculous_Draught_of_Fishes_(La_p%C3%AAche_miraculeuse)_-_James_Tissot_-_overall.jpg",
+    )],
+    "luke6": [dict(
+        file="luke6-tissot-withered-hand.jpg",
+        title="The Man with the Withered Hand",
+        title_es="El hombre de la mano seca",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="Inside a synagogue with a raised, ornately carved reading platform hung with glass "
+            "lamps, a man in striped robes stretches out his arm toward a white-robed figure, while "
+            "rows of seated worshippers in prayer shawls watch, several with hands lifted.",
+        note="&#9888; <strong>Tissot fills the synagogue with witnesses — which is exactly what "
+             "this chapter&rsquo;s own opponents are.</strong> Luke&rsquo;s text never says the room "
+             "was crowded, but it does say the scribes and Pharisees &lsquo;were watching him closely "
+             "to see whether he would heal on the Sabbath, so that they might find a reason to accuse "
+             "him&rsquo; (v7, this translation&rsquo;s own note on the pattern of Sabbath controversies "
+             "opening this chapter). Tissot&rsquo;s rows of onlookers, several already gesturing toward "
+             "the scene, paint that watching crowd the narration only implies.",
+        note_es="&#9888; <strong>Tissot llena la sinagoga de testigos —justo lo que son los "
+                "opositores de este capítulo.</strong> El texto de Lucas nunca dice que la sala "
+                "estuviera llena, pero sí dice que los escribas y los fariseos &lsquo;lo "
+                "observaban de cerca para ver si sanaría en sábado, a fin de hallar de "
+                "qué acusarlo&rsquo; (v7, según la propia nota de esta traducción sobre "
+                "el patrón de controversias sabatáticas que abre este capítulo). Las "
+                "filas de espectadores de Tissot, varios ya señalando hacia la escena, pintan "
+                "esa multitud vigilante que la narración solo da por supuesta.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Man_with_the_Withered_Hand_(L'homme_%C3%A0_la_main_dess%C3%A9ch%C3%A9e)_-_James_Tissot_-_overall.jpg",
+    )],
+    "luke7": [dict(
+        file="luke7-tissot-widows-son-nain.jpg",
+        title="The Resurrection of the Widow's Son at Nain",
+        title_es="La resurrección del hijo de la viuda de Naín",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="A funeral bier is carried on poles through a stone city gate, surrounded by a dense "
+            "crowd, many with arms raised in astonishment; a robed figure at the center reaches "
+            "out and touches the bier as pallbearers pause.",
+        note="&#9888; <strong>The gate is the whole scene&rsquo;s hinge, and Tissot paints it "
+             "literally.</strong> Luke sets the meeting &lsquo;as he drew near the gate of the town&rsquo; "
+             "(v12, already on these pages) — two crowds meeting at one narrow threshold, a "
+             "funeral procession going out and a crowd following Jesus coming in. Tissot stages "
+             "the touch itself, the moment this translation&rsquo;s note singles out: Jesus reaches "
+             "the bier before a word is spoken, the compassion (v13&rsquo;s <em>splanchnizomai</em>, "
+             "already flagged in this Gospel&rsquo;s own vocabulary) arriving before the command does.",
+        note_es="&#9888; <strong>La puerta es la bisagra de toda la escena, y Tissot la pinta "
+                "literalmente.</strong> Lucas sitúa el encuentro &lsquo;cuando se acercaba a la "
+                "puerta de la ciudad&rsquo; (v12, ya en estas páginas) —dos multitudes que "
+                "se cruzan en un umbral estrecho, un cortejo fúnebre que sale y una multitud que "
+                "sigue a Jesús que entra. Tissot escenifica el contacto mismo, el momento que "
+                "esta traducción destaca en su nota: Jesús llega hasta el féretro antes "
+                "de decir palabra, la compasión (<em>splanchnizōmai</em> del v13, ya señalada "
+                "en el vocabulario propio de este Evangelio) llegando antes que la orden.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Resurrection_of_the_Widow's_Son_at_Nain_(La_r%C3%A9surrection_du_fils_de_la_veuve_de_Na%C3%AFm)_-_James_Tissot_-_overall.jpg",
+    )],
+    "luke8": [dict(
+        file="luke8-tissot-jairus-daughter.jpg",
+        title="The Daughter of Jairus",
+        title_es="La hija de Jairo",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="A young girl lies on a low stone bench draped with patterned cloth in a walled "
+            "courtyard; a robed man leans over her holding her hand, a woman kneels beside her, "
+            "and an older man kneels in prayer nearby while others watch from beneath a tree.",
+        note="&#9888; <strong>Tissot paints the one detail Luke, alone among the three Gospels, "
+             "keeps.</strong> All three Synoptics have Jesus take the girl&rsquo;s hand; only Luke "
+             "adds that he did it &lsquo;taking her by the hand&rsquo; in the same breath as calling, "
+             "and that her spirit RETURNED (<em>epestrepsen</em>) — the vocabulary of the body "
+             "as a thing the life had actually left. The painting&rsquo;s quiet, almost clinical "
+             "gesture — a hand simply taken, no dramatic flourish — fits a chapter this "
+             "translation&rsquo;s own notes track for exactly that restraint. Jairus kneels at left, "
+             "not standing over the scene he begged for.",
+        note_es="&#9888; <strong>Tissot pinta el &uacute;nico detalle que Lucas, solo entre los tres "
+                "Evangelios, conserva.</strong> Los tres sinópticos tienen a Jesús tomando "
+                "la mano de la niña; solo Lucas añade que lo hizo &lsquo;tomándola de "
+                "la mano&rsquo; en el mismo aliento en que la llama, y que su espíritu "
+                "VOLVIÓ (<em>epestrepsen</em>) —el vocabulario del cuerpo como algo de lo "
+                "que la vida realmente había salido. El gesto tranquilo, casi clínico, del "
+                "cuadro —una mano simplemente tomada, sin ningún floreo dramático— "
+                "encaja con un capítulo que las propias notas de esta traducción siguen "
+                "precisamente por esa contención. Jairo está arrodillado a la izquierda, no "
+                "de pie sobre la escena que él mismo suplicó.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Daughter_of_Jairus_(La_fille_de_Z%C3%A4ire)_-_James_Tissot_-_overall.jpg",
+    )],
+    "luke9": [dict(
+        file="luke9-tissot-transfiguration.jpg",
+        title="The Transfiguration",
+        title_es="La transfiguración",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="Jesus stands radiating bright light between two robed figures, one bearded and "
+            "carrying a staff, the other in gold-trimmed robes; below them three men crouch, "
+            "shielding their eyes and reaching out, seen from behind.",
+        note="&#9888; <strong>The three in front are turned away from the reader on purpose.</strong> "
+             "Tissot paints Peter, James and John from behind, faces hidden, exactly where Luke&rsquo;s "
+             "own text puts them: &lsquo;weighed down with sleep&rsquo; until they &lsquo;became fully "
+             "awake&rsquo; to what was already underway (v32, already on these pages) — witnesses "
+             "arriving mid-vision, not present from its start. Moses and Elijah are painted mid-"
+             "conversation, not static icons, matching this Gospel&rsquo;s own detail that no other "
+             "Synoptic keeps: they were speaking of Jesus&rsquo;s <em>exodos</em>, his own departure, "
+             "&lsquo;which he was about to fulfill at Jerusalem&rsquo; (v31).",
+        note_es="&#9888; <strong>Los tres del frente están vueltos de espaldas al lector, a "
+                "propósito.</strong> Tissot pinta a Pedro, Santiago y Juan de espaldas, con el "
+                "rostro oculto, justo donde los pone el propio texto de Lucas: &lsquo;cargados de "
+                "sueño&rsquo; hasta que &lsquo;se despertaron del todo&rsquo; a algo que ya "
+                "estaba ocurriendo (v32, ya en estas páginas) —testigos que llegan a mitad "
+                "de la visión, no presentes desde su inicio. Moisés y Elías están "
+                "pintados a mitad de conversación, no como iconos estáticos, a juego con un "
+                "detalle propio de este Evangelio que ningún otro sinóptico conserva: hablaban "
+                "del <em>éxodos</em> de Jesús, su propia partida, &lsquo;que estaba por "
+                "cumplir en Jerusalén&rsquo; (v31).",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Transfiguration_(La_transfiguration)_-_James_Tissot_-_overall.jpg",
+    )],
+    "luke10": [dict(
+        file="luke10-tissot-good-samaritan.jpg",
+        title="The Good Samaritan",
+        title_es="El buen samaritano",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="A wounded, half-undressed man lies on the ground at the bottom of a steep, rocky "
+            "ravine while a bearded man in a green robe kneels to tend him; a laden donkey waits "
+            "nearby, and a small distant figure in white walks away along the ridge above.",
+        note="&#9888; <strong>Tissot paints the road itself as the story&rsquo;s real danger, "
+             "before a single figure does anything.</strong> The ravine dominates the composition "
+             "— steep, bare, isolated — matching this translation&rsquo;s own note on the "
+             "actual Jerusalem-to-Jericho descent (v30): a genuinely remote, thousand-metre drop "
+             "over some twenty-seven kilometres, notorious in antiquity for exactly this kind of "
+             "ambush. The small robed figure walking away along the ridge, easy to miss on first "
+             "look, is the painting&rsquo;s own quiet accusation — whether meant as the priest, "
+             "the Levite, or simply anyone who has already passed by.",
+        note_es="&#9888; <strong>Tissot pinta el propio camino como el verdadero peligro de la "
+                "historia, antes de que ninguna figura haga nada.</strong> La quebrada domina la "
+                "composición —empinada, desnuda, aislada—, a juego con la propia nota "
+                "de esta traducción sobre el descenso real de Jerusalén a Jericó (v30): "
+                "un desnivel genuinamente remoto, de unos mil metros a lo largo de unos "
+                "veintisiete kilómetros, tristemente célebre en la antigüedad "
+                "precisamente por esta clase de emboscada. La pequeña figura vestida de blanco "
+                "que camina por la cresta, fácil de no ver a la primera, es la callada acusación "
+                "propia del cuadro —sea el sacerdote, el levita, o sencillamente cualquiera que "
+                "ya pasó de largo.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Good_Samaritan_(Le_bon_samaritain)_-_James_Tissot.jpg",
+    )],
+    "luke11": [dict(
+        file="luke11-tissot-lords-prayer.jpg",
+        title="The Lord's Prayer",
+        title_es="El Padrenuestro",
+        artist="James Tissot",
+        artist_es="James Tissot",
+        year="c. 1886–1894",
+        location="Brooklyn Museum, New York",
+        location_es="Museo de Brooklyn, Nueva York",
+        alt="Jesus stands with arms outstretched on a hillside overlooking a walled city in golden "
+            "evening light, surrounded by a seated group of disciples in prayer shawls, several "
+            "with hands raised or clasped.",
+        note="&#9888; <strong>Read this painting against the text, not just alongside it.</strong> "
+             "Tissot stages the teaching as public preaching on an open hillside above a whole city "
+             "— a crowd of disciples arranged like an audience — which is closer to "
+             "Matthew&rsquo;s Sermon on the Mount setting for the identical prayer (6:9–13, "
+             "already on these pages) than to Luke&rsquo;s own, far barer scene: &lsquo;a certain "
+             "place&rsquo;, no crowd, no mountain, just one disciple asking on behalf of the rest "
+             "after watching Jesus pray alone (v1, this chapter&rsquo;s own note). The painting is "
+             "real and the prayer is the same seven-verse core in both Gospels &mdash; but the "
+             "grander staging belongs to Matthew&rsquo;s telling, not Luke&rsquo;s, and the gap "
+             "between the two is worth noticing rather than smoothing over.",
+        note_es="&#9888; <strong>Lea este cuadro contra el texto, no solo junto a él.</strong> "
+                "Tissot escenifica la enseñanza como predicación pública en una ladera "
+                "abierta sobre toda una ciudad —un grupo de discípulos dispuesto como "
+                "auditorio—, lo cual se acerca más al escenario del Sermón del Monte "
+                "de Mateo para esa misma oración (6:9–13, ya en estas páginas, "
+                "todavía no en español) que a la escena mucho más desnuda de Lucas: "
+                "&lsquo;cierto lugar&rsquo;, sin multitud, sin monte, solo un discípulo que pide "
+                "en nombre de los demás tras ver a Jesús orar a solas (v1, según la "
+                "propia nota de este capítulo). El cuadro es real y la oración es el mismo "
+                "núcleo de siete versículos en ambos Evangelios —pero la puesta en "
+                "escena más solemne pertenece al relato de Mateo, no al de Lucas, y esa "
+                "diferencia merece notarse en vez de pasarse por alto.",
+        license="Public domain",
+        source_url="https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_The_Lord's_Prayer_(Le_Pater_Noster)_-_James_Tissot.jpg",
+    )],
 }
+
+# ART_SKIPPED — the required OTHER outcome of the per-chapter art check (checklist
+# step, and enforced by build.py's check_chapter_art_coverage()). CHAPTER_ART was
+# never meant to cover every chapter — "no-op for a chapter with no art, which is
+# most of them" is right there in build.py's own inject_chapter_art() docstring —
+# but "most chapters get no art because none was ever looked for" and "most
+# chapters get no art because a real search came up empty" are indistinguishable
+# from outside the session that shipped them. Found 2026-09-28: Luke 2-4 all got
+# art, then Luke 5-11 (seven chapters straight, three different sessions) shipped
+# with the step just never attempted — no note, no commit mention, nothing to
+# distinguish it from a considered "nothing fits" (backfilled the same day, see
+# CHAPTER_ART's own luke5-luke11 entries). A key here is that considered
+# absence, recorded so the next session (or the next audit) can tell the two apart
+# without re-doing the search. Give it one honest sentence: what was looked for
+# (a narrative illustration first, then the ancient-artifact and modern-Jewish-
+# practice fallbacks CHAPTER_ART's own comment already documents) and why nothing
+# cleared the bar. A chapter can always be revisited later if a candidate turns up.
+ART_SKIPPED = {}
+_PRE_ENFORCEMENT_BACKLOG = [
+    '1chr1', '1cor1', '1john1', '1kgs1', '1pe1', '1sam1', '1th1', '1ti1',
+    '2chr1', '2cor1', '2john1', '2kgs1', '2pe1', '2sam1', '2th1', '2ti1', '3john1',
+    'acts1', 'acts15', 'amos1', 'col1', 'dan1', 'dan11', 'dan12', 'dan2',
+    'deut1', 'deut10', 'deut11', 'deut16', 'deut17', 'deut18', 'deut19', 'deut2',
+    'deut20', 'deut21', 'deut22', 'deut23', 'deut24', 'deut25', 'deut26', 'deut27',
+    'deut28', 'deut29', 'deut3', 'deut30', 'deut31', 'deut32', 'deut33', 'deut34',
+    'deut4', 'deut5', 'deut7', 'deut8', 'deut9', 'eph1', 'est1', 'exod1',
+    'exod10', 'exod11', 'exod12', 'exod13', 'exod14', 'exod2', 'exod23', 'exod24',
+    'exod25', 'exod26', 'exod27', 'exod28', 'exod3', 'exod4', 'exod5', 'exod6',
+    'exod7', 'exod8', 'exod9', 'ezek1', 'ezra1', 'gal1', 'gen1', 'gen10',
+    'gen11', 'gen12', 'gen13', 'gen14', 'gen15', 'gen16', 'gen17', 'gen18',
+    'gen19', 'gen2', 'gen20', 'gen21', 'gen23', 'gen24', 'gen25', 'gen26',
+    'gen27', 'gen28', 'gen29', 'gen3', 'gen30', 'gen31', 'gen33', 'gen34',
+    'gen35', 'gen36', 'gen37', 'gen38', 'gen39', 'gen4', 'gen40', 'gen41',
+    'gen42', 'gen43', 'gen44', 'gen45', 'gen46', 'gen47', 'gen48', 'gen49',
+    'gen5', 'gen50', 'gen6', 'gen7', 'gen8', 'gen9', 'habakkuk1', 'haggai1',
+    'heb1', 'hos1', 'isa1', 'jas1', 'jer20', 'jer21', 'jer22', 'jer24',
+    'jer25', 'jer26', 'jer27', 'jer28', 'jer30', 'job1', 'joel1', 'john1',
+    'john2', 'jonah1', 'josh1', 'josh8', 'jude1', 'judg1', 'lam1', 'lam2',
+    'lam3', 'lev14', 'lev17', 'lev18', 'lev20', 'lev21', 'lev22', 'lev23',
+    'luke1', 'mal1', 'mark1', 'mark10', 'mark11', 'mark12', 'mark13', 'mark14',
+    'mark15', 'mark16', 'mark6', 'mark7', 'mark8', 'mark9', 'mat1', 'mat2',
+    'mat3', 'mat4', 'mat5', 'mat6', 'mat7', 'micah1', 'nahum1', 'neh1',
+    'num1', 'num10', 'num11', 'num12', 'num13', 'num14', 'num2', 'num26',
+    'num27', 'num28', 'num29', 'num3', 'num30', 'num31', 'num32', 'num34',
+    'num35', 'num4', 'num5', 'num6', 'num7', 'num8', 'num9', 'obad1',
+    'phm1', 'php1', 'prov1', 'psalms1', 'qoh1', 'rev1', 'rev13', 'rev2',
+    'rev9', 'rom1', 'ruth1', 'sos1', 'tit1', 'zechariah1', 'zechariah3', 'zechariah4',
+    'zechariah5', 'zephaniah1',
+]
+for _slug in _PRE_ENFORCEMENT_BACKLOG:
+    ART_SKIPPED[_slug] = ("Shipped before the 2026-09-28 art-coverage check existed; "
+                          "never reviewed for a candidate painting or artifact.")
+del _slug, _PRE_ENFORCEMENT_BACKLOG
 # ---- Numbers 34: the borders of Canaan ----
 
 ENCYCLOPEDIA_ES["high-priest"] = ("El sumo sacerdote",
