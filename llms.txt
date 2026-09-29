@@ -1,0 +1,37 @@
+# MisterLibrarian
+
+> A fresh translation of the Bible into modern English, made one chapter at a time from the
+> original Hebrew (the Masoretic Text) and Greek (SBLGNT), with the source text reproduced
+> verse-by-verse and translator's notes comparing every rendering choice against a fixed shelf
+> of seven landmark versions (NIV 2011, KJV, Douay-Rheims, The Living Bible, the 1599 Geneva
+> Bible, the ASV, and the NWT 1984). Published alongside five smaller sourced blogs under the
+> same "Mr. Librarian" persona, all reachable from the home page hub.
+
+Every translation choice is footnoted against the seven-version shelf rather than asserted;
+where a shelf version differs for doctrinal (not factual) reasons, that's flagged as such. Full
+Table of Contents and translation doctrine: https://mistertranslation.com/bible.html
+
+## Bible translation
+
+- [Table of Contents](https://mistertranslation.com/bible.html): every translated chapter, English and Spanish, with progress tracked by book
+- [Dictionary](https://mistertranslation.com/dictionary.html): per-term entries for names, places and concepts referenced in the translation
+- [Encyclopedia](https://mistertranslation.com/encyclopedia.html): background entries on people, events and customs
+- [Atlas](https://mistertranslation.com/atlas.html): place entries with historical/geographic context
+- [Dear Mr. Librarian](https://mistertranslation.com/ask/): reader questions about the text, answered from the same sourcing standard
+
+## Other publications (same author, same sourcing discipline)
+
+- [The Librarian's Ledger](https://mistertranslation.com/finance/): finance & markets blog, cites primary sources, states "where I could be wrong"
+- [The Librarian Abroad](https://mistertranslation.com/travel/): travel & food blog
+- [The Librarian's Regimen](https://mistertranslation.com/health/): health & nutrition, read from primary literature, never medical advice
+- [The Librarian's Notebook](https://mistertranslation.com/notebook/): science/tech, world affairs and arts, general-interest
+- [Eight Miles West](https://mistertranslation.com/west/): a family history published as numbered chapters, in order
+
+## Notes for automated readers
+
+- Spanish editions of the Bible pages exist at the same path with a `.es.html` suffix; both
+  are listed with reciprocal hreflang in /sitemap.xml.
+- Per-verse `/v/*.html` stub pages exist for link previews and are intentionally noindex; cite
+  the chapter page they canonicalize to instead.
+- Full sitemaps: /sitemap.xml (Bible), /travel/sitemap.xml, /finance/sitemap.xml,
+  /health/sitemap.xml, /notebook/sitemap.xml, /west/sitemap.xml, /ask/sitemap.xml
